@@ -27,6 +27,12 @@ guarda distingue, en vez de decir siempre lo mismo.
      caso positivo: el mismo repo sin ese archivo pasa el hook en verde.
   F. Un candidato con fuente fuera de la tabla canonica es rechazado.
      caso positivo: el mismo candidato con fuente canonica entra limpio.
+
+Mas las adjudicaciones del auditor (docs/BANCO_DE_REGLAS.md):
+  A.1 MUTUO: una vuelta declarada como enlace mutuo, con ida y vuelta
+      escritas, pasa el gate; la MISMA vuelta sin declarar lo pone en rojo.
+  A.2 fuentes con fecha: un nodo con mas de una fuente fuera de orden de
+      fecha lo pone en rojo; en orden, pasa.
 """
 
 import io
@@ -65,7 +71,7 @@ def nodo_base(identificador, **campos):
         ],
         "condiciones_activacion": "Cuando corre la prueba de aceptacion.",
         "entregable_esperado": "Un resultado comprobable por la prueba.",
-        "fuentes": ["manual_sistema_conocimiento"],
+        "fuentes": [{"clave": "manual_sistema_conocimiento", "fecha": "2026-08-12"}],
         "ids_alias": [],
         "nodos_previos": [],
         "nodos_siguientes": [],
@@ -84,13 +90,27 @@ class BaseForja(unittest.TestCase):
         self.dataset = os.path.join(self.taller, "nodos.jsonl")
         self.veredictos = os.path.join(self.taller, "VEREDICTOS.jsonl")
         self.censos = os.path.join(self.taller, "censos")
+        self.pares_mutuos = os.path.join(self.taller, "pares_mutuos.jsonl")
+        self.fuentes_tabla = os.path.join(self.taller, "FUENTES_CANONICAS.json")
         os.makedirs(self.censos)
         comun.escribir_texto(self.dataset, "")
+        # Tabla de fuentes aislada, con una clave extra para poder probar el
+        # orden por fecha (guarda orden_fuentes) sin tocar la tabla real.
+        comun.escribir_texto(self.fuentes_tabla, json.dumps({
+            "manual_sistema_conocimiento": {
+                "titulo_completo": "MANUAL DEL SISTEMA DE CONOCIMIENTO",
+                "autor": "Casa My Idea", "anio": "2026"},
+            "segundo_libro_de_prueba": {
+                "titulo_completo": "Segundo libro de prueba",
+                "autor": "Prueba", "anio": "2026"},
+        }, ensure_ascii=False))
         self.entorno = dict(os.environ)
         self.entorno.update({
             "FORJA_DATASET": self.dataset,
             "FORJA_VEREDICTOS": self.veredictos,
             "FORJA_CENSOS": self.censos,
+            "FORJA_PARES_MUTUOS": self.pares_mutuos,
+            "FORJA_FUENTES": self.fuentes_tabla,
             "PYTHONIOENCODING": "utf-8",
         })
 
@@ -110,6 +130,9 @@ class BaseForja(unittest.TestCase):
 
     def escribir_dataset(self, nodos):
         comun.escribir_jsonl(self.dataset, nodos)
+
+    def pares(self):
+        return comun.leer_jsonl(self.pares_mutuos)
 
     def sembrar_ejemplo(self):
         codigo, salida = self.forja("insertar", EJEMPLO, "--sin-preguntas")
@@ -416,7 +439,7 @@ class PruebaF(BaseForja):
         """Caso positivo: el MISMO candidato con una fuente de la tabla entra
         limpio. Lo unico que cambio es la fuente."""
         candidato = json.loads(comun.leer_texto(self.fixture("fuente_invento.json")))
-        candidato["fuentes"] = ["manual_sistema_conocimiento"]
+        candidato["fuentes"] = [{"clave": "manual_sistema_conocimiento", "fecha": "2026-08-12"}]
         ruta = os.path.join(self.taller, "con_fuente_canonica.json")
         comun.escribir_texto(ruta, json.dumps(candidato, ensure_ascii=False))
         codigo, salida = self.forja("insertar", ruta, "--sin-preguntas")
@@ -496,6 +519,102 @@ class PruebaGate(BaseForja):
         self.assertEqual(codigo, 1, salida)
         self.assertIn("guion largo", salida)
 
+    def test_a2_orden_de_fuentes_por_fecha(self):
+        """A.2: en un nodo con mas de una fuente, la fecha no puede
+        retroceder de una posicion a la siguiente."""
+        nodo = nodo_base("sanear_grafo", fuentes=[
+            {"clave": "manual_sistema_conocimiento", "fecha": "2026-08-12"},
+            {"clave": "segundo_libro_de_prueba", "fecha": "2026-08-01"},
+        ])
+        self.escribir_dataset([nodo])
+        codigo, salida = self.forja("gate")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("orden_fuentes", salida)
+        # caso positivo: la misma pareja, en orden de fecha, verde
+        nodo["fuentes"][1]["fecha"] = "2026-08-13"
+        self.escribir_dataset([nodo])
+        self.assertEqual(self.forja("gate")[0], 0)
+
+    def test_a1_vuelta_declarada_en_lista_blanca_pasa(self):
+        """A.1: la unica vuelta legitima es el enlace mutuo declarado. Sin
+        blanquearla, la vuelta pone el gate en rojo (control); declarada,
+        pasa."""
+        a = nodo_base("sanear_grafo", nodos_siguientes=["podar_ramas"],
+                      nodos_previos=["podar_ramas"])
+        b = nodo_base("podar_ramas", nodos_siguientes=["sanear_grafo"],
+                      nodos_previos=["sanear_grafo"])
+        self.escribir_dataset([a, b])
+        codigo, salida = self.forja("gate")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("vuelta", salida)
+
+        comun.agregar_jsonl(self.pares_mutuos, {
+            "par": ["sanear_grafo", "podar_ramas"], "fecha": "2026-08-12",
+            "razon_ida": "de prueba", "razon_vuelta": "de prueba",
+            "declarado_por": "sanear_grafo"})
+        codigo, salida = self.forja("gate")
+        self.assertEqual(codigo, 0, salida)
+
+
+class PruebaMutuo(BaseForja):
+    """Adjudicacion A.1 (docs/BANCO_DE_REGLAS.md): la unica vuelta legitima
+    es el ENLACE MUTUO DECLARADO, con su procedimiento de ida y de vuelta
+    escritos por separado, a traves de la aduana entera (no solo del gate)."""
+
+    def test_mutuo_declarado_cablea_los_dos_sentidos(self):
+        self.sembrar_ejemplo()
+        codigo, salida = self.forja(
+            "insertar", HIJO, "--sin-preguntas",
+            "--veredicto",
+            "registrar_fuente_canonica|MUTUO|"
+            "ida=el candidato usa en su paso 3 la clave que la madre registro en su paso 2|"
+            "vuelta=la madre usa en su paso 4 la comprobacion que hace el candidato en su paso 5")
+        self.assertEqual(codigo, 0, salida)
+
+        nodos = dict((n["id"], n) for n in self.nodos())
+        self.assertIn("elegir_grafia_clave", nodos["registrar_fuente_canonica"]["nodos_siguientes"])
+        self.assertIn("elegir_grafia_clave", nodos["registrar_fuente_canonica"]["nodos_previos"])
+        self.assertIn("registrar_fuente_canonica", nodos["elegir_grafia_clave"]["nodos_siguientes"])
+        self.assertIn("registrar_fuente_canonica", nodos["elegir_grafia_clave"]["nodos_previos"])
+
+        codigo, salida_gate = self.forja("gate")
+        self.assertEqual(codigo, 0, salida_gate)
+
+        pares = self.pares()
+        self.assertEqual(len(pares), 1)
+        self.assertEqual(sorted(pares[0]["par"]),
+                         sorted(["registrar_fuente_canonica", "elegir_grafia_clave"]))
+        self.assertEqual(pares[0]["declarado_por"], "elegir_grafia_clave")
+
+        bitacora = comun.leer_jsonl(self.veredictos)
+        self.assertEqual(bitacora[0]["veredicto"], "MUTUO")
+        self.assertIn("ida:", bitacora[0]["razon"])
+        self.assertIn("vuelta:", bitacora[0]["razon"])
+
+    def test_caso_negativo_mutuo_sin_las_dos_razones_es_rechazado(self):
+        """Caso positivo de la guarda inversa: sin ida Y vuelta, MUTUO no
+        se acepta a medias."""
+        self.sembrar_ejemplo()
+        codigo, salida = self.forja(
+            "insertar", HIJO, "--sin-preguntas",
+            "--veredicto", "registrar_fuente_canonica|MUTUO|ida=solo la ida, falta la vuelta")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("MUTUO", salida)
+        self.assertEqual(len(self.nodos()), 1)
+
+    def test_caso_control_sin_declarar_el_gate_lo_rechaza(self):
+        """Control: la MISMA vuelta escrita a mano, sin pasar por la aduana
+        ni por MUTUO, pone el gate en rojo. Confirma que el verde de arriba
+        viene del enlace declarado, no de la forma del dato."""
+        a = nodo_base("sanear_grafo", nodos_siguientes=["podar_ramas"],
+                      nodos_previos=["podar_ramas"])
+        b = nodo_base("podar_ramas", nodos_siguientes=["sanear_grafo"],
+                      nodos_previos=["sanear_grafo"])
+        self.escribir_dataset([a, b])
+        codigo, salida = self.forja("gate")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("vuelta", salida)
+
 
 class PruebaResolutor(BaseForja):
     """El resolutor camina cadenas: sin esto, el principio 3 es una frase."""
@@ -527,7 +646,7 @@ class PruebaResolutor(BaseForja):
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
-             PruebaGate, PruebaResolutor]
+             PruebaGate, PruebaMutuo, PruebaResolutor]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -544,6 +663,8 @@ def main():
     print("  guardas del gate y resolutor: %d pruebas mas, cada una con su caso positivo"
           % (len(cargador.loadTestsFromTestCase(PruebaGate)._tests)
              + len(cargador.loadTestsFromTestCase(PruebaResolutor)._tests)))
+    print("  adjudicaciones del auditor (A.1 MUTUO, A.2 fuentes con fecha): %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaMutuo)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

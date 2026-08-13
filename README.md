@@ -31,7 +31,7 @@ por vecino:
         --veredicto "id_vecino|CONTINUA|madre=id_vecino|que añade el hijo a la madre" \
         --veredicto "otro_vecino|SANO|por que no son el mismo trabajo"
 
-Las tres clases y lo que hace cada una:
+Las cuatro clases y lo que hace cada una:
 
 - `CONTINUA`: exige declarar cual de los dos es la MADRE. La arista se escribe
   en los dos extremos y RESUELTA (con el id canonico, aunque la declares por un
@@ -39,6 +39,11 @@ Las tres clases y lo que hace cada una:
 - `REPITE`: el nodo NO entra. El comando imprime la plantilla de reparto de las
   seis perdidas y sale con codigo 3.
 - `SANO`: el nodo entra, con la razon escrita en la bitacora.
+- `MUTUO`: el UNICO enlace bidireccional legitimo (adjudicacion A.1,
+  docs/BANCO_DE_REGLAS.md). Exige DOS razones, `ida=` y `vuelta=`, nunca una
+  razon comun. Se cablea en los dos sentidos a la vez y queda en la lista
+  blanca `config/pares_mutuos.jsonl`, que el gate respeta solo para esos
+  pares tras resolver: `--veredicto "id_vecino|MUTUO|ida=...|vuelta=..."`.
 
 Opciones: `--censo clave=valor` responde el censo sin preguntar (claves: serie,
 caso, marco_pais, vigencia, herramienta; `no` si no aplica), `--sin-preguntas`
@@ -50,10 +55,12 @@ Codigos de salida: 0 entro, 1 rechazado, 2 bloqueado esperando veredicto,
     python forja.py gate
 
 El gate de integridad (manual seccion 2). Verifica el dataset entero: esquema,
-reglas de id, fuentes contra la tabla canonica, cero auto-aristas TRAS
-RESOLVER, cero aristas duplicadas tras resolver, cero vueltas en los pares
-madre-hijo, aristas solo hacia ids que existen o resuelven, y cero guiones
-largos o medios. Sale en verde o con la lista exacta de fallos.
+reglas de id, fuentes contra la tabla canonica, orden de las fuentes por fecha
+en un nodo con mas de una, cero auto-aristas TRAS RESOLVER, cero aristas
+duplicadas tras resolver, cero vueltas en los pares madre-hijo salvo el enlace
+mutuo declarado en `config/pares_mutuos.jsonl`, aristas solo hacia ids que
+existen o resuelven, y cero guiones largos o medios. Sale en verde o con la
+lista exacta de fallos.
 
     python forja.py guiones [ruta ...]
 
@@ -90,6 +97,7 @@ La prueba de aceptacion. El repo no esta terminado sin ella en verde.
     esquema/nodo.schema.json    el esquema del nodo, fijado por escrito
     fuentes/FUENTES_CANONICAS.json   clave a titulo completo del libro
     config/umbrales.json        los umbrales de las señales, editables
+    config/pares_mutuos.jsonl   lista blanca de enlaces mutuos declarados (A.1)
     src/
       comun.py       utilidades y el barrido de guiones
       reglas_id.py   las reglas de id en codigo

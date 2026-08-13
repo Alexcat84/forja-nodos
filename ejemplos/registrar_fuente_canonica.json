@@ -10,7 +10,7 @@
   ],
   "condiciones_activacion": "Cuando entra un libro o mundo nuevo y todavia no se ha extraido su primer nodo.",
   "entregable_esperado": "Una entrada nueva en fuentes/FUENTES_CANONICAS.json con clave, titulo completo, autor y año, y el gate en verde.",
-  "fuentes": ["manual_sistema_conocimiento"],
+  "fuentes": [{"clave": "manual_sistema_conocimiento", "fecha": "2026-08-12"}],
   "ids_alias": [],
   "nodos_previos": [],
   "nodos_siguientes": [],

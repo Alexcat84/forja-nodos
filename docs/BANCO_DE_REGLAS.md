@@ -22,6 +22,19 @@ sin el otro es un hueco y el gate lo declara.
 La vuelta (el mismo par declarado en los dos sentidos) es un fallo, no una
 redundancia. Vale para TODO par, no solo para las series numeradas.
 
+**Adjudicacion del auditor A.1 (12 ago 2026):** ratificada estricta. La UNICA
+vuelta bidireccional legitima es el ENLACE MUTUO DECLARADO: un veredicto de
+clase MUTUO, con el procedimiento de ida y el procedimiento de vuelta escritos
+por separado (nunca una razon comun), registrado en bitacora/VEREDICTOS.jsonl
+y en la lista blanca config/pares_mutuos.jsonl (par, fecha, las dos razones y
+quien lo declaro). El gate perdona la vuelta SOLO para los pares que esa lista
+blanca cubre tras resolver (manual principio 3: la lista blanca tambien pasa
+por el resolutor); cualquier otra vuelta sigue siendo fallo, declarada a mano
+o no. Implementado en src/aduana.py (clase MUTUO, funcion parsear_veredicto) y
+src/gate.py (guarda vuelta, funcion _pares_mutuos_resueltos). Caso positivo y
+control en tests/test_aceptacion.py, clase PruebaMutuo y
+PruebaGate.test_a1_vuelta_declarada_en_lista_blanca_pasa.
+
 ## D.2. Toda comparacion de ids pasa por el resolutor (12 ago 2026)
 Manual principio 3. Ninguna comparacion literal de ids fuera de
 src/resolutor.py. El gate resuelve antes de contar auto-aristas, duplicadas,
@@ -80,6 +93,20 @@ por injerto. Queda como paso de mano en docs/FLUJO_DE_EXTRACCION.md fase 3.
 PENDIENTE: si en el futuro el nodo registra la fecha en que cada fuente se
 añadio, esta regla pasa a ser automatica y se declara aqui.
 
+**Adjudicacion del auditor A.2 (12 ago 2026):** la pendiente se resuelve. El
+campo `fuentes` del esquema deja de ser una lista de claves y pasa a una lista
+de objetos `{clave, fecha}` (esquema/nodo.schema.json, fecha en formato
+AAAA-MM-DD). El barrido posicional de la fase 3 de
+docs/FLUJO_DE_EXTRACCION.md deja de ser un paso de mano: el gate comprueba
+automaticamente, guarda `orden_fuentes`, que en todo nodo con mas de una
+fuente la fecha no retrocede de una posicion a la siguiente (src/gate.py). La
+aduana completa la fecha de una entrada que llega sin ella con la fecha de
+insercion (src/aduana.py, `normalizar_candidato`); no reordena, porque el
+orden es doctrina y una vuelta silenciosa no se puede auditar. Los dos nodos
+del dataset y los ejemplos se migraron al formato nuevo el 12 ago 2026, uno
+por uno a traves de la aduana de verdad. Caso positivo en
+tests/test_aceptacion.py, PruebaGate.test_a2_orden_de_fuentes_por_fecha.
+
 ## D.11. Alcance del blocking (12 ago 2026)
 Por defecto el candidato se mide contra TODO el dataset. El manual habla de
 medir "contra su dominio y el nucleo" (seccion 3.2), pero el nucleo de esta
@@ -87,6 +114,12 @@ forja todavia no existe. Cuando el grafo crezca y el coste lo pida, se activa
 `solo_dominio_y_nucleo` en config/umbrales.json y se declaran aqui, con fecha,
 que dominios forman el nucleo. Hasta entonces, medir de mas es mas barato que
 dejar pasar un gemelo.
+
+**Adjudicacion del auditor A.3 (12 ago 2026):** ratificada tal cual. El nucleo
+sigue sin existir y `solo_dominio_y_nucleo` sigue apagado. Cuando el dueño
+abra su primer grafo de verdad, el nucleo se declara aqui con fecha y con los
+dominios que lo forman; hasta entonces medir de mas sigue siendo mas barato
+que dejar pasar un gemelo. Sin cambio de codigo.
 
 ## D.12. Cero guiones largos y cero guiones medios (12 ago 2026)
 Hook de estilo de la casa (manual seccion 2). Vale para TODO el repo, codigo

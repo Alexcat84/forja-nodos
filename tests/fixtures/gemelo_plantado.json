@@ -11,7 +11,7 @@
   ],
   "condiciones_activacion": "Al llegar una obra o mundo distinto cuya primera ficha aun no se ha sacado.",
   "entregable_esperado": "Una linea nueva en la tabla de obras del taller con llave, nombre entero, quien firma y fecha, y la guarda sin rojos.",
-  "fuentes": ["manual_sistema_conocimiento"],
+  "fuentes": [{"clave": "manual_sistema_conocimiento", "fecha": "2026-08-12"}],
   "ids_alias": [],
   "nodos_previos": [],
   "nodos_siguientes": [],

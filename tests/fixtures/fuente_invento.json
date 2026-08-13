@@ -11,7 +11,7 @@
   ],
   "condiciones_activacion": "Cuando se cierra la extraccion de un libro y quedan nodos aislados.",
   "entregable_esperado": "La lista de nodos podados con su razon escrita y el gate en verde.",
-  "fuentes": ["libro_que_nadie_registro"],
+  "fuentes": [{"clave": "libro_que_nadie_registro", "fecha": "2026-08-12"}],
   "ids_alias": [],
   "nodos_previos": [],
   "nodos_siguientes": [],

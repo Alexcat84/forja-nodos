@@ -14,7 +14,7 @@
   ],
   "condiciones_activacion": "Cuando se registra la fuente de un libro y hay mas de una grafia posible para su clave.",
   "entregable_esperado": "La clave elegida en la tabla canonica y la lista de grafias descartadas con su razon escrita.",
-  "fuentes": ["manual_sistema_conocimiento"],
+  "fuentes": [{"clave": "manual_sistema_conocimiento", "fecha": "2026-08-12"}],
   "ids_alias": [],
   "nodos_previos": [],
   "nodos_siguientes": [],

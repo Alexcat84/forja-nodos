@@ -45,6 +45,11 @@ Por cada procedimiento que el libro nombra:
          reparte las seis perdidas hacia el nodo que sobrevive.
        - SANO: escribe POR QUE no son el mismo trabajo. Esa razon es el activo
          mas reutilizable del sistema entero.
+       - MUTUO: el UNICO enlace bidireccional legitimo (adjudicacion A.1,
+         docs/BANCO_DE_REGLAS.md). Exige DOS razones, nunca una: el
+         procedimiento de ida y el procedimiento de vuelta. Se cablea en los
+         dos sentidos a la vez y queda en la lista blanca
+         config/pares_mutuos.jsonl.
 5. [ ] Contesta el censo cuando la aduana pregunte (serie, caso, marco de pais,
        vigencia, herramienta con URL). Se registra AL ENTRAR, no en una
        auditoria posterior.
@@ -63,8 +68,11 @@ Casos especiales que el manual nombra por su nombre:
 ## Fase 3. Al cerrar la extraccion del libro
 Manual seccion 7.3. Cuatro barridos, ninguno opcional:
 
-- [ ] BARRIDO POSICIONAL DE FUENTE: los nodos injertados declaran la fuente
-      nueva en SEGUNDO lugar. El orden del campo `fuentes` es significativo.
+- [ ] BARRIDO POSICIONAL DE FUENTE: automatico desde la adjudicacion A.2
+      (docs/BANCO_DE_REGLAS.md): cada entrada de `fuentes` lleva su fecha, y
+      `python forja.py gate` rechaza (guarda `orden_fuentes`) cualquier nodo
+      donde la fuente añadida por injerto no quede en SEGUNDO lugar. Este
+      paso se reduce a correr el gate y leer sus fallos si los señala.
 - [ ] CENSO DE SERIES Y CABEZAS: censos/series_y_cabezas.md. Comprueba que cada
       serie del libro tiene exactamente una cabeza.
 - [ ] CENSO DE CASOS: censos/casos.md. Comprueba que ningun caso se quedo

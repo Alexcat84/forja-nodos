@@ -9,7 +9,11 @@ Paso a paso, como manda la seccion 3 del manual:
   1. NORMALIZA id, fuentes y denominaciones, y valida contra el esquema.
   2. BLOQUEA con varias señales a la vez, porque se solapan poco.
   3. Si algun vecino supera umbral, la insercion SE BLOQUEA hasta que quien
-     inserta escriba un veredicto por vecino citando su id.
+     inserta escriba un veredicto por vecino citando su id: CONTINUA cablea
+     la arista madre-hijo, REPITE deja el nodo fuera, SANO lo deja pasar sin
+     arista, y MUTUO (adjudicacion A.1, docs/BANCO_DE_REGLAS.md) declara el
+     UNICO enlace bidireccional legitimo, con su procedimiento de ida y de
+     vuelta, y queda ademas en la lista blanca config/pares_mutuos.jsonl.
   4 a 6. Serie numerada, caso, marco de pais, vigencia y herramienta con URL
      se registran en su censo AL ENTRAR, no en una auditoria posterior.
   Y solo con el gate verde sobre la copia en memoria el nodo se escribe.
@@ -35,7 +39,7 @@ from . import gate
 from . import reglas_id
 from .resolutor import Resolutor
 
-CLASES = ("CONTINUA", "REPITE", "SANO")
+CLASES = ("CONTINUA", "REPITE", "SANO", "MUTUO")
 
 CODIGO_OK = 0
 CODIGO_RECHAZO = 1
@@ -53,13 +57,18 @@ class Rechazo(Exception):
 
 # ---------------------------------------------------------------- normalizar
 
-def normalizar_candidato(bruto):
+def normalizar_candidato(bruto, fecha=None):
     """Paso 1 de la aduana. Devuelve (nodo, avisos).
 
     Normaliza lo que es forma (mayusculas, acentos en el id, espacios,
-    siglas, orden de fuentes sin duplicados). No normaliza lo que es
-    doctrina: si el id sigue rompiendo una regla, se rechaza en vez de
-    maquillarse.
+    siglas, claves de fuente sin duplicados). No normaliza lo que es
+    doctrina: si el id sigue rompiendo una regla, o si el ORDEN de las
+    fuentes no respeta su fecha, se rechaza en vez de maquillarse (lo
+    comprueba el gate en la simulacion, no este paso).
+
+    `fecha` es la fecha de hoy, para completar una entrada de `fuentes`
+    que llega sin la suya: no es doctrina, es la fecha en la que la fuente
+    de verdad entro al nodo.
     """
     nodo = dict(bruto)
     avisos = []
@@ -94,16 +103,30 @@ def normalizar_candidato(bruto):
     fuentes = nodo.get("fuentes")
     if isinstance(fuentes, list):
         limpias = []
-        for fuente in fuentes:
-            if isinstance(fuente, str):
-                fuente = fuente.strip().lower()
-            if fuente and fuente not in limpias:
-                limpias.append(fuente)
-            elif fuente in limpias:
-                avisos.append("fuente repetida descartada: %s" % fuente)
-        if limpias != fuentes:
-            avisos.append("fuentes normalizadas (el orden se conserva: la fuente "
-                          "añadida va en segundo lugar)")
+        claves_vistas = set()
+        for entrada in fuentes:
+            if not isinstance(entrada, dict):
+                # forma ajena al esquema: se deja tal cual y el esquema la
+                # rechaza con su propio mensaje, mas claro que uno de aqui.
+                limpias.append(entrada)
+                continue
+            vale = dict(entrada)
+            clave = vale.get("clave")
+            if isinstance(clave, str):
+                clave = clave.strip().lower()
+            vale["clave"] = clave
+            if isinstance(vale.get("fecha"), str):
+                vale["fecha"] = vale["fecha"].strip()
+            if not vale.get("fecha") and fecha:
+                vale["fecha"] = fecha
+                avisos.append("fuente '%s' sin fecha: se le puso la fecha de hoy (%s)"
+                              % (clave, fecha))
+            if clave and clave in claves_vistas:
+                avisos.append("fuente repetida descartada: %s" % clave)
+                continue
+            if clave:
+                claves_vistas.add(clave)
+            limpias.append(vale)
         nodo["fuentes"] = limpias
 
     if isinstance(nodo.get("dominio"), str):
@@ -159,11 +182,12 @@ def validar_candidato(nodo, tabla_fuentes=None, esquema_nodo=None):
 
     claves = set(k for k in tabla_fuentes.keys() if not k.startswith("_"))
     fallos = []
-    for fuente in nodo.get("fuentes") or []:
-        if fuente not in claves:
+    for entrada in nodo.get("fuentes") or []:
+        clave = entrada.get("clave") if isinstance(entrada, dict) else entrada
+        if clave not in claves:
             fallos.append("fuente '%s' fuera de fuentes/FUENTES_CANONICAS.json. "
                           "La fuente canonica se registra ANTES del primer nodo del "
-                          "libro (manual seccion 7.1)" % fuente)
+                          "libro (manual seccion 7.1)" % clave)
     for atribucion in nodo.get("atribuciones") or []:
         fuente = (atribucion or {}).get("fuente")
         if fuente and fuente not in claves:
@@ -300,12 +324,19 @@ def buscar_vecinos(candidato, nodos, umbrales=None):
 # ----------------------------------------------------------------- veredictos
 
 def parsear_veredicto(texto):
-    """Formato: vecino|CLASE|clave=valor|razon libre
+    """Formato general: vecino|CLASE|clave=valor|razon libre
+
+    MUTUO es distinto: NUNCA lleva razon libre. Exige DOS claves, ida= y
+    vuelta=, una por sentido. Es la unica clase que declara una vuelta
+    legitima (adjudicacion A.1, docs/BANCO_DE_REGLAS.md): una razon comun
+    no basta, porque no dice que procedimiento corre en cada sentido.
 
     Ejemplos:
       "extraer_nodos|CONTINUA|madre=extraer_nodos|el candidato despliega su paso 3"
       "extraer_nodos|REPITE|no añade procedimiento nuevo en ningun lado"
       "extraer_nodos|SANO|comparten vocabulario, no procedimiento"
+      "extraer_nodos|MUTUO|ida=el candidato usa en su paso 2 lo que el vecino entrega|"
+      "vuelta=el vecino usa en su paso 5 lo que el candidato entrega"
     """
     partes = [p.strip() for p in (texto or "").split("|")]
     if len(partes) < 3:
@@ -325,10 +356,23 @@ def parsear_veredicto(texto):
             opciones[clave.strip().lower()] = valor.strip()
         elif parte:
             razon.append(parte)
+
+    if clase == "MUTUO":
+        ida = opciones.get("ida", "").strip()
+        vuelta = opciones.get("vuelta", "").strip()
+        if not ida or not vuelta:
+            raise Rechazo(
+                "veredicto MUTUO sin los dos procedimientos declarados",
+                ["MUTUO exige ida=<procedimiento de ida> y vuelta=<procedimiento de vuelta>",
+                 "un enlace mutuo declarado es la unica vuelta legitima "
+                 "(adjudicacion A.1, docs/BANCO_DE_REGLAS.md)"])
+        return {"vecino": vecino, "clase": clase, "madre": "", "ida": ida, "vuelta": vuelta,
+                "razon": "ida: %s | vuelta: %s" % (ida, vuelta)}
+
     if "razon" in opciones and opciones["razon"]:
         razon.insert(0, opciones.pop("razon"))
     return {"vecino": vecino, "clase": clase, "madre": opciones.get("madre", ""),
-            "razon": " ".join(razon).strip()}
+            "ida": "", "vuelta": "", "razon": " ".join(razon).strip()}
 
 
 def _plantilla_de_reparto(candidato, vecino_id):
@@ -344,7 +388,8 @@ def _plantilla_de_reparto(candidato, vecino_id):
         "  superviviente: %s" % vecino_id,
         "  absorbido:     %s (candidato, nunca llego a existir)" % candidato.get("id"),
         "  fuentes:       %s (orden significativo: la añadida va en segundo lugar)"
-        % ", ".join(candidato.get("fuentes") or []),
+        % ", ".join("%s (%s)" % (f.get("clave"), f.get("fecha"))
+                    for f in candidato.get("fuentes") or [] if isinstance(f, dict)),
         "",
         "  Los seis motivos, todos invisibles para la vara. Escribe QUE viaja y",
         "  A DONDE, o escribe 'nada' con razon. Un motivo en blanco es una perdida.",
@@ -410,7 +455,9 @@ def registrar_censos(candidato, respuestas, fecha):
     censos.crear_plantillas()
     escrito = []
     nodo_id = candidato.get("id")
-    fuente = (candidato.get("fuentes") or [""])[0]
+    primeras_fuentes = candidato.get("fuentes") or []
+    fuente = (primeras_fuentes[0].get("clave", "")
+             if primeras_fuentes and isinstance(primeras_fuentes[0], dict) else "")
 
     for clave, valor in sorted((respuestas or {}).items()):
         principal, extra = _partir_respuesta(valor)
@@ -500,6 +547,7 @@ class Resultado(object):
         self.vecinos = []
         self.veredictos = []
         self.aristas = []
+        self.mutuos = []
         self.censos_escritos = []
         self.nodo = None
 
@@ -516,17 +564,18 @@ def _hoy():
 
 def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
              interactivo=False, ruta_dataset=None, ruta_veredictos=None,
-             umbrales=None, entrada=None):
+             ruta_pares_mutuos=None, umbrales=None, entrada=None):
     """Corre la aduana entera. Devuelve un Resultado con su codigo de salida."""
     ruta_dataset = ruta_dataset or comun.RUTA_DATASET
     ruta_veredictos = ruta_veredictos or comun.RUTA_VEREDICTOS
+    ruta_pares_mutuos = ruta_pares_mutuos or comun.RUTA_PARES_MUTUOS
     umbrales = umbrales or modulo_config.cargar()
     entrada = entrada or (lambda pregunta: input(pregunta))
     resultado = Resultado()
     fecha = _hoy()
 
     # 1. NORMALIZA y valida
-    candidato, avisos = normalizar_candidato(candidato_bruto)
+    candidato, avisos = normalizar_candidato(candidato_bruto, fecha)
     resultado.nodo = candidato
     resultado.decir("ADUANA DE INSERCION, candidato '%s'" % candidato.get("id"))
     for aviso in avisos:
@@ -625,11 +674,14 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
                                 % (vecino_id, vecino_id))
                 resultado.decir('    --veredicto "%s|REPITE|por que no añade procedimiento"' % vecino_id)
                 resultado.decir('    --veredicto "%s|SANO|por que no son el mismo trabajo"' % vecino_id)
+                resultado.decir('    --veredicto "%s|MUTUO|ida=<procedimiento de ida>|'
+                                'vuelta=<procedimiento de vuelta>"' % vecino_id)
             return resultado
 
     # 3. Veredictos escritos: se registran TODOS en la bitacora
     aristas = []
     repite = []
+    mutuos = []
     for vecino in vecinos:
         veredicto = veredictos[vecino["id"]]
         if veredicto["clase"] not in CLASES:
@@ -658,6 +710,9 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
             aristas.append({"madre": madre, "hijo": hijo, "vecino": vecino["id"]})
         elif veredicto["clase"] == "REPITE":
             repite.append(vecino["id"])
+        elif veredicto["clase"] == "MUTUO":
+            mutuos.append({"vecino": vecino["id"], "ida": veredicto["ida"],
+                           "vuelta": veredicto["vuelta"]})
         registro = {
             "fecha": fecha,
             "candidato": candidato["id"],
@@ -668,7 +723,9 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
             "veredicto": veredicto["clase"],
             "razon": veredicto["razon"],
             "arista": ("%s > %s" % (veredicto["madre"], candidato["id"]))
-                      if veredicto["clase"] == "CONTINUA" else "",
+                      if veredicto["clase"] == "CONTINUA"
+                      else ("%s <> %s" % (candidato["id"], vecino["id"]))
+                      if veredicto["clase"] == "MUTUO" else "",
         }
         comun.agregar_jsonl(ruta_veredictos, registro)
         resultado.veredictos.append(registro)
@@ -711,6 +768,31 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
         resultado.aristas.append("%s > %s" % (madre, hijo))
         resultado.decir("  arista madre-hijo cableada y escrita RESUELTA: %s > %s" % (madre, hijo))
 
+    # ENLACE MUTUO DECLARADO (adjudicacion A.1): la unica vuelta legitima.
+    # Se cablea en los DOS sentidos a la vez, porque ninguno de los dos es
+    # madre exclusiva del otro.
+    for mutuo in mutuos:
+        vecino_id = mutuo["vecino"]
+        nodo_vecino = por_id.get(vecino_id)
+        if nodo_vecino is None:
+            resultado.codigo = CODIGO_RECHAZO
+            resultado.decir("RECHAZADO: no encuentro al vecino %s para el enlace mutuo"
+                            % vecino_id)
+            return resultado
+        for campo in ("nodos_siguientes", "nodos_previos"):
+            lista_candidato = list(nuevo.get(campo) or [])
+            if vecino_id not in resolutor_futuro.resolver_lista(lista_candidato):
+                lista_candidato.append(vecino_id)
+            nuevo[campo] = lista_candidato
+            lista_vecino = list(nodo_vecino.get(campo) or [])
+            if candidato["id"] not in resolutor_futuro.resolver_lista(lista_vecino):
+                lista_vecino.append(candidato["id"])
+            nodo_vecino[campo] = lista_vecino
+        resultado.mutuos.append({"par": [candidato["id"], vecino_id],
+                                 "ida": mutuo["ida"], "vuelta": mutuo["vuelta"]})
+        resultado.decir("  enlace mutuo declarado y cableado en los dos sentidos: %s <> %s"
+                        % (candidato["id"], vecino_id))
+
     # 4 a 6. Censos AL ENTRAR
     respuestas = dict(respuestas_censo or {})
     if interactivo:
@@ -719,9 +801,15 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
                 continue
             respuestas[clave] = entrada(pregunta + ": ")
 
-    # Simulacion obligatoria sobre copia en memoria antes de escribir
+    # Simulacion obligatoria sobre copia en memoria antes de escribir. Los
+    # enlaces mutuos que este nodo declara AHORA tienen que entrar tambien
+    # a la simulacion, o el gate veria una vuelta sin blanquear y la
+    # rechazaria en su propia insercion.
     dataset_futuro = nodos_nuevos + [nuevo]
-    fallos = gate.verificar(dataset_futuro)
+    pares_mutuos_existentes = modulo_config.cargar_pares_mutuos(ruta_pares_mutuos)
+    pares_mutuos_simulacion = list(pares_mutuos_existentes) + [
+        {"par": m["par"]} for m in resultado.mutuos]
+    fallos = gate.verificar(dataset_futuro, pares_mutuos=pares_mutuos_simulacion)
     if fallos:
         resultado.codigo = CODIGO_RECHAZO
         resultado.decir("")
@@ -732,6 +820,11 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
         return resultado
 
     comun.escribir_jsonl(ruta_dataset, dataset_futuro)
+    for mutuo in resultado.mutuos:
+        comun.agregar_jsonl(ruta_pares_mutuos, {
+            "par": mutuo["par"], "fecha": fecha,
+            "razon_ida": mutuo["ida"], "razon_vuelta": mutuo["vuelta"],
+            "declarado_por": candidato["id"]})
     resultado.censos_escritos = registrar_censos(nuevo, respuestas, fecha)
     resultado.decir("")
     resultado.decir("GATE VERDE sobre la simulacion. NODO INSERTADO en %s."
@@ -743,6 +836,9 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
     if resultado.veredictos:
         resultado.decir("  veredictos en %s: %d"
                         % (comun.relativa(ruta_veredictos), len(resultado.veredictos)))
+    if resultado.mutuos:
+        resultado.decir("  enlaces mutuos en %s: %d"
+                        % (comun.relativa(ruta_pares_mutuos), len(resultado.mutuos)))
     return resultado
 
 

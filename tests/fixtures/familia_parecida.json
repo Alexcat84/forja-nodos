@@ -12,7 +12,7 @@
   ],
   "condiciones_activacion": "Cuando un nodo trae una cifra o una postura firmada por un autor.",
   "entregable_esperado": "La atribucion verificada con su pagina, su condicion y sus dos fechas de corte, o la correccion declarada.",
-  "fuentes": ["manual_sistema_conocimiento"],
+  "fuentes": [{"clave": "manual_sistema_conocimiento", "fecha": "2026-08-12"}],
   "ids_alias": [],
   "nodos_previos": [],
   "nodos_siguientes": [],

@@ -31,6 +31,7 @@ RUTA_FUENTES = _ruta("FORJA_FUENTES", "fuentes", "FUENTES_CANONICAS.json")
 RUTA_DATASET = _ruta("FORJA_DATASET", "dataset", "nodos.jsonl")
 RUTA_VEREDICTOS = _ruta("FORJA_VEREDICTOS", "bitacora", "VEREDICTOS.jsonl")
 RUTA_UMBRALES = _ruta("FORJA_UMBRALES", "config", "umbrales.json")
+RUTA_PARES_MUTUOS = _ruta("FORJA_PARES_MUTUOS", "config", "pares_mutuos.jsonl")
 DIR_CENSOS = _ruta("FORJA_CENSOS", "censos")
 
 # Manual seccion 2: hook de estilo de la casa. Guion largo y guion medio y

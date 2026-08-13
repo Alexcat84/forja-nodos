@@ -12,7 +12,7 @@
   ],
   "condiciones_activacion": "Al cerrar una tanda de veredictos de aduana, antes de dar el mundo nuevo por integrado.",
   "entregable_esperado": "El acta con relecturas, puestos, caidas y la metrica de credito acumulada de la tanda.",
-  "fuentes": ["manual_sistema_conocimiento"],
+  "fuentes": [{"clave": "manual_sistema_conocimiento", "fecha": "2026-08-12"}],
   "ids_alias": [],
   "nodos_previos": [],
   "nodos_siguientes": [],

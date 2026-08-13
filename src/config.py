@@ -29,3 +29,13 @@ def cargar(ruta=None):
             continue
         valores[clave] = valor
     return valores
+
+
+def cargar_pares_mutuos(ruta=None):
+    """La lista blanca de enlaces mutuos declarados (adjudicacion A.1,
+    docs/BANCO_DE_REGLAS.md). El gate solo perdona una vuelta en un par que
+    esta lista cubra tras resolver: todo lo demas sigue siendo fallo.
+    comun.leer_jsonl ya devuelve lista vacia si el archivo no existe todavia
+    (nadie ha declarado un enlace mutuo aun); un jsonl mal formado SI se deja
+    romper, para que el fallo se vea en vez de tragarse en silencio."""
+    return comun.leer_jsonl(ruta or comun.RUTA_PARES_MUTUOS)
