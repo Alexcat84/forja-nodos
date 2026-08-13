@@ -1,0 +1,37 @@
+#!/bin/sh
+# Hook de pre-commit de forja-nodos.
+# Anclaje: MANUAL_SISTEMA_DE_CONOCIMIENTO seccion 2: el gate de integridad se
+# corre EN CADA COMMIT, y el hook de estilo de la casa prohibe los guiones
+# largos y medios.
+#
+# En rojo, aborta el commit. No se salta: si falla, se corrige y se reintenta.
+# Se instala con: bash hooks/install_hooks.sh
+
+set -e
+
+RAIZ=$(git rev-parse --show-toplevel)
+cd "$RAIZ"
+
+PYTHON=${FORJA_PYTHON:-python}
+if ! command -v "$PYTHON" >/dev/null 2>&1; then
+    PYTHON=python3
+fi
+
+echo "[pre-commit] gate de integridad"
+if ! "$PYTHON" forja.py gate; then
+    echo ""
+    echo "[pre-commit] COMMIT ABORTADO: el gate esta en rojo."
+    echo "Corrige los fallos de arriba. El hook no se salta (docs/loop/EJECUTOR.md, regla 10)."
+    exit 1
+fi
+
+echo "[pre-commit] barrido de guiones"
+if ! "$PYTHON" forja.py guiones; then
+    echo ""
+    echo "[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo."
+    echo "Reemplazalos por el guion corto normal y vuelve a intentarlo."
+    exit 1
+fi
+
+echo "[pre-commit] verde"
+exit 0

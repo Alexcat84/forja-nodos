@@ -1,0 +1,10 @@
+{
+  "_aviso_del_manual": "LAS SEÑALES DE SUPERFICIE ORDENAN, NUNCA DECIDEN (manual principio 4). Estos numeros mueven la cola de lectura: suben o bajan cuantos vecinos se leen, jamas emiten veredicto. Bajarlos hace leer de mas; subirlos deja pasar gemelos. Ningun ajuste de este archivo puede insertar ni bloquear un nodo por si solo: el veredicto lo escribe siempre una persona.",
+  "_medicion_de_la_casa": "Las señales se solapan poco (3 a 6 por ciento entre similitud y paso contra nodo; familia de id midio 50,8 por ciento de precision y vocabulario compartido 3 por ciento). Por eso se corren las tres a la vez y se reportan TODOS los vecinos que superen umbral, con la señal que los levanto.",
+  "umbral_similitud_texto": 0.45,
+  "umbral_familia_id": 0.5,
+  "umbral_paso_contra_nodo": 0.55,
+  "maximo_vecinos_reportados": 25,
+  "solo_dominio_y_nucleo": false,
+  "dominios_nucleo": []
+}

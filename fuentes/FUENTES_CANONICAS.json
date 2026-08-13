@@ -1,0 +1,9 @@
+{
+  "_lea_esto": "Tabla canonica de fuentes (manual principio 8: LA FUENTE ES UN CAMPO SAGRADO). Una sola grafia por libro. Ningun nodo entra con una fuente que no este aqui: la fuente se registra ANTES del primer nodo del libro (manual seccion 7.1). Las claves de fuente son las que se escriben en el campo fuentes de cada nodo, y su ORDEN dentro del nodo es significativo. Las claves que empiezan por guion bajo no son fuentes.",
+  "manual_sistema_conocimiento": {
+    "titulo_completo": "MANUAL DEL SISTEMA DE CONOCIMIENTO: como construir un grafo de conocimiento procedimental desde cero, sin retrabajo. Version 1.0",
+    "autor": "Casa My Idea",
+    "anio": "2026",
+    "notas": "Fuente constitucional de esta forja. Copia literal en docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md"
+  }
+}

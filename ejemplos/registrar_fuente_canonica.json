@@ -1,0 +1,26 @@
+{
+  "id": "registrar_fuente_canonica",
+  "titulo": "Registrar la fuente canonica antes del primer nodo",
+  "resumen_teorico": "La fuente es un campo sagrado: se escribe con una sola grafia por libro y con el orden significativo, porque dos grafias del mismo libro parten las busquedas y las auditorias de atribucion. Registrar la fuente antes del primer nodo es lo que permite que el gate rechace cualquier nodo que cite un libro que la casa no ha declarado.",
+  "pasos_accionables": [
+    "Abre fuentes/FUENTES_CANONICAS.json y busca el libro por su titulo completo.",
+    "Elige una sola grafia de clave para el libro y escribela en snake_case.",
+    "Anota titulo completo, autor y año en la ficha de la clave.",
+    "Corre el gate y confirma que ningun nodo cita una fuente fuera de la tabla."
+  ],
+  "condiciones_activacion": "Cuando entra un libro o mundo nuevo y todavia no se ha extraido su primer nodo.",
+  "entregable_esperado": "Una entrada nueva en fuentes/FUENTES_CANONICAS.json con clave, titulo completo, autor y año, y el gate en verde.",
+  "fuentes": ["manual_sistema_conocimiento"],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "denominaciones": {
+    "nombre_largo": "Registro de la fuente canonica de un libro",
+    "sigla": "RFC",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "canonical source registration"}
+    ]
+  },
+  "dominio": "forja",
+  "escala_minima": "Un solo libro y un solo extractor: la tabla puede ser un archivo de dos entradas y la regla sigue valiendo."
+}

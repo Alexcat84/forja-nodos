@@ -1,0 +1,24 @@
+{
+  "_para_que_sirve": "GEMELO PLANTADO del nodo ejemplo (prueba B). Mismos pasos, otras palabras, id de otra familia (jaccard cero contra registrar_fuente_canonica) y ninguna palabra del titulo repetida. Si la aduana lo deja pasar, el blocking multi señal no guarda nada.",
+  "id": "inscribir_libro_matriz",
+  "titulo": "Inscribir el libro matriz previo al arranque de la extraccion",
+  "resumen_teorico": "El libro es un dato sagrado: se apunta con una sola escritura por obra y con la secuencia que importa, ya que dos escrituras de la misma obra rompen las consultas y las revisiones de autoria. Apuntar la obra previo al arranque de la extraccion es lo que deja que la guarda niegue cualquier ficha que invoque una obra que el taller no declaro.",
+  "pasos_accionables": [
+    "Entra a la tabla de obras del taller y localiza la obra por su nombre entero.",
+    "Toma una unica escritura de llave para la obra y apuntala con guion bajo.",
+    "Apunta nombre entero, quien lo firma y su fecha en la linea de la llave.",
+    "Pasa la guarda y verifica que ninguna ficha invoque una obra ausente de la tabla."
+  ],
+  "condiciones_activacion": "Al llegar una obra o mundo distinto cuya primera ficha aun no se ha sacado.",
+  "entregable_esperado": "Una linea nueva en la tabla de obras del taller con llave, nombre entero, quien firma y fecha, y la guarda sin rojos.",
+  "fuentes": ["manual_sistema_conocimiento"],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "denominaciones": {
+    "nombre_largo": "Inscripcion de la obra matriz del taller",
+    "sigla": "",
+    "otros_idiomas": []
+  },
+  "dominio": "forja"
+}

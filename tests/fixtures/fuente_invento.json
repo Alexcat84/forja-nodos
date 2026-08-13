@@ -1,0 +1,24 @@
+{
+  "_para_que_sirve": "PRUEBA F: candidato con una fuente que no esta en fuentes/FUENTES_CANONICAS.json. La fuente es un campo sagrado (manual principio 8) y la fuente canonica se registra ANTES del primer nodo del libro (seccion 7.1). Si esto entra, la tabla canonica no sirve de nada.",
+  "id": "podar_ramas_muertas",
+  "titulo": "Podar las ramas muertas de un grafo de conocimiento",
+  "resumen_teorico": "Una rama muerta es un nodo sin entradas ni salidas que nadie cita y que ninguna busqueda alcanza. Podarla es barato y reversible mientras quede su razon escrita, y caro cuando se descubre que la rama era la unica puerta a un rubro entero.",
+  "pasos_accionables": [
+    "Lista los nodos sin aristas de entrada ni de salida tras resolver.",
+    "Comprueba para cada uno si alguna denominacion suya es la unica puerta a su rubro.",
+    "Escribe la razon de poda de cada nodo que caiga, con su fecha.",
+    "Corre el gate y confirma que la poda no dejo ninguna arista rota."
+  ],
+  "condiciones_activacion": "Cuando se cierra la extraccion de un libro y quedan nodos aislados.",
+  "entregable_esperado": "La lista de nodos podados con su razon escrita y el gate en verde.",
+  "fuentes": ["libro_que_nadie_registro"],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "denominaciones": {
+    "nombre_largo": "Poda de ramas muertas del grafo",
+    "sigla": "",
+    "otros_idiomas": []
+  },
+  "dominio": "forja"
+}

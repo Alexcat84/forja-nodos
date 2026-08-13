@@ -1,0 +1,25 @@
+{
+  "_para_que_sirve": "CASO POSITIVO de la prueba B. Un nodo del MISMO dominio y del MISMO libro que la semilla, pero que hace otro trabajo, tiene que ENTRAR LIMPIO. Una aduana que bloquea todo lo que le llega no guarda nada: seria un candado, no una guarda. Este nodo mide el otro lado de la señal, y lo mide en el caso dificil: vecino de dominio y de fuente.",
+  "id": "medir_credito_relectura",
+  "titulo": "Medir el credito de una tanda por relectura ciega",
+  "resumen_teorico": "El error de dejar pasar tiene tasa y banda, o no esta medido. Una discrepancia que aparece fuera de los casos que el ejecutor marco como discutibles antes de saber si acertaba dice algo distinto de una que aparece dentro: la primera mueve el credito de la tanda entera, la segunda solo confirma que el marcado funciona.",
+  "pasos_accionables": [
+    "Toma la muestra de la tanda empezando por los discutibles que el ejecutor marco.",
+    "Imprime los pasos de los dos nodos con la razon escrita tapada.",
+    "Adjudica tu clase antes de destapar nada y anotala.",
+    "Destapa la razon y cuenta coincidencias, discrepancias y donde caen.",
+    "Publica caidas dentro contra fuera del marcado, y relee al doble si cayo fuera."
+  ],
+  "condiciones_activacion": "Al cerrar una tanda de veredictos de aduana, antes de dar el mundo nuevo por integrado.",
+  "entregable_esperado": "El acta con relecturas, puestos, caidas y la metrica de credito acumulada de la tanda.",
+  "fuentes": ["manual_sistema_conocimiento"],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "denominaciones": {
+    "nombre_largo": "",
+    "sigla": "",
+    "otros_idiomas": []
+  },
+  "dominio": "forja"
+}

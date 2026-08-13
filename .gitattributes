@@ -1,0 +1,4 @@
+# Todo el repo en LF, tambien en Windows: los .jsonl del dataset y de la
+# bitacora se leen y se comparan linea a linea, y un final de linea que cambia
+# segun la maquina fabrica diferencias que no son diferencias.
+* text=auto eol=lf

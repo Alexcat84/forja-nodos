@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "forja-nodos/esquema/nodo.schema.json",
+  "title": "Nodo de conocimiento procedimental",
+  "description": "Esquema fijado por escrito antes del primer nodo (manual seccion 2). La semantica de las aristas esta declarada: nodos_previos y nodos_siguientes son SECUENCIA DIRIGIDA de madre a hijo. La vuelta no es redundante: es falsa.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "titulo",
+    "resumen_teorico",
+    "pasos_accionables",
+    "condiciones_activacion",
+    "entregable_esperado",
+    "fuentes",
+    "ids_alias",
+    "nodos_previos",
+    "nodos_siguientes",
+    "denominaciones",
+    "dominio"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Id canonico. Castellano, snake_case, sin sufijos numericos, sin preposiciones ni articulos. Ver docs/REGLAS_DE_ID.md.",
+      "minLength": 3,
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "titulo": {
+      "type": "string",
+      "description": "Nombre legible del procedimiento.",
+      "minLength": 3
+    },
+    "resumen_teorico": {
+      "type": "string",
+      "description": "Que sostiene el procedimiento y por que funciona.",
+      "minLength": 10
+    },
+    "pasos_accionables": {
+      "type": "array",
+      "description": "Un procedimiento real por nodo, en imperativos. Una advertencia es linea, no procedimiento (manual seccion 4).",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 5
+      }
+    },
+    "condiciones_activacion": {
+      "type": "string",
+      "description": "Cuando corresponde correr este procedimiento.",
+      "minLength": 5
+    },
+    "entregable_esperado": {
+      "type": "string",
+      "description": "Que queda escrito cuando el procedimiento termina.",
+      "minLength": 5
+    },
+    "fuentes": {
+      "type": "array",
+      "description": "Claves de fuentes/FUENTES_CANONICAS.json. EL ORDEN ES SIGNIFICATIVO: la fuente añadida por injerto va en segundo lugar (manual principio 8).",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 2,
+        "pattern": "^[a-z][a-z0-9_]*$"
+      }
+    },
+    "ids_alias": {
+      "type": "array",
+      "description": "Ids muertos que ahora significan este nodo. El alias cubre el id, no la busqueda del lector (manual seccion 5).",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 3,
+        "pattern": "^[a-z][a-z0-9_]*$"
+      }
+    },
+    "nodos_previos": {
+      "type": "array",
+      "description": "Madres declaradas. Secuencia dirigida.",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 3,
+        "pattern": "^[a-z][a-z0-9_]*$"
+      }
+    },
+    "nodos_siguientes": {
+      "type": "array",
+      "description": "Hijos declarados. Secuencia dirigida.",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 3,
+        "pattern": "^[a-z][a-z0-9_]*$"
+      }
+    },
+    "denominaciones": {
+      "type": "object",
+      "description": "Nombre largo, sigla y termino en otro idioma son TRES denominaciones aparte, y cada una se registra (manual seccion 3.1).",
+      "additionalProperties": false,
+      "required": ["nombre_largo", "sigla", "otros_idiomas"],
+      "properties": {
+        "nombre_largo": {
+          "type": "string",
+          "description": "Cadena vacia si el nodo no tiene nombre largo distinto del titulo."
+        },
+        "sigla": {
+          "type": "string",
+          "description": "Cadena vacia si no hay sigla."
+        },
+        "otros_idiomas": {
+          "type": "array",
+          "description": "Terminos equivalentes en otro idioma. No son ids: son puertas de busqueda del lector.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["idioma", "termino"],
+            "properties": {
+              "idioma": {
+                "type": "string",
+                "minLength": 2
+              },
+              "termino": {
+                "type": "string",
+                "minLength": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    "dominio": {
+      "type": "string",
+      "description": "Dominio al que pertenece el nodo. Acota el indice de la señal 1.",
+      "minLength": 2,
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "escala_minima": {
+      "type": "string",
+      "description": "Opcional. Quien conserva la version ejecutable a escala minima (manual seccion 5: la escala es contenido)."
+    },
+    "marco_pais": {
+      "type": "string",
+      "description": "Opcional. Marco legal de un pais. Si esta, entra al censo censos/marco_pais.md al insertar."
+    },
+    "vigencia": {
+      "type": "string",
+      "description": "Opcional. Norma con version o fecha de corte. Si esta, entra al censo censos/vigencia.md al insertar."
+    },
+    "atribuciones": {
+      "type": "array",
+      "description": "Opcional. Cifras del autor con su fuente. Toda cifra lleva su fecha de corte (manual principio 5) y toda atribucion se verifica (principio 8).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["cifra", "autor", "fuente", "fecha_corte"],
+        "properties": {
+          "cifra": {
+            "type": "string",
+            "minLength": 1
+          },
+          "autor": {
+            "type": "string",
+            "minLength": 2
+          },
+          "fuente": {
+            "type": "string",
+            "description": "Clave de fuentes/FUENTES_CANONICAS.json.",
+            "minLength": 2,
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "fecha_corte": {
+            "type": "string",
+            "minLength": 4
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_para_que_sirve": "Aisla la SEÑAL 2 (familia de id). Este candidato hace un trabajo distinto del de la semilla y su texto no se le parece: si la aduana lo levanta, lo levanta SOLO por la familia de su id, que es una variante por plural y por forma de la palabra ('registro_fuentes_canonicas' contra 'registrar_fuente_canonica'). Sin esta prueba, la señal 2 seria codigo que nadie ejerce.",
+  "id": "registro_fuentes_canonicas",
+  "titulo": "Comprobar que las atribuciones de un autor dicen lo que el autor dijo",
+  "resumen_teorico": "Toda atribucion es una afirmacion que se verifica. Una cita que admite lo que el citado prohibe es una cita falsa, y el modo mas comun de fabricarla no es inventar la frase sino recortarle la condicion que la limitaba. La comprobacion se hace contra el texto del autor, no contra el recuerdo de quien lo cito.",
+  "pasos_accionables": [
+    "Abre el pasaje original del autor en la pagina que la atribucion declara.",
+    "Marca la condicion o el limite que acompaña a la afirmacion en el original.",
+    "Compara esa condicion con la glosa que la casa escribio alrededor de la cifra.",
+    "Anota la fecha de corte del original y la de la glosa que la interpreta.",
+    "Declara la correccion sin borrar el texto viejo si las dos fechas no cuadran."
+  ],
+  "condiciones_activacion": "Cuando un nodo trae una cifra o una postura firmada por un autor.",
+  "entregable_esperado": "La atribucion verificada con su pagina, su condicion y sus dos fechas de corte, o la correccion declarada.",
+  "fuentes": ["manual_sistema_conocimiento"],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "denominaciones": {
+    "nombre_largo": "",
+    "sigla": "",
+    "otros_idiomas": []
+  },
+  "dominio": "forja"
+}

@@ -1,0 +1,27 @@
+{
+  "_para_que_sirve": "HIJO de registrar_fuente_canonica: despliega en siete pasos su paso 2 ('Elige una sola grafia de clave para el libro y escribela en snake_case'). No es un duplicado: es jerarquia, y LA JERARQUIA SE CABLEA, NO SE COPIA (manual principio 2). La aduana lo bloquea por la señal paso contra nodo y solo lo deja entrar tras declarar la arista madre-hijo. Es a la vez ejemplo de uso y fixture de la prueba C.",
+  "id": "elegir_grafia_clave",
+  "titulo": "Elegir una sola grafia de clave para el libro",
+  "resumen_teorico": "Elegir la grafia de una clave de fuente parece una linea y es un procedimiento: hay que descartar subtitulos, ediciones y traducciones del titulo, decidir entre autor y obra cuando ambos compiten, y dejar escrito por que se descarto cada candidata, porque la siguiente persona que dude va a proponer la misma alternativa. Una clave mal elegida no se ve hasta que aparece la segunda grafia del mismo libro.",
+  "pasos_accionables": [
+    "Reune todas las grafias con las que el libro aparece citado en el material de entrada.",
+    "Descarta las que arrastran subtitulo, numero de edicion o nombre de traduccion.",
+    "Decide si la clave nombra al autor o a la obra, y aplica esa decision a toda la tabla.",
+    "Recorta la clave a dos o tres piezas en snake_case, sin articulos ni preposiciones.",
+    "Comprueba contra la tabla que ninguna clave viva colisiona ni se parece a la nueva.",
+    "Escribe en la ficha las grafias descartadas y la razon de cada descarte.",
+    "Corre el gate y confirma que la clave nueva no deja ninguna fuente huerfana."
+  ],
+  "condiciones_activacion": "Cuando se registra la fuente de un libro y hay mas de una grafia posible para su clave.",
+  "entregable_esperado": "La clave elegida en la tabla canonica y la lista de grafias descartadas con su razon escrita.",
+  "fuentes": ["manual_sistema_conocimiento"],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "denominaciones": {
+    "nombre_largo": "Eleccion de la grafia unica de una clave de fuente",
+    "sigla": "",
+    "otros_idiomas": []
+  },
+  "dominio": "forja"
+}
