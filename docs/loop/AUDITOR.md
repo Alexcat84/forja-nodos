@@ -12,6 +12,25 @@ Regla madre, principio 10: EL QUE MIDE NO ADJUDICA. El ejecutor ejecuta y mide;
 tu verificas clonando, relees a ciegas y decides criterios. Los errores de
 ambos se declaran con nombre.
 
+> CORRECCION DECLARADA (4 sep 2026, decision del fundador): EL FICHERO DE
+> PARADA TIENE UN SOLO NOMBRE, Y ES `PARA_ALEXIS.md`.
+>
+> Este documento se escribio en agosto de 2026 y nombraba el fichero de parada
+> como ~~`PARA_EL_DUEÑO.md`~~. Las cuatro menciones de abajo quedan tachadas en
+> su sitio, sin borrarse, con el nombre vigente al lado: una correccion que tapa
+> lo que corrige no se puede auditar (manual principio 6).
+>
+> EL MOTIVO: `orquestador_forja.sh` vigila UN SOLO nombre, y
+> `docs/loop/AUDITOR_FORJA.md` ya usaba `PARA_ALEXIS.md`. Un nombre de fichero
+> con dos verdades es una trampa: el auditor escribe la parada donde dice su
+> pagina, el arnes mira donde dice su codigo, y el bucle sigue corriendo por
+> encima de una parada que nadie ve. La averia no seria del codigo ni del
+> documento: seria de que los dos tienen razon.
+>
+> Donde manda cada documento: este es la copia generalizada del protocolo de la
+> casa que el manual seccion 8 manda tener. El protocolo VIVO del bucle del
+> extractor, el que el arnes invoca, es `docs/loop/AUDITOR_FORJA.md`.
+
 ## 0. Fuentes de verdad, en este orden
 1. docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md: la constitucion. Se cita por
    principio o por seccion; no se inventa.
@@ -50,7 +69,9 @@ ambos se declaran con nombre.
    trabajo (extraccion, censos u operaciones segun la fase); cierra con "Cero
    guiones largos y cero guiones medios. Deja correr el hook. Si algo
    contradice una regla vigente, paras y lo traes. No adivines."
-6. Commitea docs/loop/ (acta, prompt, y PARA_EL_DUEÑO.md si aplica).
+6. Commitea docs/loop/ (acta, prompt, y ~~PARA_EL_DUEÑO.md~~ PARA_ALEXIS.md
+   si aplica; corregido el 4 sep 2026, ver la correccion declarada de la
+   cabecera).
 
 ## 2. Disciplina del dictado (tus propios limites)
 - Nada se afirma sin haberse consultado EN ESTA vuelta: estados, cifras,
@@ -65,8 +86,8 @@ ambos se declaran con nombre.
 - Tus errores se declaran en el acta con nombre, como los del ejecutor.
 
 ## 3. Condiciones de PARADA
-Escribes docs/loop/PARA_EL_DUEÑO.md y vacias PROMPT_SIGUIENTE.md; el bucle se
-detiene.
+Escribes docs/loop/~~PARA_EL_DUEÑO.md~~ PARA_ALEXIS.md (corregido el 4 sep
+2026, ver la cabecera) y vacias PROMPT_SIGUIENTE.md; el bucle se detiene.
 
 - Doctrina NUEVA necesaria (ninguna regla escrita cubre el caso ni por
   extension citable).
@@ -79,11 +100,13 @@ detiene.
   causa sin regla que lo resuelva).
 - Credito de tanda roto (discrepancia fuera del marcado) dos tandas seguidas.
 - Campaña consumada: la parada feliz, con el reporte final. Aqui
-  PARA_EL_DUEÑO.md PIDE el merge o el paso siguiente con el estado verde
-  delante; no lo hace. EL BUCLE NO FUNDE RAMAS y EL BUCLE NO CREA REMOTOS.
+  ~~PARA_EL_DUEÑO.md~~ PARA_ALEXIS.md (corregido el 4 sep 2026) PIDE el merge o
+  el paso siguiente con el estado verde delante; no lo hace. EL BUCLE NO FUNDE
+  RAMAS y EL BUCLE NO CREA REMOTOS.
 
-En PARA_EL_DUEÑO.md: motivo, estado exacto (hash, cuenta de nodos, fase), lo
-que se necesita del dueño, y como retomar.
+En ~~PARA_EL_DUEÑO.md~~ PARA_ALEXIS.md (corregido el 4 sep 2026): motivo,
+estado exacto (hash, cuenta de nodos, fase), lo que se necesita del dueño, y
+como retomar.
 
 ## 4. Estado al encender el bucle
 Se escribe aqui, MEDIDO contra el repo y con su fecha, la primera vez que el

@@ -149,12 +149,25 @@ Escribes `docs/loop/PARA_ALEXIS.md` con el motivo y el estado exacto, **vacias
 En `PARA_ALEXIS.md`: motivo, estado exacto (hash, cuenta de nodos, fase), lo que
 se necesita de Alexis, y como retomar.
 
-> **Nota de nombre, para que no confunda a nadie:** el `AUDITOR.md` de esta misma
-> carpeta es la copia generalizada del protocolo de la casa que el manual seccion
-> 8 manda tener, escrita en agosto, y nombra el fichero de parada como
-> `PARA_EL_DUEÑO.md`. **Este documento y `orquestador_forja.sh` usan
-> `PARA_ALEXIS.md`, y ese es el nombre que el arnes vigila.** Unificar los dos
-> documentos es trabajo pendiente y esta en el reporte de esta sesion.
+> **Nota de nombre: RESUELTA el 4 sep 2026 por decision del fundador.**
+>
+> ~~Esta nota decia que el `AUDITOR.md` de esta misma carpeta nombraba el~~
+> ~~fichero de parada como `PARA_EL_DUEÑO.md`, que este documento y~~
+> ~~`orquestador_forja.sh` usaban `PARA_ALEXIS.md`, y que unificar los dos~~
+> ~~documentos era trabajo pendiente.~~
+>
+> **YA NO ES PENDIENTE: el nombre canonico es `PARA_ALEXIS.md`**, que es el que
+> el arnes vigila. Las cuatro menciones del nombre viejo en `AUDITOR.md`
+> quedaron corregidas por correccion declarada (tachadas en su sitio, con el
+> nombre vigente al lado y su motivo en la cabecera de aquel documento) el 4 sep
+> 2026. **Un nombre de fichero con dos verdades es una trampa**: el auditor
+> escribiria la parada donde dice su pagina, el arnes miraria donde dice su
+> codigo, y el bucle seguiria corriendo por encima de una parada que nadie ve.
+>
+> Lo que si sigue en pie, y no es una averia sino un reparto: `AUDITOR.md` es la
+> copia generalizada del protocolo de la casa que el manual seccion 8 manda
+> tener; **este documento es el protocolo VIVO del bucle del extractor**, el que
+> `orquestador_forja.sh` invoca.
 
 ## 4. EL ESTADO AL ENCENDER EL BUCLE
 
