@@ -33,6 +33,17 @@ Mas las adjudicaciones del auditor (docs/BANCO_DE_REGLAS.md):
       escritas, pasa el gate; la MISMA vuelta sin declarar lo pone en rojo.
   A.2 fuentes con fecha: un nodo con mas de una fuente fuera de orden de
       fecha lo pone en rojo; en orden, pasa.
+
+Y la TANDA A de la v0.3 (decision del fundador del 4 sep 2026 al final de
+docs/COSECHA_2026-09.md), cada pieza con su caso positivo:
+  C.1 el MUTUO cita DOS LINEAS DISTINTAS: el legitimo pasa, el solape
+      disfrazado cae nombrando el paso.
+  C.2 el registro de citas se verifica ENTERO: un par sin cita, o con cita
+      incompleta, es rojo que lo nombra.
+  C.3 el bloque de vigencia: un veredicto contra texto que cambio es RANCIO.
+  C.4 ninguna señal devuelve cero silencioso: fuera de su dominio devuelve
+      NO APLICA, y NO APLICA revienta si se compara con un umbral.
+  D.17 el deprecado es archivo, no superficie.
 """
 
 import io
@@ -548,10 +559,13 @@ class PruebaGate(BaseForja):
         self.assertEqual(codigo, 1, salida)
         self.assertIn("vuelta", salida)
 
+        # La cita entera, como la exige C.2 desde la v0.3: sin paso_ida ni
+        # paso_vuelta seria pertenencia, no cita, y el gate la rechaza.
         comun.agregar_jsonl(self.pares_mutuos, {
             "par": ["sanear_grafo", "podar_ramas"], "fecha": "2026-08-12",
-            "razon_ida": "de prueba", "razon_vuelta": "de prueba",
-            "declarado_por": "sanear_grafo"})
+            "declarado_por": "sanear_grafo",
+            "paso_ida": 1, "razon_ida": "el vecino despliega mi paso 1",
+            "paso_vuelta": 2, "razon_vuelta": "yo despliego su paso 2"})
         codigo, salida = self.forja("gate")
         self.assertEqual(codigo, 0, salida)
 
@@ -567,8 +581,8 @@ class PruebaMutuo(BaseForja):
             "insertar", HIJO, "--sin-preguntas",
             "--veredicto",
             "registrar_fuente_canonica|MUTUO|"
-            "ida=el candidato usa en su paso 3 la clave que la madre registro en su paso 2|"
-            "vuelta=la madre usa en su paso 4 la comprobacion que hace el candidato en su paso 5")
+            "ida=3:el vecino despliega entero mi paso 3|"
+            "vuelta=2:yo despliego entero su paso 2")
         self.assertEqual(codigo, 0, salida)
 
         nodos = dict((n["id"], n) for n in self.nodos())
@@ -588,8 +602,9 @@ class PruebaMutuo(BaseForja):
 
         bitacora = comun.leer_jsonl(self.veredictos)
         self.assertEqual(bitacora[0]["veredicto"], "MUTUO")
-        self.assertIn("ida:", bitacora[0]["razon"])
-        self.assertIn("vuelta:", bitacora[0]["razon"])
+        # la razon del MUTUO nombra las DOS lineas, cada una con su paso
+        self.assertIn("ida (paso 3 del candidato)", bitacora[0]["razon"])
+        self.assertIn("vuelta (paso 2 del vecino)", bitacora[0]["razon"])
 
     def test_caso_negativo_mutuo_sin_las_dos_razones_es_rechazado(self):
         """Caso positivo de la guarda inversa: sin ida Y vuelta, MUTUO no
@@ -597,7 +612,7 @@ class PruebaMutuo(BaseForja):
         self.sembrar_ejemplo()
         codigo, salida = self.forja(
             "insertar", HIJO, "--sin-preguntas",
-            "--veredicto", "registrar_fuente_canonica|MUTUO|ida=solo la ida, falta la vuelta")
+            "--veredicto", "registrar_fuente_canonica|MUTUO|ida=3:solo la ida, falta la vuelta")
         self.assertEqual(codigo, 1, salida)
         self.assertIn("MUTUO", salida)
         self.assertEqual(len(self.nodos()), 1)
@@ -614,6 +629,314 @@ class PruebaMutuo(BaseForja):
         codigo, salida = self.forja("gate")
         self.assertEqual(codigo, 1, salida)
         self.assertIn("vuelta", salida)
+
+
+class PruebaCitaDeLinea(BaseForja):
+    """C.1 y C.2 de la TANDA A: el MUTUO cita DOS LINEAS DISTINTAS, y el
+    registro de citas se verifica entero. Reglas madre: banco de textos 9.22
+    de My-idea y la parada del 2 sep 2026."""
+
+    def _madre_e_hijo(self):
+        self.sembrar_ejemplo()
+        return json.loads(comun.leer_texto(HIJO))
+
+    def test_c1_mutuo_legitimo_con_dos_lineas_distintas(self):
+        self._madre_e_hijo()
+        codigo, salida = self.forja(
+            "insertar", HIJO, "--sin-preguntas",
+            "--veredicto",
+            "registrar_fuente_canonica|MUTUO|"
+            "ida=5:el vecino despliega entero mi paso 5|"
+            "vuelta=2:yo despliego entero su paso 2")
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("cita: ida es el paso 5", salida)
+
+        citas = self.pares()
+        self.assertEqual(len(citas), 1)
+        cita = citas[0]
+        for campo in ("fecha", "declarado_por", "paso_ida", "razon_ida",
+                      "paso_vuelta", "razon_vuelta", "huella_ida", "huella_vuelta"):
+            self.assertIn(campo, cita)
+        self.assertEqual(cita["paso_ida"], 5)
+        self.assertEqual(cita["paso_vuelta"], 2)
+        self.assertEqual(self.forja("gate")[0], 0)
+
+    def test_c1_caso_positivo_solape_disfrazado_cae(self):
+        """La misma linea en los dos sentidos NO es enlace mutuo: es solape,
+        y se rechaza NOMBRANDO el paso."""
+        self._madre_e_hijo()
+        hijo = json.loads(comun.leer_texto(HIJO))
+        # el paso 7 del hijo pasa a ser LITERALMENTE el paso 4 de la madre
+        madre = json.loads(comun.leer_texto(EJEMPLO))
+        hijo["pasos_accionables"][6] = madre["pasos_accionables"][3]
+        ruta = os.path.join(self.taller, "hijo_disfrazado.json")
+        comun.escribir_texto(ruta, json.dumps(hijo, ensure_ascii=False))
+
+        codigo, salida = self.forja(
+            "insertar", ruta, "--sin-preguntas",
+            "--veredicto",
+            "registrar_fuente_canonica|MUTUO|"
+            "ida=7:mi paso 7 lo despliega el vecino|"
+            "vuelta=4:su paso 4 lo despliego yo")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("SOLAPE DISFRAZADO DE ENLACE MUTUO", salida)
+        self.assertIn("ida cita el paso 7", salida)
+        self.assertIn("vuelta cita el paso 4", salida)
+        self.assertEqual(len(self.nodos()), 1)
+        self.assertEqual(self.pares(), [])
+
+    def test_c1_caso_positivo_sin_citar_la_linea_cae(self):
+        self._madre_e_hijo()
+        codigo, salida = self.forja(
+            "insertar", HIJO, "--sin-preguntas",
+            "--veredicto",
+            "registrar_fuente_canonica|MUTUO|ida=el vecino me despliega|vuelta=yo lo despliego")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("no cita su linea", salida)
+
+    def test_c1_caso_positivo_paso_que_el_nodo_no_tiene(self):
+        self._madre_e_hijo()
+        codigo, salida = self.forja(
+            "insertar", HIJO, "--sin-preguntas",
+            "--veredicto",
+            "registrar_fuente_canonica|MUTUO|ida=99:no existe|vuelta=2:su paso 2")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("cita un paso que el candidato no tiene", salida)
+
+    def test_c2_par_bidireccional_sin_cita_es_rojo(self):
+        """C.2: el gate verifica LA CITA, no la pertenencia."""
+        a = nodo_base("sanear_grafo", nodos_siguientes=["podar_ramas"],
+                      nodos_previos=["podar_ramas"])
+        b = nodo_base("podar_ramas", nodos_siguientes=["sanear_grafo"],
+                      nodos_previos=["sanear_grafo"])
+        self.escribir_dataset([a, b])
+        codigo, salida = self.forja("gate")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("NO TIENE CITA en el registro", salida)
+        self.assertIn("UN PAR SIN CITA ES ROJO", salida)
+
+    def test_c2_cita_incompleta_es_rojo_y_la_nombra(self):
+        a = nodo_base("sanear_grafo", nodos_siguientes=["podar_ramas"],
+                      nodos_previos=["podar_ramas"])
+        b = nodo_base("podar_ramas", nodos_siguientes=["sanear_grafo"],
+                      nodos_previos=["sanear_grafo"])
+        self.escribir_dataset([a, b])
+        # la cita de la v0.2: pertenencia con razones, SIN citar linea
+        comun.agregar_jsonl(self.pares_mutuos, {
+            "par": ["sanear_grafo", "podar_ramas"], "fecha": "2026-09-04",
+            "razon_ida": "de prueba", "razon_vuelta": "de prueba",
+            "declarado_por": "sanear_grafo"})
+        codigo, salida = self.forja("gate")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("cita_incompleta", salida)
+        self.assertIn("le falta el campo 'paso_ida'", salida)
+        self.assertIn("le falta el campo 'paso_vuelta'", salida)
+
+        # caso positivo: con la cita COMPLETA, el mismo dataset queda verde
+        comun.escribir_jsonl(self.pares_mutuos, [{
+            "par": ["sanear_grafo", "podar_ramas"], "fecha": "2026-09-04",
+            "declarado_por": "sanear_grafo",
+            "paso_ida": 1, "razon_ida": "el vecino despliega mi paso 1",
+            "paso_vuelta": 2, "razon_vuelta": "yo despliego su paso 2"}])
+        self.assertEqual(self.forja("gate")[0], 0)
+
+    def test_c2_cita_que_apunta_hoy_a_la_misma_linea_es_rojo(self):
+        """Una cita que era buena deja de serlo si el texto se movio debajo."""
+        a = nodo_base("sanear_grafo", nodos_siguientes=["podar_ramas"],
+                      nodos_previos=["podar_ramas"])
+        b = nodo_base("podar_ramas", nodos_siguientes=["sanear_grafo"],
+                      nodos_previos=["sanear_grafo"])
+        # hoy el paso 1 de los dos dice lo mismo
+        b["pasos_accionables"][0] = a["pasos_accionables"][0]
+        self.escribir_dataset([a, b])
+        comun.agregar_jsonl(self.pares_mutuos, {
+            "par": ["sanear_grafo", "podar_ramas"], "fecha": "2026-09-04",
+            "declarado_por": "sanear_grafo",
+            "paso_ida": 1, "razon_ida": "x", "paso_vuelta": 1, "razon_vuelta": "y"})
+        codigo, salida = self.forja("gate")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("apuntan HOY a la misma linea", salida)
+
+
+class PruebaVigencia(BaseForja):
+    """C.3 de la TANDA A: el bloque de vigencia. Regla madre: los cinco pares
+    rancios de OP-D-03 en My-idea (15 ago 2026)."""
+
+    def test_c3_un_veredicto_contra_texto_que_cambio_es_rancio(self):
+        self.sembrar_ejemplo()
+        codigo, salida = self.forja(
+            "insertar", HIJO, "--sin-preguntas",
+            "--veredicto",
+            "registrar_fuente_canonica|CONTINUA|madre=registrar_fuente_canonica|"
+            "el candidato despliega su paso 2")
+        self.assertEqual(codigo, 0, salida)
+
+        # caso positivo primero: sin tocar nada, el bloque esta VERDE
+        codigo, salida = self.forja("rancios")
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("BLOQUE DE VIGENCIA VERDE", salida)
+
+        # ahora una cirugia mueve el texto de la madre bajo los pies
+        nodos = self.nodos()
+        for nodo in nodos:
+            if nodo["id"] == "registrar_fuente_canonica":
+                nodo["pasos_accionables"][1] = "Elige la grafia por otro camino distinto."
+        self.escribir_dataset(nodos)
+
+        codigo, salida = self.forja("rancios")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("RANCIO", salida)
+        self.assertIn("el texto de su vecino 'registrar_fuente_canonica' cambio", salida)
+        self.assertIn("NO SE CITA COMO VIGENTE", salida)
+
+    def test_c3_un_veredicto_sin_huella_se_declara_no_se_da_por_bueno(self):
+        """Un veredicto de antes del bloque de vigencia no es vigente ni
+        rancio: es INCOMPROBABLE, y eso se dice."""
+        self.sembrar_ejemplo()
+        comun.agregar_jsonl(self.veredictos, {
+            "fecha": "2026-08-12", "candidato": "registrar_fuente_canonica",
+            "vecino": "registrar_fuente_canonica", "veredicto": "SANO",
+            "razon": "escrito antes de que existiera la huella"})
+        codigo, salida = self.forja("rancios")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("SIN HUELLA", salida)
+        self.assertIn("NO SE PUEDE COMPROBAR", salida)
+
+    def test_c3_la_cita_de_un_mutuo_tambien_envejece(self):
+        self.sembrar_ejemplo()
+        codigo, salida = self.forja(
+            "insertar", HIJO, "--sin-preguntas",
+            "--veredicto",
+            "registrar_fuente_canonica|MUTUO|ida=5:despliega mi paso 5|"
+            "vuelta=2:despliego su paso 2")
+        self.assertEqual(codigo, 0, salida)
+        self.assertEqual(self.forja("rancios")[0], 0)
+
+        nodos = self.nodos()
+        for nodo in nodos:
+            if nodo["id"] == "registrar_fuente_canonica":
+                nodo["pasos_accionables"][1] = "Otra cosa completamente distinta aqui."
+        self.escribir_dataset(nodos)
+        codigo, salida = self.forja("rancios")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("linea de vuelta", salida)
+
+
+class PruebaNoAplica(BaseForja):
+    """C.4 de la TANDA A: ninguna señal devuelve cero silencioso. Regla madre:
+    la señal muerta de costuras_internas.py que devolvia 0,0 (15 ago 2026)."""
+
+    def test_c4_una_senal_que_no_aplica_revienta_si_se_compara(self):
+        from src.aduana import NoAplica, senal_similitud_texto
+        medida = senal_similitud_texto("", "un texto cualquiera")
+        self.assertIsInstance(medida, NoAplica)
+        for comparacion in (lambda: medida >= 0.45, lambda: medida > 0.0,
+                            lambda: medida < 1.0, lambda: medida <= 0.5,
+                            lambda: float(medida)):
+            self.assertRaises(TypeError, comparacion)
+
+    def test_c4_las_tres_senales_declaran_su_dominio(self):
+        from src.aduana import NoAplica, senal_familia_id, senal_paso_contra_nodo
+        self.assertIsInstance(senal_familia_id("de", "registrar_fuentes"), NoAplica)
+        medida, _ = senal_paso_contra_nodo({"pasos_accionables": []},
+                                           {"pasos_accionables": ["uno"]})
+        self.assertIsInstance(medida, NoAplica)
+
+    def test_c4_medir_declara_en_vez_de_votar(self):
+        from src import aduana
+        candidato = nodo_base("sanear_grafo")
+        vecino = nodo_base("podar_ramas", pasos_accionables=[])
+        medicion = aduana.medir(candidato, vecino)
+        self.assertIn("NO APLICA", str(medicion["senales"]["paso_contra_nodo"]))
+        self.assertNotIn("paso_contra_nodo", medicion["levantada_por"])
+
+    def test_c4_caso_positivo_una_senal_que_si_aplica_sigue_votando(self):
+        from src import aduana
+        candidato = nodo_base("sanear_grafo")
+        vecino = nodo_base("sanear_grafo_gemelo")
+        medicion = aduana.medir(candidato, vecino)
+        self.assertIsInstance(medicion["senales"]["paso_contra_nodo"], float)
+        self.assertIn("paso_contra_nodo", medicion["levantada_por"])
+
+
+class PruebaDeprecado(BaseForja):
+    """D.17 de la TANDA A: EL DEPRECADO ES ARCHIVO, NO SUPERFICIE. Regla
+    madre: la decision del fundador de My-idea del 15 ago 2026."""
+
+    def _grafo_con_deprecado(self):
+        superviviente = nodo_base("sanear_grafo", ids_alias=["podar_ramas"])
+        archivo = nodo_base("podar_ramas", estado="deprecado",
+                            nodos_siguientes=["sanear_grafo"])
+        return superviviente, archivo
+
+    def test_d17_el_resolutor_camina_del_deprecado_al_superviviente(self):
+        from src.resolutor import Resolutor
+        superviviente, archivo = self._grafo_con_deprecado()
+        resolutor = Resolutor([superviviente, archivo])
+        self.assertEqual(resolutor.errores, [])
+        self.assertEqual(resolutor.resolver("podar_ramas"), "sanear_grafo")
+        self.assertFalse(resolutor.esta_vivo("podar_ramas"))
+        self.assertTrue(resolutor.esta_vivo("sanear_grafo"))
+        self.assertEqual(resolutor.ids_vivos(), ["sanear_grafo"])
+
+    def test_d17_las_aristas_del_archivo_no_se_reciprocan(self):
+        """El deprecado conserva su cableado y eso NO abre un hueco: si sus
+        aristas contaran, el superviviente tendria que declararlas de vuelta."""
+        superviviente, archivo = self._grafo_con_deprecado()
+        self.escribir_dataset([superviviente, archivo])
+        codigo, salida = self.forja("gate")
+        self.assertEqual(codigo, 0, salida)
+
+        # caso positivo: la MISMA arista, con el nodo VIVO, si abre el hueco
+        archivo_vivo = dict(archivo)
+        archivo_vivo["estado"] = "vivo"
+        superviviente_sin_alias = dict(superviviente)
+        superviviente_sin_alias["ids_alias"] = []
+        self.escribir_dataset([superviviente_sin_alias, archivo_vivo])
+        codigo, salida = self.forja("gate")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("arista_incompleta", salida)
+
+    def test_d17_ningun_vivo_nombra_a_un_deprecado(self):
+        superviviente, archivo = self._grafo_con_deprecado()
+        superviviente["nodos_siguientes"] = ["podar_ramas"]
+        self.escribir_dataset([superviviente, archivo])
+        codigo, salida = self.forja("gate")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("deprecado_en_superficie", salida)
+        self.assertIn("El deprecado es archivo, no participante", salida)
+
+    def test_d17_el_deprecado_no_se_ofrece_como_vecino(self):
+        """Un gemelo del candidato que esta DEPRECADO no bloquea: su material
+        vivo ya esta en el superviviente."""
+        self.sembrar_ejemplo()
+        nodos = self.nodos()
+        nodos[0]["estado"] = "deprecado"
+        nodos.append(nodo_base("sanear_grafo", ids_alias=["registrar_fuente_canonica"]))
+        self.escribir_dataset(nodos)
+        codigo, salida = self.forja("insertar", self.fixture("gemelo_plantado.json"),
+                                    "--sin-preguntas")
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("NODO INSERTADO", salida)
+
+    def test_d17_caso_positivo_vivo_si_bloquea(self):
+        """El mismo gemelo contra el mismo nodo VIVO si bloquea: la guarda
+        distingue el archivo de la superficie, no apaga el bloqueo."""
+        self.sembrar_ejemplo()
+        codigo, salida = self.forja("insertar", self.fixture("gemelo_plantado.json"),
+                                    "--sin-preguntas")
+        self.assertEqual(codigo, 2, salida)
+        self.assertIn("LA INSERCION QUEDA BLOQUEADA", salida)
+
+    def test_d17_un_candidato_no_puede_declararse_deprecado(self):
+        candidato = json.loads(comun.leer_texto(EJEMPLO))
+        candidato["estado"] = "deprecado"
+        ruta = os.path.join(self.taller, "candidato_deprecado.json")
+        comun.escribir_texto(ruta, json.dumps(candidato, ensure_ascii=False))
+        codigo, salida = self.forja("insertar", ruta, "--sin-preguntas")
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("entra VIVO", salida)
+        self.assertEqual(self.nodos()[0]["estado"], "vivo")
 
 
 class PruebaResolutor(BaseForja):
@@ -646,7 +969,8 @@ class PruebaResolutor(BaseForja):
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
-             PruebaGate, PruebaMutuo, PruebaResolutor]
+             PruebaGate, PruebaMutuo, PruebaCitaDeLinea, PruebaVigencia,
+             PruebaNoAplica, PruebaDeprecado, PruebaResolutor]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -665,6 +989,10 @@ def main():
              + len(cargador.loadTestsFromTestCase(PruebaResolutor)._tests)))
     print("  adjudicaciones del auditor (A.1 MUTUO, A.2 fuentes con fecha): %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaMutuo)._tests))
+    print("  TANDA A de la v0.3 (C.1 cita de linea, C.2 registro de citas, C.3 vigencia, "
+          "C.4 no aplica, D.17 deprecado): %d pruebas mas"
+          % sum(len(cargador.loadTestsFromTestCase(c)._tests)
+                for c in (PruebaCitaDeLinea, PruebaVigencia, PruebaNoAplica, PruebaDeprecado)))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

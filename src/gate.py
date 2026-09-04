@@ -7,11 +7,12 @@ Se corre en cada commit. Comprueba, sobre el dataset entero:
   3. fuentes contra la tabla canonica, y sin claves repetidas en un nodo
   4. cero auto-aristas TRAS RESOLVER
   5. cero aristas duplicadas TRAS RESOLVER
-  6. cero vueltas en los pares madre-hijo declarados, SALVO el par que
-     figure en la lista blanca de enlaces mutuos declarados tras resolver
-     (adjudicacion A.1, docs/BANCO_DE_REGLAS.md)
+  6. cero vueltas en los pares bidireccionales, SALVO el par que traiga su
+     CITA COMPLETA en el registro de enlaces mutuos tras resolver, y la cita
+     se verifica entera: un par sin cita es rojo (adjudicaciones A.1 y A.4)
   7. cero guiones largos o medios en los textos de los nodos
-  8. aristas solo hacia ids existentes o alias resolubles
+  8. aristas solo hacia ids existentes o alias resolubles, y ningun nodo
+     VIVO nombra a un DEPRECADO: el archivo no es superficie (D.17)
   9. en un nodo con mas de una fuente, el orden respeta la fecha: la fuente
      añadida va en SEGUNDO lugar (manual principio 8, automatizado por la
      adjudicacion A.2)
@@ -44,11 +45,22 @@ def _claves_de_fuente(tabla):
     return set(k for k in tabla.keys() if not k.startswith("_"))
 
 
-def _pares_mutuos_resueltos(pares_mutuos, resolutor):
-    """Resuelve la lista blanca (manual principio 3: todo id pasa por el
-    resolutor, tambien los de una lista blanca). Un par cuyos dos extremos
-    ya no resuelven no cubre nada: el enlace mutuo se perdio con el nodo."""
-    resueltos = set()
+CAMPOS_DE_CITA = ("fecha", "declarado_por", "paso_ida", "razon_ida",
+                  "paso_vuelta", "razon_vuelta")
+
+
+def _citas_mutuas(pares_mutuos, resolutor):
+    """Indexa el REGISTRO DE CITAS por par resuelto (D.14).
+
+    Manual principio 3: todo id pasa por el resolutor, tambien los de un
+    registro. Un par cuyos dos extremos ya no resuelven no cubre nada: el
+    enlace mutuo se perdio con el nodo.
+
+    CONVENIO DEL REGISTRO, y lo escribe la aduana por construccion:
+    `paso_ida` es un paso de `par[0]` (quien declaro) y `paso_vuelta` es un
+    paso de `par[1]`.
+    """
+    citas = {}
     for entrada in pares_mutuos or []:
         par = (entrada or {}).get("par") or []
         if len(par) != 2:
@@ -56,8 +68,52 @@ def _pares_mutuos_resueltos(pares_mutuos, resolutor):
         a = resolutor.resolver(par[0])
         b = resolutor.resolver(par[1])
         if a and b and a != b:
-            resueltos.add(frozenset((a, b)))
-    return resueltos
+            citas[frozenset((a, b))] = {"entrada": entrada, "ida": a, "vuelta": b}
+    return citas
+
+
+def _fallos_de_cita(cita, resolutor):
+    """Comprueba que la cita esta COMPLETA y que sigue siendo cierta hoy.
+
+    Regla madre: la parada de My-idea del 2 sep 2026, LA LISTA BLANCA ES UN
+    REGISTRO DE CITAS. Encender la guarda contra una lista de pertenencia
+    obligaba a escribir 151 entradas sin una sola lectura detras, que es
+    justo lo que la lista blanca vino a impedir. La salida fue exigir la
+    cita: UN PAR SIN CITA ES ROJO.
+    """
+    entrada = cita["entrada"]
+    problemas = []
+    ausentes = set()
+
+    for campo in CAMPOS_DE_CITA:
+        valor = entrada.get(campo)
+        if valor is None or (isinstance(valor, str) and not valor.strip()):
+            problemas.append("le falta el campo '%s'" % campo)
+            ausentes.add(campo)
+
+    textos = {}
+    for campo, extremo in (("paso_ida", "ida"), ("paso_vuelta", "vuelta")):
+        if campo in ausentes:
+            continue
+        indice = entrada.get(campo)
+        nodo = resolutor.canonicos.get(cita[extremo]) or {}
+        pasos = nodo.get("pasos_accionables") or []
+        if not isinstance(indice, int) or isinstance(indice, bool):
+            problemas.append("su '%s' no es un numero de paso: %r" % (campo, indice))
+        elif 1 <= indice <= len(pasos):
+            textos[extremo] = pasos[indice - 1]
+        else:
+            problemas.append("cita el paso %d de '%s', que hoy tiene %d paso(s)"
+                             % (indice, cita[extremo], len(pasos)))
+
+    texto_ida = textos.get("ida")
+    texto_vuelta = textos.get("vuelta")
+    if texto_ida is not None and texto_vuelta is not None:
+        if comun.normalizar_texto(texto_ida) == comun.normalizar_texto(texto_vuelta):
+            problemas.append(
+                "sus dos sentidos apuntan HOY a la misma linea (%r): eso es un solape, "
+                "no un enlace mutuo (banco de textos 9.22)" % texto_ida)
+    return problemas
 
 
 def verificar(nodos=None, tabla_fuentes=None, esquema_nodo=None, pares_mutuos=None):
@@ -149,16 +205,36 @@ def verificar(nodos=None, tabla_fuentes=None, esquema_nodo=None, pares_mutuos=No
                     "%s contiene %s (%s)" % (campo, hallazgo[3], repr(hallazgo[2]))))
 
     # Aristas: todo se compara TRAS RESOLVER (manual principio 3)
+    #
+    # EL DEPRECADO ES ARCHIVO, NO SUPERFICIE (D.17): las aristas que NACEN en
+    # un nodo deprecado conservan su ficha para que la fusion sea auditable,
+    # pero NO entran al grafo. No se reciprocan, no forman vuelta y no se
+    # cuentan como duplicadas. En My-idea, reciprocar aristas nacidas en
+    # deprecados fue lo que refabricaba las 33 auto-aristas cada vez que se
+    # limpiaban: la sombra vuelve mientras viva lo que la proyecta.
     aristas_dirigidas = set()
     for nodo in nodos:
         identificador = nodo.get("id")
-        propio = resolutor.resolver(identificador)
+        es_archivo = identificador in resolutor.deprecados
+        propio = identificador if es_archivo else resolutor.resolver(identificador)
         if propio is None:
             continue
         for campo, sentido in (("nodos_siguientes", "hacia"), ("nodos_previos", "desde")):
             vistas = []
             for destino in nodo.get(campo) or []:
                 resuelto = resolutor.resolver(destino)
+
+                # 10. ningun VIVO nombra a un DEPRECADO: el archivo no es
+                # superficie, y una arista viva hacia el absorbido tenia que
+                # haberse redirigido al superviviente al fundir.
+                if (not es_archivo and resuelto is not None
+                        and destino in resolutor.deprecados):
+                    fallos.append(Fallo(
+                        "deprecado_en_superficie", identificador,
+                        "%s nombra a '%s', que esta DEPRECADO. El deprecado es archivo, "
+                        "no participante: la arista tenia que apuntar a su superviviente "
+                        "'%s' (D.17)" % (campo, destino, resuelto)))
+                    continue
 
                 # 8. arista hacia id inexistente
                 if resuelto is None:
@@ -189,6 +265,10 @@ def verificar(nodos=None, tabla_fuentes=None, esquema_nodo=None, pares_mutuos=No
                     continue
                 vistas.append(resuelto)
 
+                # Las aristas del archivo no entran al grafo: se conservan
+                # como registro y no se reciprocan (D.17).
+                if es_archivo:
+                    continue
                 if sentido == "hacia":
                     aristas_dirigidas.add((propio, resuelto))
                 else:
@@ -197,19 +277,24 @@ def verificar(nodos=None, tabla_fuentes=None, esquema_nodo=None, pares_mutuos=No
     # 6. cero vueltas en los pares madre-hijo declarados, salvo el enlace
     # mutuo declarado (adjudicacion A.1): la UNICA vuelta legitima es la que
     # cubre la lista blanca, y solo tras resolver sus dos extremos.
-    mutuos_resueltos = _pares_mutuos_resueltos(pares_mutuos, resolutor)
+    citas = _citas_mutuas(pares_mutuos, resolutor)
     for madre, hijo in sorted(aristas_dirigidas):
         if (hijo, madre) in aristas_dirigidas:
             if madre < hijo:
-                if frozenset((madre, hijo)) in mutuos_resueltos:
+                cita = citas.get(frozenset((madre, hijo)))
+                if cita is None:
+                    fallos.append(Fallo(
+                        "vuelta", madre,
+                        "el par bidireccional con %s NO TIENE CITA en el registro de "
+                        "enlaces mutuos (config/pares_mutuos.jsonl). La secuencia es "
+                        "dirigida: la vuelta no es redundante, es falsa, salvo un MUTUO "
+                        "declarado que cite sus dos lineas. UN PAR SIN CITA ES ROJO "
+                        "(manual seccion 2, adjudicaciones A.1 y A.4)" % hijo))
                     continue
-                fallos.append(Fallo(
-                    "vuelta", madre,
-                    "el par madre-hijo con %s esta declarado en los dos sentidos, y no esta "
-                    "en la lista blanca de enlaces mutuos declarados. La secuencia es "
-                    "dirigida: la vuelta no es redundante, es falsa, salvo un MUTUO "
-                    "declarado con su procedimiento de ida y de vuelta (manual seccion 2, "
-                    "adjudicacion A.1)" % hijo))
+                for problema in _fallos_de_cita(cita, resolutor):
+                    fallos.append(Fallo(
+                        "cita_incompleta", madre,
+                        "la cita del enlace mutuo con %s no se sostiene: %s" % (hijo, problema)))
 
     # Coherencia del par: la arista se escribe en los dos extremos, sin huecos
     for madre, hijo in sorted(aristas_dirigidas):
@@ -238,7 +323,8 @@ def texto_informe(fallos, cuantos_nodos):
         return ("GATE VERDE.\n"
                 "  nodos verificados: %d\n"
                 "  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, "
-                "arista_duplicada, vuelta, arista_rota, arista_incompleta, guiones"
+                "arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, "
+                "arista_rota, arista_incompleta, guiones"
                 % cuantos_nodos)
     lineas = ["GATE EN ROJO: %d fallo(s) sobre %d nodo(s)." % (len(fallos), cuantos_nodos)]
     for fallo in fallos:

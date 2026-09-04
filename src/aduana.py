@@ -132,6 +132,15 @@ def normalizar_candidato(bruto, fecha=None):
     if isinstance(nodo.get("dominio"), str):
         nodo["dominio"] = reglas_id.normalizar(nodo["dominio"])
 
+    # Un nodo nace VIVO. Deprecar es un acto de fusion, con su plantilla y su
+    # simulacion (D.17): no es algo que un candidato pueda declarar al entrar.
+    if not nodo.get("estado"):
+        nodo["estado"] = "vivo"
+    elif nodo.get("estado") == "deprecado":
+        avisos.append("el candidato llega declarandose deprecado: entra VIVO. "
+                      "Deprecar es un acto de fusion, no una linea del candidato (D.17)")
+        nodo["estado"] = "vivo"
+
     denominaciones = dict(nodo.get("denominaciones") or {})
     denominaciones.setdefault("nombre_largo", "")
     denominaciones.setdefault("sigla", "")
@@ -209,10 +218,59 @@ def validar_candidato(nodo, tabla_fuentes=None, esquema_nodo=None):
 # casa midio entre 3 y 6 por ciento de solape entre similitud y barrido
 # paso contra nodo). Ninguna decide: todas ordenan.
 
+class NoAplica(object):
+    """La salida de una señal FUERA DE SU DOMINIO DE APLICACION (D.16).
+
+    REGLA MADRE, medida en My-idea el 15 ago 2026 y corregida por decision
+    del fundador el mismo dia: la señal de bloque de `costuras_internas.py`
+    recorria un rango que con cinco pasos quedaba VACIO, y devolvia 0,0
+    dijera lo que dijera el texto. Y los dos nodos de calibracion tenian
+    cinco pasos, porque la propia campaña los habia destejido.
+
+        El 0,0 no era un nodo sin bloque: ERA LA SEÑAL MUERTA.
+
+    Un cero de señal muerta es indistinguible de un cero de vecino ajeno, y
+    esa confusion se lee como salud. Por eso esta clase REVIENTA si alguien
+    la compara con un umbral, en vez de dejarse leer como "no se parece".
+    """
+
+    def __init__(self, motivo):
+        self.motivo = motivo
+
+    def __repr__(self):
+        return "NO APLICA (%s)" % self.motivo
+
+    def __str__(self):
+        return "NO APLICA: %s" % self.motivo
+
+    def _revienta(self, otro):
+        raise TypeError(
+            "una señal que NO APLICA no se compara con un umbral. Motivo: %s. "
+            "Un cero silencioso de señal muerta se lee como salud, y esa es "
+            "exactamente la averia que D.16 existe para impedir." % self.motivo)
+
+    __lt__ = _revienta
+    __le__ = _revienta
+    __gt__ = _revienta
+    __ge__ = _revienta
+
+    def __float__(self):
+        self._revienta(None)
+
+
 def _ratio(a, b):
     if not a or not b:
         return 0.0
     return difflib.SequenceMatcher(None, a, b, autojunk=False).ratio()
+
+
+def _ordenable_de_senal(valor):
+    """Para ordenar la cola de lectura. Un NO APLICA ya declarado (que en el
+    informe viaja como texto) va al fondo. Ordenar no es comparar con un
+    umbral: es poner en fila, y eso una señal muerta si lo aguanta."""
+    if isinstance(valor, str):
+        return -1.0
+    return float(valor)
 
 
 def senal_similitud_texto(texto_a, texto_b):
@@ -224,6 +282,9 @@ def senal_similitud_texto(texto_a, texto_b):
     alta: la señal ordena la cola, y una cola corta de mas es barata al
     lado de un gemelo que entra.
     """
+    if not texto_a or not texto_b:
+        return NoAplica("uno de los dos nodos no tiene texto comparable "
+                        "(titulo, resumen ni pasos)")
     directa = _ratio(texto_a, texto_b)
     por_palabras = _ratio(texto_a.split(), texto_b.split())
     return max(directa, por_palabras)
@@ -232,6 +293,9 @@ def senal_similitud_texto(texto_a, texto_b):
 def senal_familia_id(id_a, id_b):
     """Señal 2: familia de id, normalizando sufijos, preposiciones,
     articulos, plurales y orden de palabras."""
+    if not reglas_id.familia(id_a) or not reglas_id.familia(id_b):
+        return NoAplica("uno de los dos ids no deja ninguna pieza tras "
+                        "normalizar su familia")
     return reglas_id.similitud_familia(id_a, id_b)
 
 
@@ -243,6 +307,8 @@ def senal_paso_contra_nodo(candidato, vecino):
     detalle = ""
     pasos_candidato = [comun.normalizar_texto(p) for p in candidato.get("pasos_accionables") or []]
     pasos_vecino = [comun.normalizar_texto(p) for p in vecino.get("pasos_accionables") or []]
+    if not pasos_candidato or not pasos_vecino:
+        return (NoAplica("uno de los dos nodos no tiene pasos que barrer"), "")
     cuerpo_candidato = comun.normalizar_texto(
         "%s. %s" % (candidato.get("titulo") or "", candidato.get("resumen_teorico") or ""))
     cuerpo_vecino = comun.normalizar_texto(
@@ -275,22 +341,28 @@ def medir(candidato, vecino, umbrales=None):
                                       comun.texto_comparable(vecino))
     familia = senal_familia_id(candidato.get("id") or "", vecino.get("id") or "")
     paso, detalle_paso = senal_paso_contra_nodo(candidato, vecino)
+
+    # NINGUNA SEÑAL SE COMPARA CON SU UMBRAL SI NO APLICA (D.16). Una señal
+    # fuera de su dominio no vota: se declara, y su declaracion viaja al
+    # reporte para que el lector sepa que esa señal no miro.
     levantada_por = []
-    if similitud >= umbrales["umbral_similitud_texto"]:
-        levantada_por.append("similitud_texto")
-    if familia >= umbrales["umbral_familia_id"]:
-        levantada_por.append("familia_id")
-    if paso >= umbrales["umbral_paso_contra_nodo"]:
-        levantada_por.append("paso_contra_nodo")
+    senales = {}
+    for nombre, valor, umbral in (
+            ("similitud_texto", similitud, umbrales["umbral_similitud_texto"]),
+            ("familia_id", familia, umbrales["umbral_familia_id"]),
+            ("paso_contra_nodo", paso, umbrales["umbral_paso_contra_nodo"])):
+        if isinstance(valor, NoAplica):
+            senales[nombre] = str(valor)
+            continue
+        senales[nombre] = round(valor, 3)
+        if valor >= umbral:
+            levantada_por.append(nombre)
+
     return {
         "id": vecino.get("id"),
         "titulo": vecino.get("titulo"),
         "dominio": vecino.get("dominio"),
-        "senales": {
-            "similitud_texto": round(similitud, 3),
-            "familia_id": round(familia, 3),
-            "paso_contra_nodo": round(paso, 3),
-        },
+        "senales": senales,
         "detalle_paso": detalle_paso,
         "levantada_por": levantada_por,
     }
@@ -309,6 +381,11 @@ def buscar_vecinos(candidato, nodos, umbrales=None):
     for nodo in nodos:
         if resolutor.mismo(nodo.get("id"), candidato.get("id")):
             continue
+        # EL DEPRECADO NO SE OFRECE (D.17). Es archivo: bloquear un candidato
+        # contra un nodo que ya no es superficie mandaria a leer una ficha
+        # muerta, y su material vivo ya esta en el superviviente.
+        if nodo.get("id") in resolutor.deprecados:
+            continue
         if umbrales.get("solo_dominio_y_nucleo"):
             permitidos = set(umbrales.get("dominios_nucleo") or [])
             permitidos.add(candidato.get("dominio"))
@@ -317,7 +394,8 @@ def buscar_vecinos(candidato, nodos, umbrales=None):
         medicion = medir(candidato, nodo, umbrales)
         if medicion["levantada_por"]:
             vecinos.append(medicion)
-    vecinos.sort(key=lambda v: max(v["senales"].values()), reverse=True)
+    vecinos.sort(key=lambda v: max(_ordenable_de_senal(x) for x in v["senales"].values()),
+                 reverse=True)
     return vecinos[:int(umbrales.get("maximo_vecinos_reportados", 25))]
 
 
@@ -326,17 +404,26 @@ def buscar_vecinos(candidato, nodos, umbrales=None):
 def parsear_veredicto(texto):
     """Formato general: vecino|CLASE|clave=valor|razon libre
 
-    MUTUO es distinto: NUNCA lleva razon libre. Exige DOS claves, ida= y
-    vuelta=, una por sentido. Es la unica clase que declara una vuelta
-    legitima (adjudicacion A.1, docs/BANCO_DE_REGLAS.md): una razon comun
-    no basta, porque no dice que procedimiento corre en cada sentido.
+    MUTUO es distinto: NUNCA lleva razon libre, y CITA LA LINEA. Exige DOS
+    claves, ida= y vuelta=, y cada una empieza por el NUMERO DEL PASO que el
+    otro nodo despliega:
+
+        ida=<n>:<razon>       n es el paso DEL CANDIDATO que el vecino despliega
+        vuelta=<m>:<razon>    m es el paso DEL VECINO que el candidato despliega
+
+    Por que la linea y no solo la razon (adjudicacion A.4, banco de textos
+    9.22 de My-idea): LA VARA ES UNA RELACION ENTRE LINEAS, NO ENTRE NODOS.
+    Dos nodos pueden ser cada uno hijo del otro sin que ninguno repita al
+    otro, porque la linea que uno expande no es la linea que el otro expande.
+    Y su comprobacion: si las dos direcciones apuntan a LA MISMA LINEA no es
+    esta figura, es un solape, y se rechaza nombrando el paso.
 
     Ejemplos:
       "extraer_nodos|CONTINUA|madre=extraer_nodos|el candidato despliega su paso 3"
       "extraer_nodos|REPITE|no añade procedimiento nuevo en ningun lado"
       "extraer_nodos|SANO|comparten vocabulario, no procedimiento"
-      "extraer_nodos|MUTUO|ida=el candidato usa en su paso 2 lo que el vecino entrega|"
-      "vuelta=el vecino usa en su paso 5 lo que el candidato entrega"
+      "extraer_nodos|MUTUO|ida=2:el vecino despliega entero mi paso 2|"
+      "vuelta=5:yo despliego entero su paso 5"
     """
     partes = [p.strip() for p in (texto or "").split("|")]
     if len(partes) < 3:
@@ -358,21 +445,111 @@ def parsear_veredicto(texto):
             razon.append(parte)
 
     if clase == "MUTUO":
-        ida = opciones.get("ida", "").strip()
-        vuelta = opciones.get("vuelta", "").strip()
-        if not ida or not vuelta:
+        crudo_ida = opciones.get("ida", "").strip()
+        crudo_vuelta = opciones.get("vuelta", "").strip()
+        if not crudo_ida or not crudo_vuelta:
             raise Rechazo(
                 "veredicto MUTUO sin los dos procedimientos declarados",
-                ["MUTUO exige ida=<procedimiento de ida> y vuelta=<procedimiento de vuelta>",
+                ["MUTUO exige ida=<n>:<razon> y vuelta=<m>:<razon>",
+                 "n es el paso DEL CANDIDATO que el vecino despliega",
+                 "m es el paso DEL VECINO que el candidato despliega",
                  "un enlace mutuo declarado es la unica vuelta legitima "
                  "(adjudicacion A.1, docs/BANCO_DE_REGLAS.md)"])
-        return {"vecino": vecino, "clase": clase, "madre": "", "ida": ida, "vuelta": vuelta,
-                "razon": "ida: %s | vuelta: %s" % (ida, vuelta)}
+        paso_ida, ida = _partir_cita_de_linea(crudo_ida, "ida")
+        paso_vuelta, vuelta = _partir_cita_de_linea(crudo_vuelta, "vuelta")
+        return {"vecino": vecino, "clase": clase, "madre": "",
+                "ida": ida, "vuelta": vuelta,
+                "paso_ida": paso_ida, "paso_vuelta": paso_vuelta,
+                "razon": "ida (paso %d del candidato): %s | vuelta (paso %d del vecino): %s"
+                         % (paso_ida, ida, paso_vuelta, vuelta)}
 
     if "razon" in opciones and opciones["razon"]:
         razon.insert(0, opciones.pop("razon"))
     return {"vecino": vecino, "clase": clase, "madre": opciones.get("madre", ""),
-            "ida": "", "vuelta": "", "razon": " ".join(razon).strip()}
+            "ida": "", "vuelta": "", "paso_ida": 0, "paso_vuelta": 0,
+            "razon": " ".join(razon).strip()}
+
+
+def _partir_cita_de_linea(crudo, sentido):
+    """Parte '<n>:<razon>' en (n, razon). Lanza Rechazo si falta la linea.
+
+    La cita de la linea no es un adorno del formato: es la comprobacion que
+    separa el enlace mutuo del solape (banco de textos 9.22). Sin numero de
+    paso no hay nada que comparar, y sin comparacion la clase MUTUO seria
+    una firma en blanco.
+    """
+    cabeza, separador, cola = crudo.partition(":")
+    cabeza = cabeza.strip()
+    if not separador or not cabeza.isdigit():
+        raise Rechazo(
+            "el sentido '%s' del MUTUO no cita su linea" % sentido,
+            ["llego: %r" % crudo,
+             "formato: %s=<numero de paso>:<razon escrita>" % sentido,
+             "LA VARA ES UNA RELACION ENTRE LINEAS, NO ENTRE NODOS (9.22): sin el "
+             "numero del paso no se puede comprobar que los dos sentidos expanden "
+             "lineas DISTINTAS, que es lo unico que separa un enlace mutuo de un solape"])
+    razon = cola.strip()
+    if not razon:
+        raise Rechazo(
+            "el sentido '%s' del MUTUO cita su linea pero no escribe su razon" % sentido,
+            ["llego: %r" % crudo,
+             "formato: %s=<numero de paso>:<razon escrita>" % sentido])
+    numero = int(cabeza)
+    if numero < 1:
+        raise Rechazo(
+            "el sentido '%s' del MUTUO cita el paso %d" % (sentido, numero),
+            ["los pasos se cuentan desde 1"])
+    return numero, razon
+
+
+def validar_lineas_mutuo(candidato, vecino_nodo, veredicto):
+    """Comprueba que el MUTUO cita DOS LINEAS DISTINTAS. Lanza Rechazo.
+
+    Regla madre: banco de textos 9.22 de My-idea, LA VARA EN LOS DOS
+    SENTIDOS, y su comprobacion literal:
+
+        La figura exige dos lineas distintas, una en cada nodo. Si las dos
+        direcciones apuntan a LA MISMA LINEA, no es esta figura: es un
+        solape y se juzga por las reglas de siempre.
+
+    Fundirlos seria el error caro, porque borraria los dos procedimientos
+    para dejar un nodo con dos lineas sueltas. Pero blanquear un solape como
+    si fuera enlace mutuo es el error barato y silencioso, y es el que esta
+    guarda caza.
+    """
+    pasos_candidato = candidato.get("pasos_accionables") or []
+    pasos_vecino = vecino_nodo.get("pasos_accionables") or []
+    paso_ida = veredicto.get("paso_ida") or 0
+    paso_vuelta = veredicto.get("paso_vuelta") or 0
+
+    if not 1 <= paso_ida <= len(pasos_candidato):
+        raise Rechazo(
+            "el MUTUO con %s cita un paso que el candidato no tiene" % vecino_nodo.get("id"),
+            ["ida cita el paso %d y el candidato '%s' tiene %d paso(s)"
+             % (paso_ida, candidato.get("id"), len(pasos_candidato)),
+             "ida cita un paso DEL CANDIDATO: es la linea que el vecino despliega"])
+    if not 1 <= paso_vuelta <= len(pasos_vecino):
+        raise Rechazo(
+            "el MUTUO con %s cita un paso que el vecino no tiene" % vecino_nodo.get("id"),
+            ["vuelta cita el paso %d y el vecino '%s' tiene %d paso(s)"
+             % (paso_vuelta, vecino_nodo.get("id"), len(pasos_vecino)),
+             "vuelta cita un paso DEL VECINO: es la linea que el candidato despliega"])
+
+    texto_ida = pasos_candidato[paso_ida - 1]
+    texto_vuelta = pasos_vecino[paso_vuelta - 1]
+    if comun.normalizar_texto(texto_ida) == comun.normalizar_texto(texto_vuelta):
+        raise Rechazo(
+            "SOLAPE DISFRAZADO DE ENLACE MUTUO: los dos sentidos apuntan a la misma linea",
+            ["ida cita el paso %d de '%s': %s" % (paso_ida, candidato.get("id"), texto_ida),
+             "vuelta cita el paso %d de '%s': %s"
+             % (paso_vuelta, vecino_nodo.get("id"), texto_vuelta),
+             "las dos lineas dicen lo mismo, asi que no hay dos procedimientos que "
+             "expandir: hay uno solo, repetido en los dos nodos",
+             "la figura del enlace mutuo EXIGE dos lineas distintas, una en cada nodo "
+             "(banco de textos 9.22 de My-idea). Esto no es MUTUO: se juzga con la vara "
+             "de siempre, CONTINUA o REPITE"])
+    return {"paso_ida": paso_ida, "texto_ida": texto_ida,
+            "paso_vuelta": paso_vuelta, "texto_vuelta": texto_vuelta}
 
 
 def _plantilla_de_reparto(candidato, vecino_id):
@@ -631,14 +808,18 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
             resultado.decir("")
             resultado.decir("  vecino %s  [%s]" % (vecino["id"], vecino["titulo"]))
             resultado.decir("    levantada por: %s" % ", ".join(vecino["levantada_por"]))
-            resultado.decir("    similitud_texto %.3f (umbral %.2f) | familia_id %.3f "
-                            "(umbral %.2f) | paso_contra_nodo %.3f (umbral %.2f)"
-                            % (vecino["senales"]["similitud_texto"],
-                               umbrales["umbral_similitud_texto"],
-                               vecino["senales"]["familia_id"],
-                               umbrales["umbral_familia_id"],
-                               vecino["senales"]["paso_contra_nodo"],
-                               umbrales["umbral_paso_contra_nodo"]))
+            for nombre, clave_umbral in (
+                    ("similitud_texto", "umbral_similitud_texto"),
+                    ("familia_id", "umbral_familia_id"),
+                    ("paso_contra_nodo", "umbral_paso_contra_nodo")):
+                medida = vecino["senales"][nombre]
+                if isinstance(medida, str):
+                    # D.16: una señal que no aplica se DECLARA, no se imprime
+                    # como cero. El lector tiene que saber que no miro.
+                    resultado.decir("    %-18s %s" % (nombre, medida))
+                else:
+                    resultado.decir("    %-18s %.3f (umbral %.2f)"
+                                    % (nombre, medida, umbrales[clave_umbral]))
             if vecino["detalle_paso"]:
                 resultado.decir("    %s" % vecino["detalle_paso"])
 
@@ -711,12 +892,39 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
         elif veredicto["clase"] == "REPITE":
             repite.append(vecino["id"])
         elif veredicto["clase"] == "MUTUO":
+            # La cita de las DOS LINEAS DISTINTAS se comprueba contra los nodos
+            # de verdad, no contra el texto del veredicto (adjudicacion A.4).
+            vecino_nodo = resolutor.canonicos.get(vecino["id"])
+            if vecino_nodo is None:
+                resultado.codigo = CODIGO_RECHAZO
+                resultado.decir("RECHAZADO: no encuentro al vecino %s para comprobar "
+                                "las lineas del enlace mutuo" % vecino["id"])
+                return resultado
+            try:
+                lineas = validar_lineas_mutuo(candidato, vecino_nodo, veredicto)
+            except Rechazo as rechazo:
+                resultado.codigo = CODIGO_RECHAZO
+                resultado.decir("")
+                resultado.decir("RECHAZADO: %s" % rechazo.titulo)
+                for detalle in rechazo.detalles:
+                    resultado.decir("  " + detalle)
+                return resultado
             mutuos.append({"vecino": vecino["id"], "ida": veredicto["ida"],
-                           "vuelta": veredicto["vuelta"]})
+                           "vuelta": veredicto["vuelta"],
+                           "paso_ida": lineas["paso_ida"],
+                           "texto_ida": lineas["texto_ida"],
+                           "paso_vuelta": lineas["paso_vuelta"],
+                           "texto_vuelta": lineas["texto_vuelta"]})
+        # BLOQUE DE VIGENCIA (D.15): el veredicto guarda la huella del texto
+        # contra el que se emitio, en los dos lados. Sin esto, dentro de tres
+        # cirugias nadie sabra si esta lectura sigue siendo de este texto.
+        vecino_nodo = resolutor.canonicos.get(vecino["id"]) or {}
         registro = {
             "fecha": fecha,
             "candidato": candidato["id"],
             "vecino": vecino["id"],
+            "huella_candidato": comun.huella_de_nodo(candidato),
+            "huella_vecino": comun.huella_de_nodo(vecino_nodo),
             "senales": vecino["senales"],
             "levantada_por": vecino["levantada_por"],
             "detalle_paso": vecino["detalle_paso"],
@@ -788,10 +996,26 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
             if candidato["id"] not in resolutor_futuro.resolver_lista(lista_vecino):
                 lista_vecino.append(candidato["id"])
             nodo_vecino[campo] = lista_vecino
-        resultado.mutuos.append({"par": [candidato["id"], vecino_id],
-                                 "ida": mutuo["ida"], "vuelta": mutuo["vuelta"]})
+        # LA CITA SE CONSTRUYE UNA SOLA VEZ y se usa para las dos cosas: la
+        # simulacion del gate y la escritura del registro. Si la simulacion
+        # viera una cita distinta de la que se escribe, estaria probando otro
+        # dato: el gate rechazaria una cita completa por incompleta, o peor,
+        # dejaria pasar una incompleta por haber simulado una completa.
+        resultado.mutuos.append({
+            "par": [candidato["id"], vecino_id],
+            "fecha": fecha,
+            "declarado_por": candidato["id"],
+            "paso_ida": mutuo["paso_ida"],
+            "razon_ida": mutuo["ida"],
+            "huella_ida": comun.huella_de_texto(mutuo["texto_ida"]),
+            "paso_vuelta": mutuo["paso_vuelta"],
+            "razon_vuelta": mutuo["vuelta"],
+            "huella_vuelta": comun.huella_de_texto(mutuo["texto_vuelta"])})
         resultado.decir("  enlace mutuo declarado y cableado en los dos sentidos: %s <> %s"
                         % (candidato["id"], vecino_id))
+        resultado.decir("    cita: ida es el paso %d de %s, vuelta es el paso %d de %s"
+                        % (mutuo["paso_ida"], candidato["id"],
+                           mutuo["paso_vuelta"], vecino_id))
 
     # 4 a 6. Censos AL ENTRAR
     respuestas = dict(respuestas_censo or {})
@@ -807,8 +1031,7 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
     # rechazaria en su propia insercion.
     dataset_futuro = nodos_nuevos + [nuevo]
     pares_mutuos_existentes = modulo_config.cargar_pares_mutuos(ruta_pares_mutuos)
-    pares_mutuos_simulacion = list(pares_mutuos_existentes) + [
-        {"par": m["par"]} for m in resultado.mutuos]
+    pares_mutuos_simulacion = list(pares_mutuos_existentes) + list(resultado.mutuos)
     fallos = gate.verificar(dataset_futuro, pares_mutuos=pares_mutuos_simulacion)
     if fallos:
         resultado.codigo = CODIGO_RECHAZO
@@ -820,11 +1043,11 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
         return resultado
 
     comun.escribir_jsonl(ruta_dataset, dataset_futuro)
+    # REGISTRO DE CITAS, no lista blanca (D.14). Cada par lleva su ida, su
+    # vuelta, las DOS lineas que cita, la fecha, quien lo declaro y la huella
+    # del texto de cada linea. Un par sin cita completa es rojo en el gate.
     for mutuo in resultado.mutuos:
-        comun.agregar_jsonl(ruta_pares_mutuos, {
-            "par": mutuo["par"], "fecha": fecha,
-            "razon_ida": mutuo["ida"], "razon_vuelta": mutuo["vuelta"],
-            "declarado_por": candidato["id"]})
+        comun.agregar_jsonl(ruta_pares_mutuos, mutuo)
     resultado.censos_escritos = registrar_censos(nuevo, respuestas, fecha)
     resultado.decir("")
     resultado.decir("GATE VERDE sobre la simulacion. NODO INSERTADO en %s."

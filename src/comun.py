@@ -5,6 +5,7 @@ Anclaje: manual seccion 2 (fase cero). Aqui viven las piezas que usan el
 resolutor, el gate y la aduana, para que ninguna tenga su propia version.
 """
 
+import hashlib
 import io
 import json
 import os
@@ -167,6 +168,25 @@ def texto_comparable(nodo):
     piezas = [nodo.get("titulo") or "", nodo.get("resumen_teorico") or ""]
     piezas.extend(nodo.get("pasos_accionables") or [])
     return normalizar_texto(" ".join(piezas))
+
+
+def huella_de_nodo(nodo):
+    """La huella del TEXTO de un nodo, para el bloque de vigencia (D.15).
+
+    Es lo que permite saber, meses despues, si una lectura sigue emitida
+    contra el texto que leyo. La vara que manda es la de TEXTO, no la de
+    fecha: en My-idea, cinco de los seis pares de un acto estaban leidos
+    contra texto que ya no existia, y la vara de fecha solo veia dos.
+
+    Cubre el mismo texto que mira la señal 1 (titulo, resumen y pasos):
+    lo que se leyo para emitir el veredicto.
+    """
+    return hashlib.sha256(texto_comparable(nodo).encode("utf-8")).hexdigest()[:16]
+
+
+def huella_de_texto(texto):
+    """La huella de una linea suelta (un paso citado por un MUTUO)."""
+    return hashlib.sha256(normalizar_texto(texto).encode("utf-8")).hexdigest()[:16]
 
 
 def archivos_del_repo(raiz=None, extensiones=None):

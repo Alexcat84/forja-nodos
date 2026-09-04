@@ -39,11 +39,16 @@ Las cuatro clases y lo que hace cada una:
 - `REPITE`: el nodo NO entra. El comando imprime la plantilla de reparto de las
   seis perdidas y sale con codigo 3.
 - `SANO`: el nodo entra, con la razon escrita en la bitacora.
-- `MUTUO`: el UNICO enlace bidireccional legitimo (adjudicacion A.1,
-  docs/BANCO_DE_REGLAS.md). Exige DOS razones, `ida=` y `vuelta=`, nunca una
-  razon comun. Se cablea en los dos sentidos a la vez y queda en la lista
-  blanca `config/pares_mutuos.jsonl`, que el gate respeta solo para esos
-  pares tras resolver: `--veredicto "id_vecino|MUTUO|ida=...|vuelta=..."`.
+- `MUTUO`: el UNICO enlace bidireccional legitimo (adjudicaciones A.1 y A.4).
+  Exige que cada sentido **CITE SU LINEA**, y que las dos sean DISTINTAS:
+
+        --veredicto "id_vecino|MUTUO|ida=<n>:<razon>|vuelta=<m>:<razon>"
+
+  donde `n` es el paso DEL CANDIDATO que el vecino despliega y `m` el paso DEL
+  VECINO que el candidato despliega. Si los dos sentidos apuntan a la misma
+  linea, eso es un solape disfrazado y se rechaza nombrando el paso. Se cablea
+  en los dos sentidos y queda en el REGISTRO DE CITAS
+  `config/pares_mutuos.jsonl`, cuya cita el gate verifica entera.
 
 Opciones: `--censo clave=valor` responde el censo sin preguntar (claves: serie,
 caso, marco_pais, vigencia, herramienta; `no` si no aplica), `--sin-preguntas`
@@ -57,20 +62,29 @@ Codigos de salida: 0 entro, 1 rechazado, 2 bloqueado esperando veredicto,
 El gate de integridad (manual seccion 2). Verifica el dataset entero: esquema,
 reglas de id, fuentes contra la tabla canonica, orden de las fuentes por fecha
 en un nodo con mas de una, cero auto-aristas TRAS RESOLVER, cero aristas
-duplicadas tras resolver, cero vueltas en los pares madre-hijo salvo el enlace
-mutuo declarado en `config/pares_mutuos.jsonl`, aristas solo hacia ids que
-existen o resuelven, y cero guiones largos o medios. Sale en verde o con la
-lista exacta de fallos.
+duplicadas tras resolver, cero vueltas salvo el enlace mutuo cuya CITA se
+sostenga entera, ningun nodo vivo nombrando a un DEPRECADO, aristas solo hacia
+ids que existen o resuelven, y cero guiones largos o medios. Sale en verde o
+con la lista exacta de fallos.
 
     python forja.py guiones [ruta ...]
 
 El barrido de estilo de la casa: cero guiones largos y cero guiones medios en
 todo el repo. Sin rutas, barre el arbol entero.
 
+    python forja.py rancios
+
+El bloque de vigencia (D.15). Recomputa la huella del texto de hoy contra la
+que cada veredicto y cada cita guardaron el dia que se emitieron, y clasifica:
+VIGENTE, RANCIO (el texto cambio debajo), SIN HUELLA (incomprobable) y NODO
+IDO. Un rancio NO se cita como vigente: se relee o se declara. No pone el gate
+en rojo, porque esa salida la decide una persona.
+
     python forja.py resolutor [id ...]
 
 El resolutor (manual principio 3). Sin argumentos, informa de nodos vivos,
-alias y cadenas. Con ids, dice a que resuelve cada uno y por que camino.
+DEPRECADOS, alias y cadenas. Con ids, dice a que resuelve cada uno y por que
+camino. Un id deprecado resuelve al superviviente que lo lleva en `ids_alias`.
 
     python forja.py censos
 
@@ -97,9 +111,9 @@ La prueba de aceptacion. El repo no esta terminado sin ella en verde.
     esquema/nodo.schema.json    el esquema del nodo, fijado por escrito
     fuentes/FUENTES_CANONICAS.json   clave a titulo completo del libro
     config/umbrales.json        los umbrales de las señales, editables
-    config/pares_mutuos.jsonl   lista blanca de enlaces mutuos declarados (A.1)
+    config/pares_mutuos.jsonl   REGISTRO DE CITAS de los enlaces mutuos (D.14)
     src/
-      comun.py       utilidades y el barrido de guiones
+      comun.py       utilidades, huellas de texto y el barrido de guiones
       reglas_id.py   las reglas de id en codigo
       resolutor.py   TODO id pasa por aqui
       esquema.py     validador de JSON Schema con libreria estandar
@@ -108,13 +122,17 @@ La prueba de aceptacion. El repo no esta terminado sin ella en verde.
       censos.py      series, casos, marco pais, vigencia, herramientas
       config.py      carga de umbrales
       guiones.py     el hook de estilo
+      vigencia.py    el bloque de vigencia: los veredictos rancios (D.15)
     dataset/nodos.jsonl         el grafo
     bitacora/VEREDICTOS.jsonl   fecha, candidato, vecino, señales, veredicto, razon
     censos/                     los censos, escritos al entrar
     plantillas/OPERACION_DE_FUSION.md   las seis perdidas, con simulacion
     ejemplos/                   nodos de ejemplo listos para insertar
     hooks/                      pre-commit e instalador
-    tests/                      la prueba de aceptacion y sus fixtures
+    orquestador_forja.sh        el arnes del bucle: extractor y auditor
+    docs/loop/                  EXTRACTOR.md y AUDITOR_FORJA.md (en borrador)
+    tests/                      la prueba de aceptacion, sus fixtures y la
+                                prueba del arnes con un claude falso
 
 ## Las tres señales del blocking
 
@@ -131,6 +149,11 @@ por ciento de solape entre la primera y la tercera):
 
 Ninguna decide. Los umbrales de config/umbrales.json mueven cuantos vecinos se
 leen, y nada mas.
+
+Y ninguna devuelve CERO SILENCIOSO (D.16): fuera de su dominio de aplicacion
+una señal devuelve NO APLICA explicito, que revienta si alguien lo compara con
+un umbral. Un cero de señal muerta se lee como salud, y esa confusion tiene
+fecha y muertos en la campaña que destilo el manual.
 
 ## Lo que esta forja NO hace
 

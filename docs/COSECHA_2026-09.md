@@ -11,6 +11,11 @@ hace aqui** y se dice por que en la seccion 4: la propia campaña midio que un
 umbral calibrado contra casos plantados y no contra la distribucion del catalogo
 entero es un umbral que no se puede defender.
 
+> **AVISO DE ESTADO (4 sep 2026): las tres preguntas de la seccion 5 YA ESTAN
+> CONTESTADAS.** La decision del fundador esta al final, en la **seccion 6**, y
+> la TANDA A que abre esta implementada. Lee la seccion 5 como lo que fue (las
+> preguntas tal como se plantearon) y la seccion 6 como lo que es hoy.
+
 ---
 
 ## 0. QUE SE LEYO, CON SU CORTE
@@ -774,3 +779,56 @@ resuelve porque no le toca.
 3. **Si la forja adopta la nocion de nodo DEPRECADO.** Hoy solo tiene
    `ids_alias`. La doctrina de **EL DEPRECADO ES ARCHIVO** esta lista para
    copiarse, pero adoptarla cambia el esquema del nodo y eso es decision de casa.
+
+---
+
+## 6. DECISION DEL FUNDADOR SOBRE LAS TRES PREGUNTAS DE LA SECCION 5 (4 sep 2026)
+
+**Las tres preguntas que este documento dejo abiertas quedan contestadas. La
+v0.3 se parte en DOS TANDAS.**
+
+### TANDA A, implementada el 4 sep 2026
+
+> Commit `v0.3 tanda A: la aduana aprende las reglas que la campaña pago`.
+
+| pieza | candidato | donde vive ahora |
+|---|---|---|
+| **C.1** el MUTUO exige que ida y vuelta apunten a **LINEAS DISTINTAS**; el mismo paso en las dos razones es solape disfrazado y se RECHAZA nombrando el paso | C.1 | `docs/BANCO_DE_REGLAS.md` **A.4**; `src/aduana.py` (`parsear_veredicto`, `validar_lineas_mutuo`) |
+| **C.2** `config/pares_mutuos.jsonl` pasa de lista de pertenencia a **REGISTRO DE CITAS**, y el gate verifica LA CITA | C.2 | **D.14**; `src/gate.py` (`_citas_mutuas`, `_fallos_de_cita`, guarda `cita_incompleta`) |
+| **C.3** el **BLOQUE DE VIGENCIA**: toda lectura guarda la huella del texto contra el que se emitio, y un instrumento nuevo marca los RANCIOS | C.3 | **D.15**; `src/vigencia.py`, `python forja.py rancios` |
+| **C.4** ninguna señal devuelve cero silencioso: fuera de su dominio, **NO APLICA explicito** que revienta si se compara | C.4 | **D.16**; `src/aduana.py` (clase `NoAplica`) |
+| **DEPRECACION** el esquema gana `estado`, y **EL DEPRECADO ES ARCHIVO, NO SUPERFICIE** | (nuevo) | **D.17**; `esquema/nodo.schema.json`, `src/resolutor.py`, `src/gate.py` (guarda `deprecado_en_superficie`), `src/aduana.py` |
+| **METRICA DE CREDITO** escrita, con sus tres especies y sus rachas | seccion 5, punto 2 | `docs/loop/AUDITOR_FORJA.md` seccion 5. **Se estrena cuando el bucle del extractor arranque** |
+
+Ademas, y sale de la misma cosecha: **D.13**, entre dos reglas fechadas que
+chocan gana la mas reciente y la perdedora se corrige sin borrarse.
+
+**Los dos nodos del dataset se migraron reinsertandolos por la aduana de
+verdad**, uno por uno, para que llevaran `estado` y para que su veredicto
+llevara huella. **La suite de aceptacion pasa de 27 a 47 pruebas**, todas en
+verde, cada pieza con su caso positivo.
+
+### TANDA B, en espera del grafo final de My-idea
+
+**NO se implementa hoy y se dice por que:** las dos piezas que quedan son de
+CALIBRACION, y calibrar contra cinco casos plantados es exactamente lo que la
+seccion 4 de este documento explica que no se puede defender.
+
+| pieza | que espera |
+|---|---|
+| **D.4, la calibracion de los umbrales** | la distribucion de las tres señales sobre el catalogo entero (p50, p90, p99), la banda por tramo, y la tasa de acierto por tramo separando gemelo de jerarquia por el 9.19 |
+| **las dos averias de calibracion de `costuras_internas.py`** | la mitad de C.4 que ya entro es el NO APLICA; lo que espera es la leccion del **umbral por debajo de la mediana** (*disparar deja de ser noticia*) y la de **un dial que en realidad mueve dos cosas** |
+
+**Hasta que la TANDA B corra, ninguna vuelta mueve `config/umbrales.json`**, y
+asi esta escrito en `docs/loop/EXTRACTOR.md` seccion 11 y en
+`docs/loop/AUDITOR_FORJA.md` seccion 2.
+
+### Lo que la decision NO toca
+
+- **C.5 a C.9 y C.11 a C.14** siguen siendo candidatos: ni entran ni se
+  descartan. Cuando la forja tenga un libro dentro, se vuelven a mirar con
+  casos propios delante.
+- **La pregunta 3 de la seccion 5 (si la forja adopta el nodo deprecado) queda
+  CONTESTADA que si**, y por eso la deprecacion entro en la TANDA A: era la
+  unica de las tres preguntas cuya respuesta cambiaba el esquema, y dejarla
+  para despues habria obligado a migrar el dataset dos veces.

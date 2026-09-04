@@ -19,6 +19,7 @@ class Resolutor(object):
     def __init__(self, nodos):
         self.nodos = list(nodos)
         self.canonicos = {}
+        self.deprecados = set()
         self.mapa_alias = {}
         self.errores = []
         for nodo in self.nodos:
@@ -29,13 +30,20 @@ class Resolutor(object):
             if identificador in self.canonicos:
                 self.errores.append("id canonico repetido en el dataset: %s" % identificador)
             self.canonicos[identificador] = nodo
+            if nodo.get("estado") == "deprecado":
+                self.deprecados.add(identificador)
         for nodo in self.nodos:
             destino = nodo.get("id")
             for alias in nodo.get("ids_alias") or []:
                 if alias == destino:
                     self.errores.append("%s se declara alias de si mismo" % alias)
                     continue
-                if alias in self.canonicos:
+                # UN ALIAS QUE ES A LA VEZ UN NODO VIVO son dos cosas con un
+                # nombre, y eso es fallo. Pero un alias que es un nodo
+                # DEPRECADO es justo la forma normal de una fusion: el
+                # absorbido conserva su ficha como archivo y su id resuelve
+                # al superviviente (D.17).
+                if alias in self.canonicos and alias not in self.deprecados:
                     self.errores.append(
                         "%s es alias de %s y a la vez id canonico vivo: dos cosas con un nombre"
                         % (alias, destino))
@@ -51,7 +59,13 @@ class Resolutor(object):
         return cls(comun.leer_jsonl(ruta or comun.RUTA_DATASET))
 
     def resolver(self, identificador):
-        """Camina la cadena de alias hasta el id canonico vivo.
+        """Camina la cadena de alias hasta el id canonico VIVO.
+
+        Un id DEPRECADO no es el final del camino: es archivo, y su ficha
+        existe para que la fusion sea auditable, pero quien lo nombra quiere
+        llegar al superviviente (D.17). Solo si el deprecado no tiene
+        sucesor declarado se devuelve el propio deprecado, porque su ficha
+        sigue estando ahi y mentir diciendo que no existe seria peor.
 
         Devuelve None si el id no existe ni como canonico ni como alias
         resoluble, o si la cadena da una vuelta sobre si misma.
@@ -61,14 +75,15 @@ class Resolutor(object):
         visitados = []
         actual = identificador
         for _ in range(LIMITE_CADENA):
-            if actual in self.canonicos:
+            if actual in self.canonicos and actual not in self.deprecados:
                 return actual
             if actual in visitados:
                 return None
             visitados.append(actual)
             siguiente = self.mapa_alias.get(actual)
             if siguiente is None:
-                return None
+                # sin sucesor: si es un deprecado suelto, es su propia ficha
+                return actual if actual in self.canonicos else None
             actual = siguiente
         return None
 
@@ -77,7 +92,7 @@ class Resolutor(object):
         camino = [identificador]
         actual = identificador
         for _ in range(LIMITE_CADENA):
-            if actual in self.canonicos:
+            if actual in self.canonicos and actual not in self.deprecados:
                 return camino
             siguiente = self.mapa_alias.get(actual)
             if siguiente is None or siguiente in camino:
@@ -88,6 +103,10 @@ class Resolutor(object):
 
     def existe(self, identificador):
         return self.resolver(identificador) is not None
+
+    def esta_vivo(self, identificador):
+        """Superficie o archivo. Un deprecado existe, pero no se ofrece."""
+        return identificador in self.canonicos and identificador not in self.deprecados
 
     def nodo(self, identificador):
         resuelto = self.resolver(identificador)
@@ -112,12 +131,13 @@ class Resolutor(object):
         return salida
 
     def ids_vivos(self):
-        return sorted(self.canonicos.keys())
+        return sorted(i for i in self.canonicos if i not in self.deprecados)
 
 
 def informe(ruta=None):
     resolutor = Resolutor.desde_dataset(ruta)
-    lineas = ["nodos vivos: %d" % len(resolutor.canonicos),
+    lineas = ["nodos vivos: %d" % len(resolutor.ids_vivos()),
+              "nodos deprecados (archivo): %d" % len(resolutor.deprecados),
               "alias registrados: %d" % len(resolutor.mapa_alias)]
     for alias in sorted(resolutor.mapa_alias):
         camino = resolutor.cadena(alias)

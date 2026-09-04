@@ -4,11 +4,15 @@
 >
 > **Este documento esta INCOMPLETO A PROPOSITO.** Trae la FONTANERIA (el ciclo de
 > la vuelta, la verificacion, la disciplina del dictado y las condiciones de
-> parada) y **deja vacias, con su puntero, las secciones de CRITERIO**: con que
-> vara se adjudica una discrepancia y como se mide el credito.
+> parada), **la METRICA DE CREDITO ya escrita** (seccion 5, TANDA A del 4 sep
+> 2026), y **deja vacias, con su puntero, las dos secciones de CRITERIO que
+> siguen sin decidirse**: con que vara se adjudica una discrepancia (seccion 6)
+> y cuantos SANOS se releen por tanda (seccion 7).
 >
-> **El criterio espera a `docs/COSECHA_2026-09.md` fase 2 y a la decision de
-> Alexis sobre los catorce cambios candidatos de su seccion 3.**
+> **Lo que falta espera a `docs/COSECHA_2026-09.md` fase 2** (calibracion de
+> umbrales contra el grafo final de My-idea) **y a los casos propios de esta
+> casa**: una vara sin sus ejemplares se estrecha sola, y la forja todavia no
+> ha adjudicado ni un par.
 >
 > Una seccion vacia aqui es una decision que no se ha tomado, no un olvido.
 
@@ -135,7 +139,8 @@ Escribes `docs/loop/PARA_ALEXIS.md` con el motivo y el estado exacto, **vacias
   raiz, crear remotos, publicar, gastar fuera del repo).
 - **Fallo tecnico repetido:** hook, gate o prueba de aceptacion en rojo dos
   vueltas seguidas por la misma causa sin regla que lo resuelva.
-- **Credito roto** (ver seccion 5, hoy vacia).
+- **Credito roto** (seccion 5): CLASE o CIFRA PUBLICADA dos tandas seguidas,
+  o REPORTE tres seguidas de la especie que acumula.
 - **Campaña consumada:** la parada feliz, con el reporte final. Aqui
   `PARA_ALEXIS.md` **PIDE** el merge con el estado verde delante; **no lo hace.**
 
@@ -158,8 +163,9 @@ bucle arranque: hash, cuenta de nodos, libros integrados, veredictos por clase,
 censos abiertos y metrica de credito heredada. Mientras esta seccion diga "sin
 medir", el bucle no ha arrancado nunca y la primera vuelta empieza midiendo.
 
-- **estado: sin medir.** La forja esta en v0.2 con dos nodos semilla, el gate
-  verde y el arnes probado pero sin estrenar.
+- **estado: sin medir.** La forja esta en v0.3 (TANDA A) con dos nodos semilla,
+  el gate verde, el arnes probado pero sin estrenar, y la metrica de credito
+  escrita con su contador en CERO.
 
 ---
 
@@ -167,17 +173,61 @@ medir", el bucle no ha arrancado nunca y la primera vuelta empieza midiendo.
 
 ## 5. LA METRICA DE CREDITO
 
-> **VACIA.** Puntero: `docs/COSECHA_2026-09.md` seccion 1.E (**LA RACHA
-> DISTINGUE DONDE VIVE LA CIFRA**, decision del fundador de My-idea del 27 ago
-> 2026, con su antecedente del 13 ago) y seccion 5, punto 2.
->
-> Lo que falta escribir: las tres especies de caida (clase, cifra publicada,
-> reporte), cual acumula para la parada y cual solo dispara la relectura al
-> doble, y **donde vive cada cifra**, porque la sede es lo que decide la especie.
-> My-idea tuvo que afinar esa regla dos veces con paradas de por medio.
->
-> **Escribirla antes de la primera caida es mas barato que despues**, y esa es la
-> recomendacion que la cosecha deja abierta para Alexis.
+**ESCRITA el 4 sep 2026 (TANDA A de la v0.3, decision del fundador).** Sale del
+borrador. Reglas madre: My-idea, decision del fundador del 13 ago 2026 (opcion
+B con el matiz del tope), afinada el 27 ago 2026 (**LA RACHA DISTINGUE DONDE
+VIVE LA CIFRA**) y ampliada el 2 sep 2026 (la sede incluye el codigo de las
+guardas). Recogidas en `docs/COSECHA_2026-09.md` seccion 1.E.
+
+**SE ESTRENA CUANDO EL BUCLE DEL EXTRACTOR ARRANQUE.** Hasta entonces esta
+seccion es ley escrita sin casos, y su contador esta en cero.
+
+### 5.1. Que se relee, y en que orden
+
+La relectura ciega **empieza siempre por los discutibles que el extractor marco
+ANTES de saber si acertaba**. Esa diferencia es lo unico que hace informativa a
+la metrica: una caida DENTRO del marcado dice que el extractor sabia donde
+estaba su duda; una caida FUERA dice que no la vio venir.
+
+Y la muestra pineada de los SANOS (seccion 7, todavia vacia) mide el otro
+error: **el de dejar pasar tiene tasa y banda, o no esta medido.**
+
+### 5.2. Las tres especies de caida, y la sede decide la especie
+
+| especie | que es | donde vive | que hace |
+|---|---|---|---|
+| **CLASE** | un veredicto mal puesto: un CONTINUA que era REPITE, un SANO que era gemelo, un MUTUO que era solape | `bitacora/VEREDICTOS.jsonl`, `config/pares_mutuos.jsonl`, el dataset | **ACUMULA. Dos tandas seguidas paran el bucle** |
+| **CIFRA PUBLICADA** | una cifra falsa en una sede duradera | `docs/`, `config/`, `esquema/`, **y el codigo o el docstring de una guarda de `src/`** | **ACUMULA. Dos tandas seguidas paran el bucle** |
+| **REPORTE** | una afirmacion equivocada que no mueve ningun dato | `docs/loop/REPORTE.md`, que se reescribe cada vuelta | **registra y relee el tramo AL DOBLE.** Acumula solo si la cifra vive en TABLA, CABECERA o CONCLUSION; en lista de rutas o prosa de acompañamiento, NO acumula. **Tres seguidas paran por patron de dictado suelto** |
+
+**POR QUE LA CIFRA DEL CODIGO CUENTA** (My-idea, 2 sep 2026): el ejemplar fue un
+comentario que decia *"307 nodos vivos"* donde lo medido eran **307 destinos
+sobre 255 nodos**. Una cifra dentro del codigo de una guarda **es mas duradera
+que una del reporte**, y hasta ese dia no tenia casillero. Sin retroactividad.
+
+**POR QUE LA SEDE DECIDE, Y NO EL DAÑO** (My-idea, 13 ago 2026): *lo que la
+regla del credito quiere cazar es un veredicto mal puesto, no una etiqueta mal
+escrita.* Separar las especies fue lo que evito que el bucle parara por una
+frase mientras los datos estaban intactos.
+
+### 5.3. Lo que el acta publica cada vuelta
+
+- **relecturas** hechas, **puestos** releidos, **caidas** por especie.
+- **dentro contra fuera del marcado**, que es la cifra que mueve el credito.
+- **la racha viva de cada especie**, con su cuenta.
+- **los errores propios del auditor, con su nombre**, igual que los del
+  extractor. La metrica que solo encuentra fallos ajenos no es una metrica.
+
+### 5.4. Cuando para, y quien la reinicia
+
+- **CLASE o CIFRA PUBLICADA: dos tandas seguidas.**
+- **REPORTE: tres tandas seguidas** de la especie que acumula.
+- **La racha NO se reinicia sola.** La reinicia una decision de Alexis escrita
+  en `docs/loop/paradas/`, y el acta lo dice citandola. Un auditor que pone su
+  propia racha a cero se esta absolviendo.
+- **LA ESCALADA SE ENCARGA, NO SOLO SE DECLARA** (seccion 1, punto 4): si la
+  racha llega a su penultimo escalon y ya existe un remedio autorizado, se
+  encarga **en el mismo acta**, como tarea bloqueante.
 
 ## 6. LA VARA CON LA QUE ADJUDICAS UNA DISCREPANCIA
 

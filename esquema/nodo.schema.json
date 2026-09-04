@@ -148,6 +148,11 @@
       "minLength": 2,
       "pattern": "^[a-z][a-z0-9_]*$"
     },
+    "estado": {
+      "type": "string",
+      "description": "EL DEPRECADO ES ARCHIVO, NO SUPERFICIE (D.17). 'vivo' es superficie: se ofrece como vecino, se cablea y cuenta. 'deprecado' es registro: conserva su texto y su cableado para que la fusion sea auditable, pero sus aristas NO se reciprocan ni se ofrecen, y su id resuelve al superviviente que lo lleva en ids_alias. La aduana pone 'vivo' por defecto.",
+      "enum": ["vivo", "deprecado"]
+    },
     "escala_minima": {
       "type": "string",
       "description": "Opcional. Quien conserva la version ejecutable a escala minima (manual seccion 5: la escala es contenido)."

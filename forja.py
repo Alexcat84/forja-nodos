@@ -4,6 +4,7 @@
     python forja.py insertar candidato.json     la aduana (manual seccion 3)
     python forja.py gate                        el gate de integridad
     python forja.py guiones [ruta ...]          el barrido de estilo
+    python forja.py rancios                     el bloque de vigencia (D.15)
     python forja.py resolutor [id ...]          el resolutor de ids
     python forja.py censos                      crea las plantillas de censo
     python forja.py ayuda
@@ -14,7 +15,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from src import aduana, censos, comun, gate, guiones, resolutor  # noqa: E402
+from src import aduana, censos, comun, gate, guiones, resolutor, vigencia  # noqa: E402
 
 AYUDA = __doc__
 
@@ -32,6 +33,8 @@ def main(argumentos):
         return gate.main(resto)
     if comando == "guiones":
         return guiones.main(resto)
+    if comando == "rancios":
+        return vigencia.main(resto)
     if comando == "resolutor":
         instancia = resolutor.Resolutor.desde_dataset()
         if resto:

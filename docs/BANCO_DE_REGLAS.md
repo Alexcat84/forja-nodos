@@ -35,6 +35,18 @@ src/gate.py (guarda vuelta, funcion _pares_mutuos_resueltos). Caso positivo y
 control en tests/test_aceptacion.py, clase PruebaMutuo y
 PruebaGate.test_a1_vuelta_declarada_en_lista_blanca_pasa.
 
+> **CORREGIDA POR ADICION el 4 sep 2026 (TANDA A), y el texto de arriba queda
+> en pie porque una correccion que tapa lo que corrige no se puede auditar.**
+> Dos cosas de ese parrafo ya no describen el codigo de hoy:
+> **(1)** la lista blanca dejo de ser lista de pertenencia y es REGISTRO DE
+> CITAS (**D.14**): el gate ya no comprueba que el par este, comprueba que su
+> cita se sostenga entera, y `_pares_mutuos_resueltos` se llama hoy
+> `_citas_mutuas` mas `_fallos_de_cita`.
+> **(2)** las dos razones ya no bastan: cada sentido CITA SU LINEA y las dos
+> tienen que ser distintas (**A.4**).
+> Lo que A.1 dice y sigue intacto: la unica vuelta legitima es el enlace mutuo
+> declarado, y todo lo demas es fallo.
+
 ## D.2. Toda comparacion de ids pasa por el resolutor (12 ago 2026)
 Manual principio 3. Ninguna comparacion literal de ids fuera de
 src/resolutor.py. El gate resuelve antes de contar auto-aristas, duplicadas,
@@ -126,3 +138,152 @@ Hook de estilo de la casa (manual seccion 2). Vale para TODO el repo, codigo
 incluido. Los archivos que tienen que nombrar esos caracteres los escriben con
 escape unicode: una guarda que se perdona a si misma deja de ser una guarda.
 El hook no se salta. Si falla, se corrige y se reintenta.
+
+## D.13. Entre dos reglas fechadas que chocan, gana la mas reciente (4 sep 2026)
+**Regla madre:** My-idea, decision del fundador del 19 ago 2026
+(`paradas/2026-08-19-punto-brillante-DECISION.md`, punto 1), recogida en
+`docs/COSECHA_2026-09.md` seccion 1.D.
+
+Cuatro textos sellados el 12 de agosto daban por hecha una ruta que una
+operacion del 14 de agosto ya habia cambiado aplicando una regla posterior. Se
+paro el bucle para resolverlo, y la salida quedo escrita:
+
+> Cuando dos textos sellados chocan, **gana el que aplico la regla mas reciente
+> del fundador, y el perdedor SE CORRIGE** por correccion declarada, sin borrar.
+
+Vale para este banco: si dos entradas fechadas se contradicen, manda la de
+fecha posterior, y la anterior se tacha con su nota. Nunca se borra (manual
+principio 6).
+
+## D.14. La lista blanca es un REGISTRO DE CITAS (4 sep 2026, TANDA A, C.2)
+**Regla madre:** My-idea, decision del fundador del 2 sep 2026,
+`paradas/2026-09-02-opc05-bidireccionales-DECISION.md`.
+
+Alli la guarda de bidireccionales no podia encenderse: 153 pares vivos contra
+una lista blanca de dos entradas, y 83 de esos pares eran anteriores al
+mergebase, o sea estado previo que la campaña no habia creado. Meterlos todos
+en la lista habria sido escribir 151 excepciones **sin una sola lectura
+detras**, que es justo lo que la lista blanca vino a impedir. La salida:
+
+> La lista blanca pasa de lista a mano a **REGISTRO DE CITAS**. Cada par
+> bidireccional exige un veredicto de lectura registrado CON CITA.
+> **UN PAR SIN CITA ES ROJO.**
+
+En esta forja: `config/pares_mutuos.jsonl` deja de ser pertenencia. Cada
+entrada lleva `par`, `fecha`, `declarado_por`, `paso_ida`, `razon_ida`,
+`paso_vuelta`, `razon_vuelta` y las dos huellas, y **el gate verifica la cita
+entera**, no que el par este en la lista: campos ausentes, un paso que el nodo
+ya no tiene, o dos sentidos que hoy apuntan a la misma linea son ROJO que
+nombra el par. Guarda `cita_incompleta` en `src/gate.py`.
+
+CONVENIO, y lo escribe la aduana por construccion: `paso_ida` es un paso de
+`par[0]` (quien declaro) y `paso_vuelta` es un paso de `par[1]`.
+
+## D.15. El bloque de vigencia: una lectura contra texto muerto no vale (4 sep 2026, TANDA A, C.3)
+**Regla madre:** los cinco pares rancios de `OP-D-03` en My-idea, parada del
+15 ago 2026 y decision del fundador del mismo dia.
+
+Medido alli: **de los seis pares A de un acto, CINCO estaban leidos contra
+texto que ya no existia**, porque las cirugias de fases anteriores habian
+reescrito los nodos. Y la precision que costo una vuelta entera: **la vara que
+manda es la de TEXTO, no la de fecha**. La vuelta anterior habia mirado solo
+fechas y conto DOS; contando por texto eran CINCO.
+
+En esta forja:
+
+1. Cada linea de `bitacora/VEREDICTOS.jsonl` guarda `huella_candidato` y
+   `huella_vecino`: la huella del texto que se leyo para emitirla.
+2. Cada cita de `config/pares_mutuos.jsonl` guarda la huella de las dos lineas
+   que cita.
+3. `python forja.py rancios` recomputa las huellas contra el texto de hoy y
+   clasifica: VIGENTE, RANCIO (el texto cambio), SIN HUELLA (escrito antes de
+   esta regla: **incomprobable, y eso se declara en vez de darse por bueno**) y
+   NODO IDO.
+
+**UN RANCIO NO SE CITA COMO VIGENTE:** se relee con el texto de hoy, o se
+declara por que sigue valiendo. Las dos cosas las hace una persona, **y por eso
+esto NO pone el gate en rojo**: el gate vigila lo que es cierto o falso hoy;
+esto vigila lo que fue cierto ayer y nadie ha vuelto a mirar.
+
+## D.16. Ninguna señal devuelve cero silencioso (4 sep 2026, TANDA A, C.4)
+**Regla madre:** My-idea, la señal muerta de `scripts/costuras_internas.py`,
+medida en la vuelta 33 y corregida por decision del fundador el 15 ago 2026
+(`paradas/2026-08-15-cableado-deprecado-y-costuras.md`, decision 2).
+
+La señal de bloque recorria un rango que con cinco pasos quedaba VACIO y
+devolvia 0,0 dijera lo que dijera el texto. Y los dos nodos de calibracion
+tenian cinco pasos, porque la propia campaña los habia destejido:
+
+> El 0,0 no era un nodo sin bloque: **ERA LA SEÑAL MUERTA.**
+
+El remedio que el fundador escribio: por debajo del minimo la señal devuelve
+**NO APLICA explicito, y ese valor REVIENTA si alguien lo compara con un
+umbral**, en vez de dejarse leer como "no hay bloque".
+
+En esta forja: `src/aduana.py` define la clase `NoAplica`, que levanta
+`TypeError` en toda comparacion de orden y en `float()`. Las tres señales la
+devuelven fuera de su dominio (sin texto comparable, sin piezas de familia,
+sin pasos que barrer). `medir()` **declara** la señal que no aplica y **no la
+hace votar**; ordenar la cola si esta permitido, porque poner en fila no es
+comparar con un umbral.
+
+## D.17. EL DEPRECADO ES ARCHIVO, NO SUPERFICIE (4 sep 2026, TANDA A)
+**Regla madre:** My-idea, decision del fundador del 15 ago 2026, decision 1
+opcion a, `paradas/2026-08-15-cableado-deprecado-y-costuras.md`:
+
+> El deprecado conserva su cableado como archivo y Gate 0 deja de reciprocar
+> aristas que nacen en deprecados. **Es la que menos miente: el deprecado es
+> archivo, no participante.**
+
+Las otras dos salidas se descartaron con su motivo escrito: reescribir las
+listas del absorbido pierde el cableado historico que hace auditable la
+fusion, y aflojar la guarda convierte la deuda en norma. Y el mecanismo que lo
+hacia urgente esta medido: las 33 auto-aristas de aquel grafo eran la vista
+reciproca de enlaces que el gemelo deprecado tenia hacia su superviviente, y
+el simetrizador las refabricaba enteras cada vez que se limpiaban. **La sombra
+vuelve mientras viva lo que la proyecta.**
+
+En esta forja, `esquema/nodo.schema.json` gana el campo `estado`
+(`vivo` o `deprecado`), y la regla se reparte asi:
+
+| | |
+|---|---|
+| **conserva su texto y su cableado** | la ficha del absorbido no se toca: es lo que hace auditable la fusion |
+| **sus aristas NO se reciprocan** | las que nacen en un deprecado no entran al grafo: no forman vuelta, ni duplicada, ni hueco de reciprocidad |
+| **no se ofrece** | la aduana no lo propone como vecino: su material vivo ya esta en el superviviente, y mandar a leer una ficha muerta es mandar a leer dos veces |
+| **su id resuelve al superviviente** | el resolutor camina la cadena de alias del deprecado hasta el nodo vivo que lo lleva en `ids_alias`. Un deprecado sin sucesor devuelve su propia ficha: existe, y decir que no seria peor |
+| **ningun vivo lo nombra** | guarda `deprecado_en_superficie`: una arista viva hacia el absorbido tenia que haberse redirigido al fundir |
+| **deprecar no es una linea del candidato** | un candidato que llega declarandose deprecado entra VIVO con su aviso. Deprecar es un acto de fusion, con su plantilla y su simulacion |
+
+**LO QUE ESTA REGLA NO ES:** no es el campo `estado` de las operaciones que
+My-idea jubilo el 4 sep 2026. Aquel era una AFIRMACION SOBRE TRABAJO HECHO, y
+por eso su vara paso a ser el instrumento. Este es la NATURALEZA DEL PROPIO
+NODO, que es dato y no afirmacion. La distincion se escribe aqui para que
+nadie las confunda citando la una contra la otra.
+
+## A.4. Adjudicacion del auditor: el MUTUO cita DOS LINEAS DISTINTAS (4 sep 2026, TANDA A, C.1)
+**Precisa a A.1.** Regla madre: banco de textos **9.22** de My-idea, LA VARA EN
+LOS DOS SENTIDOS:
+
+> La vara es una relacion entre LINEAS, NO entre NODOS. Dos nodos pueden ser
+> cada uno hijo del otro sin que ninguno repita al otro, porque la linea que
+> uno expande no es la linea que el otro expande.
+>
+> **LA COMPROBACION QUE LA SEPARA DE LA DUPLICACION: si las dos direcciones
+> apuntan a LA MISMA LINEA, no es esta figura: es un solape.** La figura exige
+> dos lineas distintas, una en cada nodo.
+
+La A.1 de la v0.2 exigia `ida=` y `vuelta=` pero aceptaba dos razones sobre la
+misma linea, que es un solape con firma de enlace mutuo. Desde hoy el formato
+es:
+
+    ida=<n>:<razon>       n es el paso DEL CANDIDATO que el vecino despliega
+    vuelta=<m>:<razon>    m es el paso DEL VECINO que el candidato despliega
+
+y la aduana comprueba, contra los nodos de verdad, que los dos pasos existen y
+que **no son la misma linea**. Si lo son, RECHAZA nombrando los dos pasos con
+su texto, y remite a la vara de siempre: CONTINUA o REPITE.
+
+Fundir un enlace mutuo legitimo es el error caro (borra dos procedimientos
+para dejar un nodo con dos lineas sueltas). Blanquear un solape como enlace
+mutuo es el error barato y silencioso, **y es el que esta guarda caza.**
