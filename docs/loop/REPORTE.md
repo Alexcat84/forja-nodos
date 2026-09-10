@@ -23,6 +23,11 @@ nueva, y dejo la del encargo aqui al lado en vez de elegir en silencio. **La
 fecha que llevan las `fuentes` de los candidatos es la del instrumento**, que es
 ademas la que la aduana pondria sola (`aduana._hoy()`).
 
+> **RESUELTA AL CIERRE, en C.5, y se deja aqui sin reescribir:** la vuelta cruzo la
+> medianoche y cerro el **2026-09-10**. Las dos fechas eran ciertas, cada una en su
+> instante. **La apertura se mide antes de la primera operacion** (seccion 4) y por
+> eso esta linea no se retoca: se lee con C.5 al lado.
+
 ### Las cuatro tareas
 
 | # | tarea | estado | resultado |
@@ -30,11 +35,21 @@ ademas la que la aduana pondria sola (`aduana._hoy()`).
 | 1 | cap_01 leido, vara como ejemplar, registrado no minado | **CERRADA** | leido entero (19 lineas). **CERO extraidos.** Vara pasada sobre los 4 parrafos: 0 procedimientos propios. Registrado NO MINADO POR LA MARCA. **Mi vara COINCIDE con la marca**, y en el parrafo 19 por poco margen: se dice |
 | 2 | cap_02: frontera publicada y candidatos por la aduana | **CERRADA** | frontera publicada antes de cortar: **6 procedimientos y 7 posturas** de 13 parrafos. **6 candidatos escritos, los 6 por la aduana en seco al PRIMER intento, cero caidas y cero correcciones de id.** 1 arista madre e hijo declarada por lectura |
 | 3 | informe del lote en seco | **CERRADA** | `python forja.py informe --carpeta cuarentena/onu_consumidor` sobre 6 candidatos contra un grafo de 2 nodos: **6 entrarian, 0 bloquearian, 0 caerian, 0 chocan.** Ninguna guarda disparo |
-| 4 | commit del capitulo | | |
+| 4 | commit del capitulo | **CERRADA** | commit `363647b` en `extraccion-mundo-11`, con los **6 JSON dentro** (D.25). El mensaje dice el capitulo (cap_02, apartado V-C parrafos 20 a 32) y cuantos candidatos (6). Hook verde |
 
 ### Discutibles marcados ANTES de saber si acierto
 
-(los marco aqui segun aparecen, no al final)
+(los marco aqui segun aparecen, no al final. Quedaron SEIS, y estan
+desarrollados cada uno en su sitio del reporte)
+
+| # | discutible | donde |
+|---|---|---|
+| 1 | que el parrafo 19 de `cap_01` no sea nodo: trae activacion y bifurcacion, y lo tumbo por no traer pasos propios | tarea 1 |
+| 2 | **la prueba del inventario es mia, no de la casa**: sin ella `cap_02` se lee entero como postura | 2.A.2 y 2.A.6 |
+| 3 | el parrafo 23 fuera, pese a sus cuatro requisitos nombrados, por el criterio *requisitos razonables* | 2.B |
+| 4 | el parrafo 27 fuera, pese a ser el unico que usa la formula de despliegue *ello requiere que* | 2.B |
+| 5 | `examinar_normas_pesos_medidas` dentro, siendo el mas flojo de los seis: dos objetos y una cadencia sin periodo | 2.B |
+| 6 | un sexto paso que escribi y quite de `verificar_afirmaciones_ambientales_publicidad`, porque el bucle lo cerraba yo y no el libro | 2.B |
 
 ---
 
@@ -512,3 +527,241 @@ vecino: el par madre e hijo, levantado por la señal 3.
 es el saldo de HOY, con el dataset en 2. **El primero que entre cambia lo que
 mide el segundo**, asi que el informe se vuelve a correr entre insercion e
 insercion, y no se toma este como permiso para seis.
+
+---
+
+# EL CIERRE DE LA VUELTA 1
+
+**Todas las cifras de esta seccion se recomputaron AL CERRAR** (seccion 4: el
+estado al cierre se mide al cierre), despues del commit del capitulo.
+
+## C.1. LA PRUEBA DE QUE NO SE INSERTO NADA
+
+**Es la afirmacion mas importante del reporte, asi que no la firmo: la mido.**
+Diff de las cuatro sedes que solo la aduana escribe, sobre la vuelta entera:
+
+    rango de la vuelta: 757870d (HEAD al abrir) .. 363647b
+    git diff --stat 757870d..HEAD -- dataset/ bitacora/ censos/ config/
+    (salida vacia: ni una linea cambiada en las sedes de la aduana)
+
+Y los conteos, corridos al cierre:
+
+| | al abrir | al cerrar |
+|---|---:|---:|
+| nodos en `dataset/nodos.jsonl` | 2 | **2** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | 1 | **1** |
+| candidatos en `cuarentena/onu_consumidor/` | 0 | **6** |
+
+**`python forja.py insertar` no se corrio ni una vez en esta vuelta.** El unico
+comando de aduana que se uso fue `informe`, que es de solo lectura por
+construccion. **La insercion es una autorizacion del fundador, no un default
+(D.26), y en esta corrida no la ha dado.**
+
+## C.2. EL INFORME DE LOTE, RECORRIDO AL CIERRE
+
+    python forja.py informe --carpeta cuarentena/onu_consumidor
+
+    candidatos revisados        : 6
+    nodos en el grafo de destino: 2
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 6
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+**Identico al de la tarea 3**, y tenia que serlo porque entre los dos no se
+inserto nada. **Se recorre igual: una cifra que se publica al cierre se mide al
+cierre aunque se espere que no haya cambiado.**
+
+## C.3. LAS TRES GUARDAS, AL CIERRE
+
+    python forja.py gate         GATE VERDE. nodos verificados: 2
+    python forja.py guiones      BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    python tests/test_aceptacion.py    Ran 57 tests / OK
+                                      total: 57 pruebas, 0 fallos, 0 errores
+
+**Y el hook corrio en cada uno de los cuatro commits de esta vuelta, sin
+saltarse ninguno** (seccion 6). Su salida esta en cada commit.
+
+## C.4. LA IDENTIDAD, LEIDA DE GIT
+
+    git rev-parse --abbrev-ref HEAD     extraccion-mundo-11
+    git log --oneline 757870d..HEAD
+
+    363647b cap_02 del lote onu_consumidor: 6 candidatos en cuarentena, cero inserciones
+    a0228d8 TAREA 1 cerrada: cap_01 leido, vara pasada como ejemplar, registrado no minado por la marca
+    9c6bbd0 El reporte de la vuelta 1 abre con su esqueleto, antes de la primera tarea
+    6b24d8b Los artefactos del arnes de la vuelta 1, commiteados antes de tocar nada
+
+## C.5. LA DISCREPANCIA DE FECHA DE LA APERTURA, RESUELTA POR EL RELOJ
+
+En la cabecera declare que el instrumento decia `2026-09-09` y el encargo decia
+`10 sep 2026`, y escribi la del instrumento sin elegir en silencio. **Al cerrar,
+el instrumento dice otra cosa, porque la vuelta cruzo la medianoche:**
+
+    arranque (docs/loop/loop.log) : [2026-09-09 23:48:46]
+    cierre   (date)               : 2026-09-10 00:05:34 -0400
+    aduana._hoy() al cierre       : 2026-09-10
+
+**La discrepancia no era un error del encargo: era una vuelta que empieza el 9 y
+cierra el 10.** Las dos fechas eran ciertas, cada una en su instante, y por eso
+la regla de citar con la medicion al lado sirvio aqui exactamente para lo que
+existe: **si hubiera copiado la fecha del encargo sin medir, habria acertado el
+numero y no habria sabido nada.**
+
+**LOS SEIS CANDIDATOS LLEVAN `fecha: 2026-09-09` EN SU `fuentes`, Y SE QUEDA
+ASI.** Es la fecha en que la fuente entro de verdad al nodo, que es lo que ese
+campo significa; los seis se escribieron y pasaron la aduana antes de medianoche.
+Ninguno tiene mas de una fuente, asi que la guarda `orden_fuentes` no tiene aqui
+nada que ordenar. **Si el fundador prefiere la fecha del commit, es una
+correccion de una linea por fichero y la señalo yo mismo.**
+
+---
+
+# LO QUE ESTA VUELTA DEJA MEDIDO, que es lo que mas importa
+
+## 1. Cuantos candidatos cayeron en la aduana al primer intento, y por que guarda
+
+**CERO de seis. Ninguna guarda disparo.** No hay bloque `POR QUE GUARDA CAEN` en
+el informe porque no hay ni un caido que clasificar.
+
+**Contra que se lee ese cero:** el estreno de la aduana midio que **cuatro de cada
+diez** candidatos escritos sin las reglas de id delante caen en la puerta. Aqui
+cayeron cero de diez.
+
+**Y por que ese cero NO prueba lo que parece probar.** Lei la seccion 15 entera
+antes de escribir el primer id, que es lo que la propia seccion 15 manda. **Asi
+que el cero mide dos cosas a la vez y no las separa:** que las reglas son
+llevaderas para quien las lee antes, o que yo escogi ids conservadores para no
+pelearme con ellas. **La segunda lectura es un sesgo que solo yo puedo declarar,
+y por eso la declaro.** El experimento que separaria las dos no es este: seria un
+extractor que escribiera primero y leyera despues, y **esa medida ya la tiene la
+casa del estreno, con su 4 de cada 10.**
+
+## 2. Cuantas veces tuve que corregir un id, y si alguna correccion empeoro el nombre
+
+**CERO correcciones despues de la aduana.** Ningun id se reescribio tras un
+rechazo, porque no hubo rechazos.
+
+**PERO LA PREGUNTA DE VERDAD ES LA SEGUNDA, Y AHI SI HAY DATO, y no viene de
+donde el encargo lo esperaba.** Hubo un nombre que sali peor, y **no me lo
+estrecho una regla de id: me lo estrecho la fidelidad al libro.**
+
+| | |
+|---|---|
+| el id que escribi | `verificar_afirmaciones_ambientales_publicidad` |
+| el id que habria sido mas encontrable | `verificar_greenwashing_publicidad` |
+| **lo que dicen las reglas de id** | **que el segundo VALE.** `greenwashing` esta en la lista BLANCA (`src/reglas_id.py`, `PRESTAMOS_ASENTADOS`), asi que la regla 1 no lo tumba |
+| por que escribi el primero | **porque el parrafo 30 no dice `greenwashing` ni una vez.** Ponerlo en el id seria meter en la identidad del nodo una palabra que el libro no usa |
+
+**Y creo que el nombre salio peor**, porque `greenwashing` es como se busca esto
+en el mundo real y `afirmaciones ambientales` no lo es. **La mitigacion existe y
+la use: `greenwashing` viaja en `denominaciones.otros_idiomas`**, que es su sede
+por el manual seccion 3.1, y ahi hace de puerta de busqueda del lector sin ser la
+identidad del nodo. **Dicho como dato y no como queja: el coste de esta vuelta no
+lo puso la lista negra, lo puso la fidelidad, y el reparto entre `id` y
+`denominaciones` lo absorbio bien.**
+
+## 3. Si la vara de la seccion 9 me dejo decidir en material normativo
+
+**No del todo, y esta es la respuesta que menos me gusta dar y la mas util.**
+
+**La vara tal como esta escrita me resolvio `cap_01` limpiamente**: cuatro
+parrafos, cuatro posturas o lineas nombradas, ninguna duda seria. La formula
+*una advertencia es linea, no procedimiento* y *una postura no ejecuta una
+busqueda* bastan cuando el texto solo manda.
+
+**Y NO ME RESOLVIO `cap_02`.** Aplicada al pie de la letra sobre 819 palabras de
+directriz de la ONU, la vara tumba los trece parrafos, porque los trece empiezan
+por *los Estados Miembros deben* y ninguno escribe sus pasos. **Con la vara sola,
+`cap_02` era una parada por capitulo sin material.** Y no lo es: ahi dentro hay
+cinco medios nombrados, tres etapas nombradas y tres abusos nombrados.
+
+**Lo que me falto es un corte POSITIVO.** La vara dice muy bien que NO es un
+nodo; para material normativo hace falta ademas que diga que SI lo es, porque en
+este registro el verbo nunca ayuda. **Tuve que escribirlo yo (la prueba del
+inventario, seccion 2.A.2) y esta marcado como DISCUTIBLE 2, que es lo unico que
+me tocaba hacer con el** (seccion 14: el extractor propone en su reporte).
+
+**LA PROPUESTA, en una linea, para que el fundador la pueda adjudicar o tirar:**
+
+> en material normativo, la vara de la seccion 9 se lee por sus dos caras: **el
+> adjetivo de adecuacion en el sitio del criterio delata la postura, y el
+> inventario propio del libro delata el procedimiento.**
+
+## 4. Cuanto tardo la vuelta y si el tramo fue el correcto
+
+    arranque : [2026-09-09 23:48:46]  (docs/loop/loop.log, linea 1)
+    cierre   :  2026-09-10 00:05:34   (date, corrido al cierre)
+
+**Unos diecisiete minutos de reloj** para leer dos capitulos, publicar una
+frontera de trece parrafos, escribir seis candidatos, pasarlos uno a uno por la
+aduana, correr tres mediciones propias y cerrar el reporte.
+
+**EL TRAMO FUE EL CORRECTO, y el disparador de la seccion 12.4 no se activo: esta
+vuelta cerro su reporte.** Un capitulo de 819 palabras dio 6 candidatos, que cae
+en la banda de 5 a 15.
+
+**Y una observacion sobre donde estuvo el coste, porque cambia como se dimensiona
+el proximo tramo:** el trabajo NO estuvo en el volumen ni en la puerta. Estuvo
+entero en **decidir que parrafo era procedimiento**, que es una lectura que no
+escala con las palabras sino con lo repetitivo del registro normativo. **Para
+este libro cabria un tramo mayor** (`cap_03` son 389 palabras y habria entrado en
+esta misma vuelta), **pero el encargo fijo un capitulo y un capitulo se hizo**:
+el tramo no lo elijo yo.
+
+---
+
+# COLA, PROPUESTAS Y UNA OBSERVACION SOBRE EL PROPIO ENCARGO
+
+## Cola declarada
+
+- **`cap_03.md`** (apartado V-F, parrafos 37 a 41, solucion de controversias y
+  compensacion, 389 palabras) **queda sin minar.** No es un descuido: el encargo
+  fijo `cap_02` como el capitulo de esta vuelta.
+- **La arista `formular_codigo_comercializacion_empresarial` a
+  `verificar_afirmaciones_ambientales_publicidad` queda propuesta y sin cablear**,
+  porque cablearla exige que la madre este dentro. Su razon y su direccion estan
+  en 2.A.6, y su medicion en 2.B.3.
+
+## Propuestas al auditor, todas en mi sede y ninguna adjudicada por mi
+
+1. **La prueba del inventario** como cara positiva de la vara para material
+   normativo (2.A.2, DISCUTIBLE 2).
+2. **La asimetria de la señal 3 en el borde del umbral**, medida en el mismo par
+   con los dos sentidos: 0,602410 contra 0,572289. `docs/CALIBRACION_D4.md` no
+   declara en que sentido midio sus pares, asi que **no hay cifra contradicha:
+   hay un hueco**, y comprobarlo exigiria volver a correr la calibracion, que es
+   maquinaria que esta vuelta no fabrica (seccion 13).
+3. **Los seis discutibles marcados a ciegas** de este reporte, por donde el
+   auditor puede empezar la relectura.
+
+## UNA CONTRADICCION ENTRE EL ENCARGO Y LAS REGLAS PERMANENTES, QUE NO LLEGO A COSTAR NADA
+
+**Se dice porque en la proxima vuelta puede costar, y porque callarlo seria
+esconder informacion barata.**
+
+| sede | que dice |
+|---|---|
+| `docs/loop/PROMPT_SIGUIENTE.md`, seccion LAS PARADAS | *"Paras y escribes `docs/loop/PARA_ALEXIS.md` si..."* |
+| `docs/loop/EXTRACTOR.md` seccion 7 | *"**Tu no escribes `PARA_ALEXIS.md`.** Eso lo hace el auditor. Tu declaras la parada en tu reporte y te detienes."* |
+| `docs/loop/EXTRACTOR.md` seccion 14 | `PARA_ALEXIS.md` figura en la tabla de sedes como **del auditor, y solo el** |
+
+**NO LA TRAIGO COMO PARADA, y la razon es de doctrina:** ninguna condicion de
+parada se activo en esta vuelta, asi que **el conflicto nunca llego a tener que
+resolverse.** Declarar una parada sobre un supuesto que no ocurrio seria
+exactamente la improvisacion que la seccion 7 prohibe.
+
+**Y digo por adelantado que habria hecho, para que quede juzgable:** habria
+seguido `EXTRACTOR.md`, porque su encabezado dice que sus reglas *valen SIEMPRE,
+ademas de lo que diga el encargo*, y porque la tabla de sedes de la seccion 14 es
+mas especifica que la formula del encargo. **Habria declarado la parada en este
+reporte y me habria detenido, sin tocar `PARA_ALEXIS.md`.**
+
+---
+
+**FIN DEL REPORTE DE LA VUELTA 1.** Seis candidatos en cuarentena, cero
+inserciones, cuatro tareas cerradas, cero paradas, seis discutibles marcados
+antes de saber si acierto.
