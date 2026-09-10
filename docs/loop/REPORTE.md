@@ -6548,3 +6548,155 @@ suya, asi que **no le invento un padre**. Se dice y se deja.
 `cuarentena/`. **Y no cableo por parecido:** las tres unicas aristas que dudaba
 estan en la tabla de discutibles de mas arriba, **sin declarar**, marcadas antes
 de correr el primer comando.
+
+---
+
+## TAREA 1. EL TRAMO A, la cola del Cap. 5 (`cap_06.md` L247 a L455)
+
+### 1.a. LA FRONTERA, PUBLICADA ANTES DE CORTAR, y con una pieza que el encargo no lista
+
+**El encargo nombra SEIS cabeceras. El fichero tiene SIETE piezas**, porque entre
+`RIDING THE RISING TIDE` y `BEYOND HIRING` hay un **recuadro** cuyo titulo lleva
+interrogacion y **no cae en un barrido de cabeceras en mayusculas**. Lo digo
+antes que nada porque es exactamente la especie que tumbo la vuelta 7: **bloques
+del capitulo que no aparecen en ninguna pieza de una tabla que se anuncia
+completa.**
+
+    grep -n "WHAT TYPES OF CEOS\|^\* \* \*$" fuentes/smart_who/cap_06.md
+    249:* * *
+    351:* * *
+    353:WHAT TYPES OF CEOS MAKE MONEY FOR INVESTORS?
+    393:* * *
+
+**LAS SIETE PIEZAS, y entre las siete cubren L247 a L455 sin dejar un hueco:**
+
+| pieza | de | a | la salida, pegada |
+|---|---:|---:|---|
+| P1 `HOW TO INSTALL THE A METHOD FOR HIRING IN YOUR COMPANY` | L247 | L296 | `HOW TO INSTALL THE A METHOD FOR HIRING IN YOUR COMPANY   <<L247` |
+| P2 `LEGAL TRAPS TO AVOID` | L297 | L318 | `LEGAL TRAPS TO AVOID   <<L297` |
+| P3 `THOUGHTS ON BUILDING YOUR TEAM` | L319 | L332 | `THOUGHTS ON BUILDING YOUR TEAM   <<L319` |
+| P4 `RIDING THE RISING TIDE` | L333 | L350 | `RIDING THE RISING TIDE   <<L333` |
+| P5 **el recuadro** `WHAT TYPES OF CEOS MAKE MONEY FOR INVESTORS?` | L351 | L394 | `353:WHAT TYPES OF CEOS MAKE MONEY FOR INVESTORS?` y sus dos asteriscos, `351:* * *` y `393:* * *` |
+| P6 `BEYOND HIRING` | L395 | L416 | `BEYOND HIRING   <<L395` |
+| P7 `YOU CAN DO IT` | L417 | L455 | `YOU CAN DO IT   <<L417` y la ultima linea del fichero, `The Americans beat the heavily favored Italian team by forty-four seconds.   <<L455` |
+
+**COMPROBACION DE COBERTURA, hecha aqui y no prometida:** 247 a 296, 297 a 318,
+319 a 332, 333 a 350, 351 a 394, 395 a 416, 417 a 455. **Cada pieza empieza donde
+acaba la anterior, y la ultima acaba en L455, que es la ultima linea del fichero
+(`wc -l` da 455).** Cero huecos y cero solapes.
+
+### 1.b. LAS DOS SERIES NUMERADAS, con sus diez y sus cuatro lineas pegadas
+
+**LA DE DIEZ**, anunciada en L251 (`You have to do ten things if you want to
+install the A Method for Hiring in your business:`):
+
+| paso | linea | la salida, pegada |
+|---:|---:|---|
+| 1 | L253 | `1. Make people a top priority. The leaders we interviewed for this book    <<L253` |
+| 2 | L255 | `2. Follow the A Method yourself. Great leaders don't tell people what    <<L255` |
+| 3 | L257 | `3. Build support among your executive team or peers. Leaders gain moment   <<L257` |
+| 4 | L259 | `4. Cast a clear vision for the organization and reinforce it through eve   <<L259` |
+| 5 | L261 | `5. Train your team on best practices. Leaders ensure every manager on th   <<L261` |
+| 6 | L263 | `6. Remove barriers that impede success. Leaders who want to be A Players   <<L263` |
+| 7 | L265 | `7. Implement new policies that support the change. Leaders know that all   <<L265` |
+| 8 | L273 | `8. Recognize and reward those who use the method and achieve results. Ca   <<L273` |
+| 9 | L275 | `9. Remove managers who are not on board. Captains short-circuit any pote   <<L275` |
+| 10 | L277 | `10. Celebrate wins and plan for more change. The best leaders celebrate    <<L277` |
+
+**EL SALTO DE L265 A L273 NO ES UN DESFASE MIO: es que el paso 7 trae tres
+vinetas propias**, en L267, L269 y L271, con las tres politicas escritas una a
+una. Es el paso mas rico de los diez y se ve en el hueco.
+
+**LA DE CUATRO**, anunciada en L305 (`To stay well within the law, we suggest you
+respect these four areas of caution:`):
+
+| cautela | linea | la salida, pegada |
+|---:|---:|---|
+| 1 | L307 | `1. Relevance. Do not reject candidates for reasons that are not relevant   <<L307` |
+| 2 | L309 | `2. Standardization of hiring process. Use the same process for all candi   <<L309` |
+| 3 | L311 | `3. Use nondiscriminatory language during interviews and in written forms   <<L311` |
+| 4 | L313 | `4. Avoid asking candidates illegal questions. Certain questions cannot b   <<L313` |
+
+### 1.c. EL FALLO PIEZA A PIEZA, con la vara y ANTES de escribir un solo candidato
+
+| pieza | fallo | la razon, con su cita |
+|---|---|---|
+| **P1** L247 a L296 | **MINABLE, serie numerada** | L251 anuncia diez cosas y las diez estan escritas una a una. Manual 3.4: un nodo por paso mas UNA cabeza |
+| **P2** L297 a L318 | **MINABLE, serie numerada** | L305 anuncia cuatro areas de cautela y las cuatro estan escritas |
+| **P3** L319 a L332 | **NO MINABLE, postura** | es una discusion de si se puede montar un equipo entero de jugadores A. Su unica linea normativa es que si se puede y que es deseable. **Cero medios, cero etapas, cero objetos.** `D.27` la tumba entera |
+| **P4** L333 a L350 | **NO MINABLE, postura mas caso** | la doctrina de la elasticidad de la cultura mas el caso de Tesco y John Hoerner. Lo mas cerca de una instruccion que tiene: *Building a team of A Players means thinking long and hard about your business strategy*, que es **pensar largo y tendido**, no un procedimiento |
+| **P5** L351 a L394 | **MINABLE, y es el discutible mayor de la vuelta** | el libro nombra **una a una** las caracteristicas de los dos perfiles y da una **regla de eleccion explicita**. Ver 1.d |
+| **P6** L395 a L416 | **MINABLE, con `manual 3.5` encima** | el caso Bililies pone **cuatro etapas nombradas una a una y con su cifra**, y la doctrina es del libro y no del caso. Ver 1.d |
+| **P7** L417 a L455 | **NO MINABLE, caso de doctrina que YA VIVE** | el caso de Bill Koch y la America's Cup **ilustra la tarjeta de puntuacion, el abastecimiento y la seleccion**, que son tres nodos que ya estan en el grafo. `Manual 3.5`: el caso no es la casa |
+
+**DOS PIEZAS DESCARTADAS CON SU RAZON ESCRITA Y UNA TERCERA CON LA SUYA.** El
+encargo lo dice y lo suscribo: **un tramo descartado con su razon escrita es
+trabajo hecho.**
+
+### 1.d. LOS DOS FALLOS QUE HAY QUE ARGUMENTAR, porque no se ven solos
+
+**P5, EL RECUADRO DE LOS GUEPARDOS Y LOS CORDEROS: MINABLE, y lo marco como
+DISCUTIBLE ANTES de saber si acierto.**
+
+Lo que empuja a tumbarlo: **es una seccion de bonus, esta escrita como hallazgo
+de investigacion y no como instruccion, y `EXTRACTOR.md` 9 dice que una definicion
+o un concepto sin nada que hacer NO es un nodo.**
+
+Lo que lo sostiene, y es lo que pesa mas: **el libro pone su propio inventario de
+OBJETOS DE TRABAJO**, que es la cara positiva de `D.27`. Nombra una a una las
+caracteristicas de cada perfil, **y ademas cierra con una regla de eleccion
+explicita**, no con un adjetivo de adecuacion:
+
+> `if you have the choice to be or hire somebody who errs on the side of being`
+> `too fast and focused versus being slow and extremely collaborative, we`
+> `recommend going with the fast and focused option`
+
+**Eso no es nombrar adonde llegar: es decir a quien elegir.** Y el propio recuadro
+pone su freno (`The proper answer is, It depends on the scorecard`), que entra
+como paso y evita que el nodo se lea como una ley.
+
+**P6, `BEYOND HIRING`: MINABLE, y con `manual 3.5` aplicada en el acto.**
+
+La doctrina es del libro y esta en su primera linea: los directivos recaen en los
+metodos de vudu **cuando piensan en desarrollo, promociones y sucesion**, y el
+metodo se aplica tambien ahi. **Las etapas las pone el caso Bililies, nombradas
+una a una y con su cifra**: construir una tarjeta por puesto revisando la
+estrategia de cada unidad y sus implicaciones a dos o tres años vista; conducir
+una entrevista cronologica con cada lider; **complementar entrevistando de doce a
+veinte colegas actuales y antiguos de cada ejecutivo**; presentar la radiografia
+a quien decide.
+
+**Y la señal barata de que se hizo mal, vigilada:** el entregable de mi candidato
+**no lleva ni un dato del caso** (ni el banco, ni Bililies, ni el consejero
+delegado que se jubila). El caso entra nombrado dentro del `resumen_teorico`, que
+es donde `manual 3.5` lo pone.
+
+### 1.e. LO QUE `D.27` TUMBA DENTRO DE LAS SERIES, y por que no es contradecir al encargo
+
+**El encargo dice que las dos series piden un nodo por paso mas una cabeza. Tres
+de los catorce pasos NO PASAN `D.27`, y se quedan como pasos de su cabeza en vez
+de dar hijo.**
+
+**No lo invento yo: es cosa juzgada en esta casa y esta escrita dentro de un nodo
+vivo.** `aplicar_tacticas_maestras_entrevista` es la cabeza de una serie de cinco
+y **solo tiene cuatro hijos**, y su `resumen_teorico` explica por que:
+
+> `Cuatro de las cinco tacticas tienen procedimiento propio y viven ademas en su`
+> `nodo; la cuarta, pintar un cuadro, no lo tiene: su criterio es entenderlo de`
+> `verdad, que es un adjetivo de adecuacion en el sitio del criterio`
+
+**La regla de la serie numerada dice CUANTAS compresiones caben (una), no que un
+paso sin procedimiento propio tenga que dar nodo.** Los tres que se quedan dentro:
+
+| paso | linea | por que no da hijo |
+|---|---:|---|
+| P1 paso 1, `Make people a top priority` | L253 | **es una META, y la restriccion 1 de `D.27` la excluye por su nombre**: nombrar adonde hay que llegar sigue siendo nombrar. Su unico medio es comunicar la urgencia |
+| P1 paso 2, `Follow the A Method yourself` | L255 | **postura pura.** `Great leaders don't tell people what to do. They lead by example.` Cero medios, cero etapas, cero objetos |
+| P2 cautela 2, `Standardization of hiring process` | L309 | una sola instruccion (usa el mismo proceso con todos) y su aviso. **No hay inventario: el proceso que hay que usar esta definido en otro sitio**, que es el caso literal de *solo el nombre de otro* |
+
+**LOS TRES SE TRANSCRIBEN ENTEROS DENTRO DE SU CABEZA**, asi que no se pierde ni
+una linea del libro: cambia donde vive, no si vive.
+
+**Y VA MARCADO COMO DISCUTIBLE**, porque es una lectura de `D.27` sobre el texto
+del encargo y podria estar equivocada. **Once hijos y dos cabezas, en vez de
+catorce hijos y dos cabezas.**
