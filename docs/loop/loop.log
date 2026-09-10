@@ -55,3 +55,5 @@
 [2026-09-10 13:55:39] VUELTA 3 : EXTRACTOR (claude-opus-5)
 [2026-09-10 14:42:39] extractor listo (USD 16.1182455), 2820s, intento 1 de 7
 [2026-09-10 14:42:39] VUELTA 3 : AUDITOR (claude-opus-5)
+[2026-09-10 15:17:57] auditor: fallo instantaneo (probable limite de uso), 2118s, costo "vacio", intento 1 de 7
+[2026-09-10 15:17:57] fallo "instantaneo"; espero 1800 segundos y reintento

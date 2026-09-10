@@ -119,6 +119,10 @@ INGLES_CON_EQUIVALENTE = {
     "views", "shop", "kit", "pool", "ring", "mesh", "mock", "hook", "yoke",
     "bucket", "buckets", "wedge", "metaphor", "methods", "method", "ways",
     "way", "thing", "things", "needs", "need", "known", "unknown", "unknowns",
+    # `who` entra el 10 sep 2026 por decision del fundador, heredada del ACTA
+    # 6: el titulo de un libro no exime a un id. Su equivalente corriente es
+    # `quien`, y el ingles viaja en denominaciones.otros_idiomas.
+    "who",
     # verbos y particulas sueltas de ingles
     "accomplish", "affirm", "attack", "back", "calling", "click", "down",
     "enough", "falling", "getting", "grow", "how", "keep", "kill", "make",

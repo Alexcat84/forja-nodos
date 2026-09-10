@@ -3,7 +3,7 @@
 #
 # Monta un repo de usar y tirar con su remoto bare, mete dentro
 # orquestador_forja.sh y un CLAUDE FALSO cuyo comportamiento se dicta por
-# variables de entorno, y corre ONCE escenarios. Ninguno toca el repo de verdad.
+# variables de entorno, y corre CATORCE escenarios. Ninguno toca el repo de verdad.
 #
 # El claude falso es la unica forma de probar el arnes: un turno mudo o un fallo
 # instantaneo no se pueden pedir a un modelo de verdad, y una guarda que no se
@@ -13,6 +13,10 @@ set -uo pipefail
 ORQUESTADOR="$1"
 BANCO="$(mktemp -d)"
 trap 'rm -rf "$BANCO"' EXIT
+
+# Con escape, nunca literal: si esta prueba llevara el caracter, el barrido
+# tendria que perdonar al fichero que lo comprueba.
+GUION_LARGO="$(printf '\u2014')"
 
 verdes=0
 rojos=0
@@ -59,7 +63,15 @@ montar_banco() { # $1 = nombre del escenario
   cat > "$taller/bin/claude" <<'FALSO'
 #!/usr/bin/env bash
 prompt="${!#}"
-if echo "$prompt" | grep -q "EXTRACTOR.md"; then
+visto=""
+if echo "$prompt" | grep -q "APERTURA CIEGA"; then
+  # EL TERCER ROL (D.34). El auditor ciego escribe su clasificacion antes de
+  # que exista el reporte, y aqui deja constancia de si LO VIO o no: es lo
+  # unico que la prueba necesita comprobar de la fase ciega.
+  rol="auditor ciego"; testigo="docs/loop/APERTURA_CIEGA.md"
+  escribe="${FALSO_APERTURA:-si}"
+  if [ -f "docs/loop/REPORTE.md" ]; then visto="EL REPORTE ESTABA"; else visto="el reporte NO estaba"; fi
+elif echo "$prompt" | grep -q "EXTRACTOR.md"; then
   rol=extractor; testigo="docs/loop/REPORTE.md"; escribe="${FALSO_EXTRACTOR:-si}"
 else
   rol=auditor;   testigo="docs/loop/ACTA_AUDITOR.md"; escribe="${FALSO_AUDITOR:-si}"
@@ -76,12 +88,19 @@ if [ "$escribe" = "vacio" ]; then
   git add -A >/dev/null 2>&1
   git commit -q -m "turno del $rol con testigo vacio (claude falso)" >/dev/null 2>&1
 elif [ "$escribe" = "si" ]; then
-  echo "linea del $rol, $(date '+%H:%M:%S.%N')" >> "$testigo"
+  echo "linea del $rol, $(date '+%H:%M:%S.%N')${visto:+ | $visto}" >> "$testigo"
   git add -A >/dev/null 2>&1
   git commit -q -m "turno del $rol (claude falso)" >/dev/null 2>&1
   git push -q origin bucle >/dev/null 2>&1
 fi
-echo "{\"total_cost_usd\": ${FALSO_COSTO:-0.42}, \"result\": \"turno del $rol\"}"
+# El arnes vuelca ESTO en el artefacto DESPUES del ultimo commit (D.33).
+sucio=""
+if [ "${FALSO_SUCIO:-no}" = "si" ]; then sucio=" $(printf '\u2014') con guion largo"; fi
+# Y un auditor que reescribe su apertura ciega tras ver el reporte (D.34).
+if [ "$rol" = "auditor" ] && [ "${FALSO_ROMPE_SELLO:-no}" = "si" ]; then
+  echo "linea escrita DESPUES de ver el reporte" >> "docs/loop/APERTURA_CIEGA.md"
+fi
+echo "{\"total_cost_usd\": ${FALSO_COSTO:-0.42}, \"result\": \"turno del $rol$sucio\"}"
 FALSO
   chmod +x "$taller/bin/claude"
 
@@ -277,6 +296,68 @@ git -C "$taller" checkout -q bucle
 salida="$(correr "$taller")"
 comprobar "en la rama correcta si arranca"   "arranque: rama bucle"         "$salida"
 comprobar "y la vuelta corre"                "VUELTA 1 : EXTRACTOR"         "$salida"
+
+# --------------------------------------------------------------- escenario 12
+echo ""
+echo "ESCENARIO 12: EL ARTEFACTO DEL ARNES NO TUMBA LA VUELTA (D.33). El arnes"
+echo "              vuelca el texto del turno DESPUES del ultimo commit, asi"
+echo "              que es la unica escritura del repo que no pasa por su"
+echo "              propio hook. En la vuelta 7 un guion largo dentro de"
+echo "              ultimo_extractor.json puso en rojo la prueba entera."
+taller="$(montar_banco e12)"
+salida="$(FALSO_SUCIO=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la vuelta corre entera"           "Arnes terminado"             "$salida"
+comprobar "el extractor pasa"                "extractor listo"             "$salida"
+comprobar "el auditor pasa"                  "auditor listo"               "$salida"
+comprobar_no "no se escribe PARA_ALEXIS"     "PARA_ALEXIS.md. Leelo"       "$salida"
+# Y EL GUION ESTA DE VERDAD AHI DENTRO: si no, la prueba no probaria nada.
+artefacto="$(cat "$taller/docs/loop/ultimo_extractor.json" 2>/dev/null || echo AUSENTE)"
+comprobar "el artefacto SI trae el guion"    "$GUION_LARGO"                "$artefacto"
+
+# --------------------------------------------------------------- escenario 13
+echo ""
+echo "ESCENARIO 13: LA APERTURA CIEGA SELLA ANTES DE EXPONER (D.34). Durante"
+echo "              siete actas fue una promesa y las siete se rompieron. El"
+echo "              artefacto documenta, no impide: lo que impide es que el"
+echo "              fichero no este."
+taller="$(montar_banco e13)"
+echo "reporte de la vuelta anterior" > "$taller/docs/loop/REPORTE.md"
+git -C "$taller" add -A >/dev/null 2>&1
+git -C "$taller" commit -q -m "reporte previo" >/dev/null 2>&1
+salida="$(correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la fase ciega corre y lo dice"    "APERTURA CIEGA"              "$salida"
+comprobar "dice que retira el reporte"       "el reporte queda retirado"   "$salida"
+comprobar "sella la apertura"                "apertura ciega sellada"      "$salida"
+comprobar "y verifica el sello despues"      "sello de la apertura ciega verificado" "$salida"
+comprobar "el auditor corre DESPUES"         "VUELTA 1 : AUDITOR"          "$salida"
+
+# LA COMPROBACION QUE IMPORTA: el auditor ciego NO tenia el reporte delante.
+apertura="$(cat "$taller/docs/loop/APERTURA_CIEGA.md" 2>/dev/null || echo AUSENTE)"
+comprobar "el ciego NO vio el reporte"       "el reporte NO estaba"        "$apertura"
+comprobar_no "y no dice lo contrario"        "EL REPORTE ESTABA"           "$apertura"
+
+# Y EL REPORTE VOLVIO a su sitio para el turno normal.
+[ -f "$taller/docs/loop/REPORTE.md" ] \
+  && { echo "    VERDE  el reporte vuelve a su sitio tras sellar"; verdes=$((verdes+1)); } \
+  || { echo "    ROJO   el reporte no volvio"; rojos=$((rojos+1)); }
+
+sellos="$(cat "$taller/docs/loop/SELLOS_APERTURA.jsonl" 2>/dev/null || echo AUSENTE)"
+comprobar "el sello queda en su registro"    '"vuelta": 1'                 "$sellos"
+
+# CASO POSITIVO DEL SELLO: un auditor que reescribe su apertura DESPUES de ver
+# el reporte es exactamente la averia que el sello existe para cazar.
+echo ""
+echo "ESCENARIO 13b: EL CASO POSITIVO DEL SELLO. El auditor reescribe su"
+echo "               apertura ciega DESPUES de ver el reporte."
+taller="$(montar_banco e13b)"
+salida="$(FALSO_ROMPE_SELLO=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "el sello roto se caza"            "SELLO ROTO"                  "$salida"
+comprobar "dice las dos huellas"             "Sellado "                    "$salida"
+comprobar "detiene la corrida"               "DETENIDO en la vuelta 1"     "$salida"
+comprobar "y escribe la parada"              "PARA_ALEXIS.md"              "$salida"
 
 echo ""
 echo "================================================================"

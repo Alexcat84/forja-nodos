@@ -223,6 +223,25 @@ BANDEJAS_DE_ENTRADA = ("cuarentena", "fuentes")
 # falta otro, se añade aqui con su motivo y no se ensancha la regla sola.
 DOC_DE_BANDEJA = "LEEME.md"
 
+# LOS ARTEFACTOS DEL ARNES SON REGISTRO DE MAQUINA, NO PROSA DE ESTA CASA
+# (decision del fundador del 10 sep 2026, D.33). El arnes vuelca el texto del
+# turno en ellos DESPUES del ultimo commit, asi que son la unica escritura del
+# repo que no puede pasar por su propio hook: el turno ya termino.
+#
+# TRES VUELTAS SEGUIDAS los tumbaron, y en la septima el fallo dejo de ser
+# cosmetico: `ultimo_extractor.json` puso en ROJO la prueba de aceptacion
+# entera, porque `test_e_guion_largo_rompe_el_hook` exige un arbol limpio antes
+# de ensuciarlo. Un turno bueno dejaba al siguiente arrancando en rojo.
+#
+# ES COHERENTE CON D.20 Y NO UNA EXCEPCION A ELLA: se barre lo que esta casa
+# ESCRIBE. El mensaje final de un modelo, volcado tal cual por una tuberia, no
+# es prosa de esta casa mas de lo que lo es un capitulo de un libro ajeno.
+#
+# LO QUE NO CAMBIA: el arnes los sigue commiteando en su commit de artefactos,
+# porque son el testigo del turno y la sede autoritativa de su coste. No se
+# barren; se guardan.
+ARTEFACTOS_DE_MAQUINA = ("loop.log", "ultimo_extractor.json", "ultimo_auditor.json")
+
 
 def _es_bandeja(carpeta, raiz):
     """Cierto si la carpeta esta DENTRO de una bandeja de entrada.
@@ -265,6 +284,12 @@ def archivos_del_repo(raiz=None, extensiones=None):
             subcarpetas[:] = [s for s in subcarpetas if not s.startswith(".")]
             continue
         for fichero in ficheros:
+            # Los artefactos del arnes son registro de maquina y no se barren
+            # (D.33). Se comprueba el nombre Y su carpeta: un fichero que se
+            # llame loop.log en otro sitio no es el testigo del arnes.
+            if fichero in ARTEFACTOS_DE_MAQUINA and \
+                    os.path.basename(carpeta) == "loop":
+                continue
             ruta = os.path.join(carpeta, fichero)
             if extensiones is not None:
                 if os.path.splitext(fichero)[1].lower() not in extensiones:

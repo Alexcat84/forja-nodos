@@ -1018,3 +1018,173 @@ reglas, una cifra publicada contradicha, una peticion de mover un umbral o una
 vara, y cualquier decision que sea del fundador. `D.32` acorta el camino entre dos
 lotes; **no acorta ninguna de las condiciones de parada de
 `AUDITOR_FORJA.md` seccion 3.**
+
+## D.33. LOS ARTEFACTOS DEL ARNES SON REGISTRO DE MAQUINA, Y NO SE BARREN (10 sep 2026, decision del fundador)
+
+*Cita: decision 4.3 del fundador del 10 sep 2026, sobre
+`docs/loop/paradas/2026-09-10-credito-punteros-de-linea.md` seccion 4.3.*
+
+    docs/loop/loop.log
+    docs/loop/ultimo_extractor.json
+    docs/loop/ultimo_auditor.json
+
+**EXCLUIDOS del barrido de guiones y del hook.** El arnes los sigue commiteando en
+su commit de artefactos: **no se barren, se guardan.**
+
+**EL MOTIVO MECANICO:** el arnes vuelca el texto del turno en el artefacto
+**despues del ultimo commit**. Son **la unica escritura del repo que no puede
+pasar por su propio hook**, porque cuando se escriben el turno ya termino.
+
+**Y EN LA VUELTA 7 DEJO DE SER COSMETICO.** Tres vueltas seguidas con guiones
+largos dentro, y la tercera sobre `ultimo_extractor.json`:
+
+    $ python forja.py guiones
+      BARRIDO DE GUIONES EN ROJO: 2 hallazgo(s)
+    $ python tests/test_aceptacion.py
+      FAIL: test_e_guion_largo_rompe_el_hook
+      AssertionError: 1 != 0 : el repo ha de estar limpio antes de ensuciarlo
+      total: 65 pruebas, 1 fallos, 0 errores
+
+**Un turno bueno dejaba al siguiente arrancando en rojo**, y la prueba que caia
+era justamente la del hook.
+
+**ES COHERENTE CON `D.20`, NO UNA EXCEPCION A ELLA.** La regla siempre fue **se
+barre lo que esta casa ESCRIBE**. El mensaje final de un modelo, volcado tal cual
+por una tuberia, **no es prosa de esta casa** mas de lo que lo es un capitulo de un
+libro ajeno. La casa escribe el reporte y el acta; la maquina escribe su testigo.
+
+**LA MARCA ES EL NOMBRE Y SU CARPETA**, no el nombre solo: un fichero que se llame
+`loop.log` en otro sitio no es el testigo del arnes.
+
+**PRUEBAS.** En el arnes, **escenario 12**: el claude falso devuelve un mensaje con
+un guion largo, el arnes lo vuelca en el artefacto, **y la vuelta corre entera**;
+con la comprobacion de que el guion **esta de verdad ahi dentro**, porque si no la
+prueba no probaria nada. En la suite, `PruebaBandejas`: los tres artefactos no se
+barren, **y su CASO POSITIVO**, que `docs/loop/ACTA_AUDITOR.md`, en la misma
+carpeta, **si se barre**. Sin ese caso, la exclusion podria haberse tragado
+`docs/loop/` entero.
+
+## D.34. EL REMEDIO ROTO DEL AUDITOR ACUMULA EN RACHA PROPIA, Y LA APERTURA CIEGA PASA A CODIGO (10 sep 2026, decision del fundador)
+
+*Cita: decision 4.4 del fundador del 10 sep 2026.*
+
+### D.34.1. La racha propia
+
+> **Un remedio escrito que el auditor rompe acumula en una RACHA PROPIA, de
+> especie `REMEDIO ROTO`. TRES SEGUIDAS PARAN.**
+
+`AUDITOR_FORJA.md` 5.5 decia que **acumula** y **no decia donde**, y el auditor no
+se lo invento: habria sido doctrina nueva, y eso es parada. Ya hay **tres
+ejemplares, los tres suyos**.
+
+**Se cuenta aparte de la del extractor**, y por la misma razon por la que existen
+especies: **una racha mezclada no dice de quien es el problema.** Y como toda
+racha de esta casa, **no se reinicia sola**: la reinicia una decision escrita del
+fundador en `docs/loop/paradas/`, y el acta lo dice citandola (`AUDITOR_FORJA.md`
+5.4). **Un auditor que pone su propia racha a cero se esta absolviendo.**
+
+### D.34.2. La apertura ciega, en codigo
+
+> **EL ARNES ENTREGA AL AUDITOR LOS CANDIDATOS Y LAS FUENTES, SELLA SUS CLASES, Y
+> SOLO DESPUES LE EXPONE EL REPORTE.**
+
+**POR QUE HIZO FALTA CODIGO, y lo midio el propio auditor.** Durante siete actas
+la apertura ciega fue una promesa, y las siete se rompieron. El ACTA 6 la
+sustituyo por un artefacto, un bloque obligatorio al principio del acta, y el ACTA
+7 escribio su epitafio:
+
+> *"Lo escribi, es lo primero del ACTA 7, y NO evito la contaminacion: solo la
+> hizo visible en la primera pagina en vez de en la cuarta. **EL ARTEFACTO
+> DOCUMENTA, NO IMPIDE.**"*
+
+**LO QUE IMPIDE ES QUE EL FICHERO NO ESTE.** El arnes:
+
+1. **retira `docs/loop/REPORTE.md` del arbol** y lo guarda fuera del repo;
+2. invoca al auditor en **fase ciega**, con los candidatos y las fuentes, y su
+   testigo es `docs/loop/APERTURA_CIEGA.md`;
+3. **comprueba si el reporte reaparecio** durante la fase (recuperarlo de git es
+   la unica via que queda, y es un acto deliberado: se dice, no se calla);
+4. **SELLA** con `git hash-object` en `docs/loop/SELLOS_APERTURA.jsonl` y commitea;
+5. **y solo entonces devuelve el reporte** para el turno normal.
+
+**Y EL SELLO SE VERIFICA AL TERMINAR EL TURNO.** Un sello que nadie comprueba es
+otra promesa: si la clasificacion ciega cambia despues de que el auditor vea el
+reporte, **el arnes lo caza y se detiene** con su `PARA_ALEXIS.md`, nombrando las
+dos huellas.
+
+**LO QUE UN SELLO ROTO SIGNIFICA, y lo que no:** no dice que la clasificacion sea
+falsa ni que el acta este mal. Dice que **esa comparacion, en esa vuelta, no es
+ciega** y por tanto no vale.
+
+**PRUEBAS.** Escenarios **13** y **13b** del arnes. El 13 comprueba que la fase
+corre, que retira el reporte, que sella, que verifica, que el auditor corre
+despues, **que el reporte vuelve a su sitio**, y sobre todo **que el auditor ciego
+no lo tuvo delante**, leido de lo que el propio claude falso escribio. El **13b es
+su caso positivo**: un auditor que reescribe su apertura tras ver el reporte, y el
+sello lo caza, nombra las dos huellas y detiene la corrida.
+
+## D.35. LA CITA DE LINEA LLEVA SU `sed` PEGADO AL LADO (10 sep 2026, decision del fundador)
+
+*Cita: decision 4.1 del fundador del 10 sep 2026. **Con ella se reinicia la racha
+`REPORTE`, que estaba en 3 de 3.***
+
+> **NINGUNA CITA DE LINEA SE TECLEA EN UNA TABLA DEL REPORTE SIN QUE LA SALIDA
+> LITERAL DE `sed -n '<n>p'` O `grep -n` QUEDE PEGADA AL LADO, EN EL PROPIO
+> REPORTE**, aunque sea en una columna estrecha.
+
+**EL EJEMPLAR ES LA VUELTA 7**, y las tres caidas fueron la misma averia: **un
+puntero desplazado exactamente OCHO lineas**, las tres dentro de la seccion
+`SELLING FAMILY` de `fuentes/smart_who/cap_06.md`.
+
+| donde | el reporte cita | el texto vive en | desfase |
+|---|---:|---:|---:|
+| tabla de frontera, fila P5 | L73 | **L81** | **-8** |
+| tabla de puentes, fila 3 | L51 | **L59** | **-8** |
+| tabla de puentes, fila 4 | L57 | **L65** | **-8** |
+
+**LA MAS GRAVE NO ES LA CITA, ES SU CONSECUENCIA.** La tabla declaraba
+`SELLING FAMILY` de L43 a L73 y la seccion corre hasta L81: **L75, L77, L79 y L81
+no aparecen en ninguna de las diecinueve piezas** de una tabla que se anuncia como
+*"las diecinueve piezas del capitulo, en el orden del libro"*. **La frontera tenia
+un hueco de cuatro bloques.**
+
+**POR QUE MECANICO Y NO UNA PROMESA, que es toda la regla.** El remedio anterior
+decia *toda cita de linea se reabre con `sed -n` antes de teclearse*, y se
+rompio. En esta casa **los dos remedios que han funcionado obligan a TECLEAR
+ALGO** (imprimir las claves antes de contar; escribir el cociente antes del
+comparativo) **y los dos que se rompieron eran intenciones.**
+
+> **UN REMEDIO QUE SE CUMPLE ACORDANDOSE NO ES UN REMEDIO.**
+
+**Y NO PIDE MAQUINARIA NUEVA**, que la moratoria prohibe encargar: pide pegar una
+salida que ya se corre.
+
+## D.36. EL ORDEN QUE LEE (10 sep 2026, decision del fundador)
+
+*Cita: decision 4.2 del fundador del 10 sep 2026, al autorizar la insercion de los
+44 candidatos del lote 2.*
+
+> **CUANDO LA ASIMETRIA DE UNA SEÑAL DECIDE SI UN PAR SE LEE O NO, SE INSERTA EN
+> EL ORDEN QUE LO LEE.**
+
+**EL EJEMPLAR, medido por el auditor en la vuelta 7:**
+
+    celebrar_aceptacion_primer_dia -> sostener_contacto_oferta_aceptacion : 0,613  LEVANTA
+    sostener_contacto_oferta_aceptacion -> celebrar_aceptacion_primer_dia : 0,587  NO levanta
+
+**`difflib.SequenceMatcher.ratio()` no es simetrico**, y aqui esa asimetria no
+mueve un decimal: **mueve si el par llega a leerse.** Si `celebrar` entra despues,
+la aduana bloquea y pide veredicto; si entra antes, no lo pide y **el par no se
+lee nunca.**
+
+**LA REGLA ELIGE LA LECTURA.** Entre dos ordenes posibles, el que abre la cola
+gana. **Leer de mas cuesta una lectura; leer de menos cuesta una arista que nadie
+sabra que falta.**
+
+**NO ES UN PARCHE DEL UMBRAL Y NO LO MUEVE.** `D.29` ya dice que la jerarquia la
+caza la lectura y no la señal; **esta regla dice que cuando la señal SI la caza,
+en un solo sentido, se entra por ese sentido.**
+
+**Y NO LO FIJA EL BUCLE:** ni el extractor ni el auditor deciden el orden de
+insercion. **Lo fija quien autoriza la insercion**, que es el fundador (`D.26`),
+con la medida delante.

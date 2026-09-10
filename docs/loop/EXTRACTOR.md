@@ -503,6 +503,35 @@ ciento**.
 tentacion de completarlo no se nota mientras se escribe, y **ninguna guarda la
 nota despues.**
 
+## 15.5. LA CITA DE LINEA LLEVA SU `sed` PEGADO AL LADO
+
+*`D.35` del banco, decision del fundador del 10 sep 2026. Con ella se reinicio la
+racha `REPORTE`, que estaba en 3 de 3.*
+
+> **NINGUNA CITA DE LINEA SE TECLEA EN UNA TABLA DE TU REPORTE SIN QUE LA SALIDA
+> LITERAL DE `sed -n '<n>p'` O `grep -n` QUEDE PEGADA AL LADO**, en el propio
+> reporte, aunque sea en una columna estrecha.
+
+    | pieza | linea | la salida, pegada |
+    |---|---:|---|
+    | P5 | L81 | `81: "...bring them to town..."` |
+
+**EL EJEMPLAR ES LA VUELTA 7 Y COSTO LA PARADA DEL BUCLE.** Tres citas con **el
+mismo desfase de OCHO lineas**, las tres dentro de la misma seccion. Y lo grave no
+fue la cita: la tabla declaraba una seccion de L43 a L73 cuando corria hasta L81,
+asi que **cuatro bloques del capitulo no aparecian en ninguna de las diecinueve
+piezas** de una tabla que se anunciaba completa.
+
+**POR QUE PEGAR LA SALIDA Y NO PROMETER QUE LA MIRASTE.** El remedio anterior era
+*toda cita se reabre con `sed -n` antes de teclearse*, y se rompio. En esta casa
+**los dos remedios que han funcionado obligan a teclear algo**, y **los dos que se
+rompieron eran intenciones.**
+
+> **UN REMEDIO QUE SE CUMPLE ACORDANDOSE NO ES UN REMEDIO.**
+
+**Y NO ES SOLO PARA EL AUDITOR:** la cita pegada es lo que te deja **a ti**
+descubrir el desfase mientras escribes, que es cuando cuesta un segundo.
+
 ## 16. CADA CANDIDATO PASA POR LA ADUANA EN EL MISMO ACTO EN QUE SE ESCRIBE
 
 *Regla madre: decision del fundador del 10 sep 2026, D.23. La aduana NO se

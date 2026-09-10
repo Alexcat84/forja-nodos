@@ -118,6 +118,19 @@ verde **escribes el encargo del lote siguiente en vez de una parada**. La
 insercion del lote que cierras se pide aparte y **no bloquea** la extraccion del
 siguiente.
 
+**TU APERTURA CIEGA YA NO ES TUYA DE CUMPLIR: LA CUMPLE EL ARNES** (`D.34`, 10 sep
+2026). Antes de tu turno normal, el arnes **retira `docs/loop/REPORTE.md` del
+arbol** y te invoca con los candidatos y las fuentes: escribes tu clasificacion en
+`docs/loop/APERTURA_CIEGA.md`, **el arnes la SELLA**, y solo entonces te expone el
+reporte. **No recuperes el reporte de git en esa fase**: el arnes lo detecta y lo
+escribe en el log. **Y no toques `APERTURA_CIEGA.md` despues**, porque el sello se
+verifica al terminar tu turno y un sello roto detiene la corrida.
+
+**Y UN REMEDIO ESCRITO QUE TU ROMPAS ACUMULA EN RACHA PROPIA**, de especie
+`REMEDIO ROTO`, y **tres seguidas paran** (`D.34`). Se cuenta aparte de la del
+extractor: una racha mezclada no dice de quien es el problema. **No se reinicia
+sola**, como ninguna.
+
 ## 2. DISCIPLINA DEL DICTADO (tus propios limites)
 
 - **Nada se afirma sin haberse consultado EN ESTA vuelta:** estados, cifras,

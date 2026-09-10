@@ -1,4 +1,43 @@
-# PARA_ALEXIS.md
+# PARADA DEL 10 SEP 2026: CREDITO ROTO POR PUNTEROS DE LINEA
+
+> ## LAS CINCO DECISIONES DEL FUNDADOR, 10 sep 2026
+>
+> **4.1. LA RACHA `REPORTE` SE REINICIA CON ESTA DECISION.** Y el remedio va al
+> banco como acto mecanico y no como promesa: **ninguna cita de linea se teclea en
+> una TABLA del reporte sin que la salida literal de `sed -n` o `grep -n` quede
+> pegada al lado, en el propio reporte.** El desfase de ocho lineas de la vuelta 7
+> queda como ejemplar de la regla.
+>
+> **4.2. INSERCION AUTORIZADA** de los 44 candidatos de `cuarentena/smart_who/`. Y
+> regla nueva, **EL ORDEN QUE LEE**: cuando la asimetria de una señal decide si un
+> par se lee o no, **se inserta en el orden que lo lee**. `sostener_contacto`
+> antes, `celebrar` despues, **y el par pide su veredicto**.
+>
+> **4.3. LOS ARTEFACTOS DEL ARNES** (`loop.log`, `ultimo_extractor.json`,
+> `ultimo_auditor.json`) **son registro de maquina: EXCLUIDOS del barrido de
+> guiones y del hook**, coherente con `D.20`. El arnes los sigue commiteando en su
+> commit de artefactos.
+>
+> **4.4. EL REMEDIO ROTO DEL AUDITOR ACUMULA EN RACHA PROPIA**, especie **REMEDIO
+> ROTO**, y **tres seguidas paran**. Y **LA APERTURA CIEGA PASA A CODIGO**: el
+> arnes entrega al auditor candidatos y fuentes, **sella sus clases**, y **solo
+> despues le expone el reporte**.
+>
+> **4.5. `who` ENTRA EN `INGLES_CON_EQUIVALENTE`.** Y **la A de *jugador A* no
+> sobrevive en el id: la regla vigente se sostiene.** El borde `cap_06`/`cap_07`
+> **no se toca: se lee como unidad y se declara.**
+
+> **ARCHIVADA.** Este fichero fue `docs/loop/PARA_ALEXIS.md` hasta que el fundador
+> resolvio lo que pedia. **Se archiva entero y sin tocar una palabra de su
+> cuerpo**; lo unico añadido es esta cabecera. El bucle ya no esta detenido por el:
+> vive en `docs/loop/paradas/` y el arnes solo mira `docs/loop/PARA_ALEXIS.md`.
+>
+> **Lo ejecutado, con su commit:** las cinco en `docs/BANCO_DE_REGLAS.md` D.33 a
+> D.36, el arnes y las listas en el commit de doctrina, y la insercion de los 44 en
+> el suyo.
+
+---
+
 
 > **PARADA DEL BUCLE DEL EXTRACTOR, escrita por el auditor al cerrar la VUELTA 7.**
 > **Fecha: 2026-09-10**, leida del instrumento (`date`, `datetime.date.today()` y

@@ -982,7 +982,9 @@ class PruebaBandejas(BaseForja):
     """
 
     def _arbol(self, raiz):
-        for pieza in ("cuarentena/LEEME.md", "cuarentena/un_lote/candidato.json",
+        for pieza in ("docs/loop/loop.log", "docs/loop/ultimo_extractor.json",
+                      "docs/loop/ultimo_auditor.json", "docs/loop/ACTA_AUDITOR.md",
+                      "cuarentena/LEEME.md", "cuarentena/un_lote/candidato.json",
                       "cuarentena/un_lote/LEEME.md",
                       "cuarentena/_insertados/un_lote/LEEME.md",
                       "cuarentena/_insertados/un_lote/entrado.json",
@@ -1013,6 +1015,17 @@ class PruebaBandejas(BaseForja):
             # vivir en una carpeta que se salta.
             self.assertIn("cuarentena/un_lote/LEEME.md", barridos)
             self.assertIn("cuarentena/_insertados/un_lote/LEEME.md", barridos)
+            # LOS ARTEFACTOS DEL ARNES NO SE BARREN (D.33): son registro de
+            # maquina, y el arnes los escribe DESPUES del ultimo commit, asi
+            # que son la unica escritura del repo que no pasa por su hook. En
+            # la vuelta 7 un guion largo dentro de ultimo_extractor.json puso
+            # en rojo la prueba de aceptacion entera.
+            for artefacto in ("docs/loop/loop.log", "docs/loop/ultimo_extractor.json",
+                              "docs/loop/ultimo_auditor.json"):
+                self.assertNotIn(artefacto, barridos)
+            # CASO POSITIVO: la prosa del auditor, en la MISMA carpeta, SI se
+            # barre. Sin esto, la exclusion podria haberse tragado docs/loop/.
+            self.assertIn("docs/loop/ACTA_AUDITOR.md", barridos)
         finally:
             shutil.rmtree(taller, ignore_errors=True)
 

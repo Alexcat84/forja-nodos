@@ -319,6 +319,114 @@ fi
 
 PROMPT_EXTRACTOR="Estas en el repo forja-nodos. Lee docs/loop/EXTRACTOR.md (tus reglas permanentes) y despues docs/loop/PROMPT_SIGUIENTE.md (tu encargo). Ejecuta el encargo al pie de la letra. $MANDATO_INSERCION Abre docs/loop/REPORTE.md al empezar y hazlo crecer por anexion, con los discutibles marcados antes de saber si aciertas. Commitea y pushea TODO a la rama activa antes de terminar."
 
+# ---------------------------------------------------------------------------
+# LA APERTURA CIEGA, EN CODIGO (D.34, decision del fundador del 10 sep 2026).
+#
+# El auditor tiene que clasificar el material ANTES de leer el reporte del
+# extractor, o su relectura no es ciega. Durante siete actas eso fue una
+# PROMESA, y las siete se rompieron. El ACTA 6 la sustituyo por un artefacto
+# (un bloque "LO QUE HE LEIDO HASTA AQUI" al principio del acta) y el propio
+# auditor midio el resultado en el ACTA 7:
+#
+#     "Lo escribi, es lo primero del ACTA 7, y NO evito la contaminacion:
+#      solo la hizo visible en la primera pagina en vez de en la cuarta.
+#      EL ARTEFACTO DOCUMENTA, NO IMPIDE."
+#
+# LO QUE IMPIDE ES QUE EL FICHERO NO ESTE. La fase ciega RETIRA
+# docs/loop/REPORTE.md del arbol, invoca al auditor con el material y sin el
+# reporte, SELLA lo que escribio, y solo entonces devuelve el reporte.
+#
+# Y EL SELLO SE COMPRUEBA DESPUES DEL TURNO NORMAL. Un sello que nadie verifica
+# es otra promesa: si la clasificacion ciega cambia despues de que el auditor
+# vea el reporte, el arnes lo caza y se detiene.
+# ---------------------------------------------------------------------------
+APERTURA="$LOOP/APERTURA_CIEGA.md"
+SELLOS="$LOOP/SELLOS_APERTURA.jsonl"
+
+PROMPT_APERTURA_CIEGA="Estas en el repo forja-nodos, en la APERTURA CIEGA de tu turno de auditor. Lee docs/loop/AUDITOR_FORJA.md entero. AVISO: docs/loop/REPORTE.md NO ESTA en el arbol ahora mismo, y no esta a proposito. NO lo recuperes de git ni por ninguna otra via: recuperarlo invalida tu propia apertura y el arnes lo detecta. Tu trabajo AHORA es clasificar el material por ti mismo y a ciegas: abre los candidatos del lote en cuarentena/, abre el texto fuente en fuentes/, y escribe en docs/loop/APERTURA_CIEGA.md tu clasificacion de cada candidato y de cada pieza que leas, con las lineas que la sostienen. Es la lectura que despues vas a comparar con la del extractor. Cuando termines, NO commitees: el arnes sella tu fichero y lo commitea el. Despues, en tu turno normal, recibiras el reporte."
+
+apertura_ciega() { # $1 = vuelta
+  local vuelta="$1" refugio="" sello fecha
+  rm -f "$APERTURA"
+  refugio="$(mktemp -d)"
+  if [ -f "$LOOP/REPORTE.md" ]; then
+    mv "$LOOP/REPORTE.md" "$refugio/REPORTE.md"
+  fi
+
+  log "VUELTA $vuelta : APERTURA CIEGA ($MODELO_AUDITOR), el reporte queda retirado"
+  invocar_claude "auditor ciego" "$MODELO_AUDITOR" \
+    "$PROMPT_APERTURA_CIEGA" \
+    "$LOOP/ultimo_apertura.json" "$vuelta" "$APERTURA"
+
+  # ¿REAPARECIO EL REPORTE DURANTE LA FASE CIEGA? Recuperarlo de git es la
+  # unica via que queda, y es un acto deliberado. Se dice, no se calla.
+  if [ -f "$LOOP/REPORTE.md" ]; then
+    log "APERTURA CIEGA ROTA en la vuelta $vuelta: docs/loop/REPORTE.md REAPARECIO"
+    log "  durante la fase ciega. Solo se recupera a mano, asi que fue deliberado."
+    rm -f "$LOOP/REPORTE.md"
+  fi
+
+  # EL SELLO. git hash-object da la misma huella que usa el testigo, asi que no
+  # hay dos formas de medir lo mismo en este fichero.
+  sello="$(git hash-object "$APERTURA" 2>/dev/null || echo sin-sello)"
+  fecha="$(date '+%Y-%m-%d %H:%M:%S')"
+  printf '{"vuelta": %s, "fecha": "%s", "sello": "%s"}\n' \
+    "$vuelta" "$fecha" "$sello" >> "$SELLOS"
+  git add "$APERTURA" "$SELLOS" >>"$LOOP/loop.log" 2>&1
+  git commit -q -m "Apertura ciega de la vuelta $vuelta, sellada antes de exponer el reporte" \
+    >>"$LOOP/loop.log" 2>&1
+  log "  apertura ciega sellada: $sello"
+
+  # Y AHORA, Y SOLO AHORA, SE LE EXPONE EL REPORTE.
+  if [ -f "$refugio/REPORTE.md" ]; then
+    mv "$refugio/REPORTE.md" "$LOOP/REPORTE.md"
+  fi
+  rm -rf "$refugio"
+}
+
+verificar_sello() { # $1 = vuelta. Cierto si la apertura ciega sigue siendo la sellada.
+  local vuelta="$1" sello_actual sello_guardado
+  [ -f "$APERTURA" ] || return 0
+  sello_actual="$(git hash-object "$APERTURA" 2>/dev/null || echo sin-sello)"
+  sello_guardado="$(grep -o '"sello": "[^"]*"' "$SELLOS" 2>/dev/null | tail -1 \
+    | sed 's/.*"sello": "//; s/"$//')"
+  [ -z "$sello_guardado" ] && return 0
+  if [ "$sello_actual" != "$sello_guardado" ]; then
+    log "SELLO ROTO en la vuelta $vuelta: docs/loop/APERTURA_CIEGA.md cambio DESPUES"
+    log "  de exponerse el reporte. Sellado $sello_guardado, ahora $sello_actual."
+    para_alexis_por_sello "$vuelta" "$sello_guardado" "$sello_actual"
+    return 1
+  fi
+  log "  sello de la apertura ciega verificado: intacto tras el turno"
+  return 0
+}
+
+para_alexis_por_sello() { # vuelta sellado actual
+  cat > "$LOOP/PARA_ALEXIS.md" <<EOF
+# PARA_ALEXIS: la apertura ciega se modifico despues de ver el reporte
+
+La vuelta $1 sello docs/loop/APERTURA_CIEGA.md ANTES de exponerle el reporte al
+auditor, y al terminar su turno el fichero ya no es el sellado.
+
+    sellado antes de exponer el reporte : $2
+    medido al terminar el turno         : $3
+
+QUE SIGNIFICA. La apertura ciega existe para que la clasificacion del auditor se
+escriba SIN el reporte delante (D.34). Si se reescribe despues, deja de ser
+ciega y deja de servir para comparar dos lecturas independientes: es la misma
+averia que la promesa rota, con un fichero por testigo.
+
+QUE NO SIGNIFICA. No dice que la clasificacion sea falsa, ni que el acta este
+mal. Dice que ESA comparacion, en ESTA vuelta, no vale.
+
+Estado: rama $RAMA, hash $(git rev-parse --short HEAD 2>/dev/null || echo desconocido).
+
+Como retomar: decide si la vuelta se repite con apertura ciega limpia o si se
+acepta el acta declarando que su comparacion no es ciega. Borra este fichero
+cuando lo hayas decidido.
+EOF
+}
+
 PROMPT_AUDITOR="Estas en el repo forja-nodos. Lee docs/loop/AUDITOR_FORJA.md entero y actua como el auditor: verifica docs/loop/REPORTE.md contra el repo con tus propios comandos (python forja.py gate, python forja.py guiones, python tests/test_aceptacion.py y tu propio conteo del dataset), haz la relectura ciega empezando por los discutibles marcados, adjudica lo adjudicable, registra tu acta en docs/loop/ACTA_AUDITOR.md apendiendo, y escribe el encargo siguiente completo en docs/loop/PROMPT_SIGUIENTE.md. Si se cumple una condicion de parada de AUDITOR_FORJA.md, escribe docs/loop/PARA_ALEXIS.md con el motivo y el estado, y deja PROMPT_SIGUIENTE.md vacio. Commitea y pushea docs/loop/ antes de terminar."
 
 comprobar_arranque
@@ -352,10 +460,17 @@ for i in $(seq 1 "$MAX_VUELTAS"); do
     git pull --rebase origin "$RAMA" >/dev/null 2>&1 || true
   fi
 
+  apertura_ciega "$i"
+
   log "VUELTA $i : AUDITOR ($MODELO_AUDITOR)"
   invocar_claude "auditor" "$MODELO_AUDITOR" \
     "$PROMPT_AUDITOR" \
     "$LOOP/ultimo_auditor.json" "$i" "$LOOP/ACTA_AUDITOR.md"
+
+  if ! verificar_sello "$i"; then
+    log "DETENIDO en la vuelta $i: sello de la apertura ciega roto. Ver $LOOP/PARA_ALEXIS.md"
+    exit 1
+  fi
 
   git pull --rebase origin "$RAMA" >/dev/null 2>&1 || true
 done
