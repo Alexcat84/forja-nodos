@@ -983,6 +983,9 @@ class PruebaBandejas(BaseForja):
 
     def _arbol(self, raiz):
         for pieza in ("cuarentena/LEEME.md", "cuarentena/un_lote/candidato.json",
+                      "cuarentena/un_lote/LEEME.md",
+                      "cuarentena/_insertados/un_lote/LEEME.md",
+                      "cuarentena/_insertados/un_lote/entrado.json",
                       "fuentes/FUENTES_CANONICAS.json", "fuentes/un_libro/cap_01.md",
                       "docs/UN_DOC.md"):
             ruta = os.path.join(raiz, *pieza.split("/"))
@@ -1003,6 +1006,13 @@ class PruebaBandejas(BaseForja):
             # EL MATERIAL AJENO NO, aunque este lleno de guiones prohibidos.
             self.assertNotIn("cuarentena/un_lote/candidato.json", barridos)
             self.assertNotIn("fuentes/un_libro/cap_01.md", barridos)
+            self.assertNotIn("cuarentena/_insertados/un_lote/entrado.json", barridos)
+            # Y EL LEEME DE UN LOTE SI, ESTE DONDE ESTE (D.31): es doctrina de
+            # esta casa, viaja en git, y sin esto D.20 tendria una grieta con
+            # forma de excusa, un documento propio librandose de la regla por
+            # vivir en una carpeta que se salta.
+            self.assertIn("cuarentena/un_lote/LEEME.md", barridos)
+            self.assertIn("cuarentena/_insertados/un_lote/LEEME.md", barridos)
         finally:
             shutil.rmtree(taller, ignore_errors=True)
 
@@ -1217,12 +1227,71 @@ class PruebaAristaDeclarada(BaseForja):
                          ["redactar_codigo_comercializacion"])
 
 
+class PruebaArchivoDeInsertados(BaseForja):
+    """D.31: un candidato insertado se archiva, y el informe deja de contarlo.
+
+    UN CANDIDATO INSERTADO NO SE BORRA: su fichero es el registro de COMO entro.
+    Pero deja de ser un candidato, y si el informe lo siguiera contando diria
+    CAERIA sobre un nodo que entro bien: un lote recien insertado se leeria como
+    un lote entero rechazado.
+    """
+
+    def _lote(self, carpeta):
+        ruta = os.path.join(self.taller, *carpeta.split("/"))
+        os.makedirs(ruta)
+        for identificador in ("sanear_grafo", "podar_ramas"):
+            with io.open(os.path.join(ruta, "%s.json" % identificador),
+                         "w", encoding="utf-8") as fichero:
+                json.dump(nodo_base(identificador), fichero, ensure_ascii=False)
+        return ruta
+
+    def test_la_carpeta_archivada_no_se_cuenta(self):
+        ruta = self._lote("cuarentena/_insertados/un_libro")
+        codigo, salida = self.forja("informe", "--carpeta", ruta)
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("2 ficheros ARCHIVADOS", salida)
+        self.assertNotIn("EL SALDO", salida)
+
+    def test_caso_positivo_la_misma_carpeta_sin_archivar_si_se_cuenta(self):
+        """Sin esto, la prueba de arriba solo probaria que el informe calla."""
+        ruta = self._lote("cuarentena/un_libro")
+        codigo, salida = self.forja("informe", "--carpeta", ruta)
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("candidatos revisados        : 2", salida)
+        self.assertIn("EL SALDO", salida)
+
+    def test_un_lote_mezclado_declara_cuantos_no_conto(self):
+        """Lo peligroso no es no contarlos: es no contarlos EN SILENCIO."""
+        from src import informe
+        vivos = self._lote("cuarentena/un_libro")
+        archivados = self._lote("cuarentena/_insertados/un_libro")
+        rutas = ([os.path.join(vivos, f) for f in sorted(os.listdir(vivos))]
+                 + [os.path.join(archivados, f) for f in sorted(os.listdir(archivados))])
+        dictamenes, cuantos, umbrales, fuera = informe.revisar(
+            rutas, ruta_dataset=self.dataset,
+            tabla_fuentes=comun.leer_json(self.fuentes_tabla))
+        self.assertEqual(len(dictamenes), 2)
+        self.assertEqual(len(fuera), 2)
+        texto = informe.texto_informe(dictamenes, cuantos, umbrales, archivados=fuera)
+        self.assertIn("archivados, NO contados     : 2", texto)
+
+    def test_la_marca_es_el_segmento_de_ruta_no_el_nombre(self):
+        from src import informe
+        self.assertTrue(informe.esta_archivado("cuarentena/_insertados/libro/x.json"))
+        self.assertTrue(informe.esta_archivado(
+            "cuarentena" + os.sep + "_insertados" + os.sep + "libro" + os.sep + "x.json"))
+        # CASO POSITIVO: un fichero que solo SE LLAMA asi no esta archivado.
+        self.assertFalse(informe.esta_archivado("cuarentena/libro/_insertados.json"))
+        self.assertFalse(informe.esta_archivado("cuarentena/libro/x.json"))
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
              PruebaGate, PruebaMutuo, PruebaCitaDeLinea, PruebaVigencia,
              PruebaNoAplica, PruebaDeprecado, PruebaResolutor,
-             PruebaBandejas, PruebaReglasDeId, PruebaAristaDeclarada]
+             PruebaBandejas, PruebaReglasDeId, PruebaAristaDeclarada,
+             PruebaArchivoDeInsertados]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -1251,6 +1320,8 @@ def main():
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaReglasDeId)._tests))
     print("  D.29, la arista que la señal no levanta se declara por lectura: "
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaAristaDeclarada)._tests))
+    print("  D.31, el candidato insertado se archiva y el informe no lo cuenta: "
+          "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaArchivoDeInsertados)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

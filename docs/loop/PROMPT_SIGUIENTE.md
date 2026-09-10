@@ -1,4 +1,4 @@
-# ENCARGO DEL LOTE 2: `smart_who`, 7 capitulos
+# ENCARGO DEL LOTE 2: `smart_who`, 7 capitulos, DOS POR VUELTA
 
 *Escrito por **Alexis** el 10 sep 2026, con el `docs/CIERRE_LOTE_1.md` delante.
 `docs/loop/PROMPT_SIGUIENTE.md` es sede del auditor en el curso normal
@@ -95,18 +95,60 @@ sea delgado, **desconfia de tus propios pasos.**
 **`smart_who` son 7 capitulos y 44.324 palabras: veinticinco veces el lote 1.**
 Sus capitulos promedian **6.332 palabras**, contra las 439 de `onu_consumidor`.
 
-> **UN CAPITULO DE ESTE LIBRO NO ES UN APARTADO DE LA ONU, Y PUEDE NO CABER EN UNA
-> VUELTA.** No es un fallo tuyo si no cabe: es la primera vez que esta casa mide un
-> capitulo de verdad.
+> **UN CAPITULO DE ESTE LIBRO NO ES UN APARTADO DE LA ONU.** No es un fallo tuyo
+> si el segundo no cabe: es la primera vez que esta casa mide un capitulo de
+> verdad, y la vuelta se dimensiono sin ese dato.
 
-- **UN CAPITULO POR VUELTA**, y si no cabe, **la mitad que hiciste queda cerrada y
-  lo dices**: reporte parcial, nunca vacio.
-- **TRAMO: entre cinco y quince candidatos por vuelta** (seccion 12). Si un
-  capitulo da mas, se parte y se dice donde.
+- **DOS CAPITULOS POR VUELTA** *(decision del fundador, 10 sep 2026)*. El lote 1
+  corrio a uno; este sube a dos, y el lote 3 se decide con la cifra que dejes
+  (ver **la regla de volumen** mas abajo).
+- **Y LOS DOS CAPITULOS NO SE MEZCLAN NUNCA.** Ver **la unidad atomica**, que es
+  la parte de esta decision que no se puede negociar.
+- **Si el segundo no cabe, cierras el primero entero y lo dices**: reporte
+  parcial, nunca vacio. **Un capitulo cerrado vale mas que dos a medias.**
+- **TRAMO: entre cinco y quince candidatos por vuelta** (seccion 12). Si el
+  primer capitulo ya llena el tramo, **el segundo no se empieza**, y eso no es un
+  fallo: es el tramo funcionando.
 - **UN COMMIT POR CAPITULO** (seccion 17), con los JSON dentro, y el mensaje dice
-  que capitulo y cuantos candidatos.
+  que capitulo y cuantos candidatos. **Dos capitulos son DOS commits.**
 - **AL CERRAR CADA CAPITULO:** `python forja.py informe --carpeta cuarentena/smart_who`
   y pegas el saldo.
+
+### LA UNIDAD ATOMICA ES EL CAPITULO, y de esto depende la medida
+
+> **CADA CAPITULO SE LEE Y SE CORRIGE ENTERO, DE PRINCIPIO A FIN, ANTES DE ABRIR
+> EL SIGUIENTE. NUNCA LOS DOS JUNTOS.**
+
+Es decir: frontera del `cap_N`, candidatos del `cap_N`, relectura de fidelidad del
+`cap_N`, informe del `cap_N`, **commit del `cap_N`**. Y solo entonces el `cap_N+1`.
+
+**LAS DOS RAZONES, y la segunda es la que manda:**
+
+1. **Un capitulo cerrado sobrevive a que la vuelta se corte.** Dos a medias no
+   dejan ninguno.
+2. **LA CIFRA QUE ESTA VUELTA EXISTE PARA MEDIR ES POR CAPITULO.** Si lees los
+   dos juntos y corriges al final, ya no sabes cual de los dos produjo cada
+   puente, **y la medida se pierde para siempre**: no se puede reconstruir
+   despues. Mezclarlos no es ir mas rapido, es correr la vuelta sin su
+   instrumento.
+
+### LA REGLA DE VOLUMEN, que decide el lote 3
+
+*Decision del fundador, 10 sep 2026.* **El auditor publica en cada acta la cifra
+`PASOS INVENTADOS POR CAPITULO`**, y de ella sale el tamaño del lote siguiente:
+
+| lo que mida este lote | el lote 3 corre a |
+|---|---|
+| **se mantiene o baja** respecto al **36 por ciento** del lote 1 | **TRES capitulos por vuelta** |
+| **sube** respecto al 36 por ciento | **UNO. El techo baja** |
+
+**LA CIFRA ES POR CAPITULO Y NO POR VUELTA, y por eso la unidad atomica no es un
+capricho:** una media de vuelta esconderia un capitulo limpio detras de uno malo.
+**La escalada se decide sobre el peor capitulo, no sobre el promedio.**
+
+**TU TRABAJO CON ESTO ES DAR EL DATO LIMPIO, no el resultado que te gustaria.**
+Cuenta tus puentes por capitulo y publicalos aunque salgan altos: **una cifra
+maquillada aqui no te ahorra una vuelta, te cuesta el lote 3.**
 
 ---
 
@@ -115,6 +157,9 @@ Sus capitulos promedian **6.332 palabras**, contra las 439 de `onu_consumidor`.
 **Tope de cinco. Estas son cuatro.**
 
 ### TAREA 1. La ficha del libro y la frontera del `cap_01`
+
+*Las tareas 1 a 3 se hacen ENTERAS sobre `cap_01`, y despues se repiten sobre
+`cap_02`. No hay una tarea que abarque los dos.*
 
 Lee `cap_01.md` entero. En el reporte: **la ficha bibliografica que encuentres**
 (titulo, autor, edicion, año), **que hay dentro, que es procedimiento y que no,
@@ -132,20 +177,33 @@ puente**, con el parrafo citado en cada puente.
 **Esa cifra es el dato que este lote existe para medir:** si baja del 36 por
 ciento del lote 1, la regla `D.30` esta funcionando; si no baja, hay que saberlo.
 
-### TAREA 3. El informe del lote y el commit del capitulo
+### TAREA 3. El informe y el commit del capitulo, y despues el `cap_02`
 
     python forja.py informe --carpeta cuarentena/smart_who
 
-Pegas el saldo entero. **NO INSERTAS NADA:** el arnes arranca en
-`MODO_INSERCION=cuarentena` y **la insercion es una autorizacion del fundador, no
-un default** (`D.26`).
+Pegas el saldo entero y **commiteas el capitulo**. **Y entonces, si queda tramo,
+repites las tareas 1 a 3 sobre `cap_02`**, con su propia frontera, sus propios
+candidatos, su propia relectura y su propio commit.
 
-### TAREA 4. Las cuatro medidas del cierre
+**NO INSERTAS NADA:** el arnes arranca en `MODO_INSERCION=cuarentena` y **la
+insercion es una autorizacion del fundador, no un default** (`D.26`). **La
+insercion del lote 2 se autoriza cuando el fundador lea su informe**, igual que
+paso con el lote 1.
 
-Para que el lote 2 se pueda comparar con el 1, deja escritas las mismas cuatro:
-**candidatos por mil palabras**, **pasos inventados sobre pasos escritos**,
-**veredictos escritos**, y **cuanto tardo la vuelta y si el tramo fue el
-correcto.**
+### TAREA 4. Las cuatro medidas del cierre, DESGLOSADAS POR CAPITULO
+
+Para que el lote 2 se pueda comparar con el 1 (`CALIBRACION_D4.md` seccion 9),
+deja escritas las mismas cuatro, **y las dos primeras con una fila por capitulo**:
+
+| medida | como la das |
+|---|---|
+| **candidatos por mil palabras** | **una fila por capitulo**, mas el total |
+| **pasos inventados sobre pasos escritos** | **una fila por capitulo.** Es la cifra de la regla de volumen |
+| **veredictos escritos** | del lote |
+| **cuanto tardo y si el tramo fue el correcto** | de la vuelta, diciendo si el segundo capitulo cupo |
+
+**Si solo hiciste un capitulo, la tabla lleva una fila y lo dices.** Una fila
+honesta vale mas que dos inventadas.
 
 ---
 
@@ -153,8 +211,9 @@ correcto.**
 
 1. **La tasa de puentes con la relectura dentro del acto.** Es la comprobacion de
    `D.30`.
-2. **Si un capitulo de 6.000 palabras cabe en una vuelta**, y si no, donde se
-   partio.
+2. **Si DOS capitulos de 6.000 palabras caben en una vuelta**, y si no, cual de
+   los dos quedo entero y donde se paro. **Es el dato que dimensiona el lote 3
+   junto con la cifra de puentes.**
 3. **Cuantos vecinos levanta la aduana ahora que el grafo tiene ocho nodos**, y si
    alguno pidio veredicto. **Es la primera vez que esta casa tiene grafo con el
    que chocar.**

@@ -80,7 +80,7 @@ def main(argumentos=None):
     sys.stdout.flush()
 
     arranque = time.time()
-    dictamenes, cuantos_nodos, umbrales = informe.revisar(
+    dictamenes, cuantos_nodos, umbrales, _archivados = informe.revisar(
         elegidos, ruta_dataset=grafo, tabla_fuentes=comun.leer_json(tabla))
 
     colas = []

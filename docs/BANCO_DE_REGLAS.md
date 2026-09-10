@@ -900,3 +900,55 @@ caso de cuatro de los seis candidatos del lote 1.**
 una guarda que la automatice, eso es maquinaria y cae bajo la moratoria: **el
 texto fuente no esta en el repo** (`.gitignore`, bandeja (a)), y una guarda que no
 tiene el libro no puede juzgar fidelidad al libro.
+
+## D.31. UN CANDIDATO INSERTADO SE ARCHIVA EN `_insertados` CON SU COMMIT DE INSERCION (10 sep 2026, decision del fundador)
+
+*Cita: decision del fundador del 10 sep 2026, al cerrar el lote 1 y sacar sus
+seis candidatos de la bandeja.*
+
+> **NADA SE BORRA: EL FICHERO DE CUARENTENA ES EL REGISTRO DE COMO ENTRO.**
+
+    cuarentena/<libro>/<id>.json          ->   candidato, espera juicio
+    cuarentena/_insertados/<libro>/<id>.json  ->  ya vive en el grafo
+
+**POR QUE NO SE BORRA.** El nodo que vive en `dataset/nodos.jsonl` es el nodo
+**despues** de la aduana: normalizado, con sus aristas cableadas y resueltas. El
+fichero de cuarentena es el nodo **antes**. La diferencia entre los dos es lo
+unico que dice **que le hizo la puerta al entrar**, y ese dato no se puede
+reconstruir desde ningun otro sitio. **Vale mas cuanto mas viejo es.**
+
+**POR QUE SE MUEVE, EN VEZ DE DEJARLO DONDE ESTABA.** Porque deja de ser un
+candidato, y el informe lo contaba. Un candidato insertado que sigue en la
+bandeja da `CAERIA: el id ya vive en el grafo`, que es cierto y es **la mentira
+mas fea posible sobre un lote**: un lote recien insertado se leeria como un lote
+entero rechazado, y la cifra que el fundador lee antes de autorizar la siguiente
+insercion estaria envenenada por sus propios aciertos.
+
+**Y CON SU COMMIT DE INSERCION.** Un `LEEME.md` en la carpeta del lote archivado
+nombra cada candidato con **el commit que lo metio** y su veredicto. Sin esa
+linea, saber cuando entro un nodo obliga a buscar en el historico de un fichero
+que ya no cambia.
+
+| | |
+|---|---|
+| **el archivo VIAJA en git** | es registro, no material de entrada. `.gitignore` no lo toca (`D.25`) |
+| **el barrido de guiones NO entra** | sigue colgando de `cuarentena/`, que es bandeja: se barre lo que esta casa escribe (`D.20`) |
+| **el `LEEME.md` del lote SI se barre** | lo escribe esta casa |
+
+**LA MARCA ES EL SEGMENTO DE RUTA, NO EL NOMBRE DEL FICHERO.** `esta_archivado()`
+parte la ruta y busca el segmento `_insertados`: un fichero que solo **se llame**
+asi no esta archivado. Con su caso positivo en `PruebaArchivoDeInsertados`.
+
+**Y EL RECORTE SE DECLARA, NUNCA SE APLICA EN SILENCIO** (la regla de siempre en
+esta casa): un informe sobre un lote mezclado imprime `archivados, NO contados`
+con su cifra, y un informe sobre una carpeta entera archivada lo dice y no
+imprime saldo. **No contar en silencio es lo mismo que contar mal.**
+
+**LO QUE NO SE HACE CON UN ARCHIVADO:** no se reinserta (la aduana lo rechaza por
+`el id ya vive en el grafo`, y hace bien) y **no se edita**. Un registro que se
+retoca deja de ser un registro.
+
+**Cuatro pruebas** (`PruebaArchivoDeInsertados`): la carpeta archivada no se
+cuenta; **su caso positivo**, la misma carpeta sin archivar si se cuenta, porque
+si no la primera solo probaria que el informe calla; un lote mezclado declara
+cuantos no conto; y la marca es el segmento y no el nombre.

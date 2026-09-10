@@ -79,7 +79,7 @@ def main(argumentos=None):
                 json.dump(ref.nodos[identificador], f, ensure_ascii=False)
             rutas.append(ruta)
 
-        dictamenes, cuantos_nodos, umbrales = informe.revisar(
+        dictamenes, cuantos_nodos, umbrales, _archivados = informe.revisar(
             rutas, ruta_dataset=dataset,
             tabla_fuentes=comun.leer_json(tabla))
     finally:

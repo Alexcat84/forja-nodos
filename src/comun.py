@@ -218,6 +218,11 @@ def huella_de_texto(texto):
 # (docs/ESTRENO_DE_LA_ADUANA.md).
 BANDEJAS_DE_ENTRADA = ("cuarentena", "fuentes")
 
+# El unico documento que esta casa escribe DENTRO de una bandeja, y por eso
+# el unico que se barre ahi. Un nombre fijo, no un patron: si mañana hace
+# falta otro, se añade aqui con su motivo y no se ensancha la regla sola.
+DOC_DE_BANDEJA = "LEEME.md"
+
 
 def _es_bandeja(carpeta, raiz):
     """Cierto si la carpeta esta DENTRO de una bandeja de entrada.
@@ -242,7 +247,22 @@ def archivos_del_repo(raiz=None, extensiones=None):
     for carpeta, subcarpetas, ficheros in os.walk(raiz):
         subcarpetas[:] = [s for s in subcarpetas if s not in saltar]
         if _es_bandeja(carpeta, raiz):
-            subcarpetas[:] = []
+            # DENTRO DE UNA BANDEJA SOLO SE BARRE LO QUE ESTA CASA ESCRIBE, y
+            # eso tiene un nombre fijo: LEEME.md. Un lote archivado lleva el
+            # suyo con el commit de insercion de cada candidato (D.31), es
+            # doctrina de esta casa, viaja en git, y obedece la regla como
+            # cualquier otro documento. El material ajeno que lo rodea, no.
+            #
+            # SIN ESTA LINEA, D.20 tendria una grieta con forma de excusa: un
+            # documento propio escaparia de la regla por vivir en una carpeta
+            # que se salta. Se barre lo que esta casa escribe, ESTE DONDE ESTE.
+            for fichero in ficheros:
+                if fichero == DOC_DE_BANDEJA:
+                    ruta = os.path.join(carpeta, fichero)
+                    if extensiones is None or \
+                            os.path.splitext(fichero)[1].lower() in extensiones:
+                        encontrados.append(ruta)
+            subcarpetas[:] = [s for s in subcarpetas if not s.startswith(".")]
             continue
         for fichero in ficheros:
             ruta = os.path.join(carpeta, fichero)

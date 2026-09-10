@@ -18,6 +18,11 @@ para que cualquier umbral se pueda re evaluar sin volver a medir.
 
 ---
 
+> **AMPLIADA EL 10 sep 2026 con la SECCION 9, `LOTE 1`**, que calibra algo que
+> las ocho primeras no podian: **el trabajo de extraer**, medido sobre el primer
+> lote real. Las secciones 1 a 8 calibraron las señales contra un catalogo ya
+> hecho; la 9 calibra la mano que escribe.
+
 ## 1. LO QUE D.4 EXIGIA, Y DONDE ESTA CADA COSA
 
 | lo que pedia la cosecha seccion 4 | donde esta |
@@ -338,3 +343,81 @@ ajeno en silencio no es normalizar forma: es editar.
 
 **3. SI LOS LOTES DE CUARENTENA VIAJAN EN EL REPO.** Hoy `cuarentena/*/` esta
 ignorada. Detalle y motivo en `cuarentena/LEEME.md`.
+
+---
+
+## 9. LOTE 1: LA CALIBRACION CONTRA TRABAJO DE VERDAD (10 sep 2026)
+
+**Las secciones 1 a 8 calibraron las señales contra un catalogo YA HECHO.** Esta
+calibra otra cosa: **el trabajo de extraer**, medido sobre el primer lote real de
+esta casa, `onu_consumidor` (`D.24`, lote de calibracion).
+
+> **Cuenta entera en `docs/CIERRE_LOTE_1.md`.** Aqui van las cifras, que es donde
+> las busca quien vuelva a calibrar.
+
+### 9.1. Las cuatro medidas
+
+| medida | cifra del lote 1 | como se conto |
+|---|---|---|
+| **candidatos por mil palabras** | **4,97** sobre palabra minada; **3,42** sobre libro entero | 6 candidatos / 1.208 palabras de `cap_02` mas `cap_03`; 6 / 1.755 del libro con sus cuatro ficheros |
+| **pasos inventados por lote** | **13 de 36, el 36 por ciento** | relectura parrafo a parrafo en la vuelta 2. Cuatro de los seis candidatos llevaban al menos uno. El lote quedo en 32 pasos |
+| **veredictos escritos** | **1** en seis inserciones, y **1 de 1 fue invisible para las tres señales** | `bitacora/VEREDICTOS.jsonl`, 10 sep 2026 |
+| **coste por capitulo** | **9,73 USD** por capitulo tocado (3), **16,64 USD** por mil palabras | 29,20 USD y 86,5 minutos en dos vueltas de dos asientos, leidos de los testigos del arnes |
+
+**El desglose del coste:**
+
+    vuelta 1   extractor  7,01 USD  1178 s      vuelta 2   extractor  7,41 USD  1305 s
+               auditor    6,63 USD  1317 s                 auditor    8,15 USD  1393 s
+
+### 9.2. Cual de las cuatro se puede proyectar, y cual no
+
+**LA UNICA QUE SE TRANSFIERE ES EL 36 POR CIENTO DE PASOS INVENTADOS**, porque
+**no es una propiedad del libro sino de la mano que escribe.** Es la que `D.30`
+convierte en regla y la que el lote 2 va a comprobar.
+
+**LAS OTRAS TRES NO, y el motivo esta medido:** los capitulos del lote 1
+promedian **439 palabras**; los 160 que quedan promedian **3.517**, **ocho veces
+mas**. El lote 1 es el **0,3 por ciento** del corpus restante (1.755 palabras
+contra 562.648).
+
+| proyeccion del coste sobre lo que queda | cifra |
+|---|---:|
+| por capitulo tocado (9,73 x 160) | ~1.560 USD |
+| por mil palabras (16,64 x 562,6) | ~9.360 USD |
+
+**SEIS VECES DE DIFERENCIA. La cifra por palabra es la menos mala y aun asi esta
+inflada**, porque las dos vueltas gastaron mucho en doctrina que no se repite.
+
+**Y LA TASA DE CANDIDATOS NO SE PROYECTA EN ABSOLUTO:** a 4,97 por mil saldrian
+2.796 candidatos, cifra no creible. El texto normativo es denso y terso; un libro
+de gestion gasta muchas mas palabras por procedimiento.
+
+### 9.3. El reparto de los puentes, que dice donde mirar
+
+| parrafo | inventario propio | puentes |
+|---|---|---:|
+| 29, cinco medios nombrados | rico | **0 por ciento** |
+| 32, una frase | pobre | **83 por ciento** |
+
+> **UN PARRAFO POBRE NO PRODUCE UN NODO POBRE: PRODUCE UN NODO INVENTADO.**
+
+### 9.4. La metrica de volumen del lote 2, y su regla de escalada
+
+*Decision del fundador del 10 sep 2026.* El lote 2 corre a **DOS capitulos por
+vuelta**, y **cada acta del auditor publica `PASOS INVENTADOS POR CAPITULO`**:
+
+| lo que mida el lote 2 | el lote 3 |
+|---|---|
+| **se mantiene o baja** respecto al 36 por ciento | **sube a TRES capitulos por vuelta** |
+| **sube** respecto al 36 por ciento | **el techo vuelve a UNO** |
+
+**LA CIFRA ES POR CAPITULO Y NO POR VUELTA, y eso no es un detalle:** con dos
+capitulos por vuelta, una media de vuelta esconderia un capitulo limpio detras de
+uno malo. **La escalada se decide sobre el peor capitulo, no sobre el promedio.**
+
+### 9.5. Lo que este lote NO pudo medir
+
+**EL ERROR DE DEJAR PASAR SIGUE SIN MEDIR.** Las dos vueltas del bucle corrieron
+con cero inserciones, asi que no hubo veredictos, sin veredictos no hubo `SANO`, y
+sin `SANO` no hubo muestra pineada: **dos tandas con poblacion cero**. Con los
+seis nodos ya dentro, **la vuelta siguiente es la primera que puede medirlo**.

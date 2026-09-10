@@ -28,6 +28,20 @@ Ejemplo:
 
     cuarentena/mundo_11/registrar_fuente_canonica.json
 
+## Cuando un candidato entra, se ARCHIVA (D.31, 10 sep 2026)
+
+    cuarentena/<lote>/<id>.json              candidato, espera juicio
+    cuarentena/_insertados/<lote>/<id>.json  ya vive en el grafo
+
+**NADA SE BORRA: el fichero de cuarentena es el registro de COMO entro.** El nodo
+del dataset es el nodo DESPUES de la aduana; este fichero es el de ANTES, y la
+diferencia entre los dos es lo unico que dice que le hizo la puerta al entrar.
+
+**Se mueve porque el informe lo contaba.** Un insertado que sigue en la bandeja da
+`CAERIA: el id ya vive en el grafo`, y **un lote recien insertado se leeria como
+un lote entero rechazado**. Cada lote archivado lleva su `LEEME.md` con el commit
+de insercion de cada candidato.
+
 ## Como se usa, en dos comandos
 
 **1. EL INFORME, primero y siempre.** La aduana en seco, cero inserciones:

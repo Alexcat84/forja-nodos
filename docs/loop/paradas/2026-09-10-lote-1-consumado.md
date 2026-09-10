@@ -1,4 +1,18 @@
-# PARA_ALEXIS.md
+# PARADA DEL 10 SEP 2026: LOTE 1 CONSUMADO
+
+> **DECISION DEL FUNDADOR (10 sep 2026): insercion autorizada y ejecutada en
+> 762e31d, grafo de 2 a 8, D.30 firmada.**
+
+> **ARCHIVADA.** Este fichero fue `docs/loop/PARA_ALEXIS.md` hasta que el fundador
+> resolvio lo que pedia. **Se archiva entero y sin tocar una palabra de su
+> cuerpo**, porque una parada resuelta sigue siendo el mejor registro de por que
+> el bucle se detuvo y con que estado. Lo unico añadido es esta cabecera.
+>
+> **El bucle ya NO esta detenido por este fichero:** vive en `docs/loop/paradas/`
+> y el arnes solo mira `docs/loop/PARA_ALEXIS.md`.
+
+---
+
 
 > **Escrito por el auditor del bucle del extractor, el 10 sep 2026, al cerrar la
 > vuelta 2.** Sede del auditor (`AUDITOR_FORJA.md` 5.6, **`D.28`**). El extractor

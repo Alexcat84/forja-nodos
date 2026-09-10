@@ -106,6 +106,10 @@ se registra con tu nombre.
 
 `docs/loop/` entero: acta, prompt, y `PARA_ALEXIS.md` si aplica.
 
+**Y DESDE EL 10 sep 2026, UNA CIFRA MAS EN CADA ACTA:** `PASOS INVENTADOS POR
+CAPITULO`, **con una fila por capitulo y no una media de vuelta** (seccion 8). De
+ella sale el tamaño del lote siguiente, asi que **no es opcional**.
+
 ## 2. DISCIPLINA DEL DICTADO (tus propios limites)
 
 - **Nada se afirma sin haberse consultado EN ESTA vuelta:** estados, cifras,
@@ -362,3 +366,73 @@ releerlo para saberlo: se ve en la bitacora.
 **MIENTRAS LA FORJA TENGA MENOS DE TRES SANO POR TANDA**, esta seccion se cumple
 releyendo todos, y el acta lo dice con su cifra. **No se inventa una muestra
 donde no hay poblacion.**
+
+## 8. `PASOS INVENTADOS POR CAPITULO`: LA METRICA DE CALIBRACION DE VOLUMEN
+
+*Decision del fundador del 10 sep 2026, al abrir el lote 2.
+`docs/CALIBRACION_D4.md` seccion 9.4.*
+
+> **CADA ACTA PUBLICA `PASOS INVENTADOS POR CAPITULO`. NO ES OPCIONAL Y NO ES UNA
+> MEDIA DE VUELTA.**
+
+**QUE ES.** De todos los pasos que el extractor escribio en un capitulo, cuantos
+resultaron ser **PUENTE** y no **TRANSCRIPCION** (`D.30`): pasos que el extractor
+puso y el libro no dice.
+
+    pasos inventados del capitulo N
+    -------------------------------  x 100
+    pasos escritos del capitulo N
+
+**LA LINEA BASE ES EL 36 POR CIENTO DEL LOTE 1** (13 de 36 pasos,
+`CALIBRACION_D4.md` seccion 9.1).
+
+### 8.1. Para que sirve: dimensiona el lote siguiente
+
+| lo que midas | el lote siguiente corre a |
+|---|---|
+| **se mantiene o baja** respecto al 36 por ciento | **un capitulo mas por vuelta** |
+| **sube** respecto al 36 por ciento | **el techo vuelve a UNO** |
+
+**El lote 2 corre a dos capitulos por vuelta. Si la cifra aguanta, el lote 3 sube
+a tres; si sube, el 3 baja a uno.**
+
+### 8.2. POR CAPITULO, Y NO POR VUELTA. Es la mitad de la regla
+
+**Con dos capitulos por vuelta, una media esconderia un capitulo limpio detras de
+uno malo.** Un 10 por ciento y un 60 por ciento promedian 35 y pareceria que todo
+va bien.
+
+> **LA ESCALADA SE DECIDE SOBRE EL PEOR CAPITULO, NO SOBRE EL PROMEDIO.**
+
+**Y PUBLICAS LAS DOS COSAS:** la fila de cada capitulo **y** el total del lote.
+El total sirve para comparar lotes entre si; **la fila decide el volumen.**
+
+### 8.3. Que verificas antes de publicarla, porque es una cifra tuya
+
+**Es una cifra que el extractor te da y que tu firmas.** No la copias:
+
+1. **Cuentas tu los pasos** de cada candidato del capitulo, contra el dataset o
+   contra la cuarentena, y comparas con lo que el reporte dice.
+2. **Relees una muestra de los pasos marcados TRANSCRIPCION** contra su parrafo.
+   **El error que esta metrica invita a cometer es marcar un puente como
+   transcripcion**, porque baja la cifra y sube el volumen del lote siguiente.
+3. **Si el reporte no desglosa por capitulo**, eso es una caida de especie
+   REPORTE y la nombras: **la cifra agregada no se puede desglosar despues**, y
+   pedirla en la vuelta siguiente ya no la recupera.
+
+**SI NO PUEDES VERIFICARLA, LO DICES Y NO LA PUBLICAS COMO TUYA.** Una cifra de
+volumen mal firmada no cuesta una discusion: cuesta un lote entero corriendo al
+tamaño equivocado.
+
+### 8.4. Lo que esta metrica NO es
+
+**NO ES UNA METRICA DE CASTIGO NI ENTRA EN LA METRICA DE CREDITO** (seccion 5).
+Un puente encontrado y corregido **es la regla funcionando**, no una caida: solo
+seria caida un puente que entrase al grafo sin corregir. **Un extractor que
+declara veinte puentes propios esta haciendo su trabajo mejor que uno que declara
+cero.**
+
+**Y NO MIDE LA CALIDAD DEL LIBRO.** Mide la mano que escribe contra el libro que
+le toco. Un capitulo pobre en inventario sube la cifra sin que nadie lo haga mal
+(`D.30`: *un parrafo pobre no produce un nodo pobre, produce un nodo inventado*),
+**y por eso el acta dice tambien que capitulo era**, no solo su porcentaje.

@@ -85,6 +85,24 @@ def revisar_candidato(bruto, nodos, resolutor, umbrales, tabla_fuentes,
     return dictamen, candidato
 
 
+CARPETA_ARCHIVO = "_insertados"
+
+
+def esta_archivado(ruta):
+    """Cierto si la ruta cuelga de `cuarentena/_insertados/` (D.31).
+
+    UN CANDIDATO INSERTADO NO SE BORRA: su fichero es el registro de COMO
+    entro, y ese registro vale mas cuanto mas viejo es. Pero deja de ser un
+    candidato, asi que el informe no lo cuenta.
+
+    SIN ESTO LA CIFRA MENTIRIA EN LA DIRECCION MAS FEA: el informe diria
+    `CAERIA: el id ya vive en el grafo` sobre un nodo que entro bien, y un
+    lote recien insertado se leeria como un lote entero rechazado.
+    """
+    piezas = os.path.normpath(ruta).replace("\\", "/").split("/")
+    return CARPETA_ARCHIVO in piezas
+
+
 def revisar(rutas, ruta_dataset=None, umbrales=None, tabla_fuentes=None):
     """Corre el informe sobre una lista de ficheros de candidato."""
     ruta_dataset = ruta_dataset or comun.RUTA_DATASET
@@ -98,6 +116,8 @@ def revisar(rutas, ruta_dataset=None, umbrales=None, tabla_fuentes=None):
 
     dictamenes = []
     ids_del_lote = {}
+    archivados = [r for r in rutas if esta_archivado(r)]
+    rutas = [r for r in rutas if not esta_archivado(r)]
     for ruta in rutas:
         try:
             bruto = comun.leer_json(ruta)
@@ -113,10 +133,11 @@ def revisar(rutas, ruta_dataset=None, umbrales=None, tabla_fuentes=None):
         dictamenes.append(dictamen)
         if dictamen["id"] and dictamen["salida"] != CHOCA:
             ids_del_lote.setdefault(dictamen["id"], os.path.basename(ruta))
-    return dictamenes, len(nodos), umbrales
+    return dictamenes, len(nodos), umbrales, archivados
 
 
-def texto_informe(dictamenes, cuantos_nodos, umbrales, detalle=True):
+def texto_informe(dictamenes, cuantos_nodos, umbrales, detalle=True,
+                  archivados=None):
     lineas = []
     cuenta = {ENTRARIA: 0, BLOQUEARIA: 0, CAERIA: 0, CHOCA: 0}
     por_guarda = {}
@@ -129,6 +150,12 @@ def texto_informe(dictamenes, cuantos_nodos, umbrales, detalle=True):
     lineas.append("INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.")
     lineas.append("=" * 76)
     lineas.append("candidatos revisados        : %d" % len(dictamenes))
+    if archivados:
+        # EL RECORTE SE DECLARA, NUNCA SE APLICA EN SILENCIO. Quien pide un
+        # informe sobre una carpeta tiene que saber cuantos ficheros habia y
+        # por que no se contaron.
+        lineas.append("archivados, NO contados     : %d   (ya viven en el grafo, "
+                      "cuarentena/_insertados/)" % len(archivados))
     lineas.append("nodos en el grafo de destino: %d" % cuantos_nodos)
     lineas.append("umbrales de esta corrida    : similitud %.2f | familia %.2f | "
                   "paso contra nodo %.2f"
@@ -226,6 +253,15 @@ def main(argumentos=None):
         print("     python forja.py informe --carpeta cuarentena/mundo_11 [--resumen]")
         return 1
 
-    dictamenes, cuantos, umbrales = revisar(rutas)
-    print(texto_informe(dictamenes, cuantos, umbrales, detalle=not resumen_solo))
+    dictamenes, cuantos, umbrales, archivados = revisar(rutas)
+    if not dictamenes and archivados:
+        print('%s ARCHIVADO%s en cuarentena/_insertados: ya vive%s en el grafo, '
+              'y el informe no lo%s cuenta (D.31).'
+              % ('1 fichero' if len(archivados) == 1 else '%d ficheros' % len(archivados),
+                 '' if len(archivados) == 1 else 'S',
+                 '' if len(archivados) == 1 else 'n',
+                 '' if len(archivados) == 1 else 's'))
+        return 0
+    print(texto_informe(dictamenes, cuantos, umbrales,
+                        detalle=not resumen_solo, archivados=archivados))
     return 0
