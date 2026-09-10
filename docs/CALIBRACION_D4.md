@@ -160,6 +160,24 @@ HIJO de esta casa (el que despliega en siete pasos el paso 2 de su madre) mide
 *la jerarquia se cablea, no se copia* es el principio 2 del manual. **0,60 deja
 al hijo cazado con margen y corta la cola seis veces.**
 
+> ### CORRECCION DECLARADA, 9 sep 2026, misma tarde
+>
+> **La cifra de 2,4 de la tabla de arriba NO SE BORRA, y era un SUELO, no un
+> centro.** El estreno de la aduana la midio directamente sobre un lote real
+> contra 3.157 vivos (`docs/ESTRENO_DE_LA_ADUANA.md` seccion 5) y salio **4,6
+> vecinos por candidato**, casi el doble.
+>
+> **EL MOTIVO, y es doctrina:** la estimacion analitica sale de la tasa de
+> disparo sobre pares AL AZAR, y **un lote real no es al azar**. Trae capitulos
+> enteros del mismo tema, que es exactamente el caso que `EXTRACTOR.md` seccion
+> 12 avisa. Una poblacion de referencia mal elegida no da una cifra imprecisa:
+> da una cifra sesgada hacia abajo.
+>
+> **MANDA LA MEDIDA DIRECTA. Cuando una estimacion y un control chocan, no se
+> promedian: gana el que conto.** El umbral 0,60 no se mueve por esto: 4,6 sigue
+> siendo tres veces menos que los 14,3 del vigente anterior, y la decision se
+> tomo por la comparacion entre umbrales, que la correccion no altera.
+
 ### El control directo, que confirma la estimacion
 
 La cola por candidato se midio de dos maneras, y las dos van publicadas porque

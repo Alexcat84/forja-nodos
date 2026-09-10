@@ -966,11 +966,58 @@ class PruebaResolutor(BaseForja):
         self.assertIn("dos cosas con un nombre", salida)
 
 
+class PruebaBandejas(BaseForja):
+    """El barrido de guiones NO entra en las bandejas de entrada.
+
+    Lo encontro el estreno del 9 sep 2026: al depositar el primer lote, el
+    pre-commit se puso en rojo por los guiones del material AJENO que esperaba
+    juicio. Barrer la bandeja rompe todo commit mientras hay trabajo en curso, y
+    peor, empuja a limpiar un candidato ANTES de que la aduana lo mida.
+
+    La linea es exacta: se barre la raiz de la bandeja, que es doctrina de esta
+    casa y viaja en git, y no sus subcarpetas, que son material de otro. Es la
+    misma que traza `.gitignore` con `cuarentena/*/` y `fuentes/*/`.
+    """
+
+    def _arbol(self, raiz):
+        for pieza in ("cuarentena/LEEME.md", "cuarentena/un_lote/candidato.json",
+                      "fuentes/FUENTES_CANONICAS.json", "fuentes/un_libro/cap_01.md",
+                      "docs/UN_DOC.md"):
+            ruta = os.path.join(raiz, *pieza.split("/"))
+            if not os.path.isdir(os.path.dirname(ruta)):
+                os.makedirs(os.path.dirname(ruta))
+            comun.escribir_texto(ruta, u"texto con guion largo: %s aqui" % GUION_LARGO)
+
+    def test_las_subcarpetas_de_bandeja_no_se_barren(self):
+        taller = tempfile.mkdtemp(prefix="bandejas_")
+        try:
+            self._arbol(taller)
+            barridos = set(os.path.relpath(r, taller).replace("\\", "/")
+                           for r in comun.archivos_del_repo(taller))
+            self.assertIn("docs/UN_DOC.md", barridos)
+            # LA RAIZ DE CADA BANDEJA SI: es lo que esta casa escribe.
+            self.assertIn("cuarentena/LEEME.md", barridos)
+            self.assertIn("fuentes/FUENTES_CANONICAS.json", barridos)
+            # EL MATERIAL AJENO NO, aunque este lleno de guiones prohibidos.
+            self.assertNotIn("cuarentena/un_lote/candidato.json", barridos)
+            self.assertNotIn("fuentes/un_libro/cap_01.md", barridos)
+        finally:
+            shutil.rmtree(taller, ignore_errors=True)
+
+    def test_la_guarda_del_gate_si_muerde_al_candidato(self):
+        """No barrer la bandeja NO es indultar: la puerta sigue mordiendo."""
+        from src import guiones
+        hallazgos = guiones.barrer_texto(u"un guion largo %s dentro" % GUION_LARGO, "candidato")
+        self.assertEqual(len(hallazgos), 1)
+        self.assertIn("U+2014", hallazgos[0])
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
              PruebaGate, PruebaMutuo, PruebaCitaDeLinea, PruebaVigencia,
-             PruebaNoAplica, PruebaDeprecado, PruebaResolutor]
+             PruebaNoAplica, PruebaDeprecado, PruebaResolutor,
+             PruebaBandejas]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -993,6 +1040,8 @@ def main():
           "C.4 no aplica, D.17 deprecado): %d pruebas mas"
           % sum(len(cargador.loadTestsFromTestCase(c)._tests)
                 for c in (PruebaCitaDeLinea, PruebaVigencia, PruebaNoAplica, PruebaDeprecado)))
+    print("  el barrido NO entra en las bandejas de entrada (estreno del 9 sep 2026): "
+          "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaBandejas)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

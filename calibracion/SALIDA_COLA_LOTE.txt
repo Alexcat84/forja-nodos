@@ -1,0 +1,32 @@
+==========================================================================
+CONTROL DIRECTO DE COLA: el lote contra un grafo LLENO
+==========================================================================
+candidatos medidos : 12 de 163 del lote de ensayo
+grafo de destino   : 3157 vivos del catalogo limpio
+                     (cada candidato se retira de su propio destino)
+umbral vigente     : paso contra nodo 0,60
+
+  accion_correctiva_2                                    0 vecinos  [CAERIA]
+  butterfly_test_convergencia                            2 vecinos  [BLOQUEARIA]
+  consejo_calidad_informacion                           17 vecinos  [BLOQUEARIA]
+  customer_retention_tactics                             2 vecinos  [BLOQUEARIA]
+  diamante_decision_tres_partes                          0 vecinos  [ENTRARIA]
+  enfoque_proyecto_por_proyecto                          0 vecinos  [CAERIA]
+  fuentes_contratacion_ejecutivos                        1 vecinos  [BLOQUEARIA]
+  just_in_time_manufacturing                            10 vecinos  [BLOQUEARIA]
+  medicion_resultados_marketing_franquicia               7 vecinos  [BLOQUEARIA]
+  no_jugar_con_probabilidades                            0 vecinos  [CAERIA]
+  programa_proteccion_denunciantes                       2 vecinos  [BLOQUEARIA]
+  second_wind_energia_mental                             0 vecinos  [ENTRARIA]
+
+LA CIFRA
+  vecinos totales levantados : 41
+  media por candidato        : 3.42
+  mediana                    : 2
+  maximo                     : 17
+  candidatos con cola vacia  : 5 de 12
+
+  estimacion analitica de docs/CALIBRACION_D4.md : 2,4 por candidato
+  corrida en 1081.0 segundos
+
+NADA SE INSERTO.

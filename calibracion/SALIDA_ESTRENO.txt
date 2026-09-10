@@ -1,0 +1,452 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 163
+nodos en el grafo de destino: 2
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 114
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 49
+  CHOCAN entre si dentro del lote  : 0
+
+POR QUE GUARDA CAEN
+    45  el candidato rompe docs/REGLAS_DE_ID.md
+     4  guiones prohibidos en el texto del candidato
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[CAERIA] accion_correctiva_2   (accion_correctiva_2.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'accion_correctiva_2': sufijo numerico prohibido (regla 2 de docs/REGLAS_DE_ID.md)
+
+[ENTRARIA] actualizacion_hvac   (actualizacion_hvac.json)
+
+[ENTRARIA] acuerdo_representante_servicio   (acuerdo_representante_servicio.json)
+
+[ENTRARIA] adaptaciones_procedimentales   (adaptaciones_procedimentales.json)
+
+[ENTRARIA] adopciones_industria_especifica_iso9000   (adopciones_industria_especifica_iso9000.json)
+
+[ENTRARIA] alcance_profundo_cadena_suministro   (alcance_profundo_cadena_suministro.json)
+
+[CAERIA] aprendizaje_organizacional_desde_incidentes   (aprendizaje_organizacional_desde_incidentes.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'aprendizaje_organizacional_desde_incidentes': preposicion o articulo prohibido: desde (regla 3)
+
+[ENTRARIA] aspectos_legales_eticos_benchmarking   (aspectos_legales_eticos_benchmarking.json)
+
+[ENTRARIA] auditorias_primera_segunda_tercera_parte   (auditorias_primera_segunda_tercera_parte.json)
+
+[ENTRARIA] automatizacion_software_gestion_innovacion   (automatizacion_software_gestion_innovacion.json)
+
+[ENTRARIA] biomimicry_conexiones_naturales   (biomimicry_conexiones_naturales.json)
+
+[ENTRARIA] brief_competitivo   (brief_competitivo.json)
+
+[CAERIA] buen_lugar_para_trabajar   (buen_lugar_para_trabajar.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'buen_lugar_para_trabajar': preposicion o articulo prohibido: para (regla 3)
+
+[ENTRARIA] butterfly_test_convergencia   (butterfly_test_convergencia.json)
+
+[ENTRARIA] calculo_roi_calidad   (calculo_roi_calidad.json)
+
+[ENTRARIA] caso_grietas_pequenas_mantenimiento_aeronaves   (caso_grietas_pequenas_mantenimiento_aeronaves.json)
+
+[CAERIA] categorias_de_material_entrante   (categorias_de_material_entrante.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'categorias_de_material_entrante': preposicion o articulo prohibido: de (regla 3)
+
+[ENTRARIA] ciclo_circunstancias_sentimientos_ideas   (ciclo_circunstancias_sentimientos_ideas.json)
+
+[ENTRARIA] cierre_satisfaccion_postventa   (cierre_satisfaccion_postventa.json)
+
+[CAERIA] clasificacion_de_seriedad_de_defectos   (clasificacion_de_seriedad_de_defectos.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'clasificacion_de_seriedad_de_defectos': preposicion o articulo prohibido: de (regla 3)
+
+[ENTRARIA] colaboracion_cadena_suministro   (colaboracion_cadena_suministro.json)
+
+[ENTRARIA] comprension_capacidades_limitaciones_ia   (comprension_capacidades_limitaciones_ia.json)
+
+[CAERIA] comunicacion_honesta_en_crisis_al_equipo   (comunicacion_honesta_en_crisis_al_equipo.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'comunicacion_honesta_en_crisis_al_equipo': preposicion o articulo prohibido: al, en (regla 3)
+
+[ENTRARIA] comunidad_como_activo_estrategico   (comunidad_como_activo_estrategico.json)
+
+[ENTRARIA] condiciones_latentes_riesgo_universal   (condiciones_latentes_riesgo_universal.json)
+
+[ENTRARIA] consecuencias_no_intencionadas_sistemicas   (consecuencias_no_intencionadas_sistemicas.json)
+
+[ENTRARIA] consejo_calidad_informacion   (consejo_calidad_informacion.json)
+
+[ENTRARIA] consideraciones_instalacion_internacional   (consideraciones_instalacion_internacional.json)
+
+[ENTRARIA] constraint_management   (constraint_management.json)
+
+[ENTRARIA] construccion_linea_tiempo   (construccion_linea_tiempo.json)
+
+[CAERIA] contratar_por_fortaleza   (contratar_por_fortaleza.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'contratar_por_fortaleza': preposicion o articulo prohibido: por (regla 3)
+
+[ENTRARIA] control_minimizacion_datos   (control_minimizacion_datos.json)
+
+[CAERIA] costo_de_calidad_3   (costo_de_calidad_3.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'costo_de_calidad_3': sufijo numerico prohibido (regla 2 de docs/REGLAS_DE_ID.md)
+      id 'costo_de_calidad_3': preposicion o articulo prohibido: de (regla 3)
+
+[ENTRARIA] crecimiento_ingresos_verdes   (crecimiento_ingresos_verdes.json)
+
+[ENTRARIA] criterios_equity_split   (criterios_equity_split.json)
+
+[ENTRARIA] critica_eco_eficiencia   (critica_eco_eficiencia.json)
+
+[ENTRARIA] cuantos_cofundadores_agregar   (cuantos_cofundadores_agregar.json)
+
+[ENTRARIA] cultura_generativa_westrum   (cultura_generativa_westrum.json)
+
+[ENTRARIA] customer_development_modelo   (customer_development_modelo.json)
+
+[ENTRARIA] customer_retention_tactics   (customer_retention_tactics.json)
+
+[CAERIA] decisiones_de_financiamiento_exportacion   (decisiones_de_financiamiento_exportacion.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'decisiones_de_financiamiento_exportacion': preposicion o articulo prohibido: de (regla 3)
+
+[ENTRARIA] definicion_metas_engagement   (definicion_metas_engagement.json)
+
+[ENTRARIA] definicion_objetivos_proyecto_sistema   (definicion_objetivos_proyecto_sistema.json)
+
+[CAERIA] definicion_y_concepto_de_aseguramiento_de_calidad   (definicion_y_concepto_de_aseguramiento_de_calidad.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'definicion_y_concepto_de_aseguramiento_de_calidad': preposicion o articulo prohibido: de, y (regla 3)
+
+[CAERIA] definiciones_operacionales_2   (definiciones_operacionales_2.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'definiciones_operacionales_2': sufijo numerico prohibido (regla 2 de docs/REGLAS_DE_ID.md)
+
+[ENTRARIA] definiciones_operacionales_defectos   (definiciones_operacionales_defectos.json)
+
+[ENTRARIA] definir_limites_huella_carbono   (definir_limites_huella_carbono.json)
+
+[ENTRARIA] desarrollar_manual_operaciones   (desarrollar_manual_operaciones.json)
+
+[ENTRARIA] desarrollar_metas_anuales   (desarrollar_metas_anuales.json)
+
+[CAERIA] desarrollo_en_espiral   (desarrollo_en_espiral.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'desarrollo_en_espiral': preposicion o articulo prohibido: en (regla 3)
+
+[ENTRARIA] determinacion_tamano_cubetas   (determinacion_tamano_cubetas.json)
+
+[ENTRARIA] dialogo_stakeholders   (dialogo_stakeholders.json)
+
+[ENTRARIA] diamante_decision_tres_partes   (diamante_decision_tres_partes.json)
+
+[CAERIA] diseno_de_flujos_pace_layers   (diseno_de_flujos_pace_layers.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'diseno_de_flujos_pace_layers': preposicion o articulo prohibido: de (regla 3)
+
+[ENTRARIA] diseno_experimentos_pass_fail   (diseno_experimentos_pass_fail.json)
+
+[ENTRARIA] diseno_landing_page   (diseno_landing_page.json)
+
+[ENTRARIA] diseno_organizacional   (diseno_organizacional.json)
+
+[ENTRARIA] diseno_universal_talla_unica   (diseno_universal_talla_unica.json)
+
+[ENTRARIA] distorsion_muestreo_mecanico   (distorsion_muestreo_mecanico.json)
+
+[ENTRARIA] dmaic_fase_improve   (dmaic_fase_improve.json)
+
+[CAERIA] eliminacion_causas_error_4   (eliminacion_causas_error_4.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'eliminacion_causas_error_4': sufijo numerico prohibido (regla 2 de docs/REGLAS_DE_ID.md)
+
+[ENTRARIA] eliminacion_planes_muestreo_estandar   (eliminacion_planes_muestreo_estandar.json)
+
+[CAERIA] eliminar_slogans_y_exhortaciones   (eliminar_slogans_y_exhortaciones.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'eliminar_slogans_y_exhortaciones': preposicion o articulo prohibido: y (regla 3)
+
+[CAERIA] emprendimiento_como_disciplina_de_gestion   (emprendimiento_como_disciplina_de_gestion.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'emprendimiento_como_disciplina_de_gestion': preposicion o articulo prohibido: de (regla 3)
+
+[ENTRARIA] enfoque_integrado_marketing_franquicia   (enfoque_integrado_marketing_franquicia.json)
+
+[CAERIA] enfoque_proyecto_por_proyecto   (enfoque_proyecto_por_proyecto.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'enfoque_proyecto_por_proyecto': preposicion o articulo prohibido: por (regla 3)
+
+[ENTRARIA] entrenamiento_continuo   (entrenamiento_continuo.json)
+
+[ENTRARIA] equipo_forma_t   (equipo_forma_t.json)
+
+[ENTRARIA] equity_crowdfunding   (equity_crowdfunding.json)
+
+[ENTRARIA] estatus_fundador_simbolico   (estatus_fundador_simbolico.json)
+
+[ENTRARIA] estrategia_ferias_comerciales   (estrategia_ferias_comerciales.json)
+
+[CAERIA] estrategia_multicanal_bienvenida   (estrategia_multicanal_bienvenida.json)
+    guarda: guiones prohibidos en el texto del candidato
+      resumen_teorico columna 68: guion largo (U+2014)
+      resumen_teorico columna 136: guion largo (U+2014)
+
+[ENTRARIA] estructura_competencias_six_sigma_lean   (estructura_competencias_six_sigma_lean.json)
+
+[ENTRARIA] evaluacion_riesgos_legales_ia   (evaluacion_riesgos_legales_ia.json)
+
+[ENTRARIA] facilidad_supervision_franquicia   (facilidad_supervision_franquicia.json)
+
+[CAERIA] founder_ceo_succession_process   (founder_ceo_succession_process.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'founder_ceo_succession_process': palabra fuera del castellano: process (regla 1). El termino en otro idioma va en denominaciones.otros_idiomas
+
+[ENTRARIA] founders_activities_clause   (founders_activities_clause.json)
+
+[CAERIA] four_actions_framework_lado_cliente   (four_actions_framework_lado_cliente.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'four_actions_framework_lado_cliente': palabra fuera del castellano: framework (regla 1). El termino en otro idioma va en denominaciones.otros_idiomas
+
+[ENTRARIA] fuentes_contratacion_ejecutivos   (fuentes_contratacion_ejecutivos.json)
+
+[ENTRARIA] fuentes_datos_benchmarking   (fuentes_datos_benchmarking.json)
+
+[ENTRARIA] funcion_identify_inventario_activos   (funcion_identify_inventario_activos.json)
+
+[CAERIA] funciones_del_departamento_de_calidad   (funciones_del_departamento_de_calidad.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'funciones_del_departamento_de_calidad': preposicion o articulo prohibido: de, del (regla 3)
+
+[ENTRARIA] gestion_fluctuaciones_cambiarias_clientes   (gestion_fluctuaciones_cambiarias_clientes.json)
+
+[ENTRARIA] gestion_procurement_consumo   (gestion_procurement_consumo.json)
+
+[ENTRARIA] gestion_testimonios   (gestion_testimonios.json)
+
+[ENTRARIA] grafico_media_movil_ewma   (grafico_media_movil_ewma.json)
+
+[CAERIA] identificacion_del_verdadero_cliente   (identificacion_del_verdadero_cliente.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'identificacion_del_verdadero_cliente': preposicion o articulo prohibido: del (regla 3)
+
+[ENTRARIA] internacionalizacion_sitio_web_exportacion   (internacionalizacion_sitio_web_exportacion.json)
+
+[ENTRARIA] internal_idea_capture   (internal_idea_capture.json)
+
+[ENTRARIA] international_partner_search   (international_partner_search.json)
+
+[ENTRARIA] issue_log   (issue_log.json)
+
+[ENTRARIA] just_in_time_manufacturing   (just_in_time_manufacturing.json)
+
+[ENTRARIA] learning_card   (learning_card.json)
+
+[CAERIA] leverage_en_negociacion_con_vcs   (leverage_en_negociacion_con_vcs.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'leverage_en_negociacion_con_vcs': preposicion o articulo prohibido: con, en (regla 3)
+
+[ENTRARIA] liderazgo_gerencial_seguridad   (liderazgo_gerencial_seguridad.json)
+
+[ENTRARIA] limites_tolerancia_estadistica   (limites_tolerancia_estadistica.json)
+
+[ENTRARIA] mac_clause_gestion_riesgo   (mac_clause_gestion_riesgo.json)
+
+[CAERIA] mapear_servicio_antes_durante_despues   (mapear_servicio_antes_durante_despues.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'mapear_servicio_antes_durante_despues': preposicion o articulo prohibido: durante (regla 3)
+
+[ENTRARIA] marco_legal_comercio_electronico_internacional   (marco_legal_comercio_electronico_internacional.json)
+
+[CAERIA] marco_nist_cybersecurity_framework   (marco_nist_cybersecurity_framework.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'marco_nist_cybersecurity_framework': palabra fuera del castellano: framework (regla 1). El termino en otro idioma va en denominaciones.otros_idiomas
+
+[ENTRARIA] marcos_historicos_comunidades_startup   (marcos_historicos_comunidades_startup.json)
+
+[CAERIA] matriz_de_seleccion   (matriz_de_seleccion.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'matriz_de_seleccion': preposicion o articulo prohibido: de (regla 3)
+
+[ENTRARIA] matriz_riesgo_conocido_desconocido   (matriz_riesgo_conocido_desconocido.json)
+
+[ENTRARIA] medicion_desempeno_integrado   (medicion_desempeno_integrado.json)
+
+[ENTRARIA] medicion_resultados_marketing_franquicia   (medicion_resultados_marketing_franquicia.json)
+
+[CAERIA] mejora_continua_del_sistema   (mejora_continua_del_sistema.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'mejora_continua_del_sistema': preposicion o articulo prohibido: del (regla 3)
+
+[ENTRARIA] metas_objetivos_smart_innovacion   (metas_objetivos_smart_innovacion.json)
+
+[CAERIA] metas_vs_proposito   (metas_vs_proposito.json)
+    guarda: guiones prohibidos en el texto del candidato
+      resumen_teorico columna 279: guion largo (U+2014)
+      resumen_teorico columna 374: guion largo (U+2014)
+
+[ENTRARIA] micro_experiencias_personalizadas   (micro_experiencias_personalizadas.json)
+
+[ENTRARIA] mini_folleto_franquicia   (mini_folleto_franquicia.json)
+
+[CAERIA] mitos_stage_gate   (mitos_stage_gate.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'mitos_stage_gate': palabra fuera del castellano: gate (regla 1). El termino en otro idioma va en denominaciones.otros_idiomas
+
+[ENTRARIA] mobilizar_empleados_cultura_ecologica   (mobilizar_empleados_cultura_ecologica.json)
+
+[ENTRARIA] modelo_costo_optimo_calidad   (modelo_costo_optimo_calidad.json)
+
+[ENTRARIA] modelos_gestion_seguridad   (modelos_gestion_seguridad.json)
+
+[ENTRARIA] monitoreo_continuo_benchmarking   (monitoreo_continuo_benchmarking.json)
+
+[ENTRARIA] monte_carlo_simulation_model   (monte_carlo_simulation_model.json)
+
+[ENTRARIA] multiples_compradores_influyentes   (multiples_compradores_influyentes.json)
+
+[CAERIA] no_jugar_con_probabilidades   (no_jugar_con_probabilidades.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'no_jugar_con_probabilidades': preposicion o articulo prohibido: con (regla 3)
+
+[CAERIA] no_sacrificar_calidad_por_velocidad   (no_sacrificar_calidad_por_velocidad.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'no_sacrificar_calidad_por_velocidad': preposicion o articulo prohibido: por (regla 3)
+
+[ENTRARIA] nueve_pecados_capitales_lanzamiento   (nueve_pecados_capitales_lanzamiento.json)
+
+[ENTRARIA] paris_convention_prioridad   (paris_convention_prioridad.json)
+
+[CAERIA] paso1_libre_de_sustancias_x   (paso1_libre_de_sustancias_x.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'paso1_libre_de_sustancias_x': preposicion o articulo prohibido: de (regla 3)
+
+[ENTRARIA] patron_bait_hook   (patron_bait_hook.json)
+
+[CAERIA] pensar_en_grande_empezar_pequeno   (pensar_en_grande_empezar_pequeno.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'pensar_en_grande_empezar_pequeno': preposicion o articulo prohibido: en (regla 3)
+
+[CAERIA] planificacion_estrategica_despliegue_2   (planificacion_estrategica_despliegue_2.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'planificacion_estrategica_despliegue_2': sufijo numerico prohibido (regla 2 de docs/REGLAS_DE_ID.md)
+
+[ENTRARIA] plataforma_colaboracion_masiva   (plataforma_colaboracion_masiva.json)
+
+[ENTRARIA] pocos_vitales_muchos_utiles   (pocos_vitales_muchos_utiles.json)
+
+[CAERIA] preparate_para_marcharte_del_trato   (preparate_para_marcharte_del_trato.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'preparate_para_marcharte_del_trato': preposicion o articulo prohibido: del, para (regla 3)
+
+[CAERIA] proceso_como_cadena_de_etapas   (proceso_como_cadena_de_etapas.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'proceso_como_cadena_de_etapas': preposicion o articulo prohibido: de (regla 3)
+
+[ENTRARIA] proceso_venta_b2b   (proceso_venta_b2b.json)
+
+[ENTRARIA] programa_proteccion_denunciantes   (programa_proteccion_denunciantes.json)
+
+[ENTRARIA] project_management_plan   (project_management_plan.json)
+
+[ENTRARIA] pruebas_inadecuadas_prototipos   (pruebas_inadecuadas_prototipos.json)
+
+[ENTRARIA] publicidad_tradicional_pr   (publicidad_tradicional_pr.json)
+
+[CAERIA] ranking_proyectos_por_npv   (ranking_proyectos_por_npv.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'ranking_proyectos_por_npv': preposicion o articulo prohibido: por (regla 3)
+
+[ENTRARIA] referidos_franquiciados_existentes   (referidos_franquiciados_existentes.json)
+
+[CAERIA] restricciones_extremas_como_innovacion   (restricciones_extremas_como_innovacion.json)
+    guarda: guiones prohibidos en el texto del candidato
+      resumen_teorico columna 141: guion largo (U+2014)
+      resumen_teorico columna 172: guion largo (U+2014)
+
+[CAERIA] resumen_de_datos_graficos   (resumen_de_datos_graficos.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'resumen_de_datos_graficos': preposicion o articulo prohibido: de (regla 3)
+
+[ENTRARIA] revenue_pricing_hypothesis   (revenue_pricing_hypothesis.json)
+
+[ENTRARIA] revision_legal_marketing   (revision_legal_marketing.json)
+
+[CAERIA] riesgo_error_humano_en_mantenimiento   (riesgo_error_humano_en_mantenimiento.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'riesgo_error_humano_en_mantenimiento': preposicion o articulo prohibido: en (regla 3)
+
+[ENTRARIA] roadmap_despliegue_lean_six_sigma   (roadmap_despliegue_lean_six_sigma.json)
+
+[ENTRARIA] rotacion_equipo_fundador   (rotacion_equipo_fundador.json)
+
+[ENTRARIA] second_wind_energia_mental   (second_wind_energia_mental.json)
+
+[ENTRARIA] seeding_canal_viral   (seeding_canal_viral.json)
+
+[ENTRARIA] segmentacion_perfil_franquiciado   (segmentacion_perfil_franquiciado.json)
+
+[CAERIA] seleccion_de_metodo_de_pago   (seleccion_de_metodo_de_pago.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'seleccion_de_metodo_de_pago': preposicion o articulo prohibido: de (regla 3)
+
+[CAERIA] sistemas_alta_confiabilidad_hro   (sistemas_alta_confiabilidad_hro.json)
+    guarda: guiones prohibidos en el texto del candidato
+      titulo columna 44: guion largo (U+2014)
+
+[CAERIA] staging_de_inversiones_como_control   (staging_de_inversiones_como_control.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'staging_de_inversiones_como_control': preposicion o articulo prohibido: de (regla 3)
+
+[ENTRARIA] starting_points_innovacion   (starting_points_innovacion.json)
+
+[ENTRARIA] suenos_completos_diseno_responsable   (suenos_completos_diseno_responsable.json)
+
+[CAERIA] tipos_criterios_gate   (tipos_criterios_gate.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'tipos_criterios_gate': palabra fuera del castellano: gate (regla 1). El termino en otro idioma va en denominaciones.otros_idiomas
+
+[CAERIA] tipos_de_pasivos   (tipos_de_pasivos.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'tipos_de_pasivos': preposicion o articulo prohibido: de (regla 3)
+
+[CAERIA] trabajo_en_lotes_pequenos   (trabajo_en_lotes_pequenos.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'trabajo_en_lotes_pequenos': preposicion o articulo prohibido: en (regla 3)
+
+[CAERIA] trayectoria_del_accidente   (trayectoria_del_accidente.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'trayectoria_del_accidente': preposicion o articulo prohibido: del (regla 3)
+
+[ENTRARIA] tripod_beta_analisis_incidentes   (tripod_beta_analisis_incidentes.json)
+
+[CAERIA] uso_del_us_commercial_service   (uso_del_us_commercial_service.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'uso_del_us_commercial_service': preposicion o articulo prohibido: del (regla 3)
+
+[ENTRARIA] variance_analysis   (variance_analysis.json)
+
+[ENTRARIA] venta_primer_franquiciado   (venta_primer_franquiciado.json)
+
+[ENTRARIA] viaje_diagnostico_remedial   (viaje_diagnostico_remedial.json)
+
+[ENTRARIA] wallas_intimacion_fringe_consciousness   (wallas_intimacion_fringe_consciousness.json)
+
+[CAERIA] wizard_of_oz_testing   (wizard_of_oz_testing.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'wizard_of_oz_testing': palabra fuera del castellano: of (regla 1). El termino en otro idioma va en denominaciones.otros_idiomas
+
+[ENTRARIA] work_breakdown_structure   (work_breakdown_structure.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

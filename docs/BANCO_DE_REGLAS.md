@@ -360,3 +360,36 @@ jerarquia general (0,644), y por eso el umbral se puso en 0,60 y no en 0,70.
 
 Es el principio 4 del manual medido en casa propia: **las señales de superficie
 ordenan, nunca deciden.**
+
+## D.20. El barrido de estilo cubre lo que esta casa ESCRIBE, no lo que espera en la puerta (9 sep 2026, TANDA B)
+
+**Encontrado corriendo, no pensando.** El estreno de la aduana deposito el primer
+lote en `cuarentena/` y **el pre-commit se puso en rojo**: el barrido de guiones
+recorria el arbol entero, entraba en la bandeja de entrada y denunciaba los
+guiones largos de material AJENO que todavia esperaba juicio.
+
+**LAS DOS AVERIAS, y la segunda es la grave:**
+
+1. **La barata:** tener un lote depositado rompe TODOS los commits. La regla se
+   vuelve imposible de cumplir mientras hay trabajo en curso, y **una regla que
+   todos violan por obligacion de otras reglas enseña a violar reglas** (cosecha
+   7.F, la misma que retiro el tope de lineas del reporte).
+2. **LA GRAVE:** empuja a **limpiar un candidato antes de que la aduana lo mida**.
+   Un candidato retocado para que el barrido calle es un candidato del que ya no
+   se sabe como llego. **Eso es falsificar la medida en la puerta.**
+
+**LA LINEA, y es exactamente la de `.gitignore`:** se barre la RAIZ de cada
+bandeja, que es doctrina de esta casa y viaja en git
+(`cuarentena/LEEME.md`, `fuentes/FUENTES_CANONICAS.json`), y **no** sus
+subcarpetas, que son material de otro (`cuarentena/<lote>/`, `fuentes/<clave>/`).
+
+> **SE BARRE LO QUE ESTA CASA ESCRIBE. NI UN FICHERO MAS.**
+
+**NO BARRER LA BANDEJA NO ES INDULTAR.** La guarda `guiones` del gate sigue
+mirando a cada candidato, uno a uno, **cuando pide entrar**. La puerta es su
+sitio; la bandeja no. En el estreno esa guarda mordio a cuatro de los 163.
+
+Implementado en `comun.BANDEJAS_DE_ENTRADA` y `comun._es_bandeja`, con dos
+pruebas en `tests/test_aceptacion.py` (`PruebaBandejas`): una comprueba que la
+raiz SI se barre y la subcarpeta no, y **su caso positivo** comprueba que el
+gate sigue mordiendo el mismo guion dentro de un candidato.

@@ -201,13 +201,49 @@ def huella_de_texto(texto):
     return hashlib.sha256(normalizar_texto(texto).encode("utf-8")).hexdigest()[:16]
 
 
+# LAS DOS BANDEJAS DE ENTRADA NO SE BARREN, y el motivo es doctrina y no
+# comodidad. `cuarentena/` y `fuentes/<clave>/` guardan material AJENO que
+# TODAVIA NO HA PASADO LA ADUANA: libro crudo de otro autor, con los guiones que
+# su editor le puso, y candidatos sin juzgar.
+#
+# Barrerlas tiene dos averias. La barata: tener un lote depositado rompe todos
+# los commits, asi que la regla se volveria imposible de cumplir mientras hay
+# trabajo en curso, y una regla que todos violan por obligacion enseña a violar
+# reglas (cosecha 7.F). La grave: empuja a LIMPIAR un candidato antes de que la
+# aduana lo mida, y eso es falsificar la medida.
+#
+# La guarda `guiones` del gate SI los mira, uno a uno, cuando piden entrar. Ese
+# es su sitio: la puerta, no la bandeja. Lo encontro el estreno del 9 sep 2026,
+# cuando el primer lote depositado puso el pre-commit en rojo
+# (docs/ESTRENO_DE_LA_ADUANA.md).
+BANDEJAS_DE_ENTRADA = ("cuarentena", "fuentes")
+
+
+def _es_bandeja(carpeta, raiz):
+    """Cierto si la carpeta esta DENTRO de una bandeja de entrada.
+
+    LA RAIZ DE CADA BANDEJA SI SE BARRE, y sus subcarpetas no. Es la misma
+    linea exacta que traza `.gitignore` con `cuarentena/*/` y `fuentes/*/`:
+    `fuentes/FUENTES_CANONICAS.json` y `cuarentena/LEEME.md` son doctrina de
+    esta casa, viajan en git y obedecen la regla; `fuentes/<clave>/` y
+    `cuarentena/<lote>/` son material ajeno y no.
+
+    LO QUE SE BARRE ES LO QUE ESTA CASA ESCRIBE. Ni un fichero mas.
+    """
+    piezas = os.path.relpath(carpeta, raiz).replace("\\", "/").split("/")
+    return piezas[0] in BANDEJAS_DE_ENTRADA and len(piezas) > 1
+
+
 def archivos_del_repo(raiz=None, extensiones=None):
-    """Recorre el arbol de trabajo saltando .git y cachés."""
+    """Recorre el arbol de trabajo saltando .git, cachés y las bandejas."""
     raiz = raiz or RAIZ
     saltar = {".git", "__pycache__", ".pytest_cache", ".venv", "node_modules"}
     encontrados = []
     for carpeta, subcarpetas, ficheros in os.walk(raiz):
         subcarpetas[:] = [s for s in subcarpetas if s not in saltar]
+        if _es_bandeja(carpeta, raiz):
+            subcarpetas[:] = []
+            continue
         for fichero in ficheros:
             ruta = os.path.join(carpeta, fichero)
             if extensiones is not None:

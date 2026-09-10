@@ -54,6 +54,17 @@ fichero.
 
 `.gitignore` ignora `cuarentena/*/` y rescata este LEEME, que si es doctrina.
 
+## El barrido de guiones NO entra aqui, y es a proposito
+
+**Un candidato puede llegar con guiones largos, y no pasa nada:** es
+material ajeno esperando juicio. El barrido de estilo cubre lo que esta
+casa escribe, no lo que espera en la puerta (D.20). **NO LIMPIES UN
+CANDIDATO PARA QUE EL BARRIDO CALLE**: un candidato retocado antes de la
+medida es un candidato del que ya no se sabe como llego.
+
+La guarda `guiones` del gate lo mira igual cuando pide entrar, y ahi si
+lo tumba. Esa es la sede correcta: la puerta, no la bandeja.
+
 > **DECISION ABIERTA PARA EL FUNDADOR:** si prefiere que los lotes SI viajen en
 > el repo (para que un informe que cita un fichero pueda comprobarse contra el
 > arbol, que es el espiritu de *la ruta que promete prueba es cifra*), se quita
