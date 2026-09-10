@@ -6272,7 +6272,7 @@ en su propia TAREA 3.
 | 1 | tramo A, cola del Cap. 5 (`cap_06.md` L247 a L455) | **CERRADA** | frontera de **siete** piezas publicada antes de cortar (el encargo nombra seis: la septima es un recuadro con interrogacion en el titulo). **15 candidatos, los 15 por la aduana al primer intento, 0 caerian.** 3 vecinos levantados y leidos, los 3 `SANO`. `D.30` encontro **5 puentes sobre 90 pasos, el 5,6 por ciento**, corregidos en el acto |
 | 2 | tramo B, el Cap. 6 (`cap_07.md` L9 a L41) con el borde declarado | **CERRADA** | borde declarado en bloque propio con las lineas de los dos ficheros, **y una discrepancia con la descripcion del encargo: la cabecera del Cap. 6 SI esta en `cap_07.md`**; lo que cruza el borde es el hilo del relato. **CERO candidatos**, y no por pobre sino por repetido: recapitula cuatro nodos que ya viven |
 | 3 | tramo C, material de cierre (`cap_07.md` L43 a L429), JUZGADO antes que cortado | **CERRADA** | **siete** piezas juzgadas de siete (el encargo nombra cinco: dos bloques de publicidad no estaban en la lista). **CERO minables, 3.479 palabras descartadas con su razon y su cita una a una.** Las biografias medidas y no supuestas: **cero imperativos en 181 lineas** |
-| 4 | informe del lote y commits | ABIERTA | |
+| 4 | informe del lote y commits | **CERRADA** | `informe --carpeta cuarentena/smart_who` sobre **15 candidatos** contra un grafo de **52**: **13 entrarian, 2 bloquearian, 0 caerian, 0 chocan**. `D.31` comprobada en vivo: los 44 insertados **no se cuentan**. **Siete commits**, tres de tramo con sus JSON dentro y **dos de sellado previo**. **CERO inserciones** |
 | 5 | cierre del lote 2 con sus cuatro medidas por capitulo | ABIERTA | |
 
 ### Discutibles marcados ANTES de saber si acierto
@@ -7059,3 +7059,89 @@ suponia que `BIOGRAPHIES` era la que de verdad habia que leer, y acerto en que e
 la unica con duda razonable. **Donde no acerto la lista fue en las dos piezas de
 publicidad que no estaban en ella**, y las dos habrian pasado inadvertidas dentro
 de un descarte en bloque de `FOOTNOTES`.
+
+---
+
+## TAREA 4. EL INFORME DEL LOTE Y LOS COMMITS
+
+### 4.a. EL SALDO DEL LOTE ENTERO, pegado tal como salio
+
+    python forja.py informe --carpeta cuarentena/smart_who
+
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 15
+    nodos en el grafo de destino: 52
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 13
+      BLOQUEARIAN esperando veredicto  : 2   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 3
+      por candidato bloqueado          : menor 1, mediana 2, mayor 2
+      que señal levanta cada vecindad  : familia_id 3
+
+**CERO CAERIAN Y CERO CHOCAN.** Los dos bloqueos son los de 1.g, los tres vecinos
+estan leidos y los tres veredictos escritos.
+
+**`D.31` COMPROBADA EN VIVO:** el informe dice **15 candidatos revisados**, no 59.
+Los 44 que el fundador autorizo el 10 sep 2026 estan en
+`cuarentena/_insertados/smart_who/` y **el informe no los cuenta**. Lo que se ve es
+lo nuevo, que es exactamente lo que la regla promete.
+
+**Y EL GRAFO DE DESTINO SON 52 NODOS, no 8.** Es la primera vez que esta casa
+escribe contra un grafo con material de su propio libro dentro, y **la aduana
+levanto vecinos de verdad**: tres, los tres por `familia_id`, ninguno por
+`similitud_texto`.
+
+### 4.b. LOS COMMITS, uno por tramo, con los JSON dentro (`D.25`)
+
+**La tabla se lee de git** (`EXTRACTOR.md` 5: la identidad se lee de git), con
+`git log --format='%h %ad %s' --date=format:'%H:%M:%S'`:
+
+    fc450ea 18:08:20 Arnes: loop.log y ultimo_extractor.json de la vuelta 7, antes de abrir la 8
+    8f1f6a4 18:14:28 Vuelta 8, TAREA 0.a y 0.b: las 28 aristas esperadas, publicadas ANTES de declarar ninguna
+    30b9e9d 18:17:38 Vuelta 8, TAREA 0: las 28 aristas de serie del lote 2 declaradas por lectura. Grafo de 9 a 37
+    227085a 18:22:45 Vuelta 8, TAREA 1.a a 1.e: la frontera del tramo A publicada ANTES de cortar, con siete piezas y su fallo
+    df661e4 18:36:28 Vuelta 8, TRAMO A (cap_06 L247-455): 15 candidatos en cuarentena, cero caidas
+    4f61177 18:38:05 Vuelta 8, TRAMO B (cap_07 L9-41): cero candidatos, con el borde cap_06/cap_07 declarado
+    b000563 18:39:15 Vuelta 8, TRAMO C (cap_07 L43-429): siete piezas juzgadas, cero minables
+
+| commit | que cierra | JSON dentro |
+|---|---|---:|
+| `fc450ea` | lo pendiente del arnes, antes de tocar nada (`EXTRACTOR.md` 1.1) | 0 |
+| `8f1f6a4` | **la prevision de la TAREA 0, sellada antes del primer comando** | 0 |
+| `30b9e9d` | las 28 aristas declaradas | 0, pero mueve `dataset/` y `bitacora/` |
+| `227085a` | **la frontera del tramo A, sellada antes de escribir el primer candidato** | 0 |
+| `df661e4` | **TRAMO A** | **15** |
+| `4f61177` | **TRAMO B** | 0, y su mensaje dice por que |
+| `b000563` | **TRAMO C** | 0, y su mensaje dice por que |
+
+**DOS COMMITS SON DE SELLADO Y NO DE TRABAJO, y es deliberado:** `8f1f6a4` fija la
+prevision de 28 aristas **antes** de declarar ninguna y `227085a` fija la frontera
+de siete piezas **antes** de cortar. Sin ellos, las dos coincidencias de esta
+vuelta (28 de 28 previstas, siete piezas de siete) **valdrian mi palabra**. Con
+ellos se comprueban contra un fichero anterior al trabajo.
+
+**LOS TRES COMMITS DE TRAMO llevan su cifra en el mensaje**, que es lo que
+`EXTRACTOR.md` 17 pide: quien lea *del tramo A salieron 15 candidatos* **puede
+abrir los quince**.
+
+### 4.c. CERO INSERCIONES, dicho por su nombre
+
+**`MODO_INSERCION=cuarentena`, y no he corrido `python forja.py insertar` ni una
+vez.** Los 15 candidatos estan en `cuarentena/smart_who/` y **ahi se quedan**.
+
+**La insercion es una autorizacion del fundador, no un default**, y en esta corrida
+no la ha dado. **Lo que este informe es, es la prueba que se lee para darla.**
+
+**Y lo que la TAREA 0 SI movio, dicho para que no se confunda con una insercion:**
+`python forja.py arista` escribio 28 aristas en `dataset/nodos.jsonl` y 28
+veredictos en `bitacora/VEREDICTOS.jsonl`. **Eso no es insertar un nodo:** no entro
+ni un nodo (52 antes, 52 despues), es la operacion que el fundador creo el 10 sep
+2026 para esto exactamente, y **la ordena la TAREA 0 del encargo como bloqueante.**
