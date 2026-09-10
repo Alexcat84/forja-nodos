@@ -4247,3 +4247,79 @@ eso va el primero.
 | # | discutible | donde |
 |---|---|---|
 | | | |
+
+---
+
+## TAREA 0. LAS CUATRO COMPROBACIONES DE APERTURA, CORRIDAS POR MI, SOBRE LOS DOS FICHEROS
+
+**Su resultado va como fila propia y ANTES de la TAREA 1**, como manda el encargo.
+**Las cuatro en verde, y la cuarta es la que yo propuse en C.5.3.**
+
+| # | comprobacion | salida del instrumento | veredicto |
+|---:|---|---|---|
+| 1 | `ls fuentes/smart_who/` | `cap_01.md cap_02.md cap_03.md cap_04.md cap_05.md cap_06.md cap_07.md` | **VERDE**, siete ficheros |
+| 2 | `python -c "import json,io; print('smart_who' in json.load(io.open('fuentes/FUENTES_CANONICAS.json',encoding='utf-8')))"` | `True` | **VERDE** |
+| 3a | `head -8 fuentes/smart_who/cap_05.md` | `unidad: Cap. 4` / `titulo_textual: Select: The Four Interviews for Spotting A Players` | **VERDE**, coincide con el encargo |
+| 3b | `head -8 fuentes/smart_who/cap_06.md` | `unidad: Cap. 5` / `titulo_textual: Sell: The Top Five Ways to Seal the Deal` | **VERDE** |
+| 4a | `grep -n '[^[:space:]]' fuentes/smart_who/cap_05.md \| tail -1` | `365:Imagine putting all of that work into finding Mr. or Ms. Right and then losing them in the eleventh hour!...` | **VERDE**, es la que el encargo anuncia |
+| 4b | `grep -n '[^[:space:]]' fuentes/smart_who/cap_06.md \| tail -1` | `455:The Americans beat the heavily favored Italian team by forty-four seconds.` | **VERDE**, `cap_06.md` muere en L455 |
+
+**LA CUARTA LINEA HIZO SU TRABAJO EN `cap_06.md` Y CONVIENE DECIR COMO.** El
+encargo da el Cap. 5 como `cap_06.md` L9 a L455 **sin haber dicho que el fichero
+termine ahi**. La cuarta comprobacion es la que convierte ese `L455` de dato
+heredado en dato medido: el fichero tiene 456 lineas y la 456 esta vacia, asi que
+**L455 es a la vez el final del capitulo y el final del fichero, y el Cap. 5 NO
+se derrama a `cap_07.md`**. Eso es exactamente lo que la comprobacion existe para
+saber, y en `cap_05.md` habria cazado lo contrario.
+
+### 0.b. EL ESTADO CONTRA EL QUE ABRO, MEDIDO POR MI ANTES DE LA PRIMERA OPERACION
+
+| medida | mi cifra | la del encargo (`6c396ed`) | |
+|---|---:|---:|---|
+| nodos vivos en el dataset | **8** | 8 | coincide |
+| pasos vigentes en el grafo (`pasos_accionables` de los vivos) | **43** | 43 | coincide |
+| aristas declaradas | **4 extremos** (`nodos_previos` mas `nodos_siguientes`), 2 relaciones | 2 relaciones, 4 extremos | coincide |
+| veredictos en bitacora (`wc -l bitacora/VEREDICTOS.jsonl`) | **2** | 2 | coincide |
+| candidatos en `cuarentena/smart_who/` | **17** | 17 | coincide |
+| pasos en la bandeja de cuarentena | **100** | 100 | coincide |
+| fuentes canonicas registradas / en uso en el dataset | **13 / 2** (`manual_sistema_conocimiento`, `onu_consumidor`) | 13 / 2 | coincide |
+| **informe del lote en seco, ANTES de tocar nada** | **17 revisados: 17 ENTRARIAN, 0 bloquearian, 0 caerian, 0 chocan** | 17, los 17 entrarian | coincide |
+| pares que levantarian sobre los 17 | **38 de 272**: 34 familia, 10 paso contra nodo, **0 similitud** | 38 de 272, 34 / 10 / 0 | coincide |
+
+Comando de la ultima fila, corrido en esta vuelta sobre `src.aduana.medir`, los 17
+candidatos contra si mismos, pares ordenados: `272` comparaciones, `38` con al
+menos una señal por encima de umbral. **Cuatro de esos 38 los ve SOLO la señal 3**,
+y son los dos pares mutuos que ya declare en 3.i de la vuelta 5:
+`abastecer_flujo_candidatos` contra `pedir_referencias_empleados` (0,607) y
+`contratar_investigadores_reclutamiento` contra `contratar_reclutadores_externos`
+(0,730).
+
+### 0.c. DISCREPANCIA DECLARADA, y es de una celda del encargo, no de una comprobacion
+
+**La tabla de unidades del encargo publica `Cap. 5 | 11.370 palabras`. Yo mido
+`11.339` sobre el rango que la propia tabla define.** No lo resuelvo copiando
+(seccion 5), asi que lo mido y lo desgloso:
+
+| tramo | mi medicion |
+|---|---:|
+| `cap_05.md` L363 a L365 | **55** |
+| `cap_06.md` L9 a L455 | **11.284** |
+| **Cap. 5, la unidad** | **11.339** |
+| `cap_06.md` L1 a L456, el FICHERO entero | 11.315 |
+| 11.315 mas 55 | **11.370**, la cifra del encargo |
+
+**LA DIFERENCIA SON 31 PALABRAS Y TIENEN NOMBRE: la cabecera YAML de `cap_06.md`,
+L1 a L7** (`---`, `libro:`, `edicion:`, `unidad:`, `titulo_textual:`,
+`fidelidad:`, `---`). El encargo conto el **fichero** en la fila del Cap. 5 y el
+**rango** en la fila del Cap. 4: su `12.989` para el Cap. 4 **reproduce exacto**
+contra `cap_04.md` L31 a L321 (5.900) mas `cap_05.md` L9 a L361 (7.089), y sus
+323 bloques tambien. **Las dos filas se midieron con dos varas distintas.**
+
+**MANDO LA MIA, que es la del rango**, porque la cabecera no es material del libro
+y porque el propio encargo define la unidad por lineas. **Y no cambia ninguna
+decision de esta vuelta**: el tramo real de la vuelta es **24.328 palabras**
+(12.989 mas 11.339) en vez de 24.359, un 0,13 por ciento menos.
+
+**Discutible 1**, y lo pongo el primero por lo que costaria: si el auditor sostiene
+que la unidad incluye la cabecera, **mis dos denominadores de la TAREA 4 quedan mal
+en la fila del Cap. 5**, y con ellos la comparacion de densidad entre capitulos.
