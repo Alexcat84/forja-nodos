@@ -952,3 +952,69 @@ retoca deja de ser un registro.
 cuenta; **su caso positivo**, la misma carpeta sin archivar si se cuenta, porque
 si no la primera solo probaria que el informe calla; un lote mezclado declara
 cuantos no conto; y la marca es el segmento y no el nombre.
+
+## D.32. EL CIERRE DE UN LOTE ABRE EL SIGUIENTE (10 sep 2026, decision del fundador)
+
+*Cita: decision del fundador del 10 sep 2026, al llenar la bandeja entera y
+levantar la parada de la vuelta 3.*
+
+> **EL ACTA QUE CIERRA UN LOTE ESCRIBE EL ENCARGO DEL SIGUIENTE, SIN PARADA ENTRE
+> MEDIAS**, siempre que sus **dos condiciones de apertura** esten medidas en
+> verde. **La excepcion es una sola: que el fundador tenga una decision
+> pendiente.**
+
+**LAS DOS CONDICIONES DE APERTURA, que son las que la vuelta 3 midio en rojo:**
+
+1. **el material esta en `fuentes/<clave>/`**, con sus capitulos;
+2. **la clave esta en `fuentes/FUENTES_CANONICAS.json`**, con su ficha.
+
+**Desde el 10 sep 2026 las dos estan en verde PARA LOS DIEZ LOTES QUE QUEDAN**
+(`docs/BANDEJA_DE_ENTRADA.md`, `docs/loop/ORDEN_DE_LOTES.md`), asi que el motivo
+que paro la vuelta 3 no se puede repetir.
+
+### Por que esto es una regla y no una comodidad
+
+**El bucle gasto una vuelta entera, dos asientos y su coste, en descubrir que no
+tenia libro.** El extractor abrio el repo, busco `fuentes/smart_who/`, escribio
+que no estaba y se detuvo; el auditor lo verifico y escribio la parada. **Todo
+correcto, y todo para producir una frase que se sabia de antemano.**
+
+> **UNA PARADA QUE SE PODIA PREVER NO ES UNA PARADA: ES UNA VUELTA GASTADA EN
+> AVERIGUAR ALGO QUE YA ESTABA ESCRITO.**
+
+**Y EL ORDEN NO SE INVENTA:** el lote siguiente es el que dice
+`docs/loop/ORDEN_DE_LOTES.md`, y su volumen por vuelta sale de la metrica
+`PASOS INVENTADOS POR CAPITULO` del acta que cierra (`AUDITOR_FORJA.md` seccion
+8). **El acta no elige libro: lee cual toca.**
+
+### Lo que el acta de cierre tiene que hacer, en orden
+
+1. **Medir las dos condiciones del lote siguiente** y publicar las dos medidas.
+   **Medidas, no supuestas:** `ls` de la carpeta y la clave leida de la tabla.
+2. **Si las dos estan en verde: escribir `docs/loop/PROMPT_SIGUIENTE.md`** con el
+   encargo del lote siguiente, su volumen por vuelta y sus tareas. **No escribe
+   `PARA_ALEXIS.md`.**
+3. **Si alguna esta en rojo: entonces si es parada**, con su medida delante.
+4. **Y si el fundador tiene una decision pendiente, tambien es parada**, aunque
+   las dos condiciones esten en verde.
+
+### LA INSERCION VA POR OTRO CAMINO, Y NO BLOQUEA
+
+**Un lote cerrado y SIN INSERTAR no detiene la extraccion del siguiente.** Son dos
+cosas distintas desde `D.26`:
+
+| |  |
+|---|---|
+| **extraer** | lo hace el bucle, a cuarentena, en `MODO_INSERCION=cuarentena` |
+| **insertar** | **es una autorizacion del fundador**, que se pide con el informe del lote delante |
+
+**El acta pide la autorizacion de insercion del lote que cierra Y ABRE la
+extraccion del siguiente, en el mismo documento.** Que el fundador tarde en leer
+un informe no es motivo para que el bucle se pare: **la cuarentena existe
+justamente para que esas dos velocidades no tengan que coincidir.**
+
+**LO QUE SIGUE SIENDO PARADA, y esta regla no lo toca:** una contradiccion entre
+reglas, una cifra publicada contradicha, una peticion de mover un umbral o una
+vara, y cualquier decision que sea del fundador. `D.32` acorta el camino entre dos
+lotes; **no acorta ninguna de las condiciones de parada de
+`AUDITOR_FORJA.md` seccion 3.**

@@ -110,6 +110,14 @@ se registra con tu nombre.
 CAPITULO`, **con una fila por capitulo y no una media de vuelta** (seccion 8). De
 ella sale el tamaño del lote siguiente, asi que **no es opcional**.
 
+**Y SI EL ACTA CIERRA UN LOTE, ABRE EL SIGUIENTE** (`D.32`, 10 sep 2026): mides
+las dos condiciones de apertura del lote que toca segun
+`docs/loop/ORDEN_DE_LOTES.md` (que el material este en `fuentes/<clave>/` y que la
+clave este en la tabla canonica), **publicas las dos medidas**, y si estan en
+verde **escribes el encargo del lote siguiente en vez de una parada**. La
+insercion del lote que cierras se pide aparte y **no bloquea** la extraccion del
+siguiente.
+
 ## 2. DISCIPLINA DEL DICTADO (tus propios limites)
 
 - **Nada se afirma sin haberse consultado EN ESTA vuelta:** estados, cifras,

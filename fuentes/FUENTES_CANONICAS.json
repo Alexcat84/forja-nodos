@@ -10,6 +10,66 @@
     "titulo_completo": "Directrices de las Naciones Unidas para la Proteccion del Consumidor",
     "autor": "Naciones Unidas, UNCTAD",
     "anio": "2016",
-    "notas": "UNCTAD/DITC/CPLP/MISC/2016/1, Nueva York y Ginebra 2016. Aprobadas por la Asamblea General en la resolucion 39/248 de 16 abril 1985, ampliadas por ECOSOC 1999/7 de 26 julio 1999, revisadas y aprobadas por la Asamblea General 70/186 de 22 diciembre 2015. LOTE 1 del mundo 11, el de calibracion (D.24). Recorte verbatim en fuentes/onu_consumidor/, cuatro unidades: cap_00 portada y creditos, cap_01 apartado V-B parrafos 16 a 19, cap_02 apartado V-C parrafos 20 a 32, cap_03 apartado V-F parrafos 37 a 41."
+    "notas": "UNCTAD/DITC/CPLP/MISC/2016/1, Nueva York y Ginebra 2016. Aprobadas por la Asamblea General en la resolucion 39/248 de 16 abril 1985, ampliadas por ECOSOC 1999/7 de 26 julio 1999, revisadas y aprobadas por la Asamblea General 70/186 de 22 diciembre 2015. LOTE 1, CERRADO E INSERTADO el 10 sep 2026 (docs/CIERRE_LOTE_1.md). Recorte verbatim en fuentes/onu_consumidor/, cuatro unidades: cap_00 portada y creditos, cap_01 apartado V-B parrafos 16 a 19 CON MARCA FRONTERA, cap_02 apartado V-C parrafos 20 a 32, cap_03 apartado V-F parrafos 37 a 41. 1.534 palabras de cuerpo."
+  },
+  "smart_who": {
+    "titulo_completo": "Who: The A Method for Hiring",
+    "autor": "Geoff Smart y Randy Street",
+    "anio": "2008",
+    "notas": "ghSMART & Company, Inc. eISBN 978-0-345-51044-0. LOTE 2. Recorte verbatim en fuentes/smart_who/, 7 capitulos (cap_01 a cap_07), 44.133 palabras de cuerpo."
+  },
+  "zhuo_manager": {
+    "titulo_completo": "The Making of a Manager: What to Do When Everyone Looks to You",
+    "autor": "Julie Zhuo",
+    "anio": "2019",
+    "notas": "ISBN 9780735219571 (ebook), 9780735219564 (tapa dura), 9780525540427 (edicion internacional). LOTE 3. Recorte verbatim en fuentes/zhuo_manager/, 12 capitulos (cap_01 a cap_12), 70.041 palabras de cuerpo."
+  },
+  "scott_radical_candor": {
+    "titulo_completo": "Radical Candor: Fully Revised and Updated Edition",
+    "autor": "Kim Scott",
+    "anio": "2019",
+    "notas": "St. Martin's Press, imprint de St. Martin's Publishing Group, Nueva York. ISBN 978-1-250-23537-4 (tapa dura), 978-1-250-23538-1 (ebook). LOTE 4. Recorte verbatim en fuentes/scott_radical_candor/, 15 unidades (cap_00 pagina de copyright, cap_01 a cap_14), 108.161 palabras de cuerpo. cap_00 es la unica unidad del recorte sin palabras declaradas en el MANIFIESTO del mundo 11."
+  },
+  "marquet_turn_the_ship": {
+    "titulo_completo": "Turn the Ship Around! A True Story of Turning Followers into Leaders",
+    "autor": "L. David Marquet",
+    "anio": "2012",
+    "notas": "Penguin Group. ISBN 978-1-101-62369-5. LOTE 5. Recorte verbatim en fuentes/marquet_turn_the_ship/, 17 capitulos (cap_01 a cap_17), 33.702 palabras de cuerpo."
+  },
+  "openstax_business_ethics": {
+    "titulo_completo": "Business Ethics",
+    "autor": "OpenStax, Rice University",
+    "anio": "2018",
+    "notas": "ISBN-13 978-1-947172-56-2 (impreso), 978-1-947172-57-9 (PDF). LICENCIA CC BY 4.0: cada fichero del recorte lleva su atribucion obligatoria en cursiva, que NO es texto del libro y no se mina. LOTE 6. Recorte verbatim en fuentes/openstax_business_ethics/, 17 capitulos (cap_01 a cap_17), 54.148 palabras de cuerpo."
+  },
+  "grove_high_output": {
+    "titulo_completo": "High Output Management",
+    "autor": "Andrew S. Grove",
+    "anio": "2015",
+    "notas": "Vintage Books edition, con Foreword de Ben Horowitz. LOTE 7. Recorte verbatim en fuentes/grove_high_output/, 18 capitulos (cap_01 a cap_18), 64.372 palabras de cuerpo."
+  },
+  "bernerslee_bananas": {
+    "titulo_completo": "How Bad Are Bananas? The Carbon Footprint of Everything",
+    "autor": "Mike Berners-Lee",
+    "anio": "PENDIENTE",
+    "notas": "EDICION PENDIENTE, y se declara en vez de inventarse: el propio recorte dice que es la edicion revisada de 2020 segun el texto de la Introduction, pero NO localizo pagina de copyright en el PDF, asi que no hay ISBN ni editorial verificados. Antes de insertar el primer nodo de este libro hay que cerrar la ficha (manual principio 8: la fuente es un campo sagrado). LOTE 8. Recorte verbatim en fuentes/bernerslee_bananas/, 19 capitulos (cap_01 a cap_19), 21.509 palabras de cuerpo."
+  },
+  "gerber_emyth": {
+    "titulo_completo": "The E-Myth Revisited: Why Most Small Businesses Don't Work and What to Do About It",
+    "autor": "Michael E. Gerber",
+    "anio": "2007",
+    "notas": "HarperCollins e-books, EPub Edition mayo 2007. ISBN 9780061741654 (ebook), 0-06-072318-1 (tapa dura). LOTE 9. Recorte verbatim en fuentes/gerber_emyth/, 22 capitulos (cap_01 a cap_22), 62.648 palabras de cuerpo. SU CAPITULO 17 NO ESTA AQUI: quedo apartado por el plan de recorte del mundo 11 y vive bajo la clave gerber_emyth_cap17_reservado. La serie salta de cap_16 a cap_18 y ese salto es deliberado."
+  },
+  "openstax_org_behavior": {
+    "titulo_completo": "Organizational Behavior",
+    "autor": "OpenStax, Rice University",
+    "anio": "2019",
+    "notas": "ISBN-13 978-1-947172-71-5 (impreso), 978-1-947172-72-2 (PDF). LICENCIA CC BY 4.0: cada fichero del recorte lleva su atribucion obligatoria en cursiva, que NO es texto del libro y no se mina. LOTE 10, el mayor. Recorte verbatim en fuentes/openstax_org_behavior/, 32 capitulos (cap_01 a cap_32), 93.408 palabras de cuerpo."
+  },
+  "gerber_emyth_cap17_reservado": {
+    "titulo_completo": "The E-Myth Revisited, capitulo 17: Your Marketing Strategy",
+    "autor": "Michael E. Gerber",
+    "anio": "2007",
+    "notas": "RESERVADA, Y ULTIMA EN EL ORDEN. Es un solo capitulo, apartado a proposito por el plan de recorte del mundo 11 para el mundo 10 (CENSO_DE_CUERPOS.md lo marca 'a mundo_10_reservado', INDICE_REAL lo llama 'exactamente el titulo a apartar'). Va en carpeta propia y NO dentro de gerber_emyth, porque meterlo con su libro borraria el hecho que lo define. Misma edicion que gerber_emyth. Recorte verbatim en fuentes/gerber_emyth_cap17_reservado/cap_17.md, 3.845 palabras de cuerpo. ENTRA LA ULTIMA, cuando el grafo ya sepa con quien compararla."
   }
 }

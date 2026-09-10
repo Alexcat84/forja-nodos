@@ -1,5 +1,21 @@
 # PARADA DEL 10 SEP 2026: FALTA EL LIBRO DEL LOTE 2
 
+> **DECISION DEL FUNDADOR (10 sep 2026): se llena la bandeja entera de una vez,
+> mundos 10 y 11, y el lote 2 arranca.**
+
+> **ARCHIVADA, Y RESUELTA POR EXCESO.** Esta parada pedia un libro. El fundador
+> trajo los once: 164 capitulos y 557.501 palabras en `fuentes/`, con sus once
+> claves registradas en `fuentes/FUENTES_CANONICAS.json`. **Las dos condiciones
+> que el auditor midio en rojo estan ahora en verde, y no solo para el lote 2:
+> para los diez lotes que quedan.**
+>
+> Se archiva **entera y sin tocar una palabra de su cuerpo**. El bucle ya no esta
+> detenido por ella: vive en `docs/loop/paradas/` y el arnes solo mira
+> `docs/loop/PARA_ALEXIS.md`.
+
+---
+
+
 > **Escrito por el auditor del bucle del extractor, el 10 sep 2026, al cerrar la
 > vuelta 3.** Sede del auditor (`AUDITOR_FORJA.md` 5.6, **`D.28`**). El extractor
 > no escribe aqui, y no lo hizo: declaro su parada en su reporte, que es lo que le
