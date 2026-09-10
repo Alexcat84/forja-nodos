@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando ya tienes escrita la mision del puesto y toca la segunda parte de la tarjeta de puntuacion. El libro pone los resultados como el segundo de los cuatro pasos, y dice que las competencias fluyen de estos dos primeros elementos.",
+  "denominaciones": {
+    "nombre_largo": "Los resultados del puesto, lo que hay que lograr",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Outcomes: Defining What Must Get Done"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "De tres a ocho resultados escritos en la tarjeta de puntuacion, especificos y objetivos, ordenados por importancia, que describen lo que la persona tiene que lograr para alcanzar un desempeño A.",
+  "escala_minima": "El libro los ejemplifica en un vicepresidente de ventas, un director de marketing y un coordinador de proyeccion comunitaria, y dice que la mayoria de los puestos para los que contrata tienen de tres a ocho resultados.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "definir_resultados_tarjeta_puntuacion",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Escribe de tres a ocho resultados especificos y objetivos que la persona tenga que lograr para alcanzar un desempeño A, y ordenalos por orden de importancia.",
+    "Escribe lo que hay que LOGRAR y no las actividades que la persona va a estar haciendo. El par de ejemplos del libro lo enseña entero: la descripcion de puesto tipica dice visitar clientes y vender, y la tarjeta de puntuacion dice hacer crecer los ingresos de 25 millones de dolares a 50 millones antes del final del tercer año.",
+    "Cuando el puesto lo permita, asigna un objetivo numerico. El libro dice que los puestos de ventas dan resultados especialmente nitidos justamente por eso: o lo vendes o no lo vendes.",
+    "Cuando el puesto no permita cuantificar el resultado con esa facilidad, busca hacerlo lo mas objetivo y observable posible. Los ejemplos del libro: para un director de marketing, crear e implantar una nueva campaña de marketing en los 180 dias siguientes a la fecha de incorporacion; para un coordinador de proyeccion comunitaria, mayor visibilidad o una asistencia mayor y mas variada en los foros de la comunidad, que se puede contar por cabezas.",
+    "Toma los criterios objetivos de la lista que el libro dice que sus clientes han ido encontrando a lo largo de los años: la retroalimentacion de los clientes, los planes entregados a tiempo y los presupuestos cumplidos."
+  ],
+  "resumen_teorico": "Los resultados son la segunda parte de la tarjeta de puntuacion y describen lo que una persona necesita lograr en el papel. Su virtud es que criban a los candidatos desde el principio: o el vicepresidente de ventas es capaz de cerrar 50 millones de dolares de negocio antes del final del tercer año o no lo es, y un jugador A podra y un jugador B o C no. La doctrina del liston, que el libro deja deliberadamente sin cifra: pon los resultados suficientemente altos pero todavia dentro de lo razonable, y espantaras a los jugadores B y C a la vez que atraes a los jugadores A, que prosperan con retos grandes que encajan con sus habilidades. La razon que da el libro es que la gente no quiere fracasar ni quiere pasar por el trastorno de mudarse a otra empresa, a otra ciudad o a otro pais si sabe que sus posibilidades de exito son minimas. Y la vuelta de tuerca con la que el capitulo cierra la seccion: ironicamente, toda esa concrecion libera al recien contratado para dar lo mejor de si, porque sabe por que se le va a juzgar y que considera importante la empresa y el jefe, y en vez de adivinar como hacerlo bien dando bandazos entre una docena de frentes tiene el plan de juego delante. Eso es liberador, no limitante.",
+  "titulo": "Definir los resultados del puesto en la tarjeta de puntuacion"
+}

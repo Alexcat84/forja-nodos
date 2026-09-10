@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando empiezas la tarjeta de puntuacion de un puesto. Es el primero de sus cuatro pasos y va antes que los resultados y que las competencias, porque el libro dice que las competencias fluyen directamente de los dos primeros elementos de la tarjeta y que es la mision la que define la esencia del trabajo.",
+  "denominaciones": {
+    "nombre_largo": "La mision del puesto, la esencia del trabajo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Mission: The Essence of the Job"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La mision del puesto escrita: una declaracion corta, de una a cinco frases y en lenguaje llano, que dice por que existe el puesto, y que candidatos, reclutadores y el resto del equipo entienden sin tener que hacer preguntas aclaratorias.",
+  "escala_minima": "El libro la ejemplifica con un representante de atencion al cliente y con un vicepresidente de ventas, y advierte que no vale sacar una mision de la estanteria cada vez que el puesto se vuelve a cubrir.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "redactar_mision_tarjeta_puntuacion",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Escribe una declaracion corta, de una a cinco frases, que describa por que existe el puesto.",
+    "Reduce el trabajo a su esencia, de forma que todo el mundo entienda por que hace falta contratar a alguien para esa plaza. El ejemplo del libro es la mision del vicepresidente de ventas: hacer crecer los ingresos mediante el contacto directo con clientes industriales, y nada mas que eso.",
+    "Escribela en lenguaje llano y no en la jerga que tanto abunda hoy en los negocios. Quita la hojarasca, que es lo que mantiene las misiones cortas, agradables y sobre todo comprensibles.",
+    "Comprueba que la mision es buena por esta señal: los candidatos, los reclutadores e incluso otros miembros de tu equipo entienden que estas buscando sin tener que hacer preguntas aclaratorias.",
+    "No saques una mision de la estanteria para desempolvarla cada vez que el puesto se vuelve a cubrir: por eso la tarjeta de puntuacion tiene que ser un documento vivo y no estatico."
+  ],
+  "resumen_teorico": "La mision es el resumen ejecutivo del proposito central del puesto, y es la primera de las tres partes de la tarjeta de puntuacion. El contraejemplo que el libro pone para enseñar que es la jerga: la mision de este papel es maximizar el valor para el accionista apalancando los activos nucleares de la division NPC mientras se minimizan las deficiencias y ofuscaciones de comunicacion. Los autores dicen que es una exageracion, pero no por mucho, y apuestan a que en cualquier empresa se encuentran frases sin sentido parecidas, escritas por alguien que no tenia ni idea de cual era el trabajo de verdad. La advertencia que el capitulo cuelga de la mision es la del atleta polivalente: las declaraciones de mision te ayudan a evitar una de las trampas mas comunes de la contratacion, que es contratar al generalista brillante en vez del especialista, porque los requisitos de un puesto rara vez son generales. Los casos que el libro pone con su nombre son el de Nick Chabraja, consejero delegado de General Dynamics, que se equivoco poniendo a un excelente desarrollador de negocio donde hacia falta un hombre de operaciones y tardo un par de años en corregirlo, y el de Alec Gores, del Gores Group, que mira a su equipo como a un equipo de futbol americano y no intenta que el quarterback juegue de center. Arthur Rock lo dijo de Intel: primero Bob Noyce el inventor y promotor, luego Gordon Moore el tecnologo, y luego Andy Grove el que empuja.",
+  "titulo": "Redactar la mision del puesto en la tarjeta de puntuacion"
+}

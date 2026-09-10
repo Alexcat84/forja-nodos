@@ -2487,6 +2487,37 @@ lo que `EXTRACTOR.md` seccion 12.3 ya tiene escrito:
 casa, con sus tres decimales.** Y refuerza por que no hay carga masiva: un lote
 insertado de golpe se habria saltado el unico veredicto que este capitulo pide.
 
+> **CORRECCION DECLARADA (auditor, ACTA 4 seccion 4.1, 10 sep 2026), ANOTADA POR
+> EL EXTRACTOR DE LA VUELTA 5 AL LADO DEL BLOQUE Y SIN TOCARLE UNA PALABRA.**
+> El bloque de 3.c publica `similitud_texto 0.126` (c2 contra c1) y `0.117` (c1
+> contra c2). **Esas dos cifras son del candidato ANTES de corregir el puente del
+> paso 11.** Sobre el fichero que viaja en `6e2946a`, `src.aduana.medir` da
+> **0,123** y **0,114**. **Las otras cuatro cifras del bloque (`familia_id` 0,333
+> en los dos sentidos, `paso_contra_nodo` 0,405 y 0,409) reproducen exactas, y la
+> conclusion entera se sostiene:** el auditor verifico por mutacion con su control
+> que el segundo candidato **bloquea por `familia_id` en cuanto entre el primero**.
+
+**Y LA REMEDICION LA CORRI YO, en la vuelta 5, sobre el fichero de `ce3201f`**
+(que no toca `cuarentena/`, asi que es el mismo fichero de `6e2946a`). Pego la
+salida del instrumento entera, que es lo que la seccion 5 pide:
+
+    aplicar_metodo_ghsmart_contratacion  contra  detectar_metodos_vudu_contratacion
+      similitud_texto 0.123   familia_id 0.333   paso_contra_nodo 0.405
+      levantada_por: ['familia_id']
+      paso 4 del candidato contra paso 10 de detectar_metodos_vudu_contratacion
+
+    detectar_metodos_vudu_contratacion  contra  aplicar_metodo_ghsmart_contratacion
+      similitud_texto 0.114   familia_id 0.333   paso_contra_nodo 0.409
+      levantada_por: ['familia_id']
+      paso 10 del candidato contra paso 4 de aplicar_metodo_ghsmart_contratacion
+
+**CONFIRMO LA CORRECCION EN SUS SEIS CIFRAS: las dos que el auditor corrige salen
+0,123 y 0,114, y las cuatro que dice que reproducen, reproducen.** El defecto era
+mio y era exactamente el que el encargo nombra: **medi las señales, corregi el
+puente del paso 11, y publique la medicion vieja.** Una correccion de un paso
+mueve el texto del candidato, y `similitud_texto` se calcula sobre ese texto: por
+eso movio esas dos y no las otras cuatro, que no dependen del cuerpo del paso.
+
 ### 3.d. EL VEREDICTO QUE YO ESCRIBIRIA, DEJADO LISTO Y SIN ESCRIBIR
 
 **NO LO ESCRIBO, y no por prudencia sino por sede:** `bitacora/VEREDICTOS.jsonl`
@@ -2797,3 +2828,750 @@ dejado correr en los tres commits**, **las cuatro medidas del cierre recomputada
 al cierre**, **las cuatro preguntas del encargo contestadas y la segunda declarada
 a medias**, **tres propuestas sin adjudicar** y **seis discutibles marcados antes de
 saber si acierto**.
+
+---
+
+# VUELTA 5, lote 2 (`smart_who`), cap_03 y cap_04
+
+*Esqueleto abierto **antes de la primera tarea**, con las filas vacias, tal como
+manda `EXTRACTOR.md` seccion 3. Cada fila se rellena al cerrarse su tarea, no al
+final de la vuelta.*
+
+| | |
+|---|---|
+| rama | `extraccion-mundo-11` (`git rev-parse --abbrev-ref HEAD`) |
+| commit de apertura | `ce3201f` (`git rev-parse HEAD`, tras subir los artefactos del arnes) |
+| apertura | `2026-09-10T15:12:41Z` (`date -u`) |
+| encargo | `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor al cerrar el ACTA 4 |
+| modo | **`MODO_INSERCION=cuarentena`. CERO inserciones en esta corrida** |
+
+## A.0. LAS TRES COMPROBACIONES DE APERTURA, MEDIDAS POR MI
+
+*Su propia fila y antes de la TAREA 1, como manda el encargo. **Una condicion
+medida es la que mediste tu.***
+
+| comprobacion | comando corrido en esta vuelta | mi medida | contra el encargo |
+|---|---|---|---|
+| la carpeta | `ls fuentes/smart_who/` | `cap_01.md` a `cap_07.md`, **siete ficheros** | **coincide** |
+| la clave | `python -c "import json,io; print('smart_who' in json.load(io.open('fuentes/FUENTES_CANONICAS.json',encoding='utf-8')))"` | `True` | **coincide** |
+| la cabecera | `head -8 fuentes/smart_who/cap_03.md` | `unidad: Cap. 2`, `titulo_textual: Scorecard: A Blueprint for Success`, `fidelidad: verbatim` | **coincide** |
+
+**LAS TRES EN VERDE. No hay parada de apertura.**
+
+## A.1. EL ESTADO DE APERTURA, medido antes de la primera operacion
+
+*Seccion 4: la apertura se mide **antes** de la primera operacion. Estas cifras se
+leyeron sobre `ce3201f`, que solo trae artefactos del arnes y no toca el grafo.*
+
+| medida | mi cifra | la del encargo (`6e2946a`) | |
+|---|---:|---:|---|
+| nodos vivos en el dataset | **8** | 8 | coincide |
+| pasos vigentes en el grafo | **43** | 43 | coincide |
+| extremos de arista | **4** (2 relaciones) | 4 | coincide |
+| veredictos en bitacora | **2** | 2 | coincide |
+| candidatos en `cuarentena/smart_who/` | **2** | 2 | coincide |
+| fuentes canonicas registradas | **13** | 13 | coincide |
+
+**CERO DISCREPANCIAS con la tabla del auditor.** Comandos: `python` sobre
+`dataset/nodos.jsonl` con las claves reales del esquema (`estado`,
+`pasos_accionables`, `nodos_previos`, `nodos_siguientes`), `wc -l` sobre
+`bitacora/VEREDICTOS.jsonl`, `ls` sobre `cuarentena/smart_who/`.
+
+**EL VOLUMEN DE LA VUELTA, `wc -w` corrido hoy sobre los ficheros enteros:**
+
+    cap_03.md   10696 palabras
+    cap_04.md    6441 palabras
+    la vuelta   17137 palabras
+
+**Coincide con las tres cifras del encargo.**
+
+## A.2. LAS CUATRO TAREAS DEL ENCARGO, con su fila vacia
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | los registros del ACTA 4 (correccion declarada, cuarta especie de puente, nueve adjudicaciones, dos aristas pendientes) | *pendiente* |
+| 2 | el `cap_03` entero: frontera, candidatos, informe y commit | *pendiente* |
+| 3 | el `cap_04` entero, **solo si el `cap_03` quedo cerrado** | *pendiente* |
+| 4 | las cuatro medidas del cierre, desglosadas por capitulo | *pendiente* |
+
+## A.3. DISCUTIBLES MARCADOS ANTES DE SABER SI ACIERTO
+
+*Se anexan aqui segun aparecen, **antes** de conocer el veredicto del auditor
+(seccion 8). Ordenados al cierre por lo que costarian si fallo.*
+
+*(se rellena por anexion a lo largo de la vuelta)*
+
+---
+
+## TAREA 1. LOS REGISTROS DEL ACTA 4
+
+### 1.a. LA CORRECCION DECLARADA. **HECHA**, y en su sitio
+
+Anotada **al lado** de la seccion 3.c del reporte de la vuelta 4, sin tocar una
+palabra del bloque original: linea 2490 de este mismo fichero
+(`grep -n "CORRECCION DECLARADA (auditor, ACTA 4" docs/loop/REPORTE.md` corrido
+hoy). **Y la remedi yo**, con `src.aduana.medir` sobre el fichero de `ce3201f`:
+las dos cifras corregidas dan **0,123** y **0,114**, y las cuatro que el auditor
+dice que reproducen, reproducen. **La salida entera del instrumento esta pegada
+alli, no aqui.**
+
+### 1.b y 1.c. LA SEDE. Lo escribo en MI sede y declaro por que, sin parar
+
+**EL ENCARGO ME MANDA ESCRIBIR EN UNA SEDE QUE NO ES MIA, Y NO LO HAGO.**
+
+| lo que el encargo pide | donde vive esa sede | quien la escribe |
+|---|---|---|
+| 1.b, la cuarta especie de puente **al banco** | `docs/BANCO_DE_REGLAS.md`, `D.30` | **Alexis** (`EXTRACTOR.md` 14) |
+| 1.c, las nueve adjudicaciones **donde el banco registra las del auditor** | `docs/BANCO_DE_REGLAS.md`, entradas con prefijo `A.` (ejemplar vivo: `A.4`, linea 264, leida hoy) | **Alexis** |
+
+**LA REGLA QUE LO RESUELVE ES DE HOY Y ESTA RATIFICADA POR EL FUNDADOR**, asi que
+esto **no es una parada**: es un conflicto con arbitro escrito.
+
+> **`D.28`, `docs/BANCO_DE_REGLAS.md` linea 758, leida hoy:**
+> **UN ENCARGO ASIGNA TRABAJO; NO MUEVE UNA SEDE.** La cabecera de `EXTRACTOR.md`
+> ya lo decia: *"Estas reglas valen SIEMPRE, ademas de lo que diga el encargo."*
+>
+> Y el propio encargo de esta vuelta lo repite en sus paradas, con esas mismas
+> siete palabras: *"Y un encargo asigna trabajo, NO MUEVE UNA SEDE."*
+
+**POR QUE NO PARO, Y NO ES COMODIDAD: HAY PRECEDENTE ADJUDICADO DE ESTE CASO
+EXACTO.** `D.28` nacio de el, y dice literalmente que el extractor de la vuelta 1
+
+> *"acerto en las dos mitades: en no traerla como parada sobre un supuesto que no
+> ocurrio, y en decir que habria seguido EXTRACTOR.md."*
+
+Una parada es para un conflicto **sin arbitro**. Este tiene arbitro, tiene fecha,
+y el arbitro dice quien gana. **Lo que hago es lo unico que mi sede me permite:
+tallo el texto entero, listo para pegar, y lo propongo.** Nada se pierde: la
+seccion 14 dice que **el extractor PROPONE en su reporte**, y el auditor lo enruta.
+
+**Y LO DIGO EN CIFRA PARA QUE SE VEA QUE NO ES UNA EXCUSA:** las dos entradas de
+abajo van completas, con su ejemplar pegado y sus nueve filas. **Copiar y pegar es
+todo lo que le queda por hacer a quien tenga la sede.**
+
+---
+
+#### PROPUESTA AL BANCO 1 (encargo 1.b): la CUARTA especie de puente de `D.30`
+
+*Para pegar bajo `D.30`, `docs/BANCO_DE_REGLAS.md` linea 820, en el bloque de
+especies. Es un CASO añadido a un catalogo, no una frontera movida, y asi lo
+adjudico el propio auditor en su fila 7.*
+
+> **EL PUENTE DE LA CONCLUSION.** Las tres viejas (destinatario, periodo,
+> responsable) son **cosas que el libro no nombra** y se cazan por ausencia. Esta
+> no: **el libro habla, deja la duda abierta, y el paso la cierra.**
+>
+>     smart_who/cap_02.md L81 : "The answer sounds nice, but we question how many
+>                                people would actually do those things."
+>                                (dos frases antes: "Maybe. Then again, maybe not.")
+>     lo escrito              : "La respuesta suena bien y por eso no dice nada."
+>
+> **Es la mas peligrosa de las cuatro porque no se detecta por ausencia: el
+> parrafo esta ahi, dice casi eso, y la comprobacion superficial da verde.** Se
+> caza leyendo **si el libro cerro la frase o la dejo abierta.**
+
+**LA CITA LA VERIFIQUE YO** (`sed -n '78,84p' fuentes/smart_who/cap_02.md`,
+corrido en esta vuelta): la linea 81 es el metodo 10, *The Fortune-Teller*, y
+trae las dos frases en ese orden, `Maybe. Then again, maybe not.` primero y
+`The answer sounds nice, but we question how many people would actually do those
+things.` despues. **El ejemplar es exacto.**
+
+#### PROPUESTA AL BANCO 2 (encargo 1.c): las NUEVE adjudicaciones del ACTA 4
+
+*Para pegar como entrada `A.5` de `docs/BANCO_DE_REGLAS.md`, que es la forma en
+que el banco ya registra las adjudicaciones del auditor (`A.4`, linea 264, leida
+hoy). **Las nueve se resolvieron con reglas escritas y ninguna pidio doctrina
+nueva.***
+
+| # | lo adjudicado | con que regla |
+|---:|---|---|
+| 1 | **no parar con el `cap_01` en cero fue correcto.** La parada es POR VUELTA | precedente publicado del `cap_03` del lote 1 (`CIERRE_LOTE_1.md` 3.1) mas la clausula *no paras por un capitulo de pocos nodos* |
+| 2 | **el parrafo 20 del `cap_01` fuera**, por DOS caminos | vara madre (*nombrar no es procedimentar*) **y** manual lineas 81 y 82: **seria la segunda compresion de la misma numeracion** |
+| 3 | **la arista de L53 NO se cablea.** **La arista es de DESPLIEGUE, no de calendario** | `esquema/nodo.schema.json` (*madre e hijo, secuencia dirigida*), `EXTRACTOR.md` 11 y `D.29`. La precedencia ya vive en `condiciones_activacion` y en el paso 12 |
+| 4 | **la definicion del jugador A fuera** | `EXTRACTOR.md` 9: *una definicion sin nada que hacer*. **Y el criterio: si el `entregable_esperado` hay que inventarlo, no habia procedimiento** |
+| 5 | **el puente corregido SE CUENTA** | `AUDITOR_FORJA.md` 8.4 mas la comparabilidad: la linea base del 36,11 son **pasos ESCRITOS**, y los 13 del lote 1 tambien se corrigieron |
+| 6 | **un nodo de los diez metodos de vudu, no once** | manual lineas 81 y 82 (*un nodo por PASO*) mas manual 4 (*una advertencia es linea*). **Y es LA UNICA compresion permitida de esa numeracion** |
+| 7 | **el puente de la conclusion entra en `D.30`** como cuarta especie | es un CASO añadido a un catalogo, no una frontera movida |
+| 8 | **el disparador del tramo NO se lee en los dos sentidos** | `EXTRACTOR.md` 12.4: *la cifra no es sagrada; el disparador si*. **El volumen ya tiene su escalera, que es la cifra de puentes** |
+| 9 | **una vineta es un BLOQUE y se cuenta como tal** | y si una frontera prefiere plegarla en su parrafo introductor, **la fila lo dice y el total lleva las dos cifras** |
+
+**LAS NUEVE LAS ACATO EN ESTA MISMA VUELTA, y no como formalidad.** Tres de ellas
+cambian lo que escribo hoy y lo digo antes de escribirlo:
+
+- **la 9** manda como cuento la frontera del `cap_03`, que es un capitulo con
+  muchas vinetas: **cada vineta es un bloque y lleva su fila**;
+- **la 7** me da la cuarta especie **antes** de la relectura de fidelidad de este
+  capitulo, asi que la busco expresamente y no solo por ausencia;
+- **la 3** me dice que la arista de la cabeza es de despliegue, que es
+  exactamente la relacion que el `cap_03` trae por ser **el primer hijo**.
+
+### 1.d. LAS DOS ARISTAS PENDIENTES DE LA CAMPAÑA
+
+*Bloque propio y titulado, esta vuelta y todas las que sigan hasta que se
+resuelvan (`D.29`: una arista que solo vive en la prosa de un reporte se pierde).*
+
+| # | la arista | estado hoy | por que sigue pendiente |
+|---:|---|---|---|
+| 1 | **`aplicar_metodo_ghsmart_contratacion` es CABEZA de serie y espera CUATRO hijos**: `cap_03` (Scorecard), `cap_04` (Source), `cap_05` (Select), `cap_06` (Sell) | **esta vuelta le trae los DOS primeros** | **una arista se cablea contra ids que ya viven**, y la cabeza sigue en `cuarentena/`, no en el dataset. **Cero inserciones en esta corrida** |
+| 2 | **`detectar_metodos_vudu_contratacion` va antes en el tiempo por L53** | **NO SE CABLEA NUNCA** | adjudicado en la fila 3 del ACTA 4: **la arista es de despliegue, no de calendario.** La precedencia ya vive en `condiciones_activacion` y en el paso 12 |
+
+**LO QUE ESTA VUELTA AÑADE A LA FILA 1, y es lo unico que puede añadir:** los hijos
+del `cap_03` y del `cap_04` se escriben **con la cabeza nombrada en su
+`condiciones_activacion` o en su prosa**, para que el dia de la insercion la
+arista se cablee por lectura y no haya que releer cuatro capitulos. **La arista
+declarada, sin cablear**, se publica en el cierre de cada capitulo.
+
+**TAREA 1 CERRADA.** 1.a hecha en el fichero; 1.b y 1.c talladas enteras y
+propuestas, con la sede declarada y su arbitro citado; 1.d publicada en bloque
+propio.
+
+---
+
+## A.4. LA DISCREPANCIA QUE ENCONTRE AL ABRIR EL `cap_03`: **EL FICHERO NO ES EL CAPITULO**
+
+*Publicada **antes** de cortar nada, con la linea de cada corte medida en esta
+vuelta. Es lo primero que hay que leer de este reporte, porque cambia el
+significado de dos cifras del encargo.*
+
+**LAS TRES COMPROBACIONES DE APERTURA DIERON VERDE, Y SIGUEN EN VERDE:**
+`head -8 fuentes/smart_who/cap_03.md` declara `unidad: Cap. 2` y
+`titulo_textual: Scorecard: A Blueprint for Success`, **exactamente lo que dice el
+encargo**. No hay parada de apertura y no mando una medida contraria.
+
+**LO QUE LA CABECERA NO DICE, Y EL CUERPO SI:** el fichero **no termina donde
+termina el Cap. 2.** Sigue 176 lineas mas dentro del **Cap. 3**, y se corta **a
+mitad de un recuadro numerado**.
+
+### El corte, medido linea a linea
+
+    fuentes/smart_who/cap_03.md
+      L9   a L285   Cap. 2, Scorecard          <-- lo que la cabecera declara
+      L285          "With a blueprint for success in hand, you are now ready
+                     for the second step in the A Method, finding the people
+                     who can deliver the A performance specified by your
+                     scorecard."               <-- LA LINEA DE CIERRE DEL Cap. 2
+      L287 a L461   Cap. 3, Source             <-- NO declarado en la cabecera
+      L461          "HOW TO SOURCE"            <-- el fichero MUERE en el titulo
+                                                   del recuadro, sin sus puntos
+
+    fuentes/smart_who/cap_04.md
+      L9   a L19    los SEIS puntos del recuadro "HOW TO SOURCE"
+                                               <-- la continuacion literal de
+                                                   la linea 461 del OTRO fichero
+      L21  a L29    cola del Cap. 3 (Bank One, Dimon) y su cierre:
+                    "The larger lessons ... Focus and commitment will get you
+                     there."                   <-- LA LINEA DE CIERRE DEL Cap. 3
+      L31  a L321   Cap. 4, Select             <-- NO declarado en la cabecera
+      L321          "CONDUCTING AN EFFECTIVE WHO INTERVIEW"  <-- otro corte a
+                                                   mitad, ahora en un titulo
+
+**LA REGLA DEL RECORTE, deducida de las siete cabeceras y no de una sola:**
+`sed -n '4,5p'` sobre los siete ficheros mas su ultima linea no vacia (corrido
+hoy) da el patron entero. **La cabecera nombra la unidad con la que el fichero
+EMPIEZA, y el fichero se corta por tamaño, no por capitulo.** `cap_04.md` acaba
+en un titulo de seccion, `cap_03.md` en un titulo de recuadro: **dos cortes
+mecanicos seguidos.**
+
+### Las palabras, que es donde la discrepancia se vuelve cifra
+
+`wc -w` corrido hoy sobre los tramos y sobre los ficheros:
+
+| unidad | donde vive | palabras |
+|---|---|---:|
+| **Cap. 2, Scorecard** | `cap_03.md` L9 a L285 | **6.286** |
+| **Cap. 3, Source** | `cap_03.md` L287 a L461 **mas** `cap_04.md` L9 a L29 | **4.895** (4.383 mas 512) |
+| Cap. 4, Select (fuera de este encargo) | `cap_04.md` L31 a L321 | 5.900, **y sigue en `cap_05.md`** |
+| *fichero* `cap_03.md` | entero | 10.696 |
+| *fichero* `cap_04.md` | entero | 6.441 |
+
+**LAS DOS CIFRAS DEL ENCARGO SON CORRECTAS COMO CIFRAS DE FICHERO Y CAMBIAN DE
+SIGNIFICADO COMO CIFRAS DE CAPITULO.** El encargo dice *"cap_03 10.696 palabras,
+casi TRES VECES el cap_02"*. **El fichero si mide 10.696. El capitulo Scorecard
+mide 6.286**, que es **1,63 veces** el `cap_02` y no casi tres. **No contradigo la
+medida del auditor: mide otra cosa que la que su rotulo dice.**
+
+### Lo que decido, con la regla que lo decide, y no es una improvisacion
+
+**NO PARO.** Y no por comodidad: **paro cuando el texto no alcanza para ejecutar
+sin decidir** (`EXTRACTOR.md` 7), y aqui el texto alcanza. Lo resuelve la primera
+frase de la TAREA 2 del encargo, escrita en mayusculas por el auditor:
+
+> **LA UNIDAD ATOMICA ES EL CAPITULO.**
+
+Y lo confirma `EXTRACTOR.md` 17, que describe la bandeja de entrada como
+*"`fuentes/<clave>/cap_NN.md`, **un fichero por capitulo**"*. **Los dos textos
+dicen que el fichero DEBERIA ser el capitulo. Cuando no lo es, el que manda es el
+que los dos nombran: el capitulo.**
+
+**ASI QUE ESTA VUELTA EXTRAE LOS DOS CAPITULOS QUE EL ENCARGO NOMBRA POR SU
+TITULO, ni uno mas ni uno menos:**
+
+| tarea | unidad | material |
+|---|---|---|
+| **TAREA 2** | **Cap. 2, `Scorecard: A Blueprint for Success`** | `cap_03.md` L9 a L285 |
+| **TAREA 3** | **Cap. 3, `Source: Generating a Flow of A Players`** | `cap_03.md` L287 a L461 **mas** `cap_04.md` L9 a L29 |
+| **fuera** | Cap. 4, `Select` | `cap_04.md` L31 a L321. **El encargo no lo nombra.** Va a la cola |
+
+**Y HAY UNA RAZON DE REGLA, NO DE ORDEN, PARA QUE EL CORTE VAYA POR CAPITULO Y NO
+POR FICHERO.** Es la que decide de verdad:
+
+> El recuadro **`HOW TO SOURCE`** es una **SERIE NUMERADA**: su titulo esta en
+> `cap_03.md` L461 y sus **seis puntos** en `cap_04.md` L9 a L19. El manual
+> seccion 3.4 manda **un nodo por paso mas UNA cabeza, jamas dos compresiones de
+> la misma numeracion**.
+>
+> **Cortando por fichero, esa numeracion queda partida en dos tareas, dos
+> fronteras y DOS COMMITS distintos**, que es la receta exacta de las dos
+> compresiones que el manual prohibe: el que cierra el `cap_03` ve un titulo sin
+> puntos, y el que abre el `cap_04` ve seis puntos sin titulo. **Cortando por
+> capitulo, la serie entera cae dentro de la TAREA 3 y se trata una sola vez.**
+
+**LO QUE ESTO NO CAMBIA, y lo digo para que nadie tenga que comprobarlo:** el
+material leido en esta vuelta es **el mismo** bajo las dos lecturas, porque los
+dos ficheros del encargo se leen enteros salvo el Cap. 4, que ninguna lectura
+mete aqui. **Si el auditor adjudica que la unidad es el fichero, no hay que
+reextraer nada:** se reagrupan filas de frontera y se mueve una linea de commit.
+
+### Lo que esto le pide al auditor, sin adjudicarme nada
+
+1. **La regla `EXTRACTOR.md` 17 describe una bandeja que esta casa no tiene.**
+   O el recorte se rehace por capitulo, o la regla se reescribe para decir que
+   la cabecera nombra la unidad **inicial**. **Yo no toco ninguna de las dos.**
+2. **La cifra 2 de "lo que esta vuelta tiene que dejar medido"** (*si un capitulo
+   de 10.696 palabras cabe en una vuelta*) **se contesta con 6.286 y 4.895, no
+   con 10.696**, y asi la doy en el cierre.
+3. **La tercera comprobacion de apertura se queda corta.** `head -8` mira la
+   cabecera; **el desajuste vive en la ultima linea.** Lo propongo en el cierre
+   sin escribirlo yo, que **no es mi sede** y ademas seria maquinaria nueva
+   (seccion 13).
+
+**ESTE ES EL DISCUTIBLE 1 DE LA VUELTA, Y ES EL MAS CARO SI FALLO.** Marcado
+antes de saber si acierto, como manda la seccion 8.
+
+---
+
+## TAREA 2. Cap. 2, `Scorecard: A Blueprint for Success` (`cap_03.md` L9 a L285)
+
+### 2.a. LA FRONTERA, PUBLICADA ANTES DE CORTAR
+
+*Seccion 10: la frontera se lee y se publica **antes** de tocar nada. Con la
+columna de linea del propio fichero, que es lo que la hace auditable. **Y con la
+adjudicacion 9 del ACTA 4 aplicada: una vineta es un BLOQUE y lleva su fila.***
+
+**EL RECUENTO DE BLOQUES, contado del fichero y no tecleado:**
+
+    sed -n '9,285p' fuentes/smart_who/cap_03.md | grep -c '[^[:space:]]'   ->  139 bloques
+      de ellos vinetas          (grep -c '^•')                            ->   28
+      de ellos titulos de seccion                                         ->    7
+      de ellos puntos numerados (grep -cE '^[0-9]+\. ')                   ->    4
+
+**139 bloques, y las 28 vinetas van con su fila** aunque 24 de ellas caigan en
+dos listas que se leen juntas. Lo digo con las dos cifras, como manda la
+adjudicacion 9: **139 bloques contados uno a uno, o 117 si las dos listas de
+competencias se pliegan en su parrafo introductor.**
+
+### El mapa, tramo a tramo
+
+| lineas | que es | veredicto | por que |
+|---|---|---|---|
+| L9 a L11 | el scorecard es tu plano; sus tres partes | **postura** | define y compara con el plano de un arquitecto. **Una definicion sin nada que hacer** (seccion 9) |
+| L13 a L21 | el caso del VP de planificacion estrategica, y `Bingo!` | **caso** | seccion 3.5: el caso no es la casa. Entra como ejemplo dentro de la doctrina |
+| L23 | *el primer punto de fallo es no tener claro que quieres que logre* | **postura** | es la linea que el `cap_02` ya nombro. Advertencia, no procedimiento |
+| L25 a L27 | Isdell y Coca-Cola, el jefe de recursos humanos | **caso** | |
+| L29 | las tres partes: mision, resultados, competencias | **inventario que sirve a otros** | nombra las tres piezas. **Es el inventario que vuelve procedimentable el recuadro de L269**, no un nodo propio |
+| **L31 a L39** | **MISSION: THE ESSENCE OF THE JOB** | **PROCEDIMIENTO** | el libro pone su inventario: lenguaje llano y no la jerga (L35), el contraejemplo entero (L35), la prueba de que esta bien (L39: *lo entienden sin preguntar*), y la longitud en L271 |
+| L41 a L59 | *Don't Hire the Generalist. Hire the Specialist.* mas Chabraja y Gores | **postura mas dos casos** | es un argumento con su analogia medica y sus dos historias. **No hay un solo medio nombrado**: la salida es *deberias buscar competencia estrecha y profunda*, que es adonde llegar, no como |
+| **L61** | *A final caution about mission*: no se reutiliza una mision de estanteria; el documento es vivo | **PASO, dentro del nodo de la mision** | trae objeto (*pull a mission off the shelf*) y mandato. **No es nodo propio: es el paso de revision del mismo procedimiento** |
+| L63 a L65 | Arthur Rock e Intel, Noyce, Moore y Grove | **caso** | |
+| **L67 a L81** | **OUTCOMES: DEFINING WHAT MUST GET DONE** | **PROCEDIMIENTO** | inventario denso: **de tres a ocho** resultados **ordenados por importancia** (L69), resultados y no actividades con su par de ejemplos (L75), cuantificar donde se pueda (L77), y cuando no se pueda **la lista de criterios objetivos del propio libro** (L79) |
+| L73 | *set the outcomes high enough but still within reason* | **NO se escribe como paso** | *within reason* es **adjetivo de adecuacion en el sitio del criterio** (`D.27` restriccion 2). El listón lo pondria yo |
+| L83 a L89 | **COMPETENCIES**, de donde salen y la pregunta *what competencies really count?* | **entrada del procedimiento** | |
+| L91 a L111 | **Critical Competencies for A Players**, 10 vinetas con su definicion | **inventario del libro** | 10 bloques. Es investigacion de la Universidad de Chicago sobre su base de datos: **va a `atribuciones` y dentro del nodo de competencias**, no a nodo propio |
+| L113 a L141 | la lista larga que reparten a clientes, 14 vinetas | **inventario del libro** | 14 bloques mas su introductor. Misma suerte: **inventario, no nodo** |
+| **L143 a L145** | *starter suggestions only*, no la hagas demasiado estrecha, y usarla de lista de comprobacion en la entrevista | **PASOS, dentro del nodo de competencias** | |
+| L147 a L157 | los cinco de Bill Johnson (quimica, compromiso, entrenable, ego, intelecto) | **caso nombrado** | seccion 3.5. **Y el libro mismo lo cierra en L157 con *Make sure yours does the same*: la doctrina es la de la casa, la lista es suya** |
+| L159 a L165 | **CULTURAL COMPETENCIES**, y la cifra *uno de cada tres* | **entrada mas cifra del autor** | la cifra de L163 va a `atribuciones` |
+| **L167** | *reune a tu equipo de direccion en una sala y pregunta: What adjectives would you use to describe our culture?* | **PROCEDIMIENTO** | **el parrafo mas rico del capitulo**: equipo, sala, **la pregunta literal**, rotafolio o pizarra, y el resultado (*a picture emerges*). Inventario de MEDIOS puro |
+| L169 | evaluar la cultura a veces significa echar a quien no encaja | **postura** | advertencia con su caso. Ningun medio |
+| L171 a L199 | Hamilton y el fichaje toxico; Kennedy, Noodles y el consejero delegado que se fue | **dos casos** | |
+| **L201 a L203** | *que cultura quieres construir*: lo que valoras baja a la lista de competencias **de todos los puestos**, y **escribelo aunque parezca evidente** | **PASOS, dentro del nodo de la cultura** | trae el objeto (la lista de competencias de cada puesto) y el mandato de escribirlo |
+| L205 a L213 | Centerbridge, Gallogly y Aronson, el candidato descartado | **caso** | |
+| L215 | *los scorecards son los guardianes de tu cultura* | **postura** | cierre retorico de la seccion |
+| L217 a L225 | **FROM SCORECARD TO STRATEGY** y la encuesta de los 200 consejeros delegados | **entrada mas cifra del autor** | el *solo el 10 por ciento levanto la mano* de L223 va a `atribuciones` |
+| **L221 y L227** | el ciclo anual de planificacion, y **la cascada**: la estrategia baja a resultados del consejero delegado y su equipo, ellos a los de abajo, y asi | **PROCEDIMIENTO** | **inventario de ETAPAS nombradas una a una por el texto.** Es el unico sitio del capitulo donde el scorecard sale de la contratacion |
+| L229 a L233 | EMC y Roger Marino, el servicio como estrategia | **caso** | |
+| L235 a L243 | *Scorecards:* mas **cuatro vinetas** (fijar expectativas, seguir el progreso, objetivar la evaluacion anual, puntuar al equipo) | **NO ES NODO, y es la restriccion 1 en estado puro** | 4 bloques. Es un **inventario de USOS**, o sea de FINES. `D.27` restriccion 1: *nombrar adonde hay que llegar sigue siendo nombrar* |
+| L245 a L251 | Doug Williams e iHealth Technologies | **caso** | |
+| L253 a L267 | **THE SCORECARD IN ACTION**: Sewickley Academy y Kolia O'Connor | **caso, y es el caso maestro del capitulo** | entra como ejemplo nombrado. **Señal barata de que se hizo mal: que el entregable llevara un dato del caso.** No lo lleva |
+| **L269 a L277** | **HOW TO CREATE A SCORECARD**, recuadro de **4 puntos numerados** | **SERIE NUMERADA** | manual 3.4: **un nodo por paso mas UNA cabeza, jamas dos compresiones de la misma numeracion** |
+| L279 a L283 | el cierre del caso Sewickley cinco años despues | **caso** | |
+| L285 | *With a blueprint for success in hand, you are now ready for the second step* | **linea de cierre del capitulo** | y **el limite de esta tarea**, medido en A.4 |
+
+### El saldo del Cap. 2
+
+| | |
+|---|---:|
+| bloques leidos | **139** (117 plegando las dos listas) |
+| **procedimientos** | **7** |
+| **posturas, advertencias y definiciones** | **8** tramos |
+| **casos** | **11** |
+| inventarios que sirven a un nodo pero no son nodo | **3** (L29, L91 a L111, L113 a L141) |
+| cifras del autor a `atribuciones` | **3** (L163, L223, mas la investigacion de Chicago de L89) |
+
+**LOS SIETE PROCEDIMIENTOS, y de donde sale cada uno:**
+
+| # | id propuesto | de donde |
+|---:|---|---|
+| 1 | `crear_tarjeta_puntuacion_puesto` | **la CABEZA** del recuadro de L269 a L277 |
+| 2 | `redactar_mision_tarjeta_puntuacion` | punto 1 (L271) mas L31 a L39 mas L61 |
+| 3 | `definir_resultados_tarjeta_puntuacion` | punto 2 (L273) mas L67 a L81 |
+| 4 | `identificar_competencias_tarjeta_puntuacion` | punto 3 (L275) mas L83 a L145 |
+| 5 | `alinear_comunicar_tarjeta_puntuacion` | punto 4 (L277) |
+| 6 | `evaluar_cultura_empresa_adjetivos` | L167 mas L201 a L203 |
+| 7 | `desplegar_estrategia_tarjeta_puntuacion` | L221 y L227 |
+
+### 2.b. LOS DOS JUICIOS DIFICILES, ESCRITOS ANTES DE SABER SI ACIERTO
+
+**EL PRIMERO: el punto 3 tiene inventario Y adjetivo de adecuacion a la vez, que
+es el choque que `D.27` no resuelve con un ejemplar.**
+
+    L275 : "Identify as many role-based competencies as you think appropriate
+            to describe the behaviors someone must demonstrate to achieve the
+            outcomes. Next, identify five to eight competencies that describe
+            your culture and place those on every scorecard."
+
+- **Hay inventario, y es enorme:** 24 competencias nombradas una a una (L93 a
+  L111 y L115 a L141). Restriccion 1 pasada: son **objetos de trabajo**, no metas.
+- **Y hay adjetivo de adecuacion:** *as many as you think appropriate*.
+  Restriccion 2 dice que el adjetivo **en el sitio del criterio TUMBA**.
+
+**COMO LO RESUELVO, y es la lectura fina que puede fallar:** el adjetivo NO esta
+en el sitio del criterio, **esta en el sitio de la CANTIDAD**, y la segunda mitad
+del mismo punto **si pone numero**: *five to eight*. El criterio de que es una
+competencia valida lo pone el texto entero (*describe the behaviors someone must
+demonstrate to achieve the outcomes*) y las dos listas dicen de donde se eligen.
+
+> **ASI QUE EL NODO ENTRA, Y EL NUMERO DE COMPETENCIAS DE PUESTO NO SE ESCRIBE.**
+> Si yo pusiera *elige entre cinco y ocho competencias del puesto*, eso seria un
+> **puente de la especie del periodo**: el libro deja la cifra abierta y yo la
+> cerraria. **Se queda abierta, exactamente como el libro la deja.**
+
+**Discutible 2**, y lo que cuesta si fallo: un nodo de siete.
+
+**EL SEGUNDO: `desplegar_estrategia_tarjeta_puntuacion` esta en prosa
+laudatoria, y esa es la clase que mas se parece a una postura.**
+
+    L227 : "A good scorecard process translates the objectives of the strategy
+            into clear outcomes for the CEO and senior leadership team. The
+            senior team then translates their outcomes to the scorecards of
+            those below them, and so on."
+
+**A favor de que sea procedimiento:** las etapas estan nombradas una a una y en
+orden (plan anual, resultados del primer nivel, tarjetas del nivel de abajo, y
+asi hasta abajo), y hay entregable (*everybody in the organization ends up with a
+set of outcomes that support the strategy*). **En contra:** el verbo esta en
+indicativo descriptivo (*translates*), no en imperativo, y el parrafo vive dentro
+de una seccion que celebra la herramienta.
+
+**Lo meto, y digo por que:** `D.27` pregunta si **el libro pone su propio
+inventario**, no en que modo verbal lo pone. Y el capitulo entero de al lado
+(L221 a L225) da la condicion de activacion: **el ciclo anual de planificacion**.
+**Discutible 3**, y cuesta un nodo de siete.
+
+### 2.c. LO QUE SE QUEDA FUERA Y ESTUVO CERCA
+
+| lo que es | linea | por que no entra |
+|---|---|---|
+| las cuatro vinetas de lo que hace un scorecard | L235 a L243 | **inventario de FINES.** `D.27` restriccion 1. **Es el ejemplar mas limpio de esa restriccion que ha visto esta casa**: cuatro objetos nombrados uno a uno, y ninguno es un medio |
+| *Don't Hire the Generalist. Hire the Specialist.* | L41 a L59 | 19 bloques, dos casos de consejero delegado, **cero medios**. La vara madre: nombrar no es procedimentar |
+| los cinco criterios de Bill Johnson | L147 a L155 | es la lista de OTRO, y el libro la cierra mandando que hagas la tuya. **Caso, no casa** |
+| las dos listas de competencias como nodo propio | L91 a L141 | **una lista sin nada que hacer no es procedimiento.** Viven dentro del nodo 4, que es quien las usa |
+| *Scorecards are the guardians of your culture* | L215 | cierre retorico |
+
+### 2.d. LOS SIETE CANDIDATOS, CON EL CICLO DE CINCO PASOS. **Los 7 pasaron**
+
+*El paso 2 (relectura de fidelidad) va antes que el 3 (aduana) y no es
+intercambiable. Lo cumpli en el acto de escribir cada uno.*
+
+| # | id | pasos | aduana en el acto |
+|---:|---|---:|---|
+| 1 | `crear_tarjeta_puntuacion_puesto` | 4 | **ENTRARIA** a la primera |
+| 2 | `redactar_mision_tarjeta_puntuacion` | 5 | **ENTRARIA**, y **ENTRARIA** otra vez tras corregir el paso 5 |
+| 3 | `definir_resultados_tarjeta_puntuacion` | 5 | **ENTRARIA**, y **ENTRARIA** otra vez tras corregir el paso 5 |
+| 4 | `identificar_competencias_tarjeta_puntuacion` | 7 | **ENTRARIA**, y **ENTRARIA** otra vez tras corregir el paso 7 |
+| 5 | `alinear_comunicar_tarjeta_puntuacion` | 4 | **ENTRARIA**, y **ENTRARIA** otra vez tras retirar el puente del resumen |
+| 6 | `evaluar_cultura_empresa_adjetivos` | 6 | **ENTRARIA** a la primera |
+| 7 | `desplegar_estrategia_tarjeta_puntuacion` | 4 | **ENTRARIA** a la primera |
+| | **total** | **35** | **7 de 7 ENTRARIAN. Cero caidas en la puerta** |
+
+**LA CIFRA QUE IMPORTA DE ESTA TABLA NO ES EL 7 DE 7:** son las **cuatro columnas
+de la derecha que dicen *y otra vez***. La aduana dio verde **antes** de las
+cuatro correcciones y verde **despues**, exactamente como `D.30` predice. **El
+informe verde no es la prueba. La prueba es la tabla de abajo.**
+
+### 2.e. LA TABLA DE MARCADO: 35 pasos escritos, paso a paso y contra su parrafo
+
+*`D.30`: marca cada paso como TRANSCRIPCION o como PUENTE, y cada PUENTE se
+retira o se reescribe **citando el parrafo que NO lo dice**. La tabla va aqui y
+no dentro del JSON, como manda la TAREA 4.*
+
+| nodo | paso | linea que lo dice | marca |
+|---|---:|---|---|
+| `crear_tarjeta_puntuacion_puesto` | 1 mision | L271 | TRANSCRIPCION |
+| | 2 resultados | L273 | TRANSCRIPCION |
+| | 3 competencias | L275 | TRANSCRIPCION |
+| | 4 alineacion y comunicacion | L277 | TRANSCRIPCION |
+| `redactar_mision_tarjeta_puntuacion` | 1 de una a cinco frases | L271 | TRANSCRIPCION |
+| | 2 reducir a la esencia | L33 | TRANSCRIPCION |
+| | 3 lenguaje llano, quitar la hojarasca | L35 y L37 | TRANSCRIPCION |
+| | 4 la prueba: lo entienden sin preguntar | L39 | TRANSCRIPCION |
+| | 5 no reutilizar la mision de estanteria | L61 | **RECORTADO**, ver 2.f |
+| `definir_resultados_tarjeta_puntuacion` | 1 de tres a ocho, por importancia | L273 y L69 | TRANSCRIPCION |
+| | 2 lograr y no actividades | L75 | TRANSCRIPCION |
+| | 3 objetivo numerico donde se pueda | L77 y L79 | TRANSCRIPCION |
+| | 4 objetivo y observable cuando no | L79 | TRANSCRIPCION |
+| | 5 los criterios objetivos de sus clientes | L79 | **PUENTE RETIRADO**, ver 2.f |
+| `identificar_competencias_tarjeta_puntuacion` | 1 las del puesto, las que parezcan apropiadas | L275 | TRANSCRIPCION |
+| | 2 la lista de las diez | L93 a L111 y L143 | TRANSCRIPCION |
+| | 3 la lista larga de las catorce | L113 a L141 | TRANSCRIPCION |
+| | 4 sugerencias de arranque, adaptar | L143 | TRANSCRIPCION |
+| | 5 no la hagas demasiado estrecha | L143 | TRANSCRIPCION |
+| | 6 de cinco a ocho de cultura, en todas | L275 | TRANSCRIPCION |
+| | 7 lista de comprobacion en la entrevista | L145 | **COMPLETADO**, ver 2.f |
+| `alinear_comunicar_tarjeta_puntuacion` | 1 prueba de presion contra el plan | L277 | TRANSCRIPCION |
+| | 2 contra las tarjetas vecinas | L277 | TRANSCRIPCION |
+| | 3 coherencia y alineacion | L277 | TRANSCRIPCION |
+| | 4 compartir con pares y reclutadores | L277 | TRANSCRIPCION |
+| `evaluar_cultura_empresa_adjetivos` | 1 reune al equipo de direccion en una sala | L167 | TRANSCRIPCION |
+| | 2 la pregunta literal de los adjetivos | L167 | TRANSCRIPCION |
+| | 3 rotafolio o pizarra, y emerge la imagen | L167 | TRANSCRIPCION |
+| | 4 traducir cultura y valores a competencias | L203 | TRANSCRIPCION |
+| | 5 en todos los puestos, no solo arriba | L201 | TRANSCRIPCION |
+| | 6 escribe lo cegadoramente evidente | L203 | TRANSCRIPCION |
+| `desplegar_estrategia_tarjeta_puntuacion` | 1 parte del ciclo anual de planificacion | L221 | TRANSCRIPCION |
+| | 2 objetivos a resultados del primer nivel | L227 | TRANSCRIPCION |
+| | 3 el primer nivel baja a las tarjetas de abajo | L227 | TRANSCRIPCION |
+| | 4 repetir hasta abajo | L227 | TRANSCRIPCION |
+
+### 2.f. LOS CUATRO DEFECTOS QUE LA RELECTURA CAZO, CON EL PARRAFO CITADO
+
+**DEFECTO 1. PUENTE EN UN PASO, especie de la CONDICION. Retirado.**
+
+    nodo   : definir_resultados_tarjeta_puntuacion, paso 5
+    escrito: "SI TE FALTAN CRITERIOS OBJETIVOS, usa los que el libro dice que
+              sus clientes han ido encontrando..."
+    L79    : "Measuring the success of a marketing or visibility campaign is
+              obviously harder, but our clients over the years have come up
+              with plenty of objective criteria, everything from customer
+              feedback to plans delivered on time to budgets met."
+
+**EL LIBRO NO CONDICIONA LA LISTA A QUE TE FALTEN CRITERIOS: la presenta como lo
+que sus clientes fueron encontrando.** La condicion la escribi yo, y una
+condicion inventada es lo que decide **cuando** se ejecuta un paso, que es tan
+del libro como el paso mismo. **Reescrito a imperativo directo, sin condicion.**
+
+**DEFECTO 2. PUENTE EN PROSA, y es LA CUARTA ESPECIE, la que el ACTA 4 acaba de
+registrar. Retirado entero.**
+
+    nodo   : alinear_comunicar_tarjeta_puntuacion, resumen_teorico
+    escrito: "una tarjeta que no se contrasta contra el plan de negocio y contra
+              las tarjetas de los puestos vecinos PUEDE ESTAR BIEN ESCRITA Y AUN
+              ASI PEDIR COSAS QUE CHOCAN CON LO QUE LA CASA HA DECIDIDO HACER, y
+              una tarjeta que no se comparte NO PUEDE HACER EL TRABAJO QUE EL
+              CAPITULO LE ATRIBUYE."
+    L277   : "Pressure-test your scorecard by comparing it with the business
+              plan and scorecards of the people who will interface with the
+              role. Ensure that there is consistency and alignment. Then share
+              the scorecard with relevant parties, including peers and
+              recruiters."
+
+**EL LIBRO MANDA HACERLO Y NO DICE POR QUE. Yo escribi el porque.** Es
+exactamente la cuarta especie que el auditor registro ayer con el ejemplar del
+`cap_02`: **el parrafo esta ahi, dice casi eso, y la comprobacion superficial da
+verde.** Aqui es peor todavia, porque el libro **ni siquiera abrio la duda**: yo
+la abri y la cerre en la misma frase.
+
+> **LA ESPECIE NUEVA SE GANO EL SUELDO EN EL CAPITULO SIGUIENTE AL QUE LA
+> PARIO.** Sin ella en la cabeza al escribir, este parrafo se queda: **suena a
+> doctrina, cita bien el paso, y no es del libro.**
+
+**Y ES EL PARRAFO MAS POBRE DEL CAPITULO EL QUE LO PRODUJO**, que es la escalera
+que `D.30` publica y que este capitulo vuelve a medir: L277 es **un solo bloque**
+para un nodo entero, y de sus 4 pasos salieron **0 puentes**, pero de su prosa
+salio **el unico puente de conclusion de la vuelta.**
+
+**DEFECTO 3. PARTICULARES DE UN CASO PROMOVIDOS A DOCTRINA. Recortado por
+prudencia, y NO lo cuento como puente.**
+
+    nodo   : redactar_mision_tarjeta_puntuacion, paso 5
+    escrito: "...: LOS ASUNTOS CAMBIAN, HACE FALTA NUEVA PERICIA Y EL PODER SE
+              DESPLAZA, y por eso la tarjeta tiene que ser un documento vivo."
+    L61    : "Every environmental interest group in Washington, D.C., needs
+              congressional liaisons... but issues change, new expertise is
+              required, political power and committee chairs shift on Capitol
+              Hill... That's why scorecards need to be evolving documents, not
+              static ones."
+
+**EL LIBRO SI DICE LAS TRES RAZONES, PERO LAS DICE DENTRO DEL EJEMPLO DE
+WASHINGTON**, y el propio libro hace la promocion en la frase siguiente
+(*That's why...*). **Asi que era defendible y lo recorto igual**, porque el paso
+se sostiene entero sin ellas y la seccion 3.5 dice que un dato del caso dentro
+de la doctrina es la señal barata de que el caso se metio donde no era. **Lo
+declaro y no lo cuento en la cifra: contarlo la inflaria, y una metrica inflada
+a mi favor tampoco sirve.**
+
+**DEFECTO 4. OMISION, no invento. Completado.**
+
+    nodo   : identificar_competencias_tarjeta_puntuacion, paso 7
+    escrito: "Usa la seccion de competencias como lista de comprobacion durante
+              el proceso de entrevista." (y ahi se acababa)
+    L145   : "We use the competencies section of our scorecards as a checklist
+              during the interview process, BUT WE ENCOURAGE CLIENTS TO
+              PERSONALIZE IT to fit their individual needs."
+
+**Habia convertido en imperativo la practica de los autores y me habia dejado
+fuera la mitad con la que ellos la entregan al lector.** Una omision no inventa
+nada, pero deja el paso mas duro de lo que el libro lo deja. **Añadida la
+clausula.**
+
+### 2.g. LA CIFRA DE PUENTES DEL Cap. 2
+
+| | |
+|---|---:|
+| pasos escritos | **35** |
+| **puentes escritos y retirados EN EL ACTO, en pasos** | **1** |
+| **tasa de puentes en pasos** | **1 de 35 = 2,86 por ciento** |
+| puentes en prosa (`resumen_teorico`), retirados | **1** |
+| recortes por prudencia, no contados | 1 |
+| omisiones completadas, no contadas | 1 |
+
+**EL DENOMINADOR SON PASOS ESCRITOS Y EL PUENTE CORREGIDO SE CUENTA**, que es la
+adjudicacion 5 del ACTA 4 aplicada literal.
+
+**CONTRA LAS DOS CIFRAS QUE ESTA CASA YA TIENE PUBLICADAS:**
+
+| tanda | pasos | puentes | tasa |
+|---|---:|---:|---:|
+| lote 1 | 36 | 13 | **36,11 por ciento** |
+| lote 2, `cap_02` (vuelta 4) | 16 | 1 | **6,25 por ciento** |
+| **lote 2, Cap. 2 (esta vuelta)** | **35** | **1** | **2,86 por ciento** |
+
+**EL DENOMINADOR YA NO ES RUIDOSO: 35 pasos son practicamente los 36 del lote 1
+entero.** Y la lectura que propongo, sin adjudicarmela: **la caida de 36,11 a
+2,86 no mide un extractor mejor, mide un LIBRO distinto.** El lote 1 era
+normativo y delgado en inventario; este capitulo pone un recuadro numerado, dos
+listas de 24 objetos y una pregunta literal entre comillas. **`D.30` ya lo dijo
+al reves y aqui se mide al derecho: un parrafo rico produce cero puentes.**
+**La prueba interna, medida en este mismo capitulo:** el unico puente de
+conclusion salio del **unico nodo de un solo bloque**.
+
+### 2.h. LA PREGUNTA 3 DEL ENCARGO: CUANTOS VECINOS LEVANTA LA BANDEJA
+
+*El `CHOCAN` del informe solo mira ids identicos, asi que lo mido con
+`src.aduana.medir`, que es lo que 3.c hizo en la vuelta 4.*
+
+**72 pares ordenados entre los 9 candidatos de la bandeja. LEVANTARIAN 32.**
+
+| lo medido | cifra |
+|---|---:|
+| pares ordenados medidos | **72** |
+| pares que levantarian alguna señal | **32** |
+| de ellos por `familia_id` | **32, o sea TODOS** |
+| de ellos tambien por `paso_contra_nodo` | **4** |
+| de ellos por `similitud_texto` | **0** |
+
+**HALLAZGO 1: `familia_id` mide EXACTAMENTE 0,333 en los 32 pares. En todos.**
+No es casualidad ni es una banda: es que los seis nodos de la serie comparten
+`tarjeta` y `puntuacion`, y los dos viejos comparten `metodo` y `contratacion`.
+**Dos piezas comunes sobre seis dan 0,333, y el umbral esta en 0,30.** Es el
+caso que la seccion 12 nombra con todas las letras: *cuando un capitulo entero
+cae en la misma familia, eso no es una señal de duplicado, es una señal de que
+el libro trata un tema.*
+
+**HALLAZGO 2: `evaluar_cultura_empresa_adjetivos` NO LEVANTA A NADIE, en ninguno
+de sus 16 pares.** Es el unico de los nueve. Y es el que menos comparte grafia,
+no el que menos comparte tema: **la señal 2 mide letras, no asuntos.**
+
+**HALLAZGO 3, y es el que de verdad enseña algo: los CUATRO pares de
+`paso_contra_nodo` son cabeza contra hijo, y solo dos hijos de los cuatro.**
+
+    crear_tarjeta_puntuacion_puesto  paso 2  contra  definir_resultados       paso 1   0,626 / 0,636
+    crear_tarjeta_puntuacion_puesto  paso 3  contra  identificar_competencias paso 1   0,638 / 0,638
+    (umbral 0,60, y los dos sentidos por encima)
+
+    contra redactar_mision           0,485 y 0,481   POR DEBAJO
+    contra alinear_comunicar         0,442 y 0,447   POR DEBAJO
+
+> **LA SERIE NUMERADA DEL MANUAL PRODUCE SU PROPIA SEÑAL, Y LA PRODUCE A MEDIAS.**
+> La cabeza comprime los cuatro pasos; la señal 3 caza **dos** de esos cuatro y
+> se le escapan los otros dos, con 0,485 y 0,447 contra un umbral de 0,60.
+>
+> **NO PROPONGO TOCAR EL UMBRAL** (seccion 11: ninguna vuelta mueve un umbral, y
+> un umbral se juzga contra su cola). Lo que esto confirma es lo otro que la
+> seccion 11 ya dice: **la jerarquia la busca la LECTURA, no la señal.** Los
+> cuatro pares son arista de cabeza a hijo por construccion del manual, y la
+> señal solo ve la mitad.
+
+**HALLAZGO 4: `similitud_texto` no levanta ni un par**, y el maximo de los 72 es
+**0,325** (`redactar_mision` contra `crear_tarjeta_puntuacion_puesto`), a 0,025
+del umbral. **La banda alta sigue limpia**, que es lo que la calibracion dice de
+ella.
+
+### 2.i. EL INFORME DEL LOTE ENTERO, PEGADO DEL INSTRUMENTO
+
+`python forja.py informe --carpeta cuarentena/smart_who`, corrido al cerrar el
+capitulo:
+
+    candidatos revisados        : 9
+    nodos en el grafo de destino: 8
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 9
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+**Y EL SALDO DE 9 ENTRARIAN VUELVE A SER CIERTO HOY Y FALSO MAÑANA**, por la
+misma razon que 3.c publico en la vuelta 4 y con 32 pares en vez de 2: **en
+cuanto entre el primero de la serie, los otros cinco llegan bloqueados por
+`familia_id`.** El informe de lote no lo puede ver, y **no es un defecto suyo**.
+
+### 2.j. LA ARISTA DECLARADA POR LECTURA, SIN CABLEAR
+
+*`D.29`: la arista que la señal no levanta se declara por lectura. Y la que si
+levanta tambien se declara, porque **el cable se pone en el acto de la
+insercion** y aqui no hay insercion.*
+
+| madre | hijo | la levanta alguna señal | por que la declaro |
+|---|---|---|---|
+| `aplicar_metodo_ghsmart_contratacion` | `crear_tarjeta_puntuacion_puesto` | **NO se midio contra el, y es cabeza de OTRA serie** | **Es la arista pendiente 1 de la campaña.** Scorecard es el paso 1 de los cuatro del metodo A, y este capitulo es su despliegue. **Primer hijo entregado de los cuatro** |
+| `crear_tarjeta_puntuacion_puesto` | `redactar_mision_tarjeta_puntuacion` | no (0,485) | cabeza de serie numerada a su paso 1 (manual 3.4) |
+| `crear_tarjeta_puntuacion_puesto` | `definir_resultados_tarjeta_puntuacion` | **si, 0,626** | cabeza a su paso 2 |
+| `crear_tarjeta_puntuacion_puesto` | `identificar_competencias_tarjeta_puntuacion` | **si, 0,638** | cabeza a su paso 3 |
+| `crear_tarjeta_puntuacion_puesto` | `alinear_comunicar_tarjeta_puntuacion` | no (0,447) | cabeza a su paso 4 |
+| `identificar_competencias_tarjeta_puntuacion` | `evaluar_cultura_empresa_adjetivos` | **no, cero señales** | el paso 6 manda poner de cinco a ocho competencias de cultura; **este nodo es el procedimiento que las produce.** Es el caso literal de la seccion 11: *el candidato despliega algo que el libro ya nombro en una linea* |
+
+**LA ULTIMA FILA ES LA IMPORTANTE, y es la que ninguna señal habria encontrado
+nunca:** `evaluar_cultura_empresa_adjetivos` no levanta **ni uno** de sus 16
+pares, y sin embargo es hijo declarado de un nodo de esta misma bandeja. **Sin
+`D.29` esa arista se pierde entera.**
+
+**Y NO SE CABLEA NINGUNA, con su razon:** ninguno de estos ids vive en el
+dataset. **Una arista se cablea contra ids que ya viven**, y el gate tiene su
+guarda `arista_rota` precisamente para eso. **Los seis `nodos_previos` y
+`nodos_siguientes` van vacios, y el cable se pone el dia que el fundador
+autorice la insercion.**
+
+### 2.k. LA SERIE NUMERADA, PARA EL CENSO QUE ESCRIBE LA ADUANA
+
+*`censos/series_y_cabezas.md` lo escribe la aduana al insertar, no yo (seccion
+14). Lo dejo medido para ese dia:*
+
+    numeracion : "HOW TO CREATE A SCORECARD", cap_03.md L269 a L277, 4 puntos
+    cabeza     : crear_tarjeta_puntuacion_puesto
+    pasos      : 1 redactar_mision_tarjeta_puntuacion          (L271)
+                 2 definir_resultados_tarjeta_puntuacion       (L273)
+                 3 identificar_competencias_tarjeta_puntuacion (L275)
+                 4 alinear_comunicar_tarjeta_puntuacion        (L277)
+    compresiones de esta numeracion: UNA, la cabeza. Ninguna otra.
