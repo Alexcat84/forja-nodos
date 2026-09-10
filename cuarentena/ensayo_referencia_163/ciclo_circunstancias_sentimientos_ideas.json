@@ -1,0 +1,40 @@
+{
+  "condiciones_activacion": "Al iniciar el diseño de cualquier producto, servicio o experiencia que involucre interacción humana. Cuando se quiere anticipar consecuencias emocionales no deseadas de una innovación. Cuando el equipo diseña productos digitales o servicios con alto contacto emocional (redes sociales, apps, IA conversacional).",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Un mapa o diagrama del ciclo circunstancias-sentimientos-ideas aplicado al producto o servicio, junto con una declaración de intención emocional y los efectos no deseados identificados",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "assembling_tomorrow_a_guide",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "ciclo_circunstancias_sentimientos_ideas",
+  "ids_alias": [],
+  "nodos_previos": [
+    "empathy_map",
+    "framework_flujos_de_datos_ppp",
+    "ficcion_especulativa_como_metodo"
+  ],
+  "nodos_siguientes": [
+    "economia_circular_de_la_imaginacion",
+    "prototipado_rapido",
+    "disenar_los_detalles_no_lo_inevitable",
+    "gestion_decisiones_bajo_carga_emocional"
+  ],
+  "pasos_accionables": [
+    "Antes de diseñar, preguntar explícitamente: ¿qué se quiere que la gente sienta al usar esto?",
+    "Identificar una circunstancia de diseño existente (un producto, interfaz o espacio) y observar qué reacciones físicas y emocionales provoca en las personas (ansiedad, calma, pertenencia, etc.)",
+    "Rastrear qué elementos concretos del diseño (luz, sonido, texto, jerarquía visual, mensaje) generan esa emoción",
+    "Anticipar qué ideas o comportamientos podría inspirar esa emoción en las personas a largo plazo",
+    "Diseñar deliberadamente las circunstancias para inducir los sentimientos deseados, considerando el ciclo completo y no solo la función inmediata del producto",
+    "Revisar iterativamente si los resultados generados retroalimentan positivamente el ciclo o producen efectos no deseados"
+  ],
+  "resumen_teorico": "Las circunstancias que se diseñan (tecnologías, espacios, medios, interfaces) generan sentimientos y reacciones emocionales en las personas que los usan; esos sentimientos alimentan nuevas ideas y comportamientos, que a su vez generan nuevas circunstancias diseñadas, cerrando un ciclo continuo (circunstancias, sentimientos, ideas, nuevas circunstancias). Este ciclo explica por qué tecnologías creadas con intenciones neutras (como conectar información) terminan generando efectos emocionales masivos y no planeados, como polarización, ansiedad o adicción. Reconocer el ciclo permite anticipar y decidir intencionalmente qué emociones se quiere que provoque un producto o servicio, en vez de dejar que surjan como efecto colateral no planeado.",
+  "titulo": "El Ciclo Circunstancias-Sentimientos-Ideas"
+}

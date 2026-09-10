@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Cuando necesitas formalizar la confianza de que se cumplirán los requisitos de calidad.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Documento con tu política de aseguramiento de calidad, con el alcance y las evidencias que necesitas mostrar",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "juran_s_quality_handbook",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "definicion_y_concepto_de_aseguramiento_de_calidad",
+  "ids_alias": [],
+  "nodos_previos": [
+    "formacion_seleccion_y_retencion_de_personal"
+  ],
+  "nodos_siguientes": [
+    "concepto_de_auditoria_de_calidad",
+    "trilogia_juran_qa_qc"
+  ],
+  "pasos_accionables": [
+    "Define hasta dónde llega el aseguramiento de calidad en tu negocio (planificación, control, mejora, revisión)",
+    "Establece evidencias concretas: inspecciones, pruebas, revisiones de tus planes",
+    "Diferencia el aseguramiento de calidad de otras tareas de calidad relacionadas",
+    "Comunica el propósito del aseguramiento a todos los que participan en tu negocio"
+  ],
+  "resumen_teorico": "El aseguramiento de calidad es la actividad de reunir evidencia para tener confianza en que se cumplirán los requisitos de calidad. Incluye actividades planificadas y sistemáticas dentro de tu forma de trabajar la calidad, demostradas cuando haga falta, para dar la seguridad de que lo que ofreces cumplirá lo esperado. Es parecido a lo que hace una auditoría financiera, que da confianza sobre la integridad de las cuentas.",
+  "titulo": "Definición y Concepto de Aseguramiento de Calidad"
+}

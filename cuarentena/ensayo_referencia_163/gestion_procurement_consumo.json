@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando no tienes claro qué y cuánto compras en tu negocio. Cuando buscas oportunidades de ahorro en tus compras.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Un reporte de tu consumo por categoría de producto y lugar de operación, con el análisis de las desviaciones.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "essentials_of_supply_chain",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "gestion_procurement_consumo",
+  "ids_alias": [],
+  "nodos_previos": [
+    "definicion_alineacion_cadena_suministro"
+  ],
+  "nodos_siguientes": [
+    "alcance_profundo_cadena_suministro",
+    "negociacion_carta_compromiso_banquero"
+  ],
+  "pasos_accionables": [
+    "Clasifica lo que compras en materiales estratégicos y compras indirectas (MRO)",
+    "Define cuánto esperas consumir de cada producto en cada lugar donde operas",
+    "Compara periódicamente lo que consumes realmente contra lo esperado",
+    "Investiga las causas cuando encuentres desviaciones grandes, ya sea por encima o por debajo de lo esperado",
+    "Ajusta tus expectativas o corrige el proceso según lo que encuentres"
+  ],
+  "resumen_teorico": "Antes de negociar con tus proveedores, necesitas entender cuánto y qué compras en todo tu negocio. Define cuánto esperas consumir de cada categoría de producto y en cada lugar donde operas, y compara eso regularmente con lo que realmente consumes para detectar desviaciones que te avisen de problemas u oportunidades.",
+  "titulo": "Cuánto y qué compras en tu negocio (procurement)"
+}

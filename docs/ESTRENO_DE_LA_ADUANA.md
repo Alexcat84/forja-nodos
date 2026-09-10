@@ -3,6 +3,11 @@
 **9 sep 2026.** Primera vez que la aduana de la forja mira un lote entero por su
 puerta real. **Cero inserciones**, y esta probado mas abajo con huellas.
 
+> **RE CORRIDO EL 10 sep 2026** con las reglas de id que el fundador reescribio
+> ese dia (D.21 a D.25 del banco). **Las cifras nuevas van en la seccion 9, al
+> lado de las viejas, que no se borran.** Las secciones 1 a 8 son del estreno
+> original y se leen tal cual.
+
     python forja.py informe --carpeta cuarentena/<lote>
 
 ---
@@ -350,3 +355,80 @@ ahora y no a la mitad del lote, que es para lo que servia este estreno.**
 
 La carpeta `cuarentena/` esta ignorada por git: **el lote no viaja, la semilla
 si.** Con la semilla escrita el lote se reconstruye identico.
+
+---
+
+## 9. LA RE CORRIDA CON LAS REGLAS NUEVAS (10 sep 2026)
+
+Las cinco decisiones del fundador del 10 sep 2026 (D.21 a D.25 del banco)
+reescribieron las reglas 1 y 2 de ids. **El mismo lote, el mismo comando, la
+misma semilla, corrido otra vez.** Las cifras viejas no se borran: van al lado.
+
+    FORJA_FUENTES=cuarentena/_derivadas/FUENTES_DEL_ensayo_referencia_163.json \
+    python forja.py informe --carpeta cuarentena/ensayo_referencia_163
+
+**Salida vieja conservada en `calibracion/SALIDA_ESTRENO_REGLAS_VIEJAS.txt`;
+la nueva en `calibracion/SALIDA_ESTRENO.txt`.**
+
+### 9.1. El saldo, lado a lado
+
+| | reglas viejas | **reglas nuevas** | |
+|---|---:|---:|---|
+| candidatos revisados | 163 | **163** | |
+| **ENTRARIAN** | 114 (69,9 %) | **94 (57,7 %)** | 20 menos |
+| **BLOQUEARIAN** | 0 | **0** | el grafo sigue con 2 nodos |
+| **CAERIAN** | 49 (30,1 %) | **69 (42,3 %)** | **20 mas** |
+| **CHOCAN** | 0 | **0** | |
+
+### 9.2. Por que guarda, lado a lado
+
+| guarda | viejas | **nuevas** | |
+|---|---:|---:|---|
+| regla 1, palabra inglesa con equivalente | 6 | **29** | **casi cinco veces mas** |
+| regla 3, preposicion o articulo | 35 | **35** | sin tocar |
+| regla 2, sufijo numerico de VERSION | 5 | **5** | ninguno de los 5 era denominacion |
+| guiones prohibidos en el texto | 4 | **4** | sin tocar |
+| **total de ids rotos** | **45** | **65** | |
+
+**LA REGLA 2 NO CAMBIO SU CIFRA EN ESTE LOTE, y eso es informacion, no ruido:**
+los 5 que caen llevan numero de una cifra y son versiones. **Los cuatro casos
+que la regla vieja tumbaba mal** (`familia_normas_iso_9000`,
+`cumplimiento_ftc_rule_436`, `canales_de_traccion_19`, `riesgo_split_51_49`) **no
+estaban en esta muestra de 163**. El indulto esta medido sobre el catalogo
+entero, en D.22, no aqui.
+
+### 9.3. Los 29 que la regla 1 tumba ahora, revisados uno a uno
+
+**Se leyeron los 29 antes de dar la cifra por buena**, porque una lista negra
+mal hecha rechaza trabajo bueno y eso no se ve en un total. Dos errores propios
+salieron de esa lectura y se arreglaron antes de publicar:
+
+| error | que pasaba | arreglo |
+|---|---|---|
+| `ranking` estaba en la NEGRA | es prestamo asentado, la RAE lo admite | pasa a la BLANCA |
+| `dashboard` en la negra y `dashboards` en la blanca | la misma palabra en las dos listas, que es justo lo que el criterio prohibe | las dos a la NEGRA |
+
+**Los 29 restantes son rechazos correctos**, y tres merecen nombrarse porque
+enseñan como se corrige un id en vez de discutirlo:
+
+- **`work_breakdown_structure`**: el castellano tiene EDT, estructura de
+  descomposicion del trabajo. El termino ingles **no se pierde**: va a
+  `denominaciones.otros_idiomas`, que es su sede.
+- **`paris_convention_prioridad`**: es el **Convenio de Paris**. Un nombre propio
+  traducido no es una traduccion libre, es el nombre.
+- **`mitos_stage_gate`**: `stage_gate` es el nombre de un metodo, y aun asi el id
+  va en castellano con el ingles en denominaciones. **La regla no hace
+  excepciones por prestigio del termino.**
+
+### 9.4. Lo que estas cifras significan para el mundo 11
+
+**CUATRO DE CADA DIEZ candidatos escritos con la mano de aquella campaña caerian
+en la puerta.** Eran tres de cada diez antes.
+
+Eso **no es un empeoramiento del instrumento: es el instrumento midiendo mas.**
+Y la decision 3 del fundador (D.23) dice que hacer con ello: **las reglas no
+bajan, el extractor aprende.** Por eso `docs/loop/EXTRACTOR.md` lleva ahora las
+dos listas con sus ejemplares dentro, y por eso **cada candidato pasa por la
+aduana en el mismo acto en que se escribe**. Un candidato corregido en el minuto
+en que se escribio cuesta un minuto; descubierto al cerrar el lote, cuesta el
+lote.

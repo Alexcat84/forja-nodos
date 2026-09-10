@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Cuando distintos inspectores obtienen resultados inconsistentes sobre el mismo producto. Cuando se necesita estandarizar criterios de calidad entre múltiples evaluadores.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Un documento de definición operacional con método de prueba y criterios claros de aceptación/rechazo",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "out_of_the_crisis",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "definiciones_operacionales_2",
+  "ids_alias": [],
+  "nodos_previos": [
+    "definiciones_operacionales_3"
+  ],
+  "nodos_siguientes": [
+    "administracion_de_inspeccion",
+    "control_estadistico_metodo_medicion"
+  ],
+  "pasos_accionables": [
+    "Definir claramente el método de prueba a utilizar",
+    "Establecer el criterio específico de aceptación o rechazo",
+    "Documentar la definición de forma comunicable para todo el personal involucrado",
+    "Verificar que múltiples inspectores apliquen el criterio de manera consistente"
+  ],
+  "resumen_teorico": "Una definición operacional consiste en un método de prueba, una prueba y un criterio para juzgar si una pieza de trabajo se clasifica como defectuosa o aceptable. Es esencial para que diferentes inspectores o trabajadores entiendan y apliquen el mismo criterio, evitando discrepancias como las observadas entre inspectores que califican de manera diferente el mismo producto.",
+  "titulo": "Definiciones Operacionales (Método, Prueba y Criterio)"
+}

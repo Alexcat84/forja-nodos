@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando existe una visión grande de negocio pero no hay certeza de que exista demanda real. Cuando el equipo está tentado a construir toda la infraestructura antes de validar la demanda.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Experimento de bajo costo ejecutado que arroja datos cuantitativos (demanda real) y cualitativos (comportamiento de clientes)",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_lean_startup_eric",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "pensar_en_grande_empezar_pequeno",
+  "ids_alias": [],
+  "nodos_previos": [
+    "definicion_tipos_nuevo_producto",
+    "tipos_de_clientes"
+  ],
+  "nodos_siguientes": [
+    "concierge_mvp",
+    "experimentacion_iterativa_mercado_fisico"
+  ],
+  "pasos_accionables": [
+    "Identificar la pregunta central que la visión completa del negocio necesita responder",
+    "Diseñar un experimento mínimo que pruebe esa pregunta sin construir toda la infraestructura",
+    "Interactuar directamente con clientes reales (pago, devoluciones, soporte) en lugar de solo preguntarles",
+    "Estar atento a comportamientos inesperados de los clientes que revelen información no contemplada"
+  ],
+  "resumen_teorico": "Ejemplificado por Zappos: en vez de esperar a construir toda la infraestructura de un negocio (almacenes, distribución) antes de probar la visión completa, se puede validar la hipótesis central con un experimento mínimo. Zappos probó la demanda de comprar zapatos online fotografiando inventario de tiendas locales y comprando solo lo que se vendía, sin inventario propio. Esto genera datos de comportamiento real, mucho más valiosos que una encuesta de mercado.",
+  "titulo": "Pensar en Grande, Empezar en Pequeño (Think Big, Start Small)"
+}

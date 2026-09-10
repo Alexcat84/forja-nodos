@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando tu producto se dirige a un nicho industrial que se concentra en eventos presenciales. Cuando buscas acelerar acuerdos de distribución, prensa o alianzas estratégicas. Cuando tu ciclo de ventas es largo y necesitas interactuar directamente con quien toma la decisión.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Un calendario anual de ferias comerciales seleccionadas con presupuesto asignado y la justificación del retorno que esperas de cada una.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "traction_gabriel_weinberg",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "estrategia_ferias_comerciales",
+  "ids_alias": [],
+  "nodos_previos": [
+    "validacion_hipotesis_ingresos"
+  ],
+  "nodos_siguientes": [
+    "tacticas_de_ferias_comerciales"
+  ],
+  "pasos_accionables": [
+    "Define qué buscas este año al asistir a ferias: prensa, inversionistas, clientes o socios.",
+    "Haz una lista de todos los eventos relevantes de tu industria.",
+    "Evalúa cada evento según el tipo de interacción que buscas, íntima o masiva, y si se ajusta a tus objetivos.",
+    "Establece tu presupuesto anual y repártelo por trimestre.",
+    "Calcula el retorno que esperas, cuántos asistentes calificados habrá, cuánto cuesta el estand y cuál es el precio de tu producto, antes de comprometerte.",
+    "Visita como invitado un evento el año anterior a exhibir, o pregúntale a quienes ya expusieron."
+  ],
+  "resumen_teorico": "Las ferias comerciales son eventos presenciales donde se concentran los actores clave de tu industria: prensa, clientes, socios y competencia. Antes de invertir en tener un estand, te conviene visitar el evento como invitado el año anterior o preguntarle a quienes ya expusieron cómo les fue. Para decidir si vale la pena asistir, define objetivos claros (prensa, inversionistas, clientes, socios), haz una lista de los eventos relevantes, evalúa cada uno según esos objetivos y calcula el costo frente al beneficio con tu presupuesto anual repartido por trimestre.",
+  "titulo": "Estrategia de Ferias Comerciales (Trade Show Strategy)"
+}

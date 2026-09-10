@@ -393,3 +393,177 @@ Implementado en `comun.BANDEJAS_DE_ENTRADA` y `comun._es_bandeja`, con dos
 pruebas en `tests/test_aceptacion.py` (`PruebaBandejas`): una comprueba que la
 raiz SI se barre y la subcarpeta no, y **su caso positivo** comprueba que el
 gate sigue mordiendo el mismo guion dentro de un candidato.
+
+## D.21. La regla 1 de ids tiene CRITERIO, y son dos listas (10 sep 2026, decision del fundador)
+
+*Cita: decision del fundador del 10 sep 2026, sobre la cifra de
+`docs/ESTRENO_DE_LA_ADUANA.md` seccion 6.2.*
+
+La lista negra vieja tenia 37 palabras y ningun criterio salvo "lo que aparece
+mas". Medida contra el catalogo auditado, **dejaba pasar 269 de 3.169 ids vivos**
+y dejaba entrar `variance_analysis` y `work_breakdown_structure` enteros.
+
+**LA DECISION NO FUE ENGORDARLA A CIEGAS NI PONER UNA PRUEBA DE IDIOMA
+AUTOMATICA**, que habria sido maquinaria nueva bajo moratoria. Fue darle criterio:
+
+| lista | que es | tamaño |
+|---|---|---:|
+| **NEGRA** `INGLES_CON_EQUIVALENTE` | palabra inglesa **con equivalente corriente en castellano** | **366** |
+| **BLANCA** `PRESTAMOS_ASENTADOS` | **prestamo asentado** en el castellano de negocios | **33** |
+| **NI UNA NI OTRA** `NOMBRES_Y_SIGLAS` | nombre propio y sigla: un apellido no tiene equivalente | **27** |
+
+**POR QUE NO ES PURISMO, y este es el motivo tecnico:** dos grafias del mismo
+concepto **parten la familia**. `retencion_clientes` y `customer_retention`
+tienen clave de familia **disjunta**, asi que la señal 2 no los ve juntos **y
+entran los dos**. Un solo idioma en los ids es lo que deja trabajar a la señal.
+
+**LO MEDIDO, sobre los 3.169 vivos:**
+
+| | vieja | nueva |
+|---|---:|---:|
+| ids que la lista caza | 105 | **497** |
+| ids que la blanca indulta | 0 | **138** |
+
+**LOS 269 IDS DEL CATALOGO SON COSA JUZGADA.** Esta regla rige lo que se
+ESCRIBE de ahora en adelante. **No se reabre un id ya adjudicado por una lista
+que llego despues**, y eso vale tambien si el catalogo entrase algun dia entero.
+
+**PRUEBAS** (`PruebaReglasDeId` en `tests/test_aceptacion.py`): la negra tumba
+`customer_retention_tactics` **nombrando las dos piezas**; el **caso positivo**
+comprueba que `plan_marketing_contenidos`, `medir_benchmarking_costes`,
+`valorar_startup_temprana` y `aplicar_lean_produccion` pasan limpios, porque una
+regla que tumba todo es un candado; una tercera comprueba que `deming`,
+`shewhart` y `osha` **no se cazan**; y una cuarta que **las dos listas no se
+solapan**, que es la comprobacion de que la regla sigue teniendo criterio. El
+modulo tambien lo verifica al importarse.
+
+Ampliar cualquiera de las dos listas es **correccion declarada con fecha**.
+
+## D.22. La regla 2 prohibe la VERSION, no el numero (10 sep 2026, decision del fundador)
+
+*Cita: decision del fundador del 10 sep 2026, sobre los 14 ejemplares de
+`docs/ESTRENO_DE_LA_ADUANA.md` seccion 6.2.*
+
+La regla vieja prohibia **todo** numero al final. **Contado sobre el catalogo:**
+de los 48 ids vivos que acaban en numero, **44 llevan un numero de una cifra y
+son versiones**, y los **4** restantes son **denominaciones**:
+
+    familia_normas_iso_9000       cumplimiento_ftc_rule_436
+    canales_de_traccion_19        riesgo_split_51_49
+
+> **NADIE HACE UNA VERSION 436.**
+
+Ese es el corte, y esta contado: **48 de 48**. `TOPE_DE_VERSION = 9`.
+
+**Y EL NUMERO EN MEDIO NUNCA FUE VERSION.** Los **14 vivos** que lo llevan son
+los ejemplares de la regla, y los catorce son denominaciones:
+`los_14_puntos_deming`, `benchmarking_7_pasos_juran`, `iso_31000_gestion_riesgo`,
+`regla_50_por_ciento`, `modelo_lubin_esty_4_etapas`.
+
+**LA VERSION CUYA BASE YA VIVE SE CAZA DOS VECES, y la segunda no es esta
+regla.** `familia()` normaliza los digitos finales, asi que `accion_correctiva_2`
+y `accion_correctiva` tienen la **misma clave de familia entera**: la señal 2 los
+levanta como vecinos aunque la regla 2 los dejara pasar. **De los 48, 39 tienen
+su base viva en el grafo.** La puerta y la cola dicen lo mismo por caminos
+distintos, y por eso acotar la regla no abre un agujero.
+
+**POR ESO NO HIZO FALTA MAQUINARIA:** la regla 2 sigue siendo una regla de FORMA
+PURA, sin acceso al grafo. Se penso darle el resolutor para comprobar si la base
+existe, y **se descarto**: la señal ya lo hacia.
+
+**PRUEBAS:** caen `accion_correctiva_2`, `consejo_calidad_3`, `cultura_justa_9`;
+**caso positivo**, pasan `familia_normas_iso_9000`, `canales_traccion_19`,
+`riesgo_split_51_49` y los tres de numero en medio; y una prueba mas comprueba
+que la clave de familia de `accion_correctiva_2` y la de `accion_correctiva` son
+**la misma**, con similitud **1,0**, con su propio caso positivo de dos ids que
+**no** comparten familia.
+
+## D.23. La aduana NO se relaja: el extractor aprende las reglas antes de escribir el primer id (10 sep 2026, decision del fundador)
+
+*Cita: decision del fundador del 10 sep 2026, sobre la decision 7.3 de
+`docs/ESTRENO_DE_LA_ADUANA.md`.*
+
+El estreno midio que **tres de cada diez** candidatos escritos con la mano de
+aquella campaña caerian en la puerta, y con las reglas nuevas son **cuatro de
+cada diez**. Habia dos salidas y el fundador eligio la que cuesta antes:
+
+> **LAS REGLAS NO BAJAN. EL EXTRACTOR APRENDE.**
+
+**LO QUE ESTO OBLIGA, y es lo que lo convierte en regla y no en deseo:**
+
+1. `docs/loop/EXTRACTOR.md` lleva las reglas de id **con sus dos listas y sus
+   ejemplares**, no un enlace a otro documento.
+2. **CADA CANDIDATO PASA POR LA ADUANA EN EL MISMO ACTO EN QUE SE ESCRIBE**,
+   antes de darlo por escrito. El que cae **se corrige y se reintenta**. Nada se
+   publica sin haber pasado la aduana.
+3. Un lote no se da por cerrado con candidatos que el propio extractor sabe que
+   caerian.
+
+**EL MOTIVO:** un id mal puesto no cuesta un rechazo, cuesta **una arista**. Y
+descubrirlo candidato a candidato al final del lote es lo caro. **La correccion
+vale mas barata en el mismo minuto en que se escribio.**
+
+## D.24. El mundo 11 entra POR LIBROS, uno por lote (10 sep 2026, decision del fundador)
+
+*Cita: decision del fundador del 10 sep 2026, sobre la cifra de
+`docs/ESTRENO_DE_LA_ADUANA.md` seccion 5: un lote de 163 cuesta unos 520
+veredictos en regimen.*
+
+**UN LIBRO POR LOTE. NO ENTRA EL MUNDO ENTERO.** Y el orden esta escrito:
+
+| | libro | capitulos |
+|---|---|---:|
+| **LOTE 1, de calibracion** | **`onu_consumidor`** | **4** |
+| 2 | `smart_who` | 7 |
+| 3 | `zhuo_manager` | 12 |
+| 4 | `scott_radical_candor` | 15 |
+| 5 en adelante | el orden del `MANIFIESTO.md` del mundo 11 | |
+| **el ultimo** | **`mundo_10_reservado`** (Gerber cap. 17) | **1** |
+
+**POR QUE EL DE MENOS CAPITULOS PRIMERO:** el primer lote no se hace para meter
+nodos, **se hace para medir el instrumento con trabajo de verdad delante**.
+Cuatro capitulos caben en pocas vueltas, y si algo esta mal calibrado se
+descubre barato. **Un lote de calibracion grande no calibra: solo cuesta mas.**
+
+**Y EL ORDEN IMPORTA POR UNA RAZON MEDIDA, no por gusto:** el primero que entra
+cambia lo que el segundo mide (`EXTRACTOR.md` seccion 12). Con el grafo casi
+vacio la cola es corta; crece con el grafo.
+
+**EL MUNDO 10 VA AL FINAL** porque es un solo capitulo apartado a proposito
+(`docs/ESTRENO_DE_LA_ADUANA.md` seccion 1.1): entra cuando el grafo ya sabe con
+quien compararlo.
+
+## D.25. La cuarentena VIAJA en el repo (10 sep 2026, decision del fundador)
+
+*Cita: decision del fundador del 10 sep 2026, sobre la decision abierta al final
+de `cuarentena/LEEME.md`.*
+
+`.gitignore` pierde su linea de la cuarentena. **Los lotes viajan.**
+
+**EL MOTIVO ES LA RUTA QUE PROMETE PRUEBA ES CIFRA** (cosecha 7.C): un informe
+que dice *"de estos 163, 49 caerian"* **solo se puede comprobar si los 163 estan
+en el arbol**. Un lote que no viaja convierte cada informe en una firma en vez
+de una prueba. Pesan, y se aceptan.
+
+**`fuentes/<clave>/` SIGUE FUERA:** es texto con derechos de otro autor, y esa
+es una razon distinta que la decision no toca.
+
+**LA UNICA EXCEPCION, y es estrecha:** `cuarentena/_derivadas/` guarda copias
+que hace la maquina para medir, entre ellas el catalogo de referencia ENTERO
+(5,6 MB, 3.157 nodos). Eso ya vive en su repo, en su tag, y duplicarlo aqui no
+prueba nada que el tag no pruebe mejor.
+
+> ### CORRECCION DECLARADA A D.20, misma fecha
+>
+> **D.20 justificaba la linea del barrido diciendo que era "exactamente la que
+> traza `.gitignore`". Esa frase deja de ser cierta hoy**, porque `.gitignore`
+> movio su linea y el barrido no.
+>
+> **LA LINEA DEL BARRIDO NO SE MUEVE, y su razon verdadera nunca fue la
+> coincidencia: era SE BARRE LO QUE ESTA CASA ESCRIBE.** Un candidato en
+> cuarentena es material ajeno esperando juicio **tanto si viaja en git como si
+> no**, y barrerlo seguiria empujando a limpiarlo antes de que la aduana lo
+> mida, que es falsificar la medida en la puerta.
+>
+> La coincidencia con `.gitignore` era **incidental**, y hoy se ve que lo era.
+> El texto viejo de D.20 no se borra: se lee con esta correccion al lado.

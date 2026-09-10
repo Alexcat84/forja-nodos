@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Cuando se contrata a alguien clave en etapas tempranas y se debate si merece el título de fundador. Si existen conflictos sobre quién es considerado 'verdadero' fundador dentro del equipo.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Política escrita sobre criterios para otorgar el título de fundador y su relación con equity y roles.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_founder_s_dilemmas",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "estatus_fundador_simbolico",
+  "ids_alias": [],
+  "nodos_previos": [
+    "cuantos_cofundadores_agregar"
+  ],
+  "nodos_siguientes": [
+    "reasignacion_equity_fundadores"
+  ],
+  "pasos_accionables": [
+    "Definir criterios claros y objetivos para otorgar el título de fundador (fecha de inicio, aporte de propiedad intelectual, rol inicial, equity).",
+    "Evaluar si otorgar el título simbólicamente a una contratación temprana ayuda a solidificar su compromiso.",
+    "Anticipar si la persona podrá evolucionar de la etapa 'jungla' a la etapa 'autopista' de la empresa.",
+    "Documentar explícitamente por qué cada persona recibe o no el título de fundador."
+  ],
+  "resumen_teorico": "El título de 'fundador' puede ser objetivo (basado en fecha de inicio, aporte de idea, rol inicial) o simbólico, otorgado a contrataciones tempranas para incentivar compromiso sin ceder salario o efectivo. Sin embargo, otorgar este título con facilidad conlleva riesgos: puede generar sentido de derecho a posiciones senior que la persona podría no sostener en etapas posteriores (metáfora de 'jungla, camino de tierra y autopista').",
+  "titulo": "Otorgar el Título de 'Fundador' de Forma Estratégica"
+}

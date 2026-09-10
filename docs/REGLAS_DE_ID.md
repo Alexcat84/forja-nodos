@@ -24,21 +24,80 @@ censos/denominaciones.md.
 - invalido: `register_canonical_source`
 - invalido: `registrar_source` (mezcla de idiomas en un mismo id)
 
-El codigo comprueba esta regla contra una lista corta y explicita
-(`LEXICO_AJENO` en src/reglas_id.py). La lista no es el idioma entero: es el
-vocabulario ajeno que de verdad aparece en esta forja. Se amplia con fecha
-cuando una palabra nueva se cuela, y ampliarla es una correccion declarada, no
+### Las dos listas, y el criterio que las separa (10 sep 2026)
+
+La version vieja de esta regla era **una lista negra de 37 palabras** sin mas
+criterio que "lo que aparece con mas frecuencia". El estreno de la aduana la
+midio: **dejaba pasar 269 de los 3.169 ids vivos** del catalogo auditado, y
+dejaba entrar `variance_analysis` y `work_breakdown_structure` enteros.
+
+**Decision del fundador del 10 sep 2026: no se engorda a ciegas, y NO se pone
+una prueba de idioma automatica.** Se le da criterio, y son dos listas.
+
+| lista | que es | donde vive |
+|---|---|---|
+| **NEGRA** | palabra inglesa **que tiene equivalente corriente en castellano**. Si la palabra existe en castellano y se usa, el id la usa | `INGLES_CON_EQUIVALENTE`, 366 piezas |
+| **BLANCA** | **prestamo asentado** en el castellano de negocios, donde traducir fabricaria un termino que nadie dice | `PRESTAMOS_ASENTADOS`, 33 piezas |
+| ni una ni otra | **nombre propio y sigla**: un apellido no tiene equivalente, y una sigla no es una palabra | `NOMBRES_Y_SIGLAS`, 27 piezas |
+
+- **negra:** `customer`, `management`, `quality`, `supply`, `framework`,
+  `variance`, `breakdown`, `procurement`, `stakeholders`.
+- **blanca:** `marketing`, `benchmarking`, `startup`, `lean`, `coaching`,
+  `scrum`, `feedback`, `stock`, `software`, `web`, `ranking`, `escrow`.
+- **nombres y siglas:** `deming`, `shewhart`, `juran`, `osha`, `swot`, `leed`.
+
+**LAS DOS LISTAS NO PUEDEN SOLAPARSE**, y el modulo lo comprueba al importarse:
+una palabra no puede tener equivalente corriente **y** ser un prestamo
+asentado. Si alguna vez chocan, la regla dejo de tener criterio.
+
+**POR QUE ESTO NO ES PURISMO.** Dos grafias del mismo concepto **parten la
+familia**: `retencion_clientes` y `customer_retention` tienen clave de familia
+DISJUNTA, asi que la señal 2 no los ve juntos **y entran los dos**. Un solo
+idioma en los ids es lo que deja trabajar a la señal.
+
+**LOS 269 IDS DEL CATALOGO SON COSA JUZGADA.** Esta regla rige lo que se
+**escribe** de ahora en adelante. No se reabre un id ya adjudicado por una
+lista que llego despues.
+
+Ampliar cualquiera de las dos listas es **correccion declarada con fecha**, no
 una edicion silenciosa.
 
-## Regla 2. Sin sufijos numericos
-Nunca `_2`, `_3`, `_bis`, `_nuevo`, `_final`. Un sufijo numerico es la firma de
-una duplicacion que alguien no quiso mirar: si hay un segundo nodo, o continua
-al primero (y entonces pide arista y nombre propio) o lo repite (y entonces no
-entra, seccion 5 del manual).
+## Regla 2. Sin sufijos numericos DE VERSION
+Nunca `_2`, `_3`, `_bis`, `_nuevo`, `_final`. Un sufijo numerico de version es
+la firma de una duplicacion que alguien no quiso mirar: si hay un segundo nodo,
+o continua al primero (y entonces pide arista y nombre propio) o lo repite (y
+entonces no entra, seccion 5 del manual).
 
 - valido: `elegir_grafia_clave`
 - invalido: `elegir_grafia_clave_2`
 - invalido: `registrar_fuente_canonica_final`
+
+### El numero que es parte de la denominacion SI vale (10 sep 2026)
+
+La version vieja prohibia **todo** numero al final. **Medido sobre el catalogo
+auditado:** de los 48 ids vivos que acaban en numero, **44 llevan un numero de
+una cifra y son versiones** (`accion_correctiva_2`, `consejo_de_calidad_3`), y
+los **4** que llevan un numero mayor son **denominaciones**:
+
+    familia_normas_iso_9000       cumplimiento_ftc_rule_436
+    canales_de_traccion_19        riesgo_split_51_49
+
+**NADIE HACE UNA VERSION 436.** Ese es el corte, y esta contado: **48 de 48**.
+La regla prohibe el numero final **de una sola cifra** (`TOPE_DE_VERSION = 9`).
+
+**Y EL NUMERO EN MEDIO NUNCA FUE VERSION.** Los 14 vivos que lo llevan son los
+ejemplares de la regla, y todos son denominaciones:
+
+    los_14_puntos_deming              benchmarking_7_pasos_juran
+    iso_31000_gestion_riesgo          regla_50_por_ciento
+    programa_mejora_calidad_14_pasos  modelo_lubin_esty_4_etapas
+
+**LA VERSION CUYA BASE YA VIVE SE CAZA DOS VECES, y la segunda no es esta
+regla.** `familia()` normaliza los digitos finales, asi que
+`accion_correctiva_2` y `accion_correctiva` tienen la **misma clave de
+familia**: la señal 2 los levanta como vecinos aunque la regla 2 los dejara
+pasar. **De los 48, 39 tienen su base viva en el grafo.** La puerta y la cola
+dicen lo mismo por caminos distintos, que es como tiene que ser.
 
 ## Regla 3. Sin preposiciones ni articulos
 Las piezas del id son las palabras con carga. Nada de `de`, `del`, `la`, `el`,

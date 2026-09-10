@@ -1,0 +1,40 @@
+{
+  "condiciones_activacion": "Cuando necesitas comprobar si de verdad existe mercado para tu producto. Cuando estás por empezar a construir tu producto sin haberlo validado antes.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Un registro de conversaciones con clientes, hechas de forma repetida, que te confirme o te tumbe las hipótesis con las que arrancaste",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_startup_owner_s",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "customer_development_modelo",
+  "ids_alias": [],
+  "nodos_previos": [
+    "search_for_business_model",
+    "modelo_tradicional_introduccion_producto",
+    "tipos_de_riesgo_invencion_vs_mercado"
+  ],
+  "nodos_siguientes": [
+    "customer_discovery",
+    "decision_pivotar_o_proceder",
+    "actualizar_modelo_de_negocio_pivot_o_proceed",
+    "voz_del_cliente_voc",
+    "customer_development_agile_pairing"
+  ],
+  "pasos_accionables": [
+    "Identifica las hipótesis centrales de tu negocio: quién es tu cliente, cuál es su problema y qué solución le propones",
+    "Sal a hablar directamente con clientes potenciales, no te quedes esperando que lleguen",
+    "Recoge lo que te dicen sobre el producto, el canal para llegar a ellos, el precio y cómo lo entienden",
+    "Ajusta tu modelo de negocio según lo que aprendes de verdad, no según lo que supones",
+    "Combina estas conversaciones con ir desarrollando tu producto de forma ágil, en paralelo"
+  ],
+  "resumen_teorico": "Es un proceso para encontrar un modelo de negocio que funcione y que puedas repetir y hacer crecer. Se combina con un desarrollo ágil de tu producto para ir ajustando rápido. La idea central es que salgas del escritorio y hables directamente con clientes reales antes de comprometerte con un diseño final de producto. Esto reemplaza el viejo camino de escribir un plan de negocio fijo y recién ahí construir.",
+  "titulo": "Sal a hablar con tus clientes antes de construir (Customer Development)"
+}

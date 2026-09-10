@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Cuando se detectan defectos o no conformidades recurrentes.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Sistema de acción correctiva con causas raíz documentadas y medidas preventivas implementadas",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "quality_is_free_the",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "accion_correctiva_2",
+  "ids_alias": [],
+  "nodos_previos": [
+    "analisis_datos_reporte_estatus"
+  ],
+  "nodos_siguientes": [
+    "planificacion_calidad_crosby",
+    "manejo_problemas"
+  ],
+  "pasos_accionables": [
+    "Observar rechazos reales y analizarlos como evidencia directa de fallas",
+    "Realizar análisis de tendencias para detectar problemas menos obvios",
+    "Determinar la causa raíz sistémica, no solo culpar a individuos",
+    "Implementar cambios que prevengan la recurrencia del problema, no solo su corrección puntual"
+  ],
+  "resumen_teorico": "No es lo que encuentras, es lo que haces con lo que encuentras. Toda la planificación, inspección y medición del departamento de calidad es inútil si no conduce a prevenir la recurrencia de un problema. El verdadero valor de la ingeniería de calidad está en aprender del pasado para construir un futuro más fluido, mediante observación de rechazos reales y análisis de tendencias.",
+  "titulo": "Acción Correctiva (De la Detección a la Prevención)"
+}

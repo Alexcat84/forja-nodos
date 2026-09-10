@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Solo aplica si vendes o piensas vender franquicias en Estados Unidos. Al diseñar materiales de marketing y ventas de franquicia.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "franquicias",
+  "entregable_esperado": "Lista de stakeholders de influencia y checklist de materiales adaptados para cada uno",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "franchise_your_business_mark",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "multiples_compradores_influyentes",
+  "ids_alias": [],
+  "nodos_previos": [
+    "vender_concepto_franquicia",
+    "tipos_de_clientes"
+  ],
+  "nodos_siguientes": [
+    "sitio_web_franquicia",
+    "mensaje_marketing_franquicia"
+  ],
+  "pasos_accionables": [
+    "Mapear todos los actores que influirán en la decisión de compra del prospecto",
+    "Adaptar el sitio web, videos y folletos para responder a las objeciones típicas de abogados, contadores y prestamistas",
+    "Revisar cumplimiento regulatorio en los estados con requisitos de registro de franquicias"
+  ],
+  "resumen_teorico": "La decisión de compra de una franquicia no depende solo del prospecto, sino de un círculo de influenciadores: abogados, prestamistas, contadores, familiares, amigos y hasta motores de búsqueda y reguladores estatales. El material de marketing debe dirigirse también a esta audiencia secundaria.",
+  "titulo": "Identificar a los Múltiples 'Compradores' que Influyen en la Decisión"
+}

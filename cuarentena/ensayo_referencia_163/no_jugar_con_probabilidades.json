@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Cuando la empresa enfrenta riesgo real de quiebra. Cuando asesores externos recomiendan aceptar la derrota como probable.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Definición clara del objetivo único de supervivencia y plan de acción enfocado exclusivamente en encontrarlo, sin distracción por análisis probabilístico",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_hard_thing_about",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "no_jugar_con_probabilidades",
+  "ids_alias": [],
+  "nodos_previos": [
+    "la_lucha_resiliencia_ceo"
+  ],
+  "nodos_siguientes": [
+    "decision_hire_investment_banker"
+  ],
+  "pasos_accionables": [
+    "Rechazar la parálisis que producen las probabilidades desfavorables",
+    "Concentrar el cien por ciento del esfuerzo en buscar activamente una solución viable",
+    "Evitar construir planes de contingencia que desvíen el enfoque de encontrar la salida",
+    "Mantener la búsqueda de opciones incluso cuando parezca no haber ninguna ('siempre hay un movimiento')"
+  ],
+  "resumen_teorico": "Ante escenarios de crisis extrema donde las probabilidades de éxito parecen mínimas, el CEO de una startup no debe guiarse por estadísticas de fracaso, sino actuar con la convicción de que existe una solución y enfocarse exclusivamente en encontrarla. Esta mentalidad, inspirada en la distinción entre pensamiento determinista (cálculo) y probabilístico (estadística), sostiene que la tarea del líder es la misma sin importar si las probabilidades son de 9 en 10 o 1 en 1000: enfocar toda la energía en hallar el camino, no en calcular el riesgo de fracasar.",
+  "titulo": "No Jugar con las Probabilidades: Mentalidad Determinista del CEO"
+}

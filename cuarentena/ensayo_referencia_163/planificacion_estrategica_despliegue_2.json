@@ -1,0 +1,40 @@
+{
+  "condiciones_activacion": "Cuando tienes planes de calidad y planes financieros que no se hablan entre sí. Cuando buscas una ventaja competitiva que dure, a través de hacer las cosas muy bien. Al empezar a transformar tu negocio usando la calidad como base.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Un plan estratégico anual único que integra tus metas de calidad, financieras y operativas, con proyectos concretos y quién se encarga de cada uno",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "juran_s_quality_handbook",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "planificacion_estrategica_despliegue_2",
+  "ids_alias": [],
+  "nodos_previos": [
+    "auditoria_sistema_control_calidad_2"
+  ],
+  "nodos_siguientes": [
+    "hoshin_kanri",
+    "establecer_vision_organizacional",
+    "diagrama_arbol_despliegue",
+    "evaluacion_riesgo_calidad_organizacional",
+    "sistema_medicion_kpi"
+  ],
+  "pasos_accionables": [
+    "Definir tu visión, misión, estrategias y metas anuales de forma integrada",
+    "Poner la voz del cliente y las metas de calidad al mismo nivel que las metas financieras",
+    "Reconocer y premiar el desempeño de acuerdo a las metas de mejora que te propongas",
+    "Asegurarte de que participen todos los que te ayudan, sin importar su rol o nivel",
+    "Usar el mismo lenguaje para los términos clave, como calidad, comparación con el mercado o cómo bajas la estrategia a lo concreto",
+    "Enseñar estos conceptos y herramientas a todos los que trabajan contigo, no solo a quien se encarga de la calidad",
+    "Eliminar las iniciativas que no estén alineadas con tu plan estratégico"
+  ],
+  "resumen_teorico": "Es el proceso sistemático mediante el cual tú defines tus metas de largo plazo relacionadas con la calidad y los clientes, integrándolas de forma equitativa con las metas financieras, de la gente que trabaja contigo, marketing y desarrollo, en un solo plan de negocio cohesivo. Ese plan luego se baja a metas más pequeñas, proyectos y acciones concretas en cada área. Integrarlo evita que tengas planes que se contradicen entre sí (dinero contra calidad) y asegura que elimines o cambies las actividades que no estén alineadas con tus metas.",
+  "titulo": "Cómo integrar la calidad en tu plan de negocio"
+}

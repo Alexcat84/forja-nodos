@@ -1,0 +1,37 @@
+{
+  "condiciones_activacion": "Cuando la carga administrativa de tu proceso de innovación te quita demasiado tiempo. Si manejas varios proyectos al mismo tiempo.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Un software implementado con paneles para ver todos tus proyectos y plantillas automáticas que te ahorran tiempo administrativo",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "winning_at_new_products",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "automatizacion_software_gestion_innovacion",
+  "ids_alias": [],
+  "nodos_previos": [
+    "modelo_hibrido_agile_stage_gate",
+    "cultura_de_optimismo"
+  ],
+  "nodos_siguientes": [
+    "asignacion_recursos_en_gates",
+    "gestion_visual_del_pipeline_de_desarrollo",
+    "sistema_gates_go_kill",
+    "gestion_alucinaciones_ia"
+  ],
+  "pasos_accionables": [
+    "Evalúa e implementa un software de gestión de innovación con plantillas de buenas prácticas ya incorporadas",
+    "Configura paneles para seguir tanto tus proyectos individuales como el conjunto completo de tu portafolio",
+    "Prellena las plantillas de tus entregables clave (reportes de estado, presentaciones, gráficos de recursos) con los datos que ya tienes en el sistema",
+    "Usa modelos preformateados para tus nuevos proyectos, con etapas y entregables bien definidos"
+  ],
+  "resumen_teorico": "Usa herramientas de software para acelerar y ordenar tu proceso de decisión por etapas (conocido como Stage-Gate): plantillas ya armadas, reportes de estado que se generan solos, paneles (dashboards) para ver tus proyectos, y gestión de recursos e ideas. Te quita carga administrativa y te da consistencia al ejecutar el proceso, para que puedas ver el avance de un proyecto o de todos los que tienes en marcha.",
+  "titulo": "Automatización mediante Software de Gestión de Innovación"
+}

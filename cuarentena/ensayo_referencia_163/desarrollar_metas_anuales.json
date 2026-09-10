@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando necesitas traducir tus estrategias de largo plazo en objetivos concretos para el año.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Una lista de metas anuales especificas, medibles y con plazo, priorizadas y decididas por ti",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "juran_s_quality_handbook",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "desarrollar_metas_anuales",
+  "ids_alias": [],
+  "nodos_previos": [
+    "desarrollar_estrategias_largo_plazo"
+  ],
+  "nodos_siguientes": [
+    "desplegar_metas_organizacion",
+    "consejo_ejecutivo_calidad"
+  ],
+  "pasos_accionables": [
+    "Revisa las siete areas clave de metas: producto, competitividad, mejora, costo de mala calidad, procesos, satisfaccion y lealtad del cliente",
+    "Reune propuestas de metas de todas las personas que trabajan contigo, no solo las tuyas",
+    "Filtra y prioriza las metas que entraran en tu plan de negocio",
+    "Basa cada meta en tu desempeño historico, en la comparacion con la competencia o en el desempeño del mercado, según corresponda",
+    "Asegurate de que cada meta sea especifica, medible y tenga un plazo definido"
+  ],
+  "resumen_teorico": "Las metas anuales son objetivos especificos, medibles y con plazo definido que guian tus esfuerzos hacia el logro de cada estrategia. Hay siete areas minimas donde conviene fijar metas: desempeño del producto, desempeño frente a la competencia, mejora del negocio, costo de la mala calidad, desempeño de tus procesos, satisfaccion del cliente y lealtad o retencion del cliente.",
+  "titulo": "Desarrollar Metas Anuales Medibles"
+}

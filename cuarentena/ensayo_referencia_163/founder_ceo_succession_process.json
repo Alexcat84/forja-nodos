@@ -1,0 +1,50 @@
+{
+  "condiciones_activacion": "Cuando ya terminaste de desarrollar el producto y entras en la etapa de venderlo. Cuando estás por cerrar una nueva ronda de inversión y los inversionistas ponen en duda tu liderazgo. Cuando reconoces que te faltan las habilidades para la siguiente etapa de crecimiento. Cuando tu negocio crece rápido y tus habilidades ya no alcanzan para lo que la etapa actual necesita. Si un desempeño financiero u operativo débil lleva a la junta a considerar un cambio de liderazgo.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Un plan de sucesión escrito y acordado con la junta, con criterios objetivos que dispararían el cambio y tu rol futuro ya definido",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_founder_s_dilemmas",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "founder_ceo_succession_process",
+  "ids_alias": [],
+  "nodos_previos": [
+    "composicion_board_directors",
+    "dilema_riqueza_vs_control",
+    "tamano_junta_directiva_vc",
+    "transicion_post_sucesion",
+    "seleccion_ceo_fundador",
+    "busqueda_ceo_sucesor_externo",
+    "control_del_board_startup",
+    "decision_egalitaria_vs_jerarquica",
+    "hiring_blueprints",
+    "fuentes_contratacion_ejecutivos",
+    "revisiones_regulares_desempeno_ceo",
+    "rotacion_equipo_fundador",
+    "test_rico_vs_rey"
+  ],
+  "nodos_siguientes": [
+    "busqueda_ceo_sucesor_externo",
+    "paradoja_exito_emprendedor"
+  ],
+  "pasos_accionables": [
+    "Desde el principio, define con la junta métricas claras de desempeño para evaluar tu gestión como director general",
+    "Evalúa si tus habilidades actuales encajan con los desafíos de la siguiente etapa del negocio, por ejemplo pasar de desarrollar el producto a vender y hacer marketing",
+    "Reconoce señales tempranas de que hace falta un cambio: no cumplir metas una y otra vez, dificultad para manejar varias áreas a la vez, o quedarte apegado a las primeras personas que contrataste aunque ya no rindan",
+    "Habla con anticipación de posibles escenarios de sucesión con la junta y los inversionistas, antes de que se conviertan en una crisis",
+    "Decide de antemano qué rol tomarías si te reemplazan: puedes seguir como miembro de la junta, asesor, o en otro cargo ejecutivo como presidente de la junta (chairman)",
+    "Evalúa si el perfil de quien te sucedería encaja con la etapa de crecimiento del negocio, ya sea ventas, operaciones o producto",
+    "Toma un rol activo en tu propia sucesión para conservar influencia a futuro",
+    "Negocia en el acuerdo de inversión (term sheet) cláusulas sobre el reemplazo del director general, alineadas con lo que más te importa: ganar dinero o mantener el control"
+  ],
+  "resumen_teorico": "A medida que tu negocio crece, es probable que dejes de ser tú quien dirige la empresa: más de la mitad de los fundadores son reemplazados en ese puesto, típicamente hacia la tercera ronda de inversión. Esto puede pasar porque decides dar un paso al costado, porque los resultados no llegan (lo que aumenta mucho la probabilidad de que la junta busque a alguien externo), o incluso por éxito: lograste desarrollar el producto y conseguir fondos, pero te faltan las habilidades que pide la siguiente etapa, como ventas, marketing o coordinar varias áreas a la vez. Quien dispara el cambio importa: la junta inicia el 73% de estas sucesiones, y solo el 27% las inicia el propio fundador. Si te reemplazan, puedes seguir en la empresa como ejecutivo o miembro de la junta, y que la transición funcione depende de quién te sucede y de cómo se maneje el cambio.",
+  "titulo": "El reemplazo del fundador como director general (CEO)"
+}

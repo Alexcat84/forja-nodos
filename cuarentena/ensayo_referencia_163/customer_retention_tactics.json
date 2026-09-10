@@ -1,0 +1,50 @@
+{
+  "condiciones_activacion": "Cuando ya tienes una base activa de clientes y necesitas reducir el churn. Cuando detectas alta tasa de abandono en los primeros 100 dias de relacion. Si tu modelo de negocio depende de suscripciones o repeticion de compra.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Plan de retencion con tacticas especificas por canal digital y fisico, organizado por cohortes y con puntos de contacto definidos en los primeros 100 dias, listo para probar en validacion de clientes.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_startup_owner_s",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "customer_retention_tactics",
+  "ids_alias": [
+    "customer_retention_strategy"
+  ],
+  "nodos_previos": [
+    "segmentos_de_clientes_problema_necesidad",
+    "channels_hypothesis_physical",
+    "vesting_acciones_fundadores",
+    "customer_acquisition_activation_web",
+    "embudo_get_keep_grow",
+    "community_building_estrategia",
+    "customer_appreciation_pr",
+    "eventos_offline_como_canal_traccion",
+    "cierre_satisfaccion_postventa",
+    "gestion_pedidos_order_management",
+    "programacion_entregas_delivery_scheduling",
+    "diseno_de_ia_antropomorfica_para_producto",
+    "analisis_de_cohortes"
+  ],
+  "nodos_siguientes": [
+    "retention_metrics",
+    "estrategia_crecimiento_clientes"
+  ],
+  "pasos_accionables": [
+    "Instrumenta tu producto para rastrear comportamientos clave del cliente como fecha de inicio, frecuencia de visitas y senales de abandono",
+    "Disena e-mails de bienvenida y guias de uso para los primeros dias de cada cliente nuevo",
+    "Crea un programa de lealtad con recompensas por compras o visitas repetidas",
+    "Envia notificaciones push y newsletters periodicas con tips para mantener el engagement",
+    "Define el Dia 1 de la relacion con el cliente y mapea los primeros 100 dias para identificar el punto exacto de mayor desercion",
+    "Establece llamadas de servicio antes de renovaciones y ofrece descuentos preventivos ante senales de posible abandono"
+  ],
+  "resumen_teorico": "La retención busca minimizar el abandono de clientes ofreciendo un buen producto, servicio e interacción frecuente, algo mas facil en canales digitales porque permiten rastrear el comportamiento individual de cada cliente. Es mas rentable que adquirir clientes nuevos. Los programas de retencion dependen del monitoreo cercano de senales como visitas decrecientes, tiempo entre visitas o quejas, organizadas por cohortes segun antiguedad. Es clave definir el Dia 1 de la relacion con el cliente y mapear el customer life cycle completo, prestando especial atencion a los primeros 100 dias, donde suele concentrarse la mayor desercion. Las tacticas combinan outreach, contenido, notificaciones, programas de lealtad y contacto proactivo antes de renovaciones para sostener el compromiso en el tiempo.",
+  "titulo": "Tácticas de Retención de Clientes (Keep)"
+}

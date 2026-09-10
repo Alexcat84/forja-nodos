@@ -1,0 +1,40 @@
+{
+  "condiciones_activacion": "Cuando el alcance del proyecto está definido y se necesita desglosar el trabajo en componentes manejables.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Diagrama o esquema jerárquico del WBS con paquetes de trabajo identificados",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "a_project_manager_s",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "work_breakdown_structure",
+  "ids_alias": [],
+  "nodos_previos": [
+    "project_scope_statement",
+    "scope_management_plan",
+    "assumption_constraint_log"
+  ],
+  "nodos_siguientes": [
+    "wbs_dictionary",
+    "activity_list",
+    "activity_duration_estimates",
+    "duration_estimating_worksheet",
+    "matriz_asignacion_responsabilidades"
+  ],
+  "pasos_accionables": [
+    "Partir del nivel de proyecto y descomponerlo en niveles inferiores",
+    "Elegir criterio de organización del segundo nivel (geografía, entregables mayores, fases de ciclo de vida, subproyectos)",
+    "Definir un sistema de identificación jerárquica (numérico)",
+    "Descomponer hasta llegar a paquetes de trabajo discretos y medibles",
+    "Representar como gráfico jerárquico o esquema"
+  ],
+  "resumen_teorico": "Estructura jerárquica que descompone todo el trabajo del proyecto en niveles de detalle cada vez más finos, hasta llegar a paquetes de trabajo. Junto con el WBS Dictionary y el Scope Statement conforman la línea base del alcance (scope baseline).",
+  "titulo": "Work Breakdown Structure (WBS)"
+}

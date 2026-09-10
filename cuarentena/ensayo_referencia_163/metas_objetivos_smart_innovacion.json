@@ -1,0 +1,37 @@
+{
+  "condiciones_activacion": "Cuando no tienes metas escritas y medibles para tu esfuerzo de innovación. Cuando necesitas justificar tu presupuesto de desarrollo de nuevos productos antes de un recorte financiero.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Un conjunto de objetivos SMART escritos y comunicados, con una métrica general (por ejemplo, el porcentaje de tus ventas que viene de nuevos productos) y métricas de desempeño, como tasas de éxito y número de lanzamientos.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "winning_at_new_products",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "metas_objetivos_smart_innovacion",
+  "ids_alias": [],
+  "nodos_previos": [
+    "estrategia_innovacion_producto",
+    "analisis_de_capacidad_de_recursos"
+  ],
+  "nodos_siguientes": [
+    "portfolio_management",
+    "strat_map_arenas_estrategicas",
+    "definir_metas_smart_de_proyecto"
+  ],
+  "pasos_accionables": [
+    "Define qué consideras un \"nuevo producto\" para tu negocio, hazlo específico",
+    "Establece métricas medibles, como el porcentaje de tus ventas o utilidades que provienen de nuevos productos (NPVI)",
+    "Considera usar dos métricas en paralelo: una para innovación audaz y otra para todos tus nuevos productos",
+    "Comunica estos objetivos con claridad a todas las personas involucradas",
+    "Ponle un plazo concreto a cada objetivo"
+  ],
+  "resumen_teorico": "Las metas son intenciones amplias; los objetivos son precisos, tangibles y medibles. Para fijar objetivos de innovación que funcionen, usa el método SMART: específicos, medibles, orientados a la acción, realistas y con un tiempo definido. Estos objetivos conectan tu esfuerzo de nuevos productos con la estrategia de tu negocio y te sirven como criterio para decidir si sigues o frenas un proyecto.",
+  "titulo": "Cómo definir metas y objetivos claros (SMART) para innovar"
+}

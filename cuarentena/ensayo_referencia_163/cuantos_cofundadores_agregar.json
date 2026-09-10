@@ -1,0 +1,37 @@
+{
+  "condiciones_activacion": "Cuando ya decidiste armar equipo y estás decidiendo cuántas personas suman. Si notas riesgo de choques porque los roles entre fundadores se solapan.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Tu lista final de cofundadores, con el motivo concreto de por qué cada uno aporta algo único, y los roles bien diferenciados entre todos.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_founder_s_dilemmas",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "cuantos_cofundadores_agregar",
+  "ids_alias": [],
+  "nodos_previos": [
+    "evaluacion_capital_para_cofundadores",
+    "decision_fundador_solo_vs_equipo",
+    "motivaciones_psicologicas_cofundadores"
+  ],
+  "nodos_siguientes": [
+    "seleccion_relaciones_cofundadores",
+    "reasignacion_equity_fundadores",
+    "estatus_fundador_simbolico"
+  ],
+  "pasos_accionables": [
+    "Evalúa qué valor concreto y distinto te daría cada cofundador potencial.",
+    "No sumes a alguien con habilidades y contactos que ya tienes cubiertos en el equipo.",
+    "Antes de sumar a cada persona, piensa el costo de coordinar con ella y si su rol se solapa con el de otro.",
+    "Define con claridad el rol de cada cofundador antes de cerrar su entrada."
+  ],
+  "resumen_teorico": "Cada cofundador que suma añade también costo de coordinación, más complejidad de comunicación y más riesgo de choques por roles. Sueles subestimar esos costos y sobreestimar el valor de alguien que repite lo que ya tienes. La regla es simple: cada nuevo cofundador tiene que aportar algo claro (cubrir una carencia de capital o quitarte carga real) que pese más que la complejidad que añade.",
+  "titulo": "Determinar el Número Óptimo de Cofundadores"
+}

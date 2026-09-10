@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Cuando piensas vender un producto o servicio que use directamente lo que genera una IA.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Un informe claro de los riesgos legales y éticos, con tus propias reglas de uso de IA ya definidas.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "co_intelligence_living_and",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "evaluacion_riesgos_legales_ia",
+  "ids_alias": [],
+  "nodos_previos": [
+    "fine_tuning_ia_para_caso_de_uso"
+  ],
+  "nodos_siguientes": [
+    "alineacion_etica_ia_negocio"
+  ],
+  "pasos_accionables": [
+    "Investiga qué dice la ley de tu país sobre los datos usados para entrenar la IA",
+    "Revisa los términos de servicio del proveedor de IA para saber quién es dueño de lo que se genera y quién responde legalmente por eso",
+    "Evalúa si usar ese contenido podría infringir derechos de autor de terceros",
+    "Consulta con un abogado antes de vender productos basados en contenido generado por IA",
+    "Define tus propias reglas internas sobre el uso ético de la IA en tu negocio"
+  ],
+  "resumen_teorico": "Los modelos de inteligencia artificial generativa se entrenan con grandes cantidades de datos que muchas veces incluyen material con derechos de autor, usado sin permiso explícito de quienes lo crearon. Qué tan legal es esto depende del país donde operes: en la Unión Europea las reglas son más estrictas, en Estados Unidos más flexibles, y en Japón está permitido de forma explícita. Antes de construir un producto o servicio basado en IA generativa, tienes que entender los riesgos legales y éticos que esto implica, sobre todo si lo que genera la IA podría reproducir contenido protegido o traerte responsabilidad legal.",
+  "titulo": "Riesgos legales y éticos de usar inteligencia artificial generativa en tu negocio"
+}

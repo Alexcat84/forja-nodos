@@ -1,0 +1,32 @@
+{
+  "condiciones_activacion": "Cuando la organización ya implementó mejoras derivadas de un primer benchmarking y desea sostener el avance.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Sistema de benchmarking recurrente con métricas comparativas históricas",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "juran_s_quality_handbook",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "monitoreo_continuo_benchmarking",
+  "ids_alias": [],
+  "nodos_previos": [
+    "caso_estudio_benchmarking_terminal",
+    "gestion_efectiva_benchmarking"
+  ],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Establecer un ciclo periódico (por ejemplo, anual) de benchmarking",
+    "Comparar resultados año contra año para medir tendencias propias",
+    "Validar el método de normalización usado para asegurar comparaciones justas",
+    "Ajustar el plan de mejora según la evolución del grupo de comparación"
+  ],
+  "resumen_teorico": "El benchmarking debe realizarse de forma continua, no como un evento único, por dos razones principales: permite a la organización monitorear su propia tendencia de desempeño a lo largo del tiempo y determinar la efectividad de sus iniciativas de mejora, y reconoce que los competidores también mejoran constantemente, por lo que el estándar de comparación (benchmark) está en movimiento permanente.",
+  "titulo": "Benchmarking Continuo"
+}

@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Cuando alguien de tu equipo reporta un peligro o presenta una queja de seguridad. Cuando estás armando las reglas internas de tu negocio.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "health_safety",
+  "entregable_esperado": "Política escrita de no represalias y un canal simple para que cualquiera pueda reportar sin miedo",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "small_business",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "programa_proteccion_denunciantes",
+  "ids_alias": [],
+  "nodos_previos": [
+    "programas_cooperativos_osha",
+    "participacion_trabajadores"
+  ],
+  "nodos_siguientes": [
+    "derecho_rechazo_trabajo_peligroso"
+  ],
+  "pasos_accionables": [
+    "Define una política interna que prohíba represalias contra quien denuncia un problema de seguridad",
+    "Cuéntale a las personas que trabajan contigo cuál es este derecho y cómo usarlo",
+    "Si alguien de tu equipo cree haber sufrido represalias, ayúdalo a presentar la queja ante la autoridad de tu mercado dentro del plazo legal",
+    "Documenta cualquier acción disciplinaria de forma objetiva, dejando claro que no está relacionada con haber denunciado algo"
+  ],
+  "resumen_teorico": "En muchos lugares la ley prohíbe que tomes represalias contra alguien que reporta un peligro, presenta una queja o participa en una inspección de seguridad. Represalia incluye despido, bajarlo de puesto, intimidarlo o reducirle el salario, entre otras acciones adversas. Suele existir un plazo corto, contado en días calendario, para presentar la queja ante la autoridad correspondiente, así que conviene revisar cuál es ese plazo en tu mercado.",
+  "titulo": "Protección a quien denuncia irregularidades de seguridad"
+}

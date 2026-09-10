@@ -1,0 +1,36 @@
+{
+  "condiciones_activacion": "Si necesitas definir cómo financiar una operación de exportación.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "exportacion",
+  "entregable_esperado": "Plan de financiamiento de exportación con opciones evaluadas y seleccionadas",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "a_basic_guide_to",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "decisiones_de_financiamiento_exportacion",
+  "ids_alias": [],
+  "nodos_previos": [
+    "resolucion_problemas_de_pago"
+  ],
+  "nodos_siguientes": [
+    "extension_credito_compradores_extranjeros",
+    "programas_ex_im_bank",
+    "evaluacion_preparacion_empresa_exportar"
+  ],
+  "pasos_accionables": [
+    "Evalúa si el financiamiento es lo que puede definir si cierras o no la venta",
+    "Determina el plazo de financiamiento que te pide el comprador",
+    "Compara costos (tasas de interés y comisiones) de las opciones que tengas disponibles",
+    "Analiza los riesgos políticos y económicos del país de tu comprador",
+    "Calcula cuánto capital de trabajo vas a necesitar antes y después del embarque"
+  ],
+  "resumen_teorico": "Antes de elegir cómo financiar una exportación, necesitas considerar si ese financiamiento es lo que puede cerrar la venta, qué plazo te exige el comprador, cuánto cuesta cada opción, qué riesgos hay detrás y cuánto capital de trabajo vas a necesitar antes y después de embarcar la mercancía. Para asesorarte puedes acudir a tu banco, a organismos de apoyo al comercio exterior o a agencias de financiamiento para exportadores que existan en tu mercado.",
+  "titulo": "Factores para Decisiones de Financiamiento de Exportación"
+}

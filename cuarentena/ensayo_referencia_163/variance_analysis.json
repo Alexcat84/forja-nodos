@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Si se detectan diferencias significativas entre lo planificado y lo real en el proyecto.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Reporte de análisis de variaciones con causas raíz y acciones planificadas",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "a_project_manager_s",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "variance_analysis",
+  "ids_alias": [],
+  "nodos_previos": [
+    "project_performance_report"
+  ],
+  "nodos_siguientes": [
+    "solicitud_cambio"
+  ],
+  "pasos_accionables": [
+    "Comparar resultados planificados vs. reales en cronograma, costo y calidad",
+    "Calcular la magnitud de la variación",
+    "Identificar causa raíz de cada variación",
+    "Documentar respuesta planificada (correctiva o preventiva)"
+  ],
+  "resumen_teorico": "Recopila y analiza información sobre variaciones de desempeño del proyecto en cronograma, costo y calidad, comparando resultados planificados vs. reales e identificando causas raíz y respuestas planificadas.",
+  "titulo": "Análisis de Variaciones"
+}

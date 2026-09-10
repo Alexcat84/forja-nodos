@@ -1,0 +1,45 @@
+{
+  "condiciones_activacion": "Estás empezando a exportar y necesitas orientación experta gratuita o de bajo costo. Buscas expandirte a nuevos mercados internacionales. No tienes contactos ni experiencia en mercados en desarrollo. Necesitas apoyo para buscar y evaluar posibles socios comerciales en el extranjero.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "exportacion",
+  "entregable_esperado": "Un plan de acompañamiento junto a un especialista comercial, con los contactos de distribuidores identificados y las reuniones que agendes a través del Commercial Service",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "a_basic_guide_to",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "uso_del_us_commercial_service",
+  "ids_alias": [
+    "asistencia_us_commercial_service",
+    "consejos_distrito_exportacion_dec"
+  ],
+  "nodos_previos": [
+    "evaluacion_mercados_objetivo",
+    "fuentes_investigacion_mercado",
+    "screening_mercados_potenciales",
+    "recursos_apoyo_gubernamental_exportacion",
+    "ecosistema_global_emprendimiento_gee"
+  ],
+  "nodos_siguientes": [
+    "seleccion_de_distribuidor_internacional",
+    "capacitacion_de_distribuidores",
+    "financiamiento_exim_bank_3",
+    "elementos_plan_exportacion_ejemplo"
+  ],
+  "pasos_accionables": [
+    "Contacta la oficina local del U.S. Commercial Service más cercana a ti, incluida la afiliada a un DEC",
+    "Pide una evaluación de tu potencial exportador y define qué requisitos técnicos y comerciales buscas en un distribuidor",
+    "Solicita apoyo para identificar mercados y encontrar compradores o distribuidores en el extranjero",
+    "Participa en seminarios, ferias comerciales, misiones comerciales o el International Buyer Program, y en talleres o seminarios organizados por el DEC, como Export University",
+    "Pide que investiguen a fondo a los distribuidores potenciales a través de las oficinas en el extranjero",
+    "Da seguimiento a los contactos que generes y evalúa qué oportunidades de distribución te convienen"
+  ],
+  "resumen_teorico": "El U.S. Commercial Service es una red de especialistas comerciales del gobierno de Estados Unidos que te ayuda a evaluar tu potencial como exportador, identificar mercados y localizar distribuidores o socios en el extranjero. Tiene presencia en más de 75 países, con oficinas locales e internacionales que funcionan como ventanilla única. La asesoría es gratuita o de bajo costo, ideal si estás empezando a exportar o no tienes contactos en mercados en desarrollo. Además de la orientación inicial, puedes acceder a programas como el International Buyer Program, participar en ferias y misiones comerciales, y pedir una investigación a fondo de distribuidores potenciales antes de cerrar un acuerdo. Un caso real muestra que usar este servicio de forma constante permite expandirse a mercados en desarrollo con bajo costo y alto impacto.",
+  "titulo": "Aprovechamiento del U.S. Commercial Service"
+}

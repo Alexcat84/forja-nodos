@@ -1,0 +1,32 @@
+{
+  "condiciones_activacion": "Antes de aprobar el paso de un prototipo a producción en volumen.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Un protocolo de pruebas de prototipos que incluya variación realista de parámetros y simulación de condiciones de producción",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "out_of_the_crisis",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "pruebas_inadecuadas_prototipos",
+  "ids_alias": [],
+  "nodos_previos": [
+    "falacia_cero_defectos",
+    "prompting_alta_variacion"
+  ],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Realizar pruebas con muestras que reflejen la variación real esperada en producción, no solo valores nominales",
+    "Aplicar métodos Monte Carlo para simular variaciones de dimensión, presión, temperatura, etc. en diseño asistido por computadora",
+    "Verificar el estado de control estadístico del proceso antes de confiar en resultados de prototipos",
+    "Formular preguntas clave sobre a qué se refieren los resultados de prueba: ¿predicen la corrida de mañana o el resultado de próximo año?"
+  ],
+  "resumen_teorico": "Es práctica común construir prototipos con partes muy cercanas al valor nominal, lo que hace que las pruebas iniciales sean exitosas. Sin embargo, en producción real todas las características variarán, y sin control estadístico establecido, la variación puede no seguir ninguna distribución predecible. Esto puede resultar en que solo una fracción mínima de la producción real se comporte como el prototipo probado.",
+  "titulo": "Pruebas inadecuadas de prototipos"
+}

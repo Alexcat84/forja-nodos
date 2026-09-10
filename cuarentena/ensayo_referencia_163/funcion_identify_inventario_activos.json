@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Cuando la empresa no sabe qué activos digitales posee. Antes de crear una política de ciberseguridad formal.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "seguridad_digital",
+  "entregable_esperado": "Inventario documentado de equipos, software y datos de la empresa",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "cybersecurity_for_small_business",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "funcion_identify_inventario_activos",
+  "ids_alias": [],
+  "nodos_previos": [
+    "marco_nist_cybersecurity_framework",
+    "arquitectura_tecnica_modular"
+  ],
+  "nodos_siguientes": [
+    "funcion_protect_politica_seguridad"
+  ],
+  "pasos_accionables": [
+    "Listar todos los dispositivos físicos (laptops, smartphones, tablets, POS)",
+    "Listar todo el software utilizado en la organización",
+    "Identificar dónde se almacenan y procesan los datos sensibles",
+    "Actualizar el inventario periódicamente"
+  ],
+  "resumen_teorico": "La primera función del framework consiste en elaborar una lista completa de todo el equipo, software y datos que utiliza la empresa, incluyendo laptops, smartphones, tablets y dispositivos de punto de venta. Este inventario es la base para entender la superficie de ataque y priorizar esfuerzos de protección.",
+  "titulo": "Función Identificar: Inventario de Activos Digitales"
+}

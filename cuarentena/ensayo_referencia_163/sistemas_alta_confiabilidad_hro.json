@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Si la organización opera sistemas complejos y de alto riesgo (energía, aviación, salud). Si se busca fortalecer la resiliencia organizacional frente a fallos.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "health_safety",
+  "entregable_esperado": "Plan de mejora organizacional alineado con los principios HRO, con métricas de proceso definidas",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_field_guide_to",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "sistemas_alta_confiabilidad_hro",
+  "ids_alias": [],
+  "nodos_previos": [
+    "teoria_desastres_organizacionales",
+    "cuestionar_vision_zero"
+  ],
+  "nodos_siguientes": [
+    "aprendizaje_organizacional_desde_incidentes"
+  ],
+  "pasos_accionables": [
+    "Evaluar el grado de descentralización funcional en la toma de decisiones de seguridad",
+    "Implementar redundancias críticas en equipos y personal en procesos de alto riesgo",
+    "Establecer mecanismos sistemáticos de aprendizaje organizacional a partir de casi-accidentes",
+    "Fomentar una cultura de seguridad basada en la comunicación abierta de riesgos"
+  ],
+  "resumen_teorico": "La teoría HRO (High-Reliability Organization) plantea un enfoque optimista sobre la prevención de accidentes, exigiendo liderazgo comprometido con la seguridad, sistemas operacionales relativamente cerrados, descentralización funcional, cultura de seguridad, redundancia de equipos y personal, y aprendizaje sistemático. Aun así, ninguna organización ha cerrado completamente la brecha hacia la eliminación total de accidentes.",
+  "titulo": "Organizaciones de Alta Confiabilidad (HRO) — Lectura Crítica de la Teoría"
+}

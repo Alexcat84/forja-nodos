@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Cuando existen múltiples bases de datos con información contradictoria. Si la organización no confía en sus propios reportes o cifras.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Consejo de Calidad de Información constituido con sistema de gobernanza de datos entre departamentos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "juran_s_quality_handbook",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "consejo_calidad_informacion",
+  "ids_alias": [],
+  "nodos_previos": [
+    "sostenibilidad_agil"
+  ],
+  "nodos_siguientes": [
+    "ciclo_adaptativo_inteligencia"
+  ],
+  "pasos_accionables": [
+    "Establecer un Consejo de Calidad de Información o de Big Data",
+    "Definir estándares comunes de datos entre departamentos",
+    "Identificar y eliminar silos de datos aislados o no publicados",
+    "Implementar un sistema de calidad de datos que garantice confiabilidad"
+  ],
+  "resumen_teorico": "Estructura organizacional prerequisito para la sostenibilidad ágil, que actúa como 'voz del mercado' garantizando la calidad y confiabilidad de los datos usados para la toma de decisiones. Muchas organizaciones tienen abundancia de datos pero carecen de información útil y confiable, generando desconfianza entre departamentos y decisiones deficientes. Este consejo asegura que los datos sean consistentes, veraces y accesibles entre funciones.",
+  "titulo": "Consejo de Calidad de la Información (Information Quality Council)"
+}

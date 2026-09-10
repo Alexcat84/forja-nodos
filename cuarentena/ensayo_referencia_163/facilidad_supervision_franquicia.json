@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Si el franquiciante busca enfocarse en estrategia en lugar de operaciones diarias.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "franquicias",
+  "entregable_esperado": "Protocolo de supervisión y soporte a franquiciados basado en KPIs, no en gestión operativa directa",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "franchise_your_business_mark",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "facilidad_supervision_franquicia",
+  "ids_alias": [],
+  "nodos_previos": [
+    "apalancamiento_personal_franquicia"
+  ],
+  "nodos_siguientes": [
+    "rentabilidad_incrementada_franquicia"
+  ],
+  "pasos_accionables": [
+    "Definir claramente qué aspectos del negocio serán responsabilidad del franquiciado vs. del franquiciante",
+    "Establecer indicadores clave de desempeño (KPIs) que el franquiciante monitoreará a distancia",
+    "Diseñar un protocolo de coaching y soporte para franquiciados con bajo desempeño",
+    "Separar las funciones de protección de marca de las funciones de gestión operativa diaria"
+  ],
+  "resumen_teorico": "El franquiciante no es responsable de la gestión diaria de cada unidad; su ingreso típicamente se basa en ventas brutas, no en rentabilidad, lo que simplifica el monitoreo. El rol del franquiciante se enfoca en proteger la marca y ofrecer coaching de desempeño financiero, no en implementar cambios operativos diarios.",
+  "titulo": "Facilidad de Supervisión del Franquiciante"
+}

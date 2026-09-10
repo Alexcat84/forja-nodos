@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Si el usuario está negociando o redactando un contrato con un representante o distribuidor extranjero.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "exportacion",
+  "entregable_esperado": "Cláusulas contractuales redactadas sobre servicio postventa y capacitación incluidas en el acuerdo de representación",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "a_basic_guide_to",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "acuerdo_representante_servicio",
+  "ids_alias": [],
+  "nodos_previos": [
+    "seleccion_representante_extranjero"
+  ],
+  "nodos_siguientes": [
+    "construccion_relaciones_internacionales"
+  ],
+  "pasos_accionables": [
+    "Definir en el contrato la forma y capacidad de la instalación de servicio/reparación del representante",
+    "Establecer el número de personal necesario y provisiones de inspección",
+    "Determinar el alcance de la garantía según la capacidad de servicio en ese mercado",
+    "Especificar el programa de capacitación: frecuencia, personal a capacitar, lugar y quién cubre costos de viaje y viáticos"
+  ],
+  "resumen_teorico": "Los acuerdos con representantes extranjeros deben especificar claramente las condiciones de servicio postventa (instalaciones de reparación, personal, inspecciones) y los programas de capacitación (frecuencia, participantes, ubicación y quién asume los costos de viaje). La calidad del servicio ofrecido por el representante impacta directamente la reputación de la empresa exportadora en el mercado, por lo que las garantías ofrecidas deben ajustarse a la capacidad real de servicio disponible.",
+  "titulo": "Cláusulas de Servicio y Capacitación en Acuerdos con Representantes"
+}

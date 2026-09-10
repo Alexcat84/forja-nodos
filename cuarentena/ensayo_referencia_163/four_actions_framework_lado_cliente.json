@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando se ha modificado la Propuesta de Valor y se necesita evaluar efectos en el resto del modelo de negocio.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Análisis documentado del impacto de la nueva Propuesta de Valor en Canales, Relaciones y Segmentos de Clientes, con implicaciones de costos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "business_model_generation_osterwalder",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "four_actions_framework_lado_cliente",
+  "ids_alias": [],
+  "nodos_previos": [
+    "fit_value_proposition",
+    "analisis_y_sintesis"
+  ],
+  "nodos_siguientes": [
+    "lienzo_modelo_negocio"
+  ],
+  "pasos_accionables": [
+    "Para cada bloque (Canales, Relaciones, Ingresos) pregunta qué elementos eliminar, reducir, aumentar o crear",
+    "Identifica qué nuevos Segmentos de Clientes podrían atenderse o cuáles reducir",
+    "Define qué trabajos (jobs) buscan satisfacer los nuevos segmentos",
+    "Determina cómo prefieren ser contactados y qué tipo de relación esperan",
+    "Calcula las implicaciones de costo de servir a estos nuevos segmentos"
+  ],
+  "resumen_teorico": "Extensión del Four Actions Framework (eliminar, reducir, aumentar, crear) para analizar el impacto de cambios en la Propuesta de Valor sobre los bloques del lado del cliente en el Business Model Canvas: Canales, Relaciones con Clientes y Fuentes de Ingresos. Permite entender cómo las innovaciones en valor afectan la experiencia y economía del cliente.",
+  "titulo": "Four Actions Framework: Impacto en el Cliente"
+}

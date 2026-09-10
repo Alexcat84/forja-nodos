@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Si surgen puntos de disputa o desacuerdo entre stakeholders durante la ejecución.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Log de issues actualizado con seguimiento de resolución",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "a_project_manager_s",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "issue_log",
+  "ids_alias": [],
+  "nodos_previos": [
+    "change_log"
+  ],
+  "nodos_siguientes": [
+    "solicitud_cambio"
+  ],
+  "pasos_accionables": [
+    "Registrar cada issue con ID único y categoría",
+    "Definir impacto en objetivos y nivel de urgencia",
+    "Asignar responsable y fecha límite de resolución",
+    "Actualizar estado hasta el cierre del issue"
+  ],
+  "resumen_teorico": "Documento dinámico que registra y monitorea puntos en disputa o discusión entre stakeholders del proyecto, incluyendo impacto, responsable y estado de resolución.",
+  "titulo": "Registro de Issues (Issue Log)"
+}

@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Cuando tienes dudas sobre si la información que manejas es suficiente para tomar una decisión de riesgo. Cuando te das cuenta de que estas confiando demasiado en datos pasados para predecir lo que puede venir.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Una lista de tus riesgos clasificados según cuanto sabes de cada uno, con la acción que corresponde a cada caso.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "juran_s_quality_handbook",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "matriz_riesgo_conocido_desconocido",
+  "ids_alias": [],
+  "nodos_previos": [
+    "evaluacion_de_factores_de_riesgo"
+  ],
+  "nodos_siguientes": [
+    "evaluacion_gestion_riesgos"
+  ],
+  "pasos_accionables": [
+    "Ubica cada riesgo que identificaste en uno de los tres niveles.",
+    "Si es algo que ni siquiera sabias que existia, invierte tiempo en aprender y en hablar con otros que ya conocen ese terreno.",
+    "Si sabes que el riesgo existe pero te faltan datos, prioriza conseguir esa información.",
+    "Si crees tener el riesgo controlado, cuestiona si tus datos realmente son suficientes o solo te dan una falsa sensación de seguridad."
+  ],
+  "resumen_teorico": "La incertidumbre en tu negocio se puede pensar en tres niveles. Primero, lo que no sabes que no sabes: la posición mas peligrosa, porque ni siquiera ves el riesgo. Segundo, lo que sabes que no sabes: ya identificaste el riesgo pero te faltan datos para evaluarlo. Tercero, lo que crees saber: tienes datos y confianza, pero esa confianza puede estar mal puesta. Reconocer en cual de los tres estas te ayuda a decidir que hacer: aprender mas, buscar datos, o revisar con ojo critico lo que dabas por hecho.",
+  "titulo": "Los tres niveles de riesgo: lo que no sabes que no sabes, lo que sabes que no sabes y lo que crees saber"
+}

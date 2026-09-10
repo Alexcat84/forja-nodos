@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando el producto depende de contenido generado por usuarios. Cuando se busca reducir costos de contratación aprovechando el compromiso comunitario existente.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Un mecanismo de contribución de usuarios integrado al producto y una lista de candidatos de contratación provenientes de la comunidad.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "traction_gabriel_weinberg",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "comunidad_como_activo_estrategico",
+  "ids_alias": [],
+  "nodos_previos": [
+    "gestion_calidad_comunidad_a_escala",
+    "community_building_estrategia",
+    "construccion_tribu_de_marca"
+  ],
+  "nodos_siguientes": [
+    "cultura_organizacional_calidad"
+  ],
+  "pasos_accionables": [
+    "Diseñar mecanismos para que los usuarios contribuyan directamente al producto o contenido (reseñas, ediciones, lecciones).",
+    "Evaluar si abrir código o contenido (open source) puede generar adopción temprana y goodwill.",
+    "Identificar miembros altamente comprometidos de la comunidad como candidatos potenciales de contratación.",
+    "Reconocer y recompensar públicamente a los contribuyentes más activos para incentivar la participación continua."
+  ],
+  "resumen_teorico": "Una comunidad bien gestionada se convierte en un activo esencial para la empresa: genera el producto mismo (reseñas de Yelp, lecciones de Codecademy, código abierto en GitHub), y sirve como cantera de talento, ya que los mejores empleados suelen surgir de miembros comprometidos de la comunidad que ya creen en la misión (caso DuckDuckGo). Abrir el código o el contenido también genera publicidad gratuita y goodwill.",
+  "titulo": "La Comunidad como Activo Estratégico (Producto, Contenido y Talento)"
+}

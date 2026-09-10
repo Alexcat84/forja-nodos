@@ -1,0 +1,38 @@
+{
+  "condiciones_activacion": "Cuando detectes discrepancias entre el promedio esperado y el observado en tus inspecciones. Cuando sospeches que tu método de muestreo introduce sesgo. Cuando diseñes un sistema de muestreo de calidad para inspección de lotes.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Protocolo de muestreo documentado que especifique el método usado, su justificación y su posible sesgo frente al ideal aleatorio.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "out_of_the_crisis",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "distorsion_muestreo_mecanico",
+  "ids_alias": [
+    "muestreo_aleatorio_vs_mecanico"
+  ],
+  "nodos_previos": [
+    "concepto_variacion_estadistica",
+    "experimento_cuentas_rojas"
+  ],
+  "nodos_siguientes": [
+    "control_estadistico_del_proceso"
+  ],
+  "pasos_accionables": [
+    "Evalúa si tu método actual de muestreo usa selección aleatoria o mecánica",
+    "Si usas un instrumento físico para muestrear, documenta y calibra el sesgo propio de esa herramienta",
+    "Si es posible, implementa selección por números aleatorios generados formalmente para eliminar sesgos",
+    "Si no puedes aplicar muestreo aleatorio, considera inspeccionar el 100% de una selección aleatoria de lotes",
+    "Registra las características del instrumento o método de muestreo como parte de tus datos",
+    "Documenta cualquier cambio en el método de muestreo como posible causa de puntos fuera de control"
+  ],
+  "resumen_teorico": "El muestreo mecánico, sea por criterio del inspector al tomar muestras de arriba, abajo y medio de un lote, o mediante herramientas físicas como una paleta, puede introducir sesgos sistemáticos ajenos a la teoría de probabilidad. Esto distorsiona el promedio real del proceso observado, a diferencia del muestreo por números aleatorios verdaderos, que sí permite aplicar sin distorsión la teoría estadística de distribuciones. Un cambio en el método de selección de muestras puede sacar un punto fuera de control sin que el proceso realmente haya cambiado, o hacer que los resultados parezcan sesgados respecto a la proporción teórica esperada cuando en realidad el problema está en cómo tomas la muestra, no en el proceso mismo.",
+  "titulo": "Distorsión por Muestreo Mecánico"
+}

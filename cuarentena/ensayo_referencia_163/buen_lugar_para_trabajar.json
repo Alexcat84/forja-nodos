@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Cuando tu negocio crece y se vuelve difícil mantener la cultura con la que empezaste. Cuando notas que alguien a cargo de un equipo no está cumpliendo las prácticas básicas de gestión de personas.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Una definición escrita de la cultura que quieres construir, más una forma concreta de verificar que se está cumpliendo.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_hard_thing_about",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "buen_lugar_para_trabajar",
+  "ids_alias": [],
+  "nodos_previos": [
+    "personas_productos_ganancias_orden"
+  ],
+  "nodos_siguientes": [
+    "coordinacion_sitios_multiempleador"
+  ],
+  "pasos_accionables": [
+    "Define con claridad qué significa para ti 'buen lugar para trabajar': claridad de rol, procesos que funcionan, reconocimiento del esfuerzo.",
+    "Si tienes personas a cargo de otras personas, asegúrate de que entiendan el por qué detrás de cada práctica de gestión, no solo el qué hacer.",
+    "Establece rituales que no sean opcionales (conversaciones uno a uno, revisiones de desempeño) y verifica de verdad que se cumplan.",
+    "Actúa con consecuencias claras cuando alguien a cargo de un equipo no cumple con las prácticas básicas de cuidado hacia su gente."
+  ],
+  "resumen_teorico": "Un buen lugar para trabajar es aquel donde puedes concentrarte en tu trabajo con la confianza de que, si lo haces bien, eso te trae beneficios a ti y a tu negocio. En una mala organización, la gente lucha contra procesos rotos, política interna y falta de claridad sobre su rol. Ser una buena empresa no garantiza el éxito por sí solo, pero es lo que marca la diferencia entre sobrevivir o no cuando las cosas van mal, porque retiene a tu gente incluso cuando las razones externas para quedarse (dinero, prestigio, carrera) desaparecen.",
+  "titulo": "Construir un buen lugar para trabajar"
+}

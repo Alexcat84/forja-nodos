@@ -1,0 +1,39 @@
+{
+  "condiciones_activacion": "Si necesitas justificar tu posicionamiento frente a inversionistas o clientes. Si corres el riesgo de competir solo por características.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Tu análisis de la competencia, enfocado en la razón de compra del cliente",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_startup_owner_s",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "brief_competitivo",
+  "ids_alias": [],
+  "nodos_previos": [
+    "determinar_tipo_de_mercado",
+    "resegmentacion_mercado_nicho_bajo_costo",
+    "entrada_mercado_nuevo",
+    "analisis_costo_entrada_mercado"
+  ],
+  "nodos_siguientes": [
+    "embudo_get_keep_grow",
+    "entrada_mercado_nuevo",
+    "hipotesis_relacion_clientes_web"
+  ],
+  "pasos_accionables": [
+    "Mira cómo tus competidores definen la base de la competencia (precio, atributos, servicio)",
+    "Determina qué hace a tu producto dramáticamente diferente",
+    "Si tu mercado es nuevo, evalúa qué hace hoy la gente sin tu producto",
+    "Evita armar una simple lista más larga de características frente a la competencia",
+    "Enfoca tu análisis en la razón por la que el cliente compra ('reason to buy')"
+  ],
+  "resumen_teorico": "Una vez que tienes claro qué tipo de mercado es el tuyo, escribe un análisis que explique por qué y cómo tu producto es mejor que las alternativas que ya existen. Incluso en un mercado nuevo, donde la 'competencia' es la forma actual, ineficiente o inexistente, en que la gente resuelve el problema. Lo que buscas entender no es una lista de características, sino por qué compra la gente.",
+  "titulo": "Escribe tu análisis de la competencia (brief competitivo)"
+}

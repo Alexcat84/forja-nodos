@@ -1,0 +1,43 @@
+{
+  "condiciones_activacion": "Cuando aún no has formalizado tu compromiso con la seguridad como responsable del negocio. Cuando estás iniciando un programa de seguridad y salud en tu empresa. Cuando detectas falta de recursos o autoridad para implementar mejoras de seguridad.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "health_safety",
+  "entregable_esperado": "Política de seguridad y salud escrita y firmada, con metas claras, presupuesto y recursos asignados al programa",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "osha3885",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "liderazgo_gerencial_seguridad",
+  "ids_alias": [
+    "compromiso_gerencial_seguridad"
+  ],
+  "nodos_previos": [
+    "programa_seguridad_salud_ocupacional",
+    "nueve_pasos_iniciar_programa",
+    "alineacion_de_objetivos_en_sistemas",
+    "evaluacion_mejora_programa_2"
+  ],
+  "nodos_siguientes": [
+    "participacion_trabajadores",
+    "identificacion_evaluacion_peligros",
+    "enfoque_find_and_fix",
+    "coordinacion_sitios_multiempleador"
+  ],
+  "pasos_accionables": [
+    "Redactar y firmar una política escrita de compromiso con la seguridad y salud",
+    "Comunicar la política a trabajadores, contratistas, proveedores y visitantes",
+    "Integrar la seguridad en tus decisiones de negocio, como presupuestos y selección de subcontratistas",
+    "Mostrar con tu propio comportamiento prácticas seguras, por ejemplo mediante charlas breves periódicas con tu equipo",
+    "Definir metas medibles enfocadas en la prevención de lesiones y enfermedades, y asignar los recursos necesarios",
+    "Designar un responsable del esfuerzo de seguridad y reconocer positivamente los comportamientos seguros"
+  ],
+  "resumen_teorico": "Este es el elemento fundacional que impulsa todo el programa de seguridad y salud de tu negocio. Como responsable del emprendimiento, demuestras compromiso visible convirtiendo la seguridad en un valor central, no solo en una obligación formal. Esto implica comunicar tu postura con claridad, dar ejemplo con tu propio comportamiento, e integrar la seguridad en decisiones de negocio como presupuestos, licitaciones o selección de subcontratistas. Debes definir metas medibles enfocadas en prevenir lesiones y enfermedades, no solo en medir tasas de incidentes, y asignar los recursos necesarios (tiempo, presupuesto, personal) para sostener el esfuerzo. El desempeño se impulsa mediante responsabilidad y reconocimiento positivo de comportamientos seguros, evitando la disciplina punitiva como único mecanismo.",
+  "titulo": "Liderazgo en Seguridad y Salud"
+}

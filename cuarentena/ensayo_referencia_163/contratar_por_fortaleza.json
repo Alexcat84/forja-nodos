@@ -1,0 +1,43 @@
+{
+  "condiciones_activacion": "Cuando necesitas contratar a alguien clave para una función crítica en un momento de alta presión competitiva. Cuando descartas candidatos por razones superficiales de 'encaje' sin haber evaluado la fortaleza técnica real.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Un perfil de contratación basado en la fortaleza crítica específica que necesitas, y un proceso de entrevista y referencias diseñado para comprobarla.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_hard_thing_about",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "contratar_por_fortaleza",
+  "ids_alias": [
+    "contratar_por_fortaleza_no_ausencia_debilidad"
+  ],
+  "nodos_previos": [
+    "decision_fundador_solo_vs_equipo"
+  ],
+  "nodos_siguientes": [
+    "entrenamiento_gerencial",
+    "entrenamiento_funcional_empleados"
+  ],
+  "pasos_accionables": [
+    "Antes de entrevistar, define con precisión qué fortaleza específica es crítica para el puesto, no una lista genérica de cualidades.",
+    "Durante la entrevista, haz preguntas que revelen si el expertise es real y profundo, no solo un discurso superficial.",
+    "No descartes a un candidato por debilidades superficiales (apariencia, forma de comunicar, contactos) si tiene la fortaleza crítica que buscas.",
+    "Revisa referencias a fondo enfocándote en validar esa fortaleza específica, no solo si 'encaja' en general.",
+    "Prepárate para defender tu decisión si esa persona genera resistencia por no encajar en el perfil esperado.",
+    "Define la razón concreta y específica por la que necesitas experiencia senior, no una razón abstracta.",
+    "Pregúntate: ¿este puesto necesita más conocimiento de cómo funciona tu negocio por dentro, o más conocimiento de lo que pasa afuera, en el mercado?",
+    "Si pesa más el conocimiento externo (por ejemplo, ventas a grandes empresas o desarrollo de marca), prioriza traer a alguien de afuera.",
+    "Si pesa más el conocimiento interno (por ejemplo, ingeniería sobre un sistema complejo que ya construiste), prioriza promover a alguien de tu equipo.",
+    "Exige que quien entra con experiencia senior se adapte a tu cultura, sin dejar que imponga sin filtro la cultura de la empresa donde trabajaba antes.",
+    "Establece un estándar de desempeño alto y claro: investiga qué hacen los mejores del mundo en ese tipo de puesto."
+  ],
+  "resumen_teorico": "Siguiendo el consejo de Colin Powell, cuando vas a contratar a alguien clave, primero define qué fortaleza crítica necesita ese puesto y busca a quien la tenga en el máximo grado, aunque venga con debilidades notorias (falta de carisma, un camino no convencional, etc.). Los candidatos 'perfectos' sin debilidades aparentes suelen carecer de esa fortaleza excepcional que necesitas para los roles críticos en momentos de competencia dura.",
+  "titulo": "Contrata por Fortaleza, no por Ausencia de Debilidad"
+}

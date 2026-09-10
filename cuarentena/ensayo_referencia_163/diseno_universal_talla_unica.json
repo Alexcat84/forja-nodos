@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Cuando un producto se vende igual en mercados con condiciones ambientales muy distintas. Si el usuario busca escalar una solución sin adaptarla al contexto.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "environmental",
+  "entregable_esperado": "Informe de variables locales no consideradas en el diseño actual del producto",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "cradle_to_cradle_michael",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "diseno_universal_talla_unica",
+  "ids_alias": [
+    "diseño_universal_talla_unica"
+  ],
+  "nodos_previos": [
+    "modelo_cradle_to_grave"
+  ],
+  "nodos_siguientes": [
+    "fuerza_bruta_industrial"
+  ],
+  "pasos_accionables": [
+    "Analizar si el producto o diseño actual asume condiciones idénticas en todos los contextos de uso",
+    "Investigar las variables locales (agua, clima, cultura) que el diseño actual ignora",
+    "Rediseñar considerando la especificidad del lugar en vez de un estándar global"
+  ],
+  "resumen_teorico": "Estrategia de diseño que busca soluciones uniformes aplicables a cualquier contexto, ignorando las particularidades locales de cultura, clima, ecosistema y necesidades. Ejemplos incluyen el Estilo Internacional en arquitectura y detergentes formulados para el 'peor caso' posible sin importar la calidad del agua local. Esto genera un uso de fuerza bruta química o energética para forzar que la solución funcione en cualquier condición.",
+  "titulo": "Diseño Universal ('One Size Fits All')"
+}

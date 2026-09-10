@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando ya tienes un diagnóstico de actitudes y necesitas formalizar tu estrategia.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "environmental",
+  "entregable_esperado": "Un documento de estrategia de compromiso con metas, tareas, quién decide y el sistema de métricas ya definidos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_green_to_gold",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "definicion_metas_engagement",
+  "ids_alias": [],
+  "nodos_previos": [
+    "evaluacion_actitudes_empleados",
+    "co_creacion_estrategia_engagement"
+  ],
+  "nodos_siguientes": [
+    "programa_do_one_thing",
+    "construccion_capacidad_empleados"
+  ],
+  "pasos_accionables": [
+    "Establece objetivos realistas para 12 a 18 meses y una visión a 5 años",
+    "Decide si vas a usar canales nuevos o los que ya tienes para esta iniciativa",
+    "Define con claridad la tarea específica que le vas a pedir a tu equipo",
+    "Establece tu sistema de seguimiento y métricas (encuestas, alguna herramienta digital, tableros de control)"
+  ],
+  "resumen_teorico": "Después de evaluar las actitudes de tu equipo, tienes que definir objetivos claros y tomar decisiones clave: qué le vas a pedir a las personas, si la participación será opcional u obligatoria, quién toma las decisiones y cómo vas a medir y evaluar el progreso con datos cuantitativos y cualitativos.",
+  "titulo": "Define tus metas y decisiones sobre el compromiso de tu equipo (engagement)"
+}

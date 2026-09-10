@@ -1,0 +1,54 @@
+{
+  "condiciones_activacion": "Cuando quienes te ayudan entienden que la mejora es necesaria y ya tienes clara la meta de cero errores. Cuando identifican obstáculos recurrentes que impiden llegar a cero errores. Cuando quieres involucrar a quien trabaja contigo en la mejora continua sin generar quejas destructivas.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Sistema ECR funcionando: formulario, respuesta rápida, registro de causas reportadas y resueltas, y retroalimentación a quienes avisan.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "quality_is_free_the",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "eliminacion_causas_error_4",
+  "ids_alias": [
+    "eliminacion_causas_error_3",
+    "programa_ecr_causa_de_error",
+    "eliminacion_causas_error_2",
+    "eliminacion_causas_error"
+  ],
+  "nodos_previos": [
+    "cero_defectos",
+    "accion_correctiva",
+    "zero_defects_concepto",
+    "accion_correctiva_crosby",
+    "analisis_datos_atributos",
+    "dia_cero_defectos",
+    "fijacion_de_metas",
+    "accion_correctiva_sistematica",
+    "entrenamiento_supervisores_calidad",
+    "make_certain_programa",
+    "programa_mejora_calidad_14_pasos",
+    "dia_cero_defectos_2"
+  ],
+  "nodos_siguientes": [
+    "consejo_de_calidad",
+    "reconocimiento_al_desempeno",
+    "consejos_de_calidad",
+    "consejo_de_calidad_3"
+  ],
+  "pasos_accionables": [
+    "Crea un canal simple, con un formulario, para que quien te ayuda reporte causas de error sin necesidad de proponer la solución, y ponlo en cada área de trabajo, a la vista de todos",
+    "Envía un agradecimiento personal e inmediato a quien te avisa de un problema",
+    "Clasifica y prioriza cada aviso y pásalo a quien pueda resolverlo",
+    "Consigue lo necesario y actúa rápido para eliminar la causa",
+    "Si decides no actuar, justifica la decisión y revísala con alguien de más experiencia o confianza antes de cerrarla",
+    "Confirma a cada persona la decisión tomada y considera reconocer periódicamente a quienes más avisan, por ejemplo con un sorteo semanal o un reconocimiento visible"
+  ],
+  "resumen_teorico": "ECR es la forma en que cualquier persona que te ayuda en tu negocio te avisa, sin necesidad de proponer la solución, sobre algo que le impide hacer bien su trabajo: una herramienta que no funciona, poca luz, un proceso que no tiene sentido, etc. Se activa una vez que ya tienes clara la meta de cero errores y todos la entienden, trasladando la detección de obstáculos a quien está en el día a día. Cada aviso merece una respuesta rápida y un agradecimiento personal; si decides no actuar, esa decisión debe quedar justificada y revisada por alguien de más experiencia o confianza. Bien manejado, genera participación positiva sin volverse quejas destructivas, y sirve de base para reconocer periódicamente a quienes avisan.",
+  "titulo": "Eliminación de Causas de Error (Error Cause Removal - ECR)"
+}

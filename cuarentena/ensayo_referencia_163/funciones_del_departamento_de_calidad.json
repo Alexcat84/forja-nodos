@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando tu negocio no tiene procesos formales de inspección, prueba o control de proveedores. Cuando existen retrasos crónicos en pruebas o defectos recurrentes de proveedores.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Un procedimiento escrito que define cómo haces inspección, pruebas y control de proveedores, con quién hace qué.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "quality_is_free_the",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "funciones_del_departamento_de_calidad",
+  "ids_alias": [],
+  "nodos_previos": [
+    "organizacion_independiente_de_calidad",
+    "prevencion_versus_control_de_calidad"
+  ],
+  "nodos_siguientes": [
+    "programa_cero_defectos"
+  ],
+  "pasos_accionables": [
+    "Establece una inspección de aceptación planificada, a cargo de alguien capacitado que no sea quien fabrica el producto.",
+    "Define pruebas funcionales con procedimientos exactos y trata el software de prueba como un producto que también debe calificarse.",
+    "No dejes que quien diseñó el producto sea quien haga las pruebas rutinarias de aceptación; que las haga alguien dedicado a seguir el procedimiento exacto.",
+    "Involucra el control de calidad desde el principio al elegir y desarrollar proveedores, no solo al momento de comprarles.",
+    "Decide dónde conviene aceptar el material comprado: en la planta del proveedor, en tu línea de producción, o al recibirlo."
+  ],
+  "resumen_teorico": "En tu negocio, el control de calidad debe cubrir funciones concretas: inspección de aceptación de producto (visual y mecánica, hecha por alguien capacitado que no sea quien fabrica), pruebas funcionales con equipos y software (tratando el software de prueba como un producto que también debe calificarse), y calidad de proveedores (involucrando el control de calidad desde el principio en la selección de proveedores, no solo en la compra, en vez de hacer auditorías superficiales de planta). Cada actividad debe planificarse, ejecutarla alguien calificado y mantenerse separada de quien realiza la operación que se está evaluando.",
+  "titulo": "Funciones Clave de Control de Calidad (Inspección, Pruebas, Proveedores)"
+}

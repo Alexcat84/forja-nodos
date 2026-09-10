@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando se ha decidido realizar benchmarking pero no se ha definido cómo obtener los datos. Si existen restricciones de tiempo o presupuesto para la recolección de información.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Selección documentada de la fuente de datos de benchmarking más adecuada según recursos y objetivos.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "juran_s_quality_handbook",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "fuentes_datos_benchmarking",
+  "ids_alias": [],
+  "nodos_previos": [
+    "tipos_benchmarking_por_participante"
+  ],
+  "nodos_siguientes": [
+    "consortium_benchmarking",
+    "proceso_benchmarking_juran_7pasos",
+    "normalizacion_datos_benchmarking"
+  ],
+  "pasos_accionables": [
+    "Evaluar el presupuesto y tiempo disponible para determinar la fuente de datos más viable.",
+    "Si se requiere rapidez, considerar benchmarking por base de datos con un proveedor de reputación comprobada.",
+    "Si se necesita profundidad, optar por benchmarking uno a uno o de consorcio.",
+    "Verificar la validez y definición clara de las métricas antes de aceptar los datos de cualquier fuente."
+  ],
+  "resumen_teorico": "El benchmarking puede clasificarse según la fuente de datos utilizada: benchmarking por base de datos (comparación contra datos históricos de terceros), por encuesta (cuestionarios enviados a participantes), por autoevaluación (basado en modelos de excelencia), uno a uno (profundización con un socio específico) y de consorcio (grupo colaborativo con alto control del proceso). Cada fuente tiene ventajas y limitaciones en cuanto a control, costo, confiabilidad y profundidad del aprendizaje.",
+  "titulo": "Fuentes de Datos e Información para Benchmarking"
+}

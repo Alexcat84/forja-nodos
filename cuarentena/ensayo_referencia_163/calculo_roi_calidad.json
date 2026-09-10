@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando necesitas tener el número claro antes de decidir si vale la pena invertir en una mejora. Cuando tienes varias ideas compitiendo por el mismo dinero disponible.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Estimación de ROI y costo de mala calidad (COPQ) documentado, con un rango de confianza aceptable para tomar tu decisión",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "juran_s_quality_handbook",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "calculo_roi_calidad",
+  "ids_alias": [],
+  "nodos_previos": [
+    "costo_de_mala_calidad_copq"
+  ],
+  "nodos_siguientes": [
+    "presentaciones_alta_direccion",
+    "consejo_de_calidad",
+    "lenguajes_jerarquia_organizacional"
+  ],
+  "pasos_accionables": [
+    "Buscar ayuda de alguien que entienda de finanzas para armar la información de ROI",
+    "Diferenciar entre gastos de capital y gastos operativos en el cálculo",
+    "Usar una estimación rápida y aproximada mediante muestreo en lugar de expandir todo el sistema contable",
+    "Validar que tu decisión no cambie ante un rango razonable de estimaciones"
+  ],
+  "resumen_teorico": "El ROI es un factor decisivo para decidir si vale la pena meterle dinero a una mejora frente a otras cosas en las que podrías invertir. Su cálculo es complejo porque involucra capital (dinero después de impuestos) y gastos (dinero antes de impuestos), que se tratan diferente en contabilidad. Los proyectos de mejora radical suelen ser ventajosos porque rara vez son intensivos en capital. Juran recomienda usar estimaciones rápidas en lugar de sistemas contables exhaustivos, ya que la precisión extrema rara vez cambia tu decisión.",
+  "titulo": "Cálculo del Retorno de Inversión (ROI) en Calidad"
+}

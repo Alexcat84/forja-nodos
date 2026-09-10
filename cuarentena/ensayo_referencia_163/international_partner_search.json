@@ -1,0 +1,40 @@
+{
+  "condiciones_activacion": "Si necesitas identificar rapidamente socios estrategicos calificados en un mercado extranjero. Si ya elegiste un mercado objetivo y quieres reuniones ya agendadas con compradores o socios. Si necesitas verificar la fiabilidad de una empresa extranjera antes de firmar un acuerdo.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "exportacion",
+  "entregable_esperado": "Lista de hasta 5 socios potenciales prescreened con datos de contacto e interes confirmado, complementada según el caso con agenda de reuniones Gold Key o informe de antecedentes ICP.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "a_basic_guide_to",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "international_partner_search",
+  "ids_alias": [
+    "gold_key_matching_service",
+    "international_company_profile"
+  ],
+  "nodos_previos": [
+    "evaluacion_mercados_objetivo",
+    "seleccion_representante_extranjero"
+  ],
+  "nodos_siguientes": [
+    "seleccion_representante_extranjero",
+    "clausula_escape_contrato_representante"
+  ],
+  "pasos_accionables": [
+    "Prepara tus materiales de marketing y el perfil de tu negocio",
+    "Solicita el International Partner Search en la oficina local del U.S. Commercial Service, indicando el mercado objetivo y el perfil de socio que buscas",
+    "Recibe y evalua la lista de hasta 5 socios potenciales prescreened en 15 días",
+    "Si necesitas reuniones ya agendadas, solicita el servicio Gold Key para obtener citas prearregladas, interprete y apoyo para cerrar el trato",
+    "Pide un informe ICP para verificar la reputacion y las referencias financieras del socio antes de firmar",
+    "Contacta directamente a los socios interesados con la información proporcionada"
+  ],
+  "resumen_teorico": "El International Partner Search del U.S. Commercial Service usa equipos de expertos en mas de 75 paises para identificar socios estrategicos calificados. Tu entregas materiales de marketing y el perfil de tu negocio, y en 15 días recibes una lista de hasta cinco empresas prescreened interesadas en comprar o vender tus productos, con tamano, ventas, anos en el negocio y contactos clave. Si necesitas reuniones ya agendadas, puedes solicitar el servicio Gold Key, que anade orientacion, investigacion de mercado, citas prearregladas, apoyo de interprete y asistencia para cerrar el trato, enviar mercancia y cobrar. Para verificar la fiabilidad de un socio antes de firmar, puedes pedir un informe de antecedentes (ICP) con reputacion, referencias financieras y comerciales, util en mercados donde faltan proveedores privados de información crediticia.",
+  "titulo": "Búsqueda Internacional de Socios (International Partner Search)"
+}

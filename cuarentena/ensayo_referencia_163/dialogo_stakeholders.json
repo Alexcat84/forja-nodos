@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando se busca fortalecer la relación con stakeholders críticos o escépticos. Si la empresa desea mejorar su reputación de autenticidad.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "environmental",
+  "entregable_esperado": "Mecanismo formal de retroalimentación bidireccional implementado (ej. plataforma tipo 'Tell Shell')",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_green_to_gold",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "dialogo_stakeholders",
+  "ids_alias": [],
+  "nodos_previos": [
+    "validacion_externa_reportes",
+    "comunicacion_interna_empleados",
+    "reporte_sostenibilidad_digital"
+  ],
+  "nodos_siguientes": [
+    "mejora_continua_sostenibilidad"
+  ],
+  "pasos_accionables": [
+    "Habilitar canales de retroalimentación (encuestas, buzones de comentarios, formularios web)",
+    "Publicar críticas recibidas como muestra de seriedad y autenticidad",
+    "Construir relaciones sostenidas con grupos externos, incluidos los críticos",
+    "Responder activamente a las inquietudes planteadas por empleados y públicos externos"
+  ],
+  "resumen_teorico": "Las comunicaciones de sostenibilidad deben orientarse a crear un diálogo bidireccional que conecte a audiencias internas y externas con la empresa, autorizándolas a dar sugerencias y críticas. Construir relaciones sostenidas con stakeholders, incluso grupos hostiles, dificulta que estos lancen críticas severas sin una relación de por medio.",
+  "titulo": "Creación de Diálogo con Stakeholders"
+}

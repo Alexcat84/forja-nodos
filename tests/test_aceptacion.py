@@ -511,9 +511,11 @@ class PruebaGate(BaseForja):
         self.assertEqual(self.forja("gate")[0], 0)
 
     def test_reglas_de_id_en_el_gate(self):
+        # El texto de la regla 1 y de la regla 2 cambio el 10 sep 2026 con la
+        # decision del fundador. La guarda es la misma; lo que dice, no.
         for identificador, marca in (("registrar_de_fuentes", "preposicion"),
-                                     ("registrar_fuentes_2", "sufijo numerico"),
-                                     ("extraer_nodes", "fuera del castellano")):
+                                     ("registrar_fuentes_2", "sufijo numerico de VERSION"),
+                                     ("extraer_nodes", "palabra inglesa con equivalente")):
             self.escribir_dataset([nodo_base(identificador)])
             codigo, salida = self.forja("gate")
             self.assertEqual(codigo, 1, salida)
@@ -1012,12 +1014,95 @@ class PruebaBandejas(BaseForja):
         self.assertIn("U+2014", hallazgos[0])
 
 
+class PruebaReglasDeId(BaseForja):
+    """Las dos reglas de id que el fundador reescribio el 10 sep 2026.
+
+    Cada una con su caso positivo, porque una regla que dice siempre que si, o
+    siempre que no, no distingue nada.
+    """
+
+    def _fallos(self, identificador):
+        from src import reglas_id
+        return reglas_id.validar(identificador)
+
+    def _texto(self, identificador):
+        return " | ".join(self._fallos(identificador))
+
+    # ---- REGLA 1: la negra, la blanca, y los nombres propios ----
+
+    def test_regla1_ingles_con_equivalente_cae(self):
+        self.assertIn("palabra inglesa con equivalente",
+                      self._texto("customer_retention_tactics"))
+        # Y nombra LAS DOS piezas, no solo la primera que encuentra.
+        texto = self._texto("customer_retention_tactics")
+        self.assertIn("customer", texto)
+        self.assertIn("retention", texto)
+
+    def test_regla1_prestamo_asentado_pasa(self):
+        """CASO POSITIVO: la blanca indulta, o la regla seria un candado."""
+        for identificador in ("plan_marketing_contenidos", "medir_benchmarking_costes",
+                              "valorar_startup_temprana", "aplicar_lean_produccion"):
+            self.assertEqual(self._fallos(identificador), [],
+                             "%s deberia pasar: %s" % (identificador,
+                                                       self._texto(identificador)))
+
+    def test_regla1_nombre_propio_no_es_palabra_ajena(self):
+        """Un apellido no tiene equivalente en castellano: no se caza."""
+        for identificador in ("los_14_puntos_deming", "grafico_shewhart_control",
+                              "auditoria_osha_seguridad"):
+            self.assertNotIn("palabra inglesa", self._texto(identificador))
+
+    def test_regla1_las_dos_listas_no_se_solapan(self):
+        """Si chocan, la regla dejo de tener criterio."""
+        from src import reglas_id
+        self.assertEqual(reglas_id.INGLES_CON_EQUIVALENTE
+                         & reglas_id.PRESTAMOS_ASENTADOS, set())
+        self.assertEqual(reglas_id.INGLES_CON_EQUIVALENTE
+                         & reglas_id.NOMBRES_Y_SIGLAS, set())
+
+    # ---- REGLA 2: version prohibida, denominacion permitida ----
+
+    def test_regla2_sufijo_de_version_cae(self):
+        for identificador in ("accion_correctiva_2", "consejo_calidad_3",
+                              "cultura_justa_9"):
+            self.assertIn("sufijo numerico de VERSION", self._texto(identificador),
+                          identificador)
+
+    def test_regla2_numero_de_denominacion_pasa(self):
+        """CASO POSITIVO: los cuatro vivos que la regla vieja tumbaba mal."""
+        for identificador in ("familia_normas_iso_9000", "canales_traccion_19",
+                              "riesgo_split_51_49"):
+            self.assertNotIn("VERSION", self._texto(identificador), identificador)
+
+    def test_regla2_numero_en_medio_nunca_fue_version(self):
+        for identificador in ("los_14_puntos_deming", "benchmarking_7_pasos_juran",
+                              "programa_mejora_calidad_14_pasos"):
+            self.assertNotIn("VERSION", self._texto(identificador), identificador)
+
+    def test_regla2_la_version_cuya_base_vive_la_caza_tambien_la_señal(self):
+        """La puerta y la cola dicen lo mismo por caminos distintos.
+
+        `familia()` normaliza los digitos finales, asi que un `_2` y su base
+        comparten clave de familia ENTERA. Si la regla 2 alguna vez se
+        relajara, la señal 2 seguiria levantando el par.
+        """
+        from src import reglas_id
+        self.assertEqual(reglas_id.familia("accion_correctiva_2"),
+                         reglas_id.familia("accion_correctiva"))
+        self.assertEqual(
+            reglas_id.similitud_familia("accion_correctiva_2", "accion_correctiva"),
+            1.0)
+        # CASO POSITIVO: dos ids de verdad distintos NO comparten familia.
+        self.assertNotEqual(reglas_id.familia("accion_correctiva"),
+                            reglas_id.familia("auditoria_producto"))
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
              PruebaGate, PruebaMutuo, PruebaCitaDeLinea, PruebaVigencia,
              PruebaNoAplica, PruebaDeprecado, PruebaResolutor,
-             PruebaBandejas]
+             PruebaBandejas, PruebaReglasDeId]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -1042,6 +1127,8 @@ def main():
                 for c in (PruebaCitaDeLinea, PruebaVigencia, PruebaNoAplica, PruebaDeprecado)))
     print("  el barrido NO entra en las bandejas de entrada (estreno del 9 sep 2026): "
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaBandejas)._tests))
+    print("  reglas de id 1 y 2, reescritas por el fundador (10 sep 2026): "
+          "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaReglasDeId)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

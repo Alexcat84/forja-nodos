@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando compares tu negocio directamente con el de tus competidores. Si vas a intercambiar datos sensibles de precios, costos o información estratégica.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Acuerdo de confidencialidad firmado y una política de comparación conforme a las leyes de competencia y propiedad intelectual",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "juran_s_quality_handbook",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "aspectos_legales_eticos_benchmarking",
+  "ids_alias": [],
+  "nodos_previos": [
+    "clasificacion_benchmarking"
+  ],
+  "nodos_siguientes": [
+    "gestion_efectiva_benchmarking"
+  ],
+  "pasos_accionables": [
+    "Busca asesoría legal antes de comparar tu negocio con el de tus competidores",
+    "Evita el intercambio directo de información sobre precios y secretos comerciales sensibles",
+    "Adopta los principios del Código de Conducta de Benchmarking (APQC/EFQM)",
+    "Define qué tan confidencial o anónima debe quedar la información según su sensibilidad",
+    "Firma un acuerdo de confidencialidad legalmente vinculante con todos los participantes y quien facilite el proceso",
+    "Equilibra la necesidad de confidencialidad con lo que puedes aprender del estudio"
+  ],
+  "resumen_teorico": "El benchmarking está regido por leyes de competencia y de propiedad intelectual. Si compartes información con otros, puedes infringir derechos de propiedad intelectual, y si comparas precios o costos con tu competencia, eso puede considerarse un comportamiento anticompetitivo. El Código de Conducta de Benchmarking (creado por APQC en 1992, con una versión europea en 1996) establece principios de legalidad, confidencialidad e intercambio de información, aunque no te obliga legalmente. Por eso, firma siempre un acuerdo de confidencialidad legalmente vinculante entre todas las partes.",
+  "titulo": "Aspectos legales y éticos de comparar tu negocio con otros (benchmarking)"
+}

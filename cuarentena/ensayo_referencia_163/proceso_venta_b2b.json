@@ -1,0 +1,39 @@
+{
+  "condiciones_activacion": "Cuando se vende un producto enterprise o de alto valor a organizaciones complejas.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Propuesta personalizada firmada y plan de acción de compra con fechas definidas",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_startup_owner_s",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "proceso_venta_b2b",
+  "ids_alias": [],
+  "nodos_previos": [
+    "identificar_earlyvangelists",
+    "sales_roadmap"
+  ],
+  "nodos_siguientes": [
+    "influence_map_organizacional",
+    "refinar_sales_roadmap"
+  ],
+  "pasos_accionables": [
+    "Investigar la empresa y los individuos antes de la primera reunión (org chart, situación financiera)",
+    "Usar la primera reunión para entender problemas, necesidades y ajuste (fit) del producto",
+    "Determinar el punto de entrada correcto: nivel medio antes de subir a nivel alto",
+    "Visualizar el 'antes y después' cuantificando ROI, facilidad de adopción y ahorro",
+    "Personalizar presentaciones según el aprendizaje obtenido",
+    "Crear un plan de acción de compra con fechas concretas",
+    "Involucrar a la alta gerencia de ambas partes",
+    "Presentar una propuesta personalizada y conseguir la firma"
+  ],
+  "resumen_teorico": "Es un conjunto de pasos críticos y repetibles para ejecutar ventas empresa a empresa: investigación previa, primera reunión de descubrimiento, identificación del punto de entrada correcto en la organización, visualización del 'antes y después', personalización de presentaciones, creación de un plan de acción de compra, involucramiento de gerencia senior, y cierre con propuesta firmada.",
+  "titulo": "El Proceso de Venta B2B (Sales Process)"
+}

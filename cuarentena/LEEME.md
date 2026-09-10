@@ -65,8 +65,22 @@ medida es un candidato del que ya no se sabe como llego.
 La guarda `guiones` del gate lo mira igual cuando pide entrar, y ahi si
 lo tumba. Esa es la sede correcta: la puerta, no la bandeja.
 
-> **DECISION ABIERTA PARA EL FUNDADOR:** si prefiere que los lotes SI viajen en
-> el repo (para que un informe que cita un fichero pueda comprobarse contra el
-> arbol, que es el espiritu de *la ruta que promete prueba es cifra*), se quita
-> una linea del `.gitignore` y ya esta. Se deja ignorada por defecto porque un
-> lote son cientos de ficheros de material en bruto.
+> ### DECIDIDO EL 10 SEP 2026: LOS LOTES VIAJAN
+>
+> La decision que esta seccion dejaba abierta ya tiene respuesta del fundador, y
+> es **si**. `.gitignore` perdio su linea `cuarentena/*/`. **Los candidatos
+> viajan en el repo.**
+>
+> **EL MOTIVO ES LA RUTA QUE PROMETE PRUEBA ES CIFRA:** un informe que dice
+> "de estos 163, 49 caerian" **solo se comprueba si los 163 estan en el arbol**.
+> Un lote que no viaja convierte cada informe en una firma en vez de una prueba.
+> Pesan, y se aceptan. Queda escrito como **D.25** del banco.
+>
+> **La unica carpeta que sigue fuera es `cuarentena/_derivadas/`**, donde la
+> maquina deja copias para medir, entre ellas el catalogo de referencia entero.
+> Eso ya vive en su repo y en su tag.
+>
+> **Y EL BARRIDO DE GUIONES SIGUE SIN ENTRAR AQUI** aunque ahora viajes en git.
+> Un candidato es material ajeno esperando juicio, viaje o no viaje: limpiarlo
+> antes de que la aduana lo mida seria falsificar la medida. Correccion
+> declarada a D.20, misma fecha.

@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Si vas a hacer tu primer análisis de huella de carbono. Si necesitas establecer una línea base antes de fijar tus metas de reducción.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "environmental",
+  "entregable_esperado": "Un documento donde definas los límites organizacionales, operacionales y temporales de tu análisis de huella de carbono",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_green_to_gold",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "definir_limites_huella_carbono",
+  "ids_alias": [],
+  "nodos_previos": [
+    "medir_huella_carbono_corporativa"
+  ],
+  "nodos_siguientes": [
+    "estrategia_recoleccion_datos_carbono",
+    "conversion_datos_co2e"
+  ],
+  "pasos_accionables": [
+    "Decide qué unidades de negocio, subsidiarias y franquicias vas a incluir en tu análisis",
+    "Decide si vas a medir solo alcance 1 y 2, o también alcance 3",
+    "Elige un período de tiempo, un año fiscal o calendario, como tu línea base",
+    "Documenta todas tus decisiones de límites para poder revisarlas o auditarlas después"
+  ],
+  "resumen_teorico": "Antes de medir tus emisiones de carbono, tienes que trazar límites claros. Primero, el límite organizacional: decide qué sucursales, subsidiarias o franquicias vas a incluir en el análisis. Segundo, el límite operacional: decide qué emisiones vas a contar, según lo que el protocolo de gases de efecto invernadero (GHG Protocol) llama alcance 1, 2 y 3. El alcance 3, que son las emisiones indirectas de toda tu cadena de valor, suele ser el más grande pero también el más difícil de medir; casos como Salt Spring Coffee (33%) y DHL Nordic (94%) muestran cuánto puede pesar. Por último, define el límite temporal: elige un año base contra el cual vas a comparar tus resultados futuros.",
+  "titulo": "Definir Límites de la Huella de Carbono"
+}

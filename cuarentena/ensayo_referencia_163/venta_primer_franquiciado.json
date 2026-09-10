@@ -1,0 +1,31 @@
+{
+  "condiciones_activacion": "Cuando el franquiciante es nuevo y busca vender sus primeras unidades franquiciadas.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "franquicias",
+  "entregable_esperado": "Guion de venta específico para abordar la objeción de novedad del sistema con primeros prospectos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "franchise_your_business_mark",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "venta_primer_franquiciado",
+  "ids_alias": [],
+  "nodos_previos": [
+    "manejo_objeciones_venta_franquicia"
+  ],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Reconocer abiertamente la objeción de la falta de trayectoria del sistema",
+    "Destacar el nivel de atención y soporte personalizado que recibirán los primeros franquiciados",
+    "Enfatizar la oportunidad de influir en el desarrollo del sistema",
+    "Ser transparente sobre riesgos de un concepto emergente (marca, soporte, servicio)"
+  ],
+  "resumen_teorico": "Los prospectos que se acercan a un franquiciante nuevo suelen tener mayor tolerancia al riesgo. El franquiciante debe abordar la objeción de 'ser conejillo de indias' de frente, destacando ventajas únicas: atención personalizada del fundador, mayor voz en el desarrollo del sistema, y compromiso absoluto con su éxito (porque el franquiciante no puede permitirse que el primero fracase). También debe ser honesto sobre los riesgos de unirse a un concepto emergente.",
+  "titulo": "Estrategia para Vender la Primera Franquicia (Ser Nuevo)"
+}

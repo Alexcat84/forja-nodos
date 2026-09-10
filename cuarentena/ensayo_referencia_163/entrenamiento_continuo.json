@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Cuando tu red de franquicias ya está operando y quieres sostener los estándares de calidad a largo plazo.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "franquicias",
+  "entregable_esperado": "Un calendario de entrenamiento continuo y recertificación funcionando dentro de tu sistema",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "franchise_your_business_mark",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "entrenamiento_continuo",
+  "ids_alias": [],
+  "nodos_previos": [
+    "entrenamiento_en_sitio",
+    "programa_entrenamiento_franquiciados"
+  ],
+  "nodos_siguientes": [
+    "sistema_lms_entrenamiento"
+  ],
+  "pasos_accionables": [
+    "Incluye cláusulas de entrenamiento continuo en el contrato de franquicia",
+    "Programa recertificaciones periódicas para las posiciones clave",
+    "Ofrece entrenamiento sobre nuevos productos o procedimientos mediante video, reuniones regionales o convenciones anuales"
+  ],
+  "resumen_teorico": "El entrenamiento no termina cuando abres el primer local franquiciado. Tienes que mantenerlo a lo largo de toda la relación para que quienes operan tu marca se mantengan al día con las tendencias de la industria, los nuevos productos y los procedimientos. Conviene que incluyas recertificación periódica en las competencias clave.",
+  "titulo": "Entrenamiento Continuo (Ongoing Training)"
+}

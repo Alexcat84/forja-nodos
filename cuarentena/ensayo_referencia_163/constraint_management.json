@@ -1,0 +1,41 @@
+{
+  "condiciones_activacion": "Cuando el throughput del sistema está limitado por un recurso específico. Al priorizar dónde invertir esfuerzos de mejora.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "quality",
+  "entregable_esperado": "Restricción del sistema identificada con plan de acción de las 5 etapas de TOC",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "juran_s_quality_handbook",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "constraint_management",
+  "ids_alias": [],
+  "nodos_previos": [
+    "mapeo_flujo_valor",
+    "takt_time",
+    "littles_law",
+    "sistema_pull_push",
+    "value_non_value_added_analysis"
+  ],
+  "nodos_siguientes": [
+    "sistema_pull_push",
+    "reduccion_de_tiempo_de_ciclo",
+    "smed_setup_reduction",
+    "teoria_de_restricciones"
+  ],
+  "pasos_accionables": [
+    "Identificar la restricción (equipo, mano de obra, información o proveedor) que limita el throughput",
+    "Decidir cómo explotar al máximo la restricción actual",
+    "Subordinar todos los demás procesos a esta decisión",
+    "Elevar el desempeño de la restricción mediante inversión o mejora",
+    "Repetir el ciclo identificando la nueva restricción"
+  ],
+  "resumen_teorico": "Basado en la Teoría de las Restricciones de Goldratt, establece que toda mejora fuera del cuello de botella (constraint) es desperdicio; la mejora debe enfocarse en la restricción del sistema. Proceso de cinco pasos: identificar, explotar, subordinar, elevar y repetir con la nueva restricción.",
+  "titulo": "Gestión de Restricciones (Teoría de las Restricciones)"
+}

@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando se detecta recolección excesiva de datos. Si se requiere mayor flexibilidad ante cambios regulatorios.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "seguridad_digital",
+  "entregable_esperado": "Política de minimización de datos y plan de técnicas de disociación implementadas",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "getting_started_with_the",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "control_minimizacion_datos",
+  "ids_alias": [],
+  "nodos_previos": [
+    "govern_cultura_privacidad",
+    "identify_mapeo_datos"
+  ],
+  "nodos_siguientes": [
+    "funcion_protect_politica_seguridad",
+    "communicate_transparencia"
+  ],
+  "pasos_accionables": [
+    "Auditar qué datos se recolectan y determinar si son realmente necesarios",
+    "Diseñar políticas que otorguen control sobre los datos tanto a la organización como a los individuos",
+    "Incorporar flexibilidad de diseño en sistemas para adaptarse a cambios legales y de preferencias",
+    "Evaluar e implementar técnicas de de-identificación o procesamiento descentralizado donde sea posible"
+  ],
+  "resumen_teorico": "La función Control se enfoca en evaluar si la organización recolecta, comparte o mantiene datos innecesarios, y en diseñar políticas y sistemas con flexibilidad para adaptarse a preferencias cambiantes de privacidad y entornos legales dinámicos. Se promueven técnicas como la de-identificación y el procesamiento descentralizado de datos para disociar información de individuos y dispositivos, maximizando así las ganancias de privacidad mientras se cumplen los objetivos del negocio.",
+  "titulo": "Control: Minimización y Gestión Técnica de Datos"
+}

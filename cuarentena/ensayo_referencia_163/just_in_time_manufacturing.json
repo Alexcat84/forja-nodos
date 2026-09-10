@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Si la empresa tiene sistemas de producción automatizados y mercado con demanda predecible. Si se busca reducir espacio de almacenaje y emisiones de transporte.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "environmental",
+  "entregable_esperado": "Sistema de inventario reducido documentado, con acuerdos de reabastecimiento ágil con proveedores y métricas de reducción de desperdicio.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_green_to_gold",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "just_in_time_manufacturing",
+  "ids_alias": [],
+  "nodos_previos": [
+    "manufactura_celular"
+  ],
+  "nodos_siguientes": [
+    "green_kaizen_events"
+  ],
+  "pasos_accionables": [
+    "Evaluar la confiabilidad de proveedores y capacidad de comunicación con ellos.",
+    "Reducir progresivamente los niveles de inventario almacenado.",
+    "Aplicar JIT a la gestión de químicos para reducir riesgos y residuos.",
+    "Establecer sistemas de pedidos personalizados basados en demanda real del cliente."
+  ],
+  "resumen_teorico": "JIT es un sistema donde los insumos llegan exactamente cuando se necesitan, en lugar de esperar en inventario. Aplicado con enfoque verde, reduce sobreproducción, defectos, necesidad de espacio de almacén y emisiones por transporte innecesario. Requiere alta organización y proveedores confiables, ya que reduce el buffer ante interrupciones en la cadena de suministro.",
+  "titulo": "Manufactura y Entrega Justo a Tiempo (JIT)"
+}

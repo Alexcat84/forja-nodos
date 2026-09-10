@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Si estás pensando en levantar capital a través de una plataforma online como AngelList. Si existe riesgo de que promocionar tu ronda públicamente cuente como 'solicitud general'.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Tener la estructura legal de tu ronda de equity crowdfunding validada con un abogado, cumpliendo las excepciones de la SEC que apliquen",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "venture_deals_brad_feld",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "equity_crowdfunding",
+  "ids_alias": [],
+  "nodos_previos": [
+    "crowdfunding_de_producto",
+    "safe_simple_agreement_future_equity",
+    "recursos_ecosistema_emprendedor"
+  ],
+  "nodos_siguientes": [
+    "crowdfunding_legal_exemptions_jobs_act"
+  ],
+  "pasos_accionables": [
+    "Revisa si las personas que quieren invertir califican como 'inversionista acreditado' según las reglas de la SEC",
+    "Evita promocionar tu ronda de financiamiento públicamente, salvo que cumplas con las excepciones que lo permiten",
+    "Consulta con un abogado de valores qué excepción de registro ante la SEC aplica a tu forma de levantar capital",
+    "Si usas una plataforma como AngelList, entiende cómo funcionan los grupos de inversionistas ('syndicates') que juntan capital"
+  ],
+  "resumen_teorico": "Si usas una plataforma como AngelList para recaudar dinero a cambio de una parte de tu negocio (equity crowdfunding), estás vendiendo un valor a través de un intermediario. En Estados Unidos, vender valores requiere registrarte ante la SEC, salvo que califiques para una excepción. Para eso necesitas fijarte en dos cosas: que tus inversionistas cumplan con ser 'inversionista acreditado' (un nivel de ingreso o patrimonio que la ley define) y que evites la 'solicitud general', es decir, que no promociones tu ronda de financiamiento públicamente. Estos detalles legales y fiscales varían según el país, así que verifícalos con un profesional local antes de actuar.",
+  "titulo": "Vender una parte de tu negocio a través de una plataforma online (equity crowdfunding) y las reglas de valores (SEC)"
+}

@@ -13,9 +13,16 @@ tests/tmp_*
 fuentes/*/
 !fuentes/FUENTES_CANONICAS.json
 
-# (b) LOS CANDIDATOS EN CUARENTENA son material de entrada, no producto: lo que
-#     entra queda en dataset/nodos.jsonl y su razon en bitacora/VEREDICTOS.jsonl,
-#     que son las sedes de verdad. Se rescatan los LEEME de la bandeja, que si
-#     son doctrina.
-cuarentena/*/
-!cuarentena/LEEME.md
+# (b) LOS CANDIDATOS EN CUARENTENA SI VIAJAN, por decision del fundador del
+#     10 sep 2026. La linea `cuarentena/*/` que los dejaba fuera se retira.
+#
+#     EL MOTIVO ES LA RUTA QUE PROMETE PRUEBA ES CIFRA (cosecha 7.C): un
+#     informe que dice "de estos 163, 49 caerian" solo se puede comprobar si
+#     los 163 estan en el arbol. Un lote que no viaja convierte cada informe
+#     en una firma en vez de una prueba. Pesan, y se aceptan.
+#
+#     LA UNICA EXCEPCION, y es estrecha: `cuarentena/_derivadas/` guarda
+#     copias que hace la maquina para medir, entre ellas el catalogo de
+#     referencia ENTERO (5,6 MB, 3.157 nodos). Eso ya vive en su propio repo,
+#     en su tag, y duplicarlo aqui no prueba nada que el tag no pruebe mejor.
+cuarentena/_derivadas/

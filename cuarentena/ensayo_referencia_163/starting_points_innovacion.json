@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Cuando se tiene una tecnología sin mercado definido. Cuando se tiene un problema de cliente claro pero no una solución.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Definición clara del punto de partida (push o pull) y primer prototipo de propuesta de valor asociado.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "value_proposition_design",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "starting_points_innovacion",
+  "ids_alias": [],
+  "nodos_previos": [
+    "diez_principios_prototipado"
+  ],
+  "nodos_siguientes": [
+    "identificar_high_value_jobs",
+    "understanding_customers_tecnicas"
+  ],
+  "pasos_accionables": [
+    "Identificar si tu punto de partida es una tecnología (push) o una necesidad de cliente manifiesta (pull).",
+    "Si es push: explorar prototipos de propuesta de valor con segmentos potencialmente interesados hasta encontrar problem-solution fit.",
+    "Si es pull: aprender qué tecnologías/recursos se requieren para atender el job, pain o gain identificado.",
+    "Usar constraints de diseño (servitización, razor blade, low-cost, platform, trendsetter) para forzar pensamiento innovador."
+  ],
+  "resumen_teorico": "Las nuevas propuestas de valor no siempre parten del cliente, pero siempre deben terminar abordando jobs, pains o gains que le importan. Existen dos enfoques: Technology Push (partir de una tecnología/invención y buscar el problema que resuelve) y Market Pull (partir de un job/pain/gain manifiesto y buscar la solución/tecnología necesaria).",
+  "titulo": "Puntos de Partida para la Innovación (Push vs Pull)"
+}

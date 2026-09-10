@@ -1,0 +1,36 @@
+{
+  "condiciones_activacion": "Si la empresa no tiene criterios visibles de selección de proyectos más allá de lo financiero. Si se usan los mismos criterios financieros duros en etapas tempranas donde no hay datos suficientes.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Un set documentado de criterios must-meet, go/kill y should-meet (scorecard) por cada gate del proceso.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "winning_at_new_products",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "tipos_criterios_gate",
+  "ids_alias": [],
+  "nodos_previos": [
+    "diamante_decision_tres_partes",
+    "sistema_gates_go_kill",
+    "stage_gate_system"
+  ],
+  "nodos_siguientes": [
+    "definicion_gatekeepers"
+  ],
+  "pasos_accionables": [
+    "Definir una lista de preguntas must-meet tipo checklist para las primeras etapas (eliminatorias).",
+    "Definir umbrales financieros mínimos (NPV, IRR, Payback) para criterios Go/Kill en etapas avanzadas.",
+    "Usar un scorecard para las preguntas should-meet que evalúan atractivo relativo del proyecto.",
+    "Mantener los mismos factores principales del scorecard consistentes entre gates, ajustando solo las subpreguntas según la etapa.",
+    "Adaptar los criterios según el tipo de proyecto (mayor innovación, renovación, sales-force request, o desarrollo tecnológico)."
+  ],
+  "resumen_teorico": "Los criterios de gate se dividen en tres categorías que no deben mezclarse: Must-meet (preguntas de sí/no tipo checklist, eliminatorias, ej. alineación estratégica o ética), Go/Kill (criterios cuantitativos con umbral mínimo, ej. NPV positivo, IRR>30%, Payback<3 años), y Should-meet (criterios deseables usados para priorización relativa, evaluados en formato scorecard, ej. atractivo de mercado, ventaja competitiva). Estos criterios deben mantenerse consistentes de gate a gate cuando sea posible, aunque las subpreguntas financieras se vuelven más específicas en etapas avanzadas.",
+  "titulo": "Tipos de Criterios de Decisión en Gates (Must-meet, Go/Kill, Should-meet)"
+}

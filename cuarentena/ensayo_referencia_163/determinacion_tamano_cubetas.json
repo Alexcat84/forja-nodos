@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando se va a implementar Strategic Buckets por primera vez. Cuando se requiere justificar cuantitativamente una redistribución de recursos de innovación.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Una tabla o gráfico con el porcentaje ideal de recursos a asignar por tipo de proyecto, mercado o tecnología, respaldado por datos históricos y benchmarks.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "winning_at_new_products",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "determinacion_tamano_cubetas",
+  "ids_alias": [],
+  "nodos_previos": [
+    "metodo_strategic_buckets",
+    "business_model_environment_mapping"
+  ],
+  "nodos_siguientes": [
+    "categorizacion_ranking_proyectos_cubetas"
+  ],
+  "pasos_accionables": [
+    "Realizar una revisión histórica de 12-24 meses del gasto por categoría.",
+    "Evaluar la productividad (retorno por dólar invertido) de cada tipo de proyecto reciente.",
+    "Comparar contra benchmarks de la industria (ej. 70% core, 20% adyacente, 10% transformacional).",
+    "Discutir con el equipo directivo las prioridades estratégicas de negocio.",
+    "Fijar los porcentajes deseados de asignación de recursos por categoría."
+  ],
+  "resumen_teorico": "No existe una fórmula mágica para decidir qué porcentaje de recursos asignar a cada categoría de proyectos. El proceso recomendado combina una revisión histórica del gasto pasado, una evaluación de los resultados obtenidos por tipo de proyecto, un benchmark contra empresas de mejor desempeño (por ejemplo, la regla 70-20-10 de HBR o la distribución 35-25-25-15 de Cooper), y finalmente una discusión estratégica liderada por el equipo directivo para fijar los porcentajes deseados ('lo que debería ser').",
+  "titulo": "Determinación del Tamaño de las Cubetas Estratégicas"
+}

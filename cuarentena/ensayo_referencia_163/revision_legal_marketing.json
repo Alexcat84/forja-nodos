@@ -1,0 +1,32 @@
+{
+  "condiciones_activacion": "Solo aplica si vendes o piensas vender franquicias en Estados Unidos. Antes de lanzar cualquier campaña o material promocional nuevo de franquicia.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "franquicias",
+  "entregable_esperado": "Aprobación legal documentada de todos los materiales de marketing antes de su uso",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "franchise_your_business_mark",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "revision_legal_marketing",
+  "ids_alias": [],
+  "nodos_previos": [
+    "folleto_franquicia",
+    "autoresponders_drip_campaigns"
+  ],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Enviar todo material promocional al abogado de franquicias antes de su lanzamiento",
+    "Verificar consistencia entre el marketing y el FDD",
+    "Revisar programas de referidos y comunicaciones formales con prospectos",
+    "Confirmar cumplimiento en los ocho estados que regulan materiales de marketing de franquicia"
+  ],
+  "resumen_teorico": "Todo material usado en el proceso de venta de franquicias debe ser revisado por el abogado de franquicias antes de finalizarse, ya que ocho estados requieren aprobación regulatoria de materiales de marketing. Incluso sin vender en esos estados, el marketing debe ser consistente con el Documento de Divulgación de Franquicia (FDD).",
+  "titulo": "Revisión Legal del Material de Marketing de Franquicia"
+}

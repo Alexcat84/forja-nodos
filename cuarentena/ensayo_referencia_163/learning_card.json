@@ -1,0 +1,36 @@
+{
+  "condiciones_activacion": "Después de ejecutar cualquier experimento definido en un Test Card.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Learning Card completo por cada experimento, con decisión clara sobre próximos pasos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "value_proposition_design",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "learning_card",
+  "ids_alias": [],
+  "nodos_previos": [
+    "test_card",
+    "build_measure_learn"
+  ],
+  "nodos_siguientes": [
+    "five_data_traps",
+    "cycle_time"
+  ],
+  "pasos_accionables": [
+    "Registrar la hipótesis testeada y los datos/resultados obtenidos",
+    "Evaluar la fiabilidad de los datos",
+    "Definir las conclusiones e insights derivados",
+    "Determinar la magnitud de la acción requerida (pivote leve o drástico)",
+    "Decidir la acción concreta: pivotar, confirmar con más pruebas, profundizar, avanzar o ejecutar"
+  ],
+  "resumen_teorico": "Herramienta complementaria al Test Card para documentar los resultados de los experimentos: qué hipótesis se testeó, qué resultados se obtuvieron, qué tan confiables son los datos, qué conclusiones se derivan y qué acciones se tomarán (pivotar, buscar confirmación, profundizar, avanzar al siguiente bloque, o ejecutar).",
+  "titulo": "Learning Card - Captura de Aprendizajes"
+}

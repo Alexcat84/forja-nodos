@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Si estás por iniciar una ronda de levantamiento de capital. Si dependes de un solo inversionista sin alternativas.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Una estrategia clara de cuándo y cómo negociar tu ronda de financiamiento para tener el mayor poder de negociación posible",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_founder_s_dilemmas",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "leverage_en_negociacion_con_vcs",
+  "ids_alias": [],
+  "nodos_previos": [
+    "construccion_de_leverage"
+  ],
+  "nodos_siguientes": [
+    "term_sheet_negociacion",
+    "control_del_board_startup"
+  ],
+  "pasos_accionables": [
+    "Desarrolla tracción (producto, ingresos, contratos) antes de acercarte a los inversionistas",
+    "Busca varias propuestas de inversión (term sheets) al mismo tiempo, de distintos inversionistas",
+    "Explora ofertas de compra como palanca de negociación",
+    "Empieza las negociaciones con suficiente anticipación, antes de que se te acabe el efectivo disponible (runway)"
+  ],
+  "resumen_teorico": "Puedes aumentar tu poder de negociación frente a los inversionistas con unas pocas tácticas: espera a tener tracción (producto, ingresos, clientes) antes de salir a buscar capital, consigue varias propuestas de inversión (term sheets) en paralelo, busca ofertas de compra alternativas, y negocia con tiempo antes de quedarte sin efectivo.",
+  "titulo": "Cómo ganar poder de negociación (leverage) frente a los inversionistas"
+}

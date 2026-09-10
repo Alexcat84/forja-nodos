@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Cuando se investiga un incidente relacionado con incumplimiento de procedimientos. Cuando se diseña un manual de operaciones para tareas complejas y dinámicas.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "health_safety",
+  "entregable_esperado": "Análisis de brechas entre procedimiento escrito y práctica real, con clasificación de adaptaciones seguras vs riesgosas",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "the_field_guide_to",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "adaptaciones_procedimentales",
+  "ids_alias": [],
+  "nodos_previos": [
+    "ley_de_capacidad_de_sistemas"
+  ],
+  "nodos_siguientes": [
+    "supuestos_de_procedimientos",
+    "drift_hacia_el_fallo"
+  ],
+  "pasos_accionables": [
+    "Documentar casos donde procedimientos escritos se contradicen entre sí en la práctica real",
+    "Analizar cómo los operadores experimentados adaptan procedimientos para gestionar la carga de trabajo real",
+    "Diferenciar entre adaptaciones que aportan seguridad y desviaciones que erosionan los márgenes de seguridad",
+    "Revisar el Modelo Viejo vs Nuevo (Tabla 4.1) al evaluar el cumplimiento procedimental"
+  ],
+  "resumen_teorico": "Los procedimientos no pueden ser suficientemente sensibles a todas las variaciones de contexto en sistemas complejos y dinámicos. Aplicar procedimientos no es simplemente seguir reglas (IF-THEN), sino una actividad cognitiva sustantiva y habilidosa. Cuando múltiples procedimientos deben aplicarse simultáneamente y se contradicen, las personas deben adaptar; esta adaptación, lejos de ser una 'violación', suele ser una inversión activa en la seguridad.",
+  "titulo": "Adaptaciones Procedimentales (Procedural Adaptations)"
+}

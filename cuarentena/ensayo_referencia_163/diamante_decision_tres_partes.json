@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Si sientes que te castigan injustamente por una decisión de prioridad. Si mezclas la calidad del trabajo con la decisión de negocio en la misma conversación.",
+  "denominaciones": {
+    "nombre_largo": "",
+    "otros_idiomas": [],
+    "sigla": ""
+  },
+  "dominio": "core",
+  "entregable_esperado": "Un método propio para revisar tus proyectos en tres pasos claros, con un resultado anotado en cada uno.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "winning_at_new_products",
+      "fecha": "2026-09-09"
+    }
+  ],
+  "id": "diamante_decision_tres_partes",
+  "ids_alias": [],
+  "nodos_previos": [
+    "sistema_gates_go_kill"
+  ],
+  "nodos_siguientes": [
+    "tipos_criterios_gate",
+    "sistema_gates_go_kill",
+    "second_wind_energia_mental"
+  ],
+  "pasos_accionables": [
+    "Empieza revisando solo si lo que entregaste está completo y con la calidad que esperabas (chequeo de preparación).",
+    "Si pasa esa revisión, evalúa el negocio: mira los números y los criterios que ya tenías definidos.",
+    "Si el negocio se sostiene, compara este proyecto con tus otras iniciativas activas para decidir a cuál le das prioridad.",
+    "Mantén estas tres preguntas separadas durante la revisión, no las mezcles."
+  ],
+  "resumen_teorico": "Cuando revises si un proyecto tuyo sigue adelante, separa la conversación en tres partes claras. Primero, revisa si lo que entregaste está completo y con la calidad esperada: si falta algo, lo corriges, no lo cancelas. Segundo, evalúa si el proyecto sigue siendo una buena inversión, mirando los números y los criterios que ya definiste; si no lo es, ahí sí lo cierras. Tercero, compara ese proyecto con tus otras iniciativas para decidir a cuál le dedicas tiempo y recursos ahora. Mantener estas tres preguntas separadas evita que sientas que te penalizan por un buen trabajo cuando en realidad el proyecto solo perdió prioridad frente a otro.",
+  "titulo": "Las tres partes de la reunión para decidir si tu proyecto sigue adelante (gate)"
+}
