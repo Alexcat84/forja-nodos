@@ -793,8 +793,8 @@ antes de saber si acierto.
 |---|---|---|---|
 | 1 | registros del acta y de las adjudicaciones | **CERRADA** | ACTA 1 leida entera (9 secciones), fecha 2026-09-10, veredicto REPORTE VERIFICADO. Las **cuatro adjudicaciones** recogidas con su cita, mas `D.29`. La caida de especie REPORTE recogida y **reparada pegando el hook en el cuerpo de cada commit** |
 | 2 | BLOQUEANTE: pasada de transcripcion sobre los 6, mas la arista escrita | **CERRADA** | **36 pasos marcados: 23 TRANSCRIPCION y 13 con PUENTE (36 %).** 4 pasos retirados enteros y 9 clausulas reescritas; el lote pasa de **36 a 32 pasos**. Los 6 repasados por la aduana tras corregir: **6 entrarian, 0 caerian**. Arista MADRE a HIJO escrita en bloque propio (2.D) con su señal recomputada |
-| 3 | cap_03: frontera publicada y candidatos por la aduana | ABIERTA | |
-| 4 | informe del lote entero, commit y cierre del lote | ABIERTA | |
+| 3 | cap_03: frontera publicada y candidatos por la aduana | **CERRADA** | frontera publicada antes de cortar, parrafo a parrafo con su linea: **0 procedimientos y 5 posturas** de 5 parrafos. **CERO candidatos escritos, con su razon parrafo a parrafo.** Los tres casos del manual contestados (serie, caso, cifra), los tres en negativo y corridos. Madre buscada por lectura contra el dataset y contra los 6 hermanos: ninguna |
+| 4 | informe del lote entero, commit y cierre del lote | **CERRADA** | informe del lote al cierre: **6 entrarian, 0 bloquearian, 0 caerian, 0 chocan, ninguna guarda disparo.** **LOTE 1 CERRADO** contando sus **cuatro** ficheros uno a uno (`cap_00` no minable, `cap_01` no minado por la marca, `cap_02` minado y corregido, `cap_03` minado con resultado cero). Commit por capitulo con la salida del hook en el cuerpo |
 
 ### Discutibles marcados ANTES de saber si acierto
 
@@ -807,6 +807,12 @@ antes de saber si acierto.
 **DISCUTIBLE 3 (TAREA 2).** *`examinar_normas_pesos_medidas` pierde 5 de sus 6 pasos a manos de esta vara, y me pregunto si lo que queda sigue siendo un nodo.* Sus cinco pasos supervivientes son **reunir, examinar, reunir, evaluar, escribir** sobre dos objetos. **NO reabro el DISCUTIBLE 5 de la vuelta 1**, que el ACTA 1 seccion 3.2 sostuvo con correccion y que no es mio para reabrir. **Lo que traigo es lo que la correccion dejo ver y antes no se veia:** si un candidato solo se sostenia por los pasos que ahora resultan inventados, la pregunta de si era nodo se vuelve a plantear sola. **No la contesto y no lo retiro de cuarentena.** Lo dejo delante del auditor con la cifra al lado: **83 por ciento de puente, el peor del lote.**
 
 **DISCUTIBLE 4 (TAREA 2).** *He tocado campos que no son `pasos_accionables`.* El encargo me manda marcar los 36 pasos, y yo he corregido ademas **entregables, condiciones de activacion, resumenes y una escala minima**. **Mi razon:** `D.27` dice que *un puente no se queda callado dentro de un nodo*, y retirar el traslado del paso 6 dejando *la constancia del traslado a la autoridad competente* en el entregable habria dejado el puente vivo en un campo que nadie estaba mirando. **La duda es de alcance, no de criterio:** puede sostenerse que el encargo acotaba la pasada a los pasos y que lo demas era para otra vuelta.
+
+**DISCUTIBLE 5 (TAREA 3).** *El parrafo 38 (`cap_03.md:13`) fuera, y es la llamada mas apretada del capitulo.* **Nombra DOS medios uno a uno y con la misma formula *como* que el parrafo 29**, que si dio nodo. Lo dejo fuera porque su criterio de cierre es *que puedan servir de ayuda a los consumidores*, que es adecuacion, mientras que el del 29 era *inequivoca*, que se puede comprobar. **Pero `D.27` no dice cuantos objetos hacen inventario, y entre los cinco medios del 29 y los dos del 38 hay una raya que ningun documento de esta casa ha escrito.** La puse en el criterio y no en el numero. **Si el auditor la pone en el numero, este parrafo da nodo y yo me deje uno.**
+
+**DISCUTIBLE 6 (TAREA 3).** *El parrafo 41 (`cap_03.md:19`) fuera, y su lista de tres es concreta.* **Lo que el parrafo nombra uno a uno (como evitar las controversias, cuales son los mecanismos disponibles, donde presentar reclamaciones) son tres objetos escribibles**, no abstracciones. Lo dejo fuera por la RESTRICCION 1 de `D.27` y por gramatica: la lista cuelga de ***a fin de que ... conozcan***, o sea que son FINES, igual que la lista del parrafo 20 colgaba de *metas* y el ACTA 1 la dejo fuera. **Y porque el verbo del mandato es *cooperar* y el parrafo no da ni una via de cooperacion, asi que todo paso seria mio.** **Pero alguien puede sostener que los tres puntos son el CONTENIDO del trabajo y no su destino**, y entonces este parrafo da un nodo de comunicacion y yo me deje el segundo.
+
+**DISCUTIBLE 7 (CIERRE).** *He publicado una densidad de adjetivo de adecuacion por 100 palabras (1,84 en `cap_02` contra 5,95 en `cap_03`) que ningun documento de esta casa pide.* **La cuenta es real y esta corrida, y la use para no publicar una impresion como si fuera una medida.** Mi duda es de sede, no de aritmetica: **una cuenta nueva publicada en un reporte se parece peligrosamente a fabricar una señal**, y la seccion 13 prohibe fabricar maquinaria. **Lo declaro asi: no es una señal, no la propongo como umbral, no toca la calibracion, y la decision de cada parrafo la tomo la lectura uno a uno.** Si aun asi cuenta como maquinaria, la caida es mia y esta marcada antes de saberlo.
 
 
 ## TAREA 1. LOS REGISTROS. CERRADA
@@ -1099,3 +1105,367 @@ antes de saber si acierto.
 | **encontrados por mi en esta pasada**, aplicando la misma vara a lo que el acta no listo | **7** | `vigilar...` 3, `formular...` 2 y 5, `examinar...` 3, 4 y 5, `informar...` 4 |
 
 **Los siete mios van marcados como DISCUTIBLE 1 y DISCUTIBLE 2 mas abajo**, porque van mas alla de la lista que el auditor adjudico y **no me adjudico a mi mismo** (seccion 14).
+
+---
+
+## TAREA 3. `cap_03`, LA FRONTERA PUBLICADA Y EL SALDO. CERRADA CON CERO CANDIDATOS
+
+**Apartado V-F, *Solucion de controversias y compensacion*, parrafos 37 a 41.**
+
+    wc -w fuentes/onu_consumidor/cap_03.md   ->  389
+    (cuerpo sin cabecera, sed -n '9,$p' | wc -w  ->  336)
+
+**Coincide con las 389 palabras que publica el encargo y con las que el ACTA 1 seccion 1.4 clono.** Lo lei entero, las cinco unidades.
+
+### 3.A. `cap_03` ES MINABLE, y lo compruebo antes de leerlo
+
+*Porque `cap_01` no lo era y esa diferencia no se supone: se mira.*
+
+    grep -n "FRONTERA\|NO MINAR\|no minar" fuentes/onu_consumidor/*.md
+      fuentes/onu_consumidor/cap_01.md:9:_Nota: seccion FRONTERA, no se mina en el nucleo (ver plan de recorte)._
+
+**Un solo resultado en los cuatro ficheros, y es el de `cap_01`.** `cap_03` no lleva marca: **se mina.** Que despues de minarlo salgan cero nodos es un resultado de lectura, **no una marca del plan de recorte**, y las dos cosas no se confunden.
+
+### 3.B. LA FRONTERA, PUBLICADA ANTES DE CORTAR
+
+*Seccion 10. Parrafo a parrafo, con su linea, y aplicando `D.27` con sus tres restricciones.*
+
+#### Parrafo 37, `cap_03.md:11`. **POSTURA**
+
+**Es el parrafo mas largo del capitulo y el que mas cerca estuvo.** Cuatro frases, y las cuatro caen por el mismo sitio.
+
+| lo que el parrafo pone | como lo lee la vara |
+|---|---|
+| **un inventario real de MEDIOS**, tres nombrados uno a uno: *por medios **administrativos, judiciales y alternativos** de solucion de controversias* | **la RESTRICCION 1 se cumple**: son medios, no metas. Aqui `D.27` empieza a mirar, no a descartar |
+| el mandato: *deben alentar el establecimiento de mecanismos **justos, efectivos, transparentes e imparciales*** | **la RESTRICCION 2 lo tumba.** Cuatro adjetivos de adecuacion **en el sitio exacto del criterio**: son la respuesta a *como se yo que el mecanismo esta bien establecido*. `D.27` dice literal que eso tumba **aunque haya inventario** |
+| la segunda frase: *procedimientos oficiales o extraoficiales **que sean rapidos, justos, transparentes, poco costosos y accesibles*** | otros dos medios nombrados y **cinco adjetivos de adecuacion mas** en el sitio del criterio. Es el mismo tumbado, por segunda vez en el mismo parrafo |
+| la tercera: *deben tener especialmente en cuenta las necesidades de los consumidores en situacion vulnerable y de desventaja* | *tener en cuenta* no es un verbo que nadie ejecute, y **el parrafo no nombra ni una de esas necesidades**. Sin inventario no hay nada que transcribir |
+| la cuarta: *vias de recurso que no supongan costos o demoras ni impongan **cargas excesivas** ... ni **cargas excesivas o indebidas*** | *excesivas* e *indebidas* son adecuacion pura, y son el unico criterio que la frase da |
+
+**Y HAY UNA SEGUNDA RAZON, INDEPENDIENTE DE LA PRIMERA, y la digo porque sola bastaria:** *administrativo*, *judicial* y *alternativo de solucion de controversias* **son los nombres de tres procedimientos que viven fuera de este libro**. El texto los nombra y no desarrolla ninguno. Es el caso literal de la vara madre: **NOMBRAR NO ES PROCEDIMENTAR**, *una linea solo cuenta como procedimiento propio si trae procedimiento propio, y no solo el nombre de otro* (`EXTRACTOR.md` seccion 9). **Es el mismo motivo por el que la vuelta 1 dejo fuera el parrafo 22**, que remitia a la resolucion 35/63.
+
+#### Parrafo 38, `cap_03.md:13`. **POSTURA**, y es la llamada mas apretada del capitulo
+
+| lo que el parrafo pone | como lo lee la vara |
+|---|---|
+| *y a crear mecanismos voluntarios, **como servicios de asesoramiento y procedimientos extraoficiales para presentar reclamaciones*** | **DOS medios nombrados uno a uno, y con la formula *como*, que es la misma del parrafo 29** (`cap_02.md:29`), el que si dio nodo. **Por eso este parrafo hay que pensarlo y no despacharlo** |
+| el criterio del mandato: *de forma **rapida, justa, transparente, poco costosa, accesible y exenta de formalidades*** | **SEIS adjetivos de adecuacion seguidos**, la mayor concentracion del libro entero. RESTRICCION 2 |
+| el criterio de los mecanismos: *que **puedan servir de ayuda** a los consumidores* | tampoco aqui hay vara: *servir de ayuda* es un fin, no una prueba |
+
+**LA COMPARACION QUE DECIDE, y la escribo entera porque es donde me la juego.** El parrafo 29 y el 38 tienen la misma forma gramatical y **dan resultados opuestos**, asi que la diferencia tiene que ser decible:
+
+| | parrafo 29 (`cap_02.md:29`), **SI dio nodo** | parrafo 38 (`cap_03.md:13`), **NO** |
+|---|---|---|
+| medios nombrados | **cinco** | **dos** |
+| el criterio del entregable | *informacion **inequivoca*** | *que **puedan servir de ayuda*** |
+| que clase de criterio es | **comprobable**: dos informaciones o se contradicen o no, y se puede mirar. **Por eso el ACTA 1 salvo el paso 7** | **adecuacion**: nadie puede señalar el dia en que un mecanismo dejo de *servir de ayuda* |
+
+**No es que el 38 tenga pocos medios: es que no tiene con que decir si el trabajo quedo bien hecho.** Un procedimiento cuyo criterio de cierre es un adjetivo de adecuacion **no lo cierra nadie**.
+
+**Y la prueba de que no es una excusa la tengo medida en esta misma vuelta:** la seccion 2.E acaba de demostrar que **un parrafo pobre no produce un nodo pobre, produce un nodo inventado** (83 por ciento de puente en el parrafo de una frase). Escribir aqui *abre un servicio de asesoramiento* y *abre un procedimiento extraoficial de reclamaciones* seria fabricar exactamente ese nodo: dos pasos del libro y todo lo demas mio. **Lo marco como DISCUTIBLE 5.**
+
+#### Parrafo 39, `cap_03.md:15`. **POSTURA**
+
+*Se debe **facilitar** a los consumidores informacion sobre los procedimientos vigentes... Se debe **mejorar** el acceso a los mecanismos...*
+
+**Dos mandatos y cero medios.** El parrafo 29 decia *recurriendo a medios como* y abria cinco; este dice *facilitar* y *mejorar* y no abre ninguno. **Y lo unico que nombra, *los medios alternativos de solucion de controversias*, es otra vez el nombre de un procedimiento de fuera.** *Mejorar el acceso* sin decir por que via es el caso de manual de la postura: **una postura no ejecuta una busqueda.**
+
+#### Parrafo 40, `cap_03.md:17`. **POSTURA**
+
+*deben velar por que los procedimientos de solucion colectivos sean **rapidos, transparentes, justos, poco costosos y accesibles***
+
+**Cinco adjetivos de adecuacion y ni un medio.** Es el parrafo 23 otra vez (`cap_02.md:17`, *requisitos razonables*), que el ACTA 1 seccion 3.2 dejo fuera y sostuvo. **Los dos objetos que nombra, el sobreendeudamiento y la quiebra, son casos a los que se aplica el mandato, no etapas de ningun trabajo**: dicen *sobre que*, no *como*. **Y *velar por que* no lo ejecuta nadie**, que es la prueba del manual al reves.
+
+#### Parrafo 41, `cap_03.md:19`. **POSTURA**, y es la segunda llamada apretada
+
+**Aqui hay una lista de tres, nombrados uno a uno, y por eso este parrafo tampoco se despacha:**
+
+> *deben cooperar con las empresas y los grupos de consumidores **a fin de que** los consumidores y las empresas conozcan mejor **[a]** como evitar las controversias, **[b]** cuales son los mecanismos de solucion de controversias y de compensacion de que disponen los consumidores y **[c]** donde pueden presentar reclamaciones los consumidores.*
+
+**LA RESTRICCION 1 LO TUMBA, y la gramatica lo dice sin que haga falta interpretar:** la lista cuelga de ***a fin de que ... conozcan***. Los tres puntos son **lo que la gente tiene que acabar sabiendo**, o sea **el destino**, no el camino. `D.27` restriccion 1: *un inventario de METAS o de FINES no cuenta: **nombrar adonde hay que llegar sigue siendo nombrar***.
+
+**Es la misma forma del parrafo 20** (`cap_02.md:11`), donde la lista de cinco colgaba de *deben tratar de alcanzar las **metas** consistentes en...* y el ACTA 1 la dejo fuera por FINES. **Aqui la palabra es *a fin de que* en vez de *metas*, y es la misma palabra.**
+
+**Y el mandato de verdad, el que lleva el verbo, es *cooperar*, y el parrafo no dice ni una via de cooperacion.** Todo paso que yo escribiese (*escribe el mensaje*, *acuerda el canal*, *difundelo*) **seria mio entero**. **Lo marco como DISCUTIBLE 6**, porque los tres puntos son concretos y escribibles y alguien puede leerlos como objetos de trabajo en vez de como fines.
+
+### 3.C. EL SALDO DE LA FRONTERA
+
+| | |
+|---|---:|
+| unidades leidas | **5** (parrafos 37 a 41) |
+| **procedimientos** | **0** |
+| **posturas** | **5** |
+| candidatos escritos en `cuarentena/onu_consumidor/` por esta tarea | **0** |
+| candidatos que cayeron en la aduana | **0**, porque no se escribio ninguno |
+
+**CERO NODOS, CON SU RAZON ESCRITA ARRIBA, PARRAFO A PARRAFO.** *Una tarea que produce cero nodos con su razon escrita vale tanto como una que produce cinco. Lo que no vale es una tarea sin razon* (encargo, TAREA 3).
+
+**Y NO ES UNA CORAZONADA: ESTA MEDIDO.** El aviso del encargo decia que estos cinco parrafos venian cargados de adjetivos de adecuacion. **Lo conte en vez de creerlo:**
+
+    for c in cap_02 cap_03: grep -oiE '<los 19 adjetivos de adecuacion>' | wc -l
+      cap_02: 761 palabras de cuerpo, 14 adjetivos de adecuacion  ->  1.84 por 100 palabras
+      cap_03: 336 palabras de cuerpo, 20 adjetivos de adecuacion  ->  5.95 por 100 palabras
+
+**`cap_03` tiene TRES VECES Y MEDIA la densidad de adjetivo de adecuacion de `cap_02`.** Y el reparto interno es el que la frontera predice: **cero adjetivos en el parrafo 29**, que dio nodo, y **seis seguidos en el parrafo 38**, que no.
+
+**LO QUE ESTO NO ES:** no es una regla nueva ni una señal nueva, **y no la propongo como umbral de nada** (seccion 13, moratoria de maquinaria). Es una cuenta hecha con `grep` para no publicar una impresion como si fuera una medida. **La decision de cada parrafo la tomo la lectura, uno a uno, arriba.**
+
+### 3.D. LOS TRES CASOS QUE EL MANUAL NOMBRA, contestados aunque salgan en negativo
+
+| caso | veredicto | contra que se lee |
+|---|---|---|
+| **SERIE NUMERADA** (manual 3.4) | **NO LA HAY** | corrido `grep -nE '(^\|[^0-9])[a-z]\)\|^\s*[ivx]+\.'` sobre el cuerpo: **ninguna**. Los unicos numeros son los ordinales de parrafo 37 a 41, que son la numeracion del documento de la ONU y **no una serie de pasos**. **Nada que anotar en `censos/series_y_cabezas.md`** |
+| **CASO O ESTUDIO** (manual 3.5) | **NO LO HAY** | corrido el barrido de nombres propios del cuerpo: los unicos con mayuscula son *Los*, *Se*, *Tales*, *Solucion* (inicio de frase o titulo) y *Estados Miembros*, que es el sujeto normativo del libro entero. **Cero paises, cero empresas, cero ejemplos nombrados.** Nada que meter como ejemplo dentro de ninguna doctrina |
+| **CIFRA DEL AUTOR** (principios 5 y 8) | **NO LA HAY** | corrido `sed -E 's/^[0-9]+\. //' \| grep '[0-9]'` sobre el cuerpo: **CERO digitos**. Ni una tasa, ni un plazo, ni un porcentaje. **Ningun `atribuciones` que escribir.** Contraste util: el mismo comando sobre `cap_02` si devuelve tres (`35/63`, `5`, `1980`), que son la resolucion y su fecha de vigencia, y que la vuelta 1 ya declaro que **son vigencia y no atribucion**. **El instrumento sabe distinguir que hay digitos; quien decide que son es la lectura** |
+
+### 3.E. LA MADRE POR LECTURA, buscada aunque no haya candidato
+
+**Con cero candidatos no hay ninguna arista que declarar**, y lo digo asi en vez de callarlo. **Pero la busqueda de madre se hace por lectura y no por señal** (`D.19`, `D.29`), asi que la hice sobre el material, no sobre una cola vacia:
+
+- **contra los 2 nodos vivos del dataset** (`registrar_fuente_canonica`, `elegir_grafia_clave`, leidos): son de dominio `forja` y hablan del registro de fuentes de esta casa. **Cero parentesco con la solucion de controversias.**
+- **contra los 6 hermanos de cuarentena**, leidos: el mas proximo por materia es `detectar_abusos_contractuales_consumo` (parrafo 26, abusos en el contrato). **Comparte el objeto *contrato de consumo* pero no el trabajo**: uno revisa el clausulado antes del conflicto y `cap_03` va del conflicto ya abierto. **No es madre ni hija de nada de aqui.**
+
+**Y LA CONSECUENCIA QUE SI IMPORTA:** si un dia se extrae un nodo de este apartado V-F, **su madre no estara en `cap_03`**. `cap_03` no despliega ninguna linea que otro parrafo de este libro haya nombrado: es un apartado que abre materia nueva y la deja en postura.
+
+### 3.F. `cap_03` CONTRA `cap_02`, POR PALABRA
+
+*Lo pide el cierre del encargo, punto 2.*
+
+| | `cap_02` | `cap_03` |
+|---|---:|---:|
+| palabras (`wc -w` del fichero entero) | **819** | **389** |
+| unidades (parrafos) | **13** | **5** |
+| candidatos | **6** | **0** |
+| **candidatos por 100 palabras** | **0,73** | **0,00** |
+| una palabra por candidato | **1 cada 136,5 palabras** | **no aplica: cero** |
+| adjetivos de adecuacion por 100 palabras de cuerpo | **1,84** | **5,95** |
+
+**`cap_03` dio MENOS por palabra que `cap_02`: dio cero.** Y la razon esta arriba parrafo a parrafo, no en la tabla.
+
+### 3.G. LA PRUEBA DEL INVENTARIO, ¿me resolvio `cap_03` sola?
+
+*Lo pide el cierre del encargo, punto 3, y pide que si me falto un corte lo marque como discutible y no lo adjudique yo.*
+
+**ME RESOLVIO TRES DE CINCO SOLA Y LIMPIAMENTE:** los parrafos **39, 40 y 37**. En el 39 y el 40 porque no hay inventario que mirar; en el 37 porque la RESTRICCION 2 esta escrita para el caso exacto de un inventario bueno bajo un criterio de adecuacion, **y ademas cae por la vara madre sin necesidad de `D.27`**. Tres cortes sin duda.
+
+**ME DEJO DOS EN EL FILO, Y NO LOS ADJUDICO YO:** el **38** y el **41**, marcados como DISCUTIBLE 5 y DISCUTIBLE 6.
+
+**Y DIGO DONDE ESTA EL FILO EXACTAMENTE, que es lo util para quien tenga que adjudicarlo:**
+
+1. **`D.27` no dice CUANTOS objetos hacen inventario.** El parrafo 29 abrio cinco medios y dio nodo; el 38 abre dos. **Entre cinco y dos hay una raya que ningun documento de esta casa ha escrito**, y yo la puse en el criterio y no en el numero, porque el numero no lo puedo defender con nada citable. **No propongo que se escriba esa raya: aviso de que la use sin tenerla.**
+2. **`D.27` restriccion 1 separa MEDIOS de FINES, y el parrafo 41 es el caso donde la misma lista es las dos cosas segun de que cuelgue.** Los tres puntos son objetos escribibles; **la formula *a fin de que* los convierte en destino.** Me apoye en la gramatica, que es lo mas duro que tenia, **y en el precedente del parrafo 20 que el ACTA 1 ya adjudico**.
+
+**NO PROPONGO MOVER LA VARA NI ENSANCHARLA** (seccion 9.1: *ninguna vuelta la estrecha ni la ensancha sin correccion declarada del fundador*). **Y no es parada**, porque no necesito doctrina nueva para cortar: con la vara vigente los cinco parrafos caen del mismo lado, y lo que traigo es **el margen con que caen dos de ellos**, no una contradiccion.
+
+---
+
+## TAREA 4. EL INFORME DEL LOTE ENTERO Y EL CIERRE DEL LOTE 1. CERRADA
+
+### 4.A. EL INFORME DEL LOTE, corrido al cierre y pegado entero
+
+    $ python forja.py informe --carpeta cuarentena/onu_consumidor
+
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 6
+    nodos en el grafo de destino: 2
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 6
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    ============================================================================
+    LA LISTA COMPLETA, candidato por candidato
+    ============================================================================
+
+    [ENTRARIA] detectar_abusos_contractuales_consumo   (detectar_abusos_contractuales_consumo.json)
+
+    [ENTRARIA] examinar_normas_pesos_medidas   (examinar_normas_pesos_medidas.json)
+
+    [ENTRARIA] formular_codigo_comercializacion_empresarial   (formular_codigo_comercializacion_empresarial.json)
+
+    [ENTRARIA] informar_efectos_ambientales_productos   (informar_efectos_ambientales_productos.json)
+
+    [ENTRARIA] verificar_afirmaciones_ambientales_publicidad   (verificar_afirmaciones_ambientales_publicidad.json)
+
+    [ENTRARIA] vigilar_practicas_comerciales_perjudiciales   (vigilar_practicas_comerciales_perjudiciales.json)
+
+    NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+    entre hace falta python forja.py insertar, uno por vez, con su
+    veredicto escrito por vecino.
+
+| | |
+|---|---:|
+| **ENTRARIAN** | **6** |
+| **BLOQUEARIAN** | **0** |
+| **CAERIAN** | **0** |
+| **CHOCAN entre si** | **0** |
+| **por que guarda caen** | **ninguna: el bloque `POR QUE GUARDA CAEN` no aparece porque no hay a quien clasificar** |
+
+**EL SALDO ES EL MISMO QUE AL CERRAR LA VUELTA 1 (6, 0, 0, 0), Y ESO NO SIGNIFICA QUE NO HAYA PASADO NADA.** Significa **exactamente lo que la seccion 2.C.1 dice**: la aduana mira ids, fuentes, esquema y gemelos, y **no puede ver que un paso lo escribio el extractor en vez del libro**. Los seis JSON de hoy **no son los seis de ayer**: llevan cuatro pasos menos y nueve clausulas reescritas. **Un informe verde antes y despues de una correccion de fondo es la prueba de que la correccion no era trabajo de la aduana, sino de la lectura.**
+
+### 4.B. EL LOTE 1 QUEDA CERRADO, CONTANDO SUS CUATRO FICHEROS UNO A UNO
+
+*Un libro se cierra contando sus cuatro piezas, no tres. La vuelta 1 declaro cola de `cap_03` y no dijo nada de `cap_00`.*
+
+    $ wc -w fuentes/onu_consumidor/*.md
+        171 fuentes/onu_consumidor/cap_00.md
+        376 fuentes/onu_consumidor/cap_01.md
+        819 fuentes/onu_consumidor/cap_02.md
+        389 fuentes/onu_consumidor/cap_03.md
+       1755 total
+
+| # | fichero | unidad | palabras | estado al cierre de la vuelta 2 | candidatos |
+|---|---|---|---:|---|---:|
+| 1 | `cap_00.md` | portada y creditos | **171** | **NO MINABLE POR SER PORTADA.** De aqui salio la ficha de la fuente canonica, que es su unico oficio | **0** |
+| 2 | `cap_01.md` | V-B, parrafos 16 a 19 | **376** | **NO MINADO POR LA MARCA.** `cap_01.md:9` lleva literal *seccion FRONTERA, no se mina en el nucleo*. Leido igual en la vuelta 1, y su vara coincidio con la marca | **0** |
+| 3 | `cap_02.md` | V-C, parrafos 20 a 32 | **819** | **MINADO** en la vuelta 1 y **CORREGIDO** en la vuelta 2. 13 puentes resueltos, de 36 pasos a 32 | **6** |
+| 4 | `cap_03.md` | V-F, parrafos 37 a 41 | **389** | **MINADO EN ESTA VUELTA, CON RESULTADO CERO.** Los 5 parrafos leidos, la frontera publicada: **0 procedimientos y 5 posturas** | **0** |
+| | **TOTAL** | | **1755** | **las cuatro piezas contadas** | **6** |
+
+> ### **EL LOTE 1 (`onu_consumidor`) QUEDA CERRADO EN CUARENTENA.**
+>
+> **Sus cuatro ficheros estan resueltos, cada uno con su estado y su razon: uno no minable, uno no minado por la marca, uno minado y corregido, uno minado con resultado cero.** Ninguno queda en cola.
+>
+> **SEIS CANDIDATOS, CERO INSERCIONES.** El lote esta listo para que el fundador decida, **y esa decision no la toma esta vuelta.**
+
+---
+
+# EL CIERRE DE LA VUELTA 2
+
+### C.1. LA IDENTIDAD, LEIDA DE GIT Y NO TECLEADA
+
+    $ git rev-parse --abbrev-ref HEAD   ->  extraccion-mundo-11
+    $ git log --oneline 4f585ec..HEAD
+      0fb7f00  cap_02 corregido: 13 puentes resueltos en 6 candidatos, cero inserciones
+      9199055  Arranque de la vuelta 2: artefactos del arnes al dia antes de tocar nada
+    $ date                              ->  Thu, Sep 10, 2026 6:35:21 AM
+    $ python -c "from src import aduana; print(aduana._hoy())"   ->  2026-09-10
+
+| | |
+|---|---|
+| commit de apertura | `9199055` |
+| fecha de apertura y de cierre | **2026-09-10** las dos. **Esta vuelta no cruzo la medianoche**, al reves que la vuelta 1 |
+| commits de la vuelta | los de arriba, mas el del cierre |
+
+### C.2. LAS TRES GUARDAS, EN VERDE
+
+    $ python forja.py gate
+      GATE VERDE.
+        nodos verificados: 2
+        guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista,
+                 arista_duplicada, vuelta, cita_incompleta,
+                 deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+
+    $ python forja.py guiones
+      BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python tests/test_aceptacion.py
+      total: 57 pruebas, 0 fallos, 0 errores
+
+    $ python forja.py resolutor
+      nodos vivos: 2 | nodos deprecados (archivo): 0 | alias registrados: 0
+
+**El hook corrio en cada commit de esta vuelta y NO me lo salte ninguna vez.** Y esta vez **su salida va pegada en el cuerpo del commit**, que es lo que el ACTA 1 seccion 4.1 me reclamo. **La prueba no se promete: se pega.**
+
+### C.3. CERO INSERCIONES, MEDIDO Y NO AFIRMADO
+
+    $ git diff --stat 9199055..HEAD -- dataset/ bitacora/ censos/ config/
+      (salida vacia)
+
+    $ wc -l dataset/nodos.jsonl          ->  2
+    $ wc -l bitacora/VEREDICTOS.jsonl    ->  1
+    $ ls cuarentena/onu_consumidor/*.json | wc -l   ->  6
+
+**Ni una linea cambiada en las cuatro sedes que solo escribe la aduana** (seccion 14). **No corri `python forja.py insertar` ni una vez**, ni sobre un candidato perfecto. **La insercion es una autorizacion del fundador, no un default** (`D.26`), **y en esta corrida no la ha dado.**
+
+**Los 2 nodos del dataset son los mismos 2 de la apertura**, y el unico veredicto de la bitacora sigue siendo el de 2026-09-04, anterior al bucle.
+
+### C.4. LO QUE ESTA VUELTA DEJA MEDIDO, punto por punto del encargo
+
+#### 1. Cuantos de los 36 pasos eran PUENTE
+
+**13 de 36, o sea el 36 por ciento.** Cuatro pasos retirados enteros y nueve clausulas reescritas; el lote pasa de **36 a 32 pasos**. Cuenta por candidato en la tabla de **2.E**, del 0 por ciento de `verificar_afirmaciones...` al **83 por ciento** de `examinar_normas_pesos_medidas`.
+
+**Y la lectura que saco, que es la que le faltaba a esta casa:** **el puente sube cuando baja el inventario del parrafo.** Un parrafo pobre **no produce un nodo pobre: produce un nodo inventado.**
+
+#### 2. Si `cap_03` dio mas o menos por palabra que `cap_02`
+
+**Menos: dio cero.** `cap_02` 6 candidatos en 819 palabras (**0,73 por 100 palabras**); `cap_03` **0 en 389** (**0,00**). Tabla entera en **3.F**, con la densidad de adjetivo de adecuacion al lado (**1,84 contra 5,95 por 100 palabras**).
+
+#### 3. Si la prueba del inventario me resolvio `cap_03` sola
+
+**Tres de cinco si, limpiamente** (parrafos 37, 39 y 40). **Dos me quedaron en el filo** (38 y 41) **y NO los adjudico yo: son los DISCUTIBLES 5 y 6.** El corte que me falto esta dicho por su nombre en **3.G**: `D.27` **no dice cuantos objetos hacen inventario**, y la puse en el criterio y no en el numero porque el numero no lo puedo defender con nada citable. **No propongo moverla.**
+
+#### 4. Cuantos candidatos cayeron en la aduana y por que guarda
+
+**CERO CAIDAS.** No hay ninguna salida de caida que pegar, **y lo digo en vez de dejar el hueco**. Lo que si esta pegado, en **2.C.1**, son **las seis salidas de los seis candidatos vueltos a pasar tras la correccion**, caiga o no caiga, que es lo que el encargo pedia.
+
+**CONTRA QUE SE LEE ESE CERO, que es lo que el ACTA 1 seccion 1.8 me reclamo:**
+
+- **contra una puerta que ya se demostro que muerde:** el auditor la mordio a proposito en su seccion 1.5 (mutando la clave de fuente) y obtuvo `1 CAERIAN` con su guarda nombrada. **No es un cero de puerta abierta.**
+- **contra cero candidatos nuevos:** esta vuelta **no escribio ni un candidato nuevo**, asi que el cero de caidas **no mide mi punteria al escribir ids**, sino que seis fichas ya validas siguieron siendolo tras quitarles pasos. **Es un cero mas barato que el de la vuelta 1 y lo digo yo antes de que lo diga nadie.**
+- **contra lo que la aduana no puede ver:** los 13 puentes **no los caza ninguna guarda**. Un informe verde certifica que la ficha esta bien construida, **no que sus pasos sean del libro.**
+
+### C.5. UNA DISCREPANCIA CON UNA CIFRA DEL ACTA 1, DECLARADA Y NO RESUELTA COPIANDO
+
+*Seccion 4: si la medicion de hoy discrepa de una nota previa, **la discrepancia se declara**.*
+
+**EL ACTA 1 publica, en su seccion 1.2 y otra vez en su seccion 7:**
+
+> `wc -l config/pares_mutuos.jsonl` **0 (fichero vacio)** ... | pares mutuos | **0 (fichero vacio)** |
+
+**LO QUE MIDE MI CORRIDA DE HOY:**
+
+    $ ls config/
+      umbrales.json          (es el unico fichero de config/)
+
+    $ wc -l config/pares_mutuos.jsonl
+      /usr/bin/bash: config/pares_mutuos.jsonl: No such file or directory
+
+    $ git log --all -- config/pares_mutuos.jsonl
+      (vacio: nunca ha existido en el historial)
+
+    $ git check-ignore -v config/pares_mutuos.jsonl
+      (no esta ignorado)
+
+**EL FICHERO NO ESTA VACIO: NO EXISTE, Y NO HA EXISTIDO NUNCA.**
+
+**LA CIFRA NO ESTA CONTRADICHA Y LO DIGO PRIMERO:** **pares mutuos = 0 es CORRECTO.** Lo confirma el propio codigo, que preve la ausencia por diseño:
+
+> `src/config.py:34`, `cargar_pares_mutuos`: *"comun.leer_jsonl ya devuelve lista vacia si el archivo no existe todavia (**nadie ha declarado un enlace mutuo aun**)"*
+
+**El fichero nace cuando la aduana escribe el primer par mutuo** (`src/aduana.py:1082`, `comun.agregar_jsonl(ruta_pares_mutuos, mutuo)`). **Cero pares mutuos y cero fichero son el mismo estado**, y el estado esta bien contado.
+
+**LO QUE SI DISCREPA ES LA DESCRIPCION, y por que me molesto en escribirlo:** *fichero vacio* y *fichero que no existe* **imprimen igual en un reporte y no son lo mismo**. Un `wc -l` que falla no devuelve `0`: **no devuelve nada**, y un cero leido de una linea en blanco es un cero que nadie midio. **Es, palabra por palabra, la caida que el propio auditor se declaro en su seccion 4.3:** *un error en la linea de arriba invalida la de abajo aunque la de abajo imprima bien.*
+
+**NO ES PARADA** (seccion 7, repasado): no contradice ninguna regla vigente, **y no contradice la cifra**, que es 0 y sigue siendo 0. **NO LA CORRIJO YO:** `docs/loop/ACTA_AUDITOR.md` es sede del auditor y solo del auditor (**`D.28`**, seccion 14). **La dejo declarada aqui, que es mi sede, y el auditor decide si es caida suya y de que especie.** Yo no adjudico contra el auditor igual que el no escribe en mi reporte.
+
+**Y ME LA APLICO A MI MISMO ANTES QUE A NADIE:** todas las cuentas de ficheros de este reporte estan corridas con `ls` o con `git ls-files`, **no con un `wc -l` sobre una ruta que podria no existir.**
+
+### C.6. LAS PARADAS, REPASADAS UNA A UNA
+
+**NINGUNA SE CUMPLE. No hay parada, y por tanto no hay nada que el auditor tenga que recoger como tal.**
+
+| condicion del encargo | veredicto |
+|---|---|
+| **una regla de la casa me obliga a algo que rompe otra regla** | **NO.** La unica friccion que encontre fue el DISCUTIBLE 2 (el encargo dice *no lo toques de mas* y `D.27` dice *un puente no se queda callado*), **y se resuelve leyendo las dos enteras**: lo salvado era el paso 7 y el paso 7 no lo toque. Va marcado, no escondido |
+| **necesito mover un umbral, una regla de id, el esquema o la vara de continua contra repite** | **NO.** El umbral 0,60 sigue donde estaba **aunque mi arista mida 0,572289**, que es justo el caso en que `D.29` prohibe tocarlo. Cero cambios en `config/umbrales.json`, en `src/` y en `esquema/` |
+| **una adjudicacion del encargo me obliga a escribir un nodo que mi lectura dice que no esta en el libro** | **NO.** El encargo avisaba del material de `cap_03` y decia expresamente que cero nodos con su razon vale tanto como cinco. **No me obligo a nada** |
+
+**Y no escribo `docs/loop/PARA_ALEXIS.md`** (**`D.28`**). No lo he tocado.
+
+### C.7. LO QUE PROPONGO, SIN ADJUDICARME NADA
+
+*Seccion 14: el extractor propone en su reporte y no se adjudica a si mismo.*
+
+1. **Que alguien con sede para ello decida si `D.27` necesita decir algo sobre el TAMAÑO del inventario.** Esta vuelta corto el parrafo 38 con dos medios nombrados y la vuelta 1 admitio el parrafo 29 con cinco. **Yo puse la raya en el criterio y no en el numero, y lo declare** (DISCUTIBLE 5). **No propongo el texto ni propongo una cifra**: propongo que se mire, porque el proximo libro traera el mismo filo.
+2. **Que la pasada de transcripcion se haga en el acto de escribir cada candidato, y no en una vuelta posterior.** Esta vuelta costo una vuelta entera reparar 13 puentes de seis candidatos. **Aplicada al escribir, la vuelta 1 habria salido con 32 pasos y sin deuda.** No es maquinaria: es orden de trabajo, y cabe en la seccion 16 que ya existe.
+
+---
+
+**FIN DEL REPORTE DE LA VUELTA 2.** Cuatro tareas cerradas, **cero inserciones**, **cero paradas**, **13 puentes resueltos con su cita**, **cero candidatos nuevos de `cap_03` con su razon parrafo a parrafo**, **el lote 1 cerrado contando sus cuatro ficheros**, una arista escrita donde no se pierde, una discrepancia declarada contra el acta y **siete discutibles marcados antes de saber si acierto.**
