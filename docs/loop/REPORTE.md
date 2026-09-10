@@ -3733,6 +3733,27 @@ figura ya la habia visto media hora antes en el Cap. 2 sin darle nombre:
 | 3 | `contratar_reclutadores_externos`, 7 | *Dejate educar por ellos sobre el mercado del talento.* | **L383**: *"That's part of what the best of the breed do. THEY EDUCATE YOU about the market for talent."* **Es una descripcion de lo que hacen los buenos, no una instruccion**, y ademas no la ejecuta el lector |
 | 4 | `contratar_investigadores_reclutamiento`, 6 | *Si el flujo te desborda, pideles que criben algo mas a fondo.* | **L391**: *"ONE COMPANY WE KNOW was so overwhelmed... that it finally asked its researchers to screen candidates a little more thoroughly."* El libro **reporta**, no manda |
 
+> **CORRECCION DECLARADA (auditor, ACTA 5 seccion 4.1, 10 sep 2026; anotada por
+> el extractor en la vuelta 6, sin tocar una palabra de la fila original de
+> arriba).** La tabla de 3.e publica **`L391`** como la linea del cuarto puente.
+> **La cita *"One company we know was so overwhelmed... asked its researchers to
+> screen candidates a little more thoroughly"* esta en `cap_03.md` L393**,
+> verificada por el auditor con `grep -n "overwhelmed"` y `sed -n '393p'`. `L391`
+> existe y dice otra cosa (*"The downside with researchers is that they won't
+> qualify candidates as thoroughly as you might like..."*). **Las otras tres citas
+> de la tabla (L313, L343, L383) reproducen exactas, el ejemplar es real, y la
+> especie que sostiene queda ADJUDICADA como QUINTA especie de `D.30`.**
+>
+> **REVERIFICADA POR MI EN LA VUELTA 6, no copiada:** `grep -n "overwhelmed"
+> fuentes/smart_who/cap_03.md` devuelve **una sola linea, la 393**, y
+> `sed -n '391p'` devuelve el parrafo del *downside with researchers*. Las tres
+> citas restantes reabiertas una a una con `sed -n`: L313 abre *"Ryan's approach
+> is among the easiest we have seen..."*, L343 abre *"Our employees became our
+> number-one recruiting technique"*, L383 abre *"That's part of what the best of
+> the breed do."* **Las tres sostienen su fila. La correccion es correcta y el
+> fallo era mio.**
+
+
 **LOS CUATRO RETIRADOS. Ninguno reescrito**, porque no habia nada del libro que
 salvar: el material de los cuatro sigue vivo en el `resumen_teorico` de su nodo,
 **con su dueño delante**, que es donde la seccion 3.5 dice que va un caso.
@@ -4323,3 +4344,70 @@ decision de esta vuelta**: el tramo real de la vuelta es **24.328 palabras**
 **Discutible 1**, y lo pongo el primero por lo que costaria: si el auditor sostiene
 que la unidad incluye la cabecera, **mis dos denominadores de la TAREA 4 quedan mal
 en la fila del Cap. 5**, y con ellos la comparacion de densidad entre capitulos.
+
+---
+
+## TAREA 1. LOS REGISTROS DEL ACTA 5
+
+### 1.a. LA CORRECCION DECLARADA: ANOTADA DONDE VA, NO AQUI
+
+**Queda escrita al lado de la tabla de la seccion 3.e de la vuelta 5**, en su
+sitio del reporte, **sin tocar una palabra de la fila original**. La reverifique
+con el instrumento antes de anotarla en vez de copiarla: `grep -n "overwhelmed"`
+sobre `fuentes/smart_who/cap_03.md` devuelve **una sola linea, la 393**, y
+`sed -n '391p'` devuelve *"The downside with researchers is that they won't
+qualify candidates as thoroughly as you might like."* **La correccion del auditor
+es correcta y el fallo del puntero era mio.** Reabri tambien las otras tres citas
+de esa tabla, una a una, y **las tres sostienen su fila**.
+
+**Y ESTA VUELTA APLICA EL REMEDIO GEMELO, que es lo que de verdad se me pidio:**
+antes de teclear cualquier `L<n>` en este reporte corro `sed -n '<n>p'` sobre el
+fichero y miro que la frase esta ahi. **No hay en esta vuelta una sola cita de
+linea que no se haya reabierto en el acto de escribirla.**
+
+### 1.b. LAS TRES ARISTAS PENDIENTES, EN BLOQUE PROPIO Y TITULADO
+
+*`D.29`: una arista que solo vive en la prosa de un reporte se pierde. Este bloque
+se reescribe entero en cada vuelta hasta que la insercion las cablee.*
+
+| # | arista que la lectura ve | estado |
+|---:|---|---|
+| 1 | **`aplicar_metodo_ghsmart_contratacion` es CABEZA y espera CUATRO hijos.** Entregados: `crear_tarjeta_puntuacion_puesto` (paso 1, Scorecard) y `abastecer_flujo_candidatos` (paso 2, Source) | **PENDIENTE.** Esta vuelta le trae el **TERCERO** (Select) y el **CUARTO** (Sell). **No se cablea:** una arista se cablea contra ids que ya viven, y la cabeza sigue en cuarentena |
+| 2 | **`detectar_metodos_vudu_contratacion` va antes de la cabeza**, por `cap_02.md` L53 | **PENDIENTE Y NO SE CABLEA NUNCA POR CALENDARIO.** Adjudicado en el ACTA 5: la arista es de despliegue, no de orden de lectura |
+| 3 | **El Cap. 3 usa la tarjeta de puntuacion del Cap. 2 en dos de sus seis puntos**: `contratar_reclutadores_externos` la construye y `pedir_referencias_empleados` mete un resultado en ella | **PENDIENTE. Ninguna señal las levanta**, y es el ejemplar de que la jerarquia la busca la lectura (seccion 11) |
+| 4 | **NUEVA DE ESTA VUELTA, y se declara aqui al llegar:** las que el Cap. 4 y el Cap. 5 abran | se anexan al cierre de cada capitulo, en 2.h y 3.h |
+
+**Y LO MISMO QUE HICE EN LA VUELTA 5:** los hijos de esta vuelta se escriben **con
+la cabeza nombrada en su prosa o en sus `condiciones_activacion`**, para que el
+dia de la insercion la arista se cablee por lectura y no por memoria.
+
+### 1.c. LA QUINTA ESPECIE, LLEVADA EN LA CABEZA DESDE EL PRIMER PASO
+
+**No la registro yo en ningun sitio** (la registra Alexis, y el auditor ya se la
+enruto). Lo que hago es **buscarla expresamente**, que es lo que el encargo pide,
+y **declarar aqui, antes de escribir un solo paso, con que la voy a cazar**:
+
+> **EL CASO ASCENDIDO A DOCTRINA.** El libro cuenta lo que alguien **HIZO** y el
+> paso lo escribe como lo que **TU** tienes que hacer. No falta nada y no se
+> cierra nada: **lo que cambia es el sujeto del verbo.**
+>
+> **SU DETECTOR NO ES LA AUSENCIA, ES EL EJECUTOR.** Ante cada paso en tercera
+> persona: **quien lo ejecuta.** Si la respuesta es un nombre propio del libro y
+> no el lector, es caso.
+>
+> **SU FRONTERA, mi propia 3.f, SOSTENIDA:** si el libro **manda el acto** y
+> despues enumera los **medios**, los medios son inventario y se transcriben
+> aunque los ilustre quien los usa; si el libro **no manda nada** y solo cuenta lo
+> que alguien hizo, es **caso** y se retira.
+
+**LA MEDIDA 2 DE LA VUELTA DEPENDE DE ESTE PARRAFO**, asi que lo dejo fechado
+antes del primer candidato: el Cap. 3 descubrio la especie **a posteriori** y pago
+7,55 por ciento. **Este capitulo la lleva delante desde el primer paso.** Si la
+tasa baja, la casa habra medido que nombrar una especie la previene; **si no baja,
+habra medido que no, y lo dire igual.**
+
+**Y LA LINEA DE CRITERIO QUE EL ACTA 5 AÑADE, que aplico desde el primer paso:**
+
+> **UN PARTICULAR DE UN CASO ENTRA EN UN PASO SOLO SI (a) EL LIBRO LO MANDA FUERA
+> DEL CASO, Y (b) EL PASO LO ATRIBUYE EN SU PROPIO TEXTO.** Si falta cualquiera de
+> las dos, se va al `resumen_teorico` con su dueño delante.
