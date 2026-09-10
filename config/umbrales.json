@@ -1,9 +1,11 @@
 {
   "_aviso_del_manual": "LAS SEÑALES DE SUPERFICIE ORDENAN, NUNCA DECIDEN (manual principio 4). Estos numeros mueven la cola de lectura: suben o bajan cuantos vecinos se leen, jamas emiten veredicto. Bajarlos hace leer de mas; subirlos deja pasar gemelos. Ningun ajuste de este archivo puede insertar ni bloquear un nodo por si solo: el veredicto lo escribe siempre una persona.",
+  "_calibracion_vigente": "RECALIBRADOS EL 9 SEP 2026 (tanda B, D.4) contra el catalogo limpio de My-idea, tag catalogo-limpio-v1, 3.169 vivos. La medicion entera, con su distribucion por clase, su banda por tramo y la cola falsa que cada umbral abre, esta en docs/CALIBRACION_D4.md, y las medidas crudas par a par en calibracion/MEDIDAS_CRUDAS.jsonl. Venian de cinco casos plantados; ahora vienen de 671 gemelos adjudicados, 800 pares de jerarquia declarada y 4.000 ajenos.",
   "_medicion_de_la_casa": "Las señales se solapan poco (3 a 6 por ciento entre similitud y paso contra nodo; familia de id midio 50,8 por ciento de precision y vocabulario compartido 3 por ciento). Por eso se corren las tres a la vez y se reportan TODOS los vecinos que superen umbral, con la señal que los levanto.",
-  "umbral_similitud_texto": 0.45,
-  "umbral_familia_id": 0.5,
-  "umbral_paso_contra_nodo": 0.55,
+  "umbral_similitud_texto": 0.35,
+  "umbral_familia_id": 0.3,
+  "umbral_paso_contra_nodo": 0.6,
+  "_maximo_vecinos_reportados": "TOPE DE IMPRESION, NO DE EXIGENCIA. Recorta cuantos vecinos se DETALLAN en la salida; los que quedan fuera van nombrados uno a uno y TODOS piden veredicto. Antes de la tanda B esta clave recortaba la lista de verdad, y con ella la exigencia: un vecino por encima del tope dejaba de necesitar veredicto. Cazado midiendo la cola contra el catalogo de referencia.",
   "maximo_vecinos_reportados": 25,
   "solo_dominio_y_nucleo": false,
   "dominios_nucleo": []

@@ -16,8 +16,8 @@ EXTENSIONES_DE_TEXTO = {
 
 
 def barrer_texto(texto, etiqueta):
-    return ["%s linea %d columna %d: %s (%s)"
-            % (etiqueta, linea, columna, nombre, repr(caracter))
+    return ["%s linea %d columna %d: %s"
+            % (etiqueta, linea, columna, comun.nombrar_guion(caracter))
             for linea, columna, caracter, nombre in comun.buscar_guiones(texto)]
 
 

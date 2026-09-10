@@ -123,6 +123,18 @@ def palabras(texto):
     return [p for p in normalizar_texto(texto).split(" ") if p]
 
 
+def nombrar_guion(caracter):
+    """El nombre de un guion prohibido SIN escribir el caracter.
+
+    Un instrumento que denuncia un guion largo imprimiendo el guion largo
+    ensucia el fichero de su propia salida, y esa salida vive en el repo. Es
+    la misma leccion que obligo a escribir GUIONES_PROHIBIDOS con escapes, un
+    piso mas arriba: LA DENUNCIA NO PUEDE COMETER LO QUE DENUNCIA.
+    """
+    return "%s (U+%04X)" % (GUIONES_PROHIBIDOS.get(caracter, "guion prohibido"),
+                            ord(caracter))
+
+
 def buscar_guiones(texto):
     """Devuelve [(linea, columna, caracter, nombre)] de guiones prohibidos."""
     hallazgos = []

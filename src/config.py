@@ -9,9 +9,9 @@ tambien esta escrito en src/aduana.py, donde se usa.
 from . import comun
 
 POR_DEFECTO = {
-    "umbral_similitud_texto": 0.45,
-    "umbral_familia_id": 0.5,
-    "umbral_paso_contra_nodo": 0.55,
+    "umbral_similitud_texto": 0.35,
+    "umbral_familia_id": 0.3,
+    "umbral_paso_contra_nodo": 0.6,
     "maximo_vecinos_reportados": 25,
     "solo_dominio_y_nucleo": False,
     "dominios_nucleo": [],

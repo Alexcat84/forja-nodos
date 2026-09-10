@@ -108,6 +108,15 @@ def a_forma_de_forja(crudo, fecha_fuente="2026-09-09"):
     for origen, destino in CAMPOS.items():
         if origen in crudo:
             nodo[destino] = crudo[origen]
+    # `condiciones_activacion` es LISTA en My-idea (3.853 de 3.853, contado) y
+    # TEXTO en el esquema de la forja. Se unen con punto y espacio. Es la unica
+    # diferencia de FORMA entre los dos esquemas, y se arregla en el mapeo
+    # porque el esquema no se toca: cambiar el esquema para que entre un lote
+    # importado seria la casa reescribiendo su ley por conveniencia.
+    condiciones = nodo.get("condiciones_activacion")
+    if isinstance(condiciones, list):
+        nodo["condiciones_activacion"] = ". ".join(
+            str(c).strip().rstrip(".") for c in condiciones if str(c).strip()) + "."
     nodo.setdefault("pasos_accionables", [])
     nodo.setdefault("nodos_previos", [])
     nodo.setdefault("nodos_siguientes", [])

@@ -207,7 +207,8 @@ def validar_candidato(nodo, tabla_fuentes=None, esquema_nodo=None):
     fallos = []
     for campo, texto in comun.textos_de_nodo(nodo):
         for _, columna, caracter, nombre in comun.buscar_guiones(texto):
-            fallos.append("%s columna %d: %s (%s)" % (campo, columna, nombre, repr(caracter)))
+            fallos.append("%s columna %d: %s"
+                          % (campo, columna, comun.nombrar_guion(caracter)))
     if fallos:
         raise Rechazo("guiones prohibidos en el texto del candidato", fallos)
 
@@ -396,7 +397,20 @@ def buscar_vecinos(candidato, nodos, umbrales=None):
             vecinos.append(medicion)
     vecinos.sort(key=lambda v: max(_ordenable_de_senal(x) for x in v["senales"].values()),
                  reverse=True)
-    return vecinos[:int(umbrales.get("maximo_vecinos_reportados", 25))]
+    # SE DEVUELVEN TODOS. El tope de config/umbrales.json es de IMPRESION, no de
+    # exigencia: recorta cuantos se DETALLAN en la salida, jamas cuantos piden
+    # veredicto.
+    #
+    # Antes de la tanda B esta linea era `return vecinos[:tope]`, y era un
+    # defecto de la especie que esta casa mas persigue: el propio
+    # config/umbrales.json promete que "se reportan TODOS los vecinos que
+    # superen umbral", y el codigo se quedaba con veinticinco SIN DECIRLO. Y la
+    # mitad grave no era el recorte: era que `faltan` se computaba sobre la
+    # lista recortada, asi que un vecino numero veintiseis dejaba de necesitar
+    # veredicto. Un recorte silencioso no ordenaba la cola: le bajaba el
+    # liston. Cazado midiendo la cola contra el catalogo de referencia
+    # (docs/CALIBRACION_D4.md).
+    return vecinos
 
 
 # ----------------------------------------------------------------- veredictos
@@ -804,7 +818,16 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
                         % len(vecinos))
         resultado.decir("  Las señales ordenan, nunca deciden (manual principio 4):")
         resultado.decir("  esta cola es para leer, no un veredicto.")
-        for vecino in vecinos:
+        tope = int(umbrales.get("maximo_vecinos_reportados", 25))
+        if len(vecinos) > tope:
+            # EL RECORTE SE DECLARA, NUNCA SE APLICA EN SILENCIO. Solo recorta
+            # cuantos se DETALLAN: los %d de arriba siguen pidiendo veredicto.
+            resultado.decir("")
+            resultado.decir("  AVISO: esta salida DETALLA los %d primeros de %d. Los %d "
+                            "restantes van nombrados al final, y TODOS piden veredicto: "
+                            "el tope de config/umbrales.json es de impresion, no de "
+                            "exigencia." % (tope, len(vecinos), len(vecinos) - tope))
+        for vecino in vecinos[:tope]:
             resultado.decir("")
             resultado.decir("  vecino %s  [%s]" % (vecino["id"], vecino["titulo"]))
             resultado.decir("    levantada por: %s" % ", ".join(vecino["levantada_por"]))
@@ -823,6 +846,15 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
             if vecino["detalle_paso"]:
                 resultado.decir("    %s" % vecino["detalle_paso"])
 
+        if len(vecinos) > tope:
+            resultado.decir("")
+            resultado.decir("  LOS %d QUE ESTA SALIDA NO DETALLA, nombrados uno a uno "
+                            "porque tambien piden veredicto:" % (len(vecinos) - tope))
+            for vecino in vecinos[tope:]:
+                resultado.decir("    %s  [levantada por: %s]"
+                                % (vecino["id"], ", ".join(vecino["levantada_por"])))
+
+        # LA EXIGENCIA CUBRE A TODOS LOS VECINOS, no a los que se imprimieron.
         faltan = [v["id"] for v in vecinos if v["id"] not in veredictos]
         if faltan and interactivo:
             for vecino_id in faltan:

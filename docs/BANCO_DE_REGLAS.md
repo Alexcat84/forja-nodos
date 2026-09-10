@@ -287,3 +287,76 @@ su texto, y remite a la vara de siempre: CONTINUA o REPITE.
 Fundir un enlace mutuo legitimo es el error caro (borra dos procedimientos
 para dejar un nodo con dos lineas sueltas). Blanquear un solape como enlace
 mutuo es el error barato y silencioso, **y es el que esta guarda caza.**
+
+## D.18. Un umbral se juzga contra la COLA, no contra la mediana (9 sep 2026, TANDA B)
+
+**Regla madre:** My-idea, la recalibracion de `costuras_internas.py` del 15 ago
+2026, averia (b): *el p50 de la señal nueva es 45,8, o sea que el umbral quedo
+POR DEBAJO DE LA MEDIANA. Disparar deja de ser noticia.*
+
+**Lo que esta forja añade, y lo añade porque la vara heredada NO lo habria
+cazado.** Medidos contra la mediana de la poblacion que no debe disparar, los
+tres umbrales de la v0.2 salian **SANOS** (0,45 contra 0,198; 0,50 contra 0,000;
+0,55 contra 0,412). Y aun asi la señal `paso_contra_nodo` estaba mal puesta:
+su umbral 0,55 caia **dentro del uno por ciento superior de la poblacion ajena**
+(p99 0,524, maximo 0,652), que sobre 3.169 vivos son **14,3 vecinos falsos por
+candidato**, unas 2.400 lecturas de ruido en un lote de 167.
+
+> **UN UMBRAL NO SE JUZGA CONTRA LA MEDIANA DE LO QUE NO DEBE DISPARAR, SINO
+> CONTRA SU COLA.** La cifra que decide es **cuantos vecinos falsos abre por
+> candidato**, y se calcula multiplicando la tasa de disparo de la poblacion
+> ajena por el tamaño del catalogo.
+>
+> **La mediana dice si el umbral es absurdo; la cola dice si es usable.**
+
+**LO QUE OBLIGA**
+
+| | |
+|---|---|
+| **1** | todo umbral publicado lleva al lado **su cola falsa por candidato**, medida sobre una poblacion ajena y multiplicada por el tamaño del catalogo vigente |
+| **2** | la cola se recalcula cuando el catalogo crece de orden de magnitud: **el mismo umbral que era usable con 3.000 nodos entierra la cola con 30.000** |
+| **3** | ningun umbral se mueve sin volver a publicar las tres cifras de su clase (que caza, que deja pasar, que cola abre), y la medicion se recomputa de `calibracion/MEDIDAS_CRUDAS.jsonl` |
+
+Calibracion vigente y sus cifras: `docs/CALIBRACION_D4.md`. Los valores del
+9 sep 2026 son **similitud de texto 0,35; familia de id 0,30; paso contra nodo
+0,60**, medidos sobre 671 gemelos adjudicados, 800 pares de jerarquia declarada
+y 4.000 ajenos del catalogo limpio de My-idea.
+
+> **CORRECCION DECLARADA A D.4 (9 sep 2026), y el texto de D.4 queda en pie
+> arriba porque una correccion que tapa lo que corrige no se puede auditar.**
+> D.4 decia que los umbrales estaban medidos sobre **cinco casos plantados** y
+> que se recalibrarian con el primer libro de verdad. **Ese dia llego**: la
+> recalibracion esta hecha contra un catalogo de 3.169 vivos auditado par a par,
+> y los tres valores cambiaron. Lo que D.4 pedia (*el recalibrado se declara
+> aqui con su fecha y con los casos que lo movieron*) se cumple en
+> `docs/CALIBRACION_D4.md`.
+
+## D.19. La aduana caza duplicados; la jerarquia la caza la LECTURA (9 sep 2026, TANDA B)
+
+**Medido, no supuesto.** Sobre el catalogo limpio, **ninguna de las tres señales
+separa un par de jerarquia declarada de un par al azar**:
+
+| señal | p50 de la JERARQUIA declarada | p50 de los AJENOS |
+|---|---:|---:|
+| similitud_texto | 0,213 | 0,198 |
+| paso_contra_nodo | 0,439 | 0,412 |
+
+Y no se arregla bajando umbrales: para levantar el 40 por ciento de la jerarquia
+haria falta poner `paso_contra_nodo` en 0,45, y ahi la cola falsa es de **523
+vecinos por candidato**. Se leeria ruido, no jerarquia.
+
+> **UN CANDIDATO QUE ENTRA CON LA COLA VACIA NO ESTA CERTIFICADO COMO SIN MADRE:
+> ESTA CERTIFICADO COMO SIN GEMELO.** La jerarquia se busca POR LECTURA, no por
+> señal: cuando el candidato despliega algo que el libro ya nombro en una linea,
+> el extractor busca esa madre y declara la arista, aunque ninguna señal la haya
+> levantado.
+
+**LA PRECISION QUE IMPIDE LEER ESTO MAS ANCHO DE LO QUE ES:** la clase medida es
+**arista declarada**, que es mucho mas ancha que la figura del hijo (la madre que
+nombra en una linea lo que el hijo despliega en siete). La mayoria de las aristas
+de aquel catalogo son secuencia de proceso. **La figura estrecha SI la caza la
+señal 3**: el fixture del hijo de esta casa mide 0,658, por encima del p99 de la
+jerarquia general (0,644), y por eso el umbral se puso en 0,60 y no en 0,70.
+
+Es el principio 4 del manual medido en casa propia: **las señales de superficie
+ordenan, nunca deciden.**

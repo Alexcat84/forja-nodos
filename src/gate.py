@@ -202,7 +202,7 @@ def verificar(nodos=None, tabla_fuentes=None, esquema_nodo=None, pares_mutuos=No
             for hallazgo in comun.buscar_guiones(texto):
                 fallos.append(Fallo(
                     "guiones", identificador,
-                    "%s contiene %s (%s)" % (campo, hallazgo[3], repr(hallazgo[2]))))
+                    "%s contiene %s" % (campo, comun.nombrar_guion(hallazgo[2]))))
 
     # Aristas: todo se compara TRAS RESOLVER (manual principio 3)
     #

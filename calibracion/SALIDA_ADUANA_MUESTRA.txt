@@ -1,0 +1,65 @@
+==============================================================================
+LA ADUANA CONTRA EL CATALOGO LIMPIO: 50 nodos vivos
+==============================================================================
+grafo de referencia : 1b12832392469afd2ac42775d606e4dfd443ab43 (catalogo-limpio-v1)
+semilla de la muestra: 20260909
+umbrales de la corrida: similitud 0.45 | familia 0.50 | paso 0.55
+dataset de destino  : vacio y de usar y tirar (los candidatos se miden
+                      entre ellos, que es el caso mas exigente)
+
+EL SALDO
+  ENTRARIAN sin leer nada         : 35
+  BLOQUEARIAN (cola de lectura)   : 0
+  CHOCAN entre si                 : 0
+  CAERIAN (RECHAZO)               : 15
+
+  ACEPTADOS = ENTRARIAN + BLOQUEARIAN = 35 de 50  (70.0 por ciento)
+
+LAS CAIDAS, POR GUARDA Y POR ESPECIE
+
+  13  el candidato rompe docs/REGLAS_DE_ID.md
+      especie: DOCTRINA (regla de esta casa, no se mueve sin el fundador)
+      accion_correctiva_2
+         id 'accion_correctiva_2': sufijo numerico prohibido (regla 2 de docs/REGLAS_DE_ID.md)
+      buen_lugar_para_trabajar
+         id 'buen_lugar_para_trabajar': preposicion o articulo prohibido: para (regla 3)
+      founder_ceo_succession_process
+         id 'founder_ceo_succession_process': palabra fuera del castellano: process (regla 1). El termino en otro idioma va en denominaciones.otros_idiomas
+      four_actions_framework_lado_cliente
+         id 'four_actions_framework_lado_cliente': palabra fuera del castellano: framework (regla 1). El termino en otro idioma va en denominaciones.otros_idiomas
+      leverage_en_negociacion_con_vcs
+         id 'leverage_en_negociacion_con_vcs': preposicion o articulo prohibido: con, en (regla 3)
+      marco_nist_cybersecurity_framework
+         id 'marco_nist_cybersecurity_framework': palabra fuera del castellano: framework (regla 1). El termino en otro idioma va en denominaciones.otros_idiomas
+      paso1_libre_de_sustancias_x
+         id 'paso1_libre_de_sustancias_x': preposicion o articulo prohibido: de (regla 3)
+      pensar_en_grande_empezar_pequeno
+         id 'pensar_en_grande_empezar_pequeno': preposicion o articulo prohibido: en (regla 3)
+      ... y 5 mas
+
+  2  guiones prohibidos en el texto del candidato
+      especie: CALIBRACION o MAPEO (se arregla midiendo)
+      restricciones_extremas_como_innovacion
+         resumen_teorico columna 141: guion largo (U+2014)
+         resumen_teorico columna 172: guion largo (U+2014)
+      sistemas_alta_confiabilidad_hro
+         titulo columna 44: guion largo (U+2014)
+
+LA VARA: un catalogo auditado que la aduana rechazara en masa seria la
+aduana mal calibrada. Aceptados el 70.0 por ciento.
+
+==============================================================================
+EL BARRIDO ENTERO SOBRE LOS 3169 VIVOS (contado, no estimado)
+==============================================================================
+  ids que rompen docs/REGLAS_DE_ID.md : 917 de 3169  (28.9 por ciento)
+        768  preposicion o articulo
+         93  fuera del castellano
+         48  sufijo numerico
+          8  una sola pieza
+  nodos con guion largo o medio en su texto : 48 de 3169  (1.5 por ciento)
+
+  VIVOS QUE PASARIAN LAS DOS GUARDAS DE DOCTRINA: 2222 de 3169 (70.1 por ciento)
+
+  NINGUNA de estas dos guardas es de CALIBRACION: son reglas de esta
+  casa (D.12 y docs/REGLAS_DE_ID.md), mas estrictas que las que aquella
+  campaña aplico. Moverlas no es medir: es decision del fundador.
