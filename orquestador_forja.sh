@@ -12,11 +12,11 @@
 #   - rol inicial por medicion, no por costumbre
 #   - parada por docs/loop/PARA_ALEXIS.md
 #
-# LO QUE ESTE ARNES NO TRAE, y se dice para que nadie lo busque: EL CRITERIO DE
-# EXTRACCION. docs/loop/EXTRACTOR.md y docs/loop/AUDITOR_FORJA.md estan en
-# BORRADOR EN ESPERA DE LA COSECHA (docs/COSECHA_2026-09.md), y sus secciones de
-# criterio estan vacias a proposito. Esto es fontaneria: mueve turnos, no decide
-# nada sobre nodos.
+# EL CRITERIO NO VIVE AQUI, Y DESDE EL 9 SEP 2026 YA ESTA ESCRITO: vive en
+# docs/loop/EXTRACTOR.md (secciones 9 a 14) y docs/loop/AUDITOR_FORJA.md
+# (secciones 5 a 7), que salieron de borrador con la cosecha
+# (docs/COSECHA_2026-09.md seccion 7) y la calibracion (docs/CALIBRACION_D4.md).
+# Este fichero sigue siendo fontaneria: mueve turnos, no decide nada sobre nodos.
 #
 # SE DETIENE SOLO SI: existe docs/loop/PARA_ALEXIS.md, no hay prompt siguiente,
 # se alcanza MAX_VUELTAS, o una invocacion falla MAX_INTENTOS veces seguidas por

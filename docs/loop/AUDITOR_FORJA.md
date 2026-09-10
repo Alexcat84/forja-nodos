@@ -1,20 +1,14 @@
 # AUDITOR_FORJA.md, protocolo del auditor del bucle del extractor
 
-> # BORRADOR EN ESPERA DE LA COSECHA
+> # DOCUMENTO VIGENTE desde el 9 sep 2026
 >
-> **Este documento esta INCOMPLETO A PROPOSITO.** Trae la FONTANERIA (el ciclo de
-> la vuelta, la verificacion, la disciplina del dictado y las condiciones de
-> parada), **la METRICA DE CREDITO ya escrita** (seccion 5, TANDA A del 4 sep
-> 2026), y **deja vacias, con su puntero, las dos secciones de CRITERIO que
-> siguen sin decidirse**: con que vara se adjudica una discrepancia (seccion 6)
-> y cuantos SANOS se releen por tanda (seccion 7).
+> **Nacio en BORRADOR el 4 sep 2026**, con sus secciones de criterio vacias a la
+> espera de la cosecha y de la calibracion. **Las dos ocurrieron el 9 sep 2026**
+> (`docs/COSECHA_2026-09.md` seccion 7 y `docs/CALIBRACION_D4.md`), asi que las
+> secciones 5, 6 y 7 estan ESCRITAS y la marca de borrador se retira.
 >
-> **Lo que falta espera a `docs/COSECHA_2026-09.md` fase 2** (calibracion de
-> umbrales contra el grafo final de My-idea) **y a los casos propios de esta
-> casa**: una vara sin sus ejemplares se estrecha sola, y la forja todavia no
-> ha adjudicado ni un par.
->
-> Una seccion vacia aqui es una decision que no se ha tomado, no un olvido.
+> Lo que sigue faltando y se dice: **los ejemplares de la vara son prestados**.
+> Esta casa no ha adjudicado ni un par, y la seccion 6.3 dice que hacer con eso.
 
 ---
 
@@ -182,7 +176,7 @@ medir", el bucle no ha arrancado nunca y la primera vuelta empieza midiendo.
 
 ---
 
-# SECCIONES DE CRITERIO, VACIAS EN ESPERA DE LA COSECHA
+# EL CRITERIO, ESCRITO EL 9 SEP 2026
 
 ## 5. LA METRICA DE CREDITO
 
@@ -238,25 +232,133 @@ frase mientras los datos estaban intactos.
 - **La racha NO se reinicia sola.** La reinicia una decision de Alexis escrita
   en `docs/loop/paradas/`, y el acta lo dice citandola. Un auditor que pone su
   propia racha a cero se esta absolviendo.
+
+### 5.5. Las cuatro clausulas de la cosecha final (9 sep 2026)
+
+**ROMPER UN REMEDIO ESCRITO ACUMULA** (cosecha 7.D, My-idea 5 sep 2026). Si una
+caida tenia remedio escrito y el remedio se rompio o se apago, **eso acumula como
+caida para la parada**, sea de quien sea.
+
+**LA CAIDA DEL AUDITOR GANA DIENTES** (cosecha 7.D). **Tres actas seguidas con la
+misma caida propia obligan a que el acta siguiente ABRA con su remedio como tarea
+bloqueante del propio auditor.** Declararse sin remediar deja de ser gratis. Lo
+dijo el beneficiado en aquella casa: *las caidas del auditor se declaran pero no
+acumulan para ninguna racha, asi que la mia puede repetirse sin consecuencia
+escrita. Es un agujero de la doctrina y lo digo yo, que soy el beneficiado.*
+
+**LA RUTA QUE PROMETE PRUEBA ES CIFRA** (cosecha 7.B). Una ruta publicada como
+evidencia de una corrida **cuenta como CIFRA PUBLICADA en su sede**. Si apunta a
+un fichero inexistente o de **cero bytes**, es caida de cifra. El arnes ya lo
+vigila por su cuenta: un testigo en cero bytes cuenta como turno mudo.
+
+**LA GUARDA QUE NO MUERDE ES CIFRA** (cosecha 7.C). Una guarda publicada como
+mordiendo que no muerde **es cifra publicada falsa**. Por eso toda guarda que el
+reporte declare mordiendo **se re corre por mutacion**: se cambia el valor
+esperado y se comprueba que CAE. Si no hay nada que mutar, **se declara que no hay
+caso rojo automatico**, y esa declaracion es lo que se publica.
+
+**LA SERIE NO DOBLA SIN TECHO** (cosecha 7.G). Una discrepancia en un tramo **SIN
+discutibles marcados NO rompe el credito**: la comparacion que la regla supone no
+existe ahi. Y **la relectura al doble tiene techo**: el exceso se declara y se
+reparte en tramos siguientes, **nunca se dobla**. Una regla de castigo sin techo
+se come el trabajo que vigila.
 - **LA ESCALADA SE ENCARGA, NO SOLO SE DECLARA** (seccion 1, punto 4): si la
   racha llega a su penultimo escalon y ya existe un remedio autorizado, se
   encarga **en el mismo acta**, como tarea bloqueante.
 
+### 5.6. LAS SEDES: donde escribes tu y donde no
+
+*Regla madre: My-idea, ratificacion del fundador del 9 sep 2026. Cosecha 7.E.*
+
+> **`PROMPT_SIGUIENTE.md`, `ACTA_AUDITOR.md` y `PARA_ALEXIS.md` son SEDE DEL
+> AUDITOR. El extractor PROPONE en su reporte.**
+
+Y su complemento del 5 sep: **el asunto de un commit NO es sede de cifra.** Las
+sedes de cifra publicada son las escritas en 5.2, y ninguna mas.
+
+**LA MORATORIA DE MAQUINARIA TAMBIEN TE ALCANZA** (cosecha 7.F): **no encargues
+arneses, guardas ni lectores nuevos** salvo que una caida de dato lo exija con su
+cita. El trabajo de una vuelta es extraer nodos. **El bucle se volvio el bucle**
+es una averia con nombre y fecha, y le costo a la otra casa cuatro vueltas.
+
 ## 6. LA VARA CON LA QUE ADJUDICAS UNA DISCREPANCIA
 
-> **VACIA.** Puntero: `docs/COSECHA_2026-09.md` seccion 1.A.
+**ESCRITA el 9 sep 2026.** Sale del borrador con la cosecha y la calibracion
+delante.
+
+### 6.1. La vara madre: continua o repite, con direccion y sin bascula
+
+Manual seccion 4. La pregunta es UNA: **el candidato CONTINUA el trabajo del
+existente o lo REPITE.**
+
+| | |
+|---|---|
+| **TIENE DIRECCION** | se pregunta que añade el HIJO a la MADRE, **nunca al reves** |
+| **NO TIENE BASCULA** | el tamaño del solape no decide; **decide si lo que queda fuera es procedimiento en los dos lados** |
+| **NOMBRAR NO ES PROCEDIMENTAR** | una segunda linea solo cuenta como expansion si trae procedimiento propio, no solo el nombre de otro (`P.5.1` de My-idea, congelada el 3 sep 2026) |
+| **UNA ADVERTENCIA ES LINEA** | una postura no ejecuta una busqueda; un mapa sin sentidos no es medio mapa |
+| **LA ARISTA NO EXCULPA** | una de cada nueve duplicaciones de aquella casa tenia la arista puesta. El cable dice que alguien vio la relacion, no que los nodos hagan cosas distintas |
+| **DOS DOCTRINAS LEGITIMAS NO SON DUPLICADO** | son FRONTERA DECLARADA: se escriben las dos posiciones con sus fuentes. Una frontera se pierde por poda, no por fusion |
+
+### 6.2. Cuando dos lecturas del mismo par se contradicen
+
+**`P.17`, LA LECTURA VENCE AL METADATO** (My-idea, 14 ago 2026): gana la que
+**leyo los pasos y publico frontera**, no la que argumento por fuente, formato o
+familia. La perdedora **se corrige por correccion declarada, sin borrar**.
+
+**Y su gemela de esta casa, D.19, medida el 9 sep 2026:** ninguna señal separa
+jerarquia de ruido. **Asi que una discrepancia NUNCA se adjudica citando una
+señal.** Se adjudica leyendo los pasos. La señal dijo donde mirar y ahi acabo su
+trabajo.
+
+**ENTRE DOS REGLAS FECHADAS QUE CHOCAN gana la mas reciente** (D.13), y la
+perdedora se corrige sin borrarse.
+
+### 6.3. Los ejemplares, que hoy son prestados y se dice
+
+**Esta casa no ha adjudicado ni un par todavia.** Los cuatro ejemplares que
+congelan `P.5.1` son de la otra casa (`052` y `095` aceptan, `122` y `100`
+excluyen), y esta vara vive de ellos.
+
+> **LA PRIMERA TANDA DE VEREDICTOS PROPIOS TRAE SUS CASOS, y entonces esta
+> seccion se reescribe con ellos delante.** Una regla sin sus casos se estrecha
+> sola, y eso costo cuatro caidas de clase en dos tandas alli.
 >
-> Lo que falta: la vara de la forja para decidir entre dos lecturas opuestas del
-> mismo par, con sus ejemplares propios. La forja tiene el criterio del manual
-> (seccion 4: continua o repite, con direccion y sin bascula) pero **no tiene
-> todavia ni un solo caso propio adjudicado**, y una vara sin sus casos se
-> estrecha sola.
+> **NINGUNA VUELTA ESTRECHA NI ENSANCHA ESTA VARA SIN CORRECCION DECLARADA DE
+> ALEXIS.** Si una lectura pide mover la frontera, **eso es parada y se trae**.
+> Esa es justamente la enfermedad que la congelacion vino a curar.
+
+### 6.4. Lo que la adjudicacion no es
+
+**ADJUDICAR NO ES MEDIR** (seccion 2). Y **una discrepancia en un tramo SIN
+DISCUTIBLES MARCADOS no rompe el credito de tanda**: la comparacion que la regla
+supone no existe ahi (7.G de la cosecha). Se registra, se adjudica, y no acumula.
 
 ## 7. LA MUESTRA PINEADA DE LOS SANOS
 
-> **VACIA.** Puntero: manual seccion 6 y `docs/FLUJO_DE_EXTRACCION.md` fase 4.
->
-> Lo que falta: cuantos `SANO` se releen por tanda y con que criterio se eligen.
-> El manual manda la muestra pineada (*el error de dejar pasar tiene tasa y
-> banda, o no esta medido*) pero no dice el tamaño, y esta casa no tiene todavia
-> volumen para fijarlo.
+**ESCRITA el 9 sep 2026.**
+
+> **El error de dejar pasar tiene tasa y banda, o no esta medido** (manual
+> seccion 6).
+
+La relectura ciega empieza por los discutibles marcados, que son los que el
+extractor DUDO. La muestra pineada mide el otro error: **los que no dudo.**
+
+| | |
+|---|---|
+| **que se relee** | los veredictos **SANO** de la tanda, que son los que dejaron entrar un nodo sin arista y sin fusion |
+| **cuantos** | **el mayor entre TRES y el 20 por ciento de los SANO de la tanda**, con techo de VEINTE por acta |
+| **como se eligen** | al azar con semilla escrita en el acta, **no a ojo**: elegir a ojo mide lo que el auditor ya sospecha |
+| **que se publica** | cuantos se releyeron, cuantos se sostienen, cuantos caen, **y la tasa con su banda**. Una tasa sin banda es media cifra |
+
+**EL TECHO NO ES COMODIDAD, ES DOCTRINA** (7.G de la cosecha): **la relectura
+tiene techo y el exceso se reparte en tramos siguientes, nunca se dobla.** Una
+regla de castigo sin techo se come el trabajo que vigila, y alli la serie llego a
+480 pares antes de que alguien la parara.
+
+**UN SANO SIN RAZON ESCRITA ES UNA CAIDA, aunque acierte** (D.8). No hace falta
+releerlo para saberlo: se ve en la bitacora.
+
+**MIENTRAS LA FORJA TENGA MENOS DE TRES SANO POR TANDA**, esta seccion se cumple
+releyendo todos, y el acta lo dice con su cifra. **No se inventa una muestra
+donde no hay poblacion.**
