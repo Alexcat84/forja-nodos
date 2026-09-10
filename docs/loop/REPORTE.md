@@ -7560,6 +7560,10 @@ de donde salen las N, con las filas de la serie contadas.**
 
 (se anexan aqui segun aparecen, no al final)
 
+| # | donde | en una linea |
+|---:|---|---|
+| 1 | TAREA 3.A, `cap_01.md` L97 | descarto el racimo *You try something / figure out / file away / Rinse, repeat* pese a ser cuatro etapas nombradas en orden: **sin objeto de trabajo los tres pasos los pondria yo** |
+
 ---
 
 ## TAREA 2. LAS COMPROBACIONES DE APERTURA Y EL MAPA DEL LIBRO
@@ -7703,4 +7707,129 @@ Comando corrido hoy, y la tabla se imprime desde el, no se teclea (`EXTRACTOR.md
 
 **CERRADA, con cero discrepancias en las cuatro comprobaciones que el encargo pide y
 cero en el mapa de los doce.** Nada que declarar, nada que detenga.
+
+---
+
+## TAREA 3.A. LA `Introduction` (`cap_01.md`), CON SU FRONTERA PUBLICADA ANTES DE CORTAR
+
+### 3.A.1. La frontera, recorrida por cobertura y no listada de cabeceras
+
+**El metodo es el que funciono en la vuelta 8, no el que fallo:** no listo cabeceras,
+**recorro el fichero y compruebo que las piezas cubren el rango sin hueco y sin solape.**
+La comprobacion se escribe aqui, no se promete.
+
+    rango del cuerpo: L9 a L133
+    lineas con texto en el rango: 63
+    lineas con texto cubiertas : 63
+    HUECOS (linea con texto sin pieza): []
+    SOLAPES: []
+    suma de piezas: 2917
+    cuerpo entero  : 2917
+
+**Dos comprobaciones independientes y las dos cierran: 63 de 63 lineas con texto
+cubiertas, y la suma de palabras de las diez piezas da 2.917, exactamente el cuerpo.**
+**Diferencia: CERO.** Una pieza olvidada habria bajado las dos cifras a la vez.
+
+| pieza | lineas | palabras | que es |
+|---|---|---:|---|
+| P1 | L9 a L15 | 11 | cabecera de unidad y el rotulo de la ilustracion (`THE MYTH` / `THE REALITY`) |
+| P2 | L17 a L27 | 183 | la escena en que su jefa le propone ser manager |
+| P3 | L29 a L31 | 4 | separador |
+| P4 | L33 a L51 | 320 | la primera reunion con un subordinado directo |
+| P5 | L53 a L55 | 4 | separador |
+| P6 | L57 a L77 | 789 | la biografia hasta llegar a diseniadora en Facebook |
+| P7 | L79 a L91 | 429 | los primeros meses de manager y sus tres primeras veces |
+| P8 | L93 a L99 | 282 | hoy, y de quien ha aprendido |
+| P9 | L101 a L113 | 461 | el blog y por que escribe el libro |
+| P10 | L115 a L133 | 434 | la tesis del libro y la despedida |
+| **10 piezas** | **L9 a L133** | **2.917** | |
+
+**Las diez filas salen de la lista de piezas del recorrido, contadas: 10**
+(remedio 1.a, hermana tercera).
+
+**Y la vuelta 8 perdio tres piezas por listar cabeceras.** Aqui **las piezas P1, P3 y P5
+no tienen cabecera ninguna**: son un rotulo de ilustracion y dos separadores. **Con el
+metodo viejo se habrian caido las tres, y con ellas 19 palabras y la prueba de que el
+rango esta entero.**
+
+### 3.A.2. `D.27` pieza a pieza, tambien para lo que descarto
+
+**La medida antes que la impresion**, que es lo que la vuelta 8 aprendio con las
+biografias. Frases del cuerpo que se dirigen al lector en segunda persona, contadas:
+
+    lineas con texto: 63
+    frases que empiezan en segunda persona: 6
+      L49: You have no idea what you're doing.
+      L97: You figure out what worked and what didn't.
+      L97: You file away lessons for the future.
+      L97: Rinse, repeat.
+      L109: You'll be so far removed." He had a point.
+      L127: You won't find deep reflections on what makes for great design or what I think of social media.
+
+**Seis en 63 lineas, y cuatro de las seis no mandan nada:** L49 es un pensamiento que la
+autora atribuye a la cara de su interlocutor, L109 es la cita textual de un amigo, y L127
+dice de que NO trata el libro. **Solo el racimo de L97 se dirige al lector con algo que
+parece una secuencia**, y va abajo con su veredicto.
+
+| pieza | inventario propio del libro | veredicto | la razon, con su cita |
+|---|---|---|---|
+| P1 | no | **DESCARTADA** | rotulo de una ilustracion. `THE MYTH` y `THE REALITY` son dos etiquetas de once palabras con el titulo. Nada que ejecutar |
+| P2 | no | **DESCARTADA** | relato. `L21: We were sitting in a ten-person conference room, kitty-corner from each other.` **Un relato en pasado y primera persona no tiene condicion de activacion** |
+| P3 | no | **DESCARTADA** | separador tipografico, cuatro palabras |
+| P4 | no | **DESCARTADA** | relato. `L43: "Hi," I said, trying to keep my voice level. "So, uh, what are you working on right now?"` Es la escena de una reunion que salio mal, **no un procedimiento para conducirla** |
+| P5 | no | **DESCARTADA** | separador tipografico, cuatro palabras |
+| P6 | no | **DESCARTADA** | autobiografia de Shanghai a Facebook. `L57: By all accounts, the path that led me to managing Facebook's design team was an unlikely one.` **Cero mandatos en 789 palabras** |
+| P7 | no | **DESCARTADA** | tres primeras veces contadas en pasado (`L83: I remember my first time interviewing someone for my team.`). **Nombra tres situaciones y no da un solo paso para ninguna**: es el caso literal de *nombrar no es procedimentar* |
+| P8 | **discutible, y va abajo** | **DESCARTADA** | ver el DISCUTIBLE 1 |
+| P9 | no | **DESCARTADA** | como nacio el blog y por que hay libro. `L101: Another tactic in my self-education started about four years ago, when I decided to write a blog.` **La palabra `tactic` no hace procedimiento:** el parrafo cuenta que lo hizo, no como se hace |
+| P10 | inventario de FINES, y la restriccion 1 lo tumba | **DESCARTADA** | `L121: Why do managers even exist? Why should you have one-on-one meetings with your reports?` **Son las preguntas que el libro promete responder, es decir adonde hay que llegar.** La restriccion 1 de `D.27` es literal: *un inventario de METAS o de FINES no cuenta*. Y `L123` nombra tres trabajos del manager (*giving feedback, creating a healthy culture, planning for the future*) **dentro de una frase que afirma que son universales**, no que manda hacerlos |
+
+### 3.A.3. El saldo de la `Introduction`: **CERO candidatos**
+
+**Y no es por pobre: es por su genero.** Una introduccion autobiografica de 2.917
+palabras donde **el 100 por ciento de las piezas es relato, rotulo o tesis**. `EXTRACTOR.md`
+15.4 avisa de lo contrario a lo que se cree: **un parrafo pobre no produce un nodo pobre,
+produce un nodo inventado.** Aqui todos los pasos los habria escrito yo.
+
+**2.917 palabras descartadas con su razon y su cita, una a una.** Es trabajo hecho, no
+trabajo omitido.
+
+### 3.A.4. DISCUTIBLE 1, marcado ANTES de saber si acierto
+
+**DISCUTIBLE 1 (TAREA 3.A, pieza P8, `cap_01.md` L97).** *He descartado el unico racimo
+de la `Introduction` que se dirige al lector con una secuencia de etapas nombradas una a
+una, y `D.27` dice que el inventario propio delata el procedimiento.*
+
+La linea, pegada entera (`sed -n '97p'`, sin el sangrado):
+
+    I'm by no means a management expert. I've learned largely by doing, and despite my
+    best intentions, I've made countless mistakes. But this is how anything in life goes:
+    You try something. You figure out what worked and what didn't. You file away lessons
+    for the future. And then you get better. Rinse, repeat.
+
+**A FAVOR DE MINARLO:** son **cuatro etapas nombradas por el texto y en orden**
+(intentar, evaluar que funciono, archivar la leccion, mejorar), mas un cierre que manda
+repetir. No hay adjetivo de adecuacion en el sitio del criterio, que es lo que tumba por
+la restriccion 2. Si eso es un inventario de ETAPAS, `D.27` dice que escribir los pasos
+es transcribir.
+
+**POR QUE LO DESCARTO, y es mi lectura y puede caer:**
+
+1. **La frase no es normativa, es un descargo.** El sujeto de las tres oraciones
+   anteriores es la autora diciendo que no es experta. El `You` generico de
+   *this is how anything in life goes* **describe como aprende cualquiera en la vida**,
+   no encarga nada al lector.
+2. **No hay objeto de trabajo, y sin el los pasos los pongo yo.** *You try something*:
+   **something**. Para escribir un nodo tendria que decidir yo que se intenta, contra que
+   se evalua, y donde se archiva la leccion. **Esas son las tres especies de puente de
+   `EXTRACTOR.md` 15.4 en una sola linea**, y la tercera, *el periodo*, la pondria
+   tambien: *Rinse, repeat* no dice cada cuanto.
+3. **Ni condicion de activacion ni entregable**, y el manual seccion 2 pide las dos.
+4. **La restriccion 1 muerde por el otro lado:** *get better* es una META, no una etapa
+   de trabajo.
+
+**SI ESTO CAE, la caida es mia y esta dentro del marcado.** Y si cae, lo que aprende esta
+casa es util: **una secuencia generica de aprendizaje no es un inventario de etapas**, y
+convendra escribirlo, porque este libro entero esta escrito en ese registro y volvera a
+aparecer.
 
