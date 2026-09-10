@@ -5212,14 +5212,16 @@ que mandar ninguna medida en rojo.**
 
 ## Las tareas encargadas, y su estado
 
-| # | tarea | estado | resultado |
+| # | tarea | estado | resultado en una linea |
 |---|---|---|---|
-| 0 | las cuatro comprobaciones de apertura sobre `cap_06.md` y `cap_07.md` | ABIERTA | |
-| 1 | los registros del ACTA 6 (1.a bloqueante, 1.b a 1.g) | ABIERTA | |
-| 2 | el Cap. 5 entero, `Sell` | ABIERTA | |
-| 3 | el Cap. 6, `Your Greatest Opportunity`, si el tramo lo permite | ABIERTA | |
-| 4 | las cuatro medidas del cierre, desglosadas por capitulo | ABIERTA | |
-| 5 | el informe de cierre del lote 2, solo si las dos unidades quedan leidas | ABIERTA | |
+| 0 | las cuatro comprobaciones de apertura sobre `cap_06.md` y `cap_07.md` | **CERRADA** | las cuatro en VERDE; **el Cap. 6 son 370 palabras de cuerpo y no 3.849** (0.c) |
+| 1 | los registros del ACTA 6 (1.a bloqueante, 1.b a 1.g) | **CERRADA** | 1.a en vigor en todo el reporte; las seis adjudicaciones recogidas; **1.e le costo un hijo a la serie de cinco** |
+| 2 | el Cap. 5 entero, `Sell` | **CERRADA EN SU TRAMO, CON COLA DECLARADA** | **12 candidatos, 12 ENTRARIAN al primer intento, 4 puentes cazados en el acto** |
+| 3 | el Cap. 6, `Your Greatest Opportunity`, si el tramo lo permite | **NO SE EMPIEZA, DECLARADO** | el Cap. 5 lleno el tramo con la mitad de si mismo; cola medida, no estimada |
+| 4 | las cuatro medidas del cierre, desglosadas por capitulo | **CERRADA** | **1,903 por mil palabras** sobre lo minado; **4 de 80 pasos, 5,00 por ciento**, con el denominador desglosado en tres |
+| 5 | el informe de cierre del lote 2, solo si las dos unidades quedan leidas | **NO PROCEDE, DECLARADO** | la condicion no se cumplio; **el informe del lote si va pegado: 44 revisados, 44 ENTRARIAN, 0/0/0** |
+
+**El detalle de cada fila vive en su seccion, y cada una se anexo al cerrarse.**
 
 **Las filas se anexan al cerrarse cada tarea, no al final de la vuelta**
 (`EXTRACTOR.md` 3). Los discutibles se marcan ANTES de saber si acierto
@@ -5679,3 +5681,496 @@ externos en el 11. **Esa cifra NO es de ningun nodo de este capitulo: es del met
 entero**, y su casa seria `aplicar_metodo_ghsmart_contratacion`, que **ya paso la
 aduana en la vuelta 4 y es cosa juzgada**. No lo edito. **Queda declarada aqui como
 atribucion pendiente**, que es lo que `D.29` pide para que no se pierda en la prosa.
+
+### 2.f. LOS VECINOS, REMEDIDOS AL CIERRE DEL CAPITULO SOBRE LA BANDEJA ENTERA
+
+**Remedidos, no arrastrados**, que es el remedio de la vuelta 4 y lleva tres
+vueltas funcionando. `src.aduana.medir`, los 44 candidatos de la bandeja contra si
+mismos, pares ordenados, con los umbrales que el propio informe imprime
+(`similitud 0.35 | familia 0.30 | paso contra nodo 0.60`).
+
+| medida | apertura (32 candidatos) | **cierre del Cap. 5 (44)** |
+|---|---:|---:|
+| pares ordenados | 992 | **1.892** |
+| pares que levantarian | **44** | **59** |
+| por similitud de texto | 0 | **0** |
+| por familia de id | 36 | **50** |
+| por paso contra nodo | 14 | **15** |
+| **pares que ve SOLO la señal 3** | 8 | **9** |
+
+**LA DENSIDAD, CON SU DIVISION AL LADO (1.a):** 44 sobre 992 es el **4,435 por
+ciento**; 59 sobre 1.892 es el **3,118 por ciento**. **El cociente es
+3,118 / 4,435 = 0,703**, asi que la densidad cae a **algo mas de siete decimos** de
+la que habia. **No escribo *a la mitad* ni *un tercio*: escribo el cociente.**
+
+**Y LAS TRES RAZONES DE CRECIMIENTO, tambien divididas:** la bandeja crecio
+44 / 32 = **1,375**; los pares crecieron 1.892 / 992 = **1,907** (crecen con el
+cuadrado, no con el tamaño); los levantados crecieron 59 / 44 = **1,341**.
+
+**LO QUE PASA EN LO NUEVO, que es donde esta la informacion:** de las **900
+comparaciones nuevas**, levantan **15**, es decir el **1,667 por ciento**, muy por
+debajo del 3,118 del conjunto. **Y de esas 15, CATORCE son familia de id y UNA es
+paso contra nodo.**
+
+#### 2.f.1. LA MEDIDA QUE EL ENCARGO PIDE: LOS CUATRO HERMANOS DEL METODO A EN LA BANDEJA
+
+**Con `Sell` dentro, la cabeza `aplicar_metodo_ghsmart_contratacion` tiene por fin
+sus cuatro hijos.** El encargo pide medir cuantos vecinos levanta la aduana en esa
+situacion. **Medido, y el resultado es CERO.**
+
+| candidato | vecino | similitud | familia | paso contra nodo | levanta |
+|---|---|---:|---:|---:|---|
+| `crear_tarjeta_puntuacion_puesto` | `abastecer_flujo_candidatos` | 0,146 | 0,000 | 0,364 | **nada** |
+| `crear_tarjeta_puntuacion_puesto` | `seleccionar_jugador_cuatro_entrevistas` | 0,189 | 0,000 | 0,346 | **nada** |
+| `crear_tarjeta_puntuacion_puesto` | `vender_puesto_jugador` | 0,241 | 0,167 | 0,311 | **nada** |
+| `abastecer_flujo_candidatos` | `crear_tarjeta_puntuacion_puesto` | 0,149 | 0,000 | 0,367 | **nada** |
+| `abastecer_flujo_candidatos` | `seleccionar_jugador_cuatro_entrevistas` | 0,188 | 0,000 | 0,366 | **nada** |
+| `abastecer_flujo_candidatos` | `vender_puesto_jugador` | 0,251 | 0,000 | 0,343 | **nada** |
+| `seleccionar_jugador_cuatro_entrevistas` | `crear_tarjeta_puntuacion_puesto` | 0,193 | 0,000 | 0,327 | **nada** |
+| `seleccionar_jugador_cuatro_entrevistas` | `abastecer_flujo_candidatos` | 0,184 | 0,000 | 0,350 | **nada** |
+| `seleccionar_jugador_cuatro_entrevistas` | `vender_puesto_jugador` | 0,165 | 0,167 | 0,337 | **nada** |
+| `vender_puesto_jugador` | `crear_tarjeta_puntuacion_puesto` | 0,182 | 0,167 | 0,316 | **nada** |
+| `vender_puesto_jugador` | `abastecer_flujo_candidatos` | 0,154 | 0,000 | 0,320 | **nada** |
+| `vender_puesto_jugador` | `seleccionar_jugador_cuatro_entrevistas` | 0,132 | 0,167 | 0,337 | **nada** |
+| **12 pares ordenados** | | | | | **0 levantan** |
+
+**Y EL PAR QUE MAS IMPORTA DEL CAPITULO ENTERO TAMPOCO LEVANTA:**
+
+    aplicar_metodo_ghsmart_contratacion  contra  vender_puesto_jugador
+      similitud_texto    0.298  (umbral 0.35)   NO llega
+      familia_id         0.000  (umbral 0.30)   NO llega
+      paso_contra_nodo   0.390  (umbral 0.60)   NO llega
+      levantada_por: []
+      paso 2 del candidato contra paso 3 de vender_puesto_jugador
+
+    vender_puesto_jugador  contra  aplicar_metodo_ghsmart_contratacion
+      similitud 0.281 | familia 0.000 | paso 0.373 | levantada_por: []
+
+> **ES LA ARISTA MADRE E HIJO MAS IMPORTANTE DEL LIBRO, LA QUE CIERRA EL METODO A,
+> Y LAS TRES SEÑALES LA DEJAN PASAR ENTERA.** No es un fallo de la aduana: es
+> `EXTRACTOR.md` 11 con un ejemplar propio de esta casa. **Un candidato que entra
+> con la cola vacia esta certificado como SIN GEMELO, no como sin madre. La
+> jerarquia la busca la lectura, no la señal.** Por eso A1 esta declarada en 2.e y
+> escrita en las `condiciones_activacion` del nodo, y no esperando a que una
+> medicion la levante.
+
+**Y LA RAZON MEDIDA DE POR QUE LA FAMILIA NO LOS VE:** los cuatro hermanos del
+metodo A hablan de cuatro cosas distintas (`tarjeta_puntuacion`, `flujo_candidatos`,
+`jugador_cuatro_entrevistas`, `puesto_jugador`), asi que **la familia de id de tres
+de los seis pares no comparte ni una pieza (0,000)** y la de los otros tres comparte
+una de seis (0,167). **Es exactamente lo que la vuelta 6 midio en el Cap. 4 y aqui
+se repite con la serie que cierra el metodo.**
+
+#### 2.f.2. LA SEGUNDA MEDIDA QUE EL ENCARGO PIDE: LAS ESPECIES DE LA SEÑAL 3 SOLA
+
+**Llevaba ocho, cuatro de cada especie. Ahora son NUEVE, y el noveno no crea una
+tercera especie: crea una FORMA nueva dentro de la primera.**
+
+| # | par | señal 3 | detalle de paso | especie |
+|---:|---|---:|---|---|
+| 1 y 2 | `abastecer_flujo_candidatos` contra `pedir_referencias_empleados`, en los dos sentidos | **0,607** | paso 2 del uno contra paso 1 del otro | hermano contra hermano |
+| 3 y 4 | `contratar_investigadores_reclutamiento` contra `contratar_reclutadores_externos`, en los dos sentidos | **0,730** | paso 3 del uno contra paso 4 del otro | hermano contra hermano |
+| 5 y 6 | `calificar_tarjeta_puntuacion_habilidad_voluntad` contra `seleccionar_jugador_cuatro_entrevistas`, en los dos sentidos | **0,856** | paso 5 del hijo contra paso 4 de la cabeza | cabeza contra hijo |
+| 7 y 8 | `decidir_contratacion_final` contra `seleccionar_jugador_cuatro_entrevistas`, en los dos sentidos | **0,932** | paso 2 del hijo contra paso 6 de la cabeza | cabeza contra hijo |
+| **9** | **`celebrar_aceptacion_primer_dia` contra `sostener_contacto_oferta_aceptacion`, EN UN SOLO SENTIDO** | **0,613** | **paso 5 del candidato (*"Sigue en contacto con la persona"*) contra paso 3 del vecino (*"Manten el contacto con ella con regularidad"*)** | **hermano contra hermano**, y son la ola 4 y la ola 3 de la misma serie |
+
+**NO HAY TERCERA ESPECIE. Hay una forma nueva, y es la ASIMETRIA, medida en sus dos
+sentidos:**
+
+    celebrar_aceptacion_primer_dia  contra  sostener_contacto_oferta_aceptacion
+      paso_contra_nodo  0.613   >= 0.60   LEVANTA
+    sostener_contacto_oferta_aceptacion  contra  celebrar_aceptacion_primer_dia
+      paso_contra_nodo  0.587   <  0.60   NO levanta
+
+**LOS OCHO ANTERIORES ERAN CUATRO PARES MUTUOS: los dos sentidos por encima del
+umbral. Este es el primero de la bandeja que levanta por un lado y no por el
+otro**, y la razon esta en la propia funcion: `senal_paso_contra_nodo(candidato,
+vecino)` mide los pasos del CANDIDATO contra el nodo entero del vecino, **y eso no
+es simetrico**. Con 6 pasos frente a 10, el reparto sale distinto segun quien mire.
+
+**LO QUE ESO CAMBIA EN LA PRACTICA, Y ES LA PARTE UTIL:** si `celebrar` entra
+DESPUES, bloquea y pide veredicto; **si entra ANTES, no lo pide**. Asi que **el
+orden de insercion decide si este par se lee o no se lee**, y es un ejemplar
+medido de `EXTRACTOR.md` 12.3 (*el primero que entra cambia lo que el segundo
+mide*) aplicado no al valor sino a **si la lectura llega a existir**.
+
+**Y LO QUE NO AFIRMO:** no digo que la calibracion del 9 sep quede tocada. **Es una
+medida sobre 3.169 nodos que esta casa no ha corrido**, y lo mio son 44 candidatos.
+Lo mido en mi bandeja, lo digo, y no lo extiendo.
+
+> **DISCUTIBLE 3, marcado antes de saber si acierto.** Ver C.7.
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 2 | el Cap. 5 entero, `Sell` | **CERRADA EN SU TRAMO, CON COLA DECLARADA** | **frontera de 19 piezas publicada antes de cortar** (2.a), cada linea reabierta con `sed -n`. **12 candidatos, los 12 ENTRARIAN al primer intento, cero correcciones de id.** **4 puentes cazados en el acto, los 4 de la quinta especie**, y **4 pasos mas retirados por la vara**. **11 aristas declaradas, ninguna cableada**, y la novena pendiente de 1.c queda cerrada. Vecinos remedidos: **59 de 1.892**. **Cola: `cap_06.md` L247 a L455, 5.034 palabras** |
+
+## 3. EL Cap. 6, `Your Greatest Opportunity`: **NO SE EMPIEZA, Y SE DICE POR QUE**
+
+**El Cap. 5 lleno el tramo con la mitad de si mismo. El Cap. 6 no se abre.** Eso
+no es un fallo: es el tramo funcionando, igual que en la vuelta 6 con el Cap. 4, y
+el encargo lo autoriza expresamente.
+
+**LA CUENTA QUE LO DECIDE, con su division al lado (1.a):** el techo de
+`EXTRACTOR.md` 12.4 son **quince candidatos**. El tramo de venta del Cap. 5 dio
+**doce**. Lo que queda del Cap. 5 (P18 y P19, `cap_06.md` L247 a L455) trae **una
+serie numerada de DIEZ y otra de CUATRO**, que por manual 3.4 son **16 nodos**
+contando sus dos cabezas. **12 mas 16 son 28, y 28 / 15 = 1,867 veces el techo.**
+No cabe, y no se fuerza.
+
+**Y ES LA ADJUDICACION 8 DEL ACTA 4 EN PIE:** que una vuelta llene el techo con un
+solo capitulo **no baja el tramo**, igual que llenarlo con dos no lo subia.
+
+### 3.a. LO QUE SE MIDE IGUAL, AUNQUE NO SE EMPIECE
+
+**Lo mido sin leerlo para minar, y NO estimo cuantos candidatos habria dado:
+estimar un capitulo sin leerlo es adivinar.**
+
+| cola | rango | palabras | bloques |
+|---|---|---:|---:|
+| **el resto del Cap. 5** | `cap_06.md` **L247 a L455** | **5.034** | **105** |
+| **el Cap. 6, cuerpo de capitulo** | `cap_07.md` **L9 a L41** | **370** | **17** |
+| **el material de cierre de libro** de `cap_07.md` | **L43 a L429** | **3.479** | **194** |
+| **total sin minar** | | **8.883** | **316** |
+
+    3.849 (rango entero de cap_07.md) - 370 (cuerpo del Cap. 6) = 3.479
+    5.034 + 370 + 3.479 = 8.883
+
+**Y LA CIFRA QUE EL ENCARGO NO ESPERABA Y QUE SALE DE 0.c:** el Cap. 6 que quedaba
+por leer **no son 3.849 palabras de capitulo, son 370**. Las otras 3.479 son notas
+al pie, folleto de ghSMART, anuncio de empleo, biografias de los entrevistados,
+agradecimientos, fichas de los autores, treinta elogios de contraportada y la
+pagina de creditos. **Eso cambia el tamaño de lo que le queda al lote 2, y por eso
+va aqui y no en una nota.**
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 3 | el Cap. 6, si el tramo lo permite | **NO SE EMPIEZA, DECLARADO** | el Cap. 5 lleno el tramo con **12 de 15**, y lo que le queda trae **16 nodos mas** por manual 3.4. **Cola medida y no estimada: 8.883 palabras y 316 bloques**, de las cuales **solo 370 palabras son cuerpo del Cap. 6** |
+
+---
+
+## 4. LAS CUATRO MEDIDAS DEL CIERRE, DESGLOSADAS POR CAPITULO
+
+**Todas recomputadas al cierre** (`EXTRACTOR.md` 4: el estado al cierre se mide al
+cierre), y **todos los comparativos con su cociente escrito al lado** (1.a).
+
+### 4.a. CANDIDATOS POR MIL PALABRAS, UNA FILA POR CAPITULO
+
+**Denominador por CAPITULO, que es la propuesta 3 adjudicada a favor.**
+
+| unidad | palabras | candidatos | por mil palabras |
+|---|---:|---:|---:|
+| **Cap. 5, `Sell`, sobre lo MINADO** (`cap_05.md` L363-365 mas `cap_06.md` L9-245) | **6.305** | **12** | **1,903** |
+| Cap. 5, sobre el CAPITULO ENTERO | 11.339 | 12 | **1,058** |
+| **Cap. 6, `Your Greatest Opportunity`** | 3.849 el rango, **370 el cuerpo** | **0** | **0,000, y no se empezo** |
+| **total de la vuelta** | **6.305 minados de 15.188 abiertos** | **12** | **1,903 sobre lo minado** |
+
+**DOY LAS DOS FILAS DEL Cap. 5 Y NO ELIJO POR EL LECTOR**, porque el capitulo se
+mino a medias y las dos cifras dicen cosas distintas: **1,903 es el rendimiento del
+tramo leido** y **1,058 es lo que el capitulo lleva rendido hasta ahora**. La cola
+puede subir la segunda cuando se mine; la primera ya no se mueve.
+
+**LA FILA DEL Cap. 6 DICE CERO Y NO DICE *SIN DENOMINADOR*, igual que en la vuelta
+6 y por la misma razon:** el denominador existe y esta medido; lo que no existe es
+el numerador, porque no se leyo. **La celda de *sin denominador* que el encargo
+pide es la de 4.b, y alli la escribo.**
+
+**EL CONTRASTE CON LO QUE ESTA CASA YA TIENE PUBLICADO:**
+
+| tanda | por mil palabras |
+|---|---:|
+| lote 1, sobre lo minado (`CIERRE_LOTE_1.md` 3.2) | 4,97 |
+| lote 1, sobre el libro entero | 3,42 |
+| lote 2, vuelta 4 (`cap_01` mas `cap_02`, por FICHERO) | 0,415 |
+| lote 2, vuelta 5 (Cap. 2 mas Cap. 3, por capitulo) | 1,342 |
+| lote 2, vuelta 6 (Cap. 4, por capitulo) | 1,155 |
+| **lote 2, vuelta 7 (Cap. 5, sobre lo minado)** | **1,903** |
+| **lote 2 acumulado** (28.994 mas 6.305 = **35.299 palabras**, **44 candidatos**) | **1,246** |
+
+**LA DIVISION, ESCRITA ANTES DE COMPARAR:** 1,903 / 1,155 = **1,648**, asi que el
+Cap. 5 rinde **algo mas de una vez y media y algo menos de dos veces** lo que
+rindio el Cap. 4 por palabra. **Y sigue por debajo del lote 1**, que rendia 4,97
+sobre lo minado.
+
+**LA FILA ACUMULADA MEZCLA DOS DENOMINADORES Y LO SIGO DECLARANDO:** los 4.824 de
+la vuelta 4 son palabras de FICHERO y el resto son palabras de CAPITULO. Se arrastra
+declarado desde la vuelta 6 y no lo resuelvo yo.
+
+### 4.b. PASOS INVENTADOS SOBRE PASOS ESCRITOS, CON EL DENOMINADOR DESGLOSADO EN TRES
+
+**Esto es lo nuevo que el encargo pide, y va desglosado para que sea auditable.**
+
+    pasos escritos = pasos FINALES en los JSON      72
+                   + pasos retirados por PUENTE      4
+                   + pasos retirados por LA VARA     4
+                   = 80
+
+| unidad | finales | retirados por PUENTE | retirados por LA VARA | escritos | puentes | tasa |
+|---|---:|---:|---:|---:|---:|---:|
+| **Cap. 5, `Sell`** | **72** | **4** | **4** | **80** | **4** | **5,00 por ciento** |
+| **Cap. 6** | 0 | 0 | 0 | **0** | 0 | **SIN DENOMINADOR** |
+
+**LA FILA DEL Cap. 6 DICE *SIN DENOMINADOR* Y NO *CERO POR CIENTO*, que es lo que
+el encargo pide:** no se escribio ni un paso, asi que **no hay sobre que dividir**.
+Un cero por ciento diria que se escribieron pasos y ninguno era invento, y eso seria
+falso.
+
+**LOS TRES DENOMINADORES POSIBLES, publicados como el auditor hizo con el Cap. 4, y
+ninguno cambia ninguna decision:**
+
+| denominador | cuenta | tasa |
+|---|---:|---:|
+| solo los pasos finales | 4 / 72 | **5,56 por ciento** |
+| finales mas puentes retirados | 4 / 76 | **5,26 por ciento** |
+| **los tres sumandos** (el que publico) | **4 / 80** | **5,00 por ciento** |
+
+**Los tres quedan por debajo del 7,55 del Cap. 3, que es el peor del lote 2, y muy
+por debajo del 36,11 de la linea base.** Publico el mas conservador de los tres
+denominadores porque **un paso escrito y retirado sigue siendo un paso escrito**,
+que es el precedente del Cap. 3 (53 escritos contra 49 finales, ACTA 5).
+
+### 4.c. LA SERIE DE VOLUMEN, CON LA FILA NUEVA DENTRO
+
+    lote 1               36 pasos   13 puentes   36,11 por ciento
+    lote 2, cap_02       16 pasos    1 puente     6,25
+    lote 2, Cap. 2       35 pasos    1 puente     2,86
+    lote 2, Cap. 3       53 pasos    4 puentes    7,55
+    lote 2, Cap. 4       97 pasos    3 puentes    3,09
+    lote 2, Cap. 5       80 pasos    4 puentes    5,00   <-- esta vuelta
+    lote 2 acumulado    281 pasos   13 puentes    4,63
+
+**LA DIVISION, ESCRITA ANTES DE COMPARAR:** 5,00 / 3,09 = **1,618**, asi que la
+tasa **subio** respecto al Cap. 4 y esta **algo por encima de vez y media** la de
+aquel. **No escribo *casi el doble*: 5,00 no es casi el doble de 3,09, y el
+cociente lo dice.** Y 5,00 / 7,55 = **0,662**, asi que **sigue por debajo del peor
+capitulo del lote 2**, que es el Cap. 3.
+
+**LA REGLA DE VOLUMEN MIRA EL PEOR CAPITULO, NO EL PROMEDIO. El peor del lote 2
+sigue siendo el Cap. 3 con 7,55**, y esta vuelta no lo mueve. Contra la linea base:
+5,00 / 36,11 = **0,138**.
+
+### 4.d. LO QUE ESTA CASA NO HA MEDIDO Y ESTA VUELTA TAMPOCO MIDE, Y LO DIGO
+
+**El encargo pide *la tasa de puentes de un capitulo de CIERRE*, un genero que esta
+casa no ha medido. ESTA VUELTA TAMPOCO LO MIDE, y no lo disimulo.** El tramo que
+mine (`cap_06.md` L9 a L245) es **de metodo**: un recuadro de tres puntos y dos
+series de cinco, igual que los Cap. 2, 3 y 4. **El material de cierre del libro
+esta entero en la cola** (P18 y P19 mas `cap_07.md`), y su tasa se medira cuando se
+mine. **La fila de 4.b es una fila de capitulo de metodo mas, y asi hay que
+leerla.**
+
+### 4.e. VEREDICTOS ESCRITOS
+
+| medida | cifra | comando |
+|---|---:|---|
+| veredictos escritos en esta vuelta | **0** | |
+| veredictos en `bitacora/VEREDICTOS.jsonl` al cierre | **2** | `wc -l bitacora/VEREDICTOS.jsonl` |
+| pares mutuos en `config/pares_mutuos.jsonl` | **0**, y el fichero no existe | el fichero nace cuando la aduana escribe el primer par mutuo |
+
+**CERO, y la razon es que no hubo insercion.** `MODO_INSERCION=cuarentena` y
+`D.26`: **la insercion es una autorizacion del fundador, no un default**, y en esta
+corrida no la ha dado. **Un veredicto se escribe cuando la aduana bloquea al
+insertar**, y nada se inserto. Los 2 de la bitacora son los del lote 1 y no los
+movio esta vuelta.
+
+### 4.f. EL ESTADO AL CIERRE, RECOMPUTADO ENTERO
+
+**Las nueve filas del encargo, remedidas por mi en la apertura, mas su cifra de
+cierre.** Todas reproducen contra el encargo salvo la que declaro.
+
+| medida | encargo (`1788173`) | mi apertura | **mi cierre** | reproduce |
+|---|---:|---:|---:|---|
+| nodos vivos en el dataset | 8 | **8** | **8** | si |
+| pasos en los nodos vivos | 43 | **43** | **43** | si |
+| extremos de arista en los nodos vivos | 4 | **4** | **4** | si |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | 2 | **2** | **2** | si |
+| candidatos en `cuarentena/smart_who/` | 32 | **32** | **44** | si |
+| pasos en la bandeja | 197 | **197** | **269** | si |
+| informe del lote en seco | 32 revisados, 32 ENTRARIAN, 0/0/0 | **32, 32, 0/0/0** | **44 revisados, 44 ENTRARIAN, 0 bloquean, 0 caen, 0 chocan** | si |
+| pares que levantarian | 44 de 992: 0 / 36 / 14, **8 solo señal 3** | **44 de 992: 0 / 36 / 14, 8 solo señal 3** | **59 de 1.892: 0 / 50 / 15, 9 solo señal 3** | si |
+| fuentes canonicas registradas / en uso | 13 / 2 | **13 / 2** | **13 / 2** | si, **con matiz** |
+| unidades del lote 2 leidas | 5 de 7 | **5 de 7** | **6 de 7 leidas, 5 de 7 minadas enteras** | ver 4.g |
+
+**EL MATIZ DE LAS FUENTES, que no es discrepancia pero se dice:** las **13** son
+`len()` del fichero entero, y **una de las trece es `_lea_esto`**, la cabecera del
+propio fichero. **Claves de libro reales: 12.** La cifra del encargo reproduce
+porque se mide con el mismo comando, y digo lo que hay dentro para que nadie lea
+trece libros donde hay doce. **En uso en el dataset siguen siendo 2**
+(`manual_sistema_conocimiento` y `onu_consumidor`), y **`smart_who` sigue en cero
+porque no se ha insertado ni un nodo del lote 2.**
+
+### 4.g. LAS UNIDADES DEL LOTE 2, Y POR QUE DIGO 6 LEIDAS Y 5 MINADAS
+
+**Las siete unidades del lote 2 son las que el registro nombra** (mi 0.b de la
+vuelta 6, linea 4818 de este mismo reporte): `Introduction`, `Cap. 1`, `Cap. 2`,
+`Cap. 3`, `Cap. 4`, `Cap. 5` y `Cap. 6`.
+
+| # | unidad | quien la mino | palabras | estado al cierre de HOY |
+|---:|---|---|---:|---|
+| 1 | `Introduction` | vuelta 4 | (publicada entonces) | **MINADA** |
+| 2 | `Cap. 1` | vuelta 4 | (publicada entonces) | **MINADA** |
+| 3 | `Cap. 2` | vuelta 5 | (publicada entonces) | **MINADA** |
+| 4 | `Cap. 3` | vuelta 5 | (publicada entonces) | **MINADA** |
+| 5 | `Cap. 4`, `Select` | vuelta 6 | (publicada entonces) | **MINADA** |
+| 6 | **`Cap. 5`, `Sell`** | **esta vuelta** | **11.339**, medidas hoy | **LEIDA ENTERA, MINADA A MEDIAS**: 6.305 minadas, 5.034 en cola |
+| 7 | **`Cap. 6`, `Your Greatest Opportunity`** | nadie | **370** de cuerpo, 3.849 el rango, medidas hoy | **NI ABIERTA NI MEDIDA MAS ALLA DEL RECUENTO** |
+
+**LAS CELDAS DE PALABRAS DE LAS UNIDADES 1 A 5 VAN VACIAS A PROPOSITO:** esas
+cifras se publicaron en su vuelta y **no las he vuelto a correr hoy**, asi que no
+las tecleo como si fueran medicion de esta vuelta (`EXTRACTOR.md` 5). Las que si
+corri hoy estan en 0.a y en 4.a, y son las de las unidades 6 y 7.
+
+**DIGO 6 DE 7 LEIDAS porque el Cap. 5 se leyo entero** (la frontera de 2.a
+clasifica sus 19 piezas, incluidas las dos que no se minaron) **y 5 de 7 MINADAS
+enteras**, porque el Cap. 5 tiene cola. **Esa es mi medida y la mando en vez de
+copiar la del encargo**, que decia 5 de 7 al abrir y era cierta entonces.
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 4 | las cuatro medidas del cierre, desglosadas por capitulo | **CERRADA** | **1,903 candidatos por mil palabras** sobre lo minado del Cap. 5 (**1,058** sobre el capitulo entero, **1,246** acumulado del lote 2). **4 puentes de 80 pasos escritos, el 5,00 por ciento**, con el denominador desglosado en **72 finales mas 4 puentes mas 4 vara**, y los tres denominadores posibles publicados (5,56 / 5,26 / 5,00). **Cap. 6: SIN DENOMINADOR.** **0 veredictos escritos**, porque no hubo insercion. El tramo fue el correcto y **el segundo capitulo no cupo ni se intento** |
+
+---
+
+## 5. EL INFORME DE CIERRE DEL LOTE 2: **NO SE HACE, Y SE DICE**
+
+**La TAREA 5 estaba condicionada a que las dos unidades quedaran leidas.** El
+Cap. 6 **no se abrio** (seccion 3), asi que **el lote 2 NO se cierra en esta vuelta
+y esta tarea no se hace.**
+
+**Lo que si dejo hecho de lo que esa tarea pedia, porque es del capitulo y no del
+lote:** el informe del lote entero en seco (5.a), la medicion de vecinos final
+sobre la bandeja entera (2.f) y las aristas sin cablear en una sola lista (1.c mas
+2.e). **Lo que falta para cerrar el lote es la cuenta de 7 de 7**, y son 6.
+
+### 5.a. EL INFORME DEL LOTE ENTERO EN SECO, PEGADO CON SU SALDO
+
+    $ python forja.py informe --carpeta cuarentena/smart_who
+
+    candidatos revisados        : 44
+    nodos en el grafo de destino: 8
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 44
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+**44 revisados, 44 entrarian, cero bloquean, cero caen, cero chocan.** Los doce
+nuevos no rompen nada de lo que ya habia, y **el saldo se lee contra el grafo de
+destino de 8 nodos, que es el de hoy**: el dia que se inserte el primero, el
+segundo medira contra un grafo distinto (`EXTRACTOR.md` 12.3).
+
+**LO QUE NO HAGO, Y ES DELIBERADO: no pido la insercion y no la hago.**
+`MODO_INSERCION=cuarentena` y `D.26`. **Un lote cerrado y sin insertar no bloquea
+nada** (`D.32`), y este ni siquiera esta cerrado.
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 5 | el informe de cierre del lote 2, si las dos unidades quedan leidas | **NO PROCEDE, DECLARADO** | la condicion no se cumplio: el Cap. 6 no se abrio. **El informe del lote entero si va pegado** (5.a): **44 revisados, 44 ENTRARIAN, 0/0/0** |
+
+---
+
+# C.7. EL CIERRE DE LA VUELTA 7
+
+## C.7.1. LAS GUARDAS, LAS TRES EN VERDE, CORRIDAS AL CIERRE
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 8
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista,
+               arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie,
+               arista_rota, arista_incompleta, guiones
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python tests/test_aceptacion.py
+      total: 65 pruebas, 0 fallos, 0 errores
+
+**El barrido va citado SIN ARGUMENTOS, que es el uso correcto**, y por eso no
+necesita la linea de disciplina del encargo sobre imprimir el tamaño del fichero:
+**no cito ningun barrido sobre una ruta concreta como prueba en toda esta vuelta.**
+
+**Y EL HOOK CORRIO EN LOS DOS COMMITS DEL CAPITULO.** El primero de la vuelta lo
+tumbo y se corrigio y se reintento (1.g); el del capitulo salio verde a la primera:
+
+    [pre-commit] gate de integridad ... GATE VERDE.
+    [pre-commit] barrido de guiones ... BARRIDO DE GUIONES VERDE
+    [pre-commit] verde
+
+## C.7.2. NINGUNA PARADA, Y LAS DOS VECES QUE ESTUVO CERCA
+
+**No hay PARADA en esta vuelta.** Las dos comprobaciones que estuvieron cerca y por
+que ninguna lo fue:
+
+| # | lo que paso | por que NO es parada |
+|---:|---|---|
+| 1 | **una celda del encargo no reproduce contra mi medicion**: el Cap. 6 no son 3.849 palabras de capitulo sino 370, y el borde `cap_06`/`cap_07` parte prosa continua | **es discrepancia declarada, no parada**: la mido, la desgloso tramo a tramo y mando la mia (`EXTRACTOR.md` 5). Y el propio encargo la anticipa: *lo compruebas tu y mandas tu medida*. Desarrollado en 0.c |
+| 2 | **el manual 3.4 me obligaba a escribir cinco hijos de una serie de cinco y escribi cuatro**, y otra vez con el tercer punto del recuadro | **hay arbitro escrito y ya adjudicado**: el discutible 2 del ACTA 6 quedo SOSTENIDO, *una serie numerada PUEDE dar menos hijos que numeros*. Se cita el arbitro y se sigue. Desarrollado en 2.c.1 |
+
+**Y las cuatro comprobaciones de apertura salieron las cuatro en VERDE sobre los
+dos ficheros**, que es la primera causa de parada que el encargo nombra.
+
+**Una nota sobre cuando medi la apertura, para que se lea bien** (`EXTRACTOR.md` 4:
+*la apertura se mide antes de la primera operacion*): las nueve filas de 4.f las
+medi **despues del commit `c51ee98`** (que solo toca artefactos del arnes y no
+roza `dataset/`, `cuarentena/` ni `bitacora/`) y **antes de escribir el primer
+candidato**. **Ninguna operacion de extraccion las habia movido**, y las nueve
+reproducen contra el encargo.
+
+## C.7.3. LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO
+
+**Van a ciegas, que es lo unico que hace que la metrica de credito signifique algo**
+(`EXTRACTOR.md` 8). **Ocho, ordenados por lo que le cuesta al auditor si me
+equivoco.**
+
+| # | discutible | lo que sostengo | por donde puede caer |
+|---:|---|---|---|
+| **1** | **el `L9 a L429` del Cap. 6 no es cuerpo de capitulo: solo `L9 a L41` lo es**, y el borde `cap_06`/`cap_07` **parte prosa continua** (0.c) | las dos cosas estan medidas: la suma de los nueve tramos da 3.849 exacto y solo el primero es capitulo, y L455 mas L9 se leen seguidas (*"...by forty-four seconds."* / *"Imagine the excitement of that!"*), con L11 rematandolo (*"If Bill Koch can use this method..."*) | que el recorte tenga razon y el Cap. 6 empiece de verdad en `cap_07.md` L9 con un arranque deliberadamente encabalgado. **No muevo la etiqueta del recorte por si acaso**, pero si me equivoco, me equivoco en la lectura, no en la cifra |
+| **2** | **el corte del capitulo en L245, con L247 a L455 como cola** (2.b) | el techo son quince candidatos y lo que queda trae dieciseis nodos; y el asunto cambia en L247, donde el capitulo deja de hablar de sellar un trato | que el corte debio hacerse por techo puro y no por asunto, minando hasta agotar los quince donde cayera |
+| **3** | **`SELLING FUN` no da nodo** (2.c.1) | lo unico mandado en 17 bloques es el paso que la cabeza ya comprime; el resto es caso de ghSMART, caso de Zillmer y dos constataciones | que L129 (*"fun is closely tied to corporate culture"*) mas L141 (*"varies from person to person"*) basten como inventario de objetos |
+| **4** | **`disenar_incorporacion_cien_dias` SI da nodo**, aunque sea el mas delgado de las cinco olas (2.a P14) | el libro pone el objeto, su **frontera negativa** (*"more than just a welcome lunch and short orientation"*), su **responsable** (*"You, the hiring manager or board member"*) y sus **tres insumos** (tarjeta, abastecimiento, seleccion) | que *"a strong on-boarding program"* sea adjetivo de adecuacion en el sitio del criterio (`D.27` restriccion 2) y que el programa sea una META y no un medio (restriccion 1). **Es el que menos defiendo de los doce** |
+| **5** | **el noveno par de señal 3 sola NO crea una tercera especie: crea una FORMA nueva (la asimetria) dentro de la primera** (2.f.2) | la especie se define por la relacion de los nodos (hermano contra hermano, ola 4 contra ola 3), y la asimetria es una propiedad de la funcion, no del par | que la asimetria sea especie propia, porque cambia lo que le pasa al par (se lee o no se lee segun el orden de insercion) y no solo como se mide |
+| **6** | **publico DOS filas de candidatos por mil palabras para el Cap. 5** en vez de elegir (4.a) | el capitulo se mino a medias y las dos cifras dicen cosas distintas; elegir una escondería la otra | que la fila util sea una sola y que dar dos sea no decidir |
+| **7** | **la cifra de L235 no la cableo a ningun nodo** y la dejo declarada como atribucion pendiente (2.e) | es del metodo entero, no de vender, y su casa (`aplicar_metodo_ghsmart_contratacion`) ya paso la aduana y es cosa juzgada | que debi meterla en `atribuciones` de `vender_puesto_jugador`, porque el parrafo esta en este capitulo y ahi es donde el lector la buscara |
+| **8** | **`vender_puesto_jugador` pierde la A de *jugador A*** por la regla 3 (`a` es palabra vacia) | es cosa ya resuelta en la bandeja: `seleccionar_jugador_cuatro_entrevistas` hizo lo mismo en la vuelta 6 y paso, y la A viaja entera en `denominaciones` y en los pasos | que la A de *jugador A* sea denominacion y no preposicion, y que la regla necesite una excepcion escrita. **Yo no la propongo: la regla es de Alexis** |
+
+## C.7.4. TRES PROPUESTAS, NINGUNA ADJUDICADA POR MI
+
+**`EXTRACTOR.md` 14: el extractor PROPONE en su reporte y no se adjudica a si
+mismo.** Van como propuestas y sigo.
+
+| # | propuesta | de donde sale |
+|---:|---|---|
+| 1 | **que la marca `unidad` del recorte viaje por RANGO DE LINEA y no por FICHERO** | 0.c: en el borde `cap_06`/`cap_07` la cabecera del fichero no puede ser la del capitulo porque el capitulo cruza, y hoy no hay forma de decirlo dentro del recorte. **No toco `fuentes/`, que no es mi sede** |
+| 2 | **que la tabla de tramos del encargo separe *palabras del rango* de *palabras de cuerpo de capitulo*** | 0.c y 3.a: los 3.849 del Cap. 6 son rango y solo 370 son cuerpo, y la diferencia cambia el dimensionado del lote 3 en un factor de **3.849 / 370 = 10,4** |
+| 3 | **que la ficha del lote lleve *unidades LEIDAS* y *unidades MINADAS* como dos columnas** | 4.g: hoy la fila dice *leidas* y esta vuelta deja 6 leidas y 5 minadas enteras, dos cifras distintas que la misma celda no puede llevar |
+
+**Y UNA OBSERVACION QUE NO ES PROPUESTA PORQUE NO PIDE CAMBIAR NADA:** la asimetria
+de la señal 3 (2.f.2) hace que **el orden de insercion decida si un par llega a
+leerse**. No propongo tocar la señal ni el umbral (**ninguna vuelta mueve un
+umbral**, `EXTRACTOR.md` 11): lo dejo medido en sus dos sentidos, 0,613 y 0,587,
+para que quien decida el orden de insercion lo sepa.
+
+## C.7.5. LA COLA QUE DEJO, EN UNA LISTA
+
+1. **El resto del Cap. 5**: `cap_06.md` **L247 a L455**, **5.034 palabras, 105
+   bloques**. Frontera ya publicada (P18 y P19 de 2.a) pero **sin minar**. Trae
+   **una serie numerada de DIEZ** (`HOW TO INSTALL THE A METHOD FOR HIRING IN YOUR
+   COMPANY`, L253 a L277, con tres subpuntos dentro del 7) y **una de CUATRO**
+   (`LEGAL TRAPS TO AVOID`, L307 a L313).
+2. **El Cap. 6**: **`cap_07.md` L9 a L41, 370 palabras de cuerpo, 17 bloques.** Ni
+   abierto ni medido mas alla del recuento.
+3. **El material de cierre de libro**: `cap_07.md` **L43 a L429**, **3.479
+   palabras, 194 bloques**, desglosado tramo a tramo en 0.c. **No he juzgado si es
+   minable**: no lo he leido para eso.
+4. **Los 44 candidatos de la bandeja**, ninguno insertado, **los 44 en verde**.
+5. **Los 59 pares que la aduana levantara** el dia de la insercion, con sus **9
+   pares de señal 3 sola** identificados, clasificados y con su detalle de paso.
+6. **Las 9 aristas pendientes de 1.c** (una de ellas, la novena, ya con su id
+   existente) **mas las 11 que abre el Cap. 5** (2.e). **Ninguna cableada**, todas
+   nombradas en la prosa o en las `condiciones_activacion` para que se cableen por
+   lectura.
+7. **La cifra del autor de L235**, declarada y sin casa.
+8. **Los ocho discutibles de C.7.3 y las tres propuestas de C.7.4**, ninguno
+   adjudicado por mi.
