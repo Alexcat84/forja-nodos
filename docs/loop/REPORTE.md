@@ -3575,3 +3575,363 @@ autorice la insercion.**
                  3 identificar_competencias_tarjeta_puntuacion (L275)
                  4 alinear_comunicar_tarjeta_puntuacion        (L277)
     compresiones de esta numeracion: UNA, la cabeza. Ninguna otra.
+
+---
+
+## TAREA 3. Cap. 3, `Source: Generating a Flow of A Players`
+
+**EL MATERIAL, y es el que A.4 midio: `cap_03.md` L287 a L461 MAS `cap_04.md`
+L9 a L29.** El capitulo vive partido en dos ficheros y **su recuadro numerado
+esta partido por la mitad**: el titulo en un fichero y sus seis puntos en el
+otro. **Por eso se lee entero de una vez y se corta una sola vez.**
+
+### 3.a. LA FRONTERA, PUBLICADA ANTES DE CORTAR
+
+**EL RECUENTO DE BLOQUES, contado de los dos ficheros:**
+
+    sed -n '287,461p' cap_03.md | grep -c '[^[:space:]]'   ->  88 bloques
+    sed -n '9,29p'    cap_04.md | grep -c '[^[:space:]]'   ->  11 bloques
+                                              TOTAL Cap. 3 ->  99 bloques
+      de ellos titulos de seccion (cap_03)                 ->   8
+      de ellos puntos numerados   (cap_04 L9 a L19)        ->   6
+
+**99 bloques. Sin vinetas: este capitulo no tiene ni una.** La adjudicacion 9 no
+cambia el total aqui, y lo digo porque el silencio se leeria como olvido.
+
+### El mapa, tramo a tramo
+
+| lineas | que es | veredicto | por que |
+|---|---|---|---|
+| L287 a L289 | los consejeros delegados se consideran directores de reclutamiento y estan siempre abasteciendose | **postura** | es la tesis del capitulo. Ningun medio |
+| L291 a L295 | **el proceso tradicional**: se abre la vacante, el jefe entra en panico, llama a recursos humanos, copia una descripcion vieja, pasan tres meses, presiona, le presentan desconocidos y les aplican vudu | **antipatron, no procedimiento** | tiene etapas nombradas una a una, **pero son las de lo que NO hay que hacer**. Un procedimiento que el libro pone para que no lo ejecutes no tiene ejecutor. Va al `resumen_teorico` de la cabeza |
+| L297 | los viveros de talento se estancan, como charcas lejos del mar | **postura** | |
+| L299 | los anuncios generan un maremoto de curriculos y un mal flujo | **advertencia** | manual 4: una advertencia es linea |
+| L301 a L303 | **el metodo numero uno son las referencias**, y aqui importan menos la innovacion que el proceso y la disciplina | **hallazgo que ordena el capitulo** | va al `resumen_teorico` de la cabeza |
+| L305 a L307 | **REFERRALS FROM YOUR PROFESSIONAL AND PERSONAL NETWORKS** y el **77 por ciento** | **entrada mas cifra del autor** | el 77 por ciento va a `atribuciones` |
+| **L309 a L319** | Patrick Ryan: treinta al año, **la pregunta literal**, la lista, llamar a unos pocos cada semana; y despues **clientes, socios, proveedores y organizaciones profesionales**, cada uno con el oficio que hay que pedirles | **PROCEDIMIENTO** | **el tramo mas rico de todo el capitulo.** Cuatro fuentes nombradas una a una **con el oficio que se pide a cada una**, y la pregunta entre comillas |
+| L321 a L335 | Ryan y el consejo de Aon: Greg Case, Cameron Findlay | **caso** | |
+| L337 a L339 | **REFERRALS FROM EMPLOYEES** | **entrada** | |
+| L341 a L347 | Bassoul y Middleby (85 por ciento), Tudor Jones (60 por ciento), ghSMART (80 por ciento) | **tres casos con sus cifras** | las cifras son **del caso**, no de la casa. Van al `resumen_teorico` con su dueño |
+| **L349 a L351** | mete el abastecimiento **como resultado en la tarjeta de puntuacion** del empleado, con su formula, y premialo con incentivo economico o de otro tipo | **PROCEDIMIENTO** | inventario propio, y **engancha con el nodo de resultados del Cap. 2** |
+| L353 a L355 | **DEPUTIZING FRIENDS OF THE FIRM** y la metafora del sheriff | **entrada** | |
+| **L357 a L369** | la recompensa (hasta 5.000 dolares, vales regalo, aparatos), el **consejo asesor** (aconsejar y presentar, a cambio de algo de participacion o efectivo modesto), y las dos disciplinas: que reporten con regularidad y que el incentivo baste | **PROCEDIMIENTO** | |
+| L359 a L367 | BSMB y John Howard; WHI Capital y Eric Cohen | **casos** | |
+| L371 | *it takes one to know one* | **postura** | |
+| **L373 a L383** | **HIRING EXTERNAL RECRUITERS**: tratalos como socios, dejales mirar debajo del quimono, **comparte tu tarjeta de puntuacion**, y dejate educar sobre el mercado | **PROCEDIMIENTO** | |
+| L377 a L379 | Ed Evans, de Allied Waste | **caso** | |
+| **L385 a L393** | **HIRING RECRUITING RESEARCHERS**: que hacen y que no (no entrevistan), a quien le cae el filtrado, el riesgo de los cuerpos calientes, y orientarlos a tu cultura, necesidades y estilo | **PROCEDIMIENTO** | |
+| L395 a L397 | **SOURCING SYSTEMS**: el reto no es saber que hacer sino poner el sistema y tener disciplina | **entrada** | |
+| **L399 a L409** | las fichas de cartulina con el dato personal, la hoja de calculo ordenable por nombre y fecha, la lista semanal de llamadas por fecha de seguimiento, y los sistemas de seguimiento comprados | **PROCEDIMIENTO** | cuatro soluciones nombradas una a una, de la mas barata a la mas cara |
+| L407 | *no recomendamos proveedores concretos* | **NO se escribe** | el libro se niega expresamente. Un nombre aqui lo pondria yo |
+| **L411 a L419** | **la media hora semanal**: reunion fija el lunes o el viernes, cierra la puerta o vete a una sala, saca la lista, ordenala por prioridad, llama hasta tener **al menos una conversacion viva**, **el guion literal de apertura**, y **la pregunta literal de cierre** | **PROCEDIMIENTO** | **el segundo tramo mas rico del capitulo, y trae DOS textos entre comillas** |
+| L421 a L457 | **CASE STUDY: FINDING THE RIGHT CEO**: Bank One, Crown, Hall, Andrea Redmond y Jamie Dimon | **caso, el caso maestro** | 19 bloques. Entra como ejemplo nombrado |
+| **`cap_04.md` L9 a L19** | **HOW TO SOURCE**, recuadro de **6 puntos numerados** | **SERIE NUMERADA** | manual 3.4: un nodo por paso mas UNA cabeza |
+| `cap_04.md` L23 a L27 | por que salio bien la busqueda de Bank One; Hall vio de ocho a doce candidatos | **cierre del caso** | |
+| `cap_04.md` L29 | *the larger lessons*: contrata y educa al reclutador, que entienda tus necesidades y tu cultura, aprende de ella, **abastecete de todas partes incluida la red del consejo**, y **no sueltes el proceso** | **cierre del capitulo, va al `resumen_teorico` de la cabeza** | y **es el limite de esta tarea**, medido en A.4 |
+
+### El saldo del Cap. 3
+
+| | |
+|---|---:|
+| bloques leidos | **99** |
+| **procedimientos** | **8** |
+| posturas, advertencias y antipatrones | **5** tramos |
+| casos | **8** |
+| cifras del autor a `atribuciones` | **1** (el 77 por ciento de L307) |
+| cifras **del caso**, que se quedan con su dueño | **3** (85, 60 y 80 por ciento) |
+
+**LOS OCHO PROCEDIMIENTOS:**
+
+| # | id propuesto | de donde |
+|---:|---|---|
+| 1 | `abastecer_flujo_candidatos` | **la CABEZA** del recuadro `cap_04.md` L9 a L19 |
+| 2 | `pedir_referencias_red_personal` | punto 1 mas `cap_03.md` L309 a L319 |
+| 3 | `pedir_referencias_empleados` | punto 2 mas L349 a L351 |
+| 4 | `nombrar_delegados_amigos_casa` | punto 3 mas L357 a L369 |
+| 5 | `contratar_reclutadores_externos` | punto 4 mas L373 a L383 |
+| 6 | `contratar_investigadores_reclutamiento` | punto 5 mas L385 a L393 |
+| 7 | `crear_sistema_captura_seguimiento_candidatos` | punto 6 mas L399 a L409 |
+| 8 | `reservar_media_hora_semanal_talento` | L411 a L419 |
+
+### 3.b. EL JUICIO DIFICIL DE ESTE CAPITULO: por que el 8 no es una segunda compresion
+
+**El punto 6 del recuadro dice esto, y son DOS cosas dentro de un mismo punto:**
+
+    cap_04.md L19 : "SOURCING SYSTEMS. Create a system that (1) captures the
+                     names and contact information on everybody you source and
+                     (2) SCHEDULES WEEKLY TIME ON YOUR CALENDAR TO FOLLOW UP."
+
+**Y el capitulo dedica nueve bloques (L411 a L419) a lo que se hace DENTRO de ese
+tiempo semanal**, con dos textos literales entre comillas. **La duda es si eso es
+el punto 6 o es otro nodo**, y equivocarse aqui rompe la regla que el manual
+escribe en mayusculas: *jamas dos compresiones de la misma numeracion*.
+
+**LO SEPARO, y estas son las dos razones:**
+
+1. **NO ES UNA COMPRESION DE LA NUMERACION.** Una segunda compresion seria un
+   nodo que vuelve a resumir **los seis puntos**. Este resume **cero**: despliega
+   la mitad de uno. **La cabeza sigue siendo una y solo una.**
+2. **LOS DOS ENTREGABLES SON DISTINTOS Y LOS DOS SON PROCEDIMIENTO**, que es la
+   vara sin bascula del manual 4. El punto 6 entrega **un sistema** (hoja de
+   calculo, fichas o programa de seguimiento). El otro entrega **una conversacion
+   viva y un puñado de nombres nuevos**. Quitale a cada uno lo del otro y los dos
+   siguen ejecutandose.
+
+**Y HAY PRECEDENTE DE ESTA MISMA VUELTA, escrito hace media hora:**
+`evaluar_cultura_empresa_adjetivos` es exactamente la misma figura en el Cap. 2,
+hijo del punto 3 sin ser una segunda compresion del recuadro. **Si el auditor
+tumba uno, tumba los dos, y esa simetria es deliberada.**
+
+**Discutible 4**, y lo que cuesta si fallo: **dos nodos, uno por capitulo.**
+
+### 3.c. LO QUE SE QUEDA FUERA Y ESTUVO CERCA
+
+| lo que es | linea | por que no entra |
+|---|---|---|
+| **el proceso tradicional de contratacion** | L291 a L295 | **es el caso mas interesante de toda la vuelta.** Tiene etapas nombradas una a una, en orden, con su desenlace: pasaria la prueba del inventario **de calle**. Y no entra porque **son las etapas de lo que el libro te dice que NO hagas**, y `EXTRACTOR.md` 9 pide *pasos que alguien puede ejecutar*. **Nadie ejecuta un antipatron.** Va entero al `resumen_teorico` de la cabeza, que es donde el libro lo usa |
+| los anuncios | L299 | advertencia de una linea |
+| *no recomendamos proveedores* | L407 | el libro se niega en redondo. Poner un nombre seria puente |
+| el caso Bank One entero | L421 a L457 | 19 bloques, **el bloque de caso mas grande de las dos vueltas.** Es un caso: entra como ejemplo nombrado en la cabeza |
+| *it takes one to know one* | L371 | |
+
+**LA FILA 1 MERECE UNA LINEA MAS, porque es doctrina que esta vuelta descubre y
+no adjudica:** `D.27` pregunta si el libro pone su inventario, y **el antipatron
+lo pone**. La prueba del inventario, sola, **lo dejaria entrar**. Lo que lo tumba
+es la vara de que es un nodo (*pasos accionables que alguien puede ejecutar*).
+**Lo declaro como observacion medida, no como propuesta de mover `D.27`**, que no
+es mi sede y ademas el encargo lo prohibe expresamente.
+
+### 3.d. LOS OCHO CANDIDATOS, CON EL CICLO DE CINCO PASOS. **Los 8 pasaron**
+
+| # | id | pasos escritos | pasos finales | aduana en el acto |
+|---:|---|---:|---:|---|
+| 1 | `abastecer_flujo_candidatos` | 6 | 6 | **ENTRARIA** a la primera |
+| 2 | `pedir_referencias_red_personal` | 9 | **8** | **ENTRARIA**, y otra vez tras retirar un puente |
+| 3 | `pedir_referencias_empleados` | 5 | **4** | **ENTRARIA**, y otra vez tras retirar un puente y devolver una cifra |
+| 4 | `nombrar_delegados_amigos_casa` | 6 | 6 | **ENTRARIA** a la primera |
+| 5 | `contratar_reclutadores_externos` | 7 | **6** | **ENTRARIA**, y otra vez tras retirar un puente |
+| 6 | `contratar_investigadores_reclutamiento` | 6 | **5** | **ENTRARIA**, y otra vez tras retirar un puente |
+| 7 | `crear_sistema_captura_seguimiento_candidatos` | 7 | 7 | **ENTRARIA** a la primera |
+| 8 | `reservar_media_hora_semanal_talento` | 7 | 7 | **ENTRARIA** a la primera |
+| | **total** | **53** | **49** | **8 de 8 ENTRARIAN** |
+
+### 3.e. LOS CUATRO PUENTES DEL Cap. 3, Y TODOS SON LA MISMA ESPECIE
+
+**ESTE CAPITULO NO ME CAZO NI UN DESTINATARIO, NI UN PERIODO, NI UN RESPONSABLE,
+NI UNA CONCLUSION.** Los cuatro puentes son **la misma figura repetida**, y la
+figura ya la habia visto media hora antes en el Cap. 2 sin darle nombre:
+
+> **EL CASO ASCENDIDO A DOCTRINA. El libro cuenta lo que alguien HIZO, y el paso
+> lo escribe como lo que TU tienes que hacer.**
+
+| # | nodo, paso | lo que escribi | la linea, y por que NO lo manda |
+|---:|---|---|---|
+| 1 | `pedir_referencias_red_personal`, 5 | *Manten el contacto con los que parezcan mas prometedores.* | **L313**: *"Then HE stays in touch with those who seem to have the most promise."* Es lo que hace **Patrick Ryan**. El recuadro (`cap_04.md` L9) manda cuatro cosas y esta **no esta entre ellas** |
+| 2 | `pedir_referencias_empleados`, 4 | *Diles donde mirar: si veis a alguien como nosotros, en un cliente, en un proveedor o en un competidor...* | **L343**: es la cita de **Selim Bassoul** contando lo que Middleby dijo a SUS empleados. El recuadro manda *animalos a preguntar en sus redes*, que es otro acto |
+| 3 | `contratar_reclutadores_externos`, 7 | *Dejate educar por ellos sobre el mercado del talento.* | **L383**: *"That's part of what the best of the breed do. THEY EDUCATE YOU about the market for talent."* **Es una descripcion de lo que hacen los buenos, no una instruccion**, y ademas no la ejecuta el lector |
+| 4 | `contratar_investigadores_reclutamiento`, 6 | *Si el flujo te desborda, pideles que criben algo mas a fondo.* | **L391**: *"ONE COMPANY WE KNOW was so overwhelmed... that it finally asked its researchers to screen candidates a little more thoroughly."* El libro **reporta**, no manda |
+
+**LOS CUATRO RETIRADOS. Ninguno reescrito**, porque no habia nada del libro que
+salvar: el material de los cuatro sigue vivo en el `resumen_teorico` de su nodo,
+**con su dueño delante**, que es donde la seccion 3.5 dice que va un caso.
+
+### 3.f. LA LINEA QUE TUVE QUE TRAZAR PARA DECIDIR, Y ES LO MAS DIFICIL DE LA VUELTA
+
+**El problema: si retiro TODO lo que el libro cuenta a traves de alguien, este
+capitulo se queda sin nodos.** Ocho de sus 99 bloques son caso, y las fichas de
+cartulina, la hoja de calculo y el consejo asesor **tambien llegan contadas por
+un tercero**. Con la regla aplicada a bulto, `crear_sistema_captura_seguimiento_candidatos`
+pierde tres de sus siete pasos y deja de ser un procedimiento.
+
+**LA LINEA QUE APLIQUE, y la publico para que se pueda tumbar entera:**
+
+> **Si el libro MANDA el acto y despues enumera los MEDIOS con que se hace, los
+> medios son INVENTARIO y se transcriben, aunque el libro los ilustre con quien
+> los usa.**
+>
+> **Si el libro no manda nada y solo cuenta lo que alguien hizo, es CASO y se
+> retira**, aunque de ahi salga un buen consejo.
+
+**LOS DOS LADOS, con el par que mejor los separa y que esta a nueve lineas de
+distancia dentro del mismo capitulo:**
+
+| | ENTRA como inventario | SALE como caso |
+|---|---|---|
+| ejemplar | L401, las fichas de cartulina del directivo metodico, con el nombre de la pareja y la aficion | L313, Patrick Ryan manteniendo el contacto con los mas prometedores |
+| el mandato del libro | **`cap_04.md` L19 lo manda**: *crea un sistema que capture los nombres... tan simple como una hoja de calculo* | **`cap_04.md` L9 NO lo manda.** Manda hacer la lista, hablar una vez por semana, preguntar y seguir construyendo |
+| que aporta el tercero | **el COMO** de un acto ya mandado | **un acto entero que nadie mando** |
+
+**ESTA LINEA NO MUEVE `D.27` NI LA PRUEBA DEL INVENTARIO**, y quiero que quede
+dicho: es una manera de **aplicarlas** a un capitulo narrado en tercera persona,
+no una frontera nueva. **Si el auditor la tumba, lo que cae son cuatro pasos que
+ya retire y tres que conserve, no una regla.**
+
+**Discutible 5**, y lo que cuesta si fallo: tres pasos de
+`crear_sistema_captura_seguimiento_candidatos`, y con ellos el nodo entero.
+
+### 3.g. LA CIFRA DE PUENTES DEL Cap. 3, Y LA COMPARACION QUE DESMONTA MI PROPIA LECTURA
+
+| | Cap. 2 | **Cap. 3** |
+|---|---:|---:|
+| pasos escritos | 35 | **53** |
+| puentes en pasos | 1 | **4** |
+| **tasa** | **2,86 por ciento** | **7,55 por ciento** |
+| puentes en prosa | 1 | 0 |
+| bloques del capitulo | 139 | 99 |
+| **bloques que son caso** | 11 tramos | **8 tramos, y uno de 19 bloques** |
+
+**HACE UNA HORA ESCRIBI, EN 2.g, QUE LA TASA BAJA DE PUENTES MEDIA UN LIBRO RICO
+EN INVENTARIO. EL Cap. 3 DEL MISMO LIBRO LA TRIPLICA, Y LO DIGO EN VEZ DE
+CALLARLO.**
+
+**Lo que la vuelta entera deja medido no es *libro rico contra libro pobre*: es
+otra cosa, y es mas util:**
+
+> **`D.30` dice que el puente sale del PARRAFO POBRE. Esta vuelta mide una
+> segunda fuente, y no tiene nada que ver con la pobreza: el puente sale del
+> PARRAFO NARRADO EN TERCERA PERSONA.**
+>
+> - El Cap. 2 tiene 11 tramos de caso y **una tasa de 2,86**, porque su doctrina
+>   va en imperativo y los casos estan claramente aparte.
+> - El Cap. 3 tiene 8 tramos de caso **entretejidos con la doctrina** (Ryan
+>   dentro del punto 1, Bassoul dentro del punto 2, Evans dentro del punto 4), y
+>   **triplica la tasa**.
+>
+> **No es cuanto caso hay: es si el caso esta separado o mezclado con el
+> mandato.** Cuando esta mezclado, la frase de al lado suena a instruccion y no
+> lo es.
+
+**NO PROPONGO UNA QUINTA ESPECIE PARA `D.30`.** El auditor acaba de adjudicar
+(fila 7) que una especie nueva es *un CASO añadido a un catalogo*, y esta casa
+tiene ahora **cuatro ejemplares medidos de la misma figura en un solo capitulo**.
+**Lo dejo como observacion con sus cuatro ejemplares pegados**, que es lo unico
+que mi sede me permite, y el auditor decide si es especie o si es la vieja del
+destinatario vista de perfil.
+
+### 3.h. EL INFORME DEL LOTE ENTERO AL CERRAR EL Cap. 3
+
+`python forja.py informe --carpeta cuarentena/smart_who`:
+
+    candidatos revisados        : 17
+    nodos en el grafo de destino: 8
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 17
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+**17 de 17 ENTRARIAN. Cero caidas en las dos vueltas de este lote.**
+
+### 3.i. LA MEDICION DE VECINOS, RECOMPUTADA AL CIERRE SOBRE LOS 17
+
+*Seccion 4: **toda cifra se remide al cierre si algo de la propia vuelta pudo
+haberla movido**, y esta vuelta añadio 15 candidatos y retiro 4 pasos DESPUES de
+la medicion de 2.h. **Asi que 2.h queda como medicion intermedia del Cap. 2 y
+esta es la del cierre.***
+
+| lo medido sobre los 17 | cifra |
+|---|---:|
+| pares ordenados | **272** |
+| pares que levantarian | **38** |
+| de ellos por `familia_id` | **34** |
+| de ellos por `paso_contra_nodo` | **10** |
+| de ellos por `similitud_texto` | **0** |
+| maximo `similitud_texto` del lote | **0,325**, a 0,025 del umbral |
+
+**HALLAZGO 1, y corrige una lectura mia de 2.h.** Alli publique que
+`familia_id` medía **0,333 en los 32 pares, en todos**. **Sobre los 17 eso ya no
+se sostiene:** los valores de `familia_id` entre los pares que levantan son
+**0,0, 0,2, 0,333 y 0,4**. Lo que era cierto de seis hermanos de la misma serie
+**deja de serlo en cuanto entra otra serie con otras piezas.** La cifra de 2.h no
+estaba mal medida: **estaba mal generalizada**, y esa es exactamente la especie
+que el encargo me señalo cuatro vueltas seguidas.
+
+**HALLAZGO 2: el maximo de `familia_id` del lote es 0,400**, y es un par solo:
+
+    pedir_referencias_empleados  contra  pedir_referencias_red_personal   0,400
+                                                    (y 0,400 en el otro sentido)
+
+Dos piezas comunes de cinco (`pedir` y `referencias`). **Es el par mas cercano
+del lote por familia Y el segundo por paso contra nodo, y aun asi es SANO**: uno
+pide fuera y otro pide dentro, y el propio libro los separa en dos puntos
+numerados distintos.
+
+**HALLAZGO 3: CUATRO pares levantan SOLO por `paso_contra_nodo`, con la familia
+POR DEBAJO del umbral, y dos de ellos con la familia en CERO.**
+
+    abastecer_flujo_candidatos      contra pedir_referencias_empleados     fam 0,000  paso 0,607
+    pedir_referencias_empleados     contra abastecer_flujo_candidatos      fam 0,000  paso 0,607
+    contratar_investigadores_recl.  contra contratar_reclutadores_externos fam 0,200  paso 0,730
+    contratar_reclutadores_externos contra contratar_investigadores_recl.  fam 0,200  paso 0,730
+
+> **ESTE ES EL PRIMER CASO MEDIDO EN ESTA CASA DE UN VECINO QUE **SOLO** LA
+> SEÑAL 3 VE.** Con familia 0,000 no hay ni una pieza comun, y sin embargo el
+> paso 2 de la cabeza y el paso 1 del punto 2 miden 0,607. **La calibracion dice
+> que la señal 3 caza el 87,2 por ciento de los gemelos y paga 2,4 de cola falsa
+> por candidato: aqui se ve por que se paga.**
+
+**HALLAZGO 4: el par mas alto de todo el lote es 0,730**, y es
+`contratar_reclutadores_externos` contra `contratar_investigadores_reclutamiento`,
+**en los dos sentidos**. Es el unico par del lote por encima de 0,70.
+
+**EL VEREDICTO QUE YO ESCRIBIRIA PARA ESE PAR, dejado listo y sin escribir**
+(`bitacora/VEREDICTOS.jsonl` la escribe la aduana, seccion 14):
+
+| | |
+|---|---|
+| par | `contratar_investigadores_reclutamiento` contra `contratar_reclutadores_externos` |
+| señal | `paso_contra_nodo` **0,730** en los dos sentidos, y **`familia_id` solo 0,200** |
+| que paso choca | *asegurate de que entienden tu negocio y tu cultura* contra *invierte tiempo en asegurarte de que los reclutadores entienden tu negocio y tu cultura*. **El libro dice casi lo mismo en los puntos 4 y 5 de su recuadro** |
+| clase que leo | **SANO. Continua NO, repite NO** |
+| razon | El libro los separa **el mismo** en dos puntos numerados, y manual 3.4 manda **un nodo por paso**. Y lo que queda fuera es procedimiento en los dos lados, que es la vara sin bascula: el reclutador **entrevista y cualifica**, el investigador **no entrevista** y deja el filtrado al equipo interno. **Comparten una frase, no un procedimiento** |
+
+**HALLAZGO 5: CUATRO de los 17 no levantan a nadie ni son levantados por nadie**
+en ninguno de sus pares:
+
+    crear_sistema_captura_seguimiento_candidatos
+    evaluar_cultura_empresa_adjetivos
+    nombrar_delegados_amigos_casa
+    reservar_media_hora_semanal_talento
+
+**Y TRES DE LOS CUATRO SON HIJOS DECLARADOS POR LECTURA en este mismo reporte.**
+Es la seccion 11 con cifra propia y por segunda vez en la vuelta:
+
+> **UN CANDIDATO QUE ENTRA CON LA COLA VACIA NO ESTA CERTIFICADO COMO SIN MADRE:
+> ESTA CERTIFICADO COMO SIN GEMELO.**
+
+### 3.j. LAS ARISTAS DEL Cap. 3, DECLARADAS POR LECTURA Y SIN CABLEAR
+
+| madre | hijo | señal | por que |
+|---|---|---|---|
+| `aplicar_metodo_ghsmart_contratacion` | `abastecer_flujo_candidatos` | no medida | **arista pendiente 1: SEGUNDO hijo de la cabeza entregado.** Source es el paso 2 de los cuatro del metodo A |
+| `abastecer_flujo_candidatos` | `pedir_referencias_red_personal` | no (0,52 y por debajo) | cabeza de serie a su punto 1 |
+| `abastecer_flujo_candidatos` | `pedir_referencias_empleados` | **si, 0,607, y con familia CERO** | cabeza a su punto 2 |
+| `abastecer_flujo_candidatos` | `nombrar_delegados_amigos_casa` | **no, cero señales** | cabeza a su punto 3 |
+| `abastecer_flujo_candidatos` | `contratar_reclutadores_externos` | no | cabeza a su punto 4 |
+| `abastecer_flujo_candidatos` | `contratar_investigadores_reclutamiento` | no | cabeza a su punto 5 |
+| `abastecer_flujo_candidatos` | `crear_sistema_captura_seguimiento_candidatos` | **no, cero señales** | cabeza a su punto 6 |
+| `crear_sistema_captura_seguimiento_candidatos` | `reservar_media_hora_semanal_talento` | **no, cero señales** | el punto 6 manda que el sistema **reserve tiempo semanal**; este nodo es lo que se hace en ese tiempo. **Misma figura que `evaluar_cultura_empresa_adjetivos` en el Cap. 2** |
+| `contratar_reclutadores_externos` | `crear_tarjeta_puntuacion_puesto` | no | el punto 4 manda **construir una tarjeta de puntuacion** para las necesidades de reclutamiento. **Arista que CRUZA capitulos dentro de la vuelta** |
+| `pedir_referencias_empleados` | `definir_resultados_tarjeta_puntuacion` | no | el punto 2 manda **añadir el abastecimiento como un resultado** en la tarjeta. **Segundo cruce entre los dos capitulos** |
+
+**DE ESTAS DIEZ ARISTAS, LA SEÑAL LEVANTA UNA.** Nueve de diez las encontro la
+lectura, y **las dos ultimas cruzan de capitulo**: el Cap. 3 usa la tarjeta de
+puntuacion del Cap. 2 como herramienta suya, dos veces y en dos puntos distintos
+de su recuadro. **Ninguna se cablea**: ningun id de estos vive en el dataset.
+
+### 3.k. LA SERIE NUMERADA DEL Cap. 3, PARA EL CENSO
+
+    numeracion : "HOW TO SOURCE", titulo en cap_03.md L461 y puntos en cap_04.md L9 a L19
+                 6 puntos, PARTIDOS ENTRE DOS FICHEROS (ver A.4)
+    cabeza     : abastecer_flujo_candidatos
+    pasos      : 1 pedir_referencias_red_personal                (L9)
+                 2 pedir_referencias_empleados                   (L11)
+                 3 nombrar_delegados_amigos_casa                 (L13)
+                 4 contratar_reclutadores_externos               (L15)
+                 5 contratar_investigadores_reclutamiento        (L17)
+                 6 crear_sistema_captura_seguimiento_candidatos  (L19)
+    fuera de la numeracion, hijo del punto 6:
+                   reservar_media_hora_semanal_talento           (L411 a L419 del cap_03.md)
+    compresiones de esta numeracion: UNA, la cabeza. Ninguna otra.

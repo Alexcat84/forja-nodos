@@ -1,0 +1,48 @@
+{
+  "atribuciones": [
+    {
+      "autor": "Geoff Smart y Randy Street",
+      "cifra": "sin que se lo preguntaran, un 77 por ciento de los lideres del sector entrevistados para el libro cito las referencias como su tecnica principal para generar un flujo de los candidatos adecuados",
+      "fecha_corte": "2008",
+      "fuente": "smart_who"
+    }
+  ],
+  "condiciones_activacion": "Siempre, y no cuando se abre una vacante. El libro dice que estos directivos no dejan que el reclutamiento se convierta en un acto puntual: estan siempre abasteciendose, siempre al acecho de talento nuevo, siempre identificando al quien antes de que el fichaje haga falta de verdad.",
+  "denominaciones": {
+    "nombre_largo": "Abastecerse: generar un flujo de jugadores A",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Source: Generating a Flow of A Players"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "How to Source"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Un flujo continuo de candidatos jugadores A entrando en tu red, con sus nombres capturados y su seguimiento en marcha, disponible antes de que haya una plaza que cubrir.",
+  "escala_minima": "El libro dice que practicamente cualquier organizacion, del tamaño que sea, puede conseguir el mismo efecto metiendo el abastecimiento interno en las tarjetas de puntuacion de sus empleados.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "abastecer_flujo_candidatos",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Referencias de tus redes profesional y personal: haz una lista de las diez personas mas talentosas que conoces y comprometete a hablar con al menos una de ellas por semana durante las diez semanas siguientes. Al final de cada conversacion pregunta quienes son las personas mas talentosas que conocen. Sigue construyendo la lista y sigue hablando con al menos una persona por semana.",
+    "Referencias de tus empleados: añade el abastecimiento como un resultado en la tarjeta de puntuacion de todos los de tu equipo, por ejemplo abastecer cinco jugadores A al año que pasen nuestra criba telefonica. Anima a tus empleados a preguntar a la gente de sus redes quienes son las personas mas talentosas que conocen y que deberiamos contratar. Ofrece una prima por referencia.",
+    "Nombrar delegados entre los amigos de la casa: considera ofrecer una recompensa por referencia a unos cuantos amigos de la casa elegidos. Puede ser tan barata como un vale regalo o tan cara como una prima en efectivo significativa.",
+    "Contratar reclutadores: usa el metodo descrito en este libro para identificar y contratar reclutadores que sean jugadores A. Construye una tarjeta de puntuacion para tus necesidades de reclutamiento y haz responsables a los reclutadores que contrates de lo que hay en esa tarjeta. Invierte tiempo en asegurarte de que los reclutadores entienden tu negocio y tu cultura.",
+    "Contratar investigadores: identifica investigadores de reclutamiento a los que puedas contratar por contrato, usando una tarjeta de puntuacion para especificar tus requisitos. Asegurate de que entienden tu negocio y tu cultura.",
+    "Sistemas de abastecimiento: crea un sistema que capture los nombres y los datos de contacto de todas las personas que abasteces y que reserve tiempo semanal en tu calendario para hacer seguimiento. Tu solucion puede ser tan simple como una hoja de calculo o tan compleja como un sistema de seguimiento de candidatos integrado con tu calendario."
+  ],
+  "resumen_teorico": "Es la cabeza de la serie numerada del recuadro How to Source, y el segundo de los cuatro pasos del metodo A de ghSMART. Conseguir grandes candidatos no ocurre sin esfuerzo significativo: los consejeros delegados de las empresas de mil millones entrevistados para el libro reconocen el reclutamiento como uno de sus trabajos mas importantes, se consideran a si mismos directores de reclutamiento y esperan que todos sus mandos vean su trabajo igual. El antipatron que el libro pone enfrente, paso por paso, es el proceso tradicional: se abre una vacante en la division de un jefe y el jefe entra en panico, no tiene ni idea de como va a cubrir la plaza, llama a recursos humanos y suplica ayuda, recursos humanos le pide una descripcion del puesto que el copia de una vieja que encuentra, pasan tres meses sin traccion, el jefe desesperado presiona para que le abastezcan mas gente, y al final le presentan unos pocos candidatos de los que nadie en la casa sabe nada, a los que se somete a multiples formas de metodos de vudu con la esperanza de acertar. El diagnostico: ese enfoque es pasivo y depende de encontrar gente en viveros de talento en el momento de la necesidad, y los viveros se estancan como las charcas de marea lejos del mar. Los anuncios son una buena forma de generar un maremoto de curriculos y una mala forma de generar el flujo adecuado. De todas las maneras de abastecer candidatos, la numero uno es pedir referencias a tus redes personal y profesional: puede dar miedo y llevar tiempo, pero es la mas eficaz para encontrar jugadores A potenciales, y es un caso donde la innovacion importa mucho menos que el proceso y la disciplina. El caso maestro es el de Bank One: el consejo, con James Crown y John Hall, partio de una tarjeta de puntuacion quiza demasiado basica, contrato a la reclutadora Andrea Redmond para afinarla hasta hacerla accionable, y abastecio candidatos combinando el trabajo de ella con la red del propio consejo hasta llegar a Jamie Dimon. Las lecciones mayores que el libro saca de ahi: tomate el tiempo de contratar y educar a la reclutadora adecuada, asegurate de que entiende tus necesidades y tu cultura, no pierdas la oportunidad de aprender de ella, abastecete de todas partes incluida la red del consejo, y sigue implicado, porque si tu no eres el dueño del proceso no lo sera nadie.",
+  "titulo": "Abastecerse de candidatos jugadores A, con sus seis vias"
+}

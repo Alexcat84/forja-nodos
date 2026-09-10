@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando quieres ampliar tu esfuerzo de abastecimiento con un coste minimo y variable. El libro dice que las firmas de reclutamiento externas contratan a menudo investigadores para explorar un mercado, identificar fuentes de talento y devolverle nombres a la firma, y que tu puedes hacer lo mismo directamente.",
+  "denominaciones": {
+    "nombre_largo": "Contratar investigadores de reclutamiento",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Hiring Recruiting Researchers"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Una tuberia de nombres entrando a coste minimo para que tu equipo interno de reclutamiento o tus mandos los persigan, con los investigadores contratados por contrato y orientados a tu negocio y tu cultura.",
+  "escala_minima": "El libro dice que por un coste minimo se consigue una tuberia que pincha en una fuente rica de talento, y que contratarlos por contrato ayuda a mantener una estructura de coste variable.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "contratar_investigadores_reclutamiento",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Identifica investigadores de reclutamiento a los que puedas contratar por contrato.",
+    "Usa una tarjeta de puntuacion para especificar tus requisitos.",
+    "Asegurate de que entienden tu negocio y tu cultura.",
+    "Cuenta con que no van a entrevistar ellos: lo que hacen es identificar nombres para que tu equipo interno de reclutamiento o tus mandos los persigan, y el proceso de filtrado cae sobre los reclutadores internos o directamente sobre el jefe que contrata.",
+    "Tomate tiempo al principio para orientarlos a tu cultura, a tus necesidades de negocio e incluso a tu estilo y tus preferencias de direccion, porque cuanto mas sepan al entrar mas sacaras de ellos al final."
+  ],
+  "resumen_teorico": "Es el punto 5 del recuadro How to Source. Los beneficios que el libro le atribuye son obvios: por un coste minimo las empresas obtienen una tuberia que pincha en una fuente rica de talento, y contratarlos por contrato ayuda ademas a mantener una estructura de coste variable. Las dos pegas que el libro pone enfrente, y que son la razon de la mayoria de los pasos: la primera es que los investigadores no van a cualificar a los candidatos tan a fondo como a ti te gustaria, y ese trabajo de verificacion recae sobre los reclutadores internos o sobre el jefe que contrata; la segunda es que un enfasis en la cantidad por encima de la calidad puede atascar el proceso de contratacion con cuerpos calientes, y el libro cuenta el caso de una empresa que se vio tan desbordada por el flujo entrante que acabo pidiendo a sus investigadores que cribaran algo mas a fondo, lo que redujo el flujo de gente pero aumento su valor. La diferencia con el reclutador externo, que el propio libro subraya: a diferencia de los reclutadores ejecutivos de fuera, no es probable que los investigadores se conviertan en tu nuevo mejor amigo.",
+  "titulo": "Contratar investigadores de reclutamiento por contrato"
+}

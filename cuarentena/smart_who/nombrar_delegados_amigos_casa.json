@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando quieres extender el alcance de tu busqueda mas alla de tu propia red y de tus empleados, apoyandote en las personas mas influyentes que conoces.",
+  "denominaciones": {
+    "nombre_largo": "Nombrar delegados entre los amigos de la casa",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Deputizing Friends of the Firm"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Una red de delegados y, si procede, un consejo asesor, reportando con regularidad y trayendo fuentes de talento nuevas y aceleradas.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "nombrar_delegados_amigos_casa",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Elige a unos cuantos amigos de la casa entre las personas mas influyentes de tu red y nombralos delegados de tu busqueda.",
+    "Ofreceles una recompensa por referencia. El libro dice que puede ser tan barata como un vale regalo o tan cara como una prima en efectivo significativa, y da los dos extremos que ha visto: primas de hasta 5.000 dolares si la empresa contrata a alguien que el delegado abastecio, segun el nivel del fichaje, y en otras casas vales regalo, aparatos electronicos y otros articulos de valor.",
+    "Si tu empresa es temprana, considera montar un consejo asesor que haga el mismo papel: unos asesores que no se meten en el gobierno de la compañia ni asumen responsabilidad fiduciaria, y cuya razon de ser es aconsejar y hacer presentaciones, a cambio de una pequeña cantidad de participacion o de una compensacion modesta en efectivo.",
+    "Asegurate de que los delegados reportan con regularidad.",
+    "Comprueba y vuelve a comprobar que el incentivo que has elegido basta para que gente ocupada participe.",
+    "Recuerda que quieres que las recomendaciones vengan de jugadores A, porque hace falta uno para conocer a otro."
+  ],
+  "resumen_teorico": "Es el punto 3 del recuadro How to Source. La metafora con la que el libro lo presenta viene del lejano Oeste: cuando el sheriff se preparaba para salir al monte a cazar a una banda de villanos, reunia a un puñado de ciudadanos principales del pueblo, los nombraba agentes temporales y la partida salia cabalgando hacia el atardecer. La aplicacion de los autores es que extender el alcance de tu busqueda nombrando delegados entre las personas mas influyentes de tu red sigue siendo una buena idea. El caso nombrado es BSMB, un fondo de compras apalancadas de varios miles de millones con sede en Nueva York, que ha construido a proposito una red extensa de delegados para abastecer a las empresas de su cartera: su consejero delegado John Howard la describe como un grupo de directivos senior con toda clase de pericia a los que pueden llamar en cualquier momento cuando necesitan jugadores A de un sector concreto, y el incentivo que usan es particular del negocio e ingenioso, porque los delegados pueden invertir en sus fondos sin comisiones. El otro caso es WHI Capital Partners, que ha construido a la vez red y varios consejos asesores y que, segun su socio director Eric Cohen, no ha usado ni un reclutador para contratar a los cinco consejeros delegados y los diez directivos de alto nivel de su cartera. Su comparacion: es como el cortejo, porque si te presentan a alguien al azar en un bar hay una posibilidad de que salga bien, pero la tasa de exito es mas alta si te presenta un amigo o un familiar.",
+  "titulo": "Nombrar delegados entre los amigos de la casa"
+}

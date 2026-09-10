@@ -1,0 +1,46 @@
+{
+  "atribuciones": [
+    {
+      "autor": "Geoff Smart y Randy Street",
+      "cifra": "sin que se lo preguntaran, un 77 por ciento de los lideres del sector entrevistados cito las referencias como su tecnica principal para generar el flujo de candidatos adecuados, y sin embargo entre los directivos corrientes es el enfoque menos practicado",
+      "fecha_corte": "2008",
+      "fuente": "smart_who"
+    }
+  ],
+  "condiciones_activacion": "Siempre, y no solo cuando hay una plaza abierta. Es el punto 1 del recuadro de abastecimiento y el metodo que el libro pone como numero uno de todos: de todas las maneras de abastecer candidatos, la primera es pedir referencias a tus redes personal y profesional.",
+  "denominaciones": {
+    "nombre_largo": "Referencias de tus redes profesional y personal",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Referrals from Your Professional and Personal Networks"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Una lista de talento en crecimiento continuo, alimentada a razon de al menos una conversacion por semana, que segun el libro pasa de las diez personas iniciales a otros cincuenta o cien nombres.",
+  "escala_minima": "Arranca con diez personas que casi con seguridad puedes identificar de memoria, y una conversacion por semana durante diez semanas.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "pedir_referencias_red_personal",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Haz una lista de las diez personas mas talentosas que conoces. El libro dice que casi con seguridad puedes identificarlas de memoria.",
+    "Comprometete a hablar con al menos una de ellas por semana durante las diez semanas siguientes.",
+    "Al final de cada conversacion haz la pregunta: quienes son las personas mas talentosas que conoces que yo deberia contratar.",
+    "Captura esos nombres en la lista y sigue construyendola, y sigue hablando con al menos una persona por semana.",
+    "No te pares en tu lista: mete tambien a tus contactos de negocio mas amplios en la caceria. Pregunta a tus clientes por los nombres de los mejores vendedores que los visitan.",
+    "Pregunta a tus socios de negocio quienes creen que son los desarrolladores de negocio mas eficaces.",
+    "Haz lo mismo con tus proveedores para identificar a sus agentes de compras mas fuertes.",
+    "Entra en organizaciones profesionales y pregunta a la gente que conoces en sus eventos."
+  ],
+  "resumen_teorico": "Es el punto 1 del recuadro How to Source y el metodo que el libro pone por delante de todos los demas. Los lideres del sector entrevistados no hablaban con una sola voz en todos los temas, pero en el de abastecerse de talento nuevo por referencias fueron casi unanimes. La razon de fondo que da el libro: la gente que interactua contigo todos los dias es la fuente de talento mas poderosa que vas a encontrar nunca, y la gente talentosa conoce a gente talentosa y casi siempre esta encantada de pasar los nombres de unos a otros. La advertencia con la que el capitulo lo presenta: este enfoque puede dar miedo y llevar tiempo, y es aun asi la forma mas eficaz que existe de encontrar jugadores A potenciales, y es un caso donde la innovacion importa mucho menos que el proceso y la disciplina. El caso que el libro pone con su nombre es el de Patrick Ryan, que hizo crecer Aon Corporation desde una empresa naciente en 1964 hasta una compañia de 13.000 millones de dolares: dice que no es mas listo que el de al lado y que lo unico que ha hecho distinto de la mayoria es estar constantemente a la caza de gente talentosa para su empresa. Se fijo el objetivo de reclutar personalmente a treinta personas al año para Aon y pidio a sus directivos que hicieran lo mismo. Cuando conoce a alguien nuevo le hace siempre la misma pregunta simple y poderosa, captura los nombres en una lista, se ocupa de llamar a unos pocos nuevos cada semana y mantiene el contacto con los mas prometedores. Asi llego a Greg Case, al que ficho pese a que la gente decia que a sus cuarenta y dos años no tenia experiencia de consejero delegado, y a su asesor juridico Cameron Findlay.",
+  "titulo": "Pedir referencias a tus redes profesional y personal"
+}
