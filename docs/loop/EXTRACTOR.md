@@ -454,6 +454,55 @@ pide arista y nombre propio, o lo repite, y entonces no entra.
 - **Regla 5:** verbo mas objeto, minimo dos piezas.
 - **Regla 6:** `snake_case` estricto, minusculas y sin acentos.
 
+## 15.4. LA RELECTURA DE FIDELIDAD, que la aduana NO puede hacer por ti
+
+*`D.30` del banco, ratificada por el fundador el 10 sep 2026. Es la leccion mas
+cara que ha comprado esta casa: costo una vuelta entera de reparacion.*
+
+> **NINGUNA GUARDA DE ESTA CASA VE UN PASO QUE TU ESCRIBISTE Y EL LIBRO NO DICE.**
+
+**LA CIFRA DEL LOTE 1: 13 de 36 pasos, el 36 por ciento, los habia puesto el
+extractor y no el libro. Y la aduana dio 6 de 6 verdes ANTES y DESPUES de
+corregirlos.** El mismo informe, el mismo saldo, trece defectos en medio.
+
+**No es que la puerta este abierta:** mordida a proposito, la misma puerta tumba
+una fuente mutada y un candidato con los pasos vacios. **Es que mide otra cosa.**
+La aduana compara tu candidato con el grafo y consigo mismo; **no tiene el libro
+delante**, y no puede tenerlo.
+
+> **LA RELECTURA DE FIDELIDAD ES OBLIGATORIA EN TODA VUELTA, ANTES DE CUALQUIER
+> INSERCION. NINGUNA MEDIDA DE LA ADUANA LA SUSTITUYE.** Un informe verde
+> certifica que la ficha esta bien construida, **no que sus pasos sean del libro.**
+
+**COMO SE HACE, EN EL ACTO DE ESCRIBIR CADA CANDIDATO:**
+
+1. **Marca cada paso contra su parrafo:** **TRANSCRIPCION** (el libro pone el
+   medio, la etapa o el objeto) o **PUENTE** (lo escribiste tu).
+2. **Cada PUENTE se retira o se reescribe**, y **citas el parrafo que NO lo
+   dice**, con su fichero y su linea. **Un puente no se queda callado dentro de
+   un nodo.**
+3. **En el mismo acto**, no en una vuelta posterior. El lote 1 gasto una vuelta
+   entera reparando trece puentes; aplicada al escribir, habria salido sin deuda.
+
+**LAS TRES ESPECIES DE PUENTE QUE EL LOTE 1 PAGO, y son las que volveras a
+escribir sin darte cuenta:**
+
+| especie | ejemplar del lote 1 |
+|---|---|
+| **el destinatario** | *traslada el expediente a la autoridad que puede hacer efectiva esa norma*. El parrafo alienta a vigilar y **no encarga ningun traslado** |
+| **el periodo** | *fija por escrito cada cuanto se examina*. El parrafo dice *periodicamente* y **el periodo lo pusiste tu** |
+| **el responsable** | *escribe quien responde de cada regla*. El parrafo pone tres etapas y **ningun responsable** |
+
+**Y EL AVISO QUE DICE DONDE MIRAR:** el parrafo mas rico del lote (cinco medios
+nombrados) dio **0 por ciento** de puentes; el mas pobre (una frase) dio **83 por
+ciento**.
+
+> **UN PARRAFO POBRE NO PRODUCE UN NODO POBRE: PRODUCE UN NODO INVENTADO.**
+
+**Cuando el inventario del libro sea delgado, desconfia de tus propios pasos.** La
+tentacion de completarlo no se nota mientras se escribe, y **ninguna guarda la
+nota despues.**
+
 ## 16. CADA CANDIDATO PASA POR LA ADUANA EN EL MISMO ACTO EN QUE SE ESCRIBE
 
 *Regla madre: decision del fundador del 10 sep 2026, D.23. La aduana NO se

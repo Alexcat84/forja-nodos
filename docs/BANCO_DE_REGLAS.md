@@ -816,3 +816,87 @@ maquinaria:** `difflib.SequenceMatcher(a, b).ratio()` no es simetrico, y el mism
 par mide `0,602410` en un sentido y `0,572289` en el otro. **No se toca el
 `ratio`, no se toca la señal, no se rehace la calibracion.** Se sabe, y por eso
 la lectura no delega en la señal.
+
+## D.30. LA ADUANA CAZA LA FORMA; LA FIDELIDAD LA CAZA OTRO LECTOR (10 sep 2026, RATIFICADA POR EL FUNDADOR)
+
+*Es la leccion medida del lote 1, y la mas cara que ha comprado esta casa: costo
+una vuelta entera de reparacion. La ratifica el fundador el mismo dia en que
+autoriza la primera insercion real.*
+
+> **NINGUNA GUARDA DE ESTA CASA VE UN PASO QUE EL EXTRACTOR ESCRIBIO Y EL LIBRO
+> NO DICE.**
+
+**LA CIFRA, contada parrafo a parrafo y no estimada: 13 de los 36 pasos del lote
+1, el 36 por ciento.** Cuatro de los seis candidatos llevaban al menos uno. Se
+resolvieron con 4 pasos retirados enteros y 9 clausulas reescritas, cada una con
+su fichero, su linea y la frase que si esta en el texto. El lote paso de 36 a 32
+pasos.
+
+**Y LA CIFRA QUE LA CONVIERTE EN REGLA: la aduana dio 6 de 6 verdes ANTES y
+DESPUES de esa correccion.** El mismo informe, el mismo saldo, y trece defectos
+en medio.
+
+**NO ES QUE LA PUERTA ESTUVIERA ABIERTA, y esto se comprobo mordiendola a
+proposito** (ACTA 2 seccion 1.5): mutando la fuente de un candidato y vaciando
+los pasos de otro, el mismo informe da **4 entrarian y 2 caerian**, con las dos
+guardas nombradas por separado. **Las doce guardas funcionan. Es que miden otra
+cosa.**
+
+| lo que la aduana SI ve | lo que NO ve |
+|---|---|
+| el esquema, las reglas de id, la fuente canonica, el orden de las fuentes por fecha, las aristas rotas o duplicadas, la auto arista, la vuelta no declarada, la cita incompleta, el deprecado en superficie, los guiones | **si un paso esta en el libro** |
+
+**EL MOTIVO, y por eso ninguna guarda futura lo arregla: la aduana no tiene el
+libro delante.** Compara el candidato con el grafo y consigo mismo. **El texto
+fuente no es una entrada suya**, y no puede serlo sin volverla otra cosa.
+
+### La regla que esto obliga
+
+> **LA RELECTURA DE FIDELIDAD CONTRA EL TEXTO FUENTE ES OBLIGATORIA EN TODA
+> VUELTA DEL EXTRACTOR, ANTES DE CUALQUIER INSERCION.**
+>
+> **NINGUNA MEDIDA DE LA ADUANA LA SUSTITUYE.** Un informe verde certifica que la
+> ficha esta bien construida, **no que sus pasos sean del libro.**
+
+**COMO SE HACE, y es barato si se hace en su sitio:** cada paso se marca contra
+su parrafo como **TRANSCRIPCION** (el libro pone el medio, la etapa o el objeto) o
+como **PUENTE** (lo escribio el extractor). **Cada puente se retira o se reescribe,
+citando el parrafo que NO lo dice.** Un puente no se queda callado dentro de un
+nodo.
+
+**EN EL ACTO DE ESCRIBIR CADA CANDIDATO, NO EN UNA VUELTA POSTERIOR.** El lote 1
+gasto **una vuelta entera** en reparar trece puentes de seis candidatos; aplicada
+al escribir, la vuelta 1 habria salido con 32 pasos y sin deuda. Es la misma
+forma de D.23 para las reglas de id: **la correccion vale mas barata en el minuto
+en que se escribio.**
+
+### El reparto, que es la lectura util y dice donde mirar
+
+| parrafo | inventario | puentes |
+|---|---|---:|
+| 29, cinco medios nombrados | rico | **0 por ciento** |
+| 32, una frase | pobre | **83 por ciento** |
+
+> **UN PARRAFO POBRE NO PRODUCE UN NODO POBRE: PRODUCE UN NODO INVENTADO.**
+
+**El puente sube cuando baja el inventario del parrafo.** Es la advertencia
+practica de `D.27`: cuando el inventario del libro es delgado, la tentacion de
+completarlo no se nota mientras se escribe, **y ninguna guarda la nota despues.**
+
+### Su relacion con las otras dos varas, para que nadie las confunda
+
+| vara | pregunta | quien la aplica |
+|---|---|---|
+| **`D.27`**, la prueba del inventario | **¿esto es un nodo?** | el extractor, al decidir que extraer |
+| **`D.30`**, la fidelidad | **¿este paso lo dice el libro?** | el extractor, al escribir, con el parrafo delante |
+| **`AUDITOR_FORJA.md` 6**, continua contra repite | **¿este nodo continua a otro o lo repite?** | quien inserta, con el grafo delante |
+
+**Las tres son distintas y ninguna cubre a otra.** Un nodo puede pasar D.27 (el
+libro pone su inventario), fallar D.30 (el extractor le añadio un destinatario que
+el libro no nombra) y no tener ningun vecino que adjudicar. **Fue exactamente el
+caso de cuatro de los seis candidatos del lote 1.**
+
+**NINGUNA VUELTA SUSTITUYE ESTA RELECTURA POR UNA MEDIDA.** Si alguien propone
+una guarda que la automatice, eso es maquinaria y cae bajo la moratoria: **el
+texto fuente no esta en el repo** (`.gitignore`, bandeja (a)), y una guarda que no
+tiene el libro no puede juzgar fidelidad al libro.
