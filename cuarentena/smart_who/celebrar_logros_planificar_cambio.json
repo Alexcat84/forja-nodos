@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando estas instalando el metodo de contratacion en tu empresa y toca la decima y ultima de las diez cosas: el equipo ha conseguido algo con el metodo y el ciclo tiene que volver a empezar.",
+  "denominaciones": {
+    "nombre_largo": "Celebrar los logros del equipo y planificar el cambio siguiente",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Celebrate wins and plan for more change"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El logro celebrado con una recompensa tangible, la buena voluntad de esa celebracion gastada en inspirar mas accion para el ano siguiente, y el ciclo reabierto sobre la primera de las diez cosas.",
+  "escala_minima": "Una cena, un evento de equipo o un regalo bonito. El libro pone los tres en la misma linea y el mas barato de los tres basta para el paso.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "celebrar_logros_planificar_cambio",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Celebra el exito de tu equipo ofreciendo una recompensa tangible: una cena de lujo, un evento de equipo o incluso un regalo bonito.",
+    "Gasta la buena voluntad que genera ese reconocimiento en inspirar mas accion para el ano siguiente.",
+    "No te des por satisfecho. Busca vias nuevas y mejores de conseguir los resultados que quieres.",
+    "Vuelve a la primera de las diez cosas para implantar esos cambios, que es lo que cierra el ciclo y lo vuelve a abrir."
+  ],
+  "resumen_teorico": "Es la decima y ultima de las diez cosas que hay que hacer para instalar el metodo de contratacion en una empresa, y la unica que devuelve la serie a su principio: el libro cierra su paso diciendo que se vuelve al paso uno para implantar los cambios nuevos, de modo que la lista no es una escalera sino un ciclo anual. Sus dos mitades son distintas y el libro las distingue: la celebracion, que tiene sus tres medios nombrados uno a uno y es tangible, y el uso de esa celebracion, que es lo que la separa de una fiesta, porque la buena voluntad que genera se gasta a proposito en inspirar la accion del ano siguiente. La actitud que el libro pone en medio, nunca satisfechos, no se escribe aqui como paso independiente porque es el motivo de los dos ultimos y no una accion aparte.",
+  "titulo": "Celebrar los logros del equipo y planificar el cambio siguiente"
+}

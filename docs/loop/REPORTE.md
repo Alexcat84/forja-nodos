@@ -6269,7 +6269,7 @@ en su propia TAREA 3.
 | # | tarea | estado | resultado |
 |---|---|---|---|
 | 0 | las aristas de serie del lote 2 (`D.37` sobre lo ya insertado), BLOQUEANTE | **CERRADA** | prevision de **28** publicada y commiteada (`8f1f6a4`) antes de declarar ninguna. **28 declaradas, 28 esperadas, diferencia 0**, todas al primer intento. Grafo de **9 a 37 aristas**, bitacora de **32 a 60 veredictos**, gate y 72 de 72 en verde. **Cero de las 28 las levanto ninguna señal** |
-| 1 | tramo A, cola del Cap. 5 (`cap_06.md` L247 a L455) | ABIERTA | |
+| 1 | tramo A, cola del Cap. 5 (`cap_06.md` L247 a L455) | **CERRADA** | frontera de **siete** piezas publicada antes de cortar (el encargo nombra seis: la septima es un recuadro con interrogacion en el titulo). **15 candidatos, los 15 por la aduana al primer intento, 0 caerian.** 3 vecinos levantados y leidos, los 3 `SANO`. `D.30` encontro **5 puentes sobre 90 pasos, el 5,6 por ciento**, corregidos en el acto |
 | 2 | tramo B, el Cap. 6 (`cap_07.md` L9 a L41) con el borde declarado | ABIERTA | |
 | 3 | tramo C, material de cierre (`cap_07.md` L43 a L429), JUZGADO antes que cortado | ABIERTA | |
 | 4 | informe del lote y commits | ABIERTA | |
@@ -6700,3 +6700,120 @@ una linea del libro: cambia donde vive, no si vive.
 **Y VA MARCADO COMO DISCUTIBLE**, porque es una lectura de `D.27` sobre el texto
 del encargo y podria estar equivocada. **Once hijos y dos cabezas, en vez de
 catorce hijos y dos cabezas.**
+
+### 1.f. LOS QUINCE CANDIDATOS, con su aduana corrida EN EL MISMO ACTO
+
+**Ninguno se escribio y se dejo para el final** (`EXTRACTOR.md` 16). El ciclo por
+candidato fue escribir, correr `python forja.py informe cuarentena/smart_who/<id>.json`
+y solo entonces contarlo como escrito.
+
+| # | id | pasos | de donde sale | la aduana, al escribirlo |
+|---:|---|---:|---|---|
+| 1 | `instalar_metodo_contratacion_empresa` | 11 | P1, cabeza de la serie de diez | `BLOQUEARIA`, 2 vecinos por `familia_id` |
+| 2 | `construir_apoyo_equipo_directivo_metodo` | 5 | P1 paso 3, L257 | `ENTRARIA` |
+| 3 | `comunicar_vision_jugadores_organizacion` | 6 | P1 paso 4, L259 | `ENTRARIA` |
+| 4 | `formar_equipo_practicas_metodo` | 3 | P1 paso 5, L261 | `ENTRARIA` |
+| 5 | `retirar_barreras_politicas_metodo` | 5 | P1 paso 6, L263 | `ENTRARIA` |
+| 6 | `implantar_politicas_respaldan_metodo` | 5 | P1 paso 7, L265 con sus vinetas L267, L269, L271 | `ENTRARIA` |
+| 7 | `reconocer_recompensar_uso_metodo` | 5 | P1 paso 8, L273 | `ENTRARIA` |
+| 8 | `retirar_directivos_rechazan_metodo` | 4 | P1 paso 9, L275 | `ENTRARIA` |
+| 9 | `celebrar_logros_planificar_cambio` | 4 | P1 paso 10, L277 | `ENTRARIA` |
+| 10 | `respetar_cautelas_legales_contratacion` | 9 | P2, cabeza de la serie de cuatro | `ENTRARIA` |
+| 11 | `rechazar_candidato_razones_relevantes` | 5 | P2 cautela 1, L307 | `ENTRARIA` |
+| 12 | `usar_lenguaje_no_discriminatorio_entrevista` | 4 | P2 cautela 3, L311 | `ENTRARIA` |
+| 13 | `evitar_preguntas_ilegales_entrevista` | 10 | P2 cautela 4, L313 | `ENTRARIA` |
+| 14 | `distinguir_perfil_guepardo_cordero` | 7 | P5, el recuadro L351 a L394 | `ENTRARIA` |
+| 15 | `aplicar_metodo_promocion_sucesion` | 7 | P6, L395 a L416 | `BLOQUEARIA`, 1 vecino por `familia_id` |
+
+**QUINCE CANDIDATOS Y CERO CAIDAS EN LA PUERTA, los quince al primer intento.**
+Ni un rechazo de id, ni una guarda disparada.
+
+### 1.g. LOS DOS VECINOS QUE LA ADUANA LEVANTO, leidos y con su veredicto escrito
+
+**Es la primera vez que esta casa escribe contra un grafo con material propio, y
+la aduana levanto vecinos de verdad.** Eso no es una parada: es la aduana
+funcionando. Los tres levantamientos son de `familia_id` y ninguno de
+`similitud_texto`, que es la señal que caza gemelos.
+
+| candidato | vecino | señales | veredicto y su razon |
+|---|---|---|---|
+| `instalar_metodo_contratacion_empresa` | `aplicar_metodo_ghsmart_contratacion` | sim 0.141, fam 0.333, paso 0.412 | **SANO.** Uno dice **como se contrata** (tarjeta, abastecer, seleccionar, vender) y el otro **como se consigue que lo haga la empresa entera** (prioridad, apoyo, vision, formacion, barreras, politicas, premios, retiradas, celebracion). **Cero pasos en comun**, y el libro los pone en secciones distintas. La familia comun es `metodo_contratacion`, que es el tema del libro |
+| `instalar_metodo_contratacion_empresa` | `detectar_metodos_vudu_contratacion` | sim 0.165, fam 0.333, paso 0.392 | **SANO.** El vudu es un catalogo de **diez malos habitos que uno detecta en si mismo**; este es un plan de instalacion en una organizacion. Comparten la palabra metodo y nada mas |
+| `aplicar_metodo_promocion_sucesion` | `aplicar_metodo_ghsmart_contratacion` | sim 0.142, fam 0.333, paso 0.426 | **SANO, y es el mas interesante de los tres.** Los dos aplican el mismo metodo, pero **a poblaciones distintas**: uno a candidatos de fuera y otro a gente que ya esta dentro. El libro dedica una seccion propia a decir exactamente eso, que los directivos recaen en el vudu **cuando piensan en desarrollo, promociones y sucesion**. Si fueran el mismo nodo, esa seccion del libro desapareceria |
+
+**LAS TRES SEÑALES SE COMPORTARON COMO `CALIBRACION_D4` DICE QUE SE COMPORTAN.**
+Las tres similitudes de texto viven entre 0,141 y 0,165, **muy por debajo del
+0,35**, y `EXTRACTOR.md` 11 dice que la alta (0,4 en adelante) son gemelos y nada
+mas. **Ninguno de los tres pares es un gemelo, y la señal que caza gemelos no
+levanto ninguno.** Lo que levanto fue la familia, que es lo que
+`EXTRACTOR.md` 12 predice para un capitulo monotematico: **no es señal de
+duplicado, es señal de que el libro trata un tema.**
+
+### 1.h. LA RELECTURA DE FIDELIDAD (`D.30`), CON SUS CINCO PUENTES ENCONTRADOS Y CORREGIDOS
+
+**Se hizo en el acto de escribir, y encontro cinco. Los cinco se corrigieron antes
+de cerrar la tarea, no en una vuelta posterior.**
+
+**Los cinco son de una sola especie, y NO es ninguna de las tres que el lote 1
+pago** (destinatario, periodo, responsable). **Es una cuarta: EL VERBO DE
+INSTRUMENTACION.** El libro manda un resultado y yo escribia el gesto con el que
+se consigue.
+
+| # | el puente, tal como lo escribi | lo que el libro dice de verdad | como quedo |
+|---:|---|---|---|
+| 1 | `Recorre con ellos las politicas de la casa y elimina las que se interponen` | L263 dice **eliminar**, y no dice recorrer ni revisar nada | `Elimina toda politica que se interponga en el camino de implantar el metodo con exito` |
+| 2 | `Cuenta con que hay preguntas que no se pueden hacer, y repasa el guion antes de hacerla` | L313 dice `Certain questions cannot be asked in an interview`. **El guion es mio**: el libro no pide repasar ningun documento | `Cuenta con que hay ciertas preguntas que no se pueden hacer en una entrevista`, y las ocho materias pasaron de `Quita del guion` a `No preguntes por` |
+| 3 | `Repasa el lenguaje de las entrevistas` | L311 dice `Use nondiscriminatory language during interviews and in written forms`. **Manda usarlo, no repasarlo** | `Usa lenguaje no discriminatorio durante las entrevistas` |
+| 4 | `Comprueba cual es el motivo real` | L275 nombra el motivo, **y no manda comprobar nada** | `Cuenta con cual es el motivo que el libro nombra, y no otro` |
+| 5 | `Si no tienes equipo directivo, haz lo mismo con tus pares` | L257 pone `your executive team or peers`, que es **una alternativa, no un plan B**. La condicional la puse yo | `Haz lo mismo con tus pares, que es la otra sede que el libro pone en la misma linea` |
+
+**Y ARRASTRARON DOS CAMPOS MAS, corregidos con ellos:** el
+`entregable_esperado` de `evitar_preguntas_ilegales_entrevista` decia *el guion de
+la entrevista limpio* y ahora dice *la entrevista hecha sin haber preguntado*; y
+su `escala_minima` decia *una entrevista y un guion* y ahora dice *una sola
+entrevista*. **Un puente en un paso contamina la ficha entera**, y esa es una
+observacion que este lote deja medida.
+
+    pasos escritos en el tramo A : 90
+    pasos con puente             : 5
+    porcentaje                   : 5,6 por ciento
+
+**Contra el 36 por ciento del lote 1.** No lo escribo como merito: lo escribo con
+su causa al lado, que es que `D.30` **se aplico mientras se escribia** y no como
+reparacion posterior, y que **los parrafos de este tramo son ricos**. `D.30` avisa
+de donde mirar y acerto: el candidato mas delgado del lote,
+`formar_equipo_practicas_metodo` con tres pasos, es de los que mas cerca estuvo.
+
+### 1.i. LAS ARISTAS QUE ESTE TRAMO DEJA PENDIENTES, y por que no puedo declararlas hoy
+
+**`D.37` manda declarar la arista de serie EN LA MISMA VUELTA en que se insertan
+las partes. Hoy no se inserta nada, asi que no hay partes que cablear:
+`python forja.py arista` exige que madre e hijo YA VIVAN en el grafo y rechaza lo
+que esta en cuarentena.** No es una regla saltada: es que su condicion no se ha
+cumplido todavia.
+
+**Las dejo escritas aqui para que se declaren en el acto de la insercion**, que es
+lo que `D.37` pide:
+
+| madre | paso | hijo |
+|---|---:|---|
+| `instalar_metodo_contratacion_empresa` | 3 | `construir_apoyo_equipo_directivo_metodo` |
+| | 4 | `comunicar_vision_jugadores_organizacion` |
+| | 5 | `formar_equipo_practicas_metodo` |
+| | 6 | `retirar_barreras_politicas_metodo` |
+| | 7 | `implantar_politicas_respaldan_metodo` |
+| | 8 | `reconocer_recompensar_uso_metodo` |
+| | 9 | `retirar_directivos_rechazan_metodo` |
+| | 10 | `celebrar_logros_planificar_cambio` |
+| `respetar_cautelas_legales_contratacion` | 3 | `rechazar_candidato_razones_relevantes` |
+| | 5 | `usar_lenguaje_no_discriminatorio_entrevista` |
+| | 6 | `evitar_preguntas_ilegales_entrevista` |
+
+**ONCE aristas**, y **los numeros de paso son los de las cabezas tal como estan
+escritas hoy en cuarentena**: en la de diez, la cosa N es el paso N; en la de las
+cautelas, la cautela 1 es el paso 3 y la 4 es el paso 6, porque la cabeza abre con
+dos pasos de cumplimiento legal general antes de la primera cautela.
+
+**Y dos huerfanos que se declaran como tales:** `distinguir_perfil_guepardo_cordero`
+y `aplicar_metodo_promocion_sucesion` **no cuelgan de ninguna cabeza**, porque
+ninguna cabeza del grafo los enumera como parte suya. **No les invento un padre.**

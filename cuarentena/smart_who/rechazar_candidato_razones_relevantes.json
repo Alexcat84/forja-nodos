@@ -1,0 +1,36 @@
+{
+  "condiciones_activacion": "Cuando vas a descartar a un candidato y tienes que poder decir por que, y que ese por que sea del puesto. Es la primera de las cuatro areas de cautela legal.",
+  "denominaciones": {
+    "nombre_largo": "La relevancia: no rechazar por razones ajenas al puesto",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Relevance"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El rechazo del candidato sostenido sobre hechos, y cada uno de esos hechos referido a un resultado o a una competencia escritos en la tarjeta de puntuacion antes de empezar a entrevistar.",
+  "escala_minima": "Un solo candidato descartado. Basta con que la tarjeta estuviera escrita antes de la primera entrevista, que es lo unico que este paso exige de verdad.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "rechazar_candidato_razones_relevantes",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "No rechaces a ningun candidato por razones que no sean relevantes para el puesto.",
+    "Define los resultados y las competencias que el puesto exige en la tarjeta de puntuacion antes de empezar a entrevistar a nadie. El libro dice que ese es un beneficio tremendo de la tarjeta: te obliga a definirlos antes.",
+    "Apoyate en esa definicion explicita durante la evaluacion, porque es lo que te mantiene honesto.",
+    "Atente a los hechos.",
+    "Excluye los asuntos y los sentimientos que sean irrelevantes para lograr lo que la tarjeta de puntuacion pide."
+  ],
+  "resumen_teorico": "Es la primera de las cuatro areas de cautela legal que el libro pide respetar para mantenerse holgadamente dentro de la ley. Lo que la hace procedimentable y no una declaracion de buenas intenciones es que el criterio de relevancia no se deja en manos del que evalua: el libro lo ancla en un documento escrito antes de la primera entrevista, la tarjeta de puntuacion, y explica el mecanismo entero en una linea, que la tarjeta te obliga a definir los resultados y las competencias antes de entrevistar y que esa definicion explicita es lo que te mantiene honesto durante la evaluacion. Sin ese anclaje, relevante para el puesto seria exactamente un adjetivo de adecuacion en el sitio del criterio y cualquier paso que se escribiera lo escribiria el lector. Con el, el paso es comprobable: cada razon de rechazo tiene que poder senalar una linea de la tarjeta. Las dos instrucciones finales del libro cierran la cautela por el lado contrario, diciendo que se excluye, los asuntos y los sentimientos irrelevantes para lograr lo que la tarjeta pide.",
+  "titulo": "No rechazar a un candidato por razones ajenas al puesto"
+}

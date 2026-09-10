@@ -1,0 +1,45 @@
+{
+  "condiciones_activacion": "Cuando vas a contratar con este metodo, en cualquier pais, y antes de la primera entrevista. El libro lo pone como aviso previo al proceso y no como revision posterior.",
+  "denominaciones": {
+    "nombre_largo": "Las cuatro areas de cautela legal de la contratacion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "LEGAL TRAPS TO AVOID"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "four areas of caution"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El proceso de contratacion revisado contra las cuatro areas de cautela y contra la legislacion laboral aplicable en los tres niveles, con la gente de personal y el equipo juridico laboral consultados antes de empezar.",
+  "escala_minima": "Un solo puesto y una sola entrevista. Las cuatro cautelas se comprueban igual para una contratacion que para cien, y la primera de todas, hablar con personal y con el equipo juridico, se hace una vez.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "respetar_cautelas_legales_contratacion",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "marco_pais": "El libro escribe la lista de preguntas prohibidas para Estados Unidos y nombra alli la comision de igualdad de oportunidades en el empleo y la ley de estadounidenses con discapacidades de 1990. Dice ademas, en el mismo parrafo, que las preguntas que hay que evitar varian en otras naciones y que hay que comprobarlo con el equipo local antes de entrevistar alli.",
+  "pasos_accionables": [
+    "Asegurate de cumplir todas las leyes laborales aplicables en los tres niveles que el libro nombra: federal o central, provincial o estatal, y local, en cualquier parte del mundo donde estes contratando.",
+    "Trabaja con tu gente de personal y con tu equipo juridico laboral para entender a fondo todos los asuntos de los que hay que estar al tanto.",
+    "Cautela uno, la relevancia: no rechaces a un candidato por razones que no sean relevantes para el puesto.",
+    "Cautela dos, la estandarizacion del proceso: usa el mismo proceso con todos los candidatos, sea cual sea su grupo demografico. Los directivos se meten en lios cuando, a proposito o sin darse cuenta, meten a grupos distintos por procesos distintos.",
+    "Cautela tres, el lenguaje no discriminatorio en las entrevistas y en los formularios escritos.",
+    "Cautela cuatro, evitar las preguntas ilegales.",
+    "Cierra con la linea de fondo que el libro escribe: no discrimines. Selecciona a la gente por si es probable o no que pueda desempenar el puesto.",
+    "Usa la tarjeta de puntuacion para definir el estandar, y la entrevista de criba, la cronologica, las enfocadas y las de referencias para reunir los hechos que se contrastan con ese estandar.",
+    "Evalua a las personas por los factores que importan para el puesto en cuestion, y solo por esos factores."
+  ],
+  "resumen_teorico": "El libro abre esta seccion diciendo que contratar es un asunto serio y que nadie, ni el lector ni los autores, puede ignorar las legalidades de la contratacion, porque muchos directivos se meten a si mismos y a sus empresas en problemas serios por ignorar principios basicos. Su tesis propia, y es la que sostiene el resto, es que el metodo no solo es legal y justo sino que la consistencia del proceso y el enfoque en reunir datos lo hacen mucho mas legal y justo que las practicas de contratacion improvisadas que se usan habitualmente; los autores respaldan eso con su propia experiencia, que declaran como no haber encontrado nunca problemas legales por usar el metodo ni tener noticia de que los tuviera ningun cliente suyo. De las cuatro cautelas, tres traen inventario propio y viven ademas en su nodo: la relevancia, el lenguaje y las preguntas ilegales. La segunda, la estandarizacion, se queda aqui como paso de la cabeza y no da hijo, porque es una sola instruccion cuyo objeto, el proceso que hay que usar con todos, esta definido en otro sitio: es el caso de nombrar el procedimiento de otro. La linea de fondo del libro cierra la seccion atando las cuatro cautelas a las herramientas del propio metodo, y por eso se transcribe entera aqui: la tarjeta de puntuacion define el estandar y las cuatro entrevistas reunen los hechos que se contrastan con el.",
+  "titulo": "Respetar las cuatro areas de cautela legal al contratar"
+}

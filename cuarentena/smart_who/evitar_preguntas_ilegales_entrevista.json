@@ -1,0 +1,42 @@
+{
+  "condiciones_activacion": "Cuando preparas el guion de una entrevista, antes de hacerla, y en particular antes de entrevistar en un pais cuya legislacion no conoces. Es la cuarta de las cuatro areas de cautela legal.",
+  "denominaciones": {
+    "nombre_largo": "Evitar hacer al candidato preguntas ilegales",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Avoid asking candidates illegal questions"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La entrevista hecha sin haber preguntado por ninguna de las materias prohibidas, y las leyes del pais confirmadas con el equipo local de personal y juridico cuando se entrevista fuera.",
+  "escala_minima": "Una sola entrevista. La lista de materias que el libro prohibe vale entera aunque solo vayas a entrevistar a una persona.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "evitar_preguntas_ilegales_entrevista",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "marco_pais": "La lista de materias que el libro escribe es la de Estados Unidos, y el propio libro avisa en la misma linea de que las preguntas que hay que evitar varian en otras naciones. Las guias que nombra son las de la comision de igualdad de oportunidades en el empleo y las de la ley de estadounidenses con discapacidades de 1990.",
+  "pasos_accionables": [
+    "Cuenta con que hay ciertas preguntas que no se pueden hacer en una entrevista.",
+    "No preguntes nada que tenga que ver con el estado civil.",
+    "No preguntes por la intencion de tener hijos ni por si la candidata esta embarazada o no.",
+    "No preguntes cuando nacio la persona ni donde nacio.",
+    "No preguntes por la condicion medica, salvo que sea especificamente relevante para el desempeno del puesto.",
+    "No preguntes por la raza ni por la etnia.",
+    "No preguntes por la orientacion sexual.",
+    "No preguntes por las discapacidades fisicas o mentales, y aqui de nuevo salvo que sean directamente relevantes para el desempeno del puesto.",
+    "Si vas a entrevistar en otro pais, comprueba antes con tu equipo local de personal y juridico las leyes de ese pais concreto, porque las preguntas que hay que evitar varian de una nacion a otra.",
+    "Cuenta con que esto es prevencion y no reparacion: el libro cierra la cautela diciendo que una onza de prevencion siempre vale una libra de cura."
+  ],
+  "resumen_teorico": "Es la cuarta de las cuatro areas de cautela legal que el libro pide respetar, y es la unica de las cuatro que trae un inventario largo y cerrado: el libro nombra una a una las materias sobre las que no se puede preguntar, en vez de decir que se eviten las preguntas inadecuadas. Esa es exactamente la diferencia entre una linea que se puede procedimentar y una que no, porque aqui escribir los pasos es transcribir la lista y no completarla. Dos de las materias llevan su propia excepcion escrita y se recogen con ella, la condicion medica y las discapacidades, las dos salvo relevancia para el desempeno del puesto, y esa relevancia se comprueba contra la tarjeta de puntuacion igual que en la primera cautela. El libro pone ademas el limite de su propia lista, que es lo que impide leerla como universal: es la de Estados Unidos, las preguntas varian en otras naciones y hay que comprobarlo con el equipo local antes de entrevistar alli. Segun el libro, respetar estas cautelas es lo que hace facil cumplir las guias de la comision de igualdad de oportunidades en el empleo y las de la ley de estadounidenses con discapacidades de 1990, y lo mismo vale en otros paises.",
+  "titulo": "Evitar hacer al candidato preguntas ilegales"
+}

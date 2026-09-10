@@ -1,0 +1,37 @@
+{
+  "condiciones_activacion": "Cuando estas instalando el metodo de contratacion en tu empresa y toca la cuarta de las diez cosas: que la organizacion entera sepa adonde vais y por que, y lo oiga en cada comunicacion y no una sola vez.",
+  "denominaciones": {
+    "nombre_largo": "Lanzar una vision clara de jugadores A y reforzarla en cada comunicacion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Cast a clear vision for the organization and reinforce it through every communication with the broader team"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El mensaje de la vision escrito y dicho en cada comunicacion con el equipo amplio, y respaldado con actos que ensenan como la vision esta transformando al equipo.",
+  "escala_minima": "Un solo mensaje repetido. El libro no pide campana ni plan de comunicacion: pide una frase y que no deje de decirse.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "comunicar_vision_jugadores_organizacion",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Lanza una vision clara para la organizacion.",
+    "Refuerzala en cada comunicacion con el equipo amplio, y no en una sola.",
+    "Prueba con un mensaje de este tipo: vamos a ganar con jugadores A.",
+    "O con este otro: vamos a tener exito porque tenemos un jugador A en cada puesto.",
+    "O con este tercero: nuestra gente va a servir a nuestros clientes mucho mejor que la competencia, porque toda nuestra gente son jugadores A.",
+    "Respalda despues esas palabras con actos que ensenen como la vision esta transformando al equipo."
+  ],
+  "resumen_teorico": "Es la cuarta de las diez cosas que hay que hacer para instalar el metodo de contratacion en una empresa. Lo que la hace procedimentable, y no una exhortacion a comunicar mejor, es que el libro escribe los mensajes: da tres frases enteras y entrecomilladas para que el que instala elija una, y remata con la unica condicion que pone, que las palabras se respalden con actos que ensenen la transformacion. Sin esas tres frases este paso seria el caso de manual de una postura, un mandato mas un adjetivo de adecuacion del tipo comunica una vision adecuada, y no habria manera de escribir sus pasos sin inventarlos. Con ellas, escribir los pasos es transcribir. La sede tambien la pone el libro y no el lector: cada comunicacion con el equipo amplio.",
+  "titulo": "Lanzar una vision clara de jugadores A y reforzarla en cada comunicacion"
+}

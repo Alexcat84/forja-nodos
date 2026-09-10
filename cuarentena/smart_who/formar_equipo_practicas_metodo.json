@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Cuando estas instalando el metodo de contratacion en tu empresa y toca la quinta de las diez cosas: que los directivos que van a ejecutarlo sepan ejecutarlo, y no solo que se hayan enterado de que existe.",
+  "denominaciones": {
+    "nombre_largo": "Formar al equipo en las buenas practicas del metodo de contratacion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Train your team on best practices"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Cada directivo del equipo con las habilidades que hacen falta para ejecutar el metodo, y las herramientas simples ya en la mano tras el taller practico.",
+  "escala_minima": "Un solo taller practico y un solo equipo de directivos. El libro no pide programa de formacion: pide un taller que ponga las herramientas en la mano.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "formar_equipo_practicas_metodo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Asegurate de que cada directivo de tu equipo tiene las habilidades que hacen falta para ejecutar el metodo.",
+    "Ayudalos a aprender cada uno de los pasos del metodo, y no el metodo en bloque.",
+    "Monta un taller practico, que es lo que desmitifica el proceso y les pone las herramientas simples en la mano."
+  ],
+  "resumen_teorico": "Es la quinta de las diez cosas que hay que hacer para instalar el metodo de contratacion en una empresa, y descansa en una distincion que el libro hace en una sola frase: el lider no se asegura de que su equipo conozca el metodo sino de que cada directivo tenga las habilidades que hacen falta para ejecutarlo. Los dos medios que el libro nombra son ayudarlos a aprender cada paso, es decir formar por pasos y no en bloque, y el taller practico, del que el libro dice para que sirve exactamente: desmitifica el proceso y les pone las herramientas simples en la mano. Es el mas delgado de los ocho nodos que salen de esta serie y se declara asi: tres pasos, dos de ellos medios nombrados por el libro, y ni un puente. Lo que el libro no dice, y por eso no esta escrito aqui, es quien imparte el taller, cuanto dura ni cada cuanto se repite.",
+  "titulo": "Formar al equipo en las buenas practicas del metodo de contratacion"
+}
