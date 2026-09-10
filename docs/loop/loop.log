@@ -53,3 +53,5 @@
 [2026-09-10 13:15:30] VUELTA 2 : AUDITOR (claude-opus-5)
 [2026-09-10 13:55:39] auditor listo (USD 10.371073999999998), 2409s, intento 1 de 7
 [2026-09-10 13:55:39] VUELTA 3 : EXTRACTOR (claude-opus-5)
+[2026-09-10 14:42:39] extractor listo (USD 16.1182455), 2820s, intento 1 de 7
+[2026-09-10 14:42:39] VUELTA 3 : AUDITOR (claude-opus-5)
