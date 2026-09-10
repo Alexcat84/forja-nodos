@@ -11,6 +11,46 @@ campaña que destilo el manual.
 - [ ] El hook esta instalado: `bash hooks/install_hooks.sh`
 - [ ] Lees docs/REGLAS_DE_ID.md entero. Un id mal puesto se paga en aristas.
 
+### LAS DOS BANDEJAS DE ENTRADA, y no se mezclan
+
+**Entra material de dos formas distintas, y cada una tiene su bandeja con su
+ruta exacta.** Confundirlas es como empieza una carga masiva.
+
+**(a) LOS LIBROS CRUDOS, para extraer todavia:**
+
+    fuentes/<clave>/            una carpeta por libro, con la MISMA clave que
+                                fuentes/FUENTES_CANONICAS.json le dio
+    fuentes/<clave>/cap_01.md   un fichero por capitulo
+    fuentes/<clave>/cap_02.md
+
+- La clave de la carpeta es **la misma** que la de la tabla canonica. Una sola
+  grafia por libro, tambien en el sistema de ficheros.
+- **IGNORADA POR GIT** (`.gitignore`: `fuentes/*/`): es material de otro, con
+  derechos, y pesa. Lo unico que viaja de esa carpeta es
+  `fuentes/FUENTES_CANONICAS.json`, rescatado expresamente con
+  `!fuentes/FUENTES_CANONICAS.json`.
+
+**(b) LOS CANDIDATOS YA EXTRAIDOS, listos para la aduana:**
+
+    cuarentena/<lote>/<id_propuesto>.json
+
+- Un JSON por candidato, con el esquema de `esquema/nodo.schema.json`.
+- **`<lote>`** nombra la tanda (`mundo_11`, `hugos_cap_3`): una carpeta por
+  tanda, porque el informe y la insercion trabajan por tanda.
+- **`<id_propuesto>`** es el `id` que el candidato trae dentro. El nombre del
+  fichero y el campo `id` dicen lo mismo; si no coinciden, **manda el campo**.
+- **IGNORADA POR GIT** (`cuarentena/*/`), con `cuarentena/LEEME.md` rescatado.
+  Son material de ENTRADA, no producto: lo que entra vive en
+  `dataset/nodos.jsonl` y su razon en `bitacora/VEREDICTOS.jsonl`.
+
+**Y LO PRIMERO QUE SE HACE CON UN LOTE NO ES INSERTARLO: ES LEERLO EN SECO.**
+
+    python forja.py informe --carpeta cuarentena/<lote>
+
+Dice cuantos entrarian, cuantos bloquearian esperando veredicto, cuantos caerian
+y por que guarda, con la lista completa y **cero inserciones**. Ese informe es lo
+que se lee ANTES de autorizar la primera insercion real del lote.
+
 ## Fase 1. La fuente canonica, antes del primer nodo
 Manual seccion 7.1: "Fuente canonica registrada antes del primer nodo."
 

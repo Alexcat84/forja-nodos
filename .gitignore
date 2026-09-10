@@ -3,3 +3,19 @@ __pycache__/
 .pytest_cache/
 .venv/
 tests/tmp_*
+
+# LAS DOS BANDEJAS DE ENTRADA (docs/FLUJO_DE_EXTRACCION.md fase 0)
+#
+# (a) LOS LIBROS CRUDOS viven en fuentes/<clave>/ por capitulos. Son material de
+#     otro (texto con derechos) y pesan: NO entran al repo. Lo que si entra, y
+#     por eso se rescata expresamente, es fuentes/FUENTES_CANONICAS.json, que es
+#     la tabla de verdad de la casa.
+fuentes/*/
+!fuentes/FUENTES_CANONICAS.json
+
+# (b) LOS CANDIDATOS EN CUARENTENA son material de entrada, no producto: lo que
+#     entra queda en dataset/nodos.jsonl y su razon en bitacora/VEREDICTOS.jsonl,
+#     que son las sedes de verdad. Se rescatan los LEEME de la bandeja, que si
+#     son doctrina.
+cuarentena/*/
+!cuarentena/LEEME.md
