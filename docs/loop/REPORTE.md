@@ -6268,7 +6268,7 @@ en su propia TAREA 3.
 
 | # | tarea | estado | resultado |
 |---|---|---|---|
-| 0 | las aristas de serie del lote 2 (`D.37` sobre lo ya insertado), BLOQUEANTE | ABIERTA | |
+| 0 | las aristas de serie del lote 2 (`D.37` sobre lo ya insertado), BLOQUEANTE | **CERRADA** | prevision de **28** publicada y commiteada (`8f1f6a4`) antes de declarar ninguna. **28 declaradas, 28 esperadas, diferencia 0**, todas al primer intento. Grafo de **9 a 37 aristas**, bitacora de **32 a 60 veredictos**, gate y 72 de 72 en verde. **Cero de las 28 las levanto ninguna señal** |
 | 1 | tramo A, cola del Cap. 5 (`cap_06.md` L247 a L455) | ABIERTA | |
 | 2 | tramo B, el Cap. 6 (`cap_07.md` L9 a L41) con el borde declarado | ABIERTA | |
 | 3 | tramo C, material de cierre (`cap_07.md` L43 a L429), JUZGADO antes que cortado | ABIERTA | |
@@ -6412,3 +6412,139 @@ mas cara que una de menos, porque la de menos se ve y la de mas se hereda.**
 nombran de pasada `seleccionar_jugador_cuatro_entrevistas` paso 1 y
 `asignar_entrevistas_enfocadas_equipo` paso 6, y **ninguna cabeza lo enumera como
 parte**. No le invento un padre.
+
+### 0.c. LAS 28 DECLARADAS, CON LA SALIDA DEL COMANDO PEGADA
+
+**La tabla se imprime, no se teclea** (`EXTRACTOR.md` 5). Sale entera de la
+bitacora que las 28 llamadas a `python forja.py arista` acaban de escribir, con
+el `paso_citado`, el `texto_citado` y las tres señales tal como el comando las
+imprimio:
+
+    python -c "import io,json; regs=[json.loads(l) for l in io.open('bitacora/VEREDICTOS.jsonl',encoding='utf-8')]; ..."
+
+| # | arista escrita, resuelta | paso | la salida del comando, pegada | las tres senales |
+|---:|---|---:|---|---|
+| 1 | `abastecer_flujo_candidatos > pedir_referencias_red_personal` | 1 | `Referencias de tus redes profesional y personal: haz una lista de las diez personas mas talentosas que conoces` | fam 0.0, paso 0.423, sim 0.264 |
+| 2 | `abastecer_flujo_candidatos > nombrar_delegados_amigos_casa` | 3 | `Nombrar delegados entre los amigos de la casa: considera ofrecer una recompensa por referencia a unos cuantos ` | fam 0.0, paso 0.441, sim 0.13 |
+| 3 | `abastecer_flujo_candidatos > contratar_reclutadores_externos` | 4 | `Contratar reclutadores: usa el metodo descrito en este libro para identificar y contratar reclutadores que sea` | fam 0.0, paso 0.427, sim 0.276 |
+| 4 | `abastecer_flujo_candidatos > contratar_investigadores_reclutamiento` | 5 | `Contratar investigadores: identifica investigadores de reclutamiento a los que puedas contratar por contrato, ` | fam 0.0, paso 0.538, sim 0.233 |
+| 5 | `abastecer_flujo_candidatos > crear_sistema_captura_seguimiento_candidatos` | 6 | `Sistemas de abastecimiento: crea un sistema que capture los nombres y los datos de contacto de todas las perso` | fam 0.143, paso 0.585, sim 0.217 |
+| 6 | `abordar_cinco_efes_venta > vender_encaje_candidato_empresa` | 2 | `Vende el encaje: ata la vision, las necesidades y la cultura de tu empresa con las metas, las fortalezas y los` | fam 0.0, paso 0.413, sim 0.208 |
+| 7 | `abordar_cinco_efes_venta > vender_cambio_trabajo_familia` | 3 | `Vende la familia: ten en cuenta el trauma mas amplio que supone cambiar de trabajo. La frase del libro: que po` | fam 0.0, paso 0.389, sim 0.136 |
+| 8 | `abordar_cinco_efes_venta > vender_libertad_candidato` | 4 | `Vende la libertad: la autonomia que el candidato va a tener para tomar sus propias decisiones. La frase del li` | fam 0.0, paso 0.446, sim 0.134 |
+| 9 | `abordar_cinco_efes_venta > vender_fortuna_candidato` | 5 | `Vende la fortuna: la estabilidad de tu empresa y el recorrido economico global. La frase del libro: si consigu` | fam 0.0, paso 0.367, sim 0.126 |
+| 10 | `aplicar_metodo_ghsmart_contratacion > crear_tarjeta_puntuacion_puesto` | 1 | `Escribe la tarjeta de puntuacion del puesto: el documento que describe exactamente que quieres que la persona ` | fam 0.0, paso 0.353, sim 0.27 |
+| 11 | `aplicar_metodo_ghsmart_contratacion > abastecer_flujo_candidatos` | 2 | `Abastecete de candidatos de forma sistematica antes de tener plazas que cubrir, que es lo que asegura que teng` | fam 0.0, paso 0.358, sim 0.142 |
+| 12 | `aplicar_metodo_ghsmart_contratacion > seleccionar_jugador_cuatro_entrevistas` | 3 | `Selecciona con una serie de entrevistas estructuradas que reunan los hechos relevantes de la persona, para pod` | fam 0.0, paso 0.407, sim 0.183 |
+| 13 | `aplicar_metodo_ghsmart_contratacion > vender_puesto_jugador` | 4 | `Vende el puesto a las personas que la seleccion te ha señalado como las que quieres en tu equipo y persuadelas` | fam 0.0, paso 0.373, sim 0.281 |
+| 14 | `seleccionar_jugador_cuatro_entrevistas > cribar_candidatos_entrevista_telefonica` | 1 | `Entrevista de criba: conduce una entrevista de criba de veinte a treinta minutos usando las cuatro preguntas c` | fam 0.143, paso 0.353, sim 0.177 |
+| 15 | `seleccionar_jugador_cuatro_entrevistas > conducir_entrevista_cronologica_trayectoria` | 2 | `Entrevista cronologica de trayectoria: conduce una entrevista de una hora y media a tres horas recorriendo cro` | fam 0.143, paso 0.398, sim 0.12 |
+| 16 | `seleccionar_jugador_cuatro_entrevistas > asignar_entrevistas_enfocadas_equipo` | 3 | `Entrevistas enfocadas: involucra a otros en el proceso de contratacion asignando a miembros del equipo entrevi` | fam 0.143, paso 0.517, sim 0.224 |
+| 17 | `seleccionar_jugador_cuatro_entrevistas > conducir_llamadas_referencia` | 5 | `Entrevistas de referencias: conduce siete llamadas de referencia con personas que eliges tu a partir de la ent` | fam 0.0, paso 0.388, sim 0.184 |
+| 18 | `planificar_cinco_olas_venta > vender_abastecimiento_candidatos` | 4 | `Sube la energia de venta en la primera ola: cuando abastezcas.` | fam 0.0, paso 0.427, sim 0.17 |
+| 19 | `planificar_cinco_olas_venta > vender_final_entrevista` | 5 | `Sube la energia de venta en la segunda ola: cuando entrevistes.` | fam 0.0, paso 0.523, sim 0.206 |
+| 20 | `planificar_cinco_olas_venta > sostener_contacto_oferta_aceptacion` | 6 | `Sube la energia de venta en la tercera ola: el tiempo entre tu oferta y la aceptacion del candidato.` | fam 0.0, paso 0.467, sim 0.063 |
+| 21 | `planificar_cinco_olas_venta > celebrar_aceptacion_primer_dia` | 7 | `Sube la energia de venta en la cuarta ola: el tiempo entre la aceptacion del candidato y su primer dia.` | fam 0.0, paso 0.457, sim 0.18 |
+| 22 | `planificar_cinco_olas_venta > disenar_incorporacion_cien_dias` | 8 | `Sube la energia de venta en la quinta ola: los primeros cien dias del recien contratado en el puesto.` | fam 0.0, paso 0.403, sim 0.036 |
+| 23 | `aplicar_tacticas_maestras_entrevista > interrumpir_candidato_escucha_reflexiva` | 1 | `Tactica uno, interrumpir. Tienes que interrumpir al candidato, no hay manera de evitarlo, y tendras que hacerl` | fam 0.0, paso 0.465, sim 0.181 |
+| 24 | `aplicar_tacticas_maestras_entrevista > valorar_logro_tres_comparaciones` | 2 | `Tactica dos, las tres comparaciones. Cuando no sepas si un logro que te cuentan es magnifico, bueno, aceptable` | fam 0.0, paso 0.352, sim 0.174 |
+| 25 | `aplicar_tacticas_maestras_entrevista > distinguir_empuje_tiron_salidas_laborales` | 3 | `Tactica tres, empuje contra tiron. Los que rinden bien suelen ser atraidos hacia oportunidades mayores y los q` | fam 0.0, paso 0.408, sim 0.152 |
+| 26 | `aplicar_tacticas_maestras_entrevista > frenar_incoherencias_entrevista` | 5 | `Tactica cinco, parar en las señales de stop. Una ventaja de hacer la entrevista en persona es que puedes vigil` | fam 0.167, paso 0.405, sim 0.252 |
+| 27 | `vender_puesto_jugador > abordar_cinco_efes_venta` | 1 | `Identifica cuales de las cinco efes le importan de verdad a este candidato: el encaje, la familia, la libertad` | fam 0.0, paso 0.391, sim 0.206 |
+| 28 | `vender_puesto_jugador > planificar_cinco_olas_venta` | 2 | `Crea y ejecuta un plan para atender las efes que si importan durante las cinco olas de la venta: al abastecer,` | fam 0.0, paso 0.527, sim 0.275 |
+
+### 0.c. LA CUENTA CONTRA LA PREVISION
+
+    aristas esperadas, publicadas en 0.a y 0.b : 28
+    aristas declaradas                        : 28
+    diferencia                                : 0
+
+**N es M. No sobra ninguna y no falta ninguna**, y la prevision quedo commiteada
+en `8f1f6a4` antes de correr el primer `arista`, asi que la coincidencia se puede
+comprobar contra un fichero anterior al trabajo y no contra mi palabra.
+
+**Las 28 salieron al PRIMER intento: cero rechazos de la operacion, cero paradas
+del gate en la simulacion.**
+
+### LA CIFRA QUE ESTA TAREA DEJA MEDIDA, Y ES LA QUE JUSTIFICA `D.37`
+
+**NINGUNA DE LAS 28 LA LEVANTO NINGUNA SEÑAL. CERO DE 28.**
+
+    declaradas: 28  levantadas por alguna senal: 0
+
+    paso_contra_nodo  max 0.585  min 0.352  mediana 0.410  umbral 0,60
+    similitud_texto   max 0.281  min 0.036  mediana 0.182  umbral 0,35
+    familia_id        max 0.167  min 0.000  mediana 0.000  umbral 0,30
+
+**Las tres medianas viven MUY por debajo de sus tres umbrales**, y ni el maximo de
+ninguna de las tres los alcanza. La que mas se acerca es
+`abastecer_flujo_candidatos > crear_sistema_captura_seguimiento_candidatos` con
+paso contra nodo **0,585 contra un umbral de 0,60**, y aun asi **no dispara**.
+
+**Esto NO es un umbral mal puesto y no propongo moverlo** (`EXTRACTOR.md` 11:
+ninguna vuelta mueve un umbral). Es exactamente lo que `D.19` tiene medido:
+**ninguna señal separa un par de jerarquia declarada de un par al azar.** Y es la
+razon entera de `D.37`: **esperar a la señal es esperar a algo que esta escrito
+que no llega.**
+
+**Y ES LA MEDIDA DE LO QUE COSTABA NO TENERLA:** el lote 2 metio 44 nodos y la
+aduana levanto **siete** aristas. Estas 28 estaban escritas en el libro desde el
+primer dia, dentro de los pasos de las propias cabezas, y **no habia forma de que
+un instrumento las viera.**
+
+### EL ESTADO ANTES Y DESPUES, con las tres guardas recorridas
+
+| medida | antes | despues | cuadra |
+|---|---:|---:|---|
+| nodos | 52 | **52** | si, esta tarea no inserta nada |
+| aristas (`nodos_siguientes`) | 9 | **37** | **9 mas 28 = 37** |
+| aristas (`nodos_previos`) | 9 | **37** | simetrico |
+| veredictos en bitacora | 32 | **60** | **32 mas 28 = 60** |
+| prueba de aceptacion | 72 de 72 | **72 de 72** | verde |
+
+Las salidas, pegadas:
+
+    GATE VERDE.
+      nodos verificados: 52
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+
+      total: 72 pruebas, 0 fallos, 0 errores
+
+    BLOQUE DE VIGENCIA VERDE.
+      veredictos comprobados: 60
+      citas de enlace mutuo comprobadas: 0
+      todos siguen emitidos contra el texto que leyeron
+
+    nodos: 52
+    nodos_siguientes: 37  nodos_previos: 37
+
+**Las tres siguen en verde y las dos cuentas del encargo cuadran exactamente.**
+
+### LO QUE EL GRAFO ES AHORA, Y NO LO ERA HACE UNA HORA
+
+Antes de esta tarea el lote 2 eran **44 nodos y dos islas** (`crear_tarjeta` con
+sus cuatro hijos, y `abastecer` con uno). Ahora el metodo entero **cuelga de una
+sola raiz y se recorre**:
+
+    aplicar_metodo_ghsmart_contratacion
+      1 > crear_tarjeta_puntuacion_puesto        > 4 hijos (ya estaban)
+      2 > abastecer_flujo_candidatos             > 6 vias
+      3 > seleccionar_jugador_cuatro_entrevistas > 6 pasos
+      4 > vender_puesto_jugador
+            1 > abordar_cinco_efes_venta         > 4 efes de 5
+            2 > planificar_cinco_olas_venta      > 5 olas
+
+**Los cuatro pasos que dan titulo al libro son ahora cuatro aristas**, y la unica
+pieza que falta para cerrar el arbol es **la efe de la diversion**, que no tiene
+nodo y queda dicha en 0.a.
+
+`aplicar_tacticas_maestras_entrevista` con sus cuatro tacticas **queda como
+segunda raiz**, colgada de nada: ninguna de las seis cabezas la nombra como parte
+suya, asi que **no le invento un padre**. Se dice y se deja.
+
+### 0.d. LO QUE ESTA TAREA NO HIZO, dicho porque el encargo lo pide
+
+**No extrajo.** No abrio `fuentes/`, no escribio ni un candidato, no toco
+`cuarentena/`. **Y no cableo por parecido:** las tres unicas aristas que dudaba
+estan en la tabla de discutibles de mas arriba, **sin declarar**, marcadas antes
+de correr el primer comando.
