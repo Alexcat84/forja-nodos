@@ -1824,3 +1824,307 @@ verde**, cuatro cifras del encargo remedidas y coincidentes, **cuatro medidas qu
 el encargo pedia y quedan SIN MEDIR, dichas una a una**, una medicion mia mal hecha
 corregida antes de publicarse y **cinco discutibles marcados antes de saber si
 acierto.**
+
+---
+
+# VUELTA 4, lote 2 (`smart_who`), cap_01 y cap_02
+
+*Esqueleto abierto ANTES de la primera tarea (seccion 3). Las filas se anexan al
+cerrarse cada tarea, no al final.*
+
+| | |
+|---|---|
+| fecha | **2026-09-10**, leida del instrumento (`python -c "import datetime; print(datetime.date.today())"`) |
+| rama | `extraccion-mundo-11` (`git rev-parse --abbrev-ref HEAD`) |
+| commit de apertura | `dac3a0b` (`git rev-parse --short HEAD`, tras commitear lo pendiente) |
+| lote | **smart_who, LOTE 2**, encargo de Alexis del 10 sep 2026 |
+| capitulos de esta vuelta | `cap_01` y `cap_02`, en ese orden y **sin mezclarlos nunca** |
+| modo de insercion | **cuarentena.** CERO inserciones en esta vuelta (D.26) |
+
+## A.0. LAS TRES COMPROBACIONES DE APERTURA, MEDIDAS POR MI
+
+*El encargo manda no fiarse de su propio parrafo: una condicion medida es la que
+mediste tu. Las tres se corrieron antes de leer una linea del libro.*
+
+| # | orden corrida | resultado | veredicto |
+|---|---|---|---|
+| 1 | `ls fuentes/smart_who/` | `cap_01.md` a `cap_07.md`, siete ficheros | **VERDE** |
+| 2 | `python -c "import json,io; print('smart_who' in json.load(io.open('fuentes/FUENTES_CANONICAS.json',encoding='utf-8')))"` | `True` | **VERDE** |
+| 3 | `head -8 fuentes/smart_who/cap_01.md` | `libro: Smart y Street, Who` / `edicion: Copyright 2008 ghSMART & Company, Inc., eISBN 978-0-345-51044-0` / `unidad: Introduction` / `titulo_textual: Who, Not What` / `fidelidad: verbatim` | **VERDE** |
+
+**LAS TRES EN VERDE. No hay parada de apertura.** La vuelta 3 se detuvo aqui
+(`REPORTE.md` seccion VUELTA 3); esta pasa.
+
+## A.1. EL ESTADO DE APERTURA, medido antes de la primera operacion
+
+*Seccion 4: la apertura se mide antes de la primera operacion.*
+
+| medida | cifra de hoy | orden corrida | el encargo decia |
+|---|---:|---|---:|
+| nodos vivos en el dataset | **8** | `sum(1 for l in dataset/nodos.jsonl if l.strip())` | 8 |
+| aristas declaradas | **2** | 4 extremos (`nodos_previos` + `nodos_siguientes`) = 2 relaciones | 2 |
+| veredictos en bitacora | **2** | `sum(1 for l in bitacora/VEREDICTOS.jsonl if l.strip())` | 2 |
+| fuentes canonicas EN USO | **2** (`manual_sistema_conocimiento`, `onu_consumidor`) | claves distintas en el campo `fuentes` del dataset | 2 |
+| fuentes canonicas REGISTRADAS | **13** | `len(json.load(FUENTES_CANONICAS.json))` | (no la daba) |
+
+**Las cuatro del encargo coinciden con mi medicion.** La quinta la añado yo
+porque registradas y en uso no son la misma cifra y el lote 2 va a mover solo una.
+
+**DISCREPANCIA DECLARADA (seccion 5).** El encargo da dos cifras distintas de
+palabras para el mismo libro: **44.133** en su titular de apertura y **44.324** en
+la seccion del ritmo. **Mi medicion de hoy, `wc -w` sobre los siete ficheros, da
+44.324**, que es la segunda. Escribo la del instrumento y dejo la otra declarada
+en vez de elegir en silencio.
+
+    cap_01   961      cap_02  3.863      cap_03  10.696      cap_04  6.441
+    cap_05  7.174     cap_06 11.315      cap_07   3.874      TOTAL  44.324
+
+## A.2. LAS CUATRO TAREAS DEL ENCARGO
+
+*Las tareas 1 a 3 se corren enteras sobre `cap_01` y despues enteras sobre
+`cap_02`. Por eso la tabla lleva una fila por tarea y por capitulo.*
+
+| # | tarea | capitulo | estado | resultado |
+|---|---|---|---|---|
+| 1 | ficha del libro y frontera | `cap_01` | **CERRADA** | ficha leida de la cabecera y del cuerpo. Frontera publicada antes de cortar: **20 parrafos, 0 procedimientos, 20 no procedimientos.** El unico con inventario propio (L47 a L55) cae por la vara madre: es el indice del libro y sus cuatro puntos se desarrollan en `cap_03` a `cap_06` |
+| 2 | candidatos, ciclo de cinco pasos | `cap_01` | **CERRADA** | **CERO candidatos**, porque cero procedimientos. Cero pasos escritos, cero puentes. Sin numerador ni denominador que medir |
+| 3 | informe y commit del capitulo | `cap_01` | **CERRADA** | `informe --carpeta cuarentena/smart_who` da `no existe la carpeta`, porque cero candidatos no crean bandeja. Saldo del capitulo: **0 entrarian, 0 bloquearian, 0 caerian**. Commit del capitulo con cero JSON dentro |
+| 1 | ficha del libro y frontera | `cap_02` | ABIERTA | |
+| 2 | candidatos, ciclo de cinco pasos | `cap_02` | ABIERTA | |
+| 3 | informe y commit del capitulo | `cap_02` | ABIERTA | |
+| 4 | las cuatro medidas del cierre, desglosadas por capitulo | vuelta | ABIERTA | |
+
+## A.3. DISCUTIBLES MARCADOS ANTES DE SABER SI ACIERTO
+
+*Seccion 8. Se anexan segun aparecen, no al final.*
+
+| # | discutible | donde |
+|---|---|---|
+| 1 | **no pare** pese a que el `cap_01` dio cero procedimientos y el encargo pone eso entre sus paradas. Leo la parada como *el material de la vuelta no da ni un procedimiento* | 1.e |
+| 2 | el parrafo 20 del `cap_01` (los cuatro puntos de fallo) **fuera**, pese a pasar las tres restricciones de `D.27` | 1.c |
+
+---
+
+## TAREA 1. `cap_01` (*Introduction*, `Who, Not What`): ficha, frontera y saldo
+
+### 1.a. La ficha bibliografica, leida de la cabecera del recorte y del cuerpo
+
+| campo | lo que dice el fichero | linea |
+|---|---|---|
+| libro | *Who* | cabecera `libro:` |
+| titulo textual de la unidad | *Who, Not What* | cabecera `titulo_textual:` |
+| unidad | **Introduction**, no `Cap. 1` | cabecera `unidad:` |
+| edicion | Copyright 2008 ghSMART & Company, Inc., eISBN 978-0-345-51044-0 | cabecera `edicion:` |
+| fidelidad del recorte | `verbatim` | cabecera `fidelidad:` |
+| autores, leidos del CUERPO | *Geoff Smart is CEO and founded the firm in 1995. Randy Street is a partner in the firm and heads the ghSMART Executive Learning business unit* | L35 |
+| firma que hay detras | ghSMART & Company | L35 |
+
+**La ficha del cuerpo y la de `FUENTES_CANONICAS.json` concuerdan**, asi que no hay
+discrepancia que declarar en la ficha. **Aviso de una: `unidad: Introduction`.**
+El `cap_01.md` de este libro NO es el capitulo 1 del libro: el capitulo 1 es
+`cap_02.md` (*Your #1 Problem*). Lo mismo paso en el lote 1, donde `cap_01.md` era
+material de frontera y no capitulo minable.
+
+### 1.b. LA FRONTERA, PUBLICADA ANTES DE CORTAR (seccion 10)
+
+*Veinte parrafos con contenido, contados sobre los bloques separados por linea en
+blanco del fichero. La columna de linea es la del propio `cap_01.md`.*
+
+| # | linea | que es | clase | por que |
+|---:|---:|---|---|---|
+| 1 | L9 | epigrafe: *The most important decisions that businesspeople make are not what decisions, but who decisions* | **POSTURA** | tesis citada, cero pasos |
+| 2 | L11 | atribucion del epigrafe a Jim Collins | **POSTURA** | atribucion, no procedimiento |
+| 3 | L13 | *Who is your number-one problem* | **POSTURA** | tesis del libro |
+| 4 | L15 | *Not what* | **POSTURA** | tesis del libro |
+| 5 | L17 | que es el *what*: estrategias, productos, servicios, procesos, y el aviso de que perseguirlo solo deja estres y menos dinero | **DEFINICION mas ADVERTENCIA** | manual seccion 4: **una advertencia es linea, no procedimiento** |
+| 6 | L19 | *Or you can decide today to focus on the who* | **POSTURA** | exhortacion sin un solo medio nombrado |
+| 7 | L21 | que es el *who*, con cuatro preguntas ilustrativas (*Who is running your sales force?*) | **DEFINICION** | las cuatro preguntas ilustran la definicion; **no son medios ni etapas de nada que se ejecute** |
+| 8 | L23 | Nate Thompson, Spectra Logic, cautivo de los malos fichajes | **CASO** | manual 3.5: **el caso no es la casa** |
+| 9 | L25 | Thompson si entrevistaba a fondo, y aun asi fallaba; el fichaje que desvio 90.000 dolares | **CASO** | idem |
+| 10 | L27 | cita de Thompson sobre las hojas de comision | **CASO** | idem |
+| 11 | L29 | el coste personal: no podia salir de la oficina | **CASO** | idem |
+| 12 | L31 | cita de Thompson sobre Vail y el esqui | **CASO** | idem |
+| 13 | L33 | *who failures infect every aspect of our professional and personal lives* | **POSTURA** | generalizacion del caso |
+| 14 | L35 | ghSMART, su mision, sus fundadores, sus clientes, doce mil decisiones de *who* y treinta mil directivos formados | **CREDENCIAL mas CIFRA DEL AUTOR** | presenta a la firma; no manda hacer nada |
+| 15 | L37 | el estudio de Steven N. Kaplan en la Universidad de Chicago, dos años, mas de trescientos consejeros delegados | **METODO DE INVESTIGACION mas CIFRA** | describe como se hizo el libro, no como se contrata |
+| 16 | L39 | *we have talked with and listened to many of the worlds most talented leaders* | **CREDENCIAL** | idem |
+| 17 | L41 | mas de veinte multimillonarios, la mayoria hechos a si mismos | **CIFRA DEL AUTOR** | idem |
+| 18 | L43 | mas de treinta consejeros delegados de compañias multimillonarias, y decenas mas | **CIFRA DEL AUTOR** | idem |
+| 19 | L45 | mas de mil trescientas horas de entrevistas, y la cita de Joe Mansueto (Morningstar) | **CIFRA mas POSTURA** | idem |
+| 20 | L47 a L55 | *four parts of the hiring process where failure typically occurs*, con sus cuatro puntos nombrados uno a uno | **MAPA DEL LIBRO** | ver 1.c, que es el unico juicio dificil del capitulo |
+
+### 1.c. EL UNICO JUICIO DIFICIL: los cuatro puntos de fallo (L47 a L55)
+
+**Es el unico parrafo del capitulo que trae inventario propio**, y por eso se juzga
+aparte y con la prueba del inventario (`D.27`) y sus tres restricciones delante.
+
+El libro escribe, verbatim, *Who mistakes happen when managers:* y pone cuatro:
+
+    Are unclear about what is needed in a job
+    Have a weak flow of candidates
+    Do not trust their ability to pick out the right candidate from a group of
+      similar-looking candidates
+    Lose candidates they really want to join their team
+
+**A FAVOR de que sea nodo:** es un inventario propio del libro, cuatro elementos
+nombrados uno a uno, y el propio texto los llama *parts of the hiring process*, o
+sea **etapas**, que es una de las tres especies que la restriccion 1 admite. Y la
+tabla de la seccion 9 pone entre los **SI** *un procedimiento que el libro nombra
+en una tabla y desarrolla en otro sitio*.
+
+**EN CONTRA, y es lo que decide:**
+
+1. **NO HAY MANDATO NINGUNO.** `D.27` empieza diciendo *una linea NORMATIVA se
+   vuelve procedimentable cuando el libro pone su propio inventario*. Aqui no hay
+   linea normativa que volver procedimentable: la frase es **descriptiva en
+   tercera persona** (*who mistakes happen when managers*), un diagnostico de
+   donde falla la gente, no un encargo. Para escribir un paso tendria que
+   fabricar yo el imperativo entero (*revisa tu proceso contra los cuatro*), y
+   **ese imperativo no lo pone el libro**.
+2. **LO QUE EL INVENTARIO NOMBRA SON LOS FALLOS, NO LOS MEDIOS.** El texto dice
+   *four parts of the hiring process* y acto seguido lista **cuatro maneras de
+   fallar**, no cuatro etapas con su trabajo dentro. Saber que uno *tiene un flujo
+   debil de candidatos* no dice **como** se ensancha.
+3. **EL DESARROLLO NO ESTA EN ESTE CAPITULO, Y LEIDO DE LAS CABECERAS ESTA EN
+   CUATRO CAPITULOS QUE ESTA VUELTA NO ABRE.** Los cuatro puntos son, en orden,
+   los cuatro capitulos centrales del libro:
+
+   | punto de L49 a L55 | capitulo que lo desarrolla | `titulo_textual` de su cabecera |
+   |---|---|---|
+   | *unclear about what is needed in a job* | `cap_03.md` | `Scorecard: A Blueprint for Success` |
+   | *weak flow of candidates* | `cap_04.md` | `Source: Generating a Flow of A Players` |
+   | *do not trust their ability to pick out the right candidate* | `cap_05.md` | `Select: The Four Interviews for Spotting A Players` |
+   | *lose candidates they really want* | `cap_06.md` | `Sell: The Top Five Ways to Seal the Deal` |
+
+   *(tabla leida hoy de `sed -n 1,7p` sobre los siete ficheros, no de memoria)*
+
+**LA REGLA QUE MANDA AQUI ES LA VARA MADRE DE LA SECCION 9: NOMBRAR NO ES
+PROCEDIMENTAR.** *Una linea solo cuenta como procedimiento propio si trae
+procedimiento propio, y no solo el nombre de otro.* El `cap_01` trae **el nombre
+de otro cuatro veces**, y el otro son los capitulos 03 a 06.
+
+**Y LA UNIDAD ATOMICA DEL ENCARGO CIERRA LA PUERTA A LA SALIDA FACIL.** La salida
+facil seria ir a leer `cap_03` a `cap_06` y escribir aqui los cuatro nodos con sus
+pasos. **El encargo lo prohibe por su nombre** (*cada capitulo se lee y se corrige
+entero antes de abrir el siguiente, nunca los dos juntos*), y con razon medida: un
+nodo del `cap_01` con pasos del `cap_05` **destruye la cifra de puentes por
+capitulo**, que es lo unico que esta vuelta existe para medir.
+
+**VEREDICTO: el parrafo 20 NO es nodo en este capitulo.** Es el indice razonado del
+libro. Sus cuatro procedimientos existen y se extraeran, **cada uno en su vuelta y
+desde su capitulo**.
+
+### 1.d. EL SALDO DEL `cap_01`
+
+| clase | parrafos | cuantos |
+|---|---|---:|
+| **PROCEDIMIENTO** | ninguno | **0** |
+| POSTURA o tesis | 1, 2, 3, 4, 6, 13 | 6 |
+| DEFINICION o advertencia | 5, 7 | 2 |
+| CASO (manual 3.5) | 8, 9, 10, 11, 12 | 5 |
+| CREDENCIAL o cifra del autor | 14, 15, 16, 17, 18, 19 | 6 |
+| MAPA DEL LIBRO | 20 | 1 |
+| **total** | | **20** |
+
+> **`cap_01` DA CERO PROCEDIMIENTOS Y CERO CANDIDATOS.** 961 palabras, veinte
+> parrafos, ni uno con pasos propios.
+
+**MATERIAL QUE ESTE CAPITULO DEJA SIN RECOGER, y se dice para que no se pierda**
+(igual que el lote 1 dejo dicha la resolucion 35/63): **las seis cifras del autor
+de los parrafos 14 a 19** son campo `atribuciones` de un nodo, no nodo. **No hay
+en este capitulo ningun nodo al que colgarlas**, asi que quedan aqui anotadas para
+el primer nodo de este libro que las lleve: doce mil decisiones de *who*, treinta
+mil directivos formados, mas de trescientos consejeros delegados en el estudio de
+Kaplan, mas de veinte multimillonarios, mas de treinta consejeros delegados de
+compañias multimillonarias y mas de mil trescientas horas de entrevista. **Fecha
+de corte de todas: 2008**, la de la edicion.
+
+### 1.e. LA TENSION DE PARADA QUE ESTE SALDO DESTAPA, Y COMO LA RESUELVO
+
+**El encargo pone entre sus paradas *el capitulo no da ni un procedimiento*. El
+`cap_01` da cero. Asi que el encargo, leido a la letra, me manda parar aqui.**
+
+**Y el MISMO encargo, cuatro lineas mas abajo, pone entre los NO paras *que un
+capitulo de pocos nodos (se dice con su razon)*.** Cero es el caso extremo de
+pocos, y la vuelta 3 ya gasto una vuelta entera en una parada.
+
+**NO PARO, y estas son las tres lineas en que me apoyo, cada una citada:**
+
+1. **HAY PRECEDENTE PUBLICADO CON SU CIFRA.** `docs/CIERRE_LOTE_1.md` seccion 3.1,
+   fila del `cap_03.md`: *minado, resultado cero: 0 procedimientos, 5 posturas*,
+   con **0 candidatos**. Ese lote **no paro**, cerro, y el fundador lo autorizo.
+   **Un capitulo de resultado cero es un resultado medido, no una parada.**
+2. **EL PRECEDENTE ES AUN MAS EXACTO EN EL `cap_01`.** En el lote 1 el `cap_01.md`
+   tampoco dio nada y se registro **NO MINADO**, y la vuelta siguio al `cap_02`.
+   **Aqui pasa lo mismo y por la misma causa estructural: el `cap_01.md` de un
+   libro no es su capitulo 1**, es la portada o la introduccion.
+3. **LA TAREA 1 DEL PROPIO ENCARGO PIDE ESTE SALDO.** Manda escribir *el saldo:
+   cuantos procedimientos y cuantas posturas*. **Un saldo de 0 y 20 es una
+   respuesta a esa pregunta, no un fallo en contestarla.**
+
+**LEO LA PARADA ASI: se dispara cuando el MATERIAL DE LA VUELTA no da ni un
+procedimiento**, que es cuando el encargo esta mal dimensionado y hay que traerlo.
+**Sigo al `cap_02`. Si el `cap_02` tambien da cero, la parada se dispara sin
+ambiguedad y me detengo ahi.**
+
+**QUEDA COMO PREGUNTA AL AUDITOR** (seccion 7: lo que no puedas medir lo traes como
+pregunta): **la parada *el capitulo no da ni un procedimiento*, es por capitulo o
+por vuelta?** Si es por capitulo, esta vuelta debio detenerse en 1.d y **mi lectura
+esta mal**. Va marcada como discutible 1.
+
+### 1.f. LO QUE EL `cap_01` DEJA MEDIDO PARA LA PREGUNTA 4 DEL ENCARGO
+
+*El encargo pide saber si la prueba del inventario aguanta en material narrativo.*
+
+**AGUANTA, y en el `cap_01` aguanta por el lado facil: no tuvo que descartar
+casi nada, porque casi nada se le parecia.** De veinte parrafos, **diecinueve no
+llegan siquiera a rozar la prueba**: un epigrafe, cinco parrafos de caso y seis de
+credencial no tienen inventario que examinar. **La prueba trabajo en UN parrafo de
+veinte**, el 20.
+
+**Y ahi, el hallazgo del capitulo: la prueba, sola, lo habria dejado pasar.** El
+parrafo 20 tiene inventario propio (cuatro puntos), nombrados uno a uno, y sin
+adjetivo de adecuacion en el sitio del criterio: **pasa las tres restricciones de
+`D.27`**. Lo que lo tumba es la **vara madre** de la seccion 9 (nombrar no es
+procedimentar) mas la ausencia de mandato.
+
+> **EL `cap_01` MIDE ESTO: EN MATERIAL NARRATIVO, LA PRUEBA DEL INVENTARIO NO
+> BASTA SOLA.** El texto normativo del lote 1 traia el mandato siempre puesto y la
+> unica duda era si el inventario lo sostenia. **El narrativo pone inventarios sin
+> mandato ninguno**, y contra esos la prueba del inventario da verde y la vara
+> madre da rojo. **Se usan en ese orden y no al reves.**
+
+**NO PROPONGO MOVER `D.27`** (seria parada, y ademas no hace falta): no es que la
+prueba falle, es que **no era la unica vara y este capitulo lo enseña**.
+
+### 1.g. TAREA 3 DEL `cap_01`: el informe del lote y el commit del capitulo
+
+**EL INFORME, corrido en esta vuelta, con su salida entera pegada:**
+
+    $ python forja.py informe --carpeta cuarentena/smart_who
+    no existe la carpeta: cuarentena/smart_who
+    EXIT=1
+
+**PEGO LA SALIDA QUE DIO EL INSTRUMENTO Y NO LA QUE ME GUSTARIA** (seccion 5: la
+celda que no salga de un instrumento no se escribe). **La carpeta no existe porque
+el `cap_01` no produjo ni un candidato**, y esta casa no crea carpetas vacias: no
+tendrian que contarse, git no las viaja, y una carpeta vacia en la bandeja se lee
+como un lote pendiente que no lo es.
+
+**Esto NO es una caida del informe.** El saldo del `cap_01` en los terminos que el
+encargo pide es, dicho a mano porque no hay fichero que contar (seccion 5: si no
+existe fichero que contar, la tabla no se publica, se dice que no hay cifra):
+
+| | |
+|---:|---|
+| **entrarian** | **0** |
+| **bloquearian** | **0** |
+| **caerian** | **0** |
+| **candidatos en la bandeja** | **0** |
+
+**LA CARPETA `cuarentena/smart_who/` LA CREARA EL PRIMER CANDIDATO DEL `cap_02`**,
+si lo hay, y entonces el informe del lote si tendra fichero que contar.
+
+**EL COMMIT DEL `cap_01`** va con este tramo del reporte dentro y **cero JSON**,
+porque cero candidatos. El mensaje dice el capitulo y cuantos candidatos, que es lo
+que la seccion 17 manda, y dice el cero por su nombre.
