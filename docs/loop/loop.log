@@ -31,3 +31,8 @@
 [LINEA DE SERVICIO] este fichero para quitarle una linea de una prueba en seco de
 [LINEA DE SERVICIO] Alexis. La hora es la calculada, no la registrada, y por eso
 [LINEA DE SERVICIO] se dice: el dato viene del testigo, la marca de tiempo no.
+[2026-09-10 09:34:30] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+[2026-09-10 09:34:31] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-10 09:34:31]   ultimo commit de REPORTE.md      : 2026-09-10 08:44:27 (1789044267)
+[2026-09-10 09:34:31]   ultimo commit de ACTA_AUDITOR.md : 2026-09-10 09:04:18 (1789045458)
+[2026-09-10 09:34:31] VUELTA 1 : EXTRACTOR (claude-opus-5)
