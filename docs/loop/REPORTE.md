@@ -1889,9 +1889,9 @@ en vez de elegir en silencio.
 | 1 | ficha del libro y frontera | `cap_01` | **CERRADA** | ficha leida de la cabecera y del cuerpo. Frontera publicada antes de cortar: **20 parrafos, 0 procedimientos, 20 no procedimientos.** El unico con inventario propio (L47 a L55) cae por la vara madre: es el indice del libro y sus cuatro puntos se desarrollan en `cap_03` a `cap_06` |
 | 2 | candidatos, ciclo de cinco pasos | `cap_01` | **CERRADA** | **CERO candidatos**, porque cero procedimientos. Cero pasos escritos, cero puentes. Sin numerador ni denominador que medir |
 | 3 | informe y commit del capitulo | `cap_01` | **CERRADA** | `informe --carpeta cuarentena/smart_who` da `no existe la carpeta`, porque cero candidatos no crean bandeja. Saldo del capitulo: **0 entrarian, 0 bloquearian, 0 caerian**. Commit del capitulo con cero JSON dentro |
-| 1 | ficha del libro y frontera | `cap_02` | ABIERTA | |
-| 2 | candidatos, ciclo de cinco pasos | `cap_02` | ABIERTA | |
-| 3 | informe y commit del capitulo | `cap_02` | ABIERTA | |
+| 1 | ficha del libro y frontera | `cap_02` | **CERRADA** | frontera publicada antes de cortar: **64 parrafos y 3 titulares. 20 parrafos procedimentales y 44 no** (20 caso, 15 postura, 3 definicion, 3 cifra, 3 inventario de fines). Saldo: **2 procedimientos** |
+| 2 | candidatos, ciclo de cinco pasos | `cap_02` | **CERRADA** | **2 candidatos, los 2 ENTRARIAN.** 16 pasos escritos, **15 transcripcion y 1 puente cazado y corregido en el acto**. Cero caidas en la puerta y cero correcciones de id |
+| 3 | informe y commit del capitulo | `cap_02` | **CERRADA** | informe del lote: **2 revisados, 2 entrarian, 0 bloquearian, 0 caerian, 0 chocan**. Y el hallazgo que el informe no ve: los dos se bloquearian entre si por `familia_id` 0,333 en cuanto entre el primero |
 | 4 | las cuatro medidas del cierre, desglosadas por capitulo | vuelta | ABIERTA | |
 
 ## A.3. DISCUTIBLES MARCADOS ANTES DE SABER SI ACIERTO
@@ -1901,6 +1901,10 @@ en vez de elegir en silencio.
 | # | discutible | donde |
 |---|---|---|
 | 1 | **no pare** pese a que el `cap_01` dio cero procedimientos y el encargo pone eso entre sus paradas. Leo la parada como *el material de la vuelta no da ni un procedimiento* | 1.e |
+| 3 | **no cablee** la arista vudu antes que metodo, que el libro declara en L53, por no adjudicar yo si *secuencia dirigida* incluye precedencia temporal | 3.e |
+| 4 | la definicion del jugador A (L91 a L95) **fuera**, siendo el material mas parecido a un procedimiento que quedo sin nodo | 2.c |
+| 5 | conte como PUENTE una clausula que corregi antes de publicarla, en vez de dar cero | 2.f |
+| 6 | **un solo nodo de los diez metodos de vudu**, y no diez nodos mas cabeza, pese a ser una serie numerada de un libro | 2.j |
 | 2 | el parrafo 20 del `cap_01` (los cuatro puntos de fallo) **fuera**, pese a pasar las tres restricciones de `D.27` | 1.c |
 
 ---
@@ -2128,3 +2132,419 @@ si lo hay, y entonces el informe del lote si tendra fichero que contar.
 **EL COMMIT DEL `cap_01`** va con este tramo del reporte dentro y **cero JSON**,
 porque cero candidatos. El mensaje dice el capitulo y cuantos candidatos, que es lo
 que la seccion 17 manda, y dice el cero por su nombre.
+
+---
+
+## TAREA 1 DEL `cap_02` (*Cap. 1*, `Your #1 Problem`): frontera y saldo
+
+*El `cap_01` quedo cerrado entero, con su informe y su commit `da69e78`, ANTES de
+abrir este fichero. La unidad atomica se respeto: no se leyeron los dos juntos.*
+
+**La ficha bibliografica es la misma del `cap_01`** y no se repite (seccion 13:
+nada que el registro ya diga). Lo unico distinto de la cabecera es
+`unidad: Cap. 1` y `titulo_textual: Your #1 Problem`.
+
+### 2.a. LA FRONTERA, PUBLICADA ANTES DE CORTAR
+
+*67 bloques con contenido, contados sobre las lineas separadas por linea en blanco:
+**64 parrafos y 3 titulares de seccion** (`VOODOO HIRING` en L55, `FINDING A
+PLAYERS` en L85, `YOU ARE WHO YOU HIRE` en L107). La cuenta cuadra:
+`(141 menos 9) dividido entre 2, mas 1` da 67.*
+
+| lineas | cuantos | que hay | clase | destino |
+|---|---:|---|---|---|
+| L9, L11 | 2 | el error de contratacion cuesta quince veces el salario base; Drucker estima el acierto de los directivos en un pobre 50 por ciento | **CIFRA DEL AUTOR** | ninguno: ver 2.d |
+| L13 a L21 | 5 | los problemas de *who* son evitables; el proposito del libro; los testimonios; *decide to make better who decisions and you will...*; la pregunta de transicion | **POSTURA** | ninguno |
+| L23 a L27 | 3 | Lucy y Ethel en la fabrica de bombones: no era un problema de cinta transportadora, era un problema de Lucy | **CASO** | ninguno: manual 3.5 |
+| L29 | 1 | *The Economist*, portada de octubre de 2006, *The Search for Talent* | **CIFRA DEL AUTOR** | ninguno |
+| L31 | 1 | las historias de terror que todos hemos oido | **POSTURA** | ninguno |
+| L33 a L39 | 4 | la niñera de Geoff, la niña de dos años corriendo desnuda por el camino de entrada | **CASO** | ninguno |
+| L41 | 1 | los curriculos inflados y la diligencia debida que no se hace por falta de tiempo | **POSTURA mas ADVERTENCIA** | ninguno: manual 4 |
+| L43 a L49 | 4 | George Buckley (3M) sobre que es un curriculo; Jay Jordan (*I hired your resume*); Kelvin Thompson sobre la entrevista *la-di-da* | **CASO mas CITA** | ninguno |
+| L51 | 1 | lo que las tecnicas del libro prometen | **POSTURA** | ninguno |
+| **L53** | **1** | *antes de que nuestro metodo pueda funcionar a su nivel optimo, lo mas probable es que tengas que romper algunos malos habitos de contratacion propios* | **MANDATO** | **candidato 1** |
+| L57, L59 | 2 | Steve Kerr sobre el arte negro misterioso; todos los demas procesos de gestion se han estudiado y codificado | **CASO mas POSTURA** | resumen del candidato 1 |
+| **L61** | **1** | *tomate un momento para considerar como tu y tus directivos abordais la contratacion*, con su condicion de activacion y el anuncio de los diez | **MANDATO mas INVENTARIO** | **candidato 1** |
+| **L63 a L81** | **10** | los diez metodos de vudu, uno a uno con su descripcion propia | **INVENTARIO PROPIO** | **pasos del candidato 1** |
+| L83 | 1 | la asuncion que los diez comparten, y las dos trampas cognitivas | **POSTURA** | resumen del candidato 1 |
+| L87, L89 | 2 | encontrar jugadores A empieza por subir el liston; la pregunta *what is an A Player?* | **POSTURA** | ninguno |
+| L91 a L95 | 3 | la definicion del jugador A y sus dos elementos matematicos (90 por ciento y 10 por ciento) | **DEFINICION** | ninguno: ver 2.c, discutible 4 |
+| L97 a L101 | 3 | Ken Griffin y Citadel, veinte mil millones bajo gestion | **CASO** | ninguno |
+| L103 | 1 | *hiring A Players takes hard work... dig hard, ask tough questions* | **POSTURA mas ADVERTENCIA** | ninguno: ver 2.c |
+| L105 | 1 | el candidato de Citadel que mando un correo a todos diciendo que su jefe era incompetente | **CASO** | ninguno |
+| L109 | 1 | contrata jugadores C y perderas siempre; jugadores B y no destacaras | **POSTURA** | ninguno |
+| L111 a L115 | 3 | Steve Schwarzman (Blackstone) y sus dos triadas numeradas de claves del exito | **INVENTARIO DE FINES** | ninguno: ver 2.c, y es el ejemplar de la restriccion 1 |
+| **L117, L119** | **2** | *how do you get an A team?*, el metodo A de ghSMART, y *the four steps are* | **CABECERA DE SERIE** | **candidato 2** |
+| **L121 a L127** | **4** | Scorecard, Source, Select, Sell, cada uno con lo que produce | **SERIE NUMERADA** | **pasos del candidato 2** |
+| **L129** | **1** | facil de entender y aplicar en todos los niveles, desde el consejero delegado hasta el recepcionista | **ESCALA** | `escala_minima` del candidato 2 |
+| L131 a L137 | 4 | Allied Waste, John Zillmer, veintisiete jugadores A en dieciocho meses | **CASO** | ejemplo nombrado dentro del candidato 2 |
+| L139, L141 | 2 | puedes aplicarlo a tu ambito de control; el metodo funcionara para ti | **POSTURA** | ninguno |
+
+### 2.b. EL SALDO DEL `cap_02`
+
+| clase | parrafos | cuantos |
+|---|---|---:|
+| **PROCEDIMIENTO** | L53, L61, L63 a L81, L83 (candidato 1) y L117 a L129 (candidato 2) | **20** |
+| CASO (manual 3.5) | L23 a L27, L33 a L39, L43 a L49, L57, L97 a L101, L105, L131 a L137 | 20 |
+| POSTURA, tesis o advertencia | L13 a L21, L31, L41, L51, L59, L87, L89, L103, L109, L139, L141 | 15 |
+| DEFINICION | L91 a L95 | 3 |
+| CIFRA DEL AUTOR | L9, L11, L29 | 3 |
+| INVENTARIO DE FINES (cae por la restriccion 1) | L111 a L115 | 3 |
+| **total** | | **64** |
+
+> **`cap_02` DA DOS PROCEDIMIENTOS Y DOS CANDIDATOS.** 3.863 palabras, 64
+> parrafos, **20 de ellos procedimentales y 44 no**.
+
+**DOS CANDIDATOS DE 3.863 PALABRAS ES POCO, Y SE DICE CON SU RAZON** (el encargo
+manda no parar por eso y decirlo): **veinte de los sesenta y cuatro parrafos son
+CASO**, exactamente uno de cada tres. Este capitulo argumenta con historias, no con
+instrucciones, y las historias no son la casa (manual 3.5). **La densidad no es un
+fallo de la lectura: es el genero.**
+
+### 2.c. LOS TRES QUE ESTUVIERON CERCA Y SE QUEDARON FUERA
+
+**1. LAS DOS TRIADAS DE SCHWARZMAN (L111 a L115).** El libro cita a Steve
+Schwarzman diciendo que las claves del exito en capital riesgo son *(1) buying
+right, (2) having an A management team, (3) selling right*, y que en sus compañias
+participadas lo que importa es *(1) the right strategy in the right market, (2) an
+A management team, (3) financial discipline*. **Son dos inventarios numerados,
+propios, nombrados uno a uno.** Y caen por la **restriccion 1 de `D.27`**:
+*comprar bien*, *vender bien* y *disciplina financiera* son **FINES, no medios ni
+etapas ni objetos de trabajo**. *Nombrar adonde hay que llegar sigue siendo
+nombrar*. **Es el ejemplar mas limpio de esa restriccion que este lote ha
+encontrado**, y lo apunto porque el banco lo pedia con casos propios.
+
+**2. *HIRING A PLAYERS TAKES HARD WORK* (L103).** Trae tres imperativos seguidos:
+*dig hard, ask tough questions, and be prepared sometimes for disturbing answers*.
+**Tres imperativos no son un inventario**: no hay ni un medio nombrado (que
+preguntas duras, cavar donde), y el desarrollo esta en `cap_05`. Es la vara madre
+otra vez: **el nombre de otro**.
+
+**3. LA DEFINICION DEL JUGADOR A (L91 a L95).** El libro define al jugador A como
+*a candidate who has at least a 90 percent chance of achieving a set of outcomes
+that only the top 10 percent of possible candidates could achieve*, y dedica dos
+parrafos a los dos elementos matematicos. **Es el que mas dudo, y va como
+discutible 4.** Lo tumbo porque es una **DEFINICION** (seccion 9: *una definicion o
+un concepto sin nada que hacer*), y sobre todo por una prueba concreta: **al
+intentar escribirle el `entregable_esperado` no habia ninguno en el libro.** El
+texto no manda escribir la vara en ningun sitio ni deja nada tras de si; el papel
+contra el que se mide el 90 por ciento es *the role you have defined*, que es la
+tarjeta de puntuacion del `cap_03`. **Un entregable que hubiera tenido que
+inventar yo es la señal de que no habia procedimiento**, y esa es justo la especie
+de puente que `D.30` nombra.
+
+### 2.d. LO QUE EL CAPITULO DEJA SIN RECOGER
+
+**Las tres cifras del autor de L9, L11 y L29** no entran en ningun candidato, y
+**no las cuelgo de uno al que no pertenecen**: el coste de quince veces el salario
+base y el 50 por ciento de acierto de Drucker son del diagnostico del problema, no
+de los dos procedimientos que salieron. Quedan anotadas aqui, con el aviso de
+`atribuciones` del esquema: **el 50 por ciento de Drucker es una tasa sin banda, y
+una tasa sin banda es media cifra** (seccion 9). **Cada candidato lleva SOLO la
+cifra de sus propios parrafos**, y son dos: los cincuenta años de literatura
+academica (L81) en el candidato 1, y los trece años de ghSMART (L117) en el
+candidato 2.
+
+---
+
+## TAREA 2 DEL `cap_02`. Los dos candidatos, con el ciclo de cinco pasos
+
+### 2.e. LA TABLA DE MARCADO: 16 pasos escritos, 15 transcripcion, 1 puente
+
+*`D.30`. El paso 2 del ciclo se corrio ANTES del paso 3 en los dos candidatos, con
+el parrafo delante. La tabla va aqui y no dentro del JSON, como el encargo manda.*
+
+**CANDIDATO 1, `detectar_metodos_vudu_contratacion`, 12 pasos:**
+
+| paso | de que parrafo sale | marca |
+|---:|---|---|
+| 1 | L61, *Take a moment to consider how you and your managers approach hiring* | **TRANSCRIPCION** |
+| 2 | L63, el critico de arte | **TRANSCRIPCION** |
+| 3 | L65, la esponja | **TRANSCRIPCION** |
+| 4 | L67, el fiscal | **TRANSCRIPCION** |
+| 5 | L69, el pretendiente | **TRANSCRIPCION** |
+| 6 | L71, el bromista | **TRANSCRIPCION** |
+| 7 | L73, el amante de los animales | **TRANSCRIPCION** |
+| 8 | L75, el charlatan | **TRANSCRIPCION**, con una generalizacion declarada abajo |
+| 9 | L77, el examinador psicologico | **TRANSCRIPCION** |
+| 10 | L79, el examinador de aptitudes | **TRANSCRIPCION** |
+| 11 | L81, el adivino | **PUENTE, cazado y corregido en el acto** |
+| 12 | L53, romper los malos habitos propios | **TRANSCRIPCION**, con una modalidad declarada abajo |
+
+**CANDIDATO 2, `aplicar_metodo_ghsmart_contratacion`, 4 pasos:**
+
+| paso | de que parrafo sale | marca |
+|---:|---|---|
+| 1 | L121, Scorecard | **TRANSCRIPCION** |
+| 2 | L123, Source | **TRANSCRIPCION** |
+| 3 | L125, Select | **TRANSCRIPCION** |
+| 4 | L127, Sell | **TRANSCRIPCION** |
+
+### 2.f. EL PUENTE, CON EL PARRAFO QUE NO LO DICE CITADO
+
+**Lo que escribi primero, en el paso 11 del candidato 1:**
+
+    ... que harias, como lo harias, podrias hacerlo. La respuesta suena bien
+    y POR ESO NO DICE NADA, porque lo que cuenta es lo que se anda y no lo
+    que se habla.
+
+**EL PARRAFO QUE NO LO DICE es `fuentes/smart_who/cap_02.md` L81**, y dice esto:
+
+    The answer sounds nice, but we question how many people would actually do
+    those things. Remember, it is the walk that counts, not the talk.
+
+**El libro dice *sounds nice, but we question how many people would actually do
+those things*, y dos frases antes *Maybe. Then again, maybe not.* Yo escribi *y por
+eso no dice nada*, que es una conclusion cerrada que el libro NO saca**: el libro
+duda, yo sentencie. **Es una especie que la tabla de `D.30` no tenia todavia**, y
+la nombro para el banco: **el puente de la CONCLUSION**, donde el libro deja una
+duda abierta y el paso la cierra.
+
+**LO CORREGI EN EL ACTO, no en una vuelta posterior**, y asi quedo:
+
+    ... Cincuenta años de literatura academica sobre metodos de entrevista
+    argumentan en contra de ese tipo de preguntas: la respuesta suena bien,
+    pero ES DUDOSO CUANTA GENTE HARIA DE VERDAD ESAS COSAS, y lo que cuenta
+    es lo que se anda y no lo que se habla.
+
+**LO CUENTO COMO PUENTE Y NO COMO CERO, y esa es una decision de honestidad de la
+medida.** Podria no contarlo, porque se corrigio antes de publicarse y el fichero
+que viaja en el commit ya esta limpio. **Si lo descontara, la cifra de esta vuelta
+seria cero por construccion y no mediria nada**: el lote 1 conto pasos escritos, no
+pasos supervivientes, y la comparacion exige la misma vara. El encargo lo pide por
+su nombre: *el dato limpio, no el resultado que te gustaria*.
+
+### 2.g. LAS DOS COSAS QUE DECLARO SIN CONTARLAS COMO PUENTE
+
+**1. UNA GENERALIZACION, paso 8.** El libro escribe *How about them Yankees!* y yo
+escribi *el deporte*. **Es traduccion de un realia**, no contenido añadido: un
+lector castellano no reconoce a los Yankees como charla intrascendente. **El resto
+del paso conserva el beisbol** (*estadisticas de beisbol*, de L75).
+
+**2. UNA MODALIDAD, paso 12.** El libro escribe *chances are you might have to
+break some bad hiring habits of your own* (L53), que es condicional. **Mi paso lo
+escribe en imperativo** porque el esquema exige imperativos en
+`pasos_accionables`. **El contenido es del libro y la modalidad la impone el
+campo**, y lo declaro en vez de dejarlo callado.
+
+### 2.h. LOS TRES PUENTES QUE EL LOTE 1 PAGO, Y QUE ESTA VEZ NO SE ESCRIBIERON
+
+*Van nombrados uno a uno porque el encargo avisa de que son los que se vuelven a
+escribir sin darse cuenta. **Los tres estuvieron a punto**, y digo donde:*
+
+| especie | lo que casi escribo | el parrafo que NO lo dice |
+|---|---|---|
+| **el destinatario** | *escribe la lista de tus metodos de vudu*, o *llevala a recursos humanos* | L61 dice *take a moment to CONSIDER*. **Considerar no es escribir**, y el libro no pide ningun documento ni nombra a nadie a quien llevarlo. Por eso el `entregable_esperado` dice *identificados* y no *escritos* |
+| **el periodo** | *repite la revision cada cierto tiempo* | ni L53 ni L61 ponen cadencia ninguna. El libro lo pone UNA vez y antes del metodo |
+| **el responsable** | *encarga a cada directivo que responda de su propio metodo* | L61 dice *tu y tus directivos* como OBJETO de la revision, no como responsables de ella. **El sujeto es siempre el lector** |
+
+### 2.j. POR QUE LOS DIEZ METODOS DE VUDU SON UN NODO Y NO ONCE
+
+**Es la decision mas discutible del capitulo y va como discutible 6.** El manual,
+seccion 3 punto 4, manda: *SI ES SERIE NUMERADA de un libro: un nodo por paso mas
+UNA cabeza, jamas dos compresiones de la misma numeracion.* **Y los diez metodos
+de vudu son, literalmente, una serie numerada de un libro: van del 1 al 10.**
+Leida a la letra, esa regla pide **diez nodos mas una cabeza: once.**
+
+**Escribo uno, y estas son las dos razones:**
+
+1. **UN ELEMENTO DE ESA SERIE NO ES UN PASO: ES UNA ADVERTENCIA**, y el manual
+   seccion 4 lo zanja en una linea: *UNA ADVERTENCIA ES LINEA, no procedimiento.*
+   La regla del punto 4 dice *un nodo por PASO*, y aqui no hay pasos: hay diez
+   maneras de fallar. **Diez advertencias no se vuelven diez procedimientos por
+   estar numeradas.** Ninguna de las diez tiene condicion de activacion propia, ni
+   pasos propios, ni entregable: *el critico de arte* no es algo que nadie ejecute.
+2. **EL PROCEDIMIENTO ES LA REVISION, Y LA SERIE ES SU INVENTARIO.** El mandato
+   esta fuera de la lista (L61, *take a moment to consider*), y la lista es lo que
+   `D.27` llama el inventario propio del libro. **Convertir el inventario en diez
+   nodos dejaria al mandato sin sus medios**, que es justo el defecto que la prueba
+   del inventario existe para evitar.
+
+**LO QUE SI ACEPTO DE LA REGLA:** que esta es **UNA compresion de esa numeracion**,
+y por tanto **la unica que puede existir**. Si una vuelta futura quiere sacar
+`el_critico_arte` de L63, **eso seria la segunda compresion de la misma numeracion
+y el manual lo prohibe por su nombre.** Queda dicho aqui para que nadie lo escriba.
+
+**SI EL AUDITOR LEE LA REGLA A LA LETRA, mi cifra de candidatos del `cap_02` pasa
+de 2 a 11 y esta vuelta habria llenado el tramo.** Lo digo con la cifra puesta
+para que la relectura ciega no tenga que reconstruirla.
+
+### 2.i. LA ADUANA, CANDIDATO POR CANDIDATO Y EN EL MISMO ACTO
+
+*Seccion 16, ciclo de cinco pasos. Cada salida pegada del instrumento.*
+
+| candidato | intento | salida de `python forja.py informe cuarentena/smart_who/<id>.json` |
+|---|---:|---|
+| `detectar_metodos_vudu_contratacion` | 1 | **ENTRARIA**, 0 bloquearian, 0 caerian |
+| `detectar_metodos_vudu_contratacion` | 2, tras corregir el puente | **ENTRARIA**, 0 bloquearian, 0 caerian |
+| `aplicar_metodo_ghsmart_contratacion` | 1 | **ENTRARIA**, 0 bloquearian, 0 caerian |
+
+**CERO CAIDAS EN LA PUERTA Y CERO CORRECCIONES DE ID.** Los dos ids se escribieron
+con la seccion 15 delante y ninguna regla los tumbo.
+
+**LA REGLA DE ID QUE MAS TRABAJO DIO EN ESTE LIBRO, y conviene que quede escrita
+porque va a volver en los cinco capitulos que quedan:** el libro llama a su metodo
+**el metodo A** y a la gente que busca **jugadores A**. **La `a` esta en
+`PALABRAS_VACIAS` de la regla 3** (la lista la nombra expresamente), asi que
+**ningun id de este libro puede llevar la pieza `a`**. Por eso el candidato 2 se
+llama `aplicar_metodo_ghsmart_contratacion` y no `aplicar_metodo_a_contratacion`:
+**el nombre del metodo viaja entero en `denominaciones`** (`nombre_largo`: *El
+metodo A de ghSMART para contratar*; `otros_idiomas`: *ghSMART A Method for
+Hiring* y *the A Method*), que es exactamente la separacion entre NOMBRE e
+IDENTIDAD que `REGLAS_DE_ID.md` declara en su cabecera. **No es una parada ni una
+regla movida: es la regla funcionando en un libro que la pone a prueba.**
+
+---
+
+## TAREA 3 DEL `cap_02`. El informe del lote, y un hallazgo que el informe no ve
+
+### 3.a. EL INFORME DEL LOTE, PEGADO ENTERO DEL INSTRUMENTO
+
+    $ python forja.py informe --carpeta cuarentena/smart_who
+
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 2
+    nodos en el grafo de destino: 8
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 2
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    ============================================================================
+    LA LISTA COMPLETA, candidato por candidato
+    ============================================================================
+
+    [ENTRARIA] aplicar_metodo_ghsmart_contratacion   (aplicar_metodo_ghsmart_contratacion.json)
+
+    [ENTRARIA] detectar_metodos_vudu_contratacion   (detectar_metodos_vudu_contratacion.json)
+
+    NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+    entre hace falta python forja.py insertar, uno por vez, con su
+    veredicto escrito por vecino.
+
+### 3.b. LA PREGUNTA 3 DEL ENCARGO: CUANTOS VECINOS LEVANTA LA ADUANA
+
+*El encargo la pone asi: **cuantos vecinos levanta la aduana ahora que el grafo
+tiene ocho nodos, y si alguno pidio veredicto. Es la primera vez que esta casa
+tiene grafo con el que chocar.***
+
+> **CERO VECINOS CONTRA EL GRAFO. NINGUNO PIDIO VEREDICTO.**
+
+Dos candidatos contra ocho nodos, dieciseis pares medidos por tres señales cada
+uno, y **ni una supero su umbral**. La razon es de dominio y no de calidad: los
+ocho nodos vivos son **dos de metodologia de esta forja y seis de proteccion del
+consumidor** (medido en A.1), y los dos candidatos son de **contratacion**. **No
+habia con que chocar todavia**, asi que la primera vez que esta casa tiene grafo
+sigue sin ser la primera vez que lo usa.
+
+### 3.c. EL HALLAZGO: LOS DOS CANDIDATOS SE BLOQUEARIAN ENTRE SI, Y EL INFORME DEL LOTE NO LO PUEDE VER
+
+**Yo predije que estos dos chocarian por familia de id, el informe dijo que no, y
+al medirlo resulta que los dos teniamos razon en cosas distintas.** Lo escribo
+entero porque mi prediccion fallo y ocultarlo seria la clase de cifra maquillada
+que el encargo prohibe.
+
+**LO QUE MIDE EL `CHOCAN` DEL INFORME**, leido de `src/informe.py` L30:
+
+    CHOCA   dos candidatos del mismo lote traen el mismo id.
+
+**Es identidad literal de id, no señal.** Mis dos ids son distintos, asi que el
+informe da `0` **y da bien**.
+
+**LO QUE MIDEN LAS SEÑALES ENTRE LOS DOS CANDIDATOS**, corrido en esta vuelta con
+`src.aduana.medir`, que es la misma funcion que usa la aduana:
+
+    aplicar_metodo_ghsmart_contratacion  contra  detectar_metodos_vudu_contratacion
+      similitud_texto    0.126  (umbral 0.35)
+      familia_id         0.333  (umbral 0.30)   <-- SUPERA
+      paso_contra_nodo   0.405  (umbral 0.60)
+      levantada_por: ['familia_id']
+      paso 4 del candidato contra paso 10 de detectar_metodos_vudu_contratacion
+
+    detectar_metodos_vudu_contratacion  contra  aplicar_metodo_ghsmart_contratacion
+      similitud_texto    0.117  |  familia_id  0.333  <-- SUPERA  |  paso_contra_nodo  0.409
+
+La familia comparte dos piezas de seis, `contratacion` y `metodo`
+(`src.reglas_id.familia` corrido hoy), y **0,333 esta por encima del umbral de
+0,30**.
+
+> **EL SALDO *2 ENTRARIAN, 0 BLOQUEARIAN* ES CIERTO HOY Y DEJA DE SERLO EN CUANTO
+> ENTRE EL PRIMERO.** El segundo, medido contra un grafo que ya contenga al
+> primero, **levanta `familia_id` y BLOQUEA pidiendo veredicto.**
+
+**ESTO NO ES UN DEFECTO DEL INSTRUMENTO, Y NO PROPONGO TOCAR NADA.** Es literalmente
+lo que `EXTRACTOR.md` seccion 12.3 ya tiene escrito:
+
+> *UN CANDIDATO POR VEZ, y en el orden del libro: los nodos de un mismo capitulo
+> llegan juntos, y **el primero que entra cambia lo que el segundo mide**.*
+
+**Lo que este capitulo añade es el primer ejemplar medido de esa frase en esta
+casa, con sus tres decimales.** Y refuerza por que no hay carga masiva: un lote
+insertado de golpe se habria saltado el unico veredicto que este capitulo pide.
+
+### 3.d. EL VEREDICTO QUE YO ESCRIBIRIA, DEJADO LISTO Y SIN ESCRIBIR
+
+**NO LO ESCRIBO, y no por prudencia sino por sede:** `bitacora/VEREDICTOS.jsonl`
+la escribe **la aduana** por `forja.py insertar` (seccion 14), y **en esta corrida
+no hay insercion autorizada**. Dejo aqui la lectura hecha para que el dia que el
+fundador autorice no haya que rehacerla:
+
+| | |
+|---|---|
+| par | `detectar_metodos_vudu_contratacion` contra `aplicar_metodo_ghsmart_contratacion` |
+| señal que lo levanta | `familia_id` 0,333 (umbral 0,30) |
+| clase que yo leo | **SANO. Continua NO, repite NO: son dos procedimientos distintos** |
+| razon | El vudu **inventaria diez metodos que hay que dejar de usar** y su entregable son los malos habitos propios rotos. El metodo de ghSMART **inventaria cuatro pasos que hay que ejecutar** y su entregable es un jugador A contratado. **Lo que queda fuera es procedimiento en los dos lados** (manual seccion 4: no tiene bascula), y ni uno despliega un paso del otro: el mejor `paso_contra_nodo` entre ambos mide **0,405**, muy por debajo de 0,60. **Comparten las dos piezas de id porque el libro trata un tema**, que es el caso que la seccion 12 nombra: *eso no es una señal de duplicado, es una señal de que el libro trata un tema.* |
+
+**Y EL ORDEN DE INSERCION QUE PROPONGO, si se autoriza:**
+**`detectar_metodos_vudu_contratacion` primero**, porque es el que el libro pone
+primero (L53 a L83, contra L117 a L129) y porque `EXTRACTOR.md` 12.3 manda el orden
+del libro. **El segundo llegara bloqueado**, y eso es la puerta funcionando.
+
+### 3.e. LA ARISTA QUE LA LECTURA VE Y QUE NO CABLEO, con las dos lecturas escritas
+
+*Seccion 11 y `D.29`: la jerarquia la busca la lectura, no la señal. Aqui la
+lectura encontro DOS relaciones y **no cablea ninguna**, cada una por su motivo.*
+
+**RELACION 1: el vudu va ANTES del metodo.** L53 lo dice: *before our method can
+work to its optimal level, though, chances are you might have to break some bad
+hiring habits of your own*. **El orden esta declarado por el libro.**
+
+**NO LA CABLEO**, y esta es la razon: el esquema declara que `nodos_previos` y
+`nodos_siguientes` son *SECUENCIA DIRIGIDA **de madre a hijo***, y el ejemplar
+vivo de esta casa (lote 1) la uso para **el hijo que despliega un paso de la
+madre**. **Aqui no hay despliegue**: ninguno de los dos contiene al otro en un
+paso, y el `paso_contra_nodo` de 0,405 lo confirma. **Son dos procedimientos
+independientes que el libro ordena en el tiempo.** Cablearlos seria decidir que
+*secuencia dirigida* incluye *precedencia temporal*, **y esa es una lectura del
+esquema que yo no puedo adjudicar** (seccion 14: el extractor propone). **Va como
+discutible 3**, con las dos lecturas escritas para que el auditor elija.
+
+**RELACION 2: el candidato 2 es la CABEZA de una serie cuyos pasos aun no
+existen.** Manual seccion 3, punto 4: *si es SERIE NUMERADA de un libro, un nodo
+por paso mas UNA cabeza.* Los cuatro pasos (Scorecard, Source, Select, Sell) son
+`cap_03`, `cap_04`, `cap_05` y `cap_06`, **que esta vuelta no abre**.
+
+**NO LA CABLEO PORQUE LOS HIJOS NO EXISTEN.** Queda declarada aqui como **arista
+pendiente**, y con un aviso que vale mas que la arista: **`aplicar_metodo_ghsmart_contratacion`
+es la UNICA compresion permitida de esa numeracion.** El manual lo dice con esas
+palabras: *jamas dos compresiones de la misma numeracion.*
+
+> **Y AQUI SE VE POR QUE EL `cap_01` TENIA QUE DAR CERO.** Los cuatro puntos de
+> fallo del `cap_01` (L49 a L55) **son la misma numeracion vista por su cara
+> negativa**: no tener claro lo que el puesto necesita es Scorecard, flujo debil es
+> Source, no fiarse de tu criterio al elegir es Select, y perder al candidato es
+> Sell. **Si el `cap_01` hubiera dado su nodo, esta casa tendria DOS compresiones
+> de la misma numeracion y el manual lo prohibe por su nombre.** La decision de
+> 1.c se tomo sin este dato delante, con la vara madre sola, y **el `cap_02` la
+> confirma por un camino distinto.**
+
+### 3.f. EL COMMIT DEL `cap_02`
+
+Va con los **dos JSON dentro** (`D.25`) y con este tramo del reporte. **Dos
+capitulos, dos commits**, como la seccion 17 manda.

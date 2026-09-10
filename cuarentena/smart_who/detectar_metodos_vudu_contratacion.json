@@ -1,0 +1,53 @@
+{
+  "atribuciones": [
+    {
+      "autor": "Geoff Smart y Randy Street",
+      "cifra": "cincuenta años de literatura academica sobre metodos de entrevista argumentan en contra de usar preguntas hipoteticas de futuro en una entrevista",
+      "fecha_corte": "2008",
+      "fuente": "smart_who"
+    }
+  ],
+  "condiciones_activacion": "Cuando una y otra vez te preguntas como llego a la nomina alguien que no encaja, y antes de que el metodo del libro pueda funcionar a su nivel optimo.",
+  "denominaciones": {
+    "nombre_largo": "Los diez principales metodos de vudu para contratar",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "voodoo hiring methods"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "the top ten voodoo hiring methods"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Los metodos de vudu que tu y tus directivos usais, identificados uno a uno contra la lista de diez, y los malos habitos de contratacion propios rotos.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "detectar_metodos_vudu_contratacion",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Tomate un momento para considerar como tu y tus directivos abordais la contratacion.",
+    "Comprueba si juzgas por instinto en unos pocos minutos, que es el critico de arte: quien se cree naturalmente equipado para leer a la gente al vuelo se expone a ser engañado a lo grande, porque quien quiere un puesto lo bastante puede fingir una entrevista si dura solo unos minutos.",
+    "Comprueba si dejas que todo el mundo entreviste al candidato, que es la esponja: los directivos rara vez coordinan sus esfuerzos, con lo que todos acaban haciendo las mismas preguntas superficiales y la valoracion final rara vez pasa de que es buen tipo.",
+    "Comprueba si interrogas al candidato agresivamente con preguntas trampa y problemas de logica, que es el fiscal: las preguntas trampa pueden traerte al candidato mas conocedor, pero el conocimiento y la capacidad de hacer el trabajo no son lo mismo.",
+    "Comprueba si gastas toda tu energia vendiendo la oportunidad al candidato en vez de entrevistarlo con rigor, que es el pretendiente: hablando todo el tiempo de la entrevista y sin escuchar practicamente nada.",
+    "Comprueba si usas trucos para probar comportamientos, que es el bromista: tirar una bola de papel al suelo para ver si el candidato la recoge, o llevarlo a una fiesta para ver como se relaciona con los demas invitados.",
+    "Comprueba si te aferras a tus preguntas fetiche, que es el amante de los animales: preguntas que crees que revelan algo unicamente importante del candidato, que no tienen ni relevancia ni base cientifica y que son inutiles como predictores del desempeño en el puesto.",
+    "Comprueba si la entrevista se te va en conversacion agradable, que es el charlatan: el deporte, el tiempo que hace, de donde creciste. Estas escogiendo a un futuro colega de confianza y no a alguien con quien comentar estadisticas de beisbol.",
+    "Comprueba si decides con tests psicologicos y de personalidad, que es el examinador psicologico: el Handbook of Industrial/Organizational Psychology desaconseja usar ese tipo de tests para decisiones de seleccion de directivos, y un candidato avispado puede falsear facilmente las respuestas segun el puesto al que aspira.",
+    "Comprueba si conviertes un test de aptitud en el unico determinante, que es el examinador de aptitudes: usalos como herramientas de cribado si quieres, pero no los uses aislados, porque la aptitud es solo una parte de una ecuacion mucho mayor.",
+    "Comprueba si pides al candidato que mire al futuro con preguntas hipoteticas sobre el puesto, que es el adivino: que harias, como lo harias, podrias hacerlo. Cincuenta años de literatura academica sobre metodos de entrevista argumentan en contra de ese tipo de preguntas: la respuesta suena bien, pero es dudoso cuanta gente haria de verdad esas cosas, y lo que cuenta es lo que se anda y no lo que se habla.",
+    "Rompe los malos habitos de contratacion propios que hayas encontrado, porque hasta entonces el metodo del libro no puede funcionar a su nivel optimo."
+  ],
+  "resumen_teorico": "El libro sostiene que la contratacion es el unico proceso de gestion que ha escapado al estudio y a la codificacion, y que por eso se sigue viendo como un arte negro misterioso. Steve Kerr, que construyo Crotonville para Jack Welch en GE, lo dice asi en el capitulo: la gente por lo demas inteligente batalla para contratar a desconocidos, y quien no conoce buenos metodos de contratacion considera el proceso un arte negro misterioso. El resultado medido por los autores es que los directivos se aferran a sus metodos favoritos incluso cuando la evidencia sugiere que no funcionan. Los diez metodos que el capitulo nombra comparten una sola asuncion, y es la que hay que romper: que evaluar a una persona es facil. Debajo de esa asuncion el libro pone dos trampas cognitivas propias: queremos tomar decisiones rapidas para seguir adelante, y nos gusta ver a la gente como fundamentalmente veraz. La verdad dolorosa de contratar, en palabras del capitulo, es que es dificil ver a las personas como realmente son. Por eso este procedimiento no enseña a contratar: enseña a encontrar el metodo propio que hay que romper antes de que el metodo del libro pueda funcionar a su nivel optimo.",
+  "titulo": "Detectar los metodos de vudu que uno usa al contratar"
+}
