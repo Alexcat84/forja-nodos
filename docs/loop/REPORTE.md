@@ -4411,3 +4411,193 @@ habra medido que no, y lo dire igual.**
 > **UN PARTICULAR DE UN CASO ENTRA EN UN PASO SOLO SI (a) EL LIBRO LO MANDA FUERA
 > DEL CASO, Y (b) EL PASO LO ATRIBUYE EN SU PROPIO TEXTO.** Si falta cualquiera de
 > las dos, se va al `resumen_teorico` con su dueño delante.
+
+---
+
+## TAREA 2. EL Cap. 4 ENTERO, `Select: The Four Interviews for Spotting A Players`
+
+### 2.a. LA FRONTERA, PUBLICADA ANTES DE CORTAR NADA
+
+**EL CAPITULO VIVE EN DOS FICHEROS Y LO DIGO EN CADA FILA.** Medido por mi con
+`awk` sobre los dos rangos, y cada linea de esta tabla reabierta con `sed -n`
+antes de teclearse:
+
+| tramo | fichero y lineas | bloques no vacios | palabras |
+|---|---|---:|---:|
+| primera mitad | **`cap_04.md` L31 a L321** | 146 | 5.900 |
+| segunda mitad | **`cap_05.md` L9 a L361** | 177 | 7.089 |
+| **el Cap. 4** | | **323** | **12.989** |
+
+**COINCIDE EXACTO CON EL ENCARGO** en las tres cifras, y el corte tambien:
+`cap_04.md` muere en L321 con el titulo **`CONDUCTING AN EFFECTIVE WHO INTERVIEW`**
+y `cap_05.md` L9 abre **`To put the Who Interview into practice, divide a person's
+career story into the equivalent of chapters.`**, que es el cuerpo de ese mismo
+titulo. **El titulo y su parrafo estan partidos por el fichero, no por el libro.**
+`cap_05.md` L339 cierra (*"Now it is time to take the final step: selling the
+person on actually joining your team."*), L343 a L355 traen el recuadro entero y
+L359 y L361 las dos notas al pie. **No mando ninguna medida distinta: la tabla del
+auditor reproduce.**
+
+#### LAS DOCE PIEZAS DEL CAPITULO, con la prueba del inventario (`D.27`) pasada una a una
+
+| # | pieza | donde | que trae el libro | veredicto |
+|---:|---|---|---|---|
+| 1 | apertura: Steve Kerr, los cuatro mil estudios, y **las cuatro entrevistas nombradas** | `cap_04.md` L31 a L47 | **inventario de ETAPAS**: screening, Who, focused, reference, una a una en L39, L41, L43, L45 | **PROCEDIMIENTO**, y es la CABEZA |
+| 2 | `THE SCREENING INTERVIEW: CULLING THE LIST` | `cap_04.md` L49 a L99 | **inventario de MEDIOS**: cuatro preguntas nombradas (L63, L71, L75, L83), duracion, canal, guion de apertura (L91), cierre (L97) y criterio de corte (L99) | **PROCEDIMIENTO** |
+| 3 | `GETTING CURIOUS: WHAT, HOW, TELL ME MORE` | `cap_04.md` L101 a L149 | **inventario de MEDIOS**: las tres aperturas, y en L147 una lista de catorce preguntas de seguimiento escritas una a una | **PROCEDIMIENTO** |
+| 4 | `HIT THE GONG FAST` | `cap_04.md` L151 a L175 | el mandato *hitting the gong fast* mas **el caso de Adam Meyers y el de John Sharpe**. El acto que manda (cribar rapido) **ya es el criterio de corte de la pieza 2** | **NO ENTRA, por `P.19`**: es el mismo objeto dentro del capitulo. Su material va al `resumen_teorico` de `cribar_candidatos_entrevista_telefonica` |
+| 5 | `THE WHO INTERVIEW` mas `CONDUCTING AN EFFECTIVE WHO INTERVIEW` | `cap_04.md` L177 a L321 mas `cap_05.md` L9 a L39 | **inventario de ETAPAS y MEDIOS**: cinco preguntas nombradas (L203, L207, L215, L221, L261), el orden cronologico, la division en capitulos, el tandem, la duracion y **un guion literal de apertura** (`cap_05.md` L29 a L37) | **PROCEDIMIENTO** |
+| 6 | `MASTER TACTICS`, cinco tacticas numeradas | `cap_05.md` L41 a L91 | **SERIE NUMERADA** con su propio inventario en cuatro de las cinco | **PROCEDIMIENTO**, cabeza mas cuatro hijos. **La tactica 4 no entra**: ver 2.c |
+| 7 | `THE FOCUSED INTERVIEW` | `cap_05.md` L93 a L133 | **inventario de MEDIOS**: repartir resultados y competencias entre entrevistadores, el ejemplo del reparto en tres (L131), la duracion (L133) y la prohibicion de repetir la entrevista cronologica (L101) | **PROCEDIMIENTO** |
+| 8 | `DOUBLE-CHECKING THE CULTURAL FIT` | `cap_05.md` L135 a L145 | **el caso de First Solar entero**, con Mike Ahearn y Carol Campbell. El unico mandato del libro es *be sure to include competencies and outcomes that go beyond the specifics of the job* (L137), **sin inventario propio** | **NO ENTRA. Es CASO** (manual 3.5), y ademas el mandato remite a las competencias, que ya viven en `identificar_competencias_tarjeta_puntuacion` |
+| 9 | `TYPICAL INTERVIEW DAY` | `cap_05.md` L149 a L163 | **inventario de ETAPAS con su hora**: siete tramos nombrados uno a uno, de 8:30 a 17:30 | **PROCEDIMIENTO**, y es el inventario mas explicito del capitulo |
+| 10 | `THE REFERENCE INTERVIEW` | `cap_05.md` L167 a L249 | **inventario de MEDIOS**: las tres cosas que hay que hacer (L185, L187, L189), el reparto de siete llamadas (L189), las cinco preguntas descritas una a una (L193 a L201) y los tres codigos de la referencia tibia (L243, L245, L247) | **PROCEDIMIENTO** |
+| 11 | `THE SKILL-WILL BULL'S-EYE` | `cap_05.md` L255 a L267 | **inventario de ETAPAS**: primero habilidad resultado a resultado, despues voluntad competencia a competencia, con el corte del 90 por ciento nombrado por el libro | **PROCEDIMIENTO** |
+| 12 | `RED FLAGS` mas `MARSHALL GOLDSMITH'S BEHAVIORAL WARNING SIGNS` mas `DECIDE WHO TO HIRE` | `cap_05.md` L269 a L339 | **inventario de OBJETOS**: diez banderas nombradas una a una (L275 a L293) y ocho descarriladores de Goldsmith (L301 a L315); mas la **lista numerada de cinco pasos** de L323 a L331 | **PROCEDIMIENTO**, y da dos nodos |
+
+#### EL SALDO DE LA FRONTERA
+
+| | |
+|---|---:|
+| piezas leidas | **12** |
+| piezas que son PROCEDIMIENTO | **10** |
+| piezas que NO entran | **2** (una por `P.19`, una por caso) |
+| **candidatos que salen** | **15** |
+
+**LAS DOS QUE NO ENTRAN LLEVAN SU RAZON, y no es la misma:** la pieza 4 no entra
+porque **su acto ya esta dentro de otro nodo de este mismo capitulo** (`P.19`: el
+objeto ya esta en casa, se funde antes de insertar); la pieza 8 no entra porque
+**es un caso** y su unico mandato trae *competencies and outcomes that go beyond
+the specifics of the job*, que es un fin y no un medio (restriccion 1 de `D.27`:
+**nombrar adonde hay que llegar sigue siendo nombrar**).
+
+### 2.b. LAS DOS SERIES NUMERADAS DEL CAPITULO, Y COMO SE CORTAN
+
+**`HOW TO SELECT AN A PLAYER`, `cap_05.md` L343 a L355, SEIS puntos, ENTERO EN UN
+SITIO.** Es la primera vez en el lote 2 que un recuadro no llega partido, y lo
+verifique con `sed -n '343,355p'`: los seis puntos estan seguidos.
+
+**Corte, manual 3.4 (*un nodo por paso mas UNA cabeza, jamas dos compresiones de
+la misma numeracion*):**
+
+| punto del recuadro | linea | id del nodo |
+|---|---:|---|
+| **la CABEZA** | L343 | `seleccionar_jugador_cuatro_entrevistas` |
+| 1. `SCREENING INTERVIEW` | L345 | `cribar_candidatos_entrevista_telefonica` |
+| 2. `WHO INTERVIEW` | L347 | `conducir_entrevista_cronologica_trayectoria` |
+| 3. `FOCUSED INVERVIEW(S)` | L349 | `asignar_entrevistas_enfocadas_equipo` |
+| 4. `CANDIDATE DISCUSSION` | L351 | `calificar_tarjeta_puntuacion_habilidad_voluntad` |
+| 5. `REFERENCE INTERVIEW` | L353 | `conducir_llamadas_referencia` |
+| 6. `FINAL DECISION` | L355 | `decidir_contratacion_final` |
+
+**LA SEGUNDA SERIE, `MASTER TACTICS`, `cap_05.md` L47 a L91, CINCO tacticas
+numeradas por el libro:** cabeza `aplicar_tacticas_maestras_entrevista` mas
+**cuatro** hijos. **La cuarta no da hijo, y la razon esta en 2.c.**
+
+**NINGUNA NUMERACION SE COMPRIME DOS VECES:** la del recuadro de seis vive en
+`seleccionar_jugador_cuatro_entrevistas` y en ningun otro sitio; la de las cinco
+tacticas vive en `aplicar_tacticas_maestras_entrevista` y en ningun otro sitio; y
+**la de los cinco pasos de `DECIDE WHO TO HIRE` (L323 a L331) vive solo en
+`decidir_contratacion_final`**, que es una tercera numeracion distinta de las dos
+anteriores.
+
+**LOS TRES NODOS QUE NO SALEN DE NINGUNA SERIE**, y salen de la prosa con su
+inventario propio: `profundizar_respuestas_preguntas_curiosidad` (pieza 3),
+`organizar_jornada_entrevistas_candidato` (pieza 9) y
+`revisar_banderas_rojas_candidato` (pieza 12).
+
+### 2.c. LA TACTICA 4 NO ES NODO, Y ESTO ES UNA REGLA CONTRA OTRA REGLA, CON ARBITRO
+
+**El choque, dicho entero antes de resolverlo:** el manual 3.4 manda **un nodo por
+paso** de una serie numerada. El libro numera **cinco** tacticas maestras. **Yo
+escribo cuatro hijos.**
+
+**LA TACTICA 4, `Master Tactic #4: Painting a Picture`, `cap_05.md` L81 a L85,
+reabierta con `sed -n '81,85p'` antes de escribir esto.** Lo que trae:
+
+- **su criterio es un adjetivo de adecuacion**: *You'll know you understand what a
+  candidate is saying when you can literally see a picture of it in your mind*
+  (L83) y *Get curious to truly understand* (L85). **`truly understand` esta en el
+  sitio del criterio**, que es la restriccion 2 de `D.27`, y esa restriccion
+  **tumba aunque haya inventario**;
+- **su unico medio es el procedimiento de otro nodo**: *Get curious* remite a
+  `profundizar_respuestas_preguntas_curiosidad`, que ya sale de la pieza 3. Es el
+  caso literal de la vara madre, **solo el nombre de otro**;
+- lo que queda propio son **dos ilustraciones**: la *empathic imagination* de Ted
+  Bililies (L83) y la comunicadora que escribe bien y presenta mal (L85). **Un
+  concepto y un ejemplo, y ninguno de los dos ejecuta.**
+
+**EL ARBITRO ESCRITO, y por eso esto NO es parada** (`EXTRACTOR.md` 7 y el propio
+encargo): **`EXTRACTOR.md` 9 define que es un nodo, y su tabla pone *una postura* y
+*una definicion o un concepto sin nada que hacer* en la columna de NO.** El manual
+3.4 dice **como se corta** una serie, no **que un paso que no es procedimiento se
+vuelva procedimiento por estar numerado**. Cortar es lo que 3.4 manda; decidir si
+la pieza es nodo es lo que manda la seccion 9.
+
+**Y EL MATERIAL NO SE PIERDE:** la tactica 4 entra **como paso 4 de la cabeza**
+`aplicar_tacticas_maestras_entrevista`, que es donde el libro la pone, y su
+concepto va al `resumen_teorico` con Ted Bililies delante.
+
+**Discutible 2**, y lo que cuesta si fallo: **un nodo entero que no escribi**, y
+con el la unica lectura de esta vuelta que dice que una serie numerada puede dar
+menos hijos que numeros.
+
+### 2.d. LAS DOS DECISIONES DE ID QUE TOME ANTES DE ESCRIBIR, Y UNA VA CONTRA EL INSTRUMENTO
+
+**Corri `src.reglas_id.validar` sobre los quince ids ANTES de escribir el primer
+JSON**, que es lo que `EXTRACTOR.md` 15 manda. **Dos cayeron en seco y los dos se
+corrigieron sin gastar una pasada de aduana:**
+
+| id que escribi primero | lo que dijo el instrumento | como quedo |
+|---|---|---|
+| `seleccionar_jugadores_a_cuatro_entrevistas` | `preposicion o articulo prohibido: a (regla 3)`. **La a de jugador A la lee el instrumento como preposicion** | `seleccionar_jugador_cuatro_entrevistas`, con *A Player* en `denominaciones` |
+| `preguntar_curiosidad_que_como_cuentame` | `preposicion o articulo prohibido: que (regla 3)` | `profundizar_respuestas_preguntas_curiosidad` |
+
+**Y LA TERCERA, QUE EL INSTRUMENTO NO CAZA Y YO TUMBO IGUAL.** `src.reglas_id`
+da **OK** a `conducir_entrevista_who_cronologica`: `who` no esta en la lista
+negra. **Lo escribo igual en castellano**, `conducir_entrevista_cronologica_trayectoria`,
+por el ejemplar que `EXTRACTOR.md` 15.1 pone con su nombre:
+
+> `mitos_stage_gate`: **la regla no hace excepciones por prestigio del termino**,
+> aunque `Stage-Gate` sea el nombre de un metodo.
+
+`Who Interview` es exactamente eso, un metodo con nombre, y ademas **marca
+registrada** (`cap_05.md` L361, nota al pie: *Topgrading is a registered
+trademark of Topgrading, Inc.*). **`who` tiene equivalente corriente en castellano
+(*quien*), asi que por criterio pertenece a la negra aunque la lista no lo
+traiga.** El nombre viaja entero en `denominaciones.otros_idiomas`.
+
+**Discutible 3:** aplico una regla mas estrecha que la que el instrumento hace
+cumplir. Si el auditor dice que `who` es nombre propio y no se caza, **el id que
+queda es el largo y peor, y la familia se parte igual**.
+
+### 2.e. LA AUSENCIA MEDIDA: DOS RECUADROS QUE EL LIBRO CITA Y EL FICHERO NO TRAE
+
+**Se dice antes de escribir un solo paso, porque es donde un extractor inventa sin
+darse cuenta.** El texto remite dos veces a un recuadro que **no esta en el
+fichero**:
+
+| remision | linea, reabierta con `sed -n` | que falta |
+|---|---|---|
+| *The questions follow a simple structure, just like the other interviews in the A Method (**see box above**)* | `cap_05.md` **L105** | **las preguntas primarias de la entrevista enfocada** |
+| *In the A Method we ask five simple questions (**see box on the following page**)* | `cap_05.md` **L191** | **las cinco preguntas de la entrevista de referencias, en su forma literal** |
+
+**LO QUE HAGO CON CADA UNA, y no es lo mismo:**
+
+- **la entrevista enfocada**: sus preguntas **no se escriben**. El fichero no las
+  trae y **cualquier pregunta que yo teclee ahi la habria escrito yo**. El nodo se
+  queda con el inventario que el libro SI pone (repartir los resultados y las
+  competencias de la tarjeta entre los entrevistadores, el reparto en tres de
+  L131, la duracion de L133, la prohibicion de L101 y el marco de curiosidad de
+  L105). **La ausencia se declara en su `resumen_teorico`.**
+- **las cinco de referencias**: el recuadro falta, **pero el libro las describe
+  una a una en prosa, de L193 a L201**, y a la segunda y la tercera las resuelve
+  por remision interna: *The next two questions are exactly the same as the
+  screening interview ones* (**L195**), y esas dos **si estan en el fichero**, en
+  `cap_04.md` L71 y L75. La tercera la cita ademas literal, *"What were the
+  person's biggest areas for improvement back then?"* (**L197**). **Se transcriben
+  desde la prosa, no desde el recuadro que falta**, y la ruta queda escrita aqui.
+
+**Discutible 4:** que la remision interna de L195 valga como inventario del libro.
+Si el auditor la tumba, **dos de los cinco pasos de `conducir_llamadas_referencia`
+se caen por puente**.
