@@ -812,6 +812,68 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
         resuelto = resolutor.resolver(veredicto["vecino"]) or veredicto["vecino"]
         veredictos[resuelto] = veredicto
 
+    # ------------------------------------------------------------------
+    # LA ARISTA QUE LA SEÑAL NO LEVANTA SE DECLARA POR LECTURA (D.19, D.29).
+    #
+    # Un veredicto puede nombrar a un nodo que las tres señales NO levantaron.
+    # Eso no es un error del lector: es EL CASO NORMAL de la jerarquia, y esta
+    # casa lo tiene medido. La aduana caza duplicados; la jerarquia la caza la
+    # LECTURA, y la señal 3 solo levanta el 3 por ciento de las aristas
+    # declaradas (docs/CALIBRACION_D4.md seccion 7).
+    #
+    # HASTA EL 10 SEP 2026 ESTE CODIGO PARSEABA ESE VEREDICTO Y LO TIRABA. El
+    # bucle que escribe aristas y bitacora iteraba `for vecino in vecinos`, asi
+    # que un veredicto sobre un no vecino se quedaba en este diccionario sin que
+    # nadie lo leyera: la insercion decia que todo fue bien, el nodo entraba, y
+    # NI LA ARISTA NI LA RAZON ESCRITA SE ESCRIBIAN EN NINGUNA PARTE. Un
+    # veredicto aceptado en silencio es peor que uno rechazado, porque el
+    # rechazo se ve.
+    #
+    # Lo encontro el fundador al autorizar la primera insercion real, sobre el
+    # primer par madre e hijo de esta casa: `formular_codigo...` a
+    # `verificar_afirmaciones...`, que mide 0,572 contra un umbral de 0,60.
+    #
+    # LO QUE ESTO NO HACE, y es la mitad que importa: no relaja nada. Un
+    # veredicto declarado AÑADE una obligacion, jamas retira otra. `faltan` se
+    # sigue computando sobre los vecinos que las señales levantaron, asi que
+    # declarar una lectura no exime de juzgar un vecino real.
+    # ------------------------------------------------------------------
+    ids_vecinos = set(v["id"] for v in vecinos)
+    declarados = []
+    for vecino_id in sorted(veredictos):
+        if vecino_id in ids_vecinos:
+            continue
+        nodo_declarado = resolutor.canonicos.get(vecino_id)
+        if nodo_declarado is None:
+            resultado.codigo = CODIGO_RECHAZO
+            resultado.decir("")
+            resultado.decir("RECHAZADO: el veredicto nombra a '%s' y ese nodo no vive "
+                            "en el grafo." % vecino_id)
+            resultado.decir("  Una arista se cablea contra un id que YA existe. Si la "
+                            "madre todavia esta en cuarentena, entra ella primero.")
+            return resultado
+        medicion = medir(candidato, nodo_declarado, umbrales)
+        # SE DECLARA COMO LO QUE ES. La bitacora guarda las señales REALES, que
+        # es la prueba de que ninguna la levanto, y dice quien la levanto: un
+        # lector.
+        medicion["levantada_por"] = ["lectura declarada"]
+        declarados.append(medicion)
+
+    if declarados:
+        resultado.decir("")
+        resultado.decir("DECLARADOS POR LECTURA: %d. Ninguna señal los levanto."
+                        % len(declarados))
+        for declarado in declarados:
+            resultado.decir("  %s  [%s]" % (declarado["id"], declarado["titulo"]))
+            resultado.decir("    señales: %s"
+                            % ", ".join("%s %s" % (nombre, valor)
+                                        for nombre, valor in sorted(declarado["senales"].items())))
+            resultado.decir("    umbrales: similitud %.2f, familia %.2f, paso %.2f"
+                            % (umbrales["umbral_similitud_texto"],
+                               umbrales["umbral_familia_id"],
+                               umbrales["umbral_paso_contra_nodo"]))
+        resultado.decir("  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).")
+
     if vecinos:
         resultado.decir("")
         resultado.decir("VECINOS POR ENCIMA DE UMBRAL: %d. LA INSERCION QUEDA BLOQUEADA."
@@ -892,10 +954,15 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
             return resultado
 
     # 3. Veredictos escritos: se registran TODOS en la bitacora
+    #
+    # LOS DECLARADOS POR LECTURA PASAN POR EL MISMO SITIO. No hay un camino
+    # corto para ellos: se les exige la misma razon escrita, se les cablea la
+    # arista igual, y guardan la misma huella de vigencia. Lo unico distinto es
+    # quien los levanto, y eso queda escrito en el registro.
     aristas = []
     repite = []
     mutuos = []
-    for vecino in vecinos:
+    for vecino in vecinos + declarados:
         veredicto = veredictos[vecino["id"]]
         if veredicto["clase"] not in CLASES:
             resultado.codigo = CODIGO_RECHAZO

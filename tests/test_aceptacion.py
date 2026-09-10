@@ -1097,12 +1097,132 @@ class PruebaReglasDeId(BaseForja):
                             reglas_id.familia("auditoria_producto"))
 
 
+class PruebaAristaDeclarada(BaseForja):
+    """D.29: la arista que la señal NO levanta se declara POR LECTURA.
+
+    Encontrado el 10 sep 2026 al autorizar la primera insercion real. El bucle
+    que escribia aristas y bitacora iteraba solo sobre los vecinos que las
+    señales levantaron, asi que un veredicto sobre un no vecino se PARSEABA Y SE
+    TIRABA: la insercion decia que todo fue bien, el nodo entraba, y ni la arista
+    ni la razon escrita se escribian en ninguna parte.
+
+    UN VEREDICTO ACEPTADO EN SILENCIO ES PEOR QUE UNO RECHAZADO, porque el
+    rechazo se ve.
+    """
+
+    def _pareja_lejana(self):
+        """Dos nodos que NINGUNA de las tres señales relaciona."""
+        madre = nodo_base(
+            "redactar_codigo_comercializacion",
+            titulo="Redactar el codigo de comercializacion de la empresa",
+            resumen_teorico="La empresa escribe su propio codigo de conducta comercial "
+                            "y lo publica para que cualquiera pueda exigirlo.",
+            pasos_accionables=[
+                "Reune las practicas comerciales que la empresa ya aplica.",
+                "Escribe cada practica como una regla que se pueda incumplir.",
+                "Publica el codigo donde el comprador pueda leerlo.",
+            ])
+        hijo = nodo_base(
+            "comprobar_veracidad_anuncios",
+            titulo="Comprobar la veracidad de un anuncio antes de publicarlo",
+            resumen_teorico="Antes de publicar una pieza publicitaria se contrasta cada "
+                            "afirmacion suya contra la evidencia que la sostiene.",
+            pasos_accionables=[
+                "Separa del anuncio cada afirmacion verificable.",
+                "Pide para cada una la evidencia que la respalda.",
+                "Retira la afirmacion que se quede sin evidencia.",
+            ])
+        return madre, hijo
+
+    def _insertar(self, nodo, *extra):
+        ruta = os.path.join(self.taller, "%s.json" % nodo["id"])
+        with io.open(ruta, "w", encoding="utf-8") as fichero:
+            json.dump(nodo, fichero, ensure_ascii=False)
+        return self.forja("insertar", ruta, "--sin-preguntas", *extra)
+
+    def test_ninguna_señal_levanta_la_pareja(self):
+        """El supuesto de la prueba, comprobado y no supuesto."""
+        from src import aduana
+        madre, hijo = self._pareja_lejana()
+        self.assertEqual(aduana.buscar_vecinos(hijo, [madre]), [])
+
+    def test_la_arista_declarada_se_cablea_y_deja_su_razon(self):
+        madre, hijo = self._pareja_lejana()
+        codigo, salida = self._insertar(madre)
+        self.assertEqual(codigo, 0, salida)
+        codigo, salida = self._insertar(
+            hijo,
+            "--veredicto",
+            "redactar_codigo_comercializacion|CONTINUA|"
+            "madre=redactar_codigo_comercializacion|"
+            "el hijo despliega en tres pasos la comprobacion que la madre nombra")
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("DECLARADOS POR LECTURA", salida)
+        self.assertIn("arista madre-hijo cableada", salida)
+
+        # LA ARISTA, en el dataset y RESUELTA por los dos lados.
+        por_id = dict((n["id"], n) for n in self.nodos())
+        self.assertIn("comprobar_veracidad_anuncios",
+                      por_id["redactar_codigo_comercializacion"]["nodos_siguientes"])
+        self.assertIn("redactar_codigo_comercializacion",
+                      por_id["comprobar_veracidad_anuncios"]["nodos_previos"])
+
+        # LA RAZON ESCRITA Y LAS SEÑALES REALES, en la bitacora.
+        registros = comun.leer_jsonl(self.veredictos)
+        declarado = [r for r in registros
+                     if r["vecino"] == "redactar_codigo_comercializacion"]
+        self.assertEqual(len(declarado), 1, registros)
+        registro = declarado[0]
+        self.assertEqual(registro["veredicto"], "CONTINUA")
+        self.assertEqual(registro["levantada_por"], ["lectura declarada"])
+        self.assertIn("despliega", registro["razon"])
+        # Y la prueba de que ninguna señal la levanto va DENTRO del registro.
+        umbrales = {"similitud_texto": 0.35, "familia_id": 0.30,
+                    "paso_contra_nodo": 0.60}
+        for nombre, umbral in umbrales.items():
+            valor = registro["senales"][nombre]
+            self.assertLess(valor, umbral,
+                            "%s = %s deberia estar por debajo de %s"
+                            % (nombre, valor, umbral))
+        self.assertEqual(self.forja("gate")[0], 0)
+
+    def test_caso_positivo_sin_veredicto_no_hay_arista_ni_registro(self):
+        """La arista la crea la LECTURA, no la insercion.
+
+        Sin este caso, la prueba de arriba solo demostraria que insertar dos
+        nodos los cablea, que seria un defecto y no una virtud.
+        """
+        madre, hijo = self._pareja_lejana()
+        self.assertEqual(self._insertar(madre)[0], 0)
+        codigo, salida = self._insertar(hijo)
+        self.assertEqual(codigo, 0, salida)
+        self.assertNotIn("DECLARADOS POR LECTURA", salida)
+        por_id = dict((n["id"], n) for n in self.nodos())
+        self.assertEqual(por_id["redactar_codigo_comercializacion"]["nodos_siguientes"], [])
+        self.assertEqual(por_id["comprobar_veracidad_anuncios"]["nodos_previos"], [])
+        self.assertEqual(comun.leer_jsonl(self.veredictos), [])
+
+    def test_un_veredicto_sobre_un_id_que_no_vive_es_rechazo(self):
+        """Antes se tiraba en silencio. Ahora se rechaza nombrandolo."""
+        madre, hijo = self._pareja_lejana()
+        self.assertEqual(self._insertar(madre)[0], 0)
+        codigo, salida = self._insertar(
+            hijo, "--veredicto",
+            "nodo_que_no_existe|CONTINUA|madre=nodo_que_no_existe|una razon cualquiera")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("no vive", salida)
+        self.assertIn("nodo_que_no_existe", salida)
+        # Y NO ENTRO: un rechazo no deja mitad del trabajo hecho.
+        self.assertEqual([n["id"] for n in self.nodos()],
+                         ["redactar_codigo_comercializacion"])
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
              PruebaGate, PruebaMutuo, PruebaCitaDeLinea, PruebaVigencia,
              PruebaNoAplica, PruebaDeprecado, PruebaResolutor,
-             PruebaBandejas, PruebaReglasDeId]
+             PruebaBandejas, PruebaReglasDeId, PruebaAristaDeclarada]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -1129,6 +1249,8 @@ def main():
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaBandejas)._tests))
     print("  reglas de id 1 y 2, reescritas por el fundador (10 sep 2026): "
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaReglasDeId)._tests))
+    print("  D.29, la arista que la señal no levanta se declara por lectura: "
+          "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaAristaDeclarada)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))
