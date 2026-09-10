@@ -3,7 +3,7 @@
 #
 # Monta un repo de usar y tirar con su remoto bare, mete dentro
 # orquestador_forja.sh y un CLAUDE FALSO cuyo comportamiento se dicta por
-# variables de entorno, y corre SIETE escenarios. Ninguno toca el repo de verdad.
+# variables de entorno, y corre ONCE escenarios. Ninguno toca el repo de verdad.
 #
 # El claude falso es la unica forma de probar el arnes: un turno mudo o un fallo
 # instantaneo no se pueden pedir a un modelo de verdad, y una guarda que no se
@@ -64,6 +64,10 @@ if echo "$prompt" | grep -q "EXTRACTOR.md"; then
 else
   rol=auditor;   testigo="docs/loop/ACTA_AUDITOR.md"; escribe="${FALSO_AUDITOR:-si}"
 fi
+# El prompt recibido se guarda para que la prueba pueda afirmar SOBRE EL. Sin
+# esto, MODO_INSERCION solo se podria comprobar por sus efectos, y el efecto de
+# "no insertes" es que no pasa nada, que es indistinguible de un turno vago.
+printf '%s' "$prompt" > "prompt_${rol}.txt"
 sleep "${FALSO_SEGUNDOS:-2}"
 if [ "$escribe" = "vacio" ]; then
   # el turno TOCA su testigo pero lo deja en cero bytes: la ruta promete
@@ -90,7 +94,7 @@ FALSO
 correr() { # taller, y el resto son variables de entorno ya exportadas
   ( cd "$1" && MAX_VUELTAS="${MAX_VUELTAS:-1}" \
       UMBRAL_SEGUNDOS=1 ESPERA_SEGUNDOS=1 MAX_INTENTOS=2 \
-      CLAUDE_BIN="$1/bin/claude" RAMA=bucle \
+      CLAUDE_BIN="$1/bin/claude" RAMA="${RAMA:-bucle}" \
       bash orquestador_forja.sh 2>&1 )
 }
 
@@ -209,6 +213,70 @@ comprobar_no "el auditor NO llega a correr"  "VUELTA 1 : AUDITOR"           "$sa
 [ -s "$taller/docs/loop/REPORTE.md" ] \
   && { echo "    ROJO   el testigo no deberia tener contenido"; rojos=$((rojos+1)); } \
   || { echo "    VERDE  el testigo existe y esta vacio, como el escenario pide"; verdes=$((verdes+1)); }
+
+# ---------------------------------------------------------------- escenario 8
+echo ""
+echo "ESCENARIO 8: MODO_INSERCION POR DEFECTO. Nadie lo pasa, y el arnes tiene"
+echo "             que arrancar en CUARENTENA: el extractor no inserta."
+taller="$(montar_banco e8)"
+salida="$(correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "declara el modo al arrancar"      "MODO_INSERCION=cuarentena"    "$salida"
+comprobar "la vuelta corre igual"            "VUELTA 1 : EXTRACTOR"         "$salida"
+prompt="$(cat "$taller/prompt_extractor.txt" 2>/dev/null || echo SIN_PROMPT)"
+comprobar "el prompt prohibe insertar"       "NO INSERTAS NADA EN ESTA CORRIDA" "$prompt"
+comprobar "y dice donde queda el candidato"  "cuarentena/<libro>/"          "$prompt"
+comprobar "y manda el informe en seco"       "forja.py informe"             "$prompt"
+comprobar_no "no autoriza la insercion"      "EL FUNDADOR HA AUTORIZADO"    "$prompt"
+
+# ---------------------------------------------------------------- escenario 9
+echo ""
+echo "ESCENARIO 9: CASO POSITIVO DEL 8. Con MODO_INSERCION=insertar el mismo"
+echo "             arnes SI autoriza. Sin esto, el escenario 8 solo probaria"
+echo "             que el prompt dice siempre lo mismo."
+taller="$(montar_banco e9)"
+salida="$(MODO_INSERCION=insertar correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "declara el modo al arrancar"      "MODO_INSERCION=insertar"      "$salida"
+prompt="$(cat "$taller/prompt_extractor.txt" 2>/dev/null || echo SIN_PROMPT)"
+comprobar "el prompt autoriza"               "EL FUNDADOR HA AUTORIZADO LA INSERCION" "$prompt"
+comprobar "y manda uno por vez"              "UN CANDIDATO POR VEZ"         "$prompt"
+comprobar_no "no prohibe insertar"           "NO INSERTAS NADA"             "$prompt"
+
+# --------------------------------------------------------------- escenario 10
+echo ""
+echo "ESCENARIO 10: UN MODO MAL ESCRITO NO CAE AL DEFAULT. Un valor invalido"
+echo "              detiene el arnes ANTES de gastar un turno: adivinar una"
+echo "              autorizacion es justo lo que la variable existe para impedir."
+taller="$(montar_banco e10)"
+salida="$(MODO_INSERCION=insertarr correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "se detiene antes de arrancar"     "DETENIDO ANTES DE ARRANCAR"   "$salida"
+comprobar "nombra el valor recibido"         "insertarr"                    "$salida"
+comprobar "nombra los dos valores validos"   "cuarentena (el default) o insertar" "$salida"
+comprobar "y dice la regla"                  "NO UN DEFAULT"                "$salida"
+comprobar_no "no gasta ni un turno"          "VUELTA 1 :"                   "$salida"
+
+# --------------------------------------------------------------- escenario 11
+echo ""
+echo "ESCENARIO 11: EL FRENO DE RAMA. El arnes no hace checkout, asi que"
+echo "              lanzarlo desde otra rama trabajaria sobre la que estas y"
+echo "              empujaria a otra. Se detiene NOMBRANDO LAS DOS."
+taller="$(montar_banco e11)"
+git -C "$taller" checkout -q -b otra_rama
+salida="$(correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "se detiene antes de arrancar"     "DETENIDO ANTES DE ARRANCAR"   "$salida"
+comprobar "nombra la rama activa"            'la rama activa es "otra_rama"' "$salida"
+comprobar "nombra la rama pedida"            'RAMA es "bucle"'              "$salida"
+comprobar "y dice como salir"                "git checkout bucle"           "$salida"
+comprobar_no "no gasta ni un turno"          "VUELTA 1 :"                   "$salida"
+
+# CASO POSITIVO DEL 11: el MISMO banco, de vuelta en su rama, corre.
+git -C "$taller" checkout -q bucle
+salida="$(correr "$taller")"
+comprobar "en la rama correcta si arranca"   "arranque: rama bucle"         "$salida"
+comprobar "y la vuelta corre"                "VUELTA 1 : EXTRACTOR"         "$salida"
 
 echo ""
 echo "================================================================"

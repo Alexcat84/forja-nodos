@@ -6,13 +6,13 @@ nodos en el grafo de destino: 2
 umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
 
 EL SALDO
-  ENTRARIAN sin leer nada          : 93
+  ENTRARIAN sin leer nada          : 94
   BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
-  CAERIAN por una guarda           : 70
+  CAERIAN por una guarda           : 69
   CHOCAN entre si dentro del lote  : 0
 
 POR QUE GUARDA CAEN
-    66  el candidato rompe docs/REGLAS_DE_ID.md
+    65  el candidato rompe docs/REGLAS_DE_ID.md
      4  guiones prohibidos en el texto del candidato
 
 ============================================================================
@@ -106,9 +106,7 @@ LA LISTA COMPLETA, candidato por candidato
 
 [ENTRARIA] crecimiento_ingresos_verdes   (crecimiento_ingresos_verdes.json)
 
-[CAERIA] criterios_equity_split   (criterios_equity_split.json)
-    guarda: el candidato rompe docs/REGLAS_DE_ID.md
-      id 'criterios_equity_split': palabra inglesa con equivalente corriente en castellano: equity (regla 1). El termino ingles va en denominaciones.otros_idiomas, que es su sede. Un prestamo asentado (marketing, startup, lean) SI vale: la lista blanca esta en src/reglas_id.py
+[ENTRARIA] criterios_equity_split   (criterios_equity_split.json)
 
 [ENTRARIA] critica_eco_eficiencia   (critica_eco_eficiencia.json)
 
@@ -128,7 +126,9 @@ LA LISTA COMPLETA, candidato por candidato
     guarda: el candidato rompe docs/REGLAS_DE_ID.md
       id 'decisiones_de_financiamiento_exportacion': preposicion o articulo prohibido: de (regla 3)
 
-[ENTRARIA] definicion_metas_engagement   (definicion_metas_engagement.json)
+[CAERIA] definicion_metas_engagement   (definicion_metas_engagement.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'definicion_metas_engagement': palabra inglesa con equivalente corriente en castellano: engagement (regla 1). El termino ingles va en denominaciones.otros_idiomas, que es su sede. Un prestamo asentado (marketing, startup, lean) SI vale: la lista blanca esta en src/reglas_id.py
 
 [ENTRARIA] definicion_objetivos_proyecto_sistema   (definicion_objetivos_proyecto_sistema.json)
 
@@ -201,9 +201,7 @@ LA LISTA COMPLETA, candidato por candidato
 
 [ENTRARIA] equipo_forma_t   (equipo_forma_t.json)
 
-[CAERIA] equity_crowdfunding   (equity_crowdfunding.json)
-    guarda: el candidato rompe docs/REGLAS_DE_ID.md
-      id 'equity_crowdfunding': palabra inglesa con equivalente corriente en castellano: equity (regla 1). El termino ingles va en denominaciones.otros_idiomas, que es su sede. Un prestamo asentado (marketing, startup, lean) SI vale: la lista blanca esta en src/reglas_id.py
+[ENTRARIA] equity_crowdfunding   (equity_crowdfunding.json)
 
 [ENTRARIA] estatus_fundador_simbolico   (estatus_fundador_simbolico.json)
 

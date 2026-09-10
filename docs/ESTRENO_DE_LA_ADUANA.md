@@ -3,10 +3,11 @@
 **9 sep 2026.** Primera vez que la aduana de la forja mira un lote entero por su
 puerta real. **Cero inserciones**, y esta probado mas abajo con huellas.
 
-> **RE CORRIDO EL 10 sep 2026** con las reglas de id que el fundador reescribio
-> ese dia (D.21 a D.25 del banco). **Las cifras nuevas van en la seccion 9, al
-> lado de las viejas, que no se borran.** Las secciones 1 a 8 son del estreno
-> original y se leen tal cual.
+> **RE CORRIDO DOS VECES EL 10 sep 2026:** con las reglas de id que el fundador
+> reescribio ese dia (**seccion 9**, D.21 a D.25) y otra vez tras adjudicar la
+> lista blanca esa misma tarde (**seccion 10**, D.26.2). **Las tres columnas van
+> una al lado de otra y ninguna cifra vieja se borra.** Las secciones 1 a 8 son
+> del estreno original y se leen tal cual.
 
     python forja.py informe --carpeta cuarentena/<lote>
 
@@ -432,3 +433,47 @@ dos listas con sus ejemplares dentro, y por eso **cada candidato pasa por la
 aduana en el mismo acto en que se escribe**. Un candidato corregido en el minuto
 en que se escribio cuesta un minuto; descubierto al cerrar el lote, cuesta el
 lote.
+
+---
+
+## 10. LA TERCERA CORRIDA: LA BLANCA ADJUDICADA (10 sep 2026, misma tarde)
+
+La seccion 9 dejo tres piezas de la lista blanca señaladas como discutibles. **El
+fundador las adjudico el mismo dia** (D.26.2), y el lote se corrio por tercera
+vez. **Ninguna cifra vieja se borra.**
+
+| | | | |
+|---|---:|---:|---:|
+| | reglas viejas | reglas del 10 sep | **blanca adjudicada** |
+| **ENTRARIAN** | 114 (69,9 %) | 94 (57,7 %) | **93 (57,1 %)** |
+| **BLOQUEARIAN** | 0 | 0 | **0** |
+| **CAERIAN** | 49 (30,1 %) | 69 (42,3 %) | **70 (42,9 %)** |
+| **CHOCAN** | 0 | 0 | **0** |
+| regla 1, palabra inglesa | 6 | 29 | **29** |
+| regla 3, preposicion | 35 | 35 | **35** |
+| regla 2, version | 5 | 5 | **5** |
+| guiones en el texto | 4 | 4 | **4** |
+
+**LA CIFRA TOTAL SE MUEVE UN NODO, Y ESO ES LA MEDIDA MENOS INTERESANTE.** Lo que
+importa es que **cambian exactamente tres dictamenes, y son los tres que el
+fundador adjudico. Ni uno mas.**
+
+| candidato | antes | ahora | por que |
+|---|---|---|---|
+| `criterios_equity_split` | ENTRARIA | **CAERIA** | `equity` paso a la negra |
+| `equity_crowdfunding` | ENTRARIA | **CAERIA** | `equity` paso a la negra |
+| `definicion_metas_engagement` | CAERIA | **ENTRARIA** | `engagement` paso a la blanca |
+
+**`feedback` NO APARECE EN ESTE LOTE**, asi que su cambio no mueve ninguna cifra
+aqui. Se dice para que nadie lea el total como si midiera las tres piezas: mide
+dos.
+
+**Que la diferencia sea exactamente de tres y esten nombrados uno a uno es la
+comprobacion de que la correccion hizo lo que decia y nada mas.** Una correccion
+de lista que mueve nodos que nadie nombro es una correccion que no se entendio.
+
+**Salidas conservadas, las tres:**
+
+    calibracion/SALIDA_ESTRENO_REGLAS_VIEJAS.txt    reglas anteriores al 10 sep
+    calibracion/SALIDA_ESTRENO_REGLAS_10SEP_A.txt   con D.21 y D.22, blanca sin adjudicar
+    calibracion/SALIDA_ESTRENO.txt                  vigente

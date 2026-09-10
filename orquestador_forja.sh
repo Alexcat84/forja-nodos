@@ -12,14 +12,23 @@
 #   - rol inicial por medicion, no por costumbre
 #   - parada por docs/loop/PARA_ALEXIS.md
 #
+# Y DOS FRENOS PROPIOS DE ESTA CASA, del 10 sep 2026, que se comprueban ANTES de
+# gastar un turno:
+#
+#   - la rama activa tiene que ser $RAMA, y si no, se detiene NOMBRANDO LAS DOS
+#   - MODO_INSERCION manda si el extractor inserta o deja en cuarentena, y su
+#     default es cuarentena: LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO
+#     UN DEFAULT (D.26)
+#
 # EL CRITERIO NO VIVE AQUI, Y DESDE EL 9 SEP 2026 YA ESTA ESCRITO: vive en
 # docs/loop/EXTRACTOR.md (secciones 9 a 14) y docs/loop/AUDITOR_FORJA.md
 # (secciones 5 a 7), que salieron de borrador con la cosecha
 # (docs/COSECHA_2026-09.md seccion 7) y la calibracion (docs/CALIBRACION_D4.md).
 # Este fichero sigue siendo fontaneria: mueve turnos, no decide nada sobre nodos.
 #
-# SE DETIENE SOLO SI: existe docs/loop/PARA_ALEXIS.md, no hay prompt siguiente,
-# se alcanza MAX_VUELTAS, o una invocacion falla MAX_INTENTOS veces seguidas por
+# SE DETIENE SOLO SI: la rama activa no es $RAMA, MODO_INSERCION no es uno de
+# sus dos valores, existe docs/loop/PARA_ALEXIS.md, no hay prompt siguiente, se
+# alcanza MAX_VUELTAS, o una invocacion falla MAX_INTENTOS veces seguidas por
 # una de las dos especies que el arnes vigila (instantanea o turno mudo).
 #
 # EL ESTADO VIVE EN EL REPO: cada vuelta sobrevive a caidas porque todo se
@@ -33,6 +42,19 @@ MODELO_AUDITOR="${MODELO_AUDITOR:-claude-opus-5}"
 # El bucle vive en su propia rama. El merge a main es SIEMPRE decision de
 # Alexis, nunca del bucle (docs/loop/AUDITOR_FORJA.md, condiciones de parada).
 RAMA="${RAMA:-bucle}"
+
+# LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO UN DEFAULT (D.26, 10 sep
+# 2026). El arnes arranca en `cuarentena`: el extractor escribe candidatos y los
+# deja en cuarentena/<libro>/ con su informe, y NO inserta. Para que inserte hay
+# que pedirlo a mano:
+#
+#     MODO_INSERCION=insertar bash orquestador_forja.sh
+#
+# UN VALOR QUE NO SEA UNO DE LOS DOS DETIENE EL ARNES. No se interpreta ni se
+# cae al default: un modo mal escrito es una autorizacion que nadie dio, y
+# adivinarla es justo lo que esta variable existe para impedir.
+MODO_INSERCION="${MODO_INSERCION:-cuarentena}"
+
 LOOP="docs/loop"
 mkdir -p "$LOOP"
 
@@ -51,6 +73,37 @@ MAX_INTENTOS="${MAX_INTENTOS:-7}"
 CLAUDE_BIN="${CLAUDE_BIN:-claude}"
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOOP/loop.log"; }
+
+comprobar_arranque() {
+  # DOS FRENOS ANTES DE GASTAR UN SOLO TURNO.
+  #
+  # 1. LA RAMA ACTIVA TIENE QUE SER $RAMA. El arnes usa $RAMA solo para tirar y
+  #    empujar, no hace checkout: lanzarlo desde otra rama trabajaria sobre la
+  #    rama en la que estas y empujaria a otra. Se detiene NOMBRANDO LAS DOS,
+  #    porque "rama equivocada" sin decir cuales obliga a ir a mirar.
+  # 2. MODO_INSERCION tiene que ser uno de los dos valores. Un modo mal escrito
+  #    NO cae al default: se detiene.
+  local activa
+  activa="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo desconocida)"
+  if [ "$activa" != "$RAMA" ]; then
+    log "DETENIDO ANTES DE ARRANCAR: la rama activa es \"$activa\" y RAMA es \"$RAMA\"."
+    log "  El arnes no hace checkout. Cambia de rama o pasa RAMA=$activa:"
+    log "      git checkout $RAMA"
+    log "      RAMA=$RAMA bash orquestador_forja.sh"
+    exit 1
+  fi
+  case "$MODO_INSERCION" in
+    cuarentena|insertar) ;;
+    *)
+      log "DETENIDO ANTES DE ARRANCAR: MODO_INSERCION=\"$MODO_INSERCION\" no es un modo."
+      log "  Los dos valores son: cuarentena (el default) o insertar."
+      log "  LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO UN DEFAULT: un"
+      log "  modo mal escrito no se interpreta ni cae al default."
+      exit 1
+      ;;
+  esac
+  log "arranque: rama $RAMA, MODO_INSERCION=$MODO_INSERCION"
+}
 
 costo() { # extrae total_cost_usd del json de salida de claude
   local archivo="$1" valor=""
@@ -253,9 +306,22 @@ invocar_claude() { # rol modelo prompt salida vuelta [testigo]
   done
 }
 
-PROMPT_EXTRACTOR="Estas en el repo forja-nodos. Lee docs/loop/EXTRACTOR.md (tus reglas permanentes) y despues docs/loop/PROMPT_SIGUIENTE.md (tu encargo). Ejecuta el encargo al pie de la letra. NINGUN NODO ENTRA SIN PASAR POR LA ADUANA: se inserta con python forja.py insertar, un candidato por vez, y si la aduana bloquea escribes el veredicto con su razon. Abre docs/loop/REPORTE.md al empezar y hazlo crecer por anexion, con los discutibles marcados antes de saber si aciertas. Commitea y pushea TODO a la rama activa antes de terminar."
+# EL MANDATO DE INSERCION SALE DE MODO_INSERCION, y no de la costumbre. Antes
+# el prompt permanente decia SIEMPRE que se inserta, asi que un encargo que
+# pedia cero inserciones tenia que contradecirlo por escrito, y dos documentos
+# que se contradicen enseñan a elegir cual obedecer. Ahora el arnes dice UNA
+# sola cosa, y la dice el fundador al lanzarlo.
+if [ "$MODO_INSERCION" = "insertar" ]; then
+  MANDATO_INSERCION="EL FUNDADOR HA AUTORIZADO LA INSERCION EN ESTA CORRIDA (MODO_INSERCION=insertar). NINGUN NODO ENTRA SIN PASAR POR LA ADUANA: se inserta con python forja.py insertar, UN CANDIDATO POR VEZ, y si la aduana bloquea lees a los vecinos y escribes el veredicto con su razon antes de insertar. No existe la carga masiva."
+else
+  MANDATO_INSERCION="NO INSERTAS NADA EN ESTA CORRIDA (MODO_INSERCION=cuarentena, que es el default). TODO candidato que escribas queda en cuarentena/<libro>/<id_propuesto>.json y pasa por la aduana EN SECO, con python forja.py informe cuarentena/<libro>/<id_propuesto>.json en el mismo acto en que lo escribes; el que caeria lo corriges y lo reintentas. NO uses python forja.py insertar, ni aunque el candidato este perfecto: LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO UN DEFAULT, y en esta corrida no la ha dado. Al cerrar el capitulo corres el informe del lote entero y pegas su saldo en el reporte."
+fi
+
+PROMPT_EXTRACTOR="Estas en el repo forja-nodos. Lee docs/loop/EXTRACTOR.md (tus reglas permanentes) y despues docs/loop/PROMPT_SIGUIENTE.md (tu encargo). Ejecuta el encargo al pie de la letra. $MANDATO_INSERCION Abre docs/loop/REPORTE.md al empezar y hazlo crecer por anexion, con los discutibles marcados antes de saber si aciertas. Commitea y pushea TODO a la rama activa antes de terminar."
 
 PROMPT_AUDITOR="Estas en el repo forja-nodos. Lee docs/loop/AUDITOR_FORJA.md entero y actua como el auditor: verifica docs/loop/REPORTE.md contra el repo con tus propios comandos (python forja.py gate, python forja.py guiones, python tests/test_aceptacion.py y tu propio conteo del dataset), haz la relectura ciega empezando por los discutibles marcados, adjudica lo adjudicable, registra tu acta en docs/loop/ACTA_AUDITOR.md apendiendo, y escribe el encargo siguiente completo en docs/loop/PROMPT_SIGUIENTE.md. Si se cumple una condicion de parada de AUDITOR_FORJA.md, escribe docs/loop/PARA_ALEXIS.md con el motivo y el estado, y deja PROMPT_SIGUIENTE.md vacio. Commitea y pushea docs/loop/ antes de terminar."
+
+comprobar_arranque
 
 for i in $(seq 1 "$MAX_VUELTAS"); do
   git pull --rebase origin "$RAMA" >/dev/null 2>&1 || true

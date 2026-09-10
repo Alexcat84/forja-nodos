@@ -567,3 +567,96 @@ prueba nada que el tag no pruebe mejor.
 >
 > La coincidencia con `.gitignore` era **incidental**, y hoy se ve que lo era.
 > El texto viejo de D.20 no se borra: se lee con esta correccion al lado.
+
+## D.26. LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO UN DEFAULT (10 sep 2026, decision del fundador)
+
+*Cita: decision del fundador del 10 sep 2026, sobre la friccion que el reporte
+del PASO 3 dejo señalada: el encargo de la vuelta 1 tuvo que contradecir por
+escrito al prompt permanente del arnes.*
+
+**EL SINTOMA.** El prompt permanente del extractor decia SIEMPRE que se inserta
+con `python forja.py insertar`. Un encargo que pedia cero inserciones no tenia
+mas remedio que contradecirlo, en voz alta y por escrito. **Y dos documentos que
+se contradicen enseñan a elegir cual obedecer**, que es exactamente la enfermedad
+que la moratoria y la congelacion de varas vinieron a curar.
+
+**LA CAUSA, que no era el texto sino el default.** Insertar en el grafo es la
+unica accion de esta casa que **no se puede deshacer leyendo**: un nodo que entro
+mal deja arista, censo, veredicto y huella. Que eso fuera lo que pasa **si nadie
+dice nada** era el fallo.
+
+> **EL ARNES ARRANCA SIN PERMISO PARA INSERTAR. El permiso se da al lanzarlo, y
+> se da a mano.**
+
+**COMO QUEDA:** `orquestador_forja.sh` gana `MODO_INSERCION`.
+
+| valor | que hace |
+|---|---|
+| **`cuarentena`** | **EL DEFAULT.** El prompt del extractor le prohibe insertar y le manda dejar cada candidato en `cuarentena/<libro>/<id>.json` con su informe en seco |
+| `insertar` | el prompt le autoriza: `forja.py insertar`, un candidato por vez, con su veredicto escrito si la aduana bloquea |
+| cualquier otro | **DETIENE EL ARNES antes de gastar un turno** |
+
+**UN MODO MAL ESCRITO NO CAE AL DEFAULT, y esto no es rigor por gusto:** caer al
+default seria benigno aqui (cuarentena es lo prudente), pero enseñaria que la
+variable se puede escribir mal sin consecuencia. **Adivinar una autorizacion es
+justo lo que esta variable existe para impedir**, y una guarda que perdona en el
+caso facil no guarda en el dificil.
+
+**Y EL ARNES YA NO SE CONTRADICE CON NINGUN ENCARGO:** dice UNA sola cosa, y la
+dice el fundador al lanzarlo. La advertencia de contradiccion se retiro de
+`docs/loop/PROMPT_SIGUIENTE.md` porque **ya no hay contradiccion que advertir**.
+
+### D.26.1. El freno de rama, del mismo dia y por la misma razon
+
+El arnes usa `$RAMA` solo para tirar y empujar: **no hace checkout**. Lanzarlo
+desde otra rama trabajaria sobre la rama en la que estas y empujaria a otra. Ese
+riesgo iba escrito en el reporte del PASO 3 como friccion; hoy es una guarda.
+
+**Comprueba al arrancar que la rama activa es `$RAMA` y, si no, SE DETIENE
+NOMBRANDO LAS DOS**, mas el comando para salir. Nombrar las dos no es adorno:
+"rama equivocada" sin decir cuales obliga a ir a mirar, y quien lanza un arnes a
+las tres de la mañana no va a mirar.
+
+**PRUEBAS** (`tests/prueba_arnes.sh`, escenarios 8 a 11, con el claude falso, que
+ahora guarda el prompt recibido para que se pueda afirmar SOBRE EL y no sobre sus
+efectos, porque el efecto de "no insertes" es que no pasa nada y eso es
+indistinguible de un turno vago):
+
+- **8**, nadie pasa `MODO_INSERCION`: el prompt prohibe insertar, nombra
+  `cuarentena/<libro>/`, manda el informe en seco, y **no** autoriza.
+- **9**, el CASO POSITIVO: con `MODO_INSERCION=insertar` el MISMO arnes SI
+  autoriza y manda uno por vez. Sin este, el 8 solo probaria que el prompt dice
+  siempre lo mismo.
+- **10**, `MODO_INSERCION=insertarr`: se detiene antes de arrancar, nombra el
+  valor recibido, nombra los dos validos, dice la regla, y **no gasta ni un
+  turno**.
+- **11**, el freno de rama: desde `otra_rama` con `RAMA=bucle` se detiene
+  nombrando las dos y dando el comando; **y su CASO POSITIVO**, el mismo banco de
+  vuelta en su rama, arranca y corre la vuelta.
+
+Once escenarios, **62 comprobaciones en verde**.
+
+### D.26.2. Correccion declarada a D.21: la lista blanca pierde dos y gana una
+
+*Misma fecha. El fundador adjudica las tres piezas que el reporte del PASO 3
+dejo señaladas como discutibles.*
+
+| pieza | va a | razon del fundador |
+|---|---|---|
+| `equity` | **NEGRA** | *capital* o *participacion* son equivalentes corrientes |
+| `feedback` | **NEGRA** | *retroalimentacion* es equivalente corriente |
+| `engagement` | **BLANCA** | *compromiso* e *interaccion* **no capturan el sentido de marketing** |
+
+**Y AQUI HAY UN ERROR MIO QUE HAY QUE DECLARAR, porque la decision se tomo
+encima de el.** El reporte del PASO 3 presento las tres como piezas de la lista
+BLANCA que alguien razonable discutiria. **`equity` y `feedback` si lo estaban;
+`engagement` NO: estaba en la NEGRA.**
+
+Asi que para `engagement` la instruccion *"se queda"* **no fue una confirmacion
+sino un movimiento**, y se ejecuto como movimiento **por su razon escrita**, que
+es una razon de lista blanca: traducirlo fabricaria un termino que no dice lo
+mismo. La otra lectura, dejarlo donde estaba, contradiria la razon con la que se
+decidio.
+
+**Lista negra: 367. Lista blanca: 32.** Sin solape, comprobado al importar el
+modulo y en `PruebaReglasDeId`.

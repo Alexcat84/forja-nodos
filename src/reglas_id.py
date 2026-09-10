@@ -66,7 +66,7 @@ INGLES_CON_EQUIVALENTE = {
     "tracking", "reporting", "staffing", "hiring", "employee",
     "employees", "owner", "owners", "leadership", "stakeholder", "stakeholders",
     "shareholder", "shareholders", "partners", "partnerships", "partnership",
-    "collaboration", "cooperation", "community", "engagement", "workshop",
+    "collaboration", "cooperation", "community", "workshop",
     "meetings", "meeting", "homework", "letters", "letter", "statement",
     "agreement", "agreements", "convention", "settlement", "consideration",
     # calidad, riesgo y produccion
@@ -93,6 +93,7 @@ INGLES_CON_EQUIVALENTE = {
     "profit", "revenue", "cost", "costs", "fee", "fees", "banker", "trading",
     "warrant", "warrants", "warranties", "warranty", "redemption", "licensing",
     "indemnification", "antidilution", "vesting", "goodwill", "runway",
+    "equity",
     # conocimiento y metodo
     "theory", "hypothesis", "assumption", "assumptions", "experiment",
     "simulation", "investigation", "negotiation", "evaluation", "assessment",
@@ -100,6 +101,7 @@ INGLES_CON_EQUIVALENTE = {
     "mapping", "modeling", "prototyping", "iteration", "learning", "thinking",
     "understanding", "insight", "insights", "empathy", "awe", "consciousness",
     "rationality", "groupthink", "hindsight", "mentality", "attention",
+    "feedback",
     # producto y obra
     "building", "engineering", "design", "usability", "functionality",
     "feasibility", "viability", "desirability", "affordances", "breakdown",
@@ -132,8 +134,8 @@ INGLES_CON_EQUIVALENTE = {
 PRESTAMOS_ASENTADOS = {
     "marketing", "benchmarking", "startup", "lean", "coaching", "scrum",
     "backlog", "branding", "brainstorming", "bootstrapping", "coworking",
-    "crossdocking", "crowdfunding", "escrow", "equity",
-    "feedback", "freemium", "greenwashing", "kaizen", "kanban", "leasing",
+    "crossdocking", "crowdfunding", "engagement", "escrow",
+    "freemium", "greenwashing", "kaizen", "kanban", "leasing",
     "marketplace", "marketplaces", "networking", "onboarding", "outsourcing",
     "pivot", "ranking", "retargeting", "software", "stock", "storytelling",
     "web",

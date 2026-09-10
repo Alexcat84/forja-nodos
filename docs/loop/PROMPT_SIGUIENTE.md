@@ -1,4 +1,4 @@
-# ENCARGO DE LA VUELTA 1: EL LOTE 1, LIBRO `onu_consumidor`, CAPITULO 1
+# ENCARGO DE LA VUELTA 1: EL LOTE 1, LIBRO `onu_consumidor`
 
 *Escrito por Alexis el 10 sep 2026. Es la PRIMERA vuelta de esta forja: el
 dataset tiene DOS nodos y ninguno lo escribio un extractor.*
@@ -27,6 +27,11 @@ vale tanto como una que produce cinco.** Lo que no vale es una tarea sin razon.
 - **seccion 17**, el protocolo de lote: los candidatos van a
   `cuarentena/onu_consumidor/`, y **desde el 10 sep 2026 esa carpeta VIAJA en el
   repo** (D.25).
+
+**Y EL ARNES QUE TE LANZO ARRANCA EN `MODO_INSERCION=cuarentena`**, que es su
+default desde D.26: **la insercion es una autorizacion del fundador, no un
+default**. Tu prompt permanente ya te lo dice, y este encargo dice lo mismo. **No
+hay contradiccion entre los dos: si crees encontrar una, eso es una parada.**
 
 ---
 
@@ -57,60 +62,68 @@ sale la ficha de la fuente, y para que puedas comprobarla.
 
 ---
 
-## UNA COSA QUE TIENES QUE DECIDIR, Y LA DECIDES TU CON SU RAZON ESCRITA
+## LA MARCA FRONTERA DE `cap_01`: LA DECISION YA ESTA TOMADA
 
 **`cap_01.md` lleva esta marca en su linea 9, puesta por el recorte del mundo 11:**
 
     _Nota: seccion FRONTERA, no se mina en el nucleo (ver plan de recorte)._
 
-**ESA MARCA ES DE OTRA CASA.** Pertenece al plan de recorte de mundo 11 para el
-proyecto My Idea, no a la doctrina de esta forja, **y no se te da masticada
-precisamente porque es el tipo de cosa que un extractor tiene que saber leer**.
+**ESA MARCA SE RESPETA. Es una decision previa del fundador**, tomada en el plan
+de recorte del mundo 11, y **una vuelta de extraccion no reabre una decision del
+fundador** (`EXTRACTOR.md` seccion 5). No la discutes: la cumples y la registras.
 
-**LO QUE HACES CON ELLA:**
+**LO QUE HACES CON `cap_01`, en este orden:**
 
-1. **Lees `cap_01.md` entero de todas formas.** Una marca no sustituye a una
-   lectura.
-2. **Decides si tiene procedimiento con la vara de la seccion 9** de
-   `EXTRACTOR.md`: un procedimiento nombrado con pasos que alguien puede
-   ejecutar. Ojo, que ahi hay trampa: *"Los Estados Miembros deben adoptar
-   politicas adecuadas"* puede ser **postura** y no procedimiento, y **una
-   postura no ejecuta una busqueda**.
-3. **Escribes tu decision en el reporte con su razon y su cita de linea**, sea
-   cual sea.
-4. **Si concluyes que no se mina, PASAS A `cap_02.md` EN ESTA MISMA VUELTA.**
-   Una vuelta de calibracion que no toca material no calibra nada.
+1. **LO LEES ENTERO.** Una marca no sustituye a una lectura, y sin leerlo no
+   puedes hacer el punto 2.
+2. **PASAS LA VARA DE LA SECCION 9 SOBRE SU MATERIAL Y ESCRIBES ESA LECTURA COMO
+   EJEMPLAR.** No para decidir nada, que ya esta decidido: **para dejar en el
+   reporte un caso trabajado de postura contra procedimiento en material
+   normativo**, que es el caso dificil y esta casa todavia no tiene ninguno.
+   Ahi hay trampa buena: *"Los Estados Miembros deben adoptar politicas
+   adecuadas"* parece un imperativo y **una postura no ejecuta una busqueda**.
+   Cita tus lineas.
+3. **LO REGISTRAS COMO NO MINADO POR LA MARCA**, no como no minado por tu
+   lectura. Son dos cosas distintas y el reporte tiene que distinguirlas: si tu
+   vara y la marca coincidieran, seria informacion; si discreparan, tambien, y
+   **mas**. Lo escribes tal como salga.
+4. **PASAS A `cap_02.md` EN ESTA MISMA VUELTA**, y de ahi salen los candidatos.
 
-**NO ES UNA PARADA.** Es una decision tuya, y el auditor la revisara.
-
----
+**NO ES UNA PARADA Y NO TE CUESTA LA VUELTA.** `cap_02` es el apartado V-C,
+parrafos 20 a 32, 819 palabras: **es el capitulo de esta vuelta.**
 
 ## LAS TAREAS DE ESTA VUELTA
 
 **Tope de cinco tareas (seccion 3). Estas son cuatro.**
 
-### TAREA 1. Leer el capitulo y publicar la frontera ANTES de cortar
+### TAREA 1. `cap_01`: leerlo, pasarle la vara como ejemplar, registrarlo
 
-Lee `cap_01.md`. Publica en el reporte: **que hay dentro, que es procedimiento y
-que no, y donde esta la frontera**. Sin extraer todavia nada.
+Lee `cap_01.md` entero. En el reporte:
 
-### TAREA 2. Extraer los candidatos que salgan, uno a uno y por la aduana
+- **la lectura de vara como EJEMPLAR**, con sus citas de linea: que hay dentro,
+  que seria procedimiento y que es postura, y por que;
+- **el registro: NO MINADO POR LA MARCA FRONTERA**, con la marca citada;
+- **si tu vara coincide o no con la marca.** Las dos respuestas valen; lo que no
+  vale es no decirlo.
 
-Cada candidato:
+**No extraes nada de `cap_01`.**
+
+### TAREA 2. `cap_02`: publicar la frontera y extraer, uno a uno y por la aduana
+
+Lee `cap_02.md`, el apartado V-C. **Publica primero que hay dentro, que es
+procedimiento y que no, y donde esta la frontera.** Sin extraer todavia.
+
+Despues, cada candidato:
 
     1. lo escribes en cuarentena/onu_consumidor/<id_propuesto>.json
     2. python forja.py informe cuarentena/onu_consumidor/<id>.json
     3. si CAERIA, lo corriges y vuelves al 2
     4. solo entonces cuenta como escrito
 
-**NO INSERTAS NADA TODAVIA EN ESTA VUELTA.** El lote 1 es de calibracion: los
-candidatos se dejan en cuarentena y **el fundador lee el informe antes de
-autorizar la primera insercion real de esta forja**. Si un candidato esta
-perfecto, igual se queda en la bandeja.
-
-> **ESTA ES LA UNICA INSTRUCCION DE ESTE ENCARGO QUE CONTRADICE TU HABITO:** el
-> prompt permanente del arnes te dice que insertes con `forja.py insertar`. **En
-> la vuelta 1 no.** Cero inserciones, y lo dices en el reporte.
+**NO INSERTAS NADA.** El arnes arranca en `MODO_INSERCION=cuarentena` y su
+prompt permanente ya te lo dice: los candidatos se quedan en la bandeja y **el
+fundador lee el informe antes de autorizar la primera insercion real de esta
+forja**. Si un candidato esta perfecto, igual se queda.
 
 ### TAREA 3. El informe del lote en seco
 
@@ -134,14 +147,15 @@ los JSON dentro. El mensaje dice **que capitulo y cuantos candidatos**.
 
     # REPORTE DEL EXTRACTOR
 
-    ## VUELTA 1, lote 1 (onu_consumidor), capitulo 1
+    ## VUELTA 1, lote 1 (onu_consumidor), cap_02
 
     | | |
     |---|---|
     | fecha | 10 sep 2026 |
     | rama | extraccion-mundo-11 |
     | lote | onu_consumidor, LOTE 1 DE CALIBRACION (D.24) |
-    | capitulo | cap_01.md, apartado V-B parrafos 16 a 19 |
+    | capitulo de extraccion | cap_02.md, apartado V-C parrafos 20 a 32 |
+    | cap_01.md | leido y registrado NO MINADO por la marca FRONTERA |
     | nodos en el dataset al empezar | 2 |
     | inserciones autorizadas en esta vuelta | CERO. Todo queda en cuarentena |
 
@@ -149,8 +163,8 @@ los JSON dentro. El mensaje dice **que capitulo y cuantos candidatos**.
 
     | # | tarea | estado | resultado |
     |---|---|---|---|
-    | 1 | leer cap_01 y publicar la frontera | | |
-    | 2 | extraer candidatos por la aduana, uno a uno | | |
+    | 1 | cap_01 leido, vara como ejemplar, registrado no minado | | |
+    | 2 | cap_02: frontera publicada y candidatos por la aduana | | |
     | 3 | informe del lote en seco | | |
     | 4 | commit del capitulo | | |
 
@@ -187,11 +201,13 @@ del reporte**, porque es lo que el fundador va a leer:
 - una regla de la casa te obliga a algo que rompe otra regla de la casa;
 - necesitas mover un umbral, una regla de id, o el esquema. **Ninguna vuelta
   mueve nada de eso** (seccion 5 y D.23);
-- el capitulo no da ni un procedimiento **y tampoco `cap_02.md`**.
+- **`cap_02.md` no da ni un procedimiento.** Entonces lo dices con su razon y
+  paras: un lote de calibracion que no encuentra material es informacion, pero
+  es informacion que el fundador tiene que leer antes de que sigas.
 
 **NO paras por:** que un candidato caiga en la aduana (lo corriges), que un
-capitulo de pocos nodos (se dice y ya), ni porque la marca FRONTERA te haga
-dudar (decides y lo escribes).
+capitulo de pocos nodos (se dice y ya), ni por la marca FRONTERA de `cap_01`
+(esta decidida: registras y pasas a `cap_02`).
 
 **Y NO FABRICAS MAQUINARIA.** Ni arneses, ni guardas, ni lectores nuevos
 (seccion 13). El trabajo de esta vuelta es leer un capitulo y escribir

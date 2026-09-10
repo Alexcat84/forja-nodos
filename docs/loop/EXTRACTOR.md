@@ -355,11 +355,13 @@ rompe.
 **LA NEGRA, lo que mas aparece:** `customer`, `management`, `development`,
 `quality`, `supply`, `performance`, `framework`, `process`, `variance`,
 `breakdown`, `procurement`, `stakeholders`, `convention`, `hypothesis`,
-`pricing`, `revenue`, `simulation`, `learning`, `manufacturing`.
+`pricing`, `revenue`, `simulation`, `learning`, `manufacturing`, y desde el
+10 sep 2026 tambien `equity` (capital, participacion) y `feedback`
+(retroalimentacion).
 
 **LA BLANCA, y no la amplias tu:** `marketing`, `benchmarking`, `startup`,
-`lean`, `coaching`, `scrum`, `feedback`, `stock`, `software`, `web`, `ranking`,
-`escrow`, `equity`, `backlog`, `branding`, `crowdfunding`, `outsourcing`,
+`lean`, `coaching`, `scrum`, `engagement`, `stock`, `software`, `web`,
+`ranking`, `escrow`, `backlog`, `branding`, `crowdfunding`, `outsourcing`,
 `onboarding`, `storytelling`, `freemium`, `bootstrapping`, `pivot`, `kanban`,
 `kaizen`, `leasing`, `coworking`, `networking`, `retargeting`, `greenwashing`,
 `crossdocking`, `marketplace`.
