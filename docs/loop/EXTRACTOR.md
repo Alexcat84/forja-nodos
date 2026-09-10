@@ -45,6 +45,10 @@ reglas.**
 - **No se escribe a mano en `dataset/nodos.jsonl`.** Nunca. Si hace falta tocar
   el dataset por otra via, eso es una operacion escrita con su simulacion y su
   caso positivo, no una edicion.
+- **CADA CANDIDATO PASA POR LA ADUANA EN EL MISMO ACTO EN QUE SE ESCRIBE**, y
+  no al final del lote: `python forja.py informe cuarentena/<libro>/<id>.json`.
+  El que cae se corrige y se reintenta. **Un candidato no esta escrito hasta que
+  ha pasado la aduana** (seccion 16, decision del fundador del 10 sep 2026).
 - Si la aduana bloquea, **lees a los vecinos antes de escribir el veredicto**:
   las señales ordenan, nunca deciden (manual principio 4).
 - **Todo veredicto lleva su razon escrita** y queda en
@@ -322,3 +326,138 @@ reglas.**
 **EL EXTRACTOR PROPONE EN SU REPORTE; NO SE ADJUDICA A SI MISMO.** Si crees que
 una regla debe cambiar, lo escribes como propuesta en tu reporte y sigues. **Tu
 no escribes `PARA_ALEXIS.md`**: eso lo hace el auditor.
+
+---
+
+# LAS REGLAS DE ID Y EL PROTOCOLO DE LOTE, ESCRITOS EL 10 SEP 2026
+
+*Las cinco decisiones del fundador del 10 sep 2026 estan en
+`docs/BANCO_DE_REGLAS.md`, D.21 a D.25. Esta parte es lo que a ti te toca.*
+
+## 15. LAS REGLAS DE ID, CON SUS DOS LISTAS Y SUS EJEMPLARES
+
+**ESTAN AQUI DENTRO Y NO EN UN ENLACE, y es deliberado (D.23).** El estreno de
+la aduana midio que **cuatro de cada diez** candidatos escritos sin estas reglas
+delante caen en la puerta. **Un id mal puesto no cuesta un rechazo: cuesta una
+arista.** Se leen antes de escribir el primer id, no despues del primer rechazo.
+
+La ley completa esta en `docs/REGLAS_DE_ID.md`. Lo que sigue es lo que mas se
+rompe.
+
+### 15.1. Regla 1: un solo idioma, y son DOS listas
+
+| lista | que es | que haces |
+|---|---|---|
+| **NEGRA** | palabra inglesa **con equivalente corriente en castellano** | usas el castellano. El ingles va a `denominaciones.otros_idiomas` |
+| **BLANCA** | **prestamo asentado** en el castellano de negocios | lo escribes tal cual, sin traducir |
+| **nombre propio y sigla** | un apellido, una norma, un organismo | ni se traduce ni se caza |
+
+**LA NEGRA, lo que mas aparece:** `customer`, `management`, `development`,
+`quality`, `supply`, `performance`, `framework`, `process`, `variance`,
+`breakdown`, `procurement`, `stakeholders`, `convention`, `hypothesis`,
+`pricing`, `revenue`, `simulation`, `learning`, `manufacturing`.
+
+**LA BLANCA, y no la amplias tu:** `marketing`, `benchmarking`, `startup`,
+`lean`, `coaching`, `scrum`, `feedback`, `stock`, `software`, `web`, `ranking`,
+`escrow`, `equity`, `backlog`, `branding`, `crowdfunding`, `outsourcing`,
+`onboarding`, `storytelling`, `freemium`, `bootstrapping`, `pivot`, `kanban`,
+`kaizen`, `leasing`, `coworking`, `networking`, `retargeting`, `greenwashing`,
+`crossdocking`, `marketplace`.
+
+**NOMBRES Y SIGLAS:** `deming`, `shewhart`, `juran`, `crosby`, `wallas`,
+`weibull`, `westrum`, `hawthorne`, `pugh`, `osha`, `niosh`, `leed`, `swot`,
+`wbs`, `ooda`, `ewma`.
+
+**LOS EJEMPLARES, tal como el estreno los tumbo:**
+
+| lo que no vale | por que | como se escribe |
+|---|---|---|
+| `work_breakdown_structure` | `work`, `breakdown` | `estructura_descomposicion_trabajo`, con `work breakdown structure` en denominaciones |
+| `paris_convention_prioridad` | `convention` | `convenio_paris_prioridad`. Un nombre propio traducido no es traduccion libre: **es el nombre** |
+| `customer_retention_tactics` | `customer`, `retention` | `tacticas_retencion_clientes` |
+| `mitos_stage_gate` | `gate` | **la regla no hace excepciones por prestigio del termino**, aunque `Stage-Gate` sea el nombre de un metodo |
+| `plan_marketing_contenidos` | **VALE** | `marketing` esta en la blanca |
+| `aplicar_14_puntos_deming` | **VALE** | `deming` es un apellido, y el 14 es denominacion |
+| `los_14_puntos_deming` | **CAE, y enseña dos cosas** | es un id VIVO del catalogo, cosa juzgada (D.21), **y hoy caeria** por la regla 3: `los` es un articulo. Ninguna regla indulta a otra |
+
+**POR QUE NO ES PURISMO, y conviene que lo sepas para no pelearte con la
+regla:** dos grafias del mismo concepto **parten la familia**.
+`retencion_clientes` y `customer_retention` tienen clave de familia **disjunta**,
+asi que la señal 2 **no los ve juntos y entran los dos**. Escribir en un solo
+idioma es lo que deja trabajar a la señal que te protege del duplicado.
+
+### 15.2. Regla 2: prohibido el numero de VERSION, permitido el de denominacion
+
+| | |
+|---|---|
+| **NO** | `accion_correctiva_2`, `consejo_calidad_3`, `elegir_grafia_clave_final` |
+| **SI** | `aplicar_14_puntos_deming`, `benchmarking_7_pasos_juran`, `iso_31000_gestion_riesgo`, `familia_normas_iso_9000`, `canales_traccion_19`, `riesgo_split_51_49` |
+
+**El corte esta contado: un numero final de UNA CIFRA es version; mayor, es
+denominacion. Nadie hace una version 436.** Y el numero en medio nunca fue
+version.
+
+**SI TE SALE UN `_2`, PARA:** no estas ante un id mal puesto, estas ante un
+**segundo nodo con el nombre del primero**. O continua al primero, y entonces
+pide arista y nombre propio, o lo repite, y entonces no entra.
+
+### 15.3. Las otras cuatro, en una linea cada una
+
+- **Regla 3:** sin preposiciones ni articulos. `de`, `del`, `en`, `con`, `por`,
+  `para`. **Es la que mas cae de todas** (35 de los 65 del estreno).
+- **Regla 4:** sin traducciones paralelas ni familias repetidas.
+- **Regla 5:** verbo mas objeto, minimo dos piezas.
+- **Regla 6:** `snake_case` estricto, minusculas y sin acentos.
+
+## 16. CADA CANDIDATO PASA POR LA ADUANA EN EL MISMO ACTO EN QUE SE ESCRIBE
+
+*Regla madre: decision del fundador del 10 sep 2026, D.23. La aduana NO se
+relaja: las reglas no bajan, el extractor aprende.*
+
+> **UN CANDIDATO NO ESTA ESCRITO HASTA QUE HA PASADO LA ADUANA.**
+
+El ciclo por candidato, y **no es opcional**:
+
+    1. escribes el candidato en cuarentena/<libro>/<id>.json
+    2. python forja.py informe cuarentena/<libro>/<id>.json
+    3. si CAERIA, lo corriges y vuelves al 2
+    4. solo entonces cuenta como escrito
+
+**LO QUE ESTO PROHIBE, dicho por su nombre:** escribir doce candidatos y pasar
+la aduana al final. **El que cae al final cuesta el lote; el que cae en el minuto
+en que se escribio cuesta un minuto.**
+
+**Y UN LOTE NO SE CIERRA CON CANDIDATOS QUE TU SABES QUE CAERIAN.** Si uno cae y
+no sabes como corregirlo, **eso es un discutible y se marca** (seccion 8), no un
+candidato que se publica esperando que alguien lo arregle.
+
+**EL INFORME DE LOTE SIGUE HACIENDOSE IGUAL**, al cerrar el capitulo:
+`python forja.py informe --carpeta cuarentena/<libro>`. Los dos no se pisan: el
+de candidato es tu correccion, el de lote es la prueba que lee el fundador.
+
+## 17. EL PROTOCOLO DE LOTE: UN LIBRO, CAPITULO A CAPITULO
+
+*Regla madre: decision del fundador del 10 sep 2026, D.24.*
+
+**UN LIBRO POR LOTE. NO ENTRA EL MUNDO ENTERO.** El orden esta escrito en D.24 y
+no lo eliges tu.
+
+| | |
+|---|---|
+| **la bandeja de entrada** | `fuentes/<clave>/cap_NN.md`, un fichero por capitulo, **fuera de git** |
+| **la bandeja de salida** | `cuarentena/<libro>/<id_propuesto>.json`, **DENTRO de git desde el 10 sep 2026** (D.25) |
+| **el ritmo** | **un capitulo por vuelta**, no el libro |
+| **el commit** | **uno por capitulo**, y su mensaje dice que capitulo y cuantos candidatos |
+| **el reporte** | `docs/loop/REPORTE.md`, **por anexion** (seccion 3): el capitulo nuevo se añade, no reescribe el anterior |
+
+**POR QUE UN COMMIT POR CAPITULO Y NO UNO POR LOTE:** un capitulo es la unidad
+que se puede revisar de una sentada y revertir sin arrastrar trabajo bueno. Un
+commit de libro entero obliga a aceptar o tirar diez capitulos juntos.
+
+**LOS CANDIDATOS VIAJAN AHORA (D.25),** asi que el commit del capitulo lleva
+dentro los JSON. Eso es lo que convierte tu reporte en prueba: quien lee
+*"del capitulo 2 salieron 7 candidatos y 1 caeria"* **puede abrir los siete**.
+
+**LA FUENTE CANONICA, ANTES DEL PRIMER NODO DEL LIBRO.** Sin su clave en
+`fuentes/FUENTES_CANONICAS.json` la aduana rechaza el primer candidato, y ese
+rechazo es deliberado.
