@@ -1,0 +1,66 @@
+{
+  "atribuciones": [
+    {
+      "autor": "Geoff Smart y Randy Street",
+      "cifra": "el 64 por ciento de los grandes empresarios entrevistados para el libro hace llamadas de referencia en todas sus contrataciones, y no solo en las de arriba",
+      "fecha_corte": "2008",
+      "fuente": "smart_who"
+    },
+    {
+      "autor": "Robert Hurst, citado por Geoff Smart y Randy Street",
+      "cifra": "sin ocasion de hacer llamadas de referencia se pierde el 25 por ciento de la informacion que se deberia conocer sobre un candidato",
+      "fecha_corte": "2008",
+      "fuente": "smart_who"
+    },
+    {
+      "autor": "Geoff Smart y Randy Street",
+      "cifra": "casi la mitad de los lideres del sector entrevistados advirtio de que todavia se puede sacar mala informacion de una llamada de referencia si no se lee entre lineas",
+      "fecha_corte": "2008",
+      "fuente": "smart_who"
+    }
+  ],
+  "condiciones_activacion": "Cuando las tres entrevistas anteriores han terminado y los datos encajan con el puesto y con tu cultura, justo en el momento en que estas tentado de saltarte las referencias y hacer la oferta. Es el quinto paso del recuadro de seleccion, dentro de seleccionar al jugador A con las cuatro entrevistas.",
+  "denominaciones": {
+    "nombre_largo": "La entrevista de referencias: poner a prueba lo que aprendiste",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "reference interview"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "THE REFERENCE INTERVIEW: TESTING WHAT YOU LEARNED"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Siete entrevistas de referencia hechas y contrastadas con lo que el candidato conto de si mismo, con las discrepancias de puntuacion y los codigos de tibieza anotados.",
+  "escala_minima": "El propio libro reparte el minimo: cuatro llamadas las haces tu en persona y tres las hacen colegas tuyos.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "conducir_llamadas_referencia",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Elige tu las referencias correctas: repasa tus notas de la entrevista cronologica de trayectoria y escoge a los jefes, pares y subordinados con los que quieres hablar. No te limites a usar la lista de referencias que el candidato te da.",
+    "Pide al candidato que contacte el mismo con las referencias para concertar las llamadas. Algunas empresas prohiben a sus empleados servir de referencia y contra ese muro chocaras si llamas directamente, mientras que pidiendoselo al candidato tienes el doble de posibilidades de llegar a hablar con la referencia, sea en horario de trabajo o despues, en casa.",
+    "Haz el numero correcto de entrevistas: unas cuatro las haces tu personalmente y tres se las pides a colegas, siete en total. Entrevista a tres jefes anteriores, a dos pares o clientes y a dos subordinados.",
+    "Pregunta uno: en que contexto trabajaste con la persona. Es un arranque de conversacion y un despertador de memoria, porque la respuesta ya la sabes por la entrevista cronologica, pero quien esta al otro lado puede necesitar un minuto para recordar el trabajo que hizo con el candidato.",
+    "Preguntas dos y tres: las mismas dos de la entrevista de criba, en que era realmente bueno profesionalmente y en que no era bueno o no le interesaba. En los dos casos pide varios ejemplos para poner en contexto los puntos fuertes y las areas de mejora, y ponte curioso otra vez con el marco de que, como y cuentame mas. La tercera gana fuerza si le añades entonces al final: cuales eran las mayores areas de mejora de la persona entonces. Esas dos palabras liberan a la referencia para hablar de debilidades pasadas.",
+    "Pregunta cuatro: pide a la referencia que puntue al candidato de 1 a 10. Mira la nota en si, mira como se compara con lo que el candidato dijo en la entrevista de criba, y desconfia de las discrepancias amplias. Buscas gente que reciba de forma consistente notas de 8, 9 y 10; cualquier cosa por debajo es una señal de alarma que hay que examinar mas de cerca. Un solo 6 no tiene por que romper el trato si otros entrevistadores dan notas mas altas, pero tomate el tiempo de entender por que existe la discrepancia.",
+    "Pregunta cinco: usa lo que sacaste con la amenaza de comprobacion de referencias en la entrevista cronologica. Pon a prueba algo que el candidato te conto formulandolo como pregunta a la referencia, por ejemplo: la persona menciono que usted podria decir que era desorganizado, me puede contar mas sobre eso. La formula podria decir importa, porque sugiere a la referencia que tiene permiso para hablar del asunto ya que lo saco el propio candidato.",
+    "Busca tambien referencias en tu propia red, que es otra via para reunir datos objetivos y sin sesgo, incluidas las referencias informales de quien estuvo en la primera linea. Ten en cuenta que las leyes laborales de algunos paises, Canada entre ellos, no permiten este tipo de comprobacion sin pedir antes permiso al candidato.",
+    "Presta mucha atencion a lo que la gente dice y a como lo dice, porque la mayoria habla en un codigo comun cuando quiere indicar que un candidato es problematico. Cuando oigas ese codigo, ponte curioso y averigua que se esta diciendo de verdad.",
+    "Codigo uno: la formula de si esto entonces aquello. Puedes estar bastante seguro de que una referencia habla en codigo cuando matiza su respuesta con esa construccion, del tipo si estas dispuesto a que alguien te lleve la contraria, entonces contrata a esta persona.",
+    "Codigo dos: los titubeos. La referencia que duda ante la pregunta dificil esta tratando de no decir algo que condene al candidato o que la ponga a ella en riesgo legal. Cuando preguntes que tal lo hizo fulano quieres oir un entusiasmo tremendo, no vacilaciones y palabras escogidas con cuidado; pregunta que es lo que la referencia no esta diciendo.",
+    "Codigo tres: el elogio tibio o con reservas. La ausencia de entusiasmo es una señal pesima, y una referencia neutra y sin brillo llena de elogios flojos es codigo de mala referencia. No tienes una referencia positiva solo porque todo suene bien: una referencia de verdad positiva rebosa entusiasmo y admiracion evidente, y no lleva ni titubeos ni matices."
+  ],
+  "resumen_teorico": "Las entrevistas de referencia son el quinto paso del recuadro de seleccion y el que mas se salta la gente, justo cuando parece que ya no hacen falta. Robert Hurst, vicepresidente retirado de Goldman Sachs y hoy director gerente de Crestview Advisors, conto el caso que lo cura: contrataron a una directora financiera sin poder hacer llamadas de referencia porque ella queria mantener su candidatura en secreto, y fue un desastre, demasiado acostumbrada al proceso y la rutina para un sitio mas complicado y estresante; desde entonces Hurst hace personalmente las llamadas de referencia de casi todas sus contrataciones. Muchos directivos descartan la entrevista de referencias como perdida de tiempo, y lo es cuando esta mal construida, pero la respuesta no es dejarla caer sino hacerla bien. El libro la construye sobre tres cosas que hay que hacer, elegir bien las referencias, pedir al candidato que concierte las llamadas y hacer el numero correcto, y sobre cinco preguntas que siguen el mismo patron estructurado que las demas entrevistas del metodo, lo que facilita fundir lo que oyes con lo que ya sabes. AUSENCIA DECLARADA: en cap_05.md L191 el libro remite a un recuadro con las cinco preguntas y ese recuadro no esta en el fichero de la fuente; las cinco preguntas de este nodo se transcriben de la prosa de L193 a L201, donde el libro describe una a una que hace cada pregunta, y la segunda y la tercera las resuelve por remision interna diciendo que son exactamente las mismas de la entrevista de criba, que si estan en el fichero. La segunda mitad del tramo enseña a oir: casi la mitad de los lideres entrevistados advirtio de que aun se puede sacar mala informacion si no se lee entre lineas. Jim Gordon, de Edgewater Funds, ha recibido recomendaciones excelentes de una referencia y despues, llamando a alguien de confianza que habia trabajado con la misma persona, una totalmente distinta y negativa. La razon es humana: nadie quiere hundir a un antiguo colega ni entrar en conflicto, y como dice Hurst, la gente no quiere clavar a nadie en una referencia. John Sharpe, de Four Seasons, añade la señal barata: si una referencia se limita a confirmar fechas de empleo, eso ya es mala señal. Stacy Schusterman, consejera delegada de Samson Investment Company, es el ejemplar del codigo mal oido: una referencia le dijo que si estaba dispuesta a que un tipo le llevara la contraria, entonces contratara a esa persona, y solo despues entendio que le estaban diciendo que era un elefante en una cacharreria. Jeff Aronson, de Centerbridge Partners, resume el tercer codigo: el elogio flojo en una entrevista de referencias es elogio condenatorio. El consejo de Jay Jordan, de Jordan Company, de bajar dos o tres niveles y hablar con los subordinados en vez de con los jefes, y el de John Zillmer, de Allied Waste, de creer en las referencias de gente que uno conoce, se quedan aqui con su dueño delante y no se convierten en pasos: los formulan ellos. El caso de Jim Crown y del comite de seleccion de Bank One evaluando a Jamie Dimon a traves de su propia red esta en el mismo sitio, y de el si sale paso, porque el mandato de hacer lo mismo lo escriben los autores en su propia voz.",
+  "titulo": "Conducir las siete llamadas de referencia y descifrar su codigo"
+}

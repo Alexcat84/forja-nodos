@@ -1,0 +1,43 @@
+{
+  "condiciones_activacion": "Cuando ya sabes conducir la entrevista cronologica de trayectoria en su forma basica y te tropiezas con los problemas con los que se tropiezan todos los que la usan por primera vez: el candidato que se va por las ramas, el logro que no sabes si es bueno, la salida de un empleo que no sabes leer, la respuesta generica y la incoherencia que pasa de largo.",
+  "denominaciones": {
+    "nombre_largo": "Las cinco tacticas maestras de la entrevista cronologica de trayectoria",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "MASTER TACTICS"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "The Three P's"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Push Versus Pull"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Una entrevista cronologica que se mantiene en su tiempo y en su rumbo, con cada logro valorado en su contexto, cada salida de empleo clasificada y cada incoherencia perseguida en el momento.",
+  "escala_minima": "Las cinco se ejecutan dentro de la propia entrevista, sin material ni preparacion, y la mas corta cabe en tres preguntas.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "aplicar_tacticas_maestras_entrevista",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Tactica uno, interrumpir. Tienes que interrumpir al candidato, no hay manera de evitarlo, y tendras que hacerlo al menos una vez cada tres o cuatro minutos. Interrumpe en cuanto creas que se esta yendo del rumbo, y hazlo por la via buena: sonriendo abiertamente, igualando su nivel de entusiasmo y usando escucha reflectiva para que pare sin desmoralizarse.",
+    "Tactica dos, las tres comparaciones. Cuando no sepas si un logro que te cuentan es magnifico, bueno, aceptable o pobre, aclara su valor con tres preguntas: como se comparo tu desempeño con el del año anterior, como se comparo con el plan y como se comparo con el de tus pares.",
+    "Tactica tres, empuje contra tiron. Los que rinden bien suelen ser atraidos hacia oportunidades mayores y los que rinden mal suelen ser empujados fuera de sus puestos. Despues de preguntar por que dejaste ese trabajo, clasifica la respuesta en una de las dos categorias, y no contrates a nadie que haya sido empujado fuera del veinte por ciento o mas de sus empleos.",
+    "Tactica cuatro, pintar un cuadro. Sabras que entiendes lo que un candidato esta diciendo cuando puedas ver literalmente un cuadro de ello en tu mente. Ante una afirmacion generica no des por hecho que sabes que significa: ponte curioso hasta entenderlo de verdad, porque asi pasas de las respuestas genericas que no quieren decir nada a los detalles concretos que dan una idea real.",
+    "Tactica cinco, parar en las señales de stop. Una ventaja de hacer la entrevista en persona es que puedes vigilar los cambios de lenguaje corporal y otras incoherencias, y el mayor indicador de que alguien miente es precisamente la incoherencia entre lo que dice y lo que hace mientras lo dice. Cuando veas una, pisa el freno, ponte curioso y averigua que hay debajo."
+  ],
+  "resumen_teorico": "Las cinco tacticas maestras son la respuesta de los autores a la retroalimentacion de los miles de directivos a los que formaron: la entrevista cronologica les resulta sorprendentemente facil, conversacional y natural, y aun asi los que la usan por primera vez tropiezan siempre con los mismos cinco problemas. Este nodo es la cabeza de esa serie numerada y es la unica compresion de esa numeracion. Cuatro de las cinco tacticas tienen procedimiento propio y viven ademas en su nodo; la cuarta, pintar un cuadro, no lo tiene: su criterio es entenderlo de verdad, que es un adjetivo de adecuacion en el sitio del criterio, y su unico medio es ponerse curioso, que es el procedimiento de otro nodo. Por eso la cuarta se queda aqui, como paso de la cabeza, y no da hijo propio. Lo que si aporta la cuarta es el concepto que la nombra: Ted Bililies, director gerente de ghSMART, llama a esa capacidad imaginacion empatica, y Wayne Huizenga, el unico estadounidense que ha llevado seis empresas a la Bolsa de Nueva York y fundado tres de las quinientas mayores, lo describe como ponerse siempre en los zapatos del otro para entender como y por que toma decisiones y maneja problemas. El ejemplo del libro es la candidata que se declara excelente comunicadora y resulta ser una redactora de negocio excepcional y una presentadora pesima. La quinta tactica trae ademas la advertencia que enmarca a todas: la idea no es reunir trapos sucios, y quien parezca un reportero de investigacion o un columnista de cotilleos tiene que replantearse el enfoque; hay que pensarse mas bien como un biografo entrevistando a su sujeto, buscando a la vez los detalles y el patron amplio.",
+  "titulo": "Aplicar las cinco tacticas maestras de la entrevista cronologica"
+}

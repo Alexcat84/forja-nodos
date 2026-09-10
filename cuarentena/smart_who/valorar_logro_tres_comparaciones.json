@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Cuando un candidato te cuenta un logro en la entrevista cronologica de trayectoria y no sabes si es magnifico, bueno, aceptable o pobre. Es la segunda de las cinco tacticas maestras y se aplica logro a logro.",
+  "denominaciones": {
+    "nombre_largo": "Las tres comparaciones: contra el año anterior, contra el plan y contra los pares",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Master Tactic #2: The Three P's"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El valor real de cada logro contado, situado en su contexto por tres comparaciones y no por el adjetivo con el que el candidato lo presento.",
+  "escala_minima": "La tactica entera son tres preguntas y se ejecuta sobre cualquier logro, de cualquier puesto y de cualquier tamaño.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "valorar_logro_tres_comparaciones",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Pregunta como se comparo su desempeño con el desempeño del año anterior. El ejemplo del libro: esta persona logro ventas de dos millones de dolares y las del año anterior habian sido de solo ciento cincuenta mil.",
+    "Pregunta como se comparo su desempeño con el plan. El ejemplo del libro: esta persona vendio dos millones y el plan era de un millon doscientos mil.",
+    "Pregunta como se comparo su desempeño con el de sus pares. El ejemplo del libro: esta persona vendio dos millones y quedo la primera entre treinta pares, y el siguiente mejor vendio solo setecientos cincuenta mil."
+  ],
+  "resumen_teorico": "La segunda tactica maestra resuelve un problema concreto de la entrevista cronologica: un candidato cuenta un logro y el entrevistador no tiene con que juzgarlo, porque una cifra suelta no dice nada sin su contexto. Las tres comparaciones son las tres preguntas que ponen ese contexto, y estan elegidas para cubrir los tres referentes posibles: el pasado del propio puesto, lo que se habia comprometido y lo que hicieron los demas en las mismas condiciones. Un mismo resultado puede ser magnifico contra el año anterior y mediocre contra los pares, y solo con las tres se sabe cual de las dos cosas es. Los ejemplos con los que el libro las ilustra estan construidos sobre la misma cifra de ventas a proposito, para que se vea que lo que cambia el juicio no es el numero sino contra que se compara.",
+  "titulo": "Valorar un logro con las tres comparaciones"
+}

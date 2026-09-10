@@ -1,0 +1,37 @@
+{
+  "condiciones_activacion": "Cuando la entrevista de criba ya te dejo la lista corta y vas a traer a un candidato a pasar el dia con tu equipo. Es el horario tipo con el que el libro encaja en una sola jornada la entrevista cronologica de trayectoria, las entrevistas enfocadas y la discusion del candidato del paso Select.",
+  "denominaciones": {
+    "nombre_largo": "La jornada tipo de entrevistas, de la reunion de equipo de la mañana a la decision de seguir o parar",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "TYPICAL INTERVIEW DAY"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La jornada de entrevistas cerrada con la tarjeta de puntuacion calificada, la lista de puntos fuertes y debiles del candidato construida sobre los datos reales del dia, y la decision del responsable de la contratacion de hacer las llamadas de referencia o terminar el proceso.",
+  "escala_minima": "El libro deja la variante corta escrita en el propio horario: la comida puede seguir siendo entrevista si tu o el candidato vais justos de tiempo, y las entrevistas enfocadas pueden irse a una segunda ronda en otro dia.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "organizar_jornada_entrevistas_candidato",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "De 8:30 a 8:45, reunion de equipo. Junta al equipo entrevistador quince minutos al principio del dia, o la noche anterior, para repasar la tarjeta de puntuacion, el curriculo del candidato, las notas de la entrevista de criba y los papeles y responsabilidades de cada uno para la jornada.",
+    "De 8:45 a 9:00, recepcion. Encarga a un miembro del equipo que reciba al candidato a su llegada y le dedique unos minutos a orientarlo sobre el dia y, si procede, sobre la empresa.",
+    "De 9:00 a 12:00, entrevista cronologica de trayectoria. El responsable de la contratacion y otro colega la conducen en tandem, y dura de una hora y media a tres horas segun lo larga que sea la carrera del candidato.",
+    "De 12:00 a 13:30, comida. Unos cuantos miembros del equipo, preferiblemente no implicados en el proceso de entrevistas, llevan a comer al candidato. Manten la comida informal, porque el dia ya viene bastante cargado de presion, pero si tu o el candidato vais justos de tiempo se puede seguir entrevistando mientras comeis.",
+    "De 13:30 a 16:30, entrevistas enfocadas. De uno a tres miembros del equipo las conducen sobre las porciones de la tarjeta de puntuacion que tienen asignadas. Algunas empresas las dejan para una segunda ronda, solo despues de que el candidato pase la entrevista cronologica, lo que ahorra tiempo si no la pasa pero obliga a agendar varios dias de entrevistas; otras lo hacen todo el mismo dia.",
+    "De 16:30 a 16:45, cierre con el candidato. El anfitrion le agradece la jornada y le explica los siguientes pasos.",
+    "De 16:45 a 17:30, discusion del candidato. El equipo entrevistador se reune de treinta a sesenta minutos al final del dia para calificar la tarjeta de puntuacion y elaborar una lista de los puntos fuertes y debiles del candidato basada en los datos reales recogidos durante la jornada. El responsable de la contratacion toma al final de la reunion la decision de seguir o parar, es decir si se hacen las llamadas de referencia o se termina el proceso."
+  ],
+  "resumen_teorico": "El horario tipo de la jornada de entrevistas es el inventario mas explicito del capitulo: siete tramos con su hora, cada uno con quien lo ejecuta y que produce. Su valor no es la puntualidad sino que resuelve el problema logistico que hunde el metodo en la practica, que es como caben en un dia laborable una entrevista cronologica de tres horas, hasta tres entrevistas enfocadas y una reunion de calificacion, sin que el candidato pase el dia esperando ni el equipo improvise. Tiene ademas una decision de proceso escrita dentro: la calificacion de la tarjeta se hace el mismo dia, sobre los datos reales recogidos, y no una semana despues sobre la memoria; y la puerta a las llamadas de referencia la abre o la cierra el responsable de la contratacion al final de esa reunion, no el consenso del equipo. El libro deja explicita una variante: hay empresas que reservan las entrevistas enfocadas para una segunda ronda posterior a la entrevista cronologica, lo que ahorra tiempo con los candidatos que no la pasan a cambio de agendar varios dias.",
+  "titulo": "Organizar la jornada tipo de entrevistas, de la reunion de equipo a la decision de seguir o parar"
+}

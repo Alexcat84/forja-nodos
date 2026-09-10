@@ -1,0 +1,43 @@
+{
+  "condiciones_activacion": "Cada vez que un candidato termina de responder a una de las preguntas primarias de cualquiera de las entrevistas del metodo A: la de criba, la cronologica de trayectoria, la enfocada o la de referencias. Se activa dentro de ellas, no en su lugar, y es el marco que el recuadro de seleccion manda usar para sondear en busca de mas informacion.",
+  "denominaciones": {
+    "nombre_largo": "Ponerse curioso: el marco de que, como y cuentame mas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "getting curious"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "What? How? Tell me more"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "GETTING CURIOUS: WHAT, HOW, TELL ME MORE"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Claridad sobre lo que el candidato esta diciendo de verdad en cada respuesta, con lo que hizo y como lo hizo contado con precision en vez de en generalidades.",
+  "escala_minima": "El propio marco la fija: tres aperturas de pregunta y ninguna pregunta de mas de seis palabras, asi que se ejecuta sin guion escrito y sin preparacion.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "profundizar_respuestas_preguntas_curiosidad",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Despues de que el candidato responda a una de las preguntas primarias, ponte curioso sobre esa respuesta haciendo una pregunta de seguimiento que empiece por que, por como o por cuentame mas.",
+    "Sigue usando el marco hasta que tengas claro que esta diciendo la persona realmente.",
+    "Forma cada pregunta con tres reglas: que no pase de seis palabras, que empiece por que, por como o por cuentame mas, y que se apoye en lo que el candidato acaba de decir.",
+    "Tira de este repertorio cuando no se te ocurra que preguntar: que quieres decir, que aspecto tenia eso, que paso, cual es un buen ejemplo de eso, cual era tu papel, que hiciste, que dijo tu jefe, cuales fueron los resultados, que mas, como lo hiciste, como fue, como te sentiste, cuanto dinero ahorraste, como lidiaste con eso.",
+    "Empuja al candidato a ser todo lo claro y preciso que pueda con preguntas de que y de como, y cuando no tengas ni idea de que mas preguntar, di simplemente cuentame mas. La persona seguira hablando."
+  ],
+  "resumen_teorico": "Las preguntas primarias de las entrevistas del metodo A son pocas y faciles de administrar, pero sin seguimiento no dan todas las respuestas que hacen falta. Hay literalmente miles de preguntas adicionales posibles, y en vez de fabricar una guia que intente cubrirlas todas los autores usan un proceso simple que llaman ponerse curioso: tras cada respuesta, una pregunta de seguimiento que empiece por que, por como o por cuentame mas, repetida hasta entender de verdad. Lo que hace que funcione es lo pequeño que es: ninguna de las preguntas pasa de seis palabras, todas se apoyan en lo ultimo que dijo el candidato y el marco es completamente abierto, asi que no compite con la pregunta primaria ni desvia la entrevista. El capitulo lo demuestra con un dialogo entero: a un candidato que se declara malo gestionando el conflicto se le sacan, solo con este marco, dos empleados enfrentados, dos amenazas de despido incumplidas, una semana sin dormir y un traslado que le ahorro tener que resolverlo. Los autores usan ese dialogo para preguntar si contratarias a esa persona para un puesto de gestion con mucho cambio por delante. El marco es tambien el que usa la tactica maestra de pintar un cuadro, que no tiene medio propio y remite a este.",
+  "titulo": "Profundizar cada respuesta con el marco de que, como y cuentame mas"
+}

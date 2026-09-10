@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Durante la entrevista cronologica de trayectoria hecha en persona, en el instante en que lo que el candidato dice y lo que su cuerpo hace dejan de coincidir. Es la quinta de las cinco tacticas maestras.",
+  "denominaciones": {
+    "nombre_largo": "Parar en las señales de stop: la incoherencia como indicador",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Master Tactic #5: Stopping at the Stop Signs"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La historia que hay detras de cada afirmacion que no cuadraba, sacada en el momento en que la incoherencia aparecio y no despues.",
+  "escala_minima": "La tactica no necesita nada mas que hacer la entrevista en persona y frenar cuando la incoherencia aparece.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "frenar_incoherencias_entrevista",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Haz la entrevista en persona, que es lo que te permite vigilar los cambios de lenguaje corporal y las demas incoherencias.",
+    "Vigila las incoherencias entre lo que se dice y como se dice, porque son el mayor indicador de que alguien esta mintiendo. El ejemplo del libro: alguien afirma que en aquel puesto lo hicieron muy bien mientras se remueve en la silla, mira hacia abajo y se tapa la boca; eso es una señal de stop.",
+    "Cuando la veas, pisa el freno, ponte curioso y averigua hasta que punto lo hizo de verdad tan bien. Casi siempre hay mas historia de la que la persona quiere que sepas."
+  ],
+  "resumen_teorico": "La quinta tactica maestra es la unica que depende de un canal que las demas no usan: el cuerpo del candidato mientras habla. Ha crecido una ciencia entera dedicada a detectar cuando la gente miente, y segun el libro su mayor indicador resulta ser la incoherencia, ver u oir que lo que se afirma no cuadra con como se esta afirmando. Lo que la vuelve procedimiento no es la teoria sino que el libro pone la señal concreta, la afirmacion positiva acompañada de removerse en la silla, mirar abajo y taparse la boca, y pone el acto, frenar y ponerse curioso alli mismo. Es la unica tactica que exige la entrevista presencial, y esa exigencia es su condicion de activacion. El parrafo cierra con una advertencia que enmarca la tactica entera y que no se convierte en paso porque no ejecuta nada: la idea no es reunir trapos sucios, eso nunca es el objetivo de la entrevista cronologica, y quien se comporte como un reportero de investigacion o, peor, como un columnista de cotilleos, tiene que replantearse seriamente su enfoque; hay que pensarse mas bien como un biografo entrevistando a su sujeto, buscando a la vez el detalle y el patron amplio, los hechos y la textura, porque asi es como se toma una decision informada sobre a quien.",
+  "titulo": "Frenar en las incoherencias de la entrevista y perseguirlas alli mismo"
+}

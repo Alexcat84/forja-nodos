@@ -4601,3 +4601,189 @@ fichero**:
 **Discutible 4:** que la remision interna de L195 valga como inventario del libro.
 Si el auditor la tumba, **dos de los cinco pasos de `conducir_llamadas_referencia`
 se caen por puente**.
+
+### 2.f. LOS QUINCE CANDIDATOS, CON EL CICLO DE CINCO PASOS APLICADO A CADA UNO
+
+**Cada uno se escribio, se relee por fidelidad con el parrafo delante y se paso
+por la aduana EN SECO en el mismo acto**, en el orden que el encargo fija y sin
+intercambiar el paso 2 con el 3. **El comando por candidato fue
+`python forja.py informe cuarentena/smart_who/<id>.json`.**
+
+| # | id | pieza de la frontera | pasos | aduana, primer intento |
+|---:|---|---|---:|---|
+| 1 | `seleccionar_jugador_cuatro_entrevistas` | 1, cabeza del recuadro de seis | 6 | **ENTRARIA** |
+| 2 | `cribar_candidatos_entrevista_telefonica` | 2 mas 4 | 11 | **ENTRARIA** |
+| 3 | `conducir_entrevista_cronologica_trayectoria` | 5 | 13 | **ENTRARIA** |
+| 4 | `asignar_entrevistas_enfocadas_equipo` | 7 | 6 | **ENTRARIA** |
+| 5 | `calificar_tarjeta_puntuacion_habilidad_voluntad` | 11 | 6 | **ENTRARIA** |
+| 6 | `conducir_llamadas_referencia` | 10 | 12 | **ENTRARIA** |
+| 7 | `decidir_contratacion_final` | 12, la lista de cinco | 7 | **ENTRARIA** |
+| 8 | `profundizar_respuestas_preguntas_curiosidad` | 3 | 5 | **ENTRARIA** |
+| 9 | `organizar_jornada_entrevistas_candidato` | 9 | 7 | **ENTRARIA** |
+| 10 | `aplicar_tacticas_maestras_entrevista` | 6, cabeza de las cinco tacticas | 5 | **ENTRARIA** |
+| 11 | `interrumpir_candidato_escucha_reflexiva` | 6, tactica 1 | 5 | **ENTRARIA** |
+| 12 | `valorar_logro_tres_comparaciones` | 6, tactica 2 | 3 | **ENTRARIA** |
+| 13 | `distinguir_empuje_tiron_salidas_laborales` | 6, tactica 3 | 4 | **ENTRARIA** |
+| 14 | `frenar_incoherencias_entrevista` | 6, tactica 5 | 3 | **ENTRARIA** |
+| 15 | `revisar_banderas_rojas_candidato` | 12, las dos listas | 4 | **ENTRARIA** |
+| | **TOTAL** | | **97** | **15 de 15 al PRIMER intento** |
+
+**CERO CAIDAS Y CERO CORRECCIONES DE ADUANA**, y la razon esta medida en 2.d:
+los dos ids que habrian caido **cayeron antes, contra `src.reglas_id.validar`**,
+que es gratis. **La aduana no vio ninguno de los dos.**
+
+### 2.g. LA RELECTURA DE FIDELIDAD, PASO A PASO Y CON EL PARRAFO CITADO
+
+**LA TABLA VA AQUI Y NO DENTRO DEL JSON**, como el encargo manda.
+
+#### Los TRES PUENTES que escribi y corregi EN EL ACTO
+
+| # | nodo, paso | lo que escribi | la linea, reabierta con `sed -n`, y por que NO lo dice | que hice |
+|---:|---|---|---|---|
+| 1 | `cribar_candidatos_entrevista_telefonica`, el paso de cierre | *Si todo se ve bien sobre el papel pero te queda una incomodidad royendo, pasa de largo.* | **`cap_04.md` L167**: *"John Sharpe offers another perspective on screening... **I think** gut feel and instinct is particularly important in determining who not to hire, **he told us**."* **Lo dice Sharpe, no el libro**, y ademas lo dice sobre la intuicion, no sobre la criba estructurada | **REESCRITO** desde el mandato propio del libro, que existe nueve parrafos antes: **`cap_04.md` L99**, *"If you have any hesitation... then screen them out"*. El paso quedo anclado en L99 y Sharpe se fue al `resumen_teorico` con su nombre delante |
+| 2 | `conducir_entrevista_cronologica_trayectoria`, paso 3 | *Dedica los primeros diez minutos a dividir su curriculo en capitulos.* | **`cap_05.md` L11**: *"ghSMART consultant Michael Haugen **spent the first ten minutes** of the interview working with the candidate to divide his resume into eight chapters."* **Es lo que Haugen hizo en una entrevista concreta**, con un curriculo de treinta y seis paginas. El libro manda dividir en capitulos (L9) **y no pone ningun plazo** | **RETIRADO el plazo**, conservado el acto. Los diez minutos quedan en el `resumen_teorico` diciendo expresamente que son un dato del caso y no un plazo del libro |
+| 3 | `conducir_llamadas_referencia`, un paso de eleccion de referencias | *Baja dos o tres niveles y habla con los subordinados antes que con los jefes.* | **`cap_05.md` L215**: *"**Jay Jordan** of the Jordan Company **offered this advice based on his experience** with hiring CEOs."* Es consejo suyo, sobre primeros ejecutivos, y **choca ademas con el reparto que el libro si manda** en L189: tres jefes, dos pares o clientes y dos subordinados | **RETIRADO entero.** Jordan se queda en el `resumen_teorico`. El paso de referencias de la propia red **si se queda**, pero anclado en otra linea: **`cap_05.md` L227**, *"**Try to do the same**"*, que es imperativo de los autores |
+
+**LOS TRES SON LA MISMA ESPECIE, y es la que el encargo me mando buscar:
+EL CASO ASCENDIDO A DOCTRINA.** Ni un destinatario, ni un periodo de calendario,
+ni un responsable, ni una conclusion. **Tres de tres.**
+
+#### La RETIRADA QUE NO ES UN PUENTE, y se separa a proposito
+
+| nodo | lo que escribi | por que sale | especie |
+|---|---|---|---|
+| `frenar_incoherencias_entrevista` | *Pensate como un biografo entrevistando a su sujeto, no como un reportero de investigacion ni como un columnista de cotilleos.* | **`cap_05.md` L91 lo dice, y lo dice en imperativo:** *"Think of yourself instead as a biographer interviewing a subject."* **La frase ES del libro**, asi que no es puente | **Sale por la vara de la seccion 9**, no por fidelidad: *pensarse como algo* **no ejecuta nada** y es postura. Se fue entera al `resumen_teorico` |
+
+**LA DISTINCION IMPORTA PARA LA CIFRA**, y por eso va aparte: si la contara como
+puente, la tasa del capitulo subiria sin que hubiera un solo paso inventado.
+**Un paso que el libro dice y que yo retiro por no ser procedimiento es la vara
+funcionando, no la fidelidad fallando.**
+
+#### Las DOS INVENCIONES QUE NO LLEGUE A ESCRIBIR, declaradas porque estuvieron cerca
+
+| donde | lo que la mano pedia | por que no se escribio |
+|---|---|---|
+| `asignar_entrevistas_enfocadas_equipo` | **las preguntas primarias de la entrevista enfocada** | el recuadro no esta en el fichero (`cap_05.md` **L105**, *"see box above"*). **Cualquier pregunta que teclee ahi la habria escrito yo.** Declarado en 2.e y en el `resumen_teorico` del nodo |
+| `valorar_logro_tres_comparaciones` | *anota la valoracion del logro en la tarjeta de puntuacion* | **`cap_05.md` L63 a L69 pone las tres preguntas y no pone destino.** Es la especie del **destinatario**, y el nodo se queda con tres pasos, que es lo que el libro pone |
+
+**EL AVISO DE `D.30` SE CUMPLIO AL PIE DE LA LETRA, y conviene decir donde:** el
+nodo con menos pasos del capitulo (`valorar_logro_tres_comparaciones`, tres) es
+donde mas tiro la tentacion de completar, porque **tres preguntas sin destino
+parecen media ficha**. No lo son: son las tres preguntas que el libro pone.
+
+#### El saldo de la relectura
+
+| | |
+|---|---:|
+| pasos escritos en el Cap. 4 | **97** |
+| pasos marcados **TRANSCRIPCION** | **94** |
+| pasos marcados **PUENTE** | **3** (1 reescrito, 2 retirados) |
+| **tasa de puentes** | **3,09 por ciento** |
+| retiradas por la vara de la seccion 9, que no son puente | 1 |
+| invenciones declaradas y no escritas | 2 |
+
+### 2.h. LAS ARISTAS QUE ESTE CAPITULO ABRE, Y NINGUNA SE CABLEA
+
+**`D.29`: se escriben aqui o se pierden.** Ninguna se cablea, porque **una arista
+se cablea contra ids que ya viven** y los 32 candidatos siguen en cuarentena.
+
+| # | arista que la lectura ve | como quedo preparada para el dia de la insercion |
+|---:|---|---|
+| 1 | **`aplicar_metodo_ghsmart_contratacion` es la cabeza, y `seleccionar_jugador_cuatro_entrevistas` es su TERCER hijo.** El libro lo dice en `cap_04.md` **L183**: *"The Who Interview is the key interview within the 'Select' step of the ghSMART A Method for Hiring"* | las `condiciones_activacion` del hijo nombran el metodo A y sus dos pasos anteriores por su acto, **para que la arista se cablee por lectura** |
+| 2 | **`seleccionar_jugador_cuatro_entrevistas` es a su vez cabeza de SEIS hijos**, uno por punto del recuadro | los seis nombran en sus `condiciones_activacion` que son el paso N de las cuatro entrevistas **dentro de** seleccionar al jugador A |
+| 3 | **`aplicar_tacticas_maestras_entrevista` es cabeza de CUATRO hijos** (tacticas 1, 2, 3 y 5) | los cuatro dicen en sus `condiciones_activacion` que son la tactica N de las cinco tacticas maestras |
+| 4 | **`profundizar_respuestas_preguntas_curiosidad` es hijo de CUATRO madres a la vez**: la de criba, la cronologica, la enfocada y la de referencias lo invocan las cuatro | sus `condiciones_activacion` nombran las cuatro. **Es la primera arista de muchos a uno del lote** |
+| 5 | **El Cap. 4 usa la tarjeta de puntuacion del Cap. 2 en CINCO de sus quince nodos**: la criba la repasa antes de llamar, la cronologica reconstruye la que el candidato habria tenido, la enfocada la reparte, la calificacion la puntua y la decision final la lee | **ninguna señal las levanta.** Es el mismo caso que la arista 3 de mi bloque 1.b, y ya van dos capitulos seguidos |
+| 6 | **`decidir_contratacion_final` apunta al CUARTO hijo del metodo, `Sell`**, que es el Cap. 5 y **no se extrajo en esta vuelta** | su paso 7 y su `resumen_teorico` nombran el acto (*vender el puesto a la persona elegida*) **sin nombrar un id que todavia no existe** |
+
+**Y LA QUE NO SE CABLEA POR CALENDARIO, repetida de 1.b:**
+`detectar_metodos_vudu_contratacion` sigue yendo antes por `cap_02.md` L53, y
+**sigue sin cablearse**: adjudicado en el ACTA 5, la arista es de despliegue.
+
+### 2.i. LOS VECINOS, REMEDIDOS AL CIERRE DEL CAPITULO SOBRE LOS 32
+
+**Remedido, no arrastrado**, que es el remedio de la vuelta 4 y esta vuelta lo
+vuelve a aplicar. `src.aduana.medir`, los 32 candidatos de la bandeja contra si
+mismos, pares ordenados:
+
+| medida | apertura (17 candidatos) | **cierre del Cap. 4 (32)** |
+|---|---:|---:|
+| pares ordenados | 272 | **992** |
+| pares que levantarian | **38** | **44** |
+| por similitud de texto | 0 | **0** |
+| por familia de id | 34 | **36** |
+| por paso contra nodo | 10 | **14** |
+| **pares que ve SOLO la señal 3** | 4 | **8** |
+
+**EL RESULTADO QUE NO ESPERABA, Y ES EL DATO DE LA VUELTA:** la bandeja **casi
+duplico** su tamaño (17 a 32) y los pares levantados subieron **de 38 a 44**, un
+16 por ciento. **La densidad de vecinos por par CAYO a la mitad**: 13,97 por
+ciento de los pares en la apertura, **4,44 por ciento al cierre**.
+
+**LA RAZON ESTA EN LA SEÑAL 2 Y LA DIGO CONTRA MI PROPIA EXPECTATIVA DE 2.a:** yo
+esperaba que tres series hermanas en la misma bandeja dispararan la familia de id.
+**No lo hicieron.** Los quince ids del Cap. 4 comparten con los diecisiete
+anteriores muy pocas piezas de familia, porque **el Cap. 2 y el Cap. 3 hablan de
+`tarjeta_puntuacion` y de `referencias` y el Cap. 4 habla de `entrevista`**. La
+familia solo subio en 2 pares sobre 720 comparaciones nuevas.
+
+**Y LOS CUATRO PARES NUEVOS QUE SOLO VE LA SEÑAL 3, que son el hallazgo:**
+
+| par | señal 3 | detalle que dio el instrumento |
+|---|---:|---|
+| `decidir_contratacion_final` contra `seleccionar_jugador_cuatro_entrevistas` | **0,932** | paso 2 del candidato contra paso 6 de la cabeza |
+| `seleccionar_jugador_cuatro_entrevistas` contra `decidir_contratacion_final` | **0,932** | el mismo par, del otro lado |
+| `calificar_tarjeta_puntuacion_habilidad_voluntad` contra `seleccionar_jugador_cuatro_entrevistas` | **0,856** | paso 5 del candidato contra paso 4 de la cabeza |
+| `seleccionar_jugador_cuatro_entrevistas` contra `calificar...` | **0,856** | el mismo par, del otro lado |
+
+**LOS DOS PARES SON CABEZA CONTRA HIJO, Y ESO NO ES UNA COLA FALSA: ES LA SEÑAL 3
+HACIENDO EXACTAMENTE LO QUE SE ESPERA DE ELLA.** Una cabeza de serie numerada
+comprime los pasos de sus hijos, asi que **el paso de la cabeza y el paso del hijo
+DEBEN parecerse**, y a 0,932 se parecen casi del todo. **Cuando estos nodos entren
+por la aduana, esos dos bloqueos son la cola de lectura correcta y su veredicto
+esta escrito de antemano: CONTINUA**, con la arista cableandose en el acto.
+
+**LO QUE ESTO AÑADE A LA CUENTA QUE EL ENCARGO PIDE LLEVAR:** llevaba cuatro
+pares vistos solo por la señal 3 y ahora **son ocho**. Pero los cuatro viejos y
+los cuatro nuevos **no son la misma especie**, y mezclarlos seria la
+generalizacion que ya me costo una correccion en 2.h de la vuelta 5:
+
+| especie | ejemplares | que son |
+|---|---|---|
+| **hermanos de un mismo recuadro** | los 4 de la apertura (`abastecer` contra `pedir_referencias_empleados`, `contratar_investigadores` contra `contratar_reclutadores`) | dos hijos de la misma cabeza que comparten un acto. **Ahi la cola es cara**: hay que leer para separarlos |
+| **cabeza contra hijo** | los 4 nuevos del Cap. 4 | **la cola es barata**: el veredicto se sabe antes de leer |
+
+**Discutible 5, y es el mas caro de los cinco si fallo:** que los pares cabeza
+contra hijo se cuenten como cola de lectura util y no como cola falsa. Si el
+auditor los cuenta como falsos, **la señal 3 pasa de 2,4 falsos por candidato a
+mas**, y la cifra de calibracion del 9 sep 2026 queda tocada por una serie
+numerada que la calibracion no tenia delante. **Yo NO propongo mover el umbral**
+(`EXTRACTOR.md` 11: ninguna vuelta mueve un umbral), solo declaro la medicion.
+
+### 2.j. EL INFORME DEL LOTE ENTERO, PEGADO CON SU SALDO
+
+Comando: `python forja.py informe --carpeta cuarentena/smart_who`, corrido al
+cerrar el capitulo.
+
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 32
+    nodos en el grafo de destino: 8
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 32
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+**LOS 32 ENTRARIAN, CERO BLOQUEARIAN, CERO CAERIAN, CERO CHOCAN.** Y conviene
+leer la fila de bloqueos junto a 2.i: **la aduana no bloquea candidato contra
+candidato de la bandeja, solo candidato contra el GRAFO**, que sigue teniendo 8
+nodos de otros dos libros. **Los 44 pares de 2.i son lo que la aduana levantara el
+dia de la insercion, uno a uno, y por eso se miden ahora.**
+
+**CERO INSERCIONES EN ESTA VUELTA** (`MODO_INSERCION=cuarentena`, `D.26`). **No
+corri `python forja.py insertar` ni una vez**, y los 32 candidatos siguen
+esperando la autorizacion del fundador.

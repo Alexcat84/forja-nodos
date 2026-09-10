@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Durante la entrevista cronologica de trayectoria, en cuanto creas que el candidato se esta yendo del rumbo. Es la primera de las cinco tacticas maestras y se activa varias veces por entrevista, al menos una cada tres o cuatro minutos.",
+  "denominaciones": {
+    "nombre_largo": "Interrumpir bien: la via mala y la via buena de cortar a un candidato",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Master Tactic #1: Interrupting"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Una entrevista que se mantiene en los sucesos importantes de la carrera del candidato sin que el candidato se cierre, con la sintonia alta y con el tiempo repartido donde importa.",
+  "escala_minima": "La tactica entera cabe en dos frases dichas seguidas: la de escucha reflectiva y la de redireccion.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "interrumpir_candidato_escucha_reflexiva",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Interrumpe en cuanto creas que el candidato se esta yendo del rumbo, y cuenta con hacerlo al menos una vez cada tres o cuatro minutos. Si no interrumpes puede hablar diez horas seguidas de cosas que no vienen a cuento.",
+    "No interrumpas por la via mala: levantar la mano como una señal de stop y decir espera, espera, espera, dejame pararte ahi, podemos volver al tema. Eso avergüenza al candidato, da a entender que ha hecho algo mal y hace que se cierre para siempre, y costara mucho que vuelva a abrirse.",
+    "Interrumpe por la via buena: sonrie abiertamente, iguala su nivel de entusiasmo y usa escucha reflectiva para que pare de hablar sin desmoralizarse. Devuelvele lo que acaba de contar con su misma energia, del tipo vaya, parece que aquella granja de cerdos junto a las oficinas olia fatal, para que asienta y se sienta comprendido y respetado.",
+    "Enlaza inmediatamente con el tema al que quieres volver, dandole algo nuevo y mas relevante que contar: me estabas hablando de lanzar aquella campaña de correo directo, me encantaria oir como fue aquello y que tal salio.",
+    "Manten alta la sintonia durante toda la entrevista, porque es a traves de ella como se consiguen los datos mas valiosos, y una interrupcion cortes es lo que la construye."
+  ],
+  "resumen_teorico": "La primera tactica maestra es la que mas cuesta aceptar y la que el libro repite dos veces en la misma frase: hay que interrumpir al candidato, no hay manera de evitarlo. La objecion es de educacion, porque parece grosero cortar a alguien que cuenta con entusiasmo una historia irrelevante, y los autores le dan la vuelta: lo grosero es dejar divagar a alguien, porque le quita la posibilidad de cubrir los sucesos importantes de su carrera dentro del tiempo que hay. Lo que convierte la tactica en procedimiento es que el libro pone las dos vias enfrentadas, la mala y la buena, con su frase literal cada una, y explica por que la diferencia importa: el enfoque de callate desinfla la disposicion del candidato a revelar informacion, y el enfoque de me muero por saber mas de tal cosa mantiene alta la sintonia y ademas le da un tema nuevo y mas relevante del que hablar. La sintonia no es cortesia: es el canal por el que llegan los datos que valen.",
+  "titulo": "Interrumpir al candidato con escucha reflectiva y redireccion"
+}
