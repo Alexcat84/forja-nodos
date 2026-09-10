@@ -1,0 +1,43 @@
+{
+  "condiciones_activacion": "Cuando ya sabes que efes le importan al candidato y toca decidir CUANDO vender. Es el segundo de los tres puntos del recuadro de como vender a los jugadores A, y abre la serie de las cinco olas. Se activa al principio del proceso de contratacion y no al final, que es justamente lo que el libro corrige aqui.",
+  "denominaciones": {
+    "nombre_largo": "Las cinco olas de la venta en el proceso de contratacion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "FIVE WAVES OF SELLING"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "five distinct phases of the hiring process"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Un plan de venta escrito para este candidato que dice que efes se atienden y en cual de las cinco olas se atiende cada una.",
+  "escala_minima": "Una sola contratacion: las cinco olas son las cinco fases que cualquier contratacion atraviesa, se este fichando a un consejero delegado o a un becario.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "planificar_cinco_olas_venta",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Entiende cuales de las cinco efes le importan de verdad a este candidato y enfoca la atencion en esas palancas para vencer sus reparos. Eso, y no otra cosa, es vender a un futuro contratado.",
+    "Vende durante el proceso entero y no solo al final. El capitulo de vender esta presentado como el ultimo paso del metodo A, pero en realidad vender es algo que deberias estar haciendo a lo largo de todo el proceso: igual que abastecer, vender exige atencion constante.",
+    "Trata las cinco fases como olas que hay que superar. Si no subes tu energia de venta, no pasaras a tu candidato por la cresta de la ola hasta la fase siguiente.",
+    "Sube la energia de venta en la primera ola: cuando abastezcas.",
+    "Sube la energia de venta en la segunda ola: cuando entrevistes.",
+    "Sube la energia de venta en la tercera ola: el tiempo entre tu oferta y la aceptacion del candidato.",
+    "Sube la energia de venta en la cuarta ola: el tiempo entre la aceptacion del candidato y su primer dia.",
+    "Sube la energia de venta en la quinta ola: los primeros cien dias del recien contratado en el puesto."
+  ],
+  "resumen_teorico": "Es la cabeza de la segunda serie de cinco del capitulo, y nace de una pregunta que el libro se hace en voz alta despues de listar las cinco efes: pero cuando se vende. La respuesta corrige la impresion que da el propio indice del libro. Vender esta presentado como el cuarto y ultimo paso del metodo A, pero en la practica es como abastecer, algo que pide atencion constante durante todo el proceso. Sobre eso los autores dicen haber identificado con los años cinco fases distintas del proceso de contratacion que merecen un esfuerzo de venta mayor, y las llaman olas porque hay que remontarlas: si en cada una no se sube la energia de venta, el candidato no pasa la cresta y no llega a la fase siguiente. La serie no reparte las efes por olas: las efes dicen QUE se vende y las olas dicen CUANDO, y el recuadro del capitulo las junta en un solo punto, el de crear y ejecutar un plan que atienda las efes relevantes durante las cinco olas.",
+  "titulo": "Planificar la venta en las cinco olas del proceso de contratacion"
+}

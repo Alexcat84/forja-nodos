@@ -1,0 +1,40 @@
+{
+  "condiciones_activacion": "Cuando estas vendiendo el puesto al candidato elegido y toca atender la tercera de las cinco efes, la libertad, dentro de abordar las cinco efes de la venta. Se activa antes con los jugadores A de las generaciones equis e y, que es donde el libro dice que la microgestion espanta mas rapido.",
+  "denominaciones": {
+    "nombre_largo": "Vender la libertad: la tercera de las cinco efes",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "SELLING FREEDOM"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "freedom"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El candidato convencido, con pruebas y no con promesas, de que va a tener autonomia para tomar sus propias decisiones y de que ni tu ni la cultura de la casa se la van a quitar.",
+  "escala_minima": "El libro la fija con el caso mas pobre en medios: en el sector sin animo de lucro, donde las horas son largas y la paga escasa, el proposito y la libertad para perseguirlo son a menudo lo unico que un jefe tiene para vender, y basta.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "vender_libertad_candidato",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Enseñale que tanto tu en persona como la cultura de tu organizacion van a sostener su necesidad de libertad. Los jugadores A quieren operar sin microgestion, desarrollar su propio estilo de liderazgo y demostrar lo que valen.",
+    "Pon la tarjeta de puntuacion encima de la mesa como prueba: ella le dice al recien contratado los resultados por los que va a ser medido, y una vez que todo esta a la vista de esa manera no hace falta ninguna microgestion.",
+    "Dale al candidato acceso libre a la gente que te rodea para que les pregunte lo que quiera sobre tu estilo. Nada vende mas libertad que eso.",
+    "Cuenta con que ceder control es lo que te da mas control. Los grandes lideres ganan mas control cediendoselo a sus jugadores A, porque saben que estan trayendo gente con talento a su equipo.",
+    "Tiende la mano de la confianza, y de vez en cuando tiende tambien la mano de la amistad. Es el consejo de George Buckley, de 3M, y su razon es que no se trata de competencia inmediata sino de la confianza que construye esa competencia: si la persona sabe que confias en ella, es probable que asuma mas riesgos y trabaje un poco mas duro."
+  ],
+  "resumen_teorico": "Es la tercera de las cinco efes y el libro la define como la autonomia que el candidato va a tener para tomar sus propias decisiones. Su punto de partida es que a los jugadores A nunca les ha gustado que los microgestionen porque va contra las caracteristicas que los hacen sobresalir, y que nada los espanta mas rapido que la perspectiva de trabajar para un jefe o un consejo excesivamente directivo. El obstaculo, dice el libro, es del lado del que contrata: ofrecer esa libertad asusta a algunos directivos porque sienten que estan cediendo el control, y esa es una de las grandes paradojas de la gestion, porque en realidad los grandes lideres ganan mas control cediendolo. Los casos, con sus dueños delante y fuera de los pasos: George Buckley construye confianza y sostiene que el papel del consejero delegado es inspirar a la gente, lo que exige conocerlos y dejarse conocer; Stacy Schusterman anima a sus candidatos a pedir referencias sobre ella misma para que entiendan como trabaja con las personas, y de ahi saca el libro su propia regla de dar acceso libre a la gente de alrededor; Tudor Investment Corporation se define como una organizacion de soporte para grandes emprendedores que tienen casi entera libertad sobre su proceso de decision de inversion; y George Hamilton, del Institute for Sustainable Communities, vende proposito porque en su sector las horas son largas y la paga pobre, y avisa de que gestionar a esta gente es un reto porque hay que crear el espacio suficiente para que demuestren lo que pueden hacer.",
+  "titulo": "Vender la libertad al candidato sin sentir que cedes el control"
+}

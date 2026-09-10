@@ -1,0 +1,41 @@
+{
+  "condiciones_activacion": "Cuando el jugador A ya se ha incorporado a la empresa y empiezan sus primeros cien dias. Es la quinta y ultima de las cinco olas de la venta, y el libro la abre diciendo que aun no has terminado de vender.",
+  "denominaciones": {
+    "nombre_largo": "La quinta ola de la venta: los primeros cien dias en el puesto",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "The new hire's first one hundred days on the job"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "on-boarding program"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Un programa de incorporacion para el recien contratado, construido sobre la tarjeta de puntuacion y sobre lo que el abastecimiento y la seleccion ya te enseñaron de esa persona.",
+  "escala_minima": "El libro la fija por su frontera negativa: una comida de bienvenida y una orientacion corta de recursos humanos NO llegan al minimo, asi que el minimo es lo primero que este por encima de eso.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "disenar_incorporacion_cien_dias",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "No des la venta por terminada el dia que el jugador A se incorpora a la empresa. Aun no has acabado de vender.",
+    "Cuenta con el riesgo que el libro cita: la investigacion muestra una tasa de fracaso alarmante entre los recien contratados en los primeros cien dias, porque durante esos primeros meses la gente sufre el arrepentimiento del comprador y se ve tentada de cortar sus perdidas.",
+    "Mitiga ese riesgo invirtiendo en un programa de incorporacion solido.",
+    "No lo dejes en una comida de bienvenida y una orientacion corta dadas por el departamento de recursos humanos: el programa tiene que ser mas que eso.",
+    "Asume tu el trabajo. Eres tu, el jefe que contrata o el miembro del consejo, quien tiene que asegurarse de que tu nuevo jugador A tenga todas las oportunidades de triunfar.",
+    "Construye el programa con lo que ya tienes en la mano: la tarjeta de puntuacion, el abastecimiento y el proceso de seleccion te han dado ya conocimiento suficiente de la persona para crear un programa que asegure el exito del recien contratado."
+  ],
+  "resumen_teorico": "Es la quinta y ultima de las cinco olas de la venta, y la unica que ocurre cuando la persona ya cobra de la casa. Su premisa es que el gran dia en que el jugador A se incorpora no es el final: la investigacion que el libro cita muestra una tasa de fracaso alarmante entre los recien contratados en los primeros cien dias, porque en esos meses la gente sufre el arrepentimiento del comprador y se ve tentada de cortar sus perdidas. La respuesta del libro tiene tres piezas y las tres son suyas: el objeto es un programa de incorporacion solido; su frontera por abajo esta escrita en negativo, porque una comida de bienvenida y una orientacion corta de recursos humanos no bastan; y el responsable esta nombrado, que es el jefe que contrata o el miembro del consejo, y no el departamento de recursos humanos. La buena noticia que el libro añade es que el material del programa ya existe: todo el trabajo hecho hasta aqui, la tarjeta de puntuacion, el abastecimiento y el proceso de seleccion, deberia haber dado conocimiento suficiente de la persona para crear un programa que asegure su exito. Paul Lattanzio, director general senior de BGCP y usuario del metodo desde hace tiempo, lo dice desde el lado del que contrata: el metodo da sobre la persona las claves que normalmente cuesta un año de trabajo con ella descubrir, y eso ayuda a arrancar la relacion con buen pie desde el primer dia.",
+  "titulo": "Diseñar la incorporacion de los primeros cien dias del jugador A"
+}

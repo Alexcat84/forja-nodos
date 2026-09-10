@@ -5196,3 +5196,486 @@ que mandar ninguna medida en rojo.**
    nueve sin cablear**, todas nombradas en la prosa o en las
    `condiciones_activacion` de sus nodos para que se cableen por lectura.
 6. **Las tres propuestas de C.6.4**, ninguna adjudicada por mi.
+
+---
+
+# VUELTA 7, lote 2 (`smart_who`), Cap. 5 (`Sell`) y, si cabe, Cap. 6
+
+| | |
+|---|---|
+| rama | `extraccion-mundo-11` (`git rev-parse --abbrev-ref HEAD`) |
+| commit de apertura | `c51ee98`, **13:56:23** (`git log -1 --date=format:%H:%M:%S`), tras commitear lo pendiente |
+| lote | `smart_who`, LOTE 2 |
+| unidades encargadas | **Cap. 5** (`cap_05.md` L363 a L365 mas `cap_06.md` L9 a L455) y **Cap. 6** (`cap_07.md`, rango por comprobar) |
+| inserciones autorizadas | **CERO**. `MODO_INSERCION=cuarentena`, D.26. Todo candidato queda en `cuarentena/smart_who/` y pasa la aduana EN SECO |
+| commit de cierre | (se talla al cerrar) |
+
+## Las tareas encargadas, y su estado
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 0 | las cuatro comprobaciones de apertura sobre `cap_06.md` y `cap_07.md` | ABIERTA | |
+| 1 | los registros del ACTA 6 (1.a bloqueante, 1.b a 1.g) | ABIERTA | |
+| 2 | el Cap. 5 entero, `Sell` | ABIERTA | |
+| 3 | el Cap. 6, `Your Greatest Opportunity`, si el tramo lo permite | ABIERTA | |
+| 4 | las cuatro medidas del cierre, desglosadas por capitulo | ABIERTA | |
+| 5 | el informe de cierre del lote 2, solo si las dos unidades quedan leidas | ABIERTA | |
+
+**Las filas se anexan al cerrarse cada tarea, no al final de la vuelta**
+(`EXTRACTOR.md` 3). Los discutibles se marcan ANTES de saber si acierto
+(seccion 8) y viven al final, en C.7.
+
+## 0. LAS CUATRO COMPROBACIONES DE APERTURA, SOBRE `cap_06.md` Y `cap_07.md`
+
+**Van antes de la TAREA 1, como el encargo manda.** Las cuatro corridas en esta
+vuelta, con su comando al lado.
+
+| # | comprobacion | comando | salida | veredicto |
+|---:|---|---|---|---|
+| 1 | la bandeja de entrada existe | `ls fuentes/smart_who/` | `cap_01.md cap_02.md cap_03.md cap_04.md cap_05.md cap_06.md cap_07.md`, **siete ficheros** | **VERDE** |
+| 2 | `smart_who` en la tabla canonica | `python -c "...'smart_who' in json.load(...FUENTES_CANONICAS.json)"` | `True`. Ficha: *Who: The A Method for Hiring*, Smart y Street, 2008 | **VERDE** |
+| 3 | `head -8` de los dos ficheros | `head -8 fuentes/smart_who/cap_06.md` y `cap_07.md` | `cap_06.md`: `unidad: Cap. 5`, `titulo_textual: Sell: The Top Five Ways to Seal the Deal`. `cap_07.md`: `unidad: Cap. 6`, `titulo_textual: Your Greatest Opportunity`. **Los dos son los que la tabla del encargo anuncia** | **VERDE** |
+| 4 | donde muere de verdad cada fichero | `grep -n '[^[:space:]]' <fichero> \| tail -1` | `cap_05.md` **L365**; `cap_06.md` **L455**; `cap_07.md` **L429** | **VERDE en los tres** |
+
+**La cuarta reproduce la marca del encargo:** `cap_06.md` **muere en L455** y el
+Cap. 5 **no se derrama a `cap_07.md`** por el lado del fichero.
+
+### 0.a. LAS PALABRAS Y LOS BLOQUES, REMEDIDOS POR MI, Y LOS DOS REPRODUCEN
+
+    $ sed -n '363,365p' fuentes/smart_who/cap_05.md | awk '{n+=NF} END{print n}'   ->  55
+    $ sed -n '363,365p' fuentes/smart_who/cap_05.md | grep -c '[^[:space:]]'       ->  2
+    $ sed -n '9,455p'   fuentes/smart_who/cap_06.md | awk '{n+=NF} END{print n}'   ->  11284
+    $ sed -n '9,455p'   fuentes/smart_who/cap_06.md | grep -c '[^[:space:]]'       ->  224
+    $ sed -n '9,429p'   fuentes/smart_who/cap_07.md | awk '{n+=NF} END{print n}'   ->  3849
+    $ sed -n '9,429p'   fuentes/smart_who/cap_07.md | grep -c '[^[:space:]]'       ->  211
+
+| unidad | rango | palabras (mias) | palabras (encargo) | bloques (mios) | bloques (encargo) |
+|---|---|---:|---:|---:|---:|
+| Cap. 5 | `cap_05.md` L363 a L365 mas `cap_06.md` L9 a L455 | **55 + 11.284 = 11.339** | 11.339 | **2 + 224 = 226** | 226 |
+| Cap. 6 | `cap_07.md` L9 a L429 | **3.849** | 3.849 | **211** | por medir |
+| tramo abierto | | **15.188** | 15.188 | **437** | |
+
+**Las tres celdas que el encargo daba reproducen exacto. La que faltaba (bloques
+del Cap. 6) la mando yo: 211.**
+
+### 0.b. LA CORRECCION DECLARADA DE 1.b, REABIERTA Y NO COPIADA
+
+**El encargo manda no copiarla sino reabrirla con mi `awk`. Reabierta:**
+
+    $ awk '{n+=NF} END{print n}' fuentes/smart_who/cap_06.md            ->  11315   (fichero entero)
+    $ sed -n '9,455p' fuentes/smart_who/cap_06.md | awk '{n+=NF} END{print n}'  ->  11284   (cuerpo)
+    diferencia = 11315 - 11284 = 31 palabras, que son la cabecera YAML L1 a L7
+
+**La aritmetica del 11.370 sale entera y se ve de donde viene la celda mala:**
+
+    31 (cabecera YAML de cap_06.md) + 11.284 (cuerpo de cap_06.md) + 55 (cap_05.md L363-365) = 11.370
+                                      11.284                       + 55                      = 11.339
+
+> **CORRECCION DECLARADA (auditor, ACTA 6 seccion 3.3, 10 sep 2026), anotada junto
+> a la tabla de unidades del encargo de la vuelta 6 y sin borrar el texto viejo.**
+> El encargo de la vuelta 6 publica **Cap. 5 = 11.370 palabras**. **La cifra
+> correcta es 11.339.** El 11.370 incluye la cabecera YAML L1 a L7 de `cap_06.md`,
+> **31 palabras que no son del libro y que acabo de contar por diferencia.** La
+> celda mala era del auditor: la fila del Cap. 4 se conto por RANGO y la del Cap. 5
+> por FICHERO, dos varas en la misma tabla. Mi discutible 3 queda **SOSTENIDO** y
+> mi medida es la que manda.
+
+### 0.c. LA MEDIDA QUE MANDO YO: **EL `L9 a L429` DEL Cap. 6 NO ES CUERPO DE CAPITULO**
+
+**El encargo dice que el rango del Cap. 6 dentro de `cap_07.md` no se sabe y no se
+adivina, y que lo compruebo yo. Comprobado, y NO reproduce: de las 3.849 palabras
+del rango, solo 370 son cuerpo del capitulo.** Lo demas es material de cierre de
+libro: notas, publicidad, biografias, agradecimientos y pagina de creditos.
+
+**El corte esta leido, no deducido:** L41 cierra con *"We wish you great success as
+you shift your focus from chasing the what, to solving the who."* y **L43 abre con
+la palabra `FOOTNOTES` sola en su bloque.** Desde ahi el fichero deja de ser
+capitulo.
+
+    $ sed -n '<rango>p' fuentes/smart_who/cap_07.md | awk '{n+=NF} END{print n+0}'
+    $ sed -n '<rango>p' fuentes/smart_who/cap_07.md | grep -c '[^[:space:]]'
+
+| tramo | rango | palabras | bloques | que es |
+|---|---|---:|---:|---|
+| **cuerpo del Cap. 6** | **L9 a L41** | **370** | **17** | **lo unico minable** |
+| `FOOTNOTES` | L43 a L51 | 27 | 5 | dos notas al pie y sus dos *Return to text* |
+| `KEYNOTES AND WORKSHOPS` | L53 a L71 | 71 | 10 | folleto de servicios de ghSMART |
+| `BEST CAREER OPPORTUNITY` | L73 a L77 | 98 | 3 | anuncio de empleo de ghSMART |
+| `BIOGRAPHIES OF CAPTAINS OF INDUSTRY` | L79 a L259 | 1.614 | 91 | la lista de los entrevistados, uno por bloque |
+| `ACKNOWLEDGMENTS` | L261 a L285 | 586 | 13 | agradecimientos |
+| `ABOUT THE AUTHORS` | L287 a L295 | 70 | 5 | fichas de los dos autores |
+| `ACCLAIM FOR Who` | L297 a L415 | 949 | 60 | 30 elogios de contraportada con su firmante |
+| pagina de creditos | L417 a L429 | 64 | 7 | copyright, editorial y ficha de la Biblioteca del Congreso |
+| **suma** | **L9 a L429** | **3.849** | **211** | **cuadra exacto con la medicion del rango entero** |
+
+**Y LA SEGUNDA MITAD DE LA MEDIDA, que es la que de verdad no se sabia: el limite
+entre el Cap. 5 y el Cap. 6 NO cae en el borde de fichero.** `cap_06.md` L455
+cierra con *"The Americans beat the heavily favored Italian team by forty-four
+seconds."* y `cap_07.md` L9 abre con *"Imagine the excitement of that!"*. **Es
+prosa continua partida en dos ficheros**, y `cap_07.md` L11 lo remacha: *"If Bill
+Koch can use this method to overcome crazy odds and win the America's Cup..."*.
+
+**Lo que esto significa, dicho sin adivinar:** el recorte pone la `unidad` en la
+cabecera de cada FICHERO, y **en este borde la cabecera del fichero no puede ser
+la del capitulo**, porque el capitulo cruza. **Yo no muevo la etiqueta del
+recorte**: extraigo **por material**, que es lo que la vara juzga, y publico los
+dos hechos medidos. **Ninguna palabra del tramo se queda sin minar por esto:**
+`cap_06.md` L9 a L455 mas `cap_07.md` L9 a L41 es todo el cuerpo que queda del
+libro, y lo leo entero.
+
+> **DISCUTIBLE 1, marcado antes de saber si acierto.** Ver C.7.
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 0 | las cuatro comprobaciones de apertura | **CERRADA** | **las cuatro en VERDE.** Palabras y bloques del Cap. 5 reproducen exacto (11.339 y 226); los 3.849 del Cap. 6 reproducen como RANGO pero **solo 370 son cuerpo de capitulo** (0.c), y el borde `cap_06`/`cap_07` **parte prosa continua**. Correccion declarada de 1.b reabierta con `awk` propio: las 31 palabras de cabecera salen por diferencia |
+
+## 1. LOS REGISTROS DEL ACTA 6
+
+### 1.a. EL COMPARATIVO SE DIVIDE ANTES DE ESCRIBIRSE, Y LA DIVISION VA AL LADO
+
+**Recogido y en vigor desde esta linea.** El remedio no es un programa (moratoria
+de maquinaria, `EXTRACTOR.md` 13): **es que en esta vuelta ningun *doble*,
+*mitad*, *triple*, *tercio* ni *casi* se teclea sin su cociente escrito al lado, y
+si el cociente no sale, el comparativo no se escribe y se ponen las dos cifras a
+secas.** Las dos caidas de la vuelta 6 se recogen sin reabrirse: 97 contra 104 no
+era *casi el doble* sino *casi tantos como*, y 4,44 sobre 13,97 no era *la mitad*
+sino **el 31,8 por ciento**, menos de un tercio.
+
+**El remedio de la vuelta 5 sigue aplicado:** toda cita de linea de este reporte
+se reabre con `sed -n` antes de teclearse, y las de esta vuelta estan reabiertas.
+
+### 1.b. LA CORRECCION DECLARADA: ya esta anotada en 0.b, reabierta con mi propio `awk`
+
+**Ver 0.b.** No se copia: se remidio (`11.315 - 11.284 = 31` palabras de cabecera
+YAML) y la aritmetica del 11.370 sale entera.
+
+### 1.c. LAS ARISTAS PENDIENTES, EN BLOQUE PROPIO Y TITULADO
+
+*`D.29`: una arista que solo vive en la prosa de un reporte se pierde. Este bloque
+se reescribe entero cada vuelta hasta que la insercion las cablee. **Ninguna se
+cablea aqui: una arista se cablea contra ids que ya viven, y en el dataset viven
+8 nodos, ninguno de `smart_who`.***
+
+**LAS NUEVE QUE VENIAN DECLARADAS** (tres de mi 1.b y seis de mi 2.h de la vuelta 6):
+
+| # | arista | como esta nombrada para que se cablee por lectura |
+|---:|---|---|
+| 1 | `aplicar_metodo_ghsmart_contratacion` es cabeza de los cuatro pasos del metodo | sus cuatro pasos accionables nombran los cuatro actos |
+| 2 | `detectar_metodos_vudu_contratacion` va ANTES por `cap_02.md` L53, y **no se cablea**: adjudicado en el ACTA 5, la arista es de despliegue | |
+| 3 | el Cap. 4 usa la tarjeta de puntuacion del Cap. 2 en **cinco** de sus quince nodos | ninguna señal las levanta; van por lectura |
+| 4 | `seleccionar_jugador_cuatro_entrevistas` es cabeza de SEIS hijos | los seis lo dicen en sus `condiciones_activacion` |
+| 5 | `aplicar_tacticas_maestras_entrevista` es cabeza de CUATRO hijos | los cuatro lo dicen en sus `condiciones_activacion` |
+| 6 | `profundizar_respuestas_preguntas_curiosidad` es hijo de CUATRO madres a la vez | sus `condiciones_activacion` nombran las cuatro |
+| 7 | `crear_tarjeta_puntuacion_puesto` es cabeza de la serie del Cap. 2 | |
+| 8 | `abastecer_flujo_candidatos` es cabeza de la serie del Cap. 3 | |
+| 9 | **`decidir_contratacion_final` apunta al CUARTO hijo del metodo, `Sell`**, por su paso 7 y su `resumen_teorico`, **sin nombrar un id que no existia** | **ESTA VUELTA LA CIERRA. Ver 1.c.bis** |
+
+#### 1.c.bis. LA QUE ESTE CAPITULO CIERRA, Y ES LA QUE MAS IMPORTA
+
+**`Sell` es el CUARTO y ultimo hijo de `aplicar_metodo_ghsmart_contratacion`, y
+ahora existe: `vender_puesto_jugador`.** Reabierto con `sed -n '9p'`, el libro lo
+dice en su primera linea de capitulo:
+
+> *"In this chapter, you will learn the five ways to seal the deal with confidence.
+> **Sell is the fourth and final step in the A Method for Hiring.**"*
+> (`cap_06.md` L9)
+
+**Escrito con la cabeza nombrada en sus `condiciones_activacion` y en su
+`resumen_teorico`, para que se cablee por lectura y no por memoria**, que es lo que
+el encargo pide. **Sigue sin cablearse**, como todas: el dataset no tiene todavia
+ningun nodo de `smart_who`.
+
+### 1.d. LAS SEIS ADJUDICACIONES DEL ACTA 6, RECOGIDAS Y NO REABIERTAS
+
+| # | mi discutible de la vuelta 6 | como quedo | donde lo aplico hoy |
+|---:|---|---|---|
+| 1 | los pares cabeza contra hijo son cola util | **SOSTENIDO EN LA MEDIDA, ACOTADO EN LA RAZON** | 1.e |
+| 2 | la tactica 4 no da nodo | **SOSTENIDO** | **dos veces en este capitulo**: la F de `fun` y la seccion `PERSISTENCE PAYS OFF`. Ver 2.c |
+| 3 | la unidad son 11.339 y no 11.370 | **SOSTENIDO, celda mala del auditor** | 0.b |
+| 4 | la remision interna de L195 vale | **SOSTENIDO** | 1.f |
+| 5 | el id en castellano sin `who` | **SOSTENIDO** | los doce ids de esta vuelta, todos en castellano |
+| 6 | editar `ultimo_auditor.json` | **NO FUE INVASION DE SEDE** | 1.g, y **hoy ha vuelto a pasar** |
+
+### 1.e. LA ACOTACION DEL DISCUTIBLE 1, RECOGIDA Y APLICADA EN ESTE CAPITULO
+
+**Recogida entera: *cabeza contra hijo* es una clasificacion legitima para medir el
+coste de la cola, y NO es un veredicto anticipado ni autoriza a saltarse la lectura
+de un solo par.** La frase que el auditor me tumbo (*"el veredicto se sabe antes de
+abrir el par, es CONTINUA por construccion"*) **no se vuelve a escribir**, y no
+aparece en ninguna linea de este reporte.
+
+**Y EL AVISO CONCRETO SE APLICO, porque el Cap. 5 SI trae la serie de cinco que el
+titulo prometia.** Mire los hijos cortos uno a uno buscando el duplicado con cable,
+y **de las cinco F una se cayo por eso mismo**: `fun` no tiene mas material que el
+que la cabeza ya comprime. Desarrollado en 2.c.
+
+### 1.f. LA LINEA DE LA REMISION INTERNA, RECOGIDA
+
+> **UNA REMISION INTERNA DEL LIBRO VALE COMO INVENTARIO SI, Y SOLO SI, EL TEXTO AL
+> QUE REMITE ESTA EN LA FUENTE.**
+
+**Recogida y aplicada dos veces en este capitulo**, las dos con su linea:
+
+| remision | el texto remitido | que hice |
+|---|---|---|
+| `cap_06.md` L165: *"As we wrote earlier, we recommend you set up each session by saying something like this"* | **el texto NO hace falta buscarlo: la propia L165 lo imprime entero** entre comillas | lo transcribi de L165 |
+| `cap_06.md` L109: *"Research shows that while money can be a disincentive... it rarely is the key motivator.\*2"* | **la nota `*2` vive en `cap_07.md` L49** (Herzberg, *Harvard Business Review*, enero-febrero 1968), y **esta en la fuente** | la nota se cita en el `resumen_teorico` con su autor, no se convierte en paso |
+
+### 1.g. EL ARTEFACTO DEL ARNES: HA VUELTO A PASAR, Y SE DECLARA
+
+**Mi primer commit de esta vuelta lo tumbo el hook**, por tres guiones largos que
+**no escribi yo**:
+
+    [pre-commit] barrido de guiones
+    BARRIDO DE GUIONES EN ROJO: 3 hallazgo(s)
+      docs/loop/ultimo_auditor.json linea 1 columna 2300: guion largo (U+2014)
+      docs/loop/ultimo_auditor.json linea 1 columna 2390: guion largo (U+2014)
+      docs/loop/ultimo_auditor.json linea 1 columna 2921: guion largo (U+2014)
+
+**Los tres estan dentro del texto del ACTA 6 que el arnes vuelca en el artefacto.**
+Aplicando el limite escrito en 1.g del encargo (*se puede corregir en lo MINIMO
+para que el hook pase, y la correccion se declara*): **reemplace los tres U+2014
+por guion corto y NADA MAS.** El fichero mide **4.463 bytes** antes y **4.457**
+despues (`wc -c` a los dos lados: el de antes leido del
+arbol de trabajo antes de tocarlo, el de ahora corrido hoy), y **la diferencia de
+6 bytes es exactamente la que la sustitucion predice**: tres U+2014 de 3 bytes
+cada uno en UTF-8 pasan a tres guiones cortos de 1 byte, 3 x 2 = 6. **No escribi
+contenido en el, y sigue sin ser una sede.** Commit `c51ee98`, hook en verde al
+segundo intento.
+
+**Y una nota que hace falta para leer el `wc -c`:** en `HEAD~1` el fichero media
+**0 bytes** (`git show HEAD~1:docs/loop/ultimo_auditor.json | wc -c`). Las 4.463
+las escribio el arnes en el mismo turno, que es justo lo que 1.g del encargo
+describe.
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 1 | los registros del ACTA 6 | **CERRADA** | **1.a en vigor** y aplicada a todo el reporte. **1.b reabierta con `awk` propio** (0.b). **1.c: nueve aristas publicadas en bloque titulado, y la novena, la del cuarto hijo del metodo A, la cierra este capitulo** con `vender_puesto_jugador`. **1.d: las seis recogidas, ninguna reabierta.** 1.e aplicada y **le costo un hijo a la serie de cinco**. 1.f aplicada dos veces con sus lineas. **1.g: el artefacto volvio a pasar y esta declarado** con su `wc -c` a los dos lados |
+
+## 2. EL Cap. 5, `Sell: The Top Five Ways to Seal the Deal`
+
+### 2.a. LA FRONTERA, PUBLICADA ANTES DE CORTAR NADA, PIEZA A PIEZA
+
+**Ninguna linea de esta tabla se teclea sin reabrirse con `sed -n`.** Las diecinueve
+piezas del capitulo, en el orden del libro, con la prueba del inventario de `D.27`
+pasada a cada una y **la razon de las que NO entran, una por una**.
+
+| # | pieza | rango | prueba de `D.27` | veredicto |
+|---:|---|---|---|---|
+| P1 | apertura del capitulo (epigrafe mas aviso) | `cap_05.md` **L363 a L365** | *"Most managers fail to sell a candidate"* mas *"Don't fumble the ball as you run across the goal line."* **Cero medios, cero etapas, cero objetos** | **NO NODO: advertencia** (`EXTRACTOR.md` 9, `P.11`) |
+| P2 | anuncio del capitulo | `cap_06.md` **L9** | *"Sell is the fourth and final step in the A Method for Hiring."* Nombra el sitio, no el procedimiento | **NO NODO: es la ARISTA**, no un nodo. Va a 1.c.bis |
+| P3 | **el recuadro de las cinco F** | **L11 a L21** | mandato (*"address each of these five areas until you get the person to sign on the dotted line"*) **mas inventario propio de CINCO MEDIOS nombrados uno a uno**, cada uno con su definicion y su frase literal | **NODO: CABEZA de la serie de cinco** |
+| P4 | `SELLING FIT` | **L23 a L41** | L27 nombra **seis objetos** a casar: *goals, talents, values* del candidato contra *vision, strategy, culture* de la empresa. L41 nombra **tres elementos**: *position, company, and culture* | **NODO: hijo 1** |
+| P5 | `SELLING FAMILY` | **L43 a L73** | **L73 es un inventario en imperativo y del propio libro**: *"bring them to town and show them around. Hire a real-estate broker to give them a tour of possible neighborhoods and schools. Take them to dinner. Introduce them to the other awesome families of your teammates."* | **NODO: hijo 2** |
+| P6 | `SELLING FREEDOM` | **L83 a L103** | L89 nombra el medio (la tarjeta de puntuacion ya dice los resultados, luego sobra el microcontrol), L93 nombra otro (**dar al candidato acceso libre a tu gente para que te pidan referencias A TI**), L103 nombra los tres apetitos | **NODO: hijo 3** |
+| P7 | `SELLING FORTUNE` | **L105 a L123** | L111 (*"demonstrating how a candidate would be rewarded"*), **L113** (**los dos mercados**, externo e interno), **L119** (**atar la retribucion variable al logro de la tarjeta de puntuacion**) | **NODO: hijo 4** |
+| P8 | `SELLING FUN` | **L125 a L141** | **NO HAY INVENTARIO PROPIO.** Ver 2.c: es caso de ghSMART y caso de Zillmer, y lo unico mandado (*"fun describes the work environment and personal relationships"*) **ya es el paso que la cabeza comprime** | **NO NODO.** Razon entera en 2.c |
+| P9 | **`FIVE WAVES OF SELLING`, la lista** | **L143 a L159** | L149 pone el mandato (*"If you don't increase your sales energy, you won't get your candidate over the crest of the wave"*) y **L151 a L159 ponen las CINCO ETAPAS numeradas** | **NODO: CABEZA de la serie de cinco olas** |
+| P10 | ola 1, al abastecer | **L161 a L163** | L161 nombra el medio (*"the emphasis on interest and talents during the sourcing process"*), el acto (*"to spot the hooks, you have to listen"*) y **imprime las dos preguntas literales** | **NODO: hijo 1 de las olas** |
+| P11 | ola 2, en la entrevista | **L165 a L169** | **L165 imprime la frase de arranque entera**; L167 nombra el momento (*"the question time at the end"*); L169 pone el caso trabajado del museo | **NODO: hijo 2 de las olas** |
+| P12 | ola 3, de la oferta a la aceptacion | **L171 a L179** | **L179 es siete imperativos seguidos** (*"Stay in touch... Pinpoint their concerns... Show them... Woo their families... Commit to giving them freedom... Address financial concerns... involve them in the fun"*), y L177 pone la premisa (*"Silence is your worst enemy at this stage"*) | **NODO: hijo 3 de las olas.** Es la pieza mas rica del capitulo |
+| P13 | ola 4, de la aceptacion al primer dia | **L181 a L187** | L181 nombra **tres riesgos** (contraofertas, ofertas competidoras, la familia sembrando dudas) y **L183 nombra cuatro medios** (*flowers, balloons, or a gift certificate*, *make a splash*, *continue to stay in touch*, *keep listening for concerns related to the five F's*) | **NODO: hijo 4 de las olas** |
+| P14 | ola 5, los primeros cien dias | **L189 a L193** | L189 nombra el objeto (*on-boarding program*), **su frontera negativa** (*"more than just a welcome lunch and short orientation given by the HR department"*) y **su responsable, escrito por el libro** (*"You, the hiring manager or board member"*); L191 nombra **los tres insumos** (*the scorecard, sourcing, and selection process*) | **NODO: hijo 5 de las olas. DISCUTIBLE 2**, es el mas delgado de los cinco |
+| P15 | `PERSISTENCE PAYS OFF` | **L195 a L215** | **NO HAY INVENTARIO PROPIO.** *"They don't take the first no for an answer. They keep positive pressure."* Es postura, y los dos relatos (Hurst, el hacedor de tratos de Howard) **tienen ejecutor de tercera persona**. Ver 2.c | **NO NODO** |
+| P16 | **el recuadro `HOW TO SELL A PLAYERS`** | **L217 a L225** | **tres pasos numerados, imperativos y del libro.** Es la compresion del capitulo entero | **NODO: LA CABEZA DEL CAPITULO** |
+| P17 | cierre del tramo de venta (moral de Howard, la cifra de los mas de cuatrocientos lideres, Varley) | **L227 a L245** | L235 es **cifra del autor** (*management talent* mas de la mitad, ejecucion 20 por ciento, estrategia 17, factores externos 11) | **NO NODO: cifra y caso.** La cifra va a `atribuciones` de la cabeza |
+| P18 | `HOW TO INSTALL THE A METHOD...`, `LEGAL TRAPS TO AVOID`, `THOUGHTS ON BUILDING YOUR TEAM`, `RIDING THE RISING TIDE`, `WHAT TYPES OF CEOS MAKE MONEY FOR INVESTORS?` | **L247 a L393** | **inventario abundantisimo**: una serie de DIEZ (L253 a L277), una de CUATRO (L307 a L313) y un estudio con su cifra (L365 a L389) | **QUEDA COMO COLA. Ver 2.b: no cabe en el tramo** |
+| P19 | `BEYOND HIRING` y `YOU CAN DO IT` | **L395 a L455** | caso de Bililies y caso de Koch, mas la remision a la tarjeta de puntuacion | **QUEDA COMO COLA. Ver 2.b** |
+
+### 2.b. EL TRAMO SE LLENA CON LA MITAD DEL CAPITULO, Y SE DICE ANTES DE EMPEZAR
+
+**El techo de `EXTRACTOR.md` 12.4 es de entre cinco y quince candidatos.** La
+frontera de 2.a arroja **doce nodos solo en el tramo de venta propiamente dicho**
+(P3 a P16). **Las piezas P18 y P19 traen por si solas una serie de diez y una de
+cuatro, es decir dieciseis nodos mas contando sus dos cabezas**, y no caben.
+
+**Asi que corto donde el capitulo cambia de asunto y lo digo con su linea.** El
+titulo del capitulo promete *"The Top Five Ways to Seal the Deal"*, y la ultima
+linea que habla de sellar un trato es **L245**. **L247 abre con
+`HOW TO INSTALL THE A METHOD FOR HIRING IN YOUR COMPANY`**, que no trata de vender
+un puesto a un candidato sino de implantar el metodo en una empresa.
+
+**LO QUE NO HAGO, Y ES DELIBERADO: no reetiqueto nada.** El recorte pone `Cap. 5`
+en la cabecera del fichero y **yo no muevo esa etiqueta** (ver 0.c). Digo lo que he
+medido y dejo el tramo declarado como cola con su rango y sus palabras:
+
+    $ sed -n '247,455p' fuentes/smart_who/cap_06.md | awk '{n+=NF} END{print n}'
+    $ sed -n '247,455p' fuentes/smart_who/cap_06.md | grep -c '[^[:space:]]'
+
+| tramo | rango | palabras | bloques | estado |
+|---|---|---:|---:|---|
+| **minado en esta vuelta** | `cap_05.md` L363 a L365 mas `cap_06.md` L9 a L245 | **55 + 6.250 = 6.305** | **2 + 119 = 121** | **MINADO** |
+| **cola declarada** | `cap_06.md` **L247 a L455** | **5.034** | **105** | **NO MINADO** |
+| **suma de control** | | **11.339** | **226** | **cuadra exacto con 0.a** |
+
+**La suma de control es la prueba de que el corte no pierde nada:** 6.305 mas
+5.034 da **11.339**, que es la medicion del capitulo entero de 0.a, y 121 mas 105
+da **226**, que son sus bloques. **Ni una palabra queda fuera de una de las dos
+filas.**
+
+### 2.c. LOS DOCE CANDIDATOS, UNO A UNO, CON SU ADUANA EN SECO EN EL MISMO ACTO
+
+**El ciclo de `EXTRACTOR.md` 16 se corrio candidato a candidato:** se escribe, se
+corre `python forja.py informe cuarentena/smart_who/<id>.json`, y solo entonces
+cuenta como escrito. **Doce corridas, doce ENTRARIA, cero correcciones de id y
+cero reintentos.**
+
+| # | id | pieza | pasos | aduana en seco |
+|---:|---|---|---:|---|
+| 1 | `vender_puesto_jugador` | P16, **L217 a L225** mas L9 | 3 | **ENTRARIA** al primer intento |
+| 2 | `abordar_cinco_efes_venta` | P3, **L11 a L21** | 7 | **ENTRARIA** al primer intento |
+| 3 | `vender_encaje_candidato_empresa` | P4, **L23 a L41** | 5 | **ENTRARIA** al primer intento |
+| 4 | `vender_cambio_trabajo_familia` | P5, **L43 a L73** | 7 | **ENTRARIA** al primer intento |
+| 5 | `vender_libertad_candidato` | P6, **L83 a L103** | 5 | **ENTRARIA** al primer intento |
+| 6 | `vender_fortuna_candidato` | P7, **L105 a L123** | 5 | **ENTRARIA** al primer intento |
+| 7 | `planificar_cinco_olas_venta` | P9, **L143 a L159** | 8 | **ENTRARIA** al primer intento |
+| 8 | `vender_abastecimiento_candidatos` | P10, **L161 a L163** | 5 | **ENTRARIA** al primer intento |
+| 9 | `vender_final_entrevista` | P11, **L165 a L169** | 5 | **ENTRARIA** al primer intento |
+| 10 | `sostener_contacto_oferta_aceptacion` | P12, **L171 a L179** | 10 | **ENTRARIA** al primer intento |
+| 11 | `celebrar_aceptacion_primer_dia` | P13, **L181 a L187** | 6 | **ENTRARIA** al primer intento |
+| 12 | `disenar_incorporacion_cien_dias` | P14, **L189 a L193** | 6 | **ENTRARIA** al primer intento |
+| | **total** | | **72** | **12 de 12** |
+
+#### 2.c.1. LOS DOS QUE NO DAN NODO, CON SU RAZON Y SIN AGRUPARLOS
+
+**El titulo del capitulo promete una serie de cinco y la trae, pero la serie da
+CUATRO hijos y no cinco.** Es la adjudicacion del discutible 2 del ACTA 6 saliendo
+otra vez, y esta vez la aplico sabiendola: **una serie numerada PUEDE dar menos
+hijos que numeros**, porque el manual 3.4 dice **como se corta** una serie y
+`EXTRACTOR.md` 9 dice **que es un nodo**, y el arbitro es el escrito.
+
+**LA QUINTA EFE, `SELLING FUN` (L125 a L141): NO DA NODO.** Y la razon no es que
+sea corta, porque son 17 bloques:
+
+| lo que la seccion trae | por que no es inventario |
+|---|---|
+| L127: *"We spend more than a third of our time... We might as well have fun while we are doing it."* | es la razon de la efe, no un medio |
+| L129: *"What 'fun' means, of course, is closely tied to corporate culture"*, con el gimnasio de las startups y el traje de dos piezas de la banca | es ilustracion de una definicion |
+| L131 a L135: la cultura de ghSMART, lo que disfruta Geoff, lo que lanzo Randy, la cumbre anual en Napa Valley | **caso, y el ejecutor son los autores** |
+| L137 a L139: como decidio John Zillmer entrar en Allied Waste | **caso, y el ejecutor es Zillmer** |
+| L141: *"What's fun, of course, varies from person to person."* | **constatacion, no encargo.** El libro NO manda averiguar que es divertido para este candidato |
+
+> **Y LO UNICO MANDADO ES EL PASO QUE LA CABEZA YA COMPRIME:** *"Fun describes the
+> work environment and personal relationships the candidate will make"* (L21), que
+> es literalmente el paso 6 de `abordar_cinco_efes_venta`. **Un hijo que solo
+> repite el paso que la cabeza comprime no es un hijo: es un duplicado con cable**
+> (1.e). **Aqui la acotacion del auditor me cambio el resultado, no solo la
+> redaccion.**
+
+**`PERSISTENCE PAYS OFF` (L195 a L215): NO DA NODO, y es OTRA razon, por eso va
+aparte.** Aqui si hay volumen (11 bloques mas la continuacion de L227 a L231) y lo
+que falta es el ejecutor:
+
+| lo que la seccion trae | por que no es inventario |
+|---|---|
+| L197: *"They don't take the first no for an answer. They keep positive pressure on the A Players they want until they get them."* | **postura.** Describe a los grandes lideres, no encarga nada |
+| L199 a L201: Robert Hurst llamando cada dos semanas al numero dos hasta que acepto | **caso, primera persona, el ejecutor es Hurst** |
+| L203 a L231: el hacedor de tratos de John Howard, el avion privado, el atico, el Porsche 911, el abrigo de chinchilla y los 850.000 dolares | **caso, tercera persona, el ejecutor es un tercero que Howard cuenta** |
+| L231: *"You've got to do whatever it takes when you are sure you have identified the right person."* | **moral del caso**, y un *lo que haga falta* es el adjetivo de adecuacion de `D.27` en el sitio del criterio |
+
+**Y ESO NO DEJA A LA CABEZA COJA:** el punto 3 del recuadro (*"Be persistent. Don't
+give up until you have your A Player on board."*) **es un paso de
+`vender_puesto_jugador` y esta escrito ahi**. Lo que no hay es un nodo hijo debajo,
+porque debajo no hay procedimiento.
+
+#### 2.c.2. LA QUINTA ESPECIE, LLEVADA DELANTE, Y LO QUE MIDIO ESTA VEZ
+
+**El detector que el encargo manda llevar (ante cada paso en tercera persona,
+quien lo ejecuta) se aplico paso a paso al escribir, y esta vuelta se convirtio en
+una regla de dos filas que uso a partir de ahora:**
+
+| forma del texto | que es | que hago |
+|---|---|---|
+| cita en **segunda persona dirigida al lector** que el libro respalda en su propia voz (*"Mark Stone put it well"*, *"Liddy's advice... was to"*) | **mandato adoptado** | va a `pasos_accionables`, **con su dueño nombrado dentro del propio paso** |
+| frase en **tercera o primera persona** que cuenta lo que alguien HIZO (*"Next, Echavarria brings candidates to Corona"*, *"During nearly every conversation I had with Greg, I asked"*) | **caso** | va al `resumen_teorico` **con su dueño delante**, y NUNCA a los pasos |
+
+**LOS CUATRO PUENTES DE ESTA VUELTA SON LOS CUATRO DE LA FILA DE ABAJO**, y **los
+cuatro se cazaron en el acto de escribir su candidato**, no al releer. Tabla entera
+en 2.d.
+
+**Y LA LECTURA DE LA VUELTA 6 SE VUELVE A CUMPLIR AQUI, con su ejemplar:** el caso
+mas largo del capitulo (el hacedor de tratos de Howard, 15 bloques de L203 a L231)
+**dio CERO puentes, porque esta tan separado del mandato que no se confunde con
+uno**; los cuatro puentes salieron de **frases de caso metidas dentro de parrafos
+de instruccion** (Echavarria dentro de `SELLING FIT`, Malone y Tex Chance dentro de
+`SELLING FAMILY`). **No es el volumen de caso lo que fabrica puentes: es su
+entretejido con el mandato.**
+
+### 2.d. LA TABLA DE MARCADO, CON EL PARRAFO CITADO EN CADA PUENTE
+
+**Va en el reporte y no dentro del JSON**, como el encargo manda. **Los 72 pasos
+finales de los doce candidatos son TRANSCRIPCION**, marcados uno a uno contra su
+parrafo al escribirlos. Lo que sigue son **los 8 pasos que escribi y retire**, con
+la cita reabierta con `sed -n` del parrafo que NO los dice.
+
+#### LOS CUATRO PUENTES, RETIRADOS EN EL ACTO
+
+| # | candidato | el paso que escribi | el parrafo que NO lo dice | especie |
+|---:|---|---|---|---|
+| 1 | `vender_encaje_candidato_empresa` | *"Trae al candidato a tu empresa y dejale pasearse y conocer a la gente para que entienda vuestra cultura"* | **L39**: *"Next, Echavarria brings candidates to Corona and lets them walk around and meet the people there to understand their culture."* **Tercera persona. El ejecutor es Echavarria**, y el libro no manda ese paseo fuera del caso | **quinta especie** |
+| 2 | `vender_encaje_candidato_empresa` | *"No des el encaje por bueno hasta que los tres elementos, puesto, empresa y cultura, esten alineados"* | **L41**: *"Not until all three elements, position, company, and culture, are aligned does Echavarria assume he has a fit."* **La regla de parada es de Echavarria**, no del libro | **quinta especie** |
+| 3 | `vender_cambio_trabajo_familia` | *"Pregunta en casi cada conversacion como se siente su mujer y que ilusion les hace a los niños"* | **L51**: *"During nearly every conversation I had with Greg, I asked, How is your wife feeling about this? How excited are your kids to live in Denver?"* **Primera persona. El ejecutor es Malone** | **quinta especie** |
+| 4 | `vender_cambio_trabajo_familia` | *"Monta un paquete para la familia con un video del sitio, un informe inmobiliario de las diez mejores casas y entradas de musica en directo"* | **L57**: *"So the assistant, whose magnificent name is Tex Chance, put together a care package the size of Texas."* **Tercera persona. La ejecutora es Tex Chance** | **quinta especie** |
+
+**LOS CUATRO SON DE LA QUINTA ESPECIE, cuatro de cuatro**, igual que en la vuelta 6
+fueron tres de tres. **Y los cuatro se cazaron al escribir su candidato**, no al
+releer: el detector del ejecutor funciona en el acto.
+
+**LO QUE PASO CON LOS CUATRO DESPUES DE RETIRARSE:** los cuatro se fueron enteros
+al `resumen_teorico` de su nodo, **con su dueño delante**, que es donde
+`EXTRACTOR.md` 9 pone el caso. No se perdio material: se cambio de sede.
+
+#### LOS CUATRO RETIRADOS POR LA VARA (`EXTRACTOR.md` 9)
+
+**No son puentes: son pasos que escribi para una pieza que despues no paso la vara
+de que es un nodo.** Se cuentan aparte porque el encargo pide el denominador
+desglosado en tres, y **mezclarlos con los puentes inflaria la tasa de invencion
+con pasos que no invente**.
+
+| # | pieza | el paso que escribi | por que cayo |
+|---:|---|---|---|
+| 1 | `SELLING FUN` | *"Describe el ambiente de trabajo y las relaciones personales que el candidato va a hacer"* | **es literalmente el paso 6 de la cabeza** (`abordar_cinco_efes_venta`, de L21). Duplicado con cable, 1.e |
+| 2 | `SELLING FUN` | *"Averigua que significa la diversion para esta persona concreta"* | **L141** dice *"What's fun, of course, varies from person to person"*, que es constatacion. **El libro no manda averiguarlo**: ese paso lo escribi yo |
+| 3 | `PERSISTENCE PAYS OFF` | *"Llama al candidato cada dos semanas hasta que acepte"* | **L199**: *"So I would call him every couple of weeks."* **Primera persona, el ejecutor es Hurst** |
+| 4 | `PERSISTENCE PAYS OFF` | *"Sube la oferta hasta donde haga falta cuando estes seguro de la persona"* | **L231**: *"You've got to do whatever it takes when you are sure you have identified the right person."* **Un lo que haga falta es el adjetivo de adecuacion en el sitio del criterio** (`D.27`, restriccion 2) |
+
+**Los numeros 3 y 4 habrian sido puentes si los hubiera dejado. No lo son porque la
+pieza entera se cayo antes**, y esa distincion es exactamente la que el encargo
+pide que sea auditable.
+
+### 2.e. LAS ARISTAS QUE EL CAPITULO ABRE, TODAS, Y NINGUNA SE CABLEA
+
+**Ninguna se cablea: los doce `nodos_previos` y los doce `nodos_siguientes` van
+vacios**, porque una arista se cablea contra ids que ya viven y en el dataset viven
+8 nodos, ninguno de `smart_who`. **Todas van nombradas en la prosa o en las
+`condiciones_activacion` del nodo, para que se cableen por lectura.**
+
+| # | arista | como esta nombrada |
+|---:|---|---|
+| **A1** | **`vender_puesto_jugador` es el CUARTO y ultimo hijo de `aplicar_metodo_ghsmart_contratacion`** | sus `condiciones_activacion` dicen *"Es el cuarto y ultimo paso del metodo A de ghSMART para contratar"*. **Cierra la novena arista pendiente de 1.c** |
+| **A2** | **`decidir_contratacion_final` va justo ANTES de `vender_puesto_jugador`** | las `condiciones_activacion` de `vender_puesto_jugador` dicen *"arranca justo donde termina decidir a quien contratar"*, y el paso 7 del otro ya apuntaba aqui sin poder nombrarlo |
+| **A3** | `vender_puesto_jugador` es **cabeza de dos hijos**: `abordar_cinco_efes_venta` y `planificar_cinco_olas_venta` | los dos lo dicen en sus `condiciones_activacion`: *"el primero de los tres puntos del recuadro"*, *"el segundo de los tres puntos del recuadro"* |
+| **A4** | `abordar_cinco_efes_venta` es **cabeza de cuatro hijos**: encaje, familia, libertad y fortuna | los cuatro lo dicen en sus `condiciones_activacion`: *"dentro de abordar las cinco efes de la venta"* |
+| **A5** | `planificar_cinco_olas_venta` es **cabeza de cinco hijos**, las cinco olas | los cinco lo dicen en sus `condiciones_activacion`: *"Es la primera / segunda / tercera / cuarta / quinta de las cinco olas de la venta"* |
+| **A6** | **`vender_libertad_candidato` usa la tarjeta de puntuacion del Cap. 2** | su paso 2 la nombra: *"Pon la tarjeta de puntuacion encima de la mesa como prueba"* |
+| **A7** | **`vender_fortuna_candidato` usa la tarjeta de puntuacion del Cap. 2** | su paso 5 la nombra: *"Ata la retribucion variable al desempeño de la persona contra la tarjeta de puntuacion"* |
+| **A8** | **`disenar_incorporacion_cien_dias` usa los TRES pasos anteriores del metodo a la vez** (tarjeta, abastecimiento y seleccion) | su paso 6 los nombra los tres |
+| **A9** | **`vender_abastecimiento_candidatos` cae DENTRO de `abastecer_flujo_candidatos`**, que es el segundo paso del metodo | sus `condiciones_activacion` dicen *"Cuando estas abasteciendo el flujo de candidatos"* |
+| **A10** | **`vender_final_entrevista` cae DENTRO de las entrevistas del Cap. 4** | sus `condiciones_activacion` dicen *"Cuando estas conduciendo cualquiera de las entrevistas del metodo"* |
+| **A11** | **`sostener_contacto_oferta_aceptacion` y `celebrar_aceptacion_primer_dia` apuntan los dos a `abordar_cinco_efes_venta`** desde dentro de sus pasos: *"usando las cinco efes como guia"*, *"las preocupaciones relacionadas con las cinco efes"* | esta es la arista **de muchos a uno** del capitulo: cinco nodos distintos invocan la lista de las cinco efes |
+
+**LA QUE EL Cap. 5 CONFIRMA Y QUE NINGUNA SEÑAL LEVANTA, y ya van TRES capitulos
+seguidos:** **A6, A7 y A8 son la tarjeta de puntuacion del Cap. 2 usada dentro del
+Cap. 5**, y las tres se declaran por lectura. En el Cap. 4 fueron cinco de quince
+nodos; aqui son **tres de doce**. **La jerarquia la busca la lectura, no la señal**
+(`EXTRACTOR.md` 11).
+
+**Y UNA CIFRA DEL AUTOR QUE NO CABLEO Y DIGO POR QUE.** `cap_06.md` **L235** trae
+una cifra de los autores: preguntaron a los mas de cuatrocientos lideres del
+estudio que factores contribuian mas al exito del negocio, y **el talento directivo
+salio por encima de la mitad de la ecuacion**, la ejecucion fue la unica otra
+categoria que llego al 20 por ciento, la estrategia quedo en el 17 y los factores
+externos en el 11. **Esa cifra NO es de ningun nodo de este capitulo: es del metodo
+entero**, y su casa seria `aplicar_metodo_ghsmart_contratacion`, que **ya paso la
+aduana en la vuelta 4 y es cosa juzgada**. No lo edito. **Queda declarada aqui como
+atribucion pendiente**, que es lo que `D.29` pide para que no se pierda en la prosa.

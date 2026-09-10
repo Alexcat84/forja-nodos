@@ -1,0 +1,42 @@
+{
+  "condiciones_activacion": "Cuando estas vendiendo el puesto al candidato elegido y toca atender la segunda de las cinco efes, la familia, dentro de abordar las cinco efes de la venta. Vale tanto si la familia es la palanca como si es el obstaculo.",
+  "denominaciones": {
+    "nombre_largo": "Vender la familia: la segunda de las cinco efes",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "SELLING FAMILY"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "family"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La familia del candidato ganada para el cambio, de modo que el candidato no se caiga en la ultima hora por una casa, un colegio o un conyuge que nadie atendio.",
+  "escala_minima": "El libro la fija por abajo con el caso pequeño: en una empresa pequeña, dice Greg Alexander, la persona a la que hay que vender no es nunca el candidato, asi que el minimo es una sola conversacion con quien de verdad va a decidir.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "vender_cambio_trabajo_familia",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Cuenta con que la familia es a la vez oportunidad y obstaculo. Los conyuges y los hijos se resisten con razon a cambios de trabajo que amenazan con ponerles la vida del reves: los separan de sus amigos, les cambian de colegio y les obligan a empezar de cero.",
+    "Entiende el entorno social y familiar en el que vive el ejecutivo. Es el aviso de Kelvin Thompson: si no lo entiendes, tendras a un ejecutivo que se te cae en la ultima fase del proceso de busqueda, y fuera de Estados Unidos no se puede dar por supuesto que la familia vaya detras.",
+    "Pon la atencion en el conyuge, los hijos, los padres y los amigos del candidato, y no en el candidato. Es el consejo de Greg Alexander y su razon es que el candidato no estaria ahi si no estuviera ya vendido: son ellos los que van a pesar en la decision, y a ellos va a mirar el candidato para la llamada dificil.",
+    "Traelos a la ciudad y enseñasela.",
+    "Contrata a un agente inmobiliario que les haga un recorrido por los barrios y los colegios posibles.",
+    "Llevalos a cenar y presentales a las otras familias estupendas de tus compañeros de equipo.",
+    "Se sincero mientras haces todo esto. Las cinco efes no son herramientas para manipular a nadie: son areas en las que vas a querer poner atencion honda y honesta ahora que has llegado al final del proceso de reclutamiento."
+  ],
+  "resumen_teorico": "Es la segunda de las cinco efes, y el libro la define como tener en cuenta el trauma mas amplio de cambiar de trabajo. Tiene dos caras y el libro las escribe las dos. Como palanca: Gabriel Echavarria recluta a extranjeros casados con colombianas porque los conyuges quieren que los hijos crezcan alli, y dedica una parte entera de su proceso a enseñar la ciudad a las familias, con paseos y cenas. Como obstaculo: John Malone, presidente de Liberty Media, tardo en llevarse a Greg Maffei de Seattle a Denver porque su mujer y sus cuatro hijos estaban atados a la comunidad de Seattle, y lo consiguio preguntando en casi cada conversacion como se sentia la mujer y que ilusion les hacia a los niños vivir en Denver; y la ayudante de direccion Tex Chance, en Austin, monto un paquete con video de familias esquiando en el lago Travis, informe inmobiliario de las diez mejores casas segun los gustos de la familia, dos botas camperas llenas de tequila y entradas de musica en directo, y la familia se mudo. Esas dos son de sus dueños y por eso no estan en los pasos. El libro avisa ademas de que estos relatos no siempre acaban bien: una y otra vez han visto a jugadores A colmados de regalos y de atencion caerse del proceso en la ultima hora porque su familia no estaba a bordo. Y pone el ejemplo de Lee Pillsbury, de Thayer Lodging Group, para pensar la familia mas alla del cierre del trato: se compromete con las familias y con los hijos de su gente segun crecen, para conocerlos, aconsejarlos y ayudarlos a conseguir trabajos de verano o a completar una solicitud universitaria.",
+  "titulo": "Vender el cambio de trabajo a la familia del candidato"
+}

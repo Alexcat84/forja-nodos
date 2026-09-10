@@ -1,0 +1,41 @@
+{
+  "condiciones_activacion": "Cuando ya has hecho la oferta y el candidato todavia no ha dicho que si. Es la tercera de las cinco olas de la venta, y el libro la señala como el punto donde los jefes se apartan por error.",
+  "denominaciones": {
+    "nombre_largo": "La tercera ola de la venta: entre la oferta y la aceptacion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "The time between your offer and the candidate's acceptance"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La aceptacion del candidato, conseguida sin haberlo dejado en silencio ni un tramo del camino.",
+  "escala_minima": "El minimo es no callarse: una llamada regular basta para que esta ola exista, porque lo que la pierde no es hacer poco sino no hacer nada.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "sostener_contacto_oferta_aceptacion",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "No te apartes ahora. Muchos jefes se retiran en este punto creyendo que el futuro contratado necesita tiempo para pensarlo. Puede que lo necesite, pero esto habra sido probablemente un cortejo largo, y apartarse demasiado ahora se parece mucho a un desprecio.",
+    "En vez de meter a la persona en el congelador, da por supuesto que ha recibido una contraoferta atractiva de su empleador actual y que esta considerando otras opciones al mismo tiempo. Son jugadores A, al fin y al cabo. El silencio es tu peor enemigo en esta fase.",
+    "Manten el contacto con ella con regularidad.",
+    "Localiza con precision sus preocupaciones usando las cinco efes como guia.",
+    "Enseñale cuanto va a encajar en la empresa y cuanto va a aportar a la empresa.",
+    "Corteja a su familia.",
+    "Comprometete a darle libertad y autonomia para hacer su trabajo.",
+    "Atiende las preocupaciones economicas.",
+    "Metela en la diversion que tus empleados ya se estan dando.",
+    "No te frenes por miedo a pasarte. De vez en cuando enfriaras a un candidato por ser un pretendiente demasiado ardiente, pero la experiencia de los autores es que los jefes venden de menos mucho mas a menudo que de mas."
+  ],
+  "resumen_teorico": "Es la tercera de las cinco olas y la que el libro señala como el error mas comun: el jefe se aparta justo despues de hacer la oferta, sobre la idea equivocada de que el futuro contratado necesita tiempo para pensarlo. Los ocho actos de esta ola son los que el libro escribe seguidos en imperativo, y estan atados uno a uno a las cinco efes: encaje, familia, libertad, fortuna y diversion aparecen los cinco en la lista de lo que hay que atender mientras se espera la respuesta. El caso del libro, con su dueño delante y fuera de los pasos, es George Buckley: el consejo de administracion de 3M lo recluto para consejero delegado y el les habria puesto un noventa y cinco por ciento en su escrutinio de candidatos, pero no un cien, porque tenian el pez en el sedal y meterlo en la red fue uno de los problemas. Tras unas negociaciones improductivas estuvo inclinado a rechazar el puesto, por culpa de los abogados intermediarios que negociaban en nombre de 3M y a los que le importaba poco el como persona o 3M como empresa. Buckley le dijo al consejo que se sentia como un no-persona en esas conversaciones, como si estuvieran comprando un frigorifico en vez de a una persona, y que no habian hecho la conexion humana. El presidente del comite de busqueda intervino, saco la negociacion del fuego y Buckley se incorporo igualmente; otro candidato podria haberse ido y haberles obligado a repetir el proceso entero.",
+  "titulo": "Sostener el contacto entre tu oferta y la aceptacion del candidato"
+}
