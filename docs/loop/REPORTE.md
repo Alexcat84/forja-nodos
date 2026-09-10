@@ -6271,7 +6271,7 @@ en su propia TAREA 3.
 | 0 | las aristas de serie del lote 2 (`D.37` sobre lo ya insertado), BLOQUEANTE | **CERRADA** | prevision de **28** publicada y commiteada (`8f1f6a4`) antes de declarar ninguna. **28 declaradas, 28 esperadas, diferencia 0**, todas al primer intento. Grafo de **9 a 37 aristas**, bitacora de **32 a 60 veredictos**, gate y 72 de 72 en verde. **Cero de las 28 las levanto ninguna señal** |
 | 1 | tramo A, cola del Cap. 5 (`cap_06.md` L247 a L455) | **CERRADA** | frontera de **siete** piezas publicada antes de cortar (el encargo nombra seis: la septima es un recuadro con interrogacion en el titulo). **15 candidatos, los 15 por la aduana al primer intento, 0 caerian.** 3 vecinos levantados y leidos, los 3 `SANO`. `D.30` encontro **5 puentes sobre 90 pasos, el 5,6 por ciento**, corregidos en el acto |
 | 2 | tramo B, el Cap. 6 (`cap_07.md` L9 a L41) con el borde declarado | **CERRADA** | borde declarado en bloque propio con las lineas de los dos ficheros, **y una discrepancia con la descripcion del encargo: la cabecera del Cap. 6 SI esta en `cap_07.md`**; lo que cruza el borde es el hilo del relato. **CERO candidatos**, y no por pobre sino por repetido: recapitula cuatro nodos que ya viven |
-| 3 | tramo C, material de cierre (`cap_07.md` L43 a L429), JUZGADO antes que cortado | ABIERTA | |
+| 3 | tramo C, material de cierre (`cap_07.md` L43 a L429), JUZGADO antes que cortado | **CERRADA** | **siete** piezas juzgadas de siete (el encargo nombra cinco: dos bloques de publicidad no estaban en la lista). **CERO minables, 3.479 palabras descartadas con su razon y su cita una a una.** Las biografias medidas y no supuestas: **cero imperativos en 181 lineas** |
 | 4 | informe del lote y commits | ABIERTA | |
 | 5 | cierre del lote 2 con sus cuatro medidas por capitulo | ABIERTA | |
 
@@ -6919,3 +6919,143 @@ no ejecuta una busqueda.**
 370 palabras descartado, y **es el descarte mas barato y mas correcto de la
 vuelta**: extraerlo habria producido cuatro gemelos de nodos que entraron hace dos
 vueltas.
+
+---
+
+## TAREA 3. EL TRAMO C, JUZGADO ANTES QUE CORTADO (`cap_07.md` L43 a L429)
+
+**El encargo lo pide con dos prohibiciones: no darlo por no minable porque se
+llame `FOOTNOTES`, y no minarlo porque tenga 387 lineas. `D.27` sobre cada pieza y
+el fallo publicado con su cita, pieza a pieza.**
+
+### 3.a. LA FRONTERA DEL TRAMO C, y otra vez el encargo lista de menos
+
+**El encargo nombra CINCO cabeceras. El fichero tiene SIETE piezas.** Entre
+`FOOTNOTES` y `BIOGRAPHIES` hay **dos bloques mas** que no estan en la lista, y son
+publicidad de la consultora:
+
+    grep -n "^KEYNOTES AND WORKSHOPS$\|^BEST CAREER OPPORTUNITY$\|^FOOTNOTES$\|^BIOGRAPHIES\|^ACKNOWLEDGMENTS$\|^ACCLAIM FOR$\|^LIBRARY OF CONGRESS" fuentes/smart_who/cap_07.md
+    43:FOOTNOTES
+    53:KEYNOTES AND WORKSHOPS
+    73:BEST CAREER OPPORTUNITY
+    79:BIOGRAPHIES OF CAPTAINS OF INDUSTRY
+    261:ACKNOWLEDGMENTS
+    297:ACCLAIM FOR
+    425:LIBRARY OF CONGRESS CATALOGING-IN-PUBLICATION DATA
+
+**ES LA SEGUNDA VEZ EN ESTA VUELTA**, y las dos con la misma causa: una lista de
+cabeceras hecha a ojo se deja bloques dentro. En el tramo A fue un titulo con
+interrogacion; aqui son dos titulos que si estan en mayusculas pero que nadie
+espera encontrar entre las notas y las biografias. **Lo digo porque es exactamente
+la especie que costo la parada de la vuelta 7.**
+
+**LAS SIETE PIEZAS, con sus palabras contadas del fichero** (`EXTRACTOR.md` 5: la
+tabla se cuenta de su fichero):
+
+| pieza | de | a | palabras |
+|---|---:|---:|---:|
+| C1 `FOOTNOTES` | L43 | L52 | 27 |
+| C2 `KEYNOTES AND WORKSHOPS` | L53 | L72 | 71 |
+| C3 `BEST CAREER OPPORTUNITY` | L73 | L78 | 98 |
+| C4 `BIOGRAPHIES OF CAPTAINS OF INDUSTRY` | L79 | L260 | 1.614 |
+| C5 `ACKNOWLEDGMENTS` | L261 | L296 | 656 |
+| C6 `ACCLAIM FOR` | L297 | L424 | 993 |
+| C7 `LIBRARY OF CONGRESS CATALOGING-IN-PUBLICATION DATA` | L425 | L429 | 20 |
+| | | **total** | **3.479** |
+
+**El total cuadra con las 3.479 palabras que la vuelta 7 dejo medidas** para este
+tramo, asi que las siete piezas lo cubren entero sin hueco.
+
+### 3.b. EL FALLO, PIEZA A PIEZA, con la vara y con la cita
+
+| pieza | fallo | la vara que lo decide, y su cita |
+|---|---|---|
+| **C1** `FOOTNOTES` | **NO MINABLE** | son **dos referencias bibliograficas y sus dos enlaces de vuelta**, nada mas: `*1The Economist, October 7-13, 2006.` y `*2"One More Time: How Do You Motivate Employees?" Frederick Herzberg, Harvard Business Review, January-February 1968.` Cero medios, cero etapas, cero objetos de trabajo. **`D.27` no tiene sobre que aplicarse** |
+| **C2** `KEYNOTES AND WORKSHOPS` | **NO MINABLE, publicidad** | es la ficha comercial de los servicios de ghSMART: `Topic`, `Return on Investment`, `Features` con cinco vinetas y `Visit www.ghsmart.com to learn more.` **Las cinco vinetas SON un inventario**, y aun asi cae: son **lo que la consultora vende**, no medios que el lector ejecute. `EXTRACTOR.md` 9.1 restriccion 1 por analogia y `EXTRACTOR.md` 9: no hay nada que hacer |
+| **C3** `BEST CAREER OPPORTUNITY` | **NO MINABLE, oferta de empleo** | `Would you like to learn about the best job on the planet?` y `ghSMART is actively recruiting consultants in North America`. **Es un anuncio de contratacion de la propia consultora**, y la ironia de que aparezca en un libro sobre contratar no lo convierte en procedimiento |
+| **C4** `BIOGRAPHIES OF CAPTAINS OF INDUSTRY` | **NO MINABLE, y esta es la que habia que leer** | ver 3.c, medido y no supuesto |
+| **C5** `ACKNOWLEDGMENTS` | **NO MINABLE, paratexto** | `We sincerely appreciate all of the help that wise and generous people gave to us along this journey.` Agradecimientos y nombres. Cero imperativos dirigidos al lector |
+| **C6** `ACCLAIM FOR` | **NO MINABLE, promocionales** | citas de elogio con su firmante, del tipo `"Better hiring can win you races, and help you win in your career." WILLIAM INGRAHAM KOCH`. **Son juicios sobre el libro**, que es la definicion misma de postura |
+| **C7** `LIBRARY OF CONGRESS` | **NO MINABLE, datos de catalogacion** | `BALLANTINE and colophon are registered trademarks of Random House, Inc.` y la ficha de catalogo. Veinte palabras de metadato editorial |
+
+### 3.c. C4, LAS BIOGRAFIAS: LEIDAS ENTERAS Y MEDIDAS, no descartadas por el titulo
+
+**El encargo dice que estas 180 lineas son las que de verdad hay que leer, y que
+si ahi hay procedimiento es del libro. Las lei, y ademas lo mido, para que el
+fallo no dependa de mi impresion.**
+
+**MEDIDA 1: verbos en imperativo dirigidos al lector, en las 181 lineas.**
+
+    sed -n '79,259p' fuentes/smart_who/cap_07.md | grep -cE "^(Use|Make|Do |Ask|Build|Hire|Start|Write|Follow|Take|Avoid|Never|Always) "
+    0
+
+**CERO.**
+
+**MEDIDA 2: cuantas de las lineas con contenido son ficha de persona.**
+
+    lineas no vacias de L85 a L259        : 88
+    de ellas, NO son ficha de persona     : 19
+
+**Y las 19 tampoco son procedimiento**, porque se reparten en dos grupos y los dos
+estan comprobados uno a uno: **siete** son el bloque de estadisticas de la muestra
+mas su titulo, su nota aclaratoria y el rotulo `Captains of Industry`; y las **doce**
+restantes **son fichas de persona igual que las otras 69**, que solo se escapan del
+patron porque el nombre lleva tilde, inicial delante, comillas, tratamiento o
+titulo (`Gabriel Echavarría`, `J. Tomilson Hill`, `H. Wayne Huizenga`,
+`E. Neville Isdell`, `John W. "Jay" Jordan`, `Steven N. Kaplan, Dr.`,
+`Sir Terry Leahy`, `Andrew McNally IV`, `Kolia O'Connor`, `William Ingraham Koch`,
+`Paul Tudor Jones`, `Michael J. Ahearn`).
+
+**FALLO: NO MINABLE. Es un censo de fuentes, no un cuerpo de doctrina.** Cada
+entrada es nombre, cargo, empresa y un dato de resultado. La mas larga que hay:
+
+> `Selim Bassoul: chairman and CEO, Middleby Corporation. Grew value of his`
+> `company across five years over 3,500 percent while the S&P 500 grew 12 percent.`
+
+**Eso no es un procedimiento: es la credencial de un testigo.** Y la doctrina de
+ese testigo **ya esta extraida**, en `distinguir_perfil_guepardo_cordero`, que sale
+de P5 del tramo A y que lleva a Bassoul dentro como ejemplo nombrado, con
+`manual 3.5` aplicada.
+
+### 3.d. LO QUE C4 SI TIENE Y NO CABE EN NINGUN NODO, dicho como hallazgo
+
+**Las estadisticas de la muestra son una CIFRA DEL AUTOR de primer orden**, y son
+lo unico del tramo C que no es paratexto:
+
+> `Billionaires = over 20. This is the largest sample of billionaires ever`
+> `interviewed for a business book.`
+> `CEOs of multibillion-dollar companies = 25.`
+> `CEOs of entrepreneurial companies = 17.`
+> `Private equity investors who live or die based on investing in the right who = 23.`
+> `Other = 16, including 1 four-star general and former U.S. presidential candidate...`
+
+**`EXTRACTOR.md` 9 dice que una cifra del autor va en `atribuciones`, con autor,
+fuente y fecha de corte. Pero `atribuciones` vive DENTRO de un nodo, y esta cifra
+no describe un procedimiento: describe la BASE DE PRUEBA DEL LIBRO ENTERO.**
+
+**Esto NO lo resuelvo yo**, porque colgarla de un nodo cualquiera seria inventarle
+una casa. **Lo dejo como propuesta en mi reporte**, que es lo que `EXTRACTOR.md` 14
+me deja hacer: el extractor propone en su reporte y no se adjudica a si mismo.
+
+> **PROPUESTA AL FUNDADOR:** la composicion de la muestra de un libro es una
+> atribucion sin nodo propio. **Hoy no tiene sede** y por eso se pierde. Puede que
+> le toque a la ficha de `fuentes/FUENTES_CANONICAS.json` y no a un nodo, pero
+> **eso es mover una sede y yo no muevo sedes.**
+
+### 3.e. EL SALDO DEL TRAMO C
+
+    piezas juzgadas          : 7 de 7
+    minables                 : 0
+    palabras descartadas     : 3.479
+    palabras leidas para ello: 3.479
+
+**CERO CANDIDATOS DEL TRAMO C, y las siete piezas tienen su razon escrita y su
+cita.** El encargo pedia justamente eso, y su frase es la que vale como cierre:
+**un tramo descartado con su razon escrita es trabajo hecho; descartado por su
+titulo, no.**
+
+**Y lo que ya se veia desde fuera se confirmo, con una correccion:** el encargo
+suponia que `BIOGRAPHIES` era la que de verdad habia que leer, y acerto en que era
+la unica con duda razonable. **Donde no acerto la lista fue en las dos piezas de
+publicidad que no estaban en ella**, y las dos habrian pasado inadvertidas dentro
+de un descarte en bloque de `FOOTNOTES`.
