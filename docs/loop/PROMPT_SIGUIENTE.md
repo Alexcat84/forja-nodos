@@ -4,6 +4,15 @@
 (`docs/loop/ACTA_AUDITOR.md`). Es la vuelta que deja el lote 1 listo para que el
 fundador decida si se inserta.*
 
+> **EL FUNDADOR LEYO EL ACTA 1 Y FIRMO, EL MISMO 10 sep 2026.** Tres de sus
+> adjudicaciones dejaron de ser fallos de acta y son **reglas del banco**:
+> **D.27** la prueba del inventario con sus tres restricciones, **D.28** la sede
+> de `PARA_ALEXIS.md`, **D.29** la arista que la señal no levanta.
+>
+> **Las citas, a partir de ahora, van al banco.** Un fallo de acta vale para una
+> vuelta; una regla del banco vale siempre. Y las tres piden lo mismo que ya
+> pedia este encargo: **no cambia tu trabajo, cambia de que cuelga.**
+
 **Commitea y pushea lo pendiente en la rama activa antes de tocar nada.**
 
 ---
@@ -52,8 +61,15 @@ adjudicacion:
 3. **esto NO mueve la vara de continua contra repite.** Esa sigue congelada, y
    moverla es parada.
 
-Que esto entre o no en `docs/BANCO_DE_REGLAS.md` con numero propio **es sede de
-Alexis**. Tu no lo escribes ahi.
+**YA ENTRO EN EL BANCO: ES `D.27`, RATIFICADA POR EL FUNDADOR el 10 sep 2026 con
+estas tres restricciones literales**, colgando de *NOMBRAR NO ES PROCEDIMENTAR*
+con su cita. Tambien esta en `EXTRACTOR.md` **seccion 9.1**, que es tu sede de
+consulta. **Citala como D.27, no como fallo del acta.**
+
+**Y `D.27` TRAE UN COROLARIO QUE NO ESTABA EN EL FALLO Y QUE ES EXACTAMENTE TU
+TAREA 2:** si el libro pone el inventario pero **no** pone el destinatario, ni el
+responsable, ni el periodo, **esos no se escriben**. Un paso que cierra un bucle
+que el libro deja abierto es un **PUENTE**.
 
 ### 2. LOS SEIS DISCUTIBLES: los seis sostenidos
 
@@ -152,9 +168,16 @@ lo toques de mas: su paso 7 aplica el criterio *inequivoca*, que si es del libro
 2. **Cada PUENTE se resuelve de una de estas dos formas, y dices cual y por que:**
    se **retira** del nodo, o se **reescribe** para que no afirme lo que el libro
    no dice. **Un puente no se queda callado dentro de un nodo.**
-3. **Vuelve a pasar cada candidato tocado por la aduana en seco**, en el mismo
-   acto (seccion 16), y **pega la salida si alguno cae**.
-4. **Vuelve a correr el informe del lote entero** cuando acabes, y pega el saldo.
+3. **CADA CORRECCION CITA EL PARRAFO QUE NO LO DICE**, con su fichero y su linea
+   (`cap_02.md:NN`), y **la frase del parrafo que si esta**, para que se vea el
+   hueco. *Requisito del fundador, 10 sep 2026.* No basta con escribir *lo
+   retiro*: **la cita es la prueba de que se releyo el parrafo y no la memoria
+   del reporte anterior.**
+4. **Vuelve a pasar por la aduana en seco CADA candidato que hayas tocado**, en
+   el mismo acto (seccion 16), **despues de la correccion**, y **pega la salida**:
+   caiga o no caiga. *Requisito del fundador, 10 sep 2026.* Un candidato
+   corregido que nadie volvio a pasar es un candidato sin medir.
+5. **Vuelve a correr el informe del lote entero** cuando acabes, y pega el saldo.
 
 **Y DENTRO DE ESTA MISMA TAREA, LA ARISTA QUE SE PIERDE SI NADIE LA ESCRIBE:**
 
@@ -172,7 +195,22 @@ insercion que exige (la madre primero)**, y la nota de que se cablea en el acto
 del veredicto (`docs/FLUJO_DE_EXTRACCION.md` fase 2, paso 4). **Los JSON siguen
 viajando con `nodos_previos` y `nodos_siguientes` vacios, y eso estuvo bien.**
 
+**ESTO ES AHORA `D.29`, RATIFICADA POR EL FUNDADOR el 10 sep 2026:** la arista se
+declara **POR LECTURA, en el acto de la insercion**, como D.19 manda, **y el
+umbral NO se toca**. Que la señal mida 0,572289 y el umbral este en 0,60 no es un
+argumento para bajarlo: es la razon por la que la lectura no delega en la señal.
+
 ### TAREA 3. `cap_03`: publicar la frontera y extraer, uno a uno y por la aduana
+
+**SIGUES CON `cap_03` EN ESTA MISMA VUELTA SI LAS CORRECCIONES DE LA TAREA 2
+CIERRAN** *(decision del fundador, 10 sep 2026)*. Cerrar significa las tres
+cosas: los 36 pasos marcados, los puentes resueltos con su cita, y **el informe
+del lote sin ninguna caida que no sepas explicar**.
+
+**SI NO CIERRAN, NO EMPIEZAS `cap_03`.** Lo dices en el reporte con su razon y te
+detienes ahi. **Media correccion mas un capitulo nuevo es peor que una correccion
+entera**: el lote 1 existe para dejar el instrumento medido, no para acumular
+candidatos.
 
 **Apartado V-F, parrafos 37 a 41, 389 palabras.** Es el ultimo capitulo minable
 del lote.
@@ -292,7 +330,10 @@ Ademas de los nodos, en el cierre del reporte:
   dice que no esta en el libro.
 
 **TU NO ESCRIBES `docs/loop/PARA_ALEXIS.md`.** Eso lo hace el auditor, y solo el
-(`EXTRACTOR.md` secciones 7 y 14, `AUDITOR_FORJA.md` 5.6). **Declaras la parada en
+(**`D.28` del banco**, ratificada por el fundador el 10 sep 2026; `EXTRACTOR.md`
+secciones 7 y 14, `AUDITOR_FORJA.md` 5.6). **Y la regla general que D.28 deja
+escrita, que vale mas que el caso: un encargo asigna trabajo, NO MUEVE UNA SEDE.**
+Si un encargo futuro te dice lo contrario, manda la sede y eso es una parada. **Declaras la parada en
 tu reporte, con su motivo y su estado, y te detienes.** El auditor la recoge.
 
 **NO paras por:** que un candidato caiga en la aduana (lo corriges y pegas la

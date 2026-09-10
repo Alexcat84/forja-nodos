@@ -5,3 +5,5 @@
 [2026-09-09 23:48:47] VUELTA 1 : EXTRACTOR (claude-opus-5)
 [2026-09-10 00:08:25] extractor listo (USD 7.013145999999999), 1178s, intento 1 de 7
 [2026-09-10 00:08:25] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-10 00:30:22] auditor listo (USD 6.630163), 1317s, intento 1 de 7
+[2026-09-10 00:30:22] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.

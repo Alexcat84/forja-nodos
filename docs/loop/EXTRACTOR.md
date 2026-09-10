@@ -169,6 +169,49 @@ Y la prueba de que una linea es procedimiento, del propio manual: **una linea qu
 tarda siete pasos en ejecutarse es un procedimiento nombrado en una linea, y la
 prueba de que lo es, es que existe quien lo ejecuta.**
 
+### 9.1. LA PRUEBA DEL INVENTARIO, que es la cara POSITIVA de esa vara
+
+*`D.27` del banco, ratificada por el fundador el 10 sep 2026. Nacio en la vuelta
+1 leyendo material normativo, que es el caso dificil: sin ella un texto de
+directrices se lee entero como postura.*
+
+> Una linea normativa se vuelve procedimentable **cuando el libro pone su propio
+> inventario**: los medios, las etapas o los objetos que hay que revisar,
+> **nombrados uno a uno por el texto**. Entonces escribir los pasos es
+> **transcribir** ese inventario en imperativo, y no se inventa nada.
+>
+> **Cuando el libro solo pone el mandato y un adjetivo de adecuacion** (*medidas
+> apropiadas*, *politicas adecuadas*, *requisitos razonables*, *plazo
+> prudencial*), **cualquier paso que escribas lo escribes tu**, y un nodo cuyos
+> pasos invento el extractor no es del libro.
+
+**EL INVENTARIO PROPIO DEL LIBRO ES EL "PROCEDIMIENTO PROPIO" DE LA VARA MADRE.**
+Cuando el texto solo nombra el procedimiento de otro (remite a otra norma, a otro
+libro), estas en el caso literal de *solo el nombre de otro*.
+
+**LAS TRES RESTRICCIONES, y sin ellas la prueba no vale:**
+
+1. **El inventario que cuenta es de MEDIOS, ETAPAS u OBJETOS DE TRABAJO.** Un
+   inventario de **METAS** o de **FINES** no cuenta: **nombrar adonde hay que
+   llegar sigue siendo nombrar.**
+2. **El adjetivo de adecuacion en el sitio del criterio TUMBA, aunque haya
+   inventario.** Cuatro requisitos nombrados bajo un criterio de *requisitos
+   razonables* siguen siendo postura.
+3. **Esto NO mueve la vara de continua contra repite** (`AUDITOR_FORJA.md`
+   seccion 6). Es la vara de **que es un nodo**.
+
+**LAS DOS CARAS DE LA MISMA VARA:** el adjetivo de adecuacion delata la postura,
+**el inventario propio delata el procedimiento.**
+
+**Y NINGUNA VUELTA LA ESTRECHA NI LA ENSANCHA SIN CORRECCION DECLARADA DEL
+FUNDADOR.** Si tu lectura pide moverla, **eso es parada y se trae.**
+
+**EL COROLARIO QUE COSTO UNA PASADA DE CORRECCION ENTERA, y va aqui para que no
+cueste otra:** si el libro pone el inventario pero **no** pone el destinatario,
+ni el responsable, ni el periodo, **esos no se escriben**. Un paso que cierra un
+bucle que el libro deja abierto es un **PUENTE**, y un puente no se queda callado
+dentro de un nodo: **se retira o se reescribe.**
+
 | SI es un nodo | NO es un nodo |
 |---|---|
 | un procedimiento con sus pasos, su condicion de activacion y su entregable | una **advertencia**: es linea, no procedimiento (manual seccion 4, `P.11`) |

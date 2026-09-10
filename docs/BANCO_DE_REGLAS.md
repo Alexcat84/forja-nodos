@@ -660,3 +660,159 @@ decidio.
 
 **Lista negra: 367. Lista blanca: 32.** Sin solape, comprobado al importar el
 modulo y en `PruebaReglasDeId`.
+
+## D.27. LA PRUEBA DEL INVENTARIO (10 sep 2026, RATIFICADA POR EL FUNDADOR)
+
+*Nace en la vuelta 1 del bucle: la escribio el extractor en `docs/loop/REPORTE.md`
+2.A.2 y la declaro suya sin esconderlo (*"la prueba del inventario es mia, no de
+la casa. No la he leido en el manual ni en el banco"*). El auditor la adjudico en
+`ACTA_AUDITOR.md` 3.1 por extension de una regla escrita, con tres restricciones,
+y dejo dicho que **el banco es sede de Alexis** y que meterla aqui con numero
+propio no era suyo. **El fundador la ratifica hoy, con estas mismas tres
+restricciones, y le da numero.**
+
+**CUELGA DE `NOMBRAR NO ES PROCEDIMENTAR`, y no es una regla independiente:**
+
+> **NOMBRAR NO ES PROCEDIMENTAR.** Una linea solo cuenta como procedimiento
+> propio **si trae procedimiento propio, y no solo el nombre de otro**
+> (`EXTRACTOR.md` seccion 9; `P.5.1` de My-idea, congelada el 3 sep 2026 tras
+> cuatro caidas de clase en dos tandas; manual seccion 4).
+
+> **La prueba de que una linea es procedimiento es que EXISTE QUIEN LO EJECUTA**
+> (manual seccion 4, citado literal por `EXTRACTOR.md` seccion 9).
+
+**LA PRUEBA, que es la cara POSITIVA de esa vara y por eso hacia falta:**
+
+> Una linea normativa se vuelve procedimentable **cuando el libro pone su propio
+> inventario**: los medios, las etapas o los objetos que hay que revisar,
+> **nombrados uno a uno por el texto**. Entonces escribir los pasos es
+> **transcribir** ese inventario en imperativo, y no se inventa nada.
+>
+> **Cuando el libro solo pone el mandato y un adjetivo de adecuacion** (*medidas
+> apropiadas*, *politicas adecuadas*, *requisitos razonables*, *plazo
+> prudencial*), **cualquier paso que se escriba lo escribe el extractor**, y un
+> nodo cuyos pasos invento el extractor no es del libro.
+
+**EL INVENTARIO PROPIO DEL LIBRO ES EL "PROCEDIMIENTO PROPIO" DE LA FRASE
+MADRE.** Cuando el texto solo nombra el procedimiento de otro (parrafo 22 de
+`cap_02`, que remite a la resolucion 35/63 de 5 diciembre 1980), estamos en el
+caso literal de *solo el nombre de otro*. **No hace falta doctrina nueva para
+leer eso: hace falta leer la frase entera.**
+
+### Las tres restricciones, literales, y sin ellas esto no se ratifica
+
+**Sin restriccion esto ensancharia la vara, y ensanchar una vara es parada**
+(`AUDITOR_FORJA.md` 6.3).
+
+1. **EL INVENTARIO QUE CUENTA ES DE MEDIOS, ETAPAS U OBJETOS DE TRABAJO.** Un
+   inventario de **METAS** (parrafo 20) o de **FINES** (los cuatro desenlaces del
+   parrafo 19 de `cap_01`) **no cuenta**: nombrar adonde hay que llegar sigue
+   siendo nombrar.
+2. **EL ADJETIVO DE ADECUACION EN EL SITIO DEL CRITERIO TUMBA, AUNQUE HAYA
+   INVENTARIO.** Es lo que deja fuera el parrafo 23 con sus cuatro requisitos
+   (durabilidad, utilidad, fiabilidad, aptitud) bajo el criterio *requisitos
+   razonables*.
+3. **ESTO NO MUEVE LA VARA DE CONTINUA CONTRA REPITE** (`AUDITOR_FORJA.md`
+   seccion 6). Es la vara de **que es un nodo**, y la de adjudicar un par se
+   queda donde estaba.
+
+### Los ejemplares, que son de casa y estan medidos
+
+| parrafo | inventario | fallo |
+|---|---|---|
+| 21, segunda mitad | adulteracion de alimentos, afirmaciones falsas o capciosas, fraudes en servicios | **PROCEDIMIENTO** |
+| 26 | contratos uniformes que favorecen a una parte, no inclusion de derechos esenciales, condiciones excesivamente estrictas de credito | **PROCEDIMIENTO**: tres abusos nombrados son una lista que alguien recorre contra un contrato |
+| 20 | METAS, no medios | **POSTURA**, por la restriccion 1 |
+| 22 | remite a otro libro | **POSTURA**, y el ejemplar limpio de NOMBRAR NO ES PROCEDIMENTAR |
+| 23 | cuatro requisitos, pero el criterio es *requisitos razonables* | **POSTURA**, por la restriccion 2 |
+| 19 de `cap_01` | cuatro desenlaces: retirar y reemplazar, modificar, sustituir, compensar | **POSTURA**: son FINES, por la restriccion 1 |
+
+**LAS DOS CARAS DE LA MISMA VARA:** el adjetivo de adecuacion delata la postura,
+**el inventario propio delata el procedimiento.**
+
+**NINGUNA VUELTA ESTRECHA NI ENSANCHA ESTA PRUEBA SIN CORRECCION DECLARADA DEL
+FUNDADOR.** Si una lectura pide moverla, **eso es parada y se trae**.
+
+## D.28. `PARA_ALEXIS.md` ES DEL AUDITOR Y SOLO DEL AUDITOR (10 sep 2026, RATIFICADA POR EL FUNDADOR)
+
+*El extractor de la vuelta 1 trajo declarada una contradiccion real entre su
+encargo y sus reglas permanentes, sin haberla sufrido, y acerto en las dos
+mitades: en no traerla como parada sobre un supuesto que no ocurrio, y en decir
+que habria seguido `EXTRACTOR.md`. El auditor la resolvio en `ACTA_AUDITOR.md`
+3.5. **El fundador ratifica hoy la sede.***
+
+> **`docs/loop/PARA_ALEXIS.md` LO ESCRIBE EL AUDITOR, Y SOLO EL.**
+>
+> **El extractor que quiera parar lo declara en SU REPORTE**, con su motivo y su
+> estado, y se detiene. **El auditor lo recoge y lo enruta.**
+
+**EL MOTIVO NO ES JERARQUIA, ES QUE UNA PARADA ES UN JUICIO.** Quien la escribe
+en la sede que el fundador lee esta afirmando que el bucle no puede seguir, y esa
+afirmacion se verifica antes de llegar ahi. El auditor la verifica; por eso pasa
+por el.
+
+**Y LA REGLA GENERAL QUE ESTE CASO DEJA ESCRITA, que vale mas que el caso:**
+
+> **UN ENCARGO ASIGNA TRABAJO; NO MUEVE UNA SEDE.** La cabecera de
+> `EXTRACTOR.md` ya lo decia: *"Estas reglas valen SIEMPRE, ademas de lo que diga
+> el encargo."*
+
+**D.13 NO RESCATA AL ENCARGO POR SER MAS RECIENTE**, y conviene decir por que
+para que nadie lo intente: **una formula arrastrada en una plantilla no es una
+regla fechada.** D.13 arbitra entre reglas que alguien escribio como reglas, no
+entre una regla y un descuido de copia.
+
+**LA CORRECCION YA ESTA HECHA Y NO SE REHACE:** el `PROMPT_SIGUIENTE.md` de la
+vuelta 2 lleva la formula vigente desde que el auditor lo escribio. **El texto
+viejo no se borra:** vive en el `PROMPT_SIGUIENTE.md` de la vuelta 1, commiteado
+en `ea6c9f4` y antes, y citado en el acta.
+
+## D.29. LA ARISTA QUE LA SEÑAL NO LEVANTA SE DECLARA POR LECTURA, EN EL ACTO DE LA INSERCION (10 sep 2026, RATIFICADA POR EL FUNDADOR)
+
+*La vuelta 1 encontro el primer caso real de lo que D.19 predijo: una arista de
+jerarquia que ninguna señal levanta. **El fundador ratifica el remedio y NO mueve
+el umbral.***
+
+**EL CASO, medido:**
+
+    formular_codigo_comercializacion_empresarial   (parrafo 31, MADRE)
+        baja a
+    verificar_afirmaciones_ambientales_publicidad  (parrafo 30, HIJO)
+
+**En el sentido en que el hijo llegara de candidato, `paso_contra_nodo` mide
+`0,572289` y el umbral esta en `0,60`: NO va a levantar a nadie.**
+
+**NO SE TOCA EL UMBRAL, y el motivo esta medido, no supuesto.** El acta reprodujo
+las tres cifras que decidirian lo contrario:
+
+- el fixture del HIJO de esta casa mide **`0,657718` EN LOS DOS SENTIDOS**, que
+  redondea a los **0,658** que `CALIBRACION_D4.md` publica: **la cifra publicada
+  no esta contradicha, esta reproducida**;
+- la justificacion escrita del 0,60 sigue en pie: a 0,70 ese hijo entraria sin
+  arista declarada;
+- **este par no es un contraejemplo de la figura estrecha**: es una dependencia
+  de proceso, o sea del **97 por ciento** de aristas declaradas que la casa YA
+  tiene escrito que la señal 3 no caza.
+
+> **HAY UN HUECO DE DECLARACION, NO UNA CONTRADICCION.** Y el remedio ya estaba
+> escrito: **la aduana caza duplicados; la jerarquia la caza la LECTURA** (D.19).
+
+**LO QUE LA RATIFICACION AÑADE ES EL CUANDO, que es lo que faltaba:**
+
+> **LA ARISTA SE DECLARA EN EL ACTO DE LA INSERCION**, con su veredicto
+> (`docs/FLUJO_DE_EXTRACCION.md` fase 2, paso 4), **y la madre entra primero**.
+>
+> **UNA ARISTA QUE SOLO VIVE EN LA PROSA DE UN REPORTE SE PIERDE**, porque el
+> reporte se reescribe cada vuelta. Mientras el candidato espera en cuarentena,
+> la arista vive **en un bloque propio y titulado del reporte**, no suelta en un
+> parrafo.
+
+**Y LOS JSON EN CUARENTENA SIGUEN CON `nodos_previos` Y `nodos_siguientes`
+VACIOS**, que es lo correcto: una arista se cablea contra ids que ya viven, y en
+cuarentena todavia no vive ninguno.
+
+**LA ASIMETRIA DE LA SEÑAL 3 QUEDA ESCRITA COMO DATO, sin remedio y sin
+maquinaria:** `difflib.SequenceMatcher(a, b).ratio()` no es simetrico, y el mismo
+par mide `0,602410` en un sentido y `0,572289` en el otro. **No se toca el
+`ratio`, no se toca la señal, no se rehace la calibracion.** Se sabe, y por eso
+la lectura no delega en la señal.
