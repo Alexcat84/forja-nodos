@@ -5,5 +5,11 @@
     "autor": "Casa My Idea",
     "anio": "2026",
     "notas": "Fuente constitucional de esta forja. Copia literal en docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md"
+  },
+  "onu_consumidor": {
+    "titulo_completo": "Directrices de las Naciones Unidas para la Proteccion del Consumidor",
+    "autor": "Naciones Unidas, UNCTAD",
+    "anio": "2016",
+    "notas": "UNCTAD/DITC/CPLP/MISC/2016/1, Nueva York y Ginebra 2016. Aprobadas por la Asamblea General en la resolucion 39/248 de 16 abril 1985, ampliadas por ECOSOC 1999/7 de 26 julio 1999, revisadas y aprobadas por la Asamblea General 70/186 de 22 diciembre 2015. LOTE 1 del mundo 11, el de calibracion (D.24). Recorte verbatim en fuentes/onu_consumidor/, cuatro unidades: cap_00 portada y creditos, cap_01 apartado V-B parrafos 16 a 19, cap_02 apartado V-C parrafos 20 a 32, cap_03 apartado V-F parrafos 37 a 41."
   }
 }
