@@ -4954,7 +4954,9 @@ entero y no lo mismo que yo:
 | esqueleto del reporte abierto | 12:36:13 | commit `66c5cf1` |
 | frontera del Cap. 4 publicada | 12:44:28 | commit `8a70550` |
 | **Cap. 4 cerrado con sus 15 JSON dentro** | **13:08:08** | commit `6543488` |
-| **mi marca de cierre** | ver la linea del cierre, mas abajo | `git log` del ultimo commit |
+| **Cap. 5 declarado no empezado y las cuatro medidas talladas** | **13:14:51** | commit `c8beee8` |
+| **mi marca de cierre** | **13:16 aproximada, con este commit** | `git log --date=format:%H:%M:%S` del ultimo commit de la vuelta |
+| **total de la vuelta, de mi apertura a mi cierre** | **unos 45 minutos** | 12:31:14 a 13:16 |
 
 **EL TRAMO FUE EL CORRECTO, Y LA PRUEBA ES QUE EL SEGUNDO CAPITULO NO CUPO NI SE
 INTENTO:**
