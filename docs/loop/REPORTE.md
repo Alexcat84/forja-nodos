@@ -6236,3 +6236,179 @@ sobre las cuatro gastadas.
 **no lo he leido**, y el material de cierre de libro son 3.479 palabras que **no he
 juzgado**. **Estimar un capitulo sin leerlo es adivinar**, y el encargo lo prohibe
 en su propia TAREA 3.
+
+---
+---
+
+# VUELTA 8, lote 2 (smart_who), cierre del libro: cola del Cap. 5, Cap. 6 y material de cierre
+
+| | |
+|---|---|
+| fecha | **2026-09-10**, leida del instrumento (`date` da `Thu, Sep 10, 2026  6:09:33 PM`; `python -c "import datetime;print(datetime.date.today())"` da `2026-09-10`) |
+| rama | `extraccion-mundo-11` (`git rev-parse --abbrev-ref HEAD`) |
+| commit de apertura | `fc450ea` (`git rev-parse --short HEAD` tras commitear lo pendiente del arnes, seccion 1.1) |
+| arranque del arnes | `[2026-09-10 18:07:40] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena` (`tail docs/loop/loop.log`) |
+| lote | smart_who, LOTE 2 |
+| inserciones autorizadas en esta vuelta | **CERO.** `MODO_INSERCION=cuarentena`, y el encargo lo repite: la insercion es una autorizacion del fundador, no un default |
+| racha REPORTE / CLASE / CIFRA al abrir | **0 / 0 / 0**, reiniciadas por la decision escrita del 10 sep 2026 (`docs/loop/paradas/2026-09-10-credito-punteros-de-linea.md`) |
+
+### El estado al abrir, medido antes de la primera operacion (seccion 4)
+
+| medida | instrumento | salida |
+|---|---|---|
+| nodos | `python forja.py gate` | `nodos verificados: 52` |
+| aristas | conteo sobre `dataset/nodos.jsonl` | `nodos_siguientes: 9  nodos_previos: 9` |
+| prueba de aceptacion | `python tests/test_aceptacion.py` | `total: 72 pruebas, 0 fallos, 0 errores` |
+| bitacora | `python forja.py rancios` | `BLOQUE DE VIGENCIA VERDE.` / `veredictos comprobados: 32` |
+
+**Las cuatro coinciden con lo que el encargo anuncia** (52 nodos, 9 aristas, 72 de
+72, 32 veredictos). **Cero discrepancias en la apertura.**
+
+### Las tareas encargadas
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 0 | las aristas de serie del lote 2 (`D.37` sobre lo ya insertado), BLOQUEANTE | ABIERTA | |
+| 1 | tramo A, cola del Cap. 5 (`cap_06.md` L247 a L455) | ABIERTA | |
+| 2 | tramo B, el Cap. 6 (`cap_07.md` L9 a L41) con el borde declarado | ABIERTA | |
+| 3 | tramo C, material de cierre (`cap_07.md` L43 a L429), JUZGADO antes que cortado | ABIERTA | |
+| 4 | informe del lote y commits | ABIERTA | |
+| 5 | cierre del lote 2 con sus cuatro medidas por capitulo | ABIERTA | |
+
+### Discutibles marcados ANTES de saber si acierto
+
+(se anexan aqui segun aparecen, no al final)
+
+
+---
+
+## TAREA 0. LAS ARISTAS DE SERIE DEL LOTE 2 (`D.37` sobre lo ya insertado)
+
+### 0.a + 0.b. LA PREVISION, PUBLICADA ANTES DE DECLARAR NI UNA
+
+**Esta seccion se escribio y se commiteo ANTES de correr el primer
+`python forja.py arista`.** El encargo lo pide con su razon: una cuenta escrita
+despues del trabajo se parece demasiado a lo que salio.
+
+**EL BARRIDO DE LOS 52, corrido antes de mirar cabeza ninguna**, con su salida
+pegada (`D.35`):
+
+    TITULO abastecer_flujo_candidatos | Abastecerse de candidatos jugadores A, con sus seis vias
+    TITULO abordar_cinco_efes_venta | Abordar las cinco efes de la venta hasta que el candidato firme
+    TITULO aplicar_metodo_ghsmart_contratacion | Aplicar los cuatro pasos del metodo de ghSMART para contratar
+    TITULO aplicar_tacticas_maestras_entrevista | Aplicar las cinco tacticas maestras de la entrevista cronologica
+    TITULO conducir_entrevista_cronologica_trayectoria | Conducir la entrevista cronologica de trayectoria, con sus cinco preguntas por capitulo
+    TITULO conducir_llamadas_referencia | Conducir las siete llamadas de referencia y descifrar su codigo
+    TITULO crear_tarjeta_puntuacion_puesto | Crear la tarjeta de puntuacion de un puesto, con sus cuatro pasos
+    TITULO cribar_candidatos_entrevista_telefonica | Cribar candidatos con la entrevista telefonica de criba y sus cuatro preguntas
+    TITULO planificar_cinco_olas_venta | Planificar la venta en las cinco olas del proceso de contratacion
+    TITULO seleccionar_jugador_cuatro_entrevistas | Seleccionar al jugador A con las cuatro entrevistas, en seis pasos
+    TITULO valorar_logro_tres_comparaciones | Valorar un logro con las tres comparaciones
+
+**ONCE titulos enumeran.** Y el encargo avisa de que el titulo no basta, asi que
+**lei los pasos de los 52, uno a uno**, y aparecio una doceava:
+`vender_puesto_jugador`, que **no anuncia numero en el titulo** y sin embargo
+enumera las cinco efes en su paso 1 y las cinco olas en su paso 2.
+
+**LAS CUATRO QUE ENUMERAN Y NO DAN NI UNA ARISTA, dichas antes para que no se lean
+como un olvido:**
+
+| cabeza | por que no da arista |
+|---|---|
+| `conducir_entrevista_cronologica_trayectoria` | sus cinco preguntas por capitulo **no tienen nodo ninguna**: viven como pasos 7 a 12 de la propia cabeza |
+| `conducir_llamadas_referencia` | ni las siete llamadas, ni sus cinco preguntas, ni los tres codigos tienen nodo propio |
+| `cribar_candidatos_entrevista_telefonica` | sus cuatro preguntas viven como pasos 4 a 8 de la propia cabeza, sin nodo |
+| `valorar_logro_tres_comparaciones` | sus tres comparaciones son sus tres pasos, y ninguna tiene nodo |
+
+**Y `crear_tarjeta_puntuacion_puesto` NO SE TOCA**: sus cuatro pasos se cablearon
+al insertar y ya figuran en las 9 aristas de apertura.
+
+### LAS 28 ARISTAS ESPERADAS, cabeza por cabeza
+
+**Suelo del encargo: 13, de las tres cabezas que el hallazgo nombra. Mi prevision
+es 28**, porque el barrido de 0.b levanto cuatro cabezas mas.
+
+| # | cabeza | paso | hijo esperado |
+|---:|---|---:|---|
+| | **A. `abastecer_flujo_candidatos`, seis vias** | | |
+| 1 | | 1 | `pedir_referencias_red_personal` |
+| | | 2 | `pedir_referencias_empleados` **YA DECLARADA, no se cuenta** |
+| 2 | | 3 | `nombrar_delegados_amigos_casa` |
+| 3 | | 4 | `contratar_reclutadores_externos` |
+| 4 | | 5 | `contratar_investigadores_reclutamiento` |
+| 5 | | 6 | `crear_sistema_captura_seguimiento_candidatos` |
+| | **B. `abordar_cinco_efes_venta`, cinco efes** | | |
+| 6 | | 2 | `vender_encaje_candidato_empresa` |
+| 7 | | 3 | `vender_cambio_trabajo_familia` |
+| 8 | | 4 | `vender_libertad_candidato` |
+| 9 | | 5 | `vender_fortuna_candidato` |
+| | | 6 | **la efe de la diversion NO tiene nodo.** Comprobado, ver mas abajo |
+| | **C. `aplicar_metodo_ghsmart_contratacion`, cuatro pasos** | | |
+| 10 | | 1 | `crear_tarjeta_puntuacion_puesto` |
+| 11 | | 2 | `abastecer_flujo_candidatos` |
+| 12 | | 3 | `seleccionar_jugador_cuatro_entrevistas` |
+| 13 | | 4 | `vender_puesto_jugador` |
+| | **D. `seleccionar_jugador_cuatro_entrevistas`, seis pasos** (levantada en 0.b) | | |
+| 14 | | 1 | `cribar_candidatos_entrevista_telefonica` |
+| 15 | | 2 | `conducir_entrevista_cronologica_trayectoria` |
+| 16 | | 3 | `asignar_entrevistas_enfocadas_equipo` |
+| | | 4 | `calificar_tarjeta_puntuacion_habilidad_voluntad` **YA DECLARADA** |
+| 17 | | 5 | `conducir_llamadas_referencia` |
+| | | 6 | `decidir_contratacion_final` **YA DECLARADA** |
+| | **E. `planificar_cinco_olas_venta`, cinco olas** (levantada en 0.b) | | |
+| 18 | | 4 | `vender_abastecimiento_candidatos` |
+| 19 | | 5 | `vender_final_entrevista` |
+| 20 | | 6 | `sostener_contacto_oferta_aceptacion` |
+| 21 | | 7 | `celebrar_aceptacion_primer_dia` |
+| 22 | | 8 | `disenar_incorporacion_cien_dias` |
+| | **F. `aplicar_tacticas_maestras_entrevista`, cinco tacticas** (levantada en 0.b) | | |
+| 23 | | 1 | `interrumpir_candidato_escucha_reflexiva` |
+| 24 | | 2 | `valorar_logro_tres_comparaciones` |
+| 25 | | 3 | `distinguir_empuje_tiron_salidas_laborales` |
+| | | 4 | **la tactica de pintar un cuadro NO tiene nodo**, y lo dice el `resumen_teorico` de la propia cabeza |
+| 26 | | 5 | `frenar_incoherencias_entrevista` |
+| | **G. `vender_puesto_jugador`, sin numero en el titulo** (levantada en 0.b) | | |
+| 27 | | 1 | `abordar_cinco_efes_venta` |
+| 28 | | 2 | `planificar_cinco_olas_venta` |
+
+    aristas esperadas, publicadas antes de declarar : 28
+
+### LAS TRES AUSENCIAS COMPROBADAS, que el encargo pide comprobar y decir
+
+**1. LA EFE DE LA DIVERSION NO TIENE NODO.** El paso 6 de `abordar_cinco_efes_venta`
+la escribe entera, y **ningun id de los 52 la despliega**. Las otras cuatro efes si
+viven: `vender_encaje_candidato_empresa`, `vender_cambio_trabajo_familia`,
+`vender_libertad_candidato`, `vender_fortuna_candidato`. **Cuatro de cinco.** No lo
+escribo como falta del lote 2: lo escribo como hueco medido, y **queda en la cola**.
+
+**2. LA TACTICA CUATRO, PINTAR UN CUADRO, TAMPOCO.** Y aqui no hace falta que lo
+juzgue yo, porque **una vuelta anterior ya lo dejo escrito y razonado dentro del
+propio nodo**. Pegado del `resumen_teorico` de `aplicar_tacticas_maestras_entrevista`:
+
+> `Cuatro de las cinco tacticas tienen procedimiento propio y viven ademas en su`
+> `nodo; la cuarta, pintar un cuadro, no lo tiene: su criterio es entenderlo de`
+> `verdad, que es un adjetivo de adecuacion en el sitio del criterio, y su unico`
+> `medio es ponerse curioso, que es el procedimiento de otro nodo.`
+
+**Es `D.27` aplicada y publicada en su sitio.** Coincido con ella y no la reabro.
+
+**3. `pedir_referencias_empleados`, `calificar_tarjeta_puntuacion_habilidad_voluntad`
+y `decidir_contratacion_final` YA ESTAN DECLARADAS**, y por eso las tres cabezas de
+0.a suman cinco, cuatro y cuatro, y no seis, cinco y cuatro.
+
+### LOS TRES DISCUTIBLES DE ESTA TAREA, marcados ANTES de declarar nada
+
+**Los tres son aristas que NO declaro**, por la regla 0.d del encargo: *si dudas de
+si un nodo es la parte que ese paso nombra, no la declares.* **Una arista de mas es
+mas cara que una de menos, porque la de menos se ve y la de mas se hereda.**
+
+| # | la arista que NO declaro | por que dudo |
+|---:|---|---|
+| D1 | `organizar_jornada_entrevistas_candidato` pasos 3, 5 y 7 hacia `conducir_entrevista_cronologica_trayectoria`, `asignar_entrevistas_enfocadas_equipo` y `calificar_tarjeta_puntuacion_habilidad_voluntad` | los pasos **nombran a los tres hijos con toda claridad**, pero la cabeza es un **horario**, no una serie: su titulo no dice cuantas partes tiene, dice de donde a donde va el dia. Y **los tres hijos ya cuelgan o van a colgar de `seleccionar_jugador_cuatro_entrevistas`**, que si es la serie que los enumera. Declararlas daria **un segundo padre a tres hijos** para modelar un calendario |
+| D2 | `seleccionar_jugador_cuatro_entrevistas` paso 1 hacia `profundizar_respuestas_preguntas_curiosidad` | el paso 1 **si nombra** el marco de que, como y cuentame mas, pero **como tecnica dentro del paso de la criba**, no como uno de los seis pasos. Declararla convertiria una serie de **seis** en una cabeza de **siete hijos**, y eso rompe la cuenta que el propio titulo publica |
+| D3 | `conducir_entrevista_cronologica_trayectoria` paso 12 hacia `distinguir_empuje_tiron_salidas_laborales` | el paso 12 es la **pregunta** (por que dejaste ese trabajo) y el hijo es la **tactica** que clasifica su respuesta. El hijo ya va a colgar de `aplicar_tacticas_maestras_entrevista` paso 3, que es donde el libro lo pone. Aqui seria por vecindad de tema |
+
+**`profundizar_respuestas_preguntas_curiosidad` se queda huerfano y lo digo**: lo
+nombran de pasada `seleccionar_jugador_cuatro_entrevistas` paso 1 y
+`asignar_entrevistas_enfocadas_equipo` paso 6, y **ninguna cabeza lo enumera como
+parte**. No le invento un padre.
