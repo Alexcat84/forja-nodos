@@ -2889,17 +2889,19 @@ leyeron sobre `ce3201f`, que solo trae artefactos del arnes y no toca el grafo.*
 
 | # | tarea | estado |
 |---:|---|---|
-| 1 | los registros del ACTA 4 (correccion declarada, cuarta especie de puente, nueve adjudicaciones, dos aristas pendientes) | *pendiente* |
-| 2 | el `cap_03` entero: frontera, candidatos, informe y commit | *pendiente* |
-| 3 | el `cap_04` entero, **solo si el `cap_03` quedo cerrado** | *pendiente* |
-| 4 | las cuatro medidas del cierre, desglosadas por capitulo | *pendiente* |
+| 1 | los registros del ACTA 4 (correccion declarada, cuarta especie de puente, nueve adjudicaciones, dos aristas pendientes) | **CERRADA.** 1.a hecha en el fichero; 1.b y 1.c talladas y propuestas, con la sede declarada; 1.d en bloque propio |
+| 2 | el `cap_03` entero: frontera, candidatos, informe y commit | **CERRADA como Cap. 2, `Scorecard`** (ver A.4). 139 bloques, **7 candidatos, los 7 entrarian**. Commit `0a94d12` precedente |
+| 3 | el `cap_04` entero, **solo si el `cap_03` quedo cerrado** | **CERRADA como Cap. 3, `Source`** (ver A.4). 99 bloques, **8 candidatos, los 8 entrarian** |
+| 4 | las cuatro medidas del cierre, desglosadas por capitulo | **CERRADA.** 1,342 por mil; 5,68 por ciento de puentes; 0 veredictos; 37 minutos y medio |
 
 ## A.3. DISCUTIBLES MARCADOS ANTES DE SABER SI ACIERTO
 
 *Se anexan aqui segun aparecen, **antes** de conocer el veredicto del auditor
 (seccion 8). Ordenados al cierre por lo que costarian si fallo.*
 
-*(se rellena por anexion a lo largo de la vuelta)*
+**CINCO, y los cinco estan tallados en C.4 con lo que cuestan si fallo.** El
+primero y mas caro esta ademas publicado entero en **A.4**, antes de la primera
+frontera: **la unidad de esta vuelta es el CAPITULO y no el FICHERO.**
 
 ---
 
@@ -3935,3 +3937,281 @@ de su recuadro. **Ninguna se cablea**: ningun id de estos vive en el dataset.
     fuera de la numeracion, hijo del punto 6:
                    reservar_media_hora_semanal_talento           (L411 a L419 del cap_03.md)
     compresiones de esta numeracion: UNA, la cabeza. Ninguna otra.
+
+---
+
+## TAREA 4. LAS CUATRO MEDIDAS DEL CIERRE, DESGLOSADAS POR CAPITULO
+
+*Todas recomputadas al cierre, ninguna copiada de arriba (seccion 4).*
+
+### 4.a. CANDIDATOS POR MIL PALABRAS
+
+**DOS DENOMINADORES, Y DIGO CUAL ES CUAL**, porque A.4 midio que aqui el fichero
+no es el capitulo y el encargo pide el fichero para poder comparar con el lote 1.
+
+**POR CAPITULO, que es el denominador honesto:**
+
+| unidad | palabras | candidatos | por mil palabras |
+|---|---:|---:|---:|
+| **Cap. 2**, `Scorecard` | 6.286 | **7** | **1,114** |
+| **Cap. 3**, `Source` | 4.895 | **8** | **1,634** |
+| **total de la vuelta** | **11.181** | **15** | **1,342** |
+
+**POR FICHERO, que es el que compara con la linea base del lote 1** (y que mezcla
+Cap. 2 con Cap. 3 en un fichero y Cap. 3 con Cap. 4 en el otro):
+
+| fichero | palabras | candidatos que salieron de el | por mil |
+|---|---:|---:|---:|
+| `cap_03.md` | 10.696 | **14** (7 del Cap. 2, 7 del tramo del Cap. 3) | **1,309** |
+| `cap_04.md` | 6.441 | **1** (solo del tramo L9 a L29) | **0,155** |
+
+**LA SEGUNDA FILA ES ENGAÑOSA Y POR ESO LLEVA ESTA LINEA:** de `cap_04.md` solo
+se leyeron 21 lineas de 321, porque **el resto es Cap. 4 y este encargo no lo
+nombra**. Su 0,155 no mide un capitulo pobre, mide un fichero leido al 8 por
+ciento. **La cifra util de esa fila es que 512 palabras dieron un candidato.**
+
+**EL CONTRASTE CON LAS DOS CIFRAS QUE ESTA CASA YA TIENE PUBLICADAS:**
+
+| tanda | por mil palabras |
+|---|---:|
+| lote 1, sobre lo minado (`CIERRE_LOTE_1.md` 3.2) | 4,97 |
+| lote 1, sobre el libro entero | 3,42 |
+| lote 2, vuelta 4 (`cap_01` mas `cap_02`) | **0,415** |
+| **lote 2, vuelta 5 (Cap. 2 mas Cap. 3)** | **1,342** |
+
+> **LA TASA DE ESTE LIBRO SE TRIPLICA AL PASAR DE SUS CAPITULOS NARRATIVOS A SUS
+> CAPITULOS DE METODO, Y SIGUE SIENDO UN TERCIO DE LA DEL LOTE 1.**
+
+**Y ESTO CORRIGE UNA PROYECCION QUE YO MISMO PUBLIQUE EN LA VUELTA 4.** Alli
+escribi que *"a 0,415 por mil, las 557.501 palabras de la bandeja darian del orden
+de 231 candidatos"*. **Con 11.181 palabras mas medidas, esa cifra sube: a 1,342
+por mil darian del orden de 748.** No borro la vieja: **la vuelta 4 midio dos
+capitulos de introduccion y esta ha medido dos de metodo**, y la diferencia entre
+0,415 y 1,342 **es el genero del capitulo, no un error de nadie.** **Sigo sin
+proyectar mas que eso**, y con el mismo aviso: son cuatro capitulos de 164.
+
+### 4.b. PASOS INVENTADOS SOBRE PASOS ESCRITOS
+
+| capitulo | pasos escritos | transcripcion | **puente** | **por ciento** |
+|---|---:|---:|---:|---:|
+| **Cap. 2**, `Scorecard` | **35** | 34 | **1** | **2,86** |
+| **Cap. 3**, `Source` | **53** | 49 | **4** | **7,55** |
+| **la vuelta** | **88** | **83** | **5** | **5,68** |
+
+*(pasos contados del fichero al cierre con `len(pasos_accionables)`, mas los 4
+retirados que la cuenta final ya no ve. El puente CORREGIDO se cuenta, y el
+denominador son pasos ESCRITOS: adjudicacion 5 del ACTA 4)*
+
+**FUERA DE ESTA TABLA, y declarados para que nadie los tenga que descubrir:**
+
+| | Cap. 2 | Cap. 3 |
+|---|---:|---:|
+| puentes en prosa (`resumen_teorico`), retirados | **1** | 0 |
+| recortes por prudencia sin ser puente claro | 1 | 0 |
+| omisiones completadas | 1 | 1 |
+
+**LA SERIE ENTERA DE ESTA CASA, con el genero de cada tanda al lado:**
+
+| tanda | pasos | puentes | tasa | genero del texto |
+|---|---:|---:|---:|---|
+| lote 1 | 36 | 13 | **36,11** | normativo, delgado en inventario |
+| lote 2, `cap_02` | 16 | 1 | **6,25** | narrativo con dos listas |
+| lote 2, Cap. 2 | 35 | 1 | **2,86** | metodo, con recuadro y dos listas de 24 |
+| lote 2, Cap. 3 | 53 | 4 | **7,55** | metodo **entretejido con ocho casos** |
+| **acumulado de las tres del lote 2** | **104** | **6** | **5,77** | |
+
+**LO QUE EL ENCARGO PEDIA MEDIR ERA LA TASA DE UN CAPITULO GRUESO, Y AQUI ESTA:
+con 88 pasos escritos el denominador ya no es ruidoso**, y la respuesta es que la
+tasa **no depende del grosor**. Los dos capitulos de esta vuelta son de tamaño
+comparable y del mismo libro, y uno triplica al otro. **Lo que la mueve esta en
+3.g y es el caso mezclado con el mandato.**
+
+### 4.c. VEREDICTOS ESCRITOS
+
+**CERO, y es lo correcto.** `wc -l bitacora/VEREDICTOS.jsonl` al cierre da **2**,
+los dos mismos con los que abri. **Un veredicto lo escribe la aduana en el acto de
+insertar** (seccion 14) y **en esta corrida no hay insercion autorizada** (`D.26`).
+
+**LO QUE SI DEJO ESCRITO SON DOS VEREDICTOS DE LECTURA, listos para el dia que se
+autorice:** el de 3.i para el par de 0,730, y el que la vuelta 4 dejo en su 3.d.
+**Ninguno de los dos toca la bitacora.**
+
+**Y EL AVISO QUE VALE MAS QUE LOS DOS:** el saldo *17 ENTRARIAN, 0 BLOQUEARIAN*
+**deja de ser cierto con la primera insercion**. Los 38 pares medidos en 3.i son
+**38 veredictos de lectura que alguien va a tener que escribir**, y no cero.
+
+### 4.d. CUANTO TARDO, Y SI EL TRAMO FUE EL CORRECTO
+
+| | |
+|---|---|
+| apertura | `2026-09-10T15:12:41Z` |
+| cierre | `2026-09-10T15:50:17Z` |
+| **duracion** | **37 minutos y medio** |
+
+**LA UNICA CIFRA CON QUE COMPARAR, del encargo:** *la vuelta 4 gasto 11 minutos y
+medio en las 3.863 palabras del `cap_02`.*
+
+| vuelta | palabras leidas | minutos | **palabras por minuto** |
+|---|---:|---:|---:|
+| 4 | 4.824 | 11,5 | **420** |
+| **5** | **17.137** (los dos ficheros enteros) | **37,5** | **457** |
+
+**EL RITMO NO SE DEGRADO CON EL VOLUMEN: subio un 9 por ciento.** Y la respuesta
+a la pregunta 2 del encargo, que era *si un capitulo de 10.696 palabras cabe en una
+vuelta*:
+
+> **CABE, Y CUPIERON DOS.** Pero la pregunta hay que reformularla con lo que A.4
+> midio: **no cupo un capitulo de 10.696 palabras, porque ese capitulo no
+> existe.** Cupieron **el Cap. 2 (6.286) y el Cap. 3 (4.895)**, y se leyeron
+> ademas las 5.900 palabras del Cap. 4 lo justo para saber donde cortar.
+
+**EL TRAMO: 15 candidatos, que es EXACTAMENTE EL TECHO** de los *entre cinco y
+quince* de la seccion 12.4.
+
+| | |
+|---|---:|
+| candidatos de la vuelta | **15** |
+| tramo permitido | 5 a **15** |
+| candidatos en la bandeja al cierre | **17** |
+
+**EL TRAMO FUE EL CORRECTO Y NO HABIA MARGEN PARA MAS.** Si el Cap. 3 hubiera
+dado un noveno procedimiento, **habria tenido que dejarlo en cola**, y lo digo
+ahora porque es la clase de cosa que se justifica sola despues. **El disparador
+de la seccion 12.4 no se ha disparado**: esta vuelta cierra su reporte.
+
+**Y LA ADJUDICACION 8 APLICADA: el disparador NO se lee en los dos sentidos.**
+Que esta vuelta haya cabido **no autoriza a subir el tramo** en la siguiente.
+
+---
+
+# EL CIERRE DE LA VUELTA 5
+
+## C.1. LAS GUARDAS, CORRIDAS AL CIERRE
+
+| guarda | salida |
+|---|---|
+| `python forja.py gate` | **GATE VERDE.** nodos verificados: 8. 12 guardas |
+| `python forja.py guiones` | **BARRIDO DE GUIONES VERDE:** cero guiones largos y cero guiones medios |
+| `python tests/test_aceptacion.py` | **total: 65 pruebas, 0 fallos, 0 errores** |
+| el hook | **corrio en los dos commits de capitulo y en los dos dio verde.** No se salto |
+
+## C.2. EL ESTADO AL CIERRE, RECOMPUTADO AL CIERRE
+
+| medida | apertura | **cierre** | lo movio |
+|---|---:|---:|---|
+| nodos vivos | 8 | **8** | nada: **cero inserciones** |
+| pasos vigentes en el grafo | 43 | **43** | nada |
+| extremos de arista | 4 | **4** | nada |
+| veredictos en bitacora | 2 | **2** | nada |
+| **candidatos en `cuarentena/smart_who/`** | 2 | **17** | **los 15 de esta vuelta** |
+| pasos en la bandeja de cuarentena | 16 | **100** | los 84 nuevos |
+
+**EL GRAFO NO SE HA MOVIDO UN MILIMETRO, Y ESE ES EL RESULTADO CORRECTO.** La
+insercion es una autorizacion del fundador, no un default (`D.26`), y en esta
+corrida no la ha dado.
+
+## C.3. LO QUE ESTA VUELTA DEJA MEDIDO, punto por punto del encargo
+
+| # | lo que el encargo pedia | lo medido | donde |
+|---:|---|---|---|
+| 1 | **la tasa de puentes de un capitulo GRUESO** | **2,86 y 7,55 por ciento**, sobre 88 pasos escritos. **Y la conclusion es que el grosor no la explica** | 2.g, 3.g, 4.b |
+| 2 | **si un capitulo de 10.696 palabras cabe en una vuelta** | **cabe, y cupieron dos**, en 37 minutos y medio, a 457 palabras por minuto. **Y el capitulo de 10.696 palabras no existe** | 4.d, A.4 |
+| 3 | **cuantos vecinos levanta la aduana con hermanos en la bandeja** | **38 de 272 pares.** 34 por familia, 10 por paso contra nodo, **0 por similitud**. Cuatro pares que **solo** ve la señal 3, dos con familia CERO | 3.i |
+| 4 | **si la prueba del inventario aguanta en un genero distinto** | **aguanta en los dos, y encontro sus dos bordes** | abajo |
+
+**SOBRE EL PUNTO 4, que es el que pedia juicio y no cuenta:**
+
+**AGUANTA, y en esta vuelta hizo trabajo real en las dos direcciones:**
+
+- **Tumbo lo que tenia que tumbar** aunque el material fuera abundante: las
+  cuatro vinetas de L235 a L243 son un inventario impecable **de FINES**, y la
+  restriccion 1 las tira. **Es el ejemplar mas limpio de esa restriccion que ha
+  visto esta casa.**
+- **Dejo entrar lo que tenia que dejar entrar** aunque el mandato viniera con
+  adjetivo: el punto 3 del recuadro trae *as many as you think appropriate*
+  **y 24 objetos nombrados uno a uno**, y la lectura de 2.b lo resuelve poniendo
+  el adjetivo en el sitio de la cantidad y no en el del criterio.
+
+**Y ENCONTRO DOS BORDES QUE NO ESTABAN ESCRITOS, los dos declarados y ninguno
+adjudicado por mi:**
+
+1. **El antipatron pasa la prueba del inventario y no es un nodo** (3.c). El
+   proceso tradicional de contratacion tiene sus etapas nombradas una a una, en
+   orden y con desenlace. Lo tumba **otra** vara, la de que es un nodo: *pasos
+   que alguien puede ejecutar*, y **nadie ejecuta un antipatron.**
+2. **La prueba del inventario no dice que hacer cuando el inventario lo aporta un
+   TERCERO** (3.f). Este capitulo esta narrado en tercera persona y sus medios
+   llegan contados por quien los usa. **La linea que aplique esta escrita entera
+   en 3.f para que se pueda tumbar.**
+
+## C.4. LOS CINCO DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO
+
+*Ordenados por lo que costarian si fallo, que es como el encargo los pide.*
+
+| # | el discutible | si fallo, cuesta |
+|---:|---|---|
+| **1** | **la unidad de la vuelta es el CAPITULO y no el FICHERO** (A.4). Extraje el Cap. 2 y el Cap. 3, no `cap_03.md` y `cap_04.md`, y deje el Cap. 4 en cola | **la organizacion de la vuelta entera**: dos fronteras, dos commits y las dos filas de 4.a se reagrupan. **No cuesta reextraer: el material leido es el mismo** |
+| **2** | **`reservar_media_hora_semanal_talento` y `evaluar_cultura_empresa_adjetivos` son hijos de un punto numerado, no segundas compresiones** (3.b) | **dos nodos, uno por capitulo.** Y si caen, caen los dos: la simetria es deliberada |
+| **3** | **la linea del inventario contado por un tercero** (3.f): los medios que el libro manda entran aunque los ilustre quien los usa | **tres pasos de `crear_sistema_captura_seguimiento_candidatos`**, y con ellos el nodo |
+| **4** | **`desplegar_estrategia_tarjeta_puntuacion` es procedimiento y no postura** (2.b), pese a estar en prosa laudatoria y en indicativo | **un nodo** |
+| **5** | **el punto 3 del recuadro entra pese al adjetivo de adecuacion** (2.b), porque el adjetivo esta en el sitio de la cantidad y no en el del criterio | **un nodo**, y ademas es el que carga las dos listas de 24 |
+
+**Y UNO QUE NO ES DISCUTIBLE SINO CORRECCION DE ALGO QUE YO MISMO PUBLIQUE HOY:**
+en 2.h escribi que `familia_id` medía **0,333 en todos** los pares que levantan.
+**Al remedirlo sobre los 17 salen cuatro valores distintos** (0,0, 0,2, 0,333 y
+0,4). **La medicion de 2.h era correcta y su generalizacion no.** Lo dejo dicho
+en 3.i con las dos cifras, sin borrar la primera.
+
+## C.5. LO QUE PROPONGO, SIN ADJUDICARME NADA
+
+*Seccion 14: el extractor PROPONE en su reporte. Ninguna de estas la ejecuto yo.*
+
+1. **LAS DOS ENTRADAS AL BANCO QUE EL ENCARGO ME MANDO ESCRIBIR Y NO ESCRIBI**
+   (1.b y 1.c), talladas enteras y listas para pegar. **La sede es de Alexis y un
+   encargo no mueve una sede (`D.28`).**
+2. **EL RECORTE DE `fuentes/smart_who/` NO CUMPLE `EXTRACTOR.md` 17.** La regla
+   dice *un fichero por capitulo* y los siete ficheros se cortan por tamaño. **O
+   se rehace el recorte, o la regla se reescribe para decir que la cabecera
+   nombra la unidad INICIAL.** No toco ninguna de las dos.
+3. **LA TERCERA COMPROBACION DE APERTURA MIRA DONDE NO ESTA EL PROBLEMA.**
+   `head -8` lee la cabecera y **el desajuste vive en la ultima linea**. Lo
+   propongo como cambio de una linea del encargo siguiente, **no como guarda**:
+   una guarda seria maquinaria nueva bajo moratoria (seccion 13).
+4. **LA CUARTA ESPECIE DE `D.30` COBRO SU PRIMERA PIEZA EN EL CAPITULO SIGUIENTE
+   AL QUE LA PARIO** (2.f). Es un dato a favor de registrarla, no una propuesta
+   mia de doctrina.
+5. **HAY CUATRO EJEMPLARES MEDIDOS DE UNA MISMA FIGURA QUE `D.30` NO TIENE**
+   (3.e y 3.g): **el caso ascendido a doctrina**. Los cuatro estan pegados con su
+   linea. **El auditor decide si es especie nueva o si es una de las tres viejas
+   vista de perfil.** Yo no lo decido.
+
+## C.6. LAS DOS ARISTAS PENDIENTES, AL CIERRE
+
+*El bloque de 1.d, recomputado con lo que esta vuelta entrego.*
+
+| # | la arista | estado al cierre |
+|---:|---|---|
+| 1 | `aplicar_metodo_ghsmart_contratacion` espera **cuatro** hijos | **DOS ENTREGADOS**: `crear_tarjeta_puntuacion_puesto` (Scorecard) y `abastecer_flujo_candidatos` (Source). **Faltan Select (Cap. 4) y Sell (Cap. 5).** Sin cablear: la cabeza sigue en cuarentena |
+| 2 | `detectar_metodos_vudu_contratacion` va antes por L53 | **NO SE CABLEA NUNCA.** Adjudicado: la arista es de despliegue, no de calendario |
+
+**Y UNA TERCERA QUE ESTA VUELTA ABRE, y va aqui para que no se pierda (`D.29`):**
+
+| # | la arista | estado |
+|---:|---|---|
+| 3 | **el Cap. 3 usa la tarjeta de puntuacion del Cap. 2 como herramienta suya, en DOS de sus seis puntos**: `contratar_reclutadores_externos` la construye, y `pedir_referencias_empleados` mete un resultado en ella | declaradas por lectura en 3.j. **Ninguna señal las levanta.** Sin cablear |
+
+## C.7. LA COLA QUE ESTA VUELTA DEJA
+
+| que queda | donde | cuanto |
+|---|---|---|
+| **Cap. 4, `Select`** | `cap_04.md` L31 a L321 **y sigue en `cap_05.md`** | **5.900 palabras en este fichero.** El encargo de la vuelta 5 no lo nombra |
+| Cap. 5, `Sell` | `cap_06.md` mas el tramo final de `cap_05.md` | |
+| Cap. 6, `Your Greatest Opportunity` | `cap_07.md` | |
+| **los 17 candidatos de la bandeja** | `cuarentena/smart_who/` | **cero insertados.** Esperan autorizacion del fundador (`D.26`) |
+| **38 veredictos de lectura** | medidos en 3.i | los que habra que escribir el dia de la insercion |
+
+**LO QUE LA VUELTA 6 TIENE QUE DECIDIR ANTES DE EMPEZAR, y no lo decido yo:**
+**donde empieza su material.** Si la unidad es el capitulo, empieza en
+`cap_04.md` L31. Si es el fichero, `cap_04.md` ya esta commiteado como cerrado y
+**el Cap. 4 se perderia entero**. **Ese es el coste real del discutible 1**, y por
+eso va el primero.
