@@ -74,3 +74,11 @@ BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 [pre-commit] verde
 [2026-09-10 19:01:42]   apertura ciega sellada: 73d1f5c4a1167ccc6a2bd3a4c6dbef628edd2eab
 [2026-09-10 19:01:42] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-10 19:45:37] auditor listo (USD 14.471417500000003), 2635s, intento 1 de 7
+[2026-09-10 19:45:38]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-10 19:45:38] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-10 19:49:37] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+[2026-09-10 19:49:37] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-10 19:49:37]   ultimo commit de REPORTE.md      : 2026-09-10 18:49:20 (1789080560)
+[2026-09-10 19:49:37]   ultimo commit de ACTA_AUDITOR.md : 2026-09-10 19:43:05 (1789083785)
+[2026-09-10 19:49:37] VUELTA 1 : EXTRACTOR (claude-opus-5)
