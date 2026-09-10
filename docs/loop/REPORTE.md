@@ -1892,7 +1892,7 @@ en vez de elegir en silencio.
 | 1 | ficha del libro y frontera | `cap_02` | **CERRADA** | frontera publicada antes de cortar: **64 parrafos y 3 titulares. 20 parrafos procedimentales y 44 no** (20 caso, 15 postura, 3 definicion, 3 cifra, 3 inventario de fines). Saldo: **2 procedimientos** |
 | 2 | candidatos, ciclo de cinco pasos | `cap_02` | **CERRADA** | **2 candidatos, los 2 ENTRARIAN.** 16 pasos escritos, **15 transcripcion y 1 puente cazado y corregido en el acto**. Cero caidas en la puerta y cero correcciones de id |
 | 3 | informe y commit del capitulo | `cap_02` | **CERRADA** | informe del lote: **2 revisados, 2 entrarian, 0 bloquearian, 0 caerian, 0 chocan**. Y el hallazgo que el informe no ve: los dos se bloquearian entre si por `familia_id` 0,333 en cuanto entre el primero |
-| 4 | las cuatro medidas del cierre, desglosadas por capitulo | vuelta | ABIERTA | |
+| 4 | las cuatro medidas del cierre, desglosadas por capitulo | vuelta | **CERRADA** | **0,415 candidatos por mil palabras** (0,000 y 0,518 por capitulo). **1 puente de 16 pasos, el 6,25 por ciento**, contra el 36,11 del lote 1. **0 veredictos escritos.** Los dos capitulos cupieron en **19 minutos y 22 segundos**, y el tramo NO se lleno: 2 de un minimo de 5 |
 
 ## A.3. DISCUTIBLES MARCADOS ANTES DE SABER SI ACIERTO
 
@@ -2548,3 +2548,252 @@ palabras: *jamas dos compresiones de la misma numeracion.*
 
 Va con los **dos JSON dentro** (`D.25`) y con este tramo del reporte. **Dos
 capitulos, dos commits**, como la seccion 17 manda.
+
+---
+
+## TAREA 4. LAS CUATRO MEDIDAS DEL CIERRE, DESGLOSADAS POR CAPITULO
+
+*Las dos primeras con una fila por capitulo, como el encargo manda. **Todas
+recomputadas al cierre** (seccion 4), no copiadas de arriba.*
+
+### 4.a. CANDIDATOS POR MIL PALABRAS
+
+| capitulo | palabras | candidatos | por mil palabras |
+|---|---:|---:|---:|
+| `cap_01` (*Introduction*) | 961 | **0** | **0,000** |
+| `cap_02` (*Cap. 1*) | 3.863 | **2** | **0,518** |
+| **total de la vuelta** | **4.824** | **2** | **0,415** |
+
+*(palabras de `wc -w` corrido hoy; candidatos de `ls -1 cuarentena/smart_who/*.json | wc -l`, que da 2)*
+
+**EL CONTRASTE CON EL LOTE 1, y es el hallazgo economico de la vuelta.**
+`CIERRE_LOTE_1.md` seccion 3.2 publica **4,97 por mil sobre lo minado** y **3,42
+sobre el libro entero.**
+
+> **ESTA VUELTA MIDE 0,415 POR MIL. ES DOCE VECES MENOS QUE EL LOTE 1 SOBRE LO
+> MINADO Y OCHO VECES MENOS SOBRE EL LIBRO ENTERO.**
+
+**Y ES EXACTAMENTE LO QUE EL CIERRE DEL LOTE 1 PREDIJO**, en su seccion 3.3: *la
+tasa de candidatos NO se proyecta en absoluto... el texto normativo es denso y
+terso, y un libro de gestion gasta muchas mas palabras por procedimiento.* **La
+prediccion era cualitativa y ahora tiene cifra.**
+
+**LA CAUSA, CONTADA DE LA FRONTERA Y NO SUPUESTA: veinte de los sesenta y cuatro
+parrafos del `cap_02` son CASO**, uno de cada tres. Un texto que argumenta con
+Lucy, con la niñera de Geoff, con Buckley, con Griffin y con Allied Waste gasta su
+volumen en persuadir, y la doctrina cabe en veinte parrafos de sesenta y cuatro.
+
+**LO QUE ESTO HACE CON LA PROYECCION DE COSTE del lote 1 (seccion 3.3, entre 1.560
+y 9.360 dolares):** la cifra por capitulo se sostiene mejor de lo que se temia,
+porque **dos capitulos de este libro cupieron en una vuelta**. La cifra por palabra
+es la que se desploma: **a 0,415 por mil, las 557.501 palabras de la bandeja darian
+del orden de 231 candidatos, y no los 2.796 que salian a la tasa del lote 1.**
+**NO PROYECTO MAS QUE ESO**, y lo digo con el mismo aviso que el lote 1 se puso:
+son dos capitulos de 164, el 1,2 por ciento.
+
+### 4.b. PASOS INVENTADOS SOBRE PASOS ESCRITOS. Es la cifra de la regla de volumen
+
+| capitulo | pasos escritos | transcripcion | **puente** | **por ciento** |
+|---|---:|---:|---:|---:|
+| `cap_01` | **0** | 0 | **0** | **sin denominador** |
+| `cap_02` | **16** | 15 | **1** | **6,25** |
+| **la vuelta** | **16** | 15 | **1** | **6,25** |
+
+*(pasos contados del fichero, no de memoria: `len(pasos_accionables)` sobre los dos
+JSON da 12 y 4)*
+
+**EL `cap_01` NO TIENE CIFRA, Y NO LE PONGO CERO.** Cero pasos escritos es
+denominador cero, y un cero por ciento ahi seria un capitulo limpio inventado.
+**Una fila honesta vale mas que dos inventadas**, y esta fila dice *sin
+denominador* a proposito.
+
+**LA REGLA DE VOLUMEN, CONTRA EL 36 POR CIENTO DEL LOTE 1:**
+
+| | lote 1 | **esta vuelta** |
+|---|---:|---:|
+| pasos escritos | 36 | **16** |
+| pasos inventados | 13 | **1** |
+| **tasa** | **36,11 por ciento** | **6,25 por ciento** |
+
+> **BAJA. De 36,11 a 6,25 por ciento.** Por la tabla del encargo, **el lote 3
+> correria a TRES capitulos por vuelta.** *La escalada se decide sobre el peor
+> capitulo*: aqui el peor capitulo con denominador es el `cap_02` y mide 6,25.
+
+**PERO EL DATO LLEVA SU AVISO PEGADO, Y EL AVISO ES MIO:**
+
+1. **EL DENOMINADOR ES LA MITAD.** 16 pasos contra 36. Un solo puente mueve esta
+   tasa 6,25 puntos; en el lote 1 movia 2,78. **La cifra es mas ruidosa, y con un
+   segundo puente habria dado 12,5 por ciento.**
+2. **UN CAPITULO DE LOS DOS NO APORTO DENOMINADOR NINGUNO.** La medida de esta
+   vuelta descansa entera en el `cap_02`.
+3. **EL PUENTE QUE CONTE LO CONTE VOLUNTARIAMENTE** (2.f). Con el criterio de
+   *pasos que sobreviven*, esta vuelta habria publicado **0,00 por ciento**, y esa
+   cifra no habria medido nada.
+
+**AUN CON LOS TRES AVISOS, LA DIRECCION ES INEQUIVOCA: 1 de 16 no es 13 de 36 con
+otro denominador.** Y la causa es la que `D.30` predijo: **la relectura dentro del
+acto caza el puente cuando corregirlo cuesta un minuto.** El lote 1 gasto una
+vuelta entera; esta gasto una edicion de una linea, y la salida de la aduana antes
+y despues fue **identica**, como `D.30` avisa.
+
+### 4.c. VEREDICTOS ESCRITOS
+
+> **CERO. Y no es un fallo: es que no hubo insercion.**
+
+`bitacora/VEREDICTOS.jsonl` la escribe la aduana por `forja.py insertar` (seccion
+14), **y esta corrida es `MODO_INSERCION=cuarentena` con cero autorizaciones del
+fundador** (`D.26`). La bitacora **sigue en 2**, contada al cierre.
+
+| | |
+|---|---:|
+| veredictos escritos por esta vuelta | **0** |
+| veredictos **leidos y dejados listos** en el reporte | **1** (3.d) |
+| vecinos del grafo que pidieron veredicto | **0** (3.b) |
+| vecinos que lo pediran en cuanto entre el primer candidato | **1** (3.c) |
+
+### 4.d. CUANTO TARDO, Y SI EL TRAMO FUE EL CORRECTO
+
+**LOS DOS CAPITULOS CUPIERON. Es la respuesta a la pregunta 2 del encargo, y es
+que SI.**
+
+| | |
+|---|---|
+| arranque | **09:34:30** (`docs/loop/loop.log`, linea de arranque de esta vuelta) |
+| commit de apertura | `dac3a0b`, 09:34:55 |
+| commit del `cap_01` | `da69e78`, **09:42:21** |
+| commit del `cap_02` | `da70b94`, **09:53:52** |
+| medicion del cierre | **09:54:37** |
+| **reloj hasta el cierre de los dos capitulos** | **19 minutos y 22 segundos** |
+
+*(las cinco lineas leidas de `git log --date=format` y de `loop.log`, no tecleadas)*
+
+**EL `cap_01` COSTO 7 MINUTOS Y EL `cap_02` 11 MINUTOS Y MEDIO**, y el `cap_01` no
+produjo nada. **Leer para descartar cuesta casi lo mismo que leer para extraer**, y
+esa es una cifra util para dimensionar el lote 3: **el coste va con las palabras,
+no con los candidatos.**
+
+**EL TRAMO NO SE LLENO, Y POR MUCHO.** La seccion 12 pide **entre cinco y quince
+candidatos** por vuelta; esta trajo **2**.
+
+> **NO ES QUE LA VUELTA SE QUEDARA CORTA DE TIEMPO: ES QUE EL MATERIAL NO DABA
+> MAS.** Los dos capitulos suman 4.824 palabras, **el 10,9 por ciento del libro**,
+> y dieron dos procedimientos. **El tramo se dimensiono con la densidad del texto
+> normativo delante y este libro tiene otra.**
+
+**LO QUE PROPONGO CON ESTO, sin adjudicarme nada** (seccion 14): **que el disparador
+del tramo se lea en los dos sentidos.** Hoy la seccion 12 solo dice que baja (*si
+una vuelta no cierra su reporte, la siguiente baja el tramo*). **Esta vuelta es el
+caso contrario y no tiene regla**: cerro entera, en 19 minutos, con las tres
+guardas en verde, y entrego 2 de un minimo de 5. **Con la tasa de 0,415 por mil,
+llenar el tramo minimo de este libro pediria unas 12.000 palabras, o sea tres
+capitulos.** Coincide con lo que la regla de volumen dice por el otro camino, y
+**esa coincidencia de dos medidas independientes es lo que la hace digna de
+mirarse.** No la aplico yo.
+
+---
+
+# EL CIERRE DE LA VUELTA 4
+
+## C.1. LAS GUARDAS, CORRIDAS AL CIERRE
+
+| guarda | orden | salida |
+|---|---|---|
+| gate de integridad | `python forja.py gate` | **GATE VERDE**, 8 nodos verificados, 12 guardas |
+| barrido de guiones | `python forja.py guiones` | **BARRIDO VERDE**, cero guiones largos y cero medios |
+| prueba de aceptacion | `python tests/test_aceptacion.py` | **65 pruebas, 0 fallos, 0 errores** |
+| hook de pre commit | dejado correr en los **3** commits | **verde los 3**, ninguno saltado |
+
+## C.2. EL ESTADO AL CIERRE, RECOMPUTADO AL CIERRE
+
+*Seccion 4: toda cifra que describa el estado al cerrar se RECOMPUTA si algo de la
+propia vuelta pudo haberla movido.*
+
+| medida | apertura (A.1) | **cierre** | la movio esta vuelta? |
+|---|---:|---:|---|
+| nodos vivos | 8 | **8** | **no**, y es lo correcto: cero inserciones |
+| aristas declaradas | 2 | **2** | **no** |
+| veredictos en bitacora | 2 | **2** | **no** |
+| fuentes canonicas en uso | 2 | **2** | **no**: `smart_who` esta registrada pero **no en uso**, porque ningun nodo suyo entro |
+| **candidatos en `cuarentena/smart_who/`** | **0** (la carpeta no existia) | **2** | **SI. Es lo unico que esta vuelta movio del registro** |
+
+**LAS CUATRO PRIMERAS CIFRAS SON IDENTICAS A LAS DE LA APERTURA, Y SE REMIDIERON
+IGUAL.** Una vuelta de cuarentena que moviera el dataset seria una vuelta que
+inserto sin autorizacion.
+
+## C.3. LO QUE ESTA VUELTA DEJA MEDIDO, punto por punto del encargo
+
+| # | lo que el encargo pedia medir | **la medida** |
+|---:|---|---|
+| 1 | la tasa de puentes con la relectura dentro del acto | **1 de 16, el 6,25 por ciento**, contra el 36,11 del lote 1. **`D.30` funciona** |
+| 2 | si dos capitulos de 6.000 palabras caben en una vuelta | **CABEN, en 19 minutos y 22 segundos.** Pero estos dos suman 4.824, **no 12.000**: la pregunta se contesta a medias y se dice |
+| 3 | cuantos vecinos levanta la aduana con ocho nodos | **CERO**, y por dominio: los 8 son de metodologia y de consumo, los 2 candidatos de contratacion. **Pero 1 vecino aparece en cuanto entre el primero** (3.c) |
+| 4 | si la prueba del inventario aguanta en material narrativo | **AGUANTA, y con una condicion nueva medida: no basta sola** (1.f). El narrativo pone inventarios **sin mandato**, y contra esos la prueba da verde y la vara madre da rojo |
+
+**LA PREGUNTA 2 SE CONTESTA A MEDIAS Y NO LO DISIMULO.** El encargo pregunta por
+**dos capitulos de 6.000 palabras**; los dos que me tocaron suman 4.824 entre los
+dos, porque el `cap_01` es una introduccion de 961. **Los capitulos de 6.000
+palabras de este libro son el `cap_04` (6.441) y el `cap_05` (7.174), y esta vuelta
+no los toco.** Lo que si queda medido: **4.824 palabras de este genero caben de
+sobra**, y el `cap_02` solo, de 3.863, costo 11 minutos y medio.
+
+## C.4. LOS SEIS DISCUTIBLES, TODOS MARCADOS ANTES DE SABER SI ACIERTO
+
+*Seccion 8. Los seis se escribieron en el momento de tomar cada decision, no aqui.
+**Estan ordenados por lo que me costaria si fallo**, para que la relectura ciega
+empiece por arriba.*
+
+| # | discutible | donde | si fallo, cuesta |
+|---:|---|---|---|
+| 1 | **no pare** con el `cap_01` en cero, pese a que el encargo lo pone entre sus paradas | 1.e | **la vuelta entera**: si la parada era por capitulo, todo lo del `cap_02` sobra |
+| 6 | **un nodo** de los diez metodos de vudu, y no diez mas cabeza | 2.j | **nueve candidatos**: el `cap_02` pasaria de 2 a 11 y el tramo se habria llenado |
+| 2 | el parrafo 20 del `cap_01` fuera, pese a pasar las tres restricciones de `D.27` | 1.c | **un nodo**, y ademas chocaria con el candidato 2 por doble compresion |
+| 4 | la definicion del jugador A fuera | 2.c | **un nodo** |
+| 3 | **no cablee** la arista que L53 declara, por no adjudicar yo el esquema | 3.e | **una arista**, y la que el lote 1 enseño que las señales no ven |
+| 5 | conte como puente una clausula corregida antes de publicarse | 2.f | **la cifra de la regla de volumen**: sin ese conteo seria 0,00 por ciento |
+
+## C.5. LO QUE PROPONGO, SIN ADJUDICARME NADA
+
+*Seccion 14: el extractor propone en su reporte y no se adjudica a si mismo. **Las
+tres son de doctrina o de orden de trabajo. NINGUNA es maquinaria** (seccion 13):
+no propongo ni un arnes, ni una guarda, ni un lector, y en particular **no propongo
+nada que automatice la relectura de fidelidad**, que el encargo prohibe por su
+nombre.*
+
+**PROPUESTA 1. Una especie nueva de puente para la tabla de `D.30`: EL PUENTE DE LA
+CONCLUSION.** Las tres especies del banco (destinatario, periodo, responsable) son
+las tres **cosas que el libro no nombra**. La que yo escribi es distinta: **el libro
+si habla, pero deja la duda abierta, y el paso la cierra.** El libro escribio *we
+question how many people would actually do those things* y yo escribi *y por eso no
+dice nada*. **Es mas peligrosa que las otras tres porque no se detecta por ausencia:
+el parrafo esta ahi, dice casi eso, y la comprobacion superficial da verde.**
+
+**PROPUESTA 2. Que el disparador del tramo se lea en los dos sentidos** (4.d). Hoy
+solo baja. Esta vuelta cerro entera y entrego 2 de un minimo de 5, y no hay regla
+que diga que hacer con eso.
+
+**PROPUESTA 3. Que la respuesta a la pregunta 3 del encargo se relea cuando el
+lote 2 se inserte, y no ahora.** Esta vuelta contesta **cero vecinos**, y esa
+respuesta **caduca sola**: el propio 3.c mide que el segundo candidato bloquea en
+cuanto entre el primero. **Una cifra que se sabe caduca al publicarse se publica
+diciendolo**, y esta lo dice.
+
+## C.6. LA COLA QUE ESTA VUELTA DEJA
+
+| | |
+|---|---|
+| capitulos del lote 2 sin tocar | **5**: `cap_03` (10.696), `cap_04` (6.441), `cap_05` (7.174), `cap_06` (11.315), `cap_07` (3.874). **39.500 palabras, el 89,1 por ciento del libro** |
+| aristas pendientes | la cabeza `aplicar_metodo_ghsmart_contratacion` espera a sus **cuatro hijos**, que son `cap_03` a `cap_06`. **Es la unica compresion permitida de esa numeracion** |
+| cifras del autor sin colgar | **las seis del `cap_01`** (1.d) y **las tres del `cap_02`** (2.d) |
+| insercion | **cero, y pendiente de autorizacion del fundador.** Los 2 candidatos esperan en `cuarentena/smart_who/`, con su informe en seco pegado en 3.a |
+
+---
+
+**FIN DEL REPORTE DE LA VUELTA 4.** **Dos capitulos cerrados enteros y por
+separado, con su commit cada uno** (`da69e78` y `da70b94`), **2 candidatos escritos
+y los 2 pasarian la aduana**, **16 pasos escritos con 1 puente cazado y corregido
+en el mismo acto (6,25 por ciento, contra el 36,11 del lote 1)**, **cero
+inserciones y cero veredictos escritos**, **las tres guardas en verde y el hook
+dejado correr en los tres commits**, **las cuatro medidas del cierre recomputadas
+al cierre**, **las cuatro preguntas del encargo contestadas y la segunda declarada
+a medias**, **tres propuestas sin adjudicar** y **seis discutibles marcados antes de
+saber si acierto**.
