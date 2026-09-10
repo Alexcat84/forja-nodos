@@ -4255,11 +4255,11 @@ eso va el primero.
 
 | # | tarea | estado | resultado |
 |---|---|---|---|
-| 0 | las cuatro comprobaciones de apertura, sobre `cap_05.md` y `cap_06.md` | ABIERTA | |
-| 1 | los registros del ACTA 5 (correccion declarada, las tres aristas pendientes, la quinta especie) | ABIERTA | |
-| 2 | el Cap. 4 entero, `Select`: frontera, candidatos, informe y commit | ABIERTA | |
-| 3 | el Cap. 5 entero, `Sell` | ABIERTA | |
-| 4 | las cuatro medidas del cierre, desglosadas por capitulo | ABIERTA | |
+| 0 | las cuatro comprobaciones de apertura, sobre `cap_05.md` y `cap_06.md` | **CERRADA** | **las cuatro en VERDE sobre los dos ficheros.** La cuarta (mi propuesta C.5.3) confirmo que `cap_06.md` muere en L455 y que el Cap. 5 no se derrama. Estado de apertura medido por mi: **coincide con el encargo en las nueve filas**, y una celda del encargo discrepa (0.c) |
+| 1 | los registros del ACTA 5 (correccion declarada, las tres aristas pendientes, la quinta especie) | **CERRADA** | correccion declarada anotada **junto a la tabla 3.e de la vuelta 5**, sin tocar la fila original, y **reverificada por mi con `grep -n` y `sed -n`**: es correcta. Las **tres aristas** en bloque propio. La **quinta especie declarada antes del primer paso**, y cazo los tres puentes de la vuelta |
+| 2 | el Cap. 4 entero, `Select`: frontera, candidatos, informe y commit | **CERRADA** | frontera publicada antes de cortar: **12 piezas, 10 procedimientos, 2 fuera con razon distinta**. **15 candidatos, los 15 ENTRARIAN al PRIMER intento**, cero caidas de aduana. **97 pasos, 3 puentes cazados en el acto.** Informe del lote: **32 revisados, 32 entrarian**. Commit `6543488` con los **15 JSON dentro** |
+| 3 | el Cap. 5 entero, `Sell` | **NO SE EMPIEZA, y es el tramo funcionando** | el Cap. 4 solo lleno el tramo entero: **15 candidatos, el techo de `EXTRACTOR.md` 12.4**. **No abri ni una linea del Cap. 5.** Cola declarada con sus rangos y sus 11.339 palabras |
+| 4 | las cuatro medidas del cierre, desglosadas por capitulo | **CERRADA** | **1,155 candidatos por mil palabras** en el Cap. 4 (1,104 acumulado del lote 2). **3 puentes de 97 pasos, el 3,09 por ciento**, contra 7,55 del Cap. 3. **0 veredictos escritos**, porque no hubo inserciones. El Cap. 4 cupo en **37 minutos** y el segundo capitulo **no cupo ni se intento** |
 
 ### Discutibles marcados ANTES de saber si acierto
 
@@ -4267,7 +4267,14 @@ eso va el primero.
 
 | # | discutible | donde |
 |---|---|---|
-| | | |
+| 1 | los pares **cabeza contra hijo** de la señal 3 cuentan como cola util y no como cola falsa | 2.i |
+| 2 | **la tactica 4 no da nodo**, aunque el libro la numere dentro de una serie de cinco | 2.c |
+| 3 | la unidad del Cap. 5 son **11.339 palabras y no 11.370**: mando mi medida | 0.c |
+| 4 | la **remision interna de L195** vale como inventario del libro, con el recuadro ausente | 2.e |
+| 5 | escribo el id **en castellano donde el instrumento daba OK al ingles** (`who`) | 2.d |
+| 6 | **fuera de criterio**: edite `docs/loop/ultimo_auditor.json`, que no es sede mia, porque el hook lo exigia | C.6.3 |
+
+*(los seis quedaron ordenados por coste en C.6.3, y ninguno se añadio al final)*
 
 ---
 
@@ -4787,3 +4794,403 @@ dia de la insercion, uno a uno, y por eso se miden ahora.**
 **CERO INSERCIONES EN ESTA VUELTA** (`MODO_INSERCION=cuarentena`, `D.26`). **No
 corri `python forja.py insertar` ni una vez**, y los 32 candidatos siguen
 esperando la autorizacion del fundador.
+
+---
+
+## TAREA 3. EL Cap. 5, `Sell`: NO SE EMPIEZA, Y ESTA ESCRITO POR QUE
+
+**EL Cap. 4 SOLO LLENO EL TRAMO ENTERO: 15 candidatos, que es EXACTAMENTE el
+techo** de `EXTRACTOR.md` 12.4 (*entre cinco y quince candidatos por vuelta*).
+
+**El encargo lo dejo escrito antes de que ocurriera, y por eso esto no necesita
+justificarse ahora:**
+
+> **SI EL Cap. 4 SOLO YA LLENA EL TRAMO, EL Cap. 5 NO SE EMPIEZA. Eso no es un
+> fallo: es el tramo funcionando.**
+
+**LO QUE SI SE MIDE, PORQUE NO ABRIR UN CAPITULO ES TAMBIEN UN RESULTADO:**
+
+| | |
+|---|---:|
+| candidatos del Cap. 4 | **15**, el techo del tramo |
+| candidatos que habria añadido el Cap. 5 | **desconocido, y no lo estimo.** Estimar un capitulo sin leerlo es adivinar (`EXTRACTOR.md` 7) |
+| **palabras del Cap. 5 que quedan sin minar** | **11.339** (medidas por mi en 0.c; el encargo publica 11.370 con la cabecera dentro) |
+| unidades del lote 2 leidas | **5 de 7**: `Introduction`, `Cap. 1`, `Cap. 2`, `Cap. 3` y **`Cap. 4`** |
+| unidades que quedan | **2**: `Cap. 5` (11.339 palabras) y `Cap. 6` (`cap_07.md` L9 a L429, `Your Greatest Opportunity`, **3.849 palabras**) |
+| **palabras que quedan en la bandeja** | **15.188** |
+
+**NO ABRI NI UNA LINEA DEL Cap. 5.** No lei `cap_06.md` mas alla de sus cuatro
+comprobaciones de apertura, que son de fichero y no de contenido. **La frontera
+del Cap. 5 no esta publicada y no la publico a medias**, porque una frontera a
+medias es peor que ninguna: parece leida.
+
+**Y LA ADJUDICACION 8 DEL ACTA 4, QUE APLICA JUSTO AQUI:** que la vuelta 5
+cupiera con 15 candidatos **no autorizaba a subir el tramo**, y que esta vuelta
+llene el techo con un solo capitulo **tampoco lo baja**. El disparador no se lee
+en los dos sentidos.
+
+**LA COLA QUE DEJO DECLARADA, para el encargo siguiente:**
+
+    Cap. 5, Sell: The Top Five Ways to Seal the Deal
+      cap_05.md L363 a L365  (55 palabras, la apertura del capitulo)
+      cap_06.md L9  a L455   (11.284 palabras)
+      total 11.339 palabras, 226 bloques no vacios
+      cap_06.md muere en L455 (comprobado en 4b, la linea de C.5.3)
+
+    Cap. 6, Your Greatest Opportunity
+      cap_07.md L9 a L429    (3.849 palabras)
+
+---
+
+## TAREA 4. LAS CUATRO MEDIDAS DEL CIERRE, DESGLOSADAS POR CAPITULO
+
+### 4.a. CANDIDATOS POR MIL PALABRAS, una fila por capitulo
+
+**POR CAPITULO, que es el denominador honesto** (y la vuelta 5 ya adjudico que la
+unidad es el capitulo y no el fichero):
+
+| unidad | palabras | candidatos | por mil palabras |
+|---|---:|---:|---:|
+| **Cap. 4**, `Select` | **12.989** | **15** | **1,155** |
+| **Cap. 5**, `Sell` | 11.339 | **0** | **0,000, y no se empezo** |
+| **total de la vuelta** | **12.989 minados de 24.328 abiertos** | **15** | **1,155 sobre lo minado** |
+
+**LA FILA DEL Cap. 5 DICE CERO Y NO DICE *SIN DENOMINADOR*, y la diferencia es
+deliberada:** el denominador existe (11.339 palabras medidas) y lo que no existe
+es el numerador, porque **no se leyo**. Es lo contrario del caso que el encargo
+previene para la otra tabla.
+
+**POR FICHERO, que es lo que compara con la linea base del lote 1, y lo digo al
+lado como en la vuelta 5:**
+
+| fichero | palabras del fichero | candidatos que salieron de el | por mil |
+|---|---:|---:|---:|
+| `cap_04.md` | 6.441 | **de sus L31 a L321 salio parte de los 15** | **no separable** |
+| `cap_05.md` | 7.174 | **de sus L9 a L361 salio la otra parte** | **no separable** |
+
+**ESA TABLA NO SE PUEDE DAR Y DIGO POR QUE, en vez de inventar un reparto:** el
+Cap. 4 vive a caballo de los dos ficheros y **doce de los quince candidatos toman
+material de los dos a la vez**. Repartir 15 candidatos entre dos ficheros exigiria
+un criterio que no tengo, y **una celda que no sale de un instrumento no se
+escribe** (`EXTRACTOR.md` 5). La fila util es la de arriba.
+
+**EL CONTRASTE CON LAS CIFRAS QUE ESTA CASA YA TIENE PUBLICADAS:**
+
+| tanda | por mil palabras |
+|---|---:|
+| lote 1, sobre lo minado (`CIERRE_LOTE_1.md` 3.2) | 4,97 |
+| lote 1, sobre el libro entero | 3,42 |
+| lote 2, vuelta 4 (`cap_01` mas `cap_02`, por FICHERO) | 0,415 |
+| lote 2, vuelta 5 (Cap. 2 mas Cap. 3, por capitulo) | 1,342 |
+| **lote 2, vuelta 6 (Cap. 4, por capitulo)** | **1,155** |
+| **lote 2 acumulado** (4.824 mas 11.181 mas 12.989 = **28.994 palabras**, **32 candidatos**) | **1,104** |
+
+**LA FILA ACUMULADA MEZCLA DOS DENOMINADORES Y LO DECLARO:** los 4.824 de la
+vuelta 4 son **palabras de fichero** (asi se publico entonces, y su 0,415
+reproduce exacto: 2 candidatos sobre 4.824) y los otros dos tramos son **palabras
+de capitulo**. **No lo corrijo hacia atras**, porque en la vuelta 4 el fichero y
+la unidad coincidian.
+
+> **EL Cap. 4 BAJA UN 14 POR CIENTO RESPECTO A LA VUELTA 5 (1,155 contra 1,342) Y
+> SIGUE MUY POR ENCIMA DE LOS CAPITULOS NARRATIVOS (0,415).** La lectura que
+> propongo es que **la densidad de un capitulo de metodo no crece con su tamaño**:
+> el Cap. 4 tiene mas del doble de palabras que el Cap. 2 y da poco mas del doble
+> de nodos, porque **lo que crece con las palabras es el caso, no el
+> procedimiento** (ver 4.e).
+
+**Y LA PROYECCION DE LA BANDEJA, RECOMPUTADA, sin borrar las dos anteriores:** a
+1,104 por mil, las **557.501 palabras** de la bandeja darian del orden de **615
+candidatos**. La vuelta 4 proyecto 231 y la vuelta 5 proyecto 748. **Las tres
+siguen escritas: cada una midio lo que tenia delante.**
+
+### 4.b. PASOS INVENTADOS SOBRE PASOS ESCRITOS, una fila por capitulo
+
+**Denominador: pasos ESCRITOS. El puente corregido se cuenta, lo retire o lo
+reescriba**, como el encargo manda.
+
+| unidad | pasos escritos | puentes | tasa |
+|---|---:|---:|---:|
+| **Cap. 4**, `Select` | **97** | **3** | **3,09 por ciento** |
+| **Cap. 5**, `Sell` | **0** | **0** | **sin denominador** |
+
+**LA SERIE ENTERA, con la fila nueva dentro:**
+
+| tanda | pasos | puentes | tasa |
+|---|---:|---:|---:|
+| lote 1 | 36 | 13 | **36,11** |
+| lote 2, `cap_02` | 16 | 1 | 6,25 |
+| lote 2, Cap. 2 (`Scorecard`) | 35 | 1 | **2,86** |
+| lote 2, Cap. 3 (`Source`) | 53 | 4 | **7,55** |
+| **lote 2, Cap. 4 (`Select`)** | **97** | **3** | **3,09** |
+| **lote 2 acumulado** | **201** | **9** | **4,48** |
+
+**LA CIFRA DE VOLUMEN QUE ESTA VUELTA AÑADE, y es la que mas dice:** el Cap. 4
+escribio **97 pasos, casi el doble que los 104 de las tres tandas anteriores
+JUNTAS**, y metio **tres puentes**. En terminos absolutos es **menos puentes por
+capitulo que el Cap. 3**, que escribio 53 pasos y metio cuatro.
+
+### 4.c. VEREDICTOS ESCRITOS, del lote
+
+| | |
+|---|---:|
+| veredictos escritos en esta vuelta | **CERO** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` al cierre (`wc -l`) | **2**, los mismos de la apertura |
+| razon | **no hubo ninguna insercion**, y un veredicto lo escribe quien inserta cuando la aduana bloquea. `MODO_INSERCION=cuarentena` (`D.26`) |
+
+**LOS 44 PARES DE 2.i SON LOS VEREDICTOS QUE ESTA BANDEJA DEBE, y ya se sabe
+cuantos son.** No los escribo yo aqui: **un veredicto sin insercion es un veredicto
+sin acto**, y la sede de `bitacora/` es la aduana (`EXTRACTOR.md` 14).
+
+### 4.d. CUANTO TARDO, Y SI EL TRAMO FUE EL CORRECTO
+
+**MIS DOS MARCAS PROPIAS, leidas de `git log --date=format:%H:%M:%S`**, que es
+instrumento y no memoria. El auditor las cruza con `loop.log`, que mide el turno
+entero y no lo mismo que yo:
+
+| marca | hora | de donde |
+|---|---|---|
+| **arranque del turno** (arnes, no mio) | **12:30:30** | `docs/loop/loop.log`, linea `VUELTA 2 : EXTRACTOR` |
+| **mi marca de apertura**: primera operacion mia | **12:31:14** | commit `08accea`, el de arranque |
+| esqueleto del reporte abierto | 12:36:13 | commit `66c5cf1` |
+| frontera del Cap. 4 publicada | 12:44:28 | commit `8a70550` |
+| **Cap. 4 cerrado con sus 15 JSON dentro** | **13:08:08** | commit `6543488` |
+| **mi marca de cierre** | ver la linea del cierre, mas abajo | `git log` del ultimo commit |
+
+**EL TRAMO FUE EL CORRECTO, Y LA PRUEBA ES QUE EL SEGUNDO CAPITULO NO CUPO NI SE
+INTENTO:**
+
+| | |
+|---|---|
+| **cabe un capitulo de 12.989 palabras en una vuelta** | **SI.** Se abrio, se leyo entero, se publico su frontera, se escribieron sus 15 candidatos, se pasaron uno a uno por la aduana y se cerro con su commit **en 37 minutos** desde mi marca de apertura |
+| **cupo el segundo capitulo** | **NO, y no se empezo.** El tramo se lleno con el primero |
+| **el disparador de `EXTRACTOR.md` 12.4** | **no se disparo**: esta vuelta SI cerro su reporte, asi que **la siguiente no baja el tramo** |
+| **cuanto costo el Cap. 4 por candidato** | **2 minutos y 28 segundos** de reloj por candidato, de mi marca de apertura al commit del capitulo |
+
+**LA COMPARACION QUE EL ENCARGO PIDE, con su cifra delante:** la vuelta 5 saco 15
+candidatos de **11.181** palabras en dos capitulos; esta ha sacado 15 de **12.989**
+en uno solo. **El mismo numero de candidatos con un 16 por ciento mas de texto y
+la mitad de capitulos.**
+
+### 4.e. LO QUE ESTA VUELTA TENIA QUE DEJAR MEDIDO, punto por punto
+
+#### 1. La tasa de puentes de un capitulo narrado en primera persona del plural
+
+**3,09 por ciento**, contra 2,86 del Cap. 2 y **7,55 del Cap. 3**.
+
+**Y AQUI DESMONTO LA PREMISA DEL ENCARGO CON UNA MEDICION MIA, en vez de confirmar
+lo que se esperaba de mi.** El encargo dice: *"El Cap. 4 va a ser el mas denso en
+caso de los tres."* **Lo medi. No lo es.**
+
+Metodo, para que se pueda tumbar: cuento **tramo de caso** todo bloque contiguo
+cuyo dueño es un tercero nombrado por el libro, que es el criterio con el que la
+vuelta 5 conto los suyos.
+
+| capitulo | bloques | tramos de caso | **tramos por 100 bloques** | el tramo mas largo |
+|---|---:|---:|---:|---:|
+| Cap. 2, `Scorecard` | 139 | 11 | **7,9** | |
+| Cap. 3, `Source` | 99 | 8 | **8,1** | 19 bloques |
+| **Cap. 4, `Select`** | **323** | **16** | **5,0** | **26 bloques** |
+
+**EL Cap. 4 TIENE MAS CASOS EN NUMERO ABSOLUTO Y MENOS EN DENSIDAD.** Sus 16
+tramos suman **84 bloques de 323, el 26,0 por ciento del capitulo**, y entre ellos
+esta el caso mas largo del lote entero: los **26 bloques** de la bofetada de tres
+millones de dolares (`cap_04.md` L269 a L319).
+
+**LO QUE ESTO PRUEBA SOBRE LA LECTURA DE 7.3 DEL ACTA 5, y es lo que de verdad
+importa:** el ACTA 5 leyo que el Cap. 3 triplico la tasa del Cap. 2 **no por ser
+mas pobre sino por tener el caso entretejido con el mandato**. **Esta vuelta la
+sostiene, y por la via dificil:** el Cap. 4 tiene el caso mas largo de todo el
+lote **y su tasa de puentes es de las mas bajas**, porque sus casos estan
+**apartados en bloque** (26 bloques seguidos de anecdota, sin un solo mandato
+dentro) y no **entretejidos frase a frase** como los del Cap. 3.
+
+> **NO ES EL VOLUMEN DE CASO LO QUE FABRICA PUENTES: ES SU ENTRETEJIDO CON EL
+> MANDATO.** Un caso de 26 bloques seguidos no engaña a nadie. Un caso de una
+> frase metido dentro de un parrafo de instrucciones si.
+
+**Y LOS TRES PUENTES DE ESTA VUELTA LO CONFIRMAN UNO A UNO:** los tres salieron de
+tramos de caso **cortos y pegados al mandato** (Sharpe una frase, Haugen dos
+bloques, Jordan un bloque). **Del caso de 26 bloques no salio ni uno.**
+
+#### 2. Si la quinta especie, nombrada ANTES de escribir, baja la cifra
+
+| | Cap. 3 | **Cap. 4** |
+|---|---:|---:|
+| la quinta especie estaba nombrada al empezar | **NO**, se descubrio a posteriori | **SI**, declarada en 1.c antes del primer paso |
+| tasa de puentes | **7,55** | **3,09** |
+| **puentes que fueron de la quinta especie** | 4 de 4 | **3 de 3** |
+
+**LA CIFRA BAJO: un 59 por ciento.** Pero **la respuesta honesta es que no puedo
+atribuirsela sola a nombrarla**, y lo digo aunque me favorezca:
+
+- **el confundido esta medido arriba**: el Cap. 4 es **menos denso en caso** por
+  bloque (5,0 tramos por 100 contra 8,1), y menos caso entretejido significa menos
+  ocasion de puente **aunque no se hubiera nombrado nada**;
+- **lo que si es atribuible a nombrarla, y es lo unico que reclamo**: los tres
+  puentes **se cazaron EN EL ACTO de escribir el nodo**, no en una relectura
+  posterior. En el Cap. 3 se cazaron los cuatro **al releer**. **La especie
+  nombrada no cambio cuantos escribi: cambio CUANDO los vi.**
+
+**Las dos respuestas valen y las dos las digo, que es lo que el encargo pedia.**
+
+#### 3. Si un capitulo de 12.989 palabras cabe en una vuelta
+
+**SI**, y esta contestado con reloj en 4.d: **37 minutos** de mi marca de apertura
+al commit del capitulo, con sus 15 JSON dentro. **Un 16 por ciento mas de texto
+que la vuelta 5 y el mismo numero de candidatos.**
+
+#### 4. Cuantos vecinos levanta la aduana con TRES series hermanas en la bandeja
+
+**Medido y desarrollado entero en 2.i, con su tabla y su comando.** El titular:
+**44 de 992**, contra 38 de 272 en la apertura, y **la densidad cayo a la mitad**
+(13,97 por ciento a **4,44**). **Y llevo ocho pares que solo ve la señal 3**, pero
+**son de dos especies distintas** y las separo alli en vez de sumarlas.
+
+---
+
+# EL CIERRE DE LA VUELTA 6
+
+## C.6.1. LAS TRES GUARDAS, CORRIDAS AL CIERRE
+
+| guarda | comando | salida |
+|---|---|---|
+| gate de integridad | `python forja.py gate` | **GATE VERDE.** nodos verificados: **8**. Doce guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones |
+| barrido de guiones | `python forja.py guiones` | **BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.** |
+| prueba de aceptacion | `python tests/test_aceptacion.py` | **total: 65 pruebas, 0 fallos, 0 errores** |
+
+**Y EL HOOK CORRIO EN LOS SEIS COMMITS DE ESTA VUELTA, sin saltarse ninguno.**
+**En el primero fallo, y lo digo porque es una operacion que toque:** el barrido
+tumbo el commit de arranque por **un guion largo (U+2014) en
+`docs/loop/ultimo_auditor.json`, linea 1, columna 3435**, dentro de un texto que
+**escribio el arnes y no yo**. Lo converti a guion corto, comprobe con
+`json.load` que el fichero seguia siendo JSON valido, y el segundo intento paso.
+**Es la unica edicion que hice sobre un artefacto que no es mio, y va declarada
+aqui en vez de pasar callada.**
+
+**EL AVISO DE GUION DEL ENCARGO SE CUMPLIO Y NO ME COSTO NADA:** `cap_05.md` L359
+trae la nota al pie con `p22` guion medio `28` dentro del material del Cap. 4. **No
+la transcribi**; la referencia de Topgrading vive en el `resumen_teorico` de
+`conducir_entrevista_cronologica_trayectoria` sin el guion. **Cero guiones largos
+y cero guiones medios en los 15 JSON**, comprobado con un barrido propio sobre la
+carpeta antes del commit.
+
+## C.6.2. EL ESTADO AL CIERRE, RECOMPUTADO AL CIERRE
+
+**Recomputado, no arrastrado de 0.b**, porque esta vuelta movio la bandeja.
+
+| medida | apertura | **cierre** | movimiento |
+|---|---:|---:|---|
+| nodos vivos en el dataset | 8 | **8** | **cero.** No hubo inserciones |
+| pasos vigentes en el grafo | 43 | **43** | cero |
+| aristas declaradas | 2 relaciones, 4 extremos | **2 relaciones, 4 extremos** | cero |
+| veredictos en bitacora | 2 | **2** | cero |
+| **candidatos en `cuarentena/smart_who/`** | 17 | **32** | **mas 15** |
+| **pasos en la bandeja de cuarentena** | 100 | **197** | **mas 97** |
+| fuentes canonicas registradas / en uso en el dataset | 13 / 2 | **13 / 2** | cero |
+| **informe del lote en seco** | 17 revisados, **17 entrarian** | **32 revisados, 32 ENTRARIAN**, 0 bloquearian, 0 caerian, 0 chocan | **mas 15 entrarian** |
+| pares que levantarian en la bandeja | 38 de 272 | **44 de 992** | ver 2.i |
+| unidades del lote 2 leidas | 4 de 7 | **5 de 7** | **mas 1: el Cap. 4** |
+| palabras que quedan en la bandeja del libro | 28.263 (cifra del encargo) | **15.188** (Cap. 5 mas Cap. 6, medidas por mi) | ver 0.c para la discrepancia de recuento |
+
+**LAS CUATRO PRIMERAS FILAS DICEN CERO A PROPOSITO Y ES LA CIFRA MAS IMPORTANTE
+DEL CIERRE: NO INSERTE NADA.** No corri `python forja.py insertar` ni una sola
+vez, ni siquiera con los 15 candidatos en verde. **La insercion es una
+autorizacion del fundador, no un default** (`D.26`), y en esta corrida no la ha
+dado.
+
+**La identidad, leida de `git`:** rama `extraccion-mundo-11`
+(`git rev-parse --abbrev-ref HEAD`), commit de apertura **`08accea`**, commit del
+Cap. 4 **`6543488`**.
+
+## C.6.3. LOS CINCO DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO
+
+**Ordenados por lo que costarian si fallo**, como el encargo pide. **Los cinco se
+marcaron en su sitio del reporte, en el momento en que la decision se tomo, y
+ninguno se añadio al final.**
+
+| # | discutible | donde | **lo que cuesta si fallo** |
+|---:|---|---|---|
+| **1** | **los pares cabeza contra hijo se cuentan como cola de lectura UTIL y no como cola falsa** de la señal 3 | 2.i | **lo mas caro de todo.** Si son cola falsa, la señal 3 pasa de 2,4 falsos por candidato a mas, y **la calibracion del 9 sep 2026 queda tocada** por una serie numerada que no tenia delante. Cuatro pares nuevos cambian de signo |
+| **2** | **la tactica 4 no da nodo**, aunque el libro la numere dentro de una serie de cinco | 2.c | **un nodo entero que no escribi**, y con el la unica lectura de esta casa que dice que una serie numerada puede dar menos hijos que numeros. Si cae, el material esta salvado (es el paso 4 de la cabeza) pero la lectura no |
+| **3** | **la unidad del Cap. 5 son 11.339 palabras y no 11.370**: mando mi medida contra la celda del encargo | 0.c | **los dos denominadores de 4.a en la fila del Cap. 5**, y con ellos la comparacion de densidad entre capitulos del encargo siguiente |
+| **4** | **la remision interna de `cap_05.md` L195 vale como inventario del libro** (*las dos siguientes son exactamente las mismas de la entrevista de criba*), con el recuadro ausente | 2.e | **dos de los doce pasos de `conducir_llamadas_referencia` se caen por puente**, y la tasa del capitulo sube de 3,09 a **5,15 por ciento** |
+| **5** | **escribo `conducir_entrevista_cronologica_trayectoria` y no `..._who_...`**, aplicando una regla mas estrecha que la que el instrumento hace cumplir | 2.d | **el id que queda es el largo y peor**, y si el auditor dice que `Who Interview` es nombre propio, la familia se parte igual por haber traducido de mas |
+
+**UN SEXTO QUE MARCO APARTE PORQUE NO ES DE CRITERIO SINO DE ACTO:** edite
+`docs/loop/ultimo_auditor.json`, que **no es sede mia** (`EXTRACTOR.md` 14 no lo
+nombra, pero tampoco me lo da). Lo hice porque **el hook lo exigia para poder
+commitear** y porque `EXTRACTOR.md` 6 dice *deja correr el hook, si falla
+corriges y reintentas, jamas lo saltas*. **Si eso fue una invasion de sede, es una
+caida mia y la traigo yo**, con la alternativa que no tome escrita al lado: la
+otra salida era **parar la vuelta entera en su primer minuto** por un guion que
+escribio otro.
+
+## C.6.4. LO QUE PROPONGO, Y NO ME ADJUDICO
+
+**`EXTRACTOR.md` 14: el extractor PROPONE en su reporte y no se adjudica a si
+mismo. Yo no escribo `PARA_ALEXIS.md`.**
+
+### PROPUESTA 1. La especie de par que la calibracion no tenia delante
+
+**No propongo mover ningun umbral** (`EXTRACTOR.md` 11 lo prohibe y ademas la
+medida seria de una sola bandeja). Propongo algo mas barato: **que la cuenta de
+cola falsa de la señal 3 distinga el par CABEZA CONTRA HIJO del par HERMANO CONTRA
+HERMANO**, porque estan medidos en 2.i y **no cuestan lo mismo de leer**:
+
+| especie | ejemplares vivos | coste de su cola |
+|---|---:|---|
+| cabeza contra hijo | **4** | **barato**: el veredicto se sabe antes de abrir el par, es CONTINUA por construccion |
+| hermano contra hermano | **4** | **caro**: hay que leer los dos para separarlos |
+
+**La calibracion del 9 sep 2026 se hizo contra un catalogo de 3.169 nodos que no
+tenia esta bandeja delante.** Si en aquel catalogo la proporcion de pares cabeza
+contra hijo era distinta, **los 2,4 falsos por candidato miden dos cosas
+mezcladas**. Es medicion, no umbral.
+
+### PROPUESTA 2. Que la lista negra de ids reciba `who`
+
+**Lo aplique yo por criterio en 2.d y el instrumento no lo caza.** `who` tiene
+equivalente corriente en castellano (*quien*), que es exactamente el criterio de
+la lista negra escrito en `docs/REGLAS_DE_ID.md`. **Ampliar la lista es correccion
+declarada con fecha y es de Alexis**, asi que lo propongo y sigo. **Si no se
+amplia, mi id de 2.d es una traduccion de mas y el discutible 5 cae.**
+
+### PROPUESTA 3. Una linea de encargo para el reparto de candidatos entre ficheros
+
+**No es maquinaria, es una linea de encargo**, del mismo tipo que la cuarta
+comprobacion de apertura que propuse en C.5.3 y que se adjudico a favor. En 4.a
+tuve que dejar la tabla por fichero **sin dar**, porque el Cap. 4 vive a caballo de
+dos ficheros y doce de sus quince candidatos toman material de los dos. **Propongo
+que el encargo diga cual de las dos cosas quiere** cuando un capitulo cruza
+ficheros: **el reparto por fichero de origen de cada paso**, que es medible pero
+caro, **o solo la tabla por capitulo**, que es la que ya se adjudico como
+denominador honesto. **Yo no elijo por el encargo.**
+
+## C.6.5. NINGUNA PARADA, Y LAS TRES VECES QUE ESTUVO CERCA
+
+**No hay PARADA en esta vuelta.** Las tres comprobaciones que estuvieron cerca y
+por que ninguna lo fue:
+
+| # | lo que paso | por que NO es parada |
+|---:|---|---|
+| 1 | **el manual 3.4 me obligaba a escribir cinco hijos de una serie de cinco y escribi cuatro** | **hay arbitro escrito**: `EXTRACTOR.md` 9 define que es un nodo y pone la postura y el concepto en la columna del NO. **Se cita el arbitro y se sigue**, que es lo que el ACTA 5 adjudico a favor en mi 1.b de la vuelta 5. Desarrollado entero en 2.c |
+| 2 | **una celda del encargo no reproduce contra mi medicion** (11.370 contra 11.339) | **es discrepancia declarada, no parada**: la mido, la desgloso, mando la mia y digo de donde sale la otra. `EXTRACTOR.md` 5: la discrepancia se declara en vez de resolverse copiando. Desarrollado en 0.c |
+| 3 | **el hook tumbo mi primer commit por un guion que no escribi yo** | **`EXTRACTOR.md` 6 lo resuelve**: se corrige y se reintenta, jamas se salta. Declarado en C.6.1 y marcado como discutible aparte en C.6.3 |
+
+**Y las cuatro comprobaciones de apertura salieron las cuatro en VERDE sobre los
+dos ficheros**, que es la primera causa de parada que el encargo nombra. **No hubo
+que mandar ninguna medida en rojo.**
+
+## C.6.6. LA COLA QUE DEJO, EN UNA LISTA
+
+1. **El Cap. 5, `Sell`, entero y sin abrir**: `cap_05.md` L363 a L365 mas
+   `cap_06.md` L9 a L455. **11.339 palabras, 226 bloques.** Frontera no publicada.
+2. **El Cap. 6, `Your Greatest Opportunity`**: `cap_07.md` L9 a L429, **3.849
+   palabras**. Ni abierto ni medido mas alla del recuento.
+3. **Los 32 candidatos de la bandeja**, ninguno insertado, **los 32 en verde**.
+4. **Los 44 pares que la aduana levantara** el dia de la insercion, con sus **8
+   pares de señal 3 sola** ya identificados y clasificados en dos especies.
+5. **Las seis aristas del Cap. 4** de 2.h y **las tres pendientes** de 1.b, **las
+   nueve sin cablear**, todas nombradas en la prosa o en las
+   `condiciones_activacion` de sus nodos para que se cableen por lectura.
+6. **Las tres propuestas de C.6.4**, ninguna adjudicada por mi.
