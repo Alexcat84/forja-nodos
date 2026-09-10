@@ -4215,3 +4215,35 @@ en 3.i con las dos cifras, sin borrar la primera.
 `cap_04.md` L31. Si es el fichero, `cap_04.md` ya esta commiteado como cerrado y
 **el Cap. 4 se perderia entero**. **Ese es el coste real del discutible 1**, y por
 eso va el primero.
+
+---
+
+# VUELTA 6, lote 2 (`smart_who`), Cap. 4 (`Select`) y Cap. 5 (`Sell`)
+
+| | |
+|---|---|
+| fecha de apertura | **2026-09-10**, leida del instrumento (`date` da `2026-09-10 12:35:57`, `python -c datetime.date.today()` y `src.aduana._hoy()` dan los dos `2026-09-10`) |
+| rama | `extraccion-mundo-11` (`git rev-parse --abbrev-ref HEAD`) |
+| commit de apertura | `08accea` (`git rev-parse HEAD` tras commitear lo pendiente) |
+| lote | `smart_who`, LOTE 2 (D.24) |
+| unidades de extraccion | **Cap. 4 `Select`** (`cap_04.md` L31 a L321 mas `cap_05.md` L9 a L361) y **Cap. 5 `Sell`** (`cap_05.md` L363 a L365 mas `cap_06.md` L9 a L455) |
+| inserciones autorizadas en esta vuelta | **CERO.** `MODO_INSERCION=cuarentena` (D.26). Todo candidato queda en `cuarentena/smart_who/` y pasa la aduana EN SECO |
+| marca propia de arranque | **12:30:30** (`docs/loop/loop.log`, linea `VUELTA 2 : EXTRACTOR`) |
+
+### Las cuatro tareas del encargo
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 0 | las cuatro comprobaciones de apertura, sobre `cap_05.md` y `cap_06.md` | ABIERTA | |
+| 1 | los registros del ACTA 5 (correccion declarada, las tres aristas pendientes, la quinta especie) | ABIERTA | |
+| 2 | el Cap. 4 entero, `Select`: frontera, candidatos, informe y commit | ABIERTA | |
+| 3 | el Cap. 5 entero, `Sell` | ABIERTA | |
+| 4 | las cuatro medidas del cierre, desglosadas por capitulo | ABIERTA | |
+
+### Discutibles marcados ANTES de saber si acierto
+
+(se anexan aqui segun aparecen, no al final)
+
+| # | discutible | donde |
+|---|---|---|
+| | | |
