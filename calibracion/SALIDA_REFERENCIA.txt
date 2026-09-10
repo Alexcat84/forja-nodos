@@ -1,0 +1,18 @@
+GRAFO DE REFERENCIA, corte leido de git en esta corrida
+  clon    : C:\Users\AlexDesk\Documents\my-idea-lectura
+  commit  : 1b12832392469afd2ac42775d606e4dfd443ab43
+  tag     : catalogo-limpio-v1
+  fecha   : 2026-09-09
+  declarado en calibracion/referencia.py: catalogo-limpio-v1 / 1b12832392469afd2ac42775d606e4dfd443ab43
+  coincide: SI
+
+CENSO, contado del fichero por este instrumento
+  total_nodos que declara el grafo : 3853
+  nodos contados                   : 3853
+  vivos                            : 3169
+  deprecados (archivo)             : 684
+
+VERDAD CONOCIDA que el catalogo trae dentro
+  pares GEMELOS (superviviente contra absorbido, adjudicados REPITE): 671
+  pares JERARQUIA (arista declarada entre dos vivos)               : 7282
+  libros distintos (clave derivada del titulo)                     : 53
