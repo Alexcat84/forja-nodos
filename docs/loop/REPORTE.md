@@ -7505,3 +7505,202 @@ contra una prevision de 28 sellada antes de empezar**, **15 candidatos escritos 
 los quince por la aduana al primer intento**, **3.849 palabras descartadas con su
 razon pieza a pieza**, **cinco puentes cazados por `D.30` en el acto de escribir**,
 cero paradas, cero inserciones y diez discutibles marcados a ciegas.
+
+---
+
+# VUELTA 9, lote 3 (`zhuo_manager`): apertura del libro, Introduction, Cap. 1 y Cap. 2
+
+| | |
+|---|---|
+| fecha | **2026-09-10**, leida del instrumento (`date` da `Thu, Sep 10, 2026  7:51:50 PM`; `python -c "import datetime;print(datetime.date.today())"` da `2026-09-10`) |
+| rama | `extraccion-mundo-11` (`git rev-parse --abbrev-ref HEAD`) |
+| commit de apertura | `6ed05a3` (`git rev-parse --short HEAD` tras commitear lo pendiente del arnes) |
+| arranque del arnes | `[2026-09-10 19:49:37] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena` (`tail -5 docs/loop/loop.log`) |
+| lote | `zhuo_manager`, **LOTE 3**, y esta vuelta lo ABRE |
+| inserciones autorizadas en esta vuelta | **CERO.** `MODO_INSERCION=cuarentena`, y el encargo lo repite: la insercion es una autorizacion del fundador, no un default |
+| racha REPORTE / CLASE / CIFRA al abrir | **1 de 3 / 0 de 2 / 0 de 2**, leidas del encargo de esta vuelta (`sed -n '20,22p' docs/loop/PROMPT_SIGUIENTE.md`) |
+
+## 9.0. LAS TRES CORRECCIONES DECLARADAS DE LA VUELTA 8 (TAREA 1.c), SIN BORRAR NADA
+
+**No reescribo el tramo de la vuelta 8. Lo corrijo aqui, por anexion.**
+
+1. **Las cuatro cifras de la tabla 5.g quedan corregidas por el ACTA 8 seccion 4.1.**
+   Lo que la vuelta 8 presento como publicado antes (`936`, `3.888`, `10.916`, `6.301`)
+   **nunca se publico**: las publicadas de verdad fueron **961**, **3.863**, **10.696**
+   y **6.250**. Y **las tres discrepancias declaradas inexplicadas no existen**: dos son
+   la cabecera de siete lineas, causa que la propia vuelta ya habia explicado para
+   `cap_04` y `cap_05`, y la tercera no es una diferencia.
+2. **La fila que la vuelta 8 llamo *cola del Cap. 5* se llama Cap. 6, `Your Greatest
+   Opportunity`** (`cap_06.md` L247 a L455 es el cuerpo del Cap. 6, no la cola del
+   Cap. 5), **y la fila que llamo *Cap. 6* con 370 palabras es la cola de ese mismo
+   capitulo.**
+3. **El lote 2 tuvo SEIS capitulos minados y no cinco:** la tabla 5.f perdia el
+   `cap_02` (Cap. 1) al 6,25 por ciento.
+
+**Y NO CAMBIA NI UNA TASA:** las 90, las 5 y el 5,56 por ciento sobreviven intactas
+(ACTA 8 seccion 7). **Cambian los nombres.**
+
+## 9.0.b. EL REMEDIO DE LA TAREA 1.a, ADOPTADO EN ESTA VUELTA
+
+**Ninguna cifra que presente como publicada en una vuelta anterior se teclea sin la
+salida de `grep -n` sobre `docs/loop/REPORTE.md` pegada al lado**, la comparacion que
+sale CERO se escribe CERO y no se borra la fila, y **toda tabla que compara N filas dice
+de donde salen las N, con las filas de la serie contadas.**
+
+### Las tareas encargadas
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 2 | comprobaciones de apertura y mapa del libro, antes de cortar nada | **CERRADA** | las cuatro guardas cuadran con lo anunciado (**52, 37, 72 de 72, 60**), **cero discrepancias**. Fuente canonica leida y pegada. Los tres ficheros cierran su capitulo y el `cap_04` abre unidad nueva. Palabras: **2.917, 6.477, 4.292**, las tres con diferencia **0**. Mapa de los doce medido: **70.041 palabras, diferencia 0** contra la ficha, y **las doce L9 coinciden con la nota del auditor** |
+| 3 | la Introduction y el Cap. 1, con su frontera publicada antes de cortar | ABIERTA | |
+| 4 | el Cap. 2, igual, y los vecinos que la aduana levante | ABIERTA | |
+| 5 | el informe del lote, los commits y el cierre con sus cuatro medidas | ABIERTA | |
+
+### Discutibles marcados ANTES de saber si acierto
+
+(se anexan aqui segun aparecen, no al final)
+
+---
+
+## TAREA 2. LAS COMPROBACIONES DE APERTURA Y EL MAPA DEL LIBRO
+
+### 2.1. Las cuatro guardas de apertura, corridas ANTES de la primera operacion
+
+| medida | instrumento | la salida, pegada | esperado por el encargo | coincide |
+|---|---|---|---:|---|
+| nodos | `python forja.py gate` | `  nodos verificados: 52` | 52 | **SI** |
+| aristas | conteo sobre `dataset/nodos.jsonl` | `nodos: 52  nodos_siguientes total: 37` | 37 | **SI** |
+| prueba de aceptacion | `python tests/test_aceptacion.py` | `  total: 72 pruebas, 0 fallos, 0 errores` | 72 de 72 | **SI** |
+| bitacora | `python forja.py rancios` | `BLOQUE DE VIGENCIA VERDE.` / `  veredictos comprobados: 60` | 60 | **SI** |
+
+**Y el barrido**, que no lleva cifra: `python forja.py guiones` da
+`BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.`
+
+**Las cuatro cuadran. CERO discrepancias en la apertura**, y no hay nada que declarar
+antes de seguir.
+
+### 2.2. La fuente canonica, leida y pegada (`grep -n -A14 '"zhuo_manager"' fuentes/FUENTES_CANONICAS.json`)
+
+    21:  "zhuo_manager": {
+    22-    "titulo_completo": "The Making of a Manager: What to Do When Everyone Looks to You",
+    23-    "autor": "Julie Zhuo",
+    24-    "anio": "2019",
+    25-    "notas": "ISBN 9780735219571 (ebook), 9780735219564 (tapa dura), 9780525540427 (edicion internacional). LOTE 3. Recorte verbatim en fuentes/zhuo_manager/, 12 capitulos (cap_01 a cap_12), 70.041 palabras de cuerpo."
+
+**La clave existe con ficha completa antes del primer candidato del libro**
+(`EXTRACTOR.md` 10 y 17). **No hay ficha que abrir**, y es el primer lote de la campana
+que arranca asi.
+
+### 2.3. Las cabeceras de los tres ficheros, leidas por mi y no copiadas de la nota del encargo
+
+`sed -n '1,12p' fuentes/zhuo_manager/cap_0N.md`, los tres:
+
+| fichero | `unidad` | `titulo_textual` | la linea 9, pegada |
+|---|---|---|---|
+| `cap_01.md` | `Introduction` | `Great Managers Are Made, Not Born` | `Introduction` |
+| `cap_02.md` | `Cap. 1` | `What Is Management?` | `Chapter One` |
+| `cap_03.md` | `Cap. 2` | `Your First Three Months` | `Chapter Two` |
+
+**Coincide con la nota del auditor para esos tres** (`cap_01 -> "Introduction"`,
+`cap_02 -> "Chapter One"`, `cap_03 -> "Chapter Two"`). **Contrastada, no copiada**
+(`EXTRACTOR.md` 5).
+
+**Y la cabecera trae aqui la unidad ya traducida en el propio recorte** (`unidad: Cap. 1`),
+cosa que el recorte de `smart_who` no hacia. **Esa es la razon de la caida 2 de la vuelta
+8 y aqui no puede repetirse**: el nombre del capitulo se lee del campo `unidad`, no se
+infiere del numero del fichero.
+
+### 2.4. El cierre de cada fichero, comprobado uno a uno (`grep -n "." ... | tail -3`)
+
+| fichero | ultima linea con texto | la salida, pegada | cierra su capitulo |
+|---|---:|---|---|
+| `cap_01.md` | **L133** de 133 | `133:			Ready? Let’s get started.` | **SI.** Cierre de despedida de una introduccion |
+| `cap_02.md` | **L291** de 291 | `291:			In your early days as a manager, what matters most is transitioning gracefully into the role and nailing the essentials of leading a small team. Only when you have built trust with your reports will you have the credibility to help them achieve more together.` | **SI.** Cierra y apunta al capitulo siguiente |
+| `cap_03.md` | **L229** de 229 | `229:			In the chapters ahead, we’ll look at all the major aspects of a manager’s job...` | **SI.** Cierre explicito con anuncio del resto del libro |
+
+**Y el borde por el otro lado, comprobado en la cabecera del fichero siguiente**
+(`sed -n '1,11p' fuentes/zhuo_manager/cap_04.md`, cabecera solamente, sin minar nada):
+
+    unidad: Cap. 3
+    titulo_textual: Leading a Small Team
+    L9: Chapter Three
+
+**Los tres ficheros son unidad completa y el siguiente empieza unidad nueva. Aqui el
+fichero SI es el capitulo, para estos tres.** No lo extiendo a los otros nueve: el
+encargo mide tres cierres de doce y yo he comprobado los mismos tres.
+
+### 2.5. Las palabras, contadas del fichero (`wc -w`)
+
+    $ wc -w fuentes/zhuo_manager/cap_01.md fuentes/zhuo_manager/cap_02.md fuentes/zhuo_manager/cap_03.md
+     2953 fuentes/zhuo_manager/cap_01.md
+     6511 fuentes/zhuo_manager/cap_02.md
+     4327 fuentes/zhuo_manager/cap_03.md
+    13791 total
+
+    $ for f in cap_01 cap_02 cap_03; do sed -n '9,$p' fuentes/zhuo_manager/$f.md | wc -w; done
+    cap_01 cuerpo: 2917
+    cap_02 cuerpo: 6477
+    cap_03 cuerpo: 4292
+
+| unidad | fichero | el encargo dice | cuerpo medido hoy (`sed -n '9,$p' | wc -w`) | diferencia | fichero entero | diferencia contra el cuerpo |
+|---|---|---:|---:|---:|---:|---:|
+| Introduction | `cap_01.md` | 2.917 | **2.917** | **0** | 2.953 | 36, la cabecera de ocho lineas |
+| Cap. 1 | `cap_02.md` | 6.477 | **6.477** | **0** | 6.511 | 34, la cabecera de ocho lineas |
+| Cap. 2 | `cap_03.md` | 4.292 | **4.292** | **0** | 4.327 | 35, la cabecera de ocho lineas |
+| **total** | | **13.686** | **13.686** | **0** | 13.791 | 105 |
+
+**Las tres filas salen de la serie de tres unidades que el encargo tabula, y son tres
+filas contadas de esa serie.** **Las tres diferencias son CERO y se escriben CERO**
+(remedio 1.a, hermana segunda). **La columna del fichero entero se explica entera por la
+cabecera**, que es la misma causa que la vuelta 8 ya habia identificado para `smart_who`,
+y aqui vale ocho lineas en vez de siete.
+
+**Cero discrepancias en las tres. No hay nada que declarar y no elijo nada en silencio.**
+
+### 2.6. El mapa de los doce, medido por mi (una pasada sobre `fuentes/zhuo_manager/*.md`)
+
+Comando corrido hoy, y la tabla se imprime desde el, no se teclea (`EXTRACTOR.md` 5):
+
+    $ for f in cap_*.md; do u=$(sed -n '4p' $f); t=$(sed -n '5p' $f); l9=$(sed -n '9p' $f); \
+        w=$(sed -n '9,$p' $f | wc -w); n=$(wc -l < $f); last=$(grep -n "." $f | tail -1 | cut -d: -f1); \
+        echo "$f|$u|$t|$l9|$w|$n|$last"; done
+
+| fichero | `unidad` | `titulo_textual` | L9 | palabras de cuerpo | lineas | ultima con texto |
+|---|---|---|---|---:|---:|---:|
+| `cap_01.md` | Introduction | Great Managers Are Made, Not Born | `Introduction` | 2.917 | 133 | 133 |
+| `cap_02.md` | Cap. 1 | What Is Management? | `Chapter One` | 6.477 | 291 | 291 |
+| `cap_03.md` | Cap. 2 | Your First Three Months | `Chapter Two` | 4.292 | 229 | 229 |
+| `cap_04.md` | Cap. 3 | Leading a Small Team | `Chapter Three` | 7.237 | 321 | 321 |
+| `cap_05.md` | Cap. 4 | The Art of Feedback | `Chapter Four` | 6.318 | 289 | 289 |
+| `cap_06.md` | Cap. 5 | Managing Yourself | `Chapter Five` | 9.617 | 477 | 477 |
+| `cap_07.md` | Cap. 6 | Amazing Meetings | `Chapter Six` | 5.285 | 289 | 289 |
+| `cap_08.md` | Cap. 7 | Hiring Well | `Chapter Seven` | 7.315 | 301 | 301 |
+| `cap_09.md` | Cap. 8 | Making Things Happen | `Chapter Eight` | 7.184 | 287 | 287 |
+| `cap_10.md` | Cap. 9 | Leading a Growing Team | `Chapter Nine` | 6.137 | 221 | 221 |
+| `cap_11.md` | Cap. 10 | Nurturing Culture | `Chapter Ten` | 3.751 | 191 | 191 |
+| `cap_12.md` | Epilogue | The Journey Is 1% Finished | `Epilogue` | 3.511 | 449 | 449 |
+| **12 ficheros** | | | | **70.041** | | |
+
+**Las doce filas salen de los doce ficheros de `ls fuentes/zhuo_manager/`, contados: 12**
+(remedio 1.a, hermana tercera). **La suma de las doce da 70.041, exactamente la cifra de
+`FUENTES_CANONICAS.json` y la del encargo. Diferencia: CERO.**
+
+**Y las doce L9 coinciden una a una con la nota del auditor**, incluida la del `cap_12`
+(`Epilogue`). **Contrastadas, no copiadas.** Diferencias: **CERO de doce**.
+
+**Tres avisos del mapa, dichos ahora y no cuando estorben:**
+
+1. **En los doce, la ultima linea con texto es la ultima linea del fichero.** Ningun
+   fichero arrastra cola en blanco, asi que el rango de cada uno es `L9` a su ultima.
+2. **El `cap_12` es el unico con proporcion rara:** 449 lineas para 3.511 palabras, es
+   decir 7,8 palabras por linea contra 22,3 del `cap_02`. **Eso es el `Index`**, y por eso
+   el encargo manda juzgarlo antes de cortarlo cuando toque. **No es de esta vuelta.**
+3. **El `cap_08` se llama `Hiring Well`.** Es el que va a chocar con el lote 2 entero
+   (`smart_who`, contratar). **No es de esta vuelta y no lo adelanto**, pero queda
+   escrito aqui para que la vuelta que lo abra no lo descubra tarde.
+
+### 2.7. Estado de la TAREA 2
+
+**CERRADA, con cero discrepancias en las cuatro comprobaciones que el encargo pide y
+cero en el mapa de los doce.** Nada que declarar, nada que detenga.
+
