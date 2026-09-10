@@ -6270,7 +6270,7 @@ en su propia TAREA 3.
 |---|---|---|---|
 | 0 | las aristas de serie del lote 2 (`D.37` sobre lo ya insertado), BLOQUEANTE | **CERRADA** | prevision de **28** publicada y commiteada (`8f1f6a4`) antes de declarar ninguna. **28 declaradas, 28 esperadas, diferencia 0**, todas al primer intento. Grafo de **9 a 37 aristas**, bitacora de **32 a 60 veredictos**, gate y 72 de 72 en verde. **Cero de las 28 las levanto ninguna señal** |
 | 1 | tramo A, cola del Cap. 5 (`cap_06.md` L247 a L455) | **CERRADA** | frontera de **siete** piezas publicada antes de cortar (el encargo nombra seis: la septima es un recuadro con interrogacion en el titulo). **15 candidatos, los 15 por la aduana al primer intento, 0 caerian.** 3 vecinos levantados y leidos, los 3 `SANO`. `D.30` encontro **5 puentes sobre 90 pasos, el 5,6 por ciento**, corregidos en el acto |
-| 2 | tramo B, el Cap. 6 (`cap_07.md` L9 a L41) con el borde declarado | ABIERTA | |
+| 2 | tramo B, el Cap. 6 (`cap_07.md` L9 a L41) con el borde declarado | **CERRADA** | borde declarado en bloque propio con las lineas de los dos ficheros, **y una discrepancia con la descripcion del encargo: la cabecera del Cap. 6 SI esta en `cap_07.md`**; lo que cruza el borde es el hilo del relato. **CERO candidatos**, y no por pobre sino por repetido: recapitula cuatro nodos que ya viven |
 | 3 | tramo C, material de cierre (`cap_07.md` L43 a L429), JUZGADO antes que cortado | ABIERTA | |
 | 4 | informe del lote y commits | ABIERTA | |
 | 5 | cierre del lote 2 con sus cuatro medidas por capitulo | ABIERTA | |
@@ -6817,3 +6817,105 @@ dos pasos de cumplimiento legal general antes de la primera cautela.
 **Y dos huerfanos que se declaran como tales:** `distinguir_perfil_guepardo_cordero`
 y `aplicar_metodo_promocion_sucesion` **no cuelgan de ninguna cabeza**, porque
 ninguna cabeza del grafo los enumera como parte suya. **No les invento un padre.**
+
+---
+
+## TAREA 2. EL TRAMO B, el Cap. 6 (`cap_07.md` L9 a L41)
+
+### 2.a. EL BORDE `cap_06` / `cap_07`, DECLARADO EN SU BLOQUE PROPIO
+
+**Esta decidido por el fundador el 10 sep 2026: el borde NO SE TOCA, se lee como
+unidad y se declara. No es una parada.** Lo que sigue es la declaracion, con las
+lineas de los dos ficheros y su salida pegada.
+
+**LO QUE MIDO, y no coincide con como el encargo lo describe.** El encargo dice
+*el Cap. 6 empieza en un fichero y su cabecera quedo en el anterior*. **Los
+instrumentos dicen lo contrario: la cabecera del Cap. 6 esta en `cap_07.md`, y lo
+que quedo en el fichero anterior es el TEXTO al que su primera frase se refiere.**
+
+    sed -n '1,7p' fuentes/smart_who/cap_07.md
+    ---
+    libro: Smart y Street, Who
+    edicion: Copyright 2008 ghSMART & Company, Inc., eISBN 978-0-345-51044-0
+    unidad: Cap. 6
+    titulo_textual: Your Greatest Opportunity
+    fidelidad: verbatim
+    ---
+
+    sed -n '1,6p' fuentes/smart_who/cap_06.md
+    ---
+    libro: Smart y Street, Who
+    edicion: Copyright 2008 ghSMART & Company, Inc., eISBN 978-0-345-51044-0
+    unidad: Cap. 5
+    titulo_textual: Sell: The Top Five Ways to Seal the Deal
+    fidelidad: verbatim
+    ---
+
+**LA CABECERA DEL CAP. 6 ESTA EN SU SITIO.** Lo que cruza el borde es el hilo del
+relato, y se ve poniendo las dos lineas juntas:
+
+| fichero | linea | la salida, pegada |
+|---|---:|---|
+| `cap_06.md` | L453 | `In first place.   <<L453` |
+| `cap_06.md` | L455, ultima del fichero | `The Americans beat the heavily favored Italian team by forty-four seconds.   <<L455` |
+| `cap_07.md` | L9, primera linea de texto | `9:Imagine the excitement of that!` |
+
+**`Imagine the excitement of that!` NO TIENE ANTECEDENTE DENTRO DE `cap_07.md`.**
+Su *that* es la victoria de la America's Cup que se cuenta y se cierra en las tres
+ultimas lineas de `cap_06.md`. **El Cap. 6 abre continuando una frase del Cap. 5.**
+
+**LO QUE ESTO CAMBIA EN LA LECTURA Y LO QUE NO.** Cambia que **P7 (`YOU CAN DO IT`,
+`cap_06.md` L417 a L455) y el tramo B se leen juntos**, porque son el mismo relato
+partido: el caso de Bill Koch empieza en uno y su moraleja esta en el otro. **No
+cambia ni un numero de linea, ni un fichero, ni un recorte.** Y **coincido con el
+fallo de los dos**: los dos son ilustracion y recapitulacion, y ninguno da nodo.
+
+**No lo declaro como discrepancia con el fundador**, porque su decision es sobre
+que hacer (no tocar, leer como unidad, declarar) y esa la cumplo entera. Lo declaro
+porque `EXTRACTOR.md` 5 dice que **una discrepancia entre una nota previa y la
+medicion de hoy se declara en vez de resolverse copiando**, y la nota previa aqui
+es la descripcion del borde, no la decision.
+
+### 2.b. EL FALLO DEL TRAMO B: CERO NODOS, con su razon y su cita
+
+**`cap_07.md` L9 a L41, 370 palabras, `unidad: Cap. 6`, `titulo_textual: Your
+Greatest Opportunity`. NO MINABLE, y no por pobre sino por REPETIDO.**
+
+    grep -n "Imagine the excitement" fuentes/smart_who/cap_07.md
+    9:Imagine the excitement of that!
+
+    sed -n '41p' fuentes/smart_who/cap_07.md
+    We wish you great success as you shift your focus from chasing the what, to solving the who.
+
+**Es la recapitulacion final del libro, y recapitula LOS CUATRO PASOS QUE YA VIVEN
+EN EL GRAFO.** Cuatro parrafos, uno por paso, y los cuatro remiten a procedimiento
+ya extraido:
+
+| la linea del Cap. 6 | el nodo que ya la tiene |
+|---|---|
+| `To figure out the scorecard for what matters in a job, just think about what success looks like for the role and how you could measure it through metrics or observation.` | `crear_tarjeta_puntuacion_puesto` y `definir_resultados_tarjeta_puntuacion` |
+| `To source the talent you need, use the tactics we described... Tap into your networks for referrals... Use recruiters when necessary. Build capabilities within your internal recruiting team.` | `abastecer_flujo_candidatos` y sus seis vias, tres de ellas nombradas aqui una a una |
+| `Select people by going through the rigorous interview process we taught you. Use the skill-will bull's-eye to match A Players to your scorecard` | `seleccionar_jugador_cuatro_entrevistas` y `calificar_tarjeta_puntuacion_habilidad_voluntad` |
+| `And sell A Players to take the positions you need them to fill by remembering the five F's of selling to seal the deal.` | `vender_puesto_jugador` y `abordar_cinco_efes_venta` |
+
+**LA VARA QUE LO TUMBA ES LA MADRE, la de `EXTRACTOR.md` 9:** *nombrar no es
+procedimentar; una linea solo cuenta como procedimiento propio si trae
+procedimiento propio, y no solo el nombre de otro.* **Aqui el nombre de otro es
+literal**: el propio texto dice `use the tactics we described` y
+`the rigorous interview process we taught you`. **El capitulo remite a sus propios
+capitulos anteriores, y esos ya estan minados.**
+
+**Y ES EL CASO QUE `EXTRACTOR.md` 11 NOMBRA:** *paso contra nodo cerca de 1,0: el
+material del candidato YA VIVE en el grafo. Es el duplicado mas comun de todos:
+volver a extraer algo que ya entro.* La diferencia es que **aqui no hago falta que
+me lo diga una señal**, porque el libro lo dice con todas las letras.
+
+**Lo que queda del tramo son las tres lineas de cierre** (`The A Method is simple`,
+`The A Method works`, `The A Method will help you go further`) mas la exhortacion
+final. **Eso es postura, y `EXTRACTOR.md` 9 la excluye por su nombre: una postura
+no ejecuta una busqueda.**
+
+**CERO CANDIDATOS DEL TRAMO B, y la razon esta escrita.** Un capitulo entero de
+370 palabras descartado, y **es el descarte mas barato y mas correcto de la
+vuelta**: extraerlo habria producido cuatro gemelos de nodos que entraron hace dos
+vueltas.
