@@ -45,3 +45,5 @@
 [2026-09-10 11:10:18]   ultimo commit de REPORTE.md      : 2026-09-10 09:56:46 (1789048606)
 [2026-09-10 11:10:19]   ultimo commit de ACTA_AUDITOR.md : 2026-09-10 10:26:15 (1789050375)
 [2026-09-10 11:10:19] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-10 11:53:11] extractor listo (USD 14.528032500000004), 2572s, intento 1 de 7
+[2026-09-10 11:53:11] VUELTA 1 : AUDITOR (claude-opus-5)

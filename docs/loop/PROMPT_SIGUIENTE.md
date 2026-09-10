@@ -1,126 +1,167 @@
-# ENCARGO DE LA VUELTA 5. Lote 2, `smart_who`: `cap_03` y `cap_04`
+# ENCARGO DE LA VUELTA 6. Lote 2, `smart_who`: Cap. 4 (`Select`) y Cap. 5 (`Sell`)
 
-*Escrito por el **auditor** el 10 sep 2026 al cerrar el ACTA 4, que es su sede
-(`AUDITOR_FORJA.md` 5.6). El ACTA 4 verifico la vuelta 4, **adjudico los seis
-discutibles y las tres propuestas**, y **no hubo parada**.*
+*Escrito por el **auditor** el 10 sep 2026 al cerrar el ACTA 5, que es su sede
+(`AUDITOR_FORJA.md` 5.6). El ACTA 5 verifico la vuelta 5, **adjudico los cinco
+discutibles y las cinco propuestas, los cinco discutibles SOSTENIDOS**, y **no hubo
+parada**.*
 
 **Commitea y pushea lo pendiente en la rama activa antes de tocar nada.**
 
 ---
 
-## LO PRIMERO, Y NO ES UNA TAREA: LAS TRES COMPROBACIONES DE APERTURA
+## LO PRIMERO, Y NO ES UNA TAREA: **TU MATERIAL SE NOMBRA POR LINEA, NO POR FICHERO**
 
-**Una condicion medida es la que mediste tu.** Las corres antes de leer una linea de
-libro, y **su resultado va en el reporte como su propia fila, antes de la TAREA 1**
-(es la propuesta que el ACTA 3 adjudico a favor y que la vuelta 4 ya cumplio):
+**EL ACTA 5 ADJUDICO TU DISCUTIBLE 1 A TU FAVOR: LA UNIDAD ES EL CAPITULO Y NO EL
+FICHERO** (manual 3.4, `D.13`, y el propio encargo anterior). **Acertaste, y
+acertaste tambien en no parar.**
 
-    ls fuentes/smart_who/                       tiene que dar cap_01.md a cap_07.md
-    python -c "import json,io; print('smart_who' in json.load(io.open('fuentes/FUENTES_CANONICAS.json',encoding='utf-8')))"
-    head -8 fuentes/smart_who/cap_03.md         la cabecera del capitulo que abres hoy
+**Y ESO TIENE UNA CONSECUENCIA QUE TE AFECTA HOY:** `cap_04.md` quedo commiteado
+como cerrado y **de el solo se mino L9 a L29**. Si esta vuelta empezara por
+`cap_05.md`, **el Cap. 4 entero se perderia**. Por eso el encargo no nombra
+ficheros. **Nombra rangos, y los midio el auditor:**
 
-**El auditor las midio hoy y las tres estan en verde.** `cap_03.md` declara
-`unidad: Cap. 2` y `titulo_textual: Scorecard: A Blueprint for Success`. **Si tu las
-mides en rojo, manda tu medida y paras.**
+| unidad | donde vive EXACTAMENTE | palabras | bloques |
+|---|---|---:|---:|
+| **Cap. 4, `Select: The Four Interviews for Spotting A Players`** | **`cap_04.md` L31 a L321** mas **`cap_05.md` L9 a L361** | **12.989** | **323** |
+| **Cap. 5, `Sell: The Top Five Ways to Seal the Deal`** | **`cap_05.md` L363 a L365** mas **`cap_06.md` L9 a L455** | **11.370** | |
+
+**LAS DOS PIEZAS QUE EL AUDITOR YA ABRIO Y QUE TE AHORRAN LA BUSQUEDA:**
+
+    cap_04.md L31  "Steve Kerr, the chief learning officer for Goldman Sachs..."
+                                                      <- ABRE el Cap. 4
+    cap_04.md L321 "CONDUCTING AN EFFECTIVE WHO INTERVIEW"
+                                                      <- el fichero MUERE en un titulo
+    cap_05.md L9   "To put the Who Interview into practice, divide a person's
+                    career story into the equivalent of chapters..."
+                                                      <- CONTINUA ese mismo titulo
+    cap_05.md L339 "Now it is time to take the final step: selling the person on
+                    actually joining your team."      <- CIERRA el Cap. 4
+    cap_05.md L343 a L355  "HOW TO SELECT AN A PLAYER", recuadro de SEIS puntos.
+                            ENTERO, no partido. Verificado por el auditor
+    cap_05.md L359 y L361  las dos notas al pie del Cap. 4
+    cap_05.md L363 "Most managers fail to sell a candidate."
+                                                      <- ABRE el Cap. 5
+
+**Si tu lectura del corte discrepa de esta tabla, MANDA TU MEDIDA y declara la
+discrepancia**, como hiciste en A.4. **Esa fue la mejor pagina de la vuelta 5.**
 
 ---
 
-## EL ESTADO CONTRA EL QUE ABRES, MEDIDO POR EL AUDITOR EN `6e2946a`
+## LAS COMPROBACIONES DE APERTURA, AHORA CON CUATRO LINEAS
+
+**Una condicion medida es la que mediste tu.** Antes de leer una linea de libro, y
+**su resultado va en el reporte como su propia fila, antes de la TAREA 1**:
+
+    ls fuentes/smart_who/                          cap_01.md a cap_07.md
+    python -c "import json,io; print('smart_who' in json.load(io.open('fuentes/FUENTES_CANONICAS.json',encoding='utf-8')))"
+    head -8 fuentes/smart_who/cap_05.md            cabecera: unidad y titulo_textual
+    grep -n '[^[:space:]]' fuentes/smart_who/cap_05.md | tail -1     <-- LA CUARTA, NUEVA
+
+**LA CUARTA LINEA ES TU PROPUESTA C.5.3, ADJUDICADA A FAVOR** (ACTA 5, 3.8): *la
+cabecera dice donde empieza el fichero, y el desajuste vive en la ultima linea.*
+**Y se arregla con una linea de encargo, no con una guarda** (moratoria de
+maquinaria). **Corre las cuatro sobre `cap_05.md` y sobre `cap_06.md`.**
+
+**El auditor las midio hoy y las cuatro estan en verde.** `cap_05.md` declara
+`unidad: Cap. 4`, `titulo_textual: Select: The Four Interviews for Spotting A
+Players`, y su ultima linea es `Imagine putting all of that work into finding Mr.
+or Ms. Right...`. **Si tu las mides en rojo, manda tu medida y paras.**
+
+---
+
+## EL ESTADO CONTRA EL QUE ABRES, MEDIDO POR EL AUDITOR EN `6c396ed`
 
 | medida | cifra |
 |---|---:|
-| nodos vivos en el dataset | **8** |
+| nodos vivos en el dataset | **8** (clave `estado`, valor `vivo`) |
 | pasos vigentes en el grafo | **43** |
 | aristas declaradas | **2 relaciones**, 4 extremos |
-| veredictos en bitacora | **2**, los dos CONTINUA |
-| **candidatos en `cuarentena/smart_who/`** | **2**, los dos ENTRARIAN, **cero insertados** |
-| fuentes canonicas registradas / en uso | **13** (12 libros mas `_lea_esto`) / **2** |
-| capitulos del lote 2 leidos | **2 de 7**. Quedan **39.500 palabras, el 89,1 por ciento** |
+| veredictos en bitacora | **2**, los dos CONTINUA, los dos con razon escrita |
+| **candidatos en `cuarentena/smart_who/`** | **17**, **los 17 ENTRARIAN**, **cero insertados** |
+| **pasos en la bandeja de cuarentena** | **100** |
+| fuentes canonicas registradas / en uso | **13** / **2** |
+| capitulos del lote 2 leidos | **4 de 7**. Quedan **28.263 palabras** |
+| **pares que levantarian sobre los 17** | **38 de 272**: 34 por familia, 10 por paso contra nodo, **0 por similitud** |
 
-**Mide tu la apertura igual, antes de la primera operacion, y si discrepas de esta
-tabla manda tu medicion y declara la discrepancia.**
+**Mide tu la apertura igual, antes de la primera operacion, y si discrepas manda tu
+medicion y declara la discrepancia.**
 
 ---
 
-## TAREA 1. LOS REGISTROS DEL ACTA 4
+## TAREA 1. LOS REGISTROS DEL ACTA 5
 
 *Va primero porque un registro que no se escribe en la vuelta siguiente se pierde.
-**No toca ningun dato del grafo**, y ninguna pide maquinaria.*
+**No toca ningun dato del grafo, no pide maquinaria, y NADA de esta tarea escribe
+en sede ajena.** El encargo anterior te mando escribir en `docs/BANCO_DE_REGLAS.md`
+y eso fue **una caida del auditor**, declarada en el ACTA 5 seccion 4.2. **No se
+repite: las tres entradas del banco van a Alexis por mano del auditor.***
 
 ### 1.a. LA CORRECCION DECLARADA, sin borrar el texto viejo
 
-Anotala **al lado** de la seccion 3.c del `REPORTE.md` de la vuelta 4, sin tocarle
-una palabra al bloque original:
+Anotala **al lado** de la tabla de la seccion 3.e del `REPORTE.md` de la vuelta 5,
+sin tocarle una palabra a la fila original:
 
-> **CORRECCION DECLARADA (auditor, ACTA 4 seccion 4.1, 10 sep 2026).** El bloque de
-> 3.c publica `similitud_texto 0.126` (c2 contra c1) y `0.117` (c1 contra c2).
-> **Esas dos cifras son del candidato ANTES de corregir el puente del paso 11.**
-> Sobre el fichero que viaja en `6e2946a`, `src.aduana.medir` da **0,123** y
-> **0,114**. **Las otras cuatro cifras del bloque (`familia_id` 0,333 en los dos
-> sentidos, `paso_contra_nodo` 0,405 y 0,409) reproducen exactas, y la conclusion
-> entera se sostiene:** el auditor verifico por mutacion con su control que el
-> segundo candidato **bloquea por `familia_id` en cuanto entre el primero**.
+> **CORRECCION DECLARADA (auditor, ACTA 5 seccion 4.1, 10 sep 2026).** La tabla de
+> 3.e publica **`L391`** como la linea del cuarto puente. **La cita *"One company we
+> know was so overwhelmed... asked its researchers to screen candidates a little
+> more thoroughly"* esta en `cap_03.md` L393**, verificada por el auditor con
+> `grep -n "overwhelmed"` y `sed -n '393p'`. `L391` existe y dice otra cosa (*"The
+> downside with researchers is that they won't qualify candidates as thoroughly as
+> you might like..."*). **Las otras tres citas de la tabla (L313, L343, L383)
+> reproducen exactas, el ejemplar es real, y la especie que sostiene queda
+> ADJUDICADA como QUINTA especie de `D.30`.**
 
-### 1.b. LA ESPECIE NUEVA DE PUENTE, al banco
+### 1.b. LAS TRES ARISTAS PENDIENTES, en bloque propio y titulado
 
-**`D.30` tiene tres especies escritas y esta casa acaba de medir la cuarta.**
-Registrala **con su ejemplar pegado**, que es lo que impide que una especie se
-estreche sola:
+**`D.29`: una arista que solo vive en la prosa de un reporte se pierde.** Van en un
+bloque propio de tu reporte, esta vuelta y todas las que sigan:
 
-> **EL PUENTE DE LA CONCLUSION.** Las tres viejas (destinatario, periodo,
-> responsable) son **cosas que el libro no nombra** y se cazan por ausencia. Esta no:
-> **el libro habla, deja la duda abierta, y el paso la cierra.**
+1. **`aplicar_metodo_ghsmart_contratacion` es CABEZA y espera CUATRO hijos.** Tienes
+   **dos entregados** (`crear_tarjeta_puntuacion_puesto` y
+   `abastecer_flujo_candidatos`). **Esta vuelta le trae el TERCERO (Select) y, si
+   cabe, el CUARTO (Sell).** No se cablea: **una arista se cablea contra ids que ya
+   viven** y la cabeza sigue en cuarentena.
+2. **`detectar_metodos_vudu_contratacion` va antes por L53, y NO SE CABLEA NUNCA.**
+   Adjudicado: la arista es de despliegue, no de calendario.
+3. **El Cap. 3 usa la tarjeta de puntuacion del Cap. 2 en dos de sus seis puntos**
+   (`contratar_reclutadores_externos` la construye, `pedir_referencias_empleados`
+   mete un resultado en ella). **Ninguna señal las levanta.** Sin cablear.
+
+**Y lo mismo que hiciste en la vuelta 5: los hijos de esta vuelta se escriben con la
+cabeza nombrada en su prosa o en sus `condiciones_activacion`**, para que el dia de
+la insercion la arista se cablee por lectura.
+
+### 1.c. LA QUINTA ESPECIE DE `D.30`, YA ADJUDICADA, PARA QUE LA USES AL ESCRIBIR
+
+**No la registras tu en ningun sitio: la registra Alexis, y el auditor ya se la
+enruto.** Lo que si haces es **buscarla expresamente**, porque el Cap. 4 va a estar
+lleno de entrevistas contadas por quien las hizo:
+
+> **EL CASO ASCENDIDO A DOCTRINA.** El libro cuenta lo que alguien **HIZO** y el
+> paso lo escribe como lo que **TU** tienes que hacer. **No falta nada y no se cierra
+> nada: el contenido esta entero en el parrafo y lo que cambia es el sujeto del
+> verbo.**
 >
->     smart_who/cap_02.md L81 : "The answer sounds nice, but we question how many
->                                people would actually do those things."
->                                (dos frases antes: "Maybe. Then again, maybe not.")
->     lo escrito              : "La respuesta suena bien y por eso no dice nada."
+> **SU DETECTOR NO ES LA AUSENCIA, ES EL EJECUTOR** (manual 4, `EXTRACTOR.md` 9):
+> *la prueba de que una linea es procedimiento es que EXISTE QUIEN LO EJECUTA.*
 >
-> **Es la mas peligrosa de las cuatro porque no se detecta por ausencia: el parrafo
-> esta ahi, dice casi eso, y la comprobacion superficial da verde.** Se caza leyendo
-> **si el libro cerro la frase o la dejo abierta.**
-
-### 1.c. LAS NUEVE ADJUDICACIONES DEL AUDITOR
-
-**Las nueve se resolvieron con reglas escritas y ninguna pidio doctrina nueva.**
-Registralas donde el banco registra las adjudicaciones del auditor, **con su cita**:
-
-| # | lo adjudicado | con que regla |
-|---:|---|---|
-| 1 | **no parar con el `cap_01` en cero fue correcto.** La parada es POR VUELTA | precedente publicado del `cap_03` del lote 1 (`CIERRE_LOTE_1.md` 3.1) mas la clausula *no paras por un capitulo de pocos nodos* |
-| 2 | **el parrafo 20 del `cap_01` fuera**, por DOS caminos | vara madre (*nombrar no es procedimentar*) **y** manual lineas 81 y 82: **seria la segunda compresion de la misma numeracion** |
-| 3 | **la arista de L53 NO se cablea.** **La arista es de DESPLIEGUE, no de calendario** | `esquema/nodo.schema.json` (*madre e hijo, secuencia dirigida*), `EXTRACTOR.md` 11 y `D.29`. La precedencia ya vive en `condiciones_activacion` y en el paso 12 |
-| 4 | **la definicion del jugador A fuera** | `EXTRACTOR.md` 9: *una definicion sin nada que hacer*. **Y el criterio: si el `entregable_esperado` hay que inventarlo, no habia procedimiento** |
-| 5 | **el puente corregido SE CUENTA** | `AUDITOR_FORJA.md` 8.4 mas la comparabilidad: la linea base del 36,11 son **pasos ESCRITOS**, y los 13 del lote 1 tambien se corrigieron |
-| 6 | **un nodo de los diez metodos de vudu, no once** | manual lineas 81 y 82 (*un nodo por PASO*) mas manual 4 (*una advertencia es linea*). **Y es LA UNICA compresion permitida de esa numeracion** |
-| 7 | **el puente de la conclusion entra en `D.30`** como cuarta especie | es un CASO añadido a un catalogo, no una frontera movida |
-| 8 | **el disparador del tramo NO se lee en los dos sentidos** | `EXTRACTOR.md` 12.4: *la cifra no es sagrada; el disparador si*. **El volumen ya tiene su escalera, que es la cifra de puentes** |
-| 9 | **una vineta es un BLOQUE y se cuenta como tal** | y si una frontera prefiere plegarla en su parrafo introductor, **la fila lo dice y el total lleva las dos cifras** |
-
-### 1.d. LAS DOS ARISTAS PENDIENTES, que llevas contigo toda la campaña
-
-**`D.29`: una arista que solo vive en la prosa de un reporte se pierde.** Estas dos
-van en **un bloque propio y titulado** de tu reporte, esta vuelta y todas las que
-sigan hasta que se resuelvan:
-
-1. **`aplicar_metodo_ghsmart_contratacion` es CABEZA de serie y espera cuatro
-   hijos**: `cap_03` (Scorecard), `cap_04` (Source), `cap_05` (Select) y `cap_06`
-   (Sell). **Esta vuelta le trae los DOS primeros.** No se cablea todavia: **una
-   arista se cablea contra ids que ya viven**, y la cabeza sigue en cuarentena.
-2. **`detectar_metodos_vudu_contratacion` va antes en el tiempo por L53, y NO SE
-   CABLEA NUNCA.** Adjudicado: la arista es de despliegue, no de calendario.
+> **Y SU FRONTERA, que es tu propia linea de 3.f y quedo SOSTENIDA:** si el libro
+> **manda el acto** y despues enumera los **medios**, los medios son inventario y se
+> transcriben **aunque los ilustre quien los usa**; si el libro **no manda nada** y
+> solo cuenta lo que alguien hizo, es **caso** y se retira.
 
 ---
 
-## TAREA 2. EL `cap_03` ENTERO (*Cap. 2*, `Scorecard: A Blueprint for Success`)
+## TAREA 2. EL Cap. 4 ENTERO, `Select` (`cap_04.md` L31 a L321 mas `cap_05.md` L9 a L361)
 
-**LA UNIDAD ATOMICA ES EL CAPITULO.** Frontera del `cap_03`, candidatos del
-`cap_03`, relectura de fidelidad del `cap_03`, informe del `cap_03`, **commit del
-`cap_03`**. Y solo entonces el `cap_04`. **Nunca los dos juntos.**
+**LA UNIDAD ATOMICA ES EL CAPITULO.** Frontera del Cap. 4, candidatos del Cap. 4,
+relectura de fidelidad del Cap. 4, informe, **commit del Cap. 4**. Y solo entonces
+el Cap. 5. **Nunca los dos juntos.**
 
 **1. LA FRONTERA, PUBLICADA ANTES DE CORTAR.** Que hay dentro, que es procedimiento
-y que no, con la prueba del inventario (`D.27`) y sus tres restricciones, y el saldo:
-cuantos procedimientos y cuantas posturas. **Con la columna de linea del propio
-fichero**, como hiciste en la vuelta 4: eso es lo que hizo tu frontera auditable.
+y que no, con la prueba del inventario (`D.27`) y sus tres restricciones, y el
+saldo. **Con la columna de linea y diciendo de que fichero es cada tramo**, que este
+capitulo vive en dos.
 
 **2. LOS CANDIDATOS, CON EL CICLO DE CINCO PASOS**, sin cambiar ni el orden ni una
 pieza:
@@ -137,48 +178,59 @@ pieza:
 delante.
 
 **3. EL INFORME Y EL COMMIT:** `python forja.py informe --carpeta cuarentena/smart_who`,
-pegas el saldo entero, y commiteas el capitulo con los JSON dentro. El mensaje dice
-que capitulo y cuantos candidatos.
+pegas el saldo entero, y commiteas el capitulo con los JSON dentro. **El mensaje
+dice el capitulo CON SU RANGO DE LINEA y cuantos candidatos**, como hiciste en
+`3dd9dec` y `0a94d12`.
 
 ### LO QUE ESTE CAPITULO TIENE DE ESPECIAL, y conviene saberlo antes
 
-**ES EL PRIMER HIJO DE LA CABEZA.** Scorecard es el paso 1 de los cuatro que
+**ES EL TERCER HIJO DE LA CABEZA.** Select es el paso 3 de los cuatro que
 `aplicar_metodo_ghsmart_contratacion` comprime. **Ese nodo es la UNICA compresion
-permitida de esa numeracion**, asi que lo que salga del `cap_03` **es su hijo, no
-otra compresion**: un procedimiento propio con sus pasos, no un resumen de los
-cuatro pasos otra vez.
+permitida de esa numeracion.**
 
-**Y ES EL CAPITULO DONDE LA CIFRA DE PUENTES SE JUEGA DE VERDAD.** El `cap_02` era
-rico en inventario (dos mandatos con sus listas, diez y cuatro). **Un capitulo que
-enseña a escribir un documento puede ser mucho mas delgado en inventario y mucho mas
-grueso en prosa**, y `D.30` dice donde salen los puentes: *un parrafo pobre no
-produce un nodo pobre, produce un nodo inventado.* **Cuando el inventario del libro
-sea delgado, desconfia de tus propios pasos.**
+**SU RECUADRO NUMERADO ESTA ENTERO EN UN SITIO, y por primera vez en el lote:**
+`HOW TO SELECT AN A PLAYER`, `cap_05.md` L343 a L355, **seis puntos**. **No hay
+serie partida esta vez.**
+
+**Y AQUI ES DONDE LA QUINTA ESPECIE SE JUEGA DE VERDAD.** El Cap. 3 triplico la tasa
+del Cap. 2 **no por ser mas pobre sino por tener el caso entretejido con el
+mandato** (ACTA 5, 7.3). Un capitulo sobre **entrevistas** va a venir lleno de
+*"un consultor nuestro hizo"*, *"un cliente nos conto"*, *"Michael Haugen dedico los
+primeros diez minutos a"*. **Cuando leas una frase en tercera persona que suene a
+instruccion, pregunta quien la ejecuta.**
+
+**UN AVISO DE GUION, MEDIDO POR EL AUDITOR, QUE VALE UNA VUELTA SI NO SE DICE:**
+`cap_05.md` tiene **9 guiones medios**, y uno cae **dentro del material del Cap. 4**:
+la nota al pie de **L359** (`p22` guion medio `28`). **Si la transcribes tal cual,
+el hook aborta el commit.** Convierte, no copies.
 
 ---
 
-## TAREA 3. EL `cap_04` ENTERO (*Cap. 3*, `Source: Generating a Flow of A Players`)
+## TAREA 3. EL Cap. 5 ENTERO, `Sell` (`cap_05.md` L363 a L365 mas `cap_06.md` L9 a L455)
 
-**Las mismas tres partes, enteras y por separado**, y solo si el `cap_03` quedo
-cerrado con su commit dentro.
+**Las mismas tres partes, enteras y por separado**, y **solo si el Cap. 4 quedo
+cerrado con su commit dentro.**
 
-**EL AVISO DE VOLUMEN, CON SU CIFRA DELANTE Y NO COMO ADORNO:**
+**EL AVISO DE TRAMO, CON SU CIFRA DELANTE Y NO COMO ADORNO:**
 
-    cap_03   10.696 palabras      casi TRES VECES el cap_02
-    cap_04    6.441 palabras
-    la vuelta 17.137 palabras     TRES VECES Y MEDIA las 4.824 de la vuelta 4
+    Cap. 4   12.989 palabras       mas del DOBLE que el Cap. 2 (6.286)
+    Cap. 5   11.370 palabras
+    la vuelta 24.359 palabras      mas del DOBLE que las 11.181 de la vuelta 5
 
-**La vuelta 4 gasto 11 minutos y medio en las 3.863 palabras del `cap_02`.** No es
-una prediccion, es la unica cifra que hay.
+**La vuelta 5 saco 15 candidatos de 11.181 palabras y eso es EXACTAMENTE el techo
+del tramo** (`EXTRACTOR.md` 12.4: entre cinco y quince).
 
-> **SI EL `cap_03` SE COME LA VUELTA, LO CIERRAS ENTERO Y PARAS AHI.** Reporte
+> **SI EL Cap. 4 SOLO YA LLENA EL TRAMO, EL Cap. 5 NO SE EMPIEZA. Eso no es un
+> fallo: es el tramo funcionando**, y esta escrito antes de que ocurra para que no
+> haya que justificarlo despues.
+>
+> **Y SI EL Cap. 4 SE COME LA VUELTA, LO CIERRAS ENTERO Y PARAS AHI.** Reporte
 > parcial, nunca vacio, diciendo donde te quedaste. **Un capitulo cerrado vale mas
-> que dos a medias**, y la razon no es comodidad: **la cifra que esta vuelta existe
-> para medir es POR CAPITULO**, y dos capitulos leidos a medias no dejan ni una fila
-> honesta.
+> que dos a medias**, y la razon es que **la cifra que esta vuelta existe para medir
+> es POR CAPITULO**.
 
-**Y SI EL `cap_03` SOLO YA LLENA EL TRAMO** (entre cinco y quince candidatos), **el
-`cap_04` no se empieza**. Eso no es un fallo: es el tramo funcionando.
+**Y LA ADJUDICACION 8 DEL ACTA 4, VIGENTE: el disparador NO se lee en los dos
+sentidos.** Que la vuelta 5 cupiera **no autoriza a subir el tramo**.
 
 ---
 
@@ -188,57 +240,100 @@ una prediccion, es la unica cifra que hay.
 
 | medida | como la das |
 |---|---|
-| **candidatos por mil palabras** | una fila por capitulo, mas el total. **Denominador: `wc -w` sobre el fichero entero**, que es el que usa la linea base del lote 1. Dilo al lado |
-| **pasos inventados sobre pasos escritos** | **una fila por capitulo.** Es la cifra de la regla de volumen. Si un capitulo escribe cero pasos, **la fila dice *sin denominador*, no cero por ciento** |
+| **candidatos por mil palabras** | una fila por capitulo, mas el total. **Denominador por CAPITULO**, que es el honesto, y si das tambien el de fichero **dilo al lado**, como hiciste en 4.a |
+| **pasos inventados sobre pasos escritos** | **una fila por capitulo.** Es la cifra de la regla de volumen. Si un capitulo escribe cero pasos, la fila dice *sin denominador*, **no cero por ciento**. Denominador: **pasos ESCRITOS**, y el puente corregido **se cuenta**, lo retires o lo reescribas |
 | **veredictos escritos** | del lote |
-| **cuanto tardo y si el tramo fue el correcto** | de la vuelta, diciendo si el segundo capitulo cupo |
+| **cuanto tardo y si el tramo fue el correcto** | de la vuelta, diciendo si el segundo capitulo cupo. **Y da tus dos marcas propias**: el auditor las cruza con `loop.log`, que mide el turno entero y no lo mismo que tu |
 
-**LA TABLA DE MARCADO VA EN TU REPORTE**, paso a paso y con el parrafo citado en cada
-puente, no dentro del JSON.
+**LA TABLA DE MARCADO VA EN TU REPORTE**, paso a paso y con el parrafo citado en
+cada puente, no dentro del JSON.
+
+**LA SERIE QUE LLEVAS, para que la fila nueva se lea contra ella:**
+
+    lote 1               36 pasos   13 puentes   36,11 por ciento
+    lote 2, cap_02       16 pasos    1 puente     6,25
+    lote 2, Cap. 2       35 pasos    1 puente     2,86
+    lote 2, Cap. 3       53 pasos    4 puentes    7,55
+    lote 2 acumulado    104 pasos    6 puentes    5,77
 
 ---
 
 ## LO QUE ESTA VUELTA TIENE QUE DEJAR MEDIDO
 
-1. **La tasa de puentes de un capitulo GRUESO.** La del `cap_02` (6,25 por ciento
-   sobre 16 pasos) es de un capitulo pequeño y rico en inventario. **Con 10.696
-   palabras el denominador deja de ser ruidoso**, y esa es la cifra que de verdad va
-   a dimensionar el lote 3.
-2. **Si un capitulo de 10.696 palabras cabe en una vuelta.** La vuelta 4 contesto a
-   medias por 4.824 palabras. **Esta lo contesta de verdad.**
-3. **Cuantos vecinos levanta la aduana con dos hermanos de familia en la bandeja.**
-   Los candidatos del `cap_03` y del `cap_04` comparten dominio con los dos que ya
-   esperan. **El `CHOCAN` del informe solo mira ids identicos**, asi que si quieres
-   saber si se levantarian entre si, **lo mides con `src.aduana.medir` y lo dices**,
-   como hizo 3.c.
-4. **Si la prueba del inventario aguanta en un capitulo que enseña a escribir un
-   documento**, que es un genero distinto del narrativo del `cap_02` y del normativo
-   del lote 1.
+1. **La tasa de puentes de un capitulo NARRADO EN PRIMERA PERSONA DEL PLURAL.** El
+   Cap. 2 (2,86) tenia los casos aparte; el Cap. 3 (7,55) los tenia entretejidos.
+   **El Cap. 4 va a ser el mas denso en caso de los tres**: es el capitulo del
+   metodo donde los autores cuentan sus propias entrevistas. **Esa fila es la que de
+   verdad prueba la lectura de 7.3.**
+2. **Si la quinta especie, ya nombrada ANTES de escribir, baja la cifra.** El Cap. 3
+   la descubrio a posteriori. **Este la lleva en la cabeza desde el primer paso.**
+   Si baja, la casa ha medido que **nombrar una especie la previene**; si no baja,
+   ha medido que no. **Las dos respuestas valen y las dos hay que decirlas.**
+3. **Si un capitulo de 12.989 palabras cabe en una vuelta.** La vuelta 5 contesto
+   por 11.181. **Esta lo lleva un 16 por ciento mas lejos.**
+4. **Cuantos vecinos levanta la aduana con TRES series hermanas en la bandeja.** Al
+   cierre de la vuelta 5 eran **38 de 272**. Con los hijos del Cap. 4 dentro, **lo
+   mides con `src.aduana.medir` y lo das con su tabla**, como en 3.i. **Y si vuelves
+   a encontrar un par que solo ve la señal 3, dilo: llevas cuatro y son el ejemplar
+   vivo de por que se paga la cola falsa.**
 
 ---
 
 ## LO QUE EL AUDITOR TE PIDE QUE NO REPITAS, y es una escalada, no un consejo
 
-**CUATRO VUELTAS SEGUIDAS FALLANDO EN EL MISMO SITIO, y ninguna en el dato:**
+**CINCO VUELTAS SEGUIDAS FALLANDO EN LO QUE RODEA AL DATO, Y NI UNA EN EL DATO:**
 
 | vuelta | donde cayo |
 |---|---|
 | 1 | la lectura |
 | 2 | la aritmetica de acompañamiento |
 | 3 | el recuento de acompañamiento |
-| **4** | **una señal de acompañamiento medida antes de una correccion y publicada despues** |
+| 4 | una señal medida antes de una correccion y publicada despues |
+| **5** | **un puntero de linea: `L391` publicado donde la cita esta en `L393`** |
 
-**El dato central ha estado limpio las cuatro veces. Lo que falla es lo que lo
-rodea.** El remedio esta escrito en tu propio protocolo, `EXTRACTOR.md` seccion 4, y
-lo unico que hace falta es aplicarlo tambien a las señales:
+**LA BUENA NOTICIA PRIMERO, porque te la ganaste:** el remedio de la vuelta 4
+(*remedir al cierre lo que la propia vuelta pudo mover*) **lo aplicaste y funciono**.
+Tu 3.i remidio los vecinos sobre los 17, cazo tu propia generalizacion de 2.h y la
+corrigio sin borrar la vieja. **Eso es exactamente lo que se te pidio y lo hiciste
+dentro de la misma vuelta.**
 
-> **MEDIR TEMPRANO Y PUBLICAR TARDE SIN REMEDIR ES LA MISMA ESPECIE QUE CITAR SIN
-> MIRAR.** Toda cifra que publiques **se remide al cierre si algo de la propia vuelta
-> pudo haberla movido**, y una correccion de un paso mueve las tres señales de ese
-> candidato.
+**EL REMEDIO DE ESTA ES SU GEMELO, PARA LAS CITAS:**
+
+> **UNA CITA DE LINEA SE REABRE ANTES DE PUBLICARSE.** No se escribe de memoria ni
+> se arrastra de un borrador: **antes de teclear `L<n>` en el reporte, se corre
+> `sed -n '<n>p'` sobre el fichero y se mira que la frase esta ahi.** `EXTRACTOR.md`
+> 4 se titula *la cita lleva su linea* justamente porque **la linea ES la prueba**;
+> una linea que no entrega su prueba es una ruta rota (cosecha 7.B).
 
 **Esto es una linea de disciplina, no un programa. NO escribas una guarda para
-esto** (moratoria de maquinaria, cosecha 7.F).
+esto** (moratoria de maquinaria, `EXTRACTOR.md` 13).
+
+**Y EL AVISO DE CREDITO, CON SU CIFRA, QUE ES LO QUE LO VUELVE ACCIONABLE:**
+
+    CLASE                  0 de 2 tandas seguidas
+    CIFRA PUBLICADA        0 de 2 tandas seguidas
+    REPORTE que acumula    1 de 3 tandas seguidas   <-- esta vuelta lo puso en 1
+
+**Una cifra falsa en TABLA, CABECERA o CONCLUSION en la vuelta 6 y en la 7 para el
+bucle.** En prosa de acompañamiento o en lista de rutas, no acumula. **La diferencia
+esta en donde la pones, asi que ponla donde puedas defenderla.**
+
+---
+
+## UNA LINEA DE CRITERIO QUE EL ACTA 5 DEJA ESCRITA, y que sale de tus dos capitulos
+
+**En el Cap. 2 recortaste por prudencia tres particulares de un caso** (las razones
+de Washington de L61) **y en el Cap. 3 conservaste uno** (los 5.000 dolares de
+L357). **Las dos decisiones quedaron SOSTENIDAS**, pero el criterio no estaba
+dicho. **Lo dice el auditor ahora:**
+
+> **UN PARTICULAR DE UN CASO ENTRA EN UN PASO SOLO SI (a) EL LIBRO LO MANDA FUERA
+> DEL CASO, Y (b) EL PASO LO ATRIBUYE EN SU PROPIO TEXTO.** Si falta cualquiera de
+> las dos, se va al `resumen_teorico` con su dueño delante.
+
+**No es doctrina nueva:** es el manual 3.5 (*el caso no es la casa*, y un dato del
+caso dentro de la doctrina es la señal barata de que el caso se metio donde no era)
+mas `D.30`.
 
 ---
 
@@ -246,40 +341,48 @@ esto** (moratoria de maquinaria, cosecha 7.F).
 
 **Paras, lo declaras en TU REPORTE y te detienes si:**
 
-- **alguna de las tres comprobaciones de apertura falla** (la carpeta, la clave, la
-  cabecera). **Manda tu medida, no este parrafo**;
-- una regla de la casa te obliga a algo que rompe otra regla de la casa;
-- necesitas mover un umbral, una regla de id, el esquema, la prueba del inventario
-  (`D.27`) o la vara de continua contra repite. **Ninguna vuelta mueve nada de eso**;
-- **el MATERIAL DE LA VUELTA no da ni un procedimiento.** *(Adjudicado por el ACTA 4
-  seccion 3.1, para que no vuelva a costar una duda:* **la parada es por VUELTA, no
-  por capitulo.** *Un capitulo de cero es un resultado medido y se publica con su
-  frontera entera. Si los DOS capitulos dan cero, ahi si paras.)*
+- **alguna de las cuatro comprobaciones de apertura falla.** **Manda tu medida, no
+  este parrafo**;
+- una regla de la casa te obliga a algo que rompe otra regla de la casa **y no hay
+  arbitro escrito**. *(Si lo hay, como en tu 1.b de la vuelta 5, no es parada: se
+  cita el arbitro y se sigue. Lo hiciste bien.)*;
+- necesitas mover un umbral, una regla de id, el esquema, **la prueba del inventario
+  (`D.27`)**, **`D.30`** o la vara de continua contra repite. **Ninguna vuelta mueve
+  nada de eso.** *(Y en particular: si una lectura te pide meter el antipatron
+  dentro de `D.27`, eso es ensanchar la prueba y es parada. El ACTA 5 lo dejo como
+  ejemplar medido, no como pendiente.)*;
+- **el MATERIAL DE LA VUELTA no da ni un procedimiento.** **La parada es por VUELTA,
+  no por capitulo.** Un capitulo de cero es un resultado medido y se publica con su
+  frontera entera. **Si los DOS capitulos dan cero, ahi si paras.**
 
 **TU NO ESCRIBES `docs/loop/PARA_ALEXIS.md`** (`D.28`). Eso lo hace el auditor, y
-solo el. **Y un encargo asigna trabajo, NO MUEVE UNA SEDE.**
+solo el. **Y un encargo asigna trabajo, NO MUEVE UNA SEDE:** si alguna linea de este
+encargo te mandara escribir en `dataset/`, `bitacora/`, `censos/`, `config/` o
+`docs/BANCO_DE_REGLAS.md`, **no lo hagas, tallalo y proponlo**, exactamente como
+hiciste en la vuelta 5. **Tenias razon y quedo adjudicado.**
 
 **NO paras por:** que un candidato caiga en la aduana (lo corriges y pegas la
 salida), que un capitulo de pocos nodos (se dice con su razon), que el tramo no se
-llene (**adjudicado: una vuelta corta de candidatos no es un fallo si publicaste tu
-frontera entera y dijiste tu razon**), ni porque la relectura de fidelidad te obligue
-a retirar pasos que acabas de escribir. **Eso ultimo es la regla funcionando antes de
-que el dato entre.**
+llene, ni porque la relectura de fidelidad te obligue a retirar pasos que acabas de
+escribir. **Eso ultimo es la regla funcionando antes de que el dato entre, y en la
+vuelta 5 funciono cinco veces.**
 
 **NO INSERTAS NADA.** El arnes arranca en `MODO_INSERCION=cuarentena` y **la
-insercion es una autorizacion del fundador, no un default** (`D.26`). Los dos
-candidatos del `cap_02` siguen esperando, y **eso no bloquea esta vuelta** (`D.32`).
+insercion es una autorizacion del fundador, no un default** (`D.26`). Los 17
+candidatos siguen esperando, y **eso no bloquea esta vuelta** (`D.32`).
 
-**Y NO FABRICAS MAQUINARIA** (seccion 13). Ni arneses, ni guardas, ni lectores. **En
-particular: no propongas una guarda que automatice la relectura de fidelidad.** El
-texto fuente no esta en el repo, y una guarda que no tiene el libro no puede juzgar
-fidelidad al libro (`D.30`).
+**Y NO FABRICAS MAQUINARIA** (`EXTRACTOR.md` 13). Ni arneses, ni guardas, ni
+lectores. **En particular: no propongas una guarda que automatice la relectura de
+fidelidad** (el texto fuente no esta en el repo y una guarda sin el libro no puede
+juzgar fidelidad al libro, `D.30`), **ni una que compruebe la ultima linea del
+fichero** (es una linea de encargo y ya esta puesta arriba).
 
 ---
 
-**MARCA TUS DISCUTIBLES ANTES DE SABER SI ACIERTAS**, ordenados por lo que costarian
-si fallas. **Los seis de la vuelta 4 se sostuvieron los seis**, y fue lo que hizo
-informativa la tanda: **una duda marcada a tiempo vale mas que un acierto callado.**
+**MARCA TUS DISCUTIBLES ANTES DE SABER SI ACIERTAS**, ordenados por lo que
+costarian si fallas. **Los cinco de la vuelta 5 se sostuvieron los cinco, y el
+primero cambio el encargo de hoy.** Una duda marcada a tiempo vale mas que un
+acierto callado.
 
 **Cero guiones largos y cero guiones medios. Deja correr el hook. Si algo contradice
 una regla vigente, paras y lo traes. No adivines.**
