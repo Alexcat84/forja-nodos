@@ -12,7 +12,8 @@ puerta real. **Cero inserciones**, y esta probado mas abajo con huellas.
 El encargo decia *"el mundo 11 son 167 candidatos ya extraidos: van a la bandeja
 (b)"*. Se fue a buscarlos antes de correr nada. **No existen como candidatos.**
 
-Lo que hay en `c:/Users/AlexDesk/Documents/OCR/fuentes/mundo_11/`, contado:
+Lo que hay en `c:/Users/AlexDesk/Documents/OCR/fuentes/`, contado (el mundo 11 y
+su hermano el mundo 10, que se encontro despues y va en 1.1):
 
 | | |
 |---|---:|
