@@ -3,7 +3,7 @@
 #
 # Monta un repo de usar y tirar con su remoto bare, mete dentro
 # orquestador_forja.sh y un CLAUDE FALSO cuyo comportamiento se dicta por
-# variables de entorno, y corre seis escenarios. Ninguno toca el repo de verdad.
+# variables de entorno, y corre SIETE escenarios. Ninguno toca el repo de verdad.
 #
 # El claude falso es la unica forma de probar el arnes: un turno mudo o un fallo
 # instantaneo no se pueden pedir a un modelo de verdad, y una guarda que no se
@@ -65,7 +65,13 @@ else
   rol=auditor;   testigo="docs/loop/ACTA_AUDITOR.md"; escribe="${FALSO_AUDITOR:-si}"
 fi
 sleep "${FALSO_SEGUNDOS:-2}"
-if [ "$escribe" = "si" ]; then
+if [ "$escribe" = "vacio" ]; then
+  # el turno TOCA su testigo pero lo deja en cero bytes: la ruta promete
+  # prueba y no la hay
+  : > "$testigo"
+  git add -A >/dev/null 2>&1
+  git commit -q -m "turno del $rol con testigo vacio (claude falso)" >/dev/null 2>&1
+elif [ "$escribe" = "si" ]; then
   echo "linea del $rol, $(date '+%H:%M:%S.%N')" >> "$testigo"
   git add -A >/dev/null 2>&1
   git commit -q -m "turno del $rol (claude falso)" >/dev/null 2>&1
@@ -186,6 +192,23 @@ comprobar "lo llama fallo instantaneo"        "fallo instantaneo (probable limit
 comprobar "reintenta el MISMO turno"          "intento 2 de 2"              "$salida"
 comprobar "detiene la corrida"                "DETENIDO en la vuelta 1"     "$salida"
 comprobar "el motivo va nombrado"             "instantaneo"                 "$salida"
+
+# ---------------------------------------------------------------- escenario 7
+echo ""
+echo "ESCENARIO 7: LA RUTA QUE PROMETE PRUEBA. El turno TOCA su testigo y lo"
+echo "             deja en CERO BYTES. Cambia de hash, asi que sin la guarda"
+echo "             de la cosecha 7.B pasaria por turno bueno."
+taller="$(montar_banco e7)"
+salida="$(FALSO_EXTRACTOR=vacio FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "lo caza como turno mudo"          "extractor: TURNO MUDO"        "$salida"
+comprobar "dice que lo dejo en cero bytes"   "lo dejo en CERO BYTES"        "$salida"
+comprobar "reintenta el MISMO turno"         "intento 2 de 2"               "$salida"
+comprobar "detiene la corrida"               "DETENIDO en la vuelta 1"      "$salida"
+comprobar_no "el auditor NO llega a correr"  "VUELTA 1 : AUDITOR"           "$salida"
+[ -s "$taller/docs/loop/REPORTE.md" ] \
+  && { echo "    ROJO   el testigo no deberia tener contenido"; rojos=$((rojos+1)); } \
+  || { echo "    VERDE  el testigo existe y esta vacio, como el escenario pide"; verdes=$((verdes+1)); }
 
 echo ""
 echo "================================================================"

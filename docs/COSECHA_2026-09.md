@@ -11,10 +11,19 @@ hace aqui** y se dice por que en la seccion 4: la propia campaña midio que un
 umbral calibrado contra casos plantados y no contra la distribucion del catalogo
 entero es un umbral que no se puede defender.
 
-> **AVISO DE ESTADO (4 sep 2026): las tres preguntas de la seccion 5 YA ESTAN
-> CONTESTADAS.** La decision del fundador esta al final, en la **seccion 6**, y
-> la TANDA A que abre esta implementada. Lee la seccion 5 como lo que fue (las
-> preguntas tal como se plantearon) y la seccion 6 como lo que es hoy.
+> **AVISO DE ESTADO (9 sep 2026). Este documento ya NO es solo de estudio, y su
+> cabecera de arriba describe lo que fue el 4 sep, no lo que es hoy:**
+>
+> - las tres preguntas de la seccion 5 estan **CONTESTADAS** (seccion 6);
+> - la **TANDA A** esta implementada (v0.3, 4 sep);
+> - la **TANDA B** esta implementada (9 sep): la campaña de My-idea se consumo y
+>   se fundio, y la calibracion contra su catalogo limpio vive en
+>   `docs/CALIBRACION_D4.md`. **La fase 2 ya no espera: ocurrio.**
+> - la **seccion 7** trae la cosecha final: las paradas del 5, 7 y 9 de
+>   septiembre y la auditoria integral.
+>
+> Lee las secciones 1 a 5 como el estudio que fueron, y las 6 y 7 como lo que
+> es hoy.
 
 ---
 
@@ -832,3 +841,263 @@ asi esta escrito en `docs/loop/EXTRACTOR.md` seccion 11 y en
   CONTESTADA que si**, y por eso la deprecacion entro en la TANDA A: era la
   unica de las tres preguntas cuya respuesta cambiaba el esquema, y dejarla
   para despues habria obligado a migrar el dataset dos veces.
+
+---
+
+## 7. LA COSECHA FINAL: LAS PARADAS 28 A 30 Y LA AUDITORIA INTEGRAL (9 sep 2026)
+
+**La campaña de My-idea esta CONSUMADA Y FUNDIDA.** Lo que sigue se leyo del mismo
+clon de solo lectura, ya en el tag final:
+
+| | |
+|---|---|
+| tag | `catalogo-limpio-v1` |
+| commit | `1b12832392469afd2ac42775d606e4dfd443ab43` (9 sep 2026) |
+| `docs/loop/paradas/` | **52 ficheros, 34 con DECISION DEL FUNDADOR** (eran 40 y 27 el 4 sep) |
+| paradas nuevas | cola post fusion y bateria sin techo (5 sep), el bucle se volvio el bucle (7 sep), plan agotado (9 sep) |
+| auditoria integral | tres decisiones del 9 sep: alcance del paso 1.a, cierre del 2.c, y la ultima de la campaña |
+
+**Veredicto de la integral, citado:** *CAMPAÑA CONSUMADA CON REPAROS LISTADOS*, con
+la seccion EL MERGE SE PIDE, el commit exacto y el checklist post merge. **El bucle
+no fundio: pidio.** Y en ese checklist, nombradas por el propio fundador, estaban
+*la tanda B de la forja y la cosecha final como sesiones ya planificadas*: esta
+sesion es la que aquella acta encargo.
+
+---
+
+### 7.A. LA BATERIA POR TRAMOS RESUMIBLES
+
+*Paradas `2026-09-05-la-bateria-sin-techo.md` y `2026-09-05-cola-post-fusion.md`,
+decisiones del fundador del 5 sep 2026.*
+
+**La averia, medida y no narrada.** La bateria de mutaciones era obligatoria cada
+vuelta por regla escrita, **y crecia con la nomina**: cada vuelta escribia tres a
+cinco arneses nuevos, cada arnes entraba en la nomina a la vuelta siguiente, y cada
+entrada se corria DOS veces. La nomina paso de **23 a 51 entradas en la vuelta 163**,
+y de ahi a **82 el 5 sep**. La salida de la bateria midio **0 bytes en la 171, 0 en
+la 172 y 0 en la 173**: tres vueltas seguidas sin correr la guarda obligatoria.
+
+Y la frase que lo resume, del auditor que la levanto:
+
+> **El bucle no esta produciendo trabajo malo. Esta produciendo trabajo bueno que no
+> cabe en una vuelta.**
+
+Los tres remedios del auditor se gastaron uno por vuelta (relectura al doble,
+codigo, orden) y ninguno basto, porque **la causa no era de orden: era una guarda
+obligatoria que crecia sin techo**.
+
+**La decision, en dos piezas:**
+
+> **(5 sep) La bateria SALE del ciclo por vuelta y corre CADA CINCO, en una VUELTA DE
+> BATERIA propia que no lleva nada mas.** En las intermedias, la seccion del reporte
+> cierra con el **HUECO DECLARADO Y MEDIDO**. La nomina SIGUE creciendo y nadie la
+> poda sin el fundador.
+>
+> **(5 sep, misma fecha, la pieza que la hace ejecutable) POR TRAMOS RESUMIBLES:** la
+> bateria corre por tramos obligatorios, **cada tramo se commitea con su salida
+> sellada al terminar**, una vuelta cortada **retoma en el tramo siguiente**, y la
+> bateria se declara corrida **cuando los nueve tramos tienen salida sellada del
+> mismo calibre**.
+
+**Traduccion a la forja, e IMPLEMENTADA en esta sesion:** `docs/loop/EXTRACTOR.md`
+gana el regimen de la prueba larga. La prueba de aceptacion de la forja es hoy
+barata (47 pruebas, segundos), **asi que el techo no se alcanza todavia**; lo que se
+escribe ahora es la regla para cuando se alcance, con su disparador medido: **si una
+guarda obligatoria deja de correr DOS vueltas seguidas, deja de ser un problema de
+orden y se reparte en tramos resumibles o sale del ciclo por vuelta.** Escribirla
+antes de que duela es mas barato que despues, y la campaña pago cuatro vueltas por
+descubrirlo.
+
+---
+
+### 7.B. LA RUTA QUE PROMETE PRUEBA ES CIFRA
+
+*Parada `2026-09-05-la-bateria-sin-techo.md`, decision del fundador del 5 sep 2026,
+punto 3.*
+
+**El ejemplar:** un comentario de guarda decia que cuatro arneses corrian *"dentro de
+la bateria despues (`docs/loop/SALIDA_V173_BATERIA.txt`)"*, **y ese fichero medía 0
+bytes**. Dos vueltas seguidas y en dos sedes distintas. Por la letra del 27 ago
+ninguna acumulaba, porque **eran rutas y no cifras**.
+
+> **UNA RUTA PUBLICADA COMO EVIDENCIA DE UNA CORRIDA CUENTA COMO CIFRA PUBLICADA en
+> su sede.** Si apunta a un fichero inexistente o de cero bytes, es caida de cifra.
+> **Un letrero de "aqui esta la prueba" sobre un vacio engaña igual que un numero
+> falso.**
+
+**Traduccion a la forja, e IMPLEMENTADA:** la metrica de credito de
+`docs/loop/AUDITOR_FORJA.md` seccion 5.2 gana la ruta como sede de cifra, y el
+arnes ya tiene el musculo para comprobarlo: el **testigo** de
+`orquestador_forja.sh` mide el fichero antes y despues del turno, asi que una ruta
+prometida y vacia no pasa por turno bueno.
+
+---
+
+### 7.C. LA GUARDA QUE NO MUERDE ES CIFRA
+
+*Parada `2026-09-07-el-bucle-se-volvio-el-bucle.md`, decision del fundador del 7 sep
+2026, punto 3.*
+
+**El ejemplar, y es el mas fino de toda la campaña.** Dos remedios escritos llevaban
+**apagados desde la vuelta 197**, y la medicion esta sellada en 10 casos con su
+escenario de control: un fichero de turno quedo con `vivo.abierto: false`, `sellar()`
+no tocaba ese campo, y la unica linea que lo reabria vivia en la rama de un fichero
+**inexistente**. Consecuencia en dos mitades: la bitacora dejo de acumular entre
+procesos, **y con eso `sellar()` ya no podia caer en rojo** aunque el turno hubiera
+tocado lo prohibido; y `leer_reporte()` sin argumento dejaba pasar sin mirar el
+disco. **Los 49 casos de mutacion de la vuelta anterior salian verdes**, porque
+probaban otra cosa.
+
+> **LA GUARDA QUE SE PUBLICA COMO MORDIENDO Y NO MUERDE ES CIFRA PUBLICADA** en su
+> sede, **hermana de la ruta que promete prueba**. Sin retroactividad.
+
+**Traduccion a la forja, e IMPLEMENTADA:** es la hermana dura de
+**EL CASO ROJO SE PRUEBA POR MUTACION** que la forja ya tiene escrita (cosecha
+seccion 1.E). Entra en la metrica de credito como sede de cifra, y
+`docs/loop/AUDITOR_FORJA.md` seccion 1 gana la obligacion de re correr por mutacion
+las guardas que el reporte publique como mordiendo.
+
+---
+
+### 7.D. ROMPER UN REMEDIO ESCRITO ACUMULA
+
+*Parada `2026-09-05-cola-post-fusion.md`, decision del fundador del 5 sep 2026,
+pregunta 3, opcion c (las dos).*
+
+El auditor rompio el remedio de su propia caida **cuatro vueltas seguidas**. La
+decision hizo dos cosas a la vez, y la segunda es la letra general:
+
+> La apertura del auditor **pasa a CODIGO** (un fichero gemelo del bloque de apertura
+> del ejecutor, que corre el aislador y SELLA su salida antes de que el turno pueda
+> tocar `git log`, `git status` o el reporte), **y ademas ROMPER UN REMEDIO ESCRITO
+> ACUMULA como caida para la parada, como letra general.**
+
+Y su hermana del 5 sep, de la parada de la bateria, punto 4:
+
+> **LA CAIDA DEL AUDITOR GANA DIENTES:** tres actas seguidas con la misma caida
+> propia obligan a que el acta siguiente abra con su remedio **como tarea bloqueante
+> del propio auditor**. Declararse sin remediar deja de ser gratis.
+
+**El por que lo dijo el beneficiado**, y eso es lo que le da peso: *"las caidas del
+auditor se declaran pero no acumulan para ninguna racha, asi que la mia puede
+repetirse sin consecuencia escrita. Es un agujero de la doctrina y lo digo yo, que
+soy el beneficiado."*
+
+**Traduccion a la forja, e IMPLEMENTADA:** `docs/loop/AUDITOR_FORJA.md` seccion 5
+gana las dos: romper un remedio escrito acumula como caida, y tres actas con la
+misma caida propia obligan al remedio como tarea bloqueante. **Un remedio que solo
+obliga al otro asiento no es un remedio: es un privilegio.**
+
+---
+
+### 7.E. LAS SEDES DEL AUDITOR
+
+*Parada `2026-09-09-plan-agotado-DECISION.md`, ratificacion del fundador del 9 sep
+2026; doctrina del acta 203. Y su complemento del 5 sep: el asunto de un commit NO
+es sede.*
+
+> **`PROMPT_SIGUIENTE.md`, `ACTA_AUDITOR.md` y `PARA_ALEXIS.md` son SEDE DEL AUDITOR.
+> El ejecutor PROPONE en su reporte.**
+>
+> Y el asunto de un commit **no es sede de cifra**: las sedes son las cuatro
+> escritas.
+
+Nacio de un reparto que se habia vuelto ambiguo: quien escribe donde. Y la segunda
+mitad cierra una pregunta que llevaba tres actas viva.
+
+**Traduccion a la forja, e IMPLEMENTADA:** `docs/loop/AUDITOR_FORJA.md` gana la
+seccion de sedes, y `docs/loop/EXTRACTOR.md` la suya: **el extractor propone en
+`REPORTE.md` y no escribe en las sedes del auditor.** El arnes ya lo respeta por
+construccion (cada asiento tiene su testigo), y ahora esta escrito.
+
+---
+
+### 7.F. LA MORATORIA DE MAQUINARIA
+
+*Parada `2026-09-07-el-bucle-se-volvio-el-bucle.md`, decision del fundador del 7 sep
+2026, punto 4.*
+
+**El diagnostico que le da nombre a la parada: EL BUCLE SE VOLVIO EL BUCLE.** La
+maquinaria de vigilar el bucle habia crecido hasta consumir las vueltas que tenian
+que hacer el trabajo. El reporte medía **408 lineas escritas a mano contra un tope de
+80**, y lo que lo empujaba no era prosa: eran **piezas que otras guardas exigian**.
+
+> **EL BUCLE VUELVE AL PLAN con MORATORIA DE MAQUINARIA: ninguna vuelta fabrica
+> arneses, guardas ni lectores nuevos** salvo lo ya adjudicado y lo que una caida de
+> dato exija con cita; la nomina de la bateria queda **CONGELADA**; **el trabajo es
+> el plan hasta agotarlo.**
+
+Y en el mismo acto, la retirada del tope de lineas con su motivo, que es doctrina
+por si sola:
+
+> **Una regla que todos violan por obligacion de otras reglas enseña a violar
+> reglas.** El tope numerico se retira; queda la letra cualitativa.
+
+**Traduccion a la forja, e IMPLEMENTADA:** `docs/loop/EXTRACTOR.md` gana la
+moratoria como regla permanente del bucle de extraccion: **la vuelta extrae nodos,
+no fabrica instrumentos.** Un instrumento nuevo solo nace si una caida de dato lo
+exige con su cita, o si una tarea del encargo lo ordena. Y ningun documento de esta
+forja pone un tope numerico a la longitud de un reporte: **la vara es cualitativa**
+(nada que el registro ya diga, toda cifra tallada, las secciones obligatorias
+mandan).
+
+---
+
+### 7.G. LA SERIE QUE DOBLA, Y SU TECHO
+
+*Misma parada del 7 sep, punto 2.*
+
+La regla del credito mandaba releer el tramo **al doble** cuando una discrepancia
+caia fuera de los discutibles marcados. La serie medida fue **30, 60, 120, 240, y la
+vuelta siguiente tendria que leer 480**. La causa, medida: de los 240 pares del
+ultimo tramo, **31 llevaban el literal DISCUTIBLE MARCADO y CERO de los 177 por
+debajo de cierto puesto**, asi que **quedar fuera del marcado era una propiedad del
+tramo, no un juicio sobre la lectura**.
+
+> **RAIZ:** una discrepancia en un tramo **SIN marcado** no rompe el credito de
+> tanda: **la comparacion que la regla supone no existe ahi.** Se registra y se
+> adjudica.
+>
+> **CINTURON:** la relectura al doble tiene **TECHO**; el exceso se declara y se
+> reparte en tramos siguientes, **nunca se dobla.**
+
+**Traduccion a la forja, e IMPLEMENTADA:** la metrica de credito de
+`docs/loop/AUDITOR_FORJA.md` seccion 5 gana las dos clausulas. **Una regla de
+castigo sin techo se come el trabajo que vigila**, y esta casa lo sabe antes de su
+primera tanda porque otra lo pago.
+
+---
+
+### 7.H. LO QUE LA INTEGRAL AÑADE, Y ES DE CIERRE
+
+*Las tres decisiones del 9 sep 2026.*
+
+**Un acto cerrado tiene TRES destinos legitimos, no uno.** La clausula vieja pedia
+un superviviente por acto y medía 71 de 335 sin fundir, que parecia deuda y no lo
+era:
+
+> **Todo acto CERRADO tiene destino escrito: superviviente, DECLARADO Y NO FUNDIDO
+> con motivo sellado, o DISUELTO por destejido o relecturas.** Medido contra esa
+> letra, el esperado es 335 de 335 con destino.
+
+**Nombrar un hueco ES cumplimiento; rellenarlo es otro trabajo.** *Nombrar los
+huecos es el cumplimiento de esta campaña (estructural); RELLENARLOS es trabajo
+editorial de contenido*, y se remite con ficha post campaña.
+
+**Una campaña puede cerrar CON REPAROS LISTADOS**, cada uno con su ficha, y un
+reparo **de producto** no es un reparo **de campaña**: arreglarlo antes del merge
+*seria ensanchar el alcance en la meta*.
+
+**EL CIERRE POR COMPOSICION:** con el mismo grafo congelado, **cada verificacion
+paso en al menos una corrida** y las caidas eran de generacion intermitente, asi que
+el paso cerro por composicion **con las dos caidas declaradas**, sin correr una
+cuarta vez.
+
+**LA FICHA DE ESPECIE:** cuando dos caidas son la misma especie, la ficha **se
+reformula por especie** con sus dos ejemplares, cada uno con su testigo, en vez de
+dos fichas que esconden el patron.
+
+**Traduccion a la forja:** las cuatro entran en `plantillas/OPERACION_DE_FUSION.md`
+y en `docs/loop/AUDITOR_FORJA.md` como letra de cierre. **La que mas le sirve hoy a
+esta forja es la primera**: cuando la forja tenga actos, un acto sin fusion no es
+deuda si tiene destino escrito, y el gate no debe leerlo como hueco.

@@ -75,6 +75,22 @@ hash_fichero() { # $1 = ruta. Vacio si no existe: asi un fichero que NACE cuenta
   git hash-object "$archivo" 2>/dev/null || printf 'sin-hash'
 }
 
+vacio_o_ausente() { # $1 = ruta. Cierto si el fichero no existe o mide CERO BYTES.
+  # LA RUTA QUE PROMETE PRUEBA ES CIFRA (My-idea, decision del fundador del
+  # 5 sep 2026; docs/COSECHA_2026-09.md 7.B). Alli el ejemplar fue un comentario
+  # de guarda que decia que cuatro arneses corrian "dentro de la bateria
+  # despues (docs/loop/SALIDA_V173_BATERIA.txt)", y ese fichero medía CERO
+  # BYTES, tres vueltas seguidas.
+  #
+  # SIN ESTA COMPROBACION EL TESTIGO TIENE UN AGUJERO EXACTO: un fichero que no
+  # existia y aparece VACIO cambia de hash, asi que el turno pasaria por bueno
+  # habiendo escrito nada. Un letrero de "aqui esta la prueba" sobre un vacio
+  # engaña igual que un numero falso.
+  local archivo="$1"
+  [ -s "$archivo" ] && return 1
+  return 0
+}
+
 # ---------------------------------------------------------------------------
 # EL ROL INICIAL SE DECIDE POR MEDICION, NO POR COSTUMBRE.
 #
@@ -152,7 +168,8 @@ reintentar el MISMO turno, sin avanzar de rol):
   de salida no trae total_cost_usd mayor que 0. Es el patron esperable de un
   limite de uso agotado: el rol no llego a trabajar.
 - turno mudo: el turno corrio y cobro, pero su testigo quedo IDENTICO al de
-  antes del turno. El testigo del extractor es docs/loop/REPORTE.md y el del
+  antes del turno, O lo movio y lo dejo en CERO BYTES (una ruta que promete
+  prueba sobre un vacio engaña igual que una cifra falsa). El testigo del extractor es docs/loop/REPORTE.md y el del
   auditor es docs/loop/ACTA_AUDITOR.md. Es lo que paso de verdad en My-idea: la
   vuelta 34 (15 ago 2026) tuvo un auditor que corrio dieciocho minutos y termino
   sin escribir acta, y las vueltas 166 y 167 (4 sep 2026) terminaron las dos sin
@@ -207,6 +224,9 @@ invocar_claude() { # rol modelo prompt salida vuelta [testigo]
       motivo="instantaneo"
     elif [ -n "$testigo" ] && [ "$hash_antes" = "$hash_despues" ]; then
       motivo="$rol mudo"
+    elif [ -n "$testigo" ] && vacio_o_ausente "$testigo"; then
+      # Movio su testigo, pero lo dejo VACIO: la ruta promete prueba y no la hay.
+      motivo="$rol mudo"
     fi
 
     if [ -z "$motivo" ]; then
@@ -215,7 +235,11 @@ invocar_claude() { # rol modelo prompt salida vuelta [testigo]
     fi
 
     if [ "$motivo" = "$rol mudo" ]; then
-      log "$rol: TURNO MUDO, el turno corrio ${duracion}s y cobro \"${c:-vacio}\" pero $testigo quedo identico, intento $intento de $MAX_INTENTOS"
+      if [ "$hash_antes" != "$hash_despues" ]; then
+        log "$rol: TURNO MUDO, el turno corrio ${duracion}s y cobro \"${c:-vacio}\" y toco $testigo pero lo dejo en CERO BYTES, intento $intento de $MAX_INTENTOS"
+      else
+        log "$rol: TURNO MUDO, el turno corrio ${duracion}s y cobro \"${c:-vacio}\" pero $testigo quedo identico, intento $intento de $MAX_INTENTOS"
+      fi
     else
       log "$rol: fallo instantaneo (probable limite de uso), ${duracion}s, costo \"${c:-vacio}\", intento $intento de $MAX_INTENTOS"
     fi
