@@ -1188,3 +1188,82 @@ en un solo sentido, se entra por ese sentido.**
 **Y NO LO FIJA EL BUCLE:** ni el extractor ni el auditor deciden el orden de
 insercion. **Lo fija quien autoriza la insercion**, que es el fundador (`D.26`),
 con la medida delante.
+
+## D.37. LA SERIE DECLARADA POR EL TITULO ES ARISTA POR LECTURA (10 sep 2026, decision del fundador)
+
+*Cita: decision del fundador del 10 sep 2026, sobre el hallazgo del commit
+`f6dd619`. **Cuelga de `D.19` y `D.29`.***
+
+> **CUANDO EL TITULO O EL TEXTO DE UN NODO ENUMERA SUS PARTES** (*"con sus seis
+> vias"*, *"los cuatro pasos"*, *"las cinco efes"*) **Y ESAS PARTES EXISTEN COMO
+> NODOS, LA ARISTA CABEZA A PARTE SE DECLARA POR LECTURA EN EL ACTO DE INSERTAR
+> LA PARTE, CITANDO LA LINEA QUE ENUMERA, SIN ESPERAR A QUE UNA SEÑAL LA
+> LEVANTE.**
+
+**NO SE ESPERA A LA SEÑAL PORQUE YA ESTA MEDIDO QUE NO VA A VENIR.** `D.19` lo
+dice con cifras propias: **ninguna señal separa jerarquia declarada de ruido**, y
+`paso_contra_nodo` levanta el **3 por ciento** de las aristas declaradas. Esperar
+a la señal es esperar a algo que la casa tiene escrito que no ocurre.
+
+**Y AQUI LA LECTURA NO ES UN JUICIO DIFICIL: ES UNA TRANSCRIPCION.** No hay que
+decidir si dos nodos se parecen. El texto de la cabeza **dice cuantas partes tiene
+y las nombra una a una**. Comprobar cuales de esas partes existen como nodo es
+mirar una lista.
+
+### Lo que la hace verificable: la linea citada
+
+**LA ARISTA SE DECLARA CITANDO EL PASO DE LA MADRE QUE ENUMERA LA PARTE.** Es la
+misma exigencia que la adjudicacion `A.4` le puso al MUTUO, y por la misma razon:
+
+> **UNA ARISTA SIN SU LINEA ES UNA AFIRMACION SIN CITA.**
+
+**El auditor la verifica contra la linea citada como cualquier otra arista**: abre
+el paso `n` de la madre y comprueba que ahi se nombra al hijo. Si el paso no lo
+nombra, la arista cae, **y no hace falta discutir de parecidos.**
+
+### La operacion, porque el instrumento no llegaba
+
+La aduana cablea la arista **en el acto de insertar** y solo cuando alguien
+escribe un veredicto sobre un vecino que una señal levanto. **Para dos nodos que
+YA viven no habia camino**, y escribir a mano en `dataset/nodos.jsonl` esta
+prohibido siempre (`EXTRACTOR.md` seccion 2).
+
+    python forja.py arista --madre <id> --hijo <id> --paso <n> --razon "..."
+
+**Es una OPERACION, con lo que el manual seccion 5 exige de una: simulacion del
+gate sobre copia en memoria antes de escribir, y caso positivo.** Comprueba que
+los dos extremos viven, que no es auto arista, que el paso citado existe en la
+madre, que la arista no esta ya declarada, y que el gate admite el resultado.
+**Si el gate sale rojo, no escribe nada.**
+
+**Y GUARDA LAS TRES SEÑALES AUNQUE NO LEVANTEN**, con `levantada_por` en
+`lectura declarada`. Esa fila de la bitacora es la prueba, en cada arista, de que
+la vio un lector y no el instrumento.
+
+### Su relacion con las otras dos, que no se solapan
+
+| regla | dice |
+|---|---|
+| **`D.19`** | ninguna señal separa jerarquia de ruido: **la jerarquia la caza la LECTURA** |
+| **`D.29`** | la arista que la señal no levanta **se declara por lectura, en el acto de la insercion** |
+| **`D.37`** | y **cuando el texto ENUMERA sus partes, esa lectura ya esta hecha por el libro**: se transcribe, citando la linea |
+
+**`D.37` no ensancha `D.29`: le pone el caso facil delante.** Donde `D.29` pide
+una lectura que decida, `D.37` señala los pares en que **no hay nada que decidir**
+porque el propio nodo los enumera.
+
+### Lo que NO autoriza
+
+**NO autoriza declarar una arista porque dos nodos compartan familia o tema.** La
+enumeracion tiene que estar **escrita** en el titulo o en el texto de la cabeza, y
+**la parte tiene que ser la que ese paso nombra**. Una cabeza que dice *"con sus
+seis vias"* y un nodo del mismo dominio que no es ninguna de las seis **no son
+madre e hijo**: son hermanos, y su veredicto es `SANO`.
+
+**Siete pruebas** (`PruebaAristaDeclarada37`): la arista se escribe resuelta por
+los dos lados con su paso citado entero en la bitacora; **su caso positivo**, un
+paso que la madre no tiene es rechazo **y no deja media arista escrita**; sin
+razon escrita no se declara; un extremo que no vive es rechazo; la auto arista es
+rechazo; declararla dos veces es rechazo y no la duplica; y **la simulacion del
+gate manda**, comprobado cerrando una vuelta que el gate caza sobre la copia en
+memoria dejando el dataset intacto.

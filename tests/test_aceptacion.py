@@ -1298,13 +1298,168 @@ class PruebaArchivoDeInsertados(BaseForja):
         self.assertFalse(informe.esta_archivado("cuarentena/libro/x.json"))
 
 
+class PruebaAristaDeclarada37(BaseForja):
+    """D.37: la serie declarada por el titulo es arista POR LECTURA.
+
+    La aduana solo cablea aristas EN EL ACTO DE INSERTAR. Para dos nodos que ya
+    viven no habia camino, y escribir a mano en el dataset esta prohibido
+    siempre. Esta es la operacion, con su simulacion sobre copia en memoria y su
+    caso positivo (manual seccion 5).
+    """
+
+    def _cabeza_y_parte(self):
+        # LOS DOS TEXTOS SE SEPARAN A PROPOSITO. El caso que D.37 existe para
+        # cubrir es aquel en que NINGUNA señal levanta el par: si la cabeza y la
+        # parte se parecieran, la aduana ya los habria juntado sola y esta
+        # operacion no haria falta.
+        cabeza = nodo_base(
+            "abastecer_flujo_candidatos",
+            titulo="Abastecerse de candidatos, con sus tres vias",
+            resumen_teorico="El flujo se llena antes de que haya plazas abiertas, "
+                            "y el libro abre tres puertas distintas para llenarlo.",
+            condiciones_activacion="Cuando el embudo esta vacio y todavia no urge.",
+            entregable_esperado="Una lista viva de nombres con su procedencia.",
+            pasos_accionables=[
+                "Referencias de tus redes: haz una lista de las personas mas talentosas.",
+                "Referencias de tus empleados: pide a tu equipo que traiga nombres.",
+                "Contratar reclutadores: usa el metodo para contratar reclutadores.",
+            ])
+        parte = nodo_base(
+            "pedir_referencias_empleados",
+            titulo="Pedir referencias a tus propios empleados",
+            resumen_teorico="Convertir a la plantilla en antena permanente exige "
+                            "premiar el gesto y pedirle cuentas, no solo animarlo.",
+            condiciones_activacion="Cuando el equipo ya conoce gente que vale.",
+            entregable_esperado="Nombres traidos por la plantilla, con su prima pagada.",
+            pasos_accionables=[
+                "Mete el abastecimiento como resultado en la tarjeta del equipo.",
+                "Anima a tus empleados a preguntar en sus redes.",
+                "Ofrece una prima por referencia.",
+            ])
+        return cabeza, parte
+
+    def _declarar(self, *extra):
+        return self.forja("arista", *extra)
+
+    def test_la_arista_se_declara_y_deja_su_paso_citado(self):
+        cabeza, parte = self._cabeza_y_parte()
+        self.escribir_dataset([cabeza, parte])
+        codigo, salida = self._declarar(
+            "--madre", "abastecer_flujo_candidatos",
+            "--hijo", "pedir_referencias_empleados",
+            "--paso", "2",
+            "--razon", "el paso 2 de la madre nombra la via en una linea y el hijo "
+                       "la despliega en tres pasos")
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("ARISTA ESCRITA RESUELTA", salida)
+        self.assertIn("NINGUNA SEÑAL LA LEVANTA", salida)
+
+        por_id = dict((n["id"], n) for n in self.nodos())
+        self.assertIn("pedir_referencias_empleados",
+                      por_id["abastecer_flujo_candidatos"]["nodos_siguientes"])
+        self.assertIn("abastecer_flujo_candidatos",
+                      por_id["pedir_referencias_empleados"]["nodos_previos"])
+
+        registro = comun.leer_jsonl(self.veredictos)[-1]
+        self.assertEqual(registro["veredicto"], "CONTINUA")
+        self.assertEqual(registro["levantada_por"], ["lectura declarada"])
+        self.assertEqual(registro["paso_citado"], 2)
+        # LA LINEA CITADA VIAJA ENTERA: es lo que el auditor abre para verificar.
+        self.assertIn("Referencias de tus empleados", registro["texto_citado"])
+        self.assertEqual(self.forja("gate")[0], 0)
+
+    def test_caso_positivo_un_paso_que_la_madre_no_tiene_es_rechazo(self):
+        """Sin esto, la prueba de arriba solo probaria que el comando escribe."""
+        cabeza, parte = self._cabeza_y_parte()
+        self.escribir_dataset([cabeza, parte])
+        codigo, salida = self._declarar(
+            "--madre", "abastecer_flujo_candidatos",
+            "--hijo", "pedir_referencias_empleados",
+            "--paso", "9",
+            "--razon", "una razon cualquiera")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("el paso citado no existe", salida)
+        # Y NO ESCRIBIO NADA: un rechazo no deja media arista.
+        por_id = dict((n["id"], n) for n in self.nodos())
+        self.assertEqual(por_id["abastecer_flujo_candidatos"]["nodos_siguientes"], [])
+        self.assertEqual(comun.leer_jsonl(self.veredictos), [])
+
+    def test_sin_razon_escrita_no_se_declara(self):
+        cabeza, parte = self._cabeza_y_parte()
+        self.escribir_dataset([cabeza, parte])
+        codigo, salida = self._declarar(
+            "--madre", "abastecer_flujo_candidatos",
+            "--hijo", "pedir_referencias_empleados",
+            "--paso", "2", "--razon", "   ")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("sin razon escrita", salida)
+
+    def test_un_extremo_que_no_vive_es_rechazo(self):
+        cabeza, parte = self._cabeza_y_parte()
+        self.escribir_dataset([cabeza, parte])
+        codigo, salida = self._declarar(
+            "--madre", "abastecer_flujo_candidatos",
+            "--hijo", "nodo_que_no_existe", "--paso", "2",
+            "--razon", "una razon cualquiera")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("no vive en el grafo", salida)
+
+    def test_la_auto_arista_es_rechazo(self):
+        cabeza, parte = self._cabeza_y_parte()
+        self.escribir_dataset([cabeza, parte])
+        codigo, salida = self._declarar(
+            "--madre", "abastecer_flujo_candidatos",
+            "--hijo", "abastecer_flujo_candidatos", "--paso", "1",
+            "--razon", "una razon cualquiera")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("auto arista", salida)
+
+    def test_declararla_dos_veces_es_rechazo(self):
+        cabeza, parte = self._cabeza_y_parte()
+        self.escribir_dataset([cabeza, parte])
+        argumentos = ("--madre", "abastecer_flujo_candidatos",
+                      "--hijo", "pedir_referencias_empleados", "--paso", "2",
+                      "--razon", "el paso 2 la nombra y el hijo la despliega")
+        self.assertEqual(self._declarar(*argumentos)[0], 0)
+        codigo, salida = self._declarar(*argumentos)
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("ya esta declarada", salida)
+        # Y NO SE DUPLICO en el dataset.
+        por_id = dict((n["id"], n) for n in self.nodos())
+        self.assertEqual(por_id["abastecer_flujo_candidatos"]["nodos_siguientes"],
+                         ["pedir_referencias_empleados"])
+
+    def test_la_simulacion_del_gate_manda_y_no_escribe_si_sale_roja(self):
+        """La vuelta que el gate no admite no llega al dataset.
+
+        Se declara A > B y despues B > A: la segunda cierra una vuelta, el gate
+        la caza sobre la copia en memoria, y el dataset queda como estaba.
+        """
+        cabeza, parte = self._cabeza_y_parte()
+        self.escribir_dataset([cabeza, parte])
+        self.assertEqual(self._declarar(
+            "--madre", "abastecer_flujo_candidatos",
+            "--hijo", "pedir_referencias_empleados", "--paso", "2",
+            "--razon", "el paso 2 la nombra y el hijo la despliega")[0], 0)
+        antes = self.nodos()
+        codigo, salida = self._declarar(
+            "--madre", "pedir_referencias_empleados",
+            "--hijo", "abastecer_flujo_candidatos", "--paso", "1",
+            "--razon", "la vuelta que el gate tiene que cazar")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("RECHAZADO POR EL GATE", salida)
+        self.assertIn("NADA SE ESCRIBIO", salida)
+        self.assertEqual(self.nodos(), antes)
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
              PruebaGate, PruebaMutuo, PruebaCitaDeLinea, PruebaVigencia,
              PruebaNoAplica, PruebaDeprecado, PruebaResolutor,
              PruebaBandejas, PruebaReglasDeId, PruebaAristaDeclarada,
-             PruebaArchivoDeInsertados]
+             PruebaArchivoDeInsertados,
+             PruebaAristaDeclarada37]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -1335,6 +1490,8 @@ def main():
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaAristaDeclarada)._tests))
     print("  D.31, el candidato insertado se archiva y el informe no lo cuenta: "
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaArchivoDeInsertados)._tests))
+    print("  D.37, la serie declarada por el titulo es arista por lectura: "
+          "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaAristaDeclarada37)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

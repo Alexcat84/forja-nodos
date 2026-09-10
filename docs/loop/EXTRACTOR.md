@@ -532,6 +532,41 @@ rompieron eran intenciones.**
 **Y NO ES SOLO PARA EL AUDITOR:** la cita pegada es lo que te deja **a ti**
 descubrir el desfase mientras escribes, que es cuando cuesta un segundo.
 
+## 15.6. LA SERIE QUE EL TITULO ENUMERA SE CABLEA EN TU MISMA VUELTA
+
+*`D.37` del banco, decision del fundador del 10 sep 2026. Cuelga de `D.19` y
+`D.29`.*
+
+**Cuando un nodo dice en su titulo o en su texto cuantas partes tiene** (*"con sus
+seis vias"*, *"los cuatro pasos"*, *"las cinco efes"*) **y esas partes existen como
+nodos, la arista cabeza a parte NO espera a que una señal la levante.**
+
+> **DESDE AHORA DECLARAS ESAS ARISTAS EN LA MISMA VUELTA EN QUE INSERTAS LAS
+> PARTES.** No en la siguiente, no cuando alguien las eche de menos.
+
+**POR QUE NO SE ESPERA:** `D.19` ya midio que la señal 3 levanta el **3 por
+ciento** de las aristas declaradas. Esperarla es esperar a algo que esta escrito
+que no llega. Y esto no es un juicio dificil: **el texto de la cabeza dice cuantas
+partes tiene y las nombra una a una.** Comprobar cuales existen es mirar una lista.
+
+**COMO SE DECLARA, y la cita es lo que la hace verificable:**
+
+    python forja.py arista --madre <cabeza> --hijo <parte> --paso <n>         --razon "el paso n de la madre nombra la parte en una linea y el hijo la
+                 despliega en N pasos que la cabeza no tiene"
+
+**`--paso <n>` ES EL PASO DE LA MADRE QUE ENUMERA LA PARTE.** El auditor lo abre y
+comprueba que ahi se nombra al hijo. **Una arista sin su linea es una afirmacion
+sin cita.**
+
+**Y PEGAS LA SALIDA DEL COMANDO EN TU REPORTE**, que imprime el paso citado
+entero: es el mismo remedio mecanico de `D.35` aplicado a esta sede. **La cita se
+pega, no se promete.**
+
+**LO QUE NO AUTORIZA:** declarar una arista porque dos nodos compartan familia o
+tema. La enumeracion tiene que estar **escrita**, y la parte tiene que ser la que
+ese paso nombra. Una cabeza de seis vias y un vecino que no es ninguna de las seis
+**son hermanos, y su veredicto es `SANO`.**
+
 ## 16. CADA CANDIDATO PASA POR LA ADUANA EN EL MISMO ACTO EN QUE SE ESCRIBE
 
 *Regla madre: decision del fundador del 10 sep 2026, D.23. La aduana NO se

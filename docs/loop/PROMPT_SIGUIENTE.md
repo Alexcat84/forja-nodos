@@ -49,7 +49,12 @@ de las diecinueve piezas de una tabla que se anunciaba completa.**
    `sostener_contacto_oferta_aceptacion` y `celebrar_aceptacion_primer_dia`.
 4. **`who` esta en `INGLES_CON_EQUIVALENTE`.** No lo uses en un id. Su equivalente
    es `quien`, y el titulo del libro viaja en `denominaciones.otros_idiomas`.
-5. **La A de *jugador A* NO sobrevive en el id**, y la regla vigente se sostiene:
+5. **`D.37`, LA SERIE DECLARADA POR EL TITULO ES ARISTA POR LECTURA.** Cuando
+   un nodo enumera sus partes y esas partes existen, **la arista se declara sin
+   esperar a la señal**, citando el paso que la nombra. Esta en `EXTRACTOR.md`
+   **15.6**, y **desde ahora la declaras en la MISMA vuelta en que insertas las
+   partes**. Su aplicacion sobre lo ya insertado es tu **TAREA 0**.
+6. **La A de *jugador A* NO sobrevive en el id**, y la regla vigente se sostiene:
    `vender_puesto_jugador` esta bien escrito. **La A viaja entera en `titulo` y en
    `denominaciones`.** No es una perdida: es donde le toca.
 
@@ -118,9 +123,119 @@ hay procedimiento, es del libro.
 
 ---
 
+## TAREA 0, BLOQUEANTE: LAS ARISTAS DE SERIE DEL LOTE 2, ANTES DE EXTRAER
+
+*Aplicacion UNICA de `D.37` sobre lo ya insertado. Decision del fundador del 10
+sep 2026. **Va delante de todo lo demas y no se salta.***
+
+**EL LOTE 2 METIO 44 NODOS Y LA ADUANA SOLO LEVANTO SIETE ARISTAS.** Las demas no
+faltan porque nadie mirase: **faltan porque ninguna señal las levanta**, que es lo
+que `D.19` tiene medido. Y el texto de varias cabezas **enumera sus partes**, asi
+que la lectura ya esta hecha por el libro: solo hay que transcribirla.
+
+**LA HERRAMIENTA, y su cita es lo que hace la arista verificable:**
+
+    python forja.py arista --madre <cabeza> --hijo <parte> --paso <n> --razon "..."
+
+**`--paso <n>` es el paso DE LA MADRE que nombra la parte.** El comando lo imprime
+entero al declararla. **Pega esa salida en tu reporte**: es el remedio de `D.35`
+en esta sede, y sustituye al `sed` porque la linea no vive en un fichero de texto
+sino dentro del nodo.
+
+### 0.a. PUBLICA LAS ARISTAS ESPERADAS ANTES DE DECLARAR NINGUNA
+
+**Primero la lista, despues los comandos.** Una cuenta que se escribe despues de
+hacer el trabajo se parece demasiado a lo que salio.
+
+**LAS TRES CABEZAS QUE EL HALLAZGO NOMBRA, con sus partes ya comprobadas contra
+los 52 vivos. Son TRECE aristas y es tu SUELO, no tu techo:**
+
+| cabeza | paso | parte, que ya vive |
+|---|---:|---|
+| `abastecer_flujo_candidatos`, *"con sus seis vias"* | 1 | `pedir_referencias_red_personal` |
+| | 2 | `pedir_referencias_empleados` **YA DECLARADA, no la repitas** |
+| | 3 | `nombrar_delegados_amigos_casa` |
+| | 4 | `contratar_reclutadores_externos` |
+| | 5 | `contratar_investigadores_reclutamiento` |
+| | 6 | `crear_sistema_captura_seguimiento_candidatos` |
+| `abordar_cinco_efes_venta`, *"las cinco efes"* | 2 | `vender_encaje_candidato_empresa` |
+| | 3 | `vender_cambio_trabajo_familia` |
+| | 4 | `vender_libertad_candidato` |
+| | 5 | `vender_fortuna_candidato` |
+| | 6 | **la efe de la diversion NO tiene nodo.** Compruebalo y dilo |
+| `aplicar_metodo_ghsmart_contratacion`, *"los cuatro pasos"* | 1 | `crear_tarjeta_puntuacion_puesto` |
+| | 2 | `abastecer_flujo_candidatos` |
+| | 3 | `seleccionar_jugador_cuatro_entrevistas` |
+| | 4 | `vender_puesto_jugador` |
+
+**TRECE por declarar de estas tres** (cinco, cuatro y cuatro), **con una ya
+declarada y una parte ausente**, las dos dichas arriba para que no las cuentes de
+mas ni las busques de menos.
+
+### 0.b. EL BARRIDO DE LOS 52, PARA NO DEJAR LA ESPECIE A MEDIAS
+
+**Las tres de arriba son las que el hallazgo nombro, no las que hay.** Barre los
+**52 vivos** buscando **toda cabeza cuyo titulo o texto enumere partes**, y
+comprueba cuales de esas partes existen como nodo.
+
+**EL METODO, y sirve tal cual:**
+
+    python -c "import io,json; [print(n['id'],'|',n['titulo']) for n in
+      (json.loads(l) for l in io.open('dataset/nodos.jsonl',encoding='utf-8'))]"
+
+**Busca en los titulos las marcas de enumeracion**: *con sus N*, *los N pasos*,
+*las N efes*, *en N pasos*, *sus N vias*. **Y no te quedes en el titulo:** un
+texto puede enumerar sin anunciarlo en la cabecera.
+
+**DOS QUE YA SE VEN DESDE FUERA Y QUE TIENES QUE MIRAR:**
+
+- **`seleccionar_jugador_cuatro_entrevistas`**, *"en seis pasos"*. Dos de sus
+  pasos ya estan declarados (`decidir_contratacion_final` y
+  `calificar_tarjeta_puntuacion_habilidad_voluntad`). **Los otros cuatro pasos
+  nombran entrevistas que parecen tener nodo.** Compruebalo.
+- **`planificar_cinco_olas_venta`**, *"las cinco olas"*. **Las cinco olas parecen
+  tener nodo cada una.** Compruebalo.
+
+**Y `crear_tarjeta_puntuacion_puesto` ya esta completa**: sus cuatro pasos se
+cablearon al insertar. **No la toques.**
+
+### 0.c. DECLARA, Y CUENTA DESPUES
+
+**Una por una, con su razon escrita y su paso citado**, y **pegando la salida del
+comando**. La razon dice **que añade el hijo a la madre**, no que se parecen.
+
+**AL TERMINAR, LA CUENTA CONTRA LA PREVISION:**
+
+    aristas esperadas, publicadas en 0.a y 0.b : N
+    aristas declaradas                        : M
+    y si N no es M, POR QUE, una a una
+
+**Que sobren o falten no es un fallo; no explicarlo si.**
+
+**Y COMPRUEBA EL ESTADO ANTES Y DESPUES:**
+
+    python forja.py gate            antes: 52 nodos, 9 aristas
+    python tests/test_aceptacion.py antes: 72 de 72
+    python forja.py rancios         antes: verde, 32 veredictos
+
+**Las tres tienen que seguir en verde al acabar**, con el gate contando **9 mas M**
+aristas y la bitacora **32 mas M** veredictos.
+
+### 0.d. LO QUE ESTA TAREA NO ES
+
+**No es extraer.** No toca `fuentes/`, no escribe candidatos, no abre capitulo.
+
+**Y NO ES UNA INVITACION A CABLEAR POR PARECIDO.** `D.37` solo cubre la parte que
+**el paso de la cabeza NOMBRA**. Si dudas de si un nodo es la parte que ese paso
+nombra, **no la declares**: marcala como discutible y sigue. Una arista de mas es
+mas cara que una de menos, porque la de menos se ve y la de mas se hereda.
+
+---
+
 ## LAS TAREAS
 
-**Tope de cinco. Estas son cinco.**
+**Tope de cinco, y la TAREA 0 va aparte porque no es extraccion: es la
+aplicacion unica de `D.37` sobre lo ya insertado.**
 
 ### TAREA 1. El tramo A, capitulo como unidad atomica
 
