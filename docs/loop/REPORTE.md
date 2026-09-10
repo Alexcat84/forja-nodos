@@ -7833,3 +7833,68 @@ casa es util: **una secuencia generica de aprendizaje no es un inventario de eta
 convendra escribirlo, porque este libro entero esta escrito en ese registro y volvera a
 aparecer.
 
+---
+
+## TAREA 3.B. EL Cap. 1, `What Is Management?` (`cap_02.md`)
+
+### 3.B.1. LA FRONTERA, PUBLICADA Y COMMITEADA **ANTES** DE CORTAR NADA
+
+**Este bloque se escribe y se commitea antes de escribir el primer candidato**, como hizo
+la vuelta 8 con `227085a`, para que la coincidencia se pueda comprobar contra un fichero
+anterior al trabajo.
+
+**Recorrido por cobertura, no lista de cabeceras.** La comprobacion, pegada:
+
+    rango: L9 a L291
+    lineas con texto: 142
+    cubiertas       : 142
+    HUECOS: []
+    SOLAPES: []
+    suma piezas: 6477  cuerpo: 6477  piezas: 23
+
+**142 de 142 lineas con texto cubiertas, cero huecos, cero solapes, y la suma de las 23
+piezas da 6.477, identica al cuerpo. Diferencia: CERO.**
+
+| pieza | lineas | palabras | que es |
+|---|---|---:|---|
+| P1 | L9 a L15 | 7 | cabecera de unidad y rotulo de la ilustracion (`AVOID` / `ASPIRE`) |
+| P2 | L17 a L27 | 340 | apertura: lo que no sabia al empezar |
+| P3 | L29 a L35 | 39 | la lista vieja, `A MANAGER’S JOB IS TO . . .`, tres actividades |
+| P4 | L37 a L45 | 52 | la lista revisada, `A MANAGER’S JOB IS TO . . .`, tres metas |
+| P5 | L47 a L57 | 165 | por que las dos listas siguen sin ser la respuesta |
+| P6 | L59 a L85 | 568 | `THE ONE-LINE DEFINITION OF A MANAGER’S JOB`, con el puesto de limonada |
+| P7 | L87 a L113 | 684 | `HOW DO YOU TELL A GREAT MANAGER FROM AN AVERAGE MANAGER?` |
+| P8 | L115 a L125 | 205 | `THE THREE THINGS MANAGERS THINK ABOUT ALL DAY`: la cabeza y los tres cubos |
+| P9 | L127 a L133 | 340 | el cubo del proposito |
+| P10 | L135 a L137 | 145 | el cubo de las personas |
+| P11 | L139 a L147 | 324 | el cubo del proceso |
+| P12 | L149 a L169 | 571 | el efecto multiplicador, con el ejemplo numerado del puesto de limonada |
+| P13 | L171 a L189 | 505 | `MANAGING IN SURVIVAL MODE` |
+| P14 | L191 a L207 | 387 | `HOW DO YOU KNOW IF YOU’LL BE A GREAT MANAGER?`: la cabeza de las tres preguntas |
+| P15 | L209 a L215 | 271 | pregunta 1, `Do I Find It More Motivating to Achieve a Particular Outcome or to Play a Specific Role?` |
+| P16 | L217 a L223 | 183 | pregunta 2, `Do I Like Talking with People?` |
+| P17 | L225 a L229 | 178 | pregunta 3, `Can I Provide Stability for an Emotionally Challenging Situation?` |
+| P18 | L231 a L233 | 4 | separador |
+| P19 | L235 a L235 | 32 | el preambulo de las otras respuestas comunes |
+| P20 | L237 a L247 | 351 | `I Want to Progress in My Career` |
+| P21 | L249 a L259 | 358 | `I Want Freedom to Call the Shots` |
+| P22 | L261 a L267 | 241 | `I Was Asked to Be a Manager` |
+| P23 | L269 a L291 | 527 | `THE DIFFERENCE BETWEEN LEADERSHIP AND MANAGEMENT` |
+| **23 piezas** | **L9 a L291** | **6.477** | |
+
+**Las 23 filas salen de la lista del recorrido, contadas: 23** (remedio 1.a, hermana
+tercera).
+
+**Lo que el metodo de cobertura caza aqui y una lista de cabeceras habria perdido:**
+**P3, P4, P18 y P19, que suman 127 palabras y no tienen cabecera propia**, y sobre todo
+**P19, que es UNA sola linea de 32 palabras y es la que declara de que va todo el bloque
+P20 a P22.** Sin ella, las tres subsecciones siguientes se leen como consejos sueltos en
+vez de como *respuestas comunes a por que quieres ser manager, y la gestion puede no ser
+el mejor camino para esas metas*. **Una pieza de una linea que cambia la lectura de 950
+palabras.**
+
+**Y un aviso de borde:** las cabeceras del capitulo NO estan marcadas con almohadilla ni
+con ningun signo. **Se distinguen porque son las unicas lineas del cuerpo sin sangrado de
+tabulador.** Lo digo aqui porque es lo que hace que este recorte se pueda recorrer, y
+porque el proximo que abra un fichero de este libro no tiene por que descubrirlo otra vez.
+
