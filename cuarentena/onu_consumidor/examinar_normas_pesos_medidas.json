@@ -1,19 +1,23 @@
 {
-  "_de_donde_sale": "cap_02.md linea 35, apartado V-C parrafo 32, entero. Es el parrafo mas corto del capitulo y el candidato mas flojo del lote: su inventario propio son solo DOS objetos, las normas juridicas sobre pesos y medidas y la eficacia de sus mecanismos de aplicacion, mas la cadencia (periodicamente). Marcado como DISCUTIBLE 5 en docs/loop/REPORTE.md antes de saber si acierto.",
+  "_de_donde_sale": "cap_02.md linea 35, apartado V-C parrafo 32, entero. Es el parrafo mas corto del capitulo y el candidato mas flojo del lote: su inventario propio son solo DOS objetos, las normas juridicas sobre pesos y medidas y la eficacia de sus mecanismos de aplicacion, mas la cadencia (periodicamente). Marcado como DISCUTIBLE 5 en docs/loop/REPORTE.md antes de saber si acierto. CORREGIDO en la vuelta 2 por la pasada de transcripcion (D.27, corolario del puente) y por el fallo del ACTA 1 seccion 3.2, que sostuvo este candidato CON CORRECCION: retirado el paso 1 (fijar por escrito el periodo), la fecha del proximo examen del ultimo paso, la vara inventada del examen (productos, envases y unidades) y el desglose inventado del mecanismo (quien inspecciona, con que instrumento y con que consecuencia). El parrafo 32 dice periodicamente y nada mas.",
   "id": "examinar_normas_pesos_medidas",
   "titulo": "Examinar periodicamente las normas de pesos y medidas y la eficacia de su aplicacion",
-  "resumen_teorico": "La metrologia legal es la unica proteccion del consumidor que se cae sin que nadie la derogue: las normas de pesos y medidas envejecen calladas mientras cambian los envases, las unidades y las formas de vender, y los mecanismos que las hacen efectivas se vacian sin dejar de existir en el papel. Por eso el texto pide dos cosas y no una, examinar las normas Y evaluar la eficacia de sus mecanismos de aplicacion: una norma vigente aplicada por un mecanismo muerto protege lo mismo que ninguna norma. Y pide que se haga periodicamente sin decir cada cuanto, lo que deja el periodo en manos de quien ejecuta: si nadie lo fija por escrito, la revision no llega a ocurrir nunca y nadie puede señalar el dia en que dejo de hacerse.",
+  "resumen_teorico": "La metrologia legal es la unica proteccion del consumidor que se cae sin que nadie la derogue: las normas de pesos y medidas envejecen calladas mientras cambian los envases, las unidades y las formas de vender, y los mecanismos que las hacen efectivas se vacian sin dejar de existir en el papel. Por eso el texto pide dos cosas y no una, examinar las normas Y evaluar la eficacia de sus mecanismos de aplicacion: una norma vigente aplicada por un mecanismo muerto protege lo mismo que ninguna norma. Y pide que se haga periodicamente sin decir cada cuanto: el parrafo 32 deja ese periodo abierto y este procedimiento lo deja abierto tambien, porque fijarlo seria escribirlo el extractor y no el libro.",
   "pasos_accionables": [
-    "Fija por escrito cada cuanto se examina y la fecha del proximo examen, porque el texto manda examinar periodicamente y no dice cada cuanto.",
     "Reune las normas juridicas vigentes sobre pesos y medidas que rigen en el mercado que examinas.",
-    "Examina cada norma y marca la que haya quedado atras respecto de los productos, los envases o las unidades que hoy se venden.",
-    "Reune los mecanismos con los que esas normas se hacen efectivas y anota de cada uno quien inspecciona, con que instrumento y con que consecuencia.",
-    "Evalua la eficacia de cada mecanismo con lo que midio durante el periodo, no con lo que promete su reglamento.",
-    "Escribe la revision con las normas que hay que cambiar y los mecanismos que no resultaron eficaces, y deja fijada la fecha del proximo examen."
+    "Examina una a una esas normas y marca las que el examen encuentre que hay que cambiar.",
+    "Reune los mecanismos de aplicacion con los que esas normas se hacen efectivas.",
+    "Evalua la eficacia de cada uno de esos mecanismos de aplicacion.",
+    "Escribe el resultado del examen con las normas que hay que cambiar y la evaluacion de eficacia de cada mecanismo de aplicacion."
   ],
-  "condiciones_activacion": "Cuando vence el periodo fijado para revisar las normas juridicas sobre pesos y medidas, o cuando todavia no hay periodo fijado y hay que fijarlo.",
-  "entregable_esperado": "La revision escrita del periodo, con la lista de normas de pesos y medidas que hay que cambiar, la evaluacion de eficacia de cada mecanismo de aplicacion y la fecha del proximo examen.",
-  "fuentes": [{"clave": "onu_consumidor", "fecha": "2026-09-09"}],
+  "condiciones_activacion": "Cuando toca el examen de las normas juridicas sobre pesos y medidas, que el texto manda hacer periodicamente sin decir cada cuanto.",
+  "entregable_esperado": "El examen escrito de las normas juridicas sobre pesos y medidas, con las que hay que cambiar y la evaluacion de eficacia de cada uno de sus mecanismos de aplicacion.",
+  "fuentes": [
+    {
+      "clave": "onu_consumidor",
+      "fecha": "2026-09-09"
+    }
+  ],
   "ids_alias": [],
   "nodos_previos": [],
   "nodos_siguientes": [],
@@ -21,9 +25,12 @@
     "nombre_largo": "Examen periodico de las normas juridicas sobre pesos y medidas y de la eficacia de sus mecanismos de aplicacion",
     "sigla": "",
     "otros_idiomas": [
-      {"idioma": "ingles", "termino": "legal metrology review"}
+      {
+        "idioma": "ingles",
+        "termino": "legal metrology review"
+      }
     ]
   },
   "dominio": "proteccion_consumidor",
-  "escala_minima": "Un solo mercado local y una sola norma: fijar el periodo, mirar si la norma sigue cubriendo lo que se vende y comprobar si alguien inspecciona de verdad se puede hacer en una tarde."
+  "escala_minima": "Un solo mercado local y una sola norma: mirar si la norma sigue cubriendo lo que se vende y comprobar si su mecanismo de aplicacion funciona se puede hacer en una tarde."
 }

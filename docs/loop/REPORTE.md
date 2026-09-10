@@ -765,3 +765,337 @@ reporte y me habria detenido, sin tocar `PARA_ALEXIS.md`.**
 **FIN DEL REPORTE DE LA VUELTA 1.** Seis candidatos en cuarentena, cero
 inserciones, cuatro tareas cerradas, cero paradas, seis discutibles marcados
 antes de saber si acierto.
+
+---
+---
+
+# VUELTA 2, lote 1 (onu_consumidor), cap_03 y la revision de cap_02
+
+> **CRECE POR ANEXION** (`EXTRACTOR.md` seccion 3 y seccion 17). La vuelta 1
+> queda entera arriba, sin retocar ni una linea. Lo de esta vuelta se añade
+> debajo.
+
+| | |
+|---|---|
+| fecha | **2026-09-10**, leida del instrumento (`date` da `Thu, Sep 10, 2026 6:17:49 AM`; `src.aduana._hoy()` da `2026-09-10`). **Coincide con la del encargo**, y con la del ACTA 1 |
+| rama | `extraccion-mundo-11` (`git rev-parse --abbrev-ref HEAD`) |
+| commit de apertura | `9199055` (`git rev-parse HEAD` tras commitear lo pendiente) |
+| lote | onu_consumidor, LOTE 1 DE CALIBRACION (D.24) |
+| capitulo de extraccion | cap_03.md, apartado V-F parrafos 37 a 41 |
+| acta del auditor leida | **ACTA 1, fecha del acta 2026-09-10**, veredicto general **REPORTE VERIFICADO** |
+| nodos en el dataset al empezar | **2** (`wc -l dataset/nodos.jsonl`, corrido antes de la primera operacion) |
+| candidatos en cuarentena al empezar | **6** (`ls cuarentena/onu_consumidor/ | wc -l`, corrido antes de la primera operacion) |
+| inserciones autorizadas en esta vuelta | **CERO.** MODO_INSERCION=cuarentena (D.26). No corro `insertar` ni una vez |
+
+### Las cuatro tareas
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 1 | registros del acta y de las adjudicaciones | **CERRADA** | ACTA 1 leida entera (9 secciones), fecha 2026-09-10, veredicto REPORTE VERIFICADO. Las **cuatro adjudicaciones** recogidas con su cita, mas `D.29`. La caida de especie REPORTE recogida y **reparada pegando el hook en el cuerpo de cada commit** |
+| 2 | BLOQUEANTE: pasada de transcripcion sobre los 6, mas la arista escrita | **CERRADA** | **36 pasos marcados: 23 TRANSCRIPCION y 13 con PUENTE (36 %).** 4 pasos retirados enteros y 9 clausulas reescritas; el lote pasa de **36 a 32 pasos**. Los 6 repasados por la aduana tras corregir: **6 entrarian, 0 caerian**. Arista MADRE a HIJO escrita en bloque propio (2.D) con su señal recomputada |
+| 3 | cap_03: frontera publicada y candidatos por la aduana | ABIERTA | |
+| 4 | informe del lote entero, commit y cierre del lote | ABIERTA | |
+
+### Discutibles marcados ANTES de saber si acierto
+
+*(se marcan aqui segun aparecen, no al final)*
+
+**DISCUTIBLE 1 (TAREA 2).** *Los SIETE puentes que encontre yo, mas alla de los que el ACTA 1 listo.* El auditor nombro sus casos en la seccion 3.3 y yo he retirado **siete clausulas mas** aplicando la misma vara. **Mi duda no es si son puentes: creo que lo son. Mi duda es si retirarlos es la resolucion correcta o si pase de correccion a poda.** `D.27` dice que un puente *se retira o se reescribe*, y he reescrito en vez de retirar en las nueve clausulas, que es la salida menos destructiva de las dos. **Pero un auditor podria sostener que la vara del examen del `examinar...` paso 3, o la forma del codigo del `formular...` paso 2, son el modo normal de poner un mandato en imperativo y no puentes.** Lo marco a ciegas y no lo adjudico yo.
+
+**DISCUTIBLE 2 (TAREA 2).** *He tocado `informar_efectos_ambientales_productos`, y el encargo decia que estaba salvado y que no lo tocase de mas.* Lo he leido asi: **lo salvado es su paso 7**, que es el que el ACTA 1 seccion 3.3 puso en su tabla y salvo por el criterio *inequivoca*, **y ese paso 7 no lo he tocado ni una letra**. Lo que retire es una clausula subordinada del **paso 4**, que ninguna de las dos sedes habia mirado. **Si el fundador o el auditor querian decir que el candidato entero quedaba fuera de esta pasada, entonces esto es una extralimitacion mia y se corrige devolviendo once palabras.** La dejo dicha en vez de callarla, porque un puente que yo veo y no declaro es peor que uno que declaro de mas.
+
+**DISCUTIBLE 3 (TAREA 2).** *`examinar_normas_pesos_medidas` pierde 5 de sus 6 pasos a manos de esta vara, y me pregunto si lo que queda sigue siendo un nodo.* Sus cinco pasos supervivientes son **reunir, examinar, reunir, evaluar, escribir** sobre dos objetos. **NO reabro el DISCUTIBLE 5 de la vuelta 1**, que el ACTA 1 seccion 3.2 sostuvo con correccion y que no es mio para reabrir. **Lo que traigo es lo que la correccion dejo ver y antes no se veia:** si un candidato solo se sostenia por los pasos que ahora resultan inventados, la pregunta de si era nodo se vuelve a plantear sola. **No la contesto y no lo retiro de cuarentena.** Lo dejo delante del auditor con la cifra al lado: **83 por ciento de puente, el peor del lote.**
+
+**DISCUTIBLE 4 (TAREA 2).** *He tocado campos que no son `pasos_accionables`.* El encargo me manda marcar los 36 pasos, y yo he corregido ademas **entregables, condiciones de activacion, resumenes y una escala minima**. **Mi razon:** `D.27` dice que *un puente no se queda callado dentro de un nodo*, y retirar el traslado del paso 6 dejando *la constancia del traslado a la autoridad competente* en el entregable habria dejado el puente vivo en un campo que nadie estaba mirando. **La duda es de alcance, no de criterio:** puede sostenerse que el encargo acotaba la pasada a los pasos y que lo demas era para otra vuelta.
+
+
+## TAREA 1. LOS REGISTROS. CERRADA
+
+### 1.A. El acta leida
+
+**Lei `docs/loop/ACTA_AUDITOR.md` entera**, sus nueve secciones.
+
+| | |
+|---|---|
+| fecha del acta | **2026-09-10** |
+| hash auditado | `ea6c9f4`, rama `extraccion-mundo-11` |
+| veredicto general | **REPORTE VERIFICADO.** Cero caidas de CLASE, cero de CIFRA PUBLICADA, **una de REPORTE que NO acumula** |
+| parada | **NO.** Las seis condiciones repasadas una a una en su seccion 8 |
+
+### 1.B. Las cuatro adjudicaciones, recogidas y no reabiertas
+
+| # | lo adjudicado | cita | que hago yo |
+|---|---|---|---|
+| 1 | **La prueba del inventario**, con sus TRES restricciones | **`D.27` del banco**, ratificada por el fundador el 10 sep 2026; sede de consulta `EXTRACTOR.md` seccion 9.1 | **La aplico y la cito como D.27**, no como fallo del acta. Es la vara de la TAREA 2 y de la frontera de la TAREA 3 |
+| 2 | **Los seis discutibles de la vuelta 1: los seis SOSTENIDOS**, el 5 con correccion | ACTA 1 secciones 3.1 y 3.2 | No los reabro. La correccion del 5 es trabajo mio en la TAREA 2 |
+| 3 | **La asimetria de la señal 3: confirmada, y NO es parada** | ACTA 1 seccion 3.4 | **No toco la señal 3, ni el `ratio` de `src/aduana.py`, ni la calibracion** (seccion 13, moratoria de maquinaria). El remedio es de lectura y va en la TAREA 2 |
+| 4 | **`PARA_ALEXIS.md` es del auditor y solo del auditor**, y la formula vieja del encargo queda corregida | **`D.28` del banco**; ACTA 1 seccion 3.5 | **Yo no escribo `PARA_ALEXIS.md`.** Si hay parada la declaro aqui y me detengo |
+
+**Y la quinta, que el encargo mete dentro de la TAREA 2:** la arista se declara **por lectura, en el acto de la insercion**, y **el umbral no se toca** (**`D.29`**, ratificada el 10 sep 2026). Va escrita en su bloque propio, en 2.D.
+
+### 1.C. La caida declarada contra mi, recogida
+
+> **ACTA 1 seccion 4.1.** El reporte de la vuelta 1 escribio *"su salida esta en cada commit"* refiriendose al hook, y **la salida del hook no estaba en ningun commit de la vuelta 1**. Especie **REPORTE**, y **no acumula**.
+
+**La recojo sin discutirla, y la reparo del modo que el encargo manda:** **cada commit de esta vuelta lleva la salida del hook pegada en su cuerpo.** No prometo la prueba: la pego.
+
+### 1.D. El limite que el auditor se puso a si mismo, recogido
+
+> **ACTA 1 seccion 1.8.** *"Los seis pasaron la aduana en seco al PRIMER intento"* **no es clonable contra el repo**, porque el repo guarda el resultado y no los intentos. Quedo marcada **A VERIFICAR**, ni contradicha ni aceptada.
+
+**Se arregla desde esta vuelta, y asi lo hago:** cada vez que un candidato caiga en la aduana, **pego la salida del informe que lo tumbo, entera**. Si no cae ninguno, lo digo asi y digo contra que se lee ese cero. La cuenta esta en el cierre, seccion C.4.
+
+---
+
+## TAREA 2, BLOQUEANTE. LA PASADA DE TRANSCRIPCION SOBRE LOS SEIS. CERRADA
+
+**Fui parrafo por parrafo con `cap_02.md` abierto delante, no con el reporte de la vuelta 1.**
+
+### 2.A. El criterio de marcado, declarado ANTES de aplicarlo
+
+*Va delante para que se pueda juzgar el criterio y no solo el resultado.*
+
+> Un paso es **TRANSCRIPCION** si su **verbo** y su **objeto** salen del parrafo, aunque la redaccion en imperativo sea mia: eso es lo que `D.27` llama transcribir el inventario.
+>
+> Un paso es **PUENTE** si añade un **destinatario**, un **responsable**, un **periodo**, una **via** o un **criterio** que el parrafo no pone. Es el corolario literal de `D.27`: *un paso que cierra un bucle que el libro deja abierto es un PUENTE.*
+
+**Y una precision que uso todo el rato, porque sin ella la vara se me va de las manos:** recoger lo que se observa **es el contenido de vigilar o de examinar**, y no un puente; **mandar a un tercero** que haga algo, o **fijar cuando**, si lo es. La diferencia es que lo segundo obliga a alguien a quien el parrafo no obliga.
+
+### 2.B. LOS 36 PASOS, MARCADOS UNO A UNO
+
+**23 TRANSCRIPCION y 13 con PUENTE.** De los 13: **4 pasos retirados enteros** y **9 clausulas reescritas**.
+
+#### `vigilar_practicas_comerciales_perjudiciales`, parrafo 21 (`cap_02.md:13`). 6 pasos, 2 con puente
+
+| paso | marca | razon |
+|---|---|---|
+| 1 reune las leyes y normas obligatorias vigentes | **TRANSCRIPCION** | el parrafo las nombra: *garantizando que los fabricantes, los distribuidores y cuantos participan en la provision de bienes y servicios cumplan las leyes y las normas obligatorias vigentes* |
+| 2 vigila la adulteracion de alimentos | **TRANSCRIPCION** | *vigilen practicas perjudiciales como la adulteracion de alimentos* |
+| 3 vigila las afirmaciones falsas o capciosas **y exige la prueba a quien la hizo** | **PUENTE, clausula** | el objeto es del libro; **la carga de la prueba no.** Ver 2.C |
+| 4 vigila los fraudes en la prestacion de servicios | **TRANSCRIPCION** | *los fraudes en la prestacion de servicios* |
+| 5 contrasta cada practica con la norma que incumple | **TRANSCRIPCION** | el parrafo mide el cumplimiento contra *las leyes y las normas obligatorias vigentes* |
+| 6 **traslada el expediente a la autoridad** | **PUENTE, entero** | hallazgo del ACTA 1 seccion 3.3. Ver 2.C |
+
+#### `detectar_abusos_contractuales_consumo`, parrafo 26 (`cap_02.md:23`). 6 pasos, 1 con puente
+
+| paso | marca | razon |
+|---|---|---|
+| 1 reune el contrato con sus condiciones generales | **TRANSCRIPCION** | el objeto *contratos uniformes* es del parrafo |
+| 2 marca las clausulas que favorecen a una parte | **TRANSCRIPCION** | *contratos uniformes que favorecen a una de las partes*, literal |
+| 3 marca los derechos esenciales que faltan | **TRANSCRIPCION** | *la no inclusion de derechos esenciales en los contratos*, literal |
+| 4 marca las condiciones de credito excesivamente estrictas | **TRANSCRIPCION** | *la imposicion de condiciones excesivamente estrictas para la concesion de creditos por parte de los vendedores*, literal |
+| 5 escribe cada abuso junto a lo que lo produce | **TRANSCRIPCION** | es el entregable de *detectar* sobre los tres objetos del parrafo |
+| 6 **traslada el contrato marcado a quien puede exigir su correccion** | **PUENTE, entero** | hallazgo del ACTA 1 seccion 3.3. Ver 2.C |
+
+#### `formular_codigo_comercializacion_empresarial`, parrafo 31 (`cap_02.md:33`). 6 pasos, 4 con puente
+
+| paso | marca | razon |
+|---|---|---|
+| 1 sienta a las empresas y a las organizaciones de consumidores | **TRANSCRIPCION** | *por las empresas, en cooperacion con las organizaciones de consumidores*, literal |
+| 2 escribe el codigo **con una regla por practica** | **PUENTE, clausula** | el objeto es del libro; **la forma del codigo la escribi yo.** Ver 2.C |
+| 3 decide si hace falta un acuerdo voluntario conjunto | **TRANSCRIPCION** | *Tambien pueden concertarse acuerdos voluntarios conjuntos por parte de las empresas, las organizaciones de consumidores y otras partes interesadas.* El *pueden* del libro es lo que hace fiel el *decide si* |
+| 4 pon el codigo en aplicacion **y escribe quien responde de cada regla** | **PUENTE, clausula** | hallazgo del ACTA 1 seccion 3.3. Ver 2.C |
+| 5 da publicidad al codigo **por vias que alcancen al consumidor, para que pueda invocarlo** | **PUENTE, clausula** | la etapa es del libro; **la via y el proposito no.** Ver 2.C |
+| 6 **comprueba al cabo del primer periodo** | **PUENTE, entero** | hallazgo del ACTA 1 seccion 3.3. Ver 2.C |
+
+#### `examinar_normas_pesos_medidas`, parrafo 32 (`cap_02.md:35`). 6 pasos, 5 con puente
+
+**Es el parrafo mas corto del capitulo, una sola frase, y es el candidato que mas puso de su cosecha.** No es coincidencia y se dice en 2.E.
+
+| paso | marca | razon |
+|---|---|---|
+| 1 **fija por escrito cada cuanto se examina** | **PUENTE, entero** | ACTA 1 seccion 3.2, correccion del DISCUTIBLE 5. Ver 2.C |
+| 2 reune las normas juridicas sobre pesos y medidas | **TRANSCRIPCION** | *las normas juridicas sobre pesos y medidas*, literal |
+| 3 examina cada norma **respecto de los productos, los envases o las unidades que hoy se venden** | **PUENTE, clausula** | el verbo *examinar* es del libro; **la vara del examen la escribi yo.** Ver 2.C |
+| 4 reune los mecanismos **y anota quien inspecciona, con que instrumento y con que consecuencia** | **PUENTE, clausula** | *sus mecanismos de aplicacion* es del libro; **el desglose en tres es mio.** Ver 2.C |
+| 5 evalua la eficacia **con lo que midio durante el periodo, no con lo que promete su reglamento** | **PUENTE, clausula** | *evaluar la eficacia de sus mecanismos de aplicacion* es literal; **el criterio y el periodo son mios.** Ver 2.C |
+| 6 escribe la revision **y deja fijada la fecha del proximo examen** | **PUENTE, clausula** | **es el mismo puente del paso 1, por segunda vez.** Ver 2.C |
+
+#### `informar_efectos_ambientales_productos`, parrafo 29 (`cap_02.md:29`). 7 pasos, 1 con puente
+
+| paso | marca | razon |
+|---|---|---|
+| 1 determina sobre que productos y que efectos | **TRANSCRIPCION** | *los efectos de los productos y los servicios en el medio ambiente*, literal |
+| 2 elabora el perfil de producto | **TRANSCRIPCION** | *la elaboracion de perfiles de los productos*, medio 1 de 5 |
+| 3 pide el informe ambiental a la industria | **TRANSCRIPCION** | *la presentacion de informes ambientales por la industria*, medio 2 de 5. Y el *ponlo donde el consumidor lo alcance* es el marco del propio parrafo: *que los consumidores tengan acceso* |
+| 4 abre el centro de informacion **que atienda las consultas que el perfil y el informe no cierren** | **PUENTE, clausula** | el medio 3 de 5 es del libro; **la jerarquia entre los cinco medios la escribi yo.** Ver 2.C |
+| 5 pon en marcha el etiquetado ecologico voluntario y transparente **y publica el criterio de cada etiqueta** | **TRANSCRIPCION** | *programas voluntarios y transparentes de etiquetado ecologico*, literal con sus dos adjetivos. **Publicar el criterio es aplicar el *transparente* del libro**, exactamente igual que el paso 7 aplica el *inequivoca* |
+| 6 abre el servicio de consulta telefonica directa | **TRANSCRIPCION** | *los servicios de consulta telefonica directa sobre los productos*, medio 5 de 5 |
+| 7 comprueba que los cinco medios dicen lo mismo | **TRANSCRIPCION** | **SALVADO por el encargo y por el ACTA 1 seccion 3.3:** el criterio *inequivoca* es del libro. **No lo toco** |
+
+#### `verificar_afirmaciones_ambientales_publicidad`, parrafo 30 (`cap_02.md:31`). 5 pasos, CERO puentes
+
+**Es el unico candidato del lote que sale limpio, y no por casualidad: es el que en la vuelta 1 ya perdio su puente,** porque el DISCUTIBLE 6 le retiro el sexto paso antes de publicarlo. **Un candidato al que ya se le aplico esta vara sale de esta pasada intacto.** Es la mejor prueba de que la vara es la misma en las dos vueltas.
+
+| paso | marca | razon |
+|---|---|---|
+| 1 sienta a los cuatro actores | **TRANSCRIPCION** | *Los Estados Miembros, en estrecha colaboracion con los fabricantes, los distribuidores y las organizaciones de consumidores*, los cuatro literales |
+| 2 escribe la norma o el codigo que reglamenta que se puede afirmar | **TRANSCRIPCION** | *normas y codigos de publicidad adecuados para reglamentar y verificar las afirmaciones* |
+| 3 recoge las afirmaciones de la publicidad **y de las demas actividades de comercializacion** | **TRANSCRIPCION** | *en las actividades de publicidad y otras actividades de comercializacion*, literal |
+| 4 verifica cada afirmacion y marca la capciosa | **TRANSCRIPCION** | *verificar* y *afirmaciones capciosas*, los dos del parrafo |
+| 5 adopta la medida que corresponda | **TRANSCRIPCION** | *deben adoptar medidas contra la informacion o las afirmaciones capciosas*. **No decir cuales es ser fiel**, porque el libro tampoco las dice |
+
+### 2.C. LOS 13 PUENTES, RESUELTOS UNO A UNO CON SU CITA
+
+**Cada uno lleva el fichero y la linea, la frase que el parrafo SI dice, y el hueco.** *Requisito del fundador, 10 sep 2026: no basta con escribir lo retiro; la cita es la prueba de que se releyo el parrafo y no la memoria del reporte anterior.*
+
+#### Los 4 que se RETIRAN enteros
+
+| # | candidato y paso | `cap_02.md` | lo que el parrafo SI dice | el hueco | resolucion |
+|---|---|---|---|---|---|
+| 1 | `vigilar_practicas...` paso 6, *traslada el expediente a la autoridad que puede hacer efectiva esa norma* | **linea 13**, parrafo 21 | *Se debe alentar a las organizaciones de consumidores a que **vigilen** practicas perjudiciales como...* | el parrafo **alienta a vigilar y ahi acaba**. No nombra a nadie que reciba nada. **Y la formula *hacer efectivas esas medidas* que yo tenia en la cabeza esta en el parrafo 22 (`cap_02.md:15`), que es un parrafo que este mismo lote dejo FUERA** por remitir a la resolucion 35/63 | **RETIRADO.** Con el se van la cola del entregable (*y la constancia del traslado a la autoridad competente*) y la frase del resumen que lo justificaba (*el destinatario del traslado no es la opinion publica sino quien puede hacer efectiva esa norma*). **Un puente no se queda callado en otro campo del nodo** |
+| 2 | `detectar_abusos...` paso 6, *traslada el contrato marcado a quien puede exigir su correccion* | **linea 23**, parrafo 26 | *Los consumidores **deben gozar de proteccion** contra abusos contractuales como el uso de contratos uniformes...* | el parrafo **enumera tres abusos y nada mas**. No dice quien exige la correccion, ni ante quien, ni cuando | **RETIRADO.** Y con el, la cola de las condiciones de activacion (*antes de autorizar que se siga ofreciendo*), que presuponia la misma autoridad que el paso |
+| 3 | `formular_codigo...` paso 6, *comprueba al cabo del primer periodo...* | **linea 33**, parrafo 31 | *Estos codigos **deben recibir una publicidad adecuada**.* Es la ultima frase del parrafo | **el parrafo cierra en la publicidad.** No hay revision, ni primer periodo, ni segundo. **El periodo lo inventaba yo entero** | **RETIRADO** |
+| 4 | `examinar_normas...` paso 1, *fija por escrito cada cuanto se examina y la fecha del proximo examen* | **linea 35**, parrafo 32 | *Los Estados Miembros deben examinar **periodicamente** las normas juridicas sobre pesos y medidas y evaluar la eficacia de sus mecanismos de aplicacion.* | **el libro pone la periodicidad y NO pone el periodo.** Esa es la distincion exacta: *periodicamente* es transcripcion, *cada cuanto* es mio | **RETIRADO.** Es la correccion que el ACTA 1 seccion 3.2 dejo encargada al sostener el DISCUTIBLE 5 |
+
+#### Las 9 clausulas que se REESCRIBEN
+
+| # | candidato y paso | `cap_02.md` | lo que el parrafo SI dice | el hueco | como queda |
+|---|---|---|---|---|---|
+| 5 | `vigilar...` paso 3, *y **exige la prueba de la afirmacion a quien la hizo*** | **linea 13**, parrafo 21 | *la comercializacion basada en **afirmaciones falsas o capciosas*** | el parrafo **nombra el objeto que hay que vigilar**; no invierte ninguna carga de prueba ni obliga al anunciante a nada. **Ordenar a un tercero es el mismo error que el traslado** | *...y recoge la afirmacion tal como se difundio.* Recoger lo que observo es vigilar; mandar al anunciante no lo es |
+| 6 | `formular...` paso 2, *escribe el codigo **con una regla por practica*** | **linea 33**, parrafo 31 | *codigos de **comercializacion y otras practicas comerciales*** | el objeto es del libro; **la forma del codigo, una regla por practica, la prescribi yo** | *Escribe el codigo de comercializacion y cubre en el tambien las demas practicas comerciales del sector.* |
+| 7 | `formular...` paso 4, *y **escribe quien responde de cada regla*** | **linea 33**, parrafo 31 | *la formulacion y **aplicacion** por las empresas* | la etapa **aplicacion** es del libro. **El responsable por regla no aparece en ninguna de las tres frases del parrafo** | *Pon el codigo en aplicacion en las empresas que lo formularon.* Y el entregable pierde *con un responsable por regla* |
+| 8 | `formular...` paso 5, *da publicidad **por vias que alcancen al consumidor, para que pueda invocarlo*** | **linea 33**, parrafo 31 | *Estos codigos deben recibir una **publicidad adecuada**.* | **es el caso de la RESTRICCION 2 de `D.27` en estado puro:** el libro pone la etapa y en el sitio del criterio pone un **adjetivo de adecuacion**. Cualquier via que yo escriba la escribo yo | *Da publicidad al codigo una vez formulado y puesto en aplicacion.* El entregable pierde *difundido de forma que el consumidor pueda invocarlo*, y el resumen pierde el parrafo que lo argumentaba |
+| 9 | `examinar...` paso 3, *marca la que haya quedado atras **respecto de los productos, los envases o las unidades que hoy se venden*** | **linea 35**, parrafo 32 | *deben **examinar** periodicamente las normas juridicas sobre pesos y medidas* | el verbo y el objeto son del libro. **La vara con la que se examina, esos tres objetos, es un inventario que puse yo** | *Examina una a una esas normas y marca las que el examen encuentre que hay que cambiar.* |
+| 10 | `examinar...` paso 4, *y **anota de cada uno quien inspecciona, con que instrumento y con que consecuencia*** | **linea 35**, parrafo 32 | *evaluar la eficacia de **sus mecanismos de aplicacion*** | el objeto es del libro en cuatro palabras. **El desglose en tres campos es un inventario mio disfrazado del suyo**, y es justo lo que `D.27` prohibe | *Reune los mecanismos de aplicacion con los que esas normas se hacen efectivas.* |
+| 11 | `examinar...` paso 5, *con lo que midio **durante el periodo**, no con lo que promete su reglamento* | **linea 35**, parrafo 32 | *evaluar la **eficacia** de sus mecanismos de aplicacion* | el mandato es literal; **el criterio con que se evalua, y el periodo que reaparece por la puerta de atras, son mios** | *Evalua la eficacia de cada uno de esos mecanismos de aplicacion.* |
+| 12 | `examinar...` paso 6, *y **deja fijada la fecha del proximo examen*** | **linea 35**, parrafo 32 | *examinar **periodicamente*** | **es el puente numero 4 otra vez, en otro paso.** Retirar el paso 1 y dejar este habria dejado el bucle cerrado igual, solo que mas escondido | *Escribe el resultado del examen con las normas que hay que cambiar y la evaluacion de eficacia de cada mecanismo de aplicacion.* Y las condiciones de activacion pasan a decir *que el texto manda hacer periodicamente sin decir cada cuanto*, que es el hueco nombrado en vez de tapado |
+| 13 | `informar...` paso 4, *un centro **que atienda las consultas que el perfil y el informe no cierren*** | **linea 29**, parrafo 29 | *recurriendo a medios como la elaboracion de perfiles de los productos, la presentacion de informes ambientales por la industria, **el establecimiento de centros de informacion para los consumidores**, la ejecucion de programas...* | el medio es del libro, pero **el parrafo pone los cinco medios en LISTA PLANA y no los ordena entre si.** Subordinar el centro a los otros dos es una jerarquia mia | *Abre un centro de informacion para los consumidores.* |
+
+### 2.C.1. LA SALIDA DE LA ADUANA DE LOS SEIS, DESPUES DE LA CORRECCION
+
+*Requisito del fundador, 10 sep 2026: se pega caiga o no caiga. Un candidato corregido que nadie volvio a pasar es un candidato sin medir.* **Cada uno se corrio EN EL MISMO ACTO en que se escribio la correccion** (seccion 16), no al final. Lo que sigue es la reimpresion de las seis corridas, generada desde el instrumento. **Se recorta el banner de cabecera y el pie fijo, identicos en las seis.**
+
+    $ python forja.py informe cuarentena/onu_consumidor\detectar_abusos_contractuales_consumo.json
+      candidatos revisados        : 1
+      nodos en el grafo de destino: 2
+      umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+      EL SALDO
+        ENTRARIAN sin leer nada          : 1
+        BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+        CAERIAN por una guarda           : 0
+        CHOCAN entre si dentro del lote  : 0
+      [ENTRARIA] detectar_abusos_contractuales_consumo   (detectar_abusos_contractuales_consumo.json)
+
+    $ python forja.py informe cuarentena/onu_consumidor\examinar_normas_pesos_medidas.json
+      candidatos revisados        : 1
+      nodos en el grafo de destino: 2
+      umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+      EL SALDO
+        ENTRARIAN sin leer nada          : 1
+        BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+        CAERIAN por una guarda           : 0
+        CHOCAN entre si dentro del lote  : 0
+      [ENTRARIA] examinar_normas_pesos_medidas   (examinar_normas_pesos_medidas.json)
+
+    $ python forja.py informe cuarentena/onu_consumidor\formular_codigo_comercializacion_empresarial.json
+      candidatos revisados        : 1
+      nodos en el grafo de destino: 2
+      umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+      EL SALDO
+        ENTRARIAN sin leer nada          : 1
+        BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+        CAERIAN por una guarda           : 0
+        CHOCAN entre si dentro del lote  : 0
+      [ENTRARIA] formular_codigo_comercializacion_empresarial   (formular_codigo_comercializacion_empresarial.json)
+
+    $ python forja.py informe cuarentena/onu_consumidor\informar_efectos_ambientales_productos.json
+      candidatos revisados        : 1
+      nodos en el grafo de destino: 2
+      umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+      EL SALDO
+        ENTRARIAN sin leer nada          : 1
+        BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+        CAERIAN por una guarda           : 0
+        CHOCAN entre si dentro del lote  : 0
+      [ENTRARIA] informar_efectos_ambientales_productos   (informar_efectos_ambientales_productos.json)
+
+    $ python forja.py informe cuarentena/onu_consumidor\verificar_afirmaciones_ambientales_publicidad.json
+      candidatos revisados        : 1
+      nodos en el grafo de destino: 2
+      umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+      EL SALDO
+        ENTRARIAN sin leer nada          : 1
+        BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+        CAERIAN por una guarda           : 0
+        CHOCAN entre si dentro del lote  : 0
+      [ENTRARIA] verificar_afirmaciones_ambientales_publicidad   (verificar_afirmaciones_ambientales_publicidad.json)
+
+    $ python forja.py informe cuarentena/onu_consumidor\vigilar_practicas_comerciales_perjudiciales.json
+      candidatos revisados        : 1
+      nodos en el grafo de destino: 2
+      umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+      EL SALDO
+        ENTRARIAN sin leer nada          : 1
+        BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+        CAERIAN por una guarda           : 0
+        CHOCAN entre si dentro del lote  : 0
+      [ENTRARIA] vigilar_practicas_comerciales_perjudiciales   (vigilar_practicas_comerciales_perjudiciales.json)
+
+**CERO CAIDAS Y CERO CORRECCIONES DE SEGUNDA VUELTA:** ninguno de los seis necesito un segundo intento tras la correccion. **Y digo contra que se lee ese cero**, que es lo que el ACTA 1 seccion 1.8 me reclamo: se lee contra una puerta que **ya se demostro que muerde**, porque el propio auditor la mordio a proposito en su seccion 1.5 mutando la clave de fuente y obteniendo `1 CAERIAN`. **No es un cero de puerta abierta.**
+
+**Y digo tambien lo que este cero NO mide, para que no se lea de mas:** las correcciones de esta tarea **no tocaron ni un id, ni una fuente, ni el esquema**, que es lo que las guardas de la aduana miran. **Retirar un paso inventado es exactamente el defecto que la aduana NO puede ver**, y por eso hizo falta una pasada de lectura. Un informe verde no certifica que los pasos sean del libro: certifica que la ficha esta bien construida.
+
+### 2.D. LA ARISTA QUE LA SEÑAL NO LEVANTA, ESCRITA DONDE NO SE PIERDE
+
+*Bloque propio y titulado, como el encargo manda. `D.29`, ratificada por el fundador el 10 sep 2026.*
+
+    formular_codigo_comercializacion_empresarial   (parrafo 31, cap_02.md:33)   MADRE
+        baja a
+    verificar_afirmaciones_ambientales_publicidad  (parrafo 30, cap_02.md:31)   HIJO
+
+**LA DIRECCION:** de la madre al hijo. En la ficha de la madre el hijo va en `nodos_siguientes`; en la ficha del hijo la madre va en `nodos_previos`.
+
+**LA RAZON, CON LA VARA DELANTE. Que añade el HIJO a la MADRE:** la madre manda **formular, aplicar y dar publicidad** a un codigo de comercializacion del sector (parrafo 31). El hijo toma **una sola clase de regla de ese codigo**, la que gobierna las afirmaciones ambientales, y **le añade lo que la madre no tiene: el acto de verificar cada afirmacion contra la prueba que el codigo exige** (parrafo 30, *normas y codigos de publicidad adecuados para **reglamentar y verificar***). **La madre escribe la regla; el hijo la comprueba contra el mundo.** Eso es CONTINUA y no REPITE: el hijo no vuelve a formular el codigo, lo usa.
+
+**EL ORDEN DE INSERCION QUE EXIGE: LA MADRE PRIMERO.** Si entra antes el hijo, en el momento de su veredicto **no hay madre en el grafo contra la que declarar nada**, y la arista solo se puede cablear despues, a mano, en una sede que solo escribe la aduana (seccion 14). **`formular_codigo_comercializacion_empresarial` se inserta antes que `verificar_afirmaciones_ambientales_publicidad`.**
+
+**DONDE SE CABLEA:** en el acto del veredicto, no antes. `docs/FLUJO_DE_EXTRACCION.md` fase 2, paso 4. **Los seis JSON siguen viajando con `nodos_previos` y `nodos_siguientes` vacios**, y eso sigue estando bien: la arista es un veredicto, no un campo que el extractor rellene en cuarentena.
+
+**LA MEDICION, RECOMPUTADA HOY Y NO HEREDADA** (seccion 5: toda cifra que la propia vuelta pudo mover se recomputa). **Tenia que recomputarla porque la TAREA 2 reescribio los pasos de la madre**, y la señal 3 se calcula sobre los pasos:
+
+    python -c "from src import aduana; aduana.senal_paso_contra_nodo(...)"
+      MADRE de candidato contra HIJO vecino : 0.602410
+         detalle: paso 1 del candidato contra paso 1 de verificar_afirmaciones_ambientales_publicidad
+      HIJO de candidato contra MADRE vecino : 0.572289
+         detalle: paso 1 del candidato contra paso 1 de formular_codigo_comercializacion_empresarial
+      umbral                                : 0.60
+      senal 1 texto del par                 : 0.242446
+      senal 2 familia del par               : 0.000000
+
+**LAS DOS CIFRAS SIGUEN SIENDO LAS DEL ACTA 1, AL SEXTO DECIMAL, Y AHORA SE SABE POR QUE:** el maximo de la señal 3 vive en **el paso 1 contra el paso 1**, y **el paso 1 es el unico de la madre que la TAREA 2 no toco**. Retire el paso 6 y reescribi los pasos 2, 4 y 5, y la señal ni se entero. **Eso no es una casualidad afortunada: es la seccion 5 funcionando.** Si el maximo hubiera vivido en el paso 4, hoy tendria una cifra distinta y estaria declarando la discrepancia en vez de la coincidencia.
+
+**Y LO QUE LA MEDICION DEJA DICHO:** en el sentido en que el hijo llegara de candidato, **0,572289 contra un umbral de 0,60**. La señal **no va a levantar a nadie**. Si esta arista solo vive en la prosa de un reporte, se pierde. **Por eso esta aqui, en bloque propio y titulado.**
+
+**EL UMBRAL NO SE TOCA, y la razon es doctrina, no prudencia** (`D.29`, y seccion 11): que la señal mida 0,572289 y el umbral este en 0,60 **no es un argumento para bajarlo**. Es la razon por la que la lectura no delega en la señal. Bajar el umbral hasta cazar este par ensancharia la cola falsa de todos los demas para cazar uno que **la lectura ya cazo gratis**. Ademas: el par **no es una expansion de linea** sino una **dependencia de proceso**, que es la clase que `CALIBRACION_D4.md` seccion 7 ya declara cazada el **3,0 por ciento** de las veces. **Esta dentro del 97 por ciento que la casa tiene escrito que no se caza**, o sea que es el caso previsto, no la sorpresa.
+
+### 2.E. LA CIFRA QUE LE FALTABA A ESTA CASA
+
+*El encargo la pide por su nombre: cuanto pone el extractor de su cosecha cuando cree estar transcribiendo. **No es una acusacion, es una medida**, y la publico entera aunque me deje mal.*
+
+| candidato | parrafo | pasos | TRANSCRIPCION | con PUENTE | % de puente |
+|---|---|---:|---:|---:|---:|
+| `verificar_afirmaciones_ambientales_publicidad` | 30 | 5 | 5 | **0** | **0 %** |
+| `detectar_abusos_contractuales_consumo` | 26 | 6 | 5 | **1** | **17 %** |
+| `informar_efectos_ambientales_productos` | 29 | 7 | 6 | **1** | **14 %** |
+| `vigilar_practicas_comerciales_perjudiciales` | 21 | 6 | 4 | **2** | **33 %** |
+| `formular_codigo_comercializacion_empresarial` | 31 | 6 | 2 | **4** | **67 %** |
+| `examinar_normas_pesos_medidas` | 32 | 6 | 1 | **5** | **83 %** |
+| **TOTAL** | | **36** | **23** | **13** | **36 %** |
+
+**MAS DE UNO DE CADA TRES PASOS DEL LOTE 1 LO PUSO EL EXTRACTOR, NO EL LIBRO.** Y de los seis candidatos, **cuatro** llevaban al menos un puente.
+
+**LO QUE LA CIFRA ENSEÑA, y es lo unico que me atrevo a sacar de seis casos:** el porcentaje de puente **sube cuando baja el inventario del parrafo**. El parrafo 30 nombra cuatro actores, un objeto y dos verbos, y dio **cero** puentes. El parrafo 32 es **una sola frase con dos objetos**, y dio **cinco de seis**. **Un parrafo pobre no produce un nodo pobre: produce un nodo inventado**, porque el hueco que el libro deja lo rellena quien escribe. Esa es la trampa que `D.27` estaba puesta para cazar, y **la cazo aqui, en el candidato que el ACTA 1 ya habia llamado el mas flojo del lote**.
+
+**LOS PASOS DEL LOTE, ANTES Y DESPUES:** de **36** a **32**. Cuatro pasos retirados enteros y nueve clausulas reescritas.
+
+### 2.F. LOS DOS REPARTOS DE ESTOS 13, PORQUE NO SON TODOS DEL MISMO ORIGEN
+
+**No me cuelgo medallas que no son mias ni escondo lo que encontre yo.**
+
+| origen | cuantos | cuales |
+|---|---:|---|
+| **encontrados por el ACTA 1** seccion 3.3, que me venian encargados | **6** | los 4 retirados enteros, mas la clausula del `formular...` paso 4, mas la reaparicion del mismo periodo en el `examinar...` paso 6 |
+| **encontrados por mi en esta pasada**, aplicando la misma vara a lo que el acta no listo | **7** | `vigilar...` 3, `formular...` 2 y 5, `examinar...` 3, 4 y 5, `informar...` 4 |
+
+**Los siete mios van marcados como DISCUTIBLE 1 y DISCUTIBLE 2 mas abajo**, porque van mas alla de la lista que el auditor adjudico y **no me adjudico a mi mismo** (seccion 14).
