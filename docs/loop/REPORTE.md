@@ -1469,3 +1469,34 @@ antes de saber si acierto.
 ---
 
 **FIN DEL REPORTE DE LA VUELTA 2.** Cuatro tareas cerradas, **cero inserciones**, **cero paradas**, **13 puentes resueltos con su cita**, **cero candidatos nuevos de `cap_03` con su razon parrafo a parrafo**, **el lote 1 cerrado contando sus cuatro ficheros**, una arista escrita donde no se pierde, una discrepancia declarada contra el acta y **siete discutibles marcados antes de saber si acierto.**
+
+---
+---
+
+# VUELTA 3, lote 2 (`smart_who`), cap_01 y cap_02
+
+*Esqueleto abierto AL EMPEZAR, antes de la primera tarea (`EXTRACTOR.md`
+seccion 3). Las filas se anexan al cerrarse cada tarea.*
+
+| | |
+|---|---|
+| fecha | **PENDIENTE** |
+| rama | **PENDIENTE** |
+| commit de apertura | **PENDIENTE** |
+| lote | lote 2, `smart_who`, 7 capitulos (D.24) |
+| capitulos de esta vuelta | cap_01 y cap_02, DOS POR VUELTA, sin mezclarlos |
+| nodos en el dataset al empezar | **PENDIENTE** |
+| inserciones autorizadas en esta vuelta | **CERO.** `MODO_INSERCION=cuarentena` (D.26) |
+
+### Las cuatro tareas del encargo
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 1 | ficha del libro y frontera del `cap_01` | **PENDIENTE** | |
+| 2 | candidatos del `cap_01` con el ciclo de cinco pasos | **PENDIENTE** | |
+| 3 | informe y commit del capitulo, y despues el `cap_02` | **PENDIENTE** | |
+| 4 | las cuatro medidas del cierre, desglosadas por capitulo | **PENDIENTE** | |
+
+### Discutibles marcados ANTES de saber si acierto
+
+**PENDIENTE**
