@@ -20,6 +20,7 @@ Lo que hay en `c:/Users/AlexDesk/Documents/OCR/fuentes/mundo_11/`, contado:
 | insumos auxiliares del apendice de Bananas | 2 |
 | documentos del propio recorte (MANIFIESTO, INDICE_REAL, CENSO_DE_CUERPOS, LISTADO_ARCHIVOS_AUDITORIA) | 4 |
 | **ficheros JSON de nodo** | **0** |
+| ficheros de la carpeta hermana `mundo_10_reservado/` (ver 1.1) | 1 |
 | ficheros con el campo `pasos_accionables` en cualquier formato | **0** |
 
 Los diez libros: `bernerslee_bananas` (21), `gerber_emyth` (22),
@@ -41,6 +42,41 @@ es una vuelta de extraccion, que es exactamente el trabajo que
 
     cuarentena/mundo_11/<id_propuesto>.json
     python forja.py informe --carpeta cuarentena/mundo_11
+
+### 1.1. EL MUNDO 10, QUE ESTABA AL LADO Y NO SE MIRO
+
+**AÑADIDO EL MISMO 9 sep 2026, a pregunta del fundador.** El primer barrido
+busco `mundo_11` por su nombre y luego `*mundo*` a cuatro niveles desde
+`Documents`, que **no alcanza a los hermanos de `OCR/fuentes/`**. Habia otro:
+
+    OCR/fuentes/mundo_10_reservado/gerber_emyth/17_cap_17_your_marketing_strategy.md
+
+**UN SOLO FICHERO.** El capitulo 17 de Gerber, verbatim, 3.845 palabras, con su
+cabecera de edicion y su ISBN. Y **no es un olvido de nadie: esta apartado a
+proposito.** El `CENSO_DE_CUERPOS.md` del mundo 11 lo registra en su tabla,
+`(a mundo_10_reservado)`, el `INDICE_REAL.md` dice que es *"exactamente el titulo
+a apartar para mundo_10_reservado"*, y el `MANIFIESTO.md` da su ruta de destino.
+**La prueba mas limpia esta en la numeracion del propio recorte:** en
+`mundo_11/gerber_emyth/` la serie salta de `17_cap_15` a `18_cap_16` a
+`19_cap_18`. **El 17 no falta: se fue.**
+
+**NO CAMBIA NADA DE LO ANTERIOR, y por eso lo refuerza:** tambien es BANDEJA (a).
+En **todo** `OCR/fuentes/`, los dos mundos juntos, hay **170 ficheros y CERO
+ficheros JSON de nodo**. El arbol entero es libro crudo por construccion.
+
+**Y DE PASO EXPLICA EL 167 DEL ENCARGO, que es aritmetica exacta y no una cifra
+aproximada:**
+
+| | |
+|---|---:|
+| recortes de capitulo de `mundo_11/` | 163 |
+| documentos del propio recorte (MANIFIESTO, INDICE_REAL, CENSO_DE_CUERPOS, LISTADO_ARCHIVOS_AUDITORIA) | 4 |
+| **suma** | **167** |
+| insumos auxiliares del apendice, que quedan fuera de esa cuenta | 2 |
+| **ficheros de `mundo_11/`, todos** | **169** |
+
+**LOS 167 SON EL RECUENTO DE FICHEROS DE LA CARPETA**, no un recuento de
+candidatos. La cifra del encargo era correcta; lo que nombraba era otra cosa.
 
 ---
 
