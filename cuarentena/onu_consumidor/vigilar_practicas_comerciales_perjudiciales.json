@@ -1,0 +1,29 @@
+{
+  "_de_donde_sale": "cap_02.md linea 13, apartado V-C parrafo 21, segunda mitad. La primera mitad del parrafo (los Estados deben intensificar sus esfuerzos) es postura y se queda fuera: lo que se extrae es la vigilancia que el texto encarga a las organizaciones de consumidores, con las TRES familias de practica que el propio libro nombra.",
+  "id": "vigilar_practicas_comerciales_perjudiciales",
+  "titulo": "Vigilar las practicas comerciales que perjudican al consumidor",
+  "resumen_teorico": "La vigilancia del mercado no queda solo en manos del Estado: el texto alienta a las organizaciones de consumidores a vigilar, y les nombra las tres familias de practica que mas perjudican los intereses economicos del consumidor, la adulteracion de alimentos, la comercializacion basada en afirmaciones falsas o capciosas y el fraude en la prestacion de servicios. Nombrar las tres es lo que convierte la vigilancia en trabajo: una vigilancia sin catalogo de objetos mira todo el mercado y no encuentra nada. Y una practica recogida sin la norma que incumple al lado no se puede trasladar a nadie, porque el destinatario del traslado no es la opinion publica sino quien puede hacer efectiva esa norma.",
+  "pasos_accionables": [
+    "Reune la lista de leyes y normas obligatorias vigentes que obligan a los fabricantes, los distribuidores y cuantos participan en la provision de bienes y servicios del mercado que vas a vigilar.",
+    "Vigila la adulteracion de alimentos y recoge la prueba de cada caso que encuentres.",
+    "Vigila la comercializacion basada en afirmaciones falsas o capciosas y exige la prueba de la afirmacion a quien la hizo.",
+    "Vigila los fraudes en la prestacion de servicios y recoge la queja del consumidor que los sufrio.",
+    "Contrasta cada practica recogida con la ley o la norma obligatoria que incumple, y aparta las que no incumplen ninguna.",
+    "Traslada el expediente de las que si incumplen a la autoridad que puede hacer efectiva esa norma."
+  ],
+  "condiciones_activacion": "Cuando una organizacion de consumidores abre o renueva la vigilancia de un mercado y necesita saber que practicas mirar y contra que norma medirlas.",
+  "entregable_esperado": "Un expediente por practica perjudicial detectada, con la prueba recogida, la ley o norma obligatoria que incumple y la constancia del traslado a la autoridad competente.",
+  "fuentes": [{"clave": "onu_consumidor", "fecha": "2026-09-09"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "denominaciones": {
+    "nombre_largo": "Vigilancia de las practicas que perjudican los intereses economicos de los consumidores",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "monitoring of harmful business practices"}
+    ]
+  },
+  "dominio": "proteccion_consumidor",
+  "escala_minima": "Una sola asociacion local con un solo mercado: las tres familias de practica y el contraste contra la norma valen igual con un vigilante que con una agencia."
+}

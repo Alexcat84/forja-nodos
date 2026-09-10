@@ -1,0 +1,29 @@
+{
+  "_de_donde_sale": "cap_02.md linea 31, apartado V-C parrafo 30, entero. Inventario propio del libro: los CUATRO actores que colaboran, el objeto (informacion o afirmaciones capciosas sobre el medio ambiente en publicidad y demas actividades de comercializacion) y el entregable, normas y codigos de publicidad para REGLAMENTAR y VERIFICAR. HIJO propuesto de formular_codigo_comercializacion_empresarial: la arista se cablea en el acto del veredicto, con la madre dentro. Razon en docs/loop/REPORTE.md seccion 2.A.6.",
+  "id": "verificar_afirmaciones_ambientales_publicidad",
+  "titulo": "Verificar las afirmaciones ambientales de la publicidad contra su codigo",
+  "resumen_teorico": "El texto empareja dos verbos que suelen ir separados, reglamentar y verificar, y ese emparejamiento es todo el procedimiento: un codigo que dice que se puede afirmar sobre el medio ambiente pero no comprueba lo que se afirma deja la afirmacion capciosa exactamente donde estaba. La verificacion necesita dos cosas que el propio parrafo pone: una norma escrita que diga con que prueba se sostiene cada afirmacion, y los cuatro actores en colaboracion estrecha, porque un codigo de publicidad redactado solo por quien se anuncia no verifica a nadie. Y el alcance del texto es mas ancho que el anuncio: dice publicidad Y otras actividades de comercializacion, asi que el envase, la etiqueta y el argumentario de venta entran en la recogida.",
+  "pasos_accionables": [
+    "Sienta a la autoridad, a los fabricantes, a los distribuidores y a las organizaciones de consumidores, porque el texto pide la colaboracion estrecha de los cuatro.",
+    "Escribe la norma o el codigo de publicidad que reglamenta que se puede afirmar sobre el medio ambiente y con que prueba se sostiene cada afirmacion.",
+    "Recoge las afirmaciones ambientales que se hacen en la publicidad y en las demas actividades de comercializacion, no solo en el anuncio.",
+    "Verifica cada afirmacion recogida contra la prueba que el codigo exige y marca como capciosa la que no la tenga.",
+    "Adopta la medida que corresponda contra cada afirmacion capciosa que quede probada, y deja escrito cual fue y sobre que afirmacion."
+  ],
+  "condiciones_activacion": "Cuando hay que actuar contra afirmaciones ambientales capciosas en la publicidad y en las demas actividades de comercializacion, y existe o va a escribirse un codigo sobre el que apoyar la verificacion.",
+  "entregable_esperado": "El codigo de publicidad ambiental escrito con los cuatro actores y, por cada afirmacion recogida, su verificacion contra la prueba exigida y la medida adoptada si resulto capciosa.",
+  "fuentes": [{"clave": "onu_consumidor", "fecha": "2026-09-09"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "denominaciones": {
+    "nombre_largo": "Reglamentacion y verificacion de las afirmaciones ambientales en publicidad y comercializacion",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "greenwashing"},
+      {"idioma": "ingles", "termino": "environmental claims verification"}
+    ]
+  },
+  "dominio": "proteccion_consumidor",
+  "escala_minima": "Un solo anunciante y una sola afirmacion: la prueba que sostiene la afirmacion se pide igual, y el codigo puede ser una lista de tres reglas."
+}

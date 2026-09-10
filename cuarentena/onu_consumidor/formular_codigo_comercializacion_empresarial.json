@@ -1,0 +1,29 @@
+{
+  "_de_donde_sale": "cap_02.md linea 33, apartado V-C parrafo 31, entero. Es el esqueleto mas completo del capitulo: tres etapas nombradas (formulacion, aplicacion y publicidad del codigo), los coautores (las empresas EN COOPERACION con las organizaciones de consumidores) y una via alternativa (los acuerdos voluntarios conjuntos con otras partes interesadas). MADRE propuesta de verificar_afirmaciones_ambientales_publicidad: ver docs/loop/REPORTE.md seccion 2.A.6.",
+  "id": "formular_codigo_comercializacion_empresarial",
+  "titulo": "Formular, aplicar y difundir un codigo empresarial de comercializacion",
+  "resumen_teorico": "La autorregulacion que el texto describe no es una empresa escribiendose sus propias reglas: el codigo lo formulan las empresas EN COOPERACION con las organizaciones de consumidores, y ese coautor es lo que separa un codigo de un folleto. El texto pone tres etapas y no dos, y la tercera es la que se cae siempre: formular, aplicar, y dar publicidad al codigo. Un codigo de comercializacion que el consumidor no conoce no le protege de nada, porque nadie puede reclamar contra una regla cuya existencia ignora, y por eso la difusion no es el remate cosmetico del procedimiento sino la condicion de que sirva. El texto tambien avisa de que el objeto no es solo la comercializacion: el codigo cubre las demas practicas comerciales del sector.",
+  "pasos_accionables": [
+    "Sienta en la misma mesa a las empresas del sector y a las organizaciones de consumidores, porque el codigo se formula en cooperacion con ellas y no por cuenta de las empresas.",
+    "Escribe el codigo con una regla por practica, y cubre la comercializacion y tambien las demas practicas comerciales del sector.",
+    "Decide si ademas hace falta un acuerdo voluntario conjunto y quienes son las otras partes interesadas que lo firman.",
+    "Pon el codigo en aplicacion en las empresas que lo formularon y escribe quien responde de cada regla.",
+    "Da publicidad al codigo por vias que alcancen al consumidor, para que pueda invocarlo cuando una regla se incumpla.",
+    "Comprueba al cabo del primer periodo que cada regla del codigo tiene su responsable y que el consumidor sabe donde leerla."
+  ],
+  "condiciones_activacion": "Cuando un sector empresarial tiene que autorregular sus practicas de comercializacion en el ambito nacional y hay organizaciones de consumidores con las que formular el codigo.",
+  "entregable_esperado": "El codigo de comercializacion y practicas comerciales del sector, formulado con las organizaciones de consumidores, en aplicacion con un responsable por regla, y difundido de forma que el consumidor pueda invocarlo.",
+  "fuentes": [{"clave": "onu_consumidor", "fecha": "2026-09-09"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "denominaciones": {
+    "nombre_largo": "Formulacion, aplicacion y difusion de los codigos empresariales de comercializacion",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "codes of marketing practice"}
+    ]
+  },
+  "dominio": "proteccion_consumidor",
+  "escala_minima": "Una sola empresa y una sola asociacion de consumidores: el codigo puede ser una pagina, y las tres etapas siguen siendo tres."
+}

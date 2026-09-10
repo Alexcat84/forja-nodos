@@ -28,8 +28,8 @@ ademas la que la aduana pondria sola (`aduana._hoy()`).
 | # | tarea | estado | resultado |
 |---|---|---|---|
 | 1 | cap_01 leido, vara como ejemplar, registrado no minado | **CERRADA** | leido entero (19 lineas). **CERO extraidos.** Vara pasada sobre los 4 parrafos: 0 procedimientos propios. Registrado NO MINADO POR LA MARCA. **Mi vara COINCIDE con la marca**, y en el parrafo 19 por poco margen: se dice |
-| 2 | cap_02: frontera publicada y candidatos por la aduana | | |
-| 3 | informe del lote en seco | | |
+| 2 | cap_02: frontera publicada y candidatos por la aduana | **CERRADA** | frontera publicada antes de cortar: **6 procedimientos y 7 posturas** de 13 parrafos. **6 candidatos escritos, los 6 por la aduana en seco al PRIMER intento, cero caidas y cero correcciones de id.** 1 arista madre e hijo declarada por lectura |
+| 3 | informe del lote en seco | **CERRADA** | `python forja.py informe --carpeta cuarentena/onu_consumidor` sobre 6 candidatos contra un grafo de 2 nodos: **6 entrarian, 0 bloquearian, 0 caerian, 0 chocan.** Ninguna guarda disparo |
 | 4 | commit del capitulo | | |
 
 ### Discutibles marcados ANTES de saber si acierto
@@ -128,3 +128,387 @@ equivoco por estricto, y el coste es un nodo que se escribe mas tarde.
 **Nota de dependencia: este discutible NO cambia la tarea 1.** Aunque yo hubiera
 leido procedimiento en el 19, la marca FRONTERA manda igual y `cap_01` no se
 mina. Por eso es discutible de doctrina, no de resultado.
+
+---
+
+## TAREA 2, PARTE A. LA FRONTERA DE `cap_02`, PUBLICADA ANTES DE EXTRAER
+
+**Se publica antes de cortar** (seccion 10). `cap_02.md` son 13 parrafos, lineas
+11 a 35 del recorte, apartado V-C parrafos 20 a 32.
+
+### 2.A.1. Primero, que frontera NO hay aqui
+
+**No hay frontera de libro.** La seccion 10 regula el nodo que mezcla dos
+fuentes y manda escribir de donde sale cada tramo. **Este capitulo tiene UNA sola
+fuente**, `onu_consumidor`, y ningun candidato de esta vuelta trae material
+injertado. Por tanto:
+
+- cada candidato lleva **una sola entrada en `fuentes`**, y
+- la guarda `orden_fuentes` no tiene nada que ordenar en esta vuelta. **Se dice
+  para que nadie lea el verde de esa guarda como una comprobacion que aqui no ha
+  ocurrido.**
+
+**La frontera que SI hay en `cap_02`, y es la que publico, es la interna: donde
+acaba la postura y empieza el procedimiento.** Va parrafo a parrafo.
+
+### 2.A.2. LA VARA QUE USO, escrita antes de aplicarla
+
+De la tarea 1 me traigo la señal barata, y aqui añado la que la complementa,
+porque sin ella este capitulo entero seria postura y `cap_02` se leeria igual que
+`cap_01`, que no es el caso:
+
+> **LA PRUEBA DEL INVENTARIO.** Una linea normativa se vuelve procedimentable
+> **cuando el libro pone su propio inventario**: los medios, las etapas, o los
+> objetos que hay que revisar, nombrados uno a uno por el texto. Entonces
+> escribir los pasos es **transcribir** ese inventario en imperativo, y no se
+> inventa nada.
+>
+> **Cuando el libro solo pone el mandato y un adjetivo de adecuacion** (*medidas
+> apropiadas*, *politicas adecuadas*, *requisitos razonables*, *plazo
+> prudencial*), **cualquier paso que se escriba lo escribo yo**, y un nodo cuyos
+> pasos invento el extractor no es del libro.
+
+Las dos varas son la misma leida por sus dos caras: **el adjetivo de adecuacion
+delata la postura, el inventario propio delata el procedimiento.**
+
+### 2.A.3. LA FRONTERA, parrafo a parrafo, con su linea
+
+| parrafo | linea | inventario propio del libro | lado de la frontera |
+|---|---|---|---|
+| 20 | `cap_02.md:11` | no. *normas satisfactorias*, *metodos adecuados* | **POSTURA.** Es la cabecera del apartado: enumera METAS, no medios |
+| 21 | `cap_02.md:13` | **si**, en su segunda mitad: adulteracion de alimentos, comercializacion con afirmaciones falsas o capciosas, fraudes en la prestacion de servicios | **PROCEDIMIENTO** (la segunda mitad). La primera mitad, *intensificar esfuerzos*, es postura y se queda fuera |
+| 22 | `cap_02.md:15` | no. Remite al *Conjunto de Principios y Normas Equitativos... resolucion 35/63, de 5 de diciembre de 1980* | **POSTURA, y el ejemplar limpio de NOMBRAR NO ES PROCEDIMENTAR.** El procedimiento vive en OTRO libro. Lo que si es dato es la vigencia, y se dice abajo |
+| 23 | `cap_02.md:17` | a medias: durabilidad, utilidad, fiabilidad, aptitud. **Pero el criterio es *requisitos razonables*** | **POSTURA.** Mi propia vara me lo tumba: el adjetivo de adecuacion esta justo en el sitio del criterio. Ver DISCUTIBLE 3 |
+| 24 | `cap_02.md:19` | no | **POSTURA mas ADVERTENCIA** (*que no se empleen para proteger a las empresas nacionales*). El manual lo nombra: una advertencia es linea, no procedimiento |
+| 25 | `cap_02.md:21` | no. *disponibilidad adecuada*, *servicio confiable* | **POSTURA.** Dos adjetivos de adecuacion en once palabras |
+| 26 | `cap_02.md:23` | **si**: contratos uniformes que favorecen a una parte, no inclusion de derechos esenciales, condiciones excesivamente estrictas de credito del vendedor | **PROCEDIMIENTO.** Tres abusos nombrados es una lista que alguien puede recorrer contra un contrato |
+| 27 | `cap_02.md:25` | debil: *ello requiere* despliega dos obligaciones, pero las dos vuelven a *informacion necesaria* y *medidas para garantizar la exactitud* | **POSTURA.** Ver DISCUTIBLE 4 |
+| 28 | `cap_02.md:27` | no | **POSTURA.** Una linea: *alentar a difundir libremente informacion exacta* |
+| 29 | `cap_02.md:29` | **si, y es el mas rico del capitulo**: perfiles de producto, informes ambientales de la industria, centros de informacion al consumidor, etiquetado ecologico voluntario y transparente, consulta telefonica directa | **PROCEDIMIENTO.** *Recurriendo a medios como* y cinco medios nombrados: el libro escribe su propio como |
+| 30 | `cap_02.md:31` | **si**: los cuatro actores que colaboran, y el entregable, normas y codigos de publicidad que **reglamenten y verifiquen** las afirmaciones ambientales | **PROCEDIMIENTO** |
+| 31 | `cap_02.md:33` | **si**: tres etapas nombradas, formulacion, aplicacion y publicidad del codigo, mas los coautores (empresas con organizaciones de consumidores) y la via alternativa (acuerdos voluntarios conjuntos) | **PROCEDIMIENTO.** El esqueleto mas completo del capitulo |
+| 32 | `cap_02.md:35` | **si, corto**: dos objetos, las normas juridicas sobre pesos y medidas y la eficacia de sus mecanismos de aplicacion, con cadencia (*periodicamente*) | **PROCEDIMIENTO.** El mas flojo de los seis. Ver DISCUTIBLE 5 |
+
+**EL SALDO DE LA FRONTERA: 6 procedimientos y 7 posturas, de 13 parrafos.**
+`cap_02` **si da procedimiento**, asi que no se cumple la condicion de parada que
+el encargo puso para este capitulo.
+
+### 2.A.4. Los tres casos que el manual nombra, contestados uno a uno
+
+Se contestan aqui porque el manual manda contestarlos, y **dos de los tres salen
+en negativo**, que tambien es respuesta.
+
+- **SERIE NUMERADA (manual 3.4): NO.** Los parrafos 20 a 32 llevan numero
+  correlativo, y **la tentacion es tratarlos como serie y fabricarles una
+  cabeza**. No lo son: una serie numerada es *un* procedimiento cuyos pasos van
+  numerados, y aqui cada parrafo es una directriz independiente sobre un tema
+  comun. **El numero es de la resolucion, no del procedimiento.** No se abre
+  cabeza y no entra nada en `censos/series_y_cabezas.md` por este capitulo.
+- **CASO O ESTUDIO (manual 3.5): NO.** No hay ni un caso en `cap_02`. Ningun
+  entregable de mis candidatos lleva un dato de caso.
+- **CIFRA DEL AUTOR (principios 5 y 8): NO HAY NI UNA.** `cap_02` no trae una
+  sola cifra, tasa ni porcentaje. **Ningun candidato de esta vuelta lleva
+  `atribuciones`, y no es un olvido: es que no hay que atribuir.** Lo que si
+  trae es **una NORMA CON FECHA** en el parrafo 22 (resolucion 35/63 de la
+  Asamblea General, 5 diciembre 1980), que es campo `vigencia`, no `atribuciones`
+  y no nodo.
+
+### 2.A.5. La repeticion interna (`P.19`), mirada antes de escribir
+
+`P.19` manda fundir el objeto que se repite DENTRO del propio material antes de
+buscarle destino. **Miro los dos solapes reales de este capitulo y los declaro:**
+
+1. **parrafo 21 (*afirmaciones falsas o capciosas*) contra parrafo 30
+   (*afirmaciones capciosas en relacion con el medio ambiente*).** No los fundo:
+   el 21 es **vigilancia por organizaciones de consumidores sobre tres familias
+   de practica**, y el 30 es **verificacion de una afirmacion ambiental contra un
+   codigo de publicidad**, con otros cuatro actores y otro entregable. Objeto
+   parecido, procedimiento distinto.
+2. **parrafo 30 (*normas y codigos de publicidad*) contra parrafo 31 (*codigos de
+   comercializacion*).** Tampoco los fundo, **y aqui si hay jerarquia**: se
+   declara abajo como arista propuesta, con su direccion.
+
+### 2.A.6. La jerarquia que la LECTURA levanta, y que ninguna señal va a levantar
+
+Seccion 11: *la jerarquia la busca la lectura, no la señal*, y **un candidato con
+la cola vacia esta certificado sin gemelo, no sin madre**. Con el dataset en 2
+nodos (los dos de dominio `forja`, sobre registro de fuentes), **ninguno de mis
+seis candidatos tiene madre en el dataset**, y lo digo con la medicion delante,
+no por comodidad.
+
+**La unica arista madre e hijo que mi lectura levanta es entre dos candidatos de
+este mismo lote:**
+
+    formular_codigo_comercializacion_empresarial   (parrafo 31, MADRE)
+        baja a
+    verificar_afirmaciones_ambientales_publicidad  (parrafo 30, HIJO)
+
+**La razon, con la direccion que manda el flujo (que añade el HIJO a la MADRE):**
+la madre produce el codigo de comercializacion y lo pone en circulacion; el hijo
+añade **la verificacion de una clase concreta de afirmacion, la ambiental, contra
+ese codigo ya formulado**. No se puede verificar una afirmacion contra un codigo
+que nadie ha escrito, y por eso el orden es ese y no el contrario.
+
+**LOS DOS JSON VIAJAN CON `nodos_previos` Y `nodos_siguientes` VACIOS, Y ES
+DELIBERADO.** La arista se cablea en el acto del veredicto, cuando la madre ya
+vive (`docs/FLUJO_DE_EXTRACCION.md` fase 2, paso 4). Escribirla ahora dentro del
+JSON pondria la guarda `arista_rota` del gate en rojo en la primera insercion,
+porque apuntaria a un id que todavia no existe. **Asi que la propongo aqui, que
+es mi sede** (seccion 14: el extractor propone en su reporte), **y con ella el
+orden de insercion que exige: la madre primero.**
+
+### DISCUTIBLE 2, marcado antes de saber si acierto
+
+**La prueba del inventario es mia, no de la casa.** No la he leido en el manual
+ni en el banco: la escribo en 2.A.2 porque sin un corte explicito este capitulo
+se lee entero como postura, igual que `cap_01`, y entonces la unica salida seria
+la parada. **Puede que el corte este mal puesto y que la casa lo quiera mas
+estricto** (y entonces caen 21, 26 y 32, y quedan tres), **o mas laxo** (y
+entonces entran 23 y 27, y son ocho). **La propongo, no la adjudico.**
+
+---
+
+## TAREA 2, PARTE B. LOS SEIS CANDIDATOS, CADA UNO POR LA ADUANA EN SU ACTO
+
+**Se siguio el ciclo de la seccion 16 candidato por candidato**, no al final del
+lote: escribir, `python forja.py informe cuarentena/onu_consumidor/<id>.json`,
+corregir si cae, y solo entonces contar como escrito.
+
+**Tabla impresa desde los ficheros, no tecleada** (seccion 5), contando
+`cuarentena/onu_consumidor/`:
+
+| id del candidato | pasos | fuentes | dominio | bytes |
+|---|---:|---:|---|---:|
+| `detectar_abusos_contractuales_consumo` | 6 | 1 | `proteccion_consumidor` | 2774 |
+| `examinar_normas_pesos_medidas` | 6 | 1 | `proteccion_consumidor` | 3161 |
+| `formular_codigo_comercializacion_empresarial` | 6 | 1 | `proteccion_consumidor` | 3235 |
+| `informar_efectos_ambientales_productos` | 7 | 1 | `proteccion_consumidor` | 3176 |
+| `verificar_afirmaciones_ambientales_publicidad` | 5 | 1 | `proteccion_consumidor` | 3290 |
+| `vigilar_practicas_comerciales_perjudiciales` | 6 | 1 | `proteccion_consumidor` | 2988 |
+
+    ficheros contados en cuarentena/onu_consumidor : 6
+    pasos accionables en total                    : 36
+
+**Y su parrafo de origen, que es lo que hace comprobable el reporte** (los seis
+JSON viajan en el commit, D.25, y cada uno lleva dentro su nota `_de_donde_sale`
+con la linea exacta):
+
+| candidato | parrafo | linea | que inventario del libro transcribe |
+|---|---|---|---|
+| `vigilar_practicas_comerciales_perjudiciales` | 21 | `cap_02.md:13` | las tres familias de practica perjudicial |
+| `detectar_abusos_contractuales_consumo` | 26 | `cap_02.md:23` | los tres abusos contractuales |
+| `informar_efectos_ambientales_productos` | 29 | `cap_02.md:29` | los cinco medios de informacion ambiental |
+| `verificar_afirmaciones_ambientales_publicidad` | 30 | `cap_02.md:31` | los cuatro actores y el par reglamentar mas verificar |
+| `formular_codigo_comercializacion_empresarial` | 31 | `cap_02.md:33` | las tres etapas del codigo y sus coautores |
+| `examinar_normas_pesos_medidas` | 32 | `cap_02.md:35` | los dos objetos del examen y su cadencia |
+
+### 2.B.1. EL DATO QUE ESTA VUELTA VENIA A MEDIR: CERO CAIDAS AL PRIMER INTENTO
+
+**Los seis pasaron la aduana en seco al PRIMER intento. Cero caidas, cero
+correcciones de id, cero reintentos.** No hay guarda que nombrar porque ninguna
+disparo.
+
+**Y no lo publico como un exito, porque no se de quien es.** El estreno de la
+aduana midio que cuatro de cada diez candidatos escritos SIN las reglas de id
+delante caen en la puerta. Yo las lei antes de escribir el primer id, que es
+exactamente lo que la seccion 15 manda, asi que **este cero mide las dos cosas a
+la vez y no las separa**: puede ser que las reglas sean llevaderas para quien las
+lee antes, o puede ser que yo haya escogido ids conservadores para no pelearme
+con ellas. **Las dos lecturas caben en el mismo cero, y la segunda es un sesgo
+que solo yo puedo declarar**, asi que la declaro.
+
+**Lo que si puedo decir con precision es donde estuvo el trabajo:** no en la
+forma de los ids, sino en **decidir que parrafo era procedimiento**. La puerta no
+me costo nada; la frontera me costo el capitulo entero.
+
+### 2.B.2. La medicion de familia entre los seis, que el informe de candidato no cruza
+
+**El informe de candidato mide contra el DATASET, no contra los hermanos de
+lote**, y `CHOCA` solo caza el id identico, no la familia. La guarda de familia
+del gate (`src/gate.py:153`) si la mira, pero en la insercion. **Asi que la corri
+yo antes de cerrar**, con `src.reglas_id.similitud_familia`, sobre los 8 ids
+(6 candidatos mas los 2 del dataset):
+
+    ids medidos: 8 (6 del lote + 2 del dataset)
+      0.143  informar_efectos_ambientales_productos  contra  verificar_afirmaciones_ambientales_publicidad
+    umbral_familia_id vigente: 0.30
+    MAXIMO MEDIDO ENTRE TODOS LOS PARES: 0.143
+    colisiones de familia EXACTA (clave identica): 0
+
+**Un solo par por encima de cero, en 0,143, y el umbral esta en 0,30.** Ningun
+par del lote colisiona de familia y ninguno se acerca al umbral.
+
+### 2.B.3. Lo que mide el lote CONTRA SI MISMO, y por que importa el orden
+
+Seccion 12.3: *el primero que entra cambia lo que el segundo mide*. El informe
+del lote no lo dice, porque mide los seis contra un dataset de 2 nodos donde
+ninguno de ellos ha entrado todavia. **Lo simule en una sola corrida, con
+`src.aduana.buscar_vecinos` tal como esta** (sin escribir fichero y sin fabricar
+instrumento, seccion 13): cada candidato contra el dataset MAS los otros cinco.
+
+      detectar_abusos_contractuales_consumo          vecinos levantados: 0
+      examinar_normas_pesos_medidas                  vecinos levantados: 0
+      formular_codigo_comercializacion_empresarial   vecinos levantados: 1
+          vecino verificar_afirmaciones_ambientales_publicidad  [paso_contra_nodo]
+      informar_efectos_ambientales_productos         vecinos levantados: 0
+      verificar_afirmaciones_ambientales_publicidad  vecinos levantados: 0
+      vigilar_practicas_comerciales_perjudiciales    vecinos levantados: 0
+
+    VECINOS LEVANTADOS EN TOTAL POR EL LOTE CONTRA SI MISMO: 1
+
+**El unico vecino que el lote levanta contra si mismo es EXACTAMENTE el par
+madre e hijo que mi lectura habia declarado en 2.A.6, y lo levanta la señal 3.**
+Eso es la seccion 11 funcionando en el orden que promete: **la lectura llego
+primero y la señal, cuando la madre esta delante, coincide.**
+
+## HALLAZGO QUE NO ES PARADA, Y QUE PROPONGO AL AUDITOR
+
+**Esa vecindad se levanta en un sentido y NO en el otro, y es el mismo par.**
+Al ver la asimetria la medi en los dos sentidos, porque el docstring de la señal
+dice que barre *en los DOS sentidos* (`src/aduana.py:304`):
+
+    candidato=MADRE  vecino=HIJO
+       paso_contra_nodo = 0.602410   (umbral 0.60 -> LEVANTA)
+       detalle: paso 1 del candidato contra paso 1 de verificar_afirmaciones_ambientales_publicidad
+
+    candidato=HIJO   vecino=MADRE
+       paso_contra_nodo = 0.572289   (umbral 0.60 -> no levanta)
+       detalle: paso 1 del candidato contra paso 1 de formular_codigo_comercializacion_empresarial
+
+**Es el MISMO par de pasos, el 1 contra el 1, y da 0,602410 o 0,572289 segun cual
+de los dos sea el candidato.** El bucle de pasos contra pasos de
+`senal_paso_contra_nodo` es simetrico en su conjunto de pares, y los dos barridos
+cruzados contra el cuerpo se intercambian al intercambiar los lados; lo que no es
+simetrico es `difflib.SequenceMatcher(...).ratio()` de `_ratio`
+(`src/aduana.py:262`), que da un valor distinto segun cual sea la primera
+secuencia. **En el borde del umbral esa diferencia decide si hay veredicto o no.**
+
+**LA CONSECUENCIA PRACTICA, y es la que me toca a mi:** si la madre entra primero
+(que es el orden que propongo en 2.A.6), **cuando llegue el hijo la señal NO
+levantara a la madre y el hijo entrara sin que nadie sea enviado a leer la
+arista**. Si entrara primero el hijo, la madre si lo levantaria. **El orden de
+insercion decide si la señal pide el veredicto de esta jerarquia.**
+
+**Por eso la arista declarada en 2.A.6 no es decorativa: es lo unico que
+garantiza que se cablee**, y esto es el principio 4 con un caso propio delante,
+*las señales ordenan, nunca deciden*.
+
+**POR QUE NO PARO** (seccion 7): no me obliga a romper ninguna regla, no me pide
+mover ningun umbral, y **no puedo demostrar que contradiga una cifra publicada
+con su corte**. Mire `docs/CALIBRACION_D4.md` y **no declara en que sentido midio
+cada par**, asi que no hay cifra que contradecir: hay un hueco. Comprobar si las
+cifras de la señal 3 (caza 87,2 por ciento, cola falsa 2,4 por candidato) se
+mueven al invertir el sentido **exige volver a correr la calibracion, y eso es
+maquinaria que esta vuelta no fabrica** (seccion 13). **Lo dejo escrito en mi
+sede, que es lo que me toca** (seccion 14), y **no escribo `PARA_ALEXIS.md`**.
+
+### DISCUTIBLE 3, marcado antes de saber si acierto
+
+**El parrafo 23 (`cap_02.md:17`) fuera.** Trae cuatro requisitos nombrados
+(durabilidad, utilidad, fiabilidad, aptitud para el fin) y un reparto de
+responsabilidad entre fabricante y vendedor, que es mucho inventario. **Lo tumbo
+porque el criterio literal es *requisitos razonables*** y porque el ejecutor
+vuelve a ser un legislador. Es el que mas cerca esta de entrar de los siete que
+deje fuera, y **si el auditor lo levanta, mi vara es demasiado estricta con el
+reparto de responsabilidad, que puede ser un procedimiento por si solo.**
+
+### DISCUTIBLE 4, marcado antes de saber si acierto
+
+**El parrafo 27 (`cap_02.md:25`) fuera.** Es el unico del capitulo donde el libro
+usa la formula *ello requiere que*, que es el libro desplegandose a si mismo, y
+aun asi lo dejo fuera porque las dos obligaciones que despliega vuelven a
+*informacion necesaria* y a *medidas para garantizar la exactitud*, sin decir ni
+que informacion ni que medidas. **Si me equivoco aqui, me equivoco por no darle
+credito a la unica formula de despliegue explicito del capitulo.**
+
+### DISCUTIBLE 5, marcado antes de saber si acierto
+
+**`examinar_normas_pesos_medidas` (parrafo 32) es el mas flojo de los seis y lo
+se al escribirlo.** Su inventario propio son DOS objetos, contra los cinco medios
+del 29 o las tres etapas del 31, y su cadencia es *periodicamente* sin periodo,
+que por mi propia vara es un adjetivo de adecuacion en forma de tiempo. **Lo
+meto porque los dos objetos son concretos y el ejecutor existe** (el organismo de
+metrologia legal), **y porque mi paso 1 convierte el hueco en trabajo en vez de
+taparlo**: obliga a fijar el periodo por escrito. Si el auditor lo tumba, el lote
+son cinco y el corte queda mejor dibujado.
+
+### DISCUTIBLE 6, marcado antes de saber si acierto
+
+**Un paso de `verificar_afirmaciones_ambientales_publicidad` fue escrito y
+despues quitado por mi, y lo digo porque nadie lo veria.** Habia redactado un
+sexto paso que devolvia la afirmacion capciosa detectada al codigo para que la
+siguiente redaccion la reglamentara, cerrando el bucle entre los dos verbos que
+el libro empareja, *reglamentar* y *verificar*. **Lo quite porque ese bucle no
+esta en el parrafo 30: lo cerraba yo**, y mi propia vara dice que un paso que
+escribo yo no es del libro. **Si el auditor cree que el par de verbos ya implica
+el bucle, ese paso vuelve y el nodo mejora.** Lo dejo escrito aqui para que la
+decision se pueda revisar sin releer el parrafo.
+
+---
+
+## TAREA 3. EL INFORME DEL LOTE EN SECO
+
+    python forja.py informe --carpeta cuarentena/onu_consumidor
+
+Salida pegada entera, no tecleada (seccion 5):
+
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 6
+    nodos en el grafo de destino: 2
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 6
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    ============================================================================
+    LA LISTA COMPLETA, candidato por candidato
+    ============================================================================
+
+    [ENTRARIA] detectar_abusos_contractuales_consumo   (detectar_abusos_contractuales_consumo.json)
+
+    [ENTRARIA] examinar_normas_pesos_medidas   (examinar_normas_pesos_medidas.json)
+
+    [ENTRARIA] formular_codigo_comercializacion_empresarial   (formular_codigo_comercializacion_empresarial.json)
+
+    [ENTRARIA] informar_efectos_ambientales_productos   (informar_efectos_ambientales_productos.json)
+
+    [ENTRARIA] verificar_afirmaciones_ambientales_publicidad   (verificar_afirmaciones_ambientales_publicidad.json)
+
+    [ENTRARIA] vigilar_practicas_comerciales_perjudiciales   (vigilar_practicas_comerciales_perjudiciales.json)
+
+    NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+    entre hace falta python forja.py insertar, uno por vez, con su
+    veredicto escrito por vecino.
+
+### EL SALDO, contestado a la pregunta del encargo
+
+| | |
+|---|---:|
+| entrarian sin leer nada | **6** |
+| bloquearian esperando veredicto | **0** |
+| caerian por una guarda | **0** |
+| chocan entre si dentro del lote | **0** |
+| **por que guarda caen** | **ninguna. El informe no imprime el bloque POR QUE GUARDA CAEN porque no hay ni un caido que clasificar** |
+
+### COMO SE LEE ESE 6 DE 6, Y NO SE LEE COMO UN CHEQUE EN BLANCO
+
+**Ese `BLOQUEARIAN: 0` no dice que los seis esten limpios: dice que el grafo de
+destino tiene DOS nodos, y los dos son de dominio `forja` sobre el registro de
+fuentes de esta casa.** Con un dataset asi, un lote de proteccion del consumidor
+no tiene contra que parecerse. **Es la lectura literal de la seccion 11: los seis
+estan certificados SIN GEMELO, no certificados SIN MADRE.**
+
+Y hay una segunda cosa que este informe **no** mide, dicha para que nadie la lea
+en su verde: **mide los seis contra el dataset, no unos contra otros.** Lo que
+pasa cuando se miran entre ellos esta medido en 2.B.2 y 2.B.3, y ahi si sale un
+vecino: el par madre e hijo, levantado por la señal 3.
+
+**LA CONSECUENCIA PARA QUIEN AUTORICE LA PRIMERA INSERCION:** este saldo de 6 y 0
+es el saldo de HOY, con el dataset en 2. **El primero que entre cambia lo que
+mide el segundo**, asi que el informe se vuelve a correr entre insercion e
+insercion, y no se toma este como permiso para seis.

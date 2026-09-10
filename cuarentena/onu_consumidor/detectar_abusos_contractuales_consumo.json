@@ -1,0 +1,29 @@
+{
+  "_de_donde_sale": "cap_02.md linea 23, apartado V-C parrafo 26, entero. El libro nombra TRES abusos contractuales uno a uno, y esa lista es el inventario que hace procedimentable la linea: sin ella el parrafo seria la postura los consumidores deben gozar de proteccion.",
+  "id": "detectar_abusos_contractuales_consumo",
+  "titulo": "Detectar los abusos contractuales en un contrato de consumo",
+  "resumen_teorico": "El texto no se queda en decir que el consumidor debe estar protegido de los abusos contractuales: nombra tres, y con eso convierte una postura en una lista que alguien puede recorrer contra un contrato concreto. Los tres no se leen igual, y ahi esta el filo del procedimiento: el contrato uniforme que favorece a una parte y la condicion excesivamente estricta de credito se leen en lo que el contrato DICE, pero la no inclusion de derechos esenciales se lee en lo que el contrato CALLA. Una revision que solo repasa las clausulas escritas se deja fuera un tercio del catalogo sin enterarse, porque una ausencia no salta a la vista de nadie que no la vaya buscando con su lista delante.",
+  "pasos_accionables": [
+    "Reune el texto completo del contrato que se ofrece al consumidor, con sus condiciones generales.",
+    "Comprueba si el contrato es uniforme y, si lo es, marca cada clausula que favorece a una sola de las partes.",
+    "Recorre la lista de derechos esenciales del consumidor y marca los que el contrato no incluye, porque ese abuso esta en la ausencia y no en el texto.",
+    "Marca las condiciones que el vendedor impone para la concesion de creditos y escribe al lado por que resultan excesivamente estrictas.",
+    "Escribe cada abuso detectado junto a la clausula, la ausencia o la condicion que lo produce.",
+    "Traslada el contrato marcado a quien puede exigir su correccion antes de que se vuelva a ofrecer."
+  ],
+  "condiciones_activacion": "Cuando hay que revisar un contrato de consumo, propio o de un tercero, antes de firmarlo o antes de autorizar que se siga ofreciendo.",
+  "entregable_esperado": "El contrato revisado con sus abusos marcados uno a uno, cada uno con la clausula, la ausencia o la condicion que lo produce y la razon escrita de por que es abuso.",
+  "fuentes": [{"clave": "onu_consumidor", "fecha": "2026-09-09"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "denominaciones": {
+    "nombre_largo": "Deteccion de abusos contractuales en los contratos de consumo",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "unfair contract terms review"}
+    ]
+  },
+  "dominio": "proteccion_consumidor",
+  "escala_minima": "Un solo contrato y un solo revisor: los tres abusos se recorren con el texto delante y una lista de derechos esenciales al lado."
+}

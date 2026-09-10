@@ -1,0 +1,30 @@
+{
+  "_de_donde_sale": "cap_02.md linea 29, apartado V-C parrafo 29, entero. Es el parrafo mas rico del capitulo: la formula recurriendo a medios como abre CINCO medios nombrados uno a uno, asi que aqui el libro escribe su propio como y los pasos solo lo transcriben.",
+  "id": "informar_efectos_ambientales_productos",
+  "titulo": "Dar al consumidor informacion inequivoca sobre los efectos ambientales de los productos",
+  "resumen_teorico": "El texto no pide genericamente que se informe del impacto ambiental: fija el criterio del entregable, que la informacion sea inequivoca, y acto seguido nombra los cinco medios por los que se sirve, el perfil de producto, el informe ambiental de la industria, el centro de informacion al consumidor, el etiquetado ecologico voluntario y transparente y la consulta telefonica directa. Los cinco medios juntos son lo que hace que el criterio se pueda cumplir, y tambien lo que lo pone en riesgo: cinco puertas abiertas sobre el mismo producto pueden contradecirse, y una informacion contradictoria no es informacion inequivoca, es una duda repartida en cinco sitios. Por eso el ultimo paso no es abrir el quinto medio sino comprobar que los cinco dicen lo mismo.",
+  "pasos_accionables": [
+    "Determina sobre que productos y servicios el consumidor necesita informacion ambiental, y que efectos concretos tiene que poder consultar de cada uno.",
+    "Elabora el perfil ambiental de cada producto y servicio de esa lista.",
+    "Pide a la industria que presente su informe ambiental y ponlo donde el consumidor lo alcance.",
+    "Abre un centro de informacion para consumidores que atienda las consultas que el perfil y el informe no cierren.",
+    "Pon en marcha un programa de etiquetado ecologico voluntario y transparente, y publica el criterio con el que se concede cada etiqueta.",
+    "Abre un servicio de consulta telefonica directa sobre los productos.",
+    "Comprueba que lo que sale por los cinco medios sobre un mismo producto es lo mismo, y corrige el medio que discrepe antes de darlo por abierto."
+  ],
+  "condiciones_activacion": "Cuando hay que dar al consumidor acceso a informacion sobre los efectos ambientales de los productos y los servicios, y hay que decidir por que medios se le da.",
+  "entregable_esperado": "Los cinco medios abiertos y en servicio, con el perfil ambiental publicado de cada producto de la lista y la comprobacion escrita de que los cinco medios no se contradicen.",
+  "fuentes": [{"clave": "onu_consumidor", "fecha": "2026-09-09"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "denominaciones": {
+    "nombre_largo": "Acceso del consumidor a informacion inequivoca sobre los efectos ambientales de los productos y los servicios",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "consumer environmental product information"}
+    ]
+  },
+  "dominio": "proteccion_consumidor",
+  "escala_minima": "Un solo producto y un solo medio: el perfil ambiental publicado ya sirve, y los otros cuatro medios se abren cuando haya con que sostenerlos. Lo que no escala hacia abajo es la comprobacion de que los medios abiertos no se contradicen."
+}
