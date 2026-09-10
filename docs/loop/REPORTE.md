@@ -5208,7 +5208,7 @@ que mandar ninguna medida en rojo.**
 | lote | `smart_who`, LOTE 2 |
 | unidades encargadas | **Cap. 5** (`cap_05.md` L363 a L365 mas `cap_06.md` L9 a L455) y **Cap. 6** (`cap_07.md`, rango por comprobar) |
 | inserciones autorizadas | **CERO**. `MODO_INSERCION=cuarentena`, D.26. Todo candidato queda en `cuarentena/smart_who/` y pasa la aduana EN SECO |
-| commit de cierre | (se talla al cerrar) |
+| commit de cierre | `baae65d`, **14:40:19** (`git log --date=format:%H:%M:%S`), mas este ultimo que trae la marca de cierre. **43 minutos y 56 segundos de vuelta**, C.7.6 |
 
 ## Las tareas encargadas, y su estado
 
@@ -6174,3 +6174,65 @@ para que quien decida el orden de insercion lo sepa.
 7. **La cifra del autor de L235**, declarada y sin casa.
 8. **Los ocho discutibles de C.7.3 y las tres propuestas de C.7.4**, ninguno
    adjudicado por mi.
+
+## C.7.6. CUANTO TARDO, LEIDO DE GIT Y NO DE MEMORIA, Y SI EL TRAMO FUE EL CORRECTO
+
+**Las dos marcas propias, leidas de `git log --date=format:%H:%M:%S` en esta
+vuelta:**
+
+    $ git log --date=format:'%H:%M:%S' --format='%h %ad %s'
+    c51ee98 13:56:23  Artefactos del arnes de la vuelta 6, ... (APERTURA)
+    e7742c1 14:28:41  Vuelta 7, Cap. 5 (Sell): frontera de 19 piezas publicada ...
+    baae65d 14:40:19  Vuelta 7: reporte del Cap. 5 cerrado ... (CIERRE)
+
+| tramo | marca a marca | duracion |
+|---|---|---:|
+| **la vuelta entera** | 13:56:23 a 14:40:19 | **43 minutos y 56 segundos**, 43,9 minutos |
+| frontera, doce candidatos y doce aduanas | 13:56:23 a 14:28:41 | 32 minutos y 18 segundos |
+| medidas de cierre y reporte | 14:28:41 a 14:40:19 | 11 minutos y 38 segundos |
+
+**EL CRUCE CON EL RELOJ DEL ARNES**, que es lo que el auditor comprueba: `loop.log`
+marca el arranque de este turno a las **13:55:39**, asi que del arranque del arnes
+a mi commit de cierre van **44,7 minutos** contra mis **43,9**. **La diferencia son
+los 44 segundos que tarde en leer las reglas y el encargo antes del primer
+commit.** Los dos relojes cuadran, igual que en la vuelta 6.
+
+### EL TRAMO FUE EL CORRECTO, Y LA CIFRA LO DICE
+
+| pregunta | respuesta |
+|---|---|
+| cuantos candidatos | **12**, dentro del techo de entre cinco y quince (`EXTRACTOR.md` 12.4) |
+| cupo el segundo capitulo | **NO, y no se intento.** Declarado en la seccion 3 antes de tocarlo |
+| se cerro el reporte | **SI**, y por anexion: cada tarea anexo su fila al cerrarse |
+| baja el tramo la siguiente vuelta | **NO.** El disparador de `EXTRACTOR.md` 12.4 es *si una vuelta no cierra su reporte*, y esta lo cierra |
+
+**LA COMPARACION CON LA VUELTA 6, con su division al lado (1.a):** 43,9 / 45,0 =
+**0,976**, asi que **la vuelta duro practicamente lo mismo** (poco menos de un dos
+y medio por ciento menos). Y produjo **12 candidatos contra 15**, es decir
+12 / 15 = **0,800**. **No escribo que fuera mas rapida ni mas lenta: duro lo
+mismo y produjo cuatro quintos.**
+
+### C.7.7. LA CUARTA COSA QUE EL ENCARGO PIDE DEJAR MEDIDA: CABE EL LOTE 2 EN SIETE VUELTAS
+
+**NO CABE, y ahora se puede decir con su reloj delante en vez de por impresion.**
+
+| medida | cifra |
+|---|---:|
+| vueltas gastadas en el lote 2 | **4** (vueltas 4, 5, 6 y 7) |
+| unidades minadas enteras de 7 | **5** |
+| unidades leidas de 7 | **6** |
+| palabras que quedan sin minar | **8.883** (3.a) |
+| de ellas, cuerpo de capitulo | **5.404** (5.034 del Cap. 5 mas 370 del Cap. 6) |
+| de ellas, material de cierre de libro sin juzgar | **3.479** |
+
+**LO QUE FALTA, CONTADO EN NODOS Y NO EN PALABRAS, que es lo que de verdad manda
+el tramo:** la cola del Cap. 5 trae **una serie de diez y una de cuatro, es decir
+16 nodos con sus dos cabezas**, y eso solo **ya pasa el techo de quince**. Asi que
+**el lote 2 necesita como minimo una vuelta mas para la cola del Cap. 5 y otra
+para el Cap. 6 y lo que quede**, y termina en **6 vueltas de extraccion o mas**,
+sobre las cuatro gastadas.
+
+**LO QUE NO DIGO: cuantas exactamente.** El Cap. 6 son 370 palabras de cuerpo y
+**no lo he leido**, y el material de cierre de libro son 3.479 palabras que **no he
+juzgado**. **Estimar un capitulo sin leerlo es adivinar**, y el encargo lo prohibe
+en su propia TAREA 3.
