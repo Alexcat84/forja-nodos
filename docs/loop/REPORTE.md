@@ -1476,27 +1476,351 @@ antes de saber si acierto.
 # VUELTA 3, lote 2 (`smart_who`), cap_01 y cap_02
 
 *Esqueleto abierto AL EMPEZAR, antes de la primera tarea (`EXTRACTOR.md`
-seccion 3). Las filas se anexan al cerrarse cada tarea.*
+seccion 3), y commiteado vacio en `468024a` para que una vuelta cortada dejara
+reporte parcial y nunca vacio. Lo que sigue se anexo despues, tarea por tarea.*
 
 | | |
 |---|---|
-| fecha | **PENDIENTE** |
-| rama | **PENDIENTE** |
-| commit de apertura | **PENDIENTE** |
+| fecha | **2026-09-10**, leida del instrumento: `python -c "import datetime;print(datetime.date.today())"` da `2026-09-10` y `src.aduana._hoy()` da `2026-09-10`. Coinciden |
+| rama | `extraccion-mundo-11` (`git rev-parse --abbrev-ref HEAD`) |
+| commit de apertura | `c59b2fe` (`git rev-parse HEAD` tras commitear lo pendiente, seccion 1.1) |
 | lote | lote 2, `smart_who`, 7 capitulos (D.24) |
-| capitulos de esta vuelta | cap_01 y cap_02, DOS POR VUELTA, sin mezclarlos |
-| nodos en el dataset al empezar | **PENDIENTE** |
-| inserciones autorizadas en esta vuelta | **CERO.** `MODO_INSERCION=cuarentena` (D.26) |
+| capitulos de esta vuelta | **NINGUNO. Ver la PARADA** |
+| nodos en el dataset al empezar | **8** (`wc -l dataset/nodos.jsonl`, corrido antes de la primera operacion) |
+| inserciones autorizadas en esta vuelta | **CERO.** `MODO_INSERCION=cuarentena` (D.26). **Y cero ejecutadas** |
 
 ### Las cuatro tareas del encargo
 
 | # | tarea | estado | resultado |
 |---|---|---|---|
-| 1 | ficha del libro y frontera del `cap_01` | **PENDIENTE** | |
-| 2 | candidatos del `cap_01` con el ciclo de cinco pasos | **PENDIENTE** | |
-| 3 | informe y commit del capitulo, y despues el `cap_02` | **PENDIENTE** | |
-| 4 | las cuatro medidas del cierre, desglosadas por capitulo | **PENDIENTE** | |
+| 1 | ficha del libro y frontera del `cap_01` | **BLOQUEADA** | `fuentes/smart_who/cap_01.md` no existe. Sin el fichero no hay ficha bibliografica que leer ni frontera que publicar. **Cero lineas leidas, cero inventadas** |
+| 2 | candidatos del `cap_01` con el ciclo de cinco pasos | **BLOQUEADA** | el paso 2 del ciclo es la relectura de fidelidad **con el parrafo delante**, y no hay parrafo. Un candidato escrito sin libro es el 100 por ciento de puentes. **Cero candidatos escritos** |
+| 3 | informe y commit del capitulo, y despues el `cap_02` | **BLOQUEADA** | `python forja.py informe --carpeta cuarentena/smart_who` responde `no existe la carpeta` y sale con codigo 1. **Cero commits de capitulo, porque no hubo capitulo** |
+| 4 | las cuatro medidas del cierre, desglosadas por capitulo | **PARCIAL** | dos de las cuatro se pueden dar con cero como cifra honesta y se dan; las dos que se desglosan por capitulo **no tienen ni una fila**, y eso se dice en vez de rellenarse. Ver seccion E |
 
-### Discutibles marcados ANTES de saber si acierto
+### El saldo de la vuelta
 
-**PENDIENTE**
+**CERO candidatos, CERO inserciones, CERO capitulos, UNA PARADA declarada.**
+
+---
+
+## A. LA PARADA: FALTA LA MATERIA PRIMA, Y FALTAN LAS DOS CONDICIONES, NO UNA
+
+El encargo abre con **LAS DOS CONDICIONES QUE NO DEPENDEN DE TI** y las convierte
+en parada expresa:
+
+> **Si al empezar esa carpeta no existe o esta vacia, no improvises: declaralo en
+> tu reporte y detente.** No es una parada de doctrina: es que falta la materia
+> prima.
+
+Y en su seccion LAS PARADAS lo repite como condicion cerrada:
+
+> **Paras, lo declaras en TU REPORTE y te detienes si: `fuentes/smart_who/` no
+> esta o esta vacia, o la clave no esta en la tabla canonica.**
+
+**El encargo la escribe con un O. Las dos se cumplen a la vez.**
+
+### A.1. Condicion 1: el libro no esta en la maquina
+
+    $ find fuentes -type f | sort
+      fuentes/FUENTES_CANONICAS.json
+      fuentes/onu_consumidor/cap_00.md
+      fuentes/onu_consumidor/cap_01.md
+      fuentes/onu_consumidor/cap_02.md
+      fuentes/onu_consumidor/cap_03.md
+
+    $ ls -la fuentes/smart_who/
+      ls: cannot access 'fuentes/smart_who/': No such file or directory
+
+**No es que este vacia: NO EXISTE**, y la distincion importa porque las dos
+imprimen parecido en un reporte y no son el mismo estado. La unica carpeta de
+libro que hay en la maquina es la del lote 1, con sus cuatro ficheros.
+
+**Y no ha existido nunca en este repo**, que es lo que confirma que no es un
+borrado de esta vuelta:
+
+    $ git log --all --oneline -- 'fuentes/smart_who*'
+      (vacio)
+
+**Esto es lo esperado, no una anomalia.** `.gitignore` deja `fuentes/*/` fuera del
+repo a proposito, con `!fuentes/FUENTES_CANONICAS.json` como unica excepcion
+rescatada. **El material no llega por `git pull`**, y el propio encargo lo dice:
+**lo pone Alexis a mano.**
+
+### A.2. Condicion 2: la clave no esta en la tabla canonica
+
+    $ python -c "import json,io; d=json.load(io.open('fuentes/FUENTES_CANONICAS.json',encoding='utf-8')); print([k for k in d if not k.startswith('_')]); print('smart_who' in d)"
+      ['manual_sistema_conocimiento', 'onu_consumidor']
+      False
+
+**Dos claves, y ninguna es la del lote 2.**
+
+**LA SEGUNDA CONDICION SOBREVIVIRIA AUNQUE APARECIERA EL LIBRO**, y por eso se
+escribe aparte y no como apendice de la primera. Si mañana alguien copia los
+siete capitulos y la clave sigue fuera de la tabla, **el primer candidato del
+lote 2 lo rechaza la aduana igual**, y ese rechazo es deliberado:
+
+> `src/aduana.py:197`, dentro del bloque que levanta
+> `Rechazo("LA FUENTE ES UN CAMPO SAGRADO (manual principio 8)")`:
+> *"fuente '%s' fuera de fuentes/FUENTES_CANONICAS.json. La fuente canonica se
+> registra ANTES del primer nodo del libro (manual seccion 7.1)"*
+>
+> Y la misma guarda en el gate, `src/gate.py:174`:
+> *"fuentes[%d] '%s' fuera de fuentes/FUENTES_CANONICAS.json"*
+
+**Y no es teoria: la prueba de aceptacion corrida en ESTA vuelta lo ejecuta.**
+Su caso F, con su salida entera pegada en la seccion C:
+
+    F. VERDE: el candidato con la fuente 'libro_que_nadie_registro' fue
+       rechazado y no toco el dataset
+
+**LA REGISTRA ALEXIS, NO YO**, y el encargo lo dice con esas palabras: *"La
+registra Alexis con la ficha del libro delante, no tu."* **Y aunque la sede me
+dejara, no podria**: la ficha de un libro (titulo completo, autor, edicion, año)
+**se lee de la portada del libro**, que es exactamente lo que no tengo. Una ficha
+tecleada de memoria seria una fuente inventada en el campo que el manual llama
+sagrado.
+
+---
+
+## B. LO QUE PODRIA HABER HECHO Y NO HICE, CON LA REGLA QUE LO PROHIBE
+
+*Se escribe porque una parada solo es creible si dice que alternativas se
+miraron. Las cuatro se consideraron y las cuatro se descartaron con su cita.*
+
+| lo que cabria improvisar | por que NO |
+|---|---|
+| **extraer de otro libro** que si estuviera en la maquina | solo esta `onu_consumidor`, que es el lote 1 y esta **cerrado** (`docs/CIERRE_LOTE_1.md`). Y el orden de los lotes es `D.24`, `docs/BANCO_DE_REGLAS.md` linea 517: **no lo elijo yo** |
+| **registrar `smart_who` en la tabla canonica** para dejar el terreno listo | el encargo lo asigna a Alexis expresamente, y la ficha se lee de la portada que no tengo. Ademas `fuentes/FUENTES_CANONICAS.json` no es sede del extractor (seccion 14) |
+| **escribir candidatos de memoria** sobre lo que un libro de contratacion suele decir | `D.30`, seccion 15.4: **ninguna guarda de esta casa ve un paso que tu escribiste y el libro no dice.** Sin libro, la tasa de puentes no seria alta: seria **100 por ciento**, y la aduana daria verde igual |
+| **fabricar un lector o una guarda** que avise de la carpeta que falta | seccion 13, la moratoria de maquinaria: **ninguna vuelta fabrica arneses, guardas ni lectores nuevos.** Y el encargo lo repite: *no propongas una guarda que automatice la relectura de fidelidad* |
+
+**Y NO ESCRIBO `docs/loop/PARA_ALEXIS.md`** (`D.28`, seccion 14). No lo he tocado,
+y sigue sin existir:
+
+    $ ls docs/loop/PARA_ALEXIS.md
+      ls: cannot access 'docs/loop/PARA_ALEXIS.md': No such file or directory
+
+La parada resuelta del lote 1 vive archivada en
+`docs/loop/paradas/2026-09-10-lote-1-consumado.md`, y su propia cabecera dice que
+**el arnes solo mira `docs/loop/PARA_ALEXIS.md`**. Esta parada se declara aqui,
+en mi sede, y el auditor decide si la recoge en la suya.
+
+---
+
+## C. LO QUE ESTA VUELTA SI DEJA MEDIDO
+
+*Seccion 6: las tres guardas de cada vuelta, tambien en una vuelta que no extrae.*
+
+### C.1. Las tres guardas, en verde
+
+    $ python forja.py gate
+      GATE VERDE.
+        nodos verificados: 8
+        guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista,
+                 arista_duplicada, vuelta, cita_incompleta,
+                 deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+
+    $ python forja.py guiones
+      BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python tests/test_aceptacion.py
+      Ran 65 tests in 13.670s
+      OK
+      A. VERDE: el nodo ejemplo entro limpio, el gate quedo verde y los censos
+         registraron las tres denominaciones por separado
+      B. VERDE: gemelo bloqueado (codigo 2) citando a registrar_fuente_canonica
+         y la señal (similitud_texto)
+      C. VERDE: el hijo quedo bloqueado sin veredicto y entro tras declarar
+         CONTINUA
+      D. VERDE: la auto-arista via alias puso el gate en rojo
+      E. VERDE: hooks/pre-commit aborto con el guion largo
+      F. VERDE: el candidato con la fuente 'libro_que_nadie_registro' fue
+         rechazado y no toco el dataset
+      total: 65 pruebas, 0 fallos, 0 errores
+
+**El hook corrio en todos los commits de esta vuelta y ninguno se salto.**
+
+### C.2. El estado del grafo, medido en esta vuelta y contrastado con el encargo
+
+**El encargo abre con una tabla de cuatro cifras. Las cuatro se remiden aqui, no
+se copian** (seccion 5: una nota previa nunca es fuente de una cifra nueva).
+
+| medida | cifra del encargo | **medida por mi hoy** | instrumento | |
+|---|---:|---:|---|---|
+| nodos vivos en el dataset | 8 | **8** | `wc -l dataset/nodos.jsonl` | coincide |
+| aristas declaradas | 2 | **2** | recuento de `nodos_siguientes` sobre el dataset: 2 salidas y sus 2 entradas espejo | coincide |
+| veredictos en bitacora | 2 | **2** | `wc -l bitacora/VEREDICTOS.jsonl` | coincide |
+| fuentes canonicas en uso | 2 | **2** | recuento de claves distintas en el campo `fuentes` de los 8 nodos | coincide |
+
+**Las dos aristas, leidas una a una del dataset:**
+
+    registrar_fuente_canonica > elegir_grafia_clave
+    formular_codigo_comercializacion_empresarial > verificar_afirmaciones_ambientales_publicidad
+
+**Los dos veredictos, leidos de `bitacora/VEREDICTOS.jsonl`:**
+
+    2026-09-04  CONTINUA  elegir_grafia_clave <> registrar_fuente_canonica
+    2026-09-10  CONTINUA  verificar_afirmaciones_ambientales_publicidad <> formular_codigo_comercializacion_empresarial
+
+**Las fuentes en uso, con su reparto**, que es la cifra que la tabla del encargo
+resume en un `2`:
+
+    manual_sistema_conocimiento : 2 nodos
+    onu_consumidor              : 6 nodos
+
+**CERO DISCREPANCIAS con la tabla del encargo.** Se dice porque la vuelta 2 tuvo
+que declarar una (su seccion C.5) y el contraste importa: esta vez las cuatro
+cifras del encargo aguantan la remedida.
+
+### C.3. El estado de la cuarentena, con `D.31` ya funcionando
+
+    $ for d in cuarentena/*/; do echo "$d : $(ls "$d" | grep -c json) json"; done
+      cuarentena/_derivadas/            : 2 json
+      cuarentena/_insertados/           : 0 json
+      cuarentena/ensayo_referencia_163/ : 163 json
+      cuarentena/onu_consumidor/        : 0 json
+
+    $ ls cuarentena/_insertados/onu_consumidor/ | grep -c json
+      6
+
+**`cuarentena/onu_consumidor/` esta a cero y los seis estan en `_insertados/`:**
+es `D.31` en su sitio, el candidato insertado se archiva y el informe no lo
+cuenta. **La bandeja del lote 2 no existe todavia**, porque no tiene nada que
+guardar.
+
+### C.4. UNA CIFRA MIA QUE MEDI MAL Y CORREGI ANTES DE PUBLICARLA
+
+*Se escribe entera porque es exactamente la especie que la vuelta 2 declaro en su
+seccion C.5, y esta vez me toco a mi.*
+
+**Corri el informe del lote pasandolo por `head` y lei el codigo de salida
+despues:**
+
+    $ python forja.py informe --carpeta cuarentena/smart_who 2>&1 | head -20
+      no existe la carpeta: cuarentena/smart_who
+    $ echo $?
+      0
+
+**Ese `0` era el de `head`, no el del instrumento.** Iba a publicar que la forja
+avisa de una carpeta ausente y sale en verde, que habria sido una afirmacion
+falsa sobre el codigo de la casa. **Lo remedi sin tuberia antes de escribirlo:**
+
+    $ python forja.py informe --carpeta cuarentena/smart_who > salida.txt 2>&1; echo $?
+      1
+    $ cat salida.txt
+      no existe la carpeta: cuarentena/smart_who
+
+**EL INSTRUMENTO ESTA BIEN: sale con codigo 1, que es lo correcto.** El defecto
+era mio y de mi medicion. **No hay nada que proponer aqui sobre `forja.py`**, y lo
+escribo justamente para que nadie lo lea como si lo hubiera.
+
+---
+
+## D. LO QUE EL ENCARGO PEDIA MEDIR Y QUEDA SIN MEDIR
+
+*El encargo lista cuatro cosas bajo **LO QUE ESTA VUELTA TIENE QUE DEJAR
+MEDIDO**. Ninguna se puede dar, y cada una se dice por su nombre en vez de
+sustituirse por una aproximacion.*
+
+| lo que pedia | estado | por que |
+|---|---|---|
+| 1. **la tasa de puentes con la relectura dentro del acto**, comprobacion de `D.30` | **SIN MEDIR** | se mide sobre pasos escritos con el parrafo delante. Cero pasos escritos |
+| 2. **si dos capitulos de 6.000 palabras caben en una vuelta** | **SIN MEDIR** | cero capitulos abiertos. **La vuelta no midio el techo: se quedo antes de la puerta** |
+| 3. **cuantos vecinos levanta la aduana con el grafo en ocho nodos** | **SIN MEDIR** | la aduana levanta vecinos contra un candidato, y no hubo candidato. **El grafo de ocho sigue sin estrenarse como pared** |
+| 4. **si la prueba del inventario aguanta en material narrativo** | **SIN MEDIR** | `D.27` se escribio contra material normativo y sigue sin tocar una pagina narrativa |
+
+**LA 1 Y LA 2 SON LAS QUE MAS CUESTAN**, y conviene decirlo con nombre propio
+porque de ellas depende una decision ya escrita: **la regla de volumen del encargo
+decide el tamaño del lote 3 con la cifra de pasos inventados por capitulo**, y esa
+cifra no existe. **El lote 3 no se puede dimensionar con esta vuelta.**
+
+---
+
+## E. LAS CUATRO MEDIDAS DEL CIERRE (TAREA 4), CON LAS FILAS QUE DE VERDAD HAY
+
+*El encargo manda: **Si solo hiciste un capitulo, la tabla lleva una fila y lo
+dices. Una fila honesta vale mas que dos inventadas.** Aqui no hubo ni un
+capitulo, asi que las dos tablas por capitulo van SIN NINGUNA FILA, y eso se
+escribe.*
+
+| medida | cifra de esta vuelta |
+|---|---|
+| **candidatos por mil palabras**, una fila por capitulo | **CERO FILAS.** No hay capitulo minado, y no hay palabras minadas que sirvan de denominador. **Una tasa con denominador cero no es una tasa** |
+| **pasos inventados sobre pasos escritos**, una fila por capitulo | **CERO FILAS.** Cero pasos escritos. **Esta es la cifra de la regla de volumen, y esta vuelta NO LA APORTA** |
+| **veredictos escritos** | **0** en esta vuelta. El total de la bitacora sigue en **2**, los dos del lote 1 (`wc -l bitacora/VEREDICTOS.jsonl`, recomputado al cierre) |
+| **cuanto tardo y si el tramo fue el correcto** | la vuelta se detuvo en la comprobacion de las dos condiciones de apertura, antes de la TAREA 1. **El tramo del encargo era de cinco a quince candidatos y quedo en cero**, y no por el techo: por falta de libro. **La pregunta de si el segundo capitulo cabia sigue abierta** |
+
+**NO PUBLICO EL COSTE NI EL RELOJ DE LA VUELTA**: los escribe el arnes en
+`docs/loop/loop.log` al cerrar mi asiento, y a esta hora esa linea todavia no
+existe. **Una cifra de coste tecleada por mi no saldria de ningun instrumento**
+(seccion 5).
+
+---
+
+## F. DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO
+
+*Seccion 8. Van aqui para que la relectura ciega del auditor empiece por ellos.*
+
+**DISCUTIBLE 1. Di la TAREA 4 como PARCIAL y no como BLOQUEADA.** Las dos medidas
+por capitulo no tienen fila, pero las otras dos (veredictos del lote, y el tramo)
+si tienen respuesta honesta, y la respuesta es cero con su razon. **Puede
+sostenerse que una tabla de cierre de una vuelta sin capitulos no deberia
+publicarse en absoluto**, y que un cero ahi se lee luego como si la vuelta hubiera
+medido algo. Elegi publicarla con las filas vacias nombradas, porque el encargo
+pide expresamente que la cifra de puentes se publique aunque salga mala, y su
+gemelo es publicar que no salio.
+
+**DISCUTIBLE 2. Corri las tres guardas y el informe del lote aunque la vuelta
+estaba parada.** Cabe leer que una vuelta detenida en la puerta no debe correr
+nada, y que un `informe --carpeta` contra una carpeta que no existe es ruido. **Lo
+corri a proposito**: la seccion 6 pide las tres guardas *de cada vuelta* sin
+excepcion por motivo, y el informe contra la carpeta ausente es la lectura mas
+barata que prueba que la bandeja del lote 2 esta vacia en vez de afirmarlo.
+
+**DISCUTIBLE 3. No cree `cuarentena/smart_who/` vacia.** Habria dejado el terreno
+listo y no rompe ninguna regla que yo sepa. No la cree porque **git no viaja
+carpetas vacias**, asi que el gesto no sobrevive al commit, y porque una bandeja
+de salida abierta para un lote que no puede empezar es una promesa escrita en el
+arbol.
+
+**DISCUTIBLE 4. Conte las aristas como 2 y no como 4.** El dataset tiene **2
+entradas en `nodos_siguientes` y 2 en `nodos_previos`**, y son las mismas dos
+relaciones vistas por sus dos extremos. Cuento **relaciones, no extremos**, que es
+lo que hace coincidir la cifra con el `2` del encargo. **Si la casa contara
+extremos, mi cifra estaria mal y el encargo tambien.**
+
+**DISCUTIBLE 5. Trate la parada como bloqueo de las cuatro tareas y no solo de las
+tres primeras.** La TAREA 4 pide medidas de cierre, y un lector estricto podria
+decir que esa tarea si era ejecutable y que por tanto la vuelta entrego una de
+cuatro y no cero. **Lo digo de las dos maneras**: cuatro tareas imposibilitadas
+por la misma causa unica, y una de ellas contestada hasta donde un lote vacio
+permite contestar.
+
+---
+
+## G. LO QUE PROPONGO, SIN ADJUDICARME NADA
+
+*Seccion 14: el extractor propone en su reporte y no se adjudica a si mismo.*
+
+**PROPUESTA UNICA, y es de orden de trabajo, no de maquinaria** (seccion 13): **que
+la comprobacion de las dos condiciones de apertura se haga y se publique como su
+propia linea del reporte antes de la TAREA 1**, igual que la apertura se mide
+antes de la primera operacion. Esta vuelta lo hizo asi por suerte y no por regla:
+el encargo del lote 2 traia las dos condiciones escritas arriba del todo **porque
+Alexis las escribio ahi**. **Un encargo futuro que no las traiga dejaria al
+extractor descubriendo el hueco a mitad de la TAREA 2**, con candidatos a medio
+escribir.
+
+**NO propongo ninguna guarda que compruebe la carpeta**, y lo digo expresamente
+porque es la forma que tomaria la tentacion: seria maquinaria nueva, y el encargo
+la prohibe por su nombre.
+
+---
+
+**FIN DEL REPORTE DE LA VUELTA 3.** **UNA PARADA declarada con sus dos condiciones
+medidas**, cero candidatos, cero inserciones, cero capitulos, **las tres guardas en
+verde**, cuatro cifras del encargo remedidas y coincidentes, **cuatro medidas que
+el encargo pedia y quedan SIN MEDIR, dichas una a una**, una medicion mia mal hecha
+corregida antes de publicarse y **cinco discutibles marcados antes de saber si
+acierto.**
