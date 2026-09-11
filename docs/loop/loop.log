@@ -94,3 +94,6 @@ BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 [pre-commit] verde
 [2026-09-10 21:07:00]   apertura ciega sellada: 7c4f5e0b583a13a21b98ae9273eb1de8c5b014f2
 [2026-09-10 21:07:00] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-10 21:33:10] auditor listo (USD 9.580864499999999), 1570s, intento 1 de 7
+[2026-09-10 21:33:11]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-10 21:33:11] VUELTA 2 : EXTRACTOR (claude-opus-5)
