@@ -1,421 +1,494 @@
-# APERTURA CIEGA DE LA VUELTA 12
+# APERTURA CIEGA DEL AUDITOR, VUELTA 12, LOTE 3 `zhuo_manager`
 
-**Lote 3, `zhuo_manager`. Tramo: Cap. 5 (`cap_06.md`), una unidad**, mas los dos candidatos
-que la TAREA 1 de la vuelta corrigio y que salen de `cap_05.md`.
+*Escrita el 11 sep 2026, ANTES de ver `docs/loop/REPORTE.md`. Cumple `D.34.2` y su
+ampliacion del 11 sep (`D.38.3`), y `AUDITOR_FORJA.md` seccion 1.5.*
 
-*Escrita por el auditor en la fase de apertura ciega de `D.34`, con `docs/loop/REPORTE.md`
-retirado del arbol por el arnes. **No lo he recuperado de git ni por ninguna otra via.**
-Esta es la lectura que despues se compara con la del extractor: mientras no se compare,
-**no es una adjudicacion y no mueve credito de nadie.***
+> **LO QUE NO HE ABIERTO, Y LO DIGO YO PRIMERO.** `docs/loop/REPORTE.md`,
+> `docs/loop/loop.log`, `docs/loop/ultimo_extractor.json` y
+> `docs/loop/ultimo_auditor.json` **no estan en el arbol y no los he recuperado de
+> git ni por ninguna otra via.** No he corrido `git show`, ni `git stash`, ni he
+> leido ningun blob de esos cuatro ficheros. **Lo unico que he leido de la vuelta
+> 12 es el material: los sesenta candidatos de `cuarentena/zhuo_manager/` y los
+> cuatro capitulos de `fuentes/zhuo_manager/`.**
 
 ---
 
-## 0. QUE VI Y QUE NO VI ANTES DE LEER, Y UNA CAIDA PROPIA MIA AL PRINCIPIO
+## 0. QUE HE LEIDO, Y CON QUE
 
-### 0.1. CAIDA PROPIA, DECLARADA ANTES QUE NADA: **ABRI `ultimo_extractor.json`**
-
-**Lo hice en mi segundo comando, buscando de que capitulo era el lote, y ese fichero trae el
-mensaje final del extractor entero.** No es el reporte y el arnes no lo retira, pero **el
-efecto practico es el mismo en los puntos que ahi vienen**, y el auditor de la vuelta pasada
-escribio expresamente en su seccion 10 que NO lo habia leido. **Rompi un habito escrito por mi
-propia sede, y lo digo yo, que soy el perjudicado por decirlo.**
-
-**Lo que ese fichero me enseno, dicho exacto, para que nadie tenga que adivinar el alcance:**
-
-| lo que vi ahi | efecto sobre esta lectura |
+| lo que abri | cuanto |
 |---|---|
-| que el tramo es el Cap. 5, 18 candidatos, 162 pasos | **ninguno: lo he medido yo aparte, seccion 2** |
-| que el extractor cuenta **6 puentes de encuadre, cuatro de ellos en el paso 1** | **CONTAMINADO. Mi cifra de la seccion 8 no vale como lectura independiente en su banda** |
-| que su DISCUTIBLE 4 es la escena de apertura, sostenida sobre **una linea de las once** | **CONTAMINADO. Mi DISCUTIBLE 1 coincide, y por tanto NO cuenta como coincidencia** |
-| que su DISCUTIBLE 6 calcula **26,5 por ciento** si `Ten delante` y `Cuenta con` cuentan | **CONTAMINADO en la banda ancha** |
-| que declara discrepancia viva en tasa de atribucion y en el reloj | no toco ninguna de las dos aqui |
+| `docs/loop/AUDITOR_FORJA.md` | entero |
+| `docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md` | entero |
+| `docs/BANCO_DE_REGLAS.md` | `D.27`, `D.28`, `D.29`, `D.30`, `D.35`, `D.37`, `D.38` |
+| `docs/loop/ORDEN_DE_LOTES.md` y `docs/loop/PROMPT_SIGUIENTE.md` | enteros |
+| `fuentes/zhuo_manager/cap_07.md` a `cap_10.md` | **enteros, linea a linea** |
+| `cuarentena/zhuo_manager/*.json` | **los 60, todos los pasos de todos** |
+| `dataset/nodos.jsonl` | los 135 ids y titulos, y 16 vecinos abiertos paso a paso |
+| `esquema/nodo.schema.json`, `config/umbrales.json` | enteros |
 
-**POR TANTO, Y ESTO ES LO QUE IMPORTA:** de esta apertura, **lo unico que puede alegarse como
-lectura ciega de verdad son las secciones 3, 4, 5, 6, 7 y 9**, que son el inventario pieza a
-pieza, la clase de cada candidato, los pares, las aristas y los hallazgos. **La seccion 8 va
-escrita igual, con sus tres bandas y su comando, pero va marcada CONTAMINADA en las dos bandas
-donde el extractor ya me dijo su numero.** Una cifra que coincide despues de haber visto la
-ajena no es una medida: es un eco.
+**NO HE CORRIDO `python forja.py informe` NI NINGUNA SEÑAL EN ESTA FASE, Y ES A
+PROPOSITO.** `D.19` dice que ninguna señal separa jerarquia de ruido y que **una
+discrepancia nunca se adjudica citando una señal**. Todo lo que clasifico aqui
+esta adjudicado **leyendo los pasos de los dos lados**. El instrumento lo corro en
+mi turno normal, como manda la seccion 1.1, y **si su cola discrepa de esta
+lectura, la discrepancia se declara y no se resuelve copiando.**
 
-### 0.2. El orden real de mis actos, sin maquillar
+---
 
-| lo que consulte, en orden | ciega? |
+## 1. LA FRONTERA QUE YO LEO, CON SU SALIDA PEGADA (`D.35`)
+
+**Esta es mi frontera, no la del extractor.** La saque de los encabezados a
+columna cero de cada fichero, que es como esta marcado el libro en esta copia
+(los parrafos del cuerpo van sangrados con tabulador). Salida literal del
+comando que la produjo:
+
+    $ python - <<'EOF'   # lineas a columna cero, sin frontmatter, por capitulo
+    for c in ['cap_07','cap_08','cap_09','cap_10']:
+        L=io.open('fuentes/zhuo_manager/%s.md'%c,encoding='utf-8').read().split('\n')
+        for n,l in enumerate(L,1):
+            if n<8 or not l.strip(): continue
+            if l[0] not in ' \t' and len(l)<80: print('%4d:%s'%(n,l))
+    EOF
+
+    cap_07.md                                        cap_08.md
+       9:Chapter Six                                    9:Chapter Seven
+      45:WHAT IS A GREAT OUTCOME FOR YOUR MEETING?     39:DESIGN YOUR TEAM INTENTIONALLY
+      53:Making a Decision                             63:HIRING IS YOUR RESPONSIBILITY
+      97:Sharing Information                           73:Describe Your Ideal Candidate as Precisely as You Can
+     117:Providing Feedback                            79:Develop a Sourcing Strategy
+     133:Generating Ideas                              87:Deliver an Amazing Interview Experience
+     151:Strengthening Relationships                   97:Show Candidates How Much You Want Them
+     169:INVITE THE RIGHT PEOPLE                      105:HIRING IS A GAMBLE, BUT MAKE SMART BETS
+     187:GIVE PEOPLE A CHANCE TO COME PREPARED        121:Examine Past Examples of Similar Work
+     209:MAKE IT SAFE FOR PEOPLE TO CONTRIBUTE        129:Seek Out Trusted Recommendations
+     219:Be Explicit about the Norms You Want to Set  143:Get Multiple Interviewers Involved
+     231:Change Up Your Meeting Format to Favor P...  149:Look for Passionate Advocates Rather Than Consensus
+     243:Manage Equal Airtime                         157:Prepare Your Interview Questions Ahead of Time
+     257:Get Feedback about Your Meeting              177:Reject Anyone Who Exhibits Toxic Behavior
+     267:SOME MEETINGS DON'T NEED YOU AND SOME DO...  181:Build a Team with Diverse Perspectives
+                                                      197:Hire People Who Are Capable of More
+    cap_09.md                                         209:Meeting Frogs Is Part of the Deal, but Believe in the Process
+       9:Chapter Eight                                221:HIRING WHEN YOU NEED FIVE, TEN, OR HUNDREDS OF PEOPLE
+      31:START WITH A CONCRETE VISION                 237:Successful Hiring Is All about Diligent Execution
+      59:Create a Believable Game Plan                247:Do Your Research When Hiring Leaders
+      73:Craft a Plan Based on Your Team's Strengths  259:Take the Long View with Top Talent
+      81:Focus on Doing a Few Things Well             273:Build a Great Bench
+      99:Define Who Is Responsible for What           291:Create a Culture That Prioritizes Hiring Well
+     115:Break Down a Big Goal into Smaller Pieces
+     141:PERFECT EXECUTION OVER PERFECT STRATEGY      cap_10.md
+     175:Balancing Short-Term and Long-Term Outcomes     9:Chapter Nine
+     181:HIRING                                        33:BIG TEAMS VERSUS SMALL TEAMS
+     189:PLANNING                                      39:Direct to Indirect Management
+     197:MANAGING PERFORMANCE                          49:People Treat You Differently
+     207:Define a Long-Term Vision and Work Backward   63:Context Switching All Day, Every Day
+     223:Take a Portfolio Approach                     73:You Pick and Choose Your Battles
+     235:Talk about How Everything Relates to the V...  81:The Skills That Matter Become More and More People-Centric
+     251:GOOD PROCESS IS EVER EVOLVING                 89:THE TIGHTROPE ACT OF GREAT DELEGATION
+                                                      109:GIVING PEOPLE BIG PROBLEMS IS A SIGN OF TRUST
+                                                      125:TWO HEADS, ONE SHARED VISION
+                                                      147:WHAT TO DO WHEN A MANAGER STRUGGLES
+                                                      173:AIM TO PUT YOURSELF OUT OF A JOB
+
+**Nota sobre las anclas del encargo:** el `PROMPT_SIGUIENTE.md` pegaba catorce
+anclas y avisaba de que eran *"las anclas que yo vi, no tu frontera"*. Mi frontera
+es mas ancha porque incluye los encabezados de segundo nivel; **las catorce suyas
+estan todas dentro de la mia, en la misma linea**, y ademas `cap_09` L181 `HIRING`,
+que su lista no traia y que es el primero de los tres escenarios de equilibrio.
+
+**LA CUENTA DE MI FRONTERA, PIEZA A PIEZA:**
+
+| capitulo | encabezados | piezas que yo haria nodo | piezas que yo NO haria nodo | candidatos que hay |
+|---|---:|---:|---:|---:|
+| `cap_07` | 15 | **16** | 2 | **16** |
+| `cap_08` | 23 | **21** | 2 | **21** |
+| `cap_09` | 16 | **14** | 2 | **14** |
+| `cap_10` | 12 | **9** | 3 | **9** |
+| | | **60** | **9** | **60** |
+
+> ### **MI FRONTERA COINCIDE CON EL LOTE: 60 Y 60, Y PIEZA A PIEZA.**
+>
+> No es que cuadren los totales: es que **cada candidato cae en la pieza que yo
+> habria cortado**, incluidos los tres cortes que no siguen a un encabezado. Esto
+> lo escribo antes de ver el reporte, y **si el reporte declara una frontera
+> distinta de esta, uno de los dos se equivoca y se adjudica leyendo.**
+
+### 1.1. Los tres cortes que NO siguen a un encabezado, y que yo tambien haria
+
+| corte | lineas | por que se parte |
+|---|---|---|
+| `cap_07` L187 se parte en dos | L189 a L201 preparacion, **L203 a L207 seguimiento** | el seguimiento tiene entregable propio, el resumen con sus cuatro contenidos, y ejecutor en otro momento. Da `repartir_material_antes_reunion` y `cerrar_reunion_pasos_siguientes` |
+| `cap_07` L231 se parte en dos | la rueda de la sala, **y L237 a L241 las notas adhesivas** | el arranque con notas adhesivas trae caja de tiempo, diez a quince minutos, y secuencia propia que la rueda no tiene. Da `cambiar_formato_reunion_favorecer_participacion` y `abrir_discusion_notas_adhesivas` |
+| `cap_09` L141 se parte en dos | el caso de los ciclos cortos, **y L159 a L173 las siete señales** | la lista de siete señales es una comprobacion con su propio si o no. Da `ejecutar_ciclos_cortos_aprender` y `comprobar_equipo_ejecuta_bien` |
+
+### 1.2. Las NUEVE piezas que yo NO haria nodo, y por que
+
+| pieza | lineas | mi lectura |
+|---|---|---|
+| `cap_07` apertura | L17 a L43 | la reunion de estado fallida y los cinco sentimientos de una buena reunion. **Los cinco son FINES, no medios: `D.27` restriccion 1.** Caso, no nodo |
+| `cap_07` **MAKE IT SAFE FOR PEOPLE TO CONTRIBUTE** | L209 a L217 | cierra con *"try the following"* y **no cuenta las tacticas ni trae inventario propio**. Un nodo cabeza aqui solo llevaria el nombre de las otras cuatro: **NOMBRAR NO ES PROCEDIMENTAR** (`P.5.1`). Las cuatro tacticas son **hermanas, no hijas** |
+| `cap_08` apertura | L17 a L37 | el candidato Tom y la doctrina *"contratar no es un problema que resolver sino una oportunidad"*. Postura con caso |
+| `cap_08` **HIRING IS A GAMBLE, BUT MAKE SMART BETS** | L105 a L119 | trae **tres razones** por las que la entrevista no predice. **Razones no son medios, etapas ni objetos: `D.27` restriccion 1.** Y L119 cierra con *"be smart about your approach"*, que es **adjetivo de adecuacion: restriccion 2**. No es nodo, y es el mejor ejemplar de casa de las dos restricciones a la vez |
+| `cap_09` apertura | L17 a L29 | Instagram y la definicion de proceso. Caso mas definicion |
+| `cap_09` cierre de Heraclito | L283 a L287 | metafora de cierre |
+| `cap_10` apertura | L17 a L31 | las sillas que no llegaban en la critica. Caso |
+| `cap_10` **You Pick and Choose Your Battles** | L73 a L79 | *"you must prioritize"* y *"perfectionism is not an option"* **sin ningun inventario**. Postura pura, y su procedimiento ya vive en `priorizar_pocas_cosas_bien` |
+| `cap_10` **The Skills That Matter...** | L81 a L87 | nombra cuatro habilidades: contratar lideres, construir equipos autosuficientes, fijar vision, comunicar bien. **Son METAS de desarrollo, no medios: `D.27` restriccion 1** |
+
+> **LO QUE HABRIA SIDO CAIDA Y NO LO ES: las tres cifras citadas del bloque
+> `HIRING IS A GAMBLE` no se han perdido al no hacerlo nodo.** Las busque una a una
+> y viven redistribuidas en el nodo que cada una sostiene: **Google y su *"zero
+> relationship"*** en `examinar_trabajo_pasado_candidato`; **el estudio de Harvard
+> de las audiciones a ciegas** en `preparar_preguntas_entrevista_antemano`; y
+> **Laszlo Bock** en `buscar_recomendaciones_confianza`. Es lo que pide el reparto
+> de perdidas del manual seccion 5: la persuasion es contenido y viaja. **Lo
+> compruebo yo y lo declaro yo, porque era el sitio donde habria esperado la
+> perdida.**
+
+---
+
+## 2. LA COMPROBACION MECANICA, QUE ES MIA Y LA CORRI YO
+
+    $ python -c "...60 ficheros: id contra nombre, esquema, fuentes, aristas, guiones..."
+    cap_07: 16 candidatos, 124 pasos
+    cap_08: 21 candidatos, 162 pasos
+    cap_09: 14 candidatos, 131 pasos
+    cap_10:  9 candidatos,  80 pasos
+    TOTAL: 60 candidatos, 497 pasos
+    sin asignar: set()  inexistentes: set()
+    PROBLEMAS ESTRUCTURALES: ninguno
+    ids que ya viven: set()
+
+**Lo que ese comando comprobo, uno a uno sobre los 60:** que el nombre del fichero
+y el campo `id` dicen lo mismo; que el `id` es snake_case sin sufijo numerico
+(`D.22`); que `fuentes` es exactamente `zhuo_manager` con fecha `2026-09-11`; que
+`nodos_previos` y `nodos_siguientes` estan **vacios**, que es lo que `D.29` manda
+para cuarentena; que el dominio es `gestion_equipos` y el estado `vivo`; que no hay
+ningun campo fuera de los diecisiete del esquema, que declara
+`additionalProperties: false`; que no hay **ni un guion largo ni un guion medio**;
+y que **ninguno de los 60 ids choca con los 135 que ya viven**.
+
+`escala_minima` aparece en tres candidatos, `abrir_discusion_notas_adhesivas`,
+`auditar_calendario_reuniones_semana` y `disenar_equipo_plan_anual`, y **es campo
+legitimo del esquema**, no un extra.
+
+---
+
+## 3. `PASOS INVENTADOS POR CAPITULO`, MI CUENTA CIEGA (`AUDITOR_FORJA.md` 8)
+
+**Lei los 497 pasos y los cuatro capitulos enteros.** Esta es mi marca de `D.30`
+hecha por mi cuenta, sin ver la del extractor.
+
+| capitulo | pasos escritos | puentes que YO nombro | por ciento |
+|---|---:|---:|---:|
+| `cap_07` Amazing Meetings | 124 | **1** | **0,81** |
+| `cap_08` Hiring Well | 162 | **0** | **0,00** |
+| `cap_09` Making Things Happen | 131 | **0** | **0,00** |
+| `cap_10` Leading a Growing Team | 80 | **0** | **0,00** |
+| **total del lote** | **497** | **1** | **0,20** |
+
+**EL UNICO PUENTE QUE SE SOSTENER, Y ES MEDIO PASO:**
+
+- `cambiar_formato_reunion_favorecer_participacion`, **paso 5**: *"Prueba tambien la
+  otra tactica que el libro nombra en esta misma seccion, el arranque con notas
+  adhesivas, **que trae pasos propios y una caja de tiempo que esta rueda no
+  tiene**."* La primera mitad es del libro (L237: *"Another tactic I like is the
+  'Post-it note' opening"*). **La segunda mitad no la dice el libro: es comentario
+  de esta casa sobre su propio corte de nodos**, metido dentro de un paso
+  accionable. El libro no compara las dos tacticas ni dice que una tenga caja de
+  tiempo y la otra no.
+
+**DONDE MIRE CON MAS DUREZA Y NO ENCONTRE PUENTE**, porque es donde `D.30` dice que
+sube la cifra (*"el puente sube cuando baja el inventario del parrafo"*):
+
+- `rechazar_conducta_toxica_entrevista`: el parrafo mas pobre del lote, **L179, una
+  sola linea de texto**, produce 8 pasos. Los conte contra la linea: **son las cinco
+  señales con su frase entre comillas, mas la remision de apertura y el mandato de
+  rechazo.** Transcripcion entera. Es el caso que mas se parece al parrafo 32 del
+  lote 1, que dio 83 por ciento, y aqui da cero.
+- `preguntar_contratar_unica_prioridad`: seis pasos sobre una sola pregunta. Los
+  seis salen de L225 a L233.
+- `repartir_equipo_cartera_horizontes`: los tercios son del libro (L231).
+- `pasar_direccion_directa_indirecta`: las quince horas y los ocho reportes son del
+  libro (L43).
+
+> **LO DIGO CON SU LIMITE, PORQUE ES CIFRA MIA (`8.3`): esta es mi cuenta de auditor
+> sobre el texto, no una firma de la cifra del extractor.** Si su reporte desglosa
+> por capitulo, comparo fila a fila. **Si no desglosa, eso es caida de especie
+> `REPORTE` y la nombro**, porque la cifra agregada no se desglosa despues.
+
+**Y LA CONSECUENCIA DE VOLUMEN, QUE ES PARA LO QUE SIRVE LA METRICA:** mi peor
+capitulo es `cap_07` con **0,81 por ciento**, muy por debajo del freno del **10 por
+ciento** (decision del fundador 5.8). **Con mi lectura, el lote 4 no baja escalon:
+sigue a cuatro capitulos por vuelta.**
+
+---
+
+## 4. MI CLASIFICACION DE LOS 60, CANDIDATO A CANDIDATO
+
+**Clases que uso:** `SANO` entra sin madre; `SANO + ARISTA` entra y pide arista
+declarada por lectura (`D.29`), con el paso de la madre citado; `CONTINUA` es hijo
+de un nodo que ya vive y la arista es obligatoria; `FRONTERA` son dos doctrinas
+legitimas que se escriben las dos (manual seccion 4); `REPITE` no entraria.
+
+> **NINGUNO DE LOS 60 ES `REPITE` EN MI LECTURA, Y NINGUNO ES `MUTUO`.** Lo pongo
+> arriba porque es la afirmacion mas fuerte de esta pagina y la mas facil de
+> desmentirme. La razon es la misma en todos los pares apretados: **la vara no tiene
+> bascula, y lo que queda fuera del solape es procedimiento en los dos lados.**
+
+### 4.1. `cap_07`, Amazing Meetings (16)
+
+| # | candidato | pasos | lineas que lo sostienen | mi clase |
+|---:|---|---:|---|---|
+| 1 | `fijar_resultado_excelente_reunion` | 10 | L45 a L51, L165 a L167 | **SANO, CABEZA.** Aristas a los cinco de abajo **por `D.29` y NO por `D.37`**: L51 dice *"a handful of reasons"* y **no dice cuantas** |
+| 2 | `dirigir_reunion_decision` | 14 | L53 a L95 | SANO + ARISTA, hija de 1 |
+| 3 | `dirigir_reunion_informativa` | 8 | L97 a L115 | SANO + ARISTA, hija de 1 |
+| 4 | `dirigir_reunion_revision_trabajo` | 7 | L117 a L131 | SANO + ARISTA, hija de 1 |
+| 5 | `dirigir_reunion_generar_ideas` | 7 | L133 a L149 | SANO + ARISTA, hija de 1 |
+| 6 | `dirigir_reunion_reforzar_relaciones` | 8 | L151 a L163 | SANO + ARISTA, hija de 1. Vecino `dirigir_reunion_individual_semanal`, que ya vive: L155 nombra *"some 1:1s"* como medio. **Hermanos, no madre e hija** |
+| 7 | `invitar_personas_necesarias_reunion` | 8 | L169 a L185 | SANO |
+| 8 | `repartir_material_antes_reunion` | 7 | L187 a L201 | SANO |
+| 9 | `cerrar_reunion_pasos_siguientes` | 7 | L203 a L207 | SANO. Solapa con el cuarto logro de 4 (L131) y con 1: **hermanos** |
+| 10 | `decir_normas_participacion_voz_alta` | 8 | L219 a L229 | SANO. **DISCUTIBLE 7** con `facilitar_gente_diga_verdad` del `cap_10` |
+| 11 | `cambiar_formato_reunion_favorecer_participacion` | 6 | L231 a L236 | SANO, madre de 12 por **`D.29`**: L235 y L237 enumeran **sin contar**. **Lleva mi unico puente, paso 5** |
+| 12 | `abrir_discusion_notas_adhesivas` | 6 | L237 a L241 | SANO + ARISTA, hija de 11, citando su paso 5 |
+| 13 | `mediar_tiempo_palabra_reunion` | 6 | L243 a L255 | SANO |
+| 14 | `pedir_opinion_propia_reunion` | 6 | L257 a L265 | **CONTINUA** de `pedir_opinion_otros_mejorar`, que ya vive: estrecha el objeto a la reunion propia y trae la pregunta literal. **DISCUTIBLE 6** |
+| 15 | `auditar_calendario_reuniones_semana` | 10 | L267 a L281 | SANO |
+| 16 | `avisar_organizador_reunion_prescindible` | 6 | L283 a L289 | SANO. Unica pieza del capitulo cuyo ejecutor no es quien convoca |
+
+### 4.2. `cap_08`, Hiring Well (21). Aqui trabaja la aduana de verdad: 59 nodos de `smart_who` enfrente
+
+| # | candidato | pasos | lineas | mi clase y el vecino que lei paso a paso |
+|---:|---|---:|---|---|
+| 1 | `disenar_equipo_plan_anual` | 13 | L39 a L61 | SANO. Vecino `desplegar_estrategia_tarjeta_puntuacion`: hermanos |
+| 2 | `repartir_papeles_directivo_reclutador` | 7 | L63 a L71 | SANO, CABEZA de 3 a 6 por **`D.29`**: L71 dice *"Here's how you should approach working together"* **sin contar**. Tiene procedimiento propio, el reparto de que trae cada parte, asi que no es solo el nombre de las otras |
+| 3 | `describir_candidato_ideal_precision` | 5 | L73 a L77 | **FRONTERA con `crear_tarjeta_puntuacion_puesto`. DISCUTIBLE 2** |
+| 4 | `desarrollar_estrategia_busqueda_candidatos` | 5 | L79 a L85 | SANO. Vecino `abastecer_flujo_candidatos`, *"con sus seis vias"*: **no es `D.37`**, porque esta no es ninguna de las seis. Cierre literal de `D.37`: *son hermanos, y su veredicto es `SANO`* |
+| 5 | `entregar_experiencia_entrevista_excelente` | 8 | L87 a L95 | SANO. Vecino `organizar_jornada_entrevistas_candidato`: hermanos |
+| 6 | `mostrar_candidato_cuanto_quieres` | 8 | L97 a L103 | **CONTINUA de `sostener_contacto_oferta_aceptacion`. DISCUTIBLE 1, el mas apretado del lote** |
+| 7 | `examinar_trabajo_pasado_candidato` | 7 | L121 a L127 | SANO |
+| 8 | `buscar_recomendaciones_confianza` | 10 | L129 a L141 | SANO + TRES ARISTAS. **DISCUTIBLE 4** |
+| 9 | `involucrar_varios_entrevistadores` | 5 | L143 a L147 | SANO. **DISCUTIBLE 5** con `asignar_entrevistas_enfocadas_equipo` |
+| 10 | `rechazar_contratacion_tibia` | 6 | L149 a L155 | SANO, roza FRONTERA con `decidir_contratacion_final`: alli se decide por calificacion A sobre la tarjeta, aqui por intensidad del defensor. **No chocan, se cruzan** |
+| 11 | `preparar_preguntas_entrevista_antemano` | 12 | L157 a L175 | SANO. Vecino `conducir_entrevista_cronologica_trayectoria`: dos guiones distintos, procedimiento en los dos lados |
+| 12 | `rechazar_conducta_toxica_entrevista` | 8 | L177 a L179 | **FRONTERA con `revisar_banderas_rojas_candidato`. DISCUTIBLE 3** |
+| 13 | `construir_equipo_perspectivas_diversas` | 8 | L181 a L195 | SANO. Vecinos `usar_lenguaje_no_discriminatorio_entrevista` y `evitar_preguntas_ilegales_entrevista`: alli es cumplimiento legal, aqui es composicion del equipo |
+| 14 | `contratar_personas_capaces_mas` | 6 | L197 a L207 | SANO |
+| 15 | `calcular_embudo_reclutamiento_propio` | 6 | L209 a L219 | SANO, hermano de 17. **DISCUTIBLE 9, intra lote** |
+| 16 | `preguntar_contratar_unica_prioridad` | 6 | L221 a L233 | SANO. **DISCUTIBLE 10**: es el candidato mas fino del lote frente a `D.27` |
+| 17 | `ejecutar_embudo_reclutamiento_escala` | 8 | L237 a L245 | SANO, hermano de 15 |
+| 18 | `investigar_antes_contratar_lideres` | 10 | L247 a L257 | SANO. Vecino `distinguir_perfil_guepardo_cordero`: hermanos |
+| 19 | `cultivar_relacion_talento_largo_plazo` | 7 | L259 a L271 | SANO. **DISCUTIBLE 8** con `reservar_media_hora_semanal_talento` |
+| 20 | `probar_banquillo_vacaciones_largas` | 9 | L273 a L289 | SANO |
+| 21 | `repartir_responsabilidad_contratar_equipo` | 8 | L291 a L301 | SANO. Vecinos `instalar_metodo_contratacion_empresa` y `formar_equipo_practicas_metodo`: hermanos, porque alli se instala un metodo nombrado y aqui se reparte la responsabilidad |
+
+### 4.3. `cap_09`, Making Things Happen (14)
+
+| # | candidato | pasos | lineas | mi clase |
+|---:|---|---:|---|---|
+| 1 | `fijar_vision_concreta_equipo` | 14 | L31 a L57 | SANO, CABEZA del capitulo |
+| 2 | `crear_plan_creible_equipo` | 6 | L59 a L71 | SANO + ARISTA, hija de 1: L61 dice *"Let's say you have a concrete vision... Now you have to figure out a plan"* |
+| 3 | `ajustar_plan_fuerzas_equipo` | 7 | L73 a L79 | SANO + ARISTA, hija de 2 por **`D.29`**: L71 enumera **sin contar** |
+| 4 | `priorizar_pocas_cosas_bien` | 9 | L81 a L97 | SANO + ARISTA, hija de 2. Vecino `repartir_tiempo_atencion_mejores_equipo`, que ya vive: **el mismo principio aplicado a personas y no a tareas. Hermanos** |
+| 5 | `definir_quien_responde_cada_cosa` | 9 | L99 a L113 | **CONTINUA de `fijar_proceso_trabajo_equipo`. DISCUTIBLE 11** |
+| 6 | `partir_meta_grande_hitos` | 13 | L115 a L139 | SANO + ARISTA, hija de 2 |
+| 7 | `ejecutar_ciclos_cortos_aprender` | 10 | L141 a L157 | SANO |
+| 8 | `comprobar_equipo_ejecuta_bien` | 7 | L159 a L173 | SANO. Su paso 6, *"cada tarea tiene un quien y un para cuando"*, nombra a 5: arista `D.29` |
+| 9 | `equilibrar_corto_largo_plazo` | 12 | L175 a L205 | SANO, CABEZA **con inventario propio**: tres escenarios con su situacion y sus dos riesgos, escritos por el libro en L181, L189 y L197. **Por eso esta si es nodo y las dos cabezas de 1.2 no lo son**, y estoy de acuerdo |
+| 10 | `definir_vision_larga_trabajar_atras` | 9 | L207 a L221 | SANO + ARISTA, hija de 9 |
+| 11 | `repartir_equipo_cartera_horizontes` | 6 | L223 a L233 | SANO + ARISTA, hija de 9 |
+| 12 | `ligar_tareas_proposito_organizacion` | 8 | L235 a L249 | **CONTINUA de `alinear_equipo_proposito_comun`. DISCUTIBLE 12** |
+| 13 | `hacer_repaso_posterior_proyecto` | 10 | L251 a L263 | SANO |
+| 14 | `crear_manuales_jugadas_repetibles` | 11 | L265 a L281 | SANO. **Absorbe el caso del correo semanal, L271 a L281, en vez de hacerlo nodo, y eso es lo correcto** por manual seccion 3.5 |
+
+### 4.4. `cap_10`, Leading a Growing Team (9)
+
+| # | candidato | pasos | lineas | mi clase |
+|---:|---|---:|---|---|
+| 1 | `pasar_direccion_directa_indirecta` | 7 | L39 a L47 | SANO. Vecino `planificar_reduccion_trabajo_individual`: alli se suelta trabajo de contribuidor individual, aqui se ponen capas de direccion. **Hermanos** |
+| 2 | `facilitar_gente_diga_verdad` | 8 | L49 a L61 | SANO. **DISCUTIBLE 7** |
+| 3 | `sostener_cambio_contexto_continuo` | 8 | L63 a L71 | SANO. Vecinos `disenar_entorno_rendir_mejor` y `establecer_limites_cuidado_personal`: hermanos |
+| 4 | `equilibrar_microdireccion_ausencia` | 8 | L89 a L107 | SANO, CABEZA del bloque de delegacion |
+| 5 | `entregar_problema_dificil_reporte` | 9 | L109 a L123 | SANO + ARISTA, hijo de 4. **Deja fuera la historia de la abuela, L111 a L115, y hace bien**: es fondo, no procedimiento |
+| 6 | `alinear_prioridades_reporte_directivo` | 11 | L125 a L145 | **CONTINUA de `revisar_proposito_personas_proceso`. DISCUTIBLE 13** |
+| 7 | `decidir_directivo_no_encaja_papel` | 9 | L147 a L171 | **CONTINUA de `mover_rapido_persona_papel_equivocado`. DISCUTIBLE 14, el de mayor riesgo de `REPITE` del lote entero** |
+| 8 | `reemplazarse_trabajo_propio` | 11 | L173 a L199 | SANO. **DISCUTIBLE 15** |
+| 9 | `reservar_valor_unico_prioridades_arriba` | 9 | L201 a L221 | SANO, hermano de 8. **DISCUTIBLE 16, intra lote** |
+
+---
+
+## 5. MIS DISCUTIBLES, EN ORDEN DE CUANTO ME COSTARON
+
+**Estos son los pares que yo marco ANTES de ver si el extractor los marco.** Esa
+diferencia es lo unico que hace informativa la metrica (`5.1`), y por eso van aqui,
+sellados.
+
+### 1. `mostrar_candidato_cuanto_quieres` contra `sostener_contacto_oferta_aceptacion`
+
+**La ventana de activacion es LA MISMA en los dos**: desde que entregas la oferta
+hasta que el candidato responde. Los dos dicen que no te apartes y que mantengas el
+contacto.
+
+- **Paso 3 de la madre** (`smart_who`, ya vive): *"Manten el contacto con ella con
+  regularidad."*
+- **Paso 3 del candidato** (`zhuo_manager`): *"Despues de entregar la oferta,
+  contacta con el candidato **cada dos dias**..."*, y su paso 2 pone el
+  contraejemplo tambien con numero, *"dejando pasar una semana entre
+  comunicaciones"*.
+
+**MI ADJUDICACION: `CONTINUA`, y la arista es obligatoria.** El hijo **pone numero
+donde la madre pone un adverbio**: eso es exactamente *una linea que tarda varios
+pasos en ejecutarse* (manual seccion 4). La madre conserva procedimiento propio
+fuera del solape, las cinco efes, la familia, la libertad, la fortuna y la
+diversion, cada una ya con su nodo, asi que **no es `REPITE`**. La arista se
+declara por `D.29` **citando el paso 3 de la madre**.
+
+### 2. `describir_candidato_ideal_precision` contra `crear_tarjeta_puntuacion_puesto`
+
+Mismo acto, definir el puesto antes de buscar. Y **los dos libros se contradicen
+sobre el instrumento**, que es lo que lo hace interesante:
+
+- `asignar_entrevistas_enfocadas_equipo` (de `smart_who`, ya vive), **paso 1**:
+  enfoca la entrevista en la tarjeta *"y no en una **descripcion de puesto**
+  vagamente definida"*.
+- `zhuo_manager`, **L75**: *"Write the job description yourself and be specific."*
+
+**MI ADJUDICACION: `FRONTERA DECLARADA`, no duplicado.** Manual seccion 4: *dos
+doctrinas legitimas no son duplicado, son frontera declarada; se escriben las dos
+posiciones con sus fuentes.* **Una frontera se pierde por poda, no por fusion.**
+
+### 3. `rechazar_conducta_toxica_entrevista` contra `revisar_banderas_rojas_candidato`
+
+**El choque esta en el verbo operativo, y es literal:**
+
+- `revisar_banderas_rojas_candidato` (ya vive), **paso 1**: *"Trata estas pistas
+  como banderas, **no como motivos de descarte**. Las banderas en si no matan el
+  trato."*
+- El candidato, **paso 8**: *"**Rechaza** a quien exhiba esa conducta."* Y L177 es
+  el titulo literal del libro: *Reject Anyone Who Exhibits Toxic Behavior*.
+
+Y las dos listas se cruzan en contenido: *hablar mal de jefes anteriores* esta en
+las dos, y *culpar a otros de los fracasos* esta en las dos, alli como *pasar la
+pelota* y *poner excusas*.
+
+**MI ADJUDICACION: `FRONTERA DECLARADA`.** Un libro dice explorar, el otro dice
+rechazar, y **ninguno de los dos es un error del otro**. Esto es doctrina que hay
+que escribir por los dos lados, no fundir. **Si alguien funde estos dos, la casa
+pierde la contradiccion mas util que han producido tres libros.**
+
+### 4. `buscar_recomendaciones_confianza` contra tres nodos de `smart_who` a la vez
+
+Es el candidato con mas solape del lote: toca `pedir_referencias_empleados` (L133,
+la varita magica al equipo propio), `pedir_referencias_red_personal` (L137, la
+conexion comun de confianza) y `conducir_llamadas_referencia` (L135 a L139, la
+comprobacion de referencias).
+
+**MI ADJUDICACION: `SANO` con tres aristas declaradas.** Lo que queda fuera del
+solape es procedimiento en los dos lados: alli, el sistema con prima por referencia
+y las siete llamadas con su codigo; aqui, **los dos correctivos al evaluar**,
+descontar la opinion negativa que no sea reciente (L139) y vigilar que la red propia
+no estreche el grupo de candidatos (L141), que ninguno de los tres tiene.
+
+> **Y MI RESERVA, QUE DECLARO PORQUE ES MIA: este es el candidato del lote que mas
+> cerca esta de ser DOS nodos**, abastecer por recomendacion y evaluar referencias.
+> Lo dejo en uno porque el libro lo escribe bajo una sola doctrina en una sola
+> seccion, pero **si el extractor lo partio, su lectura tambien se sostiene y lo
+> dire asi.**
+
+### 5. `involucrar_varios_entrevistadores` contra `asignar_entrevistas_enfocadas_equipo`
+
+Cinco pasos frente a seis, y los dos dicen *reparte la entrevista entre varios que
+pregunten cosas distintas*.
+
+**MI ADJUDICACION: `SANO`.** Fuera del solape, el candidato trae **el registro
+independiente antes de la puesta en comun, con su razon nombrada por el libro, el
+pensamiento de grupo** (L147), que el nodo que vive no tiene en ninguno de sus seis
+pasos; y el que vive trae el reparto por resultados y competencias de la tarjeta y
+la caja de cuarenta y cinco a sesenta minutos. **Procedimiento en los dos lados.**
+
+### 6. `pedir_opinion_propia_reunion` contra `pedir_opinion_otros_mejorar`
+
+**`CONTINUA`.** El hijo estrecha el objeto a *tu propia reunion* y trae la pregunta
+literal (L263). La arista cita el paso de la madre que manda pedir opinion a todo el
+mundo todo el tiempo.
+
+### 7. `decir_normas_participacion_voz_alta` (`cap_07`) contra `facilitar_gente_diga_verdad` (`cap_10`)
+
+**Intra lote, y los dos son del mismo libro.** Los dos dicen *di en voz alta que
+quieres que te contradigan*.
+
+**MI ADJUDICACION: `SANO`, hermanos.** El del `cap_07` esta acotado a una reunion y
+su procedimiento es **un parlamento troceado en tres frases** (L227); el del
+`cap_10` esta acotado al **desnivel de autoridad** y su procedimiento son **cuatro
+contramedidas** (L61), de las que solo una es decir la norma. Solapan en una de las
+cuatro, no en las cuatro.
+
+### 8 a 16, los que marco sin desarrollar porque los resolvi rapido
+
+| # | par | mi clase |
+|---:|---|---|
+| 8 | `cultivar_relacion_talento_largo_plazo` contra `reservar_media_hora_semanal_talento` | SANO. Alli, media hora fija los lunes con guion de llamada; aqui, congresos, reputacion del equipo y que decir a quien te dijo que no |
+| 9 | `calcular_embudo_reclutamiento_propio` contra `ejecutar_embudo_reclutamiento_escala` | SANO, hermanos. Uno produce **la ecuacion** (L217), el otro **el reparto entre directivos y semanas mas el programa de formacion** (L241) |
+| 10 | `preguntar_contratar_unica_prioridad` frente a `D.27` | ENTRA, en el filo. Lo salva que la pregunta trae el acto que la ejecuta, mirar el calendario propio contra ella, y que el libro escribe el antes y el despues (L225 a L229) |
+| 11 | `definir_quien_responde_cada_cosa` contra `fijar_proceso_trabajo_equipo` | **CONTINUA.** El paso 2 de la madre es *"Contesta quien debe hacer que y para cuando"*: **una linea. El hijo la ejecuta en nueve pasos, con dos frases literales** (L113). Arista obligada, citando ese paso 2 |
+| 12 | `ligar_tareas_proposito_organizacion` contra `alinear_equipo_proposito_comun` | **CONTINUA.** Lo que añade el hijo y la madre no tiene: **el aviso de no confundir el proposito con el indicador que lo mide**, con su ejemplo numerico y su consecuencia observable (L245 a L247) |
+| 13 | `alinear_prioridades_reporte_directivo` contra `revisar_proposito_personas_proceso` | **CONTINUA, y la que mas me hizo dudar de las tres.** Los tres cubos, proposito, personas y proceso, son **los mismos tres**. Lo que lo salva de `REPITE`: alli los tres cubos ordenan **tu propio trabajo de directivo**; aqui son **la agenda de alineamiento con un reporte que ya es directivo**, con su segunda capa de preguntas escrita por el libro (L137, L143, L145). Arista obligada |
+| 14 | `decidir_directivo_no_encaja_papel` contra `mover_rapido_persona_papel_equivocado` y `elegir_recolocar_despedir_persona` | **CONTINUA, y el de mayor riesgo de `REPITE` del lote entero.** Lo que añade: **el objeto es un DIRECTIVO** y no un contribuidor; **el patron del equipo que crecio mas que su jefe sin que nadie hiciera nada mal** (L155 a L157); y **la pregunta del puesto abierto** (L165), que no es la misma que la del nodo que vive, *"recomendaria yo que otro equipo la contratara"*. **Dos preguntas parecidas del mismo libro en capitulos distintos: se declaran las dos, no se funden** |
+| 15 | `reemplazarse_trabajo_propio` contra `planificar_reduccion_trabajo_individual` | SANO. Alli el disparador tiene numero, cuatro o cinco personas, y el objeto es trabajo de contribuidor individual; aqui la regla es continua y el objeto es **cualquier** trozo del trabajo, con la regla de la interseccion (L189) |
+| 16 | `reemplazarse_trabajo_propio` contra `reservar_valor_unico_prioridades_arriba` | **Intra lote, y mi mayor duda de frontera del `cap_10`.** Son **las dos mitades de la misma regla** de L189: una dice que se entrega, la otra que se guarda. Los dejo **hermanos con arista** porque los entregables son opuestos y el segundo trae tres patrones propios con nombre (L205, L209, L211), pero **acepto de antemano que un solo nodo tambien se sostiene**, y si el extractor lo hizo asi no lo llamo caida |
+
+---
+
+## 6. LO QUE SE ME QUEDA ABIERTO Y VERIFICO EN MI TURNO NORMAL
+
+1. **Las aristas.** En mi lectura este lote pide **al menos veintiuna aristas
+   declaradas por lectura**: las cinco de la cabeza de reuniones, la de las notas
+   adhesivas, las cuatro de la cabeza del reclutador, las cinco del `cap_09`, las
+   dos del `cap_10`, y las cinco `CONTINUA` contra nodos que ya viven. **Ninguna la
+   levanta una señal** (`D.19`: `paso_contra_nodo` caza el 3 por ciento de las
+   aristas declaradas). Verifico que esten declaradas, con su paso citado, y que la
+   madre entre primero.
+2. **`fijar_proceso_trabajo_equipo` paso 7 es madre de medio lote, y nadie lo ha
+   dicho todavia.** Nombra *"dirigir reuniones eficaces, blindarte contra los
+   errores del pasado, planificar el maniana y cultivar una cultura sana"*: eso
+   apunta al `cap_07` entero, a `hacer_repaso_posterior_proyecto`, a
+   `crear_plan_creible_equipo`, y al `cap_11` que todavia no se ha minado.
+   **Enumera sin contar, asi que es `D.29` y no `D.37`**, y cada arista necesita su
+   razon escrita. **Es el hueco de jerarquia mas grande que veo en el lote.**
+3. **`D.37` no se aplica ni una vez en los sesenta**, en mi lectura. Ninguna cabeza
+   de estos cuatro capitulos **dice cuantas partes tiene**: *a handful of reasons*,
+   *a few key skills*, *some things to keep in mind*, *here are some ways*. **Cero
+   cabezas pasan, y todas caen en `D.29`.** Es la misma lectura estrecha que la
+   vuelta 11 sostuvo y que el fundador ratifico el 11 sep.
+4. **El informe y su reloj.** No lo he corrido. Con la bandeja en 60 y `_insertados`
+   ya archivado, si el coste sigue creciendo eso es del instrumento y se trae
+   (decision del fundador 5.6), no se arregla.
+5. **Las cuatro guardas y la mutacion.** Se corren en mi turno: **toda guarda que el
+   reporte declare mordiendo se re corre mutando el valor esperado** (cosecha 7.C),
+   o se declara que no hay caso rojo automatico.
+6. **La muestra pineada de los SANO** (seccion 7): la semilla se escribe en el acta
+   y el sorteo se hace **despues** de tener la nomina de veredictos de la tanda, que
+   todavia no existe. **No la invento aqui.**
+
+---
+
+## 7. MI PREDICCION, SELLADA ANTES DE LEER EL REPORTE
+
+*Esto no es medida: es lo que espero, escrito para poder fallar por escrito.*
+
+| espero | mi apuesta |
 |---|---|
-| `AUDITOR_FORJA.md` entero | protocolo mio |
-| `ls` de `cuarentena/`, `fuentes/`, `docs/loop/` | **NO: vi los 68 nombres de fichero, y un id dice de que va un nodo** |
-| `loop.log`, `ORDEN_DE_LOTES.md`, `git status`, `git log` | estado |
-| **`ultimo_extractor.json`** | **NO, y es la caida de 0.1** |
-| `git show --stat` de los commits de la vuelta | me dio el corte exacto: **18 ficheros nuevos en `5576c21`**, 2 modificados en `5efd637` |
-| `APERTURA_CIEGA.md` de la vuelta 10, por `git show HEAD:` | **sede mia**, la abri por el formato y por mi propia vara de `D.30` |
-| **`cuarentena/zhuo_manager/listar_fuerzas_propias_cuatro_preguntas.json` entero** | **NO, Y ES LA UNICA DEL LOTE: la abri de muestra para aprender el esquema ANTES de leer el capitulo** |
-| **`cap_06.md` entero, de `L1` a `L477`** | **aqui escribi el inventario de la seccion 3** |
-| solo DESPUES, los 18 candidatos con sus 162 pasos | |
-| `dataset/nodos.jsonl`, los 52 ids, y tres candidatos viejos de la bandeja | estado, para los cruces de la seccion 5 |
-
-**`listar_fuerzas_propias_cuatro_preguntas` esta contaminado y no lo cuento como lectura
-independiente.** `L75` a `L93` habria dado nodo en mi inventario de todas formas, porque el
-libro declara ahi su propio inventario (*ask yourself the following questions*), **pero eso lo
-digo yo despues de haberlo visto, y una razon dada despues no vale lo que una dada antes.**
+| frontera del extractor | **igual a la mia, pieza a pieza** |
+| sus puentes por capitulo | **entre 0 y 3 en todo el lote**, y que incluya alguno que yo no vi |
+| coincidencia en el puente que yo nombro | **baja**: es comentario de casa dentro de un paso, y desde dentro no se ve |
+| sus discutibles marcados | **`rechazar_conducta_toxica_entrevista` y `mostrar_candidato_cuanto_quieres` casi seguro**; los `CONTINUA` del `cap_09` y del `cap_10` contra nodos de vueltas anteriores, **menos seguro**, porque piden acordarse del grafo y no del libro |
+| donde creo que puedo estar yo equivocado | en llamar `CONTINUA` a `alinear_prioridades_reporte_directivo`. Los tres cubos repetidos **tambien admiten leerse como hermanos**, y si el extractor lo argumenta leyendo los pasos, **su lectura vence a la mia si yo publico metadato y el publica lectura** (`P.17`) |
 
 ---
 
-## 1. MI CRITERIO, ESCRITO ANTES DE CLASIFICAR Y NO DESPUES
-
-**a. Para PIEZA CON NODO O SIN NODO.** Manual seccion 4 y la vara de `AUDITOR_FORJA.md` 6.1.
-Una pieza saca nodo propio si trae **disparador propio, acto propio y entregable propio**.
-`P.5.1`: **nombrar no es procedimentar.** Una cabeza de serie solo vale como nodo si trae
-doctrina suya ademas de los nombres de sus hijos. **Y una advertencia es linea:** una postura
-no ejecuta una busqueda.
-
-**b. Para CONTINUA O REPITE.** Con direccion y sin bascula: se pregunta **que aniade el hijo a
-la madre**, y decide **si lo que queda fuera es procedimiento en los dos lados**, no el tamanio
-del solape. **La arista no exculpa**, y su ausencia tampoco condena: en `MODO_INSERCION=cuarentena`
-los candidatos no las traen escritas (`D.26`).
-
-**c. Para TRANSCRIPCION O PUENTE (`D.30`), y la fijo ANTES de contar**, con la misma vara que
-publique en la apertura de la vuelta 10, **sin estrecharla y sin ensancharla**:
-
-> **ES PUENTE** un paso que manda algo que el libro **no manda en sentido**, y en particular el
-> paso en imperativo levantado sobre **narracion en primera persona del pasado** o sobre **una
-> cita de un tercero que cuenta y no ordena**.
->
-> **ES TRANSCRIPCION** el cambio de modo verbal sobre un consejo que el libro ya dirige al
-> lector en segunda persona, aunque venga en condicional o en enunciado.
-
-**Y AQUI ANIADO LA PREGUNTA QUE ESTE TRAMO OBLIGA A HACERSE, porque el tramo es casi todo eso:**
-que hacer con un paso cuyo verbo de cabeza es **`Ten delante`, `Cuenta con`, `Ten claro`,
-`Parte de`, `Mira`, `Fijate`, `Usalo`**, seguido de contenido fiel y **con la atribucion
-escrita dentro**. No lo resuelvo inventando doctrina. **Lo mido en tres bandas separadas
-(seccion 8) y digo cual es cual**, porque de cual se elija sale el volumen del lote 4.
-
----
-
-## 2. LO QUE MEDI YO, CON SU COMANDO AL LADO
-
-    $ awk 'NR>7' fuentes/zhuo_manager/cap_06.md | wc -w        9617
-    $ wc -l < fuentes/zhuo_manager/cap_06.md                    477
-
-**LOS DOS BORDES, comprobados por mi hoy:**
-
-| borde | lo que leo |
-|---|---|
-| `cap_06.md` cabecera | `unidad: Cap. 5`, `titulo_textual: Managing Yourself`, `L9: Chapter Five` |
-| `cap_06.md` ultima con texto | **`L477` de 477**, cierre de capitulo: *no masks or pretenses needed* |
-| `cap_07.md` cabecera | `unidad: Cap. 6`, `titulo_textual: Amazing Meetings`. **Abre unidad nueva: el borde esta limpio por los dos lados** |
-
-**PASOS Y CANDIDATOS, contados por mi sobre los ficheros de cuarentena** (seccion 8.3.1: la
-cifra la cuento yo, no la copio):
-
-| unidad | fichero | palabras | candidatos | pasos escritos | candidatos por mil palabras |
-|---|---|---:|---:|---:|---:|
-| **Cap. 5** | `cap_06.md` | **9.617** | **18** | **162** | **1,87** |
-
-**Es un capitulo, asi que la fila de la seccion 8.2 y el total del lote de esta vuelta son la
-misma cifra, y lo digo para que no parezca que oculto un desglose.**
-
-**Y LA COMPROBACION QUE SALE CERO SE ESCRIBE CERO:**
-
-    $ bandeja zhuo_manager: 68 ficheros, 68 ids unicos, 68 de 68 con id igual al nombre de fichero
-    $ dataset/nodos.jsonl: 52 nodos. Choques bandeja contra dataset: 0
-    $ los 18 del tramo: 18 de 18 con nodos_previos vacio y nodos_siguientes vacio, correcto en D.26
-    $ los 18 del tramo: 18 de 18 con fuente unica zhuo_manager, fecha 2026-09-11
-
----
-
-## 3. MI INVENTARIO DEL Cap. 5, `cap_06.md`, PIEZA A PIEZA
-
-**Escrito leyendo el fichero entero de un tiron, con la bandeja cerrada.**
-
-| # | pieza | lineas | mi lectura a ciegas |
-|---:|---|---|---|
-| 1 | Los rotulos AVOID y ASPIRE | `L13` a `L15` | **SIN NODO.** Son el arte del capitulo, no texto |
-| 2 | La escena de Stacy y el informe de veinte paginas | `L17` a `L35` | **SIN NODO.** Narracion en primera persona del pasado de cabo a rabo. No manda nada, y lo que ensenia ya es el hijo que viene despues |
-| 3 | La tesis del capitulo | `L37` | **ES UNA LINEA, NO UNA PIEZA, y es la unica que ordena algo en toda la apertura.** *No matter what obstacles you face, you first need to get deep with knowing you*, y nombra cinco objetos. **Nombrar no es procedimentar: los cinco objetos son el indice del capitulo** |
-| 4 | EVERYBODY FEELS LIKE AN IMPOSTER SOMETIMES | `L39` a `L61` | **SIN NODO, y es la ausencia mas gorda del tramo.** Seccion titulada por el libro, con la cita de Linda Hill, **las dos razones por las que pega fuerte al directivo** (`L51` y `L55`) y `L57`: *Management isn't an innate skill*. **Es doctrina, no es procedimiento**, y por eso acepto que no saque nodo. **Pero define el termino que seis nodos del lote usan sin definir** |
-| 5 | La receta, la nevera y los lideres de molde distinto | `L65` a `L73` | **SIN NODO.** Metafora y galeria de ejemplos. Correcto dejarla fuera |
-| 6 | Conocer tus fuerzas, con cuatro preguntas | `L75` a `L93` | **NODO.** `L75` declara su propio inventario: *jot down the first thing that comes to mind when you ask yourself the following questions* |
-| 7 | Conocer tus debilidades y disparadores, con cuatro preguntas | `L95` a `L113` | **NODO APARTE.** El libro lo ata por la sede (`L95`: *Right beneath your list of strengths*) y le da inventario propio y distinto |
-| 8 | La calibracion y las tres tacticas | `L115` a `L139` | **NODO.** Tres tacticas con destinatario distinto cada una, el guion del correo literal en `L129` y tres peticiones concretas en `L133` a `L137` |
-| 9 | Pedir opinion cuesta, y las dos mentalidades de Dweck | `L141` a `L187` | **NODO.** `L149` declara el inventario (*Observe the difference*) y los cuatro escenarios traen sus dos lecturas escritas |
-| 10 | Tu mejor entorno, tus habitos y las tres preguntas | `L191` a `L231` | **NODO.** `L225` declara el inventario (*ask yourself the following*) |
-| 11 | Los disparadores y las cuatro preguntas | `L233` a `L257` | **NODO.** `L233` trae el criterio que separa disparador de reaccion normal, y `L247` declara el inventario |
-| 12 | El Pozo, y su escena | `L259` a `L269` | **SIN NODO.** Define el termino y cuenta el caso del colega. **Misma especie que la pieza 4: define lo que seis nodos usan** |
-| 13 | Don't Beat Yourself Up for Feeling Bad | `L271` a `L277` | **NODO.** Subtitulo del libro, dos tacticas numeradas por el propio libro |
-| 14 | The Story I Have in My Head Is Probably Irrational | `L279` a `L301` | **NODO.** Trae dato propio: las tres respuestas de `L289` a `L293` y la excepcion de `L295` |
-| 15 | Close Your Eyes and Visualize | `L303` a `L323` | **NODO.** Cinco ejercicios con guion, `L311` declara el inventario |
-| 16 | Ask for Help from People You Can Be Real With | `L325` a `L335` | **NODO.** `L335` trae los cuatro sitios y los dos usos |
-| 17 | Celebrate the Little Wins | `L337` a `L347` | **NODO.** El diario y sus tres ejemplos de entrada |
-| 18 | Practice Self-Care by Establishing Boundaries | `L349` a `L357` | **NODO.** `L353` manda con verbo propio (*Resist this*, *Set boundaries by carving out time*) |
-| 19 | El doble de bueno, con su escena del escenario | `L359` a `L373` | **SIN NODO, Y ES LA SEGUNDA AUSENCIA QUE DISCUTO.** `L373` es la cabeza declarada de las cinco vias: *set a lofty goal for yourself: How can I be twice as good? Then maximize your learning through the following* |
-| 20 | Ask for Feedback | `L375` a `L381` | **NODO.** Primera via |
-| 21 | Treat Your Manager as a Coach | `L383` a `L397` | **NODO.** Segunda via, con tres movimientos y sus frases literales |
-| 22 | Make a Mentor Out of Everyone | `L399` a `L411` | **NODO.** Tercera via, con el guion de `L409` |
-| 23 | Set Aside Time to Reflect and Set Goals | `L413` a `L451` | **NODO.** Cuarta via, la unica con cadencia fija |
-| 24 | Take Advantage of Formal Training | `L453` a `L467` | **NODO.** Quinta via, con la cuenta del retorno de `L459` |
-| 25 | El cierre del capitulo | `L469` a `L477` | **SIN NODO.** Correcto |
-
-**MI CUENTA DE PIEZAS: 25 piezas, 18 con nodo y 7 sin nodo.** Y el reparto no deja hueco: las
-piezas con nodo cubren `L75` a `L467` sin solapes, y los huecos son `L13` a `L15`,
-`L17` a `L35`, `L37`, `L39` a `L73`, `L189`, `L259` a `L269`, `L359` a `L373` y `L469` a `L477`.
-
----
-
-## 4. MI CLASE PARA CADA UNO DE LOS 18 CANDIDATOS
-
-**Leidos DESPUES del capitulo. Clase, pasos contados por mi, y la linea que la sostiene.**
-
-| candidato | pasos | pieza | mi clase a ciegas |
-|---|---:|---|---|
-| `listar_fuerzas_propias_cuatro_preguntas` | 9 | 6 | **SANO.** Contaminado por 0.2, no lo alego |
-| `listar_debilidades_disparadores_propios` | 7 | 7 | **SANO, y el mas limpio del lote.** 6 de 7 pasos son el inventario del libro palabra por palabra |
-| `calibrar_vision_propia_opinion_ajena` | 11 | 8 | **SANO.** 8 de 11 pasos tienen verbo del libro (`L119` *we must confront*, `L121` *Ask your manager*, `L127` *Pick three to seven*, `L139` *Ask for task-specific feedback*) |
-| `cambiar_mentalidad_fija_crecimiento` | 11 | 9 | **SANO CON RESERVA.** Los cuatro escenarios son transcripcion limpia. **Los pasos 4 y 5 cambian el sujeto**: `L145` y `L147` hablan de ella en primera persona y el paso los pone en segunda |
-| `disenar_entorno_rendir_mejor` | 10 | 10 | **SANO.** Y lo hace bien donde es facil fallar: los doce items de `L193` a `L219` van marcados *son suyas*, no como receta |
-| `identificar_disparadores_propios_reaccion` | 14 | 11 | **SANO.** El nodo mas largo del lote y aun asi 8 de sus 14 pasos son inventario o criterio del libro |
-| `evitar_doble_impuesto_malestar` | 6 | 13 | **SANO, Y EL MEJOR DEL LOTE POR DENSIDAD.** 4 de 6 pasos llevan verbo del libro: `L275` *Recognize*, *give yourself permission*, *Don't pay the double tax* |
-| `cuestionar_historia_irracional_cabeza` | 8 | 14 | **SANO.** `L281` *Remember*, `L299` *step back and question* son del libro, y las tres respuestas de `L289` a `L293` estan con su excepcion de `L295`, que es lo que impide leerlo como consuelo |
-| `visualizar_recuperar_confianza` | 11 | 15 | **SANO.** Los cinco *Imagine* de `L313` a `L321` son del libro, y `L323` *Develop the habit* tambien |
-| `pedir_ayuda_grupo_apoyo` | 7 | 16 | **SANO CON RESERVA.** El contenido es fiel, pero **5 de sus 7 pasos son encuadre** y el mandato entero vive en `L335`. Es el nodo con peor proporcion del lote |
-| `celebrar_pequenias_victorias` | 6 | 17 | **SANO.** El paso 5 monta el diario sobre `L345`, que es primera persona del pasado, **pero `L347` lo ordena al lector** (*remember to do the same*). Se sostiene por `L347`, no por `L345` |
-| `establecer_limites_cuidado_personal` | 7 | 18 | **SANO.** `L353` *Resist this* y *Set boundaries*, `L357` *take care of yourself*, los tres del libro |
-| `pedir_opinion_otros_mejorar` | 8 | 20 | **SANO.** 6 de 8 pasos con verbo del libro, y el paso 1 conserva la remision al capitulo anterior que el libro escribe en `L377` |
-| `tratar_jefe_entrenador` | 11 | 21 | **SANO CON RESERVA.** Los tres movimientos salen de `L395` con sus frases literales. **El paso 11 levanta un imperativo sobre `L397`, que es primera persona del pasado** |
-| `convertir_cualquiera_mentor` | 10 | 22 | **SANO.** `L401` *ask for specific advice instead*, `L409` *don't be afraid to ask*, `L411` *Keep in mind* y *Thank them anyway*, los cuatro del libro |
-| `reservar_tiempo_reflexion_metas` | 11 | 23 | **DISCUTIBLE, Y ES MI UNICO PUENTE.** Ver seccion 8 |
-| `aprovechar_formacion_reglada` | 8 | 24 | **SANO.** `L455` *take it* y `L465` *the question to ask isn't... but rather* son del libro. **6 de 8 pasos son encuadre**, segunda peor proporcion |
-| `conocer_fuerzas_valores_sesgos_propios` | 7 | 2 y 3 | **DISCUTIBLE 1. Mi lectura es que esta pieza NO daba nodo.** Ver seccion 7 |
-
-**LOS DOS CORREGIDOS POR LA TAREA 1, que salen de `cap_05.md` y no de este tramo:**
-
-| candidato | que se toco | mi lectura |
-|---|---|---|
-| `mover_rapido_persona_papel_equivocado` paso 1 | reescrito | **EL REMEDIO SE SOSTIENE Y LO FIRMO.** Era el unico puente que yo encontre en la vuelta 10. La redaccion nueva devuelve lo que `L283` y `L285` dicen de verdad, y marca la narracion como narracion. **Ahora es TRANSCRIPCION** |
-| `dar_mala_noticia_decision_tomada` paso 8 | **borrado** | **EL REMEDIO CIERRA MI DISCUTIBLE Y ABRE UN AGUJERO, y lo digo aunque el discutible fuera mio.** Yo escribi que el contenido estaba bien y el sitio no. La rama elegida fue sacarlo, no moverlo, asi que **`L283` de `cap_05.md` no esta hoy en ningun nodo de la bandeja**: `grep -rl "flores fragiles" cuarentena/` y `grep -rl "guantes de seda" cuarentena/` **no devuelven nada** |
-
----
-
-## 5. LOS PARES QUE MIRE POR CONTINUA O REPITE, Y COMO LOS ADJUDICO
-
-**Ninguno es REPITE. Los cuatro CONTINUAN, y en los cuatro queda procedimiento propio a los
-dos lados, que es lo que la vara 6.1 manda mirar.**
-
-**a. `listar_debilidades_disparadores_propios` contra `identificar_disparadores_propios_reaccion`.**
-**Es el par con mas riesgo de duplicado de todo el lote, y el libro define DISPARADOR dos
-veces**: `L105` (*a situation that gets me more worked up than it should*) y `L233` (*they have
-an outsize effect on you specifically*). Los dos nodos piden listar disparadores con preguntas.
-**CONTINUA:** el hijo aniade el criterio de separacion, el uso (`L237`: cazarte y esperar cinco
-minutos), la tactica de compartirlos (`L239` a `L241`) y la ubicacion del asunto (`L245`). Lo que
-queda fuera en la madre tambien es procedimiento: la mitad de las debilidades, la pregunta del
-critico interior, la del hada, y la regla de sede de `L95`. **Piden arista, y no la traen.**
-
-**b. `calibrar_vision_propia_opinion_ajena` contra `pedir_opinion_otros_mejorar`.**
-Los dos mandan pedir opinion sobre ti, y **los dos traen la misma pregunta de seguimiento de una
-presentacion** (`L139` y `L379`). **Es el libro el que se repite**, a 240 lineas de distancia.
-**CONTINUA:** el hijo aniade las dos clases, el contraste entre la pregunta inutil y la util, y
-la regla de cierre de `L381` con su razon. La madre conserva los guiones, los destinatarios y el
-correo entero. **Procedimiento en los dos lados, luego no hay bascula que valga.**
-
-**c. `calibrar_vision_propia_opinion_ajena` paso 6 contra `tratar_jefe_entrenador` paso 8.**
-`L123` pregunta al jefe *What opportunities do you see for me to do more of what I do well?* y
-`L395` pregunta *What skills do you think I should work on in order to have more impact?*
-**Dos lineas de dos secciones del mismo capitulo con la misma peticion al mismo destinatario.**
-**CONTINUA los dos:** en `L123` la peticion es de calibracion y trae su segunda pregunta con
-escala de uno a cinco; en `L395` es de aprendizaje y trae los otros dos movimientos.
-
-**d. `disenar_entorno_rendir_mejor` paso 4 contra `reservar_tiempo_reflexion_metas` paso 5.**
-`L219` y `L421` dicen **el mismo repaso de seis meses con metas nuevas**, en dos secciones
-separadas por doscientas lineas. **Es la misma especie que el racimo del despido de mi apertura
-anterior: el libro se repite y los dos nodos lo recogen.** **CONTINUA los dos**, y **piden
-arista.**
-
-**CONTRA EL GRAFO Y CONTRA LA BANDEJA VIEJA, lo que mire y sale limpio:**
-`recoger_opinion_360_grados` (Cap. 4) recoge opinion **sobre tu persona a cargo**;
-`calibrar_vision_propia_opinion_ajena` la recoge **sobre ti**. **No es duplicado, es espejo**, y
-`L119` lo dice con sus propias palabras: *In the same way that you gather feedback for your
-reports, you can learn about yourself through the following tactics.*
-
----
-
-## 6. LAS ARISTAS QUE ESTA LECTURA RECLAMA, CON LA LINEA DEL LIBRO QUE LAS NOMBRA
-
-**No las encargo aqui: las dejo escritas como lectura, porque las aristas viven en el reporte y
-el reporte no lo he visto.** Las cuatro estan nombradas por el propio libro, que es lo que las
-hace citables sin doctrina nueva:
-
-| de | a | la linea que la nombra |
-|---|---|---|
-| `pedir_opinion_otros_mejorar` | los nodos de opinion del Cap. 4 | `L377`: *After an entire chapter on the importance of giving feedback to your reports* |
-| `calibrar_vision_propia_opinion_ajena` | `recoger_opinion_360_grados` | `L119`: *In the same way that you gather feedback for your reports* |
-| `listar_debilidades_disparadores_propios` | `identificar_disparadores_propios_reaccion` | `L233`: *The flip side of the coin*, que remite a la pieza anterior |
-| `listar_fuerzas_propias_cuatro_preguntas` | `listar_debilidades_disparadores_propios` | `L95`: *Right beneath your list of strengths* |
-
-**Y UNA ASIMETRIA QUE NOMBRO PORQUE ES DEL EXTRACTOR Y NO DEL LIBRO:** el paso 1 de
-`pedir_opinion_otros_mejorar` **conserva** la remision de `L377`; el paso 4 de
-`calibrar_vision_propia_opinion_ajena` **deja caer** la de `L119`, que es la misma especie de
-frase. **Dos remisiones del libro y solo una escrita.**
-
----
-
-## 7. LOS DISCUTIBLES QUE YO MARCO
-
-*Los marco antes de ver el reporte, que es lo unico que hace informativa a la metrica
-(`AUDITOR_FORJA.md` 5.1). **El 1 va marcado CONTAMINADO por 0.1** y por tanto no cuenta como
-coincidencia si el extractor marco el mismo.*
-
-### DISCUTIBLE 1 (CONTAMINADO). `conocer_fuerzas_valores_sesgos_propios`: siete pasos sobre una sola linea
-
-**Mi lectura a ciegas es que esta pieza NO daba nodo**, y la sostengo asi:
-
-> De sus siete pasos, **solo el paso 2 recoge algo que el libro ordena**, y sale de `L37`:
-> *you first need to get deep with knowing you: your strengths, your values, your comfort
-> zones, your blind spots, and your biases.* **Los pasos 4, 5, 6 y 7 no ordenan nada**: son
-> `L17` a `L35` contados, y son narracion en primera persona del pasado de la que el propio
-> nodo dice *el caso es suyo y no tuyo*. **Los pasos 1 y 3 son la misma linea `L37` partida.**
-
-**Y la vara tiene un nombre exacto para esto: `P.5.1`, NOMBRAR NO ES PROCEDIMENTAR.** Los cinco
-objetos que `L37` nombra **son el indice del capitulo**: fuerzas va a `listar_fuerzas_propias`,
-debilidades y sesgos a `listar_debilidades_disparadores`, puntos ciegos a
-`calibrar_vision_propia`, zonas de confort a `disenar_entorno_rendir_mejor`. **Una cabeza de
-serie solo vale si trae doctrina suya ademas de los nombres de sus hijos**, y la unica doctrina
-que aqui queda, pedirle a alguien de fuera que entreviste a tus cercanos, **ya es su propio hijo
-`calibrar_vision_propia_opinion_ajena`, que lo trae con guion y con destinatarios.**
-
-**Lo que pesa en contra de mi propia lectura, y lo escribo yo:** `L37` es la unica linea de
-apertura del capitulo que ordena con *you first need to*, y dejarla sin nodo la perderia
-entera. **Si la casa decide que si es nodo, entonces el remedio no es el nodo de siete pasos:
-es un nodo de dos.**
-
-### DISCUTIBLE 2. `L39` a `L61` y `L259` a `L269`: seis nodos usan dos terminos que ningun nodo define
-
-**`sindrome del impostor` aparece en `cambiar_mentalidad_fija_crecimiento` y en
-`cuestionar_historia_irracional_cabeza`. `el Pozo` aparece en SEIS candidatos.** Y las dos
-piezas que los definen no tienen nodo:
-
-    $ grep -ril "impostor" cuarentena/zhuo_manager/      2 ficheros
-    $ grep -ril "Pozo" cuarentena/zhuo_manager/          7 ficheros
-    $ grep -ril "Linda Hill" cuarentena/zhuo_manager/    ninguno
-
-**Acepto que ninguna de las dos piezas es procedimiento**, y por eso NO digo que falte un nodo.
-**Lo que digo es que un nodo que arranca su condicion de activacion con *Cuando estas en el
-Pozo* esta apoyandose en un termino que el grafo no contiene**, y eso en un grafo que se lee
-por nodo suelto es una dependencia invisible. **Es material de `D.29`, y lo dejo nombrado sin
-cifra**, no como encargo.
-
-### DISCUTIBLE 3. `pedir_ayuda_grupo_apoyo`: cinco pasos de encuadre y dos de mandato
-
-**El contenido es fiel de principio a fin y no discuto ni una linea de traduccion.** Discuto la
-proporcion: los pasos 1 a 5 son `L327` a `L333`, que es el error que ella cometio, la razon, el
-dato del ochenta y dos por ciento y el circulo de Lean In. **Todo el mandato del nodo vive en
-`L335`**, y lo recogen los pasos 6 y 7. **Un nodo cuyo entregable cabe en dos pasos y trae cinco
-de contexto no esta mal escrito, pero esta mal repartido**, y es el sitio donde la banda ancha
-de la seccion 8 muerde mas fuerte.
-
-### DISCUTIBLE 4. El paso 8 borrado de `dar_mala_noticia_decision_tomada`, que es consecuencia de un discutible MIO
-
-Lo escribo aqui y no solo en la seccion 4 porque **es mi propio discutible de la vuelta 10 el
-que produjo este agujero**, y la seccion 5.3 me obliga a declarar mis errores con mi nombre
-igual que los ajenos. Yo dije *el contenido bien, el sitio no*. **La rama elegida saco la linea
-sin darle sitio nuevo, asi que `L283` de `cap_05.md` no esta hoy en ningun candidato.** Un
-discutible que quita texto del libro y no lo recoloca **no es un discutible resuelto: es una
-perdida de catalogo con mi firma detras.**
-
----
-
-## 8. MI CUENTA DE `PASOS INVENTADOS POR CAPITULO`, EN TRES BANDAS
-
-**Lei los 162 pasos contra su parrafo.** Y este tramo obliga a publicar bandas porque **casi la
-mitad de sus pasos abren con un verbo de encuadre que el libro no escribe**:
-
-    $ pasos totales del Cap. 5                                          162
-    $ pasos que ABREN con marca de encuadre del extractor, mecanico      78   48,1 por ciento
-        Ten delante 22 | Cuenta con 17 | Ten claro 9 | El libro 5 | Parte de 5
-        Ten presente 4 | Usalo 4 | Mira 3 | Contrasta 2 | otros 7
-
-| banda | que cuenta | Cap. 5 | tasa | contaminada? |
-|---|---|---:|---:|---|
-| **ESTRECHA**, mi vara de 1.c sin tocar | imperativo levantado sobre narracion en primera persona del pasado | **1** de 162 | **0,62 por ciento** | **no** |
-| **MEDIA**, la estrecha mas los fronterizos del cambio de sujeto | lo anterior mas los pasos que ponen en segunda persona lo que el libro dice en primera | **9** de 162 | **5,56 por ciento** | **no** |
-| **ANCHA**, todo verbo de encuadre que el libro no escribe | los 78 mecanicos menos 1 que si esta en el libro (`L411` *Keep in mind*) | **77** de 162 | **47,5 por ciento** | **SI, por 0.1** |
-
-**EL UNICO PUENTE DE LA BANDA ESTRECHA, con su cita:**
-
-> **`reservar_tiempo_reflexion_metas`, paso 8.** Ordena *Al final de cada seis meses, saca tus
-> metas y evalua como lo hiciste.* **`L447` no ordena eso: lo cuenta en primera persona del
-> futuro habitual**: *At the end of every six months, I'll pull up my goals and evaluate how I
-> did.* Y la pieza entera de `L447` a `L449` esta en primera persona: *The important thing isn't
-> the grade but what I learned. If I didn't succeed... why was that?*
->
-> **Es la misma especie que el puente que encontre en la vuelta 10** y que la TAREA 1 de esta
-> vuelta corrigio: imperativo levantado sobre narracion propia de la autora. **A favor del
-> extractor, y lo escribo: el titulo de la pieza es imperativo del libro (`L413`, *Set Aside
-> Time to Reflect and Set Goals*) y `L373` manda *maximize your learning through the following*.
-> La seccion es prescriptiva en su cabeza. Lo que no es prescriptivo es el como de `L447`.**
-
-**LOS OCHO FRONTERIZOS DE LA BANDA MEDIA, que es donde cambian de sujeto sin cambiar de modo:**
-
-| paso | linea | que hace |
-|---|---|---|
-| `cambiar_mentalidad` 4 y 5 | `L145`, `L147` | *If I saw every challenge...* pasa a *Si ves cada reto...* |
-| `reservar_tiempo` 9 y 10 | `L447`, `L449` | sus preguntas de balance pasan a preguntas del lector |
-| `tratar_jefe_entrenador` 11 | `L397` | *When I started to see 1:1s...* pasa a *saca mas partido de las reuniones a solas* |
-| `establecer_limites` 5 | `L355` | *one exercise I turn to* pasa a *Usa el ejercicio* |
-| `celebrar_pequenias_victorias` 5 | `L345` | *I started a journal* pasa a *Monta un diario*. **Se salva por `L347`** |
-| `convertir_cualquiera_mentor` 7 | `L407` | enunciado que pasa a prohibicion |
-
-**Y AHORA LO QUE LA SECCION 8.3 ME OBLIGA A DECIR:**
-
-> **LA ELECCION DE BANDA DECIDE EL VOLUMEN DEL LOTE 4, Y NO ES UN DETALLE DE REDACCION.** La
-> linea base es el 36 por ciento. **Con la banda estrecha (0,62) o la media (5,56), el lote 4
-> corre a un capitulo mas por vuelta. Con la ancha (47,5), el techo vuelve a UNO.** El mismo
-> tramo, los mismos 162 pasos, y dos volumenes opuestos.
->
-> **Mi banda media cae en 5,56, que es exactamente un valor de la serie reciente** (3,09 / 5,00
-> / 5,56 / 3,80 / 5,26). **Eso me dice que la banda media es la que reproduce la serie
-> historica**, y que mi banda estrecha de la vuelta 10 (0,43) ya iba baja por la misma razon.
->
-> **NO FIRMO NINGUNA DE LAS TRES COMO LA CIFRA DEL ACTA, y en la ancha ni siquiera la alego**,
-> porque `ultimo_extractor.json` me dijo su numero antes de que yo contara el mio. La seccion
-> 8.3 dice: **si no puedes verificarla, lo dices y no la publicas como tuya.** Lo digo.
-
-**Y LO QUE NO ES DUDA, SINO MEDIDA LIMPIA:** este tramo **cambia de estilo** respecto a los
-anteriores. 78 pasos de 162 abriendo con un aparato de atribucion es una mano distinta de la
-que escribio los 231 pasos del tramo anterior. **Eso es un hecho contable, no una opinion**, y
-es lo que hay que reconciliar en el turno normal.
-
----
-
-## 9. LO QUE ESTA LECTURA ENCUENTRA Y NO ES UN DISCUTIBLE
-
-**El lote entero es hijo de una sola linea, y esa linea es la que yo discuto en la seccion 7.**
-`L37` nombra cinco objetos y el capitulo escribe un nodo por cada uno:
-
-    fuerzas          ->  listar_fuerzas_propias_cuatro_preguntas
-    valores          ->  (el capitulo no vuelve sobre ellos: es el unico de los cinco sin hijo)
-    zonas de confort ->  disenar_entorno_rendir_mejor
-    puntos ciegos    ->  calibrar_vision_propia_opinion_ajena
-    sesgos           ->  listar_debilidades_disparadores_propios e identificar_disparadores
-
-**Cuatro de los cinco objetos tienen hijo y uno no.** Lo dejo escrito como lectura, no como
-encargo: **es material de `D.29`, y la comprobacion de `D.37` hay que correrla abriendo el paso
-de la madre, que es justo el nodo que yo discuto.**
-
----
-
-## 10. LO QUE NO HE HECHO EN ESTA FASE, DICHO PARA QUE NO SE ME CUENTE COMO HECHO
-
-- **No he corrido `forja.py`, ni el gate, ni las pruebas de aceptacion.** Esta fase es lectura.
-  Van en el turno normal, y **ninguna cifra de aduana la cito hasta recomputarla.**
-- **No he verificado las aristas del tramo**, porque los candidatos no las traen escritas
-  (18 de 18 con `nodos_previos` y `nodos_siguientes` vacios) y viven en el reporte, que no he
-  visto.
-- **No he abierto `docs/loop/REPORTE.md` ni lo he recuperado de git.** **Si abri
-  `ultimo_extractor.json`, y esta declarado en 0.1 como caida propia con su alcance exacto.**
-- **No he tocado ningun candidato ni ningun fichero de `fuentes/`.**
-- **No he contado veredictos ni sanos**, porque `MODO_INSERCION=cuarentena` y este lote no ha
-  pasado por la aduana con veredicto escrito. **Las clases de la seccion 4 son MI lectura, no
-  veredictos del sistema.**
-- **No he adjudicado nada.** Una apertura ciega sin su comparacion no adjudica y no mueve
-  credito de nadie.
-
-**Y ESTE FICHERO NO SE VUELVE A TOCAR.** Lo sella el arnes, y el sello se verifica al terminar
-mi turno (`D.34`).
+**Sesenta candidatos leidos, 497 pasos contados, cuatro capitulos leidos enteros,
+un puente nombrado, dieciseis discutibles marcados, cero `REPITE`, y cero ficheros
+retirados recuperados.**
+
+*Fin de la apertura ciega. El arnes sella este fichero, y despues de sellado no lo
+toco.*
