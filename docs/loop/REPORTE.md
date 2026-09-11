@@ -17387,3 +17387,260 @@ miembros detras**, que es lo que produjo las dos lecturas en la fila del lote 3.
 > **SI EL AUDITOR LEE QUE ESTO ES ALCANCE QUE NO ME TOCABA, la correccion es borrar una
 > celda y no cuesta nada.** Lo que si costaria es que la tabla dijera que el lote 4 no ha
 > empezado cuando tiene dos candidatos en su bandeja y un commit con su nombre.
+
+---
+---
+
+# VUELTA 15, lote 3 (`zhuo_manager`) DENTRO, los cinco pasos que faltan, y el lote 4 (`scott_radical_candor`)
+
+*Esqueleto abierto **ANTES de la primera tarea** (`EXTRACTOR.md` 3). Las filas se anexan
+al cerrarse cada tarea, no al final. **Si esta vuelta se corta, lo que este escrito hasta
+ese punto es lo que se hizo.***
+
+**LA VUELTA QUE ESTRENA `D.39`: la insercion de un lote cerrado ya no se pide, se hace.**
+
+## J.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Estas cifras se midieron con el arbol en el commit de arranque de esta vuelta, ANTES de
+tocar nada. Todo lo que venga despues es estado intermedio y se cita como tal.**
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git log -1 --format='%H %ad %s' --date=iso
+    196d11ebfca57a60380056e279966876d876038e 2026-09-11 ... Arranque de la vuelta 15: bitacora del bucle y sello del extractor anterior, commiteados antes de tocar nada
+
+    $ wc -l dataset/nodos.jsonl              ->  135
+    $ wc -l bitacora/VEREDICTOS.jsonl        ->  100
+    $ wc -l config/pares_mutuos.jsonl        ->    1
+
+    $ python -c "recorre carpeta y cuenta ficheros y pasos_accionables"
+    cuarentena/zhuo_manager                         :   68 ficheros,   554 pasos
+    cuarentena/_insertados/zhuo_manager             :   68 ficheros,   553 pasos
+    cuarentena/scott_radical_candor                 :    2 ficheros,    16 pasos
+
+    $ python forja.py gate        ->  GATE VERDE. nodos verificados: 135
+    $ python forja.py guiones     ->  BARRIDO DE GUIONES VERDE
+    $ python tests/test_aceptacion.py  ->  total: 75 pruebas, 0 fallos, 0 errores
+
+**LAS TRES GUARDAS EN VERDE AL ABRIR.** El commit de arranque se hizo antes de tocar nada
+(`EXTRACTOR.md` 1.1) y lleva dentro `docs/loop/loop.log` y `docs/loop/ultimo_extractor.json`,
+que es lo unico que estaba sin commitear.
+
+## J.1. LAS TAREAS ENCARGADAS, Y SU ESTADO
+
+| # | tarea | estado |
+|---:|---|---|
+| **0** | **BLOQUEANTE**: localizar los cinco pasos que faltan (1.112 firmados contra 1.107 medidos) | **CERRADA en `J.2`. Los cinco localizados: dos podas con motivo escrito (`6ee153f` menos 4, `5efd637` menos 1). Nada que restaurar. El lote 3 queda desbloqueado** |
+| **1** | insertar el lote 3, `zhuo_manager`, 68 candidatos, uno por vez, con `D.36` y `D.37` | (se anexa al cerrarse) |
+| **2** | la bitacora al dia: los 26 veredictos que viven solo en `REPORTE.md` | (se anexa al cerrarse) |
+| **3** | el lote 4, `scott_radical_candor`, `cap_04` a `cap_07` | (se anexa al cerrarse) |
+
+**Son CUATRO tareas y el tope son cinco** (`EXTRACTOR.md` 1.3): **no hay cola por tope.**
+
+
+---
+
+# J.2. TAREA 0, BLOQUEANTE: **LOS CINCO PASOS ESTAN LOCALIZADOS, Y SON DOS PODAS CON MOTIVO ESCRITO**
+
+*Es la via que el extractor de la vuelta 14 dejo escrita en su `I.2.c` y que el auditor
+declaro no haber corrido (ACTA 13 seccion 4.4: **"no afirmo lo que daria, porque no la he
+corrido"**). **La corro hoy y da resultado entero: los cinco aparecen, y ninguno hace falta
+restaurarlo.***
+
+## J.2.a. LA CIFRA **ANTES**, con su instrumento al lado
+
+    $ python -c "recorre las dos carpetas del lote 3 y cuenta ficheros y pasos_accionables"
+    cuarentena/zhuo_manager                         :   68 ficheros,   554 pasos
+    cuarentena/_insertados/zhuo_manager             :   68 ficheros,   553 pasos
+
+    firmado por las actas 9 a 13 (1.102 de las doce filas mas 7 mas 3 de la cola) : 1.112
+    medido hoy en los ficheros                                                   : 1.107
+    hueco                                                                        :     5
+    y el hueco vive entero en la mitad ARCHIVADA                                 : 558 contra 553
+
+## J.2.b. EL BARRIDO, Y ES DE FICHERO EN FICHERO Y NO DE OJO
+
+**Lo que la via del encargo pedia era un `git log -p` sobre `cuarentena/zhuo_manager/`
+anterior a `3ad8998`. Lo hago con la cuenta de pasos delante en vez de leyendo el parche,
+porque lo que se busca es una CIFRA que cambia, y un parche no la dice.**
+
+    $ python -c "para cada uno de los 68 archivados, recorre todos los commits que
+                 tocaron cuarentena/zhuo_manager/<id>.json y cuenta pasos_accionables
+                 en cada revision; imprime los que no son constantes"
+    dar_mala_noticia_decision_tomada.json      [('8b5c077', 8), ('5efd637', 7)]
+    transitar_aprendiz_primeros_meses.json     [('a229d78', 9), ('6ee153f', 5)]
+
+    (8 menos 7) mas (9 menos 5)  =  1 mas 4  =  5     <-  LOS CINCO, Y NO HAY MAS
+
+**Y COMPRUEBO LAS TRES COSAS QUE PODRIAN HABER ESCONDIDO UN SEXTO, en vez de suponer que
+no las hay:**
+
+    $ python -c "cuenta si algun archivado cambio de pasos AL INSERTARSE (3ad8998^ contra hoy)"
+    archivados hoy      : 68 ficheros, 553 pasos
+    mismos en 3ad8998^  :             553 pasos
+    diferencias: (ninguna)          <- la insercion NO toco ni un paso
+
+    $ python -c "mismo barrido sobre los 68 de la BANDEJA"
+    ficheros de la BANDEJA con cuenta de pasos cambiada en su historia: 0
+                                    <- la mitad de la bandeja casa al paso, 554 contra 554
+
+    $ python -c "todo fichero que haya existido alguna vez bajo cuarentena/zhuo_manager/"
+    ficheros distintos vistos en la historia : 136
+    huerfanos (ni en bandeja ni en archivados): []
+    bandeja hoy: 68   archivados hoy: 68   union: 136
+                                    <- ningun candidato del lote 3 se borro por el camino
+
+## J.2.c. LOS DOS, UNO A UNO, CON SU COMMIT Y SU MOTIVO
+
+*El encargo abre dos caminos: **podados con motivo** (se cita el commit y el motivo, y la
+cifra firmada se corrige por correccion declarada) o **perdidos sin motivo** (se restauran
+del libro y vuelven por la aduana). **Los dos que salen son del primer camino, y lo
+demuestro con el texto del commit y no con mi lectura.***
+
+### **PODA 1 de 2: `transitar_aprendiz_primeros_meses`, de 9 pasos a 5. MENOS 4**
+
+| | |
+|---|---|
+| **nace en** | `a229d78` **2026-09-10** `Vuelta 9, TAREA 4: del Cap. 2 (Your First Three Months) salieron 9 candidatos, 9 por la aduana, 4 puentes de 76 pasos corregidos` |
+| **la poda en** | `6ee153f` **2026-09-10** `Vuelta 10, TAREA 2: cola de la 9 cerrada. Dos candidatos nuevos (23 en cuarentena), 19 aristas escritas (14 de serie, 5 de lectura), cero inserciones` |
+| **firmada por** | **ACTA 9 seccion 7.3**, en la fila de `cap_03` (Cap. 2), con **76 pasos** |
+| **especie** | **PODA CON MOTIVO: un despiece declarado, no una perdida** |
+
+**EL MOTIVO NO HAY QUE DEDUCIRLO: ESTA ESCRITO DENTRO DEL PROPIO FICHERO**, en el
+`resumen_teorico` que ese mismo commit aniadio, y esta es la salida literal de
+`git show 6ee153f -- cuarentena/zhuo_manager/transitar_aprendiz_primeros_meses.json`:
+
+    +    ... Las dos cosas que este camino manda vigilar se describen aparte y no dentro,
+    +    porque el libro las nombra por su titulo desde otros dos caminos con la formula
+    +    See description from The Apprentice: la dinamica nueva con antiguos pares desde
+    +    el sucesor, y el equilibrio con el trabajo individual desde el pionero. Lo que el
+    +    libro invoca por su nombre desde otro sitio es una pieza con id propio, y aqui
+    +    quedan los dos pasos que la nombran.
+
+**LA ARITMETICA DE LA PODA, contada del parche:** salen **6** pasos (el que anuncia las
+tres cosas, las tres cosas una a una, el del equilibrio y el del disparador de cuatro o
+cinco personas) y entran **2** (los dos que nombran las piezas despiezadas). **6 menos 2
+son los 4.**
+
+> ## **Y LOS 4 NO SE PERDIERON: ESTAN EN LOS DOS CANDIDATOS QUE EL MISMO COMMIT ESCRIBIO**
+>
+>     $ git show --stat 6ee153f -- cuarentena/zhuo_manager/
+>      .../establecer_dinamica_nueva_antiguos_pares.json  | 38 ++++++++++++++++++++++
+>      .../planificar_reduccion_trabajo_individual.json   | 34 +++++++++++++++++++
+>      .../transitar_aprendiz_primeros_meses.json         | 22 ++++++++-----
+>      .../transitar_pionero_equipo_nuevo.json            | 14 ++++++--
+>      .../transitar_sucesor_equipo_entero.json           |  2 +-
+>
+> **SON EXACTAMENTE LOS DOS CANDIDATOS QUE LA VUELTA 14 IDENTIFICO COMO LOS QUE NINGUNA
+> FILA POR CAPITULO CUBRE** (su `I.2.c`, tabla de `2.d.4`):
+> `establecer_dinamica_nueva_antiguos_pares` con **7** pasos y
+> `planificar_reduccion_trabajo_individual` con **3**.
+>
+> **LAS DOS MITADES DEL HUECO ERAN LA MISMA OPERACION Y NADIE LO HABIA VISTO:** el mas 10
+> de la cola y el menos 4 de la cabeza **salen del mismo commit**, y el saldo neto de
+> `6ee153f` sobre el lote 3 es **mas 6 pasos**, no mas 10.
+
+### **PODA 2 de 2: `dar_mala_noticia_decision_tomada`, de 8 pasos a 7. MENOS 1**
+
+| | |
+|---|---|
+| **nace en** | `8b5c077` **2026-09-10** `Vuelta 10, TAREA 4: Cap. 4 (The Art of Feedback) minado, 12 candidatos, 111 pasos, 1 puente (0,90 por ciento), 11 aristas escritas, cero inserciones` |
+| **la poda en** | `5efd637` **2026-09-11** `Vuelta 11, TAREA 1: L283 sale del paso 8, residuo del Cap. 3 corregido y ORDEN_DE_LOTES al cierre` |
+| **firmada por** | **ACTA 10 seccion 7.3**, en la fila de `cap_05` (Cap. 4), con **111 pasos** |
+| **especie** | **PODA CON MOTIVO: una correccion de fidelidad ordenada por el auditor** |
+
+**EL MOTIVO VA EN EL TITULO DEL COMMIT, PALABRA POR PALABRA: `L283 sale del paso 8`.** Es
+la `1.a` bloqueante de la ACTA 10, y el extractor de la vuelta 11 la decidio con el texto
+delante y escribio sus cuatro razones. Estan en este mismo reporte y **las cito con su
+`sed` pegado al lado** (`D.35`):
+
+    $ sed -n '10427p;10449p;10452p' docs/loop/REPORTE.md
+    10427:### 1.2. LA `1.a` BLOQUEANTE: **`L283` SALE DEL PASO 8**, Y LO DECIDO CON EL TEXTO DELANTE
+    10449:**ELIJO LA PRIMERA SALIDA DE LAS DOS QUE EL ENCARGO OFRECE: `L283` SALE DEL PASO 8.** La
+    10452:1. **EL ALCANCE NO ES EL DEL NODO.** `L283` dice literal *what I've learned about giving
+
+**EL PASO RETIRADO ES `L283` PALABRA POR PALABRA**, y esta es la linea que sale, tal como
+la imprime `git show 5efd637`:
+
+    -    "Y parte de lo que el libro dice haber aprendido sobre dar opinion, incluso la mas
+    -     dificil: la gente no son flores fragiles. Ninguna persona a cargo le ha dicho nunca
+    -     que la trate con guantes de seda; ..."
+
+**NO SE RESTAURA, Y LA RAZON ES QUE RESTAURARLO SERIA DESHACER UNA ADJUDICACION DEL
+AUDITOR.** `L283` quedo **descartada** en la frontera de P19 por la misma vuelta 11
+(linea 10503 de este reporte), asi que el paso 8 era un **PUENTE en el sentido de `D.30`**:
+un paso cuyo alcance el nodo no tiene. **Devolverlo al fichero no repara una cifra: rompe
+un nodo que hoy esta bien.**
+
+## J.2.d. LA CIFRA **DESPUES**: LA CORRECCION DECLARADA, Y EL TEXTO VIEJO NO SE BORRA
+
+> ### **CORRECCION DECLARADA, 11 sep 2026, vuelta 15, TAREA 0 del encargo.**
+>
+> **Se corrigen DOS filas de la tabla de doce de mi `I.2.c` (vuelta 14). El texto viejo
+> sigue ahi y no se toca: esto se anexa.** Y **no toco `ACTA_AUDITOR.md`**, que es sede del
+> auditor (`EXTRACTOR.md` 14): las filas de las actas 9 y 10 se citan como contraste, que
+> es lo que `EXTRACTOR.md` 5 permite.
+
+| fichero | unidad | **firmado** | **medido hoy** | delta | por que |
+|---|---|---:|---:|---:|---|
+| `cap_03` | Cap. 2, `Your First Three Months` | **76** (ACTA 9, 7.3) | **72** | **menos 4** | la poda 1: cuatro pasos despiezados a dos nodos propios en `6ee153f` |
+| `cap_05` | Cap. 4, `The Art of Feedback` | **111** (ACTA 10, 7.3) | **110** | **menos 1** | la poda 2: `L283` sale del paso 8 en `5efd637`, correccion de fidelidad |
+| **la cola de la vuelta 10** | los dos de `cap_03` que ninguna fila cubre | **10** (7 mas 3) | **10** | **0** | ya declarados en la `I.2.c` de la vuelta 14 |
+
+    las doce filas firmadas                 : 1.102
+    mas la cola que ninguna fila cubria     :   + 10     ->  1.112   (la poblacion FIRMADA)
+    menos la poda 1                         :   -  4
+    menos la poda 2                         :   -  1
+    = la poblacion MEDIDA                   :     1.107  ->  CUADRA CON EL INSTRUMENTO
+
+> ## **EL HUECO DE CINCO ESTA CERRADO. NO HAY NINGUN PASO PERDIDO SIN MOTIVO Y NO HAY NADA
+> QUE RESTAURAR DEL LIBRO.** Las dos podas son **un despiece del extractor con su commit
+> firmado** y **una correccion de fidelidad ordenada por el auditor**. **Ningun candidato
+> vuelve por la aduana por esta causa.**
+
+**Y LO DIGO POR EL OTRO LADO, QUE ES EL QUE IMPORTA PARA LA TAREA 1:** el bloqueo de la
+TAREA 0 era *un lote con cinco pasos sin reconciliar no entra*. **Los cinco estan
+reconciliados y el lote 3 queda desbloqueado.**
+
+## J.2.e. LO QUE ESTO MUEVE EN LA TASA DE PUENTES, Y ES MENOS DE LO QUE PARECE
+
+**La vuelta 14 publico la tasa del lote 3 con dos lecturas y dijo que su margen se movia
+entre 3,07 y 3,08 por ciento "segun donde caigan esos cinco".** Hoy se sabe donde caen, y
+**caen los dos dentro del denominador que ya se estaba usando**:
+
+| lectura | numerador | denominador | **tasa** |
+|---|---:|---:|---:|
+| **ancha, la que la vuelta 14 sostuvo** | 34 | **1.107** | **3,07 por ciento** |
+| **la misma, con el hueco ya reconciliado** | 34 | **1.107** | **3,07 por ciento** |
+
+**NO SE MUEVE, Y LA RAZON ES QUE EL DENOMINADOR YA ERA EL BUENO.** Los 1.107 salian del
+instrumento; lo que faltaba era **saber por que las actas firmaban 1.112**, y eso es lo que
+cierra hoy. **El margen de centesimas que la vuelta 14 declaro se puede retirar: la cifra
+es 3,07 y no una banda.**
+
+**LA OTRA CONVENCION, QUE EL ENCARGO ME MANDA MIRAR ANTES DE FORZAR UN HUECO.** El encargo
+avisa: *si resulta que las dos cifras eran ciertas bajo dos convenciones distintas, eso
+tambien es un resultado*. **Lo compruebo y NO es el caso, y lo digo con su nombre:** 1.112
+es **la suma de lo que los ficheros tenian el dia en que cada acta los firmo**, y 1.107 es
+**lo que los mismos ficheros tienen hoy**. **Las dos son ciertas y no son la misma
+poblacion en el tiempo**, que es una convencion distinta de las dos que el aviso
+contemplaba. **Por eso la salida no es fijar una convencion: es citar los dos commits que
+mueven de una a otra**, y estan citados.
+
+> ### **LOS DISCUTIBLES DE ESTA TAREA, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+>
+> **1. Llamo PODA CON MOTIVO a la de `transitar_aprendiz_primeros_meses` apoyandome en el
+> `resumen_teorico` que el mismo commit escribio, no en una linea del encargo de entonces.**
+> Quien lea que **un motivo escrito dentro del propio fichero es el reo declarando en su
+> favor**, tiene un argumento. **Mi defensa es que el commit trae ademas los dos ficheros
+> nuevos con los 10 pasos dentro**, que es prueba material y no declaracion.
+>
+> **2. Afirmo que no hay un sexto paso escondido apoyandome en tres barridos por RUTA.** Si
+> alguno de los 136 ficheros hubiera cambiado de pasos en un commit que **tambien lo
+> renombro**, mi barrido no lo veria: no he corrido `--follow`. **Lo atenuo con la suma, que
+> cierra exacta en 5**, pero la suma cerraria igual si se compensaran dos errores.
+>
+> **3. Corrijo dos filas cuyo original vive en `ACTA_AUDITOR.md`, que no es mi sede.** Lo
+> hago **en la mia y por anexion**, citando las suyas como contraste. Quien lea que una
+> cifra firmada por el auditor solo la corrige el auditor, **tiene donde agarrarse**; mi
+> defensa es que el encargo me manda expresamente publicar la cifra antes y despues.
