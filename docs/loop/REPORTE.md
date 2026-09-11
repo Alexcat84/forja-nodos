@@ -11898,10 +11898,16 @@ ya minado. Es el contraste que el encargo anuncia, y lo cito como contraste:
 
 | # | tarea | estado | resultado |
 |---|---|---|---|
-| 1 | los cuatro capitulos, uno a uno y enteros | *(se anexa al cerrar)* | |
-| 2 | el informe del lote y el reloj | *(se anexa al cerrar)* | |
-| 3 | las cuatro medidas por capitulo | *(se anexa al cerrar)* | |
-| 4 | el cierre del lote 3, si los cuatro cierran | *(se anexa al cerrar)* | |
+| 1 | los cuatro capitulos, uno a uno y enteros | **CERRADA** | **4 de 4 minados enteros**: 60 candidatos, 497 pasos, 60 de 60 por la aduana en su propio acto, 2 caidas corregidas y reintentadas. Secciones `A` a `D` |
+| 2 | el informe del lote y el reloj | **CERRADA** | **60 revisados, 51 entrarian, 9 bloquearian, 0 caerian, 0 chocan** en **31 min 22 s**, con su modelo publicado ANTES y acertado por 2,95 por ciento. Seccion `F` |
+| 3 | las cuatro medidas por capitulo | **CERRADA** | una fila por capitulo mas el total. **El freno NO se dispara: 3,23 por ciento el peor, contra un tope de 10.** Seccion `E` |
+| 4 | el cierre del lote 3, si los cuatro cierran | **CERRADA** | los cuatro cierran. **10 de 12 ficheros del libro minados**, quedan `cap_11` y `cap_12` con 7.262 palabras para la vuelta 13. Seccion `G.5` |
+
+**LAS SECCIONES NO VAN EN ORDEN DE TAREA Y SE DICE:** `E` es la tarea 3 y `F` la
+tarea 2, porque el informe del lote entero **se lanzo el ultimo a proposito** para
+medirlo sin nada mas corriendo. **El reporte crece por anexion** (`EXTRACTOR.md`
+3) y por eso las secciones van en el orden en que se cerraron, no en el del
+encargo.
 
 ## 12.3. DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO
 
@@ -11910,7 +11916,20 @@ tomo la decision y antes de saber como cae. La lista crece durante la vuelta.*
 
 | # | discutible | donde |
 |---|---|---|
-| *(se anexan segun aparecen)* | | |
+| 1 | `P17` de `cap_07`, el coste monetario de una reunion: nodo propio o paso ajeno | `A.2`, resuelto en `A.3` |
+| 2 | la cabeza `MAKE IT SAFE` sin nodo, con cuatro tacticas huerfanas | `A.2` |
+| 3 | **la tasa de puentes: 4 de 124 o 14 de 124**, y mueve un escalon de volumen | `A.4` |
+| 4 | `pedir_opinion_propia_reunion` contra `pedir_opinion_otros_mejorar` | `A.5` |
+| 5 | la cabeza `HIRING IS A GAMBLE` sin nodo aunque el libro SI cuenta ahi | `B.2` |
+| 6 | el par mas cercano que escribo: los dos embudos de reclutamiento | `B.2`, **cayo en mi contra** en `B.3` |
+| 7 | la cabeza `Balancing Short-Term and Long-Term` **SI la escribo** | `C.2` |
+| 8 | `You Pick and Choose Your Battles` fuera por `P.19` | `D.2` |
+| 9 | la cuarta cabeza descartada: ya es un patron, y va propuesta | `D.2` |
+| 10 | los ordinales implicados que SI deje | `D.4` |
+
+**LOS DIEZ ESTAN DESARROLLADOS CADA UNO EN SU SITIO, y los diez se escribieron
+antes de ver como caian.** La tabla reunida, con cual ya cayo y en que sentido,
+esta en `G.2`.
 
 ## 12.4. LA DISCREPANCIA DE PALABRAS, DECLARADA EN LA APERTURA
 
@@ -13374,3 +13393,414 @@ medicion pendiente.
 **Y NO TOQUE EL INFORME NI LOS UMBRALES PARA QUE EL RELOJ BAJARA** (moratoria de
 maquinaria, `EXTRACTOR.md` 13, y el encargo lo prohibe expresamente). **Los
 cuatro numeros de arriba salen del instrumento tal como esta.**
+
+## F.2.bis. EL INFORME DE CARPETA AL CERRAR `cap_09`, CON SU RELOJ
+
+*Esta seccion pertenece por contenido al cierre de `cap_09` y llega aqui porque
+su informe termino a las 09:59:07, veinticinco minutos despues del commit que
+cerro ese capitulo. **El reporte crece por anexion y no se reescribe** (`EXTRACTOR.md` 3):
+va donde cayo, con la explicacion de por que.*
+
+    $ python forja.py informe --carpeta cuarentena/zhuo_manager
+
+    candidatos revisados        : 51
+    nodos en el grafo de destino: 135
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 42
+      BLOQUEARIAN esperando veredicto  : 9   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    inicio 09:33:14
+    exit=0
+    fin 09:59:07
+
+**51 REVISADOS, 42 ENTRARIAN, 9 BLOQUEARIAN, 0 CAERIAN, 0 CHOCAN.** Los nueve son
+**los ocho que ya tenian veredicto escrito al cerrar `cap_08`** mas
+`fijar_vision_concreta_equipo`, cuyo veredicto esta en `C.5`. **Cero bloqueos sin
+veredicto.**
+
+**25 MIN 53 S, y esta corrida esta CONFUNDIDA y se dice:** corrio en segundo plano
+**mientras yo lanzaba informes de candidato de `cap_10` en primer plano**. Su
+reloj no es una medida limpia del instrumento, es una medida del instrumento
+compitiendo consigo mismo. **Va a `F.2` con esa etiqueta puesta.**
+
+## F.4. LA CORRIDA DEL LOTE ENTERO, Y EL CONTRASTE DE LA PREDICCION
+
+*Corrida en primer plano, **con nada mas corriendo**, sobre los 60 candidatos.*
+
+    $ date '+inicio %H:%M:%S' ; python forja.py informe --carpeta cuarentena/zhuo_manager ; date '+fin %H:%M:%S'
+    inicio 09:59:29
+    exit=0
+    fin 10:30:51
+
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 60
+    nodos en el grafo de destino: 135
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 51
+      BLOQUEARIAN esperando veredicto  : 9   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 9
+      por candidato bloqueado          : menor 1, mediana 1, mayor 1
+      que senal levanta cada vecindad  : familia_id 8, paso_contra_nodo 1
+
+> # **60 REVISADOS, 51 ENTRARIAN, 9 BLOQUEARIAN, 0 CAERIAN, 0 CHOCAN.**
+> # **31 MINUTOS Y 22 SEGUNDOS.**
+
+**LOS NUEVE BLOQUEOS TIENEN LOS NUEVE SU VEREDICTO ESCRITO**, ocho en `A.5` y uno
+en `C.5`. **Cero bloqueos sin leer.**
+
+    $ grep "^\[BLOQUEARIA\]" <el informe>
+    [BLOQUEARIA] cerrar_reunion_pasos_siguientes
+    [BLOQUEARIA] dirigir_reunion_decision
+    [BLOQUEARIA] dirigir_reunion_generar_ideas
+    [BLOQUEARIA] dirigir_reunion_informativa
+    [BLOQUEARIA] dirigir_reunion_reforzar_relaciones
+    [BLOQUEARIA] dirigir_reunion_revision_trabajo
+    [BLOQUEARIA] fijar_vision_concreta_equipo
+    [BLOQUEARIA] pedir_opinion_propia_reunion
+    [BLOQUEARIA] preparar_preguntas_entrevista_antemano
+
+    $ grep -c "^\[ENTRARIA\]"   -> 51
+    $ grep -c "^\[BLOQUEARIA\]" -> 9
+    $ grep -c "^\[CAERIA\]"     -> 0
+
+### LA PREDICCION DE `F.3`, CONTRASTADA
+
+| | |
+|---|---:|
+| **predicho, commiteado en `f37ca59` a las 09:54:51** | **1.828 s = 30 min 28 s**, con banda de mas o menos 2 min |
+| **medido** | **1.882 s = 31 min 22 s** |
+| **error** | **mas 54 s, un 2,95 por ciento** |
+
+> ## **ACIERTA, Y DENTRO DE SU PROPIA BANDA.**
+
+**Y LA PRUEBA MAS DURA NO ES ESA, es que el modelo predice tambien los DOS puntos
+que no use para ajustarlo:**
+
+| N | predicho por candidato | medido por candidato | error |
+|---:|---:|---:|---:|
+| 16 | 27,7 s | 27,7 s | *(ajustado, no es prediccion)* |
+| 37 | 29,0 s | 29,0 s | *(ajustado, no es prediccion)* |
+| **51** | **29,9 s** | **30,5 s** | **mas 2,0 por ciento** |
+| **60** | **30,5 s** | **31,4 s** | **mas 2,9 por ciento** |
+
+**El coste por candidato SUBE, y sube poco y de forma predecible: 27,7, 29,0,
+30,5, 31,4.** El modelo lo explica entero: **26,7 s fijos por candidato contra el
+grafo, mas 0,063 s por cada otro candidato que haya en la carpeta.**
+
+## F.5. LA RESPUESTA A LA PREGUNTA DEL ENCARGO, EN UNA LINEA Y CON SU CIFRA
+
+*El encargo pregunta: **con la bandeja vacia, el informe vuelve a su tamanio? Y si
+sigue creciendo con la carpeta chica, es del instrumento y se trae.***
+
+> ## **SI VOLVIO, Y SI CRECE. LAS DOS COSAS, Y NO SE CONTRADICEN.**
+>
+> **VOLVIO:** con la bandeja recien vaciada, **27,7 s por candidato**, contra los
+> **38,3 s** que midio la vuelta 11 con 68 dentro.
+>
+> **Y CRECE OTRA VEZ SEGUN SE LLENA:** de 27,7 a 31,4 s por candidato entre 16 y
+> 60 en la carpeta.
+>
+> **PERO NO ES LA CARPETA LA QUE MANDA.** De los 31 min 22 s de la corrida de 60:
+>
+>     el grafo   :  1.601 s,  el 85 por ciento
+>     la carpeta :    227 s,  el 12 por ciento
+>     residuo    :     54 s,  el  3 por ciento
+
+**LO QUE ESO SIGNIFICA PARA QUIEN FIJE EL TRAMO, y lo digo como dato y no como
+propuesta** (moratoria, `EXTRACTOR.md` 13; y los umbrales no son mios):
+
+- **Vaciar la bandeja ayuda, y ayuda poco**: quita el 12 por ciento.
+- **Lo que de verdad mueve el reloj es el GRAFO**, que crece y no se vacia nunca.
+  **De 52 a 135 nodos ya ha pasado, y de 135 en adelante el coste por candidato
+  sube con el.**
+- **La vuelta 11 escribio que si el coste crece con el cuadrado del lote, el
+  informe subira cada vuelta mientras no se inserte nada.** **Mi medicion dice que
+  el termino cuadratico existe pero es el 12 por ciento**, asi que **esa
+  preocupacion es real y es la menor de las dos**. La grande es que **insertar
+  tampoco lo arregla: insertar mueve el coste de la carpeta al grafo, donde es
+  seis veces mayor.**
+
+**NO PROPONGO NADA, NO TOQUE NADA Y NO LO ARREGLE.** Lo mido y lo digo, que es lo
+que el encargo pide.
+
+---
+
+# CIERRE DE LA VUELTA 12
+
+*`EXTRACTOR.md` 1.5: gate, barrido de guiones y prueba de aceptacion en verde,
+cifras del cierre RECOMPUTADAS al cierre, discutibles marcados, commit y push.*
+
+## G.1. LAS CUATRO TAREAS, ANEXADAS AL CERRARSE
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 1 | los cuatro capitulos, uno a uno y enteros | **CERRADA** | **4 de 4 minados enteros**, cada uno con su frontera publicada y commiteada ANTES de cortar, sus candidatos por la aduana en su propio acto, su relectura de fidelidad dentro del acto, su informe y su commit. **60 candidatos, 497 pasos, 95 de 95 piezas de frontera con su `sed` pegado y comprobado** |
+| 2 | el informe del lote y el reloj | **CERRADA** | **4 corridas de informe de carpeta**, con sus condiciones declaradas. **Modelo publicado ANTES de la corrida final** y contrastado en `F.4`. Discrepancia con la vuelta 11 declarada en los dos sentidos y **no resuelta** |
+| 3 | las cuatro medidas por capitulo | **CERRADA** | tabla `E.1`. **El freno NO se dispara**: mayor tasa de puentes **3,23 por ciento** contra un tope de 10. **Y la lectura ancha que SI lo dispararia queda calculada** |
+| 4 | el cierre del lote 3, si los cuatro cierran | **CERRADA** | los cuatro cierran. **Lo que queda del lote son `cap_11` y `cap_12`**, y se declara en `G.5` |
+
+**CUATRO DE CUATRO, SIN COLA.**
+
+## G.2. LOS DISCUTIBLES, LOS DIEZ, MARCADOS ANTES DE SABER SI ACIERTO
+
+*`EXTRACTOR.md` 8. Cada uno esta desarrollado donde tome la decision, y **todos se
+escribieron antes de ver como caian**. Esta tabla solo los reune.*
+
+| # | discutible | donde | ya cayo? |
+|---|---|---|---|
+| 1 | `P17` de `cap_07`, el coste monetario de una reunion: nodo propio o paso ajeno | `A.2` | **SI, y elegi paso ajeno**: `A.3` |
+| 2 | la cabeza `MAKE IT SAFE` de `cap_07` sin nodo, dejando cuatro tacticas huerfanas | `A.2` | no |
+| 3 | **la tasa de puentes: 4 de 124 o 14 de 124**, segun cuenten los recuentos de `denominaciones` | `A.4` | no, **y mueve un escalon de volumen** (`E.2`) |
+| 4 | `pedir_opinion_propia_reunion` contra `pedir_opinion_otros_mejorar`: `SANO` o arista | `A.5` | no |
+| 5 | la cabeza `HIRING IS A GAMBLE` sin nodo **aunque el libro SI cuenta ahi** | `B.2` | no |
+| 6 | `calcular_embudo_reclutamiento_propio` contra `ejecutar_embudo_reclutamiento_escala`: el par mas cercano que escribo | `B.2` | **SI, y CAI**: la aduana dice que no chocan ni de lejos (`B.3`) |
+| 7 | la cabeza `Balancing Short-Term and Long-Term` **SI la escribo**, al reves que las otras | `C.2` | no |
+| 8 | `You Pick and Choose Your Battles` fuera **por `P.19`**, porque ya lo escribi en `cap_09` | `D.2` | no |
+| 9 | la cuarta cabeza descartada, **y ya es un patron del libro**: propuesta al fundador | `D.2` | no |
+| 10 | los ordinales implicados que SI deje (*la cuarta contramedida*) | `D.4` | no, **y mueve el mismo escalon que el 3** |
+
+**UNO DE LOS DIEZ YA CAYO A MI FAVOR (el 1, que resolvi yo mismo) Y OTRO CAYO EN
+MI CONTRA (el 6).** Los ocho restantes los decide quien relea.
+
+## G.3. LO QUE ESTA VUELTA NO HIZO, DICHO POR SU NOMBRE
+
+- **NO INSERTO NADA.** Cero corridas de `python forja.py insertar`. Probado por
+  los tres numeros del grafo en `G.4`, identicos a los de la apertura.
+- **NO CORRIO `python forja.py arista` ni una vez**, aunque declare **ocho
+  lecturas de arista** por `D.29`. Esa orden escribe en `dataset/`, que es sede de
+  la aduana (`EXTRACTOR.md` 14), y esta corrida no tiene autorizacion.
+- **NO escribio en `bitacora/VEREDICTOS.jsonl`**, ni en `censos/`, ni en
+  `config/pares_mutuos.jsonl`. **Los 15 veredictos viven en mi reporte, que es mi
+  sede**, y se escribiran en la bitacora la vuelta que inserte.
+- **NO movio umbrales, ni el esquema, ni `D.27`, ni `D.29`, ni `D.37`, ni la vara
+  de continua contra repite.** La unica vara que escribi es **mia y esta
+  declarada como mia** (`A.4`): ordinal contra cardinal.
+- **NO toco el informe ni los umbrales para que el reloj bajara**, que el encargo
+  lo prohibe expresamente. Los cuatro relojes salen del instrumento tal cual.
+- **NO fabrico maquinaria** (`EXTRACTOR.md` 13). Las tres comprobaciones de esta
+  vuelta (punteros, frontera contra fichero, y las señales de los 18 pares) son
+  **corridas de una vuelta en `python -c` sobre instrumentos que ya existen**,
+  `src.aduana.medir` y `config/umbrales.json`. **Ninguna es una guarda, ninguna se
+  commitea como instrumento, y ninguna se propone como tal.**
+- **NO escribio `PARA_ALEXIS.md`** (`D.28`), ni `ACTA_AUDITOR.md`, ni
+  `PROMPT_SIGUIENTE.md`. La propuesta de `D.2` va **en mi reporte**, que es donde
+  el extractor propone.
+- **NO abrio `cap_11` ni `cap_12`.**
+- **NO hubo ninguna PARADA.** Ninguna regla me obligo a romper otra.
+
+## G.4. EL ESTADO AL CIERRE, MEDIDO AL CIERRE
+
+*`EXTRACTOR.md` 4: toda cifra que describa el estado al cerrar se RECOMPUTA si
+algo de la propia vuelta pudo haberla movido. **Estas son corridas nuevas, no las
+de la apertura.***
+
+### Las cuatro guardas, corridas AL CIERRE
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 135
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python tests/test_aceptacion.py
+      total: 75 pruebas, 0 fallos, 0 errores
+
+    $ python forja.py rancios
+    BLOQUE DE VIGENCIA VERDE.
+      veredictos comprobados: 100
+
+**LAS CUATRO EN VERDE AL CIERRE. Y EL HOOK CORRIO EN LOS CATORCE COMMITS DE LA
+VUELTA**, sin saltarse ni uno: los catorce imprimieron `[pre-commit] gate de
+integridad`, `[pre-commit] barrido de guiones` y `[pre-commit] verde`.
+
+### Los tres numeros del grafo, que son la prueba de las cero inserciones
+
+    $ python -c "... recuenta dataset/nodos.jsonl y bitacora/VEREDICTOS.jsonl"
+
+| | al abrir | al cerrar | movio |
+|---|---:|---:|---|
+| nodos en `dataset/` | 135 | **135** | **no** |
+| aristas (previas y siguientes) | 59 y 59 | **59 y 59** | **no** |
+| veredictos en `bitacora/` | 100 | **100** | **no** |
+| pruebas de aceptacion | 75 de 75 | **75 de 75** | **no** |
+| candidatos en `cuarentena/zhuo_manager/` | 0 | **60** | **si, mas 60** |
+
+**LOS CUATRO PRIMEROS SON IDENTICOS A LOS DE LA APERTURA. LO UNICO QUE CRECE ES
+LA BANDEJA DE SALIDA.**
+
+### Las dos comprobaciones de citas, corridas sobre mi propio tramo
+
+**1. Los punteros de linea de mi tramo, abiertos uno a uno:**
+
+    $ python -c "... extrae toda referencia de linea de mi tramo del reporte y la abre"
+    referencias de linea distintas, fichero mas numero: 26
+    apuntan a linea CON TEXTO: 26
+    apuntan a linea VACIA: NINGUNA
+    apuntan fuera del fichero: NINGUNA
+    reparto por fichero: {'cap_08': 8, 'cap_07': 9, 'cap_10': 4, 'cap_09': 5}
+
+**2. LA QUE NO HABIA HECHO NINGUNA VUELTA ANTERIOR: cada salida de `sed` pegada en
+las cuatro tablas de frontera, contrastada contra la linea real del fichero:**
+
+    $ python -c "... coge cada fila '| `N: texto` |' de las tablas de frontera y la
+                 compara con la linea N del capitulo, cortada igual antes del guion largo"
+    filas de frontera con salida pegada encontradas: 95
+    filas cuya salida pegada CASA con la linea real: 95
+    filas que NO casan: NINGUNA
+    reparto por fichero: {'cap_07': 29, 'cap_08': 28, 'cap_09': 21, 'cap_10': 17}
+
+**95 DE 95, Y EL REPARTO CUADRA CON LAS CUATRO FRONTERAS DECLARADAS: 29, 28, 21 y
+17.** Es `D.35` comprobada a maquina en vez de prometida.
+
+**Y DIGO EL LIMITE DE LAS DOS, porque una prueba sin su limite es media prueba:**
+la primera comprueba **que la linea existe y tiene texto**; la segunda comprueba
+**que el texto pegado es de verdad el de esa linea**. **Ninguna de las dos
+comprueba que la linea diga lo que yo digo que dice.** Eso lo hice a mano, y las
+lineas donde mas importaba (`cap_07.md:155` para la arista de `D.29`,
+`cap_08.md:113` para el unico `three reasons` del libro, `cap_10.md:107` para los
+`few guiding principles`) **van pegadas enteras en su sitio.**
+
+**LA SEGUNDA COMPROBACION CAZO ALGO, y por eso vale la pena contarla:** la
+escribi primero con una expresion que solo capturaba **66 de las 95 filas**,
+porque no casaba con los veredictos que llevan minusculas (`PROCEDIMIENTO, cabeza`).
+**Habria publicado `66 de 66 correctas` como si fuera completa**, que es
+exactamente la especie de la vuelta 7: **una tabla que se anuncia completa y deja
+bloques fuera.** La ensanche y salieron 95.
+
+## G.5. TAREA 4. EL ESTADO DEL LOTE 3 AL CERRAR, Y LO QUE LE QUEDA
+
+*El encargo: **si `cap_11` y `cap_12` no caben, se dice y se dejan para la vuelta
+13. Un capitulo cerrado vale mas que dos a medias.***
+
+**LOS CUATRO ENCARGADOS CIERRAN. `cap_11` Y `cap_12` NO SE ABRIERON, y no es que
+no cupieran: es que el encargo no los asigna.** Los cuatro que asigna son
+`cap_07` a `cap_10`, y los cuatro estan minados enteros, con su frontera, sus
+candidatos, su relectura de fidelidad, su informe y su commit.
+
+| | al empezar la vuelta 12 | al cerrarla |
+|---|---|---|
+| ficheros del lote 3 minados | **6 de 12** (`cap_01` a `cap_06`) | **10 de 12** (`cap_01` a `cap_10`) |
+| candidatos en `cuarentena/zhuo_manager/` | **0** (los 68 anteriores ya insertados y archivados) | **60** |
+| candidatos del lote ya en el grafo | **68** | **68**, sin mover |
+| palabras del lote minadas esta vuelta | | **25.921** |
+| lo que queda del libro | **6 ficheros, 33.183 palabras** | **2 ficheros, 7.262 palabras** |
+
+**LO QUE QUEDA, CONTADO HOY Y NO COPIADO DEL ENCARGO:**
+
+    $ cd fuentes/zhuo_manager && for f in cap_11 cap_12; do sed -n '8,$p' $f.md | wc -w; done
+    3751
+    3511
+
+| fichero | unidad | titulo textual | palabras de cuerpo |
+|---|---|---|---:|
+| `cap_11.md` | Cap. 10 | Nurturing Culture | **3.751** |
+| `cap_12.md` | Epilogue | The Journey Is 1% Finished | **3.511** |
+
+**LAS DOS COINCIDEN AL NUMERO CON LAS DEL ENCARGO, y la comprobacion no era
+gratis:** mi primer recuento dio **3.546** para `cap_12` y estuve a punto de
+publicarlo como discrepancia. **Eran las 35 palabras del `frontmatter`**, las
+mismas que `12.4` ya habia descontado en los cuatro capitulos minados. **Lo
+escribo porque casi publico una discrepancia que no existia**, que es el error
+gemelo de copiar una cifra sin medirla.
+
+> **EL LOTE 3 NO SE CIERRA EN ESTA VUELTA, y el motivo no es una falta: son las
+> 7.262 palabras de `cap_11` y `cap_12`, que el encargo asigna expresamente a la
+> vuelta 13.** Con ellas el libro queda minado entero y **entonces si tocan los
+> cuatro barridos de la fase 3 del flujo y la auditoria ciega de la fase 4**
+> (`EXTRACTOR.md` 12.5), que son los que cierran un libro de verdad.
+
+### LA DISCREPANCIA DE VOLUMEN, DECLARADA Y NO RESUELTA
+
+**`docs/loop/ORDEN_DE_LOTES.md` dice que el lote 3 corre a TRES capitulos por
+vuelta, y mi encargo me manda CUATRO.** Los dos son del 11 sep 2026.
+
+    $ sed -n '66,70p' docs/loop/ORDEN_DE_LOTES.md
+        lote 1   UN capitulo por vuelta      36,00 por ciento de puentes
+        lote 2   DOS capitulos por vuelta    decision del fundador, 10 sep 2026
+        lote 3   TRES capitulos por vuelta    3,31 por ciento, FIRMADA el 11 sep
+        lote 4   CUATRO capitulos por vuelta decision del fundador, 11 sep 2026
+
+**Y el encargo de esta vuelta dice, literal: `VOLUMEN: CUATRO CAPITULOS POR
+VUELTA (decision del fundador 5.8)`.**
+
+**HICE CUATRO, y la razon es que un encargo asigna el trabajo de la vuelta** y es
+la instruccion dirigida a mi; la tabla asigna el techo del lote. **No es una
+parada**, porque ninguna de las dos me obliga a romper la otra: hacer cuatro
+cumple el encargo y **excede en uno** el techo de la tabla. **Pero la diferencia
+se declara, porque si el techo de la tabla es el vigente, esta vuelta corrio un
+escalon por encima de el.**
+
+**Y anado el dato que hace la pregunta contestable:** si el techo correcto fuera
+TRES, el capitulo que sobra es `cap_10`, **el de menor cosecha de los cuatro**
+(9 candidatos, 1,47 por mil) **y el de menor tasa de puentes** (1,25 por ciento).
+**Correr cuatro no degrado la medida**, y eso es lo unico que yo puedo aportar a
+la decision.
+
+### EL FRENO, CON LA REDACCION DE SU PROPIA SEDE
+
+`ORDEN_DE_LOTES.md` no dice *baja un escalon*: dice **`si sube por encima de 10
+por ciento, se vuelve a TRES`**. Con mi lectura (3,23 por ciento el peor
+capitulo) **no se vuelve a tres**; con la lectura ancha de `E.2` (11,3 por ciento
+en `cap_07`) **si se volveria**. Las dos cifras estan calculadas en `E.2`.
+
+## G.6. EL SELLO DE LA VUELTA 12
+
+| | |
+|---|---|
+| **rama** | `extraccion-mundo-11` |
+| **apertura** | `16a2d2c`, `2026-09-11 08:06:29` |
+| **unidades minadas** | **cuatro**: `cap_07` Cap. 6, `cap_08` Cap. 7, `cap_09` Cap. 8, `cap_10` Cap. 9 |
+| **palabras minadas** | **25.921** de cuerpo |
+| **fronteras** | **4 publicadas y commiteadas ANTES de cortar**: 29, 28, 21 y 17 piezas. **95 de 95 lineas con texto cubiertas por pieza, cero huecos, cero solapes** |
+| **tareas** | **4 de 4 cerradas**, sin cola |
+| **candidatos** | **60**, con **497 pasos** y **27 atribuciones** |
+| **aduana, candidato a candidato** | **60 de 60 pasados en su propio acto.** 2 cayeron, los 2 de regla 3, **corregidos y reintentados en el acto** |
+| **lote al cierre** | *(ver `F.4`)* |
+| **puentes** | **12 de 497, 2,41 por ciento**, con su banda ancha declarada |
+| **veredictos** | **15 escritos con su razon**: 9 que pidio la aduana y 6 que pidio la lectura. **0 en `bitacora/`**, porque no hay inserciones |
+| **aristas** | **8 lecturas de `D.29` declaradas**, entre ellas **una madre que ya vive en el grafo**. **0 por `D.37`**, sobre 4 casos examinados. **0 escritas en el grafo** |
+| **discutibles** | **10, todos marcados antes de saber si acierto**. Uno ya cayo en mi contra |
+| **paradas** | **0** |
+| **inserciones** | **0**, probadas por los tres numeros del grafo y por el `git log` de las cuatro sedes de la aduana |
+| **guardas al cierre** | gate verde, barrido verde, **75 de 75**, rancios verde |
+| **punteros** | **26 de 26**, cero rotos |
+| **citas de frontera contra fichero** | **95 de 95**, cero que no casen |
+| **commits** | **catorce, con el hook corrido en los catorce** |
+
+## G.7. LO QUE ESTA VUELTA DEJA ESCRITO PARA LA SIGUIENTE
+
+**Tres cosas que no existian al abrirla, y que no son cifras sino formas de
+medir:**
+
+1. **LA ESPECIE `RECUENTO`, con su vara y sus tres mediciones** (`A.4`). *El libro
+   imprime una lista y no dice cuantas cosas hay; yo escribo el numero.* La vara
+   que la separa de la transcripcion **es la misma condicion que `D.37` exige para
+   una arista de serie**, y por eso no es una regla nueva sino la de la casa
+   aplicada a mis propios pasos. **12 puentes cazados con ella en cuatro
+   capitulos.**
+
+2. **LA MEDICION DEL CRUCE DE DOS LIBROS DEL MISMO TEMA** (`B.5`). **18 pares
+   elegidos por lectura, 0 levantados por ninguna señal, 11 de 18 con
+   `familia_id` en cero exacto.** Es la primera vez que esta casa mide **lo que
+   las señales NO ven cuando el vocabulario cambia**, y confirma con cifra propia
+   lo que `EXTRACTOR.md` 11 decia sin ella.
+
+3. **UN MODELO DEL RELOJ DEL INFORME, publicado antes de contrastarse** (`F.3`),
+   con su prediccion y su contraste en `F.4`.
+
+**Y una pregunta que dejo abierta y no resuelvo** (`D.2`): esta casa **no tiene
+figura para una cabeza sin pasos propios cuyas partes si son nodos**, y este libro
+la escribe cuatro veces en cuatro capitulos.
