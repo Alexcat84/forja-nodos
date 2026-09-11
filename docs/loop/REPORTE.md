@@ -12344,3 +12344,112 @@ asi que `python forja.py arista` no se corre: la sede es de la aduana.
 | **puentes sobre pasos escritos** | **4 de 124 = 3,23 por ciento** | banda declarada arriba: de 3,23 a 11,3 segun cuenten o no los diez recuentos de denominacion |
 | **veredictos** | **7 leidos y escritos**: 6 `SANO`, 1 arista de `D.29` | mas 2 aristas de serie por `D.29` dentro del capitulo |
 | **tiempo** | **ver `C.12` al cierre**, que es donde la cifra existe | primer commit del capitulo contra el de su cierre |
+
+---
+
+# TAREA 1.B. `cap_08.md`, Cap. 7 `Hiring Well`
+
+*Frontera publicada ANTES de cortar (`EXTRACTOR.md` 10), y commiteada antes de
+escribir el primer candidato. **Es el capitulo que se cruza con el lote 2 entero**,
+que era un libro de contratacion y vive en el grafo con 59 nodos.*
+
+## B.1. LA FRONTERA ENTERA, PIEZA A PIEZA, CON SU `sed` PEGADO
+
+**28 piezas, de la linea 9 a la 301.** La columna de la derecha es la salida
+literal de `sed -n '<n>p' cap_08.md`, cortada antes del primer guion largo del
+libro.
+
+| P | lineas | que es | veredicto | la salida de `sed -n '<primera>p'`, pegada |
+|---|---|---|---|---|
+| P1 | L9 a L15 | paratexto: rotulo, titulo y los letreros AVOID y ASPIRE | **NO SE MINA** | `9: Chapter Seven` |
+| P2 | L17 a L25 | el caso de Tom, el candidato que no resolvio los problemas y salio excelente | **CASO** | `17: Early in my career, when interviewing other people still f ...` |
+| P3 | L27 a L29 | cuanto importa contratar bien, con la cifra de entrevistas de la autora | **POSTURA mas ATRIBUCION** | `27: At a growing organization, hiring well is the single most  ...` |
+| P4 | L31 a L37 | contratar no es un problema a resolver sino una oportunidad de construir futuro | **POSTURA** | `31: The most important thing to remember about hiring is this: ...` |
+| P5 | L39 a L45 | DESIGN YOUR TEAM INTENTIONALLY: el hambre, la nevera y planificar por delante | **PROCEDIMIENTO** | `39: DESIGN YOUR TEAM INTENTIONALLY` |
+| P6 | L46 a L57 | el ejercicio de enero, con sus cinco preguntas nombradas | **PROCEDIMIENTO** | `46: ` |
+| P7 | L59 a L61 | modificar el plan cuando todo cambia, y la variante sin necesidades de contratar | **PROCEDIMIENTO, con P6** | `59: Even if things change` |
+| P8 | L63 a L71 | HIRING IS YOUR RESPONSIBILITY: que trae el reclutador y que trae el directivo | **PROCEDIMIENTO, cabeza** | `63: HIRING IS YOUR RESPONSIBILITY` |
+| P9 | L73 a L77 | Describe Your Ideal Candidate: escribe tu la descripcion del puesto | **PROCEDIMIENTO** | `73: Describe Your Ideal Candidate as Precisely as You Can` |
+| P10 | L79 a L85 | Develop a Sourcing Strategy, con el patron inesperado de Netflix | **PROCEDIMIENTO mas ATRIBUCION** | `79: Develop a Sourcing Strategy` |
+| P11 | L87 a L95 | Deliver an Amazing Interview Experience, y los errores comunes que evita | **PROCEDIMIENTO** | `87: Deliver an Amazing Interview Experience` |
+| P12 | L97 a L103 | Show Candidates How Much You Want Them: la cadencia del cierre | **PROCEDIMIENTO** | `97: Show Candidates How Much You Want Them` |
+| P13 | L105 a L119 | HIRING IS A GAMBLE: las TRES razones por las que la entrevista no predice | **POSTURA mas tres ATRIBUCIONES** | `105: HIRING IS A GAMBLE, BUT MAKE SMART BETS` |
+| P14 | L121 a L127 | Examine Past Examples of Similar Work: la revision de portafolio | **PROCEDIMIENTO** | `121: Examine Past Examples of Similar Work` |
+| P15 | L129 a L141 | Seek Out Trusted Recommendations, con la doctrina de Kevin Ryan | **PROCEDIMIENTO mas ATRIBUCION** | `129: Seek Out Trusted Recommendations` |
+| P16 | L143 a L147 | Get Multiple Interviewers Involved, y el registro independiente antes del debate | **PROCEDIMIENTO** | `143: Get Multiple Interviewers Involved` |
+| P17 | L149 a L155 | Look for Passionate Advocates Rather Than Consensus: la contratacion tibia | **PROCEDIMIENTO** | `149: Look for Passionate Advocates Rather Than Consensus` |
+| P18 | L157 a L175 | Prepare Your Interview Questions Ahead of Time, con el caso Mason y las cinco preguntas | **PROCEDIMIENTO** | `157: Prepare Your Interview Questions Ahead of Time` |
+| P19 | L177 a L179 | Reject Anyone Who Exhibits Toxic Behavior, con sus cinco senales y sus frases | **PROCEDIMIENTO** | `177: Reject Anyone Who Exhibits Toxic Behavior` |
+| P20 | L181 a L195 | Build a Team with Diverse Perspectives, con el caso de Kate y los tres estudios | **PROCEDIMIENTO mas ATRIBUCION** | `181: Build a Team with Diverse Perspectives` |
+| P21 | L197 a L207 | Hire People Who Are Capable of More, con el caso del director | **PROCEDIMIENTO** | `197: Hire People Who Are Capable of More` |
+| P22 | L209 a L219 | Meeting Frogs: el embudo de numeros y la ecuacion de correos por contratacion | **PROCEDIMIENTO** | `209: Meeting Frogs Is Part of the Deal, but Believe in the Proc ...` |
+| P23 | L221 a L235 | la pregunta de Chris: si contratar bien fuera lo unico que importa, harias algo distinto | **PROCEDIMIENTO** | `221: HIRING WHEN YOU NEED FIVE, TEN, OR HUNDREDS OF PEOPLE` |
+| P24 | L237 a L245 | Successful Hiring Is All about Diligent Execution, con la aritmetica por directivo | **PROCEDIMIENTO** | `237: Successful Hiring Is All about Diligent Execution` |
+| P25 | L247 a L257 | Do Your Research When Hiring Leaders, con el caso de la primera ejecutiva de ventas | **PROCEDIMIENTO** | `247: Do Your Research When Hiring Leaders` |
+| P26 | L259 a L271 | Take the Long View with Top Talent: la oferta rechazada que vuelve | **PROCEDIMIENTO** | `259: Take the Long View with Top Talent` |
+| P27 | L273 a L289 | Build a Great Bench: la prueba de las vacaciones largas | **PROCEDIMIENTO** | `273: Build a Great Bench` |
+| P28 | L291 a L301 | Create a Culture That Prioritizes Hiring Well: repartir los bloques de construccion | **PROCEDIMIENTO** | `291: Create a Culture That Prioritizes Hiring Well` |
+    $ python -c "... comprueba las 28 piezas contra el fichero"
+    piezas: 28
+    huecos: NINGUNO
+    solapes: NINGUNO
+    lineas con texto de la 8 en adelante: 147
+    cubiertas: 147
+    sin cubrir: NINGUNA
+
+**147 DE 147 LINEAS CON TEXTO CUBIERTAS, CERO HUECOS Y CERO SOLAPES.**
+
+## B.2. EL SALDO DE LA FRONTERA, Y LO QUE ANUNCIA
+
+| | piezas |
+|---|---|
+| **PROCEDIMIENTO** | **23**: P5 a P12, P14 a P28 |
+| **POSTURA** | **3**: P3 en parte, P4, P13 |
+| **CASO** (dentro de un nodo) | **1**: P2 |
+| **ATRIBUCION** (campo, no nodo) | **6**: P3, P10, P13 por tres, P15, P20 |
+| **PARATEXTO** | **1**: P1 |
+
+**Anuncio 21 candidatos**, porque P6 y P7 van con P5, y las demas piezas de
+procedimiento van una a una. **Y esta vez sumo delante:** 23 piezas menos las 2
+que se agrupan con P5 dan **21**. *(En `cap_07` anuncie 14 y salieron 16 por un
+error de suma mio; esta vez la suma esta escrita para que se pueda comprobar.)*
+
+### DISCUTIBLE 5: la SEGUNDA cabeza que NO escribo, y ahora es un patron
+
+**P13, `HIRING IS A GAMBLE, BUT MAKE SMART BETS` (`L105` a `L119`), no tiene nodo
+propio**, igual que decidi con P19 de `cap_07`. Y aqui **cuesta mas**, porque esta
+cabeza si trae algo que aquella no tenia:
+
+    $ sed -n '113p' fuentes/zhuo_manager/cap_08.md
+    113: There are three reasons why a handful of interviews isn’t ever going to be
+
+**EL LIBRO CUENTA: dice `three reasons`.** Es la primera vez en dos vueltas que
+este libro cuenta algo. **Y aun asi no la hago nodo**, por la restriccion 1 de
+`D.27`: un inventario **de CAUSAS no es de medios, ni de etapas, ni de objetos de
+trabajo**. Saber por que una entrevista no predice no es algo que alguien ejecute;
+es lo que sostiene las ocho tacticas que vienen despues, y ahi es donde va, en su
+`resumen_teorico`.
+
+**LO QUE SI HAGO, Y ES LA DIFERENCIA CON `cap_07`: no tiro sus tres cifras.** Las
+tres atribuciones de P13 se reparten a las tacticas que el propio libro apoya en
+ellas, y digo cual va donde y por que:
+
+| la cifra | va a | por que a ese y no a otro |
+|---|---|---|
+| Google, `zero relationship` entre nota del entrevistador y desempeno posterior | `examinar_trabajo_pasado_candidato` | es la tactica que el libro pone como respuesta directa a que la entrevista no predice: el mejor predictor es el trabajo pasado |
+| Harvard, las audiciones a ciegas suben un 50 por ciento la probabilidad de que avance una mujer | `preparar_preguntas_entrevista_antemano` | es la unica tactica cuyo texto repite el argumento del sesgo con esas palabras, `Remember that we are all biased` (`L159`) |
+| Laszlo Bock, de Google, sobre que las senales de la universidad dejan de valer a los dos o tres anios | `buscar_recomendaciones_confianza` | es la tactica que manda **descontar la opinion negativa que no sea reciente** (`L139`), que es la misma doctrina del cambio de las personas |
+
+**DONDE PUEDE CAER:** si el auditor lee que una cabeza con inventario CONTADO es
+nodo aunque el inventario sea de causas, entonces P13 deberia ser nodo y yo he
+perdido una cabeza con `D.37` verdadero, el primero del libro. **Lo marco antes de
+saber si acierto.**
+
+### DISCUTIBLE 6: P22 y P24 son el mismo embudo a dos escalas
+
+**`Meeting Frogs` (P22) y `Diligent Execution` (P24) manejan los dos el mismo
+objeto: el embudo de reclutamiento como una cuenta.** Les doy nodo propio a cada
+uno porque sus entregables son distintos, la ecuacion de una contratacion en P22
+y el reparto por directivo y por semana en P24, **pero es el par mas cercano que
+escribo en este capitulo y puede ser uno solo.** Lo dejo marcado y dejo que la
+aduana hable: si chocan dentro del lote, se vera en el informe.
