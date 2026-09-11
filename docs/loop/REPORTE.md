@@ -11930,3 +11930,101 @@ discrepancia se declara en vez de resolverse copiando.*
 
 **Las cuatro cifras del encargo son las de cuerpo y coinciden al numero.** Cuento
 **25.921 palabras de cuerpo** en esta vuelta.
+
+---
+
+# TAREA 1.A. `cap_07.md`, Cap. 6 `Amazing Meetings`
+
+*`EXTRACTOR.md` 10: la frontera se lee y SE PUBLICA ANTES DE CORTAR. Esta
+seccion se commitea antes de escribir el primer candidato.*
+
+## A.1. LA FRONTERA ENTERA, PIEZA A PIEZA, CON SU `sed` PEGADO
+
+**29 piezas, de la linea 9 a la 289, sin huecos y sin solapes.** Las lineas 1 a
+7 son el `frontmatter` del recorte y no son texto del libro. La columna de la
+derecha es la salida literal de `sed -n '<n>p' cap_07.md` **cortada antes del
+primer guion largo del libro**, porque el barrido de guiones de esta casa barre
+mi reporte y no barre la bandeja de entrada (`src/comun.py`, `BANDEJAS_DE_ENTRADA`).
+
+| P | lineas | que es | veredicto | la salida de `sed -n '<primera>p'`, pegada |
+|---|---|---|---|---|
+| P1 | L9 a L15 | paratexto: el rotulo del capitulo, su titulo y los dos letreros AVOID y ASPIRE | **NO SE MINA** | `9: Chapter Six` |
+| P2 | L17 a L23 | la escena de apertura: la reunion de estado semanal que ella monto, aburrio y cancelo | **CASO** | `17: As my team grew, I thought it would be a good idea to host a m ...` |
+| P3 | L25 a L29 | cuanto ocupan las reuniones y su mala fama, con dos cifras de autor | **POSTURA mas ATRIBUCION** | `25: I think about meetings a lot because it’s such a huge part of  ...` |
+| P4 | L31 a L41 | las cinco frases con que se sale de una buena reunion | **POSTURA** | `31: On the other hand, good meetings are simple and straightforwar ...` |
+| P5 | L43 | el cierre de la seccion: no perpetues la mala cultura de reuniones | **POSTURA** | `43: At the end of the day, talking with someone face-to-face is st ...` |
+| P6 | L45 a L51 | la pregunta que falta: a que se parece un gran resultado, y solo hay un punado de razones | **PROCEDIMIENTO, cabeza** | `45: WHAT IS A GREAT OUTCOME FOR YOUR MEETING?` |
+| P7 | L53 a L95 | Making a Decision: el caso del plazo, los cuatro rasgos y los cinco malos resultados | **PROCEDIMIENTO** | `53: Making a Decision` |
+| P8 | L97 a L115 | Sharing Information: los dos beneficios y los cuatro logros | **PROCEDIMIENTO** | `97: Sharing Information` |
+| P9 | L117 a L131 | Providing Feedback: la review, el error de buscar aprobacion y los cuatro logros | **PROCEDIMIENTO** | `117: Providing Feedback` |
+| P10 | L133 a L149 | Generating Ideas: por que la lluvia de ideas en grupo falla y los cuatro logros | **PROCEDIMIENTO** | `133: Generating Ideas` |
+| P11 | L151 a L163 | Strengthening Relationships: los medios sociales y los tres logros | **PROCEDIMIENTO** | `151: Strengthening Relationships` |
+| P12 | L165 a L167 | no mezclar propositos y devolver la conversacion a su agenda | **PROCEDIMIENTO, cierra la cabeza P6** | `165: Every meeting should be clear on which of the above it’s tryin ...` |
+| P13 | L169 a L175 | INVITE THE RIGHT PEOPLE: los dos fallos simetricos y la pregunta que decide | **PROCEDIMIENTO** | `169: INVITE THE RIGHT PEOPLE` |
+| P14 | L177 a L185 | el caso de la review que crecio hasta parecer un aula | **CASO, dentro de P13** | `177: Sometimes, reasonable people can disagree on who needs to be p ...` |
+| P15 | L187 a L197 | la maldicion del conocimiento y el remedio: repartir el material el dia antes | **PROCEDIMIENTO** | `187: GIVE PEOPLE A CHANCE TO COME PREPARED` |
+| P16 | L199 | la agenda por adelantado, para reuniones de cualquier tamano | **PROCEDIMIENTO, con P15** | `199: Sending out an agenda ahead of time shows a level of care and  ...` |
+| P17 | L201 | el coste monetario de una reunion, con su cuenta | **DISCUTIBLE 1** | `201: If a company-wide meeting attended by five hundred employees i ...` |
+| P18 | L203 a L207 | los ultimos minutos, el recap posterior y las tres ramas del seguimiento | **PROCEDIMIENTO** | `203: After the meeting, the follow-ups need to be treated with as m ...` |
+| P19 | L209 a L217 | MAKE IT SAFE: por que calla la gente y el anuncio de las cuatro tacticas | **POSTURA, cabeza sin pasos propios** | `209: MAKE IT SAFE FOR PEOPLE TO CONTRIBUTE` |
+| P20 | L219 a L229 | Be Explicit about the Norms: decir la norma en voz alta, con su parlamento literal | **PROCEDIMIENTO** | `219: Be Explicit about the Norms You Want to Set` |
+| P21 | L231 a L235 | Change Up Your Meeting Format: la dinamica natural y la rueda de la sala | **PROCEDIMIENTO** | `231: Change Up Your Meeting Format to Favor Participation` |
+| P22 | L237 a L241 | el arranque con notas adhesivas, con su caja de tiempo | **PROCEDIMIENTO** | `237: Another tactic I like is the “Post-it note” opening. Before la ...` |
+| P23 | L243 a L255 | Manage Equal Airtime: las cinco intervenciones del que modera, con sus frases | **PROCEDIMIENTO** | `243: Manage Equal Airtime` |
+| P24 | L257 a L265 | Get Feedback about Your Meeting: pedir opinion de la propia reunion | **PROCEDIMIENTO** | `257: Get Feedback about Your Meeting` |
+| P25 | L267 a L275 | la auditoria de calendario de una semana, con sus tres preguntas | **PROCEDIMIENTO** | `267: SOME MEETINGS DON’T NEED YOU AND SOME DON’T NEED TO EXIST AT A ...` |
+| P26 | L277 | la encuesta de Perlow a 182 directivos, con sus tres porcentajes | **ATRIBUCION** | `277: I thought my results were extreme, but I learned that they wer ...` |
+| P27 | L279 a L281 | la limpieza de calendario y el pedir notas de antes y de despues | **PROCEDIMIENTO, con P25** | `279: As a result of my audit, I went on a deep calendar cleanse. I  ...` |
+| P28 | L283 | la investigacion de Lehmann Willenbrock y el mandato de cancelar o rehacer | **ATRIBUCION mas PROCEDIMIENTO** | `283: Be on the lookout as well for meetings that don’t seem valuabl ...` |
+| P29 | L285 a L289 | el caso de la reunion de los miercoles y el aviso al organizador | **PROCEDIMIENTO** | `285: I used to have a meeting on Wednesdays that I dreaded going to ...` |
+
+**LA CUENTA DE LA FRONTERA, hecha por maquina y no por mi cabeza:**
+    $ python -c "... comprueba las 29 piezas contra el fichero"
+    piezas: 29
+    primera linea: 9   ultima linea: 289
+    huecos: NINGUNO
+    solapes: NINGUNO
+    lineas con texto de la 8 en adelante: 141
+    de esas, cubiertas por alguna pieza: 141
+    sin cubrir: NINGUNA
+
+**141 DE 141 LINEAS CON TEXTO CUBIERTAS, CERO HUECOS Y CERO SOLAPES.** Es el
+mismo cruce que la vuelta 7 no hizo y costo la parada del bucle: alli una tabla
+que se anunciaba completa dejaba cuatro bloques fuera de toda pieza.
+
+## A.2. EL SALDO DE LA FRONTERA, ANTES DE CORTAR
+
+| | piezas |
+|---|---|
+| **PROCEDIMIENTO** (van a candidato) | **17**: P6 a P13, P15 a P18, P20 a P25, P27, P28 en parte, P29 |
+| **POSTURA** (no van) | **4**: P3, P4, P5, P19 |
+| **CASO** (van DENTRO de un nodo, manual 3.5) | **2**: P2, P14 |
+| **ATRIBUCION** (campo, no nodo) | **3**: P3 en parte, P26, P28 en parte |
+| **PARATEXTO** (no se mina) | **1**: P1 |
+| **DISCUTIBLE, sin decidir al publicar la frontera** | **1**: P17 |
+
+**LO QUE ESTA FRONTERA ANUNCIA Y TODAVIA NO PRUEBA: catorce candidatos.** Las
+diecisiete piezas de procedimiento se agrupan en catorce nodos porque P12 cierra
+la cabeza P6, P16 es el segundo medio de P15, P27 es el acto que sigue a la
+medida de P25 y P28 va con P29. **Si al escribirlos salen mas o menos, se dice y
+se explica.**
+
+### DISCUTIBLE 1, marcado aqui y antes de decidirlo
+
+**P17 (`L201`), el coste monetario de la reunion.** El libro pone la cuenta
+entera: quinientos empleados por una hora son quinientas horas persona, y a veinte
+dolares la hora son diez mil dolares. **Eso es un inventario de objetos de
+calculo y no una meta**, asi que por `D.27` pasaria. Lo que me hace dudar es que
+el parrafo lo usa como ARGUMENTO de por que preparar la reunion merece la pena, no
+como una cuenta que el libro mande hacer: **no hay ni un imperativo en toda la
+pieza.** Decido al llegar a el y digo que decidi.
+
+### DISCUTIBLE 2, la cabeza que NO escribo
+
+**P19 (`L209` a `L217`) anuncia cuatro tacticas y no las cuenta**, y yo **no le
+doy nodo de cabeza.** El motivo es la vara de la seccion 9: sus lineas explican
+por que la gente calla y cierran con *try the following*, **y nombrar no es
+procedimentar**. Lo discutible es que eso deja a las cuatro tacticas (P20 a P24)
+**huerfanas de madre dentro del grafo**. La alternativa habria sido fabricar una
+cabeza con pasos que el libro no escribe, que es exactamente lo que `D.30`
+prohibe. **Elijo quedarme sin madre antes que inventarla.**
