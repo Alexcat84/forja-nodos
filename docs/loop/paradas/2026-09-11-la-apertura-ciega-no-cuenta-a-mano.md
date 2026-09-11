@@ -1,4 +1,52 @@
-# PARA ALEXIS. PARADA DEL 11 sep 2026: **CREDITO ROTO, Y LA RACHA QUE LO ROMPE ES LA MIA**
+# PARADA DEL 11 SEP 2026: LA APERTURA CIEGA NO CUENTA A MANO
+
+> ## LAS CUATRO DECISIONES DEL FUNDADOR, 11 sep 2026
+>
+> **1. LA RACHA DEL AUDITOR SE REINICIA**, y no le quito la razon a su autocondena
+> (su `ACTA 12` juzgo el mismo defecto en la misma sede y acumulo: **la
+> consistencia vale mas que la absolucion**). La condicion es la respuesta a su
+> pregunta de fondo, como regla **`D.38.3`**: **LA APERTURA CIEGA PUBLICA CLASES Y
+> LECTURAS, NO CIFRAS CONTADAS A MANO.** Toda cifra que aparezca en la apertura
+> ciega sale de un instrumento de la casa corrido en esa fase (`wc -l`, el contador
+> de puentes, el barrido de vecinos) con su salida literal pegada al lado; **una
+> cifra sin instrumento al lado no se publica.** Las tres caidas se habrian cazado
+> con ese cruce, y ahora el cruce es obligatorio.
+>
+> **2. EL BARRIDO DE VECINOS DE LA APERTURA CIEGA SE HACE SOBRE GRAFO MAS
+> BANDEJAS** (**`D.38.4`**), como el auditor dejo encargado y medido: la poblacion
+> son los 135 mas todo lo que espera en cuarentena; **un vecino que esta en la
+> bandeja es vecino.**
+>
+> **3. LA INSERCION DEJA DE PEDIRSE:** es la sexta vez y las mediciones ya la
+> sostienen (tres lotes con pasos inventados entre 3 y 8 por ciento, aduana
+> mordiendo, auditor ciego, cero inserciones indebidas). Regla **`D.39`**, **LA
+> INSERCION DE LOTE CERRADO ES AUTOMATICA**: cuando un lote queda cerrado en
+> extraccion y el acta del auditor certifica su informe (todos `ENTRARIAN`, o las
+> caidas declaradas con motivo), el extractor inserta ese lote en su vuelta
+> siguiente **sin firma nueva del fundador**, con `D.36` y `D.37`, sus veredictos a
+> la bitacora y los insertados a `_insertados`. **Los candidatos de un lote ABIERTO
+> siguen en cuarentena hasta que su lote cierre.** `MODO_INSERCION` pasa a
+> `insertar` con esa letra. **Primera aplicacion:** los 68 de `zhuo_manager` que
+> esperan y los veredictos que viven solo en `REPORTE.md` pasan a la bitacora.
+>
+> **4. LOS CINCO PASOS QUE FALTAN** (1.112 firmados contra 1.107 medidos): **TAREA
+> BLOQUEANTE** del extractor antes de insertar: correr el `git log -p` sobre
+> `cuarentena/zhuo_manager/` anterior a `3ad8998`, encontrar donde se perdieron, y
+> **reconciliar con correccion declarada** (si son pasos podados con motivo, se
+> cita; si se perdieron sin motivo, se restauran del libro).
+
+> **ARCHIVADA.** Este fichero fue `docs/loop/PARA_ALEXIS.md` hasta que el fundador
+> resolvio lo que pedia. **Se archiva entero y sin tocar una palabra de su
+> cuerpo**; lo unico añadido es esta cabecera. El arnes solo mira
+> `docs/loop/PARA_ALEXIS.md`, asi que el bucle ya no esta detenido por el.
+>
+> **Y UNA LINEA SOBRE LA 4.1, porque el auditor pidio que se le dijera:** no se
+> condeno de mas. **Su `ACTA 12` juzgo el mismo defecto en la misma sede y
+> acumulo**, y desechar hoy esa lectura habria sido aplicarse a si mismo una vara
+> mas blanda que la que aplico. **Se reinicia por el remedio, no por el
+> veredicto.**
+
+---
 
 *Escrita por el **auditor** al cerrar la **ACTA 14** (`docs/loop/ACTA_AUDITOR.md`, la
 seccion que abre con `# ACTA 14`). `AUDITOR_FORJA.md` seccion 3. **`PROMPT_SIGUIENTE.md`

@@ -573,6 +573,37 @@ tema. La enumeracion tiene que estar **escrita**, y la parte tiene que ser la qu
 ese paso nombra. Una cabeza de seis vias y un vecino que no es ninguna de las seis
 **son hermanos, y su veredicto es `SANO`.**
 
+## 15.7. LA INSERCION DE UN LOTE CERRADO YA NO SE PIDE: SE HACE
+
+*`D.39` del banco, decision del fundador del 11 sep 2026, que corrige el default de
+`D.26`.*
+
+> **CUANDO UN LOTE QUEDA CERRADO EN EXTRACCION Y EL ACTA DEL AUDITOR CERTIFICA SU
+> INFORME** (todos `ENTRARIAN`, o las caidas declaradas con su motivo), **LO
+> INSERTAS EN TU VUELTA SIGUIENTE, SIN FIRMA NUEVA DEL FUNDADOR.**
+>
+> **LOS CANDIDATOS DE UN LOTE ABIERTO SE QUEDAN EN CUARENTENA HASTA QUE SU LOTE
+> CIERRE.**
+
+**`MODO_INSERCION` llega en `insertar` por defecto.** Eso **NO es barra libre**: la
+letra de arriba es la que manda, y **meter candidatos de un lote abierto es una
+caida de dato**, no un adelanto.
+
+**POR QUE LA CONDICION ES LOTE CERRADO Y NO CANDIDATO LISTO**, que es lo que
+invita a saltarsela: un candidato suelto que entra antes **se lleva por delante la
+comparabilidad del lote entero** (los que entren despues lo veran como vecino y los
+que entraron antes no), y **`D.36` solo se puede calcular sobre un lote completo**,
+porque con el lote abierto no se sabe todavia quien va a entrar.
+
+**COMO SE INSERTA, y es lo de siempre:** uno por vez, con `D.36` (el orden que
+lee) y `D.37` (la serie que dice cuantas partes tiene), **los veredictos a
+`bitacora/VEREDICTOS.jsonl`** y **los insertados a `cuarentena/_insertados/<libro>/`
+en el mismo acto** (`D.31`).
+
+**Y LO QUE ESTO ARREGLA, que llevaba tres vueltas roto:** un veredicto razonado que
+no llega a la bitacora **vive solo en `REPORTE.md`**, que no es su sede. Hoy hay
+**26** asi.
+
 ## 16. CADA CANDIDATO PASA POR LA ADUANA EN EL MISMO ACTO EN QUE SE ESCRIBE
 
 *Regla madre: decision del fundador del 10 sep 2026, D.23. La aduana NO se

@@ -570,6 +570,16 @@ prueba nada que el tag no pruebe mejor.
 
 ## D.26. LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO UN DEFAULT (10 sep 2026, decision del fundador)
 
+> ### CORRECCION DECLARADA, 11 sep 2026: ver `D.39`
+>
+> **El default se invierte: pasa a `insertar`.** Esta regla tenia razon el dia que
+> se escribio, porque **el instrumento no se habia medido nunca**. Ya se ha medido
+> seis veces, y `D.39` pone la condicion que la sustituye: **un lote CERRADO en
+> extraccion cuyo informe certifique el acta entra sin firma nueva.**
+>
+> **Lo que sigue vivo de esta regla, y por eso no se borra:** lo que **no** esta
+> cerrado **no** entra, y un modo mal escrito sigue deteniendo el arnes.
+
 *Cita: decision del fundador del 10 sep 2026, sobre la friccion que el reporte
 del PASO 3 dejo señalada: el encargo de la vuelta 1 tuvo que contradecir por
 escrito al prompt permanente del arnes.*
@@ -1373,3 +1383,146 @@ cuatro y anota cual encontro**; la prueba exige `ausentes:` con los cuatro nombr
 y **ninguno marcado como encontrado**; los cuatro **vuelven a su sitio** tras
 sellar; y **el log recupera la ventana ciega**. Con los cuatro creados antes de la
 corrida, porque si no existieran *"volvio a su sitio"* no probaria nada.
+
+### D.38.3. LA APERTURA CIEGA PUBLICA CLASES Y LECTURAS, NO CIFRAS CONTADAS A MANO (11 sep 2026, decision del fundador)
+
+*Cita: decision 1 del fundador del 11 sep 2026, sobre la parada de la vuelta 14.
+**Con ella se reinicia la racha propia del auditor**, y no se le quita la razon a
+su autocondena: su `ACTA 12` juzgo el mismo defecto en la misma sede y acumulo, y
+**la consistencia vale mas que la absolucion.***
+
+**EL DATO QUE LA PARIO:** en tres actas seguidas, **las tres caidas propias del
+auditor fueron de la misma familia**: una cifra publicada en la **apertura ciega**.
+Ninguna toco un dato, ninguna movio un veredicto, ninguna cambio un volumen de
+lote. **Todas nacieron en el mismo sitio.**
+
+> **TODA CIFRA QUE APAREZCA EN LA APERTURA CIEGA SALE DE UN INSTRUMENTO DE LA CASA
+> CORRIDO EN ESA FASE, CON SU SALIDA LITERAL PEGADA AL LADO. UNA CIFRA SIN
+> INSTRUMENTO AL LADO NO SE PUBLICA.**
+
+    | clase                     | cuantos | el instrumento, pegado                |
+    |---------------------------|--------:|---------------------------------------|
+    | candidatos en la bandeja  |      68 | `$ ls cuarentena/zhuo_manager/*.json | wc -l` -> 68 |
+
+**POR QUE ESTA SEDE Y NO OTRA.** La apertura ciega se escribe **con los cuatro
+ficheros del bucle retirados** (`D.38.3` no los devuelve: `D.34.2` los retira),
+contra reloj y **sin poder contrastar contra el reporte**. Es la sede donde mas
+facil es publicar una cifra sin cruzarla, **y `D.38.2` la trata igual de seria que
+al acta**, que es lo correcto y lo que la hacia cara.
+
+**LAS TRES CAIDAS SE HABRIAN CAZADO CON ESE CRUCE.** No es una hipotesis comoda:
+las tres eran cifras de recuento, y las tres tenian un instrumento de la casa
+capaz de darlas. **Ahora el cruce es obligatorio.**
+
+**LO QUE LA APERTURA CIEGA SI PUBLICA, y es lo que vale de ella:** **clases** (que
+es cada candidato, de que especie es cada pieza) y **lecturas** (que dice el texto,
+que linea lo sostiene). **Eso es lo que despues se compara con la del extractor**,
+y para eso no hace falta ninguna cifra contada de memoria.
+
+**NO ES UNA PROHIBICION DE MEDIR: ES UNA PROHIBICION DE CONTAR A OJO.** Medir con
+el instrumento y pegar su salida esta no solo permitido, sino que es lo unico que
+convierte una cifra de esa fase en publicable.
+
+### D.38.4. EL BARRIDO DE VECINOS DE LA APERTURA CIEGA SE HACE SOBRE GRAFO MAS BANDEJAS (11 sep 2026, decision del fundador)
+
+*Cita: decision 2 del fundador del 11 sep 2026, **como el auditor lo dejo
+encargado y medido** en su `ACTA 14` seccion 7.3.*
+
+> **LA POBLACION DEL BARRIDO ES EL GRAFO MAS TODO LO QUE ESPERA EN CUARENTENA.**
+> **Un vecino que esta en la bandeja es vecino.**
+
+**LA MEDIDA QUE LO DECIDE, y la trajo el propio auditor contra si mismo:**
+
+    el auditor barrio   135 titulos   (solo el grafo)
+    el extractor barrio 203 titulos   (135 del grafo + 68 de la bandeja)
+
+**Y EL VECINO MAS CERCANO DEL CANDIDATO 1 ESTABA EN LA BANDEJA.** Tres de los once
+pares del extractor **no existirian** en la lectura del auditor.
+
+**POR QUE LA ADUANA NO LO VE Y LA LECTURA SI TIENE QUE VERLO.** `aduana.buscar_vecinos`
+compara contra `dataset/nodos.jsonl`, que es lo correcto **para decidir si un nodo
+entra**: un candidato no puede tener por madre a algo que todavia no vive. **Pero la
+apertura ciega no decide inserciones: decide si dos lecturas independientes ven lo
+mismo**, y para eso la poblacion tiene que ser la que el extractor tuvo delante.
+
+**EL METODO, con instrumentos que ya existen y sin maquinaria nueva:**
+
+    # la poblacion entera, grafo mas bandejas, en un jsonl de usar y tirar
+    python -c "import io,json,os,glob; \
+      f=[l for l in io.open('dataset/nodos.jsonl',encoding='utf-8')]; \
+      f+= [json.dumps(json.load(io.open(p,encoding='utf-8')),ensure_ascii=False)+chr(10) \
+           for p in glob.glob('cuarentena/*/*.json') if '_insertados' not in p \
+           and '_derivadas' not in p]; \
+      io.open('/tmp/poblacion.jsonl','w',encoding='utf-8').writelines(f)"
+
+    # y el barrido de vecinos contra ESA poblacion
+    FORJA_DATASET=/tmp/poblacion.jsonl python forja.py informe --carpeta cuarentena/<lote>
+
+**EL DESCARTE DE `_insertados` Y `_derivadas` NO ES OPCIONAL:** el primero son nodos
+que ya viven en el grafo y entrarian dos veces; el segundo son copias que hace la
+maquina para medir.
+
+**Y LA CIFRA DE LA POBLACION SE PUBLICA CON SU INSTRUMENTO AL LADO** (`D.38.3`):
+decir *"barri sobre grafo mas bandejas"* sin decir **cuantos** y **sin el `wc -l`
+pegado** es exactamente la especie que `D.38.3` prohibe.
+
+## D.39. LA INSERCION DE UN LOTE CERRADO ES AUTOMATICA (11 sep 2026, decision del fundador)
+
+*Cita: decision 3 del fundador del 11 sep 2026. **Es la sexta vez que el auditor
+pide la insercion**, y las mediciones ya la sostienen.*
+
+> ### CORRECCION DECLARADA A `D.26`
+>
+> **`D.26` decia que la insercion es una autorizacion del fundador y no un
+> default, y tenia razon el dia que se escribio: el instrumento no se habia medido
+> nunca.** Ya se ha medido. **El texto de `D.26` no se borra**, y su motivo sigue
+> siendo bueno para lo que ahora cubre `D.39`: lo que no esta cerrado no entra.
+
+**LO QUE LO SOSTIENE, medido y no supuesto:**
+
+| | |
+|---|---|
+| tres lotes con su tasa de pasos inventados | entre **3 y 8 por ciento**, desde el 36 del lote 1 |
+| la aduana | **muerde**, comprobado por mutacion en cada acta |
+| la apertura ciega del auditor | **en codigo** desde `D.34.2`, con su sello verificado |
+| inserciones indebidas en toda la campaña | **CERO** |
+
+### La letra, que es lo que el default NO autoriza
+
+> **CUANDO UN LOTE QUEDA CERRADO EN EXTRACCION Y EL ACTA DEL AUDITOR CERTIFICA SU
+> INFORME** (todos `ENTRARIAN`, o las caidas declaradas con su motivo), **EL
+> EXTRACTOR INSERTA ESE LOTE EN SU VUELTA SIGUIENTE, SIN FIRMA NUEVA DEL
+> FUNDADOR.**
+>
+> **LOS CANDIDATOS DE UN LOTE ABIERTO SIGUEN EN CUARENTENA HASTA QUE SU LOTE
+> CIERRE.**
+
+**Con `D.36`** (el orden que lee), **`D.37`** (la serie que dice cuantas partes
+tiene), **sus veredictos a `bitacora/VEREDICTOS.jsonl`** y **los insertados a
+`cuarentena/_insertados/<libro>/` en el mismo acto** (`D.31`).
+
+**`MODO_INSERCION` pasa a `insertar` por defecto**, y `cuarentena` sigue
+disponible para una vuelta que no deba insertar nada.
+
+### Por que la condicion es LOTE CERRADO y no CANDIDATO LISTO
+
+**Un candidato suelto que entra antes de que su lote cierre se lleva por delante
+la comparabilidad de todo el lote:** los que entren despues lo veran como vecino y
+los que entraron antes no, **y la cifra de vecinos del lote deja de significar una
+sola cosa.** Ademas, `D.36` (el orden que lee) **solo se puede calcular sobre un
+lote completo**: con el lote abierto no se sabe todavia quien va a entrar.
+
+**EL ARNES NO PUEDE COMPROBAR ESTO.** No sabe que es un lote cerrado ni lee actas.
+**Lo comprueba el extractor leyendo esta regla, y el auditor lo verifica**, que es
+lo mismo que pasa con todas las reglas de doctrina de esta casa.
+
+### Lo que esta regla NO toca
+
+**Las condiciones de parada siguen enteras.** Un lote cuyo informe traiga caidas
+**sin motivo declarado** no esta certificado, y entonces **no se inserta y se
+trae**. `D.39` acorta el camino entre cerrar y meter; **no acorta ninguna guarda.**
+
+**Y LA PRIMERA APLICACION VA ENCARGADA, no supuesta:** los **68 candidatos de
+`zhuo_manager`** que esperan, y **los 26 veredictos razonados que hoy viven solo en
+`REPORTE.md`** y que con la insercion pasan por fin a la bitacora, que es donde
+`D.26` los pone.

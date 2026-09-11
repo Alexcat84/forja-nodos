@@ -43,17 +43,28 @@ MODELO_AUDITOR="${MODELO_AUDITOR:-claude-opus-5}"
 # Alexis, nunca del bucle (docs/loop/AUDITOR_FORJA.md, condiciones de parada).
 RAMA="${RAMA:-bucle}"
 
-# LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO UN DEFAULT (D.26, 10 sep
-# 2026). El arnes arranca en `cuarentena`: el extractor escribe candidatos y los
-# deja en cuarentena/<libro>/ con su informe, y NO inserta. Para que inserte hay
-# que pedirlo a mano:
+# LA INSERCION DE UN LOTE CERRADO ES AUTOMATICA (D.39, 11 sep 2026, decision del
+# fundador). El default pasa de `cuarentena` a `insertar`.
 #
-#     MODO_INSERCION=insertar bash orquestador_forja.sh
+# CORRECCION DECLARADA A D.26, que decia lo contrario y tenia razon el dia que se
+# escribio: la insercion era una autorizacion del fundador porque el instrumento
+# no se habia medido nunca. Ya se ha medido, seis veces, y el fundador dejo de
+# pedir la firma: tres lotes con pasos inventados entre el 3 y el 8 por ciento,
+# la aduana mordiendo, el auditor ciego en codigo y CERO inserciones indebidas.
+#
+# LO QUE EL DEFAULT NO AUTORIZA, y esta en la letra de D.39: solo entra un lote
+# CERRADO EN EXTRACCION cuyo informe certifique el acta del auditor. Los
+# candidatos de un lote ABIERTO siguen en cuarentena hasta que su lote cierre.
+# El arnes no puede comprobar eso: lo comprueba el extractor leyendo D.39, y el
+# auditor lo verifica.
+#
+#     MODO_INSERCION=cuarentena bash orquestador_forja.sh
+#
+# sigue disponible para una vuelta que no deba insertar nada.
 #
 # UN VALOR QUE NO SEA UNO DE LOS DOS DETIENE EL ARNES. No se interpreta ni se
-# cae al default: un modo mal escrito es una autorizacion que nadie dio, y
-# adivinarla es justo lo que esta variable existe para impedir.
-MODO_INSERCION="${MODO_INSERCION:-cuarentena}"
+# cae al default: un modo mal escrito es una autorizacion que nadie dio.
+MODO_INSERCION="${MODO_INSERCION:-insertar}"
 
 LOOP="docs/loop"
 mkdir -p "$LOOP"
@@ -322,7 +333,7 @@ invocar_claude() { # rol modelo prompt salida vuelta [testigo]
 # que se contradicen enseñan a elegir cual obedecer. Ahora el arnes dice UNA
 # sola cosa, y la dice el fundador al lanzarlo.
 if [ "$MODO_INSERCION" = "insertar" ]; then
-  MANDATO_INSERCION="EL FUNDADOR HA AUTORIZADO LA INSERCION EN ESTA CORRIDA (MODO_INSERCION=insertar). NINGUN NODO ENTRA SIN PASAR POR LA ADUANA: se inserta con python forja.py insertar, UN CANDIDATO POR VEZ, y si la aduana bloquea lees a los vecinos y escribes el veredicto con su razon antes de insertar. No existe la carga masiva."
+  MANDATO_INSERCION="LA INSERCION ESTA ABIERTA EN ESTA CORRIDA (MODO_INSERCION=insertar, que es el default desde D.39). PERO SOLO PARA UN LOTE CERRADO EN EXTRACCION cuyo informe haya certificado el acta del auditor: los candidatos de un lote ABIERTO se quedan en cuarentena hasta que su lote cierre, y meterlos antes es una caida de dato. NINGUN NODO ENTRA SIN PASAR POR LA ADUANA: se inserta con python forja.py insertar, UN CANDIDATO POR VEZ, y si la aduana bloquea lees a los vecinos y escribes el veredicto con su razon antes de insertar. Aplicas D.36 (el orden que lee) y D.37 (la serie que dice cuantas partes tiene), los veredictos van a bitacora/VEREDICTOS.jsonl y los insertados a cuarentena/_insertados/<libro>/ en el mismo acto. No existe la carga masiva."
 else
   MANDATO_INSERCION="NO INSERTAS NADA EN ESTA CORRIDA (MODO_INSERCION=cuarentena, que es el default). TODO candidato que escribas queda en cuarentena/<libro>/<id_propuesto>.json y pasa por la aduana EN SECO, con python forja.py informe cuarentena/<libro>/<id_propuesto>.json en el mismo acto en que lo escribes; el que caeria lo corriges y lo reintentas. NO uses python forja.py insertar, ni aunque el candidato este perfecto: LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO UN DEFAULT, y en esta corrida no la ha dado. Al cerrar el capitulo corres el informe del lote entero y pegas su saldo en el reporte."
 fi
@@ -353,7 +364,7 @@ PROMPT_EXTRACTOR="Estas en el repo forja-nodos. Lee docs/loop/EXTRACTOR.md (tus 
 APERTURA="$LOOP/APERTURA_CIEGA.md"
 SELLOS="$LOOP/SELLOS_APERTURA.jsonl"
 
-PROMPT_APERTURA_CIEGA="Estas en el repo forja-nodos, en la APERTURA CIEGA de tu turno de auditor. Lee docs/loop/AUDITOR_FORJA.md entero. AVISO: docs/loop/REPORTE.md, docs/loop/loop.log, docs/loop/ultimo_extractor.json y docs/loop/ultimo_auditor.json NO ESTAN en el arbol ahora mismo, y no estan a proposito: el mensaje final del extractor es un resumen de su propio reporte, asi que leerlo seria leer lo que vienes a leer a ciegas. NO los recuperes de git ni por ninguna otra via: recuperarlos invalida tu propia apertura y el arnes lo detecta y lo escribe. Tu trabajo AHORA es clasificar el material por ti mismo y a ciegas: abre los candidatos del lote en cuarentena/, abre el texto fuente en fuentes/, y escribe en docs/loop/APERTURA_CIEGA.md tu clasificacion de cada candidato y de cada pieza que leas, con las lineas que la sostienen. Es la lectura que despues vas a comparar con la del extractor. Cuando termines, NO commitees: el arnes sella tu fichero y lo commitea el. Despues, en tu turno normal, recibiras el reporte."
+PROMPT_APERTURA_CIEGA="Estas en el repo forja-nodos, en la APERTURA CIEGA de tu turno de auditor. Lee docs/loop/AUDITOR_FORJA.md entero. AVISO: docs/loop/REPORTE.md, docs/loop/loop.log, docs/loop/ultimo_extractor.json y docs/loop/ultimo_auditor.json NO ESTAN en el arbol ahora mismo, y no estan a proposito: el mensaje final del extractor es un resumen de su propio reporte, asi que leerlo seria leer lo que vienes a leer a ciegas. NO los recuperes de git ni por ninguna otra via: recuperarlos invalida tu propia apertura y el arnes lo detecta y lo escribe. DOS REGLAS QUE MANDAN EN ESTA FASE. D.38.3: LA APERTURA CIEGA PUBLICA CLASES Y LECTURAS, NO CIFRAS CONTADAS A MANO; toda cifra que escribas aqui sale de un instrumento de la casa corrido en esta misma fase (wc -l, el contador de pasos, el barrido de vecinos) y va con su salida literal pegada al lado, y una cifra sin instrumento al lado NO SE PUBLICA. D.38.4: tu barrido de vecinos se hace sobre GRAFO MAS BANDEJAS, es decir dataset/nodos.jsonl mas todo lo que espera en cuarentena/<libro>/, porque un vecino que esta en la bandeja es vecino. Tu trabajo AHORA es clasificar el material por ti mismo y a ciegas: abre los candidatos del lote en cuarentena/, abre el texto fuente en fuentes/, y escribe en docs/loop/APERTURA_CIEGA.md tu clasificacion de cada candidato y de cada pieza que leas, con las lineas que la sostienen. Es la lectura que despues vas a comparar con la del extractor. Cuando termines, NO commitees: el arnes sella tu fichero y lo commitea el. Despues, en tu turno normal, recibiras el reporte."
 
 apertura_ciega() { # $1 = vuelta
   local vuelta="$1" refugio="" sello fecha reaparecidos=""

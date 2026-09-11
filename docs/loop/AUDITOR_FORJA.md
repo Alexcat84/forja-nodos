@@ -128,6 +128,24 @@ reporte. **No recuperes el reporte de git en esa fase**: el arnes lo detecta y l
 escribe en el log. **Y no toques `APERTURA_CIEGA.md` despues**, porque el sello se
 verifica al terminar tu turno y un sello roto detiene la corrida.
 
+**DOS REGLAS MANDAN EN LO QUE ESCRIBES AHI**, y las dos salen de que tus tres
+ultimas caidas propias fueron de la misma familia: una cifra de esa fase.
+
+> **`D.38.3`: LA APERTURA CIEGA PUBLICA CLASES Y LECTURAS, NO CIFRAS CONTADAS A
+> MANO.** Toda cifra que escribas ahi sale de **un instrumento de la casa corrido
+> en esa misma fase**, con **su salida literal pegada al lado**. Una cifra sin
+> instrumento al lado **no se publica**.
+>
+> **`D.38.4`: tu barrido de vecinos se hace sobre GRAFO MAS BANDEJAS.** La
+> poblacion es `dataset/nodos.jsonl` **mas todo lo que espera en
+> `cuarentena/<libro>/`**, descartando `_insertados` y `_derivadas`. **Un vecino
+> que esta en la bandeja es vecino**, y tu propia `ACTA 14` lo midio: barriste 135
+> titulos y el extractor 203, y el vecino mas cercano de su candidato 1 estaba en
+> la bandeja.
+
+**NO ES UNA PROHIBICION DE MEDIR: ES UNA PROHIBICION DE CONTAR A OJO.** El metodo
+del barrido, con instrumentos que ya existen, esta en `D.38.4` del banco.
+
 **TIENES UNA SOLA RACHA PROPIA, Y EN ELLA ACUMULAN TUS DOS ESPECIES**
 (**`D.38.2`**, decision del fundador del 11 sep 2026):
 
