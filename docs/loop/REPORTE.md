@@ -13939,3 +13939,432 @@ escribe** (`EXTRACTOR.md` 16). Las aristas van en bloque propio y titulado.
 
 **SON CINCO TAREAS CONTANDO LA 1 COMO UNA**, que es como las numera el encargo, y
 el tope de `EXTRACTOR.md` 1.3 es cinco. **No declaro cola.**
+
+---
+
+# TAREA 1. LOS REGISTROS, SUS SEIS PARTES
+
+## H.1.a. LA ACTA 12, LEIDA ENTERA, Y QUE ME CAMBIA DE LO QUE IBA A HACER
+
+*La lei de `10591` a `11520` de `docs/loop/ACTA_AUDITOR.md`, que es el tramo entero
+del acta:*
+
+    $ grep -n "^# ACTA" docs/loop/ACTA_AUDITOR.md | tail -1
+    10591:# ACTA 12. VUELTA 12, lote 3 (`zhuo_manager`), `cap_07` a `cap_10`
+    $ wc -l docs/loop/ACTA_AUDITOR.md
+    11520
+
+**NO LA RESUMO. Recojo las diez adjudicaciones y digo, una a una, que cambia en mi
+trabajo de hoy.** La columna de la derecha es lo unico que me interesa de esta tabla:
+**que hago distinto.**
+
+| # | adjudicado | **que me cambia HOY** |
+|---:|---|---|
+| 1 | `P17` de `cap_07` sostenido fuera, por `D.27` restriccion 1 | **nada que hacer.** Me confirma que un tramo sin un solo imperativo no da nodo por bien que argumente. Lo aplico en `cap_12`, que es un epilogo y va lleno de eso |
+| 2 | `MAKE IT SAFE` sin nodo, y **las huerfanas son hermanas, veredicto `SANO`** | **me cambia el reflejo.** Cuando en `cap_11` me salga una cabeza sin pasos propios con partes que si son nodos, **no busco figura nueva ni fuerzo cabeza**: escribo las partes y el veredicto de las hermanas es `SANO` |
+| 3 | la tasa de puentes se cuenta con **pasos escritos** en el denominador | **me fija la TAREA 4.** Las denominaciones no entran en el denominador. Lo aplico tal cual |
+| 4 | mi `SANO` sostenido, **cae la lectura del auditor** | **me da la vara que uso hoy en 1.f**: lo que decide entre `SANO` y `CONTINUA` es **si el hijo ejecuta una linea que la madre enuncia**, no si estrecha el objeto. **Compartir un consejo no es continuar un trabajo** |
+| 5 | `HIRING IS A GAMBLE` fuera por `D.27` 1 y 2 a la vez | **nada que hacer**, y es el ejemplar que me llevo delante para el epilogo |
+| 6 | mi autocaida de los embudos confirmada, **no acumula** | **me cambia el animo de marcar.** Un discutible que cae a favor del dato es la metrica funcionando: **marco con holgura y sin miedo** |
+| 7 | `Balancing Short-Term and Long-Term` sostenida | **nada que hacer** |
+| 8 | `You Pick and Choose Your Battles` fuera **por `D.27`, no por `P.19`** | **ME CAMBIA UNA CITA MIA, y es de las dos que mas.** Yo estire `P.19` de *dentro del candidato* a *entre capitulos*, y eso es ensanchar una regla. **Hoy no vuelvo a citar `P.19` para material de otro capitulo: cito `D.27`**, que ya cubre el caso |
+| 9 | la cuarta cabeza descartada, sostenido el descarte, mi propuesta sube a Alexis | **nada que hacer, y no es parada.** Si me sale la quinta, la descarto igual y la cuento |
+| 10 | **un ordinal es transcripcion cuando la serie que implica esta IMPRESA; es puente cuando anuncia una serie que la pagina no abre** | **ME CAMBIA LA VARA CON LA QUE CUENTO PUENTES, y es la otra que mas.** Es mi propia vara de `A.4` afilada con mis dos propios casos, asi que **la uso hoy tal cual en `cap_11` y `cap_12` y en la TAREA 4** |
+
+**Y LO QUE ME LLEVO DE LA PARTE QUE NO ES TABLA, en dos lineas, porque me cambia el
+metodo y no solo el criterio:**
+
+1. **`1.f` y `2.7` del acta: una cola vacia no es un veredicto.** Lo escribi yo en
+   `D.5` y no lo hice en `cap_10`. **Hoy lo hago en los dos capitulos**, y esta
+   encargado expresamente para `cap_11` y `cap_12` tambien.
+2. **El remedio mecanico de `1.b`: todo paso que anada DESPUES de la relectura de
+   fidelidad se vuelve a marcar contra su parrafo antes de cerrar el capitulo.** Es
+   el hueco por el que se colo el unico puente que sobrevivio.
+
+## H.1.b. EL PUENTE QUE SOBREVIVIO, CORREGIDO, Y SU REMEDIO DE FONDO CUMPLIDO
+
+### El puente, y leo bien que parte lo es
+
+**El auditor afino su propia lectura al abrir la linea, y sale mas estrecho de lo que
+el escribio a ciegas: la caja de tiempo SI la dice el libro.** Lo compruebo yo:
+
+    $ sed -n '237p' fuentes/zhuo_manager/cap_07.md
+    237: Another tactic I like is the "Post-it note" opening. Before launching into a
+         discussion about a complex topic ... give everyone a pad of Post-it notes and
+         ask them to write down their thoughts on the topic. Then, have the room work
+         in quiet concentration for about ten to fifteen minutes.
+
+| pieza del paso 5 viejo | el libro lo dice? | que hago |
+|---|---|---|
+| *la otra tactica que el libro nombra en esta misma seccion* | **SI**, `L237`: *Another tactic I like* | se queda |
+| *el arranque con notas adhesivas* | **SI**, `L237`: *the "Post-it note" opening* | se queda |
+| *que trae pasos propios* | **NO.** Es vocabulario de esta casa sobre su propio corte de nodos | **se retira** |
+| *y una caja de tiempo que esta rueda no tiene* | **la caja de tiempo SI** (`L237`, *ten to fifteen minutes*). **LA COMPARACION NO:** el libro nunca dice que la rueda de la sala carezca de caja de tiempo | **se retira la comparacion y se transcribe la caja** |
+
+**EL PUENTE ES LA CLAUSULA COMPARATIVA Y NADA MAS, y estaba dentro de un paso
+accionable**, o sea dentro de algo que alguien iba a ejecutar. **Lo sostengo tal como
+el auditor lo afino, y no me escudo en que su version ciega era mas ancha.**
+
+### La correccion, con las dos versiones a la vista
+
+    VIEJO: Prueba tambien la otra tactica que el libro nombra en esta misma seccion,
+           el arranque con notas adhesivas, que trae pasos propios y una caja de
+           tiempo que esta rueda no tiene.
+
+    NUEVO: Prueba tambien la otra tactica que el libro nombra en esta misma seccion,
+           el arranque con notas adhesivas, en el que la sala trabaja en concentracion
+           silenciosa entre diez y quince minutos.
+
+**Las dos mitades del paso nuevo son transcripcion de `L237`**, y el paso sigue
+nombrando a la hija para que la arista de `A.6` se sostenga.
+
+### La aduana, vuelta a pasar con el fichero corregido, con su salida pegada
+
+    $ python forja.py informe cuarentena/zhuo_manager/cambiar_formato_reunion_favorecer_participacion.json
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 1
+    nodos en el grafo de destino: 135
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    [ENTRARIA] cambiar_formato_reunion_favorecer_participacion
+
+### EL REMEDIO DE FONDO, Y LO DECLARO CUMPLIDO CAPITULO A CAPITULO
+
+> **TODO PASO QUE ANADA DESPUES DE LA RELECTURA DE FIDELIDAD SE VUELVE A MARCAR CONTRA
+> SU PARRAFO ANTES DE CERRAR EL CAPITULO.**
+
+**Y digo por que se colo el de la vuelta 12, porque el agujero es de forma y no de
+descuido:** ese paso 5 **no existia** cuando corri la relectura de `A.4`. Lo escribi
+despues, en `A.6`, **para que la madre pudiera nombrar a su hija**. `D.30` dice *en el
+acto de escribir cada candidato*, y **un paso escrito en el acto de declarar una arista
+no esta en ese acto**: se cuela por el hueco entre los dos.
+
+**Lo declaro cumplido por capitulo en `H.2` y en `H.3`**, con la cuenta de pasos
+anadidos despues de la relectura y su marca. **Si la cuenta es cero, lo digo tambien**:
+un remedio que solo se declara cuando se usa es un remedio que nadie puede comprobar.
+
+## H.1.c. EL RECUENTO DEL SELLO: EL METODO, DECLARADO AQUI Y CORRIDO AL CERRAR
+
+**Lo escribo aqui al abrir y lo corro al cerrar**, porque un sello se recuenta contra
+las secciones que lo sostienen **y esas secciones todavia no existen.**
+
+**QUE RECUENTO, uno por uno, y de que seccion sale cada cifra:**
+
+| cifra del sello | la seccion que la sostiene | como se recuenta |
+|---|---|---|
+| veredictos escritos | las filas de las tablas de veredicto de `H.1.f`, `H.2` y `H.3` | contando filas de tabla a maquina, **y restando la fila que este contada en dos sumandos** |
+| aristas declaradas | las filas de los bloques de arista de `H.1.f`, `H.2` y `H.3` | contando filas |
+| candidatos escritos | `ls cuarentena/zhuo_manager/*.json` menos los 60 de la apertura | conteo de ficheros, no de tabla |
+| pasos escritos | los `pasos_accionables` de los candidatos nuevos, leidos del JSON | recorriendo los ficheros |
+| piezas de frontera | las filas de las dos tablas de frontera | contando filas **y comprobando que la expresion captura TODAS**, que es lo que me cazo el `66 de 95` |
+| cabezas examinadas por `D.37` | las filas marcadas como caso de serie | contando filas, **con la unidad de `H.1.e` declarada** |
+
+**LA LECCION QUE ESTOY PAGANDO, dicha con mi nombre:** las tres ultimas caidas de
+especie `REPORTE` de esta casa son **la misma caida**, ACTA 8, ACTA 11 (*43 de 162* que
+eran 41) y ACTA 12 (*15 veredictos* que son 14). **No es criterio, es aritmetica.** Y
+mi propia vuelta 12 demuestra que el remedio funciona cuando se usa: la corrida de una
+vuelta que escribi para las 95 filas de frontera **me cazo que mi expresion capturaba
+66 de 95 antes de publicar `66 de 66`.** Lo que hizo falta alli es lo que falto en el
+sello.
+
+**Y QUE NO ES:** no es maquinaria (`EXTRACTOR.md` 13). **No se commitea como
+instrumento, no vive en `forja.py`, y no lo propongo como guarda.** Es una corrida de
+una vuelta en `python -c` sobre mi propio reporte, igual que la de la vuelta 12.
+
+**LA SALIDA VA PEGADA EN EL SELLO**, y si alguna cifra sale distinta de la que iba a
+escribir, **escribo las dos y digo cual manda.**
+
+## H.1.d. `ORDEN_DE_LOTES.md`, CORRECCION DECLARADA, HECHA
+
+**Toque SOLO la columna `estado` del lote 3 y la linea de volumen del lote 3.** Ni el
+orden, ni las claves, ni la cuenta de capitulos, ni las palabras: eso lo fija `D.24`.
+
+    $ sed -n '69,71p' docs/loop/ORDEN_DE_LOTES.md
+    69:     lote 2   DOS capitulos por vuelta    decision del fundador, 10 sep 2026
+    70:     lote 3   TRES capitulos por vuelta    3,31 por ciento, FIRMADA el 11 sep
+    71:              ~~TRES~~  la vuelta 12 corrio a CUATRO por encargo del fundador
+
+**LO QUE QUEDA ESCRITO, con el texto viejo tachado y no borrado:**
+
+1. **El estado**, en la fila del lote 3: la frase de la vuelta 11 (*6 de 12 ficheros
+   minados, 68 candidatos*) queda tachada, y al lado la vigente: **al cierre de la
+   vuelta 12, 10 de 12 ficheros minados, 60 candidatos en `cuarentena/zhuo_manager/` y
+   68 archivados en `cuarentena/_insertados/zhuo_manager/`, SIN INSERTAR.** **Las tres
+   cifras las remedi yo al abrir esta vuelta** y estan en `H.0` con su comando.
+2. **El volumen**: al lado de *lote 3, TRES capitulos por vuelta* queda que **la vuelta
+   12 corrio a CUATRO por encargo del fundador**, con el bloque de correccion declarada
+   que cita **ACTA 12 seccion 11** y su motivo: *un encargo asigna el trabajo de una
+   vuelta y la tabla fija el techo de un lote*, y `AUDITOR_FORJA.md` 8.1 ya llevaba la
+   redaccion nueva.
+
+**LA FILA DEL CIERRE DE LA VUELTA 13 NO LA ESCRIBO AQUI:** al cerrar seran **12 de 12
+minados** y otra cuenta de candidatos, y **el estado al cierre se mide al cierre**
+(`EXTRACTOR.md` 4). Va en el cierre, con su propia correccion declarada.
+
+## H.1.e. LA AMBIGUEDAD DE UNIDAD DEL SELLO, DECLARADA Y RESUELTA EN UNA LINEA
+
+**El auditor tiene razon y no me escondo detras de que no la contara como caida.** Mi
+`G.6` dice *0 por `D.37`, sobre **4** casos examinados*, y mi propio contador iba en
+**6 en la vuelta y 12 acumulados**: `A.6` da 8, `B.6` da 9, `C.6` da 11, y `cap_10`
+suma uno. **La palabra `caso` significaba dos cosas en el mismo sello.**
+
+> ### **LA UNIDAD, DICHA EN UNA LINEA Y USADA DESDE HOY:**
+>
+> **UN CASO EXAMINADO POR `D.37` ES UNA CABEZA, NO UN CAPITULO.** Es una cabeza que
+> **dice cuantas partes tiene y las nombra**, abierta y medida contra `D.37` para ver si
+> su arista de serie se cablea. **Un capitulo con tres cabezas son tres casos.**
+
+**POR QUE ESTA Y NO LA OTRA:** `D.37` habla de **un nodo que dice en su titulo o en su
+texto cuantas partes tiene**, y un capitulo no es un nodo. **La unidad de una regla es
+la unidad de su sujeto.** La lectura por capitulos era cierta bajo el titulo de `D.5`
+(*por CUARTA vez*), y **no la borro**: queda dicho que alli el 4 contaba capitulos.
+
+**DESDE HOY el sello escribe las dos cifras separadas y con su nombre**: cabezas
+examinadas por `D.37` en la vuelta, y cabezas acumuladas en el lote. **Ni una sola
+palabra para las dos.**
+
+## H.1.f. LOS TRES PARES QUE NADIE ADJUDICO, LEIDOS CON LOS PASOS DE LOS DOS LADOS
+
+**Empiezo reconociendo lo que el auditor encontro, porque es exacto:** en `cap_08` la
+aduana levanto un solo vecino, no me conforme con la ausencia y **elegi 18 pares por
+lectura y los medi** (`B.5.1`). **En `cap_10` la aduana levanto cero y no repeti ese
+paso**, aunque mi propio `D.5` dice que *la cola vacia certifica que no hay gemelo, no
+que no haya madre*. **Lo dije y no lo hice.** No hay veredicto mal puesto porque no hay
+veredicto, y no entro nada al grafo, **pero el que tiene el grafo delante soy yo.**
+
+**LOS LEO AHORA CON LOS PASOS DE LOS DOS LADOS ABIERTOS**, que es como manda `6.2`
+(`P.17`: gana la lectura que leyo los pasos), **y no por la senial, que no levanto
+ninguno.**
+
+### La vara que uso, que es la que la ACTA 12 me acaba de adjudicar a mi favor
+
+*ACTA 12 seccion 2.3, mi discutible 4 sostenido y la lectura contraria caida:*
+
+1. **`REPITE` se descarta si lo que queda FUERA del solape es procedimiento en los dos
+   lados** (`6.1`, la vara no tiene bascula).
+2. **Entre `SANO` y `CONTINUA` decide si el hijo EJECUTA UNA LINEA QUE LA MADRE
+   ENUNCIA**, una linea de la madre desplegada en N pasos del hijo. **Compartir un
+   consejo no es continuar un trabajo.**
+3. **No se adjudica citando una senial** (`D.19`).
+
+### PAR 1. `alinear_prioridades_reporte_directivo` contra `revisar_proposito_personas_proceso`
+
+**LOS DOS LADOS, ABIERTOS ANTES DE CLASIFICAR:**
+
+| | `revisar_proposito_personas_proceso` (**vive**, 7 pasos) | `alinear_prioridades_reporte_directivo` (candidato, 11 pasos) |
+|---|---|---|
+| activacion | te preguntas como ayudar a un grupo a lograr resultados, con la multitud de tareas del dia delante | **tus reportes son a su vez directivos** con sus propias listas largas |
+| objeto | **las tareas de TU dia**, ordenadas en tres cubos | **la conversacion individual** con un reporte que ya es directivo |
+| entregable | la palanca que falla identificada **por lo que produce** | **tu y tu reporte viendo lo mismo** en lo mas importante |
+| fuera del solape, en la madre | ordenar tus tareas en los tres cubos (paso 2); **el diagnostico por sintoma**: conflictos si falla el proposito, problemas si falla la gente, tareas simples complicadisimas si falla el proceso (pasos 3 a 5); el efecto multiplicador (paso 7) | |
+| fuera del solape, en el hijo | | **toda la primera mitad**: la doctrina contra el parte de situacion (pasos 1 y 2), la pregunta de las prioridades (paso 4) y discutir que papel juegan ellos (paso 5); el caso de las personas antes que los proyectos (paso 8); **y la segunda capa de preguntas de los tres cubos** |
+| lo que comparten | los tres cubos: proposito, personas, proceso | los mismos tres |
+
+**LA SEGUNDA CAPA, QUE ES LO QUE MIDE SI EL HIJO ANADE, CON SUS TRES LINEAS ABIERTAS:**
+
+    $ sed -n '137p' fuentes/zhuo_manager/cap_10.md
+    137: Digging in one level deeper, does your report know what matters to you when it
+         comes to team bu...
+    $ sed -n '143p' fuentes/zhuo_manager/cap_10.md
+    143: This week's tasks, meetings, and emails will be little blips lost in the sands
+         of time. What ...
+    $ sed -n '145p' fuentes/zhuo_manager/cap_10.md
+    145: Lastly, are your reports establishing healthy processes for their teams?
+         Whether it's advice ...
+
+**LAS PREGUNTAS DE `L137` Y `L145` NO ESTAN EN LA MADRE Y NO PODRIAN ESTARLO:** son
+sobre **el reporte como entrenador de SUS propios reportes** y sobre **los procesos que
+el monta para SU equipo**. La madre pregunta por tu equipo; el hijo pregunta por el
+equipo de tu reporte. **Es una capa que la madre no tiene porque su objeto no la
+admite.**
+
+**LA LINEA DE LA MADRE QUE EL HIJO EJECUTA, que es el punto 2 de mi vara:**
+
+    paso 6 de revisar_proposito_personas_proceso (leido del dataset):
+      Preguntate de continuo como puedes influir en estas tres palancas para
+      mejorar los resultados de tu equipo.
+
+**UNA LINEA DE LA MADRE, SEIS PASOS DEL HIJO** (del 6 al 11), y en un sitio nombrado
+que la madre no nombra: la individual con un reporte que ya es directivo.
+
+> ### **VEREDICTO: `CONTINUA`. SOSTENGO LA LECTURA CIEGA DEL AUDITOR.**
+>
+> **RAZON:** la madre manda **influir en las tres palancas** en una linea (su paso 6) y
+> el hijo **la ejecuta** en seis pasos sobre un objeto que la madre no tiene, el reporte
+> que es a su vez directivo, con la segunda capa de preguntas impresa en `L137`, `L143`
+> y `L145`. **No es `REPITE`** porque fuera del solape hay procedimiento en los dos
+> lados: el diagnostico por sintoma de la madre y la doctrina contra el parte de
+> situacion del hijo. **Y no es `SANO`** porque lo que comparten no es un consejo suelto
+> como en mi discutible 4: es **el acto entero que la madre enuncia**.
+
+**Y UNA COSA QUE ENCUENTRO YO Y QUE NO ESTABA EN EL ENCARGO, y la declaro porque leer
+al vecino entero es lo que me enseño la vuelta 12:**
+
+    paso 9 del candidato:    ... por que te levantas cada manana y vienes a trabajar?
+                             Que sera distinto en el mundo si tu equipo consigue sus
+                             metas?
+    paso 1 de alinear_equipo_proposito_comun (VIVE, y es OTRO nodo):
+                             ... Por que te levantas y eliges hacer esto ... y que seria
+                             distinto en el mundo si tu equipo tuviera un exito
+                             descomunal.
+
+**SON LAS MISMAS DOS PREGUNTAS EN DOS NODOS DISTINTOS, y no es duplicado de la casa:
+ES EL LIBRO EL QUE LAS REPITE.** `cap_10.md:143` las vuelve a imprimir dentro de la
+individual, y la autora las habia impreso en su capitulo del proposito. **`P.19` no
+aplica**, que es justo la leccion de la adjudicacion 8: `P.19` es repeticion **dentro
+del propio candidato**. **El veredicto de este cuarto par es `SANO`** y lo escribo en la
+tabla de abajo: **dos nodos que citan la misma pregunta del libro en dos actos distintos
+no son el mismo nodo.**
+
+### PAR 2. `decidir_directivo_no_encaja_papel` contra `mover_rapido_persona_papel_equivocado`
+
+**El auditor lo llama el de mayor riesgo de `REPITE` del lote entero, y suscribo el
+aviso. Por eso lo abro entero.**
+
+| | `mover_rapido_persona_papel_equivocado` (**vive**, 9 pasos) | `decidir_directivo_no_encaja_papel` (candidato, 9 pasos) |
+|---|---|---|
+| objeto | **alguien de tu equipo**, cualquiera | **UN DIRECTIVO de tu equipo** |
+| activacion | lleva tiempo sin hacer trabajo de calidad, sin ser productivo o bajando la moral | **no esta cumpliendo las expectativas de SU PAPEL** de directivo |
+| entregable | cual de las **cinco razones** falla, si se arregla hablando, y la decision | **contestada la pregunta de si volverias a contratarle con el puesto abierto** |
+| fuera del solape, en la madre | **las cinco razones** (paso 3); **el ochenta por ciento** de su propia experiencia (paso 2); cuales se arreglan hablando y cuales no (pasos 4 a 6); lo que el ciclo le hace **a la otra persona** (paso 7); **Jack Welch** (paso 9) | |
+| fuera del solape, en el hijo | | **el coste del multiplicador negativo con sus tres formas** (paso 2); **el caso del que no empeora y aun asi frena** (paso 3); **el patron de la organizacion que escala** (paso 4); **la pregunta del puesto abierto** (paso 7) |
+
+**LAS DOS PIEZAS PROPIAS DEL HIJO, CON SUS LINEAS ABIERTAS:**
+
+    $ sed -n '155p' fuentes/zhuo_manager/cap_10.md
+    155: At fast-scaling organizations, it's common for new teams to form almost
+         overnight to tackle n...
+    $ sed -n '157p' fuentes/zhuo_manager/cap_10.md
+    157: Now, fast-forward two or three years. Due to a mix of ingenuity, hard work,
+         and luck, some of t...
+    $ sed -n '165p' fuentes/zhuo_manager/cap_10.md
+    165: A friend of mine gave me the gift of another clarifying question. He asked:
+         "Assume the role ...
+
+**`L155` A `L157` ES UN DIAGNOSTICO ENTERO QUE LA MADRE NO TIENE:** el equipo que crecio
+mas deprisa que su jefe. **No es una razon de las cinco de la madre**, es una historia
+de la organizacion, y **solo existe si el objeto es un directivo.** Y `L165` es **una
+pregunta distinta de todas las de la madre**: la madre pregunta si esta preparado para
+tener exito, el hijo pregunta **si volverias a contratarle con el puesto abierto.**
+
+**DESCARTO `REPITE` CON LA VARA SIN BASCULA:** el solape es grande y eso **no decide**
+(`6.1`). Lo que decide es que fuera de el hay procedimiento en los dos lados, **y lo
+hay: cinco razones y una cifra de un lado, un diagnostico de escalado y una pregunta de
+contratacion del otro.**
+
+**Y LA LINEA DE LA MADRE QUE EL HIJO EJECUTA:**
+
+    paso 8 de mover_rapido_persona_papel_equivocado (leido del dataset):
+      Asi que si no crees que alguien este preparado para tener exito en su papel
+      actual, lo mas amable que puedes hacer es ser honesto con el y apoyarlo para
+      que siga su camino.
+
+**`ALGUIEN` EN UNA LINEA DE LA MADRE, Y EL HIJO DESPLIEGA EN NUEVE PASOS EL CASO EN QUE
+ESE ALGUIEN ES UN DIRECTIVO**, que es el caso donde el coste se multiplica por el
+equipo que el lleva.
+
+> ### **VEREDICTO: `CONTINUA`. SOSTENGO LA LECTURA CIEGA DEL AUDITOR, Y SOSTENGO SU AVISO.**
+>
+> **RAZON:** la madre decide sobre **alguien** que no esta preparado para su papel, en
+> una linea (su paso 8); el hijo **ejecuta esa linea sobre un directivo**, que es el
+> unico caso en el que el coste se multiplica por todo un equipo, con **un diagnostico
+> propio** (`L155` a `L157`) y **una pregunta propia** (`L165`) que la madre no tiene.
+> **No es `REPITE`** aunque el solape sea el mayor del lote, porque la vara no tiene
+> bascula y fuera del solape hay procedimiento en los dos lados.
+>
+> **Y DEJO ESCRITO EL AVISO PARA QUIEN LO INSERTE:** este es el par que mas de cerca
+> hay que mirar del lote 3. **Si al insertarlo alguien lee los dos y ve un solo
+> procedimiento, mi `CONTINUA` es el primero que debe caer**, y lo digo antes de saber
+> si acierto. **Va marcado como discutible.**
+
+### PAR 3. `ligar_tareas_proposito_organizacion` contra `alinear_equipo_proposito_comun`
+
+**PRIMERO CORRIJO UN PUNTERO DEL ENCARGO, con su medicion delante, porque `EXTRACTOR.md`
+4 manda que una cita lleve su linea:** la tabla del encargo pone `L245` a `L247` sin
+decir de que fichero, y **no son de `cap_10.md`**, que tiene 221 lineas:
+
+    $ wc -l fuentes/zhuo_manager/cap_10.md fuentes/zhuo_manager/cap_09.md
+      221 fuentes/zhuo_manager/cap_10.md
+      287 fuentes/zhuo_manager/cap_09.md
+    $ sed -n '245,247p' fuentes/zhuo_manager/cap_10.md
+      (vacio: el fichero acaba en 221)
+    $ sed -n '245p' fuentes/zhuo_manager/cap_09.md
+    245: At the same time, beware of conflating your purpose with the proxies that you
+         use to measure yo...
+
+**SON DE `cap_09.md`, Y EL ACTA LO DICE BIEN EN SU `2.6`** (*mis 13 y 14 de `cap_10`, y
+mi 12 de `cap_09`*). **No es caida de nadie: es una columna de la tabla del encargo que
+no lleva el fichero, y la relleno yo con la medicion delante en vez de suponerlo.**
+
+**LA SECCION ENTERA DEL LIBRO, PARA LEER LA FRONTERA ANTES DE CLASIFICAR:**
+
+    $ sed -n '235p' fuentes/zhuo_manager/cap_09.md
+    235: Talk about How Everything Relates to the Vision
+    $ sed -n '247p' fuentes/zhuo_manager/cap_09.md
+    247: It's a fine goal to set, but don't lose sight of the fact that it's an
+         approximation of w...
+    $ sed -n '249p' fuentes/zhuo_manager/cap_09.md
+    249: This is why it's so important to remind people of what really matters.
+         Describe over and over...
+
+| | `alinear_equipo_proposito_comun` (**vive**, 6 pasos) | `ligar_tareas_proposito_organizacion` (candidato, 8 pasos) |
+|---|---|---|
+| objeto | **el proposito de TU equipo**, el porque | **el proposito de la ORGANIZACION mayor** y el sitio de tu equipo en el |
+| fuera del solape, en la madre | las **tres preguntas** con que el libro despliega el porque (paso 1); creerlo tu antes (paso 3); no limitarte a exigir que crean (paso 5); subir a bordo al que trabaja sobre otra impresion (paso 6) | |
+| fuera del solape, en el hijo | | **la vision paraguas de la organizacion** y el papel concreto de tu equipo (pasos 1 y 2); **la lente de decidir** (paso 3); **y el aviso del indicador**, con su caso numerico y su consecuencia observable (pasos 5 y 6) |
+| lo que comparten | compartir el proposito en cada ocasion (paso 4) | recordar lo que importa y conectar cada tarea (pasos 7 y 8) |
+
+**EL AVISO DEL INDICADOR ES LO QUE DECIDE, Y ES PROCEDIMIENTO PROPIO CON SU INVENTARIO
+IMPRESO** (`D.27` en su cara positiva): `L245` pone el objeto (*proxies*), el caso (la
+queja de cliente y los tres dias) y **`L247` pone la consecuencia observable**: si sube
+la velocidad y baja la calidad, no te estas acercando a tu vision. **La madre no tiene
+ni una linea sobre indicadores.**
+
+**Y LA LINEA DE LA MADRE QUE EL HIJO EJECUTA:**
+
+    paso 2 de alinear_equipo_proposito_comun (leido del dataset):
+      Comprueba que todos en el equipo tienen una imagen parecida de por que
+      importa nuestro trabajo.
+
+**UNA LINEA, Y EL HIJO LA DESPLIEGA EN CUATRO PASOS PARA EL CASO EN QUE ESA IMAGEN
+VIENE DE ARRIBA**: vision paraguas, papel de tu equipo, la lente de decidir, y el
+conflicto que aparece cuando falta.
+
+> ### **VEREDICTO: `CONTINUA`. SOSTENGO LA LECTURA CIEGA DEL AUDITOR.**
+>
+> **RAZON:** la madre manda en una linea (su paso 2) que todos tengan la misma imagen de
+> por que importa el trabajo, y el hijo **la ejecuta** para el caso de estar dentro de
+> una organizacion mayor, **anadiendo dos procedimientos que la madre no tiene**: la
+> vision paraguas con el papel de tu equipo, y **el aviso de no confundir el proposito
+> con el indicador que lo mide**, con su caso numerico y su consecuencia observable
+> (`cap_09.md:245` a `:247`). **No es `REPITE`** porque fuera del solape hay
+> procedimiento en los dos lados.
+
+### LA TABLA DE LOS VEREDICTOS DE `H.1.f`, QUE ES LA QUE SE CUENTA
+
+**Cero inserciones, asi que ninguno de estos toca `bitacora/VEREDICTOS.jsonl`:** viven
+aqui, con su razon escrita, para el dia en que Alexis autorice la insercion.
+
+| # | candidato | vecino que ya vive | veredicto | razon, en una linea |
+|---:|---|---|---|---|
+| 1 | `alinear_prioridades_reporte_directivo` | `revisar_proposito_personas_proceso` | **`CONTINUA`** | el paso 6 de la madre manda influir en las tres palancas en una linea; el hijo la ejecuta en seis pasos sobre el reporte que ya es directivo, con la segunda capa de `L137`, `L143` y `L145` |
+| 2 | `decidir_directivo_no_encaja_papel` | `mover_rapido_persona_papel_equivocado` | **`CONTINUA`**, y **marcado discutible** | el paso 8 de la madre decide sobre **alguien**; el hijo lo despliega sobre **un directivo**, con el diagnostico de `L155` a `L157` y la pregunta de `L165` que la madre no tiene |
+| 3 | `ligar_tareas_proposito_organizacion` | `alinear_equipo_proposito_comun` | **`CONTINUA`** | el paso 2 de la madre pide la imagen comun en una linea; el hijo la ejecuta desde la vision paraguas y anade el aviso del indicador de `cap_09.md:245` a `:247` |
+| 4 | `alinear_prioridades_reporte_directivo` | `alinear_equipo_proposito_comun` | **`SANO`** | **par que encuentro yo y que no venia en el encargo.** Comparten dos preguntas literales, **y es el LIBRO el que las repite** en `cap_10.md:143`. Dos actos distintos que citan la misma pregunta no son el mismo nodo, y **`P.19` no aplica**: es repeticion dentro del propio candidato (adjudicacion 8) |
+
+**CUATRO VEREDICTOS EN `H.1.f`: TRES `CONTINUA` Y UN `SANO`.** Tres los pidio la
+lectura del auditor y **uno lo pidio mi propia lectura del vecino entero**. Ninguno lo
+pidio la senial: **la aduana levanto cero en `cap_10`**, y esa es toda la cuestion.
+
+**Y SOSTENGO LOS TRES DEL AUDITOR, QUE ES LO QUE EL PEDIA QUE DIJERA SI NO LOS
+SOSTENIA.** Los tres se sostienen leidos con los pasos de los dos lados delante. **El
+segundo lo marco discutible**, no porque dude de la clase, sino porque es donde el
+solape es mayor y quiero que el que inserte lo lea primero.
