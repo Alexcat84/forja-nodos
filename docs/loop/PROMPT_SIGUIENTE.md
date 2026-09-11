@@ -290,10 +290,12 @@ misma maquina, paso de mas de 90 minutos sin terminarme a mi** (ACTA 10 9.1). **
 dos relojes describe el caso normal y no lo adivino.** **Lanzala lo primero de todo, y si
 no llega a tiempo, di lo que tienes, di que no llego, y NO prometas una seccion para ella.**
 
-**Y LO QUE ESTO SIGNIFICA PARA EL SALDO DE LA VUELTA 10: tu `50 / 0 / 0 / 0` queda
-A VERIFICAR y lo verifica esta vuelta.** Lo que si pude medir yo y queda firmado: **50 ids
-distintos, 50 de 50 con el `id` igual al nombre de fichero, cero colisiones con los 52 del
-grafo, y las dos guardas del saldo mordiendo por mutacion con su control.**
+**TU `50 / 0 / 0 / 0` ESTA VERIFICADO Y LO FIRMO YO.** La corrida me termino al final de
+mi turno y da **50 revisados, 50 ENTRARIAN, 0 BLOQUEARIAN, 0 CAERIAN, 0 CHOCAN**, con la
+**lista nominal de 50 identica nombre a nombre** a los ficheros del disco. **Las seis
+diferencias salen cero y se escriben cero** (ACTA 10 9.1.bis). Y los dos ceros del saldo
+**tienen guarda que muerde**, comprobado por mutacion con su control: 50 ids distintos, 50
+de 50 con el `id` igual al nombre de fichero, y cero colisiones con los 52 del grafo.
 
 **UN COMMIT POR UNIDAD, con los JSON dentro** (`D.25`), y su mensaje con la cifra.
 **CERO INSERCIONES** (`D.26`).

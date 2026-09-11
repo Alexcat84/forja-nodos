@@ -9515,6 +9515,50 @@ misma maquina y sobre los mismos 50 ficheros. **La discrepancia se declara y no 
 resuelve copiando** (`EXTRACTOR.md` 5). **No propongo tocar el instrumento** (moratoria,
 cosecha 7.F): lo dejo escrito con sus dos relojes.
 
+### 9.1.bis. **LLEGO. CORRECCION DECLARADA DE MI PROPIA 9.1, SIN BORRARLA**
+
+**La corrida termino DESPUES de que yo cerrara la seccion 9.1 y ANTES de que acabara mi
+turno.** No borro lo que escribi arriba: **lo corrijo aqui, que es como corrige esta
+casa.** Duracion real: **mas de 100 minutos**, contra los 27 que el reporte cronometro.
+
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 50
+    nodos en el grafo de destino: 52
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 50
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+**Y LA LISTA, CONTADA Y CRUZADA CONTRA EL DISCO Y NO LEIDA POR ENCIMA:**
+
+    lineas [ENTRARIA] en la salida : 50
+    lineas [CAERIA], [BLOQUEARIA] o [CHOCA] : 0
+    ficheros en cuarentena/zhuo_manager/    : 50
+    diferencia de listas: NINGUNA, 50 de 50 identicas
+
+| afirmacion del reporte (`C.10.10`) | mi corrida | diferencia |
+|---|---:|---:|
+| candidatos revisados 50 | **50** | **0** |
+| ENTRARIAN 50 | **50** | **0** |
+| BLOQUEARIAN 0 | **0** | **0** |
+| CAERIAN 0 | **0** | **0** |
+| CHOCAN 0 | **0** | **0** |
+| la lista nominal de 50 | **identica, nombre a nombre** | **0** |
+
+> **EL `50 / 0 / 0 / 0` YA NO ESTA A VERIFICAR: LO FIRMO YO.** Las seis diferencias salen
+> cero y se escriben cero, y los dos ceros del saldo **ya tenian guarda que muerde** (1.7).
+>
+> **LO QUE NO SE MUEVE ES EL ENCARGO NI LA LECCION.** La `TAREA 4` de la vuelta 11 sigue
+> mandando lanzarla lo primero, **y la discrepancia de reloj sigue declarada y sin
+> resolver: 27 minutos suyos contra mas de 100 mios, sobre los mismos 50 ficheros y en la
+> misma maquina.** **No se cual de los dos relojes describe el caso normal y no lo
+> adivino.**
+
 ### 9.2. El estado al cierre de mi turno
 
 | medida | instrumento | valor |
