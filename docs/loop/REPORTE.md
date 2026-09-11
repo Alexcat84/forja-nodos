@@ -7552,7 +7552,7 @@ de donde salen las N, con las filas de la serie contadas.**
 | # | tarea | estado | resultado |
 |---|---|---|---|
 | 2 | comprobaciones de apertura y mapa del libro, antes de cortar nada | **CERRADA** | las cuatro guardas cuadran con lo anunciado (**52, 37, 72 de 72, 60**), **cero discrepancias**. Fuente canonica leida y pegada. Los tres ficheros cierran su capitulo y el `cap_04` abre unidad nueva. Palabras: **2.917, 6.477, 4.292**, las tres con diferencia **0**. Mapa de los doce medido: **70.041 palabras, diferencia 0** contra la ficha, y **las doce L9 coinciden con la nota del auditor** |
-| 3 | la Introduction y el Cap. 1, con su frontera publicada antes de cortar | ABIERTA | |
+| 3 | la Introduction y el Cap. 1, con su frontera publicada antes de cortar | **CERRADA** | `Introduction`: **10 piezas, 63 de 63 lineas cubiertas, CERO candidatos**, 2.917 palabras descartadas con su cita. Cap. 1: frontera de **23 piezas** publicada y sellada en `ce46885` antes de cortar, **142 de 142 lineas cubiertas, cero huecos y cero solapes**. **12 candidatos, los 12 por la aduana al primer intento, 0 caerian, 0 vecinos levantados.** `D.30`: **3 puentes sobre 79 pasos, el 3,80 por ciento**, corregidos en el acto. **7 aristas de serie escritas, ninguna declarada** |
 | 4 | el Cap. 2, igual, y los vecinos que la aduana levante | ABIERTA | |
 | 5 | el informe del lote, los commits y el cierre con sus cuatro medidas | ABIERTA | |
 
@@ -7563,6 +7563,8 @@ de donde salen las N, con las filas de la serie contadas.**
 | # | donde | en una linea |
 |---:|---|---|
 | 1 | TAREA 3.A, `cap_01.md` L97 | descarto el racimo *You try something / figure out / file away / Rinse, repeat* pese a ser cuatro etapas nombradas en orden: **sin objeto de trabajo los tres pasos los pondria yo** |
+| 2 | TAREA 3.B, `cap_02.md` L121 a L123 | descarto las **cinco condiciones de Hackman** pese a estar nombradas una a una: **es el inventario de otro, traido para contrastar**, y sin un solo medio para llegar a ninguna |
+| 3 | TAREA 3.B, piezas P19 a P22 | escribo **UN** nodo para el bloque de los motivos y **cabeza mas tres** para el de las preguntas, teniendo los dos la misma forma de serie: **parto por si las partes traen procedimiento, no por la forma** |
 
 ---
 
@@ -7897,4 +7899,178 @@ palabras.**
 con ningun signo. **Se distinguen porque son las unicas lineas del cuerpo sin sangrado de
 tabulador.** Lo digo aqui porque es lo que hace que este recorte se pueda recorrer, y
 porque el proximo que abra un fichero de este libro no tiene por que descubrirlo otra vez.
+
+### 3.B.2. `D.27` PIEZA A PIEZA, con el fallo publicado y su cita, tambien para lo que descarto
+
+**23 piezas juzgadas de 23.** Las 11 que dan candidato van en la tabla siguiente; estas
+son las 12 que NO lo dan, cada una con su razon.
+
+| pieza | veredicto | la razon, con su cita |
+|---|---|---|
+| P1 | **DESCARTADA** | rotulo de la ilustracion. `AVOID` y `ASPIRE`, dos etiquetas. **Pero no es basura: es el marco AVOID contra ASPIRE del propio capitulo**, y es lo que autoriza a leer como error lo que el libro cuenta de si mismo en pasado |
+| P2 | **DESCARTADA** | relato de la llegada a Facebook. `L17: In May of 2006, when I first started my job, I didn’t know what I didn’t know.` Cero mandatos |
+| P3 | **DESCARTADA**, y es la mas instructiva de las doce | es una lista de tres actividades bajo el rotulo `A MANAGER’S JOB IS TO . . .`, **y el libro la presenta para refutarla**: `L49: Except . . . they’re still not quite right.` **Minar una lista que el libro refuta seria escribir en el catalogo lo contrario de lo que el libro sostiene** |
+| P4 | **DESCARTADA** | igual que P3, y refutada en la misma linea. Ademas sus tres elementos son METAS (*build a team that works well together*), que la restriccion 1 de `D.27` tumba por su cuenta |
+| P5 | **DESCARTADA** | el argumento de por que las dos listas fallan. `L51: the problem is that these answers are still an assortment of activities.` Es razonamiento, no procedimiento |
+| P6 | **DESCARTADA** | `L83: Your job, as a manager, is to get better outcomes from a group of people working together.` **Es una DEFINICION**, y la tabla de `EXTRACTOR.md` 9 la nombra por su nombre: *una definicion o un concepto sin nada que hacer* no es un nodo. Vive dentro de los nodos que si salen, como razon |
+| P8 parcial: las cinco condiciones de Hackman (L121 a L123) | **DESCARTADA**, y va marcada como DISCUTIBLE 2 | ver abajo |
+| P12 | **DESCARTADA**, y con la cita que lo decide | es el efecto multiplicador con sus numeros de limonada. **El libro aplaza expresamente el procedimiento**: `L167: it’s not so easy to quantify what you might get out of doing one thing versus another, and we’ll talk more about best practices for prioritizing your time in later chapters.` **Escribir aqui un procedimiento de cuantificacion seria escribir justo lo que el libro dice que no da todavia.** Su unica frase de doctrina, `L169`, ya vive como paso 7 de `revisar_proposito_personas_proceso` |
+| P18 | **DESCARTADA** | separador tipografico, cuatro palabras |
+| P20 y P21 | **NO dan nodo propio**, entran como pasos de `contrastar_motivos_querer_gestionar` | ver el DISCUTIBLE 3 |
+| P23 | **DESCARTADA** | la distincion entre liderazgo y gestion. `L285: Leadership is a quality rather than a job.` Es una distincion conceptual, y su unico mandato, `L285: great managers should cultivate leadership not just in themselves but also within their teams`, **no trae ni un medio para cultivarla**: es el caso literal de la vara madre, *nombrar no es procedimentar* |
+
+**LA REGLA DE ORO QUE SALE DE P3 Y P4, y la escribo porque este libro la va a repetir:**
+**este autor construye por refutacion.** Pone una lista, la desarma y pone otra. **Un
+extractor que mine la primera lista de un par escribe en el catalogo lo contrario de lo
+que el libro sostiene, y ninguna guarda de esta casa lo ve.** La senial barata de que
+estas ante una es que el libro la introduce en pasado o en condicional
+(`here’s what I would have said`).
+
+### 3.B.3. Los 12 candidatos del Cap. 1, cada uno con su aduana en el mismo acto
+
+**Cada fila se escribio y paso la aduana antes de escribir la siguiente**
+(`EXTRACTOR.md` 16). **12 de 12 al primer intento, 0 caerian.**
+
+| # | id propuesto | piezas | pasos | la salida de la aduana, pegada |
+|---:|---|---|---:|---|
+| 1 | `evaluar_directivo_resultados_fortaleza` | P7 | 9 | `[ENTRARIA] evaluar_directivo_resultados_fortaleza` |
+| 2 | `revisar_proposito_personas_proceso` | P8, P9, P10, P11, P12 | 7 | `[ENTRARIA] revisar_proposito_personas_proceso` |
+| 3 | `alinear_equipo_proposito_comun` | P9 | 6 | `[ENTRARIA] alinear_equipo_proposito_comun` |
+| 4 | `gestionar_personas_equipo` | P10 | 6 | `[ENTRARIA] gestionar_personas_equipo` |
+| 5 | `fijar_proceso_trabajo_equipo` | P11 | 7 | `[ENTRARIA] fijar_proceso_trabajo_equipo` |
+| 6 | `atender_modo_supervivencia_equipo` | P13 | 7 | `[ENTRARIA] atender_modo_supervivencia_equipo` |
+| 7 | `responder_tres_preguntas_vocacion_directiva` | P14 | 6 | `[ENTRARIA] responder_tres_preguntas_vocacion_directiva` |
+| 8 | `comparar_motivacion_resultado_papel` | P15 | 6 | `[ENTRARIA] comparar_motivacion_resultado_papel` |
+| 9 | `comprobar_gusto_trato_personas` | P16 | 6 | `[ENTRARIA] comprobar_gusto_trato_personas` |
+| 10 | `dar_estabilidad_situacion_emocional` | P17 | 6 | `[ENTRARIA] dar_estabilidad_situacion_emocional` |
+| 11 | `contrastar_motivos_querer_gestionar` | P19, P20, P21, P22 | 7 | `[ENTRARIA] contrastar_motivos_querer_gestionar` |
+| 12 | `probar_gestion_antes_decidir` | P22 | 6 | `[ENTRARIA] probar_gestion_antes_decidir` |
+| **12** | | | **79** | **12 ENTRARIAN, 0 BLOQUEARIAN, 0 CAERIAN** |
+
+**Las 12 filas salen de `ls -1 cuarentena/zhuo_manager/ | wc -l`, que da 12**, y los 79
+pasos de una pasada sobre los doce JSON (remedio 1.a, hermana tercera).
+
+**Y CERO VECINOS LEVANTADOS EN LOS DOCE.** Contra un grafo de 52 nodos que son 44 de
+contratacion, 6 de proteccion del consumidor y 2 de la forja, **un libro de gestion de
+equipos no levanta nada, y era lo que el encargo anticipaba**: el choque llega con el
+`cap_08`, `Hiring Well`, y no todavia.
+
+### 3.B.4. LA RELECTURA DE FIDELIDAD (`D.30`), hecha DENTRO del acto de escribir
+
+**3 PUENTES SOBRE 79 PASOS, el 3,80 por ciento.** Los tres corregidos antes de
+commitear, y los tres son **la misma especie que la vuelta 8 estreno**: el verbo de
+instrumentacion, el libro constata y yo escribo el gesto.
+
+| # | el paso que escribi | la linea del libro | por que era puente | como quedo |
+|---:|---|---|---|---|
+| 1 | `revisar...` paso 1: ***No vayas directo** a los deberes de cada dia, que es adonde va la cabeza de quien empieza* | `L119: When I was first starting out, my mind would have gone straight to the everyday duties` | **el libro confiesa adonde iba SU cabeza; no prohibe nada.** Y de paso yo generalizaba su confesion a *quien empieza*, que el libro no dice de nadie mas | *No contestes con los deberes de cada dia [...]: **es adonde iba la cabeza de la autora cuando empezaba**, y el capitulo pone la respuesta en otro sitio* |
+| 2 | `responder...` paso 6: *[...] **asi que la razon se contrasta y no se acepta*** | `L205: Some of these reasons match well with the realities of management. Some don’t.` | la coletilla entera es mia: **el libro constata que unas encajan y otras no, y no manda contrastarlas ahi.** Ademas yo dejaba la lista vacia | se retira la coletilla y **se transcriben las cinco razones que `L205` si nombra** |
+| 3 | `evaluar...` paso 2: ***No conviertas** el juicio en una bateria de pruebas* | `L91: the litmus test of whether or not a manager is excelling doesn’t need to be so complex` | *no necesita ser tan compleja* **no es** *no la hagas*. El libro llama a esas pruebas *wonderful qualities to have*, y yo las estaba prohibiendo | ***No hace falta que** el juicio sea tan complicado como [...]: son todas cualidades estupendas en un directivo, pero la prueba de fuego [...] no necesita ser tan compleja* |
+
+**LO QUE ESTO CONFIRMA, y es el aviso de `EXTRACTOR.md` 15.4 cumpliendose a la letra:**
+**los tres puentes salen de los tres sitios donde el libro habla de si mismo en pasado o
+matiza en negativo**, que es exactamente donde el marco `AVOID` / `ASPIRE` del capitulo
+invita a leer un mandato que no esta escrito. **Ni uno de los tres lo habria visto la
+aduana: los doce dieron verde ANTES y DESPUES de corregirlos.**
+
+### 3.B.5. LOS DISCUTIBLES DEL Cap. 1, MARCADOS ANTES DE SABER SI ACIERTO
+
+**DISCUTIBLE 2 (TAREA 3.B, pieza P8, `cap_02.md` L121 a L123).** *He descartado las cinco
+condiciones de Hackman, que son cinco elementos nombrados uno a uno por el texto, y esa
+es literalmente la cara positiva de `D.27`.*
+
+La linea, pegada (`sed -n '123p'`, sin el sangrado):
+
+    Hackman's research describes five conditions that increase a team's odds of success:
+    having a real team (one with clear boundaries and stable membership), a compelling
+    direction, an enabling structure, a supportive organizational context, and expert
+    coaching.
+
+**A FAVOR DE MINARLO:** cinco elementos, nombrados uno a uno, con el primero incluso
+glosado entre parentesis. Y trae su atribucion completa: J. Richard Hackman, el principal
+estudioso de los equipos, cuarenta anios de trabajo, hospitales, orquestas sinfonicas y
+cabinas de aviones comerciales.
+
+**POR QUE LO DESCARTO, y es mi lectura y puede caer:**
+
+1. **Es el inventario de OTRO, y el libro lo trae para contrastar, no para mandar.**
+   `L125: My own observations are similar, and I've come to think of [...] three buckets.`
+   **El libro cita a Hackman y acto seguido pone lo suyo.** La vara madre es literal:
+   *una linea solo cuenta como procedimiento propio si trae procedimiento propio, y no
+   solo el nombre de otro.*
+2. **Son CONDICIONES, es decir estados en que conviene estar**, y el libro no da ni un
+   medio para llegar a ninguna de las cinco. *An enabling structure* sin un solo paso es
+   la restriccion 1 con otro traje.
+3. **Y hay una razon de higiene del catalogo:** un nodo asi seria un nodo de `zhuo_manager`
+   cuyos pasos son de un libro que esta casa no ha leido. **La atribucion no arregla eso.**
+
+**SI ESTO CAE**, lo que se aprende es util y vale para toda la campana: **la cita de otro
+autor con su lista dentro es minable**, y entonces habra que escribir como se le pone
+fuente a un nodo cuyo contenido es de un tercero citado.
+
+---
+
+**DISCUTIBLE 3 (TAREA 3.B, piezas P19 a P22).** *He escrito UN nodo para el bloque de los
+motivos, cuando el libro lo abre con un preambulo y lo desarrolla en tres subsecciones con
+titulo propio, que es la forma exacta de una serie, y el manual 3.4 manda un nodo por paso
+mas una cabeza.*
+
+**LO QUE HE HECHO, dicho sin adornos:** en el bloque de las tres preguntas (P14 a P17)
+**si he aplicado 3.4**, cabeza mas tres partes, cuatro nodos. En el bloque de los motivos
+(P19 a P22) **no**: un solo nodo con las tres dentro, mas uno aparte para `L267`.
+
+**LA RAZON, que es la unica diferencia que he encontrado entre los dos bloques:**
+**en el bloque de las preguntas las tres partes traen procedimiento; en el de los motivos,
+dos de las tres no.**
+
+| motivo | lo que trae | cita |
+|---|---|---|
+| `I Want to Progress in My Career` | **una comprobacion doble y una accion** | `L247: take advantage of the fact that you have a choice, and figure out which path is better suited to your strengths and interests` |
+| `I Want Freedom to Call the Shots` | **una correccion de expectativa y una leccion. Cero pasos** | `L259: the best outcomes come from inspiring people to action, not telling them what to do` |
+| `I Was Asked to Be a Manager` | **un aviso y una pregunta**, mas el inventario de `L267` que si se fue a nodo propio | `L263: "I should" and "I can" are not sufficient reasons. Do you really want to?` |
+
+**Y el manual 3.4 tambien prohibe lo contrario:** *jamas dos compresiones de la misma
+numeracion.* **Si escribiera cabeza mas tres, la cabeza y el nodo del motivo 2 dirian la
+misma frase**, porque el motivo 2 no tiene otra cosa que decir. **He elegido no fabricar
+dos nodos vacios para que la forma cuadre.**
+
+**SI ESTO CAE, la caida es mia y esta dentro del marcado**, y la leccion seria clara:
+**la serie se parte por la forma del libro y no por la riqueza de las partes.** Prefiero
+equivocarme habiendolo dicho.
+
+### 3.B.6. LAS ARISTAS DE SERIE DEL Cap. 1 (`D.37`), ESCRITAS Y **NO DECLARADAS**
+
+**`MODO_INSERCION=cuarentena` y no inserto nada, asi que la condicion de `D.37` no se
+cumple y NO corro `python forja.py arista`.** El encargo lo dice por su nombre en la
+TAREA 4: *dejas la lista escrita en tu reporte con madre, paso e hijo*. **Es lo mismo que
+hizo la vuelta 8 en su 1.i con once aristas.**
+
+| madre | paso de la madre que enumera la parte | hijo |
+|---|---:|---|
+| `responder_tres_preguntas_vocacion_directiva` | **2**, *Hazte la primera pregunta: me motiva mas lograr un resultado concreto o desempenar un papel concreto* | `comparar_motivacion_resultado_papel` |
+| `responder_tres_preguntas_vocacion_directiva` | **3**, *Hazte la segunda pregunta: me gusta hablar con la gente* | `comprobar_gusto_trato_personas` |
+| `responder_tres_preguntas_vocacion_directiva` | **4**, *Hazte la tercera pregunta: puedo dar estabilidad en una situacion emocionalmente dificil* | `dar_estabilidad_situacion_emocional` |
+| `revisar_proposito_personas_proceso` | **3**, *En el cubo del proposito pon el resultado que tu equipo intenta lograr* | `alinear_equipo_proposito_comun` |
+| `revisar_proposito_personas_proceso` | **4**, *En el cubo de las personas pregunta si los miembros de tu equipo estan preparados para tener exito* | `gestionar_personas_equipo` |
+| `revisar_proposito_personas_proceso` | **5**, *En el cubo del proceso pon como trabaja junto tu equipo* | `fijar_proceso_trabajo_equipo` |
+| `contrastar_motivos_querer_gestionar` | **6**, *Si la respuesta es me lo han pedido, desconfia de la trampa de la obligacion [...] y la pregunta que queda es si de verdad quieres* | `probar_gestion_antes_decidir` |
+
+**SIETE ARISTAS, y las siete cumplen la prueba que `D.37` exige: el paso de la madre
+nombra al hijo, y el hijo lo despliega en pasos que la madre no tiene.** Las seis primeras
+son enumeracion escrita en el titulo del propio libro (*these three questions*,
+*three buckets*). **La septima es la mas floja de las siete y lo digo:** el paso 6 de la
+madre plantea la pregunta y el hijo da los medios para contestarla, pero **la madre no
+enumera al hijo como parte suya**. Si el auditor la tumba, es la que yo tumbaria.
+
+**Y una arista que NO declaro, para que se vea que no las fabrico por tema:**
+`evaluar_directivo_resultados_fortaleza` y `revisar_proposito_personas_proceso` son del
+mismo capitulo y hablan del mismo oficio, **y ninguno enumera al otro. Son hermanos.**
+`D.37` lo dice literal: *una cabeza de seis vias y un vecino que no es ninguna de las seis
+son hermanos, y su veredicto es `SANO`.*
+
+### 3.B.7. Estado de la TAREA 3
+
+**CERRADA.** La `Introduction` dio **CERO** candidatos con sus diez piezas juzgadas, y el
+Cap. 1 dio **DOCE**, los doce por la aduana al primer intento, con **3 puentes sobre 79
+pasos corregidos en el acto** y **siete aristas de serie escritas y no declaradas.**
 

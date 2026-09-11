@@ -1,0 +1,30 @@
+{
+  "id": "alinear_equipo_proposito_comun",
+  "titulo": "Alinear al equipo con un proposito comun",
+  "denominaciones": {
+    "nombre_largo": "Conseguir que el equipo sepa a que se parece el exito y le importe lograrlo, que es la primera gran parte del trabajo de un directivo",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "purpose"},
+      {"idioma": "ingles", "termino": "the why"}
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando alguien de tu equipo esta haciendo cosas que a ti te parecen poco importantes o un derroche, o cuando notas conflictos y expectativas desalineadas: son lo que produce un proposito que falta o que esta poco claro.",
+  "entregable_esperado": "El equipo sabiendo a que se parece el exito y con ganas de lograrlo, y todos con una imagen parecida de por que importa nuestro trabajo.",
+  "escala_minima": "Un equipo y un proposito. El libro dice que sirve igual uno tan concreto como que cada cliente que llame se sienta atendido y uno tan amplio como acercar el mundo, asi que la escala no la pone el tamanio del proposito.",
+  "pasos_accionables": [
+    "Escribe el proposito como lo que es: el resultado que tu equipo intenta lograr, el porque. Por que te levantas y eliges hacer esto en vez de las otras mil cosas que podrias estar haciendo, por que vuelcas tu tiempo y tu energia en esta meta concreta con este grupo concreto de personas, y que seria distinto en el mundo si tu equipo tuviera un exito descomunal.",
+    "Comprueba que todos en el equipo tienen una imagen parecida de por que importa nuestro trabajo.",
+    "Entiende y cree tu mismo en el proposito, porque conseguir que los demas lo entiendan y crean en el lo exige antes de ti.",
+    "Compartelo en cada ocasion que tengas: al escribir correos, al fijar objetivos, al verte con una sola persona de tu equipo y al dirigir reuniones grandes.",
+    "No te limites a exigir que todos crean en tu vision: quien piense que tu gran plan es una tonteria no va a estar motivado para sacarlo adelante, y puede decidir irse a un proyecto que le importe mas.",
+    "Cuando veas a alguien de tu equipo trabajando sobre una impresion distinta de para que existe esto, subelo a bordo de lo que de verdad te importa, que es lo que evita esos desalineamientos."
+  ],
+  "resumen_teorico": "Es el desarrollo del primero de los tres cubos del capitulo, el proposito, y el libro lo llama la primera gran parte del trabajo de un directivo. La doctrina esta construida sobre un ejemplo que el libro usa en todo el capitulo, el puesto de limonada: la vision es un puesto de limonada en cada manzana, primero en la ciudad y luego por todo el pais, y el empleado Henry cree que el puesto debe ser un sitio popular donde se junten los vecinos, asi que empieza a comprar sillas de jardin y a intentar servir pizza. El caso queda como ejemplo nombrado dentro de la doctrina y no al reves. Los cuatro sitios donde se comparte el proposito estan nombrados uno a uno por el libro, y el aviso de que no basta con exigir la creencia tambien, con su consecuencia dicha: Henry se puede ir a la pizzeria con billar de la misma calle. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se repite el proposito, quien lo redacta ni como se comprueba que la imagen de cada uno es parecida."
+}

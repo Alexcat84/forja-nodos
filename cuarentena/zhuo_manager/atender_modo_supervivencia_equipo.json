@@ -1,0 +1,38 @@
+{
+  "id": "atender_modo_supervivencia_equipo",
+  "titulo": "Atender el modo supervivencia antes de invertir en el largo plazo",
+  "denominaciones": {
+    "nombre_largo": "Decidir si tu organizacion esta ardiendo, y si lo esta, dejar la inversion a largo plazo y apagar las llamas",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "MANAGING IN SURVIVAL MODE"}
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando vas a invertir tiempo y energia en el proposito, las personas y el proceso de tu equipo, que es lo que da fruto a la larga, y antes tienes que saber si tu organizacion se puede permitir esperar a la larga.",
+  "entregable_esperado": "La decision tomada y dicha: o tu organizacion esta ardiendo y todo tu esfuerzo va a apagar las llamas, o has pasado la supervivencia y entonces si planificas el futuro.",
+  "escala_minima": "Una organizacion y un horizonte. El libro pone el caso minimo con un puesto de limonada montado con dinero prestado que hay que devolver en dos semanas o pagar diez veces el interes: no hace falta una empresa grande para estar en modo supervivencia.",
+  "pasos_accionables": [
+    "Antes de invertir en el proposito, las personas y el proceso, mira el contexto, que siempre importa: invertir ahi cuesta tiempo y energia, y no siempre es la decision correcta.",
+    "Decide si tu organizacion esta ardiendo. El consejo habitual sobre gestion supone un horizonte largo en el que lo que gastas hoy lo recoges con creces con el tiempo, y eso solo es cierto si tu organizacion no esta ardiendo.",
+    "Si lo esta, todas las apuestas quedan canceladas: lo que toca entonces es hacer lo que puedas por apagar las llamas. Deja el libro ahora mismo y averigua que hace falta para que tu equipo enderece las cosas.",
+    "Preguntate si puedes arengar a la tropa para una jugada espectacular, si puedes idear tacticas de las de MacGyver para salir del apuro, y si puedes arremangarte y arrimar el hombro haciendo llamadas en frio o vendiendo vasos de limonada.",
+    "Ordena lo que atiendes por la jerarquia de necesidades: ciertas necesidades se imponen a otras, y hay que satisfacer las de nivel bajo antes de ocuparse de las de nivel alto. Si no puedes respirar, da igual que tengas hambre, que estes solo o que no tengas trabajo.",
+    "Cuando estes en modo supervivencia, haz lo que haga falta para sobrevivir.",
+    "Y solo cuando hayas pasado la supervivencia en la jerarquia de necesidades de tu equipo, planifica el futuro y piensa que puedes hacer hoy que te ayude a lograr mas en los meses y anios que vienen."
+  ],
+  "atribuciones": [
+    {
+      "autor": "Abraham Maslow",
+      "cifra": "la jerarquia de necesidades, propuesta en 1943 para explicar la motivacion humana: ciertas necesidades se imponen a otras y hay que satisfacer las de nivel bajo antes de ocuparse de las de nivel alto, hasta llegar a lo que Maslow llamo autorrealizacion",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "1943"
+    }
+  ],
+  "resumen_teorico": "Es la excepcion que el propio capitulo pone a su doctrina central. Despues de sostener que el trabajo del directivo es mejorar el proposito, las personas y el proceso, el libro se pregunta si esa inversion es siempre la decision correcta y se contesta que no, que el contexto siempre importa. El razonamiento se apoya en la jerarquia de necesidades de Maslow trasladada a la organizacion, y en un caso minimo con un puesto de limonada montado con dinero prestado. El libro es explicito sobre lo que espera del lector: como estas leyendo este libro y preguntandote como ser mejor directivo, dice, es bastante seguro suponer que tu organizacion no esta al borde del colapso inminente, pero si lo esta, deja el libro ahora mismo. Las tres preguntas del cuarto paso son las tres que el libro escribe, una a una. Lo que el libro NO dice, y por eso no esta escrito aqui, es con que senial se declara que una organizacion esta ardiendo, quien lo declara, ni cuanto dura el modo supervivencia."
+}

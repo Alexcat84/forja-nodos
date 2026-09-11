@@ -1,0 +1,31 @@
+{
+  "id": "fijar_proceso_trabajo_equipo",
+  "titulo": "Fijar el proceso con el que tu equipo trabaja junto",
+  "denominaciones": {
+    "nombre_largo": "Fijar el proceso, que es el como: quien hace que y para cuando, y que principios gobiernan las decisiones",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "process"},
+      {"idioma": "ingles", "termino": "the how"}
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando tienes un equipo con mucho talento y con una idea muy clara de cual es la meta final, y aun asi las tareas simples se complican enormemente porque no esta claro como se supone que todos trabajan juntos ni cuales son los valores del equipo.",
+  "entregable_esperado": "Escrito quien hace que y para cuando, los principios que gobiernan las decisiones, los valores comunes para decidir y para responder a los problemas, y un plan predecible para los traspasos que se repiten.",
+  "escala_minima": "Un equipo de dos personas trabajando juntas ya lo pide: el libro razona el caso con dos empleados y un puesto de limonada. Y avisa de que cuanto mas grande es el equipo, mas tiempo hace falta.",
+  "pasos_accionables": [
+    "Escribe como trabaja junto tu equipo, que es lo que el proceso describe.",
+    "Contesta quien debe hacer que y para cuando.",
+    "Fija que principios deben gobernar la toma de decisiones.",
+    "Establece valores comunes dentro de tu equipo para como tomais las decisiones y como respondeis a los problemas.",
+    "Haz un plan predecible para los traspasos que se repiten: como sabra el que trae los ingredientes que le toca ir a por ellos, como encontrara el material quien lo va a usar, y que debe pasar si se acaban en un dia especialmente caluroso. Sin ese plan, los dos pierden tiempo coordinando traspasos y lidiando con los errores inevitables que salen.",
+    "No cuentes con ahorrarte el tiempo de coordinacion: en un equipo es imposible coordinar lo que hay que hacer sin dedicarle tiempo, y cuanto mas grande es el equipo mas tiempo hace falta. Por listos que seamos, leer la mente no es una competencia humana basica.",
+    "Aprende a dominar los procesos que el libro nombra como importantes para un directivo: dirigir reuniones eficaces, blindarte contra los errores del pasado, planificar el maniana y cultivar una cultura sana."
+  ],
+  "resumen_teorico": "Es el desarrollo del tercero de los tres cubos del capitulo, el proceso, que el libro llama el como. El libro se adelanta a la objecion y la nombra: mucha gente tiene una reaccion alergica a la palabra proceso, y la propia autora dice que le evocaba el avance glacial, montones de papeleo y un calendario lleno de reuniones tediosas. Su respuesta no es negar eso sino situarlo: trabajando solo decides todo tu y solo te limita lo rapido que puedas pensar y actuar, pero en un equipo la coordinacion cuesta tiempo si o si. El ejemplo del puesto de limonada aporta las tres preguntas de traspaso que el libro escribe una a una, y queda como ejemplo dentro de la doctrina. El ultimo paso es el unico que el libro nombra sin desarrollar aqui: los cuatro procesos que un directivo debe dominar son los titulos de capitulos posteriores de este mismo libro, y el libro dice que los desarrollara. Lo que el libro NO dice, y por eso no esta escrito aqui, es quien redacta el plan de traspasos, cada cuanto se revisan los valores comunes, ni como se resuelve un desacuerdo sobre ellos."
+}

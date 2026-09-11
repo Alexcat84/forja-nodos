@@ -1,0 +1,29 @@
+{
+  "id": "comparar_motivacion_resultado_papel",
+  "titulo": "Comparar que te motiva mas, lograr un resultado o desempenar un papel",
+  "denominaciones": {
+    "nombre_largo": "La primera de las tres preguntas: me motiva mas lograr un resultado concreto o desempenar un papel concreto",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "Do I Find It More Motivating to Achieve a Particular Outcome or to Play a Specific Role?"}
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando te haces la primera y mas importante de las tres preguntas sobre si la gestion es tu camino, y tienes que decidir si lo que te mueve es el resultado que logra tu equipo o la actividad concreta que tu haces.",
+  "entregable_esperado": "Sabido si estas dispuesto a hacer lo que mas ayude a tu equipo a tener exito aunque sea poco lucido y aunque cambie cada dia, o si hay una actividad concreta que quieres demasiado como para dejarla.",
+  "escala_minima": "Una persona y su trabajo de cada dia. El libro avisa de que un si rotundo en esta pregunta compensa casi cualquier otra cosa, y de ahi que se vea a lideres de fuerzas y temperamentos muy distintos al frente de empresas.",
+  "pasos_accionables": [
+    "Parte de que como directivo te juzgan por los resultados de tu equipo, asi que tu trabajo es hacer lo que mas les ayude a tener exito, sea lo que sea.",
+    "Mira los tres casos que el libro pone y pregunta si los harias: si a tu equipo le faltan habilidades clave, dedicar tu tiempo a formar o a contratar; si alguien esta creando problemas a los demas, conseguir que pare; y si la gente no sabe que deberia estar haciendo, construir un plan.",
+    "Acepta que buena parte de ese trabajo es poco lucido, y que aun asi, como es importante, hay que hacerlo, y si no lo hace nadie mas te toca a ti.",
+    "Comprueba tu adaptabilidad, que es un rasgo clave de los grandes directivos: segun cambia tu equipo, y cambia porque se mueven las metas, porque entra o sale gente o porque evolucionan los procesos, tambien cambiara lo que haces cada dia.",
+    "Y busca la senial de alarma: si hay una actividad concreta que quieres demasiado como para dejarla, sea ver pacientes, ensenar a alumnos, escribir codigo o disenar productos, puedes encontrarte con tus metas personales chocando con lo que el equipo mas necesita.",
+    "Ten presente que esta pregunta es mas importante que ninguna otra de la lista, y que un si rotundo aqui compensa casi cualquier cosa: por eso hay lideres de fuerzas y temperamentos muy distintos al frente de empresas. Lo que tienen en comun es que su prioridad numero uno es que su equipo tenga exito, y que estan dispuestos a adaptarse para ser el lider que su organizacion necesita."
+  ],
+  "resumen_teorico": "Es la primera de las tres preguntas con las que el capitulo cierra, y el libro la separa de las otras dos diciendo de ella que es mas importante que ninguna otra de la lista. La pregunta contrapone dos motivaciones que el titulo nombra, el resultado y el papel, y el libro la hace ejecutable de dos maneras: por un lado tres casos de trabajo directivo que uno tendria que estar dispuesto a hacer, nombrados uno a uno con su condicion de disparo, y por otro una senial de alarma que tambien nombra cuatro ejemplares. Los tres motores de cambio de un equipo estan nombrados por el libro: metas que se mueven, gente que entra o sale, y procesos que evolucionan. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se mide la fuerza de un si, ni durante cuanto tiempo hay que probar antes de contestar."
+}

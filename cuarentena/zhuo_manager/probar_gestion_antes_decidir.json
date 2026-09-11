@@ -1,0 +1,29 @@
+{
+  "id": "probar_gestion_antes_decidir",
+  "titulo": "Probar la gestion antes de decidir si es tu camino",
+  "denominaciones": {
+    "nombre_largo": "Las tres maneras de hacerse una idea de la gestion sin ser directivo, y la conversacion honesta si luego resulta que no",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "there are things you can do to get a better feel for it"}
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando no tienes claro si la gestion es el camino adecuado para ti y no quieres decidirlo a ciegas ni decidirlo para siempre.",
+  "entregable_esperado": "Una idea de la gestion hecha con experiencia propia o ajena y no con la imagen que tenias, y si la prueba sale que no, la conversacion honesta ya tenida y caminos de carrera alternativos en exploracion.",
+  "escala_minima": "Una de las tres maneras basta para empezar. El libro las pone como cosas que puedes hacer, no como un programa que haya que completar entero.",
+  "pasos_accionables": [
+    "Si no tienes claro que la gestion sea el camino adecuado para ti, no lo decidas a ciegas: hay cosas que puedes hacer para hacerte una idea mejor.",
+    "Acompania a otras personas del equipo.",
+    "Hazte cargo de alguien en practicas.",
+    "Entrevista a directivos que hayan hecho la transicion hace poco, para entender como fue su experiencia.",
+    "Si pruebas la gestion y despues te das cuenta de que no es lo que quieres hacer, eso tambien esta bien.",
+    "Y en ese caso ten la conversacion honesta con tu jefe sobre tus metas, y pidele que te ayude a explorar caminos de carrera alternativos."
+  ],
+  "resumen_teorico": "Es la salida que el libro pone al final del bloque de los motivos, y la unica linea de todo el bloque que trae un inventario de medios nombrados uno a uno en vez de una correccion de expectativa. Las tres maneras son las tres que el libro escribe, y el libro las presenta con un como, es decir como ejemplos y no como lista cerrada, asi que aqui estan los tres que nombra y ninguno mas. La segunda mitad del nodo es la puerta de salida, que el libro se ocupa de dejar abierta con dos frases seguidas: que probar y descubrir que no es lo tuyo tambien esta bien, y que entonces toca una conversacion honesta con tu jefe sobre tus metas pidiendole ayuda para explorar alternativas. El libro llega aqui despues de contar que a el le paso: su disenadora estrella dijo que si porque era una jugadora de equipo que no queria dejar tirados a los demas, el papel no le encajaba, y lo pagaron todos cuando decidio marcharse. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuanto dura la prueba, a cuantos directivos hay que entrevistar, ni como se decide con lo que salga."
+}

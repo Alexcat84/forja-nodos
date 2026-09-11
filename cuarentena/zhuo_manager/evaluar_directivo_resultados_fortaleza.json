@@ -1,0 +1,40 @@
+{
+  "id": "evaluar_directivo_resultados_fortaleza",
+  "titulo": "Evaluar a un directivo por los resultados del equipo y por su fortaleza",
+  "denominaciones": {
+    "nombre_largo": "Evaluar a un directivo por los resultados presentes del equipo y por la fortaleza y satisfaccion con que queda para el futuro",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "HOW DO YOU TELL A GREAT MANAGER FROM AN AVERAGE MANAGER?"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando tienes que decir si un directivo esta haciendo bien su trabajo, sea uno de los directivos de tu equipo o seas tu mismo, y quieres un juicio que no dependa de lo listo, lo querido ni lo trabajador que sea.",
+  "entregable_esperado": "El juicio sobre el directivo escrito en sus dos mitades, la de los resultados presentes del equipo y la de la fortaleza y satisfaccion con que el equipo queda, y con los dos casos que enganan ya descontados.",
+  "escala_minima": "Un directivo y su equipo. El libro avisa de que en un momento dado el juicio es dificil de acertar y de que unos pocos trimestres brillantes no bastan: la escala en tiempo es la que deja que el tiempo revele la verdad, y el libro no dice cuanta es.",
+  "pasos_accionables": [
+    "Mira el resultado de la unidad de trabajo y no simplemente la actividad que la ocupo: a un vendedor lo mides por los pedidos que consigue, que es el resultado, y no por las llamadas que hace, que es la actividad.",
+    "No hace falta que el juicio sea tan complicado como una bateria de pruebas del tipo si cae bien a los demas, si resuelve problemas grandes y estrategicos, si da presentaciones memorables o si despacha veinte tareas importantes en un dia: son todas cualidades estupendas en un directivo, pero la prueba de fuego de si esta destacando no necesita ser tan compleja.",
+    "Parte el juicio en dos mitades, porque la mitad mira una cosa y la otra mitad mira otra.",
+    "En la primera mitad pon los resultados presentes del equipo: si lograsteis aquello a lo que aspirabais.",
+    "En la segunda mitad pon la fortaleza y la satisfaccion del equipo: si hiciste un buen trabajo contratando y desarrollando a las personas, y si tu equipo esta contento y trabaja bien junto.",
+    "Lee la segunda mitad como lo que es: la que pregunta si el equipo esta preparado para dar grandes resultados en el futuro, mientras la primera mira los resultados de ahora.",
+    "Descuenta los dos casos que enganan cuando juzgas en un momento dado: el gran directivo al que acaban de poner al frente de un equipo nuevo y cuyos resultados son flojos al principio porque necesita tiempo para coger carrerilla, y el mal directivo con unos trimestres brillantes porque heredo un equipo con talento o porque puso ultimatums de mucha presion.",
+    "Deja que pase el tiempo, que es lo que siempre revela la verdad: los mejores empleados no aguantan anios y anios con un jefe que los trata mal o al que no respetan, y un directivo con talento suele enderezar un equipo que rinde mal si se le da poder para cambiar cosas.",
+    "Y no llames gran directivo a quien, siendo el mas listo, el mas querido y el mas trabajador del mundo, tiene un equipo con fama prolongada de resultados mediocres."
+  ],
+  "resumen_teorico": "El capitulo define el trabajo del directivo en una linea, obtener mejores resultados de un grupo de personas trabajando juntas, y de esa definicion saca la prueba de fuego: si el trabajo es ese, el equipo de un gran directivo lograra grandes resultados de forma consistente. El libro apoya el primer paso en Andy Grove, fundador y primer ejecutivo de Intel, que escribio que en las evaluaciones hay que mirar el resultado de la unidad de trabajo y no simplemente la actividad, con el ejemplo del vendedor medido por pedidos y no por llamadas. Las dos mitades del juicio son las que Chris Cox, director de producto de Facebook, le contesto a la autora cuando le pregunto como evaluaba el trabajo de un directivo, y la autora dice que las adopto despues para evaluar a los directivos de su propio equipo. Los dos casos que enganan estan nombrados uno a uno por el libro, y tambien la razon por la que el tiempo los deshace. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se hace esta evaluacion, quien la firma, ni cuanto tiempo hay que dejar pasar para que el juicio sea fiable."
+}
