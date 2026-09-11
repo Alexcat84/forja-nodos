@@ -10170,3 +10170,37 @@ medio apareciera tambien en el fichero. Lo parti por trozos, comprobe cada trozo
 separado, y la cita paso. **Lo escribo porque una relectura que se cree sus propios falsos
 positivos enseña a desconfiar de los verdaderos**, y porque la regla 5 manda declarar la
 discrepancia en vez de resolverla copiando.
+
+## C.10.9. UNA SEGUNDA PASADA DE FIDELIDAD SOBRE EL NODO MAS LARGO DE LA VUELTA
+
+**`avisar_pronto_incumplimiento_expectativas` tiene 12 pasos, el mas largo de los 27**, y
+`EXTRACTOR.md` 15.4 avisa de que el puente no se nota mientras se escribe. **Lo volvi a
+abrir paso a paso contra sus lineas**, reabiertas con `sed` una a una.
+
+| paso | linea que lo dice | veredicto |
+|---:|---|---|
+| 1 | `L109` | **TRANSCRIPCION**, y la atribucion a la jefa ya estaba dentro |
+| 2 | `L111` | **TRANSCRIPCION** |
+| 3 | `L113` | **TRANSCRIPCION**, ya con el ciclo de seis meses devuelto a su empresa tras la correccion de `4.5` |
+| 4 | `L115` y `L117` | **TRANSCRIPCION**, incluido el *ninguna es buena* de `L115` |
+| 5 | `L119` | **TRANSCRIPCION**, incluido *hasta el final del semestre* |
+| 6 | `L121` | **TRANSCRIPCION** |
+| 7 | `L123` | **TRANSCRIPCION, y es la unica arguable de las doce.** Ver abajo |
+| 8 | `L129` y `L131` | **TRANSCRIPCION** |
+| 9 | `L135` y `L139` | **TRANSCRIPCION**, incluido *vigilada por encima del hombro* |
+| 10 | `L145`, `L149` y `L151` | **TRANSCRIPCION** |
+| 11 | `L153` | **TRANSCRIPCION** |
+| 12 | `L155` | **TRANSCRIPCION** |
+
+**12 DE 12 TRANSCRIPCION, CERO PUENTES NUEVOS.** La cifra de 1 puente del Cap. 4 **no se
+mueve**.
+
+**LA ARGUABLE, dicha entera porque es justo el limite de la vara:** `L123` dice
+*The sooner that Albert internalized he was not meeting expectations, the quicker he could
+potentially turn things around*, **con el nombre del caso dentro**, y mi paso 7 lo escribe
+como *cuanto antes interiorice la persona*. **Es generalizacion de un caso, que es la
+especie que corregi tres veces hoy.** **Por que la dejo:** la misma linea abre con
+`Luckily, I still had time to put the lesson into action` y **el libro la llama la leccion
+por su nombre**, es decir declara el mismo que lo que sigue es la regla y no el caso.
+**Si el auditor la cuenta, el Cap. 4 sale 2 de 111, el 1,80 por ciento.** Las dos lecturas
+estan escritas; **la que yo sostengo es la de 1.**
