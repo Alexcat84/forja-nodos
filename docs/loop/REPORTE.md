@@ -8074,3 +8074,63 @@ son hermanos, y su veredicto es `SANO`.*
 Cap. 1 dio **DOCE**, los doce por la aduana al primer intento, con **3 puentes sobre 79
 pasos corregidos en el acto** y **siete aristas de serie escritas y no declaradas.**
 
+---
+
+## TAREA 4. EL Cap. 2, `Your First Three Months` (`cap_03.md`)
+
+### 4.1. LA FRONTERA, PUBLICADA Y COMMITEADA **ANTES** DE CORTAR
+
+    lineas con texto: 111
+    cubiertas       : 111
+    HUECOS: []  SOLAPES: []
+    suma piezas: 4292  cuerpo: 4292  piezas: 16
+
+**111 de 111 lineas con texto cubiertas, cero huecos, cero solapes, y la suma de las 16
+piezas da 4.292, identica al cuerpo. Diferencia: CERO.**
+
+| pieza | lineas | palabras | que es |
+|---|---|---:|---|
+| P1 | L9 a L15 | 8 | cabecera y rotulo `AVOID` / `ASPIRE` |
+| P2 | L17 a L23 | 169 | apertura: lo mas duro y lo mas facil, preguntado a directivos nuevos |
+| P3 | L25 a L35 | 110 | **los cuatro caminos, nombrados uno a uno. La cabeza de la serie** |
+| P4 | L37 a L39 | 31 | `THE APPRENTICE`, entradilla |
+| P5 | L41 a L69 | 529 | aprendiz: `What to Take Advantage Of` |
+| P6 | L71 a L93 | 752 | aprendiz: `What to Watch Out For` |
+| P7 | L95 a L97 | 80 | `THE PIONEER`, entradilla |
+| P8 | L99 a L123 | 249 | pionero: `What to Take Advantage Of` |
+| P9 | L125 a L135 | 325 | pionero: `What to Watch Out For` |
+| P10 | L137 a L139 | 58 | `THE NEW BOSS`, entradilla |
+| P11 | L141 a L167 | 621 | jefe nuevo: `What to Take Advantage Of` |
+| P12 | L169 a L197 | 613 | jefe nuevo: `What to Watch Out For` |
+| P13 | L199 a L203 | 100 | `THE SUCCESSOR`, entradilla mas sus ventajas por remision |
+| P14 | L205 a L219 | 480 | sucesor: `What to Watch Out For` |
+| P15 | L221 a L223 | 4 | separador |
+| P16 | L225 a L229 | 163 | cierre del capitulo |
+| **16 piezas** | **L9 a L229** | **4.292** | |
+
+**Las 16 filas salen de la lista del recorrido, contadas: 16** (remedio 1.a, hermana
+tercera).
+
+### 4.2. EL HALLAZGO DE ESTE CAPITULO: **EL LIBRO REMITE A SI MISMO, Y DOS VECES**
+
+**Es lo que habria fabricado dos gemelos si no se lee antes de cortar**, y por eso va
+aqui y no en el cierre. Las dos lineas, pegadas:
+
+    $ sed -n '135p;207p' fuentes/zhuo_manager/cap_03.md
+    135:			It's tricky to balance your IC work with management. See description from "The Apprentice," this page
+    207:			It can feel awkward to establish a new dynamic with former peers. See description from "The Apprentice," this page.
+
+**El propio libro dice que el equilibrio entre trabajo individual y gestion del pionero
+ES el del aprendiz, y que la incomodidad del sucesor con sus antiguos pares ES la del
+aprendiz.** No son temas parecidos: **son remisiones literales.**
+
+**QUE HAGO CON ELLAS, y es `P.19` leida al derecho:** el objeto ya esta en casa, asi que
+**no abro nodo para ninguna de las dos.** El contenido vive una sola vez, en los nodos del
+aprendiz, y en los nodos del pionero y del sucesor **queda el paso que remite**, con el
+nombre del hermano al que remite. **Mandarlas a nodo propio habria fabricado el gemelo de
+su propio donante**, que es la frase exacta de `P.19`.
+
+**Y hay una tercera remision, del sucesor hacia sus ventajas** (`L203`), que tambien se
+resuelve asi: *the advantages of this transition are similar to those of the apprentice
+[...] as described earlier*.
+
