@@ -1,0 +1,39 @@
+{
+  "id": "dar_mala_noticia_decision_tomada",
+  "titulo": "Dar una mala noticia sobre una decision que ya has tomado",
+  "denominaciones": {
+    "nombre_largo": "Como se comunica una decision que la otra persona no va a querer oir: la decision primero, sin abrirla a discusion y sin fingir que se decide entre los dos",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "delivering bad news about a decision"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando has decidido algo que tu persona a cargo no va a querer oir: has elegido a otra persona para un puesto codiciado, la sacas de un proyecto, o ya no tienes un papel para ella en tu equipo.",
+  "entregable_esperado": "La decision comunicada como lo primero que sale de tu boca, asumida como tuya, sin abrirla a discusion, y con el desacuerdo reconocido con respeto si lo hay.",
+  "escala_minima": "Una sola conversacion y una sola decision.",
+  "pasos_accionables": [
+    "Si estas dando una mala noticia sobre una decision, haz que la decision sea lo primero que salga de tu boca cuando os senteis: he decidido tirar con otra persona para liderar esta iniciativa.",
+    "Asume la decision como tuya. Se firme y no la abras a discusion.",
+    "No la posiciones como algo que estais decidiendo entre los dos, que es el error que la autora dice haber cometido muchas veces por odiar ser portadora de malas noticias: quiero hablar del papel de liderazgo del proyecto tal, me preocupa que no tengas tiempo para el, ya estas haciendo mucho en esto y en aquello, asi que creo que seria bueno que lo liderase otra persona, que te parece?",
+    "Ten claro por que eso es peor y no mejor: si nada de lo que diga tu persona a cargo va a cambiar tu decision, es poco sincero actuar como si ella tuviera voz. Y si te responde que si tiene tiempo, o te trae un montante de razones por las que es la mejor candidata, solo vas a poder improvisar otra excusa, y eso la dejara sintiendose no escuchada.",
+    "Cuenta con que tu persona a cargo puede no estar de acuerdo con tu opinion o con tu decision, y con que eso esta bien: hay decisiones que te toca tomar a ti, porque eres quien responde en ultima instancia del resultado de tu equipo y puedes tener mas informacion o una perspectiva distinta sobre el mejor camino.",
+    "No gestiones por consenso solo porque asi no ofendes a nadie: el libro dice no ser capaz de pensar en un solo lider influyente que no haya tenido que salirse de la rama y hacer algo con lo que alguien no estaba de acuerdo.",
+    "Reconoce el desacuerdo con respeto y sigue adelante: reconozco que puedes no estar de acuerdo con mi decision, pero te pido tu cooperacion para avanzar.",
+    "Y parte de lo que el libro dice haber aprendido sobre dar opinion, incluso la mas dificil: la gente no son flores fragiles. Ninguna persona a cargo le ha dicho nunca que la trate con guantes de seda; lo que le dicen es que quieren su opinion para mejorar, y que les gustaria que fuera honesta y directa con ellos. Decirlo a las claras es una senal de respeto."
+  ],
+  "resumen_teorico": "Es el ultimo tramo del capitulo sobre el como, y se separa de la opinion critica en una cosa: aqui no hay nada que discutir porque la decision ya esta tomada, y el error tipico no es la dureza sino el disimulo. El libro lo razona con un error propio de la autora, que enmarcaba sus decisiones como deliberaciones conjuntas, y con el desarme de ese error paso a paso: si nada de lo que diga la otra persona va a cambiar la decision, fingir que decide es lo que de verdad la deja sin voz. El inventario propio son los tres mandatos de entrega, la decision primero, asumirla, no abrirla, mas la frase literal con la que se reconoce el desacuerdo. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuanto se explica la decision despues de anunciarla, ni que hacer si la persona se niega a cooperar."
+}

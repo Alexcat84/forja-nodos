@@ -1,0 +1,40 @@
+{
+  "id": "compartir_opinion_conductual_regularidad",
+  "titulo": "Compartir opinion sobre la conducta con cuidado y con regularidad",
+  "denominaciones": {
+    "nombre_largo": "La tercera de las cuatro formas de opinion: la que sale de mirar muchos ejemplos juntos y buscar que temas emergen",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "share behavioral feedback thoughtfully and regularly"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando llevas acumulados muchos ejemplos de opinion especifica de tarea sobre la misma persona y quieres alejar el foco para ver que patrones hay detras.",
+  "entregable_esperado": "Dicho a tu persona a cargo, en persona y con ejemplos concretos que expliquen por que lo ves asi, cuales son sus fortalezas unicas o sus areas de desarrollo segun sus patrones de conducta.",
+  "escala_minima": "Una sola persona a cargo y varios ejemplos ya observados. Sin varios ejemplos no hay tema que emerja.",
+  "pasos_accionables": [
+    "Aleja el foco y mira juntos muchos ejemplos de opinion especifica de tarea sobre una misma persona, y preguntate que temas emergen: toma decisiones rapido o despacio, es un mago del proceso o un pensador poco convencional, gravita hacia soluciones pragmaticas o hacia soluciones idealistas.",
+    "Usa esa pregunta sobre los temas para reflexionar sobre las fortalezas unicas o las areas de desarrollo de tu persona a cargo tal como se muestran en sus patrones de conducta.",
+    "Cuenta con para que sirve: conectando los puntos entre multiples ejemplos ayudas a la gente a entender como sus intereses, su personalidad y sus habitos afectan a su capacidad de tener impacto, que es la personalizacion y la profundidad que a la opinion especifica de tarea le faltan.",
+    "Piensa bien las palabras, porque al dar opinion sobre la conducta estas haciendo una afirmacion sobre como percibes a esa persona.",
+    "Apoyala con ejemplos concretos que expliquen por que te sientes asi.",
+    "Y hazlo en persona, que es como mejor se discute, para que quien la recibe pueda preguntar y tener contigo un ida y vuelta.",
+    "Cuenta con que puede costar hablar de esto porque es muy personal, hasta el punto de que un amigo de la autora lo compara con sesiones de terapia, y con que en su mejor version ayuda a la gente a entender la realidad de como la ven los demas, que puede ser distinta de como se ve ella misma.",
+    "Usa como modelo los dos ejemplos que el libro escribe. Para la critica: cuando la gente te hace preguntas sobre tu trabajo tu tono es a menudo defensivo, por ejemplo cuando Sally dejo un comentario en tu codigo respondiste con un confia en mi, lo que desatendio el fondo de su comentario y te hizo parecer menos digno de confianza.",
+    "Y para el elogio: tus habilidades para captar talento son de primera, los candidatos dicen a menudo que salen de una conversacion contigo mas inspirados que cuando entraron, y ademas tienes buen ojo para sugerir a las personas adecuadas para los puestos adecuados, por ejemplo identificaste a John para el proyecto tal hace un anio y ahora esta prosperando."
+  ],
+  "resumen_teorico": "Es la tercera de las cuatro formas de dar opinion, y la que el libro define por contraste con la anterior: donde la especifica de tarea mira un hecho, esta mira el patron que emerge de muchos hechos. El inventario propio del libro esta en dos sitios: las tres preguntas de ejemplo con las que se buscan los temas, escritas una a una, y las tres condiciones de entrega que le pone, palabras pensadas, ejemplos concretos que expliquen el porque, y conversacion en persona. Esas tres condiciones no son adorno: son lo que separa esta forma de un juicio sobre la persona, y el libro las justifica diciendo que aqui estas afirmando como percibes a alguien. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto es con regularidad, ni cuantos ejemplos hacen falta para que un tema sea un tema."
+}

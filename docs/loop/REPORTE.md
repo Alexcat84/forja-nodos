@@ -9614,3 +9614,159 @@ cubiertas las 141.
 | P19 | el cierre del capitulo | `L283` |
 
 **LA FRONTERA SE COMMITEA AQUI, ANTES DE ESCRIBIR EL PRIMER CANDIDATO DEL CAPITULO.**
+
+### 4.3. `D.27` PIEZA A PIEZA, TAMBIEN PARA LO QUE DESCARTO
+
+**19 piezas juzgadas de 19**, contadas de la tabla de `4.2`. **Las 3 que NO dan candidato:**
+
+| pieza | veredicto | la razon, con su cita |
+|---|---|---|
+| P1 | **DESCARTADA** | rotulo del capitulo, **8 palabras** |
+| P2 | **DESCARTADA** | la apertura: la peor opinion que la autora recibio (`L17`, de un becario) y la mejor (`L21`, de alguien de su equipo). **Son dos casos y una doctrina, y no traen acto.** Lo mas parecido a un inventario es `L23`, que enumera por que a la gente le cuesta dar opinion, **pero es un inventario de causas y no de medios ni de etapas**, y `D.27` restriccion 1 lo deja fuera. Su unica linea normativa es `L25`, que dice que dominar esto derriba dos de las barreras mas grandes, **y eso es adonde hay que llegar, no como** |
+| P19 | **DESCARTADA** | cierre del capitulo. Trae la cita de Kim Scott sobre lo brutalmente dificil que es decirle a la gente que la esta fastidiando, el reconocimiento de la autora de que sigue trabajando en dominar esto, y la frase de los posteres, `L289: "Feedback is a gift."` **Es cierre y es consuelo, no procedimiento**, exactamente igual que el `L227` del Cap. 2 que descarte en la vuelta 9 |
+
+**Las 16 restantes se agrupan en 12 candidatos**, porque cuatro piezas entran dentro de
+otra: **P9, P10 y P11 dentro de P8**, y **P17 dentro de P16**. **16 menos 4 son 12**, y 12
+son las filas de `4.4`.
+
+**POR QUE P9, P10 Y P11 ENTRAN DENTRO Y NO SALEN A NODO PROPIO, con la cita que lo decide:**
+
+    $ sed -n '125p' fuentes/zhuo_manager/cap_05.md
+    125: Nobody likes being taken by surprise with bad news. Following are some examples of how
+         setting expectations early can preempt future disappointments.
+
+**El libro las declara EJEMPLOS por su nombre**, y `EXTRACTOR.md` 9 tiene escrito que **el
+caso no es la casa: la doctrina vive en su nodo y el caso entra como ejemplo nombrado
+dentro de ella.** **Cada una tiene titulo propio y acto propio**, y aun asi entran dentro,
+porque la regla del caso manda sobre la del titulo cuando el libro dice cual es cual.
+
+### 4.4. LOS 12 CANDIDATOS DEL Cap. 4, CADA UNO CON SU ADUANA EN EL MISMO ACTO
+
+| # | id propuesto | piezas | pasos | la salida de la aduana, pegada |
+|---:|---|---|---:|---|
+| 39 | `elegir_forma_inspirar_cambio_conducta` | P3 | 7 | `[ENTRARIA] elegir_forma_inspirar_cambio_conducta` |
+| 40 | `fijar_expectativas_claras_comienzo` | P4 | 9 | `[ENTRARIA] fijar_expectativas_claras_comienzo` |
+| 41 | `dar_opinion_especifica_tarea` | P5 | 8 | `[ENTRARIA] dar_opinion_especifica_tarea` |
+| 42 | `compartir_opinion_conductual_regularidad` | P6 | 9 | `[ENTRARIA] compartir_opinion_conductual_regularidad` |
+| 43 | `recoger_opinion_360_grados` | P7 | 10 | `[ENTRARIA] recoger_opinion_360_grados` |
+| 44 | `avisar_pronto_incumplimiento_expectativas` | P8, P9, P10, P11 | 12 | `[ENTRARIA] avisar_pronto_incumplimiento_expectativas` |
+| 45 | `comprobar_opinion_produce_mejora` | P12 | 7 | `[ENTRARIA] comprobar_opinion_produce_mejora` |
+| 46 | `dar_opinion_frecuencia_suficiente` | P13 | 9 | `[ENTRARIA] dar_opinion_frecuencia_suficiente` |
+| 47 | `asegurar_opinion_llega_persona` | P14 | 11 | `[ENTRARIA] asegurar_opinion_llega_persona` |
+| 48 | `hacer_opinion_accionable` | P15 | 10 | `[ENTRARIA] hacer_opinion_accionable` |
+| 49 | `dar_opinion_critica_directa_desapasionada` | P16, P17 | 11 | `[ENTRARIA] dar_opinion_critica_directa_desapasionada` |
+| 50 | `dar_mala_noticia_decision_tomada` | P18 | 8 | `[ENTRARIA] dar_mala_noticia_decision_tomada` |
+| **12** | | | **111** | **12 ENTRARIAN, 0 BLOQUEARIAN, 0 CAERIAN** |
+
+**Las 12 filas se cuentan de los 50 ficheros de la carpeta menos los 38 que habia al cerrar
+la TAREA 3: 50 menos 38 son 12** (remedio 1.a, hermana tercera). **Y los 111 pasos de una
+pasada sobre los doce JSON.**
+
+**12 de 12 al primer intento.** Y **cero vecinos levantados otra vez: van 50 de 50
+candidatos del lote 3 sin que la aduana levante uno solo.**
+
+**UNA CORRECCION DE TECLEO QUE DECLARO PORQUE LA CAZO LA RELECTURA Y NO LA ADUANA:** en
+`asegurar_opinion_llega_persona` la frase de confirmacion verbal me salio con un `de` de mas
+y con un acento que esta casa no usa. **Ninguna guarda lo ve.** Corregido a mano antes de
+commitear.
+
+### 4.5. LA RELECTURA DE FIDELIDAD DEL Cap. 4 (`D.30`)
+
+**1 PUENTE SOBRE 111 PASOS ESCRITOS, el 0,90 por ciento.** Y **el numero es tan bajo que lo
+primero que hago es desconfiar de el en voz alta**, en `4.6`.
+
+| # | el paso que escribi | la linea del libro | por que era puente | como quedo |
+|---:|---|---|---|---|
+| 1 | `avisar_pronto...` paso 3: *las revisiones resumen el desempenio de **los ultimos seis meses**, asi que si la persona lleva la mayor parte de ese tiempo sin cumplirlas, debiste decirselo mucho antes* | `L113: She went on to explain that because our reviews are meant to summarize performance from the past six months [...]` | **`our reviews` son las de SU empresa.** Yo convertia un ciclo de revision concreto en **una ley general del oficio**. **Es la especie del PERIODO, una de las tres que el lote 1 pago** | *El razonamiento que el libro recoge de su jefa es que, **como en su empresa** las revisiones resumian el desempenio de los seis meses anteriores, si **aquella persona** llevaba la mayor parte de ese tiempo sin cumplirlas habia que haberselo dicho mucho antes* |
+
+**Y DOS PRECISIONES QUE CORREGI Y NO CUENTO**, por la misma vara que use en `2.a.bis`:
+
+| fichero | como estaba | la linea | como queda |
+|---|---|---|---|
+| `elegir_forma...` paso 1 | *Parte de que la mejor opinion que has recibido **la recuerdas porque** te inspiro a cambiar tu conducta* | `L31: I'm willing to bet that the reason you remember it is because [...]` | *Parte de **la apuesta que el libro hace sobre ti**: si recuerdas la mejor opinion que has recibido [...]* |
+| `dar_opinion_especifica_tarea` paso 3 | *porque es la mas facil **de las cuatro*** | `L65: This is the easiest type of feedback to give` | *porque es la mas facil **de dar*** |
+
+**LAS DOS SON LA MISMA ESPECIE Y NO ES LA DEL PUENTE: quitarle al libro un matiz que el si
+puso.** La primera le quitaba una apuesta y la convertia en afirmacion; la segunda le
+metia un recuento que el no hace. **Ni anaden contenido ni cambian de sujeto, asi que por mi
+vara no son puentes**, pero **si son teclear donde tocaba leer, y por eso van escritas.**
+
+### 4.6. **DISCUTIBLE 4**, MARCADO ANTES DE SABER SI ACIERTO: DESCONFIO DE MI PROPIO CERO
+
+**El encargo me aviso de que este es el capitulo con mas narracion en primera persona que
+he abierto de este libro, y de que ahi es donde vivieron mis siete puentes.** Y la cifra
+que saco es **la mas baja de toda la campana: 0,90 por ciento contra 2,50, 3,09, 3,80,
+5,00, 5,26 y 5,56.**
+
+**LA EXPLICACION QUE ME CONVENCE ES ESTA, y es del encargo y no mia:** me dijeron donde
+mirar **antes** de escribir, y escribi los doce candidatos **atribuyendo en el acto**. La
+cuenta lo ensena sola: **de los 111 pasos, 16 llevan dentro las palabras `la autora`, `el
+libro cuenta`, `el libro recoge` o `el libro dice`**, y cada uno de esos 16 es un sitio
+donde en la vuelta 9 yo habria escrito un imperativo.
+
+**PERO LA EXPLICACION QUE ME PREOCUPA ES LA OTRA, Y LA ESCRIBO YO:** atribuir se me ha
+vuelto **un reflejo**, y un reflejo no distingue. **Si atribuyo TODO, dejo de contar los
+puentes porque dejo de escribirlos, no porque haya aprendido a leer mejor.** El coste de
+pasarse por ese lado no es cero: **un nodo cuyos pasos digan todos *el libro cuenta que*
+deja de ser un procedimiento y se vuelve un resumen**, y eso es otro defecto, solo que uno
+que ninguna metrica de esta casa mide todavia.
+
+> **SI CAE, CAE POR UNA DE LAS DOS Y SON OPUESTAS:** o el auditor encuentra puentes que yo
+> no vi, **y entonces el 0,90 era falso**; o encuentra pasos que atribui de mas y que el
+> libro si mandaba, **y entonces me pase de prudente y perdi mandato**. **Las dos me
+> interesan y la segunda mas, porque nadie la esta midiendo.**
+
+### 4.7. LA COMPROBACION DE ORDEN DE LA `2.b`, CORRIDA SOBRE LOS SEIS NODOS QUE LA PIDEN
+
+| nodo | la serie que hay que ordenar | las lineas del libro, en su orden | veredicto |
+|---|---|---|---|
+| `elegir_forma_inspirar_cambio_conducta` | las cuatro formas | `L41`, `L61`, `L75`, `L91` | **ORDEN CORRECTO** |
+| `fijar_expectativas_claras_comienzo` | las tres cosas que tratar | `L51`, `L53`, `L55` | **ORDEN CORRECTO** |
+| `avisar_pronto_incumplimiento_expectativas` | las tres explicaciones, y despues las tres situaciones | `L117`, `L119`, `L121`, y luego `L127`, `L133`, `L143` | **ORDEN CORRECTO** |
+| `comprobar_opinion_produce_mejora` | las tres preguntas | `L171`, `L183`, `L207` | **ORDEN CORRECTO** |
+| `hacer_opinion_accionable` | los tres consejos numerados | `L213`, `L221`, `L225` | **ORDEN CORRECTO** |
+| `dar_opinion_critica_directa_desapasionada` | las cinco formulaciones y el juicio de cada una | `L237` a `L245` las cinco, y el juicio en `L247` la 1, `L249` la 2, `L253` la 5, `L255` la 3 y la 4 | **ORDEN CORRECTO, y es el unico que no es trivial** |
+
+**SEIS DE SEIS. CERO desordenes, y el cero se escribe.**
+
+**Y EL ULTIMO MERECE UNA LINEA, porque es exactamente la trampa de la `2.b`:**
+`dar_opinion_critica_directa_desapasionada` **enumera cinco formulaciones y despues las
+juzga en un orden distinto del de la lista**: primero la 1, luego la 2, luego **salta a la
+5**, y cierra con la 3 y la 4 juntas. **Un nodo que las juzgara en orden 1, 2, 3, 4, 5
+seria fiel paso a paso y falso de montaje**, que es la definicion del fallo que corregi en
+la `2.b`. **Lo lei entero de un tiron contra la seccion entera y respete el salto.**
+
+### 4.8. LAS ARISTAS DEL Cap. 4, CON EL TEST DE `D.37` CORRIDO
+
+**`MODO_INSERCION=cuarentena`: escritas, NO declaradas. No corro `python forja.py arista`.**
+
+**LAS 7 DE SERIE, que PASAN `D.37`**, y las dos cabezas dicen cuantas partes tienen con
+todas las letras (`L39: the four most common ways`, `L169: each of the following`):
+
+| madre, paso | hijo | lo que dice el paso, y por que pasa |
+|---|---|---|
+| `elegir_forma_inspirar_cambio_conducta` **4** | `fijar_expectativas_claras_comienzo` | *La primera de las cuatro formas, **fijar expectativas claras al principio, antes de que empiece ningun trabajo*** |
+| `elegir_forma_inspirar_cambio_conducta` **5** | `dar_opinion_especifica_tarea` | *La segunda, **dar opinion especifica de la tarea tan a menudo como puedas*** |
+| `elegir_forma_inspirar_cambio_conducta` **6** | `compartir_opinion_conductual_regularidad` | *La tercera, **compartir opinion sobre la conducta con cuidado y con regularidad*** |
+| `elegir_forma_inspirar_cambio_conducta` **7** | `recoger_opinion_360_grados` | *Y la cuarta, **recoger opinion de trescientos sesenta grados** cuando quieras la maxima objetividad* |
+| `comprobar_opinion_produce_mejora` **5** | `dar_opinion_frecuencia_suficiente` | *La primera, **estoy dando opinion con la frecuencia suficiente?*** |
+| `comprobar_opinion_produce_mejora` **6** | `asegurar_opinion_llega_persona` | *La segunda, **esta llegando mi opinion a quien la recibe?*** |
+| `comprobar_opinion_produce_mejora` **7** | `hacer_opinion_accionable` | *Y la tercera, **lleva mi opinion a una accion positiva?*** |
+
+**LAS 4 DE LECTURA, que NO pasan `D.37` y van por `D.29` con su razon escrita:**
+
+| madre, paso | hijo | por que NO pasa, y por que la sostengo |
+|---|---|---|
+| `fijar_expectativas_claras_comienzo` **3** | `avisar_pronto_incumplimiento_expectativas` | dice *acordad a que se parece el exito* y **no nombra el aviso de incumplimiento**. La sostengo porque la seccion `L103` es la misma doctrina llevada al caso en que ya se fallo, y su titulo lo dice: toda decepcion grande es un fallo de fijar expectativas |
+| `compartir_opinion_conductual_regularidad` **1** | `dar_opinion_especifica_tarea` | es la relacion al reves de una serie: la conductual **se construye** sobre muchos ejemplos de la especifica de tarea, y el paso lo dice, pero `D.37` pide una cabeza que enumere y aqui **la cabeza comun es `elegir_forma...`**, que ya tiene sus dos aristas |
+| `asegurar_opinion_llega_persona` **10** | `recoger_opinion_360_grados` | dice *recoge y comparte opinion de trescientos sesenta grados cuando sospeches que tu mensaje no aterriza*. **Nombra al hijo**, pero **no es serie**: no es una parte de esta cabeza, es un uso de otro nodo. **Va por `D.29` y es la mas solida de las cuatro** |
+| `dar_opinion_critica_directa_desapasionada` **11** | `dar_mala_noticia_decision_tomada` | el paso cierra con el sandwich de elogios y **no nombra la mala noticia**. La sostengo porque `L271` abre la parte de la mala noticia dentro de la misma seccion y con la misma vara del como |
+
+**7 de serie mas 4 de lectura. ESCRITAS: 11. DECLARADAS: 0.**
+
+### 4.9. Estado de la TAREA 4
+
+**CERRADA.** 19 piezas juzgadas, 3 descartadas con su cita, **12 candidatos escritos y los
+12 pasando la aduana al primer intento**, 1 puente cazado y corregido mas 2 precisiones
+declaradas sobre 111 pasos, la comprobacion de orden corrida sobre 6 nodos con cero
+hallazgos, y 11 aristas escritas con su test corrido. **Ninguna parada, cero inserciones.**

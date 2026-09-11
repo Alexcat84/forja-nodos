@@ -1,0 +1,38 @@
+{
+  "id": "comprobar_opinion_produce_mejora",
+  "titulo": "Comprobar que tu opinion produce la mejora que buscas, con las tres preguntas del libro",
+  "denominaciones": {
+    "nombre_largo": "La vara con la que se juzga la opinion que das: no si senialaste el problema, sino si los demas mejoran bajo tu guia, desglosada en tres preguntas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "your feedback only counts if it makes things better"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando has dado opinion y no ves el cambio que esperabas, o cuando quieres saber si tu manera de dar opinion esta sirviendo de algo.",
+  "entregable_esperado": "Contestadas las tres preguntas del libro sobre tu propia practica de dar opinion, y sabido cual de las tres es la que falla.",
+  "escala_minima": "Un directivo y una persona a cargo. Las tres preguntas se contestan mirando tu propia practica.",
+  "pasos_accionables": [
+    "Cambia la vara con la que juzgas tu propia opinion: la marca de un gran entrenador es que los demas mejoran bajo su guia, no que el haya senialado el problema.",
+    "Toma el caso que el libro cuenta para explicarlo. La autora dijo a alguien de su equipo que se enrollaba al hablar, el se lo tomo bien, y ella se dio una palmada en la espalda por haber cumplido con su deber de directiva. Semanas despues volvio a pasar exactamente lo mismo.",
+    "Y toma lo que descubrio al preguntarle por que no habia trabajado en simplificar: si que habia trabajado, habia anadido un indice y cambiado el orden de las cosas. Quien no habia entendido era ella. El si habia oido la opinion, pero no veia que tenia de complicado su forma de explicar las cosas, y si no lo veia no podia arreglarlo.",
+    "Ten por eso siempre al fondo de la cabeza la pregunta que manda: lleva mi opinion al cambio que espero?",
+    "Y desglosala un nivel mas, en las tres preguntas con las que el libro te manda mirar como lo estas haciendo. La primera, estoy dando opinion con la frecuencia suficiente?",
+    "La segunda, esta llegando mi opinion a quien la recibe?",
+    "Y la tercera, lleva mi opinion a una accion positiva?"
+  ],
+  "resumen_teorico": "La seccion desmonta una satisfaccion falsa del directivo, la de haber cumplido por haber senialado el problema, y pone en su lugar una vara de resultado: la opinion solo cuenta si mejora las cosas. El libro la razona con un caso propio en el que la autora descubre que el mensaje habia sido oido y aun asi no era accionable, porque quien lo recibio no veia el problema que se le describia. Despues declara que la pregunta se desglosa un nivel mas y escribe tres preguntas, cada una con su propio titulo y su propia seccion, asi que este nodo es la cabeza y las tres tienen nodo propio. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se hace esta comprobacion sobre uno mismo."
+}
