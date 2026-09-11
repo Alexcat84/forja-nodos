@@ -14368,3 +14368,166 @@ pidio la senial: **la aduana levanto cero en `cap_10`**, y esa es toda la cuesti
 SOSTENIA.** Los tres se sostienen leidos con los pasos de los dos lados delante. **El
 segundo lo marco discutible**, no porque dude de la clase, sino porque es donde el
 solape es mayor y quiero que el que inserte lo lea primero.
+
+---
+
+# TAREA 2.A. `cap_11.md`, Cap. 10, `Nurturing Culture`
+
+## H.2.1. LA FRONTERA, PUBLICADA Y COMMITEADA **ANTES** DE CORTAR NADA
+
+*`EXTRACTOR.md` 10: la frontera se lee y se publica antes de cortar. Este bloque se
+commitea solo, sin un candidato escrito todavia, y el commit lo prueba.*
+
+**EL CAPITULO ENTERO, MEDIDO POR MI:**
+
+    $ sed -n '4,5p' fuentes/zhuo_manager/cap_11.md
+      unidad: Cap. 10
+      titulo_textual: Nurturing Culture
+    $ sed -n '8,$p' fuentes/zhuo_manager/cap_11.md | wc -w   ->  3751
+    $ wc -l fuentes/zhuo_manager/cap_11.md                   ->  191
+
+**LAS SECCIONES QUE EL LIBRO IMPRIME, leidas del propio fichero y no tecleadas:**
+
+    $ grep -n "^[A-Z][A-Za-z0-9 ,:.'-]\{0,70\}$" fuentes/zhuo_manager/cap_11.md
+    9:Chapter Ten
+    31:KNOW THE KIND OF TEAM YOU WANT TO BE A PART OF
+    37:UNDERSTANDING YOUR CURRENT TEAM
+    53:UNDERSTANDING YOUR ASPIRATIONS
+    63:UNDERSTANDING THE DIFFERENCE
+    81:NEVER STOP TALKING ABOUT WHAT'S IMPORTANT
+    99:ALWAYS WALK THE WALK
+    125:CREATE THE RIGHT INCENTIVES
+    159:INVENT TRADITIONS THAT CELEBRATE YOUR VALUES
+
+**LAS DIEZ PIEZAS DE LA FRONTERA, con su rango y su veredicto de nodo:**
+
+| pieza | lineas | que hay dentro | nodo? |
+|---|---|---|---|
+| **P1** | `L9` a `L15` | portada, titulo y los dos rotulos de la ilustracion | **NO** |
+| **P2** | `L17` a `L29` | que es la cultura y como se juzga: por lo que el equipo esta dispuesto a ceder, con sus tres preguntas de contrapartida y el caso del becario | **SI**, `juzgar_cultura_renuncias_equipo` |
+| **P3** | `L31` a `L79` | `KNOW THE KIND OF TEAM YOU WANT TO BE A PART OF`: el ejercicio de una hora, con sus tres bloques impresos y sus dieciseis preguntas | **SI**, `contrastar_cultura_actual_aspirada` |
+| **P4** | `L81` a `L97` | `NEVER STOP TALKING ABOUT WHAT IS IMPORTANT`: el caso de Sheryl, las diez veces y diez formas, y las cuatro vias que la autora usa | **SI**, `comunicar_valores_diez_formas` |
+| **P5** | `L99` a `L123` | `ALWAYS WALK THE WALK`: los cinco ejemplos de decir una cosa y hacer otra, la regla de no enunciar lo que no vas a cambiar, y el caso de los 360 | **SI**, `vivir_primero_valor_declarado` |
+| **P6** | `L125` a `L153` | `CREATE THE RIGHT INCENTIVES`: el principio, la pregunta que cava, el caso de las tres exploraciones, las cuatro trampas nombradas y el metodo para resolverlas | **SI**, `revisar_incentivos_trampas_equipo` |
+| **P7** | `L155` | lo que se hace cuando el problema NO es estructural y alguien se sale de los valores | **SI**, `actuar_conducta_contraria_valores` |
+| **P8** | `L157` | lo que se hace cuando alguien hace lo dificil en el espiritu de los valores | **SI**, `reconocer_decision_dificil_valores` |
+| **P9** | `L159` a `L187` | `INVENT TRADITIONS THAT CELEBRATE YOUR VALUES`: el hackathon, el poder del rito, los seis ejemplos y el turno de preguntas de los viernes | **SI**, `inventar_tradiciones_celebrar_valores` |
+| **P10** | `L189` a `L191` | cierre del capitulo: la suma de millones de acciones pequenias | **NO** |
+
+**LAS LINEAS DE CORTE, ABIERTAS UNA A UNA Y CON SU SALIDA PEGADA** (`D.35`):
+
+    $ python -c "abre cada linea de corte de la tabla de arriba y la imprime"
+    9: Chapter Ten
+    15: ASPIRE
+    17: Whenever I ask prospective candidates if they have any questions for me, ...
+    29: As you manage more and more people, you'll play a bigger role in shaping ...
+    31: KNOW THE KIND OF TEAM YOU WANT TO BE A PART OF
+    79: Once you've identified the values you want to nurture within your team,  ...
+    81: NEVER STOP TALKING ABOUT WHAT'S IMPORTANT
+    97: As I've given greater voice to what I care about, nobody, not even once, ...
+    99: ALWAYS WALK THE WALK
+    123: If you say something is important to you and you'd like the rest of your ...
+    125: CREATE THE RIGHT INCENTIVES
+    153: The way to identify and resolve incentive traps is to regularly reflect  ...
+    155: If the issue isn't structural, but someone does something that's out of  ...
+    157: When a report does something difficult that is in the spirit of your tea ...
+    159: INVENT TRADITIONS THAT CELEBRATE YOUR VALUES
+    187: At an organization as big as Facebook, there are thousands of demands on ...
+    189: As a leader, nurturing culture may not be the first thing on your mind.  ...
+    191: Pay attention to your own actions [corto antes del guion del libro]
+
+**LA COMPROBACION DE QUE NO HAY HUECO NI SOLAPE, corrida a maquina sobre las diez
+piezas y no mirada a ojo** (es el remedio de `H.1.c` aplicado ya aqui, y es la misma
+corrida que en la vuelta 12 me cazo un `66 de 95`):
+
+    $ python -c "cruza las diez piezas contra las lineas no vacias del cuerpo"
+    lineas no vacias del cuerpo (L9 en adelante): 92
+    cubiertas por alguna pieza          : 92
+    HUECOS (no vacias sin pieza)        : []
+    SOLAPES                             : []
+    cabecera yaml L1 a L7 fuera a proposito: [1, 2, 3, 4, 5, 6, 7]
+    piezas: 10   con nodo: 8   sin nodo: 2
+
+**DIEZ PIEZAS, OCHO CON NODO Y DOS SIN EL.** Y digo por que las dos caen fuera, que es
+lo que `D.27` pide:
+
+| pieza | por que NO da nodo |
+|---|---|
+| **P1** (`L9` a `L15`) | es la portada del capitulo y los dos rotulos de la ilustracion, `AVOID` y `ASPIRE`. **No hay texto que procedimentar** |
+| **P10** (`L189` a `L191`) | es el cierre del capitulo. `L189` es argumento (*el exito sera la suma de millones de acciones*), y `L191` manda *fijarte en tus propias acciones y en que conductas premias o desalientas*: **eso es exactamente lo que P5 y P6 ya despliegan con su inventario**, asi que un nodo aqui seria la cabeza sin pasos propios del caso 2 de la ACTA 12. **Se queda fuera y sus hermanos son `SANO`** |
+
+## H.2.2. LOS TRES CORTES QUE NO SIGUEN A UN ENCABEZADO, DECLARADOS APARTE
+
+*La ACTA 12 midio que los cortes dificiles son **los que no siguen a un encabezado
+impreso**, y que ahi es donde dos lectores razonables se separan. En este capitulo hay
+**tres**, y los digo antes de que nadie me los busque:*
+
+| corte | por que corto ahi | la lectura contraria, que existe |
+|---|---|---|
+| **`L29` contra `L31`** | `L31` SI es encabezado, pero el corte de arriba (P2 empieza en `L17`) no lo es: separo la apertura del capitulo de su primera seccion | se podria no dar nodo a P2 y leer `L17` a `L29` entera como entradilla. **La descarto porque `L21` imprime tres preguntas en segunda persona**, que son inventario de objetos, no adjetivo de adecuacion |
+| **`L153` contra `L155`** | `L155` no lleva encabezado: sigue dentro de `CREATE THE RIGHT INCENTIVES`. Corto porque **`L155` abre con una condicion distinta**: *If the issue isn't structural* | se podria dejar `L155` dentro de P6. **La descarto porque P6 resuelve lo estructural y `L155` resuelve lo que NO lo es**: son dos activaciones excluyentes en el propio texto |
+| **`L155` contra `L157`** | tampoco lleva encabezado. Corto porque `L157` **invierte el signo**: no es alguien que se sale de los valores, es alguien que los cumple pagando un precio | se podria fundir `L155` y `L157` en un solo nodo de *responder a la conducta*. **Es el corte mas discutible de este capitulo y va marcado como tal** |
+
+## H.2.3. LAS DOS ARISTAS QUE EL ENCARGO ME DEJA HECHAS, VERIFICADAS CON LOS PASOS DELANTE
+
+**No las copio: las abro.** `EXTRACTOR.md` 15.6 manda que `--paso <n>` sea el paso de la
+madre que enumera la parte, y que el auditor pueda abrirlo y comprobarlo. **Cero
+inserciones en esta corrida, asi que no corro `python forja.py arista`:** van aqui.
+
+### ARISTA 1. `fijar_proceso_trabajo_equipo` paso **7** a la cultura de `cap_11`
+
+    $ python -c "imprime los pasos de fijar_proceso_trabajo_equipo del dataset"
+    7 | Aprende a dominar los procesos que el libro nombra como importantes para un
+        directivo: dirigir reuniones eficaces, blindarte contra los errores del
+        pasado, planificar el maniana y cultivar una cultura sana.
+
+**LO VERIFICO Y LO SOSTENGO, Y DIGO BAJO QUE REGLA:** el paso 7 enumera cuatro procesos
+**y no dice cuantos son**. Dice *los procesos que el libro nombra*. **Eso es `D.29` y no
+`D.37`**, con la correccion del titular del 11 sep 2026 delante: *la cuenta es
+condicion, no un adorno*. **Asi que la arista se declara igual, pero con razon escrita
+que la sostenga, porque aqui si hay algo que argumentar.**
+
+**Y LA RAZON ESCRITA, que es lo que `D.29` exige:** *cultivar una cultura sana* es **una
+linea** del paso 7 de la madre, y `cap_11.md:29` dice que **las secciones siguientes
+guian a establecer esa cultura**, con `L31` abriendo la primera:
+
+    $ sed -n '29p' fuentes/zhuo_manager/cap_11.md
+    29: As you manage more and more people, you'll play a bigger role in shaping ...
+    $ sed -n '79p' fuentes/zhuo_manager/cap_11.md
+    79: Once you've identified the values you want to nurture within your team,  ...
+
+**EL HIJO ES `contrastar_cultura_actual_aspirada` Y NO OTRO DE LOS OCHO, y digo por
+que:** `L79` dice que **una vez identificados los valores, el paso siguiente es el plan
+de juego.** O sea que el ejercicio de P3 **es la puerta de entrada del trabajo de
+cultura**, y los otros siete son el plan de juego que viene despues. **Una linea de la
+madre, y el hijo la despliega en un ejercicio de una hora con dieciseis preguntas.**
+
+**Y LO QUE NO HAGO:** no declaro ocho aristas desde ese mismo paso 7. **Una linea que
+nombra un trabajo apunta a su puerta de entrada, no a cada habitacion.** Si alguien lee
+que las ocho cuelgan de ahi, que lo diga: **lo marco como discutible.**
+
+### ARISTA 2. `fijar_proceso_trabajo_equipo` paso **2** a `definir_quien_responde_cada_cosa`
+
+**Es la arista que falto en la vuelta 12**, y la encontro el auditor releyendo el mismo
+nodo que yo abri. **Yo saque tres aristas de su paso 7 y escribi la leccion de leer al
+vecino entero; la cuarta estaba cinco pasos mas arriba.** No me defiendo: **la leccion
+que escribi era la buena y no la aplique hacia arriba.**
+
+    $ python -c "imprime los pasos de fijar_proceso_trabajo_equipo del dataset"
+    2 | Contesta quien debe hacer que y para cuando.
+
+    $ sed -n '113p' fuentes/zhuo_manager/cap_09.md
+    113: In retrospect, here's how I should have clarified expectations up front:
+         "Dan, I'd like you to take the lead on framing the options; Sarah, can you
+         own defining the visual language?" or "Each of you should take a stab at
+         how you'd design this. For the areas where you have differing opinions,
+         let's have the three of us get together and I'll make a call."
+
+**LA VERIFICO Y LA SOSTENGO. UNA LINEA DE LA MADRE, NUEVE PASOS DEL HIJO**, y `L113`
+imprime **las dos formas literales** de aclarar la expectativa por delante, que es lo
+que el hijo transcribe en sus pasos 8 y 9. **Es `D.29` en su forma mas limpia de todo el
+lote: la madre enuncia el acto en una linea y el hijo lo ejecuta entero.**
+
+**LAS DOS ARISTAS SE DECLARAN AQUI Y NO ENTRAN AL GRAFO EN ESTA CORRIDA.** Cuando Alexis
+autorice la insercion, el comando es `python forja.py arista --madre
+fijar_proceso_trabajo_equipo --hijo <hijo> --paso <n> --razon "<la razon de arriba>"`.
