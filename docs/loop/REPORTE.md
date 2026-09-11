@@ -13027,3 +13027,120 @@ el grafo cuatro veces.**
 > prohibe. **No la resuelvo yo y no muevo la vara** (`EXTRACTOR.md` 9: ninguna
 > vuelta la estrecha ni la ensancha sin correccion declarada). **Traigo el
 > recuento: 4 de 4 en esta vuelta.**
+
+## D.3. LOS NUEVE CANDIDATOS, Y LAS DOS PRIMERAS CAIDAS DE LA VUELTA
+
+| # | id | pasos | la aduana, candidato a candidato |
+|---|---|---:|---|
+| 1 | `pasar_direccion_directa_indirecta` | 7 | ENTRARIA |
+| 2 | `facilitar_gente_diga_verdad` | 8 | ENTRARIA |
+| 3 | `sostener_cambio_contexto_continuo` | 8 | ENTRARIA |
+| 4 | `equilibrar_microdireccion_ausencia` | 8 | **CAYO al primer intento**, ENTRARIA al segundo |
+| 5 | `entregar_problema_dificil_reporte` | 9 | ENTRARIA |
+| 6 | `alinear_prioridades_reporte_directivo` | 11 | ENTRARIA |
+| 7 | `decidir_directivo_no_encaja_papel` | 9 | ENTRARIA |
+| 8 | `reemplazarse_trabajo_propio` | 11 | ENTRARIA |
+| 9 | `reservar_valor_unico_prioridades_arriba` | 9 | **CAYO al primer intento**, ENTRARIA al segundo |
+| | **9 candidatos** | **80** | **9 entrarian, 0 bloquearian, 0 caerian, tras corregir 2** |
+
+### LAS DOS CAIDAS, PEGADAS ENTERAS, PORQUE SON LAS PRIMERAS DE LA VUELTA
+
+*`EXTRACTOR.md` 2: el que cae se corrige y se pega la salida. **Van 60 candidatos
+en cuatro capitulos y estas son las dos unicas caidas.***
+
+    [CAERIA] delegar_sin_caer_extremos   (delegar_sin_caer_extremos.json)
+        guarda: el candidato rompe docs/REGLAS_DE_ID.md
+          id 'delegar_sin_caer_extremos': preposicion o articulo prohibido: sin (regla 3)
+
+    [CAERIA] reservar_lo_que_no_delegas   (reservar_lo_que_no_delegas.json)
+        guarda: el candidato rompe docs/REGLAS_DE_ID.md
+          id 'reservar_lo_que_no_delegas': preposicion o articulo prohibido: lo, que (regla 3)
+
+**LAS DOS SON LA REGLA 3, que `EXTRACTOR.md` 15.3 llama por su nombre: `es la que
+mas cae de todas`, 35 de los 65 del estreno.** Con estas dos, **2 de 2 de mis
+caidas de esta vuelta son de la regla 3**, y confirman la cifra en vez de
+contradecirla.
+
+**Y LA PRIMERA ES LA QUE ME DUELE, porque la habia esquivado tres horas antes.**
+En `cap_07` renombre `avisar_organizador_reunion_sin_valor` a
+`avisar_organizador_reunion_prescindible` **precisamente por `sin`**, y lo hice
+sin que la aduana me lo dijera. Cuatro capitulos despues volvi a escribir `sin`
+en un id.
+
+> **EL REMEDIO QUE FUNCIONO NO FUE ACORDARME: FUE LA ADUANA.** Es la misma
+> doctrina de `D.35`, escrita para las citas y que aqui vale para los ids: **un
+> remedio que se cumple acordandose no es un remedio.** La aduana en el mismo
+> acto costo dos minutos; al final del lote habria costado el lote.
+
+| lo que cayo | por que | como quedo |
+|---|---|---|
+| `delegar_sin_caer_extremos` | `sin` | `equilibrar_microdireccion_ausencia` |
+| `reservar_lo_que_no_delegas` | `lo`, `que` | `reservar_valor_unico_prioridades_arriba` |
+
+**Y LOS DOS IDS NUEVOS SON MEJORES, no solo legales.** `equilibrar_microdireccion_ausencia`
+nombra los dos extremos que el nodo trata, y `reservar_valor_unico_prioridades_arriba`
+nombra la interseccion que el nodo aplica. **El id viejo describia la forma; el
+nuevo describe el contenido.**
+
+## D.4. LA RELECTURA DE FIDELIDAD DE `cap_10`: UN PUENTE
+
+| # | nodo | lo que escribi | el parrafo que NO lo dice | como quedo |
+|---|---|---|---|---|
+| 1 | `reemplazarse_trabajo_propio` | *Extrapola de ahi **lo primero*** | `cap_10.md:191` extrapola **una sola cosa** y mi ordinal anunciaba una serie que el libro no abre | *Extrapola de ahi lo que el libro extrapola* |
+
+    $ sed -n '191p' fuentes/zhuo_manager/cap_10.md
+    191: From this, you can extrapolate that anything your report can do just as well
+
+**TASA DE `cap_10`: 1 sobre 80, el 1,25 por ciento.** Es la mas baja de las cuatro.
+
+### DISCUTIBLE 10: los ordinales que SI deje, y son el filo de mi propia vara
+
+**En `facilitar_gente_diga_verdad` escribi *la primera contramedida*, *la
+segunda*, *la tercera* y *la cuarta*, y el libro NO las cuenta**: las encadena
+en un parrafo corrido. Lo mismo en `sostener_cambio_contexto_continuo` con las
+tecnicas.
+
+**Los deje, y la razon es la vara que declare en `A.4`:** un ORDINAL sobre una
+secuencia que el libro imprime en orden es transcripcion, y un CARDINAL que
+anuncia cuantas hay es puente. **Pero `Aplica la cuarta` dice cuantas hay por
+implicacion**, y ese es el filo exacto de mi propia regla.
+
+**Lo marco antes de saber si acierto, y digo que seria coherente en los dos
+sentidos:** si el auditor cuenta esos ordinales implicados como puentes, la tasa
+de `cap_10` pasa de **1 de 80 a 8 de 80, el 10 por ciento**, y la del capitulo 7
+subiria tambien por los cinco `Evita el primero` a `Evita el quinto` de
+`dirigir_reunion_decision`. **Dejo las dos cifras calculadas.**
+
+## D.5. VEREDICTOS Y ARISTAS DE `cap_10`
+
+**CERO BLOQUEOS EN NUEVE CANDIDATOS**, y no lo leo como que estan solos: lo leo
+con `B.5` delante, donde **18 pares de dos libros del mismo tema dieron 0 de 18**.
+**La cola vacia certifica que no hay gemelo, no que no haya madre.**
+
+**`D.37`: cero, por cuarta vez.** La unica cabeza contable del capitulo,
+`cap_10.md:37`, dice `these are the most striking contrasts` sin numero.
+
+    $ sed -n '37p' fuentes/zhuo_manager/cap_10.md
+    37: People often ask me what’s different about my job now than when I started.
+
+### Las aristas de `D.29` de `cap_10`
+
+| madre | paso | hijo | razon |
+|---|---:|---|---|
+| `equilibrar_microdireccion_ausencia` | **8** | `entregar_problema_dificil_reporte`, `alinear_prioridades_reporte_directivo`, `decidir_directivo_no_encaja_papel`, `reemplazarse_trabajo_propio` | el cierre de la madre (`cap_10.md:107`) anuncia que hay unos principios guia que se exploran a continuacion, y los cuatro epigrafes que siguen (`:109`, `:125`, `:147`, `:173`) son esos principios, cada uno desplegado en nueve a once pasos que la madre no tiene. **El libro dice `a few guiding principles`, que no es un numero: `D.29`** |
+| `reemplazarse_trabajo_propio` | **7** | `reservar_valor_unico_prioridades_arriba` | el paso 7 de la madre enuncia la regla del pulgar como una interseccion de dos condiciones, y el hijo despliega el lado que NO se delega, con los patrones que el libro nombra y su prohibicion expresa de delegar el tercero |
+
+    $ sed -n '107p' fuentes/zhuo_manager/cap_10.md
+    107: Delegating well is far from an exact science, but there are a few guiding
+
+**NINGUNA SE ESCRIBE EN EL GRAFO.** Cero inserciones.
+
+## D.6. LAS CUATRO MEDIDAS DEL `cap_10`
+
+| medida | cifra | como se saco |
+|---|---|---|
+| **candidatos por mil palabras** | **9 sobre 6.137 = 1,47** | `sed -n '8,$p' cap_10.md \| wc -w` da 6.137 |
+| **puentes sobre pasos escritos** | **1 de 80 = 1,25 por ciento**, banda hasta 10,0 | tabla `D.4` y DISCUTIBLE 10 |
+| **veredictos** | **0**, porque la aduana no levanto ningun vecino | 2 aristas de `D.29` declaradas, 1 caso de `D.37` descartado |
+| **caidas de la aduana** | **2, las dos de regla 3**, corregidas y reintentadas en el acto | tabla `D.3` |
+| **tiempo** | **ver `E.4` al cierre** | primer commit del capitulo contra el de su cierre |
