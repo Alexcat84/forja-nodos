@@ -8586,3 +8586,28 @@ el remedio viejo (las citas al libro), sino donde miraba el remedio nuevo de la 
 (las citas a lo ya publicado).** El encargo acerto en donde poner el remedio, y la caida
 que evito es la misma especie exacta que la vuelta 8 pago tres veces.
 
+## C.9.7. UNA SEGUNDA PASADA DE FIDELIDAD SOBRE EL NODO MAS LARGO
+
+**`transitar_jefe_nuevo_equipo_establecido` tiene 12 pasos, el mas largo de los 21**, y
+`EXTRACTOR.md` 15.4 avisa de que el puente no se nota mientras se escribe. **Asi que lo
+volvi a abrir paso a paso contra sus lineas**, con `sed` sobre las trece lineas del tramo
+(`L143`, `L145`, `L147`, `L151`, `L153`, `L157`, `L171`, `L173`, `L175`, `L187`, `L189`,
+`L193`, `L195`).
+
+| paso | linea que lo dice | veredicto |
+|---:|---|---|
+| 1 y 2 | `L143` | **TRANSCRIPCION**, incluida la ventana de *usually about three months* |
+| 3 | `L145` | **TRANSCRIPCION** |
+| 4 | `L147` | **TRANSCRIPCION** |
+| 5 | `L151` y `L153` | **TRANSCRIPCION** |
+| 6 y 7 | `L157` | **TRANSCRIPCION** |
+| 8 | `L171` y `L173` | **TRANSCRIPCION** |
+| 9 | `L175` | **TRANSCRIPCION** |
+| 10 | `L187` | **TRANSCRIPCION** |
+| 11 | `L189` | **TRANSCRIPCION**, ya con la atribucion dentro tras la correccion del 4.5 |
+| 12 | `L193` y `L195` | **TRANSCRIPCION** |
+
+**12 de 12 transcripcion, cero puentes nuevos.** La cifra de 4 puentes del Cap. 2 **no se
+mueve**, y ahora tiene una segunda pasada detras en el nodo con mas superficie para
+esconderlos.
+
