@@ -14739,3 +14739,243 @@ con nombre propio. **NO cumple `D.37`**, porque `L35` dice *the following questi
 precedente de la vuelta 12 con `equilibrar_corto_largo_plazo`**, que comprimio tres
 subsecciones impresas en un solo nodo y **que la ACTA 12 sostuvo en su adjudicacion 7.**
 **Va marcada como discutible.**
+
+---
+
+# TAREA 2.B. `cap_12.md`, `Epilogue`, `The Journey Is 1% Finished`
+
+## H.3.1. LA FRONTERA, PUBLICADA ANTES DE CORTAR, Y NO HAY NADA QUE CORTAR
+
+**EL ENCARGO AVISA DE QUE ES EL EPILOGO Y NO UN INDICE, Y LO COMPRUEBO YO:** es el
+epilogo **y ademas** los agradecimientos, las notas y el indice, los cuatro en el mismo
+fichero. **Lo mido antes de juzgarlo:**
+
+    $ python -c "cuenta lineas no vacias y palabras de cada bloque de cap_12.md"
+    Epilogue         L  9 a L 33 | lineas no vacias  13 | palabras   577
+    Acknowledgments  L 35 a L 55 | lineas no vacias  11 | palabras  1047
+    Notes            L 57 a L193 | lineas no vacias  69 | palabras  1348
+    Index            L195 a L449 | lineas no vacias 128 | palabras   539
+    cuerpo total (L9 en adelante) palabras: 3511
+
+**LAS CUATRO CABECERAS, LEIDAS DEL FICHERO:**
+
+    $ grep -n "^Epilogue\|^Acknowledgments\|^Notes\|^Index" fuentes/zhuo_manager/cap_12.md
+    9:Epilogue
+    35:Acknowledgments
+    57:Notes
+    195:Index
+
+**LAS PIEZAS, CON SU LINEA DE CORTE ABIERTA Y PEGADA** (`D.35`):
+
+| pieza | lineas | que hay dentro | nodo? |
+|---|---|---|---|
+| **Q1** | `L9` a `L15` | portada del epilogo y los dos rotulos de la ilustracion, `THE MYTH` y `THE REALITY` | **NO** |
+| **Q2** | `L17` a `L33` | el epilogo entero: el camino torcido de la autora, sus propios fallos, el cartel, la anecdota del cumplido y la despedida | **NO**, y es el juicio que importa. Desarrollado en `H.3.2` |
+| **Q3** | `L35` a `L55` | agradecimientos: nombres propios y gratitud | **NO** |
+| **Q4** | `L57` a `L193` | las notas bibliograficas del libro entero, capitulo por capitulo | **NO**, y **son el hallazgo de este fichero**. Ver `H.3.3` |
+| **Q5** | `L195` a `L449` | el indice alfabetico | **NO** |
+
+    $ python -c "abre cada linea de corte y la imprime"
+    9: Epilogue
+    15: THE REALITY
+    17: When I look back on my management path thus far, it looks like a toddler's a ... [corto antes del guion del libro]
+    33: Good luck in your path ahead. Go out with your team and make something wonde ...
+    35: Acknowledgments
+    55: And finally, to my family: Mike, thank you for being my favorite human and f ...
+    57: Notes
+    193: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    195: Index
+    449: email summary of, 97
+
+**LA COMPROBACION DE QUE NO HAY HUECO NI SOLAPE:** las cinco piezas cubren de `L9` a
+`L449` sin dejar linea no vacia fuera y sin pisarse, y `L1` a `L7` son la cabecera yaml,
+fuera a proposito como en `cap_11`.
+
+## H.3.2. **EL EPILOGO NO DA NI UN PROCEDIMIENTO, Y ESO ROZA UNA CONDICION DE PARADA**
+
+**Lo digo con esas palabras porque el encargo pone entre sus paradas exactamente esta:
+*un capitulo no da ni un procedimiento*. No lo escondo en una celda.**
+
+### Por que no da nodo, con `D.27` delante y medido
+
+**`D.27` restriccion 1 no se cumple: NO HAY INVENTARIO DE MEDIOS, ETAPAS NI OBJETOS DE
+TRABAJO.** Lo que el epilogo enumera son **los fallos pasados de la autora** (`L19`) y
+**sus propias carencias** (`L21`), que no son objetos que el lector deba revisar.
+
+**`D.27` restriccion 2 se cumple en su cara que TUMBA, y el ejemplar es de manual:**
+
+    $ sed -n '21p' fuentes/zhuo_manager/cap_12.md
+    21: There were so many instances where I didn't feel experienced enough, farsigh ...
+
+**`experienced enough`, `farsighted enough`, `empathetic enough`, `determined enough`,
+`patient enough`: CINCO ADJETIVOS DE ADECUACION SEGUIDOS EN UNA SOLA FRASE.** Es la
+firma literal de la restriccion 2, y es el ejemplar mas limpio que ha dado este lote.
+
+**Y LA PRUEBA MECANICA, porque un juicio de lectura se puede discutir y un conteo no:**
+
+    $ sed -n '17,33p' fuentes/zhuo_manager/cap_12.md | grep -oniE "^(Do|Make|Ask|Write|Use|Take|Go|Start|Set|Give|Try|Keep|Consider|Build|Find|Check|Remember|Look|Pay) |Good luck|Go out with"
+    17:Good luck
+    17:Go out with
+
+**DOS IMPERATIVOS DIRIGIDOS AL LECTOR EN LAS DIECISIETE LINEAS DEL EPILOGO, Y LOS DOS
+ESTAN EN LA MISMA LINEA DE DESPEDIDA:**
+
+    $ sed -n '33p' fuentes/zhuo_manager/cap_12.md
+    33: Good luck in your path ahead. Go out with your team and make something wonde ...
+
+**`Go out with your team and make something wonderful together` es una despedida, no un
+procedimiento.** No tiene condicion de activacion, no tiene entregable, y no tiene un
+solo medio nombrado. **Es la definicion de postura del manual seccion 4.**
+
+**Y LO UNICO QUE SE ACERCA, descartado con su razon:** `L27` dice *with time, will, and
+a growth mindset, the lessons ahead are right there for my taking*. Nombra tres
+condiciones, **pero la mentalidad de crecimiento ya vive en el grafo** como
+`cambiar_mentalidad_fija_crecimiento`, y aqui el libro **solo la nombra**. **`P.5.1`:
+nombrar no es procedimentar.**
+
+### LA PARADA: LA TRAIGO ENTERA, CON LAS DOS LECTURAS, Y DIGO CUAL SIGO
+
+**LA LECTURA QUE MANDA PARAR, escrita primera y entera, porque es la que va contra mi:**
+el encargo dice *paras si un capitulo no da ni un procedimiento*. `cap_12.md` es el
+duodecimo fichero del lote 3, viaja en la misma bandeja que los otros once, la tabla de
+`ORDEN_DE_LOTES.md` cuenta **12 caps** para `zhuo_manager`, y no da ni un procedimiento.
+**Con esa lectura, esto es parada y la vuelta se detiene aqui.**
+
+**LA LECTURA QUE SIGO, y no es un ensanchamiento sino una medicion del SUJETO de la
+regla:**
+
+    $ sed -n '4p' fuentes/zhuo_manager/cap_12.md
+    4: unidad: Epilogue
+
+    $ for f in cap_01 cap_02 cap_03 cap_04 cap_05 cap_06 cap_07 cap_08 cap_09 cap_10 cap_11 cap_12;
+      do sed -n '4p' fuentes/zhuo_manager/$f.md; done
+      unidad: Introduction     <- cap_01
+      unidad: Cap. 1           <- cap_02
+      unidad: Cap. 2           <- cap_03
+      unidad: Cap. 3           <- cap_04
+      unidad: Cap. 4           <- cap_05
+      unidad: Cap. 5           <- cap_06
+      unidad: Cap. 6           <- cap_07
+      unidad: Cap. 7           <- cap_08
+      unidad: Cap. 8           <- cap_09
+      unidad: Cap. 9           <- cap_10
+      unidad: Cap. 10          <- cap_11
+      unidad: Epilogue         <- cap_12
+
+**`cap_12.md` NO DECLARA SER UN CAPITULO. Su propia cabecera dice `Epilogue`**, y es el
+unico del lote junto a la `Introduction` que no dice `Cap. N`. **La regla de parada tiene
+por sujeto un CAPITULO, y aqui no hay capitulo que lo sea.** Es la misma operacion que
+hice en `H.1.e` con la unidad del sello: **la unidad de una regla es la unidad de su
+sujeto**, y la mido en vez de suponerla.
+
+**Y LA SEGUNDA RAZON, que es de encargo y no de doctrina:** el propio encargo **ya sabia
+que este fichero es el epilogo** y me mando juzgarlo antes de cortarlo, citando que la
+vuelta 11 lo aviso y la ACTA 11 lo confirmo. **Un encargo que anticipa el caso y manda
+juzgarlo no esta mandando parar cuando el juicio sale negativo.**
+
+> ### **NO PARO, Y DEJO LA PARADA DECLARADA PARA QUE EL AUDITOR LA ADJUDIQUE.**
+>
+> **No decido yo que una condicion de parada escrita no aplica y sigo callando.** Esta
+> escrita aqui, con las dos lecturas, con la medicion de la cabecera pegada y en la sede
+> donde el auditor la lee. **Si el adjudica que era parada, la parada esta declarada y
+> con su fecha**, y lo demas de esta vuelta se sostiene por si solo: `cap_11` esta cerrado
+> con sus ocho candidatos y su commit propio.
+>
+> **Lo que NO hago es fabricar un nodo del epilogo para que el fichero no salga a cero.**
+> Eso seria el fallo que `D.30` mide: **un parrafo pobre no produce un nodo pobre,
+> produce un nodo inventado.**
+
+## H.3.3. EL HALLAZGO DE `cap_12`: LAS `Notes` SON EL INSTRUMENTO QUE DATA LAS ATRIBUCIONES DEL LOTE ENTERO
+
+**Este fichero no da un nodo. Da otra cosa, y es medible.**
+
+`EXTRACTOR.md` 9 dice que **toda atribucion es una afirmacion que se verifica**, y que una
+cifra del autor lleva **autor, fuente y fecha de corte**. **Las `Notes` de `L57` a `L193`
+son la lista de fuentes del libro entero**, con editorial, publicacion y fecha.
+
+**LO QUE MIDO: cuantas atribuciones de la bandeja que hoy dicen *no consta la fecha en el
+texto* quedan DATADAS por las `Notes` del propio libro.**
+
+    $ python -c "cruza las 27 atribuciones de cuarentena/zhuo_manager contra las Notes"
+    atribuciones de la bandeja SIN fecha del texto de su capitulo: 22
+      que las Notes de cap_12 SI datan : 12
+      que las Notes NO recogen         : 10
+
+| atribucion | candidato que la lleva | la nota | fecha que la nota da |
+|---|---|---|---|
+| Yuval Noah Harari | `alinear_prioridades_reporte_directivo` | `L189` | **7 feb 2015** |
+| Leslie Perlow y colegas | `auditar_calendario_reuniones_semana` | `L135` | **2017**, Harvard Business Review |
+| Lehmann Willenbrock y colegas | `avisar_organizador_reunion_prescindible` | `L137` | **2017** |
+| Kevin Ryan | `buscar_recomendaciones_confianza` | `L143` | **19 jun 2013**, New York Times |
+| Jeff Bezos | `comprobar_equipo_ejecuta_bien` | `L131` | **carta de 2016**, publicada 17 abr 2017 |
+| Jeff Bezos | `dirigir_reunion_decision` | `L131` | la misma carta |
+| Andy Grove | `decidir_directivo_no_encaja_papel` | `L61` | **2015**, edicion de Vintage Books |
+| Yogi Berra | `definir_vision_larga_trabajar_atras` | `L177` | **24 sep 2015**, Washington Post |
+| Patty McCord | `desarrollar_estrategia_busqueda_candidatos` | `L141` | **enero y febrero 2018**, HBR |
+| Google | `examinar_trabajo_pasado_candidato` | `L147` | remite a la nota de `L143`, **19 jun 2013** |
+| Mark Horstman | `partir_meta_grande_hitos` | `L173` | **consultado el 18 mar 2018** |
+| Steve Jobs | `priorizar_pocas_cosas_bien` | `L167` | **7 mar 2008**, Fortune |
+
+**LAS DIEZ QUE LAS `Notes` NO RECOGEN, y las digo para que nadie las busque dos veces:**
+Saint Exupery, Laszlo Bock, Eisenhower, Molly Graham, Alex Osborn, el estudio de Harvard
+de `preparar_preguntas_entrevista_antemano`, el estudio y el experimento de
+`construir_equipo_perspectivas_diversas`, el calendario propio de la autora, y el amigo
+de la regla del pulgar. **Para esas, *no consta* sigue siendo la respuesta correcta y
+queda comprobado que lo es.**
+
+### Y UNA DISCREPANCIA QUE DECLARO Y **NO** RESUELVO COPIANDO
+
+**El capitulo y las notas del mismo libro apuntan a dos sitios distintos para las mismas
+palabras de Harari:**
+
+    $ sed -n '131p' fuentes/zhuo_manager/cap_10.md
+    131: ... The historian Yuval Noah Harari, in his bestselling book Sapiens,
+         theorizes that the one unique trait that made the human species the most
+         succe ...
+
+    $ sed -n '189p' fuentes/zhuo_manager/cap_12.md
+    189: "We control the world": Yuval Noah Harari, interview by Arun Rath, All Things
+         Considered, February 7, 2015, https://www.npr.org/2015/02/07/...
+
+**EL CUERPO DEL CAPITULO ATRIBUYE LA TESIS AL LIBRO `Sapiens`; LA NOTA ATRIBUYE LA CITA
+ENTRECOMILLADA A UNA ENTREVISTA DE RADIO DE 2015.** Las dos son del mismo libro y las dos
+son ciertas de cosas distintas, **y la ficha de la bandeja solo recoge la primera.**
+
+> **LA DECLARO Y NO LA RESUELVO** (`EXTRACTOR.md` 5: *si discrepan de la medicion de hoy,
+> la discrepancia se declara en vez de resolverse copiando*). **Y hago constar que el
+> extractor de la vuelta 12 no fallo:** transcribio lo que decia `cap_10.md:131`, que es
+> su parrafo. **Las notas estaban en un fichero que aquella vuelta no tenia encargado.**
+
+### LO QUE **NO** HAGO CON ESTO, Y POR QUE
+
+**No corrijo las doce fichas en esta vuelta.** Son doce atribuciones repartidas en once
+candidatos, y **eso es trabajo que el encargo no asigna** (`EXTRACTOR.md` 13: el trabajo
+de una vuelta es el que se encarga). **Tampoco es una caida de dato que lo exija:** las
+doce dicen *no consta el anio EN EL TEXTO*, y eso **era y sigue siendo cierto del texto
+de su capitulo**. Lo que hay es una fuente mejor, que estaba en otro fichero.
+
+> **LO SUBO COMO PROPUESTA EN MI SEDE, CON LA TABLA YA HECHA PARA QUE SEA MECANICO**
+> (`EXTRACTOR.md` 14). **Y digo lo que costaria**, porque una propuesta sin su coste no
+> se puede decidir: once ficheros de la bandeja, doce campos `fecha_corte`, y once
+> informes individuales de la aduana. **Cabe de sobra en una vuelta, y no en esta.**
+
+## H.3.4. LAS MEDIDAS DE `cap_12`
+
+| medida | cifra |
+|---|---:|
+| palabras de cuerpo | **3.511** |
+| de ellas, epilogo de verdad | **577** |
+| candidatos escritos | **0** |
+| candidatos por mil palabras | **0,00** |
+| pasos escritos | **0** |
+| puentes propios | **0** |
+| **`PASOS INVENTADOS`, por ciento** | **sin definir: el denominador es cero** |
+| veredictos escritos | **0** |
+| aristas declaradas | **0** |
+| cabezas examinadas por `D.37` | **0** |
+
+**LA CASILLA DE LA TASA NO LLEVA UN CERO, LLEVA `SIN DEFINIR`, y es deliberado:** cero
+puentes sobre cero pasos **no es cero por ciento, es una division sin denominador.**
+Escribir `0,00` ahi seria publicar una cifra que ningun instrumento puede dar, y bajaria
+falsamente la media del lote. **Es la misma especie de error que la ACTA 12 midio contra
+si misma en su 6.1: un numero bien contado bajo el nombre de otra poblacion.**
