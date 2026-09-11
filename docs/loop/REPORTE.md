@@ -11809,3 +11809,38 @@ completa es peor que la discrepancia.
 | **punteros** | **98 de 98**, cero rotos |
 | **cruce pieza contra cita** | **83 de 83**, cero fuera de rango |
 | **orden** | **29 de 29**, cero desordenes |
+
+## C.11.11. LA MEDIDA 4, CERRADA CON SU CIFRA FINAL
+
+*Es la sede que `4.4` y `C.11.7` anunciaron, y **la cifra no existia mientras las escribia**:
+el commit de cierre es `0e35d0d`, el del informe del lote, que es el ultimo de la vuelta.*
+
+    $ git log -1 --format=%ad --date=iso c6171aa  ->  2026-09-10 23:58:23 -0400
+    $ git log -1 --format=%ad --date=iso 0e35d0d  ->  2026-09-11 01:33:08 -0400
+
+| vuelta | tareas | unidades | palabras | de | a | duracion |
+|---|---:|---:|---:|---|---|---|
+| vuelta 10 | 5 | 2 | 13.555 | `987dc73` | `2b0c5ab` | **1 h 32 min 46 s** |
+| **vuelta 11** | **4** | **1** | **9.617** | **`c6171aa`** | **`0e35d0d`** | **1 h 34 min 45 s** |
+
+**LA MISMA MEDIDA CONTRA LA MISMA** (primer commit de la vuelta contra ultimo commit de la
+vuelta), **y salen casi identicas: 1 h 32 min contra 1 h 34 min, dos minutos de diferencia.**
+
+**PERO NO SON LA MISMA CARGA Y NO LAS PRESENTO COMO TAL.** La 10 minó **dos unidades y 13.555
+palabras en 5 tareas**; la 11 minó **una y 9.617 en 4**. **Y el desglose dice donde se fue el
+tiempo, que es lo unico util de esta medida:**
+
+    de c6171aa a efaa64e (las cuatro tareas enteras, sin el informe del lote)  :  57 min 15 s
+    de efaa64e a 0e35d0d (esperar al informe del lote y pegar su saldo)        :  37 min 30 s
+
+**LAS CUATRO TAREAS COSTARON 57 MINUTOS Y EL INFORME DEL LOTE COSTO 37.** Es decir, **el 40
+por ciento de la vuelta 11 fue esperar a un instrumento**, contra la vuelta 10 donde la
+corrida del lote no llego a terminar dentro del turno del auditor. **Lanzarlo lo primero de
+todo, como el encargo manda, es lo que hizo que esos 37 minutos corrieran EN PARALELO con las
+tareas 3 y 4 en vez de detras de ellas**, y aun asi sobresalio media hora. **La instruccion
+funciono y la escribo con su cifra para que se pueda comprobar.**
+
+**Y CIERRO LA MEDIDA 4 DICIENDO LO QUE NO SE:** no se si comparar duraciones de vuelta contra
+vuelta significa algo mientras la carga cambie de una a otra. **Lo que si es comparable es el
+desglose**, y ese lo dejo medido por primera vez para que la vuelta 12 tenga contra que
+compararse.
