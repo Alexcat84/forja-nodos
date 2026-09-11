@@ -4,13 +4,21 @@
   "denominaciones": {
     "nombre_largo": "Las tres respuestas comunes a por que quieres ser directivo, y por que la gestion puede no ser el mejor camino para esas metas",
     "otros_idiomas": [
-      {"idioma": "ingles", "termino": "Why do you want to be a manager?"}
+      {
+        "idioma": "ingles",
+        "termino": "Why do you want to be a manager?"
+      }
     ],
     "sigla": ""
   },
   "dominio": "gestion_equipos",
   "estado": "vivo",
-  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
   "ids_alias": [],
   "nodos_previos": [],
   "nodos_siguientes": [],
@@ -23,8 +31,8 @@
     "Y comprueba despues lo contrario, porque muchas organizaciones de hoy, sobre todo las que buscan atraer talento muy cualificado o creativo, tienen caminos de ascenso que no exigen gestionar a otros: en muchas empresas de tecnologia los dos caminos dan las mismas oportunidades de impacto, de crecimiento y de retribucion hasta el primer nivel, lo que significa que hacerse directivo no es un ascenso sino un cambio de camino.",
     "Si trabajas en una organizacion que apoya crecer como contribuidor individual, aprovecha que tienes eleccion y averigua cual de los dos caminos encaja mejor con tus fuerzas y tus intereses.",
     "Si la respuesta es quiero libertad para decidir, ponle delante la verdad: aunque los directivos si deciden un buen numero de cosas, esas decisiones tienen que ir en interes del equipo, porque si no perderan la confianza y se quedaran sin capacidad de influir. Ningun lider manda sin rendir cuentas, y si sus decisiones salen mal se le pide cuentas.",
-    "Si la respuesta es me lo han pedido, desconfia de la trampa de la obligacion: deberia y puedo no son razones suficientes, y la pregunta que queda es si de verdad quieres.",
-    "Y ten presente la leccion con la que el libro cierra este motivo: los mejores resultados salen de inspirar a la gente a actuar, no de decirle lo que tiene que hacer."
+    "Y ten presente la leccion con la que el libro cierra ESE motivo, el de querer libertad para decidir: los mejores resultados salen de inspirar a la gente a actuar, no de decirle lo que tiene que hacer.",
+    "Si la respuesta es me lo han pedido, desconfia de la trampa de la obligacion: deberia y puedo no son razones suficientes, y la pregunta que queda es si de verdad quieres."
   ],
-  "resumen_teorico": "El libro abre este bloque con una sola linea que declara de que van las tres subsecciones siguientes: son otras respuestas comunes a la pregunta de por que quieres ser directivo, y segun las circunstancias la gestion puede no ser el mejor camino para esas metas. Las tres respuestas estan nombradas una a una con su propio titulo. El nodo no se parte en tres porque las tres no traen procedimiento por igual: la primera trae una comprobacion doble y una accion, la segunda trae una correccion de expectativa y una leccion, y la tercera trae un aviso y una pregunta. El libro razona la segunda con un caso propio y con su error dentro: la autora tuvo una idea brillante volviendo a casa en coche, la esbozo en papel, convoco a su equipo al dia siguiente y les pidio que desarrollaran su esbozo en una propuesta completa, y el trabajo se arrastro porque ninguno de los disenadores estaba convencido de la idea. Lo que el libro NO dice, y por eso no esta escrito aqui, es que hacer cuando el motivo es bueno pero la organizacion no ofrece el otro camino."
+  "resumen_teorico": "El libro abre este bloque con una sola linea que declara de que van las tres subsecciones siguientes: son otras respuestas comunes a la pregunta de por que quieres ser directivo, y segun las circunstancias la gestion puede no ser el mejor camino para esas metas. Las tres respuestas estan nombradas una a una con su propio titulo. El nodo no se parte en tres porque las tres no traen procedimiento por igual: la primera trae una comprobacion doble y una accion, la segunda trae una correccion de expectativa y una leccion, y la tercera trae un aviso y una pregunta. El libro razona la segunda con un caso propio y con su error dentro: la autora tuvo una idea brillante volviendo a casa en coche, la esbozo en papel, convoco a su equipo al dia siguiente y les pidio que desarrollaran su esbozo en una propuesta completa, y el trabajo se arrastro porque ninguno de los disenadores estaba convencido de la idea. Lo que el libro NO dice, y por eso no esta escrito aqui, es que hacer cuando el motivo es bueno pero la organizacion no ofrece el otro camino. La leccion que cierra el motivo de la libertad va inmediatamente detras de ese motivo y nombra cual es, porque el libro la escribe al final de esa subseccion y no de la siguiente."
 }

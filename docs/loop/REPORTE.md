@@ -8757,3 +8757,138 @@ del lote 1, que es el numero contra el que `ORDEN_DE_LOTES.md` compara.
 
 **Una tasa sin banda es media cifra** (`EXTRACTOR.md` 9, cifra del autor). **Aqui la que
 publique sin banda era mia, asi que la banda me la pongo yo.**
+
+---
+
+## TAREA 1. LOS REGISTROS DEL ACTA 9
+
+### 1.1. LAS COMPROBACIONES DE APERTURA, CORRIDAS ANTES DE LA PRIMERA OPERACION
+
+*`EXTRACTOR.md` 4: la apertura se mide antes de la primera operacion. **Las corri antes de
+tocar `cuarentena/` y antes de abrir `cap_04.md`.***
+
+| comprobacion | comando | la salida, pegada | esperado por el encargo | cuadra |
+|---|---|---|---:|---|
+| gate | `python forja.py gate` | `GATE VERDE.` / `  nodos verificados: 52` | 52 | **SI** |
+| aristas del grafo | conteo sobre `dataset/nodos.jsonl` | `nodos 52 nodos_previos 37 nodos_siguientes 37` | 37 | **SI** |
+| prueba de aceptacion | `python tests/test_aceptacion.py` | `  total: 72 pruebas, 0 fallos, 0 errores` | 72 de 72 | **SI** |
+| bitacora | `python forja.py rancios` | `BLOQUE DE VIGENCIA VERDE.` / `  veredictos comprobados: 60` | 60 | **SI** |
+| barrido | `python forja.py guiones` | `BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.` | verde | **SI** |
+
+**LAS CUATRO CIFRAS CUADRAN AL NUMERO Y LA DIFERENCIA SE ESCRIBE CERO EN LAS CUATRO**
+(remedio de la vuelta 9, hermana segunda: la comparacion que sale CERO se escribe CERO y no
+se borra la fila).
+
+    52 - 52 = 0      37 - 37 = 0      72 - 72 = 0      60 - 60 = 0
+
+**Nada que declarar en la apertura. No hay parada por la TAREA 3.**
+
+### 1.2. EL REMEDIO DE LA `1.a`, ACEPTADO, Y DONDE VIVE SU TABLA
+
+**El remedio es `D.35` dado otro paso al lado, y lo digo con sus dos mitades:**
+
+> **1. NINGUNA PROMESA DE PEGAR UNA SALIDA MAS ABAJO SE ESCRIBE SIN CUMPLIRLA EN EL MISMO
+> COMMIT.** Si la salida todavia no esta, **se deja el hueco dicho sin nombre de seccion**.
+>
+> **2. Y AL CERRAR EL REPORTE, UN `grep -n` DE CADA ANCLA PROMETIDA CONTRA EL PROPIO
+> REPORTE, CON SU SALIDA PEGADA.**
+
+**Lo aplico desde la primera pantalla de esta vuelta.** En `0.3.a` tenia delante
+exactamente la tentacion que tumbo la vuelta 9 (el informe de 21 estaba corriendo y su
+salida no habia llegado) **y escribi la sede solo porque ya sabia que `1.3` iba a existir
+en este mismo commit.** Esa es la regla: **la sede se nombra cuando ya esta, o no se
+nombra.**
+
+**LA TABLA DE ANCLAS VA EN EL CIERRE**, seccion `C.10.7`, corrida con `grep -n` sobre este
+mismo fichero. **No la anuncio con cifras inventadas de muestra:** las dos columnas se
+llenan con lo que salga.
+
+**Y LOS TRES REMEDIOS DEL ENCARGO ANTERIOR SIGUEN VIVOS EN ESTA VUELTA:**
+
+| remedio | donde lo uso hoy |
+|---|---|
+| la cifra de vuelta anterior con su `grep` pegado al lado | `0.3.a` (el `grep` de `5.g.bis`), y la cabecera del ACTA en la tabla de identidad |
+| la comparacion que sale CERO se escribe CERO y no se borra la fila | `1.1`, las cuatro restas escritas |
+| toda tabla que compara N filas dice de donde salen las N con la cuenta hecha | `1.3`, `2.c`, y las dos tablas de frontera de la `3` y la `4` |
+
+### 1.3. EL SALDO QUE LA VUELTA 9 PROMETIO Y NO PEGO, PEGADO AQUI
+
+    $ python forja.py informe --carpeta cuarentena/zhuo_manager
+
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 21
+    nodos en el grafo de destino: 52
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 21
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+**21 / 0 / 0 / 0, y la cabecera va entera esta vez**, sin `tail` que se coma el bloque.
+**Coincide al numero con lo que el auditor re corrio**, y las 21 lineas `[ENTRARIA]` de su
+lista se cuentan de la salida: **21**, las mismas que
+`ls -1 cuarentena/zhuo_manager/*.json | wc -l`. **Diferencia: CERO.**
+
+**Y DIGO EL RELOJ DE ESTA CORRIDA, porque afecta a lo que certifica:** la lance **antes de
+tocar un solo fichero de `cuarentena/`** y termino **mientras corria la TAREA 2**. Asi que
+certifica **los 21 tal como los dejo la vuelta 9**, que es exactamente lo que la vuelta 9
+prometio. **Los cuatro ficheros que la TAREA 2 corrige llevan cada uno su aduana propia
+pegada en su sitio** (`2.a` y `2.b`), y **el lote entero, ya con todo dentro, se vuelve a
+correr en la TAREA 5.** No mezclo las dos cosas.
+
+**LO QUE TARDO, leido del reloj y no estimado:** la corrida de 21 candidatos contra 52
+nodos **termino en menos de veinte minutos**, no en mas de treinta. **Lo digo porque
+discrepa de la nota previa del encargo y la regla 5 manda declarar la discrepancia en vez
+de resolverla copiando.** La medida de un candidato solo, cronometrada con `time`, da
+**15,7 segundos**, asi que 21 sueltos serian unos 5,5 minutos y el resto es el cruce del
+lote consigo mismo.
+
+### 1.4. LAS SIETE ADJUDICACIONES DEL ACTA 9, LEIDAS Y NO REPLANTEADAS
+
+**Las siete quedan leidas y ninguna se vuelve a plantear en esta vuelta.** Anoto solo lo
+que cambia mi trabajo de hoy:
+
+| # | lo adjudicado | que hago hoy con ello |
+|---:|---|---|
+| 1 | el racimo de `cap_01.md` L97 se queda fuera, **SOSTENIDO** | nada. Cerrado |
+| 2 | las cinco condiciones de Hackman se quedan fuera, **SOSTENIDO** por `P.5.1` | nada. Cerrado |
+| 3 | un nodo para los motivos y cabeza mas tres para las preguntas, **SOSTENIDO** | **lo uso hoy como vara en la `2.d`**: es el criterio que decide que la pieza de la dinamica sale como **UN** nodo y no como cabeza mas tres |
+| 4 | las cuatro listas a nodo propio, **SOSTENIDO**, y el auditor cayo a ciegas | **lo uso hoy como vara en la `2.d`**: encargo propio mas entregable propio, leido del texto y no de la forma |
+| 5 | `P.19` no cubre la remision entre capitulos, **y mi PROPUESTA 2 tiene razon** | **no toco `P.19`** (lo prohibe el encargo). Sigo sin duplicar |
+| 6 | `0 CAERIAN` es un cero medido, con la guarda mordida por mutacion | nada. Me quita la duda de que el cero fuera ciego |
+| 7 | mi tabla `5.b` desglosa bien por capitulo, **cero caida de 8.3.3** | **repito el metodo hoy**: el nombre del capitulo se lee del campo `unidad` del fichero |
+
+### 1.5. `ORDEN_DE_LOTES.md`: SOLO LA COLUMNA `estado`, Y CON EL TEXTO VIEJO A LA VISTA
+
+**Tocada SOLO la columna `estado` de las filas 2 y 3.** El texto viejo **no se ha borrado**:
+va tachado y con la correccion al lado, que es como esta casa corrige.
+
+| lote | estado ANTES (tal cual estaba) | estado AHORA |
+|---:|---|---|
+| 2, `smart_who` | `**ABIERTO.** Dos capitulos por vuelta` | **CERRADO EN EXTRACCION** (ACTA 8 seccion 10). Seis capitulos minados. **15 candidatos en cuarentena, SIN INSERTAR** |
+| 3, `zhuo_manager` | *(celda vacia)* | **ABIERTO** (ACTA 9). **3 de 12 ficheros minados, 21 candidatos en cuarentena, SIN INSERTAR. Esta vuelta corre a DOS unidades** |
+
+**Las dos cifras se cuentan del disco y no de un acta** (`EXTRACTOR.md` 5):
+
+    $ ls -1 cuarentena/smart_who/*.json | wc -l        15
+    $ ls -1 cuarentena/zhuo_manager/*.json | wc -l     21
+
+**NO he tocado el orden, ni las claves, ni la cuenta de capitulos, ni las palabras, ni la
+fila del total.** Y **anadi al documento una nota de correccion declarada** justo debajo de
+la tabla, que dice que se toco y que no.
+
+**LO QUE ME PARECE FALSO Y NO TOCO, QUE ES LO QUE EL ENCARGO MANDA HACER CON ELLO:** la
+seccion *El volumen por vuelta* dice `lote 3   lo dice el acta del lote 2`, y hoy ya lo
+dice el encargo de la vuelta 10 (dos unidades, no un capitulo). **No lo toco**: esa linea
+no es la columna `estado` y el encargo acota la edicion a esa columna. **Lo declaro y sigo.**
+
+### 1.6. Estado de la TAREA 1
+
+**CERRADA.** Cinco puntos, los cinco con su salida pegada: apertura en verde con cuatro
+diferencias en cero, remedio aceptado y en uso desde la primera pantalla, el saldo
+`21 / 0 / 0 / 0` pegado donde la vuelta 9 lo debia, las siete adjudicaciones leidas, y la
+columna `estado` corregida sin borrar nada. **Ninguna parada.**

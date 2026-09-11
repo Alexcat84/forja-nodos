@@ -4,22 +4,33 @@
   "denominaciones": {
     "nombre_largo": "Fijar el proceso, que es el como: quien hace que y para cuando, y que principios gobiernan las decisiones",
     "otros_idiomas": [
-      {"idioma": "ingles", "termino": "process"},
-      {"idioma": "ingles", "termino": "the how"}
+      {
+        "idioma": "ingles",
+        "termino": "process"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "the how"
+      }
     ],
     "sigla": ""
   },
   "dominio": "gestion_equipos",
   "estado": "vivo",
-  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
   "ids_alias": [],
   "nodos_previos": [],
   "nodos_siguientes": [],
   "condiciones_activacion": "Cuando tienes un equipo con mucho talento y con una idea muy clara de cual es la meta final, y aun asi las tareas simples se complican enormemente porque no esta claro como se supone que todos trabajan juntos ni cuales son los valores del equipo.",
-  "entregable_esperado": "Escrito quien hace que y para cuando, los principios que gobiernan las decisiones, los valores comunes para decidir y para responder a los problemas, y un plan predecible para los traspasos que se repiten.",
+  "entregable_esperado": "Contestado quien hace que y para cuando, los principios que gobiernan las decisiones, los valores comunes para decidir y para responder a los problemas, y un plan predecible para los traspasos que se repiten.",
   "escala_minima": "Un equipo de dos personas trabajando juntas ya lo pide: el libro razona el caso con dos empleados y un puesto de limonada. Y avisa de que cuanto mas grande es el equipo, mas tiempo hace falta.",
   "pasos_accionables": [
-    "Escribe como trabaja junto tu equipo, que es lo que el proceso describe.",
+    "Ten claro que el proceso es como trabaja junto tu equipo, que es lo que el proceso describe.",
     "Contesta quien debe hacer que y para cuando.",
     "Fija que principios deben gobernar la toma de decisiones.",
     "Establece valores comunes dentro de tu equipo para como tomais las decisiones y como respondeis a los problemas.",

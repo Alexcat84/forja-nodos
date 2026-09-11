@@ -4,14 +4,25 @@
   "denominaciones": {
     "nombre_largo": "Conseguir que el equipo sepa a que se parece el exito y le importe lograrlo, que es la primera gran parte del trabajo de un directivo",
     "otros_idiomas": [
-      {"idioma": "ingles", "termino": "purpose"},
-      {"idioma": "ingles", "termino": "the why"}
+      {
+        "idioma": "ingles",
+        "termino": "purpose"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "the why"
+      }
     ],
     "sigla": ""
   },
   "dominio": "gestion_equipos",
   "estado": "vivo",
-  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
   "ids_alias": [],
   "nodos_previos": [],
   "nodos_siguientes": [],
@@ -19,7 +30,7 @@
   "entregable_esperado": "El equipo sabiendo a que se parece el exito y con ganas de lograrlo, y todos con una imagen parecida de por que importa nuestro trabajo.",
   "escala_minima": "Un equipo y un proposito. El libro dice que sirve igual uno tan concreto como que cada cliente que llame se sienta atendido y uno tan amplio como acercar el mundo, asi que la escala no la pone el tamanio del proposito.",
   "pasos_accionables": [
-    "Escribe el proposito como lo que es: el resultado que tu equipo intenta lograr, el porque. Por que te levantas y eliges hacer esto en vez de las otras mil cosas que podrias estar haciendo, por que vuelcas tu tiempo y tu energia en esta meta concreta con este grupo concreto de personas, y que seria distinto en el mundo si tu equipo tuviera un exito descomunal.",
+    "Ten claro que el proposito es el resultado que tu equipo intenta lograr, el porque, y contesta las tres preguntas con las que el libro lo despliega. Por que te levantas y eliges hacer esto en vez de las otras mil cosas que podrias estar haciendo, por que vuelcas tu tiempo y tu energia en esta meta concreta con este grupo concreto de personas, y que seria distinto en el mundo si tu equipo tuviera un exito descomunal.",
     "Comprueba que todos en el equipo tienen una imagen parecida de por que importa nuestro trabajo.",
     "Entiende y cree tu mismo en el proposito, porque conseguir que los demas lo entiendan y crean en el lo exige antes de ti.",
     "Compartelo en cada ocasion que tengas: al escribir correos, al fijar objetivos, al verte con una sola persona de tu equipo y al dirigir reuniones grandes.",

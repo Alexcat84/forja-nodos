@@ -15,8 +15,8 @@ medida.
 | lote | clave | caps | palabras | estado |
 |---:|---|---:|---:|---|
 | **1** | `onu_consumidor` | 4 | 1.534 | **CERRADO E INSERTADO** el 10 sep 2026 (`762e31d`). 6 nodos |
-| **2** | `smart_who` | 7 | 44.133 | **ABIERTO.** Dos capitulos por vuelta |
-| 3 | `zhuo_manager` | 12 | 70.041 | |
+| **2** | `smart_who` | 7 | 44.133 | ~~**ABIERTO.** Dos capitulos por vuelta~~ **CORRECCION DECLARADA (vuelta 10): CERRADO EN EXTRACCION** (ACTA 8 seccion 10). **Seis capitulos minados. 15 candidatos en `cuarentena/smart_who/`, SIN INSERTAR** |
+| 3 | `zhuo_manager` | 12 | 70.041 | ~~(vacio)~~ **CORRECCION DECLARADA (vuelta 10): ABIERTO** (ACTA 9). **3 de 12 ficheros minados, 21 candidatos en `cuarentena/zhuo_manager/`, SIN INSERTAR. Esta vuelta corre a DOS unidades** |
 | 4 | `scott_radical_candor` | 15 | 108.161 | |
 | 5 | `marquet_turn_the_ship` | 17 | 33.702 | |
 | 6 | `openstax_business_ethics` | 17 | 54.148 | CC BY 4.0 |
@@ -26,6 +26,11 @@ medida.
 | 10 | `openstax_org_behavior` | 32 | 93.408 | CC BY 4.0. El mayor |
 | **11** | `gerber_emyth_cap17_reservado` | 1 | 3.845 | **RESERVADO. Entra el ultimo** |
 | | **total** | **164** | **557.501** | |
+
+> **CORRECCION DECLARADA, 10 sep 2026, vuelta 10 del bucle, TAREA 1.d del encargo.**
+> **Se ha tocado SOLO la columna `estado` de los lotes 2 y 3**, y el texto viejo se deja a
+> la vista tachado en vez de borrarse. **Ni el orden, ni las claves, ni la cuenta de
+> capitulos, ni las palabras se han tocado:** eso lo fija `D.24` y no lo elige el bucle.
 
 **LOS EMPATES SE DESHACEN POR PALABRAS:** `marquet_turn_the_ship` y
 `openstax_business_ethics` tienen 17 capitulos cada uno, y va primero el de menos
