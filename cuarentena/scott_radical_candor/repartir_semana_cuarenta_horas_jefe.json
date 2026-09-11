@@ -1,0 +1,45 @@
+{
+  "id": "repartir_semana_cuarenta_horas_jefe",
+  "titulo": "Repartir la semana de cuarenta horas del jefe entre gestionar, pensar por tu cuenta y lo imprevisible",
+  "denominaciones": {
+    "nombre_largo": "Las diez horas semanales que cuesta aplicar el libro entero, las quince que se bloquean para el trabajo propio de experto y las quince que quedan",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "ten hours a week managing your team"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando te abruma la cantidad de cosas que el libro te sugiere hacer como directivo y quieres saber cuanto tiempo de tu semana te van a costar.",
+  "entregable_esperado": "Tu semana de cuarenta horas repartida en sus tres partidas, con las quince horas de trabajo propio bloqueadas en el calendario.",
+  "pasos_accionables": [
+    "Cuenta con lo que el texto anticipa: segun avanzas puede que te sientas abrumado de vez en cuando por la cantidad de cosas que te sugiere hacer como directivo. Respira hondo.",
+    "Parte de la meta que el libro declara sobre si mismo: ahorrarte tiempo, no llenarte el calendario de reuniones.",
+    "Da por hecho lo que el texto separa en dos mitades: si necesitas pasar tiempo con tus personas a cargo para ser un gran jefe, pero no necesitas pasar TODO tu tiempo con ellas.",
+    "Cuenta diez horas a la semana de gestion de tu equipo, que es lo que el texto cifra si aplicas cada idea, herramienta y tecnica del libro.",
+    "Cuenta con lo que el texto dice que esas diez horas compran: te ahorran despues una cantidad enorme de tiempo perdido y de quebraderos de cabeza.",
+    "Bloquea unas quince horas a la semana para pensar y ejecutar por tu cuenta en tu area de especialidad, que es lo que el texto sugiere ademas.",
+    "Cuenta las otras quince horas que quedan en una semana laboral de cuarenta: el texto dice que ojala puedas reclamarlas como tuyas, y avisa de que si eres como la autora vas a gastar la mayor parte en lidiar con lo imprevisible."
+  ],
+  "resumen_teorico": "Es la respuesta del libro a la objecion que el mismo se pone: que aplicar sus tecnicas llene el calendario. El inventario es propio del texto y numerado por el, tres partidas que suman la semana entera, asi que escribir los pasos es transcribirlo y no completarlo. Su valor no es la aritmetica sino que fija un techo: diez horas de gestion, y no todas las que hagan falta, es lo que convierte el resto del libro en algo cuyo coste se puede decidir antes de empezar. Lo que el texto NO dice, y por eso no esta escrito aqui, es como se reparten esas diez horas entre las personas a cargo, en que dias se bloquean las quince, que se recorta primero cuando la semana se desborda, ni de donde sale la cifra de diez.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [
+    {
+      "cifra": "aplicar cada idea, herramienta y tecnica del libro sale a unas diez horas de gestion del equipo a la semana, mas unas quince horas bloqueadas para pensar y ejecutar por cuenta propia en el area de especialidad, sobre una semana laboral de cuarenta horas",
+      "autor": "Kim Scott, sobre el coste en tiempo de su propio libro",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta la fecha en el texto: la unidad no data la cifra, y este recorte no incluye las notas del libro"
+    }
+  ]
+}

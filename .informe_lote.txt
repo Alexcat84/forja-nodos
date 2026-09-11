@@ -1,1 +1,198 @@
-ARRANQUE: 2026-09-11T14:06:55
+ARRANQUE: 2026-09-11T14:54:20
+ARRANQUE_EPOCH: 1789152860
+N (ficheros en cuarentena/zhuo_manager): 68
+G (nodos en dataset/nodos.jsonl): 135
+COMANDO: python -u forja.py informe --carpeta cuarentena/zhuo_manager
+========
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 68
+nodos en el grafo de destino: 135
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 59
+  BLOQUEARIAN esperando veredicto  : 9   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 9
+  por candidato bloqueado          : menor 1, mediana 1, mayor 1
+  que señal levanta cada vecindad  : familia_id 8, paso_contra_nodo 1
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] abrir_discusion_notas_adhesivas   (abrir_discusion_notas_adhesivas.json)
+
+[ENTRARIA] actuar_conducta_contraria_valores   (actuar_conducta_contraria_valores.json)
+
+[ENTRARIA] ajustar_plan_fuerzas_equipo   (ajustar_plan_fuerzas_equipo.json)
+
+[ENTRARIA] alinear_prioridades_reporte_directivo   (alinear_prioridades_reporte_directivo.json)
+
+[ENTRARIA] auditar_calendario_reuniones_semana   (auditar_calendario_reuniones_semana.json)
+
+[ENTRARIA] avisar_organizador_reunion_prescindible   (avisar_organizador_reunion_prescindible.json)
+
+[ENTRARIA] buscar_recomendaciones_confianza   (buscar_recomendaciones_confianza.json)
+
+[ENTRARIA] calcular_embudo_reclutamiento_propio   (calcular_embudo_reclutamiento_propio.json)
+
+[ENTRARIA] cambiar_formato_reunion_favorecer_participacion   (cambiar_formato_reunion_favorecer_participacion.json)
+
+[BLOQUEARIA] cerrar_reunion_pasos_siguientes   (cerrar_reunion_pasos_siguientes.json)
+    vecino preguntar_jefe_sonado_persona_cargo  [levantada por: paso_contra_nodo]
+      similitud_texto 0.244 | familia_id 0.000 | paso_contra_nodo 0.609
+      paso 5 del candidato contra paso 4 de preguntar_jefe_sonado_persona_cargo
+
+[ENTRARIA] comprobar_equipo_ejecuta_bien   (comprobar_equipo_ejecuta_bien.json)
+
+[ENTRARIA] comunicar_valores_diez_formas   (comunicar_valores_diez_formas.json)
+
+[ENTRARIA] construir_equipo_perspectivas_diversas   (construir_equipo_perspectivas_diversas.json)
+
+[ENTRARIA] contrastar_cultura_actual_aspirada   (contrastar_cultura_actual_aspirada.json)
+
+[ENTRARIA] contratar_personas_capaces_mas   (contratar_personas_capaces_mas.json)
+
+[ENTRARIA] crear_manuales_jugadas_repetibles   (crear_manuales_jugadas_repetibles.json)
+
+[ENTRARIA] crear_plan_creible_equipo   (crear_plan_creible_equipo.json)
+
+[ENTRARIA] cultivar_relacion_talento_largo_plazo   (cultivar_relacion_talento_largo_plazo.json)
+
+[ENTRARIA] decidir_directivo_no_encaja_papel   (decidir_directivo_no_encaja_papel.json)
+
+[ENTRARIA] decir_normas_participacion_voz_alta   (decir_normas_participacion_voz_alta.json)
+
+[ENTRARIA] definir_quien_responde_cada_cosa   (definir_quien_responde_cada_cosa.json)
+
+[ENTRARIA] definir_vision_larga_trabajar_atras   (definir_vision_larga_trabajar_atras.json)
+
+[ENTRARIA] desarrollar_estrategia_busqueda_candidatos   (desarrollar_estrategia_busqueda_candidatos.json)
+
+[ENTRARIA] describir_candidato_ideal_precision   (describir_candidato_ideal_precision.json)
+
+[BLOQUEARIA] dirigir_reunion_decision   (dirigir_reunion_decision.json)
+    vecino dirigir_reunion_individual_semanal  [levantada por: familia_id]
+      similitud_texto 0.225 | familia_id 0.400 | paso_contra_nodo 0.440
+      paso 1 del candidato contra paso 9 de dirigir_reunion_individual_semanal
+
+[BLOQUEARIA] dirigir_reunion_generar_ideas   (dirigir_reunion_generar_ideas.json)
+    vecino dirigir_reunion_individual_semanal  [levantada por: familia_id]
+      similitud_texto 0.251 | familia_id 0.333 | paso_contra_nodo 0.378
+      paso 5 del candidato contra paso 2 de dirigir_reunion_individual_semanal
+
+[BLOQUEARIA] dirigir_reunion_informativa   (dirigir_reunion_informativa.json)
+    vecino dirigir_reunion_individual_semanal  [levantada por: familia_id]
+      similitud_texto 0.208 | familia_id 0.400 | paso_contra_nodo 0.378
+      paso 4 del candidato contra paso 6 de dirigir_reunion_individual_semanal
+
+[BLOQUEARIA] dirigir_reunion_reforzar_relaciones   (dirigir_reunion_reforzar_relaciones.json)
+    vecino dirigir_reunion_individual_semanal  [levantada por: familia_id]
+      similitud_texto 0.232 | familia_id 0.333 | paso_contra_nodo 0.392
+      paso 3 del candidato contra paso 1 de dirigir_reunion_individual_semanal
+
+[BLOQUEARIA] dirigir_reunion_revision_trabajo   (dirigir_reunion_revision_trabajo.json)
+    vecino dirigir_reunion_individual_semanal  [levantada por: familia_id]
+      similitud_texto 0.283 | familia_id 0.333 | paso_contra_nodo 0.442
+      paso 6 del candidato contra paso 1 de dirigir_reunion_individual_semanal
+
+[ENTRARIA] disenar_equipo_plan_anual   (disenar_equipo_plan_anual.json)
+
+[ENTRARIA] ejecutar_ciclos_cortos_aprender   (ejecutar_ciclos_cortos_aprender.json)
+
+[ENTRARIA] ejecutar_embudo_reclutamiento_escala   (ejecutar_embudo_reclutamiento_escala.json)
+
+[ENTRARIA] entregar_experiencia_entrevista_excelente   (entregar_experiencia_entrevista_excelente.json)
+
+[ENTRARIA] entregar_problema_dificil_reporte   (entregar_problema_dificil_reporte.json)
+
+[ENTRARIA] equilibrar_corto_largo_plazo   (equilibrar_corto_largo_plazo.json)
+
+[ENTRARIA] equilibrar_microdireccion_ausencia   (equilibrar_microdireccion_ausencia.json)
+
+[ENTRARIA] examinar_trabajo_pasado_candidato   (examinar_trabajo_pasado_candidato.json)
+
+[ENTRARIA] facilitar_gente_diga_verdad   (facilitar_gente_diga_verdad.json)
+
+[ENTRARIA] fijar_resultado_excelente_reunion   (fijar_resultado_excelente_reunion.json)
+
+[BLOQUEARIA] fijar_vision_concreta_equipo   (fijar_vision_concreta_equipo.json)
+    vecino fijar_proceso_trabajo_equipo  [levantada por: familia_id]
+      similitud_texto 0.188 | familia_id 0.333 | paso_contra_nodo 0.405
+      paso 9 del candidato contra paso 1 de fijar_proceso_trabajo_equipo
+
+[ENTRARIA] hacer_repaso_posterior_proyecto   (hacer_repaso_posterior_proyecto.json)
+
+[ENTRARIA] inventar_tradiciones_celebrar_valores   (inventar_tradiciones_celebrar_valores.json)
+
+[ENTRARIA] investigar_antes_contratar_lideres   (investigar_antes_contratar_lideres.json)
+
+[ENTRARIA] invitar_personas_necesarias_reunion   (invitar_personas_necesarias_reunion.json)
+
+[ENTRARIA] involucrar_varios_entrevistadores   (involucrar_varios_entrevistadores.json)
+
+[ENTRARIA] juzgar_cultura_renuncias_equipo   (juzgar_cultura_renuncias_equipo.json)
+
+[ENTRARIA] ligar_tareas_proposito_organizacion   (ligar_tareas_proposito_organizacion.json)
+
+[ENTRARIA] mediar_tiempo_palabra_reunion   (mediar_tiempo_palabra_reunion.json)
+
+[ENTRARIA] mostrar_candidato_cuanto_quieres   (mostrar_candidato_cuanto_quieres.json)
+
+[ENTRARIA] partir_meta_grande_hitos   (partir_meta_grande_hitos.json)
+
+[ENTRARIA] pasar_direccion_directa_indirecta   (pasar_direccion_directa_indirecta.json)
+
+[BLOQUEARIA] pedir_opinion_propia_reunion   (pedir_opinion_propia_reunion.json)
+    vecino pedir_opinion_otros_mejorar  [levantada por: familia_id]
+      similitud_texto 0.293 | familia_id 0.333 | paso_contra_nodo 0.452
+      paso 5 del candidato contra paso 5 de pedir_opinion_otros_mejorar
+
+[ENTRARIA] preguntar_contratar_unica_prioridad   (preguntar_contratar_unica_prioridad.json)
+
+[BLOQUEARIA] preparar_preguntas_entrevista_antemano   (preparar_preguntas_entrevista_antemano.json)
+    vecino evitar_preguntas_ilegales_entrevista  [levantada por: familia_id]
+      similitud_texto 0.100 | familia_id 0.333 | paso_contra_nodo 0.447
+      paso 3 del candidato contra paso 6 de evitar_preguntas_ilegales_entrevista
+
+[ENTRARIA] priorizar_pocas_cosas_bien   (priorizar_pocas_cosas_bien.json)
+
+[ENTRARIA] probar_banquillo_vacaciones_largas   (probar_banquillo_vacaciones_largas.json)
+
+[ENTRARIA] rechazar_conducta_toxica_entrevista   (rechazar_conducta_toxica_entrevista.json)
+
+[ENTRARIA] rechazar_contratacion_tibia   (rechazar_contratacion_tibia.json)
+
+[ENTRARIA] reconocer_decision_dificil_valores   (reconocer_decision_dificil_valores.json)
+
+[ENTRARIA] reemplazarse_trabajo_propio   (reemplazarse_trabajo_propio.json)
+
+[ENTRARIA] repartir_equipo_cartera_horizontes   (repartir_equipo_cartera_horizontes.json)
+
+[ENTRARIA] repartir_material_antes_reunion   (repartir_material_antes_reunion.json)
+
+[ENTRARIA] repartir_papeles_directivo_reclutador   (repartir_papeles_directivo_reclutador.json)
+
+[ENTRARIA] repartir_responsabilidad_contratar_equipo   (repartir_responsabilidad_contratar_equipo.json)
+
+[ENTRARIA] reservar_valor_unico_prioridades_arriba   (reservar_valor_unico_prioridades_arriba.json)
+
+[ENTRARIA] revisar_incentivos_trampas_equipo   (revisar_incentivos_trampas_equipo.json)
+
+[ENTRARIA] sostener_cambio_contexto_continuo   (sostener_cambio_contexto_continuo.json)
+
+[ENTRARIA] vivir_primero_valor_declarado   (vivir_primero_valor_declarado.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+========
+CIERRE: 2026-09-11T15:32:25
+CIERRE_EPOCH: 1789155145
+SALIDA: 0

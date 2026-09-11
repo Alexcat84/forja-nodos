@@ -1,0 +1,39 @@
+{
+  "id": "desplegar_marco_franqueza_radical",
+  "titulo": "Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones",
+  "denominaciones": {
+    "nombre_largo": "Recortar el marco del propio libro, fotocopiarlo, ponerlo a la vista y repartirlo entre los colegas, usandolo como brujula de conversaciones y no como test de personalidad",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "radical candor framework"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando estas desplegando la franqueza radical en tu equipo y crees que puede haber confusion sobre lo que significa.",
+  "entregable_esperado": "Copias del marco puestas a la vista y repartidas entre tus colegas, y el marco en uso como brujula de conversaciones concretas, sin nombres escritos en las casillas.",
+  "pasos_accionables": [
+    "Usa la version nueva del marco de la franqueza radical que trae esta edicion, que es la forma que el propio texto propone para ayudar a que todos entiendan que la idea no es comportarse como un imbecil.",
+    "Recorta el marco del propio libro. El texto dice que hay una version mas grande en su pagina 297.",
+    "Haz fotocopias.",
+    "Ponlas en tu nevera, encima de tu mesa o en cualquier otro sitio, como recordatorio.",
+    "Comparte copias con tus colegas.",
+    "Usa el marco como una brujula, para llevar cada conversacion concreta a un sitio mejor.",
+    "No lo uses como test de personalidad para juzgarte a ti ni para juzgar a otros.",
+    "No escribas nombres en las casillas.",
+    "Cuenta con lo que el texto aniade justo despues de las dos prohibiciones: todos caemos en cada cuadrante varias veces al dia."
+  ],
+  "resumen_teorico": "Nace de un problema que la propia autora constata: el termino se habia empezado a usar como licencia para comportarse mal, confundiendolo con la agresion odiosa y con la insinceridad manipuladora. Su remedio no es una definicion mejor sino un objeto fisico a la vista, y por eso es procedimiento y no postura: el libro pone su propio inventario de medios uno a uno, que son recortar, fotocopiar, colocar y repartir, mas una regla de uso y dos prohibiciones expresas. Junto a las dos prohibiciones el texto pone una observacion, y aqui va como observacion y no como razon, porque el libro no la presenta como tal: todos caemos en cada cuadrante varias veces al dia. Lo que el texto NO dice, y por eso no esta escrito aqui, es cada cuanto se repasan las copias, quien las mantiene, que hacer cuando una conversacion cae en un cuadrante malo, ni si hay que hacer esto antes o despues de leer el resto del libro.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

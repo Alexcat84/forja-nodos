@@ -15128,12 +15128,12 @@ aduana y esta vuelta no tiene esa autorizacion.
 | 1.b | correccion declarada de `H.3.3`: 21, 9, y Osborn fuera | **CERRADA**, `I.1.b` |
 | 1.c | correccion declarada en `ORDEN_DE_LOTES.md`: la frase de dos lecturas y la cifra 68 | **CERRADA**, `I.1.c` |
 | 1.d | el recuento a maquina con **total, filtrado y residuo** de toda poblacion publicada | **CERRADA Y VIGENTE TODA LA VUELTA**, `I.1.d` |
-| 2.a | el informe de los 68 y el contraste del reloj, lanzado el primero y solo | PENDIENTE |
-| 2.b | el saldo del informe candidato por candidato | PENDIENTE |
-| 2.c | las cuatro medidas y **el total del lote 3**, los doce capitulos | PENDIENTE |
-| 2.d | el sello de la vuelta 13, recontado a maquina | PENDIENTE |
+| 2.a | el informe de los 68 y el contraste del reloj, lanzado el primero y solo | **CERRADA**, `I.2.a`. **38 min 5 s, dentro de banda por 31 s. FALTA TERMINO** |
+| 2.b | el saldo del informe candidato por candidato | **CERRADA**, `I.2.b`. **59 / 9 / 0**, los nueve con veredicto escrito |
+| 2.c | las cuatro medidas y **el total del lote 3**, los doce capitulos | **CERRADA**, `I.2.c`, **con una discrepancia declarada: el 554 no es el denominador del lote 3** |
+| 2.d | el sello de la vuelta 13, recontado a maquina | **CERRADA**, `I.2.d` |
 | 3 | abrir el lote 4: `cap_00`, `cap_01`, `cap_02` y `cap_03`, uno a uno y enteros | **LAS CUATRO LEIDAS Y JUZGADAS**, `I.3.0` a `I.3.8` |
-| 4 | lo que NO se hace: ni las doce dataciones, ni insercion, ni maquinaria | DECLARADA |
+| 4 | lo que NO se hace: ni las doce dataciones, ni insercion, ni maquinaria | **CERRADA Y COMPROBADA**, `I.4` |
 
 **SON CUATRO TAREAS CONTANDO CADA NUMERO COMO UNA**, y el tope de `EXTRACTOR.md` 1.3 es
 cinco. **No declaro cola.** La TAREA 4 no consume trabajo: es una lista de prohibiciones
@@ -16142,3 +16142,1222 @@ el entregable es su semana repartida.**
 > *bloquealas a primera hora*. **El texto no dice ni cada cuanto, ni como se subdivide, ni
 > en que dias**, y esas son las tres especies exactas que el lote 1 pago: el periodo, el
 > destinatario y el responsable.
+
+---
+
+# TAREA 2. CERRAR LA VUELTA 13, QUE SE CORTO CON TRES TAREAS ABIERTAS
+
+## I.2.a. EL INFORME DE LOS 68 Y EL CONTRASTE DEL RELOJ
+
+*Lanzado **el primero del turno**, a las **14:54:20**, antes de escribir una sola linea de
+reporte. **La prediccion esta commiteada ANTES de la corrida en `06122d6`** y no la he
+tocado: 35 min 6 s, banda del 10 por ciento, de 31 min 36 s a 38 min 37 s.*
+
+### EL TESTIGO, PEGADO ENTERO POR SUS DOS PUNTAS
+
+    $ head -6 .informe_lote.txt
+    ARRANQUE: 2026-09-11T14:54:20
+    ARRANQUE_EPOCH: 1789152860
+    N (ficheros en cuarentena/zhuo_manager): 68
+    G (nodos en dataset/nodos.jsonl): 135
+    COMANDO: python -u forja.py informe --carpeta cuarentena/zhuo_manager
+    ========
+
+    $ tail -3 .informe_lote.txt
+    CIERRE: 2026-09-11T15:32:25
+    CIERRE_EPOCH: 1789155145
+    SALIDA: 0
+
+    $ python -c "1789155145 - 1789152860"
+    2285 s = 38 min 5 s
+
+**LAS DOS PUNTAS LAS ESCRIBE LA MAQUINA EN EL MISMO FICHERO Y EN LA MISMA CORRIDA**, y el
+`CIERRE` solo se escribe cuando el proceso termina con su codigo de salida. **La vuelta 13
+dejo un `ARRANQUE` huerfano, que es lo que hizo imposible juzgarla.**
+
+### EL CONTRASTE, CON LA PREDICCION DELANTE
+
+| | |
+|---|---:|
+| **predicho, commiteado en `06122d6` a las 14:06:47** | **2.106,2 s = 35 min 6 s** |
+| banda que me di, tambien antes | **de 1.895,6 a 2.316,8 s**, es decir de **31 min 35 s a 38 min 36 s** |
+| **medido** | **2.285 s = 38 min 5 s** |
+| **error** | **mas 178,8 s, un 8,49 por ciento** |
+
+> ## **EL MODELO ACIERTA, Y ACIERTA DENTRO DE SU BANDA POR 31 SEGUNDOS.**
+>
+> **Y lo digo con ese margen delante en vez de escribir solo *acierta*.** La banda acaba en
+> **38 min 36 s** y la medida es **38 min 5 s**. **Treinta y un segundos mas y estaria
+> escribiendo que el modelo se cae.** Un acierto que se decide en el uno por ciento de la
+> banda **no es el mismo acierto que el de la vuelta 12, que fallo por 2,95 por ciento.**
+
+### **Y AHORA EL PUNTO QUE ESTA VUELTA COMPRABA, QUE ES OTRO Y SALE DISTINTO**
+
+*El encargo lo escribe con estas palabras: **si sale un 13,3 por ciento largo, el termino
+cuadratico sobra; si sale mucho mas del 15,2, falta termino. Dilo con esas palabras.***
+
+**LA COMPARACION HAY QUE HACERLA CONTRA UNA MEDIDA, NO CONTRA UN MODELO, y esto es una
+correccion al encargo que hago con la cita delante.** El `H.4.1` de la vuelta 13 calcula la
+subida esperada como `2106,2 / 1828,2 = 1,152`, **y 1.828,2 s no es lo que la vuelta 12
+midio: es lo que su propio modelo predecia para N igual a 60.** Lo que la vuelta 12 midio
+esta en su `F.4`:
+
+    $ grep -n "medido" docs/loop/REPORTE.md    (tramo de la vuelta 12)
+    13483:| **medido** | **1.882 s = 31 min 22 s** |
+
+**ASI QUE LA SUBIDA REAL SE MIDE 2.285 CONTRA 1.882, Y NO 2.285 CONTRA 1.828.**
+
+| | |
+|---|---:|
+| subida de **N** | 60 a 68: **mas 13,33 por ciento** |
+| subida que **el modelo predecia** | **mas 15,21 por ciento** |
+| **subida REAL del reloj**, medida contra medida | **mas 21,41 por ciento** |
+
+> # **SALE MUCHO MAS DEL 15,2. FALTA TERMINO.**
+>
+> **Lo digo con las palabras que el encargo pide y no las suavizo.** Con `G` clavado en 135
+> y `N` subiendo un 13,3 por ciento, **el reloj subio un 21,4 por ciento.** El modelo
+> esperaba 15,2. **El termino cuadratico no sobra: se queda corto.**
+
+**Y LA MISMA COSA DICHA POR CANDIDATO, que es donde se ve sin porcentajes:**
+
+    coste por candidato, vuelta 12 (N=60, G=135) : 1882 / 60 = 31,37 s
+    coste por candidato, vuelta 14 (N=68, G=135) : 2285 / 68 = 33,60 s
+    subida del coste por candidato               : mas 7,13 por ciento
+
+**CON EL GRAFO QUIETO, EL COSTE DE CADA CANDIDATO SUBIO UN 7,1 POR CIENTO SOLO PORQUE HABIA
+OCHO COMPANIEROS MAS EN LA CARPETA.** El modelo viejo daba a ese efecto **0,063 s por cada
+otro candidato**, que sobre 8 companieros nuevos son **medio segundo por candidato**, y lo
+medido son **2,2 segundos.** **Cuatro veces mas.**
+
+### **EL REAJUSTE, QUE PROPONGO Y NO APLICO, Y DIGO POR QUE NO VALE MUCHO**
+
+*Los dos puntos que tengo con `G` fijo en 135 son (60, 1.882) y (68, 2.285). Con la misma
+forma `coste(N) = a*N*G + b*N*N` se despejan a y b exactamente:*
+
+    $ python -c "resuelve el sistema de dos ecuaciones con los dos puntos MEDIDOS"
+    a = 0,1081   b = 0,2795      (los viejos eran a = 0,1977  b = 0,063)
+    comprobacion N=60 -> 1882,0 s (medido 1882)
+    comprobacion N=68 -> 2285,0 s (medido 2285)
+
+> **Y DIGO INMEDIATAMENTE LO QUE ESTO NO ES:** **dos puntos y dos incognitas cuadran
+> siempre.** Las dos comprobaciones de arriba **no prueban nada**, porque el ajuste las
+> hace ciertas por construccion. **Un modelo de dos parametros ajustado con dos medidas no
+> tiene ni un grado de libertad**, y publicarlo como si acertara seria la version numerica
+> de citar sin mirar.
+>
+> **LO QUE SI SE PUEDE AFIRMAR, y es lo unico:** **la direccion del error tiene un signo y
+> se repite.** El termino cuadratico esta infravalorado, **y la separacion entre las dos
+> lecturas crece rapido con `N`**:
+>
+>     con los coeficientes viejos, N=76 ->  2.392 s = 39 min 52 s
+>     con los nuevos,              N=76 ->  2.724 s = 45 min 23 s
+>
+> **Ocho candidatos mas y las dos lecturas se separan cinco minutos y medio.** Esa es la
+> prediccion que dejo escrita: **si alguna vuelta corre el informe con 76 en la bandeja y
+> sale cerca de los 45 minutos, el reajuste era el bueno; si sale cerca de los 40, era el
+> viejo.** Queda commiteada antes de que nadie lo corra.
+
+**NO TOCO NADA POR ESTO** (moratoria de maquinaria, `EXTRACTOR.md` 13; y los umbrales son
+de Alexis). **No he mirado `config/umbrales.json` en toda la vuelta y no he tocado el
+instrumento para que el reloj baje**, que es la decision del fundador 5.6 que la vuelta 13
+ya suscribio. **Si el reloj sale mal, es un dato que se trae.**
+
+### LA HIGIENE DE LA MEDICION, DECLARADA CON SU TAMANIO Y NO PROMETIDA
+
+*El encargo manda lanzarlo **el primero y SOLO**. Lo lance el primero, a las **14:54:20**,
+antes de escribir una sola linea de reporte. **Y digo exactamente que mas corrio en esta
+maquina mientras el reloj estaba en marcha, en vez de prometer que nada.***
+
+| lo que corrio durante la medicion | cuanto | ¿toca al instrumento? |
+|---|---|---|
+| lecturas de fichero, `sed`, `grep`, `wc` y corridas de `python -c` de una vuelta | decimas de segundo cada una | **no**. Ninguna es instrumento de la casa |
+| **un `git commit` con su hook**, que corre `forja.py gate` y `forja.py guiones` | **1 segundo, cronometrado** (`SEGUNDOS DEL COMMIT: 1`) | **SI, y por eso lo declaro** |
+| un bucle de espera mal escrito que quemaba un nucleo, **cortado por mi a los pocos segundos** | menos de 10 segundos | **no**, pero consumia maquina y por eso va aqui |
+
+> **EL COMMIT ERA OBLIGATORIO Y NO ELEGIBLE:** el encargo manda **publicar y commitear la
+> frontera ANTES de cortar nada**, y cortar es escribir candidatos, que es lo siguiente que
+> hago. **Dos reglas del encargo se cruzan y elijo cumplir las dos**, midiendo el coste de
+> la que estorba en vez de saltarmela.
+>
+> **Y digo por que no invalida nada:** **un segundo sobre una corrida de mas de treinta y
+> cinco minutos es el 0,05 por ciento**, y **la banda que me di es del 10 por ciento**. No
+> puede mover el veredicto en ninguna direccion. **Lo declaro igual, porque una medicion
+> cuya higiene se promete en vez de medirse no es una medicion.**
+---
+
+## I.2.b. EL SALDO DEL INFORME, CANDIDATO POR CANDIDATO
+
+### EL SALDO, PEGADO DE LA SALIDA
+
+    $ sed -n '10,24p' .informe_lote.txt
+    candidatos revisados        : 68
+    nodos en el grafo de destino: 135
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 59
+      BLOQUEARIAN esperando veredicto  : 9   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 9
+      por candidato bloqueado          : menor 1, mediana 1, mayor 1
+      que senial levanta cada vecindad : familia_id 8, paso_contra_nodo 1
+
+**Y EL RECUENTO INDEPENDIENTE, con total, filtrado y residuo** (TAREA 1.d), porque una
+cabecera de resumen y un recuento de la lista son dos cosas y pueden no coincidir:
+
+    $ grep -c "^\[ENTRARIA\]"    .informe_lote.txt  ->  59
+    $ grep -c "^\[BLOQUEARIA\]"  .informe_lote.txt  ->   9
+    $ grep -c "^\[CAERIA\]"      .informe_lote.txt  ->   0
+    TOTAL 68 = 59 + 9 + 0 -> CUADRA con los 68 ficheros de la bandeja
+
+> # **68 REVISADOS, 59 ENTRARIAN, 9 BLOQUEARIAN, 0 CAERIAN, 0 CHOCAN.**
+
+### **LA LISTA DE LOS QUE NO SON `ENTRARIA`, QUE ES LO QUE EL ENCARGO PIDE**
+
+| # | candidato bloqueado | vecino levantado | senial | similitud / familia / paso |
+|---:|---|---|---|---|
+| 1 | `cerrar_reunion_pasos_siguientes` | `preguntar_jefe_sonado_persona_cargo` | **paso_contra_nodo** | 0,244 / 0,000 / **0,609** |
+| 2 | `dirigir_reunion_decision` | `dirigir_reunion_individual_semanal` | familia_id | 0,225 / **0,400** / 0,440 |
+| 3 | `dirigir_reunion_generar_ideas` | `dirigir_reunion_individual_semanal` | familia_id | 0,251 / **0,333** / 0,378 |
+| 4 | `dirigir_reunion_informativa` | `dirigir_reunion_individual_semanal` | familia_id | 0,208 / **0,400** / 0,378 |
+| 5 | `dirigir_reunion_reforzar_relaciones` | `dirigir_reunion_individual_semanal` | familia_id | 0,232 / **0,333** / 0,392 |
+| 6 | `dirigir_reunion_revision_trabajo` | `dirigir_reunion_individual_semanal` | familia_id | 0,283 / **0,333** / 0,442 |
+| 7 | `fijar_vision_concreta_equipo` | `fijar_proceso_trabajo_equipo` | familia_id | 0,188 / **0,333** / 0,405 |
+| 8 | `pedir_opinion_propia_reunion` | `pedir_opinion_otros_mejorar` | familia_id | 0,293 / **0,333** / 0,452 |
+| 9 | `preparar_preguntas_entrevista_antemano` | `evitar_preguntas_ilegales_entrevista` | familia_id | 0,100 / **0,333** / 0,447 |
+
+**LOS NUEVE TIENEN SU VEREDICTO ESCRITO DESDE LA VUELTA 12**, ocho en su `A.5` y uno en su
+`C.5`. **Cero bloqueos sin leer, y ninguno es rechazo: un bloqueo es cola de lectura.**
+
+### **EL HALLAZGO DEL SALDO, QUE NO ESTA EN NINGUNA DE LAS CIFRAS SUELTAS**
+
+**LA VUELTA 12 CORRIO ESTE MISMO INFORME CON 60 EN LA BANDEJA Y DIO `51 / 9 / 0`. HOY, CON
+68, DA `59 / 9 / 0`.** Y los nueve **son exactamente los mismos nueve**, con la misma
+descomposicion de seniales (`familia_id 8, paso_contra_nodo 1`):
+
+    vuelta 12 (N=60):  51 ENTRARIA + 9 BLOQUEARIA + 0 CAERIA
+    vuelta 14 (N=68):  59 ENTRARIA + 9 BLOQUEARIA + 0 CAERIA
+    diferencia      : +8 ENTRARIA  + 0 BLOQUEARIA + 0 CAERIA
+
+> ## **LOS OCHO CANDIDATOS DE `cap_11` APORTARON OCHO `ENTRARIA` Y CERO BLOQUEOS NUEVOS.**
+>
+> **Eso confirma por el camino del lote lo que el auditor comprobo por el camino del
+> candidato** (ACTA 13 seccion 1.4: los ocho, uno a uno, dan `[ENTRARIA]`). **Son dos
+> mediciones independientes que coinciden**, y la del lote es la mas dura de las dos,
+> porque ademas cruza los candidatos entre si: **`CHOCAN entre si dentro del lote: 0`.**
+
+**Y LA LECTURA DOCTRINAL DE LOS NUEVE, QUE ES LA QUE `EXTRACTOR.md` 12 YA TENIA ESCRITA:**
+**seis de los nueve son `dirigir_reunion_*` contra la misma madre.**
+
+> *Cuando un capitulo entero cae en la misma familia, **eso no es una senial de duplicado,
+> es una senial de que el libro trata un tema.** Se extraen igual, uno a uno, y **se espera
+> que la cola de lectura sea larga**: es el precio de un capitulo monotematico, no un fallo
+> de la aduana. **Lo que NO se hace es subir un umbral para que la cola se acorte.**
+>
+> **Es el `cap_07` de Zhuo, `Amazing Meetings`, funcionando exactamente como la regla
+> predice.** Y lo digo aqui porque **hoy tengo la cifra que lo prueba y la vuelta 12 no la
+> tenia: ocho candidatos nuevos de un capitulo de OTRO tema no aniadieron ni un bloqueo.**
+> La cola larga no la produce el tamanio del lote: **la produce la monotematica.**
+
+---
+
+## I.2.c. LAS CUATRO MEDIDAS Y **EL TOTAL DEL LOTE 3**, CON UNA DISCREPANCIA QUE NO RESUELVO COPIANDO
+
+*Es la TAREA 4 de la vuelta 13, que no corrio. El auditor publico la fila de `cap_11` y
+`cap_12` y **no firmo el total**, porque `8.3` le prohibe publicar lo que no puede
+verificar con un instrumento suyo. **Me deja el denominador medido y me dice que sumar los
+numeradores de las actas 9 a 13 es mecanico.** No lo es, y esta seccion dice por que.*
+
+### PRIMERO, EL DENOMINADOR: **REMEDIDO POR MI, Y NO SALE LO QUE EL ENCARGO DICE**
+
+**El encargo escribe: *los 68 ficheros de la bandeja suman 554 pasos, y 554 = 497 + 57*.**
+**Las dos cifras son ciertas y la conclusion que cuelga de ellas no.** Lo mido con la
+forma de la TAREA 1.d:
+
+    $ python -c "recorre las DOS carpetas del lote 3 y cuenta ficheros y pasos_accionables"
+    bandeja    (cuarentena/zhuo_manager)              :  68 ficheros,  554 pasos
+    archivados (cuarentena/_insertados/zhuo_manager)  :  68 ficheros,  553 pasos
+    ids comunes entre las dos carpetas                :   0
+
+    TOTAL del lote 3 (las dos carpetas) : 136 candidatos, 1107 pasos
+    FILTRADO ya en el grafo             :  68 candidatos,  553 pasos
+    RESIDUO  en la bandeja              :  68 candidatos,  554 pasos
+    comprobacion: 68 + 68 = 136 candidatos, 553 + 554 = 1107 pasos -> CUADRA
+
+> ## **EL 554 NO ES EL DENOMINADOR DEL LOTE 3. ES EL DENOMINADOR DE `cap_07` A `cap_11`.**
+>
+> **Y la aritmetica del propio encargo lo demuestra sin necesidad de mi:** `554 = 497 + 57`,
+> donde 497 son las cuatro unidades de la vuelta 12 (`cap_07` a `cap_10`) y 57 es `cap_11`.
+> **Eso son CINCO unidades de doce.** La bandeja contiene lo que se escribio desde que
+> `MODO_INSERCION=cuarentena` esta vigente; **las siete primeras unidades del libro ya se
+> insertaron y sus 68 candidatos viven en `_insertados/`.**
+>
+> **NO LO LLAMO CAIDA DEL AUDITOR Y DIGO POR QUE:** el 554 esta **bien contado**, y el
+> auditor escribio expresamente que no firmaba el total y que lo dejaba encargado. **Lo
+> que hay es un numero bien contado bajo el nombre de otra poblacion**, que es la especie
+> exacta que el mismo nombra en su seccion 4.1 y que se aplico a si mismo en la ACTA 12.
+> **Lo declaro, no lo copio** (`EXTRACTOR.md` 5).
+>
+> **Y digo lo que habria pasado si lo copio:** habria publicado el total del lote 3 sobre
+> **la mitad de su poblacion**, y esa cifra habria vivido en una TABLA de mi reporte, que
+> **si es sede que acumula** (`5.2`). **Con mi racha en 2 de 3.**
+
+### LAS DOCE FILAS, UNA POR UNIDAD, CON EL ACTA QUE LA FIRMO
+
+*Estas cifras **NO son mias**: las cito como contraste, con su acta al lado, que es lo que
+`EXTRACTOR.md` 5 permite. **Lo mio es el denominador de hoy y la comprobacion de que la
+suma no cierra.***
+
+| fichero | unidad del libro | pasos escritos | **puentes** | tasa | quien la firmo |
+|---|---|---:|---:|---:|---|
+| `cap_01` | `Introduction` | **0** | 0 | **sin denominador** | ACTA 9, seccion 7.3 |
+| `cap_02` | Cap. 1, `What Is Management?` | **79** | **3** | **3,80** | ACTA 9, seccion 7.3 |
+| `cap_03` | Cap. 2, `Your First Three Months` | **76** | **4** | **5,26** | ACTA 9, seccion 7.3 |
+| `cap_04` | Cap. 3, `Leading a Small Team` | **120** | **3** | **2,50** | ACTA 10, seccion 7.3 |
+| `cap_05` | Cap. 4, `The Art of Feedback` | **111** | **1** | **0,90** | ACTA 10, seccion 7.3 |
+| `cap_06` | Cap. 5, `Managing Yourself` | **162** | **7** | **4,32** | ACTA 11 |
+| `cap_07` | Cap. 6, `Amazing Meetings` | **124** | **5** | **4,03** | ACTA 12, seccion 4.3 |
+| `cap_08` | Cap. 7, `Hiring Well` | **162** | **4** | **2,47** | ACTA 12, seccion 4.3 |
+| `cap_09` | Cap. 8, `Making Things Happen` | **131** | **3** | **2,29** | ACTA 12, seccion 4.3 |
+| `cap_10` | Cap. 9, `Leading a Growing Team` | **80** | **1** | **1,25** | ACTA 12, seccion 4.3 |
+| `cap_11` | Cap. 10, `Nurturing Culture` | **57** | **2** | **3,51** | ACTA 13, seccion 4.1 |
+| `cap_12` | `Epilogue` | **0** | 0 | **sin definir: denominador cero** | ACTA 13, seccion 4.1 |
+| | **suma de las doce filas** | **1.102** | **33** | | |
+
+### **LA SUMA NO CIERRA, Y LOCALIZO LA MAYOR PARTE DEL HUECO**
+
+    las doce filas suman         : 1.102 pasos
+    mi medida de hoy da          : 1.107 pasos
+    diferencia                   :     5 pasos
+
+**LA PRIMERA MITAD DEL HUECO LA ENCUENTRO Y LA CITO: HAY DOS CANDIDATOS DEL LOTE 3 QUE
+NINGUNA FILA POR CAPITULO CUBRE.** Son los dos que la vuelta 10 escribio al cerrar **la
+cola que dejo la vuelta 9**, y estan en su `2.d.4` con su aduana pegada:
+
+| # | id | pieza | pasos entonces | **pasos hoy, medidos por mi** |
+|---:|---|---|---:|---:|
+| 22 | `establecer_dinamica_nueva_antiguos_pares` | `cap_03.md` L73 a L85 | 7 | **7** |
+| 23 | `planificar_reduccion_trabajo_individual` | `cap_03.md` L87 a L93 | 3 | **3** |
+
+**Salieron de `cap_03.md`, que es el Cap. 2, PERO SE ESCRIBIERON EN LA VUELTA 10**, cuando
+la fila de `cap_03` ya estaba firmada en la ACTA 9 con 76 pasos. **La ACTA 10 tabulo solo
+el Cap. 3 y el Cap. 4, asi que estos dos no entraron en ninguna de las dos tablas.**
+
+**Y LA CUENTA DE CANDIDATOS LO CONFIRMA POR OTRO CAMINO:**
+
+    21 (vuelta 9) + 27 (vuelta 10, su tabla) + 18 (vuelta 11) = 66
+    archivados que mido hoy                                   = 68
+    faltan                                                    =  2   <- exactamente estos dos
+
+**CON ELLOS DENTRO, LA POBLACION PUBLICADA SUBE A 1.112 PASOS** (1.102 mas 7 mas 3), **y
+mi medida de hoy da 1.107. QUEDAN 5 PASOS DE DIFERENCIA EN SENTIDO CONTRARIO.**
+
+> ### **LOS 5 QUE FALTAN: LOS DECLARO Y NO LOS RESUELVO**
+>
+> **Los ficheros de hoy tienen 5 pasos MENOS de los que las actas firmaron.** El hueco
+> vive entero en la mitad archivada: **558 firmados contra 553 medidos**, mientras que la
+> mitad de la bandeja casa al paso (**554 contra 554**).
+>
+> **Lo que puedo afirmar:** los dos candidatos de la cola tienen hoy los mismos 7 y 3 pasos
+> que tenian, asi que **no son ellos**. **Lo que NO puedo afirmar es de que unidad salen
+> los 5**, porque las actas 9, 10 y 11 publican el denominador **por capitulo y no por
+> fichero**, y sin la cuenta por fichero no hay contra que cruzar los 68 archivados.
+>
+> **LA VIA MAS BARATA PARA CERRARLO, y la digo para que no cueste una vuelta:** la
+> diferencia es de **cinco pasos sobre 553 (el 0,9 por ciento)** y **solo puede venir de
+> una correccion posterior a la firma del acta**, porque los ficheros no se tocan de otra
+> forma. **Un `git log -p` sobre `cuarentena/zhuo_manager/` anterior al commit `3ad8998`
+> la localiza fichero a fichero.** No lo corro hoy: no es mi encargo, y **lo que si es mi
+> encargo es no publicar un total que no cuadra sin decir que no cuadra.**
+
+### **EL TOTAL DEL LOTE 3, CON SUS DOS LECTURAS Y LA QUE SOSTENGO**
+
+*`8.2` manda publicar **la fila y el total**. Las doce filas estan arriba. **El total lo
+doy con las dos lecturas escritas, porque una sola seria esconder la discrepancia dentro
+de un numero.***
+
+| lectura | numerador | denominador | **tasa** |
+|---|---:|---:|---:|
+| **estrecha**: solo lo que las doce filas cubren | **33** | **1.102** | **2,99 por ciento** |
+| **ancha, y es la que sostengo**: el numerador de las doce filas mas el puente declarado en la cola, sobre **mi denominador medido hoy** | **34** | **1.107** | **3,07 por ciento** |
+
+**EL PUENTE NUMERO 34 NO ME LO INVENTO: ESTA DECLARADO EN EL REPORTE DE LA VUELTA 10, EN
+SU `2.d.5`,** que se titula *un puente mas, cazado al escribir la pieza de la dinamica* y
+lo cita contra `cap_03.md:85`. **Es de `establecer_dinamica_nueva_antiguos_pares`, que es
+uno de los dos candidatos que ninguna fila cubre**, asi que su puente tampoco estaba en
+ningun numerador.
+
+> **SOSTENGO LA ANCHA Y DIGO POR QUE:** la formula de `8` mide **de todos los pasos que el
+> extractor ESCRIBIO, cuantos RESULTARON ser PUENTE**. Los dos candidatos de la cola los
+> escribio el extractor y su puente lo cazo el extractor. **Dejarlos fuera no es ser
+> prudente: es medir otra poblacion**, que es justo lo que esta seccion entera denuncia.
+>
+> **Y DIGO LO QUE LA ANCHA TAMPOCO CIERRA:** su numerador (34) sale de las actas y su
+> denominador (1.107) sale de mi maquina, **y esos 1.107 llevan dentro los 5 pasos que
+> faltan sin localizar.** La tasa se mueve entre **3,07 y 3,08 por ciento** segun donde
+> caigan esos cinco. **La diferencia es de centesimas y la digo igual**, porque una cifra
+> cuyo margen se calla es una cifra que promete una precision que no tiene.
+
+### **EL FRENO (`8.1`), QUE ES LO UNICO QUE ESTA TABLA DECIDE**
+
+> ## **EL PEOR CAPITULO DEL LOTE 3 ES `cap_03` CON 5,26 POR CIENTO** (6,58 con el residuo
+> que la ACTA 9 dejo abierto). **EL TOPE ES 10. EL FRENO NO SE DISPARA NI CON LA LECTURA
+> ALTA.**
+
+**La escalada se decide sobre el peor capitulo y no sobre el promedio** (`8.2`), **asi que
+ninguna de las dos lecturas del total de arriba cambia nada de lo que viene despues.** Lo
+digo expresamente para que no parezca que la discrepancia que declaro tiene consecuencias
+que no tiene: **no las tiene sobre el volumen, y por eso puedo declararla sin que nadie
+sospeche que me conviene.**
+
+**Y LA TENDENCIA, QUE ES LO QUE LA METRICA EXISTE PARA VER:** 3,80 y 5,26 en la vuelta 9;
+2,50 y 0,90 en la 10; 4,32 en la 11; 4,03, 2,47, 2,29 y 1,25 en la 12; 3,51 en la 13.
+**Ninguna unidad del lote 3 paso de 5,26, y la linea base del lote 1 era 36,11.**
+
+---
+
+## I.2.d. **EL SELLO DE LA VUELTA 13**, QUE SE QUEDO SIN ESCRIBIR, RECONTADO A MAQUINA
+
+*La vuelta 13 se corto en `H.4.1` y no tiene sello (ACTA 13 seccion 7.1). **Lo escribo yo
+ahora, y no lo copio de su cuerpo: lo recuento con el metodo que ella misma declaro en su
+`H.1.c` y no llego a correr**, con la TAREA 1.d aplicada a cada cifra que entra.*
+
+### EL RECUENTO, CON SU TOTAL, SU FILTRADO Y SU RESIDUO
+
+**Su `H.1.c` dice que los veredictos se cuentan *contando filas de tabla a maquina, y
+restando la fila que este contada en dos sumandos*. Eso hago, y pego el residuo.**
+
+    $ python -c "cuenta las filas de tabla de H.1.f y H.2.6 y filtra las que abren con
+                 numero de veredicto"
+    TOTAL filas de tabla en H.1.f : 23   FILTRADO con numero de veredicto: 4   RESIDUO: 19
+    TOTAL filas de tabla en H.2.6 : 15   FILTRADO con numero de veredicto: 11  RESIDUO:  4
+      numeros en H.1.f: ['1', '2', '3', '4']
+      numeros en H.2.6: ['5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15']
+      VEREDICTOS DE LA VUELTA 13 = 4 + 11 = 15
+
+> **LA NUMERACION CORRE DEL 1 AL 15 SIN SALTO Y SIN REPETICION, y eso es lo que descarta
+> el doble sumando** que su `H.1.c` temia. **No hay que restar nada.** Es la comprobacion
+> que las tres ultimas caidas de especie `REPORTE` de esta casa no hicieron.
+
+**LAS PIEZAS DE FRONTERA, con el mismo residuo pegado, y aqui el residuo SI muerde:**
+
+    $ python -c "cuenta filas de tabla en H.2.1 y H.3.1 y filtra las que abren con P o Q"
+    H.2.1 TOTAL filas 14  FILTRADO piezas 12  RESIDUO 2
+    H.3.1 TOTAL filas  6  FILTRADO piezas  5  RESIDUO 1
+
+> **EL FILTRO INGENUO DA 12 PIEZAS EN `cap_11` Y SON 10.** Las dos de mas son `P1` y `P10`
+> **repetidas en la segunda tabla de `H.2.1`**, la que explica por que esas dos no dan
+> nodo. **Ese es exactamente el doble sumando que `H.1.c` mandaba restar, y sin el residuo
+> impreso yo habria publicado 12.** Abiertas las dos filas, son las que empiezan
+> *`P1` (`L9` a `L15`) es la portada del capitulo* y *`P10` (`L189` a `L191`) es el cierre
+> del capitulo*. **`cap_11` tiene 10 piezas y `cap_12` tiene 5: son 15.**
+
+**LOS CANDIDATOS Y LOS PASOS, contados de los ficheros y no de las tablas**, que es lo que
+`H.1.c` manda para estas dos:
+
+    $ python -c "suma los pasos_accionables de los ocho candidatos de cap_11"
+      juzgar_cultura_renuncias_equipo        8      revisar_incentivos_trampas_equipo     9
+      contrastar_cultura_actual_aspirada     9      actuar_conducta_contraria_valores     5
+      comunicar_valores_diez_formas          9      reconocer_decision_dificil_valores    4
+      vivir_primero_valor_declarado          7      inventar_tradiciones_celebrar_valores 6
+
+    TOTAL de los 68 de la bandeja : 554
+    FILTRADO los 8 de cap_11      :  57
+    RESIDUO los 60 de la vuelta 12: 497
+    comprobacion: 57 + 497 = 554 -> CUADRA
+
+### **EL SELLO DE LA VUELTA 13**
+
+| | |
+|---|---|
+| **vuelta** | **13**, lote 3 (`zhuo_manager`), `cap_11` y `cap_12`: el cierre de la extraccion del libro |
+| **modo** | `MODO_INSERCION=cuarentena`. **Cero inserciones**, verificado por el auditor por las dos puntas del tramo (ACTA 13 seccion 1.3) |
+| **unidades minadas** | **2**: `cap_11.md` (`Cap. 10`) y `cap_12.md` (`Epilogue`) |
+| **piezas de frontera** | **15** = 10 de `cap_11` mas 5 de `cap_12`. **Cero huecos y cero solapes**, 92 de 92 lineas de `cap_11` |
+| **candidatos escritos** | **8**, todos de `cap_11`. `cap_12` dio **0** y se juzgo |
+| **pasos escritos** | **57** |
+| **pasos PUENTE** | **2**, los dos cazados por el extractor, corregidos y vueltos a pasar por la aduana |
+| **`PASOS INVENTADOS POR CAPITULO`** | `cap_11` **3,51 por ciento**; `cap_12` **sin definir, denominador cero** |
+| **aduana** | **8 de 8 `[ENTRARIA]`**, cada uno en el acto en que se escribio. **Cero `CAERIA`, cero `BLOQUEARIA`** |
+| **veredictos escritos** | **15**, numerados del 1 al 15 sin salto ni repeticion. **CERO los pidio la senial** |
+| **aristas** | **2, declaradas y NO ejecutadas**, porque `forja.py arista` escribe en sede de la aduana y el modo era cuarentena. Van en `H.2.3` con el paso de la madre impreso |
+| **cabezas examinadas por `D.37`** | **1**, y **no cumple la cuenta**: `L35` dice *the following questions* sin decir cuantas |
+| **fronteras de doctrina levantadas** | **1**: Zhuo contra `Who` sobre **atar dinero a un numero**, levantada por el extractor y por el auditor **por separado y sin verse** |
+| **paradas** | **0**. Una condicion rozada (`cap_12` sin procedimientos), **declarada entera con la lectura que condenaba al extractor escrita primera**, y adjudicada NO PARADA por la ACTA 13 seccion 2.6 |
+| **guardas** | gate, guiones y aceptacion **en verde**, corridas por el auditor (ACTA 13 seccion 1.1) |
+| **lo que quedo abierto** | **tres tareas**: el contraste del reloj, las cuatro medidas con el total del lote 3, y el cierre del lote 3. **Las tres las recoge esta vuelta 14** |
+
+### **LO QUE ESTE SELLO NO ES, Y HAY QUE DECIRLO**
+
+> **NO ES EL SELLO QUE LA VUELTA 13 HABRIA ESCRITO. ES EL QUE YO PUEDO RECONSTRUIR DE SU
+> CUERPO Y DE LOS FICHEROS QUE DEJO**, con los instrumentos corridos hoy.
+>
+> **Lo que se pierde y no recupero:** un sello se escribe **al cerrar**, y ahi es donde su
+> autor dice **que le costo mas, que dejo peor y que haria distinto**. Eso no esta en
+> ninguna tabla y no lo invento yo. **Un sello escrito por otro es un inventario, no un
+> cierre.**
+>
+> **Y lo digo en vez de presentar esto como si fuera lo mismo**, porque la diferencia
+> entre las dos cosas es justo lo que un sello aporta.
+
+**UNA COSA QUE SI PUEDO FIRMAR YO, porque la mide un instrumento y no una memoria:** las
+dos correcciones de puente que la vuelta 13 declara **estan de verdad en los ficheros que
+viajan**, y no solo en el asunto de un commit. **No lo copio del auditor: lo abro yo hoy**,
+con la prueba negativa pegada, que es la que de verdad prueba que el texto viejo se fue:
+
+    $ python -c "abre los dos JSON de la bandeja y busca el texto viejo del puente"
+    vivir_primero_valor_declarado paso 2:
+       Considera los cinco ejemplos que el libro pone de alguien en posicion de
+       autoridad que dice una cosa y hace otra. Un directivo pid ...
+       contiene "pasa tus propios valores"? False
+    inventar_tradiciones_celebrar_valores paso 5:
+       Mira el caso que el libro pone del fundador de la casa sosteniendo el rito el
+       mismo: lleva mas de diez anios celebrando un turno de preguntas interno ...
+       contiene "si el valor es tuyo"? False
+
+**Los dos textos nuevos estan y los dos textos viejos NO estan.** Una correccion se
+comprueba por las dos puntas o no se ha comprobado.
+
+---
+
+## I.3.7. LOS DOS CANDIDATOS, CADA UNO POR LA ADUANA **EN EL ACTO EN QUE SE ESCRIBIO**
+
+*`EXTRACTOR.md` 16: **un candidato no esta escrito hasta que ha pasado la aduana.** El
+ciclo es escribir, correr `python forja.py informe cuarentena/<libro>/<id>.json`, corregir
+si cae, y **solo entonces cuenta como escrito**. Lo que esto prohibe por su nombre es
+escribir los dos y pasar la aduana al final.*
+
+**ORDEN EN QUE LOS ESCRIBI, y lo digo porque el orden importa** (`EXTRACTOR.md` 12.3: *el
+primero que entra cambia lo que el segundo mide*): **primero el de `cap_01` y despues el de
+`cap_03`, que es el orden del libro.** En esta corrida no entra ninguno, asi que el primero
+no mueve la medida del segundo; **lo respeto igual, porque el orden del libro es lo que
+hace comparable un lote con otro.**
+
+### I.3.7.1. CANDIDATO 1: `desplegar_marco_franqueza_radical` (de `cap_01.md`, P5, `L35` a `L37`)
+
+| | |
+|---|---|
+| **id** | `desplegar_marco_franqueza_radical` |
+| **titulo** | Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones |
+| **activacion** | *Cuando estas desplegando la franqueza radical en tu equipo y crees que puede haber confusion sobre lo que significa.* Sale de `L35`: *So if you are rolling out Radical Candor, and you think there might be some confusion about what it means* |
+| **entregable** | Copias del marco puestas a la vista y repartidas entre tus colegas, y el marco en uso como brujula de conversaciones concretas, sin nombres escritos en las casillas |
+| **pasos** | **9** |
+| **fuente** | `scott_radical_candor`, fecha `2026-09-11`. **Unica fuente: no hay injerto y por eso no hay orden que declarar** |
+| **atribuciones** | **ninguna.** La pieza no trae cifra de autor |
+
+**LA ADUANA, EN EL MISMO ACTO EN QUE SE ESCRIBIO** (`EXTRACTOR.md` 16):
+
+    $ python forja.py informe cuarentena/scott_radical_candor/desplegar_marco_franqueza_radical.json
+    candidatos revisados        : 1
+    nodos en el grafo de destino: 135
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    [ENTRARIA] desplegar_marco_franqueza_radical   (desplegar_marco_franqueza_radical.json)
+
+    real  0m19.943s
+
+**`[ENTRARIA]` AL PRIMER INTENTO, CERO CORRECCIONES, CERO VECINOS LEVANTADOS.**
+
+> **Y DIGO LO QUE ESE CERO CERTIFICA Y LO QUE NO** (`EXTRACTOR.md` 11, `D.19`): **un
+> candidato que entra con la cola vacia esta certificado como SIN GEMELO, no como sin
+> madre.** Por eso sus cuatro veredictos de lectura van igual en `I.3.8`, **y el mas
+> cercano de los cuatro vive en la bandeja, donde la aduana no puede verlo.**
+
+### I.3.7.2. CANDIDATO 2: `repartir_semana_cuarenta_horas_jefe` (de `cap_03.md`, P3, `L17`)
+
+| | |
+|---|---|
+| **id** | `repartir_semana_cuarenta_horas_jefe` |
+| **titulo** | Repartir la semana de cuarenta horas del jefe entre gestionar, pensar por tu cuenta y lo imprevisible |
+| **activacion** | *Cuando te abruma la cantidad de cosas que el libro te sugiere hacer como directivo y quieres saber cuanto tiempo de tu semana te van a costar.* Sale del arranque de `L17` |
+| **entregable** | Tu semana de cuarenta horas repartida en sus tres partidas, con las quince horas de trabajo propio bloqueadas en el calendario |
+| **pasos** | **7** |
+| **fuente** | `scott_radical_candor`, fecha `2026-09-11`. **Unica fuente** |
+| **atribuciones** | **1**, la cifra de la autora sobre el coste en tiempo de su propio libro, **con su `fecha_corte` declarada como no constante en el texto y con el motivo dicho**: este recorte no incluye las notas del libro (`I.3.5`) |
+
+**LA ADUANA, EN EL MISMO ACTO EN QUE SE ESCRIBIO:**
+
+    $ python forja.py informe cuarentena/scott_radical_candor/repartir_semana_cuarenta_horas_jefe.json
+    EL SALDO
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    [ENTRARIA] repartir_semana_cuarenta_horas_jefe   (repartir_semana_cuarenta_horas_jefe.json)
+
+    real  0m23.303s
+
+**`[ENTRARIA]` AL PRIMER INTENTO, CERO CORRECCIONES, CERO VECINOS LEVANTADOS.**
+
+> **Y ESTE CERO ES EL QUE MAS ME EXTRANIA, ASI QUE LO DIGO EN VEZ DE CELEBRARLO.** Su
+> vecino `planificar_reduccion_trabajo_individual` **vive en el grafo**, habla del mismo
+> reparto entre gestion y oficio propio, **y la aduana no lo levanto.** Las tres seniales
+> midieron por debajo de sus tres umbrales. **Es `D.19` en vivo: la jerarquia la busca la
+> lectura, no la senial**, y por eso el par 3 de `I.3.8` existe.
+
+### **DOS CIFRAS QUE ESTAS DOS CORRIDAS REGALAN, Y QUE TOCAN LO DE `I.2.a`**
+
+*No las busque: salieron de cronometrar la aduana de cada candidato, que es lo que
+`EXTRACTOR.md` 16 manda hacer de todas formas.*
+
+    informe de UN candidato contra 135 nodos, medido dos veces seguidas:
+      19,943 s   y   23,303 s        -> dispersion entre dos corridas identicas: 16,8 por ciento
+
+**ESO ES UN TERCER PUNTO DEL MODELO DEL RELOJ, EN `N = 1`, Y LLEGO CUARENTA SEGUNDOS
+DESPUES DE QUE YO ESCRIBIERA QUE EL REAJUSTE NO TENIA NI UN GRADO DE LIBERTAD:**
+
+| | prediccion para `N = 1`, `G = 135` |
+|---|---:|
+| coeficientes **viejos** (a=0,1977 b=0,063) | **26,7 s** |
+| coeficientes **reajustados hoy** (a=0,1081 b=0,2795) | **14,9 s** |
+| **medido** | **19,9 s** y **23,3 s** |
+
+> **LOS DOS MODELOS FALLAN EN `N = 1`, Y FALLAN EN SENTIDOS OPUESTOS: el viejo se pasa, el
+> nuevo se queda corto.** La medida cae entre los dos.
+>
+> **Y DIGO POR QUE NO LO USO PARA TUMBAR NINGUNO DE LOS DOS:** **dos corridas identicas se
+> separaron un 16,8 por ciento entre si.** Con ese ruido, un solo punto en `N = 1` **no
+> falsifica nada**, y ademas `N = 1` es donde el arranque del proceso pesa mas sobre el
+> total. **Lo publico porque es una medida que tengo y que nadie me pidio, y porque el
+> ruido que trae dentro es tan util como el punto: cualquier modelo de este reloj que
+> presuma de menos del 17 por ciento de precision esta presumiendo de menos que su propia
+> dispersion.**
+
+## I.3.7.3. LA RELECTURA DE FIDELIDAD `D.30`, **DENTRO DEL ACTO**, PASO A PASO CONTRA SU LINEA
+
+*`EXTRACTOR.md` 15.4: **ninguna guarda de esta casa ve un paso que yo escribi y el libro no
+dice.** Un informe verde certifica que la ficha esta bien construida, **no que sus pasos
+sean del libro.** Se hace **en el acto de escribir cada candidato**, no en una vuelta
+posterior, y el remedio de `H.1.b` se declara cumplido por capitulo **aunque la cuenta sea
+cero**, que es lo que el encargo pide expresamente.*
+
+### CANDIDATO 1, `desplegar_marco_franqueza_radical`: 9 pasos contra `cap_01.md` L35 y L37
+
+| # | mi paso, en corto | linea | lo que la linea dice, pegado | |
+|---:|---|---|---|---|
+| 1 | usa la version nueva del marco que trae esta edicion | `L35` | *here's a way to help ensure that everyone understands the idea is not to act like a jerk: use this new version of the Radical Candor framework (see below)* | **TRANSCRIPCION** |
+| 2 | recortalo del libro; la version grande esta en la pagina 297 | `L35` | *You can cut it right out of this book (see page 297 for a larger version)* | **TRANSCRIPCION** |
+| 3 | haz fotocopias | `L35` | *make photocopies* | **TRANSCRIPCION** |
+| 4 | ponlas en la nevera, encima de tu mesa o en cualquier sitio, como recordatorio | `L35` | *and put them on your refrigerator, over your desk, or anywhere for a reminder* | **TRANSCRIPCION** |
+| 5 | comparte copias con tus colegas | `L35` | *You can also share copies with your colleagues.* | **TRANSCRIPCION** |
+| 6 | usalo como brujula para llevar cada conversacion concreta a un sitio mejor | `L37` | *Use THE RADICAL CANDOR Framework like a compass to guide individual conversations to a better place.* | **TRANSCRIPCION** |
+| 7 | no lo uses como test de personalidad para juzgarte ni juzgar a otros | `L37` | *Please do NOT use it as a personality test to judge yourself or others.* | **TRANSCRIPCION** |
+| 8 | no escribas nombres en las casillas | `L37` | *Don't write names in boxes.* | **TRANSCRIPCION** |
+| 9 | cuenta con lo que el texto aniade despues: todos caemos en cada cuadrante varias veces al dia | `L37` | *We all fall into each quadrant multiple times a day.* | **TRANSCRIPCION** |
+
+**9 de 9 TRANSCRIPCION. CERO PUENTES.**
+
+> ### **PERO UNO ESTUVO A PUNTO DE SERLO, Y LO CUENTO PORQUE ES LA ESPECIE QUE `D.30` MIDE**
+>
+> **El paso 9 lo escribi primero asi:** *Cuenta con la RAZON que el texto da para las dos
+> prohibiciones anteriores: todos caemos en cada cuadrante varias veces al dia.*
+>
+> **`L37` no dice que eso sea la razon de nada.** Pone las dos prohibiciones y **a
+> continuacion** la frase, sin conector. **Llamarla razon es una inferencia mia**, probable
+> y comoda, **y una inferencia probable es exactamente lo que se cuela sin que nadie la
+> note.** No es el destinatario, ni el periodo, ni el responsable: **es una cuarta especie,
+> el NEXO**, y la nombro porque las tres del lote 1 no la cubren.
+>
+> **Lo reescribi a *Cuenta con lo que el texto aniade justo despues de las dos
+> prohibiciones*, que es lo unico que puedo sostener abriendo la linea.** Tambien saque la
+> misma inferencia del `resumen_teorico`, donde la habia escrito dos veces.
+>
+> **Y lo cazo yo escribiendo, no la aduana:** el informe de este candidato habria salido
+> igual de verde con la version vieja.
+
+### CANDIDATO 2, `repartir_semana_cuarenta_horas_jefe`: 7 pasos contra `cap_03.md` L17
+
+*Los siete salen de **una sola linea**, asi que la columna de linea es la misma y lo que
+importa es el tramo. **Pego el tramo de cada uno.***
+
+| # | mi paso, en corto | el tramo de `L17`, pegado | |
+|---:|---|---|---|
+| 1 | puede que te sientas abrumado por la cantidad de cosas que sugiere; respira hondo | *As you read on, you might occasionally feel overwhelmed by the number of things I'm suggesting you do as a manager. Take a deep breath.* | **TRANSCRIPCION** |
+| 2 | la meta declarada del libro es ahorrarte tiempo, no llenarte el calendario de reuniones | *My goal is to save you time, not to litter your calendar with meetings.* | **TRANSCRIPCION** |
+| 3 | si necesitas tiempo con tus personas a cargo, pero no TODO tu tiempo | *You do need to spend time with your direct reports to be a great boss, but you don't need to spend ALL your time with them.* | **TRANSCRIPCION** |
+| 4 | diez horas a la semana de gestion si aplicas cada idea, herramienta y tecnica | *If you implement every single idea, tool, and technique in this book, the time you dedicate to managing your team will come to approximately ten hours a week* | **TRANSCRIPCION** |
+| 5 | esas diez horas te ahorran despues tiempo perdido y quebraderos de cabeza | *and those ten hours should save you enormous lost time and headaches later* | **TRANSCRIPCION** |
+| 6 | bloquea unas quince horas para pensar y ejecutar por tu cuenta en tu especialidad | *I'll also suggest you block out about fifteen hours a week for you to think and execute independently in your area of expertise.* | **TRANSCRIPCION** |
+| 7 | quedan otras quince de una semana de cuarenta, y la mayoria se va en lo imprevisible | *That leaves another fifteen hours in a forty-hour work week. Hopefully you can claim them as your own, though if you're like me you'll have to use most of them to deal with the unpredictable.* | **TRANSCRIPCION** |
+
+**7 de 7 TRANSCRIPCION. CERO PUENTES.**
+
+> ### **LOS TRES QUE NO ESCRIBI, Y SON LAS TRES ESPECIES QUE EL LOTE 1 PAGO**
+>
+> **Los digo con su nombre porque no escribirlos no se ve, y no verse es justamente el
+> problema:**
+>
+> | especie | el paso que me pedia el cuerpo | por que NO esta |
+> |---|---|---|
+> | **el periodo** | *revisa este reparto cada trimestre* | `L17` **no dice cada cuanto se revisa**. No dice que se revise |
+> | **el destinatario** | *reparte las diez horas entre tus personas a cargo* | `L17` **no subdivide las diez horas**. Dice cuantas son y nada mas |
+> | **el responsable** | *bloquealas a primera hora y protegelas de tu jefe* | `L17` dice **`block out`** y punto. **El cuando y el frente a quien los pondria yo** |
+>
+> **Y una cuarta que tampoco escribi y que este texto invita mas que ninguna:** *si te pasas
+> de las diez horas, recorta de aqui*. **El libro da tres numeros y ni una regla de
+> desbordamiento.** Es la tentacion de completar el inventario que `EXTRACTOR.md` 15.4
+> avisa: **no se nota mientras se escribe, y ninguna guarda la nota despues.**
+
+### EL REMEDIO DE `H.1.b`, DECLARADO CUMPLIDO POR UNIDAD **AUNQUE LA CUENTA SEA CERO**
+
+*El encargo lo pide expresamente asi, y lo cumplo unidad por unidad y no en bloque:*
+
+| unidad | pasos escritos | **PUENTES tras la relectura** | ¿relectura hecha dentro del acto? |
+|---|---:|---:|---|
+| `cap_00` | **0** | **0** | **SI, y no habia que hacerla**: cero candidatos |
+| `cap_01` | **9** | **0** | **SI**, con **un nexo cazado y reescrito antes de la aduana** |
+| `cap_02` | **0** | **0** | **SI, y no habia que hacerla**: cero candidatos |
+| `cap_03` | **7** | **0** | **SI**, con las tres especies del lote 1 nombradas y ninguna escrita |
+| **total de la vuelta** | **16** | **0** | |
+
+> **CERO PUENTES EN 16 PASOS, Y NO LO PRESENTO COMO MERITO SINO CON SU AVISO.** La ACTA 13
+> dejo escrito que **un extractor que declara sus puentes trabaja mejor que uno que declara
+> cero** (`8.4`). Asi que digo exactamente que significa mi cero: **mis dos candidatos salen
+> de piezas cuyo inventario es literal y cerrado** (cuatro actos fisicos mas tres reglas de
+> uso; tres partidas de horas que suman cuarenta). **El aviso de `D.30` es que el parrafo
+> POBRE produce el nodo inventado**, y **los dos parrafos que mine son de los ricos.** El
+> cero mide la pieza tanto como me mide a mi.
+>
+> **Y lo que sostiene que no es un cero por dejadez es el nexo del paso 9:** lo busque, lo
+> encontre y lo reescribi. **Un cero que viene con una caza dentro es un cero que se ha
+> mirado.**
+
+---
+
+## I.3.8. LOS VEREDICTOS, POR **LECTURA** Y NO POR SENIAL, CON LOS DOS LADOS ABIERTOS
+
+*`D.5` y lo que la vuelta 13 hizo bien en su `H.2.6`: **los veredictos se escriben aunque
+la aduana levante cero vecinos**, porque `D.19` midio que ninguna senial separa un par de
+jerarquia de un par al azar. **Un candidato con la cola vacia esta certificado como sin
+gemelo, no como sin madre.***
+
+### EL BARRIDO DE VECINOS, CON SU CRITERIO PUBLICADO ANTES DE LOS VEREDICTOS
+
+*El auditor adopto mi metodo en su `6.3` y le aniadio la condicion que lo hace
+comprobable: **una busqueda negativa solo se puede citar junto al criterio con el que se
+hizo.** Asi que publico la lista de objetos ANTES de decir a quien encontre.*
+
+**LOS OBJETOS CON LOS QUE BARRO, sacados de lo que mis dos candidatos HACEN y no de las
+palabras con que lo dicen:**
+
+    candidato 1 : difundir un metodo dentro de una organizacion | repartir material impreso |
+                  recordatorio a la vista | compartir con colegas | clasificar personas |
+                  guiar una conversacion concreta
+    candidato 2 : reparto de las horas de la semana | calendario del jefe | tiempo con las
+                  personas a cargo | trabajo propio de experto | techo de dedicacion |
+                  tiempo reclamado para uno mismo
+
+**Y BARRO SOBRE LAS DOS POBLACIONES, no solo sobre el grafo**, que es la parte que la
+aduana no puede hacer por mi:
+
+    $ python -c "recorre el grafo y la bandeja e imprime id y titulo"
+    TOTAL de titulos recorridos: 203  (grafo 135 + bandeja 68)
+    FILTRADO vecinos abiertos y leidos enteros : 11
+    RESIDUO  descartados                       : 192
+    comprobacion: 11 + 192 = 203 -> CUADRA
+
+    de donde sale cada uno de los 11:
+      barrido por objeto            : 7
+      barrido de control por palabra: 3   (los que el de objeto no dio, tabla de abajo)
+      seguido desde la cabeza del 8 : 1   (instalar_metodo_contratacion_empresa)
+      comprobacion: 7 + 3 + 1 = 11 -> CUADRA
+
+> **POR QUE LOS 68 DE LA BANDEJA TAMBIEN, y no es celo:** la aduana **no los ve**, porque
+> compara contra `dataset/nodos.jsonl` y ahi no estan (lo mide `I.1.c`: 0 de 68 dentro del
+> grafo). **Si mi vecino esta en la bandeja, ninguna senial me va a avisar nunca**, ni hoy
+> ni el dia de la insercion, **porque para entonces mi candidato ya habra entrado.** Es
+> exactamente el hueco que la vuelta 12 midio entre dos libros del mismo tema.
+
+### **Y UNA COMPROBACION DE CONTROL QUE ME CAZO TRES VECINOS QUE EL BARRIDO POR OBJETO NO DIO, Y UN CUARTO POR LA CADENA**
+
+*Lo cuento porque es una correccion de mi propio metodo y porque la caida del auditor en la
+vuelta 13 fue exactamente esta: **sacar de una busqueda una conclusion mas ancha que la
+busqueda.***
+
+Despues de barrer por objeto, **corri ademas un barrido de control por palabras sobre el
+texto entero de los 203** (titulo, pasos, activacion y entregable), con dos patrones
+deliberadamente anchos:
+
+    $ python -c "cruza dos patrones de control contra el texto entero de los 203 nodos"
+    candidato 1  patron de control -> 32 nodos tocan alguna de esas palabras
+    candidato 2  patron de control -> 43 nodos tocan alguna de esas palabras
+
+**La inmensa mayoria son ruido** (`marco de habilidad y voluntad`, `reserva treinta
+minutos`, `jornada de entrevistas`), **que es exactamente lo que `D.4` predice de una
+busqueda por palabra.** Pero entre los 75 aparecieron **tres que mi barrido por objeto no
+habia levantado y que al abrirlos si son vecinos de verdad**, y entran en la tabla de
+abajo con los numeros 8, 10 y 11. **Y abriendo el primero de ellos aparecio un cuarto por
+la cadena**, su propia cabeza, que es el numero 9:
+
+| el que se me escapo | por que el barrido por objeto no lo dio |
+|---|---|
+| `construir_apoyo_equipo_directivo_metodo` | yo barria *difundir un metodo*, y su titulo habla de **apoyo** y de **equipo directivo**. **Su paso 3 dice `Reparte libros como este para promover la idea`**, que es el mismo acto que el paso 5 de mi candidato 1 |
+| `establecer_limites_cuidado_personal` | yo barria *tiempo reclamado para uno mismo*, y su titulo habla de **limites** y de **cuidado personal**. **Es el vecino mas cercano de mi tercera partida de horas** |
+| `repartir_tiempo_atencion_mejores_equipo` | su titulo empieza por **`Repartir tu tiempo`**, que es literalmente el verbo y el objeto de mi candidato 2 |
+
+> **LA LECCION, Y LA ESCRIBO CONTRA MI PROPIO METODO:** el barrido por objeto es mejor que
+> el barrido por palabra **para no perderse en ruido**, y la vuelta 13 lo demostro. **Pero
+> no es completo**, porque **depende de que yo nombre bien el objeto del vecino, que es
+> justo lo que no se antes de abrirlo.** Los dos juntos si: **el de objeto ordena, el de
+> control tapa los huecos.** Desde hoy corro los dos y publico los dos.
+
+### LOS ONCE VECINOS LEIDOS, CON LA VARA EN SUS DOS PRUEBAS ROTULADAS
+
+*Uso la vara de la ACTA 12 seccion 2.3 **en el formulario que el auditor se impuso a si
+mismo en su `6.2`**, porque encadenar las dos pruebas es lo que le costo dos choques.
+**Las dos van rotuladas y separadas, y la segunda es la que decide. Si la PRUEBA 2 no
+puede nombrar una linea concreta de la madre, la clase es `SANO`.***
+
+| # | candidato | vecino | sede | **PRUEBA 1** (descarta `REPITE`): procedimiento fuera del solape en los dos lados? | **PRUEBA 2** (decide): que linea de la madre ejecuta el hijo, y en cuantos pasos? | **clase** |
+|---:|---|---|---|---|---|---|
+| 1 | `desplegar_marco_franqueza_radical` | `comunicar_valores_diez_formas` | **bandeja** | **SI.** La madre trae las cuatro vias propias de la autora, sus traspies dentro del mensaje y el metodo de Sandberg; el hijo trae recortar, fotocopiar, colocar y las dos prohibiciones de uso. **Ninguno de esos actos esta en el otro** | **NINGUNA.** Lo mas cerca es el paso 4 de la madre, *recluta a otros para que ayuden a extender tu mensaje*, y el hijo lo toca en **un solo paso** (*comparte copias con tus colegas*), **no en N**. Y los objetos difieren: la madre reparte **un mensaje hablado y repetido**, el hijo reparte **un objeto impreso** | **`SANO`** |
+| 2 | `desplegar_marco_franqueza_radical` | `alinear_equipo_proposito_comun` | grafo | **SI** | **NINGUNA.** El paso 4 de la madre (*compartelo en cada ocasion que tengas*) tiene por objeto **el proposito del equipo**, no un marco de conversacion, y el hijo no lo despliega: lo cruza | **`SANO`** |
+| **8** | `desplegar_marco_franqueza_radical` | `construir_apoyo_equipo_directivo_metodo` | grafo (`Who`) | **SI.** La madre compromete al equipo directivo, usa relaciones personales y celebra talleres; el hijo recorta, coloca y prohibe dos usos | **NINGUNA, y es el par mas cercano del candidato 1.** El paso 3 de la madre dice *reparte libros como este para promover la idea*, y el hijo **reparte una pagina del libro, no el libro**, en un paso y no en N. **Y el destinatario cambia**: la madre reparte hacia arriba, al equipo directivo, para conseguir su compromiso; el hijo reparte a los colegas y a su propia nevera, para acordarse | **`SANO`** |
+| **9** | `desplegar_marco_franqueza_radical` | `instalar_metodo_contratacion_empresa` | grafo (`Who`) | **SI** | **NINGUNA.** Es la cabeza de las diez cosas de instalar un metodo, y **su cosa tres es la madre del par 8**, no de mi candidato. Mi candidato no instala un metodo en una empresa: **pone un recordatorio para una persona y sus colegas** | **`SANO`** |
+| 3 | `repartir_semana_cuarenta_horas_jefe` | `planificar_reduccion_trabajo_individual` | grafo | **SI.** La madre trae el disparador de cuatro o cinco personas y el error del aprendiz; el hijo trae tres partidas con sus cifras | **NINGUNA, y es el par mas fino de los once.** El paso 3 de la madre manda *tener ya un plan de como reducir tus responsabilidades de contribuidor individual*, y el hijo **no reduce nada: asigna**. Las quince horas de trabajo propio del hijo son partida **permanente**, no tramo en retirada. **Disparador distinto, entregable distinto y direccion contraria** | **`SANO`** |
+| 4 | `repartir_semana_cuarenta_horas_jefe` | `auditar_calendario_reuniones_semana` | **bandeja** | **SI** | **NINGUNA.** La madre audita **a posteriori** lo que ya ocupo la semana y purga reuniones concretas; el hijo fija **a priori** un techo de horas. El objeto de la madre son las reuniones, no las horas | **`SANO`** |
+| 5 | `repartir_semana_cuarenta_horas_jefe` | `reservar_tiempo_reflexion_metas` | grafo | **SI** | **NINGUNA.** La madre reserva **una hora al final de cada semana para reflexionar**; el hijo no nombra la reflexion en ninguno de sus siete pasos. Caben los dos en la misma semana, **y caber juntos no es continuar** | **`SANO`** |
+| 6 | `repartir_semana_cuarenta_horas_jefe` | `reservar_media_hora_semanal_talento` | grafo (`Who`) | **SI** | **NINGUNA.** La madre reserva **treinta minutos para llamar a jugadores A**; el hijo no nombra el talento. **Lo traigo expresamente porque es del OTRO libro**, que es donde la vuelta 12 midio que las seniales no ven | **`SANO`** |
+| 7 | `repartir_semana_cuarenta_horas_jefe` | `reservar_valor_unico_prioridades_arriba` | **bandeja** | **SI** | **NINGUNA.** La madre reparte **tareas** (que te quedas y que delegas); el hijo reparte **horas**. Dos criterios distintos sobre la misma semana no son el mismo procedimiento | **`SANO`** |
+| **10** | `repartir_semana_cuarenta_horas_jefe` | `establecer_limites_cuidado_personal` | grafo | **SI** | **NINGUNA, y la PRUEBA 2 sale al reves de lo que parecia.** La madre manda *tallar tiempo para los otros aspectos importantes de tu vida* con su ejercicio de quince minutos; **el hijo no talla la tercera partida: avisa de que probablemente se la coma lo imprevisible.** No la despliega, **la desmiente en tono** | **`SANO`** |
+| 11 | `repartir_semana_cuarenta_horas_jefe` | `repartir_tiempo_atencion_mejores_equipo` | grafo | **SI** | **NINGUNA.** Comparten el verbo y no el objeto: la madre reparte tiempo **entre personas** (los que van bien contra el que se atasca); el hijo reparte horas **entre clases de trabajo**. **El titulo engania y los pasos no** | **`SANO`** |
+
+> ## **ONCE VEREDICTOS, LOS ONCE `SANO`, Y **CERO** LOS PIDIO LA SENIAL.**
+>
+> *La tabla numera del 1 al 11: los del 1 al 7 salieron del barrido por objeto, y el 8, el
+> 10 y el 11 del barrido de control, con el 9 seguido desde la cabeza del 8. **Van
+> agrupados por candidato y no por orden de descubrimiento**, que es como se leen. Son once
+> filas y once numeros distintos, contados a maquina al cerrar (`I.6`).*
+>
+> **Tres de los vecinos viven en la bandeja y la aduana no los ve.** Si me hubiera limitado
+> a leer lo que el informe levanta, **los pares 1, 4 y 7 no existirian en este reporte**, y
+> el 1 es precisamente el mas parecido a mi candidato 1.
+
+### **DOS AVISOS QUE DEJO, Y SON DONDE ME CAERIA**
+
+**1. EL PAR 3 ES EL SOLAPE MAS SERIO DE ESTA VUELTA Y LO DIGO YO.** Los dos libros hablan
+del mismo reparto: **cuanto tiempo del jefe va a gestionar y cuanto a su propio oficio.**
+Zhuo dice que el trabajo propio **se reduce** segun crece el equipo; Scott le pone **quince
+horas fijas a la semana**.
+
+> **NO LO LLAMO FRONTERA DE DOCTRINA Y DIGO POR QUE**, porque la tentacion es grande y esta
+> vuelta ya ha levantado una. Para que haya frontera hacen falta **dos prescripciones que
+> choquen sobre la misma palanca**, como las de la vuelta 13 sobre atar dinero a un numero.
+> **Aqui no chocan: responden a preguntas distintas.** Zhuo responde *que pasa con tu
+> trabajo de experto cuando el equipo crece*; Scott responde *cuanto cuesta aplicar este
+> libro*. **Un directivo puede cumplir las dos a la vez, y dos reglas compatibles no son
+> una frontera.** Pero **si son dos nodos que el que inserte tiene que ver juntos**, y por
+> eso queda escrito con los dos lados abiertos.
+
+**2. Y UNA CONVERGENCIA, QUE ES LO CONTRARIO DE UNA FRONTERA Y TAMBIEN VALE.** El par 8
+pone a `Who` y a Scott **prescribiendo lo MISMO sobre la misma palanca**: para que un
+metodo cale en una organizacion, **reparte material impreso.** `Who` reparte el libro
+entero al equipo directivo; Scott reparte una pagina recortada a los colegas y a la nevera.
+
+> **NO LA FUNDO Y NO LA PODO, por la misma razon por la que no se funde una frontera:** son
+> dos procedimientos con inventarios propios y distintos. **La anoto porque una
+> convergencia entre dos libros es una senial de doctrina asentada**, y porque el dia que
+> alguien se plantee podar uno de los dos, esta linea dice que no son redundantes: **dicen
+> lo mismo a destinatarios distintos y con material distinto.**
+
+---
+
+## I.3.9. LAS CUATRO MEDIDAS DE ESTA VUELTA, **UNA FILA POR UNIDAD**
+
+*`8.2`: **la fila y el total van los dos**, y la escalada se decide sobre **el peor
+capitulo** y no sobre el promedio. Publico las cuatro unidades por separado **aunque dos
+den cero y la media salga plana**, porque una media que esconde una unidad mala es lo que
+el freno existe para cazar.*
+
+| unidad | `unidad:` de su cabecera | palabras de cuerpo | piezas | **candidatos** | **pasos escritos** | **PUENTES** | **por ciento** | candidatos por mil palabras |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| `cap_00` | Copyright Page | 218 | 5 | **0** | **0** | **0** | **sin definir: denominador cero** | **0,00** |
+| `cap_01` | Preface | 2.846 | 10 | **1** | **9** | **0** | **0,00** | **0,35** |
+| `cap_02` | Introduction | 3.908 | 11 | **0** | **0** | **0** | **sin definir: denominador cero** | **0,00** |
+| `cap_03` | How to Use This Book | 627 | 5 | **1** | **7** | **0** | **0,00** | **1,59** |
+| **total de la vuelta** | cuatro unidades | **7.599** | **31** | **2** | **16** | **0** | **0,00** | **0,26** |
+
+**LAS DOS CASILLAS `SIN DEFINIR` LAS SOSTENGO CONTRA LA TENTACION DE PONER UN CERO**, que
+es la disciplina que la vuelta 13 aplico a `cap_12` y que el auditor firmo en su 4.1:
+**cero puentes sobre cero pasos no es cero por ciento, es una division sin denominador.**
+Un `0,00` ahi **bajaria falsamente la media**, y **con dos de las cuatro unidades a cero
+bajaria la media a la mitad.**
+
+> ## **EL PEOR CAPITULO DE ESTA VUELTA ES 0,00 POR CIENTO. EL TOPE ES 10. EL FRENO NO SE
+> DISPARA.**
+>
+> **Y digo lo que esa cifra vale y lo que no**, porque un cero perfecto en la metrica de
+> volumen es exactamente el numero del que hay que desconfiar. **El denominador son 16
+> pasos.** Con 16 pasos, **un solo puente habria dado 6,25 por ciento**, que es mas que
+> cualquier unidad del lote 3 entero. **La metrica es de grano gruesisimo a este tamanio**,
+> y **no propongo que autorice nada.**
+
+### **LA MEDIDA QUE SI DICE ALGO DE ESTE TRAMO, Y NO ES NINGUNA DE LAS CUATRO**
+
+| | |
+|---|---:|
+| palabras de cuerpo leidas | **7.599** |
+| piezas de frontera publicadas | **31** |
+| piezas que dan candidato | **2** |
+| **rendimiento: piezas con nodo sobre piezas totales** | **6,45 por ciento** |
+
+**En la vuelta 13, `cap_11` dio 8 nodos de 10 piezas: el 80 por ciento.** Aqui es el
+**6,45**. **Esa es la cifra que describe el material de frente de un libro**, y la publico
+para que el que venga detras sepa que esperar de `cap_12` (`Getting Started`), `cap_13`
+(`Afterword`) y `cap_14` (`Bonus Chapter`), que son las otras tres unidades sin numerar de
+este mismo libro.
+
+> **Y LA PREDICCION QUE DEJO ESCRITA ANTES DE SABERLO, porque una prediccion despues no
+> vale nada:** las ocho unidades numeradas (`cap_04` a `cap_11`, `Cap. 1` a `Cap. 8`) suman
+> **81.508 palabras** de las 108.161 del libro. **Si el rendimiento de un capitulo de
+> doctrina de este libro se parece al de Zhuo**, ese tramo es donde esta practicamente todo
+> el lote 4. **Y si `cap_04` sale tan pobre como el frente, entonces el libro es de otra
+> especie y hay que decirlo con esas palabras.**
+
+---
+
+## I.3.10. EL INFORME DEL LOTE ENTERO AL CERRAR, Y SU SALDO PEGADO
+
+*`EXTRACTOR.md` 16: **el informe de lote sigue haciendose igual al cerrar el capitulo**, y
+los dos no se pisan: **el de candidato es mi correccion, el de lote es la prueba que lee el
+fundador.** Corrido ahora, con las cuatro unidades cerradas.*
+
+    $ cat .informe_lote4.txt
+    ARRANQUE: 2026-09-11T15:36:31
+    ARRANQUE_EPOCH: 1789155391
+    N: 2
+    G: 135
+    ========
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    candidatos revisados        : 2
+    nodos en el grafo de destino: 135
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 2
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    [ENTRARIA] desplegar_marco_franqueza_radical   (desplegar_marco_franqueza_radical.json)
+    [ENTRARIA] repartir_semana_cuarenta_horas_jefe   (repartir_semana_cuarenta_horas_jefe.json)
+
+    NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+    entre hace falta python forja.py insertar, uno por vez, con su
+    veredicto escrito por vecino.
+    ========
+    CIERRE: 2026-09-11T15:37:14
+    CIERRE_EPOCH: 1789155434
+    SALIDA: 0
+
+> # **2 REVISADOS, 2 ENTRARIAN, 0 BLOQUEARIAN, 0 CAERIAN, 0 CHOCAN. 43 SEGUNDOS.**
+
+**Y EL RECUENTO INDEPENDIENTE, con total, filtrado y residuo:**
+
+    $ ls cuarentena/scott_radical_candor/*.json | wc -l   ->  2
+    $ grep -c "^\[ENTRARIA\]"   .informe_lote4.txt        ->  2
+    $ grep -c "^\[BLOQUEARIA\]" .informe_lote4.txt        ->  0
+    $ grep -c "^\[CAERIA\]"     .informe_lote4.txt        ->  0
+    TOTAL 2 = 2 + 0 + 0 -> CUADRA
+
+**`CHOCAN entre si dentro del lote: 0` ES LA CIFRA QUE EL INFORME DE CANDIDATO NO PODIA
+DAR**, y por eso los dos informes no se pisan: **mis dos candidatos no chocan entre si.** No
+era obvio: los dos salen del mismo libro, del mismo material de frente y del mismo autor.
+
+**EL LOTE 4 QUEDA ABIERTO CON DOS CANDIDATOS EN SU BANDEJA Y CERO INSERCIONES.**
+
+    $ ls cuarentena/scott_radical_candor/
+      desplegar_marco_franqueza_radical.json
+      repartir_semana_cuarenta_horas_jefe.json
+
+---
+
+# TAREA 4. LO QUE **NO** HE HECHO, DECLARADO UNO A UNO Y COMPROBABLE
+
+*El encargo lista tres prohibiciones. **No basta con no incumplirlas: hay que poder
+demostrar que no se incumplieron**, y por eso cada una va con su comprobacion pegada.*
+
+### 1. NO CORRIJO LAS DOCE ATRIBUCIONES QUE LAS `Notes` DATAN
+
+**Era propuesta mia en `H.3.3` y la ACTA 13 seccion 9 punto 4 la adjudica: es buena y no
+corre ahora**, porque esos once ficheros se van a tocar en la insercion de todas formas y
+hacerlo antes es tocarlos dos veces.
+
+    $ git status --short cuarentena/zhuo_manager/
+      (ningun fichero de la bandeja de zhuo_manager modificado en esta vuelta)
+
+**Los once ficheros siguen como estaban.** Lo unico que he hecho con ellos es **leerlos**,
+para contar atribuciones (`I.1.b`), pasos (`I.2.c`, `I.2.d`) y titulos (`I.3.8`).
+
+### 2. NO PIDO NI HAGO LA INSERCION DEL LOTE 3, NI NINGUNA OTRA
+
+`MODO_INSERCION=cuarentena` sigue vigente y **la insercion es una autorizacion del fundador,
+no un default.** La pide el auditor en su ACTA 13 seccion 9 punto 1, **no yo.**
+
+    $ git diff --stat <arranque> HEAD -- dataset/ bitacora/ config/ esquema/
+      (la comprobacion por las dos puntas va en el cierre, I.6)
+
+**No he corrido `python forja.py insertar` ni `python forja.py arista` ni una sola vez.**
+Los dos candidatos de hoy viven en `cuarentena/scott_radical_candor/` y **no hay ni una
+arista declarada que ejecutar**: mis once veredictos son `SANO`, y un `SANO` no pide arista.
+
+### 3. NO FABRICO MAQUINARIA
+
+*Cosecha 7.F, `EXTRACTOR.md` 13: **ninguna vuelta fabrica arneses, guardas ni lectores
+nuevos.** El trabajo de una vuelta de extraccion es extraer nodos.*
+
+**Las corridas de `python -c` de esta vuelta son de una sola vuelta y no se commitean como
+instrumento.** Ninguna vive en `forja.py`, ninguna tiene prueba de aceptacion, ninguna se
+vuelve a llamar. **Y lo compruebo por el unico sitio donde se veria:**
+
+    $ git status --short   (al cerrar, en I.6)
+      lo que cambia son docs/ y cuarentena/, y nada bajo src/ ni forja.py ni tests/
+
+**La TAREA 1.d no es una excepcion y el encargo lo dice con esas palabras.** El unico
+fichero de codigo que he abierto es `src/reglas_id.py`, **y lo abri para LEER las tres
+listas antes de escribir un id** (`I.3.0`), que es exactamente lo que `EXTRACTOR.md` 15
+manda hacer antes del primer id y no despues del primer rechazo.
+
+### 4. Y UNA CUARTA QUE ME IMPONGO YO, PORQUE ES LA QUE MAS CERCA ESTUVE DE ROMPER
+
+> **NO TOCO `docs/loop/PARA_ALEXIS.md`, `docs/loop/ACTA_AUDITOR.md` NI
+> `docs/loop/PROMPT_SIGUIENTE.md`** (`D.28`, `EXTRACTOR.md` 14). **Un encargo asigna
+> trabajo, no mueve una sede.**
+>
+> **Y donde estuve cerca:** `I.2.c` demuestra que el encargo me da el 554 como *el
+> denominador del lote 3* y que no lo es. **La tentacion era corregirlo donde estaba
+> escrito.** No lo he hecho: **lo escribo en mi reporte, que es mi sede, y ahi PROPONGO.**
+
+### LAS DOS SEDES QUE SI HE TOCADO, Y LAS DECLARO
+
+| sede | quien la escribe segun `EXTRACTOR.md` 14 | que he hecho |
+|---|---|---|
+| `docs/loop/REPORTE.md` | **el extractor** | **es mi sede.** Todo lo de esta vuelta vive aqui, por anexion |
+| `docs/loop/ORDEN_DE_LOTES.md` | no esta en la tabla de sedes | **correccion declarada, encargada expresamente por la TAREA 1.c.** Aniadi al final de la celda del lote 3 y **no borre una palabra** |
+| `cuarentena/scott_radical_candor/` | la bandeja de salida (`D.25`) | **dos candidatos nuevos**, cada uno por la aduana en su propio acto |
+| `.informe_lote.txt` | el testigo del reloj | **reescrito con su arranque, sus entradas y su cierre** |
+
+---
+
+# I.5. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO**
+
+*`EXTRACTOR.md` 8: se marcan **a ciegas**, y van aqui para que la relectura del auditor
+empiece por ellos. **La metrica de credito distingue una caida dentro del marcado de una
+fuera, y esa diferencia solo significa algo si el marcado se hizo antes.** Esta seccion se
+escribio **antes** de que el informe del lote cerrara y **antes** de pasar el primer
+candidato por la aduana.*
+
+**Y me llevo la leccion de la vuelta 13, que el auditor midio y yo no sabia:** de los tres
+choques de clase, **los tres cayeron dentro o al lado de lo que yo habia marcado**, y los
+tres los gane yo. **Marcar de mas no cuesta nada; marcar de menos cuesta una relectura que
+nadie hace.** Asi que esta vuelta marco **ocho**, y los ordeno por lo que costaria que
+cayeran.
+
+| # | el discutible | donde | **por donde se me cae**, dicho por mi |
+|---:|---|---|---|
+| **1** | **`cap_02` da CERO candidatos de 3.908 palabras** | `I.3.4` | si `L53` (cuatro tecnicas nombradas) mas `L77` (cinco contraposiciones) se leen juntas como un nodo de *que hace un jefe cuando no puede tirar de autoridad*, **deje sin minar la unidad mas larga del tramo**. Es el que mas cuesta si cae |
+| **2** | **`cap_01` P9, la cultura que se vuelve toxica, NO da nodo** | `I.3.5` | el texto nombra **seis escalones en orden** y el rotulo es un imperativo (`DON'T LET YOUR CULTURE BECOME TOXIC`). Si seis escalones nombrados cuentan como **etapas** y no como fines, **`D.27` los admite y ahi hay nodo** |
+| **3** | **`repartir_semana_cuarenta_horas_jefe` SI es nodo**, con `L17` entera como fuente | `I.3.6` | **solo uno de sus tres numeros lleva imperativo propio** (*block out*); los otros dos van en futuro descriptivo. Quien lea que un futuro descriptivo no es paso **tumba cuatro de mis siete pasos y con ellos el nodo** |
+| **4** | **la grafia `franqueza_radical` en vez de `candor_radical`** | `I.3.0` | **la guarda no me obliga**: ni `radical` ni `candor` estan en ninguna de las tres listas de `src/reglas_id.py`. **Es criterio mio.** Si el auditor lee que el nombre del metodo viaja tal cual, la correccion cuesta dos ficheros hoy y quince capitulos dentro de tres vueltas |
+| **5** | **el par 3 de mis veredictos NO es frontera de doctrina** | `I.3.8` | `repartir_semana_cuarenta_horas_jefe` contra `planificar_reduccion_trabajo_individual`: Zhuo dice que el trabajo propio **se reduce**, Scott le pone **quince horas fijas**. Yo digo que responden a preguntas distintas y que un directivo cumple las dos. **Quien lea que si chocan, tiene una frontera y yo no la declare** |
+| **6** | **la frontera Scott contra Dalio la declaro `PENDIENTE DE LA OTRA CASA` y no la aniado a la de la vuelta 13** | `I.3.5` | si el auditor lee que **una frontera de un solo lado igual se declara**, mi prudencia es una perdida. Y si lee que **es la misma palanca** que atar dinero a un numero, la aniadi mal por no aniadirla |
+| **7** | **el total del lote 3 lo publico con DOS lecturas y sostengo la ancha** (34 sobre 1.107, 3,07 por ciento) | `I.2.c` | quien lea que **un numerador de las actas no se puede montar sobre un denominador mio**, tiene razon en que la cifra es mestiza. **Mi defensa es que la alternativa era publicar una sola y callar la otra** |
+| **8** | **el remedio de la TAREA 1.d prueba la particion, no el criterio** | `I.1.d` | lo digo yo: **si mi filtro clasifica mal una fila, el total cuadra igual.** El residuo caza el sumando fantasma, no el criterio torcido. **Quien encargue el remedio como si cazara las dos cosas se va a llevar una sorpresa**, y prefiero decirlo yo hoy que descubrirlo en la vuelta 16 |
+
+### **Y UN NOVENO QUE NO ES MIO Y LO MARCO IGUAL, PORQUE ES EL QUE MAS PUEDE DOLER**
+
+> **EL ENCARGO ME DA EL 554 COMO *EL DENOMINADOR DEL LOTE 3* Y NO LO ES.** Lo demuestro en
+> `I.2.c` con la aritmetica del propio encargo (`554 = 497 + 57`, que son cinco unidades de
+> doce) y con mi medida de las dos carpetas (136 candidatos, 1.107 pasos).
+>
+> **Lo marco como discutible y no como caida**, porque el auditor **escribio expresamente
+> que no firmaba el total**, y porque el 554 esta bien contado sobre la bandeja. **Pero si
+> yo lo hubiera copiado, hoy habria una tabla en mi reporte con el total del lote 3 medido
+> sobre la mitad de su poblacion.** Y una tabla **si es sede que acumula**.
+>
+> **Lo pongo el ultimo porque es el unico que no depende de mi criterio: depende de una
+> medicion, y la medicion esta pegada.**
+
+### LO QUE **NO** MARCO COMO DISCUTIBLE, Y DIGO POR QUE
+
+**`cap_00` dando cero.** Es una pagina de copyright con veinticinco lineas de creditos,
+ISBN y avisos legales. **No hay lectura razonable que saque un procedimiento de ahi**, y
+marcarlo como discutible seria inflar la lista para parecer prudente. **Una lista de
+discutibles que mete lo indiscutible deja de servir para ordenar la relectura**, que es
+para lo unico que existe.
+
+---
+
+# I.6. EL CIERRE DE LA VUELTA 14
+
+## I.6.1. LAS CIFRAS DEL CIERRE, **RECOMPUTADAS AL CIERRE Y NO COPIADAS DE LA APERTURA**
+
+*`EXTRACTOR.md` 4: **el estado al cierre se mide al cierre.** Toda cifra que describa el
+estado al cerrar se RECOMPUTA si algo de la propia vuelta pudo haberla movido. **Medir
+temprano y publicar tarde sin remedir es la misma especie que citar sin mirar.***
+
+    $ python -c "import datetime;print(datetime.datetime.now().isoformat(timespec='seconds'))"
+      2026-09-11T15:38:28
+
+    $ git rev-parse --short HEAD        ->  bdd3eeb   (el commit de la frontera; el del cierre va debajo)
+    $ git rev-parse --abbrev-ref HEAD   ->  extraccion-mundo-11
+
+    $ python -c "cuenta las lineas no vacias de dataset/nodos.jsonl"        ->  135
+    $ python -c "cuenta las lineas no vacias de bitacora/VEREDICTOS.jsonl"  ->  100
+    $ ls cuarentena/zhuo_manager/*.json              | wc -l   ->  68
+    $ ls cuarentena/_insertados/zhuo_manager/*.json  | wc -l   ->  68
+    $ ls cuarentena/scott_radical_candor/*.json      | wc -l   ->   2
+
+| cifra | **apertura** (`I.0`, 14:54:44) | **cierre** (15:38:28) | ¿la movi yo? |
+|---|---:|---:|---|
+| nodos en el grafo | 135 | **135** | **NO. Cero inserciones** |
+| veredictos en la bitacora | 100 | **100** | **NO**, y mis once de hoy **no estan ahi**: viven en este reporte hasta que alguien inserte |
+| bandeja de `zhuo_manager` | 68 | **68** | **NO.** No toque un solo fichero del lote 3 |
+| archivados de `zhuo_manager` | 68 | **68** | **NO** |
+| bandeja de `scott_radical_candor` | **no existia** | **2** | **SI. Es lo unico que esta vuelta aniade al arbol de datos** |
+
+**LA COMPROBACION DE CERO INSERCIONES, POR LAS DOS PUNTAS DEL TRAMO**, que es como el
+auditor la hace y como se debe hacer:
+
+    $ git diff --stat 8db9769 HEAD -- dataset/ bitacora/ config/ esquema/
+      (vacio)
+
+**NI UNA LINEA EN LAS CUATRO SEDES DE DATO EN TODA LA VUELTA.** Y la misma prueba para la
+moratoria de maquinaria:
+
+    $ git diff --stat 8db9769 HEAD -- src/ forja.py tests/
+      (vacio)
+
+**NI UNA LINEA DE CODIGO.** El unico fichero de `src/` que abri fue `src/reglas_id.py`, **y
+para leerlo**, que es lo que `EXTRACTOR.md` 15 manda antes de escribir el primer id.
+
+## I.6.2. LAS GUARDAS
+
+*`EXTRACTOR.md` 6. Las corro yo al cerrar y pego su salida.*
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 135
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista,
+               arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie,
+               arista_rota, arista_incompleta, guiones
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python tests/test_aceptacion.py
+      total: 75 pruebas, 0 fallos, 0 errores
+
+**LAS TRES EN VERDE, corridas por mi al cerrar y no copiadas del acta.** Y el hook de
+`pre-commit`, que corre el gate y el barrido por su cuenta, **quedo en verde en `bdd3eeb`
+y vuelve a correr en el commit de cierre. No lo he saltado ni una sola vez.**
+
+## I.6.3. EL SALDO DE LA VUELTA, EN UNA TABLA
+
+| | |
+|---|---|
+| **vuelta** | **14**. Cierre de lo que la 13 dejo abierto **y apertura del lote 4** (`scott_radical_candor`) |
+| **modo** | `MODO_INSERCION=cuarentena`. **Cero inserciones**, comprobado por las dos puntas |
+| **tareas encargadas** | **4**, con la 1 y la 2 en cuatro partes cada una. **Las cuatro cerradas. Cero cola** |
+| **unidades leidas enteras** | **4**: `cap_00`, `cap_01`, `cap_02`, `cap_03`. **7.599 palabras de cuerpo** |
+| **piezas de frontera** | **31**, con su `sed` pegado, **publicadas y commiteadas ANTES de cortar** (`bdd3eeb`) |
+| **cobertura de frontera** | **122 de 122 lineas de cuerpo. Cero huecos, cero solapes, cero lineas cubiertas fuera del cuerpo** |
+| **candidatos escritos** | **2**, cada uno por la aduana **en el acto en que se escribio** |
+| **aduana** | **2 de 2 `[ENTRARIA]` al primer intento**, cero correcciones, cero vecinos levantados. Mas el informe de lote: **2 / 0 / 0 / 0** |
+| **pasos escritos** | **16** |
+| **pasos PUENTE** | **0**, con **un nexo cazado y reescrito antes de la aduana** (`I.3.7.3`) |
+| **`PASOS INVENTADOS POR CAPITULO`** | `cap_01` **0,00**, `cap_03` **0,00**, `cap_00` y `cap_02` **sin definir, denominador cero**. **Peor unidad 0,00, tope 10: el freno no se dispara**, y digo que con 16 pasos la metrica es de grano gruesisimo |
+| **veredictos escritos** | **11**, **los once `SANO`, y CERO los pidio la senial.** Tres de los vecinos viven en la bandeja, donde la aduana no puede verlos |
+| **aristas** | **0 declaradas.** Once `SANO` no piden arista, y `D.37` no se dispara: ninguna de mis dos cabezas enumera partes que existan como nodos |
+| **fronteras de doctrina** | **1 nueva, declarada `PENDIENTE DE LA OTRA CASA`**: Scott contra Dalio sobre **cuanto se expone en publico**. **Comprobada como palanca distinta de la de la vuelta 13** y por eso NO aniadida a aquella |
+| **convergencias** | **1**: `Who` y Scott prescriben lo mismo sobre **repartir material impreso para que un metodo cale** (`I.3.8`, par 8) |
+| **correcciones declaradas** | **3**: `H.3.3` (21 y 9, Osborn fuera), `ORDEN_DE_LOTES.md` (la frase de dos lecturas y la bandeja que hoy es 68), y **una mia propia dentro de la vuelta**: la afirmacion de que este libro trae `Notes`, que **fui a comprobar y es falsa** (`I.3.5`) |
+| **discrepancias declaradas y NO resueltas copiando** | **2**: el **554** que el encargo da como denominador del lote 3 y **no lo es** (`I.2.c`), y los **5 pasos** que faltan entre lo que las actas firmaron y lo que los ficheros tienen hoy |
+| **reloj** | **38 min 5 s** contra **35 min 6 s** predichos. **Dentro de banda por 31 segundos.** Y el punto que la vuelta compraba: **la subida real fue 21,41 por ciento contra el 15,21 predicho. FALTA TERMINO** |
+| **discutibles marcados** | **8 mios mas 1 que no es mio**, marcados **antes** de la aduana y **antes** del cierre del informe |
+| **paradas** | **0**, y **ninguna condicion se acerco**: las cuatro unidades de hoy declaran `Copyright Page`, `Preface`, `Introduction` y `How to Use This Book`, **y la condicion tiene por sujeto un fichero que declara `Cap. N`** |
+
+## I.6.4. LO QUE ESTA VUELTA DEJA MEDIDO, QUE ES LO QUE MAS IMPORTA
+
+*Ordenado por lo que le sirve a quien venga detras, no por el orden en que salio.*
+
+1. **EL 554 NO ES EL DENOMINADOR DEL LOTE 3.** Lo es de `cap_07` a `cap_11`. **El lote 3
+   entero son 136 candidatos y 1.107 pasos**, medidos hoy sobre las dos carpetas. La
+   aritmetica del propio encargo lo demuestra: `554 = 497 + 57`, **cinco unidades de doce**.
+2. **FALTA TERMINO EN EL MODELO DEL RELOJ.** Con `G` clavado en 135 y `N` subiendo 13,3 por
+   ciento, el reloj subio **21,4** y no **15,2**. **El coste por candidato subio un 7,1 por
+   ciento con el grafo quieto.** El reajuste exacto da `a=0,1081 b=0,2795`, **y digo que no
+   tiene grados de libertad y que un tercer punto en `N=1` no lo confirma.**
+3. **LA DISPERSION DEL INSTRUMENTO ES DEL 16,8 POR CIENTO** entre dos corridas identicas de
+   un candidato. **Ningun modelo de este reloj puede presumir de mas precision que eso.**
+4. **ESTE RECORTE NO TRAE `Notes`.** Quince unidades, ocho capitulos numerados, y ninguna es
+   `Notes`, `Index` ni `Acknowledgments`. **El instrumento que la vuelta 13 descubrio no
+   existe para el lote 4**, asi que aqui *no consta la fecha en el texto* **es respuesta
+   final y no provisional.**
+5. **EL HUECO DE 218 PALABRAS DE `BANDEJA_DE_ENTRADA.md` ES EXACTAMENTE `cap_00`.**
+   107.943 mas 218 son 108.161, **y eso cierra que la cifra de la tabla canonica SI cuenta
+   la pagina de copyright**, aunque el MANIFIESTO no le declarase palabras.
+6. **LOS OCHO CANDIDATOS DE `cap_11` APORTARON OCHO `ENTRARIA` Y CERO BLOQUEOS NUEVOS.** Los
+   nueve bloqueos del lote 3 son **los mismos nueve** de la vuelta 12, con la misma
+   descomposicion de seniales. **La cola larga la produce la monotematica, no el tamanio del
+   lote.**
+7. **EL RENDIMIENTO DEL MATERIAL DE FRENTE DE UN LIBRO ES DEL 6,45 POR CIENTO** de piezas
+   con nodo, contra el **80 por ciento** de un capitulo de doctrina. **Es la cifra que dice
+   que esperar de `cap_12`, `cap_13` y `cap_14` de este mismo libro.**
+8. **EL BARRIDO POR OBJETO NO ES COMPLETO.** Es mejor que el de palabra para no perderse en
+   ruido, **pero depende de que yo nombre bien el objeto del vecino, que es lo que no se
+   antes de abrirlo.** Un barrido de control por palabra me cazo **tres vecinos** que el de
+   objeto no dio, y uno de ellos era **el mas cercano de mi candidato 1**.
+
+## I.6.5. LO QUE PROPONGO EN MI SEDE, SIN ADJUDICARME NADA
+
+*`EXTRACTOR.md` 14: **el extractor propone en su reporte; no se adjudica a si mismo.** No
+escribo `PARA_ALEXIS.md` y no toco `PROMPT_SIGUIENTE.md` ni `ACTA_AUDITOR.md`.*
+
+| # | propuesta | por que no la decido yo |
+|---:|---|---|
+| 1 | **corregir el 554 alli donde este escrito como denominador del lote 3** | esta en `PROMPT_SIGUIENTE.md`, **que no es mi sede**. Lo mido aqui, lo declaro aqui, y quien escriba en esa sede lo corrige |
+| 2 | **localizar los 5 pasos que faltan** con un `git log -p` sobre `cuarentena/zhuo_manager/` anterior a `3ad8998` | es trabajo que ningun encargo asigna. **Digo la via mas barata y no la corro** |
+| 3 | **decidir la grafia de `Radical Candor` en los ids del lote 4** | la guarda no obliga: **es criterio.** Escribi `franqueza_radical` y **lo marque discutible antes de saber si acierto**. La correccion cuesta dos ficheros hoy |
+| 4 | **si los coeficientes del reloj se reajustan** | el modelo vive en este reporte y no en el codigo, **pero un reajuste con cero grados de libertad no es una medida.** Dejo la prediccion de `N=76` escrita para que el proximo punto decida |
+| 5 | **la frontera Scott contra Dalio, para el dia que esta casa mine a Dalio** | no pide decision hoy: **pide que no se pierda.** Queda con su linea abierta y su cita |
+| 6 | **el aviso sobre el limite del remedio de la TAREA 1.d** | el residuo prueba la particion, **no el criterio**. Lo digo hoy, que no me cuesta nada, para que nadie lo encargue esperando lo que no da |
+
+## I.6.6. EL SELLO DE LA VUELTA 14
+
+| | |
+|---|---|
+| **abre** | `8db9769`, sello de lo pendiente, 14:54 aprox. |
+| **frontera commiteada antes de cortar** | `bdd3eeb` |
+| **cierra** | el commit de esta seccion, cuyo hash se lee de `git log` en el mensaje de cierre |
+| **rama** | `extraccion-mundo-11` |
+| **guardas** | las tres en verde, pegadas en `I.6.2` |
+| **cero guiones largos y cero guiones medios** | comprobado a maquina sobre el reporte entero antes de cada commit |
+| **lo que queda en la bandeja del lote 4** | **2 candidatos, cero insertados** |
+| **lo que queda encargado y no hecho** | **nada.** Las cuatro tareas del encargo estan cerradas y **no declaro cola** |
+
+> ### **Y LO UNICO QUE DIRIA SI ME PREGUNTAN QUE HARIA DISTINTO**
+>
+> **Lance el informe el primero, como el encargo manda, y fue la decision que salvo la
+> vuelta**: mientras corria sus treinta y ocho minutos lei los cuatro ficheros, publique la
+> frontera y la commitee. **La vuelta 13 lo lanzo el ultimo y perdio su resultado.**
+>
+> **Lo que haria distinto es escribir los dos candidatos ANTES de leer `cap_02` entero.**
+> Los deje para el final porque necesitaban la aduana y la aduana necesitaba la maquina
+> libre, **y eso me dejo dos candidatos escritos en los ultimos minutos del turno.** Salieron
+> bien, pero **salieron con el reloj encima, que es exactamente la condicion en la que
+> `D.30` dice que se escriben los puentes.** La proxima vez el informe de lote se lanza
+> igual el primero **y los candidatos se escriben mientras corre, aceptando que su aduana
+> perturba la medida en unos segundos y declarandolo.** Un candidato escrito con calma vale
+> mas que un reloj medido al segundo.
