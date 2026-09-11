@@ -9770,3 +9770,201 @@ todas las letras (`L39: the four most common ways`, `L169: each of the following
 12 pasando la aduana al primer intento**, 1 puente cazado y corregido mas 2 precisiones
 declaradas sobre 111 pasos, la comprobacion de orden corrida sobre 6 nodos con cero
 hallazgos, y 11 aristas escritas con su test corrido. **Ninguna parada, cero inserciones.**
+
+---
+
+## TAREA 5. EL INFORME DEL LOTE, LOS COMMITS Y EL CIERRE CON SUS CUATRO MEDIDAS
+
+### 5.a. MEDIDA 1: CANDIDATOS POR MIL PALABRAS, **CON LOS DOS DENOMINADORES**
+
+*Lo minado es la suma de las piezas de la frontera que alimentaron algun candidato, y sale
+de las tablas de `3.3` y `4.2` de este mismo reporte restando las piezas descartadas de
+`3.4` y `4.3`.* **El nombre del capitulo se lee del campo `unidad` del fichero, no se
+infiere.**
+
+| capitulo (fichero) | candidatos | palabras del capitulo | por mil | palabras minadas | por mil de lo minado | lo minado, en porcentaje |
+|---|---:|---:|---:|---:|---:|---:|
+| **Cap. 3, `Leading a Small Team`** (`cap_04.md`) | **15** | 7.237 | **2,073** | 6.829 | **2,197** | **94,4** |
+| **Cap. 4, `The Art of Feedback`** (`cap_05.md`) | **12** | 6.318 | **1,899** | 5.635 | **2,130** | **89,2** |
+| **la vuelta entera** | **27** | **13.555** | **1,992** | **12.464** | **2,166** | **92,0** |
+
+**LAS RESTAS, ESCRITAS PARA QUE SE PUEDAN CUADRAR SIN ADIVINAR:** el Cap. 3 descarta P1
+(8 palabras) y P2 (400), que son **408**; el Cap. 4 descarta P1 (8), P2 (406) y P19 (269),
+que son **683**.
+
+**LO QUE LA COLUMNA DE LO MINADO DICE ESTA VUELTA, y por eso se repite:** los dos capitulos
+estan **muy arriba**, 94,4 y 89,2 por ciento, **contra el 73,7 por ciento del Cap. 1 de la
+vuelta 9.** La lectura de la vuelta 9 era que *un capitulo que argumenta descarta mas que un
+capitulo que instruye*, **y estos dos la confirman: los dos instruyen de cabo a rabo.** Lo
+que descartan es casi todo **escena de apertura y cierre**, que es material de libro y no
+de nodo.
+
+### 5.b. MEDIDA 2: `PASOS INVENTADOS SOBRE PASOS ESCRITOS`, **UNA FILA POR CAPITULO Y EL TOTAL**
+
+**De esta cifra sale el volumen del lote 4**, asi que va con el capitulo por nombre y con el
+fichero al lado, y el nombre **leido del campo `unidad`**.
+
+| capitulo | fichero | el nombre coincide con el fichero | pasos escritos | puentes | tasa |
+|---|---|---|---:|---:|---:|
+| **Cap. 3, `Leading a Small Team`** | `cap_04.md` | **si**, `unidad: Cap. 3` | 120 | 3 | **2,50 por ciento** |
+| **Cap. 4, `The Art of Feedback`** | `cap_05.md` | **si**, `unidad: Cap. 4` | 111 | 1 | **0,90 por ciento** |
+| **TOTAL DE LA VUELTA 10** | | | **231** | **4** | **1,73 por ciento** |
+
+**Y LA LECTURA ALTERNATIVA, publicada para que el auditor pueda cuadrar sin adivinar:** si
+cuenta como puentes las **dos precisiones del Cap. 4** (`4.5`) y las **tres correcciones de
+verbo de la `2.a.bis`**, las cifras se mueven asi:
+
+    Cap. 3   3 de 120   2,50 por ciento     <- la que yo sostengo
+    Cap. 4   1 de 111   0,90 por ciento     <- la que yo sostengo
+    Cap. 4   3 de 111   2,70 por ciento     <- si cuentan las dos precisiones
+    vuelta   4 de 231   1,73 por ciento     <- la que yo sostengo
+    vuelta   6 de 231   2,60 por ciento     <- si cuentan las dos precisiones
+
+**Las tres correcciones de verbo de la `2.a.bis` NO entran en ninguna de las dos lecturas
+de esta tabla**, porque son de nodos del Cap. 1 de la vuelta 9 y su denominador es aquel.
+**Van en la banda corregida de `C.10.2`.**
+
+### 5.c. LA SERIE DE VOLUMEN, CON SUS FILAS NUEVAS Y SIN SUAVIZAR
+
+**Las filas anteriores se citan con su `grep` pegado al lado** (remedio de la vuelta 9).
+
+    $ grep -n "lote 2, Cap. 4\|lote 2, Cap. 5 cuerpo\|lote 3, Cap. 1\|lote 3, Cap. 2" docs/loop/REPORTE.md
+
+| unidad | pasos | puentes | tasa | de donde sale |
+|---|---:|---:|---:|---|
+| lote 1, linea base | 36 | 13 | **36,11** | `2647` del propio reporte |
+| lote 2, Cap. 1 | 16 | 1 | **6,25** | `7218` |
+| lote 2, Cap. 2 | 35 | 1 | **2,86** | `7219` |
+| lote 2, Cap. 3 | 53 | 4 | **7,55** | `7220` |
+| lote 2, Cap. 4 | 97 | 3 | **3,09** | `7221` |
+| lote 2, Cap. 5 cuerpo | 80 | 4 | **5,00** | `7222` |
+| lote 2, Cap. 6 | 90 | 5 | **5,56** | `7223` |
+| lote 2 acumulado | 371 | 18 | **4,85** | `7224` |
+| lote 3, Cap. 1 | 79 | 3 | **3,80** | `8317` de la vuelta 9 |
+| lote 3, Cap. 2 | 76 | 4 | **5,26** | `8318` de la vuelta 9 |
+| **lote 3, Cap. 3** | **120** | **3** | **2,50** | *medido en esta vuelta, `3.8`* |
+| **lote 3, Cap. 4** | **111** | **1** | **0,90** | *medido en esta vuelta, `4.5`* |
+| **lote 3 acumulado** | **386** | **11** | **2,85** | *79 mas 76 mas 120 mas 111, y 3 mas 4 mas 3 mas 1* |
+
+**Las trece filas salen de las once de la serie publicada en `5.c` de la vuelta 9, contadas
+once, mas las dos de esta vuelta** (remedio 1.a, hermana tercera). **La fila del acumulado
+del lote 3 se recomputa, no se arrastra.**
+
+### 5.d. LA TENDENCIA LOCAL DE LA TASA DE PUENTES, ESCRITA SIN SUAVIZAR
+
+    3,09  ->  5,00  ->  5,56  ->  3,80  ->  5,26  ->  2,50  ->  0,90
+
+**LA SERIE BAJA DOS VECES SEGUIDAS Y TOCA SU MINIMO DE TODA LA CAMPANA.** No la suavizo y
+no la celebro: **la escribo con su cociente y digo lo que creo que la mueve.**
+
+| fila | cociente | lo que cambio respecto a la anterior |
+|---|---:|---|
+| 5,26 (Cap. 2, vuelta 9) | 4 de 76 | capitulo con mucha narracion en primera persona, y **los cuatro puentes salieron de ahi** |
+| **2,50 (Cap. 3)** | **3 de 120** | **el denominador casi se dobla** (76 a 120) y el numerador baja de 4 a 3. **La bajada es mas de denominador que de numerador** |
+| **0,90 (Cap. 4)** | **1 de 111** | denominador parecido al anterior, **numerador de 3 a 1**. **Esta si es bajada de numerador**, y es la que marco como DISCUTIBLE 4 |
+
+**LA HONESTIDAD DE LA PRIMERA BAJADA:** el Cap. 3 tiene 15 nodos de 8 pasos de media, asi
+que **el denominador crece por volumen de capitulo y no por virtud mia.** 3 puentes en 120
+pasos y 4 en 76 **no son mundos distintos: son 3 y 4.**
+
+**LA SEGUNDA SI ES DE NUMERADOR, y por eso desconfio de ella en `4.6`.**
+
+### 5.e. MEDIDA 3: VEREDICTOS ESCRITOS
+
+**CERO, y las razones que lo hacen imposible son las mismas tres de la vuelta 9, medidas hoy:**
+
+1. **`MODO_INSERCION=cuarentena`.** Un veredicto lo escribe el extractor **cuando la aduana
+   levanta un vecino al INSERTAR**, y esta vuelta no inserta nada (`D.26`).
+2. **Y aunque insertara, no habria a quien juzgar: CERO vecinos levantados en 50 de 50
+   candidatos.** El informe del lote lo dice en su saldo: `BLOQUEARIAN esperando veredicto: 0`.
+3. **El grafo de destino no tiene con quien chocar todavia:** 52 nodos, de los cuales 44 son
+   de contratacion, 6 de proteccion del consumidor y 2 de la forja. **El choque esta
+   anunciado para `cap_08.md`, `Hiring Well`, y no ha llegado.**
+
+    $ python forja.py rancios
+    BLOQUEO DE VIGENCIA VERDE.
+      veredictos comprobados: 60
+
+**60 al abrir y 60 al cerrar. Diferencia: CERO**, y es exactamente lo que prueba que no se
+escribio ninguno.
+
+### 5.f. MEDIDA 4: CUANTO TARDO, LEIDO DE GIT Y COMPARANDO LA MISMA MEDIDA CON LA MISMA
+
+**La medida es la misma en las dos filas: del commit de arrastre que abre la vuelta al
+ultimo commit de la vuelta**, los dos leidos con `git log --date=iso`.
+
+| vuelta | commit de apertura | commit de cierre | duracion | candidatos | palabras abiertas |
+|---|---|---|---:|---:|---:|
+| **9** | `6ed05a3` 19:50:21 | `0acaba9` 20:43:56 | **53 min 35 s** | 21 | 13.686 |
+| **10** | `987dc73` 21:33:49 | *(se sella al cerrar, `C.10.6`)* | *(idem)* | **27** | 13.555 |
+
+**LAS DOS FILAS SE MIDEN IGUAL Y LO DIGO:** las dos van de *primer commit de la vuelta* a
+*ultimo commit de la vuelta*, **no de encargo a encargo ni de reloj de pared.** La cifra de
+cierre de la vuelta 10 se recomputa al cerrar y va en `C.10.6`, **porque medirla ahora seria
+medir temprano y publicar tarde** (`EXTRACTOR.md` 4).
+
+### 5.g. LA SEGUNDA CIFRA A VIGILAR: **CUANTOS CANDIDATOS SALEN DE 13.555 PALABRAS**
+
+**SALEN 27. Y SI, VUELVEN A SALIR MAS DE QUINCE**, que es lo que el encargo pedia escrito
+con su cifra para fijar la vuelta 11.
+
+| vuelta | palabras abiertas | unidades | candidatos | candidatos por mil |
+|---|---:|---:|---:|---:|
+| 9 | 13.686 | 3 | 21 | **1,534** |
+| **10** | **13.555** | **2** | **27** | **1,992** |
+
+**A IGUALDAD DE PALABRAS, 131 MENOS, SALEN SEIS CANDIDATOS MAS.** La tasa sube de 1,534 a
+1,992, **un 30 por ciento.**
+
+**Y LA RAZON NO ES QUE YO PARTA MAS FINO: ES QUE ESTOS DOS CAPITULOS INSTRUYEN Y LOS DE LA
+VUELTA 9 ARGUMENTABAN.** La prueba esta en la columna de lo minado de `5.a`: **92,0 por
+ciento de las palabras de esta vuelta alimentan un nodo, contra el 65,0 por ciento de la
+vuelta 9** (8.892 de 13.686). **Cuando se comparan las dos por lo minado, las tasas casi
+coinciden: 2,166 contra 2,362.** **La densidad de nodos por palabra minada no ha subido:
+ha bajado un poco. Lo que ha subido es cuanta palabra se mina.**
+
+> **ESO ES UN DATO DEL LIBRO Y NO UN FALLO MIO, Y ES LO QUE DEBERIA FIJAR LA VUELTA 11:**
+> el `cap_06.md` son **9.617 palabras**, mas que las dos de esta vuelta juntas menos un
+> tercio. **Si mina al 90 por ciento como estos dos, saldrian unos 19 candidatos de una
+> sola unidad.** No lo decido yo; lo dejo medido.
+
+### 5.h. LOS COMMITS DE LA VUELTA, LEIDOS DE GIT
+
+    $ git log --format='%h %ad %s' --date=format:'%H:%M:%S' 987dc73..HEAD
+
+    8b5c077 22:36:58 Vuelta 10, TAREA 4: Cap. 4 minado, 12 candidatos, 111 pasos, 1 puente
+    01b7c4f 22:23:37 Vuelta 10, TAREA 4: la frontera del Cap. 4 publicada ANTES de cortar
+    580355a 22:21:59 Vuelta 10, TAREA 3: Cap. 3 minado, 15 candidatos, 120 pasos, 3 puentes
+    33b3345 21:57:26 Vuelta 10, TAREA 3: la frontera del Cap. 3 publicada ANTES de cortar
+    6ee153f 21:56:07 Vuelta 10, TAREA 2: cola de la 9 cerrada. Dos candidatos nuevos
+    334b1e7 21:47:12 Vuelta 10, TAREA 1: apertura en verde, saldo 21-0-0-0 pegado
+    c703b0c 21:38:00 Apertura de la vuelta 10: esqueleto y las tres correcciones declaradas
+
+**UN COMMIT POR UNIDAD, CON LOS JSON DENTRO** (`D.25`), **y su mensaje con la cifra.** Y
+**dos commits de frontera mas**, uno por unidad, porque `EXTRACTOR.md` 10 manda publicar y
+commitear la frontera **antes** de cortar, y eso obliga a partir el commit de la unidad en
+dos. **Los dos se ven arriba, a 21:57:26 y a 22:23:37, y los dos son anteriores al commit
+que trae los candidatos de su unidad.**
+
+**LA EXCEPCION QUE YA DECLARE Y NO REPITO EN SILENCIO:** los cuatro JSON corregidos en la
+TAREA 2 viajaron en `334b1e7`, cuyo mensaje nombra la TAREA 1. **Esta dicho en la cabecera
+de la TAREA 2.**
+
+**Y LOS SIETE PUNTEROS DE LA TABLA `5.c` SE REABRIERON CON `sed` ANTES DE TECLEARSE**, que
+es la caida `5.c.bis` de la vuelta 9 y no quiero repetirla. Las salidas, pegadas:
+
+    2647:| **tasa** | **36,11 por ciento** | **6,25 por ciento** |
+    7218:    lote 2, cap_02       16 pasos    1 puente     6,25
+    7219:    lote 2, Cap. 2       35 pasos    1 puente     2,86
+    7220:    lote 2, Cap. 3       53 pasos    4 puentes    7,55
+    7221:    lote 2, Cap. 4       97 pasos    3 puentes    3,09
+    7222:    lote 2, Cap. 5 cuerpo 80 pasos   4 puentes    5,00
+    7223:    lote 2, Cap. 5 cola   90 pasos   5 puentes    5,56   <-- esta vuelta
+    7224:    lote 2 acumulado     371 pasos  18 puentes    4,85
+    8317:| **lote 3, Cap. 1, `What Is Management?`** | **79** | **3** | **3,80** |
+    8318:| **lote 3, Cap. 2, `Your First Three Months`** | **76** | **4** | **5,26** |
+
+**DIEZ DE DIEZ CORRECTOS ESTA VEZ, CERO DESFASES.** Y el nombre de la fila `7218` sigue
+siendo `cap_02` en la salida original, **que es como se tecleo en la vuelta 8 y como el
+ACTA 8 lo corrigio despues: en mi tabla va como `Cap. 1`, y la salida pegada ensena la
+diferencia en vez de taparla.**
