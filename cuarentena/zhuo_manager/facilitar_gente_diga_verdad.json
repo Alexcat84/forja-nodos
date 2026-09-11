@@ -1,0 +1,38 @@
+{
+  "id": "facilitar_gente_diga_verdad",
+  "titulo": "Facilitar que la gente te diga la verdad cuando ya tienes autoridad",
+  "denominaciones": {
+    "nombre_largo": "El caso de la revision en la que nadie discrepo, las preguntas con las que se detecta la dinamica, y las contramedidas con sus frases",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "people treat you differently"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tu equipo ha crecido mas alla del punto en que conoces a todos personalmente, y la gente que no te conoce bien te ve en una posicion de autoridad.",
+  "entregable_esperado": "Una relacion en la que la gente te dice la verdad fea y te desafia cuando cree que te equivocas.",
+  "pasos_accionables": [
+    "Cuenta con el caso, porque es la senal de que ya te esta pasando. La autora dio su opinion a tres disenadores en una revision, pregunto si habia dudas o comentarios sobre lo que habia dicho, todos negaron con la cabeza, y ella salio pensando que habia sido una reunion buena y productiva. Mas tarde uno de sus reportes directos le conto que el equipo no se sentia bien con la revision porque no estaban de acuerdo con su opinion, y cuando ella pregunto por que no se lo habian dicho, la respuesta fue que se sentian intimidados.",
+    "Quedate con lo que ella aprendio: no importa como te veas tu. Cuando la gente no te conoce bien y ve que estas en una posicion de autoridad, es menos probable que te cuente la verdad fea o que te desafie cuando cree que te equivocas, aunque tu quieras que lo haga.",
+    "Cuenta con los motivos que el libro nombra: pueden pensar que es tu prerrogativa decidir; pueden no querer decepcionarte o que pienses mal de ellos; o pueden estar intentando hacerte la vida mas facil no cargandote con problemas nuevos ni robandote tiempo.",
+    "Manten la conciencia de esa dinamica en tus interacciones y hazte las preguntas que el libro pone: se estan tomando tus sugerencias como ordenes? Estan sonando tus preguntas como juicios? Estas suponiendo que las cosas van mejor de lo que van porque no te estan contando la historia completa?",
+    "Aplica la primera contramedida: subraya que das la bienvenida a las opiniones discrepantes, y premia a quienes las expresan.",
+    "Aplica la segunda: asume tus errores y recuerdale a tu equipo que eres humano, igual que todos los demas.",
+    "Aplica la tercera: usa un lenguaje que invite a la discusion, como puede que esto este totalmente equivocado, asi que dime si no estas de acuerdo, mi opinion es que.",
+    "Aplica la cuarta: pide consejo directamente, con la pregunta que el libro escribe, si tu fueras yo, que harias en esta situacion?"
+  ],
+  "resumen_teorico": "Es el segundo contraste entre dirigir equipos pequenios y grandes, y el unico del bloque cuyo objeto es la percepcion que otros tienen de ti. Lo que lo hace procedimentable son dos inventarios propios del libro: las preguntas con las que se detecta la dinamica y las contramedidas, dos de ellas con su frase literal. El caso de la revision va dentro y no a nodo propio (manual seccion 3.5) porque su valor no es la anecdota sino el sintoma: silencio en la sala que significa lo contrario de lo que parece. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se usan estas contramedidas, ni como se comprueba si han funcionado.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "reemplazarse_trabajo_propio",
+  "titulo": "Buscar constantemente quien te reemplace en lo que haces hoy",
+  "denominaciones": {
+    "nombre_largo": "La regla del pulgar de la interseccion, el caso de la reunion de los lunes que se delego por accidente, y por que se delega incluso lo que haces mejor",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "aim to put yourself out of a job"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "De forma continua, y con mas motivo cuando te notes apegado a una tarea porque te da sensacion de pericia, de control o de identidad.",
+  "entregable_esperado": "Cada pieza de tu trabajo que otro puede hacer igual o mejor, entregada, y tu tiempo puesto en la interseccion de lo mas importante para la organizacion y lo que solo tu puedes hacer mejor que nadie.",
+  "pasos_accionables": [
+    "Parte de aquello en lo que estan de acuerdo los mejores directivos que la autora conoce: hacer crecer grandes equipos significa que estas constantemente buscando maneras de reemplazarte en el trabajo que estas haciendo ahora.",
+    "Cuenta con la cuenta que lo sostiene: si respondes de resolver un problema y puedes encontrar o formar a alguien que lo haga igual de bien que tu, o idealmente mejor, entonces tu equipo entero se vuelve mas capaz y tu personalmente puedes asumir mas.",
+    "Cuenta tambien con por que cuesta en la practica: tendemos a encarinarnos con lo que hacemos, porque nos gusta la tarea en si o por la sensacion de pericia y de control que nos da.",
+    "Reconoce el sintoma en el caso que la autora cuenta contra si misma: llevaba cada lunes una reunion de diseno de toda la empresa, que habia ideado cuando el equipo era pequenio, y estaba orgullosa de ese ritual semanal, y ademas le gustaba estar al mando y ver el fruto de su trabajo.",
+    "Recuerda que el objetivo de ser directivo no es satisfacer tu propio ego, sino mejorar los resultados de tu equipo. Ella habia montado la reunion porque vio la necesidad y penso que nadie mas lo haria, y anios despues eso ya no era cierto: habia muchos lideres nuevos que podian llevarla.",
+    "Cuenta con el desenlace, porque es la prueba: ella la delego por accidente, pidiendo a unos companieros que la sustituyeran durante su permiso parental, y al volver la reunion funcionaba mejor que cuando la dejo, con los ponentes mas preparados, el contenido mejor organizado y hasta las presentaciones mas divertidas. Se sentia atada a ella porque se habia vuelto un habito, incluso parte de su identidad, y en su ausencia los organizadores le dieron vida nueva.",
+    "Aplica la regla del pulgar de la delegacion: gasta tu tiempo y tu energia en la interseccion de lo que es mas importante para la organizacion y lo que tu eres unicamente capaz de hacer mejor que nadie.",
+    "Extrapola de ahi lo que el libro extrapola: cualquier cosa que tu reporte pueda hacer igual de bien o mejor que tu, deberias delegarla.",
+    "Busca ademas a quien lo hace mejor que tu, aunque sea tu quien tenga la idea. Cuando unos reportes propusieron reforzar las relaciones dentro del equipo con comidas de grupo, sesiones de aprendizaje o circulos de mentoria, a ella le encantaron todas las sugerencias pero reconocio que no era su fuerte, asi que pidio al directivo que habia abierto la discusion, a quien le encantaba conocer gente y juntar grupos, que se encargara de decidir que hacer. Una de sus ideas, un encuentro mensual los miercoles por la noche, se hizo tan popular que salio del equipo y se convirtio en una cita habitual de la comunidad local de diseno.",
+    "Delega tambien las cosas que tu haces mejor que tus reportes, salvo que caigan en el cubo de las prioridades mas importantes o que no creas que estan preparados para tener exito, y entrenales por el camino. Que ella tenga mas practica en conversaciones dificiles no significa que tenga que dar ella todos los mensajes duros: es mejor que todos mejoren colectivamente sus habilidades con el tiempo.",
+    "Trata eso como lo que es, un intercambio clasico de corto contra largo plazo: si tu reporte te trae un problema que tu puedes resolver facil, cuesta resistirse a decir ya me ocupo yo, pero como dice el proverbio, da un pez a alguien y le das de comer un dia, ensenale a pescar y le das de comer toda la vida."
+  ],
+  "resumen_teorico": "Es el cuarto principio de delegacion y el que da la regla operativa del capitulo: la interseccion de lo importante para la organizacion y lo que solo tu haces mejor. De esa regla salen por extrapolacion los dos criterios siguientes, lo que otro hace igual o mejor y lo que tu haces mejor pero se puede ensenar, y el libro escribe la extrapolacion, no la deduzco yo. El caso de la reunion de los lunes va dentro (manual seccion 3.5) y va entero porque contiene la prueba experimental: ella se ausento y la reunion mejoro. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se elige a quien se delega, ni cuanto entrenamiento hace falta, ni como se mide si el relevo funciono.",
+  "atribuciones": [
+    {
+      "cifra": "intenta doblar tu capacidad de liderazgo cada anio",
+      "autor": "un amigo de Julie Zhuo, citado por ella como regla del pulgar",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

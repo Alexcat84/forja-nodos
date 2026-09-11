@@ -1,0 +1,47 @@
+{
+  "id": "decidir_directivo_no_encaja_papel",
+  "titulo": "Decidir que hacer cuando un directivo de tu equipo no da la talla del papel",
+  "denominaciones": {
+    "nombre_largo": "El coste que se paga y quien lo paga, la pregunta que aclara si volverias a contratarle, y el caso del equipo que crecio mas que su directivo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "what to do when a manager struggles"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando uno de los directivos de tu equipo no esta cumpliendo las expectativas de su papel, y tu primer impulso es apoyarle y ayudarle a superarlo.",
+  "entregable_esperado": "Una decision tomada sobre si ese directivo sigue en el papel, contestada la pregunta de si volverias a contratarle con el puesto abierto.",
+  "pasos_accionables": [
+    "Reconoce que tu primer impulso no esta equivocado: apoyarle y ayudarle a superarlo es parte del trabajo, porque delegar bien incluye reconocer que tus reportes, como tu, van a cometer errores y a dudar de si mismos, y a menudo lo mejor que puedes hacer es creer en ellos. Si el liston es la perfeccion, nadie va siquiera a intentarlo.",
+    "Cuenta con que la respuesta completa es mas matizada: el trabajo de un directivo es ser un multiplicador positivo para su equipo, y cuando no lo es los costes son altos. Los proyectos tardan mas porque se mete cuando no toca, los resultados son malos porque decide mal, o se acumulan las quejas porque su gente no recibe lo que necesita.",
+    "Mira tambien el caso en el que no esta empeorando las cosas activamente y aun asi frena al equipo: puede apagar fuegos pero no ayuda al equipo a volverse menos inflamable; puede cubrir puestos pero no atraer al mejor talento; o necesita mas entrenamiento del que tu tienes tiempo de darle.",
+    "Reconoce el caso tipico de una organizacion que escala deprisa: los equipos nuevos se forman casi de la noche a la manana, y al principio son pequenios y apaniados, asi que el directivo que se contrata se espera que lleve un punado de personas y unos pocos proyectos especulativos. Dos o tres anios despues, algunos de esos proyectos han triunfado y sus equipos han crecido deprisa, y aquel directivo, perfecto para un equipo temprano, esta lidiando ahora con los retos de liderar un grupo mucho mayor.",
+    "Plantea la pregunta que de verdad tienes delante, que no es si crees en el: cuanto va a tardar en llegar donde tiene que llegar, y como va a afectar eso al equipo mientras tanto.",
+    "Ten delante el recordatorio de que la meta final de la direccion es conseguir mejores resultados, y que cuando alguien no encaja bien en su papel hay un coste. Preguntate entonces si prefieres pagarlo tu haciendo un movimiento dificil, o pasarselo a los demas miembros del equipo y a los clientes.",
+    "Usa la pregunta que aclara, que el libro recibio de un amigo: supon que el puesto estuviera abierto, preferirias volver a contratar a tu lider actual o apostar por otra persona?",
+    "Deja que esa pregunta te centre en lo que de verdad importa. La autora estaba preocupada por docenas de detalles, como se sentiria la persona, si le estaba dando suficiente opinion, el trastorno que pasarian los demas, cuando la pregunta mas importante era que va a hacer que el equipo tenga mas exito en los proximos anios.",
+    "Si la respuesta es que no volverias a contratarle, haz el movimiento. El cambio es duro, pero confia en tus instintos."
+  ],
+  "resumen_teorico": "Es el tercer principio de delegacion y el unico del capitulo cuyo resultado puede ser sacar a alguien de su puesto. Lo que lo hace procedimentable es la pregunta del puesto abierto, que es una vara ejecutable y no una impresion, mas la lista de formas concretas en que un directivo frena a su equipo sin empeorarlo, que es lo que permite reconocer el caso. El caso del equipo que crecio mas que su directivo va dentro (manual seccion 3.5) y es el que explica por que esto ocurre sin que nadie haya hecho nada mal. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuanto tiempo se da antes de decidir, ni como se lleva la conversacion, ni adonde va la persona despues.",
+  "atribuciones": [
+    {
+      "cifra": "el subordinado hizo un mal trabajo, y la reaccion de mi colega fue que tiene que cometer sus propios errores, que asi es como aprende; el problema es que la matricula del subordinado la pagan sus clientes, y eso esta absolutamente mal",
+      "autor": "Andy Grove, citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

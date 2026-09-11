@@ -1,0 +1,55 @@
+{
+  "id": "alinear_prioridades_reporte_directivo",
+  "titulo": "Alinear con cada reporte lo que mas importa en vez de pedirle un parte",
+  "denominaciones": {
+    "nombre_largo": "Por que el traspaso de informacion en la reunion individual es mala practica, y las preguntas con las que se crea la vision compartida",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "two heads, one shared vision"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tus reportes son a su vez directivos con sus propias listas largas y ya no es realista que conozcas el detalle de su dia a dia.",
+  "entregable_esperado": "Tu y tu reporte viendo lo mismo en lo mas importante: las prioridades del momento, y el alineamiento en personas, proposito y proceso.",
+  "pasos_accionables": [
+    "Quitate la idea de que un directivo solo puede ser eficaz si sabe todo lo que esta pasando, que es lo que la autora creia al empezar, cuando usaba las reuniones individuales para pedir partes de situacion y repasar el trabajo, los debates del momento y los plazos de la semana siguiente.",
+    "Cuenta con por que eso es mala practica: las reuniones individuales no son para beneficio del directivo, sino para lo que le sea util a la otra persona, y ademas no es realista esperar que conozcas todos los detalles del dia a dia de tu reporte, sobre todo segun crece tu equipo y tus reportes son directivos con sus propias listas largas.",
+    "Espera en cambio lo que el libro dice que si hay que esperar: que veais lo mismo en lo que mas importa.",
+    "Preguntate lo primero: cuales son las mayores prioridades ahora mismo para nuestro equipo?",
+    "Habla de esas prioridades con tus reportes y discutid que papel podrian jugar ellos. Si la empresa esta en medio de ejecutar una estrategia nueva, habla de por que esta pasando y de como van a verse afectados vuestros equipos; si hay un lanzamiento inminente que te quita el sueno, discutid como puede cada uno poner de su parte para que salga bien.",
+    "Cubiertas esas prioridades de arriba, preguntate lo segundo: estamos alineados en como pensamos sobre las personas, el proposito y el proceso?",
+    "Baja un nivel en lo de las personas: sabe tu reporte que te importa a ti cuando se trata de construir equipo? Entiende lo que esperas de el como entrenador de sus propios reportes? Veis lo mismo sobre quienes de su equipo lo estan bordando y quienes no cumplen las expectativas?",
+    "Recuerda que las personas van antes que los proyectos. La autora cuenta que llevo a una revision un parte desalentador, con lanzamientos que no habian ido bien y el equipo agotado, y que su jefe corto el ruido con una pregunta: hay mucho en marcha, pero lo que mas me interesa es el equipo, sentimos que tenemos a las personas adecuadas en los problemas adecuados?",
+    "Alineaos tambien en el proposito, es decir, en por que estais haciendo lo que haceis y a que se parece el exito. Las tareas, reuniones y correos de esta semana seran motas perdidas en la arena del tiempo: cual es el proposito mayor detras de ellas? Por que te levantas cada manana y vienes a trabajar? Que sera distinto en el mundo si tu equipo consigue sus metas?",
+    "Habla del proposito constantemente con tus reportes, porque eso lo hace mas vivido en la cabeza de todos, y cuando la vision esta clara las acciones correctas tienden a seguir.",
+    "Alineaos por ultimo en el proceso: estan tus reportes estableciendo procesos sanos para sus equipos? Sea consejo sobre como presentar ideas nuevas, buenas practicas para comunicar avances importantes o discusiones sobre que hacer y que no en las reuniones, los reportes de la autora le dicen que siempre que hablan de como sacar mejor las cosas adelante les parece tiempo bien usado."
+  ],
+  "resumen_teorico": "Es el segundo principio de delegacion del capitulo y el que reemplaza una practica corriente por otra: en vez del parte de situacion, el alineamiento en lo importante. Su inventario propio es doble y explicito: las preguntas que se hace el directivo, y los tres campos del alineamiento, personas, proposito y proceso, cada uno con sus propias preguntas de segundo nivel escritas por el libro. Esa segunda capa es lo que hace la diferencia entre un nodo y una postura, porque es lo que se ejecuta. El caso de la pregunta del jefe va dentro (manual seccion 3.5) porque es el ejemplar de que las personas van antes que los proyectos. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se revisa el alineamiento, ni que se hace cuando no lo hay.",
+  "atribuciones": [
+    {
+      "cifra": "el unico rasgo que hizo de la especie humana la mas exitosa del mundo es que podemos compartir la misma vision en nuestras cabezas, lo que ayuda a que hasta completos desconocidos trabajen juntos: controlamos el mundo basicamente porque somos los unicos animales que pueden cooperar de forma flexible en numeros muy grandes",
+      "autor": "Yuval Noah Harari, historiador, en su libro Sapiens, citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto"
+    },
+    {
+      "cifra": "si quieres construir un barco, no reunas a los hombres para juntar madera, repartir el trabajo y dar ordenes; en vez de eso, ensenales a anhelar el mar vasto e infinito",
+      "autor": "Antoine de Saint Exupery, atribuida y citada por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: el propio libro dice que es una frase atribuida"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

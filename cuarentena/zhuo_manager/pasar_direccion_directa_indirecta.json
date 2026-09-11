@@ -1,0 +1,37 @@
+{
+  "id": "pasar_direccion_directa_indirecta",
+  "titulo": "Pasar de dirigir directamente a dirigir a traves de otros directivos",
+  "denominaciones": {
+    "nombre_largo": "La cuenta de horas que hace imposible la direccion directa a cierta escala, y lo que se pierde y se gana al poner directivos debajo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "direct to indirect management"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando el equipo crece mas alla del punto en que puedes tener relacion personal con cada uno. A la autora le paso al pasar de ocho reportes.",
+  "entregable_esperado": "Directivos contratados o desarrollados debajo de ti, con poder real para decidir sin tu aportacion.",
+  "pasos_accionables": [
+    "Reconoce lo que si puedes con un equipo de cinco personas: desarrollar una relacion personal con cada individuo en la que entiendes los detalles de su trabajo, que le importa y en que es bueno, y quiza hasta las aficiones que disfruta fuera de la oficina.",
+    "Haz la cuenta que hace imposible eso a otra escala. Si tu equipo es de treinta personas no puedes dirigirlos a todos directamente, al menos no en el mismo grado: si hicieras reuniones individuales semanales de treinta minutos con todos, solo eso serian quince horas, alrededor de media semana laboral; anadele el tiempo de seguir las tareas que salgan de esas conversaciones y apenas podrias hacer nada mas.",
+    "Fijate en tu propia senal de saturacion. A la autora le llego pasando de ocho reportes, cuando empezo a sentir que no tenia horas suficientes en el dia para apoyar bien a todos mientras pensaba ademas en contratar, en asegurar trabajo de calidad y en contribuir a la estrategia de producto.",
+    "Contrata o desarrolla directivos debajo de ti, que es lo que acaban haciendo los directivos de equipos que crecen.",
+    "Cuenta con lo que eso significa y no lo descubras despues: quedas mas lejos de la gente y del trabajo sobre el terreno; sigues siendo responsable de los resultados de tu equipo pero no puedes estar en todos los detalles; se tomaran decisiones sin tu aportacion; y las cosas se haran de forma distinta a como tu las harias personalmente.",
+    "Cuenta con que al principio eso desoriente, como si estuvieras perdiendo control, y apodera a tus lideres igualmente, porque es una necesidad.",
+    "Trata el equilibrio entre profundizar en un problema y dar un paso atras confiando en que otros se ocupen como lo que el libro dice que es: uno de los mayores retos de dirigir a escala."
+  ],
+  "resumen_teorico": "Es el primero de los contrastes entre dirigir equipos pequenios y grandes, y el unico de los cinco que trae una cuenta con numero, que es lo que lo salva de ser descripcion: treinta personas por treinta minutos son quince horas, media semana. Sin esa cuenta, no puedo dirigirlos a todos seria una afirmacion sin vara. El umbral de los ocho reportes es de la autora sobre si misma y va escrito como tal, no como regla. El paso 5 esta entero porque el libro nombra una a una las cuatro consecuencias de poner directivos debajo, y es un inventario de objetos y no de metas. Lo que el libro NO dice, y por eso no esta escrito aqui, es a cuantos reportes hay que parar, ni como se elige entre contratar un directivo y desarrollarlo.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

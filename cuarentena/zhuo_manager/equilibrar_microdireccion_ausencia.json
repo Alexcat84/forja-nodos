@@ -1,0 +1,38 @@
+{
+  "id": "equilibrar_microdireccion_ausencia",
+  "titulo": "Equilibrar la microdireccion y la ausencia al delegar",
+  "denominaciones": {
+    "nombre_largo": "Los dos extremos con las senales por las que se reconoce cada uno, por que cada persona necesita cosas distintas, y por que no lo sabes en el momento",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "the tightrope act of great delegation"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Siempre que tengas que decidir si te metes tu o das un paso atras y confias en otro.",
+  "entregable_esperado": "Un reparto que no cae en ninguno de los dos extremos, ajustado a cada persona y a donde esta cada parte del trabajo.",
+  "pasos_accionables": [
+    "Ten clara la definicion de delegar que el libro usa: el arte de saber cuando meterte tu y cuando dar un paso atras y confiar en otros. El equilibrio es dificil de sostener, como cruzar la cuerda floja con los ojos vendados.",
+    "Reconoce el primer extremo, el microdirectivo: pides a tus reportes que te consulten cada decision, estas constantemente preguntando como van las cosas y metiendote en la minucia de las tareas, y tienes fama de rondar por detras de las mesas dando tu opinion sobre lo que hay en las pantallas.",
+    "Cuenta con el coste de ese extremo aunque consigas resultados: tu estilo asfixia. La gente con talento se va porque no soporta trabajar contigo, no siente que le des confianza ni espacio para operar, y no esta aprendiendo porque no tiene ocasion de resolver problemas por su cuenta.",
+    "Reconoce el otro extremo, el directivo ausente: algunos de tus reportes agradecen la independencia, pero la mayoria desearia mas apoyo, y cuando las cosas se ponen feas el equipo se siente como en tierra de nadie, un sitio sin reglas porque no hay sheriff en el pueblo.",
+    "Cuenta con el coste de ese: tus manos estan impolutas porque rara vez te remangas y bajas al detalle, no tomas decisiones dificiles ni empujas las cosas por iniciativa propia, y con el tiempo pierdes credibilidad como lider porque no haces gran cosa. Y tus reportes tampoco aprenden, porque no les estas entrenando ni retando.",
+    "Asume que en el mundo real rara vez estamos en los extremos, pero que si tendemos a inclinarnos hacia un lado o hacia otro segun nuestros valores. La autora, de directiva nueva, estaba del lado ausente porque a ella personalmente le disgustaba que la microgestionaran, y cuando recibio la opinion de que sus reportes querian que se implicara mas, sobrecorrigio y entonces le dijeron que se habia pasado.",
+    "Cuenta con que lo normal es inclinarte de forma distinta en aspectos distintos del trabajo segun donde este tu equipo. En una misma semana, a ella un reporte le dijo que opinaba demasiado sobre un detalle concreto de diseno, mientras otro le pidio que se implicara mas en la estrategia de otro proyecto: uno estaba seguro de lo que hacia y su implicacion le parecia agobiante, el otro no lo estaba y queria mas ayuda.",
+    "Cuenta con que en el momento no siempre sabes como lo estas haciendo. Ella ha dado un paso atras en un area pensando que iba bien, y unas semanas despues se ha dado cuenta de que no habia dejado el trabajo bien montado y de que deberia haberse quedado mas cerca del detalle."
+  ],
+  "resumen_teorico": "Abre el bloque de delegacion y es el unico nodo del capitulo cuyo entregable es no caer, en vez de hacer. Lo que lo hace procedimentable son las senales observables de cada extremo, que el libro escribe una a una y en conducta, no en adjetivos: consultar cada decision, rondar detras de las mesas, manos impolutas, no tomar decisiones dificiles. Con esas senales alguien puede mirarse y decidir de que lado esta. Los dos ultimos pasos son los limites que el propio libro pone a su consejo, que el equilibrio depende de la persona y que en el momento no lo sabes, y sin ellos el nodo prometeria una precision que el libro niega. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se corrige el rumbo una vez detectado el sesgo propio, ni cada cuanto se comprueba.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

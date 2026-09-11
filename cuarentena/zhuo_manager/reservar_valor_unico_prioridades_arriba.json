@@ -1,0 +1,39 @@
+{
+  "id": "reservar_valor_unico_prioridades_arriba",
+  "titulo": "Reservar tu valor unico para las prioridades de arriba en vez de delegarlo",
+  "denominaciones": {
+    "nombre_largo": "El valor unico que sale de tus fuerzas personales, y los patrones que caen en la interseccion de importante para la organizacion y solo tu puedes",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "what you should not delegate"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Al decidir que trozos de tu trabajo te quedas, una vez que has decidido delegar todo lo demas.",
+  "entregable_esperado": "La lista corta de lo que te quedas, sostenida sobre tu valor unico y sobre las prioridades de arriba de la organizacion.",
+  "pasos_accionables": [
+    "Para decidir lo que no delegas, considera el valor unico que eres capaz de anadir cuando se trata de las prioridades de arriba de la organizacion.",
+    "Saca parte de eso de tus fuerzas personales, como hacen los ejemplos del libro: la autora escribe bien, asi que ha usado esa habilidad durante anios para ayudar al equipo a documentar y compartir sus valores, desde redactar guias de carrera y manuales de entrevista hasta sacar notas internas sobre lecciones aprendidas construyendo productos; un colega suyo es un operador asombroso, asi que responde de los procesos mas complejos del equipo, como el reclutamiento; y su jefe es uno de los oradores mas inspiradores que conoce, asi que es la primera persona que recibe a los empleados nuevos en la acogida y les cuenta la mision y los valores de la casa.",
+    "Quedate ademas con el primero de los patrones que el libro nombra en esa interseccion: identificar y comunicar lo que importa. Tu papel tiene un alcance mas ancho, lo que significa que puedes ver una variedad mayor de trabajo y detectar patrones que tus reportes podrian no ver. Ella noto que varios lanzamientos recientes tenian elementos de diseno que intentaban hacer lo mismo pero se veian y se comportaban distinto, un boton azul oscuro y rectangular en una parte y azul claro y ovalado en otra, un boton de volver arriba de la pagina en unos sitios y abajo en otros, y eso hacia el producto mas dificil de usar porque no habia patrones predecibles; asi que reunio al equipo para establecer una biblioteca comun de patrones de diseno con la que todos trabajaran sobre las mismas piezas.",
+    "Quedate con el segundo: contratar al mejor talento. Como los candidatos potenciales suelen tener interes en hablar con lideres veteranos, tienes ventaja a la hora de encontrar y cerrar talento. Ella va a eventos del sector y habla en congresos para atraer gente, y les dice a sus reportes que si tienen un candidato que les entusiasma, ella con gusto le manda una nota o se ofrece a hablar por telefono. Su propio jefe hace lo mismo por ella.",
+    "Quedate con el tercero: resolver los conflictos dentro de tu grupo. Imagina dos proyectos distintos llevados por dos de tus reportes, los dos faltos de personal, y una persona nueva que quiere unirse a tu equipo: en cual de los dos proyectos deberia trabajar?",
+    "No pidas a tus reportes que resuelvan eso y te traigan una recomendacion, porque ninguno tiene la perspectiva completa de lo que mas importa y van a perder tiempo intentando convencerse uno al otro de por que su proyecto necesita de verdad a esa persona. La decision tiene que tomarla tu.",
+    "Asegurate de que tus lideres saben que tienen que escalarte rapido cualquier conflicto entre dos metas y cualquier caso en el que las prioridades no esten claras.",
+    "Si alguien te pregunta si delegarlo todo no te convierte en un sobrecoste, contesta lo que la autora contesta, que es otra pregunta: si delegaras hoy todo lo que haces a otra persona, crees que no quedarian mas problemas por resolver?",
+    "Cuenta con lo que ella responde a eso desde su experiencia: cada vez que ha dado un trozo de su trabajo, ha descubierto que siempre habia mas que asumir, y que mientras te siga motivando tu proposito, mientras tus aspiraciones vayan mas alla de lo que tu equipo es capaz hoy y mientras veas retos nuevos en el horizonte, hay oportunidad de tener mas impacto. A menudo eso significa hacer cosas nuevas en las que todavia no eres muy bueno, y eso resulta incomodo comparado con la pericia que tenias en lo que delegaste."
+  ],
+  "resumen_teorico": "Cierra el capitulo y es la otra mitad de la regla de la interseccion: si el nodo anterior dice que se entrega, este dice que se guarda. Lo que lo hace procedimentable es el inventario de patrones que el libro nombra uno a uno con su razon y su ejemplo, y en el tercero, el conflicto entre dos proyectos, con su prohibicion explicita de delegarlo y su motivo, que ninguno de los dos reportes tiene la perspectiva completa. Ese tercer patron es ademas el unico del capitulo que dice que NO se puede delegar, y por eso va escrito con su razon. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se identifica el valor unico propio cuando uno no lo tiene claro, ni con que criterio se resuelve el conflicto una vez escalado.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}
