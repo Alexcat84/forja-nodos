@@ -10309,3 +10309,46 @@ la nombraba por su sede: solo se la nombra ahora que existe.**
 **ESTE ES EL SALDO QUE ALEXIS LEE SI ALGUN DIA AUTORIZA LA INSERCION** (`D.26`): **50
 candidatos del lote 3, cero que caerian, cero que bloquearian, y 41 aristas escritas y sin
 declarar esperando a ese mismo acto.**
+
+## C.10.11. LAS CINCO TAREAS CERRADAS, Y EL SELLO DE LA VUELTA
+
+| tarea | que era | estado |
+|---|---|---|
+| **1** | los registros del ACTA 9 | **CERRADA** (`1.6`). Apertura en verde, remedio en uso, saldo `21/0/0/0` pegado, siete adjudicaciones leidas, columna `estado` corregida |
+| **2** | la cola de la vuelta 9 | **CERRADA** (`2.e`). Puente residual corregido, orden arreglado, cinco aristas reetiquetadas, dos candidatos nuevos, un puente mas cazado por mi |
+| **3** | el Cap. 3, `Leading a Small Team` | **CERRADA** (`3.11`). 25 piezas, 15 candidatos, 120 pasos, 3 puentes, 11 aristas |
+| **4** | el Cap. 4, `The Art of Feedback` | **CERRADA** (`4.9`). 19 piezas, 12 candidatos, 111 pasos, 1 puente, 11 aristas |
+| **5** | el informe, los commits y el cierre | **CERRADA**. Cuatro medidas en `5.a` a `5.f`, informe del lote en `C.10.10`, commits en `5.h` |
+
+**CINCO DE CINCO, que es el tope de `EXTRACTOR.md` 1.3. Cero cola declarada.**
+
+**LAS GUARDAS, CORRIDAS OTRA VEZ CON EL REPORTE YA ESCRITO ENTERO:**
+
+    $ python forja.py gate              GATE VERDE.  nodos verificados: 52
+    $ python forja.py guiones           BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py     total: 72 pruebas, 0 fallos, 0 errores
+    $ python forja.py rancios           BLOQUE DE VIGENCIA VERDE.  veredictos comprobados: 60
+    $ conteo sobre dataset/nodos.jsonl  nodos 52 nodos_siguientes 37
+    $ git status --porcelain            (vacio: ni un fichero temporal suelto)
+
+**LAS CINCO IGUAL QUE AL ABRIR. DIFERENCIA: CERO EN LAS CINCO.**
+
+**LA MEDIDA 4, YA CON SU PUNTA MEDIDA Y NO PROMETIDA:**
+
+| vuelta | apertura | ultimo commit medido | duracion | candidatos | palabras |
+|---|---|---|---:|---:|---:|
+| **9** | `6ed05a3` 19:50:21 | `0acaba9` 20:43:56 | **53 min 35 s** | 21 | 13.686 |
+| **10** | `987dc73` 21:33:49 | `3080ded` 23:05:44 | **1 h 31 min 55 s** | **27** | **13.555** |
+
+**LA MISMA MEDIDA CONTRA LA MISMA MEDIDA, las dos de primer commit a commit medido.**
+**Esta vuelta tardo 1,72 veces mas y saco 1,29 veces mas candidatos**, y la diferencia
+tiene dos nombres que digo en vez de redondear: **la TAREA 2 entera era arrastre de la
+vuelta 9**, y **el informe del lote sobre 50 candidatos costo 27 minutos de reloj**, contra
+los menos de 20 que costo sobre 21. **Sin esos dos, las dos vueltas se parecen.**
+
+> **Y LO QUE ESTA VUELTA DEJA PARA LA SIGUIENTE, medido y no opinado:** el `cap_06.md` es
+> **Cap. 5, `Managing Yourself`, 9.617 palabras**, mas que cualquiera de los dos de hoy.
+> **El lote 3 va por 5 de 12 ficheros minados y 50 candidatos en cuarentena, ninguno
+> insertado.** Y el `cap_08.md`, `Hiring Well`, **sigue siendo el que va a chocar con las
+> 44 fichas de `smart_who` del grafo**: hoy, con 50 de 50 candidatos sin levantar un solo
+> vecino, ese choque sigue sin llegar.
