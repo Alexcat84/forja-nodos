@@ -4,13 +4,21 @@
   "denominaciones": {
     "nombre_largo": "El camino del aprendiz: lo que hay que aprovechar y lo que hay que vigilar cuando te dan a dirigir una parte del equipo de tu jefe",
     "otros_idiomas": [
-      {"idioma": "ingles", "termino": "THE APPRENTICE"}
+      {
+        "idioma": "ingles",
+        "termino": "THE APPRENTICE"
+      }
     ],
     "sigla": ""
   },
   "dominio": "gestion_equipos",
   "estado": "vivo",
-  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
   "ids_alias": [],
   "nodos_previos": [],
   "nodos_siguientes": [],
@@ -21,12 +29,8 @@
     "Aprovecha que esta es normalmente la manera mas facil de pasar a ser directivo: como tu propio jefe ha estado vigilando el equipo y conoce a todos los implicados, vas a tener mas guia de la que hay en los otros caminos.",
     "Aprovecha que sabes lo que funciona y lo que no, porque has tenido una vista de primera fila de como opera tu equipo: como se llevan las reuniones, como se toman las decisiones y como son tus companieros.",
     "Aprovecha que puedes ponerte al dia rapido porque tienes contexto: a diferencia de un directivo que llega de fuera, ya entiendes el equipo, y no solo como funciona sino tambien sus metas y los proyectos en marcha. No necesitas un periodo tan largo de escuchar y aprender, y puedes empezar a ser util mucho antes.",
-    "Vigila lo raro que se hace establecer una dinamica nueva con tus antiguos pares, y en particular estas tres cosas.",
-    "La primera, hacer de entrenador: tu trabajo incluye ahora entender las metas de carrera de tus antiguos pares, que clase de proyectos encajan con sus fuerzas e intereses, en que necesitan ayuda y como van respecto a lo que se espera de ellos. No evites esas conversaciones aunque se hagan raras: busca entender que les importa a tus nuevas personas a cargo, dales opinion sobre lo que hacen bien y sobre donde podrian estirarse, y piensa en ti como un entrenador que esta ahi para apoyarlos y ayudarlos a llegar a sus metas.",
-    "La segunda, tener conversaciones duras: la relacion entre directivo y persona a cargo es distinta de la relacion entre pares, porque ahora respondes del resultado de tu equipo, incluidas todas las decisiones que se toman dentro. Si algo se interpone en que salga buen trabajo, tienes que abordarlo rapido y de frente, y eso puede significar dar a alguien una opinion dificil o tomar decisiones duras. Cuanto antes interiorices que los resultados de tu equipo son tuyos, mas facil se hace tener esas conversaciones.",
-    "La tercera, que te traten distinto o te compartan menos informacion: puede que dejen de contarte cuando estan peleando con algo, cuando estan molestos o cuando han tenido un desacuerdo con otro del equipo. Eso es normal, porque recelan de molestarte o de quedar mal, y te toca a ti trabajar mas duro para establecer una relacion de confianza.",
-    "Y vigila el equilibrio entre tu trabajo individual y la gestion, que es lo dificil: en los primeros tiempos casi todos los aprendices llevan tambien responsabilidades de contribuidor individual. El error que la autora cometio, y que dice ver cometer a practicamente todo directivo aprendiz, es seguir haciendo trabajo individual pasado el punto en que es sostenible.",
-    "No lo aprendas por las malas: en el momento en que tu equipo llegue a cuatro o cinco personas, ten ya un plan de como reducir tus responsabilidades de contribuidor individual para poder ser el mejor directivo posible para tu gente."
+    "Vigila lo raro que se hace establecer una dinamica nueva con tus antiguos pares, que es la primera de las dos cosas que este camino manda vigilar, y que el libro describe aparte con sus tres partes nombradas una a una.",
+    "Y vigila lo dificil que es equilibrar tus compromisos de contribuidor individual con la gestion, que es la segunda, y que el libro cierra con un disparador con numero: cuando tu equipo llegue a cuatro o cinco personas, ten ya el plan de como reducir ese trabajo individual."
   ],
-  "resumen_teorico": "Es la primera de las cuatro partes de la serie de los caminos, y el libro la califica de la mas facil de las cuatro transiciones. La autora la cuenta como suya: llego a directiva por aqui cuando la responsable del equipo, Rebekah, vio que hacia falta mas apoyo despues de que el equipo doblara de tamanio, y le dio una lista de nombres diciendole quienes creia que debian estar en su equipo. El aviso del final esta razonado con un caso propio y con la cifra del caso dentro: cuando el equipo llego a seis personas, la autora seguia siendo la disenadora principal de un proyecto complejo, y cada vez que pasaba algo fuera de lo ordinario no le quedaba tiempo para su propio proyecto, con lo que la calidad de su trabajo se resintio. De ahi sale el umbral que el libro si da, cuatro o cinco personas, distinto de las seis del caso: el caso ilustra la doctrina y el umbral es el de la doctrina. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se reduce el trabajo individual, a quien se le pasa ni en cuanto tiempo."
+  "resumen_teorico": "Es la primera de las cuatro partes de la serie de los caminos, y el libro la califica de la mas facil de las cuatro transiciones. La autora la cuenta como suya: llego a directiva por aqui cuando la responsable del equipo, Rebekah, vio que hacia falta mas apoyo despues de que el equipo doblara de tamanio, y le dio una lista de nombres diciendole quienes creia que debian estar en su equipo. El aviso del final esta razonado con un caso propio y con la cifra del caso dentro: cuando el equipo llego a seis personas, la autora seguia siendo la disenadora principal de un proyecto complejo, y cada vez que pasaba algo fuera de lo ordinario no le quedaba tiempo para su propio proyecto, con lo que la calidad de su trabajo se resintio. De ahi sale el umbral que el libro si da, cuatro o cinco personas, distinto de las seis del caso: el caso ilustra la doctrina y el umbral es el de la doctrina. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se reduce el trabajo individual, a quien se le pasa ni en cuanto tiempo. Las dos cosas que este camino manda vigilar se describen aparte y no dentro, porque el libro las nombra por su titulo desde otros dos caminos con la formula See description from The Apprentice: la dinamica nueva con antiguos pares desde el sucesor, y el equilibrio con el trabajo individual desde el pionero. Lo que el libro invoca por su nombre desde otro sitio es una pieza con id propio, y aqui quedan los dos pasos que la nombran."
 }

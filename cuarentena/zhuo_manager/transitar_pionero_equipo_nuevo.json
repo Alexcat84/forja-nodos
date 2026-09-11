@@ -4,13 +4,21 @@
   "denominaciones": {
     "nombre_largo": "El camino del pionero: sacar de tu cabeza lo que sabes, construir el equipo que quieres, y buscar apoyo fuera cuando eres el unico de tu especie",
     "otros_idiomas": [
-      {"idioma": "ingles", "termino": "THE PIONEER"}
+      {
+        "idioma": "ingles",
+        "termino": "THE PIONEER"
+      }
     ],
     "sigla": ""
   },
   "dominio": "gestion_equipos",
   "estado": "vivo",
-  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
   "ids_alias": [],
   "nodos_previos": [],
   "nodos_siguientes": [],
@@ -27,7 +35,7 @@
     "Vigila que puede que no tengas mucho apoyo: la vida del pionero esta llena de aventura y de soledad, y te encuentras una y otra vez solo en terreno nuevo y desconocido. Pero eso no significa que no puedas buscar ayuda.",
     "Apoyate en los dos grupos que el libro nombra: otros directivos de tu organizacion que llevan funciones relacionadas, y directivos de tu area de especialidad fuera de tu organizacion.",
     "Con los de dentro, pregunta si alguna vez lidiaron con algo parecido a lo que se te esta atragantando. Con los de fuera, un grupo de lideres en puestos similares en otros sitios te da una red de apoyo de un valor incalculable, aunque os mantengais lejos de discutir los detalles concretos de vuestro trabajo.",
-    "Y el equilibrio entre tu trabajo individual y la gestion se te aplica igual: el libro remite aqui a la descripcion del camino del aprendiz, asi que no es materia nueva sino la misma."
+    "Y lo dificil que es equilibrar tus compromisos de contribuidor individual con la gestion se te aplica igual: el libro lo nombra aqui por su titulo y remite a la descripcion del camino del aprendiz, asi que no es materia nueva sino la misma."
   ],
   "resumen_teorico": "Es la segunda de las cuatro partes de la serie de los caminos. El libro le da dos ventajas y dos cosas que vigilar, y de las dos que vigilar la segunda no la desarrolla: remite literalmente a la descripcion del aprendiz. Los dos bloques de preguntas son los que el libro escribe uno a uno, y tienen destinatario distinto, que es lo que los separa: el primero se lo hace uno a si mismo en preparacion, y el segundo tambien, pero mirando al equipo que todavia no existe. El apoyo externo esta razonado con dos casos: la autora acudia a sus amigos directivos de ingenieria en Facebook, donde el equipo de ingenieria era muchas veces mayor que el de diseno, y dice que ocho de cada diez veces la respuesta era que ya habian tenido ese problema; y un amigo suyo emprendedor jura por lo que llama formacion informal de primer ejecutivo, unas cenas informales con otros fundadores. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se hace la calibracion con el equipo, ni como se monta la red de apoyo de fuera."
 }

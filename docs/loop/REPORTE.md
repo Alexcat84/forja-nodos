@@ -8892,3 +8892,320 @@ no es la columna `estado` y el encargo acota la edicion a esa columna. **Lo decl
 diferencias en cero, remedio aceptado y en uso desde la primera pantalla, el saldo
 `21 / 0 / 0 / 0` pegado donde la vuelta 9 lo debia, las siete adjudicaciones leidas, y la
 columna `estado` corregida sin borrar nada. **Ninguna parada.**
+
+---
+
+## TAREA 2. LA COLA DE LA VUELTA 9, HECHA ANTES DE ABRIR EL LIBRO NUEVO
+
+**CERO inserciones en los cuatro puntos** (`D.26`). Todo lo que se toca aqui vive en
+`cuarentena/zhuo_manager/` y **cada fichero tocado lleva su aduana propia corrida en el
+mismo acto** (`EXTRACTOR.md` 16).
+
+**UNA NOTA DE HONESTIDAD SOBRE LOS COMMITS, porque la cuenta tiene que poder auditarse:**
+los cuatro JSON corregidos en `2.a` y `2.a.bis` y `2.b` **viajaron dentro del commit
+`334b1e7`**, cuyo mensaje nombra la TAREA 1 y no los nombra a ellos. **Lo digo aqui en vez
+de dejarlo como sorpresa del `git log`.** Y una segunda: **al reescribirlos, el volcado
+paso a `indent=2` los objetos que estaban en una sola linea** (`fuentes` y
+`otros_idiomas`), asi que el diff de `alinear_...` y `fijar_...` es mas gordo de lo que
+cambia. **No cambia ni un caracter de contenido**, y los deja con la misma forma que los
+demas ficheros de la carpeta.
+
+### 2.a. EL PUENTE RESIDUAL DE `acordar_plan_conjunto_jefe`, CORREGIDO
+
+**El auditor tiene razon y no lo discuto.** La linea, leida hoy por mi:
+
+    $ sed -n '47p' fuentes/zhuo_manager/cap_03.md
+    47: In my first few months, Rebekah was my constant sounding board. If I wasn't sure how
+        to respond to a request or if a situation came up that I felt unprepared for, she was
+        there to coach me. If you're transitioning as an apprentice, work with your manager
+        on a joint plan for getting started. Questions to discuss include:
+
+**LA LINEA TIENE DOS MITADES Y SOLO UNA MANDA.** La segunda (*If you're transitioning as an
+apprentice, work with...*) es encargo y es el paso 1. **La primera es la autora contando lo
+que Rebekah fue para ella, en primera persona del pasado, y no manda nada.** Mi paso 8 la
+convertia en encargo para el lector. **Es la especie exacta de mis puentes 5 y 7.**
+
+| | |
+|---|---|
+| **como estaba** | *Cuenta ademas con tu jefe como caja de resonancia constante en tus primeros meses: si no estas seguro de como responder a una peticion, o sale una situacion para la que no te sientes preparado, **es a quien acudes**.* |
+| **como queda** | *Y el ejemplo que el libro pone de esa guia es **de la propia autora, no un encargo para ti**: en sus primeros meses su jefa Rebekah fue su caja de resonancia constante, para cuando no estaba segura de como responder a una peticion o surgia una situacion para la que no se sentia preparada.* |
+
+**Corregido como corregi los otros: dejando dentro de quien es la experiencia.** Y el
+`resumen_teorico` lleva ahora la misma marca.
+
+    $ python forja.py informe cuarentena/zhuo_manager/acordar_plan_conjunto_jefe.json
+      ENTRARIAN sin leer nada          : 1
+      CAERIAN por una guarda           : 0
+    [ENTRARIA] acordar_plan_conjunto_jefe   (acordar_plan_conjunto_jefe.json)
+
+**SUMADO A MI CUENTA DE `D.30` DE LA VUELTA 9.** `D.30` cuenta lo escrito, no lo que
+sobrevive.
+
+### 2.a.bis. LOS DOS QUE ABREN CON `Escribe`, LEIDOS CON MI VARA Y DECLARADOS
+
+**Los dos son decision mia y los dos los declaro, cuente o no cuente.** Las dos lineas,
+leidas hoy:
+
+    $ sed -n '127p;139p' fuentes/zhuo_manager/cap_02.md
+    127: The purpose is the outcome your team is trying to accomplish, otherwise known as the
+         why. Why do you wake up and choose to do this thing instead of the thousands of
+         other things you could be doing? [...]
+    139: Finally, the last bucket is process, which describes how your team works together.
+         [...] Who should do what by when? What principles should govern decision-making?
+
+**MI LECTURA, QUE COINCIDE CON LA DEL AUDITOR EN LO PRINCIPAL Y SE SEPARA EN UN DETALLE:**
+
+1. **NO SON PUENTES Y NO LOS CUENTO.** Un puente, en las cuatro especies que esta casa ha
+   pagado, **anade algo que el libro no pone** (destinatario, periodo, responsable) **o
+   cambia de sujeto**. Aqui no pasa ninguna de las dos: el objeto es del libro
+   (*the outcome your team is trying to accomplish*, *how your team works together*), y el
+   sujeto es el lector en los dos sitios porque **el libro le esta hablando a `you` ya en
+   el original.** Es cambio de modo verbal, y una definicion que entra en un nodo sale en
+   imperativo por construccion.
+2. **Y AUN ASI CORRIJO EL VERBO EN LOS DOS, POR PRECAUCION Y SIN CONTARLO**, porque
+   `Escribe` nombra un **medio** (el papel) que el libro no pone en ninguna de las dos
+   lineas, y `D.27` restriccion 1 habla justo de medios.
+
+| fichero | como estaba | como queda |
+|---|---|---|
+| `alinear_equipo_proposito_comun` paso 1 | ***Escribe** el proposito como lo que es: el resultado que tu equipo intenta lograr, el porque* | ***Ten claro** que el proposito es el resultado que tu equipo intenta lograr, el porque, **y contesta las tres preguntas con las que el libro lo despliega*** |
+| `fijar_proceso_trabajo_equipo` paso 1 | ***Escribe** como trabaja junto tu equipo, que es lo que el proceso describe* | ***Ten claro** que el proceso es como trabaja junto tu equipo, que es lo que el proceso describe* |
+
+**Y UNA TERCERA QUE EL AUDITOR NO NOMBRO Y QUE SALIA DE LA MISMA RAIZ:** el
+`entregable_esperado` de `fijar_proceso_trabajo_equipo` empezaba por ***Escrito** quien
+hace que y para cuando*. **El libro pregunta `Who should do what by when?` y no manda
+escribirlo en ninguna parte.** Ahora dice ***Contestado** quien hace que y para cuando*.
+**La cazo el arrastre del verbo del paso 1, y esa es la razon de corregir el verbo aunque
+no lo cuente.**
+
+    $ python forja.py informe cuarentena/zhuo_manager/alinear_equipo_proposito_comun.json
+      ENTRARIAN : 1    CAERIAN : 0
+    $ python forja.py informe cuarentena/zhuo_manager/fijar_proceso_trabajo_equipo.json
+      ENTRARIAN : 1    CAERIAN : 0
+
+> **DISCUTIBLE 1, MARCADO ANTES DE SABER SI ACIERTO.** Corrijo dos pasos y un entregable
+> **y declaro CERO puentes por ellos.** Si el auditor cuenta los tres, la cifra del Cap. 1
+> de la vuelta 9 se mueve. **Mi vara es que puente es lo que anade contenido o cambia de
+> sujeto, no lo que cambia de modo verbal**; si la casa decide que el verbo que nombra un
+> medio ya es puente, **caigo aqui, y la leccion es que el modo verbal tambien cuenta.**
+
+### 2.b. LA CITA COLGADA DEL MOTIVO EQUIVOCADO, MOVIDA
+
+**Es el ORDEN y no la fidelidad, y el auditor lo dice bien.** Las tres lineas que lo
+prueban, leidas hoy:
+
+    $ sed -n '249p;259p;261p' fuentes/zhuo_manager/cap_02.md
+    249: I Want Freedom to Call the Shots
+    259: That was when I realized the root problem: None of the designers were truly sold on
+         my idea. [...] I learned then one of my first lessons of management - the best
+         outcomes come from inspiring people to action, not telling them what to do.
+    261: I Was Asked to Be a Manager
+
+**`L259` esta DENTRO de `I Want Freedom to Call the Shots` (L249 a L259) y cierra ESE
+motivo.** El motivo siguiente no empieza hasta `L261`. Mi paso 7 iba detras del paso 6, que
+es *me lo han pedido*, **asi que la leccion colgaba del motivo equivocado.**
+
+**HECHAS LAS DOS COSAS QUE EL ENCARGO PERMITIA, NO UNA:** movido detras de su motivo **y**
+anclada la leccion en su motivo dentro del propio texto del paso.
+
+| antes | ahora |
+|---|---|
+| 5. *Si la respuesta es quiero libertad para decidir...* | 5. *(igual)* |
+| 6. *Si la respuesta es me lo han pedido...* | **6.** *Y ten presente la leccion con la que el libro cierra **ESE** motivo, **el de querer libertad para decidir**: los mejores resultados salen de inspirar a la gente a actuar, no de decirle lo que tiene que hacer.* |
+| 7. *Y ten presente la leccion con la que el libro cierra **este** motivo...* | **7.** *Si la respuesta es me lo han pedido, desconfia de la trampa de la obligacion...* |
+
+    $ python forja.py informe cuarentena/zhuo_manager/contrastar_motivos_querer_gestionar.json
+      ENTRARIAN : 1    CAERIAN : 0
+    [ENTRARIA] contrastar_motivos_querer_gestionar   (contrastar_motivos_querer_gestionar.json)
+
+**Y ARRASTRA UNA CONSECUENCIA QUE DECLARO EN VEZ DE DEJARLA ROTA:** la arista
+`contrastar_motivos_querer_gestionar` **paso 6** hacia `probar_gestion_antes_decidir`, que
+la vuelta 9 escribio, **ahora apunta al paso 7.** Va corregida en la tabla de la `2.c`.
+
+#### LA LECCION, QUE VALE PARA TODO EL LIBRO Y POR ESO VA ESCRITA
+
+> **EN UN NODO CON ESTRUCTURA DE *SI LA RESPUESTA ES A, SI ES B, SI ES C*, UNA PASADA DE
+> FIDELIDAD PASO A PASO NO CAZA ESTE FALLO**, porque cada paso por separado es fiel: el 6
+> transcribia su motivo y el 7 transcribia su leccion. **Lo que falla es el ORDEN, y el
+> orden solo se ve leyendo el nodo entero de un tiron contra la seccion entera.**
+>
+> **Y la prueba de que el fallo era de montaje y no de lectura:** mi propio reporte de la
+> vuelta 9 **atribuye bien la frase** en la tabla del DISCUTIBLE 3. **La lei bien y la
+> coloque mal.**
+
+**Lo aplico como comprobacion propia en la TAREA 3 y en la TAREA 4**, y lo digo alli con su
+resultado.
+
+### 2.c. LAS CINCO QUE NO PASAN EL TEST DE `D.37`, REETIQUETADAS Y NO BORRADAS
+
+**Corri el test yo tambien, y sale lo mismo que le sale al auditor: DIEZ pasan y CINCO
+no.** El test es abrir el paso `n` de la madre y comprobar que **ahi se nombra al hijo**.
+
+**DE DONDE SALEN LAS QUINCE, con la cuenta hecha** (remedio 1.a, hermana tercera):
+**7 de la tabla `3.B.6` del Cap. 1 mas 8 de la tabla `4.6` del Cap. 2**, las dos de la
+vuelta 9. **7 mas 8 son 15.** Y 15 menos 5 son las **10** que siguen siendo de serie.
+
+| # | madre, paso | hijo | lo que dice el paso | mi veredicto |
+|---:|---|---|---|---|
+| 1 | `contrastar_motivos_querer_gestionar` **7** *(era 6, ver `2.b`)* | `probar_gestion_antes_decidir` | *y la pregunta que queda es si de verdad quieres*. **No nombra el probar** | **LECTURA `D.29`. La sostengo, y es la mas floja de las cinco** |
+| 2 | `transitar_aprendiz_primeros_meses` **1** | `acordar_plan_conjunto_jefe` | *vas a tener mas guia*. **No nombra el plan conjunto** | **LECTURA `D.29`. La sostengo** |
+| 3 | `transitar_aprendiz_primeros_meses` **2** | `listar_bueno_mejorable_equipo` | *sabes lo que funciona*. **No nombra las dos listas** | **LECTURA `D.29`. La sostengo** |
+| 4 | `transitar_jefe_nuevo_equipo_establecido` **7** | `preguntar_jefe_sonado_persona_cargo` | nombra la clase de relacion. **No enumera las preguntas** | **LECTURA `D.29`. La sostengo** |
+| 5 | `transitar_jefe_nuevo_equipo_establecido` **9** | `calibrar_normalidad_preguntas_jefe` | *escuchar, preguntar y aprender*. **No nombra la calibracion** | **LECTURA `D.29`. La sostengo** |
+
+**LAS CINCO RAZONES, ESCRITAS, porque una arista de lectura sin razon escrita no es nada:**
+
+1. **La 1 es la mas floja y no la inflo.** La sostengo porque el libro pone la respuesta a
+   esa pregunta **en el parrafo siguiente al motivo**, `L267: If you're not sure that
+   management is the right path for you, there are things you can do to get a better feel
+   for it`, y ese parrafo **es el hijo entero**. Es secuencia del libro, no parecido de
+   tema. **En la vuelta 9 escribi que si el auditor la tumbaba seria la que yo tumbaria, y
+   me reafirmo en que es la debil: lo que digo hoy es que `D.37` la tumba y `D.29` la
+   sostiene, que son dos preguntas distintas.**
+2. **La 2:** `L47` pone el mandato del plan conjunto **dentro del propio camino del
+   aprendiz**, dos lineas debajo de la ventaja que el paso 1 transcribe. El hijo es el
+   instrumento de ese camino y de ningun otro.
+3. **La 3:** las dos listas de `L61` a `L67` son **el despliegue literal** de *you have a
+   sense of what works and what doesn't*: el paso enuncia la ventaja y el hijo la ejecuta.
+4. **La 4:** el paso manda ser claro por delante *sobre la clase de relacion que te
+   gustaria construir*, y el hijo **es la lista de preguntas con las que el libro dice que
+   se construye esa claridad**, en el mismo tramo.
+5. **La 5:** el paso manda *escuchar, preguntar y aprender* y el hijo **es el que dice que
+   preguntar y como saber si estas preguntando de mas**, que es la calibracion.
+
+> **DIEZ DE SERIE MAS CINCO DE LECTURA NO ES QUINCE DE SERIE, Y ESA ES LA DIFERENCIA QUE EL
+> AUDITOR DE LA INSERCION TENDRA QUE LEER.** Las de serie se comprueban abriendo un paso;
+> **las de lectura hay que leerlas.**
+
+**NO HE BORRADO NINGUNA.** Las quince siguen escritas, cinco con etiqueta distinta.
+
+### 2.d. LA RELECTURA CONJUNTA: **LAS DOS PIEZAS SALEN, Y LAS DOS CON SU RAZON**
+
+**El criterio lo adjudica el auditor; el corte lo decido yo con el libro delante, y lo he
+decidido. SALEN LAS DOS.** Y **me separo del auditor en cual de las dos es la fuerte.**
+
+#### 2.d.1. LO QUE EL LIBRO HACE CON ELLAS, LEIDO HOY Y PEGADO
+
+    $ sed -n '135p;207p' fuentes/zhuo_manager/cap_03.md
+    135: It's tricky to balance your IC work with management. See description from
+         "The Apprentice," this page
+    207: It can feel awkward to establish a new dynamic with former peers. See description
+         from "The Apprentice," this page.
+
+**LAS DOS INVOCACIONES SON LITERALES Y SON LA MISMA FORMULA.** El libro **las nombra por su
+titulo desde otra seccion y remite a su descripcion**, que es exactamente lo que un id es:
+**una unidad direccionable por su nombre.** `L135` la invoca desde el pionero y `L207`
+desde el sucesor, **y las dos describen en el aprendiz.**
+
+#### 2.d.2. LA VARA, APLICADA PIEZA A PIEZA
+
+| | **la dinamica con antiguos pares** (`L73` a `L85`) | **el equilibrio con el trabajo individual** (`L87` a `L93`) |
+|---|---|---|
+| **titulo propio** | SI, `L73` y repetido en `L207` | SI, `L87` y repetido en `L135` |
+| **inventario propio (`D.27`)** | **SI, y es el fuerte: TRES cosas nombradas una a una**, con sus subtitulos | **NO.** El libro pone *a plan for how to scale back*, **y no pone el inventario de ese plan** |
+| **encargo propio** | SI, y en imperativo textual: *don't avoid those conversations*, *Seek to understand*, *Give them feedback*, *you need to address it swiftly and directly* | SI, y en imperativo textual: *Don't learn this the hard way [...] you should have a plan* |
+| **entregable propio** | SI: la dinamica establecida con las tres vigiladas | SI: **el plan**, y con disparador numerico |
+| **disparador propio** | SI: pasas a dirigir a quienes eran tus pares | SI, y **con numero**: *at the point in which your team becomes four or five people* |
+
+    $ sed -n '93p' fuentes/zhuo_manager/cap_03.md
+    93: [...] Don't learn this the hard way - at the point in which your team becomes four or
+        five people, you should have a plan for how to scale back your individual contributor
+        responsibilities so that you can be the best manager for your people.
+
+**LAS DOS CUMPLEN EL CRITERIO QUE YO MISMO SOSTUVE EN EL DISCUTIBLE 4** (encargo propio mas
+entregable propio) **y las dos lo cumplen con cita textual, no por parecido.**
+
+#### 2.d.3. DONDE ME SEPARO DEL AUDITOR, Y LO DIGO CON SU RAZON
+
+**El auditor escribe que la del equilibrio es la fuerte y que la de la dinamica es mas
+arguable porque sacarla reabre el DISCUTIBLE 3 en su peor forma. LEIDO CON EL TEXTO
+DELANTE, YO LO VEO AL REVES, Y POR DOS MOTIVOS:**
+
+1. **`D.27` ordena al reves que el disparador numerico.** La dinamica **trae inventario
+   propio**, que es lo que `D.27` exige para que una linea normativa sea procedimentable.
+   **El equilibrio NO lo trae**: el libro manda *ten un plan* y **no dice de que se compone
+   ese plan.** Es la cara literal del adjetivo de adecuacion: mandato sin inventario.
+   Sale igual porque trae disparador, acto y entregable textuales, **pero sale como nodo de
+   tres pasos, y uno de los tres es el aviso.**
+2. **Sacar la dinamica NO reabre el DISCUTIBLE 3, porque lo resuelve con el criterio que el
+   propio DISCUTIBLE 3 fijo y el auditor SOSTUVO.** Sale como **UN nodo**, no como cabeza
+   mas tres, **porque las tres partes no traen procedimiento por igual**: la primera trae
+   un inventario de cuatro cosas que entender mas tres encargos, la segunda una doctrina
+   mas un encargo, y **la tercera no trae encargo ninguno.** *Partir por la riqueza de las
+   partes y no por la forma es leer, y `D.19` manda leer.*
+
+> **DISCUTIBLE 2, MARCADO ANTES DE SABER SI ACIERTO.** Saco la del equilibrio **a pesar de
+> que no tiene inventario propio**, unicamente porque trae disparador con numero, acto y
+> entregable, y porque el libro la invoca por su nombre. **Si cae, la leccion es que la
+> invocacion por nombre no basta cuando el inventario falta**, y entonces la vuelta que
+> venga tendra que devolver sus tres pasos al aprendiz.
+
+#### 2.d.4. LOS DOS CANDIDATOS NUEVOS, CON SU ADUANA EN EL MISMO ACTO
+
+| # | id propuesto | piezas | pasos | la salida de la aduana, pegada |
+|---:|---|---|---:|---|
+| 22 | `establecer_dinamica_nueva_antiguos_pares` | `cap_03.md` L73 a L85 | 7 | `ENTRARIAN sin leer nada : 1` / `CAERIAN por una guarda : 0` |
+| 23 | `planificar_reduccion_trabajo_individual` | `cap_03.md` L87 a L93 | 3 | `ENTRARIAN sin leer nada : 1` / `CAERIAN por una guarda : 0` |
+
+**Los dos al primer intento, cero caidas, cero vecinos levantados.** Van 23 de 23 sin que la
+aduana levante uno solo.
+
+#### 2.d.5. UN PUENTE MAS, CAZADO AL ESCRIBIR LA PIEZA DE LA DINAMICA
+
+**Y ES DE LA MISMA ESPECIE Y DEL MISMO SITIO QUE LOS SIETE, asi que lo cuento.** Al pasar
+`L85` a paso me encontre esto:
+
+    $ sed -n '85p' fuentes/zhuo_manager/cap_03.md
+    85: Over time, however, I recognized that, yes, this was normal. My reports were wary of
+        bothering me or coming across poorly. It was up to me to work harder to establish a
+        trusting relationship (the topic of the next chapter).
+
+**`It was up to me` es de ella. Mi paso 7 del aprendiz, escrito en la vuelta 9, decia
+`te toca a ti`.** Cambio de sujeto: la especie exacta.
+
+| | |
+|---|---|
+| **como estaba** (`transitar_aprendiz_primeros_meses` paso 7, vuelta 9) | *Eso es normal, porque recelan de molestarte o de quedar mal, y **te toca a ti** trabajar mas duro para establecer una relacion de confianza.* |
+| **como queda** (`establecer_dinamica_nueva_antiguos_pares` paso 7) | *Y de esa tercera el libro no manda nada: cuenta que con el tiempo **la autora** reconocio que eso era normal, que **sus** personas a cargo recelaban de molestarla o de quedar mal, y que **le tocaba a ella** trabajar mas duro para establecer una relacion de confianza.* |
+
+**ESTE ES UN PUENTE DE LA VUELTA 9 QUE ENCUENTRO YO EN LA VUELTA 10, y mueve la punta alta
+de la banda que escribi en `0.3.c` hace dos horas.** La correccion de esa banda va en el
+cierre, `C.10.2`, **sin borrar lo que escribi antes.**
+
+#### 2.d.6. LO QUE PIERDE LA MADRE, Y LAS CUATRO ARISTAS QUE ESTO PRODUCE
+
+**`transitar_aprendiz_primeros_meses` pasa de 9 pasos a 5.** Pierde los pasos 4 a 7 (se van
+con la dinamica) y los pasos 8 y 9 (se van con el equilibrio), **y gana dos pasos que
+nombran a los dos hijos.** Su `entregable_esperado` ya nombraba las dos cosas y no se toca.
+
+| madre, paso | hijo | el test de `D.37`, corrido |
+|---|---|---|
+| `transitar_aprendiz_primeros_meses` **4**, *Vigila lo raro que se hace **establecer una dinamica nueva con tus antiguos pares**, que es la primera de las dos cosas que este camino manda vigilar* | `establecer_dinamica_nueva_antiguos_pares` | **PASA.** El paso lo nombra entero |
+| `transitar_aprendiz_primeros_meses` **5**, *Y vigila lo dificil que es equilibrar tus compromisos de contribuidor individual con la gestion [...] **ten ya el plan de como reducir ese trabajo individual*** | `planificar_reduccion_trabajo_individual` | **PASA.** El paso nombra el plan |
+| `transitar_pionero_equipo_nuevo` **10**, *Y lo dificil que es equilibrar tus compromisos de contribuidor individual con la gestion se te aplica igual: el libro **lo nombra aqui por su titulo** y remite a la descripcion del camino del aprendiz* | `planificar_reduccion_trabajo_individual` | **PASA** |
+| `transitar_sucesor_equipo_entero` **3**, *Vigila lo raro que se hace **establecer una dinamica nueva con tus antiguos pares**: el libro lo nombra aqui por su titulo y remite tambien a la descripcion del camino del aprendiz* | `establecer_dinamica_nueva_antiguos_pares` | **PASA** |
+
+**CUATRO ARISTAS NUEVAS Y LAS CUATRO PASAN `D.37`**, porque ahora el paso de la madre
+**nombra al hijo por su nombre**, que es justo lo que a las cinco de la `2.c` les falta.
+**Estan ESCRITAS y NO DECLARADAS** (`MODO_INSERCION=cuarentena`: no corro
+`python forja.py arista`).
+
+**Y LO QUE EL AUDITOR CORRIGIO DE SU PROPIA APERTURA LO CONFIRMO YO:** son **dos**
+remisiones que se vuelven arista, no tres. **El paso 2 del sucesor si acciona**, porque
+transcribe las dos ventajas ademas de remitir (`L203`), y por eso **no lo he tocado.**
+
+**LA CUENTA DE ARISTAS ESCRITAS AL CERRAR LA TAREA 2:**
+
+    de serie por D.37  : 10 (vuelta 9)  +  4 (vuelta 10, esta 2.d)   =  14
+    de lectura por D.29:  5 (reetiquetadas en la 2.c)                =   5
+    ----------------------------------------------------------------------
+    escritas, total    :                                                19
+    DECLARADAS         :                                                 0
+
+### 2.e. Estado de la TAREA 2
+
+**CERRADA, los cuatro puntos.** Un puente residual corregido y contado, dos verbos
+corregidos y declarados sin contar, un orden arreglado con su leccion escrita, cinco
+aristas reetiquetadas sin borrar ninguna, **dos candidatos nuevos que la aduana pasa al
+primer intento**, cuatro aristas nuevas que si pasan `D.37`, **y un puente mas de la vuelta
+9 cazado por mi.** **Ninguna parada, cero inserciones.**
