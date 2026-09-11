@@ -13144,3 +13144,115 @@ con `B.5` delante, donde **18 pares de dos libros del mismo tema dieron 0 de 18*
 | **veredictos** | **0**, porque la aduana no levanto ningun vecino | 2 aristas de `D.29` declaradas, 1 caso de `D.37` descartado |
 | **caidas de la aduana** | **2, las dos de regla 3**, corregidas y reintentadas en el acto | tabla `D.3` |
 | **tiempo** | **ver `E.4` al cierre** | primer commit del capitulo contra el de su cierre |
+
+---
+
+# TAREA 3. LAS CUATRO MEDIDAS, UNA FILA POR CAPITULO
+
+*La fila es la que decide el volumen del lote 4, y el freno es un numero fijo:
+**si los puentes por capitulo suben por encima del 10 por ciento, el lote
+siguiente baja un escalon.***
+
+## E.1. LA TABLA, CON LAS CUATRO MEDIDAS Y SU TOTAL
+
+**CORRECCION DECLARADA Y NO BORRADA:** las medidas de `cap_09` y `cap_10`
+anuncian su tiempo en `E.4`. **La sede correcta es esta, `E.1`**, porque al
+escribirlas todavia no sabia cuantas secciones tendria el cierre. `E.4` existe y
+es la tasa de atribucion. **Se dice en vez de retocarse** (manual principio 6).
+
+| capitulo | unidad | palabras | candidatos | **cand. por mil** | pasos | puentes | **puentes por ciento** | veredictos | frontera a cierre |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| `cap_07` | Cap. 6, Amazing Meetings | 5.285 | 16 | **3,03** | 124 | 4 | **3,23** | 7 | 34 min 56 s |
+| `cap_08` | Cap. 7, Hiring Well | 7.315 | 21 | **2,87** | 162 | 4 | **2,47** | 7 | 24 min 34 s |
+| `cap_09` | Cap. 8, Making Things Happen | 7.184 | 14 | **1,95** | 131 | 3 | **2,29** | 1 | 18 min 00 s |
+| `cap_10` | Cap. 9, Leading a Growing Team | 6.137 | 9 | **1,47** | 80 | 1 | **1,25** | 0 | 13 min 38 s |
+| **TOTAL** | **cuatro unidades** | **25.921** | **60** | **2,31** | **497** | **12** | **2,41** | **15** | **1 h 31 min 08 s** |
+
+**LAS CIFRAS DE PALABRAS SALEN DEL INSTRUMENTO** (`sed -n '8,$p' cap_NN.md | wc -w`,
+pegado en `12.4`), **las de pasos del recuento sobre los propios ficheros de la
+bandeja**, y **las de tiempo de `git log`**:
+
+    $ python -c "... recuenta los 60 ficheros de cuarentena/zhuo_manager"
+    ficheros en el disco: 60
+    ids distintos entre los candidatos: 60 de 60
+    candidatos con id igual al nombre del fichero: 60 de 60
+    nodos en el grafo: 135
+    colisiones de id con el grafo: 0 NINGUNA
+    pasos totales en la bandeja: 497
+    atribuciones totales: 27 repartidas en 20 candidatos
+    claves de fuente usadas: [('zhuo_manager', '2026-09-11')]
+
+    $ git log --format='%h %ad %s' --date=format:'%H:%M:%S'
+    795f779 08:12:51 Frontera de cap_07 ...   f2c7312 08:47:47 cap_07 cerrado
+    ce2877d 08:50:44 Frontera de cap_08 ...   fbe2abd 09:15:18 cap_08 cerrado
+    081c12d 09:16:36 Frontera de cap_09 ...   447bad2 09:34:36 cap_09 cerrado
+    b7d4dfd 09:36:51 Frontera de cap_10 ...   fb853f5 09:50:29 cap_10 cerrado
+
+**LA COLUMNA DE TIEMPO NO ES COMPARABLE CONSIGO MISMA Y LO DIGO ANTES DE QUE SE
+USE:** el informe de lote de `cap_07` **corrio DENTRO de su ventana**, en primer
+plano, y costo 7 min 23 s de esos 34 min 56 s; los de `cap_08` y `cap_09`
+**corrieron en segundo plano, fuera de sus ventanas**. **Restando el informe, la
+ventana de `cap_07` es de 27 min 33 s**, que es lo unico comparable con las
+otras tres.
+
+## E.2. EL FRENO: NO SE DISPARA, Y DIGO CON QUE LECTURA SI SE DISPARARIA
+
+> **EL MAYOR DE LOS CUATRO ES `cap_07` CON 3,23 POR CIENTO, Y EL TOPE ES 10.**
+> **El freno NO se dispara y el lote 4 NO baja un escalon por esta via.**
+
+**PERO LOS DISCUTIBLES 3 Y 10 ESTAN MARCADOS Y CAMBIAN ESO, asi que dejo las dos
+lecturas calculadas y no elijo por el fundador:**
+
+| lectura | que cuenta como puente | `cap_07` | `cap_08` | `cap_09` | `cap_10` | dispara el freno? |
+|---|---|---:|---:|---:|---:|---|
+| **la mia, y es la que defiendo** | solo puentes sobre **pasos** | 3,23 | 2,47 | 2,29 | 1,25 | **NO** |
+| **la ancha** (DISCUTIBLE 3 mas DISCUTIBLE 10) | pasos, mas recuentos en `denominaciones`, mas ordinales implicados | **11,3** | 2,47 | 2,29 | **10,0** | **SI, por `cap_07` y por `cap_10`** |
+
+**LA DIFERENCIA ENTRE LAS DOS LECTURAS ES DE UN ESCALON DE VOLUMEN ENTERO**, y por
+eso las dos van escritas. **Defiendo la mia porque `D.30` habla de PASOS** y una
+denominacion no es un paso; **pero el que fija el volumen no soy yo.**
+
+## E.3. LO QUE LA SERIE DE CUATRO DICE, Y LO QUE NO
+
+**LAS DOS MEDIDAS CAEN JUNTAS Y EN EL MISMO ORDEN**, capitulo a capitulo:
+
+    candidatos por mil palabras:  3,03 -> 2,87 -> 1,95 -> 1,47
+    puentes por ciento:           3,23 -> 2,47 -> 2,29 -> 1,25
+
+**Y NO DIGO QUE LO UNO CAUSE LO OTRO CON CUATRO PUNTOS.** Lo que si esta medido
+y se sostiene solo es **de donde viene la caida de la primera**: de la frontera.
+**`cap_10` tiene seis piezas de postura sobre diecisiete**, el doble de
+proporcion que cualquier otro, **y es el capitulo que describe como cambia el
+trabajo en vez de decir que hacer.** La cosecha baja porque el material baja, no
+porque yo extrajera menos.
+
+> **Y AQUI HAY UN AVISO QUE ME LLEVO DEL LOTE 1 Y QUE ESTA VUELTA CONFIRMA AL
+> REVES:** alli se midio que **un parrafo pobre no produce un nodo pobre, produce
+> un nodo inventado**. Esta vuelta, los capitulos con menos material dieron **menos
+> puentes, no mas**. **La diferencia es que aqui el material pobre lo deje FUERA
+> en la frontera en vez de extraerlo**: seis posturas de `cap_10` que no son nodo.
+> **El aviso del lote 1 sigue vigente; lo que cambio es que la frontera lo para
+> antes de que llegue al candidato.**
+
+## E.4. LA TASA DE ATRIBUCION, CON SU DEFINICION DELANTE
+
+*La vuelta 11 dejo esta medida como **discrepancia declarada y no resuelta**. La
+vuelvo a medir con mi definicion escrita al lado, para que se pueda comparar.*
+
+    atribuciones totales: 27 repartidas en 20 candidatos, sobre 60 candidatos
+
+| forma de contarla | cifra |
+|---|---:|
+| **candidatos que llevan al menos una atribucion**, sobre el total | **20 de 60 = 33,3 por ciento** |
+| **atribuciones por candidato** | **27 / 60 = 0,45** |
+
+**MI DEFINICION, escrita porque sin ella la cifra no se puede comparar:** meto en
+`atribuciones` **toda cifra o afirmacion que el libro pone en boca de un tercero
+o presenta como dato medido**, aunque no lleve numero, porque el manual dice que
+**toda atribucion es una afirmacion que se verifica**. Con esa definicion entran
+la frase de Bezos y la de Yogi Berra igual que el 35 por ciento del informe de
+2014.
+
+**SIGO SIN REPRODUCIR LAS CIFRAS DE LA VUELTA 11 NI LAS DEL AUDITOR, Y NO LAS
+RESUELVO COPIANDO** (`EXTRACTOR.md` 5). Lo que anado es **la definicion**, que es
+lo que faltaba para saber si las tres miden lo mismo.
