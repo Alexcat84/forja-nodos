@@ -15033,3 +15033,1112 @@ siquiera: **si el reloj sale mal, es un dato que se trae.**
 **el ultimo y solo**, que es la decision que la vuelta 12 dejo escrita en su `G.8.2` para
 quien viniera detras: *si lo que hace falta es medir el instrumento, se lanza el ultimo y
 solo.* **Esta vuelta hace falta medirlo**, porque tiene un contraste de modelo encargado.
+
+---
+
+# VUELTA 14, cierre de lo que la 13 dejo abierto y APERTURA DEL LOTE 4 (`scott_radical_candor`)
+
+*Esqueleto abierto **antes de la primera tarea**, `EXTRACTOR.md` 3. Las filas se anexan
+al cerrarse cada tarea, no al final. Letra de la vuelta: **`I`**.*
+
+## I.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION DE CONTENIDO
+
+*`EXTRACTOR.md` 4. Todo lo que sigue salio de un instrumento corrido en esta vuelta y el
+comando va pegado. **Digo cual fue la operacion anterior y por que no invalida la
+apertura:** el sello de lo pendiente (`EXTRACTOR.md` 1.1) y el lanzamiento del informe
+del lote, y **ninguno de los dos mueve ninguna de estas cifras**: el sello toca el
+registro del bucle y el testigo `.informe_lote.txt`, y `informe` no inserta nada.*
+
+    $ python -c "import datetime;print(datetime.datetime.now().isoformat(timespec='seconds'))"
+      2026-09-11T14:54:44
+
+    $ git rev-parse --short HEAD        ->  8db9769
+    $ git rev-parse --abbrev-ref HEAD   ->  extraccion-mundo-11
+
+    $ python -c "print(sum(1 for l in open('dataset/nodos.jsonl',encoding='utf-8') if l.strip()))"
+      135
+
+    $ ls cuarentena/zhuo_manager/*.json | wc -l              ->  68
+    $ ls cuarentena/_insertados/zhuo_manager/*.json | wc -l  ->  68
+    $ python -c "print(sum(1 for l in open('bitacora/VEREDICTOS.jsonl',encoding='utf-8') if l.strip()))"
+      100
+
+**EL COMMIT DE ARRANQUE DE ESTA VUELTA ES `8db9769`**, y lo digo aqui por la misma razon
+que lo dijo la vuelta 13: el sello de lo pendiente es mio y va citado, no escondido. Lo
+que sello fueron los tres ficheros del registro del bucle mas el testigo
+`.informe_lote.txt` con su unica linea de arranque huerfana de la vuelta 13.
+
+**LAS DOS CONDICIONES DE APERTURA DEL LOTE 4, REMEDIDAS POR MI Y NO HEREDADAS DEL
+ENCARGO** (`D.32`):
+
+    $ ls fuentes/scott_radical_candor/ | wc -l   ->  15
+    $ ls fuentes/scott_radical_candor/
+      cap_00.md cap_01.md cap_02.md cap_03.md cap_04.md cap_05.md cap_06.md cap_07.md
+      cap_08.md cap_09.md cap_10.md cap_11.md cap_12.md cap_13.md cap_14.md
+    $ grep -n "scott_radical_candor" fuentes/FUENTES_CANONICAS.json
+      27:  "scott_radical_candor": {
+
+**LAS DOS EN VERDE, y coinciden con las que el encargo publico.** La fuente canonica
+existe **antes** del primer nodo del libro, que es lo que `EXTRACTOR.md` 12.1 exige.
+
+**LAS CUATRO UNIDADES QUE ME TOCAN, medidas por mi:**
+
+    $ for f in cap_00 cap_01 cap_02 cap_03; do sed -n '8,$p' fuentes/scott_radical_candor/$f.md | wc -w; wc -l < fuentes/scott_radical_candor/$f.md; done
+    $ sed -n '4,5p' fuentes/scott_radical_candor/cap_00.md
+      unidad: Copyright Page
+      titulo_textual: Copyright
+
+| fichero | `unidad:` de su cabecera | titulo textual | palabras de cuerpo | lineas |
+|---|---|---|---:|---:|
+| `cap_00.md` | Copyright Page | Copyright | 218 | 57 |
+| `cap_01.md` | Preface | Preface to the Revised Edition: Radical Candor on Radical Candor | 2.846 | 79 |
+| `cap_02.md` | Introduction | Introduction | 3.908 | 107 |
+| `cap_03.md` | How to Use This Book | How to Use This Book | 627 | 29 |
+| | | **total** | **7.599** | **272** |
+
+> ## **EL DATO QUE CAMBIA LA FORMA DE ESTA VUELTA, Y LO PONGO ARRIBA: NINGUNA DE LAS
+> CUATRO UNIDADES ENCARGADAS DECLARA `unidad: Cap. N`.**
+>
+> El encargo me manda medir `cap_00` antes de tratarlo como capitulo. **Lo medi, y de
+> paso medi las otras tres, que es lo que la regla 4 pide de verdad: el sujeto de una
+> regla se mide, no se supone.** Las cuatro son **material de frente**: pagina de
+> copyright, prefacio, introduccion y guia de uso. **Las cuatro juntas suman 7.599
+> palabras, casi lo mismo que las dos unidades de la vuelta 13 (7.262), asi que el
+> volumen de lectura es comparable aunque el numero de ficheros sea el doble.**
+>
+> **CONSECUENCIA DIRECTA SOBRE LAS PARADAS, declarada antes de leer una sola linea de
+> cuerpo:** la tercera condicion de parada del encargo (*un fichero que declara
+> `unidad: Cap. N` en su cabecera no da ni un procedimiento*) **no puede dispararse en
+> esta vuelta**, porque **ningun fichero de los cuatro declara `Cap. N`**. Si alguno da
+> cero procedimientos, **lo juzgo, lo digo y sigo**, que es exactamente lo que el
+> encargo escribio al reescribir esa condicion.
+
+**MODO DE ESTA CORRIDA: `MODO_INSERCION=cuarentena`. CERO INSERCIONES.** No corro
+`python forja.py insertar` ni `python forja.py arista`. Todo candidato queda en
+`cuarentena/scott_radical_candor/<id>.json` y pasa la aduana **en el mismo acto en que se
+escribe** (`EXTRACTOR.md` 16). Las aristas que la lectura pida se **declaran en bloque
+propio y titulado, sin ejecutarse**, porque `forja.py arista` escribe en sede de la
+aduana y esta vuelta no tiene esa autorizacion.
+
+## I.0.1. EL ESQUELETO DE LAS TAREAS ENCARGADAS
+
+| # | tarea | estado |
+|---:|---|---|
+| 1.a | leer la ACTA 13 entera y decir, adjudicacion a adjudicacion, que hago distinto | **CERRADA**, `I.1.a` |
+| 1.b | correccion declarada de `H.3.3`: 21, 9, y Osborn fuera | **CERRADA**, `I.1.b` |
+| 1.c | correccion declarada en `ORDEN_DE_LOTES.md`: la frase de dos lecturas y la cifra 68 | **CERRADA**, `I.1.c` |
+| 1.d | el recuento a maquina con **total, filtrado y residuo** de toda poblacion publicada | **CERRADA Y VIGENTE TODA LA VUELTA**, `I.1.d` |
+| 2.a | el informe de los 68 y el contraste del reloj, lanzado el primero y solo | PENDIENTE |
+| 2.b | el saldo del informe candidato por candidato | PENDIENTE |
+| 2.c | las cuatro medidas y **el total del lote 3**, los doce capitulos | PENDIENTE |
+| 2.d | el sello de la vuelta 13, recontado a maquina | PENDIENTE |
+| 3 | abrir el lote 4: `cap_00`, `cap_01`, `cap_02` y `cap_03`, uno a uno y enteros | **LAS CUATRO LEIDAS Y JUZGADAS**, `I.3.0` a `I.3.8` |
+| 4 | lo que NO se hace: ni las doce dataciones, ni insercion, ni maquinaria | DECLARADA |
+
+**SON CUATRO TAREAS CONTANDO CADA NUMERO COMO UNA**, y el tope de `EXTRACTOR.md` 1.3 es
+cinco. **No declaro cola.** La TAREA 4 no consume trabajo: es una lista de prohibiciones
+y se cierra declarandolas cumplidas al final.
+
+**EL ORDEN EN QUE LAS CORRO, y lo digo porque el encargo pone dos cosas primeras.** La
+TAREA 1 es *BLOQUEANTE Y VA PRIMERA*; la TAREA 2.a dice *LANZALO EL PRIMERO DEL TURNO Y
+SOLO*. **No se contradicen si se lee que `SOLO` habla del instrumento y no del turno:**
+lo que hace limpia la medicion del reloj es que **ningun otro instrumento de la casa
+corra a la vez**, no que yo me quede mirando la pantalla treinta y cinco minutos.
+**Asi lo he resuelto:** el informe salio lo primero y es **el unico proceso de
+`forja.py` vivo**; mientras corre hago la TAREA 1, que es leer actas y escribir
+correcciones declaradas y **no invoca ni un instrumento**. La TAREA 3 necesita
+`forja.py informe` por candidato, asi que **no empieza hasta que el reloj del lote haya
+cerrado**. Si esto rompe la intencion del encargo, es un discutible y va marcado abajo.
+
+---
+
+# TAREA 1. LOS REGISTROS, SUS CUATRO PARTES
+
+## I.1.a. LA ACTA 13, LEIDA ENTERA, Y QUE HAGO DISTINTO HOY
+
+*La lei de `11524` a `12621` de `docs/loop/ACTA_AUDITOR.md`, que es el tramo entero del
+acta y su ultima linea del fichero:*
+
+    $ grep -n "^# ACTA" docs/loop/ACTA_AUDITOR.md | tail -1
+    11524:# ACTA 13. VUELTA 13, lote 3 (`zhuo_manager`), `cap_11` y `cap_12`: el cierre de la extraccion del libro
+    $ wc -l docs/loop/ACTA_AUDITOR.md
+    12621
+
+**NO LA RESUMO. Recojo las diez adjudicaciones de su seccion 11 y digo, una a una, QUE
+HAGO DISTINTO HOY.** La columna de la derecha es la unica que importa de esta tabla.
+
+| # | la adjudicacion de la ACTA 13, seccion 11 | **QUE HAGO DISTINTO HOY** |
+|---:|---|---|
+| 1 | `contrastar_cultura_actual_aspirada` es **`SANO`**, no `CONTINUA`. Mi `H.2.6` #5 se sostiene | **Nada que corregir y una cosa que confirmar: la vara que use es la buena y la sigo usando tal cual.** Lo que hago distinto no es cambiar la vara sino **escribirla en dos pasos rotulados en cada veredicto de hoy**, igual que el auditor se obliga a si mismo en su `6.2`: primero *fuera del solape hay procedimiento en los dos lados* (descarta `REPITE`), y **solo despues** *que linea de la madre ejecuta el hijo y en cuantos pasos* (decide `SANO` contra `CONTINUA`). **Si no puedo nombrar una linea concreta de la madre, escribo `SANO`.** No es vara nueva: es la misma en forma de formulario |
+| 2 | `actuar_conducta_contraria_valores` es **`SANO`**, no `CONTINUA`. Mi `H.2.6` #10 se sostiene | **Me llevo la senial barata que el auditor nombra al perder:** disparador distinto, plazo distinto y salidas distintas **en tres filas** es la firma de dos actos distintos. **Hoy, cuando mi tabla de contraste de un par me salga con las tres columnas distintas, escribo `SANO` y no me lo pienso mas.** Es la lectura que el auditor tenia delante y no uso |
+| 3 | `comunicar_valores_diez_formas` es **`CONTINUA`**, y **el discutible que marque era el bueno** | **Sigo marcando discutible donde dudo, y ahora con una prueba a favor:** de los tres choques, **los tres cayeron dentro o al lado de lo que yo habia marcado.** Lo que hago distinto es **marcar mas y no menos**, porque la vuelta 13 midio que marcar de mas no cuesta nada y marcar de menos cuesta una relectura ciega que nadie hace |
+| 4 | **`cap_12` NO ES PARADA.** El sujeto de una regla se mide, no se supone | **Lo aplique HOY y antes de leer una linea de cuerpo:** abri la cabecera `unidad:` de los cuatro ficheros encargados **antes** de tratarlos como capitulos, y estan en `I.0`. **Las cuatro son material de frente y ninguna dice `Cap. N`**, asi que la tercera condicion de parada no puede dispararse. **La diferencia con la vuelta 13 es de coste: alli demostrar esto costo media seccion al final; hoy cuesta cuatro `sed` al principio** |
+| 5 | las atribuciones sin fecha son **21 y no 22**, las que las `Notes` no recogen **9 y no 10**, **Osborn sobra** | **Dos cosas. La correccion declarada va en `I.1.b`, hoy y no despues.** Y la de fondo: **toda cifra que publique que sea el tamanio de un conjunto sale con su TOTAL, su FILTRADO y su RESIDUO pegados los tres**, que es la TAREA 1.d y que aplico a cada poblacion de esta vuelta. **El error no fue de lectura: fue un filtro sin residuo, y el residuo lo habria cazado solo** |
+| 6 | `PASOS INVENTADOS`: `cap_11` **3,51**, `cap_12` **sin definir**. Freno no disparado | **Acepto el volumen de cuatro unidades sin discutirlo y con una vigilancia propia:** el auditor mide el freno sobre **el peor capitulo**, no sobre el promedio. **Hoy publico la fila de cada una de las cuatro unidades por separado aunque la media salga baja**, porque una media que esconde un capitulo malo es lo que el freno existe para cazar. **Y sostengo `sin definir` donde el denominador sea cero**, que es lo que hice en `H.2.8` y el auditor firmo |
+| 7 | **el total del lote 3 no lo firma el auditor**, y me deja el denominador medido: **554 pasos** | **Lo cierro hoy en `I.2.c`, y no copio su 554: lo remido yo** con la corrida de total, filtrado y residuo. **El 554 del auditor es contraste, no fuente** (`EXTRACTOR.md` 5). Si mi medida discrepa de la suya, **declaro la discrepancia en vez de resolverla copiando** |
+| 8 | su propia apertura se equivoco: **`REPORTE.md` se apende, no se reescribe** | **Me quita de encima una preocupacion que yo tambien tenia y la sustituyo por otra:** mis veredictos no se pierden por vivir en `REPORTE.md`, pero **siguen sin estar en `bitacora/VEREDICTOS.jsonl`**, que es donde `D.26` dice que viven. **Hoy escribo los veredictos igual de completos que si fueran a insertarse**, con su razon entera, porque el fichero que los recoja va a ser una copia de esto y no una reescritura |
+| 9 | la frontera Zhuo contra `Who` es **`FRONTERA DECLARADA`**: no se funde y no se poda | **El encargo me da la instruccion operativa y la ejecuto:** si en `scott_radical_candor` aparece un tercer libro tirando de la misma palanca (atar dinero a un numero), **se le aniade a la frontera existente y no se reabre.** Lo llevo escrito en mi cabeza de lectura para los cuatro ficheros de hoy, y **si aparece lo digo con esas palabras** |
+| 10 | los tres `CONTINUA` de `H.1.f` se sostienen, y el cuarto par que encontre solo tambien | **Adopto como obligacion lo que hice por iniciativa:** el auditor dice que mi metodo de buscar vecinos (**recorrer los 135 titulos por los OBJETOS del capitulo, y llevarse ademas los del otro libro**) es mejor que el suyo y lo adopta. **Hoy lo hago explicito: publico la lista de objetos con la que barro, antes de los veredictos**, para que se pueda comprobar que no elegi los que me convenian |
+
+**Y TRES COSAS MAS DE LA ACTA QUE NO ESTAN EN SU TABLA DE DIEZ Y QUE ME CAMBIAN EL DIA:**
+
+1. **Su seccion 7.1 mide que la vuelta 13 dejo tres tareas sin correr, y no le inventa
+   especie.** Lo que me llevo no es el alivio: es **su frase de que un turno que se corta
+   declarando lo que falta es recuperable**. El encargo repite el aviso de alcance.
+   **Asi que declaro ahora mi regla de corte para hoy: si el reloj aprieta, cierro las
+   unidades terminadas y digo por su nombre las que no empece.** Esta escrito antes de
+   empezar, no despues de quedarme corto.
+2. **Su seccion 5.6 me deja en 2 de 3 sin subir y sin reiniciar.** No lo discuto y no lo
+   uso de excusa. **La consecuencia practica es que esta vuelta no puede permitirse ni
+   una cifra de poblacion sin residuo**, y por eso la TAREA 1.d no la trato como un
+   remedio mas sino como la forma por defecto de publicar cualquier cuenta.
+3. **Su seccion 9 punto 4 adjudica que las doce dataciones NO se corrigen ahora.** Era
+   propuesta mia y la adjudicacion va en mi contra en el calendario y a mi favor en el
+   fondo. **No toco los once ficheros.** Queda declarado en la TAREA 4.
+
+**LO QUE NO HAGO CON ESTA ACTA:** no la uso como fuente de ninguna cifra que publique
+hoy. Sus numeros (554, 497, 57, 135) **los vuelvo a medir yo** y los cito como contraste
+(`EXTRACTOR.md` 5). **Una acta previa nunca es fuente de una cifra nueva.**
+
+---
+
+## I.1.b. CORRECCION DECLARADA DE `H.3.3`: SON **21** Y **9**, Y ALEX OSBORN NO PERTENECE A ESA LISTA
+
+*Correccion declarada, `AUDITOR_FORJA.md` 1.3 y `EXTRACTOR.md` 10: **el texto viejo se
+queda donde esta y no se borra.** `H.3.3` sigue intacta en `14888` de este mismo fichero,
+con su `22` y su `10` dentro. **Aqui va la cifra vigente, con su motivo y con la medicion
+que la sostiene.* La caida esta registrada con mi nombre en la ACTA 13 seccion 5.1.**
+
+### LO QUE DIJE Y LO QUE ES
+
+| | lo que `H.3.3` publica | **lo vigente** |
+|---|---:|---:|
+| atribuciones de la bandeja SIN fecha del texto | **22** | **21** |
+| que las `Notes` de `cap_12` SI datan | **12** | **12. SE SOSTIENE ENTERO** |
+| que las `Notes` NO recogen | **10** | **9** |
+| **Alex Osborn en la lista de las que faltan** | **SI** | **NO. Nunca estuvo en la poblacion** |
+
+### EL MOTIVO, QUE ES LO QUE HAY QUE ENTENDER Y NO EL NUMERO
+
+**Alex Osborn no sobra por un error de suma: sobra porque su ficha SI lleva fecha del
+texto**, y por tanto **nunca perteneció a la poblacion de partida**. Abro la ficha:
+
+    $ python -c "imprime la atribucion de dirigir_reunion_generar_ideas.json"
+    [{"cifra": "la lluvia de ideas se popularizo en los anios cincuenta ...",
+      "autor": "Alex Osborn, ejecutivo de publicidad, citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "los anios cincuenta, segun el texto del libro"}]
+
+**`fecha_corte` esta puesta y viene del texto.** Osborn esta entre los que SI llevan
+fecha, no entre los que no. **Meterlo en la lista de los que faltan lo contaba dos veces:
+una de mas en el 22 y una de mas en el 10.**
+
+### LA MEDICION VIGENTE, CON **TOTAL, FILTRADO Y RESIDUO** PEGADOS LOS TRES (TAREA 1.d)
+
+*Esta es la forma que el encargo manda y que aplico desde aqui a toda poblacion que
+publique. **La corrida es de una vuelta y no se commitea como instrumento** (`EXTRACTOR.md`
+13, y la ACTA 13 lo dice con esas palabras).*
+
+    $ python -c "recorre los 68 ficheros de cuarentena/zhuo_manager, cuenta atribuciones
+                 y parte la poblacion por su fecha_corte"
+    TOTAL 27 = FILTRADO 21 (sin fecha del texto) + RESIDUO 6 (con fecha)  -> CUADRA
+
+**EL RESIDUO ENTERO, que es lo que no publique la vez pasada y lo que me habria cazado:**
+
+| # | candidato que la lleva | `fecha_corte` que trae del texto |
+|---:|---|---|
+| 1 | `construir_equipo_perspectivas_diversas` | 2014 |
+| 2 | `dirigir_reunion_generar_ideas` | **los anios cincuenta, segun el texto del libro** |
+| 3 | `ligar_tareas_proposito_organizacion` | 2017, anio del discurso segun el texto |
+| 4 | `partir_meta_grande_hitos` | siglo veinte, segun el texto |
+| 5 | `priorizar_pocas_cosas_bien` | 1998, anio del libro de Koch segun el texto |
+| 6 | `repartir_material_antes_reunion` | 2019, anio de la edicion del libro |
+
+> **LA FILA 2 ES EL ERROR ENTERO, Y SE VE SOLA.** Con el residuo delante, **Alex Osborn
+> aparece imprimido entre los que SI tienen fecha**, asi que no puede estar tambien entre
+> los que no la tienen. **No hace falta acordarse de nada: el sumando de mas sale en la
+> pantalla.** Eso es exactamente lo que el remedio compra.
+
+### Y EL SEGUNDO CORTE, EL DE LAS `Notes`, TAMBIEN CON SU RESIDUO
+
+    $ python -c "cruza las 21 sin fecha contra las doce filas de H.3.3"
+    TOTAL de la poblacion filtrada (sin fecha del texto) : 21
+    FILTRADO  que las Notes de cap_12 SI datan           : 12
+    RESIDUO   que las Notes NO recogen                   :  9
+    comprobacion: 12 + 9 = 21 -> CUADRA
+    Alex Osborn en la poblacion filtrada? -> False
+
+**LAS NUEVE DEL RESIDUO, IMPRESAS UNA A UNA Y NO ENUMERADAS EN PROSA**, que es la otra
+mitad de lo que fallo (`H.3.3` las puso en una frase seguida, y en una frase seguida no
+se cuentan):
+
+| # | candidato | autor de la atribucion |
+|---:|---|---|
+| 1 | `alinear_prioridades_reporte_directivo` | Antoine de Saint Exupery, atribuida y citada por Julie Zhuo |
+| 2 | `auditar_calendario_reuniones_semana` | Julie Zhuo, sobre su propio calendario |
+| 3 | `buscar_recomendaciones_confianza` | Laszlo Bock, vicepresidente senior de operaciones de personal |
+| 4 | `construir_equipo_perspectivas_diversas` | estudio citado por Julie Zhuo |
+| 5 | `construir_equipo_perspectivas_diversas` | experimento citado por Julie Zhuo |
+| 6 | `crear_plan_creible_equipo` | Dwight D. Eisenhower, citado por Julie Zhuo |
+| 7 | `preparar_preguntas_entrevista_antemano` | un estudio de Harvard, citado por Julie Zhuo |
+| 8 | `reemplazarse_trabajo_propio` | un amigo de Julie Zhuo, citado por ella como regla del pulgar |
+| 9 | `repartir_responsabilidad_contratar_equipo` | Molly Graham, citada por Julie Zhuo |
+
+**COMPARADA CON LA LISTA VIEJA DE `H.3.3`, LA UNICA DIFERENCIA ES OSBORN.** La vieja
+enumeraba: Saint Exupery, Laszlo Bock, Eisenhower, Molly Graham, **Alex Osborn**, el
+estudio de Harvard, el estudio y el experimento de `construir_equipo_perspectivas_diversas`,
+el calendario propio de la autora, y el amigo de la regla del pulgar. **Son diez nombres y
+nueve de ellos siguen siendo correctos.** Quito uno y no toco los otros nueve.
+
+### LO QUE NO CAMBIA, Y LO DIGO PORQUE ES LA MAYOR PARTE DEL HALLAZGO
+
+**EL 12 SE SOSTIENE ENTERO Y NO LO TOCO.** El auditor abrio las once lineas distintas de
+`Notes` que las doce filas citan y las once casan (ACTA 13 seccion 1.8). **La tabla de las
+doce dataciones de `H.3.3` esta bien fila por fila y sigue valiendo tal como esta
+escrita.** Lo que estaba mal era **el complemento**, que es la poblacion de partida y su
+residuo. **21 = 12 + 9**, y la aritmetica interna de `H.3.3` tambien cerraba, solo que
+sobre un sumando de mas.
+
+**Y LA DISCREPANCIA DE HARARI QUE `H.3.3` DECLARA SIN RESOLVER SIGUE DECLARADA Y SIN
+RESOLVER.** No la toco: el auditor la comprobo por los dos lados y dijo que declararla en
+vez de resolverla copiando es lo correcto.
+
+---
+
+## I.1.c. CORRECCION DECLARADA EN `ORDEN_DE_LOTES.md`: UNA FRASE CON DOS LECTURAS, Y UNA CIFRA QUE ENVEJECIO
+
+*El auditor no la llama caida y explica por que: **las tres cifras son ciertas.** Lo que
+hay es una frase con dos lecturas en una sede duradera. **Mi correccion no borra nada:**
+el texto viejo se queda entero en la celda y la correccion se aniade detras, que es como
+esa misma celda lleva corrigiendose desde la vuelta 10.*
+
+### LO QUE LA CELDA DECIA Y POR QUE SE LEE MAL
+
+    $ grep -n "SIN INSERTAR" docs/loop/ORDEN_DE_LOTES.md | cut -c1-3
+    18:
+    19:
+
+La fila del lote 3 acababa asi: **"60 candidatos en `cuarentena/zhuo_manager/` y 68
+archivados en `cuarentena/_insertados/zhuo_manager/`, SIN INSERTAR"**. **El `SIN
+INSERTAR` va pegado al final de una enumeracion de dos miembros**, asi que la gramatica
+lo deja alcanzar a los dos. **Alcanza solo al primero.**
+
+### LAS DOS COSAS QUE ARREGLO, Y LAS MEDICIONES QUE LAS SOSTIENEN, CON SU RESIDUO
+
+**1. LOS 68 ARCHIVADOS SI ESTAN INSERTADOS.** No lo copio del acta: lo mido yo cruzando
+cada fichero archivado contra el grafo (`EXTRACTOR.md` 5, una acta previa es contraste y
+no fuente).
+
+    $ python -c "cruza los ids de cuarentena/_insertados/zhuo_manager contra dataset/nodos.jsonl"
+    TOTAL archivados en cuarentena/_insertados/zhuo_manager : 68
+    FILTRADO  su id VIVE en dataset/nodos.jsonl             : 68
+    RESIDUO   su id NO esta en el grafo                     : 0
+    comprobacion: 68 + 0 = 68 -> CUADRA
+    el RESIDUO, impreso entero: [] (vacio)
+
+**Y EL CRUCE ESPEJO, QUE ES EL QUE DA SENTIDO AL `SIN INSERTAR`:**
+
+    TOTAL en la bandeja cuarentena/zhuo_manager             : 68
+    FILTRADO  ya en el grafo                                : 0
+    RESIDUO   pendientes de insertar                        : 68
+    comprobacion: 0 + 68 = 68 -> CUADRA
+    nodos vivos en el grafo: 135
+
+> **LOS DOS CRUCES JUNTOS SON LA PRUEBA COMPLETA, y por separado no lo serian.** Uno dice
+> que los archivados estan dentro; el otro dice que los de la bandeja estan fuera. **Con
+> los dos delante, la frase solo admite una lectura**, que es la unica verdadera. **Mi
+> medida coincide con la del auditor y no hay discrepancia que declarar.**
+
+**2. LA CIFRA DE LA BANDEJA ENVEJECIO: ERA 60 Y HOY ES 68.**
+
+    $ ls cuarentena/zhuo_manager/*.json | wc -l              ->  68
+    $ ls cuarentena/_insertados/zhuo_manager/*.json | wc -l  ->  68
+
+**Los ocho de diferencia son los de `cap_11` de la vuelta 13**, y esto es la misma especie
+que la vuelta 11 ya corrigio en esta celda: **una cifra verdadera al escribirse y falsa al
+cerrarse la vuelta que la escribio.** La celda ya llevaba esa leccion escrita y volvio a
+pasar. **Por eso la correccion de hoy no se limita al numero: escribe los dos cruces
+dentro de la celda**, y un cruce no envejece de la misma manera que un `ls`.
+
+### LO QUE ESCRIBI, LEIDO DEL FICHERO DESPUES DE ESCRIBIRLO
+
+    $ grep -c "CORRECCION DECLARADA (vuelta 14" docs/loop/ORDEN_DE_LOTES.md
+    1
+
+**La correccion aniade, dentro de la misma celda del lote 3:** que las dos lecturas
+existen y cual es la buena; que los 68 archivados si estan insertados; que la bandeja es
+hoy **68** y no 60; los dos cruces con sus tres cifras cada uno; y que **12 de 12 ficheros
+estan minados, asi que la EXTRACCION del lote 3 esta cerrada y su INSERCION no**, con
+`MODO_INSERCION=cuarentena` vigente. **Ni una palabra del texto viejo se ha borrado.**
+
+---
+
+## I.1.d. EL RECUENTO A MAQUINA CON **TOTAL, FILTRADO Y RESIDUO**: LA FORMA POR DEFECTO DE ESTA VUELTA
+
+*Es la escalada de mi racha `REPORTE`, que sigue en **2 de 3** (ACTA 13 seccion 5.6:
+ni sube ni se reinicia). **No la trato como un remedio mas: es la forma por defecto de
+publicar cualquier cuenta en esta vuelta**, y esta seccion existe para que se pueda
+comprobar fichero a fichero que la cumpli.*
+
+### LA REGLA, TAL COMO LA VOY A CUMPLIR
+
+> **TODA CIFRA QUE PUBLIQUE QUE SEA EL TAMANIO DE UN CONJUNTO** (atribuciones,
+> veredictos, piezas de frontera, pasos, candidatos, lineas, ficheros) **SALE DE UNA
+> CORRIDA QUE IMPRIME A LA VEZ EL TOTAL, EL FILTRADO Y EL RESIDUO, Y PEGO LOS TRES.**
+
+**POR QUE EL RESIDUO Y NO UNA RELECTURA:** porque el residuo **se ve solo**. En `I.1.b`,
+publicar el residuo de seis con sus nombres pone a Alex Osborn imprimido entre los que SI
+llevan fecha, **en la misma pantalla en la que yo lo estaba contando entre los que no**.
+Ninguna atencion hace falta. **Un remedio que se cumple acordandose no es un remedio**
+(`EXTRACTOR.md` 15.5), y por eso este obliga a teclear algo.
+
+### DONDE LA HE APLICADO YA, CON EL SITIO DE CADA CORRIDA
+
+| # | poblacion publicada | total | filtrado | residuo | cuadra | donde |
+|---:|---|---:|---:|---:|:---:|---|
+| 1 | atribuciones de la bandeja, partidas por `fecha_corte` | **27** | **21** sin fecha | **6** con fecha | **SI** | `I.1.b` |
+| 2 | las 21 sin fecha, cruzadas contra las `Notes` de `cap_12` | **21** | **12** datadas | **9** no recogidas | **SI** | `I.1.b` |
+| 3 | archivados de `zhuo_manager` cruzados contra el grafo | **68** | **68** dentro | **0** fuera | **SI** | `I.1.c` |
+| 4 | bandeja de `zhuo_manager` cruzada contra el grafo | **68** | **0** dentro | **68** pendientes | **SI** | `I.1.c` |
+
+**Y LAS QUE FALTAN VAN CON LA MISMA FORMA**, declarado aqui antes de correrlas para que
+no se me quede ninguna fuera: **el saldo del informe de los 68** (`I.2.b`, total contra
+`ENTRARIA` mas `BLOQUEARIA` mas `CAERIA`), **el denominador de pasos del lote 3**
+(`I.2.c`, 554 remedido por mi y no copiado), **las piezas de frontera de cada unidad del
+lote 4** (`I.3`, lineas cubiertas contra lineas del cuerpo, con huecos y solapes
+impresos), y **los pasos TRANSCRIPCION contra PUENTE de cada candidato**.
+
+### LO QUE ESTO **NO** ES, Y LO DIGO PORQUE LA MORATORIA ES REGLA
+
+**No es maquinaria** (`EXTRACTOR.md` 13, cosecha 7.F, y el encargo lo dice con esas
+palabras). Son corridas de `python -c` de una vuelta sobre ficheros que ya existen.
+**No se commitean como instrumento, no viven en `forja.py`, no tienen prueba de
+aceptacion y no se vuelven a llamar.** Si maniana hiciera falta una de estas de verdad,
+**eso seria un instrumento y tendria que encargarlo el fundador.**
+
+### EL LIMITE QUE LE VEO, Y LO DIGO AHORA QUE NO ME CUESTA NADA
+
+> **EL RESIDUO PRUEBA QUE LA PARTICION ES COMPLETA. NO PRUEBA QUE EL CRITERIO SEA EL
+> BUENO.**
+
+Si mi filtro clasificase mal una atribucion, **el total seguiria cuadrando**: la suma
+cierra igual con la fila en el lado equivocado. Lo que el residuo caza es **el sumando
+fantasma**, que es exactamente lo que paso en `H.3.3` y por eso el remedio esta bien
+elegido para esa caida. **Lo que no caza es un criterio torcido**, y contra eso lo unico
+que hay es imprimir el residuo **con nombres y no con numeros**, que es lo que he hecho
+en las cuatro corridas de arriba. **Lo marco como discutible de esta vuelta** y va a la
+lista de discutibles antes de saber si acierto.
+
+---
+
+# TAREA 3. EL LOTE 4 (`scott_radical_candor`): `cap_00`, `cap_01`, `cap_02` Y `cap_03`
+
+## I.3.0. DOS CONVENCIONES QUE DECLARO ANTES DE CORTAR NADA, Y VALEN PARA TODA LA VUELTA
+
+### 1. EL PEGADO DE LA CITA, PORQUE ESTE LIBRO TAMBIEN USA GUION LARGO
+
+**El barrido de guiones barre `docs/` y NO barre `fuentes/`** (`src/comun.py`,
+`BANDEJAS_DE_ENTRADA`, con su motivo escrito dentro: barrer la bandeja empujaria a
+limpiar un candidato antes de que la aduana lo mida, **y eso es falsificar la medida**).
+Asi que mido cuanto guion largo trae mi tramo antes de pegar una sola linea:
+
+    $ python -c "cuenta U+2014 y U+2013 en los cuatro ficheros de hoy"
+    cap_00  emdash(U+2014)  0   endash(U+2013) 0
+    cap_01  emdash(U+2014) 10   endash(U+2013) 0
+    cap_02  emdash(U+2014) 20   endash(U+2013) 1
+    cap_03  emdash(U+2014)  2   endash(U+2013) 0
+
+**TODA SALIDA DE `sed -n` QUE PEGUE AQUI VA CORTADA ANTES DEL PRIMER GUION LARGO DEL
+LIBRO**, que es la convencion que esta casa ya uso en `A.1` de la vuelta 12, **y las
+comillas tipograficas se bajan a comillas rectas. POR NADA MAS.** No corrijo ortografia,
+no completo frases y no traduzco dentro de la cita.
+
+**Y DIGO LA CONSECUENCIA VISIBLE, para que no parezca un pegado descuidado:** cuando una
+linea lleva el guion largo cerca del principio, la cita sale corta. `cap_02:11` se corta
+en *"LIKE MOST OF US, I once had a terrible boss"* **porque ahi mismo va el guion**, y
+`cap_03:11` se corta en *"I'VE WRITTEN THIS BOOK WITH the end user"* por lo mismo. **La
+cita corta es fiel; alargarla seria alterar el original.**
+
+**Y UNA SEGUNDA, QUE ANIADO YO Y NO ESTABA:** cinco piezas de este tramo empiezan por el
+separador `* * *`, que no dice nada de su contenido. **Para esas pego DOS lineas: el
+separador con su numero y la primera linea con texto**, para que la cita siga siendo
+comprobable y ademas informativa.
+
+### 2. LA GRAFIA DE `Radical Candor` EN LOS IDS, DECIDIDA AQUI Y MARCADA DISCUTIBLE
+
+**Es una decision de una sola vez que ata los quince capitulos del lote 4, asi que la
+escribo antes del primer id y no cuando ya haya diez escritos.**
+
+| pieza | que dice la regla 1, leido de `src/reglas_id.py` | medido |
+|---|---|---|
+| `radical` | **no esta en ninguna de las tres listas**, y ademas es palabra castellana | pasaria |
+| `candor` | **tampoco esta en ninguna lista**, y tambien es palabra castellana | pasaria |
+
+**LAS DOS PASARIAN LA GUARDA TAL CUAL. NO LAS ESCRIBO ASI, Y DIGO POR QUE.** En
+castellano **`candor` no significa lo que Scott quiere decir**: significa ingenuidad, y
+el termino del libro es franqueza que desafia de frente. **Escribir `candor_radical`
+seria un falso amigo con permiso de la maquina.** Uso **`franqueza_radical`**, y el
+ingles `radical candor` viaja en `denominaciones.otros_idiomas`, que es su sede
+(manual 3.1).
+
+**EL PRECEDENTE QUE LO SOSTIENE ES DE LA CASA Y NO MIO:** `paris_convention_prioridad`
+cayo y se reescribio `convenio_paris_prioridad`, con la razon escrita de que **un nombre
+propio traducido no es traduccion libre: es el nombre** (`EXTRACTOR.md` 15.1). Y el
+ejemplar de `mitos_stage_gate` dice que **la regla no hace excepciones por prestigio del
+termino**, aunque sea el nombre de un metodo.
+
+> **LO MARCO DISCUTIBLE ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8). La guarda no me
+> obliga a traducirlo, asi que **esto es criterio mio y no cumplimiento de una regla**.
+> Si el auditor lee que el nombre del metodo debe viajar en ingles, **la correccion es
+> barata hoy, con dos candidatos escritos, y cara dentro de once capitulos.** Por eso lo
+> decido ahora y lo marco ahora.
+
+---
+
+## I.3.1. LA FRONTERA DE LAS CUATRO UNIDADES, PIEZA A PIEZA, **PUBLICADA ANTES DE CORTAR**
+
+*`EXTRACTOR.md` 10: la frontera se lee y se publica ANTES de cortar. Las lineas 1 a 7 son
+el `frontmatter` del recorte y no son texto del libro; el cuerpo empieza en L9. La ultima
+columna es la salida literal de `sed -n '<n>p'`, con las dos unicas alteraciones que la
+convencion de arriba declara.*
+
+### `cap_00.md`, `unidad: Copyright Page`, 5 piezas
+
+| P | lineas | que es | veredicto de mina | la salida de `sed -n`, pegada |
+|---|---|---|---|---|
+| P1 | L9 a L31 | los enlaces de navegacion del libro electronico y el reclamo del boletin de la editorial | **NO SE MINA**: paratexto de tienda | `9: Begin Reading` |
+| P2 | L33 a L33 | el aviso de uso personal y la direccion para denunciar pirateria | **NO SE MINA**: aviso legal | `33: The author and publisher have provided this e-book to you for ...` |
+| P3 | L35 a L47 | el bloque `COPYRIGHT`: editorial, titular, direccion, web, cubierta, foto y Library of Congress | **NO SE MINA**, y **SI SE USA**: es la fuente que verifica la tabla canonica | `35: COPYRIGHT` |
+| P4 | L49 a L53 | los tres ISBN | **NO SE MINA**, **SI SE USA** | `49: ISBN 978-1-250-23537-4 (hardcover)` |
+| P5 | L55 a L57 | venta en volumen y la linea de edicion | **NO SE MINA**, **SI SE USA** | `55: Our ebooks may be purchased in bulk for promotional, education ...` |
+
+### `cap_01.md`, `unidad: Preface`, 10 piezas
+
+| P | lineas | que es | veredicto de mina | la salida de `sed -n`, pegada |
+|---|---|---|---|---|
+| P1 | L9 a L9 | el rotulo de la unidad y su titulo | **NO SE MINA**: paratexto | `9: PREFACE TO THE REVISED EDITION Radical Candor on Radical Cando ...` |
+| P2 | L11 a L23 | el episodio de `Silicon Valley`, la parodia y lo que la autora dice haber aprendido | **CASO** (manual 3.5) | `11: LAST YEAR, I GOT off an overnight flight to find my phone blow ...` |
+| P3 | L25 a L27 | la tira de `Dilbert` y su credito de reproduccion | **CASO** mas credito | `25: A few months after the Silicon Valley episode, it was Dilbert' ...` |
+| P4 | L29 a L33 | el problema de la palabra radical y el contraste con la Transparencia Radical de Dalio | **POSTURA**, y **FRONTERA DE DOCTRINA** anotada abajo | `29: The word "radical" in Radical Candor has been a mixed blessing ...` |
+| **P5** | **L35 a L37** | **desplegar el marco como recordatorio fisico, y las reglas de uso que lo acompanian** | **PROCEDIMIENTO. Da candidato** | `35: Since the term "Radical Candor" has entered the lexicon, I'm s ...` |
+| P6 | L39 a L47 | `COMPASSIONATE CANDOR`: empatia ruinosa contra franqueza compasiva, con Bloom, Halifax y Weiner | **DEFINICION** mas tres atribuciones | `39: COMPASSIONATE CANDOR` |
+| P7 | L49 a L59 | las relaciones en el centro del oficio, y el cierre de la empresa de software | **POSTURA** mas **CASO** | `49: PUT YOUR PHONE AWAY, AND LOOK PEOPLE IN THE EYE` |
+| P8 | L61 a L69 | diversidad e inclusion, las preguntas del publico y las cuatro del libro siguiente | **POSTURA** mas **ANUNCIO de otro libro** | `61: DIVERSITY AND INCLUSION` |
+| P9 | L71 a L75 | como una cultura se vuelve toxica, escalon a escalon | **ADVERTENCIA.** Es el discutible de esta unidad | `71: DON'T LET YOUR CULTURE BECOME TOXIC` |
+| P10 | L77 a L79 | el cierre de la unidad | **POSTURA** | `77: * * *` y `79: I HOPE THAT you will join me in making sure that the ideas in ...` |
+
+### `cap_02.md`, `unidad: Introduction`, 11 piezas
+
+| P | lineas | que es | veredicto de mina | la salida de `sed -n`, pegada |
+|---|---|---|---|---|
+| P1 | L9 a L9 | el rotulo de la unidad | **NO SE MINA**: paratexto | `9: INTRODUCTION` |
+| P2 | L11 a L17 | el jefe que la humillaba, la fundacion de Juice y la llegada de Bob | **CASO** | `11: LIKE MOST OF US, I once had a terrible boss` |
+| P3 | L19 a L27 | el momento bisagra, las tres razones por las que no lo dijo, y lo que el falso elogio le hizo a Bob | **CASO**, y es la pieza que mas parece nodo sin serlo | `19: * * *` y `21: LET'S STOP RIGHT here for a second. If you're a manager, you k ...` |
+| P4 | L29 a L31 | los diez meses de repetir el error, el resentimiento, y el contagio al equipo | **CASO** mas **MECANISMO descrito** | `29: To make matters worse, I kept making the same mistake over and ...` |
+| P5 | L33 a L39 | el despido en la cafeteria, las dos preguntas de Bob, y la caida de la empresa | **CASO** | `33: As I faced the prospect of losing my team, I realized I couldn ...` |
+| P6 | L41 a L45 | la llamada a Sheryl Sandberg y las veintisiete entrevistas | **CASO** | `41: GOOGLE: FREE AT WORK` |
+| P7 | L47 a L59 | Matt Cutts gritandole a Larry Page, y lo que ella probo en su equipo a partir de ahi | **CASO**, con **cuatro tecnicas NOMBRADAS y remitidas a otra parte del libro** | `47: * * *` y `49: SHORTLY AFTER I joined Google, I witnessed an impressive displ ...` |
+| P8 | L61 a L69 | Apple University, la clase `Managing at Apple`, y las rocas contra las estrellas | **CASO** mas **DEFINICION** | `61: APPLE: "WE HIRE PEOPLE WHO TELL US WHAT TO DO, NOT THE OTHER W ...` |
+| P9 | L71 a L77 | Google de abajo arriba contra Apple, y las cinco contraposiciones de lo que hace un jefe | **POSTURA** | `71: * * *` y `73: GOOGLE IS FAMOUSLY viewed as a bottom-up company, one that emp ...` |
+| P10 | L79 a L93 | el video de Jobs sobre la critica, el *tu trabajo es una porqueria*, y el *es Eslovaquia, zoquete* | **CASO** mas **POSTURA** | `79: YOUR RELATIONSHIPS ARE CORE TO YOUR JOB` |
+| P11 | L95 a L107 | por que Silicon Valley sirve de laboratorio, las relaciones que no escalan, y el nombre del termino | **POSTURA** mas **DEFINICION** | `95: * * *` y `97: SILICON VALLEY WAS an ideal setting in which to explore the re ...` |
+
+### `cap_03.md`, `unidad: How to Use This Book`, 5 piezas
+
+| P | lineas | que es | veredicto de mina | la salida de `sed -n`, pegada |
+|---|---|---|---|---|
+| P1 | L9 a L9 | el rotulo de la unidad | **NO SE MINA**: paratexto | `9: HOW TO USE THIS BOOK` |
+| P2 | L11 a L15 | a quien va dirigido el libro, y que traen la Parte I y la Parte II | **POSTURA** mas **MAPA del libro** | `11: I'VE WRITTEN THIS BOOK WITH the end user` |
+| **P3** | **L17 a L17** | **el reparto de la semana de cuarenta horas del jefe, con sus partidas numeradas** | **PROCEDIMIENTO. Da candidato** | `17: As you read on, you might occasionally feel overwhelmed by the ...` |
+| P4 | L19 a L21 | el jefe del jefe, recursos humanos y formacion, y la dificultad aniadida de la diversidad | **POSTURA** | `19: While this book was written very much with you, the boss, in m ...` |
+| P5 | L23 a L29 | la cabecera de la `PARTE I` y el titulo del capitulo 1, que ya es del tramo siguiente | **NO SE MINA**: paratexto, **y pertenece a `cap_04`** | `23: PART I` |
+
+## I.3.2. LA COMPROBACION DE HUECOS Y SOLAPES, CORRIDA A MAQUINA
+
+*Es el remedio que la ACTA 12 encargo, que la vuelta 13 aplico a `cap_11` (92 de 92) y
+por el cual el auditor se creyo aquella cifra. **Aqui va con la forma de la TAREA 1.d:
+total, filtrado y residuo.***
+
+    $ python -c "cruza las 31 piezas de arriba contra las lineas no vacias del cuerpo"
+
+    cap_00  TOTAL lineas no vacias del cuerpo (L9 en adelante): 25
+            FILTRADO cubiertas por alguna pieza            : 25
+            RESIDUO  huecos: 0 -> []    solapes: 0 -> []    fuera del cuerpo: 0 -> []
+            comprobacion 25 + 0 = 25 -> CUADRA
+
+    cap_01  TOTAL lineas no vacias del cuerpo (L9 en adelante): 36
+            FILTRADO cubiertas por alguna pieza            : 36
+            RESIDUO  huecos: 0 -> []    solapes: 0 -> []    fuera del cuerpo: 0 -> []
+            comprobacion 36 + 0 = 36 -> CUADRA
+
+    cap_02  TOTAL lineas no vacias del cuerpo (L9 en adelante): 50
+            FILTRADO cubiertas por alguna pieza            : 50
+            RESIDUO  huecos: 0 -> []    solapes: 0 -> []    fuera del cuerpo: 0 -> []
+            comprobacion 50 + 0 = 50 -> CUADRA
+
+    cap_03  TOTAL lineas no vacias del cuerpo (L9 en adelante): 11
+            FILTRADO cubiertas por alguna pieza            : 11
+            RESIDUO  huecos: 0 -> []    solapes: 0 -> []    fuera del cuerpo: 0 -> []
+            comprobacion 11 + 0 = 11 -> CUADRA
+
+    EL LOTE DE HOY: TOTAL 122 lineas de cuerpo, FILTRADO 122 cubiertas,
+                    RESIDUO 0 sin cubrir -> CUADRA
+
+> ## **122 DE 122, CERO HUECOS, CERO SOLAPES, CERO LINEAS CUBIERTAS FUERA DEL CUERPO.**
+>
+> **La tercera cifra la aniado yo y no estaba en el remedio.** Un rango mal escrito que
+> se pase del final del fichero **no produce hueco ni solape**: produce lineas cubiertas
+> que no existen, y la comprobacion vieja lo habria dado por bueno. **Con las tres, un
+> rango torcido no tiene por donde escaparse.**
+
+| unidad | piezas | lineas de cuerpo | piezas que dan candidato |
+|---|---:|---:|---:|
+| `cap_00` | 5 | 25 | **0** |
+| `cap_01` | 10 | 36 | **1** (P5) |
+| `cap_02` | 11 | 50 | **0** |
+| `cap_03` | 5 | 11 | **1** (P3) |
+| **total** | **31** | **122** | **2** |
+
+---
+
+## I.3.3. `cap_00.md`, `unidad: Copyright Page`: **CERO CANDIDATOS, Y LO QUE SI DA**
+
+*El encargo me manda **medir que es antes de tratarlo como capitulo**, igual que la
+vuelta 13 hizo con el epilogo. **Lo medi antes de leer el cuerpo** y esta en `I.0`:*
+
+    $ sed -n '4,5p' fuentes/scott_radical_candor/cap_00.md
+      unidad: Copyright Page
+      titulo_textual: Copyright
+
+### EL JUICIO, Y NO ES PARADA
+
+> **`cap_00.md` NO DECLARA SER UN CAPITULO. Declara ser la pagina de copyright.** Asi que
+> **la tercera condicion de parada del encargo no puede dispararse aqui**, porque su
+> sujeto es *un fichero que declara `unidad: Cap. N`*, y este declara otra cosa.
+
+**Y EL PROPIO ENCARGO YA LO DEJA RESUELTO POR ADELANTADO, con estas palabras:** *un
+fichero de frente, un epilogo, unos agradecimientos o un indice que no dan procedimiento
+NO son parada: se juzgan, se dice que dan cero y se sigue.* **Eso hago.**
+
+**CERO PROCEDIMIENTOS, Y LA RAZON CABE EN UNA LINEA:** las 25 lineas de cuerpo son
+enlaces de navegacion del libro electronico, un reclamo de boletin, un aviso legal, el
+bloque de copyright, tres ISBN y una linea de edicion. **No hay un solo imperativo
+dirigido al lector que no sea *sign up for our newsletters* y *please contact Macmillan
+Special Markets*, que son de la editorial y no del libro.** Fabricar un nodo de aqui
+seria el fallo exacto que `D.30` mide.
+
+### LO QUE SI DA, Y ES COMPROBABLE: **LA VERIFICACION DE LA FICHA CANONICA CONTRA SU PROPIA PAGINA**
+
+*`EXTRACTOR.md` 12.1 pone la fuente canonica antes del primer nodo del libro. **La ficha
+existe desde antes de mi vuelta y yo no la escribi. Lo que hago es abrirla contra la
+pagina que la sostiene**, campo por campo, que es lo unico que convierte una ficha en
+algo verificado en vez de algo tecleado.*
+
+| campo de `FUENTES_CANONICAS.json` | lo que dice | la linea de `cap_00.md` que lo sostiene | |
+|---|---|---|---|
+| `autor` | Kim Scott | `39: RADICAL CANDOR: FULLY REVISED & UPDATED EDITION. Copyright (c) 2019 by Kim Scott.` | **casa** |
+| `anio` | 2019 | la misma `L39`, y ademas `57: First Edition: October 2019` | **casa, y por dos sitios** |
+| editorial | St. Martin's Press, imprint de St. Martin's Publishing Group | `37: First published in the United States by St. Martin's Press, an imprint of St. Martin's Publishing Group` | **casa palabra por palabra** |
+| ciudad | Nueva York | `39: ... address St. Martin's Publishing Group, 120 Broadway, New York, NY 10271.` | **casa** |
+| ISBN tapa dura | 978-1-250-23537-4 | `49: ISBN 978-1-250-23537-4 (hardcover)` | **casa** |
+| ISBN libro electronico | 978-1-250-23538-1 | `51: ISBN 978-1-250-23538-1 (ebook)` | **casa** |
+| `titulo_completo` | Radical Candor: Fully Revised **and** Updated Edition | `39: RADICAL CANDOR: FULLY REVISED **&** UPDATED EDITION` | **casa, con el `&` desarrollado** |
+
+**LA UNICA DIFERENCIA ES EL `&` ESCRITO `and`, Y NO LA LLAMO CAIDA.** Es la misma
+decision que la casa ya toma al bajar comillas tipograficas: **desarrollar un signo no es
+cambiar un dato.** Lo digo porque una tabla de verificacion que solo publica los aciertos
+no es una verificacion.
+
+**Y UNA COSA QUE LA FICHA NO RECOGE Y LA PAGINA SI:** `53: eISBN 9781250235381`, que es
+el mismo ISBN de libro electronico sin guiones. **No propongo aniadirlo**: no es un dato
+distinto.
+
+### Y EL HALLAZGO DE ESTA UNIDAD, QUE ES UNA CIFRA QUE ESTABA ABIERTA EN EL REPO
+
+**`docs/BANDEJA_DE_ENTRADA.md` deja una casilla sin cerrar para este libro**, y la abro:
+
+    $ grep -n "scott_radical_candor" docs/BANDEJA_DE_ENTRADA.md
+    21:| `scott_radical_candor` | 15 | `cap_00..14` | 108.161 | 107.943 | 14 de 15 | |
+    63:**`scott_radical_candor/cap_00` no tiene palabras declaradas en el MANIFIESTO**
+    64:(por eso 14 de 15): es su pagina de copyright, y de ahi sale su ficha.
+
+**EL DOCUMENTO DICE QUE FALTA UNA UNIDAD DE QUINCE Y NO DICE CUANTO FALTA. LO MIDO:**
+
+    $ for f in fuentes/scott_radical_candor/cap_*.md; do sed -n '8,$p' $f | wc -w; done
+    TOTAL, las quince unidades          : 108.161
+    FILTRADO, las catorce declaradas    : 107.943
+    RESIDUO, cap_00                     :     218
+    comprobacion: 107.943 + 218 = 108.161 -> CUADRA
+
+> ## **EL HUECO DE 218 PALABRAS ES EXACTAMENTE `cap_00`, Y CON ESO LA CIFRA DEL LIBRO
+> QUEDA CERRADA.**
+>
+> **Lo que esto prueba no es que el recuento sea bonito: es que el `108.161` de
+> `FUENTES_CANONICAS.json` SI cuenta la pagina de copyright**, aunque el MANIFIESTO del
+> recorte no le declarase palabras. **La omision del MANIFIESTO no se propago a la tabla
+> de esta casa.** Era una de las nueve inconsistencias que `BANDEJA_DE_ENTRADA.md` deja
+> anotadas, y **esta se cierra sin tocar ningun fichero.**
+>
+> **Y es una cifra que solo se puede cerrar desde aqui:** hace falta abrir `cap_00`, que
+> es justo la unidad que nadie iba a minar.
+
+**NO TOCO `docs/BANDEJA_DE_ENTRADA.md`.** No es mi sede (`EXTRACTOR.md` 14) y la cifra que
+hay escrita ahi **no es falsa**: dice `14 de 15` y son 14 de 15. **Lo que aporto es el
+tamanio del hueco, y va aqui, que es donde propongo.**
+
+| medida de `cap_00` | cifra |
+|---|---:|
+| piezas de frontera | **5** |
+| lineas de cuerpo | **25** |
+| palabras de cuerpo | **218** |
+| **candidatos** | **0** |
+| pasos escritos | **0** |
+| pasos PUENTE | **0** |
+| **por ciento de pasos inventados** | **sin definir: denominador cero** |
+
+**SOSTENGO LA CASILLA `SIN DEFINIR` CONTRA LA TENTACION DE PONER UN CERO**, que es la
+misma disciplina que la vuelta 13 aplico a `cap_12` y que el auditor firmo en su seccion
+4.1: **cero puentes sobre cero pasos no es cero por ciento, es una division sin
+denominador**, y un `0,00` ahi bajaria falsamente la media del lote.
+
+---
+
+## I.3.4. `cap_02.md`, `unidad: Introduction`: **CERO CANDIDATOS DE 3.908 PALABRAS, Y LA DEFENSA ENTERA**
+
+*Es la afirmacion mas fuerte de esta vuelta y la que primero hay que atacar, asi que la
+escribo con los dos lados abiertos y con la lectura que me condena delante. **Una unidad
+de 3.908 palabras, la mas larga de mi tramo, dando cero es una cifra que pide prueba y no
+firma.***
+
+### PRIMERO, LA LECTURA QUE VA CONTRA MI CONCLUSION
+
+**Esta unidad NO es material de cierre.** Es la `Introduction` de un libro de gestion, y
+en el lote 3 **la `Introduction` de Zhuo SI dio candidatos** (vuelta 9). Asi que **no me
+puedo escudar en la cabecera**: que diga `Introduction` y no `Cap. N` me libra de la
+condicion de parada, **no me libra de extraer**. Ademas la unidad contiene, escritas y
+enumerables: **tres razones** por las que ella no dio la critica, **cuatro tecnicas** de
+gestion con nombre propio, **cinco contraposiciones** de lo que hace un jefe, y **dos
+mandatos en segunda persona**. **Cualquiera de esas cuatro listas parece un inventario
+del libro, que es la cara positiva de `D.27`.** Si alguna lo fuera, aqui habria nodo y mi
+cero seria un capitulo dejado sin minar.
+
+**ESO ES LO QUE HAY QUE DESMONTAR, UNA POR UNA. Ninguna de las cuatro sobrevive, y la
+razon de cada una es distinta.**
+
+### EL BARRIDO DE MANDATOS, CORRIDO A MAQUINA ANTES DE OPINAR
+
+*No quiero decidir por impresion de lectura. **Busco a maquina toda forma de mandato en
+las tres unidades con texto**, que es lo que separa una postura de un procedimiento.*
+
+    $ grep -noniE "\b(you (need|have|should|must|can|do need|don't need) to|use th|please do not|
+                    don't write|take a deep breath|block out|make photocopies|put them on)\b" ...
+
+    cap_01 :  35 You can cut | 35 make photocopies | 35 put them on | 37 Please do NOT |
+              79 You can create | 79 You can love
+    cap_02 :  83 You need to | 93 you need to | 93 you have to | 93 you have to
+    cap_03 :  17 Take a deep breath | 17 You do need to | 17 block out
+
+| unidad | lineas de cuerpo | **sitios con mandato** | en cuantas lineas distintas |
+|---|---:|---:|---:|
+| `cap_01` | 36 | **6** | **2** (`L35`, `L37`) mas `L79`, que es el cierre |
+| `cap_02` | 50 | **4** | **2** (`L83`, `L93`) |
+| `cap_03` | 11 | **3** | **1** (`L17`) |
+
+> **`cap_02` ES LA UNIDAD MAS LARGA DE LAS TRES Y LA QUE MENOS MANDATOS TIENE POR LINEA.**
+> Eso no decide nada por si solo, **pero dice donde hay que mirar**: si hay nodo en
+> `cap_02`, esta en `L83` o en `L93`. **Abro las dos.**
+
+### LAS DOS LINEAS DE MANDATO, ABIERTAS Y TUMBADAS POR `D.27` RESTRICCION 2
+
+    $ sed -n '83p' fuentes/scott_radical_candor/cap_02.md
+    83: In Managing at Apple, we often played a video of Steve explaining his approach to
+        giving criticism. He captured something very important: "You need to do that in a
+        way that does not call into question your confidence in their abilities but
+        leaves not too much room for interpretation ... and that's a hard thing to do."
+
+**EL CRITERIO ENTERO ES UN ADJETIVO DE ADECUACION: *in a way that*.** Y el propio libro
+cierra la cita con ***and that's a hard thing to do***, que es el texto diciendo en voz
+alta que **no pone el como**. `D.27` restriccion 2: *el adjetivo de adecuacion en el
+sitio del criterio TUMBA, aunque haya inventario.* **Aqui ni siquiera hay inventario.**
+
+    $ sed -n '93p' fuentes/scott_radical_candor/cap_02.md
+    93: ... The point is, rather, that if you are someone who is most comfortable
+        communicating in that way, you have to build relationships of trust that can
+        support it, and you have to hire people who can adapt to your style.
+
+**DOS MANDATOS, Y LOS DOS LLEVAN SU ADJETIVO DE ADECUACION PEGADO:** *relationships of
+trust **that can support it***, *people **who can adapt to your style***. **Cualquier
+paso que yo escribiese para construir esa confianza o para contratar a esa gente lo
+escribiria yo**, y un nodo cuyos pasos invento el extractor no es del libro
+(`EXTRACTOR.md` 9.1).
+
+### LAS TRES LISTAS QUE PARECEN INVENTARIO Y NO LO SON, CADA UNA POR SU MOTIVO
+
+**1. LAS CUATRO TECNICAS DE `L53`: es el caso literal de *solo el nombre de otro*, y el
+libro me dice donde vive el procedimiento.**
+
+    $ sed -n '53p' fuentes/scott_radical_candor/cap_02.md
+    53: ... We experimented with not making any decisions in my staff meeting, instead
+        pushing them out to the people closest to the facts. ... we experimented with
+        "manager fix-it weeks" and carefully designed "manager feedback sessions."
+
+    $ sed -n '55p' fuentes/scott_radical_candor/cap_02.md
+    55: I'll explain all these techniques and more in the second half of this book, ...
+
+> **NOMBRAR NO ES PROCEDIMENTAR** (`EXTRACTOR.md` 9, `P.5.1`). **Una linea solo cuenta
+> como procedimiento propio si trae procedimiento propio, y no solo el nombre de otro.**
+> Aqui el libro nombra cuatro y **remite expresamente a la segunda mitad de si mismo.**
+>
+> **Y AÑADO EL DAÑO CONCRETO DE EXTRAERLAS AQUI, que es lo que hace que esto no sea
+> escrupulo:** esas cuatro tecnicas viven desarrolladas en `cap_08` a `cap_14`, que son
+> tramo de vueltas siguientes. **Un nodo escrito hoy desde `L53` fabricaria el gemelo de
+> su propio donante**, que es exactamente lo que `P.19` manda evitar, **y lo fabricaria
+> pobre**, porque hoy solo tengo el nombre.
+
+**2. LAS CINCO CONTRAPOSICIONES DE `L77`: inventario de FINES, y `D.27` restriccion 1 lo
+excluye por escrito.**
+
+    $ sed -n '77p' fuentes/scott_radical_candor/cap_02.md
+    77: At Apple, as at Google, a boss's ability to achieve results had a lot more to do
+        with listening and seeking to understand than it did with telling people what to
+        do; more to do with debating than directing; more to do with pushing people to
+        decide than with being the decider; more to do with persuading than with giving
+        orders; more to do with learning than with knowing.
+
+**Son cinco y estan nombradas una a una, asi que el inventario es real.** Lo que falla es
+**de que es inventario**: `D.27` restriccion 1 dice que **un inventario de METAS o de
+FINES no cuenta, porque nombrar adonde hay que llegar sigue siendo nombrar.** Y aqui ni
+siquiera hay mandato: el verbo es **`had a lot more to do with`**, en pasado y en
+tercera, **describiendo lo que ella observo en dos empresas.** No hay condicion de
+activacion, no hay entregable, y no hay nada que ejecutar.
+
+**3. LAS TRES RAZONES DE `L23`: es un CASO, y el caso no es la casa.**
+
+    $ sed -n '23p' fuentes/scott_radical_candor/cap_02.md
+    23: What happened? First, I liked Bob, and I didn't want to come down too hard on him.
+        ... Second, unless his resume and references were bogus, he'd done great work in
+        the past. ... Third, I could fix the document myself for now, and that would be
+        faster than teaching him how to re-write it.
+
+**Tres razones numeradas por el propio libro. Y aun asi no dan nodo**, por el manual 3.5,
+que `EXTRACTOR.md` 9 recoge entre los tres casos con nombre propio: **el caso no es la
+casa. La doctrina vive en su nodo y el caso entra como ejemplo nombrado dentro de ella.**
+
+> **Y LA SENIAL BARATA QUE EL PROPIO MANUAL DA PARA CAZAR ESTE ERROR ME SALE POSITIVA SI
+> LO COMETO:** *el entregable del caso lleva un dato del caso.* **Cualquier nodo que yo
+> escribiese desde `L23` tendria a Bob dentro**, porque las tres razones son razones **de
+> ella sobre el**: la primera es que le caia bien, la segunda es su curriculum, la
+> tercera es ese documento concreto. **No son las tres razones por las que un jefe
+> cualquiera calla: son las tres por las que ella callo aquella vez.**
+>
+> **DONDE VIVE LA DOCTRINA, Y LO DIGO PARA QUE SE PUEDA COMPROBAR MAS ADELANTE:** el caso
+> de Bob es el ejemplar canonico de la **Empatia Ruinosa** de este libro, y el cuadrante
+> se desarrolla en la Parte I, que empieza en `cap_04`. **Bob entra alli, como ejemplo
+> nombrado dentro del nodo de la doctrina, y no aqui como nodo propio.**
+
+**Y LA VARIANTE GENERAL DE `L27`, que es la que mas cerca estuvo de convencerme**, porque
+esa si habla en segunda persona y no de Bob: *You don't want to hurt anyone's feelings
+... You don't want that person or the rest of the team to think you're a jerk. Plus,
+you've been told since you learned to talk, "If you don't have anything nice to say,
+don't say anything at all."* **Tres obstaculos nombrados, dirigidos al lector.** Pero son
+**obstaculos, no medios ni etapas**, y la linea que los cierra es `Management is hard`,
+que es una postura. **No hay nada que ejecutar: hay algo que entender.**
+
+### EL VEREDICTO DE LA UNIDAD
+
+> ## **`cap_02.md` DA CERO CANDIDATOS, Y NO ES PARADA.**
+>
+> **No es parada porque su cabecera no dice `Cap. N`** (dice `Introduction`), que es el
+> sujeto que el encargo fijo. **Y aunque lo dijera, la condicion existe *para cazar un
+> capitulo de doctrina que se te resista*, y este no se me resiste: lo he leido entero y
+> se exactamente que es.** Es la unidad donde la autora cuenta como perdio a Bob y como
+> aprendio en Google y en Apple. **Es el caso fundacional del libro, y un caso
+> fundacional se guarda para meterlo dentro del nodo de su doctrina.**
+
+| medida de `cap_02` | cifra |
+|---|---:|
+| piezas de frontera | **11** |
+| lineas de cuerpo | **50** |
+| palabras de cuerpo | **3.908** |
+| sitios con mandato en segunda persona | **4**, en **2** lineas |
+| **candidatos** | **0** |
+| pasos escritos | **0** |
+| pasos PUENTE | **0** |
+| **por ciento de pasos inventados** | **sin definir: denominador cero** |
+
+### **LO MARCO DISCUTIBLE, Y DIGO POR DONDE SE ME CAERIA**
+
+> **ES EL DISCUTIBLE MAS GORDO DE ESTA VUELTA Y LO PONGO YO ENCIMA DE LA MESA ANTES DE
+> SABER SI ACIERTO** (`EXTRACTOR.md` 8).
+>
+> **Por donde se me cae:** si el auditor lee que **`L53` mas `L77` juntas** dan un nodo de
+> *que hace de verdad un jefe cuando no puede tirar de autoridad*, con las cinco
+> contraposiciones como pasos y las cuatro tecnicas como ejemplos nombrados, **entonces
+> he dejado un nodo sin minar en la unidad mas larga de mi tramo.** Es una lectura
+> sostenible y la escribo yo porque me la planteo yo.
+>
+> **Por que no la sigo:** porque para escribir esos pasos tendria que **convertir un
+> `had more to do with` en un imperativo**, y eso es exactamente lo que `D.30` llama
+> puente. **El libro no manda ahi: observa.** Y porque las cuatro tecnicas estan remitidas
+> por el propio texto a la segunda mitad del libro, **donde las voy a encontrar con sus
+> pasos dentro de tres o cuatro vueltas.**
+>
+> **Y LA PRUEBA QUE ME OFREZCO A PERDER:** si en `cap_08` a `cap_14` aparecen *manager
+> fix-it weeks* y *manager feedback sessions* con sus pasos, mi cero de hoy era el
+> correcto y ademas evito un duplicado. **Si NO aparecen, entonces el libro las nombro
+> aqui y en ningun otro sitio, y mi cero perdio material que no vuelve.** Queda escrito
+> para que se pueda comprobar contra el propio lote.
+
+---
+
+## I.3.5. `cap_01.md`, `unidad: Preface`: LO QUE **NO** DA NODO, Y LA FRONTERA DE DOCTRINA QUE SI DA
+
+*El candidato que esta unidad si da va en `I.3.7`, con su aduana. **Aqui van los nueve
+noes**, porque un capitulo que solo publica sus sies no deja comprobar nada.*
+
+### LOS NUEVE NOES, PIEZA A PIEZA
+
+| P | lineas | por que NO da nodo | la regla que lo dice |
+|---|---|---|---|
+| P1 | L9 | es el rotulo de la unidad | paratexto |
+| P2 | L11 a L23 | el episodio de `Silicon Valley`, la parodia de `Rad Can`, el personaje de Ben Burkhardt y la portada falsa: **es lo que le paso a la autora**, y lo que saca de ahi es *some people were using Radical Candor as a license to behave like jerks* | **CASO** (manual 3.5). Su doctrina es el marco, y el marco esta en P5 |
+| P3 | L25 a L27 | la tira de `Dilbert` y su linea de credito de reproduccion | **CASO** mas credito editorial |
+| P4 | L29 a L33 | por que la palabra *radical* fue una bendicion a medias, y que quiere decir con ella | **DEFINICION** mas **POSTURA**. Y la mitad de Dalio es **frontera**, abajo |
+| P6 | L39 a L47 | `COMPASSIONATE CANDOR`: en que se diferencian empatia ruinosa y franqueza compasiva, con Paul Bloom, Joan Halifax y Jeff Weiner | **DEFINICION.** Un concepto sin nada que hacer no es nodo (`EXTRACTOR.md` 9) |
+| P7 | L49 a L59 | las relaciones en el centro del oficio, y como monto y cerro una empresa de software para automatizar el metodo | **POSTURA** mas **CASO** |
+| P8 | L61 a L69 | diversidad e inclusion: las preguntas que le hace el publico y las cuatro que su libro siguiente promete responder | **POSTURA** mas anuncio de **otro libro**. Cuatro preguntas **sin respuesta** no son cuatro pasos |
+| P9 | L71 a L75 | como una cultura se vuelve toxica | **ADVERTENCIA**, y es **el discutible de esta unidad**. Abajo entero |
+| P10 | L77 a L79 | el cierre: *espero que te unas a mi para asegurar que estas ideas no se usen de excusa* | **POSTURA** |
+
+### EL DISCUTIBLE DE `cap_01`: **P9, LA CULTURA QUE SE VUELVE TOXICA**
+
+*Lo marco **antes** de saber si acierto, y escribo primero la lectura que dice que SI es
+nodo, que es la que me costaria el capitulo si tiene razon.*
+
+**LA LECTURA QUE DICE QUE SI ES NODO.** El texto nombra los escalones **uno a uno y en
+orden**, que es la forma de un inventario de ETAPAS:
+
+    $ sed -n '73p' fuentes/scott_radical_candor/cap_01.md
+    73: SUCCESSFUL START-UPS often begin with a culture where people challenge one another
+        directly and even fiercely, but also show they care personally. That's because
+        they start small, involve people who get to know each other really well, and are
+        fighting for survival. However, as the business grows and new people join the
+        firm, it's impossible to know everyone's name, let alone to have strong
+        relationships with everyone. ...
+
+Y el titulo de la seccion es **un imperativo en toda regla**:
+
+    $ sed -n '71p' fuentes/scott_radical_candor/cap_01.md
+    71: DON'T LET YOUR CULTURE BECOME TOXIC
+
+**Un mandato explicito mas seis escalones nombrados en orden parece exactamente lo que
+`D.27` llama inventario propio del libro.** Con esa lectura sale un nodo de *diagnosticar
+la deriva toxica de la cultura de tu equipo*, con los escalones como pasos de
+comprobacion.
+
+**POR QUE NO LA SIGO, Y SON TRES RAZONES QUE NO SE APOYAN UNA EN OTRA:**
+
+1. **El inventario es de lo que PASA, no de lo que se hace.** Los seis escalones estan
+   escritos en tercera persona y en presente descriptivo (*the culture becomes toxic*,
+   *people who behave badly begin to win*). **No hay un solo imperativo dentro del cuerpo
+   de la pieza**: el unico esta en el rotulo. **Un mandato mas una descripcion es la
+   definicion de postura**, y `EXTRACTOR.md` 9 lo dice con estas palabras: **una postura
+   no ejecuta una busqueda.**
+2. **El propio libro dice que el remedio esta en otro sitio y no lo pone aqui.** La linea
+   siguiente es la que lo delata:
+
+        $ sed -n '75p' fuentes/scott_radical_candor/cap_01.md
+        75: That's the bad news. The good news is that many companies large and small are
+            now taking active measures to shift to a culture in which caring personally
+            and challenging directly go hand in hand. ...
+
+   **`active measures` y no una sola medida nombrada.** Es el adjetivo de adecuacion en
+   el sitio del criterio, que `D.27` restriccion 2 dice que **tumba aunque haya
+   inventario**. Y es el ejemplar canonico que `EXTRACTOR.md` 9.1 pone: *medidas
+   apropiadas*.
+3. **Y la razon que mas peso tiene, porque es la que mide el dano de equivocarme:** esta
+   pieza es el resumen de un mecanismo que el libro desarrolla en la Parte I, donde viven
+   los cuatro cuadrantes con sus nombres. **Un nodo escrito hoy desde un resumen seria el
+   gemelo pobre del nodo que sale de su capitulo** (`P.19`, y la misma razon por la que
+   `cap_02` da cero).
+
+> **POR DONDE SE ME CAE ESTE:** si el auditor lee que **seis escalones nombrados en orden
+> son etapas y no fines**, entonces P9 da nodo y yo me deje uno. **Es la lectura mas
+> sostenible contra mi de esta unidad y la escribo yo.** Lo que la sostendria es que
+> `D.27` admite *etapas* expresamente, y estas lo son de un proceso real.
+>
+> **Lo que la hunde, si me preguntan:** que **`D.27` pide etapas U OBJETOS DE TRABAJO**, y
+> el trabajo aqui no es de nadie: **la cultura se degrada sola.** No hay quien lo ejecute,
+> y la prueba del manual es justamente esa: *la prueba de que una linea es un
+> procedimiento es que existe quien lo ejecuta.*
+
+### LA FRONTERA DE DOCTRINA QUE ESTA UNIDAD SI DA: **SCOTT CONTRA DALIO SOBRE LA MISMA PALANCA**
+
+*El encargo me deja escrita la frontera de la vuelta 13 (Zhuo contra `Who` sobre atar
+dinero a un numero) **y me dice que si aparece un tercer libro tirando de esa misma
+palanca se le aniade y no se reabre.** Lo que aparece aqui **es otra palanca distinta**,
+asi que **no la aniado a aquella: abro una nueva y digo expresamente que son dos.***
+
+    $ sed -n '31p' fuentes/scott_radical_candor/cap_01.md
+    31: ... Another reason why Radical Candor is so often misunderstood is that it's
+        confused with Ray Dalio's Radical Transparency. While Dalio and I are very much
+        aligned on the importance of challenging directly, there's not much focus on care
+        personally in his "manage as someone operating a machine to achieve a goal"
+        philosophy. Furthermore, relationships require some privacy, so while I am all
+        for transparency when it comes to business results, I don't believe that Radical
+        Transparency fosters good working relationships, contributes to psychological
+        safety, or results in a productive, happy culture.
+
+**LA PALANCA ES: CUANTO SE EXPONE EN PUBLICO DENTRO DE UNA ORGANIZACION.** Dalio manda
+transparencia radical; Scott dice que **las relaciones necesitan algo de privacidad** y
+que la transparencia radical **no produce buenas relaciones de trabajo ni seguridad
+psicologica**, aunque se declara a favor de la transparencia **cuando se trata de
+resultados de negocio**.
+
+> ## **LA DECLARO COMO `FRONTERA PENDIENTE DE LA OTRA CASA`, Y DIGO POR QUE NO ES LA MISMA
+> ESPECIE QUE LA DE LA VUELTA 13.**
+>
+> **La de la vuelta 13 tiene sus dos lados dentro de esta forja:**
+> `revisar_incentivos_trampas_equipo` (Zhuo, en la bandeja) y
+> `reconocer_recompensar_uso_metodo` (`Who`, vivo en el grafo). **Los dos existen y los
+> dos se pueden abrir.**
+>
+> **Esta tiene un solo lado.** Dalio no es libro de esta casa: **no esta en
+> `ORDEN_DE_LOTES.md` y no tiene clave en `FUENTES_CANONICAS.json`.** Asi que **no hay
+> nodo contra el que declarar frontera, y una frontera de un solo lado no es una
+> frontera: es una postura del autor sobre un tercero.**
+>
+> **QUE HAGO CON ELLA, QUE NO ES NADA Y ES ALGO:** no escribo nodo, no declaro arista y no
+> propongo abrir un lote. **La dejo escrita aqui con su linea**, para que el dia en que
+> esta casa mine a Dalio (si lo mina) **la frontera ya este levantada y no haya que
+> encontrarla dos veces.** Es exactamente el servicio que la frontera de la vuelta 13
+> presta hoy a quien vaya a insertar.
+
+**Y COMPRUEBO QUE NO ES LA MISMA PALANCA QUE LA DE LA VUELTA 13, en vez de suponerlo:**
+aquella es **atar dinero a un numero**; esta es **cuanto se expone en publico**. **No se
+tocan.** Si me hubiera limitado a *aniadirla* a la existente, habria fundido dos
+fronteras distintas en una, **que es la forma de perder las dos.**
+
+### LAS TRES ATRIBUCIONES DE P6, QUE ANOTO Y NO CONVIERTO EN NODO
+
+**`L41` a `L45` traen tres autores citados con obra:** Paul Bloom (*Against Empathy: The
+Case for Rational Compassion*), Joan Halifax, y Jeff Weiner con la parabola del Dalai
+Lama y *compassion is empathy plus action*. **Las tres llevan nota al final del libro**
+(los volados `1`, `2` y `3` estan impresos en el texto).
+
+> **NO LAS EXTRAIGO Y DIGO POR QUE:** `EXTRACTOR.md` 9 pone la cifra del autor en
+> `atribuciones` **dentro de un nodo**, y aqui no hay nodo donde meterlas: P6 es una
+> definicion. **Una atribucion no viaja sola.**
+>
+> **LO QUE SI HAGO ES DEJARLAS LOCALIZADAS**, porque la vuelta 13 midio que **las `Notes`
+> de un libro son el instrumento que data las atribuciones del lote entero**. **Cuando la
+> Parte I de este libro produzca el nodo de la franqueza compasiva, estas tres son suyas.**
+> Queda escrito para que no cueste la vuelta que costo en el lote 3.
+>
+> ### **Y AQUI ME CAZO A MI MISMO ESCRIBIENDO, QUE ES PARA LO QUE SIRVE COMPROBAR ANTES DE FIRMAR**
+>
+> **Habia escrito que su fecha se busca en las `Notes` de `cap_14`. FUI A MIRARLO Y ES
+> FALSO: este recorte NO TRAE `Notes`.** Corro el censo de las quince unidades antes de
+> volver a afirmar nada:
+>
+>     $ for f in fuentes/scott_radical_candor/cap_*.md; do sed -n '4p' $f; done
+>       cap_00 Copyright Page   cap_01 Preface        cap_02 Introduction
+>       cap_03 How to Use This Book                   cap_04 Cap. 1   cap_05 Cap. 2
+>       cap_06 Cap. 3   cap_07 Cap. 4   cap_08 Cap. 5   cap_09 Cap. 6
+>       cap_10 Cap. 7   cap_11 Cap. 8   cap_12 Getting Started
+>       cap_13 Afterword                cap_14 Bonus Chapter
+>
+>     $ grep -ln "^NOTES\|^Notes$" fuentes/scott_radical_candor/*.md
+>       (vacio)
+>
+> **EL RECORTE TIENE OCHO CAPITULOS NUMERADOS Y SIETE UNIDADES SIN NUMERAR, Y NINGUNA ES
+> `Notes`, `Index` NI `Acknowledgments`.** Los tres volados `1`, `2` y `3` de `cap_01`
+> estan impresos en el texto y **apuntan a un aparato que este recorte no incluye.**
+>
+> > **CONSECUENCIA PARA EL LOTE 4 ENTERO, Y LA DIGO AQUI PORQUE ES DONDE LA ENCONTRE:
+> > EL INSTRUMENTO QUE LA VUELTA 13 DESCUBRIO NO EXISTE PARA ESTE LIBRO.** En `zhuo_manager`
+> > las `Notes` del epilogo dataron doce atribuciones que sus capitulos dejaban sin fecha.
+> > **Aqui no hay donde ir a buscar.** Asi que en este lote, **cuando el texto no de la
+> > fecha, `no consta la fecha en el texto` es la respuesta final y no una provisional**, y
+> > **no se debe una vuelta de repesca a este libro.**
+>
+> **Y lo cuento en vez de borrarlo y seguir**, porque el remedio de la TAREA 1.d se compra
+> exactamente asi: **la afirmacion se comprueba mientras se escribe, que es cuando cuesta
+> un segundo.** Esta me habria costado una caida de especie `REPORTE` con mi racha en
+> 2 de 3.
+
+| medida de `cap_01` | cifra |
+|---|---:|
+| piezas de frontera | **10** |
+| lineas de cuerpo | **36** |
+| palabras de cuerpo | **2.846** |
+| piezas que dan nodo | **1** (P5) |
+| **candidatos** | **1** |
+
+---
+
+## I.3.6. `cap_03.md`, `unidad: How to Use This Book`: LOS CUATRO NOES Y EL SI
+
+*Once lineas de cuerpo y 627 palabras: **es la unidad mas corta con texto de mi tramo, y
+la unica de las cuatro cuyo unico sitio con mandato da nodo.** Por eso la trato entera
+aqui.*
+
+| P | lineas | por que NO da nodo | la regla |
+|---|---|---|---|
+| P1 | L9 | el rotulo de la unidad | paratexto |
+| P2 | L11 a L15 | por que escribio el libro y que traen la Parte I y la Parte II: *Part II is the how-to handbook: a step-by-step approach* | **MAPA del libro.** Nombra que la Parte II trae pasos y **no trae ni uno**: es el caso literal de *solo el nombre de otro* |
+| P4 | L19 a L21 | el jefe del jefe, recursos humanos y formacion, y que las diferencias de genero, raza y cultura hacen mas dificil la franqueza | **POSTURA**. El unico mandato de la pieza es *learning how to push ourselves and others past this discomfort*, con su adjetivo de adecuacion puesto |
+| P5 | L23 a L29 | la cabecera `PART I`, el subtitulo `A NEW MANAGEMENT PHILOSOPHY`, el `1.` y el titulo `BUILD RADICALLY CANDID RELATIONSHIPS` | **NO SE MINA**: paratexto, **y ademas es cabecera del tramo siguiente.** Lo digo expresamente porque es la unica pieza de mi frontera que pertenece a `cap_04` |
+
+**P5 ES UNA TRAMPA BARATA Y LA SENIALO PARA QUIEN VENGA DETRAS.** El recorte mete el
+titulo del capitulo 1 al final de `cap_03.md`. **Quien mine `cap_04` tiene que saber que
+su titulo ya salio aqui**, para no contarlo dos veces ni darlo por perdido. **No lo mino
+yo y no lo mina nadie: es un rotulo.**
+
+### **EL SI: P3, `L17`, Y ES UNA SOLA LINEA DE 164 PALABRAS**
+
+    $ python -c "cuenta las palabras de la linea 17 de cap_03.md"  ->  164
+
+    $ sed -n '17p' fuentes/scott_radical_candor/cap_03.md
+    17: As you read on, you might occasionally feel overwhelmed by the number of things
+        I'm suggesting you do as a manager. Take a deep breath. My goal is to save you
+        time, not to litter your calendar with meetings. You do need to spend time with
+        your direct reports to be a great boss, but you don't need to spend ALL your time
+        with them. If you implement every single idea, tool, and technique in this book,
+        the time you dedicate to managing your team will come to approximately ten hours
+        a week, and those ten hours should save you enormous lost time and headaches
+        later. I'll also suggest you block out about fifteen hours a week for you to
+        think and execute independently in your area of expertise. That leaves another
+        fifteen hours in a forty-hour work week. Hopefully you can claim them as your
+        own, though if you're like me you'll have to use most of them to deal with the
+        unpredictable.
+
+**ES LA CARA POSITIVA DE `D.27` EN SU FORMA MAS LIMPIA QUE HE VISTO:** el libro pone **su
+propio inventario, numerado por el**, y son **partidas de tiempo**, que son medios de
+trabajo y no metas. **10 mas 15 mas 15 son 40**, y las cuatro cifras las escribe el texto.
+**Escribir los pasos es transcribir; no hay nada que completar.**
+
+**Y LA PRUEBA DEL MANUAL SALE POSITIVA:** *la prueba de que una linea es un procedimiento
+es que existe quien lo ejecuta.* **Aqui lo ejecuta el lector, con un calendario delante, y
+el entregable es su semana repartida.**
+
+> **DICHO LO CUAL, LO MARCO DISCUTIBLE, Y ES EL SEGUNDO DE ESTA VUELTA.**
+>
+> **Por donde se me cae:** la linea esta escrita como **tranquilizacion** (*Take a deep
+> breath*), no como instruccion, y **solo uno de sus tres numeros lleva imperativo
+> propio** (*block out about fifteen hours*). Los otros dos van en futuro descriptivo
+> (*will come to approximately ten hours*, *That leaves another fifteen hours*). **Quien
+> lea que un futuro descriptivo no es un paso, tumba cuatro de mis siete pasos y con
+> ellos el nodo.**
+>
+> **Por que lo sostengo igual:** porque `D.27` no pide imperativos en el original, **pide
+> inventario propio**, y aqui el inventario es aritmetico y cerrado. Y porque el manual
+> dice que los pasos se escriben **en imperativo**, que es una forma de la ficha y no una
+> exigencia sobre el texto de partida: **si hiciera falta que el libro ya viniera en
+> imperativos, la prueba del inventario no haria falta para nada.**
+>
+> **Lo que NO hago, y es donde estaria el puente si lo hiciera:** no escribo *revisa este
+> reparto cada trimestre*, ni *reparte las diez horas entre tus personas a cargo*, ni
+> *bloquealas a primera hora*. **El texto no dice ni cada cuanto, ni como se subdivide, ni
+> en que dias**, y esas son las tres especies exactas que el lote 1 pago: el periodo, el
+> destinatario y el responsable.
