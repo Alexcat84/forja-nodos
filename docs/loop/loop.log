@@ -134,3 +134,6 @@ BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 [2026-09-11 02:17:16]   sello de la apertura ciega verificado: intacto tras el turno
 [2026-09-11 02:17:16] DETENIDO en la vuelta 4: existe docs/loop/PARA_ALEXIS.md. Leelo.
 [2026-09-11 02:17:16] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-11 07:02:51] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+[2026-09-11 07:02:51] DETENIDO en la vuelta 1: no hay PROMPT_SIGUIENTE.md con contenido.
+[2026-09-11 07:02:51] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
