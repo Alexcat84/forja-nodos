@@ -11007,3 +11007,195 @@ el libro enumera y no cuenta.**
 > me detiene es que el libro nunca cruza los dos sitios**, y una arista que el libro no
 > insinua por ningun lado la estoy poniendo yo. **Es el caso mas cerrado de los seis y por
 > eso va marcado.**
+
+---
+
+## TAREA 3. EL Cap. 5, `Managing Yourself` (`cap_06.md`)
+
+### 3.1. LAS PALABRAS Y EL BORDE, CONTADOS POR MI Y NO COPIADOS DE LA NOTA PREVIA
+
+*El encargo me regala su medicion y dice literal que **se contrasta, no se copia**
+(`EXTRACTOR.md` 5). La contrasto.*
+
+| lo que el encargo mide | lo que mido yo | cuadra |
+|---|---|---|
+| `cap_06.md` unidad `Cap. 5`, titulo `Managing Yourself` | leido de la cabecera del fichero: `unidad: Cap. 5`, `titulo_textual: Managing Yourself` | **si** |
+| `cap_07.md` unidad `Cap. 6`, titulo `Amazing Meetings` | leido igual: `unidad: Cap. 6`, `titulo_textual: Amazing Meetings` | **si** |
+| palabras de cuerpo de L8 en adelante: **9.617** | `$ sed -n '8,$p' fuentes/zhuo_manager/cap_06.md \| wc -w` da **9617** | **si, al numero** |
+
+**EL BORDE POR LOS DOS LADOS, CON LAS DOS SALIDAS PEGADAS** y no solo la del encargo:
+
+    $ sed -n '470,477p' fuentes/zhuo_manager/cap_06.md      (el cierre del Cap. 5)
+    471: 			 -
+    473: 			New managers sometimes ask me, "A decade into the job, what's something
+         you're still continuing to learn?" [...]
+    475: 			Managers so often think of the role as being in service to something else [...]
+    477: 			Learning how to be a great leader means learning about your superpowers and
+         flaws, learning how to navigate the obstacles in your head, and learning how to
+         learn. [...] and that you're ready for whatever challenges lie ahead.
+
+    $ sed -n '8,12p' fuentes/zhuo_manager/cap_07.md          (el borde por el otro lado)
+     9: Chapter Six
+    11: 			Amazing Meetings
+
+**EL Cap. 5 CABE ENTERO EN `cap_06.md`, DE `L8` A `L477`, Y NO SE DERRAMA.** El fichero
+acaba con el parrafo de cierre del capitulo y el siguiente abre con su propio rotulo.
+**No hay nada que declarar y corto.**
+
+**Y CONFIRMO LA REGLA DE CABECERAS QUE YO MISMO DEJE ESCRITA Y EL AUDITOR VERIFICO:** las
+cabeceras de este libro **no llevan almohadilla**; son **las unicas lineas del cuerpo sin
+sangrado de tabulador**. Corrida sobre `cap_06.md` devuelve **24 lineas**, y de esas
+**cuatro son `* * *`** (`L157`, `L167`, `L177` y `L469`), que es un separador tipografico y
+no una cabecera. **Y devuelve ademas `L17`, que NO es cabecera: es el primer parrafo de la
+escena de apertura, que en este capitulo arranca sin sangrado.** **24 menos las cuatro de
+`* * *` menos `L17` dejan 19 rotulos, mas `L9` que es el del capitulo.** Lo digo porque es la clase de
+falso positivo que rompe una frontera hecha de cabeceras, **y es la razon de que la mia se
+haga por cobertura.**
+
+### 3.2. LA FRONTERA, POR RECORRIDO DE COBERTURA. **PUBLICADA Y COMMITEADA ANTES DE CORTAR**
+
+*El metodo que me ha funcionado tres veces y que el encargo me manda no tocar: **recorrido
+por cobertura y no lista de cabeceras**, con huecos, solapes y suma de palabras impresos.
+**Cada pieza empieza donde acaba la anterior**, asi que la cobertura es literal y no
+depende de que yo haya visto todas las cabeceras.*
+
+    $ python -c "... recorrido de cobertura sobre fuentes/zhuo_manager/cap_06.md"
+
+    pieza  desde   hasta    palabras
+    P1     L8     a L16         6 palabras
+    P2     L17    a L38       710 palabras
+    P3     L39    a L62       747 palabras
+    P4     L63    a L74       307 palabras
+    P5     L75    a L94       220 palabras
+    P6     L95    a L114      189 palabras
+    P7     L115   a L120      262 palabras
+    P8     L121   a L140      339 palabras
+    P9     L141   a L148      299 palabras
+    P10    L149   a L188      331 palabras
+    P11    L189   a L232      557 palabras
+    P12    L233   a L258      547 palabras
+    P13    L259   a L270      305 palabras
+    P14    L271   a L278      199 palabras
+    P15    L279   a L302      392 palabras
+    P16    L303   a L324      644 palabras
+    P17    L325   a L336      332 palabras
+    P18    L337   a L348      305 palabras
+    P19    L349   a L358      212 palabras
+    P20    L359   a L374      448 palabras
+    P21    L375   a L382      205 palabras
+    P22    L383   a L398      508 palabras
+    P23    L399   a L412      419 palabras
+    P24    L413   a L452      618 palabras
+    P25    L453   a L468      380 palabras
+    P26    L469   a L477      136 palabras
+    suma de piezas: 9617
+    cuerpo entero  : 9617
+    diferencia     : 0
+    piezas: 26
+
+    HUECOS Y SOLAPES, linea a linea de L8 a L477
+    CERO HUECOS, CERO SOLAPES: las 470 lineas de L8 a L477 quedan cubiertas
+    una y solo una vez, y la suma de palabras reproduce el cuerpo al numero.
+
+**26 PIEZAS, 9.617 PALABRAS, DIFERENCIA CERO.** Es el fichero mas gordo del libro y el que
+mas piezas produce: **26 contra las 25 del Cap. 3 y las 19 del Cap. 4.**
+
+> **UNA NOTA DE METODO QUE ME AHORRO UN ERROR Y LA ESCRIBO POR ESO.** La primera pasada la
+> hice con las piezas cortadas en la ultima linea CON TEXTO de cada tramo, y el recorrido
+> me devolvio **25 huecos**. Los abri uno a uno y **las 25 estaban en blanco**, asi que la
+> suma de palabras ya daba 9.617 con huecos y todo. **Aun asi rehice el corte para que
+> cada pieza acabe pegada a la siguiente**, porque un recorrido que se declara *por
+> cobertura* y devuelve huecos **obliga al que lo lee a fiarse de que los huecos estaban
+> vacios**, y esta casa no publica cifras que haya que creerse. **La cifra no cambio; la
+> prueba si.**
+
+### 3.3. `D.27` PIEZA A PIEZA, TAMBIEN PARA LO QUE DESCARTO, CON EL FALLO PUBLICADO Y SU CITA
+
+**LAS SEIS QUE DESCARTO, cada una con la linea que la tumba:**
+
+| pieza | palabras | veredicto | la razon, con su cita |
+|---|---:|---|---|
+| **P1** | 6 | **DESCARTADA** | rotulo del capitulo y el grafico `AVOID` / `ASPIRE`. **Seis palabras** |
+| **P3** | 747 | **DESCARTADA** | `EVERYBODY FEELS LIKE AN IMPOSTER SOMETIMES`. **Es la mas gorda que descarto y por eso la razon va entera.** Lo que trae es: una norma (`L49`: *feeling this way is totally normal*, con la cita de Linda Hill), **un inventario de CAUSAS** (`L51`: *There are two reasons. The first is that you're often looked to for answers*, y `L55`: *The second reason is that you are constantly put in the position of doing things you haven't done before*) y un anuncio (`L61`: *In these next sections, we'll look at techniques*). **`D.27` restriccion 1 deja fuera el inventario que no es de medios, etapas ni objetos de trabajo, y dos causas son dos causas.** Su unica linea con mandato es `L57`, *We must look at the specific context*, **y no trae inventario de que mirar**: lo que sigue en `L59` es la autora imaginandose al frente de un equipo de ventas. **Es la especie exacta del `P2` del Cap. 4 que descarte en la vuelta 10**, y lo descarto igual por consistencia y no por comodidad |
+| **P4** | 307 | **DESCARTADA** | la entrada de `GET TO BRUTAL HONESTY`. Trae los seis hechos que la autora cuenta de si misma (`L65`), los superpoderes de tres colegas (`L69`), la metafora de la receta (`L71`) y seis lideres del mundo en tres parejas (`L73`). **Todo es ilustracion.** Su unica frase normativa es `L71`, *The key is to understand what works best with what you have*, **y eso es adonde hay que llegar, no como**: el como llega en `P5` y `P6`, con sus preguntas |
+| **P13** | 305 | **DESCARTADA** | la entrada de `FINDING YOUR CONFIDENCE WHEN YOU'RE IN THE PIT`. **Define el Pozo** (`L261`, `L263`), **cuenta el caso** de la colega con la que chocaba en la estrategia de producto (`L265`, `L267`) y **anuncia** (`L269`: *read on for tips on how best to manage your mental state*). **Definicion mas caso mas anuncio, y ni un acto.** **Y no dice cuantos consejos son**, asi que tampoco es cabeza de serie por `D.37`: dice *tips*, sin numeral. **Lo que P13 aporta de verdad es la condicion de activacion de las seis piezas que le siguen**, y esa condicion la lleva cada uno de los seis nodos en su propio campo |
+| **P20** | 448 | **DESCARTADA** | la entrada de `LEARNING TO BE TWICE AS GOOD`. Trae la historia de la charla a las tres de la manana (`L361`, `L363`), la respuesta aburrida (`L367`: *I practiced and got better*) y de que depende ser efectivo (`L371`). **Su unica linea con mandato es `L373`: *set a lofty goal for yourself: How can I be twice as good?*, Y ESO ES UNA META.** `D.27` restriccion 1, literal: **nombrar adonde hay que llegar sigue siendo nombrar.** Un nodo de un solo paso que diga *ponte la meta de ser el doble de bueno* **no trae un solo medio**, y los medios son las cinco piezas que le siguen |
+| **P26** | 136 | **DESCARTADA** | el cierre del capitulo. `L473` (lo que la autora sigue aprendiendo), `L475` (el personaje mas importante de tu viaje eres tu) y `L477` (aprender sobre tus superpoderes y tus fallos). **Es cierre y es aliento, no procedimiento**, la misma especie que el `P19` del Cap. 4 y el `L227` del Cap. 2 |
+
+**LAS SEIS SUMAN 1.949 PALABRAS**, `6 + 747 + 307 + 305 + 448 + 136`, y la resta se cuadra
+en `4.1`.
+
+**LAS VEINTE QUE ENTRAN, con el inventario propio que las salva, y `P7` y `P9` van dentro
+de otra:**
+
+| pieza | el inventario propio que el libro pone, nombrado uno a uno | linea |
+|---|---|---|
+| **P2** | los cinco objetos de conocerse: *your strengths, your values, your comfort zones, your blind spots, and your biases* | `L37` |
+| **P5** | las **cuatro preguntas** para listar tus fuerzas | `L77`, `L81`, `L85`, `L89` |
+| **P6** | las **cuatro preguntas** para listar tus debilidades y tus disparadores | `L97`, `L101`, `L105`, `L109` |
+| **P7** dentro de **P8** | las **tres tacticas** de calibracion, cada una con su guion | `L121`, `L127`, `L139` |
+| **P9** dentro de **P10** | los **cuatro escenarios**, cada uno con sus dos lecturas nombradas | `L151`, `L161`, `L171`, `L181` |
+| **P11** | los **seis hechos**, los **seis habitos** y las **tres preguntas** | `L195` a `L205`, `L209` a `L219`, `L227` a `L231` |
+| **P12** | las **cuatro preguntas** para encontrar tus disparadores | `L249`, `L251`, `L253`, `L255` |
+| **P14** | las **dos tacticas** contra el doble impuesto | `L275`, `L277` |
+| **P15** | las **tres respuestas** que la autora recibe, y las **tres preguntas** de `L299` | `L289` a `L293`, `L299` |
+| **P16** | los **cinco ejercicios** de visualizacion | `L313`, `L315`, `L317`, `L319`, `L321` |
+| **P17** | los **cuatro sitios** donde buscar tu grupo de apoyo | `L335` |
+| **P18** | el diario de pequenias victorias y el apunte de las cinco cosas | `L345`, `L347` |
+| **P19** | los **cuatro huecos** que hay que tallar y el ejercicio de los quince minutos | `L353`, `L355` |
+| **P21** | las **dos clases** de opinion que pedir, y el guion de lo concreto | `L379`, `L381` |
+| **P22** | los **tres movimientos** con el jefe, cada uno con su frase | `L395`, `L397` |
+| **P23** | el guion exacto de la peticion y el grupo de pares | `L403`, `L409`, `L411` |
+| **P24** | la hora semanal, el ciclo de seis meses y **las dos plantillas enteras** | `L419`, `L421`, `L425` a `L445` |
+| **P25** | las **cinco formas** de formacion reglada y la cuenta del retorno | `L455`, `L459`, `L465` |
+
+**VEINTE PIEZAS VIVAS QUE SE AGRUPAN EN 18 CANDIDATOS**, porque dos entran dentro de otra:
+**`P7` dentro de `P8`** (la calibracion y sus tres tacticas son un solo procedimiento: `P7`
+pone la condicion y el porque, `P8` pone los medios) y **`P9` dentro de `P10`** (`P9` pone
+por que cuesta pedir opinion y `P10` pone la herramienta con la que se desbloquea).
+**20 menos 2 son 18.**
+
+> **18 CANDIDATOS CONTRA UNA BANDA DE CINCO A QUINCE, Y LO ESCRIBO CON SU CIFRA PORQUE EL
+> ENCARGO LO PIDE ASI.** `EXTRACTOR.md` 12.4 pone el tramo en **cinco a quince candidatos**
+> y este capitulo da **18**. **La banda no bloquea (ACTA 8) y el encargo lo dice: es un dato
+> del libro.** Y el dato es este: **el auditor estimo 19 desde mi propio `5.g` y salen 18**,
+> con una diferencia de uno sobre una estimacion hecha a ciegas desde una tasa de otro
+> capitulo. **La estimacion era buena y la escribo aqui para que se pueda comprobar.**
+
+### 3.4. LA FILA DE LA FRONTERA, ANTES DE CORTAR
+
+| | |
+|---|---|
+| **piezas** | 26, de `L8` a `L477`, cero huecos y cero solapes |
+| **palabras** | 9.617, diferencia cero contra el cuerpo |
+| **descartadas** | 6 (`P1`, `P3`, `P4`, `P13`, `P20`, `P26`), **1.949 palabras** |
+| **vivas** | 20, agrupadas en **18 candidatos** |
+
+**ESTA SECCION SE COMMITEA AHORA, ANTES DE ESCRIBIR EL PRIMER CANDIDATO.**
+
+> **DISCUTIBLE 4, MARCADO ANTES DE SABER SI ACIERTO, Y ES EL QUE MAS ME CUESTA.**
+> **Extraigo `P2`, que es la escena de apertura del capitulo, y en la vuelta 10 descarte
+> las escenas de apertura de los dos capitulos.** Rompo mi propio patron de superficie y
+> quiero que se vea que lo se. **La razon por la que lo rompo:** el `P2` del Cap. 4 lo
+> descarte escribiendo que *su unica linea normativa es `L25`, y eso es adonde hay que
+> llegar, no como*; **aqui `L37` no es una meta, es un mandato (*you first need to get deep
+> with knowing you*) seguido de CINCO OBJETOS nombrados uno a uno**, y `D.27` dice que un
+> inventario de **objetos de trabajo** es justo lo que vuelve procedimentable una linea
+> normativa. **La diferencia entre las dos piezas cae exactamente sobre lo que `D.27`
+> mide**, y por eso la trato distinto. **El caso en contra, que es bueno:** de las 710
+> palabras de `P2`, unas 690 son la narracion de Stacy y el informe de veinte paginas, y
+> **el nodo se sostiene sobre UNA linea de las once de la pieza.** Quien lea que una linea
+> no salva una pieza me tumba esto, **y el aviso de `D.30` esta escrito para este caso: un
+> parrafo pobre produce un nodo inventado.** Lo escribo igual porque la linea trae los
+> cinco objetos, **pero la vigilo en la relectura de fidelidad mas que a ninguna otra.**
+
+> **DISCUTIBLE 5, MARCADO ANTES DE SABER SI ACIERTO.** **Descarto `P3` entera, 747
+> palabras, la mayor descartada del lote 3.** El caso en contra: `P3` es la pieza que da
+> nombre al problema del capitulo (el sindrome del impostor), **y sus dos causas de `L51` y
+> `L55` son EL diagnostico** que activa medio capitulo. **Quien lea que dos causas
+> nombradas una a una son un inventario de objetos de trabajo** (los dos sitios donde mirar
+> cuando te sientes un fraude) **tiene un nodo de diagnostico de manual**, y ademas
+> hermanaria bien con `diagnosticar_falta_motivacion_habilidad` del Cap. 3. **Lo que me
+> detiene es `D.27` restriccion 1 y mi propio precedente del `P2` del Cap. 4**, donde
+> escribi con estas palabras que *es un inventario de causas y no de medios ni de etapas*.
+> **Si ese precedente estaba mal, este descarte esta mal tambien, y los dos son mios.**
