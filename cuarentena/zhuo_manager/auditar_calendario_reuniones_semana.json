@@ -1,0 +1,55 @@
+{
+  "id": "auditar_calendario_reuniones_semana",
+  "titulo": "Auditar tu calendario durante una semana y limpiar las reuniones que no te necesitan",
+  "denominaciones": {
+    "nombre_largo": "La semana de anotar cada reunion con sus preguntas, y la limpieza de calendario que sale de ella",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "calendar audit, deep calendar cleanse"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando te encuentras trabajando de noche y los fines de semana, con el calendario lleno de reuniones seguidas, y no entiendes por que vas atrasado en todo.",
+  "entregable_esperado": "Una nota por cada reunion de una semana con la respuesta a las tres preguntas, y un calendario purgado de las reuniones a las que no aportabas nada.",
+  "escala_minima": "Una semana de anotaciones. Ese es el periodo que el libro usa.",
+  "pasos_accionables": [
+    "Hazte la pregunta que le hizo su marido a la autora cuando ella le dijo que aquello no era sostenible: como tienes el calendario? Y despues: necesitas estar en todas ellas?",
+    "Durante una semana, deja una nota de cada reunion a la que asistes y de como te sentiste al final de ella.",
+    "Responde en esa nota las tres preguntas que el libro usa. La primera: participe?",
+    "La segunda: fui critico para el resultado?",
+    "La tercera: saque algo con sustancia de estar alli en persona?",
+    "Al final de la semana, cuenta en cuantas la respuesta fue no. A ella le salio que no en alrededor del 40 por ciento de sus reuniones.",
+    "Se honesto sobre los motivos reales por los que estabas en ellas. Ella reconoce dos: querer sentirse al tanto, y estar en la lista de invitados y sentirse obligada a aparecer.",
+    "Purga de tu calendario las reuniones a las que no estabas contribuyendo de verdad.",
+    "Cuando quieras seguir al tanto de decisiones que te afectan, pide a quien organiza la reunion que te incluya en las notas de antes y de despues.",
+    "Guarda el tiempo que recuperas como un dragon guarda su tesoro: tu tiempo como directivo es precioso y finito, y si confias en que los resultados correctos van a ocurrir sin ti, entonces no necesitas estar alli."
+  ],
+  "resumen_teorico": "Es la unica pieza del capitulo que mide antes de actuar, y por eso los dos actos van en el mismo nodo: la limpieza de calendario es lo que el libro hace como resultado de la auditoria, no un procedimiento aparte. El inventario propio que la hace procedimentable son las tres preguntas, nombradas una a una, y el periodo de una semana, que tambien lo pone el libro. La cifra del 40 por ciento es de la autora sobre si misma y va en el paso como dato suyo y en atribuciones, no como umbral que deba salirle a nadie. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se declina una invitacion sin ofender, ni cada cuanto se repite la auditoria, ni que hacer cuando la reunion que sobra es de tu jefe.",
+  "atribuciones": [
+    {
+      "cifra": "en alrededor del 40 por ciento de sus reuniones de una semana la respuesta a las tres preguntas fue no",
+      "autor": "Julie Zhuo, sobre su propio calendario",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto: el libro lo situa en un periodo especialmente duro en la oficina, antes de 2019"
+    },
+    {
+      "cifra": "de 182 directivos senior encuestados en un conjunto diverso de empresas, el 65 por ciento dijo que las reuniones le impedian completar su propio trabajo, el 71 por ciento encontraba sus reuniones improductivas e ineficientes, y el 64 por ciento dijo que las reuniones van a costa del pensamiento profundo",
+      "autor": "Leslie Perlow, de la Harvard Business School, y sus colegas, citados por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: el libro cita la encuesta sin anio"
+    }
+  ]
+}

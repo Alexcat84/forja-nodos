@@ -12028,3 +12028,319 @@ procedimentar**. Lo discutible es que eso deja a las cuatro tacticas (P20 a P24)
 **huerfanas de madre dentro del grafo**. La alternativa habria sido fabricar una
 cabeza con pasos que el libro no escribe, que es exactamente lo que `D.30`
 prohibe. **Elijo quedarme sin madre antes que inventarla.**
+
+## A.3. LOS DIECISEIS CANDIDATOS, Y LA CORRECCION DE LA CIFRA QUE ANUNCIE
+
+**SALIERON 16 Y LA FRONTERA ANUNCIABA 14. La diferencia es mia y la declaro sin
+borrar lo anterior** (`EXTRACTOR.md` 4 y manual principio 6). Al sumar las piezas
+de procedimiento en `A.2` conte **17** y son **20**: me deje `P17`, `P28` y `P29`
+fuera de la suma aunque los tres estan en la lista de la propia celda. Agrupadas,
+esas 20 piezas dan **16 nodos**, no 14.
+
+**Y `P17` SE RESOLVIO, que era el DISCUTIBLE 1: NO le doy nodo propio.** La razon
+es la que dudaba: el parrafo no trae ni un imperativo y usa la cuenta como
+argumento de por que preparar merece la pena. **Pero la cuenta no se pierde**: va
+como **paso 7 de `repartir_material_antes_reunion`**, que es la pieza a la que el
+libro la engancha, y su cifra larga va en `atribuciones`. **Un nodo menos, cero
+material perdido.**
+
+### La tabla, impresa del instrumento y no tecleada
+
+`python forja.py informe --carpeta cuarentena/zhuo_manager`, corrido al cerrar el
+capitulo con los 16 dentro:
+
+    candidatos revisados        : 16
+    nodos en el grafo de destino: 135
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 9
+      BLOQUEARIAN esperando veredicto  : 7   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 7
+      por candidato bloqueado          : menor 1, mediana 1, mayor 1
+      que senal levanta cada vecindad  : familia_id 6, paso_contra_nodo 1
+
+**16 DE 16 PASARON LA ADUANA EN EL MISMO ACTO EN QUE SE ESCRIBIERON, uno por uno,
+y NINGUNO CAYO** (`EXTRACTOR.md` 16). Los cuatro que corregi despues por la
+relectura de fidelidad **volvieron a pasarla despues de corregidos**.
+
+| # | id | pasos | la aduana, por candidato |
+|---|---|---:|---|
+| 1 | `fijar_resultado_excelente_reunion` | 10 | ENTRARIA |
+| 2 | `dirigir_reunion_decision` | 14 | BLOQUEARIA, 1 vecino |
+| 3 | `dirigir_reunion_informativa` | 8 | BLOQUEARIA, 1 vecino |
+| 4 | `dirigir_reunion_revision_trabajo` | 7 | BLOQUEARIA, 1 vecino |
+| 5 | `dirigir_reunion_generar_ideas` | 7 | BLOQUEARIA, 1 vecino |
+| 6 | `dirigir_reunion_reforzar_relaciones` | 8 | BLOQUEARIA, 1 vecino |
+| 7 | `invitar_personas_necesarias_reunion` | 8 | ENTRARIA |
+| 8 | `repartir_material_antes_reunion` | 7 | ENTRARIA |
+| 9 | `cerrar_reunion_pasos_siguientes` | 7 | BLOQUEARIA, 1 vecino |
+| 10 | `decir_normas_participacion_voz_alta` | 8 | ENTRARIA |
+| 11 | `cambiar_formato_reunion_favorecer_participacion` | 6 | ENTRARIA |
+| 12 | `abrir_discusion_notas_adhesivas` | 6 | ENTRARIA |
+| 13 | `mediar_tiempo_palabra_reunion` | 6 | ENTRARIA |
+| 14 | `pedir_opinion_propia_reunion` | 6 | BLOQUEARIA, 1 vecino |
+| 15 | `auditar_calendario_reuniones_semana` | 10 | ENTRARIA |
+| 16 | `avisar_organizador_reunion_prescindible` | 6 | ENTRARIA |
+| | **16 candidatos** | **124** | **9 entrarian, 7 bloquearian, 0 caerian** |
+
+## A.4. LA RELECTURA DE FIDELIDAD (`D.30`), DENTRO DEL ACTO Y NO DESPUES
+
+**CAZO CUATRO PUENTES SOBRE PASOS Y DIEZ RECUENTOS SOBRE DENOMINACIONES**, y los
+catorce son de la MISMA ESPECIE, que es nueva en esta casa y le pongo nombre:
+
+> ### EL RECUENTO QUE PONE EL EXTRACTOR
+>
+> **El libro imprime una lista y no dice cuantas cosas hay en ella. Yo escribo
+> *las cuatro ideas* o *los cinco malos resultados*, y ese numero no esta en el
+> libro: lo conte yo.**
+
+**LA VARA QUE USE PARA SEPARAR, y la declaro porque es mia y no de la casa:**
+
+| | |
+|---|---|
+| **ORDINAL sobre una lista que el libro imprime** (*el primero*, *el segundo*) | **TRANSCRIPCION.** El orden esta en la pagina; leerlo en voz alta no anade nada |
+| **CARDINAL que anuncia cuantas hay** (*las cuatro*, *los cinco*) | **PUENTE**, si el libro no las cuenta |
+
+**Y NO ME LA INVENTE PARA ESTE CAPITULO: es la misma condicion que `D.37` acaba
+de fijar el 11 sep 2026 para la arista de serie.** Si una cabeza solo cuenta como
+`D.37` cuando **dice cuantas partes hay Y las nombra**, entonces un paso mio solo
+puede decir cuantas hay cuando el libro las cuenta. **Aplicar a mis pasos la vara
+que la casa aplica a mis aristas es lo unico coherente.**
+
+### Los cuatro puentes de PASO, uno a uno, con el parrafo que NO lo dice
+
+| # | nodo | lo que escribi | el parrafo que no lo dice | como quedo |
+|---|---|---|---|---|
+| 1 | `decir_normas_participacion_voz_alta` | *di las **tres** cosas que ella dijo* | `cap_07.md:227` pone un parlamento seguido entre comillas y **no lo trocea ni lo cuenta** | *di lo que ella dijo, que el libro pone entre comillas y que va troceado en los pasos que siguen* |
+| 2 | `invitar_personas_necesarias_reunion` | *que en ese caso fueron **dos** nombradas* | `cap_07.md:185` dice `including`, **que abre la lista y no la cierra** | *el libro nombra dentro de esas maneras, **sin cerrar la lista**, ...* |
+| 3 | `pedir_opinion_propia_reunion` | *que es **la primera de las dos claves*** | `cap_07.md:261` dice `the key ... is X and Y`: **una clave con dos mitades, no dos claves** | *El libro dice que ahi esta la clave* |
+| 4 | `pedir_opinion_propia_reunion` | *que es **la segunda*** | el mismo `cap_07.md:261` | *El libro lo pone unido a lo anterior, en la misma frase y como parte de la misma clave* |
+
+Las tres lineas citadas, con su `sed` pegado (`D.35`):
+
+    $ sed -n '227p' fuentes/zhuo_manager/cap_07.md
+    227: In the next meeting, I opened with this: “I’m here to do a Q&A because it’s really important to me that we
+    $ sed -n '185p' fuentes/zhuo_manager/cap_07.md
+    185: Ultimately, we decided to shrink the attendee list. We resolved to find other ways to invest in design educa
+    $ sed -n '261p' fuentes/zhuo_manager/cap_07.md
+    261: Remember that the key to getting great feedback is being specific about what you want to know and making it
+
+**EL PUENTE 2 ERA EL CARO DE LOS CUATRO, y no por el numero.** `including` es
+una lista ABIERTA, y escribir *dos* la cerraba: el nodo habria afirmado que el
+libro solo da dos salidas cuando el libro dice *incluyendo estas dos*. **Ese no
+es un puente de recuento, es un puente de exhaustividad**, y es el unico de los
+cuatro que cambiaba lo que el nodo AFIRMA y no solo como lo dice.
+
+### Los diez recuentos retirados de `denominaciones.nombre_largo`
+
+    $ python -c "... reescribe los diez nombre_largo y recuenta los pasos"
+    recuentos retirados de nombre_largo: 10
+    puentes de paso corregidos: 4 (1 en decir_normas, 1 en invitar_personas, 2 en pedir_opinion)
+
+Los diez son: `dirigir_reunion_decision` (*cuatro rasgos*, *cinco malos
+resultados*), `dirigir_reunion_informativa` (*dos ventajas*, *cuatro logros*),
+`dirigir_reunion_revision_trabajo` (*cuatro logros*),
+`dirigir_reunion_generar_ideas` (*cuatro logros*),
+`dirigir_reunion_reforzar_relaciones` (*tres logros*),
+`invitar_personas_necesarias_reunion` (*dos fallos*),
+`cerrar_reunion_pasos_siguientes` (*cuatro contenidos*, *tres ramas*),
+`mediar_tiempo_palabra_reunion` (*cuatro intervenciones*),
+`pedir_opinion_propia_reunion` (*dos claves*) y
+`auditar_calendario_reuniones_semana` (*tres preguntas*).
+
+**Y UNO DE ESOS DIEZ ESTABA ADEMAS MAL CONTADO**, que es la prueba barata de que
+la especie no es cosmetica: `cerrar_reunion_pasos_siguientes` decia *cuatro
+contenidos* del resumen y `cap_07.md:205` nombra **tres**.
+
+    $ sed -n '205p' fuentes/zhuo_manager/cap_07.md
+    205: In the last few minutes of a meeting, get into the habit of asking, “So before we break, let’s make sure we
+
+**Un recuento inventado no solo anade: tambien se equivoca.**
+
+### DISCUTIBLE 3, marcado aqui y antes de saber si acierto
+
+**Cuento 4 puentes sobre 124 pasos, el 3,23 por ciento.** Si el auditor considera
+que **los diez recuentos de `nombre_largo` son de la misma especie y cuentan**,
+entonces la tasa es **14 sobre 124, el 11,3 por ciento**. **Dejo las dos cifras
+calculadas para que no tenga que calcularlas**, y digo cual defiendo: **la de 4**,
+porque `D.30` habla de **pasos** y una denominacion no es un paso. **Lo que no
+hago es esconder la otra.**
+
+## A.5. LOS SIETE VEREDICTOS DE LA COLA DE LECTURA, LEIDOS Y ESCRITOS
+
+*`EXTRACTOR.md` 2: si la aduana bloquea, se leen los vecinos ANTES de escribir el
+veredicto, y todo veredicto lleva su razon. **Cero inserciones en esta corrida, asi
+que estos veredictos NO se escriben en `bitacora/VEREDICTOS.jsonl`: quedan aqui,
+en mi sede, como lectura publicada.***
+
+**SEIS DE LOS SIETE LOS LEVANTA `familia_id` Y UNO `paso_contra_nodo`. NINGUNO
+LOS LEVANTA `similitud_texto`**, y eso ya dice algo antes de leer: la mayor
+similitud de texto de los siete es **0,301** y el umbral es **0,35**. Segun la
+seccion 11, **de 0,4 para arriba son gemelos y nada mas; la banda media de 0,2 a
+0,3 es RUIDO**. Los siete caen enteros dentro de esa banda media.
+
+| # | candidato | vecino | senal que lo levanta | cifras | veredicto |
+|---|---|---|---|---|---|
+| 1 | `dirigir_reunion_decision` | `dirigir_reunion_individual_semanal` | familia_id | tex 0,225 fam 0,400 paso 0,440 | **SANO** |
+| 2 | `dirigir_reunion_informativa` | `dirigir_reunion_individual_semanal` | familia_id | tex 0,208 fam 0,400 paso 0,378 | **SANO** |
+| 3 | `dirigir_reunion_revision_trabajo` | `dirigir_reunion_individual_semanal` | familia_id | tex 0,283 fam 0,333 paso 0,442 | **SANO** |
+| 4 | `dirigir_reunion_generar_ideas` | `dirigir_reunion_individual_semanal` | familia_id | tex 0,251 fam 0,333 paso 0,378 | **SANO** |
+| 5 | `dirigir_reunion_reforzar_relaciones` | `dirigir_reunion_individual_semanal` | familia_id | tex 0,232 fam 0,333 paso 0,392 | **ARISTA, madre a hijo, por `D.29`** |
+| 6 | `cerrar_reunion_pasos_siguientes` | `preguntar_jefe_sonado_persona_cargo` | paso_contra_nodo | tex 0,244 fam 0,000 paso 0,609 | **SANO** |
+| 7 | `pedir_opinion_propia_reunion` | `pedir_opinion_otros_mejorar` | familia_id | tex 0,293 fam 0,333 paso 0,452 | **SANO, y es el DISCUTIBLE 4** |
+
+### El veredicto de los cinco de `dirigir_reunion_*`, con su razon comun
+
+**Los cinco levantan al MISMO vecino y por la MISMA senal, y la razon es que el
+prefijo `dirigir_reunion` es literalmente la familia.** Es el caso que
+`EXTRACTOR.md` 12 nombra por su nombre: **cuando un capitulo entero cae en la
+misma familia, eso no es senal de duplicado, es senal de que el libro trata un
+tema.** Un capitulo titulado `Amazing Meetings` produce nodos sobre reuniones.
+
+**Y lo que de verdad decide no es la senal sino la lectura de los pasos:**
+`dirigir_reunion_individual_semanal` es la reunion **a solas y semanal con cada
+persona a cargo**, con su duracion minima de treinta minutos y sus cuatro ideas
+de preparacion, y sale del Cap. 3 del mismo libro. Los cinco mios son **las
+razones para juntarse un grupo en persona**, y salen del Cap. 6. **Ninguno de los
+cinco es la reunion individual y la reunion individual no es ninguno de los
+cinco.** Son hermanos, y el veredicto de un hermano es `SANO` (`EXTRACTOR.md`
+15.6, ultimo parrafo).
+
+### El veredicto 5 es OTRO, y lo cambio por lectura: hay arista escrita
+
+**`dirigir_reunion_reforzar_relaciones` SI nombra a la reunion individual, y la
+nombra el libro, no yo.** La linea es `cap_07.md:155`:
+
+    $ sed -n '155p' fuentes/zhuo_manager/cap_07.md
+    155: Team lunches, dinners, and other social events serve this purpose, as do some 1:1s and team meetings. When w
+
+**Ese es un inventario de MEDIOS en el que una de las piezas nombradas ES un nodo
+que ya vive en el grafo.** Mi paso 3 lo transcribe: *comidas de equipo, cenas y
+otros eventos sociales, y tambien algunas reuniones individuales y algunas
+reuniones de equipo.*
+
+**Y ES `D.29` Y NO `D.37`, y lo digo con el titular nuevo del 11 sep 2026
+delante:** `L155` **enumera los medios y NO dice cuantos son**. Segun la
+correccion del titular, *si el texto solo enumera sin decir cuantas, esto NO es
+`D.37`: es `D.29`, y entonces la arista se declara igual pero con razon escrita
+que la sostenga.* **Esta es la razon escrita:**
+
+> el paso 3 de la madre nombra `algunas reuniones individuales` como uno de los
+> medios con los que se refuerzan las relaciones del equipo, y el hijo
+> `dirigir_reunion_individual_semanal` despliega esa reunion individual en diez
+> pasos con su cadencia semanal, su duracion minima de treinta minutos y sus
+> cuatro ideas de preparacion, que la madre no tiene.
+
+**LA ARISTA NO SE DECLARA EN ESTA CORRIDA, y el motivo no es una duda: es que
+`python forja.py arista` ESCRIBE EN `dataset/`**, que es sede de la aduana
+(`EXTRACTOR.md` 14), **y esta corrida tiene cero inserciones autorizadas.** Queda
+publicada aqui, con su linea y su razon, **para la vuelta en que las partes
+entren.**
+
+### El veredicto 6, que es el mas facil de los siete
+
+`cerrar_reunion_pasos_siguientes` paso 5 dice *si lo que hubo fue opinion sobre
+un trabajo, actua sobre ella*. `preguntar_jefe_sonado_persona_cargo` paso 4 dice
+*preguntale que clase de opinion sobre su trabajo le resulta mas util*. **Lo que
+comparten son cuatro palabras seguidas, `opinion sobre su trabajo`, y nada mas.**
+Uno es el seguimiento de una reunion de grupo y el otro es una pregunta de la
+primera reunion a solas con una persona nueva. **`familia_id` da 0,000**, que es
+justo lo que se espera de dos nodos que no comparten nada salvo una frase hecha.
+**SANO**, y es el ejemplar de lo que `paso_contra_nodo` levanta cuando levanta
+ruido: **0,609 contra un umbral de 0,60**, es decir, **apenas por encima**.
+
+### DISCUTIBLE 4, el par mas cerca del capitulo
+
+**`pedir_opinion_propia_reunion` contra `pedir_opinion_otros_mejorar` es el unico
+de los siete que me hizo dudar de verdad**, y lo marco antes de saber si acierto.
+
+**Lo que comparten es real y no es poco:** los dos piden opinion, los dos dicen
+*se especifico sobre lo que quieres saber*, y los dos ponen un ejemplo de pregunta
+mal hecha contra una bien hecha.
+
+**Por que lo declaro `SANO` y no arista, con la vara de `AUDITOR_FORJA.md` 6.1
+delante, que pregunta que anade el HIJO a la MADRE:**
+
+1. **El objeto es distinto y eso no es matiz: es el ejecutor.** El existente pide
+   opinion **sobre ti mismo**, y su entregable son las dos clases, tarea y
+   conducta. El mio pide opinion **sobre una reunion que tu diriges**, y su
+   entregable es saber si esa reunion es buen uso del tiempo AJENO.
+2. **Lo que queda fuera del solape es procedimiento en los dos lados**, que es
+   exactamente lo que la vara manda mirar: el existente tiene las dos clases de
+   opinion, el agradecer y la consecuencia de ponerse defensivo; el mio tiene la
+   tactica de **abrir por lo que sospechas** y su pregunta literal sobre la
+   reunion de estado. **Ninguna de esas cuatro cosas esta en el otro.**
+3. **Y la razon que me obliga, que es la que me habria hecho equivocarme al
+   reves:** `EXTRACTOR.md` 15.6 prohibe expresamente declarar una arista **porque
+   dos nodos compartan familia o tema**. Aqui **el libro no nombra al otro en
+   ninguna de las dos sedes**: el Cap. 4 no dice *y esto vale tambien para tus
+   reuniones*, y el Cap. 6 no remite al Cap. 4. **Sin linea que citar, la arista
+   seria una afirmacion sin cita.**
+
+**DONDE PUEDE CAER:** si el auditor lee que una reunion que tu diriges **es** tu
+tarea, entonces el mio es una especializacion del existente y esto deberia ser
+arista y no `SANO`. **Es la lectura contraria mas fuerte que se me ocurre y la
+dejo escrita.**
+
+## A.6. LAS ARISTAS DE SERIE DEL CAPITULO: `D.29` DOS VECES, `D.37` CERO VECES
+
+*`EXTRACTOR.md` 15.6 y la correccion del titular del 11 sep 2026.*
+
+**CERO `D.37` EN TODO EL CAPITULO, y el motivo es uno solo: este libro no cuenta.**
+Corri la condicion sobre las dos cabezas que tienen partes, y **ninguna dice
+cuantas**:
+
+| cabeza | la linea que enumera | dice cuantas? | por tanto |
+|---|---|---|---|
+| `fijar_resultado_excelente_reunion` | `cap_07.md:51` | **NO**: dice `only a handful of reasons` | **`D.29`** |
+| `cambiar_formato_reunion_favorecer_participacion` | `cap_07.md:235` y `:237` | **NO**: dice `One example is` y `Another tactic I like is` | **`D.29`** |
+
+    $ sed -n '51p' fuentes/zhuo_manager/cap_07.md
+    51: There are only a handful of reasons for people to get together in person, so being crystal clear about the ou
+    $ sed -n '235p' fuentes/zhuo_manager/cap_07.md
+    235: You can combat natural group dynamics by suggesting more structured approaches. One example is going around
+    $ sed -n '237p' fuentes/zhuo_manager/cap_07.md
+    237: Another tactic I like is the “Post-it note” opening. Before launching into a discussion about a complex topi
+
+**`a handful` NO ES UN NUMERO.** Es la misma forma que la vuelta 11 encontro en
+`L137` de `cap_06.md` y el titular nuevo confirma: **enumerar sin contar es
+`D.29`.** Con lo cual la cuenta de esta casa va **0 de 8 en `D.37`** sumando los
+6 de la vuelta 11 y los 2 de esta.
+
+### Las dos aristas de `D.29` del capitulo, con su razon escrita
+
+| madre | paso | hijo | razon |
+|---|---:|---|---|
+| `fijar_resultado_excelente_reunion` | **4** | `dirigir_reunion_decision`, `dirigir_reunion_informativa`, `dirigir_reunion_revision_trabajo`, `dirigir_reunion_generar_ideas`, `dirigir_reunion_reforzar_relaciones` | el paso 4 de la madre nombra las razones una a una, con los mismos nombres que el libro pone de epigrafe en `cap_07.md:53`, `:97`, `:117`, `:133` y `:151`, y cada hijo despliega su razon en siete a catorce pasos que la cabeza no tiene |
+| `cambiar_formato_reunion_favorecer_participacion` | **5** | `abrir_discusion_notas_adhesivas` | el paso 5 de la madre nombra el arranque con notas adhesivas como la otra tactica de la misma seccion, y el hijo lo despliega en seis pasos con una caja de tiempo de diez a quince minutos que la madre no tiene |
+
+**LA SEGUNDA ARISTA NO EXISTIA CUANDO ESCRIBI LA CABEZA, Y LA HICE EXISTIR
+LEYENDO, NO INVENTANDO.** Al pasar la condicion de `D.37` me encontre con que **mi
+cabeza no nombraba a su parte**: yo habia cortado la seccion de forma que la linea
+`Another tactic I like is the "Post-it note" opening` caia fuera de la cabeza.
+**Con la cabeza asi, `--paso <n>` no habria podido apuntar a ninguna linea que
+nombrase al hijo, y una arista sin su linea es una afirmacion sin cita** (15.6).
+**Lo arregle anadiendo el paso 5, que es transcripcion de `cap_07.md:237`, y
+volvi a pasar la aduana**, no inventando la arista.
+
+> **Y ES UN HALLAZGO QUE ME LLEVO, porque no lo buscaba:** correr la condicion de
+> `D.37` sobre un capitulo **no solo decide aristas: audita como cortaste.** Un
+> corte que deja a la madre sin poder nombrar a su hija es un corte mal hecho,
+> **y la unica forma de notarlo fue intentar declarar la arista.**
+
+**NINGUNA DE LAS DOS SE ESCRIBE EN EL GRAFO EN ESTA CORRIDA.** Cero inserciones,
+asi que `python forja.py arista` no se corre: la sede es de la aduana.
+
+## A.7. LAS CUATRO MEDIDAS DEL `cap_07`
+
+| medida | cifra | como se saco |
+|---|---|---|
+| **candidatos por mil palabras** | **16 sobre 5.285 = 3,03** | `sed -n '8,$p' cap_07.md \| wc -w` da 5.285 |
+| **puentes sobre pasos escritos** | **4 de 124 = 3,23 por ciento** | banda declarada arriba: de 3,23 a 11,3 segun cuenten o no los diez recuentos de denominacion |
+| **veredictos** | **7 leidos y escritos**: 6 `SANO`, 1 arista de `D.29` | mas 2 aristas de serie por `D.29` dentro del capitulo |
+| **tiempo** | **ver `C.12` al cierre**, que es donde la cifra existe | primer commit del capitulo contra el de su cierre |

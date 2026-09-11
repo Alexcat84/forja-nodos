@@ -1,0 +1,36 @@
+{
+  "id": "cambiar_formato_reunion_favorecer_participacion",
+  "titulo": "Cambiar el formato de la reunion para que la dinamica natural no decida quien habla",
+  "denominaciones": {
+    "nombre_largo": "Por que la discusion sin estructura deja hablar solo a unos pocos, y la rueda de la sala como enfoque estructurado",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "change up your meeting format to favor participation, going around the room"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando la discusion de grupo va sin estructura y notas que unos pocos llevan la conversacion o que nadie habla.",
+  "entregable_esperado": "Una reunion con un enfoque mas estructurado en el que ninguna perspectiva se queda sin decir.",
+  "pasos_accionables": [
+    "Reconoce lo que hace una discusion de grupo sin estructura: que los participantes eligen si hablan y cuando. Si tienes un grupo introvertido, puedes tener problemas para que digan lo que piensan; si tienes extrovertidos, pueden dominar la conversacion.",
+    "Cuenta ademas con que las diferencias de rango, de antiguedad o de familiaridad tambien influyen en lo comoda que se siente la gente al hablar.",
+    "Combate la dinamica natural del grupo proponiendo enfoques mas estructurados.",
+    "Usa el primer ejemplo que el libro nombra, dar la vuelta a la sala: si hay que decidir entre tres opciones, pregunta a cada persona cual prefiere y por que.",
+    "Prueba tambien la otra tactica que el libro nombra en esta misma seccion, el arranque con notas adhesivas, que trae pasos propios y una caja de tiempo que esta rueda no tiene.",
+    "Cuenta con lo que eso garantiza, que es la razon de hacerlo: que ninguna perspectiva se quede sin decir."
+  ],
+  "resumen_teorico": "Es la segunda tactica del capitulo para hacer seguro contribuir, y la que actua sobre el formato en vez de sobre las personas. La doctrina es que el silencio de una sala no es un rasgo de caracter sino un efecto del formato: si nadie decide quien habla, lo deciden la extroversion y el rango. El libro nombra dos tacticas en esta seccion, la rueda de la sala y el arranque con notas adhesivas. La rueda cabe entera aqui porque es un solo acto; el arranque con notas adhesivas tiene pasos propios con su caja de tiempo y vive en su propio nodo, y el paso 5 lo nombra desde aqui porque el libro lo nombra en esta misma seccion, que es lo que hace verificable la arista de cabeza a parte. Lo que el libro NO dice, y por eso no esta escrito aqui, es que hacer cuando alguien no quiere responder al llegarle el turno de la rueda, ni en que reuniones la rueda es demasiado lenta."
+}

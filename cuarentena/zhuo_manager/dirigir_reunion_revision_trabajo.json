@@ -1,0 +1,37 @@
+{
+  "id": "dirigir_reunion_revision_trabajo",
+  "titulo": "Dirigir una reunion cuyo resultado excelente es opinion util sobre un trabajo en curso",
+  "denominaciones": {
+    "nombre_largo": "La revision, el error de convertirla en juicio de aprobacion, y los logros que la hacen buena",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "feedback meeting, review, providing feedback"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando hay un trabajo en curso y el resultado excelente que persigues es que las partes interesadas lo entiendan y aporten sobre el.",
+  "entregable_esperado": "Un trabajo en curso mejor encaminado, con las preguntas abiertas enmarcadas, y unos pasos siguientes acordados que incluyen cuando sera el proximo hito o la proxima revision.",
+  "pasos_accionables": [
+    "Ten claro para que existe la reunion: para que las partes interesadas entiendan el trabajo en curso y den su aportacion sobre el. A veces terminara con un tranquilo esto tiene buena pinta, y otras veces la opinion puede llevar a desviaciones importantes del plan.",
+    "No midas el exito por si al jefe le gusta el trabajo o no. El libro dice explicitamente que eso es un error: las reuniones de opinion no existen para dar ni recibir juicio, sino para llegar al mejor resultado.",
+    "Desconfia de ir a por la aprobacion, porque eso crea incentivos para centrarse mas en los espejismos de la presentacion que en conseguir la opinion mas util para mejorar el trabajo.",
+    "Consigue el primer logro: que todo el mundo quede de acuerdo en a que se parece el exito para este proyecto.",
+    "Consigue el segundo: representar honestamente el estado actual del trabajo, y el libro dice que va dentro de ese estado, una valoracion de como estan yendo las cosas, los cambios que ha habido desde la ultima revision, y cuales son los planes de futuro.",
+    "Consigue el tercero: enmarcar con claridad las preguntas abiertas, las decisiones clave o las preocupaciones conocidas, que es lo que consigue la opinion mas util.",
+    "Consigue el cuarto: terminar con unos pasos siguientes acordados, y que entre ellos este cuando sera el proximo hito o la proxima revision."
+  ],
+  "resumen_teorico": "Es la tercera razon del libro para juntarse en persona. Lo que la hace procedimentable no es solo el inventario de cuatro logros, sino que dos de ellos traen su propio desglose escrito por el libro: el segundo nombra las tres cosas que contiene un estado honesto, y el cuarto nombra que dentro de los pasos siguientes va la fecha del proximo hito. El paso 2 es el eje doctrinal y esta escrito como el libro lo escribe, en negativo: el error concreto que se comete es juzgar la revision por si gusto al jefe. Lo que el libro NO dice, y por eso no esta escrito aqui, es quien convoca la revision, cada cuanto se repite, ni quien decide cuando una opinion se incorpora al plan y cuando no."
+}

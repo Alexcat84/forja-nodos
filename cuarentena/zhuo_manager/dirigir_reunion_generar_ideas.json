@@ -1,0 +1,45 @@
+{
+  "id": "dirigir_reunion_generar_ideas",
+  "titulo": "Dirigir una reunion cuyo resultado excelente es un monton de ideas diversas",
+  "denominaciones": {
+    "nombre_largo": "La sesion generativa, por que la lluvia de ideas en voz alta no innova, y los logros que la hacen buena",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "generative meeting, brainstorming meeting, working session, generating ideas"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando juntas a un grupo para que proponga soluciones a un problema y el resultado excelente que persigues son ideas, no una decision.",
+  "entregable_esperado": "Muchas soluciones diversas y no obvias, consideradas todas y no solo las de las voces mas altas, y unos pasos siguientes claros para convertir las ideas en accion.",
+  "pasos_accionables": [
+    "No montes la sesion como doce personas en una sala soltando lo primero que se les pasa por la cabeza. El libro dice que eso no es efectivo para innovar, y da las dos razones: tendemos a conformar nuestras ideas nuevas a lo que ya se ha discutido, y tendemos a sugerir menos ideas porque suponemos que otros estan cargando con el trabajo.",
+    "Monta la sesion sobre las dos necesidades a la vez, que es de donde el libro dice que sale la mejor generacion de ideas: tiempo para pensar a solas, porque nuestros cerebros son mas creativos cuando estamos solos, y tiempo para relacionarse con otros, porque oir perspectivas distintas crea chispas que llevan a ideas todavia mejores.",
+    "Prepara la sesion y facilitala bien, que el libro senala como la clave.",
+    "Consigue el primer logro: producir muchas soluciones diversas y no obvias, y el libro dice con que se consigue, asegurando que cada participante tenga tiempo a solas y en silencio para pensar ideas y escribirlas, sea antes de la reunion o durante ella.",
+    "Consigue el segundo: considerar la totalidad de las ideas de todo el mundo, y no solo las de las voces mas altas.",
+    "Consigue el tercero: ayudar a que las ideas evolucionen y se construyan unas sobre otras mediante una discusion con sustancia.",
+    "Consigue el cuarto: terminar con pasos siguientes claros sobre como convertir las ideas en accion."
+  ],
+  "resumen_teorico": "Es la cuarta razon del libro para juntarse en persona, y la que mas explicitamente desmonta una practica corriente: la lluvia de ideas tal como se popularizo. El inventario propio del libro aqui es de MEDIOS y no de metas, que es lo que la hace procedimentable por D.27: nombra el tiempo a solas y el tiempo en grupo como los dos ingredientes, y dentro del primer logro nombra el acto concreto, escribir las ideas en silencio antes o durante. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuanto dura el tiempo a solas en una sesion generativa cualquiera, ni quien facilita, ni como se eligen despues las ideas que siguen adelante. El arranque con notas adhesivas del final del capitulo si trae esos numeros, y vive en su propio nodo.",
+  "atribuciones": [
+    {
+      "cifra": "la lluvia de ideas se popularizo en los anios cincuenta con la propuesta de que, para conseguir un pensamiento mas fuera de la caja, los grupos se centraran en maximizar la cantidad de ideas y en retener el juicio sobre esas ideas",
+      "autor": "Alex Osborn, ejecutivo de publicidad, citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "los anios cincuenta, segun el texto del libro"
+    }
+  ]
+}
