@@ -8253,3 +8253,251 @@ intento, con **4 puentes sobre 76 pasos corregidos en el acto**, **ocho aristas 
 escritas y no declaradas**, **cero vecinos levantados** y **tres remisiones del libro a si
 mismo resueltas sin fabricar gemelos.**
 
+---
+
+## TAREA 5. EL INFORME DEL LOTE, LOS COMMITS Y EL CIERRE CON SUS CUATRO MEDIDAS
+
+### 5.a. MEDIDA 1: CANDIDATOS POR MIL PALABRAS, **DESGLOSADA POR CAPITULO**
+
+**Con los dos denominadores**, el capitulo entero y lo minado, como manda el encargo.
+*Lo minado* es la suma de las piezas de la frontera que alimentaron algun candidato, y
+sale de las tablas de 3.A.1, 3.B.1 y 4.1 de este mismo reporte.
+
+| capitulo (fichero) | candidatos | palabras del capitulo | por mil | palabras minadas | por mil de lo minado |
+|---|---:|---:|---:|---:|---:|
+| **Introduction** (`cap_01.md`) | **0** | 2.917 | **0,000** | 0 | **sin denominador** |
+| **Cap. 1, `What Is Management?`** (`cap_02.md`) | **12** | 6.477 | **1,853** | 4.775 | **2,513** |
+| **Cap. 2, `Your First Three Months`** (`cap_03.md`) | **9** | 4.292 | **2,097** | 4.117 | **2,186** |
+| **la vuelta entera** | **21** | **13.686** | **1,534** | **8.892** | **2,362** |
+
+**El fichero y el capitulo coinciden en los tres, y lo digo en la propia fila** (caida 2
+de la vuelta 8): el recorte de `zhuo_manager` trae la unidad escrita en su cabecera
+(`unidad: Cap. 1`), asi que aqui el nombre **se lee, no se infiere.**
+
+**LO QUE LA COLUMNA DE LO MINADO DICE, y por eso se piden las dos:** en el Cap. 2 los dos
+denominadores casi coinciden (4.117 de 4.292, el **95,9 por ciento** del capitulo alimenta
+algun nodo), mientras que en el Cap. 1 la distancia es grande (4.775 de 6.477, el **73,7
+por ciento**). **La diferencia tiene nombre: las 1.702 palabras descartadas del Cap. 1 son
+casi todas las dos listas que el libro refuta, la definicion y la distincion final**
+(P3, P4, P5, P6 y P23 suman 1.351 de esas 1.702). **Un capitulo que argumenta descarta mas
+que un capitulo que instruye**, y eso no es un fallo del capitulo ni del extractor.
+
+### 5.b. MEDIDA 2: `PASOS INVENTADOS SOBRE PASOS ESCRITOS`, **UNA FILA POR CAPITULO Y EL TOTAL**
+
+**De esta cifra sale el volumen del lote 4**, asi que va con el capitulo por nombre y con
+el fichero al lado.
+
+| capitulo | fichero | coinciden | pasos escritos | puentes | tasa |
+|---|---|---|---:|---:|---:|
+| **Introduction** | `cap_01.md` | **si** | 0 | 0 | **sin denominador** |
+| **Cap. 1, `What Is Management?`** | `cap_02.md` | **si** | 79 | 3 | **3,80 por ciento** |
+| **Cap. 2, `Your First Three Months`** | `cap_03.md` | **si** | 76 | 4 | **5,26 por ciento** |
+| **TOTAL DE LA VUELTA** | | | **155** | **7** | **4,52 por ciento** |
+
+**Y la lectura alternativa, publicada para que el auditor pueda cuadrar sin adivinar:**
+si cuenta como puente el quinto caso del 4.5, el que corregi por precaucion, **el Cap. 2
+sale 5 de 76, el 6,58 por ciento, y la vuelta 8 de 155, el 5,16 por ciento.** Las dos
+lecturas estan escritas; **la que yo sostengo es la de 7.**
+
+### 5.c. LA SERIE DE VOLUMEN, CON SUS FILAS NUEVAS Y CON LOS NOMBRES YA CORREGIDOS
+
+**Las filas anteriores se citan con su `grep` pegado al lado** (remedio 1.a), y **con el
+nombre de capitulo que el ACTA 8 4.1 les adjudico, no con el que la vuelta 8 tecleo.**
+
+| unidad | pasos | puentes | tasa | la salida, pegada |
+|---|---:|---:|---:|---|
+| lote 1, linea base | 36 | 13 | **36,11** | `2647:| **tasa** | **36,11 por ciento** | **6,25 por ciento** |` |
+| lote 2, **Cap. 1** (la vuelta 8 la llamo `cap_02`) | 16 | 1 | **6,25** | `7217:    lote 2, cap_02       16 pasos    1 puente     6,25` |
+| lote 2, Cap. 2 | 35 | 1 | **2,86** | `7218:    lote 2, Cap. 2       35 pasos    1 puente     2,86` |
+| lote 2, Cap. 3 | 53 | 4 | **7,55** | `7219:    lote 2, Cap. 3       53 pasos    4 puentes    7,55` |
+| lote 2, Cap. 4 | 97 | 3 | **3,09** | `7220:    lote 2, Cap. 4       97 pasos    3 puentes    3,09` |
+| lote 2, Cap. 5 cuerpo | 80 | 4 | **5,00** | `7221:    lote 2, Cap. 5 cuerpo 80 pasos   4 puentes    5,00` |
+| lote 2, **Cap. 6, `Your Greatest Opportunity`** (la vuelta 8 la llamo *Cap. 5 cola*) | 90 | 5 | **5,56** | `7222:    lote 2, Cap. 5 cola   90 pasos    5 puentes    5,56   <-- esta vuelta` |
+| lote 2 acumulado | 371 | 18 | **4,85** | `7223:    lote 2 acumulado     371 pasos  18 puentes    4,85` |
+| **lote 3, Cap. 1, `What Is Management?`** | **79** | **3** | **3,80** | *medido en esta vuelta, 5.b* |
+| **lote 3, Cap. 2, `Your First Three Months`** | **76** | **4** | **5,26** | *medido en esta vuelta, 5.b* |
+| **lote 3 acumulado** | **155** | **7** | **4,52** | *medido en esta vuelta, 5.b* |
+
+**Las once filas salen de las ocho de la serie publicada en 5.c de la vuelta 8, contadas
+ocho, mas las tres de esta vuelta** (remedio 1.a, hermana tercera). **La linea de la
+`Introduction` no entra porque no tiene denominador**, y eso se escribe en vez de
+borrarse.
+
+### 5.d. LAS DIVISIONES DE LA TENDENCIA, ESCRITAS ANTES DE COMENTARLAS
+
+**El encargo me pide la tendencia local con su cociente, y me lo pide porque la tasa subio
+tres medidas seguidas en el lote 2** (3,09 / 5,00 / 5,56).
+
+| comparacion | division | lo que dice |
+|---|---:|---|
+| Cap. 2 contra Cap. 1 de esta vuelta | 5,26 / 3,80 = **1,384** | **SUBE**, y sube mas fuerte que ninguno de los saltos del lote 2 |
+| lote 3 acumulado contra lote 2 acumulado | 4,52 / 4,85 = **0,932** | **baja**, un siete por ciento escaso |
+| lote 3 acumulado contra la ultima del lote 2 | 4,52 / 5,56 = **0,813** | **baja** |
+| lote 3 acumulado contra la linea base | 4,52 / 36,11 = **0,125** | **baja holgadamente**, que es lo unico que la regla mira |
+
+**LA TENDENCIA, DICHA SIN SUAVIZAR:** dentro de esta vuelta **la tasa sube de 3,80 a 5,26,
+un cociente de 1,384**, y el aviso que el encargo me hizo suyo **sigue vivo**: contando
+desde el Cap. 4 del lote 2 la serie de medidas consecutivas va **3,09, 5,00, 5,56, 3,80,
+5,26**, y ahi no hay una subida sostenida, **hay oscilacion entre 3 y 5,6 con el 3,80 de
+en medio rompiendo la racha de tres.** **Ya no son tres seguidas.**
+
+**LO QUE SI DIGO, y es una observacion mia que no propongo como regla:** los siete puentes
+de esta vuelta son de **una sola especie**, el verbo de instrumentacion, y **cinco de los
+siete aparecen donde el libro habla en primera persona del pasado o cita a un tercero.**
+**La tasa no la mueve el capitulo: la mueve cuanta narracion en primera persona tiene el
+capitulo.** El Cap. 2 tiene mas casos contados que el Cap. 1, y saco mas puentes.
+
+### 5.e. MEDIDA 3: VEREDICTOS ESCRITOS, CON SU ORIGEN
+
+**CERO veredictos escritos en esta vuelta, y las dos razones son las dos que lo hacen
+imposible, no una excusa:**
+
+1. **La aduana no levanto ni un vecino en los 21 candidatos.** Sin vecino no hay veredicto
+   que escribir.
+2. **`MODO_INSERCION=cuarentena`:** no hay insercion, y `bitacora/VEREDICTOS.jsonl` la
+   escribe `forja.py insertar`, nunca yo (`EXTRACTOR.md` 14).
+
+**Y las 15 aristas de serie de esta vuelta (7 del Cap. 1 y 8 del Cap. 2) TAMPOCO producen
+veredicto**, porque `forja.py arista` no corre sobre lo que esta en cuarentena. **Estan
+escritas en 3.B.6 y 4.6 con madre, paso e hijo**, esperando al acto de insertar.
+
+**Medicion de cierre, recomputada al cierre:** `python forja.py rancios` sigue dando
+`veredictos comprobados: 60`, los mismos 60 de la apertura. **Diferencia: CERO**, y es lo
+que tiene que salir.
+
+### 5.f. MEDIDA 4: CUANTO TARDO, LEIDO DE GIT
+
+    $ git log --format="%h|%ad|%s" --date=format:"%H:%M:%S"
+    6ed05a3|19:50:21|Estado del bucle antes de abrir la vuelta 9
+    aff456f|19:55:14|Vuelta 9, apertura y TAREA 2
+    8e1d12f|19:57:24|Vuelta 9, TAREA 3.A
+    ce46885|19:59:59|Vuelta 9, TAREA 3.B, frontera del Cap. 1
+    4bb2f5c|20:17:17|Vuelta 9, TAREA 3, 12 candidatos del Cap. 1
+    ceb9211|20:18:50|Vuelta 9, TAREA 4, frontera del Cap. 2
+    a229d78|20:30:08|Vuelta 9, TAREA 4, 9 candidatos del Cap. 2
+
+**Apertura `6ed05a3` a ultimo tramo `a229d78`: de 19:50:21 a 20:30:08, 39 min 47 s.**
+
+**Y LA COMPARACION SE HACE CON LA MISMA MEDIDA**, que es la caida 4 de la vuelta 8:
+**39,78 minutos de apertura a ultimo tramo, contra los 30,92 de apertura a ultimo tramo de
+la vuelta 8** (`7278:30,9 minutos con 15 candidatos. 30,9 / 43,9 = **0,704**`). La
+division: **39,78 / 30,92 = 1,287.** Tardo un 29 por ciento mas, **y produjo 21
+candidatos contra 15, es decir un 40 por ciento mas.** Por candidato: **1,89 minutos
+contra 2,06**, division **0,918**.
+
+**Este reporte tiene su cierre completo**, asi que el disparador de `EXTRACTOR.md` 12.4
+**no se arma** y la vuelta 10 no tiene que bajar el tramo por esta causa.
+
+### 5.h. LA LECTURA DEL VOLUMEN PARA EL LOTE 4, CON LA REGLA DELANTE Y SIN ADJUDICARMELA
+
+**La regla es de `AUDITOR_FORJA.md` 8.1 y la aplica el auditor, no yo. Pongo las cifras.**
+
+**Las dos unidades con denominador de esta vuelta bajan respecto a la linea base del
+36,11 por ciento**, y bajan holgadamente: **3,80 y 5,26, es decir al 10,5 y al 14,6 por
+ciento de la linea base.** **La peor de las dos, 5,26, esta en la septima parte.**
+
+**Contra el lote 2 la lectura es mas apretada y lo digo asi:** el lote 3 acumula
+**4,52 por ciento** contra los **4,85** del lote 2 acumulado, **division 0,932**, es decir
+**una mejora de siete puntos porcentuales escasos.** **No es una mejora que sostenga por
+si sola una subida de volumen**, y el que decide eso es el auditor.
+
+**Y el aviso que me toca a mi dar:** esta vuelta ha minado **tres unidades y ha producido
+21 candidatos, seis mas que el maximo de la banda de `EXTRACTOR.md` 12.4.** No lo presento
+como un logro: **lo presento como un dato para el que fije el tramo siguiente.** Si 21
+resulta ser demasiado para revisar de una sentada, **la causa no son las tres unidades sino
+la densidad de este libro**, que instruye en casi cada seccion, y el remedio seria bajar a
+dos unidades y no partir capitulos.
+
+### 5.i. LA COLA QUE ESTA VUELTA DEJA, EN UNA LISTA
+
+1. **Los 21 candidatos de `cuarentena/zhuo_manager/` NO estan insertados.** Su autorizacion
+   es del fundador (`D.26`), y en esta corrida no la ha dado.
+2. **Las 15 aristas de serie** (7 en 3.B.6, 8 en 4.6) esperan al acto de insertar.
+3. **Las dos aristas que declaro que NO declaro** (4.6, las remisiones del libro a si
+   mismo) quedan escritas como decision, no como pendiente.
+4. **Nueve ficheros de `zhuo_manager` sin abrir:** `cap_04.md` a `cap_12.md`, **56.355
+   palabras** (70.041 menos las 13.686 de esta vuelta). El encargo prohibia abrirlos y no
+   los he abierto.
+5. **El `cap_08.md`, `Hiring Well`, es el que va a chocar con las 44 fichas de `smart_who`
+   del grafo.** Va aqui para que la vuelta que lo abra lo sepa antes, no despues.
+6. **El `cap_12.md` se juzga antes de cortarse**, como el tramo C del lote 2: 449 lineas
+   para 3.511 palabras es un `Index`, no un capitulo.
+7. **Los 15 candidatos de `cuarentena/smart_who/` siguen sin insertar**, y no los he
+   tocado.
+
+### 5.j. LO QUE PROPONGO, SIN ADJUDICARME NADA
+
+**PROPUESTA 1. La regla del libro que construye por refutacion** (3.B.2). En el Cap. 1
+hay **dos listas de tres elementos** presentadas para ser desarmadas, y **minarlas habria
+metido en el catalogo lo contrario de lo que el libro sostiene.** Ninguna guarda de esta
+casa lo ve, igual que no ve un puente. **Propongo que se estudie si merece renglon propio
+junto a `D.30`**, con la senial barata que encontre: **el libro introduce esas listas en
+pasado o en condicional** (`here's what I would have said`). **No la escribo como regla y
+no la aplico como si lo fuera: la he aplicado como lectura, caso a caso, y con su cita.**
+
+**PROPUESTA 2. La remision del libro a si mismo** (4.2). Este libro dice dos veces *See
+description from "The Apprentice"*. **Lo he resuelto por `P.19`**, sin fabricar gemelos,
+**pero `P.19` habla de repeticion DENTRO de un candidato y esto es entre capitulos.**
+Propongo que se mire si `P.19` cubre este caso o si le falta una linea. **Mientras tanto he
+elegido la lectura conservadora: no duplicar.**
+
+**PROPUESTA 3, y es de instrumento, no de doctrina.** El informe de lote sobre 21
+candidatos **tarda mas de diez minutos** en esta maquina, mientras que el de candidato
+suelto es inmediato. **No propongo tocar nada ni fabricar nada** (moratoria,
+`EXTRACTOR.md` 13): **lo dejo medido** para que quien decida el tamanio de los lotes lo
+tenga escrito, porque a este ritmo un lote de 40 candidatos no cabe en una vuelta.
+
+---
+
+# EL CIERRE DE LA VUELTA 9
+
+## C.9.1. LOS CUATRO DISCUTIBLES, RECOGIDOS, Y LOS MARQUE ANTES DE SABER SI ACIERTO
+
+**Los cuatro se escribieron en el momento en que tome la decision, no al final**, y estan
+en 3.A.4, 3.B.5 (dos) y 4.7. Aqui van juntos para que la relectura ciega empiece por
+ellos.
+
+| # | donde | la duda, en una linea | si cae, que aprende la casa |
+|---:|---|---|---|
+| 1 | `cap_01.md` L97 | descarto *You try something / figure out / file away / Rinse, repeat*, **cuatro etapas nombradas en orden**, porque sin objeto de trabajo los pasos los pondria yo | **una secuencia generica de aprendizaje no es un inventario de etapas**, y este libro esta escrito en ese registro |
+| 2 | `cap_02.md` L121 a L123 | descarto **las cinco condiciones de Hackman**, nombradas una a una, por ser el inventario de otro traido para contrastar | **la cita de otro autor con su lista dentro es minable**, y habria que escribir como se le pone fuente |
+| 3 | `cap_02.md` P19 a P22 | escribo **un** nodo para los motivos y **cabeza mas tres** para las preguntas, teniendo los dos la misma forma de serie | **la serie se parte por la forma del libro, no por la riqueza de sus partes** |
+| 4 | `cap_03.md`, cuatro listas | saco a nodo propio **cuatro listas de preguntas sin titulo propio**, y dejo dentro otras dos | **el titulo manda**, y entonces tres nodos del Cap. 2 se hinchan a 15, 16 y 21 pasos |
+
+**Los cuatro son de la misma familia y lo digo:** **los cuatro son sobre DONDE ESTA LA
+FRONTERA DE UN NODO**, no sobre si el material es bueno. **Ninguno es una duda sobre la
+fidelidad**, que es lo que la vuelta 8 midio y corrigio en el acto.
+
+## C.9.2. NINGUNA PARADA, Y LAS DOS VECES QUE ESTUVO CERCA
+
+**No hay parada.** Las tres condiciones del encargo no se dieron: ninguna regla me obligo a
+romper otra, no necesite mover umbral, regla de id, esquema, `D.27` ni la vara, y **las
+comprobaciones de apertura salieron las cuatro en verde.**
+
+**LAS DOS VECES QUE ESTUVO CERCA:**
+
+1. **El DISCUTIBLE 3** roza la vara: si el manual 3.4 obliga a cabeza mas partes por la
+   forma, mi lectura la estaria estrechando, **y `EXTRACTOR.md` 9 dice que eso es parada.**
+   **Por que NO pare:** 3.4 dice *un nodo por paso mas una cabeza* **y en la misma linea
+   dice *jamas dos compresiones de la misma numeracion***. Los dos mandatos juntos no
+   deciden este caso, **asi que no es una vara que yo mueva: es un caso que la vara no
+   cubre.** Lo he resuelto con lectura, lo he marcado, y sigo (`EXTRACTOR.md` 7: un
+   pendiente de doctrina no detiene).
+2. **Los 21 candidatos contra la banda de cinco a quince** de `EXTRACTOR.md` 12.4.
+   **Por que NO pare:** el ACTA 8 3.11 ya adjudico que **la banda no bloquea** y que la
+   propia 12.4 declara su cifra *no sagrada* poniendo lo vinculante en el disparador.
+   **El disparador es no cerrar el reporte, y este reporte cierra.** Lo dejo medido en 5.h.
+
+## C.9.3. LO QUE ESTA VUELTA **NO** HIZO, DICHO POR SU NOMBRE
+
+- **CERO inserciones.** `MODO_INSERCION=cuarentena`. **No corri `python forja.py insertar`
+  ni una vez**, y el gate al cierre lo prueba: sigue en 52 nodos.
+- **CERO aristas declaradas.** No corri `python forja.py arista`. Las 15 estan escritas.
+- **No toque `cuarentena/smart_who/`.**
+- **No abri `cap_04.md` en adelante**, salvo la cabecera de `cap_04.md` (L1 a L11) para
+  comprobar el borde del Cap. 2, que es comprobacion de frontera y esta declarada en 2.4.
+- **No escribi `docs/loop/PARA_ALEXIS.md`** (`D.28`), ni `PROMPT_SIGUIENTE.md`, ni el acta.
+- **No fabrique maquinaria** (`EXTRACTOR.md` 13): ni un guion, ni una guarda, ni un lector.
+  El unico instrumento nuevo de esta vuelta es **un bucle de cobertura de tres lineas
+  corrido en memoria y pegado en el reporte**, que no deja fichero ni se vuelve a usar.
+
