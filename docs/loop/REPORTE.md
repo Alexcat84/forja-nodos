@@ -11844,3 +11844,89 @@ funciono y la escribo con su cifra para que se pueda comprobar.**
 vuelta significa algo mientras la carga cambie de una a otra. **Lo que si es comparable es el
 desglose**, y ese lo dejo medido por primera vez para que la vuelta 12 tenga contra que
 compararse.
+
+---
+
+# VUELTA 12, lote 3 (`zhuo_manager`), capitulos `cap_07` a `cap_10`
+
+*Esqueleto abierto ANTES de la primera tarea (`EXTRACTOR.md` 3). Las filas de
+abajo nacen vacias y cada tarea anexa la suya AL CERRARSE, no al final.*
+
+## 12.1. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION
+
+*`EXTRACTOR.md` 4: la apertura se mide antes de la primera operacion. Todo lo de
+esta tabla se leyo del instrumento corrido HOY, y el comando va al lado.*
+
+| | | comando |
+|---|---|---|
+| fecha | **2026-09-11** | `date '+%Y-%m-%d %H:%M:%S'` da `2026-09-11 08:08:08`, y `datetime.date.today()` da `2026-09-11` |
+| rama | `extraccion-mundo-11` | `git rev-parse --abbrev-ref HEAD` |
+| commit de apertura | **`16a2d2c`** | `git rev-parse HEAD`, tras commitear lo pendiente (`EXTRACTOR.md` 1.1) |
+| lote | **3, `zhuo_manager`**, ya abierto y minado hasta `cap_06` | `ORDEN_DE_LOTES.md` |
+| unidades de esta vuelta | **`cap_07`, `cap_08`, `cap_09`, `cap_10`** | el encargo, tarea 1 |
+| nodos en el grafo | **135** | `wc -l < dataset/nodos.jsonl` |
+| aristas en el grafo | **59** previas y **59** siguientes | recuento de `nodos_previos` y `nodos_siguientes` sobre `dataset/nodos.jsonl` |
+| veredictos | **100** | `wc -l < bitacora/VEREDICTOS.jsonl` |
+| candidatos en `cuarentena/zhuo_manager/` | **0** | `ls cuarentena/zhuo_manager \| wc -l` da `0`. **LA BANDEJA ESTA VACIA**, como el encargo anuncia |
+| candidatos ya insertados y archivados | **68** | `ls cuarentena/_insertados/zhuo_manager/*.json \| wc -l` |
+| inserciones autorizadas en esta vuelta | **CERO**. `MODO_INSERCION=cuarentena` | orden del fundador en el encargo de esta corrida |
+
+**LAS CUATRO GUARDAS, CORRIDAS EN LA APERTURA** (se vuelven a correr al cierre,
+porque el estado al cierre se mide al cierre):
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 135
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python tests/test_aceptacion.py
+      total: 75 pruebas, 0 fallos, 0 errores
+
+    $ python forja.py rancios
+    BLOQUE DE VIGENCIA VERDE.
+      veredictos comprobados: 100
+      citas de enlace mutuo comprobadas: 0
+
+**EL GRAFO PASO DE 52 A 135 NODOS Y DE 37 A 59 ARISTAS** entre el cierre de la
+vuelta 11 y esta apertura, porque el lote 2 se cerro e inserto y el 3 entro en lo
+ya minado. Es el contraste que el encargo anuncia, y lo cito como contraste:
+**la cifra viva es la de hoy, 135 y 59.**
+
+## 12.2. LAS CUATRO TAREAS, ANEXADAS AL CERRARSE
+
+| # | tarea | estado | resultado |
+|---|---|---|---|
+| 1 | los cuatro capitulos, uno a uno y enteros | *(se anexa al cerrar)* | |
+| 2 | el informe del lote y el reloj | *(se anexa al cerrar)* | |
+| 3 | las cuatro medidas por capitulo | *(se anexa al cerrar)* | |
+| 4 | el cierre del lote 3, si los cuatro cierran | *(se anexa al cerrar)* | |
+
+## 12.3. DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO
+
+*`EXTRACTOR.md` 8. Se anexan aqui SEGUN APARECEN, cada uno en el momento en que
+tomo la decision y antes de saber como cae. La lista crece durante la vuelta.*
+
+| # | discutible | donde |
+|---|---|---|
+| *(se anexan segun aparecen)* | | |
+
+## 12.4. LA DISCREPANCIA DE PALABRAS, DECLARADA EN LA APERTURA
+
+*`EXTRACTOR.md` 5: si la medicion de hoy discrepa de una nota previa, la
+discrepancia se declara en vez de resolverse copiando.*
+
+**NO HAY DISCREPANCIA, y lo digo porque la busque.** El encargo da 5.285, 7.315,
+7.184 y 6.137 palabras. `wc -w` sobre el fichero entero da 5.318, 7.348, 7.218 y
+6.172, **treinta y tantas de mas en los cuatro**. La diferencia es el
+`frontmatter` de siete lineas, que no es texto del libro:
+
+    $ for f in cap_07 cap_08 cap_09 cap_10; do sed -n '8,$p' $f.md | wc -w; done
+    5285
+    7315
+    7184
+    6137
+
+**Las cuatro cifras del encargo son las de cuerpo y coinciden al numero.** Cuento
+**25.921 palabras de cuerpo** en esta vuelta.
