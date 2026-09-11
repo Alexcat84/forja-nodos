@@ -10705,3 +10705,305 @@ capitulos, ni las palabras. **Eso lo fija `D.24` y no lo elige el bucle.**
 > no es homogenea puede partirla y quedarse `L283` como procedimiento.** Yo no lo hago
 > porque **el alcance de `L283` es el capitulo y el del nodo es una escena**, pero **la
 > lectura contraria no es absurda y por eso la escribo antes de saber como cae.**
+
+---
+
+## TAREA 2. LA COLA DE ARISTAS DE LA VUELTA 10, HECHA ANTES DE ABRIR EL LIBRO NUEVO
+
+**CERO INSERCIONES Y CERO TOQUES AL GRAFO** (`D.26`). Y lo digo con la medida delante,
+porque es lo que hace verificable la frase: **los cinco nodos de esta tarea viven los cinco
+en `cuarentena/` y ninguno esta en `dataset/nodos.jsonl`**, asi que `python forja.py arista`
+**no se puede correr aunque quisiera**, y no lo quiero.
+
+    $ para cada uno: ls cuarentena/... y grep del id en dataset/nodos.jsonl
+    gestionar_personas_equipo           :: cuarentena=SI dataset=0
+    ser_honesto_transparente_desempenio :: cuarentena=SI dataset=0
+    elegir_forma_inspirar_cambio_conducta :: cuarentena=SI dataset=0
+    despedir_persona_respeto_franqueza  :: cuarentena=SI dataset=0
+    dar_mala_noticia_decision_tomada    :: cuarentena=SI dataset=0
+
+**Y lo compruebo tambien por el otro lado**, que es el que de verdad lo prueba: **los 50
+candidatos de la carpeta suman CERO aristas escritas**, ni previas ni siguientes.
+
+    $ python -c "... suma nodos_previos y nodos_siguientes sobre los 50 de cuarentena/zhuo_manager"
+    TOTAL previos: 0 siguientes: 0
+
+**Asi que lo que produce esta tarea son LECTURAS, no aristas escritas**, igual que las diez
+de la vuelta 9 y por la misma razon. **Se materializan el dia que el fundador autorice la
+insercion, y hasta entonces viven aqui con su cita.**
+
+### 2.0. EL TEST DE `D.37`, ESCRITO ANTES DE CORRERLO PARA QUE NO SE ME MUEVA SOLO
+
+*`EXTRACTOR.md` 15.6. **Lo escribo entero antes de aplicarlo a los tres casos**, porque un
+test que se enuncia despues del resultado se enuncia a la medida del resultado.*
+
+`D.37` pide **dos cosas a la vez**, y la propia regla las junta con una `y`:
+
+> *Cuando un nodo dice en su titulo o en su texto **cuantas partes tiene** (con sus seis
+> vias, los cuatro pasos, las cinco efes) **y esas partes existen como nodos**...*
+
+y su comprobacion operativa es `--paso <n>`: **abrir el paso `n` de la madre y ver que ahi
+se nombra al hijo.** Y su limite, literal: *la enumeracion tiene que estar ESCRITA, y la
+parte tiene que ser la que ese paso nombra.*
+
+| condicion | como la compruebo |
+|---|---|
+| **A. el texto dice CUANTAS partes** | busco el numeral en el titulo o en el texto de la cabeza. Los tres ejemplares de la regla son numerales |
+| **B. las partes existen como nodos** | las busco en `cuarentena/` y en `dataset/` |
+| **C. el paso `n` nombra al hijo** | abro el paso y leo |
+
+**LAS TRES, O NO ES ARISTA DE SERIE.** Lo que cumple B y C pero no A **no se tira: es
+lectura de `D.29`**, que es la otra puerta y pide razon escrita en vez de numeral.
+
+### 2.a. LA REMISION ENTRE CAPITULOS. **`D.37` NO PASA. LA ARISTA DE `D.29` SI, Y LA DECLARO**
+
+**El texto, pegado, con el paragrafo entero y no solo la frase que el encargo cita:**
+
+    $ awk 'NR>=179 && NR<=183 {print NR": "$0}' fuentes/zhuo_manager/cap_04.md
+    179: 			This power imbalance means that the responsibility falls to you to be honest
+         and transparent when it comes to how you are evaluating performance.
+    181: 			Your report should have a clear sense at all times of what your expectations
+         are and where he stands. [...] If you don't think he is operating at the level
+         you'd like to see, he should know that, too, and precisely why you feel that way.
+         For specifics on how to master the art of giving feedback, see the next chapter.
+    183: Admit Your Own Mistakes and Growth Areas
+
+**COMPRUEBO PRIMERO EL HECHO QUE EL ENCARGO AFIRMA, Y REPRODUCE:** el nodo
+`ser_honesto_transparente_desempenio` tiene **7 pasos** y el septimo dice *Y si no crees que
+este operando al nivel que te gustaria ver, tambien debe saberlo, y saber exactamente por
+que lo crees.* **Acaba en el punto anterior a la remision.** La frase `For specifics...`
+**no esta en ningun paso del nodo.**
+
+**EL TEST DE `D.37`, LAS TRES CONDICIONES:**
+
+| condicion | resultado | por que |
+|---|---|---|
+| **A. cuantas partes** | **NO** | `L181` no trae numeral ninguno. No dice *las cuatro formas*, ni *los N pasos*: dice *the next chapter* |
+| **B. la parte existe** | **si** | `elegir_forma_inspirar_cambio_conducta` esta en `cuarentena/zhuo_manager/`, es el candidato 39 de mi tabla `4.4` y es **P3**, la primera pieza viva del Cap. 4 |
+| **C. el paso nombra al hijo** | **NO** | **ninguno de los 7 pasos nombra nada**, porque la remision no se transcribio |
+
+**`D.37` FALLA POR DOS DE LAS TRES, Y LA SEGUNDA ES LA GORDA.** Falla A por lo que el
+auditor dice (`L181` nombra el capitulo y no el nodo), **pero falla tambien C, y eso el
+encargo no lo dice**: aunque `L181` hubiera traido un numeral, **el paso que tendria que
+citarse en `--paso <n>` no existe.** Una arista de serie **necesita un paso que abrir**, y
+aqui no hay ninguno.
+
+**Y NO LO ARREGLO TRANSCRIBIENDO LA REMISION, Y ESA ES LA PARTE QUE QUIERO DEJAR ESCRITA.**
+La tentacion era añadir un paso 8 que dijera *para el detalle de como dominar el arte de dar
+opinion, ve al capitulo siguiente*. **No lo hago, y la regla que lo prohibe es la vara madre
+de `EXTRACTOR.md` 9:** *una linea solo cuenta como procedimiento propio si trae procedimiento
+propio, y no solo el nombre de otro*, con su caso literal *remite a otra norma, a otro
+libro*. **`L181` es exactamente eso: remite.** Un paso que dice *ve al capitulo siguiente*
+no es ejecutable por nadie que tenga el grafo y no el libro.
+
+> **Y HAY UN SEGUNDO MOTIVO, QUE ES DE HIGIENE Y ME LO APUNTO:** un paso que apunta a un
+> **capitulo del libro** deja dentro del grafo una referencia que solo resuelve quien tenga
+> el libro delante. **Las aristas apuntan a nodos; los pasos no apuntan a nada.**
+
+**LA LECTURA DE `D.29`, DECLARADA, Y COINCIDO CON EL CASO DEL AUDITOR:**
+
+| campo | valor |
+|---|---|
+| **madre** | `ser_honesto_transparente_desempenio` |
+| **hijo** | `elegir_forma_inspirar_cambio_conducta` |
+| **tipo** | **`nodos_siguientes`**, continuacion. No es cabeza a parte |
+| **cita** | `cap_04.md` `L181`, ultima frase: *For specifics on how to master the art of giving feedback, see the next chapter.* |
+| **razon** | **el libro remite explicitamente, y remite por el HUECO exacto que el nodo deja.** El nodo manda decirle a la persona que no esta al nivel *y exactamente por que lo crees*, y **ahi se para**. El COMO decirlo es lo que el libro manda buscar en el capitulo siguiente, y la cabeza de ese capitulo es `elegir_forma_inspirar_cambio_conducta`, que es `P3` y la primera pieza viva del Cap. 4 |
+
+**POR QUE LA CABEZA Y NO UNO DE LOS DOCE NODOS DEL CAP. 4**, que es la unica decision real
+que hay aqui: `L181` remite al **capitulo entero** (*the art of giving feedback*), no a una
+tecnica. **Apuntar a la cabeza es lo unico que reproduce ese alcance**; apuntar a
+`dar_opinion_especifica_tarea`, por ejemplo, estrecharia a una de las cuatro formas una
+remision que el libro hace abierta. **Y la cabeza es cabeza y no la elijo yo por comodidad:
+es P3, la primera pieza del capitulo que sobrevive al descarte**, y su propio texto enumera
+las cuatro formas en sus pasos 4 a 7.
+
+### 2.b. LOS DOS PASOS CON LA MISMA ORDEN. **`D.37` NO PASA, Y LA ARISTA TAMPOCO. NO LA DECLARO**
+
+**Los dos textos, pegados, uno al lado del otro:**
+
+    $ awk 'NR==313' fuentes/zhuo_manager/cap_04.md
+    313: 			When you decide to let someone go, do it respectfully and directly. Don't open
+         it up to discussion (it isn't one), and don't regard it as a failure on the part of
+         your report. [...]
+
+    $ awk 'NR==275' fuentes/zhuo_manager/cap_05.md
+    275: 			Own the decision. Be firm, and don't open it up for discussion. I failed at
+         this many times in the past because I hated being the bearer of bad news. [...]
+
+**EL HECHO REPRODUCE:** `despedir_persona_respeto_franqueza` paso 2 dice *No lo abras a
+discusion, porque no lo es*, y `dar_mala_noticia_decision_tomada` paso 2 dice *Asume la
+decision como tuya. Se firme y no la abras a discusion.* **Dos capitulos, la misma orden, y
+entre los dos nodos no hay arista.** Todo eso es cierto.
+
+**EL TEST DE `D.37`:**
+
+| condicion | resultado | por que |
+|---|---|---|
+| **A. cuantas partes** | **NO** | ninguna de las dos lineas trae numeral, y ninguno de los dos nodos es cabeza del otro |
+| **B. la parte existe** | **si** | los dos estan en `cuarentena/`, candidatos 38 y 50 |
+| **C. el paso nombra al hijo** | **NO** | el paso 2 del despido no nombra la mala noticia, ni al reves. **Nombran la misma ORDEN, que no es nombrar al otro** |
+
+**Y AQUI ME SEPARO DEL CASO DEL AUDITOR, QUE NO ME PIDE QUE LO SIGA SINO QUE LO LEA.**
+**NO DECLARO LA ARISTA, Y DOY LA RAZON EN LA LINEA DE LA PROPIA `D.37`:**
+
+> **LO QUE NO AUTORIZA: declarar una arista porque dos nodos compartan familia o tema.**
+
+**COMPARTIR UNA ORDEN NO ES MAS QUE COMPARTIR TEMA: ES COMPARTIR MENOS.** Lo que comparten
+`L313` y `L275` es **una sola frase de cuatro palabras**, *don't open it up (to/for)
+discussion*, y la comparten **porque las dos escenas son la misma especie**: comunicar algo
+ya decidido. **Eso no hace a un nodo previo del otro ni a uno parte del otro.** Ni el
+despido es un caso de dar una mala noticia en el libro (el despido esta en el Cap. 3, dentro
+de *MAKE PEOPLE MOVES QUICKLY*, y la mala noticia esta en el Cap. 4, dentro de *DELIVERING
+CRITICAL FEEDBACK OR BAD NEWS*), **ni el libro cruza los dos sitios con una sola linea.**
+Lo busque y no lo hay.
+
+**LA PRUEBA DE QUE NO ES ARISTA ES LA MISMA QUE LA REGLA DA PARA SU CASO GEMELO:** *una
+cabeza de seis vias y un vecino que no es ninguna de las seis son hermanos, y su veredicto
+es `SANO`.* **Estos dos son hermanos: dos escenas distintas que obedecen la misma orden.**
+
+> **Y LO QUE SI ESCRIBO, PORQUE ES LO QUE EL PAR DE VERDAD PRODUCE:** cuando estos dos
+> entren al grafo, **la señal 1 los va a emparejar por esa frase** y alguien va a tener que
+> escribir un veredicto. **El veredicto es `SANO`, y su razon es esta seccion.** Lo dejo
+> escrito hoy para que ese dia cueste un minuto y no una lectura entera. **No lo escribo en
+> `bitacora/VEREDICTOS.jsonl`**, que es sede de la aduana y no mia (`EXTRACTOR.md` 14), y
+> ademas no habria nada contra que emitirlo: **los dos nodos estan fuera del grafo.**
+
+**Y RECOJO LA CORRECCION QUE EL AUDITOR SE HACE A SI MISMO** sobre el racimo del despido:
+eran **cuatro** aristas y no cero. **Queda recogida y no la vuelvo a plantear.**
+
+### 2.c. LOS CUATRO PASOS DEL INDICE. **`D.37` NO PASA EN NINGUNO. TRES ARISTAS DE `D.29` Y UNA QUE NO**
+
+**La fuente de los cuatro pasos, que el encargo no cita y es la que decide el test:**
+
+    $ awk 'NR==137' fuentes/zhuo_manager/cap_02.md
+    137: 			[...] To manage people well, you must develop trusting relationships with
+         them, understand their strengths and weaknesses (as well as your own), make good
+         decisions about who should do what (including hiring and firing when necessary),
+         and coach individuals to do their best.
+
+**LA CONDICION A CAE DE UNA VEZ PARA LOS CUATRO, Y ES EL RESULTADO MAS UTIL DE ESTA TAREA.**
+`L137` **enumera cuatro cosas y NO dice "cuatro" en ningun sitio**: las encadena con comas y
+una `and` final. **`D.37` pide que el texto diga cuantas partes tiene**, y sus tres
+ejemplares son numerales (*con sus seis vias*, *los cuatro pasos*, *las cinco efes*).
+**Aqui no hay numeral, asi que `D.37` NO pasa en ninguno de los cuatro**, y la condicion C
+no llega ni a mirarse para decidirlo.
+
+> **ESTE ES EL CASO QUE SEPARA UNA DE SERIE DE UNA DE LECTURA, Y POR ESO EL ENCARGO PIDE
+> CORRER EL TEST ANTES.** `L137` **enumera sus partes una a una**, que es la mitad de
+> `D.37`, **y no las cuenta**, que es la otra mitad. **Cumple B y C de sobra y suspende A.**
+> Por eso las tres que salen son de `D.29` y ninguna de serie, **y la diferencia no es
+> cosmetica**: una arista de serie se declara con `--paso <n>` y se comprueba abriendo el
+> paso; una de lectura se declara con razon escrita y **la lee un humano.**
+
+**LOS CUATRO, UNO A UNO, CON LA CONDICION C CORRIDA IGUAL** porque es la que dice si la
+lectura de `D.29` se sostiene:
+
+| paso de `gestionar_personas_equipo` | lo que `L137` pone | C: nombra al hijo | hijo, y donde esta | veredicto |
+|---:|---|---|---|---|
+| **2** *Desarrolla relaciones de confianza con ellos* | *develop trusting relationships with them* | **si**, nombra el objeto entero | `ganar_confianza_personas_cargo`, `cuarentena/`, candidato 26, pieza P8 del Cap. 3 (`TRUST IS THE MOST IMPORTANT INGREDIENT`, `L47`) | **ARISTA DE `D.29`, DECLARADA** |
+| **3** *Entiende las fuerzas y las debilidades de cada uno, y tambien las tuyas* | *understand their strengths and weaknesses (as well as your own)* | **si, y nombra DOS** | `ayudar_personas_jugar_fortalezas` (candidato 32, P19, `HELP PEOPLE PLAY TO THEIR STRENGTHS`, `L207`) y `admitir_errores_areas_mejora_propias` (candidato 31, P17 y P18, `L183`) | **DOS ARISTAS DE `D.29`, DECLARADAS** |
+| **4** *Toma buenas decisiones sobre quien debe hacer que, y eso incluye contratar y despedir* | *make good decisions about who should do what (including hiring and firing when necessary)* | **a medias, y por eso NO** | ver abajo | **NO LA DECLARO** |
+| **5** *Entrena a cada persona para que de lo mejor de si* | *coach individuals to do their best* | **si** | `elegir_forma_inspirar_cambio_conducta`, candidato 39, P3, cabeza del Cap. 4 | **ARISTA DE `D.29`, DECLARADA**, y con confirmacion del propio libro |
+
+**LAS TRES QUE DECLARO, CON SU RAZON ESCRITA UNA A UNA:**
+
+**1) paso 2, a `ganar_confianza_personas_cargo`.** *Develop trusting relationships* es el
+enunciado, y el Cap. 3 abre su seccion central con `L47` *TRUST IS THE MOST IMPORTANT
+INGREDIENT*. **El paso 2 nombra en una linea lo que el hijo despliega en 6 pasos que la
+madre no tiene.** Es el caso canonico de `D.29`: el libro nombro y despues desplego.
+
+**2 y 3) paso 3, a `ayudar_personas_jugar_fortalezas` y a
+`admitir_errores_areas_mejora_propias`.** **El paso 3 nombra DOS objetos y no uno**, y lo
+dice el propio parentesis del libro: *their strengths and weaknesses **(as well as your
+own)***. **Las fuerzas de los demas** las despliega `ayudar_personas_jugar_fortalezas`; **las
+propias debilidades** las despliega `admitir_errores_areas_mejora_propias`, cuya seccion se
+titula literalmente *Admit Your Own Mistakes and Growth Areas* (`L183`). **Partir el paso 3
+en dos aristas no es un capricho mio: es el parentesis del libro leido.**
+
+**4) paso 5, a `elegir_forma_inspirar_cambio_conducta`.** *Coach individuals to do their
+best*, y **el propio libro cierra el Cap. 3 confirmandolo**, que es la pista que el encargo
+me da y que compruebo:
+
+    $ awk 'NR==321' fuentes/zhuo_manager/cap_04.md
+    321: 			Great managers are excellent coaches, and the secret sauce to coaching is the
+         topic of our next chapter - giving effective feedback.
+
+**`L321` dice que entrenar ES el capitulo de la opinion.** Asi que la arista del paso 5
+tiene **dos citas y no una**: la enumeracion de `L137` y la ecuacion de `L321`. **Es la mas
+firme de las cuatro.**
+
+> **Y OJO A LO QUE ESTO PRODUCE, QUE LO DIGO YO Y NADIE ME LO HA PREGUNTADO:**
+> `elegir_forma_inspirar_cambio_conducta` **recibe DOS aristas en esta misma tarea**, la de
+> `2.a` (desde `ser_honesto_transparente_desempenio`) y esta. **No es un error ni una
+> duplicacion:** son dos nodos distintos que remiten al mismo sitio, y el libro lo hace
+> **dos veces y en dos lineas distintas** (`L181` y `L321`, mas `L137`). **Que la cabeza del
+> Cap. 4 sea el destino de medio Cap. 3 es un dato del libro, no un artefacto de mi
+> lectura.**
+
+**LA QUE NO DECLARO, Y LA RAZON ES LA MITAD QUE FALTA:**
+
+**paso 4, *make good decisions about who should do what (including hiring and firing)*.**
+**El paso nombra TRES cosas y solo DOS tienen nodo hoy:**
+
+| lo que el paso 4 nombra | existe como nodo | cual |
+|---|---|---|
+| **despedir** (*firing*) | **si** | `elegir_recolocar_despedir_persona` (34), `despedir_persona_respeto_franqueza` (38), `mover_rapido_persona_papel_equivocado` (36) |
+| **contratar** (*hiring*) | **NO** | es `cap_08.md`, `Hiring Well`, **el Cap. 7, sin minar** |
+| **quien debe hacer que** (*who should do what*) | **NO** | no hay nodo de reparto de trabajo en los 50 |
+
+**NO DECLARO NINGUNA DE LAS TRES, Y NO ES POR PRUDENCIA SINO POR LO QUE PASARIA SI LO
+HICIERA.** Si cuelgo el paso 4 de `despedir_persona_respeto_franqueza`, **el paso 4 queda
+declarado como si su contenido fuera el despido**, y no lo es: **el despido es el parentesis
+de un enunciado cuyo sujeto es decidir quien hace que.** Un lector del grafo que siguiera esa
+arista **leeria el paso 4 estrechado a un tercio de lo que dice**. Y colgarla de los tres
+nodos del despido a la vez **triplica el mismo error y ademas fabrica tres aristas donde el
+libro tiene un parentesis.**
+
+> **LA ARISTA DEL PASO 4 SE DECLARA CUANDO EXISTA SU HIJO, Y SU HIJO ES EL Cap. 7.** Lo dejo
+> escrito aqui para la vuelta que mine `cap_08.md`: **`gestionar_personas_equipo` paso 4
+> tiene pendiente su arista, y el candidato natural es la cabeza de `Hiring Well`.** **No es
+> una promesa de seccion** (remedio `1.a`): es una cola nombrada, sin cifra y sin sede.
+
+### 2.d. EL SALDO DE LA TAREA 2, CONTADO
+
+| caso | `D.37` | arista de `D.29` | cuantas |
+|---|---|---|---:|
+| **2.a** remision entre capitulos | **NO** (falla A y C) | **SI** | 1 |
+| **2.b** los dos pasos con la misma orden | **NO** (falla A y C) | **NO**, y con veredicto `SANO` preescrito | 0 |
+| **2.c** paso 2 | **NO** (falla A) | **SI** | 1 |
+| **2.c** paso 3 | **NO** (falla A) | **SI**, y son dos | 2 |
+| **2.c** paso 4 | **NO** (falla A) | **NO**, hijo inexistente, cola nombrada | 0 |
+| **2.c** paso 5 | **NO** (falla A) | **SI**, con dos citas | 1 |
+| | | **TOTAL** | **5** |
+
+**CINCO LECTURAS DE `D.29` DECLARADAS, CERO ARISTAS DE SERIE POR `D.37`, Y CERO ESCRITAS EN
+EL GRAFO.** Y el resultado que el encargo pedia medir y no adelantar: **`D.37` no pasa en
+NINGUNO de los seis casos, y en los cinco del `2.c` falla siempre por la misma condicion:
+el libro enumera y no cuenta.**
+
+### 2.e. LA FILA DE LA TAREA 2
+
+| tarea | que era | como cerro |
+|---|---|---|
+| **2** | la cola de aristas de la vuelta 10, con el test de `D.37` corrido antes a las tres | **CERRADA.** Test de `D.37` enunciado antes de correrlo y corrido a los seis casos: **0 de 6 pasan**. **5 lecturas de `D.29` declaradas** con su cita y su razon, **2 no declaradas** con la razon escrita, **1 cola nombrada sin cifra** para la vuelta que mine `cap_08.md`. **Cero inserciones y cero toques al grafo**, comprobado por las dos puntas |
+
+> **DISCUTIBLE 2, MARCADO ANTES DE SABER SI ACIERTO.** **Parti el paso 3 en DOS aristas.**
+> El caso en contra: `D.29` habla de *la arista*, en singular, y **un paso que produce dos
+> aristas es un paso que a lo mejor tenia que haber sido dos pasos** cuando lo escribi en la
+> vuelta 9. **Si el auditor lee que el defecto esta en el paso y no en la arista, lo que hay
+> que corregir es `gestionar_personas_equipo`, no esta tabla.** Yo no lo corrijo porque el
+> paso transcribe `L137` con su parentesis y **partirlo seria apartarme del libro para
+> comodidad del grafo**, que es justo lo que `D.30` prohibe. **Pero la lectura contraria
+> tiene un argumento que la mia no tiene: deja cada paso con una arista.**
+
+> **DISCUTIBLE 3, MARCADO ANTES DE SABER SI ACIERTO.** **No declare la arista del `2.b`.**
+> El auditor la trajo como caso suyo y yo la tumbo con el limite de `D.37`. **El caso en
+> contra es bueno y lo escribo entero:** las dos escenas **no comparten solo una orden,
+> comparten la MISMA DOCTRINA** (lo ya decidido no se abre a discusion porque abrirlo es
+> insincero), y `L277` del `cap_05.md` **da la razon de esa doctrina** mientras que `L313`
+> del `cap_04.md` **solo da la orden**. **Quien lea que una da la razon de la otra tiene una
+> arista de `D.29` de manual**, y mejor fundada que dos de las que yo si declaro. **Lo que
+> me detiene es que el libro nunca cruza los dos sitios**, y una arista que el libro no
+> insinua por ningun lado la estoy poniendo yo. **Es el caso mas cerrado de los seis y por
+> eso va marcado.**
