@@ -1,0 +1,33 @@
+{
+  "id": "transitar_pionero_equipo_nuevo",
+  "titulo": "Transitar como pionero al frente de un equipo que crece",
+  "denominaciones": {
+    "nombre_largo": "El camino del pionero: sacar de tu cabeza lo que sabes, construir el equipo que quieres, y buscar apoyo fuera cuando eres el unico de tu especie",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "THE PIONEER"}
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando fuiste de los primeros en asumir un reto que ahora se esta convirtiendo en el trabajo de un equipo mayor, y respondes de su crecimiento: el fundador que pasa de tres personas en un garaje a diez empleados, o el primer contable de una organizacion que ahora monta un departamento financiero entero.",
+  "entregable_esperado": "Los valores y el saber hacer que tenias en la cabeza sacados fuera y pasados al equipo, el equipo construido a proposito y no heredado, y los dos grupos de apoyo externo ya identificados.",
+  "escala_minima": "Tu, que eras uno, y las primeras personas que entran. El libro pone el caso minimo en la primera disenadora de una empresa a la que le piden hacer crecer la disciplina de experiencia de usuario.",
+  "pasos_accionables": [
+    "Aprovecha que has hecho el trabajo y por tanto sabes lo que exige: fuiste el primero, el original, y nadie sabe mejor que tu en que consiste el puesto porque ayudaste a definirlo.",
+    "Desentierra todos los valores y el saber hacer que tienes en la cabeza y pasaselos a otros, que es lo que hace falta para tener exito.",
+    "En los primeros tiempos, dedica tiempo a calibrar con tu equipo nuevo cuales deben ser las metas, los valores y los procesos del grupo.",
+    "Para prepararte esa calibracion, preguntate como tomas tu las decisiones, que consideras tu un trabajo bien hecho, cuales eran todas las responsabilidades de las que te ocupabas cuando estabas solo, que es facil y que es dificil de trabajar en esta funcion, y que procesos nuevos hacen falta ahora que el equipo crece.",
+    "Aprovecha el privilegio del pionero: en vez de heredar un equipo, puedes elegir a las personas con las que quieres trabajar y como quieres trabajar con ellas. Se deliberado con la gente y la cultura que montas.",
+    "Para eso preguntate que cualidades quieres en un miembro del equipo, que habilidades necesita el equipo para complementar las tuyas, que aspecto debe tener y como debe funcionar este equipo dentro de un anio, y como van a evolucionar tu propio papel y tus responsabilidades.",
+    "Vigila que puede que no tengas mucho apoyo: la vida del pionero esta llena de aventura y de soledad, y te encuentras una y otra vez solo en terreno nuevo y desconocido. Pero eso no significa que no puedas buscar ayuda.",
+    "Apoyate en los dos grupos que el libro nombra: otros directivos de tu organizacion que llevan funciones relacionadas, y directivos de tu area de especialidad fuera de tu organizacion.",
+    "Con los de dentro, pregunta si alguna vez lidiaron con algo parecido a lo que se te esta atragantando. Con los de fuera, un grupo de lideres en puestos similares en otros sitios te da una red de apoyo de un valor incalculable, aunque os mantengais lejos de discutir los detalles concretos de vuestro trabajo.",
+    "Y el equilibrio entre tu trabajo individual y la gestion se te aplica igual: el libro remite aqui a la descripcion del camino del aprendiz, asi que no es materia nueva sino la misma."
+  ],
+  "resumen_teorico": "Es la segunda de las cuatro partes de la serie de los caminos. El libro le da dos ventajas y dos cosas que vigilar, y de las dos que vigilar la segunda no la desarrolla: remite literalmente a la descripcion del aprendiz. Los dos bloques de preguntas son los que el libro escribe uno a uno, y tienen destinatario distinto, que es lo que los separa: el primero se lo hace uno a si mismo en preparacion, y el segundo tambien, pero mirando al equipo que todavia no existe. El apoyo externo esta razonado con dos casos: la autora acudia a sus amigos directivos de ingenieria en Facebook, donde el equipo de ingenieria era muchas veces mayor que el de diseno, y dice que ocho de cada diez veces la respuesta era que ya habian tenido ese problema; y un amigo suyo emprendedor jura por lo que llama formacion informal de primer ejecutivo, unas cenas informales con otros fundadores. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se hace la calibracion con el equipo, ni como se monta la red de apoyo de fuera."
+}

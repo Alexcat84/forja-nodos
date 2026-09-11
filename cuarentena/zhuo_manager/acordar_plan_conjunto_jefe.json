@@ -1,0 +1,39 @@
+{
+  "id": "acordar_plan_conjunto_jefe",
+  "titulo": "Acordar con tu jefe un plan conjunto para empezar",
+  "denominaciones": {
+    "nombre_largo": "Las seis preguntas que se discuten con tu jefe para armar un plan conjunto de arranque como directivo aprendiz",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "work with your manager on a joint plan for getting started"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando estas haciendo la transicion como aprendiz, es decir cuando tu jefe te ha dado a dirigir una parte de su equipo y todavia teneis que acordar como empieza eso.",
+  "entregable_esperado": "Un plan conjunto de arranque, acordado con tu jefe, con las seis preguntas discutidas y contestadas.",
+  "escala_minima": "Tu y tu jefe, y una conversacion. El libro no pide documento: pide un plan conjunto y da las preguntas que se discuten para armarlo.",
+  "pasos_accionables": [
+    "Si estas haciendo la transicion como aprendiz, trabaja con tu jefe en un plan conjunto para empezar.",
+    "Discutid cual va a ser tu ambito al principio y como espera el que cambie con el tiempo.",
+    "Discutid como se va a comunicar tu transicion.",
+    "Discutid que necesitas saber sobre las personas que vas a dirigir.",
+    "Discutid que metas o procesos importantes del equipo deberias conocer y ayudar a empujar.",
+    "Discutid a que se parece el exito en tus primeros tres meses y en tus primeros seis.",
+    "Y discutid como vais a mantener alineado entre los dos quien hace que.",
+    "Cuenta ademas con tu jefe como caja de resonancia constante en tus primeros meses: si no estas seguro de como responder a una peticion, o sale una situacion para la que no te sientes preparado, es a quien acudes."
+  ],
+  "resumen_teorico": "Es el instrumento que el libro pone dentro del camino del aprendiz, y el unico del capitulo que produce un acuerdo con otra persona en vez de una lista propia. Las seis preguntas son las seis que el libro escribe una a una bajo la frase que las introduce, preguntas que discutir incluyen. La doctrina de la que cuelgan es la ventaja que el libro atribuye a este camino, que tu propio jefe ha estado vigilando el equipo y conoce a todos los implicados, asi que hay mas guia disponible que en los otros tres caminos. El ultimo paso viene del caso que la autora cuenta de si misma: su jefa Rebekah fue su caja de resonancia constante en los primeros meses, y el libro dice para que exactamente, para cuando no sabia como responder a una peticion o surgia una situacion para la que no se sentia preparada. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuando se tiene esa conversacion, si se escribe, ni cada cuanto se revisa el plan."
+}

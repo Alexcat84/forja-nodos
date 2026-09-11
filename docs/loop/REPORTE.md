@@ -7553,7 +7553,7 @@ de donde salen las N, con las filas de la serie contadas.**
 |---|---|---|---|
 | 2 | comprobaciones de apertura y mapa del libro, antes de cortar nada | **CERRADA** | las cuatro guardas cuadran con lo anunciado (**52, 37, 72 de 72, 60**), **cero discrepancias**. Fuente canonica leida y pegada. Los tres ficheros cierran su capitulo y el `cap_04` abre unidad nueva. Palabras: **2.917, 6.477, 4.292**, las tres con diferencia **0**. Mapa de los doce medido: **70.041 palabras, diferencia 0** contra la ficha, y **las doce L9 coinciden con la nota del auditor** |
 | 3 | la Introduction y el Cap. 1, con su frontera publicada antes de cortar | **CERRADA** | `Introduction`: **10 piezas, 63 de 63 lineas cubiertas, CERO candidatos**, 2.917 palabras descartadas con su cita. Cap. 1: frontera de **23 piezas** publicada y sellada en `ce46885` antes de cortar, **142 de 142 lineas cubiertas, cero huecos y cero solapes**. **12 candidatos, los 12 por la aduana al primer intento, 0 caerian, 0 vecinos levantados.** `D.30`: **3 puentes sobre 79 pasos, el 3,80 por ciento**, corregidos en el acto. **7 aristas de serie escritas, ninguna declarada** |
-| 4 | el Cap. 2, igual, y los vecinos que la aduana levante | ABIERTA | |
+| 4 | el Cap. 2, igual, y los vecinos que la aduana levante | **CERRADA** | frontera de **16 piezas** publicada y sellada en `ceb9211` antes de cortar, **111 de 111 lineas cubiertas, cero huecos y cero solapes**. **9 candidatos, los 9 por la aduana al primer intento, 0 caerian.** **CERO vecinos levantados**, como el encargo anticipaba. `D.30`: **4 puentes sobre 76 pasos, el 5,26 por ciento**, corregidos en el acto. **8 aristas escritas, ninguna declarada**, y **2 no declaradas a proposito**: el libro remite a si mismo tres veces y esas remisiones **no fabrican gemelos** |
 | 5 | el informe del lote, los commits y el cierre con sus cuatro medidas | ABIERTA | |
 
 ### Discutibles marcados ANTES de saber si acierto
@@ -7565,6 +7565,7 @@ de donde salen las N, con las filas de la serie contadas.**
 | 1 | TAREA 3.A, `cap_01.md` L97 | descarto el racimo *You try something / figure out / file away / Rinse, repeat* pese a ser cuatro etapas nombradas en orden: **sin objeto de trabajo los tres pasos los pondria yo** |
 | 2 | TAREA 3.B, `cap_02.md` L121 a L123 | descarto las **cinco condiciones de Hackman** pese a estar nombradas una a una: **es el inventario de otro, traido para contrastar**, y sin un solo medio para llegar a ninguna |
 | 3 | TAREA 3.B, piezas P19 a P22 | escribo **UN** nodo para el bloque de los motivos y **cabeza mas tres** para el de las preguntas, teniendo los dos la misma forma de serie: **parto por si las partes traen procedimiento, no por la forma** |
+| 4 | TAREA 4, `cap_03.md` | saco a **nodo propio cuatro listas de preguntas sin titulo propio en el libro**, y dejo dentro otras dos: **parto por si la lista trae encargo y entregable propios** |
 
 ---
 
@@ -8133,4 +8134,122 @@ su propio donante**, que es la frase exacta de `P.19`.
 **Y hay una tercera remision, del sucesor hacia sus ventajas** (`L203`), que tambien se
 resuelve asi: *the advantages of this transition are similar to those of the apprentice
 [...] as described earlier*.
+
+### 4.3. `D.27` PIEZA A PIEZA, tambien para lo que descarto
+
+**16 piezas juzgadas de 16.** Las 5 que no dan candidato:
+
+| pieza | veredicto | la razon, con su cita |
+|---|---|---|
+| P1 | **DESCARTADA** | rotulo de la ilustracion, ocho palabras |
+| P2 | **DESCARTADA como nodo propio**, entra como ultimo paso de `situar_transicion_cuatro_caminos` | son las dos preguntas que la autora hace a sus directivos nuevos (`L17`) y el relato de lo que le contestaron. **Las preguntas si son un inventario, pero de dos, y su casa natural es la cabeza de la serie**, que es donde el libro las pone |
+| P4, P7, P10, P13 | **DESCARTADAS como nodo propio**, entran como condicion de activacion de su parte | son las entradillas de cada camino, y lo que traen es **la definicion del camino**, que es exactamente lo que una condicion de activacion necesita. `L201: because your manager is leaving, you're taking on supporting the entire team yourself, not just a portion of it` es la condicion de activacion de `transitar_sucesor_equipo_entero`, palabra por palabra |
+| P15 | **DESCARTADA** | separador tipografico, cuatro palabras |
+| P16 | **DESCARTADA** | cierre del capitulo. `L227: But time isn't a substitute for comfort.` **Es consuelo, no procedimiento**, y su unica cifra (*It took me about three years*) es una respuesta personal a cuanto tarda uno en sentir que sabe lo que hace, **no un plazo que el libro mande a nadie** |
+
+### 4.4. LOS 9 CANDIDATOS DEL Cap. 2, cada uno con su aduana en el mismo acto
+
+| # | id propuesto | piezas | pasos | la salida de la aduana, pegada |
+|---:|---|---|---:|---|
+| 13 | `situar_transicion_cuatro_caminos` | P2, P3 | 8 | `[ENTRARIA] situar_transicion_cuatro_caminos` |
+| 14 | `transitar_aprendiz_primeros_meses` | P4, P5, P6 | 9 | `[ENTRARIA] transitar_aprendiz_primeros_meses` |
+| 15 | `acordar_plan_conjunto_jefe` | P5 | 8 | `[ENTRARIA] acordar_plan_conjunto_jefe` |
+| 16 | `listar_bueno_mejorable_equipo` | P5 | 7 | `[ENTRARIA] listar_bueno_mejorable_equipo` |
+| 17 | `transitar_pionero_equipo_nuevo` | P7, P8, P9 | 10 | `[ENTRARIA] transitar_pionero_equipo_nuevo` |
+| 18 | `transitar_jefe_nuevo_equipo_establecido` | P10, P11, P12 | 12 | `[ENTRARIA] transitar_jefe_nuevo_equipo_establecido` |
+| 19 | `preguntar_jefe_sonado_persona_cargo` | P11 | 6 | `[ENTRARIA] preguntar_jefe_sonado_persona_cargo` |
+| 20 | `calibrar_normalidad_preguntas_jefe` | P12 | 7 | `[ENTRARIA] calibrar_normalidad_preguntas_jefe` |
+| 21 | `transitar_sucesor_equipo_entero` | P13, P14 | 9 | `[ENTRARIA] transitar_sucesor_equipo_entero` |
+| **9** | | | **76** | **9 ENTRARIAN, 0 BLOQUEARIAN, 0 CAERIAN** |
+
+**Las 9 filas se cuentan de los 21 ficheros de `cuarentena/zhuo_manager/` menos los 12 del
+Cap. 1** (remedio 1.a, hermana tercera), y los 76 pasos de una pasada sobre los nueve JSON.
+
+**CERO VECINOS LEVANTADOS, otra vez, en los nueve.** Van 21 de 21 candidatos sin un solo
+vecino contra un grafo de 52 nodos.
+
+### 4.5. LA RELECTURA DE FIDELIDAD DEL Cap. 2 (`D.30`)
+
+**4 PUENTES SOBRE 76 PASOS, el 5,26 por ciento.** Los cuatro corregidos antes de
+commitear, **y los cuatro vuelven a ser la misma especie**: el verbo de instrumentacion.
+
+| # | el paso que escribi | la linea del libro | por que era puente | como quedo |
+|---:|---|---|---|---|
+| 4 | `situar...` paso 1: ***Reconoce primero** lo que es cierto* | `L23: congratulations are in order because this much is true` | **el libro felicita; no manda reconocer nada** | *Sea cual sea el camino [...], **toca felicitarte**, porque esto si es cierto* |
+| 5 | `situar...` paso 8: *cuando lleves unos meses, **hazte** las dos preguntas* | `L17: Whenever a new manager joins my team, my favorite questions to ask a few months in are` | **el libro dice lo que ELLA pregunta a OTROS, y yo lo convertia en preguntartelo a ti mismo.** Cambiaba de sujeto y de destinatario a la vez | *Y **si eres tu quien recibe** a un directivo nuevo en tu equipo, las dos preguntas favoritas de la autora [...]* |
+| 6 | `acordar...` paso 1: *Trabaja con tu jefe en un plan conjunto, **en vez de arrancar por tu cuenta*** | `L47: If you're transitioning as an apprentice, work with your manager on a joint plan for getting started` | **la coletilla entera es mia**, y de paso me comia la condicion que el libro si pone | *Si estas haciendo la transicion como aprendiz, trabaja con tu jefe en un plan conjunto para empezar* |
+| 7 | `jefe_nuevo...` paso 11: ***nombra** el elefante en la habitacion* | `L189: One tactic a friend of mine uses to buck this trend is to address the elephant in the room` | **el libro describe la tactica de un tercero y la elogia; no la manda.** Es la especie del paso 5 con otro traje: cambio de sujeto | *la tactica **que el libro recoge de un amigo de la autora y elogia** es nombrar el elefante [...]* |
+
+**Y un quinto que corregi por precaucion y no cuento como puente**, porque no cambiaba
+sujeto ni anadia objeto: el ultimo paso de `transitar_sucesor_equipo_entero` pasaba una
+frase citada a instruccion, y ahora lleva dentro de quien es la frase. **Lo digo para que
+el conteo se pueda auditar: si el auditor lo cuenta, son 5 de 76 y el 6,58 por ciento.**
+
+### 4.6. LAS ARISTAS DE SERIE DEL Cap. 2 (`D.37`), ESCRITAS Y **NO DECLARADAS**
+
+| madre | paso de la madre que enumera la parte | hijo |
+|---|---:|---|
+| `situar_transicion_cuatro_caminos` | **3**, *Aprendiz: el equipo de tu jefe esta creciendo, asi que te han pedido que dirijas una parte de el* | `transitar_aprendiz_primeros_meses` |
+| `situar_transicion_cuatro_caminos` | **4**, *Pionero: eres miembro fundador de un grupo nuevo y ahora respondes de su crecimiento* | `transitar_pionero_equipo_nuevo` |
+| `situar_transicion_cuatro_caminos` | **5**, *Jefe nuevo: entras a dirigir un equipo ya establecido* | `transitar_jefe_nuevo_equipo_establecido` |
+| `situar_transicion_cuatro_caminos` | **6**, *Sucesor: tu jefe ha decidido marcharse y ocupas su lugar* | `transitar_sucesor_equipo_entero` |
+| `transitar_aprendiz_primeros_meses` | **1**, *vas a tener mas guia de la que hay en los otros caminos* | `acordar_plan_conjunto_jefe` |
+| `transitar_aprendiz_primeros_meses` | **2**, *Aprovecha que sabes lo que funciona y lo que no* | `listar_bueno_mejorable_equipo` |
+| `transitar_jefe_nuevo_equipo_establecido` | **7**, *se claro por delante con la gente [...] sobre la clase de relacion que te gustaria construir* | `preguntar_jefe_sonado_persona_cargo` |
+| `transitar_jefe_nuevo_equipo_establecido` | **9**, *En tus primeros meses, tu trabajo principal es escuchar, preguntar y aprender* | `calibrar_normalidad_preguntas_jefe` |
+
+**OCHO ARISTAS. Las cuatro primeras son la serie de libro:** el titulo del bloque dice
+*one of the four routes below* y las nombra una a una. **Las cuatro siguientes son mas
+flojas y lo digo cual a cual:** la madre nombra la ventaja o el deber, y el hijo es el
+instrumento con que se ejerce, **pero la madre no dice *y para eso usa tal cosa***.
+
+**Y LAS DOS ARISTAS QUE **NO** DECLARO, que son las remisiones del 4.2:** el libro dice
+que el equilibrio del pionero y la incomodidad del sucesor **son** las del aprendiz.
+**Eso no es una arista madre a parte: es el mismo contenido citado dos veces**, y ya vive
+dentro de los tres nodos como paso de remision. **Declararlas como aristas seria inventar
+una jerarquia donde el libro puso una nota al margen.**
+
+### 4.7. DISCUTIBLE 4, marcado ANTES de saber si acierto
+
+**DISCUTIBLE 4 (TAREA 4).** *He sacado a nodo propio cuatro listas de preguntas que viven
+dentro de las secciones de su camino, y ninguna de las cuatro tiene titulo propio en el
+libro.*
+
+Son `acordar_plan_conjunto_jefe` (6 preguntas, `L49` a `L59`),
+`listar_bueno_mejorable_equipo` (dos listas, `L63` a `L67`),
+`preguntar_jefe_sonado_persona_cargo` (5 preguntas, `L159` a `L167`) y
+`calibrar_normalidad_preguntas_jefe` (5 preguntas, `L177` a `L185`).
+
+**LO QUE ME DECIDIO, y es la unica vara que he sabido aplicar igual a las cuatro:**
+**cada una tiene su propia frase de encargo y su propio entregable, distintos de los de su
+camino.** Las cuatro frases, pegadas:
+
+    $ sed -n '47p;63p;157p;175p' fuentes/zhuo_manager/cap_03.md
+     47: [...] work with your manager on a joint plan for getting started. Questions to discuss include:
+     63: A useful exercise to go through at the beginning of your transition is to sit down and make a list [...]
+    157: In your first few one-on-one meetings, ask your reports the following questions [...]
+    175: One effective way to do that is to look at specific scenarios together with your own manager. Questions to ask include:
+
+**Y el contraste que lo confirma:** los dos bloques de preguntas del pionero (`L105` a
+`L113` y `L117` a `L123`) **NO** salieron a nodo propio, **y es la misma decision aplicada
+al reves**: los dos dicen *some questions to ask yourself in preparation* y
+*ask yourself*, es decir **son preparacion para un paso del pionero, no un entregable
+aparte.**
+
+**CONTRA LO QUE HICE, y es serio:** `EXTRACTOR.md` 9 pone como ejemplo de nodo *un
+procedimiento que el libro nombra en una tabla y desarrolla en otro sitio*, **y ninguno de
+estos cuatro esta nombrado en ningun indice**. Si la vara es el titulo, los cuatro se caen
+y sus pasos vuelven dentro de su camino, **que entonces pasaria a tener 15, 16 y 21 pasos.**
+
+**SI ESTO CAE, la caida es mia y esta marcada**, y lo que aprenderia la casa vale para
+todo el libro, porque este autor mete listas de preguntas en casi todas sus secciones:
+**una lista de preguntas con encargo y entregable propios es nodo, o no lo es, pero no las
+dos cosas segun el capitulo.**
+
+### 4.8. Estado de la TAREA 4
+
+**CERRADA.** El Cap. 2 dio **NUEVE** candidatos, los nueve por la aduana al primer
+intento, con **4 puentes sobre 76 pasos corregidos en el acto**, **ocho aristas de serie
+escritas y no declaradas**, **cero vecinos levantados** y **tres remisiones del libro a si
+mismo resueltas sin fabricar gemelos.**
 

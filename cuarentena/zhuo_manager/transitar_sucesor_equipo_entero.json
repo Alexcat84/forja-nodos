@@ -1,0 +1,40 @@
+{
+  "id": "transitar_sucesor_equipo_entero",
+  "titulo": "Transitar como sucesor al frente del equipo entero",
+  "denominaciones": {
+    "nombre_largo": "El camino del sucesor: el salto de responsabilidad al ocupar el puesto de tu jefe, y el permiso para no hacerlo igual que el",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "THE SUCCESSOR"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando tu jefe ha decidido marcharse y ocupas su lugar, con lo que pasas a sostener al equipo entero y no solo a una parte, y sientes que tienes zapatos grandes que llenar.",
+  "entregable_esperado": "El salto de responsabilidad asumido con apoyo pedido y con el equipo avisado de que habra un periodo de transicion, y el permiso dado a ti mismo para dejar atras como lo hacia tu antecesor.",
+  "escala_minima": "Un equipo entero, que es lo que distingue este camino del aprendiz: no una parte del equipo de tu jefe sino todo el.",
+  "pasos_accionables": [
+    "Situa tu transicion: es como la del aprendiz pero con un giro, porque al marcharse tu jefe pasas a sostener al equipo entero y no solo a una parte de el.",
+    "Aprovecha las mismas ventajas del aprendiz, porque el libro remite aqui a esa descripcion: tienes un sentido de lo que funciona y lo que no, y puedes ponerte al dia rapido porque llegas con contexto.",
+    "Vigila lo raro que se hace establecer una dinamica nueva con tus antiguos pares, que el libro remite tambien a la descripcion del aprendiz.",
+    "Vigila que el aumento de responsabilidad puede llegar a desbordar: no es raro pasar por rachas de sentir que has abarcado mas de lo que puedes, porque te estan pidiendo que hagas el trabajo de tu antiguo jefe, y a la mayoria de los sucesores les sorprende el alcance de lo que han heredado, empezando por todo lo que su antecesor hacia entre bastidores para protegerlos de las peticiones de otros equipos.",
+    "No seas demasiado duro contigo mismo, y pide apoyo a tu nuevo jefe y tambien a los que tienes alrededor.",
+    "Se claro por delante con tus colegas de que deben esperar un periodo de transicion mientras te pones al dia: decirlo explicitamente deja que los demas entiendan por lo que estas pasando y te ofrezcan ayuda mientras te ajustas a tu nuevo alcance.",
+    "Vigila la presion de hacer las cosas exactamente como tu antiguo jefe: como el recuerdo de como eran las cosas sigue fresco en la memoria del equipo, es facil caer en la trampa de pensar que tienes que preservar el statu quo.",
+    "Date permiso para dejar atras el pasado, porque el cambio es un requisito previo de la mejora: tendras mucho mas exito aspirando a ser el lider que tu quieres ser y jugando con tus fuerzas que intentando estar a la altura de un ideal ajeno.",
+    "Y ten presente lo que le dijo a la autora una de las sucesoras de un directivo muy querido que se marcho: que nadie puede reemplazar del todo a esa persona, y que eso esta bien, porque lo que hace falta es que mas de nosotros demos un paso al frente para crecer hacia los huecos que dejo."
+  ],
+  "resumen_teorico": "Es la cuarta y ultima parte de la serie de los caminos, y la unica de las cuatro que el libro presenta sin apartado de ventajas propio: las declara por remision al aprendiz. De las cuatro cosas que vigilar, una tambien remite al aprendiz y tres son suyas. El libro razona el desbordamiento con la cita de una colega que le dijo con asombro, despues de suceder a su jefe, que no tenia ni idea de hasta donde llegaba su antiguo jefe para escudarlos de las peticiones de otros equipos. La frase con la que se avisa al equipo la trae el libro literalmente de un amigo de la autora, que la repetia en aquellas primeras semanas. Y el ultimo paso sale de un caso con nombre propio: cuando Robyn Morris, un directivo muy querido del equipo de la autora, se marcho tras muchos anios, una de sus sucesoras le dijo que nadie puede reemplazar del todo a Robyn y que eso esta bien, y un anio despues el equipo prosperaba. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuanto dura ese periodo de transicion ni a quien se le pide apoyo primero."
+}
