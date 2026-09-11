@@ -10105,3 +10105,68 @@ ella** (remedio `1.a`, punto 1): **esta en el propio `git log` de la rama, y el 
 cierra esta vuelta es el que lleva este cierre dentro.** Contra la vuelta 9, **esta vuelta
 abrio 131 palabras menos y saco 6 candidatos mas**, y esa es la comparacion que si puedo
 cerrar con las dos puntas medidas.
+
+## C.10.7. EL REMEDIO DE LA `1.a`, CORRIDO SOBRE MI PROPIO REPORTE
+
+*`grep -n` de cada ancla prometida contra este mismo fichero, con su salida pegada. **Las
+dos columnas se llenan con lo que salga.***
+
+**DE DONDE SALEN LAS FILAS, con la cuenta hecha:** recorri el tramo de la vuelta 10, que
+empieza en `8667`, buscando **toda frase que anuncia una sede por su nombre de seccion**.
+Salen **siete anclas**, y aqui van las siete.
+
+| lo que prometi | la salida de `grep -n`, pegada |
+|---|---|
+| **`1.3`**, prometida en `0.3.a` | `8734:y sin recorte: va en la seccion **1.3** de esta misma vuelta, y no anuncio una sede que no` **y** `8814:### 1.3. EL SALDO QUE LA VUELTA 9 PROMETIO Y NO PEGO, PEGADO AQUI` |
+| **`2.c`**, prometida en `0.3.b` | `8741:su lectura, va en la **TAREA 2.c**.` **y** `9039:### 2.c. LAS CINCO QUE NO PASAN EL TEST DE `D.37`, REETIQUETADAS Y NO BORRADAS` |
+| **`2.c`** otra vez, prometida en `2.b` | `9023:la vuelta 9 escribio, **ahora apunta al paso 7.** Va corregida en la tabla de la `2.c`.` **y** la misma `9039` |
+| **`3.5`**, prometida en `3.4` | `9348:| P2 | **DESCARTADA como nodo propio**, y es la que mas me ha costado | la escena del `critique` semanal. **Ver `3.5`** |` **y** `9354:### 3.5. **DISCUTIBLE 3**, MARCADO ANTES DE SABER SI ACIERTO: LA ESCENA DEL `critique`` |
+| **`3.7`**, prometida en `3.6` | `9404:| 36 | `mover_rapido_persona_papel_equivocado` | P23 | 9 | **CAYO Y SE CORRIGIO. Ver `3.7`** |` **y** `9417:### 3.7. LA PRIMERA CAIDA DE ESTE LOTE EN LA ADUANA, PEGADA ENTERA` |
+| **`4.6`**, prometida en `4.5` | `9676:primero que hago es desconfiar de el en voz alta**, en `4.6`.` **y** `9694:### 4.6. **DISCUTIBLE 4**, MARCADO ANTES DE SABER SI ACIERTO: DESCONFIO DE MI PROPIO CERO` |
+| **`C.10.2`**, prometida en `2.d.5` **y** en `5.b` | `9173:cierre, `C.10.2`, **sin borrar lo que escribi antes.**` **y** `9825:**Van en la banda corregida de `C.10.2`.**` **y** `9995:## C.10.2. LA BANDA DE PUENTES DE LA VUELTA 9, CORREGIDA AL ALZA POR MI, SIN BORRAR NADA` |
+| **`C.10.6`**, prometida en `5.f` dos veces | `9899:| **10** | `987dc73` 21:33:49 | *(se sella al cerrar, `C.10.6`)* | *(idem)* | **27** | 13.555 |` **y** `9903:cierre de la vuelta 10 se recomputa al cerrar y va en `C.10.6`, **porque medirla ahora seria` **y** `10073:## C.10.6. EL ESTADO AL CIERRE, MEDIDO AL CIERRE` |
+| **`C.10.7`**, prometida en `1.2` | `8802:**LA TABLA DE ANCLAS VA EN EL CIERRE**, seccion `C.10.7`, corrida con `grep -n` sobre este` **y** `10109:## C.10.7. EL REMEDIO DE LA `1.a`, CORRIDO SOBRE MI PROPIO REPORTE` |
+
+**OCHO ANCLAS DISTINTAS Y NUEVE FILAS**, porque `2.c` se promete dos veces y va con una
+fila por promesa. **LAS NUEVE CUMPLIDAS. CERO ANCLAS HUERFANAS.**
+
+**LA COMPARACION QUE SALE CERO SE ESCRIBE CERO:** la vuelta 9 dejo **1 ancla huerfana de
+1 prometida**; esta vuelta deja **0 huerfanas de 9**. **Diferencia con lo esperado: CERO.**
+
+**Y UN AVISO SOBRE EL RUIDO DE ESTE `grep`, que hay que decir para que la tabla se pueda
+auditar:** `grep -n "^### 2.c\."` **devuelve cinco lineas**, porque las vueltas 3, 5, 6 y 8
+tambien tuvieron su `2.c`. **La que cuenta es la unica que cae dentro del tramo de la
+vuelta 10**, es decir a partir de `8667`. Lo mismo pasa con `4.6`, que devuelve dos. **El
+remedio es un `grep`, no un indice, y un `grep` sobre un reporte de diez vueltas devuelve
+homonimos: se filtran por el tramo y se dice que se han filtrado.**
+
+**LA UNICA SEDE QUE ESTE REPORTE NO NOMBRA A PROPOSITO** es la duracion exacta de la vuelta
+10 en `C.10.6`. **Ahi aplique el punto 1 del remedio y deje el hueco dicho SIN nombre de
+seccion**, porque el dato solo existe despues del ultimo commit. **Es la forma correcta de
+no prometer.**
+
+## C.10.8. LA RELECTURA DE PUNTEROS, CORRIDA SOBRE MI PROPIO TRAMO
+
+**No la prometo: la corri, y pego las dos salidas.**
+
+**PASADA 1, con el patron estrecho** que exige la forma de cita de esta casa,
+`` `Lnnn: texto` `` entre comillas invertidas, sobre el tramo de la vuelta 10 y contra los
+seis ficheros de fuente de este libro:
+
+    citas con la forma `Lnnn: ...`, cada trozo comprobado por separado: 30 correctas, 0 rotas
+
+**PASADA 2, con el patron ancho** que recoge los bloques pegados de `sed` y de `grep` con la
+forma `    nnn: texto`:
+
+    bloques pegados con la forma 'nnn: texto': 11 correctos, 0 sin encontrar
+
+**30 de 30 y 11 de 11. CERO desfases en las dos pasadas**, contra los **siete punteros
+rotos** que la misma relectura destapo en la vuelta 9.
+
+**Y UNA CONFESION DE METODO, porque la primera corrida NO salio asi:** la pasada 1 dio
+primero **29 correctas y 1 rota**, y la rota era `L301` del `cap_04.md`. **Al abrirla con
+`sed`, la cita estaba bien y lo roto era mi comprobador**, que exigia que el `[...]` del
+medio apareciera tambien en el fichero. Lo parti por trozos, comprobe cada trozo por
+separado, y la cita paso. **Lo escribo porque una relectura que se cree sus propios falsos
+positivos enseña a desconfiar de los verdaderos**, y porque la regla 5 manda declarar la
+discrepancia en vez de resolverla copiando.
