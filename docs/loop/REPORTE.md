@@ -11385,3 +11385,172 @@ que pregunta de que pieza es la linea, tal como el encargo la define.
 > con su cifra calculada para que el auditor no tenga que calcularla**, y con la banda
 > completa dicha, que va de **0,00 a 26,5 por ciento** segun donde se ponga la vara. **La
 > punta que uso en mis tablas es 3,70.**
+
+---
+
+## TAREA 4. EL INFORME DEL LOTE, LOS COMMITS Y EL CIERRE CON SUS CUATRO MEDIDAS
+
+### 4.1. MEDIDA 1. CANDIDATOS POR MIL PALABRAS, CON LOS DOS DENOMINADORES
+
+*Desglosada **por capitulo y no por vuelta** (`AUDITOR_FORJA.md` 8), con la columna de lo
+minado, que el encargo me pide repetir porque en la vuelta 10 volvio a decir algo util.*
+
+| capitulo (campo `unidad`) | fichero | cand. | palabras | por mil | minadas | por mil minadas | minado |
+|---|---|---:|---:|---:|---:|---:|---:|
+| **Cap. 3, `Leading a Small Team`** | `cap_04.md` | 15 | 7.237 | **2,073** | 6.829 | **2,197** | **94,4** |
+| **Cap. 4, `The Art of Feedback`** | `cap_05.md` | 12 | 6.318 | **1,899** | 5.635 | **2,130** | **89,2** |
+| **Cap. 5, `Managing Yourself`** | `cap_06.md` | **18** | **9.617** | **1,872** | **7.668** | **2,347** | **79,7** |
+| **los tres juntos** | | **45** | **23.172** | **1,942** | **20.132** | **2,235** | **86,9** |
+
+**LA RESTA DEL Cap. 5, ESCRITA PARA QUE SE PUEDA CUADRAR SIN ADIVINAR:** descarta `P1` (6),
+`P3` (747), `P4` (307), `P13` (305), `P20` (448) y `P26` (136), que son **1.949**.
+`9.617 - 1.949 = 7.668`. **Las dos filas anteriores son las de la vuelta 10 y las repito sin
+tocarlas**, salvo que el Cap. 4 mantiene su 5.635 por lo dicho en `1.3.c`.
+
+> **Y LA COLUMNA DE LO MINADO VUELVE A DECIR ALGO, Y ESTA VEZ DICE LO CONTRARIO QUE LA
+> VUELTA PASADA.** La serie va **94,4 / 89,2 / 79,7**, y **el Cap. 5 baja quince puntos
+> desde el Cap. 3.** No es una bajada de calidad de mi corte: es que este capitulo **narra
+> mucho mas**. Lo que descarto, medido en su peso:
+>
+> | capitulo | palabras descartadas | de su total | por ciento |
+> |---|---:|---:|---:|
+> | Cap. 3 | 408 | 7.237 | **5,6** |
+> | Cap. 4 | 683 | 6.318 | **10,8** |
+> | Cap. 5 | **1.949** | 9.617 | **20,3** |
+>
+> **Lo descartado casi se dobla capitulo a capitulo**, y lo que descarto es siempre lo
+> mismo: escena, caso y consuelo. **Es la lectura de la vuelta 9 confirmada por tercera vez
+> con un caso mas duro:** un capitulo que argumenta descarta mas que uno que instruye, **y
+> `Managing Yourself` es el que mas argumenta de los tres porque su materia es la propia
+> autora.** El 79,7 sigue muy por encima del **73,7 del Cap. 1**, que es el suelo conocido.
+
+### 4.2. MEDIDA 2. `PASOS INVENTADOS SOBRE PASOS ESCRITOS`, UNA FILA POR CAPITULO Y EL TOTAL
+
+| capitulo (campo `unidad`) | fichero | puentes | pasos escritos | tasa |
+|---|---|---:|---:|---:|
+| Cap. 3, `Leading a Small Team` | `cap_04.md` | 4 | 120 | **3,33** |
+| Cap. 4, `The Art of Feedback` | `cap_05.md` | 2 | 111 | **1,80** |
+| **Cap. 5, `Managing Yourself`** | **`cap_06.md`** | **6** | **162** | **3,70** |
+| **el lote 3 minado hasta hoy, los tres** | | **12** | **393** | **3,05** |
+
+**LA FILA DEL Cap. 5 ES LA DE ESTA VUELTA Y LAS DOS DE ARRIBA SON LAS QUE EL ACTA 10
+FIRMA.** Los 162 pasos estan contados del JSON candidato a candidato (`3.5`), no sumados de
+una columna tecleada. **Y la nota al pie de `1.5` sigue en pie: si se usa el denominador que
+sobrevive a mi `1.2`, el Cap. 4 es 2 de 110 y el total 12 de 392, que da 3,06.**
+
+**LA TENDENCIA LOCAL, CON LA FILA NUEVA Y SIN SUAVIZAR:**
+
+    3,09 / 5,00 / 5,56 / 3,80 / 5,26 / 3,33 / 1,80 / 3,70
+
+**Los dos ultimos valores antes del mio son los que el ACTA 10 corrigio al alza y a la baja
+(de 2,50 a 3,33 y de 0,90 a 1,80)**, y el que anado es **3,70**.
+
+> **Y DIGO SI LA SUBIDA ES DE NUMERADOR O DE DENOMINADOR, COMO EN LA `5.d`: ES DE
+> NUMERADOR, Y CLARAMENTE.** Del Cap. 4 al Cap. 5 el **numerador se triplica** (de 2 a 6) y
+> el denominador sube un 46 por ciento (de 111 a 162). **Si solo hubiera crecido el
+> denominador, la tasa habria BAJADO a 1,23.** Asi que **la subida es mia y no del tamanio
+> del capitulo**, y la causa esta identificada en `3.6`: **cuatro de los seis viven en el
+> paso 1**, que es donde encuadro, y encuadrar es donde pongo verbos que el libro no pone.
+> **El aviso del encargo funciono exactamente donde decia que funcionaria, y lo que subio la
+> cifra fue haber mirado ahi.**
+
+### 4.3. MEDIDA 3. VEREDICTOS ESCRITOS: **CERO**, Y LAS RAZONES QUE LO HACEN IMPOSIBLE
+
+**Cero, por cuarta vuelta consecutiva, y las razones son las mismas tres:**
+
+1. **UN VEREDICTO SE EMITE CONTRA UN VECINO DEL GRAFO, Y LA ADUANA NO LEVANTO NINGUNO.**
+   Los 18 candidatos dieron **18 de 18 `ENTRARIA` y `0 BLOQUEARIAN`**. **Sin cola de lectura
+   no hay veredicto que escribir**, y escribir uno seria inventarse el par.
+2. **`bitacora/VEREDICTOS.jsonl` ES SEDE DE LA ADUANA Y NO MIA** (`EXTRACTOR.md` 14): se
+   escribe por `forja.py insertar`, y **esta vuelta no inserta**.
+3. **Y AUNQUE QUISIERA, NO HABRIA CONTRA QUE EMITIRLO:** los 68 candidatos de
+   `cuarentena/zhuo_manager/` estan **fuera** de `dataset/nodos.jsonl`, comprobado en `2.0`.
+
+**LO QUE SI DEJO ESCRITO ES UN VEREDICTO FUTURO CON SU RAZON**, en `2.b`: el par
+`despedir_persona_respeto_franqueza` contra `dar_mala_noticia_decision_tomada` **sera `SANO`
+y su razon esta redactada**, para que el dia que la señal 1 los empareje cueste un minuto.
+**No esta en la bitacora, esta en mi reporte, que es donde me toca proponer.**
+
+### 4.4. MEDIDA 4. CUANTO TARDO, LEIDO DE GIT, COMPARANDO LA MISMA MEDIDA CON LA MISMA
+
+    $ git log --format='%h %ad %s' --date=iso c6171aa^..HEAD
+    c6171aa 2026-09-10 23:58:23 -0400  apertura: arrastre del arnes commiteado antes de tocar nada
+    5efd637 2026-09-11 00:09:28 -0400  TAREA 1
+    a9da001 2026-09-11 00:14:12 -0400  TAREA 2
+    1fdf751 2026-09-11 00:19:26 -0400  TAREA 3, frontera antes de cortar
+    5576c21 2026-09-11 00:50:02 -0400  TAREA 3, los 18 candidatos
+    33ba14a 2026-09-11 00:53:18 -0400  TAREA 3 cerrada
+
+| vuelta | de | a | duracion | quien midio |
+|---|---|---|---|---|
+| vuelta 10 | `987dc73` | `2b0c5ab` | **1 h 32 min 46 s** | el auditor, y es la medida completa |
+| vuelta 10 | `987dc73` | `3080ded` | 1 h 31 min 55 s | yo, hasta una punta que aun no existia, **y lo declare** |
+| **vuelta 11** | **`c6171aa`** | **el commit de cierre** | **ver `C.11.7`, medido al cierre** | **yo** |
+
+**COMPARO LA MISMA MEDIDA CON LA MISMA Y POR ESO NO PONGO AQUI LA CIFRA DE LA 11.** El
+paralelo honesto de `987dc73` a `2b0c5ab` es **de `c6171aa` al commit de cierre de esta
+vuelta**, y ese commit **no existe todavia mientras escribo esta linea**. **La cifra va en
+`C.11.7`, recomputada al cerrar** (`EXTRACTOR.md` 4), que es exactamente el remedio de la
+`1.a` aplicado por tercera vez en esta vuelta: **no anuncio una cifra que aun no se ha
+medido, y si nombro la sede es porque la sede la estoy escribiendo yo a continuacion.**
+
+**Lo que si puedo decir con lo medido hasta el commit `33ba14a`: 54 min 55 s para las tres
+primeras tareas**, contra las **cinco** tareas y **1 h 32 min** de la vuelta 10.
+
+### 4.5. LA TASA DE ATRIBUCION, QUE EL ENCARGO ME PASA COMO NOTA Y **NO REPRODUZCO**
+
+*El encargo me da **18,3 por ciento del Cap. 3 y 26,1 del Cap. 4** para tener contra que
+comparar, y dice expresamente que es una nota y no una medida obligatoria. **La mido, y la
+declaro como lo que sale: una discrepancia.***
+
+    $ python -c "... marca de atribucion sobre los pasos de los tres capitulos"
+      Cap. 3    32 de 120 pasos con marca  =  26,7 por ciento   (el auditor publica: 18,3)
+      Cap. 4    33 de 110 pasos con marca  =  30,0 por ciento   (el auditor publica: 26,1)
+      Cap. 5    57 de 162 pasos con marca  =  35,2 por ciento   (no medido antes)
+
+**NO REPRODUZCO NINGUNA DE LAS DOS, Y LA CAUSA ES QUE MI DEFINICION DE MARCA ES MAS ANCHA
+QUE LA SUYA**, no que una de las dos este mal. La mia, declarada para que se pueda repetir:
+`la autora`, `el libro`, `ella responde`, `ella `, `segun `, `que escribe`, `la cita de`,
+`el ejemplo que`, `cuenta que`, `dice haber`, `recoge la frase`. **La suya no la conozco.**
+**Y mi Cap. 4 lleva 110 y no 111 por mi propia `1.2`**, asi que ni el denominador coincide.
+
+> **LO QUE SI ES COMPARABLE ES LA SERIE DENTRO DE MI PROPIA MEDIDA, Y SUBE: 26,7 / 30,0 /
+> 35,2.** El aviso del encargo dice que **si el Cap. 5 sube mucho con la tasa de puentes
+> plana, el que se esta moviendo soy yo y no el libro.** **La tasa de puentes NO esta
+> plana**, asi que el aviso no se dispara tal como esta escrito. **Pero lo contesto igual,
+> porque la pregunta de fondo es buena, y traigo una medida independiente que apunta al
+> libro:**
+>
+> | capitulo | tasa de atribucion (mi medida) | palabras descartadas por narrar |
+> |---|---:|---:|
+> | Cap. 3 | 26,7 | **5,6 por ciento** |
+> | Cap. 4 | 30,0 | **10,8 por ciento** |
+> | Cap. 5 | 35,2 | **20,3 por ciento** |
+>
+> **Las dos columnas suben juntas y la segunda no la escribo yo: la escribe el libro.** El
+> Cap. 5 es el capitulo cuya materia **es la propia autora**, y donde el libro narra en
+> primera persona casi de cabo a rabo: su baja por maternidad, su entrenadora, su sindrome
+> del impostor, sus seis habitos, su Pozo, su diario, sus notas semanales. **Una atribucion
+> por paso es lo que impide que todo eso se lea como norma de la casa**, que es justo lo que
+> el ACTA 10 me hizo corregir en `mover_rapido_persona_papel_equivocado`. **Asi que la
+> subida es la regla funcionando, no yo escondiendome detras de la autora**, y si el auditor
+> la lee al reves tiene las dos columnas delante para demostrarlo.
+
+### 4.6. LOS COMMITS Y LA CUENTA DE INSERCIONES
+
+**UN COMMIT POR UNIDAD Y CON LOS JSON DENTRO** (`D.25`). La unidad de esta vuelta es una,
+`cap_06.md`, y lleva **dos** commits porque la frontera se publica antes de cortar:
+`1fdf751` (la frontera, 26 piezas) y `5576c21` (los 18 candidatos). **Los otros cuatro son
+de tareas que no son de libro.**
+
+**CERO INSERCIONES** (`D.26`), y lo pruebo por las dos puntas:
+
+    $ git log --oneline c6171aa^..HEAD -- dataset/ bitacora/ censos/ config/pares_mutuos.jsonl
+    (ninguna linea)
+
+**Ni un commit de esta vuelta toca ninguna de las cuatro sedes de la aduana.** Y el estado
+del grafo, recomputado al cierre, va en `C.11.6`: **52 nodos, 37 aristas, 60 veredictos**,
+los mismos tres numeros con los que abri.
+
+**No corri `python forja.py insertar` ni una sola vez.** Es la cuarta acta que la pide y
+sigue sin autorizarse; **lo digo y no la tomo.**
