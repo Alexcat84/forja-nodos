@@ -12718,3 +12718,74 @@ y esta corrida tiene cero inserciones autorizadas.
 | **puentes sobre pasos escritos** | **4 de 162 = 2,47 por ciento** | los cuatro de la especie RECUENTO, tabla `B.4` |
 | **veredictos** | **7 escritos**: 1 que la aduana pidio y **6 que pidio la lectura**, todos `SANO`, uno de ellos con **frontera doctrinal declarada** | mas 1 arista de `D.29` y 1 caso de `D.37` examinado y descartado |
 | **tiempo** | **ver `C.12` al cierre** | primer commit del capitulo contra el de su cierre |
+
+---
+
+# TAREA 1.C. `cap_09.md`, Cap. 8 `Making Things Happen`
+
+*Frontera publicada ANTES de cortar (`EXTRACTOR.md` 10).*
+
+## C.1. LA FRONTERA ENTERA, PIEZA A PIEZA, CON SU `sed` PEGADO
+
+**21 piezas, de la linea 9 a la 287.**
+
+| P | lineas | que es | veredicto | la salida de `sed -n '<primera>p'`, pegada |
+|---|---|---|---|---|
+| P1 | L9 a L15 | paratexto: rotulo, titulo y los letreros AVOID y ASPIRE | **NO SE MINA** | `9: Chapter Eight` |
+| P2 | L17 a L23 | el origen de Instagram, que empezo siendo otra cosa llamada Burbn | **CASO** | `17: Once upon a time, a guy named Kevin who loved Kentucky whi ...` |
+| P3 | L25 a L29 | que es proceso bueno y proceso malo, y que trae el capitulo | **POSTURA** | `25: Process. Many people think of it as a bad word because it  ...` |
+| P4 | L31 a L57 | START WITH A CONCRETE VISION: el caso del documento blando, la vara de la vision, y las preguntas de arranque | **PROCEDIMIENTO** | `31: START WITH A CONCRETE VISION` |
+| P5 | L59 a L71 | Create a Believable Game Plan: que hace buena a una estrategia | **PROCEDIMIENTO** | `59: Create a Believable Game Plan` |
+| P6 | L73 a L79 | Craft a Plan Based on Your Team Strengths: el plan que encaja con lo que tu equipo sabe hacer | **PROCEDIMIENTO** | `73: Craft a Plan Based on Your Team’s Strengths` |
+| P7 | L81 a L97 | Focus on Doing a Few Things Well: Pareto, la practica de ordenar por importancia, y el caso del etiquetado de fotos | **PROCEDIMIENTO mas ATRIBUCION** | `81: Focus on Doing a Few Things Well` |
+| P8 | L99 a L113 | Define Who Is Responsible for What: la escena que no produce nada y el caso de los dos talentos | **PROCEDIMIENTO** | `99: Define Who Is Responsible for What` |
+| P9 | L115 a L139 | Break Down a Big Goal into Smaller Pieces: la ley de Parkinson y el caso del borrador del libro | **PROCEDIMIENTO mas ATRIBUCION** | `115: Break Down a Big Goal into Smaller Pieces` |
+| P10 | L141 a L157 | PERFECT EXECUTION OVER PERFECT STRATEGY: el caso de los ciclos de varias semanas | **PROCEDIMIENTO** | `141: PERFECT EXECUTION OVER PERFECT STRATEGY` |
+| P11 | L159 a L173 | las senales de que un equipo ejecuta bien, una a una | **PROCEDIMIENTO mas ATRIBUCION** | `159: Here are some ways to tell if your team is executing well:` |
+| P12 | L175 a L179 | Balancing Short-Term and Long-Term Outcomes: el encuadre del equilibrio | **PROCEDIMIENTO, cabeza** | `175: Balancing Short-Term and Long-Term Outcomes` |
+| P13 | L181 a L205 | los tres escenarios, cada uno con su riesgo por pensar demasiado corto y por pensar demasiado largo | **PROCEDIMIENTO, con P12** | `181: HIRING` |
+| P14 | L207 a L221 | Define a Long-Term Vision and Work Backward: el caso de las reacciones y los enchufes de la cocina | **PROCEDIMIENTO** | `207: Define a Long-Term Vision and Work Backward` |
+| P15 | L223 a L233 | Take a Portfolio Approach: los tercios del equipo por horizonte de tiempo | **PROCEDIMIENTO** | `223: Take a Portfolio Approach` |
+| P16 | L235 a L249 | Talk about How Everything Relates to the Vision: el proposito y el aviso del indicador que se confunde con el | **PROCEDIMIENTO mas ATRIBUCION** | `235: Talk about How Everything Relates to the Vision` |
+| P17 | L251 a L257 | GOOD PROCESS IS EVER EVOLVING: no existe lo terminado, ni en producto ni en proceso | **POSTURA** | `251: GOOD PROCESS IS EVER EVOLVING` |
+| P18 | L259 a L265 | el repaso posterior, como se hace y como no se mata | **PROCEDIMIENTO** | `259: The process is both cathartic and instructive. There is so ...` |
+| P19 | L267 a L271 | los manuales de jugadas repetibles y donde se reconocen | **PROCEDIMIENTO** | `267: Instead, any feat of complexity` |
+| P20 | L273 a L283 | el caso de las tres fases del correo semanal de avances | **CASO, dentro de P19** | `273: This worked well for a year or so, but as the number of pr ...` |
+| P21 | L285 a L287 | el rio de Heraclito y el cierre del capitulo | **POSTURA** | `285: Heraclitus, the Greek philosopher, once said: “No man ever ...` |
+    $ python -c "... comprueba las 21 piezas contra el fichero"
+    piezas: 21
+    huecos: NINGUNO
+    solapes: NINGUNO
+    lineas con texto de la 8 en adelante: 140
+    cubiertas: 140
+    sin cubrir: NINGUNA
+
+**140 DE 140 LINEAS CON TEXTO CUBIERTAS, CERO HUECOS Y CERO SOLAPES.**
+
+## C.2. EL SALDO DE LA FRONTERA, CON LA SUMA DELANTE
+
+| | piezas |
+|---|---|
+| **PROCEDIMIENTO** | **16**: P4 a P16, P18, P19, y P13 con P12 |
+| **POSTURA** | **3**: P3, P17, P21 |
+| **CASO** (dentro de un nodo) | **2**: P2, P20 |
+| **ATRIBUCION** (campo, no nodo) | **4**: P7, P9, P11, P16 |
+| **PARATEXTO** | **1**: P1 |
+
+**Suma: 16 piezas de procedimiento, menos P13 que va con P12 y menos P20 que va
+dentro de P19, dan 14 nodos. Anuncio 14 candidatos.**
+
+### DISCUTIBLE 7: la TERCERA cabeza, y esta vez SI la escribo
+
+**P12, `Balancing Short-Term and Long-Term Outcomes` (`L175` a `L179`), SI tiene
+nodo**, al reves que P19 de `cap_07` y P13 de `cap_08`. **Y la diferencia esta
+medida, no sentida:** aquellas dos cabezas solo enunciaban y nombraban a las
+demas; esta trae **P13 pegado detras, que son tres escenarios con sus dos riesgos
+cada uno, doce afirmaciones concretas**, y eso es un inventario de OBJETOS de
+trabajo por `D.27`, no de metas.
+
+**DONDE PUEDE CAER:** si el auditor lee que los tres escenarios son ejemplos y no
+inventario, entonces esta cabeza deberia caer como cayeron las otras dos, y yo
+habria sido incoherente conmigo mismo dentro de la misma vuelta. **Lo marco
+antes de saber si acierto, y dejo la vara que use escrita arriba para que se
+pueda medir contra ella.**
