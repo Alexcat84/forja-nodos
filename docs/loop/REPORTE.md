@@ -11711,3 +11711,101 @@ material no es una vuelta mas rapida, y no la publico como tal.**
 
 **CUATRO DE CUATRO, SIN COLA.** **Cero inserciones, cero paradas, cero punteros rotos, cero
 guardas saltadas.**
+
+## C.11.9. EL INFORME DEL LOTE ENTERO, CORRIDO AL CERRAR, CON SU SALDO Y SU RELOJ
+
+*`EXTRACTOR.md` 16: el de candidato es mi correccion y el de lote es la prueba que lee el
+fundador. **Los dos se corrieron y no se pisan.***
+
+    $ python forja.py informe --carpeta cuarentena/zhuo_manager
+
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 68
+    nodos en el grafo de destino: 52
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 68
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+**68 REVISADOS, 68 ENTRARIAN, 0 BLOQUEARIAN, 0 CAERIAN, 0 CHOCAN.** Y **los 18 de esta
+vuelta entran sin mover ninguno de los 50 que el auditor firmo**: el lote pasa de `50 / 0 /
+0 / 0` a `68 / 0 / 0 / 0`, **que es la misma forma con dieciocho mas.**
+
+**LA LISTA NOMINAL, CONTADA CONTRA EL DISCO Y NO CONTRA MI MEMORIA**, con las mismas seis
+diferencias que el ACTA 10 me ensenio a computar (`9.1.bis`):
+
+    $ python -c "... cruza la lista del informe contra los ficheros de la carpeta"
+    en el informe: 68
+    en el disco  : 68
+    informe menos disco: cero
+    disco menos informe: cero
+    identicos nombre a nombre: True
+
+    ids distintos entre los candidatos : 68 de 68
+    candidatos con id igual al fichero : 68 de 68
+    colisiones con los 52 del grafo    : 0
+
+**LAS SEIS SALEN CERO Y SE ESCRIBEN CERO.** **68 `[ENTRARIA]` contados del propio informe**
+(`grep -c "^\[ENTRARIA\]"` da **68**, `^\[BLOQUEARIA\]` da **0**, `^\[CAERIA\]` da **0**).
+
+### C.11.9.bis. EL RELOJ, QUE ERA UNA DISCREPANCIA DECLARADA Y AHORA TIENE UN TERCER PUNTO
+
+    $ date '+inicio %H:%M:%S' ; python forja.py informe --carpeta ... ; date '+fin %H:%M:%S'
+    inicio 00:48:43
+    exit=0
+    fin 01:32:05
+
+**43 MINUTOS Y 22 SEGUNDOS SOBRE 68 CANDIDATOS.** Es la tercera medicion de la misma corrida
+y **la pongo junto a las otras dos sin resolver la discrepancia**, que sigue siendo suya y
+del fundador:
+
+| quien midio | candidatos | duracion | por candidato |
+|---|---:|---|---:|
+| yo, vuelta 10 | 50 | **27 min** | 32 s |
+| el auditor, ACTA 10 9.1 | 50 | **mas de 90 min, sin terminar en su turno** | mas de 108 s |
+| **yo, vuelta 11** | **68** | **43 min 22 s** | **38 s** |
+
+**MI TERCERA MEDIDA SE PARECE A MI PRIMERA Y NO A LA SUYA**, y **no digo cual describe el
+caso normal porque sigo sin saberlo.** Lo que si anado, porque lo medi hoy sin buscarlo, es
+**un dato que ninguna de las tres tenia: el coste de UN candidato crecio dentro de esta misma
+vuelta.**
+
+    con 50 en la carpeta:  18,8 s   (cronometrado al calibrar, antes de escribir nada)
+    con 68 en la carpeta:  mas de 45 s  (la correccion de los seis `Reconoce` agoto un
+                           limite de 2 minutos despues de dos candidatos)
+
+**El coste por candidato depende del TAMANIO DE LA CARPETA, no solo del candidato**, que es
+lo que se espera de una comparacion de todos contra todos dentro del lote (el `0 CHOCAN`).
+**Eso explica que 68 no tarde 68 quintos de lo que tardan 50, y no explica los 90 minutos del
+auditor.** **Lo dejo medido y no lo resuelvo:** una explicacion parcial que se presente como
+completa es peor que la discrepancia.
+
+> **Y LA CONSECUENCIA PRACTICA, QUE ES DE QUIEN FIJE EL TRAMO Y NO MIA:** si el coste crece
+> con el cuadrado del lote, **el informe del lote va a seguir subiendo cada vuelta mientras
+> no se inserte nada**, porque la carpeta solo crece. **No propongo nada** (moratoria,
+> `EXTRACTOR.md` 13, y los umbrales no son mios): **lo mido y lo digo.**
+
+## C.11.10. EL SELLO DE LA VUELTA 11
+
+| | |
+|---|---|
+| **rama** | `extraccion-mundo-11` |
+| **apertura** | `c6171aa`, `2026-09-10 23:58:23 -0400` |
+| **unidad minada** | **Cap. 5, `Managing Yourself`** (`cap_06.md`), 9.617 palabras |
+| **tareas** | **4 de 4 cerradas**, sin cola |
+| **candidatos nuevos** | **18**, `162` pasos, **18 de 18 por la aduana en el mismo acto** |
+| **lote al cierre** | **68 candidatos, `68 / 0 / 0 / 0`**, lista nominal identica al disco |
+| **aristas** | **5 lecturas de `D.29` declaradas, 0 de serie por `D.37`, 0 escritas en el grafo** |
+| **puentes** | **6 de 162, 3,70 por ciento**, banda declarada de 0,00 a 26,5 |
+| **discutibles** | **6, marcados antes de saber si acierto** |
+| **paradas** | **0** |
+| **inserciones** | **0**, probadas por el `git log` de las cuatro sedes y por los tres numeros del grafo |
+| **guardas al cierre** | gate verde, barrido verde, **72 de 72**, rancios verde |
+| **punteros** | **98 de 98**, cero rotos |
+| **cruce pieza contra cita** | **83 de 83**, cero fuera de rango |
+| **orden** | **29 de 29**, cero desordenes |
