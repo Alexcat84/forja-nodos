@@ -8661,3 +8661,99 @@ recorte. **Lo que va arriba es la lista literal de la primera corrida, que si es
 el bloque `EL SALDO` de la segunda corrida se pega en 5.g.bis**, y las dos corridas son
 sobre los mismos 21 ficheros sin un cambio en medio.
 
+
+---
+
+# VUELTA 10, lote 3 (`zhuo_manager`): el Cap. 3, el Cap. 4 y la cola que dejo la vuelta 9
+
+**Abierto ANTES de la primera tarea** (`EXTRACTOR.md` 3), por anexion y sin tocar una linea
+del tramo de la vuelta 9.
+
+| dato de identidad | leido de git en esta vuelta | valor |
+|---|---|---|
+| rama activa | `git rev-parse --abbrev-ref HEAD` | `extraccion-mundo-11` |
+| commit de apertura | `git rev-parse --short HEAD` | `987dc73` |
+| fecha de apertura | `git log -1 --format=%ad --date=iso` | `2026-09-10 21:33:49 -0400` |
+| linea del instrumento que fija la vuelta | `grep -n "^# ACTA" docs/loop/ACTA_AUDITOR.md \| tail -1` | `7659:# ACTA 9. VUELTA 9, lote 3 (zhuo_manager), apertura del libro: Introduction, Cap. 1 y Cap. 2` |
+
+**MODO_INSERCION=cuarentena. CERO INSERCIONES EN ESTA VUELTA**, y lo escribo en la primera
+pantalla para que nadie tenga que buscarlo al final: **no corro `python forja.py insertar`
+ni una sola vez**, ni sobre los 21 de `zhuo_manager`, ni sobre los 15 de `smart_who`, ni
+sobre lo que escriba hoy. **La insercion es una autorizacion del fundador (`D.26`) y en
+esta corrida no la ha dado.**
+
+## 0.1. EL ESQUELETO DE LAS CINCO TAREAS, CON SUS FILAS VACIAS
+
+| tarea | que es | estado |
+|---|---|---|
+| **1** | los registros del ACTA 9: remedio `1.a`, adjudicaciones, correcciones declaradas y la columna `estado` de `ORDEN_DE_LOTES.md` | *(vacia al abrir)* |
+| **2** | la cola de la vuelta 9: puente residual, orden de un paso, las cinco aristas que no pasan `D.37`, y la relectura conjunta de las dos piezas del aprendiz | *(vacia al abrir)* |
+| **3** | el Cap. 3, `Leading a Small Team` (`cap_04.md`), con su frontera publicada y commiteada antes de cortar | *(vacia al abrir)* |
+| **4** | el Cap. 4, `The Art of Feedback` (`cap_05.md`), igual | *(vacia al abrir)* |
+| **5** | el informe del lote entero, los commits y el cierre con sus cuatro medidas | *(vacia al abrir)* |
+
+**Cinco tareas, que es el tope** (`EXTRACTOR.md` 1.3). **No hay cola declarada de entrada.**
+
+## 0.2. UNA CONVENCION DE PEGADO QUE DECLARO AQUI Y VALE PARA TODA LA VUELTA
+
+**Este libro usa el guion largo a mansalva y el barrido de la casa lo prohibe en todo el
+repo**, y `REPORTE.md` esta dentro del repo mientras que `fuentes/` no lo esta. Medido hoy:
+
+    $ python -c "..."   contando U+2014 y U+2013 en los cinco capitulos abiertos
+    cap_01 emdash 15 endash 0
+    cap_02 emdash 24 endash 0
+    cap_03 emdash 22 endash 2
+    cap_04 emdash 38 endash 2
+    cap_05 emdash 40 endash 0
+
+**Asi que toda salida de `sed -n` o `grep -n` que pegue en este reporte pasa por
+`| sed 's/<U+2014>/ - /g; s/<U+2013>/-/g'` y POR NADA MAS.** Es la unica alteracion que
+sufre una salida pegada en toda la vuelta, **se declara aqui una vez** y **no toca ni una
+palabra, ni un numero de linea, ni el orden**. **El precedente es la vuelta 6**, donde el
+hook tumbo un commit por tres U+2014 y la sustitucion se declaro con su cuenta de bytes
+delante.
+
+## 0.3. LAS TRES CORRECCIONES DECLARADAS DE LA VUELTA 9, SIN BORRAR NI UNA LINEA
+
+*`EXTRACTOR.md` 3: el reporte crece por anexion. **No reescribo el tramo de la vuelta 9.**
+Lo que se corrige se corrige aqui, con su prueba al lado.*
+
+### 0.3.a. LA CAIDA: **`5.g.bis` NUNCA SE ESCRIBIO, Y LA PROMESA SIGUE AHI**
+
+**La reconozco entera y no la matizo.** La prueba, corrida hoy por mi sobre mi propio
+reporte:
+
+    $ grep -n "5\.g\.bis" docs/loop/REPORTE.md
+    8661:el bloque `EL SALDO` de la segunda corrida se pega en 5.g.bis**, y las dos corridas son
+
+**UNA SOLA LINEA, Y ES LA DE LA PROMESA.** No hay segunda linea, que es la que la
+cumpliria. **La cifra era verdad y la prueba no estaba**, y por `7.B` de la cosecha una
+ruta que promete prueba es cifra. **Acumula, y es la segunda seguida de esta forma.**
+
+**EL SALDO, PEGADO AHORA, DE UNA CORRIDA MIA DE ESTA VUELTA** sobre los mismos 21 ficheros
+y sin recorte: va en la seccion **1.3** de esta misma vuelta, y no anuncio una sede que no
+exista todavia (remedio `1.a`, punto 1).
+
+### 0.3.b. LAS QUINCE ARISTAS DE LA VUELTA 9 SON **DIEZ** POR `D.37`
+
+**Las otras cinco no pasan el test de `D.37`** (abrir el paso `n` de la madre y comprobar
+que ahi se nombra al hijo). **No se borran**: se reetiquetan. El detalle, una a una y con
+su lectura, va en la **TAREA 2.c**.
+
+**La cuenta corregida: 10 de serie por `D.37` mas 5 candidatas a lectura de `D.29`.**
+**Diez mas cinco no es quince de serie**, y la diferencia es la que tendra que leer el
+auditor de la insercion.
+
+### 0.3.c. LA TASA DE PUENTES DEL Cap. 2 LLEVA BANDA, Y LA ESCRIBO CON LAS DOS PUNTAS
+
+| lectura | puentes | pasos escritos | tasa |
+|---|---:|---:|---:|
+| la que declare en la vuelta 9 | 4 | 76 | **5,26 por ciento** |
+| contando el residuo que el auditor sostiene (`acordar_plan_conjunto_jefe` paso 8) y el quinto que yo corregi por precaucion | 6 | 76 | **7,89 por ciento** |
+
+**La banda es de 5,26 a 7,89 por ciento.** **Ninguna de las dos lecturas cambia la decision
+de volumen** del auditor, y lo digo yo tambien: las dos estan por debajo del 36 por ciento
+del lote 1, que es el numero contra el que `ORDEN_DE_LOTES.md` compara.
+
+**Una tasa sin banda es media cifra** (`EXTRACTOR.md` 9, cifra del autor). **Aqui la que
+publique sin banda era mia, asi que la banda me la pongo yo.**
