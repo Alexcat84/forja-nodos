@@ -9525,3 +9525,92 @@ hijo.**
 cazados y corregidos en el acto sobre 120 pasos, la comprobacion de orden corrida sobre 9
 nodos con cero hallazgos, y 11 aristas escritas con su test de `D.37` corrido una a una.
 **Ninguna parada, cero inserciones.**
+
+---
+
+## TAREA 4. EL Cap. 4, `The Art of Feedback` (`cap_05.md`)
+
+### 4.1. LAS PALABRAS Y LOS DOS BORDES, MEDIDOS POR MI
+
+    $ wc -l -w fuentes/zhuo_manager/cap_05.md
+      289  6353 fuentes/zhuo_manager/cap_05.md
+    $ sed -n '8,$p' fuentes/zhuo_manager/cap_05.md | wc -w
+      6318
+
+**6.318 de cuerpo contra las 6.318 del encargo. Diferencia: CERO**, y las 35 de mas son
+otra vez la cabecera YAML.
+
+    $ awk 'NF{last=NR; t=$0} END{print "ultima con texto: L" last " de " NR; print t}'
+          fuentes/zhuo_manager/cap_05.md
+    ultima con texto: L289 de 289
+    No matter what happens, the skills your team members develop are theirs for life. At
+    Facebook, we have a saying immortalized in posters all over campus: "Feedback is a gift."
+    It costs time and effort to share, but when we have it, we're better off. So let's give
+    it generously.
+
+| lo que decia la nota previa | lo que mido yo | cuadra |
+|---|---|---|
+| `cap_05.md` unidad `Cap. 4`, titulo `The Art of Feedback`, `L9: Chapter Four` | igual | **SI** |
+| ultima con texto `L289` de 289, y cierra con la frase de los posteres | igual, y la frase es literal: *a saying immortalized in posters all over campus* | **SI** |
+
+**LAS TRES COMPROBACIONES DE BORDE DEL ENCARGO SALEN LAS TRES, y la de `cap_06.md` ya esta
+pegada en `3.2`.** Cero discrepancias contra la nota previa en las tres.
+
+### 4.2. LA FRONTERA, PUBLICADA ANTES DE CORTAR
+
+    rango del cuerpo: L9 a L289
+    lineas con texto en el rango: 141
+    lineas con texto cubiertas : 141
+    HUECOS (linea con texto sin pieza): []
+    SOLAPES: []
+    PIEZAS FUERA DEL RANGO: []
+      P1     L9    a L16        8 palabras
+      P2     L17   a L26      406 palabras
+      P3     L27   a L40      183 palabras
+      P4     L41   a L60      304 palabras
+      P5     L61   a L74      267 palabras
+      P6     L75   a L90      326 palabras
+      P7     L91   a L102     329 palabras
+      P8     L103  a L126     408 palabras
+      P9     L127  a L132     120 palabras
+      P10    L133  a L142     197 palabras
+      P11    L143  a L156     288 palabras
+      P12    L157  a L170     325 palabras
+      P13    L171  a L182     338 palabras
+      P14    L183  a L206     894 palabras
+      P15    L207  a L232     529 palabras
+      P16    L233  a L256     540 palabras
+      P17    L257  a L270     242 palabras
+      P18    L271  a L282     345 palabras
+      P19    L283  a L289     269 palabras
+    suma de piezas: 6318
+    cuerpo entero  : 6318
+    diferencia     : 0
+    piezas: 19
+
+**19 PIEZAS, CERO HUECOS, CERO SOLAPES, 6.318 CONTRA 6.318.** Las 141 lineas con texto
+cubiertas las 141.
+
+| pieza | de que es | la cabecera o la primera linea que la abre |
+|---|---|---|
+| P1 | rotulo del capitulo | `L9: Chapter Four` |
+| P2 | la apertura: la peor y la mejor opinion que la autora recibio, y por que cuesta darla | `L17: The worst feedback I ever got came in an email from a former intern, Drew Hamlin.` |
+| P3 | `WHAT DOES GREAT FEEDBACK LOOK LIKE?`, hasta `L39: Below, you'll find the four most common ways to inspire a change in behavior.` | `L27` |
+| P4 | `Set Clear Expectations at the Beginning` | `L41` |
+| P5 | `Give Task-Specific Feedback as Frequently as You Can` | `L61` |
+| P6 | `Share Behavioral Feedback Thoughtfully and Regularly` | `L75` |
+| P7 | `Collect 360-Degree Feedback for Maximum Objectivity` | `L91` |
+| P8 | `EVERY MAJOR DISAPPOINTMENT IS A FAILURE TO SET EXPECTATIONS`, con el caso de Kate y las tres explicaciones | `L103` |
+| P9 | ejemplo 1, el ascenso | `L127: Your Report Has Made It Clear That She Wants a Promotion` |
+| P10 | ejemplo 2, el proyecto nuevo y exigente | `L133: You've Just Assigned a Challenging New Project to Your Report` |
+| P11 | ejemplo 3, la meta de lanzar en octubre, y el cierre de la seccion | `L143: Your Team Has Set a Goal to Launch in October` |
+| P12 | `YOUR FEEDBACK ONLY COUNTS IF IT MAKES THINGS BETTER`, con el caso de George, hasta `L169` | `L157` |
+| P13 | `Am I Giving Feedback Often Enough?` | `L171` |
+| P14 | `Is My Feedback Being Heard?` | `L183` |
+| P15 | `Does My Feedback Lead to Positive Action?`, con sus tres consejos | `L207` |
+| P16 | `DELIVERING CRITICAL FEEDBACK OR BAD NEWS`, las cinco formulaciones y su juicio | `L233` |
+| P17 | la plantilla, y por que el sandwich de elogios no funciona | `L257: If you need a template, try this` |
+| P18 | dar una mala noticia sobre una decision ya tomada | `L271` |
+| P19 | el cierre del capitulo | `L283` |
+
+**LA FRONTERA SE COMMITEA AQUI, ANTES DE ESCRIBIR EL PRIMER CANDIDATO DEL CAPITULO.**
