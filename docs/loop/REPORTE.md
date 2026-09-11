@@ -10352,3 +10352,356 @@ los menos de 20 que costo sobre 21. **Sin esos dos, las dos vueltas se parecen.*
 > insertado.** Y el `cap_08.md`, `Hiring Well`, **sigue siendo el que va a chocar con las
 > 44 fichas de `smart_who` del grafo**: hoy, con 50 de 50 candidatos sin levantar un solo
 > vecino, ese choque sigue sin llegar.
+
+---
+
+# VUELTA 11, lote 3 (`zhuo_manager`): el Cap. 5, `Managing Yourself`, y la cola de aristas de la 10
+
+**Abierto ANTES de la primera tarea** (`EXTRACTOR.md` 3), por anexion y sin tocar una linea
+del tramo de la vuelta 10.
+
+| dato de identidad | leido de git en esta vuelta | valor |
+|---|---|---|
+| rama activa | `git rev-parse --abbrev-ref HEAD` | `extraccion-mundo-11` |
+| commit de apertura | `git rev-parse --short HEAD` | `c6171aa` |
+| fecha de apertura | `git log -1 --format=%ad --date=iso` | `2026-09-10 23:58:23 -0400` |
+| linea del instrumento que fija la vuelta | `grep -n "^# ACTA" docs/loop/ACTA_AUDITOR.md \| tail -1` | `8536:# ACTA 10. VUELTA 10, lote 3 (zhuo_manager), Cap. 3 (Leading a Small Team) y Cap. 4 (The Art of Feedback)` |
+
+**MODO_INSERCION=cuarentena. CERO INSERCIONES EN ESTA VUELTA.** Lo escribo en la primera
+pantalla, como en la 10: **no corro `python forja.py insertar` ni una sola vez**, ni sobre
+los 50 de `zhuo_manager`, ni sobre los 15 de `smart_who`, ni sobre lo que escriba hoy.
+**La insercion es una autorizacion del fundador (`D.26`) y en esta corrida no la ha dado.**
+Es la cuarta acta que la pide y sigue sin darse; **lo digo y no la tomo.**
+
+## 0.1. EL ESQUELETO DE LAS CUATRO TAREAS, CON SUS FILAS VACIAS
+
+| tarea | que es | estado |
+|---|---|---|
+| **1** | los registros del ACTA 10: la `1.a` bloqueante (`L283`), las adjudicaciones, las correcciones declaradas y las dos cifras de `docs/` que el auditor dicto mal | *(vacia al abrir)* |
+| **2** | la cola de aristas de la vuelta 10: la remision entre capitulos, el par de la misma orden y los cuatro pasos del indice, **con el test de `D.37` corrido antes a las tres** | *(vacia al abrir)* |
+| **3** | el Cap. 5, `Managing Yourself` (`cap_06.md`), con su frontera publicada y commiteada antes de cortar | *(vacia al abrir)* |
+| **4** | el informe del lote entero, los commits y el cierre con sus cuatro medidas | *(vacia al abrir)* |
+
+**Cuatro tareas, por debajo del tope de cinco** (`EXTRACTOR.md` 1.3). **El encargo trae
+cuatro y no hay cola declarada de entrada.**
+
+## 0.2. LA CONVENCION DE PEGADO, RATIFICADA Y REMEDIDA PARA EL FICHERO DE HOY
+
+**Vale la misma que declare en la `0.2` de la vuelta 10 y no la cambio.** La remido para
+el fichero que abro hoy, porque la cifra es del fichero y no se hereda:
+
+    $ python -c "t=open('fuentes/zhuo_manager/cap_06.md',encoding='utf-8').read(); print('cap_06 emdash', t.count(chr(8212)), 'endash', t.count(chr(8211)))"
+    cap_06 emdash 59 endash 0
+
+**Cincuenta y nueve guiones largos en el fichero mas gordo del libro**, contra los 40 del
+`cap_05`. Toda salida de `sed -n` o `grep -n` que pegue en este reporte pasa por
+`| sed 's/<U+2014>/ - /g; s/<U+2013>/-/g'` y **POR NADA MAS**: no toca ni una palabra, ni un
+numero de linea, ni el orden. **Y lo mismo vale dentro de los candidatos**: un paso que
+transcriba una frase con guion largo lo escribe sin el, **y eso no es una edicion del
+sentido, es la ortografia de esta casa** (`EXTRACTOR.md` 6).
+
+---
+
+## TAREA 1. LOS REGISTROS DEL ACTA 10
+
+### 1.1. LAS COMPROBACIONES DE APERTURA, CORRIDAS ANTES DE LA PRIMERA OPERACION
+
+*`EXTRACTOR.md` 4: la apertura se mide antes de la primera operacion. **Las corri antes de
+tocar un solo fichero de `cuarentena/` y antes de abrir `cap_06.md`.***
+
+| comprobacion | comando | la salida, pegada | esperado por el encargo | cuadra |
+|---|---|---|---|---|
+| gate | `python forja.py gate` | `GATE VERDE.` / `nodos verificados: 52` | 52 nodos | **si** |
+| barrido | `python forja.py guiones` | `BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.` | verde | **si** |
+| pruebas | `python tests/test_aceptacion.py` | `total: 72 pruebas, 0 fallos, 0 errores` | 72 de 72 | **si** |
+| rancios | `python forja.py rancios` | `BLOQUE DE VIGENCIA VERDE.` / `veredictos comprobados: 60` | 60 veredictos | **si** |
+
+**Y LAS ARISTAS, QUE EL GATE NO IMPRIME**, contadas por mi de `dataset/nodos.jsonl`:
+
+    $ python -c "... suma nodos_previos y nodos_siguientes sobre dataset/nodos.jsonl"
+    nodos: 52 nodos_previos: 37 nodos_siguientes: 37 suma: 74
+
+**37 aristas, cada una escrita por sus dos puntas.** Las cuatro cifras del encargo
+**52 / 37 / 72 de 72 / 60** cuadran las cuatro. **No hay nada que declarar y sigo.**
+
+### 1.2. LA `1.a` BLOQUEANTE: **`L283` SALE DEL PASO 8**, Y LO DECIDO CON EL TEXTO DELANTE
+
+**El texto, pegado, que es lo que decide** (`D.35`):
+
+    $ awk 'NR>=281 && NR<=289 {print NR": "$0}' fuentes/zhuo_manager/cap_05.md
+    281: 			Managing through consensus may feel like a good idea because you won't
+         offend anyone, but I can't think of a single influential leader who hasn't had to
+         go out on a limb [...] "I recognize that you may not agree with my decision, but
+         I'm asking for your cooperation in moving forward."
+    282:
+    283: 			Ultimately, what I've learned about giving feedback - even the most
+         difficult feedback - is that people are not fragile flowers. No report has ever
+         said to me, "Please treat me with kid gloves." [...] Telling it straight is a
+         sign of respect.
+    284:
+    285: 			"It's brutally hard to tell people when they are screwing up," writes Kim
+         Scott, a former Google manager and the author of Radical Candor. [...]
+    287: 			I'm still working on mastering the art of feedback. [...]
+    289: 			No matter what happens, the skills your team members develop are theirs for
+         life. At Facebook, we have a saying immortalized in posters all over campus:
+         "Feedback is a gift." [...] So let's give it generously.
+
+**ELIJO LA PRIMERA SALIDA DE LAS DOS QUE EL ENCARGO OFRECE: `L283` SALE DEL PASO 8.** La
+frontera no mueve su borde. **Y doy las cuatro razones, porque la decision es mia:**
+
+1. **EL ALCANCE NO ES EL DEL NODO.** `L283` dice literal *what I've learned about giving
+   feedback, even the most difficult feedback*: **el alcance es el capitulo entero**, las
+   doce piezas. El nodo `dar_mala_noticia_decision_tomada` es **el mas estrecho de los
+   doce**: una mala noticia sobre una decision que ya tomaste. Colgar la conclusion del
+   capitulo del nodo mas estrecho **le regala al nodo un alcance que no se ha ganado.**
+2. **EL PASO 8 NO TENIA UN SOLO IMPERATIVO.** Abria *Y parte de lo que el libro dice haber
+   aprendido...*, que narra. `EXTRACTOR.md` 9 pide **pasos accionables en imperativo**, y
+   ese no lo era. Los otros siete si: *haz*, *asume*, *no la posiciones*, *ten claro*,
+   *cuenta con*, *no gestiones*, *reconoce*.
+3. **LA PROPIA RAZON DE DESCARTE DE P19 YA LO DECIDIA, Y NO LA LEI HASTA EL FINAL.** Mi
+   `4.3` de la vuelta 10 escribe de P19: **"Es cierre y es consuelo, no procedimiento"**.
+   **Si P19 no es procedimiento, ninguna de sus lineas es un paso.** La frontera tenia
+   razon y el nodo estaba mal; no al reves.
+4. **ES LA ESPECIE QUE EL AUDITOR ME SEÑALA EN LA MISMA ACTA**, la del paso que narra en
+   primera persona del pasado en vez de mandar. **Dos casos en la misma vuelta y en dos
+   capitulos distintos** (ver `1.4.b`).
+
+**LA CORRECCION, CORRIDA, CON SU ADUANA EN EL MISMO ACTO** (`EXTRACTOR.md` 16):
+
+    PASO 8 RETIRADO: "Y parte de lo que el libro dice haber aprendido sobre dar opinion,
+    incluso la mas dificil: la gente no son flores fragiles. [...] Decirlo a las claras es
+    una senal de respeto."
+    pasos ahora: 7
+
+    $ python forja.py informe cuarentena/zhuo_manager/dar_mala_noticia_decision_tomada.json
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+    [ENTRARIA] dar_mala_noticia_decision_tomada   (dar_mala_noticia_decision_tomada.json)
+
+**Y COMPROBE EL ENTREGABLE, QUE ES DONDE SE ESCONDE EL RESIDUO DE UN PASO RETIRADO:** dice
+*La decision comunicada como lo primero que sale de tu boca, asumida como tuya, sin abrirla
+a discusion, y con el desacuerdo reconocido con respeto si lo hay.* **No menciona nada de
+`L283`**, asi que el entregable ya describia los siete pasos y **no arrastra la retirada.**
+
+> **ESTO NO ES UN PUENTE Y NO SUMA A `D.30`, Y LO DIGO ANTES DE QUE ME LO PREGUNTEN.** Un
+> puente es un paso que **el libro no dice**. El paso 8 era `L283` **palabra por palabra**:
+> el libro si lo dice. **El defecto era de SEDE, no de fidelidad**: material bueno en el
+> nodo equivocado, tomado de una pieza que mi propia frontera habia descartado. **Es una
+> especie nueva en esta casa y la nombro: TRANSCRIPCION MAL ADJUDICADA.**
+
+### 1.3. LAS TRES FILAS DE LA VUELTA 10 QUE ARRASTRA, CORREGIDAS POR ANEXION Y SIN BORRAR
+
+*`EXTRACTOR.md` 3. **No reescribo ni una linea del tramo de la vuelta 10.***
+
+**a) LA FILA `4.3`, la razon de descarte de P19.** Decia, y sigue diciendo alli, que P19
+trae la cita de Kim Scott (`L285`), el reconocimiento de la autora (`L287`) y la frase de
+los posteres (`L289`). **Enumeraba tres de las cuatro lineas de la pieza y se dejaba
+`L283`, que es justo la que el nodo se habia llevado.** La razon corregida es:
+
+> **P19, `L283` a `L289`, DESCARTADA.** Cierre del capitulo. Trae **la conclusion de la
+> autora sobre todo lo aprendido dando opinion (`L283`)**, la cita de Kim Scott (`L285`),
+> el reconocimiento de que sigue trabajando en dominarlo (`L287`) y la frase de los
+> posteres (`L289`). **Las cuatro son cierre y consuelo, no procedimiento.**
+
+**LA ENUMERACION INCOMPLETA ERA EL SINTOMA Y NO LA AVERIA.** Si al escribir la razon
+hubiera enumerado las cuatro lineas, **habria visto `L283` en las dos sedes a la vez.**
+
+**b) LA FILA `4.4`, la fila 50 y su columna de piezas.** Decia `| 50 |
+dar_mala_noticia_decision_tomada | P18 | 8 |`. **Con la correccion de `1.2`, esa fila pasa
+a ser verdadera tal como estaba escrita**, y lo unico que cambia es la cuenta de pasos:
+
+| fila 50 | piezas | pasos | verdad |
+|---|---|---:|---|
+| como se escribio en la vuelta 10 | P18 | 8 | **falsa**: el paso 8 venia de P19 |
+| **corregida en la vuelta 11** | **P18** | **7** | **verdadera** |
+
+**LA CONVENCION QUE EL AUDITOR ME CAZA ES MIA Y LA RATIFICO:** cuando un candidato bebe de
+varias piezas **las listo todas**, seis veces en ese mismo reporte. **La fila 50 era la
+unica que bebia de dos y nombraba una.** Ya bebe de una y nombra una.
+
+**c) LA FILA `5.a`, las palabras minadas del Cap. 4. AQUI ME SEPARO DE LA CIFRA QUE EL
+ENCARGO ADELANTA, Y EXPLICO POR QUE.** El encargo dice que las palabras minadas *pasan de
+5.635 a hasta 5.904, y el porcentaje de 89,2 a hasta 93,5*. **Ese "hasta" es la punta de la
+OTRA rama**, la de mover el borde de P18 a P19. **Yo elegi la rama contraria**, asi que:
+
+| lectura | minadas del Cap. 4 | de 6.318 | comentario |
+|---|---:|---:|---|
+| la que publique en la vuelta 10 | 5.635 | **89,2** | **se sostiene sin cambio** |
+| la punta que el encargo adelanta | 5.904 | 93,5 | **no se materializa**: era la rama de mover el borde |
+
+**LA CIFRA `5.a` DEL Cap. 4 NO SE MUEVE: 5.635 palabras, 89,2 por ciento.** Sacar `L283`
+del nodo devuelve P19 entera al descarte, **y P19 entera ya estaba descontada en aquel
+5.635**. La resta que publique (`P1` 8, `P2` 406, `P19` 269, total **683**) **sigue siendo
+la resta correcta.** `6.318 - 683 = 5.635`, y lo cuadro aqui para que nadie tenga que
+fiarse de mi palabra.
+
+> **DECLARO LA DISCREPANCIA EN VEZ DE RESOLVERLA COPIANDO** (`EXTRACTOR.md` 5). La cifra
+> del encargo no es falsa: **es condicional, y su condicion no se cumplio.**
+
+### 1.4. LAS CORRECCIONES DECLARADAS DE LA `1.c`, LAS TRES, SIN BORRAR NADA
+
+**a) LOS TRES VERBOS DE LA `2.a.bis` CUENTAN. ACEPTADO SIN MATIZAR.** El auditor tiene
+razon y su razon es la mia: **si hubo que corregirlos porque anadian un medio, anadian
+contenido, y anadir contenido es puente.** **La tasa del Cap. 1 de la vuelta 9 queda en
+6 de 79, el 7,59 por ciento**, que es la alternativa que yo mismo publique.
+**No es caida de credito y no acumula** (`AUDITOR_FORJA.md` 8.4): los vi yo, los corregi
+yo y los declare yo. **Lo que cae es la cuenta, no el trabajo.**
+
+**b) EL RESIDUO DEL Cap. 3, ACEPTADO Y CORREGIDO EN ESTA VUELTA.** El texto, pegado:
+
+    $ awk 'NR>=281 && NR<=285 {print NR": "$0}' fuentes/zhuo_manager/cap_04.md
+    281: MAKE PEOPLE MOVES QUICKLY
+    282:
+    283: 			When I first started managing, I considered my role above all to be a
+         champion for my team. It was my job to support them, defend them, and listen to
+         them. If a report was struggling to do quality work, not being productive, or
+         decreasing team morale, I'd think to myself, If I don't step up and show some
+         empathy, who else will?
+    284:
+    285: 			Nobody. As their manager, this was my job. And everyone deserves a second
+         chance.
+
+**EL AUDITOR TIENE RAZON Y LA PRUEBA ESTA EN `L285`.** `L283` **no ordena dejar de
+considerarlo**: cuenta en primera persona del pasado que la autora lo consideraba. Y `L285`
+**no lo desmiente: lo RATIFICA** (*Nobody. As their manager, this was my job.*). **Mi paso 1
+metia una orden de "deja de" donde el libro no la da, y acto seguido se desdecia dentro de
+si mismo**, porque el propio paso terminaba diciendo *Nadie lo hara, es cierto, y es tu
+trabajo*. **Un paso que manda una cosa y a los dos renglones dice la contraria no es un
+paso: es dos.**
+
+| | el paso 1 |
+|---|---|
+| **como estaba** | *Deja de considerar que tu papel es ante todo ser el campeon de tu equipo, hasta el punto de pensar que si tu no das un paso al frente con empatia no lo hara nadie. Nadie lo hara, es cierto, y es tu trabajo, y todo el mundo merece una segunda oportunidad.* |
+| **corregido** | *Parte de donde el libro cuenta que se parte, y lo ratifica: que tu papel es ante todo ser el campeon de tu equipo, apoyarlos, defenderlos y escucharlos, y que si una persona a cargo esta batallando por hacer trabajo de calidad, por ser productiva, o porque baja la moral del equipo, si tu no das un paso al frente con empatia no lo hara nadie. Nadie lo hara: ese es tu trabajo, y todo el mundo merece una segunda oportunidad.* |
+
+**LA CORRECCION RECUPERA ADEMAS DOS TRAMOS DE `L283` QUE YO HABIA PERDIDO**: *support them,
+defend them, and listen to them*, y las tres formas de batallar (*quality work*,
+*productive*, *team morale*). **El paso corregido es mas largo porque transcribe mas, no
+porque anada mas.**
+
+    $ python forja.py informe cuarentena/zhuo_manager/mover_rapido_persona_papel_equivocado.json
+      ENTRARIAN 1 | BLOQUEARIAN 0 | CAERIAN 0 | CHOCAN 0
+    [ENTRARIA] mover_rapido_persona_papel_equivocado
+
+**SUMADO A MI CUENTA DE `D.30`: el Cap. 3 queda en 4 de 120, el 3,33 por ciento**, tal como
+el acta lo firma.
+
+**Y ACEPTO EL AVISO QUE VIENE CON EL, QUE VALE MAS QUE LA CORRECCION:** el paso 1 y el
+paso 7 del **mismo nodo** tenian **la misma averia**, y **cace el 7 y no el 1**. El paso 7
+lo corregi en la vuelta 10 atribuyendo la narracion (*que es el punto de inflexion que la
+autora cuenta de si misma*); el paso 1 se me fue **porque el nodo arranca ahi y el ojo
+todavia no esta buscando**. **En la TAREA 3 de hoy la relectura de fidelidad empieza por el
+paso 1 de cada nodo y no por el cuerpo.**
+
+**c) LAS OTRAS DOS DEL Cap. 4, ACEPTADAS LAS DOS TAL COMO VIENEN.**
+`dar_opinion_especifica_tarea` paso 3 **cuenta** (anadia *de las cuatro*, un recuento que el
+libro no hace: **anadir un numero es anadir contenido**). El paso 1 de
+`elegir_forma_inspirar_cambio_conducta` **NO cuenta** (quitaba un matiz, y **esta casa no
+tiene casillero para lo que se pierde, solo para lo que se inventa**).
+
+> **Y AQUI PROPONGO, SIN ADJUDICARME NADA** (`EXTRACTOR.md` 14): **que no haya casillero
+> para el matiz perdido es una asimetria que ya ha aparecido dos veces.** `D.30` mide lo
+> inventado y **nada mide lo evaporado**, y las dos averias danan al lector igual. **Lo
+> dejo escrito como propuesta para Alexis y sigo midiendo con la vara de hoy.** No la
+> muevo yo.
+
+### 1.5. LAS CIFRAS DE PUENTES DE LA VUELTA 10, Y LA QUE EL ACTA NO PUDO SABER
+
+**Las tres que el acta firma, recogidas tal cual:**
+
+    Cap. 3   4 de 120   3,33 por ciento
+    Cap. 4   2 de 111   1,80 por ciento
+    vuelta   6 de 231   2,60 por ciento
+
+**Y LA QUE MI PROPIA `1.2` ACABA DE MOVER, QUE EL ACTA NO PODIA FIRMAR PORQUE DEPENDIA DE
+MI RAMA.** Al retirar el paso 8 de `dar_mala_noticia_decision_tomada`, **el Cap. 4 tiene un
+paso escrito menos**:
+
+| capitulo | puentes | pasos escritos | tasa | de donde sale el denominador |
+|---|---:|---:|---:|---|
+| Cap. 3 | 4 | 120 | **3,33** | sin cambio |
+| Cap. 4, **como el acta lo firma** | 2 | 111 | **1,80** | los 111 que la vuelta 10 escribio |
+| Cap. 4, **lo que sobrevive a la `1.2`** | 2 | **110** | **1,82** | 111 menos el paso retirado |
+| vuelta 10, **como el acta la firma** | 6 | 231 | **2,60** | |
+| vuelta 10, **lo que sobrevive** | 6 | **230** | **2,61** | |
+
+**NO ELIJO EN SILENCIO Y NO LE CORRIJO AL ACTA: ESCRIBO LAS DOS** (`EXTRACTOR.md` 5). **El
+numerador no se mueve en ninguna de las dos**, porque la transcripcion mal adjudicada **no
+es puente** (`1.2`). **Y la diferencia es de dos centesimas**, asi que no cambia ninguna
+lectura de tendencia. **Para la serie de la TAREA 4 uso las cifras que el acta firma**,
+que son las publicadas, **y esta fila queda como la nota al pie que las acompana.**
+
+### 1.6. LAS DOS CIFRAS DE `docs/` DE LA `1.d`
+
+**a) `ORDEN_DE_LOTES.md`, columna `estado` del lote 3. CORREGIDA, SIN BORRAR.** La salida
+de la fila entera, pegada:
+
+    $ sed -n '19p' docs/loop/ORDEN_DE_LOTES.md
+    | 3 | `zhuo_manager` | 12 | 70.041 | ~~(vacio)~~ **CORRECCION DECLARADA (vuelta 10):
+    ABIERTO** (ACTA 9). ~~**3 de 12 ficheros minados, 21 candidatos en
+    `cuarentena/zhuo_manager/`, SIN INSERTAR. Esta vuelta corre a DOS unidades**~~
+    **CORRECCION DECLARADA (vuelta 11, ACTA 10 punto 1.d.1): aquella cifra era verdad al
+    ESCRIBIRSE y falsa al cerrarse la misma vuelta 10. AL CIERRE DE LA VUELTA 10: 5 de 12
+    ficheros minados, 50 candidatos en `cuarentena/zhuo_manager/`, SIN INSERTAR.**
+    **Vuelta 11: corre a UNA unidad (`cap_06.md`, Cap. 5).** |
+
+Los 50 contados por mi hoy: `$ ls cuarentena/zhuo_manager/*.json | wc -l` da **50**.
+
+**Y APLICO A MI MISMO LA REGLA QUE EL AUDITOR SACA DE SU PROPIO FALLO:** *la columna
+`estado` lleva la cifra AL CIERRE de la vuelta que la escribe, o no lleva cifra.* **Por eso
+la linea de la vuelta 11 que acabo de escribir dice a cuantas unidades corre y NO dice
+cuantos candidatos deja.** Esa cifra **no existe todavia** y la escribo **al cerrar**, en la
+TAREA 4. **Es el mismo remedio de la `1.a` de la vuelta 10 aplicado a otra sede: no
+anunciar una cifra que aun no se ha medido.**
+
+**b) `cap_12.md` NO es un `Index`. COMPROBADO POR MI, y el auditor acierta:**
+
+    $ sed -n '1,15p' fuentes/zhuo_manager/cap_12.md
+    unidad: Epilogue
+    titulo_textual: The Journey Is 1% Finished
+    [...]
+    Epilogue
+    			The Journey Is 1% Finished
+    		 			 				 					THE MYTH
+    --- lineas: 449   palabras de cuerpo (L8 en adelante): 3.511
+
+**449 lineas y 3.511 palabras, y su `L15` abre con `THE MYTH`.** Las cuatro cifras del
+encargo reproducen. **Y compruebo ademas que no hay nada que corregir en
+`ORDEN_DE_LOTES.md` por esto**: `grep -n "Index\|indice"` sobre ese fichero **no devuelve
+ninguna linea**, asi que la palabra *indice* vivia solo en el encargo de la vuelta 10 y no
+llego a ningun documento. **Queda dicho aqui para que la vuelta que abra el epilogo lo
+juzgue y no lo prejuzgue.**
+
+**c) Y NO TOCO NADA MAS DE ESA TABLA.** Ni el orden, ni las claves, ni la cuenta de
+capitulos, ni las palabras. **Eso lo fija `D.24` y no lo elige el bucle.**
+
+### 1.7. LAS SIETE ADJUDICACIONES DE LA `1.b`, RECOGIDAS PARA NO VOLVER A PLANTEARLAS
+
+| # | lo adjudicado | lo recojo asi |
+|---:|---|---|
+| 1 | mi DISCUTIBLE 1 **cae** | aceptado sin matizar, `1.4.a`. Cap. 1 de la vuelta 9 a **7,59 por ciento** |
+| 2 | mi DISCUTIBLE 2 **sostenido**, y el auditor se corrige a si mismo | recogido. **La razon de su correccion es `D.19` y me la aplico yo tambien**: un disparador con numero es una senal, y **las senales ordenan, nunca deciden** |
+| 3 | **SI sale a nodo propio una pieza sin inventario propio, en este caso**, porque el modo de fallo de `D.27` no se daba | recogido, **y con su limite escrito**: vale *en este caso*, no en general. **`D.27` no se ha movido y no lo muevo yo** |
+| 4 | mi DISCUTIBLE 3 **sostenido**: el `critique` fuera | recogido |
+| 5 | mi DISCUTIBLE 4 **sostenido por los dos lados** | recogido |
+| 6 | `0 CAERIAN` y `0 CHOCAN` **son ceros medidos**, con guarda que muerde por mutacion | recogido. **No repito la mutacion**: ya esta hecha y es suya |
+| 7 | mi tabla `5.b` **no cae** por 8.3.3 | recogido |
+
+**LAS SIETE ESTAN RECOGIDAS Y NINGUNA LA VUELVO A PLANTEAR.**
+
+### 1.8. LA FILA DE LA TAREA 1
+
+| tarea | que era | como cerro |
+|---|---|---|
+| **1** | los registros del ACTA 10 | **CERRADA.** Apertura 4 de 4 cuadrando. `1.a` decidida por la rama de sacar `L283`, con sus cuatro razones y su aduana en verde. Tres filas de la vuelta 10 corregidas por anexion, **y una de ellas contra la cifra que el encargo adelantaba, con la discrepancia declarada**. Residuo del Cap. 3 corregido y **sumado a `D.30`**. `ORDEN_DE_LOTES.md` al cierre. `cap_12.md` verificado como `Epilogue`. Siete adjudicaciones recogidas |
+
+> **DISCUTIBLE 1, Y LO MARCO ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8). **La rama que
+> elegi en la `1.a`.** Saque `L283` del nodo en vez de mover el borde de la frontera de P18
+> a P19. **El caso en contra, escrito por mi y no por nadie mas:** `L283` es la unica linea
+> de P19 que **habla de la conducta del que da la noticia** (*telling it straight is a sign
+> of respect*), y las otras tres son cita ajena, confesion y lema. **Quien sostenga que P19
+> no es homogenea puede partirla y quedarse `L283` como procedimiento.** Yo no lo hago
+> porque **el alcance de `L283` es el capitulo y el del nodo es una escena**, pero **la
+> lectura contraria no es absurda y por eso la escribo antes de saber como cae.**

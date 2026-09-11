@@ -16,7 +16,7 @@ medida.
 |---:|---|---:|---:|---|
 | **1** | `onu_consumidor` | 4 | 1.534 | **CERRADO E INSERTADO** el 10 sep 2026 (`762e31d`). 6 nodos |
 | **2** | `smart_who` | 7 | 44.133 | ~~**ABIERTO.** Dos capitulos por vuelta~~ **CORRECCION DECLARADA (vuelta 10): CERRADO EN EXTRACCION** (ACTA 8 seccion 10). **Seis capitulos minados. 15 candidatos en `cuarentena/smart_who/`, SIN INSERTAR** |
-| 3 | `zhuo_manager` | 12 | 70.041 | ~~(vacio)~~ **CORRECCION DECLARADA (vuelta 10): ABIERTO** (ACTA 9). **3 de 12 ficheros minados, 21 candidatos en `cuarentena/zhuo_manager/`, SIN INSERTAR. Esta vuelta corre a DOS unidades** |
+| 3 | `zhuo_manager` | 12 | 70.041 | ~~(vacio)~~ **CORRECCION DECLARADA (vuelta 10): ABIERTO** (ACTA 9). ~~**3 de 12 ficheros minados, 21 candidatos en `cuarentena/zhuo_manager/`, SIN INSERTAR. Esta vuelta corre a DOS unidades**~~ **CORRECCION DECLARADA (vuelta 11, ACTA 10 punto 1.d.1): aquella cifra era verdad al ESCRIBIRSE y falsa al cerrarse la misma vuelta 10. AL CIERRE DE LA VUELTA 10: 5 de 12 ficheros minados, 50 candidatos en `cuarentena/zhuo_manager/`, SIN INSERTAR.** **Vuelta 11: corre a UNA unidad (`cap_06.md`, Cap. 5).** |
 | 4 | `scott_radical_candor` | 15 | 108.161 | |
 | 5 | `marquet_turn_the_ship` | 17 | 33.702 | |
 | 6 | `openstax_business_ethics` | 17 | 54.148 | CC BY 4.0 |
