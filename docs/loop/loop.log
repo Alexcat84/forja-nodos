@@ -115,3 +115,6 @@ Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion
 Reemplazalos por el guion corto normal y vuelve a intentarlo.
 [2026-09-10 23:23:29]   apertura ciega sellada: ef308a1e8803138cfd2641bccb9ea965692d2fdc
 [2026-09-10 23:23:29] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-10 23:57:43] auditor listo (USD 15.821439999999997), 2053s, intento 1 de 7
+[2026-09-10 23:57:43]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-10 23:57:43] VUELTA 3 : EXTRACTOR (claude-opus-5)
