@@ -14979,3 +14979,57 @@ puentes sobre cero pasos **no es cero por ciento, es una division sin denominado
 Escribir `0,00` ahi seria publicar una cifra que ningun instrumento puede dar, y bajaria
 falsamente la media del lote. **Es la misma especie de error que la ACTA 12 midio contra
 si misma en su 6.1: un numero bien contado bajo el nombre de otra poblacion.**
+
+---
+
+# TAREA 3. EL INFORME DEL LOTE Y EL RELOJ
+
+## H.4.1. LA PREDICCION, PUBLICADA Y COMMITEADA **ANTES** DE CORRER EL INFORME
+
+*Este bloque se commitea solo, y el commit es anterior al de la salida del informe. **Si
+falla, el modelo se cae y lo digo**, que para eso se publica antes.*
+
+**EL MODELO, TAL COMO QUEDO EN `F.3` DE LA VUELTA 12, sin retocar ni un coeficiente:**
+
+    coste(N) = a * N * G + b * N * N
+    a = 0,1977     (el termino que cruza cada candidato con cada nodo del grafo)
+    b = 0,063      (el termino que cruza cada candidato con cada otro candidato)
+
+**LAS DOS ENTRADAS, MEDIDAS AHORA Y NO HEREDADAS:**
+
+    $ ls cuarentena/zhuo_manager/*.json | wc -l                 ->  68
+    $ python -c "cuenta las lineas de dataset/nodos.jsonl"       ->  135
+
+**N = 68** (los 60 de la apertura mas los 8 de `cap_11`), **G = 135**, sin mover.
+
+    $ python -c "a,b=0.1977,0.063; N,G=68,135; ..."
+    a*N*G    = 1814,9 s
+    b*N*N    =  291,3 s
+    coste(N) = 2106,2 s
+
+> ## **PREDICCION: 35 min 6 s.**
+>
+> **Y LA BANDA QUE ME DOY, dicha antes y no despues:** la vuelta 12 fallo por **2,8 por
+> ciento** con este mismo modelo. **Doy por acertado un fallo de hasta el 10 por ciento**,
+> que son de **31 min 36 s a 38 min 37 s**. **Fuera de esa banda, el modelo se cae y lo
+> escribo con esas palabras.**
+
+**POR QUE ESTE ES UN PUNTO QUE VALE Y NO UNA REPETICION DEL ANTERIOR:** el encargo lo dice
+y lo suscribo, **`G` no se ha movido y `N` si**, de 60 a 68. Es la primera vez que esta
+casa mueve **una sola** de las dos entradas del modelo. **Con `G` fijo, el termino `a` es
+lineal en `N` y el termino `b` es cuadratico**, asi que un 13,3 por ciento mas de
+candidatos deberia dar **un 15,2 por ciento mas de reloj** si el modelo es bueno:
+
+    reloj esperado / reloj de la vuelta 12 = 2106,2 / 1828,2 = 1,152
+
+**SI SALE UN 13,3 POR CIENTO LARGO, EL TERMINO CUADRATICO SOBRA. SI SALE MUCHO MAS DEL
+15,2, FALTA TERMINO.** Eso es lo que este punto compra y el anterior no podia comprar.
+
+**Y NO TOCO NI EL INFORME NI LOS UMBRALES PARA QUE EL RELOJ BAJE** (decision del fundador
+5.6). Los umbrales de esta corrida son los de `config/umbrales.json` y no los he mirado
+siquiera: **si el reloj sale mal, es un dato que se trae.**
+
+**COMO LO VOY A CORRER, declarado antes para que la medicion sea interpretable:** lo lanzo
+**el ultimo y solo**, que es la decision que la vuelta 12 dejo escrita en su `G.8.2` para
+quien viniera detras: *si lo que hace falta es medir el instrumento, se lanza el ultimo y
+solo.* **Esta vuelta hace falta medirlo**, porque tiene un contraste de modelo encargado.
