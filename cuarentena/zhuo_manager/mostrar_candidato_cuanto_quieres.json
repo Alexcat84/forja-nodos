@@ -1,0 +1,38 @@
+{
+  "id": "mostrar_candidato_cuanto_quieres",
+  "titulo": "Mostrar al candidato cuanto quieres que diga que si",
+  "denominaciones": {
+    "nombre_largo": "El cierre de la oferta como trabajo del directivo, la cadencia de contacto, y por que con los mas veteranos es mas critico",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "show candidates how much you want them"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Desde el momento en que decides hacer una oferta y hasta que el candidato responde.",
+  "entregable_esperado": "Un candidato que sabe que le quieres en el equipo, con sus preguntas resueltas y con una imagen viva de como tendria impacto.",
+  "pasos_accionables": [
+    "Trata el cierre como tu trabajo tanto como del reclutador: cuando decides hacer una oferta, es tan tuyo como suyo hacer que el candidato sienta que quieres que diga que si.",
+    "No crees distancia en el proceso, por ejemplo dejando pasar una semana entre comunicaciones, porque cuanta mas distancia creas, mas probable es que la respuesta sea no.",
+    "Despues de entregar la oferta, contacta con el candidato cada dos dias para hacerle saber que estas pensando en el y que te hace ilusion darle la bienvenida a tu equipo.",
+    "Preguntale si le gustaria hablar de cualquier duda que tenga.",
+    "Quedad a veces a comer o a cenar para hablar del puesto con mas detalle.",
+    "Cuenta con que, cuanto mas veterano sea el candidato, mas critica es tu implicacion en el cierre, porque esa persona probablemente tiene muchas opciones y lo que buscas es que asuma un papel de liderazgo dentro de tu equipo.",
+    "Pinta un cuadro vivo de como ves que esa persona va a tener impacto.",
+    "Ayudale a entender por que el puesto es emocionante y por que ella es la persona perfecta para atacar esos problemas grandes."
+  ],
+  "resumen_teorico": "Es la cuarta y ultima tactica de trabajo conjunto con el reclutamiento, y la unica que ocurre despues de la decision. Lo que la hace procedimentable es que el libro pone la cadencia con numero, cada dos dias, y el contraejemplo tambien con numero, una semana de silencio; sin esos dos numeros el paso seria un adjetivo de adecuacion y por D.27 no entraria. El paso 6 trae la regla de escala que el libro escribe: la implicacion crece con la veterania del candidato, y da la razon, que tiene opciones. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuanto tiempo se sostiene esa cadencia, ni que se hace cuando el candidato pide mas plazo, ni como se negocia la oferta.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

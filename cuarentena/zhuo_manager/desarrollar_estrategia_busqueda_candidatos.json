@@ -1,0 +1,43 @@
+{
+  "id": "desarrollar_estrategia_busqueda_candidatos",
+  "titulo": "Desarrollar con el reclutador la estrategia de donde buscar",
+  "denominaciones": {
+    "nombre_largo": "La sesion de ideas sobre donde buscar, los patrones a cazar en un historial, y el patron inesperado que encontro Netflix",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "develop a sourcing strategy"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Una vez que tienes buena idea de la clase de persona que quieres, y antes de mandar el primer correo.",
+  "entregable_esperado": "Una lista de sitios donde buscar y de patrones o palabras clave que cazar en un historial, acordada con el reclutador.",
+  "pasos_accionables": [
+    "Sientate con el reclutador y generad ideas juntos sobre donde buscar a tu candidato ideal.",
+    "Sacad de ahi cosas concretas, y el libro nombra cuales: titulos de puesto u organizaciones que buscar en una red profesional, personas a las que escribir para pedirles recomendaciones, congresos a los que ir, o anuncios que os gustaria poner.",
+    "Haced el otro ejercicio: averiguar que patrones o que palabras clave hay que buscar en un historial. La autora y su companiero de reclutamiento identificaron para un puesto que su candidato ideal tendria experiencia tanto en una agencia de diseno como en una empresa de tecnologia, porque esa combinacion suele producir un equilibrio sano entre vision y saber hacer pragmatico.",
+    "Acordad tambien quien manda el primer correo. Ellos acordaron que lo mandara ella y no el reclutador, para que la experiencia se sintiera personal desde el primer momento.",
+    "Deja sitio a los patrones inusuales, porque a veces llevan a candidatos asombrosos. El equipo de reclutamiento de Netflix noto que un numero sorprendente de sus mejores lideres de ciencia de datos compartia interes por la musica, asi que ademas de buscar historiales con las palabras clave tipicas de datos, empezaron a buscar gente que tocara el piano o la guitarra."
+  ],
+  "resumen_teorico": "Es la segunda tactica de trabajo conjunto con el reclutamiento y la unica que produce una lista de sitios en vez de una descripcion. Lo que la hace procedimentable es el inventario de canales que el libro nombra uno a uno, y el ejercicio de los patrones, que es un acto con entregable. El paso 4, quien manda el primer correo, va dentro porque el libro lo cuenta como parte del mismo acuerdo y no como un detalle suelto. El paso 5 trae el caso de Netflix como ejemplo nombrado (manual seccion 3.5), con su razonamiento incluido, porque sin el razonamiento el patron parece una anecdota. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantos canales hay que abrir, ni como se prioriza entre ellos.",
+  "atribuciones": [
+    {
+      "cifra": "su equipo de reclutamiento concluyo que la gente que toca un instrumento puede alternar con facilidad entre su cerebro izquierdo y su cerebro derecho, una gran habilidad para el analisis de datos, despues de notar que un numero sorprendente de sus mejores lideres de ciencia de datos compartia interes por la musica",
+      "autor": "Patty McCord, antigua directora de talento de Netflix, citada por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto: el libro la cita por su descripcion escrita del caso"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

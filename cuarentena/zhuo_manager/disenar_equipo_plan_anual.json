@@ -1,0 +1,44 @@
+{
+  "id": "disenar_equipo_plan_anual",
+  "titulo": "Disenar tu equipo a un anio vista antes de que el hambre decida por ti",
+  "denominaciones": {
+    "nombre_largo": "El ejercicio de enero, con el organigrama futuro, el analisis de huecos y las preguntas que se hace quien lo escribe",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "design your team intentionally, one-year-out organizational plan"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Una vez al anio, y antes de que el equipo este corto de gente, porque es entonces cuando cuesta resistirse a quien parece disponible y listo para el trabajo.",
+  "entregable_esperado": "Un organigrama futuro, un analisis de los huecos en habilidades, fuerzas o experiencias, y una lista de puestos abiertos para los que contratar.",
+  "escala_minima": "Una vez al anio. La autora lo hace cada enero.",
+  "pasos_accionables": [
+    "Reconoce el peligro que te lleva a hacerlo: cuando estas doblado bajo la tension de un equipo corto de personal, es muy dificil resistirse a alguien que parece disponible y listo para trabajar, y puedes pasar por alto que no es exactamente lo que quieres, igual que cuando te ruge el estomago y asaltas la nevera y unos pepinillos con ketchup y pan te parecen una comida aceptable.",
+    "Planifica por delante, que es la solucion tanto para una dieta mas sana como para un equipo mejor: si vas al supermercado el domingo y compras lo que necesitas para una cena decente cada noche, cuando llegue el hambre del miercoles es mas probable que eches mano del pollo y la verdura.",
+    "Dibuja el organigrama que esperas tener a final de anio.",
+    "Analiza los huecos en habilidades, en fuerzas o en experiencias.",
+    "Haz la lista de puestos abiertos para los que hay que contratar.",
+    "Preguntate cuanta gente nueva vas a anadir al equipo este anio, mirando el crecimiento de la empresa, la rotacion esperada, el presupuesto y las prioridades.",
+    "Preguntate, para cada contratacion nueva, que nivel de experiencia estas buscando.",
+    "Preguntate que habilidades o fuerzas concretas le hacen falta al equipo, por ejemplo pensamiento creativo, excelencia operativa o dominio de tal materia.",
+    "Preguntate que habilidades y fuerzas tiene ya el equipo, porque en esas los que entren se pueden permitir ser mas flojos.",
+    "Preguntate que rasgos, experiencias pasadas o personalidades reforzarian la diversidad de tu equipo.",
+    "Usa ese plan a un anio como marco para evaluar candidatos, que es lo que te evita caer en la trampa de decir que si a la siguiente persona que aparezca.",
+    "Modifica el plan sobre la marcha cuando las cosas cambien, porque tu organizacion se reestructura, alguien se va de golpe o las prioridades se mueven, de manera que siempre tengas en la cabeza una imagen clara de como deberia ser tu equipo.",
+    "Si estas en una empresa sin muchas necesidades de contratacion, haz la variante: considera la posibilidad de la rotacion y donde buscarias si alguien se fuera, de donde vinieron tus mejores empleados, que habilidades nuevas querrias anadir si acaso, y a quien en concreto te encantaria traerte si se abriera un hueco."
+  ],
+  "resumen_teorico": "Es el primer procedimiento del capitulo y el unico que se ejecuta cuando no hay ninguna vacante abierta, que es justo su razon de ser: la analogia de la nevera dice que la decision mala no se toma por falta de criterio sino por hambre. El inventario propio del libro son las preguntas del ejercicio, nombradas una a una, y los tres actos del ejercicio, organigrama, analisis de huecos y lista de puestos. Por eso los pasos son transcripcion. El plan sirve ademas de marco de evaluacion, que es un segundo uso que el libro nombra y que no se deduce solo. Lo que el libro NO dice, y por eso no esta escrito aqui, es donde se guarda el plan, con quien se comparte, ni cada cuanto se revisa mas alla de modificarlo cuando algo cambia.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

@@ -1,0 +1,54 @@
+{
+  "id": "buscar_recomendaciones_confianza",
+  "titulo": "Buscar recomendaciones de fuentes en las que ya confias",
+  "denominaciones": {
+    "nombre_largo": "La varita magica que se pregunta al equipo propio, la comprobacion de referencias honesta, y las dos cosas que se tienen en cuenta al evaluarlas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "seek out trusted recommendations, reference check"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "En cuanto se abre un puesto nuevo, y otra vez antes de cerrar una contratacion.",
+  "entregable_esperado": "Una lista de candidatos sonados nombrada por tu propio equipo, y referencias honestas obtenidas por tu red y no por la lista que da el candidato.",
+  "pasos_accionables": [
+    "Toma en serio lo que te diga una fuente creible: si te dice que una persona es asombrosa y que con otra no querria volver a trabajar, eso pesa. La fiabilidad de tu entrevista de dos horas palidece al lado del testimonio de quien ha trabajado de verdad con esa persona.",
+    "Cuando abras un puesto nuevo, lo primero que haces es asegurarte de que todo tu equipo sabe que estais contratando.",
+    "Preguntales con la varita magica: si pudieras agitar una varita magica, quien seria tu candidato sonado para este puesto?",
+    "Usa la lista que te devuelvan por sus dos caras: como buen punto de partida de a quien escribir, y tambien para ver donde mas podriais estar buscando, es decir, si entre las personas recomendadas hay patrones de habilidades, de empresas o de experiencias en los que convenga profundizar.",
+    "Usa el otro sitio donde las recomendaciones de confianza sirven, que es la comprobacion de referencias.",
+    "Busca referencias honestas, que es la clave. Puede costar esfuerzo de verdad encontrar a alguien que sea franco contigo, pero merece la pena.",
+    "No cuentes con conseguirlo llamando a la gente que el propio candidato te da, ni hablando con alguien a quien no conoces bien.",
+    "Pide en cambio a tu red de colegas de confianza que te pongan en contacto con una conexion comun en la que ellos tambien confien.",
+    "Al evaluar referencias, ten en cuenta que la gente normalmente mejora sus habilidades con el tiempo, asi que descuenta la opinion negativa que no sea reciente: si un amigo te cuenta que hace cinco anios alguien no era bueno cerrando tratos, es posible que desde entonces haya mejorado mucho.",
+    "Ten en cuenta tambien que puedes no conseguir un grupo diverso de candidatos si solo buscas dentro de tu red existente, asi que vuelve a tu definicion de la persona ideal para el puesto y asegurate de estar echando la red lo bastante ancha."
+  ],
+  "resumen_teorico": "Es la segunda tactica de apostar con cabeza y la que trae mas material propio del libro: la pregunta de la varita magica con sus dos usos, la doctrina de Ryan sobre el peso relativo del historial, la entrevista y la referencia, y los dos correctivos al evaluar referencias. Los dos ultimos pasos son el contrapeso que el propio libro pone a la tactica, y van dentro porque sin ellos el nodo empujaria a contratar siempre dentro del mismo circulo. El paso 9 se apoya en la doctrina del libro de que las personas cambian, que el mismo capitulo sostiene con la cita de Bock. Lo que el libro NO dice, y por eso no esta escrito aqui, es a cuantas referencias se llama, que se pregunta en esa llamada, ni cuanto de reciente es reciente.",
+  "atribuciones": [
+    {
+      "cifra": "el proceso de contratacion tiene tipicamente tres elementos, el historial, la entrevista y la comprobacion de referencias, y la mayoria de los directivos sobrevalora el historial y la entrevista e infravalora la comprobacion de referencias: las referencias son lo que mas importa",
+      "autor": "Kevin Ryan, fundador de Gilt Groupe y Business Insider, citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto: el libro lo cita en presente"
+    },
+    {
+      "cifra": "a los dos o tres anios de salir de la universidad, tu capacidad de rendir en Google no tiene ninguna relacion con como rendias cuando estabas estudiando, porque las habilidades que necesitabas en la universidad son muy distintas, y ademas eres fundamentalmente otra persona: aprendes y creces, y piensas las cosas de otra manera",
+      "autor": "Laszlo Bock, vicepresidente senior de operaciones de personal de Google, citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto: el libro lo cita junto a la decision de Google de dejar de usar la nota media de la universidad"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

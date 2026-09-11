@@ -1,0 +1,37 @@
+{
+  "id": "cultivar_relacion_talento_largo_plazo",
+  "titulo": "Cultivar la relacion con el mejor talento aunque hoy te diga que no",
+  "denominaciones": {
+    "nombre_largo": "La oferta rechazada que vuelve anios despues, por que los buenos lideres eligen lo que ya conocen, y que se cultiva mientras tanto",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "take the long view with top talent"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando un candidato excelente rechaza tu oferta, y tambien de forma continua, cuando no tienes ningun puesto abierto para el.",
+  "entregable_esperado": "Una red viva de relaciones con el mejor talento de tu especialidad y una reputacion de equipo conocida, de modo que cuando esas personas busquen, te conozcan.",
+  "pasos_accionables": [
+    "Cuenta con que va a pasar, porque el libro dice que es practicamente un topico: reclutas a un lider que te impresiona, te imaginas atacando problemas juntos, le das la oferta, y llega la llamada temida diciendo que ha decidido hacer otra cosa.",
+    "Cuenta tambien con el final feliz que el libro cuenta: meses o anios despues llega un correo inesperado de esa misma persona diciendo que la situacion ha cambiado, que ya esta lista para algo nuevo, y preguntando si hay oportunidades en tu equipo.",
+    "Trata el reclutamiento del mejor talento por lo que el libro dice que es: una cuestion de las relaciones que construyes. Los buenos lideres curtidos no andan escasos de opciones porque todo el mundo quiere contratarlos, y cuando buscan su siguiente puesto tienden a elegir oportunidades que ya saben que son buenas, donde trabaja un buen amigo o donde ya conocen a alguno de los lideres. Si pudieras conseguir trabajo en cualquier sitio, por que te unirias a un equipo donde no conoces a nadie?",
+    "Presta atencion a las estrellas emergentes de tu campo y llega a conocerlas a traves de congresos, encuentros y otros eventos.",
+    "Construye tu red de forma continua.",
+    "Desarrolla tambien la reputacion de tu equipo, y el libro dice por que vias: participando en la comunidad, aportando aprendizajes nuevos a tu especialidad, contando vuestra historia en la prensa, o simplemente siendo conocidos por hacer las cosas con clase.",
+    "A quien te diga que no, dile que esperas que vuestros caminos se crucen otra vez. Los trabajos pueden ser cortos, pero las carreras son largas: puede que no hubiera la oportunidad adecuada en el momento adecuado, o que esa persona no estuviera lista todavia para algo nuevo, y un dia eso puede cambiar."
+  ],
+  "resumen_teorico": "Es la tercera leccion de contratar a escala y la unica del capitulo cuyo horizonte es de anios en vez de de semanas. Lo que la hace procedimentable es que el libro nombra los medios del cultivo uno a uno, congresos, encuentros, comunidad, aportaciones a la especialidad, prensa y reputacion, y ademas escribe el acto concreto del cierre, que es que decir a quien rechaza la oferta. La doctrina del paso 3 no es un animo sino una explicacion de mercado: quien tiene muchas opciones elige por conocimiento previo, y eso es lo que convierte la relacion en una inversion y no en cortesia. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se retoma el contacto, ni como se lleva ese registro, ni cuantas veces se vuelve a preguntar.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "preguntar_contratar_unica_prioridad",
+  "titulo": "Preguntarte que harias distinto si contratar bien fuera lo unico que importa",
+  "denominaciones": {
+    "nombre_largo": "La pregunta que le hizo su jefe cuando ella ya trabajaba en contratar todos los dias, y lo que salio de contestarla",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "if I told you that hiring well was the only thing that mattered, would you do anything differently?"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando el equipo crece deprisa, la contratacion no lleva el ritmo, y tu ya estas trabajando en ello todos los dias sin que el hueco se cierre.",
+  "entregable_esperado": "Una lista de cosas que no estabas haciendo, sacadas de mirar la contratacion como si fuera lo unico en lo que tuvieras que sobresalir.",
+  "pasos_accionables": [
+    "Reconoce primero la respuesta que te estas dando, porque es la que el libro pone en boca de la autora: que estas trabajando en ello, que no pasa un dia sin que hables con el equipo de reclutamiento, mandes correos en frio o hagas entrevistas, y que contratar bien lleva tiempo.",
+    "Hazte entonces la pregunta que le hizo su jefe: si te dijera que contratar bien es lo unico que importa, harias algo distinto?",
+    "Mirate el calendario de verdad con esa pregunta delante. Ella descubrio que trabajaba en contratar todos los dias, pero que la mayoria de su tiempo iba a otras cosas, revisar hojas de ruta, criticar disenos, reunirse con sus reportes.",
+    "Apunta las ideas que aparecen cuando miras la contratacion como lo unico en lo que necesitas sobresalir. A ella le salieron de golpe: pedir mas referencias a su red, invitar a mas candidatos a tomar un cafe, y afinar su discurso de venta del puesto con colegas de confianza.",
+    "Confia en el proceso como confias al atacar un problema de diseno: al empezar no sabes cual es la respuesta ni cuanto va a tardar, pero si pones el tiempo y la energia, si generas diez opciones de diseno o si hablas con diez candidatos, al final encuentras la mejor solucion.",
+    "Cuenta con lo que el libro dice del momento en que el equipo crece deprisa: ahi contratar pasa a ser facilmente una de las una o dos habilidades mas importantes, y si necesitas construir un equipo grande y no tienes un banquillo fuerte de directivos, el problema se vuelve rapidamente intratable."
+  ],
+  "resumen_teorico": "Es la pieza que abre el bloque de contratar a escala, y su procedimiento cabe en una pregunta, lo cual la pone en el filo de la vara de que es un nodo. Entra porque la pregunta trae consigo el acto que la hace ejecutable, mirar el calendario propio contra ella, y porque el libro escribe tanto la respuesta previa como las ideas que salieron despues, es decir, el antes y el despues del mismo acto. El caso es de la autora y de su jefe y va dentro (manual seccion 3.5): lo que se lleva el lector es la pregunta y el ejercicio, no los nombres. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuanto tiempo hay que mover al reclutar, ni que se deja de hacer a cambio.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

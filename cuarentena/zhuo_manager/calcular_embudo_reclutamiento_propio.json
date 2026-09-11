@@ -1,0 +1,36 @@
+{
+  "id": "calcular_embudo_reclutamiento_propio",
+  "titulo": "Calcular tu propio embudo de reclutamiento para dejar de sufrir cada rechazo",
+  "denominaciones": {
+    "nombre_largo": "El embudo como cuenta que se mantiene estable con docenas de candidatos, y la ecuacion de cuantos correos llevan a una contratacion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "meeting frogs is part of the deal, but believe in the process"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando la incertidumbre del reclutamiento te esta desgastando y cada correo sin respuesta, cada mala entrevista o cada oferta rechazada te parece tiempo perdido.",
+  "entregable_esperado": "Una ecuacion propia del tipo una media de X correos iniciales lleva a una contratacion, y la confianza de que el tiempo dedicado a reclutar paga.",
+  "pasos_accionables": [
+    "Nombra los sitios donde la incertidumbre duele, porque el libro los nombra: escribes a un candidato y no hay garantia de respuesta; respondes y montais una llamada, y hay buenas posibilidades de que despues uno de los dos decida que el puesto no encaja; si el candidato viene a entrevistarse, puede no hacerlo bien en vuestras preguntas; y si llegas al final con una oferta reluciente lista para firmar, el candidato a veces la rechaza.",
+    "Aleja el foco un poco mas, que es lo que cambia la lectura: visto asi, el avance del reclutamiento se entiende simplemente como un embudo de numeros.",
+    "Cuenta con que cuando hablas de docenas de candidatos ese embudo se mantiene relativamente constante.",
+    "Escribe tu propia cuenta por etapas. El libro pone una de ejemplo, avisando de que se inventa los numeros: de veinte correos que mandas, puedes recibir interes de diez; de diez reuniones iniciales, cuatro pasan a etapa de entrevista; de cuatro entrevistas, una acaba en oferta; y de una oferta, el candidato declina la mitad de las veces.",
+    "Cuenta con que los numeros concretos van a ser distintos segun el equipo, el puesto y la organizacion, y con que aun asi, pongas lo que pongas, se puede llegar a una ecuacion con esta forma: una media de X correos iniciales lleva a una contratacion.",
+    "Usa esa ecuacion para lo que sirve: para estar seguro de que cuanto mas tiempo y energia dedicas a reclutar, mas paga, aunque unos cuantos casos concretos aqui y alla no salgan."
+  ],
+  "resumen_teorico": "Es la ultima pieza del bloque de apostar con cabeza y la unica cuyo entregable no es una decision sobre un candidato sino una cuenta sobre el propio proceso. Lo que la hace procedimentable, y no una postura de animo, es que el libro escribe las etapas del embudo una a una y las liga a una forma de ecuacion; el propio libro avisa de que sus numeros son inventados, y ese aviso va transcrito en el paso 4 para que nadie tome el veinte, el diez y el cuatro por un dato medido. Va separada de la ejecucion diligente a escala porque su entregable es distinto: aqui se calcula la ecuacion de una contratacion, alli se reparte el trabajo que esa ecuacion implica entre directivos y semanas. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se miden las etapas propias ni cada cuanto se recalcula la ecuacion.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

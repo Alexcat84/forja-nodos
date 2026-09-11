@@ -1,0 +1,35 @@
+{
+  "id": "involucrar_varios_entrevistadores",
+  "titulo": "Involucrar a varios entrevistadores y hacer que cada uno escriba antes de hablar",
+  "denominaciones": {
+    "nombre_largo": "El reparto de preguntas entre entrevistadores y el registro independiente del veredicto antes de oir a los demas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "get multiple interviewers involved, debrief"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "En cualquier proceso de entrevista, y muy en particular al preparar la puesta en comun posterior.",
+  "entregable_esperado": "Una perspectiva redonda del candidato, con el razonamiento y el veredicto de cada entrevistador escritos antes de que nadie oiga al resto.",
+  "pasos_accionables": [
+    "Haz que el candidato hable con varias personas que sepan lo que el puesto necesita, que es la mejor practica que el libro nombra para las entrevistas.",
+    "Reparte las preguntas para que cada entrevistador pregunte cosas distintas, de manera que el grupo salga con una perspectiva redonda. El libro pone el ejemplo de contratar a un responsable de finanzas: un entrevistador puede evaluar habilidades de gestion y de colaboracion, otro hacer preguntas detalladas de finanzas, y otro explorar la experiencia de trabajo pasada del candidato.",
+    "Cuenta con lo que eso compra, que el libro nombra: reduce el sesgo, y caza banderas rojas sutiles que cualquiera por su cuenta podria haber pasado por alto.",
+    "En la puesta en comun, haz que cada persona registre de forma independiente su razonamiento y su decision final de contratar o no contratar antes de oir lo que piensan los demas entrevistadores.",
+    "Hazlo por la razon que el libro da: para asegurar que la discusion no lleve al pensamiento de grupo."
+  ],
+  "resumen_teorico": "Es la tercera tactica de apostar con cabeza y la unica del capitulo que cambia el PROCEDIMIENTO del grupo en vez del criterio de una persona. Su pieza dura es el paso 4: el registro independiente antes de oir al resto, con su razon nombrada por el libro, el pensamiento de grupo. El paso 2 trae el ejemplo del responsable de finanzas entero porque es el reparto concreto de areas entre entrevistadores, que es lo que hace ejecutable la idea de que cada uno pregunte cosas distintas. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantos entrevistadores son varios, ni en que soporte se registra, ni quien resuelve cuando los registros independientes se contradicen.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

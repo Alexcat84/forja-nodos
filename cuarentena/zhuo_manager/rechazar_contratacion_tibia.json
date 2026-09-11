@@ -1,0 +1,36 @@
+{
+  "id": "rechazar_contratacion_tibia",
+  "titulo": "Rechazar la contratacion tibia y apostar por quien tiene un defensor apasionado",
+  "denominaciones": {
+    "nombre_largo": "Como suena una contratacion tibia en la puesta en comun, por que se da, y por que la unanimidad sin entusiasmo es peor apuesta que la resena mixta",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "look for passionate advocates rather than consensus, weak hire"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "En la puesta en comun posterior a las entrevistas, cuando todos han dicho que si y nadie parece entusiasmado.",
+  "entregable_esperado": "Las contrataciones tibias rechazadas, y las apuestas puestas en quien tiene detras a alguien que pelea por ella.",
+  "pasos_accionables": [
+    "Aprende a reconocer la contratacion tibia: es cuando todos los entrevistadores aterrizan de forma independiente en el lado de contratar, lo cual sobre el papel suena estupendo porque es una decision unanime, pero nadie esta particularmente entusiasmado.",
+    "Reconocela por como suena en la sala, que el libro cita: no estoy seguro de que encajara en mi equipo, pero le veo siendo valioso en el equipo de otro. O bien: no veo ninguna razon por la que no deberiamos contratarla.",
+    "Reconoce tambien cuando se da: cuando el candidato no tiene ningun problema evidente, parece bastante agradable, se ajusta a la linea estandar en sus respuestas y tiene experiencia relevante, y al mismo tiempo no deslumbra en ninguna dimension concreta, y ninguno de los entrevistadores se siente lo bastante fuerte como para pelear por la contratacion si la decision se fuera hacia el no.",
+    "Rechaza cualquier contratacion tibia, porque toda contratacion es ya de por si una apuesta: no es probable que fracasen, pero tampoco es probable que anadan mucho.",
+    "Si vas a apostar, apuesta por alguien que tenga detras a un defensor apasionado.",
+    "Trata la resena mixta con defensores firmes como lo que el libro dice que suele ser: si un candidato recibe opiniones mixtas pero todos los entrevistadores que dijeron contratar son inflexibles en querer trabajar con ella, eso suele ser senal de que trae a la mesa algo muy valorado."
+  ],
+  "resumen_teorico": "Es la cuarta tactica de apostar con cabeza y la unica que invierte una intuicion corriente: la unanimidad se lee normalmente como buena senal y aqui se lee como aviso. La doctrina que la sostiene esta escrita en el paso 4 y es aritmetica, no de gusto: si contratar ya es una apuesta, una apuesta que no puede ganar mucho no compensa el riesgo. Las frases del paso 2 van literales porque son la senal observable, y sin ellas el nodo pediria reconocer un estado de animo. Lo que el libro NO dice, y por eso no esta escrito aqui, es quien declara que una contratacion es tibia cuando el grupo no se pone de acuerdo, ni que se le dice al candidato rechazado asi.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

@@ -1,0 +1,50 @@
+{
+  "id": "preparar_preguntas_entrevista_antemano",
+  "titulo": "Preparar tus preguntas de entrevista de antemano y hacer las mismas a todos",
+  "denominaciones": {
+    "nombre_largo": "La lista de preguntas preparada, el caso del candidato nervioso cuya sustancia gano, y las preguntas de proposito general que la autora prefiere",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "prepare your interview questions ahead of time"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Antes de cada entrevista, y con mas motivo cuando varios candidatos se entrevistan para el mismo puesto.",
+  "entregable_esperado": "Una lista de preguntas preparada por ti, hecha igual a todos los candidatos del mismo puesto, y una decision basada en la sustancia de las respuestas.",
+  "pasos_accionables": [
+    "Presentate con una idea clara de que quieres aprender sobre la persona, que es cuando ocurren las mejores entrevistas.",
+    "Familiarizate con su trayectoria antes de entrar.",
+    "Ten una lista de preguntas preparada.",
+    "Si varios candidatos se entrevistan para el mismo puesto, preguntale a cada candidato las mismas cosas.",
+    "Hazlo por la razon que el libro da: todos tenemos sesgos, y si no lo haces te arriesgas a basar tu decision de contratacion en tu impresion de la persona y en como fluyo la conversacion, en vez de en la sustancia de sus respuestas.",
+    "Cuenta con el caso que el libro pone para eso: un candidato llego nervioso y timido, apenas mantenia el contacto visual, tomaba aire entrecortado entre frases y repetia el mismo punto tres veces en una respuesta; pero las preguntas preparadas sobre sus habilidades y su experiencia le dieron ocasion de contar como fijo metas en un proyecto, cual fue el reto mas dificil de su empleo anterior y como lo abordo, y cuales eran honestamente sus fuerzas y sus debilidades. Las clavo, la sustancia de sus respuestas era mas detallada y meditada que la de otros candidatos, le contrataron, trabajo duro para mejorar su comunicacion y se convirtio rapido en uno de los que mas aportaban.",
+    "Decide tu que preguntas hacer, porque solo tu sabes que estas buscando, y reserva preguntas especificas para los puestos muy especializados, que las merecen.",
+    "Si quieres un punto de partida, usa las preguntas de proposito general que la autora prefiere, cada una con lo que le dice a ella. Que clase de retos te resultan interesantes y por que? Puedes describirme un proyecto favorito? Esto le dice que apasiona al candidato.",
+    "Que consideras que son tus mayores fuerzas? En que areas de crecimiento estarian de acuerdo tus companieros? Esta pregunta va a la vez a la conciencia que tiene de si mismo y a cuales podrian ser sus fuerzas y sus debilidades reales.",
+    "Imaginate dentro de tres anios. Que esperas que sea distinto en ti entonces comparado con ahora? Esto le deja entender las ambiciones del candidato y tambien cuanto se orienta a metas y cuanto reflexiona sobre si mismo.",
+    "Cual fue el conflicto mas duro que has tenido en el ultimo anio? Como termino, y que aprendiste de la experiencia? Esto le da una idea de como trabaja el candidato con otras personas y de como aborda el conflicto.",
+    "Que es algo que te haya inspirado en tu trabajo ultimamente? Esto arroja luz sobre lo que el candidato considera interesante o valioso."
+  ],
+  "resumen_teorico": "Es la quinta tactica de apostar con cabeza y la que mas directamente ataca el segundo de los motivos por los que la entrevista no predice, el sesgo del entrevistador. Su pieza dura es el paso 4, hacer las mismas preguntas a todos los candidatos del mismo puesto, que es lo unico del capitulo que hace comparables dos entrevistas. Las preguntas del final se transcriben CON su glosa, porque el libro no las da sueltas sino cada una con lo que le revela, y sin esa glosa serian una lista de preguntas cualquiera. El caso del candidato nervioso va dentro y no a nodo propio (manual seccion 3.5) y es el que prueba la doctrina: la forma de la conversacion decia una cosa y la sustancia de las respuestas decia otra. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantas preguntas se preparan, ni como se puntuan, ni cuanto dura la entrevista.",
+  "atribuciones": [
+    {
+      "cifra": "cuando las orquestas sinfonicas estadounidenses implantaron audiciones a ciegas, es decir, los que evaluaban escuchaban tocar al candidato desde detras de una cortina, mejoro en un 50 por ciento la probabilidad de que una mujer pasara de las rondas preliminares",
+      "autor": "un estudio de Harvard, citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto: el libro cita el estudio sin fecha"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

@@ -1,0 +1,58 @@
+{
+  "id": "construir_equipo_perspectivas_diversas",
+  "titulo": "Construir el equipo con perspectivas diversas y buscar activamente lo distinto",
+  "denominaciones": {
+    "nombre_largo": "El caso de los directivos de fuera que al principio chocaban, y que significa priorizar la diversidad en actos y no en carteles",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "build a team with diverse perspectives"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Al abrir cualquier puesto, y sobre todo cuando te sorprendas pensando que los de fuera traen procesos innecesarios.",
+  "entregable_esperado": "Un equipo con diversidad en todos los aspectos, construido buscando activamente candidatos que ofrezcan algo distinto y no solo promocionando desde dentro.",
+  "pasos_accionables": [
+    "Cuenta con que vas a chocar al principio, que es lo que le paso a la autora. Cuando su jefa empezo a contratar liderazgo de fuera, ella veia presentacion tras presentacion de candidatos de empresas de renombre explicando procesos de diseno elaborados, personas de usuario intrincadas, investigaciones de meses, jornadas de generacion de ideas con cientos de notas adhesivas, y no entendia por que no meterse en una sala con unos ingenieros y construir y disenar un producto en unas semanas. Con los nuevos directivos discrepo sobre estrategia de contratacion, sobre como llevar una critica y sobre como es un disenador sobresaliente.",
+    "Espera a que el tiempo revele la verdad, que es lo que ella dice que paso: segun crecieron, tener entre ellos directivos que sabian que hacer cuando se pasa de cincuenta a doscientas cincuenta personas resulto ser un activo enorme, y ella empezo a apreciar que las fuerzas de ellos eran sus debilidades, y que habia que evolucionar la forma de trabajar, contratando tipos nuevos de talento, metiendo procesos mas estructurados y adoptando herramientas como las personas de usuario y las jornadas intensivas.",
+    "Trata la diversidad como una creencia y no como un cartel ni un eslogan: la creencia de que la diversidad en todos los aspectos, del genero a la raza a la historia laboral a las experiencias de vida, lleva a mejores ideas y mejores resultados.",
+    "Si no quieres mirar los datos, aplica el razonamiento logico que el libro propone: es mas probable que saques ideas innovadoras de un punado de personas que se parecen a ti, piensan como tu y se comportan como tu, o de personas que vienen con perspectivas distintas?",
+    "Busca activamente candidatos que ofrezcan algo diferente, que es lo primero que significa priorizar la diversidad.",
+    "No promociones solo desde dentro: contrata tambien desde fuera.",
+    "Reconoce que cada persona, tu y yo incluidos, viene con su propio saco de creencias, y que ese saco deberia ser desafiado por otros.",
+    "Cuenta con lo que eso compra, que el libro nombra: el poder de la diversidad ayuda al equipo a evitar sesgos, a tomar mejores decisiones y a pensar de forma mas creativa."
+  ],
+  "resumen_teorico": "Es la septima tactica de apostar con cabeza y la unica del capitulo que se sostiene sobre estudios externos ademas de sobre la experiencia de la autora. Su primer paso no es un acto sino un aviso sobre el propio ejecutor, y va como paso porque el libro lo pone en primera persona y como parte del camino: la resistencia a lo distinto aparece antes que el beneficio. Los pasos 5, 6 y 7 son las tres cosas concretas que el libro dice que significa priorizar la diversidad, nombradas una a una, y son lo que separa este nodo de una postura. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se mide la diversidad de un equipo, ni que cuota se persigue, ni como se resuelve el choque mientras dura.",
+  "atribuciones": [
+    {
+      "cifra": "un informe de 2014 sobre cientos de empresas cotizadas encontro que aquellas con mayor diversidad etnica y racial en sus filas directivas tenian un 35 por ciento mas de probabilidad de obtener retornos financieros por encima de la media",
+      "autor": "informe citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "2014"
+    },
+    {
+      "cifra": "un estudio de 2.400 empresas encontro que las organizaciones con al menos una mujer en el consejo tenian mejores resultados que las organizaciones sin ninguna mujer",
+      "autor": "estudio citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto"
+    },
+    {
+      "cifra": "un experimento con fraternidades y hermandades universitarias encontro que los equipos que incluian a un forastero resolvian los problemas con mas precision que los equipos formados solo por gente de dentro del grupo",
+      "autor": "experimento citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

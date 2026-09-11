@@ -1,0 +1,36 @@
+{
+  "id": "contratar_personas_capaces_mas",
+  "titulo": "Contratar personas capaces de mas de lo que el puesto pide hoy",
+  "denominaciones": {
+    "nombre_largo": "El limite que si hay que respetar, el caso del director contratado para un equipo pequenio, y por que nunca faltan problemas grandes",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "hire people who are capable of more"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando te oigas decir que solo necesitas a alguien que se ocupe de esto de ahora y no a alguien que ademas pueda hacer aquello.",
+  "entregable_esperado": "Una contratacion que hoy cubre el puesto y manana ataca problemas mas grandes, con su gente empujada hasta el limite de sus capacidades.",
+  "pasos_accionables": [
+    "Desconfia cuando te oigas decir, o le oigas decir a otro directivo, que solo necesitas a alguien que se ocupe de esto ahora mismo y que no necesitas a alguien que ademas pueda hacer aquello otro.",
+    "Respeta el limite que el libro si pone: ciertamente no deberias mirar candidatos a primer ejecutivo cuando el puesto, y el presupuesto, piden un comercial de primera linea.",
+    "Al mismo tiempo, si estas en trabajo de conocimiento, contrata a alguien que parezca ofrecer mas de lo que el puesto necesita ahora mismo, porque eso significa que puede ayudarte a atacar problemas mas grandes en el futuro.",
+    "Cuenta con la experiencia que la autora ofrece en contra del miedo: en todos sus anios construyendo equipos, nunca ha pensado que no hubiera problemas grandes suficientes para toda la gente con talento que tenian.",
+    "Cuenta con el caso contrario, que es el que ella si ha visto: contrato a un candidato de nivel director cuando estaban arrancando una iniciativa nueva, el tamanio inicial del equipo era modesto y esa persona tenia experiencia dirigiendo organizaciones mucho mayores, asi que sobre el papel el puesto parecia demasiado pequenio para lo que era capaz de hacer. Unos meses despues estaba haciendolo muy bien en el area que le habian pedido liderar, ademas identificaba y ejecutaba por su cuenta otras iniciativas que les ayudaban a crecer, y cuando aparecio la oportunidad de liderar otro equipo fue la primera persona en la que ella penso. En un anio llevaba varios proyectos clave.",
+    "Contrata a las mejores personas y dales poder para hacer mas y mas hasta que estires los limites de sus capacidades, que es una de las formas mas inteligentes de multiplicar el impacto de tu equipo."
+  ],
+  "resumen_teorico": "Es la octava tactica de apostar con cabeza y la que trae su propio limite escrito, lo cual es raro en este capitulo: el libro pone el caso en que NO se aplica, el primer ejecutivo para un puesto de comercial, y ademas lo ata al presupuesto. Ese limite es lo que impide que el nodo se lea como contrata siempre por encima. La condicion del trabajo de conocimiento tambien la pone el libro y va transcrita, porque fuera de ella el consejo no se sostiene. El caso del director va dentro y no a nodo propio (manual seccion 3.5). Lo que el libro NO dice, y por eso no esta escrito aqui, es cuanto por encima es demasiado, ni que se le promete a esa persona al contratarla, ni que pasa si los problemas grandes no llegan.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}
