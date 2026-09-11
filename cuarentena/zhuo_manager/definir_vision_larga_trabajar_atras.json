@@ -1,0 +1,47 @@
+{
+  "id": "definir_vision_larga_trabajar_atras",
+  "titulo": "Definir la vision larga y trabajar hacia atras desde ella",
+  "denominaciones": {
+    "nombre_largo": "La estrella polar que guia las decisiones, el caso de la peticion mas repetida que se rechazo, y los enchufes de la cocina antes del plano",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "define a long-term vision and work backward"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Antes de decidir el detalle de cualquier trabajo, y sobre todo cuando la peticion mas repetida de los usuarios parece la respuesta obvia.",
+  "entregable_esperado": "Las prioridades del equipo deducidas del cuadro grande, con las peticiones obvias medidas contra la vision antes de aceptarlas.",
+  "pasos_accionables": [
+    "Ten a mano el aviso de Yogi Berra que el libro cita: si no sabes adonde vas, puedes acabar en otro sitio.",
+    "Ten una declaracion de mision de la organizacion y usala como estrella polar que guia la toma de decisiones de cada equipo, en miles de formas grandes y pequenias.",
+    "Mide contra ella las peticiones, incluso las mas repetidas. El libro cuenta el caso: al ampliar el boton de me gusta, la sugerencia mas comun de la gente era construir un boton de no me gusta, que era la forma logica de expresar que algo no era digno de gustar.",
+    "Rechaza la peticion si no pasa la vara de la vision, aunque hayas llegado a disenarla. Ellos la consideraron e incluso hicieron varios disenos, y decidieron que no estaba bien: acercar a la gente significaba disenar experiencias que crearan empatia, y el boton de no me gusta no llegaba a esa vara porque se malinterpreta con demasiada facilidad.",
+    "Prueba la ambiguedad con un ejemplo concreto, que es como ellos lo comprobaron: si alguien comparte que fue a ver una pelicula y no estuvo a la altura, y tu le pones no me gusta, como se lee tu accion? Que tambien te disgusto la pelicula? Que te disgusto que fuera a verla? Que te molesto que hablara mal de algo que a ti te parecia estupendo?",
+    "Haz mas investigacion en vez de quedarte con la peticion literal. Cuando preguntaron a la gente que queria decir cuando pedia un boton de no me gusta, descubrieron que normalmente queria expresar una de un punado de emociones, tristeza, enfado, simpatia o sorpresa.",
+    "Construye desde ahi la solucion que si pasa la vara. Ellos tomaron esas y las otras dos sensaciones mas populares, amor y risa, y desarrollaron un sistema de reacciones ligeras que se anaden al me gusta, lo cual dejaba a la gente expresar un abanico mas ancho de emociones sin salirse de su mision.",
+    "Aplica la regla del orden que el libro cita de su jefe: no es buena idea disenar donde van los enchufes de tu cocina cuando todavia no has cerrado el plano de la casa.",
+    "Empieza entonces por entender el cuadro grande, con las preguntas que el libro pone: que problemas esperas resolver con lo que estas haciendo? Como imaginas que la gente va a sacar valor de tu trabajo? Y a partir de eso, cuales son las prioridades mas importantes del equipo ahora?"
+  ],
+  "resumen_teorico": "Es la primera de las tacticas de equilibrio y la unica del capitulo que ensena a decir que no a la peticion mas popular. Lo que la hace procedimentable es el caso entero, que trae los actos uno a uno: medir contra la mision, probar la ambiguedad con un ejemplo concreto, volver a investigar que queria decir la gente, y construir desde esa respuesta. La regla de los enchufes va dentro porque es la forma en que el libro enuncia el orden, y las tres preguntas del final son el inventario de arranque. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se decide la vara cuando la mision es ambigua, ni que se le contesta a quien pidio lo que rechazaste.",
+  "atribuciones": [
+    {
+      "cifra": "si no sabes adonde vas, puedes acabar en otro sitio",
+      "autor": "Yogi Berra, citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

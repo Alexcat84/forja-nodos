@@ -1,0 +1,46 @@
+{
+  "id": "ligar_tareas_proposito_organizacion",
+  "titulo": "Ligar cada tarea al proposito mayor y no confundirlo con su indicador",
+  "denominaciones": {
+    "nombre_largo": "Por que las decisiones del dia a dia se vuelven faciles cuando todos entienden el proposito, y el aviso del indicador que se toma por el fin",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "talk about how everything relates to the vision"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "De forma continua, y con mas urgencia cuando aparecen conflictos sobre decisiones tacticas o cuando el equipo persigue una meta numerica.",
+  "entregable_esperado": "Un equipo que entiende el proposito mayor y puede mirar cada decision a traves de la lente de cual opcion nos acerca al futuro que queremos.",
+  "pasos_accionables": [
+    "Si formas parte de una organizacion mayor, cuenta con que hay una vision paraguas, sea un pollo en cada olla, ser la empresa mas centrada en el cliente de la tierra o ser la empresa de automocion mas exitosa y respetada del pais.",
+    "Ten claro el papel concreto que tu equipo juega para conseguirla, sea idear un nuevo plan fiscal, crear el mejor servicio al cliente del sector o apuntar a casi cero errores de produccion.",
+    "Consigue que todo el mundo entienda y compre lo que en ultima instancia se intenta hacer, porque entonces las decisiones tacticas del dia a dia se vuelven mas faciles: se pueden mirar a traves de la lente de que opcion nos acerca mas al futuro que queremos.",
+    "Cuenta con lo contrario, que es cuando aparecen los conflictos: cuando la gente no entiende que es lo que importa en ultima instancia y por que.",
+    "Desconfia de confundir tu proposito con los indicadores que usas para medir tu avance. El libro pone el caso: si te importa dar el mejor servicio al cliente del sector, un dato que podrias seguir es cuanto se tarda en resolver una queja, y podrias fijar como meta que ninguna queja tarde mas de tres dias en cerrarse.",
+    "Reconoce que esa meta esta bien, y no pierdas de vista que es una aproximacion de lo que de verdad te importa. Si el equipo se centra demasiado en ella, puedes acabar con representantes tomando decisiones apresuradas que van contra lo que el cliente quiere, y si sube la velocidad de resolucion pero baja la calidad del servicio, no te estas acercando de verdad a tu vision.",
+    "Recuerda a la gente lo que de verdad importa, y describe una y otra vez el mundo que te gustaria ver.",
+    "Intenta conectar cada tarea, cada proyecto, cada decision y cada meta con el proposito de nivel superior de la organizacion, porque si todo el mundo entiende el sueno las acciones del equipo estaran alineadas para hacerlo realidad."
+  ],
+  "resumen_teorico": "Es la tercera tactica de equilibrio y la que mas se acerca a ser postura, y lo que la salva es el aviso del indicador: el libro no se queda en repite la vision, sino que da el fallo concreto que aparece cuando la vision se sustituye por su medida, con su ejemplo numerico y su consecuencia observable, sube la velocidad y baja la calidad. Ese aviso es un objeto de trabajo y no una meta. El caso del fundador que rechazo la oferta de compra NO va dentro como paso: va en atribuciones, porque es una cifra y una cita del autor y no un acto que alguien ejecute. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se repite la vision, ni como se corrige un indicador que ya deformo la conducta.",
+  "atribuciones": [
+    {
+      "cifra": "casi todos los demas querian vender; sin un sentido de proposito mayor, aquello era el sueno de una empresa nueva hecho realidad, y desgarro la compania: despues de una discusion tensa, un asesor me dijo que si no aceptaba vender lo lamentaria el resto de mi vida",
+      "autor": "Mark Zuckerberg, en un discurso de graduacion en la Universidad de Harvard, citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "2017, anio del discurso segun el texto"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

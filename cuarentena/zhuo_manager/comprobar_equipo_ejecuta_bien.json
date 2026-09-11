@@ -1,0 +1,45 @@
+{
+  "id": "comprobar_equipo_ejecuta_bien",
+  "titulo": "Comprobar si tu equipo ejecuta bien con las senales que el libro da",
+  "denominaciones": {
+    "nombre_largo": "Las senales observables de un equipo que ejecuta, del orden de las listas al que y para cuando de cada tarea",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "ways to tell if your team is executing well"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando quieres saber si el problema de tu equipo es de estrategia o de ejecucion, que es la duda que segun el libro hace mas frustrante un error.",
+  "entregable_esperado": "Una lectura de cuales de las senales cumple tu equipo y cuales no.",
+  "pasos_accionables": [
+    "Comprueba si las listas de proyectos o de tareas estan priorizadas de mas a menos importante, y si lo de arriba recibe mas tiempo y mas atencion.",
+    "Comprueba si hay un proceso eficiente de toma de decisiones que todo el mundo entiende y en el que confia.",
+    "Comprueba si el equipo se mueve rapido, sobre todo con las decisiones reversibles.",
+    "Comprueba si despues de tomada una decision todo el mundo se compromete, incluidos los que discrepaban, y se mueve deprisa para hacerla realidad, sin cuestionarla otra vez, sin vetos de bolsillo y sin arrastrar los pies, mientras no aparezca informacion nueva.",
+    "Comprueba si, cuando aparece informacion nueva importante, hay un proceso rapido para examinar si los planes actuales deben cambiar y como.",
+    "Comprueba si cada tarea tiene un quien y un para cuando, y si los responsables fijan compromisos y los cumplen de forma fiable.",
+    "Comprueba si el equipo es resistente y busca aprender constantemente, de manera que cada fracaso le hace mas fuerte porque no comete dos veces el mismo error."
+  ],
+  "resumen_teorico": "Es una lista de comprobacion y no una tactica, y entra como nodo porque cada senal es observable y se puede contestar con un si o un no sobre un equipo concreto. El inventario es entero del libro, nombrado senal a senal, que es la condicion de D.27. El nodo se queda con las senales y no ensancha a que hacer cuando una falla, porque el libro no lo dice ahi. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantas senales hay que cumplir, ni quien hace la comprobacion, ni cada cuanto.",
+  "atribuciones": [
+    {
+      "cifra": "la mayoria de las decisiones deberian tomarse probablemente con alrededor del setenta por ciento de la informacion que desearias tener, y si esperas al noventa por ciento, en la mayoria de los casos probablemente estas siendo lento",
+      "autor": "Jeff Bezos, primer ejecutivo de Amazon, citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

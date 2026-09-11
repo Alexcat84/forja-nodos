@@ -1,0 +1,44 @@
+{
+  "id": "crear_plan_creible_equipo",
+  "titulo": "Crear un plan que tenga posibilidades reales de funcionar",
+  "denominaciones": {
+    "nombre_largo": "Por que planificar vale aunque el plan no valga, que hace buena a una estrategia, y como se ata la del equipo a la de la organizacion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "create a believable game plan, strategy"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando ya tienes una vision concreta y sabes a que se parece el exito, y toca averiguar como llegar.",
+  "entregable_esperado": "Una estrategia con posibilidades realistas de funcionar, centrada en el nudo del problema, y relacionada con la estrategia de nivel superior si formas parte de una organizacion mayor.",
+  "pasos_accionables": [
+    "Da por hecho lo que dijo Eisenhower, que los planes no valen nada pero planificar lo es todo: aunque pasen sorpresas y no todo este bajo control, es a traves del proceso de planificar como entendemos nuestra situacion y trazamos nuestro mejor tiro al exito.",
+    "Cuenta con lo que eso compra cuando llega la emergencia: una estrategia solida te da la base para adaptar rapido tus planes, en vez de volver al caos de la casilla de salida.",
+    "Comprueba lo primero que el libro exige de una estrategia: que tenga una posibilidad realista de funcionar. Si tu estrategia para poner un puesto de limonada en cada manzana es conseguir que todas las grandes celebridades del mundo lo respalden, te van a mirar con las cejas levantadas, porque o cuesta tanto dinero que es mala inversion, o exige un producto tan asombroso que las estrellas quieran asociarse a el sin cobrar, que tambien es improbable.",
+    "Comprueba que tu estrategia entiende el nudo del problema que intenta resolver.",
+    "Comprueba que concentra las fuerzas, los recursos y la energia unicos de tu equipo en lo que mas importa para conseguir sus metas.",
+    "Si lideras una parte pequenia de una organizacion mayor, comprueba que los planes de tu equipo se relacionan directamente con la estrategia de nivel superior de la organizacion."
+  ],
+  "resumen_teorico": "Es el puente entre la vision y la ejecucion, y su procedimiento es de comprobacion mas que de creacion: el libro no dice como se inventa una estrategia, dice que condiciones tiene que cumplir la que inventes. Esas condiciones son un inventario propio y por eso pasa D.27. El contraejemplo del puesto de limonada va dentro y completo porque es lo que hace ejecutable la primera comprobacion: sin el, posibilidad realista seria un adjetivo de adecuacion. Lo que el libro NO dice, y por eso no esta escrito aqui, es en que formato se escribe la estrategia, ni quien la aprueba, ni cada cuanto se revisa.",
+  "atribuciones": [
+    {
+      "cifra": "los planes no valen nada, pero planificar lo es todo",
+      "autor": "Dwight D. Eisenhower, citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto: el libro lo presenta como uno de los grandes generales de la historia y organizador del desembarco de Normandia en la Segunda Guerra Mundial"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

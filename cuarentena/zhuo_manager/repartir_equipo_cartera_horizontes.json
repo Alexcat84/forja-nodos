@@ -1,0 +1,36 @@
+{
+  "id": "repartir_equipo_cartera_horizontes",
+  "titulo": "Repartir el equipo como una cartera, por horizonte de tiempo",
+  "denominaciones": {
+    "nombre_largo": "La estrategia de inversion aplicada a los proyectos, con los tercios de semanas, meses y anios",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "take a portfolio approach"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando te preguntas como sacar tiempo para el trabajo de largo plazo si hay tantisimo que hacer ahora mismo para que los trenes sigan saliendo.",
+  "entregable_esperado": "El equipo repartido por horizonte de tiempo, mejorando lo esencial y mirando al horizonte a la vez.",
+  "pasos_accionables": [
+    "Reconoce el supuesto escondido en esa pregunta, que es lo primero que el libro desmonta: se da por hecho que levantar la cabeza para planificar los meses o anios que vienen sale a costa de ejecutar bien lo de ahora.",
+    "Trata tus proyectos como trata sus activos un asesor financiero: igual que ninguno recomendaria poner todo tu dinero en un solo tipo de activo, tampoco deberias abordar proyectos con un solo horizonte de tiempo.",
+    "Pon a un tercio de tu equipo en proyectos que se pueden completar en el orden de semanas.",
+    "Pon a otro tercio en proyectos de plazo medio, que pueden llevar meses.",
+    "Pon al ultimo tercio en ideas innovadoras y tempranas cuyo impacto no se sabra hasta dentro de anios.",
+    "Cuenta con lo que ese reparto equilibra: hacer mejoras constantes a las funciones esenciales mientras se mira al horizonte."
+  ],
+  "resumen_teorico": "Es la segunda tactica de equilibrio y la unica pieza del capitulo que da una proporcion con numero. Lo que la hace procedimentable es precisamente eso: sin los tercios, la idea de la cartera seria una analogia. El paso 1 esta porque el libro empieza desmontando el supuesto de la pregunta, y sin ese paso el reparto parece una respuesta a una pregunta distinta de la que se hizo. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se eligen las personas de cada tercio, ni cada cuanto rotan, ni que se hace si el tercio de largo plazo no produce nada.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

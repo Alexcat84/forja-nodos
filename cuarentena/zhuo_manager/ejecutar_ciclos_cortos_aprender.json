@@ -1,0 +1,40 @@
+{
+  "id": "ejecutar_ciclos_cortos_aprender",
+  "titulo": "Ejecutar en ciclos cortos para aprender haciendo en vez de debatir",
+  "denominaciones": {
+    "nombre_largo": "Por que la ejecucion gana a la estrategia, el caso de los ciclos de varias semanas, y por que esa cadencia funciona",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "perfect execution over perfect strategy, sprint cycles"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando hay varias ideas sobre la mesa y no sabeis cual funciona, y la tentacion es pasar semanas debatiendo cual es la mejor.",
+  "entregable_esperado": "Pruebas simples y concluyentes hechas dentro de un ciclo corto, que dicen que se dobla la apuesta y que se corta de la lista.",
+  "pasos_accionables": [
+    "Entiende la diferencia entre estrategia y ejecucion como la cuenta el libro: si tu estrategia es mala, haces un movimiento en el tablero que te deja abierto al ataque; si tu ejecucion es mala, tu intencion de mover la torre acaba moviendo el alfil a otro sitio, porque estas jugando al ajedrez con los pies en vez de con las manos.",
+    "Cuenta con que los mejores planes no importan si no puedes conseguirlos con precision o con la rapidez suficiente para que marquen una diferencia: aunque una bola de cristal te dijera exactamente que idea disruptiva construir, si tu producto final sale lento y con errores frente a la competencia, o si no llegas al mercado a tiempo, pierdes igual.",
+    "Define tus hojas de ruta en ciclos cortos de varias semanas, que es lo que hacia la colega del libro con su equipo.",
+    "Arranca el ciclo con una sesion de generacion de ideas. En la semana uno ella dirigia una sesion de tres horas: se proponian metas, se garabateaban ideas de proyecto en la pizarra, todos votaban sus conceptos favoritos y el grupo los reducia a un punado para construir.",
+    "No pares el ciclo porque dudes de que todas las ideas vayan a funcionar. La respuesta del libro a esa objecion es el eje del procedimiento: o gastais las siguientes semanas debatiendo que ideas son las mejores, o intentais aprender lo mas rapido posible haciendo.",
+    "Fija como meta del ciclo construir pruebas simples y concluyentes que os ayuden a entender que cosas hay que doblar y que cosas hay que cortar de la lista.",
+    "Si una idea funciona, ampliala en el ciclo siguiente.",
+    "Cuenta con las propiedades por las que esa cadencia importa, que el libro nombra: es lo bastante corta como para que no pierdas mucho si una idea cualquiera falla, y es un proceso repetible que maximiza el aprendizaje a la larga.",
+    "Ejecuta bien, que segun el libro significa elegir una direccion razonable, moverse rapido para aprender que funciona y que no, y hacer ajustes hasta llegar al resultado que buscas.",
+    "Cuenta con que la velocidad importa: un corredor rapido puede tomar unos cuantos desvios equivocados y aun asi ganar a un corredor lento que conoce el camino mas corto."
+  ],
+  "resumen_teorico": "Abre el bloque de ejecucion y es la unica pieza del capitulo que responde a una objecion dentro del propio procedimiento: el paso 5 es literalmente la respuesta que la colega da a la duda de la autora, y es lo que convierte el ciclo corto en una decision razonada y no en una moda. Las dos propiedades del paso 8 son el inventario propio del libro y la razon por la que la cadencia no es arbitraria. El caso de la colega va dentro (manual seccion 3.5) y sin su nombre, que el propio libro sustituye. Lo que el libro NO dice, y por eso no esta escrito aqui, es de cuantas semanas es el ciclo, ni cuantas ideas son un punado, ni quien decide cortar.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

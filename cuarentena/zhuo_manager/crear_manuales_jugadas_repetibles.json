@@ -1,0 +1,41 @@
+{
+  "id": "crear_manuales_jugadas_repetibles",
+  "titulo": "Crear manuales de jugadas para lo que haces una y otra vez",
+  "denominaciones": {
+    "nombre_largo": "Por que ninguna tarea compleja se improvisa, donde se reconoce un manual de jugadas por escribir, y el caso del correo semanal que evoluciono en fases",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "repeatable best practices, playbooks"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando te encuentras haciendo una cosa parecida una y otra vez, y cuando notas que eres tu el cuello de botella de un proceso que antes funcionaba.",
+  "entregable_esperado": "Un manual de instrucciones o una lista de comprobacion que hace la tarea mas suave la proxima vez, y que se puede pasar a otros para que aprendan y ejecuten.",
+  "pasos_accionables": [
+    "Parte de que no existe lo terminado, ni en producto ni en proceso: sacas una version, aprendes, iteras y haces una mejor, y la forma en que avanzamos deberia ser tambien un trabajo en curso.",
+    "Cuenta con por que no se improvisa: la mayor parte del trabajo que hace falta para que algo ocurra hoy es asombrosamente complejo. Piensa en la cantidad de pasos que lleva que un avion despegue, limpiar la cabina del vuelo anterior, repostar, facturar a los pasajeros, cargar el equipaje, hacer las comprobaciones de seguridad. Es casi imposible recordar todos los pasos de cabeza, y ya no digamos improvisarlos en el momento.",
+    "Trata cualquier hazana de complejidad como lo que el libro dice que es: algo que requiere un manual de jugadas que detalle con claridad cuales son todos los pasos correctos dadas las variables actuales.",
+    "Cultiva esos manuales como parte de tu trabajo, y el libro nombra ejemplos: como dirigir una reunion de equipo, como cerrar una contratacion nueva, como completar un proyecto a tiempo y dentro de presupuesto.",
+    "Reconoce donde hay uno por escribir: si te encuentras haciendo una cosa parecida una y otra vez, hay buenas probabilidades de que se pueda codificar en un manual de instrucciones o en una lista de comprobacion que haga la tarea mas suave en el futuro.",
+    "Cuenta con la ventaja extra de hacerlo: despues puedes pasar el manual a otros para que lo aprendan y lo ejecuten.",
+    "Espera que tu propio proceso se rompa segun crece, y arreglalo por fases, como el libro cuenta con su correo semanal de avances. En la primera fase ella lo escribia entera de cabeza, y funciono un anio, hasta que el numero de proyectos se duplico y triplico y ella empezo a olvidarse de lo que hacia cada uno, con gente preguntandole los lunes por que no habia escrito de su proyecto.",
+    "Cuando te conviertas en el cuello de botella, reparte la recogida: la segunda fase fue pedir al equipo que le mandara lo que quisiera destacar, y con eso se le quito de encima la carga de recordarlo todo.",
+    "Cuenta con que el reparto crea su propio problema: las aportaciones llegaban escritas por muchas personas distintas y variaban muchisimo en estilo y en nivel de detalle, asi que ella tenia que hacer de editora, y cuando un aporte llegaba sin detalle suficiente escribia al autor y se pasaban mensajes para mejorarlo. Seguia costandole muchisimo tiempo.",
+    "Cuando te oigas dando la misma indicacion una y otra vez, escribe la tercera fase: ella creo un documento llamado como enviar un aporte para el resumen semanal, donde listo las metas del resumen, que hacia bueno a un aporte, y consejos a tener en cuenta al escribirlo, y lo compartio con su equipo y con la gente nueva al incorporarse.",
+    "Cuenta con que ninguna fase es la ultima: ella dice que la tercera parece funcionar por ahora, pero que espera que, segun cambien las cosas, incluso los procesos pequenios como ese sigan evolucionando."
+  ],
+  "resumen_teorico": "Cierra el capitulo y es la unica pieza cuyo objeto es el propio procedimiento. Lo que la hace procedimentable son dos inventarios propios: los ejemplos de manual que el libro nombra, reunion de equipo, cierre de contratacion, proyecto a tiempo y presupuesto, y la senal de que hay un manual por escribir, que es hacer lo mismo una y otra vez. El caso del correo semanal va dentro y no a nodo propio (manual seccion 3.5), y va entero porque cada fase trae el sintoma que la provoca y el remedio que la sigue, que es lo que convierte la historia en procedimiento: el cuello de botella se reparte, el reparto se normaliza, y la norma se escribe cuando te oyes repitiendo la misma indicacion. Lo que el libro NO dice, y por eso no esta escrito aqui, es en que formato vive el manual, ni quien lo mantiene, ni cada cuanto se revisa.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

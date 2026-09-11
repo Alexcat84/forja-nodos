@@ -1,0 +1,57 @@
+{
+  "id": "partir_meta_grande_hitos",
+  "titulo": "Partir una meta grande en hitos pequenios con su fecha y su responsable",
+  "denominaciones": {
+    "nombre_largo": "La ley del trabajo que se estira hasta llenar el tiempo, el caso del borrador de este libro, y el trabajo hacia atras desde la fecha objetivo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "break down a big goal into smaller pieces, Parkinson law"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tienes un proyecto grande con una fecha lejana, y cada vez que te oigas decir que saltarte un dia no va a cambiar mucho.",
+  "entregable_esperado": "El proyecto grande convertido en una serie de hitos con fechas objetivo realistas y ambiciosas, y el reparto semanal de quien hace que.",
+  "pasos_accionables": [
+    "Cuenta con la ley de Parkinson, que dice que el trabajo se expande hasta llenar el tiempo disponible para completarlo.",
+    "Reconoce como te hace fallar, con el caso que la autora cuenta de este mismo libro: acordo con su editorial que un anio era un plazo sensato para un primer borrador, colgo el telefono sintiendose audaz y pensando que lo tendria en seis meses, y entrego un primer borrador ni siquiera terminado justo al cumplirse el anio, porque durante nueve meses le parecio que sobraba tiempo en el reloj y cada vez que aparecia otra tarea urgente o simplemente no le apetecia escribir se decia que saltarse un dia no cambiaria mucho.",
+    "Haz lo que hizo ella en el segundo borrador: en vez de tratar el libro entero como un unico proyecto enorme con una fecha lejana, partelo y comprometete a una pieza por semana, que en su caso fue revisar un capitulo a la semana.",
+    "Traduce el compromiso a la unidad mas pequenia posible, que es lo que le dio disciplina: para cumplir tenia que editar unas dos paginas por noche, y asi era facil ver que saltarse una sola noche era importante porque habria que recuperarla para seguir en plazo. Ella dice que su eficiencia se triplico en el segundo borrador.",
+    "Trata los proyectos grandes como una serie de proyectos pequenios. El libro pone el ejemplo del arquitecto que construye una casa: el primer hito puede ser hacer un estudio del terreno para tener la informacion mas exacta sobre topografia, condicion del suelo y riesgo de inundacion; el segundo, identificar en que parte del terreno se construye la casa; el tercero, definir que habitaciones hacen falta.",
+    "Preocupate por lo que tienes delante y no todavia por lo que esta a meses o anios vista.",
+    "Trabaja despues con tu equipo para fijar fechas objetivo realistas y ambiciosas para cada hito.",
+    "Ten en cuenta la falacia de la planificacion, que es nuestro sesgo natural a predecir que las cosas van a llevar menos tiempo y menos dinero de los que llevan de verdad.",
+    "Reserva un colchon para lidiar con los problemas inesperados.",
+    "Desde tu fecha objetivo, trabaja hacia atras y averigua quien tiene que hacer que cada semana.",
+    "Pide a la gente que fije y se comprometa publicamente a sus metas semanales, porque eso crea responsabilidad.",
+    "Usa revisiones periodicas para sostener el impulso. El libro conoce un equipo que lo hace con maestria y que a veces celebra dos reuniones por semana para revisar avances y discutir prioridades urgentes.",
+    "Si tu equipo hace malabares con varias tareas distintas, ordenalas por lo que mas importa: cuales son camino critico y cuales son deseables. Ataca siempre primero el camino critico."
+  ],
+  "resumen_teorico": "Es la cuarta y ultima cosa a tener en cuenta al planificar, y la mas completa del capitulo en inventario: el libro da la ley, el caso de su propio fallo, la unidad minima de compromiso, el ejemplo del arquitecto con tres hitos nombrados, el trabajo hacia atras, el compromiso publico, la revision periodica y el orden por camino critico. Por eso todos los pasos son transcripcion. La falacia de la planificacion y el colchon van dentro porque el libro los pone en la misma linea que fijar las fechas, y son la correccion que evita que el troceado herede el problema que venia a resolver. Lo que el libro NO dice, y por eso no esta escrito aqui, es de que tamanio es el colchon, ni cada cuanto son las revisiones periodicas, ni que se hace cuando se falla un hito.",
+  "atribuciones": [
+    {
+      "cifra": "el trabajo se expande hasta llenar el tiempo disponible para su realizacion",
+      "autor": "Cyril Parkinson, historiador y erudito britanico del siglo veinte, citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "siglo veinte, segun el texto"
+    },
+    {
+      "cifra": "el trabajo se contrae hasta encajar en el tiempo que le damos",
+      "autor": "Mark Horstman, citado por Julie Zhuo como su corolario favorito de la ley de Parkinson",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

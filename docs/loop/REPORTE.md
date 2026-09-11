@@ -12789,3 +12789,144 @@ inventario, entonces esta cabeza deberia caer como cayeron las otras dos, y yo
 habria sido incoherente conmigo mismo dentro de la misma vuelta. **Lo marco
 antes de saber si acierto, y dejo la vara que use escrita arriba para que se
 pueda medir contra ella.**
+
+## C.3. LOS CATORCE CANDIDATOS, Y LA SUMA CUADRA OTRA VEZ
+
+| # | id | pasos | la aduana, candidato a candidato |
+|---|---|---:|---|
+| 1 | `fijar_vision_concreta_equipo` | 14 | **BLOQUEARIA**, 1 vecino |
+| 2 | `crear_plan_creible_equipo` | 6 | ENTRARIA |
+| 3 | `ajustar_plan_fuerzas_equipo` | 7 | ENTRARIA |
+| 4 | `priorizar_pocas_cosas_bien` | 9 | ENTRARIA |
+| 5 | `definir_quien_responde_cada_cosa` | 9 | ENTRARIA |
+| 6 | `partir_meta_grande_hitos` | 13 | ENTRARIA |
+| 7 | `ejecutar_ciclos_cortos_aprender` | 10 | ENTRARIA |
+| 8 | `comprobar_equipo_ejecuta_bien` | 7 | ENTRARIA |
+| 9 | `equilibrar_corto_largo_plazo` | 12 | ENTRARIA |
+| 10 | `definir_vision_larga_trabajar_atras` | 9 | ENTRARIA |
+| 11 | `repartir_equipo_cartera_horizontes` | 6 | ENTRARIA |
+| 12 | `ligar_tareas_proposito_organizacion` | 8 | ENTRARIA |
+| 13 | `hacer_repaso_posterior_proyecto` | 10 | ENTRARIA |
+| 14 | `crear_manuales_jugadas_repetibles` | 11 | ENTRARIA |
+| | **14 candidatos** | **131** | **13 entrarian, 1 bloquearia, 0 caerian** |
+
+**14 DE 14 POR LA ADUANA EN SU PROPIO ACTO, NINGUNO CAYO.**
+
+## C.4. LA RELECTURA DE FIDELIDAD DE `cap_09`: TRES PUENTES, LA MISMA ESPECIE
+
+**Tercer capitulo, tercera vez la misma especie, y ya no la busco: la encuentro.**
+
+| # | nodo | lo que escribi | el parrafo que NO lo cuenta | como quedo |
+|---|---|---|---|---|
+| 1 | `ejecutar_ciclos_cortos_aprender` | *las **dos** propiedades por las que esa cadencia importa* | `cap_09.md:151` encadena dos frases con `And` y no las cuenta | *las propiedades por las que esa cadencia importa* |
+| 2 | `equilibrar_corto_largo_plazo` | *los **dos** fallos simetricos* | `cap_09.md:179` los pone uno frente a otro con `On the flip side` y no los cuenta | *el fallo de cada lado, que el libro pone uno frente a otro* |
+| 3 | `hacer_repaso_posterior_proyecto` | *los **tres** momentos que el libro nombra* | `cap_09.md:257` encadena tres momentos con `or` y no los cuenta | *los momentos que el libro nombra* |
+
+    $ sed -n '151p' fuentes/zhuo_manager/cap_09.md
+    151: Once she said that, I understood why the multiweek cadence was so important. It was short
+    $ sed -n '179p' fuentes/zhuo_manager/cap_09.md
+    179: It should be clear by now that management is all about the art of balance. When it comes to
+    $ sed -n '257p' fuentes/zhuo_manager/cap_09.md
+    257: One of the most useful tools for improving process is the practice of doing debriefs (also
+
+**Y DOS RECUENTOS MAS RETIRADOS DE `nombre_largo`**: *las dos formas de aclarar
+la expectativa* en `definir_quien_responde_cada_cosa`, y *las tres cosas con las
+que se crea el ambiente seguro* en `hacer_repaso_posterior_proyecto`.
+
+**TASA DE `cap_09`: 3 sobre 131, el 2,29 por ciento.** La serie de las tres
+mediciones de esta vuelta va **3,23, 2,47, 2,29**, y **no la leo como una mejora
+sostenida**, porque la muestra son tres capitulos y la vara cambio en medio del
+primero. Lo que si esta medido es que **la especie no se agota: aparece en los
+tres.**
+
+> **Y LA LECCION QUE ME LLEVO ESCRITA, porque ya tiene tres casos:** este libro
+> **casi nunca cuenta**. Encadena con `and`, con `or`, con `On the flip side`,
+> con `Another tactic`. **Cada vez que yo escribo un numero delante de una lista
+> de este libro, el numero es mio.** La unica vez en tres capitulos que el libro
+> conto fue `cap_08.md:113`, `three reasons`, y `cap_08.md:139`, `two things`.
+
+## C.5. EL VEREDICTO DEL UNICO BLOQUEO, Y LO QUE ENCONTRE AL LEERLO
+
+    [BLOQUEARIA] fijar_vision_concreta_equipo
+        vecino fijar_proceso_trabajo_equipo  [levantada por: familia_id]
+          similitud_texto 0.188 | familia_id 0.333 | paso_contra_nodo 0.405
+
+**VEREDICTO: `SANO`.** La razon la escribe el propio vecino en su `resumen_teorico`:
+`fijar_proceso_trabajo_equipo` es **el desarrollo del tercero de los tres cubos
+del capitulo, el proceso, que el libro llama EL COMO**. Mi candidato es la
+vision, que es **EL QUE**, y el libro la define expresamente diciendo que **no
+describe el como, que ya lo averiguara tu equipo**. **Dos nodos que se definen
+uno como el contrario del otro no son el mismo nodo.** La señal los junto por
+compartir el verbo `fijar` y la pieza `equipo` en el id.
+
+### PERO AL LEER AL VECINO ENCONTRE UNA ARISTA QUE NO BUSCABA, Y ES DE `D.29`
+
+**El paso 7 de `fijar_proceso_trabajo_equipo`, que ya vive en el grafo, dice:**
+
+    Aprende a dominar los procesos que el libro nombra como importantes para un
+    directivo: dirigir reuniones eficaces, blindarte contra los errores del
+    pasado, planificar el maniana y cultivar una cultura sana.
+
+**ESE PASO ENUMERA Y NO CUENTA, asi que es `D.29`.** Y las piezas que enumera
+**son exactamente los capitulos que esta vuelta esta minando**:
+
+| lo que el paso 7 nombra | el hijo que lo despliega | de que capitulo sale |
+|---|---|---|
+| `dirigir reuniones eficaces` | `fijar_resultado_excelente_reunion` | `cap_07`, esta vuelta |
+| `blindarte contra los errores del pasado` | `hacer_repaso_posterior_proyecto` | `cap_09`, esta vuelta |
+| `planificar el maniana` | `crear_plan_creible_equipo` | `cap_09`, esta vuelta |
+| `cultivar una cultura sana` | **todavia no existe**: es `cap_11`, vuelta 13 | cola nombrada |
+
+**LA RAZON ESCRITA, que es lo que `D.29` exige:**
+
+> el paso 7 de la madre nombra cada uno de esos procesos en una linea y como una
+> materia a dominar, y cada hijo lo despliega en seis a catorce pasos con su
+> condicion de activacion y su entregable, que la madre no tiene. **La madre dice
+> que hay que dominarlos; los hijos dicen como.**
+
+> ### LO QUE ESTO ENSENIA SOBRE LA ADUANA, Y NO LO SABIA AL EMPEZAR
+>
+> **La señal levanto al vecino CORRECTO por el candidato EQUIVOCADO.** Bloqueo
+> `fijar_vision_concreta_equipo`, con el que el vecino no tiene nada que ver, y
+> **el vecino resulto ser la madre de otros tres candidatos mios que la señal
+> dejo pasar sin decir nada.**
+>
+> **UNA COLA DE LECTURA NO SOLO SIRVE PARA EL PAR QUE LA ABRE.** Leer al vecino
+> entero, y no solo el paso que la señal senialo, es lo que convirtio un `SANO`
+> barato en tres aristas. **Eso no lo hace ninguna señal: lo hace abrir el
+> fichero.**
+
+## C.6. LAS ARISTAS DEL CAPITULO
+
+**`D.37`: CERO OTRA VEZ.** Las cabezas de `cap_09` (`crear_plan_creible_equipo`
+sobre sus tres consideraciones, `equilibrar_corto_largo_plazo` sobre sus tres
+escenarios) **no cuentan sus partes**:
+
+    $ sed -n '71p' fuentes/zhuo_manager/cap_09.md
+    71: As you plan for the future, here are some things to keep in mind.
+
+**`here are some things` no es un numero.** Con esto la casa va **0 aristas por
+`D.37` sobre 11 casos examinados** (6 de la vuelta 11, 2 de `cap_07`, 1 de
+`cap_08`, 2 de `cap_09`).
+
+### Las aristas de `D.29` de `cap_09`
+
+| madre | paso | hijo | razon |
+|---|---:|---|---|
+| `crear_plan_creible_equipo` | **6** | `ajustar_plan_fuerzas_equipo`, `priorizar_pocas_cosas_bien`, `definir_quien_responde_cada_cosa`, `partir_meta_grande_hitos` | el cierre de la madre (`cap_09.md:71`) anuncia las cosas a tener en cuenta al planificar y los cuatro epigrafes que siguen (`:73`, `:81`, `:99`, `:115`) son esas cosas, cada una desplegada en siete a trece pasos que la madre no tiene. **El libro no las cuenta: `D.29`** |
+| `equilibrar_corto_largo_plazo` | **12** | `definir_vision_larga_trabajar_atras`, `repartir_equipo_cartera_horizontes`, `ligar_tareas_proposito_organizacion` | el paso final de la madre pregunta que se puede hacer para encontrar el equilibrio (`cap_09.md:205`) y los tres epigrafes que siguen (`:207`, `:223`, `:235`) son la respuesta. **El libro no los cuenta: `D.29`** |
+| `fijar_proceso_trabajo_equipo` **(ya en el grafo)** | **7** | `fijar_resultado_excelente_reunion`, `hacer_repaso_posterior_proyecto`, `crear_plan_creible_equipo` | la de `C.5`, encontrada leyendo al vecino y no por la señal |
+
+    $ sed -n '205p' fuentes/zhuo_manager/cap_09.md
+    205: As these examples show, you can’t always take a blanket short-term or long-term approach.
+
+**NINGUNA SE ESCRIBE EN EL GRAFO EN ESTA CORRIDA.** Cero inserciones.
+
+## C.7. LAS CUATRO MEDIDAS DEL `cap_09`
+
+| medida | cifra | como se saco |
+|---|---|---|
+| **candidatos por mil palabras** | **14 sobre 7.184 = 1,95** | `sed -n '8,$p' cap_09.md \| wc -w` da 7.184 |
+| **puentes sobre pasos escritos** | **3 de 131 = 2,29 por ciento** | los tres de la especie RECUENTO, tabla `C.4` |
+| **veredictos** | **1 escrito**, `SANO`, **y 3 aristas de `D.29` encontradas al leerlo** | mas 2 aristas de `D.29` internas y 2 casos de `D.37` descartados |
+| **tiempo** | **ver `E.4` al cierre** | primer commit del capitulo contra el de su cierre |
