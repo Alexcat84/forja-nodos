@@ -13856,3 +13856,86 @@ es la que permitio el modelo de `F.3` y su contraste.
 > **Y LA DECISION QUEDA ESCRITA PARA QUIEN VENGA:** si lo que hace falta es cerrar
 > rapido, se lanza el primero. **Si lo que hace falta es medir el instrumento, se
 > lanza el ultimo y solo.** No se puede tener las dos cosas en la misma vuelta.
+
+---
+
+# VUELTA 13, lote 3 (`zhuo_manager`), `cap_11` y `cap_12`: EL CIERRE DE LA EXTRACCION DEL LIBRO
+
+*Esqueleto abierto **antes de la primera tarea**, `EXTRACTOR.md` 3. Las filas se
+anexan al cerrarse cada tarea, no al final.*
+
+## H.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION
+
+*`EXTRACTOR.md` 4: la apertura se mide antes de la primera operacion. Todo lo que
+sigue salio de un instrumento corrido en esta vuelta, y el comando va pegado.*
+
+    $ python -c "import datetime;print(datetime.datetime.now().isoformat(timespec='seconds'))"
+      2026-09-11T13:27:04
+
+    $ git rev-parse --short HEAD        ->  a08d8a2
+    $ git rev-parse --abbrev-ref HEAD   ->  extraccion-mundo-11
+
+    $ python -c "print(sum(1 for l in open('dataset/nodos.jsonl',encoding='utf-8') if l.strip()))"
+      135
+
+    $ ls cuarentena/zhuo_manager/*.json | wc -l              ->  60
+    $ ls cuarentena/_insertados/zhuo_manager/*.json | wc -l  ->  68
+    $ python -c "print(sum(1 for l in open('bitacora/VEREDICTOS.jsonl',encoding='utf-8') if l.strip()))"
+      100
+
+    $ ls fuentes/zhuo_manager/
+      cap_01.md cap_02.md cap_03.md cap_04.md cap_05.md cap_06.md
+      cap_07.md cap_08.md cap_09.md cap_10.md cap_11.md cap_12.md
+
+**EL COMMIT DE ARRANQUE `a08d8a2` ES DE ESTA VUELTA**, y lo digo aqui porque la
+vuelta 12 tuvo que corregir su propio sello por no decirlo (`G.8.1`). Sello lo
+pendiente que encontre: el registro del bucle mas quince fragmentos de trabajo de
+la ACTA 12 (`.acta12_*.md`) que estaban sin seguir. **No los borro: no son mi
+sede** (`EXTRACTOR.md` 14), y un fichero que no es mio no se tira, se sella.
+
+**LAS DOS UNIDADES QUE ME TOCAN, medidas por mi con el comando del encargo:**
+
+    $ sed -n '8,$p' fuentes/zhuo_manager/cap_11.md | wc -w   ->  3751
+    $ sed -n '8,$p' fuentes/zhuo_manager/cap_12.md | wc -w   ->  3511
+    $ wc -l fuentes/zhuo_manager/cap_11.md fuentes/zhuo_manager/cap_12.md
+      191 fuentes/zhuo_manager/cap_11.md
+      449 fuentes/zhuo_manager/cap_12.md
+
+| fichero | unidad | titulo textual | palabras de cuerpo | lineas |
+|---|---|---|---:|---:|
+| `cap_11.md` | Cap. 10 | Nurturing Culture | 3.751 | 191 |
+| `cap_12.md` | Epilogue | The Journey Is 1% Finished | 3.511 | 449 |
+| | | **total** | **7.262** | **640** |
+
+**LAS DOS CIFRAS DE PALABRAS CASAN CON LAS DEL ENCARGO Y CON MI PROPIO `G.5`.** La
+unidad y el titulo textual los leo de la cabecera de cada fichero:
+
+    $ sed -n '4,5p' fuentes/zhuo_manager/cap_11.md
+      unidad: Cap. 10
+      titulo_textual: Nurturing Culture
+    $ sed -n '4,5p' fuentes/zhuo_manager/cap_12.md
+      unidad: Epilogue
+      titulo_textual: The Journey Is 1% Finished
+
+**MODO DE ESTA CORRIDA: `MODO_INSERCION=cuarentena`. CERO INSERCIONES.** No corro
+`python forja.py insertar` ni `python forja.py arista`. Todo candidato queda en
+`cuarentena/zhuo_manager/<id>.json` y pasa la aduana **en el mismo acto en que se
+escribe** (`EXTRACTOR.md` 16). Las aristas van en bloque propio y titulado.
+
+## H.0.1. EL ESQUELETO DE LAS TAREAS ENCARGADAS
+
+| # | tarea | estado |
+|---:|---|---|
+| 1.a | leer la ACTA 12 entera y decir que cambia | PENDIENTE |
+| 1.b | corregir el puente que sobrevivio, y su remedio de fondo | PENDIENTE |
+| 1.c | el recuento del sello, recomputado a maquina | PENDIENTE |
+| 1.d | `ORDEN_DE_LOTES.md`, correccion declarada del lote 3 | PENDIENTE |
+| 1.e | la ambiguedad de unidad del sello, declarada | PENDIENTE |
+| 1.f | los tres pares que nadie adjudico, leidos y con veredicto | PENDIENTE |
+| 2 | `cap_11` y `cap_12`, uno a uno y enteros | PENDIENTE |
+| 3 | el informe del lote y el reloj, con el modelo publicado antes | PENDIENTE |
+| 4 | las cuatro medidas, una fila por capitulo mas el lote 3 entero | PENDIENTE |
+| 5 | el cierre del lote 3 y las dos condiciones del lote 4 | PENDIENTE |
+
+**SON CINCO TAREAS CONTANDO LA 1 COMO UNA**, que es como las numera el encargo, y
+el tope de `EXTRACTOR.md` 1.3 es cinco. **No declaro cola.**
