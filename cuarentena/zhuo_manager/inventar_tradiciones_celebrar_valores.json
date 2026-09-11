@@ -1,0 +1,36 @@
+{
+  "id": "inventar_tradiciones_celebrar_valores",
+  "titulo": "Inventar tradiciones que celebren los valores de tu equipo",
+  "denominaciones": {
+    "nombre_largo": "El poder de los ritos frente a los lemas y los discursos, con los seis ejemplos de tradiciones que el libro imprime y el caso del turno de preguntas de los viernes",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "invent traditions that celebrate your values"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando quieres hacer concreto un valor de tu equipo y los lemas y los discursos no bastan.",
+  "entregable_esperado": "Una tradicion propia del equipo, tan unica, peculiar y divertida como el, que haga concreto el valor que quieres celebrar.",
+  "pasos_accionables": [
+    "Cuenta con que hay poder en los ritos: mas alla de los lemas o los discursos, crean acciones alrededor de las cuales los miembros del equipo pueden unirse, y pueden ser tan unicos, peculiares y divertidos como tu equipo.",
+    "Mira el caso que el libro cuenta de una tradicion con solera, el hackathon: venir y pasar unas cuantas horas dedicadas a crear un prototipo de una idea que te entusiasme, solo o con un punado de otros, animado a construir lo que creyeras bueno para la empresa, con una energia que a menudo se alargaba hasta las tantas de la noche, hasta que podias llamar a tus companieros para ensenarles funcionando lo que tenias en la cabeza.",
+    "Fijate en que lo que el rito hizo concreto no fueron solo los productos que salieron de el, sino los dos valores mas antiguos de la casa: se audaz y muevete rapido.",
+    "Toma ideas de los seis ejemplos de tradiciones que el libro imprime. Preguntas personales al empezar una reunion, del estilo de pelicula favorita de la infancia o el mejor regalo que has recibido en Navidad, para que la gente conozca mejor a sus companieros. Noches mensuales de aprender a pintar, esculpir o hacer manualidades, para fomentar la creatividad y la mentalidad del principiante. Un oso de peluche gigantesco de amor al cliente que se entrega a quien se salio mas de su camino para ayudar a un cliente el ultimo mes. Una ceremonia anual de premios al estilo de los Oscar, para que la gente reconozca todas las maneras en que sus companieros son estupendos. Sesiones de yoga los lunes por la maniana, para promover la atencion plena. Y el fallo de la semana, donde la gente comparte sus errores en un foro seguro, para fomentar la autenticidad y el aprendizaje.",
+    "Mira el caso que el libro pone del fundador de la casa sosteniendo el rito el mismo: lleva mas de diez anios celebrando un turno de preguntas interno los viernes por la tarde, donde cualquiera de la empresa puede hacerle cualquier pregunta y recibe una respuesta honesta, sobre el rumbo futuro, sobre decisiones recientes, sobre las politicas de la empresa o incluso sobre sus opiniones personales de la ultima noticia, y algunas de esas preguntas pueden ser extremadamente directas.",
+    "Cuenta con la razon que el libro da para que el que manda lo sostenga: uno de los mayores valores de la casa es la apertura, y si el no da ejemplo, por que iba a creer nadie mas que importa."
+  ],
+  "resumen_teorico": "Es el cuarto frente del capitulo y el unico cuyo entregable es un objeto nuevo y no una revision de algo que ya existe. Su inventario propio es el mas rico del capitulo: seis tradiciones nombradas una a una, mas el hackathon y el turno de preguntas de los viernes como casos con su valor asociado. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se inventa una tradicion nueva, ni como se retira la que deja de funcionar, ni quien la propone.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "contrastar_cultura_actual_aspirada",
+  "titulo": "Contrastar por escrito la cultura que tu equipo tiene con la que quieres que tenga",
+  "denominaciones": {
+    "nombre_largo": "El ejercicio de una hora con los tres bloques de preguntas del libro: entender el equipo actual, entender tus aspiraciones y entender la diferencia",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "know the kind of team you want to be a part of"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando no estas satisfecho con como trabaja junto tu equipo, y tienes una hora libre. Las tres seniales que el libro da son que el ambiente se sienta hostil en vez de servicial, que las cosas tarden mucho en salir, o que haya drama constante.",
+  "entregable_esperado": "Escritas las respuestas a los tres bloques de preguntas, y con ellas los mayores huecos entre la cultura actual y la aspirada, los obstaculos que pueden estorbar y como vas a encararlos.",
+  "pasos_accionables": [
+    "Cuenta con que la cultura de tu equipo es como su personalidad y existe pienses en ella o no, y con que si no estas satisfecho con como trabajais juntos merece la pena examinar por que puede ser y que puedes hacer al respecto.",
+    "Haz con tu equipo el mismo ejercicio que hiciste contigo mismo cuando escribiste tus fuerzas personales, tus areas de crecimiento y tus aspiraciones. La clave es encontrar la interseccion entre lo que tu equipo hace bien y lo que esperas que el equipo valore.",
+    "Cuando tengas una hora o asi, coge un boligrafo y escribe tus respuestas a las preguntas que siguen.",
+    "Para entender tu equipo actual, contesta las siete preguntas que el libro imprime: cuales son los tres primeros adjetivos que te vienen a la cabeza al describir la personalidad de tu equipo? Que momentos te hicieron sentir mas orgulloso de formar parte de el, y por que? Que hace tu equipo mejor que la mayoria de los demas equipos de ahi fuera? Si cogieras a cinco miembros al azar de tu equipo y preguntaras a cada uno por separado que valora nuestro equipo, que oirias? Cuanto se parece la cultura de tu equipo a la de la organizacion entera? Imagina a una periodista escrutando a tu equipo: que diria que hace bien y que no hace bien? Y cuando la gente se queja de como funcionan las cosas, cuales son las tres que mas sacan?",
+    "Para entender tus aspiraciones, contesta las cuatro: describe los cinco adjetivos que mas querrias que un observador externo usara para describir la cultura de tu equipo, y por que esos. Imagina ahora esos cinco adjetivos sobre una espada de doble filo: que trampas imaginas que vienen de una adhesion despiadada a esas cualidades, y te resultan aceptables? Haz una lista de los aspectos de la cultura que admiras de otros equipos u organizaciones, por que los admiras, y que inconvenientes tolera ese equipo como consecuencia. Y haz una lista de los aspectos de cultura que no querrias imitar de otros equipos o empresas, y por que no.",
+    "Para entender la diferencia, contesta las cinco: en una escala de uno a nueve, con nueve siendo estamos al cien por cien y uno siendo esto es lo contrario de nuestro equipo, cuanto dista tu equipo actual de tus aspiraciones? Que aparece a la vez como una fuerza de tu equipo y como una cualidad que valoras mucho? Donde estan los mayores huecos entre la cultura actual de tu equipo y tus aspiraciones? Que obstaculos pueden ponerse en medio de alcanzar tus aspiraciones, y como los vas a encarar? E imagina como quieres que trabaje tu equipo dentro de un anio: como le describirias a un reporte lo que esperas que sea distinto entonces comparado con ahora?",
+    "Cuenta con que, segun lo que este dentro de tu control, algunas de tus aspiraciones seran posibles y otras poco realistas. El libro pone el caso: si quieres que tu equipo opere con concentracion absoluta y cero distracciones, preferirias que se sentaran en una zona apartada y evitaran tratar con otros grupos; pero si la empresa entera valora la apertura y la colaboracion, esa preferencia sera dificil de conseguir.",
+    "Cuenta a la vez con que dentro de una organizacion mayor si pueden crecer y florecer subculturas, con los tres casos que el libro nombra: el equipo de crecimiento de Facebook valora ser rigurosamente informado por los datos, el de ingenieria de infraestructura es conocido por su foco a largo plazo, y dentro de diseno les importa encontrar soluciones holisticas a los problemas.",
+    "Identificados los valores que quieres cultivar dentro de tu equipo, pasa al paso siguiente, que es desarrollar un plan de juego para ayudar a que esos valores florezcan."
+  ],
+  "resumen_teorico": "Es la puerta de entrada del trabajo de cultura y el unico nodo del capitulo cuyo entregable es un papel escrito. El libro pone su inventario entero: tres bloques con nombre impreso y dieciseis preguntas nombradas una a una, mas la caja de tiempo, una hora, y el instrumento, un boligrafo. Los tres bloques se quedan dentro de un solo nodo y no se parten en tres, siguiendo el precedente de la vuelta 12 con las tres subsecciones impresas de equilibrar el corto y el largo plazo, sostenido por la ACTA 12. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se repite el ejercicio, ni con quien se comparte el papel, ni que se hace con los huecos una vez listados mas alla de pasar al plan de juego.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

@@ -14531,3 +14531,211 @@ lote: la madre enuncia el acto en una linea y el hijo lo ejecuta entero.**
 **LAS DOS ARISTAS SE DECLARAN AQUI Y NO ENTRAN AL GRAFO EN ESTA CORRIDA.** Cuando Alexis
 autorice la insercion, el comando es `python forja.py arista --madre
 fijar_proceso_trabajo_equipo --hijo <hijo> --paso <n> --razon "<la razon de arriba>"`.
+
+## H.2.4. LOS OCHO CANDIDATOS, CADA UNO POR LA ADUANA EN EL ACTO EN QUE SE ESCRIBIO
+
+*`EXTRACTOR.md` 16: un candidato no esta escrito hasta que ha pasado la aduana. **Los
+ocho pasaron su informe individual en el mismo acto**, no al final del lote.*
+
+    $ python -c "recorre los ocho ficheros nuevos y cuenta sus pasos_accionables"
+       8 pasos | juzgar_cultura_renuncias_equipo
+       9 pasos | contrastar_cultura_actual_aspirada
+       9 pasos | comunicar_valores_diez_formas
+       7 pasos | vivir_primero_valor_declarado
+       9 pasos | revisar_incentivos_trampas_equipo
+       5 pasos | actuar_conducta_contraria_valores
+       4 pasos | reconocer_decision_dificil_valores
+       6 pasos | inventar_tradiciones_celebrar_valores
+    candidatos: 8   pasos escritos: 57
+
+**OCHO DE OCHO `[ENTRARIA]`, CERO `[CAERIA]` Y CERO `[BLOQUEARIA]`.** La salida de los
+ocho informes individuales es la misma linea de saldo:
+
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+**Y DIGO LO QUE ESO NO SIGNIFICA, porque es la leccion de `D.30` y me la se de memoria:
+un informe verde certifica que la ficha esta bien construida, NO que sus pasos sean del
+libro.** Eso lo certifica la relectura de abajo, y ninguna guarda la sustituye.
+
+## H.2.5. LA RELECTURA DE FIDELIDAD, DENTRO DEL ACTO, CON DOS PUENTES MIOS CAZADOS
+
+*`D.30`. Marco cada paso contra su parrafo: **TRANSCRIPCION** si el libro pone el medio,
+la etapa o el objeto, **PUENTE** si lo escribi yo.*
+
+| candidato | pasos | transcripcion | **PUENTE** | los parrafos contra los que marque |
+|---|---:|---:|---:|---|
+| `juzgar_cultura_renuncias_equipo` | 8 | 8 | **0** | `L17`, `L19`, `L21`, `L23`, `L25`, `L27`, `L29` |
+| `contrastar_cultura_actual_aspirada` | 9 | 9 | **0** | `L33`, `L35`, `L39` a `L51`, `L55` a `L61`, `L65` a `L73`, `L75`, `L77`, `L79` |
+| `comunicar_valores_diez_formas` | 9 | 9 | **0** | `L83`, `L85`, `L87`, `L91`, `L93`, `L95`, `L97` |
+| `vivir_primero_valor_declarado` | 7 | 6 | **1** | `L101`, `L103` a `L111`, `L113`, `L115` a `L121`, `L123` |
+| `revisar_incentivos_trampas_equipo` | 9 | 9 | **0** | `L127`, `L129`, `L131` a `L139`, `L141`, `L143` a `L151`, `L153` |
+| `actuar_conducta_contraria_valores` | 5 | 5 | **0** | `L155` |
+| `reconocer_decision_dificil_valores` | 4 | 4 | **0** | `L157` |
+| `inventar_tradiciones_celebrar_valores` | 6 | 5 | **1** | `L165`, `L167`, `L169`, `L173` a `L183`, `L185`, `L187` |
+| **total** | **57** | **55** | **2** | |
+
+### LOS DOS PUENTES, CON EL PARRAFO QUE **NO** LOS DICE
+
+**PUENTE 1.** `vivir_primero_valor_declarado`, paso 2.
+
+    VIEJO: Pasa tus propios valores declarados por los cinco ejemplos que el libro pone.
+    NUEVO: Considera los cinco ejemplos que el libro pone de alguien en posicion de
+           autoridad que dice una cosa y hace otra.
+
+    $ sed -n '101p' fuentes/zhuo_manager/cap_11.md
+    101: People watch their bosses closely to understand the team's values and norms.
+         ... Consider the following examples:
+
+**EL LIBRO DICE `consider the following examples`. NO DICE QUE PASES TUS PROPIOS VALORES
+DECLARADOS POR ELLOS.** Es una auditoria que me invente yo, y es de la especie mas
+barata de cometer: **el libro pone el inventario y el extractor le pone el uso.** La
+seccion entera empuja hacia ahi, y eso es precisamente lo que la hace invisible mientras
+se escribe.
+
+**PUENTE 2.** `inventar_tradiciones_celebrar_valores`, paso 5.
+
+    VIEJO: Sostenla tu mismo si el valor es tuyo, con el caso que el libro pone del
+           fundador de la casa: lleva mas de diez anios ...
+    NUEVO: Mira el caso que el libro pone del fundador de la casa sosteniendo el rito
+           el mismo: lleva mas de diez anios ...
+
+    $ sed -n '187p' fuentes/zhuo_manager/cap_11.md
+    187: At an organization as big as Facebook, there are thousands of demands on the
+         CEO's time. And yet Mark continues to stand in front of the company every week
+         ... Because one of Facebook's greatest values is openness. If he doesn't set an
+         example, why should anyone else believe it's important?
+
+**LA CONDICION `si el valor es tuyo` LA PUSE YO.** El libro da la razon en forma de
+pregunta retorica y **no pone condicion ninguna**. La razon se queda, en el paso 6 y con
+las palabras del libro; **la condicion se retira.**
+
+> **LOS DOS SE CORRIGIERON EN EL ACTO Y LOS DOS VOLVIERON A PASAR LA ADUANA**, con su
+> salida pegada arriba. **Los dos cuentan en el numerador de la TAREA 4**: la metrica
+> mide la mano que escribe, no el fichero que queda (ACTA 12 seccion 4.2).
+
+### EL REMEDIO DE `H.1.b`, DECLARADO CUMPLIDO PARA `cap_11`
+
+**PASOS ANADIDOS O CAMBIADOS DESPUES DE LA RELECTURA DE FIDELIDAD: DOS**, y son
+exactamente los dos puentes de arriba. **Los dos se volvieron a marcar contra su parrafo
+en el mismo acto de cambiarlos**, y sus parrafos estan citados con su `sed`.
+
+**PASOS ANADIDOS PARA QUE UNA MADRE NOMBRE A UNA HIJA: CERO.** Es el hueco exacto por el
+que se colo el puente de la vuelta 12, y **en `cap_11` no hubo que abrirlo**: las dos
+aristas de `H.2.3` salen de pasos que ya existian en la madre, no de pasos que yo anada.
+**Lo digo aunque la cuenta sea cero**, porque un remedio que solo se declara cuando se
+usa no se puede comprobar.
+
+## H.2.6. LOS VEREDICTOS DE `cap_11`: LA ADUANA LEVANTO **CERO**, Y ESO NO ES UN VEREDICTO
+
+**LA COLA LLEGO VACIA EN LOS OCHO.** `0 BLOQUEARIAN` en los ocho informes individuales.
+
+> **Y ESTA VEZ SI HAGO LO QUE ESCRIBI EN `D.5` Y NO HICE EN `cap_10`** (ACTA 12 seccion
+> 2.7): **una cola vacia certifica que no hay gemelo, no que no haya madre.** Elijo por
+> LECTURA los vecinos mas cercanos del grafo y de la bandeja, y los mido.
+
+**COMO LOS ELEGI, que es lo que hace comprobable la eleccion:** recorri los 135 titulos
+del grafo buscando los que tocan **cultura, valores, reconocimiento y celebracion**, que
+son los cuatro objetos de este capitulo, **y me lleve tambien los de `smart_who`**,
+porque la vuelta 12 midio que las seniales no ven entre dos libros del mismo tema.
+
+    $ python -c "imprime id y titulo de los 135 nodos del dataset" | grep -iE "cultura|valor|celebr|reconoc|confianza|fuerza"
+      evaluar_cultura_empresa_adjetivos      (smart_who)
+      reconocer_recompensar_uso_metodo       (smart_who)
+      celebrar_logros_planificar_cambio      (smart_who)
+      resolver_desencaje_valores_persona_equipo   (zhuo_manager)
+      listar_fuerzas_propias_cuatro_preguntas     (zhuo_manager)
+      ganar_confianza_personas_cargo              (zhuo_manager)
+      ...
+
+| # | candidato | vecino leido | fuente del vecino | veredicto | razon, leida de los pasos de los dos lados |
+|---:|---|---|---|---|---|
+| 5 | `contrastar_cultura_actual_aspirada` | `evaluar_cultura_empresa_adjetivos` | **`smart_who`** | **`SANO`, y FRONTERA DECLARADA de metodo** | comparten **una pregunta**, la de los adjetivos. Todo lo demas difiere: alli el objeto es **la cultura de la empresa como insumo de la contratacion** y el entregable son **competencias en la tarjeta de todos los puestos**; aqui el objeto es **tu equipo contra tu aspiracion** y el entregable son **los huecos y los obstaculos**. Alli lo hace **el equipo directivo en una sala con un rotafolio**; aqui lo haces **tu solo, una hora y un boligrafo**. **Compartir una pregunta no es continuar un trabajo** (ACTA 12 2.3) |
+| 6 | `contrastar_cultura_actual_aspirada` | `listar_bueno_mejorable_equipo` | `zhuo_manager` | **`SANO`** | los dos hacen listas sobre tu equipo, y ahi acaba. El vecino se activa **al recibir un equipo** y sus preguntas son operativas, plazos, prioridades y una reunion semanal larguisima; el candidato se activa **cuando no estas satisfecho con como trabajais juntos** y sus dieciseis preguntas son de cultura. **Procedimiento fuera del solape en los dos lados** |
+| 7 | `comunicar_valores_diez_formas` | `alinear_equipo_proposito_comun` | `zhuo_manager` | **`CONTINUA`**, y **marcado discutible** | es el par mas cercano de `cap_11` y lo digo primero: **los dos listan cuatro vias y dos de ellas coinciden**, el correo y la reunion a solas. Lo que decide es que **el paso 4 de la madre manda compartirlo en cada ocasion que tengas, en una linea**, y el hijo la ejecuta con **la regla de las diez veces y diez formas**, con **reclutar a otros** y con **meter tus propios traspies**, que la madre no tiene. Y el objeto se ensancha: la madre comparte **el proposito**, el hijo **cualquier valor que te importe** |
+| 8 | `vivir_primero_valor_declarado` | `ganar_confianza_personas_cargo` | `zhuo_manager` | **`SANO`** | la madre tiene **cuatro acciones nombradas** y ninguna es esta: respetar y cuidar, invertir tiempo, ser honesto sobre el desempenio, y admitir tus errores. **Predicar con el ejemplo no es ninguna de las cuatro**, y el candidato no despliega ninguna de ellas: mide la brecha entre lo que declaras y lo que haces. **Son hermanos del mismo capitulo de confianza** |
+| 9 | `vivir_primero_valor_declarado` | `pedir_opinion_otros_mejorar` | `zhuo_manager` | **`SANO`** | **el caso del candidato ES pedir opinion**, asi que el par hay que mirarlo. Pero el vecino **ejecuta** el acto de pedir opinion, con sus dos clases y su forma de preguntar; el candidato **lo usa como ejemplo de una brecha entre decir y hacer**, y su procedimiento es otro: contrastar cada valor declarado con tu conducta. **Un caso compartido no es un procedimiento compartido** (manual 3.5) |
+| 10 | `actuar_conducta_contraria_valores` | `resolver_desencaje_valores_persona_equipo` | `zhuo_manager` | **`SANO`** | el vecino resuelve **un desencaje de valores que dura**, y sus salidas son **mover dentro de la organizacion o separar caminos**; el candidato responde a **un acto suelto**, y sus salidas son **rebajar la tension en el momento y decirlo en privado despues**. Ninguno de los dos enuncia la linea del otro: el vecino nunca dice que hacer con un acto suelto, y el candidato nunca dice que hacer con un desencaje que dura |
+| 11 | `reconocer_decision_dificil_valores` | `reconocer_recompensar_uso_metodo` | **`smart_who`** | **`SANO`** | los dos reconocen, y ahi acaba. Alli se reconoce **el uso de un metodo de contratacion**, en publico, y se ata **una parte sustancial de la retribucion variable a una tasa del noventa por ciento**; aqui se reconoce **una decision dificil tomada en el espiritu de los valores**, sin dinero y sin numero |
+| 12 | `revisar_incentivos_trampas_equipo` | `reconocer_recompensar_uso_metodo` | **`smart_who`** | **`SANO`, y es una FRONTERA DECLARADA DE DOCTRINA entre dos libros** | **desarrollado abajo, porque es el hallazgo de este capitulo** |
+| 13 | `inventar_tradiciones_celebrar_valores` | `celebrar_logros_planificar_cambio` | **`smart_who`** | **`SANO`** | el vecino celebra **un logro concreto ya conseguido**, una vez, con una recompensa tangible, y **reabre el ciclo de las diez cosas**; el candidato inventa **un rito que se repite** y cuyo objeto es **hacer concreto un valor**, no premiar un resultado |
+| 14 | `revisar_incentivos_trampas_equipo` | `fijar_proceso_trabajo_equipo` | `zhuo_manager` | **`SANO`** | el vecino **fija** los principios que gobiernan las decisiones y los valores comunes (sus pasos 3 y 4); el candidato **audita si el entorno los premia**. Fijar y auditar son dos actos distintos sobre el mismo objeto, y el vecino no enuncia el segundo en ninguna linea |
+| 15 | `juzgar_cultura_renuncias_equipo` | `hacer_repaso_posterior_proyecto` | `zhuo_manager` (bandeja) | **`SANO`** | el paso 6 del candidato **nombra** el repaso posterior dentro del caso del becario, y el vecino lo **despliega en diez pasos**. Pero el candidato no lo ejecuta: lo cita como prueba de que el equipo pago la contrapartida de su valor. **Nombrar no es procedimentar** (`P.5.1`), y aqui la vara corre a mi favor y en mi contra a la vez: por eso el vecino es nodo y el paso 6 no lo es |
+
+### EL HALLAZGO DE `cap_11`: DOS LIBROS QUE SE CONTRADICEN, Y LA CONTRADICCION SE GUARDA
+
+**`revisar_incentivos_trampas_equipo` (`zhuo_manager`) dice que ates la conducta a una
+cifra y te saldra una trampa. `reconocer_recompensar_uso_metodo` (`smart_who`) manda
+atar una parte sustancial de la retribucion variable a una cifra.**
+
+| | `smart_who`, ya en el grafo | `zhuo_manager`, candidato de hoy |
+|---|---|---|
+| que manda | *Ata esa recompensa ligando una parte sustancial de su retribucion variable a ese resultado concreto, y no a una valoracion general* | *Premiar el rendimiento individual por encima de cualquier otra cosa* es la primera de las cuatro trampas, y *desconfia de las reglas de incentivo aparentemente simples que prometen resultados asombrosos* |
+| su prueba | *esas primas se pagan solas por el aumento sustancial de productividad que traen* | las lineas de codigo, el pago por palabra y sus propias tres exploraciones: *creo trabajo de relleno y desperdicio del tiempo de todos* |
+
+> **NO SE FUNDEN Y NO SE PODA NINGUNO. ES `FRONTERA DECLARADA`** (`AUDITOR_FORJA.md`
+> 6.1: *dos doctrinas legitimas no son duplicado; una frontera se pierde por poda, no por
+> fusion*). **Se escriben las dos posiciones con sus fuentes**, que es exactamente lo que
+> la vuelta 12 hizo con las banderas rojas contra la conducta toxica, y que la ACTA 12
+> sostuvo en su muestra pineada llamandola *la contradiccion mas util que han producido
+> tres libros*.
+>
+> **Y ANIADO LO QUE ESTA MIDE Y AQUELLA NO:** las dos no hablan del mismo objeto por
+> casualidad, **hablan del mismo mecanismo**, atar dinero a un numero, **y salen con
+> signo opuesto.** Es la primera frontera de esta casa donde los dos libros prescriben
+> sobre la MISMA palanca. **El que inserte tiene que ver las dos.**
+
+**ONCE VEREDICTOS EN `cap_11`** (numerados del 5 al 15 para que la cuenta del sello sea
+continua con los cuatro de `H.1.f`): **nueve `SANO`, uno `CONTINUA` y uno `SANO` que es
+ademas frontera de doctrina.** **CERO los pidio la aduana. LOS ONCE LOS PIDIO LA
+LECTURA.**
+
+## H.2.7. LO QUE **NO** DECLARO COMO ARISTA, Y DIGO POR QUE
+
+**El paso 2 de `contrastar_cultura_actual_aspirada` cita expresamente el ejercicio del
+capitulo 5**, que ya vive en el grafo partido en varios nodos:
+
+    $ sed -n '35p' fuentes/zhuo_manager/cap_11.md
+    35: Remember the exercises from Chapter Five: Managing Yourself when we wrote down
+        your personal strengths, growth areas, and aspirations? It's time to do the same
+        with your team.
+
+**Y AUN ASI NO DECLARO LA ARISTA, PORQUE NO TIENE LA FORMA QUE LA CASA EXIGE.**
+`EXTRACTOR.md` 15.6 manda que `--paso <n>` sea **el paso de la MADRE que nombra a la
+parte**, para que el auditor lo abra y lo compruebe. Aqui **es el hijo el que nombra a
+la madre**, y los nueve pasos de `listar_fuerzas_propias_cuatro_preguntas` son todos
+personales: **ninguno nombra la version de equipo.**
+
+> **UNA ARISTA SIN SU LINEA ES UNA AFIRMACION SIN CITA**, y no pienso fabricar la cita
+> del lado que no la tiene. **Lo subo como PROPUESTA en mi sede, que es lo que
+> `EXTRACTOR.md` 14 me deja hacer:** quien inserte deberia valorar un `nodos_previos` de
+> `contrastar_cultura_actual_aspirada` hacia los nodos del ejercicio personal del
+> capitulo 5. **No lo adjudico yo.**
+
+## H.2.8. LAS MEDIDAS DE `cap_11`
+
+| medida | cifra |
+|---|---:|
+| palabras de cuerpo | **3.751** |
+| candidatos escritos | **8** |
+| candidatos por mil palabras | **2,13** |
+| pasos escritos | **57** |
+| puentes propios, cazados y corregidos | **2** |
+| **`PASOS INVENTADOS`, por ciento** | **3,51** |
+| veredictos escritos con su razon | **11** |
+| de ellos, pedidos por la aduana | **0** |
+| aristas declaradas | **2** |
+| cabezas examinadas por `D.37` | **1**, y **ninguna cumple la cuenta**: ver abajo |
+
+    $ python -c "print(8/3751*1000, 2/57*100)"
+    2.1328  3.5087
+
+**LA UNICA CABEZA QUE EXAMINE POR `D.37`**, con la unidad de `H.1.e` (una cabeza, no un
+capitulo): **`contrastar_cultura_actual_aspirada`**, que tiene **tres bloques impresos**
+con nombre propio. **NO cumple `D.37`**, porque `L35` dice *the following questions* y
+**no dice cuantos bloques hay**. Y no la parti en tres mas una cabeza: **segui el
+precedente de la vuelta 12 con `equilibrar_corto_largo_plazo`**, que comprimio tres
+subsecciones impresas en un solo nodo y **que la ACTA 12 sostuvo en su adjudicacion 7.**
+**Va marcada como discutible.**

@@ -1,0 +1,35 @@
+{
+  "id": "actuar_conducta_contraria_valores",
+  "titulo": "Actuar cuando alguien hace algo que se sale de tus valores y el problema no es estructural",
+  "denominaciones": {
+    "nombre_largo": "Lo que se hace en el momento y lo que se hace despues en privado, cuando la causa no esta en los incentivos sino en la persona",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "if the issue isn't structural, but someone does something that's out of line with your values, you must still take action"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando alguien hace algo que se sale de tus valores y ya has comprobado que el problema no es principalmente estructural.",
+  "entregable_esperado": "La tension rebajada en el momento y dicho en privado, despues, que lo que hizo es inaceptable.",
+  "pasos_accionables": [
+    "Cuenta con que aun asi tienes que actuar: que el problema no sea estructural no te exime.",
+    "Ten delante el caso que el libro pone: te importa hondamente crear un ambiente de respeto dentro de tu equipo, y un dia oyes a alguien gritando con malos modos a un companiero de equipo.",
+    "Cuenta con lo que pasa si no haces nada, que es la razon de actuar: te arriesgas a mandar el mensaje de que toleras esa clase de conducta.",
+    "Rebaja la tension en el momento, en una de las dos formas que el libro nombra: pidiendo al que grita que se calme, o ayudandole a salir de la sala.",
+    "Despues, en privado, dile que lo que hizo es inaceptable."
+  ],
+  "resumen_teorico": "Es el hermano de cara negativa de la pieza final de la cultura, y nace de la regla de decision estructural contra no estructural que cierra el nodo de los incentivos. Es corto a proposito porque el libro lo escribe corto, y su inventario propio son las dos formas de rebajar la tension en el momento y el corte entre el momento y el despues en privado. Lo que el libro NO dice, y por eso no esta escrito aqui, es que se hace si se repite, ni si queda registro, ni quien mas se entera.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}
