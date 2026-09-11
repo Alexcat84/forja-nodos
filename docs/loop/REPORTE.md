@@ -12930,3 +12930,100 @@ escenarios) **no cuentan sus partes**:
 | **puentes sobre pasos escritos** | **3 de 131 = 2,29 por ciento** | los tres de la especie RECUENTO, tabla `C.4` |
 | **veredictos** | **1 escrito**, `SANO`, **y 3 aristas de `D.29` encontradas al leerlo** | mas 2 aristas de `D.29` internas y 2 casos de `D.37` descartados |
 | **tiempo** | **ver `E.4` al cierre** | primer commit del capitulo contra el de su cierre |
+
+---
+
+# TAREA 1.D. `cap_10.md`, Cap. 9 `Leading a Growing Team`
+
+*Frontera publicada ANTES de cortar (`EXTRACTOR.md` 10).*
+
+## D.1. LA FRONTERA ENTERA, PIEZA A PIEZA, CON SU `sed` PEGADO
+
+**17 piezas, de la linea 9 a la 221.**
+
+| P | lineas | que es | veredicto | la salida de `sed -n '<primera>p'`, pegada |
+|---|---|---|---|---|
+| P1 | L9 a L15 | paratexto: rotulo, titulo y los letreros AVOID y ASPIRE | **NO SE MINA** | `9: Chapter Nine` |
+| P2 | L17 a L27 | la escena de la critica que un dia ya no cabia en su formato | **CASO** | `17: Back when we still fit around a conference room table, a n ...` |
+| P3 | L29 a L31 | de la vista de primera linea a la vista macro | **POSTURA** | `29: When I first began managing, my team was only a handful of ...` |
+| P4 | L33 a L37 | BIG TEAMS VERSUS SMALL TEAMS: el hipercrecimiento y el anuncio de los contrastes | **POSTURA** | `33: BIG TEAMS VERSUS SMALL TEAMS` |
+| P5 | L39 a L47 | Direct to Indirect Management, con la cuenta de las quince horas | **PROCEDIMIENTO** | `39: Direct to Indirect Management` |
+| P6 | L49 a L61 | People Treat You Differently, con el caso de la revision y las contramedidas | **PROCEDIMIENTO** | `49: People Treat You Differently` |
+| P7 | L63 a L71 | Context Switching All Day, Every Day, con las tecnicas que ella encontro | **PROCEDIMIENTO** | `63: Context Switching All Day, Every Day` |
+| P8 | L73 a L79 | You Pick and Choose Your Battles: el perfeccionismo que deja de ser opcion | **POSTURA, y es el DISCUTIBLE 8** | `73: You Pick and Choose Your Battles` |
+| P9 | L81 a L87 | The Skills That Matter Become More People-Centric, con las habilidades nombradas | **POSTURA, y es el DISCUTIBLE 9** | `81: The Skills That Matter Become More and More People-Centric` |
+| P10 | L89 a L107 | THE TIGHTROPE ACT OF GREAT DELEGATION: los dos extremos con sus senales | **PROCEDIMIENTO** | `89: THE TIGHTROPE ACT OF GREAT DELEGATION` |
+| P11 | L109 a L123 | GIVING PEOPLE BIG PROBLEMS IS A SIGN OF TRUST: los errores del razonamiento y la declaracion publica | **PROCEDIMIENTO** | `109: GIVING PEOPLE BIG PROBLEMS IS A SIGN OF TRUST` |
+| P12 | L125 a L145 | TWO HEADS, ONE SHARED VISION: las preguntas de la vision compartida | **PROCEDIMIENTO mas ATRIBUCION** | `125: TWO HEADS, ONE SHARED VISION` |
+| P13 | L147 a L171 | WHAT TO DO WHEN A MANAGER STRUGGLES: el coste de la matricula y la pregunta que aclara | **PROCEDIMIENTO mas ATRIBUCION** | `147: WHAT TO DO WHEN A MANAGER STRUGGLES` |
+| P14 | L173 a L191 | AIM TO PUT YOURSELF OUT OF A JOB: el caso de la reunion de los lunes y la regla del pulgar | **PROCEDIMIENTO mas ATRIBUCION** | `173: AIM TO PUT YOURSELF OUT OF A JOB` |
+| P15 | L193 a L199 | los ejemplos de delegar lo que otro hace igual o mejor, y el intercambio de corto contra largo | **PROCEDIMIENTO, con P14** | `193: Some time ago, a few of my reports suggested that we do mo ...` |
+| P16 | L201 a L213 | lo que NO se delega: el valor unico propio y los patrones de la interseccion | **PROCEDIMIENTO** | `201: As for what you shouldn’t delegate, consider the unique va ...` |
+| P17 | L215 a L221 | la pregunta de si delegarlo todo te deja sobrante, y el cierre del capitulo | **POSTURA** | `215: Once, as I was describing the philosophy of always looking ...` |
+    $ python -c "... comprueba las 17 piezas contra el fichero"
+    piezas: 17
+    huecos: NINGUNO
+    solapes: NINGUNO
+    lineas con texto de la 8 en adelante: 107
+    cubiertas: 107
+    sin cubrir: NINGUNA
+
+**107 DE 107 LINEAS CON TEXTO CUBIERTAS, CERO HUECOS Y CERO SOLAPES.**
+
+## D.2. EL SALDO DE LA FRONTERA, CON LA SUMA DELANTE
+
+| | piezas |
+|---|---|
+| **PROCEDIMIENTO** | **10**: P5, P6, P7, P10 a P16 |
+| **POSTURA** | **6**: P3, P4, P8, P9, P17, y el cierre de P2 |
+| **CASO** (dentro de un nodo) | **1**: P2 |
+| **ATRIBUCION** | **3**: P12, P13, P14 |
+| **PARATEXTO** | **1**: P1 |
+
+**Suma: 10 piezas de procedimiento menos P15, que va con P14, dan 9 nodos.
+Anuncio 9 candidatos.**
+
+**ES LA COSECHA MAS BAJA DE LAS CUATRO, y no lo disimulo: 9 sobre 6.137 palabras
+son 1,47 por mil, contra 3,03, 2,87 y 1,95 de los tres anteriores.** El motivo
+esta en la propia frontera: **seis piezas de postura**, que es el doble que
+cualquier capitulo de esta vuelta. Este capitulo describe **como cambia el
+trabajo cuando el equipo crece** mas que **que hacer**, y describir no es
+procedimentar.
+
+### DISCUTIBLE 8: `You Pick and Choose Your Battles` fuera, y esta vez por un motivo NUEVO
+
+**P8 (`L73` a `L79`) no tiene nodo, y no es solo por la vara: es que YA LO
+ESCRIBI.** Su acto es *tienes que priorizar; cuales son los temas mas importantes
+a los que prestar atencion y donde vas a trazar la linea*, y eso **es el mismo
+procedimiento que `priorizar_pocas_cosas_bien` de `cap_09`**, que ademas trae la
+practica concreta que aqui falta, ordenar toda lista por importancia.
+
+**Es `P.19` aplicada entre capitulos:** si el material repite el mismo objeto,
+**no se busca destino, se funde**, y aqui ya estaba fundido en el nodo del
+capitulo anterior. **Mandarlo a nodo propio fabricaria el gemelo de su propio
+donante**, que es exactamente lo que `P.19` nombra.
+
+### DISCUTIBLE 9: la CUARTA cabeza que no escribo, y ya propongo algo
+
+**P9 (`L81` a `L87`) nombra las habilidades que importan arriba** y no tiene nodo,
+por la misma vara que P19 de `cap_07`, P13 de `cap_08` y la de la vista macro de
+este mismo capitulo.
+
+    $ sed -n '87p' fuentes/zhuo_manager/cap_10.md
+    87: At higher levels of management, the job starts to converge regardless of
+
+**VAN CUATRO CABEZAS DESCARTADAS EN UNA SOLA VUELTA, Y ESO YA NO ES UN CASO: ES
+UN PATRON DEL LIBRO.** Este autor escribe una y otra vez la misma figura:
+**encuadre, mas una lista de punteros a lo que viene despues, sin actos propios.**
+Mi vara la tumba siempre, y el precio es que **las partes se quedan sin madre en
+el grafo cuatro veces.**
+
+> **PROPUESTA AL FUNDADOR, y la escribo en mi sede porque es donde el extractor
+> propone (`EXTRACTOR.md` 14), no en `PARA_ALEXIS.md` (`D.28`):**
+>
+> **Esta casa no tiene figura para una CABEZA SIN PASOS PROPIOS cuyas partes si
+> son nodos.** Hoy la unica salida es no escribirla, y entonces cuatro familias
+> de nodos entran huerfanas; la otra salida seria inventarle pasos, que `D.30`
+> prohibe. **No la resuelvo yo y no muevo la vara** (`EXTRACTOR.md` 9: ninguna
+> vuelta la estrecha ni la ensancha sin correccion declarada). **Traigo el
+> recuento: 4 de 4 en esta vuelta.**
