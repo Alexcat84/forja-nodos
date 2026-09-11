@@ -1,0 +1,42 @@
+{
+  "id": "tratar_jefe_entrenador",
+  "titulo": "Tratar a tu jefe como entrenador y no como juez",
+  "denominaciones": {
+    "nombre_largo": "La segunda via de aprender en el puesto: convertir a tu propio jefe en tu mejor fuente de aprendizaje, con los tres movimientos y sus frases",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "treat your manager as a coach"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando sientes que no estas aprendiendo de tu jefe, o cuando te descubres evitando pedirle ayuda porque te parece que pedirsela seria admitir que no eres capaz.",
+  "entregable_esperado": "Tu relacion con tu jefe usada como fuente de aprendizaje, con opinion pedida, metas compartidas y problemas duros llevados a el a proposito.",
+  "escala_minima": "Tu y tu jefe, y sus reuniones a solas ya existentes.",
+  "pasos_accionables": [
+    "Parte de lo que se ha discutido sobre el papel del directivo: tu propio jefe deberia ser una de tus mejores fuentes de aprendizaje.",
+    "Cuenta con que puede no serlo de forma natural: quiza no ve tu dia a dia, o esta ocupado apagando otros fuegos, o sencillamente no es tan proactivo ayudandote a guiar tu camino como a ti te gustaria.",
+    "Ten claro de quien es el asunto de todas formas: la persona mas invertida en tu carrera no es el, eres tu. Tu propio crecimiento esta en tus manos, asi que si sientes que no estas aprendiendo de tu jefe, preguntate que puedes hacer tu para tener la relacion que quieres.",
+    "Ten delante la barrera mas grande que la autora dice haber encontrado: la gente rehuye pedirle ayuda a su jefe. Ella misma sostuvo durante anios el modelo mental de que su jefe, igual que sus maestros y profesores del pasado, era alguien en posicion de autoridad que tomaba nota de lo que hacia y lo juzgaba. Y asi, como se relacionaba con su jefe se resumia en una frase: no la fastidies. Consideraba un fracaso que su jefe tuviera que meterse en algo de lo que ella era responsable, porque le parecia el equivalente de un letrero de neon parpadeando que dijera aviso, esta empleada no es lo bastante competente para ocuparse sola de su tarea.",
+    "Contrasta eso con lo que ya sabes: el trabajo de un jefe es ayudar a su equipo a conseguir mejores resultados, asi que cuando tu lo haces mejor, por extension el lo hace mejor. Tu jefe es alguien que esta de tu lado, que quiere que tengas exito y que normalmente esta dispuesto a invertir su tiempo y su energia en ayudarte.",
+    "La clave es tratar a tu jefe como entrenador, no como juez.",
+    "Comprueba lo absurdo de lo contrario con la prueba que el libro pone: te imaginas a un atleta estrella intentando esconderle sus debilidades a su entrenador? Le dirias a una entrenadora personal que estas bastante en forma y lo tienes controlado cuando te pregunta como puede ayudarte a sacar mas del entrenamiento? Claro que no, porque no es asi como funciona una relacion de entrenamiento.",
+    "Primer movimiento: pidele opinion. Que habilidades crees que deberia trabajar para tener mas impacto?",
+    "Segundo movimiento: comparte tus metas personales y pidele su ayuda. Quiero aprender a ser mejor presentando, asi que te agradeceria que estuvieras atento a oportunidades donde pueda ponerme delante de otros.",
+    "Tercer movimiento: cuentale tus problemas dificiles para que pueda ayudarte a resolverlos. Estoy decidiendo una contratacion entre dos candidatos con fuerzas distintas, puedo explicarte como lo estoy pensando y pedirte consejo?",
+    "Y saca mas partido de las reuniones a solas viendolas como una oportunidad de aprendizaje enfocado, que es lo que a la autora le cambio el rendimiento de las suyas. Incluso cuando no esta lidiando con ningun problema, hacer preguntas abiertas como que criterio usas para decidir a que reuniones asistes, o como abordas el vender un candidato, aprovecha lo que su jefe sabe y le ensenia algo nuevo."
+  ],
+  "resumen_teorico": "Es la segunda via de aprendizaje y la que mas trabajo hace sobre el modelo mental del que aprende, no sobre su tecnica: el libro dedica la mitad de la pieza a desmontar la idea del jefe como juez antes de pedir nada. Su inventario propio son los tres movimientos, cada uno con su frase escrita literalmente, mas las preguntas abiertas de las reuniones a solas. La prueba del atleta y su entrenador esta aqui porque es el argumento con el que el libro cierra el cambio de modelo. Lo que el libro NO dice, y por eso no esta escrito: que hacer si el jefe, pedido asi, sigue sin entrenar."
+}

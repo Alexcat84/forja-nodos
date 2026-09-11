@@ -1,0 +1,37 @@
+{
+  "id": "celebrar_pequenias_victorias",
+  "titulo": "Celebrar las pequenias victorias para romper el ciclo negativo",
+  "denominaciones": {
+    "nombre_largo": "El quinto consejo del Pozo: el diario de pequenias victorias, y el apunte de las cinco cosas que se agradecen cada noche",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "celebrate the little wins"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando estas en el Pozo repasando una y otra vez tus fracasos porque te estas cuestionando si tienes lo que hace falta para tener exito.",
+  "entregable_esperado": "Un registro escrito y diario de cosas que hiciste y de las que estas orgulloso, por pequenias que sean, con el foco puesto en lo que va bien y no en lo que falta.",
+  "escala_minima": "Una persona y un cuaderno. El libro lo hace con una anotacion al dia.",
+  "pasos_accionables": [
+    "Ten delante el ciclo en el que estas: cuando estas en el Pozo repasas sin parar tus fracasos, porque te estas cuestionando si tienes o no lo que hace falta para tener exito.",
+    "Rompe ese ciclo negativo contandote una historia distinta: en vez de pensar que es lo que no estoy haciendo bien, pon el foco en todas las maneras en que estas ganando.",
+    "Ten delante de donde le vino la idea a la autora, porque el libro lo cuenta: en un periodo especialmente dificil le conto a una colega lo ahogada que se sentia, porque no conseguia contratar lo bastante rapido para todos los proyectos que necesitaban direccion de disenio y cada dia sentia la presion de ser el cuello de botella. La colega le recordo que por duras que estuvieran las cosas, no todo lo que hacia era un fracaso: una de sus entradas de blog recientes le habia tocado la fibra y la habia compartido con todo su equipo, y le dio las gracias por escribirla.",
+    "Fijate en lo que aquella conversacion le descubrio: se dio cuenta de que habia llegado a ver su escritura, y muchas otras responsabilidades suyas como revisar trabajo de disenio, entrenar o planificar la operacion, como rutina y no como algo valioso.",
+    "Monta un diario de pequenias victorias, que es lo que ella hizo: cada dia apunta algo que hiciste y de lo que estes orgulloso, aunque sea pequenio. Unas veces celebraba una reunion a solas en la que le dio a alguien un consejo util, otros dias se daba credito por haber conducido una reunion productiva, y una vez, en un dia especialmente duro, apunto que habia conseguido responder a unos cuantos correos a tiempo.",
+    "Y ten delante el dato con el que el libro lo cierra: los estudios muestran que si escribes cada noche cinco cosas por las que estes agradecido, a la larga te vas a sentir mas feliz. Cuando necesites construir tu confianza, haz lo mismo poniendo el foco en todas las cosas que si estas haciendo bien."
+  ],
+  "resumen_teorico": "Es el quinto consejo del Pozo y el mas barato de los seis: una anotacion al dia. Su inventario propio es el diario y sus tres ejemplos de entrada, que son los que fijan el listado tan bajo como el libro lo quiere, hasta responder correos a tiempo. El caso de la colega esta aqui porque es donde el libro situa el origen de la practica y porque nombra lo que la practica corrige: dejar de ver como rutina lo que es valioso. Lo que el libro NO dice, y por eso no esta escrito: ni durante cuanto tiempo se lleva el diario, ni si se relee."
+}

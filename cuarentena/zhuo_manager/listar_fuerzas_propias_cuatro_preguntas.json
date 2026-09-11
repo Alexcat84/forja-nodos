@@ -1,0 +1,40 @@
+{
+  "id": "listar_fuerzas_propias_cuatro_preguntas",
+  "titulo": "Listar tus propias fuerzas con cuatro preguntas",
+  "denominaciones": {
+    "nombre_largo": "La version rapida de conocer tus fuerzas, con las cuatro preguntas que el libro escribe y las respuestas de la autora como muestra",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "know your strengths"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando quieres entender como lideras y empiezas por la primera parte, que es saber en que eres fuerte, y no quieres pasar por un marco formal.",
+  "entregable_esperado": "Una lista escrita de tus fuerzas, agrupada en unos pocos temas, salida de responder cuatro preguntas con lo primero que se te venga a la cabeza.",
+  "escala_minima": "Una persona, papel y lapiz. El libro pide apuntar lo primero que venga a la cabeza, no un proceso.",
+  "pasos_accionables": [
+    "La primera parte de entender como lideras es conocer tus fuerzas, que son las cosas para las que tienes talento y que te encanta hacer.",
+    "Ten claro por que es crucial: la buena gestion suele salir de jugar con tus fuerzas, y no de arreglar tus debilidades.",
+    "Si quieres la version rapida en lugar de un marco formal como StrengthsFinder 2.0 de Tom Rath o StandOut de Marcus Buckingham, apunta lo primero que se te venga a la cabeza al hacerte las cuatro preguntas que siguen.",
+    "Primera: como me describirian en tres palabras las personas que mejor me conocen y me quieren, familia, pareja, amigos cercanos? La autora responde: atenta, entusiasta, empenada.",
+    "Segunda: que tres cualidades tengo de las que me sienta mas orgulloso? Ella responde: curiosa, reflexiva, optimista.",
+    "Tercera: cuando miro atras a algo que hice y salio bien, a que rasgos personales les doy el credito? Ella responde: vision, determinacion, humildad.",
+    "Cuarta: cuales son las tres opiniones positivas mas comunes que he recibido de mi jefe o de mis pares? Ella responde: con principios, aprende rapido, piensa a largo plazo.",
+    "Cuenta con que tus respuestas van a agruparse en unos pocos temas, igual que las suyas: en su caso, sonar a lo grande, aprender rapido y mantenerse animada.",
+    "Y sean cuales sean, recuerdalas y guardalas como algo querido, porque vas a apoyarte en ellas una y otra vez."
+  ],
+  "resumen_teorico": "Es la primera de las dos listas que el libro pide escribir, y su inventario propio son las cuatro preguntas, escritas una a una y con las respuestas de la autora al lado como muestra. La razon de que la lista sea de fuerzas y no de defectos tambien la pone el libro: la buena gestion sale de jugar con lo que tienes, no de arreglar lo que te falta. Lo que el libro NO dice, y por eso no esta escrito: ni cada cuanto se rehace la lista, ni cuantos temas son unos pocos, ni que se hace con la lista despues de guardarla."
+}

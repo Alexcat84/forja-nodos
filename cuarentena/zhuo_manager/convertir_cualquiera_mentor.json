@@ -1,0 +1,41 @@
+{
+  "id": "convertir_cualquiera_mentor",
+  "titulo": "Convertir a cualquiera en mentor pidiendole un consejo concreto",
+  "denominaciones": {
+    "nombre_largo": "La tercera via de aprender en el puesto: no pedir que alguien sea tu mentor, sino pedirle consejo especifico, con el guion exacto de la peticion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "make a mentor out of everyone"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando quieres aprender de mas gente que de tu jefe, o cuando te frena la idea de tener que pedirle a alguien que sea tu mentor.",
+  "entregable_esperado": "Consejo concreto obtenido de gente distinta, incluidos tus pares, sin haber pedido a nadie que sea tu mentor.",
+  "escala_minima": "Tu y un cafe con una persona a la que admires por algo concreto.",
+  "pasos_accionables": [
+    "Parte de que no hay ninguna regla que diga que solo puedes tener un entrenador: el mundo esta lleno de gente que puede ensenriarte algo.",
+    "Quedate con la definicion que el libro da de mentor, que es deliberadamente barata: alguien que comparte su experiencia para ayudarte a mejorar. No necesita ser nada mas formal que eso.",
+    "No trates la idea de mentor como algo demasiado precioso, que es lo que Sheryl Sandberg advierte en su libro Lean In: nadie quiere que le pregunten quieres ser mi mentor, porque suena necesitado y suena a que va a consumir mucho tiempo.",
+    "Pide consejo especifico en su lugar, y vas a encontrar montones de gente dispuesta a ayudar.",
+    "Mira en particular a tu grupo de pares, la gente con un trabajo parecido al tuyo, porque el libro dice que son una fuente excelente de apoyo y de consejo. La autora tiene un grupo de amigos que tambien dirigen disenio y al que ve cada pocos meses: como tienen responsabilidades parecidas, pueden hablar de las tendencias del mercado, compadecerse de los retos compartidos e intercambiar consejo sobre como llevan las criticas de trabajo o como montan sus talleres.",
+    "Ten delante lo concreto que puede llegar a ser eso: una de esas amigas construye cultura de forma fantastica y consigue cultivar en su equipo una sensacion de calidez, camaraderia y cuidado que la autora admira. A lo largo de los anios le ha hecho docenas de preguntas sobre como lo hace, como conduce sus reuniones, que herramientas usa para comunicarse con su equipo amplio, como se las arregla para extender esa sensacion de conexion a las oficinas remotas. Y sus respuestas le han dado forma directamente a como lleva su propio equipo: por una recomendacion suya, la autora mantiene bloques semanales de horas de puertas abiertas.",
+    "Y no lo limites a quien tenga tu mismo trabajo: aunque no lo tengan, la gente con la que trabajas probablemente tiene toda algo valioso que ensenriarte. Quiza un colega es un reclutador excepcional, quiza otra es muy buena vendiendo sus ideas, quiza tu persona a cargo es la persona mas creativa que conoces, quiza tu jefe tiene una habilidad aguda para ver lo mejor de cada uno.",
+    "Sea cual sea la habilidad, no tengas miedo de preguntar con este guion: oye, me impresiona mucho como haces tal cosa, me encantaria aprender de ti, te importaria tomarte un cafe conmigo y contarme como lo enfocas?",
+    "Ten presente que como estas pidiendo un favor, esta dentro de los derechos de la gente decir que no porque estan ocupados o porque no saben como ayudarte. Dales las gracias igualmente.",
+    "Pero cuenta con que mas a menudo de lo que crees la respuesta va a ser que si, porque todos nos hemos beneficiado de la mentoria de otros y mucha gente esta encantada de devolverlo."
+  ],
+  "resumen_teorico": "Es la tercera via de aprendizaje y la que quita un obstaculo de forma en vez de anadir una tecnica: el libro sostiene que lo que bloquea la mentoria es la solemnidad de la peticion, no la falta de gente dispuesta. Su inventario propio es el guion exacto de la peticion, escrito literalmente, mas el mapa de a quien pedirle, primero los pares y despues cualquiera con una habilidad que admires. El caso de la amiga que construye cultura esta aqui porque es donde el libro demuestra que el metodo produce cambios concretos, y nombra uno, los bloques semanales de horas de puertas abiertas. Lo que el libro NO dice, y por eso no esta escrito: ni cuantas veces se puede volver a la misma persona, ni que se devuelve a cambio."
+}

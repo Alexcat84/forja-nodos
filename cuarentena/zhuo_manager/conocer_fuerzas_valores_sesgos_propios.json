@@ -1,0 +1,38 @@
+{
+  "id": "conocer_fuerzas_valores_sesgos_propios",
+  "titulo": "Conocerte a fondo antes de sostener a tu equipo",
+  "denominaciones": {
+    "nombre_largo": "Los cinco objetos de conocerse: fuerzas, valores, zonas de confort, puntos ciegos y sesgos, con el caso del informe de veinte paginas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "get deep with knowing you"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando tienes obstaculos delante y te lanzas a resolverlos sin haberte mirado a ti primero, o cuando no sabes donde esta tu norte como directivo.",
+  "entregable_esperado": "Tu norte verdadero localizado, por haber ido a fondo con tus fuerzas, tus valores, tus zonas de confort, tus puntos ciegos y tus sesgos.",
+  "escala_minima": "Una persona y su propio caso. El libro lo hace con un entrenador y entrevistas a gente cercana, pero la lista de cinco objetos no necesita ninguna de las dos cosas.",
+  "pasos_accionables": [
+    "Parte de que ser un gran directivo es un viaje muy personal, y de que si no te manejas bien contigo mismo tampoco vas a manejarte bien con como sostener mejor a tu equipo.",
+    "Sea cual sea el obstaculo que tengas delante, ve primero a fondo con conocerte a ti: tus fuerzas, tus valores, tus zonas de confort, tus puntos ciegos y tus sesgos.",
+    "Cuenta con lo que eso te da: cuando te entiendes del todo, sabes donde esta tu norte verdadero.",
+    "El libro lo cuenta con el caso de la autora, y el caso es suyo y no tuyo: volviendo de tres meses de baja por maternidad se vio desbordada por cada pequenia cosa, y le pidio a su jefe un entrenador ejecutivo.",
+    "En la primera sesion ella empezo a enumerar problemas enredados, y la entrenadora la paro y le pidio dar un paso atras y hablarle de ella: de su pasado, del camino que la habia traido hasta ahi, y de como se veia a si misma a los ochenta anios mirando atras y preguntandose que queria recordar.",
+    "Despues la entrenadora entrevisto a varias personas con las que la autora trabajaba de cerca y volvio con un informe de veinte paginas sobre ella, sin nada sobre los problemas concretos: cuales eran sus fuerzas y sus debilidades percibidas, de que maneras impresionaba o irritaba a los de alrededor, y como era su estilo de gestion.",
+    "Y cuenta lo que aquel informe le dio, que es la razon de estar aqui: le sirvio para calibrar su propia brujula interna, para entender donde sus miedos estaban desmedidos y donde no estaba prestando suficiente atencion, y una vez supo donde estaba pudo empezar a avanzar."
+  ],
+  "resumen_teorico": "Es la cabeza del capitulo y su inventario propio cabe en una sola linea del libro, la que manda ir a fondo con conocerte y nombra los cinco objetos uno a uno: fuerzas, valores, zonas de confort, puntos ciegos y sesgos. El resto de la pieza es un caso, el del informe de veinte paginas, y entra aqui como ejemplo nombrado dentro de la doctrina y no como casa propia. Lo que el libro NO dice, y por eso no esta escrito: ni cada cuanto se repasa la lista, ni en que orden se recorren los cinco objetos, ni que hace falta un entrenador para recorrerla."
+}

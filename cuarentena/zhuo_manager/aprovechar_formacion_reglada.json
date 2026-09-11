@@ -1,0 +1,39 @@
+{
+  "id": "aprovechar_formacion_reglada",
+  "titulo": "Aprovechar la formacion reglada cuando tengas la oportunidad",
+  "denominaciones": {
+    "nombre_largo": "La quinta via de aprender en el puesto: las cinco formas de formacion reglada, la cuenta del retorno y la pregunta que decide",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "take advantage of formal training"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando te ofrecen formacion reglada y estas en medio de una semana frenetica calculando si merece la pena apartarte, en tiempo o en dinero.",
+  "entregable_esperado": "La decision sobre la formacion tomada con la pregunta correcta delante, y la oportunidad aprovechada en vez de aplazada por no parecer urgente.",
+  "escala_minima": "Una persona y una oportunidad concreta de formacion. El libro cuenta una clase de un solo dia.",
+  "pasos_accionables": [
+    "Si tienes la oportunidad de recibir formacion reglada, tomala.",
+    "Cuenta con las cinco formas que puede tomar, tal como el libro las nombra: apuntarte a un seminario de la empresa, asistir a un congreso del sector, participar en una mesa redonda, escuchar a expertos en un panel, o meterte en un taller practico.",
+    "Ten delante por que se aplaza aunque parezca obvio que ayuda: rara vez se siente urgente ni necesaria. Ademas de costar tiempo, tiende a costar dinero, y por eso nos metemos en un tira y afloja clasico con nosotros mismos. Merece la pena? Sobre todo en medio de una semana frenetica, es de verdad buena idea apartarse para un taller de dos dias, o renunciar a una tarde tranquila en casa por una conferencia?",
+    "Ten delante la cuenta que el libro hace: la respuesta normalmente es que si, porque si pasar diez horas formandote te ayuda a ser aunque sea un uno por ciento mas eficiente en tu trabajo, es un buen retorno de la inversion, ya que un uno por ciento del tiempo ahorrado al anio son unas veinte horas.",
+    "Ten delante tambien lo que la autora cuenta de su propia experiencia: hace varios anios hizo una clase de un solo dia sobre como tener conversaciones dificiles, y aquellas ocho horas le transformaron la manera de abordar el conflicto. Salio con la creencia recien estrenada de que si, es posible tener una conversacion productiva con cualquiera sobre cualquier cosa, y aun hoy no pasa una sola semana sin que recuerde algo que se llevo de aquel curso.",
+    "Cuenta con que hay otro tipo de formacion reglada: el entrenamiento profesional. Probablemente vas a tener que pagarlo de tu bolsillo salvo que tu empresa lo cubra, que algunas lo hacen para los puestos altos. Muchos consejeros delegados y directivos trabajan con entrenadores profesionales porque a ese nivel hay menos gente que pueda servirles de mentor de forma natural, y hasta mejoras pequenias en su rendimiento se traducen en un impacto significativo para la organizacion.",
+    "Y cuando pienses en formacion reglada, cambia la pregunta. La pregunta que hay que hacerse no es merece la pena hacer esto ahora mismo con todo lo que tengo en el plato, o con todo lo demas en lo que podria gastarme el dinero, sino: dentro de un anio, me alegrare de haberlo hecho? Planteado asi, la eleccion tiende a estar mas clara.",
+    "Ten presente para quien es la inversion: cuando inviertes en tu propio aprendizaje y crecimiento, no estas invirtiendo solo en tu futuro sino tambien en el de tu equipo, porque cuanto mejor seas, mas capaz seras de sostener a los demas."
+  ],
+  "resumen_teorico": "Es la quinta y ultima via de aprendizaje y la unica que se decide y no se practica: todo el peso de la pieza esta en desbloquear una decision que se aplaza por no parecer urgente. Su inventario propio es triple: las cinco formas que puede tomar la formacion reglada, nombradas una a una, la cuenta del retorno con sus dos cifras, y la reformulacion de la pregunta que decide. El entrenamiento profesional entra como sexta forma con su propia condicion, quien lo paga y por que a cierto nivel se usa. Lo que el libro NO dice, y por eso no esta escrito: ni cuanta formacion al anio, ni como se elige entre dos oportunidades a la vez."
+}

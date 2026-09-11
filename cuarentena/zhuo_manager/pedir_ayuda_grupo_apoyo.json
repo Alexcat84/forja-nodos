@@ -1,0 +1,46 @@
+{
+  "id": "pedir_ayuda_grupo_apoyo",
+  "titulo": "Pedir ayuda a gente con la que puedas ser autentico",
+  "denominaciones": {
+    "nombre_largo": "El cuarto consejo del Pozo: encontrar tu grupo de apoyo entre los cuatro sitios que el libro nombra, y usarlo como animadores y caja de resonancia",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "ask for help from people you can be real with"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando te encuentras en el Pozo y te lo estas callando, aguantando el tipo y fingiendo que lo tienes todo bajo control.",
+  "entregable_esperado": "Un grupo de apoyo encontrado y en uso como animadores y como caja de resonancia, en lugar del silencio.",
+  "escala_minima": "Una persona de confianza basta. El libro nombra cuatro sitios donde buscarla y su propio ejemplo es un grupo de doce que se ve dos horas al mes.",
+  "atribuciones": [
+    {
+      "cifra": "el 82 por ciento de las personas con trastorno maniaco depresivo declararon sobrellevar mejor su enfermedad despues de unirse a un grupo de autoayuda",
+      "autor": "no nombrado en el texto, que solo dice que la investigacion lo sugiere y lo da como un ejemplo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: ni estudio, ni muestra, ni anio"
+    }
+  ],
+  "pasos_accionables": [
+    "Mira primero el error que la autora cuenta haber cometido durante anios: cuando se encontraba en el Pozo se mordia el labio y se lo guardaba, porque como dice el dicho hay que fingirlo hasta lograrlo, y pensaba que aparentando tenerlo todo bajo control dejaria de sentirse un fraude y nadie se enteraria.",
+    "Ten claro por que dice que era un error: se negaba a si misma el alivio que da poder compartir tus miedos con gente en la que confias, y se perdia su empatia y sus consejos.",
+    "Cuenta con lo que admitir que estas batallando y pedir ayuda es de verdad: lo contrario de debilidad. De hecho muestra coraje y conciencia de uno mismo, porque estas diciendo que te importa mas llevarte a un buen sitio que tu ego.",
+    "Ten delante que cuando otros entienden nuestra situacion nos beneficiamos enormemente: el libro dice que la investigacion sugiere que los grupos de apoyo son notablemente efectivos, incluso para problemas serios de salud mental, y da como ejemplo que el ochenta y dos por ciento de las personas con trastorno maniaco depresivo declararon sobrellevar mejor su enfermedad despues de unirse a un grupo de autoayuda.",
+    "El libro lo cuenta ademas de primera mano: la autora formo un circulo de Lean In con una docena de mujeres de la empresa, y dos horas cada mes daban la vuelta a la sala compartiendo aquello con lo que estaba lidiando cada una, relaciones dificiles, incertidumbre sobre sus carreras, la lucha por equilibrar la maternidad con el trabajo. Las lagrimas no eran raras porque algunos de los retos eran de verdad duros, y donde podian se daban ayuda y consejo, y donde no, ofrecian abrazos y oidos comprensivos.",
+    "Encuentra tu grupo de apoyo, ya sea con tu familia, tu mejor amigo, un entrenador o un grupo de colegas de confianza.",
+    "Y usalos para las dos cosas que el libro nombra: como tus animadores y como tu caja de resonancia. Ninguna persona es una isla, y nuestra comunidad puede alumbrarnos el camino y echarnos una mano en la subida para salir del Pozo."
+  ],
+  "resumen_teorico": "Es el cuarto consejo del Pozo y el unico que necesita a otras personas para ejecutarse. Su inventario propio son los cuatro sitios donde buscar el grupo, nombrados uno a uno, y los dos usos que se le da, animadores y caja de resonancia, que es lo que impide que encuentra tu grupo de apoyo quede en un enunciado sin acto. El libro apoya la peticion con un dato atribuido y con su propio caso, y los mantiene separados: uno es investigacion y el otro es experiencia suya. Lo que el libro NO dice, y por eso no esta escrito: ni cada cuanto se reune un grupo de apoyo, ni cuantos son, mas alla del ejemplo que cuenta de si misma."
+}

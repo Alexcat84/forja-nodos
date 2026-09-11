@@ -1,0 +1,41 @@
+{
+  "id": "disenar_entorno_rendir_mejor",
+  "titulo": "Disenar tu dia a dia a partir de lo que te hace rendir mejor",
+  "denominaciones": {
+    "nombre_largo": "La tercera parte de entenderte: que entornos te hacen dar lo mejor, con los seis hechos y los seis habitos de la autora como muestra y tres preguntas para el que no lo sabe",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "understand yourself at your best"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando ya conoces tus fuerzas y tus debilidades y quieres pasar a lo siguiente, que es saber en que entornos haces tu mejor trabajo, para poder disenar tu dia a dia en torno a ello.",
+  "entregable_esperado": "Tu dia a dia disenado para responder a tus necesidades, a partir de una lista escrita de lo que te permite dar lo mejor de ti y de los habitos que la sostienen.",
+  "escala_minima": "Una persona y su calendario. Los habitos que el libro muestra son de una sola persona y caben en una agenda.",
+  "pasos_accionables": [
+    "Mas alla de fuerzas y debilidades, la parte siguiente de entenderte a ti mismo es saber que entornos te ayudan a hacer tu mejor trabajo y que situaciones te disparan una reaccion negativa.",
+    "Usalo para lo que el libro dice que sirve: disenar tu dia a dia para que responda a tus necesidades.",
+    "Ten delante lo que la autora cuenta que ha aprendido con los anios sobre lo que la habilita a ella para estar en su mejor version, que son seis cosas y son suyas. Haber dormido al menos ocho horas la noche anterior. Haber hecho algo productivo temprano en el dia, que la motiva a mantener el impulso. Saber a que se parece el resultado que busca antes de empezar. Tener confianza y camaraderia con la gente con la que trabaja. Poder procesar la informacion a solas, y por escrito, antes de las grandes discusiones o decisiones. Y sentir que esta aprendiendo y creciendo.",
+    "Y ten delante los seis habitos que ella cambio una vez entendio esos hechos, para que le fuera mas facil operar en su entorno ideal, que tambien son suyos y son ejemplos. Puso varias alarmas de preparate para la cama a las diez, las diez y cuarto y las diez y media, para que su cabeza toque la almohada a las once en punto. Hace ejercicio de diez a quince minutos por la maniana nada mas levantarse, que no es mucho pero le da una sensacion de logro que ancla el resto del dia. Se reserva media hora de preparacion diaria en el calendario para estudiar su dia y visualizar como quiere que vaya cada reunion o cada tarea. Hace un esfuerzo por hacerse amiga de sus colegas y conocer sus vidas fuera del trabajo. Se reserva bloques de tiempo para pensar en el calendario, para ordenar y escribir sus ideas sobre los problemas grandes. Y dos veces al anio mira atras a los seis meses pasados, reflexiona sobre en que ha mejorado y se pone nuevas metas de aprendizaje para los seis meses siguientes.",
+    "Cuenta con lo que esos pequenios habitos dan y con lo que no: le han dado una mayor sensacion de control, y no son perfectos ni de lejos. Aun con suenio y ejercicio suficientes ella sigue acabando algunos dias agotada, las reuniones y las tareas no siempre salen como planea, y a veces pasan dias o semanas en las que su tiempo para pensar queda reducido a nada. Pero esos pasos, por pequenios que sean, marcan una diferencia en como de bien trabaja y piensa.",
+    "Cuenta tambien con que otra gente tiene preferencias completamente distintas: una amiga suya es de maniana, se levanta a las cinco y sus primeras horas son las mas productivas, asi que ataca entonces sus problemas mas duros y deja las tareas menos intensivas para la tarde. Otro amigo intenta ordenar su calendario para cambiar de contexto lo menos posible, y encadena todas sus reuniones y llamadas seguidas para tener bloques largos e ininterrumpidos antes y despues.",
+    "Si no sabes a que se parece tu entorno ideal, hazte estas tres preguntas.",
+    "Primera: en que periodo de seis meses de mi vida me senti mas energico y productivo, y que me dio esa energia?",
+    "Segunda: en el ultimo mes, que momentos destacan como lo mejor, que condiciones permitieron que ocurrieran, y se pueden recrear?",
+    "Tercera: en la ultima semana, cuando estuve en un estado de foco profundo, y como llegue ahi?"
+  ],
+  "resumen_teorico": "Es la tercera parte de entenderse y la primera que produce cambios en el calendario en vez de en una lista. Su inventario propio es triple: los seis hechos de la autora, los seis habitos con los que respondio a esos hechos, y las tres preguntas para el que no sabe cual es su entorno ideal. Los doce primeros son suyos y el libro los presenta como tales, asi que aqui entran como muestra y no como receta; las tres preguntas son lo unico dirigido al lector. El libro ata la parte a su para que sirve en la misma linea en que la abre: disenar el dia a dia para que responda a tus necesidades. Lo que el libro NO dice, y por eso no esta escrito: ni cada cuanto se revisa el entorno, ni que hacer cuando tu entorno ideal choca con el de tu equipo."
+}
