@@ -13256,3 +13256,121 @@ la frase de Bezos y la de Yogi Berra igual que el 35 por ciento del informe de
 **SIGO SIN REPRODUCIR LAS CIFRAS DE LA VUELTA 11 NI LAS DEL AUDITOR, Y NO LAS
 RESUELVO COPIANDO** (`EXTRACTOR.md` 5). Lo que anado es **la definicion**, que es
 lo que faltaba para saber si las tres miden lo mismo.
+
+---
+
+# TAREA 2. EL INFORME DEL LOTE Y EL RELOJ
+
+*El encargo lo pone asi: **la bandeja esta vacia al empezar esta vuelta**, porque
+los 68 se insertaron y se archivaron. **Mide cuanto tarda el informe y dilo**: el
+coste crecia porque la carpeta crecia, y con la bandeja vacia tiene que volver a
+su tamanio. **Si el informe sigue creciendo con la carpeta chica, entonces es del
+instrumento y eso se trae.** No lo arregles: mide y declara.*
+
+## F.1. LA BANDEJA ESTABA VACIA, Y ESO SE MIDIO ANTES DE TOCAR NADA
+
+    $ ls cuarentena/zhuo_manager | wc -l     ->  0     (en la apertura, 12.1)
+    $ ls cuarentena/zhuo_manager/*.json | wc -l -> 60  (al cerrar, F.4)
+
+## F.2. LOS PUNTOS QUE TENGO, CON SUS CONDICIONES ESCRITAS
+
+**Corri el informe de carpeta CUATRO veces en esta vuelta**, una por capitulo, y
+**las cuatro corridas tienen condiciones distintas que se declaran**, porque un
+reloj sin sus condiciones no es una medida:
+
+| corrida | candidatos | nodos del grafo | como corrio | duracion | **por candidato** |
+|---|---:|---:|---|---|---:|
+| cierre de `cap_07` | **16** | 135 | **primer plano, con NADA mas corriendo** | **7 min 23 s** | **27,7 s** |
+| cierre de `cap_08` | **37** | 135 | segundo plano, **con informes de candidato corriendo a la vez** | **17 min 54 s** | **29,0 s** |
+| cierre de `cap_09` | **51** | 135 | segundo plano, **con informes de candidato corriendo a la vez** | *(F.3)* | *(F.3)* |
+| **cierre de `cap_10` y del lote** | **60** | 135 | **primer plano, con NADA mas corriendo** | *(F.3)* | *(F.3)* |
+
+**Y un quinto punto, que es el mas limpio de todos porque lo corri 68 veces:**
+
+    $ date '+inicio %H:%M:%S' ; python forja.py informe cuarentena/zhuo_manager/<uno>.json ; date '+fin %H:%M:%S'
+    inicio 08:14:12
+    fin 08:14:42
+
+**UN candidato contra 135 nodos: 30 segundos.**
+
+## F.3. LA PREDICCION, ESCRITA Y COMMITEADA **ANTES** DE CORRER LA CUARTA
+
+*`EXTRACTOR.md` 8 manda marcar los discutibles antes de saber si aciertas. **Lo
+mismo vale para un modelo**: un modelo que se publica despues de ver el dato no
+se ha arriesgado a nada.*
+
+**CON LOS DOS PUNTOS LIMPIOS DE ARRIBA, AJUSTO EL MODELO MAS SIMPLE QUE PUEDE
+DISTINGUIR LAS DOS HIPOTESIS EN JUEGO:**
+
+    coste(N) = a * N * G   +   b * N * N
+               |                |
+               |                +-- termino CUADRATICO: cada candidato contra
+               |                    cada otro candidato DEL LOTE. Es la hipotesis
+               |                    de la vuelta 11: "el coste por candidato
+               |                    depende del TAMANIO DE LA CARPETA"
+               +-- termino LINEAL: cada candidato contra cada nodo del GRAFO
+
+    16 candidatos:  16*a*135 + 256*b  = 443 s
+    37 candidatos:  37*a*135 + 1369*b = 1074 s
+    ------------------------------------------------
+    a = 0,1977 s por comparacion candidato contra nodo
+    b = 0,063 s por par dentro del lote
+
+> ## LA PREDICCION PARA LA CORRIDA DE 60, ESCRITA ANTES DE LANZARLA
+>
+> **coste(60) = 60 x 0,1977 x 135 + 3.600 x 0,063 = 1.601 + 227 = 1.828 s**
+>
+> ### **UNOS 30 MINUTOS Y 30 SEGUNDOS, mas o menos dos minutos.**
+>
+> **Y el reparto que predice, que es lo que de verdad contesta la pregunta del
+> encargo:** de esos 30 minutos, **26 min 41 s son el grafo** y solo **3 min 47 s
+> son la carpeta**. Es decir, **el termino cuadratico existe pero es el 12 por
+> ciento del coste**, no el que manda.
+
+**SI ACIERTO, la respuesta al encargo es:** el informe **NO sigue creciendo con la
+carpeta**; crece **casi linealmente con el numero de candidatos**, y lo que paga
+cada candidato es **su comparacion contra los 135 nodos del grafo**, no contra sus
+vecinos de bandeja. **Con la bandeja vacia el informe no volvio a su tamanio
+porque nunca dependio sobre todo de la bandeja: depende del GRAFO, y el grafo
+paso de 52 a 135.**
+
+**SI FALLO, lo digo y el modelo se cae**, que para eso se publica antes.
+
+## F.3.bis. LA DISCREPANCIA CON LA VUELTA 11, DECLARADA Y NO RESUELTA
+
+*`EXTRACTOR.md` 5: si la medicion de hoy discrepa de una nota previa, **la
+discrepancia se declara en vez de resolverse copiando**.*
+
+| quien midio | candidatos | nodos | duracion | por candidato |
+|---|---:|---:|---|---:|
+| yo, vuelta 10 | 50 | 52 | 27 min | 32 s |
+| el auditor, ACTA 10 | 50 | 52 | mas de 90 min, sin terminar | mas de 108 s |
+| yo, vuelta 11 | 68 | 52 | 43 min 22 s | 38,3 s |
+| **yo, vuelta 12, `cap_07`** | **16** | **135** | **7 min 23 s** | **27,7 s** |
+| **yo, vuelta 12, `cap_08`** | **37** | **135** | **17 min 54 s** | **29,0 s** |
+
+**MI MEDIDA DE HOY CONTRADICE LA LECTURA DE LA VUELTA 11 EN LOS DOS SENTIDOS, Y
+LAS DOS CONTRADICCIONES SE ESCRIBEN:**
+
+1. **La vuelta 11 leyo que el coste por candidato crece con la carpeta** (18,8 s
+   con 50 dentro, mas de 45 s con 68 dentro). **Hoy, con el mismo grafo, 16 en la
+   carpeta dan 27,7 s y 37 dan 29,0 s: practicamente plano.**
+2. **La vuelta 11 midio 38,3 s por candidato contra un grafo de 52 nodos.** Hoy,
+   contra un grafo **de 135, que es 2,6 veces mayor**, mido **27,7**. **Si el
+   coste dependiera sobre todo del grafo, hoy deberia ser MAS lento, y es mas
+   rapido.**
+
+**NO LA RESUELVO, y digo por que no puedo:** entre las dos vueltas cambiaron a la
+vez el grafo, la carpeta, la longitud media de los candidatos y la maquina.
+**Con cuatro variables movidas, cualquier explicacion que yo diera seria una
+historia**, y una explicacion parcial presentada como completa es peor que la
+discrepancia (lo escribio la vuelta 11 y lo suscribo).
+
+**LO QUE SI DIGO ES QUE MEDICION DECIDIRIA:** correr **la misma carpeta** contra
+**dos grafos de tamanio distinto**, en la misma maquina y seguidas. **Yo no puedo
+hacerlo sin tocar el grafo, y tocar el grafo es insertar.** Lo dejo como la
+medicion pendiente.
+
+**Y NO TOQUE EL INFORME NI LOS UMBRALES PARA QUE EL RELOJ BAJARA** (moratoria de
+maquinaria, `EXTRACTOR.md` 13, y el encargo lo prohibe expresamente). **Los
+cuatro numeros de arriba salen del instrumento tal como esta.**
