@@ -1,0 +1,115 @@
+candidatos del lote: 68
+  medido 1/68
+  medido 2/68
+  medido 3/68
+  medido 4/68
+  medido 5/68
+  medido 6/68
+  medido 7/68
+  medido 8/68
+  medido 9/68
+  medido 10/68
+  medido 11/68
+  medido 12/68
+  medido 13/68
+  medido 14/68
+  medido 15/68
+  medido 16/68
+  medido 17/68
+  medido 18/68
+  medido 19/68
+  medido 20/68
+  medido 21/68
+  medido 22/68
+  medido 23/68
+  medido 24/68
+  medido 25/68
+  medido 26/68
+  medido 27/68
+  medido 28/68
+  medido 29/68
+  medido 30/68
+  medido 31/68
+  medido 32/68
+  medido 33/68
+  medido 34/68
+  medido 35/68
+  medido 36/68
+  medido 37/68
+  medido 38/68
+  medido 39/68
+  medido 40/68
+  medido 41/68
+  medido 42/68
+  medido 43/68
+  medido 44/68
+  medido 45/68
+  medido 46/68
+  medido 47/68
+  medido 48/68
+  medido 49/68
+  medido 50/68
+  medido 51/68
+  medido 52/68
+  medido 53/68
+  medido 54/68
+  medido 55/68
+  medido 56/68
+  medido 57/68
+  medido 58/68
+  medido 59/68
+  medido 60/68
+  medido 61/68
+  medido 62/68
+  medido 63/68
+  medido 64/68
+  medido 65/68
+  medido 66/68
+  medido 67/68
+  medido 68/68
+
+PARES INTERNOS QUE LEVANTAN EN AL MENOS UN SENTIDO: 24
+  simetricos (levantan en los dos): 16
+  ASIMETRICOS (levantan en uno solo): 8
+
+ASIM actuar_conducta_contraria_valores -> reconocer_decision_dificil_valores  levanta por similitud_texto
+     candidato->vecino {"similitud_texto": 0.355, "familia_id": 0.143, "paso_contra_nodo": 0.436}
+     vecino->candidato null   (no levanta)
+ASIM cerrar_reunion_pasos_siguientes -> auditar_calendario_reuniones_semana  levanta por similitud_texto
+     candidato->vecino {"similitud_texto": 0.353, "familia_id": 0.143, "paso_contra_nodo": 0.423}
+     vecino->candidato null   (no levanta)
+ASIM examinar_trabajo_pasado_candidato -> auditar_calendario_reuniones_semana  levanta por similitud_texto
+     candidato->vecino {"similitud_texto": 0.353, "familia_id": 0.0, "paso_contra_nodo": 0.411}
+     vecino->candidato null   (no levanta)
+ASIM avisar_organizador_reunion_prescindible -> repartir_responsabilidad_contratar_equipo  levanta por similitud_texto
+     candidato->vecino {"similitud_texto": 0.354, "familia_id": 0.0, "paso_contra_nodo": 0.382}
+     vecino->candidato null   (no levanta)
+ASIM desarrollar_estrategia_busqueda_candidatos -> entregar_experiencia_entrevista_excelente  levanta por similitud_texto
+     candidato->vecino {"similitud_texto": 0.352, "familia_id": 0.0, "paso_contra_nodo": 0.41}
+     vecino->candidato null   (no levanta)
+ASIM involucrar_varios_entrevistadores -> repartir_equipo_cartera_horizontes  levanta por similitud_texto
+     candidato->vecino {"similitud_texto": 0.375, "familia_id": 0.0, "paso_contra_nodo": 0.403}
+     vecino->candidato null   (no levanta)
+ASIM repartir_responsabilidad_contratar_equipo -> mediar_tiempo_palabra_reunion  levanta por similitud_texto
+     candidato->vecino {"similitud_texto": 0.357, "familia_id": 0.0, "paso_contra_nodo": 0.355}
+     vecino->candidato null   (no levanta)
+ASIM repartir_papeles_directivo_reclutador -> mostrar_candidato_cuanto_quieres  levanta por similitud_texto
+     candidato->vecino {"similitud_texto": 0.354, "familia_id": 0.0, "paso_contra_nodo": 0.47}
+     vecino->candidato null   (no levanta)
+
+SIM  ajustar_plan_fuerzas_equipo <-> crear_plan_creible_equipo
+SIM  ajustar_plan_fuerzas_equipo <-> disenar_equipo_plan_anual
+SIM  calcular_embudo_reclutamiento_propio <-> ejecutar_embudo_reclutamiento_escala
+SIM  crear_plan_creible_equipo <-> disenar_equipo_plan_anual
+SIM  desarrollar_estrategia_busqueda_candidatos <-> repartir_papeles_directivo_reclutador
+SIM  dirigir_reunion_decision <-> dirigir_reunion_generar_ideas
+SIM  dirigir_reunion_decision <-> dirigir_reunion_informativa
+SIM  dirigir_reunion_decision <-> dirigir_reunion_reforzar_relaciones
+SIM  dirigir_reunion_decision <-> dirigir_reunion_revision_trabajo
+SIM  dirigir_reunion_generar_ideas <-> dirigir_reunion_informativa
+SIM  dirigir_reunion_generar_ideas <-> dirigir_reunion_reforzar_relaciones
+SIM  dirigir_reunion_generar_ideas <-> dirigir_reunion_revision_trabajo
+SIM  dirigir_reunion_informativa <-> dirigir_reunion_reforzar_relaciones
+SIM  dirigir_reunion_informativa <-> dirigir_reunion_revision_trabajo
+SIM  dirigir_reunion_reforzar_relaciones <-> dirigir_reunion_revision_trabajo
+SIM  repartir_equipo_cartera_horizontes <-> repartir_responsabilidad_contratar_equipo

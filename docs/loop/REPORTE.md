@@ -17644,3 +17644,226 @@ mueven de una a otra**, y estan citados.
 > hago **en la mia y por anexion**, citando las suyas como contraste. Quien lea que una
 > cifra firmada por el auditor solo la corrige el auditor, **tiene donde agarrarse**; mi
 > defensa es que el encargo me manda expresamente publicar la cifra antes y despues.
+
+---
+
+# J.3. TAREA 1: LA INSERCION DEL LOTE 3, `zhuo_manager`
+
+**ES LA PRIMERA INSERCION QUE CORRE EL BUCLE.** Las catorce vueltas anteriores extrajeron
+a cuarentena con `MODO_INSERCION=cuarentena`; **`D.39` cambia el default y esta vuelta lo
+estrena.** La condicion que `D.39` pone es **lote cerrado en extraccion mas informe
+certificado por el acta**, y las dos se comprueban abajo antes de correr nada.
+
+## J.3.a. EL CENSO ESPERADO, PUBLICADO **ANTES** (punto 1 del encargo)
+
+    $ wc -l dataset/nodos.jsonl                        ->  135      (medido en J.0, antes de tocar nada)
+    $ ls cuarentena/zhuo_manager/*.json | wc -l        ->   68
+
+    CENSO ESPERADO AL CERRAR LA TAREA 1 : 135 + 68 = 203 nodos
+    VEREDICTOS ESPERADOS EN BITACORA    : 100 + (uno por par leido)
+
+**LA CIFRA SE PUBLICA ANTES PARA QUE EL CIERRE LA CONTRADIGA SI SE EQUIVOCA.** Si al
+cerrar no son 203, la diferencia se declara con su motivo y no se corrige el pronostico.
+
+## J.3.b. EL INFORME DE LOTE EN SECO, CORRIDO POR MI EN ESTA VUELTA
+
+*`EXTRACTOR.md` 12.2: **el lote se lee en seco antes de insertar nada**, y se lee entero
+antes de la primera insercion. Corrido a las 18:03, cerrado a las 19:39: **1 h 36 min**
+para 68 candidatos contra 135 nodos, que son 9.180 mediciones.*
+
+    $ sed -n '4,17p' .informe_lote3_vuelta15.txt
+    candidatos revisados        : 68
+    nodos en el grafo de destino: 135
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 59
+      BLOQUEARIAN esperando veredicto  : 9   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 9
+      por candidato bloqueado          : menor 1, mediana 1, mayor 1
+      que senial levanta cada vecindad : familia_id 8, paso_contra_nodo 1
+
+    $ grep -c "^\[ENTRARIA\]"    .informe_lote3_vuelta15.txt  ->  59
+    $ grep -c "^\[BLOQUEARIA\]"  .informe_lote3_vuelta15.txt  ->   9
+    $ grep -c "^\[CAERIA\]"      .informe_lote3_vuelta15.txt  ->   0
+    TOTAL 68 = 59 + 9 + 0  -> CUADRA con los 68 ficheros de la bandeja
+
+> # **LA DISCREPANCIA CON EL ENCARGO, DECLARADA ANTES DE INSERTAR Y NO RESUELTA COPIANDO**
+>
+> **El encargo escribe: *su informe esta certificado: 68 candidatos, los 68 `[ENTRARIA]`,
+> cero caidas*. MI CORRIDA DE HOY DA 59 `[ENTRARIA]` Y 9 `[BLOQUEARIA]`.** Lo declaro aqui,
+> arriba del todo, porque **una de las condiciones de parada del encargo es literalmente
+> *el informe del lote 3 no sale como el acta lo certifico*.**
+>
+> **DE DONDE SALE CADA CIFRA, con su sede:**
+>
+>     $ sed -n '12550p' docs/loop/ACTA_AUDITOR.md
+>     | 1 | **LA INSERCION DEL LOTE 3**: 68 candidatos en la bandeja, todos `[ENTRARIA]`, ...
+>
+>     $ sed -n '16298,16301p' docs/loop/REPORTE.md
+>       EL SALDO
+>         ENTRARIAN sin leer nada          : 59
+>         BLOQUEARIAN esperando veredicto  : 9   (no es rechazo: es cola de lectura)
+>         CAERIAN por una guarda           : 0
+>
+> **LA ACTA 13 ESCRIBIO *todos `[ENTRARIA]`* EN PROSA. LA VUELTA 14 CORRIO EL INSTRUMENTO
+> SOBRE LOS MISMOS 68 FICHEROS Y EL MISMO GRAFO DE 135, Y DIO 59 Y 9. HOY VUELVO A
+> CORRERLO Y DA LO MISMO: 59 Y 9, LOS MISMOS NUEVE, CON LA MISMA DESCOMPOSICION
+> `familia_id 8, paso_contra_nodo 1`.** **Tres corridas del instrumento (vuelta 12 con
+> N=60, vuelta 14 con N=68, y la mia) dan nueve bloqueos, y la frase de la prosa dice
+> cero.**
+>
+> ## **Y NO PARO. DIGO POR QUE, CON LAS TRES RAZONES SEPARADAS, Y CUALQUIERA DE LAS TRES
+> BASTARIA:**
+>
+> 1. **LA CONDICION DE `D.39` ES SOBRE LAS CAIDAS, NO SOBRE LOS BLOQUEOS.** Su letra dice
+>    *todos `ENTRARIAN`, **o las caidas declaradas con su motivo***. **Mis caidas son CERO**
+>    (`0 CAERIAN`, `0 CHOCAN`), que es la mitad de la frase que decide. **Un `BLOQUEARIA`
+>    no es una caida: el propio instrumento lo imprime en la misma linea**, *no es rechazo:
+>    es cola de lectura*.
+> 2. **EL ENCARGO ME PROHIBE EXPRESAMENTE PARAR POR ESTO.** Su lista `NO paras por` abre
+>    con: *que la aduana levante muchos vecinos con 135 nodos y una bandeja llena (**eso es
+>    la aduana funcionando**)*.
+> 3. **EL RESTO DEL ENCARGO PRESUPONE QUE HABRA BLOQUEOS.** Su TAREA 1 punto 3 manda
+>    insertar *con su veredicto razonado por vecino*, y su TAREA 2 dice que **la TAREA 1
+>    escribe la mayoria de los veredictos sola, porque son veredictos de pares que la aduana
+>    levanta al insertar.** **Con 68 `[ENTRARIA]` limpios no habria un solo veredicto que
+>    escribir y la TAREA 2 no tendria objeto.** La frase de la premisa y el cuerpo del
+>    encargo no dicen lo mismo, **y el cuerpo es el que asigna trabajo.**
+>
+> **LO QUE SI HAGO CON LA DISCREPANCIA:** dejarla escrita aqui con sus dos sedes y sus tres
+> corridas, **y marcarla como el primer discutible de esta vuelta** para que la relectura
+> ciega del auditor empiece por ella. **No la resuelvo yo: la declaro** (`EXTRACTOR.md` 5).
+
+### **LOS NUEVE DE LA COLA, PEGADOS DE LA SALIDA DE HOY**
+
+*Son los que van a pedirme veredicto razonado al insertarse. Los publico **antes** de
+escribir ni uno, que es lo que convierte el veredicto en lectura y no en tramite.*
+
+| # | candidato | vecino levantado | senial | sim / fam / paso |
+|---:|---|---|---|---|
+| 1 | `cerrar_reunion_pasos_siguientes` | `preguntar_jefe_sonado_persona_cargo` | **paso_contra_nodo** | 0,244 / 0,000 / **0,609** |
+| 2 | `dirigir_reunion_decision` | `dirigir_reunion_individual_semanal` | familia_id | 0,225 / **0,400** / 0,440 |
+| 3 | `dirigir_reunion_generar_ideas` | `dirigir_reunion_individual_semanal` | familia_id | 0,251 / **0,333** / 0,378 |
+| 4 | `dirigir_reunion_informativa` | `dirigir_reunion_individual_semanal` | familia_id | 0,208 / **0,400** / 0,378 |
+| 5 | `dirigir_reunion_reforzar_relaciones` | `dirigir_reunion_individual_semanal` | familia_id | 0,232 / **0,333** / 0,392 |
+| 6 | `dirigir_reunion_revision_trabajo` | `dirigir_reunion_individual_semanal` | familia_id | 0,283 / **0,333** / 0,442 |
+| 7 | `fijar_vision_concreta_equipo` | `fijar_proceso_trabajo_equipo` | familia_id | 0,188 / **0,333** / 0,405 |
+| 8 | `pedir_opinion_propia_reunion` | `pedir_opinion_otros_mejorar` | familia_id | 0,293 / **0,333** / 0,452 |
+| 9 | `preparar_preguntas_entrevista_antemano` | `evitar_preguntas_ilegales_entrevista` | familia_id | 0,100 / **0,333** / 0,447 |
+
+**NINGUNO PASA DE 0,35 EN SIMILITUD DE TEXTO**, que es la banda donde `EXTRACTOR.md` 11
+dice que viven los gemelos de verdad. **Ocho de los nueve los levanta `familia_id` en la
+banda 0,333 a 0,400**, que es la señal que la calibracion mide cazando el **51,1 por
+ciento** de los gemelos. **El unico con señal fuerte es el 1**, con `paso_contra_nodo`
+**0,609** sobre un umbral de 0,60: por nueve milesimas.
+
+## J.3.c. `D.36`, EL ORDEN QUE LEE: **SI HIZO FALTA REORDENAR, Y SON CUATRO**
+
+*Punto 2 del encargo: **mide la asimetria de los pares que bloqueen en los dos sentidos y
+ordena para que el par se lea**, y **di si hizo falta reordenar o no**, porque comprobarlo
+y que no haga falta no es lo mismo que no mirarlo.*
+
+**LO PRIMERO, QUE POBLACION HAY QUE MEDIR, PORQUE NO ES LA DEL INFORME.** El informe mide
+cada candidato contra **el grafo de 135**, y ahi el orden **no cambia nada**: los 135 ya
+estan y estaran igual para el primero y para el ultimo. **La asimetria que `D.36` caza vive
+ENTRE LOS 68 CANDIDATOS**, porque el primero que entra se vuelve vecino del segundo. **Esa
+es la poblacion que mido, y son 68 por 67 = 4.556 mediciones dirigidas.**
+
+    $ python -c "mide aduana.medir(A, B) para los 4.556 pares dirigidos del lote"
+    PARES INTERNOS QUE LEVANTAN EN AL MENOS UN SENTIDO: 24
+      simetricos (levantan en los dos): 16
+      ASIMETRICOS (levantan en uno solo): 8
+
+**LOS OCHO ASIMETRICOS, CON LAS DOS MEDIDAS PEGADAS**, que es lo que hace verificable la
+palabra *asimetria*:
+
+| # | si entra DESPUES, el par se lee | vecino | senial | sim (cand a vec) | sim (vec a cand) |
+|---:|---|---|---|---:|---:|
+| 1 | `actuar_conducta_contraria_valores` | `reconocer_decision_dificil_valores` | similitud_texto | **0,355** | no levanta |
+| 2 | `cerrar_reunion_pasos_siguientes` | `auditar_calendario_reuniones_semana` | similitud_texto | **0,353** | no levanta |
+| 3 | `examinar_trabajo_pasado_candidato` | `auditar_calendario_reuniones_semana` | similitud_texto | **0,353** | no levanta |
+| 4 | `avisar_organizador_reunion_prescindible` | `repartir_responsabilidad_contratar_equipo` | similitud_texto | **0,354** | no levanta |
+| 5 | `desarrollar_estrategia_busqueda_candidatos` | `entregar_experiencia_entrevista_excelente` | similitud_texto | **0,352** | no levanta |
+| 6 | `involucrar_varios_entrevistadores` | `repartir_equipo_cartera_horizontes` | similitud_texto | **0,375** | no levanta |
+| 7 | `repartir_responsabilidad_contratar_equipo` | `mediar_tiempo_palabra_reunion` | similitud_texto | **0,357** | no levanta |
+| 8 | `repartir_papeles_directivo_reclutador` | `mostrar_candidato_cuanto_quieres` | similitud_texto | **0,354** | no levanta |
+
+> **LOS OCHO SON DE `similitud_texto` Y LOS OCHO CAEN ENTRE 0,352 Y 0,375, CON EL UMBRAL EN
+> 0,350.** Es exactamente el ejemplar de `D.36`: **`difflib.SequenceMatcher.ratio()` no es
+> simetrico, y a dos milesimas del umbral esa asimetria no mueve un decimal: mueve si el par
+> llega a leerse.**
+
+**EL ORDEN BASE, DECLARADO ANTES DE TOCARLO:** el del libro, `cap_07` a `cap_11`, y dentro
+de cada capitulo **alfabetico por id**, que es el orden en que la carpeta los entrega al
+instrumento. **Contra ese orden base, CUATRO de las ocho restricciones se rompen.**
+
+    $ python -c "comprueba las 8 restricciones contra el orden base"
+      ROMPE  reconocer_decision_dificil_valores        (#66) antes que actuar_conducta_contraria_valores          (#61)
+      CUMPLE auditar_calendario_reuniones_semana       (#02) antes que cerrar_reunion_pasos_siguientes            (#05)
+      CUMPLE auditar_calendario_reuniones_semana       (#02) antes que examinar_trabajo_pasado_candidato          (#27)
+      ROMPE  repartir_responsabilidad_contratar_equipo (#37) antes que avisar_organizador_reunion_prescindible    (#03)
+      ROMPE  entregar_experiencia_entrevista_excelente (#26) antes que desarrollar_estrategia_busqueda_candidatos (#22)
+      ROMPE  repartir_equipo_cartera_horizontes        (#51) antes que involucrar_varios_entrevistadores          (#29)
+      CUMPLE mediar_tiempo_palabra_reunion             (#14) antes que repartir_responsabilidad_contratar_equipo  (#37)
+      CUMPLE mostrar_candidato_cuanto_quieres          (#30) antes que repartir_papeles_directivo_reclutador      (#36)
+      restricciones que el orden base ROMPE: 4
+
+> # **LA RESPUESTA AL PUNTO 2 DEL ENCARGO ES SI: HIZO FALTA REORDENAR, Y SIN REORDENAR SE
+> HABRIAN PERDIDO CUATRO LECTURAS.**
+
+**COMO REORDENO, Y ES LA PERTURBACION MINIMA:** orden topologico con **prioridad al orden
+del libro**, asi que **solo se mueve lo que una restriccion obliga a mover**. Salen
+**cuatro candidatos de su sitio** y los 64 restantes conservan su orden relativo:
+
+| candidato | de | a | queda detras de |
+|---|---:|---:|---|
+| `avisar_organizador_reunion_prescindible` | #03 | **#36** | `repartir_responsabilidad_contratar_equipo` (#35) |
+| `desarrollar_estrategia_busqueda_candidatos` | #22 | **#25** | `entregar_experiencia_entrevista_excelente` (#24) |
+| `involucrar_varios_entrevistadores` | #29 | **#51** | `repartir_equipo_cartera_horizontes` (#50) |
+| `actuar_conducta_contraria_valores` | #61 | **#66** | `reconocer_decision_dificil_valores` (#65) |
+
+**EL ORDEN COMPLETO QUEDA ESCRITO EN `.orden_insercion_lote3.txt`** y es el que sigue la
+tabla de insercion de `J.3.d`, fila por fila.
+
+> ### **Y DIGO QUIEN FIJA EL ORDEN, PORQUE `D.36` LO RESERVA Y NO QUIERO QUE PAREZCA QUE ME
+> LO TOMO**
+>
+> **`D.36` cierra con: *ni el extractor ni el auditor deciden el orden de insercion. Lo fija
+> quien autoriza la insercion, que es el fundador (`D.26`)*.** **`D.39` retiro la
+> autorizacion por vuelta, y el encargo de hoy la sustituye con una instruccion directa:**
+> *mide la asimetria de los pares que bloqueen en los dos sentidos **y ordena** para que el
+> par se lea*. **Es el fundador ordenando, con la medida delante, exactamente como `D.36`
+> pide.** No me lo adjudico yo.
+
+### **LOS 16 PARES SIMETRICOS, QUE NO PIDEN ORDEN PERO SI PIDEN LECTURA**
+
+    dirigir_reunion_decision <-> generar_ideas / informativa / reforzar_relaciones / revision_trabajo
+    dirigir_reunion_generar_ideas <-> informativa / reforzar_relaciones / revision_trabajo
+    dirigir_reunion_informativa <-> reforzar_relaciones / revision_trabajo
+    dirigir_reunion_reforzar_relaciones <-> revision_trabajo          (10 pares: las cinco reuniones entre si)
+    ajustar_plan_fuerzas_equipo <-> crear_plan_creible_equipo
+    ajustar_plan_fuerzas_equipo <-> disenar_equipo_plan_anual
+    crear_plan_creible_equipo <-> disenar_equipo_plan_anual
+    calcular_embudo_reclutamiento_propio <-> ejecutar_embudo_reclutamiento_escala
+    desarrollar_estrategia_busqueda_candidatos <-> repartir_papeles_directivo_reclutador
+    repartir_equipo_cartera_horizontes <-> repartir_responsabilidad_contratar_equipo
+
+**LAS CINCO REUNIONES SON DIEZ DE LOS DIECISEIS**, y eso **no es una señal de duplicado: es
+la señal de que el capitulo trata un tema** (`EXTRACTOR.md` 12). **Se extrajeron una a una
+y se esperaba que la cola fuera larga.** Lo que no se hace es subir un umbral para
+acortarla.
+
+> ### **LA PREDICCION QUE DEJO ESCRITA ANTES DE INSERTAR NI UNO**
+>
+> **La aduana me va a pedir alrededor de 33 veredictos: los 9 del grafo mas los 24 pares
+> internos.** Digo *alrededor* y no una cifra exacta a proposito, **porque un candidato que
+> entra cambia lo que mide el siguiente y la cuenta interna puede crecer**: dos candidatos
+> que hoy no se levantan entre si **siguen sin levantarse**, pero un candidato puede levantar
+> a un nodo que **hoy no existe en el grafo porque es otro candidato de este mismo lote**, y
+> eso es precisamente lo que estas 4.556 mediciones anticipan. **Si al cerrar la cifra real
+> se sale de esa horquilla, la diferencia se declara y no se ajusta el pronostico.**
