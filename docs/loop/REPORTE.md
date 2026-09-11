@@ -9968,3 +9968,140 @@ es la caida `5.c.bis` de la vuelta 9 y no quiero repetirla. Las salidas, pegadas
 siendo `cap_02` en la salida original, **que es como se tecleo en la vuelta 8 y como el
 ACTA 8 lo corrigio despues: en mi tabla va como `Cap. 1`, y la salida pegada ensena la
 diferencia en vez de taparla.**
+
+---
+
+# EL CIERRE DE LA VUELTA 10
+
+## C.10.1. LOS CUATRO DISCUTIBLES, RECOGIDOS, Y LOS MARQUE ANTES DE SABER SI ACIERTO
+
+**Los cuatro se escribieron en el momento en que tome la decision, no al final**, y estan
+en `2.a.bis`, `2.d.3`, `3.5` y `4.6`. Aqui van juntos para que la relectura ciega empiece
+por ellos.
+
+| # | donde | la duda, en una linea | si cae, que aprende la casa |
+|---:|---|---|---|
+| 1 | `2.a.bis` | corrijo dos verbos `Escribe` y un entregable **y declaro CERO puentes por ellos**, porque puente es lo que anade contenido o cambia de sujeto, no lo que cambia de modo verbal | **el modo verbal tambien cuenta**, y entonces la tasa del Cap. 1 de la vuelta 9 sube de 3,80 a 7,59 |
+| 2 | `2.d.3` | **saco la pieza del equilibrio a nodo propio aunque NO tenga inventario propio**, solo porque trae disparador con numero, acto y entregable, y porque el libro la invoca por su nombre | **la invocacion por nombre no basta cuando el inventario falta**, y sus tres pasos vuelven al aprendiz |
+| 3 | `3.5` | **descarto la escena del `critique`**, que es la pieza descartada mas rica de los dos capitulos, por estar entera en primera persona del pasado habitual y por que el libro la declara ilustracion | **una practica recurrente contada en pasado habitual sigue siendo un procedimiento**, y el Cap. 3 tiene 16 candidatos y no 15 |
+| 4 | `4.6` | **publico una tasa de puentes del 0,90 por ciento, la mas baja de la campana, y desconfio de ella en voz alta** | o **el cero era falso** y hay puentes que no vi, o **atribui de mas** y perdi mandato del libro. **La segunda nadie la mide todavia** |
+
+**LOS CUATRO SON DE DOS FAMILIAS Y LO DIGO:** el 2 y el 3 son **sobre donde esta la
+frontera de un nodo**, que es la familia entera de la vuelta 9. **El 1 y el 4 son
+nuevos y son sobre la MEDIDA:** los dos preguntan **que cuenta como puente**, uno por
+abajo y otro por arriba. **Es la primera vuelta en que mis discutibles no son solo de
+corte.**
+
+## C.10.2. LA BANDA DE PUENTES DE LA VUELTA 9, CORREGIDA AL ALZA POR MI, SIN BORRAR NADA
+
+**En `0.3.c`, al abrir esta vuelta, escribi una banda de 5,26 a 7,89 por ciento para el
+Cap. 2 de la vuelta 9. ESA BANDA SE QUEDA CORTA Y LO DIGO YO, no el auditor**, porque en la
+`2.d.5` encontre un puente mas al reescribir el paso 7 del aprendiz.
+
+**NO REESCRIBO `0.3.c`.** Lo corrijo aqui, por anexion, con la cuenta entera delante:
+
+| unidad de la vuelta 9 | lo que sostengo | lo que sale si el auditor cuenta TODO lo corregido |
+|---|---|---|
+| **Cap. 1** (`cap_02.md`), 79 pasos | 3 puentes, **3,80 por ciento** | 6 puentes, **7,59 por ciento**, contando los dos verbos `Escribe` y el entregable de la `2.a.bis` |
+| **Cap. 2** (`cap_03.md`), 76 pasos | 4 puentes, **5,26 por ciento** | 7 puentes, **9,21 por ciento**, contando el residuo del auditor, el quinto que corregi por precaucion y **el que encontre yo en la `2.d.5`** |
+| **vuelta 9 entera**, 155 pasos | 7 puentes, **4,52 por ciento** | 13 puentes, **8,39 por ciento** |
+
+**LA PUNTA ALTA SUBE DE 7,89 A 9,21 EN EL Cap. 2, Y LA DE LA VUELTA ENTERA A 8,39.** La
+diferencia con lo que escribi hace tres horas es **un puente que encontre yo leyendo mi
+propio trabajo de la vuelta anterior**, y lo escribo con su cifra porque `D.30` cuenta lo
+escrito y no lo que sobrevive.
+
+> **Y LA LECCION, QUE NO ES SOBRE LA CIFRA:** la banda de `0.3.c` la escribi **antes** de
+> reabrir los nodos, con la lista del acta delante. **Una banda publicada antes de releer
+> es una estimacion, no una medida**, y esta se movio en cuanto reabri el primer fichero.
+
+## C.10.3. NINGUNA PARADA, Y LAS DOS VECES QUE ESTUVO CERCA
+
+**No hay parada.** Las tres condiciones del encargo no se dieron: ninguna regla me obligo a
+romper otra, **no necesite mover umbral, regla de id, esquema, `D.27`, `D.37`, `P.19` ni la
+vara**, y las comprobaciones de apertura de la TAREA 3 salieron **las cuatro en verde**.
+
+**LAS DOS VECES QUE ESTUVO CERCA:**
+
+1. **La pieza del equilibrio de la `2.d`** roza `D.27` por el lado de la vara: **sale a
+   nodo propio sin inventario propio**, y si `D.27` exigiera inventario SIEMPRE para
+   cualquier nodo, sacarla seria ensancharla y eso es parada. **Por que NO pare:** `D.27`
+   esta escrita para decidir **cuando una linea NORMATIVA se vuelve procedimentable**, y
+   `L93` no es una linea normativa suelta: **trae disparador con numero, acto y
+   entregable, los tres textuales.** No es una vara que yo mueva, **es un caso al que esa
+   vara no apunta.** Lo he resuelto con lectura, lo he marcado como DISCUTIBLE 2, y sigo.
+2. **Los 50 candidatos en cuarentena contra la banda de cinco a quince** de
+   `EXTRACTOR.md` 12.4. **Por que NO pare:** el ACTA 8 3.11 ya adjudico que **la banda no
+   bloquea**, y **el disparador vinculante es no cerrar el reporte. Este reporte cierra.**
+   Lo dejo medido en `5.g` con su cifra, que es lo que el encargo pidio.
+
+## C.10.4. LO QUE ESTA VUELTA **NO** HIZO, DICHO POR SU NOMBRE
+
+- **CERO inserciones.** `MODO_INSERCION=cuarentena`. **No corri `python forja.py insertar`
+  ni una sola vez**, y el gate al cierre lo prueba: sigue en **52 nodos**.
+- **CERO aristas declaradas.** No corri `python forja.py arista`. **Las 41 estan escritas.**
+- **No toque `cuarentena/smart_who/`.** Sigue en 15 ficheros, contados al cierre.
+- **No abri `cap_06.md` en adelante**, salvo su cabecera (L1 a L11) para comprobar el borde
+  del Cap. 4, que es comprobacion de frontera y esta declarada en `3.2`.
+- **No toque `P.19`**, que el encargo prohibe expresamente. La `2.d` se resolvio por `D.27`
+  mas el criterio del DISCUTIBLE 4 de la vuelta 9, **y sigue sin duplicarse nada.**
+- **No toque de `ORDEN_DE_LOTES.md` nada que no fuera la columna `estado`**, y lo que me
+  parecio falso fuera de esa columna lo declare en `1.5` sin tocarlo.
+- **No escribi `docs/loop/PARA_ALEXIS.md`** (`D.28`), ni `PROMPT_SIGUIENTE.md`, ni el acta.
+- **No fabrique maquinaria** (`EXTRACTOR.md` 13), **y en particular NO propuse una guarda
+  que compruebe anclas prometidas**, que el encargo prohibe por su nombre. El remedio de
+  la `1.a` es **un `grep`**, y esta corrido en `C.10.7`. Los unicos instrumentos de esta
+  vuelta son **un bucle de cobertura de tres lineas** y **un ayudante de nueve lineas que
+  escribe un JSON y llama al informe**, los dos corridos y **los dos borrados antes de
+  commitear**: `git status` al cierre no los ve.
+
+## C.10.5. LAS GUARDAS, CORRIDAS **AL CIERRE** Y NO AL PRINCIPIO
+
+| guarda | la salida al cierre, pegada | al abrir | diferencia |
+|---|---|---|---|
+| `python forja.py gate` | `GATE VERDE.` / `  nodos verificados: 52` | 52 | **0** |
+| `python forja.py guiones` | `BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.` | verde | **igual** |
+| `python tests/test_aceptacion.py` | `  total: 72 pruebas, 0 fallos, 0 errores` | 72 de 72 | **0** |
+| `python forja.py rancios` | `BLOQUEO DE VIGENCIA VERDE.` / `  veredictos comprobados: 60` | 60 | **0** |
+| aristas del grafo | `nodos 52 nodos_previos 37 nodos_siguientes 37` | 37 | **0** |
+
+**LAS CINCO DIFERENCIAS SALEN CERO Y SE ESCRIBEN CERO**, y **salir cero es exactamente lo
+que prueba que esta vuelta no inserto nada.**
+
+**Y el hook corrio en los ocho commits de la vuelta. No lo salte ni una vez.**
+
+## C.10.6. EL ESTADO AL CIERRE, MEDIDO AL CIERRE
+
+| medida | instrumento corrido al cierre | valor |
+|---|---|---:|
+| nodos en el grafo | `python forja.py gate` | **52** |
+| aristas en el grafo | conteo sobre `dataset/nodos.jsonl` | **37** |
+| veredictos en bitacora | `python forja.py rancios` | **60** |
+| pruebas | `python tests/test_aceptacion.py` | **72 de 72** |
+| candidatos en `cuarentena/zhuo_manager/` | `ls -1 cuarentena/zhuo_manager/*.json \| wc -l` | **50** |
+| candidatos en `cuarentena/smart_who/` (sin tocar) | `ls -1 cuarentena/smart_who/*.json \| wc -l` | **15** |
+| **aristas ESCRITAS del lote 3, sin declarar** | **14 de serie (vueltas 9 y 10) mas 5 de lectura (`2.c`) mas 7 y 4 del Cap. 3 (`3.10`) mas 7 y 4 del Cap. 4 (`4.8`)** | **41** |
+
+**LA CUENTA DE LAS 41, ESCRITA PARA QUE SE PUEDA CUADRAR:**
+
+    de serie por D.37   10 (vuelta 9)  +  4 (2.d)  +  7 (Cap. 3)  +  7 (Cap. 4)  =  28
+    de lectura por D.29   5 (2.c)      +  4 (Cap. 3)  +  4 (Cap. 4)              =  13
+    -----------------------------------------------------------------------------------
+    ESCRITAS                                                                        41
+    DECLARADAS                                                                       0
+
+**28 mas 13 son 41.** Y **0 declaradas**, porque `MODO_INSERCION=cuarentena`.
+
+**LA MEDIDA 4 DEL CIERRE, RECOMPUTADA AQUI Y NO ARRASTRADA DE `5.f`:**
+
+| vuelta | commit de apertura | commit de cierre | duracion | candidatos |
+|---|---|---|---:|---:|
+| **9** | `6ed05a3` 19:50:21 | `0acaba9` 20:43:56 | **53 min 35 s** | 21 |
+| **10** | `987dc73` 21:33:49 | *(el ultimo de esta vuelta)* | *(ver la fila de abajo)* | **27** |
+
+**La duracion exacta de la vuelta 10 se lee del `git log` del ultimo commit, que por
+definicion es posterior a esta linea.** **No la tecleo aqui y no prometo una seccion para
+ella** (remedio `1.a`, punto 1): **esta en el propio `git log` de la rama, y el commit que
+cierra esta vuelta es el que lleva este cierre dentro.** Contra la vuelta 9, **esta vuelta
+abrio 131 palabras menos y saco 6 candidatos mas**, y esa es la comparacion que si puedo
+cerrar con las dos puntas medidas.
