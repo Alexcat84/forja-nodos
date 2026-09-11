@@ -97,3 +97,21 @@ BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 [2026-09-10 21:33:10] auditor listo (USD 9.580864499999999), 1570s, intento 1 de 7
 [2026-09-10 21:33:11]   sello de la apertura ciega verificado: intacto tras el turno
 [2026-09-10 21:33:11] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-10 23:07:04] extractor listo (USD 30.1595145), 5632s, intento 1 de 7
+[2026-09-10 23:07:04] VUELTA 2 : APERTURA CIEGA (claude-opus-5), el reporte queda retirado
+[2026-09-10 23:23:29] auditor ciego listo (USD 5.7328685), 984s, intento 1 de 7
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 52
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 3 hallazgo(s)
+  docs/loop/ultimo_apertura.json linea 1 columna 1344: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 2651: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 3144: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-10 23:23:29]   apertura ciega sellada: ef308a1e8803138cfd2641bccb9ea965692d2fdc
+[2026-09-10 23:23:29] VUELTA 2 : AUDITOR (claude-opus-5)
