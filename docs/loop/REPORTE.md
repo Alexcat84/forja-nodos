@@ -11199,3 +11199,189 @@ por que cuesta pedir opinion y `P10` pone la herramienta con la que se desbloque
 > detiene es `D.27` restriccion 1 y mi propio precedente del `P2` del Cap. 4**, donde
 > escribi con estas palabras que *es un inventario de causas y no de medios ni de etapas*.
 > **Si ese precedente estaba mal, este descarte esta mal tambien, y los dos son mios.**
+
+### 3.5. LOS 18 CANDIDATOS DEL Cap. 5, CADA UNO CON SU ADUANA EN EL MISMO ACTO
+
+**Cada uno se escribio y paso la aduana antes de escribir el siguiente** (`EXTRACTOR.md`
+16). **18 de 18 al primer intento. NINGUNO CAYO**, y lo digo sabiendo que la vuelta 10
+tuvo uno que cayo y que eso fue lo que salvo aquel lote.
+
+| # | id propuesto | piezas | pasos | la salida de la aduana, pegada |
+|---:|---|---|---:|---|
+| 51 | `conocer_fuerzas_valores_sesgos_propios` | P2 | 7 | `[ENTRARIA] conocer_fuerzas_valores_sesgos_propios` |
+| 52 | `listar_fuerzas_propias_cuatro_preguntas` | P5 | 9 | `[ENTRARIA] listar_fuerzas_propias_cuatro_preguntas` |
+| 53 | `listar_debilidades_disparadores_propios` | P6 | 7 | `[ENTRARIA] listar_debilidades_disparadores_propios` |
+| 54 | `calibrar_vision_propia_opinion_ajena` | P7, P8 | 11 | `[ENTRARIA] calibrar_vision_propia_opinion_ajena` |
+| 55 | `cambiar_mentalidad_fija_crecimiento` | P9, P10 | 11 | `[ENTRARIA] cambiar_mentalidad_fija_crecimiento` |
+| 56 | `disenar_entorno_rendir_mejor` | P11 | 10 | `[ENTRARIA] disenar_entorno_rendir_mejor` |
+| 57 | `identificar_disparadores_propios_reaccion` | P12 | 14 | `[ENTRARIA] identificar_disparadores_propios_reaccion` |
+| 58 | `evitar_doble_impuesto_malestar` | P14 | 6 | `[ENTRARIA] evitar_doble_impuesto_malestar` |
+| 59 | `cuestionar_historia_irracional_cabeza` | P15 | 8 | `[ENTRARIA] cuestionar_historia_irracional_cabeza` |
+| 60 | `visualizar_recuperar_confianza` | P16 | 11 | `[ENTRARIA] visualizar_recuperar_confianza` |
+| 61 | `pedir_ayuda_grupo_apoyo` | P17 | 7 | `[ENTRARIA] pedir_ayuda_grupo_apoyo` |
+| 62 | `celebrar_pequenias_victorias` | P18 | 6 | `[ENTRARIA] celebrar_pequenias_victorias` |
+| 63 | `establecer_limites_cuidado_personal` | P19 | 7 | `[ENTRARIA] establecer_limites_cuidado_personal` |
+| 64 | `pedir_opinion_otros_mejorar` | P21 | 8 | `[ENTRARIA] pedir_opinion_otros_mejorar` |
+| 65 | `tratar_jefe_entrenador` | P22 | 11 | `[ENTRARIA] tratar_jefe_entrenador` |
+| 66 | `convertir_cualquiera_mentor` | P23 | 10 | `[ENTRARIA] convertir_cualquiera_mentor` |
+| 67 | `reservar_tiempo_reflexion_metas` | P24 | 11 | `[ENTRARIA] reservar_tiempo_reflexion_metas` |
+| 68 | `aprovechar_formacion_reglada` | P25 | 8 | `[ENTRARIA] aprovechar_formacion_reglada` |
+| **18** | | | **162** | **18 ENTRARIAN, 0 BLOQUEARIAN, 0 CAERIAN** |
+
+**LAS 18 FILAS SE CUENTAN DE LOS FICHEROS DE LA CARPETA, NO DE MI MEMORIA:**
+`$ ls cuarentena/zhuo_manager/*.json | wc -l` da **68**, y **68 menos los 50 que habia al
+abrir la vuelta son 18** (remedio `1.a`). **Y los 162 pasos salen de contarlos del JSON, uno
+a uno, no de sumar la columna a mano.**
+
+**LA ADUANA LEVANTO UN VECINO Y LO DIGO, PORQUE ES LA PRIMERA VEZ EN 68.** Al pasar
+`pedir_opinion_otros_mejorar` la salida trajo la linea `veredicto escrito por vecino.`
+**Y aun asi el saldo de ese candidato fue `1 ENTRARIA, 0 BLOQUEARIAN`**, asi que no hubo
+cola de lectura que atender y **no escribi ningun veredicto**: no habia contra que emitirlo.
+**Lo dejo escrito porque el encargo anuncia que el primero llegara**, y lo que llego fue la
+linea del texto de ayuda de la propia herramienta, **no un vecino levantado**. **Van 68 de
+68 sin un solo `BLOQUEARIA`.**
+
+### 3.6. LA RELECTURA DE FIDELIDAD `D.30`, **EMPEZANDO POR EL PASO 1**, Y LO QUE CAZO
+
+*El encargo me da el aviso mas util que he recibido: **el paso 1 y el paso 7 del mismo nodo
+tenian la misma averia y cace el 7 y no el 1**, porque el ojo todavia no esta buscando
+cuando el nodo arranca. **Asi que esta vuelta la relectura empieza por el paso 1 de los 18,
+imprimiendolos juntos y fuera de su nodo**, que es la unica forma que se me ocurre de
+mirarlos con la misma atencion con la que se mira el cuerpo.*
+
+**PRIMERO, EL BARRIDO DE LAS TRES ESPECIES QUE EL LOTE 1 PAGO** (destinatario, periodo,
+responsable), corrido a maquina sobre los 162 pasos:
+
+    $ python -c "... barrido de periodo, destinatario y responsable sobre los 18 candidatos"
+    celebrar_pequenias_victorias    paso  3  ->  'cada dia'
+    celebrar_pequenias_victorias    paso  5  ->  'cada dia'
+    listar_fuerzas_propias_...      paso  7  ->  'plazo'
+    pedir_ayuda_grupo_apoyo         paso  5  ->  'cada mes'
+    reservar_tiempo_reflexion_metas paso  4  ->  'semanal'
+    reservar_tiempo_reflexion_metas paso  4  ->  'cada semana'
+    visualizar_recuperar_confianza  paso  3  ->  'cada dia'  (dos veces)
+    coincidencias: 8
+
+**LAS OCHO LAS ABRI UNA A UNA Y LAS OCHO SON DEL LIBRO:** `every day I felt the pressure`
+(`L341`), `Every day, I'd jot down` (`L345`), `long-term thinker` (`L91`, que ni siquiera es
+un periodo), `Two hours every month` (`L333`), `an hour on my calendar at the end of every
+week` (`L419`), y las dos de `every day` de los estudios de `L307`. **CERO PERIODOS
+INVENTADOS, CERO DESTINATARIOS, CERO RESPONSABLES.**
+
+**SEGUNDO, Y ES LO QUE CAZO: LOS SIETE PASOS QUE ABREN CON `Reconoce`.** Los busque porque
+`Reconoce` no es un verbo de encuadre como `Cuenta con` o `Ten delante`: **afirma que el
+lector estaba sin reconocer algo.** Y el libro, medido:
+
+    $ grep -n "Recognize\|recognize" fuentes/zhuo_manager/cap_06.md
+    275: 			Recognize that everyone in the world goes through hard times, and give
+         yourself permission to worry. [...]
+    381: 			Always thank people for feedback. [...] receive it graciously and recognize
+         that it took effort to give. [...]
+
+**EL LIBRO ORDENA `recognize` EXACTAMENTE DOS VECES, Y LAS DOS ESTABAN BIEN PUESTAS:**
+`L275` es el paso 3 de `evitar_doble_impuesto_malestar` y `L381` esta dentro del paso 7 de
+`pedir_opinion_otros_mejorar`. **Las otras SEIS las habia puesto yo sobre parrafos donde el
+libro narra o afirma, no manda.** Las seis, con su correccion:
+
+| nodo | paso | como estaba | como queda |
+|---|---:|---|---|
+| `cambiar_mentalidad_fija_crecimiento` | 1 | *Reconoce que pedir opinion es dificil* | *El libro se para aqui a reconocer que pedir opinion es dificil* |
+| `evitar_doble_impuesto_malestar` | 1 | *Reconoce cual es una de las peores partes* | *Ten delante cual es una de las peores partes* |
+| `celebrar_pequenias_victorias` | 1 | *Reconoce el ciclo en el que estas* | *Ten delante el ciclo en el que estas* |
+| `establecer_limites_cuidado_personal` | 1 | *Reconoce la situacion* | *Ten delante la situacion* |
+| `tratar_jefe_entrenador` | 4 | *Reconoce la barrera mas grande* | *Ten delante la barrera mas grande* |
+| `aprovechar_formacion_reglada` | 3 | *Reconoce por que se aplaza* | *Ten delante por que se aplaza* |
+
+**CUATRO DE LAS SEIS SON PASOS 1, Y ESO NO ES CASUALIDAD: ES EXACTAMENTE EL AVISO DEL
+ENCARGO REPRODUCIDO.** El paso 1 es donde encuadro la escena, y encuadrar es donde mas
+facil resulta poner un verbo que el libro no puso. **Sin el aviso habria mirado el cuerpo y
+los seis viven cuatro veces de seis en la primera linea.**
+
+**LOS SEIS VOLVIERON A PASAR LA ADUANA DESPUES DE LA CORRECCION, uno a uno:**
+
+    [ENTRARIA] aprovechar_formacion_reglada
+    [ENTRARIA] cambiar_mentalidad_fija_crecimiento
+    [ENTRARIA] celebrar_pequenias_victorias
+    [ENTRARIA] establecer_limites_cuidado_personal
+    [ENTRARIA] evitar_doble_impuesto_malestar
+    [ENTRARIA] tratar_jefe_entrenador
+
+**Y LA CUENTA VA CON BANDA, PORQUE LA VARA NO ES UNIVOCA Y NO LA MUEVO YO:**
+
+| lectura | puentes | pasos escritos | tasa |
+|---|---:|---:|---:|
+| **ancha**: un mandato donde el libro no manda **ya cuenta** | **6** | 162 | **3,70 por ciento** |
+| **estrecha**: solo cuenta lo que **nombra un medio** que el libro no nombra | **0** | 162 | **0,00 por ciento** |
+
+**POR QUE LAS DOS Y NO UNA.** El ACTA 10 adjudico mi DISCUTIBLE 1 con esta frase: *mete un
+mandato donde no habia ninguno **y** nombra un medio que el libro no nombra*. **Son dos
+cosas unidas por una `y`, y mis seis hacen la primera y no la segunda.** La razon que el
+acta da para que cuenten, sin embargo, es mas ancha: *si hubo que corregirlo porque anadia
+un medio, anadia contenido, y anadir contenido es puente.* **Yo los corregi porque anadian
+contenido**, aunque no fuera un medio. **Publico la banda de 0,00 a 3,70 y uso la punta
+ALTA en todas las tablas de esta vuelta**, que es la que juega en mi contra, y **la
+adjudicacion es del auditor y no mia.**
+
+> **Y UNA COSA QUE ME OBLIGO A ESCRIBIR AUNQUE NO ME FAVORECE:** si la punta ancha es la
+> buena, **`Ten delante` y `Cuenta con` son de la misma especie que `Reconoce`** y la tasa
+> no seria 3,70 sino mucho mayor, porque esos dos verbos abren **43 de los 162 pasos**.
+> **La unica diferencia que puedo defender es que `Reconoce` afirma algo del lector (que no
+> lo estaba reconociendo) y los otros dos no afirman nada**, pero es una diferencia de
+> grado y la escribo como lo que es. **Si el auditor lee que el encuadre entero es puente,
+> esta vuelta tiene una tasa muy alta y la mia esta mal contada**, y esa lectura la dejo
+> abierta en el DISCUTIBLE 6.
+
+### 3.7. LA COMPROBACION DE ORDEN, Y EL CRUCE DE LA `1.a`
+
+**a) ORDEN.** Sobre las siete enumeraciones ordenadas del capitulo, comprobando que la
+linea del libro de cada parte va en el mismo orden que el paso que la transcribe:
+
+    $ python -c "... comprobacion de orden"
+    listar_fuerzas_propias_cuatro_preguntas    esperado [77,81,85,89]       leido [77,81,85,89]       ORDEN CORRECTO
+    listar_debilidades_disparadores_propios    esperado [97,101,105,109]    leido [97,101,105,109]    ORDEN CORRECTO
+    cambiar_mentalidad_fija_crecimiento        esperado [151,161,171,181]   leido [151,161,171,181]   ORDEN CORRECTO
+    identificar_disparadores_propios_reaccion  esperado [249,251,253,255]   leido [249,251,253,255]   ORDEN CORRECTO
+    visualizar_recuperar_confianza             esperado [313,315,317,319,321] leido [313,315,317,319,321] ORDEN CORRECTO
+    tratar_jefe_entrenador                     esperado [395,395,395]       leido [395,395,395]       ORDEN CORRECTO
+    aprovechar_formacion_reglada               esperado [455,455,455,455,455] leido [455,455,455,455,455] ORDEN CORRECTO
+    enumeraciones comprobadas: 7, piezas en orden: 29, desordenes: 0
+
+**29 DE 29 EN ORDEN, CERO DESORDENES**, contra los 15 de 15 de la vuelta 10.
+
+**b) EL CRUCE DE LA `1.a`, QUE ES NUEVO Y ES LO QUE HABRIA CAZADO EL `L283`.** Para cada
+candidato, cojo las marcas que sus pasos citan (nombres propios, cifras y frases literales)
+y compruebo **de que pieza son**, contra el rango que declara su propia fila de `3.5`:
+
+    $ python -c "... cruce pieza contra cita, 18 candidatos"
+    CRUCE PIEZA CONTRA CITA: 83 marcas comprobadas, 0 fuera de rango
+
+**83 DE 83 DENTRO DEL RANGO DE SU FILA.** Y **no es maquinaria nueva** (moratoria,
+`EXTRACTOR.md` 13): es la relectura de punteros de `C.10.8` con **una comparacion mas**, la
+que pregunta de que pieza es la linea, tal como el encargo la define.
+
+> **Y LA PRIMERA PASADA DEVOLVIO UN AVISO, QUE ABRI ANTES DE CONCLUIR NADA, Y ERA MIO.**
+> Salto `reservar_tiempo_reflexion_metas` por la marca `Little Wins`, que vive en `L337` y
+> `L345` y **cae fuera de su rango `L413` a `L452`**. Fui al nodo a corregirlo y **el nodo
+> no menciona las pequenias victorias por ningun lado**: `pequenias victorias`, `Little` y
+> `diario` dan **los tres falso** sobre sus pasos, su entregable y su resumen. **La marca
+> estaba de mas en MI LISTA DE COMPROBACION**, copiada de la fila de al lado, **y no en el
+> nodo.** Rehice la lista y la cuenta limpia es **83 de 83**.
+>
+> **LO ESCRIBO PORQUE ES LA MORALEJA DE LA `1.a` AL REVES:** el cruce levanto algo, y lo que
+> levanto **era un defecto del instrumento y no del dato**. **Un aviso que no se abre se
+> publica como hallazgo o se tira como ruido, y las dos cosas son mentir.**
+
+### 3.8. LA FILA DE LA TAREA 3
+
+| tarea | que era | como cerro |
+|---|---|---|
+| **3** | el Cap. 5, `Managing Yourself` (`cap_06.md`), con su frontera antes de cortar | **CERRADA.** 9.617 palabras contadas por mi, borde comprobado por los dos lados. **Frontera de 26 piezas publicada y commiteada ANTES de cortar** (`1fdf751`), cero huecos y cero solapes, diferencia cero. `D.27` corrido pieza a pieza **tambien a las 6 descartadas**, con su cita. **18 candidatos, 162 pasos, 18 de 18 por la aduana en el mismo acto y ninguno cayo.** `D.30` empezando por el paso 1: **6 puentes de encuadre cazados y corregidos, cuatro de ellos en el paso 1**, cero periodos, cero destinatarios, cero responsables. **29 de 29 en orden. 83 de 83 en el cruce de pieza contra cita** |
+
+> **DISCUTIBLE 6, MARCADO ANTES DE SABER SI ACIERTO, Y ES EL QUE MAS ME PUEDE COSTAR.**
+> **Cuento 6 puentes y no 43.** Mi criterio es que `Reconoce` afirma algo del lector y
+> `Ten delante` y `Cuenta con` no afirman nada, solo encuadran. **Si esa distincion no se
+> sostiene, la tasa de esta vuelta no es 3,70 sino 26,5 por ciento (43 de 162), y seria la
+> peor del lote 3 con diferencia.** No me la adjudico yo (`EXTRACTOR.md` 14): **la escribo
+> con su cifra calculada para que el auditor no tenga que calcularla**, y con la banda
+> completa dicha, que va de **0,00 a 26,5 por ciento** segun donde se ponga la vara. **La
+> punta que uso en mis tablas es 3,70.**
