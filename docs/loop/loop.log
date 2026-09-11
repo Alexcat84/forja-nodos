@@ -137,3 +137,8 @@ BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 [2026-09-11 07:02:51] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
 [2026-09-11 07:02:51] DETENIDO en la vuelta 1: no hay PROMPT_SIGUIENTE.md con contenido.
 [2026-09-11 07:02:51] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-11 08:05:53] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+[2026-09-11 08:05:53] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-11 08:05:53]   ultimo commit de REPORTE.md      : 2026-09-11 01:33:58 (1789104838)
+[2026-09-11 08:05:53]   ultimo commit de ACTA_AUDITOR.md : 2026-09-11 02:15:03 (1789107303)
+[2026-09-11 08:05:53] VUELTA 1 : EXTRACTOR (claude-opus-5)
