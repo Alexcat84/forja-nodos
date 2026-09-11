@@ -8501,3 +8501,33 @@ comprobaciones de apertura salieron las cuatro en verde.**
   El unico instrumento nuevo de esta vuelta es **un bucle de cobertura de tres lineas
   corrido en memoria y pegado en el reporte**, que no deja fichero ni se vuelve a usar.
 
+## C.9.4. LAS GUARDAS, CORRIDAS **AL CIERRE** Y NO AL PRINCIPIO
+
+**Las cifras del cierre se recomputan al cierre** (`EXTRACTOR.md` 4), aunque esta vuelta no
+podia haberlas movido: no inserto nada.
+
+| guarda | la salida al cierre, pegada | al abrir | diferencia |
+|---|---|---|---|
+| `python forja.py gate` | `GATE VERDE.` / `  nodos verificados: 52` | 52 | **0** |
+| `python forja.py guiones` | `BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.` | verde | **igual** |
+| `python tests/test_aceptacion.py` | `  total: 72 pruebas, 0 fallos, 0 errores` | 72 de 72 | **0** |
+| `python forja.py rancios` | `BLOQUE DE VIGENCIA VERDE.` / `  veredictos comprobados: 60` | 60 | **0** |
+| aristas del grafo | `nodos: 52  nodos_siguientes total: 37` | 37 | **0** |
+
+**LAS CINCO DIFERENCIAS SALEN CERO Y SE ESCRIBEN CERO** (remedio 1.a, hermana segunda:
+*si la comparacion sale CERO, se escribe CERO y no se borra la fila*). **Y salir cero es
+exactamente lo que prueba que esta vuelta no inserto nada.**
+
+**Y el hook corrio en los siete commits de la vuelta.** No lo salte ni una vez.
+
+## C.9.5. EL ESTADO AL CIERRE, MEDIDO AL CIERRE
+
+| medida | instrumento corrido al cierre | valor |
+|---|---|---:|
+| nodos en el grafo | `python forja.py gate` | **52** |
+| aristas en el grafo | conteo sobre `dataset/nodos.jsonl` | **37** |
+| veredictos en bitacora | `python forja.py rancios` | **60** |
+| pruebas | `python tests/test_aceptacion.py` | **72 de 72** |
+| candidatos en `cuarentena/zhuo_manager/` | `ls -1 cuarentena/zhuo_manager/*.json | wc -l` | **21** |
+| candidatos en `cuarentena/smart_who/` (sin tocar) | `ls -1 cuarentena/smart_who/*.json | wc -l` | **15** |
+
