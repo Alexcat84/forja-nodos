@@ -8554,3 +8554,35 @@ exactamente lo que prueba que esta vuelta no inserto nada.**
 | candidatos en `cuarentena/zhuo_manager/` | `ls -1 cuarentena/zhuo_manager/*.json | wc -l` | **21** |
 | candidatos en `cuarentena/smart_who/` (sin tocar) | `ls -1 cuarentena/smart_who/*.json | wc -l` | **15** |
 
+## C.9.6. LA RELECTURA DE PUNTEROS, CORRIDA SOBRE MI PROPIO REPORTE
+
+**No la prometo: la corri, y pego las dos salidas enteras, incluida la que no sale
+limpia.**
+
+**PASADA 1, con un patron ancho** que recoge cualquier `nnn: texto` del tramo de la
+vuelta 9 y lo compara con la linea `nnn` de los tres ficheros de fuente:
+
+    citas de linea comprobadas con el fichero: 40 correctas, 27 sin encontrar
+
+**LAS 27 NO SON 27 CITAS ROTAS, y la diferencia se dice en vez de redondearse.** Al
+abrirlas una a una: **20 son ruido del patron**, que muerde numeros de seccion (`5.c`),
+numeros de paso (`paso 11`), horas (`19:50:21`) y las cabeceras de fichero que no estan en
+los tres libros (`cap_04.md` L9, `FUENTES_CANONICAS.json` L21). **Las 7 restantes eran
+punteros de verdad y estaban rotos: los siete de la tabla 5.c**, corregidos y declarados
+en 5.c.bis.
+
+**PASADA 2, con el patron estrecho** que exige la forma exacta de cita de esta casa,
+`` `Lnnn: texto` `` entre comillas invertidas, corrida DESPUES de la correccion:
+
+    citas con la forma `Lnnn: ...` : 26 correctas, 0 rotas
+
+**26 de 26 contra el fichero.**
+
+**Y las siete citas de la tabla de puentes reabiertas una a una** (`cap_02.md` L91, L119 y
+L205; `cap_03.md` L17, L23, L47 y L189): **las siete correctas.**
+
+**LA LECCION DE ESTA PASADA, dicha en una linea:** **el desfase no aparecio donde miraba
+el remedio viejo (las citas al libro), sino donde miraba el remedio nuevo de la TAREA 1.a
+(las citas a lo ya publicado).** El encargo acerto en donde poner el remedio, y la caida
+que evito es la misma especie exacta que la vuelta 8 pago tres veces.
+
