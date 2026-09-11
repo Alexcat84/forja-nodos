@@ -9336,3 +9336,192 @@ con texto estan cubiertas las 157.
 | P25 | como se hace la salida, y el cierre del capitulo | `L313` |
 
 **ESTA FRONTERA SE COMMITEA AHORA, ANTES DE ESCRIBIR EL PRIMER CANDIDATO DEL CAPITULO.**
+
+### 3.4. `D.27` PIEZA A PIEZA, TAMBIEN PARA LO QUE DESCARTO
+
+**25 piezas juzgadas de 25**, que son las 25 de la frontera de `3.3` contadas de su propia
+tabla. **Las 2 que NO dan candidato:**
+
+| pieza | veredicto | la razon, con su cita |
+|---|---|---|
+| P1 | **DESCARTADA** | rotulo del capitulo, **8 palabras**. `L9: Chapter Three`, el titulo y el par `AVOID` / `ASPIRE` |
+| P2 | **DESCARTADA como nodo propio**, y es la que mas me ha costado | la escena del `critique` semanal. **Ver `3.5`** |
+
+**Las 23 restantes se agrupan en 15 candidatos**, porque siete piezas entran dentro de otra:
+P5, P6 y P7 dentro de P4; P11 dentro de P10; P13, P14 y P15 dentro de P12; y P18 dentro de
+P17. **23 piezas menos 8 que entran dentro dan 15**, y 15 son las filas de `3.6`.
+
+### 3.5. **DISCUTIBLE 3**, MARCADO ANTES DE SABER SI ACIERTO: LA ESCENA DEL `critique`
+
+**P2 es la pieza descartada mas rica del capitulo y la marco por eso.** Trae lo que un
+inventario de etapas trae: se elige un orden, en el sentido de las agujas o al reves;
+alguien se ofrece a ir primero; enchufa el portatil; describe el problema que intentaba
+resolver y como llego a su solucion; empiezan las criticas y cualquiera puede meter
+preguntas, dudas o sugerencias; se discute y se debate; se ofrecen ideas nuevas y ejemplos
+parecidos; **al final el que presenta sale con una lista de proximos pasos claros**; y se
+pasa al siguiente hasta que todos han presentado.
+
+**Y AUN ASI LA DESCARTO, POR DOS RAZONES TEXTUALES Y NO DE FORMA:**
+
+1. **El libro declara el mismo que la escena es ilustracion y no materia.**
+   `L27: To me, this meeting always felt like the epitome of what I loved about managing a
+   small team.` **Epitome es ilustracion.** Y `EXTRACTOR.md` 9 lo tiene escrito por su
+   nombre: **el caso no es la casa.**
+2. **Y el libro dice en la linea siguiente de que va el capitulo, y no es del `critique`.**
+   `L29: Managing a small team is about mastering a few basic fundamentals: developing a
+   healthy manager-report relationship and creating an environment of support. In this
+   chapter, we'll dive in to the specifics of those skills.` **Los fundamentos anunciados
+   son dos y ninguno es dirigir una critica semanal.**
+
+**Y LA TERCERA RAZON, QUE ES LA QUE ME HARIA CAER SI CAIGO:** las 400 palabras de P2 estan
+**enteras en primera persona del pasado habitual** (*we would run*, *We'd pick an order*,
+*We'd move on*). **Ese es exactamente el sitio donde vivieron mis siete puentes y el
+residuo del auditor.** Convertirla en nodo obliga a cambiar el sujeto en cada paso.
+
+> **SI CAE, LA LECCION ES QUE UNA PRACTICA RECURRENTE CONTADA EN PASADO HABITUAL SIGUE
+> SIENDO UN PROCEDIMIENTO**, y entonces el `critique` vuelve con su nodo y este capitulo
+> tiene 16 candidatos en vez de 15. **Lo digo antes de saberlo.**
+
+### 3.6. LOS 15 CANDIDATOS DEL Cap. 3, CADA UNO CON SU ADUANA EN EL MISMO ACTO
+
+**Cada uno se escribio y paso la aduana antes de escribir el siguiente** (`EXTRACTOR.md`
+16). **14 de 15 al primer intento. UNO CAYO, y es el primero del lote 3 que cae.**
+
+| # | id propuesto | piezas | pasos | la salida de la aduana, pegada |
+|---:|---|---|---:|---|
+| 24 | `diagnosticar_falta_motivacion_habilidad` | P3 | 9 | `[ENTRARIA] diagnosticar_falta_motivacion_habilidad` |
+| 25 | `comprobar_confianza_persona_cargo` | P4, P5, P6, P7 | 10 | `[ENTRARIA] comprobar_confianza_persona_cargo` |
+| 26 | `ganar_confianza_personas_cargo` | P8 | 6 | `[ENTRARIA] ganar_confianza_personas_cargo` |
+| 27 | `respetar_cuidar_persona_cargo` | P9 | 8 | `[ENTRARIA] respetar_cuidar_persona_cargo` |
+| 28 | `dirigir_reunion_individual_semanal` | P10, P11 | 10 | `[ENTRARIA] dirigir_reunion_individual_semanal` |
+| 29 | `preguntar_conducir_reunion_individual` | P12, P13, P14, P15 | 7 | `[ENTRARIA] preguntar_conducir_reunion_individual` |
+| 30 | `ser_honesto_transparente_desempenio` | P16 | 7 | `[ENTRARIA] ser_honesto_transparente_desempenio` |
+| 31 | `admitir_errores_areas_mejora_propias` | P17, P18 | 9 | `[ENTRARIA] admitir_errores_areas_mejora_propias` |
+| 32 | `ayudar_personas_jugar_fortalezas` | P19 | 8 | `[ENTRARIA] ayudar_personas_jugar_fortalezas` |
+| 33 | `repartir_tiempo_atencion_mejores_equipo` | P20 | 8 | `[ENTRARIA] repartir_tiempo_atencion_mejores_equipo` |
+| 34 | `cortar_efecto_divisor_persona_brillante` | P21 | 8 | `[ENTRARIA] cortar_efecto_divisor_persona_brillante` |
+| 35 | `resolver_desencaje_valores_persona_equipo` | P22 | 8 | `[ENTRARIA] resolver_desencaje_valores_persona_equipo` |
+| 36 | `mover_rapido_persona_papel_equivocado` | P23 | 9 | **CAYO Y SE CORRIGIO. Ver `3.7`** |
+| 37 | `elegir_recolocar_despedir_persona` | P24 | 5 | `[ENTRARIA] elegir_recolocar_despedir_persona` |
+| 38 | `despedir_persona_respeto_franqueza` | P25 | 8 | `[ENTRARIA] despedir_persona_respeto_franqueza` |
+| **15** | | | **120** | **15 ENTRARIAN, 0 BLOQUEARIAN, 0 CAERIAN** al cerrar |
+
+**Las 15 filas se cuentan de los 38 ficheros de la carpeta menos los 21 de la vuelta 9
+menos los 2 de la `2.d`: 38 menos 23 son 15** (remedio 1.a, hermana tercera). **Y los 120
+pasos de una pasada sobre los quince JSON**, no de sumar la columna a ojo.
+
+**CERO VECINOS LEVANTADOS EN LOS QUINCE.** Van **38 de 38 candidatos sin que la aduana
+levante ni uno solo** contra un grafo de 52 nodos. **El choque sigue anunciado para el
+`cap_08`, `Hiring Well`, y no ha llegado todavia.**
+
+### 3.7. LA PRIMERA CAIDA DE ESTE LOTE EN LA ADUANA, PEGADA ENTERA
+
+**No es una parada y el encargo lo dice: se corrige y se pega la salida.** Aqui esta la
+salida sin recortar:
+
+    $ python forja.py informe cuarentena/zhuo_manager/mover_personas_rapido_sin_alargar.json
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      CAERIAN por una guarda           : 1
+
+    POR QUE GUARDA CAEN
+         1  el candidato rompe docs/REGLAS_DE_ID.md
+
+    [CAERIA] mover_personas_rapido_sin_alargar   (mover_personas_rapido_sin_alargar.json)
+        guarda: el candidato rompe docs/REGLAS_DE_ID.md
+          id 'mover_personas_rapido_sin_alargar': preposicion o articulo prohibido: sin (regla 3)
+
+**LA REGLA 3 OTRA VEZ, que es la que mas cae de todas** (35 de los 65 del estreno, segun
+`EXTRACTOR.md` 15.3). **Y cae por una preposicion que la lista de ejemplos de esa seccion
+ni siquiera nombra:** la seccion escribe *`de`, `del`, `en`, `con`, `por`, `para`*, y la
+guarda tumba **`sin`**. **La guarda es mas ancha que su lista de ejemplos, y hace bien.**
+
+    id corregido: mover_rapido_persona_papel_equivocado
+    $ python forja.py informe cuarentena/zhuo_manager/mover_rapido_persona_papel_equivocado.json
+      ENTRARIAN sin leer nada          : 1
+      CAERIAN por una guarda           : 0
+
+**Lo digo por su nombre porque es informacion util y no un tropiezo que esconder: leer las
+reglas de id no me salvo de esta, y lo que me salvo fue correr la aduana en el acto.**
+**Si la hubiera corrido al final del capitulo, el mismo fallo me habria costado el lote.**
+
+### 3.8. LA RELECTURA DE FIDELIDAD DEL Cap. 3 (`D.30`), HECHA DENTRO DEL ACTO
+
+**3 PUENTES SOBRE 120 PASOS ESCRITOS, el 2,50 por ciento.** Los tres corregidos antes de
+commitear, **y los tres vuelven a salir del mismo sitio que el encargo me dijo que mirara:
+donde el libro habla en primera persona del pasado, o donde une dos parrafos que el libro
+no une.**
+
+| # | el paso que escribi | la linea del libro | por que era puente | como quedo |
+|---:|---|---|---|---|
+| 1 | `comprobar_confianza...` paso 9: ***Y si** tu organizacion no lo pregunta en encuestas anonimas, **saca la lectura aproximada** preguntandole que cualidades tiene un jefe perfecto* | `L81: If your organization doesn't do this, simply reflecting on the question can be useful.` y `L85: You can also get an approximate reading by asking your report [...]` | **la condicional es mia.** El libro pone dos cosas independientes y yo hice la segunda consecuencia de la primera. **Es la especie del destinatario con otro traje: enlazo lo que el libro deja suelto** | **partido en dos pasos**, uno por linea, y el segundo abre con *Y puedes **ademas***, que es el `also` del libro |
+| 2 | `cortar_efecto_divisor...` paso 4: *y con que **se va un monton de tiempo** en lidiar con las relaciones que deja deshilachadas a su paso* | `L247: A huge amount of time was spent dealing with the frayed relationships in his wake.` | **es el caso de la autora en pasado, sobre una persona concreta**, y yo lo daba como ley general del arquetipo | *El libro lo cuenta **de un caso propio**, donde ademas se fue un monton de tiempo en lidiar con las relaciones que **aquella persona** iba dejando deshilachadas a su paso* |
+| 3 | `mover_rapido...` paso 7: *la persona **a la que intentas ayudar** se estresa [...] **tu ayuda** se le vuelve un ojo que le vigila cada movimiento* | `L301: The person I was trying to help would feel stressed out [...] and my "help" felt like the Eye of Sauron watching his every move.` | **cambio de sujeto, la especie exacta de mis puentes 5 y 7 de la vuelta 9**: lo que le paso a ella lo convertia en lo que te pasa a ti | *que es el punto de inflexion que **la autora cuenta de si misma**: quien recibia **su** ayuda se estresaba [...] esa ayuda **se le sentia** como un ojo que le vigilaba cada movimiento* |
+
+**Y UNA PRECISION QUE CORREGI Y NO CUENTO COMO PUENTE**, porque no anade contenido ni
+cambia de sujeto: `ganar_confianza_personas_cargo` paso 2 decia *pide **estas cuatro**
+acciones* y el libro dice `L101: requires the following few actions`. **El libro dice unas
+pocas y las desarrolla en cuatro subsecciones tituladas.** Ahora el paso dice *pide **unas
+pocas** acciones, que el libro desarrolla una a una y **son estas cuatro***. **Contar una
+lista visible es leer; decir que el libro dijo cuatro cuando dijo unas pocas es teclear.**
+
+### 3.9. LA COMPROBACION DE ORDEN DE LA `2.b`, CORRIDA SOBRE LOS NUEVE NODOS QUE LA PIDEN
+
+**La leccion de la `2.b` no se queda en leccion: la corri.** Los nodos con estructura de
+*si A, si B, si C*, o de lista enumerada cuyas partes se desarrollan despues, **se leyeron
+enteros de un tiron contra su seccion entera**, y no solo paso a paso.
+
+| nodo | la serie que hay que ordenar | las lineas del libro, en su orden | veredicto |
+|---|---|---|---|
+| `diagnosticar_falta_motivacion_habilidad` | las dos causas y sus ramas | `L37` (las dos), `L39` (la de habilidad), `L41` (la de motivacion), `L43` (las tres conversaciones) | **ORDEN CORRECTO** |
+| `comprobar_confianza_persona_cargo` | las tres afirmaciones | `L63`, `L67`, `L79` | **ORDEN CORRECTO** |
+| `ganar_confianza_personas_cargo` | las cuatro acciones | `L103`, `L121`, `L175`, `L183` | **ORDEN CORRECTO** |
+| `dirigir_reunion_individual_semanal` | las cuatro ideas de preparacion | `L131`, `L133`, `L135`, `L137` | **ORDEN CORRECTO** |
+| `preguntar_conducir_reunion_individual` | los tres grupos de preguntas | `L147`, `L155`, `L167` | **ORDEN CORRECTO** |
+| `admitir_errores_areas_mejora_propias` | las cuatro frases | `L197`, `L199`, `L201`, `L203` | **ORDEN CORRECTO** |
+| `cortar_efecto_divisor_persona_brillante` | las tres lecciones | `L251`, `L253`, `L255` | **ORDEN CORRECTO** |
+| `mover_rapido_persona_papel_equivocado` | las cinco razones y cuales se arreglan hablando | `L289` (las cinco), `L291` (las que si y la de valores), `L297` (la de habilidades) | **ORDEN CORRECTO** |
+| `elegir_recolocar_despedir_persona` | las dos opciones | `L305` (las dos), `L307` (la primera) | **ORDEN CORRECTO** |
+
+**NUEVE DE NUEVE. CERO desordenes, y la comparacion que sale CERO se escribe CERO.** La
+comprobacion costo una relectura entera de nueve nodos y no encontro nada, **y eso tambien
+es un dato: el fallo de la `2.b` salio de un nodo con TRES ramas de longitud dispar, que es
+donde el ojo se pierde, y aqui la mayoria son listas que el libro titula una a una.**
+
+### 3.10. LAS ARISTAS DEL Cap. 3, CON EL TEST DE `D.37` CORRIDO ANTES DE ETIQUETARLAS
+
+**`MODO_INSERCION=cuarentena`, asi que NO corro `python forja.py arista`.** Van escritas.
+**Y a cada una le corri antes el test: abrir el paso de la madre y ver si ahi se nombra al
+hijo.**
+
+**LAS 7 DE SERIE, que PASAN `D.37`:**
+
+| madre, paso | hijo | lo que dice el paso, y por que pasa |
+|---|---|---|
+| `ganar_confianza_personas_cargo` **3** | `respetar_cuidar_persona_cargo` | *La primera, **respetar a tu persona a cargo y cuidar de ella*** |
+| `ganar_confianza_personas_cargo` **4** | `dirigir_reunion_individual_semanal` | *La segunda, invertir tiempo en ayudarla, que el libro concreta en **la reunion individual semanal*** |
+| `ganar_confianza_personas_cargo` **5** | `ser_honesto_transparente_desempenio` | *La tercera, **ser honesto y transparente sobre como va su desempenio*** |
+| `ganar_confianza_personas_cargo` **6** | `admitir_errores_areas_mejora_propias` | *Y la cuarta, **admitir tus propios errores y tus propias areas de mejora*** |
+| `mover_rapido_persona_papel_equivocado` **3** | `cortar_efecto_divisor_persona_brillante` | el paso enumera las cinco razones y la quinta es ***o hunde a los demas*** |
+| `mover_rapido_persona_papel_equivocado` **5** | `resolver_desencaje_valores_persona_equipo` | *si lo que motiva a una persona sencillamente **no casa con los valores del equipo*** |
+| `elegir_recolocar_despedir_persona` **1** | `despedir_persona_respeto_franqueza` | *tienes **dos opciones y solo dos**: ayudar a la persona a encontrar un papel nuevo dentro de tu organizacion, **o dejarla ir*** |
+
+**LAS 4 DE LECTURA, que NO pasan `D.37` y van por `D.29` con su razon escrita:**
+
+| madre, paso | hijo | por que NO pasa `D.37`, y por que la sostengo igual |
+|---|---|---|
+| `diagnosticar_falta_motivacion_habilidad` **9** | `comprobar_confianza_persona_cargo` | dice *construir una base estable para vuestra relacion* y **no nombra las tres afirmaciones**. La sostengo porque `L45` cierra esa seccion diciendo que el diagnostico solo funciona con conversaciones honestas, **y la seccion siguiente es exactamente la comprobacion de si podeis tenerlas** |
+| `comprobar_confianza_persona_cargo` **8** | `ganar_confianza_personas_cargo` | nombra la tercera afirmacion y **no nombra las cuatro acciones**. La sostengo porque **una es la medida y la otra el remedio de esa medida**, y el libro las pone consecutivas |
+| `dirigir_reunion_individual_semanal` **6** | `preguntar_conducir_reunion_individual` | dice *preparala* y **no nombra los tres grupos de preguntas**. La sostengo porque `L129` y `L139` encadenan preparacion con lista de preguntas dentro del mismo tramo |
+| `mover_rapido_persona_papel_equivocado` **8** | `elegir_recolocar_despedir_persona` | dice *apoyalo para que siga su camino* y **no nombra las dos opciones**. La sostengo porque `L303` y `L305` son consecutivas y la segunda abre con *You have two options at this point* |
+
+**7 de serie mas 4 de lectura. ESCRITAS: 11. DECLARADAS: 0.**
+
+### 3.11. Estado de la TAREA 3
+
+**CERRADA.** 25 piezas juzgadas, 2 descartadas con su cita, **15 candidatos escritos y los
+15 pasando la aduana al cerrar**, una caida corregida con su salida pegada, 3 puentes
+cazados y corregidos en el acto sobre 120 pasos, la comprobacion de orden corrida sobre 9
+nodos con cero hallazgos, y 11 aristas escritas con su test de `D.37` corrido una a una.
+**Ninguna parada, cero inserciones.**

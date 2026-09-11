@@ -1,0 +1,47 @@
+{
+  "id": "ayudar_personas_jugar_fortalezas",
+  "titulo": "Ayudar a cada persona de tu equipo a jugar con sus fortalezas",
+  "denominaciones": {
+    "nombre_largo": "El reconocimiento genuino y especifico de las fortalezas, y las oportunidades que se buscan para que cada uno haga mas de lo que se le da bien",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "help people play to their strengths"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Siempre que tengas personas a cargo, y con mas motivo cuando notes que toda tu atencion se esta yendo a los puntos con problema.",
+  "entregable_esperado": "Cada persona del equipo con su fortaleza reconocida de forma genuina y especifica, y con una oportunidad concreta de hacer mas de aquello que se le da bien.",
+  "escala_minima": "Una sola persona a cargo y una sola fortaleza reconocida. El libro razona el caso con una sola frase dicha por un jefe.",
+  "pasos_accionables": [
+    "Parte de que estamos cableados para ver lo malo con mas claridad que lo bueno, y de que es una ventaja evolutiva: el cavernicola que otea el paisaje no gana nada distinguiendo lo que es normal y esta bien, los ciervos pastando o las ramas meciendose, sino detectando al leon hambriento entre las sombras.",
+    "Cuenta con que eso tira de ti en las dos direcciones: al leer la opinion de tu jefe pasas por encima de la parte de fortalezas y te clavas en las areas de mejora, y ya como directivo tu atencion se va igual a los puntos con problema, a los disenios que no acaban de estar, a los proyectos que se retrasan y a los equipos que necesitan contratar.",
+    "Reconoce aun asi el trabajo duro, las habilidades valiosas, el consejo util o los buenos valores, porque reconocerlos puede motivar enormemente si se siente genuino y especifico.",
+    "Haz que sea especifico de la persona, que es como el libro lo razona con el caso del jefe de la autora: pudo haberle dicho una docena de cosas para que se sintiera mejor, y lo que le dijo fue que recordara que tenia buenos valores, algo especifico de ella y que ella sintio que el creia de verdad.",
+    "Da por hecho que la gente tiene mas probabilidad de tener exito usando sus fortalezas, que es el mensaje que exploran Marcus Buckingham y Donald Clifton en Now, Discover Your Strengths y Tom Rath en StrengthsFinder 2.0.",
+    "Busca oportunidades para que cada uno haga mas de aquello que le gusta y se le da bien: si a alguien de tu equipo le encanta poner al dia a los recien llegados y ademas se le da bien, dale mas de eso, por ejemplo mentorizar a alguien en practicas o hacer de entrenador informal de otros.",
+    "Y si tienes a alguien que construye comunidad y ya organiza de forma natural las comidas del equipo, preguntale si le interesaria dirigir determinadas reuniones.",
+    "Ten presente en cada caso que lo que estas dando es una oportunidad de crecer en una direccion que habla a los intereses y a las fortalezas de esa persona."
+  ],
+  "atribuciones": [
+    {
+      "cifra": "hay una cualidad que separa a los directivos verdaderamente grandes del resto: descubren que es lo unico de cada persona y despues lo capitalizan, y el trabajo de un directivo es convertir el talento particular de una persona en rendimiento",
+      "autor": "Marcus Buckingham",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: el libro lo presenta como consultor de gestion que ha estudiado cientos de organizaciones y lideres, sin anio"
+    }
+  ],
+  "resumen_teorico": "El libro sostiene que hay una cualidad que separa a los grandes directivos del resto, que es descubrir que tiene de unico cada persona y capitalizarlo, y monta la seccion sobre una tension medida: vemos lo malo con mas claridad que lo bueno, por evolucion, y por eso el reconocimiento hay que ponerlo a proposito. El inventario propio del libro son los cuatro objetos que se reconocen, el trabajo duro, las habilidades valiosas, el consejo util y los buenos valores, y los dos ejemplos de oportunidad que escribe uno a uno. Los dos criterios del reconocimiento, genuino y especifico, tambien son suyos y estan razonados con el caso de la frase de su jefe. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se reconoce ni que hacer si la fortaleza de alguien no le sirve de nada al equipo."
+}

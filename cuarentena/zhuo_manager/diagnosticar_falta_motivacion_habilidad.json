@@ -1,0 +1,48 @@
+{
+  "id": "diagnosticar_falta_motivacion_habilidad",
+  "titulo": "Diagnosticar si el trabajo flojo es cuestion de motivacion o de habilidad",
+  "denominaciones": {
+    "nombre_largo": "El diagnostico de las personas que hay detras de un trabajo flojo, con la vuelta a la pregunta de Andy Grove y las tres conversaciones en su orden",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "diagnosing the people issues behind lackluster work"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando alguien de tu equipo no esta haciendo buen trabajo y quieres saber por que antes de actuar. El libro lo pone para el equipo pequenio, donde mantener un proposito compartido es sencillo y lo que queda son las personas y el proceso.",
+  "entregable_esperado": "Dicho si lo que falla es la motivacion o la habilidad, con las tres conversaciones tenidas en su orden.",
+  "escala_minima": "Una sola persona a cargo y una serie de conversaciones. El libro no pide instrumento ninguno.",
+  "pasos_accionables": [
+    "Recuerda la definicion de gestion con la que el libro trabaja: el trabajo de un directivo es sacar mejores resultados de un grupo de personas trabajando juntas, influyendo en el proposito, en las personas y en el proceso.",
+    "En un equipo pequenio da por sencillo mantener un sentido compartido del proposito, porque no se cruzan los cables mientras el equipo aun cabe alrededor de una mesa, asi que lo que queda son las personas y el proceso, y de esos dos las personas son con diferencia lo mas importante.",
+    "Dale la vuelta a la pregunta como hace Andy Grove: en vez de preguntar que lleva a la gente a hacer un gran trabajo, pregunta que se interpone, porque solo hay dos posibilidades, que no sepan hacer buen trabajo o que sepan pero no esten motivados.",
+    "Si no sabe hacerlo, la respuesta obvia es que no tenga las habilidades adecuadas para el puesto, y ahi tienes dos salidas: ayudar a tu persona a cargo a aprender esas habilidades, o contratar a otra que tenga las que necesitas.",
+    "Si no esta motivado, mira las tres posibilidades que el libro nombra: que no tenga una imagen clara de a que se parece un gran trabajo; que el papel no hable a sus aspiraciones, es decir que pueda hacerlo pero preferiria estar haciendo otra cosa; o que piense que nada va a cambiar si se esfuerza mas, porque no habra recompensa si las cosas mejoran ni castigo si no.",
+    "Haz el diagnostico con una serie de conversaciones, y en este orden. Primero, discutid si vuestras expectativas estan alineadas: significa un gran trabajo lo mismo para los dos?",
+    "Despues, discutid si es cuestion de motivacion.",
+    "Y si esas dos no resuelven tu preocupacion, entra en si el problema esta en las habilidades.",
+    "Cuenta con que todo lo anterior solo funciona si podeis tener conversaciones honestas y constructivas juntos, y eso empieza ante todo por construir una base estable para vuestra relacion."
+  ],
+  "atribuciones": [
+    {
+      "cifra": "la vuelta a la pregunta: en vez de que lleva a la gente a hacer un gran trabajo, que se interpone en el buen trabajo, y que solo hay dos posibilidades, no saber como o saber pero no estar motivado",
+      "autor": "Andy Grove",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: el libro lo cita como su clasico High Output Management, sin anio"
+    }
+  ],
+  "resumen_teorico": "El capitulo abre diciendo que dirigir un equipo pequenio va de dominar unos pocos fundamentos, y el primero es que todo vuelve siempre a las personas. El nodo transcribe el razonamiento que el libro toma de Andy Grove y le da la vuelta a la pregunta: lo que hay que diagnosticar no es que produce el buen trabajo sino que lo estorba, y solo hay dos estorbos posibles. El inventario es del libro en los tres sitios donde hace falta: las dos posibilidades del estorbo, las dos salidas cuando faltan habilidades, y las tres posibilidades cuando falta motivacion. Las tres conversaciones tambien van en el orden que el libro escribe, con la de las expectativas la primera. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuanto se espera entre una conversacion y la siguiente, ni que hacer si el diagnostico sale que es de las dos cosas a la vez."
+}

@@ -1,0 +1,48 @@
+{
+  "id": "admitir_errores_areas_mejora_propias",
+  "titulo": "Admitir tus propios errores y tus propias areas de mejora",
+  "denominaciones": {
+    "nombre_largo": "La cuarta de las cuatro acciones que ganan confianza: pedir perdon, admitir lo que no sabes, y las cuatro frases con las que la autora lo hace",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "admit your own mistakes and growth areas"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando has cometido un error, has defraudado a alguien o has dicho lo que no debias, y tambien cuando no tienes las respuestas o estas lidiando con tus propios retos personales.",
+  "entregable_esperado": "El error admitido, el perdon pedido, una accion con sustancia tomada para hacerlo mejor, y tu apareciendo con tus miedos y tus dudas a la vista en vez de barridos bajo la alfombra.",
+  "escala_minima": "Un solo error y una sola conversacion. Las cuatro frases que el libro da se usan de una en una.",
+  "pasos_accionables": [
+    "Parte de que nadie es perfecto y los directivos no son una excepcion: vas a cometer errores, vas a defraudar a gente, y vas a tener momentos en que digas lo que no debias y empeores la situacion en vez de mejorarla.",
+    "Cuando pase, no caigas en la trampa de pensar que por ser el jefe no puedes admitir tus defectos ni tus debilidades.",
+    "En vez de eso pide perdon, admite que la has fastidiado, y toma una accion con sustancia para hacerlo mejor en el futuro.",
+    "Cuenta con que cuando alguien esta pasando una mala racha lo que mas ayuda no suele ser el consejo ni las respuestas, sino la empatia.",
+    "Y cuenta con que expresar vulnerabilidad tiene un poder enorme, que es lo que sostiene Brene Brown: la vulnerabilidad suena a verdad y se siente como coraje, y la verdad y el coraje no siempre son comodos, pero nunca son debilidad.",
+    "Admite cuando no tienes las respuestas o cuando estas lidiando con tus propios retos personales, y usa las cuatro frases que la autora dice usar. La primera: no se la respuesta, que piensas tu?",
+    "La segunda: quiero sincerarme y pedirte perdon por lo que hice o dije el otro dia.",
+    "La tercera: una de mis areas de mejora personales de este semestre es esta.",
+    "Y la cuarta: me temo que no se lo suficiente para ayudarte con ese problema, aqui tienes a alguien con quien deberias hablar."
+  ],
+  "atribuciones": [
+    {
+      "cifra": "hay un poder enorme en expresar vulnerabilidad: la vulnerabilidad suena a verdad y se siente como coraje, y la verdad y el coraje no siempre son comodos, pero nunca son debilidad",
+      "autor": "Brene Brown",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: el libro la cita como experta en investigacion sobre el coraje, la verguenza y la empatia, sin anio ni obra"
+    }
+  ],
+  "resumen_teorico": "Es la cuarta de las cuatro acciones que el libro pide para ganarse la confianza, y la que mas contradice la idea de que el jefe llega siempre con seguridad y con el como. El inventario propio del libro son las cuatro frases, escritas una a una y entrecomilladas, que es lo que convierte un mandato de admitir errores en algo ejecutable. La doctrina que las sostiene la razona el libro con dos apoyos: un caso de un directivo respetado que mando una nota desmoralizadora y se disculpo de inmediato, del que la autora dice haber olvidado el correo pero no la diferencia que hizo la disculpa, y la tesis de Brene Brown sobre el poder de expresar vulnerabilidad. Lo que el libro NO dice, y por eso no esta escrito aqui, es en que canal se pide perdon ni cuanto se espera antes de hacerlo."
+}

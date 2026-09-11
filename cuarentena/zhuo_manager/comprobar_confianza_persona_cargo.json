@@ -1,0 +1,41 @@
+{
+  "id": "comprobar_confianza_persona_cargo",
+  "titulo": "Comprobar si tu relacion con cada persona a cargo esta fundada en la confianza",
+  "denominaciones": {
+    "nombre_largo": "Las tres afirmaciones que tienen que ser ciertas para que una relacion entre directivo y persona a cargo este fundada en la confianza",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "developing a relationship founded on trust, the three statements"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando quieres saber si tus personas a cargo pueden ser completamente honestas contigo, y no quieres enterarte de que no lo eran el dia que te sorprenden con su renuncia.",
+  "entregable_esperado": "Las tres afirmaciones del libro contestadas para cada persona a cargo, y dicho para cada una si son ciertas o no.",
+  "escala_minima": "Una sola persona a cargo. Las tres afirmaciones se comprueban de una en una.",
+  "pasos_accionables": [
+    "Parte de que la responsabilidad de construir una relacion de confianza es mas tuya que suya: lo mires como lo mires eres su jefe, y tienes mas impacto en su dia a dia que el que tiene el en el tuyo.",
+    "Cuenta con que es humano querer que tu jefe piense bien de ti, y que quedar como quejica, como fracasado o como empleado problematico parece uno de esos no obvios de la gestion hacia arriba. El problema es que si tus personas a cargo no te cuentan como se sienten de verdad, no puedes ayudarlas.",
+    "Y cuenta con lo que eso cuesta: te pierdes las senales tempranas que llevan a problemas mayores, y la insatisfaccion fermenta bajo la superficie hasta que un dia te sorprenden con su renuncia. La mayoria de las veces que eso pasa no solo dejan la empresa, tambien te dejan a ti.",
+    "Comprueba la primera afirmacion: mis personas a cargo me traen sus mayores dificultades con regularidad. Si estan peleando con un encargo te lo dicen enseguida para trabajarlo juntos; si tienen problemas para colaborar con alguien, te enteras por ellos y no por el pasillo; si algo les quita el suenio, te dicen que es.",
+    "Para esa primera usa la prueba del tornasol que una companiera de la autora le compartio: si preguntas como van las cosas y la respuesta durante varias semanas seguidas es que todo va bien, tomalo como senal para hurgar mas, porque es mucho mas probable que la persona sea timida para entrar en los detalles feos que no que todo vaya consistentemente de maravilla.",
+    "Comprueba la segunda: mi persona a cargo y yo nos damos opinion critica con regularidad y no se toma como algo personal. Si hace un trabajo que no te parece bueno, te sientes comodo diciendoselo de frente? Y te diria el a ti si cree que te has equivocado?",
+    "Para esa segunda, apunta a que todas tus reuniones a solas se sientan un poco incomodas, que es el consejo que el libro recoge de Mark Rabkin: las conversaciones mas importantes y con mas sentido tienen esa caracteristica, y ninguna relacion fuerte se construye solo sobre cortesias superficiales.",
+    "Comprueba la tercera: mis personas a cargo volverian a trabajar conmigo con gusto. Para cada una, puedes decir con confianza que querria volver a estar en tu equipo? Si no estas seguro de que la respuesta es si, probablemente es no.",
+    "Para esa tercera, si tu organizacion no hace encuestas anonimas de salud de equipo que pregunten explicitamente si volverias a trabajar con tu jefe, el libro dice que ya es util reflexionar sobre la pregunta por tu cuenta.",
+    "Y puedes ademas sacar una lectura aproximada preguntandole a la persona que cualidades tiene para ella un jefe perfecto, y evaluando como te comparas con la descripcion que te devuelva. Preguntar directamente si volveria a trabajar contigo pasa de sobra la vara de lo incomodo, pero no te deja en posicion de recibir respuestas del todo honestas."
+  ],
+  "resumen_teorico": "El libro trata la confianza como el ingrediente mas importante de la relacion entre directivo y persona a cargo, y la hace comprobable en vez de dejarla como postura: escribe tres afirmaciones y dice que has construido la relacion si las tres son ciertas. Ese es el inventario propio que hace procedimentable la linea. Las tres van en un solo nodo y no en cabeza mas tres porque ninguna de las tres tiene titulo propio en el libro, son frases corridas del cuerpo, y porque la riqueza de las tres es pareja y delgada: cada una trae su afirmacion y una sola comprobacion practica. Las dos herramientas concretas, la prueba del tornasol y el apuntar a reuniones un poco incomodas, son de terceros que el libro nombra y por eso van dentro con su duenio. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se repasan las tres afirmaciones ni que hacer si una sale que no."
+}

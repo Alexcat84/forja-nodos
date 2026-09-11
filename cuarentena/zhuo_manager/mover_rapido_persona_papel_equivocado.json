@@ -1,0 +1,54 @@
+{
+  "id": "mover_rapido_persona_papel_equivocado",
+  "titulo": "Mover rapido a quien no esta preparado para tener exito en su papel",
+  "denominaciones": {
+    "nombre_largo": "Las cinco razones por las que alguien no hace buen trabajo, cuales se arreglan hablando y cuales no, y por que alargarlo es peor para esa persona",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "make people moves quickly"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando alguien de tu equipo lleva tiempo sin hacer trabajo de calidad, sin ser productivo o bajando la moral, y llevas meses volcando esfuerzo en arreglarlo sin que cambie nada.",
+  "entregable_esperado": "Dicho cual de las cinco razones es la que falla, dicho si se arregla hablando o no, y tomada la decision sin alargarla.",
+  "escala_minima": "Una sola persona a cargo. El libro razona el caso con dos personas concretas de su propio equipo.",
+  "pasos_accionables": [
+    "Deja de considerar que tu papel es ante todo ser el campeon de tu equipo, hasta el punto de pensar que si tu no das un paso al frente con empatia no lo hara nadie. Nadie lo hara, es cierto, y es tu trabajo, y todo el mundo merece una segunda oportunidad.",
+    "Pero cuenta con la cifra que la autora da de su propia experiencia: el ochenta por ciento de las veces ese esfuerzo, que son mas reuniones a solas, ayuda en los proyectos, conversaciones con los pares y charlas de animo, acabo siendo inutil.",
+    "Ten delante las cinco razones principales por las que alguien puede no estar haciendo un gran trabajo: no sabe a que se parece un gran trabajo, sus aspiraciones no encajan con lo que el puesto necesita, no se siente apreciado, le faltan las habilidades, o hunde a los demas.",
+    "Cuenta con que los asuntos de conciencia o de falta de aprecio si suelen poder abordarse con una serie de conversaciones honestas.",
+    "Pero si lo que motiva a una persona sencillamente no casa con los valores del equipo, las charlas de animo pueden aliviar los sintomas a corto plazo y no curan nada.",
+    "Y si tu persona a cargo tiene un hueco de habilidades de fondo que le impide hacer bien el trabajo, no es razonable esperar que ni el mejor entrenamiento le de la vuelta en unos pocos meses.",
+    "Vigila lo que el ciclo de intentarlo una y otra vez le hace a la otra persona y no solo a ti, que es el punto de inflexion que la autora cuenta de si misma: quien recibia su ayuda se estresaba porque sabia que no lo estaba haciendo bien, esa ayuda se le sentia como un ojo que le vigilaba cada movimiento, y el resto del equipo esperaba impaciente a que la cosa mejorase porque tambien sufria los efectos.",
+    "Asi que si no crees que alguien este preparado para tener exito en su papel actual, lo mas amable que puedes hacer es ser honesto con el y apoyarlo para que siga su camino.",
+    "Ten presente el argumento de Jack Welch: proteger a los que rinden poco solo aumenta el danio cuando, inevitablemente, un directivo se ve obligado a dejarlos ir, y lo brutal y la falsa amabilidad son mantener cerca a gente que no va a crecer ni a prosperar, porque no hay crueldad como esperar y decirle a alguien tarde en su carrera que no encaja."
+  ],
+  "atribuciones": [
+    {
+      "cifra": "el ochenta por ciento de las veces, el esfuerzo extra volcado en alguien que no rinde, mas reuniones a solas, ayuda en proyectos, conversaciones con pares y charlas de animo, acabo siendo inutil",
+      "autor": "Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "2019, anio de edicion del libro. Es una cifra de su propia experiencia como directiva y el texto no da ni muestra ni periodo"
+    },
+    {
+      "cifra": "proteger a los que rinden poco solo aumenta el danio cuando, inevitablemente, hay que dejarlos ir, y la falsa amabilidad es mantener cerca a quien no va a crecer ni prosperar",
+      "autor": "Jack Welch",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: el libro lo presenta como antiguo consejero delegado de General Electric, sin anio"
+    }
+  ],
+  "resumen_teorico": "La seccion existe para corregir un instinto de directivo novato, el de ser el campeon del equipo pase lo que pase, y lo corrige con una cifra propia y con un inventario de cinco causas. El inventario es lo que hace procedimentable la linea: sin las cinco razones nombradas una a una, mover rapido seria solo una postura. Y las cinco no valen igual, porque el libro las parte en dos grupos con criterio propio, las que una serie de conversaciones honestas arregla y las que no, que son el desencaje de valores y el hueco de habilidades, cada una razonada con un caso del propio equipo de la autora. El argumento que cierra es de Jack Welch y va con su duenio dentro. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuanto tiempo es rapido ni cuantas conversaciones honestas son una serie."
+}
