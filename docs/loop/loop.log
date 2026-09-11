@@ -188,3 +188,8 @@ GATE VERDE.
 BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 [pre-commit] verde
 [2026-09-11 15:56:02] VUELTA 3 : AUDITOR (claude-opus-5)
+[2026-09-11 17:53:34] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-11 17:53:35] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-11 17:53:35]   ultimo commit de REPORTE.md      : 2026-09-11 15:41:29 (1789155689)
+[2026-09-11 17:53:35]   ultimo commit de ACTA_AUDITOR.md : 2026-09-11 16:19:09 (1789157949)
+[2026-09-11 17:53:35] VUELTA 1 : EXTRACTOR (claude-opus-5)
