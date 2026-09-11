@@ -9209,3 +9209,130 @@ corregidos y declarados sin contar, un orden arreglado con su leccion escrita, c
 aristas reetiquetadas sin borrar ninguna, **dos candidatos nuevos que la aduana pasa al
 primer intento**, cuatro aristas nuevas que si pasan `D.37`, **y un puente mas de la vuelta
 9 cazado por mi.** **Ninguna parada, cero inserciones.**
+
+---
+
+## TAREA 3. EL Cap. 3, `Leading a Small Team` (`cap_04.md`)
+
+### 3.1. LAS PALABRAS DEL FICHERO, CONTADAS POR MI
+
+    $ wc -l -w fuentes/zhuo_manager/cap_04.md
+      321  7272 fuentes/zhuo_manager/cap_04.md
+    $ sed -n '8,$p' fuentes/zhuo_manager/cap_04.md | wc -w
+      7237
+
+**7.237 de cuerpo, al numero contra las 7.237 del encargo. Diferencia: CERO.** Las 7.272 de
+`wc -w` a secas incluyen las **35 palabras de la cabecera YAML** (L1 a L7), que no son
+cuerpo. **El cuerpo empieza en L8**, que es la linea en blanco previa a `L9: Chapter Three`,
+y es el mismo corte que use en la vuelta 9 para los tres ficheros de entonces.
+
+### 3.2. LOS DOS BORDES, COMPROBADOS POR MI Y NO COPIADOS DE LA NOTA PREVIA
+
+*`EXTRACTOR.md` 5: la nota previa se contrasta, no se copia.*
+
+    $ awk 'NF{last=NR; t=$0} END{print "ultima con texto: L" last " de " NR; print t}'
+          fuentes/zhuo_manager/cap_04.md
+    ultima con texto: L321 de 321
+    Great managers are excellent coaches, and the secret sauce to coaching is the topic of
+    our next chapter - giving effective feedback.
+
+    $ sed -n '1,11p' fuentes/zhuo_manager/cap_04.md
+    unidad: Cap. 3
+    titulo_textual: Leading a Small Team
+    L9: Chapter Three
+
+    $ sed -n '1,11p' fuentes/zhuo_manager/cap_06.md
+    unidad: Cap. 5
+    titulo_textual: Managing Yourself
+    L9: Chapter Five
+
+| lo que decia la nota previa | lo que mido yo | cuadra |
+|---|---|---|
+| `cap_04.md` unidad `Cap. 3`, titulo `Leading a Small Team`, `L9: Chapter Three` | igual | **SI** |
+| ultima con texto `L321` de 321, y cierra anunciando el capitulo siguiente | igual, y el anuncio es literal: *the topic of our next chapter* | **SI** |
+| `cap_06.md` abre unidad nueva, `Cap. 5` | igual, y ademas trae su titulo: `Managing Yourself` | **SI** |
+
+**EL BORDE POR EL OTRO LADO QUEDA COMPROBADO SIN ABRIR `cap_06.md` MAS ALLA DE SU
+CABECERA**, que es lo unico que el encargo permite.
+
+**Y CONFIRMO EL AVISO DE MI PROPIA VUELTA 9:** las cabeceras de este libro **no llevan
+almohadilla**; se distinguen porque **son las unicas lineas del cuerpo sin sangrado de
+tabulador**. Corrido sobre `cap_04.md` de L9 en adelante, eso da **trece lineas**, y dos de
+ellas no son cabecera sino cuerpo (`L9`, que es el rotulo del capitulo, y `L17`, que es la
+primera frase). **Las once restantes son las once cabeceras del capitulo**, y son las que
+ordenan la frontera de abajo.
+
+### 3.3. LA FRONTERA, PUBLICADA Y COMMITEADA **ANTES** DE CORTAR
+
+**El metodo es el que el auditor recompute exacto en la vuelta 9 y por eso no lo cambio:
+recorrido por COBERTURA, no lista de cabeceras**, con huecos, solapes y suma de palabras
+impresos.
+
+    rango del cuerpo: L9 a L321
+    lineas con texto en el rango: 157
+    lineas con texto cubiertas : 157
+    HUECOS (linea con texto sin pieza): []
+    SOLAPES: []
+    PIEZAS FUERA DEL RANGO: []
+      P1     L9    a L16        8 palabras
+      P2     L17   a L30      400 palabras
+      P3     L31   a L46      457 palabras
+      P4     L47   a L62      369 palabras
+      P5     L63   a L66      148 palabras
+      P6     L67   a L78      284 palabras
+      P7     L79   a L86      206 palabras
+      P8     L87   a L102     334 palabras
+      P9     L103  a L120     508 palabras
+      P10    L121  a L130     285 palabras
+      P11    L131  a L138     133 palabras
+      P12    L139  a L146     186 palabras
+      P13    L147  a L154      44 palabras
+      P14    L155  a L166      64 palabras
+      P15    L167  a L174      40 palabras
+      P16    L175  a L182     184 palabras
+      P17    L183  a L196     328 palabras
+      P18    L197  a L206      93 palabras
+      P19    L207  a L232     651 palabras
+      P20    L233  a L240     315 palabras
+      P21    L241  a L256     427 palabras
+      P22    L257  a L280     675 palabras
+      P23    L281  a L304     660 palabras
+      P24    L305  a L312     182 palabras
+      P25    L313  a L321     256 palabras
+    suma de piezas: 7237
+    cuerpo entero  : 7237
+    diferencia     : 0
+    piezas: 25
+
+**25 PIEZAS, CERO HUECOS, CERO SOLAPES, Y LA SUMA DA 7.237 CONTRA 7.237.** Las 157 lineas
+con texto estan cubiertas las 157.
+
+| pieza | de que es | la cabecera o la primera linea que la abre |
+|---|---|---|
+| P1 | rotulo del capitulo | `L9: Chapter Three`, mas el titulo y el par `AVOID` / `ASPIRE` |
+| P2 | la apertura: el `critique` semanal y la definicion del capitulo | `L17: When I had around eight people on my team, we would run a weekly meeting called critique.` |
+| P3 | `EVERYTHING ALWAYS GOES BACK TO PEOPLE` | `L31` |
+| P4 | `TRUST IS THE MOST IMPORTANT INGREDIENT`, hasta las tres afirmaciones | `L47` |
+| P5 | afirmacion 1 | `L63: My reports regularly bring their biggest challenges to my attention.` |
+| P6 | afirmacion 2 | `L67: My report and I regularly give each other critical feedback and it isn't taken personally.` |
+| P7 | afirmacion 3 | `L79: My reports would gladly work for me again.` |
+| P8 | `STRIVE TO BE HUMAN, NOT A BOSS`, hasta *requires the following few actions* | `L87` |
+| P9 | `Respect and Care about Your Report` | `L103` |
+| P10 | `Invest Time to Help Your Report`, hasta *Here are some ideas to get started* | `L121` |
+| P11 | las cuatro ideas para preparar el uno a uno | `L131: Discuss top priorities` |
+| P12 | por que preguntas, y el papel del jefe como entrenador | `L139` |
+| P13 | `Identify`, con sus tres preguntas | `L147` |
+| P14 | `Understand`, con sus cinco preguntas | `L155` |
+| P15 | `Support`, con sus tres preguntas | `L167` |
+| P16 | `Be Honest and Transparent about Your Report's Performance` | `L175` |
+| P17 | `Admit Your Own Mistakes and Growth Areas`, hasta *I'll say things like the following* | `L183` |
+| P18 | las cuatro frases con las que la autora admite | `L197` |
+| P19 | `HELP PEOPLE PLAY TO THEIR STRENGTHS`, la parte del individuo | `L207` |
+| P20 | la misma doctrina aplicada al equipo | `L233: If you take this principle of managing to strengths one step further` |
+| P21 | `THE ONE THING YOU SHOULDN'T TOLERATE ON YOUR TEAM` | `L241` |
+| P22 | `YOU DON'T ALWAYS HAVE TO MAKE IT WORK` | `L257` |
+| P23 | `MAKE PEOPLE MOVES QUICKLY`, hasta la cita de Welch | `L281` |
+| P24 | las dos opciones cuando alguien no encaja | `L305: You have two options at this point` |
+| P25 | como se hace la salida, y el cierre del capitulo | `L313` |
+
+**ESTA FRONTERA SE COMMITEA AHORA, ANTES DE ESCRIBIR EL PRIMER CANDIDATO DEL CAPITULO.**
