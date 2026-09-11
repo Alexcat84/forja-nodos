@@ -12453,3 +12453,268 @@ uno porque sus entregables son distintos, la ecuacion de una contratacion en P22
 y el reparto por directivo y por semana en P24, **pero es el par mas cercano que
 escribo en este capitulo y puede ser uno solo.** Lo dejo marcado y dejo que la
 aduana hable: si chocan dentro del lote, se vera en el informe.
+
+## B.3. LOS VEINTIUN CANDIDATOS, Y LA SUMA QUE ESTA VEZ CUADRA
+
+**21 anunciados y 21 escritos.** `P17` de `cap_07` me habia ensenado a sumar
+delante, y esta vez la suma de `B.2` sale sola.
+
+| # | id | pasos | la aduana, candidato a candidato |
+|---|---|---:|---|
+| 1 | `disenar_equipo_plan_anual` | 13 | ENTRARIA |
+| 2 | `repartir_papeles_directivo_reclutador` | 7 | ENTRARIA |
+| 3 | `describir_candidato_ideal_precision` | 5 | ENTRARIA |
+| 4 | `desarrollar_estrategia_busqueda_candidatos` | 5 | ENTRARIA |
+| 5 | `entregar_experiencia_entrevista_excelente` | 8 | ENTRARIA |
+| 6 | `mostrar_candidato_cuanto_quieres` | 8 | ENTRARIA |
+| 7 | `examinar_trabajo_pasado_candidato` | 7 | ENTRARIA |
+| 8 | `buscar_recomendaciones_confianza` | 10 | ENTRARIA |
+| 9 | `involucrar_varios_entrevistadores` | 5 | ENTRARIA |
+| 10 | `rechazar_contratacion_tibia` | 6 | ENTRARIA |
+| 11 | `preparar_preguntas_entrevista_antemano` | 12 | **BLOQUEARIA**, 1 vecino |
+| 12 | `rechazar_conducta_toxica_entrevista` | 8 | ENTRARIA |
+| 13 | `construir_equipo_perspectivas_diversas` | 8 | ENTRARIA |
+| 14 | `contratar_personas_capaces_mas` | 6 | ENTRARIA |
+| 15 | `calcular_embudo_reclutamiento_propio` | 6 | ENTRARIA |
+| 16 | `preguntar_contratar_unica_prioridad` | 6 | ENTRARIA |
+| 17 | `ejecutar_embudo_reclutamiento_escala` | 8 | ENTRARIA |
+| 18 | `investigar_antes_contratar_lideres` | 10 | ENTRARIA |
+| 19 | `cultivar_relacion_talento_largo_plazo` | 7 | ENTRARIA |
+| 20 | `probar_banquillo_vacaciones_largas` | 9 | ENTRARIA |
+| 21 | `repartir_responsabilidad_contratar_equipo` | 8 | ENTRARIA |
+| | **21 candidatos** | **162** | **20 entrarian, 1 bloquearia, 0 caerian** |
+
+**21 DE 21 PASARON LA ADUANA EN SU PROPIO ACTO, NINGUNO CAYO**, y los cuatro que
+la relectura de fidelidad corrigio volvieron a pasarla despues de corregidos.
+
+**Y EL DISCUTIBLE 6 SE RESUELVE SOLO: `calcular_embudo_reclutamiento_propio` y
+`ejecutar_embudo_reclutamiento_escala` NO CHOCAN**, ni entre si ni con nadie.
+Los deje marcados como el par mas cercano que escribia y la aduana dice que la
+cercania no llega ni a cola de lectura. **Lo dejo escrito como caida de mi propio
+marcado, que es lo que un discutible marcado a ciegas sirve para medir.**
+
+## B.4. LA RELECTURA DE FIDELIDAD DE `cap_08`: LA MISMA ESPECIE, OTRA VEZ
+
+**CUATRO PUENTES, LOS CUATRO DE RECUENTO**, que es la especie que nombre en
+`A.4` de esta misma vuelta. Ya no es un hallazgo de un capitulo: **es mi defecto
+sistematico y ahora tiene dos mediciones.**
+
+| # | nodo | lo que escribi | el parrafo que NO lo cuenta | como quedo |
+|---|---|---|---|---|
+| 1 | `repartir_papeles_directivo_reclutador` | *los **dos** limites concretos del reclutador* | `cap_08.md:67` pone dos frases seguidas y no las cuenta | *los limites concretos del reclutador, que el libro nombra* |
+| 2 | `describir_candidato_ideal_precision` | *lo muestra con **dos** equipos suyos* | `cap_08.md:77` dice `some of the designers` y `Others on my team`, sin numero | *lo muestra con equipos suyos* |
+| 3 | `involucrar_varios_entrevistadores` | *las **dos** cosas que eso compra* | `cap_08.md:147` une dos efectos con `and` y no los cuenta | *lo que eso compra, que el libro nombra* |
+| 4 | `investigar_antes_contratar_lideres` | *las **tres** cosas que ella pregunta* | `cap_08.md:253` pone tres preguntas seguidas sin contarlas | *lo que ella pregunta* |
+
+    $ sed -n '67p' fuentes/zhuo_manager/cap_08.md
+    67: Let me quickly disabuse you of that notion. No recruiter can possibly know what an ideal
+    $ sed -n '147p' fuentes/zhuo_manager/cap_08.md
+    147: Having multiple interviewers can reduce bias and catch subtle red flags that any one perso
+    $ sed -n '253p' fuentes/zhuo_manager/cap_08.md
+    253: Imagine a smart CEO with a background in sales trying to find a head of engineering. She’s
+
+**LA TASA DE `cap_08` ES 4 SOBRE 162, EL 2,47 POR CIENTO**, contra el 3,23 de
+`cap_07`. **Y no lo presento como mejora**: escribi este capitulo con la vara ya
+escrita delante, asi que la comparacion es de dos cosas distintas, **un capitulo
+escrito sin la vara y otro escrito con ella.** Lo que si dice la cifra es que
+**la vara no se agoto en el capitulo que la produjo.**
+
+**Y HAY UN CONTRASTE QUE SI ES LIMPIO, porque el libro lo da:** `cap_08.md:113`
+dice `three reasons` y `cap_08.md:139` dice `two things`. **Donde el libro cuenta,
+yo cuento y no es puente**: `buscar_recomendaciones_confianza` conserva su
+*dos cosas que se tienen en cuenta* porque el libro escribe `keep in mind two
+things`. **La vara no prohibe contar: prohibe contar donde el libro no cuenta.**
+
+    $ sed -n '139p' fuentes/zhuo_manager/cap_08.md
+    139: When evaluating references, keep in mind two things. The first is that people typically im
+
+## B.5. EL CRUCE CON EL LOTE 2, QUE ES LO QUE EL ENCARGO VENIA A VER
+
+*El encargo dice: **`cap_08` SE CRUZA CON EL LOTE 2 ENTERO**, que era un libro de
+contratacion y ya vive en el grafo con 59 nodos. **Ahi la aduana va a trabajar de
+verdad.** Esta seccion es la respuesta, y la respuesta no es la esperada.*
+
+### B.5.1. LA ADUANA NO TRABAJO. Y ESO ES EL HALLAZGO, NO LA EXCUSA
+
+**21 candidatos de contratacion contra 59 nodos de contratacion levantaron UN
+SOLO VECINO, y ese vecino no era ninguno de los que importaban:**
+
+    [BLOQUEARIA] preparar_preguntas_entrevista_antemano
+        vecino evitar_preguntas_ilegales_entrevista  [levantada por: familia_id]
+          similitud_texto 0.100 | familia_id 0.333 | paso_contra_nodo 0.447
+
+**`similitud_texto` de 0,100.** Es de los pares mas LEJANOS que se pueden medir,
+y entro por compartir dos piezas de id, `preguntas` y `entrevista`.
+
+**No me quedo en constatarlo, porque una ausencia no es una medida.** Elegi
+**LEYENDO**, no con una señal, los **18 pares de los dos libros que mas cerca
+estan por asunto**, y les pase las tres señales de la casa con el propio
+instrumento (`src.aduana.medir`, los umbrales de `config/umbrales.json`):
+
+    $ python -c "... mide los 18 pares elegidos a mano con src.aduana.medir"
+    umbrales: 0.35 0.3 0.6
+
+    candidato mio                                vecino de smart_who                           texto familia   paso  levanta?
+    buscar_recomendaciones_confianza             pedir_referencias_red_personal                0.152    0.0  0.424  no
+    buscar_recomendaciones_confianza             conducir_llamadas_referencia                  0.173    0.0  0.418  no
+    buscar_recomendaciones_confianza             pedir_referencias_empleados                   0.197    0.0  0.409  no
+    describir_candidato_ideal_precision          crear_tarjeta_puntuacion_puesto               0.211    0.0  0.339  no
+    describir_candidato_ideal_precision          definir_resultados_tarjeta_puntuacion         0.243    0.0  0.354  no
+    involucrar_varios_entrevistadores            asignar_entrevistas_enfocadas_equipo          0.158    0.0  0.396  no
+    involucrar_varios_entrevistadores            seleccionar_jugador_cuatro_entrevistas        0.187    0.0  0.351  no
+    preparar_preguntas_entrevista_antemano       aplicar_tacticas_maestras_entrevista           0.14  0.143  0.356  no
+    preparar_preguntas_entrevista_antemano       profundizar_respuestas_preguntas_curiosidad   0.167  0.143  0.422  no
+    rechazar_conducta_toxica_entrevista          revisar_banderas_rojas_candidato              0.186    0.0  0.295  no
+    mostrar_candidato_cuanto_quieres             sostener_contacto_oferta_aceptacion           0.182    0.0  0.409  no
+    mostrar_candidato_cuanto_quieres             vender_puesto_jugador                         0.197    0.0  0.425  no
+    disenar_equipo_plan_anual                    desplegar_estrategia_tarjeta_puntuacion       0.177    0.0  0.359  no
+    examinar_trabajo_pasado_candidato            conducir_entrevista_cronologica_trayectoria   0.094    0.0  0.343  no
+    rechazar_contratacion_tibia                  decidir_contratacion_final                    0.225    0.2  0.379  no
+    repartir_papeles_directivo_reclutador        contratar_reclutadores_externos               0.224  0.167  0.506  no
+    desarrollar_estrategia_busqueda_candidatos   abastecer_flujo_candidatos                     0.22  0.167  0.353  no
+    cultivar_relacion_talento_largo_plazo        reservar_media_hora_semanal_talento           0.251  0.111  0.406  no
+
+    pares leidos a mano: 18  levantados por alguna senal: 0
+
+> ## **18 DE 18 PARES DEL MISMO ASUNTO, ELEGIDOS POR LECTURA: CERO LEVANTADOS.**
+>
+> **Y `familia_id` da CERO EXACTO en once de los dieciocho.**
+
+### B.5.2. POR QUE, Y NO ES UN FALLO DE LAS SEÑALES
+
+**Las tres señales miden lo que dicen medir, y ninguna mide lo que aqui hacia
+falta.** La razon esta escrita en la propia calibracion y en `D.19`:
+
+| señal | por que no los ve |
+|---|---|
+| **`familia_id`** | compara **piezas de id**, y los dos libros llaman distinto a lo mismo: `tarjeta_puntuacion` contra `candidato_ideal`, `referencias` contra `recomendaciones`, `jugador` contra `persona`. **Once ceros exactos no son una casualidad: son dos vocabularios** |
+| **`similitud_texto`** | compara titulo y resumen, y los dos libros escriben su doctrina con palabras propias. **Ninguno de los 18 pasa de 0,251**, es decir, **ni uno sale de la banda media que la seccion 11 declara RUIDO** |
+| **`paso_contra_nodo`** | es la que mas se acerca (**0,506** en el mejor par) y aun asi se queda a 0,094 del umbral, porque los pasos de los dos libros ejecutan actos distintos aunque persigan lo mismo |
+
+**ESTO NO ES UNA PETICION DE BAJAR UN UMBRAL, Y LO DIGO ANTES DE QUE SE LEA
+ASI.** `EXTRACTOR.md` 11 prohibe moverlos, `D.18` manda juzgarlos contra su cola,
+y bajar `similitud_texto` a 0,25 para cazar estos 18 abriria una cola que no he
+medido. **Lo que traigo es la medicion, no la propuesta.**
+
+> **LO QUE SI CONFIRMA, CON CIFRA PROPIA Y POR PRIMERA VEZ EN UN CRUCE DE DOS
+> LIBROS, es la frase de `EXTRACTOR.md` 11:**
+>
+> **UN CANDIDATO QUE ENTRA CON LA COLA VACIA NO ESTA CERTIFICADO COMO SIN MADRE:
+> ESTA CERTIFICADO COMO SIN GEMELO.** Aqui veinte candidatos entraron con la cola
+> vacia **y ninguno estaba solo.**
+
+### B.5.3. LOS VEREDICTOS DE LOS PARES QUE LA SEÑAL NO LEVANTO
+
+**Los leo igual, porque la jerarquia la busca la lectura.** Estos veredictos **no
+los pidio la aduana**: los pide el principio 4 del manual.
+
+| par | veredicto | razon |
+|---|---|---|
+| `preparar_preguntas_entrevista_antemano` contra `evitar_preguntas_ilegales_entrevista` | **SANO** | el unico que la señal si levanto, y es el mas lejano de todos. El de `smart_who` lista **que no se puede preguntar por ley** (edad, origen, estado civil) y el mio dice **preparar de antemano y preguntar lo mismo a todos**. Comparten la palabra `pregunta` y el sitio, la entrevista. `similitud_texto` 0,100 lo dice antes que yo |
+| `buscar_recomendaciones_confianza` contra `conducir_llamadas_referencia` | **SANO**, y es el par que mas me hizo leer | ver abajo |
+| `buscar_recomendaciones_confianza` contra `pedir_referencias_red_personal` | **SANO** | el de `smart_who` es un procedimiento de ABASTECIMIENTO con cadencia y numero (lista de diez, una conversacion por semana durante diez semanas, y seguir). El mio pregunta **a tu propio equipo**, una sola vez al abrir el puesto, con la varita magica, y usa la respuesta ademas para encontrar patrones de donde buscar. **Distinta poblacion, distinta cadencia, distinto entregable** |
+| `rechazar_conducta_toxica_entrevista` contra `revisar_banderas_rojas_candidato` | **SANO, y la frontera es doctrinal** | ver abajo |
+| `mostrar_candidato_cuanto_quieres` contra `sostener_contacto_oferta_aceptacion` | **SANO** | los dos cubren el tramo entre la oferta y la aceptacion y **coinciden en la doctrina**, no te apartes ahora. Pero el de `smart_who` ejecuta **las cinco efes** (encaje, familia, libertad, fortuna, diversion) como guion de las preocupaciones, y el mio ejecuta **una cadencia de contacto cada dos dias** y **pintar el impacto**. Ninguno contiene los pasos del otro |
+| `involucrar_varios_entrevistadores` contra `asignar_entrevistas_enfocadas_equipo` | **SANO** | el de `smart_who` reparte **los resultados y las competencias de una tarjeta de puntuacion** entre entrevistadores, con 45 a 60 minutos por entrevista; el mio reparte **areas de pregunta** y anade lo que el otro no tiene: **registrar el veredicto por escrito antes de oir a los demas, contra el pensamiento de grupo** |
+
+### B.5.4. EL PAR QUE MAS LEI, Y LO QUE ENSENIA SOBRE DOS LIBROS DEL MISMO TEMA
+
+**`buscar_recomendaciones_confianza` contra `conducir_llamadas_referencia`.**
+
+**MI NODO ES MAS ANCHO QUE EL SUYO Y MAS POBRE EN LA PARTE COMUN**, y eso es
+exactamente lo que la vara de `AUDITOR_FORJA.md` 6.1 manda mirar sin bascula.
+
+- **Mi nodo abarca DOS cosas que el otro libro separa en dos nodos**: pedir
+  recomendaciones para ABASTECER, y comprobar referencias para DECIDIR. **Y las
+  abarca porque mi libro las une expresamente**: `cap_08.md:135` empieza
+  *The other place where trusted recommendations come in handy is the reference
+  check*. **No las fundi yo: las funde el libro, y la frontera se publica.**
+- **En la parte comun, la comprobacion de referencias, el suyo es mucho mas
+  procedimiento que el mio**: siete llamadas repartidas en cuatro propias y tres
+  delegadas, cinco preguntas numeradas, y tres codigos de tibieza. **El mio tiene
+  cinco pasos.**
+- **Y aun asi el mio tiene procedimiento propio fuera del solape**: la pregunta
+  de la varita magica al equipo entero, el doble uso de la lista que devuelve, y
+  los dos correctivos al evaluar, descontar lo negativo no reciente y ensanchar
+  la red por diversidad. **Ninguno de los tres esta en el suyo.**
+
+**VEREDICTO: `SANO`. Los dos tienen procedimiento fuera del solape, que es lo que
+la vara manda mirar, y ninguno es madre del otro** porque ninguno de los dos
+libros nombra al otro.
+
+> ### LO QUE ESTA CASA APRENDE HOY DE TENER DOS LIBROS DEL MISMO TEMA
+>
+> **NO SE REPITEN NI SE CONTINUAN: CONVERGEN.** En el punto mas delicado, de quien
+> te fias para una referencia, **los dos libros dicen lo mismo sin conocerse**:
+> `smart_who` escribe *no te limites a usar la lista de referencias que el
+> candidato te da* y *busca tambien referencias en tu propia red*, y `zhuo_manager`
+> escribe *probablemente no lo conseguiras llamando a la gente que el candidato te
+> da* y *pide a tu red de colegas de confianza que te pongan en contacto*.
+>
+> **DOS DOCTRINAS QUE COINCIDEN NO SON UN DUPLICADO: SON UNA CORROBORACION**, y
+> esta casa no tiene todavia sitio donde guardarla. **Lo traigo como pregunta, no
+> como propuesta** (`EXTRACTOR.md` 14: el extractor propone en su reporte).
+
+### B.5.5. LA FRONTERA DOCTRINAL DE VERDAD DEL CAPITULO
+
+**`rechazar_conducta_toxica_entrevista` contra `revisar_banderas_rojas_candidato`
+es el unico par de los dieciocho donde los dos libros MANDAN COSAS DISTINTAS**, y
+por eso vale mas que los otros diecisiete juntos:
+
+| | `zhuo_manager`, mio | `smart_who`, en el grafo |
+|---|---|---|
+| **que es la senal** | conducta toxica, con cinco frases que la delatan | bandera roja, con diez banderas mayores y ocho descarriladores |
+| **que se hace con ella** | **se rechaza al candidato** | **NO se descarta: la bandera no mata el trato**, indica que hay algo bajo la superficie que merece mirarse |
+
+**Los dos leen las mismas senales y sacan mandatos opuestos.** Segun
+`AUDITOR_FORJA.md` 6.1, **dos doctrinas legitimas no son duplicado: son frontera
+declarada, y se escriben las dos posiciones con sus fuentes.** Asi queda.
+
+**Y la frontera se puede estrechar leyendo, asi que la estrecho:** no chocan en
+todo el campo, sino **en el subconjunto de las senales de conducta que los dos
+nombran**. `zhuo_manager` manda rechazar por conducta **hacia otros** (hablar mal
+del jefe anterior, culpar a otros, insultar a grupos), y `smart_who` pide mirar
+los datos con dureza ante banderas que incluyen **fallos de desempeno**
+(no mencionar fracasos, exagerar respuestas). **El solape real es el candidato que
+culpa a otros, y ahi uno dice fuera y el otro dice mira mejor.**
+
+**NO LA RESUELVO.** `EXTRACTOR.md` 7: una frontera se declara, y moverla no es de
+esta sede.
+
+## B.6. LAS ARISTAS DE SERIE DE `cap_08`: `D.37` UNA VEZ, Y NO ES UNA ARISTA
+
+**El libro cuenta por primera vez en dos vueltas**, `cap_08.md:113`, `three
+reasons`. **Y aun asi `D.37` no se dispara**, por una razon que conviene escribir:
+
+> **`D.37` pide que la cabeza diga cuantas partes tiene Y LAS NOMBRE, y que esas
+> partes EXISTAN COMO NODOS.** Las tres razones de `L113` estan contadas y
+> nombradas, **pero ninguna de las tres es un nodo ni puede serlo**: son causas, no
+> procedimientos (`D.27`, restriccion 1). **Una cabeza contada cuyas partes no son
+> nodos no tiene aristas que declarar.**
+
+**Con lo cual la cuenta de la casa sigue en 0 aristas por `D.37`**, ahora sobre
+**9 casos examinados** (6 de la vuelta 11, 2 de `cap_07`, 1 de `cap_08`), **pero
+el noveno cae por un motivo nuevo**: no por no contar, sino por contar cosas que
+no son nodos. **Son dos causas distintas de fallo y se cuentan aparte.**
+
+### La arista de `D.29` del capitulo
+
+| madre | paso | hijo | razon |
+|---|---:|---|---|
+| `repartir_papeles_directivo_reclutador` | **7** | `describir_candidato_ideal_precision`, `desarrollar_estrategia_busqueda_candidatos`, `entregar_experiencia_entrevista_excelente`, `mostrar_candidato_cuanto_quieres` | el paso final de la madre cierra con `Here is how you should approach working together` (`cap_08.md:71`) y los cuatro epigrafes que siguen (`:73`, `:79`, `:87`, `:97`) son esa forma de trabajar juntos, cada uno desplegado en cinco a ocho pasos que la cabeza no tiene. **El libro NO dice cuantos son, asi que es `D.29` y no `D.37`** |
+
+    $ sed -n '71p' fuentes/zhuo_manager/cap_08.md
+    71: If you aren’t working with a recruiter, then you’ll need to play both roles yourself. Here’s
+
+**NO SE ESCRIBE EN EL GRAFO EN ESTA CORRIDA**, por lo mismo que las dos de
+`cap_07`: `python forja.py arista` escribe en `dataset/`, que es sede de la aduana,
+y esta corrida tiene cero inserciones autorizadas.
+
+## B.7. LAS CUATRO MEDIDAS DEL `cap_08`
+
+| medida | cifra | como se saco |
+|---|---|---|
+| **candidatos por mil palabras** | **21 sobre 7.315 = 2,87** | `sed -n '8,$p' cap_08.md \| wc -w` da 7.315 |
+| **puentes sobre pasos escritos** | **4 de 162 = 2,47 por ciento** | los cuatro de la especie RECUENTO, tabla `B.4` |
+| **veredictos** | **7 escritos**: 1 que la aduana pidio y **6 que pidio la lectura**, todos `SANO`, uno de ellos con **frontera doctrinal declarada** | mas 1 arista de `D.29` y 1 caso de `D.37` examinado y descartado |
+| **tiempo** | **ver `C.12` al cierre** | primer commit del capitulo contra el de su cierre |
