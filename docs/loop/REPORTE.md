@@ -10204,3 +10204,108 @@ especie que corregi tres veces hoy.** **Por que la dejo:** la misma linea abre c
 por su nombre**, es decir declara el mismo que lo que sigue es la regla y no el caso.
 **Si el auditor la cuenta, el Cap. 4 sale 2 de 111, el 1,80 por ciento.** Las dos lecturas
 estan escritas; **la que yo sostengo es la de 1.**
+
+## C.10.10. EL INFORME DEL LOTE ENTERO, CORRIDO AL CERRAR, CON SU SALDO Y SU LISTA
+
+    $ python forja.py informe --carpeta cuarentena/zhuo_manager
+
+**LA CABECERA Y EL SALDO, PEGADOS ENTEROS Y SIN RECORTE**, que es exactamente lo que la
+vuelta 9 prometio y no pego:
+
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 50
+    nodos en el grafo de destino: 52
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+    
+    EL SALDO
+      ENTRARIAN sin leer nada          : 50
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+**50 / 0 / 0 / 0.** Los 50 entrarian sin leer nada, **cero vecinos que bloqueen**, **cero
+caidas por guarda** y **cero choques entre si dentro del lote**.
+
+**LA LISTA COMPLETA, pegada entera del instrumento y no tecleada** (`EXTRACTOR.md` 5):
+
+    [ENTRARIA] acordar_plan_conjunto_jefe   (acordar_plan_conjunto_jefe.json)
+    [ENTRARIA] admitir_errores_areas_mejora_propias   (admitir_errores_areas_mejora_propias.json)
+    [ENTRARIA] alinear_equipo_proposito_comun   (alinear_equipo_proposito_comun.json)
+    [ENTRARIA] asegurar_opinion_llega_persona   (asegurar_opinion_llega_persona.json)
+    [ENTRARIA] atender_modo_supervivencia_equipo   (atender_modo_supervivencia_equipo.json)
+    [ENTRARIA] avisar_pronto_incumplimiento_expectativas   (avisar_pronto_incumplimiento_expectativas.json)
+    [ENTRARIA] ayudar_personas_jugar_fortalezas   (ayudar_personas_jugar_fortalezas.json)
+    [ENTRARIA] calibrar_normalidad_preguntas_jefe   (calibrar_normalidad_preguntas_jefe.json)
+    [ENTRARIA] comparar_motivacion_resultado_papel   (comparar_motivacion_resultado_papel.json)
+    [ENTRARIA] compartir_opinion_conductual_regularidad   (compartir_opinion_conductual_regularidad.json)
+    [ENTRARIA] comprobar_confianza_persona_cargo   (comprobar_confianza_persona_cargo.json)
+    [ENTRARIA] comprobar_gusto_trato_personas   (comprobar_gusto_trato_personas.json)
+    [ENTRARIA] comprobar_opinion_produce_mejora   (comprobar_opinion_produce_mejora.json)
+    [ENTRARIA] contrastar_motivos_querer_gestionar   (contrastar_motivos_querer_gestionar.json)
+    [ENTRARIA] cortar_efecto_divisor_persona_brillante   (cortar_efecto_divisor_persona_brillante.json)
+    [ENTRARIA] dar_estabilidad_situacion_emocional   (dar_estabilidad_situacion_emocional.json)
+    [ENTRARIA] dar_mala_noticia_decision_tomada   (dar_mala_noticia_decision_tomada.json)
+    [ENTRARIA] dar_opinion_critica_directa_desapasionada   (dar_opinion_critica_directa_desapasionada.json)
+    [ENTRARIA] dar_opinion_especifica_tarea   (dar_opinion_especifica_tarea.json)
+    [ENTRARIA] dar_opinion_frecuencia_suficiente   (dar_opinion_frecuencia_suficiente.json)
+    [ENTRARIA] despedir_persona_respeto_franqueza   (despedir_persona_respeto_franqueza.json)
+    [ENTRARIA] diagnosticar_falta_motivacion_habilidad   (diagnosticar_falta_motivacion_habilidad.json)
+    [ENTRARIA] dirigir_reunion_individual_semanal   (dirigir_reunion_individual_semanal.json)
+    [ENTRARIA] elegir_forma_inspirar_cambio_conducta   (elegir_forma_inspirar_cambio_conducta.json)
+    [ENTRARIA] elegir_recolocar_despedir_persona   (elegir_recolocar_despedir_persona.json)
+    [ENTRARIA] establecer_dinamica_nueva_antiguos_pares   (establecer_dinamica_nueva_antiguos_pares.json)
+    [ENTRARIA] evaluar_directivo_resultados_fortaleza   (evaluar_directivo_resultados_fortaleza.json)
+    [ENTRARIA] fijar_expectativas_claras_comienzo   (fijar_expectativas_claras_comienzo.json)
+    [ENTRARIA] fijar_proceso_trabajo_equipo   (fijar_proceso_trabajo_equipo.json)
+    [ENTRARIA] ganar_confianza_personas_cargo   (ganar_confianza_personas_cargo.json)
+    [ENTRARIA] gestionar_personas_equipo   (gestionar_personas_equipo.json)
+    [ENTRARIA] hacer_opinion_accionable   (hacer_opinion_accionable.json)
+    [ENTRARIA] listar_bueno_mejorable_equipo   (listar_bueno_mejorable_equipo.json)
+    [ENTRARIA] mover_rapido_persona_papel_equivocado   (mover_rapido_persona_papel_equivocado.json)
+    [ENTRARIA] planificar_reduccion_trabajo_individual   (planificar_reduccion_trabajo_individual.json)
+    [ENTRARIA] preguntar_conducir_reunion_individual   (preguntar_conducir_reunion_individual.json)
+    [ENTRARIA] preguntar_jefe_sonado_persona_cargo   (preguntar_jefe_sonado_persona_cargo.json)
+    [ENTRARIA] probar_gestion_antes_decidir   (probar_gestion_antes_decidir.json)
+    [ENTRARIA] recoger_opinion_360_grados   (recoger_opinion_360_grados.json)
+    [ENTRARIA] repartir_tiempo_atencion_mejores_equipo   (repartir_tiempo_atencion_mejores_equipo.json)
+    [ENTRARIA] resolver_desencaje_valores_persona_equipo   (resolver_desencaje_valores_persona_equipo.json)
+    [ENTRARIA] respetar_cuidar_persona_cargo   (respetar_cuidar_persona_cargo.json)
+    [ENTRARIA] responder_tres_preguntas_vocacion_directiva   (responder_tres_preguntas_vocacion_directiva.json)
+    [ENTRARIA] revisar_proposito_personas_proceso   (revisar_proposito_personas_proceso.json)
+    [ENTRARIA] ser_honesto_transparente_desempenio   (ser_honesto_transparente_desempenio.json)
+    [ENTRARIA] situar_transicion_cuatro_caminos   (situar_transicion_cuatro_caminos.json)
+    [ENTRARIA] transitar_aprendiz_primeros_meses   (transitar_aprendiz_primeros_meses.json)
+    [ENTRARIA] transitar_jefe_nuevo_equipo_establecido   (transitar_jefe_nuevo_equipo_establecido.json)
+    [ENTRARIA] transitar_pionero_equipo_nuevo   (transitar_pionero_equipo_nuevo.json)
+    [ENTRARIA] transitar_sucesor_equipo_entero   (transitar_sucesor_equipo_entero.json)
+
+    NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+    entre hace falta python forja.py insertar, uno por vez, con su
+    veredicto escrito por vecino.
+
+**LAS 50 LINEAS SE CUENTAN DE LA SALIDA, Y SALEN 50** (remedio 1.a, hermana tercera):
+
+    $ grep -c "^\[ENTRARIA\]" <la salida del informe>     50
+    $ ls -1 cuarentena/zhuo_manager/*.json | wc -l         50
+
+**Diferencia: CERO.**
+
+**EL RELOJ DE ESTA CORRIDA, MEDIDO Y NO ESTIMADO**, porque afecta a como se planifica la
+vuelta 11:
+
+| corrida | candidatos | lanzada | terminada | duracion |
+|---|---:|---|---|---:|
+| la de `1.3`, sobre los 21 de la vuelta 9 | 21 | 21:36 | antes de 21:55 | **menos de 20 min** |
+| **esta, sobre los 50** | **50** | **22:38** | **23:05** | **27 min** |
+
+**NO ESCALA CON EL CUADRADO, Y ESO ES INFORMACION UTIL:** 21 candidatos costaron menos de
+20 minutos y 50 costaron 27. **Si escalara con el cuadrado, 50 habrian costado unas dos
+horas.** La lance **pronto y no al final**, como el encargo mandaba, y aun asi llego
+**despues** de que el resto del cierre estuviera escrito. **Por eso el resto del cierre no
+la nombraba por su sede: solo se la nombra ahora que existe.**
+
+**ESTE ES EL SALDO QUE ALEXIS LEE SI ALGUN DIA AUTORIZA LA INSERCION** (`D.26`): **50
+candidatos del lote 3, cero que caerian, cero que bloquearian, y 41 aristas escritas y sin
+declarar esperando a ese mismo acto.**
