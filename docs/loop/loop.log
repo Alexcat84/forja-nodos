@@ -173,3 +173,6 @@ GATE VERDE.
 BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 [pre-commit] verde
 [2026-09-11 14:20:33] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-11 14:51:57] auditor listo (USD 9.807564000000003), 1884s, intento 1 de 7
+[2026-09-11 14:51:57]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-11 14:51:57] VUELTA 3 : EXTRACTOR (claude-opus-5)
