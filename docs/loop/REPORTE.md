@@ -8307,13 +8307,13 @@ nombre de capitulo que el ACTA 8 4.1 les adjudico, no con el que la vuelta 8 tec
 | unidad | pasos | puentes | tasa | la salida, pegada |
 |---|---:|---:|---:|---|
 | lote 1, linea base | 36 | 13 | **36,11** | `2647:| **tasa** | **36,11 por ciento** | **6,25 por ciento** |` |
-| lote 2, **Cap. 1** (la vuelta 8 la llamo `cap_02`) | 16 | 1 | **6,25** | `7217:    lote 2, cap_02       16 pasos    1 puente     6,25` |
-| lote 2, Cap. 2 | 35 | 1 | **2,86** | `7218:    lote 2, Cap. 2       35 pasos    1 puente     2,86` |
-| lote 2, Cap. 3 | 53 | 4 | **7,55** | `7219:    lote 2, Cap. 3       53 pasos    4 puentes    7,55` |
-| lote 2, Cap. 4 | 97 | 3 | **3,09** | `7220:    lote 2, Cap. 4       97 pasos    3 puentes    3,09` |
-| lote 2, Cap. 5 cuerpo | 80 | 4 | **5,00** | `7221:    lote 2, Cap. 5 cuerpo 80 pasos   4 puentes    5,00` |
-| lote 2, **Cap. 6, `Your Greatest Opportunity`** (la vuelta 8 la llamo *Cap. 5 cola*) | 90 | 5 | **5,56** | `7222:    lote 2, Cap. 5 cola   90 pasos    5 puentes    5,56   <-- esta vuelta` |
-| lote 2 acumulado | 371 | 18 | **4,85** | `7223:    lote 2 acumulado     371 pasos  18 puentes    4,85` |
+| lote 2, **Cap. 1** (la vuelta 8 la llamo `cap_02`) | 16 | 1 | **6,25** | `7218:    lote 2, cap_02       16 pasos    1 puente     6,25` |
+| lote 2, Cap. 2 | 35 | 1 | **2,86** | `7219:    lote 2, Cap. 2       35 pasos    1 puente     2,86` |
+| lote 2, Cap. 3 | 53 | 4 | **7,55** | `7220:    lote 2, Cap. 3       53 pasos    4 puentes    7,55` |
+| lote 2, Cap. 4 | 97 | 3 | **3,09** | `7221:    lote 2, Cap. 4       97 pasos    3 puentes    3,09` |
+| lote 2, Cap. 5 cuerpo | 80 | 4 | **5,00** | `7222:    lote 2, Cap. 5 cuerpo 80 pasos   4 puentes    5,00` |
+| lote 2, **Cap. 6, `Your Greatest Opportunity`** (la vuelta 8 la llamo *Cap. 5 cola*) | 90 | 5 | **5,56** | `7223:    lote 2, Cap. 5 cola   90 pasos    5 puentes    5,56   <-- esta vuelta` |
+| lote 2 acumulado | 371 | 18 | **4,85** | `7224:    lote 2 acumulado     371 pasos  18 puentes    4,85` |
 | **lote 3, Cap. 1, `What Is Management?`** | **79** | **3** | **3,80** | *medido en esta vuelta, 5.b* |
 | **lote 3, Cap. 2, `Your First Three Months`** | **76** | **4** | **5,26** | *medido en esta vuelta, 5.b* |
 | **lote 3 acumulado** | **155** | **7** | **4,52** | *medido en esta vuelta, 5.b* |
@@ -8322,6 +8322,29 @@ nombre de capitulo que el ACTA 8 4.1 les adjudico, no con el que la vuelta 8 tec
 ocho, mas las tres de esta vuelta** (remedio 1.a, hermana tercera). **La linea de la
 `Introduction` no entra porque no tiene denominador**, y eso se escribe en vez de
 borrarse.
+
+### 5.c.bis. UNA CORRECCION MIA, CAZADA POR MI, Y CUENTA COMO CAIDA SI EL AUDITOR LA CUENTA
+
+**Los siete punteros de la tabla de arriba los teclee con UN DESFASE DE UNA LINEA**, y los
+corregi antes de commitear **porque los reabri con `sed` en vez de darlos por buenos.** La
+salida que lo destapo:
+
+    $ sed -n '7217,7224p' docs/loop/REPORTE.md
+    7217:    lote 1               36 pasos   13 puentes   36,11 por ciento
+    7218:    lote 2, cap_02       16 pasos    1 puente     6,25
+
+**Yo habia escrito `7217` para la fila del `cap_02`, y `7217` es la fila del lote 1.** Los
+siete punteros estaban corridos uno hacia arriba, **el mismo desfase constante dentro de
+una misma tabla que costo la parada de la vuelta 7.**
+
+**LO DIGO EN VEZ DE CALLARLO por dos razones.** La primera, que el remedio 1.a de este
+encargo nacio de ahi y **callarlo seria usar el remedio para esconder lo que el remedio
+caza.** La segunda, que **es la prueba de que el remedio funciona en la direccion que
+`D.35` prometia**: la cita pegada es lo que me deja a mi descubrir el desfase mientras
+escribo, no lo que se lo deja al auditor.
+
+**Ninguna cifra de la tabla cambia: el desfase era del puntero, no del dato.** Las once
+tasas son las mismas antes y despues.
 
 ### 5.d. LAS DIVISIONES DE LA TENDENCIA, ESCRITAS ANTES DE COMENTARLAS
 
