@@ -158,3 +158,6 @@ BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 [2026-09-11 11:28:12] fallo "auditor mudo"; espero 1800 segundos y reintento
 [2026-09-11 12:27:43] auditor: TURNO MUDO, el turno corrio 1769s y cobro "15.295378999999999" pero docs/loop/ACTA_AUDITOR.md quedo identico, intento 2 de 7
 [2026-09-11 12:27:43] fallo "auditor mudo"; espero 1800 segundos y reintento
+[2026-09-11 13:25:12] auditor listo (USD 10.550695000000001), 1649s, intento 3 de 7
+[2026-09-11 13:25:12]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-11 13:25:12] VUELTA 2 : EXTRACTOR (claude-opus-5)
