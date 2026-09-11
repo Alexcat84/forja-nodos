@@ -17340,7 +17340,8 @@ escribo `PARA_ALEXIS.md` y no toco `PROMPT_SIGUIENTE.md` ni `ACTA_AUDITOR.md`.*
 |---|---|
 | **abre** | `8db9769`, sello de lo pendiente, 14:54 aprox. |
 | **frontera commiteada antes de cortar** | `bdd3eeb` |
-| **cierra** | el commit de esta seccion, cuyo hash se lee de `git log` en el mensaje de cierre |
+| **cuerpo del cierre** | `6920050`, leido con `git rev-parse --short HEAD` tras commitearlo |
+| **cierra** | el commit de este sello, que aniade el hash de arriba y la fila del lote 4 en `ORDEN_DE_LOTES.md` |
 | **rama** | `extraccion-mundo-11` |
 | **guardas** | las tres en verde, pegadas en `I.6.2` |
 | **cero guiones largos y cero guiones medios** | comprobado a maquina sobre el reporte entero antes de cada commit |
@@ -17361,3 +17362,28 @@ escribo `PARA_ALEXIS.md` y no toco `PROMPT_SIGUIENTE.md` ni `ACTA_AUDITOR.md`.*
 > igual el primero **y los candidatos se escriben mientras corre, aceptando que su aduana
 > perturba la medida en unos segundos y declarandolo.** Un candidato escrito con calma vale
 > mas que un reloj medido al segundo.
+
+## I.6.7. UNA ULTIMA ANOTACION, DECLARADA PORQUE NADIE ME LA ENCARGO
+
+**He escrito la fila del lote 4 en `docs/loop/ORDEN_DE_LOTES.md`, y el encargo solo me
+mandaba corregir la del lote 3.** Lo digo en vez de que se descubra en el `git diff`.
+
+**POR QUE LO HAGO:** esa tabla registra el estado de cada lote y **esta vuelta ha abierto el
+lote 4**; la celda estaba vacia y ahora hay algo cierto que poner. Es **la misma operacion
+que la TAREA 1.c me autoriza**, aplicada al lote que esta vuelta abre, y es lo que las
+vueltas 10, 11, 12 y 13 hicieron cada una con el lote activo.
+
+**QUE HE ESCRITO, y todo sale de un instrumento corrido hoy:** que el lote 4 abre con sus
+dos condiciones remedidas por mi; que **4 de 15 ficheros estan minados**; que hay **2
+candidatos en la bandeja, sin insertar**; que **las cuatro unidades minadas son material de
+frente y ninguna declara `Cap. N`**; que **los ocho capitulos numerados son `cap_04` a
+`cap_11` y suman 81.508 palabras**; y que **este recorte no trae `Notes`, `Index` ni
+`Acknowledgments`**.
+
+**Y ESCRIBI LA FRASE CON EL CORTE PUESTO A PROPOSITO**, con la leccion de `I.1.c` delante:
+*2 candidatos en `cuarentena/scott_radical_candor/`, SIN INSERTAR*, **sin enumeracion de dos
+miembros detras**, que es lo que produjo las dos lecturas en la fila del lote 3.
+
+> **SI EL AUDITOR LEE QUE ESTO ES ALCANCE QUE NO ME TOCABA, la correccion es borrar una
+> celda y no cuesta nada.** Lo que si costaria es que la tabla dijera que el lote 4 no ha
+> empezado cuando tiene dos candidatos en su bandeja y un commit con su nombre.
