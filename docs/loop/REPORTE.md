@@ -13804,3 +13804,55 @@ medir:**
 **Y una pregunta que dejo abierta y no resuelvo** (`D.2`): esta casa **no tiene
 figura para una cabeza sin pasos propios cuyas partes si son nodos**, y este libro
 la escribe cuatro veces en cuatro capitulos.
+
+## G.8. DOS CIFRAS DEL CIERRE QUE NO EXISTIAN AL ESCRIBIR EL SELLO
+
+*`EXTRACTOR.md` 4: **el estado al cierre se mide al cierre**, y estas dos solo se
+podian medir despues del ultimo commit. Van por anexion, y **la primera corrige al
+sello sin borrarlo**.*
+
+### 1. LOS COMMITS: son QUINCE, no catorce
+
+El sello de `G.6` dice **catorce**, y catorce son **los commits posteriores al de
+arranque**. **El de arranque tambien es de esta vuelta** (`EXTRACTOR.md` 1.1:
+commitea lo pendiente ANTES de tocar nada), asi que **son quince**.
+
+    $ git log --oneline 16a2d2c..HEAD | wc -l   ->  14
+    $ git log --oneline 3ad8998..HEAD | wc -l   ->  15
+
+**El hook corrio en los quince**, sin saltarse ninguno.
+
+### 2. CUANTO DURO LA VUELTA, Y EL DESGLOSE, QUE ES LO UNICO COMPARABLE
+
+    $ git log -1 --format=%ad --date=iso 16a2d2c  ->  2026-09-11 08:06:29 -0400
+    $ git log -1 --format=%ad --date=iso 68251b4  ->  2026-09-11 10:33:19 -0400
+
+| vuelta | tareas | unidades | palabras | candidatos | duracion |
+|---|---:|---:|---:|---:|---|
+| vuelta 10 | 5 | 2 | 13.555 | 50 | 1 h 32 min 46 s |
+| vuelta 11 | 4 | 1 | 9.617 | 18 | 1 h 34 min 45 s |
+| **vuelta 12** | **4** | **4** | **25.921** | **60** | **2 h 26 min 50 s** |
+
+**LA VUELTA 12 MINO CUATRO VECES MAS PALABRAS QUE LA 11 Y ESCRIBIO MAS DEL TRIPLE
+DE CANDIDATOS EN UN 55 POR CIENTO MAS DE TIEMPO.** Pero **la vuelta 11 ya aviso de
+que comparar duraciones de vuelta contra vuelta no significa nada mientras la
+carga cambie**, y lo suscribo. **Lo comparable es el desglose**, que ella dejo
+medido por primera vez y que yo continuo:
+
+| | vuelta 11 | **vuelta 12** |
+|---|---|---|
+| las tareas, sin el informe del lote | 57 min 15 s | **1 h 55 min 28 s** |
+| esperar al informe del lote entero | 37 min 30 s | **31 min 22 s** |
+| **el informe sobre el total** | **40 por ciento** | **21 por ciento** |
+
+**EL INFORME DEL LOTE SE COMIO EL 21 POR CIENTO DE MI VUELTA**, contra el 40
+por ciento de la anterior, **y con 60 candidatos en vez de 68**. Y aqui hay una
+diferencia de metodo que se declara: **la vuelta 11 lo lanzo lo PRIMERO para que
+corriera en paralelo, y yo lo lance lo ULTIMO para poder medirlo limpio.** Las dos
+decisiones son defendibles y **compran cosas distintas**: ella compro media hora
+de reloj, yo compre la unica medicion del instrumento sin nada mas corriendo, que
+es la que permitio el modelo de `F.3` y su contraste.
+
+> **Y LA DECISION QUEDA ESCRITA PARA QUIEN VENGA:** si lo que hace falta es cerrar
+> rapido, se lanza el primero. **Si lo que hace falta es medir el instrumento, se
+> lanza el ultimo y solo.** No se puede tener las dos cosas en la misma vuelta.
