@@ -8611,3 +8611,45 @@ volvi a abrir paso a paso contra sus lineas**, con `sed` sobre las trece lineas 
 mueve**, y ahora tiene una segunda pasada detras en el nodo con mas superficie para
 esconderlos.
 
+### 5.g. EL INFORME DEL LOTE ENTERO, Y SU SALDO
+
+    $ python forja.py informe --carpeta cuarentena/zhuo_manager
+
+**LA LISTA COMPLETA, pegada entera del instrumento y no tecleada** (`EXTRACTOR.md` 5):
+
+    [ENTRARIA] acordar_plan_conjunto_jefe   (acordar_plan_conjunto_jefe.json)
+    [ENTRARIA] alinear_equipo_proposito_comun   (alinear_equipo_proposito_comun.json)
+    [ENTRARIA] atender_modo_supervivencia_equipo   (atender_modo_supervivencia_equipo.json)
+    [ENTRARIA] calibrar_normalidad_preguntas_jefe   (calibrar_normalidad_preguntas_jefe.json)
+    [ENTRARIA] comparar_motivacion_resultado_papel   (comparar_motivacion_resultado_papel.json)
+    [ENTRARIA] comprobar_gusto_trato_personas   (comprobar_gusto_trato_personas.json)
+    [ENTRARIA] contrastar_motivos_querer_gestionar   (contrastar_motivos_querer_gestionar.json)
+    [ENTRARIA] dar_estabilidad_situacion_emocional   (dar_estabilidad_situacion_emocional.json)
+    [ENTRARIA] evaluar_directivo_resultados_fortaleza   (evaluar_directivo_resultados_fortaleza.json)
+    [ENTRARIA] fijar_proceso_trabajo_equipo   (fijar_proceso_trabajo_equipo.json)
+    [ENTRARIA] gestionar_personas_equipo   (gestionar_personas_equipo.json)
+    [ENTRARIA] listar_bueno_mejorable_equipo   (listar_bueno_mejorable_equipo.json)
+    [ENTRARIA] preguntar_jefe_sonado_persona_cargo   (preguntar_jefe_sonado_persona_cargo.json)
+    [ENTRARIA] probar_gestion_antes_decidir   (probar_gestion_antes_decidir.json)
+    [ENTRARIA] responder_tres_preguntas_vocacion_directiva   (responder_tres_preguntas_vocacion_directiva.json)
+    [ENTRARIA] revisar_proposito_personas_proceso   (revisar_proposito_personas_proceso.json)
+    [ENTRARIA] situar_transicion_cuatro_caminos   (situar_transicion_cuatro_caminos.json)
+    [ENTRARIA] transitar_aprendiz_primeros_meses   (transitar_aprendiz_primeros_meses.json)
+    [ENTRARIA] transitar_jefe_nuevo_equipo_establecido   (transitar_jefe_nuevo_equipo_establecido.json)
+    [ENTRARIA] transitar_pionero_equipo_nuevo   (transitar_pionero_equipo_nuevo.json)
+    [ENTRARIA] transitar_sucesor_equipo_entero   (transitar_sucesor_equipo_entero.json)
+
+    NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+    entre hace falta python forja.py insertar, uno por vez, con su
+    veredicto escrito por vecino.
+
+**LAS 21 LINEAS SE CUENTAN DE LA SALIDA, Y SALEN 21** (remedio 1.a, hermana tercera),
+**las mismas 21 que `ls -1 cuarentena/zhuo_manager/*.json | wc -l`.** Diferencia: **CERO**.
+
+**Y UNA CONFESION DE INSTRUMENTO, porque la regla 5 manda declarar la discrepancia en vez
+de resolverla copiando:** la primera corrida la lance con `| tail -45` **y ese `tail` se
+comio la cabecera del informe, que es donde vive el bloque `EL SALDO`.** La relance sin
+recorte. **Lo que va arriba es la lista literal de la primera corrida, que si esta entera;
+el bloque `EL SALDO` de la segunda corrida se pega en 5.g.bis**, y las dos corridas son
+sobre los mismos 21 ficheros sin un cambio en medio.
+
