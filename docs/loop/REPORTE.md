@@ -8411,6 +8411,14 @@ contra 2,06**, division **0,918**.
 **Este reporte tiene su cierre completo**, asi que el disparador de `EXTRACTOR.md` 12.4
 **no se arma** y la vuelta 10 no tiene que bajar el tramo por esta causa.
 
+### 5.g. EL INFORME DEL LOTE ENTERO: **ESTA AL FINAL DE ESTE TRAMO, Y DIGO POR QUE**
+
+**El informe de lote sobre 21 candidatos tardo mas de cuarenta minutos de reloj**, asi que
+su salida llego despues de que el resto del cierre estuviera escrito. **El reporte crece
+por anexion** (`EXTRACTOR.md` 3), asi que **no lo he encajado hacia atras: esta abajo, en
+su sitio cronologico**, con su lista entera y su saldo. **Mover texto ya commiteado para
+que la numeracion quede bonita es reescribir, y esta casa no reescribe.**
+
 ### 5.h. LA LECTURA DEL VOLUMEN PARA EL LOTE 4, CON LA REGLA DELANTE Y SIN ADJUDICARMELA
 
 **La regla es de `AUDITOR_FORJA.md` 8.1 y la aplica el auditor, no yo. Pongo las cifras.**
@@ -8611,7 +8619,7 @@ volvi a abrir paso a paso contra sus lineas**, con `sed` sobre las trece lineas 
 mueve**, y ahora tiene una segunda pasada detras en el nodo con mas superficie para
 esconderlos.
 
-### 5.g. EL INFORME DEL LOTE ENTERO, Y SU SALDO
+### 5.g.ANEXO. EL INFORME DEL LOTE ENTERO, Y SU SALDO
 
     $ python forja.py informe --carpeta cuarentena/zhuo_manager
 
