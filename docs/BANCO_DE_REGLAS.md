@@ -1189,7 +1189,30 @@ en un solo sentido, se entra por ese sentido.**
 insercion. **Lo fija quien autoriza la insercion**, que es el fundador (`D.26`),
 con la medida delante.
 
-## D.37. LA SERIE DECLARADA POR EL TITULO ES ARISTA POR LECTURA (10 sep 2026, decision del fundador)
+## D.37. LA SERIE QUE DICE CUANTAS PARTES TIENE Y LAS NOMBRA ES ARISTA POR LECTURA (10 sep 2026, decision del fundador)
+
+> ### CORRECCION DECLARADA DEL TITULAR, 11 sep 2026, decision del fundador 5.4
+>
+> **El titular decia *"LA SERIE DECLARADA POR EL TITULO"*, y su cuerpo exige dos
+> cosas: que la enumeracion diga CUANTAS partes hay Y que las NOMBRE.** El
+> extractor y el auditor sostuvieron los dos la lectura estrecha en la vuelta 11
+> (0 de 6 casos pasaron), y tenian razon.
+>
+> **UNA REGLA NO PUEDE TENER DOS LECTURAS**, y un titular mas ancho que su cuerpo
+> es exactamente eso: quien cite el titular declara aristas que el cuerpo no
+> autoriza. **El texto viejo del titular no se borra: esta aqui arriba.**
+>
+> **LA LECTURA QUE MANDA, y es la conservadora:**
+>
+> | el texto de la cabeza | que se hace |
+> |---|---|
+> | dice **cuantas** partes hay **y las nombra** (*"con sus seis vias"* mas las seis) | **`D.37`**: arista por lectura, citando el paso |
+> | **solo enumera** sin decir cuantas | **`D.29`**, con razon escrita: es una lectura que hay que argumentar, no una transcripcion |
+>
+> **El cierre no es "no se declara": es que cambia de regla.** Un par que no pasa
+> `D.37` sigue pudiendo ser madre e hijo, y se declara por `D.29` **si la lectura
+> lo sostiene y escribe por que**. Lo que pierde es el derecho a entrar sin
+> argumentar.
 
 *Cita: decision del fundador del 10 sep 2026, sobre el hallazgo del commit
 `f6dd619`. **Cuelga de `D.19` y `D.29`.***
@@ -1255,8 +1278,9 @@ porque el propio nodo los enumera.
 ### Lo que NO autoriza
 
 **NO autoriza declarar una arista porque dos nodos compartan familia o tema.** La
-enumeracion tiene que estar **escrita** en el titulo o en el texto de la cabeza, y
-**la parte tiene que ser la que ese paso nombra**. Una cabeza que dice *"con sus
+enumeracion tiene que estar **escrita** en el titulo o en el texto de la cabeza,
+**tiene que decir CUANTAS partes hay**, y **la parte tiene que ser la que ese paso
+nombra**. **Sin la cuenta no hay `D.37`**: hay `D.29` con razon escrita. Una cabeza que dice *"con sus
 seis vias"* y un nodo del mismo dominio que no es ninguna de las seis **no son
 madre e hijo**: son hermanos, y su veredicto es `SANO`.
 
@@ -1267,3 +1291,85 @@ razon escrita no se declara; un extremo que no vive es rechazo; la auto arista e
 rechazo; declararla dos veces es rechazo y no la duplica; y **la simulacion del
 gate manda**, comprobado cerrando una vuelta que el gate caza sobre la copia en
 memoria dejando el dataset intacto.
+
+## D.38. SEGUIDAS SIGNIFICA CONSECUTIVAS, Y EL AUDITOR TIENE UNA SOLA RACHA (11 sep 2026, decision del fundador)
+
+*Cita: decisiones 5.2 y 5.3 del fundador del 11 sep 2026, sobre la parada de la
+vuelta 11 (`docs/loop/paradas/2026-09-11-credito-y-la-quinta-peticion.md`).*
+
+### D.38.1. Seguidas significa CONSECUTIVAS
+
+> **UNA TANDA LIMPIA EN MEDIO PONE EL CONTADOR A CERO. NO LO CONGELA.**
+
+**Es la misma letra que rige en la otra casa desde el 13 ago 2026**, y aqui se
+escribe porque `AUDITOR_FORJA.md` 5.2 decia *"tres seguidas"* sin decir que pasa
+con la vuelta limpia que se mete en medio. **Una regla que no dice eso tiene dos
+lecturas**, y la ancha convierte cualquier racha en una condena perpetua: bastaria
+una caida cada cinco vueltas para no salir nunca.
+
+**CONSECUENCIA INMEDIATA, y por eso esta decision desbloquea el bucle:** la vuelta
+10 fue limpia, asi que **la racha `REPORTE` estaba en 1 de 3 y no en 3 de 3**. Ese
+motivo de parada **no existia**.
+
+**LO QUE NO CAMBIA:** la racha **sigue sin reiniciarse sola por el paso del
+tiempo**. La pone a cero **una tanda limpia** o **una decision escrita del
+fundador**, y el acta lo dice citando cual de las dos (`AUDITOR_FORJA.md` 5.4).
+**Un auditor que pone su propia racha a cero sin una de esas dos cosas se esta
+absolviendo.**
+
+### D.38.2. El auditor tiene UNA sola racha, con DOS especies propias
+
+> **`REMEDIO ROTO` y `CIFRA PUBLICADA PROPIA` acumulan EN LA MISMA RACHA. Tres
+> seguidas paran**, con la regla de consecutividad de arriba.
+
+`D.34.1` creo la racha propia para `REMEDIO ROTO` y no dijo donde caia una cifra
+falsa del propio auditor. **Las dos cifras falsas de su apertura sellada de la
+vuelta 11 son de esa segunda especie, y entran en la misma racha.**
+
+**POR QUE UNA Y NO DOS, que es lo que habria salido de seguir partiendo:** las dos
+especies son **el mismo fallo visto por dos sitios**. Un remedio roto es una
+promesa que no se cumplio; una cifra propia falsa es una comprobacion que no se
+hizo. **Lo que la racha mide es si el auditor se esta verificando a si mismo**, y
+eso no se mide mejor repartiendolo en dos contadores que suben a la mitad de
+velocidad.
+
+**SIGUE SIENDO APARTE DE LA DEL EXTRACTOR** (`D.34.1`): una racha mezclada no dice
+de quien es el problema.
+
+### D.38.3. Y la fase ciega deja de depender de la voluntad del auditor
+
+*Decision 5.1 del fundador, que **reinicia la racha `REMEDIO ROTO` con condicion
+mecanica**.*
+
+**El auditor tenia razon al decir que su propio remedio era del genero que no
+funciona: una promesa** (`D.35`: *un remedio que se cumple acordandose no es un
+remedio*). **La racha se reinicia porque el remedio cambia de genero**, no porque
+se le perdone.
+
+`D.34.2` retiraba `REPORTE.md` durante la fase ciega. **Ahora el arnes retira
+CUATRO ficheros:**
+
+    docs/loop/REPORTE.md              el reporte
+    docs/loop/loop.log                lo que hizo el turno
+    docs/loop/ultimo_extractor.json   EL MENSAJE FINAL DEL EXTRACTOR
+    docs/loop/ultimo_auditor.json     el acta anterior, resumida
+
+**Y EL QUE FALTABA ERA EL PEOR:** `ultimo_extractor.json` guarda el mensaje final
+del extractor, **que es un resumen de su propio reporte escrito por el**. Un
+auditor que lo abre **lee la version corta de lo que venia a leer a ciegas**.
+
+**Los devuelve al sellar, y el sello se comprueba al cerrar el turno**, igual que
+antes.
+
+**UN DETALLE DE FONTANERIA QUE ERA UNA GRIETA:** el arnes escribia su propio log
+en `loop.log`, asi que **recreaba el fichero que acababa de retirar**. El log tiene
+ahora destino conmutable: durante la ventana ciega va a un provisional, y **sus
+lineas se anexan al de verdad cuando el fichero vuelve**, para que la ventana no
+se pierda del registro por haber ocurrido con el fichero fuera. **Lo cazo la
+propia prueba**, no una lectura.
+
+**PRUEBA** (escenario 13 del arnes, ampliado): el auditor ciego **va a por los
+cuatro y anota cual encontro**; la prueba exige `ausentes:` con los cuatro nombres
+y **ninguno marcado como encontrado**; los cuatro **vuelven a su sitio** tras
+sellar; y **el log recupera la ventana ciega**. Con los cuatro creados antes de la
+corrida, porque si no existieran *"volvio a su sitio"* no probaria nada.

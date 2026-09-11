@@ -64,9 +64,19 @@ cada acta (`AUDITOR_FORJA.md` seccion 8, `CALIBRACION_D4.md` seccion 9.4):
 | se mantiene o baja respecto al **36 por ciento** del lote 1 | **un capitulo mas por vuelta** |
 | sube | **el techo vuelve a UNO** |
 
-    lote 1   UN capitulo por vuelta     (36 por ciento de puentes)
-    lote 2   DOS capitulos por vuelta   decision del fundador, 10 sep 2026
-    lote 3   lo dice el acta del lote 2
+    lote 1   UN capitulo por vuelta      36,00 por ciento de puentes
+    lote 2   DOS capitulos por vuelta    decision del fundador, 10 sep 2026
+    lote 3   TRES capitulos por vuelta    3,31 por ciento, FIRMADA el 11 sep
+    lote 4   CUATRO capitulos por vuelta decision del fundador, 11 sep 2026
+
+**LA CIFRA DEL LOTE 3 ESTA FIRMADA: 3,31 POR CIENTO** (decision del fundador del
+11 sep 2026, punto 5.8). Bajo del 36 por ciento del lote 1 **en un factor de
+once**, asi que el lote 4 y los siguientes corren a **CUATRO capitulos por
+vuelta**.
+
+**Y EL FRENO VA ESCRITO CON SU NUMERO, que es lo que lo hace freno:** la cifra se
+sigue publicando en cada acta, y **si sube por encima de 10 por ciento, se vuelve a
+TRES.** No es una vigilancia general: es un umbral con su salida.
 
 ## Lo que hay que resolver ANTES de llegar a su lote
 

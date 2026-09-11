@@ -537,9 +537,15 @@ descubrir el desfase mientras escribes, que es cuando cuesta un segundo.
 *`D.37` del banco, decision del fundador del 10 sep 2026. Cuelga de `D.19` y
 `D.29`.*
 
-**Cuando un nodo dice en su titulo o en su texto cuantas partes tiene** (*"con sus
-seis vias"*, *"los cuatro pasos"*, *"las cinco efes"*) **y esas partes existen como
-nodos, la arista cabeza a parte NO espera a que una señal la levante.**
+**Cuando un nodo dice en su titulo o en su texto CUANTAS partes tiene Y LAS
+NOMBRA** (*"con sus seis vias"*, *"los cuatro pasos"*, *"las cinco efes"*) **y esas
+partes existen como nodos, la arista cabeza a parte NO espera a que una señal la
+levante.**
+
+> **LA CUENTA ES CONDICION, no un adorno del ejemplo** (correccion del titular del
+> 11 sep 2026). **Si el texto solo enumera sin decir cuantas, esto NO es `D.37`:
+> es `D.29`**, y entonces la arista se declara igual **pero con razon escrita que
+> la sostenga**, porque ahi si hay algo que argumentar.
 
 > **DESDE AHORA DECLARAS ESAS ARISTAS EN LA MISMA VUELTA EN QUE INSERTAS LAS
 > PARTES.** No en la siguiente, no cuando alguien las eche de menos.

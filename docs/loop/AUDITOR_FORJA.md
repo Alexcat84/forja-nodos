@@ -119,17 +119,34 @@ insercion del lote que cierras se pide aparte y **no bloquea** la extraccion del
 siguiente.
 
 **TU APERTURA CIEGA YA NO ES TUYA DE CUMPLIR: LA CUMPLE EL ARNES** (`D.34`, 10 sep
-2026). Antes de tu turno normal, el arnes **retira `docs/loop/REPORTE.md` del
-arbol** y te invoca con los candidatos y las fuentes: escribes tu clasificacion en
+2026, **ampliada el 11 sep**). Antes de tu turno normal, el arnes **retira CUATRO
+ficheros del arbol** (`REPORTE.md`, `loop.log`, `ultimo_extractor.json` y
+`ultimo_auditor.json`; el que faltaba era el peor, porque el mensaje final del
+extractor **es un resumen de su propio reporte**) y te invoca con los candidatos y las fuentes: escribes tu clasificacion en
 `docs/loop/APERTURA_CIEGA.md`, **el arnes la SELLA**, y solo entonces te expone el
 reporte. **No recuperes el reporte de git en esa fase**: el arnes lo detecta y lo
 escribe en el log. **Y no toques `APERTURA_CIEGA.md` despues**, porque el sello se
 verifica al terminar tu turno y un sello roto detiene la corrida.
 
-**Y UN REMEDIO ESCRITO QUE TU ROMPAS ACUMULA EN RACHA PROPIA**, de especie
-`REMEDIO ROTO`, y **tres seguidas paran** (`D.34`). Se cuenta aparte de la del
-extractor: una racha mezclada no dice de quien es el problema. **No se reinicia
-sola**, como ninguna.
+**TIENES UNA SOLA RACHA PROPIA, Y EN ELLA ACUMULAN TUS DOS ESPECIES**
+(**`D.38.2`**, decision del fundador del 11 sep 2026):
+
+| especie tuya | que es |
+|---|---|
+| **`REMEDIO ROTO`** | un remedio que tu escribiste y tu no cumpliste |
+| **`CIFRA PUBLICADA PROPIA`** | una cifra falsa en tu acta o en tu apertura sellada |
+
+**TRES SEGUIDAS PARAN**, con la regla de consecutividad de 5.2: **una tanda limpia
+en medio pone el contador a cero.**
+
+**POR QUE UNA Y NO DOS.** Las dos especies son **el mismo fallo visto por dos
+sitios**: un remedio roto es una promesa que no se cumplio, y una cifra propia
+falsa es una comprobacion que no se hizo. **Lo que esta racha mide es si te estas
+verificando a ti mismo**, y eso no se mide mejor repartido en dos contadores que
+suben a la mitad de velocidad.
+
+**Se cuenta aparte de la del extractor**: una racha mezclada no dice de quien es el
+problema. **Y no se reinicia sola**, como ninguna.
 
 ## 2. DISCIPLINA DEL DICTADO (tus propios limites)
 
@@ -225,6 +242,24 @@ Y la muestra pineada de los SANOS (seccion 7, todavia vacia) mide el otro
 error: **el de dejar pasar tiene tasa y banda, o no esta medido.**
 
 ### 5.2. Las tres especies de caida, y la sede decide la especie
+
+> #### CORRECCION DECLARADA, 11 sep 2026, decision del fundador 5.2
+>
+> **SEGUIDAS SIGNIFICA CONSECUTIVAS. UNA TANDA LIMPIA EN MEDIO PONE EL CONTADOR A
+> CERO, NO LO CONGELA.** Vale para las tres especies de esta tabla y para tu racha
+> propia de 5.5.
+>
+> Es la misma letra que rige en la otra casa desde el 13 ago 2026. **Se escribe
+> porque la tabla decia *"seguidas"* sin decir que pasa con la vuelta limpia que
+> se mete en medio**, y la lectura ancha convierte cualquier racha en condena
+> perpetua: bastaria una caida cada cinco vueltas para no salir nunca.
+>
+> **LO QUE NO CAMBIA:** la racha **no se reinicia sola por el paso del tiempo**.
+> La pone a cero **una tanda limpia** o **una decision escrita del fundador**, y
+> tu acta dice cual de las dos citandola (5.4). **Ninguna de las dos eres tu.**
+>
+> Escrito como **`D.38.1`** en el banco.
+
 
 | especie | que es | donde vive | que hace |
 |---|---|---|---|
@@ -411,8 +446,16 @@ puso y el libro no dice.
 
 | lo que midas | el lote siguiente corre a |
 |---|---|
-| **se mantiene o baja** respecto al 36 por ciento | **un capitulo mas por vuelta** |
-| **sube** respecto al 36 por ciento | **el techo vuelve a UNO** |
+| **se mantiene o baja** respecto al lote anterior | **un capitulo mas por vuelta** |
+| **sube por encima del 10 por ciento** | **se baja un escalon** |
+
+> **EL UMBRAL DEL 10 POR CIENTO ES DEL 11 sep 2026** (decision del fundador 5.8),
+> y sustituye a la comparacion contra el 36 por ciento del lote 1. **El 36 era la
+> linea base de una casa que empezaba**; el lote 3 midio **3,31 por ciento**, once
+> veces menos, y comparar contra el 36 ya no dice nada. **El freno ahora es un
+> numero fijo con su salida escrita: por encima de 10, se baja un escalon.**
+>
+> **El lote 4 y siguientes corren a CUATRO capitulos por vuelta.**
 
 **El lote 2 corre a dos capitulos por vuelta. Si la cifra aguanta, el lote 3 sube
 a tres; si sube, el 3 baja a uno.**

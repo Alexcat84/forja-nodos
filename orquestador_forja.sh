@@ -72,7 +72,17 @@ ESPERA_SEGUNDOS="${ESPERA_SEGUNDOS:-1800}"
 MAX_INTENTOS="${MAX_INTENTOS:-7}"
 CLAUDE_BIN="${CLAUDE_BIN:-claude}"
 
-log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOOP/loop.log"; }
+# EL LOG TIENE DESTINO CONMUTABLE, y no es un capricho: durante la fase ciega
+# (D.34, ampliada el 11 sep 2026) el arnes RETIRA docs/loop/loop.log del arbol,
+# asi que sus propias lineas de esa ventana no pueden ir ahi. Van a un log
+# provisional y se anexan al de verdad cuando el fichero vuelve. Sin esto, el
+# arnes recrearia el fichero que acaba de retirar.
+LOG_ACTIVO=""
+
+log() {
+  local destino="${LOG_ACTIVO:-$LOOP/loop.log}"
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$destino"
+}
 
 comprobar_arranque() {
   # DOS FRENOS ANTES DE GASTAR UN SOLO TURNO.
@@ -240,8 +250,8 @@ correr bash orquestador_forja.sh. El arnes sigue leyendo
 docs/loop/PROMPT_SIGUIENTE.md desde donde quedo; no hace falta rehacer nada.
 EOF
   git add "$LOOP/PARA_ALEXIS.md"
-  git commit -m "Arnes detenido: fallo repetido del $rol por \"$motivo\"" >>"$LOOP/loop.log" 2>&1
-  git push origin "$RAMA" >>"$LOOP/loop.log" 2>&1
+  git commit -m "Arnes detenido: fallo repetido del $rol por \"$motivo\"" >>"${LOG_ACTIVO:-$LOOP/loop.log}" 2>&1
+  git push origin "$RAMA" >>"${LOG_ACTIVO:-$LOOP/loop.log}" 2>&1
 }
 
 invocar_claude() { # rol modelo prompt salida vuelta [testigo]
@@ -267,7 +277,7 @@ invocar_claude() { # rol modelo prompt salida vuelta [testigo]
     "$CLAUDE_BIN" -p --model "$modelo" --dangerously-skip-permissions \
       --output-format json \
       "$prompt" \
-      > "$salida" 2>>"$LOOP/loop.log"
+      > "$salida" 2>>"${LOG_ACTIVO:-$LOOP/loop.log}"
     duracion=$((SECONDS - inicio))
     c="$(costo "$salida")"
     hash_despues="$(hash_fichero "$testigo")"
@@ -343,27 +353,52 @@ PROMPT_EXTRACTOR="Estas en el repo forja-nodos. Lee docs/loop/EXTRACTOR.md (tus 
 APERTURA="$LOOP/APERTURA_CIEGA.md"
 SELLOS="$LOOP/SELLOS_APERTURA.jsonl"
 
-PROMPT_APERTURA_CIEGA="Estas en el repo forja-nodos, en la APERTURA CIEGA de tu turno de auditor. Lee docs/loop/AUDITOR_FORJA.md entero. AVISO: docs/loop/REPORTE.md NO ESTA en el arbol ahora mismo, y no esta a proposito. NO lo recuperes de git ni por ninguna otra via: recuperarlo invalida tu propia apertura y el arnes lo detecta. Tu trabajo AHORA es clasificar el material por ti mismo y a ciegas: abre los candidatos del lote en cuarentena/, abre el texto fuente en fuentes/, y escribe en docs/loop/APERTURA_CIEGA.md tu clasificacion de cada candidato y de cada pieza que leas, con las lineas que la sostienen. Es la lectura que despues vas a comparar con la del extractor. Cuando termines, NO commitees: el arnes sella tu fichero y lo commitea el. Despues, en tu turno normal, recibiras el reporte."
+PROMPT_APERTURA_CIEGA="Estas en el repo forja-nodos, en la APERTURA CIEGA de tu turno de auditor. Lee docs/loop/AUDITOR_FORJA.md entero. AVISO: docs/loop/REPORTE.md, docs/loop/loop.log, docs/loop/ultimo_extractor.json y docs/loop/ultimo_auditor.json NO ESTAN en el arbol ahora mismo, y no estan a proposito: el mensaje final del extractor es un resumen de su propio reporte, asi que leerlo seria leer lo que vienes a leer a ciegas. NO los recuperes de git ni por ninguna otra via: recuperarlos invalida tu propia apertura y el arnes lo detecta y lo escribe. Tu trabajo AHORA es clasificar el material por ti mismo y a ciegas: abre los candidatos del lote en cuarentena/, abre el texto fuente en fuentes/, y escribe en docs/loop/APERTURA_CIEGA.md tu clasificacion de cada candidato y de cada pieza que leas, con las lineas que la sostienen. Es la lectura que despues vas a comparar con la del extractor. Cuando termines, NO commitees: el arnes sella tu fichero y lo commitea el. Despues, en tu turno normal, recibiras el reporte."
 
 apertura_ciega() { # $1 = vuelta
-  local vuelta="$1" refugio="" sello fecha
+  local vuelta="$1" refugio="" sello fecha reaparecidos=""
+
+  # LA FASE CIEGA RETIRA CUATRO FICHEROS, NO UNO (D.34, ampliada por decision
+  # del fundador del 11 sep 2026).
+  #
+  # El reporte no era la unica via de contaminacion, y la que faltaba era la
+  # peor: `ultimo_extractor.json` guarda EL MENSAJE FINAL DEL EXTRACTOR, que es
+  # un resumen de su propio reporte escrito por el. Un auditor que lo abre lee
+  # la version corta de lo que venia a leer a ciegas. `loop.log` dice lo que
+  # hizo el turno, y `ultimo_auditor.json` trae el acta anterior resumida.
+  #
+  # HASTA HOY ESTO DEPENDIA DE QUE EL AUDITOR NO LOS ABRIERA, o sea de una
+  # PROMESA, que es el genero de remedio que esta casa tiene medido que no
+  # funciona (D.35: un remedio que se cumple acordandose no es un remedio).
+  # Ahora no estan.
+  local retirar="REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json"
+
   rm -f "$APERTURA"
   refugio="$(mktemp -d)"
-  if [ -f "$LOOP/REPORTE.md" ]; then
-    mv "$LOOP/REPORTE.md" "$refugio/REPORTE.md"
-  fi
+  local fichero
+  for fichero in $retirar; do
+    [ -f "$LOOP/$fichero" ] && mv "$LOOP/$fichero" "$refugio/$fichero"
+  done
 
-  log "VUELTA $vuelta : APERTURA CIEGA ($MODELO_AUDITOR), el reporte queda retirado"
+  # Y EL LOG DE ESTA VENTANA VA APARTE, porque su fichero acaba de irse.
+  LOG_ACTIVO="$refugio/loop_provisional.log"
+
+  log "VUELTA $vuelta : APERTURA CIEGA ($MODELO_AUDITOR), retirados: $retirar"
   invocar_claude "auditor ciego" "$MODELO_AUDITOR" \
     "$PROMPT_APERTURA_CIEGA" \
     "$LOOP/ultimo_apertura.json" "$vuelta" "$APERTURA"
 
-  # ¿REAPARECIO EL REPORTE DURANTE LA FASE CIEGA? Recuperarlo de git es la
-  # unica via que queda, y es un acto deliberado. Se dice, no se calla.
-  if [ -f "$LOOP/REPORTE.md" ]; then
-    log "APERTURA CIEGA ROTA en la vuelta $vuelta: docs/loop/REPORTE.md REAPARECIO"
-    log "  durante la fase ciega. Solo se recupera a mano, asi que fue deliberado."
-    rm -f "$LOOP/REPORTE.md"
+  # ¿REAPARECIO ALGUNO DURANTE LA FASE CIEGA? Recuperarlos de git es la unica
+  # via que queda, y es un acto deliberado. Se dice, no se calla.
+  for fichero in $retirar; do
+    if [ -f "$LOOP/$fichero" ]; then
+      reaparecidos="$reaparecidos $fichero"
+      rm -f "$LOOP/$fichero"
+    fi
+  done
+  if [ -n "$reaparecidos" ]; then
+    log "APERTURA CIEGA ROTA en la vuelta $vuelta: REAPARECIERON$reaparecidos"
+    log "  durante la fase ciega. Solo se recuperan a mano, asi que fue deliberado."
   fi
 
   # EL SELLO. git hash-object da la misma huella que usa el testigo, asi que no
@@ -372,16 +407,23 @@ apertura_ciega() { # $1 = vuelta
   fecha="$(date '+%Y-%m-%d %H:%M:%S')"
   printf '{"vuelta": %s, "fecha": "%s", "sello": "%s"}\n' \
     "$vuelta" "$fecha" "$sello" >> "$SELLOS"
+  log "  apertura ciega sellada: $sello"
+
+  # Y AHORA, Y SOLO AHORA, SE LE DEVUELVE TODO.
+  for fichero in $retirar; do
+    [ -f "$refugio/$fichero" ] && mv "$refugio/$fichero" "$LOOP/$fichero"
+  done
+  # El log provisional se anexa al de verdad, que ya volvio: la ventana ciega
+  # no se pierde del registro por haber ocurrido con el fichero fuera.
+  LOG_ACTIVO=""
+  if [ -f "$refugio/loop_provisional.log" ]; then
+    cat "$refugio/loop_provisional.log" >> "$LOOP/loop.log"
+  fi
+  rm -rf "$refugio"
+
   git add "$APERTURA" "$SELLOS" >>"$LOOP/loop.log" 2>&1
   git commit -q -m "Apertura ciega de la vuelta $vuelta, sellada antes de exponer el reporte" \
     >>"$LOOP/loop.log" 2>&1
-  log "  apertura ciega sellada: $sello"
-
-  # Y AHORA, Y SOLO AHORA, SE LE EXPONE EL REPORTE.
-  if [ -f "$refugio/REPORTE.md" ]; then
-    mv "$refugio/REPORTE.md" "$LOOP/REPORTE.md"
-  fi
-  rm -rf "$refugio"
 }
 
 verificar_sello() { # $1 = vuelta. Cierto si la apertura ciega sigue siendo la sellada.

@@ -70,7 +70,13 @@ if echo "$prompt" | grep -q "APERTURA CIEGA"; then
   # unico que la prueba necesita comprobar de la fase ciega.
   rol="auditor ciego"; testigo="docs/loop/APERTURA_CIEGA.md"
   escribe="${FALSO_APERTURA:-si}"
-  if [ -f "docs/loop/REPORTE.md" ]; then visto="EL REPORTE ESTABA"; else visto="el reporte NO estaba"; fi
+  # EL AUDITOR CIEGO INTENTA ABRIR LOS CUATRO, y anota cual encontro. Es la
+  # comprobacion de D.34 ampliada: no basta con que el arnes diga que los
+  # retira, tiene que constar que NO estaban cuando alguien fue a por ellos.
+  visto="ausentes:"
+  for f in REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json; do
+    if [ -f "docs/loop/$f" ]; then visto="$visto ENCONTRADO_$f"; else visto="$visto $f"; fi
+  done
 elif echo "$prompt" | grep -q "EXTRACTOR.md"; then
   rol=extractor; testigo="docs/loop/REPORTE.md"; escribe="${FALSO_EXTRACTOR:-si}"
 else
@@ -322,26 +328,43 @@ echo "              siete actas fue una promesa y las siete se rompieron. El"
 echo "              artefacto documenta, no impide: lo que impide es que el"
 echo "              fichero no este."
 taller="$(montar_banco e13)"
+# LOS CUATRO EXISTEN ANTES, que es la situacion de cualquier vuelta que no sea
+# la primera: si no existieran, "volvio a su sitio" no probaria nada.
 echo "reporte de la vuelta anterior" > "$taller/docs/loop/REPORTE.md"
+echo "[hora] log de la vuelta anterior" > "$taller/docs/loop/loop.log"
+echo '{"result": "mensaje final del extractor anterior"}' > "$taller/docs/loop/ultimo_extractor.json"
+echo '{"result": "mensaje final del auditor anterior"}' > "$taller/docs/loop/ultimo_auditor.json"
 git -C "$taller" add -A >/dev/null 2>&1
-git -C "$taller" commit -q -m "reporte previo" >/dev/null 2>&1
+git -C "$taller" commit -q -m "los cuatro artefactos de la vuelta anterior" >/dev/null 2>&1
 salida="$(correr "$taller")"
 echo "$salida" | sed 's/^/  | /'
 comprobar "la fase ciega corre y lo dice"    "APERTURA CIEGA"              "$salida"
-comprobar "dice que retira el reporte"       "el reporte queda retirado"   "$salida"
+comprobar "dice que retira los CUATRO"       "retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json" "$salida"
 comprobar "sella la apertura"                "apertura ciega sellada"      "$salida"
 comprobar "y verifica el sello despues"      "sello de la apertura ciega verificado" "$salida"
 comprobar "el auditor corre DESPUES"         "VUELTA 1 : AUDITOR"          "$salida"
 
-# LA COMPROBACION QUE IMPORTA: el auditor ciego NO tenia el reporte delante.
+# LA COMPROBACION QUE IMPORTA: el auditor ciego FUE A POR LOS CUATRO y no
+# encontro ninguno. No basta con que el arnes diga que los retira.
 apertura="$(cat "$taller/docs/loop/APERTURA_CIEGA.md" 2>/dev/null || echo AUSENTE)"
-comprobar "el ciego NO vio el reporte"       "el reporte NO estaba"        "$apertura"
-comprobar_no "y no dice lo contrario"        "EL REPORTE ESTABA"           "$apertura"
+comprobar "el ciego no encontro el reporte"  "ausentes: REPORTE.md"        "$apertura"
+comprobar "ni el log del arnes"              "loop.log"                    "$apertura"
+comprobar "ni el testigo del extractor"      "ultimo_extractor.json"       "$apertura"
+comprobar "ni el testigo del auditor"        "ultimo_auditor.json"         "$apertura"
+comprobar_no "NINGUNO de los cuatro estaba"  "ENCONTRADO_"                 "$apertura"
+comprobar_no "y la apertura ciega no se rompio" "APERTURA CIEGA ROTA"      "$salida"
 
-# Y EL REPORTE VOLVIO a su sitio para el turno normal.
-[ -f "$taller/docs/loop/REPORTE.md" ] \
-  && { echo "    VERDE  el reporte vuelve a su sitio tras sellar"; verdes=$((verdes+1)); } \
-  || { echo "    ROJO   el reporte no volvio"; rojos=$((rojos+1)); }
+# Y LOS CUATRO VUELVEN a su sitio para el turno normal.
+for fichero in REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json; do
+  [ -f "$taller/docs/loop/$fichero" ] \
+    && { echo "    VERDE  $fichero vuelve a su sitio tras sellar"; verdes=$((verdes+1)); } \
+    || { echo "    ROJO   $fichero no volvio"; rojos=$((rojos+1)); }
+done
+
+# Y LA VENTANA CIEGA NO SE PIERDE DEL REGISTRO por haber ocurrido con el log
+# fuera: sus lineas se anexan al de verdad cuando vuelve.
+comprobar "el log recupera la ventana ciega" "APERTURA CIEGA" \
+  "$(cat "$taller/docs/loop/loop.log" 2>/dev/null || echo AUSENTE)"
 
 sellos="$(cat "$taller/docs/loop/SELLOS_APERTURA.jsonl" 2>/dev/null || echo AUSENTE)"
 comprobar "el sello queda en su registro"    '"vuelta": 1'                 "$sellos"

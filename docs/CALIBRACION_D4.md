@@ -406,10 +406,17 @@ de gestion gasta muchas mas palabras por procedimiento.
 *Decision del fundador del 10 sep 2026.* El lote 2 corre a **DOS capitulos por
 vuelta**, y **cada acta del auditor publica `PASOS INVENTADOS POR CAPITULO`**:
 
-| lo que mida el lote 2 | el lote 3 |
-|---|---|
-| **se mantiene o baja** respecto al 36 por ciento | **sube a TRES capitulos por vuelta** |
-| **sube** respecto al 36 por ciento | **el techo vuelve a UNO** |
+| lote | volumen por vuelta | puentes medidos |
+|---|---|---:|
+| 1 | UNO | **36,00 por ciento** |
+| 2 | DOS | |
+| 3 | TRES | **3,31 por ciento**, firmada el 11 sep 2026 |
+| **4 y siguientes** | **CUATRO** | el freno: **por encima del 10 por ciento se baja un escalon** |
+
+**LA LINEA BASE DEJA DE SER EL 36 POR CIENTO** (decision del fundador del 11 sep
+2026, punto 5.8). Era la cifra de una casa que empezaba, y el lote 3 la bajo
+**once veces**. Comparar contra ella ya no dice nada: **el freno es ahora un numero
+fijo, 10 por ciento, con su salida escrita.**
 
 **LA CIFRA ES POR CAPITULO Y NO POR VUELTA, y eso no es un detalle:** con dos
 capitulos por vuelta, una media de vuelta esconderia un capitulo limpio detras de

@@ -1452,6 +1452,46 @@ class PruebaAristaDeclarada37(BaseForja):
         self.assertEqual(self.nodos(), antes)
 
 
+class PruebaSedeVacia(BaseForja):
+    """5.7: la sede de los pares mutuos NACE VACIA, con su cabecera.
+
+    Una sede que NO EXISTE y una sede VACIA se parecen demasiado, y no son lo
+    mismo: la primera hace dudar de si el protocolo la lee. El fichero nace con
+    una linea que dice que es, y esa linea NO es una cita.
+    """
+
+    def _cabecera(self):
+        return ('{"_lea_esto": "registro de citas de enlace mutuo", '
+                '"_estado": "VACIO, ninguna cita declarada todavia"}')
+
+    def test_la_cabecera_no_cuenta_como_cita(self):
+        from src import config as modulo_config
+        comun.escribir_texto(self.pares_mutuos, self._cabecera() + "\n")
+        self.assertEqual(modulo_config.cargar_pares_mutuos(self.pares_mutuos), [])
+
+    def test_caso_positivo_una_cita_de_verdad_SI_cuenta(self):
+        """Sin esto, el salto podria estarse tragando el fichero entero."""
+        from src import config as modulo_config
+        cita = ('{"par": ["uno", "otro"], "paso_ida": 2, "paso_vuelta": 5, '
+                '"huella_ida": "aa", "huella_vuelta": "bb"}')
+        comun.escribir_texto(self.pares_mutuos,
+                             self._cabecera() + "\n" + cita + "\n")
+        citas = modulo_config.cargar_pares_mutuos(self.pares_mutuos)
+        self.assertEqual(len(citas), 1)
+        self.assertEqual(citas[0]["par"], ["uno", "otro"])
+
+    def test_el_gate_y_la_vigencia_no_tropiezan_con_la_cabecera(self):
+        """La averia que este salto evita: un fallo cantado sobre una linea
+        que no es un par."""
+        comun.escribir_texto(self.pares_mutuos, self._cabecera() + "\n")
+        self.escribir_dataset([nodo_base("sanear_grafo")])
+        codigo, salida = self.forja("gate")
+        self.assertEqual(codigo, 0, salida)
+        codigo, salida = self.forja("rancios")
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("citas de enlace mutuo comprobadas: 0", salida)
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
@@ -1459,7 +1499,8 @@ def main():
              PruebaNoAplica, PruebaDeprecado, PruebaResolutor,
              PruebaBandejas, PruebaReglasDeId, PruebaAristaDeclarada,
              PruebaArchivoDeInsertados,
-             PruebaAristaDeclarada37]
+             PruebaAristaDeclarada37,
+             PruebaSedeVacia]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -1492,6 +1533,8 @@ def main():
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaArchivoDeInsertados)._tests))
     print("  D.37, la serie declarada por el titulo es arista por lectura: "
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaAristaDeclarada37)._tests))
+    print("  la sede de los pares mutuos nace vacia con su cabecera (5.7): "
+          "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaSedeVacia)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

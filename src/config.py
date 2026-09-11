@@ -37,5 +37,17 @@ def cargar_pares_mutuos(ruta=None):
     esta lista cubra tras resolver: todo lo demas sigue siendo fallo.
     comun.leer_jsonl ya devuelve lista vacia si el archivo no existe todavia
     (nadie ha declarado un enlace mutuo aun); un jsonl mal formado SI se deja
-    romper, para que el fallo se vea en vez de tragarse en silencio."""
-    return comun.leer_jsonl(ruta or comun.RUTA_PARES_MUTUOS)
+    romper, para que el fallo se vea en vez de tragarse en silencio.
+
+    LA CABECERA NO ES UNA CITA (11 sep 2026, decision del fundador 5.7). El
+    fichero nace vacio, con una linea que dice que es y para que sirve, porque
+    una sede que no existe y una sede vacia se parecen demasiado: la primera
+    hace dudar de si el protocolo la lee, y la segunda no. Esa linea lleva
+    todas sus claves con guion bajo delante, que es la misma convencion que ya
+    usan fuentes/FUENTES_CANONICAS.json y los ficheros de candidato, y aqui se
+    SALTA: sin esto el gate y el bloque de vigencia la tomarian por un par sin
+    huellas y cantarian un fallo que no existe."""
+    filas = comun.leer_jsonl(ruta or comun.RUTA_PARES_MUTUOS)
+    return [f for f in filas
+            if not (isinstance(f, dict) and f
+                    and all(str(c).startswith("_") for c in f))]

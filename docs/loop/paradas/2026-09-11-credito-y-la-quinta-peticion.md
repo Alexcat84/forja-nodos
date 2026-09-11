@@ -1,4 +1,62 @@
-# PARADA DEL 11 SEP 2026: CREDITO ROTO, POR DOS MOTIVOS, Y EL PRIMERO ES MIO
+# PARADA DEL 11 SEP 2026: CREDITO ROTO, Y LA QUINTA PETICION
+
+> ## LAS OCHO DECISIONES DEL FUNDADOR, 11 sep 2026
+>
+> **5.1. RACHA `REMEDIO ROTO`: REINICIADA, con condicion mecanica**, porque tienes
+> razon en que tu remedio era del genero que no funciona (una promesa). **La fase
+> ciega deja de depender de la voluntad del auditor: el arnes RETIRA `loop.log`,
+> `ultimo_extractor.json` y `ultimo_auditor.json` durante la fase ciega igual que
+> ya retira `REPORTE.md`, los devuelve al sellar, y el sello se comprueba al
+> cerrar.** Implementado con su caso positivo (un auditor que intenta abrirlos no
+> encuentra fichero), y con eso la racha arranca en cero.
+>
+> **5.2. RACHA `REPORTE`: SEGUIDAS SIGNIFICA CONSECUTIVAS.** Una tanda limpia en
+> medio pone el contador a CERO, no lo congela. **Con la vuelta 10 limpia, la racha
+> esta en 1 de 3 y este motivo de parada desaparece.** Escrito en
+> `AUDITOR_FORJA.md` 5.2 por correccion declarada: es la misma letra que rige en la
+> otra casa desde el 13 ago.
+>
+> **5.3. EL AUDITOR TIENE UNA SOLA RACHA**, y en ella acumulan sus DOS especies
+> propias: **`REMEDIO ROTO`** y **`CIFRA PUBLICADA PROPIA`** (las dos cifras falsas
+> de su apertura sellada son de esta segunda especie y entran). **Tres seguidas
+> paran**, con la misma regla de consecutividad del 5.2.
+>
+> **5.4. `D.37`, LECTURA CONSERVADORA**, que es la que sostuvisteis los dos: **la
+> enumeracion cuenta solo si dice CUANTAS partes hay Y las nombra**; si solo enumera
+> sin contarlas, el par va a `D.29` con razon escrita. **Corregido el titular de
+> `D.37` para que diga lo que dice su cuerpo: una regla no puede tener dos
+> lecturas.**
+>
+> **5.5. INSERCION AUTORIZADA de los 83:** primero los 15 de `smart_who` (cierran
+> su lote), despues los 68 de `zhuo_manager`, cada uno por la aduana con su
+> veredicto escrito, **`D.36`** (el orden que lee) y **`D.37`** aplicadas, y los
+> insertados movidos a `cuarentena/_insertados/<libro>/` en el mismo acto. Gate,
+> resolutor, vigencia y suite al cerrar; **censo esperado publicado antes y contado
+> despues.**
+>
+> **5.6. EL RELOJ: no se tocan umbrales ni instrumento.** El coste crecia porque la
+> carpeta crecia; con 5.5 la bandeja queda vacia y el informe vuelve a su tamaño.
+> **Se mide de nuevo en el proximo lote y, si sigue creciendo con carpeta chica,
+> entonces es del instrumento y lo traes.**
+>
+> **5.7. `config/pares_mutuos.jsonl` NACE VACIO**, con su cabecera y su LEEME: la
+> sede existe y esta vacia, que es honesto; el protocolo la lee sin trampa.
+>
+> **5.8. VOLUMEN: firmada la cifra 3,31 por ciento del lote 3.** El lote 4 y
+> siguientes corren a **CUATRO capitulos por vuelta**, y la cifra se sigue
+> publicando en cada acta: **si sube por encima de 10, se vuelve a tres.**
+
+> **ARCHIVADA.** Este fichero fue `docs/loop/PARA_ALEXIS.md` hasta que el fundador
+> resolvio lo que pedia. **Se archiva entero y sin tocar una palabra de su
+> cuerpo**; lo unico añadido es esta cabecera. El arnes solo mira
+> `docs/loop/PARA_ALEXIS.md`, asi que el bucle ya no esta detenido por el.
+>
+> **Lo ejecutado:** `D.38` (5.1, 5.2, 5.3) y el titular corregido de `D.37` (5.4)
+> en el banco; el arnes y su escenario 13 ampliado; `config/pares_mutuos.jsonl` con
+> su `LEEME` (5.7); el volumen en sus tres sedes (5.8); y la insercion de los 83
+> en su propio commit (5.5).
+
+---
 
 > **Escrito por el auditor del bucle del extractor, el 11 sep 2026, al cerrar la
 > vuelta 11.** Sede del auditor (`AUDITOR_FORJA.md` 5.6, **`D.28`**). El extractor
