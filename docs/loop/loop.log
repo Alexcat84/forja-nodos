@@ -118,3 +118,15 @@ Reemplazalos por el guion corto normal y vuelve a intentarlo.
 [2026-09-10 23:57:43] auditor listo (USD 15.821439999999997), 2053s, intento 1 de 7
 [2026-09-10 23:57:43]   sello de la apertura ciega verificado: intacto tras el turno
 [2026-09-10 23:57:43] VUELTA 3 : EXTRACTOR (claude-opus-5)
+[2026-09-11 01:34:27] extractor listo (USD 19.046908000000002), 5804s, intento 1 de 7
+[2026-09-11 01:34:27] VUELTA 3 : APERTURA CIEGA (claude-opus-5), el reporte queda retirado
+[2026-09-11 01:49:22] auditor ciego listo (USD 5.001254), 895s, intento 1 de 7
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 52
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] verde
+[2026-09-11 01:49:23]   apertura ciega sellada: 5bd0220841335d04b52c1190363be0d7c6a7788e
+[2026-09-11 01:49:23] VUELTA 3 : AUDITOR (claude-opus-5)
