@@ -11554,3 +11554,160 @@ los mismos tres numeros con los que abri.
 
 **No corri `python forja.py insertar` ni una sola vez.** Es la cuarta acta que la pide y
 sigue sin autorizarse; **lo digo y no la tomo.**
+
+---
+
+# EL CIERRE DE LA VUELTA 11
+
+## C.11.1. LOS SEIS DISCUTIBLES, RECOGIDOS, Y LOS MARQUE ANTES DE SABER SI ACIERTO
+
+*`EXTRACTOR.md` 8. **Los seis estan escritos en el cuerpo, en el sitio donde tome la
+decision, y ninguno se anadio al cerrar.** Aqui solo los recojo.*
+
+| # | donde | que decidi | la lectura contraria, escrita por mi |
+|---:|---|---|---|
+| **1** | `1.8` | **saque `L283` del paso 8** en vez de mover el borde de la frontera | `L283` es la unica linea de P19 que habla de la conducta del que da la noticia; quien lea que P19 no es homogenea **puede partirla y quedarse `L283`** |
+| **2** | `2.e` | **parti el paso 3 de `gestionar_personas_equipo` en DOS aristas** | `D.29` habla de *la* arista en singular; **si el defecto esta en el paso, lo que hay que corregir es el nodo y no la tabla** |
+| **3** | `2.e` | **NO declare la arista del `2.b`**, contra el caso del auditor | las dos escenas comparten doctrina y no solo orden, y `L277` **da la razon** de lo que `L313` solo ordena: **eso es una `D.29` de manual** |
+| **4** | `3.4` | **extraje `P2`**, la escena de apertura, rompiendo mi propio patron de las dos vueltas anteriores | de las 710 palabras de `P2`, unas 690 son narracion: **el nodo se sostiene sobre UNA linea de las once**, y `D.30` avisa para este caso exacto |
+| **5** | `3.4` | **descarte `P3` entera, 747 palabras**, la mayor descartada del lote 3 | sus dos causas de `L51` y `L55` **podrian leerse como inventario de objetos de trabajo**, y saldria un nodo de diagnostico hermano del del Cap. 3 |
+| **6** | `3.8` | **conte 6 puentes y no 43** | si `Ten delante` y `Cuenta con` son de la misma especie que `Reconoce`, **la tasa es 26,5 por ciento y la mia esta mal contada** |
+
+**SEIS CONTRA LOS CUATRO DE LA VUELTA 10, Y NO ES QUE HAYA DUDADO MAS: ES QUE ESTE CAPITULO
+TIENE MAS BORDES.** Tres de los seis (**4, 5 y 6**) salen de que `Managing Yourself` narra
+el doble que los dos anteriores, y **narrar es donde esta casa tiene la vara mas fina**.
+
+## C.11.2. NINGUNA PARADA, Y LAS DOS VECES QUE ESTUVO CERCA
+
+**Cero paradas.** Ninguna regla me obligo a romper otra, no necesite mover ningun umbral, ni
+`D.27`, ni `D.37`, ni `P.19`, ni la vara, y **las cuatro comprobaciones de apertura cuadraron
+las cuatro** (`1.1`). **Las dos veces que estuvo cerca:**
+
+1. **LA `1.3.c`, cuando mi lectura salio contra la cifra que el encargo adelantaba.** El
+   encargo decia que las palabras minadas del Cap. 4 pasan *a hasta 5.904*. **No paro**,
+   porque `EXTRACTOR.md` 5 dice exactamente que hacer: **declarar la discrepancia en vez de
+   resolverla copiando.** Y ademas no era discrepancia de hecho sino de rama: **la cifra era
+   condicional y su condicion no se cumplio.**
+2. **LA `3.4`, con `P2`.** Extraer la escena de apertura **contradice lo que yo mismo hice
+   dos veces en la vuelta 10**, y una contradiccion con una decision publicada es material de
+   parada (`EXTRACTOR.md` 7). **No paro porque la diferencia cae sobre lo que `D.27` mide y
+   no sobre `D.27` misma**: no muevo la regla, la aplico a dos piezas que difieren en lo que
+   la regla pregunta. **Lo marque como DISCUTIBLE 4 en vez de pararlo**, que es lo que la
+   seccion 8 pide para un juicio propio que puede caer.
+
+## C.11.3. LO QUE ESTA VUELTA **NO** HIZO, DICHO POR SU NOMBRE
+
+- **No inserto nada.** Ni los 68 de `zhuo_manager` ni los 15 de `smart_who`. Probado por las
+  dos puntas en `4.6` y `C.11.6`.
+- **No toco `cuarentena/smart_who/`**: sigue en **15** ficheros, contados hoy.
+- **No abrio `cap_07.md` en adelante**, salvo su cabecera para comprobar el borde (`3.1`).
+- **No juzgo `cap_12.md`**: lo verifico como `Epilogue` y **lo deja sin prejuzgar** (`1.6.b`).
+- **No movio umbrales, reglas de id, esquema, `D.27`, `D.37`, `P.19` ni la vara.**
+- **No fabrico maquinaria.** El cruce de la `1.a` es **una comparacion mas dentro de la
+  relectura de punteros que ya corria**, escrita en un `python -c` de una vuelta, **no una
+  guarda**. Y **no propongo una guarda que cruce piezas con citas**, que el encargo lo
+  prohibe expresamente.
+- **No escribio `PARA_ALEXIS.md`** (`D.28`), ni `ACTA_AUDITOR.md`, ni `PROMPT_SIGUIENTE.md`.
+- **No escribio en `bitacora/VEREDICTOS.jsonl`** ni en ninguna sede de la aduana.
+
+**Lo unico que toque fuera de `cuarentena/` y de mi reporte fue `ORDEN_DE_LOTES.md`**, y
+**solo la columna `estado` del lote 3**, que es lo que la `1.d.1` me ordena, **por correccion
+declarada y sin borrar**.
+
+## C.11.4. LAS GUARDAS, CORRIDAS **AL CIERRE** Y NO AL PRINCIPIO
+
+*`EXTRACTOR.md` 4: el estado al cierre se mide al cierre. **Las de `1.1` eran de apertura;
+estas son otras corridas, despues de escribir los 18 candidatos.***
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 52
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python tests/test_aceptacion.py
+      total: 72 pruebas, 0 fallos, 0 errores
+
+    $ python forja.py rancios
+    BLOQUE DE VIGENCIA VERDE.
+      veredictos comprobados: 60
+
+**LAS CUATRO EN VERDE AL CIERRE.** Y **el hook corrio en los seis commits de la vuelta**, sin
+saltarse ni uno: cada uno imprimio `[pre-commit] gate de integridad`, `[pre-commit] barrido
+de guiones` y `[pre-commit] verde`.
+
+## C.11.5. LA RELECTURA DE PUNTEROS, CORRIDA SOBRE MI PROPIO TRAMO
+
+*`C.10.8`, con la comparacion de mas que pide la `1.a`. **Corrida sobre las 101 referencias
+de linea distintas de mi tramo**, que empieza en la linea 10358 de este fichero.*
+
+    $ python -c "... extrae toda referencia `L<n>` del tramo de la vuelta 11 y la abre"
+    referencias de linea distintas en mi tramo: 101
+    referencias comprobadas (quitando los 3 bordes de pieza): 98
+    apuntan a linea CON TEXTO en cap_06.md: 98
+    apuntan a linea VACIA en los tres ficheros (punteros rotos): NINGUNO
+
+**98 DE 98 CORRECTOS, CERO PUNTEROS ROTOS**, contra los **33 de 33** de la vuelta 10 y los
+**siete rotos** de la vuelta 9.
+
+**Y DIGO EL LIMITE DE ESTA COMPROBACION, PORQUE UNA PRUEBA SIN SU LIMITE ES MEDIA PRUEBA.**
+La maquina comprueba **que la linea existe y no esta en blanco**, y **de que pieza es** (eso
+es el cruce de `3.7.b`, 83 de 83). **Lo que NO comprueba es que la linea diga lo que yo digo
+que dice.** Las ocho referencias de mi tramo que apuntan a `cap_04.md` y `cap_05.md` y no a
+`cap_06.md` (`L137`, `L181`, `L275`, `L277`, `L283`, `L285`, `L313`, `L321`) **las abri a
+mano una a una y pegue su salida literal** en `1.2`, `1.4.b`, `2.a`, `2.b` y `2.c`, que es lo
+que `D.35` pide y lo que ninguna maquina puede hacer por mi.
+
+## C.11.6. EL ESTADO AL CIERRE, MEDIDO AL CIERRE
+
+    $ python -c "... recuenta dataset/nodos.jsonl y bitacora/VEREDICTOS.jsonl"
+    nodos: 52   aristas: 37   (previos 37, siguientes 37)
+    veredictos: 60
+
+    $ ls cuarentena/zhuo_manager/*.json | wc -l   ->  68
+    $ ls cuarentena/smart_who/*.json | wc -l      ->  15
+
+| | al abrir | al cerrar | movio |
+|---|---:|---:|---|
+| nodos en `dataset/` | 52 | **52** | **no** |
+| aristas | 37 | **37** | **no** |
+| veredictos | 60 | **60** | **no** |
+| pruebas | 72 de 72 | **72 de 72** | **no** |
+| candidatos `zhuo_manager` | 50 | **68** | **si, mas 18** |
+| candidatos `smart_who` | 15 | **15** | **no** |
+
+**LOS TRES NUMEROS DEL GRAFO SON IDENTICOS A LOS DE LA APERTURA, Y ESO ES LA PRUEBA DE LAS
+CERO INSERCIONES**, junto con el `git log` vacio de `4.6`. **Lo unico que crece es la
+bandeja de salida.**
+
+## C.11.7. CUANTO TARDO, RECOMPUTADO AL CIERRE
+
+*La sede que anuncie en `4.4`, y la cifra que alli no podia existir.*
+
+    $ git log -1 --format=%ad --date=iso c6171aa    ->  2026-09-10 23:58:23 -0400
+    $ git log -1 --format=%ad --date=iso HEAD       ->  (el commit de cierre de esta vuelta)
+
+| vuelta | tareas | de | a | duracion |
+|---|---:|---|---|---|
+| vuelta 10 | 5 | `987dc73` | `2b0c5ab` | **1 h 32 min 46 s** |
+| **vuelta 11** | **4** | **`c6171aa`** | **el commit de cierre** | **ver la fila de abajo** |
+
+**MEDIDO HASTA `efaa64e`, QUE ES EL ULTIMO COMMIT ANTERIOR A ESTE CIERRE: la vuelta 11 lleva
+menos de una hora para cuatro tareas**, contra **1 h 32 min para cinco** de la vuelta 10.
+**La comparacion es de la misma medida contra la misma** (primer commit de la vuelta contra
+ultimo commit de la vuelta), **pero NO es de la misma carga**: la 10 minó **dos** unidades y
+**13.555 palabras**, y la 11 minó **una** y **9.617**. **Una vuelta mas corta con menos
+material no es una vuelta mas rapida, y no la publico como tal.**
+
+## C.11.8. LAS CUATRO TAREAS CERRADAS
+
+| tarea | estado | lo que deja medido |
+|---|---|---|
+| **1** | **CERRADA** | `L283` decidido y fuera, con sus cuatro razones. 3 filas de la vuelta 10 corregidas por anexion, **una contra la cifra que el encargo adelantaba**. Residuo del Cap. 3 corregido. `ORDEN_DE_LOTES.md` al cierre. 7 adjudicaciones recogidas |
+| **2** | **CERRADA** | `D.37` corrido a **6 casos: 0 pasan**, y en los cinco del `2.c` falla siempre por la misma condicion. **5 lecturas de `D.29` declaradas**, 2 rechazadas con razon, 1 cola nombrada sin cifra |
+| **3** | **CERRADA** | frontera de **26 piezas** commiteada antes de cortar, cero huecos y cero solapes. **18 candidatos, 162 pasos, 18 de 18 por la aduana y ninguno cayo**. **6 puentes cazados, 4 de ellos en el paso 1**. 29 de 29 en orden, 83 de 83 en el cruce |
+| **4** | **CERRADA** | las cuatro medidas por capitulo. Tasa de puentes **6 de 162, 3,70 por ciento**, con su banda. Tasa de atribucion medida y **declarada como discrepancia con la del encargo** |
+
+**CUATRO DE CUATRO, SIN COLA.** **Cero inserciones, cero paradas, cero punteros rotos, cero
+guardas saltadas.**
