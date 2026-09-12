@@ -20522,7 +20522,7 @@ estado intermedio y se cita como tal.*
 |---:|---|---|
 | 1 | los registros: `ACTA 16` entera, mis cuatro cifras remedidas, cinco correcciones del auditor | **CERRADA** (`L.2`) |
 | 2 | el campo `arista` que miente en `bitacora/VEREDICTOS.jsonl` | **CERRADA** (`L.3`) |
-| 3 | el nodo que se le debe a `cap_05` y las cuatro colas de arista | PENDIENTE |
+| 3 | el nodo que se le debe a `cap_05` y las cuatro colas de arista | **CERRADA** (`L.4`) |
 | 4 | lote 4, `cap_07` a `cap_10`, los que quepan enteros | PENDIENTE |
 
 ---
@@ -20916,4 +20916,241 @@ ningun veredicto, ninguna razon, ninguna clase y ninguna huella**: se anota un c
 derivado cuya verdad **se lee del grafo**, por orden expresa del encargo y con el principio
 6 citado. **Y no va a mano, va por operacion escrita con simulacion.** Lo declaro porque lo
 mire dos veces antes de escribir, no porque dude del resultado.
+
+---
+
+## L.4. TAREA 3: EL NODO QUE SE LE DEBE A `cap_05`, Y LAS CUATRO COLAS DE ARISTA. **CERRADA**
+
+### L.4.a. LA PIEZA 12 DE `cap_05`, RELEIDA, Y LA SALIDA CONTRARIA CONTESTADA PRIMERO
+
+*El acta deja las dos salidas escritas y dice que la que no vale es no volver a mirarlo.
+**Miro primero la contraria**, porque si esa se sostiene no hay nodo que escribir.*
+
+**LA SALIDA CONTRARIA ERA ESTA:** *si esos cuatro actos son posiciones sobre los dos ejes
+del marco, ya viven en `desplegar_marco_franqueza_radical`.* **La compruebo abriendo ese
+candidato entero, que es lo unico que decide:**
+
+    $ python (cuarentena/scott_radical_candor/desplegar_marco_franqueza_radical.json)
+    activacion: Cuando estas desplegando la franqueza radical en tu equipo y crees que
+                puede haber confusion sobre lo que significa.
+    P1 Usa la version nueva del marco ...        P6 Usa el marco como una brujula ...
+    P2 Recorta el marco del propio libro ...     P7 No lo uses como test de personalidad ...
+    P3 Haz fotocopias.                           P8 No escribas nombres en las casillas.
+    P4 Ponlas en tu nevera ...                   P9 todos caemos en cada cuadrante ...
+    P5 Comparte copias con tus colegas.
+
+> ### **LA SALIDA CONTRARIA NO SE SOSTIENE, Y SE VE SIN INTERPRETAR NADA: LOS NUEVE PASOS DE ESE NODO SON RECORTAR, FOTOCOPIAR, COLGAR, REPARTIR, USAR DE BRUJULA Y DOS PROHIBICIONES DE USO. NINGUNO DICE QUE HACER CUANDO YA TE PORTASTE MAL Y TE LO DIJERON.**
+>
+> Ese nodo procedimenta **el objeto** (el cartel) y no **la situacion**. Y la prueba mas
+> barata es la activacion: la suya arranca *cuando estas desplegando la franqueza radical y
+> crees que puede haber confusion*; la de la pieza 12 arranca *cuando te has portado mal,
+> te lo han dicho y vas a disculparte*. **No es el mismo sitio de partida**, y esa es
+> justamente la vara que acabo de recoger en `L.2.a` fila 2.
+
+**ASI QUE ESCRIBO EL CANDIDATO.** Y aplico `D.27` con sus tres restricciones delante, que
+es lo que el acta pide, **con la linea impresa antes de decidir** (`D.35`):
+
+    $ awk 'NR>=181 && NR<=187' fuentes/scott_radical_candor/cap_05.md
+    L181: The false apology
+    L183: Let's go back to my obnoxiously aggressive email to Larry Page. After it went
+          out, a couple of people called me up and asked me why the hell I'd sent it. I
+          realized I'd been unbelievably rude, and I felt ashamed and a little scared.
+    L185: I still didn't understand why my assessment of Larry's new policy was wrong, but
+          now I was more concerned with keeping my job. So the next time I saw Larry, I
+          stopped him and said, "I'm sorry about that email, Larry. I know you are right."
+          Now, there would have been nothing wrong with apologizing for the tone I'd
+          taken, but instead, without explanation, I abruptly reversed my intellectual
+          position. My insincerity was obvious, and it was exactly the wrong move.
+    L187: When you behave badly and get called out for it, an all-too-natural response is
+          to become less genuine and more political to move from Obnoxious Aggression to a
+          worse place, Manipulative Insincerity. It would've been better to have said
+          nothing than to move in the wrong direction on the "challenge directly" axis.
+          Better yet to have moved up on the care personally axis to have taken the
+          trouble to understand Larry's thinking and then come up with a solution that
+          addressed his concerns and mine. In that context, admitting that I had behaved
+          badly would probably have been better received.
+
+| lo que `D.27` pide | lo que hay, leido por mi |
+|---|---|
+| inventario de **MEDIOS, ETAPAS U OBJETOS** puesto por el libro | **si**: no decir nada, subir por el eje de cuidar personalmente, entender el pensamiento del otro, buscar una solucion que atienda las dos partes, admitir que te portaste mal. Y `L185` aniade **dos mas** que el acta no cuenta: **disculparse por el TONO** (el texto dice que no habria tenido nada de malo) y **no invertir de golpe la posicion intelectual sin explicacion** |
+| restriccion 1: **ni metas ni fines** | **no aplica.** Son siete actos que alguien ejecuta |
+| restriccion 2: **adjetivo de adecuacion en el sitio del criterio** | **no lo hay.** El criterio no es *una disculpa apropiada*: son dos ejes nombrados y un orden |
+| restriccion 3: **no mueve la vara de continua contra repite** | **no la mueve.** No estoy adjudicando ningun par |
+| *existe quien lo ejecuta* | **si**: quien acaba de portarse mal y se lo han dicho |
+
+> ### **Y AÑADO LO QUE MI LECTURA VE Y LA DEL ACTA NO, PORQUE ES UN HECHO NUEVO Y `EXTRACTOR.md` 5 ME OBLIGA A TRAERLO CON SU MEDIDA EN VEZ DE RESOLVERLO COPIANDO**
+>
+> El acta cuenta **CUATRO actos** y los saca todos de `:187`. **Yo cuento SIETE, y los dos
+> que faltan estan en `:185`, que el acta imprime pero no inventaria**: *there would have
+> been nothing wrong with apologizing for the tone I'd taken* y *without explanation, I
+> abruptly reversed my intellectual position ... it was exactly the wrong move.*
+>
+> **NO REABRO LA ADJUDICACION: LA CONFIRMO CON MAS MATERIAL DEL QUE TENIA.** El acta
+> adjudica que se le debe un nodo y mi lectura dice lo mismo **con un inventario mas
+> ancho**, que es el sentido en el que un hecho nuevo puede aparecer sin que nadie pierda
+> nada. **Y hace la pieza MENOS discutible, no mas**, porque `:185` es la unica linea del
+> tramo que dice con todas sus letras cual fue **la jugada equivocada**.
+
+### L.4.b. EL CANDIDATO, Y SU RELECTURA `D.30` **DENTRO DEL ACTO DE ESCRIBIRLO**
+
+`cuarentena/scott_radical_candor/reparar_mal_comportamiento_evitar_disculpa_falsa.json`
+
+**EL ID, ESCRITO CON LA LISTA DELANTE** (`EXTRACTOR.md` 15, y la regla 3 me ha mordido tres
+veces en dos capitulos): `reparar` / `mal` / `comportamiento` / `evitar` / `disculpa` /
+`falsa`. **Ninguna en `PALABRAS_VACIAS`** (`sed -n '16,21p' src/reglas_id.py`: `a`, `al`,
+`ante`, `bajo`, `con`, `contra`, `de`, `del`, `desde`, `durante`, `el`, `en`, `entre`,
+`hacia`, `hasta`, `la`, `las`, `lo`, `los`, `mediante`, `para`, `por`, `que`, `segun`,
+`sin`, `so`, `sobre`, `tras`, `un`, `una`, `unas`, `unos`, `y`, `o`, `u`, `e`). **Ninguna
+inglesa, ningun numero de version, verbo mas objeto, `snake_case` sin acentos. Cero caidas
+de guarda en esta pieza.**
+
+**LA RELECTURA DE FIDELIDAD, PASO A PASO CONTRA SU LINEA, CON EL NUMERADOR Y EL
+DENOMINADOR SEPARADOS:**
+
+| paso | linea | la marca |
+|---|---:|---|
+| P1 la respuesta que sale sola es volverte menos genuino y mas politico, de la agresion odiosa a la insinceridad manipuladora | **L187** | **TRANSCRIPCION** |
+| P2 separa el tono de la posicion: no habria habido nada malo en disculparse por el tono | **L185** | **TRANSCRIPCION** |
+| P3 no inviertas de golpe tu posicion intelectual y sin explicacion | **L185** | **TRANSCRIPCION DE CASO**, con el caso nombrado dentro del paso (*en el caso de la autora esa fue exactamente la jugada equivocada*) |
+| P4 si lo unico que se te ocurre te mueve en la direccion equivocada del eje desafiar directamente, callate | **L187** | **TRANSCRIPCION** |
+| P5 mejor todavia, sube por el eje de cuidar personalmente | **L187** | **TRANSCRIPCION** |
+| P6 tomate la molestia de entender el pensamiento del otro | **L187** | **TRANSCRIPCION DE CASO** (*en el caso de la autora, el pensamiento de Larry*) |
+| P7 busca despues una solucion que atienda las preocupaciones del otro y las tuyas | **L187** | **TRANSCRIPCION** |
+| P8 admite solo en ese contexto que te portaste mal | **L187** | **TRANSCRIPCION** |
+
+| | |
+|---|---:|
+| **denominador** | **8 pasos** |
+| **numerador (PUENTES)** | **0** |
+| tasa de la pieza | **0,00** |
+
+**EL PASO QUE MAS MIRE, Y LO DIGO PORQUE ES LA ESPECIE QUE ESTA CASA PAGA CARA: el P2.**
+Junta dos mitades de `:185` y **el puente de ESTRUCTURA tiene las dos mitades bien citadas
+y la juntura puesta por el lector** (es la leccion de la vuelta 15, recogida en la 16).
+**Aqui la juntura es del libro y es literal:** `:185` escribe *there would have been nothing
+wrong with apologizing for the tone I'd taken, **but instead**, without explanation, I
+abruptly reversed my intellectual position*. **El `but instead` es la juntura, y la escribio
+Scott.** Si no estuviera, el P2 seria puente y lo habria retirado.
+
+**Y EL CASO DE LARRY VA NOMBRADO DENTRO DE LOS PASOS QUE LO USAN** (P3 y P6), que es la
+condicion con la que `TRANSCRIPCION DE CASO` se admitio, **y no va en el entregable**, que
+es la señal barata de que se hizo mal (`EXTRACTOR.md` 9).
+
+**LA ADUANA, EN EL MISMO ACTO DE ESCRIBIRLO** (`EXTRACTOR.md` 16):
+
+    $ python forja.py informe cuarentena/scott_radical_candor/reparar_mal_comportamiento_evitar_disculpa_falsa.json
+    candidatos revisados        : 1
+    nodos en el grafo de destino: 203
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+    [ENTRARIA] reparar_mal_comportamiento_evitar_disculpa_falsa
+
+**VERDE AL PRIMER INTENTO Y SIN UN SOLO VECINO.** Y eso **no lo publico como merito: lo
+publico como `D.19` por decimosexta vez seguida**, que es lo que `EXTRACTOR.md` 11 manda
+leer de una cola vacia. **Un candidato con la cola vacia esta certificado como SIN GEMELO,
+no como SIN MADRE**, asi que la busco yo.
+
+**LA BUSQUE Y NO LA ENCONTRE, Y ESCRIBO POR QUE, QUE ES LO QUE DEJA COMPROBARLO:**
+
+| madre posible | por que **no** |
+|---|---|
+| `empezar_cultura_franqueza_radical` (la cabeza de `cap_05`) | su P6 nombra *la frontera peligrosa entre la franqueza radical y la agresion odiosa*, que es **donde no cruzar**. Esta pieza es **que hacer una vez cruzaste y te lo dijeron**. Y la activacion lo separa: la cabeza arranca *cuando vas a poner en marcha una cultura*; esta arranca *cuando te has portado mal y te lo han dicho*. **Un hijo empieza dentro de la madre, no a su lado** |
+| `desplegar_marco_franqueza_radical` | contestado entero en `L.4.a`: procedimenta el cartel, no la situacion |
+| `manejar_enfado_persona_desafiada` | es **el reverso exacto**: alli el otro esta enfadado contigo y tu critica era buena; aqui el que se porto mal eres tu. **Ni madre ni gemelo: son las dos caras y ninguna despliega a la otra** |
+
+> **VEREDICTO DE LECTURA: SIN MADRE Y SIN GEMELO, con razon escrita.** No va a
+> `bitacora/VEREDICTOS.jsonl` **porque no hay sede**: la aduana escribe la linea al
+> insertar, y **el lote 4 esta ABIERTO** (`D.39`). **Es la quinta lectura sin sede que
+> traigo**, y se cuenta en el cierre en vez de inventarle un sitio, que es lo que el
+> encargo prohibe expresamente.
+
+### L.4.c. **LA CUENTA DE `cap_05` SE MUEVE, Y LA DECLARO AL LADO SIN REESCRIBIR LA CIFRA FIRMADA**
+
+*El acta avisa de esto con estas palabras: **mueve el denominador de `cap_05` y por tanto
+su tasa; declaralo al lado sin reescribir la cifra firmada.** Es lo que hice con `cap_04`
+en la vuelta 16 y lo repito igual.*
+
+    $ python (git show --name-status e65991d, ficheros de cuarentena, y su cuenta de pasos)
+    cap_05, commit e65991d: 7 ficheros, 68 pasos
+    el nodo nuevo         : 8 pasos
+    cap_05 al cerrar hoy  : 8 ficheros, 76 pasos
+    bandeja entera        : 26 ficheros, 257 pasos
+
+| `cap_05` | numerador | denominador | tasa |
+|---|---:|---:|---:|
+| **como lo firmo la `ACTA 16` 4.3** | 2 | **68** | **2,94** |
+| **al cerrar esta vuelta**, con la pieza 12 dentro | 2 | **76** | **2,63** |
+
+**LA CIFRA FIRMADA NO SE TOCA Y LA NUEVA VA AL LADO.** El numerador **no se mueve** porque
+la pieza 12 sale con **0 puentes**; lo unico que crece es el denominador, y **una tasa que
+baja porque el denominador crece no es una mejora de la mano**, que es la misma cautela que
+el acta puso sobre el cero de `cap_06`. **Quien firme la tasa nueva es el auditor, no yo.**
+
+### L.4.d. LAS CUATRO COLAS DE ARISTA, **CADA UNA EN SU BLOQUE TITULADO** (`D.29`)
+
+*El encargo manda que vivan en bloque propio y titulado **cada vuelta hasta que se puedan
+escribir**. **Ninguna de las cuatro se puede escribir hoy**, y el motivo es el mismo en las
+cuatro: `D.29` pide que los dos extremos vivan en el grafo, y **el lote 4 esta ABIERTO**.*
+
+#### **COLA 1. LAS TRES RESPONSABILIDADES**
+
+| | |
+|---|---|
+| **madre** | `revisar_ciclo_responsabilidades_relaciones`, **P3** |
+| **hijos** | las cabezas de `cap_05`, `cap_06` y `cap_07` |
+| **estado hoy** | `empezar_cultura_franqueza_radical` y `cambiar_potencial_trayectoria_crecimiento` **existen, en cuarentena**; **la madre tambien esta en cuarentena**; el tercer hijo sale de `cap_07`, que es la TAREA 4 |
+| **por que hoy no** | **la madre no vive en el grafo.** No es que falte el tercer hijo: aunque estuvieran los tres, la arista no se puede declarar |
+| **lo que esta vuelta aporta** | **el candidato a CABEZA de `cap_07` queda nombrado en `L.5`**, que es lo que el punto 7 del encargo pide para que el dia de la insercion no haya que releer nada |
+
+#### **COLA 2. LA PRIMERA ARISTA ENTRE DOS LIBROS**
+
+| | |
+|---|---|
+| **madre** | `gestionar_personas_equipo`, **P2** (Zhuo, **en el grafo**) |
+| **hijo** | `desplegar_marco_franqueza_radical` (Scott, bandeja) |
+| **estado hoy** | adjudicada **admisible** en `ACTA 15` 3.4. **La madre si vive**; el hijo no |
+| **por que hoy no** | el hijo vive en cuarentena de un lote **ABIERTO**. El encargo lo dice con todas sus letras: **no la estrenes antes** |
+| **medida que la acompania** | `ACTA 16` 1.2 midio **0 aristas que cruzan de libro** sobre las 79. **Sigue en 0 al cerrar esta vuelta**, y lo recompruebo en `L.6` |
+
+#### **COLA 3. LA CABEZA DE `cap_05` Y SUS TRES PARTES**
+
+| | |
+|---|---|
+| **madre** | `empezar_cultura_franqueza_radical`, **P3, P5 y P6** |
+| **hijos** | `pedir_critica_equipo_premiarla` (P3), `elogiar_trabajo_especifico_contexto` (P5), `criticar_trabajo_evitar_desanimo` (P6) |
+| **por que hoy no** | **los cuatro en cuarentena** |
+| **lo que esta vuelta aporta, y es un negativo medido** | **la pieza 12 que escribo hoy NO es una cuarta parte de esta cabeza.** Lo compruebo en `L.4.b`: ningun paso de la cabeza la nombra, y su activacion arranca en otro sitio. **Digo el negativo para que nadie lo cuente como cuarta arista el dia de la insercion** |
+
+#### **COLA 4. EL PAR QUE NINGUNA SEÑAL LEVANTA** (nueva, y la que mas corre)
+
+| | |
+|---|---|
+| **madre** | `repartir_tiempo_atencion_mejores_equipo` (Zhuo, **en el grafo**), **P3** |
+| **hijo** | `acompaniar_mejores_equipo_socio` (Scott, bandeja) |
+| **bajo** | **`D.29` con razon escrita**, no `D.37`: el texto no dice cuantas partes tiene |
+| **por que hoy no** | el hijo vive en cuarentena de un lote **ABIERTO** |
+| **la medida que la hace urgente** | el barrido del acta sobre la poblacion `D.38.4` de 391 titulos, leave one out: **`acompaniar_mejores_equipo_socio` SIN VECINOS, ninguna de las tres señales levanta nada.** Y el informe de carpeta de la `ACTA 16` 1.7 lo confirma con el instrumento de la casa: `[ENTRARIA]` **sin un solo vecino contra los 203** |
+
+> ### **LO QUE ADELANTO, QUE ES LO QUE EL ENCARGO PIDE ADELANTAR, Y LA LECTURA CON LA QUE LO SOSTENGO**
+>
+> **LA ARISTA SERA `repartir_tiempo_atencion_mejores_equipo` P3 a `acompaniar_mejores_equipo_socio`, bajo `D.29`, y mi lectura NO dice otra cosa.** La sostengo con la
+> misma vara que acabo de recoger en `L.2.a` fila 2, que es la de la activacion: el P3 de la
+> madre (*presta atencion al talento de arriba, a los que ya van bien y podrian ir todavia
+> mejor*) **es una linea**, y el candidato de Scott **empieza exactamente ahi y sigue**: el
+> marco socio contra jefe ausente contra microgestor, las consecuencias de ignorarlos y los
+> actos del socio. **Empieza DENTRO de la madre, no a su lado.**
+>
+> **Y LA CONSECUENCIA PRACTICA, QUE ES LA UNICA RAZON POR LA QUE ESTO SE REPITE CADA
+> VUELTA: el dia que el lote 4 entre, la aduana NO va a levantar este par.** Si no esta
+> escrito antes, **entra al grafo con dos pasos gemelos y sin que nadie lo lea.** Por eso va
+> en bloque titulado y por eso lo vuelvo a escribir hasta que se pueda declarar.
+
+> ## **LAS CUATRO SIGUEN VIVAS Y LAS CUATRO SIGUEN SIN PODER ESCRIBIRSE. NO ES PARADA: EL ENCARGO LO DICE EXPRESAMENTE EN SU LISTA DE NO PARADAS.**
+>
+> **Y LAS CUATRO SE DESBLOQUEAN CON EL MISMO ACTO: EL CIERRE DEL LOTE 4.** Tres de ellas
+> (1, 2 y 4) tienen **la madre o el hijo ya en su sitio** y esperan solo al otro extremo.
+> **La cola 2 y la cola 4 esperan las dos al mismo hijo**, que es un candidato de la bandeja,
+> y **la cola 1 espera a su madre**, que tambien lo es.
 
