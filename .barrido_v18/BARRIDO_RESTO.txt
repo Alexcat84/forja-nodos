@@ -1,0 +1,209 @@
+### explicar_idea_facil_comprender_oyente   (contra 415 titulos)
+
+[BLOQUEARIA] explicar_idea_facil_comprender_oyente   (explicar_idea_facil_comprender_oyente.json)
+    vecino compartir_logica_mostrar_razonamiento  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.466
+      paso 4 del candidato contra paso 3 de compartir_logica_mostrar_razonamiento
+
+### fijar_fecha_cierre_debate_equipo   (contra 415 titulos)
+
+[BLOQUEARIA] fijar_fecha_cierre_debate_equipo   (fijar_fecha_cierre_debate_equipo.json)
+    vecino facilidad_supervision_franquicia  [levantada por: paso_contra_nodo]
+      similitud_texto 0.160 | familia_id 0.000 | paso_contra_nodo 0.662
+      paso 2 del candidato contra paso 4 de facilidad_supervision_franquicia
+    vecino explicar_idea_facil_comprender_oyente  [levantada por: paso_contra_nodo]
+      similitud_texto 0.309 | familia_id 0.000 | paso_contra_nodo 0.610
+      paso 6 del candidato contra paso 2 de explicar_idea_facil_comprender_oyente
+    vecino centrar_debate_ideas_fuera_egos  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.111 | paso_contra_nodo 0.551
+      paso 6 del candidato contra paso 6 de centrar_debate_ideas_fuera_egos
+    vecino abrir_debate_humor_explicar_proposito  [levantada por: similitud_texto]
+      similitud_texto 0.367 | familia_id 0.111 | paso_contra_nodo 0.468
+      paso 6 del candidato contra paso 1 de abrir_debate_humor_explicar_proposito
+
+### mantener_manos_trabajo_real_equipo   (contra 415 titulos)
+
+[BLOQUEARIA] mantener_manos_trabajo_real_equipo   (mantener_manos_trabajo_real_equipo.json)
+    vecino compartir_logica_mostrar_razonamiento  [levantada por: similitud_texto]
+      similitud_texto 0.362 | familia_id 0.000 | paso_contra_nodo 0.512
+      paso 8 del candidato contra paso 3 de compartir_logica_mostrar_razonamiento
+    vecino cambiar_posicion_hechos_explicar_cambio  [levantada por: similitud_texto]
+      similitud_texto 0.381 | familia_id 0.000 | paso_contra_nodo 0.491
+      paso 1 del candidato contra paso 1 de cambiar_posicion_hechos_explicar_cambio
+    vecino abrir_debate_humor_explicar_proposito  [levantada por: similitud_texto]
+      similitud_texto 0.385 | familia_id 0.000 | paso_contra_nodo 0.427
+      paso 8 del candidato contra paso 5 de abrir_debate_humor_explicar_proposito
+    vecino proteger_tiempo_equipo_jefe  [levantada por: similitud_texto]
+      similitud_texto 0.404 | familia_id 0.125 | paso_contra_nodo 0.422
+      paso 4 del candidato contra paso 1 de proteger_tiempo_equipo_jefe
+    vecino parar_debate_emocion_agotamiento  [levantada por: similitud_texto]
+      similitud_texto 0.377 | familia_id 0.000 | paso_contra_nodo 0.404
+      paso 6 del candidato contra paso 2 de parar_debate_emocion_agotamiento
+    vecino pedir_hechos_decision_evitar_recomendaciones  [levantada por: similitud_texto]
+      similitud_texto 0.373 | familia_id 0.000 | paso_contra_nodo 0.387
+      paso 1 del candidato contra paso 2 de pedir_hechos_decision_evitar_recomendaciones
+    vecino cuidarse_agotamiento_centro_rueda  [levantada por: similitud_texto]
+      similitud_texto 0.369 | familia_id 0.000 | paso_contra_nodo 0.380
+      paso 1 del candidato contra paso 4 de cuidarse_agotamiento_centro_rueda
+    vecino crear_obligacion_disentir_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.360 | familia_id 0.125 | paso_contra_nodo 0.373
+      paso 4 del candidato contra paso 3 de crear_obligacion_disentir_equipo
+
+### minimizar_impuesto_colaboracion_equipo   (contra 415 titulos)
+
+[BLOQUEARIA] minimizar_impuesto_colaboracion_equipo   (minimizar_impuesto_colaboracion_equipo.json)
+    vecino aprender_resultados_vencer_dos_presiones  [levantada por: similitud_texto]
+      similitud_texto 0.501 | familia_id 0.000 | paso_contra_nodo 0.431
+      paso 4 del candidato contra paso 6 de aprender_resultados_vencer_dos_presiones
+    vecino abrir_debate_humor_explicar_proposito  [levantada por: similitud_texto]
+      similitud_texto 0.380 | familia_id 0.000 | paso_contra_nodo 0.471
+      paso 1 del candidato contra paso 4 de abrir_debate_humor_explicar_proposito
+    vecino cuidarse_agotamiento_centro_rueda  [levantada por: similitud_texto]
+      similitud_texto 0.377 | familia_id 0.000 | paso_contra_nodo 0.449
+      paso 2 del candidato contra paso 3 de cuidarse_agotamiento_centro_rueda
+    vecino compartir_logica_mostrar_razonamiento  [levantada por: similitud_texto]
+      similitud_texto 0.381 | familia_id 0.000 | paso_contra_nodo 0.439
+      paso 4 del candidato contra paso 4 de compartir_logica_mostrar_razonamiento
+    vecino cambiar_posicion_hechos_explicar_cambio  [levantada por: similitud_texto]
+      similitud_texto 0.360 | familia_id 0.000 | paso_contra_nodo 0.419
+      paso 2 del candidato contra paso 1 de cambiar_posicion_hechos_explicar_cambio
+    vecino proteger_tiempo_equipo_jefe  [levantada por: similitud_texto]
+      similitud_texto 0.388 | familia_id 0.143 | paso_contra_nodo 0.417
+      paso 1 del candidato contra paso 5 de proteger_tiempo_equipo_jefe
+    vecino centrar_debate_ideas_fuera_egos  [levantada por: similitud_texto]
+      similitud_texto 0.369 | familia_id 0.000 | paso_contra_nodo 0.414
+      paso 2 del candidato contra paso 9 de centrar_debate_ideas_fuera_egos
+    vecino parar_debate_emocion_agotamiento  [levantada por: similitud_texto]
+      similitud_texto 0.388 | familia_id 0.000 | paso_contra_nodo 0.370
+      paso 1 del candidato contra paso 1 de parar_debate_emocion_agotamiento
+
+### parar_debate_emocion_agotamiento   (contra 415 titulos)
+
+[BLOQUEARIA] parar_debate_emocion_agotamiento   (parar_debate_emocion_agotamiento.json)
+    vecino pedir_hechos_decision_evitar_recomendaciones  [levantada por: similitud_texto]
+      similitud_texto 0.476 | familia_id 0.000 | paso_contra_nodo 0.445
+      paso 1 del candidato contra paso 1 de pedir_hechos_decision_evitar_recomendaciones
+    vecino abrir_debate_humor_explicar_proposito  [levantada por: similitud_texto]
+      similitud_texto 0.385 | familia_id 0.125 | paso_contra_nodo 0.472
+      paso 1 del candidato contra paso 1 de abrir_debate_humor_explicar_proposito
+    vecino crear_obligacion_disentir_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.405 | familia_id 0.000 | paso_contra_nodo 0.465
+      paso 4 del candidato contra paso 2 de crear_obligacion_disentir_equipo
+    vecino compartir_logica_mostrar_razonamiento  [levantada por: similitud_texto]
+      similitud_texto 0.369 | familia_id 0.000 | paso_contra_nodo 0.430
+      paso 1 del candidato contra paso 4 de compartir_logica_mostrar_razonamiento
+    vecino cambiar_posicion_hechos_explicar_cambio  [levantada por: similitud_texto]
+      similitud_texto 0.381 | familia_id 0.000 | paso_contra_nodo 0.417
+      paso 3 del candidato contra paso 6 de cambiar_posicion_hechos_explicar_cambio
+    vecino proteger_tiempo_equipo_jefe  [levantada por: similitud_texto]
+      similitud_texto 0.367 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 5 del candidato contra paso 6 de proteger_tiempo_equipo_jefe
+    vecino reservar_calendario_tiempo_ejecutar  [levantada por: similitud_texto]
+      similitud_texto 0.403 | familia_id 0.000 | paso_contra_nodo 0.380
+      paso 1 del candidato contra paso 4 de reservar_calendario_tiempo_ejecutar
+    vecino minimizar_impuesto_colaboracion_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.391 | familia_id 0.000 | paso_contra_nodo 0.378
+      paso 2 del candidato contra paso 2 de minimizar_impuesto_colaboracion_equipo
+    vecino centrar_debate_ideas_fuera_egos  [levantada por: similitud_texto]
+      similitud_texto 0.359 | familia_id 0.125 | paso_contra_nodo 0.377
+      paso 5 del candidato contra paso 6 de centrar_debate_ideas_fuera_egos
+
+### pedir_hechos_decision_evitar_recomendaciones   (contra 415 titulos)
+
+[BLOQUEARIA] pedir_hechos_decision_evitar_recomendaciones   (pedir_hechos_decision_evitar_recomendaciones.json)
+    vecino parar_debate_emocion_agotamiento  [levantada por: similitud_texto]
+      similitud_texto 0.472 | familia_id 0.000 | paso_contra_nodo 0.405
+      paso 1 del candidato contra paso 1 de parar_debate_emocion_agotamiento
+    vecino cambiar_posicion_hechos_explicar_cambio  [levantada por: similitud_texto]
+      similitud_texto 0.386 | familia_id 0.111 | paso_contra_nodo 0.470
+      paso 4 del candidato contra paso 2 de cambiar_posicion_hechos_explicar_cambio
+    vecino abrir_debate_humor_explicar_proposito  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.467
+      paso 2 del candidato contra paso 7 de abrir_debate_humor_explicar_proposito
+    vecino compartir_logica_mostrar_razonamiento  [levantada por: similitud_texto]
+      similitud_texto 0.389 | familia_id 0.000 | paso_contra_nodo 0.462
+      paso 1 del candidato contra paso 4 de compartir_logica_mostrar_razonamiento
+    vecino crear_obligacion_disentir_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.456 | familia_id 0.000 | paso_contra_nodo 0.458
+      paso 2 del candidato contra paso 1 de crear_obligacion_disentir_equipo
+    vecino mantener_manos_trabajo_real_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.375 | familia_id 0.000 | paso_contra_nodo 0.416
+      paso 4 del candidato contra paso 8 de mantener_manos_trabajo_real_equipo
+    vecino aprender_resultados_vencer_dos_presiones  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.388
+      paso 3 del candidato contra paso 1 de aprender_resultados_vencer_dos_presiones
+
+### persuadir_emocion_oyente_no_propia   (contra 415 titulos)
+
+[BLOQUEARIA] persuadir_emocion_oyente_no_propia   (persuadir_emocion_oyente_no_propia.json)
+    vecino explicar_idea_facil_comprender_oyente  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.111 | paso_contra_nodo 0.504
+      paso 1 del candidato contra paso 3 de explicar_idea_facil_comprender_oyente
+    vecino escuchar_callado_equipo_tranquilizar_incomodo  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.000 | paso_contra_nodo 0.438
+      paso 3 del candidato contra paso 5 de escuchar_callado_equipo_tranquilizar_incomodo
+
+### proteger_tiempo_equipo_jefe   (contra 415 titulos)
+
+[BLOQUEARIA] proteger_tiempo_equipo_jefe   (proteger_tiempo_equipo_jefe.json)
+    vecino cuidarse_agotamiento_centro_rueda  [levantada por: similitud_texto]
+      similitud_texto 0.360 | familia_id 0.000 | paso_contra_nodo 0.489
+      paso 1 del candidato contra paso 2 de cuidarse_agotamiento_centro_rueda
+    vecino mantener_manos_trabajo_real_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.427 | familia_id 0.125 | paso_contra_nodo 0.452
+      paso 1 del candidato contra paso 4 de mantener_manos_trabajo_real_equipo
+    vecino cambiar_posicion_hechos_explicar_cambio  [levantada por: similitud_texto]
+      similitud_texto 0.376 | familia_id 0.000 | paso_contra_nodo 0.427
+      paso 5 del candidato contra paso 6 de cambiar_posicion_hechos_explicar_cambio
+    vecino reservar_calendario_tiempo_ejecutar  [levantada por: similitud_texto]
+      similitud_texto 0.423 | familia_id 0.143 | paso_contra_nodo 0.427
+      paso 3 del candidato contra paso 4 de reservar_calendario_tiempo_ejecutar
+    vecino parar_debate_emocion_agotamiento  [levantada por: similitud_texto]
+      similitud_texto 0.362 | familia_id 0.000 | paso_contra_nodo 0.417
+      paso 4 del candidato contra paso 2 de parar_debate_emocion_agotamiento
+    vecino pedir_hechos_decision_evitar_recomendaciones  [levantada por: similitud_texto]
+      similitud_texto 0.360 | familia_id 0.000 | paso_contra_nodo 0.410
+      paso 5 del candidato contra paso 2 de pedir_hechos_decision_evitar_recomendaciones
+    vecino centrar_debate_ideas_fuera_egos  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.407
+      paso 7 del candidato contra paso 7 de centrar_debate_ideas_fuera_egos
+    vecino compartir_logica_mostrar_razonamiento  [levantada por: similitud_texto]
+      similitud_texto 0.373 | familia_id 0.000 | paso_contra_nodo 0.407
+      paso 8 del candidato contra paso 2 de compartir_logica_mostrar_razonamiento
+    vecino minimizar_impuesto_colaboracion_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.375 | familia_id 0.143 | paso_contra_nodo 0.386
+      paso 5 del candidato contra paso 1 de minimizar_impuesto_colaboracion_equipo
+
+### recorrer_rueda_hacer_cosas_equipo   (contra 415 titulos)
+
+[ENTRARIA] recorrer_rueda_hacer_cosas_equipo   (recorrer_rueda_hacer_cosas_equipo.json)
+
+### repartir_decision_cercanos_hechos   (contra 415 titulos)
+
+[BLOQUEARIA] repartir_decision_cercanos_hechos   (repartir_decision_cercanos_hechos.json)
+    vecino centrar_debate_ideas_fuera_egos  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.000 | paso_contra_nodo 0.531
+      paso 6 del candidato contra paso 6 de centrar_debate_ideas_fuera_egos
+
+### reservar_calendario_tiempo_ejecutar   (contra 415 titulos)
+
+[BLOQUEARIA] reservar_calendario_tiempo_ejecutar   (reservar_calendario_tiempo_ejecutar.json)
+    vecino proteger_tiempo_equipo_jefe  [levantada por: similitud_texto]
+      similitud_texto 0.409 | familia_id 0.143 | paso_contra_nodo 0.465
+      paso 3 del candidato contra paso 6 de proteger_tiempo_equipo_jefe
+    vecino cambiar_posicion_hechos_explicar_cambio  [levantada por: similitud_texto]
+      similitud_texto 0.376 | familia_id 0.000 | paso_contra_nodo 0.448
+      paso 1 del candidato contra paso 1 de cambiar_posicion_hechos_explicar_cambio
+    vecino mantener_manos_trabajo_real_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.373 | familia_id 0.000 | paso_contra_nodo 0.444
+      paso 1 del candidato contra paso 1 de mantener_manos_trabajo_real_equipo
+    vecino parar_debate_emocion_agotamiento  [levantada por: similitud_texto]
+      similitud_texto 0.404 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 2 del candidato contra paso 3 de parar_debate_emocion_agotamiento
+    vecino reservar_tiempo_reflexion_metas  [levantada por: familia_id]
+      similitud_texto 0.177 | familia_id 0.333 | paso_contra_nodo 0.404
+      paso 2 del candidato contra paso 3 de reservar_tiempo_reflexion_metas
+    vecino crear_obligacion_disentir_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.388 | familia_id 0.000 | paso_contra_nodo 0.379
+      paso 4 del candidato contra paso 3 de crear_obligacion_disentir_equipo
+
