@@ -22756,3 +22756,190 @@ sumarlas en un total que no he corrido** (`K.11`).*
 | **donde cierra la vuelta** | **en `cap_08`**, con `cap_09` y `cap_10` declarados como cola |
 
 ---
+
+---
+
+# VUELTA 19, los registros de la ACTA 18, los dos arreglos de bandeja, y `cap_09` del lote 4 (`scott_radical_candor`)
+
+*Esqueleto abierto ANTES de la primera tarea (`EXTRACTOR.md` 3). Las filas se anexan al
+cerrarse cada tarea, no al final de la vuelta. **El encargo pone su propia precedencia y la
+respeto: la TAREA 1 es barata y va primera, la TAREA 2 es barata y cede si la 3 se come la
+vuelta, y la TAREA 3 manda, y dentro de ella manda el cierre.***
+
+## N.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION
+
+*`EXTRACTOR.md` 4: la apertura se mide antes de la primera operacion; lo de despues es estado
+intermedio y se cita como tal. **Estas siete se midieron con el arbol ya limpio**, es decir
+DESPUES del commit de pendientes que `EXTRACTOR.md` 1.1 manda hacer primero y ANTES de la
+primera linea de trabajo de la vuelta. **Lo digo porque el commit de pendientes movio el
+hash y no movio ninguna otra de las siete.***
+
+| medida | instrumento corrido en esta vuelta | valor al abrir |
+|---|---|---:|
+| nodos en el grafo | `wc -l < dataset/nodos.jsonl` | **203** |
+| veredictos en bitacora | `wc -l < bitacora/VEREDICTOS.jsonl` | **148** |
+| candidatos en cuarentena del lote 4 | `ls cuarentena/scott_radical_candor/*.json \| wc -l` | **63** |
+| lineas del reporte | `wc -l < docs/loop/REPORTE.md` | **22758** |
+| rama | `git rev-parse --abbrev-ref HEAD` | `extraccion-mundo-11` |
+| commit de apertura | `git rev-parse --short HEAD` | `308c0fe` |
+| fecha | `python -c "import datetime;print(datetime.date.today())"` | **2026-09-12** |
+
+**Y LA OCTAVA, QUE ES LA QUE MANDA SOBRE LO QUE ESTA VUELTA PUEDE HACER CON EL GRAFO:**
+
+    $ for d in cuarentena/*/; do echo "$d -> $(ls $d*.json 2>/dev/null | wc -l)"; done
+    cuarentena/_derivadas/            -> 2
+    cuarentena/_insertados/           -> 0
+    cuarentena/ensayo_referencia_163/ -> 163
+    cuarentena/onu_consumidor/        -> 0
+    cuarentena/scott_radical_candor/  -> 63
+    cuarentena/smart_who/             -> 0
+    cuarentena/zhuo_manager/          -> 0
+
+> ### **LA INSERCION LLEGA ABIERTA A ESTA VUELTA, Y AUN ASI NO SE INSERTA NADA. LA CIFRA DE ARRIBA ES LA RAZON ENTERA.**
+>
+> `MODO_INSERCION=insertar` es el default desde `D.39` y llega abierto a esta corrida. **Eso
+> no es barra libre:** `D.39` abre la insercion **de un lote CERRADO en extraccion cuyo
+> informe haya certificado el acta del auditor**.
+>
+> **El unico lote con candidatos esperando es el 4** (`scott_radical_candor`, **63** al
+> abrir), **y el lote 4 esta ABIERTO**: la bandeja de entrada tiene **15** unidades
+> (`ls fuentes/scott_radical_candor/ | wc -l` da `cap_00` a `cap_14`) y **quedan seis sin
+> minar**, `cap_09` a `cap_14`. **Una de esas seis es justamente la que esta vuelta encarga.**
+>
+> Los otros tres libros tienen la bandeja en **0** porque ya estan dentro.
+> **`ensayo_referencia_163` no es un lote: es el catalogo de control.**
+>
+> **METER CANDIDATOS DE UN LOTE ABIERTO ES UNA CAIDA DE DATO, NO UN ADELANTO**
+> (`EXTRACTOR.md` 15.7, `D.39` literal: *los candidatos de un lote ABIERTO se quedan en
+> cuarentena hasta que su lote cierre*). **Cero inserciones, cero veredictos nuevos en
+> `bitacora/`, y el grafo cierra donde abrio.** Lo escribo aqui arriba, como la vuelta 18,
+> para que no haya que buscarlo en el cierre.
+
+## N.1. LAS TRES TAREAS ENCARGADAS, Y SU ESTADO
+
+*Son tres y el tope son cinco (`EXTRACTOR.md` 1.3), asi que no hay cola por techo de tareas.*
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | los registros: la `ACTA 18` entera, sus cinco adjudicaciones, sus tres correcciones declaradas, y la cifra `9 + 7` que el auditor me pide medir a mi | ~~ABIERTA~~ **CERRADA** (`N.2`). **El reparto `9` mas `7` se puede medir y se publica** (`N.2.d`) |
+| 2 | los dos arreglos de bandeja antes de que el lote cierre: el desvio de atribucion de `integrar_trabajo_vida_mejor_version` `P4`, y los 24 candidatos que no nombran su `cap_NN` | **ABIERTA** |
+| 3 | el lote 4, **`cap_09` solo**, con la frontera publicada antes de cortar y su suma cruzada contra el cuerpo | **ABIERTA** |
+
+*Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
+
+---
+
+## N.2. TAREA 1: LOS REGISTROS, Y LAS CINCO ADJUDICACIONES DE LA `ACTA 18`. **CERRADA**
+
+### N.2.a. LA `ACTA 18`, LEIDA ENTERA Y SITUADA CON SU LINEA
+
+    $ grep -n "^# ACTA" docs/loop/ACTA_AUDITOR.md | tail -1
+    16581:# ACTA 18. VUELTA 18, lote 4 (scott_radical_candor), cap_08: la vuelta que cerro
+           donde debia, la errata de mi propio metodo, y una cifra falsa mia en la frontera
+    $ wc -l docs/loop/ACTA_AUDITOR.md
+    17295 docs/loop/ACTA_AUDITOR.md
+
+**LEIDA DE `L16581` A `L17295`, que son sus 715 lineas enteras**, con sus once secciones de
+la `0` a la `11`. **Cubre la vuelta 18 y solo la vuelta 18, y no hay hueco de acta.**
+
+### N.2.b. LAS CINCO ADJUDICACIONES, RECOGIDAS **SIN REABRIRLAS** (`1.a` del encargo)
+
+| # | que se adjudico | como la recojo |
+|---:|---|---|
+| **1** | la frontera de `cap_08`: **20 piezas, 13 dan nodo, 12 nodos, 7 no extraidas** | **RECOGIDA.** Es la cifra de la casa para `cap_08` y la que uso en toda cifra de esta vuelta que la nombre. **No la reabro** |
+| **2** | la errata de metodo de `D.38.4`: la poblacion es grafo mas bandejas **menos el propio candidato** | **RECOGIDA, Y COMPROBADA EN SEDE**, que es lo unico que `1.a` me deja hacer sin reabrirla: ver `N.2.c` |
+| **3** | **una lectura `SANO` sin sede es UN PAR** (candidato contra vecino) leido y clasificado cuya linea no ha podido escribirse | **RECOGIDA, Y ES LA RESPUESTA A MI PROPIA PREGUNTA DE `M.7.5`.** La aplico en `N.7` de esta vuelta y **no la vuelvo a subir como pendiente**, que es lo que el encargo prohibe expresamente |
+| **4** | mi cierre corto en `cap_08`: **bien cerrado por la LETRA de `12.4` punto 4**, no por extension | **RECOGIDA.** El techo de quince es **de la vuelta**, no del capitulo, y asi lo aplico hoy |
+| **5** | la sede del desvio de atribucion de `integrar_trabajo_vida_mejor_version` `P4`: **no es puente y no es caida**, pero **se corrige antes de insertar** | **RECOGIDA, y ejecutada en la TAREA 2** (`N.3.a`) |
+
+**NINGUN HECHO NUEVO CONTRA LAS CINCO.** No traigo ninguna a reapertura.
+
+### N.2.c. LAS TRES CORRECCIONES DECLARADAS, COMPROBADAS EN SU SEDE Y NO DE OIDAS
+
+*`EXTRACTOR.md` 5: una nota vieja o un acta previa no son fuente de una cifra nueva. Lo que
+hago aqui no es recalcular las tres, que serian reaperturas: es **comprobar que estan
+escritas donde el acta dice que estan**, porque eso si es medida mia.*
+
+    $ grep -n "D.38.4" docs/BANCO_DE_REGLAS.md
+    1426:### D.38.4. EL BARRIDO DE VECINOS DE LA APERTURA CIEGA SE HACE SOBRE GRAFO MAS BANDEJAS (11 sep 2026, decision del fundador)
+
+    $ sed -n '1467p' docs/BANCO_DE_REGLAS.md
+    1467:> ### **CORRECCION DECLARADA, 12 sep 2026, `ACTA 18` del auditor: UN NODO NO ES VECINO DE SI MISMO**
+
+| correccion | donde dice el acta que esta | **lo que mide mi comando** |
+|---|---|---|
+| **`D.38.4`**, la poblacion menos el propio candidato | `docs/BANCO_DE_REGLAS.md`, ya escrita por el auditor | **ESTA, en `L1426` y su bloque de correccion en `L1467`**, con el texto viejo intacto encima. **No la toco**, como el encargo manda |
+| **el `cinco` de la `ACTA 17` 6**, que eran **8** | `ACTA 18` seccion `4.6`, sin borrar alli | **ESTA.** Y con su tabla vuelta a vuelta: 4 de la 16, 4 de la 17, **8 al cerrar la `ACTA 17`**, mas 2 mias de la 18, **10** |
+| **las `18` piezas** de la apertura ciega sellada, que eran **20** | `ACTA 18` seccion `4.1` | **ESTA**, y con la salida del instrumento pegada: mi frontera deja `0` lineas sin cubrir y suma `6.140` palabras, la suya deja `3` lineas (`9`, `187`, `189`) y suma `6.129` |
+
+> **LAS DOS ULTIMAS VAN CONTRA EL PROPIO AUDITOR, Y LA SEGUNDA NACIO DE UNA PREGUNTA MIA.**
+> Lo anoto sin celebrarlo: `M.7.5` subio el `cinco` como pregunta **porque no se podia medir
+> sin un criterio de recuento**, y el acta hizo las dos cosas que faltaban, **escribir el
+> criterio y remedir con el**. Eso es `EXTRACTOR.md` 7 funcionando en los dos sentidos.
+
+### N.2.d. **LA CIFRA QUE EL AUDITOR ME PIDE MEDIR A MI: EL REPARTO `9` MAS `7`. SE PUEDE, Y CUADRA**
+
+*Encargo `1.d`: el auditor firma el total `16` y **no** el reparto, porque los dos candidatos
+del commit `6920050` no nombran su `cap_NN` en ningun campo. Me pide reconstruirlo contra
+`cap_01.md` y `cap_03.md` **leyendo**, o decir que no se puede. **Se puede, y lo publico con
+su medida.***
+
+**LOS DOS CANDIDATOS DEL COMMIT, CON SUS PASOS CONTADOS POR MI EN ESTA VUELTA:**
+
+    $ python (len(pasos_accionables) de los 2 ficheros dados de alta en 6920050)
+    desplegar_marco_franqueza_radical     9 pasos
+    repartir_semana_cuarenta_horas_jefe   7 pasos
+    total                                16 pasos     <- el 16 que el auditor firma
+
+**Y AHORA LA LECTURA QUE LOS ATRIBUYE, CON SU `sed` Y SU `grep` PEGADOS** (`D.35`):
+
+| candidato | linea que le da el cuerpo | **la salida, pegada** |
+|---|---|---|
+| `desplegar_marco_franqueza_radical` **P2 a P5** | `cap_01.md` **L35** | `35:...You can cut it right out of this book (see page 297 for a larger version), make photocopies, and put them on your refrigerator, over your desk, or anywhere for a reminder. You can also share copies with your colleagues.` |
+| `desplegar_marco_franqueza_radical` **P6 a P9** | `cap_01.md` **L37** | `37:Use THE RADICAL CANDOR Framework like a compass to guide individual conversations to a better place. Please do NOT use it as a personality test to judge yourself or others. Do not write names in boxes. We all fall into each quadrant multiple times a day.` |
+| `repartir_semana_cuarenta_horas_jefe` **P1 a P7** | `cap_03.md` **L17** | `17:As you read on, you might occasionally feel overwhelmed by the number of things I am suggesting you do as a manager. Take a deep breath. My goal is to save you time, not to litter your calendar with meetings... approximately ten hours a week... block out about fifteen hours a week... That leaves another fifteen hours in a forty-hour work week... deal with the unpredictable.` |
+
+*Las tres filas llevan la comilla tipografica y la contraccion del original normalizadas a
+grafia llana, **y no llevan un solo guion largo: lo comprobe antes de pegarlas**, que es lo
+que la guarda `guiones` exige de todo lo que yo escriba.*
+
+**Y EL NEGATIVO, QUE ES LO QUE CONVIERTE ESTO EN UNA MEDIDA Y NO EN UN PARECIDO:**
+
+    $ grep -c "ten hours" fuentes/scott_radical_candor/cap_01.md      ->  0
+    $ grep -c "photocopies" fuentes/scott_radical_candor/cap_03.md    ->  0
+    $ grep -ln "make photocopies" fuentes/scott_radical_candor/*.md   ->  cap_01.md   (UNO SOLO)
+    $ grep -ln "ten hours a week" fuentes/scott_radical_candor/*.md   ->  cap_03.md
+                                                                          cap_12.md
+
+**EL MARCO ESTA EN `cap_01` Y EN NINGUN OTRO SITIO DEL LIBRO: esa atribucion es unica.** La
+de las horas tiene **un rival, y lo abro en vez de ignorarlo**, porque una atribucion con dos
+candidatos que no se desempata no es una atribucion:
+
+    $ sed -n '51p' fuentes/scott_radical_candor/cap_12.md
+    51:That is a lot of things to do, but it is not as bad as it sounds. If you take every
+       suggestion recommended in this book, the total time required is about ten hours a week,
+       five of which are 1:1 m...
+    $ sed -n '4p' fuentes/scott_radical_candor/cap_12.md
+    unidad: Getting Started
+
+> **`cap_12` DA OTRO DESGLOSE: `diez horas, cinco de ellas de reuniones uno a uno`. EL
+> CANDIDATO NO TIENE NI UNA SOLA REUNION UNO A UNO EN SUS SIETE PASOS.** Lo que si tiene, y
+> en este orden, es **abrumado**, **respira hondo**, **ahorrarte tiempo y no llenarte el
+> calendario**, **diez horas**, **quince horas para pensar y ejecutar**, **otras quince de
+> una semana de cuarenta** y **lo imprevisible**: **los siete salen de `cap_03` `L17` y de esa
+> sola linea. `cap_12` `L51` no tiene ni las quince ni las cuarenta.**
+
+> ### **PUBLICADO CON SU MEDIDA: EL REPARTO ES `9` PARA `cap_01` Y `7` PARA `cap_03`, Y CUADRA CON EL `16` QUE EL AUDITOR FIRMA.**
+>
+> **LA CIFRA HEREDADA DE LA `ACTA 15` SE SOSTIENE.** No la copio: la vuelvo a levantar
+> leyendo las tres lineas del libro y corriendo el negativo contra las otras catorce unidades.
+> **Y el sitio donde el metodo del commit de alta se quedaba ciego deja de estarlo hoy**,
+> porque la TAREA 2.b escribe esa unidad dentro de los dos candidatos.
+
+### N.2.e. LO QUE **NO** HAGO EN ESTA TAREA, PORQUE EL ENCARGO LO PROHIBE
+
+| | |
+|---|---|
+| **el `24` contra `25`** | **NO SE REABRE** (`1.e`). Las dos ciertas, denominadores distintos, ya adjudicado por los dos lados por separado |
+| **el criterio de recuento de los `SANO` sin sede** | **NO lo vuelvo a subir como pendiente de doctrina.** Esta adjudicado y lo aplico en `N.7` |
+| **`D.38.4` en el banco** | **no la toco.** La escribio el auditor y es su sede (`EXTRACTOR.md` 14) |
