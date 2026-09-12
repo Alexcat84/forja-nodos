@@ -24721,6 +24721,27 @@ especie equivocada.*
 | **por que es `D.37` y no `D.29`** | **la cuenta esta escrita** (`three things`) y las partes **existiran como nodos**, que es lo que `D.37` pide. **Es el primer `D.37` de verdad cableable del lote 4**: la de `L317` de `cap_09` no lo era porque sus cuatro partes eran pasos de un solo nodo |
 | **quien la declara** | **quien extraiga `cap_10`, en su misma vuelta** (`D.37` literal). Yo la levanto con su cita y su marco en `O.4.d` y **no la resuelvo**, porque no he escrito los pasos |
 
+### O.6.4.c. **LAS DOS CIFRAS HEREDADAS QUE ESTE CIERRE REPITE, REMEDIDAS POR MI Y NO COPIADAS**
+
+*`EXTRACTOR.md` 5: un acta previa o un reporte anterior **nunca** son fuente de una cifra
+nueva. Mis colas 2 y 4 repiten *`0` aristas cruzan de libro sobre las `79`* y mi `O.6.5`
+repite *`0` de 203 nodos de `scott_radical_candor`*. **Las dos las mido yo hoy.***
+
+    $ python .t1_v20/verificar.py
+    nodos del grafo                              : 203
+    nodos con fuente scott_radical_candor        : 0
+    extremos de arista contados (ida y vuelta)   : 158
+      de esos, los que cruzan de libro           : 0
+    aristas distintas (los extremos entre dos)   : 79
+
+> **LAS DOS REPRODUCEN AL DIGITO: `79` aristas distintas, `0` cruzan de libro, y `0` de los
+> 203 nodos del grafo son de `scott_radical_candor`.** Cero discrepancias que declarar.
+>
+> **Y LA TERCERA CIFRA, QUE NO ME LA HABIA PEDIDO NADIE Y SALE DEL MISMO RECORRIDO:** el grafo
+> tiene **158 extremos de arista sobre 203 nodos**, o sea **79 aristas para 203 nodos**. **La
+> deuda de doce colas del lote 4 no es una anecdota al lado de esa cifra: es el 15 por ciento
+> de todo el cableado que esta casa ha escrito nunca**, esperando un solo acto.
+
 ## O.6.5. LAS LECTURAS `SANO` SIN SEDE, **CONTADAS POR PARES Y CON SU DENOMINADOR NOMBRADO**
 
 *El criterio ya esta adjudicado y no lo reabro: **una lectura `SANO` sin sede es UN PAR
@@ -24856,7 +24877,7 @@ auditor.**
 | **mis caidas, declaradas por mi** | **1 cazada antes de exponerla** (`O.2.c`, la ruta que escribi antes de correr el `ls`); **1 puente cazado y corregido en el acto** (`O.3.e`); **1 fila propia corregida al remedir** (`O.6.2.b`, el `0` de `_insertados`); **2 rojos en mis propios guiones** (`O.6.1.b` y `O.3.d`) |
 | **la caida de la `ACTA 19` que acepto entera** | la ruta que prometia **40 informes** y guardaba **35 de 41**. **Remedio adoptado en `O.2.d` y auditado contra mi propio reporte en `O.6.7`** |
 | **guardas al cierre** | **las cinco en verde**, con los tres rojos de `guiones` y su causa pegados |
-| **lineas del reporte** | **abrio en 23.670 y cierra en 24.885**, medido con `wc -l` DESPUES de anexar este bloque. **La cifra se cuenta a si misma y lo digo: el `wc -l` que la produce se corrio sobre el fichero ya completo, y esta linea es la unica que escribo despues** |
+| **lineas del reporte** | **abrio en 23.670 y cierra en 24.906**, medido con `wc -l` DESPUES de anexar este bloque. **La cifra se cuenta a si misma y lo digo: el `wc -l` que la produce se corrio sobre el fichero ya completo, y esta linea es la unica que escribo despues** |
 | **lo que la vuelta siguiente se encuentra** | **`cap_10` con su frontera cortada y su cuenta de 20 medida**, su `D.37` levantada con cita, y cuatro discutibles mios sobre sus piezas. **`cap_11` a `cap_14` sin tocar** |
 
 > # **LA VUELTA 20 CIERRA EN `cap_09` COMPLETO, CON SU REPORTE ESCRITO, Y NO DEJA NINGUN CAPITULO PARTIDO.**
