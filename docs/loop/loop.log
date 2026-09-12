@@ -232,3 +232,39 @@ Reemplazalos por el guion corto normal y vuelve a intentarlo.
 [2026-09-12 00:22:41] auditor listo (USD 17.001962), 2695s, intento 1 de 7
 [2026-09-12 00:22:41]   sello de la apertura ciega verificado: intacto tras el turno
 [2026-09-12 00:22:41] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-12 02:21:46] extractor listo (USD 28.932388499999995), 7145s, intento 1 de 7
+[2026-09-12 02:21:47] VUELTA 2 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-12 02:46:10] auditor ciego listo (USD 10.925210499999997), 1462s, intento 1 de 7
+[2026-09-12 02:46:10]   apertura ciega sellada: c119e91f41a7496707253f390b05459fed221b39
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 21 hallazgo(s)
+  .pob_loo.jsonl linea 275 columna 1687: guion largo (U+2014)
+  .pob_loo.jsonl linea 275 columna 1755: guion largo (U+2014)
+  .pob_loo.jsonl linea 311 columna 1445: guion largo (U+2014)
+  .pob_loo.jsonl linea 311 columna 1540: guion largo (U+2014)
+  .pob_loo.jsonl linea 314 columna 1952: guion largo (U+2014)
+  .pob_loo.jsonl linea 314 columna 1985: guion largo (U+2014)
+  .pob_loo.jsonl linea 340 columna 1387: guion largo (U+2014)
+  .pob_loo.jsonl linea 340 columna 1418: guion largo (U+2014)
+  .pob_loo.jsonl linea 351 columna 1591: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 275 columna 1687: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 275 columna 1755: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 311 columna 1445: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 311 columna 1540: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 314 columna 1952: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 314 columna 1985: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 340 columna 1387: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 340 columna 1418: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 351 columna 1591: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 1371: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 1937: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 3405: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-12 02:46:11] VUELTA 2 : AUDITOR (claude-opus-5)

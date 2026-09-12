@@ -1,0 +1,15 @@
+POBLACION DEL BARRIDO (D.38.4)
+  grafo dataset/nodos.jsonl : 203
+  bandejas cuarentena/*/    : 188
+  TOTAL                     : 391
+  umbrales: sim 0.35 | fam 0.3 | paso 0.6
+
+candidatos de la vuelta 16 a barrer: 17
+### acompaniar_mejores_equipo_socio.json   (contra 390)
+    SIN VECINOS: ninguna senial levanta nada
+
+### cambiar_potencial_trayectoria_crecimiento.json   (contra 390)
+    vecino cambiar_mentalidad_fija_crecimiento  [levantada por: familia_id]
+      similitud_texto 0.228 | familia_id 0.333 | paso_contra_nodo 0.439
+      paso 12 del candidato contra paso 3 de cambiar_mentalidad_fija_crecimiento
+

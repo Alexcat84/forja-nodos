@@ -1,0 +1,102 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 25
+nodos en el grafo de destino: 203
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 20
+  BLOQUEARIAN esperando veredicto  : 5   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 9
+  por candidato bloqueado          : menor 1, mediana 2, mayor 3
+  que señal levanta cada vecindad  : familia_id 8, paso_contra_nodo 1
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] acompaniar_mejores_equipo_socio   (acompaniar_mejores_equipo_socio.json)
+
+[ENTRARIA] ajustar_franqueza_oido_oyente   (ajustar_franqueza_oido_oyente.json)
+
+[BLOQUEARIA] cambiar_potencial_trayectoria_crecimiento   (cambiar_potencial_trayectoria_crecimiento.json)
+    vecino cambiar_mentalidad_fija_crecimiento  [levantada por: familia_id]
+      similitud_texto 0.228 | familia_id 0.333 | paso_contra_nodo 0.439
+      paso 12 del candidato contra paso 3 de cambiar_mentalidad_fija_crecimiento
+
+[ENTRARIA] criticar_trabajo_evitar_desanimo   (criticar_trabajo_evitar_desanimo.json)
+
+[BLOQUEARIA] cuidar_persona_completa_equipo   (cuidar_persona_completa_equipo.json)
+    vecino usar_lenguaje_no_discriminatorio_entrevista  [levantada por: paso_contra_nodo]
+      similitud_texto 0.228 | familia_id 0.000 | paso_contra_nodo 0.615
+      paso 4 del candidato contra paso 1 de usar_lenguaje_no_discriminatorio_entrevista
+    vecino gestionar_personas_equipo  [levantada por: familia_id]
+      similitud_texto 0.243 | familia_id 0.400 | paso_contra_nodo 0.455
+      paso 6 del candidato contra paso 5 de gestionar_personas_equipo
+    vecino respetar_cuidar_persona_cargo  [levantada por: familia_id]
+      similitud_texto 0.259 | familia_id 0.333 | paso_contra_nodo 0.425
+      paso 2 del candidato contra paso 1 de respetar_cuidar_persona_cargo
+
+[ENTRARIA] dar_critica_inmediata_ayuda_tangible   (dar_critica_inmediata_ayuda_tangible.json)
+
+[BLOQUEARIA] decidir_momento_despedir_persona   (decidir_momento_despedir_persona.json)
+    vecino despedir_persona_respeto_franqueza  [levantada por: familia_id]
+      similitud_texto 0.201 | familia_id 0.333 | paso_contra_nodo 0.430
+      paso 12 del candidato contra paso 6 de despedir_persona_respeto_franqueza
+    vecino elegir_recolocar_despedir_persona  [levantada por: familia_id]
+      similitud_texto 0.244 | familia_id 0.333 | paso_contra_nodo 0.395
+      paso 6 del candidato contra paso 5 de elegir_recolocar_despedir_persona
+
+[ENTRARIA] delimitar_franqueza_radical_cinco_noes   (delimitar_franqueza_radical_cinco_noes.json)
+
+[ENTRARIA] descubrir_motivacion_sentido_persona   (descubrir_motivacion_sentido_persona.json)
+
+[BLOQUEARIA] despedir_persona_franqueza_radical   (despedir_persona_franqueza_radical.json)
+    vecino despedir_persona_respeto_franqueza  [levantada por: familia_id]
+      similitud_texto 0.214 | familia_id 0.600 | paso_contra_nodo 0.398
+      paso 7 del candidato contra paso 5 de despedir_persona_respeto_franqueza
+    vecino elegir_recolocar_despedir_persona  [levantada por: familia_id]
+      similitud_texto 0.261 | familia_id 0.333 | paso_contra_nodo 0.394
+      paso 7 del candidato contra paso 5 de elegir_recolocar_despedir_persona
+
+[ENTRARIA] desplegar_marco_franqueza_radical   (desplegar_marco_franqueza_radical.json)
+
+[ENTRARIA] elogiar_trabajo_especifico_contexto   (elogiar_trabajo_especifico_contexto.json)
+
+[ENTRARIA] empezar_cultura_franqueza_radical   (empezar_cultura_franqueza_radical.json)
+
+[ENTRARIA] equilibrar_elogio_critica_equipo   (equilibrar_elogio_critica_equipo.json)
+
+[ENTRARIA] imaginar_caso_simple_bragueta_abierta   (imaginar_caso_simple_bragueta_abierta.json)
+
+[ENTRARIA] invitar_desafio_reciproco_equipo   (invitar_desafio_reciproco_equipo.json)
+
+[ENTRARIA] manejar_enfado_persona_desafiada   (manejar_enfado_persona_desafiada.json)
+
+[ENTRARIA] pedir_critica_equipo_premiarla   (pedir_critica_equipo_premiarla.json)
+
+[BLOQUEARIA] reconocer_recompensar_gente_estable   (reconocer_recompensar_gente_estable.json)
+    vecino reconocer_recompensar_uso_metodo  [levantada por: familia_id]
+      similitud_texto 0.124 | familia_id 0.333 | paso_contra_nodo 0.405
+      paso 3 del candidato contra paso 2 de reconocer_recompensar_uso_metodo
+
+[ENTRARIA] repartir_semana_cuarenta_horas_jefe   (repartir_semana_cuarenta_horas_jefe.json)
+
+[ENTRARIA] retar_superestrellas_equipo_constantemente   (retar_superestrellas_equipo_constantemente.json)
+
+[ENTRARIA] retirar_etiquetas_permanentes_equipo   (retirar_etiquetas_permanentes_equipo.json)
+
+[ENTRARIA] revisar_ciclo_responsabilidades_relaciones   (revisar_ciclo_responsabilidades_relaciones.json)
+
+[ENTRARIA] revisar_cinco_causas_mal_desempenio   (revisar_cinco_causas_mal_desempenio.json)
+
+[ENTRARIA] subir_vara_calidad_equipo   (subir_vara_calidad_equipo.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

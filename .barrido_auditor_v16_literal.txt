@@ -1,0 +1,123 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 25
+nodos en el grafo de destino: 391
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 25
+  CHOCAN entre si dentro del lote  : 0
+
+POR QUE GUARDA CAEN
+    25  el id ya vive en el grafo
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[CAERIA] acompaniar_mejores_equipo_socio   (acompaniar_mejores_equipo_socio.json)
+    guarda: el id ya vive en el grafo
+      'acompaniar_mejores_equipo_socio' resuelve a 'acompaniar_mejores_equipo_socio'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] ajustar_franqueza_oido_oyente   (ajustar_franqueza_oido_oyente.json)
+    guarda: el id ya vive en el grafo
+      'ajustar_franqueza_oido_oyente' resuelve a 'ajustar_franqueza_oido_oyente'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] cambiar_potencial_trayectoria_crecimiento   (cambiar_potencial_trayectoria_crecimiento.json)
+    guarda: el id ya vive en el grafo
+      'cambiar_potencial_trayectoria_crecimiento' resuelve a 'cambiar_potencial_trayectoria_crecimiento'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] criticar_trabajo_evitar_desanimo   (criticar_trabajo_evitar_desanimo.json)
+    guarda: el id ya vive en el grafo
+      'criticar_trabajo_evitar_desanimo' resuelve a 'criticar_trabajo_evitar_desanimo'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] cuidar_persona_completa_equipo   (cuidar_persona_completa_equipo.json)
+    guarda: el id ya vive en el grafo
+      'cuidar_persona_completa_equipo' resuelve a 'cuidar_persona_completa_equipo'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] dar_critica_inmediata_ayuda_tangible   (dar_critica_inmediata_ayuda_tangible.json)
+    guarda: el id ya vive en el grafo
+      'dar_critica_inmediata_ayuda_tangible' resuelve a 'dar_critica_inmediata_ayuda_tangible'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] decidir_momento_despedir_persona   (decidir_momento_despedir_persona.json)
+    guarda: el id ya vive en el grafo
+      'decidir_momento_despedir_persona' resuelve a 'decidir_momento_despedir_persona'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] delimitar_franqueza_radical_cinco_noes   (delimitar_franqueza_radical_cinco_noes.json)
+    guarda: el id ya vive en el grafo
+      'delimitar_franqueza_radical_cinco_noes' resuelve a 'delimitar_franqueza_radical_cinco_noes'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] descubrir_motivacion_sentido_persona   (descubrir_motivacion_sentido_persona.json)
+    guarda: el id ya vive en el grafo
+      'descubrir_motivacion_sentido_persona' resuelve a 'descubrir_motivacion_sentido_persona'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] despedir_persona_franqueza_radical   (despedir_persona_franqueza_radical.json)
+    guarda: el id ya vive en el grafo
+      'despedir_persona_franqueza_radical' resuelve a 'despedir_persona_franqueza_radical'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] desplegar_marco_franqueza_radical   (desplegar_marco_franqueza_radical.json)
+    guarda: el id ya vive en el grafo
+      'desplegar_marco_franqueza_radical' resuelve a 'desplegar_marco_franqueza_radical'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] elogiar_trabajo_especifico_contexto   (elogiar_trabajo_especifico_contexto.json)
+    guarda: el id ya vive en el grafo
+      'elogiar_trabajo_especifico_contexto' resuelve a 'elogiar_trabajo_especifico_contexto'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] empezar_cultura_franqueza_radical   (empezar_cultura_franqueza_radical.json)
+    guarda: el id ya vive en el grafo
+      'empezar_cultura_franqueza_radical' resuelve a 'empezar_cultura_franqueza_radical'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] equilibrar_elogio_critica_equipo   (equilibrar_elogio_critica_equipo.json)
+    guarda: el id ya vive en el grafo
+      'equilibrar_elogio_critica_equipo' resuelve a 'equilibrar_elogio_critica_equipo'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] imaginar_caso_simple_bragueta_abierta   (imaginar_caso_simple_bragueta_abierta.json)
+    guarda: el id ya vive en el grafo
+      'imaginar_caso_simple_bragueta_abierta' resuelve a 'imaginar_caso_simple_bragueta_abierta'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] invitar_desafio_reciproco_equipo   (invitar_desafio_reciproco_equipo.json)
+    guarda: el id ya vive en el grafo
+      'invitar_desafio_reciproco_equipo' resuelve a 'invitar_desafio_reciproco_equipo'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] manejar_enfado_persona_desafiada   (manejar_enfado_persona_desafiada.json)
+    guarda: el id ya vive en el grafo
+      'manejar_enfado_persona_desafiada' resuelve a 'manejar_enfado_persona_desafiada'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] pedir_critica_equipo_premiarla   (pedir_critica_equipo_premiarla.json)
+    guarda: el id ya vive en el grafo
+      'pedir_critica_equipo_premiarla' resuelve a 'pedir_critica_equipo_premiarla'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] reconocer_recompensar_gente_estable   (reconocer_recompensar_gente_estable.json)
+    guarda: el id ya vive en el grafo
+      'reconocer_recompensar_gente_estable' resuelve a 'reconocer_recompensar_gente_estable'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] repartir_semana_cuarenta_horas_jefe   (repartir_semana_cuarenta_horas_jefe.json)
+    guarda: el id ya vive en el grafo
+      'repartir_semana_cuarenta_horas_jefe' resuelve a 'repartir_semana_cuarenta_horas_jefe'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] retar_superestrellas_equipo_constantemente   (retar_superestrellas_equipo_constantemente.json)
+    guarda: el id ya vive en el grafo
+      'retar_superestrellas_equipo_constantemente' resuelve a 'retar_superestrellas_equipo_constantemente'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] retirar_etiquetas_permanentes_equipo   (retirar_etiquetas_permanentes_equipo.json)
+    guarda: el id ya vive en el grafo
+      'retirar_etiquetas_permanentes_equipo' resuelve a 'retirar_etiquetas_permanentes_equipo'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] revisar_ciclo_responsabilidades_relaciones   (revisar_ciclo_responsabilidades_relaciones.json)
+    guarda: el id ya vive en el grafo
+      'revisar_ciclo_responsabilidades_relaciones' resuelve a 'revisar_ciclo_responsabilidades_relaciones'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] revisar_cinco_causas_mal_desempenio   (revisar_cinco_causas_mal_desempenio.json)
+    guarda: el id ya vive en el grafo
+      'revisar_cinco_causas_mal_desempenio' resuelve a 'revisar_cinco_causas_mal_desempenio'. UN CONCEPTO, UN NODO (manual principio 1)
+
+[CAERIA] subir_vara_calidad_equipo   (subir_vara_calidad_equipo.json)
+    guarda: el id ya vive en el grafo
+      'subir_vara_calidad_equipo' resuelve a 'subir_vara_calidad_equipo'. UN CONCEPTO, UN NODO (manual principio 1)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

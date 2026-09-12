@@ -1,0 +1,61 @@
+POBLACION DEL BARRIDO (D.38.4): grafo 203 + bandejas 188 = 391
+senial barrida: familia_id | umbral 0.3
+
+### acompaniar_mejores_equipo_socio   (contra 390)
+    SIN VECINOS por familia_id
+
+### cambiar_potencial_trayectoria_crecimiento   (contra 390)
+    familia_id 0.333  [GRAFO] cambiar_mentalidad_fija_crecimiento
+
+### criticar_trabajo_evitar_desanimo   (contra 390)
+    SIN VECINOS por familia_id
+
+### dar_critica_inmediata_ayuda_tangible   (contra 390)
+    SIN VECINOS por familia_id
+
+### decidir_momento_despedir_persona   (contra 390)
+    familia_id 0.333  [GRAFO] elegir_recolocar_despedir_persona
+    familia_id 0.333  [GRAFO] despedir_persona_respeto_franqueza
+    familia_id 0.333  [BANDEJA] despedir_persona_franqueza_radical
+
+### descubrir_motivacion_sentido_persona   (contra 390)
+    SIN VECINOS por familia_id
+
+### despedir_persona_franqueza_radical   (contra 390)
+    familia_id 0.600  [GRAFO] despedir_persona_respeto_franqueza
+    familia_id 0.333  [GRAFO] elegir_recolocar_despedir_persona
+    familia_id 0.333  [BANDEJA] empezar_cultura_franqueza_radical
+    familia_id 0.333  [BANDEJA] desplegar_marco_franqueza_radical
+    familia_id 0.333  [BANDEJA] decidir_momento_despedir_persona
+
+### elogiar_trabajo_especifico_contexto   (contra 390)
+    SIN VECINOS por familia_id
+
+### empezar_cultura_franqueza_radical   (contra 390)
+    familia_id 0.333  [BANDEJA] desplegar_marco_franqueza_radical
+    familia_id 0.333  [BANDEJA] despedir_persona_franqueza_radical
+
+### equilibrar_elogio_critica_equipo   (contra 390)
+    familia_id 0.333  [BANDEJA] pedir_critica_equipo_premiarla
+
+### imaginar_caso_simple_bragueta_abierta   (contra 390)
+    SIN VECINOS por familia_id
+
+### pedir_critica_equipo_premiarla   (contra 390)
+    familia_id 0.333  [BANDEJA] equilibrar_elogio_critica_equipo
+
+### reconocer_recompensar_gente_estable   (contra 390)
+    familia_id 0.333  [GRAFO] reconocer_recompensar_uso_metodo
+
+### retar_superestrellas_equipo_constantemente   (contra 390)
+    SIN VECINOS por familia_id
+
+### retirar_etiquetas_permanentes_equipo   (contra 390)
+    SIN VECINOS por familia_id
+
+### revisar_cinco_causas_mal_desempenio   (contra 390)
+    SIN VECINOS por familia_id
+
+### subir_vara_calidad_equipo   (contra 390)
+    SIN VECINOS por familia_id
+
