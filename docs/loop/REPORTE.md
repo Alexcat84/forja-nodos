@@ -19636,3 +19636,242 @@ manda cuando algo de la propia vuelta mueve una cifra publicada. **Y no cambia n
 decision:** el freno esta en 10 y las dos lecturas estan por debajo.
 
 > ## **TAREA 3 CERRADA.** Los dos arreglos leidos con su linea delante, **los dos decididos EN POSITIVO y con su razon escrita**, los dos por la aduana uno por vez y al primer intento, el informe del lote entero recontado y cuadrando con el encargo, y la consecuencia de cuentas declarada.
+
+
+---
+
+# K.5. TAREA 4: EL LOTE 4, `scott_radical_candor`. **`cap_05` CERRADO ENTERO**
+
+**EL VOLUMEN ENCARGADO SON TRES CAPITULOS, Y LOS REMIDO YO ANTES DE EMPEZAR** porque una
+cifra del encargo no es fuente de una cifra mia (`EXTRACTOR.md` 5):
+
+    $ for f in cap_05 cap_06 cap_07 cap_08; do sed -n '8,$p' $f.md | wc -w; done
+    cap_05  8756    cap_06  11587    cap_07  13678    cap_08  6140
+
+**LAS CUATRO CUADRAN AL DIGITO CON LA TABLA DEL ENCARGO**, y los tres del tramo suman
+**34.021 palabras**, que es **2,43 veces** el ritmo sostenido del lote 3 (14.008 por
+vuelta). **La regla de corte que el encargo repite es cerrar los que quepan ENTEROS y
+decirlo con su cifra**, y asi se hace.
+
+## K.5.1. LA FRONTERA DE `cap_05`, **PUBLICADA ANTES DE CORTAR**, PIEZA A PIEZA
+
+    $ head -6 fuentes/scott_radical_candor/cap_05.md
+    libro: Scott, Radical Candor
+    edicion: Fully Revised & Updated Edition, St. Martin's Press, First Edition October 2019
+    unidad: Cap. 2
+    titulo_textual: Get, Give, and Encourage Guidance
+    fidelidad: verbatim
+
+**LOS LIMITES DE LAS PIEZAS NO LOS ELIJO YO: SON LOS ROTULOS DEL PROPIO LIBRO, Y VAN CON
+SU SALIDA PEGADA** (`D.35`). Esta es la lista literal de titulos y subtitulos de la
+unidad, con su numero de linea:
+
+    $ awk 'NR>=8 && NF && length($0)<105 {printf "%d:%s\n", NR, $0}' cap_05.md   (solo los rotulos)
+      9:Creating a culture of open communication
+     11:THE "UM" STORY
+     41:"OPERATIONALIZING" GOOD GUIDANCE
+     59:RADICAL CANDOR
+     73:Radically Candid praise        75:"I admire that about you"
+     85:Radically Candid criticism     87:To keep winning, criticize the wins
+     91:OBNOXIOUS AGGRESSION
+    107:Obnoxiously aggressive criticism    109:Front-stabbing
+    129:Obnoxiously aggressive praise       131:Belittling compliments
+    167:MANIPULATIVE INSINCERITY
+    179:Manipulatively insincere praise     181:The false apology
+    189:RUINOUS EMPATHY
+    203:Ruinously empathetic praise         205:"Just trying to say something nice"
+    213:MOVING TOWARD RADICAL CANDOR
+    217:Start by asking for criticism, not by giving it
+    219:Don't dish it out before you show you can take it
+    231:Balance praise and criticism
+    233:Worry more about praise, less about criticism, but above all be sincere
+    245:Understand the perilous border between Obnoxious Aggression and Radical Candor
+    247:"Your work is shit"
+    281:Think of a simple example      283:"Your fly is down"
+    309:3.
+    311:UNDERSTAND WHAT MOTIVATES EACH PERSON ON YOUR TEAM
+
+**LA FRONTERA DE FICHERO:** la unidad de cuerpo va de **L9 a L307**. **L309 y L311 son ya
+la cabecera del `Cap. 3`** (`UNDERSTAND WHAT MOTIVATES EACH PERSON ON YOUR TEAM`), que es
+el contenido de `cap_06.md`, **y NO se mina desde aqui.**
+
+### Las 21 piezas, y lo que se hace con cada una
+
+| # | pieza | lineas | nodo? |
+|---:|---|---|---|
+| 1 | subtitulo de la unidad | `:9` | **NO.** Es un rotulo |
+| 2 | `THE "UM" STORY` | `:11` a `:39` | **NO por si sola.** Es el caso que la pieza 3 desmonta, y entra **nombrado dentro** de sus pasos (manual 3.5, *el caso no es la casa*) |
+| 3 | `"OPERATIONALIZING" GOOD GUIDANCE` | `:41` a `:47` | **SI: `dar_critica_inmediata_ayuda_tangible`** |
+| 4 | las dos dimensiones y los cuatro cuadrantes, con el aviso de que no es un test de personalidad | `:51` a `:57` | **NO: ya vive en el grafo y en la bandeja.** Es la doctrina del marco, que es el objeto de `desplegar_marco_franqueza_radical` (`cap_01`), y el aviso de no etiquetar es su paso 7. **Fundir antes que gemelar** (`P.19`) |
+| 5 | `RADICAL CANDOR`, el cuadrante, con el caso del desconocido y la perra | `:59` a `:71` | **NO.** Es definicion de cuadrante mas un caso ilustrativo. No hay inventario de medios, etapas u objetos: hay un ejemplar |
+| 6 | `Radically Candid praise` | `:73` a `:83` | **SI: `elogiar_trabajo_especifico_contexto`** (con las piezas 10 y 14) |
+| 7 | `Radically Candid criticism` | `:85` a `:89` | **NO.** Tres frases y una maxima (*criticar los aciertos para seguir ganando*). **Postura, no procedimiento** |
+| 8 | `OBNOXIOUS AGGRESSION` | `:91` a `:105` | **NO.** Definicion de cuadrante. Nombra conductas para reconocerlo, **no medios que ejecutar** |
+| 9 | `Obnoxiously aggressive criticism` / `Front-stabbing` | `:107` a `:127` | **SI, pero FUNDIDA en la pieza 18**, no como nodo propio. `:127` nombra cuatro fallos uno a uno y los cuatro son el reverso de la lista de `:271` |
+| 10 | `Obnoxiously aggressive praise` / `Belittling compliments` | `:129` a `:165` | **FUNDIDA en la pieza 6.** El correo del jefe da un medio, no leer lo que pegas |
+| 11 | `MANIPULATIVE INSINCERITY` | `:167` a `:177` | **NO.** Definicion de cuadrante |
+| 12 | `Manipulatively insincere praise` / `The false apology` | `:179` a `:187` | **NO, Y ES EL QUE MAS ME COSTO.** Va marcado **discutible 3** |
+| 13 | `RUINOUS EMPATHY` | `:189` a `:201` | **NO.** Definicion de cuadrante |
+| 14 | `Ruinously empathetic praise` | `:203` a `:211` | **FUNDIDA en la pieza 6.** `:211` da tres medios de elogio |
+| 15 | `MOVING TOWARD RADICAL CANDOR` | `:213` a `:215` | **SI: `empezar_cultura_franqueza_radical`**, que es **la cabeza de las tres piezas que siguen** |
+| 16 | `Start by asking for criticism, not by giving it` | `:217` a `:229` | **SI: `pedir_critica_equipo_premiarla`** |
+| 17 | `Balance praise and criticism` | `:231` a `:243` | **SI: `equilibrar_elogio_critica_equipo`** |
+| 18 | `Understand the perilous border ...` | `:245` a `:279` | **SI: `criticar_trabajo_evitar_desanimo`** (con la pieza 9) |
+| 19 | `Think of a simple example` / `"Your fly is down"` | `:281` a `:299` | **SI: `imaginar_caso_simple_bragueta_abierta`** |
+| 20 | el cierre exhortativo (*ahora es tu trabajo decirlo*, *deja de reprimir tu capacidad de cuidar*) | `:301` a `:307` | **NO.** Exhortacion pura. **Es el ejemplar de postura mas limpio de la unidad** |
+| 21 | cabecera del `Cap. 3` | `:309` a `:311` | **FRONTERA DE FICHERO.** Es `cap_06.md` |
+
+**21 piezas: 7 dan nodo, 3 se funden dentro de esos 7, y 11 se declaran sin nodo con su
+motivo una a una.** Ninguna se queda sin decir.
+
+### Los cuatro cuadrantes NO dan cuatro nodos, y digo por que antes de que se pregunte
+
+**Las piezas 5, 8, 11 y 13 son la definicion de las cuatro casillas del marco, y ninguna
+da nodo.** No es descuido: **`D.27` pide un inventario de MEDIOS, ETAPAS u OBJETOS DE
+TRABAJO, y una casilla de un marco es un inventario de CONDUCTAS PARA RECONOCERLA.** Saber
+que la agresion odiosa incluye menospreciar, avergonzar en publico y congelar a alguien
+**no es un procedimiento que nadie ejecute**: es un diagnostico. **Y el marco entero, que
+si es ejecutable, ya tiene su nodo** (`desplegar_marco_franqueza_radical`).
+
+**Lo que si dan las cuatro casillas es el paso 5 al 8 de `imaginar_caso_simple_bragueta_abierta`**,
+donde el texto **las recorre una a una sobre un mismo escenario concreto**. Ahi si hay
+procedimiento, porque hay una cosa que hacer con ellas.
+
+## K.5.2. LOS SIETE CANDIDATOS, CADA UNO POR LA ADUANA EN EL ACTO EN QUE SE ESCRIBIO
+
+*`EXTRACTOR.md` 16: un candidato no esta escrito hasta que ha pasado la aduana. **Uno por
+vez, con `python forja.py informe <fichero>`, y el que cae se corrige y se reintenta.***
+
+| # | id | pasos | piezas | aduana |
+|---:|---|---:|---|---|
+| 1 | `dar_critica_inmediata_ayuda_tangible` | **10** | 3 y 2 | **`[ENTRARIA]` al primer intento** |
+| 2 | `elogiar_trabajo_especifico_contexto` | **7** | 6, 10 y 14 | **`[ENTRARIA]` al primer intento** |
+| 3 | `empezar_cultura_franqueza_radical` | **6** | 15 | **`[ENTRARIA]` al primer intento** |
+| 4 | `pedir_critica_equipo_premiarla` | **11** | 16 | **`[ENTRARIA]` al primer intento** |
+| 5 | `equilibrar_elogio_critica_equipo` | **9** | 17 | **`[ENTRARIA]` al primer intento** |
+| 6 | `criticar_trabajo_evitar_desanimo` | **14** | 18 y 9 | **`[ENTRARIA]` al primer intento** |
+| 7 | `imaginar_caso_simple_bragueta_abierta` | **11** | 19 | **`[ENTRARIA]` al primer intento** |
+| | **`cap_05`** | **68** | | **7 de 7 sin una caida de guarda** |
+
+**SIETE DE SIETE AL PRIMER INTENTO Y CERO CORRECCIONES DE ID.** La regla 3, que es la que
+mas cae y la que me cazo dos veces en `cap_04`, **no mordio ni una vez**: los siete ids se
+escribieron con la lista de `PALABRAS_VACIAS` delante, que incluye `sin`, `tras`, `hacia`
+y `contra`, y por eso el nodo del equilibrio se llama `equilibrar_elogio_critica_equipo`
+y no `repartir_elogio_critica_sin_ratio`, que era su nombre natural y **habria caido**.
+
+**Las tres re corridas de la aduana tras la relectura de fidelidad** (`K.5.3`) **tambien
+dan `[ENTRARIA]`**, y son las que cuentan: un candidato corregido vuelve a pasar entero.
+
+## K.5.3. LA RELECTURA DE FIDELIDAD `D.30`, DENTRO DEL ACTO DE ESCRIBIR. **DOS PUENTES, LOS DOS RETIRADOS**
+
+*`EXTRACTOR.md` 15.4: ninguna guarda de esta casa ve un paso que tu escribiste y el libro
+no dice. **Marca cada paso contra su parrafo, y cada puente se retira o se reescribe, en
+el mismo acto.***
+
+**EL DESGLOSE POR CANDIDATO, CON SU NUMERADOR Y SU DENOMINADOR SEPARADOS**, que es lo que
+el encargo pide para poder firmarla:
+
+| # | id | pasos | TRANSCRIPCION | de ellos, `TRANSCRIPCION DE CASO` | **PUENTES** |
+|---:|---|---:|---:|---:|---:|
+| 1 | `dar_critica_inmediata_ayuda_tangible` | 10 | 10 | 6 | **1**, retirado |
+| 2 | `elogiar_trabajo_especifico_contexto` | 7 | 7 | 5 | 0 |
+| 3 | `empezar_cultura_franqueza_radical` | 6 | 6 | 0 | 0 |
+| 4 | `pedir_critica_equipo_premiarla` | 11 | 11 | 4 | 0 |
+| 5 | `equilibrar_elogio_critica_equipo` | 9 | 9 | 0 | 0 |
+| 6 | `criticar_trabajo_evitar_desanimo` | 14 | 14 | 4 | **1**, retirado |
+| 7 | `imaginar_caso_simple_bragueta_abierta` | 11 | 11 | 0 | 0 |
+| | **`cap_05`** | **68** | **68** | **19** | **2** |
+
+> ### **`PASOS INVENTADOS` DE `cap_05`: 2 de 68 = 2,94 POR CIENTO.** Numerador **2**, denominador **68**, y los dos puentes estan escritos abajo con la linea que NO los dice.
+
+**`TRANSCRIPCION DE CASO` VA COMO LA `ACTA 15` 3.3 LA ADMITIO: SUBRAYADO DENTRO DE
+TRANSCRIPCION, NO TERCERA CLASE, Y NO MUEVE EL NUMERADOR.** La condicion con la que se
+admitio es **el caso nombrado dentro del propio paso**, y la cumplo en los 19: cada uno de
+esos pasos lleva dentro *en el caso*, *el texto pone el caso de*, o el nombre propio que
+el libro da. **Y ningun entregable de los siete lleva un dato de un caso**, que es la
+senial barata de que se hizo mal (`EXTRACTOR.md` 9).
+
+### PUENTE 1, y es de la especie que ya tiene nombre en esta casa: **GENERALIZACION**
+
+    borrador, paso 7 de dar_critica_inmediata_ayuda_tangible:
+      Pregunta si la persona era consciente de eso, Y SI HAY UNA CAUSA DETRAS.
+      En el caso la pregunta fue si era por nervios.
+
+    $ sed -n '23p;27p' fuentes/scott_radical_candor/cap_05.md
+    :23  I listened as best I could. Finally, she said. "You said 'um' a lot. Were you
+         aware of it?"
+    :27  "Was it because you were nervous? Would you like me to recommend a speech coach
+         for you? Google will pay for it."
+
+**EL LIBRO HACE DOS PREGUNTAS CONCRETAS Y NO ENUNCIA NINGUNA REGLA SOBRE BUSCAR CAUSAS.**
+Mi paso convertia **un caso de una pregunta** en **una categoria de preguntas**, y esa
+categoria la ponia yo. **Retirado y reescrito pegado a las dos lineas:**
+
+    P7 hoy: Pregunta si la persona era consciente de eso. En el caso la autora contesto
+            que si, que sabia que lo decia demasiado, y Sheryl le pregunto ademas si era
+            porque estaba nerviosa.
+
+### PUENTE 2, y es **EL PUENTE DE ESTRUCTURA**, el mismo que se cobro la vuelta 15
+
+    borrador, paso 13 de criticar_trabajo_evitar_desanimo:
+      Cuenta historias de cuando te criticaron a ti por algo parecido. EL TEXTO PONE EL
+      CASO del responsable veterano que ensenaba a los recien llegados dos carpetas ...
+
+    $ sed -n '271p;273p' fuentes/scott_radical_candor/cap_05.md
+    :271  ... Share stories when you've been criticized for something similar. (For more
+          tips, see Chapter Six ...)
+    :273  A leader I worked with at Apple described how he would help NEW EMPLOYEES LEARN
+          TO TAKE CRITICISM IN STRIDE. ... "This is my 'yes' file," ... "And this is my
+          'no' file. Don't let the criticism discourage you."
+
+> **LAS DOS MITADES DEL PASO ERAN CITAS BUENAS Y EL PASO NO ERA DEL LIBRO.** `:271` manda
+> contar historias **de cuando te criticaron a ti**; `:273` cuenta un caso de **ensenar a
+> un recien llegado a encajar la critica**, que no es lo mismo: en el caso el veterano no
+> cuenta ninguna critica que recibiera, **enseña un archivo de rechazos**. El
+> emparejamiento, *el caso es el ejemplar de esa regla*, **lo puse yo.**
+>
+> **ES EXACTAMENTE LA ESPECIE QUE LA VUELTA 15 DESCUBRIO Y BAUTIZO**, y vuelvo a decir por
+> que es la mas cara: **no se ve al leer el paso, porque cada mitad es una cita buena.**
+> Esta la caze porque desde la vuelta 15 releo los pasos que juntan dos lineas **buscando
+> el emparejamiento y no las citas.**
+
+**RETIRADO PARTIENDO EL PASO EN DOS**, cada uno con su linea, y el nodo pasa de 13 a 14
+pasos.
+
+### Y UN TERCER ARREGLO QUE **NO** ES PUENTE, y por eso no entra en el numerador
+
+**El borrador de `elogiar_trabajo_especifico_contexto` tenia un paso 8** (*un elogio vago o
+insincero erosiona la confianza igual que una critica dura*) **que es transcripcion buena
+de `:239`**, pero `:239` **esta dentro de la seccion `Balance praise and criticism`**, que
+es la casa del candidato 5, y alli ya vivia. **Lo retire del 2 y lo deje en el 5**, que es
+`P.19` aplicada entre dos candidatos del mismo acto: **el objeto ya estaba en casa, y
+mandarlo tambien al otro nodo fabricaba un gemelo.** Va declarado dentro del propio
+`resumen_teorico` del nodo 2 para que no parezca un olvido.
+
+## K.5.4. LAS CUATRO MEDIDAS DE `cap_05`, POR CAPITULO Y NO POR VUELTA
+
+| medida | `cap_05` | como se saca |
+|---|---:|---|
+| **palabras de cuerpo** | **8.756** | `sed -n '8,$p' cap_05.md \| wc -w` |
+| **candidatos escritos** | **7** | ficheros nuevos en la bandeja |
+| **pasos escritos** | **68** | recorrido de los siete JSON |
+| **pasos inventados** | **2 de 68 = 2,94 por ciento** | relectura `D.30` de `K.5.3` |
+
+**Y LA COMPARACION CON LO QUE YA ESTABA FIRMADO, con las dos lecturas del denominador de
+`cap_04` porque la TAREA 3 lo movio:**
+
+| unidad | pasos inventados | numerador y denominador |
+|---|---:|---|
+| `cap_01` (`Preface`) | 0,00 | 0 de 9 |
+| `cap_03` (`How to Use This Book`) | 0,00 | 0 de 7 |
+| `cap_04` (`Cap. 1`), firmado por el auditor | **6,38** | 3 de 47 |
+| `cap_04` tras el arreglo en frio de hoy | **6,25** | 3 de 48 |
+| **`cap_05` (`Cap. 2`), esta vuelta** | **2,94** | **2 de 68** |
+| **lote 4 hasta hoy** | **3,79** | **5 de 132** |
+
+> **EL FRENO NO SE DISPARA Y LA PEOR UNIDAD SIGUE SIENDO `cap_04`** (6,25 contra un tope de
+> 10). **Y digo lo que esta cifra NO autoriza:** con 68 pasos **un solo puente mueve `cap_05`
+> 1,5 puntos**, asi que **no se puede leer que `cap_05` vaya mejor que `cap_04`**. Lo que si
+> se puede leer, y es lo unico que afirmo, es que **el denominador del lote 4 se ha
+> duplicado en una vuelta** (de 64 a 132 pasos) **y la tasa no ha subido.** La banda la
+> calcula el auditor, que es quien firma esta metrica.

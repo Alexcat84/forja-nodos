@@ -1,0 +1,51 @@
+{
+ "id": "equilibrar_elogio_critica_equipo",
+ "titulo": "Dar mas elogio que critica sin usar ningun ratio fijo, y repartir tu energia al reves de como te sale",
+ "denominaciones": {
+  "nombre_largo": "Por que mas elogio que critica, por que el ratio correcto es peligroso, por que el sandwich de opinion no funciona, y donde poner la energia en cada uno de los dos",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "balance praise and criticism"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "feedback sandwich"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando estas decidiendo cuanto elogio y cuanta critica dar a tu equipo, y cada vez que te sientas tentado de aplicar una proporcion o de envolver una critica en elogios.",
+ "entregable_esperado": "Mas elogio que critica y ninguna proporcion fija aplicada, ningun elogio dicho para rellenar un hueco, y la energia puesta en decir la critica sin mas y en pensar como se dice el elogio.",
+ "pasos_accionables": [
+  "Da mas elogio que critica, aunque se aprenda mas de los errores que de los aciertos, y cuenta con las dos razones que el texto da: guia a la gente en la direccion correcta, porque es tan importante decirle que hacer mas como que hacer menos, y la anima a seguir mejorando.",
+  "Cuenta con que el mejor elogio hace mucho mas que hacer sentir bien: segun el texto, desafia directamente.",
+  "No apliques un ratio fijo de elogio a critica. El texto nombra los que circulan, tres a uno, cinco a uno y hasta siete a uno, y dice por que la nocion de un ratio correcto es peligrosa: te lleva a decir cosas antinaturales, insinceras o directamente ridiculas, del estilo de alabar la tipografia de una presentacion cuyo contenido rozaba lo obvio y rematar diciendo lo ordenada que tiene la mesa.",
+  "No uses el sandwich de opinion, que es abrir y cerrar con elogio metiendo la critica en medio. El texto recoge el nombre que le puso Ben Horowitz, el sandwich de mierda, y aniade que quien lo defiende dice que funciona con gente con menos experiencia, mientras que ella sostiene que el ninio medio lo cala igual de rapido que un directivo.",
+  "Cuenta con que un elogio paternalista o insincero erosiona la confianza y estropea tus relaciones tanto como una critica demasiado dura.",
+  "Cuenta con las dos formas de fallar que el texto nombra por separado: al criticar, la mayoria tiene miedo de herir y acaba por no decir nada; al elogiar, unos dicen siempre algo por agradar, a veces cosas vacuas, y otros simplemente no tienen la costumbre de elogiar.",
+  "Cuando critiques, ponte menos nervioso y concentrate en decirlo sin mas. El texto avisa de que si piensas demasiado en como decirlo es probable que te acobardes y no digas nada.",
+  "Cuando elogies, haz lo contrario: se consciente de todas las formas en que un elogio puede salir mal y pon mas energia en pensar como decirlo.",
+  "Pasa el mismo tiempo asegurandote de tener bien los hechos antes de elogiar a alguien que antes de criticarle. Son las dos preguntas que el texto recoge de Karen Sipprell, colega suya en Apple, y que presenta como instructivas."
+ ],
+ "resumen_teorico": "El inventario es del texto y va en dos mitades que el propio texto contrapone. La primera es contra la aritmetica: mas elogio que critica con sus dos razones, ningun ratio fijo con los tres que circulan nombrados, y el sandwich rechazado con el nombre que le puso el inversor que lo bautizo. La segunda es de reparto de energia, y es la que le da su forma de procedimiento: como las dos formas de fallar son opuestas, el remedio tambien lo es, menos nervios al criticar y mas cuidado al elogiar. Se extrae como nodo propio y no dentro del procedimiento de elogiar porque su objeto es la PROPORCION entre los dos y no la calidad de uno de ellos. Lo que el texto NO dice, y por eso no esta escrito aqui, es cuanto mas elogio que critica, que es justo lo que la seccion dedica a desmontar.",
+ "atribuciones": [
+  {
+   "cifra": "el nombre sandwich de mierda para la tecnica de abrir y cerrar con elogio metiendo la critica en medio, que segun el texto funciona con gente con menos experiencia y que el ninio medio cala igual que un directivo",
+   "autor": "Ben Horowitz, citado por Kim Scott",
+   "fuente": "scott_radical_candor",
+   "fecha_corte": "no consta en el texto: el libro lo presenta como inversor de capital riesgo, sin anio ni obra"
+  }
+ ],
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

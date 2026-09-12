@@ -1,0 +1,37 @@
+{
+ "id": "elogiar_trabajo_especifico_contexto",
+ "titulo": "Elogiar el trabajo con el porque dentro, contextualizado y sincero, y averiguar quien hizo que antes de elogiar en publico",
+ "denominaciones": {
+  "nombre_largo": "El elogio radicalmente franco: decir por que admiras lo que admiras, comprobar como aterriza, repetirlo mejor si cayo plano, y bajar al detalle antes de felicitar delante de todos",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "Radically Candid praise"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando vas a elogiar el trabajo de alguien, y sobre todo cuando vas a hacerlo delante de otras personas.",
+ "entregable_esperado": "Un elogio dicho con su porque dentro, contextualizado y sentido de verdad, comprobado en como aterrizo y repetido mejor si cayo plano, y en el caso del elogio publico con la averiguacion de quien hizo que hecha por delante.",
+ "pasos_accionables": [
+  "Di por que admiras lo que admiras, y no te quedes en el hecho. El texto pone el caso de un elogio suyo que se quedo en decir a su socio que admiraba que fuera entrenador de un equipo infantil, sin decir por que, y lo llama vago e inutil.",
+  "Comprueba que lo que dices lo sientes de verdad. En ese mismo caso el problema de fondo resulto ser otro: el socio contesto que no creia que lo dijera en serio, porque a ella el deporte le desagrada. El texto lo cuenta como un elogio que sono insincero aunque el aprecio fuera real.",
+  "Mide como aterriza tu elogio en la persona que lo recibe, que es lo que el texto llama calibrar tu guia y da como razon de que dar un elogio con sentido sea dificil.",
+  "Si cayo plano, vuelve a intentarlo. La segunda version del caso lleva dentro la ocasion concreta en que ella le habia dado la lata por irse pronto al entrenamiento, lo que admira, que integra trabajo y vida como nadie que ella conozca, el efecto que eso tiene sobre ella, que le ayuda a estar mas con sus hijos, y lo que de ahi ha salido para el trabajo comun.",
+  "Antes de elogiar en publico, investiga hasta que entiendas de verdad quien hizo que y por que estuvo tan bien. El texto lo saca del caso del ingeniero al que su jefe felicito delante de toda la empresa por una funcionalidad en la que habia trabajado un punado de ingenieros mas, y que acabo mandando un correo a toda la empresa con la lista de todos los que la habian hecho con el.",
+  "Se tan concreto y tan a fondo con el elogio como con la critica, y baja al detalle.",
+  "No copies y pegues las justificaciones que te mandan sin leerlas. El texto pone el correo de un jefe que felicito a setenta personas de un equipo de seiscientas pegando lo que le habian mandado sus jefes, y que en una de esas lineas publico el sueldo de una persona, que estaba cincuenta por ciento por debajo de mercado, y que era riesgo de fuga."
+ ],
+ "resumen_teorico": "El inventario es del texto y esta repartido en tres sitios de la misma unidad: la seccion del elogio radicalmente franco, que da el porque, el contexto y la sinceridad; el caso del elogio ruinosamente empatico, que da la averiguacion previa, la concrecion y el detalle; y el caso del elogio obnoxiamente agresivo, que da el no copiar y pegar. Los tres tratan del mismo objeto, elogiar bien, y por eso van fundidos en un solo procedimiento en vez de en tres nodos gemelos. Los nombres de los casos van dentro de los pasos que salen de ellos, y el entregable no lleva ningun dato de ningun caso. Y lo que este nodo NO recoge a proposito es el aviso de que un elogio insincero erosiona la confianza tanto como una critica dura: vive en la seccion de equilibrar elogio y critica, que es su casa, y repetirlo aqui fabricaria un gemelo del paso de otro nodo. Lo que el texto NO dice, y por eso no esta escrito aqui, es cuanto hay que investigar antes de elogiar en publico, ni como se mide si un elogio aterrizo bien cuando la persona no te lo dice.",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

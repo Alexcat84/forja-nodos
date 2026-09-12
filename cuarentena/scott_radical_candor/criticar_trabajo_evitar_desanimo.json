@@ -1,0 +1,48 @@
+{
+ "id": "criticar_trabajo_evitar_desanimo",
+ "titulo": "Criticar el trabajo sin desanimar a la persona, con la lista que el texto pone y el error de atribucion evitado",
+ "denominaciones": {
+  "nombre_largo": "La frontera peligrosa entre la agresion odiosa y la franqueza radical: criticar el trabajo y no a la persona, articular el porque, devolverla a la via, y no poner en duda tu confianza en su capacidad",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "the perilous border"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "fundamental attribution error"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando vas a decirle a alguien que su trabajo no es bastante bueno y no quieres que la critica lo desanime ni que se lea como un ataque a la persona.",
+ "entregable_esperado": "La critica dicha sobre el trabajo y no sobre la persona, con el porque articulado y la via de vuelta senialada, en privado y en persona, sin dejar en duda tu confianza en su capacidad y sin dejar margen de interpretacion.",
+ "pasos_accionables": [
+  "Critica el trabajo y no a la persona. El texto lo saca de la entrevista que transcribe: Jobs se corrige a si mismo a mitad de frase y dice cuando su trabajo no es bastante bueno, en vez de cuando ellos no son bastante buenos.",
+  "Cuenta con el error de atribucion fundamental que el texto nombra: es mas facil encontrar el fallo en la persona que en el contexto de lo que esta haciendo. Es mas facil decir eres descuidado que decir has estado trabajando noches y fines de semana y eso empieza a pasarle factura a tu capacidad de detectar errores en tu razonamiento. Y es muchisimo menos util.",
+  "No te quedes en decir que el trabajo no vale, ni siquiera dicho con suavidad. El texto dice que hay que hacerlo muy claramente, articular por que, y devolver a la persona a la via.",
+  "Hazlo de forma que no ponga en duda tu confianza en su capacidad y que no deje demasiado margen de interpretacion, que es lo que el propio texto reconoce como la parte dificil de hacer.",
+  "Antes de mandar una critica, averigua por que la otra persona esta haciendo lo que hace. El texto lo saca de un correo suyo que analiza como ejemplar de lo que no hay que hacer: no se habia molestado en averiguar por que el otro tomaba esa postura, y dio por hecha una motivacion que resulto ser falsa.",
+  "Se humilde, sobre todo si llevas poco tiempo y no entiendes todavia como funcionan las cosas ahi dentro, que es el primer problema que el texto senala en aquel correo.",
+  "Se util, que segun el texto quiere decir estar invertido en ayudar a la persona a mejorar.",
+  "Da la guia en persona e inmediatamente.",
+  "Elogia en publico y critica en privado. El texto lo repite dos veces y lo cuenta como uno de los fallos de aquel correo, que fue mandado a treinta personas cuando lo respetuoso habria sido decirlo a solas.",
+  "Concentrate en tu relacion con la persona, que es lo primero que el texto pone en su lista.",
+  "Pide critica antes de darla, y ofrece mas elogio que critica.",
+  "No personalices, y deja claro que el problema no viene de un defecto de personalidad que no tenga arreglo.",
+  "Cuenta historias de cuando te criticaron a ti por algo parecido.",
+  "Y si lo que quieres es que un recien llegado aprenda a encajar la critica, el texto pone aparte el caso de un responsable veterano que despues de la primera revision de diseno de cada nuevo le ensenaba dos carpetas: una con diez hojas, que era su archivo de los si, las ideas de diseno aprobadas, y otra con mas de mil, que era el de los noes, y que dejaba caer para que se oyera el golpe, diciendo que no dejara que la critica le desanimara."
+ ],
+ "resumen_teorico": "El inventario es del texto y se junta de dos sitios de la misma unidad que tratan el mismo objeto: la seccion de la frontera peligrosa, que da la distincion entre el trabajo y la persona, el error de atribucion, el articular por que y el devolver a la via; y el analisis que el texto hace de un correo propio como ejemplar de agresion odiosa, que nombra cuatro fallos uno a uno, no ser humilde, no haber averiguado el porque, criticar en publico en vez de en privado, y personalizar. Van fundidos en un solo procedimiento y no en dos nodos porque son el mismo objeto visto desde la doctrina y desde el caso, y esta casa funde antes de buscar destino cuando el objeto ya esta dentro. Los casos van nombrados dentro de los pasos que salen de ellos y el entregable no lleva ningun dato de ninguno. Y va declarado un puente que este nodo tuvo en su borrador y que se retiro al releer: el paso de contar historias de cuando te criticaron a ti y el caso de las dos carpetas iban emparejados en un solo paso, como si el caso fuera el ejemplar de esa regla, y el texto no dice eso. El caso esta en otra seccion y trata de ensenar a un recien llegado a encajar la critica, no de contar una historia propia. Van separados, cada uno con su linea. Lo que el texto NO dice, y por eso no esta escrito aqui, es hasta donde se puede endurecer el lenguaje segun la relacion, que es justo lo que el texto deja abierto al decir que la naturaleza de la relacion es la clave y que no esta defendiendo esa eleccion de palabras.",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

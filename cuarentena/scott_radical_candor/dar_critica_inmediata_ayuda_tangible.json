@@ -1,0 +1,44 @@
+{
+ "id": "dar_critica_inmediata_ayuda_tangible",
+ "titulo": "Dar la critica en el acto sin dejar que el buen resultado la tape, y ofrecer ayuda tangible con ella",
+ "denominaciones": {
+  "nombre_largo": "Como el texto desmonta la conversacion de dos minutos que puso en marcha el metodo: elogio concreto y sincero por delante, sin sandwich, escalando la franqueza cuando no te oyen, sin personalizar y con ayuda pagada encima de la mesa",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "operationalizing good guidance"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "sandwiching"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando alguien de tu equipo acaba de hacer algo que en conjunto ha salido bien y aun asi hay una cosa concreta que tiene que arreglar.",
+ "entregable_esperado": "La critica dicha en el acto, con el elogio concreto y sincero por delante y sin sandwich, escalada solo hasta donde hizo falta para que se oyera, dicha sobre el trabajo y no sobre la persona, con ayuda tangible ofrecida y con la constancia de que se puede arreglar.",
+ "pasos_accionables": [
+  "No dejes que el buen resultado global te impida senialar lo que hay que arreglar. El texto lo pone asi sobre el caso que analiza: aunque la charla habia ido bien en conjunto, Sheryl no dejo que el resultado positivo se interpusiera.",
+  "Hazlo inmediatamente, que segun el texto es lo que evita que el problema danie la reputacion de la persona donde trabaja.",
+  "Senala lo positivo que la persona consiguio, y hazlo a fondo y sinceramente. El texto subraya que en ese caso no hubo ningun intento de meter la critica en un sandwich entre elogios falsos, y que Sheryl menciono tres o cuatro cosas concretas que la autora habia dicho, para ilustrar su punto.",
+  "Que tu primer acercamiento sea suave pero directo.",
+  "Cuando se vea claro que no te estan oyendo, ponte mas directo. En el caso, la autora hizo dos veces el gesto de espantar una mosca con la mano y Sheryl le dijo que cuando hacia eso sentia que la estaba ignorando, y que iba a tener que ser muy muy directa para llegar a ella.",
+  "Aun entonces, no personalices: no lo conviertas en un rasgo esencial de la persona. El texto lo subraya sobre el caso, que dijo que sonaba estupida y no que era estupida.",
+  "Pregunta si la persona era consciente de eso. En el caso la autora contesto que si, que sabia que lo decia demasiado, y Sheryl le pregunto ademas si era porque estaba nerviosa.",
+  "Ofrece ayuda tangible en vez de dejar a la persona sola con el problema. En el caso fue recomendar un entrenador de oratoria y decir que la empresa lo pagaba, y repetir el ofrecimiento cuando la primera vez no fue recogido.",
+  "Cierra con que tiene arreglo. La formula del caso es que la buena noticia es que un entrenador ayuda de verdad con eso, y que esto se puede arreglar sin duda.",
+  "Cuenta con que aun haciendolo asi escuece un poco, que es lo que el texto dice del que la recibio."
+ ],
+ "resumen_teorico": "El texto no presenta esta conversacion como una anecdota sino como la pieza que desmonta para ensenar: la seccion se titula operacionalizar la buena guia, y su primer parrafo va enumerando uno a uno los medios que uso la jefa del caso. Por eso se extrae como procedimiento y no como postura: el inventario es del libro, medio a medio, y escribir los pasos es transcribirlo en imperativo. Los medios que el texto nombra son no dejar que el resultado positivo tape lo que hay que arreglar, la inmediatez, el elogio concreto a fondo y sincero, el rechazo expreso del sandwich, el acercamiento suave pero directo, la escalada de franqueza cuando no se oye, la prohibicion de personalizar con su ejemplar de sonaba contra era, y la ayuda tangible. El nombre del caso va dentro de los pasos que salen de la narracion, que es la condicion con la que esta casa admite la transcripcion de caso, y el entregable no lleva ningun dato del caso. Lo que el texto NO dice, y por eso no esta escrito aqui, es cuanto hay que esperar antes de escalar la franqueza, quien paga la ayuda cuando la empresa no la paga, ni que hacer si la persona sigue sin oirte despues de la escalada.",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}
