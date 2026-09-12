@@ -22094,3 +22094,105 @@ linea la escribe la aduana al insertar y **el lote 4 esta ABIERTO** (`D.39`). **
 se traen**, y el primero engorda la lista de lecturas `SANO` sin sede que `M.7` repite.
 
 ---
+
+## M.5. TAREA 3: EL LOTE 4, `cap_08` (`Cap. 5`, `Relationships`)
+
+### M.5.1. LA MEDIDA DEL TRAMO, REMEDIDA POR MI ANTES DE ABRIR NADA
+
+*`EXTRACTOR.md` 5: **una cifra del encargo no es fuente de una cifra mia.** Las cuatro salen
+de `sed -n '8,$p' <fichero> | wc -w`, que es la medida de CUERPO de esta casa, corrida hoy:*
+
+    $ for c in 07 08 09 10; do sed -n '8,$p' fuentes/scott_radical_candor/cap_$c.md | wc -w; done
+    cap_07  cuerpo 13678   entero 13706   lineas 433
+    cap_08  cuerpo  6140   entero  6166   lineas 189
+    cap_09  cuerpo 17482   entero 17508   lineas 433
+    cap_10  cuerpo  8976   entero  9002   lineas 263
+
+| unidad | rotulo textual, leido del encabezado del fichero | cuerpo | el encargo decia | |
+|---|---|---:|---:|---|
+| `cap_08` | `Relationships` (`unidad: Cap. 5`) | **6.140** | 6.140 | **coincide** |
+| `cap_09` | `Guidance` (`unidad: Cap. 6`) | **17.482** | 17.482 | **coincide** |
+| `cap_10` | `Team` (`unidad: Cap. 7`) | **8.976** | 8.976 | **coincide** |
+| | **el tramo de tres** | **32.598** | | |
+
+**LAS TRES COINCIDEN AL DIGITO CON EL ENCARGO**, y lo digo porque cuando no coincidan tambien
+lo voy a decir.
+
+### M.5.2. LA FRONTERA DE `cap_08`, **PUBLICADA ANTES DE CORTAR**, PIEZA A PIEZA
+
+*`EXTRACTOR.md` 10: la frontera se lee y se publica **antes** de tocar nada. **La tabla se
+imprime, no se teclea** (`EXTRACTOR.md` 5): las columnas de linea y de palabras salen del
+guion de cobertura que corri sobre el fichero, y su salida entera va pegada debajo.*
+
+    $ python (las 20 piezas declaradas, cruzadas contra las lineas con contenido de cap_08.md)
+    lineas con contenido de L8 en adelante : 91
+    piezas declaradas                      : 20
+    lineas con contenido NO cubiertas      : 0  []
+    SOLAPES                                : []
+    P1   L9    a L9         9 palabras  | An approach to establishing trust with your direct reports
+    P2   L11   a L13      228 palabras  | HOW DO YOU CREATE A climate in which Radically Candid relati
+    P3   L15   a L23      260 palabras  | STAY CENTERED
+    P4   L25   a L27      133 palabras  | Work-life integration
+    P5   L29   a L35      271 palabras  | Figure out your "recipe" to stay centered and stick to it
+    P6   L37   a L39       49 palabras  | Calendar
+    P7   L41   a L43       27 palabras  | Show up for yourself
+    P8   L45   a L65     1156 palabras  | FREE AT WORK
+    P9   L67   a L75      294 palabras  | MASTER THE ART OF SOCIALIZING AT WORK
+    P10  L77   a L81      216 palabras  | Even non-mandatory events can feel mandatory
+    P11  L83   a L87      148 palabras  | Booze
+    P12  L89   a L91      109 palabras  | RESPECT BOUNDARIES
+    P13  L93   a L95      184 palabras  | Building trust
+    P14  L97   a L103     342 palabras  | Sharing values
+    P15  L105  a L121     628 palabras  | Demonstrating openness
+    P16  L123  a L149     685 palabras  | Physical space
+    P17  L151  a L159     350 palabras  | Recognizing your own emotions
+    P18  L161  a L181     978 palabras  | Master your reactions to others' emotions
+    P19  L183  a L185      71 palabras  | * * *
+    P20  L187  a L189       2 palabras  | 6.
+
+> ### **LA COMPROBACION QUE VALE MAS QUE LA TABLA, Y LA HAGO PORQUE LA VUELTA 7 SE CAYO EXACTAMENTE AQUI:**
+>
+> **la suma de las 20 filas da `6.140` palabras, que es EXACTAMENTE el cuerpo del capitulo
+> medido aparte con `sed -n '8,$p' | wc -w`.** Cero lineas sin cubrir, cero solapes, y la
+> suma cuadra al digito con una medida que no viene de la tabla. **Una tabla de frontera que
+> declara cubrir un capitulo entero y no lo cubre es la caida que costo la parada de la
+> vuelta 7**, y aqui no hace falta creerme: hay dos medidas independientes que cierran.
+
+**Y AHORA EL TRATO DE CADA PIEZA, QUE ES LA MITAD QUE NO IMPRIME NINGUN GUION:**
+
+| # | lineas | rotulo del libro | trato | por que |
+|---:|---|---|---|---|
+| 1 | `L9` | *An approach to establishing trust with your direct reports* | **NO EXTRAIDA** | es el subtitulo del capitulo: **nombra, no procedimenta** (`P.5.1`) |
+| 2 | `L11` a `L13` | entrada del capitulo | **NO EXTRAIDA** | postura mas indice: *In this chapter I'll talk about staying centered, staying on an equal footing..., and the art (and dangers) of socializing at work*. **Enumera sus partes y no dice cuantas**, asi que **tampoco es `D.37`** |
+| 3 | `L15` a `L23` | `STAY CENTERED` / *You can't give a damn about others if you don't give a damn about yourself* | **NO EXTRAIDA** | cabecera de seccion sin inventario propio. Su cuerpo es postura (*The essence of leadership is not getting overwhelmed by circumstances*) y **remata en una pregunta que presenta a sus hijos**: *What am I recommending you do about it?* |
+| 4 | `L25` a `L27` | `Work-life integration` | **NODO** | `integrar_trabajo_vida_mejor_version` |
+| 5 | `L29` a `L35` | `Figure out your "recipe" to stay centered and stick to it` | **NODO** | `definir_receta_propia_mantenerse_centrado` |
+| 6 y 7 | `L37` a `L43` | `Calendar` **mas** `Show up for yourself` | **UN SOLO NODO, y es la unica fusion del capitulo** | `agendar_cuidados_propios_cumplirlos`. **`P.19`**: `L43` no tiene objeto propio, **es la continuacion de la cita de calendario que `L39` monta** (*Don't blow off those meetings with yourself*). Con 49 y 27 palabras de cuerpo, **son las dos piezas mas delgadas del capitulo**, y separadas darian nodos de tres y de dos pasos. **VA MARCADO DISCUTIBLE** |
+| 8 | `L45` a `L65` | `FREE AT WORK` | **NODO** | `ceder_autoridad_unilateral_equipo`. **Es la pieza mas grande del capitulo (1.156 palabras)** y el caso de Google va **nombrado dentro de los pasos** (manual 3.5) |
+| 9 | `L67` a `L75` | `MASTER THE ART OF SOCIALIZING AT WORK` | **NODO** | `dominar_arte_socializar_trabajo`. **Esta cabecera SI trae inventario propio** (paseo, comida campestre, conocer a las familias, invitarles a tu casa), y por eso no cae donde cayeron las piezas 3 y 12 |
+| 10 | `L77` a `L81` | `Even non-mandatory events can feel mandatory` | **NODO** | `evitar_presion_social_actos_equipo` |
+| 11 | `L83` a `L87` | `Booze` | **NO EXTRAIDA** | **es una advertencia y nada mas** (manual seccion 4, `P.11`): *A drink or two can be a social lubricant. But it can also backfire, and badly. Here are just a few of the nightmares...* y despues una lista de desastres. **Ni un solo acto nombrado para el lector** |
+| 12 | `L89` a `L91` | `RESPECT BOUNDARIES` | **NO EXTRAIDA** | cabecera que anuncia a sus hijos: **`Here are some things I've learned about walking this line`**. Es la **misma forma literal** por la que la pieza 12 de `cap_07` (`DEBATE`, *here are some ideas*) se dejo fuera y el auditor lo confirmo (`ACTA 17` 3.1) |
+| 13 | `L93` a `L95` | `Building trust` | **NODO** | `construir_confianza_equipo_tiempo_solas` |
+| 14 | `L97` a `L103` | `Sharing values` | **NODO** | `vivir_valores_propios_evitar_listarlos` |
+| 15 | `L105` a `L121` | `Demonstrating openness` | **NODO** | `demostrar_apertura_visiones_distintas` |
+| 16 | `L123` a `L149` | `Physical space` | **NODO** | `manejar_contacto_fisico_regla_platino`. **Trae la unica cifra de autor del capitulo** (los seis segundos de abrazo de Gretchen Rubin), que va a `atribuciones` |
+| 17 | `L151` a `L159` | `Recognizing your own emotions` | **NODO** | `reconocer_emociones_propias_avisar_equipo` |
+| 18 | `L161` a `L181` | `Master your reactions to others' emotions` | **NODO** | `dominar_reacciones_emociones_ajenas`. **Sus SIETE consejos no llevan rotulo de linea propia**: van en el cuerpo del parrafo, asi que **son pasos de un nodo y no siete nodos**. **VA MARCADO DISCUTIBLE** |
+| 19 | `L183` a `L185` | cierre del capitulo (`* * *`) | **NO EXTRAIDA** | postura de cierre |
+| 20 | `L187` a `L189` | `6.` / `GUIDANCE` | **NO EXTRAIDA** | **no es de este capitulo**: es la cabecera del siguiente, que el fichero arrastra. **Lo declaro en vez de descontarlo**, porque descontarlo por lo bajo es como se rompe una frontera |
+
+| `cap_08`, el saldo, **contado fila a fila y no deducido del total** | |
+|---|---:|
+| piezas de la frontera | **20** |
+| piezas que dan nodo | **13** |
+| **NODOS (una fusion de dos piezas)** | **12** |
+| piezas no extraidas, con su motivo escrito | **7** |
+| **13 mas 7** | **20** |
+
+> **EL RECUENTO SE CUENTA, NO SE DEDUCE**, que es el remedio que me escribi en la vuelta 17
+> y que me mordio bien alli (`22 y 11` contra `24 y 9`). **Lo he vuelto a contar fila a fila
+> antes de escribir el primer candidato: 13 piezas dan nodo, 7 no, y 12 nodos porque las
+> piezas 6 y 7 comparten uno.**
+
+---
