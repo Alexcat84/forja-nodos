@@ -1,0 +1,38 @@
+{
+  "id": "reconocer_emociones_propias_avisar_equipo",
+  "titulo": "Reconocer en voz alta el animo con el que llegas, para que tu equipo no crea que tu mal dia es culpa suya",
+  "denominaciones": {
+    "nombre_largo": "Reconocer tus propias emociones: no puedes esconderlas, no debes pagarlas con el equipo, y lo unico que queda es decirlas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "recognizing your own emotions"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando llegas al trabajo teniendo un mal dia y tu equipo ya te lo ha notado en la cara al entrar por la puerta.",
+  "entregable_esperado": "Tu animo dicho en voz alta y situado donde corresponde, con el equipo sabiendo que no es culpa suya y sin haberlo pagado con ellos.",
+  "pasos_accionables": [
+    "Cuenta con que tu equipo nota en que animo llegas: el texto cuenta que un companiero suyo le dijo una maniana que sabia que clase de dia iba a tener por el animo con el que ella entraba por la puerta, y que todo el mundo se fija en el animo del jefe porque no le queda mas remedio, porque es adaptativo.",
+    "No intentes reprimir lo que sientes, porque eso tampoco suele funcionar.",
+    "Cuenta con que no puedes esconder como te sientes a la gente que trabaja muy cerca de ti.",
+    "No lo pagues con tu equipo los dias malos, pero tampoco escondas que no estas en tu mejor momento.",
+    "Reconoce en voz alta como te sientes y que te esta pasando en el resto de tu vida, para que los demas no sientan que tu animo es culpa suya.",
+    "Di algo parecido a lo que el texto dice haber aprendido a decir: estoy teniendo un dia malisimo, estoy intentando no estar de mal humor, pero si parece que hoy salto a la minima es que salto, y no es por ti ni por tu trabajo, es porque he tenido una discusion fuerte con un amigo.",
+    "Y si lo que tienes es un disgusto emocional de verdad grave en tu vida, quedate en casa un dia: el texto dice que no querrias ir repartiendolo mas de lo que querrias repartir un virus por la oficina, que las emociones se contagian igual que los germenes, y que los dias de salud mental deberian tomarse mas en serio de lo que se toman."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_08.md, lineas 151 a 159, bajo el rotulo Recognizing your own emotions, dentro de la seccion RESPECT BOUNDARIES, que no tiene cabeza propia. ES HERMANO DE dominar_reacciones_emociones_ajenas, que sale del rotulo siguiente, y la pareja es deliberada del libro: uno mira tus emociones y el otro las de los demas. EL P6 TRANSCRIBE UNA FORMULA LITERAL DEL LIBRO, la de la linea 157, incluida su version suavizada del taco; es un guion que el texto escribe para que se use, no una plantilla mia. EL DIA EN CASA DEL P7 NO ES UN PERIODO INVENTADO: el libro escribe stay home for a day. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. P1 de la linea 153; P2, P3, P4 y P5 de la 155; P6 de la 157; P7 de la 159. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto se cuenta de lo que pasa en el resto de tu vida y cuanto no, a quien se le avisa de que te quedas en casa, y que se hace cuando el mal dia dura semanas.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

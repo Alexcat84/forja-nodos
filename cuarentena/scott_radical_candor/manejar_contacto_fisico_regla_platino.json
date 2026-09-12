@@ -1,0 +1,47 @@
+{
+  "id": "manejar_contacto_fisico_regla_platino",
+  "titulo": "Manejar el contacto fisico en el trabajo por la regla de platino, averiguando que deja comoda a la otra persona y haciendo eso",
+  "denominaciones": {
+    "nombre_largo": "Espacio fisico: cuando un abrazo demuestra que te importa alguien, cuando es agresion odiosa, y la regla de platino que decide",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "physical space, platinum rule"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando a alguien de tu equipo le pasa algo muy bueno o muy malo y el apreton de manos muy profesional se te queda corto.",
+  "entregable_esperado": "Un contacto fisico que demuestra que te importa la persona sin incomodar a nadie, decidido por lo que deja comodo al otro y no por lo que te dejaria comodo a ti.",
+  "pasos_accionables": [
+    "Cuenta con que el apreton de manos muy profesional no da para todo: el texto dice que cuando a un companiero le han matado a su pareja en un accidente de coche, o cuando alguien acaba de anunciar que se casa, un abrazo de verdad puede ser la manera mas eficaz del mundo de demostrar que te importa esa persona.",
+    "Si vas a criticar a alguien, mira lo que hizo Bill Campbell con Stacy Brown-Philpot: antes de decirle nada le dio un abrazo de oso enorme y un beso en la mejilla, y por eso ella supo que venia de un sitio calido y no se enfado con la critica de alguien a quien no conocia de nada.",
+    "Y aguanta el abrazo al menos seis segundos, que es lo que el texto cita de Gretchen Rubin para que la oxitocina y la serotonina fluyan lo mejor posible.",
+    "No des un abrazo sexual, ni humillante, ni obviamente no deseado, porque eso es agresion odiosa: el texto cuenta que un jefe suyo la abrazo cuando estaba disgustada por algo y despues empezo a restregarse contra ella de una manera sexual y nada bienvenida, y que desde entonces dejo de verle como mentor.",
+    "Y no des solo abrazos: si nunca desafias a la otra persona, tus abrazos pueden ser empatia ruinosa.",
+    "No te sientas mal cuando la otra persona no quiera que la abracen, y si el que no esta comodo con un abrazo eres tu, tambien vale: el texto cuenta que Russ Laraway, al leer esas paginas, le pidio directamente que no le abrazara.",
+    "Cumple la regla de platino y no la de oro: la de oro dice haz con los demas lo que querrias que hicieran contigo, y la de platino dice averigua que hace que la otra persona este comoda, y haz eso.",
+    "Si la mayoria de tu equipo esta comoda con los abrazos y un par de personas no, busca la manera de que esas dos no se sientan excluidas de unos abrazos que no quieren. Usa las palabras.",
+    "Puedes empujarte a ti mismo mas alla de donde estas comodo, pero no puedes incomodar a los demas: pruebalo solo con gente que quiera que la abracen."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_08.md, lineas 123 a 149, bajo el rotulo Physical space, dentro de la seccion RESPECT BOUNDARIES, que no tiene cabeza propia. TRAE LA UNICA CIFRA DE AUTOR DEL CAPITULO, los seis segundos de abrazo de Gretchen Rubin en The Happiness Project, y va a atribuciones por el principio 5. SU FECHA DE CORTE ES LA DE LA EDICION CITADA Y NO LA DE LA INVESTIGACION, porque el libro no fecha la investigacion; queda declarado como discutible en el reporte de esta vuelta en vez de inventarle una fecha. POR QUE ESTA SI ENTRA Y LOS 15.600 MILLONES DE establecer_credibilidad_pericia_humildad NO: aquella era parte de una cita textual que el libro usaba para analizar la eleccion de palabras de quien hablaba, y esta es una afirmacion con su autor y su fuente que el libro presenta como dato. LOS TRES CASOS, Bill Campbell con Stacy, el jefe que se restrego y Russ Laraway, van NOMBRADOS DENTRO de los pasos que los usan. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. P1 de la linea 125; P2 de las lineas 127 y 131; P3 de las lineas 139 y 141; P4, P5 y P6 de la 143; P7 y P8 de la 145; P9 de la 149. LO QUE DEJO FUERA: la linea 137, donde el marido de la autora cuenta que Campbell abrazaba a todo el mundo, y la 147, que es el remate de animo del tramo; ninguna de las dos nombra un acto que el lector no tenga ya en otro paso. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se averigua que deja comoda a la otra persona antes de tocarla, y cual es la manera concreta de que los dos que no quieren abrazos no se sientan excluidos, que el libro deja en usa las palabras.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [
+    {
+      "cifra": "para que el flujo de oxitocina y de serotonina, que mejoran el animo y favorecen el vinculo, sea lo mas eficaz posible, hay que aguantar un abrazo al menos seis segundos",
+      "autor": "Gretchen Rubin, en The Happiness Project, citada por Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "2019, que es la fecha de la edicion citada de Radical Candor; el libro no fecha la investigacion de la que sale la cifra"
+    }
+  ]
+}

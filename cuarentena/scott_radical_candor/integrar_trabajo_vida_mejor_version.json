@@ -1,0 +1,36 @@
+{
+  "id": "integrar_trabajo_vida_mejor_version",
+  "titulo": "Integrar trabajo y vida en vez de equilibrarlos, trayendo tu version mas completa al trabajo y llevandotela de vuelta a casa",
+  "denominaciones": {
+    "nombre_largo": "Integracion de trabajo y vida: el rechazo del juego de suma cero, y las horas que te mantienen centrado contadas dentro y no fuera",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "work-life integration"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando repartes tu tiempo entre el trabajo y el resto de tu vida tratandolo como un reparto en el que lo que gana uno lo pierde el otro.",
+  "entregable_esperado": "Tu version mas completa y mejor puesta en el trabajo y devuelta a casa, con las horas que te mantienen centrado contadas dentro del trato y no a costa de el.",
+  "pasos_accionables": [
+    "Insiste sin tregua en traer tu version mas completa y mejor al trabajo, y en llevartela de vuelta a casa.",
+    "No lo pienses como un equilibrio entre trabajo y vida, como una especie de juego de suma cero en el que todo lo que pones en tu trabajo se lo robas a tu vida y todo lo que pones en tu vida se lo robas a tu trabajo.",
+    "Pienselo en cambio como una integracion de trabajo y vida.",
+    "Cuenta las horas que necesitas para mantenerte centrado como parte de ese trato, y no como algo que haces para ti a costa de tu trabajo o de tu equipo: el texto pone de ejemplo las ocho horas de suenio que su autora necesita.",
+    "Cuenta con que tu trabajo y tu vida pueden darse un doble impulso el uno al otro, y con que el tiempo que pasas en el trabajo puede ser una expresion de quien eres como persona, un enriquecimiento enorme para tu vida y algo bueno para tus amigos y tu familia."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_08.md, lineas 25 a 27, bajo el rotulo Work-life integration, dentro de la seccion STAY CENTERED. LA SECCION NO TIENE CABEZA PROPIA: la pieza de las lineas 15 a 23 se dejo fuera porque su cuerpo es postura y remata en la pregunta que presenta a sus hijos, What am I recommending you do about it, asi que este nodo y sus dos hermanos de las lineas 29 a 43 cuelgan de una cabeza que el libro no escribio. ES LA PIEZA MAS CERCANA A LA POSTURA DE LAS QUE SI EXTRAIGO Y LO DIGO YO: lo que el libro pone aqui no es un inventario de medios sino un inventario de maneras de pensarlo, y lo que lo sostiene como procedimiento es que el propio texto lo escribe en imperativos, uno a uno, y no como descripcion. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 5 pasos, 5 TRANSCRIPCION, 0 PUENTE. Los cinco de la linea 27. LAS OCHO HORAS DEL P4 SON LAS DEL EJEMPLO DEL LIBRO Y VAN DICHAS COMO SUYAS: escribirlas como regla para el lector seria un puente de la especie PERIODO, y la seccion siguiente del propio libro dice que lo que le sirve a uno es basura para otro. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: que se hace cuando el trabajo no deja sitio para esas horas, y quien decide el reparto cuando no lo decides tu.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}
