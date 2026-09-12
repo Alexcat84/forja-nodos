@@ -20181,3 +20181,316 @@ el puesto* y la presentacion ofrecida.
 | **candidatos escritos** | **10** | ficheros nuevos en la bandeja |
 | **pasos escritos** | **117** | recorrido de los diez JSON |
 | **pasos inventados** | **0 de 117 = 0,00 por ciento** | relectura `D.30` de `K.6.3` |
+
+
+---
+
+# K.7. `cap_07` **NO CABE, Y LA CIFRA ES LA QUE DECIDE EL VOLUMEN DEL LOTE 5**
+
+*El encargo lo escribe con estas palabras y las cumplo al pie: **cierras los que quepan
+ENTEROS y lo dices con su cifra**, y que no quepan los tres **no es un fallo ni una excusa:
+es la medida.***
+
+    $ for f in cap_05 cap_06 cap_07 cap_08; do sed -n '8,$p' $f.md | wc -w; done
+    cap_05   8756   <- CERRADO ENTERO esta vuelta
+    cap_06  11587   <- CERRADO ENTERO esta vuelta
+    cap_07  13678   <- NO SE ABRE. Cero lineas leidas, cero candidatos escritos
+    cap_08   6140   <- no se abre
+
+| | |
+|---|---:|
+| **minado en esta vuelta** | **20.343 palabras** (8.756 mas 11.587) |
+| ritmo sostenido del lote 3, remedido por el auditor | **14.008 por vuelta** |
+| **lo minado hoy contra ese ritmo** | **1,45 veces** |
+| el tramo encargado entero | 34.021 palabras, **2,43 veces** el ritmo |
+| **`cap_07` solo** | **13.678 palabras, 0,98 veces el ritmo de una vuelta entera** |
+
+> ## **DOS CAPITULOS ENTEROS DE TRES, Y EL QUE FALTA PESA POR SI SOLO UNA VUELTA COMPLETA DEL LOTE ANTERIOR.**
+>
+> **`cap_07` NO SE ABRE A MEDIAS Y NO SE TOCA.** No he leido sus 433 lineas, no he escrito
+> ni un candidato suyo, y **no publico ninguna afirmacion sobre su contenido**: una lectura
+> no corrida no se cita (manual principio 7). **La unidad atomica es el capitulo**, y medio
+> `cap_07` habria costado lo mismo y valdria menos que los dos que si estan cerrados.
+>
+> **LA MEDIDA QUE ESTO DEJA PARA QUIEN DECIDA EL VOLUMEN, y es lo unico que afirmo de
+> ella:** esta vuelta sostuvo **1,45 veces** el ritmo del lote 3 **entregando dos capitulos
+> enteros, 17 candidatos y 185 pasos**, ademas de las otras tres tareas. **Tres capitulos
+> de este libro no caben en una vuelta**, y la razon esta medida: **un capitulo del lote 4
+> pesa 10.071 palabras de media contra 5.837 del lote 3**, asi que *cuatro capitulos* no
+> significa lo mismo en los dos libros. **La unidad la elige Alexis** (esta es la propuesta
+> 2 de la `ACTA 15` 11, que sigue su curso), **yo aporto la segunda vuelta de datos que esa
+> propuesta pedia.**
+
+---
+
+# K.8. LAS CUATRO MEDIDAS POR CAPITULO, EN UNA SOLA TABLA
+
+| unidad | palabras | candidatos | pasos | **pasos inventados** | quien la firma |
+|---|---:|---:|---:|---:|---|
+| `cap_00` (`Copyright Page`) | 218 | 0 | 0 | **sin definir, denominador cero** | ACTA 14 |
+| `cap_01` (`Preface`) | 1.510 | 1 | 9 | **0,00** (0 de 9) | ACTA 14 |
+| `cap_02` (`Introduction`) | 3.908 | 0 | 0 | **sin definir, denominador cero** | ACTA 14 |
+| `cap_03` (`How to Use This Book`) | 1.963 | 1 | 7 | **0,00** (0 de 7) | ACTA 14 |
+| `cap_04` (`Cap. 1`) | 6.263 | 6 | **48** | **6,25** (3 de 48) | ACTA 15, **denominador movido hoy** |
+| **`cap_05` (`Cap. 2`)** | **8.756** | **7** | **68** | **2,94 (2 de 68)** | **esta vuelta** |
+| **`cap_06` (`Cap. 3`)** | **11.587** | **10** | **117** | **0,00 (0 de 117)** | **esta vuelta** |
+| | | | | | |
+| **el lote 4 hasta hoy** | **34.205** | **25** | **249** | **2,01 (5 de 249)** | |
+
+**LA PEOR UNIDAD DEL LOTE SIGUE SIENDO `cap_04` CON 6,25, Y EL TOPE ES 10: EL FRENO NO SE
+DISPARA.** La escalada se decide sobre la peor y no sobre el promedio.
+
+**Y LO QUE ESTA TABLA NO AUTORIZA, con su motivo:** el denominador del lote **se ha
+cuadruplicado en una vuelta** (de 64 a 249 pasos) y la tasa ha bajado de 4,69 a 2,01, pero
+**los dos capitulos nuevos son los dos mas ricos en inventarios numerados que ha visto este
+lote** (`K.6.3`), asi que **la bajada mide el material tanto como la mano.** La banda de
+cada tasa la calcula el auditor, que es quien firma esta metrica.
+
+---
+
+# K.9. LOS DISCUTIBLES, MARCADOS **ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+*Van a ciegas y en orden de lo que mas me costo. La metrica de credito solo significa algo
+si el marcado se hizo antes.*
+
+| # | que marco | donde | si cae, cae aqui |
+|---:|---|---|---|
+| **1** | **La pieza 12 de `cap_05`** (`Manipulatively insincere praise` / `The false apology`, `:179` a `:187`) **la declare SIN NODO, y es la que mas me costo.** `:187` tiene una escalera de tres (entender el pensamiento del otro, buscar una solucion que atienda sus preocupaciones y las tuyas, y solo entonces admitir que te portaste mal) que **casi pasa la prueba del inventario** | `K.5.1` | si el auditor lee que esos tres son medios y no narracion de un caso, **falta un nodo en `cap_05`** |
+| **2** | **No toque el paso 8 de `cuidar_persona_completa_equipo`** para nombrar a Fred Kofman dentro, aunque el libro lo nombra en la misma frase que la maxima. Puse la atribucion en su campo y deje el paso como estaba | `K.4.b` | si se lee que un paso que usa la formula de un tercero tiene que nombrarlo dentro, **el arreglo en frio se quedo a medias** |
+| **3** | **Escribi UNA sola arista desde `fijar_proceso_trabajo_equipo` P7** y declare los otros dos procesos **en negativo**, sin arista | `K.3.c` | si se lee que *blindarte contra los errores del pasado* si tiene puerta y es `hacer_repaso_posterior_proyecto`, **me falta una arista y la declare imposible** |
+| **4** | **El par de `familia_id` 0,600**, `despedir_persona_franqueza_radical` contra `despedir_persona_respeto_franqueza`, **leido `SANO`.** Es la senial mas alta de toda la vuelta y tres de mis once pasos si desarrollan el P8 del vecino | `K.6.4` | si se lee `CONTINUA`, **el veredicto mas fuerte de la vuelta esta mal puesto** |
+| **5** | **La lectura de la tabla aplanada de dos columnas de `cap_06`**: que `:31`, `:35`, `:39` y `:43` son la columna empinada es lectura de la alternancia, no marca del fichero | `K.6.3` | si la alternancia no es la que creo, **el paso 10 del candidato 1 reparte mal ocho rasgos** |
+| **6** | **Fundi la pieza 9 de `cap_05`** (los cuatro fallos del correo, `:127`) **dentro del candidato de la frontera peligrosa**, en vez de hacer nodo propio | `K.5.1` | si se lee que `:127` es procedimiento propio, **falta un nodo y sobra media docena de pasos en otro** |
+| **7** | **Parti `Part ways` en DOS nodos** (decidir cuando, y como hacerlo) siguiendo los rotulos del libro, en vez de uno solo | `K.6.1` | si se lee que es un solo procedimiento, **fabrique dos hermanos de un mismo objeto** |
+| **8** | **Escribi OCHO atribuciones en esta vuelta**, todas de formulas de terceros sin cifra numerica, extendiendo a Horowitz, Vorrath, Forstall, Costolo y Jared Smith la adjudicacion que el auditor dio para Kofman | `K.4.b`, `K.5.2`, `K.6.2` | si se lee que la adjudicacion `3.5` valia solo para su caso, **ensanche una regla sin que nadie me lo pidiera** |
+| **9** | **`cap_06` con 0 puentes en 117 pasos.** Publico el cero con mi propia desconfianza al lado y con los doce inventarios del libro contados, pero **sigue siendo un cero** | `K.6.3` | si el auditor encuentra un puente ahi, **cae la cifra mas llamativa de la vuelta** |
+| **10** | **La densidad subio**: `cap_05` dio 7 candidatos en 8.756 palabras (0,80 por mil) y `cap_06` dio 10 en 11.587 (0,86 por mil), contra 0,96 de `cap_04`. Y los pasos por candidato pasaron de 8,0 en `cap_04` a 9,7 en `cap_05` y **11,7 en `cap_06`** | `K.8` | si se lee que los nodos de `cap_06` estan inflados y habria que partirlos, **la cifra que hay que mirar es esa y no la de puentes** |
+
+---
+
+# K.10. LAS DOS COLAS DE ARISTA, REPETIDAS AL CIERRE, Y UNA TERCERA QUE ABRE HOY
+
+*`D.29`: viven en su bloque titulado cada vuelta hasta que se puedan escribir. **Las tres
+tienen la misma condicion pendiente: el lote 4 esta ABIERTO.***
+
+| cola | madre y paso | hijo | por que hoy no |
+|---|---|---|---|
+| **1. LAS TRES RESPONSABILIDADES** | `revisar_ciclo_responsabilidades_relaciones` **P3** | las cabezas de `cap_05`, `cap_06` y `cap_07` | la madre esta en cuarentena **y los tres hijos tambien o no existen** |
+| **2. LA PRIMERA ARISTA ENTRE DOS LIBROS** | `gestionar_personas_equipo` **P2** | `desplegar_marco_franqueza_radical` | adjudicada admisible (`ACTA 15` 3.4); **el hijo vive en cuarentena de un lote abierto** |
+| **3. NUEVA HOY: LA CABEZA DE `cap_05` Y SUS TRES PARTES** | `empezar_cultura_franqueza_radical`, **su P3, su P5 y su P6** | `pedir_critica_equipo_premiarla`, `equilibrar_elogio_critica_equipo` y `criticar_trabajo_evitar_desanimo` | **los cuatro son candidatos de esta vuelta y los cuatro estan en cuarentena** |
+
+**LA COLA 1 SE MUEVE HOY, Y SE DICE CON NOMBRES.** La TAREA 4 mino `cap_05` y `cap_06`, que
+son dos de los tres capitulos de donde salen sus hijos. **Los candidatos a cabeza de cada
+responsabilidad, para que el dia de la insercion no haya que releer nada:**
+
+| responsabilidad que `cap_04.md:71` nombra | capitulo | **candidato a cabeza** | existe hoy? |
+|---|---|---|---|
+| crear una cultura de guia | `cap_05` | **`empezar_cultura_franqueza_radical`** | **SI**, escrito esta vuelta, en cuarentena |
+| entender que motiva a cada persona de tu equipo | `cap_06` | **`cambiar_potencial_trayectoria_crecimiento`** | **SI**, escrito esta vuelta, en cuarentena |
+| conseguir resultados de forma colaborativa | `cap_07` | **no existe** | **NO. `cap_07` no se mino** (`K.7`) |
+
+**Y LA COLA 3 ES `D.29` Y NO `D.37`, Y LO DIGO ANTES DE QUE SE PREGUNTE:** el paso que
+enumera (`:215` de `cap_05`) **nombra las tres fases y no dice cuantas son.** La cuenta la
+pone quien lee. **Es la misma vara con la que la `ACTA 15` 2.8 adjudico las cinco
+reuniones**, y elijo otra vez el camino que me obliga a escribir razon.
+
+---
+
+# K.11. LAS LECTURAS `SANO` SIN SEDE, CONTADAS Y TRAIDAS
+
+*El encargo prohibe parar por esto y manda contarlas. **Y prohibe por su nombre inventarles
+una sede**, asi que no la invento.*
+
+**LAS MIAS DE ESTA VUELTA, MEDIDAS POR MI: CUATRO**, las cuatro de `K.6.4`, las cuatro de la
+especie *espera a su candidato* (el candidato vive en cuarentena de un lote abierto, asi que
+la aduana no ha escrito su linea y no puede escribirla).
+
+**LA CIFRA ANTERIOR LA CITO COMO CONTRASTE Y NO LA REMIDO, Y DIGO POR QUE:**
+
+    $ sed -n '14553p' docs/loop/ACTA_AUDITOR.md
+    | **1** | **LA SEDE DEL `SANO` SIN VECINO. La cifra que pediste: 19 lecturas** (16 con
+    los dos ids vivos y 3 escritas hoy), **mas 11 que esperan a su candidato.** ...
+
+**Esas 30 lecturas viven repartidas en la prosa de `REPORTE.md` a lo largo de quince
+vueltas, y contarlas exige un criterio que nadie ha escrito.** `EXTRACTOR.md` 5 dice que un
+acta previa **se cita como contraste y nunca es fuente de una cifra nueva**, y eso es
+exactamente lo que hago: **cito la del auditor con su linea, aporto la mia medida, y no
+las sumo en una cifra que no he corrido.**
+
+> **LO QUE SI AFIRMO, PORQUE LO HE MEDIDO:** con las cuatro de hoy, **la especie que el
+> auditor predijo que crecia sola ha crecido**. Y las cuatro van a resolverse de golpe el
+> dia que el lote 4 entre: **la aduana las volvera a levantar y entonces si tendran sede.**
+
+---
+
+# K.12. EL CIERRE DE LA VUELTA 16
+
+## K.12.1. LAS CINCO GUARDAS, CORRIDAS AL CIERRE Y CON SU SALIDA PEGADA
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 203
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada,
+               vuelta, cita_incompleta, deprecado_en_superficie, arista_rota,
+               arista_incompleta, guiones
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py
+      total: 75 pruebas, 0 fallos, 0 errores
+    $ python forja.py rancios
+    BLOQUE DE VIGENCIA VERDE.
+      veredictos comprobados: 148
+      citas de enlace mutuo comprobadas: 0
+      todos siguen emitidos contra el texto que leyeron
+    $ python forja.py resolutor
+    nodos vivos: 203
+    nodos deprecados (archivo): 0
+    alias registrados: 0
+
+**LAS CINCO EN VERDE.**
+
+### El hook mordio una vez, y era mio
+
+    [pre-commit] barrido de guiones
+    BARRIDO DE GUIONES EN ROJO: 19 hallazgo(s)
+      .c6a.txt linea 5 columna 276: guion largo (U+2014)
+      ... (19 hallazgos, los 19 en .c6a.txt)
+    [pre-commit] COMMIT ABORTADO
+
+**ERA UN VOLCADO DE TRABAJO MIO**, el texto de `cap_06` numerado que use para leerlo, que
+deje en la raiz del repo, **donde el barrido si mira**. **Lo borre y reintente**, que es lo
+que `EXTRACTOR.md` 6 manda: *deja correr el hook; si falla, corriges y reintentas, jamas lo
+saltas.*
+
+**Y LO DECLARO EN VEZ DE CALLARLO, aunque no cueste nada**, por dos razones: es exactamente
+lo que le paso al auditor al abrir la vuelta 15 (`ACTA 15` 0.b), asi que **es la segunda vez
+seguida que un volcado de trabajo en la raiz rompe el hook**; y **el volcado no estaba
+citado en ninguna parte de este reporte**, asi que borrarlo no convirtio una suciedad en una
+cifra rota, que es lo que si habria pasado de haberlo publicado como prueba (`5.5`).
+
+## K.12.2. LAS CIFRAS DEL CIERRE, RECOMPUTADAS AL CIERRE (`EXTRACTOR.md` 4)
+
+| | al abrir (`K.0`) | **al cerrar** | que lo movio |
+|---|---:|---:|---|
+| nodos en `dataset/nodos.jsonl` | 203 | **203** | **nada: esta vuelta no inserto ni un nodo** |
+| aristas madre a hijo | 78 | **79** | la arista de la TAREA 2 |
+| lineas de `bitacora/VEREDICTOS.jsonl` | 147 | **148** | el `CONTINUA` de esa arista |
+| clases de los veredictos | `CONTINUA` 78, `SANO` 69 | **`CONTINUA` 79, `SANO` 69** | idem |
+| veredictos sin razon escrita (`D.8`) | 0 | **0** | |
+| lineas de `config/pares_mutuos.jsonl` | 1 | **1** | |
+| ficheros en `cuarentena/scott_radical_candor` | 8 | **25** | 7 de `cap_05` mas 10 de `cap_06` |
+| pasos en la bandeja del lote 4 | 63 | **249** | los 17 nuevos mas el paso del arreglo en frio |
+| atribuciones en la bandeja del lote 4 | 3 | **8** | 1 de la TAREA 3 y 4 de la TAREA 4 |
+| de la bandeja, dentro del grafo | 0 | **0** | **el lote 4 sigue ABIERTO** |
+
+**LOS 203 NODOS SON LA CIFRA MAS IMPORTANTE DE ESTA TABLA, Y NO POR LO QUE DICE SINO POR LO
+QUE NO SE MOVIO.** `MODO_INSERCION` llego en `insertar` por defecto y **no entro ni un
+nodo**, porque el unico lote vivo esta abierto y `EXTRACTOR.md` 15.7 dice que meter
+candidatos de un lote abierto **es una caida de dato, no un adelanto.**
+
+## K.12.3. EL INFORME DEL LOTE 4 AL CIERRE
+
+**CORRIENDO AL ESCRIBIR ESTA LINEA, Y LO DECLARO ASI EN VEZ DE PROMETER UNA CIFRA.** El
+informe de carpeta sobre **25** candidatos contra un grafo de **203** cruza 25 por 203 mas
+25 por 25 pares con las tres seniales, y esta corrida tarda mas que cualquier otro
+instrumento de la casa: la de **15** candidatos de `K.5.5` tardo mas de diez minutos.
+
+    $ python forja.py informe --carpeta cuarentena/scott_radical_candor         > .informe_lote4_vuelta16_cierre.txt
+
+**NINGUNA CIFRA DE ESTE REPORTE SE APOYA EN ESA CORRIDA**, y lo digo por la clausula que
+castiga una ruta publicada como prueba de una corrida que no resuelve (`5.5`): **la cito
+como deuda, no como evidencia.** Lo que si esta medido, candidato por candidato y con su
+salida pegada, son **los 17 informes individuales de `K.5.2` y `K.6.2`**, que es lo que
+`EXTRACTOR.md` 16 exige y lo que de verdad certifica que cada candidato esta escrito.
+
+**LA ULTIMA CORRIDA DE CARPETA QUE SI RESOLVIO** es la de `K.5.5`, sobre los 15 que habia
+al cerrar `cap_05`: **14 `[ENTRARIA]`, 1 `[BLOQUEARIA]`, 0 `[CAERIA]`, 0 `CHOCAN`**, en
+`.informe_lote4_tras_cap05.txt`, que **si esta en el arbol y tiene contenido.**
+
+**LO QUE SE PUEDE ANTICIPAR SIN CORRERLO, Y VA COMO PREVISION Y NO COMO MEDIDA** (para que
+el auditor pueda contrastarla, que es para lo que sirve publicar una prevision antes):
+**de los 25, los 17 nuevos pasaron su informe individual, 13 con `[ENTRARIA]` y 4 con
+`[BLOQUEARIA]` de un solo vecino cada uno salvo dos con dos**; los 8 viejos daban 7 y 1.
+**Asi que espero alrededor de 20 `[ENTRARIA]`, 5 `[BLOQUEARIA]`, 0 `[CAERIA]`**, y la unica
+cifra que no puedo anticipar es **`CHOCAN entre si dentro del lote`**, porque los informes
+individuales no comparan los candidatos nuevos entre ellos. **Si la corrida da otra cosa,
+la discrepancia se declara y no se resuelve copiando.**
+
+## K.12.4. LO QUE PROPONGO EN MI SEDE, SIN ADJUDICARME NADA (`EXTRACTOR.md` 14)
+
+| # | propuesta | por que la traigo y no la aplico |
+|---:|---|---|
+| **1** | **QUE EL VOLUMEN SE MIDA EN PALABRAS Y NO EN CAPITULOS.** Segunda vuelta de datos: el lote 3 sostuvo 14.008 por vuelta; esta vuelta sostuvo 20.343 con dos capitulos y tres tareas mas; el tramo de tres pedia 34.021. **Un capitulo del lote 4 pesa 10.071 de media contra 5.837 del lote 3** | es la propuesta 2 de la `ACTA 15` 11 y **la unidad la elige Alexis**. Yo aporto los datos que esa propuesta pedia |
+| **2** | **QUE SE MIRE LA LISTA DE `PALABRAS_VACIAS` CONTRA SU USO REAL.** Tres mordiscos mios en dos capitulos, los tres con la misma forma: `tras`, `hacia arriba` y `bajo`, y **en dos de los tres la palabra no funcionaba de preposicion** | **no propongo tocar la lista**, que es de Alexis y la guarda hace bien en no analizar sintaxis. Propongo **medirlo**: cuantos ids vivos del catalogo llevan una palabra de la lista en funcion no preposicional. Si son cero, la regla no cuesta nada; si no, la cifra existe |
+| **3** | **QUE `atribuciones` RECOJA LA PRACTICA QUE HOY SE ESTA ESCRIBIENDO.** Esta vuelta escribio **ocho** atribuciones de formulas de terceros **sin cifra numerica**, apoyandose en la adjudicacion `3.5`. **O eso es la practica, y entonces conviene que este dicho, o es un ensanchamiento mio** | es doctrina y **no me adjudico nada**: va como discutible 8 y como propuesta aqui |
+| **4** | **QUE SE MIDA LA COLA FALSA DE `familia_id` SOBRE LOS NODOS DE CASA.** De los **cuatro** pares que la aduana levanto esta vuelta, **los cuatro los levanto `familia_id`, los cuatro salieron `SANO` y ninguno de los otros dos umbrales levanto nada.** La calibracion midio la cola de la senial 3; **la que aqui esta produciendo toda la cola es la 2** | **la moratoria de maquinaria me prohibe encargar una medicion** sin caida de dato que la exija, y no la hay: hay cuatro casos. **La decide Alexis**, y suscribo la propuesta 5 de la `ACTA 15` 11 aniadiendole esta mitad |
+
+> **Y NO FABRIQUE MAQUINARIA.** Ni un arnes, ni una guarda, ni un lector nuevo. Los unicos
+> instrumentos que corri son los cinco de la casa mas `python forja.py informe` y
+> `python forja.py arista`. **No invente sede para los `SANO` sin vecino** y **no estrene la
+> arista entre dos libros.**
+
+## K.12.5. LAS CONDICIONES DE PARADA, REPASADAS UNA A UNA
+
+| condicion que el encargo escribe | se cumple? |
+|---|---|
+| **una regla de la casa me obliga a algo que rompe otra** | **NO.** El unico roce fue aparente y se deshizo leyendo: la contradiccion entre las dos doctrinas de traslado del `K.6.4` par 3 |
+| **necesito mover un umbral, el esquema, `D.27`, `D.30`, `D.37` o la vara de continua contra repite** | **NO.** Ninguna de las decisiones de hoy las mueve. La de `atribuciones` **aplica** una adjudicacion escrita, y si se lee que la ensancha, **va marcada como discutible y como propuesta, que es donde `EXTRACTOR.md` 14 la pone** |
+| **la TAREA 1 encuentra que una adjudicacion contradice una regla escrita que el auditor no cito** | **NO.** Las seis recogidas sin reabrir, y no encontre hecho nuevo en ninguna |
+| **una lectura de `cap_05` a `cap_07` me pide fundir un nodo que ya vive en el grafo** | **NO.** Los cuatro pares levantados salieron `SANO` y ninguno es `REPITE` |
+
+> ## **NO HAY PARADA.** Y **yo no escribo `docs/loop/PARA_ALEXIS.md`** (`D.28`): si algo de lo que traigo debe subir, lo sube el auditor.
+
+## K.12.6. EL SALDO DE LA VUELTA 16
+
+| | |
+|---|---|
+| **tareas** | **4 encargadas, 4 CERRADAS.** Tope cinco, **sin cola por tope** |
+| **insercion** | **CERO nodos, y es la letra de `D.39`**, no una eleccion: el unico lote vivo esta ABIERTO |
+| **registros** | 6 adjudicaciones recogidas sin reabrir, 2 correcciones del auditor recogidas, **4 puntos de `ORDEN_DE_LOTES.md` corregidos sin borrar una palabra y las cuatro cifras remedidas por mi** |
+| **aristas** | **1 escrita** (78 a 79), con la linea del libro que la elige pegada. **`D.19` medida por decimoquinta vez seguida: ninguna senial la levanta** |
+| **medidas nuevas** | los otros dos procesos del paso 7 **en negativo con su motivo**; **anadir `atribuciones` no mueve ninguna senial**; **los cuatro pares de la vuelta los levanta `familia_id` y los cuatro son `SANO`** |
+| **capitulos minados** | **2 enteros** (`cap_05` y `cap_06`), **20.343 palabras**, **1,45 veces** el ritmo del lote 3 |
+| **candidatos** | **17 escritos**, **185 pasos**, **todos por la aduana en el acto, uno por vez**. Saldo final del lote: 25 ficheros, 249 pasos |
+| **caidas de guarda** | **1**, la regla 3 sobre `bajo`, **corregida en el acto y verde al segundo intento** |
+| **`PASOS INVENTADOS`** | `cap_05` **2,94** (2 de 68), `cap_06` **0,00** (0 de 117). **Peor unidad del lote: `cap_04` con 6,25, tope 10, freno NO disparado** |
+| **veredictos** | **1 a la bitacora** (el de la arista) y **4 lecturas `SANO` sin sede**, contadas y traidas |
+| **discutibles marcados a ciegas** | **10** |
+| **propuestas en mi sede** | **4** |
+| **guardas** | **las cinco en verde**, con un rojo intermedio del hook **que era mio y se declara** |
+| **parada** | **NO** |
+
+> # **LO QUE ESTA VUELTA DEJA MEDIDO, QUE ES LO QUE MAS IMPORTA**
+>
+> **1. LA PUERTA DE ENTRADA SE ELIGE CON UNA FRASE DEL LIBRO, NO CON UNA SENIAL NI CON UN
+> CRITERIO MIO.** Las dos aristas que cuelgan del paso 7 existen porque el libro dice *el
+> primer paso* y *el paso siguiente*. **Las otras dos no se escriben, y el motivo es el
+> mismo del reves: esas dos frases no existen.** La medida que lo prueba es de una linea:
+> **las cuatro frases del paso 7 aparecen UNA sola vez en los doce ficheros del libro**, y
+> solo dos de ellas tienen una segunda aparicion que elija puerta.
+>
+> **2. EL CERO DE `cap_06` NO MIDE LA MANO: MIDE EL CAPITULO, Y LO DIGO YO ANTES QUE NADIE.**
+> 117 pasos y ningun puente, con **doce inventarios numerados por el propio libro** en una
+> sola unidad. La vuelta 15 midio que el parrafo rico da cero puentes y el pobre da el 83
+> por ciento; **`cap_06` es el ejemplar extremo del lado rico**, y publicar el cero sin esa
+> frase al lado seria vender como merito lo que es material.
+>
+> **3. LA ESPECIE DE PUENTE MAS CARA SE CAZA BUSCANDO EL EMPAREJAMIENTO Y NO LAS CITAS.** El
+> puente de ESTRUCTURA de `cap_05` tenia **las dos mitades bien citadas** y aun asi el paso
+> no era del libro. La vuelta 15 lo bautizo; **esta vuelta lo cazo mientras escribia, y la
+> tecnica que funciono se puede escribir en una linea: en todo paso que junte dos lineas
+> del libro, pregunta por la juntura y no por las mitades.**
+>
+> **4. TODA LA COLA DE LECTURA DE ESTA VUELTA LA PRODUJO UNA SOLA SENIAL.** Cuatro pares
+> levantados, **cuatro por `familia_id`**, cero por las otras dos, **y los cuatro `SANO`.**
+> Con 203 nodos y una casa que escribe en un solo idioma por obligacion de la regla 1, **la
+> clave de familia empieza a emparejar verbos en vez de objetos**: `cambiar` con `cambiar`,
+> `reconocer_recompensar` con `reconocer_recompensar`, `despedir` con `despedir`. **No
+> propongo tocar el umbral. Propongo que se mida**, porque la calibracion midio la cola de
+> la senial 3 y hoy la que cuesta lecturas es la 2.
+>
+> **5. Y LA QUE MENOS ME GUSTA, QUE ES MIA:** la regla 3 me mordio **por tercera vez en dos
+> capitulos**, y las tres con la misma forma. Escribi los siete ids de `cap_05` con la lista
+> delante y no cayo ninguno; **falle en el unico id de `cap_06` donde la palabra no me
+> parecio una preposicion.** Es el aviso del encargo cumpliendose a la letra: *mientras no
+> este resuelta, mirala dos veces.* **La mire una.**
