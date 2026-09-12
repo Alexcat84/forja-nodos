@@ -17867,3 +17867,177 @@ acortarla.
 > a un nodo que **hoy no existe en el grafo porque es otro candidato de este mismo lote**, y
 > eso es precisamente lo que estas 4.556 mediciones anticipan. **Si al cerrar la cifra real
 > se sale de esa horquilla, la diferencia se declara y no se ajusta el pronostico.**
+
+---
+
+# J.3.d. **LA REANUDACION DE LA TAREA 1**, abierta ANTES de la primera insercion de este turno
+
+*`EXTRACTOR.md` 3: el reporte crece por anexion. Lo de arriba no se reescribe. **La vuelta 15
+se corto por un congelamiento de la maquina del fundador** y el encargo trae la correccion
+declarada que la reanuda. Este bloque es lo que mido YO al reanudar, y lo mido antes de
+insertar nada.*
+
+## J.3.d.1. EL ESTADO **REMEDIDO**, porque que una cifra este escrita en el encargo no exime de comprobarla
+
+**El encargo lo dice con esas palabras** (*REMIDELO TU con su instrumento al lado antes de
+publicar nada*), asi que corro los instrumentos y pego la salida:
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git log -1 --format='%H %ad %s' --date=iso
+    60c7210c3749b64347dd4cbef834f0f7651a115b 2026-09-11 21:43:05 -0400 Intendencia de la reanudacion: los cinco instrumentos de la vuelta 15 cortada entran al arbol
+
+    $ wc -l < dataset/nodos.jsonl              ->  186
+    $ wc -l < bitacora/VEREDICTOS.jsonl        ->  132
+    $ wc -l < config/pares_mutuos.jsonl        ->    1
+
+    $ python -c "recorre carpeta y cuenta ficheros y pasos_accionables"
+    cuarentena/zhuo_manager                         :   17 ficheros,   137 pasos
+    cuarentena/_insertados/zhuo_manager             :  119 ficheros,   970 pasos
+    cuarentena/scott_radical_candor                 :    2 ficheros,    16 pasos
+
+    $ python forja.py gate        ->  GATE VERDE. nodos verificados: 186
+    $ python forja.py guiones     ->  BARRIDO DE GUIONES VERDE
+    $ python tests/test_aceptacion.py  ->  total: 75 pruebas, 0 fallos, 0 errores
+
+| cifra | el encargo escribe | **mi medicion de hoy** | cuadra |
+|---|---:|---:|---|
+| `dataset/nodos.jsonl` | 186 | **186** | si |
+| `bitacora/VEREDICTOS.jsonl` | 132 | **132** | si |
+| `cuarentena/zhuo_manager/` pendientes | 17 | **17** | si |
+| `cuarentena/_insertados/zhuo_manager/` | 119 (68 mas 51) | **119** | si |
+
+**LAS CUATRO CUADRAN, Y ESO NO ERA GRATIS:** la cifra de partida de `J.3.a` era **135** y
+hoy es **186**, porque la propia vuelta 15 metio **51** antes del corte. **135 mas 51 igual
+186**, que es la aritmetica que ata el bloque de apertura con este. **El texto de `J.3.a` no
+se retoca**: se lee con este al lado (`EXTRACTOR.md` 4, la apertura se mide antes de la
+primera operacion y lo de despues es estado intermedio).
+
+## J.3.d.2. **LA FRONTERA ENTRE LO HECHO Y LO PENDIENTE, COMPROBADA A MAQUINA Y NO DE PALABRA**
+
+*Es la comprobacion que decide si puedo reanudar sin romper nada: un archivado fuera del
+grafo seria un nodo que se archivo sin entrar, y un pendiente dentro del grafo seria un
+nodo que entro sin archivarse.*
+
+    $ python -c "cruza los ids del grafo contra las dos carpetas"
+    nodos en grafo: 186
+    pendientes en bandeja: 17      de ellos EN GRAFO: 0
+    archivados: 119                de ellos FUERA del grafo: 0
+
+**CERO Y CERO. LA FRONTERA ES LIMPIA**, y por eso los 51 que ya entraron **no se
+reinsertan**: la aduana los rechazaria por *el id ya vive en el grafo* y haria bien.
+
+**LOS 17 PENDIENTES SON EXACTAMENTE LOS PUESTOS #52 A #68** de
+`.orden_insercion_lote3.txt`, es decir **`cap_10` entero (9) y `cap_11` entero (8)**. El
+corte no cayo en medio de un capitulo por casualidad: cayo donde `cap_09` acababa.
+
+    $ sed -n '52,68p' .orden_insercion_lote3.txt
+    52 cap_10 alinear_prioridades_reporte_directivo
+    53 cap_10 decidir_directivo_no_encaja_papel
+    54 cap_10 entregar_problema_dificil_reporte
+    55 cap_10 equilibrar_microdireccion_ausencia
+    56 cap_10 facilitar_gente_diga_verdad
+    57 cap_10 pasar_direccion_directa_indirecta
+    58 cap_10 reemplazarse_trabajo_propio
+    59 cap_10 reservar_valor_unico_prioridades_arriba
+    60 cap_10 sostener_cambio_contexto_continuo
+    61 cap_11 comunicar_valores_diez_formas
+    62 cap_11 contrastar_cultura_actual_aspirada
+    63 cap_11 inventar_tradiciones_celebrar_valores
+    64 cap_11 juzgar_cultura_renuncias_equipo
+    65 cap_11 reconocer_decision_dificil_valores
+    66 cap_11 actuar_conducta_contraria_valores
+    67 cap_11 revisar_incentivos_trampas_equipo
+    68 cap_11 vivir_primero_valor_declarado
+
+## J.3.d.3. **DISCREPANCIA DECLARADA CON EL ENCARGO: EL VEREDICTO QUE EL ENCARGO DA POR INEXISTENTE EXISTE**
+
+**EL ENCARGO ESCRIBE, en su correccion declarada:**
+
+> *DONDE SE PARO, exacto: el ultimo candidato pidio veredicto con
+> `repartir_equipo_cartera_horizontes` por vecino, y el turno se corto antes de escribirlo.
+> **Ese veredicto no existe y hay que leerlo**, no darlo por hecho.*
+
+**MI MEDICION DE HOY DICE QUE SI EXISTE, Y ESTA EN SU SEDE.** El candidato que pidio ese
+vecino es `involucrar_varios_entrevistadores`, el #51 del orden:
+
+    $ grep -n 'involucrar_varios_entrevistadores' bitacora/VEREDICTOS.jsonl | cut -c1-120
+    132:{"arista": "", "candidato": "involucrar_varios_entrevistadores", "detalle_paso": "paso 3 del candidato contra paso 6
+
+    $ python -c "lee la linea 132 de la bitacora"
+    linea 132
+    veredicto: SANO
+    vecino: repartir_equipo_cartera_horizontes
+    razon: es el sexto de los ocho asimetricos de D.36, el de similitud mas alta de los ocho
+    (0,375), y tambien el que mas tuve que mover: baje del puesto 29 al 51 para que quedara
+    detras de este vecino y el par se leyera. [...] ES PARECIDO DE PLANTILLA PROPIA, y lo digo
+    por su nombre porque es la especie que mas veces ha levantado la senial 1 en esta vuelta
+
+    $ python -c "mira si el id vive en el grafo"
+    involucrar_varios_entrevistadores en grafo: True
+
+**LAS TRES PRUEBAS DE QUE EL TURNO NO SE CORTO AHI, y son independientes:**
+
+1. **el veredicto esta en la bitacora**, en la linea 132, que es **la ultima**, con su
+   `SANO` y una razon de nueve renglones que nadie escribe por inercia;
+2. **el nodo esta en el grafo** y **esta archivado** en `cuarentena/_insertados/`, y por eso
+   los pendientes son 17 y no 18;
+3. **el log de la corrida lo explica**: su ultima entrada es el bloqueo de
+   `involucrar_varios_entrevistadores` con codigo 2, **y el reintento con `--veredicto` se
+   corrio a mano desde la linea de ordenes**, que no escribe en ese log. El log acaba en el
+   bloqueo porque el log solo ve al conductor, **no porque el trabajo acabara ahi.**
+
+**DONDE SE CORTO DE VERDAD, MEDIDO:** despues del #51 y **antes del #52**, con el veredicto
+del #51 ya escrito. **El corte cayo entre dos candidatos, no dentro de uno**, y eso es
+coherente con lo que el propio encargo dice del congelamiento (*en un bloqueo de la aduana y
+no a mitad de una escritura*).
+
+> **LO QUE HAGO CON LA DISCREPANCIA, y es lo que manda `EXTRACTOR.md` 5:** la declaro con su
+> linea pegada y **no la resuelvo copiando**. En concreto **NO vuelvo a escribir ese
+> veredicto**: escribirlo otra vez seria meter en la bitacora un duplicado de una lectura ya
+> hecha para que el encargo tenga razon. **Y tampoco lo doy por hecho sin mirar**, que es lo
+> que el encargo teme: lo he abierto, lo he leido entero y lo pego arriba.
+>
+> **ESTO ES EL DISCUTIBLE 2 DE LA VUELTA**, marcado antes de saber si acierto.
+
+## J.3.d.4. EL CENSO ESPERADO DE LA REANUDACION, publicado **ANTES**
+
+    $ wc -l < dataset/nodos.jsonl                      ->  186      (remedido arriba)
+    $ ls cuarentena/zhuo_manager/*.json | wc -l        ->   17
+
+    CENSO ESPERADO AL CERRAR LA TAREA 1 : 186 + 17 = 203 nodos
+    ARCHIVADOS ESPERADOS                : 119 + 17 = 136 ficheros
+    PENDIENTES ESPERADOS EN LA BANDEJA  :   0
+
+**LOS 203 SON LOS MISMOS 203 QUE `J.3.a` PRONOSTICO CON OTRA ARITMETICA** (135 mas 68). **El
+pronostico del bloque de apertura sigue en pie y no se ajusta**, que es para lo que se
+publica antes.
+
+## J.3.d.5. `D.36` EN EL TRAMO QUE QUEDA: **hizo falta reordenar, y el reordenamiento ya esta dentro del fichero**
+
+*El punto 2 del encargo pide decir **si hizo falta reordenar o no**, porque comprobarlo y que
+no haga falta no es lo mismo que no mirarlo. La medida entera de los 4.556 pares dirigidos
+esta en `J.3.c` y no se repite. Lo que digo aqui es **que le toca al tramo #52 a #68**.*
+
+**DE LAS OCHO RESTRICCIONES ASIMETRICAS, UNA SOLA VIVE ENTERA EN ESTE TRAMO:**
+
+| # de `J.3.c` | si entra despues, el par se lee | vecino | sim (cand a vec) | sim (vec a cand) |
+|---:|---|---|---:|---:|
+| 1 | `actuar_conducta_contraria_valores` | `reconocer_decision_dificil_valores` | **0,355** | no levanta |
+
+**Y ES LA QUE EL ORDEN DEL LIBRO ROMPIA:** alfabeticamente `actuar_...` va **primero**
+dentro de `cap_11` (#61 del orden base) y su vecino **despues** (#66). Por eso el orden
+reordenado lo baja al **#66** y sube al vecino al **#65**:
+
+    $ sed -n '65,66p' .orden_insercion_lote3.txt
+    65 cap_11 reconocer_decision_dificil_valores
+    66 cap_11 actuar_conducta_contraria_valores
+
+> **LA RESPUESTA PARA ESTE TRAMO ES SI: HIZO FALTA REORDENAR, Y SIN ESE MOVIMIENTO EL PAR DE
+> `cap_11` NO SE HABRIA LEIDO.** Las otras siete restricciones se agotaron en los #1 a #51,
+> que ya entraron, **y las siete se cumplieron**: se comprueba leyendo el fichero de orden,
+> no confiando en el.
+
+**LOS 17 SE INSERTAN EN EL ORDEN DEL FICHERO, SIN TOCARLO.** Reordenar ahora la cola
+restante seria cambiar el orden a mitad de lote, y el orden del lote 3 ya esta fijado y
+publicado en `J.3.c`.
