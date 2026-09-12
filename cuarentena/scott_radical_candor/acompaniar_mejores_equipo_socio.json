@@ -1,49 +1,49 @@
 {
- "id": "acompaniar_mejores_equipo_socio",
- "titulo": "Acompaniar a los que hacen el mejor trabajo como socio, ni de jefe ausente ni de microgestor",
- "denominaciones": {
-  "nombre_largo": "Lo que necesitan de ti por igual la estrella de rock y la superestrella: que no los ignores porque no te necesitan, y que te arremangues con ellos en vez de solo aconsejar",
-  "otros_idiomas": [
-   {
-    "idioma": "ingles",
-    "termino": "be a partner, not an absentee manager or a micromanager"
-   }
+  "id": "acompaniar_mejores_equipo_socio",
+  "titulo": "Acompaniar a los que hacen el mejor trabajo como socio, ni de jefe ausente ni de microgestor",
+  "denominaciones": {
+    "nombre_largo": "Lo que necesitan de ti por igual la estrella de rock y la superestrella: que no los ignores porque no te necesitan, y que te arremangues con ellos en vez de solo aconsejar",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "be a partner, not an absentee manager or a micromanager"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando te descubres dedicando mas tiempo a quien va mal que a quien va bien, o diciendote que a los que hacen buen trabajo no hace falta molestarlos porque no te necesitan.",
+  "entregable_esperado": "Tiempo real dedicado a los que hacen el mejor trabajo, con sus obstaculos conocidos al detalle y con al menos parte del trabajo hecho a su lado y no solo aconsejado desde fuera.",
+  "pasos_accionables": [
+    "Antes de distinguir entre estrellas de rock y superestrellas, atiende a lo que las dos necesitan de ti por igual: que te concentres en ellas y te asegures de que tienen todo lo que hace falta para seguir haciendo un gran trabajo.",
+    "No ignores a quien hace el mejor trabajo con la excusa de que no te necesita o de que no quieres microgestionar. El texto lo llama uno de los errores mas comunes de los jefes y dice que ignorar a alguien es una forma terrible de construir una relacion.",
+    "Cuenta con lo que el texto opone a la receta de contratar bien y dejarlos en paz, en boca de Dick Costolo: es como decir que para tener un buen matrimonio te cases con la persona adecuada y despues evites pasar tiempo con ella.",
+    "Cuenta con lo que te cuesta ignorarlos, que el texto enumera: no entiendes como quieren y necesitan crecer en su puesto en ese momento de sus vidas, asignas las tareas equivocadas a las personas equivocadas, promocionas a quien no toca, y no les das la guia que necesitan.",
+    "Ten delante la cuenta que el texto hace del reparto de tu tiempo: cada minuto que pasas con alguien que hace un gran trabajo rinde en los resultados del equipo mucho mas que el tiempo que pasas con alguien que esta fallando.",
+    "En vez de jefe ausente o microgestor, se socio: dedica el tiempo a ayudar a quien hace el mejor trabajo a superar obstaculos y a hacer que su buen trabajo sea todavia mejor.",
+    "Cuenta con lo que eso te va a costar, que el texto dice sin adornarlo: lleva tiempo, porque exige que sepas bastante del detalle del trabajo de la persona como para entender sus matices.",
+    "Arremangate y ayuda a hacer el trabajo, y no solo a aconsejar sobre el.",
+    "Haz muchas preguntas y desafia a la persona.",
+    "No dediques mas tiempo a quien va mal que a quien va bien. El texto da dos razones: no es justo para quien lo esta haciendo bien, y pasar de grande a extraordinario inspira mas a todo el mundo que pasar de malo a mediocre.",
+    "Cuenta con el efecto secundario que el texto aniade: ver que aspecto tiene un desempenio verdaderamente excepcional ayuda a quienes estan fallando a ver con mas claridad que se espera de ellos."
   ],
-  "sigla": ""
- },
- "condiciones_activacion": "Cuando te descubres dedicando mas tiempo a quien va mal que a quien va bien, o diciendote que a los que hacen buen trabajo no hace falta molestarlos porque no te necesitan.",
- "entregable_esperado": "Tiempo real dedicado a los que hacen el mejor trabajo, con sus obstaculos conocidos al detalle y con al menos parte del trabajo hecho a su lado y no solo aconsejado desde fuera.",
- "pasos_accionables": [
-  "Antes de distinguir entre estrellas de rock y superestrellas, atiende a lo que las dos necesitan de ti por igual: que te concentres en ellas y te asegures de que tienen todo lo que hace falta para seguir haciendo un gran trabajo.",
-  "No ignores a quien hace el mejor trabajo con la excusa de que no te necesita o de que no quieres microgestionar. El texto lo llama uno de los errores mas comunes de los jefes y dice que ignorar a alguien es una forma terrible de construir una relacion.",
-  "Cuenta con lo que el texto opone a la receta de contratar bien y dejarlos en paz, en boca de Dick Costolo: es como decir que para tener un buen matrimonio te cases con la persona adecuada y despues evites pasar tiempo con ella.",
-  "Cuenta con lo que te cuesta ignorarlos, que el texto enumera: no entiendes como quieren y necesitan crecer en su puesto en ese momento de sus vidas, asignas las tareas equivocadas a las personas equivocadas, promocionas a quien no toca, y no les das la guia que necesitan.",
-  "Ten delante la cuenta que el texto hace del reparto de tu tiempo: cada minuto que pasas con alguien que hace un gran trabajo rinde en los resultados del equipo mucho mas que el tiempo que pasas con alguien que esta fallando.",
-  "En vez de jefe ausente o microgestor, se socio: dedica el tiempo a ayudar a quien hace el mejor trabajo a superar obstaculos y a hacer que su buen trabajo sea todavia mejor.",
-  "Cuenta con lo que eso te va a costar, que el texto dice sin adornarlo: lleva tiempo, porque exige que sepas bastante del detalle del trabajo de la persona como para entender sus matices.",
-  "Arremangate y ayuda a hacer el trabajo, y no solo a aconsejar sobre el.",
-  "Haz muchas preguntas y desafia a la persona.",
-  "No dediques mas tiempo a quien va mal que a quien va bien. El texto da dos razones: no es justo para quien lo esta haciendo bien, y pasar de grande a extraordinario inspira mas a todo el mundo que pasar de malo a mediocre.",
-  "Cuenta con el efecto secundario que el texto aniade: ver que aspecto tiene un desempenio verdaderamente excepcional ayuda a quienes estan fallando a ver con mas claridad que se espera de ellos."
- ],
- "resumen_teorico": "El inventario es del texto y es de medios, no de metas: lo que cuesta ignorar a los mejores viene enumerado en cuatro consecuencias, y lo que hace un socio viene en cuatro actos, conocer el detalle, ayudar a superar obstaculos, arremangarse a hacer el trabajo y preguntar y desafiar. Se extrae aparte de los dos procedimientos que le siguen en el capitulo porque el propio texto lo separa a proposito: dice que antes de entrar en las diferencias entre los dos tipos conviene mirar lo que los dos necesitan de ti. La cita del primer ejecutivo de una red social entra como ejemplar nombrado dentro de su paso y no como doctrina. Lo que el texto NO dice, y por eso no esta escrito aqui, es cuanto tiempo hay que dedicar a cada cual, ni donde esta la linea entre arremangarse y microgestionar, que es justo la que este nodo evita cruzar sin decir donde esta.",
- "atribuciones": [
-  {
-   "cifra": "la comparacion con la que el texto desmonta la receta de contratar bien y dejarlos en paz: es como decir que para tener un buen matrimonio te cases con la persona adecuada y despues evites pasar tiempo con ella",
-   "autor": "Dick Costolo, citado por Kim Scott",
-   "fuente": "scott_radical_candor",
-   "fecha_corte": "el texto lo presenta como primer ejecutivo de Twitter entre 2010 y 2015, y no da anio ni obra para la frase"
-  }
- ],
- "dominio": "gestion_equipos",
- "estado": "vivo",
- "fuentes": [
-  {
-   "clave": "scott_radical_candor",
-   "fecha": "2026-09-12"
-  }
- ],
- "ids_alias": [],
- "nodos_previos": [],
- "nodos_siguientes": []
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_06.md, unidad Cap. 3, Understand What Motivates Each Person on Your Team. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la que encarga anadir la unidad a los 24 candidatos de la bandeja que no la nombraban: la costumbre de nombrarla empieza en cap_07 y estos son anteriores. NO SE CAMBIA NI UN PASO NI UNA CITA: lo unico que se anade es de que unidad salio. LEIDA DEL FICHERO FUENTE Y NO DE UNA TABLA, con el ancla textual unica que la sostiene, 'absentee manager', corrida con grep contra las quince unidades del libro. El inventario es del texto y es de medios, no de metas: lo que cuesta ignorar a los mejores viene enumerado en cuatro consecuencias, y lo que hace un socio viene en cuatro actos, conocer el detalle, ayudar a superar obstaculos, arremangarse a hacer el trabajo y preguntar y desafiar. Se extrae aparte de los dos procedimientos que le siguen en el capitulo porque el propio texto lo separa a proposito: dice que antes de entrar en las diferencias entre los dos tipos conviene mirar lo que los dos necesitan de ti. La cita del primer ejecutivo de una red social entra como ejemplar nombrado dentro de su paso y no como doctrina. Lo que el texto NO dice, y por eso no esta escrito aqui, es cuanto tiempo hay que dedicar a cada cual, ni donde esta la linea entre arremangarse y microgestionar, que es justo la que este nodo evita cruzar sin decir donde esta.",
+  "atribuciones": [
+    {
+      "cifra": "la comparacion con la que el texto desmonta la receta de contratar bien y dejarlos en paz: es como decir que para tener un buen matrimonio te cases con la persona adecuada y despues evites pasar tiempo con ella",
+      "autor": "Dick Costolo, citado por Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "el texto lo presenta como primer ejecutivo de Twitter entre 2010 y 2015, y no da anio ni obra para la frase"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
 }

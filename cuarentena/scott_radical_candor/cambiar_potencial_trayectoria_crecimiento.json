@@ -1,56 +1,56 @@
 {
- "id": "cambiar_potencial_trayectoria_crecimiento",
- "titulo": "Cambiar la palabra potencial por trayectoria de crecimiento y hacer con el equipo el ejercicio de las dos columnas",
- "denominaciones": {
-  "nombre_largo": "Dejar de preguntar si alguien tiene potencial alto o bajo y empezar a preguntar en que trayectoria de crecimiento quiere estar ahora mismo, con las dos columnas del texto y sus cuatro parejas de rasgos",
-  "otros_idiomas": [
-   {
-    "idioma": "ingles",
-    "termino": "growth trajectory"
-   },
-   {
-    "idioma": "ingles",
-    "termino": "performance potential matrix"
-   }
+  "id": "cambiar_potencial_trayectoria_crecimiento",
+  "titulo": "Cambiar la palabra potencial por trayectoria de crecimiento y hacer con el equipo el ejercicio de las dos columnas",
+  "denominaciones": {
+    "nombre_largo": "Dejar de preguntar si alguien tiene potencial alto o bajo y empezar a preguntar en que trayectoria de crecimiento quiere estar ahora mismo, con las dos columnas del texto y sus cuatro parejas de rasgos",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "growth trajectory"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "performance potential matrix"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando estas colocando a la gente de tu equipo en papeles y oportunidades, y cuando te encuentras usando un cuadro de desempenio y potencial para planificar sucesiones.",
+  "entregable_esperado": "Cada persona del equipo situada en la trayectoria de crecimiento que ella quiere ahora mismo y no en una etiqueta de potencial, con las preguntas del texto contestadas y con la conversacion franca tenida donde tu lectura y la suya no coinciden.",
+  "pasos_accionables": [
+    "Cuenta con el problema que el texto encuentra en la palabra potencial: el cuadro de desempenio y potencial que muchas empresas usan pide juzgar a cada persona y meterla en una de nueve casillas, y la peor de las nueve se llama bajo desempenio y bajo potencial. El texto objeta que no existe un ser humano de bajo potencial.",
+    "Cuenta con la segunda objecion, que es la que lo vuelve operativo: la categoria potencial no dejaba sitio para evaluar bien a quien es excelente en lo que hace y quiere seguir haciendolo.",
+    "Cambia la palabra potencial por la palabra crecimiento. El texto atribuye el cambio a Scott Forstall, que construyo el equipo de iOS, y dice que cambiar una sola palabra marco toda la diferencia.",
+    "Preguntate en que trayectoria de crecimiento quiere estar ahora mismo cada persona de tu equipo.",
+    "Preguntate si has dado a todo el mundo oportunidades alineadas con lo que de verdad quieren.",
+    "Preguntate en que trayectoria de crecimiento creen tus reportes que estan, si estas de acuerdo, y si no lo estas, por que no.",
+    "Cuenta con las dos respuestas distintas que el texto avisa que vas a encontrar: a veces la persona quiere de verdad crecer y es capaz de aportar mas de lo que le han dejado, y a veces solo quiere mas dinero o mas reconocimiento sin cambiar como trabaja ni aportar mas de lo que ya aporta.",
+    "Ten la conversacion radicalmente franca cuando tu lectura y la suya no coincidan, que es lo que el texto pone como tu trabajo en cuanto las distingas.",
+    "Para distinguir los dos tipos, suelta tus juicios y tus propias ambiciones, olvida por un rato lo que tu necesitas de la gente, y concentrate en conocer a cada persona como ser humano.",
+    "Haz el ejercicio que el texto imprime con sus dos columnas. La columna de trayectoria empinada lleva agente de cambio, ambicioso en el trabajo, quiere oportunidades nuevas, y la etiqueta de superestrella. La de trayectoria gradual lleva fuerza de estabilidad, ambicioso fuera del trabajo o simplemente contento en la vida, feliz en su papel actual, y la etiqueta de estrella de rock.",
+    "Con las dos columnas delante, piensa en ejemplos positivos de gente con la que has trabajado que caeria en cada una.",
+    "Piensa despues en equipos en los que has estado que necesitaban algo de las dos, y cual seria la proporcion correcta.",
+    "Y piensa por ultimo en momentos de tu propia vida en que tu estuviste en cada columna, y por que. El texto aniade que lo ideal habria sido que la eleccion hubiera sido tuya y no de tu jefe.",
+    "No pongas etiquetas permanentes: el texto dice que estas preguntas sirven justo para recordarte que las trayectorias cambian."
   ],
-  "sigla": ""
- },
- "condiciones_activacion": "Cuando estas colocando a la gente de tu equipo en papeles y oportunidades, y cuando te encuentras usando un cuadro de desempenio y potencial para planificar sucesiones.",
- "entregable_esperado": "Cada persona del equipo situada en la trayectoria de crecimiento que ella quiere ahora mismo y no en una etiqueta de potencial, con las preguntas del texto contestadas y con la conversacion franca tenida donde tu lectura y la suya no coinciden.",
- "pasos_accionables": [
-  "Cuenta con el problema que el texto encuentra en la palabra potencial: el cuadro de desempenio y potencial que muchas empresas usan pide juzgar a cada persona y meterla en una de nueve casillas, y la peor de las nueve se llama bajo desempenio y bajo potencial. El texto objeta que no existe un ser humano de bajo potencial.",
-  "Cuenta con la segunda objecion, que es la que lo vuelve operativo: la categoria potencial no dejaba sitio para evaluar bien a quien es excelente en lo que hace y quiere seguir haciendolo.",
-  "Cambia la palabra potencial por la palabra crecimiento. El texto atribuye el cambio a Scott Forstall, que construyo el equipo de iOS, y dice que cambiar una sola palabra marco toda la diferencia.",
-  "Preguntate en que trayectoria de crecimiento quiere estar ahora mismo cada persona de tu equipo.",
-  "Preguntate si has dado a todo el mundo oportunidades alineadas con lo que de verdad quieren.",
-  "Preguntate en que trayectoria de crecimiento creen tus reportes que estan, si estas de acuerdo, y si no lo estas, por que no.",
-  "Cuenta con las dos respuestas distintas que el texto avisa que vas a encontrar: a veces la persona quiere de verdad crecer y es capaz de aportar mas de lo que le han dejado, y a veces solo quiere mas dinero o mas reconocimiento sin cambiar como trabaja ni aportar mas de lo que ya aporta.",
-  "Ten la conversacion radicalmente franca cuando tu lectura y la suya no coincidan, que es lo que el texto pone como tu trabajo en cuanto las distingas.",
-  "Para distinguir los dos tipos, suelta tus juicios y tus propias ambiciones, olvida por un rato lo que tu necesitas de la gente, y concentrate en conocer a cada persona como ser humano.",
-  "Haz el ejercicio que el texto imprime con sus dos columnas. La columna de trayectoria empinada lleva agente de cambio, ambicioso en el trabajo, quiere oportunidades nuevas, y la etiqueta de superestrella. La de trayectoria gradual lleva fuerza de estabilidad, ambicioso fuera del trabajo o simplemente contento en la vida, feliz en su papel actual, y la etiqueta de estrella de rock.",
-  "Con las dos columnas delante, piensa en ejemplos positivos de gente con la que has trabajado que caeria en cada una.",
-  "Piensa despues en equipos en los que has estado que necesitaban algo de las dos, y cual seria la proporcion correcta.",
-  "Y piensa por ultimo en momentos de tu propia vida en que tu estuviste en cada columna, y por que. El texto aniade que lo ideal habria sido que la eleccion hubiera sido tuya y no de tu jefe.",
-  "No pongas etiquetas permanentes: el texto dice que estas preguntas sirven justo para recordarte que las trayectorias cambian."
- ],
- "resumen_teorico": "El inventario es del texto de principio a fin: la objecion a la palabra potencial con sus dos motivos, la sustitucion por crecimiento con su autor nombrado, las tres preguntas que el texto imprime una a una, las dos respuestas tipicas, y el ejercicio de las dos columnas con sus cuatro parejas de rasgos transcritas tal como el libro las imprime. Se extrae como procedimiento y no como postura porque hay algo que hacer con ello, que es situar a cada persona y hablar con ella donde no coincidais, y porque el propio texto lo presenta como el sustituto operativo de un instrumento que muchas empresas ya usan. Las dos columnas no son una tabla decorativa: el texto las imprime para que el lector piense sobre ellas y dice exactamente sobre que. Lo que el texto NO dice, y por eso no esta escrito aqui, es cada cuanto se repite esta pregunta, quien la escribe, ni que se hace cuando la trayectoria que alguien quiere no la necesita el equipo.",
- "atribuciones": [
-  {
-   "cifra": "la propuesta de usar la palabra crecimiento en vez de la palabra potencial en el cuadro de gestion de personas, que segun el texto cambio toda la diferencia",
-   "autor": "Scott Forstall, citado por Kim Scott",
-   "fuente": "scott_radical_candor",
-   "fecha_corte": "no consta en el texto: el libro lo presenta como quien construyo el equipo de iOS y trabajaba directamente para Steve Jobs, sin anio ni obra"
-  }
- ],
- "dominio": "gestion_equipos",
- "estado": "vivo",
- "fuentes": [
-  {
-   "clave": "scott_radical_candor",
-   "fecha": "2026-09-12"
-  }
- ],
- "ids_alias": [],
- "nodos_previos": [],
- "nodos_siguientes": []
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_06.md, unidad Cap. 3, Understand What Motivates Each Person on Your Team. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la que encarga anadir la unidad a los 24 candidatos de la bandeja que no la nombraban: la costumbre de nombrarla empieza en cap_07 y estos son anteriores. NO SE CAMBIA NI UN PASO NI UNA CITA: lo unico que se anade es de que unidad salio. LEIDA DEL FICHERO FUENTE Y NO DE UNA TABLA, con el ancla textual unica que la sostiene, 'performance-potential matrix', corrida con grep contra las quince unidades del libro. El inventario es del texto de principio a fin: la objecion a la palabra potencial con sus dos motivos, la sustitucion por crecimiento con su autor nombrado, las tres preguntas que el texto imprime una a una, las dos respuestas tipicas, y el ejercicio de las dos columnas con sus cuatro parejas de rasgos transcritas tal como el libro las imprime. Se extrae como procedimiento y no como postura porque hay algo que hacer con ello, que es situar a cada persona y hablar con ella donde no coincidais, y porque el propio texto lo presenta como el sustituto operativo de un instrumento que muchas empresas ya usan. Las dos columnas no son una tabla decorativa: el texto las imprime para que el lector piense sobre ellas y dice exactamente sobre que. Lo que el texto NO dice, y por eso no esta escrito aqui, es cada cuanto se repite esta pregunta, quien la escribe, ni que se hace cuando la trayectoria que alguien quiere no la necesita el equipo.",
+  "atribuciones": [
+    {
+      "cifra": "la propuesta de usar la palabra crecimiento en vez de la palabra potencial en el cuadro de gestion de personas, que segun el texto cambio toda la diferencia",
+      "autor": "Scott Forstall, citado por Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta en el texto: el libro lo presenta como quien construyo el equipo de iOS y trabajaba directamente para Steve Jobs, sin anio ni obra"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
 }

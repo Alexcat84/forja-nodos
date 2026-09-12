@@ -1,0 +1,3 @@
+cambiar_potencial_trayectoria_crecimiento        [BLOQUEARIA] cambiar_potencial_trayectoria_crecimiento   (cambiar_potencial_trayectoria_crecimiento.json)
+criticar_trabajo_evitar_desanimo                 [ENTRARIA] criticar_trabajo_evitar_desanimo   (criticar_trabajo_evitar_desanimo.json)
+cuidar_persona_completa_equipo                   [BLOQUEARIA] cuidar_persona_completa_equipo   (cuidar_persona_completa_equipo.json)

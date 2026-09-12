@@ -1,48 +1,48 @@
 {
- "id": "retirar_etiquetas_permanentes_equipo",
- "titulo": "Retirar las etiquetas permanentes de la gente de tu equipo y volver a mirarla con ojos nuevos cada dia",
- "denominaciones": {
-  "nombre_largo": "El aviso con el que el capitulo se cierra: usar el marco sin abusar de el, porque las trayectorias cambian, el desempenio cambia, y quien no presta atencion no se entera de que algo ha cambiado",
-  "otros_idiomas": [
-   {
-    "idioma": "ingles",
-    "termino": "no permanent markers"
-   }
+  "id": "retirar_etiquetas_permanentes_equipo",
+  "titulo": "Retirar las etiquetas permanentes de la gente de tu equipo y volver a mirarla con ojos nuevos cada dia",
+  "denominaciones": {
+    "nombre_largo": "El aviso con el que el capitulo se cierra: usar el marco sin abusar de el, porque las trayectorias cambian, el desempenio cambia, y quien no presta atencion no se entera de que algo ha cambiado",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "no permanent markers"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando te oyes decir que alguien de tu equipo es de una manera, en presente permanente, y cuando alguien que llevaba anios estable de pronto pide un cambio o al reves.",
+  "entregable_esperado": "Ninguna etiqueta permanente puesta sobre nadie del equipo, el motivo de la trayectoria de cada cual hablado con la persona, y las puntuaciones de desempenio referidas a un periodo y no a una persona.",
+  "pasos_accionables": [
+    "Cuenta con lo que es dificil aqui, que el texto nombra: cuesta no fijar tus percepciones sobre la gente, y salen solas frases del tipo esta persona es de tal manera y siempre lo sera.",
+    "No uses los nombres de las dos fases como etiquetas permanentes. El texto dice que esa es su mayor preocupacion con esos dos nombres, y lo pide expresamente.",
+    "Cuenta con que la gente cambia de verdad: quien llevaba tiempo en trayectoria gradual puede ponerse inquieto de golpe y ansiar un reto nuevo, y quien lleva anios en trayectoria empinada puede estar deseando un periodo de estabilidad.",
+    "Toma eso como una razon mas para dirigir de verdad: ser un gran jefe supone ajustarse constantemente a la realidad nueva del dia, la semana o el anio segun se despliega.",
+    "Y cuenta con la condicion de ese ajuste, que es la que el texto pone como filo: no puedes ajustarte si no has estado prestando atencion, o si no conoces a la persona lo bastante como para notar que algo importante ha cambiado.",
+    "No etiquetes tampoco por desempenio. El texto dice que el desempenio de la gente tambien cambia con el tiempo y que todo el mundo tiene un trimestre malo de vez en cuando.",
+    "Para combatir las etiquetas permanentes, refiere la puntuacion al periodo y no a la persona. El texto recoge las tres que ideo Jared Smith: trimestre flojo, trimestre solido y trimestre excepcional.",
+    "Cuenta con que el ajuste mas dificil es cuando toca mover a quien te hacia la vida facil a un papel nuevo que te la va a hacer mas dificil, al menos a corto plazo, y con que eso es estresante para ti.",
+    "Habla con la persona de que esta impulsando su grado de trayectoria en cada momento. El texto dice que es importante que lo tengan claro los dos, el miembro del equipo y el jefe, para que se beneficien la persona y la empresa.",
+    "Usa el marco pero no abuses de el: asegurate de ver a cada persona de tu equipo con ojos nuevos cada dia, porque la gente evoluciona y tus relaciones tienen que evolucionar con ella. El texto lo cierra asi: cuida personalmente, y no metas a la gente en cajas para dejarla ahi."
   ],
-  "sigla": ""
- },
- "condiciones_activacion": "Cuando te oyes decir que alguien de tu equipo es de una manera, en presente permanente, y cuando alguien que llevaba anios estable de pronto pide un cambio o al reves.",
- "entregable_esperado": "Ninguna etiqueta permanente puesta sobre nadie del equipo, el motivo de la trayectoria de cada cual hablado con la persona, y las puntuaciones de desempenio referidas a un periodo y no a una persona.",
- "pasos_accionables": [
-  "Cuenta con lo que es dificil aqui, que el texto nombra: cuesta no fijar tus percepciones sobre la gente, y salen solas frases del tipo esta persona es de tal manera y siempre lo sera.",
-  "No uses los nombres de las dos fases como etiquetas permanentes. El texto dice que esa es su mayor preocupacion con esos dos nombres, y lo pide expresamente.",
-  "Cuenta con que la gente cambia de verdad: quien llevaba tiempo en trayectoria gradual puede ponerse inquieto de golpe y ansiar un reto nuevo, y quien lleva anios en trayectoria empinada puede estar deseando un periodo de estabilidad.",
-  "Toma eso como una razon mas para dirigir de verdad: ser un gran jefe supone ajustarse constantemente a la realidad nueva del dia, la semana o el anio segun se despliega.",
-  "Y cuenta con la condicion de ese ajuste, que es la que el texto pone como filo: no puedes ajustarte si no has estado prestando atencion, o si no conoces a la persona lo bastante como para notar que algo importante ha cambiado.",
-  "No etiquetes tampoco por desempenio. El texto dice que el desempenio de la gente tambien cambia con el tiempo y que todo el mundo tiene un trimestre malo de vez en cuando.",
-  "Para combatir las etiquetas permanentes, refiere la puntuacion al periodo y no a la persona. El texto recoge las tres que ideo Jared Smith: trimestre flojo, trimestre solido y trimestre excepcional.",
-  "Cuenta con que el ajuste mas dificil es cuando toca mover a quien te hacia la vida facil a un papel nuevo que te la va a hacer mas dificil, al menos a corto plazo, y con que eso es estresante para ti.",
-  "Habla con la persona de que esta impulsando su grado de trayectoria en cada momento. El texto dice que es importante que lo tengan claro los dos, el miembro del equipo y el jefe, para que se beneficien la persona y la empresa.",
-  "Usa el marco pero no abuses de el: asegurate de ver a cada persona de tu equipo con ojos nuevos cada dia, porque la gente evoluciona y tus relaciones tienen que evolucionar con ella. El texto lo cierra asi: cuida personalmente, y no metas a la gente en cajas para dejarla ahi."
- ],
- "resumen_teorico": "Es el cierre del capitulo y podria leerse como exhortacion, pero no lo es: el texto pone medios concretos, una prohibicion de uso sobre los dos nombres que el mismo capitulo introdujo, una sustitucion de vocabulario de puntuacion con sus tres valores transcritos y su autor nombrado, y la condicion que hace posible el ajuste, conocer a la persona lo bastante como para notar el cambio. Ese es el inventario que lo vuelve procedimentable. Se extrae como nodo propio y no como ultimo paso del procedimiento del marco porque su objeto es el uso del marco a lo largo del tiempo y no su aplicacion en un momento dado, y porque el texto le da rotulo propio. Lo que el texto NO dice, y por eso no esta escrito aqui, es cada cuanto se revisa la trayectoria de alguien, ni quien inicia la conversacion sobre que la esta impulsando.",
- "atribuciones": [
-  {
-   "cifra": "las tres puntuaciones de desempenio referidas al periodo y no a la persona: trimestre flojo, trimestre solido y trimestre excepcional",
-   "autor": "Jared Smith, citado por Kim Scott",
-   "fuente": "scott_radical_candor",
-   "fecha_corte": "no consta en el texto: el libro lo presenta como cofundador de Qualtrics y colega suyo de Juice y de Google, sin anio ni obra"
-  }
- ],
- "dominio": "gestion_equipos",
- "estado": "vivo",
- "fuentes": [
-  {
-   "clave": "scott_radical_candor",
-   "fecha": "2026-09-12"
-  }
- ],
- "ids_alias": [],
- "nodos_previos": [],
- "nodos_siguientes": []
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_06.md, unidad Cap. 3, Understand What Motivates Each Person on Your Team. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la que encarga anadir la unidad a los 24 candidatos de la bandeja que no la nombraban: la costumbre de nombrarla empieza en cap_07 y estos son anteriores. NO SE CAMBIA NI UN PASO NI UNA CITA: lo unico que se anade es de que unidad salio. LEIDA DEL FICHERO FUENTE Y NO DE UNA TABLA, con el ancla textual unica que la sostiene, 'permanent marker', corrida con grep contra las quince unidades del libro. Es el cierre del capitulo y podria leerse como exhortacion, pero no lo es: el texto pone medios concretos, una prohibicion de uso sobre los dos nombres que el mismo capitulo introdujo, una sustitucion de vocabulario de puntuacion con sus tres valores transcritos y su autor nombrado, y la condicion que hace posible el ajuste, conocer a la persona lo bastante como para notar el cambio. Ese es el inventario que lo vuelve procedimentable. Se extrae como nodo propio y no como ultimo paso del procedimiento del marco porque su objeto es el uso del marco a lo largo del tiempo y no su aplicacion en un momento dado, y porque el texto le da rotulo propio. Lo que el texto NO dice, y por eso no esta escrito aqui, es cada cuanto se revisa la trayectoria de alguien, ni quien inicia la conversacion sobre que la esta impulsando.",
+  "atribuciones": [
+    {
+      "cifra": "las tres puntuaciones de desempenio referidas al periodo y no a la persona: trimestre flojo, trimestre solido y trimestre excepcional",
+      "autor": "Jared Smith, citado por Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta en el texto: el libro lo presenta como cofundador de Qualtrics y colega suyo de Juice y de Google, sin anio ni obra"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
 }

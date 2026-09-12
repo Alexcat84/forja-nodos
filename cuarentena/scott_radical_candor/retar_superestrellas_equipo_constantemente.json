@@ -1,47 +1,47 @@
 {
- "id": "retar_superestrellas_equipo_constantemente",
- "titulo": "Retar constantemente a quien esta en trayectoria empinada, no bloquearlo, y no confundir crecer con dirigir",
- "denominaciones": {
-  "nombre_largo": "Como se gestiona a quien hace un trabajo excelente y esta creciendo deprisa: retos nuevos, mentores de fuera, sucesor pensado por adelantado, salvaguardas para que su jefe no pueda frenarlo, y una via de experto tan prestigiosa como la de jefe",
-  "otros_idiomas": [
-   {
-    "idioma": "ingles",
-    "termino": "superstar"
-   },
-   {
-    "idioma": "ingles",
-    "termino": "individual contributor"
-   }
+  "id": "retar_superestrellas_equipo_constantemente",
+  "titulo": "Retar constantemente a quien esta en trayectoria empinada, no bloquearlo, y no confundir crecer con dirigir",
+  "denominaciones": {
+    "nombre_largo": "Como se gestiona a quien hace un trabajo excelente y esta creciendo deprisa: retos nuevos, mentores de fuera, sucesor pensado por adelantado, salvaguardas para que su jefe no pueda frenarlo, y una via de experto tan prestigiosa como la de jefe",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "superstar"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "individual contributor"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando alguien de tu equipo hace un trabajo excelente y esta en una fase de aprender rapido y querer mas, y tu tienes en la mano las oportunidades que puede tener.",
+  "entregable_esperado": "La persona retada y aprendiendo, con su siguiente puesto pensado, con mentores de fuera, con alguien mas de tu equipo capaz de hacer su trabajo, y sin que tu hayas bloqueado ni una sola de sus salidas.",
+  "pasos_accionables": [
+    "Retala y asegurate de que esta aprendiendo constantemente, que es lo que el texto pone como la mejor forma de mantener contenta a esta gente.",
+    "Dale oportunidades nuevas, incluso cuando parezcan mas trabajo del que una sola persona puede hacer.",
+    "Averigua cual va a ser su siguiente puesto.",
+    "Construye con ella una sociedad intelectual.",
+    "Buscale mentores de fuera de tu equipo o de tu organizacion, gente que tenga todavia mas que ofrecerle que tu.",
+    "No te vuelvas demasiado dependiente de ella: pidele que ensenie a otros del equipo a hacer su trabajo, porque no se va a quedar mucho tiempo en el papel que tiene.",
+    "No la aplastes. El texto lo pone asi de directo: reconoce que probablemente algun dia trabajaras para ella, y celebralo.",
+    "No le bloquees las salidas. El texto pone dos salvaguardas concretas de una empresa que lo hacia bien: que el jefe no pueda promover a discrecion, porque la gente se nomina a si misma, un comite lee su carpeta de logros y recomendaciones y decide, el jefe no esta en ese comite y puede apelar pero no decide; y que nadie pueda bloquear un traslado de un equipo a otro.",
+    "Cuenta con lo que esas dos salvaguardas evitan, que el texto nombra: que un jefe recorte la ambicion de sus reportes, que ofrezca promociones para premiar la lealtad personal en vez del buen trabajo, y que vete a quien se quiere mover.",
+    "No confundas querer dirigir con estar en trayectoria empinada. El texto lo dice en las dos direcciones: no querer dirigir no es lo mismo que estar en trayectoria gradual, e igual que querer dirigir no es lo mismo que estar en trayectoria empinada.",
+    "Cuenta con lo que pasa cuando se confunden: las carreras de muchos grandes ingenieros y comerciales han naufragado al promoverlos a jefes, y ocurre porque no hay otro puesto al que promoverlos que reconozca la trayectoria de crecimiento en la que quieren estar.",
+    "Crea una via de carrera de experto que sea mas prestigiosa que la via de jefe y que esquive del todo la gestion, que es lo que el texto cuenta que hizo una empresa para resolverlo, bueno para el crecimiento de esos expertos y bueno tambien para la gente a la que si no habrian acabado dirigiendo.",
+    "Cuenta con el motivo por el que esto importa y no es cosmetico: cuando la gestion es la unica via a una retribucion mas alta, la calidad de la gestion se resiente y la vida de quien trabaja para esos jefes a la fuerza se vuelve miserable."
   ],
-  "sigla": ""
- },
- "condiciones_activacion": "Cuando alguien de tu equipo hace un trabajo excelente y esta en una fase de aprender rapido y querer mas, y tu tienes en la mano las oportunidades que puede tener.",
- "entregable_esperado": "La persona retada y aprendiendo, con su siguiente puesto pensado, con mentores de fuera, con alguien mas de tu equipo capaz de hacer su trabajo, y sin que tu hayas bloqueado ni una sola de sus salidas.",
- "pasos_accionables": [
-  "Retala y asegurate de que esta aprendiendo constantemente, que es lo que el texto pone como la mejor forma de mantener contenta a esta gente.",
-  "Dale oportunidades nuevas, incluso cuando parezcan mas trabajo del que una sola persona puede hacer.",
-  "Averigua cual va a ser su siguiente puesto.",
-  "Construye con ella una sociedad intelectual.",
-  "Buscale mentores de fuera de tu equipo o de tu organizacion, gente que tenga todavia mas que ofrecerle que tu.",
-  "No te vuelvas demasiado dependiente de ella: pidele que ensenie a otros del equipo a hacer su trabajo, porque no se va a quedar mucho tiempo en el papel que tiene.",
-  "No la aplastes. El texto lo pone asi de directo: reconoce que probablemente algun dia trabajaras para ella, y celebralo.",
-  "No le bloquees las salidas. El texto pone dos salvaguardas concretas de una empresa que lo hacia bien: que el jefe no pueda promover a discrecion, porque la gente se nomina a si misma, un comite lee su carpeta de logros y recomendaciones y decide, el jefe no esta en ese comite y puede apelar pero no decide; y que nadie pueda bloquear un traslado de un equipo a otro.",
-  "Cuenta con lo que esas dos salvaguardas evitan, que el texto nombra: que un jefe recorte la ambicion de sus reportes, que ofrezca promociones para premiar la lealtad personal en vez del buen trabajo, y que vete a quien se quiere mover.",
-  "No confundas querer dirigir con estar en trayectoria empinada. El texto lo dice en las dos direcciones: no querer dirigir no es lo mismo que estar en trayectoria gradual, e igual que querer dirigir no es lo mismo que estar en trayectoria empinada.",
-  "Cuenta con lo que pasa cuando se confunden: las carreras de muchos grandes ingenieros y comerciales han naufragado al promoverlos a jefes, y ocurre porque no hay otro puesto al que promoverlos que reconozca la trayectoria de crecimiento en la que quieren estar.",
-  "Crea una via de carrera de experto que sea mas prestigiosa que la via de jefe y que esquive del todo la gestion, que es lo que el texto cuenta que hizo una empresa para resolverlo, bueno para el crecimiento de esos expertos y bueno tambien para la gente a la que si no habrian acabado dirigiendo.",
-  "Cuenta con el motivo por el que esto importa y no es cosmetico: cuando la gestion es la unica via a una retribucion mas alta, la calidad de la gestion se resiente y la vida de quien trabaja para esos jefes a la fuerza se vuelve miserable."
- ],
- "resumen_teorico": "El inventario es del texto y son tres bloques que el propio libro separa con sus rotulos: retarla, con seis medios nombrados uno a uno; no aplastarla ni bloquearla, con dos salvaguardas de organizacion descritas al detalle y con lo que cada una evita; y no confundir crecer con dirigir, con su remedio, la via de experto. Los tres tratan del mismo tipo de persona y por eso van en un solo procedimiento y no en tres nodos. Las salvaguardas entran como medios porque el texto las describe con su mecanica completa, quien nomina, quien lee, quien decide y quien puede apelar, y no como un elogio general a una empresa. El nombre superestrella se deja en denominaciones y no se usa como etiqueta dentro de los pasos, que es lo que el propio capitulo pide no hacer. Lo que el texto NO dice, y por eso no esta escrito aqui, es cada cuanto hay que darle un reto nuevo, quien paga los mentores de fuera, ni como se disenia esa via de experto.",
- "dominio": "gestion_equipos",
- "estado": "vivo",
- "fuentes": [
-  {
-   "clave": "scott_radical_candor",
-   "fecha": "2026-09-12"
-  }
- ],
- "ids_alias": [],
- "nodos_previos": [],
- "nodos_siguientes": []
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_06.md, unidad Cap. 3, Understand What Motivates Each Person on Your Team. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la que encarga anadir la unidad a los 24 candidatos de la bandeja que no la nombraban: la costumbre de nombrarla empieza en cap_07 y estos son anteriores. NO SE CAMBIA NI UN PASO NI UNA CITA: lo unico que se anade es de que unidad salio. LEIDA DEL FICHERO FUENTE Y NO DE UNA TABLA, con el ancla textual unica que la sostiene, 'intellectual partnership', corrida con grep contra las quince unidades del libro. El inventario es del texto y son tres bloques que el propio libro separa con sus rotulos: retarla, con seis medios nombrados uno a uno; no aplastarla ni bloquearla, con dos salvaguardas de organizacion descritas al detalle y con lo que cada una evita; y no confundir crecer con dirigir, con su remedio, la via de experto. Los tres tratan del mismo tipo de persona y por eso van en un solo procedimiento y no en tres nodos. Las salvaguardas entran como medios porque el texto las describe con su mecanica completa, quien nomina, quien lee, quien decide y quien puede apelar, y no como un elogio general a una empresa. El nombre superestrella se deja en denominaciones y no se usa como etiqueta dentro de los pasos, que es lo que el propio capitulo pide no hacer. Lo que el texto NO dice, y por eso no esta escrito aqui, es cada cuanto hay que darle un reto nuevo, quien paga los mentores de fuera, ni como se disenia esa via de experto.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
 }

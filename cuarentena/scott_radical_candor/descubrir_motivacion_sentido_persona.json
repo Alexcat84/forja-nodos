@@ -1,43 +1,43 @@
 {
- "id": "descubrir_motivacion_sentido_persona",
- "titulo": "Descubrir de donde saca cada persona el sentido de su trabajo, en vez de proveerle tu un proposito",
- "denominaciones": {
-  "nombre_largo": "Tu trabajo no es dar proposito: es conocer a cada reporte lo bastante como para entender como saca sentido de su trabajo, y crear las condiciones en las que cada cual lo encuentre a su manera",
-  "otros_idiomas": [
-   {
-    "idioma": "ingles",
-    "termino": "the problem with passion"
-   }
+  "id": "descubrir_motivacion_sentido_persona",
+  "titulo": "Descubrir de donde saca cada persona el sentido de su trabajo, en vez de proveerle tu un proposito",
+  "denominaciones": {
+    "nombre_largo": "Tu trabajo no es dar proposito: es conocer a cada reporte lo bastante como para entender como saca sentido de su trabajo, y crear las condiciones en las que cada cual lo encuentre a su manera",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "the problem with passion"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando quieres saber que mueve a cada persona de tu equipo, y sobre todo cuando te descubres intentando convencerles de que su trabajo tiene un proposito elevado.",
+  "entregable_esperado": "Conocido de cada persona que la motiva, cuales son sus ambiciones a largo plazo y como encajan sus circunstancias actuales, y creadas las condiciones de trabajo para que cada cual saque su propio sentido, sin haberle impuesto ninguno.",
+  "pasos_accionables": [
+    "Averigua que motiva a cada persona de tu equipo, que es lo que el texto pone como condicion para poder gestionar el crecimiento.",
+    "Averigua cuales son las ambiciones a largo plazo de cada cual.",
+    "Y entiende como encajan sus circunstancias actuales con esas motivaciones y con sus metas de vida.",
+    "Cuenta con lo que el texto dice que solo entonces se puede hacer: poner a la gente adecuada en los papeles adecuados y asignar los proyectos adecuados a las personas adecuadas.",
+    "No te pases de la raya con la pasion. El texto no discute que la gente trabaje mejor cuando encuentra sentido en lo que hace, pero avisa de que los jefes que leen eso como que su trabajo es proveer el proposito tienden a excederse, y de que insistir en que la gente tenga pasion por su trabajo pone presion innecesaria sobre el jefe y sobre el empleado.",
+    "Acepta que trabajar duro para ganarse un sueldo que sostiene la vida que quieres llevar tiene sentido de sobra. El texto lo ilustra con la respuesta de una escritora sobre por que eligio las empresas en las que trabajo: porque eran las unicas que le ofrecian un trabajo, que le parecio una gran razon entonces y le sigue pareciendo una gran razon hoy.",
+    "Cuenta con que la persona que ya tiene su propia forma de encontrar sentido no la necesita de ti. El texto pone el caso de una joven que habia estudiado filosofia y que corto en seco el eslogan de su jefa diciendo que el trabajo era un poco aburrido, que habia que admitirlo, que no pasaba nada, y que Plutarco puso ladrillos y Spinoza pulio lentes, porque el tedio es parte de la vida. El texto aniade que aquella forma de encontrar sentido era unica de ella y no habria inspirado al equipo entero.",
+    "Ten presente que las motivaciones son muy personales, y que un eslogan inspirador para ti puede no serlo para otros: el texto lo dice de uno famoso, y lo dice de si misma admirando a su autor.",
+    "Haz lo que el texto saca de la historia de los tres albaniles a los que el arquitecto pregunto que hacian, y que contestaron que trabajar, que levantar un muro y que construir una catedral: no inventes tu un sentido de proposito y se lo metas a todos en la cabeza a martillazos.",
+    "Escucha, que es la primera de las tres cosas que el texto dice que hizo aquel arquitecto.",
+    "Reconoce el significado de lo que oigas, que es la segunda.",
+    "Y crea las condiciones de trabajo que permitan a todo el mundo encontrar sentido a su propia manera, que es la tercera.",
+    "Puedes poner el trabajo del equipo en contexto y contar por que a ti te da sentido, que el texto dice que puede ayudar a otros a encontrar el suyo. Pero recuerda lo que aniade justo despues: no va todo de ti."
   ],
-  "sigla": ""
- },
- "condiciones_activacion": "Cuando quieres saber que mueve a cada persona de tu equipo, y sobre todo cuando te descubres intentando convencerles de que su trabajo tiene un proposito elevado.",
- "entregable_esperado": "Conocido de cada persona que la motiva, cuales son sus ambiciones a largo plazo y como encajan sus circunstancias actuales, y creadas las condiciones de trabajo para que cada cual saque su propio sentido, sin haberle impuesto ninguno.",
- "pasos_accionables": [
-  "Averigua que motiva a cada persona de tu equipo, que es lo que el texto pone como condicion para poder gestionar el crecimiento.",
-  "Averigua cuales son las ambiciones a largo plazo de cada cual.",
-  "Y entiende como encajan sus circunstancias actuales con esas motivaciones y con sus metas de vida.",
-  "Cuenta con lo que el texto dice que solo entonces se puede hacer: poner a la gente adecuada en los papeles adecuados y asignar los proyectos adecuados a las personas adecuadas.",
-  "No te pases de la raya con la pasion. El texto no discute que la gente trabaje mejor cuando encuentra sentido en lo que hace, pero avisa de que los jefes que leen eso como que su trabajo es proveer el proposito tienden a excederse, y de que insistir en que la gente tenga pasion por su trabajo pone presion innecesaria sobre el jefe y sobre el empleado.",
-  "Acepta que trabajar duro para ganarse un sueldo que sostiene la vida que quieres llevar tiene sentido de sobra. El texto lo ilustra con la respuesta de una escritora sobre por que eligio las empresas en las que trabajo: porque eran las unicas que le ofrecian un trabajo, que le parecio una gran razon entonces y le sigue pareciendo una gran razon hoy.",
-  "Cuenta con que la persona que ya tiene su propia forma de encontrar sentido no la necesita de ti. El texto pone el caso de una joven que habia estudiado filosofia y que corto en seco el eslogan de su jefa diciendo que el trabajo era un poco aburrido, que habia que admitirlo, que no pasaba nada, y que Plutarco puso ladrillos y Spinoza pulio lentes, porque el tedio es parte de la vida. El texto aniade que aquella forma de encontrar sentido era unica de ella y no habria inspirado al equipo entero.",
-  "Ten presente que las motivaciones son muy personales, y que un eslogan inspirador para ti puede no serlo para otros: el texto lo dice de uno famoso, y lo dice de si misma admirando a su autor.",
-  "Haz lo que el texto saca de la historia de los tres albaniles a los que el arquitecto pregunto que hacian, y que contestaron que trabajar, que levantar un muro y que construir una catedral: no inventes tu un sentido de proposito y se lo metas a todos en la cabeza a martillazos.",
-  "Escucha, que es la primera de las tres cosas que el texto dice que hizo aquel arquitecto.",
-  "Reconoce el significado de lo que oigas, que es la segunda.",
-  "Y crea las condiciones de trabajo que permitan a todo el mundo encontrar sentido a su propia manera, que es la tercera.",
-  "Puedes poner el trabajo del equipo en contexto y contar por que a ti te da sentido, que el texto dice que puede ayudar a otros a encontrar el suyo. Pero recuerda lo que aniade justo despues: no va todo de ti."
- ],
- "resumen_teorico": "Dos secciones de la misma unidad tratan el mismo objeto, que es de donde sale la motivacion de cada persona, y por eso van fundidas en un solo procedimiento en vez de en dos nodos gemelos. La primera pone las tres cosas que hay que averiguar y para que sirven; la segunda pone el limite, que tu trabajo no es proveer proposito, y despues el inventario que lo vuelve ejecutable: escuchar, reconocer el significado de lo que oyes, y crear las condiciones. Ese inventario de tres es del texto, que se lo atribuye al arquitecto de la historia, y no del lector. Los dos casos que dan pasos entran nombrados dentro de ellos y el entregable no lleva ningun dato de ninguno. Lo que el texto NO dice, y por eso no esta escrito aqui, es que preguntas hacer para averiguarlo, que el propio texto remite a una tecnica de otro capitulo, ni cada cuanto se vuelve a preguntar.",
- "dominio": "gestion_equipos",
- "estado": "vivo",
- "fuentes": [
-  {
-   "clave": "scott_radical_candor",
-   "fecha": "2026-09-12"
-  }
- ],
- "ids_alias": [],
- "nodos_previos": [],
- "nodos_siguientes": []
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_06.md, unidad Cap. 3, Understand What Motivates Each Person on Your Team. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la que encarga anadir la unidad a los 24 candidatos de la bandeja que no la nombraban: la costumbre de nombrarla empieza en cap_07 y estos son anteriores. NO SE CAMBIA NI UN PASO NI UNA CITA: lo unico que se anade es de que unidad salio. LEIDA DEL FICHERO FUENTE Y NO DE UNA TABLA, con el ancla textual unica que la sostiene, 'three bricklayers', corrida con grep contra las quince unidades del libro. Dos secciones de la misma unidad tratan el mismo objeto, que es de donde sale la motivacion de cada persona, y por eso van fundidas en un solo procedimiento en vez de en dos nodos gemelos. La primera pone las tres cosas que hay que averiguar y para que sirven; la segunda pone el limite, que tu trabajo no es proveer proposito, y despues el inventario que lo vuelve ejecutable: escuchar, reconocer el significado de lo que oyes, y crear las condiciones. Ese inventario de tres es del texto, que se lo atribuye al arquitecto de la historia, y no del lector. Los dos casos que dan pasos entran nombrados dentro de ellos y el entregable no lleva ningun dato de ninguno. Lo que el texto NO dice, y por eso no esta escrito aqui, es que preguntas hacer para averiguarlo, que el propio texto remite a una tecnica de otro capitulo, ni cada cuanto se vuelve a preguntar.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
 }

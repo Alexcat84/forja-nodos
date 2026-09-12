@@ -22943,3 +22943,152 @@ candidatos que no se desempata no es una atribucion:
 | **el `24` contra `25`** | **NO SE REABRE** (`1.e`). Las dos ciertas, denominadores distintos, ya adjudicado por los dos lados por separado |
 | **el criterio de recuento de los `SANO` sin sede** | **NO lo vuelvo a subir como pendiente de doctrina.** Esta adjudicado y lo aplico en `N.7` |
 | **`D.38.4` en el banco** | **no la toco.** La escribio el auditor y es su sede (`EXTRACTOR.md` 14) |
+
+---
+
+## N.4. TAREA 3: `cap_09` DEL LOTE 4 (`Cap. 6`, *Guidance*). **LA FRONTERA, PUBLICADA ANTES DE CORTAR**
+
+### N.4.1. LAS CIFRAS DEL ENCARGO, REMEDIDAS POR MI ANTES DE USARLAS
+
+*`EXTRACTOR.md` 5: **una cifra de mi encargo no es fuente de una cifra mia.** El propio
+auditor me lo pide con esas palabras, y esta acta viene de corregir dos cifras suyas.*
+
+    $ for n in 06 07 08 09 10 11; do sed -n '8,$p' fuentes/scott_radical_candor/cap_$n.md | wc -w; done
+    cap_06  cuerpo= 11587   lineas=359
+    cap_07  cuerpo= 13678   lineas=433
+    cap_08  cuerpo=  6140   lineas=189
+    cap_09  cuerpo= 17482   lineas=433
+    cap_10  cuerpo=  8976   lineas=263
+    cap_11  cuerpo=  8626   lineas=333
+
+    $ sed -n '4p;5p' fuentes/scott_radical_candor/cap_09.md
+    unidad: Cap. 6
+    titulo_textual: Guidance
+
+**LAS SEIS CUADRAN AL DIGITO CON LAS DEL ENCARGO, incluido el `17.482` de `cap_09`.** Lo
+declaro porque cuadrar tambien es una medida: si no cuadraran, lo que tendria que publicar es
+la discrepancia y no el numero.
+
+**Y LAS TRES DENSIDADES, CADA UNA CON SU DENOMINADOR NOMBRADO**, que es la orden 2 del remedio
+del auditor y la aplico a mis propias cifras:
+
+| densidad medida sobre | palabras por candidato | **`cap_09` (17.482) proyecta** |
+|---|---:|---:|
+| `cap_08`: 6.140 palabras entre **sus 12 candidatos** | **512** | **34** |
+| `cap_07`: 13.678 palabras entre **sus 25 candidatos** | **547** | **32** |
+| `cap_06`: 11.587 palabras entre **sus 10 candidatos**, la mas floja del lote | **1.159** | **15** |
+
+### N.4.2. **LA FRONTERA: 30 PIEZAS, Y LA SUMA DE SUS FILAS CRUZADA CONTRA EL CUERPO**
+
+*`EXTRACTOR.md` 10: la frontera se lee y se publica ANTES de cortar. Y la comprobacion que
+la `ACTA 18` `7.5` orden 1 convierte en obligacion, **la corro yo sobre lo mio antes de
+publicar una sola fila**: si los dos totales no son el mismo, la cuenta de piezas no se
+publica.*
+
+    $ python (la frontera declarada, cruzada contra las lineas con contenido de cap_09.md)
+    piezas                                 : 30
+    lineas con contenido de L8 en adelante : 213
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    cubiertas que no son contenido         : 0
+    suma de las filas                      : 17482 palabras
+    cuerpo medido aparte (sed 8,$ | wc -w) : 17482 palabras
+    IGUALES                                : True
+
+> ### **CIERRA AL DIGITO: `17.482` CONTRA `17.482`, CERO LINEAS SIN CUBRIR Y CERO SOLAPES.**
+> **La frontera se publica porque los dos totales son el mismo.** Es la averia que tumbo
+> `18` piezas donde habia `20` en `cap_08`, y esta corrida ANTES de la tabla y no despues.
+
+**LA TABLA NO ESTA TECLEADA: LA IMPRIME EL MISMO GUION QUE CORRE LA COMPROBACION** (`5`, *la
+tabla se imprime, no se teclea*), con la salida literal de la primera linea de cada pieza
+pegada en su ultima columna (`D.35`). **Las comillas tipograficas y los guiones largos del
+original van normalizados a grafia llana, porque la guarda `guiones` muerde lo que yo escribo.**
+
+| pieza | tramo | palabras | **la salida, pegada** |
+|---|---|---:|---|
+| **P1** | `L9` a `L9` | 6 | `9:Ideas for getting/giving/encouraging praise & criticism` |
+| **P2** | `L11` a `L13` | 108 | `11:IN CHAPTER TWO, I DESCRIBED how Radically Candid relationships create the trust that e` |
+| **P3** | `L15` a `L15` | 3 | `15:SOLICITING IMPROMPTU GUIDANCE` |
+| **P4** | `L17` a `L53` | 2178 | `17:Embrace the discomfort` |
+| **P5** | `L55` a `L63` | 330 | `55:ORANGE BOX` |
+| **P6** | `L65` a `L71` | 325 | `65:MANAGEMENT "FIX-IT" WEEKS` |
+| **P7** | `L73` a `L75` | 98 | `73:GIVING IMPROMPTU GUIDANCE` |
+| **P8** | `L77` a `L95` | 699 | `77:Be humble` |
+| **P9** | `L97` a `L113` | 647 | `97:Be helpful` |
+| **P10** | `L115` a `L135` | 1144 | `115:Give feedback immediately` |
+| **P11** | `L137` a `L153` | 793 | `137:In person (if possible)` |
+| **P12** | `L155` a `L163` | 450 | `155:Praise in public, criticize in private` |
+| **P13** | `L165` a `L177` | 886 | `165:Don't personalize` |
+| **P14** | `L179` a `L203` | 1164 | `179:GAUGE YOUR IMPROMPTU GUIDANCE, GET A BASELINE, TRACK YOUR IMPROVEMENTS` |
+| **P15** | `L205` a `L221` | 848 | `205:BEING RADICALLY CANDID WITH YOUR BOSS` |
+| **P16** | `L223` a `L225` | 75 | `223:GENDER AND GUIDANCE` |
+| **P17** | `L227` a `L249` | 884 | `227:Why Radical Candor may be harder for men managing women` |
+| **P18** | `L251` a `L283` | 1006 | `251:Why gender bias makes Radical Candor harder for women` |
+| **P19** | `L285` a `L289` | 168 | `285:What can you do?` |
+| **P20** | `L291` a `L293` | 126 | `291:Men: don't "pull punches" with women` |
+| **P21** | `L295` a `L299` | 129 | `295:Women: demand criticism` |
+| **P22** | `L301` a `L313` | 416 | `301:Men and women: things to think about when you feel a woman is being "too aggressive"` |
+| **P23** | `L315` a `L329` | 573 | `315:Things to think about if you're a woman who's being told, "You're abrasive."` |
+| **P24** | `L331` a `L361` | 1526 | `331:FORMAL PERFORMANCE REVIEWS` |
+| **P25** | `L363` a `L367` | 212 | `363:PREVENT BACKSTABBING` |
+| **P26** | `L369` a `L381` | 738 | `369:PEER GUIDANCE` |
+| **P27** | `L383` a `L413` | 1419 | `383:SPEAKING TRUTH TO "POWER"` |
+| **P28** | `L415` a `L425` | 399 | `415:Skip level meeting FAQs` |
+| **P29** | `L427` a `L429` | 130 | `427:* * *` |
+| **P30** | `L431` a `L433` | 2 | `431:7.` |
+
+### N.4.3. **QUE PIEZA DA NODO Y CUAL NO, CON SU MOTIVO ESCRITO UNA A UNA**
+
+*`D.27` con sus tres restricciones. **Las diez que no dan nodo llevan su motivo, que es lo que
+el encargo exige y lo que el auditor puede releer.***
+
+| pieza | **da nodo?** | motivo |
+|---|---|---|
+| **P1** `L9` | **NO** | subtitulo del capitulo, **6 palabras**. Nada que hacer |
+| **P2** `L11` a `L13` | **NO, y es mi discutible 1** | es la cabeza del capitulo y **nombra sus tres trabajos** (*get, give, and encourage*), pero **no pone inventario propio de medios**: remite al grafico de la pagina anterior y al resto del capitulo. **Nombrar no es procedimentar** (`EXTRACTOR.md` 9) |
+| **P3** `L15` | **NO** | rotulo de seccion, **3 palabras, sin cuerpo propio** |
+| **P4** `L17` a `L53` | **SI** | `L27` cierra con *Here are some tips/techniques I have seen work to get the conversation flowing:* y detras van **seis consejos rotulados uno a uno**. Es inventario de MEDIOS del propio libro |
+| **P5** `L55` a `L63` | **SI, y es mi discutible 2** | `L59` manda *You have to organize a system*, y el `ORANGE BOX` de Michael Dearing es **el ejemplo nombrado dentro de la doctrina** (manual 3.5), no la casa |
+| **P6** `L65` a `L71` | **SI** | el libro escribe el mecanismo entero: sistema publico de registro, voto para priorizar, alguien que lee y agrupa duplicados, reparto de errores entre jefes, y cancelar lo demas esa semana. **Etapas nombradas una a una** |
+| **P7** `L73` a `L75` | **NO** | rotulo de seccion mas una linea de transicion que explica **por que el orden**, sin acto propio |
+| **P8** `L77` a `L95` | **SI** | tres tecnicas rotuladas con su fuente nombrada |
+| **P9** `L97` a `L113` | **SI** | cuatro tecnicas rotuladas |
+| **P10** `L115` a `L135` | **SI** | cinco consejos rotulados y `L121` con su excepcion escrita |
+| **P11** `L137` a `L153` | **SI** | `L143` dice *here are some things to keep in mind* y detras van cinco |
+| **P12** `L155` a `L163` | **SI** | la regla, su excepcion declarada en `L159` y dos consejos rotulados |
+| **P13** `L165` a `L177` | **SI** | cuatro consejos rotulados |
+| **P14** `L179` a `L203` | **SI** | la baliza de sobremesa con sus pegatinas, el informe de medicion y que hacer con cada cuadrante |
+| **P15** `L205` a `L221` | **SI** | `L213` y `L215` ponen el orden y la modificacion respecto al equipo |
+| **P16** `L223` a `L225` | **NO** | encabezado de seccion, **75 palabras**, y lo que dice es que el problema existe. **Postura** |
+| **P17** `L227` a `L249` | **NO** | casos y diagnostico, y remata en `L249` con *We must stop gender politics*, **que es una meta y no un medio** (`D.27` restriccion 1). Su cara accionable es **P20**, y ahi va |
+| **P18** `L251` a `L283` | **NO** | investigacion y casos. Su cara accionable son **P22** y **P23** |
+| **P19** `L285` a `L289` | **NO** | `L289` dice *I have a few thoughts on how individuals can take action*: **nombra a sus hijos y no trae procedimiento propio** |
+| **P20** `L291` a `L293` | **SI** | actos nombrados: explicar el marco, preguntarle, **la frase literal**, pedirle que mida |
+| **P21** `L295` a `L299` | **SI** | **tres frases literales**, la pausa, contar hasta seis y remitir a la seccion de arriba |
+| **P22** `L301` a `L313` | **SI** | `L303` dice *try these tactics* y detras van cuatro rotuladas |
+| **P23** `L315` a `L329` | **SI** | `L317` dice *consider the following four rules of thumb*. **La cuenta del libro y lo que hay debajo no coinciden, y es mi discutible 3** |
+| **P24** `L331` a `L361` | **SI** | nueve consejos rotulados |
+| **P25** `L363` a `L367` | **SI** | actos nombrados: no escuchar a uno sobre otro, insistir en que hablen entre ellos, ofrecer la conversacion a tres, exigirla en vivo, ayudar a la solucion |
+| **P26** `L369` a `L381` | **SI** | dos tecnicas rotuladas con su mecanica |
+| **P27** `L383` a `L413` | **SI** | **diez consejos rotulados**, la pieza mas procedimental del capitulo |
+| **P28** `L415` a `L425` | **SI** | cuatro preguntas con su respuesta, y las respuestas traen actos |
+| **P29** `L427` a `L429` | **NO, y es mi discutible 4** | es el cierre del capitulo y dice expresamente *rather than following step-by-step instructions*. Trae **dos preguntas** para hacerse, pero el propio texto las presenta como vuelta a los principios y no como procedimiento |
+| **P30** `L431` a `L433` | **NO** | cabecera del capitulo siguiente (`7.` `TEAM`), **2 palabras** |
+
+> ### **EL RECUENTO, Y LA CIFRA QUE DECIDE DONDE CIERRA LA VUELTA**
+>
+> | | |
+> |---|---:|
+> | piezas de la frontera | **30** |
+> | piezas que **dan nodo** | **20** |
+> | piezas que **no** dan nodo, con su motivo escrito arriba | **10** |
+> | palabras cubiertas, suma de filas contra cuerpo | **17.482 contra 17.482** |
+>
+> **VEINTE CANDIDATOS CONTRA UN TECHO DE QUINCE.** Las tres densidades proyectaban 34, 32 y
+> 15; **la frontera real da 20**, que esta entre la mas floja y las otras dos, **y pasa del
+> techo igual.**
+>
+> ### **LA VUELTA CIERRA EN `cap_09`, TECHO 15; `cap_10` Y `cap_11` PASAN A LA VUELTA SIGUIENTE.**
+>
+> Es la linea que el encargo me pide escribir, con la cifra que el me dejo decidir a mi:
+> **`cap_09` NO sale por debajo de 15, asi que no abro `cap_10`.**

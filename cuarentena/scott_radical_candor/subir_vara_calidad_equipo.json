@@ -1,40 +1,40 @@
 {
- "id": "subir_vara_calidad_equipo",
- "titulo": "Subir la vara de calidad con quien lleva tiempo haciendo un trabajo solo aceptable, en vez de darlo por mediocre",
- "denominaciones": {
-  "nombre_largo": "La empatia ruinosa peor de todas: dejar que alguien siga anios en un trabajo que no es el suyo. La politica de darle un proyecto donde pueda brillar, y que pasa si sigue sin brillar",
-  "otros_idiomas": [
-   {
-    "idioma": "ingles",
-    "termino": "there is no such thing as a B-player"
-   }
+  "id": "subir_vara_calidad_equipo",
+  "titulo": "Subir la vara de calidad con quien lleva tiempo haciendo un trabajo solo aceptable, en vez de darlo por mediocre",
+  "denominaciones": {
+    "nombre_largo": "La empatia ruinosa peor de todas: dejar que alguien siga anios en un trabajo que no es el suyo. La politica de darle un proyecto donde pueda brillar, y que pasa si sigue sin brillar",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "there is no such thing as a B-player"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando alguien de tu equipo lleva tiempo haciendo un trabajo que no es malo pero tampoco es bueno, y te has acostumbrado a que sea asi.",
+  "entregable_esperado": "La persona con un proyecto donde pueda brillar por delante, y despues de eso o brillando o ayudada a buscar un sitio donde pueda hacerlo, y en ningun caso etiquetada como mediocre.",
+  "pasos_accionables": [
+    "Parte de lo que el texto afirma: no existe el jugador de segunda ni el ser humano mediocre, y todo el mundo puede ser excelente en algo. Y parte tambien de lo que eso NO significa, que el texto se para a decir: no es que cualquiera pueda ser bueno en cualquier cosa.",
+    "Cuenta con por que la gente se queda atascada, que el texto enumera: se quedan tanto tiempo en el trabajo equivocado que cualquier cambio exigiria uno o dos pasos atras, han llegado a depender del prestigio y del dinero del puesto, y notan la presion de su familia para conservarlo.",
+    "Cuenta con las tres razones por las que los jefes mantienen a esa persona, que el texto tambien enumera: no estan seguros de poder encontrar a alguien mejor, formar gente nueva cuesta tiempo y esfuerzo, y les cae bien la persona y les parece injusto animarla a buscar un trabajo que le pegue mas.",
+    "Reconoce eso por lo que el texto dice que es: la peor forma de empatia ruinosa que los jefes practican con regularidad, y una fuente enorme de posibilidad desperdiciada.",
+    "Antes de empujar, conoce a la persona lo bastante como para entender por que no esta prosperando. El texto da la excepcion expresa: si simplemente esta pasando una mala racha, es mejor darle el tiempo y el espacio para recuperarse que pedirle mas de lo que puede dar en ese momento.",
+    "Da a quien lleve mas de dos anios sin hacer un trabajo excepcional la oportunidad de trabajar en un proyecto donde pueda brillar. El texto lo presenta como la politica concreta que la autora impuso en sus equipos, y dice que fue una de las cosas menos populares que hizo.",
+    "Si aun asi el trabajo sigue siendo mediocre, empieza a animar a esa persona a buscar trabajo en otro sitio.",
+    "Cuenta con lo que esa politica cuesta, que el texto no esconde: fue dificil de hacer cumplir, genero mucho estres, y a quien mas le peso fue a los jefes, porque les obligaba a tener muchas conversaciones dificiles y a apretar de verdad.",
+    "Y cuenta con el argumento con el que el texto la sostiene: si alguien no ha demostrado en dos anios que puede hacer un trabajo excepcional, es casi seguro que nunca va a llegar ahi, y ser etiquetado permanentemente como mediocre hace mas dania que ser empujado.",
+    "Entiende tu trabajo como poner y sostener una vara de calidad. El texto avisa de lo que se siente y de lo que cuesta lo contrario: puede parecer duro a corto plazo, pero a la larga lo unico mas cruel es bajar la vara."
   ],
-  "sigla": ""
- },
- "condiciones_activacion": "Cuando alguien de tu equipo lleva tiempo haciendo un trabajo que no es malo pero tampoco es bueno, y te has acostumbrado a que sea asi.",
- "entregable_esperado": "La persona con un proyecto donde pueda brillar por delante, y despues de eso o brillando o ayudada a buscar un sitio donde pueda hacerlo, y en ningun caso etiquetada como mediocre.",
- "pasos_accionables": [
-  "Parte de lo que el texto afirma: no existe el jugador de segunda ni el ser humano mediocre, y todo el mundo puede ser excelente en algo. Y parte tambien de lo que eso NO significa, que el texto se para a decir: no es que cualquiera pueda ser bueno en cualquier cosa.",
-  "Cuenta con por que la gente se queda atascada, que el texto enumera: se quedan tanto tiempo en el trabajo equivocado que cualquier cambio exigiria uno o dos pasos atras, han llegado a depender del prestigio y del dinero del puesto, y notan la presion de su familia para conservarlo.",
-  "Cuenta con las tres razones por las que los jefes mantienen a esa persona, que el texto tambien enumera: no estan seguros de poder encontrar a alguien mejor, formar gente nueva cuesta tiempo y esfuerzo, y les cae bien la persona y les parece injusto animarla a buscar un trabajo que le pegue mas.",
-  "Reconoce eso por lo que el texto dice que es: la peor forma de empatia ruinosa que los jefes practican con regularidad, y una fuente enorme de posibilidad desperdiciada.",
-  "Antes de empujar, conoce a la persona lo bastante como para entender por que no esta prosperando. El texto da la excepcion expresa: si simplemente esta pasando una mala racha, es mejor darle el tiempo y el espacio para recuperarse que pedirle mas de lo que puede dar en ese momento.",
-  "Da a quien lleve mas de dos anios sin hacer un trabajo excepcional la oportunidad de trabajar en un proyecto donde pueda brillar. El texto lo presenta como la politica concreta que la autora impuso en sus equipos, y dice que fue una de las cosas menos populares que hizo.",
-  "Si aun asi el trabajo sigue siendo mediocre, empieza a animar a esa persona a buscar trabajo en otro sitio.",
-  "Cuenta con lo que esa politica cuesta, que el texto no esconde: fue dificil de hacer cumplir, genero mucho estres, y a quien mas le peso fue a los jefes, porque les obligaba a tener muchas conversaciones dificiles y a apretar de verdad.",
-  "Y cuenta con el argumento con el que el texto la sostiene: si alguien no ha demostrado en dos anios que puede hacer un trabajo excepcional, es casi seguro que nunca va a llegar ahi, y ser etiquetado permanentemente como mediocre hace mas dania que ser empujado.",
-  "Entiende tu trabajo como poner y sostener una vara de calidad. El texto avisa de lo que se siente y de lo que cuesta lo contrario: puede parecer duro a corto plazo, pero a la larga lo unico mas cruel es bajar la vara."
- ],
- "resumen_teorico": "El inventario es del texto y es doble: las razones por las que la persona se queda y las razones por las que el jefe la mantiene, enumeradas las dos por el libro una a una, y despues la politica concreta con su plazo, su acto y su consecuencia. Se extrae como procedimiento y no como postura porque el texto no se queda en la afirmacion de que no hay jugadores de segunda: pone una politica que alguien aplico, con su condicion de entrada, dos anios sin trabajo excepcional, su acto, un proyecto donde brillar, y su salida si el acto no funciona. La excepcion de la mala racha entra porque el texto la pone expresamente, y es lo que impide leer este nodo como una maquina de echar gente. Lo que el texto NO dice, y por eso no esta escrito aqui, es quien decide que un trabajo es excepcional, cuanto dura el proyecto donde brillar, ni cuanto tiempo es una mala racha.",
- "dominio": "gestion_equipos",
- "estado": "vivo",
- "fuentes": [
-  {
-   "clave": "scott_radical_candor",
-   "fecha": "2026-09-12"
-  }
- ],
- "ids_alias": [],
- "nodos_previos": [],
- "nodos_siguientes": []
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_06.md, unidad Cap. 3, Understand What Motivates Each Person on Your Team. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la que encarga anadir la unidad a los 24 candidatos de la bandeja que no la nombraban: la costumbre de nombrarla empieza en cap_07 y estos son anteriores. NO SE CAMBIA NI UN PASO NI UNA CITA: lo unico que se anade es de que unidad salio. LEIDA DEL FICHERO FUENTE Y NO DE UNA TABLA, con el ancla textual unica que la sostiene, 'B-player', corrida con grep contra las quince unidades del libro. El inventario es del texto y es doble: las razones por las que la persona se queda y las razones por las que el jefe la mantiene, enumeradas las dos por el libro una a una, y despues la politica concreta con su plazo, su acto y su consecuencia. Se extrae como procedimiento y no como postura porque el texto no se queda en la afirmacion de que no hay jugadores de segunda: pone una politica que alguien aplico, con su condicion de entrada, dos anios sin trabajo excepcional, su acto, un proyecto donde brillar, y su salida si el acto no funciona. La excepcion de la mala racha entra porque el texto la pone expresamente, y es lo que impide leer este nodo como una maquina de echar gente. Lo que el texto NO dice, y por eso no esta escrito aqui, es quien decide que un trabajo es excepcional, cuanto dura el proyecto donde brillar, ni cuanto tiempo es una mala racha.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
 }

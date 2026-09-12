@@ -1,49 +1,49 @@
 {
- "id": "imaginar_caso_simple_bragueta_abierta",
- "titulo": "Imaginar el caso simple de la bragueta abierta antes de decir algo dificil, y mirar en que cuadrante cae tu silencio",
- "denominaciones": {
-  "nombre_largo": "Resolver el problema dificil trayendolo al parecido facil: que dirias si un companiero saliera del servicio con la bragueta bajada, y donde te pone en el marco cada una de las cuatro salidas",
-  "otros_idiomas": [
-   {
-    "idioma": "ingles",
-    "termino": "your fly is down"
-   }
+  "id": "imaginar_caso_simple_bragueta_abierta",
+  "titulo": "Imaginar el caso simple de la bragueta abierta antes de decir algo dificil, y mirar en que cuadrante cae tu silencio",
+  "denominaciones": {
+    "nombre_largo": "Resolver el problema dificil trayendolo al parecido facil: que dirias si un companiero saliera del servicio con la bragueta bajada, y donde te pone en el marco cada una de las cuatro salidas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "your fly is down"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tienes que decirle a alguien algo que va a ser muy dificil de oir y no sabes si lo que vas a hacer es franqueza radical o no, y tambien cada vez que estas a punto de callarte algo.",
+  "entregable_esperado": "La cosa dificil dicha, o al menos el silencio identificado en el cuadrante que le corresponde antes de elegirlo.",
+  "pasos_accionables": [
+    "Cuenta con lo que el texto avisa: decidir si estas siendo radicalmente franco o no puede ser mas dificil de lo que parece.",
+    "Usa la via que el texto propone para eso: una forma de resolver un problema dificil es pensar en uno mas simple pero parecido, recordar como lo resolviste, y aplicar esa tecnica al dificil. El texto dice que sirve igual para las situaciones emocionales.",
+    "Cuando te toque decir algo muy dificil de oir, finge que solo estas diciendo llevas la bragueta abierta, o tienes espinacas entre los dientes. El texto dice que esos escenarios menos cargados ayudan a encarar los problemas grandes de forma mas directa.",
+    "Imagina el escenario entero: un colega sale del servicio con la bragueta bajada y el faldon de la camisa fuera. Que dices?",
+    "La franqueza radical es apartarlo y decirselo en voz baja, aniadiendo que a ti te agrada que te lo digan cuando te ha pasado lo mismo y que esperas que no le importe que se lo menciones.",
+    "La agresion odiosa es senialarlo en voz alta delante de otros intentando hacer gracia humillandolo a proposito. El texto aniade que aun asi no es el peor escenario desde el punto de vista del afectado, porque al menos le diste la ocasion de arreglarlo.",
+    "La empatia ruinosa es callarte porque sabes que es timido y se va a avergonzar, con lo que lo ven diez personas mas y cuando se da cuenta es evidente que llevaba mucho rato asi, y acaba mas avergonzado que si se lo hubieras dicho en el acto.",
+    "La insinceridad manipuladora es callarte pensando en tus propios sentimientos y en tu reputacion, no por el sino por ahorrartelo tu, porque te importa mucho caer bien y te preocupa que te juzguen si te oyen decirselo. Y si eres del todo desvergonzado, susurrarselo al siguiente que pase.",
+    "No reserves esto para la gente que ya conoces bien. El texto avisa de que la necesidad de comunicacion honesta no siempre espera a que haya relacion estrecha, y de que el silencio de un casi desconocido invita a mas incomodidad y mas desconfianza que decirlo: la proxima vez que os veais habra incomodidad por el recuerdo, y en tu reticencia quedan sembradas las semillas de la desconfianza.",
+    "Usalo en caliente como control: la proxima vez que veas una bragueta metaforica bajada y te tiente no decir nada, imagina donde te pone eso en el marco, empatia ruinosa o insinceridad manipuladora, y deja que el tironcito te mueva hacia la franqueza radical.",
+    "Cuenta con la regla que el texto recoge de Kim Vorrath, responsable en Apple del equipo de iOS que hizo el software del telefono: dilo sin mas."
   ],
-  "sigla": ""
- },
- "condiciones_activacion": "Cuando tienes que decirle a alguien algo que va a ser muy dificil de oir y no sabes si lo que vas a hacer es franqueza radical o no, y tambien cada vez que estas a punto de callarte algo.",
- "entregable_esperado": "La cosa dificil dicha, o al menos el silencio identificado en el cuadrante que le corresponde antes de elegirlo.",
- "pasos_accionables": [
-  "Cuenta con lo que el texto avisa: decidir si estas siendo radicalmente franco o no puede ser mas dificil de lo que parece.",
-  "Usa la via que el texto propone para eso: una forma de resolver un problema dificil es pensar en uno mas simple pero parecido, recordar como lo resolviste, y aplicar esa tecnica al dificil. El texto dice que sirve igual para las situaciones emocionales.",
-  "Cuando te toque decir algo muy dificil de oir, finge que solo estas diciendo llevas la bragueta abierta, o tienes espinacas entre los dientes. El texto dice que esos escenarios menos cargados ayudan a encarar los problemas grandes de forma mas directa.",
-  "Imagina el escenario entero: un colega sale del servicio con la bragueta bajada y el faldon de la camisa fuera. Que dices?",
-  "La franqueza radical es apartarlo y decirselo en voz baja, aniadiendo que a ti te agrada que te lo digan cuando te ha pasado lo mismo y que esperas que no le importe que se lo menciones.",
-  "La agresion odiosa es senialarlo en voz alta delante de otros intentando hacer gracia humillandolo a proposito. El texto aniade que aun asi no es el peor escenario desde el punto de vista del afectado, porque al menos le diste la ocasion de arreglarlo.",
-  "La empatia ruinosa es callarte porque sabes que es timido y se va a avergonzar, con lo que lo ven diez personas mas y cuando se da cuenta es evidente que llevaba mucho rato asi, y acaba mas avergonzado que si se lo hubieras dicho en el acto.",
-  "La insinceridad manipuladora es callarte pensando en tus propios sentimientos y en tu reputacion, no por el sino por ahorrartelo tu, porque te importa mucho caer bien y te preocupa que te juzguen si te oyen decirselo. Y si eres del todo desvergonzado, susurrarselo al siguiente que pase.",
-  "No reserves esto para la gente que ya conoces bien. El texto avisa de que la necesidad de comunicacion honesta no siempre espera a que haya relacion estrecha, y de que el silencio de un casi desconocido invita a mas incomodidad y mas desconfianza que decirlo: la proxima vez que os veais habra incomodidad por el recuerdo, y en tu reticencia quedan sembradas las semillas de la desconfianza.",
-  "Usalo en caliente como control: la proxima vez que veas una bragueta metaforica bajada y te tiente no decir nada, imagina donde te pone eso en el marco, empatia ruinosa o insinceridad manipuladora, y deja que el tironcito te mueva hacia la franqueza radical.",
-  "Cuenta con la regla que el texto recoge de Kim Vorrath, responsable en Apple del equipo de iOS que hizo el software del telefono: dilo sin mas."
- ],
- "resumen_teorico": "Es una tecnica y no una postura, y el propio texto la presenta como tal: nombra el metodo general, resolver el dificil por el simple parecido, da el caso simple concreto, y despues recorre las cuatro salidas del mismo escenario una a una, que son las cuatro casillas del marco. Por eso el inventario es del libro entero y escribir los pasos es transcribirlo. El escenario de la bragueta no es un caso de la casa sino el instrumento mismo, y por eso el entregable no lleva nada de el: lo que entrega el procedimiento es la cosa dificil dicha, o el silencio identificado antes de elegirlo. El paso de control en caliente es la forma en que el propio texto lo devuelve a la practica. Lo que el texto NO dice, y por eso no esta escrito aqui, es que hacer cuando el problema dificil no tiene ningun parecido simple que traer.",
- "atribuciones": [
-  {
-   "cifra": "el consejo simple sobre la critica que el texto cita literalmente, dilo sin mas",
-   "autor": "Kim Vorrath, citada por Kim Scott",
-   "fuente": "scott_radical_candor",
-   "fecha_corte": "no consta en el texto: el libro la presenta como responsable en Apple del equipo de iOS que construyo el software del telefono, sin anio ni obra"
-  }
- ],
- "dominio": "gestion_equipos",
- "estado": "vivo",
- "fuentes": [
-  {
-   "clave": "scott_radical_candor",
-   "fecha": "2026-09-12"
-  }
- ],
- "ids_alias": [],
- "nodos_previos": [],
- "nodos_siguientes": []
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_05.md, unidad Cap. 2, Get, Give, and Encourage Guidance. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la que encarga anadir la unidad a los 24 candidatos de la bandeja que no la nombraban: la costumbre de nombrarla empieza en cap_07 y estos son anteriores. NO SE CAMBIA NI UN PASO NI UNA CITA: lo unico que se anade es de que unidad salio. LEIDA DEL FICHERO FUENTE Y NO DE UNA TABLA, con el ancla textual unica que la sostiene, 'fly is down', corrida con grep contra las quince unidades del libro. Es una tecnica y no una postura, y el propio texto la presenta como tal: nombra el metodo general, resolver el dificil por el simple parecido, da el caso simple concreto, y despues recorre las cuatro salidas del mismo escenario una a una, que son las cuatro casillas del marco. Por eso el inventario es del libro entero y escribir los pasos es transcribirlo. El escenario de la bragueta no es un caso de la casa sino el instrumento mismo, y por eso el entregable no lleva nada de el: lo que entrega el procedimiento es la cosa dificil dicha, o el silencio identificado antes de elegirlo. El paso de control en caliente es la forma en que el propio texto lo devuelve a la practica. Lo que el texto NO dice, y por eso no esta escrito aqui, es que hacer cuando el problema dificil no tiene ningun parecido simple que traer.",
+  "atribuciones": [
+    {
+      "cifra": "el consejo simple sobre la critica que el texto cita literalmente, dilo sin mas",
+      "autor": "Kim Vorrath, citada por Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta en el texto: el libro la presenta como responsable en Apple del equipo de iOS que construyo el software del telefono, sin anio ni obra"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
 }
