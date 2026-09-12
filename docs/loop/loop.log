@@ -196,3 +196,36 @@ BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 [2026-09-11 21:40:37] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
 [2026-09-11 21:40:37] ROL INICIAL FORZADO por EMPEZAR_EN: extractor (gana sobre la medicion)
 [2026-09-11 21:40:37] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-11 23:02:37] extractor listo (USD 19.0230875), 4920s, intento 1 de 7
+[2026-09-11 23:02:37] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-11 23:37:44] auditor ciego listo (USD 8.824727999999997), 2107s, intento 1 de 7
+[2026-09-11 23:37:44]   apertura ciega sellada: 690283f2dbb103277b4743ffcda6f0c8c744e30e
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 18 hallazgo(s)
+  .poblacion_C_v16.jsonl linea 275 columna 1687: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 275 columna 1755: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 311 columna 1445: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 311 columna 1540: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 314 columna 1952: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 314 columna 1985: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 340 columna 1387: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 340 columna 1418: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 351 columna 1591: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 275 columna 1687: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 275 columna 1755: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 311 columna 1445: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 311 columna 1540: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 314 columna 1952: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 314 columna 1985: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 340 columna 1387: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 340 columna 1418: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 351 columna 1591: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-11 23:37:45] VUELTA 1 : AUDITOR (claude-opus-5)
