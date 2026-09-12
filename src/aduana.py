@@ -1029,7 +1029,11 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
             "detalle_paso": vecino["detalle_paso"],
             "veredicto": veredicto["clase"],
             "razon": veredicto["razon"],
-            "arista": ("%s > %s" % (veredicto["madre"], candidato["id"]))
+            # El campo dice MADRE a HIJO de verdad en los dos casos. Antes daba
+            # por hecho que el candidato era siempre el hijo, y cuando el
+            # candidato era la MADRE escribia `X > X` y perdia el nombre del
+            # hijo (12 lineas asi, vueltas 12 a 15; ACTA 16 seccion 8.1).
+            "arista": ("%s > %s" % (madre, hijo))
                       if veredicto["clase"] == "CONTINUA"
                       else ("%s <> %s" % (candidato["id"], vecino["id"]))
                       if veredicto["clase"] == "MUTUO" else "",

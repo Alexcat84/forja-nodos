@@ -20494,3 +20494,426 @@ la discrepancia se declara y no se resuelve copiando.**
 > delante y no cayo ninguno; **falle en el unico id de `cap_06` donde la palabra no me
 > parecio una preposicion.** Es el aviso del encargo cumpliendose a la letra: *mientras no
 > este resuelta, mirala dos veces.* **La mire una.**
+
+---
+
+# VUELTA 17, los registros, el campo `arista` que miente en la bitacora, el nodo que se le debe a `cap_05`, y `cap_07` en adelante del lote 4 (`scott_radical_candor`)
+
+*Esqueleto abierto ANTES de la primera tarea (`EXTRACTOR.md` 3). Las filas se anexan al
+cerrarse cada tarea, no al final de la vuelta.*
+
+## L.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION
+
+*`EXTRACTOR.md` 4: la apertura se mide antes de la primera operacion; lo de despues es
+estado intermedio y se cita como tal.*
+
+| medida | instrumento corrido en esta vuelta | valor al abrir |
+|---|---|---:|
+| nodos en el grafo | `wc -l < dataset/nodos.jsonl` | **203** |
+| veredictos en bitacora | `wc -l < bitacora/VEREDICTOS.jsonl` | **148** |
+| candidatos en cuarentena del lote 4 | `ls cuarentena/scott_radical_candor/*.json \| wc -l` | **25** |
+| lineas del reporte | `wc -l < docs/loop/REPORTE.md` | **20496** |
+| rama | `git rev-parse --abbrev-ref HEAD` | `extraccion-mundo-11` |
+| commit de apertura | `git rev-parse HEAD` | `50a6f45` |
+
+## L.1. LAS TAREAS ENCARGADAS, Y SU ESTADO
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | los registros: `ACTA 16` entera, mis cuatro cifras remedidas, cinco correcciones del auditor | **CERRADA** (`L.2`) |
+| 2 | el campo `arista` que miente en `bitacora/VEREDICTOS.jsonl` | **CERRADA** (`L.3`) |
+| 3 | el nodo que se le debe a `cap_05` y las cuatro colas de arista | PENDIENTE |
+| 4 | lote 4, `cap_07` a `cap_10`, los que quepan enteros | PENDIENTE |
+
+---
+
+## L.2. TAREA 1: LOS REGISTROS. **CERRADA**
+
+### L.2.a. LA `ACTA 16` LEIDA ENTERA, Y SUS CUATRO ADJUDICACIONES RECOGIDAS SIN REABRIR
+
+*Leida de `docs/loop/ACTA_AUDITOR.md` L14570 a L15947 (`grep -n '^# ACTA' | tail -1` da
+`14570:# ACTA 16.`; `wc -l` da `15947`). **Las cuatro se recogen. No encontre hecho nuevo
+en ninguna, asi que no reabro ninguna** (`EXTRACTOR.md` 5).*
+
+| # | lo que adjudica | lo recojo asi |
+|---:|---|---|
+| **1** | a la pieza 12 de `cap_05` (`:183` a `:187`) **se le debe un nodo**, `D.27` lo admite, **y no es caida de ninguna especie** | **RECOGIDA.** Va a la TAREA 3 y la trabajo con las dos salidas escritas delante, como el acta manda |
+| **2** | el par de `familia_id` 0,600 es **`SANO`**; mi lectura se sostiene y su `CONTINUA` ciego cae. **Y me corrige la mitad del argumento**: el bueno no es *tres de sus once pasos* (bascula, prohibida por su `6.1`), **es que las dos activaciones son la misma frase** | **RECOGIDA, Y LA CORRECCION TAMBIEN, QUE ES LO QUE IMPORTA.** Gane el veredicto con medio argumento malo. **La vara que me llevo de aqui: un hijo empieza DENTRO de la madre, no a su lado, y eso se mira en la activacion, no en el recuento de pasos.** La aplico en la TAREA 4 |
+| **3** | la extension de `atribuciones` a Costolo, Forstall, Horowitz, Vorrath y Jared Smith **se sostiene y no ensancha nada**; lo que cae es el numero que la acompania | **RECOGIDA POR LAS DOS MITADES.** La doctrina se sostiene; **el numero es mio y es falso**, y esta remedido en `L.2.b` |
+| **4** | hay un par que **ninguna senial levanta** con dos pasos gemelos con un nodo que ya vive, y su clase es `CONTINUA` **con paso de madre que citar (P3)** | **RECOGIDA.** Es hallazgo suyo y no mio: **mi vuelta 16 no lo trajo.** Va a la cola 4 de la TAREA 3, en bloque titulado |
+
+### L.2.b. MIS CUATRO CIFRAS FALSAS, **REMEDIDAS POR MI ANTES DE ESCRIBIRLAS**
+
+*`EXTRACTOR.md` 5: **una cifra de su encargo no es fuente de una cifra mia.** Las cuatro
+las vuelvo a correr yo con el instrumento, y pego la salida.*
+
+    $ git log --oneline -1 5367adf
+    5367adf Estado del arnes al abrir la vuelta 16: loop.log y los dos testigos del turno anterior
+    $ python (git ls-tree 5367adf cuarentena/scott_radical_candor/, atribuciones de cada uno)
+      manejar_enfado_persona_desafiada             atribuciones=1
+      repartir_semana_cuarenta_horas_jefe          atribuciones=1
+      (los otros seis)                             atribuciones=0
+      ficheros: 8   TOTAL atribuciones al abrir la vuelta 16: 2
+
+    $ python (bandeja de hoy, con el commit de alta de cada fichero con atribucion)
+      acompaniar_mejores_equipo_socio            atrib=1  anadido en 7c3e224
+      cambiar_potencial_trayectoria_crecimiento  atrib=1  anadido en 7c3e224
+      retirar_etiquetas_permanentes_equipo       atrib=1  anadido en 7c3e224
+      equilibrar_elogio_critica_equipo           atrib=1  anadido en e65991d
+      imaginar_caso_simple_bragueta_abierta      atrib=1  anadido en e65991d
+      cuidar_persona_completa_equipo             atrib=1  anadido en 81aea10
+      manejar_enfado_persona_desafiada           atrib=1  anadido en 84bccb6
+      repartir_semana_cuarenta_horas_jefe        atrib=1  anadido en 6920050
+      TOTAL en la bandeja hoy: 8
+
+| # | donde lo escribi | lo que escribi | **lo que mide el repo hoy, corrido por mi** |
+|---:|---|---|---|
+| 1 | `K.12.2`, tabla | atribuciones en la bandeja **al abrir: 3** | **2.** Las dos son `manejar_enfado_persona_desafiada` y `repartir_semana_cuarenta_horas_jefe`, y las otras seis del commit `5367adf` estan a cero |
+| 2 | `K.12.2`, tabla | *1 de la TAREA 3 y **4** de la TAREA 4* | **1 de la TAREA 3 y 5 de la TAREA 4.** El reparto lo dan los commits de alta: `81aea10` es el arreglo en frio (TAREA 3) y `e65991d` mas `7c3e224` son los dos capitulos (2 mas 3 = **5**) |
+| 3 | `K.9`, tabla, fila 8 | *Escribi **OCHO** atribuciones en esta vuelta* | **SEIS**, que es `8 menos 2`. Y lo peor no es el 8: **es que mi propia fila nombraba cinco autores mas Kofman, o sea SEIS, al lado del numero que decia ocho** |
+| 4 | `K.8`, tabla | `cap_01` = **1.510**, `cap_03` = **1.963** | **2.846 y 627**, medidas con `sed -n '8,$p' <f> \| wc -w`, **y son las que mi propia tabla de la VUELTA 14 ya tenia bien** |
+
+**LAS DOS FILAS DE PALABRAS, CON SU `sed` PEGADO** (`D.35`), **y con el instrumento dicho
+a los dos lados, que es la leccion que el auditor me deja:**
+
+    $ cd fuentes/scott_radical_candor
+    $ for f in cap_00 cap_01 cap_02 cap_03; do
+        printf "%s cuerpo=%s entero=%s\n" $f "$(sed -n '8,$p' $f.md|wc -w)" "$(wc -w < $f.md)"; done
+    cap_00  cuerpo=218     entero=236
+    cap_01  cuerpo=2846    entero=2880
+    cap_02  cuerpo=3908    entero=3933
+    cap_03  cuerpo=627     entero=660
+
+    $ sed -n '15094p;15096p' docs/loop/REPORTE.md        (mi tabla de la VUELTA 14)
+    15094: | `cap_01.md` | Preface | Preface to the Revised Edition ... | 2.846 | 79 |
+    15096: | `cap_03.md` | How to Use This Book | How to Use This Book | 627 | 29 |
+
+> ### **LAS CUATRO SON MIAS Y LAS CUATRO SON CIERTAS. NO REABRO NADA Y NO PIDO NINGUN MATIZ.**
+>
+> **Y RECOJO LA LECCION EN LOS TERMINOS EN QUE EL ACTA LA ESCRIBE, PORQUE ES LA PARTE QUE
+> VALE:** *cuadrar un total no prueba nada sobre sus filas.* `1.510` mas `1.963` son
+> `3.473`; `2.846` mas `627` son `3.473`. **Mi total del lote 4 estaba bien y por eso
+> ninguna de las dos filas se cazaba mirando el total.** Igual con las atribuciones: `3`
+> mas `1` mas `4` daba el `8` correcto del cierre, y por eso el error de apertura y el de
+> reparto **se tapaban el uno al otro.**
+>
+> **LA REGLA QUE ME ESCRIBO PARA NO REPETIRLO, Y NO ES DOCTRINA NUEVA, ES `EXTRACTOR.md` 5
+> APLICADO A LO QUE MAS ME HA COSTADO: un recuento se cuenta, no se deduce del total.** Mis
+> cuatro caidas de la vuelta 16 son **cuatro sumandos que deduje de una suma que si era
+> buena.** Ninguna es un juicio y ninguna estaba en mis diez discutibles, **y eso es
+> exactamente lo que el acta dice que significa: no las vi venir porque no dude de ellas.**
+
+### L.2.c. LA TABLA DE `PASOS INVENTADOS`, REPUBLICADA CON LAS PALABRAS CORREGIDAS
+
+*El encargo pide **la tabla con las palabras corregidas**, y aviso de entrada de lo que
+esta tabla NO mueve: los numeradores y los denominadores de `cap_01` y `cap_03` (**0 de 9**
+y **0 de 7**) **eran correctos**, asi que **la tasa, la banda, la peor unidad y el freno no
+se tocan**. Lo unico que cambia es la columna de palabras.*
+
+| unidad | rotulo | **palabras de cuerpo, remedidas por mi** | numerador | denominador | tasa |
+|---|---|---:|---:|---:|---:|
+| `cap_00` | `Copyright Page` | **218** | 0 | 0 | sin definir |
+| `cap_01` | `Preface` | ~~1.510~~ **2.846** | 0 | 9 | **0,00** |
+| `cap_02` | `Introduction` | **3.908** | 0 | 0 | sin definir |
+| `cap_03` | `How to Use This Book` | ~~1.963~~ **627** | 0 | 7 | **0,00** |
+| `cap_04` | `Cap. 1` | **6.263** | 3 | 48 | **6,25** |
+| `cap_05` | `Cap. 2` | **8.756** | 2 | 68 | **2,94** |
+| `cap_06` | `Cap. 3` | **11.587** | 0 | 117 | **0,00** |
+| | **el lote 4 hasta `cap_06`** | **34.205** | **5** | **249** | **2,01** |
+
+**LAS DOS FILAS VIEJAS SE DEJAN TACHADAS A LA VISTA, SIN BORRAR** (manual principio 6), y
+**el total de palabras no se mueve**: era correcto antes y sigue siendo `34.205`, que es lo
+que hacia invisible el error.
+
+> **PEOR UNIDAD `cap_04` CON 6,25, TOPE 10: EL FRENO NO SE DISPARA Y EL VOLUMEN SE QUEDA EN
+> CUATRO CAPITULOS.** Lo recojo del acta y **no lo muevo yo**: la decision es del fundador
+> (`5.8`) y `EXTRACTOR.md` 14 dice donde escribo y donde no.
+
+### L.2.d. LAS CINCO CORRECCIONES DEL AUDITOR, RECOGIDAS **Y REMEDIDAS POR MI**
+
+*Van contra el y no contra mi, y aun asi las corro yo: `EXTRACTOR.md` 5 no distingue de
+quien es la cifra que se hereda. **Cinco de cinco confirmadas.***
+
+| # | lo que el auditor se corrige | mi medida, con el comando pegado | la confirmo? |
+|---:|---|---|---|
+| **1** | su remedio del rotulo `TOTAL titulos recorridos` volvio a fallar, segunda vuelta seguida | `$ grep -c "TOTAL titulos recorridos" docs/loop/APERTURA_CIEGA.md` da **`0`** | **SI**, cero donde su remedio dice uno |
+| **2** | acuso a `ORDEN_DE_LOTES.md` L20 de decir `108.161` contra `108.587` del repo; **la fila es EXACTA** | `$ (suma de sed -n '8,$p' \| wc -w sobre los 15)` da **`108161`**; `$ cat fuentes/scott_radical_candor/*.md \| wc -w` da **`108587`**. Y `$ sed -n '20p' docs/loop/ORDEN_DE_LOTES.md` dice **`108.161`** y **`81.508`**, y mi suma de cuerpo de `cap_04` a `cap_11` da **`81508`** | **SI.** Las **426** de diferencia son las cabeceras de los quince ficheros |
+| **3** | acuso al cuerpo de `da62e73` de decir `13.678` y `20.343`; **las dos son correctas** | `cap_07` **cuerpo=13678, entero=13706**; `cap_05` mas `cap_06` **cuerpo=20343, entero=20406**. `$ git log -1 --format=%B da62e73` trae `13.678` y `20.343` | **SI.** 28 palabras de cabecera en uno y 63 en dos |
+| **4** | atribuyo a mi turno el testigo `.barrido_C_con_ensayo_v16.txt` en cero bytes; **es suyo** | `$ git log --diff-filter=A --format='%h %s' -1 -- .barrido_C_con_ensayo_v16.txt` da `7d43c85 ACTA 15: la vuelta 15 verificada entera...` | **SI.** Alta en el commit de la `ACTA 15`, que es su turno y no el mio |
+| **5** | su `ACTA 15` 11 dice *un capitulo de este libro pesa 10.071 de media*; **es la media de los CUATRO del tramo** | mi medida de hoy: **15 unidades = 7.210,7**; **8 numerados = 10.188,5**; **tramo `cap_04` a `cap_07` = 10.071,0** (suma 40.284 entre 4) | **SI, Y ES LA QUE MAS ME TOCA**: yo la herede **dos veces** con el sujeto cambiado. **A partir de aqui escribo `los cuatro del tramo` y no `este libro`** |
+
+> ### **LA LECTURA QUE EL AUDITOR ME DEBE Y QUE RECOJO ENTERA, PORQUE ES LA MAS UTIL DE LA VUELTA**
+>
+> **Tres de sus cuatro cifras falsas salen de comparar `wc -w <fichero>` contra
+> `sed -n '8,$p' <fichero> | wc -w`.** Esta casa mide **palabras de CUERPO** desde la vuelta
+> 14, y las siete lineas de cabecera de cada fichero son la diferencia entera: **426 en los
+> quince, 28 en uno, 63 en dos.**
+>
+> **LO APLICO DESDE ESTA MISMA SECCION Y NO COMO PROMESA:** las cinco filas de arriba llevan
+> **los dos instrumentos corridos y pegados**, el suyo y el mio, y las cuatro filas de
+> `L.2.b` tambien. **Si en esta vuelta publico alguna discrepancia de palabras, dice con que
+> instrumento se midio cada lado o no se publica.**
+>
+> **Y LO QUE NO HAGO, QUE ES TAN IMPORTANTE COMO LO QUE HAGO:** **no le devuelvo ninguna.**
+> Sus cinco caidas las cuenta su racha y su sede, y **`EXTRACTOR.md` 14 dice que yo propongo
+> en mi reporte y no adjudico**. Las remido porque no puedo heredarlas, no para cobrarlas.
+
+---
+
+## L.3. TAREA 2: EL CAMPO QUE MIENTE EN `bitacora/VEREDICTOS.jsonl`. **CERRADA**
+
+*Sale de `ACTA 16` 8.1. **Es la unica excepcion a la moratoria de maquinaria de esta
+vuelta**, y va citada: `AUDITOR_FORJA.md` 5.6 prohibe arneses, guardas o lectores NUEVOS
+*salvo que una caida de dato lo exija con su cita*, y esta la tiene. **Lo que escribo es
+UNA linea de un instrumento que ya existe, mas su prueba, mas la correccion declarada de
+las doce lineas viejas. Nada mas.***
+
+### L.3.a. LA CAIDA, MEDIDA POR MI Y NO HEREDADA
+
+*El auditor la publica con su cifra. **No la heredo** (`EXTRACTOR.md` 5): la vuelvo a
+correr y ademas la cruzo contra el GRAFO, que es lo que su medida no hace.*
+
+    $ python (CONTINUA cuyo campo 'arista' dice X > X, sobre bitacora/VEREDICTOS.jsonl)
+    total lineas: 148
+    CONTINUA: 79
+    con X > X: 12
+
+| # | linea | lo que el campo `arista` decia | `candidato` | `vecino` |
+|---:|---:|---|---|---|
+| 1 | **L5** | `crear_tarjeta_puntuacion_puesto > crear_tarjeta_puntuacion_puesto` | `crear_tarjeta_puntuacion_puesto` | `alinear_comunicar_tarjeta_puntuacion` |
+| 2 | **L25** | `seleccionar_jugador_cuatro_entrevistas > ` idem | `seleccionar_jugador_cuatro_entrevistas` | `decidir_contratacion_final` |
+| 3 | **L26** | `seleccionar_jugador_cuatro_entrevistas > ` idem | `seleccionar_jugador_cuatro_entrevistas` | `calificar_tarjeta_puntuacion_habilidad_voluntad` |
+| 4 | **L64** | `instalar_metodo_contratacion_empresa > ` idem | `instalar_metodo_contratacion_empresa` | `formar_equipo_practicas_metodo` |
+| 5 | **L68** | `respetar_cautelas_legales_contratacion > ` idem | `respetar_cautelas_legales_contratacion` | `rechazar_candidato_razones_relevantes` |
+| 6 | **L76** | `elegir_recolocar_despedir_persona > ` idem | `elegir_recolocar_despedir_persona` | `despedir_persona_respeto_franqueza` |
+| 7 | **L78** | `listar_debilidades_disparadores_propios > ` idem | `listar_debilidades_disparadores_propios` | `identificar_disparadores_propios_reaccion` |
+| 8 | **L84** | `revisar_proposito_personas_proceso > ` idem | `revisar_proposito_personas_proceso` | `gestionar_personas_equipo` |
+| 9 | **L87** | `transitar_jefe_nuevo_equipo_establecido > ` idem | `transitar_jefe_nuevo_equipo_establecido` | `calibrar_normalidad_preguntas_jefe` |
+| 10 | **L123** | `repartir_papeles_directivo_reclutador > ` idem | `repartir_papeles_directivo_reclutador` | `desarrollar_estrategia_busqueda_candidatos` |
+| 11 | **L124** | `repartir_papeles_directivo_reclutador > ` idem | `repartir_papeles_directivo_reclutador` | `mostrar_candidato_cuanto_quieres` |
+| 12 | **L128** | `crear_plan_creible_equipo > crear_plan_creible_equipo` | `crear_plan_creible_equipo` | `ajustar_plan_fuerzas_equipo` |
+
+**Y LO QUE EL ACTA NO MIDE Y YO SI, PORQUE ES DE LO QUE DEPENDE PODER ESCRIBIR LA VERDAD:
+LAS DOCE CONTRA EL GRAFO, POR LOS DOS EXTREMOS.**
+
+    $ python (para cada una de las 12: vecino en candidato.nodos_siguientes
+              Y candidato en vecino.nodos_previos, y el sentido inverso)
+    L5    crear_tarjeta_puntuacion_puesto        > alinear_comunicar_...   grafo cand>vec: True  inverso: False
+    (... las doce igual ...)
+    de las 12, con la arista cand > vec REAL en el grafo por los dos lados: 12
+    de las 12, con el sentido inverso en el grafo:                          0
+
+> **LAS DOCE TIENEN SU ARISTA VERDADERA EN EL GRAFO, `candidato > vecino`, CABLEADA POR LOS
+> DOS EXTREMOS, Y NINGUNA TIENE EL SENTIDO INVERSO.** Eso es lo que me deja escribir la
+> arista verdadera **sin inventarla**: no la deduzco del texto roto, **la leo de la sede
+> donde si esta bien puesta**.
+
+### L.3.b. EL ARREGLO, QUE ES **UNA LINEA** DE `src/aduana.py`
+
+*`src/aduana.py` daba por hecho que el candidato es siempre el HIJO. El bucle que escribe
+el registro ya calcula `madre` y `hijo` bien cuatro lineas mas arriba (L989,
+`hijo = candidato["id"] if madre == vecino["id"] else vecino["id"]`), **que es la misma
+pareja con la que se cablea la arista del grafo**. El campo se escribia con otra cosa.*
+
+    $ git diff --stat src/aduana.py
+     src/aduana.py | 6 +++++-
+     1 file changed, 5 insertions(+), 1 deletion(-)
+
+    L1032   # El campo dice MADRE a HIJO de verdad en los dos casos. Antes daba
+    L1033   # por hecho que el candidato era siempre el hijo, y cuando el
+    L1034   # candidato era la MADRE escribia `X > X` y perdia el nombre del
+    L1035   # hijo (12 lineas asi, vueltas 12 a 15; ACTA 16 seccion 8.1).
+    L1036   "arista": ("%s > %s" % (madre, hijo))
+
+**CINCO LINEAS AÑADIDAS Y UNA CAMBIADA: LA CAMBIADA ES UNA Y LAS OTRAS CUATRO SON EL
+COMENTARIO QUE DICE POR QUE.** Y el arreglo **usa lo que el propio registro ya tiene**, que
+es lo que el encargo pide: `madre` y `hijo` salen del mismo calculo que construye la arista
+del grafo, asi que **la bitacora y el grafo ya no pueden discrepar por construccion.**
+
+### L.3.c. LA PRUEBA, Y **LA MORDIDA A PROPOSITO** (`5.5`, *la guarda que no muerde es cifra*)
+
+*Dos pruebas nuevas en `tests/test_aceptacion.py`, dentro de `PruebaAristaDeclarada`, que
+es donde viven las de esta puerta. **La clase ya tenia una prueba de este campo y salia
+verde con el defecto dentro**, y el motivo es la leccion entera: **metia al candidato
+siempre de HIJO.** El caso invertido no lo cubria nadie.*
+
+| prueba | que muerde |
+|---|---|
+| `test_el_campo_arista_dice_madre_a_hijo_cuando_el_candidato_es_la_MADRE` | inserta primero el HIJO, asi que en la segunda insercion **el candidato es la MADRE**. Comprueba el campo contra la arista del grafo **y ademas barre la bitacora entera: ningun `CONTINUA` puede declarar una arista de un nodo a si mismo** |
+| `test_caso_positivo_con_el_candidato_de_HIJO_el_campo_sigue_bien` | el sentido que ya funcionaba. **Sin el, la primera solo probaria que el campo cambio, no que cambio en el sentido correcto** |
+
+**LA MORDIDA, CON LA SALIDA LITERAL PEGADA.** Devolvi la linea vieja a `src/aduana.py` y
+volvi a correr la tanda entera:
+
+    $ (mutado: "arista": ("%s > %s" % (veredicto["madre"], candidato["id"])))
+    $ python tests/test_aceptacion.py
+    FAIL: test_el_campo_arista_dice_madre_a_hijo_cuando_el_candidato_es_la_MADRE
+    AssertionError: 'redactar_codigo_comercializacion > redactar_codigo_comercializacion'
+                 != 'redactar_codigo_comercializacion > comprobar_veracidad_anuncios'
+    - redactar_codigo_comercializacion > redactar_codigo_comercializacion
+    + redactar_codigo_comercializacion > comprobar_veracidad_anuncios
+     : el campo arista ha de decir madre a hijo, y llego
+       'redactar_codigo_comercializacion > redactar_codigo_comercializacion'
+    Ran 77 tests in 9.928s
+    FAILED (failures=1)
+      total: 77 pruebas, 1 fallos, 0 errores
+
+    $ (restaurado el arreglo)
+    $ python tests/test_aceptacion.py
+      total: 77 pruebas, 0 fallos, 0 errores
+
+> ### **LA PRUEBA CAE CON EL CODIGO VIEJO Y CON LA CADENA EXACTA DE LA CAIDA, Y LAS OTRAS 76 SIGUEN VERDES EN LA MISMA CORRIDA. MUERDE, Y MUERDE SOLO DONDE TIENE QUE MORDER.**
+>
+> **Y LO QUE LA MORDIDA DEJA MEDIDO, QUE VALE MAS QUE EL ARREGLO:** en la misma corrida
+> mutada, `test_la_arista_declarada_se_cablea_y_deja_su_razon` sale **`ok`**. Esa prueba
+> existe desde el 10 sep, mira este mismo campo, y **nunca pudo ver el defecto porque
+> siempre metia al candidato en el mismo lado.** Una prueba que solo recorre un sentido de
+> una asimetria **certifica ese sentido y nada mas**, y la tanda entera parecia cubrir el
+> campo.
+
+### L.3.d. LAS DOCE LINEAS VIEJAS: **CAMPO NUEVO, Y NI UNA PALABRA BORRADA**
+
+**EL NOMBRE QUE ELIJO ES `arista_corregida`, Y DIGO LOS DOS MOTIVOS:**
+
+1. **Dice lo que es sin leer nada mas.** Quien abra la linea ve `arista` y
+   `arista_corregida` juntos y entiende cual es cual.
+2. **Ordena al lado del campo que corrige.** `comun.agregar_jsonl` escribe con
+   `sort_keys=True`, y `arista_corregida` cae **inmediatamente despues** de `arista`, asi
+   que la linea corregida **sale con la misma forma que si la hubiera escrito el
+   instrumento**.
+
+**NO AÑADO UN SEGUNDO CAMPO CON LA RAZON, Y LO DECLARO PORQUE LO PENSE:** el encargo dice
+*aniade un campo nuevo* en singular, la razon de esta correccion no es del veredicto sino
+de la operacion, **y su sede es este reporte**. Si el auditor prefiere que la razon viaje
+dentro de la linea, **lo digo aqui como propuesta y no lo hago por mi cuenta**
+(`EXTRACTOR.md` 14).
+
+**Y NO LO EDITE A MANO.** `EXTRACTOR.md` 2 dice que tocar una sede por una via que no es su
+instrumento **es una operacion escrita con su simulacion y su comprobacion**, no una
+edicion. Esta es `.correccion_arista_v17.py`, en el arbol, y **corre en seco por defecto**:
+
+    $ python .correccion_arista_v17.py                      (SIMULACION)
+      L5    crear_tarjeta_puntuacion_puesto > crear_tarjeta_puntuacion_puesto
+            ->  crear_tarjeta_puntuacion_puesto > alinear_comunicar_tarjeta_puntuacion
+      (... las doce ...)
+      lineas en la bitacora        : 148
+      lineas con el campo anadido  : 12
+      lineas saltadas y declaradas : 0
+      SIMULACION: no se ha escrito nada. Anade --escribir.
+    $ git diff --stat bitacora/VEREDICTOS.jsonl             -> (vacio: la bitacora intacta)
+
+    $ python .correccion_arista_v17.py --escribir
+      ESCRITO en bitacora/VEREDICTOS.jsonl
+
+**LA OPERACION SE NIEGA A INVENTAR:** si el grafo no confirma `candidato > vecino` **por
+los dos extremos**, la linea **no se toca** y se declara por pantalla. Salieron cero
+saltadas porque las doce estaban confirmadas, **pero la salvaguarda esta escrita y no es
+decorativa**.
+
+**LA COMPROBACION DE QUE NO SE BORRO NI SE REESCRIBIO NADA, CONTRA `HEAD` Y CAMPO A CAMPO:**
+
+    $ python (git show HEAD:bitacora/VEREDICTOS.jsonl  contra  el fichero de hoy)
+    lineas totales antes y despues        : 148 y 148
+    lineas cambiadas                      : 12
+    cambios que NO son solo el campo nuevo: 0
+    campos borrados o reescritos          : 0
+
+### L.3.e. **NINGUNA GUARDA RECHAZA EL CAMPO NUEVO. NO HAY PARADA** (punto 3 del encargo)
+
+*El encargo manda parar si una guarda, el bloque de vigencia o una prueba lo rechaza. **Las
+corri las cinco antes y las cinco despues.***
+
+| guarda | ANTES de tocar la bitacora | **DESPUES** |
+|---|---|---|
+| `python forja.py gate` | `GATE VERDE. nodos verificados: 203` | **`GATE VERDE. nodos verificados: 203`** |
+| `python forja.py rancios` | `BLOQUE DE VIGENCIA VERDE. veredictos comprobados: 148` | **`BLOQUE DE VIGENCIA VERDE. veredictos comprobados: 148`** |
+| `python forja.py guiones` | verde | **`BARRIDO DE GUIONES VERDE`** |
+| `python tests/test_aceptacion.py` | 75 pruebas, 0 fallos | **`total: 77 pruebas, 0 fallos, 0 errores`** |
+| `python forja.py resolutor` | 203 vivos | **`nodos vivos: 203`** |
+
+> **EL BLOQUE DE VIGENCIA ES EL QUE MAS ME IMPORTABA Y ES EL QUE MEJOR SALE: comprueba las
+> 148 lineas contra el texto que leyeron y las 148 siguen emitidas contra el.** El campo
+> nuevo **no toca ninguna huella**, que es exactamente lo que tenia que no tocar.
+
+### L.3.f. EL CRUCE AL CERRAR, POR PAR **ORDENADO**, Y LA CIFRA QUE PIDE EL PUNTO 4
+
+*Y lo publico **diciendo con que instrumento se mide cada lado**, que es la leccion de
+`L.2.d` aplicada en la misma vuelta en que la recojo. **Aqui hay DOS cruces distintos y el
+encargo nombra los dos numeros sin nombrar los dos cruces**, asi que los separo.*
+
+    $ python (79 CONTINUA contra las aristas del grafo; el grafo se arma de
+              nodos_siguientes y nodos_previos de los 203)
+    aristas del grafo, por par ORDENADO        : 79
+    veredictos CONTINUA                        : 79
+
+    --- CAMPO VIEJO `arista`, por par ORDENADO ---
+      aristas del grafo sin veredicto          : 12
+      veredictos sin arista en el grafo        : 10
+
+    --- CAMPO `arista_corregida` donde existe, por par ORDENADO ---
+      aristas del grafo sin veredicto          : 0
+      veredictos sin arista en el grafo        : 0
+
+    --- el OTRO cruce, el de la ACTA 16 1.2: por el par {candidato, vecino} ---
+      aristas del grafo sin veredicto          : 0
+      veredictos sin arista en el grafo        : 0
+
+| cruce | con que campo | **antes** | **despues** |
+|---|---|---:|---:|
+| por par **ORDENADO** | el campo `arista` | **12 aristas sin veredicto, 10 veredictos sin arista** | igual, **y a proposito: el campo viejo no se toca** |
+| por par **ORDENADO** | `arista_corregida` donde existe | (no existia) | **0 y 0** |
+| por par **{candidato, vecino}** | los campos `candidato` y `vecino` | **0 y 0** | **0 y 0** |
+
+> ### **EL CRUCE QUE EL ENCARGO PIDE QUEDA EN 0 Y 0, LEYENDO `arista_corregida` DONDE EXISTE Y `arista` DONDE NO. LAS 79 ARISTAS DEL GRAFO SON LOS 79 `CONTINUA`, AHORA TAMBIEN **CON EL SENTIDO PUESTO**.**
+>
+> **Y AQUI PUBLICO UNA DISCREPANCIA CONTRA EL ENCARGO, CON LOS DOS INSTRUMENTOS DELANTE,
+> QUE ES LA UNICA FORMA EN QUE ESTA CASA DEJA PUBLICAR UNA.** El encargo dice *hoy, por par
+> NO ordenado, da 0 y 0; por par ordenado, 12 no cuadran*, como si fueran el mismo cruce
+> mirado de dos maneras. **No lo son, y mi medida lo separa:**
+>
+> - el **0 y 0** sale de cruzar el par **`{candidato, vecino}`**, que son dos campos que
+>   **nunca estuvieron rotos** (`ACTA 16` 1.2 lo mide asi y acierta);
+> - el **12** sale de cruzar el campo **`arista`**, que es el roto.
+>
+> **Si el campo `arista` se cruza por par NO ordenado, tampoco da 0: da 12 y 10**, porque
+> `X > X` como par no ordenado es un conjunto de **un** elemento y no empareja con ninguna
+> arista de nadie. **Lo que hace aparecer la averia no es el orden del par: es MIRAR EL
+> CAMPO `arista` en vez de mirar `candidato` y `vecino`.**
+>
+> **NO LO RESUELVO COPIANDO Y NO LO TRAIGO COMO CAIDA DE NADIE** (`EXTRACTOR.md` 5): las
+> dos cifras del encargo, **12 y 0, son las dos ciertas**, cada una de su cruce. Lo que
+> declaro es **cual es de cual**, porque el dia que alguien vuelva a correr esto con la
+> frase del encargo delante va a buscar el 0 en el sitio equivocado.
+>
+> **Y LA ASIMETRIA `12 CONTRA 10` TAMBIEN TIENE SU MEDIDA, QUE NO ES UN REDONDEO:**
+>
+>     $ python (cadenas distintas entre los 12 registros rotos)
+>     registros rotos: 12   cadenas distintas: 10
+>        repetida 2x: seleccionar_jugador_cuatro_entrevistas
+>        repetida 2x: repartir_papeles_directivo_reclutador
+>
+> **Dos nodos entraron con DOS veredictos `CONTINUA` cada uno siendo la madre**, asi que
+> sus dos registros escribieron **la misma cadena `X > X`**. Doce registros rotos producen
+> **diez** cadenas falsas distintas. **Es la prueba mas barata de que el campo perdia
+> informacion: dos aristas distintas escribian exactamente el mismo texto.**
+
+### L.3.g. LO QUE **NO** HICE, DICHO POR SU NOMBRE
+
+| | |
+|---|---|
+| **no reescribi ni borre el campo `arista` de ninguna de las doce** | el punto 2 del encargo lo prohibe y el principio 6 del manual tambien. **Comprobado campo a campo contra `HEAD`: 0 reescrituras** |
+| **no toque las 136 lineas sanas** | 12 cambiadas de 148, y las 12 son exactamente las que la medida senialo |
+| **no toque `src/arista.py`** | esa puerta **ya lo escribia bien** (`L184`), y el acta lo comprobo sobre la arista de la vuelta 16 |
+| **no fabrique maquinaria** | una linea de codigo, dos pruebas en el fichero de pruebas que ya existe, y una operacion de un solo uso con su simulacion. **Ningun arnes, ninguna guarda y ningun lector nuevos** |
+| **no reparti culpas** | el campo lo escribio el instrumento, no un extractor. **La averia es del codigo y el arreglo tambien** |
+
+**UN ROCE QUE DECLARO Y QUE NO ES PARADA, PORQUE SE DESHACE LEYENDO.** `EXTRACTOR.md` 14
+pone `bitacora/` bajo *la aduana, por `forja.py insertar`. Nunca a mano*, y esta tarea me
+manda escribir en ella. **No hay contradiccion**, y el motivo esta en la frase que la misma
+seccion pone debajo: lo que esa fila protege es que **el extractor no se adjudique a si
+mismo**, o sea que no fabrique veredictos ni razones por su cuenta. **Aqui no se escribe
+ningun veredicto, ninguna razon, ninguna clase y ninguna huella**: se anota un campo
+derivado cuya verdad **se lee del grafo**, por orden expresa del encargo y con el principio
+6 citado. **Y no va a mano, va por operacion escrita con simulacion.** Lo declaro porque lo
+mire dos veces antes de escribir, no porque dude del resultado.
+

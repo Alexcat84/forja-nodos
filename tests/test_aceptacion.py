@@ -1239,6 +1239,82 @@ class PruebaAristaDeclarada(BaseForja):
         self.assertEqual([n["id"] for n in self.nodos()],
                          ["redactar_codigo_comercializacion"])
 
+    def test_el_campo_arista_dice_madre_a_hijo_cuando_el_candidato_es_la_MADRE(self):
+        """ACTA 16 seccion 8.1: el campo `arista` escribia `X > X`.
+
+        La aduana daba por hecho que el candidato es siempre el HIJO. Cuando el
+        candidato es la MADRE, el campo decia `madre > madre` y PERDIA EL NOMBRE
+        DEL HIJO, que es justo lo que la guarda `auto_arista` del gate prohibe
+        en el dataset. Doce lineas de bitacora quedaron asi (vueltas 12 a 15).
+
+        La prueba mete al candidato en el sitio de la MADRE, que es el caso que
+        nadie cubria: la prueba de arriba lo mete siempre de HIJO y por eso
+        salia verde con el defecto dentro.
+        """
+        madre, hijo = self._pareja_lejana()
+        # El HIJO entra primero, asi que en la segunda insercion el CANDIDATO
+        # es la madre y el VECINO es el hijo. Ese es el caso invertido.
+        self.assertEqual(self._insertar(hijo)[0], 0)
+        codigo, salida = self._insertar(
+            madre,
+            "--veredicto",
+            "comprobar_veracidad_anuncios|CONTINUA|"
+            "madre=redactar_codigo_comercializacion|"
+            "la madre nombra en un paso la comprobacion que el hijo despliega")
+        self.assertEqual(codigo, 0, salida)
+
+        # LA ARISTA EN EL GRAFO, que es la verdad contra la que se mide.
+        por_id = dict((n["id"], n) for n in self.nodos())
+        self.assertIn("comprobar_veracidad_anuncios",
+                      por_id["redactar_codigo_comercializacion"]["nodos_siguientes"])
+        self.assertIn("redactar_codigo_comercializacion",
+                      por_id["comprobar_veracidad_anuncios"]["nodos_previos"])
+
+        registros = comun.leer_jsonl(self.veredictos)
+        declarado = [r for r in registros
+                     if r["vecino"] == "comprobar_veracidad_anuncios"]
+        self.assertEqual(len(declarado), 1, registros)
+        campo = declarado[0]["arista"]
+
+        # LO QUE CAE CON EL CODIGO VIEJO: escribia
+        # `redactar_codigo_comercializacion > redactar_codigo_comercializacion`.
+        self.assertEqual(
+            campo,
+            "redactar_codigo_comercializacion > comprobar_veracidad_anuncios",
+            "el campo arista ha de decir madre a hijo, y llego '%s'" % campo)
+
+        # Y LA REGLA GENERAL DETRAS DEL CASO: ningun CONTINUA de la bitacora
+        # puede declarar una arista de un nodo a si mismo.
+        for registro in registros:
+            if registro["veredicto"] != "CONTINUA":
+                continue
+            extremos = registro["arista"].split(" > ")
+            self.assertNotEqual(extremos[0], extremos[-1],
+                                "auto arista en la bitacora: %s" % registro["arista"])
+
+    def test_caso_positivo_con_el_candidato_de_HIJO_el_campo_sigue_bien(self):
+        """El sentido que ya funcionaba, para que el arreglo no lo rompa.
+
+        Sin este caso, la prueba de arriba solo demostraria que el campo cambio,
+        no que cambio en el sentido correcto.
+        """
+        madre, hijo = self._pareja_lejana()
+        self.assertEqual(self._insertar(madre)[0], 0)
+        codigo, salida = self._insertar(
+            hijo,
+            "--veredicto",
+            "redactar_codigo_comercializacion|CONTINUA|"
+            "madre=redactar_codigo_comercializacion|"
+            "el hijo despliega en tres pasos la comprobacion que la madre nombra")
+        self.assertEqual(codigo, 0, salida)
+        registros = comun.leer_jsonl(self.veredictos)
+        declarado = [r for r in registros
+                     if r["vecino"] == "redactar_codigo_comercializacion"]
+        self.assertEqual(len(declarado), 1, registros)
+        self.assertEqual(
+            declarado[0]["arista"],
+            "redactar_codigo_comercializacion > comprobar_veracidad_anuncios")
+
 
 class PruebaArchivoDeInsertados(BaseForja):
     """D.31: un candidato insertado se archiva, y el informe deja de contarlo.
