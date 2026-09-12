@@ -43,6 +43,13 @@ RUTA_ACTA = os.path.join(comun.RAIZ, "docs", "loop", "ACTA_AUDITOR.md")
 RUTA_APERTURA = os.path.join(comun.RAIZ, "docs", "loop", "APERTURA_CIEGA.md")
 
 MARCA_ACTA = re.compile(r"^#\s+ACTA\s", re.M)
+# LA APERTURA ES MARKDOWN Y SE COMPRUEBA COMO MARKDOWN. Las comillas, la negrita,
+# el encabezado y la cita son como escribe esta casa entera, y D.40 pide una LINEA
+# DECLARADA, no una linea desnuda. Se quita el adorno ANTES de buscar.
+ADORNO = re.compile(r"[`*~]+")
+MARGEN = re.compile(r"^[>\s#]+", re.M)
+LINEA_ACTA = re.compile(r"ACTA\s+ANTERIOR\s+LEIDA\s*:\s*([0-9a-fA-F]{7,40})")
+HUELLA_MINIMA = 7            # una huella corta sigue siendo la misma huella
 TITULO_TAREA = "TAREA BLOQUEANTE DEL AUDITOR"
 ENCABEZADO = re.compile(r"^>?\s*#{1,6}\s")
 TOPE_DE_CUERPO = 40          # lineas por item: el resto se cita por su linea
@@ -148,31 +155,51 @@ def texto_para_prompt(herencia):
         "NO APLICA NECESITA MOTIVO ESCRITO. Un remedio que no aplica a esta vuelta se "
         "declara y se dice por que; dejarlo en blanco es lo mismo que perderlo, que es "
         "lo que D.40 vino a impedir.",
+        "",
+        "ESCRIBELAS COMO ESCRIBES TODO LO DEMAS. Valen las comillas, la negrita, el "
+        "encabezado y la cita: se comprueba que la declaracion ESTE, no que vaya "
+        "desnuda. Y puedes repetirla en tu tabla de cierre: se mira presencia y no "
+        "cuenta, asi que citar la linea que declaras no te tumba la vuelta.",
         ""])
     return "\n".join(lineas)
 
 
+def _sin_adornos(texto):
+    """Quita el adorno de markdown para poder buscar la declaracion dentro de el."""
+    return MARGEN.sub("", ADORNO.sub("", texto))
+
+
 def comprobar(herencia, ruta_apertura=None):
-    """Devuelve la lista de lo que FALTA en la apertura ciega. Vacia es verde."""
+    """Devuelve la lista de lo que FALTA en la apertura ciega. Vacia es verde.
+
+    SE COMPRUEBA PRESENCIA, NO CONTEO. Una apertura que declara su herencia arriba
+    y la repite en su tabla de cierre esta declarando **mas**, no menos, y hacerla
+    caer por eso es castigar a quien cumple. Basta con que UNA de las veces que
+    aparece este bien puesta.
+    """
     ruta_apertura = ruta_apertura or RUTA_APERTURA
     if not os.path.exists(ruta_apertura):
         return ["docs/loop/APERTURA_CIEGA.md no existe"]
-    texto = comun.leer_texto(ruta_apertura)
+    texto = _sin_adornos(comun.leer_texto(ruta_apertura))
     faltan = []
-    esperada = "ACTA ANTERIOR LEIDA: %s" % herencia["huella"]
-    if esperada not in texto:
-        if "ACTA ANTERIOR LEIDA" in texto:
-            faltan.append("la linea 'ACTA ANTERIOR LEIDA' esta, pero con otra huella: "
-                          "se espera '%s'" % herencia["huella"])
-        else:
-            faltan.append("falta la linea '%s'" % esperada)
+
+    huellas = LINEA_ACTA.findall(texto)
+    buena = herencia["huella"]
+    if not huellas:
+        faltan.append("falta la linea 'ACTA ANTERIOR LEIDA: %s'" % buena)
+    elif not any(len(h) >= HUELLA_MINIMA and buena.startswith(h.lower()) for h in huellas):
+        faltan.append("la linea 'ACTA ANTERIOR LEIDA' esta, pero con otra huella: se "
+                      "espera '%s' y se leyo %s"
+                      % (buena, ", ".join("'%s'" % h for h in huellas)))
+
     for indice in range(1, len(herencia["items"]) + 1):
-        patron = re.compile(r"HEREDADO\s+%d\s*:\s*(CUMPLIDO|NO APLICA)(.*)" % indice)
-        encaje = patron.search(texto)
-        if encaje is None:
+        patron = re.compile(r"HEREDADO\s+%d\s*:\s*(CUMPLIDO|NO APLICA)([^\n]*)" % indice)
+        encajes = patron.findall(texto)
+        if not encajes:
             faltan.append("falta la linea 'HEREDADO %d: CUMPLIDO' o 'NO APLICA' "
                           "(heredado %d de %d)" % (indice, indice, len(herencia["items"])))
-        elif encaje.group(1) == "NO APLICA" and not encaje.group(2).strip(" :.-"):
+        elif not any(clase == "CUMPLIDO" or resto.strip(" :.-")
+                     for clase, resto in encajes):
             faltan.append("el HEREDADO %d dice NO APLICA y va SIN MOTIVO escrito" % indice)
     return faltan
 
@@ -184,8 +211,10 @@ def main(argumentos=None):
     if "--comprobar" in argumentos:
         faltan = comprobar(herencia)
         if not faltan:
+            cuantos = len(herencia["items"])
             print("APERTURA CIEGA COMPLETA: el acta anterior va leida por su huella y "
-                  "los %d heredados van declarados." % len(herencia["items"]))
+                  "%s." % ("el heredado va declarado" if cuantos == 1
+                           else "los %d heredados van declarados" % cuantos))
             return 0
         print("APERTURA CIEGA INCOMPLETA: %d cosa(s) que faltan (D.40)." % len(faltan))
         for falta in faltan:

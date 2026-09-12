@@ -1638,6 +1638,45 @@ esas palabras, para que ninguna vuelta vuelva a tratarlo como si estuviera prohi
 | **caso positivo** | `tests/prueba_arnes.sh` escenario **14b**: con el falso claude callando la linea, **el arnes para, nombra las dos que faltan, el auditor no corre y los cuatro ficheros vuelven** |
 | pruebas de unidad | `PruebaHerencia` en `tests/test_aceptacion.py`, **7 pruebas**, con el corte de la acta vieja y la huella ajena cazados |
 
+> ## CORRECCION DECLARADA A `D.40`, 12 sep 2026: **SE COMPRUEBA PRESENCIA, NO CONTEO**
+>
+> *La escribo el mismo dia que la regla, porque el mismo dia la guarda mordio a quien
+> cumplia.* **La vuelta 19 se detuvo por `D.40` y la apertura estaba bien.**
+>
+> **LO QUE LA APERTURA DE LA 19 ESCRIBIO**, y su huella es la buena al digito:
+>
+>     > ### **ACTA ANTERIOR LEIDA: `80fd74cdf15bb0b1ff02bcbe560ba03f11f22472`**
+>     ### `HEREDADO 1`: **CUMPLIDO**
+>
+> **LO QUE EL COMPROBADOR BUSCABA:** esas dos lineas **desnudas**, sin comillas, sin
+> negrita y sin encabezado. **Pedirle a un documento de esta casa que escriba una linea
+> sin el formato de esta casa es pedirle que escriba peor**, y el precio fue una parada
+> contra un auditor que habia leido el acta, remedido la huella y declarado el remedio.
+>
+> **Y LA MITAD QUE YA ESTABA ROTA ANTES:** el remedio que el auditor se escribio en la
+> `ACTA 16` 7.3 pedia `grep -c "ACTA ANTERIOR LEIDA" -> 1`. **Su propia apertura de la
+> vuelta 18 midio 2 y lo dijo en voz alta** (*`-> 2 (mi remedio pide 1)`*), porque una
+> apertura que declara arriba y lo repite en su tabla de cierre **cita la linea que
+> declara**. **UN CONTEO EXACTO CASTIGA A QUIEN DECLARA DE MAS.**
+>
+> ### La letra corregida
+>
+> > **SE COMPRUEBA QUE LA DECLARACION ESTE, NO QUE VAYA DESNUDA NI QUE APAREZCA UNA SOLA
+> > VEZ.** El adorno de markdown (comillas, negrita, encabezado, cita) **se quita antes de
+> > buscar**, y **basta con que UNA de las veces que aparece este bien puesta.**
+>
+> **SE RETIRA, POR ESTA CORRECCION, LA CLAUSULA DE CONTEO DEL REMEDIO DE LA `ACTA 16`
+> 7.3** (`grep -c ... -> 1`). **No se borra de su acta**, que es sede del auditor y no se
+> toca: se declara aqui que **esa mitad ya no rige**, porque `D.40` la sustituyo entera al
+> pasar la comprobacion del recuerdo al arnes. **La otra mitad del remedio, leer el acta
+> antes de escribir, sigue viva y ahora la cumple el arnes.**
+>
+> **LO QUE NO SE AFLOJA, Y VA CON SU CASO POSITIVO:** quitar el adorno afloja el
+> **formato**, no la **exigencia**. Una apertura sin declaracion **sigue cayendo**, por
+> muy bien maquetada que este, y una huella ajena decorada **tampoco cuela**. Las dos van
+> probadas en `PruebaHerencia` (13 pruebas), y el banco de pruebas del arnes escribe ahora
+> sus lineas **en el markdown de la casa**, que es la forma en que fallo.
+
 ### Lo que esta regla NO hace
 
 **NO cumple el remedio por el auditor.** El arnes entrega y exige la declaracion; **quien

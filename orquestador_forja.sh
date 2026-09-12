@@ -510,7 +510,7 @@ remedio heredado. Un remedio entregado y no declarado es un remedio perdido.
 QUE NO SIGNIFICA. No dice que el trabajo este mal, ni que la clasificacion sea
 falsa. Dice que la vuelta no puede certificar que la herencia se recogio.
 
-Estado: rama $RAMA, hash \$(git rev-parse --short HEAD 2>/dev/null || echo desconocido).
+Estado: rama $RAMA, hash $(git rev-parse --short HEAD 2>/dev/null || echo desconocido).
 
 Como retomar: borra este fichero y relanza. El auditor recibira la misma herencia
 y esta vez tiene que declararla.

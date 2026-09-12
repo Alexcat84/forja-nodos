@@ -1666,6 +1666,77 @@ Esto ya no pertenece al remedio anterior.
         self.assertEqual(len(faltan), 1)
         self.assertIn("SIN MOTIVO", faltan[0])
 
+    # ---------------------------------------------------------------- 12 sep 2026
+    # LA GUARDA ERA MAS ESTRICTA QUE LA LETRA, y la vuelta 19 lo pago: su apertura
+    # declaro las dos lineas, con la huella exacta, y cayo por escribirlas en el
+    # markdown de la casa. Lo que sigue fija que se comprueba PRESENCIA.
+
+    APERTURA_DE_LA_19 = """## 0. LO QUE HEREDO
+
+> ### **ACTA ANTERIOR LEIDA: `%s`**
+
+### `HEREDADO 1`: **CUMPLIDO**
+
+El arnes me entrega como `HEREDADO 1` la seccion 7.6 del acta anterior.
+
+| **herencia `D.40`** | **`HEREDADO 1`: CUMPLIDO**, fila a fila |
+"""
+
+    def test_la_apertura_escrita_en_markdown_de_la_casa_pasa(self):
+        """CASO NEGATIVO. Es la apertura real de la vuelta 19, que la guarda tumbo."""
+        datos = herencia.extraer(self._acta())
+        ruta = self._apertura((self.APERTURA_DE_LA_19 % datos["huella"])
+                              + "\nHEREDADO 2: NO APLICA porque no hay cifras ajenas\n")
+        self.assertEqual(herencia.comprobar(datos, ruta), [])
+
+    def test_citar_dos_veces_la_linea_que_declaras_no_tumba_la_vuelta(self):
+        """CASO NEGATIVO. El remedio viejo pedia `grep -c` igual a 1, y la propia
+        apertura lo rompia al repetir su declaracion en la tabla de cierre."""
+        datos = herencia.extraer(self._acta())
+        ruta = self._apertura(
+            "ACTA ANTERIOR LEIDA: %s\nHEREDADO 1: CUMPLIDO\n"
+            "HEREDADO 2: NO APLICA porque esta vuelta no publica cifras ajenas\n"
+            "\n## tabla de cierre\n"
+            "| herencia | ACTA ANTERIOR LEIDA: %s, HEREDADO 1: CUMPLIDO |\n"
+            % (datos["huella"], datos["huella"]))
+        self.assertEqual(herencia.comprobar(datos, ruta), [])
+
+    def test_una_huella_corta_sigue_siendo_la_misma_huella(self):
+        datos = herencia.extraer(self._acta())
+        ruta = self._apertura("ACTA ANTERIOR LEIDA: `%s`\nHEREDADO 1: CUMPLIDO\n"
+                              "HEREDADO 2: CUMPLIDO\n" % datos["huella"][:10])
+        self.assertEqual(herencia.comprobar(datos, ruta), [])
+
+    def test_caso_positivo_el_adorno_no_es_una_puerta_trasera(self):
+        """Quitar el adorno afloja el FORMATO, no la EXIGENCIA: sin declaracion,
+        por muy bien maquetada que este la apertura, sigue cayendo."""
+        datos = herencia.extraer(self._acta())
+        ruta = self._apertura(
+            "## 0. LO QUE HEREDO\n\n> ### **LEI EL ACTA, DE VERDAD**\n\n"
+            "### `HEREDADO 1`: **lo mire por encima**\n")
+        faltan = herencia.comprobar(datos, ruta)
+        self.assertEqual(len(faltan), 3)
+        self.assertIn("ACTA ANTERIOR LEIDA", faltan[0])
+
+    def test_caso_positivo_una_huella_ajena_decorada_tampoco_cuela(self):
+        datos = herencia.extraer(self._acta())
+        ruta = self._apertura("> **ACTA ANTERIOR LEIDA: `deadbeefdeadbeef`**\n"
+                              "### `HEREDADO 1`: **CUMPLIDO**\n"
+                              "### `HEREDADO 2`: **CUMPLIDO**\n")
+        faltan = herencia.comprobar(datos, ruta)
+        self.assertEqual(len(faltan), 1)
+        self.assertIn("otra huella", faltan[0])
+
+    def test_no_aplica_sin_motivo_en_una_cita_y_con_motivo_en_otra_pasa(self):
+        """PRESENCIA: basta con que UNA de las veces este bien puesta."""
+        datos = herencia.extraer(self._acta())
+        ruta = self._apertura(
+            "ACTA ANTERIOR LEIDA: %s\n"
+            "| resumen | HEREDADO 1: NO APLICA |\n"
+            "HEREDADO 1: NO APLICA porque esta vuelta no toca esa sede\n"
+            "HEREDADO 2: CUMPLIDO\n" % datos["huella"])
+        self.assertEqual(herencia.comprobar(datos, ruta), [])
+
     def test_sin_acta_no_revienta_y_la_linea_de_lectura_sigue_en_pie(self):
         """La primera vuelta de una casa no tiene acta anterior."""
         datos = herencia.extraer(os.path.join(self.taller, "no_existe.md"))

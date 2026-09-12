@@ -97,8 +97,14 @@ if echo "$prompt" | grep -q "APERTURA CIEGA"; then
   # no tendria caso positivo.
   if [ "${FALSO_HERENCIA:-si}" = "si" ]; then
     huella="$(git hash-object docs/loop/ACTA_AUDITOR.md 2>/dev/null || echo sin-huella)"
-    declara="ACTA ANTERIOR LEIDA: $huella
-HEREDADO 1: CUMPLIDO"
+    # ESCRITAS COMO LAS ESCRIBE EL AUDITOR DE VERDAD, en el markdown de la casa y
+    # repitiendo la declaracion en la tabla de cierre. Asi era la apertura de la
+    # vuelta 19, que la guarda vieja tumbo pidiendo el texto desnudo (12 sep 2026).
+    declara="> ### **ACTA ANTERIOR LEIDA: \`$huella\`**
+
+### \`HEREDADO 1\`: **CUMPLIDO**
+
+| **herencia \`D.40\`** | **\`HEREDADO 1\`: CUMPLIDO**, fila a fila |"
   else
     declara=""
   fi
