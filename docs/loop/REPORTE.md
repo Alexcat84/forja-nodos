@@ -21154,3 +21154,119 @@ cuatro: `D.29` pide que los dos extremos vivan en el grafo, y **el lote 4 esta A
 > **La cola 2 y la cola 4 esperan las dos al mismo hijo**, que es un candidato de la bandeja,
 > y **la cola 1 espera a su madre**, que tambien lo es.
 
+---
+
+## L.5. TAREA 4: EL LOTE 4, `cap_07` (`Cap. 4`, `Drive Results Collaboratively`)
+
+### L.5.1. LA MEDIDA DEL ENCARGO, REMEDIDA POR MI ANTES DE ABRIR NADA
+
+*El encargo trae cuatro capitulos con sus palabras. **Los remido yo** (`EXTRACTOR.md` 5), y
+**digo con que instrumento**, que es la leccion de `L.2.d`.*
+
+    $ cd fuentes/scott_radical_candor
+    $ for f in cap_07 cap_08 cap_09 cap_10; do
+        printf "%s cuerpo=%s entero=%s lineas=%s\n" $f \
+          "$(sed -n '8,$p' $f.md|wc -w)" "$(wc -w < $f.md)" "$(wc -l < $f.md)"; done
+    cap_07 cuerpo=13678 entero=13706 lineas=433
+    cap_08 cuerpo=6140  entero=6166  lineas=189
+    cap_09 cuerpo=17482 entero=17508 lineas=433
+    cap_10 cuerpo=8976  entero=9002  lineas=263
+
+| orden | fichero | unidad | **cuerpo, medido por mi** | lo que dice el encargo | |
+|---:|---|---|---:|---:|---|
+| 1 | `cap_07.md` | `Cap. 4`, `Drive Results Collaboratively` | **13.678** | 13.678 | **cuadra** |
+| 2 | `cap_08.md` | `Cap. 5` | **6.140** | 6.140 | **cuadra** |
+| 3 | `cap_09.md` | `Cap. 6` | **17.482** | 17.482 | **cuadra** |
+| 4 | `cap_10.md` | `Cap. 7` | **8.976** | 8.976 | **cuadra** |
+| | | **los cuatro** | **46.276** | 46.276 | **cuadra** |
+
+**LAS CINCO CIFRAS DEL ENCARGO CUADRAN CON MI MEDIDA AL DIGITO**, y las cinco estan medidas
+en **palabras de cuerpo** (`sed -n '8,$p' | wc -w`), que es el instrumento de la casa. **La
+diferencia con `wc -w` del fichero entero son 28, 26, 26 y 26 palabras de cabecera.**
+
+### L.5.2. LA FRONTERA DE `cap_07`, **PUBLICADA ANTES DE CORTAR**, PIEZA A PIEZA
+
+*`EXTRACTOR.md` 10 y el punto 1 del encargo: la frontera se lee y se publica **antes** de
+tocar nada, con su `sed` o su `awk` pegado (`D.35`), **y lo que no se extrae va declarado
+uno a uno con su motivo**. El fichero tiene **433 lineas** y la cabecera ocupa `L1` a `L7`,
+asi que el cuerpo corre de **`L9` a `L433`** y **no hay ni una linea fuera de esta tabla**.*
+
+    $ awk 'NR>=8 { n=split($0,a," "); if (length($0)>0 && length($0)<95 && n<=14)
+             printf "L%d: %s\n", NR, $0 }' fuentes/scott_radical_candor/cap_07.md
+    L9   Telling people what to do doesn't work
+    L11  TELLING PEOPLE WHAT TO DO DIDN'T WORK AT GOOGLE
+    L45  TELLING PEOPLE WHAT TO DO DIDN'T WORK FOR STEVE JOBS EITHER
+    L65  THE ART OF GETTING STUFF DONE WITHOUT TELLING PEOPLE WHAT TO DO
+    L79  LISTEN            L91  Quiet listening        L113 Loud listening
+    L131 Create a culture of listening                 L155 Adapt to a culture of listening
+    L165 CLARIFY           L181 Be clear in your own mind
+    L183 Create a safe space to nurture new ideas
+    L197 Be clear to others
+    L199 Make thoughts/ideas drop-dead easy for others to comprehend
+    L213 DEBATE            L215 The rock tumbler
+    L225 Keep the conversation focused on ideas not egos
+    L231 Create an obligation to dissent               L235 Pause for emotion/exhaustion
+    L239 Use humor and have fun                        L245 Be clear when the debate will end
+    L251 Don't grab a decision just because the debate has gotten painful
+    L259 DECIDE            L265 You're not the decider (usually)
+    L291 The decider should get facts, not recommendations
+    L295 Go spelunking
+    L303 PERSUADE          L323 Emotion    L325 The listener's emotions, not the speaker's
+    L349 Credibility       L351 Demonstrate expertise and humility
+    L359 Logic             L361 Show your work
+    L367 EXECUTE           L369 Minimize the collaboration tax
+    L375 Don't waste your team's time                  L381 Keep the "dirt under your fingernails"
+    L385 Block time to execute
+    L389 LEARN             L403 Pressure to be consistent      L409 Burnout
+    L421 PART II           L423 TOOLS & TECHNIQUES             L431 5.   L433 RELATIONSHIPS
+
+| # | tramo | rotulo del libro | **veredicto de frontera** |
+|---:|---:|---|---|
+| 1 | `L9` a `L43` | `Telling people what to do didn't work at Google` | **NO EXTRAIDO: es CASO** (el equipo de AdSense, las cinco unidades, las tres bajas, la cuerda de Sheryl). Manual 3.5: el caso no es la casa. **Su doctrina es el diagnostico de `L35`** (*no involucre al equipo en la decision; y despues no me tome el tiempo de explicar por que ni de persuadir*), **y ese diagnostico son dos radios de la rueda**, que si tiene nodo (pieza 3) |
+| 2 | `L45` a `L63` | `Telling people what to do didn't work for Steve Jobs either` | **NO EXTRAIDO: es CASO Y POSTURA.** Andy Grove, *he always gets it right*, las dos anecdotas. **No hay inventario de medios ni etapas**: hay una tesis. **La atribucion de Grove SI se recoge**, en el campo `atribuciones` de la pieza 3, que es su sede |
+| 3 | `L65` a `L77` | `The art of getting stuff done without telling people what to do` | **NODO: LA CABEZA.** `L73` nombra los siete trabajos **uno a uno y en orden**; `L71` da la regla de uso (*no te tires de cabeza, primero pon los cimientos*); `L75` da las dos prohibiciones (*no saltarse un paso y no atascarse en uno*). **`recorrer_rueda_hacer_cosas_equipo`** |
+| 4 | `L79` a `L89` | `LISTEN`, su entradilla | **NO EXTRAIDO POR SEPARADO: se funde en la pieza 5 y en la 6.** `L89` dice *tienes que encontrar una forma de escuchar que encaje con tu estilo personal*, y eso es exactamente lo que las dos piezas siguientes desarrollan. **`P.19`: el objeto ya esta en casa** |
+| 5 | `L91` a `L111` | `Quiet listening` | **NODO. `escuchar_callado_equipo_tranquilizar_incomodo`** |
+| 6 | `L113` a `L129` | `Loud listening` | **NODO. `escuchar_ruidoso_opinion_fuerte_pedir_agujeros`** |
+| 7 | `L131` a `L153` | `Create a culture of listening` | **NODO. `crear_cultura_escucha_equipo`**. `L133` trae **un inventario numerado por el propio libro** (*1) ... 2) ... 3) ...*) |
+| 8 | `L155` a `L163` | `Adapt to a culture of listening` | **NO EXTRAIDO: es CASO, y su doctrina ya tiene casa.** Es la historia de Astrid Tuminez entera. **La doctrina general (ajustar tu forma al oido de quien escucha) es el candidato `ajustar_franqueza_oido_oyente` de `cap_05`, que ya vive en la bandeja.** Manual 3.5: el caso entra como ejemplo dentro de su doctrina, no como casa. **VA MARCADO DISCUTIBLE** |
+| 9 | `L165` a `L179` | `CLARIFY`, su entradilla | **NO EXTRAIDO POR SEPARADO: se reparte entre las piezas 10 y 11**, que es como el propio libro lo parte en `L179` (*no solo entender las ideas con claridad; igual de importante es entender a las personas a quienes tu equipo va a tener que explicarselas*). **Las dos mitades de esa frase son las dos piezas siguientes** |
+| 10 | `L181` a `L195` | `Be clear in your own mind` / `Create a safe space to nurture new ideas` | **NODO. `crear_espacio_seguro_madurar_ideas_nuevas`** |
+| 11 | `L197` a `L211` | `Be clear to others` / `Make thoughts drop-dead easy to comprehend` | **NODO. `explicar_idea_facil_comprender_oyente`** |
+| 12 | `L213` a `L223` | `DEBATE` / `The rock tumbler` | **NO EXTRAIDO COMO NODO PROPIO: es POSTURA con su metafora** (enciende el tambor, no lo apagues, no lo dejes girando de mas). **Su unico imperativo, `L221`, no trae medios**; los medios son las seis piezas siguientes, que `L223` presenta como *unas ideas que te pueden ayudar*. **VA MARCADO DISCUTIBLE** |
+| 13 | `L225` a `L229` | `Keep the conversation focused on ideas not egos` | **NODO. `centrar_debate_ideas_fuera_egos`** |
+| 14 | `L231` a `L233` | `Create an obligation to dissent` | **NODO. `crear_obligacion_disentir_equipo`** |
+| 15 | `L235` a `L237` | `Pause for emotion/exhaustion` | **NODO. `parar_debate_emocion_agotamiento`** |
+| 16 | `L239` a `L243` | `Use humor and have fun` | **NODO. `abrir_debate_humor_explicar_proposito`** |
+| 17 | `L245` a `L257` | `Be clear when the debate will end` **mas** `Don't grab a decision just because the debate has gotten painful` | **NODO, Y ES UNA FUSION DECLARADA. `fijar_fecha_cierre_debate_equipo`.** `L257` remata el caso de la mesa de escritorios con **el mismo remedio** de `L247`: *the right thing to do would have been to set a "decide by" date*. **`P.19`: el objeto ya esta dentro del candidato, se funde antes de insertar.** Si fueran dos nodos, el segundo seria el gemelo del primero |
+| 18 | `L259` a `L263` | `DECIDE`, su entradilla | **NO EXTRAIDO POR SEPARADO: su unica linea con contenido, `L261`, es el rotulo de las tres piezas siguientes** (*mete las decisiones en los hechos o trae los hechos a las decisiones, y deja el ego fuera*) |
+| 19 | `L265` a `L289` | `You're not the decider (usually)` | **NODO. `repartir_decision_quien_tiene_hechos`.** El caso de Mark va **nombrado dentro de los pasos que lo usan** |
+| 20 | `L291` a `L293` | `The decider should get facts, not recommendations` | **NODO. `pedir_hechos_decision_evitar_recomendaciones`** |
+| 21 | `L295` a `L301` | `Go spelunking` | **NODO. `bajar_detalle_organizacion_fuente_hechos`** |
+| 22 | `L303` a `L321` | `PERSUADE`, su entradilla | **NO EXTRAIDO POR SEPARADO: `L321` anuncia las tres piezas siguientes** y `L313` dice por que van juntas. **Se funde en las tres** |
+| 23 | `L323` a `L347` | `Emotion` / `The listener's emotions, not the speaker's` | **NODO. `persuadir_emocion_oyente_no_propia`** |
+| 24 | `L349` a `L357` | `Credibility` / `Demonstrate expertise and humility` | **NODO. `establecer_credibilidad_pericia_humildad`** |
+| 25 | `L359` a `L365` | `Logic` / `Show your work` | **NODO. `compartir_logica_mostrar_razonamiento`** |
+| 26 | `L367` a `L373` | `EXECUTE` / `Minimize the collaboration tax` | **NODO: LA CABEZA DE UNA SERIE `D.37`.** `L373` dice **cuantas son y las nombra**: *Here are the **three** things I've learned about getting this balance right*. **`minimizar_impuesto_colaboracion_equipo`** |
+| 27 | `L375` a `L379` | `Don't waste your team's time` | **NODO, parte 1 de la serie. `proteger_tiempo_equipo_jefe`** |
+| 28 | `L381` a `L383` | `Keep the "dirt under your fingernails"` | **NODO, parte 2 de la serie. `mantener_manos_trabajo_real_equipo`** |
+| 29 | `L385` a `L387` | `Block time to execute` | **NODO, parte 3 de la serie. `reservar_calendario_tiempo_ejecutar`** |
+| 30 | `L389` a `L401` | `LEARN`, su entradilla | **NODO: LA CABEZA DE OTRA SERIE `D.37`.** `L401` dice **cuantas son**: *there were **two** enormous pressures that tempted me to quit learning*. **`aprender_resultados_vencer_dos_presiones`** |
+| 31 | `L403` a `L407` | `Pressure to be consistent` | **NODO, parte 1. `cambiar_posicion_hechos_explicar_cambio`** |
+| 32 | `L409` a `L419` | `Burnout` | **NODO, parte 2. `cuidarse_agotamiento_centro_rueda`** |
+| 33 | `L421` a `L433` | `PART II`, `TOOLS & TECHNIQUES`, `5.`, `RELATIONSHIPS` | **NO EXTRAIDO: es MATERIAL DE TRANSICION del libro.** `L425` a `L429` resumen la parte I y anuncian la parte II. **Ni un imperativo con inventario propio.** Y `L431` a `L433` son la **cabecera del capitulo siguiente**, que va en `cap_08.md` |
+
+> ### **LAS 33 PIEZAS CUBREN `L9` A `L433` SIN UN HUECO, Y LO DIGO PORQUE ESA ES LA CAIDA QUE COSTO LA PARADA DE LA VUELTA 7:** alli una tabla que se anunciaba completa dejaba cuatro bloques fuera. **Aqui el tramo de cada pieza empalma con el de la siguiente**, `L43` con `L45`, `L163` con `L165`, `L257` con `L259`, y la ultima cierra en `L433`, que es `wc -l` del fichero.
+>
+> **EL SALDO DE LA FRONTERA: 22 NODOS Y 11 TRAMOS NO EXTRAIDOS, CADA UNO CON SU MOTIVO.** De
+> los once, **dos son caso** (1 y 8), **uno es caso mas postura** (2), **uno es postura**
+> (12), **uno es material de transicion** (33) y **seis son entradillas que se funden en las
+> piezas que anuncian** (4, 9, 18, 22, y dentro de ellas la cabecera de `L259` a `L263`).
+>
+> **Y DOS SERIES `D.37` EN UN SOLO CAPITULO, QUE ES LO QUE MAS VALE DE ESTA FRONTERA:** el
+> libro dice **cuantas partes tiene y las nombra** en `L373` (*the three things*) y en `L401`
+> (*two enormous pressures*). **La rueda de `L73` NO es `D.37` y lo digo antes de que alguien
+> lo cuente mal: enumera los siete trabajos uno a uno pero NO dice cuantos son**, y `L75`
+> escribe literalmente *That's a lot of steps*. **Eso es `D.29` con razon escrita, que es la
+> correccion del titular del 11 sep: la cuenta es condicion, no un adorno del ejemplo.**
+
