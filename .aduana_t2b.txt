@@ -17,3 +17,6 @@ reconocer_recompensar_gente_estable              [BLOQUEARIA] reconocer_recompen
 repartir_semana_cuarenta_horas_jefe              [ENTRARIA] repartir_semana_cuarenta_horas_jefe   (repartir_semana_cuarenta_horas_jefe.json)
 retar_superestrellas_equipo_constantemente       [ENTRARIA] retar_superestrellas_equipo_constantemente   (retar_superestrellas_equipo_constantemente.json)
 retirar_etiquetas_permanentes_equipo             [ENTRARIA] retirar_etiquetas_permanentes_equipo   (retirar_etiquetas_permanentes_equipo.json)
+revisar_ciclo_responsabilidades_relaciones       [ENTRARIA] revisar_ciclo_responsabilidades_relaciones   (revisar_ciclo_responsabilidades_relaciones.json)
+revisar_cinco_causas_mal_desempenio              [ENTRARIA] revisar_cinco_causas_mal_desempenio   (revisar_cinco_causas_mal_desempenio.json)
+=== FIN ADUANA T2b ===

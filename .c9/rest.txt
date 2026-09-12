@@ -1,1 +1,5 @@
 [ENTRARIA] elogiar_publico_criticar_privado_sus_tres_matices   (elogiar_publico_criticar_privado_sus_tres_matices.json)
+[ENTRARIA] evitar_personalizar_guia_aceptar_personal   (evitar_personalizar_guia_aceptar_personal.json)
+[ENTRARIA] medir_guia_propia_pegatinas_marco   (medir_guia_propia_pegatinas_marco.json)
+[ENTRARIA] practicar_franqueza_radical_jefe_propio   (practicar_franqueza_radical_jefe_propio.json)
+[ENTRARIA] organizar_sistema_recoger_quejas_equipo   (organizar_sistema_recoger_quejas_equipo.json)

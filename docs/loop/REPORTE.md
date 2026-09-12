@@ -23232,3 +23232,194 @@ el encargo exige y lo que el auditor puede releer.***
 >
 > Es la linea que el encargo me pide escribir, con la cifra que el me dejo decidir a mi:
 > **`cap_09` NO sale por debajo de 15, asi que no abro `cap_10`.**
+
+### N.4.4. LOS QUINCE CANDIDATOS, CADA UNO POR LA ADUANA **EN EL ACTO EN QUE SE ESCRIBIO**
+
+*`EXTRACTOR.md` 16. **Y digo exactamente como lo corri, porque la letra importa y no voy a
+dejar que se lea mejor de lo que fue:** cada candidato se escribio y se mando a la aduana
+antes de dar el siguiente por escrito, pero **el informe de esta maquina tarda unos 73
+segundos** (`time python forja.py informe` sobre un candidato: `real 1m13.420s`), asi que
+**corri los informes en tandas de tres a diez, secuenciales y uno por vez, mientras escribia
+los siguientes**. **Eso NO es pasar la aduana al final del lote**, que es lo que la seccion
+16 prohibe por su nombre: la correccion de un candidato que cayese costaba minutos, no el
+lote. **Lo declaro en vez de escribir uno por vez y dejar que se entienda otra cosa.***
+
+| # | pieza | id | pasos | **aduana** |
+|---:|---|---|---:|---|
+| 1 | **P4** `L17` a `L53` | `abrazar_incomodidad_arrancar_critica_equipo` | **20** | **`[ENTRARIA]`** al primer intento |
+| 2 | **P5** `L55` a `L63` | `organizar_sistema_recoger_quejas_equipo` | **9** | **`[ENTRARIA]`** al primer intento |
+| 3 | **P6** `L65` a `L71` | `correr_semana_arreglo_averias_gestion` | **8** | **`[ENTRARIA]`** al primer intento |
+| 4 | **P8** `L77` a `L95` | `dar_guia_humilde_tres_tecnicas` | **15** | **`[ENTRARIA]`** al primer intento |
+| 5 | **P9** `L97` a `L113` | `dar_guia_util_cuatro_recordatorios` | **10** | **`[ENTRARIA]`** al primer intento |
+| 6 | **P10** `L115` a `L135` | `dar_guia_acto_cinco_consejos` | **14** | **`[ENTRARIA]`** al primer intento |
+| 7 | **P11** `L137` a `L153` | `elegir_medio_dar_guia_jerarquia_modos` | **13** | **`[ENTRARIA]`** al primer intento |
+| 8 | **P12** `L155` a `L163` | `elogiar_publico_criticar_privado_sus_tres_matices` | **9** | **`[ENTRARIA]`** al primer intento |
+| 9 | **P13** `L165` a `L177` | `evitar_personalizar_guia_aceptar_personal` | **12** | **`[ENTRARIA]`** al primer intento |
+| 10 | **P14** `L179` a `L203` | `medir_guia_propia_pegatinas_marco` | **13** | **`[ENTRARIA]`** al primer intento |
+| 11 | **P15** `L205` a `L221` | `practicar_franqueza_radical_jefe_propio` | **17** | **`[ENTRARIA]`** al primer intento |
+| 12 | **P20** `L291` a `L293` | `comprobar_criticas_hombre_mujeres_equipo` | **6** | **`[ENTRARIA]`** al primer intento |
+| 13 | **P21** `L295` a `L299` | `exigir_critica_jefe_reticente` | **9** | **`[ENTRARIA]`** al primer intento |
+| 14 | **P25** `L363` a `L367` | `impedir_punialadas_espalda_equipo` | **9** | **`[ENTRARIA]`** al primer intento |
+| 15 | **P26** `L369` a `L381` | `fomentar_guia_entre_pares_equipo` | **13** | **`[ENTRARIA]`** al primer intento |
+| | **`cap_09`, esta vuelta** | | **177** | **15 de 15 por la aduana** |
+
+**LOS ID, CONTRA LAS SEIS REGLAS, ANTES DE ESCRIBIR EL PRIMERO** (`EXTRACTOR.md` 15): cero
+palabras de la lista negra, cero preposiciones y cero articulos, cero `_2`, `snake_case` sin
+acentos, y verbo mas objeto en los quince. **Cero rechazos de la puerta por regla de id en
+esta vuelta**, que es la primera vez que le pasa a una tanda de este tamanio en el lote 4.
+
+### N.4.5. LA RELECTURA DE FIDELIDAD `D.30`, EN EL ACTO Y PASO A PASO
+
+*`EXTRACTOR.md` 15.4: **ninguna guarda de esta casa ve un paso que tu escribiste y el libro
+no dice.** Los quince informes verdes de arriba **no certifican esto**, y por eso va aparte.*
+
+    $ python (lee TRANSCRIPCION/PUENTE declarado en el resumen_teorico de los 15)
+    177 pasos, 177 TRANSCRIPCION, 0 PUENTE
+
+**Y NO PUBLICO SOLO EL CERO: PUBLICO LOS SITIOS DONDE ESTUVE A PUNTO DE ESCRIBIR UNO**,
+porque un cero sin eso es una firma y no una medida.
+
+| donde ronde un puente | especie | **que escribi en su lugar** |
+|---|---|---|
+| `impedir_punialadas_espalda_equipo`, **la pieza mas pobre de las quince que dan nodo** (212 palabras) | **el bucle abierto** | el libro dice *Hopefully, they will work it out* y **no dice que pasa si la conversacion a tres tampoco lo resuelve**. Lo deje sin cerrar y lo escribi en el `LO QUE EL TEXTO NO DICE` |
+| `fomentar_guia_entre_pares_equipo`, `L379` | **el acto inventado** | el texto imagina en condicional un sistema de notificacion de seguridad medica, *What if...*. **Una hipotesis no es un acto**, y convertirla en paso era el puente mas grande que este capitulo ofrecia |
+| `medir_guia_propia_pegatinas_marco`, `P7` | **la cuenta prestada** | el texto numera **cuatro** beneficios con `One, Two, Three, Four` (`L189`) y pone **cuatro** casos de pegatina **sin numerarlos** (`L185`). El `P8` dice *las cuatro que el texto numera*; el `P7` dice *los cuatro casos que el texto nombra uno a uno*. **Una cuenta es del libro solo si el libro la escribe**, que es `D.37` aplicada dentro de un paso |
+| `practicar_franqueza_radical_jefe_propio`, `L221` | **la frase de otro convertida en orden** | el mantra `Listen, Challenge, Commit` de Andy Grove **describe lo que hace un lider fuerte, no ordena nada al lector**. Va a `denominaciones`, donde no afirma nada |
+| `evitar_personalizar_guia_aceptar_personal`, `L177` | **el dato del caso** | el caso del olor corporal se destilo en tres actos que el texto escribe (`P12`) **sin un solo dato del caso**, que es la senial barata que el manual `3.5` da para saber si se hizo mal |
+
+**EL AVISO DE `15.4` APLICADO A ESTE CAPITULO, y sale a favor:** el parrafo mas rico de la
+tanda (`L185`, el montaje de las pegatinas, con cuatro objetos y cuatro casos nombrados) dio
+**0 por ciento** de puentes, y el mas pobre (`L367`, 212 palabras) tambien, **pero solo
+porque deje su bucle abierto en vez de cerrarlo.** El cero no dice que la mano sea buena:
+dice que el capitulo **cuenta**, y donde el libro cuenta no hay donde inventar.
+
+### N.4.6. `D.37` SOBRE `cap_09`: **CERO ARISTAS CABLEABLES, Y LOS DOS BARRIDOS PEGADOS**
+
+*Y los pego **los dos**, literalmente, porque mi discutible 8 de la vuelta 18 dijo que habia
+dos `grep` pegados en `M.5.5` **y solo habia uno**, y esa frase es la unica caida que la
+`ACTA 18` me acumula (`REPORTE` **1 de 3**). **Una ruta que promete prueba es cifra.***
+
+    $ grep -noiE "\b(two|three|four|five|six|seven|eight|nine|ten) (rules|things|reasons|ways|steps|tips|techniques|questions|kinds|types|dimensions|quadrants|parts|lies|causes|responsibilities)\b" fuentes/scott_radical_candor/cap_09.md
+    83:three things
+    127:two things
+    317:four rules
+    429:two questions
+
+    $ grep -noiE "(the following [a-z]+|here are the [a-z]+|these (two|three|four|five)|the (first|second) of these|\bboth\b)" fuentes/scott_radical_candor/cap_09.md
+    89:these three      303:Both            317:the following four
+    307:the following experiment             405:The first of these
+    429:these two       (mas 20 ocurrencias de `both` en su uso corriente)
+
+**LOS CUATRO SITIOS DEL PRIMER BARRIDO, ABIERTOS UNO A UNO, Y NINGUNO DA ARISTA:**
+
+| sitio | que cuenta | **por que NO da arista `D.37`** |
+|---|---|---|
+| `L83` | *three things*: situacion, comportamiento, impacto | **las tres partes son pasos del mismo nodo** (`dar_guia_humilde_tres_tecnicas` `P3`), no nodos. `D.37` pide que las partes **existan como nodos** |
+| `L127` | *two things*: holgura en el calendario, o llegar tarde | **las dos son pasos del mismo nodo** (`dar_guia_acto_cinco_consejos` `P8` y `P9`) |
+| `L317` | *four rules of thumb* | **vive en `P23`, que esta vuelta NO extrae.** El otro extremo no existe |
+| `L429` | *two questions* | **vive en `P29`, que no da nodo** (`N.4.3`) |
+| `L89`, `L405` | *these three*, *the first of these* | dentro de `P8` y de `P27`: **la primera son pasos del mismo nodo, la segunda vive en una pieza no extraida** |
+
+> ### **CERO SERIES `D.37` CABLEABLES EN `cap_09` ESTA VUELTA, Y EL MOTIVO NO ES QUE NO LAS HAYA: ES QUE SUS PARTES O SON PASOS O NO ESTAN ESCRITAS.**
+> **`L317` ES LA QUE SI LO SERIA**, y queda apuntada para la vuelta que escriba `P23`.
+
+### N.4.7. LAS ARISTAS QUE LA SENIAL NO LEVANTA, LEIDAS Y DECLARADAS (`D.29`)
+
+*`EXTRACTOR.md` 11: **un candidato que entra con la cola vacia esta certificado como sin
+gemelo, no como sin madre.** Las cuatro de abajo las levanto **la lectura**, y las cuatro las
+escribe el propio libro con sus palabras.*
+
+| # | madre | hijo | **la linea que lo dice** | por que hoy no se cablea |
+|---:|---|---|---|---|
+| **1** | `practicar_franqueza_radical_jefe_propio` **P14** | `dar_guia_humilde_tres_tecnicas`, `dar_guia_util_cuatro_recordatorios`, `dar_guia_acto_cinco_consejos`, `elegir_medio_dar_guia_jerarquia_modos`, `elogiar_publico_criticar_privado_sus_tres_matices`, `evitar_personalizar_guia_aceptar_personal` | `217:...use the same tips above: be helpful, humble, do it immediately and in person, praise in public (if it doesn't look like kissing up), criticize in private, and don't personalize.` | **los siete en cuarentena de un lote ABIERTO.** Y es **`D.29` y NO `D.37`**: el texto los nombra los seis **y no dice `six`** |
+| **2** | `evitar_personalizar_guia_aceptar_personal` **P5** | `dar_guia_humilde_tres_tecnicas` | `169:...Use situation, behavior, impact, or the left-hand column techniques to be humble and to avoid personalizing.` | los dos en cuarentena |
+| **3** | `exigir_critica_jefe_reticente` **P9** | `abrazar_incomodidad_arrancar_critica_equipo` | `299:...Review the section above on getting guidance, and double down!` | los dos en cuarentena |
+| **4** | `elogiar_publico_criticar_privado_sus_tres_matices` **P9** | `fomentar_guia_entre_pares_equipo` | `163:...I'd let it be self-reported. (See "Whoops-a-Daisy" later in this chapter.)` | los dos en cuarentena |
+
+**LA 1 ES LA MAS CARA DE LAS CUATRO Y LA DIGO ENTERA:** es **una madre con seis hijos**, y los
+seis existen escritos **en esta misma vuelta**. `D.37` no la cubre porque el libro **no dice
+cuantos son**; `D.29` si, **con razon escrita**, y la razon es que `L217` los nombra uno a uno
+con las palabras de sus rotulos y cada hijo despliega en diez a diecisiete pasos lo que esa
+linea nombra en dos palabras.
+
+### N.4.8. LOS VECINOS QUE LA ADUANA LEVANTO: **CERO EN QUINCE**
+
+    $ (los 15 informes, uno por vez, contra 203 nodos del grafo)
+    ENTRARIAN 15 | BLOQUEARIAN 0 | CAERIAN 0 | CHOCAN 0
+    vecinos levantados por similitud_texto  : 0
+    vecinos levantados por familia_id       : 0
+    vecinos levantados por paso_contra_nodo : 0
+
+> ### **QUINCE CANDIDATOS Y CERO VECINOS, Y ESO NO ES UNA BUENA NOTICIA: ES `D.19` OTRA VEZ.**
+>
+> **Los seis hijos de la cola 1 tienen madre escrita en el mismo capitulo, y la aduana no vio
+> ninguno de los seis pares.** No porque los umbrales esten mal, sino porque **compara contra
+> el grafo y los dos extremos viven en la bandeja**. **Las cuatro aristas de `N.4.7` las trajo
+> la lectura, entera.** Es el principio 4 del manual con la cifra de hoy: **cero de cuatro.**
+
+### N.4.9. **DONDE CIERRA LA VUELTA, Y LA TENSION DE REGLA QUE TRAIGO EN VEZ DE RESOLVERLA SOLO**
+
+> ### **LA VUELTA CIERRA EN `cap_09` CON 15 CANDIDATOS, TECHO 15; `cap_10` Y `cap_11` PASAN A LA VUELTA SIGUIENTE.**
+>
+> Es la linea que el encargo me pide, con la cifra que me dejo decidir a mi: la frontera de
+> `cap_09` da **20 piezas que dan nodo**, que **no** esta por debajo de 15, asi que **no abro
+> `cap_10`**.
+
+**Y AHORA LO QUE NO ME SALE LIMPIO, QUE LO TRAIGO EN VEZ DE DEJARLO BONITO.** `12.4` punto 4
+tiene **dos frases y esta vuelta las pone a chocar**:
+
+| la frase | lo que manda aqui |
+|---|---|
+| *TRAMO POR VUELTA: entre cinco y quince candidatos* | **escribe 15 y para.** Es lo que he hecho |
+| *No se reparte el capitulo en dos vueltas ni se estira el tramo* | **escribe los 20 de `cap_09` en esta vuelta.** Seria romper la primera por cinco |
+
+**LAS DOS NO SE PUEDEN CUMPLIR A LA VEZ EN UN CAPITULO DE 20**, y no me invento cual gana:
+**el encargo ya lo decidio por escrito y yo lo obedezco al pie de la letra.**
+
+> *Encargo, TAREA 3: **si tienes que elegir entre el ultimo candidato y el bloque de cierre
+> con sus cinco guardas, elige el cierre y declara el candidato que falta.***
+
+**ELEGI EL CIERRE. Y AQUI VAN LOS QUE FALTAN, DECLARADOS UNO A UNO Y NO EN BLOQUE:**
+
+| pieza | tramo | palabras | que es | por que no esta escrita |
+|---|---|---:|---|---|
+| **P22** | `L301` a `L313` | 416 | `Men and women: things to think about when you feel a woman is being "too aggressive"`, con sus **cuatro** tacticas rotuladas | **techo de 15 de la vuelta** |
+| **P23** | `L315` a `L329` | 573 | `Things to think about if you're a woman who's being told, "You're abrasive."` | **techo de 15**, y ademas **trae la unica `D.37` viva del capitulo** y un desajuste de cuenta que marco como discutible |
+| **P24** | `L331` a `L361` | 1526 | `FORMAL PERFORMANCE REVIEWS`, con **nueve** consejos rotulados | **techo de 15.** Es la segunda pieza mas grande del capitulo |
+| **P27** | `L383` a `L413` | 1419 | `SPEAKING TRUTH TO "POWER"`, con **diez** consejos rotulados: la pieza mas procedimental del capitulo | **techo de 15** |
+| **P28** | `L415` a `L425` | 399 | `Skip level meeting FAQs`, cuatro preguntas con su respuesta | **techo de 15**, y **cuelga de `P27`**, asi que partirlas seria dejar la hija sin madre |
+| | | **4.333** | **5 piezas, el 24,8 por ciento del cuerpo** | |
+
+**LAS CINCO SON CONSECUTIVAS EN EL LIBRO** (`P22` a `P28`, de `L301` a `L425`), **y eso no es
+casualidad: es la consecuencia de haber cortado por el techo y no por el tema.** Quien abra
+`cap_09` en la vuelta siguiente **se encuentra un tramo continuo y no cinco huecos sueltos**,
+que es la unica forma decente de dejar un capitulo partido.
+
+> **LO QUE PROPONGO, EN MI SEDE Y SIN ADJUDICARMELO** (`EXTRACTOR.md` 14): `12.4` punto 4
+> **no dice que pasa cuando un solo capitulo da mas del techo**. Su ejemplar, `cap_07` con 24,
+> se resolvio escribiendo los 24 **y esa vuelta no cerro su reporte**, que es la averia que la
+> regla existe para impedir. **Si escribir el capitulo entero es lo que manda, el techo de 15
+> no es un techo; y si el techo manda, entonces un capitulo grande SI se reparte.** Lo traigo
+> como propuesta y no como parada, porque **el encargo de esta vuelta ya me dijo cual elegir**
+> y no hay nada que me impida trabajar.
+
+## N.5. MIS DISCUTIBLES, MARCADOS **ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+*Van aqui para que la relectura ciega del auditor empiece por ellos. **Estan escritos antes de
+ver su acta**, y varios estaban ya dentro de `N.4.3` y de los `resumen_teorico` desde el
+momento del corte.*
+
+| # | que dudo | **de que lado cai, y con que** |
+|---:|---|---|
+| **1** | **`P2` (`L11` a `L13`) fuera**, siendo la cabeza del capitulo y nombrando sus tres trabajos (*get, give, and encourage*) | **FUERA.** Nombra los tres y **remite al grafico de la pagina anterior y al resto del capitulo** para el procedimiento. `EXTRACTOR.md` 9: **nombrar no es procedimentar**, y un inventario de FINES no cuenta (`D.27` restriccion 1). **Pero es la cabeza de veinte nodos, y una cabeza que no existe deja veinte huerfanos**, que es lo que ya paso en `cap_08` |
+| **2** | **`P5`, el `ORANGE BOX`, DENTRO**, siendo un caso con nombre propio | **DENTRO, con el caso como ejemplo nombrado.** `L59` ordena en imperativo *You have to organize a system* y aniade *But it needn't be elaborate*: **sin la mecanica del caso detras, ese mandato es el adjetivo de adecuacion que `D.27` restriccion 2 tumba.** El entregable **no lleva ni un dato del caso**, que es la senial del manual `3.5` |
+| **3** | **`L317` dice `four rules of thumb` y debajo hay CINCO rotulos** | **NO LO RESUELVO, porque no extraigo esa pieza.** Lo marco con su medida: `$ sed -n '317p'` da *consider the following four rules of thumb*, y `L319`, `L321`, `L323`, `L325` y `L327` abren cinco. **Puede que `L323` y `L325` sean una sola regla en dos parrafos.** Quien escriba `P23` lo tiene que decidir, **y es una `D.37` viva** |
+| **4** | **`P29`, el cierre del capitulo, FUERA**, teniendo dos preguntas concretas | **FUERA.** El propio texto dice *rather than following step-by-step instructions* y presenta las dos preguntas como vuelta a los principios. **Es la que menos seguro tengo de las cuatro de clase** |
+| **5** | **`P4` como UN nodo de 20 pasos** y no seis nodos | **UNO.** El corte por rotulo de linea es el de `cap_05`, `cap_06`, `cap_07` y `cap_08`, y la `ACTA 18` me lo sostuvo a favor en su `3.2` fila 2. **Pero 20 pasos es el nodo mas grande del lote 4**, y seis nodos sueltos tendrian la misma condicion de activacion, que es lo que me decide |
+| **6** | **`P17` y `P18` fuera** (las dos piezas largas de genero, 1.890 palabras entre las dos) **y `P20` a `P23` dentro** | **FUERA las dos.** `P17` remata en *We must stop gender politics*, que es META y no medio (`D.27` restriccion 1), y `P18` es investigacion y casos. **Sus caras accionables son `P20` a `P23` y ahi van.** Es la asimetria mas visible de mi frontera y la digo yo primero |
+| **7** | **`P6`, la semana de arreglo, DENTRO**, siendo *a team at Google decided* en pasado | **DENTRO.** `L69` dice *Here is how it worked* y lo que sigue es mecanica en abstracto con sus objetos nombrados, no cronica. **Misma forma que los tres retratos en pasado de `cap_07` que esta casa ya adjudico a favor** |
+| **8** | **`impedir_punialadas_espalda_equipo` DENTRO**, siendo **la pieza mas pobre de las quince** (212 palabras) y una seccion de una sola linea de cuerpo | **DENTRO, y con el bucle abierto SIN cerrar.** `15.4` dice que el parrafo pobre produce el nodo inventado, asi que aqui es donde mas desconfie de mi mano: el libro dice *Hopefully, they will work it out* y **no escribi que pasa si la conversacion a tres falla** |
+| **9** | **haber corrido los informes de la aduana en tandas de tres a diez** y no estrictamente uno escrito, uno comprobado | **LO HICE ASI Y LO DECLARO.** El informe tarda **73 segundos** en esta maquina (`real 1m13.420s`, medido). **Lo que la seccion 16 prohibe por su nombre es pasar la aduana al final del lote**, y no es esto: la correccion de un caido costaba minutos. **Pero no es la letra mas estricta y no voy a fingir que si** |
+| **10** | **cerrar en 15 y declarar 5**, cuando `12.4` dice tambien *no se reparte el capitulo en dos vueltas* | **CERRE EN 15, por instruccion expresa del encargo.** `N.4.9` entero. **Es mi discutible mas caro y el que menos depende de mi lectura** |
+
+## N.6. EL CIERRE DE LA VUELTA 19
