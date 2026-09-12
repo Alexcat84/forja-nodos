@@ -21740,8 +21740,8 @@ fichero**, con el arbol tal y como el auditor lo dejo.*
 | # | tarea | estado |
 |---:|---|---|
 | 0 | cerrar la vuelta 17: absorber los cinco `.frag_*.md`, commitear los 24 de `cap_07`, arreglar las dos cabeceras de puntero, dejar el arbol limpio | **CERRADA** (`M.2`) |
-| 1 | los registros: `ACTA 17` entera, la parada archivada del 12 sep, las sedes de doctrina que cambiaron | ABIERTA |
-| 2 | el nodo que se le debe a `cap_07`, `L155` a `L163` (`Adapt to a culture of listening`) | ABIERTA |
+| 1 | los registros: `ACTA 17` entera, la parada archivada del 12 sep, las sedes de doctrina que cambiaron | **CERRADA** (`M.3`) |
+| 2 | el nodo que se le debe a `cap_07`, `L155` a `L163` (`Adapt to a culture of listening`) | **CERRADA** (`M.4`) |
 | 3 | el lote 4, `cap_08` a `cap_10`, **con el techo de candidatos mandando sobre el de capitulos** | ABIERTA |
 
 ---
@@ -21894,5 +21894,203 @@ cabecera declara, que ahora cubre lo que el nodo hizo.
 **LOS ARTEFACTOS DEL ARNES NO SE BARREN** (`D.33`), y por eso los cuatro de abajo se declaran
 en vez de borrarse. **Lo unico mio que queda es `REPORTE.md`**, que es la sede de esta tarea y
 viaja en su propio commit.
+
+---
+
+## M.3. TAREA 1: LOS REGISTROS, Y LAS SEDES QUE CAMBIARON. CERRADA
+
+### M.3.a. LA `ACTA 17`, LEIDA ENTERA. SUS ADJUDICACIONES, RECOGIDAS SIN REABRIR
+
+    $ grep -n "^# ACTA " docs/loop/ACTA_AUDITOR.md | tail -1
+    15951:# ACTA 17. VUELTA 17, lote 4 (scott_radical_candor), cap_07: la vuelta que no cerro
+           su reporte, y LA PARADA POR MI PROPIA RACHA
+    $ wc -l docs/loop/ACTA_AUDITOR.md   -> 16577
+    (leidas las 627 lineas de la 15951 a la 16577, que es el acta entera)
+
+| adjudicacion | que dice | la recojo |
+|---|---|---|
+| `4.1` | a `L155` a `L163` de `cap_07` se le debe un nodo, por consistencia con los otros dos retratos del mismo capitulo | **SIN REABRIR.** Es mi TAREA 2 y esta ejecutada en `M.4` |
+| `4.2` | la fusion de las piezas 17 y 18 (`fijar_fecha_cierre_debate_equipo`) **se sostiene** | **SIN REABRIR** |
+| `4.3` | el saldo `22 y 11` corregido a `24 y 9` **no acumula** como `REPORTE`, por extension natural de `8.4` | **SIN REABRIR** |
+| `4.4` | las siete cabeceras de seccion con tres tratos son **una sola regla aplicada a siete cabeceras distintas**; `EXECUTE` se sostiene **al borde** | **SIN REABRIR**, y lo que deja sin resolver (que el contenido propio de `EXECUTE` cabe en un paso) **sigue sin resolver y no lo resuelvo yo**: `6.3` lo reserva a correccion declarada de Alexis |
+| `4.5` | las dos cabeceras de puntero **se declaran y no acumulan**; se corrigen antes de insertar | **RECOGIDA Y EJECUTADA** en `M.2.c` |
+
+**EL UNICO HECHO NUEVO QUE TRAIGO SOBRE EL ACTA ES UNA CIFRA SUYA QUE EL MISMO ME MANDO
+REMEDIR**, y esta en `M.2.b`: **`25` y `24` no se contradicen, cuentan poblaciones
+distintas.** Lo traigo con mi instrumento pegado y no lo resuelvo copiando (`EXTRACTOR.md`
+5).
+
+**Y RECOJO TAMBIEN, SIN REABRIRLAS, LAS CIFRAS QUE EL ACTA FIRMA SOBRE MI TRABAJO DE LA 17:**
+`cap_07` **0,00 de `PASOS INVENTADOS` (0 de 216)** con 28 de esos 216 releidos por el auditor
+contra su parrafo; **cero caidas de las tres especies del extractor**; y la unica discrepancia
+de clase de la vuelta **cae dentro de lo que yo marque**.
+
+### M.3.b. LA PARADA ARCHIVADA, Y SUS CUATRO DECISIONES LITERALES
+
+    $ wc -l docs/loop/paradas/2026-09-12-la-fase-ciega-lee-el-acta.md   -> 189
+    $ (leidas las 189)
+
+| decision | que manda | a mi que me toca |
+|---|---|---|
+| **1** | la racha del auditor se reinicia **con condicion mecanica**: `D.40`, el arnes entrega la herencia | **NADA MIO.** Lo recojo porque el arnes ahora **puede pararse antes de que el acta se escriba**, y eso sale en `docs/loop/loop.log` |
+| **2** | **el tramo baja a TRES capitulos**, y **el techo de candidatos manda sobre el de capitulos** | **ES LA REGLA DE MI TAREA 3.** Aplicada y declarada en `M.5` |
+| **3** | **la vuelta 17 se cierra antes de abrir nada** | **TAREA 0**, cerrada en `M.2` |
+| **4** | **adjudicacion autorizada**: a `L155` a `L163` se le extrae su nodo | **TAREA 2**, cerrada en `M.4` |
+
+**Y LA COLETILLA DE LA DECISION 4, QUE MANDA SOBRE EL CIERRE DE ESTE REPORTE:** *el resto
+queda como estaba: lote 4 abierto, su insercion al cierre por `D.39`, las cuatro colas de
+arista y las cinco lecturas `SANO` en su bloque hasta entonces.* **Repetidas en `M.7`, como
+hasta ahora y sin inventarles sede.**
+
+### M.3.c. LAS SEDES DE DOCTRINA QUE CAMBIARON, MEDIDAS POR MI Y NO LEIDAS DEL ENCARGO
+
+    $ grep -n "^## D\.40" docs/BANCO_DE_REGLAS.md
+    1530:## D.40. LO QUE UN AUDITOR LE DEJA AL SIGUIENTE LO ENTREGA EL ARNES, NO LA MEMORIA
+          (12 sep 2026, decision del fundador)
+    $ wc -l docs/BANCO_DE_REGLAS.md   -> 1616   (D.40 es la ultima regla del banco)
+
+    $ grep -n "herencia" forja.py orquestador_forja.sh | head
+    forja.py:20:            from src import (aduana, arista, censos, comun, gate, guiones, herencia, ...
+    forja.py:36:            if comando == "herencia":
+    forja.py:37:                return herencia.main(resto)
+    orquestador_forja.sh:406:  herencia="$(python forja.py herencia 2>&1)"
+    orquestador_forja.sh:420:  if ! faltan="$(python forja.py herencia --comprobar 2>&1)"; then
+    orquestador_forja.sh:424:  log "DETENIDO en la vuelta $vuelta: la apertura ciega no declaro su herencia (D.40)..."
+
+    $ grep -c "" src/herencia.py   -> 195 lineas
+    $ grep -n "herencia declarada" tests/prueba_arnes.sh
+    431:comprobar "la herencia queda declarada"      "herencia declarada"           "$salida"
+
+    $ python tests/test_aceptacion.py | tail -3
+      D.40, lo que un auditor le deja al siguiente lo entrega el arnes: 7 pruebas mas
+      total: 84 pruebas, 0 fallos, 0 errores
+
+| sede | lo que mido yo hoy |
+|---|---|
+| `docs/BANCO_DE_REGLAS.md` | **`D.40` existe y es la ultima del banco**, en `L1530` de 1.616 |
+| `docs/loop/EXTRACTOR.md` 12.4 | **la regla de precedencia de los dos techos esta dentro del punto 4**, con su ejemplar (`cap_07`, 24 contra 15) y su formula de declaracion |
+| `docs/loop/ORDEN_DE_LOTES.md` | **`lote 4  TRES capitulos por vuelta  EL TRAMO BAJA, decision del fundador`**, con correccion declarada y sin borrar el cuatro viejo |
+| `src/herencia.py`, `forja.py`, `orquestador_forja.sh`, `tests/` | **el instrumento corre**: subcomando cableado, arnes que se detiene si la apertura no declara, caso positivo en `prueba_arnes.sh` L431, **y las 84 pruebas en verde, 7 mas que las 77 de la `ACTA 17`** |
+
+> **LA DIFERENCIA DE PRUEBAS ES MIA Y LA MIDO ASI, PORQUE ES UNA CIFRA QUE CAMBIO ENTRE EL
+> ACTA Y YO:** la `ACTA 17` 1.1 publico **77 pruebas** el 12 sep; hoy la misma orden da **84**,
+> y la propia salida rotula el tramo nuevo (*`D.40` [...] **7 pruebas mas**`). **77 mas 7 son
+> 84 al digito. No hay discrepancia: hay una regla que nacio en medio.**
+
+### M.3.d. LO QUE EL ENCARGO ME DICE QUE NO BUSQUE, Y NO BUSQUE
+
+Las cuatro cifras de la vuelta 16 ya remedidas y confirmadas por la `ACTA 17` 2.1
+**no se reabren**, y no las he vuelto a correr.
+
+---
+
+## M.4. TAREA 2: **EL NODO QUE SE LE DEBE A `cap_07`**, `L155` A `L163`. CERRADA
+
+*Decision 4 del fundador del 12 sep 2026, literal: **ADJUDICACION AUTORIZADA.** Adjudicada
+por el auditor en la `ACTA 17` 4.1. **Yo marque esta pieza como discutible en la vuelta 17
+sabiendo que iba contra mi** (`L.6` discutible 3), y la adjudicacion cae dentro de ese
+marcado.*
+
+### M.4.a. EL TRAMO, REABIERTO POR MI CON SU `sed` PEGADO (`D.35`)
+
+    $ awk 'NR>=155 && NR<=163' fuentes/scott_radical_candor/cap_07.md
+    L155: Adapt to a culture of listening
+    L157: My friend Astrid Tuminez has a great story about how important it is to adapt to a
+          culture of listening in a new situation. She grew up in a tiny fishing village in
+          the slums of the Philippines but went on to have a career that spanned Moscow
+          (where I worked with her), New York, and Singapore. While working at the U.S.
+          Institute of Peace, she was invited to work on the peace process with the Moro
+          Islamic Liberation Front in the southern Philippines. When she first arrived, she
+          acted like a New Yorker, very business-like, making back-to-back appointments.
+    L159: Then a member of the Philippine negotiating team told her that someone from the
+          Muslim/Moro group had sent a note to Manila saying, "Who is this woman and what
+          planet is she from?" The person who gave Astrid feedback was particularly invested
+          in Astrid's success because they had connected over the fact that they were from
+          the same province.
+    L161: To the Muslims, Astrid had come across as unfeeling, inhospitable, and foreign
+          (even though she was Filipino and could speak Filipino). Thinking it over, she
+          realized that she'd made some significant mistakes, such as hosting meetings with
+          people without offering them real food, which was so important in the culture. She
+          spent the next few months listening, and making only "loose" appointments. She
+          attended public events and made the rounds without scheduling people
+          back-to-back. And she made sure she had a lot of food available when she hosted
+          meetings.
+    L163: By taking time to get to know people and by just listening she was able to build
+          trust and show she cared deeply about the peace process. Eventually the Moros
+          became very willing to speak to her and to take her places where other outsiders
+          couldn't or wouldn't go. It made all the difference in her ability to be effective
+          in the complex and nuanced negotiations her job required.
+
+**Y ENCUENTRO MAS MATERIAL DEL QUE EL ENCARGO NOMBRA, ASI QUE LO TRAIGO CON SU MEDIDA EN VEZ
+DE COPIAR LA CIFRA** (`EXTRACTOR.md` 5). **El encargo nombra CINCO medios**; el tramo pone
+**NUEVE actos nombrados uno a uno**, y los cuatro que el encargo no lista no son adorno:
+
+| acto | linea | esta en los cinco del encargo? |
+|---|---|---|
+| llegar comportandose como una neoyorquina, muy profesional, encadenando citas | `L157` | **no** |
+| el aviso que le llega de rebote, por un negociador de su misma provincia | `L159` | **no** |
+| pararse a pensarlo y reconocer los errores, entre ellos la comida | `L161` | **no** |
+| dedicar los meses siguientes a escuchar | `L161` | si (1) |
+| concertar solo citas sueltas | `L161` | si (2) |
+| acudir a los actos publicos y darse una vuelta | `L161` | si (3) |
+| no programar a la gente una detras de otra | `L161` | si (4) |
+| tener comida abundante cuando convoca ella | `L161` | si (5) |
+| tomarse tiempo de conocer a la gente y limitarse a escuchar | `L163` | **no** |
+
+**NUEVE Y NO CINCO. No ensancho nada: cuento lo que el parrafo nombra**, igual que la
+`ACTA 17` acepto de mi que la pieza 12 de `cap_05` tuviera siete actos y no cuatro.
+
+### M.4.b. EL CANDIDATO, CON SU RELECTURA `D.30` **DENTRO DEL ACTO DE ESCRIBIRLO**
+
+| | |
+|---|---|
+| **id** | `adaptar_escucha_cultura_ajena` |
+| **tramo** | `L155` a `L163` de `cap_07.md`, rotulo `Adapt to a culture of listening`, dentro de `LISTEN` |
+| **pasos** | **9** |
+| **PUENTES** | **0** |
+| **reparto por linea** | P1 de `L157`; P2 de `L159`; P3 a P8 de `L161`; P9 de `L163` |
+
+**LAS DOS ESPECIES DE PUENTE QUE RONDABAN, DECLARADAS PORQUE NINGUNA GUARDA LAS VE**
+(`D.30`, y el aviso de que un parrafo pobre produce un nodo inventado):
+
+| sitio | la especie que rondaba | por que se queda |
+|---|---|---|
+| **P4**, *dedica los meses siguientes a escuchar* | **PERIODO**, la que el lote 1 pago mas cara | el texto escribe **`She spent the next few months listening`**. El plazo es del libro; **lo que habria sido puente es poner yo un numero de meses, y no lo pongo** |
+| **P8**, *asegurate de tener comida abundante cuando el que convoca eres tu* | **el destinatario y la regla general** | `L161` escribe **`she made sure she had a lot of food available when she hosted meetings`**. **No escribo que la comida sea la de esa cultura ni cual**, porque el libro dice *real food* y *so important in the culture* y no dice cual |
+
+**LO QUE NO ESCRIBI Y ERA LA TENTACION ENTERA DE ESTA PIEZA:** ninguna regla de como se
+estudia una cultura antes de entrar, ningun plazo de adaptacion, y ningun procedimiento para
+buscarte un informante. **El libro no pone ninguno de los tres**, y los tres caben perfectos
+en el hueco que deja. Van declarados en el `resumen_teorico` bajo *LO QUE EL TEXTO NO DICE*.
+
+**Y EL CASO VA NOMBRADO DENTRO DE LOS PASOS QUE LO USAN**, que es la condicion que esta casa
+le pone a la `TRANSCRIPCION DE CASO` y la que `cuidarse_agotamiento_centro_rueda` cumple con
+Dick Costolo en sus `P4` a `P7`. **Astrid Tuminez esta dentro de `P1`, `P2`, `P3` y `P9`.**
+
+### M.4.c. LA ADUANA, EN EL MISMO ACTO (`EXTRACTOR.md` 16)
+
+    $ python forja.py informe cuarentena/scott_radical_candor/adaptar_escucha_cultura_ajena.json
+    candidatos revisados        : 1
+    nodos en el grafo de destino: 203
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+    [ENTRARIA] adaptar_escucha_cultura_ajena
+
+**`ENTRARIA` SIN UN SOLO VECINO CONTRA LOS 203.** Y digo lo que eso **no** significa
+(`EXTRACTOR.md` 11, `D.19`): **esta certificado como sin gemelo, no como sin madre.**
+
+### M.4.d. LA JERARQUIA, BUSCADA POR LA LECTURA Y NO POR LA SENIAL
+
+| par | mi clase | la razon |
+|---|---|---|
+| `adaptar_escucha_cultura_ajena` contra **`crear_cultura_escucha_equipo`** (`L131` a `L153`, bandeja) | **`SANO`, hermanos** | Son **dos rotulos del mismo nivel y consecutivos** en el libro (`Create a culture of listening` y `Adapt to a culture of listening`), y el libro **no dice que uno sea parte del otro**. El primero **monta** un sistema de escucha en tu propio equipo; el segundo **desmonta el tuyo** al entrar en una cultura ajena. **Ni gemelo ni hijo** |
+| `adaptar_escucha_cultura_ajena` contra la **rueda** `recorrer_rueda_hacer_cosas_equipo` (`L65` a `L77`, bandeja) | **cola `D.29`**, no `D.37` | Es el **cuarto** nodo que cuelga del radio `LISTEN` de la rueda. **`LISTEN` no tiene cabeza propia** (la `ACTA 17` 4.4 lo adjudica: `L79` a `L89` anuncia sus dos modelos y no se extrajo), y **la rueda no dice cuantos trabajos tiene** (`L75`: *That's a lot of steps*), asi que **no es `D.37`**. Va a la cola con razon escrita, como los otros tres |
+
+**NINGUNO DE LOS DOS SE PUEDE ESCRIBIR EN `bitacora/VEREDICTOS.jsonl` HOY**, porque esa
+linea la escribe la aduana al insertar y **el lote 4 esta ABIERTO** (`D.39`). **Se cuentan y
+se traen**, y el primero engorda la lista de lecturas `SANO` sin sede que `M.7` repite.
 
 ---
