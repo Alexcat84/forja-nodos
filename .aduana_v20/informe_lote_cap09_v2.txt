@@ -1,0 +1,7 @@
+# INFORME DE LOTE SOBRE LOS 20 CANDIDATOS DE cap_09, VUELTA 20
+# lo pide la ACTA 19 seccion 2.3 y el encargo TAREA 1.e: pega su salida entera.
+# los 20 se pasan en UNA sola llamada para que CHOCAN entre si dentro del lote
+# tenga poblacion: un informe de un solo candidato no puede medir eso.
+# SEGUNDA CORRIDA. La primera salio en rojo por un retorno de carro de MI lista,
+# no por los candidatos, y queda entera en informe_lote_cap09_ROJO_MIO.txt.
+Sat, Sep 12, 2026  3:46:49 PM

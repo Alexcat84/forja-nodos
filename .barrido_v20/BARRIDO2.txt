@@ -19,3 +19,15 @@ POBLACION: grafo 203 + bandejas 241 = 444
     SIN VECINO
 ### dar_guia_util_cuatro_recordatorios   [poblacion 443]   [405s]
     SIN VECINO
+### dar_guia_humilde_tres_tecnicas   [poblacion 443]   [323s]
+    VECINO elogiar_publico_criticar_privado_sus_tres_matices  |  familia_id=0.091, paso_contra_nodo=0.393, similitud_texto=0.35
+### dar_guia_acto_cinco_consejos   [poblacion 443]   [356s]
+    SIN VECINO
+### correr_semana_arreglo_averias_gestion   [poblacion 443]   [304s]
+    VECINO comprobar_criticas_hombre_mujeres_equipo  |  paso_contra_nodo=0.431, similitud_texto=0.356
+### comprobar_criticas_hombre_mujeres_equipo   [poblacion 443]   [192s]
+    VECINO exigir_critica_jefe_reticente  |  familia_id=0.125, paso_contra_nodo=0.555, similitud_texto=0.402
+    VECINO correr_semana_arreglo_averias_gestion  |  paso_contra_nodo=0.431, similitud_texto=0.366
+### abrazar_incomodidad_arrancar_critica_equipo   [poblacion 443]   [568s]
+    SIN VECINO
+FIN

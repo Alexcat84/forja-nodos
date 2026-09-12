@@ -1,0 +1,109 @@
+# INFORME DE LOTE SOBRE LOS 20 CANDIDATOS DE cap_09, VUELTA 20
+# lo pide la ACTA 19 seccion 2.3 y el encargo TAREA 1.e: pega su salida entera.
+# los 20 se pasan en UNA sola llamada para que CHOCAN entre si dentro del lote
+# tenga poblacion: un informe de un solo candidato no puede medir eso.
+Sat, Sep 12, 2026  3:36:15 PM
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 20
+nodos en el grafo de destino: 203
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 20
+  CHOCAN entre si dentro del lote  : 0
+
+POR QUE GUARDA CAEN
+    20  el fichero no se puede leer
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[CAERIA] sin id   (abrazar_incomodidad_arrancar_critica_equipo.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/abrazar_incomodidad_arrancar_critica_equipo.json\r'
+
+[CAERIA] sin id   (comprobar_criticas_hombre_mujeres_equipo.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/comprobar_criticas_hombre_mujeres_equipo.json\r'
+
+[CAERIA] sin id   (conducir_reuniones_salto_nivel_diez_reglas.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/conducir_reuniones_salto_nivel_diez_reglas.json\r'
+
+[CAERIA] sin id   (correr_semana_arreglo_averias_gestion.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/correr_semana_arreglo_averias_gestion.json\r'
+
+[CAERIA] sin id   (dar_guia_acto_cinco_consejos.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/dar_guia_acto_cinco_consejos.json\r'
+
+[CAERIA] sin id   (dar_guia_humilde_tres_tecnicas.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/dar_guia_humilde_tres_tecnicas.json\r'
+
+[CAERIA] sin id   (dar_guia_util_cuatro_recordatorios.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/dar_guia_util_cuatro_recordatorios.json\r'
+
+[CAERIA] sin id   (elegir_medio_dar_guia_jerarquia_modos.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/elegir_medio_dar_guia_jerarquia_modos.json\r'
+
+[CAERIA] sin id   (elogiar_publico_criticar_privado_sus_tres_matices.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/elogiar_publico_criticar_privado_sus_tres_matices.json\r'
+
+[CAERIA] sin id   (entregar_evaluacion_formal_desempenio_nueve_consejos.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/entregar_evaluacion_formal_desempenio_nueve_consejos.json\r'
+
+[CAERIA] sin id   (evitar_personalizar_guia_aceptar_personal.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/evitar_personalizar_guia_aceptar_personal.json\r'
+
+[CAERIA] sin id   (exigir_critica_jefe_reticente.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/exigir_critica_jefe_reticente.json\r'
+
+[CAERIA] sin id   (fomentar_guia_reciproca_companieros.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/fomentar_guia_reciproca_companieros.json\r'
+
+[CAERIA] sin id   (impedir_punialadas_espalda_equipo.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/impedir_punialadas_espalda_equipo.json\r'
+
+[CAERIA] sin id   (medir_guia_propia_pegatinas_marco.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/medir_guia_propia_pegatinas_marco.json\r'
+
+[CAERIA] sin id   (organizar_sistema_recoger_quejas_equipo.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/organizar_sistema_recoger_quejas_equipo.json\r'
+
+[CAERIA] sin id   (practicar_franqueza_radical_jefe_propio.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/practicar_franqueza_radical_jefe_propio.json\r'
+
+[CAERIA] sin id   (resolver_dudas_frecuentes_reuniones_salto_nivel.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/resolver_dudas_frecuentes_reuniones_salto_nivel.json\r'
+
+[CAERIA] sin id   (responder_critica_abrasiva_cuatro_reglas.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/responder_critica_abrasiva_cuatro_reglas.json\r'
+
+[CAERIA] sin id   (revisar_critica_mujer_agresiva_cuatro_tacticas.json)
+    guarda: el fichero no se puede leer
+      [Errno 22] Invalid argument: 'cuarentena/scott_radical_candor/revisar_critica_mujer_agresiva_cuatro_tacticas.json\r'
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+Sat, Sep 12, 2026  3:36:15 PM
