@@ -1,0 +1,51 @@
+{
+  "id": "explicar_idea_facil_comprender_oyente",
+  "titulo": "Explicar una idea de forma que sea imposible no entenderla, cargando tu con la responsabilidad de que se entienda",
+  "denominaciones": {
+    "nombre_largo": "Ser claro para los demas: la carga de que la idea se entienda es del que explica y no del que escucha, y lo que se selecciona, se elimina y se subraya depende del oyente",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "make thoughts and ideas drop-dead easy for others to comprehend"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando alguien de tu equipo tiene que explicar su idea a colegas, a otras areas o a la direccion, y tu le estas ayudando a prepararla.",
+  "entregable_esperado": "Una idea dicha con tal precision y claridad que sea imposible no captar el argumento, ajustada a lo que su oyente sabe y no sabe.",
+  "pasos_accionables": [
+    "Ponte la responsabilidad de que la idea se entienda encima de ti, el que explica, y no encima del que escucha.",
+    "Cuenta con lo que el texto dice que pasa cuando no se hace: si el genio de Keynes se queda encerrado en su cabeza, es como si no hubiera existido.",
+    "No des por supuesto que quien no te entiende es estupido o cerrado de mente. El texto dice que eso casi nunca es lo que pasa.",
+    "Cuenta con la causa que el texto si pone: sabemos de nuestro tema pero podemos no conocer a la persona a la que se lo estamos explicando, y por eso no conseguimos que la idea llegue.",
+    "Tomate el tiempo de entender a las personas con las que estas hablando: que saben y que no saben.",
+    "Decide con eso delante que detalles tienes que incluir para que les resulte facil entenderlo.",
+    "Y decide, que el texto dice que importa mas, que detalles puedes dejar fuera.",
+    "Cuando el que escucha eres tu, carga tu con la responsabilidad de entender en vez de ponerle a el la de comunicar.",
+    "Cuando les estas ayudando a preparar la explicacion para otros, empujales a ellos y a ti mismo a hacerlo mejor de lo que lo hizo Keynes.",
+    "Empujales a comunicar con tanta precision y claridad que sea imposible no captar su argumento.",
+    "Elige que seleccionas, que eliminas y que subrayas en funcion no solo de la idea sino del publico que la va a oir.",
+    "Cambia esas tres elecciones cuando cambie el publico: el texto pone el mismo asunto del trabajo contado a tu abuela y contado a tu jefe, y dice que probablemente sera al reves.",
+    "No sientas que pierdes el tiempo cuando pasas dos horas ayudando a alguien a editar un correo hasta dejarlo en dos frases: el texto dice que estas llegando a la esencia de la idea y que ademas estas ensenando una habilidad de valor incalculable."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 197 a 211, bajo los rotulos Be clear to others y Make thoughts/ideas drop-dead easy for others to comprehend, dentro del paso CLARIFY de la rueda de hacer cosas. Los dos rotulos van en el mismo nodo por la misma razon que en la pieza anterior: entre la linea 197 y la 199 no hay ni una linea de texto. La bisagra de la pieza es la pregunta del profesor sobre la reunion entre Roosevelt y Keynes, de quien fue la culpa, y la respuesta que el libro da es la que convierte esto en procedimiento y no en consejo: la carga es del que explica, y de ahi salen los actos. El caso de Keynes va nombrado dentro de los pasos que lo usan, que es la condicion de TRANSCRIPCION DE CASO. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 13 pasos, 13 TRANSCRIPCION, 0 PUENTE. P1, P2, P3 y P4 de la linea 203; P5, P6 y P7 de la 205; P8, P9 y P10 de la 207; P11 y P12 de la 209; P13 de la 211. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se averigua que sabe y que no sabe el oyente, cuantas veces se reescribe, y quien decide que ya esta bastante claro.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [
+    {
+      "cifra": "solo por seleccion, por eliminacion y por enfasis llegamos al significado real de las cosas",
+      "autor": "Georgia OKeeffe, citada por Kim Scott como epigrafe de la seccion CLARIFY",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta fecha en el texto: el libro la usa como epigrafe sin datar la cita, asi que la atribucion queda sin fecha de corte y se dice"
+    }
+  ]
+}

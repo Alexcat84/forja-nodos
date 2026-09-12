@@ -1,0 +1,56 @@
+{
+  "id": "crear_espacio_seguro_madurar_ideas_nuevas",
+  "titulo": "Crear un espacio seguro donde una idea nueva madure antes de entrar en el debate, ayudando a pensar en vez de pedir soluciones",
+  "denominaciones": {
+    "nombre_largo": "Ser claro en tu propia cabeza: dejar que la gente piense en voz alta contigo antes de someter su idea al empujon del debate",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "create a safe space to nurture new ideas"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "plussing"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando alguien de tu equipo trae una idea a medio hacer, o una queja del tipo este proceso me frustra, y tu primer impulso es cerrarla porque no tienes tiempo.",
+  "entregable_esperado": "La idea o el problema explicados con la claridad suficiente para que quien los trajo pueda hacer algo al respecto en vez de solo quejarse, sin que la idea se haya aplastado por el camino.",
+  "pasos_accionables": [
+    "Asume como parte de tu puesto ayudar a la gente a pensar sus ideas antes de someterlas al empujon del debate.",
+    "No pidas tres soluciones y una recomendacion. La autora lo hacia en Google y Russ Laraway le explico que asi no ayudaba a nadie a innovar, porque les pedia decidir antes de haber tenido tiempo de pensar.",
+    "Dales el sitio donde puedan simplemente hablar y darle vueltas contigo.",
+    "Resiste el impulso de cerrarlo diciendo que ahora no tienes tiempo para esto. El texto dice que tomarse esos momentos te ahorra tiempo a la larga.",
+    "Tomate el tiempo de ayudarles a explicar que quieren decir, para que puedan arreglar el problema o perseguir la oportunidad en vez de solo quejarse.",
+    "Empujales a aclarar su pensamiento para no aplastar su mejor idea ni pasar por alto los problemas que les molestan.",
+    "Si el sitio donde las ideas se debaten se ha vuelto el sitio donde las ideas van a morir, crea una reunion previa donde se desarrollen antes, que es lo que hizo Susan Wojcicki con la reunion anterior al comite de direccion de Google.",
+    "Cuenta con que una sesion de lluvia de ideas no es una conversacion donde no se puede decir nada negativo: hay ideas malas y hay que reconocerlas como tales.",
+    "Hazle agujeros a las ideas nuevas sabiendo que eso no las mata necesariamente, y que puede empujar a la gente a aclarar su pensamiento.",
+    "Cuenta tambien con lo contrario, que el texto dice a continuacion: hay grandes ideas que a primera vista parecen malas.",
+    "Usa la tecnica que Pixar llama plussing: en vez de decir no, eso es una mala idea, quien senala un problema tiene que ofrecer una solucion para el.",
+    "Trata tus reuniones semanales a solas como ese sitio seguro donde vengan a hablarte de ideas nuevas.",
+    "En esas reuniones no juzgues la idea: ayuda a quien depende de ti a aclarar su pensamiento.",
+    "Senala los problemas con el objetivo de encontrar una manera de rodearlos, no de matar la idea."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 177 a 195, bajo los rotulos Be clear in your own mind y Create a safe space to nurture new ideas, dentro del paso CLARIFY de la rueda de hacer cosas. CABECERA CORREGIDA EN LA VUELTA 18 (ACTA 17 seccion 4.5): declaraba 181 a 195 y sus pasos P4, P5 y P6 citan las lineas 177 y 179, que son las dos lineas de cuerpo del rotulo CLARIFY que esta pieza absorbe. El tramo entero es 177 a 195 y asi se escribe; ningun paso cambia y ninguna linea citada cambia. Los dos rotulos van en el mismo nodo porque el segundo es el unico desarrollo que el libro le da al primero: entre la linea 181 y la 183 no hay ni una linea de texto. La pieza tiene una estructura que el propio libro marca: primero lo que NO hay que pedir (tres soluciones y una recomendacion), despues el espacio que si hay que dar, y por ultimo la regla de como se critica dentro de ese espacio, que es el plussing de Pixar. Los programas con nombre propio (el 20 por ciento de Google, el Blue Sky de Scott Forstall, las semanas de hackeo de Twitter y Dropbox) quedan FUERA de los pasos a proposito: son ejemplos de que empresas distintas han probado formas distintas de dar ese tiempo, y convertirlos en pasos seria encargar un programa que el libro no encarga. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 14 pasos, 14 TRANSCRIPCION, 0 PUENTE. P1, P2 y P3 de la linea 185; P4 y P5 de la 177; P6 de la 179; P7 de la 187; P8, P9, P10 y P11 de la 193; P12, P13 y P14 de la 195. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto tiempo se le da a una idea para madurar, quien decide que ya esta lista para el debate, y que se hace con la idea que nunca madura.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [
+    {
+      "cifra": "las ideas empiezan como pensamientos fragiles, apenas formados, tan faciles de perder, de comprometer y de aplastar",
+      "autor": "Jony Ive sobre Steve Jobs, en el acto de homenaje de Apple por Jobs, citado por Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta fecha exacta en el texto: el libro lo situa en el acto de homenaje de Apple por Steve Jobs, que el recorte no data, asi que la atribucion queda sin fecha de corte y se dice"
+    }
+  ]
+}

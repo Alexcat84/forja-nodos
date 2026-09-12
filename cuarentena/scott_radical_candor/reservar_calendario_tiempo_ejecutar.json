@@ -1,0 +1,35 @@
+{
+  "id": "reservar_calendario_tiempo_ejecutar",
+  "titulo": "Reservar en el calendario el tiempo de ejecutar, que es solitario y por eso nunca se apunta",
+  "denominaciones": {
+    "nombre_largo": "Bloquea tiempo para ejecutar: la tercera de las tres cosas del equilibrio, y el motivo por el que el calendario solo recoge lo colaborativo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "block time to execute"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando las tareas colaborativas se estan comiendo tu calendario o el de tu equipo y no queda hueco para ejecutar el plan que ya se decidio y se acepto.",
+  "entregable_esperado": "Tiempo de ejecucion bloqueado en el calendario, tuyo y de tu equipo, con hueco real para el plan decidido.",
+  "pasos_accionables": [
+    "Cuenta con que ejecutar suele ser una tarea solitaria.",
+    "Cuenta con el sesgo que el texto nombra: usamos el calendario sobre todo para las tareas colaborativas, para convocar reuniones y cosas asi, y por eso lo que se hace a solas no aparece en el.",
+    "Asume como uno de tus trabajos de jefe asegurarte de que las tareas colaborativas no se coman tanto tiempo tuyo ni de tu equipo que no quede tiempo para ejecutar.",
+    "Bloquea ese tiempo para el plan que ya se decidio y se acepto."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 385 a 387, bajo el rotulo Block time to execute, y es la TERCERA de las tres partes que la linea 373 enumera dentro del paso EXECUTE de la rueda de hacer cosas. Su madre es minimizar_impuesto_colaboracion_equipo, que la nombra en su paso 4, y la arista va bajo D.37. ES LA PIEZA MAS DELGADA DE TODO EL CAPITULO Y LO DIGO ANTES QUE NADIE: cuatro pasos de un solo parrafo de tres frases. La escribo igual porque el libro la cuenta como una de las tres, con su rotulo propio, y porque tiene su causa nombrada (el calendario solo recoge lo colaborativo) y su acto (bloquear el tiempo). D.30 avisa de que un parrafo pobre no produce un nodo pobre sino un nodo inventado, asi que aqui hice lo contrario de completar: me quede en los cuatro actos que las tres frases dicen, y el nodo se queda corto a proposito. LO QUE HABRIA SIDO PUENTE Y NO ESCRIBI: cuanto tiempo se bloquea, con que frecuencia, y si se bloquea tambien el de cada persona del equipo. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 4 pasos, 4 TRANSCRIPCION, 0 PUENTE. Los cuatro de la linea 387.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

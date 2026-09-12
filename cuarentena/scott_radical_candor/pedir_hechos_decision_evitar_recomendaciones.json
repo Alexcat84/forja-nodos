@@ -1,0 +1,36 @@
+{
+  "id": "pedir_hechos_decision_evitar_recomendaciones",
+  "titulo": "Pedir hechos y no recomendaciones cuando reunes informacion para una decision",
+  "denominaciones": {
+    "nombre_largo": "El que decide tiene que recibir hechos, no recomendaciones, porque la gente mete su ego en una recomendacion de una manera que lleva a la politica",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "the decider should get facts, not recommendations"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando estas reuniendo informacion para tomar una decision y te sale solo preguntar a la gente que cree que deberiais hacer.",
+  "entregable_esperado": "La informacion de la decision reunida en forma de hechos, sin recomendaciones que nadie tenga despues que defender como suyas.",
+  "pasos_accionables": [
+    "Resiste la tentacion de pedir recomendaciones, que es la forma en que sale sola la pregunta: tu que crees que deberiamos hacer.",
+    "Pide en su lugar hechos, no recomendaciones, que es lo que una directiva de Apple le recomendo a la autora.",
+    "Cuenta con el motivo que esa directiva puso: la gente tiende a meter su ego en una recomendacion de una manera que puede llevar a la politica, y con ella a peores decisiones.",
+    "Cuenta tambien con el limite que el propio texto le pone: los hechos vienen teñidos del punto de vista particular de cada uno.",
+    "Pidelos igual, porque un hecho tiene menos probabilidad que una recomendacion de convertirse en una raya en el suelo."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 291 a 293, bajo el rotulo The decider should get facts, not recommendations, dentro del paso DECIDE de la rueda de hacer cosas. Es una pieza corta, de cinco pasos salidos de un parrafo, y la dejo como nodo propio porque el libro le da rotulo y porque trae lo que un procedimiento necesita: el acto que se evita, el que se hace en su lugar, el motivo escrito, el limite del propio metodo y la razon de aplicarlo aun asi. EL P4 ES EL QUE MAS ME IMPORTA de toda la pieza, porque el libro se pone a si mismo la objecion (los hechos tambien vienen teñidos) y la contesta sin retirar el consejo; dejarlo fuera habria dado un nodo mas limpio y menos fiel. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 5 pasos, 5 TRANSCRIPCION, 0 PUENTE. Los cinco de la linea 293. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se le pide un hecho a alguien que solo quiere darte su recomendacion, y que se hace con la recomendacion que llega sin haberla pedido.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

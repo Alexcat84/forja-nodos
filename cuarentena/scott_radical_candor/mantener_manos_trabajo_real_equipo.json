@@ -1,0 +1,39 @@
+{
+  "id": "mantener_manos_trabajo_real_equipo",
+  "titulo": "Mantener las manos en el trabajo real de tu equipo, ejecutando tu tambien y no solo mirando ejecutar a otros",
+  "denominaciones": {
+    "nombre_largo": "Conserva la tierra bajo tus uñas: la segunda de las tres cosas del equilibrio, con sus tres ejemplares de oficio",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "keep the dirt under your fingernails"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando el puesto de jefe te esta alejando del trabajo que tu equipo hace de verdad y ya solo miras ejecutar a otros.",
+  "entregable_esperado": "Trabajo de tu especialidad ejecutado por ti mismo y no solo observado, sin haber abandonado por ello las tareas de jefe.",
+  "pasos_accionables": [
+    "Cuenta con que el impuesto de colaboracion recae sobre ti, pero no al cien por cien.",
+    "Mantente conectado al trabajo que se esta haciendo de verdad, no solo mirando ejecutar a otros sino ejecutando tu.",
+    "Aplicalo a tu oficio concreto: si te haces director de orquesta, sigue tocando tu instrumento; si te haces jefe de ventas, sigue yendo tu a visitar clientes; si diriges un equipo de fontaneros, arregla algun grifo.",
+    "No dejes por eso de dedicar tiempo a escuchar en las reuniones a solas ni a dirigir los debates.",
+    "Aprende a alternar entre dirigir y ejecutar tu mismo.",
+    "No abandones lo primero por lo segundo: integra las dos cosas.",
+    "Cuenta con lo que se pierde si te alejas demasiado del trabajo de tu equipo: no vas a entender sus ideas lo bastante bien para ayudarles a clarificarlas, ni para participar en los debates, ni para saber que decisiones empujarles a tomar, ni para enseñarles a ser mas persuasivos.",
+    "Cuenta con la consecuencia que el texto pone al final: la rueda entera se para si no entiendes a fondo la cosa que tu equipo esta intentando hacer."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 381 a 383, bajo el rotulo Keep the dirt under your fingernails, y es la SEGUNDA de las tres partes que la linea 373 enumera dentro del paso EXECUTE de la rueda de hacer cosas. Su madre es minimizar_impuesto_colaboracion_equipo, que la nombra en su paso 4, y la arista va bajo D.37. El P3 transcribe los tres ejemplares de oficio que el libro pone uno a uno (el director de orquesta, el jefe de ventas y el equipo de fontaneros) y no aniade ninguno, que es donde estaba la tentacion. El P7 es el inventario mas rico de la pieza porque enumera las cuatro cosas que se pierden, y las cuatro son los pasos de la propia rueda, lo que ata esta parte al resto del capitulo sin que yo tenga que atarla. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE. Los ocho de la linea 383. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto tiempo se reserva para ejecutar uno mismo, que parte del trabajo se elige, y como se alterna sin que una cosa se coma a la otra.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

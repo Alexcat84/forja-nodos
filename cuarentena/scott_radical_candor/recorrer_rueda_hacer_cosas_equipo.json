@@ -1,0 +1,50 @@
+{
+  "id": "recorrer_rueda_hacer_cosas_equipo",
+  "titulo": "Recorrer la rueda de hacer cosas con tu equipo, sin saltarte un paso y sin atascarte en uno",
+  "denominaciones": {
+    "nombre_largo": "El arte de hacer que las cosas se hagan sin decirle a la gente lo que tiene que hacer: escuchar, clarificar, debatir, decidir, persuadir, ejecutar y aprender",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "the Get Stuff Done (GSD) wheel"
+      }
+    ],
+    "sigla": "GSD"
+  },
+  "condiciones_activacion": "Cuando tu equipo tiene que decidir que hacer y quieres resultados que ninguno de vosotros alcanzaria por separado, y notas el impulso de tirarte de cabeza a ejecutar.",
+  "entregable_esperado": "Una vuelta entera de la rueda dada deprisa y sin saltarse ningun paso, con la decision ejecutada por gente que entiende por que se tomo, y el aprendizaje de sus resultados metido en la vuelta siguiente.",
+  "pasos_accionables": [
+    "Resiste el impulso de tirarte de cabeza a ejecutar, que es el error que el propio texto cuenta como suyo al principio del capitulo. Pon primero los cimientos de la colaboracion.",
+    "Escucha las ideas que tiene la gente de tu equipo, y crea una cultura en la que se escuchen entre ellos.",
+    "Crea despues el espacio donde esas ideas se afilen y se clarifiquen, para que no las aplasten antes de que nadie entienda del todo para que pueden servir.",
+    "Cuenta con que una idea facil de entender no es por eso una buena idea: debate las ideas y sometelas a una prueba mas dura.",
+    "Decide entonces, deprisa pero no demasiado deprisa.",
+    "Persuade despues a los que no estuvieron en el tramo de escuchar, clarificar, debatir y decidir, porque no todo el mundo participa en cada idea y aun asi tienen que ejecutarla.",
+    "Ejecuta.",
+    "Aprende de los resultados, hayas acertado o no, y vuelve a empezar el proceso entero.",
+    "Recorrela deprisa: el texto dice que son muchos pasos y que estan pensados para darles vueltas rapido.",
+    "No te saltes ningun paso. El texto dice que si te lo saltas acabaras perdiendo tiempo.",
+    "No te atasques en ninguno. El texto dice que las dos cosas importan igual, y que si dejas que una parte se alargue, trabajar en tu equipo se va a sentir como pagar un impuesto de colaboracion en vez de como hacer una inversion en colaboracion.",
+    "Aplicalo aunque tu jefe se salte pasos y te diga lo que tienes que hacer: el texto dice que puedes ponerlo en practica con la gente que depende de ti aunque el no siga este metodo."
+  ],
+  "resumen_teorico": "Es la cabeza del capitulo 4 y sale de fuentes/scott_radical_candor/cap_07.md, lineas 65 a 77, bajo el rotulo The art of getting stuff done without telling people what to do. El libro llama a este proceso la rueda de hacer cosas, y la linea 73 nombra sus siete trabajos uno a uno y en el orden en que se dan. Lo que lo convierte en procedimiento y no en esquema es que el texto pone ademas la regla de entrada (no tirarse de cabeza, poner primero los cimientos) y las dos prohibiciones de uso (no saltarse un paso y no atascarse en uno), con la consecuencia escrita de cada una. ESTO NO ES UNA SERIE D.37 Y LO DIGO ANTES DE QUE SE CUENTE MAL: el texto enumera los siete trabajos pero NO dice cuantos son, y la linea 75 escribe literalmente that is a lot of steps. La correccion del titular del 11 sep 2026 dice que la cuenta es condicion y no adorno, asi que las aristas de esta cabeza a sus partes van bajo D.29 con razon escrita, no bajo D.37. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 12 pasos, 12 TRANSCRIPCION, 0 PUENTE. P1 de la linea 71; P2 a P8 de la linea 73, uno por cada trabajo que el texto nombra; P9, P10 y P11 de la linea 75; P12 de la linea 77. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto dura una vuelta de la rueda, quien convoca cada paso, y que se hace cuando dos pasos piden a la vez a la misma persona.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [
+    {
+      "cifra": "Steve siempre lo acaba acertando, porque insiste, y no con suavidad, en que le digan cuando se equivoca",
+      "autor": "Andy Grove, antiguo consejero delegado de Intel, citado por Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta fecha en el texto: el libro lo cuenta como una conversacion suya en una heladeria de Los Altos, sin datarla, asi que la atribucion queda sin fecha de corte y se dice"
+    }
+  ]
+}

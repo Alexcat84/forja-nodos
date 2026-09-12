@@ -1,0 +1,40 @@
+{
+  "id": "proteger_tiempo_equipo_jefe",
+  "titulo": "No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba",
+  "denominaciones": {
+    "nombre_largo": "No malgastes el tiempo de tu equipo: la primera de las tres cosas del equilibrio, con el retrato de como lo hacia Sheryl Sandberg",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "don't waste your team's time"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando quieres que tu equipo tenga el maximo de tiempo posible para ejecutar y eres tu quien decide en que se les va ese tiempo.",
+  "entregable_esperado": "El tiempo de tu equipo despejado: obstaculos quitados, reuniones y analisis innecesarios fuera, horarios respetados, debates con un decisor y una fecha, y los mandatos que no valen nada parados antes de llegarles.",
+  "pasos_accionables": [
+    "Pideles que vengan a las reuniones a solas con una lista de problemas que tu puedas ayudarles a resolver.",
+    "Escucha, asegurate de haberlo entendido, y desactiva las situaciones que podrian estallarles en la cara.",
+    "Quita de en medio los obstaculos que parecen insalvables.",
+    "No convoques reuniones innecesarias ni pidas analisis innecesarios.",
+    "No llegues tarde a una reunion con nadie de tu equipo, y no toleres que nadie llegue tarde a las tuyas.",
+    "Hazles debatir como equipo, pero justo antes de que el debate empiece a hacerse pesado, identifica a un decisor y pidele que vuelva con una decision para una fecha concreta.",
+    "Enseña a los de tu equipo a ser mas persuasivos.",
+    "Cuando baje desde arriba un mandato ridiculo que solo hace perder tiempo, busca la manera de protegerles de el.",
+    "Y cuando lleguen los resultados, no los dejes pasar: haz que el equipo aprenda de lo que hizo, haya salido bien o haya salido mal."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 375 a 379, bajo el rotulo Don not waste your team time, y es la PRIMERA de las tres partes que la linea 373 enumera dentro del paso EXECUTE de la rueda de hacer cosas. Su madre es minimizar_impuesto_colaboracion_equipo, que la nombra en su paso 4, y la arista va bajo D.37 porque el texto dice cuantas partes hay y las nombra. LA PIEZA ES UN RETRATO Y ESA ES SU DIFICULTAD: el libro no escribe una lista de imperativos, escribe lo que Sheryl Sandberg hacia. Transcribir un retrato en imperativos es legitimo cuando cada acto esta nombrado uno a uno por el texto, que es el caso, y seria un puente si yo generalizara de ahi una regla que el texto no pone. Por eso los nueve pasos son los nueve actos que el parrafo nombra, ni uno mas. Sheryl no va nombrada dentro de los pasos porque los pasos son para el lector, no para ella, y su nombre esta en el resumen y en la cita del propio libro. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. Los nueve de la linea 377. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se distingue una reunion necesaria de una innecesaria, y como se para un mandato que viene de arriba.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

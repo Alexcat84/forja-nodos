@@ -1,0 +1,55 @@
+{
+  "id": "crear_cultura_escucha_equipo",
+  "titulo": "Crear una cultura en la que tu equipo se escuche entre si, con un sistema simple de ideas y quejas que alguien atiende y explica",
+  "denominaciones": {
+    "nombre_largo": "Crear una cultura de escucha: las tres claves del sistema, el equipo de ideas que lo sostiene, y las tres cosas que hay que decir cuando una idea funciona",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "create a culture of listening"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando ya escuchas tu a tu equipo y ellos lo saben, y ahora te toca lo mas dificil, que es conseguir que se escuchen entre ellos.",
+  "entregable_esperado": "Un sistema simple por el que cualquiera propone una idea o una queja, unas cuantas atendidas deprisa, y una explicacion dada con regularidad de por que las demas no se atienden, con el tiempo que tu puedes dedicarle acotado por escrito.",
+  "pasos_accionables": [
+    "Monta un sistema simple que tu gente pueda usar para generar ideas y dar voz a sus quejas, que es la primera de las tres claves que el texto nombra.",
+    "Asegurate de que al menos algunas de las cuestiones que se levanten se atiendan deprisa, que es la segunda.",
+    "Ofrece con regularidad explicaciones de por que las demas no se estan atendiendo, que es la tercera.",
+    "Haz que el sistema no solo permita a cualquiera señalar lo que podria ir mejor, sino que ademas permita a otros ayudar a arreglar esas cosas o a cambiarlas.",
+    "Acepta dejar que te pidan ayuda a ti.",
+    "Defiende el sistema con entusiasmo.",
+    "Define unos limites claros de cuanto tiempo puedes dedicarle tu, y despues asegurate de que ese tiempo sea de mucho impacto.",
+    "Si las ideas te desbordan, organiza un equipo de ideas que las considere, como hizo la autora en Google.",
+    "Haz que ese equipo se comprometa a escuchar cualquier idea que cualquiera les traiga, a explicar con claridad por que rechazan las que rechazan, y a ayudar a poner en practica las que consideren que valen la pena.",
+    "Dales potestad para negociar con el jefe de quien propuso una idea especialmente prometedora, para que le liberen tiempo de su puesto y pueda ponerla en marcha.",
+    "Pide al equipo de ideas que lea todas las ideas y hable con todos los que las mandaron. El texto dice que un voto no siempre es la mejor manera de identificar las mejores ideas ni de asegurarse de que la gente se escucha, y que a partir de ahi el equipo uso una combinacion de votos y criterio.",
+    "Cuando alguien presente su idea, no te quedes en darle las gracias: enseña ademas el efecto que va a tener, que es lo que hizo la autora con el grafico de eficiencia de la idea de los teclados programables de Sarah Teng.",
+    "Habla de lo que a la gente le importa y no solo de lo que a ti te importa: la autora insistio en que esa idea haria los puestos mas divertidos y ayudaria a la gente a crecer, porque la eficiencia no era lo que mas les importaba.",
+    "Da contexto de por que la idea es grande, para que se vea el efecto acumulado y no solo el suyo.",
+    "Y usalo para empujar a que se escuchen entre ellos, se tomen en serio las ideas de los demas y se ayuden a ponerlas en practica sin esperar la bendicion de la direccion.",
+    "En las reuniones, cuando solo un par de personas esten hablando, para y da la vuelta a la mesa para asegurarte de que se oye a todo el mundo.",
+    "Habla en corto con la gente antes de una reunion, pidiendo a unos que suban la voz y a otros que la bajen."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 131 a 153, bajo el rotulo Create a culture of listening, dentro del paso LISTEN de la rueda de hacer cosas. Es la pieza mas literalmente procedimentable de la seccion y el motivo esta escrito en el propio fichero: la linea 133 pone un inventario NUMERADO POR EL LIBRO, con sus 1), 2) y 3), que es el caso mas facil de la prueba del inventario de D.27. El resto de la pieza aniade el equipo de ideas con sus compromisos, la forma de celebrar una idea que funciono, y el manejo de la reunion. El caso de Sarah Teng y los teclados programables va NOMBRADO DENTRO de los pasos que lo usan, que es la condicion de TRANSCRIPCION DE CASO, y su cifra de eficiencia va en atribuciones, que es su sede. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 17 pasos, 17 TRANSCRIPCION, 0 PUENTE. P1, P2, P3, P4, P5, P6 y P7 de la linea 133; P8 de la 135; P9 y P10 de la 137; P11 de la 139; P12, P13 y P14 de la 145; P15 de la 147; P16 y P17 de la 153. EL PASO QUE MAS MIRE ES EL P7, porque un limite de tiempo es justo la especie de puente del PERIODO que esta casa paga cara; lo dejo porque el texto lo escribe el mismo en la linea 133 (define clear boundaries of how much time you can spend) y porque NO escribe cuanto, que es lo que yo habria tenido que inventar y no invente. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuantas personas lleva el equipo de ideas, cada cuanto se reune, cuanto tiempo es el limite, y que pasa con una idea que el equipo rechaza y su autor sigue defendiendo.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [
+    {
+      "cifra": "133 por ciento de aumento de eficiencia del equipo global, con la idea de los teclados programables",
+      "autor": "Sarah Teng, del equipo de AdSense en Google, segun el relato de Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta fecha en el texto: el libro la situa en su etapa de Google sin datar la medicion, y no dice contra que linea de partida se midio, asi que la cifra queda sin banda y sin fecha de corte y se dice"
+    }
+  ]
+}

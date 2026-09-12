@@ -1,0 +1,53 @@
+{
+  "id": "repartir_decision_cercanos_hechos",
+  "titulo": "Repartir las decisiones entre los mas cercanos a los hechos en vez de tomarlas tu por ser el jefe",
+  "denominaciones": {
+    "nombre_largo": "Tu no eres el que decide, casi nunca: crear un proceso claro de decision que da poder a los que estan mas cerca de los hechos",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "you are not the decider (usually)"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "garbage can decision-making"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando en tu equipo las decisiones las estas tomando tu, o las toma el mas veterano de la sala, y no quien tiene delante los hechos.",
+  "entregable_esperado": "Un proceso de decision claro en el que deciden los que estan mas cerca de los hechos, con las decisiones apoyadas en hechos y con gente dispuesta a ejecutarlas porque participo en ellas.",
+  "pasos_accionables": [
+    "Mete las decisiones en los hechos, o trae los hechos a las decisiones, y deja el ego fuera, empezando por el tuyo.",
+    "No des por hecho que ser jefe te convierte en el que decide. El texto lo dice con el ejemplo de George W. Bush, que dijo yo soy el que decide y parecia ser el unico que no sabia que no lo era.",
+    "Cuenta con la averia que James March llama decidir a bote de basura: deciden los que por casualidad estan alrededor de la mesa, en vez de los que tienen la mejor informacion.",
+    "Cuenta con que la mayoria de las culturas tienden a favorecer o a los mas veteranos o a los que tienen la clase de caracter que insiste en sentarse a la mesa, y que las malas decisiones que salen de ahi estan entre las mayores causas de mediocridad de una organizacion y de insatisfaccion de su gente.",
+    "En vez de decidir tu, crea un proceso de decision claro que de poder a los que estan mas cerca de los hechos para tomar tantas decisiones como sea posible.",
+    "Cuenta con lo que el texto dice que se gana con eso: no solo mejores decisiones, tambien mejor animo.",
+    "Si sospechas que alguien de tu equipo esta decidiendo por todos, ve a su reunion y mira a la sala, no al que habla. La autora vio hombros caidos, brazos cruzados, caras de piedra y un silencio tan alto que atravesaba el discurso bien preparado de Mark.",
+    "Cuando veas eso, haz la pregunta a la sala que abre la conversacion. La autora pregunto: si Mark no hubiera decidido estos objetivos, que habriais planeado hacer vosotros el trimestre que viene.",
+    "Da la vuelta a la mesa hasta oir a todo el mundo, y convoca de nuevo al dia siguiente.",
+    "Comprueba las tres cosas que el texto pone como el diagnostico de ese caso: si las decisiones estan apoyadas en los hechos, si alguien va a ejecutarlas aunque fueran las correctas, y si el jefe esta en peligro de perder a su equipo.",
+    "Cuenta con que saltarse escuchar, clarificar, debatir y decidir para ir directo a persuadir es un error corriente que no se limita a los jefes nuevos."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 259 a 289, bajo los rotulos DECIDE y You are not the decider (usually), dentro del paso DECIDE de la rueda de hacer cosas. El P1 viene de la linea 261, que es el rotulo que el libro pone a la seccion entera de decidir y que ninguna otra pieza recoge. El caso de Mark y sus objetivos trimestrales va NOMBRADO DENTRO de los pasos que lo usan, que es la condicion de TRANSCRIPCION DE CASO, y lo que lo hace procedimentable en vez de anecdota es que el texto escribe la pregunta literal que la autora hizo a la sala y el diagnostico numerado de tres puntos que saco de ahi. La atribucion de James March va en su sede. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 11 pasos, 11 TRANSCRIPCION, 0 PUENTE. P1 de la linea 261; P2 de la 285; P3 y P4 de la 287; P5 y P6 de la 289; P7 de la 275; P8 de la 279; P9 de la 283; P10 de la 283 tambien; P11 de la 285. EL PASO QUE MAS MIRE ES EL P9, porque convoca de nuevo al dia siguiente y una convocatoria es la especie de puente del PERIODO; lo dejo porque la linea 283 lo escribe ella misma (then we could regroup the following day) y porque es lo que la autora hizo, nombrado como suyo. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como es ese proceso de decision claro, quien lo escribe, y como se decide quien esta mas cerca de los hechos cuando hay varios.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [
+    {
+      "cifra": "decidir a bote de basura: deciden los que por casualidad estan alrededor de la mesa en vez de los que tienen la mejor informacion",
+      "autor": "James March, en su libro A Primer on Decision Making, citado por Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta fecha en el texto: el libro nombra la obra y a su autor sin dar el anio, asi que la atribucion queda sin fecha de corte y se dice"
+    }
+  ]
+}
