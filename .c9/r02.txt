@@ -1,7 +1,0 @@
-umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
-  ENTRARIAN sin leer nada          : 1
-  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
-  CAERIAN por una guarda           : 0
-[ENTRARIA] dar_guia_humilde_tres_tecnicas   (dar_guia_humilde_tres_tecnicas.json)
-veredicto escrito por vecino.
-FIN

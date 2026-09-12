@@ -1,3 +1,5 @@
+# SALIDAS LITERALES DE python forja.py informe, VUELTA 19
+# TAREA 2.b, los 24 candidatos de bandeja tocados (3 corridos aparte, 21 en tanda):
 cambiar_potencial_trayectoria_crecimiento        [BLOQUEARIA] cambiar_potencial_trayectoria_crecimiento   (cambiar_potencial_trayectoria_crecimiento.json)
 criticar_trabajo_evitar_desanimo                 [ENTRARIA] criticar_trabajo_evitar_desanimo   (criticar_trabajo_evitar_desanimo.json)
 cuidar_persona_completa_equipo                   [BLOQUEARIA] cuidar_persona_completa_equipo   (cuidar_persona_completa_equipo.json)
@@ -20,3 +22,19 @@ retirar_etiquetas_permanentes_equipo             [ENTRARIA] retirar_etiquetas_pe
 revisar_ciclo_responsabilidades_relaciones       [ENTRARIA] revisar_ciclo_responsabilidades_relaciones   (revisar_ciclo_responsabilidades_relaciones.json)
 revisar_cinco_causas_mal_desempenio              [ENTRARIA] revisar_cinco_causas_mal_desempenio   (revisar_cinco_causas_mal_desempenio.json)
 === FIN ADUANA T2b ===
+
+# TAREA 3, los 15 candidatos nuevos de cap_09:
+[ENTRARIA] dar_guia_humilde_tres_tecnicas   (dar_guia_humilde_tres_tecnicas.json)
+[ENTRARIA] dar_guia_util_cuatro_recordatorios   (dar_guia_util_cuatro_recordatorios.json)
+[ENTRARIA] dar_guia_acto_cinco_consejos   (dar_guia_acto_cinco_consejos.json)
+[ENTRARIA] elegir_medio_dar_guia_jerarquia_modos   (elegir_medio_dar_guia_jerarquia_modos.json)
+[ENTRARIA] elogiar_publico_criticar_privado_sus_tres_matices   (elogiar_publico_criticar_privado_sus_tres_matices.json)
+[ENTRARIA] evitar_personalizar_guia_aceptar_personal   (evitar_personalizar_guia_aceptar_personal.json)
+[ENTRARIA] medir_guia_propia_pegatinas_marco   (medir_guia_propia_pegatinas_marco.json)
+[ENTRARIA] practicar_franqueza_radical_jefe_propio   (practicar_franqueza_radical_jefe_propio.json)
+[ENTRARIA] organizar_sistema_recoger_quejas_equipo   (organizar_sistema_recoger_quejas_equipo.json)
+[ENTRARIA] correr_semana_arreglo_averias_gestion   (correr_semana_arreglo_averias_gestion.json)
+[ENTRARIA] comprobar_criticas_hombre_mujeres_equipo   (comprobar_criticas_hombre_mujeres_equipo.json)
+[ENTRARIA] exigir_critica_jefe_reticente   (exigir_critica_jefe_reticente.json)
+[ENTRARIA] impedir_punialadas_espalda_equipo   (impedir_punialadas_espalda_equipo.json)
+[CAERIA] fomentar_guia_entre_pares_equipo   (fomentar_guia_entre_pares_equipo.json)
