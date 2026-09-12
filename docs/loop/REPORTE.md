@@ -18889,3 +18889,182 @@ cifra crece.
 | `SANO` sin sede posible hoy, con los dos ids vivos | **19** |
 | `SANO` que esperan con su candidato de un lote abierto | **11** |
 | **bloque de vigencia** sobre los 147 | **VERDE**, *todos siguen emitidos contra el texto que leyeron* |
+
+---
+
+# J.7. EL CIERRE DE LA VUELTA 15
+
+## J.7.1. LAS CUATRO TAREAS, Y SU ESTADO FINAL
+
+| # | tarea | estado | resultado |
+|---:|---|---|---|
+| **0** | los cinco pasos que faltan | **CERRADA** en el commit `3c6fd7f`, antes del corte | dos podas con motivo escrito (`6ee153f` menos 4, `5efd637` menos 1). Nada que restaurar. **No se repitio** |
+| **1** | insertar el lote 3, `zhuo_manager` | **CERRADA** | **17 de 17 en este turno, 68 de 68 en la vuelta, y el lote 3 entero dentro: 203 nodos, la cifra publicada antes de insertar.** Un solo bloqueo, leido y razonado. **14 aristas esperadas y 14 escritas** |
+| **2** | la bitacora al dia | **CERRADA** | 132 al abrir, **15 escritos**, 147 al cerrar. **Cero `CONTINUA` fuera de su sede.** **19 `SANO` sin sede, contados y traidos** |
+| **3** | el lote 4, `cap_04` a `cap_07` | **CERRADA EN PARTE, Y SE DICE CON SU CIFRA** | **`cap_04` cerrado entero: 6 candidatos, 47 pasos, frontera antes de cortar, relectura de fidelidad dentro del acto.** `cap_05`, `cap_06` y `cap_07` **no se abrieron**, y la medida que lo decide esta en `J.5.0` |
+
+**CUATRO TAREAS Y EL TOPE SON CINCO** (`EXTRACTOR.md` 1.3): **no hay cola por tope.** La
+unica cola es la de la TAREA 3, y es de volumen, no de encargo.
+
+## J.7.2. LAS CIFRAS DEL CIERRE, **RECOMPUTADAS AL CIERRE** (`EXTRACTOR.md` 4)
+
+    $ wc -l < dataset/nodos.jsonl            ->  203
+    $ wc -l < bitacora/VEREDICTOS.jsonl      ->  147
+    $ wc -l < config/pares_mutuos.jsonl      ->    1
+    $ python -c "cuenta ficheros y pasos_accionables por carpeta"
+    cuarentena/zhuo_manager                          0 ficheros,     0 pasos
+    cuarentena/_insertados/zhuo_manager            136 ficheros,  1107 pasos
+    cuarentena/scott_radical_candor                  8 ficheros,    63 pasos
+    $ python -c "suma nodos_siguientes de los 203"   ->  78 aristas madre a hijo
+
+| | al abrir (`J.3.d.1`) | **al cerrar** | delta |
+|---|---:|---:|---:|
+| nodos en el grafo | 186 | **203** | **mas 17** |
+| veredictos en la bitacora | 132 | **147** | **mas 15** |
+| aristas madre a hijo | 64 | **78** | **mas 14** |
+| pares mutuos | 1 | **1** | 0 |
+| bandeja `zhuo_manager` | 17 | **0** | **menos 17** |
+| archivados `zhuo_manager` | 119 | **136** | **mas 17** |
+| bandeja `scott_radical_candor` | 2 | **8** | **mas 6** |
+
+> ### **UNA COINCIDENCIA QUE NO ES COINCIDENCIA, Y CIERRA LA TAREA 0 DESDE EL OTRO LADO**
+>
+> **`cuarentena/_insertados/zhuo_manager` mide hoy 136 ficheros y 1.107 pasos.** Ese **1.107**
+> es **exactamente la cifra que la TAREA 0 reconcilio** contra los 1.112 firmados por las
+> actas 9 a 13, y que resulto ser 1.112 menos las dos podas con motivo escrito.
+>
+> **Al abrir, los 1.107 estaban partidos en dos mitades** (554 en la bandeja y 553
+> archivados, `J.0`). **Al cerrar estan los 1.107 en una sola carpeta**, porque la bandeja
+> quedo vacia. **La suma cuadra al paso**, y es una comprobacion independiente de que la
+> insercion no perdio ni anadio nada.
+
+## J.7.3. LAS GUARDAS, LAS CINCO EN VERDE SOBRE EL ESTADO FINAL
+
+    $ python forja.py gate               ->  GATE VERDE. nodos verificados: 203
+    $ python forja.py guiones            ->  BARRIDO DE GUIONES VERDE
+    $ python tests/test_aceptacion.py    ->  total: 75 pruebas, 0 fallos, 0 errores
+    $ python forja.py rancios            ->  BLOQUE DE VIGENCIA VERDE. veredictos comprobados: 147
+    $ python forja.py resolutor          ->  nodos vivos: 203, deprecados: 0, alias: 0
+
+**Y EL HOOK CORRIO EN TODOS LOS COMMITS DE ESTE TURNO, sin saltarse ni uno**
+(`EXTRACTOR.md` 6). El de vigencia importa mas que de costumbre hoy: **147 veredictos
+comprobados y todos siguen emitidos contra el texto que leyeron**, lo que incluye los 14 que
+se escribieron esta tarde sobre nodos que llevaban vueltas en el grafo.
+
+## J.7.4. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| # | discutible | donde | por que dudo |
+|---:|---|---|---|
+| **1** | la discrepancia del informe del lote 3: el acta dice *los 68 `[ENTRARIA]`* y tres corridas del instrumento dan **59 y 9** | `J.3.b` | lo marco el turno anterior y **lo sostengo**: mis caidas son cero, que es la mitad de `D.39` que decide |
+| **2** | **no reescribo** el veredicto que el encargo da por inexistente | `J.3.d.3` | el encargo dice *ese veredicto no existe y hay que leerlo*. **Existe, en la linea 132, y lo pego.** Si el auditor lee que debia reescribirlo igual, este es el fallo |
+| **3** | `revisar_ciclo_responsabilidades_relaciones` **es un nodo** | `J.5.1`, pieza 3 | las tres responsabilidades son **los titulos de los tres capitulos siguientes**. Si el auditor lee que aqui solo hay nombres, **este es el nodo que cae** |
+| **4** | la marca **`TRANSCRIPCION DE CASO`**, que **me invento yo** para tres pasos | `J.5.4` | `D.30` no la tiene. El medio es del libro palabra por palabra y **el modo verbal es mio**, y convertir narracion en orden es donde un puente se esconde mejor |
+| **5** | `cuidar_persona_completa_equipo` contra `respetar_cuidar_persona_cargo` es **`SANO`** | `J.5.6` | **dos solapes reales de dos libros distintos**, y los digo por su nombre. Si el auditor lee `REPITE`, cae mi candidato |
+| **6** | `comunicar_valores_diez_formas` sigue siendo **`CONTINUA`** y hoy se cablea | arista 12 de `J.4.d` | **los dos listan cuatro vias y dos coinciden**, el correo y la reunion a solas. Lo marco por tercera vuelta seguida |
+| **7** | `decidir_directivo_no_encaja_papel` es **`CONTINUA`** y hoy se cablea | arista 10 de `J.4.d` | de *alguien* a *un directivo* hay **un salto de sujeto y no de procedimiento**. Si son hermanos, esta arista sobra |
+| **8** | **una sola arista** desde `fijar_proceso_trabajo_equipo` paso 7, y no ocho | arista 14 de `J.4.d` | *una linea que nombra un trabajo apunta a su puerta de entrada, no a cada habitacion*. Si alguien lee que las ocho cuelgan de ahi, aqui esta dicho |
+| **9** | las **cinco reuniones** van bajo `D.29` y no `D.37` | `J.4.d` | el paso 4 dice *un punado de razones*. **Un punado no es una cuenta**, y por eso llevan razon escrita. Si *un punado* cuenta como cuenta, son `D.37` |
+| **10** | el titulo de `delimitar_franqueza_radical_cinco_noes` **dice cinco y el libro no lo dice** | `J.5.4` | la cuenta sale de contar parrafos, no del texto. **Queda escrito en el propio `resumen_teorico`**, pero el numero esta en el id y el id no se explica solo |
+
+## J.7.5. LO QUE PROPONGO EN MI SEDE, **SIN ADJUDICARME NADA** (`EXTRACTOR.md` 14)
+
+**1. UNA SEDE PARA EL `SANO` SIN VECINO, y traigo la cifra que Alexis pidio: 19.** Y traigo
+tambien **el argumento que no me pidio**, que es el unico que creo que decide: **`CONTINUA`
+tiene sede porque produce una arista; `SANO` no produce nada y por eso no la tiene.** Una
+casa que solo guarda los veredictos que anadieron algo **pierde entero el trabajo de
+descartar**, y ese es el que evita que el proximo lector relea el mismo par. **Los 19 son
+pares de nodos vivos: se pueden volver a leer manana y costarian lo mismo.**
+
+**2. EL VOLUMEN DEL LOTE 5 SE FIJE EN PALABRAS Y NO EN CAPITULOS.** La medida esta en
+`J.5.0`: el lote 3 sostuvo **14.008 palabras por vuelta** a lo largo de cinco vueltas, y los
+cuatro capitulos de hoy son **40.284**, que son **2,88 veces** ese ritmo. **Un capitulo de
+`zhuo_manager` medio 5.837 palabras; uno de estos cuatro mide 10.071.** La unidad atomica
+puede seguir siendo el capitulo sin que el volumen se cuente en capitulos.
+
+**3. UN EJEMPLAR MAS PARA `EXTRACTOR.md` 15.3, LA REGLA 3.** Las dos caidas de hoy fueron
+**`tras desafiar`** y **`hacia arriba`**, las dos **locuciones adverbiales**, no enlaces
+entre sustantivos. **Los ejemplares de `15.1` son todos de preposicion enlazante**, asi que
+la forma que me cazo dos veces en un capitulo **no tiene ejemplar en la lista.** Dos de seis
+es el 33 por ciento, con la regla delante.
+
+**4. QUE SE MIDA LA COLA FALSA DE LA SEÑAL 3 SOBRE LOS NODOS DE CASA.**
+`CALIBRACION_D4.md` la midio en **2,4 por candidato** sobre un catalogo de **3.169 nodos que
+este extractor no escribio**. Hoy la unica señal fuerte de todo el lote 4
+(`paso_contra_nodo` **0,615**) cayo sobre **el par menos relacionado de los tres**, y lo que
+se parecia era **mi plantilla**, la formula *que es el primero de los N que el libro nombra*,
+que es **la huella de `D.30` aplicada**. **No propongo mover el umbral**: un umbral se juzga
+contra su cola y **yo no tengo la medicion, tengo un caso.** Propongo la medicion, que se
+puede correr hoy sobre los 203.
+
+**5. UNA PREGUNTA QUE NO SE RESOLVER Y NO ADIVINO** (`EXTRACTOR.md` 7): **puede una arista
+madre e hijo cruzar la frontera de libro?** El caso concreto esta en `J.5.6`: el paso 2 de
+`gestionar_personas_equipo` (`zhuo_manager`) dice *desarrolla relaciones de confianza con
+ellos* **en una linea**, y `cap_04` de Scott es **un capitulo entero** que lo despliega. El
+manual pone la frontera de libro sobre **las fuentes de un nodo**, no sobre sus aristas, y
+**no encuentro la linea que lo resuelva.** No la escribo: **seria la primera arista entre dos
+libros de este grafo y eso no lo estreno yo.**
+
+## J.7.6. LO QUE **NO** HE HECHO, DECLARADO UNO A UNO
+
+1. **`cap_05`, `cap_06` y `cap_07` de `scott_radical_candor`: no abiertos.** 34.021 palabras,
+   el 84,5 por ciento del encargo de la TAREA 3. **Con su cifra y su motivo en `J.5.0`.**
+2. **Los 8 candidatos del lote 4 no se insertaron.** Es `D.39` cumpliendose, no una omision.
+3. **Los 3 veredictos de `J.5.6` no llegaron a la bitacora.** No pueden: su candidato es de
+   un lote abierto. **Estan leidos y escritos, y contados en el cuadre.**
+4. **No escribi `docs/loop/PARA_ALEXIS.md`** (`D.28`). **No hubo PARADA.**
+5. **No movi ningun umbral, ni el esquema, ni `D.27`, ni `D.37`, ni la vara de continua
+   contra repite.**
+6. **No fabrique arneses ni guardas** (`EXTRACTOR.md` 13). El unico fichero nuevo de
+   maquinaria es **`.cuadre_bitacora_vuelta15.py`**, que **la TAREA 2 ordena expresamente**
+   (*publica el cuadre*) y **no escribe en ninguna sede**.
+7. **No invente una sede para los `SANO` sin vecino**, que el encargo prohibe por su nombre.
+
+## J.7.7. EL SELLO DE LA VUELTA 15
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git log -1 --format='%H %ad' --date=iso
+    84bccb65e075d75c9bf4ba8ddbf47749c197e718 2026-09-11 22:58:52 -0400
+
+| | |
+|---|---|
+| **vuelta** | 15, **reanudada** tras un congelamiento de la maquina del fundador |
+| **rama** | `extraccion-mundo-11` |
+| **la vuelta que estrena `D.39`** | **y la estrena entera: el lote 3 esta dentro** |
+| **nodos** | **135 al abrir la vuelta, 186 al reanudar, 203 al cerrar** |
+| **lote 3, `zhuo_manager`** | **CERRADO Y DENTRO.** 136 candidatos, 1.107 pasos, 12 capitulos, cinco vueltas de extraccion y dos turnos de insercion |
+| **lote 4, `scott_radical_candor`** | **ABIERTO.** `cap_00` a `cap_04` minados, 8 candidatos en cuarentena, 63 pasos |
+| **veredictos** | 132 al reanudar, **147 al cerrar**, **cero `CONTINUA` fuera de sede** |
+| **aristas** | 64 al reanudar, **78 al cerrar**, **las 14 nuevas con `NINGUNA SEÑAL LA LEVANTA`** |
+| **guardas** | gate, guiones, suite de 75, vigencia y resolutor: **las cinco en verde** |
+| **discutibles marcados a ciegas** | **10** |
+| **propuestas en mi sede** | **5**, y una de las cinco es una pregunta que no se resolver |
+
+> # **LO QUE ESTA VUELTA DEJA MEDIDO, QUE ES LO QUE MAS IMPORTA**
+>
+> **1. `D.36` NO ERA UN TRAMITE, Y SE COBRO.** El unico bloqueo del tramo fue **el par numero
+> 1 de los ocho asimetricos**, con **0,355 medido hoy por la aduana contra 0,355 publicado
+> antes de insertar ni uno**, y **no levanta en el sentido contrario.** Sin el reordenamiento
+> ese par no se habria leido nunca.
+>
+> **2. `D.19` MEDIDA CATORCE VECES SEGUIDAS SIN UNA EXCEPCION.** Las 14 aristas escritas hoy
+> imprimieron la misma linea: ***NINGUNA SEÑAL LA LEVANTA. La caza la lectura.*** Y el hueco
+> mas grande era el mas facil de ver: **una cabeza y sus cinco partes, las seis vivas en el
+> grafo, con cero aristas entre ellas**, mientras la aduana escribia correctamente `SANO` en
+> los diez pares de las cinco entre si. **La señal vio a los hermanos y no vio a la madre.**
+>
+> **3. `D.30` APLICADA AL ESCRIBIR SALE SIN DEUDA, Y TRAE UNA ESPECIE NUEVA DE PUENTE.** 3 de
+> 47 pasos, el **6,4 por ciento**, contra el 36 por ciento del lote 1. Y los tres son de una
+> especie que la tabla de `D.30` no tiene: **el puente de ESTRUCTURA.** Las nueve piezas eran
+> del libro una a una; lo que anadi fue **el emparejamiento que las unia**, y es peor que el
+> destinatario, el periodo y el responsable en una cosa concreta: **no se ve al leer el paso,
+> porque cada mitad del paso es una cita buena.**
+>
+> **4. LA PLANTILLA QUE LA FIDELIDAD EXIGE LE DA DE COMER A LA SEÑAL QUE BUSCA DUPLICADOS.**
+> Es el hallazgo que menos me gusta y el que creo que vale mas: **la formula con la que marco
+> que un paso es del libro es la que hizo que `paso_contra_nodo` pasara de umbral sobre un par
+> sin relacion.** Cumplir `D.30` **ensucia la señal 3**, y eso no estaba medido.
+>
+> **5. EL HUECO DE SEDE ES DE UNA SOLA CLASE, Y SON 19.** Ni un `REPITE`, ni un `MUTUO`, y
+> **cero `CONTINUA` desde esta tarde.** El hueco es exactamente el del unico veredicto que no
+> produce una arista.
