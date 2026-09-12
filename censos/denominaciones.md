@@ -318,3 +318,105 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-11 | tratar_jefe_entrenador | otro_idioma | treat your manager as a coach | ingles | - |
 | 2026-09-11 | visualizar_recuperar_confianza | nombre_largo | El tercer consejo del Pozo: los cinco ejercicios de visualizacion, con los dos estudios que el libro cita detras | castellano | - |
 | 2026-09-11 | visualizar_recuperar_confianza | otro_idioma | close your eyes and visualize | ingles | - |
+| 2026-09-11 | auditar_calendario_reuniones_semana | nombre_largo | La semana de anotar cada reunion con sus preguntas, y la limpieza de calendario que sale de ella | castellano | - |
+| 2026-09-11 | auditar_calendario_reuniones_semana | otro_idioma | calendar audit, deep calendar cleanse | ingles | - |
+| 2026-09-11 | cambiar_formato_reunion_favorecer_participacion | nombre_largo | Por que la discusion sin estructura deja hablar solo a unos pocos, y la rueda de la sala como enfoque estructurado | castellano | - |
+| 2026-09-11 | cambiar_formato_reunion_favorecer_participacion | otro_idioma | change up your meeting format to favor participation, going around the room | ingles | - |
+| 2026-09-11 | abrir_discusion_notas_adhesivas | nombre_largo | El arranque con notas adhesivas, con sus diez a quince minutos de concentracion en silencio y el agrupamiento posterior en la pizarra | castellano | - |
+| 2026-09-11 | abrir_discusion_notas_adhesivas | otro_idioma | the Post-it note opening | ingles | - |
+| 2026-09-11 | cerrar_reunion_pasos_siguientes | nombre_largo | La pregunta de los ultimos minutos, el resumen posterior con lo que lleva dentro, y el seguimiento segun que clase de reunion fue | castellano | - |
+| 2026-09-11 | cerrar_reunion_pasos_siguientes | otro_idioma | follow-ups, meeting recap, next steps | ingles | - |
+| 2026-09-11 | decir_normas_participacion_voz_alta | nombre_largo | La tactica mas facil para que la gente participe, con el parlamento que la autora uso para desatascar sus sesiones de preguntas y respuestas | castellano | - |
+| 2026-09-11 | decir_normas_participacion_voz_alta | otro_idioma | be explicit about the norms you want to set | ingles | - |
+| 2026-09-11 | fijar_resultado_excelente_reunion | nombre_largo | La pregunta que va mas alla del proposito, el punado de razones para juntarse en persona, y como se devuelve la conversacion a su agenda | castellano | - |
+| 2026-09-11 | fijar_resultado_excelente_reunion | otro_idioma | what is a great outcome for your meeting? | ingles | - |
+| 2026-09-11 | dirigir_reunion_decision | nombre_largo | La reunion de decision, con los rasgos que la hacen buena y los malos resultados que hay que evitar | castellano | - |
+| 2026-09-11 | dirigir_reunion_decision | otro_idioma | decision meeting, making a decision | ingles | - |
+| 2026-09-11 | dirigir_reunion_generar_ideas | nombre_largo | La sesion generativa, por que la lluvia de ideas en voz alta no innova, y los logros que la hacen buena | castellano | - |
+| 2026-09-11 | dirigir_reunion_generar_ideas | otro_idioma | generative meeting, brainstorming meeting, working session, generating ideas | ingles | - |
+| 2026-09-11 | dirigir_reunion_informativa | nombre_largo | La reunion informativa, sus ventajas sobre el tablon y la lista de correo, y los logros que la hacen buena | castellano | - |
+| 2026-09-11 | dirigir_reunion_informativa | otro_idioma | informational meeting, sharing information | ingles | - |
+| 2026-09-11 | dirigir_reunion_reforzar_relaciones | nombre_largo | La reunion de union de equipo, sus medios sociales nombrados, y los logros que la hacen buena | castellano | - |
+| 2026-09-11 | dirigir_reunion_reforzar_relaciones | otro_idioma | team-bonding meeting, strengthening relationships | ingles | - |
+| 2026-09-11 | dirigir_reunion_revision_trabajo | nombre_largo | La revision, el error de convertirla en juicio de aprobacion, y los logros que la hacen buena | castellano | - |
+| 2026-09-11 | dirigir_reunion_revision_trabajo | otro_idioma | feedback meeting, review, providing feedback | ingles | - |
+| 2026-09-11 | invitar_personas_necesarias_reunion | nombre_largo | La pregunta que decide la lista de invitados, el fallo de invitar de mas y el de invitar de menos, y que hacer cuando la lista se ha hinchado | castellano | - |
+| 2026-09-11 | invitar_personas_necesarias_reunion | otro_idioma | invite the right people | ingles | - |
+| 2026-09-11 | mediar_tiempo_palabra_reunion | nombre_largo | Las intervenciones del que modera, con la frase literal de cada una, y lo que la incomodidad de interrumpir compra a cambio | castellano | - |
+| 2026-09-11 | mediar_tiempo_palabra_reunion | otro_idioma | manage equal airtime | ingles | - |
+| 2026-09-11 | pedir_opinion_propia_reunion | nombre_largo | La via fiable para saber si tu reunion sirve, las claves de la pregunta, y el ejemplo literal sobre la reunion de estado fallida | castellano | - |
+| 2026-09-11 | pedir_opinion_propia_reunion | otro_idioma | get feedback about your meeting | ingles | - |
+| 2026-09-11 | repartir_material_antes_reunion | nombre_largo | La maldicion del conocimiento, el reparto de presentaciones y documentos el dia antes, y la agenda por adelantado | castellano | - |
+| 2026-09-11 | repartir_material_antes_reunion | otro_idioma | give people a chance to come prepared, the curse of knowledge | ingles | - |
+| 2026-09-11 | buscar_recomendaciones_confianza | nombre_largo | La varita magica que se pregunta al equipo propio, la comprobacion de referencias honesta, y las dos cosas que se tienen en cuenta al evaluarlas | castellano | - |
+| 2026-09-11 | buscar_recomendaciones_confianza | otro_idioma | seek out trusted recommendations, reference check | ingles | - |
+| 2026-09-11 | calcular_embudo_reclutamiento_propio | nombre_largo | El embudo como cuenta que se mantiene estable con docenas de candidatos, y la ecuacion de cuantos correos llevan a una contratacion | castellano | - |
+| 2026-09-11 | calcular_embudo_reclutamiento_propio | otro_idioma | meeting frogs is part of the deal, but believe in the process | ingles | - |
+| 2026-09-11 | construir_equipo_perspectivas_diversas | nombre_largo | El caso de los directivos de fuera que al principio chocaban, y que significa priorizar la diversidad en actos y no en carteles | castellano | - |
+| 2026-09-11 | construir_equipo_perspectivas_diversas | otro_idioma | build a team with diverse perspectives | ingles | - |
+| 2026-09-11 | contratar_personas_capaces_mas | nombre_largo | El limite que si hay que respetar, el caso del director contratado para un equipo pequenio, y por que nunca faltan problemas grandes | castellano | - |
+| 2026-09-11 | contratar_personas_capaces_mas | otro_idioma | hire people who are capable of more | ingles | - |
+| 2026-09-11 | cultivar_relacion_talento_largo_plazo | nombre_largo | La oferta rechazada que vuelve anios despues, por que los buenos lideres eligen lo que ya conocen, y que se cultiva mientras tanto | castellano | - |
+| 2026-09-11 | cultivar_relacion_talento_largo_plazo | otro_idioma | take the long view with top talent | ingles | - |
+| 2026-09-11 | describir_candidato_ideal_precision | nombre_largo | La descripcion del puesto escrita por quien contrata, y por que el mismo oficio pide cosas distintas en dos equipos | castellano | - |
+| 2026-09-11 | describir_candidato_ideal_precision | otro_idioma | describe your ideal candidate as precisely as you can | ingles | - |
+| 2026-09-11 | disenar_equipo_plan_anual | nombre_largo | El ejercicio de enero, con el organigrama futuro, el analisis de huecos y las preguntas que se hace quien lo escribe | castellano | - |
+| 2026-09-11 | disenar_equipo_plan_anual | otro_idioma | design your team intentionally, one-year-out organizational plan | ingles | - |
+| 2026-09-11 | ejecutar_embudo_reclutamiento_escala | nombre_largo | La aritmetica de cuantos correos por directivo y por semana, el programa de formacion de entrevistadores, y las preguntas para hacer el embudo mas eficiente | castellano | - |
+| 2026-09-11 | ejecutar_embudo_reclutamiento_escala | otro_idioma | successful hiring is all about diligent execution | ingles | - |
+| 2026-09-11 | entregar_experiencia_entrevista_excelente | nombre_largo | La sociedad diaria entre directivo y reclutador durante el proceso, y los errores comunes que evita | castellano | - |
+| 2026-09-11 | entregar_experiencia_entrevista_excelente | otro_idioma | deliver an amazing interview experience | ingles | - |
+| 2026-09-11 | desarrollar_estrategia_busqueda_candidatos | nombre_largo | La sesion de ideas sobre donde buscar, los patrones a cazar en un historial, y el patron inesperado que encontro Netflix | castellano | - |
+| 2026-09-11 | desarrollar_estrategia_busqueda_candidatos | otro_idioma | develop a sourcing strategy | ingles | - |
+| 2026-09-11 | examinar_trabajo_pasado_candidato | nombre_largo | El mejor predictor imperfecto, la revision de portafolio, y la pregunta que separa el trabajo de equipo del propio | castellano | - |
+| 2026-09-11 | examinar_trabajo_pasado_candidato | otro_idioma | examine past examples of similar work, portfolio review | ingles | - |
+| 2026-09-11 | investigar_antes_contratar_lideres | nombre_largo | Por que una contratacion de liderazgo mala es desproporcionadamente mas daniina, y el camino de la primera ejecutiva que nunca hizo el puesto | castellano | - |
+| 2026-09-11 | investigar_antes_contratar_lideres | otro_idioma | do your research when hiring leaders | ingles | - |
+| 2026-09-11 | mostrar_candidato_cuanto_quieres | nombre_largo | El cierre de la oferta como trabajo del directivo, la cadencia de contacto, y por que con los mas veteranos es mas critico | castellano | - |
+| 2026-09-11 | mostrar_candidato_cuanto_quieres | otro_idioma | show candidates how much you want them | ingles | - |
+| 2026-09-11 | preguntar_contratar_unica_prioridad | nombre_largo | La pregunta que le hizo su jefe cuando ella ya trabajaba en contratar todos los dias, y lo que salio de contestarla | castellano | - |
+| 2026-09-11 | preguntar_contratar_unica_prioridad | otro_idioma | if I told you that hiring well was the only thing that mattered, would you do anything differently? | ingles | - |
+| 2026-09-11 | preparar_preguntas_entrevista_antemano | nombre_largo | La lista de preguntas preparada, el caso del candidato nervioso cuya sustancia gano, y las preguntas de proposito general que la autora prefiere | castellano | - |
+| 2026-09-11 | preparar_preguntas_entrevista_antemano | otro_idioma | prepare your interview questions ahead of time | ingles | - |
+| 2026-09-11 | probar_banquillo_vacaciones_largas | nombre_largo | La pregunta que se hace a cada lider del equipo, como se lee cada respuesta, y para que sirve un banquillo fuerte | castellano | - |
+| 2026-09-11 | probar_banquillo_vacaciones_largas | otro_idioma | build a great bench, the extended vacation test | ingles | - |
+| 2026-09-11 | rechazar_conducta_toxica_entrevista | nombre_largo | Las senales de aviso en una entrevista, cada una con la frase con que suele aparecer | castellano | - |
+| 2026-09-11 | rechazar_conducta_toxica_entrevista | otro_idioma | reject anyone who exhibits toxic behavior | ingles | - |
+| 2026-09-11 | rechazar_contratacion_tibia | nombre_largo | Como suena una contratacion tibia en la puesta en comun, por que se da, y por que la unanimidad sin entusiasmo es peor apuesta que la resena mixta | castellano | - |
+| 2026-09-11 | rechazar_contratacion_tibia | otro_idioma | look for passionate advocates rather than consensus, weak hire | ingles | - |
+| 2026-09-11 | repartir_papeles_directivo_reclutador | nombre_largo | Por que ningun reclutador puede saber como es el candidato ideal de tu equipo, y que pone cada uno en la sociedad | castellano | - |
+| 2026-09-11 | repartir_papeles_directivo_reclutador | otro_idioma | hiring is your responsibility | ingles | - |
+| 2026-09-11 | repartir_responsabilidad_contratar_equipo | nombre_largo | La ansiedad de regalar tus piezas de construccion, y las cosas concretas con las que se fija el tono de la contratacion | castellano | - |
+| 2026-09-11 | repartir_responsabilidad_contratar_equipo | otro_idioma | create a culture that prioritizes hiring well, giving away your LEGOs | ingles | - |
+| 2026-09-11 | avisar_organizador_reunion_prescindible | nombre_largo | Las reuniones que no le sirven a nadie, su efecto medido sobre el equipo, y el aviso amable que las cancela o las rehace | castellano | - |
+| 2026-09-11 | avisar_organizador_reunion_prescindible | otro_idioma | meetings that do not need to exist at all | ingles | - |
+| 2026-09-11 | ajustar_plan_fuerzas_equipo | nombre_largo | Por que poder hacer algo no es deberlo hacer, la cuenta del doble de tiempo por el ochenta por ciento de calidad, y los muchos caminos entre dos puntos | castellano | - |
+| 2026-09-11 | ajustar_plan_fuerzas_equipo | otro_idioma | craft a plan based on your team strengths | ingles | - |
+| 2026-09-11 | comprobar_equipo_ejecuta_bien | nombre_largo | Las senales observables de un equipo que ejecuta, del orden de las listas al que y para cuando de cada tarea | castellano | - |
+| 2026-09-11 | comprobar_equipo_ejecuta_bien | otro_idioma | ways to tell if your team is executing well | ingles | - |
+| 2026-09-11 | crear_manuales_jugadas_repetibles | nombre_largo | Por que ninguna tarea compleja se improvisa, donde se reconoce un manual de jugadas por escribir, y el caso del correo semanal que evoluciono en fases | castellano | - |
+| 2026-09-11 | crear_manuales_jugadas_repetibles | otro_idioma | repeatable best practices, playbooks | ingles | - |
+| 2026-09-11 | crear_plan_creible_equipo | nombre_largo | Por que planificar vale aunque el plan no valga, que hace buena a una estrategia, y como se ata la del equipo a la de la organizacion | castellano | - |
+| 2026-09-11 | crear_plan_creible_equipo | otro_idioma | create a believable game plan, strategy | ingles | - |
+| 2026-09-11 | definir_quien_responde_cada_cosa | nombre_largo | La sesion de ideas que no produce nada, el caso de los dos talentos que discutieron en circulos, y las formas de aclarar la expectativa por delante | castellano | - |
+| 2026-09-11 | definir_quien_responde_cada_cosa | otro_idioma | define who is responsible for what, ownership | ingles | - |
+| 2026-09-11 | definir_vision_larga_trabajar_atras | nombre_largo | La estrella polar que guia las decisiones, el caso de la peticion mas repetida que se rechazo, y los enchufes de la cocina antes del plano | castellano | - |
+| 2026-09-11 | definir_vision_larga_trabajar_atras | otro_idioma | define a long-term vision and work backward | ingles | - |
+| 2026-09-11 | ejecutar_ciclos_cortos_aprender | nombre_largo | Por que la ejecucion gana a la estrategia, el caso de los ciclos de varias semanas, y por que esa cadencia funciona | castellano | - |
+| 2026-09-11 | ejecutar_ciclos_cortos_aprender | otro_idioma | perfect execution over perfect strategy, sprint cycles | ingles | - |
+| 2026-09-11 | equilibrar_corto_largo_plazo | nombre_largo | Los escenarios de contratar, planificar y gestionar el desempenio, cada uno con lo que sale mal por pensar demasiado corto y por pensar demasiado largo | castellano | - |
+| 2026-09-11 | equilibrar_corto_largo_plazo | otro_idioma | balancing short-term and long-term outcomes | ingles | - |
+| 2026-09-11 | fijar_vision_concreta_equipo | nombre_largo | Por que ayudar y mejorar no pintan ningun cuadro, los rasgos de una vision que inspira, la prueba de las cinco personas, y las preguntas con que se arranca | castellano | - |
+| 2026-09-11 | fijar_vision_concreta_equipo | otro_idioma | start with a concrete vision | ingles | - |
+| 2026-09-11 | hacer_repaso_posterior_proyecto | nombre_largo | Cuando se convoca, las preguntas con las que se hace, y lo que hay que hacer para crear el ambiente seguro que lo mantiene vivo | castellano | - |
+| 2026-09-11 | hacer_repaso_posterior_proyecto | otro_idioma | debriefs, retrospectives, postmortems | ingles | - |
+| 2026-09-11 | ligar_tareas_proposito_organizacion | nombre_largo | Por que las decisiones del dia a dia se vuelven faciles cuando todos entienden el proposito, y el aviso del indicador que se toma por el fin | castellano | - |
+| 2026-09-11 | ligar_tareas_proposito_organizacion | otro_idioma | talk about how everything relates to the vision | ingles | - |
+| 2026-09-11 | partir_meta_grande_hitos | nombre_largo | La ley del trabajo que se estira hasta llenar el tiempo, el caso del borrador de este libro, y el trabajo hacia atras desde la fecha objetivo | castellano | - |
+| 2026-09-11 | partir_meta_grande_hitos | otro_idioma | break down a big goal into smaller pieces, Parkinson law | ingles | - |
+| 2026-09-11 | priorizar_pocas_cosas_bien | nombre_largo | El principio de la minoria de las causas, la practica de ordenar toda lista por importancia, y el caso del producto pobre que gano por una sola funcion | castellano | - |
+| 2026-09-11 | priorizar_pocas_cosas_bien | otro_idioma | focus on doing a few things well, the Pareto principle, the 80/20 principle | ingles | - |
+| 2026-09-11 | repartir_equipo_cartera_horizontes | nombre_largo | La estrategia de inversion aplicada a los proyectos, con los tercios de semanas, meses y anios | castellano | - |
+| 2026-09-11 | repartir_equipo_cartera_horizontes | otro_idioma | take a portfolio approach | ingles | - |
+| 2026-09-11 | involucrar_varios_entrevistadores | nombre_largo | El reparto de preguntas entre entrevistadores y el registro independiente del veredicto antes de oir a los demas | castellano | - |
+| 2026-09-11 | involucrar_varios_entrevistadores | otro_idioma | get multiple interviewers involved, debrief | ingles | - |

@@ -70,7 +70,37 @@ leyendo.**
 
 **COMO, y es lo de siempre:**
 
-1. **Publica el censo esperado ANTES**: 135 mas los que vayan a entrar.
+1. **Publica el censo esperado ANTES**: el censo de partida **mas** los que vayan
+   a entrar.
+
+> **CORRECCION DECLARADA, 11 sep 2026: ESTA TAREA QUEDO A MEDIAS Y SE REANUDA.**
+> La vuelta 15 se corto por un congelamiento de la maquina del fundador, **en un
+> bloqueo de la aduana y no a mitad de una escritura**. Lo hecho quedo asegurado en
+> el commit que trae esta correccion, y el estado **medido** al reanudar es:
+>
+>     dataset/nodos.jsonl                        186 nodos   (eran 135)
+>     bitacora/VEREDICTOS.jsonl                  132         (eran 100)
+>     cuarentena/zhuo_manager/                    17 pendientes
+>     cuarentena/_insertados/zhuo_manager/       119 archivados  (68 + 51)
+>
+> **LA CIFRA DE PARTIDA YA NO ES 135: ES 186.** El texto viejo se tacha y no se
+> borra. **REMIDELO TU** con su instrumento al lado antes de publicar nada: que esta
+> cifra este aqui escrita no te exime de comprobarla (`D.38.3` es del auditor, pero
+> la vara es de la casa).
+>
+> **LA TAREA 0 YA ESTA CERRADA** en el commit `3c6fd7f`: los cinco pasos eran **dos
+> podas con motivo escrito** (`6ee153f` menos 4 y `5efd637` menos 1) y **nada que
+> restaurar**. No la repitas.
+>
+> **DONDE SE PARO, exacto:** el ultimo candidato pidio veredicto con
+> `repartir_equipo_cartera_horizontes` por vecino, y el turno se corto antes de
+> escribirlo. **Ese veredicto no existe y hay que leerlo**, no darlo por hecho.
+> El log de la corrida esta en `.insercion_lote3_vuelta15.log`.
+>
+> **Y LOS 51 QUE YA ENTRARON NO SE REINSERTAN:** la aduana los rechazaria por `el id
+> ya vive en el grafo` y haria bien. Se comprobo al reanudar que **cero archivados
+> estan fuera del grafo y cero de la bandeja estan dentro**, asi que la frontera
+> entre lo hecho y lo pendiente es limpia.
 2. **`D.36`, el orden que lee**: mide la asimetria de los pares que bloqueen **en
    los dos sentidos** y ordena para que el par se lea. Y **di si hizo falta
    reordenar o no**, porque comprobarlo y que no haga falta **no es lo mismo que no

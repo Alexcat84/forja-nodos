@@ -1,0 +1,938 @@
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\auditar_calendario_reuniones_semana.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'auditar_calendario_reuniones_semana'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 135 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 136
+  censos escritos: atribuciones, denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\cambiar_formato_reunion_favorecer_participacion.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'cambiar_formato_reunion_favorecer_participacion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 136 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 137
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\abrir_discusion_notas_adhesivas.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'abrir_discusion_notas_adhesivas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 137 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 138
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\cerrar_reunion_pasos_siguientes.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'cerrar_reunion_pasos_siguientes'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 138 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino preguntar_jefe_sonado_persona_cargo  [Preguntar a cada persona a tu cargo como es su jefe sonado]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.244 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.609 (umbral 0.60)
+    paso 5 del candidato contra paso 4 de preguntar_jefe_sonado_persona_cargo
+
+  vecino auditar_calendario_reuniones_semana  [Auditar tu calendario durante una semana y limpiar las reuniones que no te necesitan]
+    levantada por: similitud_texto
+    similitud_texto    0.353 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.423 (umbral 0.60)
+    paso 6 del candidato contra paso 9 de auditar_calendario_reuniones_semana
+
+BLOQUEADO: faltan veredictos para preguntar_jefe_sonado_persona_cargo, auditar_calendario_reuniones_semana
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "preguntar_jefe_sonado_persona_cargo|CONTINUA|madre=preguntar_jefe_sonado_persona_cargo|que añade el hijo a la madre"
+    --veredicto "preguntar_jefe_sonado_persona_cargo|REPITE|por que no añade procedimiento"
+    --veredicto "preguntar_jefe_sonado_persona_cargo|SANO|por que no son el mismo trabajo"
+    --veredicto "preguntar_jefe_sonado_persona_cargo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "auditar_calendario_reuniones_semana|CONTINUA|madre=auditar_calendario_reuniones_semana|que añade el hijo a la madre"
+    --veredicto "auditar_calendario_reuniones_semana|REPITE|por que no añade procedimiento"
+    --veredicto "auditar_calendario_reuniones_semana|SANO|por que no son el mismo trabajo"
+    --veredicto "auditar_calendario_reuniones_semana|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\decir_normas_participacion_voz_alta.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'decir_normas_participacion_voz_alta'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 139 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 140
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\fijar_resultado_excelente_reunion.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'fijar_resultado_excelente_reunion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 140 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 141
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\dirigir_reunion_decision.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'dirigir_reunion_decision'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 141 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino dirigir_reunion_individual_semanal  [Dirigir la reunion individual semanal con cada persona a cargo]
+    levantada por: familia_id
+    similitud_texto    0.225 (umbral 0.35)
+    familia_id         0.400 (umbral 0.30)
+    paso_contra_nodo   0.440 (umbral 0.60)
+    paso 1 del candidato contra paso 9 de dirigir_reunion_individual_semanal
+
+BLOQUEADO: faltan veredictos para dirigir_reunion_individual_semanal
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "dirigir_reunion_individual_semanal|CONTINUA|madre=dirigir_reunion_individual_semanal|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_individual_semanal|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_individual_semanal|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_individual_semanal|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\dirigir_reunion_generar_ideas.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'dirigir_reunion_generar_ideas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 142 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino dirigir_reunion_decision  [Dirigir una reunion cuyo resultado excelente es una decision tomada]
+    levantada por: familia_id
+    similitud_texto    0.233 (umbral 0.35)
+    familia_id         0.400 (umbral 0.30)
+    paso_contra_nodo   0.508 (umbral 0.60)
+    paso 5 del candidato contra paso 2 de dirigir_reunion_decision
+
+  vecino dirigir_reunion_individual_semanal  [Dirigir la reunion individual semanal con cada persona a cargo]
+    levantada por: familia_id
+    similitud_texto    0.251 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.378 (umbral 0.60)
+    paso 5 del candidato contra paso 2 de dirigir_reunion_individual_semanal
+
+BLOQUEADO: faltan veredictos para dirigir_reunion_decision, dirigir_reunion_individual_semanal
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "dirigir_reunion_decision|CONTINUA|madre=dirigir_reunion_decision|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_decision|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_decision|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_decision|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "dirigir_reunion_individual_semanal|CONTINUA|madre=dirigir_reunion_individual_semanal|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_individual_semanal|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_individual_semanal|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_individual_semanal|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\dirigir_reunion_informativa.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'dirigir_reunion_informativa'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 143 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino dirigir_reunion_decision  [Dirigir una reunion cuyo resultado excelente es una decision tomada]
+    levantada por: familia_id
+    similitud_texto    0.334 (umbral 0.35)
+    familia_id         0.500 (umbral 0.30)
+    paso_contra_nodo   0.500 (umbral 0.60)
+    paso 5 del candidato contra paso 10 de dirigir_reunion_decision
+
+  vecino dirigir_reunion_generar_ideas  [Dirigir una reunion cuyo resultado excelente es un monton de ideas diversas]
+    levantada por: familia_id
+    similitud_texto    0.324 (umbral 0.35)
+    familia_id         0.400 (umbral 0.30)
+    paso_contra_nodo   0.453 (umbral 0.60)
+    paso 6 del candidato contra paso 7 de dirigir_reunion_generar_ideas
+
+  vecino dirigir_reunion_individual_semanal  [Dirigir la reunion individual semanal con cada persona a cargo]
+    levantada por: familia_id
+    similitud_texto    0.208 (umbral 0.35)
+    familia_id         0.400 (umbral 0.30)
+    paso_contra_nodo   0.378 (umbral 0.60)
+    paso 4 del candidato contra paso 6 de dirigir_reunion_individual_semanal
+
+BLOQUEADO: faltan veredictos para dirigir_reunion_decision, dirigir_reunion_generar_ideas, dirigir_reunion_individual_semanal
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "dirigir_reunion_decision|CONTINUA|madre=dirigir_reunion_decision|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_decision|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_decision|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_decision|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "dirigir_reunion_generar_ideas|CONTINUA|madre=dirigir_reunion_generar_ideas|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_generar_ideas|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_generar_ideas|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_generar_ideas|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "dirigir_reunion_individual_semanal|CONTINUA|madre=dirigir_reunion_individual_semanal|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_individual_semanal|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_individual_semanal|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_individual_semanal|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\dirigir_reunion_reforzar_relaciones.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'dirigir_reunion_reforzar_relaciones'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 144 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino dirigir_reunion_informativa  [Dirigir una reunion cuyo resultado excelente es que el grupo aprenda algo]
+    levantada por: similitud_texto, familia_id
+    similitud_texto    0.405 (umbral 0.35)
+    familia_id         0.400 (umbral 0.30)
+    paso_contra_nodo   0.571 (umbral 0.60)
+    paso 8 del candidato contra paso 5 de dirigir_reunion_informativa
+
+  vecino dirigir_reunion_generar_ideas  [Dirigir una reunion cuyo resultado excelente es un monton de ideas diversas]
+    levantada por: familia_id
+    similitud_texto    0.318 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.503 (umbral 0.60)
+    paso 7 del candidato contra paso 7 de dirigir_reunion_generar_ideas
+
+  vecino dirigir_reunion_decision  [Dirigir una reunion cuyo resultado excelente es una decision tomada]
+    levantada por: familia_id
+    similitud_texto    0.224 (umbral 0.35)
+    familia_id         0.400 (umbral 0.30)
+    paso_contra_nodo   0.443 (umbral 0.60)
+    paso 8 del candidato contra paso 6 de dirigir_reunion_decision
+
+  vecino dirigir_reunion_individual_semanal  [Dirigir la reunion individual semanal con cada persona a cargo]
+    levantada por: familia_id
+    similitud_texto    0.232 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.392 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de dirigir_reunion_individual_semanal
+
+BLOQUEADO: faltan veredictos para dirigir_reunion_informativa, dirigir_reunion_generar_ideas, dirigir_reunion_decision, dirigir_reunion_individual_semanal
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "dirigir_reunion_informativa|CONTINUA|madre=dirigir_reunion_informativa|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_informativa|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_informativa|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_informativa|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "dirigir_reunion_generar_ideas|CONTINUA|madre=dirigir_reunion_generar_ideas|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_generar_ideas|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_generar_ideas|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_generar_ideas|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "dirigir_reunion_decision|CONTINUA|madre=dirigir_reunion_decision|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_decision|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_decision|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_decision|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "dirigir_reunion_individual_semanal|CONTINUA|madre=dirigir_reunion_individual_semanal|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_individual_semanal|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_individual_semanal|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_individual_semanal|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\dirigir_reunion_revision_trabajo.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'dirigir_reunion_revision_trabajo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 145 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 5. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino dirigir_reunion_informativa  [Dirigir una reunion cuyo resultado excelente es que el grupo aprenda algo]
+    levantada por: similitud_texto, familia_id, paso_contra_nodo
+    similitud_texto    0.351 (umbral 0.35)
+    familia_id         0.400 (umbral 0.30)
+    paso_contra_nodo   0.602 (umbral 0.60)
+    paso 4 del candidato contra paso 5 de dirigir_reunion_informativa
+
+  vecino dirigir_reunion_generar_ideas  [Dirigir una reunion cuyo resultado excelente es un monton de ideas diversas]
+    levantada por: similitud_texto, familia_id
+    similitud_texto    0.359 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.552 (umbral 0.60)
+    paso 7 del candidato contra paso 7 de dirigir_reunion_generar_ideas
+
+  vecino dirigir_reunion_reforzar_relaciones  [Dirigir una reunion cuyo resultado excelente es que la gente se entienda mejor]
+    levantada por: familia_id
+    similitud_texto    0.338 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.500 (umbral 0.60)
+    paso 4 del candidato contra paso 6 de dirigir_reunion_reforzar_relaciones
+
+  vecino dirigir_reunion_individual_semanal  [Dirigir la reunion individual semanal con cada persona a cargo]
+    levantada por: familia_id
+    similitud_texto    0.283 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.442 (umbral 0.60)
+    paso 6 del candidato contra paso 1 de dirigir_reunion_individual_semanal
+
+  vecino dirigir_reunion_decision  [Dirigir una reunion cuyo resultado excelente es una decision tomada]
+    levantada por: familia_id
+    similitud_texto    0.283 (umbral 0.35)
+    familia_id         0.400 (umbral 0.30)
+    paso_contra_nodo   0.431 (umbral 0.60)
+    paso 4 del candidato contra paso 2 de dirigir_reunion_decision
+
+BLOQUEADO: faltan veredictos para dirigir_reunion_informativa, dirigir_reunion_generar_ideas, dirigir_reunion_reforzar_relaciones, dirigir_reunion_individual_semanal, dirigir_reunion_decision
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "dirigir_reunion_informativa|CONTINUA|madre=dirigir_reunion_informativa|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_informativa|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_informativa|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_informativa|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "dirigir_reunion_generar_ideas|CONTINUA|madre=dirigir_reunion_generar_ideas|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_generar_ideas|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_generar_ideas|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_generar_ideas|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "dirigir_reunion_reforzar_relaciones|CONTINUA|madre=dirigir_reunion_reforzar_relaciones|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_reforzar_relaciones|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_reforzar_relaciones|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_reforzar_relaciones|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "dirigir_reunion_individual_semanal|CONTINUA|madre=dirigir_reunion_individual_semanal|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_individual_semanal|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_individual_semanal|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_individual_semanal|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "dirigir_reunion_decision|CONTINUA|madre=dirigir_reunion_decision|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_decision|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_decision|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_decision|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\invitar_personas_necesarias_reunion.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'invitar_personas_necesarias_reunion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 146 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 147
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\mediar_tiempo_palabra_reunion.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'mediar_tiempo_palabra_reunion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 147 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 148
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\pedir_opinion_propia_reunion.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'pedir_opinion_propia_reunion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 148 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino pedir_opinion_otros_mejorar  [Pedir opinion a otros todo el tiempo para mejorar tu mismo]
+    levantada por: familia_id
+    similitud_texto    0.293 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.452 (umbral 0.60)
+    paso 5 del candidato contra paso 5 de pedir_opinion_otros_mejorar
+
+BLOQUEADO: faltan veredictos para pedir_opinion_otros_mejorar
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "pedir_opinion_otros_mejorar|CONTINUA|madre=pedir_opinion_otros_mejorar|que añade el hijo a la madre"
+    --veredicto "pedir_opinion_otros_mejorar|REPITE|por que no añade procedimiento"
+    --veredicto "pedir_opinion_otros_mejorar|SANO|por que no son el mismo trabajo"
+    --veredicto "pedir_opinion_otros_mejorar|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\repartir_material_antes_reunion.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'repartir_material_antes_reunion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 149 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 150
+  censos escritos: atribuciones, denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\buscar_recomendaciones_confianza.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'buscar_recomendaciones_confianza'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 150 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 151
+  censos escritos: atribuciones, denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\calcular_embudo_reclutamiento_propio.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'calcular_embudo_reclutamiento_propio'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 151 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 152
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\construir_equipo_perspectivas_diversas.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'construir_equipo_perspectivas_diversas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 152 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 153
+  censos escritos: atribuciones, denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\contratar_personas_capaces_mas.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'contratar_personas_capaces_mas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 153 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 154
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\cultivar_relacion_talento_largo_plazo.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'cultivar_relacion_talento_largo_plazo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 154 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 155
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\describir_candidato_ideal_precision.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'describir_candidato_ideal_precision'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 155 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 156
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\disenar_equipo_plan_anual.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'disenar_equipo_plan_anual'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 156 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 157
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\ejecutar_embudo_reclutamiento_escala.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'ejecutar_embudo_reclutamiento_escala'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 157 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino calcular_embudo_reclutamiento_propio  [Calcular tu propio embudo de reclutamiento para dejar de sufrir cada rechazo]
+    levantada por: familia_id
+    similitud_texto    0.238 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.399 (umbral 0.60)
+    paso 5 del candidato contra paso 2 de calcular_embudo_reclutamiento_propio
+
+BLOQUEADO: faltan veredictos para calcular_embudo_reclutamiento_propio
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "calcular_embudo_reclutamiento_propio|CONTINUA|madre=calcular_embudo_reclutamiento_propio|que añade el hijo a la madre"
+    --veredicto "calcular_embudo_reclutamiento_propio|REPITE|por que no añade procedimiento"
+    --veredicto "calcular_embudo_reclutamiento_propio|SANO|por que no son el mismo trabajo"
+    --veredicto "calcular_embudo_reclutamiento_propio|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\entregar_experiencia_entrevista_excelente.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'entregar_experiencia_entrevista_excelente'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 158 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 159
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\desarrollar_estrategia_busqueda_candidatos.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'desarrollar_estrategia_busqueda_candidatos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 159 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino entregar_experiencia_entrevista_excelente  [Entregar una experiencia de entrevista atenta, enfocada y rapida]
+    levantada por: similitud_texto
+    similitud_texto    0.352 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.410 (umbral 0.60)
+    paso 3 del candidato contra paso 3 de entregar_experiencia_entrevista_excelente
+
+BLOQUEADO: faltan veredictos para entregar_experiencia_entrevista_excelente
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "entregar_experiencia_entrevista_excelente|CONTINUA|madre=entregar_experiencia_entrevista_excelente|que añade el hijo a la madre"
+    --veredicto "entregar_experiencia_entrevista_excelente|REPITE|por que no añade procedimiento"
+    --veredicto "entregar_experiencia_entrevista_excelente|SANO|por que no son el mismo trabajo"
+    --veredicto "entregar_experiencia_entrevista_excelente|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\examinar_trabajo_pasado_candidato.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'examinar_trabajo_pasado_candidato'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 160 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino auditar_calendario_reuniones_semana  [Auditar tu calendario durante una semana y limpiar las reuniones que no te necesitan]
+    levantada por: similitud_texto
+    similitud_texto    0.353 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.411 (umbral 0.60)
+    paso 1 del candidato contra paso 10 de auditar_calendario_reuniones_semana
+
+BLOQUEADO: faltan veredictos para auditar_calendario_reuniones_semana
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "auditar_calendario_reuniones_semana|CONTINUA|madre=auditar_calendario_reuniones_semana|que añade el hijo a la madre"
+    --veredicto "auditar_calendario_reuniones_semana|REPITE|por que no añade procedimiento"
+    --veredicto "auditar_calendario_reuniones_semana|SANO|por que no son el mismo trabajo"
+    --veredicto "auditar_calendario_reuniones_semana|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\investigar_antes_contratar_lideres.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'investigar_antes_contratar_lideres'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 161 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 162
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\mostrar_candidato_cuanto_quieres.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'mostrar_candidato_cuanto_quieres'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 162 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 163
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\preguntar_contratar_unica_prioridad.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'preguntar_contratar_unica_prioridad'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 163 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 164
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\preparar_preguntas_entrevista_antemano.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'preparar_preguntas_entrevista_antemano'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 164 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino evitar_preguntas_ilegales_entrevista  [Evitar hacer al candidato preguntas ilegales]
+    levantada por: familia_id
+    similitud_texto    0.100 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.447 (umbral 0.60)
+    paso 3 del candidato contra paso 6 de evitar_preguntas_ilegales_entrevista
+
+BLOQUEADO: faltan veredictos para evitar_preguntas_ilegales_entrevista
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "evitar_preguntas_ilegales_entrevista|CONTINUA|madre=evitar_preguntas_ilegales_entrevista|que añade el hijo a la madre"
+    --veredicto "evitar_preguntas_ilegales_entrevista|REPITE|por que no añade procedimiento"
+    --veredicto "evitar_preguntas_ilegales_entrevista|SANO|por que no son el mismo trabajo"
+    --veredicto "evitar_preguntas_ilegales_entrevista|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\probar_banquillo_vacaciones_largas.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'probar_banquillo_vacaciones_largas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 165 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 166
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\rechazar_conducta_toxica_entrevista.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'rechazar_conducta_toxica_entrevista'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 166 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 167
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\rechazar_contratacion_tibia.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'rechazar_contratacion_tibia'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 167 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 168
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\repartir_papeles_directivo_reclutador.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'repartir_papeles_directivo_reclutador'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 168 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino desarrollar_estrategia_busqueda_candidatos  [Desarrollar con el reclutador la estrategia de donde buscar]
+    levantada por: similitud_texto
+    similitud_texto    0.364 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.497 (umbral 0.60)
+    paso 7 del candidato contra paso 1 de desarrollar_estrategia_busqueda_candidatos
+
+  vecino mostrar_candidato_cuanto_quieres  [Mostrar al candidato cuanto quieres que diga que si]
+    levantada por: similitud_texto
+    similitud_texto    0.354 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.470 (umbral 0.60)
+    paso 6 del candidato contra paso 8 de mostrar_candidato_cuanto_quieres
+
+BLOQUEADO: faltan veredictos para desarrollar_estrategia_busqueda_candidatos, mostrar_candidato_cuanto_quieres
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "desarrollar_estrategia_busqueda_candidatos|CONTINUA|madre=desarrollar_estrategia_busqueda_candidatos|que añade el hijo a la madre"
+    --veredicto "desarrollar_estrategia_busqueda_candidatos|REPITE|por que no añade procedimiento"
+    --veredicto "desarrollar_estrategia_busqueda_candidatos|SANO|por que no son el mismo trabajo"
+    --veredicto "desarrollar_estrategia_busqueda_candidatos|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "mostrar_candidato_cuanto_quieres|CONTINUA|madre=mostrar_candidato_cuanto_quieres|que añade el hijo a la madre"
+    --veredicto "mostrar_candidato_cuanto_quieres|REPITE|por que no añade procedimiento"
+    --veredicto "mostrar_candidato_cuanto_quieres|SANO|por que no son el mismo trabajo"
+    --veredicto "mostrar_candidato_cuanto_quieres|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\repartir_responsabilidad_contratar_equipo.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'repartir_responsabilidad_contratar_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 169 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino mediar_tiempo_palabra_reunion  [Mediar el tiempo de palabra cuando unos pocos dominan la reunion]
+    levantada por: similitud_texto
+    similitud_texto    0.357 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.355 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de mediar_tiempo_palabra_reunion
+
+BLOQUEADO: faltan veredictos para mediar_tiempo_palabra_reunion
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "mediar_tiempo_palabra_reunion|CONTINUA|madre=mediar_tiempo_palabra_reunion|que añade el hijo a la madre"
+    --veredicto "mediar_tiempo_palabra_reunion|REPITE|por que no añade procedimiento"
+    --veredicto "mediar_tiempo_palabra_reunion|SANO|por que no son el mismo trabajo"
+    --veredicto "mediar_tiempo_palabra_reunion|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\avisar_organizador_reunion_prescindible.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'avisar_organizador_reunion_prescindible'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 170 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino repartir_responsabilidad_contratar_equipo  [Repartir la responsabilidad de contratar cuando ya no puedes estar en todo]
+    levantada por: similitud_texto
+    similitud_texto    0.354 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.382 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de repartir_responsabilidad_contratar_equipo
+
+BLOQUEADO: faltan veredictos para repartir_responsabilidad_contratar_equipo
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "repartir_responsabilidad_contratar_equipo|CONTINUA|madre=repartir_responsabilidad_contratar_equipo|que añade el hijo a la madre"
+    --veredicto "repartir_responsabilidad_contratar_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "repartir_responsabilidad_contratar_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "repartir_responsabilidad_contratar_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\ajustar_plan_fuerzas_equipo.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'ajustar_plan_fuerzas_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 171 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino disenar_equipo_plan_anual  [Disenar tu equipo a un anio vista antes de que el hambre decida por ti]
+    levantada por: familia_id
+    similitud_texto    0.221 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.403 (umbral 0.60)
+    paso 4 del candidato contra paso 9 de disenar_equipo_plan_anual
+
+BLOQUEADO: faltan veredictos para disenar_equipo_plan_anual
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "disenar_equipo_plan_anual|CONTINUA|madre=disenar_equipo_plan_anual|que añade el hijo a la madre"
+    --veredicto "disenar_equipo_plan_anual|REPITE|por que no añade procedimiento"
+    --veredicto "disenar_equipo_plan_anual|SANO|por que no son el mismo trabajo"
+    --veredicto "disenar_equipo_plan_anual|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\comprobar_equipo_ejecuta_bien.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'comprobar_equipo_ejecuta_bien'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 172 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 173
+  censos escritos: atribuciones, denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\crear_manuales_jugadas_repetibles.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'crear_manuales_jugadas_repetibles'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 173 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 174
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\crear_plan_creible_equipo.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'crear_plan_creible_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 174 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino ajustar_plan_fuerzas_equipo  [Ajustar el plan a lo que tu equipo sabe hacer de verdad]
+    levantada por: familia_id
+    similitud_texto    0.248 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.434 (umbral 0.60)
+    paso 6 del candidato contra paso 2 de ajustar_plan_fuerzas_equipo
+
+  vecino disenar_equipo_plan_anual  [Disenar tu equipo a un anio vista antes de que el hambre decida por ti]
+    levantada por: familia_id
+    similitud_texto    0.250 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.426 (umbral 0.60)
+    paso 4 del candidato contra paso 9 de disenar_equipo_plan_anual
+
+BLOQUEADO: faltan veredictos para ajustar_plan_fuerzas_equipo, disenar_equipo_plan_anual
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "ajustar_plan_fuerzas_equipo|CONTINUA|madre=ajustar_plan_fuerzas_equipo|que añade el hijo a la madre"
+    --veredicto "ajustar_plan_fuerzas_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "ajustar_plan_fuerzas_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "ajustar_plan_fuerzas_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "disenar_equipo_plan_anual|CONTINUA|madre=disenar_equipo_plan_anual|que añade el hijo a la madre"
+    --veredicto "disenar_equipo_plan_anual|REPITE|por que no añade procedimiento"
+    --veredicto "disenar_equipo_plan_anual|SANO|por que no son el mismo trabajo"
+    --veredicto "disenar_equipo_plan_anual|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\definir_quien_responde_cada_cosa.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'definir_quien_responde_cada_cosa'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 175 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 176
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\definir_vision_larga_trabajar_atras.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'definir_vision_larga_trabajar_atras'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 176 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 177
+  censos escritos: atribuciones, denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\ejecutar_ciclos_cortos_aprender.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'ejecutar_ciclos_cortos_aprender'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 177 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 178
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\equilibrar_corto_largo_plazo.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'equilibrar_corto_largo_plazo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 178 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 179
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\fijar_vision_concreta_equipo.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'fijar_vision_concreta_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 179 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino fijar_proceso_trabajo_equipo  [Fijar el proceso con el que tu equipo trabaja junto]
+    levantada por: familia_id
+    similitud_texto    0.188 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.405 (umbral 0.60)
+    paso 9 del candidato contra paso 1 de fijar_proceso_trabajo_equipo
+
+BLOQUEADO: faltan veredictos para fijar_proceso_trabajo_equipo
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "fijar_proceso_trabajo_equipo|CONTINUA|madre=fijar_proceso_trabajo_equipo|que añade el hijo a la madre"
+    --veredicto "fijar_proceso_trabajo_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "fijar_proceso_trabajo_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "fijar_proceso_trabajo_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\hacer_repaso_posterior_proyecto.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'hacer_repaso_posterior_proyecto'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 180 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 181
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\ligar_tareas_proposito_organizacion.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'ligar_tareas_proposito_organizacion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 181 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 182
+  censos escritos: atribuciones, denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\partir_meta_grande_hitos.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'partir_meta_grande_hitos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 182 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 183
+  censos escritos: atribuciones, denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\priorizar_pocas_cosas_bien.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'priorizar_pocas_cosas_bien'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 183 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 184
+  censos escritos: atribuciones, denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\repartir_equipo_cartera_horizontes.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'repartir_equipo_cartera_horizontes'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 184 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino repartir_responsabilidad_contratar_equipo  [Repartir la responsabilidad de contratar cuando ya no puedes estar en todo]
+    levantada por: familia_id
+    similitud_texto    0.330 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.438 (umbral 0.60)
+    paso 3 del candidato contra paso 7 de repartir_responsabilidad_contratar_equipo
+
+BLOQUEADO: faltan veredictos para repartir_responsabilidad_contratar_equipo
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "repartir_responsabilidad_contratar_equipo|CONTINUA|madre=repartir_responsabilidad_contratar_equipo|que añade el hijo a la madre"
+    --veredicto "repartir_responsabilidad_contratar_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "repartir_responsabilidad_contratar_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "repartir_responsabilidad_contratar_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\involucrar_varios_entrevistadores.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'involucrar_varios_entrevistadores'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 185 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino repartir_equipo_cartera_horizontes  [Repartir el equipo como una cartera, por horizonte de tiempo]
+    levantada por: similitud_texto
+    similitud_texto    0.375 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.403 (umbral 0.60)
+    paso 3 del candidato contra paso 6 de repartir_equipo_cartera_horizontes
+
+BLOQUEADO: faltan veredictos para repartir_equipo_cartera_horizontes
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "repartir_equipo_cartera_horizontes|CONTINUA|madre=repartir_equipo_cartera_horizontes|que añade el hijo a la madre"
+    --veredicto "repartir_equipo_cartera_horizontes|REPITE|por que no añade procedimiento"
+    --veredicto "repartir_equipo_cartera_horizontes|SANO|por que no son el mismo trabajo"
+    --veredicto "repartir_equipo_cartera_horizontes|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
