@@ -229,3 +229,6 @@ Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion
 [pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
 Reemplazalos por el guion corto normal y vuelve a intentarlo.
 [2026-09-11 23:37:45] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-12 00:22:41] auditor listo (USD 17.001962), 2695s, intento 1 de 7
+[2026-09-12 00:22:41]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-12 00:22:41] VUELTA 2 : EXTRACTOR (claude-opus-5)
