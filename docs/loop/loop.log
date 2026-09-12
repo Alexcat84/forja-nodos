@@ -283,3 +283,31 @@ GATE VERDE.
 BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 [pre-commit] verde
 [2026-09-12 06:15:21] VUELTA 3 : AUDITOR (claude-opus-5)
+[2026-09-12 06:42:38] auditor listo (USD 9.943757000000002), 1637s, intento 1 de 7
+[2026-09-12 06:42:39]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-12 06:42:39] DETENIDO en la vuelta 4: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-12 06:42:39] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-12 08:36:00] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-12 08:36:00] ROL INICIAL FORZADO por EMPEZAR_EN: extractor (gana sobre la medicion)
+[2026-09-12 08:36:00] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-12 09:18:46] extractor listo (USD 22.425904), 2566s, intento 1 de 7
+[2026-09-12 09:18:46] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-12 09:18:46]   hereda 3 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-12 09:47:55] auditor ciego listo (USD 11.415518), 1749s, intento 1 de 7
+[2026-09-12 09:47:56]   herencia declarada: acta leida por su huella y los 3 heredados resueltos
+[2026-09-12 09:47:56]   apertura ciega sellada: 8774c59fc95f21483daae2fdabc185199635db26
+warning: in the working copy of 'docs/loop/APERTURA_CIEGA.md', CRLF will be replaced by LF the next time Git touches it
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 3 hallazgo(s)
+  docs/loop/ultimo_apertura.json linea 1 columna 1321: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 2968: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 4198: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-12 09:47:57] VUELTA 1 : AUDITOR (claude-opus-5)

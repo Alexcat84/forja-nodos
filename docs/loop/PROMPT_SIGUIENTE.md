@@ -1,219 +1,195 @@
-# ENCARGO DE LA VUELTA 18: **CERRAR LA 17 ANTES DE ABRIR NADA**, EL NODO QUE SE DEBE, Y `cap_08` A `cap_10` A TRES POR VUELTA
+# ENCARGO DE LA VUELTA 19: LOS REGISTROS, DOS ARREGLOS DE BANDEJA, Y **`cap_09` SOLO**
 
-*Escrito por el **auditor** al cerrar la **ACTA 17** (`docs/loop/ACTA_AUDITOR.md`, la
-seccion que abre con `# ACTA 17`) **y reescrito con las cuatro decisiones del fundador del
-12 sep 2026**, archivadas en
-`docs/loop/paradas/2026-09-12-la-fase-ciega-lee-el-acta.md`. Sede del auditor por
-`AUDITOR_FORJA.md` 5.6.*
+*Escrito por el **auditor** al cerrar la **ACTA 18** (`docs/loop/ACTA_AUDITOR.md`, la seccion
+que abre con `# ACTA 18`). Sede del auditor por `AUDITOR_FORJA.md` 5.6.*
 
 **Commitea y pushea lo pendiente en la rama activa antes de tocar nada.**
 
 ---
 
-## LO QUE LA PARADA DEJA DECIDIDO, EN CINCO LINEAS
+## LO QUE LA VUELTA 18 DEJA DECIDIDO, EN CINCO LINEAS
 
-- **LA PARADA FUE DEL AUDITOR Y NO TUYA.** Su racha propia llego a 3 de 3 con un
-  `REMEDIO ROTO` que se escribio el mismo. **Tus tres rachas siguen lejos:** `CLASE`
-  **0 de 2**, `CIFRA PUBLICADA` **0 de 2**, `REPORTE` **0 de 3**.
-- **LA RACHA DEL AUDITOR SE REINICIA A 0 DE 3, Y CON CONDICION MECANICA:** `D.40`, **LO
-  QUE UN AUDITOR LE DEJA AL SIGUIENTE LO ENTREGA EL ARNES, NO LA MEMORIA.** Ya corre:
-  `src/herencia.py`, cableada en `apertura_ciega()`, con su caso positivo en el banco de
-  pruebas del arnes y 7 pruebas de unidad. **A ti no te pide nada**, pero te lo digo
-  porque el arnes ahora puede **pararse antes de que el acta se escriba**, y eso sale en
-  el log.
-- **EL TRAMO BAJA A TRES CAPITULOS POR VUELTA** (decision 2). **No lo bajo el freno de
-  `PASOS INVENTADOS`**, que no se disparo (peor unidad `cap_04` **6,25**, tope 10): lo
-  bajo `EXTRACTOR.md` 12.4, **cumplido por sus dos mitades** en la vuelta 17.
-- **Y CON UNA REGLA DE PRECEDENCIA NUEVA QUE MANDA SOBRE EL TRAMO: EL TECHO DE
-  CANDIDATOS POR VUELTA MANDA SOBRE EL DE CAPITULOS.** Esta escrita en
-  `EXTRACTOR.md` 12.4, en mi `8.1` y en `ORDEN_DE_LOTES.md`. **Leela antes de la TAREA 3**,
-  porque esta vuelta la vas a usar.
-- **El lote 4 sigue ABIERTO y no se inserta nada de el** (`D.39`: solo se inserta un lote
-  **CERRADO**).
+- **NO HAY PARADA, Y TU VUELTA 18 SALIO LIMPIA DE CLASE.** Los **diez** discutibles que
+  marcaste se sostienen **los diez**, y en tres de ellos mi lectura ciega habia caido del
+  mismo lado sin haberte visto. `CLASE` **0 de 2** y `CIFRA PUBLICADA` **0 de 2**.
+- **TU RACHA `REPORTE` SUBE A 1 DE 3, POR UNA SOLA FRASE**: tu discutible 8 dice que **los dos
+  `grep`** del negativo de `D.37` estan pegados en `M.5.5`, **y solo hay uno**. El negativo es
+  cierto (corri el mio, mas ancho, y salio igual), **pero una ruta que promete prueba es
+  cifra** (cosecha `7.B`) y esa vive en tabla. La otra, `.barrido_v18/pob.jsonl` rotulado
+  *del arnes* cuando es **mio**, se registra y **no acumula**.
+- **MI RACHA TAMBIEN SUBE A 1 DE 3, Y POR LA MISMA FORMA DE AVERIA:** publique **18 piezas**
+  de `cap_08` donde hay **20**, y mi frontera dejaba tres lineas sin cubrir. **Tu corriste la
+  comprobacion de cobertura y yo no.** Esta entero en mi `7.1`.
+- **EL TRAMO DEL LOTE SIGUE EN TRES CAPITULOS**, pero **esta vuelta corre a UNO**, y el
+  motivo esta medido en la TAREA 3. **El techo de candidatos por vuelta manda sobre el de
+  capitulos** (`EXTRACTOR.md` 12.4 punto 4).
+- **El lote 4 sigue ABIERTO** (9 de 15 unidades, 63 candidatos, 584 pasos, **0 en el grafo**)
+  y **no se inserta nada de el** (`D.39`: solo se inserta un lote **CERRADO**).
 
 ---
 
-## TAREA 0: **CIERRA LA VUELTA 17. VA PRIMERA Y NO SE SOLAPA CON NADA**
+## TAREA 1: LOS REGISTROS, Y **LAS CINCO ADJUDICACIONES DE LA `ACTA 18`**
 
-*Decision 3 del fundador, literal: **LA VUELTA 17 SE CIERRA ANTES DE ABRIR NADA.***
-
-**El trabajo de la 17 esta hecho y esta bien. Lo que no esta es EN SU SEDE.** Mi `ACTA 17`
-1.3 lo midio al abrir mi turno:
-
-    $ git status --porcelain
-      24 ??  cuarentena/scott_radical_candor/   (los 24 candidatos de cap_07)
-       5 ??  .frag_disc.md .frag_t4b.md .frag_t4c.md .frag_t4d.md .frag_t4e.md
-       1 M   docs/loop/REPORTE.md
-
-**0.a. ABSORBE LOS CINCO `.frag_*.md` EN `REPORTE.md`, CON SUS ONCE DISCUTIBLES.** Un
-fichero `.frag_*.md` **no es sede de nada** (`EXTRACTOR.md` 14). Los once discutibles de
-`.frag_disc.md` **yo los trate como marcados y lo razone en mi `3.0`**: su marca de tiempo
-es de las 04:49, **antes** de que mi fase ciega empezara a las 04:50, y mi apertura declara
-que no los leyo. **Esa absolucion vale para la metrica de la 17 y no se repite:** lo que se
-marca en la 18 se marca **dentro de `REPORTE.md`**.
-
-**0.b. COMMITEA LOS 24 CANDIDATOS DE `cap_07`, UN COMMIT POR CAPITULO**, que es lo que el
-encargo de la 17 ya pedia. Son todos de `cap_07`, comprobado por las dos medidas:
-
-    $ git ls-files --others --exclude-standard cuarentena/scott_radical_candor/ | wc -l   ->  24
-    $ grep -l "cap_07" cuarentena/scott_radical_candor/*.json | wc -l                     ->  24
-    (los dos conjuntos comparados: identicos)
-
-> **UNA CIFRA MIA QUE TE TRAIGO PARA QUE LA ADJUDIQUES TU, Y VA CONTRA MI** (`D.38.3`, y
-> mi `5.5`): **mi propia `ACTA 17` dice `25 candidatos` en su seccion 5.2 y `24` en su
-> 1.3.** El fundador firma **24** y las dos medidas de arriba dan **24**. **Remidelo tu,
-> con tu instrumento pegado**, y publica cual de las dos cifras de mi acta es la falsa.
-> **No cambia ninguna decision** (las dos pasan del techo de 15), **pero es cifra publicada
-> en acta mia y la sede de `CIFRA PUBLICADA` la cubre.**
-
-**0.c. ARREGLA LAS DOS CABECERAS DE PUNTERO** (`ACTA 17` 4.5). **Las lineas citadas son
-buenas; lo que dice de menos es la cabecera:**
-
-| candidato | declara | pero sus pasos citan |
-|---|---|---|
-| `crear_espacio_seguro_madurar_ideas_nuevas` | `L181-195` | `L177` y `L179` |
-| `establecer_credibilidad_pericia_humildad` | `L349-357` | su `P1` cita `L313` |
-
-**NO ES CAIDA DE NINGUNA ESPECIE y la sede lo decide** (mi `5.2`): vive en el
-`resumen_teorico` de un candidato de `cuarentena/`, que no es sede de `CIFRA PUBLICADA`.
-**Se corrige antes de insertar**, y esta vuelta no inserta: **se corrige igual, porque
-insertar con la cabecera corta es lo que la deja dentro del grafo.**
-
-**0.d. DEJA EL ARBOL LIMPIO.** `git status --porcelain` sin nada tuyo antes de abrir la
-TAREA 1. **Los artefactos del arnes no se barren** (`D.33`).
-
-> **POR QUE VA PRIMERA Y SOLA:** la vuelta 17 produjo trabajo bueno que no cabia, y esa es
-> exactamente la parada madre de `EXTRACTOR.md` 12.4 (la bateria sin techo, 5 sep 2026).
-> **Cerrar lo de ayer antes de abrir lo de hoy no es tramite: es lo unico que impide que la
-> 18 herede el mismo problema.**
-
----
-
-## TAREA 1: LOS REGISTROS, Y LAS SEDES QUE CAMBIARON
-
-**1.a. LEE LA `ACTA 17` ENTERA** y recoge sus adjudicaciones **sin reabrirlas**, salvo que
+**1.a. LEE LA `ACTA 18` ENTERA** y recoge sus adjudicaciones **sin reabrirlas**, salvo que
 encuentres un hecho nuevo; si lo encuentras, **lo traes con su medida y no lo resuelves
 copiando** (`EXTRACTOR.md` 5).
 
-**1.b. LEE LA PARADA ARCHIVADA**,
-`docs/loop/paradas/2026-09-12-la-fase-ciega-lee-el-acta.md`, **y las cuatro decisiones
-literales de su cabecera.** Es doctrina firmada y manda sobre todo lo que yo escriba aqui.
+**1.b. LAS CINCO ADJUDICACIONES, para que no tengas que buscarlas:**
 
-**1.c. LAS SEDES DE DOCTRINA QUE CAMBIARON, para que no las midas contra su version
-vieja:**
+| # | que se adjudico | como quedo |
+|---:|---|---|
+| **1** | **la frontera de `cap_08`** | **GANA LA TUYA: 20 piezas, 13 dan nodo, 12 nodos, 7 no extraidas.** La mia (18) dejaba `L9`, `L187` y `L189` sin cubrir. **Tu suma de filas cuadra con el cuerpo al digito y la mia no** |
+| **2** | **la errata de metodo de `D.38.4`** | **CORREGIDA EN EL BANCO por correccion declarada**, sin borrar el texto viejo: la poblacion del barrido es grafo mas bandejas **menos el propio candidato**, y por eso se barre uno por vez. Adjudicada por extension de la guarda `auto_arista` |
+| **3** | **el criterio de recuento de las lecturas `SANO` sin sede**, que tu subiste como pregunta | **ESCRITO: una lectura `SANO` sin sede es UN PAR** (candidato contra vecino) leido y clasificado cuya linea no ha podido escribirse en `bitacora/`. **Es la unidad que la propia sede usa.** Con ese criterio: **8 al cerrar la `ACTA 17`** y **10 al cerrar la mia** |
+| **4** | **tu cierre corto en `cap_08`** | **BIEN CERRADO, y por la LETRA de `12.4` punto 4** (*tramo por vuelta: entre cinco y quince candidatos*), **no por una extension**. Y lo **declaraste** con su cifra tres veces: `M.5.9`, `M.7.7` y `M.7.8`. **Cero caida** |
+| **5** | **la sede del desvio de atribucion** de `integrar_trabajo_vida` `P4` | **NO es puente y NO es caida de ninguna especie** (vive en `cuarentena/`, que no es sede de `CIFRA PUBLICADA`), **igual que las dos cabeceras de puntero de la vuelta pasada.** Pero **se corrige antes de insertar**, y va en la TAREA 2 |
 
-| sede | que cambio |
-|---|---|
-| `docs/BANCO_DE_REGLAS.md` | **`D.40` nueva**, con su mesa de evidencia y su caso positivo |
-| `docs/loop/EXTRACTOR.md` 12.4 | **la regla de precedencia de los dos techos**, escrita dentro del punto 4 |
-| `docs/loop/ORDEN_DE_LOTES.md`, `docs/CALIBRACION_D4.md`, `AUDITOR_FORJA.md` 8.1 | **el tramo del lote 4 baja de CUATRO a TRES**, con correccion declarada en las tres |
-| `src/herencia.py`, `forja.py`, `orquestador_forja.sh`, `tests/` | **el instrumento de `D.40`**, su cableado, su caso positivo (escenario 14b del arnes) y 7 pruebas de unidad |
+**1.c. LAS TRES CORRECCIONES DECLARADAS QUE ESTA ACTA HACE, y dos de las tres son mias:**
 
-**1.d. Y LO QUE NO TIENES QUE HACER, que lo digo para que no lo busques:** las cuatro
-cifras de la vuelta 16 ya las remediste y yo las confirme (`ACTA 17` 2.1); **ninguna se
-reabre.**
+- **`D.38.4`** en `docs/BANCO_DE_REGLAS.md`, **ya escrita por mi** (no la toques).
+- **El `cinco` de mi `ACTA 17` 6** es falso: eran **8**. Corregido en mi `4.6`, **sin borrar
+  alli**. **Tu pregunta era buena y la respuesta iba contra mi.**
+- **Mis `18` piezas** de la apertura ciega sellada. Corregida en mi `4.1`.
 
----
+**1.d. Y UNA CIFRA MIA QUE TE PIDO QUE MIDAS TU, porque la mia no la puedo cerrar** (`8.3`,
+*si no puedes verificarla, lo dices y no la publicas como tuya*): **el reparto `9` mas `7`
+entre `cap_01` y `cap_03` no se puede remedir desde el arbol**, porque esos dos candidatos no
+nombran su `cap_NN` en ningun campo. **El total `16` lo firmo yo.** Si al hacer la TAREA 2
+puedes reconstruir el reparto contra `fuentes/scott_radical_candor/cap_01.md` y `cap_03.md`,
+**publicalo con su medida**; si no, **dilo y no lo inventes.**
 
-## TAREA 2: **EL NODO QUE SE LE DEBE A `cap_07`**
-
-*Decision 4 del fundador, literal: **ADJUDICACION AUTORIZADA.** Adjudicada por mi en la
-`ACTA 17` 4.1 y firmada por el fundador.*
-
-> **A `L155` A `L163` DE `cap_07` (`Adapt to a culture of listening`) SE LE EXTRAE SU
-> NODO.**
-
-**LA RAZON, Y NO ES UNA SEÑAL: ES UNA LECTURA** (`D.19`, mi `6.2`). El mismo capitulo
-extrajo **dos retratos identicos en forma** y dejo el tercero fuera:
-
-| tramo | que es | salio |
-|---|---|---|
-| `L377`, *Don't waste your team's time* (Sheryl) | retrato en pasado, sin un imperativo en el cuerpo, rotulo imperativo, actos nombrados uno a uno | **NODO** `proteger_tiempo_equipo_jefe`, 9 pasos |
-| `L415`, *Burnout* (Costolo) | lo mismo | **NODO** `cuidarse_agotamiento_centro_rueda`, 7 pasos |
-| `L155`, *Adapt to a culture of listening* (Astrid Tuminez) | **lo mismo** | **fuera, por ser caso** |
-
-**`D.27` no los separa**: en los tres el libro pone inventario de **medios**; en los tres
-son actos y no metas ni fines (restriccion 1); en ninguno hay adjetivo de adecuacion en el
-sitio del criterio (restriccion 2). **Y el caso ajeno tampoco los separa**, porque esta
-casa admite `TRANSCRIPCION DE CASO` con el caso nombrado dentro del paso, **y tu propio
-`cuidarse_agotamiento` lo hace con Costolo dentro de sus `P4` a `P7`. LA CONSISTENCIA ES LA
-REGLA.**
-
-**LOS CINCO MEDIOS QUE EL LIBRO NOMBRA UNO A UNO**, y que son los pasos: meses
-escuchando, citas sueltas, acudir a los actos publicos, no encadenar gente seguida, comida
-de verdad cuando invitas tu. **Con Astrid nombrada dentro de los pasos que la usen.**
-
-> **LO QUE ESTO NO ES, y lo repito porque es la mitad que vale mas que el nodo:** **no es
-> caida de ninguna especie** (ninguna regla obliga a la exhaustividad, mi `ACTA 15` 2.9) y
-> **no ensancha `D.27`: lo aplica igual a tres tramos iguales.** Tu marcaste esta pieza
-> como discutible **sabiendo que iba contra ti**, y eso es lo contrario de una caida.
-
-**Y LO QUE SIGUE ESPERANDO AL CIERRE DEL LOTE 4, sin cambios:** las **cuatro colas de
-arista** en su bloque titulado (`REPORTE.md` `L.4.d`, `D.29`) y las **cinco lecturas
-`SANO` sin sede**. **`D.39` solo abre la insercion de un lote CERRADO**, y el lote 4 esta
-abierto: **no les inventes sede.** Se repiten al cierre de tu reporte, como hasta ahora.
+**1.e. LO QUE NO TIENES QUE HACER, y lo digo para que no lo busques:** el `24` contra `25` ya
+lo adjudicamos los dos por separado y con el mismo resultado (**las dos ciertas, denominadores
+distintos**). **No se reabre.**
 
 ---
 
-## TAREA 3: EL LOTE 4, `scott_radical_candor`. **`cap_08` A `cap_10`, A TRES POR VUELTA**
+## TAREA 2: LOS DOS ARREGLOS DE BANDEJA, **ANTES DE QUE EL LOTE CIERRE**
 
-**EL TRAMO SON TRES CAPITULOS**, y estos son:
+*Ninguno de los dos es caida de ninguna especie y los dos se corrigen por el mismo motivo que
+las dos cabeceras de la vuelta pasada: **insertar con el dato torcido es lo que lo deja dentro
+del grafo.** Los dos son baratos. **Si la TAREA 3 se come la vuelta, esta pasa a la siguiente
+y lo declaras** (es la misma regla de precedencia de siempre).*
 
-| unidad | rotulo | palabras de cuerpo |
-|---|---|---:|
-| `cap_08` | `Relationships` | 6.140 |
-| `cap_09` | `Guidance` | **17.482** |
-| `cap_10` | `Team` | 8.976 |
+**2.a. EL DESVIO DE ATRIBUCION DE `integrar_trabajo_vida_mejor_version` `P4`.**
 
-*Las tres salen de `sed -n '8,$p' <fichero> | wc -w`, que es la medida de CUERPO de esta
-casa. **Remidelas tu antes de publicarlas**: una cifra de mi encargo no es fuente de una
-cifra tuya (`EXTRACTOR.md` 5).*
+    $ sed -n '27p' fuentes/scott_radical_candor/cap_08.md
+      "If YOU need to get eight hours of sleep to stay centered, those hours are not
+       something that you do for yourself at the expense of your work or your team..."
+    $ sed -n '35p' fuentes/scott_radical_candor/cap_08.md
+      "Here's what I need to do to stay centered: sleep eight hours..."
 
-> ### **Y AHORA LA REGLA QUE MANDA SOBRE ESA TABLA, QUE ES NUEVA Y ES DE ESTA VUELTA**
+**Tu `P4` escribe *las ocho horas de suenio que SU AUTORA necesita*, y `L27`, que es la linea
+que tu cabecera cita, se las dice al LECTOR.** Quien las tiene como receta propia es la autora
+en `L35`, **que es cuerpo de otra pieza**, y tu `P6` de `definir_receta_propia` lo escribe
+bien. **Reabre las dos lineas con tu `sed` pegado** (`D.35`), corrige la direccion del paso
+**sin borrar lo que decia** (declarada y fechada, como hiciste con las dos cabeceras), y
+**vuelve a pasar el candidato por la aduana**, porque una correccion lo vuelve a escribir
+(`EXTRACTOR.md` 16).
+
+**2.b. LOS 24 CANDIDATOS DE LA BANDEJA QUE NO NOMBRAN SU `cap_NN`.**
+
+    $ python (busca cap_NN en el json entero de los 63 de la bandeja), corrido por mi hoy
+      candidatos que SI nombran un cap_NN : 39
+      candidatos que NO lo nombran       : 24
+      los 24, por commit de alta:
+        7c3e224   10   cap_06 del lote 4
+        e65991d    7   cap_05 del lote 4
+        81aea10    4   TAREA 1 CERRADA (cap_04)
+        6920050    2   cap_00 a cap_03 del lote 4
+        84bccb6    1   TAREA 2 y TAREA 3 de cap_04
+
+**LA COSTUMBRE DE NOMBRAR LA UNIDAD EMPIEZA EN `cap_07`**, asi que los 24 son **todo lo que
+escribiste antes de esa vuelta**. Anade a cada uno **la unidad de la que salio, en su
+`resumen_teorico`**, leyendola del fichero fuente y no de una tabla. **NO ES MAQUINARIA Y NO
+LA PIDAS** (moratoria, `EXTRACTOR.md` 13): es una linea de texto en un campo que ya existe.
+**Y pasa cada uno por la aduana despues de tocarlo.** Si alguno no se puede atribuir leyendo,
+**declaralo y dejalo**: un candidato mal atribuido es peor que uno sin atribuir.
+
+---
+
+## TAREA 3: EL LOTE 4. **`cap_09` SOLO, Y TE DIGO POR QUE CON LA MEDIDA DELANTE**
+
+**EL TRAMO DEL LOTE SIGUE SIENDO TRES CAPITULOS Y ESTA VUELTA CORRE A UNO.** No es una
+contradiccion: **un encargo asigna el trabajo de una vuelta y la tabla fija el techo de un
+lote** (adjudicado en la `ACTA 12` 11 y vigente).
+
+| unidad | rotulo textual, leido del encabezado del fichero | cuerpo | proyeccion de candidatos |
+|---|---|---:|---|
+| **`cap_09`** | **`Guidance`** (`unidad: Cap. 6`) | **17.482** | **34**, **32** o **15**, segun la densidad. La tabla de abajo |
+| `cap_10` | `Team` (`unidad: Cap. 7`) | 8.976 | **pasa a la vuelta siguiente** |
+| `cap_11` | `Results` (`unidad: Cap. 8`) | 8.626 | **pasa a la vuelta siguiente** |
+
+**LAS TRES DENSIDADES, CADA UNA CON SU DENOMINADOR NOMBRADO**, que es la orden 2 de mi propio
+remedio y la aplico aqui antes que en ningun sitio:
+
+| densidad medida sobre | palabras por candidato | **`cap_09` (17.482) proyecta** |
+|---|---:|---:|
+| `cap_08`: 6.140 palabras entre **sus 12 candidatos** | **512** | **34** |
+| `cap_07`: 13.678 palabras entre **sus 25 candidatos** (los 24 de la vuelta 17 mas el nodo de la TAREA 2 de la 18) | **547** | **32** |
+| `cap_06`: 11.587 palabras entre **sus 10 candidatos**, la mas floja del lote | **1.159** | **15** |
+
+*Las de cuerpo salen de `sed -n '8,$p' <fichero> | wc -w`. **Remidelas tu antes de
+publicarlas**: una cifra de mi encargo no es fuente de una cifra tuya (`EXTRACTOR.md` 5), y
+esta acta viene justamente de corregir dos cifras mias.*
+
+> ### **LAS TRES PROYECCIONES DAN 15 O MAS, Y LA MAS ALTA DA MAS DEL DOBLE DEL TECHO.**
 >
-> **EL TECHO DE CANDIDATOS POR VUELTA MANDA SOBRE EL DE CAPITULOS** (`EXTRACTOR.md` 12.4,
-> decision del fundador del 12 sep 2026, punto 2).
->
-> **SI UN SOLO CAPITULO PASA DEL TECHO DE CANDIDATOS, LA VUELTA CIERRA EN ESE CAPITULO Y
-> LO DECLARA.** Los capitulos que le quedaban al tramo **pasan a la vuelta siguiente**. No
-> se parte un capitulo en dos vueltas y **no se estira el tramo para completar el numero.**
->
-> **COMO SE DECLARA, en tu reporte y en una linea:** *la vuelta cierra en `cap_NN` con N
-> candidatos, por encima del techo de 15; los capitulos restantes del tramo pasan a la
-> vuelta siguiente.*
->
-> **UNA VUELTA QUE CIERRA CORTO Y NO LO DICE NO ESTA APLICANDO ESTA REGLA:** se esta
-> quedando corta sin motivo escrito, **y eso si es caida de la especie `REPORTE`.**
+> `EXTRACTOR.md` 12.4 punto 4 dice **entre cinco y quince candidatos por vuelta**, y su regla
+> de precedencia dice **si un solo capitulo pasa del techo, la vuelta cierra en ese capitulo y
+> lo declara**, sin partirlo. **Encargarte tres capitulos cuando el primero solo ya pasa del
+> techo seria encargarte trabajo que la regla no te deja hacer.** Por eso van `cap_10` y
+> `cap_11` a la cola, **y no por una previsión mia de lo que vas a encontrar dentro.**
 
-**TE DIGO DONDE ESPERO QUE MUERDA, Y ES UNA LECTURA MIA QUE PUEDES TUMBAR CON TU MEDIDA:**
-**`cap_09` pesa 17.482 palabras de cuerpo, mas que `cap_07` (13.678), que dio 24
-candidatos.** Si la densidad se parece, **`cap_09` solo ya pasa del techo.** **No te estoy
-diciendo que pares en `cap_09`: te estoy diciendo que la regla existe para eso y que no
-hace falta que me preguntes.** Cierra donde el techo te diga y **declara donde cerraste.**
+**LO QUE TE TOCA DECIDIR A TI Y NO A MI:** si al cortar la frontera `cap_09` te sale **por
+debajo de 15**, abre `cap_10` y cierra ahi. **Si te pasa del techo, la vuelta es `cap_09` y
+nada mas.** En los dos casos, **declara donde cerraste y con que cifra**, en una linea:
+*la vuelta cierra en `cap_NN` con N candidatos, techo 15; los capitulos restantes del tramo
+pasan a la vuelta siguiente.*
+
+> ### **Y AHORA LO QUE MAS ME IMPORTA DE ESTA VUELTA, DICHO SIN ADORNO: CIERRA TU REPORTE.**
+>
+> `12.4` tiene **dos** disparadores y el segundo es *si una vuelta no cierra su reporte, la
+> siguiente baja el tramo*. **La vuelta 17 escribio 25 candidatos y no cerro su reporte**, y
+> eso costo una parada, una vuelta entera de recogida y el tramo bajado de cuatro a tres.
+> **Si `cap_09` te da treinta y pico, estas en el mismo sitio donde aquella se rompio.**
+>
+> **LO QUE ESO SIGNIFICA EN LA PRACTICA:** el cierre (`M.7` en tu numeracion) **no es lo
+> ultimo que se escribe si sobra tiempo: es parte del trabajo.** Si tienes que elegir entre
+> el ultimo candidato y el bloque de cierre con sus cinco guardas, **elige el cierre y declara
+> el candidato que falta.** Un capitulo con su cierre escrito se audita; sin el, no.
 
 **EL FRENO DE `PASOS INVENTADOS` SIGUE APARTE Y ENTERO**, y se publica igual: **fila por
-capitulo mas total del lote**, y **la escalada se decide sobre el peor capitulo, no sobre
-el promedio** (mi `8.2`). Tope **10**. **Que este otro techo se dispare no baja el volumen
-del lote: el volumen lo baja su propia cifra.**
+capitulo mas total del lote**, y **la escalada se decide sobre el peor capitulo, no sobre el
+promedio** (`AUDITOR_FORJA.md` 8.2). Tope **10**. Hoy la peor unidad es `cap_04` con **6,25**
+y el freno **no se dispara**.
 
-**LO DE SIEMPRE, que no cambia:** la fuente canonica ya esta; **informe en seco antes de
-insertar nada**; **un candidato por vez y en el orden del libro**; las aristas que la señal
-no levanta **se declaran en la misma vuelta en que insertas las partes** (`D.29`, `D.37`);
-y **un capitulo entero en la misma familia no es duplicado, es un libro que trata un tema**
-(`EXTRACTOR.md` 12).
+**LO DE SIEMPRE, que no cambia:** la fuente canonica ya esta; la frontera **publicada antes de
+cortar**, y **con la suma de sus filas cruzada contra el cuerpo medido aparte**, que es la
+comprobacion que a mi me falto; **un candidato por vez y en el orden del libro**, cada uno por
+la aduana **en el mismo acto**; las aristas que la señal no levanta **se declaran con razon
+escrita** (`D.29`, `D.37`); y **un capitulo entero en la misma familia no es duplicado, es un
+libro que trata un tema** (`EXTRACTOR.md` 12).
+
+**Y DOS COSAS QUE SE REPITEN AL CIERRE HASTA QUE EL LOTE 4 CIERRE, sin inventarles sede:**
+las **seis colas de arista** en su bloque titulado (`D.29`), y las **lecturas `SANO` sin
+sede**, que ahora **si tienen criterio de recuento** (TAREA 1.b, fila 3): **cuentalas por
+PARES y publica el acumulado con su denominador nombrado.**
 
 ---
 
-## SON CUATRO TAREAS Y EL TOPE SON CINCO
+## SON TRES TAREAS Y EL TOPE SON CINCO
 
-**Y la TAREA 0 no se negocia con las otras tres:** si el cierre de la 17 se come la vuelta,
-**la vuelta se cierra ahi y lo declaras.** Es la misma regla de precedencia de la TAREA 3
-aplicada al principio en vez de al final: **lo que no cabe, no cabe, y lo que se declara no
-es una falta.**
+**Y la precedencia entre ellas esta dicha:** la TAREA 1 es barata y va primera; la TAREA 2 es
+barata y **pasa a la vuelta siguiente si la 3 se come la vuelta**; **la TAREA 3 manda, y
+dentro de ella manda el cierre del reporte.**
 
 ## LAS PARADAS
 
-**Las de `AUDITOR_FORJA.md` 3 estan enteras y no las toca nada de este encargo.** Lo unico
-nuevo es que **el arnes puede detenerse antes de que se escriba el acta** si la apertura
-ciega no declara su herencia (`D.40`). **Esa parada es del auditor, no tuya**, y sale en
-`docs/loop/loop.log` con lo que falta nombrado.
+**Las de `EXTRACTOR.md` 7 estan enteras y no las toca nada de este encargo.** Y una que ya no
+lo es: **el criterio de recuento de los `SANO` sin sede estaba marcado como pendiente de
+doctrina y hoy esta adjudicado** (TAREA 1.b fila 3), asi que **no lo vuelvas a subir como
+pendiente**: si tu medida no cuadra con la mia, **traela con su cifra y su denominador.**
+
+**Cero guiones largos y cero guiones medios. Deja correr el hook. Si algo contradice una regla
+vigente, paras y lo traes. No adivines.**

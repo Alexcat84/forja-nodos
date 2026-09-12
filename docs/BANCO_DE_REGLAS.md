@@ -1466,6 +1466,39 @@ maquina para medir.
 decir *"barri sobre grafo mas bandejas"* sin decir **cuantos** y **sin el `wc -l`
 pegado** es exactamente la especie que `D.38.3` prohibe.
 
+> ### **CORRECCION DECLARADA, 12 sep 2026, `ACTA 18` del auditor: UN NODO NO ES VECINO DE SI MISMO**
+>
+> **EL METODO DE ARRIBA NO SE BORRA, porque su fondo es correcto: lo que falla es su
+> ejemplo.** Corrido tal como esta escrito, **no devuelve ni un vecino**, y esta es la
+> salida, de la fase ciega de la vuelta 18 (`APERTURA_CIEGA.md` seccion 6.2, sellada):
+>
+>     $ FORJA_DATASET=<grafo mas bandejas> python forja.py informe --carpeta cuarentena/scott_radical_candor
+>       candidatos revisados        : 63
+>       nodos en el grafo de destino: 429
+>       ENTRARIAN  0  |  BLOQUEARIAN  0  |  CAERIAN  63  |  CHOCAN  0
+>       POR QUE GUARDA CAEN
+>           63  el id ya vive en el grafo
+>
+> **LA RECETA METE LA BANDEJA EN LA POBLACION Y DESPUES BARRE ESA MISMA BANDEJA**, asi que
+> cada candidato se encuentra a si mismo, la guarda de id muerde primero y el barrido
+> **corta antes de llegar a buscar vecinos.** Un auditor que la cumpla al pie de la letra
+> publica **cero vecinos** y cree que ha barrido.
+>
+> **LO QUE LA REGLA DICE HOY:** la poblacion es el grafo mas las bandejas **menos el propio
+> candidato**, y por eso se barre **uno por vez**. **No es doctrina nueva y por eso lo
+> adjudica el auditor** (`AUDITOR_FORJA.md` 1.3, *si una regla escrita cubre el caso por
+> extension natural, se adjudica citandola*): esta casa ya sostiene en el codigo de su gate
+> que **un nodo no puede ser vecino de si mismo**, y esa guarda se llama `auto_arista`.
+>
+> **CORRIDA ASI, la misma poblacion (429 menos 1 igual a 428, trece veces) levanta 10
+> vecinos y 9 pares** donde la receta literal levantaba cero.
+>
+> **Y LA MEDIDA QUE DICE QUE ESTO YA VENIA PASANDO:** la `ACTA 17` publico `416 = 203 + 213`
+> y su testigo dice *contra 415 titulos*, que es `416` menos `1`. **Aquella vuelta ya barrio
+> con la exclusion puesta y no dejo escrito que la receta del banco no la trae.** Una regla
+> que solo funciona si quien la lee la arregla por su cuenta **no esta escrita: esta
+> adivinada.**
+
 ## D.39. LA INSERCION DE UN LOTE CERRADO ES AUTOMATICA (11 sep 2026, decision del fundador)
 
 *Cita: decision 3 del fundador del 11 sep 2026. **Es la sexta vez que el auditor
