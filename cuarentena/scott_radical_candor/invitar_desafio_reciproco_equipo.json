@@ -1,5 +1,5 @@
 {
-  "id": "invitar_desafio_hacia_arriba",
+  "id": "invitar_desafio_reciproco_equipo",
   "titulo": "Invitar a tus personas a cargo a desafiarte a ti tan directamente como tu les desafias a ellas",
   "denominaciones": {
     "nombre_largo": "La parte mas dificil de construir la confianza, segun el propio texto: que el desafio sea reciproco pese a la relacion de mando",
@@ -7,6 +7,10 @@
       {
         "idioma": "ingles",
         "termino": "encourage people to challenge you directly"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "reciprocal challenge"
       }
     ],
     "sigla": ""
@@ -22,8 +26,7 @@
     "Cuando vuelva a discutir con mas fuerza y le preocupe haberse pasado de la raya con su jefe, dejale claro que no se ha pasado. Russ lo hizo mandandole el trozo de Jerry Maguire en el que el cliente le dice al agente: esa es la diferencia entre nosotros, tu crees que estamos peleando y yo creo que por fin estamos hablando.",
     "Cuenta con lo que el texto dice que esto compra: aprendes mucho sobre ti mismo y sobre como te percibe la gente, y ese conocimiento permite a tu equipo y a ti conseguir mejores resultados."
   ],
-  "resumen_teorico": "El libro separa dos mitades de la dimension de desafiar directamente y dice cual es la dificil: desafiar a otros no es el problema, invitar a que te desafien a ti si. El caso de Russ y Elisse entra aqui como ejemplo nombrado y no como casa propia, siguiendo la regla de que el caso no es la casa: los dos medios concretos que el caso aporta, la regla de datos contra opiniones y la senial explicita de que no se ha cruzado ninguna raya, son del caso y van con su nombre pegado. Lo que el texto NO dice, y por eso no esta escrito aqui, es como se pide ese desafio la primera vez, ni que se hace cuando la persona sigue callada despues de invitarla, ni cada cuanto se repite la invitacion. Tambien queda fuera la generalizacion de la regla de Russ mas alla del caso: el texto la presenta como lo que Russ dijo en esa conversacion, tomandola de Jim Barksdale de Netscape con la receta al contrario, y no como una regla que el libro mande aplicar siempre."
-,
+  "resumen_teorico": "El libro separa dos mitades de la dimension de desafiar directamente y dice cual es la dificil: desafiar a otros no es el problema, invitar a que te desafien a ti si. El caso de Russ y Elisse entra aqui como ejemplo nombrado y no como casa propia, siguiendo la regla de que el caso no es la casa: los dos medios concretos que el caso aporta, la regla de datos contra opiniones y la senial explicita de que no se ha cruzado ninguna raya, son del caso y van con su nombre pegado. Lo que el texto NO dice, y por eso no esta escrito aqui, es como se pide ese desafio la primera vez, ni que se hace cuando la persona sigue callada despues de invitarla, ni cada cuanto se repite la invitacion. Tambien queda fuera la generalizacion de la regla de Russ mas alla del caso: el texto la presenta como lo que Russ dijo en esa conversacion, tomandola de Jim Barksdale de Netscape con la receta al contrario, y no como una regla que el libro mande aplicar siempre. CORRECCION DECLARADA DENTRO DEL ACTO: el id con el que este candidato se escribio primero fue invitar_desafio_hacia_arriba, y la aduana lo tumbo por la regla 3 de docs/REGLAS_DE_ID.md, preposicion o articulo prohibido, hacia. Es el segundo de los seis candidatos de cap_04 que cae por esa misma regla. El id nuevo toma reciproco del propio texto, que llama a esto reciprocal challenge en la linea 139, y el viejo no se guarda como alias porque nunca vivio en el grafo.",
   "dominio": "gestion_equipos",
   "estado": "vivo",
   "fuentes": [

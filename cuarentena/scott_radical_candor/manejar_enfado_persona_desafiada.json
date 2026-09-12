@@ -1,5 +1,5 @@
 {
-  "id": "manejar_enfado_tras_desafiar",
+  "id": "manejar_enfado_persona_desafiada",
   "titulo": "Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario",
   "denominaciones": {
     "nombre_largo": "Que hacer cuando lo que dijiste duele: reconocer el dolor, no fingir que no duele y no fingir que no hay problema",
@@ -22,7 +22,7 @@
     "En su lugar, ofrecete a ayudar a arreglar el problema.",
     "No finjas que no hay problema solo para intentar que alguien se sienta mejor."
   ],
-  "resumen_teorico": "Es el tramo mas literalmente procedimental del capitulo: el libro escribe cinco imperativos seguidos en un solo parrafo, y escribir los pasos es transcribirlos. Su valor no es la delicadeza sino que separa dos cosas que se confunden: reconocer el dolor no es retirar la critica. Las dos prohibiciones apuntan a las dos salidas faciles, negar el dolor y negar el problema, y la frase que se elimina del vocabulario es un ejemplar concreto de la primera. La atribucion de Colin Powell va en su sede y no como paso, porque el texto la usa para justificar la postura de partida y no para encargar nada. Lo que el texto NO dice, y por eso no esta escrito aqui, es cuanto tiempo se deja pasar antes de ofrecer la ayuda, que se hace si el enfado no se va, ni a quien se le cuenta.",
+  "resumen_teorico": "Es el tramo mas literalmente procedimental del capitulo: el libro escribe cinco imperativos seguidos en un solo parrafo, y escribir los pasos es transcribirlos. Su valor no es la delicadeza sino que separa dos cosas que se confunden: reconocer el dolor no es retirar la critica. Las dos prohibiciones apuntan a las dos salidas faciles, negar el dolor y negar el problema, y la frase que se elimina del vocabulario es un ejemplar concreto de la primera. La atribucion de Colin Powell va en su sede y no como paso, porque el texto la usa para justificar la postura de partida y no para encargar nada. Lo que el texto NO dice, y por eso no esta escrito aqui, es cuanto tiempo se deja pasar antes de ofrecer la ayuda, que se hace si el enfado no se va, ni a quien se le cuenta. CORRECCION DECLARADA DENTRO DEL ACTO: el id con el que este candidato se escribio primero fue manejar_enfado_tras_desafiar, y la aduana lo tumbo por la regla 3 de docs/REGLAS_DE_ID.md, preposicion o articulo prohibido, tras. Es la regla que mas cae de todas, 35 de los 65 rechazos del estreno, y cayo aqui tambien. El id nuevo no lleva preposicion y el viejo no se guarda como alias, porque nunca vivio en el grafo: no hay nada que resolver.",
   "dominio": "gestion_equipos",
   "estado": "vivo",
   "fuentes": [

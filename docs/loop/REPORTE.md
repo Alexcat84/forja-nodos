@@ -18589,3 +18589,303 @@ la arista se declara igual **pero con razon escrita que la sostenga**.
 > que es lo que hace la arista comprobable: el auditor abre el paso n y tiene que encontrar
 > ahi al hijo nombrado. **Los 14 pasos se abrieron y se leyeron; ninguno se dedujo del
 > titulo.**
+
+## J.5.5. LOS SEIS POR LA ADUANA, **UNO POR VEZ**, Y LAS DOS CAIDAS QUE SE CORRIGIERON EN EL ACTO
+
+*`EXTRACTOR.md` 16: **un candidato no esta escrito hasta que ha pasado la aduana**, y el que
+cae se corrige y se vuelve al paso 2. Los seis pasaron su informe individual.*
+
+| # | id con el que se escribio | primer informe | que guarda | id con el que quedo | segundo informe |
+|---:|---|---|---|---|---|
+| 1 | `revisar_ciclo_responsabilidades_relaciones` | **`[ENTRARIA]`** | | igual | |
+| 2 | `cuidar_persona_completa_equipo` | **`[BLOQUEARIA]`**, 3 vecinos | ninguna: es cola de lectura | igual | |
+| 3 | `manejar_enfado_tras_desafiar` | **`[CAERIA]`** | `REGLAS_DE_ID.md` **regla 3** | `manejar_enfado_persona_desafiada` | **`[ENTRARIA]`** |
+| 4 | `invitar_desafio_hacia_arriba` | **`[CAERIA]`** | `REGLAS_DE_ID.md` **regla 3** | `invitar_desafio_reciproco_equipo` | **`[ENTRARIA]`** |
+| 5 | `ajustar_franqueza_oido_oyente` | **`[ENTRARIA]`** | | igual | |
+| 6 | `delimitar_franqueza_radical_cinco_noes` | **`[ENTRARIA]`** | | igual | |
+
+### **LAS DOS CAIDAS SON LA MISMA REGLA, Y ES LA QUE `EXTRACTOR.md` 15.3 DICE QUE MAS CAE**
+
+    $ python forja.py informe cuarentena/scott_radical_candor/manejar_enfado_tras_desafiar.json
+    [CAERIA] manejar_enfado_tras_desafiar
+        guarda: el candidato rompe docs/REGLAS_DE_ID.md
+          id 'manejar_enfado_tras_desafiar': preposicion o articulo prohibido: tras (regla 3)
+
+    $ python forja.py informe cuarentena/scott_radical_candor/invitar_desafio_hacia_arriba.json
+    [CAERIA] invitar_desafio_hacia_arriba
+        guarda: el candidato rompe docs/REGLAS_DE_ID.md
+          id 'invitar_desafio_hacia_arriba': preposicion o articulo prohibido: hacia (regla 3)
+
+> **`tras` Y `hacia`. DOS DE SEIS, EL 33 POR CIENTO, Y LA MISMA REGLA LAS DOS VECES.**
+> `EXTRACTOR.md` 15.3 lo dice de esa regla: *es la que mas cae de todas*, 35 de los 65
+> rechazos del estreno. **Y me ha cazado dos veces en un capitulo teniendo la regla delante.**
+>
+> **DIGO POR QUE CREO QUE ME CAZO, Y NO ES EXCUSA, ES DONDE MIRAR LA PROXIMA VEZ:** las dos
+> preposiciones entraron **como parte de una locucion adverbial**, no como enlace entre dos
+> sustantivos. *tras desafiar* y *hacia arriba* no se leen como preposiciones al escribirlas,
+> se leen como una sola pieza de significado. **Los ejemplares de `15.1` son todos de
+> preposicion enlazante** (`convenio_paris_prioridad`, `tacticas_retencion_clientes`), y **la
+> locucion adverbial no tiene ejemplar en la lista.** Lo propongo en mi sede como un
+> ejemplar mas para `15.3`. No me lo adjudico.
+>
+> **LOS DOS IDS NUEVOS NO SE GUARDAN COMO ALIAS**, y la razon esta escrita en cada
+> `resumen_teorico`: **ninguno de los dos vivio nunca en el grafo**, asi que no hay nada que
+> resolver. Un alias para un id que no existio fabrica una entrada en el resolutor que no
+> apunta a ninguna historia.
+>
+> **Y LA CORRECCION QUEDA DENTRO DEL CANDIDATO, NO SOLO AQUI** (manual principio 6: una
+> correccion no borra, declara). Los dos `resumen_teorico` llevan el id viejo, la regla que
+> lo tumbo y de donde sale el id nuevo.
+
+## J.5.6. **EL INFORME DEL LOTE 4 AL CERRAR `cap_04`**, Y LA COLA DE LECTURA QUE ABRE
+
+    $ python forja.py informe --carpeta cuarentena/scott_radical_candor
+    candidatos revisados        : 8
+    nodos en el grafo de destino: 203
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 7
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 3
+      por candidato bloqueado          : menor 3, mediana 3, mayor 3
+      que señal levanta cada vecindad  : familia_id 2, paso_contra_nodo 1
+
+**8 CANDIDATOS: LOS 6 DE `cap_04` MAS LOS 2 QUE YA ESPERABAN** de `cap_03`. **Cero
+`[CAERIA]` y cero choques internos al cerrar.**
+
+> ### **Y LOS 8 SE QUEDAN EN CUARENTENA, QUE ES LO QUE `D.39` MANDA**
+>
+> **EL LOTE 4 ESTA ABIERTO**: `cap_05`, `cap_06` y `cap_07` no se han minado, y quedan
+> ademas `cap_08` a `cap_14` del fichero. **`D.39` solo abre la insercion de un lote
+> CERRADO**, y el encargo lo repite: *los dos candidatos que ya esperan siguen esperando*.
+> **No inserto ni uno, y no es cautela: meterlos seria una caida de dato**, porque `D.36`
+> solo se puede calcular sobre un lote completo y un candidato que entra antes se lleva por
+> delante la comparabilidad del lote entero.
+
+### LOS TRES VECINOS DE `cuidar_persona_completa_equipo`, **LEIDOS AHORA Y NO CUANDO TOQUE INSERTAR**
+
+*Los leo hoy **aunque no pueda escribir su veredicto**, porque la vuelta 15 ya enseño lo que
+cuesta llegar a la insercion con la cola sin leer. **Las tres lecturas van a mi sede y se
+cuentan en el cuadre de la TAREA 2 como lo que son: lecturas sin sede todavia.***
+
+**VECINO 1, `respetar_cuidar_persona_cargo` (`zhuo_manager`), familia_id 0,333. MI LECTURA:
+`SANO`, y es el par mas cercano de los tres.**
+
+| | `respetar_cuidar_persona_cargo` | `cuidar_persona_completa_equipo` |
+|---|---|---|
+| lo que aporta que el otro no tiene | el respeto **incondicional**, el no lo finjas porque se nota, el no confundir cuidar con dar la razon, y lo que esta en juego | las **dos causas** de que la gente falle (el mandato de mantenerlo profesional y el sentido de superioridad), los **tres descartes** por su nombre, y el **precio** de estar preparado para que te odien |
+
+**Y DIGO LOS DOS SOLAPES REALES, porque callarlos seria el fallo:** *dedicar el tiempo
+necesario a aprender que le importa* (P5 del vecino) contra *aprende que es importante para
+cada persona* (P6 mio), y *no somos personas distintas en el trabajo y en casa* (P6 del
+vecino) contra *traer tu persona entera al trabajo* (P8 mio). **Dos de ocho contra dos de
+diez.** No es `REPITE` porque ninguno de los dos se queda completo sin el otro, y **no es
+`CONTINUA` porque ninguno es la linea del que el otro despliega: son dos libros distintos
+tratando el mismo terreno**, y esta casa guarda la convergencia igual que guarda la
+contradiccion. **VA MARCADO COMO DISCUTIBLE 5.**
+
+**VECINO 2, `gestionar_personas_equipo` (`zhuo_manager`), familia_id 0,400, la mas alta de
+las tres. MI LECTURA: `SANO`, Y UNA ARISTA PROPUESTA QUE NO ES ESTA.**
+
+El vecino es **la cabeza de los cuatro frentes de gestionar personas** (P2 a P5). El cruce
+que la señal marca es **su P5 contra mi P6**, y son *entrena a cada persona para que de lo
+mejor de si* contra *aprende que es importante para cada persona*: **distintos**. `SANO`.
+
+> **LO QUE SI VEO AL LEERLO, Y LO PROPONGO EN MI SEDE SIN ADJUDICARMELO:** el **P2 del
+> vecino** es *Desarrolla relaciones de confianza con ellos*, **una linea**, y `cap_04` de
+> Scott es **un capitulo entero titulado `Build Radically Candid Relationships`**. La arista
+> `D.29` que eso pide **no tiene por hijo a mi candidato**, que es media dimension: tiene por
+> hijo a **`desplegar_marco_franqueza_radical`**, que es el marco de las dos dimensiones
+> completo.
+>
+> **NO LA ESCRIBO, Y POR DOS MOTIVOS SEPARADOS:** el hijo esta en cuarentena de un lote
+> abierto, asi que **no se puede cablear**; y **seria la primera arista entre dos libros
+> distintos de este grafo**, y eso no lo estreno yo sin que alguien lo diga. **Lo traigo como
+> pregunta al auditor: una arista madre e hijo puede cruzar la frontera de libro?** El
+> manual pone la frontera de libro sobre las **fuentes de un nodo**, no sobre sus aristas, y
+> no encuentro la linea que lo resuelva. **No adivino.**
+
+**VECINO 3, `usar_lenguaje_no_discriminatorio_entrevista` (`smart_who`), paso_contra_nodo
+**0,615** sobre umbral 0,60. MI LECTURA: `SANO`, Y ES EL HALLAZGO QUE MAS ME IMPORTA DE ESTA
+TAREA.**
+
+**LA UNICA SEÑAL FUERTE DE TODO EL LOTE 4 ESTA SOBRE EL PAR MENOS RELACIONADO DE LOS TRES.**
+Lo que cruza es mi P4 contra su P1:
+
+| | el texto |
+|---|---|
+| **su P1** | *Usa lenguaje no discriminatorio durante las entrevistas, **que es el primero de los dos sitios que el libro nombra***|
+| **mi P4** | *Busca tiempo para conversaciones de verdad, **que es el primero de los medios que el texto nombra*** |
+
+> # **NO SE PARECEN LOS PROCEDIMIENTOS: SE PARECE MI PLANTILLA. Y ESTO YA TIENE NOMBRE EN ESTA CASA.**
+>
+> La bitacora de esta misma vuelta lo bautizo en la linea 132, al leer otro par:
+> ***ES PARECIDO DE PLANTILLA PROPIA, y lo digo por su nombre porque es la especie que mas
+> veces ha levantado la senial 1 en esta vuelta.***
+>
+> **HOY LO MIDO EN LA SEÑAL 3 Y POR ENCIMA DE UMBRAL.** La formula *que es el primero / el
+> segundo / la otra de los N que el libro nombra* es **la forma en que este extractor marca
+> que un paso es transcripcion y no invento**, o sea **la huella de `D.30` aplicada**. Es
+> buena para la fidelidad **y le da de comer a `paso_contra_nodo`**, que compara pasos.
+>
+> **LA CONSECUENCIA, DICHA COMO MEDIDA Y NO COMO QUEJA:** `CALIBRACION_D4.md` midio la cola
+> falsa de `paso_contra_nodo` en **2,4 por candidato** sobre un catalogo de **3.169 nodos que
+> NO escribio este extractor**. **Los nodos que si escribio comparten plantilla entre si**, y
+> esa cola tiene que ser mayor sobre los propios. **No propongo mover el umbral**: un umbral
+> se juzga contra su cola y yo no tengo la medicion, tengo un caso.
+>
+> **LO QUE PROPONGO EN MI SEDE ES QUE SE MIDA:** correr la señal 3 sobre los 203 nodos de
+> casa y comparar su cola falsa con el 2,4 heredado. **Si la plantilla la infla, eso es un
+> dato sobre COMO ESCRIBE esta casa, no sobre el umbral.** Y es medible hoy, en una tarde,
+> con los nodos que ya hay.
+
+---
+
+# J.6. TAREA 2: **LA BITACORA AL DIA. CERO `CONTINUA` SIGUEN FUERA DE SU SEDE**
+
+*El encargo: **al cerrar, publica el cuadre: veredictos en la bitacora antes, escritos en
+esta vuelta, y cuantos siguen viviendo solo en el reporte, con su razon**.*
+
+## J.6.a. EL CUADRE, CORRIDO POR SU INSTRUMENTO
+
+    $ python .cuadre_bitacora_vuelta15.py
+    LA BITACORA HOY
+      veredictos en bitacora/VEREDICTOS.jsonl   : 147
+      de ellos con arista cableada              : 78
+      de ellos por lectura declarada            : 54
+      nodos en el grafo                         : 203
+
+    LAS FILAS DE VEREDICTO DEL REPORTE
+      filas de tabla con un veredicto           : 60
+      su par YA esta en la bitacora             : 15
+      sin dos ids conocidos en la fila, no cuenta: 18
+
+    LO QUE VIVE SOLO EN EL REPORTE: 27 pares distintos
+      A) los dos ids VIVEN EN EL GRAFO          : 16   (CONTINUA 0, SANO 16)
+      B) uno sigue en CUARENTENA, lote abierto  : 11   (CONTINUA 0, SANO 11)
+
+**LA CONVENCION DEL CONTEO, DECLARADA PORQUE LA CIFRA DEPENDE DE ELLA:** el lector recorre
+las **filas de tabla** de `REPORTE.md` que llevan un veredicto, se queda con las que nombran
+**dos ids conocidos entre comillas invertidas** (conocido es: vive en el grafo, o es un
+fichero de cuarentena) y comprueba el par contra la bitacora **en los dos sentidos**. **Las
+18 filas que no nombran dos ids conocidos no se cuentan, y se dice cuantas son.** El fichero
+es `.cuadre_bitacora_vuelta15.py`, entra al arbol, y **no escribe en ninguna sede**.
+
+## J.6.b. EL ANTES Y EL DESPUES
+
+| | |
+|---:|---|
+| veredictos en la bitacora **al abrir este turno** | **132** (`J.3.d.1`, remedido) |
+| **escritos en esta vuelta** | **15** |
+| veredictos en la bitacora **al cerrar** | **147** |
+
+**LOS 15, DESGLOSADOS POR COMO LLEGARON:**
+
+| via | cuantos | cuales |
+|---|---:|---|
+| **la aduana, al insertar** (`forja.py insertar --veredicto`) | **1** | el `SANO` del unico bloqueo del tramo, `actuar_conducta_contraria_valores` contra `reconocer_decision_dificil_valores` |
+| **la lectura declarada** (`forja.py arista`) | **14** | las 14 de `J.4.d`, esperadas 14 y escritas 14 |
+
+> ## **LA RESPUESTA A LA TAREA 2, EN UNA LINEA: DE LOS VEREDICTOS QUE VIVIAN SOLO EN `REPORTE.md`, LOS `CONTINUA` YA NO SON NINGUNO.**
+>
+> **Eran 4 pares con los dos ids vivos**, medidos por mi antes de tocar nada, mas **2 mas que
+> vivian en prosa y no en tabla** (las *ARISTA 1* y *ARISTA 2* de `H.2.3`, que el instrumento
+> no ve porque no son filas). **Los 6 estan hoy en `bitacora/VEREDICTOS.jsonl` con su paso
+> citado.** Y la frase que los tenia retenidos era literal:
+>
+>     $ grep -n 'LAS DOS ARISTAS SE DECLARAN AQUI' docs/loop/REPORTE.md
+>     14531:**LAS DOS ARISTAS SE DECLARAN AQUI Y NO ENTRAN AL GRAFO EN ESTA CORRIDA.** Cuando Alexis
+>
+> **`D.39` era la firma que esa frase estaba esperando.**
+
+## J.6.c. > # **LOS QUE SIGUEN SIN SEDE, CONTADOS Y TRAIDOS: SON 16 MAS 3, Y LOS 19 SON `SANO`**
+
+*El encargo me pide exactamente esto: **dejarla en el reporte, DECIRLO, y contar cuantas
+son**, sin inventar sede y sin forzar un `CONTINUA` que mi lectura no sostenga.*
+
+**ESPECIE A, 16 PARES: LOS DOS IDS VIVEN EN EL GRAFO Y EL VEREDICTO ES `SANO`.**
+
+    SANO  actuar_conducta_contraria_valores      <->  resolver_desencaje_valores_persona_equipo
+    SANO  alinear_equipo_proposito_comun         <->  alinear_prioridades_reporte_directivo
+    SANO  asignar_entrevistas_enfocadas_equipo   <->  involucrar_varios_entrevistadores
+    SANO  buscar_recomendaciones_confianza       <->  conducir_llamadas_referencia
+    SANO  buscar_recomendaciones_confianza       <->  pedir_referencias_red_personal
+    SANO  celebrar_logros_planificar_cambio      <->  inventar_tradiciones_celebrar_valores
+    SANO  contrastar_cultura_actual_aspirada     <->  evaluar_cultura_empresa_adjetivos
+    SANO  contrastar_cultura_actual_aspirada     <->  listar_bueno_mejorable_equipo
+    SANO  fijar_proceso_trabajo_equipo           <->  revisar_incentivos_trampas_equipo
+    SANO  ganar_confianza_personas_cargo         <->  vivir_primero_valor_declarado
+    SANO  hacer_repaso_posterior_proyecto        <->  juzgar_cultura_renuncias_equipo
+    SANO  mostrar_candidato_cuanto_quieres       <->  sostener_contacto_oferta_aceptacion
+    SANO  pedir_opinion_otros_mejorar            <->  vivir_primero_valor_declarado
+    SANO  rechazar_conducta_toxica_entrevista    <->  revisar_banderas_rojas_candidato
+    SANO  reconocer_decision_dificil_valores     <->  reconocer_recompensar_uso_metodo
+    SANO  reconocer_recompensar_uso_metodo       <->  revisar_incentivos_trampas_equipo
+
+**ESPECIE A BIS, 3 LECTURAS MAS, ESCRITAS HOY EN `J.5.6` Y EN PROSA, ASI QUE EL INSTRUMENTO
+NO LAS CUENTA Y LAS CUENTO YO A MANO:** los tres vecinos de `cuidar_persona_completa_equipo`,
+los tres `SANO`. **Van aparte y se suman:** el hijo esta en cuarentena de un lote abierto,
+asi que ademas de no tener sede **tampoco podrian escribirse aunque la tuvieran**.
+
+> ### **TOTAL DE LA ESPECIE SIN SEDE: 19 LECTURAS `SANO`. Y LAS 19 SON `SANO`, NI UNA ES OTRA COSA.**
+>
+> **ESO ES EL DATO QUE TRAIGO, y creo que dice mas que la cifra:** el hueco **no es un hueco
+> general de veredictos**, es **exactamente el hueco de una sola clase**. `CONTINUA` tiene su
+> via desde que existe `forja.py arista`; `REPITE` y `MUTUO` no han aparecido ni una vez en
+> esta especie. **`SANO` es el unico veredicto de esta casa que se puede concluir sobre un par
+> que ninguna señal junta, y es el unico que no tiene donde escribirse.**
+>
+> **Y DIGO POR QUE ESA ASIMETRIA NO ES CASUAL:** `CONTINUA` **produce** algo, una arista, y
+> por eso tiene sede. `SANO` **no produce nada**: es la afirmacion de que dos nodos pueden
+> convivir. **Una casa que solo guarda los veredictos que producen aristas guarda el trabajo
+> que anadio y pierde el trabajo que descarto**, y el trabajo que descarto es el que evita
+> que el proximo lector vuelva a leer el mismo par.
+>
+> **LOS 16 DE LA ESPECIE A SON PARES DE NODOS VIVOS: se pueden volver a leer en cualquier
+> momento y volverian a costar lo mismo.** Ahi esta el coste, y es el unico argumento que
+> pongo.
+>
+> **NO INVENTO LA SEDE** (el encargo lo prohibe por su nombre y `EXTRACTOR.md` 13 tambien) y
+> **no fuerzo ni uno a `CONTINUA`**. La decision es de Alexis y aqui esta la cifra: **19**.
+
+**ESPECIE B, 11 PARES: uno de los dos sigue en CUARENTENA de un lote ABIERTO.**
+
+    SANO  alinear_equipo_proposito_comun          <-> desplegar_marco_franqueza_radical      (espera el lote 4)
+    SANO  auditar_calendario_reuniones_semana     <-> repartir_semana_cuarenta_horas_jefe     (espera el lote 4)
+    SANO  comunicar_valores_diez_formas           <-> desplegar_marco_franqueza_radical      (espera el lote 4)
+    SANO  construir_apoyo_equipo_directivo_metodo <-> desplegar_marco_franqueza_radical      (espera el lote 4)
+    SANO  desplegar_marco_franqueza_radical       <-> instalar_metodo_contratacion_empresa   (espera el lote 4)
+    SANO  establecer_limites_cuidado_personal     <-> repartir_semana_cuarenta_horas_jefe     (espera el lote 4)
+    SANO  planificar_reduccion_trabajo_individual <-> repartir_semana_cuarenta_horas_jefe     (espera el lote 4)
+    SANO  repartir_semana_cuarenta_horas_jefe     <-> repartir_tiempo_atencion_mejores_equipo (espera el lote 4)
+    SANO  repartir_semana_cuarenta_horas_jefe     <-> reservar_media_hora_semanal_talento     (espera el lote 4)
+    SANO  repartir_semana_cuarenta_horas_jefe     <-> reservar_tiempo_reflexion_metas         (espera el lote 4)
+    SANO  repartir_semana_cuarenta_horas_jefe     <-> reservar_valor_unico_prioridades_arriba (espera el lote 4)
+
+**ESTOS 11 NO SON UN INCUMPLIMIENTO Y LOS SEPARO POR ESO:** los 11 esperan a
+`desplegar_marco_franqueza_radical` o a `repartir_semana_cuarenta_horas_jefe`, **los dos
+candidatos del lote 4**, que `D.39` manda dejar en cuarentena hasta que su lote cierre. **Su
+veredicto viaja con su candidato**, y llegara a la bitacora el dia que el lote 4 se cierre y
+se inserte. **Contarlos como deuda seria contar como deuda el cumplimiento de `D.39`.**
+
+**EL AVISO QUE DEJO PARA LA VUELTA QUE CIERRE EL LOTE 4, y es la leccion de esta:** de esos
+11, **la aduana solo escribira los que una señal levante.** Los demas caeran en la especie A
+en cuanto su candidato entre, **igual que los 16 de hoy.** Si la sede no existe entonces, la
+cifra crece.
+
+## J.6.d. LO QUE ESTA TAREA DEJA COMPROBABLE
+
+| | |
+|---|---:|
+| veredictos en la bitacora al abrir | 132 |
+| escritos en esta vuelta | **15** |
+| al cerrar | **147** |
+| `CONTINUA` que siguen fuera de su sede | **0** |
+| `SANO` sin sede posible hoy, con los dos ids vivos | **19** |
+| `SANO` que esperan con su candidato de un lote abierto | **11** |
+| **bloque de vigencia** sobre los 147 | **VERDE**, *todos siguen emitidos contra el texto que leyeron* |
