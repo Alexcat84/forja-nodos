@@ -1,0 +1,114 @@
+### abrazar_incomodidad_arrancar_critica_equipo   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] abrazar_incomodidad_arrancar_critica_equipo   (abrazar_incomodidad_arrancar_critica_equipo.json)
+
+### comprobar_criticas_hombre_mujeres_equipo   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] comprobar_criticas_hombre_mujeres_equipo   (comprobar_criticas_hombre_mujeres_equipo.json)
+    vecino exigir_critica_jefe_reticente  [levantada por: similitud_texto]
+      similitud_texto 0.402 | familia_id 0.125 | paso_contra_nodo 0.555
+      paso 1 del candidato contra paso 1 de exigir_critica_jefe_reticente
+    vecino correr_semana_arreglo_averias_gestion  [levantada por: similitud_texto]
+      similitud_texto 0.366 | familia_id 0.000 | paso_contra_nodo 0.431
+      paso 2 del candidato contra paso 7 de correr_semana_arreglo_averias_gestion
+
+### correr_semana_arreglo_averias_gestion   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] correr_semana_arreglo_averias_gestion   (correr_semana_arreglo_averias_gestion.json)
+    vecino comprobar_criticas_hombre_mujeres_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.431
+      paso 7 del candidato contra paso 2 de comprobar_criticas_hombre_mujeres_equipo
+
+### dar_guia_acto_cinco_consejos   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] dar_guia_acto_cinco_consejos   (dar_guia_acto_cinco_consejos.json)
+
+### dar_guia_humilde_tres_tecnicas   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] dar_guia_humilde_tres_tecnicas   (dar_guia_humilde_tres_tecnicas.json)
+    vecino elogiar_publico_criticar_privado_sus_tres_matices  [levantada por: similitud_texto]
+      similitud_texto 0.350 | familia_id 0.091 | paso_contra_nodo 0.393
+      paso 15 del candidato contra paso 7 de elogiar_publico_criticar_privado_sus_tres_matices
+
+### dar_guia_util_cuatro_recordatorios   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] dar_guia_util_cuatro_recordatorios   (dar_guia_util_cuatro_recordatorios.json)
+
+### fomentar_guia_reciproca_companieros   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] fomentar_guia_reciproca_companieros   (fomentar_guia_reciproca_companieros.json)
+
+### elegir_medio_dar_guia_jerarquia_modos   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] elegir_medio_dar_guia_jerarquia_modos   (elegir_medio_dar_guia_jerarquia_modos.json)
+
+### impedir_punialadas_espalda_equipo   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] impedir_punialadas_espalda_equipo   (impedir_punialadas_espalda_equipo.json)
+
+### elogiar_publico_criticar_privado_sus_tres_matices   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] elogiar_publico_criticar_privado_sus_tres_matices   (elogiar_publico_criticar_privado_sus_tres_matices.json)
+    vecino dar_guia_humilde_tres_tecnicas  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.091 | paso_contra_nodo 0.405
+      paso 2 del candidato contra paso 15 de dar_guia_humilde_tres_tecnicas
+
+### medir_guia_propia_pegatinas_marco   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] medir_guia_propia_pegatinas_marco   (medir_guia_propia_pegatinas_marco.json)
+
+### evitar_personalizar_guia_aceptar_personal   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] evitar_personalizar_guia_aceptar_personal   (evitar_personalizar_guia_aceptar_personal.json)
+    vecino manejar_enfado_persona_desafiada  [levantada por: paso_contra_nodo]
+      similitud_texto 0.234 | familia_id 0.000 | paso_contra_nodo 0.867
+      paso 9 del candidato contra paso 5 de manejar_enfado_persona_desafiada
+
+### organizar_sistema_recoger_quejas_equipo   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] organizar_sistema_recoger_quejas_equipo   (organizar_sistema_recoger_quejas_equipo.json)
+    vecino elogiar_publico_criticar_privado_sus_tres_matices  [levantada por: similitud_texto]
+      similitud_texto 0.357 | familia_id 0.000 | paso_contra_nodo 0.470
+      paso 7 del candidato contra paso 2 de elogiar_publico_criticar_privado_sus_tres_matices
+
+### exigir_critica_jefe_reticente   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] exigir_critica_jefe_reticente   (exigir_critica_jefe_reticente.json)
+    vecino comprobar_criticas_hombre_mujeres_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.382 | familia_id 0.125 | paso_contra_nodo 0.577
+      paso 1 del candidato contra paso 1 de comprobar_criticas_hombre_mujeres_equipo
+
+### practicar_franqueza_radical_jefe_propio   (contra 443 de poblacion)
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] practicar_franqueza_radical_jefe_propio   (practicar_franqueza_radical_jefe_propio.json)
+

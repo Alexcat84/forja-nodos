@@ -1,0 +1,21 @@
+POBLACION: grafo 203 + bandejas 241 = 444
+### practicar_franqueza_radical_jefe_propio   [poblacion 443]   [447s]
+    SIN VECINO
+### organizar_sistema_recoger_quejas_equipo   [poblacion 443]   [328s]
+    VECINO elogiar_publico_criticar_privado_sus_tres_matices  |  paso_contra_nodo=0.47, similitud_texto=0.357
+### medir_guia_propia_pegatinas_marco   [poblacion 443]   [494s]
+    SIN VECINO
+### impedir_punialadas_espalda_equipo   [poblacion 443]   [281s]
+    SIN VECINO
+### fomentar_guia_reciproca_companieros   [poblacion 443]   [479s]
+    SIN VECINO
+### exigir_critica_jefe_reticente   [poblacion 443]   [203s]
+    VECINO comprobar_criticas_hombre_mujeres_equipo  |  familia_id=0.125, paso_contra_nodo=0.577, similitud_texto=0.382
+### evitar_personalizar_guia_aceptar_personal   [poblacion 443]   [441s]
+    VECINO manejar_enfado_persona_desafiada  |  paso_contra_nodo=0.867, similitud_texto=0.234
+### elogiar_publico_criticar_privado_sus_tres_matices   [poblacion 443]   [378s]
+    VECINO dar_guia_humilde_tres_tecnicas  |  familia_id=0.091, paso_contra_nodo=0.405, similitud_texto=0.352
+### elegir_medio_dar_guia_jerarquia_modos   [poblacion 443]   [480s]
+    SIN VECINO
+### dar_guia_util_cuatro_recordatorios   [poblacion 443]   [405s]
+    SIN VECINO
