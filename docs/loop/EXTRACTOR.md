@@ -326,6 +326,30 @@ Lo que este documento añade es **el ritmo de la vuelta**:
    reporte, la siguiente baja el tramo. Regla madre: la parada de la bateria sin
    techo (5 sep 2026), donde el bucle producia trabajo bueno que no cabia en una
    vuelta.
+
+   > ### **EL TECHO DE CANDIDATOS POR VUELTA MANDA SOBRE EL DE CAPITULOS**
+   >
+   > *Regla de precedencia, decision del fundador del 12 sep 2026, punto 2, sobre
+   > la parada de la vuelta 17.*
+   >
+   > **SI UN SOLO CAPITULO PASA DEL TECHO DE CANDIDATOS, LA VUELTA CIERRA EN ESE
+   > CAPITULO Y LO DECLARA.** No se reparte el capitulo en dos vueltas ni se
+   > estira el tramo para completar el numero de capitulos del lote.
+   >
+   > **EL EJEMPLAR, Y ES LO QUE LA HIZO FALTA:** `cap_07` del lote 4 dio **24
+   > candidatos contra un techo de 15**, y la vuelta 17 intento ademas los otros
+   > tres capitulos de su tramo: **no cerro su reporte.** El volumen del lote no
+   > estaba mal medido; lo que faltaba era decir **cual de los dos techos manda
+   > cuando chocan.**
+   >
+   > **COMO SE DECLARA, en el reporte y en una linea:** *la vuelta cierra en
+   > `cap_NN` con N candidatos, por encima del techo de 15; los capitulos
+   > restantes del tramo pasan a la vuelta siguiente.*
+   >
+   > **Y EL FRENO DE `PASOS INVENTADOS` SIGUE APARTE Y ENTERO.** Son dos
+   > instrumentos distintos: **este mide cuanto cabe en una vuelta; aquel mide si
+   > lo extraido esta en el libro.** Ninguno absuelve al otro, y que este se
+   > dispare no baja el volumen del lote: **el volumen lo baja su propia cifra.**
 5. **AL CERRAR EL LIBRO**, los cuatro barridos de la fase 3 del flujo, y la
    auditoria ciega de la fase 4 antes de darlo por integrado.
 

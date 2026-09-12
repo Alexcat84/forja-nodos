@@ -85,7 +85,9 @@ cada acta (`AUDITOR_FORJA.md` seccion 8, `CALIBRACION_D4.md` seccion 9.4):
     lote 2   DOS capitulos por vuelta    decision del fundador, 10 sep 2026
     lote 3   TRES capitulos por vuelta    3,31 por ciento, FIRMADA el 11 sep
              ~~TRES~~  la vuelta 12 corrio a CUATRO por encargo del fundador
-    lote 4   CUATRO capitulos por vuelta decision del fundador, 11 sep 2026
+    lote 4   ~~CUATRO~~ capitulos por vuelta decision del fundador, 11 sep 2026
+    lote 4   TRES capitulos por vuelta   EL TRAMO BAJA, decision del fundador
+                                         del 12 sep 2026, punto 2
 
 > **CORRECCION DECLARADA, 11 sep 2026, vuelta 13 del bucle, TAREA 1.d del encargo.**
 >
@@ -103,6 +105,36 @@ cada acta (`AUDITOR_FORJA.md` seccion 8, `CALIBRACION_D4.md` seccion 9.4):
 11 sep 2026, punto 5.8). Bajo del 36 por ciento del lote 1 **en un factor de
 once**, asi que el lote 4 y los siguientes corren a **CUATRO capitulos por
 vuelta**.
+
+> ### **CORRECCION DECLARADA, 12 sep 2026: EL LOTE 4 BAJA A TRES CAPITULOS POR VUELTA**
+>
+> *Decision del fundador del 12 sep 2026, punto 2, sobre la parada de la vuelta 17.*
+>
+> **LA CIFRA DE VOLUMEN NO SE HA MOVIDO y por eso el parrafo de arriba no se tacha:**
+> el peor capitulo del lote 4 es `cap_04` con **6,25**, por debajo del tope de 10,
+> **y por esa metrica el tramo seguiria en cuatro.** Lo que tumbo el cuatro es **el
+> otro disparador**, el de `EXTRACTOR.md` 12.4, **cumplido por sus dos mitades** en
+> la vuelta 17: por encima del techo de candidatos **y** sin cerrar su reporte.
+>
+> **Y VA CON LA REGLA DE PRECEDENCIA QUE FALTABA: EL TECHO DE CANDIDATOS POR VUELTA
+> MANDA SOBRE EL DE CAPITULOS.** Si un solo capitulo pasa del techo, **la vuelta
+> cierra en ese capitulo y lo declara**; los que quedaban del tramo pasan a la
+> siguiente. **EJEMPLAR: `cap_07` dio 24 candidatos contra un techo de 15.**
+>
+> **EL FRENO DE `PASOS INVENTADOS` SIGUE APARTE**, con su tope de 10 y su salida
+> escrita. Son dos techos distintos y ninguno sustituye al otro.
+>
+> **UNA DISCREPANCIA QUE DECLARO EN VEZ DE RESOLVERLA COPIANDO** (`D.38.3`): la
+> `ACTA 17` dice **25 candidatos** en su seccion `5.2` y **24** en su `1.3`, y el
+> fundador firma **24**. Lo que mido hoy, con el instrumento pegado:
+>
+>     $ git ls-files --others --exclude-standard cuarentena/scott_radical_candor/ | wc -l   ->  24
+>     $ grep -l "cap_07" cuarentena/scott_radical_candor/*.json | wc -l                     ->  24
+>     $ (los dos conjuntos comparados con diff)                                             ->  identicos
+>
+> **24, y son los mismos 24 por las dos medidas.** El `25` de la `5.2` queda sin
+> reproducir: **no cambia nada** (las dos cifras pasan de 15), **pero es cifra
+> publicada en acta y se sube al auditor de la vuelta 18 para que la adjudique.**
 
 **Y EL FRENO VA ESCRITO CON SU NUMERO, que es lo que lo hace freno:** la cifra se
 sigue publicando en cada acta, y **si sube por encima de 10 por ciento, se vuelve a

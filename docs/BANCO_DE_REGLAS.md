@@ -1526,3 +1526,91 @@ trae**. `D.39` acorta el camino entre cerrar y meter; **no acorta ninguna guarda
 `zhuo_manager`** que esperan, y **los 26 veredictos razonados que hoy viven solo en
 `REPORTE.md`** y que con la insercion pasan por fin a la bitacora, que es donde
 `D.26` los pone.
+
+## D.40. LO QUE UN AUDITOR LE DEJA AL SIGUIENTE LO ENTREGA EL ARNES, NO LA MEMORIA (12 sep 2026, decision del fundador)
+
+*Cita: decision 1 del fundador del 12 sep 2026, sobre la parada de la vuelta 17. **La
+racha propia del auditor se reinicia, y se reinicia con condicion mecanica**, porque el
+fallo es de arquitectura y no de voluntad.*
+
+### LO QUE LO SOSTIENE: tres actas seguidas, el mismo remedio, y el propio auditor diagnosticandolo
+
+| acta | el remedio que el auditor se escribio a si mismo | como salio |
+|---|---|---|
+| `ACTA 14` | un rotulo de **tres lineas** en la apertura ciega | roto |
+| `ACTA 15` 7.2 | el mismo, **simplificado a una sola cadena** *para que no pudiera volver a romperse* | roto igual |
+| `ACTA 16` 7.3 | `ACTA ANTERIOR LEIDA`, con su `grep` al lado, *que corre el auditor siguiente sin leerme* | roto por tercera vez: `grep -c` dio **0** donde el remedio dice **1** |
+
+**Y LA CAUSA NO LA PONE ESTA REGLA: LA ESCRIBIO EL AUDITOR, EN LA `ACTA 16` 7.1, UNA
+VUELTA ANTES DE VOLVER A CAER:**
+
+> *el problema no era la complejidad del rotulo: era que mi fase ciega **no lee la
+> `ACTA 15` antes de escribir**, y por eso el remedio no llega. Eso si lo puedo
+> arreglar.*
+
+**No lo arreglo.** Su `ACTA 17` 7.1 lo dice entero: *escribi el diagnostico, escribi el
+remedio, y volvi a hacer lo mismo.* **Tres intentos de arreglar con voluntad un problema
+que no es de voluntad son la prueba de que la voluntad no era la pieza.**
+
+> ### UN REMEDIO QUE HAY QUE ACORDARSE DE IR A BUSCAR NO ESTA ENTREGADO: ESTA ARCHIVADO
+>
+> `docs/loop/ACTA_AUDITOR.md` tiene **16.577 lineas**. Pedirle a la fase ciega que
+> recuerde abrirlo, encuentre dentro su propia tarea y la cumpla **es pedirle tres cosas
+> donde el arnes puede darle una.** `D.35` ya lo tenia escrito: *un remedio que se cumple
+> acordandose no es un remedio.*
+
+### La letra
+
+> **AL ABRIR LA FASE CIEGA, EL ARNES EXTRAE DEL ACTA ANTERIOR la seccion `TAREA
+> BLOQUEANTE DEL AUDITOR` y cualquier `REMEDIO` que el auditor anterior dejase escrito, y
+> LOS ANTEPONE AL PROMPT bajo el titulo `REMEDIOS PENDIENTES QUE HEREDAS`.**
+>
+> **EL SELLO DE APERTURA CIEGA EXIGE:**
+>
+>     ACTA ANTERIOR LEIDA: <hash>
+>
+> **y UNA LINEA POR REMEDIO HEREDADO**, `CUMPLIDO` o `NO APLICA` **con su motivo**.
+>
+> **SI FALTA ALGUNA, EL ARNES SE DETIENE ANTES DE QUE EL ACTA SE ESCRIBA, NOMBRANDO LO
+> QUE FALTA.**
+
+**Solo de la ULTIMA acta**, que es la que se hereda: un remedio de la vuelta 9 que
+sobreviva ocho actas no es herencia, es deuda vieja y se declara a mano.
+
+**`NO APLICA` EN BLANCO NO VALE.** Un remedio que no toca esta vuelta se declara y se
+dice por que; dejarlo sin motivo es perderlo con una palabra encima, que es justo lo que
+esta regla vino a impedir.
+
+**Y EL `<hash>` ES EL DE `git hash-object` SOBRE EL ACTA**, el mismo que usa el testigo:
+**no vale decir que se leyo otra version.**
+
+### La confirmacion que hace falta decir, porque parece lo contrario
+
+> **`docs/loop/ACTA_AUDITOR.md` ESTA EN LA LISTA DE LO QUE LA FASE CIEGA **SI** PUEDE
+> ABRIR.**
+
+**El acta es obra del auditor, no del extractor.** `D.34.2` retira **cuatro** ficheros de
+la fase ciega (`REPORTE.md`, `loop.log`, `ultimo_extractor.json`, `ultimo_auditor.json`)
+y **el acta no es ninguno de los cuatro. Leer su propia acta no es contaminacion: es lo
+unico que le deja saber que se encargo a si mismo.** El prompt ciego lo dice ahora con
+esas palabras, para que ninguna vuelta vuelva a tratarlo como si estuviera prohibido.
+
+### Donde vive, y con que caso positivo
+
+| | |
+|---|---|
+| el instrumento | `src/herencia.py`, `python forja.py herencia` y `python forja.py herencia --comprobar` |
+| el cableado | `orquestador_forja.sh`, dentro de `apertura_ciega()`, antes de invocar y antes de sellar |
+| la parada | `para_alexis_por_herencia()`, que devuelve los cuatro ficheros retirados a su sitio antes de salir |
+| **caso positivo** | `tests/prueba_arnes.sh` escenario **14b**: con el falso claude callando la linea, **el arnes para, nombra las dos que faltan, el auditor no corre y los cuatro ficheros vuelven** |
+| pruebas de unidad | `PruebaHerencia` en `tests/test_aceptacion.py`, **7 pruebas**, con el corte de la acta vieja y la huella ajena cazados |
+
+### Lo que esta regla NO hace
+
+**NO cumple el remedio por el auditor.** El arnes entrega y exige la declaracion; **quien
+cumple sigue siendo el auditor, y quien lo verifica sigue siendo el fundador.** Lo que
+deja de ser posible es **perder un remedio por no haber ido a buscarlo.**
+
+**Y NO BORRA NADA DE LA RACHA.** `D.38.2` sigue entera, con sus dos especies y sus tres
+escalones. **La racha se reinicia a 0 de 3 una sola vez**, por esta decision y con esta
+condicion mecanica puesta; **el siguiente `REMEDIO ROTO` acumula como cualquier otro.**

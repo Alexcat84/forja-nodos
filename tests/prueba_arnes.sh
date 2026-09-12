@@ -3,7 +3,7 @@
 #
 # Monta un repo de usar y tirar con su remoto bare, mete dentro
 # orquestador_forja.sh y un CLAUDE FALSO cuyo comportamiento se dicta por
-# variables de entorno, y corre CATORCE escenarios. Ninguno toca el repo de verdad.
+# variables de entorno, y corre DIECISEIS escenarios. Ninguno toca el repo de verdad.
 #
 # El claude falso es la unica forma de probar el arnes: un turno mudo o un fallo
 # instantaneo no se pueden pedir a un modelo de verdad, y una guarda que no se
@@ -11,6 +11,7 @@
 set -uo pipefail
 
 ORQUESTADOR="$1"
+RAIZ_REPO="$(cd "$(dirname "$ORQUESTADOR")" && pwd)"
 BANCO="$(mktemp -d)"
 trap 'rm -rf "$BANCO"' EXIT
 
@@ -57,6 +58,23 @@ montar_banco() { # $1 = nombre del escenario
   git -C "$taller" remote add origin "$BANCO/$nombre.git"
 
   cp "$ORQUESTADOR" "$taller/orquestador_forja.sh"
+  # EL BANCO LLEVA EL INSTRUMENTO DE VERDAD, y no es un lujo: D.40 depende de
+  # `python forja.py herencia`, y dejar que el arnes siga adelante cuando el
+  # instrumento falta seria darle una salida silenciosa a la guarda.
+  cp "$RAIZ_REPO/forja.py" "$taller/forja.py"
+  cp -r "$RAIZ_REPO/src" "$taller/src"
+  rm -rf "$taller/src/__pycache__"
+  # Un acta con una TAREA BLOQUEANTE de verdad, para que haya algo que heredar.
+  cat > "$taller/docs/loop/ACTA_AUDITOR.md" <<'ACTA'
+# ACTA 1. VUELTA 1 de prueba
+
+## 7. MIS CAIDAS
+
+> ### **TAREA BLOQUEANTE DEL AUDITOR DE LA VUELTA 2, ESCRITA POR EL AUDITOR DE LA 1**
+>
+> **Una orden y se comprueba corriendo un comando.** Pega el instrumento al lado
+> de cada cifra que publiques.
+ACTA
   echo "encargo de prueba del arnes" > "$taller/docs/loop/PROMPT_SIGUIENTE.md"
 
   # EL CLAUDE FALSO. Distingue el rol por el documento que el prompt nombra.
@@ -64,6 +82,8 @@ montar_banco() { # $1 = nombre del escenario
 #!/usr/bin/env bash
 prompt="${!#}"
 visto=""
+declara=""
+huella=""
 if echo "$prompt" | grep -q "APERTURA CIEGA"; then
   # EL TERCER ROL (D.34). El auditor ciego escribe su clasificacion antes de
   # que exista el reporte, y aqui deja constancia de si LO VIO o no: es lo
@@ -73,6 +93,15 @@ if echo "$prompt" | grep -q "APERTURA CIEGA"; then
   # EL AUDITOR CIEGO INTENTA ABRIR LOS CUATRO, y anota cual encontro. Es la
   # comprobacion de D.34 ampliada: no basta con que el arnes diga que los
   # retira, tiene que constar que NO estaban cuando alguien fue a por ellos.
+  # D.40: el ciego declara su herencia solo si se le pide. Sin esto, la guarda
+  # no tendria caso positivo.
+  if [ "${FALSO_HERENCIA:-si}" = "si" ]; then
+    huella="$(git hash-object docs/loop/ACTA_AUDITOR.md 2>/dev/null || echo sin-huella)"
+    declara="ACTA ANTERIOR LEIDA: $huella
+HEREDADO 1: CUMPLIDO"
+  else
+    declara=""
+  fi
   visto="ausentes:"
   for f in REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json; do
     if [ -f "docs/loop/$f" ]; then visto="$visto ENCONTRADO_$f"; else visto="$visto $f"; fi
@@ -85,7 +114,7 @@ fi
 # El prompt recibido se guarda para que la prueba pueda afirmar SOBRE EL. Sin
 # esto, MODO_INSERCION solo se podria comprobar por sus efectos, y el efecto de
 # "no insertes" es que no pasa nada, que es indistinguible de un turno vago.
-printf '%s' "$prompt" > "prompt_${rol}.txt"
+printf '%s' "$prompt" > "prompt_${rol// /_}.txt"
 sleep "${FALSO_SEGUNDOS:-2}"
 if [ "$escribe" = "vacio" ]; then
   # el turno TOCA su testigo pero lo deja en cero bytes: la ruta promete
@@ -95,6 +124,8 @@ if [ "$escribe" = "vacio" ]; then
   git commit -q -m "turno del $rol con testigo vacio (claude falso)" >/dev/null 2>&1
 elif [ "$escribe" = "si" ]; then
   echo "linea del $rol, $(date '+%H:%M:%S.%N')${visto:+ | $visto}" >> "$testigo"
+  [ -n "${declara:-}" ] && printf '%s
+' "$declara" >> "$testigo"
   git add -A >/dev/null 2>&1
   git commit -q -m "turno del $rol (claude falso)" >/dev/null 2>&1
   git push -q origin bucle >/dev/null 2>&1
@@ -282,8 +313,8 @@ salida="$(MODO_INSERCION=insertarr correr "$taller")"
 echo "$salida" | sed 's/^/  | /'
 comprobar "se detiene antes de arrancar"     "DETENIDO ANTES DE ARRANCAR"   "$salida"
 comprobar "nombra el valor recibido"         "insertarr"                    "$salida"
-comprobar "nombra los dos valores validos"   "cuarentena (el default) o insertar" "$salida"
-comprobar "y dice la regla"                  "NO UN DEFAULT"                "$salida"
+comprobar "nombra los dos valores validos"   "insertar (el default desde D.39) o cuarentena" "$salida"
+comprobar "y dice la regla"                  "NI CAE AL DEFAULT"            "$salida"
 comprobar_no "no gasta ni un turno"          "VUELTA 1 :"                   "$salida"
 
 # --------------------------------------------------------------- escenario 11
@@ -385,6 +416,44 @@ comprobar "el sello roto se caza"            "SELLO ROTO"                  "$sal
 comprobar "dice las dos huellas"             "Sellado "                    "$salida"
 comprobar "detiene la corrida"               "DETENIDO en la vuelta 1"     "$salida"
 comprobar "y escribe la parada"              "PARA_ALEXIS.md"              "$salida"
+
+# --------------------------------------------------------------- escenario 14
+echo ""
+echo "ESCENARIO 14: LA HERENCIA LA ENTREGA EL ARNES (D.40). Tres actas seguidas"
+echo "              perdieron el mismo remedio por tener que ir a buscarlo en un"
+echo "              fichero de dieciseis mil lineas. Ahora el arnes lo extrae del"
+echo "              acta anterior, lo antepone al prompt, y EXIGE que se declare."
+taller="$(montar_banco e14)"
+salida="$(correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "dice cuantos hereda"              "hereda 1 remedio(s) del acta anterior" "$salida"
+comprobar "y que los entrega el prompt"      "entregados en el prompt (D.40)" "$salida"
+comprobar "la herencia queda declarada"      "herencia declarada"           "$salida"
+comprobar "y la vuelta cierra"               "Arnes terminado"              "$salida"
+
+# LA HERENCIA LLEGO DE VERDAD AL PROMPT, no solo al log.
+prompt="$(cat "$taller/prompt_auditor_ciego.txt" 2>/dev/null || echo SIN_PROMPT)"
+comprobar "el prompt trae el titulo"         "REMEDIOS PENDIENTES QUE HEREDAS" "$prompt"
+comprobar "y el texto del remedio heredado"  "TAREA BLOQUEANTE DEL AUDITOR DE LA VUELTA 2" "$prompt"
+comprobar "y dice que el acta SI se abre"    "ACTA_AUDITOR.md SI ESTA Y SI PUEDES ABRIRLO" "$prompt"
+
+# --------------------------------------------------------------- escenario 14b
+echo ""
+echo "ESCENARIO 14b: EL CASO POSITIVO. Una apertura ciega SIN la linea de"
+echo "               lectura se caza, y el arnes se detiene ANTES de que se"
+echo "               escriba el acta. Sin este, el 14 solo probaria que el"
+echo "               prompt lleva texto."
+taller="$(montar_banco e14b)"
+salida="$(FALSO_HERENCIA=no correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la caza"                          "APERTURA CIEGA INCOMPLETA"    "$salida"
+comprobar "se detiene ANTES del acta"        "ANTES de que se escriba el acta" "$salida"
+comprobar "nombra la linea que falta"        "ACTA ANTERIOR LEIDA"          "$salida"
+comprobar "y el heredado sin declarar"       "HEREDADO 1"                   "$salida"
+comprobar "detiene la corrida"               "DETENIDO en la vuelta 1"      "$salida"
+comprobar_no "el auditor NO llega a correr"  "VUELTA 1 : AUDITOR"           "$salida"
+# Y LOS CUATRO FICHEROS VUELVEN: una parada no deja el arbol a medias.
+[ -f "$taller/docs/loop/REPORTE.md" ]   && { echo "    VERDE  el reporte vuelve a su sitio aun deteniendose"; verdes=$((verdes+1)); }   || { echo "    ROJO   el reporte no volvio tras la parada"; rojos=$((rojos+1)); }
 
 echo ""
 echo "================================================================"

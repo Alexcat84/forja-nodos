@@ -1,3 +1,50 @@
+# PARADA DEL 12 SEP 2026: LA FASE CIEGA LEE EL ACTA
+
+> ## LAS CUATRO DECISIONES DEL FUNDADOR, 12 sep 2026
+>
+> **1. LA RACHA DEL AUDITOR SE REINICIA con condicion MECANICA**, porque el fallo
+> es de arquitectura y no de voluntad (tres actas seguidas, el mismo remedio, y el
+> propio auditor diagnosticandolo en la 16): el arnes, al abrir la fase ciega,
+> **EXTRAE del acta anterior la seccion TAREA BLOQUEANTE DEL AUDITOR y cualquier
+> REMEDIO que el auditor anterior dejase escrito**, y los antepone al prompt de la
+> fase ciega bajo el titulo **REMEDIOS PENDIENTES QUE HEREDAS**; el sello de
+> apertura ciega **EXIGE** la linea `ACTA ANTERIOR LEIDA: <hash>` y una linea por
+> remedio heredado (`CUMPLIDO` o `NO APLICA` con motivo), y si faltan, **el arnes
+> se detiene ANTES de que se escriba el acta, nombrando lo que falta.** Confirma
+> que `ACTA_AUDITOR.md` esta en la lista de lo que la fase ciega SI puede abrir (es
+> obra del auditor, no del extractor). Caso positivo con el falso claude: una
+> apertura sin la linea se caza. Regla al banco **D.40: LO QUE UN AUDITOR LE DEJA
+> AL SIGUIENTE LO ENTREGA EL ARNES, NO LA MEMORIA.**
+>
+> **2. EL TRAMO BAJA**, por `EXTRACTOR.md` 12.4 cumplido por las dos mitades:
+> **tres capitulos por vuelta**, y una regla de precedencia escrita: **EL TECHO DE
+> CANDIDATOS POR VUELTA MANDA SOBRE EL DE CAPITULOS**: si un solo capitulo pasa del
+> techo (`cap_07` dio 24 contra 15), la vuelta cierra en ese capitulo y lo declara;
+> el freno de PASOS INVENTADOS sigue aparte.
+>
+> **3. LA VUELTA 17 SE CIERRA ANTES DE ABRIR NADA**: absorber los cinco
+> `.frag_*.md` en `REPORTE.md` con sus once discutibles, commitear los 24
+> candidatos de `cap_07` (un commit por capitulo), arreglar las dos cabeceras de
+> puntero que el acta nombra, y dejar el arbol limpio.
+>
+> **4. ADJUDICACION AUTORIZADA**: `cap_07` L155 a L163 (*Adapt to a culture of
+> listening*) se le extrae su nodo, por el motivo del acta: el mismo capitulo
+> extrajo dos retratos identicos en forma y dejo el tercero fuera; la consistencia
+> es la regla. **El resto queda como estaba**: lote 4 abierto, su insercion al
+> cierre por `D.39`, las cuatro colas de arista y las cinco lecturas `SANO` en su
+> bloque hasta entonces.
+
+> **ARCHIVADA.** Este fichero fue `docs/loop/PARA_ALEXIS.md` hasta que el fundador
+> resolvio lo que pedia. **Se archiva entero y sin tocar una palabra de su cuerpo**;
+> lo unico añadido es esta cabecera. El arnes solo mira `docs/loop/PARA_ALEXIS.md`,
+> asi que el bucle ya no esta detenido por el.
+>
+> **LA RACHA PROPIA DEL AUDITOR QUEDA EN 0 DE 3**, y la condicion no es una promesa
+> suya: es `D.40`, que ya corre en el arnes con su caso positivo y sus 7 pruebas de
+> unidad. **El siguiente `REMEDIO ROTO` acumula como cualquier otro.**
+
+---
+
 # PARA ALEXIS. **EL BUCLE SE DETIENE EL 12 SEP 2026, Y LA CAUSA ES EL AUDITOR**
 
 *Escrito por el auditor al cerrar la `ACTA 17` (`docs/loop/ACTA_AUDITOR.md`, la seccion

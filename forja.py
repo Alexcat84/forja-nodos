@@ -17,7 +17,8 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from src import (aduana, arista, censos, comun, gate, guiones, informe,  # noqa: E402
+from src import (aduana, arista, censos, comun, gate, guiones, herencia,  # noqa: E402
+                 informe,
                  resolutor, vigencia)
 
 AYUDA = __doc__
@@ -32,6 +33,8 @@ def main(argumentos):
 
     if comando == "insertar":
         return aduana.main(resto)
+    if comando == "herencia":
+        return herencia.main(resto)
     if comando == "arista":
         return arista.main(resto)
     if comando == "informe":

@@ -16,9 +16,12 @@
 # gastar un turno:
 #
 #   - la rama activa tiene que ser $RAMA, y si no, se detiene NOMBRANDO LAS DOS
-#   - MODO_INSERCION manda si el extractor inserta o deja en cuarentena, y su
-#     default es cuarentena: LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO
-#     UN DEFAULT (D.26)
+#   - MODO_INSERCION manda si el extractor inserta o deja en cuarentena. Su
+#     default paso a `insertar` el 11 sep 2026: LA INSERCION DE UN LOTE CERRADO
+#     ES AUTOMATICA (D.39), y la letra de lo que eso NO autoriza esta abajo
+#   - la fase ciega ENTREGA al auditor lo que el acta anterior le dejo escrito,
+#     y EXIGE que lo declare: lo que un auditor le deja al siguiente lo entrega
+#     el arnes, no la memoria (D.40, 12 sep 2026)
 #
 # EL CRITERIO NO VIVE AQUI, Y DESDE EL 9 SEP 2026 YA ESTA ESCRITO: vive en
 # docs/loop/EXTRACTOR.md (secciones 9 a 14) y docs/loop/AUDITOR_FORJA.md
@@ -28,8 +31,9 @@
 #
 # SE DETIENE SOLO SI: la rama activa no es $RAMA, MODO_INSERCION no es uno de
 # sus dos valores, existe docs/loop/PARA_ALEXIS.md, no hay prompt siguiente, se
-# alcanza MAX_VUELTAS, o una invocacion falla MAX_INTENTOS veces seguidas por
-# una de las dos especies que el arnes vigila (instantanea o turno mudo).
+# alcanza MAX_VUELTAS, una invocacion falla MAX_INTENTOS veces seguidas por una
+# de las dos especies que el arnes vigila (instantanea o turno mudo), el sello de
+# la apertura ciega se rompe, o la apertura ciega no declara la herencia (D.40).
 #
 # EL ESTADO VIVE EN EL REPO: cada vuelta sobrevive a caidas porque todo se
 # commitea y se pushea.
@@ -117,9 +121,9 @@ comprobar_arranque() {
     cuarentena|insertar) ;;
     *)
       log "DETENIDO ANTES DE ARRANCAR: MODO_INSERCION=\"$MODO_INSERCION\" no es un modo."
-      log "  Los dos valores son: cuarentena (el default) o insertar."
-      log "  LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO UN DEFAULT: un"
-      log "  modo mal escrito no se interpreta ni cae al default."
+      log "  Los dos valores son: insertar (el default desde D.39) o cuarentena."
+      log "  UN MODO MAL ESCRITO NO SE INTERPRETA NI CAE AL DEFAULT: adivinar una"
+      log "  autorizacion es justo lo que esta variable existe para impedir."
       exit 1
       ;;
   esac
@@ -364,7 +368,7 @@ PROMPT_EXTRACTOR="Estas en el repo forja-nodos. Lee docs/loop/EXTRACTOR.md (tus 
 APERTURA="$LOOP/APERTURA_CIEGA.md"
 SELLOS="$LOOP/SELLOS_APERTURA.jsonl"
 
-PROMPT_APERTURA_CIEGA="Estas en el repo forja-nodos, en la APERTURA CIEGA de tu turno de auditor. Lee docs/loop/AUDITOR_FORJA.md entero. AVISO: docs/loop/REPORTE.md, docs/loop/loop.log, docs/loop/ultimo_extractor.json y docs/loop/ultimo_auditor.json NO ESTAN en el arbol ahora mismo, y no estan a proposito: el mensaje final del extractor es un resumen de su propio reporte, asi que leerlo seria leer lo que vienes a leer a ciegas. NO los recuperes de git ni por ninguna otra via: recuperarlos invalida tu propia apertura y el arnes lo detecta y lo escribe. DOS REGLAS QUE MANDAN EN ESTA FASE. D.38.3: LA APERTURA CIEGA PUBLICA CLASES Y LECTURAS, NO CIFRAS CONTADAS A MANO; toda cifra que escribas aqui sale de un instrumento de la casa corrido en esta misma fase (wc -l, el contador de pasos, el barrido de vecinos) y va con su salida literal pegada al lado, y una cifra sin instrumento al lado NO SE PUBLICA. D.38.4: tu barrido de vecinos se hace sobre GRAFO MAS BANDEJAS, es decir dataset/nodos.jsonl mas todo lo que espera en cuarentena/<libro>/, porque un vecino que esta en la bandeja es vecino. Tu trabajo AHORA es clasificar el material por ti mismo y a ciegas: abre los candidatos del lote en cuarentena/, abre el texto fuente en fuentes/, y escribe en docs/loop/APERTURA_CIEGA.md tu clasificacion de cada candidato y de cada pieza que leas, con las lineas que la sostienen. Es la lectura que despues vas a comparar con la del extractor. Cuando termines, NO commitees: el arnes sella tu fichero y lo commitea el. Despues, en tu turno normal, recibiras el reporte."
+PROMPT_APERTURA_CIEGA="Estas en el repo forja-nodos, en la APERTURA CIEGA de tu turno de auditor. Lee docs/loop/AUDITOR_FORJA.md entero. AVISO: docs/loop/REPORTE.md, docs/loop/loop.log, docs/loop/ultimo_extractor.json y docs/loop/ultimo_auditor.json NO ESTAN en el arbol ahora mismo, y no estan a proposito. EN CAMBIO docs/loop/ACTA_AUDITOR.md SI ESTA Y SI PUEDES ABRIRLO: es obra tuya y no del extractor, no es ninguno de los cuatro que D.34.2 retira, y leerlo no es contaminacion sino lo unico que te deja saber que te encargaste a ti mismo (D.40): el mensaje final del extractor es un resumen de su propio reporte, asi que leerlo seria leer lo que vienes a leer a ciegas. NO los recuperes de git ni por ninguna otra via: recuperarlos invalida tu propia apertura y el arnes lo detecta y lo escribe. DOS REGLAS QUE MANDAN EN ESTA FASE. D.38.3: LA APERTURA CIEGA PUBLICA CLASES Y LECTURAS, NO CIFRAS CONTADAS A MANO; toda cifra que escribas aqui sale de un instrumento de la casa corrido en esta misma fase (wc -l, el contador de pasos, el barrido de vecinos) y va con su salida literal pegada al lado, y una cifra sin instrumento al lado NO SE PUBLICA. D.38.4: tu barrido de vecinos se hace sobre GRAFO MAS BANDEJAS, es decir dataset/nodos.jsonl mas todo lo que espera en cuarentena/<libro>/, porque un vecino que esta en la bandeja es vecino. Tu trabajo AHORA es clasificar el material por ti mismo y a ciegas: abre los candidatos del lote en cuarentena/, abre el texto fuente en fuentes/, y escribe en docs/loop/APERTURA_CIEGA.md tu clasificacion de cada candidato y de cada pieza que leas, con las lineas que la sostienen. Es la lectura que despues vas a comparar con la del extractor. Cuando termines, NO commitees: el arnes sella tu fichero y lo commitea el. Despues, en tu turno normal, recibiras el reporte."
 
 apertura_ciega() { # $1 = vuelta
   local vuelta="$1" refugio="" sello fecha reaparecidos=""
@@ -394,10 +398,42 @@ apertura_ciega() { # $1 = vuelta
   # Y EL LOG DE ESTA VENTANA VA APARTE, porque su fichero acaba de irse.
   LOG_ACTIVO="$refugio/loop_provisional.log"
 
+  # LO QUE UN AUDITOR LE DEJA AL SIGUIENTE LO ENTREGA EL ARNES, NO LA MEMORIA
+  # (D.40). Se extrae del acta anterior ANTES de invocar, y se antepone al
+  # prompt: tres actas seguidas perdieron el mismo remedio por tener que ir a
+  # buscarlo en un fichero de dieciseis mil lineas.
+  local herencia
+  herencia="$(python forja.py herencia 2>&1)"
+  local heredados
+  heredados="$(printf '%s' "$herencia" | grep -c '^HEREDADO [0-9]* ' || true)"
   log "VUELTA $vuelta : APERTURA CIEGA ($MODELO_AUDITOR), retirados: $retirar"
+  log "  hereda $heredados remedio(s) del acta anterior, entregados en el prompt (D.40)"
   invocar_claude "auditor ciego" "$MODELO_AUDITOR" \
-    "$PROMPT_APERTURA_CIEGA" \
+    "$herencia
+
+$PROMPT_APERTURA_CIEGA" \
     "$LOOP/ultimo_apertura.json" "$vuelta" "$APERTURA"
+
+  # Y SE COMPRUEBA ANTES DE SELLAR. Un remedio entregado y no declarado es un
+  # remedio perdido, que es justo lo que D.40 vino a impedir.
+  local faltan
+  if ! faltan="$(python forja.py herencia --comprobar 2>&1)"; then
+    log "APERTURA CIEGA INCOMPLETA en la vuelta $vuelta (D.40). El arnes se detiene"
+    log "  ANTES de que se escriba el acta. Lo que falta:"
+    printf '%s\n' "$faltan" | while IFS= read -r renglon; do log "    $renglon"; done
+    log "DETENIDO en la vuelta $vuelta: la apertura ciega no declaro su herencia (D.40). Ver $LOOP/PARA_ALEXIS.md"
+    para_alexis_por_herencia "$vuelta" "$faltan"
+    # los ficheros vuelven a su sitio antes de salir: una parada no deja el
+    # arbol a medias.
+    for fichero in $retirar; do
+      [ -f "$refugio/$fichero" ] && mv "$refugio/$fichero" "$LOOP/$fichero"
+    done
+    LOG_ACTIVO=""
+    [ -f "$refugio/loop_provisional.log" ] && cat "$refugio/loop_provisional.log" >> "$LOOP/loop.log"
+    rm -rf "$refugio"
+    exit 1
+  fi
+  log "  herencia declarada: acta leida por su huella y los $heredados heredados resueltos"
 
   # ¿REAPARECIO ALGUNO DURANTE LA FASE CIEGA? Recuperarlos de git es la unica
   # via que queda, y es un acto deliberado. Se dice, no se calla.
@@ -452,6 +488,33 @@ verificar_sello() { # $1 = vuelta. Cierto si la apertura ciega sigue siendo la s
   fi
   log "  sello de la apertura ciega verificado: intacto tras el turno"
   return 0
+}
+
+para_alexis_por_herencia() { # vuelta lo_que_falta
+  cat > "$LOOP/PARA_ALEXIS.md" <<EOF
+# PARA_ALEXIS: la apertura ciega no declaro lo que heredaba
+
+La vuelta $1 entrego al auditor los remedios que el acta anterior dejo escritos
+(D.40), y su apertura ciega no los declaro. **El arnes se detuvo ANTES de que se
+escribiera el acta.**
+
+Lo que falta:
+
+$2
+
+QUE SIGNIFICA. D.40 existe porque tres actas seguidas perdieron el mismo remedio
+por tener que ir a buscarlo. El arnes ya lo entrega en el prompt: lo unico que se
+pide es declarar que se leyo el acta, por su huella, y que se hizo con cada
+remedio heredado. Un remedio entregado y no declarado es un remedio perdido.
+
+QUE NO SIGNIFICA. No dice que el trabajo este mal, ni que la clasificacion sea
+falsa. Dice que la vuelta no puede certificar que la herencia se recogio.
+
+Estado: rama $RAMA, hash \$(git rev-parse --short HEAD 2>/dev/null || echo desconocido).
+
+Como retomar: borra este fichero y relanza. El auditor recibira la misma herencia
+y esta vez tiene que declararla.
+EOF
 }
 
 para_alexis_por_sello() { # vuelta sellado actual

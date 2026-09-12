@@ -411,7 +411,20 @@ vuelta**, y **cada acta del auditor publica `PASOS INVENTADOS POR CAPITULO`**:
 | 1 | UNO | **36,00 por ciento** |
 | 2 | DOS | |
 | 3 | TRES | **3,31 por ciento**, firmada el 11 sep 2026 |
-| **4 y siguientes** | **CUATRO** | el freno: **por encima del 10 por ciento se baja un escalon** |
+| **4 y siguientes** | ~~**CUATRO**~~ **TRES** | el freno: **por encima del 10 por ciento se baja un escalon** |
+
+> **CORRECCION DECLARADA, 12 sep 2026, decision del fundador punto 2.** El
+> **CUATRO** que esta tachado **lo puso esta tabla bien**: el freno de esta pagina
+> no se disparo nunca (`cap_04`, el peor del lote 4, dio **6,25** contra un tope de
+> 10). **El tramo lo bajo OTRO disparador, el de `EXTRACTOR.md` 12.4**, cumplido
+> por sus dos mitades en la vuelta 17: por encima del techo de candidatos **y** sin
+> cerrar su reporte. **Se anota aqui para que esta tabla no contradiga a la sede de
+> doctrina**, y se dice de donde viene para que nadie lea que el `PASOS INVENTADOS`
+> del lote 4 empeoro. **No empeoro.**
+>
+> **Y LA PRECEDENCIA, que es lo que faltaba escrito: EL TECHO DE CANDIDATOS POR
+> VUELTA MANDA SOBRE EL DE CAPITULOS.** `cap_07` dio **24 contra 15**; la vuelta
+> cierra en el capitulo que lo pasa y lo declara.
 
 **LA LINEA BASE DEJA DE SER EL 36 POR CIENTO** (decision del fundador del 11 sep
 2026, punto 5.8). Era la cifra de una casa que empezaba, y el lote 3 la bajo

@@ -62,7 +62,7 @@ HIJO = os.path.join(RAIZ, "ejemplos", "elegir_grafia_clave.json")
 
 sys.path.insert(0, RAIZ)
 
-from src import comun, gate  # noqa: E402
+from src import comun, gate, herencia  # noqa: E402
 
 # Con escape unicode: si esta prueba llevara el caracter literal, el barrido
 # de guiones tendria que perdonar al archivo que lo comprueba.
@@ -1568,6 +1568,115 @@ class PruebaSedeVacia(BaseForja):
         self.assertIn("citas de enlace mutuo comprobadas: 0", salida)
 
 
+class PruebaHerencia(BaseForja):
+    """D.40: lo que un auditor le deja al siguiente lo entrega el arnes.
+
+    Tres actas seguidas perdieron el mismo remedio por tener que ir a buscarlo a un
+    fichero de dieciseis mil lineas. Un remedio que hay que acordarse de ir a buscar
+    no esta entregado: esta archivado.
+    """
+
+    ACTA = """# ACTA 8. una vuelta vieja
+
+### 7.3. MI REMEDIO DE LA VUELTA VIEJA
+Esto no se hereda: no es la ultima acta.
+
+# ACTA 9. la ultima
+
+## 7. MIS CAIDAS
+
+> ### **TAREA BLOQUEANTE DEL AUDITOR DE LA VUELTA 10, ESCRITA POR EL AUDITOR DE LA 9**
+>
+> Pega el instrumento al lado de cada cifra.
+
+### 7.4. EL REMEDIO QUE SI CUMPLI
+Su cuerpo, que tambien se hereda porque el encabezado nombra un remedio.
+
+## 8. OTRA COSA
+Esto ya no pertenece al remedio anterior.
+"""
+
+    def _acta(self, texto=None):
+        ruta = os.path.join(self.taller, "ACTA_AUDITOR.md")
+        comun.escribir_texto(ruta, texto if texto is not None else self.ACTA)
+        return ruta
+
+    def _apertura(self, texto):
+        ruta = os.path.join(self.taller, "APERTURA_CIEGA.md")
+        comun.escribir_texto(ruta, texto)
+        return ruta
+
+    def test_hereda_solo_de_la_ultima_acta(self):
+        datos = herencia.extraer(self._acta())
+        self.assertEqual([i["clase"] for i in datos["items"]],
+                         ["TAREA BLOQUEANTE", "REMEDIO"])
+        cuerpos = "\n".join("\n".join(i["cuerpo"]) for i in datos["items"])
+        self.assertIn("VUELTA 10", cuerpos)
+        # CASO POSITIVO DEL CORTE: el remedio de la acta VIEJA no viaja, y la
+        # seccion que no nombra ningun remedio tampoco. Un extractor que se
+        # trajese el fichero entero no estaria entregando nada.
+        self.assertNotIn("vuelta vieja", cuerpos)
+        self.assertNotIn("OTRA COSA", cuerpos)
+        self.anotar("D40", "herencia: 2 items de la ultima acta, 0 de las viejas")
+
+    def test_el_prompt_lleva_el_texto_y_lo_que_exige(self):
+        datos = herencia.extraer(self._acta())
+        texto = herencia.texto_para_prompt(datos)
+        self.assertIn("REMEDIOS PENDIENTES QUE HEREDAS", texto)
+        self.assertIn("TAREA BLOQUEANTE DEL AUDITOR DE LA VUELTA 10", texto)
+        self.assertIn("Pega el instrumento", texto)
+        self.assertIn("ACTA ANTERIOR LEIDA: %s" % datos["huella"], texto)
+        self.assertIn("HEREDADO 1:", texto)
+        self.assertIn("HEREDADO 2:", texto)
+
+    def test_una_apertura_completa_pasa(self):
+        datos = herencia.extraer(self._acta())
+        ruta = self._apertura(
+            "clases y lecturas, sin cifras contadas a mano (D.38.3)\n"
+            "ACTA ANTERIOR LEIDA: %s\n"
+            "HEREDADO 1: CUMPLIDO\n"
+            "HEREDADO 2: NO APLICA porque esta vuelta no publica cifras ajenas\n"
+            % datos["huella"])
+        self.assertEqual(herencia.comprobar(datos, ruta), [])
+
+    def test_caso_positivo_la_apertura_que_no_declara_se_caza(self):
+        """Sin esto, la guarda podria estar diciendo siempre que si."""
+        datos = herencia.extraer(self._acta())
+        faltan = herencia.comprobar(datos, self._apertura("clases y lecturas, y nada mas\n"))
+        self.assertEqual(len(faltan), 3)
+        self.assertIn("ACTA ANTERIOR LEIDA", faltan[0])
+        self.assertIn("HEREDADO 1", faltan[1])
+        self.assertIn("HEREDADO 2", faltan[2])
+        self.anotar("D40_positivo", "apertura sin declarar: 3 faltas nombradas")
+
+    def test_otra_huella_no_cuela(self):
+        """Decir que se leyo OTRA version del acta no es haberla leido."""
+        datos = herencia.extraer(self._acta())
+        faltan = herencia.comprobar(datos, self._apertura(
+            "ACTA ANTERIOR LEIDA: 0000000000000000000000000000000000000000\n"
+            "HEREDADO 1: CUMPLIDO\nHEREDADO 2: CUMPLIDO\n"))
+        self.assertEqual(len(faltan), 1)
+        self.assertIn("otra huella", faltan[0])
+
+    def test_no_aplica_sin_motivo_es_lo_mismo_que_perderlo(self):
+        datos = herencia.extraer(self._acta())
+        faltan = herencia.comprobar(datos, self._apertura(
+            "ACTA ANTERIOR LEIDA: %s\nHEREDADO 1: NO APLICA\nHEREDADO 2: CUMPLIDO\n"
+            % datos["huella"]))
+        self.assertEqual(len(faltan), 1)
+        self.assertIn("SIN MOTIVO", faltan[0])
+
+    def test_sin_acta_no_revienta_y_la_linea_de_lectura_sigue_en_pie(self):
+        """La primera vuelta de una casa no tiene acta anterior."""
+        datos = herencia.extraer(os.path.join(self.taller, "no_existe.md"))
+        self.assertEqual(datos["items"], [])
+        self.assertIn("no dejo ninguna tarea bloqueante",
+                      herencia.texto_para_prompt(datos))
+        # No hay heredados, pero la declaracion de haber mirado el acta no se
+        # ahorra: es la unica prueba de que se miro.
+        self.assertEqual(len(herencia.comprobar(datos, self._apertura("clases\n"))), 1)
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
@@ -1576,7 +1685,8 @@ def main():
              PruebaBandejas, PruebaReglasDeId, PruebaAristaDeclarada,
              PruebaArchivoDeInsertados,
              PruebaAristaDeclarada37,
-             PruebaSedeVacia]
+             PruebaSedeVacia,
+             PruebaHerencia]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -1611,6 +1721,8 @@ def main():
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaAristaDeclarada37)._tests))
     print("  la sede de los pares mutuos nace vacia con su cabecera (5.7): "
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaSedeVacia)._tests))
+    print("  D.40, lo que un auditor le deja al siguiente lo entrega el arnes: "
+          "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaHerencia)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

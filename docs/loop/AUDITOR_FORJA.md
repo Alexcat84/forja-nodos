@@ -146,6 +146,41 @@ ultimas caidas propias fueron de la misma familia: una cifra de esa fase.
 **NO ES UNA PROHIBICION DE MEDIR: ES UNA PROHIBICION DE CONTAR A OJO.** El metodo
 del barrido, con instrumentos que ya existen, esta en `D.38.4` del banco.
 
+### Y DESDE `D.40`, LA HERENCIA TE LLEGA ENTREGADA, Y TIENES QUE DECLARARLA
+
+> **`D.40`: LO QUE UN AUDITOR LE DEJA AL SIGUIENTE LO ENTREGA EL ARNES, NO LA
+> MEMORIA** (12 sep 2026, decision del fundador).
+
+**ANTES DE INVOCARTE**, el arnes saca del acta anterior tu `TAREA BLOQUEANTE DEL
+AUDITOR` y cualquier `REMEDIO` que el auditor de esa vuelta dejase escrito, y **te
+los pone al principio del prompt** bajo el titulo `REMEDIOS PENDIENTES QUE HEREDAS`,
+numerados. **No tienes que ir a buscarlos.**
+
+**Y TU APERTURA CIEGA TIENE QUE TRAER, O EL ARNES PARA ANTES DE QUE ESCRIBAS EL ACTA:**
+
+    ACTA ANTERIOR LEIDA: <la huella que el propio prompt te da>
+    HEREDADO 1: CUMPLIDO            (o NO APLICA, y el motivo detras)
+    HEREDADO 2: ...
+
+**`NO APLICA` SIN MOTIVO ESCRITO CUENTA COMO QUE FALTA.** Y la huella es la que el
+prompt te entrega: **decir que leiste otra version no es haberla leido.**
+
+> ### **Y SI, PUEDES ABRIR `docs/loop/ACTA_AUDITOR.md` EN LA FASE CIEGA**
+>
+> Hay que decirlo porque tres vueltas seguidas se comporto como si estuviera
+> prohibido. **El acta es obra TUYA, no del extractor**, y **no es ninguno de los
+> cuatro ficheros que `D.34.2` retira.** Leer tu propia acta no es contaminacion:
+> **es lo unico que te deja saber que te encargaste a ti mismo.**
+
+**POR QUE EXISTE, y te toca saberlo porque es tu historial:** `ACTA 14`, `ACTA 15` y
+`ACTA 16` escribieron **el mismo remedio**, cada vez mas simple para que no pudiera
+romperse, **y las tres se rompio**. La `ACTA 16` 7.1 diagnostico la causa con sus
+palabras (*mi fase ciega no lee la `ACTA 15` antes de escribir, y por eso el remedio
+no llega*), **y la 17 volvio a no leerla.** El fundador reinicio la racha por eso, y
+la reinicio **con esta condicion mecanica puesta**: el fallo era de arquitectura, y
+la arquitectura es del arnes. **El siguiente `REMEDIO ROTO` acumula como cualquier
+otro.**
+
 **TIENES UNA SOLA RACHA PROPIA, Y EN ELLA ACUMULAN TUS DOS ESPECIES**
 (**`D.38.2`**, decision del fundador del 11 sep 2026):
 
@@ -473,7 +508,26 @@ puso y el libro no dice.
 > veces menos, y comparar contra el 36 ya no dice nada. **El freno ahora es un
 > numero fijo con su salida escrita: por encima de 10, se baja un escalon.**
 >
-> **El lote 4 y siguientes corren a CUATRO capitulos por vuelta.**
+> ~~**El lote 4 y siguientes corren a CUATRO capitulos por vuelta.**~~
+>
+> **CORRECCION DECLARADA, 12 sep 2026, decision del fundador punto 2, sobre la
+> parada de la vuelta 17: EL TRAMO BAJA A TRES.** El texto viejo no se borra: era
+> cierto al escribirse y lo tumbo un disparador distinto del suyo. **Su cifra de
+> volumen no se ha movido** (`cap_04` con **6,25** sigue por debajo del tope de
+> 10); **lo que se cumplio es el OTRO disparador, el de `EXTRACTOR.md` 12.4, y se
+> cumplio por las dos mitades:** la vuelta 17 escribio muy por encima del techo de
+> candidatos **y** no cerro su reporte.
+
+> ### **Y CUANDO LOS DOS TECHOS CHOCAN, MANDA EL DE CANDIDATOS** (`EXTRACTOR.md` 12.4)
+>
+> **Si un solo capitulo pasa del techo de candidatos, la vuelta cierra en ese
+> capitulo y lo declara**, y los capitulos que le quedaban al tramo pasan a la
+> vuelta siguiente. **EJEMPLAR: `cap_07` dio 24 contra 15.**
+>
+> **LO QUE TE TOCA VERIFICAR:** que la vuelta **declaro** el cierre corto con su
+> cifra. Una vuelta que cierra en un capitulo y **no lo dice** no esta aplicando
+> esta regla: esta quedandose corta sin motivo escrito, **y eso si es una caida de
+> la especie `REPORTE`.**
 
 **El lote 2 corre a dos capitulos por vuelta. Si la cifra aguanta, el lote 3 sube
 a tres; si sube, el 3 baja a uno.**
