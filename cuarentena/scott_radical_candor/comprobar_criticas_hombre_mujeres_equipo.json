@@ -1,0 +1,37 @@
+{
+  "id": "comprobar_criticas_hombre_mujeres_equipo",
+  "titulo": "Comprobar si te estas conteniendo al criticar a las mujeres de tu equipo, preguntandoselo a ellas y pidiendoles que te midan",
+  "denominaciones": {
+    "nombre_largo": "Lo que puede hacer un jefe que teme la politica de genero o el llanto: explicar el marco, decir la frase, y pedir que midan su elogio y su critica",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Men: don't pull punches with women"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando eres un hombre y te preocupa estar conteniendote con las mujeres de tu equipo, por recelo a la politica de genero o por miedo a que ella llore.",
+  "entregable_esperado": "Saber, dicho por ella y no supuesto por ti, como esta cayendo tu guia, y con ello si estas yendo mas suave con unas personas que con otras.",
+  "pasos_accionables": [
+    "Averigua como se siente ella con tu guia, que es lo que el texto pone como util cuando te preocupa estar conteniendote: simplemente preguntaselo.",
+    "Prueba a explicarle el marco de la franqueza radical.",
+    "Y cuando le des tu opinion, di sin mas la frase que el texto da: estoy intentando ser radicalmente franco, y quiero comprobar contigo como te esta cayendo lo que te digo.",
+    "Pidele que mida tu elogio y tu critica.",
+    "Hazlo aunque no te preocupe la politica de genero, que es lo que el texto aniade entre parentesis: de todas formas es buena idea averiguarlo.",
+    "Cuenta con el motivo por el que el texto dice que esto hace falta: puede que ni siquiera seas consciente de que estas siendo mas blando con unas personas que con otras."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_09.md, unidad Cap. 6, Guidance. Sale de las lineas 291 a 293, bajo el rotulo Men: don't pull punches with women, dentro de la seccion GENDER AND GUIDANCE y bajo la cabeza What can you do. ES LA PIEZA P20 DE LA FRONTERA DE ESTA VUELTA. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante, y es la pregunta que decide el tratamiento de toda la seccion de genero: las piezas P17 y P18 de mi frontera, que son las dos largas, NO dan nodo porque son diagnostico y casos y rematan en metas, We must stop gender politics, que es exactamente lo que D.27 restriccion 1 excluye. ESTA SI, porque la linea 293 pone actos nombrados uno a uno, preguntar, explicar el marco, decir una frase literal y pedir medicion. La linea 289 lo anuncia ademas con sus palabras: I have a few thoughts on how individuals can take action. ES LA CARA ACCIONABLE DE P17 Y NO SU RESUMEN, y por eso el nodo no repite ni uno de los casos de aquella. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. Los seis salen de la linea 293. LA FRASE DEL P3 ES LA DEL LIBRO, traducida y no reescrita. NO ESCRIBO DESTINATARIO NI PERIODO: el texto no dice cada cuanto se comprueba ni a quien se le cuenta el resultado, y los dos serian puentes de las especies que el lote 1 pago. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: que hacer si ella dice que todo esta bien, ni como se distingue contenerse de adaptar la guia al oido del oyente, que es una regla del mismo capitulo.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

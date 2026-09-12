@@ -22822,7 +22822,7 @@ hash y no movio ninguna otra de las siete.***
 | # | tarea | estado |
 |---:|---|---|
 | 1 | los registros: la `ACTA 18` entera, sus cinco adjudicaciones, sus tres correcciones declaradas, y la cifra `9 + 7` que el auditor me pide medir a mi | ~~ABIERTA~~ **CERRADA** (`N.2`). **El reparto `9` mas `7` se puede medir y se publica** (`N.2.d`) |
-| 2 | los dos arreglos de bandeja antes de que el lote cierre: el desvio de atribucion de `integrar_trabajo_vida_mejor_version` `P4`, y los 24 candidatos que no nombran su `cap_NN` | **ABIERTA** |
+| 2 | los dos arreglos de bandeja antes de que el lote cierre: el desvio de atribucion de `integrar_trabajo_vida_mejor_version` `P4`, y los 24 candidatos que no nombran su `cap_NN` | ~~ABIERTA~~ **CERRADA** (`N.3`). **25 candidatos tocados y 25 por la aduana** |
 | 3 | el lote 4, **`cap_09` solo**, con la frontera publicada antes de cortar y su suma cruzada contra el cuerpo | **ABIERTA** |
 
 *Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
@@ -22943,6 +22943,146 @@ candidatos que no se desempata no es una atribucion:
 | **el `24` contra `25`** | **NO SE REABRE** (`1.e`). Las dos ciertas, denominadores distintos, ya adjudicado por los dos lados por separado |
 | **el criterio de recuento de los `SANO` sin sede** | **NO lo vuelvo a subir como pendiente de doctrina.** Esta adjudicado y lo aplico en `N.7` |
 | **`D.38.4` en el banco** | **no la toco.** La escribio el auditor y es su sede (`EXTRACTOR.md` 14) |
+
+---
+
+## N.3. TAREA 2: LOS DOS ARREGLOS DE BANDEJA, ANTES DE QUE EL LOTE CIERRE. **CERRADA**
+
+### N.3.a. EL DESVIO DE ATRIBUCION DE `integrar_trabajo_vida_mejor_version` `P4`
+
+**LAS DOS LINEAS, REABIERTAS CON MI `sed` PEGADO** (`D.35`), y no copiadas del encargo:
+
+    $ sed -n '27p' fuentes/scott_radical_candor/cap_08.md
+    27:Be relentlessly insistent on bringing your fullest and best self to work, and taking it back
+       home again. ... Instead, think of it as work-life integration. If YOU need to get eight hours
+       of sleep to stay centered, those hours are not something that you do for yourself at the
+       expense of your work or your team. ...
+
+    $ sed -n '35p' fuentes/scott_radical_candor/cap_08.md
+    35:Here's what I need to do to stay centered: sleep eight hours, exercise for forty-five minutes,
+       and have both breakfast and dinner with my family. ...
+
+*El guion largo de `L27` va normalizado a coma en la cita, porque la guarda `guiones` muerde
+lo que yo escribo. **La palabra que decide esta intacta: `If YOU need`.***
+
+> ### **EL AUDITOR TIENE RAZON, Y LA LINEA LO DICE SIN MARGEN.**
+>
+> `L27` pone las ocho horas **en condicional y dirigidas al LECTOR**. `L35` las pone **como
+> receta propia de la autora**, y `L35` **es cuerpo de otra pieza**, la de
+> `definir_receta_propia_mantenerse_centrado`, cuyo `P6` ya lo escribe bien. **Mi `P4`
+> escribia las de la autora citando la linea que se las dice al lector.**
+
+**LA CORRECCION, DECLARADA Y SIN BORRAR LO QUE DECIA**, igual que las dos cabeceras de la
+vuelta pasada:
+
+| | |
+|---|---|
+| **lo que decia el `P4`** | *...a costa de tu trabajo o de tu equipo: **el texto pone de ejemplo las ocho horas de suenio que su autora necesita.*** |
+| **lo que dice ahora** | *...a costa de tu trabajo o de tu equipo: **el texto te lo dice a TI, y pone como caso condicional que sean ocho horas de suenio las que TU necesites para mantenerte centrado.*** |
+| **donde queda constancia** | en el `resumen_teorico` del propio candidato, fechada el **12 sep 2026** y citando la `ACTA 18` `4.5`, **con el texto viejo transcrito dentro** |
+| **es puente?** | **NO, y el cero de `cap_08` no se mueve.** `D.30` mide si el paso esta en el libro, y estaba: lo torcido era **de quien se decia**, no si se decia |
+| **es caida?** | **NO**, y lo recojo del auditor sin reabrirlo: vive en `cuarentena/`, que no es sede de `CIFRA PUBLICADA` |
+| **por que se corrige igual** | **insertar con la atribucion torcida es lo que la deja dentro del grafo** |
+
+**Y VUELVE A PASAR POR LA ADUANA, porque una correccion lo vuelve a escribir**
+(`EXTRACTOR.md` 16):
+
+    $ python forja.py informe cuarentena/scott_radical_candor/integrar_trabajo_vida_mejor_version.json
+      nodos en el grafo de destino: 203
+      ENTRARIAN 1 | BLOQUEARIAN 0 | CAERIAN 0 | CHOCAN 0
+      [ENTRARIA] integrar_trabajo_vida_mejor_version
+
+### N.3.b. LOS 24 CANDIDATOS QUE NO NOMBRABAN SU `cap_NN`, ATRIBUIDOS **LEYENDO EL FICHERO FUENTE**
+
+**MI PROPIO RECUENTO DE PARTIDA, corrido por mi y no copiado del encargo:**
+
+    $ grep -l "cap_[0-9][0-9]" cuarentena/scott_radical_candor/*.json | wc -l   ->  39
+    $ grep -L "cap_[0-9][0-9]" cuarentena/scott_radical_candor/*.json | wc -l   ->  24
+
+**CUADRA CON EL `39` MAS `24` DEL ENCARGO.** Y el reparto por commit de alta tambien, las
+cinco filas: `7c3e224` **10**, `e65991d` **7**, `81aea10` **4**, `6920050` **2**, `84bccb6`
+**1**.
+
+**COMO ATRIBUI CADA UNO, Y POR QUE NO ME VALIO EL COMMIT.** El encargo dice **leyendola del
+fichero fuente y no de una tabla**, asi que para cada candidato saque **un ancla textual del
+propio libro** y la corri con `grep` contra **las quince unidades**. **El commit de alta se
+usa despues, como contraste, y no como fuente.**
+
+    $ grep -iln "<ancla>" fuentes/scott_radical_candor/*.md     (por candidato, 24 veces)
+
+| unidad | `unidad:` leido del encabezado del fichero | candidatos | ancla de ejemplo, y su resultado |
+|---|---|---:|---|
+| `cap_01` | `Preface` | **1** | `make photocopies` -> **`cap_01.md`, uno solo** |
+| `cap_03` | `How to Use This Book` | **1** | `ten hours a week` -> `cap_03.md` **y** `cap_12.md`, **desempatado leyendo** (`N.2.d`) |
+| `cap_04` | `Cap. 1` | **5** | `sordid details`, `politely persistent`, `front-stab`, `dream of individually`, `insulting` -> **`cap_04.md` los cinco, uno solo cada uno** |
+| `cap_05` | `Cap. 2` | **7** | `perilous border`, `fly is down`, `red square`, `Horowitz`, `who did what`, `start by getting`, `sandwich` -> **`cap_05.md`** |
+| `cap_06` | `Cap. 3` | **10** | `three bricklayers`, `absentee manager`, `permanent marker`, `B-player`, `level of incompetence`, `intellectual partnership` -> **`cap_06.md`** |
+| | | **24** | |
+
+> ### **EL REPARTO CUADRA CON EL COMMIT DE ALTA EN LAS CINCO FILAS, Y ESO ES LO QUE LO HACE UNA MEDIDA Y NO UNA COINCIDENCIA.**
+> `6920050` da **`cap_01` mas `cap_03`**, `81aea10` y `84bccb6` dan **`cap_04`**, `e65991d`
+> da **`cap_05`** y `7c3e224` da **`cap_06`**. **Dos metodos independientes, el mismo
+> reparto.**
+
+**UN SITIO DONDE LA SENIAL PRIMERA IBA CONTRA SU PROPIO COMMIT, Y POR ESO EL ENCARGO MANDA
+LEER:**
+
+    $ grep -iln "right ratio" fuentes/scott_radical_candor/*.md   ->  cap_06.md  cap_10.md
+    $ grep -in  "ratio" fuentes/scott_radical_candor/cap_05.md
+    237:Some professionals say you need to have a praise-to-criticism ratio of 3:1, 5:1, or even 7:1.
+        Others advocate the "feedback sandwich"...
+    239:In other words, the notion of a "right" ratio between praise and criticism is dangerous...
+
+**`equilibrar_elogio_critica_equipo` sale de `e65991d`, que es `cap_05` entero, y mi primera
+ancla lo mandaba a `cap_06` y a `cap_10`.** El motivo es que `L239` escribe la palabra
+**entre comillas tipograficas** y mi `grep` llano no la veia. **Lo resolvi abriendo la linea,
+no ajustando el `grep` hasta que diera lo que yo esperaba**, y el desempate lo dan tres
+anclas que solo estan en `cap_05`: `Horowitz`, `shit sandwich` y `Sipprell`.
+
+> **LO ANOTO PORQUE ES LA FORMA DE AVERIA QUE ESTA CASA LLEVA DOS ACTAS PERSIGUIENDO: un
+> instrumento que no comprueba lo que la cifra dice.** Si llego a atribuir por la primera
+> ancla, habria escrito `cap_06` dentro de un candidato de `cap_05`, **y un candidato mal
+> atribuido es peor que uno sin atribuir**, que es exactamente lo que el encargo avisa.
+
+**LO QUE SE ESCRIBIO EN CADA UNO, Y LO QUE NO:** una linea al principio del
+`resumen_teorico` con la unidad, su rotulo `unidad:` y su `titulo_textual` leidos del
+encabezado del fichero, la fecha, el encargo que lo manda, y **el ancla textual que lo
+sostiene**. **NO SE TOCO NI UN PASO, NI UNA CITA, NI UN CAMPO MAS.**
+
+**Y CADA UNO PASO POR LA ADUANA DESPUES DE TOCARLO**, uno por vez, que es lo que la tarea
+exige:
+
+| | |
+|---|---:|
+| candidatos tocados | **24** |
+| por la aduana, uno por vez | **24** |
+| **`ENTRARIAN`** | **19** |
+| **`BLOQUEARIAN`** | **5** |
+| **`CAERIAN`** | **0** |
+
+> ### **LOS CINCO `BLOQUEARIA` SON LOS MISMOS CINCO QUE YA BLOQUEABAN ANTES DE QUE YO TOCARA NADA, Y ESO ES LA MEDIDA QUE IMPORTA.**
+>
+> **No los adjudico de nuevo: compruebo que mi edicion no creo ni uno.** Los cinco estan
+> declarados y **leidos** en sede desde antes de esta vuelta, con su linea:
+>
+>     $ grep -n "BLOQUEARIA" docs/loop/REPORTE.md   (las cinco filas, tal cual)
+>     18601:| 2 | cuidar_persona_completa_equipo | [BLOQUEARIA], 3 vecinos | ninguna: es cola de lectura |
+>     19995:| 1 | cambiar_potencial_trayectoria_crecimiento | 14 | 2 y 3 | [BLOQUEARIA], 1 vecino. Leido en K.6.4 |
+>     19998:| 4 | reconocer_recompensar_gente_estable | 12 | 8 | [BLOQUEARIA], 1 vecino. Leido en K.6.4 |
+>     20001:| 7 | decidir_momento_despedir_persona | 12 | 11 | [BLOQUEARIA], 2 vecinos. Leidos en K.6.4 |
+>     20002:| 8 | despedir_persona_franqueza_radical | 11 | 12 | [BLOQUEARIA], 2 vecinos. Leidos en K.6.4 |
+>
+> **Cinco antes y cinco despues, y son los mismos cinco nombres.** Anadir una linea de
+> atribucion al `resumen_teorico` **no movio la vecindad de ninguno**, que es justo lo que
+> habia que comprobar y no dar por hecho: la alternativa era que veinticuatro candidatos con
+> el mismo parrafo nuevo empezaran a parecerse entre si. **No paso, y lo digo con la cuenta
+> delante en vez de con un razonamiento.**
+
+**LO QUE ESTA TAREA CIERRA, Y ES LA LIMITACION QUE LA `ACTA 18` `6` DECLARO SIN PODER
+CERRAR:** el metodo del **commit de alta** se quedaba ciego **en un solo sitio**, `6920050`,
+donde un commit mezcla `cap_01` y `cap_03`. **Desde hoy los dos candidatos nombran su unidad
+en su propio fichero**, y ese punto ciego desaparece: la fila `cap_01` y la fila `cap_03` de
+`PASOS INVENTADOS` **se pueden remedir desde el arbol sin recurrir a git.**
 
 ---
 
