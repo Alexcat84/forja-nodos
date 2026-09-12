@@ -77,6 +77,19 @@ montar_banco() { # $1 = nombre del escenario
 ACTA
   echo "encargo de prueba del arnes" > "$taller/docs/loop/PROMPT_SIGUIENTE.md"
 
+  # Y LO QUE EL INFORME DE LOTE NECESITA PARA CORRER DE VERDAD (punto 2 del
+  # 12 sep 2026). Un grafo vacio y UN candidato: el informe tarda milisegundos,
+  # que es lo contrario del caso que esta decision resuelve, y es a proposito:
+  # lo que se prueba aqui es el CABLEADO del paso, no el coste del instrumento.
+  mkdir -p "$taller/dataset" "$taller/esquema" "$taller/fuentes" \
+           "$taller/config" "$taller/cuarentena/prueba_de_lote"
+  : > "$taller/dataset/nodos.jsonl"
+  cp "$RAIZ_REPO/esquema/nodo.schema.json" "$taller/esquema/"
+  cp "$RAIZ_REPO/fuentes/FUENTES_CANONICAS.json" "$taller/fuentes/"
+  cp "$RAIZ_REPO/config/umbrales.json" "$taller/config/"
+  cp "$(ls "$RAIZ_REPO"/cuarentena/scott_radical_candor/*.json | head -1)" \
+     "$taller/cuarentena/prueba_de_lote/candidato.json"
+
   # EL CLAUDE FALSO. Distingue el rol por el documento que el prompt nombra.
   cat > "$taller/bin/claude" <<'FALSO'
 #!/usr/bin/env bash
@@ -460,6 +473,81 @@ comprobar "detiene la corrida"               "DETENIDO en la vuelta 1"      "$sa
 comprobar_no "el auditor NO llega a correr"  "VUELTA 1 : AUDITOR"           "$salida"
 # Y LOS CUATRO FICHEROS VUELVEN: una parada no deja el arbol a medias.
 [ -f "$taller/docs/loop/REPORTE.md" ]   && { echo "    VERDE  el reporte vuelve a su sitio aun deteniendose"; verdes=$((verdes+1)); }   || { echo "    ROJO   el reporte no volvio tras la parada"; rojos=$((rojos+1)); }
+
+# --------------------------------------------------------------- escenario 15
+echo ""
+echo "ESCENARIO 15: EL INFORME DE LOTE LO CORRE EL ARNES, NO EL TURNO (punto 2"
+echo "              del 12 sep 2026). La cifra CHOCAN entre si dentro del lote"
+echo "              solo la ve un informe de lote entero, y un informe de lote"
+echo "              entero no cabe en un turno: 156,5 s por candidato medidos."
+taller="$(montar_banco e15)"
+salida="$(INFORME_DE_LOTE=cuarentena/prueba_de_lote FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "lo anuncia como paso propio"      "INFORME DE LOTE sobre cuarentena/prueba_de_lote" "$salida"
+comprobar "dice que es del arnes"            "paso del arnes, sin reloj de modelo" "$salida"
+comprobar "y lo sella"                       "informe sellado:"             "$salida"
+comprobar "va ANTES del turno del extractor" "$(printf 'INFORME DE LOTE sobre')" "$salida"
+# EL ORDEN IMPORTA: el informe tiene que estar sellado ANTES de que el extractor
+# corra, porque lo que se le entrega es el fichero ya hecho.
+orden_informe="$(echo "$salida" | grep -n "informe sellado:" | head -1 | cut -d: -f1)"
+orden_turno="$(echo "$salida" | grep -n "VUELTA 1 : EXTRACTOR" | head -1 | cut -d: -f1)"
+if [ -n "$orden_informe" ] && [ -n "$orden_turno" ] && [ "$orden_informe" -lt "$orden_turno" ]; then
+  echo "    VERDE  el sello cae ANTES del turno del extractor"; verdes=$((verdes+1))
+else
+  echo "    ROJO   el sello no cae antes del turno del extractor"; rojos=$((rojos+1))
+fi
+# EL FICHERO EXISTE Y TRAE LA CIFRA QUE JUSTIFICA TODO ESTO.
+if grep -q "CHOCAN entre si dentro del lote" "$taller/docs/loop/INFORME_DE_LOTE.txt" 2>/dev/null; then
+  echo "    VERDE  el fichero trae la cifra CHOCAN entre si dentro del lote"; verdes=$((verdes+1))
+else
+  echo "    ROJO   el fichero no trae la cifra del choque"; rojos=$((rojos+1))
+fi
+# Y LA POBLACION VA DECLARADA CON SU REPARTO (punto 3).
+if grep -q "poblacion del barrido" "$taller/docs/loop/INFORME_DE_LOTE.txt" 2>/dev/null; then
+  echo "    VERDE  declara la poblacion del barrido con su reparto"; verdes=$((verdes+1))
+else
+  echo "    ROJO   no declara la poblacion del barrido"; rojos=$((rojos+1))
+fi
+# EL SELLO QUEDA REGISTRADO, no solo dicho en el log.
+if [ -s "$taller/docs/loop/SELLOS_INFORME.jsonl" ]; then
+  echo "    VERDE  el sello queda registrado en SELLOS_INFORME.jsonl"; verdes=$((verdes+1))
+else
+  echo "    ROJO   el sello no se registro"; rojos=$((rojos+1))
+fi
+# Y EL EXTRACTOR LO RECIBE EN SU PROMPT, con la orden de no recomputarlo.
+prompt_ext="$(cat "$taller/prompt_extractor.txt" 2>/dev/null || echo AUSENTE)"
+comprobar "el prompt le entrega el fichero"  "docs/loop/INFORME_DE_LOTE.txt" "$prompt_ext"
+comprobar "y le prohibe recomputarlo"        "NO LO RECOMPUTES: CITALO"     "$prompt_ext"
+
+# -------------------------------------------------------------- escenario 15b
+echo ""
+echo "ESCENARIO 15b: EL CASO POSITIVO. Un lote que no existe detiene el arnes"
+echo "               ANTES de gastar un turno, en vez de entregar un informe"
+echo "               vacio. Sin este, el 15 solo probaria que el paso corre."
+taller="$(montar_banco e15b)"
+salida="$(INFORME_DE_LOTE=cuarentena/lote_que_no_existe correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "nombra lo que no encontro"        "cuarentena/lote_que_no_existe" "$salida"
+comprobar "detiene la corrida"               "DETENIDO en la vuelta 1"      "$salida"
+comprobar_no "el extractor NO llega a correr" "VUELTA 1 : EXTRACTOR"        "$salida"
+if [ -f "$taller/docs/loop/PARA_ALEXIS.md" ]; then
+  echo "    VERDE  deja PARA_ALEXIS escrito"; verdes=$((verdes+1))
+else
+  echo "    ROJO   no dejo PARA_ALEXIS"; rojos=$((rojos+1))
+fi
+
+# -------------------------------------------------------------- escenario 15c
+echo ""
+echo "ESCENARIO 15c: SIN lote que informar, el paso se SALTA Y SE REGISTRA. Un"
+echo "               paso que se salta en silencio es un paso que nadie puede"
+echo "               echar en falta."
+taller="$(montar_banco e15c)"
+salida="$(FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "lo dice en el log"                "SIN INFORME DE LOTE en esta corrida" "$salida"
+comprobar "y la vuelta sigue entera"         "VUELTA 1 : AUDITOR"           "$salida"
+prompt_ext="$(cat "$taller/prompt_extractor.txt" 2>/dev/null || echo AUSENTE)"
+comprobar_no "el prompt no promete un informe que no hay" "NO LO RECOMPUTES" "$prompt_ext"
 
 echo ""
 echo "================================================================"

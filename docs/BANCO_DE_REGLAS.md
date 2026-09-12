@@ -1041,6 +1041,45 @@ lotes; **no acorta ninguna de las condiciones de parada de
 **EXCLUIDOS del barrido de guiones y del hook.** El arnes los sigue commiteando en
 su commit de artefactos: **no se barren, se guardan.**
 
+> ## SE ENSANCHA POR PATRON, 12 sep 2026 (decision del fundador, punto 1)
+>
+> *Sobre la parada de la vuelta 20, archivada en
+> `docs/loop/paradas/2026-09-12-el-artefacto-que-faltaba.md`.*
+>
+> **LA LISTA DE TRES TENIA UNA GRIETA CON FORMA DE FECHA.**
+> `docs/loop/ultimo_apertura.json` **nacio con `D.34`, despues de que esta lista se
+> escribiera**, y por eso no estaba en ella. En la vuelta 20, tres guiones largos
+> del mensaje final de la fase ciega pusieron en rojo **el barrido Y la prueba de
+> aceptacion entera**, y la parada se adjudico contra el auditor por no haber
+> formateado su propio volcado.
+>
+> > ### **CAPA EQUIVOCADA. FORMATEAR LA SALIDA DE UN MODELO ES TAREA DEL ARNES.**
+>
+> **LA LETRA NUEVA:**
+>
+> > **`docs/loop/ultimo_*.json`, `docs/loop/loop.log` Y TODO FICHERO QUE EL ARNES
+> > ESCRIBA DESDE LA SALIDA DE UN MODELO quedan excluidos del barrido y del hook,
+> > HOY Y PARA LOS QUE NAZCAN MAÑANA.**
+>
+> **POR QUE UN PATRON Y NO UN INVENTARIO:** un nombre que hay que acordarse de
+> añadir a una lista **protege hasta el dia en que alguien escribe un fichero
+> nuevo.** Es la misma leccion de `D.40`, un piso mas abajo: lo que depende de
+> acordarse no esta protegido.
+>
+> **LA CONVENCION QUE HACE QUE EL PATRON BASTE:** el arnes escribe la salida de un
+> modelo en `docs/loop/ultimo_<rol>.json`. **Un artefacto nuevo que nazca del
+> volcado de un modelo se llama asi y queda exento EL DIA QUE NACE**, sin que nadie
+> toque `src/comun.py`.
+>
+> **Y LO QUE NO SE AFLOJA, con su caso positivo en la prueba:** la exencion es de
+> **CAPA**, no de contenido. **Un acta, un reporte, una regla o un candidato con un
+> guion largo tumba el barrido, este donde este**, y un `ultimo_cualquiera.json`
+> **fuera** de `docs/loop/` es prosa de esta casa como cualquier otra.
+>
+> **Sede:** `src/comun.py`, `PATRONES_DE_ARTEFACTO` y `es_artefacto_de_maquina()`.
+> **Pruebas:** `test_d33_se_ensancha_por_patron_y_no_por_lista` y
+> `test_el_patron_mira_el_nombre_y_la_carpeta`, las dos con su caso positivo.
+
 **EL MOTIVO MECANICO:** el arnes vuelca el texto del turno en el artefacto
 **despues del ultimo commit**. Son **la unica escritura del repo que no puede
 pasar por su propio hook**, porque cuando se escriben el turno ya termino.
@@ -1346,6 +1385,38 @@ velocidad.
 **SIGUE SIENDO APARTE DE LA DEL EXTRACTOR** (`D.34.1`): una racha mezclada no dice
 de quien es el problema.
 
+> ## SE ACOTA, 12 sep 2026 (decision del fundador, punto 1)
+>
+> > **`REMEDIO ROTO` CUENTA SOLO CUANDO EL REMEDIO ES DE SUSTANCIA DE AUDITORIA:
+> > clases, cifras, lecturas, herencia.**
+> >
+> > **UN REMEDIO SOBRE FORMATO DE ARTEFACTOS NO EXISTE COMO REMEDIO: ES TAREA DEL
+> > ARNES.**
+>
+> **EL CASO QUE LO OBLIGO.** La `ACTA 19` `8.1` se encargo a si misma esto:
+>
+> > *Y CERO GUIONES LARGOS Y CERO GUIONES MEDIOS EN MI MENSAJE FINAL, porque el
+> > arnes lo escribe en `ultimo_auditor.json` despues de que mis comprobaciones
+> > hayan pasado.*
+>
+> **SE RETIRA POR CORRECCION DECLARADA.** No se borra de su acta, que es sede del
+> auditor y no se toca: se declara aqui que **ese remedio no rige**, y que la
+> tercera caida de la racha de la vuelta 20 **no era `REMEDIO ROTO`: era `D.33`**,
+> un artefacto de maquina sin exencion escrita.
+>
+> **POR QUE LA DISTINCION NO ES UN FAVOR.** Un remedio es una promesa que el
+> auditor puede cumplir **leyendo y midiendo mejor**. Pedirle a un modelo que
+> formatee su propio volcado **le pide algo que no controla**: el volcado lo
+> escribe la tuberia del arnes despues de que su turno haya terminado. **Una racha
+> que cuenta eso no mide si el auditor se verifica: mide si el arnes esta bien
+> cableado, y eso ya tiene su propia sede.**
+>
+> **Y NO AFLOJA LA RACHA.** `CIFRA PUBLICADA PROPIA` sigue entera, y `REMEDIO ROTO`
+> sigue acumulando **en todo lo que si es sustancia**: una clase mal leida que el
+> remedio pedia releer, una cifra que el remedio pedia remedir, una herencia que el
+> remedio pedia declarar. **Lo que sale de la racha es una sola especie de cosa: el
+> formato de lo que escribe la maquina.**
+
 ### D.38.3. Y la fase ciega deja de depender de la voluntad del auditor
 
 *Decision 5.1 del fundador, que **reinicia la racha `REMEDIO ROTO` con condicion
@@ -1498,6 +1569,65 @@ pegado** es exactamente la especie que `D.38.3` prohibe.
 > con la exclusion puesta y no dejo escrito que la receta del banco no la trae.** Una regla
 > que solo funciona si quien la lee la arregla por su cuenta **no esta escrita: esta
 > adivinada.**
+
+### D.38.5. LA POBLACION DEL BARRIDO ES GRAFO MAS BANDEJAS **TAMBIEN PARA LA ADUANA** (12 sep 2026, decision del fundador)
+
+*Punto 3 de la decision del fundador del 12 sep 2026. **No es una regla nueva: es
+`D.38.4` llegando a la otra mitad de la casa**, y por eso lleva su numero y no uno
+propio.*
+
+**`D.38.4` mando desde el 11 sep que el barrido del AUDITOR se hiciera sobre grafo
+mas bandejas.** El informe de la aduana seguia cargando **solo el grafo**
+(`src/informe.py`, la linea que leia `dataset/nodos.jsonl` y nada mas), asi que
+durante nueve vueltas **la maquina y el auditor midieron poblaciones distintas.**
+
+> **UN PAR CUYOS DOS EXTREMOS VIVEN EN CUARENTENA SE LEVANTA IGUAL.**
+
+**EL EJEMPLAR, Y ES LO QUE LO OBLIGO:** `cap_10` `L225` a `L251` contra
+`reconocer_recompensar_gente_estable` de `cap_06`, **los dos en la bandeja.** La
+`ACTA 20` lo leyo, lo clasifico y dejo escrito que **la aduana no lo iba a levantar
+sola**. Un par que solo se ve si alguien se acuerda de mirarlo no esta guardado.
+
+### Lo que NO se ensancha, y es la mitad que impide el estropicio
+
+| pieza | poblacion |
+|---|---|
+| **el barrido de vecinos** (las tres señales) | **grafo mas bandejas** |
+| **la guarda `el id ya vive en el grafo`** | **solo el grafo.** Un id que espera en la bandeja **no vive en el grafo todavia**, y tumbarlo por eso convertiria toda la bandeja en un lote rechazado |
+| **los instrumentos de `calibracion/`** | **solo el grafo, declarado en su linea**: miden la aduana contra un catalogo de referencia con su tag y su commit, y meterles las bandejas de hoy haria que la misma medida diera otro numero cada dia |
+
+**Y EL PROPIO CANDIDATO NO SE MIDE CONTRA SI MISMO**, que es la errata de metodo de
+`D.38.4` corregida en la `ACTA 18`: se barre **uno por vez**, y su id lo excluye.
+
+### Lo que entra en la poblacion, y el criterio NO es una lista de carpetas
+
+**`cuarentena/` tambien aloja `ensayo_referencia_163/`**, que son **163 nodos de un
+catalogo de referencia ajeno** puestos ahi para calibrar la aduana
+(`docs/ESTRENO_DE_LA_ADUANA.md`). **Esos no esperan juicio: no van a entrar nunca en
+este grafo**, y medir el trabajo de hoy contra ellos seria abrir cola de lectura
+contra material que la puerta rechazaria de todas formas.
+
+> **ENTRA EN LA POBLACION EL CANDIDATO CUYAS FUENTES ESTAN TODAS EN LA TABLA
+> CANONICA VIGENTE.** Se descartan ademas `_insertados` (ya viven en el grafo,
+> `D.31`) y `_derivadas`.
+
+**POR QUE ASI Y NO POR NOMBRE DE CARPETA:** una lista de nombres es exactamente el
+error que el **punto 1 de esta misma decision** acaba de corregir en `D.33`. Una
+fuente fuera de la tabla **ya tumbaria al candidato en la puerta** (guarda
+`fuentes`), asi que lo que la poblacion deja fuera es **exactamente lo que no
+podria entrar**. Y es simetrico: el ensayo se corre con `FORJA_FUENTES` apuntando a
+su tabla derivada, y **ese dia los 163 son los canonicos y los 83 del lote 4 no.**
+**El criterio sigue a la tabla que mande, no a una carpeta.**
+
+**LA POBLACION SE PUBLICA CON SU REPARTO** (`D.38.3`): el informe escribe
+`poblacion del barrido : 286 (203 del grafo mas 83 que esperan en bandejas)`,
+porque **`286` solo no deja leer por que un candidato levanto vecino.**
+
+**Medido el 12 sep 2026:** la poblacion de bandejas del lote 4 es **83**, y los 163
+del catalogo de control **quedan fuera**, como el propio auditor los habia dejado
+fuera a mano en su barrido de la vuelta 20.
+
+---
 
 ## D.39. LA INSERCION DE UN LOTE CERRADO ES AUTOMATICA (11 sep 2026, decision del fundador)
 
@@ -1686,3 +1816,57 @@ deja de ser posible es **perder un remedio por no haber ido a buscarlo.**
 **Y NO BORRA NADA DE LA RACHA.** `D.38.2` sigue entera, con sus dos especies y sus tres
 escalones. **La racha se reinicia a 0 de 3 una sola vez**, por esta decision y con esta
 condicion mecanica puesta; **el siguiente `REMEDIO ROTO` acumula como cualquier otro.**
+
+## D.41. EL INFORME DE LOTE VIVE DONDE CABE, Y NO CABE EN UN TURNO (12 sep 2026, decision del fundador)
+
+*Punto 2 de la decision del fundador del 12 sep 2026. **El numero lo pongo yo**: el
+fundador no lo numero, y una decision sin sede se pierde. Si el numero estorba, se
+renumera; lo que no se puede es dejarla sin banco.*
+
+### La cifra que lo obliga
+
+**`CHOCAN entre si dentro del lote` es la unica salida del informe que un informe de
+uno en uno NO PUEDE VER**, porque el choque es **entre dos candidatos del mismo
+lote**, y de uno en uno nunca hay dos. Toda la campaña la ha publicado el informe de
+lote entero.
+
+### Y el informe de lote entero no cabe en un turno. Medido, no supuesto
+
+    2 candidatos contra el grafo (203)              193 s   ->   96,5 s cada uno
+    2 candidatos contra grafo mas bandejas (286)    313 s   ->  156,5 s cada uno
+
+**Mas de TRES HORAS para los 83 del lote 4.** Ni el extractor de la vuelta 20 ni el
+auditor pudieron terminarlo: `.aduana_v20/informe_lote_cap09_v2.txt` quedo en **480
+bytes, solo la cabecera.** **No es lentitud de un modelo: es el coste del
+instrumento**, y pedirselo a un turno es pedirle que falle.
+
+### La letra
+
+> **EL ARNES CORRE EL INFORME DE LOTE EL MISMO, COMO PASO PROPIO, ANTES DEL TURNO DE
+> INSERCION DE UN LOTE CERRADO (`D.39`), SIN RELOJ DE MODELO, y le entrega al
+> extractor EL FICHERO SELLADO CON SU HASH.**
+>
+> **EL EXTRACTOR NO LO RECOMPUTA: LO CITA.**
+
+| pieza | donde |
+|---|---|
+| se pide | `INFORME_DE_LOTE=cuarentena/<lote> bash orquestador_forja.sh` |
+| el fichero | `docs/loop/INFORME_DE_LOTE.txt` |
+| el sello | `git hash-object`, registrado en `docs/loop/SELLOS_INFORME.jsonl` con su vuelta, su lote y **sus segundos** |
+| el mandato | el prompt del extractor lleva el fichero, su sello, y **NO LO RECOMPUTES: CITALO** |
+
+**VACIO POR DEFECTO, Y ES DELIBERADO.** `D.39` dice con estas palabras que **el
+arnes no puede comprobar que un lote este cerrado** ni lee actas. **Quien lo sabe lo
+nombra al lanzar**, igual que con `MODO_INSERCION`. **Una ruta que no existe detiene
+el arnes antes de gastar un turno**, en vez de entregar un informe vacio; y **sin
+lote que informar el paso se salta Y SE REGISTRA en el log**, porque un paso que se
+salta en silencio es un paso que nadie puede echar en falta.
+
+**EL INFORME DE UN CANDIDATO SUELTO SIGUE SIENDO DEL EXTRACTOR**, en el mismo acto
+en que lo escribe (`EXTRACTOR.md` 12). Lo que se saca del turno es **el del lote
+entero**, y solo ese.
+
+**Casos positivos:** escenarios **15**, **15b** y **15c** de `tests/prueba_arnes.sh`,
+que comprueban que el sello cae **antes** del turno, que un lote inexistente detiene
+la corrida **sin que el extractor corra**, y que sin lote el prompt **no promete un
+informe que no existe.**

@@ -984,6 +984,9 @@ class PruebaBandejas(BaseForja):
     def _arbol(self, raiz):
         for pieza in ("docs/loop/loop.log", "docs/loop/ultimo_extractor.json",
                       "docs/loop/ultimo_auditor.json", "docs/loop/ACTA_AUDITOR.md",
+                      "docs/loop/ultimo_apertura.json",
+                      "docs/loop/ultimo_que_nazca_manana.json",
+                      "docs/loop/REPORTE.md", "docs/ultimo_disfrazado.json",
                       "cuarentena/LEEME.md", "cuarentena/un_lote/candidato.json",
                       "cuarentena/un_lote/LEEME.md",
                       "cuarentena/_insertados/un_lote/LEEME.md",
@@ -1028,6 +1031,44 @@ class PruebaBandejas(BaseForja):
             self.assertIn("docs/loop/ACTA_AUDITOR.md", barridos)
         finally:
             shutil.rmtree(taller, ignore_errors=True)
+
+    def test_d33_se_ensancha_por_patron_y_no_por_lista(self):
+        """12 sep 2026, decision del fundador, punto 1.
+
+        La lista cerrada tenia una grieta con forma de fecha:
+        `ultimo_apertura.json` nacio con `D.34`, despues de la lista, y en la
+        vuelta 20 tres guiones largos del mensaje final de la fase ciega
+        tumbaron el barrido Y la prueba de aceptacion. **Formatear la salida de
+        un modelo es tarea del arnes, no del modelo.**
+        """
+        taller = tempfile.mkdtemp(prefix="artefactos_")
+        try:
+            self._arbol(taller)
+            barridos = set(os.path.relpath(r, taller).replace("\\", "/")
+                           for r in comun.archivos_del_repo(taller))
+            # EL QUE CAUSO LA PARADA, y el que nazca manana sin tocar ninguna lista.
+            self.assertNotIn("docs/loop/ultimo_apertura.json", barridos)
+            self.assertNotIn("docs/loop/ultimo_que_nazca_manana.json", barridos)
+            # CASO POSITIVO, Y ES LA MITAD QUE IMPORTA: la exencion es de CAPA,
+            # no de contenido. La prosa de la casa en la MISMA carpeta se barre.
+            self.assertIn("docs/loop/ACTA_AUDITOR.md", barridos)
+            self.assertIn("docs/loop/REPORTE.md", barridos)
+            # Y EL PATRON NO VIAJA: un fichero que solo SE LLAMA asi, fuera de
+            # docs/loop/, es prosa de esta casa como cualquier otra.
+            self.assertIn("docs/ultimo_disfrazado.json", barridos)
+        finally:
+            shutil.rmtree(taller, ignore_errors=True)
+
+    def test_el_patron_mira_el_nombre_y_la_carpeta(self):
+        self.assertTrue(comun.es_artefacto_de_maquina("ultimo_apertura.json", "docs/loop"))
+        self.assertTrue(comun.es_artefacto_de_maquina("loop.log", "docs/loop"))
+        self.assertTrue(comun.es_artefacto_de_maquina("ultimo_x.json",
+                                                      os.path.join("docs", "loop")))
+        # CASO POSITIVO por los dos lados: el nombre solo no basta, y la
+        # carpeta sola tampoco.
+        self.assertFalse(comun.es_artefacto_de_maquina("ultimo_x.json", "docs"))
+        self.assertFalse(comun.es_artefacto_de_maquina("ACTA_AUDITOR.md", "docs/loop"))
+        self.assertFalse(comun.es_artefacto_de_maquina("ultimo_x.txt", "docs/loop"))
 
     def test_la_guarda_del_gate_si_muerde_al_candidato(self):
         """No barrer la bandeja NO es indultar: la puerta sigue mordiendo."""
@@ -1356,8 +1397,11 @@ class PruebaArchivoDeInsertados(BaseForja):
         archivados = self._lote("cuarentena/_insertados/un_libro")
         rutas = ([os.path.join(vivos, f) for f in sorted(os.listdir(vivos))]
                  + [os.path.join(archivados, f) for f in sorted(os.listdir(archivados))])
+        # bandejas=[] porque esta prueba mide el RECORTE de _insertados, no la
+        # poblacion: sin esto miraria las bandejas del repo de verdad y su
+        # resultado dependeria de en que vuelta se corra.
         dictamenes, cuantos, umbrales, fuera = informe.revisar(
-            rutas, ruta_dataset=self.dataset,
+            rutas, ruta_dataset=self.dataset, bandejas=[],
             tabla_fuentes=comun.leer_json(self.fuentes_tabla))
         self.assertEqual(len(dictamenes), 2)
         self.assertEqual(len(fuera), 2)
@@ -1748,6 +1792,165 @@ El arnes me entrega como `HEREDADO 1` la seccion 7.6 del acta anterior.
         self.assertEqual(len(herencia.comprobar(datos, self._apertura("clases\n"))), 1)
 
 
+class PruebaPoblacionDelInforme(BaseForja):
+    """LA POBLACION DEL INFORME ES GRAFO MAS BANDEJAS (12 sep 2026, punto 3).
+
+    `D.38.4` ya lo mandaba para el barrido del auditor desde el 11 sep, y el
+    informe seguia cargando solo el grafo. **Un par cuyos dos extremos viven en
+    cuarentena no lo levantaba nadie**, y la `ACTA 20` tuvo que clasificar a mano
+    el de `cap_10` `L225` a `L251` contra `reconocer_recompensar_gente_estable`
+    porque la maquina no podia verlo.
+    """
+
+    def _taller_bandejas(self):
+        base = os.path.join(self.taller, "cuarentena")
+        for sub in ("un_lote", "_insertados/un_lote", "_derivadas",
+                    "catalogo_ajeno"):
+            ruta = os.path.join(base, *sub.split("/"))
+            if not os.path.isdir(ruta):
+                os.makedirs(ruta)
+        return base
+
+    def _candidato(self, identificador, fuente="manual_sistema_conocimiento",
+                   texto="medir la cola de lectura del lote entero"):
+        return {
+            "id": identificador,
+            "titulo": identificador.replace("_", " "),
+            "resumen_teorico": texto,
+            "condiciones_activacion": "cuando hay un lote en la bandeja",
+            "entregable_esperado": "un informe con su saldo",
+            "pasos_accionables": ["Correr el informe.", "Leer el saldo."],
+            "dominio": "gestion",
+            "estado": "vivo",
+            "fuentes": [{"clave": fuente, "fecha": "2026-09-12"}],
+            "denominaciones": {"nombre_largo": identificador.replace("_", " ")},
+        }
+
+    def _poner(self, carpeta, nombre, datos):
+        ruta = os.path.join(carpeta, nombre)
+        comun.escribir_texto(ruta, json.dumps(datos, ensure_ascii=False))
+        return ruta
+
+    def test_la_poblacion_suma_las_bandejas_y_descarta_lo_archivado(self):
+        from src import informe
+        base = self._taller_bandejas()
+        self._poner(os.path.join(base, "un_lote"), "espera.json",
+                    self._candidato("esperar_turno_bandeja"))
+        self._poner(os.path.join(base, "_insertados", "un_lote"), "ya_entro.json",
+                    self._candidato("archivar_candidato_insertado"))
+        esperando = informe.poblacion_de_bandejas(
+            raiz=self.taller,
+            tabla_fuentes=comun.leer_json(self.fuentes_tabla))
+        ids = [c["id"] for c in esperando]
+        self.assertIn("esperar_turno_bandeja", ids)
+        # CASO POSITIVO: lo archivado NO se cuenta dos veces. Ya vive en el
+        # grafo (D.31), y contarlo aqui seria medir un nodo contra si mismo.
+        self.assertNotIn("archivar_candidato_insertado", ids)
+
+    def test_caso_positivo_lo_que_no_puede_entrar_no_es_poblacion(self):
+        """`cuarentena/` tambien aloja un CATALOGO DE REFERENCIA ajeno.
+
+        163 nodos puestos ahi para calibrar la aduana. No esperan juicio: no van
+        a entrar nunca. Y el criterio no es una lista de nombres de carpeta, que
+        es el error que la decision 1 de este mismo dia acaba de corregir un piso
+        mas abajo: **entra el candidato cuyas fuentes estan en la tabla vigente.**
+        """
+        from src import informe
+        base = self._taller_bandejas()
+        self._poner(os.path.join(base, "un_lote"), "propio.json",
+                    self._candidato("medir_candidato_propio"))
+        self._poner(os.path.join(base, "catalogo_ajeno"), "ajeno.json",
+                    self._candidato("medir_nodo_ajeno",
+                                    fuente="libro_que_nadie_registro"))
+        ids = [c["id"] for c in informe.poblacion_de_bandejas(
+            raiz=self.taller,
+            tabla_fuentes=comun.leer_json(self.fuentes_tabla))]
+        self.assertIn("medir_candidato_propio", ids)
+        self.assertNotIn("medir_nodo_ajeno", ids)
+
+    def test_un_par_con_los_dos_extremos_en_cuarentena_se_levanta(self):
+        """Es el ejemplar exacto que obligo a esta decision."""
+        from src import informe
+        base = self._taller_bandejas()
+        texto = ("reconocer y recompensar a la gente estable del equipo, la que "
+                 "sostiene el trabajo sin querer ascender cada trimestre")
+        vecino = self._candidato("reconocer_recompensar_gente_estable", texto=texto)
+        self._poner(os.path.join(base, "un_lote"), "vecino.json", vecino)
+        gemelo = self._candidato("reconocer_gente_estable_equipo", texto=texto)
+        ruta = self._poner(os.path.join(base, "un_lote"), "gemelo.json", gemelo)
+
+        tabla = comun.leer_json(self.fuentes_tabla)
+        # CON LA POBLACION VIEJA (solo grafo, que esta vacio) NADIE LO VE.
+        d_viejo, pob_vieja, _u, _a = informe.revisar(
+            [ruta], ruta_dataset=self.dataset, tabla_fuentes=tabla, bandejas=[])
+        self.assertEqual(d_viejo[0]["salida"], informe.ENTRARIA)
+        self.assertEqual(pob_vieja.bandejas, 0)
+
+        # CON LA POBLACION NUEVA, SI.
+        esperando = informe.poblacion_de_bandejas(raiz=self.taller, tabla_fuentes=tabla)
+        d_nuevo, pob, _u, _a = informe.revisar(
+            [ruta], ruta_dataset=self.dataset, tabla_fuentes=tabla,
+            bandejas=esperando)
+        self.assertEqual(d_nuevo[0]["salida"], informe.BLOQUEARIA)
+        self.assertTrue(any(v["id"] == "reconocer_recompensar_gente_estable"
+                            for v in d_nuevo[0]["vecinos"]))
+        self.assertEqual(pob.bandejas, 2)
+        self.anotar("D40_pob", "par con los dos extremos en cuarentena: levantado")
+
+    def test_el_candidato_no_se_mide_contra_si_mismo(self):
+        """La errata de metodo de `D.38.4`, corregida en la `ACTA 18`: menos el
+        propio candidato, y por eso se barre uno por vez."""
+        from src import informe
+        base = self._taller_bandejas()
+        solo = self._candidato("medir_unico_candidato_bandeja")
+        ruta = self._poner(os.path.join(base, "un_lote"), "solo.json", solo)
+        tabla = comun.leer_json(self.fuentes_tabla)
+        esperando = informe.poblacion_de_bandejas(raiz=self.taller, tabla_fuentes=tabla)
+        self.assertEqual(len(esperando), 1)
+        dictamenes, pob, _u, _a = informe.revisar(
+            [ruta], ruta_dataset=self.dataset, tabla_fuentes=tabla,
+            bandejas=esperando)
+        # ESTA EN LA POBLACION Y AUN ASI ENTRA LIMPIO: su propio id lo excluye.
+        self.assertEqual(pob.bandejas, 1)
+        self.assertEqual(dictamenes[0]["salida"], informe.ENTRARIA)
+        self.assertEqual(dictamenes[0]["vecinos"], [])
+
+    def test_el_resolutor_no_se_ensancha_con_las_bandejas(self):
+        """'el id ya vive en el grafo' es sobre el GRAFO.
+
+        Un id que espera en la bandeja NO vive en el grafo todavia, y tumbarlo
+        por eso convertiria toda la bandeja en un lote rechazado.
+        """
+        from src import informe
+        base = self._taller_bandejas()
+        datos = self._candidato("esperar_veredicto_bandeja")
+        ruta = self._poner(os.path.join(base, "un_lote"), "c.json", datos)
+        tabla = comun.leer_json(self.fuentes_tabla)
+        dictamenes, _pob, _u, _a = informe.revisar(
+            [ruta], ruta_dataset=self.dataset, tabla_fuentes=tabla,
+            bandejas=informe.poblacion_de_bandejas(raiz=self.taller,
+                                                   tabla_fuentes=tabla))
+        self.assertNotEqual(dictamenes[0]["salida"], informe.CAERIA)
+
+    def test_el_informe_publica_la_poblacion_con_su_reparto(self):
+        """Un numero solo miente: 286 no dice lo mismo que 203 mas 83."""
+        from src import informe
+        base = self._taller_bandejas()
+        ruta = self._poner(os.path.join(base, "un_lote"), "c.json",
+                           self._candidato("publicar_poblacion_barrido"))
+        tabla = comun.leer_json(self.fuentes_tabla)
+        dictamenes, pob, umbrales, fuera = informe.revisar(
+            [ruta], ruta_dataset=self.dataset, tabla_fuentes=tabla,
+            bandejas=informe.poblacion_de_bandejas(raiz=self.taller,
+                                                   tabla_fuentes=tabla))
+        texto = informe.texto_informe(dictamenes, pob, umbrales, archivados=fuera)
+        self.assertIn("poblacion del barrido", texto)
+        self.assertIn("del grafo mas", texto)
+        self.assertIn("que esperan en bandejas", texto)
+        # Y LA CIFRA QUE JUSTIFICA QUE ESTO VIVA EN EL ARNES Y NO EN UN TURNO.
+        self.assertIn("CHOCAN entre si dentro del lote", texto)
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
@@ -1757,7 +1960,8 @@ def main():
              PruebaArchivoDeInsertados,
              PruebaAristaDeclarada37,
              PruebaSedeVacia,
-             PruebaHerencia]
+             PruebaHerencia,
+             PruebaPoblacionDelInforme]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -1794,6 +1998,9 @@ def main():
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaSedeVacia)._tests))
     print("  D.40, lo que un auditor le deja al siguiente lo entrega el arnes: "
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaHerencia)._tests))
+    print("  la poblacion del informe es grafo mas bandejas (12 sep 2026, punto 3): "
+          "%d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaPoblacionDelInforme)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

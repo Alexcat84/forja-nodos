@@ -80,8 +80,15 @@ def main(argumentos=None):
     sys.stdout.flush()
 
     arranque = time.time()
+    # POBLACION SOLO GRAFO, Y A PROPOSITO: este instrumento mide la aduana
+    # contra un CATALOGO DE REFERENCIA con su tag y su commit, y meterle las
+    # bandejas de hoy haria que la misma medida diera otro numero cada dia. El
+    # punto 3 del 12 sep 2026 ensancha la poblacion del INFORME, que es lo que
+    # decide si un candidato entra; no la de una calibracion, que es una medida
+    # contra un patron fijo.
     dictamenes, cuantos_nodos, umbrales, _archivados = informe.revisar(
-        elegidos, ruta_dataset=grafo, tabla_fuentes=comun.leer_json(tabla))
+        elegidos, ruta_dataset=grafo, tabla_fuentes=comun.leer_json(tabla),
+        bandejas=[])
 
     colas = []
     for dictamen in dictamenes:

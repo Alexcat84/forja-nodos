@@ -5,6 +5,7 @@ Anclaje: manual seccion 2 (fase cero). Aqui viven las piezas que usan el
 resolutor, el gate y la aduana, para que ninguna tenga su propia version.
 """
 
+import fnmatch
 import hashlib
 import io
 import json
@@ -240,7 +241,46 @@ DOC_DE_BANDEJA = "LEEME.md"
 # LO QUE NO CAMBIA: el arnes los sigue commiteando en su commit de artefactos,
 # porque son el testigo del turno y la sede autoritativa de su coste. No se
 # barren; se guardan.
+#
+# ----------------------------------------------------------------------------
+# SE ENSANCHA POR PATRON, 12 sep 2026 (decision del fundador, punto 1).
+#
+# LA LISTA CERRADA TENIA UNA GRIETA CON FORMA DE FECHA: `ultimo_apertura.json`
+# nacio con `D.34`, DESPUES de que esta lista se escribiera, y por eso no estaba
+# en ella. En la vuelta 20, tres guiones largos del mensaje final de la fase
+# ciega pusieron en rojo el barrido Y la prueba de aceptacion, y la parada se
+# adjudico contra el auditor por no haber formateado su propio volcado.
+# **CAPA EQUIVOCADA:** formatear la salida de un modelo es tarea del arnes.
+#
+# UN NOMBRE QUE HAY QUE ACORDARSE DE ANADIR A UNA LISTA NO PROTEGE NADA: protege
+# hasta el dia en que alguien escribe un fichero nuevo. Por eso la exencion pasa
+# a ser un PATRON y no un inventario, y por eso vale para los que nazcan mañana.
+#
+# LA CONVENCION QUE HACE QUE EL PATRON BASTE: el arnes escribe la salida de un
+# modelo en `docs/loop/ultimo_<rol>.json`. Un artefacto nuevo que nazca del
+# volcado de un modelo se llama asi y **queda exento el dia que nace**, sin que
+# nadie tenga que tocar este fichero.
+#
+# Y LO QUE NO SE AFLOJA: lo que no es artefacto sigue sin serlo. Un acta, un
+# reporte, una regla o un candidato con un guion largo tumba el barrido, este
+# donde este. La exencion es de CAPA, no de contenido.
 ARTEFACTOS_DE_MAQUINA = ("loop.log", "ultimo_extractor.json", "ultimo_auditor.json")
+PATRONES_DE_ARTEFACTO = ("ultimo_*.json",)
+CARPETA_DE_ARTEFACTOS = "loop"
+
+
+def es_artefacto_de_maquina(nombre, carpeta):
+    """Cierto si es un artefacto que el arnes escribe desde la salida de un modelo.
+
+    SE COMPRUEBA EL NOMBRE Y SU CARPETA: un fichero que se llame `loop.log` en
+    otro sitio no es el testigo del arnes, y un `ultimo_cualquiera.json` fuera de
+    `docs/loop/` es prosa de esta casa como cualquier otra.
+    """
+    if os.path.basename(carpeta) != CARPETA_DE_ARTEFACTOS:
+        return False
+    if nombre in ARTEFACTOS_DE_MAQUINA:
+        return True
+    return any(fnmatch.fnmatch(nombre, patron) for patron in PATRONES_DE_ARTEFACTO)
 
 
 def _es_bandeja(carpeta, raiz):
@@ -285,10 +325,8 @@ def archivos_del_repo(raiz=None, extensiones=None):
             continue
         for fichero in ficheros:
             # Los artefactos del arnes son registro de maquina y no se barren
-            # (D.33). Se comprueba el nombre Y su carpeta: un fichero que se
-            # llame loop.log en otro sitio no es el testigo del arnes.
-            if fichero in ARTEFACTOS_DE_MAQUINA and \
-                    os.path.basename(carpeta) == "loop":
+            # (D.33, ensanchada POR PATRON el 12 sep 2026).
+            if es_artefacto_de_maquina(fichero, carpeta):
                 continue
             ruta = os.path.join(carpeta, fichero)
             if extensiones is not None:

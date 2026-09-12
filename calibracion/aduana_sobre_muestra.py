@@ -78,10 +78,16 @@ def main(argumentos=None):
             with io.open(ruta, "w", encoding="utf-8") as f:
                 json.dump(ref.nodos[identificador], f, ensure_ascii=False)
             rutas.append(ruta)
+            # POBLACION SOLO GRAFO, Y A PROPOSITO: este instrumento mide la
+            # aduana contra un CATALOGO DE REFERENCIA con su tag y su commit, y
+            # meterle las bandejas de hoy haria que la misma medida diera otro
+            # numero cada dia. El punto 3 del 12 sep 2026 ensancha la poblacion
+            # del INFORME, que es lo que decide si un candidato entra; no la de
+            # una calibracion, que es una medida contra un patron fijo.
 
         dictamenes, cuantos_nodos, umbrales, _archivados = informe.revisar(
             rutas, ruta_dataset=dataset,
-            tabla_fuentes=comun.leer_json(tabla))
+            tabla_fuentes=comun.leer_json(tabla), bandejas=[])
     finally:
         shutil.rmtree(taller, ignore_errors=True)
 

@@ -70,6 +70,35 @@ RAMA="${RAMA:-bucle}"
 # cae al default: un modo mal escrito es una autorizacion que nadie dio.
 MODO_INSERCION="${MODO_INSERCION:-insertar}"
 
+# ---------------------------------------------------------------------------
+# EL INFORME DE LOTE QUE NO CABE EN UN TURNO SE SACA DEL TURNO
+# (12 sep 2026, decision del fundador, punto 2).
+#
+# LA CIFRA QUE SOLO UN INFORME DE LOTE ENTERO VE es "CHOCAN entre si dentro del
+# lote": un informe de uno en uno no puede verla, porque el choque es entre DOS
+# candidatos del mismo lote, y de uno en uno nunca hay dos.
+#
+# Y EL INFORME DE LOTE ENTERO NO CABE EN UN TURNO. Medido el 12 sep 2026:
+#
+#     2 candidatos contra el grafo (203)            193 s   ->  96,5 s cada uno
+#     2 candidatos contra grafo mas bandejas (286)  313 s   -> 156,5 s cada uno
+#
+# o sea MAS DE TRES HORAS para los 83 del lote 4. Ni el extractor de la vuelta 20
+# ni el auditor pudieron terminarlo, y el fichero quedo en 480 bytes con solo la
+# cabecera. No es lentitud de un modelo: es el coste del instrumento.
+#
+# ASI QUE LO CORRE EL ARNES, COMO PASO PROPIO, SIN RELOJ DE MODELO, y le entrega
+# al extractor el fichero SELLADO con su hash. El extractor NO LO RECOMPUTA: LO
+# CITA. Una cifra que vive donde cabe es una cifra que se puede firmar.
+#
+#     INFORME_DE_LOTE=cuarentena/scott_radical_candor bash orquestador_forja.sh
+#
+# VACIO POR DEFECTO, y es deliberado: EL ARNES NO SABE SI UN LOTE ESTA CERRADO
+# (D.39 lo dice con esas palabras) ni lee actas. Quien lo sabe lo nombra al
+# lanzar, igual que con MODO_INSERCION. Una ruta que no existe detiene el arnes
+# antes de gastar un turno, en vez de entregar un informe vacio.
+INFORME_DE_LOTE="${INFORME_DE_LOTE:-}"
+
 LOOP="docs/loop"
 mkdir -p "$LOOP"
 
@@ -342,7 +371,72 @@ else
   MANDATO_INSERCION="NO INSERTAS NADA EN ESTA CORRIDA (MODO_INSERCION=cuarentena, que es el default). TODO candidato que escribas queda en cuarentena/<libro>/<id_propuesto>.json y pasa por la aduana EN SECO, con python forja.py informe cuarentena/<libro>/<id_propuesto>.json en el mismo acto en que lo escribes; el que caeria lo corriges y lo reintentas. NO uses python forja.py insertar, ni aunque el candidato este perfecto: LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO UN DEFAULT, y en esta corrida no la ha dado. Al cerrar el capitulo corres el informe del lote entero y pegas su saldo en el reporte."
 fi
 
-PROMPT_EXTRACTOR="Estas en el repo forja-nodos. Lee docs/loop/EXTRACTOR.md (tus reglas permanentes) y despues docs/loop/PROMPT_SIGUIENTE.md (tu encargo). Ejecuta el encargo al pie de la letra. $MANDATO_INSERCION Abre docs/loop/REPORTE.md al empezar y hazlo crecer por anexion, con los discutibles marcados antes de saber si aciertas. Commitea y pushea TODO a la rama activa antes de terminar."
+PROMPT_EXTRACTOR_BASE="Estas en el repo forja-nodos. Lee docs/loop/EXTRACTOR.md (tus reglas permanentes) y despues docs/loop/PROMPT_SIGUIENTE.md (tu encargo). Ejecuta el encargo al pie de la letra. $MANDATO_INSERCION Abre docs/loop/REPORTE.md al empezar y hazlo crecer por anexion, con los discutibles marcados antes de saber si aciertas. Commitea y pushea TODO a la rama activa antes de terminar."
+
+INFORME_LOTE_FICHERO="$LOOP/INFORME_DE_LOTE.txt"
+SELLOS_INFORME="$LOOP/SELLOS_INFORME.jsonl"
+MANDATO_INFORME=""
+
+para_alexis_por_informe() { # vuelta lote motivo
+  cat > "$LOOP/PARA_ALEXIS.md" <<EOF
+# PARA_ALEXIS: el informe de lote del arnes no se pudo correr
+
+La vuelta $1 iba a entregarle al extractor el informe del lote $2 corrido por el
+arnes como paso propio (decision del fundador del 12 sep 2026, punto 2), y no se
+pudo.
+
+Motivo:
+
+$3
+
+QUE SIGNIFICA. El informe de lote entero es la unica sede donde se puede medir
+**CHOCAN entre si dentro del lote**, y no cabe en un turno de modelo: mas de tres
+horas para un lote de 83, medido. Por eso lo corre el arnes. Si el arnes no puede
+correrlo, el extractor tampoco, y esa cifra no se puede firmar en esta vuelta.
+
+QUE NO SIGNIFICA. No dice que el lote este mal ni que ningun candidato sea falso.
+Dice que el saldo del lote se queda sin instrumento detras.
+
+Estado: rama $RAMA, hash $(git rev-parse --short HEAD 2>/dev/null || echo desconocido).
+
+Como retomar: comprueba que la carpeta existe y relanza. Si no quieres informe de
+lote en esta corrida, lanza sin INFORME_DE_LOTE: el paso se salta y queda escrito
+en el log que se salto.
+EOF
+}
+
+# EL PASO PROPIO DEL ARNES, ANTES DEL TURNO DEL EXTRACTOR. Sin reloj de modelo.
+informe_de_lote() { # vuelta
+  MANDATO_INFORME=""
+  if [ -z "$INFORME_DE_LOTE" ]; then
+    log "VUELTA $1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)"
+    return 0
+  fi
+  if [ ! -d "$INFORME_DE_LOTE" ]; then
+    log "DETENIDO en la vuelta $1: INFORME_DE_LOTE no es una carpeta: $INFORME_DE_LOTE"
+    para_alexis_por_informe "$1" "$INFORME_DE_LOTE" "la carpeta no existe en el arbol"
+    exit 1
+  fi
+  local arranque fin sello fecha
+  arranque="$(date +%s)"
+  log "VUELTA $1 : INFORME DE LOTE sobre $INFORME_DE_LOTE (paso del arnes, sin reloj de modelo)"
+  log "  tarda, y esta medido: 156,5 s por candidato con la poblacion de bandejas"
+  if ! python forja.py informe --carpeta "$INFORME_DE_LOTE" > "$INFORME_LOTE_FICHERO" 2>&1; then
+    log "DETENIDO en la vuelta $1: el informe de lote salio en error. Ver $LOOP/PARA_ALEXIS.md"
+    para_alexis_por_informe "$1" "$INFORME_DE_LOTE" "$(tail -5 "$INFORME_LOTE_FICHERO" 2>/dev/null)"
+    exit 1
+  fi
+  fin="$(date +%s)"
+  sello="$(git hash-object "$INFORME_LOTE_FICHERO" 2>/dev/null || echo sin-sello)"
+  fecha="$(date "+%Y-%m-%d %H:%M:%S")"
+  printf '{"vuelta": %s, "fecha": "%s", "lote": "%s", "sello": "%s", "segundos": %s}\n' \
+    "$1" "$fecha" "$INFORME_DE_LOTE" "$sello" "$((fin - arranque))" >> "$SELLOS_INFORME"
+  log "  informe sellado: $sello  ($((fin - arranque)) s)"
+  log "  el extractor lo CITA por su sello y NO lo recomputa (punto 2 del 12 sep 2026)"
+  git add "$INFORME_LOTE_FICHERO" "$SELLOS_INFORME" >>"$LOOP/loop.log" 2>&1 || true
+  git commit -q -m "Informe del lote $INFORME_DE_LOTE de la vuelta $1, corrido y sellado por el arnes (punto 2 del 12 sep 2026)" >>"$LOOP/loop.log" 2>&1 || true
+  MANDATO_INFORME="EL INFORME DEL LOTE YA ESTA CORRIDO Y SELLADO POR EL ARNES, Y NO ES TAREA TUYA. Esta en $INFORME_LOTE_FICHERO, con sello $sello (git hash-object), registrado en $SELLOS_INFORME. NO LO RECOMPUTES: CITALO por su sello, y pega de ahi el saldo y sobre todo la cifra CHOCAN entre si dentro del lote, que es la unica que un informe de uno en uno no puede ver. Lo corre el arnes porque no cabe en un turno: 156,5 segundos por candidato, medidos el 12 sep 2026. El informe de UN candidato suelto ese si lo corres tu, en el mismo acto en que lo escribes."
+}
 
 # ---------------------------------------------------------------------------
 # LA APERTURA CIEGA, EN CODIGO (D.34, decision del fundador del 10 sep 2026).
@@ -568,9 +662,12 @@ for i in $(seq 1 "$MAX_VUELTAS"); do
   if [ "$i" -eq 1 ] && [ "$ROL_INICIAL" = "auditor" ]; then
     log "VUELTA $i : SE SALTA EL TURNO DEL EXTRACTOR, la corrida empieza por el AUDITOR"
   else
+    # EL INFORME DE LOTE VA ANTES DEL TURNO, NO DENTRO (punto 2 del 12 sep 2026).
+    # Deja MANDATO_INFORME puesto si corrio, vacio si no habia lote que informar.
+    informe_de_lote "$i"
     log "VUELTA $i : EXTRACTOR ($MODELO_EXTRACTOR)"
     invocar_claude "extractor" "$MODELO_EXTRACTOR" \
-      "$PROMPT_EXTRACTOR" \
+      "$PROMPT_EXTRACTOR_BASE $MANDATO_INFORME" \
       "$LOOP/ultimo_extractor.json" "$i" "$LOOP/REPORTE.md"
 
     git pull --rebase origin "$RAMA" >/dev/null 2>&1 || true

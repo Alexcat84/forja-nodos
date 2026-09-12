@@ -136,6 +136,14 @@ ultimas caidas propias fueron de la misma familia: una cifra de esa fase.
 > en esa misma fase**, con **su salida literal pegada al lado**. Una cifra sin
 > instrumento al lado **no se publica**.
 >
+> **`D.38.5`, 12 sep 2026: LA ADUANA YA MIDE LA MISMA POBLACION QUE TU.** El
+> informe cargaba solo el grafo, asi que durante nueve vueltas **tu barrido y la
+> maquina midieron poblaciones distintas**, y un par con los dos extremos en
+> cuarentena no lo levantaba nadie. **Ya lo levanta.** Lo que sigue siendo solo del
+> grafo es la guarda `el id ya vive en el grafo`, que es sobre el grafo por
+> definicion. **Cuando cruces tu cifra de vecinos contra la del informe, ya son
+> comparables: si no cuadran, es una discrepancia de verdad y no de metodo.**
+>
 > **`D.38.4`: tu barrido de vecinos se hace sobre GRAFO MAS BANDEJAS.** La
 > poblacion es `dataset/nodos.jsonl` **mas todo lo que espera en
 > `cuarentena/<libro>/`**, descartando `_insertados` y `_derivadas`. **Un vecino
@@ -186,8 +194,30 @@ otro.**
 
 | especie tuya | que es |
 |---|---|
-| **`REMEDIO ROTO`** | un remedio que tu escribiste y tu no cumpliste |
+| **`REMEDIO ROTO`** | un remedio **de sustancia de auditoria** que tu escribiste y tu no cumpliste |
 | **`CIFRA PUBLICADA PROPIA`** | una cifra falsa en tu acta o en tu apertura sellada |
+
+> ### **`REMEDIO ROTO` SE ACOTO EL 12 sep 2026** (decision del fundador, punto 1)
+>
+> > **CUENTA SOLO CUANDO EL REMEDIO ES DE SUSTANCIA DE AUDITORIA: clases, cifras,
+> > lecturas, herencia. UN REMEDIO SOBRE FORMATO DE ARTEFACTOS NO EXISTE COMO
+> > REMEDIO: ES TAREA DEL ARNES.**
+>
+> **EL CASO, Y ES TUYO.** Tu `ACTA 19` `8.1` se encargo *cero guiones largos en mi
+> mensaje final, porque el arnes lo escribe en `ultimo_auditor.json`*. La vuelta 20
+> lo rompio y se conto como tercer escalon: **parada.** **Se retira por correccion
+> declarada**, y esa caida se reclasifica como **`D.33`**, artefacto de maquina sin
+> exencion escrita. `D.33` ya esta ensanchada por patron y **ningun
+> `docs/loop/ultimo_*.json` puede volver a tumbar una guarda.**
+>
+> **POR QUE NO ES UN FAVOR:** un remedio es una promesa que puedes cumplir
+> **leyendo y midiendo mejor**. El volcado de tu mensaje final **lo escribe la
+> tuberia del arnes cuando tu turno ya termino**, y no lo controlas. **Una racha que
+> cuenta eso no mide si te verificas: mide si el arnes esta bien cableado.**
+>
+> **Y NO TE AFLOJA NADA:** `REMEDIO ROTO` sigue acumulando en **todo lo que si es
+> sustancia** (una clase que el remedio pedia releer, una cifra que pedia remedir,
+> una herencia que pedia declarar), y `CIFRA PUBLICADA PROPIA` sigue entera.
 
 **TRES SEGUIDAS PARAN**, con la regla de consecutividad de 5.2: **una tanda limpia
 en medio pone el contador a cero.**

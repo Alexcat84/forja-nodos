@@ -318,6 +318,35 @@ Lo que este documento añade es **el ritmo de la vuelta**:
    `python forja.py informe --carpeta cuarentena/<lote>`. Ese informe dice
    cuantos entrarian, cuantos bloquearian y cuantos caerian, con cero
    inserciones. **Se lee entero antes de la primera insercion.**
+
+   > ### **PERO EL DEL LOTE ENTERO YA NO LO CORRES TU** (`D.41`, 12 sep 2026)
+   >
+   > **LO CORRE EL ARNES, COMO PASO PROPIO, ANTES DE TU TURNO**, y te lo entrega en
+   > `docs/loop/INFORME_DE_LOTE.txt` **sellado con su `git hash-object`**, anotado
+   > en `docs/loop/SELLOS_INFORME.jsonl`. **NO LO RECOMPUTES: CITALO POR SU SELLO**,
+   > y pega de ahi el saldo y sobre todo **`CHOCAN entre si dentro del lote`**, que
+   > es la unica cifra que un informe de uno en uno no puede ver.
+   >
+   > **POR QUE SE TE QUITO:** medido el 12 sep 2026, **156,5 segundos por
+   > candidato** con la poblacion de bandejas, o sea **mas de tres horas** para un
+   > lote de 83. La vuelta 20 lo lanzo y lo dejo en **480 bytes, solo la cabecera**,
+   > y el auditor tampoco pudo. **No es lentitud tuya: es el coste del
+   > instrumento**, y una cifra que no cabe en un turno no se firma en un turno.
+   >
+   > **EL DE UN CANDIDATO SUELTO SIGUE SIENDO TUYO**, en el mismo acto en que lo
+   > escribes. Lo que se saco de tu turno es el del lote entero, y solo ese.
+   >
+   > **Y SI EL PROMPT NO TE ENTREGA NINGUN INFORME**, es que esta corrida no lo
+   > pidio: entonces **no lo inventes y no lo lances**, y declara en tu reporte que
+   > la vuelta no trae saldo de lote.
+
+   > ### **Y LA POBLACION DEL INFORME CAMBIO** (`D.38.5`, 12 sep 2026)
+   >
+   > **ES GRAFO MAS BANDEJAS**, como `D.38.4` ya mandaba para el auditor: **un par
+   > cuyos dos extremos viven en cuarentena se levanta igual.** Espera **mas
+   > `BLOQUEARIA` que antes, y eso no es que tus candidatos hayan empeorado**: es
+   > cola de lectura que antes no se veia. El informe publica la poblacion **con su
+   > reparto**, y ese reparto es el que tienes que citar.
 3. **UN CANDIDATO POR VEZ**, y en el orden del libro: los nodos de un mismo
    capitulo llegan juntos, y **el primero que entra cambia lo que el segundo
    mide**. Por eso no hay carga masiva y por eso el orden importa.

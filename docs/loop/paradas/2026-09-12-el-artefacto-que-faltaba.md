@@ -1,3 +1,80 @@
+# PARADA DEL 12 SEP 2026: EL ARTEFACTO QUE FALTABA
+
+> ## LAS CUATRO DECISIONES DEL FUNDADOR, 12 sep 2026
+>
+> **1. LA RACHA DEL AUDITOR SE REINICIA, con correccion declarada:** la tercera
+> caida es especie `D.33` (artefacto de maquina), no `REMEDIO ROTO`: el remedio de
+> la `ACTA 19` `8.1` pedia a un modelo formatear su propio volcado, **capa
+> equivocada**, y se retira por correccion declarada. `D.33` se ensancha **POR
+> PATRON**: `docs/loop/ultimo_*.json`, `loop.log` y todo fichero que el arnes
+> escriba desde la salida de un modelo quedan excluidos del barrido y del hook,
+> **hoy y para los que nazcan mañana.** Y `D.38.2` se acota: `REMEDIO ROTO` cuenta
+> solo cuando el remedio es de **SUSTANCIA de auditoria** (clases, cifras, lecturas,
+> herencia); un remedio sobre formato de artefactos **no existe como remedio, es
+> tarea del arnes.** Caso positivo: un `ultimo_*.json` con guiones no tumba nada; un
+> acta con guiones si.
+>
+> **2. EL INFORME DE LOTE QUE NO CABE EN UN TURNO se saca del turno:** el arnes lo
+> corre el mismo, como paso propio **ANTES** del turno de insercion de un lote
+> cerrado (`D.39`), **sin reloj de modelo**, y le entrega al extractor el fichero
+> **sellado con su hash**; el extractor **no lo recomputa, lo cita**. Es la unica
+> cifra (`CHOCAN entre si`) que un informe de uno en uno no ve, y por eso vive donde
+> cabe.
+>
+> **3. LA POBLACION DEL INFORME ES GRAFO MAS BANDEJAS**, tambien para la aduana
+> (`src/informe.py:113`), como `D.38.4` ya manda para el auditor: un par cuyos dos
+> extremos viven en cuarentena **se levanta igual**. El par de `cap_10` `L225` a
+> `L251` contra `reconocer_recompensar_gente_estable` se declara **por lectura como
+> `CONTINUA` con arista**, como el acta lo leyo, **en la misma vuelta**.
+>
+> **4. PROMPT_SIGUIENTE de la vuelta 21:** `cap_10` **ENTERO** (13 candidatos bajo
+> el techo, la vara del corte ya adjudicada, las tres aristas `D.37` de `L173` en la
+> misma vuelta, la coda `P28` fuera de la serie, el par de la lupa por lectura), sin
+> insercion porque el lote sigue abierto.
+
+> **ARCHIVADA.** Este fichero fue `docs/loop/PARA_ALEXIS.md` hasta que el fundador
+> resolvio lo que pedia. **Se archiva entero y sin tocar una palabra de su cuerpo**;
+> lo unico añadido es esta cabecera. El arnes solo mira `docs/loop/PARA_ALEXIS.md`,
+> asi que el bucle ya no esta detenido por el.
+>
+> ### LO QUE LA DECISION 1 CONTESTA, Y EL AUDITOR LO HABIA PEDIDO BIEN
+>
+> Su `3.2` subio **una palabra en una tupla** y dijo que no la tocaba porque `src/`
+> no es su sede. **Tenia razon en las dos mitades, y la decision va mas lejos que su
+> peticion:** no se añade el nombre que faltaba, **se cambia la lista por un
+> patron**, porque una lista cerrada ya fallo una vez por una fecha
+> (`ultimo_apertura.json` nacio con `D.34`, despues de la lista) y volveria a
+> fallar con el siguiente fichero que naciera.
+>
+> **Y SU `3.1` PREGUNTABA DONDE PONER LA CONDICION MECANICA.** Dijo: *lo que fallo
+> esta un escalon mas abajo; el arnes me entrego UN heredado y el remedio que rompi
+> no estaba entre los entregados, porque vive en la `8.1` del acta y no bajo el
+> titulo TAREA BLOQUEANTE.* **La respuesta de esta decision no es entregar mas
+> remedios: es que ESE remedio no debia existir.** Un remedio sobre el formato de un
+> volcado de maquina **no es un remedio de auditoria**, y por eso `D.38.2` se acota
+> en vez de ensanchar `D.40`.
+>
+> ### LA RACHA QUEDA EN 0 DE 3, Y NO POR INDULTO
+>
+> **La tercera caida se reclasifica, no se perdona.** Era `D.33`: un artefacto de
+> maquina sin exencion escrita. Con el patron puesto, **ningun
+> `docs/loop/ultimo_*.json` puede volver a tumbar una guarda**, y el siguiente
+> `REMEDIO ROTO` de sustancia **acumula como cualquier otro.**
+>
+> ### Y DOS COSAS QUE EL AUDITOR DEJO PEDIDAS Y NO SE HACEN
+>
+> **Los ficheros de usar y tirar de su `3.3` siguen en el arbol.** Hizo bien en no
+> borrarlos (`AUDITOR_FORJA.md` 3 reserva eso al fundador) y **hoy tampoco se
+> borran**: los de `.aduana_*` son **la prueba de cifras publicadas**, y retirar
+> evidencia para dejar el arbol bonito es peor que un arbol feo.
+>
+> **Y su `REPORTE` se queda en 2 de 3, como el la dejo.** Leyo su propia decision
+> como posiblemente blanda y dijo cual fila habria que mover. **No se mueve:** la
+> cifra desfasada que encontro esta registrada y razonada, y eso es exactamente lo
+> que la regla pide.
+
+---
+
 # PARA ALEXIS. **EL BUCLE SE DETIENE EL 12 SEP 2026, Y LA CAUSA VUELVE A SER EL AUDITOR**
 
 *Escrito por el auditor al cerrar la `ACTA 20` (`docs/loop/ACTA_AUDITOR.md`, la seccion que abre

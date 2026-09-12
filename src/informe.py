@@ -86,6 +86,100 @@ def revisar_candidato(bruto, nodos, resolutor, umbrales, tabla_fuentes,
 
 
 CARPETA_ARCHIVO = "_insertados"
+# LA POBLACION DEL BARRIDO ES GRAFO MAS BANDEJAS, TAMBIEN PARA LA ADUANA
+# (12 sep 2026, decision del fundador, punto 3). `D.38.4` ya lo manda para el
+# auditor desde el 11 sep, y el informe seguia cargando solo el grafo: **un par
+# cuyos dos extremos viven en cuarentena no lo levantaba nadie.**
+#
+# EL EJEMPLAR QUE LO OBLIGO: `cap_10` `L225` a `L251` contra
+# `reconocer_recompensar_gente_estable` de `cap_06`, los dos en la bandeja. La
+# `ACTA 20` lo leyo y lo clasifico a mano porque la maquina no podia verlo.
+#
+# SE DESCARTAN `_insertados` (ya viven en el grafo, D.31, y contarlos dos veces
+# seria medir el mismo nodo contra si mismo) y `_derivadas`.
+#
+# Y SE DESCARTA LO QUE NO PUEDE ENTRAR, QUE NO ES LO MISMO QUE LO QUE NO HA
+# ENTRADO. `cuarentena/` tambien aloja `ensayo_referencia_163/`, que son 163
+# nodos de un CATALOGO DE REFERENCIA ajeno puestos ahi para calibrar la aduana
+# (`docs/ESTRENO_DE_LA_ADUANA.md`). Esos no esperan juicio: no van a entrar
+# nunca en este grafo, y medir el trabajo de hoy contra ellos seria abrir cola
+# de lectura contra material que la puerta rechazaria de todas formas.
+#
+# EL CRITERIO NO ES UNA LISTA DE NOMBRES, que es el error que la decision 1 de
+# este mismo dia acaba de corregir un piso mas abajo: **entra en la poblacion el
+# candidato cuyas fuentes estan TODAS en la tabla canonica vigente.** Una fuente
+# fuera de la tabla ya lo tumbaria en la puerta (guarda `fuentes`), asi que lo
+# que la poblacion deja fuera es exactamente lo que no podria entrar.
+#
+# Y ES SIMETRICO: el ensayo se corre con `FORJA_FUENTES` apuntando a su tabla
+# derivada, y ese dia los 163 son los canonicos y los 83 del lote 4 no. El
+# criterio sigue a la tabla que mande, no a una carpeta.
+#
+# Y EL PROPIO CANDIDATO NO SE MIDE CONTRA SI MISMO: lo excluye `buscar_vecinos`
+# por su id, que es la errata de metodo de `D.38.4` corregida en la `ACTA 18`.
+CARPETAS_FUERA_DE_POBLACION = ("_insertados", "_derivadas")
+
+
+class Poblacion(object):
+    """Lo que el barrido tuvo delante, con sus dos mitades a la vista.
+
+    Se publican las dos porque una sola miente: `286` no dice lo mismo que
+    `203 del grafo mas 83 que esperan`, y la segunda es la que permite leer por
+    que un candidato levanto vecino (`D.38.3`, toda cifra con su reparto).
+    """
+
+    def __init__(self, grafo=0, bandejas=0):
+        self.grafo = grafo
+        self.bandejas = bandejas
+
+    @property
+    def total(self):
+        return self.grafo + self.bandejas
+
+    def __int__(self):
+        return self.total
+
+    def __str__(self):
+        return "%d   (%d del grafo mas %d que esperan en bandejas)" % (
+            self.total, self.grafo, self.bandejas)
+
+
+def _fuentes_canonicas(candidato, tabla_fuentes):
+    """Cierto si TODAS las fuentes del candidato estan en la tabla vigente."""
+    claves = [f.get("clave") for f in (candidato.get("fuentes") or [])
+              if isinstance(f, dict)]
+    return bool(claves) and all(c in tabla_fuentes for c in claves)
+
+
+def poblacion_de_bandejas(raiz=None, fecha=None, tabla_fuentes=None):
+    """Los candidatos que ESPERAN juicio en las bandejas, listos para medir."""
+    raiz = raiz or comun.RAIZ
+    if tabla_fuentes is None:
+        tabla_fuentes = comun.leer_json(comun.RUTA_FUENTES)
+    base = os.path.join(raiz, "cuarentena")
+    esperando = []
+    if not os.path.isdir(base):
+        return esperando
+    for carpeta, subcarpetas, ficheros in os.walk(base):
+        subcarpetas[:] = [s for s in subcarpetas
+                          if s not in CARPETAS_FUERA_DE_POBLACION
+                          and not s.startswith(".")]
+        for fichero in sorted(ficheros):
+            if not fichero.lower().endswith(".json"):
+                continue
+            ruta = os.path.join(carpeta, fichero)
+            if esta_archivado(ruta):
+                continue
+            try:
+                bruto = comun.leer_json(ruta)
+            except (IOError, ValueError):
+                # UN CANDIDATO ILEGIBLE NO SE CUENTA Y NO REVIENTA EL BARRIDO:
+                # su propio dictamen ya lo dice con su guarda (CAERIA).
+                continue
+            candidato, _avisos = aduana.normalizar_candidato(bruto, fecha)
+            if candidato.get("id") and _fuentes_canonicas(candidato, tabla_fuentes):
+                esperando.append(candidato)
+    return esperando
 
 
 def esta_archivado(ruta):
@@ -103,16 +197,29 @@ def esta_archivado(ruta):
     return CARPETA_ARCHIVO in piezas
 
 
-def revisar(rutas, ruta_dataset=None, umbrales=None, tabla_fuentes=None):
-    """Corre el informe sobre una lista de ficheros de candidato."""
+def revisar(rutas, ruta_dataset=None, umbrales=None, tabla_fuentes=None,
+            bandejas=None):
+    """Corre el informe sobre una lista de ficheros de candidato.
+
+    `bandejas=None` descubre la poblacion que espera en `cuarentena/` (punto 3
+    de la decision del 12 sep 2026). `bandejas=[]` mide solo contra el grafo, y
+    es lo que piden los instrumentos de calibracion, que miden la aduana contra
+    un catalogo de referencia y no contra las bandejas de hoy.
+    """
     ruta_dataset = ruta_dataset or comun.RUTA_DATASET
     umbrales = umbrales or modulo_config.cargar()
     if tabla_fuentes is None:
         tabla_fuentes = comun.leer_json(comun.RUTA_FUENTES)
     esquema_nodo = modulo_esquema.cargar()
     nodos = comun.leer_jsonl(ruta_dataset)
+    # EL RESOLUTOR SE QUEDA EN EL GRAFO Y NO SE ENSANCHA: la guarda que muerde
+    # con el es 'el id ya vive en el grafo', y un id que espera en la bandeja NO
+    # vive en el grafo todavia. Lo que se ensancha es la POBLACION del barrido.
     resolutor = Resolutor(nodos)
     fecha = aduana._hoy()
+    if bandejas is None:
+        bandejas = poblacion_de_bandejas(fecha=fecha, tabla_fuentes=tabla_fuentes)
+    poblacion = list(nodos) + list(bandejas)
 
     dictamenes = []
     ids_del_lote = {}
@@ -127,13 +234,14 @@ def revisar(rutas, ruta_dataset=None, umbrales=None, tabla_fuentes=None):
                                "detalles": [str(error)], "vecinos": [], "avisos": []})
             continue
         dictamen, candidato = revisar_candidato(
-            bruto, nodos, resolutor, umbrales, tabla_fuentes, esquema_nodo,
+            bruto, poblacion, resolutor, umbrales, tabla_fuentes, esquema_nodo,
             ids_del_lote, fecha)
         dictamen["ruta"] = ruta
         dictamenes.append(dictamen)
         if dictamen["id"] and dictamen["salida"] != CHOCA:
             ids_del_lote.setdefault(dictamen["id"], os.path.basename(ruta))
-    return dictamenes, len(nodos), umbrales, archivados
+    return (dictamenes, Poblacion(len(nodos), len(bandejas)), umbrales,
+            archivados)
 
 
 def texto_informe(dictamenes, cuantos_nodos, umbrales, detalle=True,
@@ -156,7 +264,12 @@ def texto_informe(dictamenes, cuantos_nodos, umbrales, detalle=True,
         # por que no se contaron.
         lineas.append("archivados, NO contados     : %d   (ya viven en el grafo, "
                       "cuarentena/_insertados/)" % len(archivados))
-    lineas.append("nodos en el grafo de destino: %d" % cuantos_nodos)
+    # LA POBLACION SE PUBLICA CON SU REPARTO (D.38.3 y punto 3 del 12 sep 2026).
+    # Un numero solo no deja leer por que un candidato levanto vecino.
+    if isinstance(cuantos_nodos, Poblacion):
+        lineas.append("poblacion del barrido       : %s" % cuantos_nodos)
+    else:
+        lineas.append("nodos en el grafo de destino: %d" % cuantos_nodos)
     lineas.append("umbrales de esta corrida    : similitud %.2f | familia %.2f | "
                   "paso contra nodo %.2f"
                   % (umbrales["umbral_similitud_texto"], umbrales["umbral_familia_id"],
