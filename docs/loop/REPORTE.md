@@ -19875,3 +19875,309 @@ mandarlo tambien al otro nodo fabricaba un gemelo.** Va declarado dentro del pro
 > se puede leer, y es lo unico que afirmo, es que **el denominador del lote 4 se ha
 > duplicado en una vuelta** (de 64 a 132 pasos) **y la tasa no ha subido.** La banda la
 > calcula el auditor, que es quien firma esta metrica.
+
+
+## K.5.5. EL CIERRE DE `cap_05` EN LA BANDEJA, MEDIDO ANTES DE ABRIR `cap_06`
+
+    $ python forja.py informe --carpeta cuarentena/scott_radical_candor
+    candidatos revisados        : 15
+    nodos en el grafo de destino: 203
+      ENTRARIAN sin leer nada          : 14
+      BLOQUEARIAN esperando veredicto  : 1
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+**LOS SIETE DE `cap_05` NO CHOCAN NI ENTRE SI NI CON LOS OCHO QUE YA ESTABAN, Y NINGUNO
+LEVANTA UN SOLO VECINO DEL GRAFO.** El unico `[BLOQUEARIA]` de los 15 sigue siendo
+`cuidar_persona_completa_equipo`, que ya bloqueaba antes. Salida en
+`.informe_lote4_tras_cap05.txt`.
+
+---
+
+# K.6. `cap_06` DEL LOTE 4 (`Cap. 3`, `Understand What Motivates Each Person on Your Team`). **CERRADO ENTERO**
+
+    $ head -6 fuentes/scott_radical_candor/cap_06.md
+    unidad: Cap. 3
+    titulo_textual: Understand What Motivates Each Person on Your Team
+    fidelidad: verbatim
+    $ sed -n '8,$p' cap_06.md | wc -w    ->  11.587
+
+## K.6.1. LA FRONTERA DE `cap_06`, PUBLICADA ANTES DE CORTAR, CON SUS ROTULOS PEGADOS
+
+    $ awk 'NR>=8 && NF && length($0)<105 {printf "%d:%s\n", NR, $0}' cap_06.md   (solo rotulos)
+      9:Helping people take a step in the direction of their dreams
+     11:RETHINKING AMBITION
+     27:STEEP GROWTH TRAJECTORY          29:GRADUAL GROWTH TRAJECTORY
+     31:Change agent                     33:Force for stability
+     35:Ambitious at work                37:Ambitious outside of work or simply content in life
+     39:Want new opportunities           41:Happy in the current role
+     43:"Superstar"                      45:"Rock Star"
+     69:GROWTH MANAGEMENT                71:It is getting better all the time
+     85:UNDERSTANDING WHAT MATTERS AND WHY
+     99:THE PROBLEM WITH "PASSION"
+    113:EXCELLENT PERFORMANCE            115:Keep your top performers top of mind
+    119:Be a partner, not an absentee manager or a micromanager
+    131:EXCELLENT PERFORMANCE/GRADUAL GROWTH TRAJECTORY
+    133:Recognize, reward, but do not promote
+    155:Fair performance ratings         161:Recognition        177:Respect
+    185:The dangers of promotion obsession        191:Do not do this to your rock stars!
+    197:EXCELLENT PERFORMANCE/ STEEP GROWTH TRAJECTORY
+    199:Keep superstars challenged
+    215:Keep them challenged (and figure out who will replace them when they move on)
+    219:Do not squash them or block them          229:Not every superstar wants to manage
+    243:MANAGING THE MIDDLE              245:Raise the bar, there is no such thing as a B-player
+    261:POOR PERFORMANCE/ NEGATIVE GROWTH TRAJECTORY      263:Part ways
+    271:How do you know when it is time to fire somebody?
+    281:Common lies managers tell themselves to avoid firing somebody who needs to be fired
+    293:Be Radically Candid with the person you are firing
+    305:LOW PERFORMANCE/STEEP GROWTH TRAJECTORY   307:Manager, look at yourself in the mirror!
+    311:Wrong role   323:New to role; too much too fast   331:Personal problems   337:Poor fit
+    343:NO PERMANENT MARKERS             345:People change, and you have to change with them
+    357:4.                               359:DRIVE RESULTS COLLABORATIVELY
+
+**Los rotulos con apostrofo tipografico van transcritos con la forma larga** (`It is`,
+`Do not`, `who will`, `there is`) **y lo digo en vez de que parezca copia exacta**: la
+linea literal se lee con el `awk` de arriba.
+
+**LA FRONTERA DE FICHERO: el cuerpo va de `:9` a `:355`. `:357` y `:359` son ya la
+cabecera del `Cap. 4`, `DRIVE RESULTS COLLABORATIVELY`, que es `cap_07.md`**, y no se mina
+desde aqui.
+
+### Las 15 piezas, y lo que se hace con cada una
+
+| # | pieza | lineas | nodo? |
+|---:|---|---|---|
+| 1 | subtitulo de la unidad | `:9` | **NO.** Rotulo |
+| 2 | `RETHINKING AMBITION` y las dos columnas | `:11` a `:47` | **FUNDIDA en la pieza 4.** Es la doctrina y el ejercicio del mismo objeto |
+| 3 | el caso del jefe que hizo perder un verano y el debate sobre la palabra `potencial` | `:49` a `:67` | **SI, con la 2: `cambiar_potencial_trayectoria_crecimiento`** |
+| 4 | `GROWTH MANAGEMENT`, los ejes del marco | `:69` a `:83` | **NO.** Describe los dos ejes y avisa de que ninguno de los dos extremos verticales es mejor. **Es la definicion del marco, no algo que ejecutar** |
+| 5 | `UNDERSTANDING WHAT MATTERS AND WHY` | `:85` a `:97` | **SI, con la 6: `descubrir_motivacion_sentido_persona`** |
+| 6 | `THE PROBLEM WITH "PASSION"` y los tres albaniles | `:99` a `:111` | **FUNDIDA en la 5.** `:111` da el inventario de tres: escuchar, reconocer el significado, crear las condiciones |
+| 7 | `EXCELLENT PERFORMANCE` / `Be a partner ...` | `:113` a `:129` | **SI: `acompaniar_mejores_equipo_socio`** |
+| 8 | `EXCELLENT PERFORMANCE/GRADUAL` con sus cuatro subrotulos | `:131` a `:195` | **SI: `reconocer_recompensar_gente_estable`** |
+| 9 | `EXCELLENT PERFORMANCE/STEEP` con sus tres subrotulos | `:197` a `:241` | **SI: `retar_superestrellas_equipo_constantemente`** |
+| 10 | `MANAGING THE MIDDLE` | `:243` a `:259` | **SI: `subir_vara_calidad_equipo`** |
+| 11 | `Part ways` y `How do you know when it is time` mas las cuatro mentiras | `:261` a `:291` | **SI: `decidir_momento_despedir_persona`** |
+| 12 | `Be Radically Candid with the person you are firing` | `:293` a `:303` | **SI: `despedir_persona_franqueza_radical`** |
+| 13 | `LOW PERFORMANCE/STEEP`, el cuadrante del espejo, con sus cuatro subrotulos y sus cinco causas | `:305` a `:341` | **SI: `revisar_cinco_causas_mal_desempenio`** |
+| 14 | `NO PERMANENT MARKERS` | `:343` a `:355` | **SI: `retirar_etiquetas_permanentes_equipo`** |
+| 15 | cabecera del `Cap. 4` | `:357` a `:359` | **FRONTERA DE FICHERO.** Es `cap_07.md` |
+
+**15 piezas: 8 dan nodo, 2 se funden dentro de ellos, 4 se declaran sin nodo con su motivo
+y 1 es frontera. Total 10 candidatos**, porque las piezas 8, 9 y 13 traen varios
+subrotulos cada una y aun asi son **un** procedimiento cada una.
+
+### Y `:261` a `:303` NO da UN nodo sino DOS, y la division no la elijo yo
+
+**La seccion `Part ways` tiene tres subrotulos**: *como sabes cuando toca despedir*, *las
+mentiras comunes*, y *se radicalmente franco con la persona a la que despides*. **Los dos
+primeros contestan a una pregunta y el tercero a otra**, y el propio libro los separa. **Lo
+que no hago es partirlo en tres**: las cuatro mentiras son la cara negativa de la misma
+decision y van con las tres preguntas, en un solo nodo.
+
+### Lo que NO recogi de `cap_06`, dicho uno a uno
+
+| material | donde | por que no entra |
+|---|---|---|
+| el caso de los pilotos de la segunda guerra mundial que volvieron a casa a formar novatos | `:165` | **es un caso de apoyo del paso del experto de referencia**, y esta casa no mete un caso cuyo entregable lleve datos del caso. El medio que sostiene ya esta en el paso |
+| el detalle de los premios de antiguedad de una empresa concreta, con sus placas de cristal y sus marcas de cinco, diez, quince y veinte anios | `:171` a `:175` | **es un caso, no una receta.** El texto no manda hacer eso: pone *considera con cuidado los premios de antiguedad*, y eso si esta transcrito |
+| el caso del poeta que trabajaba de oficinista en un banco | `:179` | **ejemplar de la doctrina del respeto, que si esta en su paso** |
+| las dos historias de las dos personas que cuidaban a sus hijos y acabaron fundando una empresa | `:201` a `:211` | **es la narracion que precede al consejo.** El consejo es `:217` y esta entero |
+| los tres fundadores que se fueron de una empresa por una regla de titulacion | `:227` | **caso de apoyo del paso de no bloquear**, cuyo medio ya esta transcrito |
+| la frase sobre el agujero y la persona toxica | `:287` | **es el remate de una de las cuatro mentiras**, y el mecanismo que la sostiene si esta transcrito entero |
+| el caso del jefe que grita y la gente con urticaria y sin dormir | `:303` | **ilustra el coste de retrasarlo**, y el coste ya esta en su paso |
+| toda la seccion del embarazo de riesgo y la cancion del cuento infantil | `:135` a `:151` | **es la biografia con la que la autora cuenta como cambio de opinion.** No hay medios, etapas ni objetos de trabajo: hay un relato de conversion |
+
+## K.6.2. LOS DIEZ CANDIDATOS, CADA UNO POR LA ADUANA EN EL ACTO EN QUE SE ESCRIBIO
+
+| # | id | pasos | pieza | aduana |
+|---:|---|---:|---|---|
+| 1 | `cambiar_potencial_trayectoria_crecimiento` | **14** | 2 y 3 | **`[BLOQUEARIA]`**, 1 vecino. Leido en `K.6.4` |
+| 2 | `descubrir_motivacion_sentido_persona` | **13** | 5 y 6 | **`[ENTRARIA]`** al primer intento |
+| 3 | `acompaniar_mejores_equipo_socio` | **11** | 7 | **`[ENTRARIA]`** al primer intento |
+| 4 | `reconocer_recompensar_gente_estable` | **12** | 8 | **`[BLOQUEARIA]`**, 1 vecino. Leido en `K.6.4` |
+| 5 | `retar_superestrellas_equipo_constantemente` | **13** | 9 | **`[ENTRARIA]`** al primer intento |
+| 6 | `subir_vara_calidad_equipo` | **10** | 10 | **`[ENTRARIA]`** al primer intento |
+| 7 | `decidir_momento_despedir_persona` | **12** | 11 | **`[BLOQUEARIA]`**, 2 vecinos. Leidos en `K.6.4` |
+| 8 | `despedir_persona_franqueza_radical` | **11** | 12 | **`[BLOQUEARIA]`**, 2 vecinos. Leidos en `K.6.4` |
+| 9 | `revisar_cinco_causas_mal_desempenio` | **11** | 13 | **`[CAERIA]` al primer intento, corregido en el acto y `[ENTRARIA]` al segundo** |
+| 10 | `retirar_etiquetas_permanentes_equipo` | **10** | 14 | **`[ENTRARIA]`** al primer intento |
+| | **`cap_06`** | **117** | | **10 de 10 en verde tras una correccion** |
+
+### LA GUARDA MORDIO, Y ME MORDIO A MI: **la regla 3, por tercera vez en dos capitulos**
+
+    $ python forja.py informe cuarentena/scott_radical_candor/revisar_cinco_causas_bajo_desempenio.json
+      CAERIAN por una guarda           : 1
+    [CAERIA] revisar_cinco_causas_bajo_desempenio
+        guarda: el candidato rompe docs/REGLAS_DE_ID.md
+          id 'revisar_cinco_causas_bajo_desempenio': preposicion o articulo prohibido: bajo (regla 3)
+
+> ### **`bajo` ES PREPOSICION Y YO LO ESCRIBI COMO ADJETIVO.** *Bajo desempenio* es un sintagma normal del castellano de gestion y ahi `bajo` es un adjetivo, pero **la guarda no analiza sintaxis: mira la lista**, y `bajo` esta en `PALABRAS_VACIAS` junto a `sobre`, `tras`, `hacia`, `contra` y `sin`.
+>
+> **CORREGIDO EN EL ACTO** a `revisar_cinco_causas_mal_desempenio`, reintentado, y
+> **`[ENTRARIA]` al segundo intento.** El fichero se renombro con el id, que es como
+> viajan en esta casa.
+>
+> **Y ES LA TERCERA VEZ QUE ESTA REGLA ME MUERDE EN DOS CAPITULOS** (`tras desafiar` y
+> `hacia arriba` en `cap_04`, `bajo` hoy), **las tres con la misma forma: una palabra de
+> la lista usada en una funcion que no es la de preposicion.** `tras` era preposicion de
+> verdad, `hacia arriba` era locucion adverbial, y `bajo` es un adjetivo. **La guarda no
+> distingue, y no tiene que distinguir: distinguir es mi trabajo.** Escribi los siete ids
+> de `cap_05` con la lista delante y no cayo ninguno; en `cap_06` baje la guardia en el
+> unico id donde la palabra no parecia una preposicion. **Eso es exactamente lo que el
+> encargo me dijo que mirara dos veces.**
+
+## K.6.3. LA RELECTURA DE FIDELIDAD `D.30` DE `cap_06`: **CERO PUENTES EN 117 PASOS**
+
+| # | id | pasos | TRANSCRIPCION | de ellos, `TRANSCRIPCION DE CASO` | **PUENTES** |
+|---:|---|---:|---:|---:|---:|
+| 1 | `cambiar_potencial_trayectoria_crecimiento` | 14 | 14 | 1 | 0 |
+| 2 | `descubrir_motivacion_sentido_persona` | 13 | 13 | 4 | 0 |
+| 3 | `acompaniar_mejores_equipo_socio` | 11 | 11 | 1 | 0 |
+| 4 | `reconocer_recompensar_gente_estable` | 12 | 12 | 1 | 0 |
+| 5 | `retar_superestrellas_equipo_constantemente` | 13 | 13 | 0 | 0 |
+| 6 | `subir_vara_calidad_equipo` | 10 | 10 | 1 | 0 |
+| 7 | `decidir_momento_despedir_persona` | 12 | 12 | 0 | 0 |
+| 8 | `despedir_persona_franqueza_radical` | 11 | 11 | 3 | 0 |
+| 9 | `revisar_cinco_causas_mal_desempenio` | 11 | 11 | 4 | 0 |
+| 10 | `retirar_etiquetas_permanentes_equipo` | 10 | 10 | 0 | 0 |
+| | **`cap_06`** | **117** | **117** | **15** | **0** |
+
+> ### **`PASOS INVENTADOS` DE `cap_06`: 0 de 117 = 0,00 POR CIENTO.** Numerador **0**, denominador **117**.
+
+**Y NO PUBLICO UN CERO SIN DECIR POR QUE DESCONFIO DE EL.** La vuelta 15 midio que **el
+parrafo mas rico del lote dio cero puentes y el mas pobre dio el 83 por ciento**, y de ahi
+saco la regla: *un parrafo pobre no produce un nodo pobre, produce un nodo inventado*.
+
+**`cap_06` ES, MEDIDO CONTRA ESA VARA, EL CAPITULO MAS RICO QUE HA VISTO ESTE LOTE**, y lo
+digo con las cuentas de sus inventarios y no de impresion:
+
+| el libro pone, numerado por el mismo | cuantas piezas | donde |
+|---|---:|---|
+| las tres preguntas del crecimiento | **3** | `:63` |
+| las dos columnas con sus rasgos | **8** | `:27` a `:45` |
+| lo que cuesta ignorar a los mejores | **4** | `:125` |
+| las vias de reconocimiento que no son promocion | **5** | `:153` |
+| los medios para retar a quien crece deprisa | **6** | `:217` |
+| las razones por las que la gente se queda atascada | **3** | `:249` |
+| las razones por las que el jefe la mantiene | **3** | `:249` |
+| las preguntas antes de despedir | **3** | `:273` |
+| las mentiras que se cuentan los jefes | **4** | `:283` a `:291` |
+| los recordatorios para la conversacion | **2** | `:297` y `:301` |
+| **las causas del mal desempenio de alguien bueno** | **5, Y EL TEXTO DICE QUE SON CINCO** | `:309` |
+| las puntuaciones referidas al periodo | **3** | `:349` |
+
+**Doce inventarios numerados en una sola unidad.** Con material asi, escribir los pasos es
+transcribir, y **el cero no mide mano firme: mide que el libro no me dejo hueco donde
+inventar.**
+
+### Dos cosas que NO cuento como puente y declaro igual, para que se puedan corregir
+
+**1. EL ORDEN DENTRO DEL CANDIDATO 1.** El ejercicio de las dos columnas esta en `:23` a
+`:45`, **antes** del debate sobre la palabra `potencial` (`:63`), y en mi nodo va
+**despues**. **El contenido es del libro; la secuencia la elegi yo**, porque el ejercicio
+me parece el instrumento y el cambio de palabra el motivo. **No es un puente** (no hay
+ningun paso que el libro no diga), **pero es una decision mia dentro de un nodo y va
+dicha.**
+
+**2. LA LECTURA DE LA TABLA DE DOS COLUMNAS.** El fichero la trae **aplanada**, una linea
+por celda:
+
+    $ awk 'NR>=27 && NR<=45 && NF {printf "%d:%s\n", NR, $0}' cap_06.md
+    27:STEEP GROWTH TRAJECTORY        29:GRADUAL GROWTH TRAJECTORY
+    31:Change agent                   33:Force for stability
+    35:Ambitious at work              37:Ambitious outside of work or simply content in life
+    39:Want new opportunities         41:Happy in the current role
+    43:"Superstar"                    45:"Rock Star"
+
+**Que `:31`, `:35`, `:39` y `:43` son la columna empinada y `:33`, `:37`, `:41` y `:45` la
+gradual es una LECTURA de la alternancia**, no una marca del fichero. **La sostengo por dos
+vias y las digo las dos:** la alternancia es regular sin una sola excepcion en las ocho
+celdas, **y el sentido la confirma celda a celda** (*agente de cambio* contra *fuerza de
+estabilidad*). **Y lo que NO hice, a proposito, fue emparejarlas una a una dentro del
+paso**, que habria sido afirmar una correspondencia que el fichero no marca: **el paso
+lista cada columna entera por separado.** Va marcado **discutible 5**.
+
+## K.6.4. LOS CUATRO PARES QUE LA ADUANA LEVANTO, LEIDOS UNO A UNO CON LOS PASOS DE LOS DOS LADOS
+
+*`EXTRACTOR.md` 2: si la aduana bloquea, **lees a los vecinos antes de escribir el
+veredicto**. **Aqui no hay insercion, asi que estas lecturas NO pueden ir a
+`bitacora/VEREDICTOS.jsonl`**: su sede es esta hasta el dia en que el lote 4 cierre y
+entre. **Se cuentan y se traen** (`K.7`).*
+
+| # | par | senial que lo levanta | **mi lectura** |
+|---:|---|---|---|
+| 1 | `cambiar_potencial_trayectoria_crecimiento` contra `cambiar_mentalidad_fija_crecimiento` | `familia_id` **0,333** | **`SANO`** |
+| 2 | `reconocer_recompensar_gente_estable` contra `reconocer_recompensar_uso_metodo` | `familia_id` **0,333** | **`SANO`** |
+| 3 | `decidir_momento_despedir_persona` contra `elegir_recolocar_despedir_persona` | `familia_id` **0,333** | **`SANO`**, y trae una frontera de doctrina |
+| 4 | `despedir_persona_franqueza_radical` contra `despedir_persona_respeto_franqueza` | `familia_id` **0,600**, **la senial mas alta de toda la vuelta** | **`SANO`**, y es el discutible 4 |
+
+**PAR 1.** El vecino es de Zhuo y trata **la mentalidad fija contra la de crecimiento en
+TI MISMO**, para poder pedir opinion sin encogerte: sus once pasos son el sindrome del
+impostor, la distincion de Carol Dweck y **cuatro escenarios de reaccion propia**. El mio
+trata **la trayectoria de crecimiento de OTROS** y sustituye una palabra en un cuadro de
+gestion de personas. **Comparten el verbo `cambiar` y la palabra `crecimiento`, y nada
+mas.** Ningun paso de uno es la linea que el otro despliega. **`SANO`, y la senial es un
+falso positivo de clave de familia de manual.**
+
+**PAR 2.** El vecino es de `smart_who` y su objeto es **premiar a los directivos que usan
+un metodo de contratacion**, con su tasa de exito del noventa por ciento atada a la
+retribucion variable. El mio es **reconocer a quien hace un gran trabajo estable sin
+promoverlo**. **Coinciden en el verbo compuesto `reconocer_recompensar` y en nada mas**:
+uno premia el uso de un metodo, el otro reconoce un desempenio. **`SANO`.**
+
+**PAR 3, Y AQUI HAY ALGO QUE MERECE LEERSE DOS VECES.** El vecino de Zhuo arranca **donde
+mi nodo termina**: su activacion es *cuando ya has concluido que alguien no esta preparado
+para tener exito en su papel actual*, que es justo la conclusion a la que llegan mis tres
+preguntas. Y despues hace otra pregunta distinta, **recolocar dentro o dejar ir**.
+
+> **LA FRONTERA DE DOCTRINA QUE PARECIA HABER, Y QUE SE DESHACE AL LEER LOS PASOS.** Una de
+> mis cuatro mentiras es **un traslado es la solucion**; el paso 2 del vecino dice
+> **considera siempre la primera opcion, recolocar dentro**. Leido por encima, los dos
+> libros se contradicen.
+>
+> **Leidos los pasos, no.** Scott condena el traslado **cuando la persona no tiene las
+> habilidades que el colega necesita o encaja mal en su cultura**; Zhuo recomienda
+> recolocar **cuando existe un papel mejor alineado con los intereses y las habilidades**,
+> y su paso 4 dice literalmente *evita ir barajando por ahi a gente que no tiene las
+> habilidades adecuadas*. **Cada uno lleva dentro la cautela del otro.**
+>
+> **Es `P.17` funcionando en su forma mas util:** la lectura que abre los pasos vence a la
+> que argumenta por el titular. **Y por eso no declaro frontera de libro y no paro:** no
+> hay dos reglas fechadas que choquen, hay dos formulaciones del mismo limite.
+
+**PAR 4, EL DE `0,600`, Y ES EL QUE MAS ME COSTO.** Los dos tratan **como despedir**. El
+vecino de Zhuo pone: hazlo respetuoso y directo, no lo abras a discusion, no des por hecho
+que la culpa es suya, se compasivo con el pasado pero no alargues la ruptura, y ayudale
+hacia su capitulo siguiente. El mio pone **dos recordatorios numerados por el libro** para
+llegar con la cabeza en su sitio, mas la reformulacion *no es la persona la que falla, es
+el puesto* y la presentacion ofrecida.
+
+> **APLICO LA HERRAMIENTA QUE LA `ACTA 15` DEJO ESCRITA, Y ES LA QUE DECIDE:** *antes de
+> escribir `CONTINUA`, busca el paso de la madre que el hijo despliega; si no hay ninguno
+> que citar, el veredicto es `SANO`.*
+>
+> **Busque ese paso y el candidato mas cercano es el P8 del vecino** (*ayuda a tu persona a
+> cargo a ponerse en el mejor camino posible hacia su capitulo siguiente*), **que tres de
+> mis once pasos si desarrollan.** Pero **mi nodo entero no es el despliegue de esa
+> linea**: su alcance es *con que cabeza llegas a esa conversacion*, y ocho de sus once
+> pasos no tocan el capitulo siguiente de nadie. **Un nodo no es hijo de una linea que
+> solo explica tres de sus once pasos.**
+>
+> **Y no es `REPITE`:** lo que queda fuera del solape es procedimiento en los dos lados,
+> el no abrirlo a discusion y el no dar por hecha la culpa por un lado, los dos
+> recordatorios y la reformulacion por el otro. **Dos tratamientos de la misma altura del
+> mismo terreno, uno de cada libro: `SANO`**, que es exactamente la forma del par que la
+> `ACTA 15` 3.1 adjudico.
+>
+> **VA MARCADO DISCUTIBLE 4, Y A CIEGAS:** si el auditor lee que `0,600` de familia mas un
+> paso compartido pide `CONTINUA`, **este es el sitio donde caigo.**
+
+## K.6.5. LAS CUATRO MEDIDAS DE `cap_06`, POR CAPITULO
+
+| medida | `cap_06` | como se saca |
+|---|---:|---|
+| **palabras de cuerpo** | **11.587** | `sed -n '8,$p' cap_06.md \| wc -w` |
+| **candidatos escritos** | **10** | ficheros nuevos en la bandeja |
+| **pasos escritos** | **117** | recorrido de los diez JSON |
+| **pasos inventados** | **0 de 117 = 0,00 por ciento** | relectura `D.30` de `K.6.3` |

@@ -1,0 +1,46 @@
+{
+ "id": "reconocer_recompensar_gente_estable",
+ "titulo": "Reconocer y recompensar a la gente estable de tu equipo por vias que no sean la promocion",
+ "denominaciones": {
+  "nombre_largo": "Como se gestiona a quien hace un trabajo excelente ano tras ano en una trayectoria gradual: puntuacion justa, papel de experto de referencia, respeto, premios de antiguedad, y la promocion que no se impone",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "rock star"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "recognize, reward, but do not promote"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando alguien de tu equipo lleva anios haciendo un gran trabajo en el mismo papel, lo quiere seguir haciendo, y toca reconocerselo.",
+ "entregable_esperado": "El reconocimiento dado por una via que la persona quiere, la puntuacion de desempenio alta que le corresponde por su trabajo pasado, y ninguna promocion impuesta a quien no la quiere.",
+ "pasos_accionables": [
+  "Parte de que reconocer no es promover. El texto dice que para demasiados jefes reconocimiento significa promocion, y que en la mayoria de los casos eso es un gran error porque la promocion mete a estas personas en papeles para los que no encajan tan bien o que no quieren.",
+  "Reconoce su aportacion por otras vias, y el texto nombra varias una a una: un bono o una subida; si les gusta hablar en publico, que presenten en la reunion general o en otros actos grandes; si les gusta ensenar, que ayuden a la gente nueva a aprender su papel mas rapido; y si son timidos, asegurate de que tu y otros del equipo les dais las gracias en privado por el trabajo que hacen.",
+  "Considera con cuidado los premios de antiguedad.",
+  "Si tu organizacion da puntuaciones de desempenio o bonos, asegurate de que son justas con esta gente.",
+  "Cuenta con el mecanismo concreto que el texto denuncia: en algunas empresas la gente estable no saca la puntuacion que merece porque las puntuaciones altas estan reservadas a quien esta en linea de ser promovido, y muchas empresas racionan cuantas puntuaciones altas se pueden dar.",
+  "Da la puntuacion alta a todos los que hagan un trabajo excelente, sin excepcion, y con mas motivo cuando la puntuacion afecta a la retribucion. El texto lo dice asi: las puntuaciones sirven para reconocer el desempenio pasado, no para justificar promociones futuras.",
+  "Nombra experto de referencia a la gente en fase de estrella de rock, que el texto pone como gran via de reconocimiento ademas de la puntuacion alta, y que a menudo significa ponerlos a ensenar a los miembros nuevos del equipo si muestran aptitud para ello.",
+  "Cuenta con la objecion que el texto adelanta y con su respuesta: los jefes son reacios a usar asi a alguien que rinde mucho porque prefieren que haga el trabajo antes que ensenarlo, y eso impide que la organizacion saque de sus expertos toda la palanca que podria.",
+  "Trata ese papel como un honor y no como una obligacion, porque hay gente que odia ensenar y lo hace mal.",
+  "Se sensible a que ser el experto de referencia puede llegar a echar a alguien del equipo si odia que le interrumpan con preguntas todo el dia. Y si en cambio disfruta ensenando y contestando, animalo y premialo por hacerlo.",
+  "Rechaza las etiquetas despectivas con las que se habla de esta gente, que el texto nombra: jugador de segunda y persona que ha tocado techo. El texto dice que quien encuentra un trabajo que puede seguir amando cinco, diez o treinta anios tiene una suerte enorme, y sus equipos y sus jefes tambien.",
+  "Cuenta con las dos formas de promocion mala que el texto describe: la que sube a la gente por encima de su nivel de competencia, y la de quien si es competente para el puesto siguiente pero no lo desea en ese momento de su vida. El texto pone el caso del colega que habia planificado tener su primer hijo estando en un puesto que ya dominaba, rechazo la promocion, le dijeron que no era opcional, y se fue."
+ ],
+ "resumen_teorico": "El inventario es del texto entero de la seccion y es de medios: las vias de reconocimiento que no son la promocion vienen nombradas una a una, con la condicion de cada una, y lo mismo el papel de experto de referencia con sus dos avisos. La regla de puntuacion no es una opinion suelta sino una correccion de un mecanismo concreto que el texto describe, el racionamiento de las puntuaciones altas atado a la lista de promocion. Los premios de antiguedad entran como el texto los pone, con el verbo considerar con cuidado y sin prescribir ninguna forma concreta, porque el caso que el libro cuenta despues es de una empresa y no una receta. El nombre estrella de rock se deja en denominaciones y no se usa como etiqueta dentro de los pasos, que es justo lo que el propio capitulo pide no hacer. Lo que el texto NO dice, y por eso no esta escrito aqui, es cuanta subida o cuanto bono, cada cuanto se revisa, ni quien decide si alguien tiene aptitud para ensenar.",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

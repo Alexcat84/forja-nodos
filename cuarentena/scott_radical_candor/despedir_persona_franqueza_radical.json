@@ -1,0 +1,41 @@
+{
+ "id": "despedir_persona_franqueza_radical",
+ "titulo": "Despedir con franqueza radical, sin distanciarte de la persona y con el trabajo siguiente imaginado antes de la reunion",
+ "denominaciones": {
+  "nombre_largo": "Los dos recordatorios con los que el texto dice que hay que llegar a esa reunion: acordarse de un trabajo en el que tu fuiste malo, y tener presente que mantener a quien lo hace mal castiga a quien lo hace bien",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "be Radically Candid with the person you are firing"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando ya has decidido que tienes que despedir a alguien y te toca preparar y tener esa conversacion.",
+ "entregable_esperado": "La conversacion tenida sin distanciarte de la persona, con el problema reformulado en el puesto y no en ella, con un trabajo concreto imaginado para ella y una presentacion ofrecida si puedes hacerla.",
+ "pasos_accionables": [
+  "No te distancies de la persona a la que vas a despedir. El texto dice que si intentas evitar sentir el dolor que hay en la situacion, sobre todo el de la persona que se va, vas a hacer una chapuza.",
+  "Cuenta con que esto es duro de verdad y con que no eres el unico: el texto cuenta el caso de un empresario de exito con fama de mas descarado que compasivo, que le conto que las manianas en que iba a despedir a alguien se despertaba con sudores frios.",
+  "Para llegar con la cabeza en el sitio correcto, primer recordatorio: acuerdate de un trabajo en el que tu fuiste malo y piensa en lo contento que estas de no estar ya en el. El texto pone el suyo, un verano de cajera de banco haciendo mal las cuentas de cabeza, y lo que su jefa hizo, que fue no despedirla y animarla a intentarlo mas, con lo que lo que era un problema de calculo empezo a sentirse como un defecto de caracter.",
+  "Cuenta con lo que el texto saca de ese caso: si aquella jefa la hubiera despedido diciendo que claramente ese trabajo no le interesaba y que por que no buscaba otro ese verano, le habria hecho un gran favor y le habria ahorrado mucho dinero al banco.",
+  "Parte de que al despedir a alguien creas la posibilidad de que esa persona destaque y encuentre felicidad haciendo un trabajo con sentido en otro sitio, porque parte de conseguir un buen trabajo es dejar uno malo, o uno que es malo para ti.",
+  "Antes de la reunion, intenta imaginar concretamente cual podria ser ese trabajo para esa persona.",
+  "Reformula el problema para ti y para ella: no es que la persona sea mala, es que el puesto es malo, al menos para esa persona.",
+  "Preguntate si puedes ayudar haciendo una presentacion.",
+  "Segundo recordatorio: mantener a quien hace un mal trabajo castiga a quien lo hace excelente. El texto lo concreta: el trabajo sin hacer acaba recayendo en los que mas rinden, sobrecargandolos.",
+  "Cuenta con lo que el texto dice haber visto siempre en la practica: la moral ha mejorado cada vez que se ha retirado a alguien que rendia mal, y en cambio ha llegado a perder a la gente que mas queria conservar por aguantar demasiado tiempo a quien rendia poco.",
+  "Presta atencion especial cuando el que rinde mal es un jefe, porque el texto dice que retenerlo es especialmente daniino: los malos jefes tienen un impacto negativo enorme sobre la gente que les reporta, y eso es lo contrario de la palanca de un directivo."
+ ],
+ "resumen_teorico": "El inventario es del texto y viene numerado por el mismo con dos recordatorios, uno y dos, cada uno con su desarrollo. Se extrae separado del procedimiento de decidir cuando toca porque el propio texto los separa con dos rotulos y porque son dos actos distintos: uno se hace con una lista de preguntas delante y el otro dentro de una conversacion. El caso del verano de cajera y el del empresario que sudaba van nombrados dentro de sus pasos, que es la condicion con la que esta casa admite la transcripcion de caso, y el entregable no lleva ningun dato de ninguno de los dos. Lo que el texto NO dice, y por eso no esta escrito aqui, es que palabras usar en la reunion, cuanto preaviso dar, ni que hacer si la persona no acepta la reformulacion del problema.",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

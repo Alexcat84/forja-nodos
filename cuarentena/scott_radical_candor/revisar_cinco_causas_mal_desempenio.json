@@ -1,0 +1,41 @@
+{
+ "id": "revisar_cinco_causas_mal_desempenio",
+ "titulo": "Revisar las cinco causas de que alguien bueno este rindiendo mal, empezando por mirarte tu al espejo",
+ "denominaciones": {
+  "nombre_largo": "El cuadrante de mirarse al espejo: papel equivocado, recien llegado al papel, demasiado de golpe, problema personal y encaje malo, y por que la primera de las cinco es culpa tuya",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "manager, look at yourself in the mirror"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando una persona que deberia estar asumiendo mas y mejorando cada dia esta en cambio metiendo la pata o simplemente haciendo un trabajo flojo.",
+ "entregable_esperado": "Las cinco causas repasadas una a una sobre el caso que tienes delante, con la que corresponda identificada y con su salida aplicada, y con la parte que es tuya reconocida antes de pedirle nada a la persona.",
+ "pasos_accionables": [
+  "Cuenta con que el texto lo llama uno de los dilemas de gestion mas desconcertantes, y con que dice haberlo visto ocurrir por cinco razones distintas que merece la pena separar.",
+  "Primera causa, papel equivocado: a veces pones a una gran persona en el trabajo equivocado. El texto es expreso en quien tiene la culpa entonces, y por eso llama a este cuadrante el de mirarse al espejo: si pusiste a alguien en el papel equivocado, su mal desempenio es culpa tuya.",
+  "Cuando sea esa, pon a la persona en un papel mejor. El texto pone su propio caso: una de las mejores lideres con las que habia trabajado brillaba dirigiendo equipos grandes y la puso a dirigir uno diminuto con un problema analitico, donde la persona adecuada habria pasado el setenta y cinco por ciento del tiempo sola en un despacho con numeros. Le dio la puntuacion mas baja que esa persona habia tenido nunca y una peor al trimestre siguiente antes de darse cuenta de que el problema lo habia creado ella.",
+  "Cuenta con lo que ese caso ensenia sobre por que no te enteras: la persona ya sabia en sus tripas cual era el problema, y no habia querido ofrecer excusas ni echarte a ti la culpa de su mal desempenio.",
+  "Cuenta tambien con el caso contrario que el texto pone: alguien que pidio insistentemente un papel para el que tu tenias dudas fundadas, tu cediste, y se quemo enseguida. El texto admite que no siempre esta claro cuando estas dando una oportunidad de crecer y cuando estas mandando a alguien a la jaula de los leones, y lo cuenta como una mala decision propia.",
+  "Segunda causa, recien llegado al papel: cuando contratas a alguien que nunca ha hecho ese trabajo y tiene que aprenderlo desde cero, a veces tarda mas de lo esperado en avanzar. Si te da motivos para creer que puede ser excelente en el papel, si da seniales de despegar, merece la pena invertir mas.",
+  "Cuando no este tan claro, hazte las dos preguntas que el texto imprime: son las expectativas lo bastante claras? Es la formacion lo bastante buena? Si el problema es que no has explicado bien el papel o las expectativas, invierte mas tiempo en hacerlo, siempre que creas que la persona puede llegar a ser excelente.",
+  "Tercera causa, demasiado de golpe: otro error que cometen los jefes es echarle a una persona demasiado encima de una vez, dejandola preparada para fallar. El texto da dos mecanismos: a veces los jefes simplemente tienen expectativas irrazonables sobre lo que un ser humano puede hacer, y a veces proyectan su propia capacidad sobre quien trabaja para ellos, olvidando que alguien con diez anios menos de experiencia sencillamente no sabe ciertas cosas.",
+  "Cuarta causa, problema personal: a veces alguien que iba lanzado deja de rendir de golpe porque esta pasando algo en su vida. Si el problema es temporal, lo mejor es simplemente darle el tiempo que necesita para volver a la via. El texto pone el ejemplar de lo que recibio ella misma en una crisis familiar: coge un avion, vete a casa, tomate todo el tiempo que necesites, no te preocupes de nada aqui, y no lo cuentes como tus vacaciones.",
+  "Quinta causa, encaje malo: a veces la persona parece estar en el papel perfecto para su experiencia y su especialidad, y aun asi no arranca en esa empresa o en ese equipo porque hay un desajuste entre la cultura del grupo y su personalidad.",
+  "Cuando sea esa, cuenta con lo que el texto dice sin rodeos: si no pueden cambiar ni la cultura ni la persona, lo mejor es separarse, porque en general un problema de encaje cultural no se arregla. El texto pone el caso de quien triunfo en una empresa cuya cultura era lanzar y corregir y perdio su credibilidad en otra cuya cultura era pulir y perfeccionar antes de lanzar, y aniade que no habia nada malo ni en la persona ni en la empresa: era mal encaje."
+ ],
+ "resumen_teorico": "El texto dice CUANTAS causas son, cinco, y las despliega despues bajo cuatro rotulos, porque la segunda y la tercera comparten rotulo: recien llegado al papel y demasiado de golpe. La cuenta es por tanto del libro y no del lector, y las cinco se transcriben una a una con su salida. Se extrae como procedimiento y no como postura porque cada causa trae lo que hay que hacer con ella, mover a la persona, invertir mas en explicar y formar, bajar la carga, dar tiempo, o separarse. La primera es la que da nombre al cuadrante y es la unica en la que el texto asigna la culpa expresamente, y al jefe. Los casos entran nombrados dentro de sus pasos y el entregable no lleva ningun dato de ninguno. Lo que el texto NO dice, y por eso no esta escrito aqui, es cuanto se espera a un recien llegado, ni quien decide que un problema personal ha dejado de ser temporal.",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}
