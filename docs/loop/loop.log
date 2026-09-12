@@ -345,3 +345,23 @@ BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 [2026-09-12 14:57:14] auditor listo (USD 9.803999499999998), 2556s, intento 1 de 7
 [2026-09-12 14:57:14]   sello de la apertura ciega verificado: intacto tras el turno
 [2026-09-12 14:57:14] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-12 16:13:02] extractor listo (USD 22.050343000000005), 4547s, intento 1 de 7
+[2026-09-12 16:13:02] VUELTA 2 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-12 16:13:03]   hereda 1 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-12 17:07:26] auditor ciego listo (USD 10.309790500000002), 3263s, intento 1 de 7
+[2026-09-12 17:07:27]   herencia declarada: acta leida por su huella y los 1 heredados resueltos
+[2026-09-12 17:07:27]   apertura ciega sellada: 37cb783e1c1a9a30ca7cc63b26b68957cbbda7ac
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 3 hallazgo(s)
+  docs/loop/ultimo_apertura.json linea 1 columna 2933: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 3625: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 3903: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-12 17:07:28] VUELTA 2 : AUDITOR (claude-opus-5)

@@ -1,0 +1,28 @@
+POBLACION DEL BARRIDO (D.38.4)
+  grafo dataset/nodos.jsonl : 203
+  bandejas cuarentena/*/    : 246
+  TOTAL                     : 449
+  umbrales: sim 0.35 | fam 0.3 | paso 0.6
+
+candidatos de la vuelta 21 (las cinco de cap_09) a barrer: 5
+### conducir_reuniones_salto_nivel_diez_reglas.json   (contra 448)
+    vecino resolver_dudas_frecuentes_reuniones_salto_nivel  [levantada por: familia_id]
+      similitud_texto 0.207 | familia_id 0.333 | paso_contra_nodo 0.471
+      paso 19 del candidato contra paso 12 de resolver_dudas_frecuentes_reuniones_salto_nivel
+
+### entregar_evaluacion_formal_desempenio_nueve_consejos.json   (contra 448)
+    SIN VECINOS: ninguna senial levanta nada
+
+### resolver_dudas_frecuentes_reuniones_salto_nivel.json   (contra 448)
+    vecino conducir_reuniones_salto_nivel_diez_reglas  [levantada por: familia_id]
+      similitud_texto 0.221 | familia_id 0.333 | paso_contra_nodo 0.479
+      paso 12 del candidato contra paso 19 de conducir_reuniones_salto_nivel_diez_reglas
+
+### responder_critica_abrasiva_cuatro_reglas.json   (contra 448)
+    SIN VECINOS: ninguna senial levanta nada
+
+### revisar_critica_mujer_agresiva_cuatro_tacticas.json   (contra 448)
+    vecino comprobar_criticas_hombre_mujeres_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.381 | familia_id 0.222 | paso_contra_nodo 0.43
+      paso 2 del candidato contra paso 6 de comprobar_criticas_hombre_mujeres_equipo
+

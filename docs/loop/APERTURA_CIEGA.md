@@ -1,743 +1,529 @@
-# APERTURA CIEGA. VUELTA 19 del bucle, lote 4 (`scott_radical_candor`), `cap_09` (Cap. 6, `Guidance`)
+# APERTURA CIEGA DE LA VUELTA 21, lote 4 (`scott_radical_candor`)
 
-*Fase ciega del turno de auditor. Escrita ANTES de ver `docs/loop/REPORTE.md`, que no esta
-en el arbol. Esta es la lectura que despues se compara con la del extractor.*
+*Escrita por el **auditor** antes de ver `docs/loop/REPORTE.md`, que no esta en el arbol.
+`AUDITOR_FORJA.md` 1.5 (`D.34`), `D.38.3`, `D.38.4` y `D.40`.*
 
----
-
-## 0. LA HERENCIA, DECLARADA ANTES DE NADA (`D.40`)
-
-> ### **ACTA ANTERIOR LEIDA: `80fd74cdf15bb0b1ff02bcbe560ba03f11f22472`**
-
-**LA HUELLA NO ME LA CREO, LA REMIDO.** La que el prompt me entrega y la que da el
-instrumento sobre el fichero que tengo delante son la misma:
-
-    $ git hash-object docs/loop/ACTA_AUDITOR.md
-      80fd74cdf15bb0b1ff02bcbe560ba03f11f22472
-
-    $ wc -l docs/loop/ACTA_AUDITOR.md
-      17295 docs/loop/ACTA_AUDITOR.md
-
-**Y LA ABRI**, que es lo que `D.40` vino a arreglar despues de que tres actas seguidas
-perdieran el mismo remedio. De ella salen la seccion `7.5` y la `7.6` que cito abajo, y de
-ella sale que la ultima acta escrita es la `ACTA 18` y cubre la vuelta 18: **no hay hueco de
-acta**, y la vuelta que me toca auditar es la inmediatamente siguiente, la 19.
-
-    $ grep -n "^# ACTA " docs/loop/ACTA_AUDITOR.md | tail -1
-      16581:# ACTA 18. VUELTA 18, lote 4 (`scott_radical_candor`), `cap_08`: la vuelta que
-      cerro donde debia, la errata de mi propio metodo, y una cifra falsa mia en la frontera
-
-### `HEREDADO 1`: **CUMPLIDO**
-
-**QUE ERA.** La seccion `7.6` de la `ACTA 18` (linea 17197 del acta), *los remedios mios que
-SI aguantaron, porque `REMEDIO ROTO` solo informa si tambien se declara cuando aguanta*. **El
-remedio no es una tabla: es la obligacion de volver a publicarla**, con cada remedio mio
-vivo, su comprobacion EN ESTA VUELTA y su resultado, tambien cuando aguanta. **Aqui esta,
-rehecha contra esta vuelta y no copiada de la anterior:**
-
-| remedio mio | comprobacion EN ESTA VUELTA | resultado |
-|---|---|---|
-| `D.40`, leer `ACTA_AUDITOR.md` en la fase ciega antes de escribir | esta misma seccion `0`, con la huella remedida por `git hash-object` y el heredado resuelto | **CUMPLIDO** |
-| `D.38.4`, barrido sobre grafo mas bandejas | seccion `6`: `444 = 203 + 241`, y `443` por candidato al excluirse a si mismo, las tres cifras con su instrumento pegado | **CUMPLIDO, y esta vez decidio el resultado**: los 8 vecinos estan los 8 en la bandeja y 0 en el grafo |
-| `D.38.3`, toda cifra de la fase ciega con su instrumento al lado | todas las cifras de este fichero llevan su comando y su salida literal pegados | **CUMPLIDO** |
-| `D.34`, no recuperar de git los cuatro ficheros retirados | no corri `git show` ni `git checkout` sobre ninguno de los cuatro. **La contaminacion que si hubo la declaro entera en `1.2`**, y es mia | **CUMPLIDO, con una falta propia declarada al lado** |
-| `D.34`, no tocar `APERTURA_CIEGA.md` tras el sello | no aplica todavia en esta fase: el sello lo pone el arnes cuando yo termine. **Lo que si declaro es que no abri la apertura anterior de esta misma vuelta** (`1.3`) | **PENDIENTE DE COMPROBAR AL CERRAR EL TURNO**, y lo digo en vez de darlo por hecho |
-| `ACTA 18` `7.5`, las tres ordenes | seccion `0.bis`, una por una y con sus salidas | **DOS CUMPLIDAS, UNA IMPOSIBLE DE CUMPLIR EN LA LETRA Y DECLARADA** |
-| `5.5`, re correr por mutacion toda guarda declarada mordiendo | **NO APLICA EN ESTA FASE, y este es el motivo escrito:** esa orden muerde sobre las guardas que EL REPORTE declara mordiendo, y el reporte no esta en el arbol. Es trabajo de mi turno normal, no de la fase ciega | **NO APLICA, con motivo** |
+**LO QUE ESTA FASE PUBLICA SON CLASES Y LECTURAS. Toda cifra que aparece abajo lleva pegado el
+instrumento que la saco y su salida literal**, y toda cifra lleva su denominador en la misma
+frase. **Ninguna sale de contar a ojo.**
 
 ---
 
-## 0.bis. LA TAREA BLOQUEANTE QUE ME DEJE YO MISMO, Y QUE EL ARNES NO ME ENTREGO
+## 0. LA HERENCIA, QUE ES LO PRIMERO (`D.40`)
 
-**EL ARNES ME ENTREGO UN HEREDADO Y LA `ACTA 18` ME DEJO DOS COSAS.** Su seccion `7.5` se
-titula **TAREA BLOQUEANTE DEL AUDITOR DE LA VUELTA 19, ESCRITA POR EL DE LA 18**, y ese
-auditor de la vuelta 19 soy yo. **La cumplo, y digo que la encontre leyendo el acta y no en el
-prompt:** es exactamente el trabajo que `D.40` quiere que no dependa de la memoria, y esta vez
-dependio de que yo abriera el fichero.
-
-### ORDEN 1. **LA FRONTERA SE CIERRA CONTRA EL CUERPO, O NO SE PUBLICA.** CUMPLIDA
-
-    $ python .barrido_v20/cerrar_frontera.py
-      CIERRE DE LA FRONTERA CONTRA EL CUERPO (ORDEN 1, ACTA 18 seccion 7.5)
-        cuerpo medido        : lineas 8 a 433
-        lineas con contenido NO cubiertas      : 0
-        SOLAPES                                : 0
-        suma de las filas                      : 17482 palabras
-        cuerpo medido aparte (sed 8,$ | wc -w) : 17482 palabras
-        LOS DOS N SON EL MISMO                 : SI
-
-        piezas de la frontera (wc -l del tsv)  : 28
-        piezas que DAN NODO                    : 19
-        piezas que NO dan nodo                 : 9
-        19 + 9 = 28
-
-**Y EL SEGUNDO `N` MEDIDO POR EL INSTRUMENTO LITERAL QUE LA ORDEN NOMBRA, aparte del script:**
-
-    $ sed -n '8,$p' fuentes/scott_radical_candor/cap_09.md | wc -w
-      17482
-
-**Los dos `17482` salen de dos caminos distintos:** uno suma las 28 filas de mi frontera una
-por una, el otro mide el cuerpo entero sin mirar la frontera. **Por eso la cuenta de piezas se
-publica.**
-
-### ORDEN 2. **TODA CIFRA MIA LLEVA SU DENOMINADOR EN LA MISMA FRASE.** CUMPLIDA, Y CON UNA CAIDA MIA CAZADA POR ELLA
-
-**LA ORDEN ME MORDIO A MI, EN ESTA MISMA FASE, Y LO DIGO PORQUE ES SU UNICA PRUEBA UTIL.** El
-primer script con el que reparti el cuerpo por clases imprimia la etiqueta
-`piezas que dan nodo Y tienen candidato (11 de 19)`. **La cifra de palabras era buena y la
-etiqueta era falsa: son 15 de 19, no 11 de 19.** Lo vi al leer la salida antes de pegarla,
-**rehice el script con el denominador correcto y no pegue la version mala.** La cifra que se
-publica en `5.1` es la de la segunda corrida.
-
-**NO ES `CIFRA PUBLICADA PROPIA`, y digo por que en vez de dejarlo a interpretacion:** la
-especie de `D.38.2` vive en *mi acta o mi apertura sellada*, y esa etiqueta **no llego a
-ninguna de las dos.** Pero es la misma familia de las tres caidas que la `ACTA 18` se apunto,
-**y la orden que la caza es justamente la que aquella acta escribio.**
-
-**Y NO FUE LA UNICA. Las ordenes 1 y 2 me cazaron CUATRO cosas mias en esta fase, todas antes
-del sello**, y las cuatro estan declaradas donde salieron:
-
-| lo que estaba mal | donde lo declaro |
-|---|---|
-| la etiqueta `11 de 19` por `15 de 19` | aqui arriba |
-| un `grep` citado que **no reproducia su propia cifra** (le faltaba un termino del patron) | `5.3` |
-| *los 8 vecinos* donde la lista tenia **6 nodos distintos** | `6.3` |
-| *mas de hora y media* de barrido donde el fichero dice **50 minutos y 14 segundos** | `6.2` |
-
-**LAS CUATRO SALIERON DE RE CORRER MIS PROPIOS COMANDOS Y RELEER MIS PROPIAS CIFRAS CONTRA SU
-SALIDA, y ninguna de las cuatro la habria visto releyendo el texto.** Eso es lo que valen las
-dos ordenes.
-
-### ORDEN 3. **EL BARRIDO DE GUIONES SE CORRE DOS VECES.** CUMPLIDA LA PRIMERA MITAD. **LA SEGUNDA NO SE PUEDE CUMPLIR EN LA LETRA Y LO DECLARO**
-
-**La primera corrida, antes del sello, en verde:**
-
-    $ python forja.py guiones
-      BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
-
-**Y VERDE DESPUES DE ARREGLAR ALGO QUE ROMPI YO, que es lo que la orden vino a cazar.** Mis
-volcados de poblacion de usar y tirar (`.barrido_v20/pob*.jsonl`) copiaban los 163 nodos del
-catalogo de control dentro de una carpeta que el barrido SI mira, y pusieron el repo en rojo:
-
-    $ python forja.py guiones      (con los tres volcados en el arbol)
-      BARRIDO DE GUIONES EN ROJO: 27 hallazgo(s)
-      ... los 27 hallazgos, en .barrido_v20/pob.jsonl, pob_total.jsonl y pob_sin_control_tmp.jsonl
-
-**LOS TRES VOLCADOS SE BORRARON y la guarda volvio a verde.** Comprobado ademas que **el
-original no esta en rojo y que esto no es una grieta de la casa**: los cinco ficheros con
-guion largo viven en `cuarentena/ensayo_referencia_163/`, y `src/comun.py` L268 a L285 salta
-las bandejas **a proposito y con su motivo escrito** (*dentro de una bandeja solo se barre lo
-que esta casa escribe*). **Es material ajeno, y la regla ya lo dice.** No publico un hallazgo
-donde no lo hay.
-
-**LO QUE NO SE PUEDE CUMPLIR EN LA LETRA.** La orden pide:
-
-    $ git status --porcelain | grep -v "docs/loop/APERTURA_CIEGA.md"   (VACIO antes del sello)
-
-**Y EN ESTA FASE ESO ES IMPOSIBLE POR CONSTRUCCION, porque quien ensucia el arbol es el arnes:**
-
-    $ git status --porcelain
-       D docs/loop/APERTURA_CIEGA.md
-       D docs/loop/REPORTE.md
-       D docs/loop/loop.log
-       M docs/loop/ultimo_apertura.json
-       D docs/loop/ultimo_auditor.json
-       D docs/loop/ultimo_extractor.json
-      ?? .barrido_v19/
-      ?? .barrido_v20/
-
-**ESA SALIDA ES DE ANTES DE ESCRIBIR ESTE FICHERO**, y por eso `APERTURA_CIEGA.md` sale ahi
-como `D` y no como `M`. Corrida despues de escribirlo, la primera linea pasa a
-`M docs/loop/APERTURA_CIEGA.md` **y las otras siete no se mueven**, que es lo que la orden
-queria mirar.
-
-**Las seis primeras lineas son obra del arnes** (`D.34.2` retira cuatro ficheros y toca
-`ultimo_apertura.json`), **no mias, y no puedo dejarlas vacias sin recuperar justo lo que
-`D.34` me prohibe recuperar.** **MI REMEDIO SE ESCRIBIO SUPONIENDO UN ARBOL LIMPIO Y LA FASE
-CIEGA NO LO TIENE NUNCA.** Ese es un defecto del remedio, es mio, y lo declaro aqui en vez de
-apuntarme la orden como cumplida.
-
-**LO QUE SI PUEDO HACER Y HAGO: separar mi suciedad de la del arnes, y declarar la mia.**
-
-| entrada | de quien es | que hago |
-|---|---|---|
-| los seis `D` y `M` de `docs/loop/` | **del arnes** (`D.34.2`) | nada. Tocarlos seria romper `D.34` |
-| `?? .barrido_v20/` | **mia, de esta vuelta** | **se queda**, y lo declaro: son los testigos de las cifras que publico, y `7.B` de la cosecha dice que una ruta que promete prueba es cifra. Sus tres `.jsonl` ya estan borrados |
-| `?? .barrido_v19/` | **mia, de la corrida de esta misma vuelta que el arnes rechazo** | **no lo borro y no lo abro** (`1.3`). Borrar contenido que ninguna regla ordena lo reserva Alexis (`AUDITOR_FORJA.md` 3) |
-
-**LA SEGUNDA CORRIDA DE `guiones`, la del cierre del turno normal, no es de esta fase** y va
-cuando toque.
-
----
-
-## 1. QUE ESTOY AUDITANDO, Y LA CONTAMINACION QUE DECLARO YO
-
-### 1.1. La vuelta
-
-**VUELTA 19, lote 4 (`scott_radical_candor`), `cap_09.md`, unidad `Cap. 6`, titulo textual
-`Guidance`.** La cabecera del propio fuente lo dice, y no lo deduzco:
-
-    $ sed -n '1,7p' fuentes/scott_radical_candor/cap_09.md
-      ---
-      libro: Scott, Radical Candor
-      edicion: Fully Revised & Updated Edition, St. Martin's Press, First Edition October 2019
-      unidad: Cap. 6
-      titulo_textual: Guidance
-      fidelidad: verbatim
-      ---
-
-### 1.2. **CONTAMINACION QUE DECLARO, Y ES MIA**
-
-**CORRI `git log --format="%h %ad %s" -15` PARA SABER EN QUE VUELTA ESTABA, Y ESO ME TRAJO LOS
-ASUNTOS DE LOS COMMITS DEL EXTRACTOR.** El asunto de `a692c26` dice **cap_09 del lote 4 (Cap.
-6, Guidance): 15 candidatos, 177 pasos, cero puentes, y la vuelta cierra ahi por el techo de
-candidatos**, y el de `0dcb431` dice **la frontera de cap_09 publicada ANTES de cortar: 30
-piezas, 20 dan nodo, 10 no con su motivo**.
-
-**QUE SIGNIFICA Y QUE NO.** No es ninguno de los cuatro ficheros que `D.34.2` retira, y el
-asunto de un commit no es sede de cifra (`5.6`). **Pero son cifras del extractor que yo tenia
-delante antes de escribir las mias, y callarlo seria peor que haberlas visto.** La `ACTA 18`
-declaro una contaminacion de la misma familia (un `git show --stat` sin `--format=""`), asi
-que **es la segunda vuelta seguida que la puerta del `git log` me ensucia la fase ciega.**
-
-**LO QUE HICE CON ELLO.** Mi frontera de la seccion `3` esta construida **leyendo el capitulo
-entero y cerrandola contra el cuerpo**, no ajustandola a `30 / 20 / 10`. **Y no cuadra con la
-suya: yo publico 28 piezas, 19 que dan nodo y 9 que no.** Si hubiera estado copiando, habria
-copiado bien. **La discrepancia entre las dos lecturas es justo lo que la fase ciega existe
-para producir**, y va a mi turno normal.
-
-### 1.3. **LA APERTURA ANTERIOR DE ESTA MISMA VUELTA EXISTE, Y NO LA ABRI**
-
-**Esta vuelta ya tuvo una fase ciega mia.** El arnes la rechazo por un falso positivo de la
-guarda de `D.40`, el fundador lo dictamino en
-`docs/loop/paradas/2026-09-12-d40-falso-positivo.md` (*la guarda era mas estricta que la
-letra, la apertura estaba bien*), **y el arnes me relanzo con `APERTURA_CIEGA.md` retirado del
-arbol.** Aquel texto vive en el commit `a653ffd`.
-
-**NO CORRI `git show` NI `git checkout` SOBRE EL, Y ESTA CLASIFICACION ESTA HECHA DE NUEVO**,
-leyendo el capitulo y los candidatos otra vez. **No estaba prohibido abrirlo** (es obra mia y
-no del extractor), **pero el arnes lo retiro del arbol para que yo clasifique, no para que me
-copie.** Lo digo para que se pueda comprobar contra `a653ffd` si alguien quiere: **dos
-lecturas ciegas mias de la misma vuelta, hechas por separado, valen mas que una repetida.**
-
-**Y NO HAY SELLO ROTO QUE MIRAR:** `SELLOS_APERTURA.jsonl` termina en `8774c59f...`, que es el
-sello de la apertura de la vuelta 18, **porque la de la 19 no llego a sellarse nunca.**
-
-    $ tail -1 docs/loop/SELLOS_APERTURA.jsonl
-      {"vuelta": 1, "fecha": "2026-09-12 09:47:56", "sello": "8774c59fc95f21483daae2fdabc185199635db26"}
-
----
-
-## 2. EL MATERIAL QUE TENGO DELANTE, MEDIDO
-
-### 2.1. El fuente
-
-    $ wc -l fuentes/scott_radical_candor/cap_09.md
-      433 fuentes/scott_radical_candor/cap_09.md
-    $ wc -w fuentes/scott_radical_candor/cap_09.md
-      17508 fuentes/scott_radical_candor/cap_09.md
-    $ grep -c '[^[:space:]]' fuentes/scott_radical_candor/cap_09.md
-      220
-
-**Las 433 lineas del fichero llevan dentro 220 con contenido**; las otras separan parrafos. Y
-**las 17508 palabras del fichero entero son 17482 de cuerpo mas 26 de la cabecera `yaml`**:
-`17482 + 26 = 17508`.
-
-### 2.2. Las cabeceras del capitulo, sacadas con instrumento y no a ojo
-
-    $ grep -n '^[A-Z][A-Z0-9 ,"()-]*$' fuentes/scott_radical_candor/cap_09.md
-      15:SOLICITING IMPROMPTU GUIDANCE
-      55:ORANGE BOX
-      65:MANAGEMENT "FIX-IT" WEEKS
-      73:GIVING IMPROMPTU GUIDANCE
-      179:GAUGE YOUR IMPROMPTU GUIDANCE, GET A BASELINE, TRACK YOUR IMPROVEMENTS
-      205:BEING RADICALLY CANDID WITH YOUR BOSS
-      223:GENDER AND GUIDANCE
-      331:FORMAL PERFORMANCE REVIEWS
-      363:PREVENT BACKSTABBING
-      369:PEER GUIDANCE
-      383:SPEAKING TRUTH TO "POWER"
-      433:TEAM
-    $ (el mismo patron) | wc -l
-      12
-
-**De esas 12 cabeceras, 11 son del capitulo y la 12 (`TEAM`, L433) es el titulo del capitulo
-siguiente que el recorte arrastra.** Esa cuenta es el esqueleto de mi frontera.
-
-### 2.3. La bandeja, entera y por capitulo
-
-    $ ls cuarentena/scott_radical_candor/*.json | wc -l
-      78
-
-**El reparto de esos 78 candidatos de la bandeja de `scott_radical_candor`, por la unidad de
-origen que cada uno declara en su propio `resumen_teorico`:**
-
-    cap_01:   1 candidatos,    9 pasos
-    cap_03:   1 candidatos,    7 pasos
-    cap_04:   5 candidatos,   41 pasos
-    cap_05:   8 candidatos,   76 pasos
-    cap_06:  10 candidatos,  117 pasos
-    cap_07:  25 candidatos,  225 pasos
-    cap_08:  12 candidatos,  102 pasos
-    cap_09:  15 candidatos,  177 pasos
-    SIN  :   1 candidatos,    7 pasos
-    TOTAL: 78 candidatos, 761 pasos
-
-**LAS FILAS SUMAN EL TOTAL AL DIGITO:** `1+1+5+8+10+25+12+15+1 = 78` candidatos y
-`9+7+41+76+117+225+102+177+7 = 761` pasos.
-
-**LOS DE `cap_09` SON 15, Y LOS 15 SUMAN 177 PASOS.** Esa es la poblacion que clasifico.
-
----
-
-## 3. MI FRONTERA CIEGA DE `cap_09`, CERRADA CONTRA EL CUERPO
-
-**Esta es mi lectura del capitulo, pieza por pieza, hecha antes de cruzarla con nada.** La
-columna `DA` dice si esa pieza da nodo, y la de la derecha por que. **Las 28 filas cubren las
-lineas 8 a 433 sin un hueco y sin un solape** (la salida esta en `0.bis`, orden 1).
-
-| lineas | DA | mi lectura |
-|---|---|---|
-| `L8-13` | no | cabecera del capitulo, subtitulo y entrada: dice de que va, no manda hacer nada |
-| `L15` | no | rotulo de seccion `SOLICITING IMPROMPTU GUIDANCE`, sin cuerpo propio |
-| `L17-53` | **SI** | `Embrace the discomfort` entera: seis consejos rotulados uno a uno, de la excepcion a criticar en privado hasta medir la guia que recibes |
-| `L55-63` | **SI** | `ORANGE BOX`: organizar un sistema para sugerencias y quejas, con la mecanica de la caja de Dearing |
-| `L65-71` | **SI** | `MANAGEMENT FIX-IT WEEKS`: el registro publico de averias de gestion, el voto, el reparto y la semana |
-| `L73-75` | no | rotulo `GIVING IMPROMPTU GUIDANCE` mas su preambulo: dice por que va segundo, no trae acto |
-| `L77-95` | **SI** | `Be humble`, con situacion comportamiento impacto, la columna de la izquierda y la humildad ontologica |
-| `L97-113` | **SI** | `Be helpful`: declarar la intencion, mostrar en vez de contar, buscar la ayuda, la guia como regalo |
-| `L115-135` | **SI** | `Give feedback immediately`: los dos o tres minutos, la holgura, el no guardarlo y los agujeros negros |
-| `L137-153` | **SI** | `In person`: la jerarquia de modos, el Reply All y la oficina remota |
-| `L155-163` | **SI** | `Praise in public, criticize in private`, con sus tres matices |
-| `L165-177` | **SI** | `Don't personalize`: el error fundamental de atribucion y la frase que se retira |
-| `L179-203` | **SI** | `GAUGE YOUR IMPROMPTU GUIDANCE`: el marco junto a la mesa y las pegatinas de dos colores |
-| `L205-221` | **SI** | `BEING RADICALLY CANDID WITH YOUR BOSS`: la cautela, el permiso y Listen Challenge Commit |
-| `L223-225` | no | rotulo `GENDER AND GUIDANCE` y su entrada: declara el alcance del apartado, sin acto |
-| `L227-249` | no | por que es mas dificil para hombres que dirigen mujeres: diagnostico e historias. Su unico imperativo lo ejecuta `L291-293` |
-| `L251-283` | no | la trampa de la abrasividad: diagnostico, datos y el caso de Jessica y Steve. No manda hacer nada |
-| `L285-289` | no | `What can you do`, entrada de las cuatro piezas que siguen |
-| `L291-293` | **SI** | `Men: don't pull punches with women`: preguntarselo a ella, explicar el marco, pedirle que mida |
-| `L295-299` | **SI** | `Women: demand criticism`: las tres frases, la pausa, contar hasta seis |
-| `L301-313` | **SI** | `Men and women`, cuando te parece que una mujer es demasiado agresiva: cambiar de genero, ser mas concreto, no usar lenguaje de genero, no decir nunca *se mas agradable* |
-| `L315-329` | **SI** | si eres una mujer a la que le dicen abrasiva: las cuatro reglas generales, mas no descartar a los hombres |
-| `L331-361` | **SI** | `FORMAL PERFORMANCE REVIEWS`: nueve consejos rotulados para entregar una evaluacion formal |
-| `L363-367` | **SI** | `PREVENT BACKSTABBING`: no escuchar a nadie hablar de un tercero, y la conversacion a tres en vivo |
-| `L369-381` | **SI** | `PEER GUIDANCE`: la ballena y la metedura de pata, y la medicion entre pares |
-| `L383-425` | **SI** | `SPEAKING TRUTH TO POWER`: las reuniones de nivel salteado, sus diez reglas y sus cinco preguntas frecuentes |
-| `L427-429` | no | cierre del capitulo, las dos preguntas de vuelta a los principios: postura |
-| `L431-433` | no | marcador del capitulo siguiente, el `7.` y `TEAM` |
-
-**EL CRITERIO CON EL QUE PUSE `no` EN NUEVE FILAS, dicho una vez:** una pieza da nodo cuando
-trae **actos propios** (`D.27`); no lo da cuando es rotulo, entrada, diagnostico o cierre.
-
-**LAS DOS FILAS MAS DISCUTIBLES DE MI PROPIA TABLA SON `L227-249` Y `L251-283`**, las dos
-mitades del diagnostico de genero: **son 23 y 33 lineas de analisis, datos y casos, y el unico
-imperativo que hay en las dos** (*no te contengas al criticar a las mujeres de tu equipo*,
-L231) **lo ejecuta entera la pieza `L291-293`, que si da nodo.** Si alguien las cuenta como
-piezas que dan nodo, mi 19 sube a 21: **lo dejo dicho aqui, con sus lineas, para que la
-discrepancia se pueda adjudicar en vez de discutir.**
-
----
-
-## 4. MI CLASIFICACION DE LOS 15 CANDIDATOS DE `cap_09`
-
-**Abri los 15, uno por uno, con sus `pasos_accionables` enteros delante, y los cruce contra
-las lineas del fuente que cada uno declara.** Mi clase sale de la vara de `AUDITOR_FORJA.md`
-6.1 y de `D.27` y `D.30`.
-
-| # | candidato | lineas | pasos | MI CLASE |
-|---:|---|---|---:|---|
-| 1 | `abrazar_incomodidad_arrancar_critica_equipo` | `L17-53` | 20 | **PROCEDIMIENTO FIEL**, con una reserva de frontera en `4.2` |
-| 2 | `organizar_sistema_recoger_quejas_equipo` | `L55-63` | 9 | **PROCEDIMIENTO FIEL** |
-| 3 | `correr_semana_arreglo_averias_gestion` | `L65-71` | 8 | **PROCEDIMIENTO FIEL** |
-| 4 | `dar_guia_humilde_tres_tecnicas` | `L77-95` | 15 | **PROCEDIMIENTO FIEL** |
-| 5 | `dar_guia_util_cuatro_recordatorios` | `L97-113` | 10 | **PROCEDIMIENTO FIEL** |
-| 6 | `dar_guia_acto_cinco_consejos` | `L115-135` | 14 | **PROCEDIMIENTO FIEL** |
-| 7 | `elegir_medio_dar_guia_jerarquia_modos` | `L137-153` | 13 | **PROCEDIMIENTO FIEL** |
-| 8 | `elogiar_publico_criticar_privado_sus_tres_matices` | `L155-163` | 9 | **PROCEDIMIENTO FIEL** |
-| 9 | `evitar_personalizar_guia_aceptar_personal` | `L165-177` | 12 | **PROCEDIMIENTO FIEL**, y es el unico con un par que hay que leer (`6.4`) |
-| 10 | `medir_guia_propia_pegatinas_marco` | `L179-203` | 13 | **PROCEDIMIENTO FIEL** |
-| 11 | `practicar_franqueza_radical_jefe_propio` | `L205-221` | 17 | **PROCEDIMIENTO FIEL** |
-| 12 | `comprobar_criticas_hombre_mujeres_equipo` | `L291-293` | 6 | **PROCEDIMIENTO FIEL** |
-| 13 | `exigir_critica_jefe_reticente` | `L295-299` | 9 | **PROCEDIMIENTO FIEL** |
-| 14 | `impedir_punialadas_espalda_equipo` | `L363-367` | 9 | **PROCEDIMIENTO FIEL** |
-| 15 | `fomentar_guia_reciproca_companieros` | `L369-381` | 13 | **PROCEDIMIENTO FIEL** |
-
-**CERO que yo lea como POSTURA, CERO que yo lea como PUENTE y CERO que yo lea como REPITE.**
-La lectura de fidelidad que sostiene ese *cero puentes* esta en la seccion `7`, con su muestra
-y su instrumento: **no es una impresion.**
-
-### 4.1. **EL CRUCE UNO A UNO: mis 19 piezas que dan nodo contra sus 15 candidatos**
-
-**Corrido por instrumento y no casado a ojo:** cada candidato se cruza con la pieza cuyo rango
-de lineas solapa el suyo.
-
-    piezas DA NODO con candidato   : 15
-    piezas DA NODO SIN candidato   : 4
-    candidatos de cap_09 en bandeja: 15
-    candidatos que no casan con ninguna pieza mia: ninguno
-
-**ES UN UNO A UNO PERFECTO EN LAS 15**, y cada candidato cae en una pieza distinta de mi
-frontera: **ninguno se solapa con otro, ninguno cae fuera de mi lectura, y ninguna pieza
-recibio dos.** **Mi frontera y la suya coinciden donde hay candidato, y discrepan en 4 de las
-19 piezas mias que dan nodo**, que son las que no lo tienen (seccion `5`).
-
-### 4.2. **LA UNICA RESERVA DE FRONTERA QUE PONGO, y la mido en vez de opinar**
-
-**`abrazar_incomodidad_arrancar_critica_equipo` se come `L17-53` entera**, que son **seis
-consejos rotulados uno a uno por el libro** (la excepcion a criticar en privado, la pregunta
-de cabecera, abrazar la incomodidad, escuchar para entender, premiar la critica y medir la que
-recibes). **En el resto del capitulo el corte es un nodo por subseccion rotulada.**
-
-**LA MEDIDA, que es lo que convierte esto en algo adjudicable:** palabras de la pieza
-divididas por pasos del candidato.
-
-    L17-53    2178 palabras,  20 pasos  ->  108.9 palabras por paso   <- el maximo de los 15
-    L179-203  1164 palabras,  13 pasos  ->   89.5
-    L115-135  1144 palabras,  14 pasos  ->   81.7
-    ...
-    L295-299   129 palabras,   9 pasos  ->   14.3                     <- el minimo de los 15
-    SUMA     10669 palabras, 177 pasos  ->   60.3 de media de los 15
-
-**`L17-53` comprime casi el doble que la media de los 15 candidatos (108.9 contra 60.3) y casi
-ocho veces mas que el minimo de los 15 (108.9 contra 14.3).** No digo que este mal: **digo que
-es el unico sitio del capitulo donde el corte no sigue el rotulo del libro**, y que si la vara
-de `6.1` se aplica a esos seis consejos, **tres de ellos traen procedimiento propio
-suficiente** (la pregunta de cabecera, L37; premiar la critica, L49 a L51; medir la que
-recibes, L53). **Lo subo como discutible mio, no como caida.**
-
----
-
-## 5. LAS CUATRO PIEZAS QUE DAN NODO Y **NO TIENEN CANDIDATO**
-
-**ESTE ES EL HALLAZGO DE MI LECTURA CIEGA.** De mis 19 piezas que dan nodo, **4 no tienen ni
-un candidato en la bandeja entera de 78 de `scott_radical_candor`**, no solo entre los 15 de
-esta vuelta.
-
-| lineas | que es | palabras | la busqueda que lo sostiene |
-|---|---|---:|---|
-| `L301-313` | *Men and women: things to think about when you feel a woman is being too aggressive*: **cuatro tacticas rotuladas** (cambiar de genero, ser mas concreto, no usar lenguaje de genero, no decir nunca *se mas agradable*) | 416 | `grep -ril "cambiar de genero\|switch gender\|si fuera un hombre" cuarentena/scott_radical_candor/*.json` da **0 de 78** |
-| `L315-329` | *Things to think about if you're a woman who's being told you're abrasive*: **cuatro reglas generales** mas *no descartes a los hombres* | 573 | `grep -ril "abrasiv" cuarentena/scott_radical_candor/*.json` da **0 de 78**, y `grep -ic "abrasiv" dataset/nodos.jsonl` da **0 de 203** |
-| `L331-361` | **`FORMAL PERFORMANCE REVIEWS`**, seccion entera en versales: **nueve consejos rotulados** para entregar una evaluacion formal (sin sorpresas, no fiarse del juicio unilateral, pedirte una a ti primero, escribirla, cuando entregarla, cincuenta minutos y no seguidas, mitad atras mitad adelante, revisiones periodicas, la nota y el sueldo despues) | 1526 | `grep -ril "evaluacion de desempenio\|evaluacion formal\|performance review\|revision formal" cuarentena/scott_radical_candor/*.json` da **1 de 78**, y ese 1 es `dar_guia_acto_cinco_consejos`, que la nombra **para decir que NO guardes la guia para ella** (su `P10`, de L129). **No la extrae: la cita como contraejemplo.** Sin el primer termino del patron, el mismo `grep` da **0 de 78**: ver `5.3` |
-| `L383-425` | **`SPEAKING TRUTH TO "POWER"`**, seccion entera en versales: las reuniones de nivel salteado, **diez reglas rotuladas** mas **cinco preguntas frecuentes** | 1818 | `grep -ril "salto de nivel\|skip level\|nivel salteado" cuarentena/scott_radical_candor/*.json` da **0 de 78**, y en `dataset/nodos.jsonl` da **0 de 203** |
-
-**LA BUSQUEDA NEGATIVA NO SE CITA SIN CORRERLA** (`AUDITOR_FORJA.md` 1.1), y las cuatro estan
-corridas en esta vuelta contra **la bandeja de 78 y el grafo de 203.**
-
-### 5.3. **UNA CAIDA MIA CAZADA AL RE CORRER MIS PROPIOS COMANDOS ANTES DEL SELLO**
-
-**ESCRIBI LA TABLA DE ARRIBA Y DESPUES VOLVI A CORRER LOS CUATRO `grep` TAL Y COMO LOS HABIA
-CITADO, uno por uno.** El tercero **no reproducia su cifra**: yo habia citado el patron
-`"evaluacion formal\|performance review\|revision formal"`, **que da 0 de 78**, y la cifra `1`
-de la que hablaba el texto venia del patron que corri de verdad, **el que lleva ademas
-`evaluacion de desempenio`**. La celda ya lleva el patron bueno y dice tambien lo que da el
-corto.
-
-**ES EXACTAMENTE LA CAIDA `7.1` DE LA `ACTA 18`, la que engendro la ORDEN 1:** *lo que fallo
-no fue la ausencia de instrumento, sino que el instrumento no comprobaba lo que la cifra
-decia.* **La diferencia es que esta vez se cazo antes del sello y no despues**, y se cazo
-porque re correr los comandos citados fue un paso del trabajo y no una ocurrencia.
-
-**NO ACUMULA, y digo por que:** `D.38.2` pone mi especie `CIFRA PUBLICADA PROPIA` en *mi acta
-o mi apertura sellada*, **y esto no llego a sellarse con el patron malo.** **Lo declaro igual**,
-porque una apertura que solo cuenta lo que le salio bien no mide nada.
-
-### 5.1. Cuanto pesa eso, con su denominador
-
-    EL REPARTO DEL CUERPO DE cap_09, sobre las 17482 palabras del cuerpo:
-      piezas que dan nodo Y tienen candidato: 15 de las 28 piezas : 10669 palabras (61.03 por ciento)
-      piezas que dan nodo y SIN candidato   :  4 de las 28 piezas :  4333 palabras (24.79 por ciento)
-      piezas que NO dan nodo                :  9 de las 28 piezas :  2480 palabras (14.19 por ciento)
-      15 + 4 + 9 = 28 piezas   y   10669 + 4333 + 2480 = 17482 palabras
-
-> **CASI UNA CUARTA PARTE DEL CUERPO DE `cap_09`, 4333 palabras de las 17482, ES
-> PROCEDIMIENTO QUE MI LECTURA DA POR EXTRAIBLE Y QUE NO TIENE CANDIDATO.**
-
-### 5.2. Lo que esto **puede** ser, y por que no lo decido aqui
-
-**LA LECTURA BENIGNA Y PROBABLE ES QUE SEA EL CIERRE CORTO POR TECHO DE CANDIDATOS**
-(`EXTRACTOR.md` 12.4, `AUDITOR_FORJA.md` 8.1): **15 candidatos es exactamente el techo del
-tramo**, la vuelta cierra ahi y lo declara, y lo que sobra pasa a la siguiente. **Mi cuenta
-encaja con eso al digito: 15 candidatos escritos contra un techo de 15.**
-
-**PERO HAY UNA DIFERENCIA QUE NO PUEDO RESOLVER A CIEGAS Y QUE DEJO PLANTEADA.** `12.4` esta
-escrita para que **los CAPITULOS que le quedaban al tramo pasen a la vuelta siguiente**; aqui
-lo que queda pendiente **no es un capitulo entero, es un trozo de este**, y dentro de ese
-trozo hay **dos secciones en versales completas** de las 11 del capitulo. **Que se declare
-`cap_09` cerrado sin decir que queda dentro de `cap_09` es lo unico que hay que comprobar**, y
-`8.1` me dice exactamente que mirar: *una vuelta que cierra en un capitulo y no lo dice no
-esta aplicando esta regla.*
-
-**LO QUE VERIFICO EN MI TURNO NORMAL, ya escrito aqui para no inventarlo despues:**
-
-1. **Que el reporte declare el cierre corto con su cifra** (15 candidatos contra el techo de 15).
-2. **Que declare que `cap_09` queda ABIERTO y con que piezas dentro**, y no cerrado.
-3. **Si dice `cap_09` cerrado, es caida de especie `REPORTE`**, y las cuatro piezas de arriba
-   son su evidencia, con sus lineas y sus palabras.
-4. **Y la comparacion de fronteras:** mis 28 piezas, 19 que dan nodo, contra las 30 piezas y
-   20 que dan nodo del asunto de `0dcb431` que declaro en `1.2`.
-
----
-
-## 6. EL BARRIDO DE VECINOS, SOBRE GRAFO MAS BANDEJAS (`D.38.4`)
-
-### 6.1. La poblacion, con su `wc -l` pegado
-
-    $ wc -l dataset/nodos.jsonl
-      203 dataset/nodos.jsonl
-    $ ls cuarentena/*/*.json | grep -v _insertados | grep -v _derivadas | wc -l
-      241
-      de esos 241: 163 del catalogo de control ensayo_referencia_163 y 78 de scott_radical_candor
-
-**POBLACION `D.38.4` = 203 + 241 = 444.** Y sin el catalogo de control, `444 - 163 = 281`.
-**Barro contra las 444**, que es la letra de la regla (*todo lo que espera en cuarentena*), y
-doy la de 281 al lado porque la `ACTA 18` dio las dos y comparar lotes pide la misma vara.
-
-**Y SE BARRE UNO POR VEZ, `444 - 1 = 443`**, por la correccion declarada que yo mismo escribi
-en la `ACTA 18` y que esta en el banco bajo `D.38.4`: **un nodo no es vecino de si mismo**, y
-la receta literal del banco, corrida al pie de la letra, devuelve cero vecinos porque la
-guarda de id muerde primero.
-
-### 6.2. La salida entera, sin recortar
-
-    $ python .barrido_v20/barrer.py .barrido_v20/cap09_lf.txt
-      POBLACION: grafo 203 + bandejas 241 = 444
-      CANDIDATOS BARRIDOS: 15
-      umbrales de esta corrida: similitud 0.35 | familia 0.30 | paso contra nodo 0.60
-
-      ### abrazar_incomodidad_arrancar_critica_equipo   [poblacion 443]
-          SIN VECINO
-
-      ### comprobar_criticas_hombre_mujeres_equipo   [poblacion 443]
-          VECINO exigir_critica_jefe_reticente  |  familia_id=0.125, paso_contra_nodo=0.555, similitud_texto=0.402
-          VECINO correr_semana_arreglo_averias_gestion  |  paso_contra_nodo=0.431, similitud_texto=0.366
-
-      ### correr_semana_arreglo_averias_gestion   [poblacion 443]
-          VECINO comprobar_criticas_hombre_mujeres_equipo  |  paso_contra_nodo=0.431, similitud_texto=0.356
-
-      ### dar_guia_acto_cinco_consejos   [poblacion 443]
-          SIN VECINO
-
-      ### dar_guia_humilde_tres_tecnicas   [poblacion 443]
-          VECINO elogiar_publico_criticar_privado_sus_tres_matices  |  familia_id=0.091, paso_contra_nodo=0.393, similitud_texto=0.35
-
-      ### dar_guia_util_cuatro_recordatorios   [poblacion 443]
-          SIN VECINO
-
-      ### elegir_medio_dar_guia_jerarquia_modos   [poblacion 443]
-          SIN VECINO
-
-      ### elogiar_publico_criticar_privado_sus_tres_matices   [poblacion 443]
-          VECINO dar_guia_humilde_tres_tecnicas  |  familia_id=0.091, paso_contra_nodo=0.405, similitud_texto=0.352
-
-      ### evitar_personalizar_guia_aceptar_personal   [poblacion 443]
-          VECINO manejar_enfado_persona_desafiada  |  paso_contra_nodo=0.867, similitud_texto=0.234
-
-      ### exigir_critica_jefe_reticente   [poblacion 443]
-          VECINO comprobar_criticas_hombre_mujeres_equipo  |  familia_id=0.125, paso_contra_nodo=0.577, similitud_texto=0.382
-
-      ### fomentar_guia_reciproca_companieros   [poblacion 443]
-          SIN VECINO
-
-      ### impedir_punialadas_espalda_equipo   [poblacion 443]
-          SIN VECINO
-
-      ### medir_guia_propia_pegatinas_marco   [poblacion 443]
-          SIN VECINO
-
-      ### organizar_sistema_recoger_quejas_equipo   [poblacion 443]
-          VECINO elogiar_publico_criticar_privado_sus_tres_matices  |  paso_contra_nodo=0.47, similitud_texto=0.357
-
-      ### practicar_franqueza_radical_jefe_propio   [poblacion 443]
-          SIN VECINO
-
-      TOTAL: 8 vecinos levantados sobre 15 candidatos; 7 candidatos con vecino, 8 sin ninguno
-
-**EL INSTRUMENTO ES EL DE LA CASA**, `src.aduana.buscar_vecinos`, el mismo que usa
-`forja.py informe` por dentro. Lo que hace mi script es **armarle la poblacion de `D.38.4` y
-quitarle el propio candidato**, que es lo que la regla pide y la receta del banco no trae.
-
-**CRUCE INDEPENDIENTE.** Corri una segunda pasada, en orden inverso y en otro proceso, para
-ver si el resultado se reproduce. **Le dio tiempo a 2 de los 15 antes de que la parara, y los
-2 coinciden al digito con la primera:**
-
-    $ cat .barrido_v20/BARRIDO2.txt
-      POBLACION: grafo 203 + bandejas 241 = 444
-      ### practicar_franqueza_radical_jefe_propio   [poblacion 443]   [447s]
-          SIN VECINO
-      ### organizar_sistema_recoger_quejas_equipo   [poblacion 443]   [328s]
-          VECINO elogiar_publico_criticar_privado_sus_tres_matices  |  paso_contra_nodo=0.47, similitud_texto=0.357
-
-**2 de 15 comprobados dos veces no es el barrido entero comprobado dos veces, y lo digo asi.**
-Los `447s` y `328s` de esa salida explican por que: **el barrido completo de los 15 contra 443
-tardo 50 minutos y 14 segundos**, y una segunda pasada entera costaba otro tanto.
-
-    $ (arranque del proceso)                          13:10:58
-    $ stat -c '%y' .barrido_v20/BARRIDO.txt           2026-09-12 14:01:12
-
-**Esa cifra tambien la remedi:** mientras esperaba lo llame *hora y media*, que era mi reloj de
-espera y no el del proceso. **50 minutos, que es lo que dice el fichero.**
-
-### 6.3. **LO QUE EL BARRIDO DICE, Y ES LA VINDICACION MEDIDA DE `D.38.4`**
-
-    8 vecinos levantados sobre 15 candidatos; 7 candidatos con vecino, 8 sin ninguno
-
-**LOS 8 VECINOS LEVANTADOS APUNTAN A 6 NODOS DISTINTOS** (tres pares se levantan por los dos
-lados), **y esos 6 estan comprobados uno por uno contra el grafo y contra la bandeja:**
-
-    exigir_critica_jefe_reticente                     : grafo=0 bandeja=1
-    correr_semana_arreglo_averias_gestion             : grafo=0 bandeja=1
-    comprobar_criticas_hombre_mujeres_equipo          : grafo=0 bandeja=1
-    elogiar_publico_criticar_privado_sus_tres_matices : grafo=0 bandeja=1
-    dar_guia_humilde_tres_tecnicas                    : grafo=0 bandeja=1
-    manejar_enfado_persona_desafiada                  : grafo=0 bandeja=1
-
-> **LOS 6 NODOS A LOS QUE APUNTAN LOS 8 VECINOS ESTAN LOS 6 EN LA BANDEJA. EN EL GRAFO DE
-> 203 NODOS NO HAY NI UNO.**
-> **Un barrido hecho solo sobre `dataset/nodos.jsonl`, que es justo lo que `D.38.4` vino a
-> prohibir, habria publicado CERO VECINOS para los 15 candidatos de esta vuelta**, y habria
-> perdido entero el unico par que hay que leer.
-
-**Y DE LOS 8 VECINOS, SOLO 1 PASA EL UMBRAL DE `paso_contra_nodo`, que es 0.60:**
-
-    evitar_personalizar_guia_aceptar_personal -> manejar_enfado_persona_desafiada   0.867
-    los otros 7 de los 8, entre 0.393 y 0.577, levantados por similitud_texto rozando su 0.35
-
-**Los siete de abajo los leo como ruido de vocabulario:** son candidatos del mismo capitulo
-hablando del mismo par de palabras (elogio y critica), con `similitud_texto` entre 0.350 y
-0.402 sobre un umbral de 0.350. **`D.19` manda: ninguna senial separa jerarquia de ruido, asi
-que la senial dice donde mirar y ahi acaba su trabajo.** Mire los siete y ninguno es par.
-
-### 6.4. **EL UNICO PAR DE VERDAD, ADJUDICADO LEYENDO LOS PASOS**
-
-**`evitar_personalizar_guia_aceptar_personal`** (`cap_09`, `L165-177`, 12 pasos) **contra**
-**`manejar_enfado_persona_desafiada`** (`cap_04`, 7 pasos, tambien en la bandeja).
-`paso_contra_nodo = 0.867`, muy por encima del 0.60.
-
-**EL SOLAPE ES REAL Y ES UNO SOLO.** Los dos traen la misma orden, porque el libro la repite
-en dos capitulos distintos:
-
-    manejar_enfado  P5: Elimina de tu vocabulario la frase no te lo tomes como algo
-                        personal. El texto dice que es insultante.
-    evitar_person   P9: Elimina de tu vocabulario la frase no te lo tomes como algo
-                        personal, que el texto llama peor que inutil.
-
-**MI ADJUDICACION: `CONTINUA`, NO `REPITE`. Los dos se quedan, y lo que hay entre ellos es una
-arista.** La vara de `6.1` se aplica asi, con direccion y sin bascula:
-
-| la pregunta de `6.1` | la respuesta, leida en los pasos |
-|---|---|
-| **que anade el hijo a la madre** | el error fundamental de atribucion con su autor (`P2`, `P3`), pillarse el *tu eres* (`P4`), remitir a situacion comportamiento impacto y a la columna de la izquierda (`P5`), *eso esta mal* en vez de *tu estas mal* (`P6`, `P7`), mantener la discusion sobre el asunto (`P8`), y como no personalizar cuando la cosa SI es personal (`P12`). **Once pasos de sus doce que la madre no tiene** |
-| **que queda fuera en el otro lado** | la madre es un procedimiento para **el enfado del otro despues de haberle desafiado**: reconocer el dolor sin fingir que no duele, ofrecerse a ayudar, no fingir que no hay problema. **Seis pasos de sus siete que el hijo no tiene** |
-| **la bascula** | no decide. Lo que decide es que **lo que queda fuera es procedimiento en los dos lados**, que es la letra exacta de `6.1` |
-| **de que tamano es el solape** | **uno de doce contra uno de siete.** Un solo paso compartido, de literal casi identico, no es un nodo repetido: es el libro insistiendo, y `D.30` manda transcribir lo que el libro dice donde lo dice |
-
-**LA SENIAL ACERTO EN MANDARME A LEER Y SE EQUIVOCARIA EN DECIDIR**, que es exactamente lo que
-`D.19` dice que pasa. **Lo dejo adjudicado aqui, a ciegas y antes de ver que dijo el
-extractor**, que es lo unico que hace informativa a la comparacion (`5.1`).
-
----
-
-## 7. MI RELECTURA DE FIDELIDAD (`D.30`): busque puentes y no encontre ninguno
-
-**`AUDITOR_FORJA.md` 8.3 me obliga a contar yo los pasos y a releer una muestra de los
-marcados TRANSCRIPCION contra su parrafo**, porque *el error que esta metrica invita a cometer
-es marcar un puente como transcripcion.*
-
-**LOS PASOS LOS CONTE YO** y son los de la seccion `2.3`: **15 candidatos, 177 pasos.**
-
-**Y LA MUESTRA NO LA ELEGI A OJO: la eligio un instrumento, y es la muestra que mas duele si
-hay puente.** Saque **todas las cifras que aparecen dentro de esos 177 pasos** (un puente casi
-siempre entra como un numero que el libro no dice) y las cotejé una por una contra su linea:
-
-    $ (extractor de cifras sobre los pasos de los 15 candidatos de cap_09)
-      TOTAL de cifras dentro de pasos de los 15 candidatos de cap_09: 54
-
-**COTEJE LAS 54 CONTRA EL FUENTE. LAS 54 ESTAN EN EL TEXTO.** Las que mas facil habria sido
-inventar, con su linea:
-
-| cifra del paso | donde la dice el libro |
-|---|---|
-| *mas de sesenta personas* (`abrazar` `P5`) | L33, *more than sixty or so people* |
-| *cuenta hasta seis* (`abrazar` `P9`, `exigir` `P6`) | L41 y L299, *count to six* |
-| *cinco personas, tres elogios, una critica, sesenta minutos* (`dar_guia_acto` `P7`) | L125, las cuatro en la misma frase |
-| *veinticinco y cincuenta, en vez de treinta y sesenta* (`dar_guia_acto` `P8`) | L127, *twenty-five- and fifty-minute meetings ... not thirty- and sixty-minute* |
-| *diapositiva seis* y *cinco por ciento* (`elogiar_publico` `P4`) | L159, los dos ejemplares literales |
-| *quince segundos* (`medir_guia` `P1`) | L181, *it can take fifteen seconds* |
-| *veinte dolares* (`fomentar_guia` `P9`) | L373, *I put twenty dollars on Whoops's head* |
-| *tres anios* (`dar_guia_humilde` `P14`) | L95, *funny in a three-year-old* |
-| *llamada de tres minutos* (`elegir_medio` `P13`) | L153, *a three-minute check-in call* |
-
-**MI LECTURA: 177 pasos, 177 TRANSCRIPCION, 0 PUENTE.** Es la misma cifra que los propios
-candidatos declaran en su `resumen_teorico`, **y la publico como mia porque la comprobe yo
-contra el fuente, no porque ellos la digan** (`8.3`: *es una cifra que el extractor te da y
-que tu firmas; no la copias*).
-
-**LO QUE ESO SIGNIFICA PARA `PASOS INVENTADOS POR CAPITULO` (seccion 8):**
-
-    cap_09:  0 pasos inventados / 177 pasos escritos  =  0,00 por ciento
-
-**Cero esta por debajo del tope de 10 por ciento**, asi que **por esta metrica el tramo no
-baja.** El otro techo, el de candidatos, es el que manda aqui, y es el de `5.2`.
-
-### 7.1. Lo unico que si me chirria de los 177 pasos, y no es un puente
-
-**Muchos pasos empiezan por `Cuenta con lo que el texto dice...`**, que es contexto y no un
-acto. **No es puente** (lo que viene detras esta en el libro, palabra por palabra) **y no es
-cifra falsa.** Es una decision de estilo que atraviesa la bandeja entera y no solo estos 15, y
-la mido en vez de decir *muchos*:
-
-    candidatos con al menos un paso que empieza por "Cuenta con", por capitulo de origen:
-       cap_01:  1 de  1      cap_06: 10 de 10
-       cap_03:  1 de  1      cap_07: 21 de 25
-       cap_04:  3 de  5      cap_08: 11 de 12
-       cap_05:  7 de  8      cap_09: 13 de 15
-       SIN   :  1 de  1
-       TOTAL : 68 de los 78 candidatos de la bandeja de scott_radical_candor
-
-**13 de los 15 de esta vuelta y 68 de los 78 de la bandeja**: no es un tic de `cap_09`. **Lo dejo anotado y no lo convierto en caida:** cambiar eso estrecharia la
-vara, y `6.3` dice que ninguna vuelta la mueve sin correccion declarada de Alexis. **Lo digo
-aqui para que exista, no para cobrarlo.**
-
----
-
-## 8. LO QUE NO PUEDO COMPROBAR EN ESTA FASE, DICHO EN VEZ DE CALLADO
-
-| lo que falta | por que | cuando |
-|---|---|---|
-| las cinco guardas y la aduana por mutacion | `5.5` las manda re correr sobre **lo que el reporte declare mordiendo**, y el reporte no esta en el arbol | turno normal |
-| el cierre corto declarado con su cifra | vive en `REPORTE.md` | turno normal, con la lista de `5.2` ya escrita |
-| la comparacion de fronteras, 28 mias contra 30 suyas | igual | turno normal |
-| `python forja.py gate`, `resolutor` y `tests/test_aceptacion.py` | no son de la fase ciega: esta fase clasifica material, no verifica la vuelta | turno normal |
-| el sello de este fichero | lo pone el arnes cuando yo termine | al cerrar |
-
----
-
-## 9. TABLA DE CIERRE DE LA APERTURA
-
-**Repito aqui la declaracion de herencia. `D.40` mira PRESENCIA y no conteo** (parada del 12
-sep 2026, punto 1: *basta con que UNA de las veces que aparece la declaracion este bien
-puesta*), **asi que citar la linea que declaro no me tumba la vuelta**, y una apertura que
-declara arriba y lo repite al cerrar es mas facil de leer que una que lo dice una sola vez.
-
-    ACTA ANTERIOR LEIDA: 80fd74cdf15bb0b1ff02bcbe560ba03f11f22472
+    ACTA ANTERIOR LEIDA: 2d794fc9231cf3f28b519f720e4d10cc48a1c4e3
     HEREDADO 1: CUMPLIDO
 
-| lo que esta fase tenia que traer | donde esta |
-|---|---|
-| la herencia declarada y remedida | `0` |
-| mi tarea bloqueante de la `ACTA 18` `7.5`, sus tres ordenes | `0.bis`: dos cumplidas y una declarada imposible en la letra |
-| la contaminacion propia | `1.2`, y la apertura anterior no abierta en `1.3` |
-| clases y lecturas, con instrumento en cada cifra (`D.38.3`) | `2` a `7` |
-| la frontera cerrada contra el cuerpo | `3` y `0.bis`: `17482 = 17482`, 0 huecos, 0 solapes |
-| mi clase para cada uno de los 15 candidatos | `4` |
-| el barrido sobre grafo mas bandejas (`D.38.4`) | `6`: `444 = 203 + 241`, y `443` por candidato |
-| el par leido y adjudicado a ciegas | `6.4` |
-| la lectura de fidelidad propia | `7`: 177 de 177 TRANSCRIPCION, 0 PUENTE |
+### 0.1. La huella, remedida por mi en esta fase y no copiada del prompt
 
-### **LO QUE ESTA APERTURA SOSTIENE, EN UNA LINEA**
+    $ git hash-object docs/loop/ACTA_AUDITOR.md
+    2d794fc9231cf3f28b519f720e4d10cc48a1c4e3
+    $ wc -l docs/loop/ACTA_AUDITOR.md
+    18132 docs/loop/ACTA_AUDITOR.md
 
-**Los 15 candidatos de `cap_09` los leo los 15 como procedimiento fiel al libro, con un solo
-par que leer y adjudicado `CONTINUA`. Y el hallazgo de esta fase ciega no esta en lo que se
-escribio, sino en lo que no: 4 de mis 19 piezas que dan nodo, 4333 palabras de las 17482 del
-cuerpo, casi una cuarta parte del capitulo, sin un candidato en toda la bandeja.**
+**Coincide con la que el prompt me entrega.** La lei, y lei ademas `docs/loop/PROMPT_SIGUIENTE.md`
+entero, que es sede mia por `AUDITOR_FORJA.md` 5.6 y donde vive el encargo de esta vuelta.
+
+### 0.2. `HEREDADO 1`, que es la `ACTA 19` `7.5` (linea 17998), **CUMPLIDO**
+
+El heredado no es un remedio suelto: es **la obligacion de declarar mis remedios tambien cuando
+aguantan**, porque `REMEDIO ROTO` solo informa si se declara en los dos sentidos. **Su cumplimiento
+es la seccion 6 de este fichero**, con una fila por remedio y su comprobacion de hoy al lado.
+
+### 0.3. Y DECLARO ADEMAS LO QUE EL ARNES NO ME ENTREGO, porque tambien es mio
+
+El arnes me entrego **un** heredado. **Mi `ACTA 19` `7.4` dejo ademas dos ordenes escritas bajo el
+titulo `TAREA BLOQUEANTE DEL AUDITOR DE LA VUELTA 20`**, y no declararlas por no venir numeradas
+en el prompt seria exactamente la perdida que `D.40` vino a impedir. **Las dos, y las dos
+CUMPLIDAS en este fichero:**
+
+| orden mia de la `ACTA 19` `7.4` | donde se cumple aqui | resultado |
+|---|---|---|
+| **ORDEN A**, toda tabla de reparto lleva su fila de residuo, y la fila de residuo es **cero o trae nombres** | seccion `1.2`: la fila `SIN` da **0** sobre `83`, y los `39` del nivel 2 salen **impresos con su nombre uno a uno** | **CUMPLIDA** |
+| **ORDEN B**, el rotulo de una tabla se escribe **despues** del instrumento y con el codigo delante | seccion `1.1`: mi primer censo **reprodujo la caida de la `ACTA 19` `7.1`** (`cap_04: 5`, `SIN: 1`), la cace **antes de publicar** y reescribi el instrumento; la fila buena es `cap_04: 6, 48 pasos` y `SIN: 0` | **CUMPLIDA, y es la que evito la caida** |
+
+---
+
+## 0.bis. CONTAMINACION DE ESTA FASE, DECLARADA ENTERA Y ANTES DE NADA
+
+**El prompt que me invoca trae, en su bloque de contexto de git, los asuntos de commit del
+extractor de esta vuelta**, y uno de ellos resume el resultado de la vuelta con sus cifras. **No
+lo busque yo: venia puesto.** Lo digo entero porque es la **tercera vuelta seguida** que la puerta
+de `git log` me ensucia la fase ciega, y las dos anteriores la falta si fue mia.
+
+**QUE HAGO CON ELLO:** todo lo que este fichero publica esta **remedido por mi desde el arbol**
+con el instrumento pegado al lado, y **ninguna cifra de aqui sale de esa cabecera**. Donde mi
+medida coincide con lo que aquel asunto decia, lo digo (`2.1`), porque callarlo seria peor que
+declararlo.
+
+**LO QUE NO HICE:** no corri `git log`, `git show` ni `git checkout` sobre `REPORTE.md`,
+`loop.log`, `ultimo_extractor.json` ni `ultimo_auditor.json`. **Y no abri los directorios de
+trabajo del extractor de esta vuelta** (`.aduana_v20/`, `.barrido_v20/`, `.t1_v20/`): no son
+ninguno de los cuatro que `D.34.2` retira, pero **son su lectura**, y esta fase existe para que yo
+escriba la mia antes. Su existencia la vi en un `ls` del raiz y ahi la deje.
+
+---
+
+## 1. LA POBLACION, MEDIDA ANTES DE CLASIFICAR NADA
+
+### 1.1. Mi instrumento fallo primero, y lo cuento porque es la ORDEN B funcionando
+
+Mi primera version del censo buscaba `cap_NN.md` **solo dentro de `resumen_teorico`** y publico:
+
+    cap_04	candidatos=5	pasos=41
+    SIN	candidatos=1	pasos=7
+
+**Es la misma fila falsa que me costo la caida de la `ACTA 19` `7.1`.** La cace leyendo el rotulo
+contra el codigo **antes de publicar**, que es lo que la ORDEN B manda. El fichero en disputa
+vuelve a ser `invitar_desafio_reciproco_equipo`, que nombra `cap_04` en su prosa y no lleva la
+cabecera `UNIDAD DE ORIGEN:`.
+
+**Y probe tambien el extremo contrario** (buscar `cap_NN` en el fichero entero, sin niveles): da
+`CHOQUE:cap_05+cap_06+cap_07+cap_08+cap_09` y otras trece filas de choque, **porque un candidato
+que cita a un vecino de otro capitulo nombra dos**. Los dos extremos mienten; por eso el
+instrumento bueno declara **por que nivel responde cada fila**.
+
+**EL INSTRUMENTO QUE PUBLICO ES `.censo_apertura_v21.py`:** nivel 1, la cabecera textual
+`UNIDAD DE ORIGEN: .../cap_NN.md`; nivel 2, si no la hay, el primer `cap_NN` del fichero entero,
+**marcado como deducido y no declarado**.
+
+### 1.2. El censo de la bandeja del lote 4, con su residuo en cero
+
+    $ python .censo_apertura_v21.py
+    --- POR CAPITULO (bandeja entera del lote 4) ---
+    cap_01	candidatos=1	pasos=9
+    cap_03	candidatos=1	pasos=7
+    cap_04	candidatos=6	pasos=48
+    cap_05	candidatos=8	pasos=76
+    cap_06	candidatos=10	pasos=117
+    cap_07	candidatos=25	pasos=225
+    cap_08	candidatos=12	pasos=102
+    cap_09	candidatos=20	pasos=272
+    TOTAL	candidatos=83	pasos=856
+
+    --- NIVEL QUE RESPONDIO ---
+    nivel 1	44
+    nivel 2	39
+
+**NO HAY FILA `SIN`: el residuo es `0` sobre `83`, y los `39` del nivel 2 salen impresos con su
+nombre uno a uno en la salida del instrumento**, que es lo que la ORDEN A exige. **83 candidatos y
+856 pasos en la bandeja del lote 4**, contra los **78 candidatos y 761 pasos** que mi `ACTA 19`
+`6.2` firmo: **cinco candidatos y 95 pasos mas.**
+
+    $ ls cuarentena/scott_radical_candor/*.json | wc -l
+    83
+
+### 1.3. La poblacion del barrido, que es grafo mas bandejas (`D.38.4`)
+
+    $ python .barrido_auditor_v21.py cuarentena/scott_radical_candor
+    POBLACION DEL BARRIDO (D.38.4)
+      grafo dataset/nodos.jsonl : 203
+      bandejas cuarentena/*/    : 246
+      TOTAL                     : 449
+      umbrales: sim 0.35 | fam 0.3 | paso 0.6
+
+    $ wc -l dataset/nodos.jsonl
+    203 dataset/nodos.jsonl
+
+**449 sobre 449 = 203 del grafo mas 246 de las bandejas**, descartando `_insertados` y
+`_derivadas`. Mi `ACTA 19` barrio **444 = 203 + 241**; **los cinco de diferencia son los cinco
+candidatos nuevos, y el grafo no se ha movido: 203 antes y 203 hoy.**
+
+---
+
+## 2. LO QUE ESTA VUELTA HIZO, MEDIDO POR MI ANTES DE LEER SU REPORTE
+
+### 2.1. `cap_09` esta cerrado en 20 de 20, y las cinco son exactamente las cinco que debia
+
+    $ python .cierre_cap09_v21.py
+    piezas de cap_09 con nodo en la bandeja : 20
+      de la vuelta anterior                 : 15  ['P10','P11','P12','P13','P14','P15','P20','P21','P25','P26','P4','P5','P6','P8','P9']
+      escritas en esta vuelta               : 5  ['P22','P23','P24','P27','P28']
+
+    LAS CINCO, CON SUS PASOS:
+      P22  revisar_critica_mujer_agresiva_cuatro_tacticas       pasos=12
+      P23  responder_critica_abrasiva_cuatro_reglas             pasos=14
+      P24  entregar_evaluacion_formal_desempenio_nueve_consejos pasos=22
+      P27  conducir_reuniones_salto_nivel_diez_reglas           pasos=31
+      P28  resolver_dudas_frecuentes_reuniones_salto_nivel      pasos=16
+      pasos de las cinco: 95
+      pasos de las veinte: 272
+
+    numeros de pieza de la frontera de 30 que NO dan nodo: 10  [1, 2, 3, 7, 16, 17, 18, 19, 29, 30]
+
+    candidatos de la bandeja que nombran cap_10 en cualquier campo: 0 []
+
+**LAS CINCO SON `P22`, `P23`, `P24`, `P27` y `P28`: exactamente las cinco que mi encargo nombro, ni
+una mas ni una menos.** Las `20` piezas con nodo mas las `10` sin nodo dan las `30` de la frontera
+adjudicada, **que no reabro**. **`cap_09` queda cerrado en 20 de 20 y 272 pasos**, y el reparto
+`15 mas 5` cuadra con las 15 que la vuelta anterior escribio.
+
+**Y `cap_10` NO SE ESCRIBIO: `0` candidatos de `83` lo nombran en ningun campo.** La vuelta se
+queda, por tanto, **en el limite de capitulo y no dentro de uno**, que es la unica forma legitima
+que mi TAREA 3 punto 4 dejaba abierta. **Si su reporte lo declara, cumple; si no lo declara, es
+caida de especie `REPORTE`** por `AUDITOR_FORJA.md` 8.1, **y eso lo veo en mi turno normal, no
+aqui.**
+
+### 2.2. Mi lectura de fidelidad `D.30` de los 95 pasos, uno a uno contra su linea
+
+**Abri los cinco candidatos y lei su tramo en `fuentes/scott_radical_candor/cap_09.md`** con
+`sed -n` y con las lineas numeradas por `awk 'NR>=331 && NF>0'`. Clasifico cada pieza y digo lo
+que sostiene la clase.
+
+| pieza | tramo | mi clase | lo que la sostiene |
+|---|---|---|---|
+| **`P22`** `revisar_critica_mujer_agresiva_cuatro_tacticas` | `L301` a `L313` | **PROCEDIMIENTO, da nodo** | `L303` encuadra y **`L305`, `L309`, `L311` y `L313` son CUATRO tacticas rotuladas** con actos nombrados: cambiar el genero, describir ejemplos concretos, fijarse en las palabras, dar sugerencias concretas |
+| **`P23`** `responder_critica_abrasiva_cuatro_reglas` | `L315` a `L329` | **PROCEDIMIENTO, da nodo** | `L317` dice literalmente *the following four rules of thumb* y detras hay **CINCO** rotulos. **La serie es de cuatro (`L319`, `L321`, `L323`, `L325`) y `L327` es coda**: adjudicado en mi `ACTA 19`, y **mi relectura de hoy lo sostiene**, porque `L319` a `L325` mandan sobre la conducta propia de quien recibe la critica y `L327` manda sobre como tratar a quien la dio |
+| **`P24`** `entregar_evaluacion_formal_desempenio_nueve_consejos` | `L331` a `L361` | **PROCEDIMIENTO, da nodo** | `L339` anuncia *here is my advice for delivering a performance review well*, y detras hay **NUEVE** rotulos contados sobre la pagina: `L341`, `L343`, `L345`, `L347`, `L353`, `L355`, `L357`, `L359`, `L361`. **`L349` y `L351` son cuerpo de `L347`, no rotulo nuevo** |
+| **`P27`** `conducir_reuniones_salto_nivel_diez_reglas` | `L383` a `L413` | **PROCEDIMIENTO, da nodo. La pieza mas procedimental del capitulo** | `L391` anuncia *a few rules of thumb I learned for conducting them*, y detras hay **DIEZ** rotulos: `L393`, `L395`, `L397`, `L401`, `L403`, `L405`, `L407`, `L409`, `L411`, `L413`. **`L399` empieza por *More importantly* y es cuerpo de `L397`, no rotulo** |
+| **`P28`** `resolver_dudas_frecuentes_reuniones_salto_nivel` | `L415` a `L425` | **PROCEDIMIENTO, da nodo, y CUELGA de `P27`** | **CUATRO** preguntas con su respuesta en `L419`, `L421`, `L423` y `L425`, y las respuestas traen actos, no adjetivos de adecuacion. **`L417` dice *some of the questions* sin dar cuenta**, asi que el `cuatro` que publico **cuenta rotulos de la pagina y no una cifra del libro**, y lo digo porque la diferencia es justo lo que `D.37` vigila |
+
+**MI CUENTA DE PUENTES, cotejando los 95 pasos contra sus lineas: `0` de `95`.** Ninguno de los
+95 añade un acto que su parrafo no diga. **Tasa de puente de las cinco piezas: `0,00` sobre un
+denominador de `95` pasos**, y **`95` es la suma de `12 + 14 + 22 + 31 + 16`** que el instrumento
+de `2.1` imprime.
+
+**LOS DOS SITIOS DONDE ESTUVE A PUNTO DE MARCAR PUENTE Y NO LO MARQUE**, dichos porque un `0` sin
+sus casos limite no es una lectura:
+
+- **`P22` paso 10** convierte en mandato al lector (*cuestiona en voz alta el uso de palabras como
+  abrasiva*) lo que `L311` cuenta **de un tercero**: *One of the things I appreciated about working
+  with Dick Costolo was that he challenged the use of words like "abrasive."* **El acto SI esta en
+  el libro; lo que cambia es el sujeto.** `D.30` caza el paso que el libro no dice, no el paso que
+  el libro dice de otro. **TRANSCRIPCION, con la redireccion de sujeto declarada.** Lo mismo pasa,
+  y por eso no lo cuento tres veces, en **`P24` paso 5** (el jefe del visto mas y visto menos) y en
+  **`P28` pasos 1 y 2** (*ponte a excavar*, que el libro cuenta en pasado y en primera persona).
+- **`P28` paso 16** es el unico donde el candidato **declara su propia correccion dentro del acto
+  de escribir**: decia *las dos maneras* y el libro dice *a world of difference between saying X
+  and saying Y* **sin dar cuenta**. **La comprobe contra `L425` y la correccion es cierta**: el
+  paso final no lleva cuenta.
+
+### 2.3. LO QUE MI LECTURA SI ECHA EN FALTA, y es mi discutible numero 1
+
+**`P22` tiene `atribuciones: 0`**, y su tramo contiene un experimento con resultado:
+
+    $ sed -n '307p' fuentes/scott_radical_candor/cap_09.md
+    Two improv actors I know who do role plays to help people practice giving good guidance at some
+    major Silicon Valley companies did the following experiment: they both used the word "fucking"
+    when talking to their "boss" in the role play. Participants, male and female, reacted with
+    extreme offense when the female actor used the word, but didn't blink when the male actor did.
+
+**`L307` no esta ni en un paso ni en una atribucion: se cae entero del candidato.** No es puente
+(nadie invento nada) ni error de clase (ningun veredicto se movio), **pero es la unica evidencia
+empirica que el libro da de la tactica `cambia el genero`, y el nodo se queda sin ella.**
+
+Las otras cuatro piezas si llevan la suya, y las abri una a una: **`P23`** el caso Heidi/Howard
+Roizen, **`P24`** la abolicion en General Electric, **`P27`** dos (Roxane Wales, y las siete u ocho
+horas al anio con cinco personas a cargo), **`P28`** las tres veces en anios de reuniones.
+**`4` de `5` con atribucion y `1` sin ella.**
+
+**LO DEJO PLANTEADO Y NO LO ADJUDICO AQUI**, porque adjudicar es del turno normal y con su reporte
+delante.
+
+### 2.4. Una omision menor, dicha para que no la encuentre nadie despues
+
+**`P24` no recoge la ultima frase de `L361`**: *Many companies separate "development conversations"
+from "rating conversations" by a quarter or more. This is fine, as long as the "development
+conversations" don't substitute for regular impromptu guidance, which should be happening on a
+weekly cadence.* Es una condicion con cadencia nombrada. **Una omision no es puente y no entra en
+`PASOS INVENTADOS`**, que mide lo inventado y no lo dejado fuera. La digo y no la convierto en
+caida.
+
+---
+
+## 3. MI FRONTERA CIEGA DE `cap_10`, CORTADA POR MI ANTES DE VER LA SUYA
+
+*Mi TAREA 3 le mandaba cortar y publicar la frontera de `cap_10` **antes** de extraer. La corto yo
+tambien, a ciegas, para que las dos lecturas se puedan cruzar linea a linea en mi turno normal.*
+
+### 3.1. El cuerpo, medido aparte y antes de la tabla
+
+    $ sed -n '4,5p' fuentes/scott_radical_candor/cap_10.md
+    unidad: Cap. 7
+    titulo_textual: Team
+    $ wc -l fuentes/scott_radical_candor/cap_10.md
+    263 fuentes/scott_radical_candor/cap_10.md
+    $ sed -n '8,$p' fuentes/scott_radical_candor/cap_10.md | wc -w
+    8976
+
+### 3.2. La tabla, y se cierra contra el cuerpo o no se publica (`ACTA 18` `7.5` orden 1)
+
+    $ python .frontera_auditor_v21.py
+    cl  tramo         palabras  rotulo leido en la linea de cabecera
+    NO  L9    a L13       187  subtitulo del capitulo y apertura, remite al Cap. 3
+    NO  L15   a L21       200  CAREER CONVERSATIONS: rotulo, subtitulo y encuadre
+    NO  L23   a L45      1254  el caso de Russ Laraway: Todd, Sarah, el off site y la encuesta
+    SI  L47   a L59       780  Conversation one: life story
+    SI  L61   a L75       737  The second conversation: dreams
+    SI  L77   a L87       345  Conversation three: eighteen-month plan
+    NO  L89   a L91       101  cierre de seccion tras el asterisco
+    SI  L93   a L125     1095  GROWTH MANAGEMENT: el plan anual y sus CUATRO pasos rotulados
+    NO  L127  a L135      191  HIRING: rotulo, mentalidad rock star/superstar y encuadre
+    SI  L137  a L163     1310  el proceso de contratacion: CINCO piezas rotuladas
+    NO  L165  a L171      196  FIRING: rotulo, subtitulo y encuadre de las dos empresas
+    SI  L173  a L201     1176  despedir: las TRES cosas que el texto anuncia, mas Follow up de coda
+    NO  L203  a L213      318  PROMOTIONS: rotulo, subtitulo y el caso de los comites de Google
+    SI  L215  a L223      320  la reunion de calibracion de ascensos: CUATRO consejos rotulados
+    SI  L225  a L251      568  REWARD YOUR ROCK STARS: CUATRO vias de recompensa sin ascenso
+    NO  L253  a L255       63  AVOID ABSENTEE MANAGEMENT: remite a una tabla, sin procedimiento propio
+    NO  L257  a L259      133  SUMMARY
+    NO  L261  a L263        2  marcador del capitulo siguiente (8. RESULTS)
+
+    PIEZAS QUE MI LECTURA CIEGA CUENTA EN cap_10: 18
+      SI (yo escribiria nodo): 8
+      NO (yo no extraeria)   : 10
+
+    lineas con contenido de L8 en adelante NO cubiertas : 0 []
+    lineas cubiertas por DOS piezas o mas (solapes)     : 0 []
+
+    suma de palabras de mis 18 filas : 8976
+    cuerpo de cap_10 medido aparte   : 8976
+    CUADRA
+
+**MI FRONTERA CIEGA DE `cap_10`: 18 piezas, 8 dan nodo y 10 no, con `0` lineas sin cubrir de las
+`263` del fichero, `0` solapes, y `8976` palabras de suma contra `8976` de cuerpo medido aparte.**
+
+**Mi encargo proyectaba `10,3` candidatos** a la densidad de `cap_09` (`17.482` palabras entre sus
+`20` piezas con nodo dan `874` por candidato; `8976 / 874 = 10,3`). **Mi lectura de hoy corta mas
+grueso: `8` candidatos, o `1.122` palabras por candidato sobre `8976`.** La diferencia no corrige
+aquella proyeccion: **es que `cap_10` gasta mas pagina en casos.** El caso de Russ Laraway solo son
+`1.254` de las `8.976` palabras del cuerpo, el **`14,0` por ciento**, y yo no lo extraigo.
+
+### 3.3. Las tres decisiones de mi corte que mas se pueden discutir, dichas antes y no despues
+
+1. **`L93` a `L125` como UN nodo y no como cuatro.** `L99` declara un entregable unico (*Once a
+   year, you need to put together a growth-management plan for each person*) y los cuatro rotulos
+   (`L101`, `L107`, `L115`, `L121`) son **sus pasos**, no cuatro procedimientos. Si el extractor lo
+   parte en cuatro, la discrepancia es de granularidad y **la decide el entregable, no el tamaño**.
+2. **`L173` a `L201` en un solo nodo, y con la trampa de la cuenta dentro.** **`L173` anuncia
+   *three things* y detras hay CUATRO rotulos**: `L175` *Don't wait too long*, `L181` *Don't make
+   the decision unilaterally*, `L189` *Give a damn*, `L197` *Follow up*. **Es la misma trampa que
+   `L317` de `cap_09`**, donde el libro decia cuatro y habia cinco. **Mi lectura: las tres son
+   `L175`, `L181` y `L189`, porque son lo que se hace para que despedir sea mas facil, y `L197` es
+   coda porque ocurre despues del despido.** Es **extension natural** de la adjudicacion que mi
+   `ACTA 19` ya hizo sobre `L317`, y la cito en vez de abrir doctrina nueva (`AUDITOR_FORJA.md`
+   1.3).
+3. **`L23` a `L45` fuera.** El caso de Russ Laraway con Todd y Sarah **lleva metodo narrado dentro**
+   (`L35` a `L41`), y aun asi lo dejo fuera porque ese metodo **vuelve proceduralizado** en las tres
+   conversaciones de `L47`, `L61` y `L77`. **Si el extractor lo extrae, no le llamo puente: le
+   llamo solape**, y lo mido contra las tres.
+
+### 3.4. **EL RIESGO DE FRONTERA DE `cap_10`, Y ES EL HALLAZGO DE ESTA APERTURA**
+
+`cap_10` es `Cap. 7`, `Team`. **El propio libro declara la continuidad en su primera linea de
+cuerpo**, y por eso esto no se adjudica citando una señal (`D.19`) sino leyendo:
+
+    $ sed -n '11p' fuentes/scott_radical_candor/cap_10.md
+    CHAPTER THREE ("UNDERSTAND WHAT MOTIVATES Each Person on Your Team") discussed the importance
+    of getting to know each person who reports to you well enough that you can put the right
+    people in the right roles, avoiding both boredom and burn-out.
+
+    $ sed -n '4,5p' fuentes/scott_radical_candor/cap_06.md
+    unidad: Cap. 3
+    titulo_textual: Understand What Motivates Each Person on Your Team
+
+**`Cap. 3` es `cap_06`, y `cap_06` ya tiene `10` candidatos y `117` pasos en la bandeja** (censo
+`1.2`). **Cinco de mis ocho piezas de `cap_10` caen encima de uno suyo.** Los empareje **leyendo
+titulos y pasos**, no seniales:
+
+| mi pieza de `cap_10` | el candidato de `cap_06` que ya esta en la bandeja | mi lectura con la vara de `6.1` |
+|---|---|---|
+| `L47` a `L87`, las tres conversaciones de carrera | `descubrir_motivacion_sentido_persona` | **CONTINUA.** La madre dice **de donde** sale el sentido; la hija da **el guion de las tres conversaciones** con su duracion y sus preguntas. Procedimiento propio en los dos lados |
+| `L93` a `L125`, el plan de crecimiento anual | `retirar_etiquetas_permanentes_equipo` y `cambiar_potencial_trayectoria_crecimiento` | **CONTINUA.** `L101` dice *Put names in boxes (**temporarily!**)*, y ese *temporarily* **es la doctrina de la madre citada por la hija**; lo que la hija añade es la cadencia anual, el contraste externo y el plan de tres a cinco puntos |
+| `L173` a `L201`, despedir | `decidir_momento_despedir_persona` y `despedir_persona_franqueza_radical` | **CONTINUA.** La madre resuelve **cuando** y **con que trato**; la hija resuelve **el procedimiento**: no esperar, no decidir solo, documentar con quien sepa, y el seguimiento al mes |
+| **`L225` a `L251`, recompensar a las estrellas de rock** | **`reconocer_recompensar_gente_estable`** | **EL PAR MAS CERRADO DEL CAPITULO, Y AUN ASI `CONTINUA`.** Ver el bloque de abajo |
+| `L137` a `L163` contratar, y `L215` a `L223` la calibracion de ascensos | **ninguno** | **Sin madre en la bandeja.** Son lo genuinamente nuevo de `cap_10` |
+
+> #### **EL PAR QUE HAY QUE MIRAR CON LUPA, Y LO DIGO ANTES DE QUE SE ESCRIBA**
+>
+> `reconocer_recompensar_gente_estable` (`cap_06`, **12 pasos**, leidos hoy uno a uno) se titula
+> literalmente *por vias que no sean la promocion*, **que es el asunto entero de mi pieza `L225` a
+> `L251`.** Y el solape no es de tema, es de acto:
+>
+> | acto | donde esta en la madre | donde esta en la hija |
+> |---|---|---|
+> | nombrar experto de referencia y ponerlo a enseñar | pasos `7` a `10` | `L247`, *Gurus* |
+> | tratar ese papel como honor y no obligacion, y buscar otra via si odia enseñar | paso `9` | `L247` |
+> | dar tribuna publica a quien hace trabajo poco visible | paso `2` | `L251`, *Public presentations* |
+> | dar las gracias en privado a los timidos | paso `2` | `L243`, *Say thank-you* |
+>
+> **CON LA VARA, Y CON DIRECCION: que añade la HIJA a la MADRE.** Queda fuera del solape, y es
+> procedimiento: **darle al guru un par de meses para preparar una clase** (`L247`); **no mandar el
+> correo de anuncio de ascensos** (`L231`); **anunciar el cambio de papel pero no el ascenso**
+> (`L235`); **elogiar en publico la cosa que quieres que se repita, y no el ascenso** (`L237`); **y
+> dar las gracias por escrito ademas de en persona, y a menudo las dos** (`L243`). Y queda fuera
+> por el lado de la madre, tambien procedimiento: **el racionamiento de puntuaciones altas** (pasos
+> `5` y `6`), **los premios de antiguedad** (paso `3`) y **las dos formas de promocion mala** (paso
+> `12`).
+>
+> **`NOMBRAR NO ES PROCEDIMENTAR` no la salva ni la hunde: hay procedimiento propio en los dos
+> lados, y por eso mi lectura ciega es `CONTINUA` con arista declarada, no `REPITE`.** Pero es
+> **el par mas cerrado que he visto en el lote 4**, y **la aduana no lo va a levantar sola**,
+> porque los dos extremos viven en la bandeja y `paso_contra_nodo` compara contra el grafo. Es
+> exactamente la averia que costo el par de la vuelta 19.
+>
+> **`EXTRACTOR.md` 12 lo cubre por su letra**: *un capitulo entero en la misma familia no es
+> duplicado, es un libro que trata un tema*. **No pido doctrina nueva y esto no es parada.**
+
+---
+
+## 4. EL BARRIDO DE VECINOS `D.38.4`, SOBRE GRAFO MAS BANDEJAS
+
+*Uno por vez, con el resto de la poblacion como contrario (`leave one out`), usando
+`src.aduana.buscar_vecinos`, que es el instrumento de la casa. **Cero escrituras.***
+
+    $ python -u .barrido_auditor_v21.py cuarentena/scott_radical_candor
+    POBLACION DEL BARRIDO (D.38.4)
+      grafo dataset/nodos.jsonl : 203
+      bandejas cuarentena/*/    : 246
+      TOTAL                     : 449
+      umbrales: sim 0.35 | fam 0.3 | paso 0.6
+
+    candidatos de la vuelta 21 (las cinco de cap_09) a barrer: 5
+    ### conducir_reuniones_salto_nivel_diez_reglas.json   (contra 448)
+        vecino resolver_dudas_frecuentes_reuniones_salto_nivel  [levantada por: familia_id]
+          similitud_texto 0.207 | familia_id 0.333 | paso_contra_nodo 0.471
+          paso 19 del candidato contra paso 12 de resolver_dudas_frecuentes_reuniones_salto_nivel
+
+    ### entregar_evaluacion_formal_desempenio_nueve_consejos.json   (contra 448)
+        SIN VECINOS: ninguna senial levanta nada
+
+    ### resolver_dudas_frecuentes_reuniones_salto_nivel.json   (contra 448)
+        vecino conducir_reuniones_salto_nivel_diez_reglas  [levantada por: familia_id]
+          similitud_texto 0.221 | familia_id 0.333 | paso_contra_nodo 0.479
+          paso 12 del candidato contra paso 19 de conducir_reuniones_salto_nivel_diez_reglas
+
+    ### responder_critica_abrasiva_cuatro_reglas.json   (contra 448)
+        SIN VECINOS: ninguna senial levanta nada
+
+    ### revisar_critica_mujer_agresiva_cuatro_tacticas.json   (contra 448)
+        vecino comprobar_criticas_hombre_mujeres_equipo  [levantada por: similitud_texto]
+          similitud_texto 0.381 | familia_id 0.222 | paso_contra_nodo 0.43
+          paso 2 del candidato contra paso 6 de comprobar_criticas_hombre_mujeres_equipo
+
+### 4.1. La cuenta, con su denominador
+
+**`5` candidatos barridos, cada uno contra `448`. `3` de los `5` levantan vecino y `2` no levantan
+ninguno. Se levantan `3` vecindades en total, que son `2` pares distintos.**
+
+> ### **Y LA CIFRA QUE JUSTIFICA `D.38.4` ENTERA: `3` DE `3` VECINOS ESTAN EN LA BANDEJA Y `0` EN EL GRAFO.**
+>
+> No es casualidad ni suerte del muestreo: **el grafo tiene `0` nodos de `scott_radical_candor`
+> sobre `203`** (`7.3`), asi que **ningun vecino de un candidato de este lote puede estar en el
+> grafo hoy.** Un barrido contra el grafo solo habria devuelto **cero de cero**, y habria parecido
+> limpio. **Es la segunda vuelta seguida que el barrido de bandeja es el unico que encuentra algo.**
+
+### 4.2. Par 1, `P27` contra `P28`: la arista que el propio candidato ya declara
+
+**Reciproco y por `familia_id 0.333`**, no por los pasos (`paso_contra_nodo 0.471` y `0.479`, los
+dos por debajo del umbral `0.6`). **`P28` cuelga de `P27`**, mi encargo lo exigia en la misma
+vuelta y el `resumen_teorico` de `P28` lo declara como cola `D.29`. **El barrido confirma lo que el
+candidato ya decia: no hay hallazgo nuevo aqui, y eso tambien se publica.**
+
+### 4.3. Par 2, `P22` contra `P20`: **mi lectura ciega es `SANO`, y digo por que**
+
+`comprobar_criticas_hombre_mujeres_equipo` es la pieza `P20`, `L291` a `L293`, `6` pasos. Los abri
+los dos y los lei antes de decidir. **Solo lo levanta `similitud_texto 0.381`; `paso_contra_nodo`
+da `0.43` y no llega al `0.6`.** Y `D.19` manda no adjudicar citando una señal, asi que leo:
+
+| | `P20`, `L291` a `L293` | `P22`, `L301` a `L313` |
+|---|---|---|
+| **disparador** | eres un hombre y **te preocupa contenerte** al criticar a una mujer | estas a punto de decirle a una mujer que **es demasiado agresiva** |
+| **entregable** | saber, **dicho por ella**, como esta cayendo tu guia | la critica dada **sin haber caido en la trampa de competencia contra simpatia**, o retirada |
+| **actos** | preguntarselo, explicarle el marco, decir la frase, pedirle que te mida | cambiar el genero, describir ejemplos concretos, vigilar las palabras, dar sugerencias concretas |
+
+**El error que `P20` caza es dar de MENOS; el que `P22` caza es dar lo EQUIVOCADO.** No comparten
+ni un acto. **Lo que comparten es vocabulario** (mujer, critica, genero, equipo), que es justo lo
+que `similitud_texto` mide. **Son hermanas bajo el mismo encuadre de `L289`** (*I have a few
+thoughts on how individuals can take action to cool things down*), **no madre e hija**, asi que
+tampoco pido arista: `D.29` y `D.37` piden la arista cuando una cuelga de otra, y aqui ninguna
+cuelga.
+
+**MI VEREDICTO CIEGO: `SANO`. Vecindad de vocabulario, no de acto.** Si su reporte lo marco como
+discutible, coincidimos en donde mirar; si lo marco como par, ahi hay discrepancia y va a
+relectura conjunta con esta tabla delante.
+
+---
+
+## 5. MIS DISCUTIBLES DE ESTA APERTURA, NUMERADOS Y SIN ADJUDICAR
+
+*Los marco YO y ANTES de ver su reporte, que es lo unico que hace informativa la comparacion
+(`AUDITOR_FORJA.md` 5.1). **Marcar no es adjudicar**: adjudicar es del turno normal.*
+
+| # | discutible | mi lectura de hoy |
+|---:|---|---|
+| **1** | **`P22` sale con `atribuciones: 0` y `L307` se cae entero**: el experimento de los dos actores de improvisacion no esta ni en paso ni en atribucion | **Perdida de evidencia, no puente.** Es la unica prueba empirica que el libro da de *cambia el genero* |
+| **2** | **La redireccion de sujeto**: `P22` paso 10, `P24` paso 5 y `P28` pasos 1 y 2 convierten en mandato al lector un acto que el libro cuenta **de un tercero o en pasado** | **TRANSCRIPCION**, porque el acto esta en el libro. **Pero la especie merece nombre**, y la traigo al turno normal para que se nombre una vez y no se discuta cinco |
+| **3** | **`P24` deja fuera la ultima frase de `L361`**, la cadencia semanal de la guia improvisada | **Omision, no puente.** No entra en `PASOS INVENTADOS` |
+| **4** | **`P28` se titula *las cuatro dudas mas frecuentes* y `L417` dice *some of the questions*** | **Se sostiene**, porque el `cuatro` cuenta rotulos impresos y no repite una cuenta del libro. **Pero el propio candidato argumenta en su `resumen_teorico` que la cuenta *no esta escrita***, y luego la usa en el titulo |
+| **5** | **`cap_10` `L173` anuncia *three things* y trae CUATRO rotulos** | **Las tres son `L175`, `L181` y `L189`; `L197` es coda.** Extension natural de la adjudicacion de `L317`, citada y no inventada |
+| **6** | **`L225` a `L251` de `cap_10` contra `reconocer_recompensar_gente_estable` de `cap_06`** | **`CONTINUA` con arista, no `REPITE`**, y es **el par mas cerrado del lote 4**. Bloque de `3.4` |
+| **7** | **Granularidad de `L93` a `L125`**: un nodo o cuatro | **Uno**, porque `L99` declara un entregable unico |
+| **8** | **`P22` contra `P20`**, que **mi barrido si levanto** por `similitud_texto 0.381` | **`SANO`, y ya adjudicado por mi en `4.3` con los dos leidos delante.** Lo dejo en esta lista para que se vea que **lo mire**, no para reabrirlo |
+
+---
+
+## 6. `HEREDADO 1` CUMPLIDO: MIS REMEDIOS, UNO A UNO, TAMBIEN LOS QUE AGUANTAN
+
+*Esto **es** el heredado. `ACTA 19` `7.5`: `REMEDIO ROTO` solo informa si el remedio tambien se
+declara cuando aguanta. **Ninguna fila queda en blanco, y el `NO APLICA` lleva su motivo detras.***
+
+| remedio mio | comprobacion EN ESTA FASE | resultado |
+|---|---|---|
+| **`D.40`**, leer `ACTA_AUDITOR.md` en la fase ciega antes de escribir | seccion `0.1`: huella `2d794fc9...` **remedida por mi con `git hash-object`**, igual a la que el prompt entrega, y `18132` lineas con `wc -l`. Lei ademas `PROMPT_SIGUIENTE.md` entero | **CUMPLIDO** |
+| **`D.38.4`**, barrido sobre grafo **mas** bandejas | secciones `1.3` y `4`: **`449 = 203 + 246`**, uno por vez contra `448`, con su `wc -l` pegado | **CUMPLIDO** |
+| **`D.38.3`**, toda cifra de la fase ciega con su instrumento al lado | **todas las de este fichero**, y las derivadas (`874`, `10,27`, `1.122`, `14,0`) con su division escrita | **CUMPLIDO** |
+| **`ACTA 19` `7.4` ORDEN A**, la fila de residuo es cero o trae nombres | `1.2`: **`SIN` no existe, residuo `0` sobre `83`**, y los `39` deducidos salen con nombre | **CUMPLIDO** |
+| **`ACTA 19` `7.4` ORDEN B**, el rotulo se escribe despues del instrumento | `1.1`: **cace la fila falsa antes de publicarla**, y probe ademas el extremo contrario para saber que los dos mienten | **CUMPLIDO, Y ES EL QUE EVITO LA CAIDA DE HOY** |
+| **`ACTA 18` `7.5` orden 1**, la frontera se cierra contra el cuerpo o no se publica | `3.2`: **`0` lineas sin cubrir, `0` solapes, `8976` igual a `8976`** | **CUMPLIDO** |
+| **`ACTA 18` `7.5` orden 2**, el denominador en la misma frase | toda cifra de este fichero lleva el suyo | **CUMPLIDO** |
+| **`ACTA 18` `7.5` orden 3**, el barrido de guiones dos veces | **primera AQUI y antes del sello**, pegada en `7.1`; la segunda al cerrar el turno | **PRIMERA CUMPLIDA. La segunda no la declaro cumplida por adelantado** |
+| **`D.34`**, no recuperar de git los cuatro ficheros retirados | **no corri `git log`, `git show` ni `git checkout` sobre ninguno.** La contaminacion que si hubo **la trajo el prompt** y la declaro entera en `0.bis` | **CUMPLIDO, con la contaminacion ajena declarada al lado** |
+| **`D.34`**, no tocar `APERTURA_CIEGA.md` tras el sello | **el sello todavia no existe cuando escribo esto** | **NO SE PUEDE DECLARAR AQUI, Y NO LO DECLARO.** Se comprueba al cerrar mi turno contra `SELLOS_APERTURA.jsonl`, y ahi va |
+| **`5.5`**, re correr por mutacion toda guarda declarada mordiendo | **NO APLICA EN ESTA FASE, y este es el motivo:** la guarda que se re corre es **la que el reporte declara mordiendo**, y `docs/loop/REPORTE.md` **no esta en el arbol** por `D.34.2`. Sin reporte no hay guarda declarada, y mutar una guarda al azar no comprueba nada | **NO APLICA, con motivo. Se cumple en mi turno normal** |
+
+---
+
+## 7. LO QUE CIERRA ESTA FASE
+
+### 7.1. El barrido de guiones, primera de las dos (`ACTA 18` `7.5` orden 3)
+
+    $ python forja.py guiones docs/loop/APERTURA_CIEGA.md
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+### 7.2. Donde esta el lote 4, medido y no recordado
+
+    $ for c in 00 .. 14; do sed -n '8,$p' fuentes/scott_radical_candor/cap_$c.md | wc -w; done
+      (salida entera en .cuerpos_lote4_v21.txt)
+    $ awk '{s+=$2} END {print s}' .cuerpos_lote4_v21.txt
+    108161
+    $ awk '$1<="cap_09" {s+=$2} END {print s}' .cuerpos_lote4_v21.txt
+    71505
+    $ awk '$1>="cap_10" {s+=$2} END {print s}' .cuerpos_lote4_v21.txt
+    36656
+
+**`cap_00` a `cap_09` cerrados suman `71.505` palabras de las `108.161` del libro entero, el
+`66,1` por ciento; quedan `36.656`, el `33,9` por ciento, repartidas en `cap_10` a `cap_14`.**
+**El `71.505` reproduce al digito el denominador que mi `ACTA 19` `6.2` firmo**, medido hoy otra
+vez y desde el arbol.
+
+### 7.3. Y una cosa que mide el codigo y no yo, porque sostiene el hallazgo de `3.4`
+
+    $ grep -n "nodos = comun.leer_jsonl" src/informe.py
+    113:    nodos = comun.leer_jsonl(ruta_dataset)
+
+**`revisar()` carga la poblacion UNA vez desde `dataset/nodos.jsonl` y no la extiende con los
+candidatos del lote**: `ids_del_lote` solo vigila choques de id, no vecindad. **Y el grafo tiene
+`0` nodos de `scott_radical_candor` sobre `203`** (los `203` son `136` de `zhuo_manager`, `59` de
+`smart_who`, `6` de `onu_consumidor` y `2` del manual). **Por eso ningun par de la bandeja contra
+la bandeja lo levanta su aduana**, y por eso `D.38.4` manda que el mio barra las dos poblaciones.
+
+### 7.4. Lo que NO he mirado, dicho para que se pueda comprobar
+
+`docs/loop/REPORTE.md`, `loop.log`, `ultimo_extractor.json` y `ultimo_auditor.json` **no estan en
+el arbol y no los busque**. `.aduana_v20/`, `.barrido_v20/` y `.t1_v20/` **si estan y no los abri**:
+son la lectura del extractor de esta misma vuelta, y esta fase existe para que yo escriba la mia
+antes de verla.
+
+**Esta apertura queda cerrada. No la vuelvo a tocar: el arnes la sella y el sello se verifica al
+terminar mi turno.**

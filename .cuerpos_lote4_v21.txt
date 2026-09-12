@@ -1,0 +1,15 @@
+cap_00 218  unidad: Copyright Page
+cap_01 2846  unidad: Preface
+cap_02 3908  unidad: Introduction
+cap_03 627  unidad: How to Use This Book
+cap_04 6263  unidad: Cap. 1
+cap_05 8756  unidad: Cap. 2
+cap_06 11587  unidad: Cap. 3
+cap_07 13678  unidad: Cap. 4
+cap_08 6140  unidad: Cap. 5
+cap_09 17482  unidad: Cap. 6
+cap_10 8976  unidad: Cap. 7
+cap_11 8626  unidad: Cap. 8
+cap_12 2118  unidad: Getting Started
+cap_13 9298  unidad: Afterword
+cap_14 7638  unidad: Bonus Chapter
