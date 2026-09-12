@@ -19241,3 +19241,197 @@ ese mismo fichero.
     $ python forja.py gate      ->  GATE VERDE. nodos verificados: 203
 
 > ## **TAREA 1 CERRADA.** Seis adjudicaciones recogidas sin reabrir, dos correcciones del auditor contra si mismo recogidas, y `ORDEN_DE_LOTES.md` con sus cuatro puntos corregidos por correccion declarada, **las cuatro remedidas por mi antes de escribirlas y la unica que no se puede medir declarada como lectura de registro.**
+
+
+---
+
+# K.3. TAREA 2: LA PUERTA DE ENTRADA QUE FALTABA, Y LAS DOS COLAS QUE NO SE PUEDEN ESCRIBIR. **CERRADA**
+
+## K.3.a. LOS DOS NODOS LEIDOS ENTEROS ANTES DE DECIDIR, Y LA LINEA DEL LIBRO QUE DECIDE
+
+**LA MADRE, SU PASO 7, IMPRESO DEL GRAFO Y NO TECLEADO:**
+
+    $ python -c "pasos de fijar_proceso_trabajo_equipo"
+    P7: Aprende a dominar los procesos que el libro nombra como importantes para un
+        directivo: dirigir reuniones eficaces, blindarte contra los errores del pasado,
+        planificar el maniana y cultivar una cultura sana.
+
+    $ sed -n '147p' fuentes/zhuo_manager/cap_02.md      (unidad: Cap. 1, What Is Management?)
+    In a team setting, it is impossible for a group of people to coordinate what needs to
+    get done without spending time on it. ... For managers, important processes to master
+    include running effective meetings, future proofing against past mistakes, planning
+    for tomorrow, and nurturing a healthy culture.
+
+**EL HIJO PROPUESTO, LEIDO ENTERO:** `fijar_resultado_excelente_reunion`, **10 pasos**,
+fuente `zhuo_manager` (`cap_07.md`, unidad `Cap. 6`, `Amazing Meetings`), **cinco hijos
+colgando y ninguna madre**:
+
+    $ python -c "prev y sig de fijar_resultado_excelente_reunion"
+    prev: []
+    sig : ['dirigir_reunion_decision', 'dirigir_reunion_informativa',
+           'dirigir_reunion_revision_trabajo', 'dirigir_reunion_generar_ideas',
+           'dirigir_reunion_reforzar_relaciones']
+
+**Y LA LINEA QUE DECIDE, QUE NO ES MIA SINO DEL LIBRO** (`D.35`, la salida pegada):
+
+    $ sed -n '51p' fuentes/zhuo_manager/cap_07.md
+    There are only a handful of reasons for people to get together in person, so being
+    crystal clear about the outcome you are shooting for is the first step to running
+    great meetings.
+
+**La cita va con `you are` donde el fichero pone el apostrofo tipografico, y lo digo:** el
+barrido de esta casa no lo prohibe, pero ese caracter no sobrevive igual en todas las
+sedes y **prefiero declarar la sustitucion a que parezca transcripcion exacta.** La linea
+literal se lee con el `sed` de arriba.
+
+> ## **MI LECTURA LA SOSTIENE, Y LA SOSTIENE MAS FUERTE QUE LA DE CULTURA.** En el caso de cultura fue `cap_11.md` L79 (*el paso SIGUIENTE es el plan de juego*) lo que dejo ver que el ejercicio era la puerta. **Aqui el libro no dice cual es el paso siguiente: dice cual es EL PRIMERO**, con las palabras *the first step to running great meetings*, y el nodo que ejecuta esa frase es exactamente este.
+>
+> **Y HAY UNA SEGUNDA PRUEBA QUE NO ES DE LECTURA SINO DE FORMA:** de los **16 ids de
+> reunion** que viven en el grafo, **9 no tienen madre**, y **solo uno de los 16 tiene
+> cinco hijos.** Un nodo que ya se comporta como cabeza de su trabajo y no cuelga de
+> nada es la definicion practica de puerta huerfana.
+
+## K.3.b. LA ARISTA ESCRITA, CON LA SALIDA DEL COMANDO PEGADA (`D.37` y `D.35`)
+
+    $ python forja.py arista --madre fijar_proceso_trabajo_equipo \
+        --hijo fijar_resultado_excelente_reunion --paso 7 --razon "..."
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: fijar_proceso_trabajo_equipo
+      hijo : fijar_resultado_excelente_reunion
+      paso citado de la madre: 7
+        Aprende a dominar los procesos que el libro nombra como importantes para un
+        directivo: dirigir reuniones eficaces, blindarte contra los errores del pa
+      señales del par: familia_id 0.143, paso_contra_nodo 0.432, similitud_texto 0.259
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA:
+      fijar_proceso_trabajo_equipo > fijar_resultado_excelente_reunion
+      razon en bitacora/VEREDICTOS.jsonl
+
+**`D.19` MEDIDA POR DECIMOQUINTA VEZ SEGUIDA SIN UNA EXCEPCION:** las tres señales de
+este par estan **las tres por debajo de su umbral** (0,259 contra 0,35; 0,143 contra
+0,30; 0,432 contra 0,60). **Esta arista no la levanta ninguna señal, y el auditor la vio
+leyendo, no midiendo.** La salida entera esta en `.arista_reuniones_vuelta16.txt`, en el
+arbol.
+
+**EL ESTADO DESPUES, REMEDIDO:**
+
+    $ wc -l dataset/nodos.jsonl              ->  203   (sin cambio: una arista no crea nodos)
+    $ wc -l bitacora/VEREDICTOS.jsonl        ->  148   (147 mas 1)
+    $ python -c "suma de nodos_siguientes"   ->   79   (78 mas 1)
+    $ python -c "sig de fijar_proceso_trabajo_equipo"
+      ['definir_quien_responde_cada_cosa', 'contrastar_cultura_actual_aspirada',
+       'fijar_resultado_excelente_reunion']
+    $ python forja.py gate   ->  GATE VERDE. nodos verificados: 203
+
+## K.3.c. LOS OTROS DOS PROCESOS DEL PASO 7: **LA MEDIDA, Y SALE EN NEGATIVO**
+
+*El auditor no la corrio y por eso no afirmo nada de ellos (`ACTA 15` 2.7, manual
+principio 7). **La corro yo y publico lo que da, que no es lo que esperaba.***
+
+**LA MEDIDA ES DE UNA SOLA LINEA Y LO EXPLICA TODO:**
+
+    $ cd fuentes/zhuo_manager && grep -ril "<frase>" *.md     (sobre los 12 ficheros)
+    running effective meetings                 cap_02.md
+    future proofing against past mistakes      cap_02.md
+    planning for tomorrow                      cap_02.md
+    nurturing a healthy culture                cap_02.md
+    great meetings                             cap_07.md
+    Nurturing Culture                          cap_11.md
+
+> ### **LAS CUATRO FRASES APARECEN UNA SOLA VEZ EN LOS 12 FICHEROS DEL LIBRO, Y ES EN LA PROPIA LINEA `cap_02.md:147` QUE LAS ENUMERA. LO QUE DISTINGUE A DOS DE LAS CUATRO ES QUE EL LIBRO VUELVE A ELLAS EN OTRO SITIO CON UNA FRASE QUE ELIGE LA PUERTA; A LAS OTRAS DOS NO VUELVE NUNCA.**
+
+| el proceso que el paso 7 nombra | tiene cabeza declarada por el libro? | estado de la arista |
+|---|---|---|
+| **dirigir reuniones eficaces** | **SI.** `cap_07.md` L51: *the first step to running great meetings* | **CABLEADA HOY** (`K.3.b`) |
+| **cultivar una cultura sana** | **SI.** `cap_11.md` L79: *the next step is to develop a game plan*, mas el titulo de unidad `Nurturing Culture` | **cableada en la vuelta 15** |
+| **blindarte contra los errores del pasado** | **NO** | **NO SE ESCRIBE.** Razon abajo |
+| **planificar el maniana** | **NO** | **NO SE ESCRIBE.** Razon abajo |
+
+**Y NO ES QUE ESE MATERIAL FALTE EN EL GRAFO, QUE SERIA LA OTRA LECTURA POSIBLE. MIDO
+TAMBIEN ESO, PORQUE UN NEGATIVO SIN SU POSITIVO AL LADO ENGAÑA:**
+
+    $ python -c "nodos de fuente zhuo_manager cuyo id, titulo o activacion casa con
+                 retrospect|debrief|postmortem|repaso|manual|guion|practica|repetible"
+    hacer_repaso_posterior_proyecto   | Hacer el repaso posterior sin convertirlo en un juicio
+      activacion: Al completar un proyecto, de forma periodica, o en cuanto ocurre un
+                  evento inesperado o un error.        prev: []   sig: []
+    crear_manuales_jugadas_repetibles | Crear manuales de jugadas para lo que haces una y otra vez
+      activacion: Cuando te encuentras haciendo una cosa parecida una y otra vez ...
+                                                        prev: []   sig: []
+
+**LOS DOS SALEN DE LA MISMA SECCION DEL LIBRO** (`cap_09.md` L251, `GOOD PROCESS IS EVER
+EVOLVING`, la seccion donde el libro pone los repasos posteriores y los manuales de
+jugadas), **y los dos estan planos: sin madre y sin hijos.**
+
+> ### **POR QUE NO ESCRIBO NINGUNA DE LAS DOS, Y NO ES PRUDENCIA: ES LA MISMA REGLA QUE ME DEJO ESCRIBIR LA DE HOY**
+>
+> **Las dos aristas que SI existen las eligio el libro, no el lector.** En las dos hay una
+> frase que dice *primer paso* o *paso siguiente*, y sin esa frase yo estaria eligiendo
+> entre dos habitaciones cual es la puerta.
+>
+> **Para *blindarte contra los errores del pasado* hay DOS candidatos a la misma altura**
+> (el repaso posterior y los manuales de jugadas), **el libro los pone uno detras del
+> otro en la misma seccion y en ningun sitio dice que uno sea la entrada del otro.**
+> Elegir seria exactamente el **puente de ESTRUCTURA** que esta casa pago en la vuelta 15:
+> cada mitad es una cita buena y el emparejamiento lo pongo yo.
+>
+> **Para *planificar el maniana* el problema es anterior:** la frase no vuelve a aparecer
+> en el libro **y ninguna unidad se titula con ella**, asi que ni siquiera esta decidido
+> cual es el capitulo de ese trabajo. Las dos lecturas que se me ocurren (el `Cap. 8`,
+> `Making Things Happen`, con su `START WITH A CONCRETE VISION`, y el `Cap. 9`, `Leading a
+> Growing Team`, con su cuadro de riesgos de pensar demasiado a corto o a largo plazo)
+> **son mias y no del texto.**
+>
+> **LA MEDIDA QUE ESTO DEJA, Y LA DOY POR LA CIFRA MAS UTIL DE LA TAREA 2:** de los
+> **cuatro** trabajos que el paso 7 nombra, **dos tienen puerta porque el libro la nombra
+> y dos no la tienen en ningun sitio.** El paso 7 no es una serie de cuatro aristas que
+> alguien olvido cablear: **es una linea que apunta a cuatro trabajos de los que el libro
+> solo abre dos.**
+
+## K.3.d. LAS DOS COLAS DECLARADAS, CADA UNA EN SU BLOQUE TITULADO (`D.29`)
+
+*`D.29` manda que una arista que no se puede escribir viva en un bloque propio y titulado
+hasta que se pueda, para que no se pierda en la prosa. **Las dos siguen sin poderse
+escribir hoy, y las dos por la misma condicion.***
+
+### COLA 1: **LA SERIE DE LAS TRES RESPONSABILIDADES**
+
+| | |
+|---|---|
+| **madre** | `revisar_ciclo_responsabilidades_relaciones`, **su paso 3** |
+| **hijos** | las cabezas de `cap_05`, `cap_06` y `cap_07` de `scott_radical_candor`, que son las tres responsabilidades que `cap_04.md:71` nombra |
+| **regla** | **`D.29` y no `D.37`**: el paso nombra las tres y **no dice cuantas son**, asi que la cuenta la pone el lector. Es la misma vara de la `ACTA 15` 2.8 |
+| **por que no se escribe hoy** | **DOS condiciones fallan, no una**: los tres hijos **no existen en el grafo**, y **la propia madre sigue en cuarentena** de un lote ABIERTO |
+| **cuando** | **el dia que el lote 4 cierre y entre.** No antes |
+
+**LO QUE ESTA VUELTA SI MUEVE DE ESTA COLA:** la TAREA 4 mina `cap_05`, `cap_06` y
+`cap_07`, **que es de donde salen los tres hijos.** Al cerrar la TAREA 4 se dice cuales
+son los ids candidatos, para que el dia de la insercion no haya que releer nada.
+
+### COLA 2: **LA PRIMERA ARISTA ENTRE DOS LIBROS**
+
+| | |
+|---|---|
+| **madre** | `gestionar_personas_equipo` (Zhuo), **su paso 2**: *Desarrolla relaciones de confianza con ellos* |
+| **hijo** | `desplegar_marco_franqueza_radical` (Scott), el marco de las **dos** dimensiones, 9 pasos |
+| **regla** | **adjudicada ADMISIBLE** en la `ACTA 15` 3.4, citando `D.1` (*vale para TODO par*), `D.19`, `D.29` y el manual. **No es doctrina nueva y no es parada** |
+| **por que no se escribe hoy** | la **condicion 1** de las tres que el auditor dejo escritas: **el hijo tiene que vivir en el grafo**, y hoy vive en cuarentena de un lote ABIERTO (`D.39`) |
+| **cuando** | **el dia que el lote 4 cierre y entre.** El encargo lo dice con estas palabras: **no la estrenes antes** |
+
+**Y LA MEDIDA QUE HACE ESTA COLA INTERESANTE, REMEDIDA POR MI HOY sobre las 79 aristas
+que hay tras la de `K.3.b`:**
+
+    $ python -c "para cada arista, cruza las claves de fuente de madre e hijo"
+    smart_who -> smart_who                              45
+    zhuo_manager -> zhuo_manager                         32
+    onu_consumidor -> onu_consumidor                      1
+    manual_sistema_conocimiento -> manual_...             1
+    total aristas: 79
+    ARISTAS QUE CRUZAN DE LIBRO: 0
+
+**79 aristas, cuatro libros, CERO cruces**, igual que el auditor midio sobre 78. **La que
+esta en cola sigue siendo la primera del grafo**, y la arista que escribi hoy **no lo es**:
+madre e hijo son los dos de `zhuo_manager`.
+
+> ## **TAREA 2 CERRADA.** Una arista escrita con la linea del libro que la elige pegada al lado, los otros dos procesos medidos y publicados **en negativo con su motivo**, y las dos colas vivas en su bloque titulado.
