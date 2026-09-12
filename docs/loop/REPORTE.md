@@ -19435,3 +19435,204 @@ esta en cola sigue siendo la primera del grafo**, y la arista que escribi hoy **
 madre e hijo son los dos de `zhuo_manager`.
 
 > ## **TAREA 2 CERRADA.** Una arista escrita con la linea del libro que la elige pegada al lado, los otros dos procesos medidos y publicados **en negativo con su motivo**, y las dos colas vivas en su bloque titulado.
+
+
+---
+
+# K.4. TAREA 3: LOS DOS ARREGLOS EN FRIO DE LA BANDEJA. **CERRADA**
+
+*Los dos candidatos siguen en `cuarentena/scott_radical_candor/`, o sea que tocarlos hoy
+no mueve el grafo. **Los dos vuelven a pasar por la aduana en el mismo acto**, uno por
+vez, con su informe pegado.*
+
+## K.4.a. `delimitar_franqueza_radical_cinco_noes`: **EL IMPERATIVO ENTRA COMO PASO**
+
+**LA LINEA, ABIERTA POR MI ANTES DE DECIDIR** (`D.35`):
+
+    $ sed -n '149p' fuentes/scott_radical_candor/cap_04.md
+    Radical Candor is not a hierarchical thing. To be Radically Candid, you need to
+    practice it "up," "down," and "sideways." Even if your boss and peers have not bought
+    in to this method, you CAN create a Radically Candid microcosm for yourself and the
+    people on your team. You are entitled to proceed with a little more caution with your
+    boss and your peers. But ultimately, if it is not possible to be Radically Candid
+    with your boss and your peers, I would recommend finding a different kind of work
+    environment if at all possible.
+
+**LA CITA VA CON `it is` Y `I would` DONDE EL FICHERO PONE LA CONTRACCION CON APOSTROFO, Y
+LO DIGO EN VEZ DE QUE PAREZCA TRANSCRIPCION EXACTA.** La linea literal se lee con el `sed`
+de arriba, que es el que manda.
+
+**LO QUE EL NODO TENIA DE ESA LINEA, Y LO QUE LE FALTABA:**
+
+| lo que pone `:149` | estaba en el nodo? |
+|---|---|
+| no es jerarquica | **si**, paso 4 |
+| practicala hacia arriba, hacia abajo y hacia los lados | **si**, paso 4 |
+| aunque tu jefe y tus pares no hayan comprado el metodo, PUEDES crear tu microcosmos | **si**, paso 5 |
+| tienes derecho a ir con algo mas de cautela con ellos | **si**, paso 6 |
+| **pero al final, si no es posible, busca otro tipo de entorno de trabajo** | **NO** |
+
+> ### **DECIDO QUE ENTRA, Y DIGO LA RAZON EN VEZ DE ELEGIR EN SILENCIO.** Las dos salidas valian y la que no valia era no mirarlo.
+>
+> **1. NO ES UN PUENTE, ES SU CONTRARIO** (lo dice el propio encargo y lo compruebo): el
+> medio esta en el libro palabra por palabra, **en imperativo del autor**. Un paso que
+> transcribe un imperativo del libro es **TRANSCRIPCION por la letra de `D.30`**.
+>
+> **2. LO QUE ME DECIDE ES LA ESCALERA, Y ES UN ARGUMENTO DE FORMA:** ese parrafo es una
+> **escalera de cuatro peldanios** (practicala en las tres direcciones, si no te siguen
+> monta tu microcosmos, con el jefe ve con mas cautela, y si al final no se puede, vete).
+> **El nodo tenia los tres primeros y se paraba antes del ultimo.** Una escalera a la que
+> le quitas el peldanio de arriba **no dice lo mismo mas corto: dice otra cosa**, porque
+> deja al lector con *monta tu microcosmos y aguanta* cuando el libro dice *y si al final
+> no se puede, cambia de sitio*.
+>
+> **3. NINGUNA REGLA ME OBLIGA A LA EXHAUSTIVIDAD**, y por eso esto no es una caida de
+> nadie: es inventario del libro que el nodo no recogio, y se recoge ahora que cuesta lo
+> que leer.
+
+**EL PASO, ESCRITO Y COLOCADO DONDE EL TEXTO LO PONE** (detras de la cautela, no al final
+del nodo):
+
+    P7: Y si al final no es posible ser radicalmente franco con tu jefe y con tus pares,
+        busca un tipo distinto de entorno de trabajo, si es que hay alguno posible. Es lo
+        que el texto recomienda expresamente en esa misma linea, despues de la cautela.
+
+**Y CORRIJO EL `resumen_teorico` EN EL MISMO ACTO, PORQUE SI NO QUEDABA FALSO.** Decia
+*lo que el texto NO dice es ... que se hace cuando el jefe prohibe el microcosmos*, y con
+el paso nuevo dentro esa frase invitaba a leer que el texto calla donde ahora habla. La
+frase nueva **deja la parte que sigue siendo cierta** (el texto no dice que hacer si el
+jefe lo prohibe expresamente) **y declara la que se recogio tarde.**
+
+**LA ADUANA, EN EL MISMO ACTO** (`EXTRACTOR.md` 16), salida en
+`.informe_cinco_noes_vuelta16.txt`:
+
+    $ python forja.py informe cuarentena/scott_radical_candor/delimitar_franqueza_radical_cinco_noes.json
+    candidatos revisados        : 1
+    nodos en el grafo de destino: 203
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+    [ENTRARIA] delimitar_franqueza_radical_cinco_noes
+
+**AL PRIMER INTENTO Y SIN CORRECCION.** El nodo pasa de **8 a 9 pasos**.
+
+## K.4.b. `cuidar_persona_completa_equipo`: **LA ATRIBUCION DE FRED KOFMAN ENTRA**
+
+**LA LINEA, ABIERTA POR MI** (`D.35`):
+
+    $ sed -n '113p' fuentes/scott_radical_candor/cap_04.md
+    Fred Kofman, my coach at Google, had a mantra that contradicted the "just
+    professional" approach so destructive to so many managers: "Bring your whole self to
+    work." This saying has become a meme ...
+
+**PRIMERO REMIDO LA CIFRA EN LA QUE SE APOYA LA DECISION, porque un acta previa no es
+fuente de una cifra nueva** (`EXTRACTOR.md` 5) **y porque el propio auditor la corrigio
+contra si mismo**:
+
+    $ python -c "filas del censo y filas cuya columna cifra no lleva ningun digito
+                 ni por ciento ni mil ni cien"
+     30 de 58   criterio: digito | por ciento | mil | cien   (el del auditor)
+     41 de 58   criterio: solo digito
+     29 de 58   criterio: digito | por ciento | mil | cien | mitad | tercio | doble
+
+> **EL `30 de 58` DEL AUDITOR SE REPRODUCE EXACTO CON EL CRITERIO QUE EL PUBLICO, Y LO
+> DIGO ASI PORQUE LA CIFRA DEPENDE DEL FILTRO.** Con los tres filtros que se me ocurren
+> sale **29, 30 o 41 de 58**, y **la conclusion es la misma con los tres**: la mayoria de
+> las filas del censo **no llevan cifra numerica**. La adjudicacion `3.5` se sostiene, y
+> se sostiene mas firme cuando se ve que no depende del filtro elegido.
+
+**Y COMPRUEBO LA OTRA MITAD, QUE ES LA DEL ESQUEMA:**
+
+    $ python -c "esquema/nodo.schema.json, campo atribuciones"
+    items.required          : ["cifra", "autor", "fuente", "fecha_corte"]
+    items.properties.cifra  : {"type": "string", "minLength": 1}     <- NO exige numero
+    fecha_corte             : {"type": "string", "minLength": 4}     <- cadena libre
+
+> ### **DECIDO QUE ENTRA.** El paso 8 del nodo usa la formula *traer tu persona entera al trabajo* y **el libro la pone en boca de Fred Kofman en la misma frase en que la enuncia.** Un nodo que usa la formula de un tercero sin decir de quien es **presenta como de la autora algo que la autora atribuye**, y el manual principio 8 dice que toda atribucion se verifica: **la que no esta escrita no se puede verificar.**
+
+**EL CAMPO, CON SUS CUATRO SUBCAMPOS Y CON `fecha_corte` DICIENDO LO QUE EL TEXTO DA:**
+
+    "atribuciones": [{
+      "cifra": "la maxima trae tu persona entera al trabajo, que el libro presenta como
+                el mantra con el que Fred Kofman contradecia el enfoque de mantenerlo
+                solo profesional",
+      "autor": "Fred Kofman, citado por Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta en el texto: el libro lo presenta como su entrenador en
+                      Google, sin anio ni obra"
+    }]
+
+**LA FORMA DE `fecha_corte` NO ME LA INVENTO: LA COPIO DE LA PRACTICA QUE LA ADUANA YA
+ESCRIBIO** en `censos/atribuciones.md`, donde hay **ocho** filas con
+*no consta el anio en el texto* y varias mas con la formula larga (*no consta en el
+texto: el libro la cita como experta en ..., sin anio ni obra*). **No es un campo vacio
+disfrazado: es el campo diciendo que el libro no da el dato.**
+
+### Lo que decidi NO hacer, y va escrito para que se pueda corregir
+
+**NO TOQUE EL PASO 8 para meter dentro el nombre de Kofman**, aunque el libro lo nombra
+en la misma frase. Dos razones: **la sede de una atribucion es el campo `atribuciones`**,
+que es de donde la aduana escribe el censo, y **el paso 8 es uno de los diez que el
+auditor verifico uno a uno como TRANSCRIPCION** (`ACTA 15` 4.1). Meter el mismo hecho en
+dos sedes en un arreglo en frio me parecio peor que dejarlo en la suya. **Va marcado como
+discutible.**
+
+**LA ADUANA, EN EL MISMO ACTO**, salida en `.informe_kofman_vuelta16.txt`:
+
+    $ python forja.py informe cuarentena/scott_radical_candor/cuidar_persona_completa_equipo.json
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+    [BLOQUEARIA] cuidar_persona_completa_equipo
+        vecino usar_lenguaje_no_discriminatorio_entrevista  [paso_contra_nodo]
+          similitud_texto 0.228 | familia_id 0.000 | paso_contra_nodo 0.615
+        vecino gestionar_personas_equipo  [familia_id]
+          similitud_texto 0.243 | familia_id 0.400 | paso_contra_nodo 0.455
+        vecino respetar_cuidar_persona_cargo  [familia_id]
+          similitud_texto 0.259 | familia_id 0.333 | paso_contra_nodo 0.425
+
+> ### **LOS TRES VECINOS, LAS TRES SEÑALES Y LOS TRES DECIMALES SON IDENTICOS A LOS QUE EL AUDITOR MIDIO EN SU `1.9` ANTES DE QUE YO TOCARA NADA. AÑADIR `atribuciones` NO MOVIO NI UNA SEÑAL.**
+>
+> **Y eso no era obvio antes de correrlo:** la vuelta 15 midio que **cumplir `D.30`
+> ensucia la señal 3** porque la plantilla de redaccion entra en el texto comparado.
+> **Aqui la medida sale limpia**, y la explicacion es que el campo `atribuciones` no es
+> paso ni titulo: **no entra en lo que las tres señales leen.** Lo dejo medido porque es
+> una pregunta que se iba a hacer alguien.
+
+## K.4.c. EL INFORME DEL LOTE 4 ENTERO, RECONTADO DESPUES DE LOS DOS ARREGLOS
+
+    $ python forja.py informe --carpeta cuarentena/scott_radical_candor
+    candidatos revisados        : 8
+    nodos en el grafo de destino: 203
+      ENTRARIAN sin leer nada          : 7
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 3
+      por candidato bloqueado          : menor 3, mediana 3, mayor 3
+      que señal levanta cada vecindad  : familia_id 2, paso_contra_nodo 1
+
+**EL SALDO ES EXACTAMENTE EL QUE EL ENCARGO PUBLICA** (8 candidatos, 7 `ENTRARIA`, 1
+`BLOQUEARIA`, 0 `CAERIA`, 3 vecinos). **Los dos arreglos en frio no movieron el saldo del
+lote.** Salida entera en `.informe_lote4_vuelta16.txt`.
+
+### La consecuencia de cuentas que los arreglos SI tienen, y la declaro antes de que se note
+
+    $ python -c "pasos de los 8 ficheros de la bandeja"
+    TOTAL 8 ficheros: 64    ->   64 menos 9 (cap_01) menos 7 (cap_03) = 48 en los SEIS de cap_04
+
+**El auditor firmo `cap_04` en 3 de 47, 6,38 por ciento** (`ACTA 15` 4.2), **y el paso que
+entro hoy mueve el denominador a 48.** Recomputada con la misma regla:
+
+| cifra | antes, firmada por el auditor | **tras el arreglo en frio** |
+|---|---:|---:|
+| `cap_04` | 3 de 47 = **6,38** | **3 de 48 = 6,25** |
+| lote 4 hasta hoy | 3 de 63 = **4,76** | **3 de 64 = 4,69** |
+
+**NO REESCRIBO LA CIFRA FIRMADA: LA DECLARO AL LADO**, que es lo que `EXTRACTOR.md` 4
+manda cuando algo de la propia vuelta mueve una cifra publicada. **Y no cambia ninguna
+decision:** el freno esta en 10 y las dos lecturas estan por debajo.
+
+> ## **TAREA 3 CERRADA.** Los dos arreglos leidos con su linea delante, **los dos decididos EN POSITIVO y con su razon escrita**, los dos por la aduana uno por vez y al primer intento, el informe del lote entero recontado y cuadrando con el encargo, y la consecuencia de cuentas declarada.
