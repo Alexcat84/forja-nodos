@@ -936,3 +936,188 @@ BLOQUEADO: faltan veredictos para repartir_equipo_cartera_horizontes
     --veredicto "repartir_equipo_cartera_horizontes|SANO|por que no son el mismo trabajo"
     --veredicto "repartir_equipo_cartera_horizontes|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
 [codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\alinear_prioridades_reporte_directivo.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'alinear_prioridades_reporte_directivo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 186 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 187
+  censos escritos: atribuciones, denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\decidir_directivo_no_encaja_papel.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'decidir_directivo_no_encaja_papel'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 187 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 188
+  censos escritos: atribuciones, denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\entregar_problema_dificil_reporte.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'entregar_problema_dificil_reporte'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 188 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 189
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\equilibrar_microdireccion_ausencia.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'equilibrar_microdireccion_ausencia'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 189 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 190
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\facilitar_gente_diga_verdad.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'facilitar_gente_diga_verdad'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 190 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 191
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\pasar_direccion_directa_indirecta.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'pasar_direccion_directa_indirecta'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 191 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 192
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\reemplazarse_trabajo_propio.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'reemplazarse_trabajo_propio'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 192 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 193
+  censos escritos: atribuciones, denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\reservar_valor_unico_prioridades_arriba.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'reservar_valor_unico_prioridades_arriba'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 193 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 194
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\sostener_cambio_contexto_continuo.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'sostener_cambio_contexto_continuo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 194 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 195
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\comunicar_valores_diez_formas.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'comunicar_valores_diez_formas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 195 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 196
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\contrastar_cultura_actual_aspirada.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'contrastar_cultura_actual_aspirada'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 196 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 197
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\inventar_tradiciones_celebrar_valores.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'inventar_tradiciones_celebrar_valores'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 197 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 198
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\juzgar_cultura_renuncias_equipo.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'juzgar_cultura_renuncias_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 198 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 199
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\reconocer_decision_dificil_valores.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'reconocer_decision_dificil_valores'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 199 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 200
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\actuar_conducta_contraria_valores.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'actuar_conducta_contraria_valores'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 200 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino reconocer_decision_dificil_valores  [Reconocer al reporte que hace algo dificil en el espiritu de los valores del equipo]
+    levantada por: similitud_texto
+    similitud_texto    0.355 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.436 (umbral 0.60)
+    paso 5 del candidato contra paso 3 de reconocer_decision_dificil_valores
+
+BLOQUEADO: faltan veredictos para reconocer_decision_dificil_valores
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "reconocer_decision_dificil_valores|CONTINUA|madre=reconocer_decision_dificil_valores|que añade el hijo a la madre"
+    --veredicto "reconocer_decision_dificil_valores|REPITE|por que no añade procedimiento"
+    --veredicto "reconocer_decision_dificil_valores|SANO|por que no son el mismo trabajo"
+    --veredicto "reconocer_decision_dificil_valores|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+[codigo 2]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\revisar_incentivos_trampas_equipo.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'revisar_incentivos_trampas_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 201 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 202
+  censos escritos: denominaciones
+[codigo 0]
+
+$ C:\Users\AlexDesk\AppData\Local\Programs\Python\Python312\python.exe forja.py insertar cuarentena/zhuo_manager\vivir_primero_valor_declarado.json --sin-preguntas
+ADUANA DE INSERCION, candidato 'vivir_primero_valor_declarado'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 202 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 203
+  censos escritos: denominaciones
+[codigo 0]

@@ -1,0 +1,44 @@
+{
+  "id": "cuidar_persona_completa_equipo",
+  "titulo": "Cuidar a la persona completa de cada miembro del equipo, con los cuatro medios que el libro nombra y los tres que descarta",
+  "denominaciones": {
+    "nombre_largo": "La primera de las dos dimensiones de la franqueza radical: cuidar personalmente, que no es cuidar el trabajo ni la carrera",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Care Personally"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "bring your whole self to work"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando la relacion con una persona a cargo se ha quedado en lo estrictamente profesional y quieres saber que hacer con ella, sin caer en memorizar cumpleanios ni en la charla forzada.",
+  "entregable_esperado": "Una relacion en la que las dos partes traen su persona entera al trabajo, con tiempo real de conversacion reservado y un espacio seguro en el que otros pueden hacer lo mismo.",
+  "pasos_accionables": [
+    "Cuenta con lo que el texto pone como causa de que la gente no cuide personalmente: el mandato de mantenerlo profesional, que segun el texto niega algo esencial, y la sensacion de ser mejor o mas listo que quien trabaja para ti, que el texto llama sentido de superioridad.",
+    "Reconoce que ser jefe es un puesto de trabajo, no un juicio de valor, que es lo que el texto pone contra ese sentido de superioridad.",
+    "No te quedes en cuidar el trabajo de la persona ni su carrera: el texto dice expresamente que eso no basta y que solo cuidando a la persona completa con tu persona completa se construye la relacion.",
+    "Busca tiempo para conversaciones de verdad, que es el primero de los medios que el texto nombra.",
+    "Conoceos mutuamente a nivel humano, que es el segundo.",
+    "Aprende que es importante para cada persona, que es el tercero.",
+    "Compartid mutuamente que os hace querer levantaros por la maniana e ir a trabajar, y que tiene el efecto contrario, que es el cuarto.",
+    "Da ejemplo tu primero mostrando alguna vulnerabilidad a tus personas a cargo, o simplemente admitiendo cuando tienes un mal dia, y crea un espacio seguro para que los demas hagan lo mismo, que es como el texto describe traer tu persona entera al trabajo.",
+    "No confundas esto con memorizar cumpleanios y nombres de familiares, ni con contar los detalles sordidos de tu vida personal, ni con la charla forzada en actos sociales a los que preferirias no ir: el texto descarta los tres por su nombre.",
+    "Cuenta con el precio que el texto pone al lado: tienes que cuidar profundamente de la gente estando preparado para que te odien a cambio, y si puedes absorber los golpes es mas probable que los tuyos sean buenos jefes cuando les toque. El texto avisa de que puede que nunca te lo devuelvan, y de que es probable que lo pasen adelante."
+  ],
+  "resumen_teorico": "Es la primera de las dos dimensiones de la franqueza radical y el libro la desarrolla con su propio inventario: cuatro medios nombrados uno a uno en una sola linea del texto, tres cosas que descarta por su nombre, dos causas de que la gente falle en esto, y un precio. Por eso es procedimiento y no postura: escribir los pasos es transcribir ese inventario en imperativo. Lo que el texto NO dice, y por eso no esta escrito aqui, es cada cuanto se busca ese tiempo de conversacion, cuanto dura, con quien se empieza cuando el equipo es grande, ni como se sabe que ya se ha cuidado bastante. El texto tampoco encarga registrar nada por escrito, asi que aqui no hay ningun paso de registro. El caso de los talladores de diamantes de Moscu vive en este nodo como ejemplo nombrado y no como casa: lo que la autora aprende ahi es que lo mas importante que ella podia hacer y el Estado no era dar la cara personalmente, y eso es doctrina de este nodo, no un procedimiento para contratar talladores.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

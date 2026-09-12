@@ -1,0 +1,42 @@
+{
+  "id": "delimitar_franqueza_radical_cinco_noes",
+  "titulo": "Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir",
+  "denominaciones": {
+    "nombre_largo": "Lo que la franqueza radical no es: no es licencia para ser duro, no es buscar defectos, no es jerarquica, no es confraternizar y no es de Silicon Valley",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "What Radical Candor is not"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "front-stab"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando alguien invoca la franqueza radical para justificar lo que va a decir, o cuando quieres saber si lo que estas a punto de hacer cuenta como franqueza radical o no.",
+  "entregable_esperado": "Los cinco limites comprobados sobre el caso que tienes delante, y la cuenta de las tres cosas sin importancia que hoy dejas sin decir.",
+  "pasos_accionables": [
+    "Comprueba el primero: no es licencia para ser gratuitamente duro ni para apunialar de frente. El texto avisa de que no es franqueza radical solo porque empieces diciendo dejame ser radicalmente franco contigo, y pone los dos ejemplares de lo que la anula, llamar mentiroso a alguien y decirle que no te fias de el, o insultarle. Si no muestras que te importa personalmente, no es franqueza radical.",
+    "Comprueba el segundo: no es una invitacion a buscar defectos. El texto razona que desafiar directamente cuesta energia de verdad, tanto a quien desafias como a ti, asi que hazlo solo por las cosas que importan de verdad.",
+    "Aplica la regla concreta que el texto pone para eso, que segun el texto vale para cualquier relacion: deja tres cosas sin importancia sin decir cada dia.",
+    "Comprueba el tercero: no es jerarquica. Practicala hacia arriba, hacia abajo y hacia los lados, que son las tres direcciones que el texto nombra.",
+    "Crea tu propio microcosmos radicalmente franco para ti y para tu equipo aunque tu jefe y tus pares no hayan comprado el metodo, que es lo que el texto dice que puedes hacer.",
+    "Ve con algo mas de cautela con tu jefe y con tus pares, que es lo que el texto te autoriza expresamente.",
+    "Comprueba el cuarto: no es confraternizar ni una extroversion sin fin que agota a las personas calladas de tu equipo, o a ti si el callado eres tu. El texto descarta por su nombre emborracharse, conducir karts, jugar al laser tag y las cenas interminables con colegas, y dice por que: quitan mucho tiempo y no son la forma mas eficiente de conocer a la gente con la que trabajas ni de mostrarle que te importa.",
+    "Comprueba el quinto: no es propia de la cultura de Silicon Valley ni es estadounidense. El texto dice que es humana, y que fue trabajando para una empresa israeli donde la autora empezo a desarrollar su idea de la franqueza radical."
+  ],
+  "resumen_teorico": "Es una seccion escrita entera en negativo, y el inventario es propio del texto: cinco noes, uno por parrafo, nombrados uno a uno. Se extrae como procedimiento y no como postura porque los cinco son comprobaciones que alguien puede pasar sobre un caso concreto, y porque dos de ellos traen su propia regla ejecutable, la de las tres cosas sin decir cada dia y la de las tres direcciones. El texto no dice la palabra cinco, asi que la cuenta de este titulo es de quien lee los parrafos y no del libro, y eso queda dicho aqui. El quinto no es un limite de conducta sino de procedencia, y se deja dentro porque el texto lo pone en la misma lista y con la misma formula que los otros cuatro, no porque encaje igual. Lo que el texto NO dice, y por eso no esta escrito aqui, es quien decide que una cosa importa de verdad, ni que se hace cuando el jefe prohibe el microcosmos.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

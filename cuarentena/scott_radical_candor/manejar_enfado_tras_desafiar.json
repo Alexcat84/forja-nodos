@@ -1,0 +1,45 @@
+{
+  "id": "manejar_enfado_tras_desafiar",
+  "titulo": "Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario",
+  "denominaciones": {
+    "nombre_largo": "Que hacer cuando lo que dijiste duele: reconocer el dolor, no fingir que no duele y no fingir que no hay problema",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "don't take it personally"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando alguien de tu equipo esta enfadado contigo despues de que le desafiaras directamente, y lo que dijiste le ha dolido.",
+  "entregable_esperado": "El dolor reconocido en voz alta, la frase no te lo tomes como algo personal fuera de tu vocabulario, y una oferta de ayuda para arreglar el problema sin haber negado que el problema existe.",
+  "pasos_accionables": [
+    "Acepta antes de empezar lo que el texto pone como parte del puesto: que a veces la gente de tu equipo va a estar enfadada contigo. El texto anade que si nadie se enfada nunca contigo es probable que no estes desafiando bastante a tu equipo.",
+    "Trata como la clave lo que el texto llama la clave, igual que en cualquier relacion: como manejas el enfado.",
+    "Cuando lo que dices duele, reconoce el dolor de la otra persona.",
+    "No finjas que no duele y no digas que no deberia doler: solo demuestra que te importa.",
+    "Elimina de tu vocabulario la frase no te lo tomes como algo personal. El texto dice que es insultante.",
+    "En su lugar, ofrecete a ayudar a arreglar el problema.",
+    "No finjas que no hay problema solo para intentar que alguien se sienta mejor."
+  ],
+  "resumen_teorico": "Es el tramo mas literalmente procedimental del capitulo: el libro escribe cinco imperativos seguidos en un solo parrafo, y escribir los pasos es transcribirlos. Su valor no es la delicadeza sino que separa dos cosas que se confunden: reconocer el dolor no es retirar la critica. Las dos prohibiciones apuntan a las dos salidas faciles, negar el dolor y negar el problema, y la frase que se elimina del vocabulario es un ejemplar concreto de la primera. La atribucion de Colin Powell va en su sede y no como paso, porque el texto la usa para justificar la postura de partida y no para encargar nada. Lo que el texto NO dice, y por eso no esta escrito aqui, es cuanto tiempo se deja pasar antes de ofrecer la ayuda, que se hace si el enfado no se va, ni a quien se le cuenta.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [
+    {
+      "cifra": "ser responsable significa a veces cabrear a la gente",
+      "autor": "Colin Powell, antiguo Secretario de Estado, citado por Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta la fecha en el texto: el libro remite a una nota numerada que este recorte no incluye, asi que la cita queda sin fecha de corte y se dice"
+    }
+  ]
+}

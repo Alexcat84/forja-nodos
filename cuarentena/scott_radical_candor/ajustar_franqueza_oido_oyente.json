@@ -1,0 +1,42 @@
+{
+  "id": "ajustar_franqueza_oido_oyente",
+  "titulo": "Ajustar la franqueza radical al oido del que escucha y no a la boca del que habla, buscando la forma local de cada dimension",
+  "denominaciones": {
+    "nombre_largo": "La franqueza radical es universalmente humana pero relativa entre personas y entre culturas: se mide en el oido del oyente",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "measured at the listener's ear, not at the speaker's mouth"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "politely persistent"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando llevas tu forma de ser franco a otra persona, a otro equipo, a otra empresa o a otro pais, y lo que funcionaba deja de funcionar.",
+  "entregable_esperado": "Las dos dimensiones traducidas a la forma que esa persona o ese equipo reconoce, con el nombre local si hace falta cambiarlo.",
+  "pasos_accionables": [
+    "Mide las dos dimensiones en el oido del que escucha y no en la boca del que habla, que es donde el texto dice que se miden.",
+    "No lo trates como un tipo de personalidad, ni como un talento, ni como un juicio sobre una cultura: el texto descarta los tres por su nombre.",
+    "Comprueba que la otra persona entiende que tu esfuerzo por cuidar personalmente y por desafiar directamente va de buena fe, porque el texto dice que solo asi funciona.",
+    "Cuenta con que lo que a una persona o a un equipo le parecio radicalmente franco a otro le puede parecer demasiado odioso, o demasiado sentimental.",
+    "Aumenta el ajuste segun se ensancha el salto: el texto lo ordena de menos a mas, de una empresa a otra hace falta mas ajuste, y de un pais a otro mas todavia.",
+    "Busca la forma local de cuidar personalmente, que es la primera dimension. En el equipo de Tokio la forma preferida de mostrar que les importaba era ser educados.",
+    "Busca la forma local de desafiar directamente, que es la segunda. En el equipo de Tokio la forma con la que estaban mas comodos desafiando la direccion de producto de Google era ser persistentes.",
+    "Cambia el nombre si el nombre estorba: a ese equipo la autora no le pidio franqueza radical, que dice que habria sonado demasiado agresivo, sino ser educadamente persistentes."
+  ],
+  "resumen_teorico": "Es la seccion que evita que el resto del libro se lea como un estilo unico, y el texto pone su propio inventario: la vara de medida en el oido del oyente, las tres cosas que la franqueza radical no es, la escala del ajuste de persona a empresa a pais, y las dos dimensiones como los dos objetos que hay que traducir. Los cuatro casos que el capitulo cuenta entran como ejemplos nombrados y no como casas: Jerusalen con Noam Bardin gritando a un ingeniero, la cena de Shabbat que le explica a la autora por que aquello era respeto, Tokio con la persistencia educada que acabo en un producto nuevo, y Pekin con Roy Zhou. De los cuatro, el unico que el texto convierte en medio es Tokio, porque es el unico donde nombra la forma local de cada dimension por separado, y por eso es el unico que aparece en los pasos. Lo que el texto NO dice, y por eso no esta escrito aqui, es como se averigua esa forma local antes de equivocarse, ni quien decide que el nombre estorba.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

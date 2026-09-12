@@ -1,0 +1,41 @@
+{
+  "id": "revisar_ciclo_responsabilidades_relaciones",
+  "titulo": "Revisar el ciclo entre tus tres responsabilidades de jefe y tus relaciones, con la lista que lo fortalece y la lista que lo erosiona",
+  "denominaciones": {
+    "nombre_largo": "Las tres responsabilidades que las relaciones deciden si puedes cumplir: cultura de guia, entender que motiva a cada uno, y llevar resultados en colaboracion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "guidance, team-building, and results"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "virtuous cycle between your responsibilities and your relationships"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando quieres saber por que una de tus tres responsabilidades de jefe no avanza, y quieres mirar la relacion con la persona a cargo antes de mirar la tarea.",
+  "entregable_esperado": "Las tres responsabilidades revisadas contra la relacion que las sostiene, con la lista que la fortalece y la lista que la erosiona pasadas una a una.",
+  "pasos_accionables": [
+    "Parte de lo que el texto pone como dificultad central del oficio, y que segun el texto casi nadie pregunta: establecer una relacion de confianza con cada persona que te reporta directamente. El texto anade que si diriges una organizacion grande no puedes tener relacion con todos, pero si puedes conocer de verdad a quienes te reportan directamente.",
+    "Cuenta con los cinco estorbos que el texto nombra uno a uno: las dinamicas de poder en primer lugar, el miedo al conflicto, la preocupacion por los limites de lo apropiado o lo profesional, el miedo a perder credibilidad y la presion del tiempo.",
+    "Repasa las tres responsabilidades que el texto numera, en su orden: crear una cultura de guia, alabanza y critica, que mantenga a todos moviendose en la direccion correcta; entender que motiva a cada persona de tu equipo lo bastante bien para evitar el agotamiento o el aburrimiento y mantener el equipo cohesionado; y llevar resultados en colaboracion.",
+    "Pasa la lista que el texto dice que fortalece las relaciones, en el orden en que el texto la pone: aprender las mejores maneras de recibir, dar y fomentar guia; poner a la gente adecuada en el papel adecuado de tu equipo; y conseguir en conjunto resultados que no podrias sonar individualmente.",
+    "Pasa la lista que el texto dice que las erosiona, en el orden en que el texto la pone: no dar a la gente la guia que necesita para tener exito en su trabajo; meter a la gente en papeles que no quieren o para los que no encajan bien; y empujar a la gente a conseguir resultados que ellos ven como poco realistas.",
+    "Cuenta con lo que el texto dice que produce la segunda lista: erosionas la confianza.",
+    "Mira un nivel mas alla, que es lo que el texto anade: tus relaciones con tus personas a cargo afectan a las relaciones que ellas tienen con las suyas, y a la cultura de tu equipo."
+  ],
+  "resumen_teorico": "El capitulo enumera tres responsabilidades y dice que son tres, numerandolas una a una, y en el parrafo siguiente pone dos listas de tres, la que fortalece la relacion y la que la erosiona. Eso es lo que convierte una enumeracion en una revision que alguien puede pasar: nueve piezas nombradas por el texto, tres mas tres mas tres. AQUI DECLARO DOS COSAS, Y LAS DOS SON MIAS. La primera: en el borrador de este nodo empareje cada responsabilidad con su forma virtuosa y su forma viciosa una a una, y al pasar la relectura de fidelidad retire ese emparejamiento, porque el texto pone las tres listas en el mismo orden pero NO dice que la pieza primera de una sea la forma de la pieza primera de otra, y la segunda responsabilidad, entender que motiva a cada uno, no coincide con la segunda pieza de la lista que fortalece, poner a la gente adecuada en el papel adecuado. Las tres listas quedan enteras y separadas, en el orden del texto, y el lector las cruza si quiere. La segunda: este nodo es el que mas cerca esta de la frontera de la vara, porque las tres responsabilidades son tambien los titulos de los tres capitulos siguientes del libro y esto puede leerse como una cabeza que nombra sin procedimentar. Lo defiendo porque el procedimiento propio no es la enumeracion sino el repaso de las dos listas del ciclo, que el texto escribe entero en este capitulo y no en los siguientes, y porque los cinco estorbos son un inventario de medios del propio texto. Si el auditor lee que aqui solo hay nombres, este es el nodo que cae. Lo que el texto NO dice, y por eso no esta escrito aqui, es cada cuanto se pasa la revision, ni en que orden, ni que se hace primero cuando las tres estan erosionadas a la vez.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

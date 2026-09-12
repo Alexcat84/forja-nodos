@@ -18041,3 +18041,551 @@ reordenado lo baja al **#66** y sube al vecino al **#65**:
 **LOS 17 SE INSERTAN EN EL ORDEN DEL FICHERO, SIN TOCARLO.** Reordenar ahora la cola
 restante seria cambiar el orden a mitad de lote, y el orden del lote 3 ya esta fijado y
 publicado en `J.3.c`.
+
+---
+
+# J.5. TAREA 3: EL LOTE 4, `scott_radical_candor`. **`cap_04` CERRADO, Y LA MEDIDA QUE EL ENCARGO PIDE**
+
+*El encargo asigna `cap_04` a `cap_07` y avisa: **el volumen de cuatro se firmo sobre
+capitulos de otro tamanio**, y si no caben, **cierras los que quepan enteros y lo dices con
+su cifra**. Esta seccion abre con esa medida, porque es lo que el encargo llama **la medida
+que falta**.*
+
+## J.5.0. **LA MEDIDA QUE FALTA, CORRIDA POR MI EN ESTA VUELTA**
+
+    $ cd fuentes/scott_radical_candor && for f in cap_04 cap_05 cap_06 cap_07; do
+    >     printf "%s | lineas %4d | palabras " "$f" "$(wc -l < $f.md)"; sed -n '8,$p' $f.md | wc -w; done
+    cap_04 | lineas  181 | palabras 6263
+    cap_05 | lineas  311 | palabras 8756
+    cap_06 | lineas  359 | palabras 11587
+    cap_07 | lineas  433 | palabras 13678
+
+| fichero | unidad | titulo textual, leido del encabezado | palabras | **el encargo escribe** | cuadra |
+|---|---|---|---:|---:|---|
+| `cap_04.md` | Cap. 1 | `Build Radically Candid Relationships` | **6.263** | 6.263 | si |
+| `cap_05.md` | Cap. 2 | `Get, Give, and Encourage Guidance` | **8.756** | 8.756 | si |
+| `cap_06.md` | Cap. 3 | `Understand What Motivates Each Person on Your Team` | **11.587** | 11.587 | si |
+| `cap_07.md` | Cap. 4 | `Drive Results Collaboratively` | **13.678** | 13.678 | si |
+| | | **total** | **40.284** | 40.284 | si |
+
+    $ sed -n '4,5p' fuentes/scott_radical_candor/cap_04.md
+    unidad: Cap. 1
+    titulo_textual: Build Radically Candid Relationships
+
+**LAS CUATRO CIFRAS DEL ENCARGO CUADRAN CON MI MEDICION**, y lo digo porque el encargo las
+publica como *aviso que te doy yo y que nadie ha medido todavia*. **Ya estan medidas.**
+
+> ## **Y AQUI VA LA RESPUESTA AL AVISO, CON SU CIFRA: DE LOS CUATRO CAPITULOS ENTRA UNO, `cap_04`, Y DIGO POR QUE**
+>
+> **`cap_04` ES EL MAS PEQUENIO DE LOS CUATRO (6.263 palabras, el 15,5 por ciento de las
+> 40.284)**, y cerrarlo entero con sus seis candidatos por la aduana, su frontera publicada
+> antes de cortar y su relectura de fidelidad paso a paso **agoto el turno que quedaba tras
+> la insercion del lote 3**. **No abro `cap_05`, `cap_06` ni `cap_07`, y no los abro a
+> medias**, que es lo que el encargo prohibe expresamente: *un capitulo cerrado vale mas que
+> dos a medias, y la unidad atomica sigue siendo el capitulo*.
+>
+> **LA CIFRA QUE DEJO PARA QUE EL LOTE 5 SE DECIDA CON ELLA DELANTE, y es la que el encargo
+> pide:**
+>
+> | | |
+> |---|---:|
+> | palabras cerradas en esta vuelta | **6.263** de 40.284 (**15,5 por ciento**) |
+> | palabras que quedan en cola | **34.021** (`cap_05`, `cap_06`, `cap_07`) |
+> | candidatos por mil palabras en `cap_04` | **0,96** (6 candidatos / 6.263 palabras) |
+> | la misma tasa en el lote 3 entero, medida hoy | **1,94** (136 candidatos / 70.041 palabras) |
+>
+> **LAS DOS CIFRAS DEL CONTRASTE SALEN DE INSTRUMENTOS CORRIDOS HOY, Y NO DE UN REPORTE
+> ANTERIOR** (`EXTRACTOR.md` 5):
+>
+>     $ cd fuentes/zhuo_manager && for f in cap_*.md; do sed -n '8,$p' $f | wc -w; done  ->  suma 70041
+>     $ ls cuarentena/_insertados/zhuo_manager/*.json | wc -l   ->  128   (estado intermedio: la insercion va corriendo)
+>     $ ls cuarentena/zhuo_manager/*.json | wc -l               ->    8   (idem)
+>     128 + 8 = 136 candidatos, que es el lote 3 entero, sus dos mitades sumadas
+>
+> **CORRECCION DECLARADA DE UNA CIFRA MIA, ANTES DE PUBLICARLA:** en el borrador de esta
+> tabla escribi *68 candidatos / 71.606 palabras* y una conclusion que decia que las dos
+> tasas eran iguales. **Las dos piezas estaban mal.** El **68** es solo la mitad del lote,
+> la que estaba en la bandeja al abrir la vuelta 15, y la otra mitad, los 68 que entraron en
+> vueltas anteriores, tambien es del lote 3. **Son 136.** Y las **71.606** palabras eran
+> copiadas de un reporte anterior, que la seccion 5 prohibe como fuente: **medidas hoy son
+> 70.041.** El texto malo no se publica pero la correccion si se declara, porque la cifra
+> mala ya habia entrado en mi borrador y esta especie de error es la que la regla caza.
+>
+> **ASI QUE LA CONCLUSION ES LA CONTRARIA DE LA QUE IBA A ESCRIBIR: `cap_04` DE ESTE LIBRO
+> RINDE LA MITAD QUE EL LOTE 3**, 0,96 candidatos por mil palabras contra 1,94. **Un libro
+> mas gordo por capitulo Y mas pobre en procedimiento por palabra**, que es la peor
+> combinacion para un volumen firmado en capitulos.
+>
+> **Y LA MEDIDA QUE MEJOR DECIDE EL LOTE 5 NO ES NINGUNA DE LAS DOS TASAS: ES EL RITMO DE
+> PALABRAS POR VUELTA.** El lote 3 son **70.041 palabras en las cinco vueltas cuyas actas 9 a
+> 13 firmaron sus pasos** (las cinco actas las nombra el propio encargo en su TAREA 0), o
+> sea **14.008 palabras por vuelta**. **Los cuatro capitulos que hoy se me encargan son
+> 40.284, que son 2,88 veces ese ritmo.** Por eso no caben: no es que este capitulo saliera
+> lento, es que el encargo pide en una vuelta casi el triple de lo que la campania ha
+> sostenido en cinco.
+>
+> **NO LO TRAIGO COMO EXCUSA NI COMO PARADA** (el encargo lo excluye de las dos listas):
+> lo traigo como la medida que faltaba, y **propongo en mi sede** (`EXTRACTOR.md` 14) que el
+> volumen del lote 5 se fije **en palabras y no en capitulos**. No me lo adjudico.
+
+## J.5.1. LA FRONTERA DE `cap_04`, **PUBLICADA ANTES DE CORTAR**, PIEZA A PIEZA
+
+*`EXTRACTOR.md` 10: la frontera se lee y se publica **antes** de tocar nada. Las cabeceras
+salen del instrumento, no de mi lectura:*
+
+    $ grep -n '^[A-Z][A-Z0-9 ,:.-]\{4,90\}$' fuentes/scott_radical_candor/cap_04.md
+    11:IT’S CALLED MANAGEMENT, AND IT’S YOUR JOB
+    35:HOW TO BE A GOOD BOSS
+    65:RELATIONSHIPS, NOT POWER, DRIVE YOU FORWARD
+    79:RADICAL CANDOR
+    95:CARE PERSONALLY: THE FIRST DIMENSION OF RADICAL CANDOR
+    123:CHALLENGE DIRECTLY: THE SECOND DIMENSION OF RADICAL CANDOR
+    143:WHAT RADICAL CANDOR IS NOT
+    155:RADICAL CANDOR IS UNIVERSALLY HUMAN, BUT INTERPERSONALLY AND CULTURALLY RELATIVE
+    181:GET, GIVE, AND ENCOURAGE GUIDANCE
+
+| # | pieza | tramo | palabras | **veredicto de la vara** | que sale |
+|---:|---|---|---:|---|---|
+| 0 | epigrafe `Bringing your whole self to work` | L009 | 6 | **no es nodo**: es el subtitulo del capitulo | cero |
+| 1 | `IT S CALLED MANAGEMENT, AND IT S YOUR JOB` | L011 a L034 | 596 | **POSTURA mas CASO**: el dia de Juice Software y la frase de Leslie Koch. Cero inventario de medios | **cero** |
+| 2 | `HOW TO BE A GOOD BOSS` | L035 a L064 | 1.018 | **NOMBRA las tres areas y no las procedimenta.** La enumeracion se lee en la pieza 3, que si trae el ciclo | cero, y se dice |
+| 3 | `RELATIONSHIPS, NOT POWER, DRIVE YOU FORWARD` | L065 a L078 | 504 | **PROCEDIMIENTO, y es mi discutible 3** | **1** |
+| 4 | `RADICAL CANDOR` | L079 a L094 | 714 | **NO SE EXTRAE A PROPOSITO**, y el motivo esta abajo en `J.5.2` | cero, declarado |
+| 5 | `CARE PERSONALLY` | L095 a L122 | 1.367 | **PROCEDIMIENTO**: cuatro medios, tres descartes, dos causas y un precio | **1** |
+| 6 | `CHALLENGE DIRECTLY` | L123 a L142 | 747 | **DOS PROCEDIMIENTOS**: el manejo del enfado y la invitacion al desafio hacia arriba | **2** |
+| 7 | `WHAT RADICAL CANDOR IS NOT` | L143 a L154 | 357 | **PROCEDIMIENTO EN NEGATIVO**: cinco noes, uno por parrafo | **1** |
+| 8 | `UNIVERSALLY HUMAN, BUT [...] CULTURALLY RELATIVE` | L155 a L178 | 948 | **PROCEDIMIENTO**, con cuatro casos de los que solo uno da medios | **1** |
+| 9 | cola: el titulo del capitulo siguiente | L179 a L181 | 6 | **no es de este capitulo** | cero |
+
+**LA COMPROBACION DE HUECOS Y SOLAPES, CORRIDA A MAQUINA Y NO DE OJO:**
+
+    $ python -c "suma las palabras de las nueve piezas y las compara con el cuerpo"
+    suma de las piezas:                      6257
+    palabras del cuerpo (sed 8,$ | wc -w):   6263
+    diferencia: 6  ->  es exactamente el epigrafe de L009, la pieza 0
+
+**CERO HUECOS Y CERO SOLAPES.** Las nueve piezas cubren L009 a L181 sin dejar un bloque
+fuera, y **esa comprobacion es la que la vuelta 7 no hizo** y le costo la parada del bucle
+(`EXTRACTOR.md` 15.5): alli una tabla que se anunciaba completa dejaba cuatro bloques
+fuera. **Aqui la suma cierra al numero.**
+
+> **UNA CONVENCION QUE DECLARO PARA TODAS LAS CITAS DE ESTA SECCION.** El libro usa el guion
+> largo, y esta casa lo prohibe **en todo el repo** (`src/guiones.py`: *cero guiones largos y
+> cero guiones medios en TODO el repo*). **Cuando una cita verbatim del libro llega a un
+> guion largo, la corto ahi y pongo `[...]`.** No lo sustituyo por otro signo, porque eso
+> seria reescribir la cita en silencio. **El numero de linea queda siempre pegado**, asi que
+> la cita entera se puede reabrir con `sed -n`.
+
+## J.5.2. **LO QUE NO EXTRAIGO DE `cap_04`, DECLARADO UNO A UNO CON SU MOTIVO**
+
+*No es lo que me sobro: son cuatro decisiones, y tres de ellas podrian haber dado nodo.*
+
+**1. LA PIEZA 1 (L011 a L034), 596 palabras: CERO.** Es el dia que la autora pasa
+consolando a tres personas y la frase de su coach. **La doctrina es que el trabajo emocional
+ES el puesto**, y es de las mas citadas del libro. **No da nodo porque no hay inventario:**
+el texto no nombra ni un medio, ni una etapa, ni un objeto de trabajo. Cualquier paso que
+escribiera (*aparta la manana*, *pregunta por el hijo enfermo*) **lo escribiria yo**, y es
+literalmente la especie que `D.30` mide: *un parrafo pobre no produce un nodo pobre, produce
+un nodo inventado*.
+
+**2. LA PIEZA 2 (L035 a L064), 1.018 palabras: CERO, Y ES LA MAS GRANDE QUE DEJO VACIA.**
+
+    $ grep -n -o "three areas of responsibility that managers do have: guidance, team-building, and results\." fuentes/scott_radical_candor/cap_04.md
+    47:three areas of responsibility that managers do have: guidance, team-building, and results.
+
+**El texto dice CUANTAS son y las nombra**, que es la forma de `D.37`. **Y aun asi no
+extraigo aqui**, por dos motivos separados: (a) las tres son **los titulos de los tres
+capitulos siguientes**, asi que su procedimiento vive en `cap_05`, `cap_06` y `cap_07`, y
+esto es el caso literal de *solo el nombre de otro*; (b) el resto de la pieza (L049 a L059)
+es **la lista de preguntas que la gente le hace a la autora**, no un inventario de medios.
+**La enumeracion se cobra UNA sola vez, y la cobro en la pieza 3**, que es donde el texto
+anade el ciclo virtuoso y el vicioso.
+
+**3. LA PIEZA 4 (L079 a L094), 714 palabras: CERO A PROPOSITO, Y ES LA DECISION MAS DURA DE
+ESTE CAPITULO.** Es la seccion titular del libro: las dos dimensiones, `Care Personally` y
+`Challenge Directly`, con su cuenta dicha (*two dimensions*) y sus dos nombres. **Es una
+cabeza de `D.37` de manual.** No la extraigo porque **su nodo ya existe y esta en la misma
+bandeja**: `desplegar_marco_franqueza_radical`, escrito en la vuelta 14 desde `cap_03`, es
+el marco de esas mismas dos dimensiones cruzadas. **Un segundo nodo que vuelva a nombrar las
+dos dimensiones seria el gemelo de su propio donante**, que es exactamente lo que `P.19`
+manda no fabricar. **Las dos partes si entran**, y una es `cuidar_persona_completa_equipo`.
+
+**4. UNA LINEA CONCRETA DE LA PIEZA 4 QUE TAMBIEN DEJO FUERA, Y LA DIGO PORQUE ES UNA
+ENUMERACION DE CINCO:** L087 numera cinco cosas que la gente hace mas cuando confia en ti
+(*accept and act on your praise and criticism*, *tell you what they really think*, ...).
+**Es un inventario de EFECTOS, no de medios**, y `D.27` restriccion 1 lo tumba por su
+nombre: *un inventario de METAS o de FINES no cuenta*. **Nombrar adonde hay que llegar sigue
+siendo nombrar.**
+
+## J.5.3. LOS SEIS CANDIDATOS DE `cap_04`
+
+| # | id | pieza | pasos | de que va |
+|---:|---|---:|---:|---|
+| 1 | `revisar_ciclo_responsabilidades_relaciones` | 3 | 7 | las tres responsabilidades, la lista que fortalece y la que erosiona |
+| 2 | `cuidar_persona_completa_equipo` | 5 | 10 | cuidar personalmente: cuatro medios, tres descartes, dos causas, un precio |
+| 3 | `manejar_enfado_tras_desafiar` | 6 | 7 | que hacer cuando lo que dijiste duele |
+| 4 | `invitar_desafio_hacia_arriba` | 6 | 7 | que te desafien a ti tan directo como tu desafias |
+| 5 | `delimitar_franqueza_radical_cinco_noes` | 7 | 8 | los cinco noes y la regla de las tres cosas sin decir |
+| 6 | `ajustar_franqueza_oido_oyente` | 8 | 8 | medir en el oido del oyente y buscar la forma local de cada dimension |
+| | | | **47** | |
+
+## J.5.4. **LA RELECTURA DE FIDELIDAD `D.30`, DENTRO DEL ACTO, PASO A PASO CONTRA SU LINEA**
+
+*`EXTRACTOR.md` 15.4: **ninguna guarda de esta casa ve un paso que tu escribiste y el libro
+no dice.** Marco cada paso **TRANSCRIPCION** o **PUENTE**, y el puente se retira o se
+reescribe **en el mismo acto**.*
+
+### `cuidar_persona_completa_equipo`, 10 pasos
+
+| paso | marca | la salida de `grep -n`, pegada |
+|---:|---|---|
+| P1 | TRANSCRIPCION | `111:the injunction to “keep it professional.” That phrase denies something essential.` y `115:begin to feel they’re better or smarter than the people who work for them.` |
+| P2 | TRANSCRIPCION | `115:being a boss is a job, not a value judgment.` |
+| P3 | TRANSCRIPCION | `117:it’s not enough to care about the person’s work or the person’s career.` |
+| P4 a P7 | TRANSCRIPCION | `119:It’s about finding time for real conversations; about getting to know each other at a human level; about learning what’s important to people; about sharing with one another what makes us want to get out of bed in the morning and go to work[...]` |
+| P8 | TRANSCRIPCION | `113:modeling the behavior yourself by showing some vulnerability to the people who report to you[...]` |
+| P9 | TRANSCRIPCION | `119:not about memorizing birthdays and names of family members.` |
+| P10 | TRANSCRIPCION | `121:prepared to be hated in return` |
+
+**10 de 10 TRANSCRIPCION, CERO PUENTES**, y el aviso de `D.30` lo anticipaba: **es el parrafo
+mas rico del capitulo** (L119 nombra cuatro medios en una sola frase) y el parrafo mas rico
+del lote 1 dio **0 por ciento** de puentes.
+
+### `manejar_enfado_tras_desafiar`, 7 pasos, **los siete del mismo parrafo L131**
+
+| paso | marca | la salida de `grep -n`, pegada |
+|---:|---|---|
+| P1 | TRANSCRIPCION | `131:if nobody is ever mad at you, you probably aren’t challenging your team enough.` |
+| P2 | TRANSCRIPCION | `131:The key, as in any relationship, is how you handle the anger.` |
+| P3 | TRANSCRIPCION | `131:When what you say hurts, acknowledge the other person’s pain.` |
+| P4 | TRANSCRIPCION | `131:Don’t pretend it doesn’t hurt or say it “shouldn’t” hurt[...]` |
+| P5 | TRANSCRIPCION | `131:Eliminate the phrase “don’t take it personally” from your vocabulary[...]` |
+| P6 | TRANSCRIPCION | `131:Instead, offer to help fix the problem.` |
+| P7 | TRANSCRIPCION | `131:don’t pretend it isn’t a problem just to try to make somebody feel better.` |
+
+**7 de 7 TRANSCRIPCION.** Es el tramo mas facil de todo el capitulo **porque el libro ya lo
+escribio en imperativo**: cinco ordenes seguidas en un parrafo. **Cuando el libro manda, el
+extractor transcribe y no decide.**
+
+### `invitar_desafio_hacia_arriba`, 7 pasos
+
+| paso | marca | la salida de `grep -n`, pegada |
+|---:|---|---|
+| P1 | TRANSCRIPCION | `133:The hardest part of building this trust is inviting people to challenge you, just as directly as you are challenging them.` |
+| P2 | TRANSCRIPCION | `133:encourage them to challenge you directly enough that you may be the one who feels upset or angry.` |
+| P3 | TRANSCRIPCION | `139:Building enough trust between people to enable reciprocal challenge irrespective of reporting relationship takes time and attention.` |
+| P4 | **TRANSCRIPCION DE CASO** | `139:If we have the data about what works, let’s look at the data, but if all we have are opinions, let’s use yours,` |
+| P5 | **TRANSCRIPCION DE CASO** | `139:Russ agreed to Elisse’s changes` |
+| P6 | **TRANSCRIPCION DE CASO** | `141:She hadn’t, and to make that clear Russ sent across the “Help me, help you” Jerry Maguire clip` |
+| P7 | TRANSCRIPCION | `133:you’ll find that you learn a great deal about yourself and how people perceive you` |
+
+> ### **LA MARCA NUEVA QUE INVENTO AQUI, Y LA DECLARO COMO DISCUTIBLE 4 PORQUE ES UNA MARCA Y NO UN PASO**
+>
+> **`TRANSCRIPCION DE CASO` no esta en `D.30`: la escribo yo para tres pasos de este nodo.**
+> Los tres salen de la historia de Russ y Elisse, que el libro cuenta **en pasado y en
+> narracion**, y yo los escribo **en imperativo**. **El medio es del libro, palabra por
+> palabra; el modo verbal es mio.** Manual 3.5 autoriza que el caso entre como ejemplo
+> nombrado dentro de la doctrina, y por eso los tres pasos llevan *que es lo que Russ hizo* y
+> el nombre pegado. **Pero convertir una narracion en orden es la especie donde un puente se
+> esconde mejor**, y la marco antes de que nadie me la busque. **Propongo en mi sede** que
+> `D.30` se pronuncie sobre esta marca. No la doy por buena.
+
+### `ajustar_franqueza_oido_oyente`, 8 pasos
+
+| paso | marca | la salida de `grep -n`, pegada |
+|---:|---|---|
+| P1 | TRANSCRIPCION | `157:measured at the listener’s ear, not at the speaker’s mouth.` |
+| P2 | TRANSCRIPCION | `157:not a personality type or a talent or a cultural judgment.` |
+| P3 | TRANSCRIPCION | `157:Radical Candor works only if the other person understands that your efforts at caring personally and challenging directly are delivered in good faith.` |
+| P4 | TRANSCRIPCION | `159:what seemed Radically Candid to one person or team may feel too obnoxious (or too touchy-feely) to another.` |
+| P5 | TRANSCRIPCION | `159:requires even more adjustment when we go from one company to another, and more yet when we go from one country to another.` |
+| P6 | TRANSCRIPCION | `171:Being polite was their preferred way of showing they cared personally.` |
+| P7 | TRANSCRIPCION | `171:Being persistent was the way they were most comfortable challenging Google’s product direction.` |
+| P8 | TRANSCRIPCION | `171:encouraged that team in Tokyo to be “politely persistent.”` |
+
+**8 de 8 TRANSCRIPCION**, y lo que hay que mirar aqui no son los pasos sino **los cuatro
+casos que NO entraron en ellos**: Jerusalen (L163 a L167), Tokio (L169 a L173), Pekin
+(L175) y los britanicos (L177). **Solo Tokio da medios**, porque es el unico donde el texto
+nombra **la forma local de cada dimension por separado**. Los otros tres quedan en el
+`resumen_teorico` como ejemplos nombrados, que es su sitio: **el caso no es la casa**.
+
+### `delimitar_franqueza_radical_cinco_noes`, 8 pasos
+
+| paso | marca | la salida de `grep -n`, pegada |
+|---:|---|---|
+| P1 | TRANSCRIPCION | `145:not a license to be gratuitously harsh or to “front-stab.”` |
+| P2 | TRANSCRIPCION | `147:also not an invitation to nitpick.` |
+| P3 | TRANSCRIPCION | `147:leave three unimportant things unsaid each day.` |
+| P4 | TRANSCRIPCION | `149:not a hierarchical thing. To be Radically Candid, you need to practice it “up,” “down,” and “sideways.”` |
+| P5 | TRANSCRIPCION | `149:you CAN create a Radically Candid microcosm for yourself and the people on your team.` |
+| P6 | TRANSCRIPCION | `149:entitled to proceed with a little more caution with your boss and your peers.` |
+| P7 | TRANSCRIPCION | `151:not about schmoozing, nor is it about endless extroversion that exhausts the introverts on your team or wears you out if you happen to be the introvert.` |
+| P8 | TRANSCRIPCION | `153:not unique to the culture in Silicon Valley, nor is it uniquely American.` |
+
+**8 de 8 TRANSCRIPCION, y UNA COSA MIA QUE VA EN EL TITULO Y LA DIGO:** el titulo dice
+**cinco** noes y **el libro no dice la palabra cinco**. La cuenta sale de contar sus
+parrafos, no de su texto, **asi que esto NO es `D.37` sino `D.29`**, y queda escrito en el
+`resumen_teorico` del propio candidato con esas palabras. **Un numero en un titulo que el
+libro no pone es una cuenta del extractor**, y por eso no se calla.
+
+### `revisar_ciclo_responsabilidades_relaciones`, 7 pasos, **Y EL PUENTE QUE SI HUBO**
+
+| paso | marca | la salida de `sed -n`, pegada |
+|---:|---|---|
+| P1 | TRANSCRIPCION | `69:[...] the central difficulty of management [...]: establishing a trusting relationship with each person who reports directly to you.` |
+| P2 | TRANSCRIPCION | `69:Many things get in the way, though: power dynamics first and foremost, but also fear of conflict, worry about the boundaries of what’s appropriate or “professional,” fear of losing credibility, time pressure.` |
+| P3 | TRANSCRIPCION | `71:your three responsibilities as a manager: 1) to create a culture of guidance [...]; 2) to understand what motivates each person on your team [...]; and 3) to drive results collaboratively.` |
+| P4 | TRANSCRIPCION | `73:You strengthen your relationships by learning the best ways to get, give, and encourage guidance; by putting the right people in the right roles on your team; and by achieving results collectively [...]` |
+| P5 | TRANSCRIPCION | `73:When you fail to give people the guidance they need [...], or put people into roles they don’t want or aren’t well-suited for, or push people to achieve results they feel are unrealistic, you erode trust.` |
+| P6 | TRANSCRIPCION | `73:you erode trust.` |
+| P7 | TRANSCRIPCION | `75:Your relationships with your direct reports affect the relationships they have with their direct reports, and your team’s culture.` |
+
+> # **EL PUENTE DE ESTA VUELTA, CAZADO DENTRO DEL ACTO Y RETIRADO ANTES DE QUE LA ADUANA VIERA EL FICHERO**
+>
+> **EN MI BORRADOR, LOS PASOS 3, 4 Y 5 ERAN OTROS TRES:** habia **emparejado cada
+> responsabilidad con su forma virtuosa y su forma viciosa**, una a una, asi:
+>
+>     P3 (borrador): Revisa la primera responsabilidad, crear una cultura de guia. Su forma
+>                    virtuosa es aprender las mejores maneras de recibir, dar y fomentar
+>                    guia. Su forma viciosa es no dar a la gente la guia que necesita.
+>
+> **EL LIBRO NO DICE ESO.** El libro pone **tres listas de tres en el mismo orden** (L071 las
+> responsabilidades, L073 lo que fortalece y lo que erosiona) **y en ningun sitio dice que la
+> pieza primera de una sea la forma de la pieza primera de otra.** Y el emparejamiento se
+> rompe en cuanto se mira de cerca: **la segunda responsabilidad es *entender que motiva a
+> cada persona* y la segunda pieza de la lista que fortalece es *poner a la gente adecuada en
+> el papel adecuado*. No son lo mismo.**
+>
+> **ES UNA ESPECIE DE PUENTE QUE `D.30` NO TENIA EN SU TABLA.** Las tres que el lote 1 pago
+> eran **el destinatario**, **el periodo** y **el responsable**, y las tres son **contenido
+> que el extractor anade**. Esta no anade contenido: **las nueve piezas son del libro, una a
+> una.** Lo que anade es **la ESTRUCTURA que las une**. La llamo **el puente de estructura**,
+> y es peor que las otras tres en una cosa concreta: **no se ve al leer el paso**, porque
+> cada mitad del paso es una cita buena.
+>
+> **COMO QUEDO:** las tres listas se escriben **enteras y separadas, en el orden del texto**
+> (P3, P4 y P5), y **el lector las cruza si quiere**. El nodo perdio la elegancia del
+> emparejamiento y gano ser del libro.
+>
+> **PASOS ANADIDOS O CAMBIADOS DESPUES DE LA RELECTURA: TRES**, y los tres se volvieron a
+> marcar contra su linea, que es lo que manda el remedio de `H.1.b`.
+
+### **EL SALDO DE FIDELIDAD DE `cap_04`, EN UNA TABLA**
+
+| nodo | pasos | TRANSCRIPCION | de caso | **PUENTE retirado** |
+|---|---:|---:|---:|---:|
+| `cuidar_persona_completa_equipo` | 10 | 10 | 0 | 0 |
+| `manejar_enfado_tras_desafiar` | 7 | 7 | 0 | 0 |
+| `invitar_desafio_hacia_arriba` | 7 | 4 | **3** | 0 |
+| `ajustar_franqueza_oido_oyente` | 8 | 8 | 0 | 0 |
+| `delimitar_franqueza_radical_cinco_noes` | 8 | 8 | 0 | 0 |
+| `revisar_ciclo_responsabilidades_relaciones` | 7 | 7 | 0 | **3** |
+| **total** | **47** | **44** | **3** | **3** |
+
+**TASA DE PUENTES DE `cap_04`: 3 de 47, el 6,4 por ciento**, contra el **36 por ciento** del
+lote 1 (13 de 36) que compro esta regla. **Y los tres se retiraron dentro del acto**, asi
+que el fichero que la aduana vio no los tuvo nunca: **aplicada al escribir, la regla sale
+sin deuda**, que es lo que `D.30` prometia.
+
+---
+
+# J.4. TAREA 1 CERRADA: **EL LOTE 3 ENTERO ESTA DENTRO, 203 NODOS, Y LA CIFRA ES LA QUE SE PUBLICO ANTES**
+
+## J.4.a. EL CENSO AL CERRAR, **RECOMPUTADO Y NO COPIADO** (`EXTRACTOR.md` 4)
+
+    $ wc -l < dataset/nodos.jsonl                        ->  203
+    $ wc -l < bitacora/VEREDICTOS.jsonl                  ->  133
+    $ wc -l < config/pares_mutuos.jsonl                  ->    1
+    $ ls cuarentena/zhuo_manager/*.json | wc -l          ->    0
+    $ ls cuarentena/_insertados/zhuo_manager/*.json | wc -l  ->  136
+
+| | pronosticado en `J.3.a` / `J.3.d.4` | **medido al cerrar** | |
+|---|---:|---:|---|
+| nodos en el grafo | **203** (135 mas 68, y 186 mas 17) | **203** | **CLAVA** |
+| archivados de `zhuo_manager` | **136** (119 mas 17) | **136** | **CLAVA** |
+| pendientes en la bandeja | **0** | **0** | **CLAVA** |
+
+**LAS TRES CIFRAS QUE PUBLIQUE ANTES DE INSERTAR SALIERON EXACTAS**, y las dos aritmeticas
+distintas convergen en el mismo 203: la del bloque de apertura (135 mas los 68 del lote) y
+la de la reanudacion (186 mas los 17 que quedaban). **No hay diferencia que declarar.**
+
+    $ python -c "cruza los ids del grafo contra las dos carpetas"
+    archivados fuera del grafo: []
+    pendientes: []
+
+**CERO Y CERO OTRA VEZ**, ahora con la bandeja vacia: **los 136 candidatos del lote 3 viven
+en el grafo y los 136 estan archivados** (`D.31`, en el mismo acto).
+
+## J.4.b. LA CORRIDA DE ESTE TURNO, CANDIDATO A CANDIDATO, PEGADA DEL LOG
+
+    $ python .tmp_insertar.py   (el conductor: forja.py insertar UNA VEZ POR CANDIDATO,
+                                 y se detiene en el primer codigo distinto de cero)
+    #52 alinear_prioridades_reporte_directivo OK y archivado
+    #53 decidir_directivo_no_encaja_papel OK y archivado
+    #54 entregar_problema_dificil_reporte OK y archivado
+    #55 equilibrar_microdireccion_ausencia OK y archivado
+    #56 facilitar_gente_diga_verdad OK y archivado
+    #57 pasar_direccion_directa_indirecta OK y archivado
+    #58 reemplazarse_trabajo_propio OK y archivado
+    #59 reservar_valor_unico_prioridades_arriba OK y archivado
+    #60 sostener_cambio_contexto_continuo OK y archivado
+    #61 comunicar_valores_diez_formas OK y archivado
+    #62 contrastar_cultura_actual_aspirada OK y archivado
+    #63 inventar_tradiciones_celebrar_valores OK y archivado
+    #64 juzgar_cultura_renuncias_equipo OK y archivado
+    #65 reconocer_decision_dificil_valores OK y archivado
+    PARADA en #66 actuar_conducta_contraria_valores   codigo 2
+    insertados en esta corrida: 14
+
+    $ python forja.py insertar cuarentena/zhuo_manager/actuar_conducta_contraria_valores.json --sin-preguntas --veredicto "reconocer_decision_dificil_valores|SANO|..."
+    GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+      nodos en el grafo: 201
+      veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+    $ python .tmp_insertar.py   (reanudado tras archivar el #66)
+    #67 revisar_incentivos_trampas_equipo OK y archivado
+    #68 vivir_primero_valor_declarado OK y archivado
+    CORRIDA COMPLETA. insertados en esta corrida: 2
+
+**17 DE 17, Y UN SOLO BLOQUEO EN TODO EL TRAMO.** No es suerte: **los nueve bloqueos que el
+informe de lote pronosticaba contra el grafo vivian todos en `cap_07` a `cap_09`**, que
+entraron antes del corte. **Lo que quedaba para este tramo era el bloqueo interno**, y fue
+exactamente uno.
+
+## J.4.c. > # **EL BLOQUEO, Y ES LA PRUEBA DE QUE `D.36` NO ERA UN TRAMITE**
+
+**EL VECINO QUE LA ADUANA LEVANTO ES `reconocer_decision_dificil_valores`, Y ES EL PAR
+NUMERO 1 DE LOS OCHO ASIMETRICOS DE `J.3.c`.** El unico que vivia entero en este tramo, el
+que `J.3.d.5` publico **antes** de insertar, y el que obligo a bajar el candidato del puesto
+61 al 66:
+
+    $ salida de la aduana, pegada
+    VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+      vecino reconocer_decision_dificil_valores
+        levantada por: similitud_texto
+        similitud_texto    0.355 (umbral 0.35)
+        familia_id         0.143 (umbral 0.30)
+        paso_contra_nodo   0.436 (umbral 0.60)
+        paso 5 del candidato contra paso 3 de reconocer_decision_dificil_valores
+
+> **EL 0,355 MEDIDO HOY POR LA ADUANA ES EL MISMO 0,355 QUE `J.3.c` HABIA PUBLICADO EN SU
+> FILA 1, ANTES DE INSERTAR NI UNO.** La prediccion y la medicion coinciden al tercer
+> decimal. **Y si no hubiera reordenado, este par no se habria leido NUNCA**: mide 0,355 en
+> este sentido y **no levanta en el contrario**.
+>
+> **ASI QUE LA RESPUESTA AL PUNTO 2 DEL ENCARGO YA NO ES SOLO *SI HIZO FALTA*: ES *HIZO
+> FALTA Y SE COBRO*.** Cuatro lecturas se habrian perdido en el lote entero, y esta es la
+> cuarta, cazada en el acto.
+
+### EL VEREDICTO, `SANO`, CON SU RAZON (esta entera en la linea 133 de la bitacora)
+
+**LEI A LOS DOS VECINOS ENTEROS ANTES DE ESCRIBIRLO** (`EXTRACTOR.md` 2), y lo que decide no
+es la señal:
+
+| | `reconocer_decision_dificil_valores` | `actuar_conducta_contraria_valores` |
+|---|---|---|
+| **activacion** | un reporte hace algo dificil **EN el espiritu** de los valores | alguien hace algo que **SE SALE** de tus valores |
+| **entregable** | el reporte reconocido y las gracias dadas | la tension rebajada y lo inaceptable dicho en privado |
+| **el paso que cruza** | P3 *Admitele que fue dificil* | P5 *Despues, en privado, dile que lo que hizo es inaceptable* |
+
+**SE PARECEN EN LA FORMA Y SON OPUESTOS EN EL OBJETO:** los dos son un imperativo corto
+dirigido a la persona y en privado, y uno agradece lo correcto mientras el otro reprueba lo
+inaceptable. **Eso es lo que `similitud_texto` mide y lo que no puede distinguir.**
+
+**Y LO QUE DECIDE `SANO` LO ESCRIBE EL LIBRO, NO YO:** los dos cuelgan de **la misma linea**
+de `revisar_incentivos_trampas_equipo`, su paso 1, que manda *asegurarte de que tu entorno
+PREMIA a la gente que se comporta segun los valores Y PIDE CUENTAS a la gente cuando no lo
+hace*. **El vecino es la mitad de premiar y el candidato es la mitad de pedir cuentas.**
+
+    $ python -c "imprime el paso 1 de revisar_incentivos_trampas_equipo"
+    P1 Cuenta con que hablar y predicar con el ejemplo no basta: la pieza final es asegurarte
+       de que tu entorno premia a la gente que se comporta segun los valores de tu equipo y
+       pide cuentas a la gente cuando no lo hace.
+
+**SON HERMANOS, Y `EXTRACTOR.md` 15.6 LO DICE CON ESAS PALABRAS:** *una cabeza de seis vias y
+un vecino que no es ninguna de las seis son hermanos, y su veredicto es `SANO`*. **Quitar uno
+no deja al otro incompleto: deja la linea de la madre atendida a medias.** Por eso no es
+`CONTINUA` ni `REPITE`.
+
+**Y DE ESA MISMA LECTURA SALEN DOS ARISTAS QUE NINGUNA SEÑAL VA A LEVANTAR**, y van abajo.
+
+## J.4.d. `D.37` Y `D.29`: **LAS ARISTAS ESPERADAS, PUBLICADAS ANTES DE ESCRIBIR NI UNA**
+
+*El punto 4 del encargo: **publica las esperadas antes y cuentalas despues**. Esta tabla se
+escribe y se commitea **antes** de correr el primer `forja.py arista`, para que el conteo de
+despues pueda contradecirla.*
+
+**LO PRIMERO, Y ES EL HALLAZGO MAS GRANDE DE LA TAREA 1:**
+
+    $ python -c "imprime prev y sig de las cinco reuniones y su cabeza"
+    fijar_resultado_excelente_reunion        sig: []
+    dirigir_reunion_decision                 prev:[] sig:[]
+    dirigir_reunion_generar_ideas            prev:[] sig:[]
+    dirigir_reunion_informativa              prev:[] sig:[]
+    dirigir_reunion_reforzar_relaciones      prev:[] sig:[]
+    dirigir_reunion_revision_trabajo         prev:[] sig:[]
+
+> # **UNA CABEZA Y SUS CINCO PARTES, LAS SEIS VIVAS EN EL GRAFO, Y CERO ARISTAS ENTRE ELLAS.**
+>
+> **La aduana levanto los diez pares de las cinco reuniones ENTRE SI y escribio `SANO` en los
+> diez, correctamente.** Lo que no levanto **ni una sola vez** es el par que importa: **cada
+> una contra su cabeza.** Es `D.19` en carne: **la señal 3 levanta el 3 por ciento de las
+> aristas declaradas, y esperarla es esperar a algo que esta escrito que no llega.**
+
+**Y DIGO BAJO QUE REGLA VAN, PORQUE NO ES `D.37`:** el paso 4 de la cabeza dice *solo hay un
+punado de razones para que la gente se junte en persona, y el libro las nombra una a una*.
+**Un punado no es una cuenta.** Con la correccion del titular del 11 sep 2026 delante (*la
+cuenta es condicion, no un adorno del ejemplo*), **esto es `D.29` y no `D.37`**, y entonces
+la arista se declara igual **pero con razon escrita que la sostenga**.
+
+| # | madre | paso | hijo | regla |
+|---:|---|---:|---|---|
+| 1 | `fijar_resultado_excelente_reunion` | **4** | `dirigir_reunion_decision` | `D.29` |
+| 2 | `fijar_resultado_excelente_reunion` | **4** | `dirigir_reunion_informativa` | `D.29` |
+| 3 | `fijar_resultado_excelente_reunion` | **4** | `dirigir_reunion_revision_trabajo` | `D.29` |
+| 4 | `fijar_resultado_excelente_reunion` | **4** | `dirigir_reunion_generar_ideas` | `D.29` |
+| 5 | `fijar_resultado_excelente_reunion` | **4** | `dirigir_reunion_reforzar_relaciones` | `D.29` |
+| 6 | `cambiar_formato_reunion_favorecer_participacion` | **5** | `abrir_discusion_notas_adhesivas` | `D.29` |
+| 7 | `revisar_incentivos_trampas_equipo` | **1** | `reconocer_decision_dificil_valores` | `D.29`, **de la lectura del bloqueo** |
+| 8 | `revisar_incentivos_trampas_equipo` | **1** | `actuar_conducta_contraria_valores` | `D.29`, **de la lectura del bloqueo** |
+| 9 | `revisar_proposito_personas_proceso` | **6** | `alinear_prioridades_reporte_directivo` | `D.29`, **de la TAREA 2** |
+| 10 | `mover_rapido_persona_papel_equivocado` | **8** | `decidir_directivo_no_encaja_papel` | `D.29`, **de la TAREA 2** |
+| 11 | `alinear_equipo_proposito_comun` | **2** | `ligar_tareas_proposito_organizacion` | `D.29`, **de la TAREA 2** |
+| 12 | `alinear_equipo_proposito_comun` | **4** | `comunicar_valores_diez_formas` | `D.29`, **de la TAREA 2** |
+| 13 | `fijar_proceso_trabajo_equipo` | **2** | `definir_quien_responde_cada_cosa` | `D.29`, **de la TAREA 2** |
+| 14 | `fijar_proceso_trabajo_equipo` | **7** | `contrastar_cultura_actual_aspirada` | `D.29`, **de la TAREA 2** |
+
+> ## **ARISTAS ESPERADAS: 14. Y LA ORDEN DEL PASO 4 DEL ENCARGO SE CUMPLE AQUI: ESTAN PUBLICADAS ANTES DE ESCRIBIR NI UNA.**
+>
+> **DE DONDE SALE CADA GRUPO, porque son tres fuentes distintas y conviene no mezclarlas:**
+>
+> - **1 a 6**: de las restricciones `D.29` que el propio orden de insercion de `J.3.c` ya
+>   llevaba dentro. **El orden las respeto, la madre entro antes que los hijos, y la arista
+>   no se cableo igual**, porque la aduana solo cablea cuando una señal levanta el par.
+> - **7 y 8**: de **la lectura del bloqueo de hoy**. No estaban en ninguna lista previa:
+>   salieron de leer a los dos vecinos enteros y encontrar la linea de la que cuelgan los dos.
+>   **Es el rendimiento de la regla que obliga a leer antes de juzgar.**
+> - **9 a 14**: de la **TAREA 2**, y son las que llevaban vueltas esperando. Las seis estaban
+>   escritas y razonadas en `REPORTE.md` (las cuatro primeras en tablas de veredicto de las
+>   vueltas 12 y 13, las dos ultimas en prosa en `H.2.3` como *ARISTA 1* y *ARISTA 2*), **y
+>   ninguna llego a su sede.** La linea que las dejo ahi esta pegada:
+>
+>       $ grep -n 'LAS DOS ARISTAS SE DECLARAN AQUI' docs/loop/REPORTE.md
+>       14531:**LAS DOS ARISTAS SE DECLARAN AQUI Y NO ENTRAN AL GRAFO EN ESTA CORRIDA.** Cuando Alexis
+>       $ sed -n '14531,14533p' docs/loop/REPORTE.md
+>       **LAS DOS ARISTAS SE DECLARAN AQUI Y NO ENTRAN AL GRAFO EN ESTA CORRIDA.** Cuando Alexis
+>       autorice la insercion, el comando es `python forja.py arista --madre
+>       fijar_proceso_trabajo_equipo --hijo <hijo> --paso <n> --razon "<la razon de arriba>"`.
+>
+>   **Y ESA CITA ME CAZO UN DESFASE DE UNA LINEA MIENTRAS LA ESCRIBIA, Y LO DEJO DICHO PORQUE
+>   ES EL RENDIMIENTO DE `D.35`:** habia teclado `14530` y la linea es la **14531**. **Una
+>   sola linea, y es la misma especie que en la vuelta 7 fueron ocho y costaron la parada del
+>   bucle.** El remedio funciono por lo que `D.35` dice que funciona: **obliga a teclear la
+>   salida, no a acordarse de mirarla.**
+>
+>   **`D.39` es la autorizacion que esa frase estaba esperando.** Hoy se corre el comando.
+>
+> **LAS 14 LLEVAN SU `--paso <n>` VERIFICADO CONTRA EL PASO DE LA MADRE ANTES DE ESCRIBIRSE**,
+> que es lo que hace la arista comprobable: el auditor abre el paso n y tiene que encontrar
+> ahi al hijo nombrado. **Los 14 pasos se abrieron y se leyeron; ninguno se dedujo del
+> titulo.**

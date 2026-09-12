@@ -1,0 +1,38 @@
+{
+  "id": "invitar_desafio_hacia_arriba",
+  "titulo": "Invitar a tus personas a cargo a desafiarte a ti tan directamente como tu les desafias a ellas",
+  "denominaciones": {
+    "nombre_largo": "La parte mas dificil de construir la confianza, segun el propio texto: que el desafio sea reciproco pese a la relacion de mando",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "encourage people to challenge you directly"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando alguien nuevo en tu equipo se guarda sus opiniones porque eres su jefe, o cuando notas que nadie te contradice nunca.",
+  "entregable_esperado": "Un desafio reciproco que no depende de quien manda: la otra persona discute contigo cada vez con mas fuerza y sabe que no ha cruzado ninguna raya.",
+  "pasos_accionables": [
+    "Trata esto como lo que el texto dice que es, y no como un extra: la parte mas dificil de construir esa confianza no es criticar el trabajo de alguien ni cambiarle el papel, es invitar a la gente a desafiarte a ti.",
+    "Animales a desafiarte lo bastante directamente como para que seas tu el que acabe molesto o enfadado, que es la vara que el texto pone.",
+    "Cuenta con que esto lleva tiempo y atencion, sobre todo con quien acaba de llegar y con quien te tiene por jefe: el texto lo dice de los dos.",
+    "Cuando la otra persona empiece a echarse atras en medio de un desacuerdo, dale la regla que el texto pone en boca de Russ: si tenemos datos sobre lo que funciona, miremos los datos, pero si todo lo que tenemos son opiniones, usemos la tuya.",
+    "Acepta entonces su cambio, que es lo que Russ hizo.",
+    "Cuando vuelva a discutir con mas fuerza y le preocupe haberse pasado de la raya con su jefe, dejale claro que no se ha pasado. Russ lo hizo mandandole el trozo de Jerry Maguire en el que el cliente le dice al agente: esa es la diferencia entre nosotros, tu crees que estamos peleando y yo creo que por fin estamos hablando.",
+    "Cuenta con lo que el texto dice que esto compra: aprendes mucho sobre ti mismo y sobre como te percibe la gente, y ese conocimiento permite a tu equipo y a ti conseguir mejores resultados."
+  ],
+  "resumen_teorico": "El libro separa dos mitades de la dimension de desafiar directamente y dice cual es la dificil: desafiar a otros no es el problema, invitar a que te desafien a ti si. El caso de Russ y Elisse entra aqui como ejemplo nombrado y no como casa propia, siguiendo la regla de que el caso no es la casa: los dos medios concretos que el caso aporta, la regla de datos contra opiniones y la senial explicita de que no se ha cruzado ninguna raya, son del caso y van con su nombre pegado. Lo que el texto NO dice, y por eso no esta escrito aqui, es como se pide ese desafio la primera vez, ni que se hace cuando la persona sigue callada despues de invitarla, ni cada cuanto se repite la invitacion. Tambien queda fuera la generalizacion de la regla de Russ mas alla del caso: el texto la presenta como lo que Russ dijo en esa conversacion, tomandola de Jim Barksdale de Netscape con la receta al contrario, y no como una regla que el libro mande aplicar siempre."
+,
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

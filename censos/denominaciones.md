@@ -420,3 +420,37 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-11 | repartir_equipo_cartera_horizontes | otro_idioma | take a portfolio approach | ingles | - |
 | 2026-09-11 | involucrar_varios_entrevistadores | nombre_largo | El reparto de preguntas entre entrevistadores y el registro independiente del veredicto antes de oir a los demas | castellano | - |
 | 2026-09-11 | involucrar_varios_entrevistadores | otro_idioma | get multiple interviewers involved, debrief | ingles | - |
+| 2026-09-11 | alinear_prioridades_reporte_directivo | nombre_largo | Por que el traspaso de informacion en la reunion individual es mala practica, y las preguntas con las que se crea la vision compartida | castellano | - |
+| 2026-09-11 | alinear_prioridades_reporte_directivo | otro_idioma | two heads, one shared vision | ingles | - |
+| 2026-09-11 | decidir_directivo_no_encaja_papel | nombre_largo | El coste que se paga y quien lo paga, la pregunta que aclara si volverias a contratarle, y el caso del equipo que crecio mas que su directivo | castellano | - |
+| 2026-09-11 | decidir_directivo_no_encaja_papel | otro_idioma | what to do when a manager struggles | ingles | - |
+| 2026-09-11 | entregar_problema_dificil_reporte | nombre_largo | Los errores del razonamiento que lleva a cargar tu con todo, la declaracion publica que apodera, y el limite de que delegar no es marcharse | castellano | - |
+| 2026-09-11 | entregar_problema_dificil_reporte | otro_idioma | giving people big problems is a sign of trust | ingles | - |
+| 2026-09-11 | equilibrar_microdireccion_ausencia | nombre_largo | Los dos extremos con las senales por las que se reconoce cada uno, por que cada persona necesita cosas distintas, y por que no lo sabes en el momento | castellano | - |
+| 2026-09-11 | equilibrar_microdireccion_ausencia | otro_idioma | the tightrope act of great delegation | ingles | - |
+| 2026-09-11 | facilitar_gente_diga_verdad | nombre_largo | El caso de la revision en la que nadie discrepo, las preguntas con las que se detecta la dinamica, y las contramedidas con sus frases | castellano | - |
+| 2026-09-11 | facilitar_gente_diga_verdad | otro_idioma | people treat you differently | ingles | - |
+| 2026-09-11 | pasar_direccion_directa_indirecta | nombre_largo | La cuenta de horas que hace imposible la direccion directa a cierta escala, y lo que se pierde y se gana al poner directivos debajo | castellano | - |
+| 2026-09-11 | pasar_direccion_directa_indirecta | otro_idioma | direct to indirect management | ingles | - |
+| 2026-09-11 | reemplazarse_trabajo_propio | nombre_largo | La regla del pulgar de la interseccion, el caso de la reunion de los lunes que se delego por accidente, y por que se delega incluso lo que haces mejor | castellano | - |
+| 2026-09-11 | reemplazarse_trabajo_propio | otro_idioma | aim to put yourself out of a job | ingles | - |
+| 2026-09-11 | reservar_valor_unico_prioridades_arriba | nombre_largo | El valor unico que sale de tus fuerzas personales, y los patrones que caen en la interseccion de importante para la organizacion y solo tu puedes | castellano | - |
+| 2026-09-11 | reservar_valor_unico_prioridades_arriba | otro_idioma | what you should not delegate | ingles | - |
+| 2026-09-11 | sostener_cambio_contexto_continuo | nombre_largo | Por que los bloques largos de foco desaparecen al crecer el equipo, y las tecnicas que la autora encontro para llevarlo | castellano | - |
+| 2026-09-11 | sostener_cambio_contexto_continuo | otro_idioma | context switching all day, every day | ingles | - |
+| 2026-09-11 | comunicar_valores_diez_formas | nombre_largo | Por que repetirse no es de mal estilo cuando se trata de valores, y las cuatro vias que la autora usa para decir lo mismo de maneras distintas | castellano | - |
+| 2026-09-11 | comunicar_valores_diez_formas | otro_idioma | never stop talking about what's important | ingles | - |
+| 2026-09-11 | contrastar_cultura_actual_aspirada | nombre_largo | El ejercicio de una hora con los tres bloques de preguntas del libro: entender el equipo actual, entender tus aspiraciones y entender la diferencia | castellano | - |
+| 2026-09-11 | contrastar_cultura_actual_aspirada | otro_idioma | know the kind of team you want to be a part of | ingles | - |
+| 2026-09-11 | inventar_tradiciones_celebrar_valores | nombre_largo | El poder de los ritos frente a los lemas y los discursos, con los seis ejemplos de tradiciones que el libro imprime y el caso del turno de preguntas de los viernes | castellano | - |
+| 2026-09-11 | inventar_tradiciones_celebrar_valores | otro_idioma | invent traditions that celebrate your values | ingles | - |
+| 2026-09-11 | juzgar_cultura_renuncias_equipo | nombre_largo | Por que la cultura no se lee en la web corporativa sino en las contrapartidas que el equipo acepta pagar por el valor que declara | castellano | - |
+| 2026-09-11 | juzgar_cultura_renuncias_equipo | otro_idioma | an organization's culture is best understood from seeing what it's willing to give up for its values | ingles | - |
+| 2026-09-11 | reconocer_decision_dificil_valores | nombre_largo | La cara positiva de pedir cuentas: reconocer, admitir que fue dificil y dar las gracias por haber hecho lo correcto | castellano | - |
+| 2026-09-11 | reconocer_decision_dificil_valores | otro_idioma | when a report does something difficult that is in the spirit of your team's values, recognize them for it | ingles | - |
+| 2026-09-11 | actuar_conducta_contraria_valores | nombre_largo | Lo que se hace en el momento y lo que se hace despues en privado, cuando la causa no esta en los incentivos sino en la persona | castellano | - |
+| 2026-09-11 | actuar_conducta_contraria_valores | otro_idioma | if the issue isn't structural, but someone does something that's out of line with your values, you must still take action | ingles | - |
+| 2026-09-11 | revisar_incentivos_trampas_equipo | nombre_largo | La pieza final de la cultura: el entorno que premia a quien se comporta segun los valores y pide cuentas a quien no, con las cuatro trampas de incentivo que el libro nombra | castellano | - |
+| 2026-09-11 | revisar_incentivos_trampas_equipo | otro_idioma | create the right incentives | ingles | - |
+| 2026-09-11 | vivir_primero_valor_declarado | nombre_largo | Los cinco ejemplos de decir una cosa y hacer otra, y la regla de no sacar a colacion un valor por el que no estas dispuesto a cambiar tu conducta | castellano | - |
+| 2026-09-11 | vivir_primero_valor_declarado | otro_idioma | always walk the walk | ingles | - |
