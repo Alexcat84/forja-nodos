@@ -19068,3 +19068,176 @@ libros de este grafo y eso no lo estreno yo.**
 > **5. EL HUECO DE SEDE ES DE UNA SOLA CLASE, Y SON 19.** Ni un `REPITE`, ni un `MUTUO`, y
 > **cero `CONTINUA` desde esta tarde.** El hueco es exactamente el del unico veredicto que no
 > produce una arista.
+
+
+---
+
+# VUELTA 16, los registros al dia, la puerta de entrada que faltaba, dos arreglos en frio, y `cap_05` a `cap_07` del lote 4 (`scott_radical_candor`)
+
+*Esqueleto abierto **ANTES de la primera tarea** (`EXTRACTOR.md` 3). Las filas se anexan
+al cerrarse cada tarea, no al final. **Si esta vuelta se corta, lo que este escrito hasta
+ese punto es lo que se hizo.***
+
+**LA CONDICION DE INSERCION DE ESTA VUELTA, DICHA ANTES DE EMPEZAR:** `MODO_INSERCION`
+llega en `insertar` por defecto desde `D.39`, **y el unico lote vivo (el 4) esta ABIERTO**.
+`EXTRACTOR.md` 15.7 lo dice con todas sus letras: *los candidatos de un lote ABIERTO se
+quedan en cuarentena hasta que su lote cierre*. **Asi que esta vuelta inserta CERO nodos y
+no es una eleccion mia: es la letra de la regla.** La TAREA 4 escribe candidatos y los deja
+en la bandeja.
+
+## K.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Estas cifras se midieron con el arbol en el commit de arranque de esta vuelta, DESPUES de
+commitear lo pendiente (`EXTRACTOR.md` 1.1) y ANTES de la primera tarea. Todo lo que venga
+despues es estado intermedio y se cita como tal.**
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git rev-parse HEAD
+    5367adf339a96b262f2501b698744241aa0c2eac
+    $ git log -1 --format='%s'
+    Estado del arnes al abrir la vuelta 16: loop.log y los dos testigos del turno anterior
+
+    $ python -c "import datetime; print(datetime.date.today())"   ->  2026-09-12
+    $ python -c "from src.aduana import _hoy; print(_hoy())"      ->  2026-09-12
+
+    $ wc -l dataset/nodos.jsonl              ->  203
+    $ wc -l bitacora/VEREDICTOS.jsonl        ->  147
+    $ wc -l config/pares_mutuos.jsonl        ->    1
+
+    $ python -c "suma de nodos_siguientes de los 203"   ->  78 aristas
+    $ python -c "clases de los 147 veredictos"          ->  CONTINUA 78, SANO 69
+
+    $ python -c "recorre carpeta y cuenta ficheros y pasos_accionables"
+    cuarentena/scott_radical_candor                 :    8 ficheros,    63 pasos
+    cuarentena/smart_who                            :    0 ficheros,     0 pasos
+    cuarentena/zhuo_manager                         :    0 ficheros,     0 pasos
+    cuarentena/onu_consumidor                       :    0 ficheros,     0 pasos
+    cuarentena/_insertados/zhuo_manager             :  136 ficheros, 1.107 pasos
+    cuarentena/_insertados/smart_who                :   59 ficheros,   359 pasos
+    cuarentena/_insertados/onu_consumidor           :    6 ficheros,    32 pasos
+
+**LAS CINCO GUARDAS, CORRIDAS POR MI AL ABRIR Y CON SU SALIDA PEGADA:**
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 203
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada,
+               vuelta, cita_incompleta, deprecado_en_superficie, arista_rota,
+               arista_incompleta, guiones
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py
+      total: 75 pruebas, 0 fallos, 0 errores
+    $ python forja.py rancios
+    BLOQUE DE VIGENCIA VERDE.
+      veredictos comprobados: 147
+      citas de enlace mutuo comprobadas: 0
+    $ python forja.py resolutor
+    nodos vivos: 203
+    nodos deprecados (archivo): 0
+    alias registrados: 0
+
+**LAS CINCO EN VERDE AL ABRIR.** El commit de arranque `5367adf` se hizo antes de tocar
+nada y lleva dentro `docs/loop/loop.log`, `docs/loop/ultimo_auditor.json` y
+`docs/loop/ultimo_extractor.json`, que es lo unico que estaba sin commitear.
+
+## K.1. LAS TAREAS ENCARGADAS, Y SU ESTADO
+
+| # | tarea | estado |
+|---:|---|---|
+| **1** | los registros: leer la `ACTA 15` entera, recoger las seis adjudicaciones, corregir `ORDEN_DE_LOTES.md` por correccion declarada, recoger las dos correcciones del auditor contra si mismo | (se anexa al cerrarse) |
+| **2** | la puerta de entrada que falta (`fijar_proceso_trabajo_equipo` P7), y las dos colas de arista que hoy no se pueden escribir | (se anexa al cerrarse) |
+| **3** | los dos arreglos en frio de la bandeja: el imperativo de `:149` y la atribucion de Fred Kofman | (se anexa al cerrarse) |
+| **4** | el lote 4, `scott_radical_candor`: `cap_05`, `cap_06`, `cap_07`, y `cap_08` si cabe | (se anexa al cerrarse) |
+
+**Son CUATRO tareas y el tope son cinco** (`EXTRACTOR.md` 1.3): **no hay cola por tope.**
+Si algo se queda fuera sera por volumen de capitulo y con su cifra al lado, que es lo que
+el encargo manda.
+
+
+---
+
+# K.2. TAREA 1: LOS REGISTROS AL DIA. **CERRADA**
+
+## K.2.a. LA `ACTA 15` LEIDA ENTERA, Y LAS SEIS ADJUDICACIONES RECOGIDAS
+
+*`ACTA_AUDITOR.md` L13270 a L14566, leida entera. La recojo **sin reabrir ninguna**
+(`EXTRACTOR.md` 7: un pendiente de doctrina no detiene, y una adjudicacion recogida no
+se reabre salvo hecho nuevo). **No he encontrado hecho nuevo en ninguna de las seis.***
+
+| # | adjudicacion, en la letra del auditor | donde | **la recojo como** |
+|---:|---|---|---|
+| 1 | `cuidar_persona_completa_equipo` contra `respetar_cuidar_persona_cargo` es **`SANO`**. Su `CONTINUA` ciego cae | `3.1` | **RECOGIDA.** Mi lectura se sostiene. **Y me quedo con la herramienta, no con el resultado:** *antes de escribir `CONTINUA`, busca el paso de la madre que el hijo despliega; si no hay ninguno que citar, el veredicto es `SANO`* |
+| 2 | contra `gestionar_personas_equipo` tambien es **`SANO`**, y la arista propuesta es la mia: el hijo es `desplegar_marco_franqueza_radical` | `3.2` | **RECOGIDA.** La arista **no se escribe hoy** y su bloque propio esta en `K.3.c`, cola 2 |
+| 3 | **`TRANSCRIPCION DE CASO` se admite como subrayado dentro de TRANSCRIPCION**, no como tercera clase, y no mueve el numerador. `D.30` sigue teniendo dos casillas | `3.3` | **RECOGIDA, con su condicion.** La condicion con la que se admitio es **el caso nombrado dentro del propio paso**, y asi la aplico en la TAREA 4 |
+| 4 | **una arista madre e hijo SI puede cruzar la frontera de libro**, con tres condiciones, y una me bloquea hoy | `3.4` | **RECOGIDA.** La condicion que bloquea es la 1: **el hijo tiene que vivir en el grafo**. No la estreno |
+| 5 | **la atribucion de Fred Kofman CABE en `atribuciones`**: `cifra` es cadena no vacia por esquema y el censo lleva 30 de 58 filas sin cifra numerica | `3.5` | **RECOGIDA.** La decision leida va en la TAREA 3, `K.4.b` |
+| 6 | **`ORDEN_DE_LOTES.md` tiene tres filas falsas y una seccion superada**, y no es caida mia | `3.6` | **RECOGIDA.** Corregido en `K.2.c` |
+
+**Y RECOJO TAMBIEN LO QUE NO ES ADJUDICACION PERO ES LA CIFRA QUE ME TOCA:** la `ACTA 15`
+`6.1` y `6.3` cierran mis tres rachas en **`CLASE` 0 de 2, `CIFRA PUBLICADA` 0 de 2,
+`REPORTE` 0 de 3**, con diez discutibles marcados y cero caidos.
+
+## K.2.b. LAS DOS CORRECCIONES QUE VAN CONTRA EL AUDITOR, RECOGIDAS SIN REABRIR
+
+| # | la correccion | lo que me toca decir |
+|---:|---|---|
+| 1 | **la frase *los 68 `[ENTRARIA]`* de la `ACTA 13` y de la parada es FALSA.** Lo cierto es **59 `[ENTRARIA]`, 9 `[BLOQUEARIA]`, 0 `[CAERIA]`**, reproducido desde git sobre el grafo de 135 con los nueve pares al tercer decimal (`1.5`) | **RECOGIDA.** Mi discutible 1 tenia razon las dos veces que lo marque, y el auditor adjudica ademas que **hice bien en no parar**. **No la reabro y no la celebro**: lo util de esto no es quien tenia razon, es que **la marque a ciegas las dos veces** y por eso la comparacion significa algo (`EXTRACTOR.md` 8) |
+| 2 | su apertura ciega decia que el censo de atribuciones registraba maximas sin cifra *de Brene Brown, Sutton, Batista y Buckingham*, como si fueran cuatro casos. **Son 30 de 58 filas** (`3.5`) | **RECOGIDA.** Y **la remido yo antes de apoyarme en ella** en `K.4.b`, porque es la cifra sobre la que descansa la decision de la TAREA 3.b y `EXTRACTOR.md` 5 dice que un acta previa no es fuente de una cifra nueva |
+
+## K.2.c. `ORDEN_DE_LOTES.md` CORREGIDO POR CORRECCION DECLARADA, SIN BORRAR UNA PALABRA
+
+**LAS CUATRO REMEDIDAS POR MI ANTES DE ESCRIBIR NINGUNA, CON SU COMANDO PEGADO
+(`EXTRACTOR.md` 5 y `D.35`).** El encargo trae las cifras puestas y eso **no me exime de
+comprobarlas**, asi que las corri todas:
+
+    $ python -c "recorre carpeta, cuenta ficheros y cruza el id contra dataset/nodos.jsonl"
+    cuarentena/smart_who                   ficheros    0  dentro del grafo    0  fuera    0
+    cuarentena/_insertados/smart_who       ficheros   59  dentro del grafo   59  fuera    0
+    cuarentena/zhuo_manager                ficheros    0  dentro del grafo    0  fuera    0
+    cuarentena/_insertados/zhuo_manager    ficheros  136  dentro del grafo  136  fuera    0
+    cuarentena/scott_radical_candor        ficheros    8  dentro del grafo    0  fuera    8
+
+    $ python -c "fuentes de los 203 nodos del grafo"
+    zhuo_manager 136 | smart_who 59 | onu_consumidor 6 | manual_sistema_conocimiento 2
+
+    $ ls fuentes/scott_radical_candor/*.md | wc -l     ->  15
+    $ python -c "pasos de los 8 de la bandeja del lote 4"  ->  63
+    $ python -c "pasos de los 136 archivados de zhuo"      ->  1107
+
+| # | fila | lo que decia | **lo que mide el repo hoy, corrido por mi** | coincide con el encargo? |
+|---:|---|---|---|---|
+| 1 | **lote 2** | *15 candidatos en `cuarentena/smart_who/`, SIN INSERTAR* | **bandeja 0, archivados 59, los 59 en el grafo, y 59 nodos con fuente `smart_who`** | **si** |
+| 2 | **lote 3** | *Su INSERCION no, y `MODO_INSERCION=cuarentena` sigue vigente* | **bandeja 0, archivados 136, los 136 en el grafo, 1.107 pasos**, y `MODO_INSERCION=insertar` desde `D.39` | **si** |
+| 3 | **lote 4** | *AL CIERRE DE LA VUELTA 14: 4 de 15 ficheros minados, 2 candidatos* | **15 ficheros de fuente, 8 candidatos en bandeja, 63 pasos, 0 dentro del grafo**; y **5 de 15 minados** leido del registro | **si** |
+| 4 | seccion **Lo que este documento NO decide** | *cada insercion es una autorizacion del fundador* | **`D.39`, 11 sep 2026**, `docs/BANCO_DE_REGLAS.md` L1492 a L1498 | **si** |
+
+### La unica de las cuatro que NO se puede medir del repo, y lo digo en vez de callarlo
+
+**LA CUENTA DE CAPITULOS MINADOS.** Un capitulo minado **no deja marca en el repo**: los
+ocho candidatos del lote 4 no llevan dentro de que `cap_NN` salieron, y lo comprobe:
+
+    $ python -c "busca la cadena cap_NN dentro de los 8 JSON de la bandeja"
+    capitulos citados por la bandeja: ['cap_04']    <- y solo en UNO de los ocho
+
+**Asi que el *5 de 15* lo leo del registro y lo digo como lectura de registro, con sus
+dos lineas pegadas (`D.35`), no como medicion mia:**
+
+    $ sed -n '19036p' docs/loop/REPORTE.md
+    | **lote 4, `scott_radical_candor`** | **ABIERTO.** `cap_00` a `cap_04` minados, 8 candidatos en cuarentena, 63 pasos |
+    $ sed -n '14093p' docs/loop/ACTA_AUDITOR.md
+    | lote 4: *AL CIERRE DE LA VUELTA 14: 4 de 15 ficheros minados, 2 candidatos* | **5 de 15 minados** (`cap_00` a `cap_04`) y **8 candidatos** en la bandeja |
+
+**LO QUE TOQUE Y LO QUE NO:** solo la columna `estado` de los lotes **2, 3 y 4** y la
+seccion **Lo que este documento NO decide**. **Ni el orden, ni las claves, ni la cuenta de
+capitulos, ni las palabras**, que los fija `D.24`. **Cero palabras borradas:** las cuatro
+van con el texto viejo tachado a la vista, que es como se corrigio cuatro veces antes en
+ese mismo fichero.
+
+**Y LAS GUARDAS DESPUES DE TOCARLO:**
+
+    $ python forja.py guiones   ->  BARRIDO DE GUIONES VERDE
+    $ python forja.py gate      ->  GATE VERDE. nodos verificados: 203
+
+> ## **TAREA 1 CERRADA.** Seis adjudicaciones recogidas sin reabrir, dos correcciones del auditor contra si mismo recogidas, y `ORDEN_DE_LOTES.md` con sus cuatro puntos corregidos por correccion declarada, **las cuatro remedidas por mi antes de escribirlas y la unica que no se puede medir declarada como lectura de registro.**
