@@ -22556,3 +22556,203 @@ metrica y no se repite, y esta escrito en su acta que no se repite.*
 > ve.
 
 ---
+
+## M.7. EL CIERRE DE LA VUELTA 18
+
+### M.7.1. LAS CINCO GUARDAS, CORRIDAS AL CIERRE Y CON SU SALIDA PEGADA
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 203
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada,
+               vuelta, cita_incompleta, deprecado_en_superficie, arista_rota,
+               arista_incompleta, guiones
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python forja.py rancios
+    BLOQUE DE VIGENCIA VERDE.
+      veredictos comprobados: 148
+      citas de enlace mutuo comprobadas: 0
+      todos siguen emitidos contra el texto que leyeron
+
+    $ python forja.py resolutor
+    nodos vivos: 203 | nodos deprecados (archivo): 0 | alias registrados: 0
+
+    $ python tests/test_aceptacion.py
+      total: 84 pruebas, 0 fallos, 0 errores
+
+**LAS CINCO EN VERDE.** Y el hook de precommit corrio en los cinco commits de esta vuelta,
+verde en los cinco. **No lo salte ni una vez.**
+
+### M.7.2. LAS CIFRAS DEL CIERRE, **RECOMPUTADAS AL CIERRE** (`EXTRACTOR.md` 4)
+
+    $ wc -l < dataset/nodos.jsonl                          -> 203
+    $ wc -l < bitacora/VEREDICTOS.jsonl                    -> 148
+    $ ls cuarentena/scott_radical_candor/*.json | wc -l    -> 63
+    $ ls cuarentena/_insertados/scott_radical_candor/*.json | wc -l -> 0
+    $ wc -l < config/pares_mutuos.jsonl                    -> 1   (la cabecera; la sede sigue vacia)
+    $ wc -l < docs/loop/REPORTE.md                         -> 22758
+    $ git rev-parse --short HEAD                           -> feaa14d  (antes del commit de cierre)
+    $ ls fuentes/scott_radical_candor/*.md | wc -l         -> 15
+    $ python (nodos del grafo con fuente scott_radical_candor) -> 0
+    $ python (aristas madre a hijo del grafo)              -> 79, de ellas 0 cruzan de libro
+
+| medida | al abrir (`M.0`) | **al cerrar** | movimiento |
+|---|---:|---:|---|
+| nodos en el grafo | 203 | **203** | **CERO.** No se inserto nada |
+| veredictos en bitacora | 148 | **148** | **CERO.** No se emitio ninguno |
+| candidatos en cuarentena del lote 4 | 50 | **63** | **mas 13**, los de esta vuelta |
+| insertados del lote 4 | 0 | **0** | **CERO** |
+| aristas del grafo | 79 | **79** | **CERO** |
+| aristas que cruzan de libro | 0 | **0** | **CERO.** La cola 2 sigue sin estrenarse |
+| lineas de `REPORTE.md` | 21.283 | **22.758** | mas 1.475, de las que **404 son la absorcion de la vuelta 17** |
+
+> **ESTA ULTIMA FILA SE REMIDIO, Y DIGO POR QUE, PORQUE ES LA UNICA CIFRA DE ESTA CASA QUE SE
+> MUEVE AL PUBLICARLA.** La primera vez la medi **antes** de escribir esta seccion `M.7` y dio
+> **22.558**; escribir el cierre la subio a **22.749**, y escribir esta misma nota la dejo en **22.758**. **`EXTRACTOR.md` 4 manda recomputar
+> toda cifra de cierre que la propia vuelta haya podido mover, y esta la mueve el acto de
+> escribirla.** La cifra publicada, **22.758**, es la del fichero ya entero, **despues** de esta nota y
+> **antes** del commit de cierre, y asi va rotulada. **La sustitucion del numero no mueve el
+> conteo, porque no aniade ni quita lineas.** **La medi mal una vez y la corrijo aqui en vez de
+> dejarla, que es de lo que va el remedio.**
+
+> ### **EL GRAFO CIERRA EXACTAMENTE DONDE ABRIO, Y ESO NO ES UN FALLO: ES `D.39` FUNCIONANDO.**
+> La insercion llego **abierta** a esta vuelta y aun asi **no se inserto nada**, porque `D.39`
+> abre la insercion **de un lote CERRADO en extraccion cuyo informe haya certificado el acta
+> del auditor**, y el lote 4 esta **ABIERTO**: **9 de 15 unidades minadas al cerrar**
+> (`cap_00` a `cap_08`), **`cap_09` a `cap_14` sin minar**. Meter candidatos de un lote
+> abierto es **una caida de dato**, no un adelanto.
+
+### M.7.3. `D.32`: ESTA VUELTA **NO CIERRA EL LOTE 4**, y mido el estado igual
+
+| | |
+|---|---|
+| **lote 4** | **ABIERTO.** 9 de 15 unidades minadas, **63 candidatos y 584 pasos** en la bandeja, **0 en el grafo** |
+| **condicion 1 de `D.32`** (material en `fuentes/<clave>/`) | **VERDE**: los 15 ficheros estan |
+| **condicion 2** (clave en la tabla canonica) | **VERDE**: `scott_radical_candor` esta en `fuentes/FUENTES_CANONICAS.json` |
+| **cola de extraccion** | **`cap_09` a `cap_14`**, seis unidades |
+
+### M.7.4. LAS COLAS DE ARISTA, **CADA UNA EN SU BLOQUE TITULADO** (`D.29`)
+
+*Las cuatro heredadas siguen enteras y **ninguna se puede escribir hoy**: `D.29` pide que los
+dos extremos vivan en el grafo, y el lote 4 esta ABIERTO. **No les invento sede y no las
+resumo: se repiten hasta que se puedan declarar.** Lo que esta vuelta anade son dos mas.*
+
+| # | madre | hijo o hijos | por que hoy no | lo que esta vuelta cambia |
+|---:|---|---|---|---|
+| **1** | `revisar_ciclo_responsabilidades_relaciones` **P3**, las tres responsabilidades | las cabezas de `cap_05`, `cap_06` y `cap_07` | **la madre vive en cuarentena** | nada. Los tres hijos siguen en la bandeja |
+| **2** | `gestionar_personas_equipo` **P2** (Zhuo, **en el grafo**), la primera arista entre dos libros | `desplegar_marco_franqueza_radical` (bandeja) | el hijo vive en un lote **ABIERTO** | **la vuelvo a medir al cierre: `0` aristas cruzan de libro sobre las 79.** Sigue sin estrenarse |
+| **3** | `empezar_cultura_franqueza_radical` **P3, P5 y P6**, la cabeza de `cap_05` | `pedir_critica_equipo_premiarla`, `elogiar_trabajo_especifico_contexto`, `criticar_trabajo_evitar_desanimo` | **los cuatro en cuarentena** | nada |
+| **4** | `repartir_tiempo_atencion_mejores_equipo` **P3** (Zhuo, **en el grafo**), el par que ninguna senial levanta | `acompaniar_mejores_equipo_socio` (bandeja) | el hijo vive en un lote **ABIERTO** | nada, **y sigue siendo la que mas corre**: el dia de la insercion la aduana no va a levantar este par |
+
+#### **COLA 5, NUEVA: EL CUARTO RADIO DE `LISTEN` SIN CABEZA**
+
+| | |
+|---|---|
+| **madre** | `recorrer_rueda_hacer_cosas_equipo` (la rueda de `cap_07`), **P2 a P8**, el radio `LISTEN` |
+| **hijo nuevo** | `adaptar_escucha_cultura_ajena`, escrito en la TAREA 2 de esta vuelta |
+| **bajo** | **`D.29` con razon escrita, NO `D.37`**: `L75` de `cap_07` dice *That's a lot of steps* y **no dice cuantos son** |
+| **por que hoy no** | **los dos en cuarentena de un lote ABIERTO**, y ademas **`LISTEN` no tiene cabeza propia** (`ACTA 17` 4.4) |
+| **lo que aporta** | el radio `LISTEN` pasa de tres hijos a **cuatro**, y **ninguno de los cuatro tiene cabeza intermedia**: cuelgan directamente de la rueda |
+
+#### **COLA 6, NUEVA: LA PRIMERA DE LAS DOS ADVERTENCIAS DE `cap_08`**
+
+    $ sed -n '75p' fuentes/scott_radical_candor/cap_08.md
+    When you do organize a social event at work, bear these warnings in mind: even
+    non-mandatory events can feel mandatory. And booze can land you in dangerous territory.
+
+| | |
+|---|---|
+| **madre** | `dominar_arte_socializar_trabajo`, **P9** |
+| **hijo** | `evitar_presion_social_actos_equipo` (6 pasos que la madre no tiene) |
+| **bajo** | **`D.29` con razon escrita, NO `D.37`**: la linea nombra sus dos advertencias y **no dice `two`** |
+| **la razon, escrita, porque `D.29` la exige** | el `P9` de la madre **nombra esa advertencia con las palabras del rotulo del hijo**, y el hijo la despliega en seis pasos que la madre no tiene |
+| **el hermano que NO existe y al que no se le inventa nodo** | `Booze` (`L83` a `L87`): **una advertencia sin un solo acto nombrado.** Va declarado para que nadie cuente dos hijos donde hay uno |
+| **por que hoy no** | los dos en cuarentena de un lote **ABIERTO** |
+
+> ## **SEIS COLAS VIVAS, Y LAS SEIS SE DESBLOQUEAN CON EL MISMO ACTO: EL CIERRE DEL LOTE 4.**
+> **No es parada:** el encargo lo pone por su nombre en la lista de lo que no para.
+
+### M.7.5. LAS LECTURAS `SANO` SIN SEDE, CONTADAS Y TRAIDAS
+
+*El encargo prohibe inventarles sede, asi que no la invento. **Y hago lo mismo que la vuelta
+16 hizo y el auditor acepto: mido las mias y cito la cifra anterior como contraste, sin
+sumarlas en un total que no he corrido** (`K.11`).*
+
+**LAS MIAS DE ESTA VUELTA, MEDIDAS POR MI: DOS.**
+
+| # | par | quien lo levanto | clase | donde esta su razon |
+|---:|---|---|---|---|
+| 1 | `vivir_valores_propios_evitar_listarlos` contra `sostener_contacto_oferta_aceptacion` | **la aduana**, por `paso_contra_nodo` 0,606 | **`SANO`** | `M.5.4.a` |
+| 2 | `adaptar_escucha_cultura_ajena` contra `crear_cultura_escucha_equipo` | **la lectura**, ninguna senial | **`SANO`, hermanos** | `M.4.d` |
+
+**LA CIFRA ANTERIOR LA CITO COMO CONTRASTE Y NO LA REMIDO, Y DIGO POR QUE:**
+
+    $ (ACTA 17, seccion 6)
+    LO QUE SI HAY SON CINCO LECTURAS SANO SIN SEDE (cuatro heredadas mas la de la pieza 12
+    de esta vuelta), y el extractor hizo lo que el encargo mandaba: contarlas y traerlas,
+    sin inventarles un sitio.
+
+> **Y TRAIGO UNA PREGUNTA EN VEZ DE UNA CIFRA, QUE ES LO QUE `EXTRACTOR.md` 7 MANDA CUANDO NO
+> SE PUEDE MEDIR:** **no consigo reproducir ese `cinco` desde la sede.** La vuelta 17 escribio
+> **tres** lecturas `SANO` en su `L.5.5.a` (los tres pares que la aduana levanto en `cap_07`) y
+> **una** mas en su `L.5.5.b` (el par que ninguna senial levanto), **que son cuatro y no una**,
+> y las cuatro estan ahora en sede porque esta vuelta las absorbio. **No digo que el acta se
+> equivoque**: digo que **la especie no tiene criterio de recuento escrito** (es la misma
+> observacion que la vuelta 16 dejo en `K.11`, con las mismas palabras: *contarlas exige un
+> criterio que nadie ha escrito*), **y que sin criterio yo no puedo ni confirmar el cinco ni
+> tumbarlo.** Lo subo como pregunta y **no lo resuelvo copiando ni sumando.**
+>
+> **LO QUE SI AFIRMO PORQUE LO HE MEDIDO:** `grep -c "scott" bitacora/VEREDICTOS.jsonl` da
+> **0**. **Ni una sola lectura del lote 4 tiene sede todavia**, y las dos mias de hoy se
+> resolveran de golpe el dia que el lote entre, **salvo la 2, que la aduana no va a levantar**
+> porque los dos extremos viven en la bandeja.
+
+### M.7.6. LAS PARADAS, REPASADAS UNA A UNA
+
+| condicion de parada (`EXTRACTOR.md` 7) | |
+|---|---|
+| **algo contradice una regla vigente** | **NO.** La unica tension de la vuelta la resuelve la propia regla: `MODO_INSERCION=insertar` llega por defecto y `D.39` dice que eso **no es barra libre**. Cero inserciones, y declarado arriba del todo |
+| **algo contradice una cifra publicada con su corte** | **NO, Y LO QUE PARECIA SERLO NO LO ES.** El `25` contra `24` de la `ACTA 17` son **dos poblaciones distintas y las dos ciertas** (`M.2.b`). Y las `77` pruebas del acta contra mis `84` de hoy **no discrepan**: la propia salida rotula las 7 nuevas de `D.40` (`M.3.c`) |
+| **necesito mover un umbral, el esquema, `D.27`, `D.30`, `D.37` o la vara de continua contra repite** | **NO.** `D.27` se aplica con sus tres restricciones; `D.37` se aplica **restringiendola** otra vez (las dos advertencias de `L75` no la cumplen porque el libro no las cuenta); **`config/umbrales.json` no se ha tocado** y `git status` no lo nombra |
+| **una operacion cuyo texto no alcanza para ejecutarse sin decidir** | **NO.** Las cuatro tareas del encargo se ejecutaron con lo escrito |
+| **un pendiente de doctrina** | **NO detiene, por la propia regla.** Hay uno y lo dejo marcado: **la especie `SANO` sin sede sigue sin criterio de recuento** (`M.7.5`), y va **PENDIENTE DE DOCTRINA** |
+| **fallo tecnico repetido** | **NO.** Gate, guiones, rancios, resolutor y las 84 pruebas: **las cinco en verde** |
+
+> ## **NO HAY PARADA. Y yo no escribo `docs/loop/PARA_ALEXIS.md`** (`D.28`, `EXTRACTOR.md` 7):
+> lo que traigo, si tiene que subir, lo sube el auditor.
+
+### M.7.7. LO QUE **NO** HICE, DICHO POR SU NOMBRE
+
+| | |
+|---|---|
+| **no inserte nada** | el lote 4 esta ABIERTO. **Grafo 203 al abrir y 203 al cerrar**, bitacora 148 y 148 |
+| **no invente sede para los `SANO`** | los dos de hoy **se cuentan y se traen**, y se quedan en este reporte, que no es su sede y lo digo |
+| **no estrene la arista entre dos libros** | recomprobado al cierre: **0 de 79** |
+| **no toque `config/umbrales.json`** | y eso que la unica senial que levanto algo esta vuelta fue `paso_contra_nodo` con un falso positivo |
+| **no le fabrique un cierre a la vuelta 17** | `M.2.a`. Los cinco fragmentos son lo que hay |
+| **no fabrique maquinaria** | **ni un arnes, ni una guarda, ni un lector nuevos.** Lo unico que corri fueron guiones de un solo uso para contar cobertura y pasos, y sus salidas estan pegadas. **La moratoria de `EXTRACTOR.md` 13 se cumple entera** |
+| **no abri `cap_09` ni `cap_10`** | y lo declaro con su cifra en `M.5.9`, que es lo que la regla nueva exige: **una vuelta que cierra corto y no lo dice es caida de la especie `REPORTE`** |
+
+### M.7.8. LO QUE ESTA VUELTA PUBLICA, EN UNA TABLA
+
+| | |
+|---|---|
+| **vuelta** | 18, lote 4 (`scott_radical_candor`) |
+| **tareas encargadas** | 4, **las cuatro cerradas** |
+| **commit de apertura** | `d9a8b9d` |
+| **commits de la vuelta** | `28651cf`, `e439e63`, `22b6bb9`, `361241e`, `feaa14d` y el de este cierre |
+| **candidatos escritos** | **13**: 12 de `cap_08` mas el nodo que `cap_07` debia. **Techo 15** |
+| **pasos escritos** | **111** |
+| **aduana** | **13 de 13 por la aduana uno por vez. 12 `ENTRARIAN`, 1 `BLOQUEARIA`, 0 `CAERIAN`** |
+| **vecinos levantados** | **1**, por `paso_contra_nodo`. `familia_id` y `similitud_texto`: 0 |
+| **veredictos de lectura** | **2**, los dos `SANO`, **los dos sin sede posible hoy** |
+| **`PASOS INVENTADOS`** | `cap_08` **0,00 (0 de 102)**; `cap_07` pasa a **0,00 (0 de 225)**; lote 4 **0,86 (5 de 584)**; peor unidad `cap_04` **6,25**, tope 10. **El freno no se dispara** |
+| **colas de arista** | **6 vivas**, 4 heredadas y 2 nuevas, **ninguna escribible hoy** |
+| **discutibles marcados** | **10**, dentro de `REPORTE.md` y antes de saber si acierto |
+| **grafo** | **203 al abrir y 203 al cerrar. Cero inserciones, cero veredictos nuevos** |
+| **donde cierra la vuelta** | **en `cap_08`**, con `cap_09` y `cap_10` declarados como cola |
+
+---
