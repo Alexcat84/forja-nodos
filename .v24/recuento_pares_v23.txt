@@ -1,0 +1,6 @@
+| medida | valor |
+|---|---:|
+| informes crudos leidos | **20** |
+| filas vecino (candidato, vecino) | **28** |
+| pares DISTINTOS sin orden | **21** |
+| pares levantados por los DOS lados | **7** |
