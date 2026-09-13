@@ -490,3 +490,7 @@ TALLADO VERDE: las 37 tabla(s) comprobables son las de su instrumento, celda a c
 CIERRE VERDE: el tallado del reporte.
 [pre-commit] verde
 [2026-09-13 16:29:22] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-13 17:32:16] auditor listo (USD 16.9779845), 3774s, intento 1 de 7
+[2026-09-13 17:32:16]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-13 17:32:16] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-13 17:32:16] VUELTA 3 : EXTRACTOR (claude-opus-5)
