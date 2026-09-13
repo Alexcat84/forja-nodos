@@ -1,0 +1,8 @@
+unidad      candidatos    pasos
+cap_03               1       10
+cap_05               8       76
+cap_06              10      117
+cap_07              25      225
+cap_08              12      102
+
+las cinco filas de hueco : 56 candidatos, 530 pasos sin fila de freno

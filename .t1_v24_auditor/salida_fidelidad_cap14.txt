@@ -1,0 +1,33 @@
+candidato                     paso  linea  veredicto frase buscada en esa linea
+montar_equipo                   11     31  SOSTIENE  every three years
+montar_equipo                   10     29  SOSTIENE  annually
+decidir_poner_nota               6     71  SOSTIENE  past few months
+elegir_categorias                3     75  SOSTIENE  limit yourself to three or four
+elegir_categorias                7     83  SOSTIENE  results. is the person achieving their goals
+escribir_escaleras               2     97  SOSTIENE  what teamwork means for an entry-level employee
+fijar_cuatro_notas               1    101  SOSTIENE  five to seven ratings
+fijar_cuatro_notas               4    105  SOSTIENE  about 80 percent
+fijar_cuatro_notas               9    111  SOSTIENE  top 5 or even 1 percent
+fijar_cuatro_notas              12    115  SOSTIENE  get an overall not ok rating
+elegir_palabras                  8    123  SOSTIENE  two to three sentences
+aplicar_consecuencias            6    131  SOSTIENE  except teamwork
+aplicar_consecuencias           12    137  SOSTIENE  documenting performance issues
+repartir_notas                   4    147  SOSTIENE  at least 5 percent
+repartir_notas                   5    147  SOSTIENE  roughly (very roughly) 15 percent
+repartir_notas                   6    147  SOSTIENE  1 to 5 percent
+repartir_notas                   7    147  SOSTIENE  40 percent
+presionar_curva                  6    165  SOSTIENE  nonregretted attrition
+presionar_curva                  8    169  SOSTIENE  written explanation
+calibrar_notas                  12    181  SOSTIENE  slice the ratings by level
+calibrar_notas                  14    183  SOSTIENE  two-year program
+calibrar_notas                  15    185  SOSTIENE  make a conscious decision
+evaluar_dos_veces                4    191  SOSTIENE  do it twice a year
+evaluar_dos_veces                8    193  SOSTIENE  take two minutes
+montar_360                       8    201  SOSTIENE  no more than seventy-five words
+montar_360                       9    201  SOSTIENE  expected distribution should be shown
+hacer_critica_transparente       6    213  SOSTIENE  every employee at the company
+hacer_critica_transparente       8    215  SOSTIENE  show, don't tell
+mantener_ligero                  9    231  SOSTIENE  under thirty minutes
+mantener_ligero                 13    239  SOSTIENE  more than thirty people
+
+comprobaciones: 30 | sostenidas: 30 | sin sostener: 0

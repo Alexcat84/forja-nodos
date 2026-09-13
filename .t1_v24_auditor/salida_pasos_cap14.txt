@@ -1,0 +1,20 @@
+candidato de cap_14                                       pasos
+aplicar_consecuencias_nota_apoyar_fuerzas_persona            16
+calibrar_notas_reunion_jefes_pares                           15
+decidir_poner_nota_comunicar_proposito_limites                8
+elegir_categorias_nota_palabras_propias_empresa              15
+elegir_palabras_nota_definirlas_empresa_entera               10
+escribir_escaleras_puesto_evitar_dos_extremos                 7
+evaluar_desempenio_dos_veces_anio                            11
+fijar_cuatro_notas_calcular_nota_global                      12
+hacer_critica_pares_transparente_ensenar_escribirla          11
+mantener_proceso_evaluacion_ligero_vigilar_crecimiento       13
+montar_equipo_gestion_desempenio_revisar_sistema             12
+montar_evaluacion_360_grados_ligera_pares                    10
+presionar_curva_notas_evitar_forzarla                        11
+recorrer_trece_elementos_proceso_evaluacion_formal           14
+repartir_notas_publicar_reparto_esperado                      9
+
+candidatos : 15
+pasos      : 174
+menor 7 | mediana 11 | mayor 16

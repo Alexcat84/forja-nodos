@@ -1,0 +1,25 @@
+unidades del lote 4                   : 15
+candidatos leidos                     : 142  (bandeja 131 + insertados 11)
+candidatos sin UNIDAD DE ORIGEN legible: 39
+   ['abrir_debate_humor_explicar_proposito', 'adaptar_escucha_cultura_ajena', 'agendar_cuidados_propios_cumplirlos', 'aprender_resultados_vencer_dos_presiones', 'bajar_detalle_organizacion_fuente_hechos', 'cambiar_posicion_hechos_explicar_cambio', 'ceder_autoridad_unilateral_equipo', 'centrar_debate_ideas_fuera_egos', 'compartir_logica_mostrar_razonamiento', 'construir_confianza_equipo_tiempo_solas', 'crear_cultura_escucha_equipo', 'crear_espacio_seguro_madurar_ideas_nuevas', 'crear_obligacion_disentir_equipo', 'cuidarse_agotamiento_centro_rueda', 'definir_receta_propia_mantenerse_centrado', 'demostrar_apertura_visiones_distintas', 'dominar_arte_socializar_trabajo', 'dominar_reacciones_emociones_ajenas', 'escuchar_callado_equipo_tranquilizar_incomodo', 'escuchar_ruidoso_opinion_fuerte_pedir_agujeros', 'establecer_credibilidad_pericia_humildad', 'evitar_presion_social_actos_equipo', 'explicar_idea_facil_comprender_oyente', 'fijar_fecha_cierre_debate_equipo', 'integrar_trabajo_vida_mejor_version', 'manejar_contacto_fisico_regla_platino', 'mantener_manos_trabajo_real_equipo', 'minimizar_impuesto_colaboracion_equipo', 'parar_debate_emocion_agotamiento', 'pedir_hechos_decision_evitar_recomendaciones', 'persuadir_emocion_oyente_no_propia', 'proteger_tiempo_equipo_jefe', 'reconocer_emociones_propias_avisar_equipo', 'recorrer_rueda_hacer_cosas_equipo', 'repartir_decision_cercanos_hechos', 'reservar_calendario_tiempo_ejecutar', 'vivir_valores_propios_evitar_listarlos', 'invitar_desafio_reciproco_equipo', 'reparar_mal_comportamiento_evitar_disculpa_falsa']
+
+unidad      estricta      ancha
+cap_00             0          0
+cap_01             1          1
+cap_02             0          0
+cap_03             1          1
+cap_04             5          5
+cap_05             7          8
+cap_06            10         10
+cap_07             0         25
+cap_08             0         12
+cap_09            20         20
+cap_10            14         14
+cap_11            16         16
+cap_12             2          2
+cap_13            12         12
+cap_14            15         15
+
+suma estricta / ancha                  : 103 / 141
+sin rotulo estricto / sin cap_XX.md    : 39 / 1
+unidades A CERO por las dos lecturas   : 2  ['cap_00', 'cap_02']

@@ -1,0 +1,77 @@
+POBLACION DEL BARRIDO: 345 = 214 del grafo + 131 de las bandejas
+  (bandejas: cuarentena/*/*.json, fuera _insertados y _derivadas, y fuera
+   los 163 cuyas fuentes NO estan todas en FUENTES_CANONICAS.json, que es el
+   mismo criterio que src/informe.py aplica desde el 12 sep 2026)
+
+==============================================================================================
+CANDIDATO recorrer_trece_elementos_proceso_evaluacion_formal   [bandeja]
+  maximo cabecera pasos     vecino
+  0.256  0.256    0.071     bandeja   decidir_poner_nota_comunicar_proposito_limites
+  0.129  0.129    0.097     bandeja   montar_equipo_gestion_desempenio_revisar_sistema
+  0.127  0.127    0.070     bandeja   entregar_evaluacion_formal_desempenio_nueve_consejos
+  0.126  0.071    0.126     bandeja   mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+  0.116  0.048    0.116     bandeja   montar_evaluacion_360_grados_ligera_pares
+  0.113  0.113    0.055     bandeja   decidir_momento_despedir_persona
+==============================================================================================
+CANDIDATO montar_equipo_gestion_desempenio_revisar_sistema   [bandeja]
+  maximo cabecera pasos     vecino
+  0.129  0.129    0.097     bandeja   recorrer_trece_elementos_proceso_evaluacion_formal
+  0.123  0.123    0.112     bandeja   elegir_categorias_nota_palabras_propias_empresa
+  0.122  0.045    0.122     bandeja   mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+  0.103  0.103    0.067     bandeja   decidir_poner_nota_comunicar_proposito_limites
+  0.103  0.032    0.103     bandeja   repartir_notas_publicar_reparto_esperado
+  0.101  0.041    0.101     bandeja   aplicar_consecuencias_nota_apoyar_fuerzas_persona
+==============================================================================================
+CANDIDATO decidir_poner_nota_comunicar_proposito_limites   [bandeja]
+  maximo cabecera pasos     vecino
+  0.256  0.256    0.071     bandeja   recorrer_trece_elementos_proceso_evaluacion_formal
+  0.140  0.140    0.071     bandeja   elegir_categorias_nota_palabras_propias_empresa
+  0.121  0.059    0.121     bandeja   mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+  0.120  0.120    0.095     bandeja   entregar_evaluacion_formal_desempenio_nueve_consejos
+  0.109  0.109    0.051     bandeja   repartir_decision_cercanos_hechos
+  0.105  0.105    0.062     bandeja   montar_reunion_gran_debate
+==============================================================================================
+CANDIDATO elegir_categorias_nota_palabras_propias_empresa   [bandeja]
+  maximo cabecera pasos     vecino
+  0.140  0.140    0.071     bandeja   decidir_poner_nota_comunicar_proposito_limites
+  0.123  0.123    0.112     bandeja   montar_equipo_gestion_desempenio_revisar_sistema
+  0.122  0.088    0.122     bandeja   decidir_momento_despedir_persona
+  0.121  0.121    0.100     bandeja   entregar_evaluacion_formal_desempenio_nueve_consejos
+  0.120  0.030    0.120     bandeja   montar_evaluacion_360_grados_ligera_pares
+  0.119  0.033    0.119     bandeja   mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+==============================================================================================
+CANDIDATO escribir_escaleras_puesto_evitar_dos_extremos   [bandeja]
+  maximo cabecera pasos     vecino
+  0.089  0.016    0.089     bandeja   facilitar_despido_tres_cosas
+  0.089  0.026    0.089     bandeja   trazar_plan_dieciocho_meses_aprendizaje
+  0.085  0.085    0.063     bandeja   fijar_cuatro_notas_calcular_nota_global
+  0.085  0.032    0.085     bandeja   repartir_notas_publicar_reparto_esperado
+  0.085  0.032    0.085     grafo     delimitar_franqueza_radical_cinco_noes
+  0.083  0.083    0.059     bandeja   admitir_pronto_mal_desempenio_cuatro_razones
+==============================================================================================
+CANDIDATO fijar_cuatro_notas_calcular_nota_global   [bandeja]
+  maximo cabecera pasos     vecino
+  0.135  0.135    0.119     bandeja   presionar_curva_notas_evitar_forzarla
+  0.130  0.051    0.130     bandeja   aplicar_consecuencias_nota_apoyar_fuerzas_persona
+  0.122  0.016    0.122     bandeja   armar_plan_anual_crecimiento_equipo
+  0.118  0.052    0.118     bandeja   calibrar_notas_reunion_jefes_pares
+  0.115  0.115    0.112     bandeja   elegir_categorias_nota_palabras_propias_empresa
+  0.107  0.052    0.107     bandeja   montar_evaluacion_360_grados_ligera_pares
+==============================================================================================
+CANDIDATO elegir_palabras_nota_definirlas_empresa_entera   [bandeja]
+  maximo cabecera pasos     vecino
+  0.122  0.018    0.122     bandeja   calibrar_decision_despido_documentarla
+  0.109  0.109    0.068     bandeja   elegir_categorias_nota_palabras_propias_empresa
+  0.104  0.104    0.078     bandeja   repartir_notas_publicar_reparto_esperado
+  0.102  0.000    0.102     bandeja   admitir_pronto_mal_desempenio_cuatro_razones
+  0.102  0.015    0.102     bandeja   trazar_plan_dieciocho_meses_aprendizaje
+  0.100  0.100    0.046     grafo     elegir_recolocar_despedir_persona
+==============================================================================================
+CANDIDATO aplicar_consecuencias_nota_apoyar_fuerzas_persona   [bandeja]
+  maximo cabecera pasos     vecino
+  0.130  0.051    0.130     bandeja   fijar_cuatro_notas_calcular_nota_global
+  0.128  0.027    0.128     bandeja   armar_plan_anual_crecimiento_equipo
+  0.126  0.031    0.126     bandeja   decidir_momento_despedir_persona
+  0.125  0.000    0.125     bandeja   dar_elogio_disciplina_igual_critica
+  0.124  0.027    0.124     bandeja   conducir_reuniones_salto_nivel_diez_reglas
+  0.117  0.062    0.117     bandeja   entregar_evaluacion_formal_desempenio_nueve_consejos

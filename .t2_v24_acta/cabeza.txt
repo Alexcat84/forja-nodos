@@ -1,0 +1,18 @@
+====================================================================================================
+recorrer_trece_elementos_proceso_evaluacion_formal [ cuarentena\scott_radical_candor\recorrer_trece_elementos_proceso_evaluacion_formal.json ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando tu equipo de gestion del desempenio va a disenar o a rehacer el proceso formal de evaluacion y necesita tener delante todo lo que hay que decidir antes de decidir nada.
+  ENTREGABLE: La lista de los trece elementos del proceso recorrida entera, con la decision de tu empresa tomada en cada uno y sin haber copiado la evaluacion de nadie.
+    1. Parte de lo que el texto avisa antes de empezar: cada empresa tiene necesidades distintas para sus evaluaciones, asi que el texto dice que no puede disenar una evaluacion de talla unica por mucho que quisiera. Lo que si hace es llevarte por las consideraciones clave que tu y tu equipo querreis tener
+    2. Uno, decide si pones nota o no.
+    3. Dos, decide las categorias de la nota.
+    4. Tres, decide las escaleras de puesto.
+    5. Cuatro, decide cuantas notas.
+    6. Cinco, cuida el lenguaje, porque el texto dice que las palabras importan.
+    7. Seis, decide las consecuencias de la nota.
+    8. Siete, decide el reparto de notas.
+    9. Ocho, decide si fuerzas la curva o no.
+   10. Nueve, decide la calibracion de las notas.
+   11. Diez, decide la frecuencia.
+   12. Once, decide si haces un proceso de trescientos sesenta grados o te apoyas en el juicio unilateral del jefe.
+   13. Doce, decide si es transparente o confidencial.
+   14. Trece, decide si es ligero o pesado.

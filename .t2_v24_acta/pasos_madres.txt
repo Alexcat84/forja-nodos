@@ -1,0 +1,44 @@
+====================================================================================================
+presionar_curva_notas_evitar_forzarla [ cuarentena\scott_radical_candor\presionar_curva_notas_evitar_forzarla.json ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando tienes que decidir si obligas a tus jefes a repartir sus notas segun un porcentaje rigido, o no.
+  ENTREGABLE: La curva esperada dicha en voz alta, visible entre pares del mismo nivel, con la salida no lamentada contada dentro de la nota mas baja y una explicacion escrita exigida a quien se salga.
+    1. Ten delante lo que una curva forzada es, que es lo que el texto define: decirles a los jefes que tienen que tener un porcentaje rigidamente definido de notas mas bajas, un porcentaje fijo de notas alt
+    2. Cuenta con lo que la curva forzada si evita, que son las dos maneras comunes de hacer trampa con el sistema: darle un trofeo a cada empleado, o meter a todo el mundo en el medio para ahorrarse las con
+    3. Y cuenta con lo que trae, que el texto dice sin rodeos: puede dar notas injustas, y las consecuencias no buscadas y el juego politico de una curva forzada son terribles.
+    4. No fuerces la curva, que es la recomendacion que el texto escribe, pero si ponle presion, y hazlo con las cuatro cosas que enumera a continuacion.
+    5. Una, di explicitamente cual es la curva esperada.
+    6. Dos, cuenta la salida no lamentada, es decir la gente que fue despedida o a la que se acompanio a la salida, dentro de las cifras de la nota mas baja, y sigue esa salida no lamentada a lo largo del ti
+    7. Tres, haz visible la curva de cada jefe a sus jefes pares, la de cada director a sus directores pares, la de cada vicepresidente a sus vicepresidentes pares, y asi hacia arriba.
+    8. Cuatro, exige una explicacion escrita a los jefes que se salgan de la curva esperada, pregunta mucho y deja que sus pares pregunten mucho.
+    9. Cuando la curva de un equipo este notablemente torcida comparada con la de otros equipos, haz la pregunta que el texto escribe: contribuyo de verdad este equipo mas o menos que los otros en este ciclo
+   10. Y al reves, si un equipo entrego algo excepcional, asegurate de que su jefe lo esta reflejando en las notas.
+   11. Cuenta con hacia donde se tuerce la mayoria, que es lo que el texto dice que hace importantes las sesiones de calibracion: casi todos los jefes se quedan en el medio tirando hacia lo positivo, y dan d
+====================================================================================================
+fijar_cuatro_notas_calcular_nota_global [ cuarentena\scott_radical_candor\fijar_cuatro_notas_calcular_nota_global.json ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando tienes que decidir en cuantos escalones se puntua cada categoria, y despues como se combinan las notas de categoria en una nota global.
+  ENTREGABLE: El numero de notas fijado con las razones del texto delante, y la regla de calculo de la nota global escrita sin promedios.
+    1. Ten delante lo que el texto dice que se ha estudiado mucho, cual es el numero optimo de notas, y las dos respuestas que recogio: los estadisticos le dicen que de cinco a siete notas maximizan la senia
+    2. Cuenta con la primera pega de pasarse: mas de cuatro notas da una falsa sensacion de precision, y hace que los jefes sientan que deberian poder alcanzar un nivel de granularidad en su valoracion del d
+    3. Cuenta con la segunda pega, que es lo que los jefes hacen cuando tienen demasiadas notas a mano: tienden a intentar ensenar una subida en cada evaluacion para que la persona sienta que esta mejorando,
+    4. Cuenta con la pega de quedarse corto: si ofreces solo tres notas, la inmensa mayoria de la gente no aprende nada de su nota, porque la inmensa mayoria, normalmente alrededor del ochenta por ciento, va
+    5. Cuenta con lo que arreglan cuatro notas: obligan a los jefes a dividir ese medio enorme entre quienes estan por encima de la media y quienes estan por debajo. Muchos jefes se resisten porque eso trae 
+    6. Fija cuatro notas, que es donde el texto dice haberse quedado como la mejor proporcion entre simplicidad y senial, contando con que puede haber una buena razon para que tu hagas otra cosa.
+    7. Sea cual sea el numero que elijas, busca un sistema que lleve a los jefes a dejarle claro a la gente donde esta y que implicaciones tiene para su paga y su empleo futuro, porque las conversaciones imp
+    8. Cuenta con lo que cuatro notas por separado en cada una de las categorias elegidas permiten: que la evaluacion sirva de diagnostico para mejorar, del tipo tus resultados son asombrosos pero tu trabajo
+    9. Cuenta tambien con la pega que el texto reconoce de las cuatro notas: no te da una nota para la gente cuyo desempenio es de verdad excepcional, digamos el cinco o incluso el uno por ciento de arriba; 
+   10. Cuando montes la rejilla de notas, no la adoptes tal cual: el texto dice que tendras que averiguar que funciona mejor en tu situacion, con aportacion de partes interesadas diversas, y que no uses pala
+   11. No uses un promedio de las notas de cada categoria para producir la nota global, que es la recomendacion expresa del texto.
+   12. Aplica en su lugar las dos reglas que el texto escribe: la unica gente que puede sacar la nota alta tiene que sacarla en todas las categorias, y quien saca la nota mas baja en una sola categoria saca 
+====================================================================================================
+repartir_notas_publicar_reparto_esperado [ cuarentena\scott_radical_candor\repartir_notas_publicar_reparto_esperado.json ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando tienes que decidir que reparto de notas espera tu empresa y si lo haces publico.
+  ENTREGABLE: El reparto de notas que esperas decidido a partir de las consecuencias de cada nota, y publicado a la organizacion para que las calibraciones no se vuelvan opacas.
+    1. Ten delante la consideracion practica que el texto pone primera, y que no es menor: como repartes la tarta de la retribucion. Si vas a dar primas muy grandes a la gente que saca la nota alta, probable
+    2. Evita en general una distribucion demasiado rigida, por la razon que el texto da: puedes estar bendecido en un anio dado con un equipo excepcionalmente capaz, o maldito con un punado de gente haciendo
+    3. Cuenta con lo que el texto dice que es lo mas importante en general: el proceso de calibracion.
+    4. Ten delante los porcentajes que la experiencia de la autora le da, y que ella misma marca como suyos: al menos un cinco por ciento de la gente probablemente necesita en cualquier momento dado el tipo 
+    5. Cuenta con lo que la nota alta significa en ese reparto: quieres dar premios desmesurados porque quieres retribuir con justicia a quien ha conseguido mas que los demas, y retenerlo. La autora ha encon
+    6. Cuenta con que normalmente entre el uno y el cinco por ciento de una poblacion hace un trabajo de verdad excepcional, a quien quieres retener a toda costa. Identificar a esa gente es un ejercicio impo
+    7. Haz la cuenta que el texto hace con lo que queda: alrededor de un cuarenta por ciento de tu poblacion sacando la nota media y un cuarenta por ciento sacando la nota buena.
+    8. Decide tu las consecuencias de cada nota y, a partir de ahi, cual deberia ser el reparto, porque el texto dice expresamente que no sabe bastante de tu organizacion para decir si el reparto que describ
+    9. Haz transparente a la organizacion el reparto que esperas ver, que es lo que el texto si recomienda, porque si no lo haces las calibraciones se vuelven opacas y excesivamente frustrantes.

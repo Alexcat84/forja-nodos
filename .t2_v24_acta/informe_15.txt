@@ -1,0 +1,184 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 15
+poblacion del barrido       : 345   (214 del grafo mas 131 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 2
+  BLOQUEARIAN esperando veredicto  : 13   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 43
+  por candidato bloqueado          : menor 1, mediana 3, mayor 7
+  que señal levanta cada vecindad  : familia_id 2, paso_contra_nodo 3, similitud_texto 38
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] aplicar_consecuencias_nota_apoyar_fuerzas_persona   (aplicar_consecuencias_nota_apoyar_fuerzas_persona.json)
+
+[BLOQUEARIA] calibrar_notas_reunion_jefes_pares   (calibrar_notas_reunion_jefes_pares.json)
+    vecino mantener_proceso_evaluacion_ligero_vigilar_crecimiento  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.000 | paso_contra_nodo 0.458
+      paso 10 del candidato contra paso 9 de mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+
+[BLOQUEARIA] decidir_poner_nota_comunicar_proposito_limites   (decidir_poner_nota_comunicar_proposito_limites.json)
+    vecino recorrer_trece_elementos_proceso_evaluacion_formal  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.000 | paso_contra_nodo 0.495
+      paso 7 del candidato contra paso 10 de recorrer_trece_elementos_proceso_evaluacion_formal
+    vecino escribir_escaleras_puesto_evitar_dos_extremos  [levantada por: similitud_texto]
+      similitud_texto 0.376 | familia_id 0.000 | paso_contra_nodo 0.457
+      paso 3 del candidato contra paso 4 de escribir_escaleras_puesto_evitar_dos_extremos
+    vecino repartir_notas_publicar_reparto_esperado  [levantada por: similitud_texto]
+      similitud_texto 0.397 | familia_id 0.100 | paso_contra_nodo 0.441
+      paso 3 del candidato contra paso 7 de repartir_notas_publicar_reparto_esperado
+    vecino evaluar_desempenio_dos_veces_anio  [levantada por: similitud_texto]
+      similitud_texto 0.364 | familia_id 0.000 | paso_contra_nodo 0.414
+      paso 7 del candidato contra paso 6 de evaluar_desempenio_dos_veces_anio
+
+[BLOQUEARIA] elegir_categorias_nota_palabras_propias_empresa   (elegir_categorias_nota_palabras_propias_empresa.json)
+    vecino elegir_palabras_nota_definirlas_empresa_entera  [levantada por: familia_id]
+      similitud_texto 0.334 | familia_id 0.500 | paso_contra_nodo 0.488
+      paso 12 del candidato contra paso 7 de elegir_palabras_nota_definirlas_empresa_entera
+
+[BLOQUEARIA] elegir_palabras_nota_definirlas_empresa_entera   (elegir_palabras_nota_definirlas_empresa_entera.json)
+    vecino decidir_momento_despedir_persona  [levantada por: paso_contra_nodo]
+      similitud_texto 0.220 | familia_id 0.000 | paso_contra_nodo 0.626
+      paso 7 del candidato contra paso 2 de decidir_momento_despedir_persona
+    vecino elegir_categorias_nota_palabras_propias_empresa  [levantada por: familia_id]
+      similitud_texto 0.332 | familia_id 0.500 | paso_contra_nodo 0.488
+      paso 7 del candidato contra paso 12 de elegir_categorias_nota_palabras_propias_empresa
+    vecino evaluar_desempenio_dos_veces_anio  [levantada por: similitud_texto]
+      similitud_texto 0.376 | familia_id 0.000 | paso_contra_nodo 0.476
+      paso 7 del candidato contra paso 7 de evaluar_desempenio_dos_veces_anio
+    vecino escribir_escaleras_puesto_evitar_dos_extremos  [levantada por: similitud_texto]
+      similitud_texto 0.384 | familia_id 0.000 | paso_contra_nodo 0.469
+      paso 1 del candidato contra paso 6 de escribir_escaleras_puesto_evitar_dos_extremos
+    vecino recorrer_trece_elementos_proceso_evaluacion_formal  [levantada por: similitud_texto]
+      similitud_texto 0.362 | familia_id 0.000 | paso_contra_nodo 0.457
+      paso 5 del candidato contra paso 10 de recorrer_trece_elementos_proceso_evaluacion_formal
+
+[BLOQUEARIA] escribir_escaleras_puesto_evitar_dos_extremos   (escribir_escaleras_puesto_evitar_dos_extremos.json)
+    vecino elegir_palabras_nota_definirlas_empresa_entera  [levantada por: similitud_texto]
+      similitud_texto 0.397 | familia_id 0.000 | paso_contra_nodo 0.465
+      paso 6 del candidato contra paso 7 de elegir_palabras_nota_definirlas_empresa_entera
+    vecino decidir_poner_nota_comunicar_proposito_limites  [levantada por: similitud_texto]
+      similitud_texto 0.373 | familia_id 0.000 | paso_contra_nodo 0.457
+      paso 4 del candidato contra paso 3 de decidir_poner_nota_comunicar_proposito_limites
+
+[BLOQUEARIA] evaluar_desempenio_dos_veces_anio   (evaluar_desempenio_dos_veces_anio.json)
+    vecino presionar_curva_notas_evitar_forzarla  [levantada por: similitud_texto]
+      similitud_texto 0.369 | familia_id 0.000 | paso_contra_nodo 0.512
+      paso 4 del candidato contra paso 4 de presionar_curva_notas_evitar_forzarla
+    vecino repartir_notas_publicar_reparto_esperado  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.483
+      paso 2 del candidato contra paso 3 de repartir_notas_publicar_reparto_esperado
+    vecino elegir_palabras_nota_definirlas_empresa_entera  [levantada por: similitud_texto]
+      similitud_texto 0.381 | familia_id 0.000 | paso_contra_nodo 0.462
+      paso 7 del candidato contra paso 7 de elegir_palabras_nota_definirlas_empresa_entera
+    vecino hacer_critica_pares_transparente_ensenar_escribirla  [levantada por: similitud_texto]
+      similitud_texto 0.368 | familia_id 0.000 | paso_contra_nodo 0.452
+      paso 11 del candidato contra paso 9 de hacer_critica_pares_transparente_ensenar_escribirla
+    vecino mantener_proceso_evaluacion_ligero_vigilar_crecimiento  [levantada por: similitud_texto]
+      similitud_texto 0.369 | familia_id 0.000 | paso_contra_nodo 0.452
+      paso 4 del candidato contra paso 4 de mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+    vecino montar_evaluacion_360_grados_ligera_pares  [levantada por: similitud_texto]
+      similitud_texto 0.404 | familia_id 0.000 | paso_contra_nodo 0.447
+      paso 1 del candidato contra paso 5 de montar_evaluacion_360_grados_ligera_pares
+    vecino decidir_poner_nota_comunicar_proposito_limites  [levantada por: similitud_texto]
+      similitud_texto 0.368 | familia_id 0.000 | paso_contra_nodo 0.429
+      paso 1 del candidato contra paso 3 de decidir_poner_nota_comunicar_proposito_limites
+
+[BLOQUEARIA] fijar_cuatro_notas_calcular_nota_global   (fijar_cuatro_notas_calcular_nota_global.json)
+    vecino evaluar_desempenio_dos_veces_anio  [levantada por: similitud_texto]
+      similitud_texto 0.363 | familia_id 0.000 | paso_contra_nodo 0.484
+      paso 11 del candidato contra paso 4 de evaluar_desempenio_dos_veces_anio
+    vecino repartir_notas_publicar_reparto_esperado  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.111 | paso_contra_nodo 0.409
+      paso 9 del candidato contra paso 6 de repartir_notas_publicar_reparto_esperado
+
+[BLOQUEARIA] hacer_critica_pares_transparente_ensenar_escribirla   (hacer_critica_pares_transparente_ensenar_escribirla.json)
+    vecino montar_evaluacion_360_grados_ligera_pares  [levantada por: similitud_texto]
+      similitud_texto 0.383 | familia_id 0.100 | paso_contra_nodo 0.510
+      paso 6 del candidato contra paso 1 de montar_evaluacion_360_grados_ligera_pares
+    vecino calibrar_notas_reunion_jefes_pares  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.100 | paso_contra_nodo 0.463
+      paso 5 del candidato contra paso 10 de calibrar_notas_reunion_jefes_pares
+    vecino decidir_poner_nota_comunicar_proposito_limites  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.000 | paso_contra_nodo 0.453
+      paso 9 del candidato contra paso 8 de decidir_poner_nota_comunicar_proposito_limites
+
+[BLOQUEARIA] mantener_proceso_evaluacion_ligero_vigilar_crecimiento   (mantener_proceso_evaluacion_ligero_vigilar_crecimiento.json)
+    vecino elegir_palabras_nota_definirlas_empresa_entera  [levantada por: paso_contra_nodo]
+      similitud_texto 0.334 | familia_id 0.000 | paso_contra_nodo 0.637
+      paso 9 del candidato contra paso 10 de elegir_palabras_nota_definirlas_empresa_entera
+    vecino montar_evaluacion_360_grados_ligera_pares  [levantada por: similitud_texto]
+      similitud_texto 0.396 | familia_id 0.100 | paso_contra_nodo 0.480
+      paso 1 del candidato contra paso 1 de montar_evaluacion_360_grados_ligera_pares
+    vecino calibrar_notas_reunion_jefes_pares  [levantada por: similitud_texto]
+      similitud_texto 0.374 | familia_id 0.000 | paso_contra_nodo 0.464
+      paso 2 del candidato contra paso 10 de calibrar_notas_reunion_jefes_pares
+    vecino presionar_curva_notas_evitar_forzarla  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.452
+      paso 2 del candidato contra paso 3 de presionar_curva_notas_evitar_forzarla
+    vecino evaluar_desempenio_dos_veces_anio  [levantada por: similitud_texto]
+      similitud_texto 0.393 | familia_id 0.000 | paso_contra_nodo 0.441
+      paso 9 del candidato contra paso 1 de evaluar_desempenio_dos_veces_anio
+
+[ENTRARIA] montar_equipo_gestion_desempenio_revisar_sistema   (montar_equipo_gestion_desempenio_revisar_sistema.json)
+
+[BLOQUEARIA] montar_evaluacion_360_grados_ligera_pares   (montar_evaluacion_360_grados_ligera_pares.json)
+    vecino hacer_critica_pares_transparente_ensenar_escribirla  [levantada por: similitud_texto]
+      similitud_texto 0.381 | familia_id 0.100 | paso_contra_nodo 0.510
+      paso 1 del candidato contra paso 6 de hacer_critica_pares_transparente_ensenar_escribirla
+    vecino mantener_proceso_evaluacion_ligero_vigilar_crecimiento  [levantada por: similitud_texto]
+      similitud_texto 0.399 | familia_id 0.100 | paso_contra_nodo 0.480
+      paso 1 del candidato contra paso 1 de mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+    vecino evaluar_desempenio_dos_veces_anio  [levantada por: similitud_texto]
+      similitud_texto 0.399 | familia_id 0.000 | paso_contra_nodo 0.454
+      paso 5 del candidato contra paso 1 de evaluar_desempenio_dos_veces_anio
+
+[BLOQUEARIA] presionar_curva_notas_evitar_forzarla   (presionar_curva_notas_evitar_forzarla.json)
+    vecino evaluar_desempenio_dos_veces_anio  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.512
+      paso 4 del candidato contra paso 4 de evaluar_desempenio_dos_veces_anio
+    vecino mantener_proceso_evaluacion_ligero_vigilar_crecimiento  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.456
+      paso 1 del candidato contra paso 1 de mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+    vecino escribir_escaleras_puesto_evitar_dos_extremos  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.100 | paso_contra_nodo 0.450
+      paso 1 del candidato contra paso 2 de escribir_escaleras_puesto_evitar_dos_extremos
+    vecino manejar_enfado_persona_desafiada  [levantada por: similitud_texto]
+      similitud_texto 0.367 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 1 del candidato contra paso 2 de manejar_enfado_persona_desafiada
+
+[BLOQUEARIA] recorrer_trece_elementos_proceso_evaluacion_formal   (recorrer_trece_elementos_proceso_evaluacion_formal.json)
+    vecino aprender_resultados_vencer_dos_presiones  [levantada por: paso_contra_nodo]
+      similitud_texto 0.272 | familia_id 0.000 | paso_contra_nodo 0.600
+      paso 11 del candidato contra paso 4 de aprender_resultados_vencer_dos_presiones
+    vecino elegir_palabras_nota_definirlas_empresa_entera  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.476
+      paso 10 del candidato contra paso 5 de elegir_palabras_nota_definirlas_empresa_entera
+
+[BLOQUEARIA] repartir_notas_publicar_reparto_esperado   (repartir_notas_publicar_reparto_esperado.json)
+    vecino decidir_poner_nota_comunicar_proposito_limites  [levantada por: similitud_texto]
+      similitud_texto 0.376 | familia_id 0.100 | paso_contra_nodo 0.504
+      paso 3 del candidato contra paso 3 de decidir_poner_nota_comunicar_proposito_limites
+    vecino elegir_palabras_nota_definirlas_empresa_entera  [levantada por: similitud_texto]
+      similitud_texto 0.375 | familia_id 0.100 | paso_contra_nodo 0.492
+      paso 3 del candidato contra paso 10 de elegir_palabras_nota_definirlas_empresa_entera
+    vecino evaluar_desempenio_dos_veces_anio  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.471
+      paso 3 del candidato contra paso 2 de evaluar_desempenio_dos_veces_anio
+    vecino fijar_cuatro_notas_calcular_nota_global  [levantada por: similitud_texto]
+      similitud_texto 0.367 | familia_id 0.111 | paso_contra_nodo 0.423
+      paso 6 del candidato contra paso 9 de fijar_cuatro_notas_calcular_nota_global
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

@@ -1,0 +1,11 @@
+====================================================================================================
+escribir_escaleras_puesto_evitar_dos_extremos [ cuarentena\scott_radical_candor\escribir_escaleras_puesto_evitar_dos_extremos.json ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando tienes que describir que significa cada categoria de la nota en cada nivel de puesto, porque no puedes medir a un recien salido de la universidad con la misma vara que a un director general.
+  ENTREGABLE: Una escalera de puesto por funcion mayor, escrita por quien ha hecho el trabajo en cada nivel y editada por recursos humanos, que no sea ni una lista de casillas ni una promesa falsa.
+    1. Parte de por que el texto las llama un mal necesario aunque las odie: las malas tienden a celebrar el trepar por el escalafon en vez de hacer un trabajo con sentido, y aun asi el desempenio de un recien licenciado no deberia medirse con la misma vara que el de un director general.
+    2. Describe que significa cada categoria en cada nivel, y el texto pone los niveles que hay que recorrer: empleado de entrada, jefe, director, vicepresidente, y asi hacia arriba.
+    3. Evita el primer extremo, que es pasarse de especifico, por las dos cosas que el texto dice que provoca: que la gente se centre en tachar casillas en vez de en la idea de sentido comun de desarrollar competencias, y que una escalera demasiado especifica se lea como una promesa falsa que no puedes cumplir, del tipo si haces estas cosas te asciendo.
+    4. Evita tambien la proliferacion de escaleras que el texto dice que sale de ahi: en vez de una para cada funcion mayor de la empresa, cada subgrupo tendra la suya y luego se peleara con los otros subgrupos sobre por que la suya no es justa.
+    5. Evita el segundo extremo, que es pasarse de abstracto: si son demasiado abstractas la gente las siente irrelevantes para su trabajo y se leen como una lista de palabreria hinchada.
+    6. Mete a redactar las descripciones a los ejecutivos operativos que han hecho el trabajo en cada nivel, que es lo que el texto dice que ayuda.
+    7. Deja que recursos humanos haga de editor de esas descripciones.

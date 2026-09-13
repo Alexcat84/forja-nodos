@@ -1,0 +1,37 @@
+====================================================================================================
+manejar_enfado_persona_desafiada [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando alguien de tu equipo esta enfadado contigo despues de que le desafiaras directamente, y lo que dijiste le ha dolido.
+  ENTREGABLE: El dolor reconocido en voz alta, la frase no te lo tomes como algo personal fuera de tu vocabulario, y una oferta de ayuda para arreglar el problema sin haber negado que el problema existe.
+    1. Acepta antes de empezar lo que el texto pone como parte del puesto: que a veces la gente de tu equipo va a estar enfadada contigo. El texto anade que si nadie se enfada nunca contigo es probable que no estes desafiando bastante a tu equipo.
+    2. Trata como la clave lo que el texto llama la clave, igual que en cualquier relacion: como manejas el enfado.
+    3. Cuando lo que dices duele, reconoce el dolor de la otra persona.
+    4. No finjas que no duele y no digas que no deberia doler: solo demuestra que te importa.
+    5. Elimina de tu vocabulario la frase no te lo tomes como algo personal. El texto dice que es insultante.
+    6. En su lugar, ofrecete a ayudar a arreglar el problema.
+    7. No finjas que no hay problema solo para intentar que alguien se sienta mejor.
+====================================================================================================
+delimitar_franqueza_radical_cinco_noes [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando alguien invoca la franqueza radical para justificar lo que va a decir, o cuando quieres saber si lo que estas a punto de hacer cuenta como franqueza radical o no.
+  ENTREGABLE: Los cinco limites comprobados sobre el caso que tienes delante, y la cuenta de las tres cosas sin importancia que hoy dejas sin decir.
+    1. Comprueba el primero: no es licencia para ser gratuitamente duro ni para apunialar de frente. El texto avisa de que no es franqueza radical solo porque empieces diciendo dejame ser radicalmente franco contigo, y pone los dos ejemplares de lo que la anula, llam
+    2. Comprueba el segundo: no es una invitacion a buscar defectos. El texto razona que desafiar directamente cuesta energia de verdad, tanto a quien desafias como a ti, asi que hazlo solo por las cosas que importan de verdad.
+    3. Aplica la regla concreta que el texto pone para eso, que segun el texto vale para cualquier relacion: deja tres cosas sin importancia sin decir cada dia.
+    4. Comprueba el tercero: no es jerarquica. Practicala hacia arriba, hacia abajo y hacia los lados, que son las tres direcciones que el texto nombra.
+    5. Crea tu propio microcosmos radicalmente franco para ti y para tu equipo aunque tu jefe y tus pares no hayan comprado el metodo, que es lo que el texto dice que puedes hacer.
+    6. Ve con algo mas de cautela con tu jefe y con tus pares, que es lo que el texto te autoriza expresamente.
+    7. Y si al final no es posible ser radicalmente franco con tu jefe y con tus pares, busca un tipo distinto de entorno de trabajo, si es que hay alguno posible. Es lo que el texto recomienda expresamente en esa misma linea, despues de la cautela.
+    8. Comprueba el cuarto: no es confraternizar ni una extroversion sin fin que agota a las personas calladas de tu equipo, o a ti si el callado eres tu. El texto descarta por su nombre emborracharse, conducir karts, jugar al laser tag y las cenas interminables con 
+    9. Comprueba el quinto: no es propia de la cultura de Silicon Valley ni es estadounidense. El texto dice que es humana, y que fue trabajando para una empresa israeli donde la autora empezo a desarrollar su idea de la franqueza radical.
+====================================================================================================
+desplegar_marco_franqueza_radical [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando estas desplegando la franqueza radical en tu equipo y crees que puede haber confusion sobre lo que significa.
+  ENTREGABLE: Copias del marco puestas a la vista y repartidas entre tus colegas, y el marco en uso como brujula de conversaciones concretas, sin nombres escritos en las casillas.
+    1. Usa la version nueva del marco de la franqueza radical que trae esta edicion, que es la forma que el propio texto propone para ayudar a que todos entiendan que la idea no es comportarse como un imbecil.
+    2. Recorta el marco del propio libro. El texto dice que hay una version mas grande en su pagina 297.
+    3. Haz fotocopias.
+    4. Ponlas en tu nevera, encima de tu mesa o en cualquier otro sitio, como recordatorio.
+    5. Comparte copias con tus colegas.
+    6. Usa el marco como una brujula, para llevar cada conversacion concreta a un sitio mejor.
+    7. No lo uses como test de personalidad para juzgarte a ti ni para juzgar a otros.
+    8. No escribas nombres en las casillas.
+    9. Cuenta con lo que el texto aniade justo despues de las dos prohibiciones: todos caemos en cada cuadrante varias veces al dia.
