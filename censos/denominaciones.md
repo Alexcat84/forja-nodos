@@ -461,3 +461,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-13 | delimitar_franqueza_radical_cinco_noes | nombre_largo | Lo que la franqueza radical no es: no es licencia para ser duro, no es buscar defectos, no es jerarquica, no es confraternizar y no es de Silicon Valley | castellano | - |
 | 2026-09-13 | delimitar_franqueza_radical_cinco_noes | otro_idioma | What Radical Candor is not | ingles | - |
 | 2026-09-13 | delimitar_franqueza_radical_cinco_noes | otro_idioma | front-stab | ingles | - |
+| 2026-09-13 | invitar_desafio_reciproco_equipo | nombre_largo | La parte mas dificil de construir la confianza, segun el propio texto: que el desafio sea reciproco pese a la relacion de mando | castellano | - |
+| 2026-09-13 | invitar_desafio_reciproco_equipo | otro_idioma | encourage people to challenge you directly | ingles | - |
+| 2026-09-13 | invitar_desafio_reciproco_equipo | otro_idioma | reciprocal challenge | ingles | - |

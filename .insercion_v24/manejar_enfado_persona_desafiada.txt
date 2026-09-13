@@ -1,0 +1,44 @@
+ADUANA DE INSERCION, candidato 'manejar_enfado_persona_desafiada'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi seÃ±al contra 207 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las seÃ±ales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino delimitar_franqueza_radical_cinco_noes  [Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir]
+    levantada por: similitud_texto
+    similitud_texto    0.361 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.471 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de delimitar_franqueza_radical_cinco_noes
+
+  vecino desplegar_marco_franqueza_radical  [Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones]
+    levantada por: similitud_texto
+    similitud_texto    0.428 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.440 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de desplegar_marco_franqueza_radical
+
+  vecino repartir_semana_cuarenta_horas_jefe  [Repartir la semana de cuarenta horas del jefe entre gestionar, pensar por tu cuenta y lo imprevisible]
+    levantada por: similitud_texto
+    similitud_texto    0.351 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.428 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de repartir_semana_cuarenta_horas_jefe
+
+BLOQUEADO: faltan veredictos para delimitar_franqueza_radical_cinco_noes, desplegar_marco_franqueza_radical, repartir_semana_cuarenta_horas_jefe
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "delimitar_franqueza_radical_cinco_noes|CONTINUA|madre=delimitar_franqueza_radical_cinco_noes|que aÃ±ade el hijo a la madre"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|SANO|por que no son el mismo trabajo"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "desplegar_marco_franqueza_radical|CONTINUA|madre=desplegar_marco_franqueza_radical|que aÃ±ade el hijo a la madre"
+    --veredicto "desplegar_marco_franqueza_radical|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "desplegar_marco_franqueza_radical|SANO|por que no son el mismo trabajo"
+    --veredicto "desplegar_marco_franqueza_radical|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "repartir_semana_cuarenta_horas_jefe|CONTINUA|madre=repartir_semana_cuarenta_horas_jefe|que aÃ±ade el hijo a la madre"
+    --veredicto "repartir_semana_cuarenta_horas_jefe|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "repartir_semana_cuarenta_horas_jefe|SANO|por que no son el mismo trabajo"
+    --veredicto "repartir_semana_cuarenta_horas_jefe|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

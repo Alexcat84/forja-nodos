@@ -29416,3 +29416,70 @@ falta*. **La desviacion empuja hacia leer de mas.**
 
 **Y AUN ASI ES UNA DESVIACION Y VA MARCADA COMO DISCUTIBLE** (`R.11`), porque el orden del libro es
 lo que `EXTRACTOR.md` 12.3 manda y yo lo estoy alterando por una razon de metodo, no de lectura.
+
+---
+
+## R.7. LA DEUDA DE ARISTAS, **REPETIDA ENTERA AL CIERRE**, Y SUBE DE `53` A `71`
+
+*`EXTRACTOR.md` 15.6 y `D.29`. **Ninguna se cablea en esta vuelta**, y la razon es medible y no una
+excusa: `forja.py arista` rechaza por construccion una arista con un extremo en cuarentena, y al
+cerrar esta vuelta **la mayoria de los 142 candidatos del lote sigue en cuarentena** porque la tanda
+de insercion no cupo entera (`R.6`). **Las que tienen sus dos extremos ya en el grafo se cablean en
+la vuelta que termine la tanda**, y las demas detras.*
+
+### R.7.a. EL CENSO DE LAS 71, **CONTADO DE SU FICHERO DONDE SE PUEDE Y CITADO DONDE NO**
+
+**QUE CUENTA ESTE INSTRUMENTO Y QUE NO, y va antes de la tabla porque decide como se lee:** cuenta
+**las filas numeradas** de las secciones que publican su tanda en tabla uniforme, que son las de la
+36 en adelante. **NO cuenta las 35 primeras**: viven en secciones de las vueltas 21 y 22 con
+formatos distintos y sin numeracion corrida, y **mi primer intento de contarlas por patron dio `10`
+donde hay `35`** (`R.9` caida 3). Esa cifra va **CITADA** de donde se publico y marcada como cita,
+no como medicion de hoy (`EXTRACTOR.md` 5).
+
+Salida de `python .v24/deuda_v24.py`, guardada en `.v24/salida_deuda_v24.txt`:
+
+<!-- TALLADO: salida=.v24/salida_deuda_v24.txt -->
+
+| tanda | numeros | cuantas | de donde sale la cifra |
+|---|---|---:|---|
+| las 12 `D.29` heredadas hasta la vuelta 21 | 1 a 12 | **12** | CITADA de la vuelta que la publico, no remedida |
+| las 3 `D.37` de `facilitar_despido_tres_cosas` | 13 a 15 | **3** | CITADA de la vuelta que la publico, no remedida |
+| el par de lectura adjudicado | 16 a 16 | **1** | CITADA de la vuelta que la publico, no remedida |
+| las 3 `D.37` de `desplegar_tres_conversaciones_carrera` | 17 a 19 | **3** | CITADA de la vuelta que la publico, no remedida |
+| las 16 de la vuelta 22 | 20 a 35 | **16** | CITADA de la vuelta que la publico, no remedida |
+| las 2 de la correccion 6 de la vuelta 23 | 36 a 37 | **2** | **CONTADA HOY** de las filas de su seccion |
+| las 16 de la vuelta 23 | 38 a 53 | **16** | **CONTADA HOY** de las filas de su seccion |
+| las 4 de la TAREA 3 de hoy | 54 a 57 | **4** | **CONTADA HOY** de las filas de su seccion |
+| las 13 de la serie de `cap_14` mas la 1 que no es de la serie, de hoy | 58 a 71 | **14** | **CONTADA HOY** de las filas de su seccion |
+| **la deuda entera al cerrar la vuelta 24** | **1 a 71** | **71** | **36 contadas hoy mas 35 citadas** |
+
+> **LA SERIE, REESCRITA ENTERA PORQUE LA CIFRA DE HOY LA MUEVE** (remedio 2 de `R.2.c`): cuatro
+> aristas al cerrar la vuelta 17, seis la 18, diez la 19, doce la 20, dieciseis la 21, treinta y
+> cinco la 22, cincuenta y tres la 23, **setenta y una hoy.**
+>
+> **LA DEUDA NO SE ESTABILIZA: SE ACUMULA, Y ESTA VUELTA ACUMULA MAS QUE NINGUNA (`18` nuevas).** La
+> razon es que `cap_14` trae una serie numerada de trece partes y **`D.37` manda declararlas en la
+> misma vuelta en que se escriben las partes**, no cuando alguien las eche de menos.
+>
+> **Y LO QUE ESTA VUELTA SI CAMBIA, que es lo que llevaba seis vueltas sin poder cambiar:** el acto
+> que paga la deuda **ya no espera al cierre del lote**, porque el lote cerro. **Espera solo a que
+> los dos extremos de cada arista esten dentro del grafo**, y la tanda de insercion arranco.
+
+### R.7.b. LAS `18` DE ESTA VUELTA, ENTERAS Y CON SU PASO IMPRESO
+
+**Las `4` de la TAREA 3 estan en `R.4.c`** con su madre, su paso impreso del fichero, su especie y
+su razon escrita una a una. **Las `13` de la serie de `cap_14` mas la `1` que no es de la serie
+estan en `R.5.f`**, con el paso de la cabeza impreso entero. **No las repito aqui**: repetir una
+tabla que ya esta a cien lineas de distancia no es publicarla entera, es publicarla dos veces.
+
+### R.7.c. LA CORRECCION 9 DE LA VUELTA 22, **VIVA Y REPETIDA POR TERCERA VEZ**, porque su dia llega con el cableado
+
+> La arista `recorrer_rueda_hacer_cosas_equipo` a `recorrer_rueda_conscientemente_cultura_equipo`
+> **NO se cablea con `--paso 2` de la madre**, porque el paso 2 no nombra a la hija: **la prueba
+> cuelga del `P4` de la hija.** La clase `CONTINUA` y la arista `D.29` se sostienen por su razon
+> escrita.
+
+**Esta escrita ya tres veces (`Q.2.h`, `Q.7.d` y aqui) y sigue sin ejecutarse**, porque su dia es el
+del cableado y el cableado no ha llegado. **Lo repito porque una correccion que solo vive en la
+vuelta que la escribio es una correccion que se pierde**, y porque el auditor me enseno esa leccion
+usando esta misma correccion como ejemplar.
