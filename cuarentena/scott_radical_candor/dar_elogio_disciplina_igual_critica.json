@@ -1,0 +1,58 @@
+{
+  "condiciones_activacion": "Cuando acabas de hacer el trabajo duro de pedir critica y te tienta pasar directamente a dar la tuya, o cuando vas a elogiar a alguien y no has comprobado los hechos.",
+  "denominaciones": {
+    "nombre_largo": "El elogio con disciplina: el acelerador y el freno, por que el elogio vago patrocina, y el ejercicio de dar un elogio concreto a un companiero",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "PRAISE: FOCUS ON THE GOOD STUFF. REALLY."
+      },
+      {
+        "idioma": "ingles",
+        "termino": "APPLY THE SAME DISCIPLINE TO PRAISE THAT YOU DO TO CRITICISM"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Praise Practice"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "entregable_esperado": "El elogio dado primero y concreto, con los hechos comprobados antes, sin comparaciones odiosas y sin un gran trabajo vacio.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ],
+  "id": "dar_elogio_disciplina_igual_critica",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Parte de la imagen con la que el texto ordena las dos: cuando diriges un equipo, la critica es tu freno y el elogio es tu acelerador. Si quieres ir a algun sitio tienes que usar el acelerador mas que el freno, y si no usas nunca el freno te estrellas y no llegas a ninguna parte. Y te sentiras mas seguro pisando el acelerador si sabes que los frenos funcionan.",
+    "Cuenta con la razon por la que la gente se resiste a elogiar, que el texto nombra sin rodeos: es mucho mas facil parecer listo criticando. Y la meta de la guia es ayudar a los demas a tener exito, no demostrar lo listo que eres tu.",
+    "No uses el elogio como arma, que es el otro mal uso que el texto nombra: decir que fulano es estupendo, que os pasa al resto de perdedores, tira a quien tuvo exito debajo de un autobus lleno de companieros que ahora le guardan rencor, y no vas a conseguir que el exito se repita.",
+    "Haz que tu elogio sea concreto y sincero, y que inspire a los demas en vez de hacer comparaciones odiosas.",
+    "Pon disciplina de verdad en el foco sobre el elogio, y cuenta con por que cuesta: despues del trabajo duro y doloroso de pedir critica, apetece dar algo de la tuya, y probablemente llevas un tiempo guardandote alguna.",
+    "Cuenta con el aviso que el texto te da justo ahi: muy a menudo lo que te molesta lleva molestandote tanto tiempo que es todo lo que puedes ver o sentir, y has dejado de notar todo lo que te gusta de trabajar con esa persona. Si solo ves lo negativo, probablemente no estas en la mentalidad correcta para dar critica.",
+    "Asi que centrate en lo bueno y elogia primero.",
+    "Cuenta ademas con lo que el elogio consigue y la critica no: ayuda a la gente a centrarse en sus fuerzas y a hacer mas del trabajo que disfruta y menos del que odia.",
+    "Cuenta con la excepcion que el texto deja escrita: a veces tienes que asegurarte de que una persona llega a un nivel de competencia en el que un defecto no se vuelve fatal.",
+    "Pero cuenta con donde esta el rendimiento: sacas mas partido centrandote en las fuerzas que en las debilidades, maximizando lo de arriba en vez de minimizando lo de abajo.",
+    "Y cuenta con lo que el elogio hace que lo vuelve practico y no solo agradable: revela lo que funciona y lo hace usable y repetible, ensenia como una fuerza puede llevar al exito y como se puede construir un exito sobre otro, demuestra que te importa personalmente, y desafia directamente, porque anima a la gente a seguir haciendo mas de lo que esta bien.",
+    "Hazte la pregunta que el texto hace en sus talleres, tomada de Karen Sipprell: cuanto tiempo dedicas a asegurarte de que tienes los hechos claros antes de dar elogio a alguien de tu equipo? Y cuenta con que la respuesta tipica es ninguno.",
+    "Cuenta con lo que pasa cuando eres vago con el elogio: es igual de probable que dejes a la persona sintiendose patrocinada, y en cualquier caso la positividad vaga tiene muy poco impacto a largo plazo. Un gran trabajo vacio puede sonar condescendiente y desmoralizar, que es justo lo contrario del efecto que buscabas.",
+    "Da elogio concreto, porque el texto dice que ayuda a la persona y al equipo a entender como es el exito, y le da a los miembros ambiciosos del equipo un modelo que seguir.",
+    "Y aplicale al elogio las mismas pautas que a la critica, que el texto repite aqui: hazlo con humildad, con utilidad y de inmediato; elogia en publico y critica en privado; y no des guia sobre atributos de personalidad.",
+    "Practicalo asi: emparejate con un companiero y compartid un elogio concreto cada uno.",
+    "Cuenta con lo que el texto ha medido de ese ejercicio: la gente sale sintiendose vista, conectada e inspirada, y dicen cosas como llevo anios haciendo esto y no sabia que nadie se hubiera dado cuenta, lo que lleva a mas implicacion cuando vuelven a la oficina.",
+    "Cuenta con que no cuesta tanto como parece: no es dificil encontrar cosas que elogiarse unos a otros, incluso con alguien que acabas de conocer en un taller. Se vuelve mas facil centrarse en lo bueno cuando pones la intencion de hacerlo, te da curiosidad, y despues dices algo de verdad concreto.",
+    "Ten delante los dos ejemplares que el texto escribe de ese elogio concreto: gracias por hacer esa pregunta sobre llegar tarde a las reuniones, no sabia si ibamos a tratarlo y ayudo a mover la conversacion. Y gracias por escucharme cuando hablaba de mi hija, de verdad necesitaba hablar de ello.",
+    "Y cuenta con para que sirve ademas del proposito principal: el proposito primero del elogio es ensenar hacia donde vamos y como es lo bueno, y este ejercicio corto es ademas una via rapida y facil de construir la habilidad de dar voz a lo que aprecias."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_13.md, unidad Afterword, titulo textual Afterword to the Revised Edition: Rolling Out Radical Candor. Sale de las lineas 247 a 252 y 267 a 288, bajo los rotulos PRAISE: FOCUS ON THE GOOD STUFF. REALLY. de la linea 247 y APPLY THE SAME DISCIPLINE TO PRAISE THAT YOU DO TO CRITICISM de la 275. ES LA PIEZA 11 DE LA FRONTERA DE cap_13. POR QUE LOS DOS ROTULOS VAN EN UN SOLO NODO Y NO EN DOS, con la vara de la ACTA 20 seccion 4.1 delante: comparten UNA condicion de activacion (vas a dar elogio y te tienta pasar a la critica o quedarte en lo vago) y UN entregable (el elogio dado primero y concreto), y el segundo rotulo es la disciplina del primero, no otro procedimiento. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: el libro pone su propio INVENTARIO DE OBJETOS A COMPROBAR (los hechos antes de elogiar, la concrecion frente a la vaguedad, la comparacion odiosa, los tres pares de pautas de la linea 279) y un ejercicio rotulado con sus dos ejemplares literales. Deja fichero: el elogio dado y lo que dijo. LA HISTORIA DE JASON Y DAVE (lineas 253 a 266) NO VIAJA A NINGUN PASO: es manual 3.5, y su doctrina (que si no hubiera elogiado a Dave, Dave habria seguido preocupado por haberle pisado el terreno) esta escrita fuera del caso en las lineas 267 y 273. SU PAR CON elogiar_trabajo_especifico_contexto Y CON equilibrar_elogio_critica_equipo (cap_05 y cap_09), leido antes de que lo levante ninguna senial porque son los dos pares mas caros de fallar de esta pieza: MI VEREDICTO ES CONTINUA CON ARISTA en los dos casos y NO REPITE, con los lados medidos. Aquellos entregan el elogio concreto con su contexto y el balance de elogio y critica del equipo; este trae lo que ninguno de los dos tiene, que es LA PREGUNTA DE KAREN SIPPRELL sobre comprobar los hechos antes de elogiar, la imagen del acelerador y el freno, el elogio usado como arma, y el ejercicio de pareja con sus dos ejemplares. VA MARCADO COMO DISCUTIBLE EN EL REPORTE, y es el corte mas discutible del capitulo. RELECTURA DE FIDELIDAD D.30 EN EL ACTO, paso a paso contra su linea: 20 pasos, 20 TRANSCRIPCION, 0 PUENTE. P1 de la linea 251; P2 de la linea 267; P3 y P4 de la linea 269; P5 a P7 de la linea 271; P8 a P11 de la linea 273; P12 de la linea 277; P13 a P15 de la linea 279; P16 y P17 de la linea 283; P18 a P20 de las lineas 285 y 287. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto elogio por cada critica, cada cuanto se hace el ejercicio de pareja, y como se comprueban los hechos antes de elogiar. El libro hace la pregunta de los hechos y NO da el metodo de contestarla, y escribirlo seria escribirlo yo.",
+  "titulo": "Dar elogio con la misma disciplina que pones en la critica, comprobando los hechos antes y diciendolo concreto, porque el elogio es el acelerador y la critica el freno"
+}

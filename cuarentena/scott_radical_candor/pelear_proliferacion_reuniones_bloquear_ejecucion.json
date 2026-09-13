@@ -1,46 +1,46 @@
 {
- "condiciones_activacion": "Cuando la rueda de sacar cosas adelante ha empezado a parecer la rueda de las reuniones del infierno, y la multiplicacion de reuniones amenaza con dejar a tu equipo y a ti sin capacidad de ejecutar.",
- "denominaciones": {
-  "nombre_largo": "La pelea contra la multiplicacion de reuniones: los tres remedios probados que nunca se sostienen, y el que el texto dice que si funciona, que es combatir fuego con fuego bloqueando calendario",
-  "otros_idiomas": [
-   {
-    "idioma": "ingles",
-    "termino": "EXECUTION TIME"
-   },
-   {
-    "idioma": "ingles",
-    "termino": "Fight meeting proliferation"
-   },
-   {
-    "idioma": "ingles",
-    "termino": "Meeting-Free Zones"
-   }
+  "condiciones_activacion": "Cuando la rueda de sacar cosas adelante ha empezado a parecer la rueda de las reuniones del infierno, y la multiplicacion de reuniones amenaza con dejar a tu equipo y a ti sin capacidad de ejecutar.",
+  "denominaciones": {
+    "nombre_largo": "La pelea contra la multiplicacion de reuniones: los tres remedios probados que nunca se sostienen, y el que el texto dice que si funciona, que es combatir fuego con fuego bloqueando calendario",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "EXECUTION TIME"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Fight meeting proliferation"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Meeting-Free Zones"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "entregable_esperado": "Tiempo bloqueado en tu calendario para estar a solas y ejecutar, y tu equipo animado a bloquear el suyo, con los tres remedios que no cuajan descartados y dicho por que.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
   ],
-  "sigla": ""
- },
- "dominio": "gestion_equipos",
- "entregable_esperado": "Tiempo bloqueado en tu calendario para estar a solas y ejecutar, y tu equipo animado a bloquear el suyo, con los tres remedios que no cuajan descartados y dicho por que.",
- "estado": "vivo",
- "fuentes": [
-  {
-   "clave": "scott_radical_candor",
-   "fecha": "2026-09-12"
-  }
- ],
- "id": "pelear_proliferacion_reuniones_bloquear_ejecucion",
- "ids_alias": [],
- "nodos_previos": [],
- "nodos_siguientes": [],
- "pasos_accionables": [
-  "Reconoce el sintoma que el texto nombra: si no tienes cuidado, la multiplicacion de reuniones puede de verdad frenar en seco tu capacidad de ejecutar, tanto como persona como equipo.",
-  "Asume que ser implacable en asegurarte de que tu equipo tiene tiempo para ejecutar es una de las cosas mas importantes que puedes hacer como jefe.",
-  "No pruebes el primer remedio que el texto descarta, quitar las sillas de las salas de reunion: el texto reconoce que en teoria acorta las reuniones porque casi nadie aguanta de pie mas de una hora, que hay investigacion que dice que la gente es mas creativa de pie que sentada, que hay quien dice que estar sentado es el nuevo fumar, y que ademas te ahorras el mobiliario, y aun asi dice que nunca funciona de verdad y que no conoce ninguna empresa que se haya mantenido en ello.",
-  "No pruebes el segundo, declarar un dia de la semana sin reuniones: el texto cuenta que distintos equipos lo intentaron y ninguno fue capaz de sostenerlo.",
-  "Ni el tercero, ponerse el objetivo de terminar antes de tiempo una cuarta parte de tus reuniones: el texto dice que le encanto la idea y que no cree que quien se la puso llegara nunca a cumplirla.",
-  "Haz en cambio lo que el texto dice que es la solucion mas eficaz: combatir fuego con fuego.",
-  "Bloquea en tu calendario tiempo para estar a solas y ejecutar, por la misma razon por la que bloqueaste el tiempo para pensar.",
-  "Y anima a los demas a hacer lo mismo, porque el texto dice que eso les ayudo a decir que no a mas reuniones innecesarias."
- ],
- "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 223 a 233, bajo el rotulo EXECUTION TIME y su subtitulo Fight meeting proliferation. ES LA PIEZA P12 DE LA FRONTERA DE cap_11. En el indice del capitulo, linea 29, esta misma herramienta aparece con otro nombre, Meeting-Free Zones, y lo declaro en vez de elegir por el libro. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: el libro pone su propio INVENTARIO DE MEDIOS con su veredicto escrito, tres remedios nombrados uno a uno en las lineas 229 y 231 con la razon medida de por que no cuajan, y el cuarto en la linea 233 con lo que consigue. Descartar por su nombre tres remedios que el lector iba a probar es procedimiento, y deja fichero. EL PAR QUE DECLARO YO ANTES DE QUE LO LEVANTE NADIE, y es el mas dificil del capitulo: reservar_calendario_tiempo_ejecutar, que sale de cap_07 lineas 385 a 387 bajo el rotulo Block time to execute, es la MADRE de este nodo y tiene 4 pasos. MI VEREDICTO ES CONTINUA CON ARISTA Y NO REPITE, con los dos lados medidos: la madre trae lo que este no tiene (que ejecutar es tarea solitaria, y el sesgo de usar el calendario sobre todo para tareas colaborativas, que es su diagnostico entero), y este trae lo que la madre no tiene (los TRES remedios descartados con su razon, y el encargo de animar a los demas para que puedan decir que no). El acto compartido es uno solo, bloquear calendario, y los dos lados tienen procedimiento fuera de el, asi que la vara de manual 4 no tiene bascula. Va marcado como discutible en el reporte de la vuelta 22, porque es donde mas cerca estoy de un REPITE en todo el capitulo. Y EL OTRO PAR, CON bloquear_tiempo_pensar_calendario DEL MISMO CAPITULO: SANO. El propio libro los distingue en la linea 233 (For the same reason I blocked off think-time in calendar, I ALSO found it necessary to block off time to be alone and execute): son dos bloques distintos para dos cosas distintas, uno para pensar y otro para ejecutar. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE. P1 y P2 de la linea 227; P3 de la 229; P4 y P5 de la 231; P6 a P8 de la 233. LA CUARTA PARTE DEL PASO 5 ES LA CIFRA DEL LIBRO (25 percent, linea 231) ESCRITA EN LETRA, y el nombre del ingeniero que se la puso se queda en el caso, manual 3.5. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto tiempo se bloquea para ejecutar, cada cuanto, y como se mide si la proliferacion de reuniones ha bajado.",
- "titulo": "Pelear la proliferacion de reuniones bloqueando en tu calendario el tiempo de estar a solas y ejecutar, despues de descartar los tres remedios que el texto dice que no cuajan"
+  "id": "pelear_proliferacion_reuniones_bloquear_ejecucion",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Reconoce el sintoma que el texto nombra: si no tienes cuidado, la multiplicacion de reuniones puede de verdad frenar en seco tu capacidad de ejecutar, tanto como persona como equipo.",
+    "Asume que ser implacable en asegurarte de que tu equipo tiene tiempo para ejecutar es una de las cosas mas importantes que puedes hacer como jefe.",
+    "Ten delante el primer remedio que el texto cuenta que no cuaja, quitar las sillas de las salas de reunion: el texto reconoce que en teoria acorta las reuniones porque casi nadie aguanta de pie mas de una hora, que hay investigacion que dice que la gente es mas creativa de pie que sentada, que hay quien dice que estar sentado es el nuevo fumar, y que ademas te ahorras el mobiliario, y aun asi cuenta que nunca funciona de verdad y que no conoce ninguna empresa que se haya mantenido en ello.",
+    "Ten delante el segundo, declarar un dia de la semana sin reuniones: el texto cuenta que distintos equipos lo intentaron y que ninguno fue capaz de sostenerlo.",
+    "Y ten delante el tercero, ponerse el objetivo de terminar antes de tiempo una cuarta parte de tus reuniones: el texto cuenta que le encanto la idea y que no cree que quien se la puso llegara nunca a cumplirla.",
+    "Haz en cambio lo que el texto dice que es la solucion mas eficaz: combatir fuego con fuego.",
+    "Bloquea en tu calendario tiempo para estar a solas y ejecutar, por la misma razon por la que bloqueaste el tiempo para pensar.",
+    "Y anima a los demas a hacer lo mismo, porque el texto dice que eso les ayudo a decir que no a mas reuniones innecesarias."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 223 a 233, bajo el rotulo EXECUTION TIME y su subtitulo Fight meeting proliferation. ES LA PIEZA P12 DE LA FRONTERA DE cap_11. En el indice del capitulo, linea 29, esta misma herramienta aparece con otro nombre, Meeting-Free Zones, y lo declaro en vez de elegir por el libro. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: el libro pone su propio INVENTARIO DE MEDIOS con su veredicto escrito, tres remedios nombrados uno a uno en las lineas 229 y 231 con la razon medida de por que no cuajan, y el cuarto en la linea 233 con lo que consigue. Descartar por su nombre tres remedios que el lector iba a probar es procedimiento, y deja fichero. EL PAR QUE DECLARO YO ANTES DE QUE LO LEVANTE NADIE, y es el mas dificil del capitulo: reservar_calendario_tiempo_ejecutar, que sale de cap_07 lineas 385 a 387 bajo el rotulo Block time to execute, es la MADRE de este nodo y tiene 4 pasos. MI VEREDICTO ES CONTINUA CON ARISTA Y NO REPITE, con los dos lados medidos: la madre trae lo que este no tiene (que ejecutar es tarea solitaria, y el sesgo de usar el calendario sobre todo para tareas colaborativas, que es su diagnostico entero), y este trae lo que la madre no tiene (los TRES remedios descartados con su razon, y el encargo de animar a los demas para que puedan decir que no). El acto compartido es uno solo, bloquear calendario, y los dos lados tienen procedimiento fuera de el, asi que la vara de manual 4 no tiene bascula. Va marcado como discutible en el reporte de la vuelta 22, porque es donde mas cerca estoy de un REPITE en todo el capitulo. Y EL OTRO PAR, CON bloquear_tiempo_pensar_calendario DEL MISMO CAPITULO: SANO. El propio libro los distingue en la linea 233 (For the same reason I blocked off think-time in calendar, I ALSO found it necessary to block off time to be alone and execute): son dos bloques distintos para dos cosas distintas, uno para pensar y otro para ejecutar. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE. P1 y P2 de la linea 227; P3 de la 229; P4 y P5 de la 231; P6 a P8 de la 233. LA CUARTA PARTE DEL PASO 5 ES LA CIFRA DEL LIBRO (25 percent, linea 231) ESCRITA EN LETRA, y el nombre del ingeniero que se la puso se queda en el caso, manual 3.5. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto tiempo se bloquea para ejecutar, cada cuanto, y como se mide si la proliferacion de reuniones ha bajado. CORRECCION 8 DE LA COLA DE LA VUELTA 23, declarada y sin borrar el texto viejo (ACTA 22 seccion 3.3): LOS PASOS 3, 4 Y 5 EMPEZABAN POR No pruebes Y EL LIBRO NO PROHIBE, CUENTA QUE NO CUAJARON. Las tres evidencias, con su linea: it never really works en la linea 229, None was ever able to stick to it en la 231, y I don't think he ever hit the goal en la 231. CONVERTIR UN INFORME DE FRACASO EN UN IMPERATIVO NEGATIVO MUEVE EL MODO DEL LIBRO. Los tres pasos empiezan hoy por Ten delante y llevan la evidencia del libro dentro (el texto cuenta que) en vez de la prohibicion seca. EL AUDITOR ADJUDICO QUE ESTO NO ES PUENTE y que el numerador de PASOS INVENTADOS no se mueve: no se anade ni un medio, ni una etapa ni un objeto. Lo que se corrige es el MODO. La linea 233 sigue ordenando entre ellos (the most effective solution) y por eso el paso 6 conserva su imperativo, y manual seccion 2 sigue satisfecha porque Ten delante es imperativo. LA CUENTA DE PASOS NO SE MUEVE: 8 antes y 8 despues.",
+  "titulo": "Pelear la proliferacion de reuniones bloqueando en tu calendario el tiempo de estar a solas y ejecutar, despues de descartar los tres remedios que el texto dice que no cuajan"
 }

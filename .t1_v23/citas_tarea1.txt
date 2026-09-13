@@ -1,0 +1,23 @@
+$ sed -n "91p" fuentes/scott_radical_candor/cap_10.md | cut -c1-301
+THIS IS A high-level overview of three conversations that on the surface seem pretty straightforward. There’s a lot riding on your ability to get them right: building trust with the people who report to you, figuring out what role each person is best suited for so that your team can achieve results
+
+$ sed -n "123p;127p" fuentes/scott_radical_candor/cap_11.md
+Good news only. If you hear only good news, it’s a sign people don’t feel comfortable coming to you with their problems, or they think you won’t or can’t help. In these cases, you need to ask explicitly for the bad news. Don’t let the issue drop till you hear some.
+No agenda. If they consistently come with no topics to discuss, it might mean that they are overwhelmed, that they don’t understand the purpose of the meeting, or that they don’t consider it useful. Be direct but polite: “This is your time, but you don’t seem to come with much to talk about. Can you tell me why?”
+
+$ sed -n "53p" fuentes/scott_radical_candor/cap_11.md | grep -o "I like to limit myself to five direct reports"
+I like to limit myself to five direct reports
+
+$ sed -n "57p" fuentes/scott_radical_candor/cap_11.md
+Finally, to avoid meeting proliferation, I recommend that managers use the 1:1 time to have “career conversations” (see chapter seven) and, if relevant, to do formal performance reviews.
+
+$ grep -n -i -c "candle" fuentes/scott_radical_candor/cap_11.md
+0
+
+$ grep -o "A menorah?" fuentes/scott_radical_candor/cap_11.md
+A menorah?
+
+$ sed -n "229p;231p" fuentes/scott_radical_candor/cap_11.md | grep -o -E "it never really works|None was ever able to stick to it|I dont think he ever hit the goal"
+it never really works
+None was ever able to stick to it
+I don’t think he ever hit the goal

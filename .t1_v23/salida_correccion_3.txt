@@ -1,0 +1,6 @@
+| | |
+|---|---|
+| **fichero** | `cuarentena/scott_radical_candor/desplegar_tres_conversaciones_carrera.json` |
+| **pasos antes** | **11** |
+| **pasos despues** | **12** |
+| **paso 12, impreso del fichero** | `Y ten presente lo que el texto dice que se juega tu capacidad de hacerlas bien: construir confianza con la gente que te reporta, y averiguar para que papel encaja mejor cada persona, para que tu equipo pueda conseguir resultados.` |

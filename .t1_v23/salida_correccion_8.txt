@@ -1,0 +1,6 @@
+| paso | como empezaba | como empieza | la evidencia del libro, y su linea |
+|---:|---|---|---|
+| 3 | `No pruebes el primer r` | `Ten delante el primer ` | `it never really works`, `L229` |
+| 4 | `No pruebes el segundo,` | `Ten delante el segundo` | `None was ever able to stick to it`, `L231` |
+| 5 | `Ni el tercero, ponerse` | `Y ten delante el terce` | `I don't think he ever hit the goal`, `L231` |
+| | **8 pasos** | **8 pasos** | **la cuenta no se mueve** |

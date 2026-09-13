@@ -1,0 +1,7 @@
+| | |
+|---|---|
+| **fichero** | `cuarentena/scott_radical_candor/debatir_decidir_asuntos_cultura_evitar_delegar.json` |
+| **el paso 2 decia** | `si va a haber candelabro de las siete velas` |
+| **el paso 2 dice** | `si va a haber candelabro` |
+| **pasos, contados del fichero antes y despues** | **6** y **6** |
+| **la relectura de fidelidad de la ficha** | de `6 TRANSCRIPCION, 0 PUENTE` a `5 TRANSCRIPCION, 1 PUENTE cazado y retirado` |

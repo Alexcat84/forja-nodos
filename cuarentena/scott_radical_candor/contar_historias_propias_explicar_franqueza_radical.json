@@ -1,0 +1,38 @@
+{
+  "condiciones_activacion": "Cuando vas a explicar la franqueza radical a tu equipo por primera vez, que es la etapa que el orden de operaciones pone primera.",
+  "denominaciones": {
+    "nombre_largo": "Compartir tus historias: la primera etapa del orden de operaciones, explicada con tus palabras y con tu version de la historia del um o la de Bob",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "SHARE YOUR STORIES"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "entregable_esperado": "La franqueza radical explicada a tu equipo con tus propias palabras y con tus historias personales contadas, en vez de con teoria de gestion o con las historias del libro.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ],
+  "id": "contar_historias_propias_explicar_franqueza_radical",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Explica la franqueza radical a tu equipo, para que entiendan que te traes entre manos.",
+    "Puedes ademas pedirles que lean el libro, o ensenarles los videos que hay en la web de la franqueza radical.",
+    "Pero explicala sobre todo con tus propias palabras, que es lo que el texto dice que sale mejor.",
+    "Busca cual es tu version de la historia del um o de la historia de Bob, que son las dos que el texto pone como ejemplares.",
+    "Cuenta tus historias a tu equipo.",
+    "Muestra algo de vulnerabilidad.",
+    "Y cuenta con lo que el texto dice que consiguen: tus historias personales explican, mejor que cualquier teoria de gestion, lo que de verdad quieres decir, y ensenian por que lo dices de verdad.",
+    "Cuenta tambien con por que las tuyas valen mas que las del libro: el texto dice que significan mucho mas para tu equipo que las de la autora, porque significan algo para ti."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_12.md, unidad Getting Started, titulo textual Getting Started. Sale de la linea 17, bajo el rotulo SHARE YOUR STORIES de la linea 15. ES LA PIEZA 2 DE LA FRONTERA DE cap_12. POR QUE ES NODO PROPIO Y NO UN PASO DE desplegar_plan_orden_operaciones_franqueza_radical: la cabeza NOMBRA la etapa por su rotulo y no la despliega, y esta linea trae su propio inventario de MEDIOS, nombrados uno a uno por el libro (explicarlo tu, pedirles que lean el libro, ensenarles los videos de la web, tu version de la historia del um, tu version de la historia de Bob, mostrar vulnerabilidad), que es la cara positiva de D.27. Su condicion de activacion es la de la etapa y su entregable son tus historias contadas, distinto del entregable de la cabeza, que es el plan recorrido. ES CABEZA Y PARTE, y la arista D.29 va declarada en el reporte de la vuelta 23 con su paso 4 citado. POR QUE NO ES UN GEMELO DE empezar_cultura_franqueza_radical (cap_05), que es el par mas cercano que tiene en la bandeja y por eso lo leo antes de que lo levante ninguna senial: aquel entrega el arranque hecho en su orden (la idea explicada, la critica pedida antes que dada, el elogio antes que la critica, la frontera peligrosa entendida) y NO dice como se explica la idea; este entrega las historias contadas y trae los seis medios de hacerlo. Comparten un solo acto, explicar la idea, y los dos tienen procedimiento fuera de el, asi que la vara de manual 4 no tiene bascula. Va marcado como discutible en el reporte. LAS DOS HISTORIAS DEL LIBRO VIAJAN POR SU NOMBRE Y NO POR SU CONTENIDO, que es manual 3.5: el texto pide TU version de la del um y de la de Bob, asi que lo que viaja es el encargo de buscar la tuya, no el relato de las suyas. RELECTURA DE FIDELIDAD D.30 EN EL ACTO, paso a paso contra su linea: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE. Los ocho salen de la linea 17. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: en que reunion se cuentan, cuantas historias hacen falta, cuanta vulnerabilidad es demasiada, y como se comprueba que el equipo lo ha entendido. El libro pone los medios y no pone ninguna de las cuatro.",
+  "titulo": "Contar a tu equipo tus propias historias para explicarle la franqueza radical, en vez de prestarle la teoria o las historias de otro"
+}

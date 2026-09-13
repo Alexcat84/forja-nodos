@@ -1,0 +1,55 @@
+{
+  "condiciones_activacion": "Cuando quieres practicar la franqueza radical y te das cuenta de que el hilo comun de todas las veces eres tu, y no sabes que hacer exactamente con eso.",
+  "denominaciones": {
+    "nombre_largo": "La cabeza de las dos practicas del epilogo: contar historias y los juegos de papeles, con las dos consciencias que mejoran",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "YOU"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Improve using role plays and storytelling"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "self-awareness"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "relational awareness"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "entregable_esperado": "Las dos consciencias distinguidas por su nombre y las dos practicas del texto elegidas y puestas en marcha, con tu impacto sobre los demas alineado con tus intenciones.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ],
+  "id": "mejorar_consciencia_propia_relacional_dos_practicas",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Parte del consejo del capitulo cinco que el texto trae aqui: mantente centrado, porque no puedes preocuparte por los demas si no cuidas de ti.",
+    "Y parte de lo que el texto dice que es el hilo comun de todas las veces que se practica la franqueza radical: tu.",
+    "Distingue las dos consciencias, porque el texto dice que de la primera se ha escrito mucho y de la segunda poco: la consciencia de ti mismo es la capacidad de reconocer tus propias fuerzas y tus propias debilidades.",
+    "La consciencia de la relacion es el impacto que estas teniendo en los demas.",
+    "Cuenta con lo que el texto avisa sobre por que no basta la primera: puedes tener toda la intencion de ser amable y util, pensar y sentir todo lo correcto, ser plenamente consciente de tus propios defectos, y aun asi decir algo destructivo de maneras que no podias predecir o de las que no eras consciente. O no soportar verlo y elegir no verlo.",
+    "Cuenta tambien con lo que la consciencia de la relacion NO significa, porque el texto lo dice expresamente: no significa que lo que tengas que decir no moleste nunca al otro.",
+    "Lo que si significa, y es lo que tienes que aprender: ver cuando has disgustado a alguien, y demostrar que te importa incluso cuando lo que tienes que decir sea duro de oir.",
+    "Significa ademas que puedes y quieres ver el impacto que estas teniendo en el otro a corto y a largo plazo, y ajustar para que ese impacto sea positivo y no negativo.",
+    "Y usa esa consciencia para bien, no solo para manipular al otro, que es la pregunta con la que el texto abre esta seccion.",
+    "Cuenta con que las dos se pueden mejorar, y usa para ello las DOS practicas que el texto dice haber desarrollado: contar historias y los juegos de papeles.",
+    "Haz la primera, contar historias, que el texto despliega bajo el rotulo cual es tu historia.",
+    "Haz la segunda, el juego de papeles, que el texto despliega bajo el rotulo el triangulo de la critica.",
+    "Y cuenta con lo que el texto dice de las dos: las han probado con gente de papeles y de centros de trabajo muy distintos por todo el mundo, y funcionaron bien en industrias y culturas diferentes."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_13.md, unidad Afterword, titulo textual Afterword to the Revised Edition: Rolling Out Radical Candor. Sale de las lineas 17 a 22 y 35 a 40. ES LA PIEZA 1 DE LA FRONTERA DE cap_13, que cierra en 12 piezas con su instrumento en .t1_v23/frontera_cap13.py. ES UNA SERIE D.37 Y LA CUENTA ESTA ESCRITA: la linea 39 dice We have developed TWO practices, storytelling and role plays, o sea que dice CUANTAS partes tiene Y LAS NOMBRA, que es la condicion literal de D.37. Las dos partes existen como candidato (contar_cuatro_historias_propias_ver_hueco_intencion y practicar_triangulo_critica_tres_papeles) y las dos aristas van declaradas en el reporte de la vuelta 23 con su paso citado, sin esperar a que ninguna senial las levante. POR QUE ES PROCEDIMIENTO Y NO UNA DEFINICION, con D.27 delante y sabiendo que es el caso en que mas facil seria equivocarse, porque las lineas 35 y 37 definen dos terminos: el libro no se queda en definir, pone su propio INVENTARIO DE MEDIOS (dos practicas nombradas y desarrolladas) y su inventario de OBJETOS A REVISAR (ver cuando has disgustado a alguien, ver el impacto a corto y a largo plazo, ajustar para que sea positivo). Distinguir las dos consciencias y elegir la practica deja fichero. EL CASO DEL CAPITALISTA DE RIESGO Y SU ASOCIADO (lineas 23 a 33) NO VIAJA A NINGUN PASO: es manual 3.5, y su doctrina (que un problema de arrogancia no es un problema de comunicacion, y que hace falta humildad antes de ver el impacto que tienes en los demas) esta escrita aparte en las lineas 35 y 37, que son las que viajan. RELECTURA DE FIDELIDAD D.30 EN EL ACTO, paso a paso contra su linea: 13 pasos, 13 TRANSCRIPCION, 0 PUENTE. P1 y P2 de la linea 21; P3 a P5 de la linea 35; P6 a P9 de la linea 37; P10 a P13 de la linea 39. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cada cuanto se repiten las dos practicas, en que orden se hacen si no hay tiempo para las dos, y como se mide que tu consciencia de la relacion ha mejorado. El libro pone las practicas y no pone ninguna de las tres.",
+  "titulo": "Mejorar tu consciencia de ti mismo y tu consciencia de la relacion con las dos practicas que el texto desarrolla, porque en la franqueza radical el hilo comun siempre eres tu"
+}
