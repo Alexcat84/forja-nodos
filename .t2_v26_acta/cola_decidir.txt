@@ -1,0 +1,4 @@
+
+VECINOS QUE LA ADUANA LEVANTA HOY  : 4
+CON VEREDICTO YA ESCRITO           : 0  []
+SIN VEREDICTO, o sea POR LEER      : 4  ['despedir_persona_franqueza_radical', 'despedir_persona_respeto_franqueza', 'elegir_recolocar_despedir_persona', 'pedir_critica_equipo_premiarla']

@@ -494,3 +494,28 @@ CIERRE VERDE: el tallado del reporte.
 [2026-09-13 17:32:16]   sello de la apertura ciega verificado: intacto tras el turno
 [2026-09-13 17:32:16] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-13 17:32:16] VUELTA 3 : EXTRACTOR (claude-opus-5)
+[2026-09-13 18:40:40] extractor listo (USD 62.111633499999996), 4104s, intento 1 de 7
+[2026-09-13 18:40:41] VUELTA 3 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-13 18:40:41]   hereda 5 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-13 19:05:46] auditor ciego listo (USD 7.9297945), 1505s, intento 1 de 7
+[2026-09-13 19:05:47]   herencia declarada: acta leida por su huella y los 5 heredados resueltos
+[2026-09-13 19:05:47]   apertura ciega sellada: f01e651ab6de92f9a437aa4764742fec2df3c77c
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 222
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 8 hallazgo(s)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 8 columna 12: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 8 columna 60: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 16 columna 12: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 16 columna 60: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 30 columna 12: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 30 columna 60: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 38 columna 12: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 38 columna 60: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-13 19:05:49] VUELTA 3 : AUDITOR (claude-opus-5)

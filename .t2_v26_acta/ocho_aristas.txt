@@ -1,0 +1,10 @@
+fijar_cuatro_notas_calcular_nota_global                paso  8 de 12 [bandeja ] -> elegir_categorias_nota_palabras_propias_empresa      [bandeja ] SI
+repartir_notas_publicar_reparto_esperado               paso  3 de  9 [bandeja ] -> calibrar_notas_reunion_jefes_pares                   [bandeja ] SI
+presionar_curva_notas_evitar_forzarla                  paso 11 de 11 [bandeja ] -> calibrar_notas_reunion_jefes_pares                   [bandeja ] SI
+evaluar_desempenio_dos_veces_anio                      paso  6 de 11 [bandeja ] -> montar_evaluacion_360_grados_ligera_pares            [bandeja ] SI
+hacer_critica_pares_transparente_ensenar_escribirla    paso  1 de 11 [bandeja ] -> montar_evaluacion_360_grados_ligera_pares            [bandeja ] SI
+mantener_proceso_evaluacion_ligero_vigilar_crecimiento paso  6 de 13 [bandeja ] -> montar_evaluacion_360_grados_ligera_pares            [bandeja ] SI
+mantener_proceso_evaluacion_ligero_vigilar_crecimiento paso  5 de 13 [bandeja ] -> hacer_critica_pares_transparente_ensenar_escribirla  [bandeja ] SI
+montar_evaluacion_360_grados_ligera_pares              paso  6 de 10 [bandeja ] -> elegir_categorias_nota_palabras_propias_empresa      [bandeja ] SI
+aristas con el paso de la madre EXISTENTE : 8 de 8
+aristas con LOS DOS extremos en el grafo  : 0 de 8

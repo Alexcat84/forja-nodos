@@ -1,0 +1,9 @@
+FILAS DE HOY EN LA BITACORA : 55
+PARES DISTINTOS DE HOY      : 49
+PARES REPETIDOS             : 6  filas de mas: 6
+   x2  L174,191   pedir_critica_equipo_premiarla || cambiar_potencial_trayectoria_crecimiento
+   x2  L176,193   pedir_critica_equipo_premiarla || desplegar_marco_franqueza_radical
+   x2  L179,196   pedir_critica_equipo_premiarla || elogiar_trabajo_especifico_contexto
+   x2  L177,194   pedir_critica_equipo_premiarla || empezar_cultura_franqueza_radical
+   x2  L175,192   pedir_critica_equipo_premiarla || equilibrar_elogio_critica_equipo
+   x2  L178,195   pedir_critica_equipo_premiarla || manejar_enfado_persona_desafiada

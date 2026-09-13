@@ -1,0 +1,22 @@
+FICHERO: fuentes/marquet_turn_the_ship/cap_02.md
+CUERPO (linea 8 al final, sin blancos): 1454 palabras
+------------------------------------------------------------------------------------------
+ROT    L9  -L9    ROTULO           3 palabras
+B1     L11 -L11   POSTURA         20 palabras
+B2     L13 -L13   ROTULO           5 palabras
+B3     L15 -L23   CASO           458 palabras
+B4     L25 -L25   PROCEDIMIENTO    61 palabras
+B5     L27 -L27   CASO            12 palabras
+B6     L29 -L29   PROCEDIMIENTO    49 palabras
+B7     L31 -L31   CASO           106 palabras
+B8     L33 -L33   PROCEDIMIENTO    42 palabras
+B9     L35 -L45   CASO           389 palabras
+B10    L47 -L47   SEPARADOR        3 palabras
+B11    L49 -L49   PROCEDIMIENTO    84 palabras
+B12    L51 -L53   CASO            95 palabras
+B13    L55 -L67   PREGUNTAS      127 palabras
+------------------------------------------------------------------------------------------
+SUMA DE PIEZAS: 1454
+CUERPO        : 1454
+RESIDUO (cuerpo - piezas): 0
+LINEAS DE CUERPO NO ASIGNADAS: []

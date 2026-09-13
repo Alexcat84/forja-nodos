@@ -1,0 +1,16 @@
+LOTE: scott_radical_cand
+unidad      cand  pasos 
+cap_01         1      9 
+cap_03         2     52 
+cap_04         6     48 
+cap_05        14    185 
+cap_06        13    167 
+cap_07        34    320 
+cap_08        10     82 
+cap_09        24    357 
+cap_10        10    136 
+cap_11        10    113 
+cap_12         1     17 
+cap_13         2     28 
+cap_14        15    174 
+TOTAL        142   1688

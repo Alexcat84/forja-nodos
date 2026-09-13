@@ -1,0 +1,262 @@
+====================================================================================================
+manejar_enfado_persona_desafiada [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando alguien de tu equipo esta enfadado contigo despues de que le desafiaras directamente, y lo que dijiste le ha dolido.
+  ENTREGABLE: El dolor reconocido en voz alta, la frase no te lo tomes como algo personal fuera de tu vocabulario, y una oferta de ayuda para arreglar el problema sin haber negado que el problema existe.
+    1. Acepta antes de empezar lo que el texto pone como parte del puesto: que a veces la gente de tu equipo va a estar enfadada contigo. El texto anade que si nadie se enfada nunca contigo es probable que no estes desafiando bastante a tu equipo.
+    2. Trata como la clave lo que el texto llama la clave, igual que en cualquier relacion: como manejas el enfado.
+    3. Cuando lo que dices duele, reconoce el dolor de la otra persona.
+    4. No finjas que no duele y no digas que no deberia doler: solo demuestra que te importa.
+    5. Elimina de tu vocabulario la frase no te lo tomes como algo personal. El texto dice que es insultante.
+    6. En su lugar, ofrecete a ayudar a arreglar el problema.
+    7. No finjas que no hay problema solo para intentar que alguien se sienta mejor.
+====================================================================================================
+delimitar_franqueza_radical_cinco_noes [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando alguien invoca la franqueza radical para justificar lo que va a decir, o cuando quieres saber si lo que estas a punto de hacer cuenta como franqueza radical o no.
+  ENTREGABLE: Los cinco limites comprobados sobre el caso que tienes delante, y la cuenta de las tres cosas sin importancia que hoy dejas sin decir.
+    1. Comprueba el primero: no es licencia para ser gratuitamente duro ni para apunialar de frente. El texto avisa de que no es franqueza radical solo porque empieces diciendo dejame ser radicalmente franco contigo, y pone los dos ejemplares de lo que la anula, llam
+    2. Comprueba el segundo: no es una invitacion a buscar defectos. El texto razona que desafiar directamente cuesta energia de verdad, tanto a quien desafias como a ti, asi que hazlo solo por las cosas que importan de verdad.
+    3. Aplica la regla concreta que el texto pone para eso, que segun el texto vale para cualquier relacion: deja tres cosas sin importancia sin decir cada dia.
+    4. Comprueba el tercero: no es jerarquica. Practicala hacia arriba, hacia abajo y hacia los lados, que son las tres direcciones que el texto nombra.
+    5. Crea tu propio microcosmos radicalmente franco para ti y para tu equipo aunque tu jefe y tus pares no hayan comprado el metodo, que es lo que el texto dice que puedes hacer.
+    6. Ve con algo mas de cautela con tu jefe y con tus pares, que es lo que el texto te autoriza expresamente.
+    7. Y si al final no es posible ser radicalmente franco con tu jefe y con tus pares, busca un tipo distinto de entorno de trabajo, si es que hay alguno posible. Es lo que el texto recomienda expresamente en esa misma linea, despues de la cautela.
+    8. Comprueba el cuarto: no es confraternizar ni una extroversion sin fin que agota a las personas calladas de tu equipo, o a ti si el callado eres tu. El texto descarta por su nombre emborracharse, conducir karts, jugar al laser tag y las cenas interminables con 
+    9. Comprueba el quinto: no es propia de la cultura de Silicon Valley ni es estadounidense. El texto dice que es humana, y que fue trabajando para una empresa israeli donde la autora empezo a desarrollar su idea de la franqueza radical.
+====================================================================================================
+desplegar_marco_franqueza_radical [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando estas desplegando la franqueza radical en tu equipo y crees que puede haber confusion sobre lo que significa.
+  ENTREGABLE: Copias del marco puestas a la vista y repartidas entre tus colegas, y el marco en uso como brujula de conversaciones concretas, sin nombres escritos en las casillas.
+    1. Usa la version nueva del marco de la franqueza radical que trae esta edicion, que es la forma que el propio texto propone para ayudar a que todos entiendan que la idea no es comportarse como un imbecil.
+    2. Recorta el marco del propio libro. El texto dice que hay una version mas grande en su pagina 297.
+    3. Haz fotocopias.
+    4. Ponlas en tu nevera, encima de tu mesa o en cualquier otro sitio, como recordatorio.
+    5. Comparte copias con tus colegas.
+    6. Usa el marco como una brujula, para llevar cada conversacion concreta a un sitio mejor.
+    7. No lo uses como test de personalidad para juzgarte a ti ni para juzgar a otros.
+    8. No escribas nombres en las casillas.
+    9. Cuenta con lo que el texto aniade justo despues de las dos prohibiciones: todos caemos en cada cuadrante varias veces al dia.
+====================================================================================================
+repartir_semana_cuarenta_horas_jefe [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando te abruma la cantidad de cosas que el libro te sugiere hacer como directivo y quieres saber cuanto tiempo de tu semana te van a costar.
+  ENTREGABLE: Tu semana de cuarenta horas repartida en sus tres partidas, con las quince horas de trabajo propio bloqueadas en el calendario y la horquilla de ocho, doce o cinco horas de gestion anotada segun le toque rachas a la semana.
+    1. Cuenta con lo que el texto anticipa: segun avanzas puede que te sientas abrumado de vez en cuando por la cantidad de cosas que te sugiere hacer como directivo. Respira hondo.
+    2. Parte de la meta que el libro declara sobre si mismo: ahorrarte tiempo, no llenarte el calendario de reuniones.
+    3. Da por hecho lo que el texto separa en dos mitades: si necesitas pasar tiempo con tus personas a cargo para ser un gran jefe, pero no necesitas pasar TODO tu tiempo con ellas.
+    4. Cuenta diez horas a la semana de gestion de tu equipo, que es lo que el texto cifra si aplicas cada idea, herramienta y tecnica del libro.
+    5. Descuenta de esas diez horas las cinco que el texto dice que ya son reuniones a solas que probablemente ya estabas teniendo de todos modos.
+    6. Saca del reparto semanal los procesos que el texto nombra como de rachas: las conversaciones de gestion del crecimiento, las reuniones de salto de nivel y las calibraciones, que segun el texto no se reparten cada semana sino que vienen a rachas.
+    7. Cuenta con la horquilla que el texto da por esas rachas: unas semanas ocho horas de trabajo asociado a tus responsabilidades nucleares como jefe, otras doce, otras cinco.
+    8. Cuenta con lo que el texto dice que esas diez horas compran: te ahorran despues una cantidad enorme de tiempo perdido y de quebraderos de cabeza.
+    9. Bloquea unas quince horas a la semana para pensar y ejecutar por tu cuenta en tu area de especialidad, que es lo que el texto sugiere ademas.
+   10. Cuenta las otras quince horas que quedan en una semana laboral de cuarenta: el texto dice que ojala puedas reclamarlas como tuyas, y avisa de que si eres como la autora vas a gastar la mayor parte en lidiar con lo imprevisible.
+====================================================================================================
+criticar_trabajo_evitar_desanimo [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando vas a decirle a alguien que su trabajo no es bastante bueno y no quieres que la critica lo desanime ni que se lea como un ataque a la persona.
+  ENTREGABLE: La critica dicha sobre el trabajo y no sobre la persona, con el porque articulado y la via de vuelta senialada, en privado y en persona, sin dejar en duda tu confianza en su capacidad y sin dejar margen de interpretacion.
+    1. Critica el trabajo y no a la persona. El texto lo saca de la entrevista que transcribe: Jobs se corrige a si mismo a mitad de frase y dice cuando su trabajo no es bastante bueno, en vez de cuando ellos no son bastante buenos.
+    2. Cuenta con el error de atribucion fundamental que el texto nombra: es mas facil encontrar el fallo en la persona que en el contexto de lo que esta haciendo. Es mas facil decir eres descuidado que decir has estado trabajando noches y fines de semana y eso empie
+    3. No te quedes en decir que el trabajo no vale, ni siquiera dicho con suavidad. El texto dice que hay que hacerlo muy claramente, articular por que, y devolver a la persona a la via.
+    4. Hazlo de forma que no ponga en duda tu confianza en su capacidad y que no deje demasiado margen de interpretacion, que es lo que el propio texto reconoce como la parte dificil de hacer.
+    5. Antes de mandar una critica, averigua por que la otra persona esta haciendo lo que hace. El texto lo saca de un correo suyo que analiza como ejemplar de lo que no hay que hacer: no se habia molestado en averiguar por que el otro tomaba esa postura, y dio por h
+    6. Se humilde, sobre todo si llevas poco tiempo y no entiendes todavia como funcionan las cosas ahi dentro, que es el primer problema que el texto senala en aquel correo.
+    7. Se util, que segun el texto quiere decir estar invertido en ayudar a la persona a mejorar.
+    8. Da la guia en persona e inmediatamente.
+    9. Elogia en publico y critica en privado. El texto lo repite dos veces y lo cuenta como uno de los fallos de aquel correo, que fue mandado a treinta personas cuando lo respetuoso habria sido decirlo a solas.
+   10. Concentrate en tu relacion con la persona, que es lo primero que el texto pone en su lista.
+   11. Pide critica antes de darla, y ofrece mas elogio que critica.
+   12. No personalices, y deja claro que el problema no viene de un defecto de personalidad que no tenga arreglo.
+   13. Cuenta historias de cuando te criticaron a ti por algo parecido.
+   14. Y si lo que quieres es que un recien llegado aprenda a encajar la critica, el texto pone aparte el caso de un responsable veterano que despues de la primera revision de diseno de cada nuevo le ensenaba dos carpetas: una con diez hojas, que era su archivo de lo
+====================================================================================================
+dar_critica_inmediata_ayuda_tangible [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando alguien de tu equipo acaba de hacer algo que en conjunto ha salido bien y aun asi hay una cosa concreta que tiene que arreglar.
+  ENTREGABLE: La critica dicha en el acto, con el elogio concreto y sincero por delante y sin sandwich, escalada solo hasta donde hizo falta para que se oyera, dicha sobre el trabajo y no sobre la persona, con ayuda tangible ofrecida y con la constancia de que se puede arreglar.
+    1. No dejes que el buen resultado global te impida senialar lo que hay que arreglar. El texto lo pone asi sobre el caso que analiza: aunque la charla habia ido bien en conjunto, Sheryl no dejo que el resultado positivo se interpusiera.
+    2. Hazlo inmediatamente, que segun el texto es lo que evita que el problema danie la reputacion de la persona donde trabaja.
+    3. Senala lo positivo que la persona consiguio, y hazlo a fondo y sinceramente. El texto subraya que en ese caso no hubo ningun intento de meter la critica en un sandwich entre elogios falsos, y que Sheryl menciono tres o cuatro cosas concretas que la autora habi
+    4. Que tu primer acercamiento sea suave pero directo.
+    5. Cuando se vea claro que no te estan oyendo, ponte mas directo. En el caso, la autora hizo dos veces el gesto de espantar una mosca con la mano y Sheryl le dijo que cuando hacia eso sentia que la estaba ignorando, y que iba a tener que ser muy muy directa para 
+    6. Aun entonces, no personalices: no lo conviertas en un rasgo esencial de la persona. El texto lo subraya sobre el caso, que dijo que sonaba estupida y no que era estupida.
+    7. Pregunta si la persona era consciente de eso. En el caso la autora contesto que si, que sabia que lo decia demasiado, y Sheryl le pregunto ademas si era porque estaba nerviosa.
+    8. Ofrece ayuda tangible en vez de dejar a la persona sola con el problema. En el caso fue recomendar un entrenador de oratoria y decir que la empresa lo pagaba, y repetir el ofrecimiento cuando la primera vez no fue recogido.
+    9. Cierra con que tiene arreglo. La formula del caso es que la buena noticia es que un entrenador ayuda de verdad con eso, y que esto se puede arreglar sin duda.
+   10. Cuenta con que aun haciendolo asi escuece un poco, que es lo que el texto dice del que la recibio.
+====================================================================================================
+cambiar_potencial_trayectoria_crecimiento [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando estas colocando a la gente de tu equipo en papeles y oportunidades, y cuando te encuentras usando un cuadro de desempenio y potencial para planificar sucesiones.
+  ENTREGABLE: Cada persona del equipo situada en la trayectoria de crecimiento que ella quiere ahora mismo y no en una etiqueta de potencial, con las preguntas del texto contestadas y con la conversacion franca tenida donde tu lectura y la suya no coinciden.
+    1. Cuenta con el problema que el texto encuentra en la palabra potencial: el cuadro de desempenio y potencial que muchas empresas usan pide juzgar a cada persona y meterla en una de nueve casillas, y la peor de las nueve se llama bajo desempenio y bajo potencial.
+    2. Cuenta con la segunda objecion, que es la que lo vuelve operativo: la categoria potencial no dejaba sitio para evaluar bien a quien es excelente en lo que hace y quiere seguir haciendolo.
+    3. Cambia la palabra potencial por la palabra crecimiento. El texto atribuye el cambio a Scott Forstall, que construyo el equipo de iOS, y dice que cambiar una sola palabra marco toda la diferencia.
+    4. Preguntate en que trayectoria de crecimiento quiere estar ahora mismo cada persona de tu equipo.
+    5. Preguntate si has dado a todo el mundo oportunidades alineadas con lo que de verdad quieren.
+    6. Preguntate en que trayectoria de crecimiento creen tus reportes que estan, si estas de acuerdo, y si no lo estas, por que no.
+    7. Cuenta con las dos respuestas distintas que el texto avisa que vas a encontrar: a veces la persona quiere de verdad crecer y es capaz de aportar mas de lo que le han dejado, y a veces solo quiere mas dinero o mas reconocimiento sin cambiar como trabaja ni apor
+    8. Ten la conversacion radicalmente franca cuando tu lectura y la suya no coincidan, que es lo que el texto pone como tu trabajo en cuanto las distingas.
+    9. Para distinguir los dos tipos, suelta tus juicios y tus propias ambiciones, olvida por un rato lo que tu necesitas de la gente, y concentrate en conocer a cada persona como ser humano.
+   10. Haz el ejercicio que el texto imprime con sus dos columnas. La columna de trayectoria empinada lleva agente de cambio, ambicioso en el trabajo, quiere oportunidades nuevas, y la etiqueta de superestrella. La de trayectoria gradual lleva fuerza de estabilidad, 
+   11. Con las dos columnas delante, piensa en ejemplos positivos de gente con la que has trabajado que caeria en cada una.
+   12. Piensa despues en equipos en los que has estado que necesitaban algo de las dos, y cual seria la proporcion correcta.
+   13. Y piensa por ultimo en momentos de tu propia vida en que tu estuviste en cada columna, y por que. El texto aniade que lo ideal habria sido que la eleccion hubiera sido tuya y no de tu jefe.
+   14. No pongas etiquetas permanentes: el texto dice que estas preguntas sirven justo para recordarte que las trayectorias cambian.
+====================================================================================================
+cambiar_mentalidad_fija_crecimiento [ grafo ] fuentes: ['zhuo_manager']
+  CONDICION: Cuando has leido lo que hay que pedir para calibrarte y te encoges de pensar en hacerlo, o cuando te descubres midiendo cada reto por lo que dice de cuanto vales.
+  ENTREGABLE: Reconocida cual de las dos mentalidades gobierna tus acciones en un momento dado, contrastandola con los cuatro escenarios que el libro pone.
+    1. El libro se para aqui a reconocer que pedir opinion es dificil, y que puede que hayas leido las sugerencias de calibracion y te hayas encogido al pensar en hacerlas.
+    2. Mira de donde viene, que el libro lo cuenta de la autora: tardo anios en sentirse comoda pidiendo opinion a otros, fuera de las revisiones formales donde no le quedaba mas remedio, y la razon que da es el sindrome del impostor. Como se preocupaba constantement
+    3. Cuenta con que hace falta cierta cantidad de confianza para pedir opinion critica.
+    4. Si ves cada reto como una prueba de cuanto vales, vas a preocuparte constantemente de en que lugar estas en vez de de como podrias mejorar. Es como estresarte mas por la nota del examen que por si de verdad estas aprendiendo los conceptos que te ensenian.
+    5. Si en cambio te acercas a los retos con la creencia de que puedes mejorar en cualquier cosa si pones el esfuerzo, el circulo vicioso de la autoevaluacion ansiosa se rompe, y puedes acercarte a aprender con curiosidad en vez de con aprension. El libro da su pro
+    6. Observa la diferencia entre las dos mentalidades que la psicologa Carol Dweck describe en su libro Mindset, la fija y la de crecimiento, y que segun ella marcan una diferencia enorme en nuestro rendimiento y en nuestra felicidad personal.
+    7. Escenario uno: acabas de completar una tarea y tu jefe te da unas cuantas sugerencias de mejora. Mentalidad fija: uf, la he fastidiado del todo, mi jefe debe de pensar que soy un idiota. Mentalidad de crecimiento: agradezco que mi jefe me diera esas pistas, ah
+    8. Escenario dos: te preguntan si te gustaria llevar la delantera en un proyecto nuevo, arriesgado y exigente. Fija: mejor digo que no, no quiero fracasar y quedar en ridiculo. Crecimiento: es una gran oportunidad para estirarme, aprender algo nuevo y ganar la ex
+    9. Escenario tres: acabas de tener una reunion a solas tensa con Alice, tu persona a cargo. Fija: deberia actuar como si hubiera ido bien, para parecer que se lo que hago. Crecimiento: deberia preguntarle a Alice como se sintio con esa conversacion y como podriam
+   10. Escenario cuatro: estas a media faena con una propuesta y John te pide ver como la llevas. Fija: no quiero ensenarle nada ahora mismo porque la propuesta esta en bruto, va a hacer que quede mal. Crecimiento: la opinion de John va a ser muy util, de hecho deber
+   11. Ten delante lo que cambia: la perspectiva que tienes lo cambia todo. Con mentalidad fija tus acciones las gobierna el miedo, miedo al fracaso, miedo al juicio, miedo a que te descubran como un impostor. Con mentalidad de crecimiento te motiva buscar la verdad 
+====================================================================================================
+ajustar_franqueza_oido_oyente [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando llevas tu forma de ser franco a otra persona, a otro equipo, a otra empresa o a otro pais, y lo que funcionaba deja de funcionar.
+  ENTREGABLE: Las dos dimensiones traducidas a la forma que esa persona o ese equipo reconoce, con el nombre local si hace falta cambiarlo.
+    1. Mide las dos dimensiones en el oido del que escucha y no en la boca del que habla, que es donde el texto dice que se miden.
+    2. No lo trates como un tipo de personalidad, ni como un talento, ni como un juicio sobre una cultura: el texto descarta los tres por su nombre.
+    3. Comprueba que la otra persona entiende que tu esfuerzo por cuidar personalmente y por desafiar directamente va de buena fe, porque el texto dice que solo asi funciona.
+    4. Cuenta con que lo que a una persona o a un equipo le parecio radicalmente franco a otro le puede parecer demasiado odioso, o demasiado sentimental.
+    5. Aumenta el ajuste segun se ensancha el salto: el texto lo ordena de menos a mas, de una empresa a otra hace falta mas ajuste, y de un pais a otro mas todavia.
+    6. Busca la forma local de cuidar personalmente, que es la primera dimension. En el equipo de Tokio la forma preferida de mostrar que les importaba era ser educados.
+    7. Busca la forma local de desafiar directamente, que es la segunda. En el equipo de Tokio la forma con la que estaban mas comodos desafiando la direccion de producto de Google era ser persistentes.
+    8. Cambia el nombre si el nombre estorba: a ese equipo la autora no le pidio franqueza radical, que dice que habria sonado demasiado agresivo, sino ser educadamente persistentes.
+====================================================================================================
+equilibrar_elogio_critica_equipo [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando estas decidiendo cuanto elogio y cuanta critica dar a tu equipo, y cada vez que te sientas tentado de aplicar una proporcion o de envolver una critica en elogios.
+  ENTREGABLE: Mas elogio que critica y ninguna proporcion fija aplicada, ningun elogio dicho para rellenar un hueco, y la energia puesta en decir la critica sin mas y en pensar como se dice el elogio.
+    1. Da mas elogio que critica, aunque se aprenda mas de los errores que de los aciertos, y cuenta con las dos razones que el texto da: guia a la gente en la direccion correcta, porque es tan importante decirle que hacer mas como que hacer menos, y la anima a segui
+    2. Cuenta con que el mejor elogio hace mucho mas que hacer sentir bien: segun el texto, desafia directamente.
+    3. No apliques un ratio fijo de elogio a critica. El texto nombra los que circulan, tres a uno, cinco a uno y hasta siete a uno, y dice por que la nocion de un ratio correcto es peligrosa: te lleva a decir cosas antinaturales, insinceras o directamente ridiculas,
+    4. No uses el sandwich de opinion, que es abrir y cerrar con elogio metiendo la critica en medio. El texto recoge el nombre que le puso Ben Horowitz, el sandwich de mierda, y aniade que quien lo defiende dice que funciona con gente con menos experiencia, mientras
+    5. Cuenta con que un elogio paternalista o insincero erosiona la confianza y estropea tus relaciones tanto como una critica demasiado dura.
+    6. Cuenta con las dos formas de fallar que el texto nombra por separado: al criticar, la mayoria tiene miedo de herir y acaba por no decir nada; al elogiar, unos dicen siempre algo por agradar, a veces cosas vacuas, y otros simplemente no tienen la costumbre de e
+    7. Cuando critiques, ponte menos nervioso y concentrate en decirlo sin mas. El texto avisa de que si piensas demasiado en como decirlo es probable que te acobardes y no digas nada.
+    8. Cuando elogies, haz lo contrario: se consciente de todas las formas en que un elogio puede salir mal y pon mas energia en pensar como decirlo.
+    9. Pasa el mismo tiempo asegurandote de tener bien los hechos antes de elogiar a alguien que antes de criticarle. Son las dos preguntas que el texto recoge de Karen Sipprell, colega suya en Apple, y que presenta como instructivas.
+====================================================================================================
+revisar_ciclo_responsabilidades_relaciones [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando quieres saber por que una de tus tres responsabilidades de jefe no avanza, y quieres mirar la relacion con la persona a cargo antes de mirar la tarea.
+  ENTREGABLE: Las tres responsabilidades revisadas contra la relacion que las sostiene, con la lista que la fortalece y la lista que la erosiona pasadas una a una.
+    1. Parte de lo que el texto pone como dificultad central del oficio, y que segun el texto casi nadie pregunta: establecer una relacion de confianza con cada persona que te reporta directamente. El texto anade que si diriges una organizacion grande no puedes tener
+    2. Cuenta con los cinco estorbos que el texto nombra uno a uno: las dinamicas de poder en primer lugar, el miedo al conflicto, la preocupacion por los limites de lo apropiado o lo profesional, el miedo a perder credibilidad y la presion del tiempo.
+    3. Repasa las tres responsabilidades que el texto numera, en su orden: crear una cultura de guia, alabanza y critica, que mantenga a todos moviendose en la direccion correcta; entender que motiva a cada persona de tu equipo lo bastante bien para evitar el agotami
+    4. Pasa la lista que el texto dice que fortalece las relaciones, en el orden en que el texto la pone: aprender las mejores maneras de recibir, dar y fomentar guia; poner a la gente adecuada en el papel adecuado de tu equipo; y conseguir en conjunto resultados que
+    5. Pasa la lista que el texto dice que las erosiona, en el orden en que el texto la pone: no dar a la gente la guia que necesita para tener exito en su trabajo; meter a la gente en papeles que no quieren o para los que no encajan bien; y empujar a la gente a cons
+    6. Cuenta con lo que el texto dice que produce la segunda lista: erosionas la confianza.
+    7. Mira un nivel mas alla, que es lo que el texto anade: tus relaciones con tus personas a cargo afectan a las relaciones que ellas tienen con las suyas, y a la cultura de tu equipo.
+====================================================================================================
+elogiar_trabajo_especifico_contexto [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando vas a elogiar el trabajo de alguien, y sobre todo cuando vas a hacerlo delante de otras personas.
+  ENTREGABLE: Un elogio dicho con su porque dentro, contextualizado y sentido de verdad, comprobado en como aterrizo y repetido mejor si cayo plano, y en el caso del elogio publico con la averiguacion de quien hizo que hecha por delante.
+    1. Di por que admiras lo que admiras, y no te quedes en el hecho. El texto pone el caso de un elogio suyo que se quedo en decir a su socio que admiraba que fuera entrenador de un equipo infantil, sin decir por que, y lo llama vago e inutil.
+    2. Comprueba que lo que dices lo sientes de verdad. En ese mismo caso el problema de fondo resulto ser otro: el socio contesto que no creia que lo dijera en serio, porque a ella el deporte le desagrada. El texto lo cuenta como un elogio que sono insincero aunque 
+    3. Mide como aterriza tu elogio en la persona que lo recibe, que es lo que el texto llama calibrar tu guia y da como razon de que dar un elogio con sentido sea dificil.
+    4. Si cayo plano, vuelve a intentarlo. La segunda version del caso lleva dentro la ocasion concreta en que ella le habia dado la lata por irse pronto al entrenamiento, lo que admira, que integra trabajo y vida como nadie que ella conozca, el efecto que eso tiene 
+    5. Antes de elogiar en publico, investiga hasta que entiendas de verdad quien hizo que y por que estuvo tan bien. El texto lo saca del caso del ingeniero al que su jefe felicito delante de toda la empresa por una funcionalidad en la que habia trabajado un punado 
+    6. Se tan concreto y tan a fondo con el elogio como con la critica, y baja al detalle.
+    7. No copies y pegues las justificaciones que te mandan sin leerlas. El texto pone el correo de un jefe que felicito a setenta personas de un equipo de seiscientas pegando lo que le habian mandado sus jefes, y que en una de esas lineas publico el sueldo de una pe
+====================================================================================================
+empezar_cultura_franqueza_radical [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando vas a poner en marcha una cultura de franqueza radical en tu equipo, la gente esta de acuerdo con la idea y se pone nerviosa a la hora de practicarla.
+  ENTREGABLE: El arranque hecho en el orden del texto: la idea explicada, la critica pedida antes que dada, el elogio dado antes que la critica, y la frontera peligrosa entendida antes de empezar a criticar.
+    1. Cuenta con lo que el texto observa a menudo que habla de esto: la gente esta de acuerdo con la idea y se pone nerviosa ante la idea de ponerla en practica.
+    2. Empieza explicando la idea.
+    3. Y despues pide a tu gente que sea radicalmente franca contigo.
+    4. Dicho de otra manera, que es como el propio texto lo resume: empieza recibiendo guia, no repartiendola.
+    5. Cuando empieces a darla, empieza por el elogio y no por la critica.
+    6. Cuando pases a la critica, asegurate de entender donde esta la frontera peligrosa entre la franqueza radical y la agresion odiosa.
+====================================================================================================
+pedir_critica_equipo_premiarla [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando vas a empezar a construir una cultura de franqueza radical y toca la primera fase, que es que te critiquen a ti, y tambien cada vez que te reunas con un equipo que no te dice nada.
+  ENTREGABLE: La critica pedida activamente y no solo consentida, recibida sin criticarla y sin defenderte, premiada cuando llega por pequenia que sea, y con todo el equipo enterado de que la queja se atendio.
+    1. Empieza pidiendo que te critiquen a ti, y cuenta con las cuatro razones que el texto da: es la mejor forma de mostrar que sabes que a menudo te equivocas y que quieres que te lo digan; vas a aprender mucho, porque poca gente te escruta tan de cerca como quien 
+    2. No te baste con estar abierto a la critica: pidela activamente, que es lo que el texto distingue.
+    3. Si una persona es lo bastante valiente como para criticarte, no critiques su critica.
+    4. Si ves a alguien criticando a un par de forma inapropiada, di algo.
+    5. Pero si es a ti a quien te critican de forma inapropiada, tu trabajo es escuchar con intencion de entender y despues premiar la franqueza.
+    6. Anima la critica tambien entre los miembros de tu equipo, que el texto pone como igual de importante que pedirla para ti.
+    7. No reacciones a la defensiva, que es la clave que el texto da para el equipo que si le hablaba claro. El texto pone dos ejemplares de lo que recibio de aquel equipo de Dublin, que eres muy rapida dandole a enviar, y que nosotros tambien tenemos hijos cuando re
+    8. Con un equipo que no habla, aguanta el silencio. En el caso de Tokio la autora pregunto que podria hacer o dejar de hacer para mejorarles la vida, conto hasta diez en vez de hasta seis y no hablo nadie, y pregunto de otra manera y siguio sin hablar nadie.
+    9. Prueba a contar la historia que el texto usa para eso: Toyota pinto un cuadrado rojo grande en el suelo de la linea de montaje, los empleados nuevos tenian que ponerse dentro al final de su primera semana, y no podian salir hasta haber criticado al menos tres 
+   10. Premia generosamente la primera franqueza, por pequenia que sea. En el caso de Tokio la primera queja fue sobre el te de la oficina, y la autora dio las gracias en publico, mando una nota escrita a mano, aprobo fondos para que hubiera mejor te, y se aseguro de
+   11. Cuenta con que despues de esa primera queja pequenia se empiezan a levantar asuntos mas sustanciales.
+====================================================================================================
+cuidar_persona_completa_equipo [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando la relacion con una persona a cargo se ha quedado en lo estrictamente profesional y quieres saber que hacer con ella, sin caer en memorizar cumpleanios ni en la charla forzada.
+  ENTREGABLE: Una relacion en la que las dos partes traen su persona entera al trabajo, con tiempo real de conversacion reservado y un espacio seguro en el que otros pueden hacer lo mismo.
+    1. Cuenta con lo que el texto pone como causa de que la gente no cuide personalmente: el mandato de mantenerlo profesional, que segun el texto niega algo esencial, y la sensacion de ser mejor o mas listo que quien trabaja para ti, que el texto llama sentido de su
+    2. Reconoce que ser jefe es un puesto de trabajo, no un juicio de valor, que es lo que el texto pone contra ese sentido de superioridad.
+    3. No te quedes en cuidar el trabajo de la persona ni su carrera: el texto dice expresamente que eso no basta y que solo cuidando a la persona completa con tu persona completa se construye la relacion.
+    4. Busca tiempo para conversaciones de verdad, que es el primero de los medios que el texto nombra.
+    5. Conoceos mutuamente a nivel humano, que es el segundo.
+    6. Aprende que es importante para cada persona, que es el tercero.
+    7. Compartid mutuamente que os hace querer levantaros por la maniana e ir a trabajar, y que tiene el efecto contrario, que es el cuarto.
+    8. Da ejemplo tu primero mostrando alguna vulnerabilidad a tus personas a cargo, o simplemente admitiendo cuando tienes un mal dia, y crea un espacio seguro para que los demas hagan lo mismo, que es como el texto describe traer tu persona entera al trabajo.
+    9. No confundas esto con memorizar cumpleanios y nombres de familiares, ni con contar los detalles sordidos de tu vida personal, ni con la charla forzada en actos sociales a los que preferirias no ir: el texto descarta los tres por su nombre.
+   10. Cuenta con el precio que el texto pone al lado: tienes que cuidar profundamente de la gente estando preparado para que te odien a cambio, y si puedes absorber los golpes es mas probable que los tuyos sean buenos jefes cuando les toque. El texto avisa de que pu
+====================================================================================================
+usar_lenguaje_no_discriminatorio_entrevista [ grafo ] fuentes: ['smart_who']
+  CONDICION: Cuando preparas las entrevistas y los formularios escritos de un proceso de contratacion. Es la tercera de las cuatro areas de cautela legal, y se aplica a los dos sitios a la vez.
+  ENTREGABLE: Las entrevistas y los formularios escritos del proceso revisados y limpios de lenguaje que presuponga el sexo de quien va a ocupar el puesto o que resulte despectivo hacia nadie.
+    1. Usa lenguaje no discriminatorio durante las entrevistas, que es el primero de los dos sitios que el libro nombra.
+    2. Usalo tambien en los formularios escritos, que es el segundo sitio que el libro nombra.
+    3. Sustituye el supuesto de que un puesto lo tiene que desempenar un hombre o una mujer por la formula que el libro da: el o ella, o bien ellos.
+    4. No uses nunca lenguaje despectivo hacia nadie.
+====================================================================================================
+gestionar_personas_equipo [ grafo ] fuentes: ['zhuo_manager']
+  CONDICION: Cuando revisas el cubo de las personas de tu equipo y la respuesta a alguna de las tres preguntas es que no: que no estan preparados para tener exito, que no tienen las habilidades adecuadas o que no estan motivados para hacer un gran trabajo.
+  ENTREGABLE: Las personas adecuadas para el trabajo y un entorno donde puedan prosperar, con los cuatro frentes atendidos: relaciones de confianza, fuerzas y debilidades conocidas, decisiones tomadas sobre quien hace que, y cada persona entrenada para dar lo mejor de si.
+    1. Pregunta primero si los miembros de tu equipo estan preparados para tener exito, si tienen las habilidades adecuadas y si estan motivados para hacer un gran trabajo.
+    2. Desarrolla relaciones de confianza con ellos.
+    3. Entiende las fuerzas y las debilidades de cada uno, y tambien las tuyas.
+    4. Toma buenas decisiones sobre quien debe hacer que, y eso incluye contratar y despedir cuando haga falta.
+    5. Entrena a cada persona para que de lo mejor de si.
+    6. Y cuenta con que si no tienes a las personas adecuadas para el trabajo, o no tienes un entorno donde puedan prosperar, vas a tener problemas: basta con que uno no mida bien los ingredientes de la formula, con que otro no se moleste en saludar con educacion a l
+====================================================================================================
+imaginar_caso_simple_bragueta_abierta [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando tienes que decirle a alguien algo que va a ser muy dificil de oir y no sabes si lo que vas a hacer es franqueza radical o no, y tambien cada vez que estas a punto de callarte algo.
+  ENTREGABLE: La cosa dificil dicha, o al menos el silencio identificado en el cuadrante que le corresponde antes de elegirlo.
+    1. Cuenta con lo que el texto avisa: decidir si estas siendo radicalmente franco o no puede ser mas dificil de lo que parece.
+    2. Usa la via que el texto propone para eso: una forma de resolver un problema dificil es pensar en uno mas simple pero parecido, recordar como lo resolviste, y aplicar esa tecnica al dificil. El texto dice que sirve igual para las situaciones emocionales.
+    3. Cuando te toque decir algo muy dificil de oir, finge que solo estas diciendo llevas la bragueta abierta, o tienes espinacas entre los dientes. El texto dice que esos escenarios menos cargados ayudan a encarar los problemas grandes de forma mas directa.
+    4. Imagina el escenario entero: un colega sale del servicio con la bragueta bajada y el faldon de la camisa fuera. Que dices?
+    5. La franqueza radical es apartarlo y decirselo en voz baja, aniadiendo que a ti te agrada que te lo digan cuando te ha pasado lo mismo y que esperas que no le importe que se lo menciones.
+    6. La agresion odiosa es senialarlo en voz alta delante de otros intentando hacer gracia humillandolo a proposito. El texto aniade que aun asi no es el peor escenario desde el punto de vista del afectado, porque al menos le diste la ocasion de arreglarlo.
+    7. La empatia ruinosa es callarte porque sabes que es timido y se va a avergonzar, con lo que lo ven diez personas mas y cuando se da cuenta es evidente que llevaba mucho rato asi, y acaba mas avergonzado que si se lo hubieras dicho en el acto.
+    8. La insinceridad manipuladora es callarte pensando en tus propios sentimientos y en tu reputacion, no por el sino por ahorrartelo tu, porque te importa mucho caer bien y te preocupa que te juzguen si te oyen decirselo. Y si eres del todo desvergonzado, susurrar
+    9. No reserves esto para la gente que ya conoces bien. El texto avisa de que la necesidad de comunicacion honesta no siempre espera a que haya relacion estrecha, y de que el silencio de un casi desconocido invita a mas incomodidad y mas desconfianza que decirlo: 
+   10. Usalo en caliente como control: la proxima vez que veas una bragueta metaforica bajada y te tiente no decir nada, imagina donde te pone eso en el marco, empatia ruinosa o insinceridad manipuladora, y deja que el tironcito te mueva hacia la franqueza radical.
+   11. Cuenta con la regla que el texto recoge de Kim Vorrath, responsable en Apple del equipo de iOS que hizo el software del telefono: dilo sin mas.
+====================================================================================================
+respetar_cuidar_persona_cargo [ grafo ] fuentes: ['zhuo_manager']
+  CONDICION: Siempre que tengas a alguien a cargo, y con mas motivo cuando esa persona se atasca, que es donde el libro pone la prueba dificil del respeto.
+  ENTREGABLE: Tu persona a cargo recibiendo de ti apoyo y respeto que no dependen de su rendimiento, y devolviendote honestidad cuando las cosas van mal.
+    1. Parte de la leccion con la que un directivo veterano cerro un taller al que asistio la autora, y que en toda su trayectoria nunca perdio a nadie a cargo por una oferta de la competencia: gestionar es cuidar.
+    2. No intentes fingirlo, porque se nota: ninguno de nosotros actua tan bien como para controlar las miles de senales diminutas que mandamos sin darnos cuenta con el lenguaje del cuerpo, y si no crees en el fondo que alguien puede tener exito te sera imposible tra
+    3. No confundas apoyar y cuidar con darle siempre la razon o con excusar sus errores: las personas mas volcadas en ayudarte a ti a tener exito suelen ser tambien las que antes te dicen por que creen que te equivocas.
+    4. Lo que si significa cuidar es hacer lo que puedas para que tu persona a cargo tenga exito y se sienta realizada en su trabajo.
+    5. Significa tambien dedicar el tiempo necesario a aprender que le importa.
+    6. Y significa entender que no somos personas distintas en el trabajo y en casa: a veces lo personal se mezcla con lo profesional, y eso esta bien.
+    7. Haz que el respeto sea incondicional, porque va de la persona entera y no de lo que hace por ti. Apoyar al que lo esta petando es facil, y la prueba dificil es que pasa cuando la persona se atasca.
+    8. Y ten claro lo que esta en juego: si tu persona a cargo siente que tu apoyo y tu respeto dependen de su rendimiento, le costara ser honesta contigo cuando las cosas vayan mal; si siente que te importa pase lo que pase, y que nada puede cambiar eso, ni siquiera
+====================================================================================================
+acompaniar_mejores_equipo_socio [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando te descubres dedicando mas tiempo a quien va mal que a quien va bien, o diciendote que a los que hacen buen trabajo no hace falta molestarlos porque no te necesitan.
+  ENTREGABLE: Tiempo real dedicado a los que hacen el mejor trabajo, con sus obstaculos conocidos al detalle y con al menos parte del trabajo hecho a su lado y no solo aconsejado desde fuera.
+    1. Antes de distinguir entre estrellas de rock y superestrellas, atiende a lo que las dos necesitan de ti por igual: que te concentres en ellas y te asegures de que tienen todo lo que hace falta para seguir haciendo un gran trabajo.
+    2. No ignores a quien hace el mejor trabajo con la excusa de que no te necesita o de que no quieres microgestionar. El texto lo llama uno de los errores mas comunes de los jefes y dice que ignorar a alguien es una forma terrible de construir una relacion.
+    3. Cuenta con lo que el texto opone a la receta de contratar bien y dejarlos en paz, en boca de Dick Costolo: es como decir que para tener un buen matrimonio te cases con la persona adecuada y despues evites pasar tiempo con ella.
+    4. Cuenta con lo que te cuesta ignorarlos, que el texto enumera: no entiendes como quieren y necesitan crecer en su puesto en ese momento de sus vidas, asignas las tareas equivocadas a las personas equivocadas, promocionas a quien no toca, y no les das la guia qu
+    5. Ten delante la cuenta que el texto hace del reparto de tu tiempo: cada minuto que pasas con alguien que hace un gran trabajo rinde en los resultados del equipo mucho mas que el tiempo que pasas con alguien que esta fallando.
+    6. En vez de jefe ausente o microgestor, se socio: dedica el tiempo a ayudar a quien hace el mejor trabajo a superar obstaculos y a hacer que su buen trabajo sea todavia mejor.
+    7. Cuenta con lo que eso te va a costar, que el texto dice sin adornarlo: lleva tiempo, porque exige que sepas bastante del detalle del trabajo de la persona como para entender sus matices.
+    8. Arremangate y ayuda a hacer el trabajo, y no solo a aconsejar sobre el.
+    9. Haz muchas preguntas y desafia a la persona.
+   10. No dediques mas tiempo a quien va mal que a quien va bien. El texto da dos razones: no es justo para quien lo esta haciendo bien, y pasar de grande a extraordinario inspira mas a todo el mundo que pasar de malo a mediocre.
+   11. Cuenta con el efecto secundario que el texto aniade: ver que aspecto tiene un desempenio verdaderamente excepcional ayuda a quienes estan fallando a ver con mas claridad que se espera de ellos.

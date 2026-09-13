@@ -1,0 +1,11 @@
+LINEAS ANADIDAS EN LA VUELTA 25 (156 -> 203): 47
+  pares distintos entre ellas: 41
+  pares repetidos: 6
+  entradas en .v24/veredictos_insercion.json: 19
+  entradas en .v25/veredictos_insercion.json: 30
+  ejemplo clave v24: ['cambiar_potencial_trayectoria_crecimiento>desplegar_marco_franqueza_radical', 'cuidar_persona_completa_equipo>respetar_cuidar_persona_cargo']
+  claves de v24 que son de los SIETE: 11
+  claves de v24 que NO: 8
+
+CLASE DE LAS NUEVAS: {'SANO': 44, 'CONTINUA': 3}
+SIN RAZON ESCRITA (D.8): 0

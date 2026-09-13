@@ -1,0 +1,6 @@
+EL SALDO
+  CAERIAN por una guarda           : 1
+POR QUE GUARDA CAEN
+[CAERIA] cambiar_forma_trabajar_sin_renovar_plantilla   (mut_regla3.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'cambiar_forma_trabajar_sin_renovar_plantilla': preposicion o articulo prohibido: sin (regla 3)

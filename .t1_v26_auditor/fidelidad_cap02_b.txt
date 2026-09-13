@@ -1,0 +1,47 @@
+CANDIDATO : encargar_meta_especifica_dejar_libre_metodo
+CAPITULO  : fuentes/marquet_turn_the_ship/cap_02.md
+PASOS     : 5
+====================================================================================================
+PASO 1> Presenta una meta especifica. En el caso que el texto cuenta fue dejar el Santa Fe listo para el despliegue en todos los sentidos.
+  --- L49 del libro ---
+      Upon reflection, Commodore Kenny was providing great leadership. He presented me with a specific
+       goal-have Santa Fe ready for deployment in every way-but did not tell me how to do it. The othe
+      r thing he was telling me was that the people and resources available to the ship would be the s
+      ame as they were before and the same as they were to any other submarine. Consequently, the only
+       thing we could change was how we acted and interacted. This would be my focus.
+====================================================================================================
+PASO 2> No digas como se hace. El texto lo pone como la segunda mitad de lo mismo y es lo que separa este encargo de la microgestion.
+  --- L49 del libro ---
+      Upon reflection, Commodore Kenny was providing great leadership. He presented me with a specific
+       goal-have Santa Fe ready for deployment in every way-but did not tell me how to do it. The othe
+      r thing he was telling me was that the people and resources available to the ship would be the s
+      ame as they were before and the same as they were to any other submarine. Consequently, the only
+       thing we could change was how we acted and interacted. This would be my focus.
+  --- L51 del libro ---
+      Then I began to reconsider the situation. Since Mark wasn’t going to micromanage me, maybe this 
+      was a chance to do something different. Maybe this was the chance to set the crew free from the 
+      top-down, “do what you’re told” approach to leadership. Maybe this was the opportunity of a life
+      time. Of course, I would be solely responsible, and if Santa Fe wasn’t ready, it would be my fau
+      lt and likely my job.
+====================================================================================================
+PASO 3> Di ademas la otra cosa que el texto senala que le estaban diciendo: que la gente y los recursos disponibles iban a ser los mismos que antes y los mismos que para cualquier otra unidad.
+  --- L49 del libro ---
+      Upon reflection, Commodore Kenny was providing great leadership. He presented me with a specific
+       goal-have Santa Fe ready for deployment in every way-but did not tell me how to do it. The othe
+      r thing he was telling me was that the people and resources available to the ship would be the s
+      ame as they were before and the same as they were to any other submarine. Consequently, the only
+       thing we could change was how we acted and interacted. This would be my focus.
+====================================================================================================
+PASO 4> Cuenta con la consecuencia que el texto saca de esas dos cosas juntas: lo unico que se puede cambiar entonces es como actua y como interactua la gente.
+  --- L49 del libro ---
+      Upon reflection, Commodore Kenny was providing great leadership. He presented me with a specific
+       goal-have Santa Fe ready for deployment in every way-but did not tell me how to do it. The othe
+      r thing he was telling me was that the people and resources available to the ship would be the s
+      ame as they were before and the same as they were to any other submarine. Consequently, the only
+       thing we could change was how we acted and interacted. This would be my focus.
+====================================================================================================
+PASO 5> Ofrece apoyo sin decidir por el encargado, que es como el texto recoge la oferta: cien por cien de apoyo, pero sin bajar a decirle lo que necesita.
+  --- L33 del libro ---
+      “Look, you’ve got one hundred percent from me and my squadron staff,” Mark continued, “to help y
+      ou get the ship ready. We aren’t going to walk down there and tell you what you need, but whatev
+      er you think you need, we’ll support.”

@@ -1,0 +1,56 @@
+##### INFORME cuarentena/marquet_turn_the_ship
+Sun, Sep 13, 2026  6:51:28 PM
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 3
+poblacion del barrido       : 348   (222 del grafo mas 126 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 3   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 7
+  por candidato bloqueado          : menor 2, mediana 2, mayor 3
+  que señal levanta cada vecindad  : paso_contra_nodo 1, similitud_texto 6
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] cambiar_forma_trabajar_conservar_plantilla   (cambiar_forma_trabajar_conservar_plantilla.json)
+    vecino escuchar_entender_critica_dominar_defensa  [levantada por: paso_contra_nodo]
+      similitud_texto 0.261 | familia_id 0.000 | paso_contra_nodo 0.612
+      paso 2 del candidato contra paso 4 de escuchar_entender_critica_dominar_defensa
+    vecino encargar_meta_especifica_dejar_libre_metodo  [levantada por: similitud_texto]
+      similitud_texto 0.486 | familia_id 0.000 | paso_contra_nodo 0.455
+      paso 2 del candidato contra paso 2 de encargar_meta_especifica_dejar_libre_metodo
+    vecino ceder_control_reforzar_competencia_claridad  [levantada por: similitud_texto]
+      similitud_texto 0.428 | familia_id 0.000 | paso_contra_nodo 0.430
+      paso 2 del candidato contra paso 6 de ceder_control_reforzar_competencia_claridad
+
+[BLOQUEARIA] ceder_control_reforzar_competencia_claridad   (ceder_control_reforzar_competencia_claridad.json)
+    vecino encargar_meta_especifica_dejar_libre_metodo  [levantada por: similitud_texto]
+      similitud_texto 0.454 | familia_id 0.000 | paso_contra_nodo 0.486
+      paso 5 del candidato contra paso 4 de encargar_meta_especifica_dejar_libre_metodo
+    vecino cambiar_forma_trabajar_conservar_plantilla  [levantada por: similitud_texto]
+      similitud_texto 0.415 | familia_id 0.000 | paso_contra_nodo 0.454
+      paso 3 del candidato contra paso 2 de cambiar_forma_trabajar_conservar_plantilla
+
+[BLOQUEARIA] encargar_meta_especifica_dejar_libre_metodo   (encargar_meta_especifica_dejar_libre_metodo.json)
+    vecino cambiar_forma_trabajar_conservar_plantilla  [levantada por: similitud_texto]
+      similitud_texto 0.474 | familia_id 0.000 | paso_contra_nodo 0.459
+      paso 5 del candidato contra paso 2 de cambiar_forma_trabajar_conservar_plantilla
+    vecino ceder_control_reforzar_competencia_claridad  [levantada por: similitud_texto]
+      similitud_texto 0.465 | familia_id 0.000 | paso_contra_nodo 0.473
+      paso 4 del candidato contra paso 5 de ceder_control_reforzar_competencia_claridad
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+EXIT=0
+Sun, Sep 13, 2026  6:57:58 PM
