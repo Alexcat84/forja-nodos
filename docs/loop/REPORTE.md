@@ -29766,3 +29766,90 @@ uno** (`R.9` caida 7) y **se arreglo regenerando**, no tecleando la celda buena.
 > siguiente:** la cola de lectura de una insercion **no es fija: crece mientras se paga**. El mismo
 > candidato levanto **1** vecino contra 205 nodos y **3** contra 214. **Cualquier estimacion de
 > cuanto queda que yo diera hoy seria inventada**, y por eso no la doy.
+
+---
+
+# VUELTA 25, la tarea bloqueante de la racha `REPORTE`, las dos correcciones acumuladas, las ocho aristas que el acta adjudica, **la tanda de insercion del lote 4**, el cableado medido, la relectura ancha de tres filas y la apertura del lote 5 (`marquet_turn_the_ship`)
+
+*Esqueleto abierto ANTES de la primera tarea (`EXTRACTOR.md` 3). Las filas se anexan al cerrarse
+cada tarea, no al final de la vuelta. **El encargo pone CINCO tareas y el tope son cinco**
+(`EXTRACTOR.md` 1.3), asi que no hay cola por techo de tareas. **La TAREA 1 va primera, sin solape y
+es BLOQUEANTE**, por orden expreso del encargo: mi racha `REPORTE` esta en `2 de 3`, que es el
+penultimo escalon.*
+
+## S.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION
+
+*`EXTRACTOR.md` 4: la apertura se mide antes de la primera operacion. Se midio con el arbol ya
+limpio, es decir DESPUES del commit de pendientes que `EXTRACTOR.md` 1.1 manda hacer primero y ANTES
+de la primera linea de trabajo. Ese commit (`4f59ba2`) movio el hash y no movio ninguna otra cifra:
+lo unico que llevaba dentro eran los tres ficheros del arnes (`loop.log`, `ultimo_auditor.json`,
+`ultimo_extractor.json`).*
+
+Salida de `sh .v25/apertura.sh`, guardada en `.v25/apertura.txt`. La tabla la recoge:
+
+<!-- TALLADO: parcial salida=.v25/apertura.txt -->
+
+| medida | instrumento corrido en esta vuelta | valor al abrir |
+|---|---|---:|
+| nodos en el grafo | `wc -l < dataset/nodos.jsonl` | **214** |
+| veredictos en bitacora | `wc -l < bitacora/VEREDICTOS.jsonl` | **156** |
+| candidatos en cuarentena del lote 4 | `ls cuarentena/scott_radical_candor/*.json \| wc -l` | **131** |
+| insertados del lote 4 | `ls cuarentena/_insertados/scott_radical_candor/*.json \| wc -l` | **11** |
+| ficheros en `cuarentena/_insertados/` (todos los lotes) | `ls cuarentena/_insertados/*/*.json \| wc -l` | **212** |
+| lineas del reporte | `wc -l < docs/loop/REPORTE.md` | **29768** |
+| rama | `git rev-parse --abbrev-ref HEAD` | `extraccion-mundo-11` |
+| commit de apertura | `git rev-parse --short HEAD` | `4f59ba2` |
+
+**LAS CUATRO CIFRAS DEL ENCARGO CUADRAN CON MI MEDICION, Y LO DIGO PORQUE LA COSTUMBRE DE ESTA CASA
+ES NO COPIARLAS:** el encargo me entrega grafo `214`, bitacora `156`, bandeja `131` e `_insertados`
+del lote 4 `11`. **Las cuatro me salen iguales corridas por mi.** Cuando no salgan iguales, lo que se
+publica es la discrepancia y no la copia (`EXTRACTOR.md` 5).
+
+## S.0.1. LA INSERCION LLEGA ABIERTA Y **HOY LA CONDICION SI SE CUMPLE AL ABRIR**, por primera vez
+
+*`MODO_INSERCION=insertar` es el default desde `D.39` y la corrida me lo entrega abierto.*
+
+**`D.39` NO ABRE LA INSERCION DE CUALQUIER CANDIDATO: ABRE LA DE UN LOTE CERRADO EN EXTRACCION CUYO
+INFORME HAYA CERTIFICADO EL ACTA DEL AUDITOR** (`EXTRACTOR.md` 15.7). **Las dos mitades de esa
+condicion, medidas y citadas:**
+
+| la mitad | como la compruebo | |
+|---|---|---|
+| **el lote 4 cerrado en extraccion** | lo mido yo en `S.5.a` con mi instrumento, y no lo acepto del acta | **se verifica en esta vuelta** |
+| **el acta del auditor lo certifica** | `ACTA 24` seccion `9`, titulada *ESTA ACTA CIERRA EL LOTE 4 EN EXTRACCION Y ABRE EL LOTE 5*, con su `9.1` *EL CIERRE DEL LOTE 4, MEDIDO POR MI Y NO ACEPTADO* | **CERTIFICADO** |
+
+**Por tanto la insercion del lote 4 esta autorizada y es la TAREA 2.** Lo que sigue sin estar
+autorizado es la insercion de los candidatos del **lote 5**, que abre hoy en la TAREA 5 y por tanto
+es un lote **ABIERTO**: **sus candidatos se quedan en cuarentena hasta que su lote cierre**, y
+meterlos antes seria una caida de dato y no un adelanto.
+
+## S.0.2. ESTA VUELTA NO TRAE SALDO DE LOTE (`D.42`)
+
+Salida de los dos comandos, guardada en `.v25/informe_de_lote.txt`:
+
+    $ ls -la docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+    ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+    ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ tail -5 docs/loop/loop.log
+    [2026-09-13 17:32:16] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+    [2026-09-13 17:32:16] VUELTA 3 : EXTRACTOR (claude-opus-5)
+
+**`D.42`: si el prompt no me entrega ningun informe, no lo invento y no lo lanzo.** El arnes lo dice
+por su cuenta en `loop.log`. **La vuelta no trae saldo de lote**, y por tanto **no publico `CHOCAN
+entre si dentro del lote`**, que es la cifra que solo ese informe ve. **El de un candidato suelto
+sigue siendo mio** y se corre en el mismo acto de escribir o de tocar cada candidato
+(`EXTRACTOR.md` 16).
+
+## S.1. LAS CINCO TAREAS ENCARGADAS, Y SU ESTADO
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | **PRIMERA, SIN SOLAPE Y BLOQUEANTE**: los registros, las dos correcciones que acumularon, las ocho aristas adjudicadas y el puente de fidelidad de `cap_14` | **ABIERTA** |
+| 2 | **Terminar la tanda de insercion del lote 4**, y declarar donde me paro con su cifra | **ABIERTA** |
+| 3 | **Cablear las aristas que ya puedan cablearse**, medido y no supuesto | **ABIERTA** |
+| 4 | **La relectura ancha de tres de las seis filas de hueco del freno** (`cap_01`, `cap_03`, `cap_05`) | **ABIERTA** |
+| 5 | **Abrir el lote 5** (`marquet_turn_the_ship`) a dos capitulos | **ABIERTA** |
+
+*Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
+
+---
