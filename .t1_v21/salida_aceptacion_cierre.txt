@@ -1,0 +1,5 @@
+  D.40, lo que un auditor le deja al siguiente lo entrega el arnes: 13 pruebas mas
+  la poblacion del informe es grafo mas bandejas (12 sep 2026, punto 3): 6 pruebas mas
+
+  total: 98 pruebas, 0 fallos, 0 errores
+========================================================================

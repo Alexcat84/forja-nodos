@@ -1,0 +1,12 @@
+candidatos repartidos                   : 96
+candidatos en la bandeja                : 96
+pasos del lote 4                        : 1050
+
+MEDIDAS DEL CIERRE, recomputadas al cierre (EXTRACTOR.md 4)
+  nodos en el grafo        : 203
+  veredictos en bitacora   : 148
+  ficheros en _insertados  : 201
+  nodos con fuente scott   : 0 de 203
+  extremos de arista       : 158   (aristas distintas: 79)
+  unidades del libro       : 15
+  cuerpo cap_11 a cap_14   : 27680 palabras

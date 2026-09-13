@@ -1,16 +1,4 @@
 
----
-
-# O.6. EL CIERRE DE LA VUELTA 21
-
-*`EXTRACTOR.md` 4: **el estado al cierre se mide al cierre.** Toda cifra que describa el estado al
-cerrar se RECOMPUTA si algo de la propia vuelta pudo haberla movido. Las de abajo se corrieron
-DESPUES de escribir los trece candidatos y DESPUES de la correccion de las 22 cuentas.*
-
-## O.6.1. LAS TRES GUARDAS, CORRIDAS AL CIERRE
-
-*Y una cuarta que no es guarda pero se corre igual, porque es la que me aborto un commit hoy.*
-
 ## O.6.2. **EL SALDO DE LOS TRECE, UNO A UNO, CON SU INFORME PROPIO** (`EXTRACTOR.md` 16, `D.41`)
 
 *El del lote entero **no es mio** (`D.41`) y esta vuelta no lo trae (`O.2.d`). Los de uno en uno

@@ -1,9 +1,11 @@
 
 ### O.6.5.a. LOS SEIS PARES DISTINTOS QUE LA ADUANA LEVANTO, CON MI VEREDICTO Y SU RAZON
 
-*Seis pares distintos en **siete** filas de `BLOQUEARIA` (dos pares aparecen dos veces, una por
-cada extremo, que es como el informe de uno en uno los ve). **Cinco de los seis son entre
-candidatos de `cap_10`**, y eso es `D.38.5` funcionando: hasta ayer ni se median.*
+*La cuenta exacta, y la doy antes de la tabla porque tres numeros distintos describen lo mismo:
+**7 informes salen `BLOQUEARIA`**, con **9 filas de vecino** entre todos, que son **6 pares
+distintos**. La diferencia es que tres pares aparecen por sus dos extremos y tres solo por uno,
+porque **el informe de uno en uno solo mira desde el candidato que le pasas**. **Cinco de los seis
+pares son entre candidatos de `cap_10`**, y eso es `D.38.5` funcionando: hasta ayer ni se median.*
 
 | par | señal que lo levanto | **mi veredicto, con los dos ficheros abiertos** |
 |---|---|---|
