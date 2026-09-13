@@ -1,0 +1,11 @@
+sopesar_consejo_legal_despedir_humildad   (8 pasos)   poblacion 299 = 203 grafo + 96 bandejas
+  vecinos POR ENCIMA de umbral: 2
+    admitir_pronto_mal_desempenio_cuatro_razones         sim=0.365 fam=0.000 paso=0.485  <- similitud_texto
+    calibrar_decision_despido_documentarla               sim=0.367 fam=0.000 paso=0.533  <- similitud_texto
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    calibrar_decision_despido_documentarla               sim=0.367 fam=0.000 paso=0.533
+    admitir_pronto_mal_desempenio_cuatro_razones         sim=0.365 fam=0.000 paso=0.485
+    trazar_plan_dieciocho_meses_aprendizaje              sim=0.331 fam=0.000 paso=0.484
+    explicar_idea_facil_comprender_oyente                sim=0.323 fam=0.000 paso=0.416
+    contactar_despedido_mes_despues                      sim=0.321 fam=0.000 paso=0.402
+  segundos: 447.5

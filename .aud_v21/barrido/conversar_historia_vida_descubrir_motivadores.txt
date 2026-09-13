@@ -1,0 +1,9 @@
+conversar_historia_vida_descubrir_motivadores   (15 pasos)   poblacion 299 = 203 grafo + 96 bandejas
+  vecinos POR ENCIMA de umbral: 0
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    trazar_plan_dieciocho_meses_aprendizaje              sim=0.291 fam=0.000 paso=0.462
+    elogiar_publico_criticar_privado_sus_tres_matices    sim=0.283 fam=0.000 paso=0.441
+    admitir_pronto_mal_desempenio_cuatro_razones         sim=0.274 fam=0.000 paso=0.430
+    calibrar_ascensos_evitar_politica                    sim=0.265 fam=0.000 paso=0.442
+    calibrar_decision_despido_documentarla               sim=0.262 fam=0.000 paso=0.468
+  segundos: 613.2

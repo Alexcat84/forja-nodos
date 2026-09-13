@@ -375,3 +375,17 @@ Reemplazalos por el guion corto normal y vuelve a intentarlo.
 [2026-09-12 20:14:11]   ultimo commit de ACTA_AUDITOR.md : 2026-09-12 17:40:36 (1789249236)
 [2026-09-12 20:14:11] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-12 20:14:11] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-12 21:33:49] extractor listo (USD 41.81688800000001), 4778s, intento 1 de 7
+[2026-09-12 21:33:52] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-12 21:33:52]   hereda 3 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-12 22:09:01] auditor ciego listo (USD 11.403277), 2109s, intento 1 de 7
+[2026-09-12 22:09:01]   herencia declarada: acta leida por su huella y los 3 heredados resueltos
+[2026-09-12 22:09:01]   apertura ciega sellada: 47153396dc9369bb930421ae0c3fde2bdf22f7ea
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] verde
+[2026-09-12 22:09:03] VUELTA 1 : AUDITOR (claude-opus-5)

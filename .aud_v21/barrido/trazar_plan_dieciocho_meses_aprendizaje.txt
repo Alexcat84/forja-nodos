@@ -1,0 +1,10 @@
+trazar_plan_dieciocho_meses_aprendizaje   (14 pasos)   poblacion 299 = 203 grafo + 96 bandejas
+  vecinos POR ENCIMA de umbral: 1
+    calibrar_decision_despido_documentarla               sim=0.371 fam=0.000 paso=0.437  <- similitud_texto
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    calibrar_decision_despido_documentarla               sim=0.371 fam=0.000 paso=0.437
+    admitir_pronto_mal_desempenio_cuatro_razones         sim=0.340 fam=0.000 paso=0.463
+    conversar_suenios_cruzar_habilidades                 sim=0.335 fam=0.000 paso=0.444
+    conversar_historia_vida_descubrir_motivadores        sim=0.333 fam=0.000 paso=0.471
+    sopesar_consejo_legal_despedir_humildad              sim=0.327 fam=0.000 paso=0.463
+  segundos: 491.7

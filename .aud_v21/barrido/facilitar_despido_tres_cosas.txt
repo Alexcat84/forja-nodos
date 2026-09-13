@@ -1,0 +1,9 @@
+facilitar_despido_tres_cosas   (11 pasos)   poblacion 299 = 203 grafo + 96 bandejas
+  vecinos POR ENCIMA de umbral: 0
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    aprender_resultados_vencer_dos_presiones             sim=0.329 fam=0.000 paso=0.448
+    recorrer_rueda_hacer_cosas_equipo                    sim=0.324 fam=0.125 paso=0.415
+    elogiar_trabajo_especifico_contexto                  sim=0.300 fam=0.000 paso=0.373
+    adaptar_escucha_cultura_ajena                        sim=0.285 fam=0.000 paso=0.399
+    crear_obligacion_disentir_equipo                     sim=0.283 fam=0.000 paso=0.441
+  segundos: 476.3
