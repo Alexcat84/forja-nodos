@@ -24965,7 +24965,7 @@ primero y ANTES de la primera linea de trabajo. **Ese commit movio el hash y no 
 | # | tarea | estado |
 |---:|---|---|
 | 1 | Los registros: la `ACTA 20` entera, la parada archivada del 12 sep con sus cuatro decisiones, las ocho sedes que cambiaron, y la cifra de lote que se me debe (`1.d`) | ~~ABIERTA~~ **CERRADA** (`O.2`) |
-| 2 | **`cap_10` ENTERO**: 13 candidatos bajo el techo de 15, con la vara del corte ya adjudicada y mi propia lectura de los pasos por delante (`P.17`) | **ABIERTA** |
+| 2 | **`cap_10` ENTERO**: 13 candidatos bajo el techo de 15, con la vara del corte ya adjudicada y mi propia lectura de los pasos por delante (`P.17`) | ~~ABIERTA~~ **CERRADA** (`O.3`). **13 candidatos, 194 pasos, frontera cerrada al digito, y 22 cuentas mias atribuidas al libro cazadas y retiradas en el acto** |
 | 3 | Las **tres aristas `D.37` de `L173`**, en la misma vuelta en que se escriban sus partes | **ABIERTA** |
 | 4 | **El par de la lupa por lectura**: `cap_10` `L225` a `L251` contra `reconocer_recompensar_gente_estable` | **ABIERTA** |
 
@@ -25299,3 +25299,26 @@ decision**, y por eso la escribo arriba y con las dos cifras.
 > **No puedo saber cuantas cuentas de esta especie hay en los 856 pasos de `cap_00` a `cap_09`
 > sin correr el ancho sobre ellos, y no lo he corrido.** Lo declaro como lo que es: **una
 > sospecha con su instrumento ya escrito**, no una cifra. Y va en `O.6` como propuesta.
+
+### O.3.e. **LAS TRES ESPECIES DE PUENTE DEL LOTE 1, BUSCADAS UNA A UNA: CERO** (`EXTRACTOR.md` 15.4)
+
+*Las cuentas de `O.3.d` son una especie que la casa ya conocia pero que no estaba en la lista de
+las tres. **Las tres de la lista las busco aparte**, porque `15.4` dice que son las que se vuelven
+a escribir sin darse cuenta: **el destinatario**, **el periodo** y **el responsable**.*
+
+    $ python .t1_v21/puentes21.py | tail -2
+      marcas de las tres especies encontradas en los 194 pasos: 9
+
+**LAS NUEVE RELEIDAS CONTRA SU LINEA. NINGUNA ES PUENTE, Y DIGO POR QUE UNA A UNA:**
+
+| paso | la marca | el veredicto, con su linea |
+|---|---|---|
+| `P8` 2 | *metas a largo plazo* | **del texto.** `L63`: *long-term goals*. Y no es un plazo que yo ponga: es **la palabra que el texto critica** |
+| `P9` 11 | *quien hace que y **para cuando*** | **del texto, literal.** `L81`: *note who does what **by when***. Es el propio libro el que delega el plazo en quien hace la lista, y transcribirlo es lo contrario de inventarlo |
+| `P13 a P17` 2 | *una vez al anio* | **del texto.** `L99`: *Once a year* |
+| `P19 y P21` 26 | *para cuando no tienes tiempo* | **falso positivo de mi instrumento**: es *para cuando* idiomatico, no un plazo |
+| `P28` 1 | *alrededor de un mes despues* | **del texto.** `L199`: *about a month after I've fired them* |
+| `P30` 3 | *dos veces al anio* | **del texto.** `L209`: *twice a year*, **y dicho del comite de Google**, no como instruccion para el lector |
+| `P30` 17 | *la salida para cuando nadie quiere* | **falso positivo**, igual que el anterior |
+
+> ### **CERO MARCAS DE DESTINATARIO Y CERO DE RESPONSABLE EN LOS 194 PASOS.** Las dos especies mas caras del lote 1 no aparecen ni una vez, y no es suerte: **los trece `resumen_teorico` llevan escrito lo que el texto NO dice**, y en ocho de los trece lo que no dice es exactamente **un destinatario, un plazo o un responsable**.

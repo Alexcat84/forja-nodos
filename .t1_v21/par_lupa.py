@@ -12,6 +12,13 @@ usa por dentro, con los umbrales de `config/umbrales.json` cargados por el mismo
 cargador. Cero escrituras.
 """
 import json
+import os
+import sys
+
+# LA RAIZ DEL REPO AL FRENTE DEL CAMINO: sin esto `python .t1_v21/par_lupa.py`
+# falla con `No module named src`, y una ruta que publico como prueba tiene que
+# correr tal cual esta escrita (ACTA 20 7.B).
+sys.path.insert(0, os.getcwd())
 
 from src import aduana
 from src import config as modulo_config

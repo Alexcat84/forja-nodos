@@ -1,0 +1,6 @@
+umbrales de esta corrida: {"dominios_nucleo": [], "maximo_vecinos_reportados": 25, "solo_dominio_y_nucleo": false, "umbral_familia_id": 0.3, "umbral_paso_contra_nodo": 0.6, "umbral_similitud_texto": 0.35}
+
+| candidato | vecino | similitud_texto | familia_id | paso_contra_nodo | la levanta alguna? |
+|---|---|---:|---:|---:|---|
+| `reconocer_excelencia_trayectoria_gradual` | `reconocer_recompensar_gente_estable` | 0.257 | 0.143 | 0.472 | NO, ninguna |
+| `sopesar_consejo_legal_despedir_humildad` | `despedir_persona_franqueza_radical` | 0.228 | 0.125 | 0.442 | NO, ninguna |
