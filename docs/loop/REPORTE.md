@@ -28508,7 +28508,7 @@ sigue siendo mio** y se corre en el mismo acto de escribir cada candidato (`EXTR
 |---:|---|---|
 | 1 | **PRIMERA Y SIN SOLAPE**: los registros, las dos cifras que acumularon, las tres remisiones a `Q.6`, el remedio de escritura y las cinco adjudicaciones | ~~ABIERTA~~ **CERRADA** (`R.2`). **Las dos cifras remedidas con instrumento propio y corregidas sin borrar, las tres remisiones reapuntadas, y UNA PARADA declarada**: el remedio 3 manda escribir en `docs/BANCO_DE_REGLAS.md`, que no es mi sede |
 | 2 | **La fusion que el `REPITE` de `L51` promete y no se hizo**, y el veredicto que `Q.6` se llevo | ~~ABIERTA~~ **CERRADA** (`R.3`). **Las TRES cosas que `L51` anade absorbidas por el donante (`P5`, `P6`, `P7`), frontera de unidad publicada, aduana vuelta a correr: `ENTRARIA`, `0 CAERIA`**, y el veredicto del par escrito con su razon |
-| 3 | **Las cuatro aristas que el libro declara en `L113`** y el reparo de las aristas 49 a 52 | ABIERTA |
+| 3 | **Las cuatro aristas que el libro declara en `L113`** y el reparo de las aristas 49 a 52 | ~~ABIERTA~~ **CERRADA** (`R.4`). **Las cuatro se sostienen y la deuda sube de `53` a `57`**, pero **las mido `D.29` y no `D.37`**, con el `grep -c` que lo decide pegado. Reparo de las 49 a 52 escrito con su regla de desempate |
 | 4 | **`cap_14` entero**, la ultima unidad sin minar del lote 4 | ABIERTA |
 | 5 | **El cierre del lote 4 y la insercion `D.39`**, si y solo si `cap_14` cierra el lote | ABIERTA |
 
@@ -28820,3 +28820,182 @@ apertura ciega de tres piezas** despues de releer `L21` y `L23` con `EXTRACTOR.m
 > viejo, **la aduana vuelta a correr con `0 CAERIA`**, el veredicto del par escrito con su razon, y
 > **una promesa de sede corregida antes de hacerla**, porque el par solo tiene un extremo que sea
 > nodo.
+
+---
+
+## R.4. TAREA 3: **LAS CUATRO ARISTAS QUE EL LIBRO DECLARA EN `L113`**, Y EL REPARO DE LAS 49 A 52. CERRADA
+
+*El auditor me deja expresamente la especie y la madre: **no me las adjudica, las mido yo.** Y la
+medicion me lleva a una especie distinta de la que su encargo apunta. **Va entera y con su cifra.***
+
+### R.4.a. LAS TRES LINEAS QUE MANDAN AQUI, **CON SU `sed` PEGADO AL LADO** (`D.35`)
+
+Salida de los cuatro comandos, guardada en `.v24/citas_tarea3.txt`:
+
+    $ sed -n "27p" fuentes/scott_radical_candor/cap_09.md
+    Here are some tips/techniques I've seen work to get the conversation flowing:
+
+    $ grep -c "the four\|four tips\|four elements" fuentes/scott_radical_candor/cap_09.md
+    0
+
+    $ sed -n "113p" fuentes/scott_radical_candor/cap_13.md
+    We hope a story and some research better explain why you should prove you can take it before
+    you dish out Radical Candor. But how can you solicit criticism? We'd like to go into more
+    detail on each of the four tips for soliciting criticism offered in the book.
+
+    $ sed -n "237p" fuentes/scott_radical_candor/cap_13.md
+    Now that you've practiced the four elements of soliciting criticism, coming up with a go-to
+    question, embracing the discomfort, listening with the intent to understand, and making
+    listening tangible by rewarding the candor, you're ready to put the four things together and
+    make soliciting feedback a habit.
+
+**DOS AVISOS SOBRE LO PEGADO, para que nadie lo lea como una cita literal exacta:** el libro escribe
+`L237` con un guion largo antes de `coming up` y otro antes de `you're ready`, **y aqui van dos
+comas**, porque el barrido de estilo de esta casa tumba el guion largo. La transformacion es
+`sed "s/<guion largo>/, /g"` y esta escrita en el propio fichero de citas. **Y el apostrofo es el
+recto y no el tipografico, por lo mismo.** Ni una palabra cambia.
+
+### R.4.b. **EL AUDITOR TIENE RAZON EN EL FONDO Y YO MIDO OTRA ESPECIE.** La razon, primero
+
+**LO QUE EL AUDITOR ACIERTA, y lo escribo antes que mi objecion:** `L113` dice *offered in the book*,
+el libro es el capitulo seis, que en esta casa es `cap_09`, **y los cuatro elementos YA VIVEN ahi**,
+en los pasos `P7`, `P8`, `P12` y `P14` de `abrazar_incomodidad_arrancar_critica_equipo`. Mis cuatro
+piezas de `cap_13` despliegan esos cuatro pasos y **ninguna de esas cuatro aristas estaba en mi deuda
+de `Q.7`**, cuyas madres son `desplegar_plan`, `contar_historias_propias`, `mejorar_consciencia`,
+`pedir_critica_primero` y `desplegar_marco`: **ni una de `cap_09`.** **La deuda estaba coja y el
+auditor la vio.**
+
+**Y AHORA LO QUE MIDO Y NO COINCIDE: LA ESPECIE NO ES `D.37`, ES `D.29`.**
+
+`D.37` pide que **la cabeza** diga cuantas partes tiene. La cabeza de estas cuatro aristas es
+`abrazar_incomodidad_arrancar_critica_equipo`, cuya unidad de origen es `cap_09`. **Y `cap_09` no
+escribe la cuenta en ningun sitio:**
+
+| lo que mido | instrumento | resultado |
+|---|---|---:|
+| la linea que abre el inventario de `cap_09` | `sed -n "27p"` | *Here are some tips/techniques*, **sin cuenta** |
+| la cuenta de cuatro en toda la unidad `cap_09` | `grep -c "the four\|four tips\|four elements"` | **0** |
+
+**LA CORRECCION DEL TITULAR DEL 11 SEP 2026 ES LITERAL Y VA CONTRA LA LECTURA COMODA:** *si el texto
+solo enumera sin decir cuantas, esto NO es `D.37`: es `D.29`, y entonces la arista se declara igual
+pero con razon escrita que la sostenga, porque ahi si hay algo que argumentar.*
+
+**DONDE SI ESTA LA CUENTA, Y POR QUE NO SIRVE PARA ESTA CABEZA:** la cuenta `four` esta en `L113` y
+las cuatro nombradas en `L237`, **las dos lineas de `cap_13`**, que es la unidad de la OTRA cabeza,
+`pedir_critica_primero_crear_seguridad_psicologica`, y cuyo `P17` ya carga esa enumeracion. **Por eso
+las aristas 45 a 48 SI son `D.37` y estas cuatro no lo son.** Importar la cuenta de una unidad a una
+cabeza que no la escribe seria estirar `D.37`, **y ninguna vuelta la estrecha ni la ensancha sin
+correccion declarada del fundador** (`EXTRACTOR.md` 9.1).
+
+> **LO QUE ESTO NO CAMBIA, Y ES LO QUE IMPORTA: LAS CUATRO ARISTAS SE SOSTIENEN Y SE DECLARAN.** La
+> diferencia entre `D.37` y `D.29` **no es si la arista existe: es quien la sostiene.** En `D.37` la
+> sostiene la cuenta escrita; en `D.29` la sostiene mi lectura, **y por eso cada una lleva su razon
+> abajo.** El trabajo no baja: sube.
+>
+> **Y LO MARCO COMO DISCUTIBLE ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8), porque me estoy
+> apartando de la lectura que apunta mi encargo: **es el discutible 1 de esta vuelta** (`R.11`).
+
+### R.4.c. LAS CUATRO, MEDIDAS Y DECLARADAS. **LA TABLA SE IMPRIME DEL FICHERO**
+
+Salida de `python .v24/aristas_v24.py`, guardada en `.v24/salida_aristas_v24.txt`:
+
+| # | madre | hijo | `--paso` | especie | pasos del hijo | pasos de la madre |
+|---:|---|---|---:|---|---:|---:|
+| 54 | `abrazar_incomodidad_arrancar_critica_equipo` | `elegir_pregunta_recurrente_pedir_critica` | **7** | `D.29` | **24** | **20** |
+| 55 | `abrazar_incomodidad_arrancar_critica_equipo` | `abrazar_incomodidad_silencio_contar_seis` | **8** | `D.29` | **12** | **20** |
+| 56 | `abrazar_incomodidad_arrancar_critica_equipo` | `escuchar_entender_critica_dominar_defensa` | **12** | `D.29` | **13** | **20** |
+| 57 | `abrazar_incomodidad_arrancar_critica_equipo` | `premiar_franqueza_hacer_escucha_tangible` | **14** | `D.29` | **20** | **20** |
+
+| # | el elemento que `L237` nombra | el paso de la madre, impreso entero de su fichero |
+|---:|---|---|
+| 54 | dar con una pregunta recurrente | `Ten una pregunta de cabecera. El texto da la que su autora adopto de Fred Kofman, autor de Conscious Business y su entrenador en Google: que podria hacer o dejar de hacer que hiciera mas facil trabajar conmigo. Si esas palabras no te salen solas, busca las que si, y cuenta con que esa pregunta de apertura solo esta pensada para poner las cosas en marcha.` |
+| 55 | abrazar la incomodidad | `Abraza la incomodidad. Preparate de antemano para la respuesta que el texto dice que llega casi siempre, que todo va bien y gracias por preguntar, y comprometete a seguir en la conversacion hasta tener una respuesta genuina. No asientas ni la tranquilices diciendo que te alegra oirlo.` |
+| 56 | escuchar con intencion de entender | `Escucha con intencion de entender y no de responder. No empieces a criticar la critica ni a decirle a la otra persona que no ha sido radicalmente franca: repite lo que dijo para asegurarte de haberlo entendido en vez de defenderte, y aclara la critica sin debatirla. El texto da la frase, y dice que si te parece demasiado programatica busques otra: asi que lo que te oigo decir es.` |
+| 57 | hacer tangible la escucha premiando la franqueza | `Premia la critica para conseguir mas. Si estas de acuerdo con ella, haz el cambio cuanto antes; y si el cambio necesario va a llevar tiempo, haz algo visible que demuestre que lo estas intentando. El texto lo ilustra con la goma elastica que la autora se puso en la muneca y que pidio a su socio Russ, y despues a todo su equipo, que le chascaran cada vez que interrumpiera.` |
+
+**Y LA RAZON DE CADA UNA, ESCRITA UNA A UNA, que es lo que `D.29` exige y `D.37` no:**
+
+| # | la razon, y por que la lectura la sostiene |
+|---:|---|
+| **54** | el `P7` de la madre **nombra** la pregunta de cabecera, da la de Fred Kofman y dice que *esa pregunta de apertura solo esta pensada para poner las cosas en marcha*: **la madre nombra y deja el trabajo sin hacer.** El hijo lo hace en **24 pasos**, con los cuatro atributos de una buena pregunta y la prueba de campo con un companiero de confianza, **que la madre no tiene en ningun paso** |
+| **55** | el `P8` de la madre **nombra** abrazar la incomodidad y da la respuesta tipica (*todo va bien y gracias por preguntar*). El hijo despliega en **12 pasos** el aguante del silencio contando hasta seis, **y la madre lo toca de pasada en su `P9`**: el hijo tiene el procedimiento, la madre tiene la linea |
+| **56** | el `P12` de la madre **nombra** escuchar con intencion de entender y da una frase. El hijo pone en **13 pasos** como se domina la propia defensa, con la practica de escuchar tres minutos sin interrumpir, **que no esta en ninguno de los 20 pasos de la madre** |
+| **57** | el `P14` de la madre **nombra** premiar la critica y lo ilustra con la goma elastica. El hijo pone en **20 pasos** como se hace tangible la escucha, con la lista de criticas recibidas y lo que se hizo con cada una contado en publico, **que la madre no tiene** |
+
+> **LAS CUATRO PASAN LA VARA DE `D.29` POR EL MISMO SITIO: LA MADRE NOMBRA Y NO DESPLIEGA.** Es la
+> vara de `EXTRACTOR.md` 9 leida al reves: *una linea que tarda siete pasos en ejecutarse es un
+> procedimiento nombrado en una linea*. **La madre tiene la linea; el hijo tiene los pasos.**
+>
+> **Y `LA ARISTA NO EXCULPA` CORTA EN LOS DOS SENTIDOS, que es lo que el encargo me recuerda:** el
+> cable no funde a los cuatro hijos con la madre, y no tener el cable no los separaba. **Mis
+> discutibles 7 y 8 de la vuelta 23 se sostienen y los cuatro siguen siendo nodos propios.**
+
+### R.4.d. EL REPARO DE LAS ARISTAS 49 A 52: **POR QUE ESE HIJO Y NO OTRO DE SU FAMILIA**
+
+*Es mi discutible 11 de la vuelta 23 contestado. La `ACTA 23` adjudica que **las cuatro se
+sostienen** y que **el dia del cableado cada una lleva escrito por que ESE hijo**. Va hoy y no el dia
+del cableado, para que no dependa de que el cableado ocurra.*
+
+**MI PROPIO CONTRAARGUMENTO, REPETIDO PRIMERO PORQUE ES EL QUE HAY QUE CONTESTAR:** *Dos, da elogio*
+nombra una **ETAPA**, y en la bandeja hay **cuatro** procedimientos de elogio. Una lectura que
+establece la relacion con una familia de cuatro **no ha terminado de establecerla con uno.**
+
+Salida de `python .v24/reparo_49_52.py`, guardada en `.v24/salida_reparo_49_52.txt`:
+
+| # | `--paso` | el paso de la madre, impreso | el hijo elegido | unidad | pasos |
+|---:|---:|---|---|---|---:|
+| 49 | **2** | `Dos, da elogio.` | `dar_elogio_disciplina_igual_critica` | `cap_13` | **20** |
+| 50 | **3** | `Tres, da critica.` | `criticar_trabajo_evitar_desanimo` | `cap_05` | **14** |
+| 51 | **4** | `Cuatro, mide la critica y ajusta.` | `medir_critica_respuesta_oyente_brujula` | `cap_13` | **33** |
+| 52 | **5** | `Cinco, fomenta el elogio y la critica entre los demas.` | `fomentar_guia_reciproca_companieros` | `cap_09` | **13** |
+
+| # | quien compite por esa etapa | unidad | pasos | su condicion de activacion, impresa del fichero |
+|---:|---|---|---:|---|
+| 49 | **ELEGIDO** `dar_elogio_disciplina_igual_critica` | `cap_13` | **20** | Cuando acabas de hacer el trabajo duro de pedir critica y te tienta pasar directamente a dar la tuya, o cuando vas a elogiar a alguien y no has comprobado los hechos. |
+| 49 | **rival** `elogiar_trabajo_especifico_contexto` | `cap_05` | **7** | Cuando vas a elogiar el trabajo de alguien, y sobre todo cuando vas a hacerlo delante de otras personas. |
+| 49 | **rival** `equilibrar_elogio_critica_equipo` | `cap_05` | **9** | Cuando estas decidiendo cuanto elogio y cuanta critica dar a tu equipo, y cada vez que te sientas tentado de aplicar una proporcion o de envolver una critica en elogios. |
+| 49 | **rival** `elogiar_publico_criticar_privado_sus_tres_matices` | `cap_09` | **9** | Cuando vas a decir algo delante de mas gente y tienes que decidir si eso es una correccion que puede ir en publico o una critica que tiene que ir en privado. |
+| 50 | **ELEGIDO** `criticar_trabajo_evitar_desanimo` | `cap_05` | **14** | Cuando vas a decirle a alguien que su trabajo no es bastante bueno y no quieres que la critica lo desanime ni que se lea como un ataque a la persona. |
+| 50 | **rival** `dar_critica_inmediata_ayuda_tangible` | `cap_05` | **10** | Cuando alguien de tu equipo acaba de hacer algo que en conjunto ha salido bien y aun asi hay una cosa concreta que tiene que arreglar. |
+| 50 | **rival** `elogiar_publico_criticar_privado_sus_tres_matices` | `cap_09` | **9** | Cuando vas a decir algo delante de mas gente y tienes que decidir si eso es una correccion que puede ir en publico o una critica que tiene que ir en privado. |
+| 51 | **ELEGIDO** `medir_critica_respuesta_oyente_brujula` | `cap_13` | **33** | Cuando estas dando una critica y tienes delante la respuesta del otro, y tienes que decidir que hacer con ella. |
+| 51 | **rival** `medir_guia_propia_pegatinas_marco` | `cap_09` | **13** | Cuando ya estas dando guia y no sabes como esta cayendo, que es lo que el texto plantea como el problema de medir en el oido del oyente y no en la boca del hablante. |
+| 52 | **ELEGIDO** `fomentar_guia_reciproca_companieros` | `cap_09` | **13** | Cuando quieres que la gente de tu equipo se de guia entre si, y la salida facil es comprar una herramienta que recoja textos y los reparta. |
+| 52 | **rival** `pedir_critica_equipo_premiarla` | `cap_05` | **11** | Cuando vas a empezar a construir una cultura de franqueza radical y toca la primera fase, que es que te critiquen a ti, y tambien cada vez que te reunas con un equipo que no te dice nada. |
+
+**LA REGLA DE DESEMPATE QUE SACO DE ESA TABLA, y la escribo antes de aplicarla para que se pueda
+juzgar:** cuando el paso de la madre nombra una **ETAPA de una serie ordenada**, gana el hijo **cuya
+condicion de activacion sea la de la etapa entera y no la de un caso dentro de ella**. La unidad de
+origen ayuda pero **no decide**, y esta tabla lo prueba sola: **dos de los cuatro hijos elegidos son
+de otra unidad que la madre.**
+
+| # | por que ESE hijo, con la condicion de activacion delante |
+|---:|---|
+| **49** | `dar_elogio_disciplina_igual_critica` es **el unico de los cuatro cuya condicion encadena con la etapa anterior**: *cuando acabas de hacer el trabajo duro de pedir critica y te tienta pasar directamente a dar la tuya*. **Eso es literalmente el paso 1 seguido del paso 2 del orden de operaciones.** Los otros tres activan en otra cosa: al elogiar un trabajo concreto (`elogiar_trabajo_especifico_contexto`), al decidir la proporcion (`equilibrar_elogio_critica_equipo`) o al decidir publico contra privado (`elogiar_publico_criticar_privado_sus_tres_matices`). **Son procedimientos de elogio; ninguno es LA ETAPA elogio del orden** |
+| **50** | `criticar_trabajo_evitar_desanimo` activa en el caso **general** de la etapa: *cuando vas a decirle a alguien que su trabajo no es bastante bueno*. Su rival `dar_critica_inmediata_ayuda_tangible` activa en un caso **estrecho** dentro de ella (*cuando alguien acaba de hacer algo que en conjunto ha salido bien y aun asi hay una cosa concreta que arreglar*), y `elogiar_publico_criticar_privado_sus_tres_matices` decide **el medio**, no la etapa. **La etapa es el caso general, y el hijo que la cubre entera es uno solo** |
+| **51** | `medir_critica_respuesta_oyente_brujula` activa exactamente en lo que el paso pide, *mide la critica y ajusta*: **tienes delante la respuesta del otro y tienes que decidir que hacer con ella.** Su rival `medir_guia_propia_pegatinas_marco` mide **tu reparto de guia a lo largo del tiempo** con pegatinas sobre el marco, que es una medida del que habla y no de una critica concreta. **La etapa dice `mide la critica`, en singular, y `ajusta` en el acto** |
+| **52** | `fomentar_guia_reciproca_companieros` es **el unico que tiene por objeto la guia ENTRE OTROS**, que es lo que el paso dice: *fomenta el elogio y la critica entre los demas*. Su rival `pedir_critica_equipo_premiarla` tiene por objeto **la critica hacia ti**, que es la etapa 1 y no la 5. **La diferencia no es de matiz: es de a quien va dirigida la guia** |
+
+> **LAS CUATRO SE SOSTIENEN, Y AHORA CON SU RAZON DE UNO Y NO DE FAMILIA.** No estrecho `D.29` ni la
+> ensancho: `D.29` ya pedia que **la lectura** estableciera la relacion, y esto es terminar de
+> establecerla.
+>
+> **LO QUE ESTA TABLA CUESTA ADMITIR, Y LO ADMITO: el rival de la 50 esta mas cerca de lo que me
+> gustaria.** `dar_critica_inmediata_ayuda_tangible` tambien es dar critica, y su unidad es la misma
+> que la del elegido. **Lo separo por amplitud de la condicion y no por otra cosa**, y por eso **va
+> marcado como discutible 2** (`R.11`).
+
+### R.4.e. LO QUE ESTA TAREA LE HACE A LA DEUDA
+
+| | antes | hoy |
+|---|---:|---:|
+| aristas declaradas y no cableadas | **53** (`Q.7` de la vuelta 23) | **57** |
+| de ellas anadidas hoy, todas `D.29` | | **4** |
+
+**La deuda entera, las 57 con su paso impreso y su razon, se publica en `R.7` sin resumirla**, que es
+la orden del encargo y la costumbre que la vuelta 23 dejo puesta.
+
+> ## **TAREA 3 CERRADA.** Las cuatro aristas medidas, declaradas y sostenidas, **con una especie
+> distinta de la que mi encargo apuntaba y con la medicion que lo decide pegada** (`grep -c` da `0`
+> en `cap_09`); el reparo de las 49 a 52 escrito con su regla de desempate y su condicion de
+> activacion impresa del fichero; **y dos discutibles marcados antes de saber si acierto.**

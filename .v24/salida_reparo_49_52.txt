@@ -1,0 +1,20 @@
+| # | `--paso` | el paso de la madre, impreso | el hijo elegido | unidad | pasos |
+|---:|---:|---|---|---|---:|
+| 49 | **2** | `Dos, da elogio.` | `dar_elogio_disciplina_igual_critica` | `cap_13` | **20** |
+| 50 | **3** | `Tres, da critica.` | `criticar_trabajo_evitar_desanimo` | `cap_05` | **14** |
+| 51 | **4** | `Cuatro, mide la critica y ajusta.` | `medir_critica_respuesta_oyente_brujula` | `cap_13` | **33** |
+| 52 | **5** | `Cinco, fomenta el elogio y la critica entre los demas.` | `fomentar_guia_reciproca_companieros` | `cap_09` | **13** |
+
+| # | quien compite por esa etapa | unidad | pasos | su condicion de activacion, impresa del fichero |
+|---:|---|---|---:|---|
+| 49 | **ELEGIDO** `dar_elogio_disciplina_igual_critica` | `cap_13` | **20** | Cuando acabas de hacer el trabajo duro de pedir critica y te tienta pasar directamente a dar la tuya, o cuando vas a elogiar a alguien y no has comprobado los hechos. |
+| 49 | **rival** `elogiar_trabajo_especifico_contexto` | `cap_05` | **7** | Cuando vas a elogiar el trabajo de alguien, y sobre todo cuando vas a hacerlo delante de otras personas. |
+| 49 | **rival** `equilibrar_elogio_critica_equipo` | `cap_05` | **9** | Cuando estas decidiendo cuanto elogio y cuanta critica dar a tu equipo, y cada vez que te sientas tentado de aplicar una proporcion o de envolver una critica en elogios. |
+| 49 | **rival** `elogiar_publico_criticar_privado_sus_tres_matices` | `cap_09` | **9** | Cuando vas a decir algo delante de mas gente y tienes que decidir si eso es una correccion que puede ir en publico o una critica que tiene que ir en privado. |
+| 50 | **ELEGIDO** `criticar_trabajo_evitar_desanimo` | `cap_05` | **14** | Cuando vas a decirle a alguien que su trabajo no es bastante bueno y no quieres que la critica lo desanime ni que se lea como un ataque a la persona. |
+| 50 | **rival** `dar_critica_inmediata_ayuda_tangible` | `cap_05` | **10** | Cuando alguien de tu equipo acaba de hacer algo que en conjunto ha salido bien y aun asi hay una cosa concreta que tiene que arreglar. |
+| 50 | **rival** `elogiar_publico_criticar_privado_sus_tres_matices` | `cap_09` | **9** | Cuando vas a decir algo delante de mas gente y tienes que decidir si eso es una correccion que puede ir en publico o una critica que tiene que ir en privado. |
+| 51 | **ELEGIDO** `medir_critica_respuesta_oyente_brujula` | `cap_13` | **33** | Cuando estas dando una critica y tienes delante la respuesta del otro, y tienes que decidir que hacer con ella. |
+| 51 | **rival** `medir_guia_propia_pegatinas_marco` | `cap_09` | **13** | Cuando ya estas dando guia y no sabes como esta cayendo, que es lo que el texto plantea como el problema de medir en el oido del oyente y no en la boca del hablante. |
+| 52 | **ELEGIDO** `fomentar_guia_reciproca_companieros` | `cap_09` | **13** | Cuando quieres que la gente de tu equipo se de guia entre si, y la salida facil es comprar una herramienta que recoja textos y los reparta. |
+| 52 | **rival** `pedir_critica_equipo_premiarla` | `cap_05` | **11** | Cuando vas a empezar a construir una cultura de franqueza radical y toca la primera fase, que es que te critiquen a ti, y tambien cada vez que te reunas con un equipo que no te dice nada. |
