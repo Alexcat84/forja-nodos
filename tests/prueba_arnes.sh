@@ -261,6 +261,60 @@ comprobar "se salta el turno del extractor"   "SE SALTA EL TURNO DEL EXTRACTOR" 
 comprobar_no "el extractor NO corre"          "extractor listo"             "$salida"
 comprobar "el auditor SI corre"               "auditor listo"               "$salida"
 
+# --------------------------------------------------------------- escenario 5b
+echo ""
+echo "ESCENARIO 5b: EL CASO POSITIVO DE LA MEDIDA. El REPORTE es mas nuevo que el"
+echo "              ACTA, pero el ultimo turno que corrio el arnes fue el del"
+echo "              AUDITOR: el reporte se toco FUERA de un turno (una correccion"
+echo "              del fundador, una regeneracion de tabla por D.41). Paso el"
+echo "              13 sep 2026 y costo un turno entero auditando una vuelta que"
+echo "              ya tenia acta."
+taller="$(montar_banco e5b)"
+echo "acta vieja" > "$taller/docs/loop/ACTA_AUDITOR.md"
+git -C "$taller" add -A >/dev/null 2>&1
+git -C "$taller" commit -q -m "acta de la vuelta anterior" >/dev/null 2>&1
+sleep 1
+# LOS DOS TESTIGOS DEL ARNES, con el del AUDITOR escrito DESPUES: es su registro
+# propio de que el ultimo turno que corrio fue una auditoria.
+echo '{"result": "mensaje del extractor"}' > "$taller/docs/loop/ultimo_extractor.json"
+sleep 1
+echo '{"result": "mensaje del auditor"}' > "$taller/docs/loop/ultimo_auditor.json"
+# Y EL REPORTE TOCADO DESPUES DE TODO, fuera de cualquier turno.
+echo "reporte con una tabla regenerada a mano" > "$taller/docs/loop/REPORTE.md"
+git -C "$taller" add -A >/dev/null 2>&1
+git -C "$taller" commit -q -m "correccion del fundador sobre el reporte" >/dev/null 2>&1
+git -C "$taller" push -q origin bucle >/dev/null 2>&1
+salida="$(FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "no se deja enganiar por la fecha"  "ROL INICIAL POR MEDICION: EXTRACTOR" "$salida"
+comprobar "y dice exactamente por que"        "el reporte se toco FUERA de un turno" "$salida"
+comprobar "pega las dos fechas de los testigos" "testigo del auditor escrito en" "$salida"
+comprobar "el extractor SI corre"             "extractor listo"             "$salida"
+comprobar_no "no se salta el turno del extractor" "SE SALTA EL TURNO DEL EXTRACTOR" "$salida"
+
+# --------------------------------------------------------------- escenario 5c
+echo ""
+echo "ESCENARIO 5c: EL CASO NEGATIVO, y sin el 5b no probaria nada. Con los DOS"
+echo "              testigos presentes y el del EXTRACTOR escrito el ultimo, la"
+echo "              medida de siempre manda: hay una vuelta sin auditar delante."
+taller="$(montar_banco e5c)"
+echo "acta vieja" > "$taller/docs/loop/ACTA_AUDITOR.md"
+git -C "$taller" add -A >/dev/null 2>&1
+git -C "$taller" commit -q -m "acta de la vuelta anterior" >/dev/null 2>&1
+sleep 1
+echo '{"result": "mensaje del auditor"}' > "$taller/docs/loop/ultimo_auditor.json"
+sleep 1
+echo '{"result": "mensaje del extractor"}' > "$taller/docs/loop/ultimo_extractor.json"
+echo "reporte nuevo, sin auditar" > "$taller/docs/loop/REPORTE.md"
+git -C "$taller" add -A >/dev/null 2>&1
+git -C "$taller" commit -q -m "reporte que nadie audito" >/dev/null 2>&1
+git -C "$taller" push -q origin bucle >/dev/null 2>&1
+salida="$(FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la medida de siempre manda"        "ROL INICIAL POR MEDICION: AUDITOR" "$salida"
+comprobar "y los testigos lo confirman"       "el ultimo turno NO fue el del auditor" "$salida"
+comprobar "se salta el turno del extractor"   "SE SALTA EL TURNO DEL EXTRACTOR" "$salida"
+
 # ---------------------------------------------------------------- escenario 6
 echo ""
 echo "ESCENARIO 6: FALLO INSTANTANEO. El turno vuelve sin costo y en cero segundos."

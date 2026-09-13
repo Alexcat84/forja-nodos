@@ -223,6 +223,15 @@ fecha_ultimo_commit() { # $1 = ruta. Imprime segundos unix, o 0 si nunca se comm
   printf '%s' "${ct:-0}"
 }
 
+fecha_modificacion() { # $1 = ruta. Segundos unix del fichero, 0 si no esta.
+  # POR QUE mtime Y NO LA FECHA DEL COMMIT: los dos testigos del arnes se
+  # commitean JUNTOS, en el mismo commit de artefactos, asi que sus fechas de
+  # commit son identicas y no distinguen nada. Lo que si distingue es cuando los
+  # ESCRIBIO el arnes, que es al acabar cada turno.
+  [ -f "$1" ] || { printf '0'; return 0; }
+  date -r "$1" +%s 2>/dev/null || stat -c %Y "$1" 2>/dev/null || printf '0'
+}
+
 fecha_legible() { # $1 = segundos unix
   [ "$1" = "0" ] && { printf 'nunca'; return 0; }
   date -d "@$1" '+%Y-%m-%d %H:%M:%S' 2>/dev/null || printf '%s' "$1"
@@ -250,8 +259,40 @@ decidir_rol_inicial() { # fija ROL_INICIAL. No imprime a stdout: escribe al log.
   ct_acta="$(fecha_ultimo_commit "$LOOP/ACTA_AUDITOR.md")"
 
   if [ "$ct_reporte" -gt "$ct_acta" ]; then
+    # EL REPORTE ES MAS NUEVO QUE EL ACTA. Casi siempre significa lo que parece:
+    # hay una vuelta sin auditar delante. PERO NO SIEMPRE, y el 13 sep 2026 esta
+    # medida se equivoco: una sesion del fundador REGENERO una tabla del reporte
+    # (D.41) despues de que el acta estuviera escrita, y con eso la medida mandaba
+    # al auditor a auditar una vuelta QUE YA TENIA ACTA. Un turno entero gastado,
+    # y un acta de mas auditando nada.
+    #
+    # LA PREGUNTA DE VERDAD NO ES QUE FICHERO ES MAS NUEVO: ES QUIEN CORRIO EL
+    # ULTIMO TURNO. Y de eso el arnes tiene registro propio y de nadie mas: sus
+    # dos testigos, que escribe el al acabar cada turno y que no edita ningun
+    # modelo (D.33). Si el ultimo turno que corrio fue el del AUDITOR, entonces
+    # nadie ha extraido desde que se audito, y el reporte se toco FUERA de un
+    # turno.
+    #
+    # LA COMPROBACION SOLO CORRIGE EN ESA DIRECCION Y SOLO CON PRUEBA DELANTE:
+    # si falta cualquiera de los dos testigos, no hay prueba y manda la medida
+    # de siempre. Una guarda que adivina donde no sabe es peor que la que fallo.
+    local mt_extractor mt_auditor
+    mt_extractor="$(fecha_modificacion "$LOOP/ultimo_extractor.json")"
+    mt_auditor="$(fecha_modificacion "$LOOP/ultimo_auditor.json")"
+    if [ "$mt_extractor" -gt 0 ] && [ "$mt_auditor" -gt "$mt_extractor" ]; then
+      ROL_INICIAL="extractor"
+      log "ROL INICIAL POR MEDICION: EXTRACTOR. El REPORTE es mas nuevo que el ACTA, PERO el ultimo turno que corrio el arnes fue el del AUDITOR: el reporte se toco FUERA de un turno y no hay vuelta sin auditar."
+      log "  ultimo commit de REPORTE.md      : $(fecha_legible "$ct_reporte") ($ct_reporte)"
+      log "  ultimo commit de ACTA_AUDITOR.md : $(fecha_legible "$ct_acta") ($ct_acta)"
+      log "  testigo del extractor escrito en : $(fecha_legible "$mt_extractor") ($mt_extractor)"
+      log "  testigo del auditor escrito en   : $(fecha_legible "$mt_auditor") ($mt_auditor)"
+      return 0
+    fi
     ROL_INICIAL="auditor"
     log "ROL INICIAL POR MEDICION: AUDITOR. El REPORTE es mas nuevo que el ACTA, asi que la vuelta anterior quedo SIN AUDITAR."
+    if [ "$mt_extractor" -gt 0 ] || [ "$mt_auditor" -gt 0 ]; then
+      log "  y los testigos del arnes lo confirman: el ultimo turno NO fue el del auditor"
+    fi
   else
     ROL_INICIAL="extractor"
     log "ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante."
