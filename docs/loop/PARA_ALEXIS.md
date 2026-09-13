@@ -169,3 +169,116 @@ Las salidas que veo, **y no elijo por ti**:
 
 **NO FUNDO LA RAMA Y NO CREO NINGUN REMOTO.** `extraccion-mundo-11` queda como esta, con `docs/loop/`
 commiteado y pusheado.
+
+---
+
+# ANEXO DE LA REANUDACION, 13 sep 2026. **ESCRITO POR CLAUDE, NO POR EL AUDITOR**
+
+*Guion de reanudacion del fundador del 13 sep 2026. **Nada del texto de arriba se ha
+tocado**: `D.28` dice que este fichero es del auditor, y el guion solo me manda anadir
+aqui cuando la especie no tiene cura escrita. Esto es lo anadido.*
+
+## A.1. DICTAMEN: **`CREDITO`**
+
+Racha `REPORTE` en **3 de 3**, `AUDITOR_FORJA.md` `3`. No es `ARNES` (el arnes hizo su
+trabajo: tres vueltas enteras, 222 nodos, todas las guardas verdes) y no es `DOCTRINA`
+(la regla que se incumplio esta escrita y es literal: cosecha `7.B`).
+
+## A.2. LO QUE SI CURE, PORQUE ERA UN HUECO EN UNA CURA QUE YA EXISTE
+
+**`D.41` tenia que haber cazado una ruta de cero bytes y daba VERDE.** El tallador leia
+el fichero vacio sin error, no encontraba ninguna tabla dentro, y lo despachaba con la
+lectura mas generosa posible: *el instrumento no imprime ninguna tabla: esta la resume,
+no la reproduce.* **Verde.**
+
+    antes:  salida de CERO BYTES  ->  SIN COMPROBAR  ->  verde
+    ahora:  salida de CERO BYTES  ->  RUTA VACIA     ->  ROJO, y nombra la ruta
+
+**Con su caso negativo al lado**, porque la distincion tiene que aguantar: una salida
+**con contenido pero sin tabla** sigue siendo `SIN COMPROBAR` y no tumba nada. Un
+instrumento que imprime un saldo y no una tabla esta cumpliendo. **Tres pruebas nuevas**
+(`PruebaTallado`, ahora 16).
+
+> **ESE HUECO LO ABRI YO EL 13 SEP AL ESCRIBIR `D.41`, Y LO PAGO LA VUELTA 25.** Queda
+> cerrado y no depende de esta decision.
+
+## A.3. PERO ESO **NO** CURA LA CAIDA DE HOY, Y DIGO POR QUE
+
+**La caida tiene otra forma.** `D.41` ata **un instrumento a una tabla entera**: mira la
+declaracion de encima (*Salida de `X`, guardada en `Y`*) y compara la tabla contra `Y`.
+
+**La tabla de `S.10` no declara nada encima: publica una ruta POR FILA, en su tercera
+columna, titulada *de donde sale*:**
+
+    | que | cifra | de donde sale |
+    |---|---|---|
+    | los pares del candidato parado | 2 ... | `.v25/cola_lectura.txt` |
+
+**`D.41` no puede ver eso, y no es un fallo de implementacion: es que su unidad es la
+tabla y aqui la unidad es la celda.** Corrido hoy sobre el reporte entero: **55 tablas
+declaran instrumento, 41 talladas celda a celda, 0 difieren, 0 con la ruta vacia.** La
+caida de la vuelta 25 **no esta entre ellas y no lo estaria nunca.**
+
+## A.4. LA CURA QUE PROPONGO, Y **LA MEDIDA QUE LA VUELVE UNA DECISION TUYA**
+
+> **EL CENSO DE RUTAS: toda ruta que el reporte publique como prueba tiene que existir y
+> no estar vacia, se comprueba antes de cerrar la vuelta, y una ruta rota nombra su
+> linea.** Es lo mismo que el auditor propone en su `5.1`, segunda fila.
+
+**LA CORRI HOY SOBRE `docs/loop/REPORTE.md` ANTES DE PROPONERTELA**, y el resultado es
+justo lo que hace que no la escriba yo solo:
+
+| | |
+|---|---:|
+| rutas distintas publicadas en el reporte | **234** |
+| existen y tienen contenido | **147** |
+| **existen y estan VACIAS (cero bytes)** | # **3** |
+| no existen en el arbol | **84** |
+
+**LAS TRES VACIAS, UNA A UNA, Y SOLO UNA ES LA CAIDA:**
+
+| ruta | que es |
+|---|---|
+| `.v25/cola_lectura.txt` | **LA CAIDA.** Sostiene la cifra `2` que el instrumento desmiente con `4` |
+| `docs/loop/PROMPT_SIGUIENTE.md` | **VACIA A PROPOSITO Y POR REGLA**: `AUDITOR_FORJA.md` `3` manda dejarlo vacio en una parada. **Ahora mismo lo esta porque el auditor cumplio** |
+| `.barrido_C_con_ensayo_v16.txt` | **VACIA A PROPOSITO Y YA ADJUDICADA**: `ACTA 15` `1.9` decidio que se quedaba vacio, y la `ACTA 16` `7.2` corrigio a quien lo conto como caida |
+
+> ### **LA REGLA `7.B`, APLICADA AL PIE DE LA LETRA HOY, DISPARARIA TRES VECES Y ACERTARIA UNA.**
+
+**Y de las 84 que no existen, la mayoria no son rutas: son PATRONES** (`.aduana_v22/*.txt`,
+`.frag_*.md`, `.t1_v21/*.txt`), que el reporte escribe para nombrar un conjunto. **Una
+guarda que no distinga un patron de una ruta empieza con ochenta y pico falsos
+positivos**, y una guarda que grita donde no hay nada enseña a no mirarla.
+
+**ASI QUE LA CURA NECESITA DOS DECISIONES QUE SON TUYAS Y NO MIAS**, y son exactamente
+las que el auditor nombro en su `5.1` tercera fila:
+
+1. **QUE HACE EL CENSO CON UNA RUTA VACIA A PROPOSITO.** O `7.B` gana entera y entonces
+   `PROMPT_SIGUIENTE.md` vacio en una parada es una caida (que seria absurdo), o **la
+   ruta vacia deliberada se declara** y el censo la respeta. **Si se declara, hay que
+   decir como**, porque una excepcion que se concede a mano es una excepcion que se
+   concede siempre.
+2. **QUE ES UNA RUTA Y QUE ES UN PATRON.** Un `*` en el medio no es un fichero. Si el
+   censo los ignora, **queda un hueco con forma de asterisco**: basta escribir
+   `.v25/cola_*.txt` para que ninguna guarda mire.
+
+**NO LAS DECIDO YO.** El guion me manda proponer y parar, y `5.4` dice que la racha la
+reinicia una tanda limpia o una decision tuya escrita en `docs/loop/paradas/`. **Ninguna
+de las dos soy yo.**
+
+## A.5. LO QUE **NO** HICE, Y QUIERO QUE CONSTE
+
+- **NO reinicie la racha.** Sigue en **3 de 3**.
+- **NO relance el arnes.** El guion solo autoriza relanzar en la especie `ARNES`.
+- **NO toque el texto del auditor** de este fichero, ni su `PROMPT_SIGUIENTE.md` vacio.
+- **NO impuse el censo de rutas**, que es la condicion que esta decision necesita.
+
+## A.6. EL ESTADO, QUE NO CAMBIO
+
+El arbol sigue limpio y verde, con el hueco de la ruta vacia cerrado y probado:
+
+    python forja.py gate                 GATE VERDE, 222 nodos
+    python forja.py guiones              VERDE
+    python scripts/tallar_reporte.py     VERDE, 55 declaradas, 41 talladas, 0 difieren
+    python tests/test_aceptacion.py      114 pruebas, 0 fallos   (eran 111)
+    bash tests/prueba_arnes.sh           128 comprobaciones en VERDE

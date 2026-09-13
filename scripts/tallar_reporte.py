@@ -322,6 +322,28 @@ def revisar(ruta_reporte=None, regenerar=False, raiz=None):
                                "aviso": None})
             continue
         instrumento, motivo = _texto_del_instrumento(tabla, regenerar, raiz)
+        # UNA RUTA QUE PROMETE PRUEBA Y NO LA TIENE ES CAIDA DE CIFRA (cosecha
+        # 7.B, AUDITOR_FORJA.md 5.5, literal: si apunta a un fichero inexistente o
+        # de CERO BYTES, es caida de cifra).
+        #
+        # ESTE HUECO LO ABRI YO Y LO PAGO LA VUELTA 25. Un fichero vacio existe,
+        # asi que se leia sin error, no traia ninguna tabla, y la guarda lo
+        # despachaba con la lectura mas generosa posible: "esta tabla resume su
+        # salida, no la reproduce". VERDE. La cifra que sostenia era `2` donde el
+        # instrumento da `4`, y la sede que la probaba tenia cero bytes.
+        #
+        # VACIA NO ES LO MISMO QUE AUSENTE, y por eso muerde distinto: un fichero
+        # que esta y esta vacio es de una vuelta viva; uno que no esta puede ser un
+        # andamio borrado hace tres vueltas, y eso no es una mentira sobre hoy
+        # (queda SIN COMPROBAR, y el cierre en estricto si lo tumba).
+        if instrumento is not None and not instrumento.strip():
+            dictamenes.append({
+                "tabla": tabla, "estado": "RUTA VACIA",
+                "motivo": ("la salida declarada existe y esta VACIA (cero bytes). "
+                           "Una ruta publicada como prueba que no prueba nada es "
+                           "caida de cifra (cosecha 7.B)"),
+                "diferencias": [], "aviso": None})
+            continue
         if instrumento is None:
             dictamenes.append({"tabla": tabla, "estado": "SIN COMPROBAR",
                                "motivo": motivo, "diferencias": [], "aviso": None})
@@ -373,6 +395,7 @@ def texto_informe(dictamenes, estricto=False):
     sin = [d for d in dictamenes if d["estado"] == "SIN COMPROBAR"]
     talladas = [d for d in dictamenes if d["estado"] == "TALLADA"]
     citas = [d for d in dictamenes if d["estado"] == "CITA"]
+    vacias = [d for d in dictamenes if d["estado"] == "RUTA VACIA"]
 
     lineas.append("=" * 76)
     lineas.append("TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento")
@@ -380,6 +403,8 @@ def texto_informe(dictamenes, estricto=False):
     lineas.append("tablas que declaran instrumento : %d" % len(dictamenes))
     lineas.append("  talladas, celda a celda       : %d" % len(talladas))
     lineas.append("  que DIFIEREN de su instrumento: %d" % len(difieren))
+    lineas.append("  con la ruta VACIA             : %d   (cero bytes, 7.B)"
+                  % len(vacias))
     lineas.append("  sin poder comprobar           : %d" % len(sin))
     lineas.append("  que CITAN y no reproducen     : %d   (declaradas PARCIAL)"
                   % len(citas))
@@ -405,6 +430,14 @@ def texto_informe(dictamenes, estricto=False):
                               % (diferencia["fila"], diferencia["columna"],
                                  diferencia["reporte"], diferencia["instrumento"]))
 
+    for dictamen in vacias:
+        tabla = dictamen["tabla"]
+        lineas.append("")
+        lineas.append("RUTA VACIA  docs/loop/REPORTE.md linea %d"
+                      % (tabla["inicio"] + 1))
+        lineas.append("  declara: %s" % (tabla.get("salida") or tabla.get("script")))
+        lineas.append("  %s" % dictamen["motivo"])
+
     for dictamen in sin:
         tabla = dictamen["tabla"]
         lineas.append("")
@@ -413,6 +446,11 @@ def texto_informe(dictamenes, estricto=False):
         lineas.append("  %s" % dictamen["motivo"])
 
     lineas.append("")
+    if vacias:
+        lineas.append("TALLADO EN ROJO: %d ruta(s) publicadas como prueba apuntan a un "
+                      "fichero VACIO." % len(vacias))
+        lineas.append("Corre el instrumento y guarda su salida, o quita la ruta: una "
+                      "ruta que promete prueba y no la trae es una cifra sin sede.")
     if difieren:
         lineas.append("TALLADO EN ROJO: %d tabla(s) dicen venir de un instrumento y no "
                       "coinciden con el." % len(difieren))
@@ -457,7 +495,7 @@ def main(argumentos=None):
         return 0
     dictamenes = revisar(regenerar=regenerar)
     print(texto_informe(dictamenes, estricto))
-    if any(d["estado"] == "DIFIERE" for d in dictamenes):
+    if any(d["estado"] in ("DIFIERE", "RUTA VACIA") for d in dictamenes):
         return 1
     if estricto and any(d["estado"] == "SIN COMPROBAR" for d in dictamenes):
         return 1

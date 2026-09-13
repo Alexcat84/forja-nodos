@@ -2097,6 +2097,49 @@ class PruebaTallado(BaseForja):
         self.assertEqual(dictamenes[0]["estado"], "SIN COMPROBAR")
         self.assertIn("salida_frontera.txt", dictamenes[0]["motivo"])
 
+    def test_caso_positivo_una_ruta_de_CERO_BYTES_es_caida_de_cifra(self):
+        """Cosecha `7.B`: una ruta publicada como prueba que apunta a un fichero
+        vacio es caida de cifra.
+
+        **ESTE HUECO ESTUVO ABIERTO Y LO PAGO LA VUELTA 25.** Un fichero vacio
+        existe, asi que se leia sin error, no traia tabla, y la guarda lo
+        despachaba con la lectura mas generosa posible (*esta tabla resume su
+        salida*) y devolvia VERDE.
+        """
+        from scripts import tallar_reporte
+        vacia = os.path.join(self.taller, "salida_frontera.txt")
+        comun.escribir_texto(vacia, "")
+        dictamenes = tallar_reporte.revisar(
+            self._reporte(self._declarado()), raiz=self.taller)
+        self.assertEqual(dictamenes[0]["estado"], "RUTA VACIA")
+        self.assertIn("cero bytes", dictamenes[0]["motivo"])
+        texto = tallar_reporte.texto_informe(dictamenes)
+        self.assertIn("TALLADO EN ROJO", texto)
+        self.assertIn("salida_frontera.txt", texto)
+        self.anotar("D41_vacia", "ruta de cero bytes: cazada, y antes daba verde")
+
+    def test_caso_negativo_una_salida_con_contenido_sin_tabla_no_es_ruta_vacia(self):
+        """VACIA no es lo mismo que SIN TABLA, y la diferencia tiene que aguantar.
+
+        Un instrumento que imprime un saldo y no una tabla esta cumpliendo: lo que
+        la tabla del reporte hace es resumirlo. Confundir las dos cosas volveria a
+        llenar la guarda de falsos positivos.
+        """
+        from scripts import tallar_reporte
+        comun.escribir_texto(os.path.join(self.taller, "salida_frontera.txt"),
+                             "EL SALDO" + chr(10) + "  ENTRARIAN : 9" + chr(10))
+        dictamenes = tallar_reporte.revisar(
+            self._reporte(self._declarado()), raiz=self.taller)
+        self.assertEqual(dictamenes[0]["estado"], "SIN COMPROBAR")
+
+    def test_caso_negativo_los_espacios_en_blanco_tampoco_son_una_salida(self):
+        from scripts import tallar_reporte
+        comun.escribir_texto(os.path.join(self.taller, "salida_frontera.txt"),
+                             "   " + chr(10) + chr(10) + "  " + chr(10))
+        dictamenes = tallar_reporte.revisar(
+            self._reporte(self._declarado()), raiz=self.taller)
+        self.assertEqual(dictamenes[0]["estado"], "RUTA VACIA")
+
     def test_el_estricto_tumba_lo_que_el_hook_deja_pasar(self):
         """El cierre de vuelta es el momento en que los instrumentos siguen ahi."""
         from scripts import tallar_reporte
