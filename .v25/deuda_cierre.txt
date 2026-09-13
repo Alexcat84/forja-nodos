@@ -1,6 +1,8 @@
-nodos en el grafo                       : 219
-aristas YA vivas en el grafo            : 80
+nodos en el grafo                       : 222
+aristas YA vivas en el grafo            : 81
 filas de deuda contables leidas         : 45   (36 a 71 de su sede, mas las de la v25)
 
-con LOS DOS extremos DENTRO del grafo   : 0
-con algun extremo fuera                 : 45
+con LOS DOS extremos DENTRO del grafo   : 1
+con algun extremo fuera                 : 44
+
+  80  empezar_cultura_franqueza_radical                      --paso 3--> pedir_critica_equipo_premiarla                          madre tiene 6 pasos   YA CABLEADA

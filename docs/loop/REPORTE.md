@@ -29852,7 +29852,7 @@ sigue siendo mio** y se corre en el mismo acto de escribir o de tocar cada candi
 | 2 | **Terminar la tanda de insercion del lote 4**, y declarar donde me paro con su cifra | ~~ABIERTA~~ **CERRADA** (`S.3`). **El orden escrito y commiteado ANTES de correr. Los SIETE de la cola heredada entran los siete**, en 25 pasadas del instrumento. # **Y una caida de dato MIA en medio: corri dos inserciones a la vez y el grafo perdio un nodo. La cace yo con una resta, el gate estaba verde, y la repare por la aduana** (`S.3.d`) |
 | 3 | **Cablear las aristas que ya puedan cablearse**, medido y no supuesto | ~~ABIERTA~~ **CERRADA** (`S.4`). **Medido antes: `0` de `45` con los dos extremos vivos, con el comando al lado.** # **Y DOS aristas `D.29` cableadas de verdad, por `CONTINUA` en la aduana y no por la deuda**, encontradas leyendo pares bloqueados. La correccion 9 de la vuelta 22 **no puede ejecutarse** y se repite por quinta vez, hoy con una pregunta de direccion encima |
 | 4 | **La relectura ancha de tres de las seis filas de hueco del freno** (`cap_01`, `cap_03`, `cap_05`) | ~~ABIERTA~~ **CERRADA** (`S.5`). **Las tres firmadas: `0,00`, `0,00` y `1,32`, 95 pasos leidos uno a uno contra su parrafo**, 1 puente cazado y corregido antes de que su candidato entrara al grafo. El hueco baja de **6 filas a 3**. # **Y sale un hallazgo que nadie encargo: el metodo del ancla unica de la vuelta 19 falla en 4 de 24**, con DOS nodos ya dentro del grafo. **PARADA declarada** en `S.9` |
-| 5 | **Abrir el lote 5** (`marquet_turn_the_ship`) a dos capitulos | **ABIERTA** |
+| 5 | **Abrir el lote 5** (`marquet_turn_the_ship`) a dos capitulos | ~~ABIERTA~~ **CERRADA** (`S.6`). **Las dos condiciones remedidas por mi, `cap_01` y `cap_02` minados enteros, las dos fronteras cerradas AL DIGITO** (2472 contra 2472 y 1454 contra 1454, residuo `0` las dos), **3 candidatos con su aduana corrida y `0 CAERIA` al final**. # **Y la primera pregunta de doctrina del lote, marcada PENDIENTE DE DOCTRINA y no decidida por mi**: las `QUESTIONS TO CONSIDER` estan en **14 de 17** unidades |
 
 *Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
 
@@ -30670,3 +30670,445 @@ que es mas de lo que la correccion decia:
 > hijo en el 30**, o sea que esta casa ya acepto que **la direccion la pone el paso que nombra y no
 > el orden del libro**. Si se aplica aqui la misma vara, **la madre es la que tiene el `P4`**, y la
 > correccion 9 lleva cinco vueltas escrita con los papeles cambiados. **Va a `S.10` como propuesta.**
+
+---
+
+## S.6. TAREA 5: LA APERTURA DEL LOTE 5 (`marquet_turn_the_ship`)
+
+### S.6.a. **LAS DOS CONDICIONES, REMEDIDAS POR MI ANTES DE ABRIR NADA**
+
+*El encargo me las entrega medidas y me manda remedirlas igual. **Es la costumbre de la casa y esta
+misma vuelta acaba de demostrar por que existe**: la cifra de los `24` pares leidos no aguanto la
+remedida (`S.3.b`).*
+
+Salida guardada en `.v25/lote5_condiciones.txt`:
+
+    $ ls fuentes/marquet_turn_the_ship/*.md | wc -l
+    17
+    $ python -c "...marquet_turn_the_ship en FUENTES_CANONICAS.json..."
+       marquet_turn_the_ship presente: True
+       claves en la tabla: 13
+    $ ls cuarentena/marquet_turn_the_ship/*.json | wc -l
+    0
+
+<!-- TALLADO: parcial salida=.v25/lote5_condiciones.txt -->
+
+| condicion | lo que dice el encargo | lo que mido yo | |
+|---|---:|---:|---|
+| unidades en la bandeja de entrada | **17** | **17** | **CUADRA** |
+| clave en `fuentes/FUENTES_CANONICAS.json` | **True** | **True** | **CUADRA** |
+| bandeja de salida del lote 5 al abrir | no la da | **0**, la carpeta no existia | medida mia |
+
+**LAS DOS CONDICIONES DE `D.32` EN VERDE, MEDIDAS POR MI. EL LOTE 5 ABRE.** Y la fuente canonica
+estaba **antes** del primer nodo, que es lo que `EXTRACTOR.md` 12.1 y 17 exigen.
+
+### S.6.b. **EL VOLUMEN: DOS CAPITULOS, Y LA CIFRA QUE LO DECIDE SIGUE SIENDO LA MISMA DESPUES DE MI TAREA 4**
+
+| | |
+|---|---|
+| **el tramo** | **DOS capitulos por vuelta** |
+| **por que dos** | la peor fila **firmada** del lote 4 es `cap_04` con **16,67** contra un tope de **10,00**: por encima del tope se baja un escalon, y el tramo vigente eran tres |
+| **lo que mi TAREA 4 le hace a esa decision** | **la confirma y no la mueve.** Cerre tres filas de hueco y salieron **`0,00`, `0,00` y `1,32`**: **ninguna peor que `cap_04`**. La decision del encargo se tomo con tres filas menos de informacion y **sobrevive a tenerla** |
+| **la salvedad, entera y repetida** | `cap_04` lleva **cuatro** vueltas decidiendo el volumen y **nadie lo ha vuelto a leer**. Ver `S.5.e` y la propuesta de `S.10` |
+
+**EL ORDEN DE LAS UNIDADES ES EL DEL FICHERO**, y lo compruebo antes de cortar:
+
+    $ grep -h "^unidad\|^titulo_textual" fuentes/marquet_turn_the_ship/cap_01.md cap_02.md
+    cap_01 -> unidad: Introduction   titulo_textual: Introduction
+    cap_02 -> unidad: Cap. 3         titulo_textual: Change of Course
+
+### S.6.c. **LA FRONTERA DE `cap_01`, PUBLICADA ANTES DE CORTAR Y CERRADA AL DIGITO**
+
+Salida de `python .v25/frontera_l5.py fuentes/marquet_turn_the_ship/cap_01.md .v25/piezas_cap01.txt`,
+guardada en `.v25/frontera_cap01.txt`:
+
+<!-- TALLADO: salida=.v25/frontera_cap01.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L9 a L9 | **1** | el rotulo `INTRODUCTION` | **RESIDUO: rotulo** |
+| `R2` | L11 a L21 | **407** | la insatisfaccion del trabajador, con el caso de Ian y las cifras de Gallup y de Towers Watson | **POSTURA y CASO** |
+| `R3` | L23 a L33 | **228** | la frustracion del jefe, con el caso de Scott Mesh y la encuesta del 44 por ciento, y la causa raiz nombrada | **POSTURA y CASO** |
+| `R4` | L35 a L55 | **523** | The Problem: Leader-Follower: la definicion vieja de liderazgo, su limite en el trabajo cognitivo, y la contradiccion del empoderamiento | **POSTURA** |
+| `R5` | L57 a L61 | **135** | The Solution: Leader-Leader: la tesis de que todos podemos ser lideres y lo que el modelo consigue | **POSTURA** |
+| `R6` | L63 a L85 | **665** | Born of Failure: la autobiografia, el Sunfish, el primer capitan, el sonar activo, y el desastre del Will Rogers | **CASO** |
+| `R7` | L87 a L95 | **239** | Success, Immediately and Forever: el submarino como sitio improbable y el resultado del Santa Fe a diez anios vista | **CASO** |
+| `P1` | L97 a L97 | **142** | LA ARQUITECTURA DEL METODO, puesta por el libro sobre si mismo: el puente es el control, que se cede sin ceder la responsabilidad, y los dos pilares que hay que reforzar segun se cede, competencia tecnica y claridad organizativa | **NODO** |
+| `R8` | L99 a L103 | **132** | la vision, el llamamiento a la accion y la direccion de correo del autor | **POSTURA** |
+| **el cuerpo entero** | **L8 a L103** | **2472** | **suma de las piezas: 2472** | **residuo sin asignar: 0** |
+
+    piezas: 9   lineas solapadas: 0   cuerpo 2472   suma 2472   residuo 0
+
+> ### **UNA PIEZA DE NUEVE, Y ESO NO ES POCA COSECHA: ES UN PROLOGO LEIDO BIEN**
+>
+> **Ocho de las nueve piezas son POSTURA o CASO, y la clase de cada una va escrita en la propia
+> tabla** para que se pueda discutir pieza a pieza y no en bloque. `EXTRACTOR.md` 9 es explicito:
+> **una postura no ejecuta una busqueda**, y **el caso no es la casa**. Un prologo que diagnostica el
+> descontento, ataca el modelo de lider a seguidores y cuenta la biografia del autor **es exactamente
+> eso, y extraerle ocho nodos seria fabricar procedimientos que el libro no da.**
+>
+> **LA EXCEPCION ES `L97`, Y DIGO POR QUE PASA LA PRUEBA DEL INVENTARIO (`D.27`):** el libro pone ahi
+> **su propio inventario de medios, nombrados uno a uno**, y no un adjetivo de adecuacion: el puente
+> tiene nombre (**el control**), la operacion tiene nombre (**cederlo a otros reteniendo la
+> responsabilidad**), la condicion que lo limita esta escrita (**solo funciona con plantilla
+> competente que entienda el proposito**) y los dos pilares estan nombrados (**competencia tecnica y
+> claridad organizativa**). **Son medios y objetos de trabajo, no metas**, que es la restriccion 1.
+
+### S.6.d. **LA FRONTERA DE `cap_02`, PUBLICADA ANTES DE CORTAR Y CERRADA AL DIGITO**
+
+Salida de `python .v25/frontera_l5.py fuentes/marquet_turn_the_ship/cap_02.md .v25/piezas_cap02.txt`,
+guardada en `.v25/frontera_cap02.txt`:
+
+<!-- TALLADO: salida=.v25/frontera_cap02.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L9 a L13 | **28** | el rotulo, la pregunta de apertura del capitulo y la fecha y sitio | **RESIDUO: rotulo y apertura** |
+| `R2` | L15 a L19 | **338** | la visita al nuevo jefe, el cambio de destino del Olympia al Santa Fe, y el shock de la noticia | **CASO** |
+| `R3` | L21 a L27 | **193** | lo que Mark encarga: seis meses hasta el despliegue, el vacio de liderazgo, y no cambiar gente sino trabajar con la que hay | **CASO** |
+| `P1` | L29 a L29 | **49** | POR QUE NO DESPIDIO A NADIE: el mensaje que eso manda a cada miembro de la tripulacion, y el reto que eso fija, cambiar como interactuan y no a quien | **CANDIDATO A NODO, DISCUTIBLE** |
+| `R4` | L31 a L45 | **537** | el organigrama del barco, los oficiales subalternos, los doce jefes de suboficiales, el despliegue y la falta de huecos en el calendario | **CASO y CONTEXTO** |
+| `R5` | L47 a L47 | **3** | el separador de seccion | **RESIDUO: separador** |
+| `P2` | L49 a L49 | **84** | LO QUE EL COMODORO HIZO BIEN, nombrado en tres piezas: una meta especifica, sin decir como, y los mismos recursos de siempre; y la consecuencia que el texto saca de las tres | **CANDIDATO A NODO, DISCUTIBLE** |
+| `R6` | L51 a L53 | **95** | la reconsideracion personal del autor y su decision de intentarlo | **CASO** |
+| `R7` | L55 a L67 | **127** | QUESTIONS TO CONSIDER: las seis preguntas de cierre del capitulo | **PENDIENTE DE DOCTRINA** |
+| **el cuerpo entero** | **L8 a L67** | **1454** | **suma de las piezas: 1454** | **residuo sin asignar: 0** |
+
+    piezas: 9   lineas solapadas: 0   cuerpo 1454   suma 1454   residuo 0
+
+### S.6.e. **LA PRIMERA PREGUNTA DE DOCTRINA DEL LOTE 5, MARCADA `PENDIENTE DE DOCTRINA` Y NO DECIDIDA POR MI**
+
+*`EXTRACTOR.md` 7: **un pendiente de doctrina NO detiene.** Se registra lo mejor sostenido, se marca
+`PENDIENTE DE DOCTRINA` en su razon, y se sigue. Asi lo hago.*
+
+**`cap_02` cierra con una seccion `QUESTIONS TO CONSIDER` de seis preguntas. Antes de decidir que
+hacer con ella, la conte en el libro entero:**
+
+    $ grep -c "QUESTIONS TO CONSIDER" fuentes/marquet_turn_the_ship/*.md
+      cap_01: 0    cap_06: 1    cap_11: 1
+      cap_02: 1    cap_07: 1    cap_12: 1
+      cap_03: 1    cap_08: 1    cap_13: 1
+      cap_04: 1    cap_09: 1    cap_14: 1
+      cap_05: 1    cap_10: 1    cap_15: 1
+      cap_16: 0    cap_17: 0
+
+**CATORCE DE DIECISIETE UNIDADES LA LLEVAN.** No es una seccion de este capitulo: **es un aparato del
+libro entero.**
+
+| la salida posible | lo que costaria |
+|---|---|
+| **un nodo por capitulo** | **CATORCE nodos casi gemelos**, con la misma condicion de activacion y el mismo entregable. Es la fabrica de duplicados que la regla 4 de id prohibe por su nombre, *sin traducciones paralelas ni familias repetidas* |
+| **un solo nodo con las preguntas de los catorce** | un nodo que no sale de ninguna unidad, y una `UNIDAD DE ORIGEN` que habria que inventar |
+| **no son nodo** | defendible por `EXTRACTOR.md` 9, *una definicion o un concepto sin nada que hacer*, pero **hay algo que hacer: contestarlas**, y el libro las pone como ejercicio |
+
+> **NO LA DECIDO YO, Y EL MOTIVO NO ES PRUDENCIA: ES QUE DECIDIRLA AQUI LA DECIDE PARA CATORCE
+> CAPITULOS.** Lo que en `cap_02` parece una eleccion de una pieza de nueve, **en el lote entero es la
+> forma de catorce nodos**, y esta casa tiene escrito que **una vuelta no estrecha ni ensancha una
+> vara sin correccion declarada** (`EXTRACTOR.md` 9.1). **La pieza `R7` queda en la frontera con su
+> clase escrita, `PENDIENTE DE DOCTRINA`, y la pregunta va a `S.10` como propuesta.**
+>
+> **Y LO QUE ESO DEJA MEDIDO PARA QUIEN LA ADJUDIQUE:** `cap_02` deja **127 palabras** sin asignar a
+> nodo por esta causa, y el libro entero deja **catorce secciones** como esa. **La cifra del coste de
+> aplazarla esta contada, no estimada.**
+
+### S.6.f. **LOS TRES CANDIDATOS DEL LOTE 5, CADA UNO CON SU ADUANA CORRIDA EN EL MISMO ACTO**
+
+*`EXTRACTOR.md` 16: **un candidato no esta escrito hasta que ha pasado la aduana**, y la aduana se
+corre en el acto de escribirlo, no al final del lote.*
+
+**LOS TRES, Y LAS DOS CAIDAS DE PUERTA QUE ME COMI EN EL PRIMER CAPITULO CON PROCEDIMIENTO DEL LOTE:**
+
+| candidato | unidad | pasos | saldo de su aduana |
+|---|---|---:|---|
+| `ceder_control_reforzar_competencia_claridad` | `cap_01`, `L97` | **7** | **`BLOQUEARIA`**, 2 vecinos, los dos del propio lote 5 |
+| `encargar_meta_especifica_dejar_libre_metodo` | `cap_02`, `L49` mas `L33` | **5** | **`BLOQUEARIA`**, 2 vecinos, los dos del propio lote 5 |
+| `cambiar_forma_trabajar_conservar_plantilla` | `cap_02`, `L29` mas `L25` | **5** | **`BLOQUEARIA`**, 1 vecino del propio lote 5, **`0 CAERIA`** tras sus dos correcciones (`S.6.g`) |
+
+**`BLOQUEARIA` NO ES UN RECHAZO Y LA PROPIA ADUANA LO IMPRIME:** *no es rechazo, es cola de lectura*.
+Los tres se levantan **entre si** y **ninguno levanta un vecino del catalogo viejo**, que es lo que
+uno espera de la primera cosecha de un libro nuevo: **su vocabulario es suyo.** Y **no escribo sus
+veredictos hoy**, porque `D.39` dice que un lote ABIERTO no se inserta: **los veredictos se escriben
+en el acto de insertar, y ese acto no llega en esta vuelta.**
+
+### S.6.g. **LAS DOS CAIDAS DE PUERTA, DECLARADAS CON SU NOMBRE**
+
+*`D.23` mide que **cuatro de cada diez** candidatos escritos sin las reglas de id delante caen en la
+puerta. **Yo escribi tres y cayeron dos veces**, las dos en el mismo candidato y las dos corregidas
+antes de que contara como escrito (`EXTRACTOR.md` 16).*
+
+| # | lo que la aduana dijo | que era | como se arreglo |
+|---:|---|---|---|
+| **1** | `$.denominaciones.otros_idiomas[0]: se esperaba object y llego str` | escribi `otros_idiomas` como **lista de cadenas** y el esquema pide **objetos con `idioma` y `termino`**. **Cayeron los TRES candidatos** | los tres pasaron a `{"idioma": "ingles", "termino": "..."}` |
+| **2** | `id 'cambiar_forma_trabajar_sin_renovar_plantilla': preposicion o articulo prohibido: sin (regla 3)` | **la regla 3, que es la que mas cae de todas**, 35 de los 65 del estreno | el id pasa a `cambiar_forma_trabajar_conservar_plantilla`: **el verbo `conservar` dice lo mismo que `sin renovar` y no lleva preposicion** |
+
+> **LAS DOS VAN DECLARADAS DENTRO DEL PROPIO FICHERO, no solo aqui**, porque un candidato que se
+> corrige y no lo cuenta **le esconde a quien lo lea manana que llego a caer**. Y las dos son mias de
+> cabo a rabo: **las reglas de id y el esquema estaban escritos antes de que yo tecleara el primer
+> candidato**, y `EXTRACTOR.md` 15 dice literalmente que **se leen antes de escribir el primer id, no
+> despues del primer rechazo.** Las lei y aun asi cai: **la de la regla 3 la cace la aduana, no yo.**
+
+---
+
+## S.7. LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO (`EXTRACTOR.md` 8)
+
+*La metrica de credito distingue una caida dentro del marcado de una caida fuera, **y esa diferencia
+solo significa algo si el marcado se hizo a ciegas**. Van aqui los diez, cada uno con el argumento
+contra mi decision escrito al lado, y el auditor deberia empezar la relectura por ellos.*
+
+| # | lo que decido | el argumento CONTRA mi decision, escrito por mi |
+|---:|---|---|
+| **1** | **firmo `cap_03` en `0,00`** aunque tres de sus diez pasos salen de `cap_12` y su fichero declara solo `cap_03` | **subirlos a puente haria la fila mas verdadera de lo que la metrica dice.** `D.30` mide *pasos que escribi yo y el libro no dice*, y el libro **si los dice**. Pero quien lea `0,00` en esa fila **no se entera de que el nodo mezcla dos unidades sin declararlo**, y un cero que esconde eso **informa peor que un uno** |
+| **2** | **cuento como PUENTE** el `OFTEN` traducido por *cada vez* en `empezar_cultura_franqueza_radical` | **el libro si dice lo que el paso manda hacer; lo unico reforzado es la frecuencia, y la frecuencia no cambia lo que el lector ejecuta.** Con la vara estrecha la fila `cap_05` sale `0,00` y no `1,32`. Elijo la que me cobra **porque el `teamwork` de `cap_14` es la misma especie**, y si aquel cuenta y este no, la vara se mueve segun quien pague |
+| **3** | **corto UN nodo del prologo del lote 5** (`ceder_control_reforzar_competencia_claridad`) de una sola linea de 142 palabras | **un prologo es postura por definicion**, y quien lea las otras ocho piezas de la frontera y vea que las ocho son postura o caso **puede decir que la novena tambien lo es**. Mi defensa es `D.27` y esta escrita en el fichero: el texto pone **su propio inventario de medios**, no un adjetivo de adecuacion |
+| **4** | **es `D.29` y NO `D.37`** aunque `L97` escriba *four phases* | **la cuenta SI esta escrita**, y en `ACTA 24` `3.2` el auditor adjudico que **un ordinal impreso cuenta como cuenta**. Mi motivo para no llamarlo `D.37` es que `D.37` pide **las dos cosas**, la cuenta **y las partes nombradas una a una**, y el texto **no nombra las cuatro fases**: reparte partes del libro. **Si me equivoco, la arista a las partes se declara igual cuando existan, y solo cambia el nombre de la regla** |
+| **5** | **corto DOS nodos de `cap_02`** en vez de uno, de la misma conversacion con el mismo jefe | **son el mismo encargo**, y `P.19` manda fundir cuando el objeto se repite dentro del material. Los separo porque **las condiciones de activacion son de personas distintas**: una es la del que encarga, otra la del que recibe el encargo. **Quien lea la conversacion entera puede ver un solo procedimiento** |
+| **6** | **declaro DOS aristas `D.29` por lectura** (`empezar_cultura` a `criticar_trabajo` y a `pedir_critica`) y las cableo con `CONTINUA` | **ninguna senial las levanto como jerarquia**, y `EXTRACTOR.md` 11 mide que **ninguna senial separa jerarquia de azar**, o sea que no hay nada que me contradiga **ni nada que me respalde salvo mi propia lectura**. La prueba mas fuerte que tengo **no la escribi yo**: el `resumen_teorico` del hijo declara `perilous border` como su ancla, y la madre lo nombra |
+| **7** | **doy `SANO`** a `empezar_cultura` contra `elogiar_trabajo_especifico_contexto`, de la misma madre que las dos anteriores | **el paso 5 de esa madre nombra el elogio**, igual que el 6 nombra la frontera peligrosa y el 3 la peticion de critica. **Tres pasos de la misma madre nombran tres cosas y yo declaro dos aristas y una no.** Mi corte es *entender una cosa nombrada* contra *hacer las cosas en un orden*, **y es un corte fino que alguien puede leer al reves** |
+| **8** | **anado una CUARTA sede** al censo del `cinco` que el auditor cerro en tres, y la llamo **el origen** | **no estaba en mi encargo**, y el auditor ya habia contado y firmado su censo. Meter una cuarta **cambia una cifra de su acta**, que es su sede y no la mia. Lo hago porque **es la misma caida y el mismo instrumento**, y porque callarla dejaria el `cinco` vivo en el reporte de la vuelta 23 |
+| **9** | **NO decido** que hacer con las secciones `QUESTIONS TO CONSIDER` y dejo `127` palabras sin asignar en `cap_02` | **dejar material sin minar es exactamente lo que el protocolo de lote intenta evitar**, y un capitulo con una pieza `PENDIENTE DE DOCTRINA` **no esta cerrado**. Mi motivo es que **la decision vale por catorce capitulos y no por uno** |
+| **10** | **propongo que la correccion 9 de la vuelta 22 tiene los papeles cambiados** | lleva **cuatro vueltas escrita con esa madre y ese hijo**, y nadie la ha corregido en ese sentido. **Es mas probable que se me escape a mi algo que a cuatro vueltas seguidas**, y lo digo asi. Pero `forja.py arista` **pide un paso de la madre y esa madre no tiene ninguno que nombre a la hija**, y eso no es una opinion |
+
+---
+
+## S.8. LO QUE PROPONGO, Y NO ME ADJUDICO NADA (`EXTRACTOR.md` 14)
+
+*El extractor propone en su reporte. **No escribo en `BANCO_DE_REGLAS.md`, ni en `PARA_ALEXIS.md`, ni
+en `PROMPT_SIGUIENTE.md`.** Las cinco van aqui y quien tenga la sede decide.*
+
+| # | lo que propongo | por que, con su cifra |
+|---:|---|---|
+| **1** | **una CUARTA especie de puente en la tabla de `D.30`: *generalizar el ejemplo del libro*** | la tabla de `D.30` lista tres especies (**destinatario, periodo, responsable**) y **los dos puentes de estas dos vueltas no son ninguna de las tres**: el `teamwork` de `cap_14` generaliza una categoria a cuatro, y el `OFTEN` de `cap_05` refuerza una frecuencia. **El fichero del `teamwork` declaraba expresamente que vigilaba las tres especies** y aun asi se le colo la cuarta: **un catalogo de especies ensena a mirar donde el catalogo mira** |
+| **2** | **releer `cap_04` ANTES que las tres filas de hueco que quedan** | `cap_04` son **6 candidatos y 48 pasos**, la fila mas barata que queda, **y lleva cuatro vueltas decidiendo el volumen de todos los lotes con un `16,67` que nadie ha vuelto a leer.** Las tres de hueco son **47 candidatos y 444 pasos** y **ninguna puede mover el tramo** salvo que salga peor que `16,67`. **Releer lo que no decide nada cuesta lo mismo que releer lo que lo decide todo** |
+| **3** | **una operacion escrita para corregir el `resumen_teorico` de un nodo ya insertado** | hoy **no existe**, y por eso los dos nodos del `S.9` **no se pueden arreglar sin tocar a mano una sede que no es mia**. Con el grafo en **219** nodos y **24** candidatos escritos con el metodo del ancla unica, **esto va a volver a hacer falta** |
+| **4** | **adjudicar que se hace con las secciones `QUESTIONS TO CONSIDER`** antes de que el lote 5 pase de `cap_02` | **14 de 17 unidades** las llevan. Decidirlo en la vuelta 26 cuesta una decision; decidirlo en la 30 cuesta **rehacer los capitulos ya minados** |
+| **5** | **revisar la direccion de la correccion 9 de la vuelta 22** | ver `S.4.c`. **La remision la escribe el hijo (`P4`) y no la madre**, y `forja.py arista` pide un paso de la madre. **O la madre es la otra, o falta doctrina para cuando el hijo es el que nombra** |
+
+---
+
+## S.9. **LA PARADA DE ESTA VUELTA, DECLARADA Y NO ARREGLADA POR MI** (`EXTRACTOR.md` 7)
+
+> ## **EL METODO DEL ANCLA TEXTUAL UNICA DE LA VUELTA 19 FALLA EN `4` DE `24`, Y `2` DE LOS `4` YA VIVEN EN EL GRAFO**
+
+**QUE ERA EL METODO, en las palabras que los propios ficheros escriben:** la vuelta 19 anadio la
+`UNIDAD DE ORIGEN` a **24** candidatos que no la nombraban, y cada uno declara **como se la
+adjudico**, con esta formula literal dentro de su `resumen_teorico`:
+
+> *LEIDA DEL FICHERO FUENTE Y NO DE UNA TABLA, con **el ancla textual unica que la sostiene**, `X`,
+> corrida con grep contra las quince unidades del libro.*
+
+**ESA FRASE ES UNA AFIRMACION VERIFICABLE, y la verifique en las 24.** Salida de
+`python .v25/anclas.py`, re corrida sin distinguir mayusculas:
+
+| candidato | unidad declarada | su ancla | donde aparece | la especie |
+|---|---|---|---|---|
+| `repartir_semana_cuarenta_horas_jefe` | `cap_03` | `ten hours a week` | `cap_03` **y `cap_12`** | **el ancla no es unica, y TRES de sus diez pasos son de `cap_12`** |
+| `delimitar_franqueza_radical_cinco_noes` | `cap_04` | `front-stab` | `cap_04` **y `cap_05`** | **el ancla no es unica**, aunque la unidad declarada esta entre las dos |
+| `despedir_persona_franqueza_radical` | `cap_06` | `person you are firing` | **solo `cap_10`** | **la unidad declarada NO contiene su propia ancla** |
+| `reconocer_recompensar_gente_estable` | `cap_06` | `level of incompetence` | **ninguna unidad del libro** | **el ancla no existe en el libro** |
+
+| | |
+|---|---:|
+| candidatos escritos con ese metodo | **24** |
+| los que cuadran | **20** |
+| **los que no** | # **4** |
+| de los 4, **ya insertados en `dataset/nodos.jsonl`** | # **2** |
+| de los 4, todavia en la bandeja | **2** |
+
+### **POR QUE ES PARADA Y NO UNA CORRECCION MAS DE LAS QUE HE HECHO HOY**
+
+**Hoy he corregido cuatro cosas sin parar** (la celda del `cinco` en tres sedes y su origen, el
+rotulo `cap_11`, el puente `teamwork`, el puente `OFTEN`). **Esta no la corrijo, y la diferencia no
+es el tamanio: es la SEDE.**
+
+| | |
+|---|---|
+| **donde vive lo que habria que tocar** | el `resumen_teorico` de dos nodos que estan **dentro de `dataset/nodos.jsonl`** |
+| **quien escribe ahi** | **la aduana, por `forja.py insertar`. Nunca a mano** (`EXTRACTOR.md` 14, tabla de sedes) |
+| **que operacion existe para corregir un nodo ya insertado** | # **NINGUNA.** La aduana inserta; no hay comando que corrija el `resumen_teorico` de un nodo que ya entro |
+| **que dice la regla de lo que no esta escrito** | `EXTRACTOR.md` 7: *una operacion cuyo texto no alcance para ejecutarse sin decidir **es PARADA, no una improvisacion*** |
+
+**Y POR QUE NO ARREGLO LOS DOS QUE SI PODRIA, que estan en la bandeja y son mios de tocar:** porque
+**partiria el censo de la caida.** Si corrijo dos de cuatro, el registro de manana dice que fueron dos
+**y la cifra que importa, `4 de 24`, deja de poderse contar de los ficheros.** Los cuatro se quedan
+como estan **hasta que quien tenga la sede decida los cuatro juntos**, y esa decision es la propuesta
+`3` de `S.8`.
+
+### **LO QUE NO ES, PARA NO COBRARLO MAS CARO DE LO QUE ES**
+
+- **No es un puente ni un paso inventado.** Los tres pasos de `cap_12` **el libro los dice**, palabra
+  por palabra. Lo que falta es **la declaracion de que salen de otra unidad**.
+- **No mueve ninguna cifra del freno.** El denominador se reparte por `UNIDAD DE ORIGEN`, asi que
+  esos diez pasos siguen contando en `cap_03`; **lo que cambia es de donde son tres de ellos**.
+- **No tumba el nodo.** `repartir_semana_cuarenta_horas_jefe` es un procedimiento del libro, entero y
+  fiel. **Lo que esta mal es su etiqueta de procedencia, y eso `EXTRACTOR.md` 10 lo llama por su
+  nombre: la frontera se publica ANTES de cortar, y aqui no se publico.**
+
+**LO TRAIGO Y ME DETENGO EN ESTE PUNTO, como manda `EXTRACTOR.md` 7. Y no escribo
+`docs/loop/PARA_ALEXIS.md`: esa sede es del auditor.**
+
+---
+
+## S.10. LO QUE PASA A LA VUELTA SIGUIENTE, CON SU CIFRA Y SU SEDE
+
+| que | cifra | de donde sale |
+|---|---|---|
+| **la tanda de insercion sin terminar** | la bandeja del lote 4, recontada al cierre en `S.11` | `python .v25/insertar_tanda.py`, con el orden ya escrito en `.v25/orden.txt` |
+| **los pares del candidato parado** | **2** por leer, los dos del despido, de `decidir_momento_despedir_persona` | `.v25/cola_lectura.txt` |
+| **las aristas declaradas y no cableadas** | recontadas al cierre en `S.11` | `python .v25/deuda_v25.py` |
+| **la PARADA del ancla unica** | **4 de 24**, **2 dentro del grafo** | `S.9`. **La resuelve quien tenga la sede de `dataset/`** |
+| **la correccion 9 de la vuelta 22** | 1, viva y escrita por **quinta** vez, y hoy **con una pregunta de direccion encima** | `S.4.c`. Su acto sigue siendo el cableado, y los dos extremos siguen en la bandeja |
+| **la relectura ancha que queda** | **3 filas**, `cap_06`, `cap_07`, `cap_08`: **47 candidatos, 444 pasos** | `S.5.e` |
+| **la relectura de `cap_04`, que NO estaba encargada y propongo primero** | **6 candidatos, 48 pasos**, y es la fila que decide el tramo de todos los lotes | `S.8` propuesta 2 |
+| **la doctrina de `QUESTIONS TO CONSIDER`** | **14 de 17** unidades del lote 5, **127 palabras** sin asignar solo en `cap_02` | `S.6.e`. **Se decide antes de pasar de `cap_02` o cuesta rehacer capitulos** |
+| **el lote 5, minado** | **2 capitulos de 17** | `S.6` |
+
+---
+
+## S.11. EL CIERRE, CON LAS CIFRAS RECOMPUTADAS AL CERRAR (`EXTRACTOR.md` 4)
+
+*Toda cifra que describa el estado al cerrar se RECOMPUTA si algo de la propia vuelta pudo haberla
+movido. **Esta vuelta movio casi todas**, asi que se recomputan casi todas.*
+
+### S.11.a. **EL ESTADO, MEDIDO AL CERRAR**
+
+Salida de `sh .v25/cierre.sh`, guardada en `.v25/cierre.txt`:
+
+<!-- TALLADO: parcial salida=.v25/cierre.txt -->
+
+| medida | al abrir | al cerrar | movimiento |
+|---|---:|---:|---|
+| nodos en el grafo | **214** | **222** | # **mas 8** |
+| aristas vivas en el grafo | **79** | **81** | # **mas 2**, las dos `D.29` por `CONTINUA` |
+| candidatos en la bandeja del lote 4 | **131** | **123** | menos 8 |
+| insertados del lote 4 | **11** | **19** | mas 8 |
+| candidatos en la bandeja del lote 5 | **0**, la carpeta no existia | **3** | # **el lote 5 abre** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **156** | **203** | # **mas 47**, y **ni una linea escrita a mano** |
+| ficheros en `cuarentena/_insertados/` (todos) | **212** | **220** | mas 8 |
+| lineas de `docs/loop/REPORTE.md` | **29768** | **31111** | mas 1343 |
+
+### S.11.b. **LA TANDA DE INSERCION, CONTADA DE SUS PROPIAS SALIDAS**
+
+Salida de `python .v25/saldo_tanda.py`, guardada en `.v25/saldo_tanda.txt`:
+
+    intentos de insercion en la vuelta       : 28
+      de ellos, NODO INSERTADO               : 9
+      de ellos, quedaron en cola de lectura  : 19
+    candidatos distintos insertados          : 8
+    veredictos que escribi yo en esta vuelta : 30
+    veredictos heredados de la vuelta 24     : 19
+    segundos por intento: minimo 35.8  maximo 108.0  media 74.2  total 2078 (34.6 min)
+
+> **LOS `9` `NODO INSERTADO` CONTRA `8` CANDIDATOS DISTINTOS NO SON UN ERROR DE CUENTA: SON LA HUELLA
+> DE MI CAIDA.** `pedir_critica_equipo_premiarla` **sale dos veces con `NODO INSERTADO`** porque la
+> primera se perdio en la escritura simultanea y la segunda es la reparacion (`S.3.d`). **Dejo las dos
+> en la cuenta y explico la diferencia, en vez de publicar un `8` limpio que borraria el incidente.**
+
+**Y LA CIFRA DEL COSTE, QUE ES LO QUE SIRVE PARA PLANIFICAR:** **34,6 minutos de reloj solo en llamadas
+a la aduana**, con una media de **74 segundos por intento** y un maximo de **108**. La medida de la
+vuelta 24 (*entre 39 y mas de 115 segundos, y subiendo con el grafo*) **se sostiene**, y el encargo
+acerto al no encargarme los `131`: **a este ritmo, los `123` que quedan son mas de dos horas y media
+de reloj, sin contar una sola lectura de par.**
+
+### S.11.c. **LA DEUDA DE ARISTAS, RECOMPUTADA**
+
+Salida de `python .v25/deuda_v25.py`, guardada en `.v25/deuda_cierre.txt`:
+
+    nodos en el grafo                       : 222
+    aristas YA vivas en el grafo            : 81
+    filas de deuda contables leidas         : 45
+    con LOS DOS extremos DENTRO del grafo   : 1
+    con algun extremo fuera                 : 44
+      80  empezar_cultura_franqueza_radical  --paso 3--> pedir_critica_equipo_premiarla   YA CABLEADA
+
+<!-- TALLADO: parcial salida=.v25/deuda_cierre.txt -->
+
+| | |
+|---|---:|
+| deuda al abrir | **71** |
+| mas las **8** que la `ACTA 24` adjudica y yo declaro en `S.2.d` | **79** |
+| mas las **2** que encuentro leyendo pares bloqueados | **81 declaradas en total** |
+| **menos las 2 que la aduana cablea en el acto** | # **79 pendientes de cablear** |
+| de las **45** filas contables, con los dos extremos vivos | **1**, y **esa 1 ya esta cableada** |
+| **las 35 primeras** | se **citan** y no se remiden, igual que en `ACTA 24` `1.5`: viven en formatos viejos sin numeracion corrida |
+
+> **LA DEUDA NO BAJA DE `79`, Y NO ES LO MISMO QUE EN LA VUELTA 24.** Alli el `cero cableadas` era
+> **imposibilidad medida**: ninguna fila tenia sus dos extremos dentro. **Hoy sigue siendo casi lo
+> mismo** (1 de 45, y esa se cablearon sola al entrar), **pero la vuelta cablea 2 aristas que la deuda
+> nunca llego a tener**, porque entraron con su nodo. **Ese es el camino que de verdad baja la deuda:
+> la `CONTINUA` de la aduana, no el repaso posterior.**
+
+### S.11.d. **LAS GUARDAS, LAS TRES CORRIDAS POR MI EN ESTA VUELTA**
+
+Las tres corridas por mi al cerrar, con su salida guardada:
+
+    $ python forja.py gate                    -> .v25/g_gate.txt
+    GATE VERDE.
+      nodos verificados: 222
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta,
+               cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+
+    $ python forja.py guiones                 -> .v25/g_guiones.txt
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python tests/test_aceptacion.py         -> .v25/g_test.txt
+      total: 111 pruebas, 0 fallos, 0 errores
+
+    $ python scripts/tallar_reporte.py --estricto
+      TALLADO VERDE
+
+> ### **Y LO DIGO AQUI PORQUE ES EL SITIO DONDE MAS SE NOTA: LAS CUATRO ESTABAN VERDES CON EL NODO PERDIDO DENTRO**
+>
+> Cuando `pedir_critica_equipo_premiarla` estaba archivado como insertado, ausente del dataset y
+> nombrado por seis lineas de la bitacora, **corri el gate y dio `GATE VERDE, 219 nodos verificados`**.
+> **Las doce guardas del gate miran el dataset por dentro; ninguna mira si la bitacora nombra nodos que
+> existen, ni si `_insertados` y el grafo dicen lo mismo.** Lo que lo cazo fue **una resta de dos
+> cifras**, `80` contra `81`. Va a `S.8` como propuesta de guarda nueva, **y no la fabrico yo**
+> (`EXTRACTOR.md` 13).
+
+### S.11.e. **LA IDENTIDAD DE LA VUELTA, LEIDA DE GIT** (`EXTRACTOR.md` 5)
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git log --oneline 3e28214..HEAD | wc -l
+    6
+    $ wc -l < docs/loop/REPORTE.md
+    31111
+
+---
+
+## S.12. LA VUELTA 25, EN UNA TABLA
+
+| | |
+|---|---|
+| **tareas encargadas** | **5**, que es el tope. **Las cinco CERRADAS** |
+| **la TAREA 1, bloqueante** | las dos correcciones hechas **regenerando desde el instrumento arreglado y no tecleando la celda buena**, y # **una CUARTA sede del `cinco` que el acta no encontro: el ORIGEN, `.t1_v23/freno_v23.py` linea 67**, de donde los dos instrumentos de la vuelta 24 lo copiaron |
+| **aristas** | **8 adjudicadas por el acta y declaradas con el paso de su madre impreso, 8 de 8 existen**; **2 mas encontradas leyendo**; # **2 CABLEADAS de verdad por `CONTINUA` en la aduana**, que es la primera vez en la campania que una arista entra con su nodo |
+| **insercion** | # **8 nodos dentro. Grafo `214` a `222`**, bandeja `131` a `123`, `_insertados` del lote 4 `11` a `19`. **Los SIETE de la cola heredada entran los siete**, en **25 pasadas** y **28 intentos** |
+| **veredictos** | **30 escritos por mi leyendo a los dos vecinos**, y la bitacora pasa de **156** a **203**. **Ni una linea escrita a mano** |
+| **la cifra del encargo que no me salio** | # **`11` de `24` pares tenian veredicto, no los `24`.** Declarada antes de empezar la tanda, no despues |
+| **la relectura ancha** | **3 filas firmadas** (`0,00`, `0,00`, `1,32`), **95 pasos leidos uno a uno contra su parrafo**. El hueco baja de **6 filas a 3** |
+| **`PASOS INVENTADOS`** | peor fila firmada `cap_04` **`16,67`** contra tope `10`. # **EL FRENO SIGUE DISPARADO Y EL TRAMO SIGUE EN DOS**, y ahora con **tres filas menos de ignorancia detras**. Lote 4 **`2,07` (35 de 1.688)**, declarado **INCOMPLETO: 3 filas**, y **esa cifra ya la calcula el instrumento** |
+| **el lote 5** | # **ABIERTO.** Las dos condiciones remedidas por mi, **2 capitulos minados de 17**, las dos fronteras **cerradas al digito** (2472 contra 2472 y 1454 contra 1454, residuo `0` las dos), **3 candidatos** |
+| **aduana de escritura** | **7 corridas del informe de un candidato**: 1 por el puente corregido de `cap_14`, 3 del lote 5, 3 repeticiones por correccion. # **2 `CAERIA`**, las dos mias y las dos corregidas antes de que el candidato contara como escrito |
+| **discutibles** | **10, marcados antes de saber si acierto**, y en los diez escribo el argumento contra mi propia decision |
+| **caidas mias** | # **UNA de dato, grave, y la cace yo antes de publicar ninguna cifra de cierre**: corri dos inserciones a la vez, el grafo perdio un nodo y **el gate siguio verde**. Mas **2 de puerta** en el lote 5 y **2 falsos positivos que retire yo mismo** en el barrido de anclas |
+| **paradas** | # **UNA**, declarada y no arreglada por mi (`S.9`): el metodo del ancla unica de la vuelta 19 falla en **4 de 24** y **2 ya estan dentro del grafo** |
+| **guardas** | gate, guiones, prueba de aceptacion y tallado estricto, **las cuatro en verde y corridas por mi** |
+
+> # **LO QUE MAS ME IMPORTA DE ESTA VUELTA NO ES EL 8, NI LAS 2 ARISTAS CABLEADAS: ES QUE LAS DOS COSAS QUE ENCONTRE NO LAS BUSCABA NADIE.**
+>
+> **La cuarta sede del `cinco` salio de un `grep` que corri para arreglar la gemela que el acta me
+> encargo.** El metodo del ancla unica que falla en 4 de 24 **salio de releer un capitulo cuyo
+> encargo era contar puentes**. Y **mi propia caida de dato salio de una resta que no cuadraba por
+> uno**.
+>
+> **Las tres tienen la misma forma: una cifra que se comprueba contra su fichero en vez de leerse.**
+> Esta casa lleva cuatro vueltas escribiendo esa regla con nombres distintos, `D.35`, `D.41`,
+> `EXTRACTOR.md` 5. **Hoy la regla se ha pagado tres veces sola.**
+>
+> **Y LO QUE DEJO DICHO PARA QUIEN PLANIFIQUE LA 26, porque es lo unico que esta vuelta midio y no
+> estaba medido:** **una cola de lectura no se vacia, se realimenta.** `cuidar_persona_completa_equipo`
+> estuvo **cinco pasadas** en la bandeja sin que yo tocara una linea suya, **y cada pasada le nacio un
+> vecino nuevo de los que acababan de entrar.** Cualquier plan que presuponga que la cola de hoy es la
+> que se paga manana **esta mal presupuestado**, y `D.36` ya dijo por que eso no cambia el orden:
+> **leer de menos cuesta una arista que nadie sabra que falta.**

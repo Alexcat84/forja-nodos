@@ -1,0 +1,14 @@
+| medida | al abrir | ahora |
+|---|---:|---:|
+| nodos en el grafo | 214 | **222** |
+| candidatos en la bandeja del lote 4 | 131 | **123** |
+| insertados del lote 4 | 11 | **19** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | 156 | **203** |
+
+intentos de insercion en la vuelta       : 28
+  de ellos, NODO INSERTADO               : 9
+  de ellos, quedaron en cola de lectura  : 19
+candidatos distintos insertados          : 8
+veredictos que escribi yo en esta vuelta : 30
+veredictos heredados de la vuelta 24     : 19
+segundos por intento: minimo 35.8  maximo 108.0  media 74.2  total 2078 (34.6 min)

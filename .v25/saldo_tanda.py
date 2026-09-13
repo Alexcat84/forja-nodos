@@ -13,8 +13,10 @@ ver = json.load(io.open('.v25/veredictos_insercion.json', encoding='utf-8'))
 v24 = json.load(io.open('.v24/veredictos_insercion.json', encoding='utf-8'))
 
 segundos, ok, cola = [], [], []
-for n in (1, 2, 3, 4, 5):
+for n in (1, 2, 3, 4, 5, 6, 7):
     ruta = '.v25/tanda_%d.txt' % n
+    if not os.path.exists(ruta):
+        ruta = '.v25/tanda_%d_reparacion.txt' % n
     if not os.path.exists(ruta):
         continue
     for l in io.open(ruta, encoding='utf-8'):
