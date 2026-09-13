@@ -42,7 +42,7 @@ TRAMOS = [
     ('L111 a L112', 111, 112, 1, 'pieza 10, tramo a: el habito regular, porque verlo una vez no basta'),
     ('L113 a L114', 113, 114, 0, 'pieza 4, tramo c: el anuncio de los cuatro elementos de pedir critica'),
     ('L115 a L120', 115, 120, 1, 'pieza 5, tramo a: la pregunta recurrente y por que no vale la de si o no'),
-    ('L129 a L166', 129, 166, 0, 'pieza 5, tramo b: los cuatro atributos, las ocho preguntas de ejemplo y su practica'),
+    ('L129 a L166', 129, 166, 0, 'pieza 5, tramo b: los cuatro atributos, las nueve preguntas de ejemplo y su practica'),
     ('L167 a L186', 167, 186, 1, 'pieza 6: las cuatro dudas frecuentes de pedir critica, con su respuesta'),
     ('L187 a L198', 187, 198, 1, 'pieza 7: abrazar la incomodidad, con la practica de contar hasta seis'),
     ('L199 a L214', 199, 214, 1, 'pieza 8: escuchar para entender, con la practica de escuchar tres minutos'),
