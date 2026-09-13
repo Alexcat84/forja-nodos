@@ -1,0 +1,29 @@
+id      : desplegar_tres_conversaciones_carrera
+pasos   : 11
+
+P1  Ten estas conversaciones de carrera con cada persona que te reporta directamente, sea cual sea el sitio que ocupe en el marco de equipo descrito en el capitulo tres.
+P2  Parte de lo que el texto pone debajo: todas las personas tienen su propia trayectoria de crecimiento, y es un error empujar a todo el mundo a ser o una superestrella o una roca. Lo que hay que equilibrar es crecimiento y estabilidad.
+P3  Tenlas para entender la trayectoria de crecimiento de la persona, que es el motivo por el que el texto dice que son importantes.
+P4  Persigue en ellas los tres propositos que el texto enumera: conocer mejor a cada persona a tu cargo, aprender cuales son sus aspiraciones, y planear como ayudarla a alcanzar esos suenios.
+P5  Ponlas como lo primerisimo que haces al desplegar la franqueza radical en tu equipo, que es donde el texto las recomienda.
+P6  Cuenta con que llevan tiempo, y metelas en tus huecos de 1:1 de siempre: el texto dice que ahi pueden ocurrir.
+P7  Cuenta con lo que el texto dice que son: tu mayor oportunidad, la unica mas grande, de subir en el eje de importarte personalmente del marco de la franqueza radical.
+P8  Y cuenta con lo que el texto dice que pasa cuando les coges el tranquillo: las esperaras con ganas, y generaran algunas de las conversaciones mas disfrutables que tienes como jefe.
+P9  Dales la cadencia que el texto escribe: una sucesion de tres conversaciones de cuarenta y cinco minutos con cada persona a tu cargo, en el curso de tres a seis semanas.
+P10 Ensenia a cada jefe de tu equipo a tenerlas con las personas a su cargo. Es lo que el texto cuenta que hizo Russ cuando se dio cuenta de que habia dado con un buen metodo: reunio a sus jefes fuera de la oficina y se lo ensenio.
+P11 Y ensenia a hablar con las personas a su cargo no solo de sus metas de carrera o de como ascender, sino tambien de sus historias de vida y de sus suenios.
+
+condiciones_activacion: Cuando vas a desplegar las conversaciones de carrera con tu equipo, o cuando vas a ensenar a los jefes de tu equipo a tenerlas con las personas a su cargo.
+entregable_esperado   : Las tres conversaciones tenidas con cada persona a tu cargo, en el curso de tres a seis semanas y dentro de los huecos de 1:1 de siempre.
+
+EL PASO QUE ENUMERA LAS PARTES, que es el --paso de las tres aristas D.37:
+  paso 11: Y ensenia a hablar con las personas a su cargo no solo de sus metas de carrera o de como ascender, sino tambien de sus historias de vida y de sus suenios.
+
+LA SENIAL BARATA DE MANUAL 3.5 sobre el entregable, corrida y no prometida:
+  Russ       en el entregable: False
+  Google     en el entregable: False
+  Todd       en el entregable: False
+  Sarah      en el entregable: False
+  Laraway    en el entregable: False
+  encuesta   en el entregable: False
+  off-site   en el entregable: False

@@ -1,6 +1,5 @@
 {
- "id": "facilitar_despido_tres_cosas",
- "titulo": "Facilitar un despido con las tres cosas que el texto cuenta, situandolo entre los dos errores opuestos de la empresa que despide demasiado facil y la que lo hace casi imposible",
+ "condiciones_activacion": "Cuando vas a despedir a alguien de tu equipo, o cuando estas mirando como se despide en tu empresa y quieres saber si esta en uno de los dos errores opuestos.",
  "denominaciones": {
   "nombre_largo": "La cabeza de la serie de tres del despido: los dos errores opuestos de las empresas, la premisa de que despedir es duro y debe serlo, y las tres cosas que lo vuelven mucho mas facil para la persona despedida, para ti y para tu equipo",
   "otros_idiomas": [
@@ -19,8 +18,19 @@
   ],
   "sigla": ""
  },
- "condiciones_activacion": "Cuando vas a despedir a alguien de tu equipo, o cuando estas mirando como se despide en tu empresa y quieres saber si esta en uno de los dos errores opuestos.",
- "entregable_esperado": "Las tres cosas del texto identificadas y encargadas como el plan del despido, y tu empresa situada respecto a los dos errores opuestos que el texto describe.",
+ "dominio": "gestion_equipos",
+ "entregable_esperado": "Las tres cosas del texto identificadas y encargadas como el plan del despido.",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "id": "facilitar_despido_tres_cosas",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
  "pasos_accionables": [
   "Cuenta con el primer error, que el texto llama un gran error: hay empresas que no invierten mucho tiempo en el proceso de contratacion partiendo de la teoria de que es facil despedir.",
   "Parte del hecho que el texto opone a esa teoria: despedir no es facil, ni emocionalmente ni legalmente.",
@@ -34,17 +44,6 @@
   "Acepta la premisa que el texto pone justo antes de dar su cuenta: despedir es duro, y debe ser duro.",
   "Y haz las tres cosas que el texto dice que, hechas, lo vuelven mucho mucho mas facil para la persona a la que despides, y tambien para ti misma y para tu equipo: no esperes demasiado, no tomes la decision unilateralmente, y que te importe de verdad la persona."
  ],
- "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_10.md, unidad Cap. 7, Team. Sale de las lineas 169 a 173, bajo los rotulos FIRING y A necessary evil. ES LA PIEZA P24 DE LA FRONTERA DE cap_10 Y ES LA CABEZA DE UNA SERIE D.37 DE TRES. POR QUE ES NODO Y NO UN PREAMBULO, con manual 3.4 y la vara de la ACTA 20 seccion 4.1 delante: la linea 173 ESCRIBE LA CUENTA (But if you do three things, you can make it far, far easier on the person you are firing) y nombra las tres partes debajo con su rotulo propio, asi que manual 3.4 anade la cabeza a la serie; y la cabeza trae ademas procedimiento propio que ninguna de las tres partes tiene, que es situar a tu empresa entre los dos errores opuestos de las lineas 169 y 171, con sus cuatro efectos nombrados uno a uno. POR QUE ESTO NO ES UNA SEGUNDA COMPRESION DE LA MISMA NUMERACION: las tres partes no estan resumidas aqui en sus pasos, solo enumeradas en el paso 11, que es exactamente lo que la cabeza de una serie hace. EL PASO QUE ENUMERA LA SERIE ES EL 11, y es el que las tres aristas D.37 de esta vuelta citan. LA CODA P28 (linea 197, Follow up) NO ENTRA EN LA SERIE: su activacion es que hace un mes que despediste y su entregable es el contacto hecho, asi que es otro par (ACTA 20 seccion 4.5). RELECTURA DE FIDELIDAD D.30 HECHA EN EL ACTO DE ESCRIBIR, paso a paso contra su linea: 11 de 11 TRANSCRIPCION, 0 PUENTES. Lo que el texto NO dice y por eso NO esta escrito aqui: ni con quien se situa la empresa entre los dos errores, ni en que orden se hacen las tres cosas mas alla del orden en que el libro las rotula."
-,
- "dominio": "gestion_equipos",
- "estado": "vivo",
- "fuentes": [
-  {
-   "clave": "scott_radical_candor",
-   "fecha": "2026-09-12"
-  }
- ],
- "ids_alias": [],
- "nodos_previos": [],
- "nodos_siguientes": []
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_10.md, unidad Cap. 7, Team. Sale de las lineas 169 a 173, bajo los rotulos FIRING y A necessary evil. ES LA PIEZA P24 DE LA FRONTERA DE cap_10 Y ES LA CABEZA DE UNA SERIE D.37 DE TRES. POR QUE ES NODO Y NO UN PREAMBULO, con manual 3.4 y la vara de la ACTA 20 seccion 4.1 delante: la linea 173 ESCRIBE LA CUENTA (But if you do three things, you can make it far, far easier on the person you are firing) y nombra las tres partes debajo con su rotulo propio, asi que manual 3.4 anade la cabeza a la serie; y la cabeza trae ademas procedimiento propio que ninguna de las tres partes tiene, que es situar a tu empresa entre los dos errores opuestos de las lineas 169 y 171, con sus cuatro efectos nombrados uno a uno. POR QUE ESTO NO ES UNA SEGUNDA COMPRESION DE LA MISMA NUMERACION: las tres partes no estan resumidas aqui en sus pasos, solo enumeradas en el paso 11, que es exactamente lo que la cabeza de una serie hace. EL PASO QUE ENUMERA LA SERIE ES EL 11, y es el que las tres aristas D.37 de esta vuelta citan. LA CODA P28 (linea 197, Follow up) NO ENTRA EN LA SERIE: su activacion es que hace un mes que despediste y su entregable es el contacto hecho, asi que es otro par (ACTA 20 seccion 4.5). RELECTURA DE FIDELIDAD D.30 HECHA EN EL ACTO DE ESCRIBIR, paso a paso contra su linea: 11 de 11 TRANSCRIPCION, 0 PUENTES. Lo que el texto NO dice y por eso NO esta escrito aqui: ni con quien se situa la empresa entre los dos errores, ni en que orden se hacen las tres cosas mas alla del orden en que el libro las rotula. CORRECCION DECLARADA DE LA VUELTA 22, ACTA 21 seccion 4.4, y el texto viejo no se borra sino que queda escrito aqui: el entregable decia Las tres cosas del texto identificadas y encargadas como el plan del despido, y tu empresa situada respecto a los dos errores opuestos que el texto describe. La segunda mitad se retira porque las lineas 169 y 171 DESCRIBEN dos errores de empresa y no encargan situar ninguna: situar una empresa no deja fichero, y un entregable que no deja rastro no es un entregable. LA MITAD RETIRADA NO ES UN PASO: los 11 pasos se quedan como estaban y esta correccion NO mueve PASOS INVENTADOS, y lo digo para que nadie la busque alli.",
+ "titulo": "Facilitar un despido con las tres cosas que el texto cuenta, situandolo entre los dos errores opuestos de la empresa que despide demasiado facil y la que lo hace casi imposible"
 }

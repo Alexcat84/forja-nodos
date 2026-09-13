@@ -26180,3 +26180,392 @@ sin mirar.** Todo esto se corrio DESPUES de los trece candidatos, DESPUES de la 
       26136
 
 > # **VUELTA 21 CERRADA. `cap_10` ENTERO: 13 CANDIDATOS, 194 PASOS, CUATRO TAREAS DE CUATRO, CERO INSERCIONES POR REGLA Y CERO PARADAS.**
+
+---
+
+# VUELTA 22, la pieza que `cap_10` debe, las dos correcciones de fichero, `cap_11` entero, la cifra de fidelidad acotada, y las dos filas de ruta que no podian ser verdad (lote 4, `scott_radical_candor`)
+
+*Esqueleto abierto ANTES de la primera tarea (`EXTRACTOR.md` 3). Las filas se anexan al cerrarse
+cada tarea, no al final de la vuelta. **El encargo pone CINCO tareas y el tope son cinco**
+(`EXTRACTOR.md` 1.3), asi que no hay cola por techo de tareas. **La TAREA 2 es bloqueante y va
+primera**, por orden expreso del encargo.*
+
+## P.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION
+
+*`EXTRACTOR.md` 4: la apertura se mide antes de la primera operacion. **Las ocho se midieron con el
+arbol ya limpio**, es decir DESPUES del commit de pendientes que `EXTRACTOR.md` 1.1 manda hacer
+primero y ANTES de la primera linea de trabajo. Ese commit (`3eee6a0`) movio el hash y no movio
+ninguna otra.*
+
+| medida | instrumento corrido en esta vuelta | valor al abrir |
+|---|---|---:|
+| nodos en el grafo | `wc -l < dataset/nodos.jsonl` | **203** |
+| veredictos en bitacora | `wc -l < bitacora/VEREDICTOS.jsonl` | **148** |
+| candidatos en cuarentena del lote 4 | `ls cuarentena/scott_radical_candor/*.json \| wc -l` | **96** |
+| ficheros en `cuarentena/_insertados/` | `find cuarentena/_insertados -name '*.json' \| wc -l` | **201** |
+| lineas del reporte | `wc -l < docs/loop/REPORTE.md` | **26182** |
+| rama | `git rev-parse --abbrev-ref HEAD` | `extraccion-mundo-11` |
+| commit de apertura | `git rev-parse --short HEAD` | `3eee6a0` |
+| fecha | `python -c "import datetime;print(datetime.date.today())"` | **2026-09-12** |
+
+> **LA FILA DE `_insertados` LLEVA SU ALCANCE PEGADO, y es la TAREA 5 aplicada ya en la apertura:**
+> el glob plano `ls cuarentena/_insertados/*.json` da **0** porque **ahi no hay ni un JSON suelto**;
+> los 201 viven en subcarpetas por libro. **Las dos salidas son ciertas y miden cosas distintas.**
+> La reconciliacion entera esta en `P.7`.
+
+## P.0.1. LA INSERCION LLEGA ABIERTA POR QUINTA VEZ, Y POR QUINTA VEZ NO ENTRA NADA. LA RAZON SE MIDE, NO SE SUPONE
+
+*`MODO_INSERCION=insertar` es el default desde `D.39` y la corrida me lo entrega abierto.*
+
+**`D.39` NO ABRE LA INSERCION DE CUALQUIER CANDIDATO: ABRE LA DE UN LOTE CERRADO EN EXTRACCION CUYO
+INFORME HAYA CERTIFICADO EL ACTA DEL AUDITOR** (`EXTRACTOR.md` 15.7). Lo mido:
+
+    $ ls fuentes/scott_radical_candor/*.md | wc -l
+    15
+    $ for d in cuarentena/*/; do echo "$d -> $(ls $d*.json 2>/dev/null | wc -l)"; done
+    cuarentena/_derivadas/            -> 2
+    cuarentena/_insertados/           -> 0
+    cuarentena/ensayo_referencia_163/ -> 163
+    cuarentena/onu_consumidor/        -> 0
+    cuarentena/scott_radical_candor/  -> 96
+    cuarentena/smart_who/             -> 0
+    cuarentena/zhuo_manager/          -> 0
+
+**El unico lote con candidatos esperando es el 4, y sigue ABIERTO:** su bandeja de entrada tiene
+**15** unidades y esta vuelta mina `cap_11` (y `cap_12` solo si cabe). **Quedan capitulos sin
+minar al cerrar**, asi que el lote no esta cerrado en extraccion y **no hay lote que insertar**. El
+propio encargo lo escribe en su seccion LO QUE NO HACE ESTA VUELTA: *NO INSERTA NADA*.
+
+**METER CANDIDATOS DE UN LOTE ABIERTO ES UNA CAIDA DE DATO, NO UN ADELANTO** (`EXTRACTOR.md` 15.7).
+Cero inserciones, cero veredictos nuevos en `bitacora/`, cero ficheros nuevos en
+`cuarentena/_insertados/`. **Las cifras del cierre se recomputan al cierre** (`EXTRACTOR.md` 4) y
+alli se contrastan con estas.
+
+## P.0.2. ESTA VUELTA NO TRAE SALDO DE LOTE (`D.41`)
+
+    $ ls -la docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+    ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+    ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ tail -2 docs/loop/loop.log
+    [2026-09-12 22:49:57] VUELTA 2 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+    [2026-09-12 22:49:57] VUELTA 2 : EXTRACTOR (claude-opus-5)
+
+**`D.41`: si el prompt no me entrega ningun informe, no lo invento y no lo lanzo.** El arnes lo dice
+por su cuenta en `loop.log`. **La vuelta no trae saldo de lote**, y por tanto no publico
+`CHOCAN entre si dentro del lote`, que es la cifra que solo ese informe ve. **El de un candidato
+suelto sigue siendo mio** y se corre en el mismo acto de escribir cada candidato (`EXTRACTOR.md` 16).
+
+## P.1. LAS CINCO TAREAS ENCARGADAS, Y SU ESTADO
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | Los registros: la `ACTA 21` entera y sus ocho adjudicaciones recogidas sin reabrirlas | ~~ABIERTA~~ **CERRADA** (`P.2`) |
+| 2 | **BLOQUEANTE Y PRIMERA**: la **pieza 14** de `cap_10` (la cabeza de las conversaciones de carrera), sus **tres aristas `D.37`** declaradas, y las **dos correcciones de fichero** | ~~ABIERTA~~ **CERRADA** (`P.3`). **14 piezas, 205 pasos, frontera al digito, 0 CAERIA** |
+| 3 | **`cap_11` ENTERO**, con su frontera publicada antes de cortar y su residuo en cero o nombrado linea a linea; `cap_12` solo si cabe bajo el techo de 15 | ABIERTA |
+| 4 | **La cifra de fidelidad acotada**: ocurrencias por capitulo de `cap_00` a `cap_09`, y el numerador firmado SOLO de dos capitulos | ABIERTA |
+| 5 | **Las dos filas de ruta que no pueden ser verdad**, y la fila de alcance de `_insertados` | ABIERTA |
+
+*Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
+
+---
+
+## P.2. TAREA 1: LOS REGISTROS. **CERRADA**
+
+### P.2.a. LA `ACTA 21`, LEIDA ENTERA Y SITUADA CON SU LINEA (`D.35`)
+
+    $ grep -n "^# ACTA 21" docs/loop/ACTA_AUDITOR.md
+      18932:# ACTA 21. VUELTA 21, lote 4 (scott_radical_candor), cap_10 CERRADO ENTERO: la
+             vuelta del extractor sale limpia de CLASE y de CIFRA PUBLICADA, la frontera de
+             cap_10 se corrige de 13 a 14 y la pieza que falta es MIA, y el criterio de
+             PASOS INVENTADOS se corrige contra su propia linea base
+    $ wc -l docs/loop/ACTA_AUDITOR.md
+      19885 docs/loop/ACTA_AUDITOR.md
+    $ sed -n '18932,19885p' docs/loop/ACTA_AUDITOR.md | grep -n '^## ' | wc -l
+      13
+
+**LEIDA ENTERA, DE `L18932` A `L19885`, Y SUS TRECE SECCIONES ABIERTAS UNA A UNA** (`0` hueco de
+acta, `1` verificacion, `2` mutaciones, `3` relectura ciega, `4` adjudicaciones, `5` barrido
+`D.38.4`, `6` muestra de `SANO`, `7` `PASOS INVENTADOS`, `8` sus caidas, `9` rachas, `10` `D.32`,
+`11` paradas, `12` la tabla de cierre).
+
+### P.2.b. LAS OCHO ADJUDICACIONES, RECOGIDAS SIN REABRIRLAS (`1.a` del encargo)
+
+| # | adjudicacion | donde | la recojo | donde la aplico hoy |
+|---:|---|---|---|---|
+| **1** | **la frontera de `cap_10` es `14`**: falta la cabeza de las conversaciones de carrera | `4.1` | **SI** | `P.3`, la pieza 14 escrita |
+| **2** | los cinco cortes que sostuve **quedan confirmados** habiendo leido mis pasos | `4.2` | **SI** | nada que hacer: cierra la frontera vieja |
+| **3** | las tres aristas `D.37` **no cableadas NO son parada**, y el defecto es del encargo | `4.3` | **SI** | `P.3.b`, y las tres nuevas se DECLARAN y no se cablean |
+| **4** | `facilitar_despido_tres_cosas` **es nodo**, y su `entregable_esperado` **se corrige** | `4.4` | **SI** | `P.3.c`, correccion 1 |
+| **5** | los hermanos de serie son **`SANO`** por extension natural de `EXTRACTOR.md` 15.6 | `4.5` | **SI** | doctrina en vigor para las lecturas de `P.4` |
+| **6** | el par de la lupa es **`CONTINUA` con arista** y **su razon escrita se corrige** | `4.6` | **SI** | `P.3.c`, correccion 2 |
+| **7** | las dos filas de ruta auto referenciales: `REPORTE` registrada que **no acumula** | `4.7` | **SI** | `P.7`, y el remedio acotado se aplica a MI tabla de rutas de esta vuelta |
+| **8** | **el criterio de `PASOS INVENTADOS` cuenta los puentes escritos y cazados**, corregidos o no | `4.8` | **SI** | `P.6` y la tabla del cierre |
+
+**Y RECOJO TAMBIEN LAS TRES FILAS QUE HABLAN DE MI TRABAJO, SIN DISCUTIRLAS** (`9`): `CLASE`
+**0 de 2**, `CIFRA PUBLICADA` **0 de 2**, `REPORTE` **2 de 3 y no sube**, con **dos caidas
+registradas que no acumulan** (las dos filas de ruta auto referenciales, y la razon del par de la
+lupa). **Mis nueve discutibles releidos: siete se sostienen enteros, uno a medias y uno cae**, y el
+que cae (**la frontera en 13**) el auditor lo pone a su nombre.
+
+### P.2.c. **LO QUE NO TOCO, Y LO DIGO ANTES DE EMPEZAR** (`1.c` del encargo)
+
+| sede | por que no la toco |
+|---|---|
+| `docs/BANCO_DE_REGLAS.md` | es de Alexis (`EXTRACTOR.md` 14) |
+| `config/` | es de Alexis (`EXTRACTOR.md` 14) |
+| `AUDITOR_FORJA.md` | es del auditor (`EXTRACTOR.md` 14). **La discrepancia de `D.38.5`** (*ya lo levanta* contra la medida que dice que no) **la lleva el auditor a Alexis por su `11.1`**, y mi PROPUESTA 3 la recoge el |
+| `docs/loop/PROMPT_SIGUIENTE.md`, `ACTA_AUDITOR.md`, `PARA_ALEXIS.md` | son del auditor |
+
+### P.2.d. **UN HECHO NUEVO, Y ES DE INSTRUMENTO, ASI QUE LO TRAIGO CON SU MEDIDA** (`EXTRACTOR.md` 5)
+
+*No reabro ninguna adjudicacion. Esto es una cifra que cambio debajo de mi entre el cierre de la
+vuelta 21 y la apertura de esta, y `EXTRACTOR.md` 4 me obliga a citar la medicion del dia.*
+
+    $ ls cuarentena/scott_radical_candor/*.json | wc -l
+      96
+
+**La `ACTA 21` `1.2` mide `96` y yo mido `96` hoy: REPRODUCE.** Lo traigo porque **mi propia `O.0`
+de la vuelta 21 publico `83`**, y las dos son ciertas: `83` era **antes** de escribir los trece
+candidatos de `cap_10`, y `96 = 83 + 13`. **La diferencia es de instante, no de dato**, y la dejo
+dicha aqui para que nadie la lea como discrepancia.
+
+> **TAREA 1 CERRADA.** Ocho adjudicaciones recogidas sin reabrirlas, cuatro sedes declaradas
+> intocables, y **cero hechos nuevos que contradigan el acta**.
+
+---
+
+## P.3. TAREA 2, **BLOQUEANTE Y PRIMERA**: LA PIEZA QUE `cap_10` DEBE, Y LAS DOS CORRECCIONES DE FICHERO. **CERRADA**
+
+### P.3.a. LA PIEZA 14, ESCRITA: `desplegar_tres_conversaciones_carrera`
+
+**EL MATERIAL, REMEDIDO POR MI COMO EL ENCARGO MANDA, CON SU `sed` PEGADO** (`D.35`):
+
+    $ sed -n '19p;21p;43p' fuentes/scott_radical_candor/cap_10.md | wc -w
+      254
+
+| linea | palabras | la salida, pegada (principio de la linea) |
+|---|---:|---|
+| `L19` | 99 | `19:AS DESCRIBED IN Chapter Three, all people have their own growth trajectories, and it's a mistake to push everyone to be either a "superstar" or a "rock star."` |
+| `L21` | 82 | `21:Once you've gotten the hang of these conversations, you'll look forward to them.` |
+| `L43` | 73 | `43:Realizing he'd come up with a good methodology for having career conversations, Russ held an off-site and taught his managers how to talk to their direct reports...` |
+| | **254** | **la cifra del encargo REPRODUCE al digito** |
+
+**Y LA CUENTA QUE HACE DE ESTO UNA SERIE `D.37` Y NO UNA `D.29`, ESCRITA DOS VECES POR EL LIBRO:**
+
+    $ sed -n '43p' fuentes/scott_radical_candor/cap_10.md   (final de la linea)
+      ...a succession of three forty-five-minute conversations with each direct report
+      over the course of three to six weeks.
+    $ sed -n '91p' fuentes/scott_radical_candor/cap_10.md   (principio)
+      THIS IS A high-level overview of three conversations that on the surface seem
+      pretty straightforward.
+
+**LA REGLA QUE LA MANDA, Y NO LA PROHIBE:** manual 3.4, *si es serie numerada de un libro: un nodo
+por paso **mas UNA cabeza**, jamas dos compresiones de la misma numeracion.* **La cabeza esta
+prescrita; lo prohibido es la SEGUNDA**, y esta es la primera y unica: las tres partes no estan
+resumidas aqui en sus pasos, solo nombradas por su materia en el paso 11.
+
+### P.3.b. LOS ONCE PASOS, IMPRESOS DEL FICHERO Y NO TECLEADOS (`EXTRACTOR.md` 5), CON SU RELECTURA DE FIDELIDAD `D.30` AL LADO
+
+*Salida en `.t1_v22/salida_pasos_pieza14.txt`, generada con `json.load` sobre el propio candidato.*
+
+| paso | linea | **`D.30`** | la salida, pegada |
+|---:|---|---|---|
+| P1 | `L19` | TRANSCRIPCION | `Ten estas conversaciones de carrera con cada persona que te reporta directamente, sea cual sea el sitio que ocupe en el marco de equipo descrito en el capitulo tres.` |
+| P2 | `L19` | TRANSCRIPCION | `Parte de lo que el texto pone debajo: todas las personas tienen su propia trayectoria de crecimiento, y es un error empujar a todo el mundo a ser o una superestrella o una roca...` |
+| P3 | `L19` | TRANSCRIPCION | `Tenlas para entender la trayectoria de crecimiento de la persona, que es el motivo por el que el texto dice que son importantes.` |
+| P4 | `L19` | TRANSCRIPCION | `Persigue en ellas los tres propositos que el texto enumera: conocer mejor a cada persona a tu cargo, aprender cuales son sus aspiraciones, y planear como ayudarla a alcanzar esos suenios.` |
+| P5 | `L21` | TRANSCRIPCION | `Ponlas como lo primerisimo que haces al desplegar la franqueza radical en tu equipo, que es donde el texto las recomienda.` |
+| P6 | `L21` | TRANSCRIPCION | `Cuenta con que llevan tiempo, y metelas en tus huecos de 1:1 de siempre: el texto dice que ahi pueden ocurrir.` |
+| P7 | `L21` | TRANSCRIPCION | `Cuenta con lo que el texto dice que son: tu mayor oportunidad, la unica mas grande, de subir en el eje de importarte personalmente del marco de la franqueza radical.` |
+| P8 | `L21` | TRANSCRIPCION | `Y cuenta con lo que el texto dice que pasa cuando les coges el tranquillo: las esperaras con ganas, y generaran algunas de las conversaciones mas disfrutables que tienes como jefe.` |
+| P9 | `L43` | TRANSCRIPCION | `Dales la cadencia que el texto escribe: una sucesion de tres conversaciones de cuarenta y cinco minutos con cada persona a tu cargo, en el curso de tres a seis semanas.` |
+| P10 | `L43` | **TRANSCRIPCION con transposicion de persona, DECLARADA** | `Ensenia a cada jefe de tu equipo a tenerlas con las personas a su cargo. Es lo que el texto cuenta que hizo Russ...: reunio a sus jefes fuera de la oficina y se lo ensenio.` |
+| P11 | `L43` | **TRANSCRIPCION con transposicion de persona, DECLARADA** | `Y ensenia a hablar con las personas a su cargo no solo de sus metas de carrera o de como ascender, sino tambien de sus historias de vida y de sus suenios.` |
+| | | **11 TRANSCRIPCION, 0 PUENTE** | |
+
+> ### **LOS DOS PASOS CON TRANSPOSICION LOS DECLARO YO ANTES DE QUE NADIE LOS BUSQUE, Y VAN MARCADOS COMO DISCUTIBLE 1.**
+>
+> `L43` escribe **en pasado y sobre otro** (*He taught every manager on his team...*) y aqui van en
+> **imperativo dirigido al lector**. Es la transposicion que manual 3.5 prescribe (*la doctrina vive
+> en su nodo*) mas manual seccion 2 (*pasos accionables, en imperativos*). **No anaden ni un medio,
+> ni una etapa ni un objeto que `L43` no nombre.** Si el auditor lee que esto es puente, **son dos
+> puentes y el numerador de `cap_10` sube de 17 a 19** (`19 / 205 = 9,27`, que sigue bajo el tope de
+> 10). Lo digo con la cuenta hecha en los dos sentidos para no tener que elegir la que me favorece.
+
+**LAS CUATRO COSAS QUE EL TEXTO NO DICE Y POR ESO NO ESTAN ESCRITAS, y son literalmente las tres
+especies de puente de `D.30`:** quien convoca la reunion fuera de la oficina (**el responsable**),
+cada cuanto se repite la serie con la misma persona (**el periodo**), que se hace si una de las tres
+no cabe en el hueco de 1:1, y **como compruebas que un jefe al que ensenaste las esta teniendo**
+(**el destinatario del rastro**). Ninguna esta en `L19`, `L21` ni `L43`.
+
+**LA SENIAL BARATA DE MANUAL 3.5, CORRIDA Y NO PROMETIDA** (el entregable no puede llevar un dato
+del caso):
+
+    Russ False | Google False | Todd False | Sarah False | Laraway False | encuesta False | off-site False
+
+### P.3.c. LA ADUANA, EN EL MISMO ACTO EN QUE SE ESCRIBIO (`EXTRACTOR.md` 16)
+
+    $ python forja.py informe cuarentena/scott_radical_candor/desplegar_tres_conversaciones_carrera.json
+      poblacion del barrido       : 300   (203 del grafo mas 97 que esperan en bandejas)
+      umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+      [BLOQUEARIA] desplegar_tres_conversaciones_carrera
+          vecino conversar_historia_vida_descubrir_motivadores  [levantada por: paso_contra_nodo]
+            similitud_texto 0.252 | familia_id 0.000 | paso_contra_nodo 0.647
+            paso 1 del candidato contra paso 1 de conversar_historia_vida_descubrir_motivadores
+
+      real  2m45.031s
+
+**`0 CAERIA` AL PRIMER INTENTO, asi que el candidato cuenta como escrito** (`EXTRACTOR.md` 16 punto
+4). La salida entera esta en `.aduana_v22/14_desplegar_tres_conversaciones.txt`.
+
+> ### **HECHO NUEVO 1, Y ES DEL INSTRUMENTO: POR PRIMERA VEZ EN ESTA CASA UNA SENIAL LEVANTA SOLA UNA ARISTA DE CABEZA A PARTE.**
+>
+> La `ACTA 21` `5.1` midio que las vecindades que una lectura encuentra viven **por debajo** de los
+> umbrales, y `D.19` midio que la señal 3 levanta el **3 por ciento** de las aristas declaradas.
+> **Hoy la señal 3 levanta una de las tres `D.37` de esta cabeza**, con `paso_contra_nodo 0,647`
+> contra umbral `0,60`. **Y NO CAMBIA NADA DE LO QUE HAGO:** las otras dos hijas **no** se levantan
+> (no aparecen en el informe), asi que **las tres se declaran por lectura igual**, que es lo que
+> `D.37` manda. Lo traigo porque es una medida que corrige el tono de mi propia vuelta 21, no porque
+> me favorezca: **una de tres no es la señal haciendo el trabajo de la lectura.**
+>
+> **Y la razon de que esta si se levante esta en la propia salida:** `paso 1 del candidato contra
+> paso 1 de conversar_historia_vida`. Los dos pasos empiezan con el mismo acto (*ten esta
+> conversacion con cada persona que te reporta directamente*), **porque la cabeza transcribe `L19` y
+> la parte lo repite en su primer paso.** Es proximidad de redaccion, no de procedimiento.
+
+> ### **HECHO NUEVO 2, TAMBIEN DEL INSTRUMENTO: EL INFORME DE UN CANDIDATO COSTO HOY `165` SEGUNDOS, NO LOS `453` DE MI VUELTA 21 NI LOS `156,5` DE `D.41`.**
+>
+> `real 2m45.031s`, medido con `time` y pegado arriba. **Las tres cifras son ciertas cada una en su
+> corrida** y la poblacion ademas crecio (`299` a `300`), asi que **la discrepancia se declara y no
+> se resuelve copiando** (`EXTRACTOR.md` 5). Lo que si cambia es una decision practica mia: con
+> `165` s por candidato **los informes de `cap_11` caben en la vuelta**, y por eso los corro todos.
+
+### P.3.d. **EL VEREDICTO DEL VECINO QUE LA ADUANA LEVANTO, CON SU RAZON ESCRITA** (`EXTRACTOR.md` 2)
+
+| | |
+|---|---|
+| **par** | `desplegar_tres_conversaciones_carrera` (madre) contra `conversar_historia_vida_descubrir_motivadores` (hija) |
+| **clase** | **`CONTINUA` con arista `D.37`** |
+| **razon** | **es la cabeza de la serie contra su primera parte, y la cuenta la escribe el libro dos veces** (`L43` *a succession of three forty-five-minute conversations*, `L91` *three conversations*). **El solape es de una frase y no de procedimiento:** el paso 1 de las dos transcribe `L19` (*con cada persona que te reporta directamente*), y a partir de ahi **no comparten ni un acto**: la cabeza pone con quien, para que, donde caben y cual es la cadencia de las TRES; la hija pone la apertura literal de la PRIMERA (*empezando por la guarderia, cuentame tu vida*), el foco en los cambios y el limite de no presionar donde la persona senializa incomodidad. **La cabeza no despliega ninguna conversacion y la hija no pone la cadencia de la serie** |
+| **sede** | **hoy solo `REPORTE.md`**, porque no hay insercion (`P.0.1`). **`bitacora/VEREDICTOS.jsonl` es su sede y lo sera el dia de la insercion** (`D.39`) |
+
+### P.3.e. LAS TRES ARISTAS `D.37` DE ESTA CABEZA, **DECLARADAS ENTERAS** (y NO cableadas, por la correccion de `2.b` del encargo)
+
+**LA CORRECCION QUE EL ENCARGO TRAE Y QUE RECOJO:** `D.37` y `EXTRACTOR.md` 15.6 dicen *declaras
+esas aristas en la misma vuelta en que **INSERTAS** las partes*. **Hoy no se inserta**, asi que **se
+declaran y se cablean el dia de la insercion**. Y **no corro `forja.py arista` contra ids que viven
+en cuarentena**: la `ACTA 21` `2.3` volvio a morder esa guarda por los dos extremos y yo la medi en
+mi `O.4.b` de la vuelta 21. **No repito un rechazo ya medido dos veces.**
+
+**EL PASO DE LA MADRE QUE ENUMERA LAS PARTES, IMPRESO DEL FICHERO:**
+
+    paso 11: Y ensenia a hablar con las personas a su cargo no solo de sus metas de carrera o
+             de como ascender, sino tambien de sus historias de vida y de sus suenios.
+
+| # | madre | hijo | `--paso` | razon |
+|---:|---|---|---:|---|
+| 1 | `desplegar_tres_conversaciones_carrera` | `conversar_historia_vida_descubrir_motivadores` | **11** | el paso 11 de la madre nombra **las historias de vida** en una linea, y el hijo la despliega en **15 pasos** que la cabeza no tiene: la apertura literal, el foco en los cambios, los cuatro ejemplares y el limite de la incomodidad |
+| 2 | `desplegar_tres_conversaciones_carrera` | `conversar_suenios_cruzar_habilidades` | **11** | el paso 11 de la madre nombra **los suenios** en una linea, y el hijo los despliega en **15 pasos** que la cabeza no tiene: cruzar los suenios con las habilidades y sacar lo que la persona quiere y puede |
+| 3 | `desplegar_tres_conversaciones_carrera` | `trazar_plan_dieciocho_meses_aprendizaje` | **11** | el paso 11 de la madre nombra **las metas de carrera y el como ascender** en una linea, y el hijo los despliega en **14 pasos** que la cabeza no tiene: el plan de dieciocho meses con su aprendizaje |
+| | | | | **y la CUENTA que las hace `D.37` y no `D.29` esta escrita en `L43` y en `L91`** |
+
+**LA DEUDA DE ARISTAS SUBE A `19`** y **dieciocho de las diecinueve se desbloquean con el mismo
+acto**, el cierre del lote 4. Van repetidas enteras en el cierre, sin resumirlas.
+
+### P.3.f. LAS DOS CORRECCIONES DE FICHERO, DECLARADAS Y SIN BORRAR EL TEXTO VIEJO
+
+**CORRECCION 1, `facilitar_despido_tres_cosas.json`, campo `entregable_esperado`** (`ACTA 21` `4.4`):
+
+| | |
+|---|---|
+| **decia** | `Las tres cosas del texto identificadas y encargadas como el plan del despido, y tu empresa situada respecto a los dos errores opuestos que el texto describe.` |
+| **dice** | `Las tres cosas del texto identificadas y encargadas como el plan del despido.` |
+| **por que** | `L169` y `L171` **describen** dos errores de empresa y **no encargan situar ninguna**. Situar una empresa no deja fichero |
+| **lo que NO se toco** | **los 11 pasos**, contados del fichero antes y despues: `11` y `11`. **La mitad retirada NO es un paso, asi que esta correccion no mueve `PASOS INVENTADOS`**, y lo digo para que nadie la busque alli |
+| **el texto viejo** | **no se borra**: queda escrito literal dentro del `resumen_teorico` del propio fichero, con su cita a la `ACTA 21` `4.4` |
+
+**CORRECCION 2, `reconocer_excelencia_trayectoria_gradual.json`, la razon del par en su
+`resumen_teorico`** (`ACTA 21` `4.6`):
+
+| | |
+|---|---|
+| **decia** | `Su paso 2 nombra las vias en una linea (...) y este nodo despliega dos de ellas en trece pasos que la madre no tiene.` |
+| **dice** | `la madre nombra las vias Y DESPLIEGA LA DEL EXPERTO DE REFERENCIA EN CUATRO PASOS, que son sus pasos 7, 8, 9 y 10; la hija anade la via del agradecimiento entera, con la distincion escrita frente al elogio, y el plazo de preparacion de la clase que la madre no tiene; y el acto del honor y no la obligacion es COMPARTIDO por las dos y no es lo que separa el par.` |
+| **por que** | la razon vieja decia que la madre *nombra las vias en una linea*, y el auditor la leyo entera y **no es cierto** |
+| **lo que NO cambia** | **la clase**: sigue `CONTINUA` con arista, `--paso 2` de la madre. Y **los 13 pasos**, contados antes y despues: `13` y `13` |
+| **el texto viejo** | **no se borra**: la razon vieja queda escrita literal al lado de la nueva dentro del mismo campo |
+| **por que era duradera** | porque **esa razon se cablea al grafo el dia de la insercion**, y desde ese minuto vive en sede duradera |
+
+### P.3.g. LA FRONTERA DE `cap_10`, RECOMPUTADA ENTERA CON LA PIEZA 14 DENTRO Y CERRADA CONTRA EL CUERPO
+
+*No copio la tabla de mi vuelta 21: la pieza 14 saca TRES lineas del resto, asi que la frontera se
+vuelve a cerrar contra el cuerpo o no se publica (`ACTA 18` `7.5` orden 1). Salida de
+`python .t1_v22/frontera_cap10.py`, guardada en `.t1_v22/salida_frontera_cap10.txt`.*
+
+    tramos que dan nodo                    : 9
+    tramos de resto                        : 6
+    lineas con contenido de L8 en adelante : 128
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 8976 palabras
+    cuerpo medido aparte (sed 8,$ | wc -w) : 8976 palabras
+    IGUALES                                : True
+    la pieza 14, sus tres lineas           : 254 palabras
+
+| tramo | palabras | nodos | que es | la salida, pegada |
+|---|---:|---:|---|---|
+| `L19` | 99 | **0** | pieza 14, tramo a: con quien y para que | `19:AS DESCRIBED IN Chapter Three, all people have their own growth trajectories, ` |
+| `L21` | 82 | **0** | pieza 14, tramo b: cuando y donde caben | `21:Once you've gotten the hang of these conversations, you'll look forward to the` |
+| `L43` | 73 | **1** | pieza 14, tramo c: la cadencia y el encargo a los jefes | `43:Realizing he'd come up with a good methodology for having career conversations` |
+| `L47 a L87` | 1862 | **3** | las tres conversaciones de carrera | `47:Conversation one: life story` |
+| `L93 a L125` | 1095 | **1** | el plan anual de gestion del crecimiento | `93:GROWTH MANAGEMENT` |
+| `L127 a L163` | 1501 | **1** | el proceso de contratacion, con el acto de L129 dentro | `127:HIRING: YOUR MENTALITY AND YOUR PROCESS` |
+| `L165 a L201` | 1372 | **5** | despedir: cabeza, tres partes y coda | `165:FIRING` |
+| `L203 a L223` | 638 | **1** | la calibracion de ascensos, con el caso de Google dentro | `203:PROMOTIONS` |
+| `L225 a L251` | 568 | **2** | recompensar sin ascender | `225:REWARD YOUR ROCK STARS` |
+| | **7290** | **14** | **los tramos que dan nodo** | |
+
+**LA FILA DE RESTO, NOMBRADA LINEA A LINEA** (`ACTA 19` `7.4` ORDEN A, que es la orden que cazo esta
+misma pieza). **La fila de 1.641 palabras que decia *entrada, rotulos y el caso* ya no existe: se
+parte en cuatro y cada trozo dice que es.**
+
+| tramo de resto | palabras | nodos | que es, nombrado |
+|---|---:|---:|---|
+| `L9 a L18` | 206 | **0** | subtitulo, resumen del cap. 3 y los dos rotulos de seccion |
+| `L20` | 0 | **0** | linea en blanco entre L19 y L21 |
+| `L22 a L42` | 1136 | **0** | EL CASO DE RUSS LARAWAY entero: Google, Todd, Sarah y el plan de Sarah |
+| `L44 a L45` | 45 | **0** | linea en blanco y el cierre del caso: la encuesta interna de Google |
+| `L88 a L92` | 101 | **0** | cierre de seccion que remite a una web y a un libro de otro |
+| `L253 a L263` | 198 | **0** | el cuadro que no esta en el recorte, el resumen y la cabecera del cap siguiente |
+| | **1686** | **0** | |
+
+**LOS CATORCE CANDIDATOS DE `cap_10`, CON SUS PASOS CONTADOS DEL FICHERO:**
+
+| # | id | pasos |
+|---:|---|---:|
+| 1 | `desplegar_tres_conversaciones_carrera` | **11** |
+| 2 | `conversar_historia_vida_descubrir_motivadores` | **15** |
+| 3 | `conversar_suenios_cruzar_habilidades` | **15** |
+| 4 | `trazar_plan_dieciocho_meses_aprendizaje` | **14** |
+| 5 | `armar_plan_anual_crecimiento_equipo` | **29** |
+| 6 | `montar_proceso_contratacion_reducir_sesgo` | **32** |
+| 7 | `facilitar_despido_tres_cosas` | **11** |
+| 8 | `admitir_pronto_mal_desempenio_cuatro_razones` | **9** |
+| 9 | `calibrar_decision_despido_documentarla` | **13** |
+| 10 | `sopesar_consejo_legal_despedir_humildad` | **8** |
+| 11 | `contactar_despedido_mes_despues` | **6** |
+| 12 | `calibrar_ascensos_evitar_politica` | **19** |
+| 13 | `evitar_obsesion_ascenso_estatus` | **10** |
+| 14 | `reconocer_excelencia_trayectoria_gradual` | **13** |
+| | **catorce candidatos** | **205** |
+
+> ### **`cap_10` QUEDA CERRADO EN `14` PIEZAS Y `205` PASOS, CON LA FRONTERA AL DIGITO Y LA FILA DE RESIDUO EN CERO. LA ADJUDICACION `4.1` DE LA `ACTA 21` ESTA CUMPLIDA.**
+
+> **TAREA 2 CERRADA.** La pieza 14 escrita y por la aduana al primer intento, sus tres aristas
+> `D.37` declaradas enteras con su paso citado, las dos correcciones de fichero hechas sin borrar el
+> texto viejo y sin tocar ni un paso, y la frontera de `cap_10` recerrada contra el cuerpo en 14.

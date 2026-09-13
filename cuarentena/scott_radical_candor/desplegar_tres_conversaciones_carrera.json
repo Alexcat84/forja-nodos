@@ -1,0 +1,45 @@
+{
+ "condiciones_activacion": "Cuando vas a desplegar las conversaciones de carrera con tu equipo, o cuando vas a ensenar a los jefes de tu equipo a tenerlas con las personas a su cargo.",
+ "denominaciones": {
+  "nombre_largo": "La cabeza de la serie de las tres conversaciones de carrera: con quien se tienen, para que, donde caben, cuando se hacen y quien mas tiene que aprender a tenerlas",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "CAREER CONVERSATIONS"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "a succession of three forty-five-minute conversations"
+   }
+  ],
+  "sigla": ""
+ },
+ "dominio": "gestion_equipos",
+ "entregable_esperado": "Las tres conversaciones tenidas con cada persona a tu cargo, en el curso de tres a seis semanas y dentro de los huecos de 1:1 de siempre.",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "id": "desplegar_tres_conversaciones_carrera",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "pasos_accionables": [
+  "Ten estas conversaciones de carrera con cada persona que te reporta directamente, sea cual sea el sitio que ocupe en el marco de equipo descrito en el capitulo tres.",
+  "Parte de lo que el texto pone debajo: todas las personas tienen su propia trayectoria de crecimiento, y es un error empujar a todo el mundo a ser o una superestrella o una roca. Lo que hay que equilibrar es crecimiento y estabilidad.",
+  "Tenlas para entender la trayectoria de crecimiento de la persona, que es el motivo por el que el texto dice que son importantes.",
+  "Persigue en ellas los tres propositos que el texto enumera: conocer mejor a cada persona a tu cargo, aprender cuales son sus aspiraciones, y planear como ayudarla a alcanzar esos suenios.",
+  "Ponlas como lo primerisimo que haces al desplegar la franqueza radical en tu equipo, que es donde el texto las recomienda.",
+  "Cuenta con que llevan tiempo, y metelas en tus huecos de 1:1 de siempre: el texto dice que ahi pueden ocurrir.",
+  "Cuenta con lo que el texto dice que son: tu mayor oportunidad, la unica mas grande, de subir en el eje de importarte personalmente del marco de la franqueza radical.",
+  "Y cuenta con lo que el texto dice que pasa cuando les coges el tranquillo: las esperaras con ganas, y generaran algunas de las conversaciones mas disfrutables que tienes como jefe.",
+  "Dales la cadencia que el texto escribe: una sucesion de tres conversaciones de cuarenta y cinco minutos con cada persona a tu cargo, en el curso de tres a seis semanas.",
+  "Ensenia a cada jefe de tu equipo a tenerlas con las personas a su cargo. Es lo que el texto cuenta que hizo Russ cuando se dio cuenta de que habia dado con un buen metodo: reunio a sus jefes fuera de la oficina y se lo ensenio.",
+  "Y ensenia a hablar con las personas a su cargo no solo de sus metas de carrera o de como ascender, sino tambien de sus historias de vida y de sus suenios."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_10.md, unidad Cap. 7, Team. Sale de las lineas 19, 21 y 43, que son 254 palabras medidas con sed -n '19p;21p;43p' | wc -w. ES LA PIEZA 14 DE LA FRONTERA DE cap_10 Y ES LA CABEZA DE LA SERIE DE LAS TRES CONVERSACIONES DE CARRERA. POR QUE ES NODO Y POR QUE LA CABEZA NO ES LA SEGUNDA COMPRESION QUE MANUAL 3.4 PROHIBE: manual 3.4 dice un nodo por paso mas UNA cabeza, jamas dos compresiones de la misma numeracion, asi que la cabeza esta prescrita y lo prohibido es la segunda. Esta es la primera y unica: las tres partes (conversar_historia_vida_descubrir_motivadores, conversar_suenios_cruzar_habilidades y trazar_plan_dieciocho_meses_aprendizaje) NO estan resumidas aqui en sus pasos, solo nombradas por su materia en el paso 11. LA CUENTA ESTA ESCRITA DOS VECES POR EL LIBRO, que es lo que hace de esto una serie D.37 y no una D.29: la linea 43 escribe a succession of three forty-five-minute conversations y la linea 91 escribe three conversations. La linea 91 NO aporta pasos a este nodo y se queda en el resto de la frontera, con su discutible declarado en el reporte de la vuelta 22. POR QUE SUS CINCO ACTOS NO VIAJAN A NINGUNA DE LAS TRES PARTES, comprobado y no supuesto: grep -l -i 'seis semanas' cuarentena/scott_radical_candor/*.json da cero lineas. Los cuarenta y cinco minutos que si viajan son otros: el paso 15 de conversar_historia_vida transcribe la linea 59, que habla de la primera conversacion sola y no de la cadencia de las tres. LO QUE MANUAL 3.5 MANDA HACER CON LA LINEA 43, que esta dentro del relato de Russ Laraway: el caso no es la casa, la doctrina vive en su nodo y el caso entra como ejemplo nombrado dentro de ella. La cadencia y el encargo de ensenar a los jefes son doctrina y viajan; el nombre de Russ entra nombrado en el paso 10 como ejemplo, y Google, la encuesta interna y los nombres de Todd y Sarah se quedan en el caso. La senial barata de manual 3.5 sale limpia: el entregable no lleva ni un dato del caso. RELECTURA DE FIDELIDAD D.30 EN EL ACTO, paso a paso contra su linea: 11 pasos, 11 TRANSCRIPCION, 0 PUENTE. P1 a P4 de la linea 19; P5 a P8 de la linea 21; P9, P10 y P11 de la linea 43. LOS DOS PASOS CON TRANSPOSICION DE PERSONA DECLARADA, y los declaro yo antes de que nadie los busque: el P10 y el P11 salen de una frase que el libro escribe en pasado y sobre otro (He taught every manager on his team...), y aqui van en imperativo dirigido al lector. La transposicion es la que manual 3.5 prescribe al decir que la doctrina del caso vive en su nodo, y manual seccion 2 pide pasos en imperativo. No anaden ni un medio, ni una etapa ni un objeto que la linea 43 no nombre. Van marcados como discutible en el reporte. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: quien convoca la reunion fuera de la oficina, cada cuanto se repite la serie con la misma persona, que se hace si una de las tres conversaciones no cabe en el hueco de 1:1, y como se comprueba que un jefe al que ensenaste las esta teniendo. Ninguna de esas cuatro cosas esta en las lineas 19, 21 ni 43, y las cuatro son exactamente las tres especies de puente que D.30 nombra (el destinatario, el periodo y el responsable).",
+ "titulo": "Desplegar con tu equipo la serie de tres conversaciones de carrera, con su cadencia y su encargo de ensenarlas a tus jefes"
+}
