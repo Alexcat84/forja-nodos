@@ -1,0 +1,9 @@
+$ python (imprime P7, P8, P12 y P14 de abrazar_incomodidad_arrancar_critica_equipo desde su fichero)
+P7: Ten una pregunta de cabecera. El texto da la que su autora adopto de Fred Kofman, autor de Conscious Business y su entrenador en Google: que podria hacer o dejar de hacer que hiciera mas facil trabajar conmigo. Si esas palabras no te salen solas, busca las que si, y cuenta con que esa pregunta de apertura solo esta pensada para poner las cosas en marcha.
+
+P8: Abraza la incomodidad. Preparate de antemano para la respuesta que el texto dice que llega casi siempre, que todo va bien y gracias por preguntar, y comprometete a seguir en la conversacion hasta tener una respuesta genuina. No asientas ni la tranquilices diciendo que te alegra oirlo.
+
+P12: Escucha con intencion de entender y no de responder. No empieces a criticar la critica ni a decirle a la otra persona que no ha sido radicalmente franca: repite lo que dijo para asegurarte de haberlo entendido en vez de defenderte, y aclara la critica sin debatirla. El texto da la frase, y dice que si te parece demasiado programatica busques otra: asi que lo que te oigo decir es.
+
+P14: Premia la critica para conseguir mas. Si estas de acuerdo con ella, haz el cambio cuanto antes; y si el cambio necesario va a llevar tiempo, haz algo visible que demuestre que lo estas intentando. El texto lo ilustra con la goma elastica que la autora se puso en la muneca y que pidio a su socio Russ, y despues a todo su equipo, que le chascaran cada vez que interrumpiera.
+

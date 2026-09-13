@@ -1,0 +1,62 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 330   (203 del grafo mas 127 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 15
+  por candidato bloqueado          : menor 15, mediana 15, mayor 15
+  que señal levanta cada vecindad  : similitud_texto 15
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] repartir_semana_cuarenta_horas_jefe   (dos_claves.json)
+    vecino revisar_ciclo_responsabilidades_relaciones  [levantada por: similitud_texto]
+      similitud_texto 0.359 | familia_id 0.000 | paso_contra_nodo 0.522
+      paso 5 del candidato contra paso 6 de revisar_ciclo_responsabilidades_relaciones
+    vecino descubrir_motivacion_sentido_persona  [levantada por: similitud_texto]
+      similitud_texto 0.366 | familia_id 0.000 | paso_contra_nodo 0.513
+      paso 4 del candidato contra paso 1 de descubrir_motivacion_sentido_persona
+    vecino subir_vara_calidad_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.401 | familia_id 0.000 | paso_contra_nodo 0.485
+      paso 5 del candidato contra paso 4 de subir_vara_calidad_equipo
+    vecino cuidar_persona_completa_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.000 | paso_contra_nodo 0.483
+      paso 4 del candidato contra paso 2 de cuidar_persona_completa_equipo
+    vecino pedir_critica_equipo_premiarla  [levantada por: similitud_texto]
+      similitud_texto 0.408 | familia_id 0.000 | paso_contra_nodo 0.464
+      paso 6 del candidato contra paso 2 de pedir_critica_equipo_premiarla
+    vecino desplegar_marco_franqueza_radical  [levantada por: similitud_texto]
+      similitud_texto 0.376 | familia_id 0.000 | paso_contra_nodo 0.463
+      paso 1 del candidato contra paso 9 de desplegar_marco_franqueza_radical
+    vecino delimitar_franqueza_radical_cinco_noes  [levantada por: similitud_texto]
+      similitud_texto 0.391 | familia_id 0.000 | paso_contra_nodo 0.461
+      paso 1 del candidato contra paso 3 de delimitar_franqueza_radical_cinco_noes
+    vecino imaginar_caso_simple_bragueta_abierta  [levantada por: similitud_texto]
+      similitud_texto 0.381 | familia_id 0.000 | paso_contra_nodo 0.457
+      paso 1 del candidato contra paso 11 de imaginar_caso_simple_bragueta_abierta
+    vecino acompaniar_mejores_equipo_socio  [levantada por: similitud_texto]
+      similitud_texto 0.378 | familia_id 0.000 | paso_contra_nodo 0.448
+      paso 1 del candidato contra paso 7 de acompaniar_mejores_equipo_socio
+    vecino empezar_cultura_franqueza_radical  [levantada por: similitud_texto]
+      similitud_texto 0.446 | familia_id 0.000 | paso_contra_nodo 0.432
+      paso 5 del candidato contra paso 1 de empezar_cultura_franqueza_radical
+    vecino manejar_enfado_persona_desafiada  [levantada por: similitud_texto]
+      similitud_texto 0.442 | familia_id 0.000 | paso_contra_nodo 0.442
+      paso 1 del candidato contra paso 2 de manejar_enfado_persona_desafiada
+    vecino ajustar_franqueza_oido_oyente  [levantada por: similitud_texto]
+      similitud_texto 0.408 | familia_id 0.000 | paso_contra_nodo 0.434
+      paso 6 del candidato contra paso 3 de ajustar_franqueza_oido_oyente
+    vecino despedir_persona_franqueza_radical  [levantada por: similitud_texto]
+      similitud_texto 0.386 | familia_id 0.000 | paso_contra_nodo 0.415
+      paso 5 del candidato contra paso 11 de despedir

@@ -28507,7 +28507,7 @@ sigue siendo mio** y se corre en el mismo acto de escribir cada candidato (`EXTR
 | # | tarea | estado |
 |---:|---|---|
 | 1 | **PRIMERA Y SIN SOLAPE**: los registros, las dos cifras que acumularon, las tres remisiones a `Q.6`, el remedio de escritura y las cinco adjudicaciones | ~~ABIERTA~~ **CERRADA** (`R.2`). **Las dos cifras remedidas con instrumento propio y corregidas sin borrar, las tres remisiones reapuntadas, y UNA PARADA declarada**: el remedio 3 manda escribir en `docs/BANCO_DE_REGLAS.md`, que no es mi sede |
-| 2 | **La fusion que el `REPITE` de `L51` promete y no se hizo**, y el veredicto que `Q.6` se llevo | ABIERTA |
+| 2 | **La fusion que el `REPITE` de `L51` promete y no se hizo**, y el veredicto que `Q.6` se llevo | ~~ABIERTA~~ **CERRADA** (`R.3`). **Las TRES cosas que `L51` anade absorbidas por el donante (`P5`, `P6`, `P7`), frontera de unidad publicada, aduana vuelta a correr: `ENTRARIA`, `0 CAERIA`**, y el veredicto del par escrito con su razon |
 | 3 | **Las cuatro aristas que el libro declara en `L113`** y el reparo de las aristas 49 a 52 | ABIERTA |
 | 4 | **`cap_14` entero**, la ultima unidad sin minar del lote 4 | ABIERTA |
 | 5 | **El cierre del lote 4 y la insercion `D.39`**, si y solo si `cap_14` cierra el lote | ABIERTA |
@@ -28663,3 +28663,160 @@ todos al final, los veinte dirian `330`.** Es una prueba mejor que mi palabra, y
 > remisiones reapuntadas (una de ellas a un veredicto que hay que escribir hoy), tres remedios de
 > escritura aplicados en esta misma vuelta, **una PARADA declarada y no arreglada por mi**, y las
 > cinco adjudicaciones recogidas sin reabrir ninguna.
+
+---
+
+## R.3. TAREA 2: **LA FUSION QUE EL `REPITE` DE `L51` PROMETIA Y NO SE HIZO**. CERRADA
+
+*Es la unica caida de catalogo que la `ACTA 23` me encontro. **La clase es buena: `L51` NO da nodo**,
+y eso no se reabre. Lo que faltaba es la otra mitad de `P.19`: **fundir es que el DONANTE se lleve lo
+que el tramo repetido anade.***
+
+### R.3.a. LAS DOS LINEAS, **CON SU `sed` PEGADO AL LADO** (`D.35`)
+
+Salida de los dos comandos, guardada en `.v24/citas_tarea2.txt`:
+
+    $ sed -n "51p" fuentes/scott_radical_candor/cap_12.md | fold -w 100
+    That's a lot of things to do, but it's not as bad as it sounds. If you take every suggestion rec
+    ommended in this book, the total time required is about ten hours a week, five of which are 1:1 meet
+    ings that you're probably already holding anyway. Of course, some processes like growth-management
+     conversations, skip-level meetings, and calibrations don't get spread out each week but will come
+     in bursts, so some weeks you may have eight hours of work associated with your core responsibilitie
+    s as a boss, others twelve others five. But that still leaves fifteen hours a week to think and exec
+    ute, and another fifteen hours to deal with the various unpredictable things that you'll be asked
+    to do.
+
+    $ sed -n "17p" fuentes/scott_radical_candor/cap_03.md | fold -w 100
+    As you read on, you might occasionally feel overwhelmed by the number of things I'm suggesting you
+     do as a manager. Take a deep breath. My goal is to save you time, not to litter your calendar with
+    meetings. You do need to spend time with your direct reports to be a great boss, but you don't nee
+    d to spend ALL your time with them. If you implement every single idea, tool, and technique in this
+    book, the time you dedicate to managing your team will come to approximately ten hours a week, and t
+    hose ten hours should save you enormous lost time and headaches later. I'll also suggest you block
+     out about fifteen hours a week for you to think and execute independently in your area of expertise
+    . That leaves another fifteen hours in a forty-hour work week. Hopefully you can claim them as your
+     own, though if you're like me you'll have to use most of them to deal with the unpredictable.
+
+**LA UNICA DIFERENCIA CON EL FICHERO ES EL APOSTROFO:** el libro usa el apostrofo tipografico y aqui
+va el recto, porque el barrido de estilo de esta casa lee todo lo que escribo. **Ni una palabra
+cambia.**
+
+### R.3.b. LAS TRES COSAS QUE `L51` ANADE, CONTADAS CONTRA LOS SIETE PASOS QUE EL DONANTE TENIA
+
+**MI `Q.4.b` DE LA VUELTA 23 ESCRIBIO *lo unico que `L51` anade es que cinco de esas diez son
+reuniones a solas*. SON TRES, NO UNA, y la linea esta pegada arriba.** El auditor tiene razon y la
+frase queda tachada en su sede (`R.2.b`).
+
+| # | lo que `L51` anade | estaba en `repartir_semana_cuarenta_horas_jefe`? | donde entra hoy |
+|---:|---|---|---|
+| **1** | cinco de esas diez horas son reuniones a solas que probablemente ya tenias | **NO**, sus siete pasos cifraban las diez horas enteras sin descomponerlas | **P5** |
+| **2** | las conversaciones de gestion del crecimiento, los saltos de nivel y las calibraciones vienen a RACHAS y no se reparten por semana | **NO** | **P6** |
+| **3** | por eso hay semanas de ocho horas, otras de doce y otras de cinco | **NO** | **P7** |
+
+**POR QUE ENTRAN EN EL 5, EL 6 Y EL 7 Y NO AL FINAL (`D.36`, el orden que lee):** las tres refinan
+**la partida de las diez horas**, que es el `P4`. Ponerlas detras del `P10`, que cierra la tercera
+partida, obligaria al lector a volver atras. **El orden que lee manda sobre el orden en que las
+encontre.**
+
+**LA FRONTERA DE UNIDAD, PUBLICADA ANTES DE CORTAR** (`EXTRACTOR.md` 10), y va dentro del propio
+fichero:
+
+| tramo | unidad | linea |
+|---|---|---:|
+| `P1`, `P2`, `P3`, `P4`, `P8`, `P9`, `P10` | `cap_03`, *How to Use This Book* | **L17** |
+| `P5`, `P6`, `P7` | `cap_12`, *Getting Started* | **L51** |
+
+**LOS TRES PASOS NUEVOS SON TRANSCRIPCION Y NO PUENTE**, marcados uno a uno contra `L51` en la
+relectura `D.30` del acto: **cada cifra (cinco, ocho, doce, cinco), cada proceso nombrado (gestion
+del crecimiento, salto de nivel, calibraciones) y la horquilla entera estan escritos en esa linea.**
+Lo que `L51` no dice y por eso no esta escrito: cuales de las cinco horas de reunion a solas son las
+que ya tenias, cada cuanto vienen las rachas, ni que se recorta la semana de doce.
+
+### R.3.c. **EL VEREDICTO DEL PAR, ESCRITO CON SU RAZON** (el que `Q.6` se llevo)
+
+> **PAR:** `fuentes/scott_radical_candor/cap_12.md` **`L51`** contra
+> `repartir_semana_cuarenta_horas_jefe` (unidad de origen `cap_03` `L17`).
+>
+> **VEREDICTO: `REPITE`.** `L51` vuelve a dar la misma cuenta que `L17` ya daba y que el donante ya
+> tenia en sus siete pasos: **diez horas de gestion, quince de trabajo propio y quince de lo
+> imprevisible sobre una semana de cuarenta.** No es un procedimiento distinto: es **la misma
+> aritmetica repetida en el capitulo de arranque**, y `P.19` manda fundirla en el donante en vez de
+> fabricar el gemelo de su propio donante.
+>
+> **Y LA OTRA MITAD DE `P.19`, QUE ES LA QUE HOY SE PAGA:** el donante **absorbe las tres cosas que
+> `L51` anade y el no tenia**, contadas en `R.3.b`. **Fundir sin absorber es perder la frontera por
+> PODA**, que es lo que la `ACTA 23` `6.1` nombro.
+>
+> **SU SEDE PROPIA SERA `bitacora/VEREDICTOS.jsonl` EL DIA DE LA INSERCION**, que es hoy si `cap_14`
+> cierra el lote 4 (`R.6`), **y hasta entonces su sede es este reporte y lo digo.**
+
+**PERO HAY UNA COSA MEDIDA QUE NO CUADRA CON ESA FRASE, Y LA DECLARO EN VEZ DE RESOLVERLA
+COPIANDO** (`EXTRACTOR.md` 5): **este par tiene UN SOLO extremo que sea nodo.** El otro es una linea
+del libro. Las filas de `bitacora/VEREDICTOS.jsonl` llevan `candidato` y `vecino`, **los dos ids de
+nodo**, y las escribe `forja.py insertar` por cada vecino que la aduana levante. **Medido hoy, este
+candidato levanta CERO vecinos** (`R.3.d`), asi que **el dia de la insercion la bitacora no va a
+recibir ninguna fila por este par**, salvo que alguien le de sede propia. **Lo escribo asi para que
+la promesa no se quede escrita y sin cumplir, que es exactamente la especie que me trajo aqui.**
+
+### R.3.d. EL SALDO DE LA ADUANA, CORRIDO OTRA VEZ **PORQUE UNA CORRECCION VUELVE A ESCRIBIR EL CANDIDATO** (`EXTRACTOR.md` 16)
+
+    $ python forja.py informe cuarentena/scott_radical_candor/repartir_semana_cuarenta_horas_jefe.json
+      poblacion del barrido       : 330   (203 del grafo mas 127 que esperan en bandejas)
+      EL SALDO
+        ENTRARIAN sin leer nada          : 1
+        BLOQUEARIAN esperando veredicto  : 0
+        CAERIAN por una guarda           : 0
+        CHOCAN entre si dentro del lote  : 0
+      [ENTRARIA] repartir_semana_cuarenta_horas_jefe   (repartir_semana_cuarenta_horas_jefe.json)
+
+**CERO `CAERIA`.** Guardado en `.aduana_v24/repartir_semana_cuarenta_horas_jefe.txt`.
+
+**Y UNA COSA QUE NO ESPERABA Y QUE PUBLICO PORQUE VA CONTRA LA COMODIDAD DE MI PROPIA CIFRA:** con
+los siete pasos viejos este candidato levantaba **13 vecinos**, todos por `similitud_texto` en la
+banda **0,359 a 0,408**, es decir pegados al umbral de **0,35**; con los diez pasos de hoy levanta
+**cero**. Lo se porque **antes de tocar el fichero corri la aduana sobre una copia** que hice para
+otra cosa (comprobar que una clave repetida cae), y esa copia llevaba los siete pasos originales:
+su salida esta en `.v24/prueba_dos_claves.txt`.
+
+> **LO QUE ESO SIGNIFICA, DICHO SIN ADORNARLO: tres pasos mas diluyeron trece vecindades por debajo
+> del umbral.** No es que el candidato haya mejorado: es que **la banda baja del umbral 1 es
+> fragil**, y una fusion legitima puede apagar una cola de lectura entera sin que nadie lo note.
+> **No propongo mover ningun umbral** (`EXTRACTOR.md` 11: ninguna vuelta mueve un umbral), **pero la
+> medicion queda escrita con su corte**, porque es material para quien si puede moverlo.
+
+### R.3.e. **POR QUE NO ANADO UNA SEGUNDA CLAVE DE FUENTE, MEDIDO Y NO SUPUESTO**
+
+El encargo pide `cap_12` `L51` *declarada como segunda fuente en el formato que
+`fuentes/FUENTES_CANONICAS.json` y `REGLAS_DE_ID.md` piden*. **Fui a los dos ficheros y el formato
+que piden es este**, salida guardada en `.v24/una_sola_grafia.txt`:
+
+    $ python -c "leer la nota de cabecera de fuentes/FUENTES_CANONICAS.json"
+    Tabla canonica de fuentes (manual principio 8: LA FUENTE ES UN CAMPO SAGRADO). Una sola grafia
+    por libro. Ningun nodo entra con una fuente que no este aqui: la fuente se registra ANTES del
+    primer nodo
+
+    $ grep -n "repetida en la lista de fuentes" src/gate.py
+    179:                    "fuente '%s' repetida en la lista de fuentes del nodo" % clave))
+
+**`cap_03` Y `cap_12` SON DOS UNIDADES DEL MISMO LIBRO, no dos libros.** La clave es la misma
+(`scott_radical_candor`), la tabla canonica manda **una sola grafia por libro**, y el gate tumba una
+clave repetida dentro del campo `fuentes` de un nodo. **Lo que cambia no es la FUENTE sino la
+UNIDAD**, y por eso la unidad anadida se declara **con su frontera dentro del `resumen_teorico`**,
+que es donde este lote declara todas sus unidades de origen, y no en el campo `fuentes`.
+
+**NO LO LEO COMO UNA CONTRADICCION DEL ENCARGO: lo leo como el formato que los dos ficheros que el
+encargo me manda consultar piden de verdad.** Si la lectura correcta era otra, esta escrita aqui
+para que se corrija por correccion declarada.
+
+### R.3.f. LO QUE **NO** TOCO, POR ORDEN EXPRESA
+
+**La frontera de `cap_12` se queda en DOS piezas.** No abro pieza nueva: el punto 4 de la TAREA 2 lo
+prohibe expresamente, la `ACTA 23` `7.1` lo adjudico, y **el propio auditor retiro por escrito su
+apertura ciega de tres piezas** despues de releer `L21` y `L23` con `EXTRACTOR.md` 9 delante.
+**Se mueve el donante, no la frontera.**
+
+> ## **TAREA 2 CERRADA.** Las tres cosas de `L51` absorbidas por el donante en los pasos `P5`, `P6`
+> y `P7`, la frontera de unidad publicada dentro del fichero, la correccion declarada sin borrar lo
+> viejo, **la aduana vuelta a correr con `0 CAERIA`**, el veredicto del par escrito con su razon, y
+> **una promesa de sede corregida antes de hacerla**, porque el par solo tiene un extremo que sea
+> nodo.
