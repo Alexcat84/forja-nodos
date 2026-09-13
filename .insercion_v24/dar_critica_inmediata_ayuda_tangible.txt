@@ -1,6 +1,6 @@
-ADUANA DE INSERCION, candidato 'criticar_trabajo_evitar_desanimo'
+ADUANA DE INSERCION, candidato 'dar_critica_inmediata_ayuda_tangible'
   esquema, reglas de id, fuentes canonicas y guiones: verde
-  blocking multi seÃ±al contra 211 nodo(s) del dataset
+  blocking multi seÃ±al contra 212 nodo(s) del dataset
 
 VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
   Las seÃ±ales ordenan, nunca deciden (manual principio 4):
@@ -8,12 +8,12 @@ VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
 
   vecino desplegar_marco_franqueza_radical  [Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones]
     levantada por: similitud_texto
-    similitud_texto    0.359 (umbral 0.35)
+    similitud_texto    0.388 (umbral 0.35)
     familia_id         0.000 (umbral 0.30)
-    paso_contra_nodo   0.451 (umbral 0.60)
-    paso 12 del candidato contra paso 7 de desplegar_marco_franqueza_radical
+    paso_contra_nodo   0.409 (umbral 0.60)
+    paso 7 del candidato contra paso 1 de desplegar_marco_franqueza_radical
 
 GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
-  nodos en el grafo: 212
+  nodos en el grafo: 213
   censos escritos: denominaciones
   veredictos en bitacora/VEREDICTOS.jsonl: 1

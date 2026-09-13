@@ -1,8 +1,8 @@
 ADUANA DE INSERCION, candidato 'ajustar_franqueza_oido_oyente'
   esquema, reglas de id, fuentes canonicas y guiones: verde
-  blocking multi seÃ±al contra 205 nodo(s) del dataset
+  blocking multi seÃ±al contra 210 nodo(s) del dataset
 
-VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
   Las seÃ±ales ordenan, nunca deciden (manual principio 4):
   esta cola es para leer, no un veredicto.
 
@@ -13,10 +13,28 @@ VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
     paso_contra_nodo   0.465 (umbral 0.60)
     paso 2 del candidato contra paso 7 de desplegar_marco_franqueza_radical
 
-BLOQUEADO: faltan veredictos para desplegar_marco_franqueza_radical
+  vecino delimitar_franqueza_radical_cinco_noes  [Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir]
+    levantada por: similitud_texto
+    similitud_texto    0.360 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.460 (umbral 0.60)
+    paso 6 del candidato contra paso 3 de delimitar_franqueza_radical_cinco_noes
+
+  vecino equilibrar_elogio_critica_equipo  [Dar mas elogio que critica sin usar ningun ratio fijo, y repartir tu energia al reves de como te sale]
+    levantada por: similitud_texto
+    similitud_texto    0.359 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.393 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de equilibrar_elogio_critica_equipo
+
+BLOQUEADO: faltan veredictos para delimitar_franqueza_radical_cinco_noes, equilibrar_elogio_critica_equipo
   La aduana no juzga: obliga a juzgar (manual seccion 3).
   Vuelve a correr el comando con un veredicto por vecino:
-    --veredicto "desplegar_marco_franqueza_radical|CONTINUA|madre=desplegar_marco_franqueza_radical|que aÃ±ade el hijo a la madre"
-    --veredicto "desplegar_marco_franqueza_radical|REPITE|por que no aÃ±ade procedimiento"
-    --veredicto "desplegar_marco_franqueza_radical|SANO|por que no son el mismo trabajo"
-    --veredicto "desplegar_marco_franqueza_radical|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|CONTINUA|madre=delimitar_franqueza_radical_cinco_noes|que aÃ±ade el hijo a la madre"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|SANO|por que no son el mismo trabajo"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "equilibrar_elogio_critica_equipo|CONTINUA|madre=equilibrar_elogio_critica_equipo|que aÃ±ade el hijo a la madre"
+    --veredicto "equilibrar_elogio_critica_equipo|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "equilibrar_elogio_critica_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "equilibrar_elogio_critica_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

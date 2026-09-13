@@ -464,3 +464,21 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-13 | invitar_desafio_reciproco_equipo | nombre_largo | La parte mas dificil de construir la confianza, segun el propio texto: que el desafio sea reciproco pese a la relacion de mando | castellano | - |
 | 2026-09-13 | invitar_desafio_reciproco_equipo | otro_idioma | encourage people to challenge you directly | ingles | - |
 | 2026-09-13 | invitar_desafio_reciproco_equipo | otro_idioma | reciprocal challenge | ingles | - |
+| 2026-09-13 | equilibrar_elogio_critica_equipo | nombre_largo | Por que mas elogio que critica, por que el ratio correcto es peligroso, por que el sandwich de opinion no funciona, y donde poner la energia en cada uno de los dos | castellano | - |
+| 2026-09-13 | equilibrar_elogio_critica_equipo | otro_idioma | balance praise and criticism | ingles | - |
+| 2026-09-13 | equilibrar_elogio_critica_equipo | otro_idioma | feedback sandwich | ingles | - |
+| 2026-09-13 | imaginar_caso_simple_bragueta_abierta | nombre_largo | Resolver el problema dificil trayendolo al parecido facil: que dirias si un companiero saliera del servicio con la bragueta bajada, y donde te pone en el marco cada una de las cuatro salidas | castellano | - |
+| 2026-09-13 | imaginar_caso_simple_bragueta_abierta | otro_idioma | your fly is down | ingles | - |
+| 2026-09-13 | reparar_mal_comportamiento_evitar_disculpa_falsa | nombre_largo | Que hacer cuando te has portado mal y te lo han dicho: el orden que convierte una disculpa en reparacion y no en insinceridad manipuladora | castellano | - |
+| 2026-09-13 | reparar_mal_comportamiento_evitar_disculpa_falsa | otro_idioma | the false apology | ingles | - |
+| 2026-09-13 | manejar_enfado_persona_desafiada | nombre_largo | Que hacer cuando lo que dijiste duele: reconocer el dolor, no fingir que no duele y no fingir que no hay problema | castellano | - |
+| 2026-09-13 | manejar_enfado_persona_desafiada | otro_idioma | don't take it personally | ingles | - |
+| 2026-09-13 | criticar_trabajo_evitar_desanimo | nombre_largo | La frontera peligrosa entre la agresion odiosa y la franqueza radical: criticar el trabajo y no a la persona, articular el porque, devolverla a la via, y no poner en duda tu confianza en su capacidad | castellano | - |
+| 2026-09-13 | criticar_trabajo_evitar_desanimo | otro_idioma | the perilous border | ingles | - |
+| 2026-09-13 | criticar_trabajo_evitar_desanimo | otro_idioma | fundamental attribution error | ingles | - |
+| 2026-09-13 | dar_critica_inmediata_ayuda_tangible | nombre_largo | Como el texto desmonta la conversacion de dos minutos que puso en marcha el metodo: elogio concreto y sincero por delante, sin sandwich, escalando la franqueza cuando no te oyen, sin personalizar y con ayuda pagada encima de la mesa | castellano | - |
+| 2026-09-13 | dar_critica_inmediata_ayuda_tangible | otro_idioma | operationalizing good guidance | ingles | - |
+| 2026-09-13 | dar_critica_inmediata_ayuda_tangible | otro_idioma | sandwiching | ingles | - |
+| 2026-09-13 | cambiar_potencial_trayectoria_crecimiento | nombre_largo | Dejar de preguntar si alguien tiene potencial alto o bajo y empezar a preguntar en que trayectoria de crecimiento quiere estar ahora mismo, con las dos columnas del texto y sus cuatro parejas de rasgos | castellano | - |
+| 2026-09-13 | cambiar_potencial_trayectoria_crecimiento | otro_idioma | growth trajectory | ingles | - |
+| 2026-09-13 | cambiar_potencial_trayectoria_crecimiento | otro_idioma | performance potential matrix | ingles | - |

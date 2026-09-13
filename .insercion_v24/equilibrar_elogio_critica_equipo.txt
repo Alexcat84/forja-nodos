@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'equilibrar_elogio_critica_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi seÃ±al contra 207 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 208
+  censos escritos: atribuciones, denominaciones

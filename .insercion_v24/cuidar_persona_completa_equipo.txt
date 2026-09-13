@@ -1,8 +1,8 @@
 ADUANA DE INSERCION, candidato 'cuidar_persona_completa_equipo'
   esquema, reglas de id, fuentes canonicas y guiones: verde
-  blocking multi seÃ±al contra 205 nodo(s) del dataset
+  blocking multi seÃ±al contra 210 nodo(s) del dataset
 
-VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+VECINOS POR ENCIMA DE UMBRAL: 7. LA INSERCION QUEDA BLOQUEADA.
   Las seÃ±ales ordenan, nunca deciden (manual principio 4):
   esta cola es para leer, no un veredicto.
 
@@ -13,12 +13,26 @@ VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
     paso_contra_nodo   0.615 (umbral 0.60)
     paso 4 del candidato contra paso 1 de usar_lenguaje_no_discriminatorio_entrevista
 
+  vecino delimitar_franqueza_radical_cinco_noes  [Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir]
+    levantada por: similitud_texto
+    similitud_texto    0.419 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.466 (umbral 0.60)
+    paso 2 del candidato contra paso 6 de delimitar_franqueza_radical_cinco_noes
+
   vecino gestionar_personas_equipo  [Gestionar bien a las personas de tu equipo]
     levantada por: familia_id
     similitud_texto    0.221 (umbral 0.35)
     familia_id         0.400 (umbral 0.30)
     paso_contra_nodo   0.455 (umbral 0.60)
     paso 6 del candidato contra paso 5 de gestionar_personas_equipo
+
+  vecino imaginar_caso_simple_bragueta_abierta  [Imaginar el caso simple de la bragueta abierta antes de decir algo dificil, y mirar en que cuadrante cae tu silencio]
+    levantada por: similitud_texto
+    similitud_texto    0.359 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.430 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de imaginar_caso_simple_bragueta_abierta
 
   vecino respetar_cuidar_persona_cargo  [Respetar a tu persona a cargo y cuidar de ella]
     levantada por: familia_id
@@ -34,22 +48,25 @@ VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
     paso_contra_nodo   0.424 (umbral 0.60)
     paso 2 del candidato contra paso 1 de desplegar_marco_franqueza_radical
 
-BLOQUEADO: faltan veredictos para usar_lenguaje_no_discriminatorio_entrevista, gestionar_personas_equipo, respetar_cuidar_persona_cargo, desplegar_marco_franqueza_radical
+  vecino equilibrar_elogio_critica_equipo  [Dar mas elogio que critica sin usar ningun ratio fijo, y repartir tu energia al reves de como te sale]
+    levantada por: similitud_texto
+    similitud_texto    0.378 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.410 (umbral 0.60)
+    paso 4 del candidato contra paso 9 de equilibrar_elogio_critica_equipo
+
+BLOQUEADO: faltan veredictos para delimitar_franqueza_radical_cinco_noes, imaginar_caso_simple_bragueta_abierta, equilibrar_elogio_critica_equipo
   La aduana no juzga: obliga a juzgar (manual seccion 3).
   Vuelve a correr el comando con un veredicto por vecino:
-    --veredicto "usar_lenguaje_no_discriminatorio_entrevista|CONTINUA|madre=usar_lenguaje_no_discriminatorio_entrevista|que aÃ±ade el hijo a la madre"
-    --veredicto "usar_lenguaje_no_discriminatorio_entrevista|REPITE|por que no aÃ±ade procedimiento"
-    --veredicto "usar_lenguaje_no_discriminatorio_entrevista|SANO|por que no son el mismo trabajo"
-    --veredicto "usar_lenguaje_no_discriminatorio_entrevista|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
-    --veredicto "gestionar_personas_equipo|CONTINUA|madre=gestionar_personas_equipo|que aÃ±ade el hijo a la madre"
-    --veredicto "gestionar_personas_equipo|REPITE|por que no aÃ±ade procedimiento"
-    --veredicto "gestionar_personas_equipo|SANO|por que no son el mismo trabajo"
-    --veredicto "gestionar_personas_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
-    --veredicto "respetar_cuidar_persona_cargo|CONTINUA|madre=respetar_cuidar_persona_cargo|que aÃ±ade el hijo a la madre"
-    --veredicto "respetar_cuidar_persona_cargo|REPITE|por que no aÃ±ade procedimiento"
-    --veredicto "respetar_cuidar_persona_cargo|SANO|por que no son el mismo trabajo"
-    --veredicto "respetar_cuidar_persona_cargo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
-    --veredicto "desplegar_marco_franqueza_radical|CONTINUA|madre=desplegar_marco_franqueza_radical|que aÃ±ade el hijo a la madre"
-    --veredicto "desplegar_marco_franqueza_radical|REPITE|por que no aÃ±ade procedimiento"
-    --veredicto "desplegar_marco_franqueza_radical|SANO|por que no son el mismo trabajo"
-    --veredicto "desplegar_marco_franqueza_radical|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|CONTINUA|madre=delimitar_franqueza_radical_cinco_noes|que aÃ±ade el hijo a la madre"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|SANO|por que no son el mismo trabajo"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "imaginar_caso_simple_bragueta_abierta|CONTINUA|madre=imaginar_caso_simple_bragueta_abierta|que aÃ±ade el hijo a la madre"
+    --veredicto "imaginar_caso_simple_bragueta_abierta|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "imaginar_caso_simple_bragueta_abierta|SANO|por que no son el mismo trabajo"
+    --veredicto "imaginar_caso_simple_bragueta_abierta|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "equilibrar_elogio_critica_equipo|CONTINUA|madre=equilibrar_elogio_critica_equipo|que aÃ±ade el hijo a la madre"
+    --veredicto "equilibrar_elogio_critica_equipo|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "equilibrar_elogio_critica_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "equilibrar_elogio_critica_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

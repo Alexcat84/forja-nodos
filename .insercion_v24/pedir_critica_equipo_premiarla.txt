@@ -1,24 +1,31 @@
-ADUANA DE INSERCION, candidato 'revisar_ciclo_responsabilidades_relaciones'
+ADUANA DE INSERCION, candidato 'pedir_critica_equipo_premiarla'
   esquema, reglas de id, fuentes canonicas y guiones: verde
-  blocking multi seÃ±al contra 211 nodo(s) del dataset
+  blocking multi seÃ±al contra 213 nodo(s) del dataset
 
-VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
   Las seÃ±ales ordenan, nunca deciden (manual principio 4):
   esta cola es para leer, no un veredicto.
 
+  vecino equilibrar_elogio_critica_equipo  [Dar mas elogio que critica sin usar ningun ratio fijo, y repartir tu energia al reves de como te sale]
+    levantada por: similitud_texto, familia_id
+    similitud_texto    0.358 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.444 (umbral 0.60)
+    paso 6 del candidato contra paso 7 de equilibrar_elogio_critica_equipo
+
   vecino desplegar_marco_franqueza_radical  [Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones]
     levantada por: similitud_texto
-    similitud_texto    0.364 (umbral 0.35)
+    similitud_texto    0.369 (umbral 0.35)
     familia_id         0.000 (umbral 0.30)
-    paso_contra_nodo   0.505 (umbral 0.60)
-    paso 6 del candidato contra paso 9 de desplegar_marco_franqueza_radical
+    paso_contra_nodo   0.439 (umbral 0.60)
+    paso 11 del candidato contra paso 9 de desplegar_marco_franqueza_radical
 
   vecino manejar_enfado_persona_desafiada  [Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario]
     levantada por: similitud_texto
-    similitud_texto    0.368 (umbral 0.35)
+    similitud_texto    0.379 (umbral 0.35)
     familia_id         0.000 (umbral 0.30)
-    paso_contra_nodo   0.497 (umbral 0.60)
-    paso 6 del candidato contra paso 3 de manejar_enfado_persona_desafiada
+    paso_contra_nodo   0.429 (umbral 0.60)
+    paso 6 del candidato contra paso 2 de manejar_enfado_persona_desafiada
 
 BLOQUEADO: faltan veredictos para manejar_enfado_persona_desafiada
   La aduana no juzga: obliga a juzgar (manual seccion 3).

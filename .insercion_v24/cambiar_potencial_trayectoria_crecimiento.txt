@@ -1,6 +1,6 @@
-ADUANA DE INSERCION, candidato 'manejar_enfado_persona_desafiada'
+ADUANA DE INSERCION, candidato 'cambiar_potencial_trayectoria_crecimiento'
   esquema, reglas de id, fuentes canonicas y guiones: verde
-  blocking multi seÃ±al contra 210 nodo(s) del dataset
+  blocking multi seÃ±al contra 213 nodo(s) del dataset
 
 VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
   Las seÃ±ales ordenan, nunca deciden (manual principio 4):
@@ -8,26 +8,26 @@ VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
 
   vecino delimitar_franqueza_radical_cinco_noes  [Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir]
     levantada por: similitud_texto
-    similitud_texto    0.361 (umbral 0.35)
+    similitud_texto    0.351 (umbral 0.35)
     familia_id         0.000 (umbral 0.30)
-    paso_contra_nodo   0.471 (umbral 0.60)
-    paso 2 del candidato contra paso 3 de delimitar_franqueza_radical_cinco_noes
+    paso_contra_nodo   0.502 (umbral 0.60)
+    paso 8 del candidato contra paso 5 de delimitar_franqueza_radical_cinco_noes
+
+  vecino cambiar_mentalidad_fija_crecimiento  [Cambiar la mentalidad fija por la de crecimiento para poder pedir opinion]
+    levantada por: familia_id
+    similitud_texto    0.209 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.439 (umbral 0.60)
+    paso 12 del candidato contra paso 3 de cambiar_mentalidad_fija_crecimiento
 
   vecino desplegar_marco_franqueza_radical  [Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones]
     levantada por: similitud_texto
-    similitud_texto    0.428 (umbral 0.35)
+    similitud_texto    0.372 (umbral 0.35)
     familia_id         0.000 (umbral 0.30)
-    paso_contra_nodo   0.440 (umbral 0.60)
-    paso 2 del candidato contra paso 2 de desplegar_marco_franqueza_radical
-
-  vecino repartir_semana_cuarenta_horas_jefe  [Repartir la semana de cuarenta horas del jefe entre gestionar, pensar por tu cuenta y lo imprevisible]
-    levantada por: similitud_texto
-    similitud_texto    0.351 (umbral 0.35)
-    familia_id         0.000 (umbral 0.30)
-    paso_contra_nodo   0.428 (umbral 0.60)
-    paso 2 del candidato contra paso 1 de repartir_semana_cuarenta_horas_jefe
+    paso_contra_nodo   0.397 (umbral 0.60)
+    paso 8 del candidato contra paso 1 de desplegar_marco_franqueza_radical
 
 GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
-  nodos en el grafo: 211
+  nodos en el grafo: 214
   censos escritos: atribuciones, denominaciones
   veredictos en bitacora/VEREDICTOS.jsonl: 3

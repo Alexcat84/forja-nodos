@@ -1,0 +1,11 @@
+| medida | valor al cerrar |
+|---|---:|
+| nodos en el grafo | **214** |
+| veredictos en bitacora | **156** |
+| candidatos del lote 4 que siguen en cuarentena | **131** |
+| candidatos del lote 4 ya en _insertados | **11** |
+| ficheros en cuarentena/_insertados de todos los lotes | **212** |
+| unidades del lote 4 sin minar | **0** |
+| lineas del reporte | **29678** |
+| commits de esta vuelta | **7** |
+| rama | `extraccion-mundo-11` |
