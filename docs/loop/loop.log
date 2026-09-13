@@ -393,3 +393,21 @@ BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 [2026-09-12 22:49:56]   sello de la apertura ciega verificado: intacto tras el turno
 [2026-09-12 22:49:57] VUELTA 2 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-12 22:49:57] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-12 23:45:44] extractor listo (USD 26.44116700000001), 3347s, intento 1 de 7
+[2026-09-12 23:45:45] VUELTA 2 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-12 23:45:45]   hereda 5 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-13 00:50:18] auditor ciego listo (USD 12.6247215), 3873s, intento 1 de 7
+[2026-09-13 00:50:22]   herencia declarada: acta leida por su huella y los 5 heredados resueltos
+[2026-09-13 00:50:23]   apertura ciega sellada: 6bc2e586a742521230e7bdb7c80cc162a9dad653
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 1 hallazgo(s)
+  .nombres_auditor_v22.py linea 14 columna 39: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-13 00:50:24] VUELTA 2 : AUDITOR (claude-opus-5)
