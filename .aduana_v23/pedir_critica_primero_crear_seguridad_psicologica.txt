@@ -12,21 +12,18 @@ EL SALDO
   CHOCAN entre si dentro del lote  : 0
 
 LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
-  vecinos levantados en total      : 2
-  por candidato bloqueado          : menor 2, mediana 2, mayor 2
-  que señal levanta cada vecindad  : similitud_texto 2
+  vecinos levantados en total      : 1
+  por candidato bloqueado          : menor 1, mediana 1, mayor 1
+  que señal levanta cada vecindad  : paso_contra_nodo 1
 
 ============================================================================
 LA LISTA COMPLETA, candidato por candidato
 ============================================================================
 
-[BLOQUEARIA] practicar_triangulo_critica_tres_papeles   (practicar_triangulo_critica_tres_papeles.json)
-    vecino abrazar_incomodidad_silencio_contar_seis  [levantada por: similitud_texto]
-      similitud_texto 0.375 | familia_id 0.000 | paso_contra_nodo 0.471
-      paso 4 del candidato contra paso 5 de abrazar_incomodidad_silencio_contar_seis
-    vecino escuchar_entender_critica_dominar_defensa  [levantada por: similitud_texto]
-      similitud_texto 0.352 | familia_id 0.111 | paso_contra_nodo 0.469
-      paso 1 del candidato contra paso 6 de escuchar_entender_critica_dominar_defensa
+[BLOQUEARIA] pedir_critica_primero_crear_seguridad_psicologica   (pedir_critica_primero_crear_seguridad_psicologica.json)
+    vecino integrar_peticion_critica_rutina_existente  [levantada por: paso_contra_nodo]
+      similitud_texto 0.290 | familia_id 0.100 | paso_contra_nodo 0.733
+      paso 17 del candidato contra paso 6 de integrar_peticion_critica_rutina_existente
 
 NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
 entre hace falta python forja.py insertar, uno por vez, con su

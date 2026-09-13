@@ -1,0 +1,27 @@
+==============================================================================
+1. LAS QUINCE ARISTAS NUEVAS, CON SU PASO DE MADRE IMPRESO Y SU HIJO CONTADO
+==============================================================================
+| # | madre | hijo | `--paso` | especie | el paso de la madre, impreso del fichero | pasos del hijo |
+|---:|---|---|---:|---|---|---:|
+| 38 | `desplegar_plan_orden_operaciones_franqueza_radical` | `contar_historias_propias_explicar_franqueza_radical` | **4** | `D.29` | `Empieza por la etapa que el texto pone primera, y su rotulo es comparte tus historias.` | **8** |
+| 39 | `desplegar_plan_orden_operaciones_franqueza_radical` | `desplegar_tres_conversaciones_carrera` | **12** | `D.29` | `Cuando eso este en marcha ya estas listo para las conversaciones de carrera: empiezalas con tu equipo, y empieza por las personas con las que llevas mas tiempo trabajando.` | **12** |
+| 40 | `desplegar_plan_orden_operaciones_franqueza_radical` | `bloquear_tiempo_pensar_calendario` | **30** | `D.29` | `Pon algo de tiempo para pensar en tu calendario.` | **6** |
+| 41 | `desplegar_plan_orden_operaciones_franqueza_radical` | `armar_plan_anual_crecimiento_equipo` | **32** | `D.29` | `Planea el futuro de tu equipo: empieza a hacer un plan de gestion del crecimiento para cada persona de tu equipo.` | **29** |
+| 42 | `contar_historias_propias_explicar_franqueza_radical` | `contar_cuatro_historias_propias_ver_hueco_intencion` | **4** | `D.29` | `Busca cual es tu version de la historia del um o de la historia de Bob, que son las dos que el texto pone como ejemplares.` | **17** |
+| 43 | `mejorar_consciencia_propia_relacional_dos_practicas` | `contar_cuatro_historias_propias_ver_hueco_intencion` | **11** | `D.37` | `Haz la primera, contar historias, que el texto despliega bajo el rotulo cual es tu historia.` | **17** |
+| 44 | `mejorar_consciencia_propia_relacional_dos_practicas` | `practicar_triangulo_critica_tres_papeles` | **12** | `D.37` | `Haz la segunda, el juego de papeles, que el texto despliega bajo el rotulo el triangulo de la critica.` | **15** |
+| 45 | `pedir_critica_primero_crear_seguridad_psicologica` | `elegir_pregunta_recurrente_pedir_critica` | **17** | `D.37` | `Y cuando ya tengas claro por que pruebas que aguantas antes de repartir, pasa a los cuatro elementos con los que el texto despliega como se pide critica: dar con una pregunta recurrente, abrazar la incomodidad, escuchar con intencion de entender, y hacer tangible la escucha premiando la franqueza.` | **24** |
+| 46 | `pedir_critica_primero_crear_seguridad_psicologica` | `abrazar_incomodidad_silencio_contar_seis` | **17** | `D.37` | `Y cuando ya tengas claro por que pruebas que aguantas antes de repartir, pasa a los cuatro elementos con los que el texto despliega como se pide critica: dar con una pregunta recurrente, abrazar la incomodidad, escuchar con intencion de entender, y hacer tangible la escucha premiando la franqueza.` | **12** |
+| 47 | `pedir_critica_primero_crear_seguridad_psicologica` | `escuchar_entender_critica_dominar_defensa` | **17** | `D.37` | `Y cuando ya tengas claro por que pruebas que aguantas antes de repartir, pasa a los cuatro elementos con los que el texto despliega como se pide critica: dar con una pregunta recurrente, abrazar la incomodidad, escuchar con intencion de entender, y hacer tangible la escucha premiando la franqueza.` | **13** |
+| 48 | `pedir_critica_primero_crear_seguridad_psicologica` | `premiar_franqueza_hacer_escucha_tangible` | **17** | `D.37` | `Y cuando ya tengas claro por que pruebas que aguantas antes de repartir, pasa a los cuatro elementos con los que el texto despliega como se pide critica: dar con una pregunta recurrente, abrazar la incomodidad, escuchar con intencion de entender, y hacer tangible la escucha premiando la franqueza.` | **20** |
+| 49 | `pedir_critica_primero_crear_seguridad_psicologica` | `dar_elogio_disciplina_igual_critica` | **2** | `D.29` | `Dos, da elogio.` | **20** |
+| 50 | `pedir_critica_primero_crear_seguridad_psicologica` | `criticar_trabajo_evitar_desanimo` | **3** | `D.29` | `Tres, da critica.` | **14** |
+| 51 | `pedir_critica_primero_crear_seguridad_psicologica` | `medir_critica_respuesta_oyente_brujula` | **4** | `D.29` | `Cuatro, mide la critica y ajusta.` | **33** |
+| 52 | `pedir_critica_primero_crear_seguridad_psicologica` | `fomentar_guia_reciproca_companieros` | **5** | `D.29` | `Cinco, fomenta el elogio y la critica entre los demas.` | **13** |
+| | | **15 aristas nuevas** | | | | |
+
+==============================================================================
+2. LA COMPROBACION QUE D.37 PIDE: LOS DOS EXTREMOS EXISTEN COMO FICHERO
+==============================================================================
+extremos comprobados : 30
+extremos que faltan  : 0
