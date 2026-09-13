@@ -488,3 +488,18 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-13 | revisar_ciclo_responsabilidades_relaciones | nombre_largo | Las tres responsabilidades que las relaciones deciden si puedes cumplir: cultura de guia, entender que motiva a cada uno, y llevar resultados en colaboracion | castellano | - |
 | 2026-09-13 | revisar_ciclo_responsabilidades_relaciones | otro_idioma | guidance, team-building, and results | ingles | - |
 | 2026-09-13 | revisar_ciclo_responsabilidades_relaciones | otro_idioma | virtuous cycle between your responsibilities and your relationships | ingles | - |
+| 2026-09-13 | elogiar_trabajo_especifico_contexto | nombre_largo | El elogio radicalmente franco: decir por que admiras lo que admiras, comprobar como aterriza, repetirlo mejor si cayo plano, y bajar al detalle antes de felicitar delante de todos | castellano | - |
+| 2026-09-13 | elogiar_trabajo_especifico_contexto | otro_idioma | Radically Candid praise | ingles | - |
+| 2026-09-13 | empezar_cultura_franqueza_radical | nombre_largo | El orden de arranque: explicar la idea, pedir que te critiquen a ti, y solo entonces dar guia, primero elogio y despues critica, con la frontera peligrosa entendida antes | castellano | - |
+| 2026-09-13 | empezar_cultura_franqueza_radical | otro_idioma | moving toward Radical Candor | ingles | - |
+| 2026-09-13 | pedir_critica_equipo_premiarla | nombre_largo | Empezar por que te critiquen a ti y no por repartir critica: las cuatro razones del texto, la regla de no criticar la critica, y como se rompe el silencio de un equipo que no habla | castellano | - |
+| 2026-09-13 | pedir_critica_equipo_premiarla | otro_idioma | soliciting criticism | ingles | - |
+| 2026-09-13 | descubrir_motivacion_sentido_persona | nombre_largo | Tu trabajo no es dar proposito: es conocer a cada reporte lo bastante como para entender como saca sentido de su trabajo, y crear las condiciones en las que cada cual lo encuentre a su manera | castellano | - |
+| 2026-09-13 | descubrir_motivacion_sentido_persona | otro_idioma | the problem with passion | ingles | - |
+| 2026-09-13 | cuidar_persona_completa_equipo | nombre_largo | La primera de las dos dimensiones de la franqueza radical: cuidar personalmente, que no es cuidar el trabajo ni la carrera | castellano | - |
+| 2026-09-13 | cuidar_persona_completa_equipo | otro_idioma | Care Personally | ingles | - |
+| 2026-09-13 | cuidar_persona_completa_equipo | otro_idioma | bring your whole self to work | ingles | - |
+| 2026-09-13 | pedir_critica_equipo_premiarla | nombre_largo | Empezar por que te critiquen a ti y no por repartir critica: las cuatro razones del texto, la regla de no criticar la critica, y como se rompe el silencio de un equipo que no habla | castellano | - |
+| 2026-09-13 | pedir_critica_equipo_premiarla | otro_idioma | soliciting criticism | ingles | - |
+| 2026-09-13 | acompaniar_mejores_equipo_socio | nombre_largo | Lo que necesitan de ti por igual la estrella de rock y la superestrella: que no los ignores porque no te necesitan, y que te arremangues con ellos en vez de solo aconsejar | castellano | - |
+| 2026-09-13 | acompaniar_mejores_equipo_socio | otro_idioma | be a partner, not an absentee manager or a micromanager | ingles | - |

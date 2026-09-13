@@ -1,0 +1,14 @@
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L9 a L13 | **28** | el rotulo, la pregunta de apertura del capitulo y la fecha y sitio | **RESIDUO: rotulo y apertura** |
+| `R2` | L15 a L19 | **338** | la visita al nuevo jefe, el cambio de destino del Olympia al Santa Fe, y el shock de la noticia | **CASO** |
+| `R3` | L21 a L27 | **193** | lo que Mark encarga: seis meses hasta el despliegue, el vacio de liderazgo, y no cambiar gente sino trabajar con la que hay | **CASO** |
+| `P1` | L29 a L29 | **49** | POR QUE NO DESPIDIO A NADIE: el mensaje que eso manda a cada miembro de la tripulacion, y el reto que eso fija, cambiar como interactuan y no a quien | **CANDIDATO A NODO, DISCUTIBLE** |
+| `R4` | L31 a L45 | **537** | el organigrama del barco, los oficiales subalternos, los doce jefes de suboficiales, el despliegue y la falta de huecos en el calendario | **CASO y CONTEXTO** |
+| `R5` | L47 a L47 | **3** | el separador de seccion | **RESIDUO: separador** |
+| `P2` | L49 a L49 | **84** | LO QUE EL COMODORO HIZO BIEN, nombrado en tres piezas: una meta especifica, sin decir como, y los mismos recursos de siempre; y la consecuencia que el texto saca de las tres | **CANDIDATO A NODO, DISCUTIBLE** |
+| `R6` | L51 a L53 | **95** | la reconsideracion personal del autor y su decision de intentarlo | **CASO** |
+| `R7` | L55 a L67 | **127** | QUESTIONS TO CONSIDER: las seis preguntas de cierre del capitulo | **PENDIENTE DE DOCTRINA** |
+| **el cuerpo entero** | **L8 a L67** | **1454** | **suma de las piezas: 1454** | **residuo sin asignar: 0** |
+
+piezas: 9   lineas solapadas: 0   cuerpo 1454   suma 1454   residuo 0

@@ -1,0 +1,11 @@
+[
+ ('R1',  9,  13, 'el rotulo, la pregunta de apertura del capitulo y la fecha y sitio', 'RESIDUO: rotulo y apertura'),
+ ('R2', 15,  19, 'la visita al nuevo jefe, el cambio de destino del Olympia al Santa Fe, y el shock de la noticia', 'CASO'),
+ ('R3', 21,  27, 'lo que Mark encarga: seis meses hasta el despliegue, el vacio de liderazgo, y no cambiar gente sino trabajar con la que hay', 'CASO'),
+ ('P1', 29,  29, 'POR QUE NO DESPIDIO A NADIE: el mensaje que eso manda a cada miembro de la tripulacion, y el reto que eso fija, cambiar como interactuan y no a quien', 'CANDIDATO A NODO, DISCUTIBLE'),
+ ('R4', 31,  45, 'el organigrama del barco, los oficiales subalternos, los doce jefes de suboficiales, el despliegue y la falta de huecos en el calendario', 'CASO y CONTEXTO'),
+ ('R5', 47,  47, 'el separador de seccion', 'RESIDUO: separador'),
+ ('P2', 49,  49, 'LO QUE EL COMODORO HIZO BIEN, nombrado en tres piezas: una meta especifica, sin decir como, y los mismos recursos de siempre; y la consecuencia que el texto saca de las tres', 'CANDIDATO A NODO, DISCUTIBLE'),
+ ('R6', 51,  53, 'la reconsideracion personal del autor y su decision de intentarlo', 'CASO'),
+ ('R7', 55,  67, 'QUESTIONS TO CONSIDER: las seis preguntas de cierre del capitulo', 'PENDIENTE DE DOCTRINA'),
+]

@@ -1,0 +1,6 @@
+nodos en el grafo                       : 219
+aristas YA vivas en el grafo            : 80
+filas de deuda contables leidas         : 45   (36 a 71 de su sede, mas las de la v25)
+
+con LOS DOS extremos DENTRO del grafo   : 0
+con algun extremo fuera                 : 45

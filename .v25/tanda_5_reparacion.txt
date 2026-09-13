@@ -1,0 +1,5 @@
+OK   cola   cuidar_persona_completa_equipo                              11 veredictos   71.3s
+
+intentados en esta corrida : 1
+INSERTADOS                 : 1
+en cola de lectura         : 0

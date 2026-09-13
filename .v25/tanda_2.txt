@@ -1,3 +1,13 @@
 OK   cola   ajustar_franqueza_oido_oyente                                4 veredictos   53.9s
 COLA cola   cuidar_persona_completa_equipo                              70.2s   pares SIN veredicto mio: ajustar_franqueza_oido_oyente
 OK   cola   revisar_ciclo_responsabilidades_relaciones                   2 veredictos   80.8s
+OK   cola   elogiar_trabajo_especifico_contexto                          4 veredictos   70.3s
+COLA cola   empezar_cultura_franqueza_radical                           47.7s   pares SIN veredicto mio: ajustar_franqueza_oido_oyente, elogiar_trabajo_especifico_contexto, revisar_ciclo_responsabilidades_relaciones
+COLA cola   pedir_critica_equipo_premiarla                              81.4s   pares SIN veredicto mio: elogiar_trabajo_especifico_contexto
+COLA cola   acompaniar_mejores_equipo_socio                             74.5s   pares SIN veredicto mio: elogiar_trabajo_especifico_contexto
+
+intentados en esta corrida : 7
+INSERTADOS                 : 3
+en cola de lectura         : 4
+
+[exited with code 0]

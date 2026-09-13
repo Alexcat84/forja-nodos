@@ -1,0 +1,39 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-13"
+    }
+  ],
+  "id": "cambiar_forma_trabajar_conservar_plantilla",
+  "titulo": "Cambiar como trabaja la gente que ya tienes en vez de renovarla, y decir por que",
+  "denominaciones": {
+    "nombre_largo": "El arranque del Santa Fe sin un solo despido: trabajar con lo que hay, y el mensaje que eso manda a cada persona",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "turnover"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "leadership vacuum"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando te haces cargo de un equipo que va mal, tienes plazo corto y te planteas cambiar a la gente.",
+  "entregable_esperado": "El equipo de siempre con el mensaje de que el problema no era la gente, y el trabajo centrado en cambiar como se comporta y como interactua.",
+  "pasos_accionables": [
+    "Cuenta el plazo que tienes antes de decidir nada sobre la gente. En el caso del texto eran seis meses hasta el despliegue, y el argumento que se da es que con ese plazo no hay tiempo de encontrar sustitutos.",
+    "Centrate en trabajar con lo que tienes, que es lo que el texto recomienda por encima de mucha rotacion.",
+    "Pide igualmente el canal abierto para cambiar a alguien si hace falta, que es como el texto lo deja dicho: avisame si necesitas cambiar a alguien.",
+    "Cuenta con el mensaje que manda no despedir a nadie, y que el texto pone como la razon de que aquello importara: a cada persona del equipo le llega que el que estaba mal no era el, sino el liderazgo.",
+    "Fija entonces tu reto donde el texto lo fija: usar la misma gente y el mismo equipo de apoyo, y subir el resultado cambiando la forma en que interactuan y se comportan."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_02.md, unidad Cap. 3, titulo textual Change of Course. Sale de la linea 29, que es la PIEZA P1 de la frontera publicada en la vuelta 25, 49 palabras, y de la linea 25, que es de la pieza R3 y trae la instruccion en boca del jefe. FRONTERA DENTRO DEL NODO, declarada porque EXTRACTOR.md 10 la pide: pasos 1 a 3 de L25, pasos 4 y 5 de L29. Las dos lineas son de la misma unidad. POR QUE ES PROCEDIMIENTO Y NO CASO: la instruccion esta escrita en imperativo en el propio libro, en boca del jefe (if you need to change out some people let me know, but I am not interested in a lot of turnover; a better focus would be on working with what you have got), y L29 le pone la razon y el reto que de ahi sale. El inventario es de medios y de objetos de trabajo: el plazo, la gente que ya esta, el canal para la excepcion, el mensaje, y el objeto sobre el que se trabaja. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 5 pasos, 5 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: cuanta rotacion es demasiada, ni como se comunica el mensaje a la tripulacion. El texto dice que el mensaje llego, no como se mando, y escribir el canal seria un puente de la especie destinatario. DISCUTIBLE MARCADO EN EL REPORTE DE LA VUELTA 25: es el par mas proximo del propio capitulo contra encargar_meta_especifica_dejar_libre_metodo, porque los dos salen del mismo encargo del mismo jefe en la misma conversacion. Los separo porque uno dice QUE se encarga y el otro QUE se hace con la gente que hay, y porque sus condiciones de activacion son distintas: una es la del que encarga y otra la del que recibe el encargo. CORRECCION DE PUERTA EN EL MISMO ACTO (EXTRACTOR.md 16): la primera escritura puso denominaciones.otros_idiomas como lista de cadenas y el esquema pide objetos con idioma y termino. La aduana lo tumbo con CAERIA antes de que este candidato contara como escrito, se corrigio y se volvio a correr. Es la caida numero 1 del lote 5 y la primera de una clave nueva, que es donde D.23 mide que caen cuatro de cada diez. SEGUNDA CORRECCION DE PUERTA EN EL MISMO ACTO: el id era cambiar_forma_trabajar_sin_renovar_plantilla y la aduana lo tumbo por la regla 3 de docs/REGLAS_DE_ID.md, preposicion o articulo prohibido, sin. Es la regla que mas cae de todas, 35 de los 65 del estreno, y me cayo a mi tambien en el primer capitulo con procedimiento del lote 5. Se cambia sin por el verbo conservar, que dice lo mismo sin preposicion."
+}

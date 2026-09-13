@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'descubrir_motivacion_sentido_persona'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi seÃ±al contra 218 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 219
+  censos escritos: denominaciones

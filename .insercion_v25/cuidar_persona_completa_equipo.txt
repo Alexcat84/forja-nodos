@@ -1,8 +1,8 @@
 ADUANA DE INSERCION, candidato 'cuidar_persona_completa_equipo'
   esquema, reglas de id, fuentes canonicas y guiones: verde
-  blocking multi seÃ±al contra 215 nodo(s) del dataset
+  blocking multi seÃ±al contra 219 nodo(s) del dataset
 
-VECINOS POR ENCIMA DE UMBRAL: 9. LA INSERCION QUEDA BLOQUEADA.
+VECINOS POR ENCIMA DE UMBRAL: 11. LA INSERCION QUEDA BLOQUEADA.
   Las seÃ±ales ordenan, nunca deciden (manual principio 4):
   esta cola es para leer, no un veredicto.
 
@@ -69,10 +69,21 @@ VECINOS POR ENCIMA DE UMBRAL: 9. LA INSERCION QUEDA BLOQUEADA.
     paso_contra_nodo   0.410 (umbral 0.60)
     paso 4 del candidato contra paso 9 de equilibrar_elogio_critica_equipo
 
-BLOQUEADO: faltan veredictos para ajustar_franqueza_oido_oyente
-  La aduana no juzga: obliga a juzgar (manual seccion 3).
-  Vuelve a correr el comando con un veredicto por vecino:
-    --veredicto "ajustar_franqueza_oido_oyente|CONTINUA|madre=ajustar_franqueza_oido_oyente|que aÃ±ade el hijo a la madre"
-    --veredicto "ajustar_franqueza_oido_oyente|REPITE|por que no aÃ±ade procedimiento"
-    --veredicto "ajustar_franqueza_oido_oyente|SANO|por que no son el mismo trabajo"
-    --veredicto "ajustar_franqueza_oido_oyente|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+  vecino empezar_cultura_franqueza_radical  [Empezar una cultura de franqueza radical por el orden que el texto pone, pidiendo antes que dando]
+    levantada por: similitud_texto
+    similitud_texto    0.363 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.410 (umbral 0.60)
+    paso 6 del candidato contra paso 3 de empezar_cultura_franqueza_radical
+
+  vecino elogiar_trabajo_especifico_contexto  [Elogiar el trabajo con el porque dentro, contextualizado y sincero, y averiguar quien hizo que antes de elogiar en publico]
+    levantada por: similitud_texto
+    similitud_texto    0.352 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.403 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de elogiar_trabajo_especifico_contexto
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 220
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 11

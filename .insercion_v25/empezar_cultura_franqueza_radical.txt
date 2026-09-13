@@ -1,51 +1,62 @@
 ADUANA DE INSERCION, candidato 'empezar_cultura_franqueza_radical'
   esquema, reglas de id, fuentes canonicas y guiones: verde
-  blocking multi seÃ±al contra 214 nodo(s) del dataset
+  blocking multi seÃ±al contra 217 nodo(s) del dataset
 
-VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+VECINOS POR ENCIMA DE UMBRAL: 7. LA INSERCION QUEDA BLOQUEADA.
   Las seÃ±ales ordenan, nunca deciden (manual principio 4):
   esta cola es para leer, no un veredicto.
 
   vecino criticar_trabajo_evitar_desanimo  [Criticar el trabajo sin desanimar a la persona, con la lista que el texto pone y el error de atribucion evitado]
     levantada por: similitud_texto
-    similitud_texto    0.351 (umbral 0.35)
+    similitud_texto    0.364 (umbral 0.35)
     familia_id         0.000 (umbral 0.30)
     paso_contra_nodo   0.516 (umbral 0.60)
     paso 5 del candidato contra paso 11 de criticar_trabajo_evitar_desanimo
 
   vecino manejar_enfado_persona_desafiada  [Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario]
     levantada por: similitud_texto
-    similitud_texto    0.423 (umbral 0.35)
+    similitud_texto    0.419 (umbral 0.35)
     familia_id         0.000 (umbral 0.30)
     paso_contra_nodo   0.472 (umbral 0.60)
     paso 5 del candidato contra paso 3 de manejar_enfado_persona_desafiada
 
+  vecino elogiar_trabajo_especifico_contexto  [Elogiar el trabajo con el porque dentro, contextualizado y sincero, y averiguar quien hizo que antes de elogiar en publico]
+    levantada por: similitud_texto
+    similitud_texto    0.403 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.452 (umbral 0.60)
+    paso 5 del candidato contra paso 6 de elogiar_trabajo_especifico_contexto
+
   vecino desplegar_marco_franqueza_radical  [Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones]
     levantada por: similitud_texto, familia_id
-    similitud_texto    0.452 (umbral 0.35)
+    similitud_texto    0.435 (umbral 0.35)
     familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.449 (umbral 0.60)
+    paso 1 del candidato contra paso 9 de desplegar_marco_franqueza_radical
+
+  vecino revisar_ciclo_responsabilidades_relaciones  [Revisar el ciclo entre tus tres responsabilidades de jefe y tus relaciones, con la lista que lo fortalece y la lista que lo erosiona]
+    levantada por: similitud_texto
+    similitud_texto    0.364 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
     paso_contra_nodo   0.441 (umbral 0.60)
-    paso 4 del candidato contra paso 1 de desplegar_marco_franqueza_radical
+    paso 1 del candidato contra paso 6 de revisar_ciclo_responsabilidades_relaciones
+
+  vecino ajustar_franqueza_oido_oyente  [Ajustar la franqueza radical al oido del que escucha y no a la boca del que habla, buscando la forma local de cada dimension]
+    levantada por: similitud_texto
+    similitud_texto    0.416 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.428 (umbral 0.60)
+    paso 6 del candidato contra paso 8 de ajustar_franqueza_oido_oyente
 
   vecino equilibrar_elogio_critica_equipo  [Dar mas elogio que critica sin usar ningun ratio fijo, y repartir tu energia al reves de como te sale]
     levantada por: similitud_texto
-    similitud_texto    0.400 (umbral 0.35)
+    similitud_texto    0.412 (umbral 0.35)
     familia_id         0.000 (umbral 0.30)
     paso_contra_nodo   0.390 (umbral 0.60)
     paso 6 del candidato contra paso 8 de equilibrar_elogio_critica_equipo
+  arista madre-hijo cableada y escrita RESUELTA: empezar_cultura_franqueza_radical > criticar_trabajo_evitar_desanimo
 
-BLOQUEADO: faltan veredictos para criticar_trabajo_evitar_desanimo, manejar_enfado_persona_desafiada, equilibrar_elogio_critica_equipo
-  La aduana no juzga: obliga a juzgar (manual seccion 3).
-  Vuelve a correr el comando con un veredicto por vecino:
-    --veredicto "criticar_trabajo_evitar_desanimo|CONTINUA|madre=criticar_trabajo_evitar_desanimo|que aÃ±ade el hijo a la madre"
-    --veredicto "criticar_trabajo_evitar_desanimo|REPITE|por que no aÃ±ade procedimiento"
-    --veredicto "criticar_trabajo_evitar_desanimo|SANO|por que no son el mismo trabajo"
-    --veredicto "criticar_trabajo_evitar_desanimo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
-    --veredicto "manejar_enfado_persona_desafiada|CONTINUA|madre=manejar_enfado_persona_desafiada|que aÃ±ade el hijo a la madre"
-    --veredicto "manejar_enfado_persona_desafiada|REPITE|por que no aÃ±ade procedimiento"
-    --veredicto "manejar_enfado_persona_desafiada|SANO|por que no son el mismo trabajo"
-    --veredicto "manejar_enfado_persona_desafiada|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
-    --veredicto "equilibrar_elogio_critica_equipo|CONTINUA|madre=equilibrar_elogio_critica_equipo|que aÃ±ade el hijo a la madre"
-    --veredicto "equilibrar_elogio_critica_equipo|REPITE|por que no aÃ±ade procedimiento"
-    --veredicto "equilibrar_elogio_critica_equipo|SANO|por que no son el mismo trabajo"
-    --veredicto "equilibrar_elogio_critica_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 218
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 7

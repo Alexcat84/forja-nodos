@@ -1,0 +1,14 @@
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L9 a L9 | **1** | el rotulo `INTRODUCTION` | **RESIDUO: rotulo** |
+| `R2` | L11 a L21 | **407** | la insatisfaccion del trabajador, con el caso de Ian y las cifras de Gallup y de Towers Watson | **POSTURA y CASO** |
+| `R3` | L23 a L33 | **228** | la frustracion del jefe, con el caso de Scott Mesh y la encuesta del 44 por ciento, y la causa raiz nombrada | **POSTURA y CASO** |
+| `R4` | L35 a L55 | **523** | The Problem: Leader-Follower: la definicion vieja de liderazgo, su limite en el trabajo cognitivo, y la contradiccion del empoderamiento | **POSTURA** |
+| `R5` | L57 a L61 | **135** | The Solution: Leader-Leader: la tesis de que todos podemos ser lideres y lo que el modelo consigue | **POSTURA** |
+| `R6` | L63 a L85 | **665** | Born of Failure: la autobiografia, el Sunfish, el primer capitan, el sonar activo, y el desastre del Will Rogers | **CASO** |
+| `R7` | L87 a L95 | **239** | Success, Immediately and Forever: el submarino como sitio improbable y el resultado del Santa Fe a diez anios vista | **CASO** |
+| `P1` | L97 a L97 | **142** | LA ARQUITECTURA DEL METODO, puesta por el libro sobre si mismo: el puente es el control, que se cede sin ceder la responsabilidad, y los dos pilares que hay que reforzar segun se cede, competencia tecnica y claridad organizativa | **NODO** |
+| `R8` | L99 a L103 | **132** | la vision, el llamamiento a la accion y la direccion de correo del autor | **POSTURA** |
+| **el cuerpo entero** | **L8 a L103** | **2472** | **suma de las piezas: 2472** | **residuo sin asignar: 0** |
+
+piezas: 9   lineas solapadas: 0   cuerpo 2472   suma 2472   residuo 0

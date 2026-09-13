@@ -1,8 +1,8 @@
 ADUANA DE INSERCION, candidato 'acompaniar_mejores_equipo_socio'
   esquema, reglas de id, fuentes canonicas y guiones: verde
-  blocking multi seÃ±al contra 214 nodo(s) del dataset
+  blocking multi seÃ±al contra 221 nodo(s) del dataset
 
-VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+VECINOS POR ENCIMA DE UMBRAL: 7. LA INSERCION QUEDA BLOQUEADA.
   Las seÃ±ales ordenan, nunca deciden (manual principio 4):
   esta cola es para leer, no un veredicto.
 
@@ -13,12 +13,26 @@ VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
     paso_contra_nodo   0.457 (umbral 0.60)
     paso 9 del candidato contra paso 3 de manejar_enfado_persona_desafiada
 
+  vecino empezar_cultura_franqueza_radical  [Empezar una cultura de franqueza radical por el orden que el texto pone, pidiendo antes que dando]
+    levantada por: similitud_texto
+    similitud_texto    0.368 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.453 (umbral 0.60)
+    paso 11 del candidato contra paso 1 de empezar_cultura_franqueza_radical
+
   vecino delimitar_franqueza_radical_cinco_noes  [Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir]
     levantada por: similitud_texto
     similitud_texto    0.372 (umbral 0.35)
     familia_id         0.000 (umbral 0.30)
     paso_contra_nodo   0.448 (umbral 0.60)
     paso 11 del candidato contra paso 2 de delimitar_franqueza_radical_cinco_noes
+
+  vecino cuidar_persona_completa_equipo  [Cuidar a la persona completa de cada miembro del equipo, con los cuatro medios que el libro nombra y los tres que descarta]
+    levantada por: similitud_texto
+    similitud_texto    0.368 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.448 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de cuidar_persona_completa_equipo
 
   vecino cambiar_potencial_trayectoria_crecimiento  [Cambiar la palabra potencial por trayectoria de crecimiento y hacer con el equipo el ejercicio de las dos columnas]
     levantada por: similitud_texto
@@ -27,14 +41,21 @@ VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
     paso_contra_nodo   0.433 (umbral 0.60)
     paso 1 del candidato contra paso 9 de cambiar_potencial_trayectoria_crecimiento
 
-BLOQUEADO: faltan veredictos para manejar_enfado_persona_desafiada, cambiar_potencial_trayectoria_crecimiento
-  La aduana no juzga: obliga a juzgar (manual seccion 3).
-  Vuelve a correr el comando con un veredicto por vecino:
-    --veredicto "manejar_enfado_persona_desafiada|CONTINUA|madre=manejar_enfado_persona_desafiada|que aÃ±ade el hijo a la madre"
-    --veredicto "manejar_enfado_persona_desafiada|REPITE|por que no aÃ±ade procedimiento"
-    --veredicto "manejar_enfado_persona_desafiada|SANO|por que no son el mismo trabajo"
-    --veredicto "manejar_enfado_persona_desafiada|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
-    --veredicto "cambiar_potencial_trayectoria_crecimiento|CONTINUA|madre=cambiar_potencial_trayectoria_crecimiento|que aÃ±ade el hijo a la madre"
-    --veredicto "cambiar_potencial_trayectoria_crecimiento|REPITE|por que no aÃ±ade procedimiento"
-    --veredicto "cambiar_potencial_trayectoria_crecimiento|SANO|por que no son el mismo trabajo"
-    --veredicto "cambiar_potencial_trayectoria_crecimiento|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+  vecino elogiar_trabajo_especifico_contexto  [Elogiar el trabajo con el porque dentro, contextualizado y sincero, y averiguar quien hizo que antes de elogiar en publico]
+    levantada por: similitud_texto
+    similitud_texto    0.395 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.431 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de elogiar_trabajo_especifico_contexto
+
+  vecino pedir_critica_equipo_premiarla  [Pedir activamente que tu equipo te critique, aguantar el silencio y premiar la primera franqueza a la vista de todos]
+    levantada por: similitud_texto
+    similitud_texto    0.379 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.379 (umbral 0.60)
+    paso 7 del candidato contra paso 6 de pedir_critica_equipo_premiarla
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 222
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 7

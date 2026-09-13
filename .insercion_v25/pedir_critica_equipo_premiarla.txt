@@ -1,8 +1,8 @@
 ADUANA DE INSERCION, candidato 'pedir_critica_equipo_premiarla'
   esquema, reglas de id, fuentes canonicas y guiones: verde
-  blocking multi seÃ±al contra 214 nodo(s) del dataset
+  blocking multi seÃ±al contra 220 nodo(s) del dataset
 
-VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
   Las seÃ±ales ordenan, nunca deciden (manual principio 4):
   esta cola es para leer, no un veredicto.
 
@@ -27,6 +27,13 @@ VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
     paso_contra_nodo   0.439 (umbral 0.60)
     paso 11 del candidato contra paso 9 de desplegar_marco_franqueza_radical
 
+  vecino empezar_cultura_franqueza_radical  [Empezar una cultura de franqueza radical por el orden que el texto pone, pidiendo antes que dando]
+    levantada por: similitud_texto
+    similitud_texto    0.378 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.439 (umbral 0.60)
+    paso 5 del candidato contra paso 6 de empezar_cultura_franqueza_radical
+
   vecino manejar_enfado_persona_desafiada  [Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario]
     levantada por: similitud_texto
     similitud_texto    0.379 (umbral 0.35)
@@ -34,14 +41,15 @@ VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
     paso_contra_nodo   0.429 (umbral 0.60)
     paso 6 del candidato contra paso 2 de manejar_enfado_persona_desafiada
 
-BLOQUEADO: faltan veredictos para cambiar_potencial_trayectoria_crecimiento, manejar_enfado_persona_desafiada
-  La aduana no juzga: obliga a juzgar (manual seccion 3).
-  Vuelve a correr el comando con un veredicto por vecino:
-    --veredicto "cambiar_potencial_trayectoria_crecimiento|CONTINUA|madre=cambiar_potencial_trayectoria_crecimiento|que aÃ±ade el hijo a la madre"
-    --veredicto "cambiar_potencial_trayectoria_crecimiento|REPITE|por que no aÃ±ade procedimiento"
-    --veredicto "cambiar_potencial_trayectoria_crecimiento|SANO|por que no son el mismo trabajo"
-    --veredicto "cambiar_potencial_trayectoria_crecimiento|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
-    --veredicto "manejar_enfado_persona_desafiada|CONTINUA|madre=manejar_enfado_persona_desafiada|que aÃ±ade el hijo a la madre"
-    --veredicto "manejar_enfado_persona_desafiada|REPITE|por que no aÃ±ade procedimiento"
-    --veredicto "manejar_enfado_persona_desafiada|SANO|por que no son el mismo trabajo"
-    --veredicto "manejar_enfado_persona_desafiada|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+  vecino elogiar_trabajo_especifico_contexto  [Elogiar el trabajo con el porque dentro, contextualizado y sincero, y averiguar quien hizo que antes de elogiar en publico]
+    levantada por: similitud_texto
+    similitud_texto    0.363 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.400 (umbral 0.60)
+    paso 2 del candidato contra paso 6 de elogiar_trabajo_especifico_contexto
+  arista madre-hijo cableada y escrita RESUELTA: empezar_cultura_franqueza_radical > pedir_critica_equipo_premiarla
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 221
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6

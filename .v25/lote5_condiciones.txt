@@ -1,0 +1,11 @@
+$ ls fuentes/marquet_turn_the_ship/*.md | wc -l
+17
+
+$ python -c "...marquet_turn_the_ship en FUENTES_CANONICAS.json..."
+   marquet_turn_the_ship presente: True
+   claves en la tabla: 13
+
+$ ls fuentes/marquet_turn_the_ship/
+cap_01.md cap_02.md cap_03.md cap_04.md cap_05.md cap_06.md cap_07.md cap_08.md cap_09.md cap_10.md cap_11.md cap_12.md cap_13.md cap_14.md cap_15.md cap_16.md cap_17.md 
+$ ls cuarentena/marquet_turn_the_ship/ 2>&1 | wc -l   (bandeja de salida del lote 5)
+0
