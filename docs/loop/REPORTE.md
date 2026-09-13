@@ -28431,3 +28431,77 @@ Salida de los comandos, guardada en `.t1_v23/identidad_v23.txt`:
 > **LO QUE ESO PRUEBA, Y NO ES UN MERITO MIO:** *un remedio que se cumple acordandose no es un
 > remedio.* La diferencia entre la vuelta 22 y esta **no es que yo tenga mas cuidado: es que hay
 > codigo mirando.**
+
+---
+
+# VUELTA 24, los registros de la ACTA 23, la fusion que el `REPITE` de `L51` promete, las cuatro aristas de `L113`, `cap_14` entero, y **el cierre del lote 4 con su insercion** (lote 4, `scott_radical_candor`)
+
+*Esqueleto abierto ANTES de la primera tarea (`EXTRACTOR.md` 3). Las filas se anexan al cerrarse
+cada tarea, no al final de la vuelta. **El encargo pone CINCO tareas y el tope son cinco**
+(`EXTRACTOR.md` 1.3), asi que no hay cola por techo de tareas. **La TAREA 1 va primera y no se
+solapa**, por orden expreso del encargo.*
+
+## R.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION
+
+*`EXTRACTOR.md` 4: la apertura se mide antes de la primera operacion. Se midio con el arbol ya
+limpio, es decir DESPUES del commit de pendientes que `EXTRACTOR.md` 1.1 manda hacer primero y
+ANTES de la primera linea de trabajo. Ese commit (`74134e0`) movio el hash y no movio ninguna otra
+cifra: lo unico que llevaba dentro eran los tres ficheros del arnes (`loop.log`,
+`ultimo_auditor.json`, `ultimo_extractor.json`).*
+
+Salida de `sh .v24/apertura.sh`, guardada en `.v24/apertura.txt`. La tabla la recoge:
+
+<!-- TALLADO: parcial salida=.v24/apertura.txt -->
+
+| medida | instrumento corrido en esta vuelta | valor al abrir |
+|---|---|---:|
+| nodos en el grafo | `wc -l < dataset/nodos.jsonl` | **203** |
+| veredictos en bitacora | `wc -l < bitacora/VEREDICTOS.jsonl` | **148** |
+| candidatos en cuarentena del lote 4 | `ls cuarentena/scott_radical_candor/*.json \| wc -l` | **127** |
+| ficheros en `cuarentena/_insertados/` | `ls cuarentena/_insertados/*/*.json \| wc -l` | **201** |
+| lineas del reporte | `wc -l < docs/loop/REPORTE.md` | **28433** |
+| rama | `git rev-parse --abbrev-ref HEAD` | `extraccion-mundo-11` |
+| commit de apertura | `git rev-parse --short HEAD` | `74134e0` |
+
+## R.0.1. LA INSERCION LLEGA ABIERTA POR SEPTIMA VEZ, Y HOY LA CONDICION **PUEDE** CUMPLIRSE
+
+*`MODO_INSERCION=insertar` es el default desde `D.39` y la corrida me lo entrega abierto.*
+
+**`D.39` NO ABRE LA INSERCION DE CUALQUIER CANDIDATO: ABRE LA DE UN LOTE CERRADO EN EXTRACCION CUYO
+INFORME HAYA CERTIFICADO EL ACTA DEL AUDITOR** (`EXTRACTOR.md` 15.7). **Al abrir, el lote 4 sigue
+ABIERTO**: le falta `cap_14` y solo `cap_14`, medido en `R.5.a` y no supuesto. Por tanto **la
+condicion de `D.39` NO se cumple al abrir**, y solo se cumplira si la TAREA 4 mina `cap_14` entero.
+**Meter candidatos de un lote abierto es una caida de dato, no un adelanto**, asi que hasta ese
+momento no entra nada.
+
+**La decision se vuelve a medir al cerrar la TAREA 4, no aqui**, y el veredicto de si hubo o no
+insercion se publica en `R.6` con las cifras del cierre recomputadas (`EXTRACTOR.md` 4).
+
+## R.0.2. ESTA VUELTA NO TRAE SALDO DE LOTE (`D.42`)
+
+Salida de los dos comandos, guardada en `.v24/informe_de_lote.txt`:
+
+    $ ls -la docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+    ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+    ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ tail -3 docs/loop/loop.log
+    [2026-09-13 14:30:15]   sello de la apertura ciega verificado: intacto tras el turno
+    [2026-09-13 14:30:15] VUELTA 2 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+    [2026-09-13 14:30:15] VUELTA 2 : EXTRACTOR (claude-opus-5)
+
+**`D.42`: si el prompt no me entrega ningun informe, no lo invento y no lo lanzo.** El arnes lo dice
+por su cuenta en `loop.log`. **La vuelta no trae saldo de lote**, y por tanto **no publico `CHOCAN
+entre si dentro del lote`**, que es la cifra que solo ese informe ve. **El de un candidato suelto
+sigue siendo mio** y se corre en el mismo acto de escribir cada candidato (`EXTRACTOR.md` 16).
+
+## R.1. LAS CINCO TAREAS ENCARGADAS, Y SU ESTADO
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | **PRIMERA Y SIN SOLAPE**: los registros, las dos cifras que acumularon, las tres remisiones a `Q.6`, el remedio de escritura y las cinco adjudicaciones | ABIERTA |
+| 2 | **La fusion que el `REPITE` de `L51` promete y no se hizo**, y el veredicto que `Q.6` se llevo | ABIERTA |
+| 3 | **Las cuatro aristas que el libro declara en `L113`** y el reparo de las aristas 49 a 52 | ABIERTA |
+| 4 | **`cap_14` entero**, la ultima unidad sin minar del lote 4 | ABIERTA |
+| 5 | **El cierre del lote 4 y la insercion `D.39`**, si y solo si `cap_14` cierra el lote | ABIERTA |
+
+*Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
