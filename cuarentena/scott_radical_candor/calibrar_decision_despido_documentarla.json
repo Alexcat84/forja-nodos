@@ -1,0 +1,48 @@
+{
+ "id": "calibrar_decision_despido_documentarla",
+ "titulo": "Calibrar la decision de despido con tu jefe, tus iguales y recursos humanos, y documentarla haciendo que alguien con experiencia edite lo que escribes",
+ "denominaciones": {
+  "nombre_largo": "La segunda de las tres cosas que facilitan un despido: no tomar la decision unilateralmente, con los tres sitios donde se pide ayuda y la regla de que no basta pedir consejo, hay que conseguir que editen lo que escribes",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "Don't make the decision unilaterally"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Performance Improvement Plan"
+   }
+  ],
+  "sigla": "PIP"
+ },
+ "condiciones_activacion": "Cuando ya has identificado los problemas de desempenio de alguien y vas a decidir sobre su despido, que es el momento en que la decision se toma unilateralmente si nadie lo para.",
+ "entregable_esperado": "La decision calibrada con tu jefe, con tus iguales cuando corresponda y con recursos humanos, y los correos y documentos del despido escritos por ti y editados con cuidado por alguien que ya lo ha hecho antes.",
+ "pasos_accionables": [
+  "En cuanto hayas identificado los problemas de desempenio, tomate el tiempo de pedir consejo a tu jefe.",
+  "Calibra con tus iguales, cuando corresponda.",
+  "Y pide ayuda a recursos humanos.",
+  "No adoptes la actitud de que esta decision es solo tuya, y cuenta con los errores opuestos que el texto quiere evitar con eso: no quieres despedir a alguien por enfado, y no quieres dejar de despedir a alguien por negacion.",
+  "Cuenta con por que la ayuda de fuera sirve: mucha gente se pierde dentro de su propia cabeza en un asunto tan cargado como este, y tu jefe y tus iguales pueden ayudarte a pensar con mas claridad.",
+  "Y cuenta con lo que anade la gente buena de recursos humanos: no solo te ayuda a pensar con mas claridad, sino que tambien se asegura de que lo haces de una manera que no te lleve a ti ni a la empresa a una demanda.",
+  "Busca en tu empresa a la persona de recursos humanos cuyo trabajo es ayudarte a documentar correctamente, que es lo que el texto pone como mundo ideal. Y si diriges una empresa, identifica a esa persona.",
+  "Si no la tienes, busca a un abogado laboralista, a alguien veterano de recursos humanos o a un jefe con experiencia, y pideles ayuda.",
+  "No te limites a pedir consejo: consigue que editen lo que escribes, porque el texto dice que el consejo es demasiado abstracto.",
+  "Cuenta con el mecanismo concreto de fallo que el texto ha visto en docenas de casos: a un jefe se le aconseja como escribir un plan de mejora del desempenio, se le dice que lo haga justo pero no demasiado facil y que atienda de verdad el problema de desempenio, el jefe oye la parte de justo e ignora la parte de no demasiado facil, la persona pasa el plan sin atender el problema de fondo, y el problema de desempenio se arrastra otros tres o seis meses.",
+  "Escribe tu, como jefa, los correos y los demas documentos como los planes de mejora del desempenio.",
+  "Pero asegurate de que alguien que ya lo ha hecho antes los edita con cuidado.",
+  "Y cuenta con el coste y con por que vale la pena: va a llevar tiempo, mucho mas tiempo del que quieres dedicarle, y aun asi vale la pena dedicarselo porque ser demandada es mucho peor."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_10.md, unidad Cap. 7, Team. Sale de las lineas 181 a 187, bajo el rotulo Don't make the decision unilaterally. ES LA PIEZA P26 DE LA FRONTERA DE cap_10 Y ES LA SEGUNDA PARTE DE LA SERIE D.37 DE TRES cuya cabeza es facilitar_despido_tres_cosas (linea 173, if you do three things). POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 183 nombra los TRES sitios donde se pide ayuda uno a uno (tu jefe, tus iguales si corresponde, recursos humanos) con lo que cada uno aporta; la 185 nombra las tres figuras alternativas cuando no hay nadie en recursos humanos (abogado laboralista, veterano de recursos humanos, jefe con experiencia) y pone la regla operativa que distingue este nodo de un consejo generico: no pidas consejo, consigue que editen lo que escribes; y la 187 reparte el trabajo, tu escribes y otro edita. Inventario de MEDIOS y de OBJETOS DE TRABAJO del propio libro. POR QUE ES UN NODO APARTE, con la vara de la ACTA 20 seccion 4.1 y su 4.5: condicion de activacion propia (ya identificaste el problema y VAS A DECIDIR) y entregable propio (la decision calibrada y documentada con quien sabe). RELECTURA DE FIDELIDAD D.30 HECHA EN EL ACTO DE ESCRIBIR, paso a paso contra su linea: 13 de 13 TRANSCRIPCION, 0 PUENTES. CUIDADO CON EL PUENTE DEL DESTINATARIO Y DEL PERIODO: el texto dice pide consejo a tu jefe y NO dice en que plazo ni con que formulario; los tres o seis meses del paso 10 son los del arrastre que el texto describe como fallo, no un plazo que el texto mande. Lo que el texto NO dice y por eso NO esta escrito aqui: ni quien aprueba finalmente el despido, ni donde se archiva la documentacion."
+,
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

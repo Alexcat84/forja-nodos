@@ -1,0 +1,32 @@
+| unidad | rotulo | cuerpo | candidatos | numerador | denominador | **tasa** | quien la firma |
+|---|---|---:|---:|---:|---:|---:|---|
+| `cap_00` | `Copyright Page` | 218 | 0 | **0** | **0** | **sin definir** | denominador **mio** |
+| `cap_01` | `Preface` | 2.846 | 1 | **0** | **9** | **0.00** | denominador **mio** |
+| `cap_02` | `Introduction` | 3.908 | 0 | **0** | **0** | **sin definir** | denominador **mio** |
+| `cap_03` | `How to Use This Book` | 627 | 1 | **0** | **7** | **0.00** | denominador **mio** |
+| `cap_04` | `Cap. 1` | 6.263 | 6 | **3** | **48** | **6.25** | denominador **mio**; **numerador heredado, lo cito y no lo firmo** |
+| `cap_05` | `Cap. 2` | 8.756 | 8 | **2** | **76** | **2.63** | denominador **mio**; **numerador heredado, lo cito y no lo firmo** |
+| `cap_06` | `Cap. 3` | 11.587 | 10 | **0** | **117** | **0.00** | denominador **mio** |
+| `cap_07` | `Cap. 4` | 13.678 | 25 | **0** | **225** | **0.00** | denominador **mio** |
+| `cap_08` | `Cap. 5` | 6.140 | 12 | **0** | **102** | **0.00** | denominador **mio** |
+| `cap_09` | `Cap. 6` | 17.482 | 20 | **0** | **272** | **0.00** | denominador **mio** |
+| `cap_10` | `Cap. 7` | 8.976 | 13 | **0** | **194** | **0.00** | **numerador y denominador LOS FIRMO YO** (`O.3`) |
+| | **lote 4 hasta `cap_10`** | **80.481** | **96** | **5** | **1050** | **0.48** | denominador remedido entero por mi |
+
+| fila de residuo | valor | los nombres |
+|---|---:|---|
+| `SIN` unidad deducible del `resumen_teorico` | **0** | lista vacia |
+
+PEOR UNIDAD (la que decide la escalada) : cap_04 con 6.25 contra tope 10
+candidatos repartidos                   : 96
+candidatos en la bandeja                : 96
+pasos del lote 4                        : 1050
+
+MEDIDAS DEL CIERRE, recomputadas al cierre (EXTRACTOR.md 4)
+  nodos en el grafo        : 203
+  veredictos en bitacora   : 148
+  ficheros en _insertados  : 201
+  nodos con fuente scott   : 0 de 203
+  extremos de arista       : 158   (aristas distintas: 79)
+  unidades del libro       : 15
+  cuerpo cap_11 a cap_14   : 27680 palabras

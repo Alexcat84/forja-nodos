@@ -1,0 +1,46 @@
+{
+ "id": "conversar_suenios_cruzar_habilidades",
+ "titulo": "Conversar los suenios de cada persona a tu cargo y cruzarlos con sus habilidades en un cuadro, que es la segunda de las tres conversaciones de carrera",
+ "denominaciones": {
+  "nombre_largo": "La segunda conversacion de carrera, la de los suenios, con la pregunta de arranque que sustituye a las preguntas al uso, los tres a cinco suenios, el cuadro de suenios contra habilidades y la comprobacion contra los valores",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "The second conversation: dreams"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando ya has tenido con la persona la conversacion de su historia de vida y vas a pasar de entender que la motiva a entender que quiere conseguir en la cima de su carrera.",
+ "entregable_esperado": "Los tres a cinco suenios de la persona nombrados por ella, su documento de columnas de suenios contra filas de habilidades con la importancia y su nivel de competencia en cada una, las habilidades nuevas que necesita ya visibles, y la comprobacion hecha de que esos suenios cuadran con los valores que ella declaro.",
+ "pasos_accionables": [
+  "Pasa de entender que motiva a la persona a entender sus suenios, y entiende por suenio lo que el texto entiende: que quiere conseguir en la cima de su carrera, y como imagina que se siente la vida en su mejor version.",
+  "Usa la palabra suenios a proposito, que es lo que Russ hizo, y no las palabras al uso. Cuenta con lo que el texto dice que pasa con las otras: metas a largo plazo, aspiraciones de carrera o planes a cinco anios, dichas por un jefe, sacan una respuesta profesional y no del todo humana.",
+  "Cuenta tambien con lo segundo que esas palabras provocan: invitan a la respuesta que la persona imagina que su jefe quiere oir, en un equilibrio delicado entre parecer bastante ambiciosa (quiero ser como tu) y no demasiado (pero no quiero tu puesto).",
+  "Y cuenta con lo tercero: preguntar por las aspiraciones de carrera no invita a describir suenios que impliquen otra carrera u otra empresa, y las preguntas sobre carrera tienden a centrarse en los ascensos, con lo que la conversacion nunca satisface, porque quien quiere un ascenso nunca siente que llega bastante rapido y quien no lo quiere se siente flojo cuando le preguntan por sus aspiraciones.",
+  "No estreches el plan de desarrollo a lo que hay que hacer para conseguir un ascenso, porque el texto dice lo que sale de ahi: una conversacion que deja a la gente preocupada por parecer poco seria con su trabajo de ahora y a los empleadores preocupados por animar a la gente a irse.",
+  "Da espacio para hablar de suenios, que es lo que permite al jefe ayudar a encontrar oportunidades que muevan a la persona en la direccion de esos suenios. Y ten claro el orden que el texto pone entre los fines: la retencion es el subproducto, y las metas primarias eran el trabajo satisfactorio y con sentido y una relacion productiva con el jefe.",
+  "Arranca con la pregunta que Russ recomienda en lugar de las preguntas al uso, y el texto la da literal: como quieres que sea la cumbre de tu carrera?",
+  "Anima a la persona a dar de tres a cinco suenios distintos para el futuro, por la razon que el texto da: la mayoria de la gente no sabe de verdad que quiere hacer cuando sea mayor. Y cuenta con lo que eso consigue: permite a la persona meter tanto el suenio que cree que tu quieres oir como los que estan mucho mas cerca de su corazon.",
+  "Pide a cada persona a tu cargo que cree un documento con tres a cinco columnas y que titule cada una con el nombre de los suenios que describio en la conversacion anterior.",
+  "Pon despues como filas las habilidades que hacen falta, y que la persona muestre en cada casilla lo importante que es esa habilidad para cada suenio y cual es su nivel de competencia en ella.",
+  "Lee el cuadro: el texto dice que, en general, se vuelve muy obvio que habilidades nuevas necesita adquirir la persona.",
+  "Haz entonces tu trabajo de jefe, que el texto nombra con sus preguntas: ayudala a pensar como puede adquirir esas habilidades, en que proyectos puedes ponerla, a quien le puedes presentar, y que opciones de formacion hay.",
+  "Cierra la conversacion con la parte final que Russ le pone: comprueba que los suenios de la persona cuadran con los valores que ella misma ha expresado. El texto da la forma de preguntarlo: si el trabajo duro es un valor central para ti, por que uno de tus suenios es jubilarte pronto?",
+  "Usa esa indagacion para lo que el texto dice que sirve: empujar hacia conversaciones francas y con sentido. Su ejemplar de Google es un padre cuya pregunta revelo que tenia un hijo con necesidades especiales cuya condicion se esperaba que se agravara en la adolescencia, y que queria poder dedicarle toda su atencion cuando mas lo necesitara: eso puso su plan de jubilacion temprana bajo otra luz.",
+  "Y no esperes de la mayoria un suenio espectacular. El texto lo dice con su propio ejemplar: un hombre con un bebe con problemas graves de salud cuya mayor preocupacion en el trabajo durante aquel periodo era llegar a casa a tiempo para dar un paseo de media hora con su mujer con luz de dia, y eso ya era bastante ambicioso dado todo lo que tenia encima."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_10.md, unidad Cap. 7, Team. Sale de las lineas 61 a 75, bajo el rotulo The second conversation: dreams. ES LA PIEZA P8 DE LA FRONTERA DE cap_10, la segunda de las tres del tramo L47 a L87. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 69 da la pregunta de arranque literal y la cuenta de suenios (three to five); la 71 manda crear un documento con de tres a cinco columnas, poner las habilidades como filas y rellenar importancia y competencia, y cierra con las TRES preguntas del trabajo del jefe (que proyectos, a quien presentarle, que formacion); la 73 pone la parte final, comprobar los suenios contra los valores, con su forma de preguntarlo. Es inventario de MEDIOS, ETAPAS y OBJETOS DE TRABAJO del propio libro, y el objeto es literal: un documento con columnas y filas. POR QUE ES UN NODO APARTE de la primera y de la tercera conversacion, con la vara de la ACTA 20 seccion 4.1: condicion de activacion propia (ya tuviste la de la historia de vida) y entregable propio (el cuadro de suenios contra habilidades relleno). RELECTURA DE FIDELIDAD D.30 HECHA EN EL ACTO DE ESCRIBIR, paso a paso contra su linea: 15 de 15 TRANSCRIPCION, 0 PUENTES. Ojo con el paso 9, que es el caso limite: el texto dice literalmente the dreams they described in the last conversation, aunque en el orden del propio texto los suenios se acaban de describir en esta misma conversacion; se transcribe lo que el texto dice y no se corrige, y se declara aqui. Lo que el texto NO dice y por eso NO esta escrito aqui: ni cuanto dura esta conversacion, ni donde se guarda el documento, ni quien lo revisa despues."
+,
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

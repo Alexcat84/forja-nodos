@@ -24904,3 +24904,398 @@ auditor.**
    `cap_09` uso los dos cortes **en el mismo capitulo**: `P8` a `P13` finos y `P24` y `P27`
    gruesos. **`P21` de `cap_10` decide si ese capitulo da 20 candidatos o 25.** No me lo
    adjudico y no lo resuelvo por mi cuenta: **lo dejo marcado con su cifra.**
+
+---
+
+# VUELTA 21, los registros de la ACTA 20 y de la parada del 12 sep, `cap_10` ENTERO, las tres aristas `D.37` de `L173`, y el par de la lupa por lectura (lote 4, `scott_radical_candor`)
+
+*Esqueleto abierto ANTES de la primera tarea (`EXTRACTOR.md` 3). Las filas se anexan al cerrarse
+cada tarea, no al final de la vuelta. **El encargo pone cuatro tareas y dice que las TAREAS 3 y 4
+no son separables de la 2**: nacen con los nodos de `cap_10` y se escriben en el mismo acto.*
+
+## O.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION
+
+*`EXTRACTOR.md` 4: la apertura se mide antes de la primera operacion. **Las siete se midieron con
+el arbol ya limpio**, es decir DESPUES del commit de pendientes que `EXTRACTOR.md` 1.1 manda hacer
+primero y ANTES de la primera linea de trabajo. **Ese commit movio el hash y no movio ninguna otra.***
+
+| medida | instrumento corrido en esta vuelta | valor al abrir |
+|---|---|---:|
+| nodos en el grafo | `wc -l < dataset/nodos.jsonl` | **203** |
+| veredictos en bitacora | `wc -l < bitacora/VEREDICTOS.jsonl` | **148** |
+| candidatos en cuarentena del lote 4 | `ls cuarentena/scott_radical_candor/*.json \| wc -l` | **83** |
+| lineas del reporte | `wc -l < docs/loop/REPORTE.md` | **24906** |
+| rama | `git rev-parse --abbrev-ref HEAD` | `extraccion-mundo-11` |
+| commit de apertura | `git rev-parse --short HEAD` | `f2afdeb` |
+| fecha | `python -c "import datetime;print(datetime.date.today())"` | **2026-09-12** |
+
+> ### **LA INSERCION LLEGA ABIERTA A ESTA VUELTA POR CUARTA VEZ, Y POR CUARTA VEZ NO SE INSERTA NADA. LA BANDEJA DE ENTRADA ES LA RAZON ENTERA, Y LA MIDO.**
+>
+> `MODO_INSERCION=insertar` es el default desde `D.39` y la corrida me lo entrega abierto.
+> **Eso no es barra libre:** `D.39` abre la insercion **de un lote CERRADO en extraccion cuyo
+> informe haya certificado el acta del auditor** (`EXTRACTOR.md` 15.7).
+>
+>     $ ls fuentes/scott_radical_candor/*.md | wc -l
+>     15
+>     $ ls cuarentena/scott_radical_candor/*.json | wc -l
+>     83
+>     $ for d in cuarentena/*/; do echo "$d -> $(ls $d*.json 2>/dev/null | wc -l)"; done
+>     cuarentena/_derivadas/            -> 2
+>     cuarentena/_insertados/           -> 0
+>     cuarentena/ensayo_referencia_163/ -> 163
+>     cuarentena/onu_consumidor/        -> 0
+>     cuarentena/scott_radical_candor/  -> 83
+>     cuarentena/smart_who/             -> 0
+>     cuarentena/zhuo_manager/          -> 0
+>
+> **El unico lote con candidatos esperando es el 4, y sigue ABIERTO Y SEGUIRA ABIERTO AL CERRAR
+> ESTA VUELTA:** su bandeja de entrada tiene **15** unidades y hoy se cierra `cap_10`; quedan
+> `cap_11` a `cap_14` sin minar. **Un lote con cuatro capitulos sin minar no esta cerrado en
+> extraccion, asi que no hay lote que insertar.** Y el propio encargo lo escribe en su seccion
+> LO QUE NO HACE ESTA VUELTA: *NO INSERTA NADA*.
+>
+> **METER CANDIDATOS DE UN LOTE ABIERTO ES UNA CAIDA DE DATO, NO UN ADELANTO.** Cero inserciones,
+> cero veredictos nuevos en `bitacora/`, cero ficheros nuevos en `cuarentena/_insertados/`, y el
+> grafo cierra donde abrio. Lo escribo aqui arriba para que no haya que buscarlo.
+
+## O.1. LAS CUATRO TAREAS ENCARGADAS, Y SU ESTADO
+
+*Son cuatro y el tope son cinco (`EXTRACTOR.md` 1.3), asi que no hay cola por techo de tareas.*
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | Los registros: la `ACTA 20` entera, la parada archivada del 12 sep con sus cuatro decisiones, las ocho sedes que cambiaron, y la cifra de lote que se me debe (`1.d`) | ~~ABIERTA~~ **CERRADA** (`O.2`) |
+| 2 | **`cap_10` ENTERO**: 13 candidatos bajo el techo de 15, con la vara del corte ya adjudicada y mi propia lectura de los pasos por delante (`P.17`) | **ABIERTA** |
+| 3 | Las **tres aristas `D.37` de `L173`**, en la misma vuelta en que se escriban sus partes | **ABIERTA** |
+| 4 | **El par de la lupa por lectura**: `cap_10` `L225` a `L251` contra `reconocer_recompensar_gente_estable` | **ABIERTA** |
+
+*Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
+
+---
+
+## O.2. TAREA 1: LOS REGISTROS, Y LO QUE CAMBIO DEBAJO DE MI. **CERRADA**
+
+### O.2.a. LA `ACTA 20`, LEIDA ENTERA Y SITUADA CON SU LINEA (`D.35`)
+
+    $ grep -n "^# ACTA 20" docs/loop/ACTA_AUDITOR.md
+      18136:# ACTA 20. VUELTA 20, lote 4 (scott_radical_candor), cap_09 CERRADO y cap_10
+             cortado: la vuelta del extractor sale limpia de clase, la frontera de cap_10
+             se adjudica en 13 y no en 20, y MI PROPIA RACHA LLEGA A 3 DE 3
+    $ wc -l docs/loop/ACTA_AUDITOR.md
+      18928
+
+**Leida entera, de `L18136` a `L18928`.** Sus **siete adjudicaciones** las recojo **sin
+reabrirlas** (`1.a` del encargo), y las que me tocan a mi son las seis de `cap_10`:
+
+| # | adjudicacion | donde | la recojo |
+|---:|---|---|---|
+| **1** | **la vara del corte: un nodo por cada par (condicion de activacion, entregable)**; la cuenta escrita **no corta**, solo decide si la arista es `D.37` o `D.29` | `4.1` | **SI**, y es la que uso en las trece piezas de `O.3` |
+| **2** | `L93` a `L125`, el plan de crecimiento: **UN** nodo y no cinco. Su `P13` no es cabeza aparte | `4.2` | **SI** |
+| **3** | `L225` a `L251`, recompensar sin ascender: **DOS** nodos. Ni sus cuatro ni el uno del auditor | `4.3` | **SI** |
+| **4** | `L129`, la proporcion de estrellas: **NO da nodo**, y su acto viaja dentro del de contratacion | `4.4` | **SI** |
+| **5** | `L169` a `L201`, despedir: **cabeza mas tres mas coda**. Mi corte de la vuelta 20 gana | `4.5` | **SI** |
+| **6** | **la frontera de la casa para `cap_10` es 13** | `4.6` | **SI** |
+| **7** | `ultimo_apertura.json` es artefacto de maquina por `D.33` | `4.7` | no es mia: se resolvio en la parada, punto 1 |
+
+**Y RECOJO TAMBIEN LAS DOS FILAS QUE HABLAN DE MI TRABAJO, sin discutirlas:** mis nueve
+discutibles releidos uno a uno (**seis se sostienen, dos caen, uno a medias**), **cero caidas de
+`CLASE` y cero de `CIFRA PUBLICADA`**, y **una caida de especie `REPORTE` registrada que NO
+acumula**: la fila `.t1_v20/` de mi `O.6.7` decia `13` guiones donde hoy hay `16`.
+
+> ### **NO REABRO NINGUNA. EL UNICO HECHO NUEVO QUE TRAIGO ESTA EN `O.4`, Y ES DEL INSTRUMENTO: `forja.py arista` NO PUEDE CABLEAR UNA ARISTA CUYOS DOS EXTREMOS VIVEN EN CUARENTENA. LO MIDO EN VEZ DE SUPONERLO.**
+
+### O.2.b. LA PARADA ARCHIVADA, Y SUS CUATRO DECISIONES LITERALES
+
+    $ ls docs/loop/paradas/ | tail -3
+      2026-09-12-d40-falso-positivo.md
+      2026-09-12-el-artefacto-que-faltaba.md
+      2026-09-12-la-fase-ciega-lee-el-acta.md
+    $ grep -n "LAS CUATRO DECISIONES DEL FUNDADOR" docs/loop/paradas/2026-09-12-el-artefacto-que-faltaba.md
+      3:> ## LAS CUATRO DECISIONES DEL FUNDADOR, 12 sep 2026
+
+**Leida entera.** Las cuatro, con lo que cada una me cambia a mi:
+
+| # | la decision | lo que me cambia |
+|---:|---|---|
+| **1** | la racha del auditor se reinicia **por reclasificacion, no por indulto**; `D.33` se ensancha **POR PATRON**; `D.38.2` se acota a **sustancia de auditoria** | **ningun `docs/loop/ultimo_*.json` puede volver a dejarme el arbol en rojo al arrancar.** Comprobado en `O.2.c` |
+| **2** | el informe de lote **sale del turno** y lo corre el arnes, sellado | **no lo recomputo y no lo lanzo.** Ver `O.2.d` |
+| **3** | la poblacion del informe es **grafo mas bandejas** tambien para la aduana; **y el par de `cap_10` `L225` a `L251` contra `reconocer_recompensar_gente_estable` se declara por lectura como `CONTINUA` con arista, en la misma vuelta** | es mi TAREA 4 entera (`O.5`) |
+| **4** | el `PROMPT_SIGUIENTE` de la vuelta 21: `cap_10` entero, las tres `D.37` de `L173`, la coda `P28` fuera, el par de la lupa, **sin insercion porque el lote sigue abierto** | es el encargo que ejecuto |
+
+**Y LA LEO COMO DOCTRINA FIRMADA QUE MANDA SOBRE EL ENCARGO** (`1.b` literal). Donde el encargo y
+la parada dicen lo mismo, cito la parada.
+
+### O.2.c. LAS OCHO SEDES QUE CAMBIARON, **ABIERTAS UNA A UNA Y NO CREIDAS** (`EXTRACTOR.md` 5)
+
+    $ grep -n "PATRONES_DE_ARTEFACTO\|def es_artefacto_de_maquina" src/comun.py
+      268:PATRONES_DE_ARTEFACTO = ("ultimo_*.json",)
+      272:def es_artefacto_de_maquina(nombre, carpeta):
+      283:    return any(fnmatch.fnmatch(nombre, patron) for patron in PATRONES_DE_ARTEFACTO)
+    $ grep -n "D.33\|D.41" docs/BANCO_DE_REGLAS.md | head -4
+      1032:## D.33. LOS ARTEFACTOS DEL ARNES SON REGISTRO DE MAQUINA, Y NO SE BARREN
+      1404:> tercera caida de la racha de la vuelta 20 no era REMEDIO ROTO: era D.33,
+      1820:## D.41. EL INFORME DE LOTE VIVE DONDE CABE, Y NO CABE EN UN TURNO
+    $ grep -n "^### D.38.5" docs/BANCO_DE_REGLAS.md
+      1573:### D.38.5. LA POBLACION DEL BARRIDO ES GRAFO MAS BANDEJAS TAMBIEN PARA LA ADUANA
+    $ grep -n "CARPETAS_FUERA_DE_POBLACION\|class Poblacion" src/informe.py
+      118:CARPETAS_FUERA_DE_POBLACION = ("_insertados", "_derivadas")
+      122:class Poblacion(object):
+    $ grep -n "INFORME_DE_LOTE" orquestador_forja.sh | head -3
+      100:INFORME_DE_LOTE="${INFORME_DE_LOTE:-}"
+      376:INFORME_LOTE_FICHERO="$LOOP/INFORME_DE_LOTE.txt"
+      411:  if [ -z "$INFORME_DE_LOTE" ]; then
+
+**LAS OCHO ESTAN Y LAS OCHO DICEN LO QUE EL ENCARGO DICE.** Dos me cambian el trabajo de hoy, asi
+que las escribo con su consecuencia y no solo con su linea:
+
+| sede | lo que leo hoy | lo que me cambia |
+|---|---|---|
+| `src/comun.py:268` | la lista de tres nombres **ya no existe**: es **un patron**, `ultimo_*.json` | mi arbol arranco limpio: el commit de pendientes de `EXTRACTOR.md` 1.1 llevaba `ultimo_extractor.json` dentro **y el hook salio verde** |
+| `src/informe.py:118` y `122` | la poblacion descarta `_insertados` y `_derivadas`, **y descarta `ensayo_referencia_163` por su tabla de fuentes y no por su nombre**; la clase `Poblacion` publica **las dos mitades** | mi poblacion de hoy es **203 del grafo mas los que esperan en la bandeja del lote 4**, y **crece con cada candidato que escribo**: el numero trece se mide contra doce vecinos mas que el primero |
+
+> ### **Y LA CONSECUENCIA QUE `D.38.5` ME DEJA ENCIMA DE LA MESA, DICHA ANTES DE MEDIRLA: ESPERO MAS `BLOQUEARIA` QUE EN NINGUNA VUELTA ANTERIOR, Y ESO NO ES QUE MIS CANDIDATOS HAYAN EMPEORADO.**
+> Es cola de lectura que hasta ayer era invisible. Lo escribo **antes** de correr el primer
+> informe, para que no se lea como una excusa escrita despues.
+
+### O.2.d. **LA CIFRA QUE SE ME DEBE Y QUE NO PUEDO PAGAR YO** (`1.d` del encargo)
+
+*El encargo dice: si el prompt trae el fichero sellado, citalo por su sello; **si no lo trae,
+declara en tu reporte que esta vuelta no trae saldo de lote y por que, y NO LO LANCES TU.***
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ grep -n "INFORME DE LOTE" docs/loop/loop.log | tail -1
+      376:[2026-09-12 20:14:11] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+
+> ### **ESTA VUELTA NO TRAE SALDO DE LOTE, Y EL MOTIVO NO ES UN OLVIDO: ES QUE LA CORRIDA NO LO PIDIO.**
+>
+> **Los dos ficheros que `D.41` nombra NO EXISTEN en el arbol**, y **el propio arnes lo dejo
+> escrito en su log** con la letra que `D.41` manda (*sin lote que informar el paso se salta Y SE
+> REGISTRA en el log, porque un paso que se salta en silencio es un paso que nadie puede echar en
+> falta*). **La corrida se lanzo sin `INFORME_DE_LOTE`.**
+>
+> **NO LO LANZO YO, Y NO ES PEREZA: ES LA LETRA DE `D.41`.** El informe de los 83 cuesta **156,5 s
+> por candidato** medidos por el fundador, o sea **mas de tres horas**; la vuelta 20 lo intento y
+> lo dejo en **480 bytes**. **Una cifra que no cabe en un turno no se firma en un turno.**
+>
+> **LO QUE ESTO ME DEJA SIN PODER DECIR, dicho por su nombre:** no publico `CHOCAN entre si dentro
+> del lote`, que es **la unica cifra que un informe de uno en uno no ve**. Los informes de `O.3`
+> son de **uno en uno** y esos si son mios, en el mismo acto de escribir cada candidato
+> (`EXTRACTOR.md` 12 y 16, `D.41` ultima linea).
+>
+> **SE QUEDA EN COLA PARA LA VUELTA SIGUIENTE**, que es lo unico que el encargo autoriza a pasar:
+> *lo unico que puede pasar a la siguiente es la `1.d`, si el arnes no trajo informe.*
+
+---
+
+## O.3. TAREA 2: **`cap_10` ENTERO, TRECE CANDIDATOS**. CERRADA
+
+*El encargo la pone como la tarea de la que no se separan las otras dos, y asi la ejecuto:
+primero mi propia lectura de la frontera con los pasos delante (`P.17`), despues los trece
+candidatos uno a uno con su informe, y despues las aristas y el par, que nacen de ellos.*
+
+### O.3.a. **LA UNIDAD, REMEDIDA POR MI ANTES DE TOCARLA** (`EXTRACTOR.md` 5)
+
+    $ sed -n '1,6p' fuentes/scott_radical_candor/cap_10.md
+      libro: Scott, Radical Candor
+      unidad: Cap. 7
+      titulo_textual: Team
+    $ sed -n '8,$p' fuentes/scott_radical_candor/cap_10.md | wc -w
+      8976
+    $ wc -l fuentes/scott_radical_candor/cap_10.md
+      263
+
+**LAS TRES CIFRAS DEL ENCARGO REPRODUCEN AL DIGITO: cuerpo `8.976`, unidad `Cap. 7`, rotulo
+`Team`.** El encargo decia *remidelo tu*, y remedido esta.
+
+### O.3.b. **MI PROPIA LECTURA DE LA FRONTERA, CON LOS PASOS YA ESCRITOS DELANTE** (`P.17`)
+
+*La `ACTA 20` `4.6` cerro la frontera en **13** y dijo con todas las letras que **si mi lectura
+con los pasos delante contradice su tabla, gana la mia**, declarada con su frontera al lado y su
+`sed` pegado. **Asi que la corto otra vez y la cierro contra el cuerpo ANTES de publicar la
+cuenta**, que es la orden 1 de la `ACTA 18` `7.5`.*
+
+    $ python .t1_v21/frontera21.py | head -12
+    ==============================================================================
+    1. LA COMPROBACION, ANTES DE LA TABLA
+    ==============================================================================
+    tramos que dan nodo                    : 6
+    tramos de resto                        : 3
+    lineas con contenido de L8 en adelante : 128
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 8976 palabras
+    cuerpo medido aparte (sed 8,$ | wc -w) : 8976 palabras
+    IGUALES                                : True
+
+> ### **CIERRA AL DIGITO: `8.976` CONTRA `8.976`, CERO LINEAS SIN CUBRIR Y CERO SOLAPES. LA CUENTA SE PUEDE PUBLICAR.**
+
+**LA TABLA LA IMPRIME EL MISMO GUION QUE CORRE LA COMPROBACION** (`EXTRACTOR.md` 5), con la
+salida literal de la primera linea de cada tramo pegada en su ultima columna (`D.35`):
+
+| tramo | palabras | nodos | que es | la salida, pegada |
+|---|---:|---:|---|---|
+| `L47 a L87` | 1862 | **3** | las tres conversaciones de carrera | `47:Conversation one: life story` |
+| `L93 a L125` | 1095 | **1** | el plan anual de gestion del crecimiento | `93:GROWTH MANAGEMENT` |
+| `L127 a L163` | 1501 | **1** | el proceso de contratacion, con el acto de L129 dentro | `127:HIRING: YOUR MENTALITY AND YOUR PROCESS` |
+| `L165 a L201` | 1372 | **5** | despedir: cabeza, tres partes y coda | `165:FIRING` |
+| `L203 a L223` | 638 | **1** | la calibracion de ascensos, con el caso de Google dentro | `203:PROMOTIONS` |
+| `L225 a L251` | 568 | **2** | recompensar sin ascender | `225:REWARD YOUR ROCK STARS` |
+| | **7036** | **13** | **los seis tramos que dan nodo** | |
+
+| tramo de resto | palabras | nodos | por que no |
+|---|---:|---:|---|
+| `L9 a L45` | 1641 | **0** | subtitulo, entrada, rotulos y EL CASO DE RUSS LARAWAY |
+| `L89 a L91` | 101 | **0** | cierre de seccion que remite a una web y a un libro de otro |
+| `L253 a L263` | 198 | **0** | el cuadro que no esta en el recorte, el resumen y la cabecera del cap siguiente |
+| | **1940** | **0** | |
+
+> ### **MI LECTURA CON LOS PASOS DELANTE DA 13, LA MISMA CUENTA QUE LA `ACTA 20` `4.6`, Y EN LOS MISMOS SEIS TRAMOS. NO CONTRADIGO LA TABLA DE LA CASA: LA CONFIRMO HABIENDO ESCRITO LOS 194 PASOS.**
+>
+> **Y DIGO QUE ESO ES MAS QUE COINCIDIR EN UN NUMERO:** los dos cortes que el acta me gano en
+> la vuelta 20 (`L93 a L125` en **uno** y `L169 a L201` en **cinco**) son los dos que escribir
+> los pasos confirma mas claro. El plan de crecimiento no se pudo partir: la linea 103 dice
+> *The first step is* y la 109 dice *Next*, asi que sus partes entraron como pasos 5 a 21 de un
+> solo nodo sin que sobrara ni faltara nada. Y el tramo de despedir no se pudo juntar: al
+> escribir los pasos, **cada una de las cuatro piezas pedia su propio entregable** y la cabeza
+> se quedo con once pasos que ninguna de las tres partes tiene.
+>
+> **LA UNICA DIFERENCIA CON LA TABLA DEL ACTA ES DE ENCUADRE Y NO DE CUENTA, y la declaro:** mi
+> tabla abre el tramo de contratacion en `L127` y no en `L133`, y el de despedir en `L165` y no
+> en `L169`, porque los rotulos de seccion (`HIRING: YOUR MENTALITY AND YOUR PROCESS`, `FIRING`,
+> `A necessary evil`, `PROMOTIONS`, `REWARD YOUR ROCK STARS`) van dentro del tramo que encabezan
+> en vez de ser piezas sueltas. **Es el mismo encuadre que la frontera ciega del auditor usaba
+> (`ACTA 20` `3.1`, sus 18 piezas contra mis 39) y por eso mis palabras por tramo no son
+> comparables fila a fila con mi propia tabla de 39 piezas de la vuelta 20.** La suma total es
+> la misma y las lineas cubiertas son las mismas **128**.
+
+### O.3.c. **LOS TRECE, UNO A UNO, CON SUS PASOS CONTADOS DEL FICHERO Y SU SELLO**
+
+*`EXTRACTOR.md` 5: la tabla se cuenta de su fichero. La imprime `.t1_v21/frontera21.py` y los
+sellos los da `git hash-object`, que es lo que ata cada informe a un estado de fichero.*
+
+| # | pieza | id | pasos | atrib. | sello del fichero (`git hash-object`) |
+|---:|---|---|---:|---:|---|
+| 1 | `P7` | `conversar_historia_vida_descubrir_motivadores` | **15** | 0 | `3c0e1470` |
+| 2 | `P8` | `conversar_suenios_cruzar_habilidades` | **15** | 0 | `021fe522` |
+| 3 | `P9` | `trazar_plan_dieciocho_meses_aprendizaje` | **14** | 0 | `02218600` |
+| 4 | `P13 a P17` | `armar_plan_anual_crecimiento_equipo` | **29** | 0 | `e0ab02b1` |
+| 5 | `P19 y P21` | `montar_proceso_contratacion_reducir_sesgo` | **32** | 2 | `8800e11c` |
+| 6 | `P24` | `facilitar_despido_tres_cosas` | **11** | 0 | `8a2c3c69` |
+| 7 | `P25` | `admitir_pronto_mal_desempenio_cuatro_razones` | **9** | 0 | `3ba9b4c1` |
+| 8 | `P26` | `calibrar_decision_despido_documentarla` | **13** | 0 | `dfbbc36c` |
+| 9 | `P27` | `sopesar_consejo_legal_despedir_humildad` | **8** | 0 | `f5bf0d46` |
+| 10 | `P28` | `contactar_despedido_mes_despues` | **6** | 0 | `84fe0efe` |
+| 11 | `P30` | `calibrar_ascensos_evitar_politica` | **19** | 1 | `f56f86e7` |
+| 12 | `P33` | `evitar_obsesion_ascenso_estatus` | **10** | 0 | `e8570386` |
+| 13 | `P34 a P36` | `reconocer_excelencia_trayectoria_gradual` | **13** | 1 | `52eaaad4` |
+| | | **trece candidatos** | **194** | **4** | `.aduana_v21/sellos_candidatos.txt` |
+
+    $ ls cuarentena/scott_radical_candor/*.json | wc -l
+      96
+    $ wc -l < .aduana_v21/sellos_candidatos.txt
+      13
+
+**`83` al abrir mas `13` de hoy son `96`**, y la cuenta de la bandeja lo confirma. **`194` pasos
+en trece nodos son `14,9` de media**, contra los `13,6` de los 20 de `cap_09`.
+
+### O.3.d. **LA RELECTURA DE FIDELIDAD `D.30`, Y NO SALIO LIMPIA: ME CACE 22 CUENTAS MIAS ATRIBUIDAS AL LIBRO**
+
+*`D.30`: ninguna guarda de esta casa ve un paso que yo escribi y el libro no dice. Y la `ACTA 20`
+`1.4` dejo el ejemplar de la especie exacta que hoy me muerde a mi: **la vuelta 20 se cazo un
+puente que decia la diferencia que el texto pone entre LAS DOS MANERAS de compadecerse, cuando
+el texto NO da esa cuenta.** Hoy he escrito diecisiete de esas y cinco mas en titulos.*
+
+**PRIMERO EL INSTRUMENTO ESTRECHO, el mismo de la vuelta 20 aplicado al tramo de cada candidato
+y no al capitulo entero:**
+
+    $ python .t1_v21/cifras21.py          (ANTES de la correccion)
+      cifras y numerales comprobados en los 194 pasos : 170
+      los que NO estan en su tramo del libro           : 11
+
+**Y DESPUES EL ANCHO, QUE TUVE QUE ESCRIBIR PORQUE EL ESTRECHO NO BASTA, y digo por que no
+basta:** `cifras21.py` busca el numeral en el tramo, y **el tramo puede traer ese mismo numero
+por otra razon**. Si el libro dice `three to five columns`, mi `sus tres preguntas` pasa sin que
+nadie compare nada. **`.t1_v21/cuentas21.py` no decide: LISTA**, y la lectura la hago yo.
+
+    $ python .t1_v21/cuentas21.py | tail -2
+      ocurrencias de numeral que cuentan cosas, en los 194 pasos: 52
+
+**LAS 52 RELEIDAS UNA A UNA CONTRA SU LINEA. 35 SON DEL LIBRO Y SE QUEDAN; 17 ERAN MIAS Y SE
+RETIRAN.** Las diecisiete, con la linea que NO las dice:
+
+| # | id | paso | la cuenta que yo atribuia | la linea, y lo que dice de verdad |
+|---:|---|---:|---|---|
+| 1 | `conversar_historia_vida...` | 5 | *El texto da sus **dos** ejemplares* | `L49` pone dos respuestas seguidas y **no escribe ninguna cuenta** |
+| 2 | `conversar_historia_vida...` | 6 | *los otros **dos** ejemplares* | `L49`, igual |
+| 3 | `conversar_suenios...` | 12 | *sus **tres** preguntas* | `L71`: *what are the projects..., whom can you introduce..., what are the options for education?* **Tres, sin cuenta escrita** |
+| 4 | `armar_plan_anual...` | 10 | *el texto nombra **tres*** | `L105`: *your boss, a peer, an HR person.* **Tres nombrados, sin cuenta** |
+| 5 | `armar_plan_anual...` | 16 | *las **tres** preguntas del texto* | `L109`: tres preguntas seguidas, **sin cuenta** |
+| 6 | `montar_proceso...` | 6 | *basandola en **tres** cosas* | `L137`: *the role, the skills required for the role, and the team fit criteria* |
+| 7 | `montar_proceso...` | 7 | *sus **dos** ejemplares* | `L137`: *It could be... Or maybe it's...* |
+| 8 | `montar_proceso...` | 13 | *en las **dos** direcciones* | `L139` dice las dos cosas y **no las cuenta** |
+| 9 | `montar_proceso...` | 20 | *las **dos** razones que el texto da* | `L147` da dos y **no las cuenta** |
+| 10 | `montar_proceso...` | 30 | *las **dos** caras que el texto le pone* | `L163` dice las dos y **no las cuenta** |
+| 11 | `admitir_pronto...` | 2 | *con sus **dos** preguntas* | `L177` hace dos y **no las cuenta** |
+| 12 | `calibrar_decision...` | 4 | *los **dos** errores opuestos* | `L183` pone dos y **no los cuenta** |
+| 13 | `sopesar_consejo_legal...` | 6 | *las **dos** respuestas* | `L193` pone dos y **no las cuenta** |
+| 14 | `calibrar_ascensos...` | 2 | *los **cinco** consejos* | `L213`: *Here are **some tips*** . **LA CUENTA CINCO ERA MIA** |
+| 15 | `calibrar_ascensos...` | 5 | *sus **dos** defectos* | `L211` pone dos y **no los cuenta** |
+| 16 | `evitar_obsesion...` | 4 | *Pesa las **dos** cosas* | `L233` opone coste y beneficio **sin contarlos** |
+| 17 | `evitar_obsesion...` | 6 | *las **dos** mitades* | `L235` separa las dos **sin contarlas** |
+
+**Y LAS CINCO DE TITULO Y DENOMINACION, que son la misma especie en otra sede, y una de ellas
+era ademas una cifra FALSA:**
+
+| sede | lo que decia | lo que dice hoy, y por que |
+|---|---|---|
+| `montar_proceso...` **titulo** | *con las **cinco** practicas que el texto nombra* | *con las practicas que el texto nombra*. `L135` dice *some simple things*, **y mi propia cuenta de rotulos del libro es SEIS** (`L137`, `L139`, `L145`, `L149`, `L153`, `L159`): la cifra no solo estaba atribuida, **estaba mal** |
+| `montar_proceso...` **nombre largo** | enumeraba **cinco** fundiendo dos rotulos en uno | enumera los **seis**, sin cuenta atribuida |
+| `calibrar_ascensos...` **titulo** | *con los **cinco** consejos que el texto da* | *con los consejos que el texto da* |
+| `calibrar_ascensos...` **nombre largo** | *los **cinco** consejos* | *los consejos, rotulados uno a uno por el libro* |
+| `reconocer_excelencia...` **nombre largo** | *Las **tres** vias* | *Las vias*. `L247` dice *Another great way*, **sin cuenta** |
+
+    $ python .t1_v21/arreglo_cuentas.py | tail -4
+      arreglos aplicados : 22 de 22
+      fallos             : 0  []
+    $ python .t1_v21/cuentas21.py | tail -2
+      ocurrencias de numeral que cuentan cosas, en los 194 pasos: 35
+    $ python .t1_v21/cifras21.py
+      cifras y numerales comprobados en los 194 pasos : 154
+      los que NO estan en su tramo del libro           : 2
+         P27  sopesar_consejo_legal_despedir_humildad  paso 2  ->  numeral un
+         P27  sopesar_consejo_legal_despedir_humildad  paso 3  ->  numeral una
+
+**LOS DOS QUE QUEDAN SON FALSOS POSITIVOS DE MI PROPIO INSTRUMENTO Y LO DIGO EN VEZ DE
+ESCONDERLO:** son `un` y `una` usados como **articulo indeterminado** y no como numeral.
+
+    $ sed -n '191p' fuentes/scott_radical_candor/cap_10.md
+      ...Take a deep breath and a big step back. You have a relationship with the
+      person you're about to fire...
+
+**`un gran paso atras` es `a big step back` y `una relacion` es `a relationship`.** Por eso
+`cuentas21.py` deja `un` y `una` fuera de su lista a proposito, y lo dice en su cabecera.
+
+> ### **LO QUE NO SE RETIRO, Y ES LA MITAD QUE IMPORTA: NI UN CONTENIDO.** Los medios que el libro nombra siguen enteros, uno a uno, en los 194 pasos. **Lo unico que se retiro fue la CUENTA que yo le atribuia al libro donde el libro no la escribe.** Los pasos siguen siendo 194 antes y despues, y el guion lo comprueba fichero a fichero.
+
+**Y DOS ARREGLOS MAS DEL MISMO ACTO, que no son de cuenta y van aqui porque se hicieron en la
+misma pasada:**
+
+| que | por que |
+|---|---|
+| `evitar_obsesion...` paso 9: se anade *y deja la lista abierta con un y asi sucesivamente* | `L237` cierra su lista con *and so on*, **y mi paso la cerraba en cuatro objetos**. Una lista cerrada donde el libro la deja abierta es la misma especie de defecto en la direccion contraria |
+| `evitar_obsesion...` paso 6: gramatica | el arreglo automatico dejo *y es las que hacen*, que no se entiende. Corregido a *que es lo que hace* |
+
+**LA TASA DE `PASOS INVENTADOS` DE `cap_10` QUEDA EN `0,00` (0 de 194), Y DIGO CON QUE CRITERIO,
+porque hay dos y la `ACTA 20` `6.2` exige decirlo:** el numerador cuenta **puentes que siguen en
+el arbol**, y los 22 se corrigieron **antes** de que el candidato contara como escrito y antes
+de su informe de registro (`EXTRACTOR.md` 16). **Con el otro criterio (22 de 194) la fila daria
+`11,34` y si dispararia el freno**, asi que esta vez la eleccion de criterio **si mueve una
+decision**, y por eso la escribo arriba y con las dos cifras.
+
+> ### **Y LA LECTURA QUE SACO DE ESTO CONTRA MI MISMO, porque es el dato mas util de la vuelta: `cap_09` dio 0 puentes en 272 pasos y `cap_10` dio 22 en 194. LA MANO NO HA EMPEORADO: LO QUE HA CAMBIADO ES EL INSTRUMENTO.**
+> `cifras21.py`, que es el de la vuelta 20, cazaba **11** de los 22. El ancho caza los 22.
+> **No puedo saber cuantas cuentas de esta especie hay en los 856 pasos de `cap_00` a `cap_09`
+> sin correr el ancho sobre ellos, y no lo he corrido.** Lo declaro como lo que es: **una
+> sospecha con su instrumento ya escrito**, no una cifra. Y va en `O.6` como propuesta.
