@@ -25,7 +25,12 @@ cp "$ORIGEN" "$DESTINO"
 chmod +x "$DESTINO" 2>/dev/null || true
 
 echo "hook instalado en .git/hooks/pre-commit"
-echo "corre el gate y el barrido de guiones en cada commit, y aborta en rojo."
+echo "corre el gate, el barrido de guiones y el tallado del reporte (D.41) en"
+echo "cada commit, y aborta en rojo."
+echo ""
+echo "SI ACABAS DE ACTUALIZAR hooks/pre-commit, TENIAS QUE CORRER ESTO: el hook"
+echo "que manda es la COPIA de .git/hooks/, no el fichero del repo. Un cambio en"
+echo "hooks/pre-commit sin instalar es una guarda que no guarda nada."
 echo ""
 echo "comprobacion rapida (ha de terminar en verde):"
 echo "    sh hooks/pre-commit"
