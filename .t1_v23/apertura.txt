@@ -1,0 +1,24 @@
+== git ==
+extraccion-mundo-11
+b05d0401046abc0a50894a5dcf8bf53a87cc19e7
+b05d040 2026-09-13 12:07:33 -0400
+
+== dataset/nodos.jsonl ==
+203 dataset/nodos.jsonl
+
+== cuarentena/scott_radical_candor ==
+113
+
+== _insertados ==
+cuarentena/_insertados/onu_consumidor/ 7
+cuarentena/_insertados/smart_who/ 61
+cuarentena/_insertados/zhuo_manager/ 137
+
+== bitacora ==
+total 200
+drwxr-xr-x 1 AlexDesk 197609      0 Sep  4 17:58 ./
+drwxr-xr-x 1 AlexDesk 197609      0 Sep 13 12:10 ../
+-rw-r--r-- 1 AlexDesk 197609 152157 Sep 12 04:15 VEREDICTOS.jsonl
+
+== VEREDICTOS.jsonl lineas ==
+148 bitacora/VEREDICTOS.jsonl

@@ -27300,3 +27300,77 @@ esta en `P.6.b`. **No la repito aqui**, que seria publicar dos veces una cifra q
 > buena: **el total del lote era un suelo porque `856` pasos se habian medido con un instrumento mas
 > estrecho**, y ahora dos de esos capitulos estan medidos. **La cifra no empeoro el trabajo: dejo de
 > esconderlo.**
+
+---
+
+# VUELTA 23, la cola de siete del auditor, `cap_12` en adelante, y **el cierre del lote 4 con su insercion** (lote 4, `scott_radical_candor`)
+
+*Esqueleto abierto ANTES de la primera tarea (`EXTRACTOR.md` 3). Las filas se anexan al cerrarse
+cada tarea, no al final de la vuelta. **El encargo pone CUATRO tareas y el tope son cinco**
+(`EXTRACTOR.md` 1.3), asi que no hay cola por techo de tareas. **La TAREA 1 va primera y no se
+solapa**, por orden expreso del encargo.*
+
+## Q.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION
+
+*`EXTRACTOR.md` 4: la apertura se mide antes de la primera operacion. **Las nueve se midieron con el
+arbol ya limpio**, es decir DESPUES del commit de pendientes que `EXTRACTOR.md` 1.1 manda hacer
+primero y ANTES de la primera linea de trabajo. Ese commit (`b05d040`) movio el hash y no movio
+ninguna otra.*
+
+Salida de los nueve comandos, guardada en `.t1_v23/apertura_tabla.txt`. La tabla los recoge:
+
+<!-- TALLADO: parcial salida=.t1_v23/apertura_tabla.txt -->
+
+| medida | instrumento corrido en esta vuelta | valor al abrir |
+|---|---|---:|
+| nodos en el grafo | `wc -l < dataset/nodos.jsonl` | **203** |
+| veredictos en bitacora | `wc -l < bitacora/VEREDICTOS.jsonl` | **148** |
+| candidatos en cuarentena del lote 4 | `ls cuarentena/scott_radical_candor/*.json \| wc -l` | **113** |
+| ficheros en `cuarentena/_insertados/` | `find cuarentena/_insertados -name '*.json' \| wc -l` | **201** |
+| unidades en la bandeja de entrada del lote 4 | `ls fuentes/scott_radical_candor/*.md \| wc -l` | **15** |
+| lineas del reporte | `wc -l < docs/loop/REPORTE.md` | **27302** |
+| rama | `git rev-parse --abbrev-ref HEAD` | `extraccion-mundo-11` |
+| commit de apertura | `git rev-parse --short HEAD` | `b05d040` |
+| fecha | `python -c "import datetime;print(datetime.date.today())"` | **2026-09-13** |
+
+## Q.0.1. LA INSERCION LLEGA ABIERTA POR SEXTA VEZ, Y ESTA VUELTA **SI TIENE DONDE**
+
+*`MODO_INSERCION=insertar` es el default desde `D.39` y la corrida me lo entrega abierto.*
+
+**`D.39` NO ABRE LA INSERCION DE CUALQUIER CANDIDATO: ABRE LA DE UN LOTE CERRADO EN EXTRACCION CUYO
+INFORME HAYA CERTIFICADO EL ACTA DEL AUDITOR** (`EXTRACTOR.md` 15.7). **Al abrir, el lote 4 sigue
+ABIERTO**: su bandeja de entrada tiene **15** unidades (`cap_00` a `cap_14`) y **`cap_12`, `cap_13` y
+`cap_14` estan sin minar**. Por tanto **la condicion de `D.39` NO se cumple al abrir**, y solo se
+cumplira si la TAREA 3 cierra los tres. **Meter candidatos de un lote abierto es una caida de dato,
+no un adelanto**, asi que hasta que ese momento llegue no entra nada.
+
+**La decision se vuelve a medir al cerrar la TAREA 3, no aqui**, y el veredicto de si hubo o no
+insercion se publica en `Q.5` con las cifras del cierre recomputadas (`EXTRACTOR.md` 4).
+
+## Q.0.2. ESTA VUELTA NO TRAE SALDO DE LOTE (`D.42`)
+
+Salida de los dos comandos, guardada en `.t1_v23/informe_de_lote.txt`:
+
+    $ ls -la docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+    ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+    ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ tail -3 docs/loop/loop.log
+    [2026-09-13 12:05:45]   testigo del auditor escrito en   : 2026-09-13 01:23:47 (1789277027)
+    [2026-09-13 12:05:45] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+    [2026-09-13 12:05:45] VUELTA 1 : EXTRACTOR (claude-opus-5)
+
+**`D.42`: si el prompt no me entrega ningun informe, no lo invento y no lo lanzo.** El arnes lo dice
+por su cuenta en `loop.log`. **La vuelta no trae saldo de lote**, y por tanto **no publico `CHOCAN
+entre si dentro del lote`**, que es la cifra que solo ese informe ve. **El de un candidato suelto
+sigue siendo mio** y se corre en el mismo acto de escribir cada candidato (`EXTRACTOR.md` 16).
+
+## Q.1. LAS CUATRO TAREAS ENCARGADAS, Y SU ESTADO
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | **PRIMERA Y SIN SOLAPE**: la cola de siete correcciones del auditor (las numeradas 3 a 9 de su `PARA_ALEXIS` 5) | ABIERTA |
+| 2 | **El tallador** (`D.41`): toda tabla que diga venir de un instrumento se anexa desde su fichero | ABIERTA |
+| 3 | **`cap_12`, `cap_13` y `cap_14`**, con el techo de candidatos por vuelta mandando sobre el de capitulos | ABIERTA |
+| 4 | **El cierre del lote 4**, y la insercion de `D.39` con sus aristas y sus veredictos si y solo si el lote cierra | ABIERTA |
+
+*Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
