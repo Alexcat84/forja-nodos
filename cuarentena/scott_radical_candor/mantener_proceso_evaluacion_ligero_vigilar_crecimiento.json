@@ -1,0 +1,44 @@
+{
+  "id": "mantener_proceso_evaluacion_ligero_vigilar_crecimiento",
+  "titulo": "Mantener ligero el proceso de evaluacion vigilando activamente cuanto tiempo se come, con la herramienta ligera que el texto describe",
+  "denominaciones": {
+    "nombre_largo": "El decimotercero de los trece elementos: ligero o pesado, con la vigilancia activa del tiempo que el proceso consume y el impreso que se rellena en menos de treinta minutos",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "lightweight or heavyweight"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tienes que decidir cuanto trabajo le cuesta a cada jefe y a cada empleado el proceso de evaluacion, y cada vez que sospechas que el proceso ha crecido solo.",
+  "entregable_esperado": "Un proceso de evaluacion ligero dos veces al anio, con el tiempo que consume medido y recortado activamente, y un impreso que el jefe rellena por empleado en menos de treinta minutos.",
+  "pasos_accionables": [
+    "Ten delante lo que un proceso pesado es, que es como el texto lo define: exige a todos los que escriben evaluaciones de empleados y critica de arriba, de abajo y de los lados dedicar cantidades tremendas de tiempo a hacerlo.",
+    "Cuenta con el aviso al que sabe que el texto pone: aunque pongas en marcha un buen proceso, los procesos desarrollan vida propia si no los gestionas activamente.",
+    "Vigila activamente cuanto tarda el proceso y recortalo para asegurarte de que no crece mas alla de lo que pretendes, porque el texto dice que este tipo de deriva impredecible puede pasar y pasa en todas partes.",
+    "Recomienda un proceso ligero que ocurra dos veces al anio, mientras mantengas el control del proceso.",
+    "Recuerda que el proceso tardara menos y sera mas radicalmente franco si toda la critica de trescientos sesenta grados es transparente: no tener que sintetizar ni anonimizar esa critica recorta el tiempo que los jefes tienen que dedicar a escribir la critica de cada persona a su cargo.",
+    "Monta la herramienta de evaluacion ligera igual que la herramienta de trescientos sesenta grados: que pida a los jefes calificar a sus empleados en cada categoria, y que les pida meter texto cuando el empleado esta en las dos notas de abajo o en las dos de arriba.",
+    "Haz que la nota global se calcule automaticamente.",
+    "Haz que el reparto de notas del jefe se compare con el reparto esperado, y que el jefe tenga que explicarse si su reparto cae fuera de lo esperado.",
+    "Comprueba el resultado contra la vara que el texto pone: el jefe tiene que poder rellenar el impreso de evaluacion de cada empleado en menos de treinta minutos.",
+    "Cuenta con lo que el texto dice que hace desaparecer buena parte de la necesidad de un proceso pesado: que la organizacion subraye la importancia de la critica regular e improvisada.",
+    "Dale al jefe un resumen de la critica de sus pares para que pueda mirarlo antes de crear la valoracion final, con cuanta gente dio cada nota y la posibilidad de pinchar en una nota para ver el detalle.",
+    "Deja que el jefe rellene entonces su valoracion del desempenio de la persona, y que se le pida explicarse si su valoracion varia dramaticamente de la del equipo.",
+    "Como ultimo paso del proceso, manda un mensaje a todos los jefes que dirigen a mas de treinta personas si las valoraciones de pares de su equipo, o su propia valoracion de su equipo, quedan fuera de los limites esperados."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_14.md, unidad Bonus Chapter, titulo textual Bonus Chapter: A Radically Candid Performance Review. Sale de las lineas 221 a 239, que son la PIEZA P15 de la frontera de esta vuelta, 699 palabras, y es el elemento numero 13 y ultimo de los trece que la cabeza nombra. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 231 describe la herramienta ligera con su inventario de MEDIOS uno a uno, calificar por categoria, meter texto solo en los dos extremos, calculo automatico de la global, comparacion con el reparto esperado y explicacion obligada si se sale, mas la vara de menos de treinta minutos; y las lineas 235 a 239 anaden tres medios mas. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 13 pasos, 13 TRANSCRIPCION, 0 PUENTE. P1 sale de la linea 223; P2 y P3 de la 227 y la 229; P4, P5, P6, P7, P8 y P9 de la 231; P10 de la 233; P11 de la 235; P12 de la 237; P13 de la 239. LAS DOS CIFRAS SON DEL TEXTO: menos de treinta minutos por impreso en la linea 231, y mas de treinta personas dirigidas en la 239. NO ESCRIBO EL CASO COMO PASO, manual 3.5: las cuatro horas por evaluacion, las veinticuatro horas dos veces al anio, las otras veinte horas de critica de pares, las cuatro semanas de segundo empleo, los resfriados y el apodo que la autora cuenta de su empresa anterior viven en la linea 225 como ilustracion de lo que cuesta un proceso pesado, y tambien la historia del recien licenciado que vivia en su camioneta y los paquetes de los vicepresidentes en la 227. El P1, el P2 y el P3 recogen la doctrina sin los datos del caso. NO ESCRIBO DESTINATARIO NI PERIODO mas alla de los que el texto pone. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: quien vigila el tiempo del proceso, cada cuanto se mide, ni que se hace cuando un jefe tarda mucho mas de treinta minutos por persona.",
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ]
+}

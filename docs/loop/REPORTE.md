@@ -28509,7 +28509,7 @@ sigue siendo mio** y se corre en el mismo acto de escribir cada candidato (`EXTR
 | 1 | **PRIMERA Y SIN SOLAPE**: los registros, las dos cifras que acumularon, las tres remisiones a `Q.6`, el remedio de escritura y las cinco adjudicaciones | ~~ABIERTA~~ **CERRADA** (`R.2`). **Las dos cifras remedidas con instrumento propio y corregidas sin borrar, las tres remisiones reapuntadas, y UNA PARADA declarada**: el remedio 3 manda escribir en `docs/BANCO_DE_REGLAS.md`, que no es mi sede |
 | 2 | **La fusion que el `REPITE` de `L51` promete y no se hizo**, y el veredicto que `Q.6` se llevo | ~~ABIERTA~~ **CERRADA** (`R.3`). **Las TRES cosas que `L51` anade absorbidas por el donante (`P5`, `P6`, `P7`), frontera de unidad publicada, aduana vuelta a correr: `ENTRARIA`, `0 CAERIA`**, y el veredicto del par escrito con su razon |
 | 3 | **Las cuatro aristas que el libro declara en `L113`** y el reparo de las aristas 49 a 52 | ~~ABIERTA~~ **CERRADA** (`R.4`). **Las cuatro se sostienen y la deuda sube de `53` a `57`**, pero **las mido `D.29` y no `D.37`**, con el `grep -c` que lo decide pegado. Reparo de las 49 a 52 escrito con su regla de desempate |
-| 4 | **`cap_14` entero**, la ultima unidad sin minar del lote 4 | ABIERTA |
+| 4 | **`cap_14` entero**, la ultima unidad sin minar del lote 4 | ~~ABIERTA~~ **CERRADA** (`R.5`). **Minado ENTERO: 17 piezas de frontera cerradas al digito, 15 candidatos, 1 caida de puerta corregida, 25 pares leidos, 14 aristas, freno en `0,00`**. **El techo de 15 se toca y no se pasa**, asi que la TAREA 5 se abre |
 | 5 | **El cierre del lote 4 y la insercion `D.39`**, si y solo si `cap_14` cierra el lote | ABIERTA |
 
 *Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
@@ -28999,3 +28999,359 @@ la orden del encargo y la costumbre que la vuelta 23 dejo puesta.
 > distinta de la que mi encargo apuntaba y con la medicion que lo decide pegada** (`grep -c` da `0`
 > en `cap_09`); el reparo de las 49 a 52 escrito con su regla de desempate y su condicion de
 > activacion impresa del fichero; **y dos discutibles marcados antes de saber si acierto.**
+
+---
+
+## R.5. TAREA 4: **`cap_14` ENTERO**, la ultima unidad sin minar del lote 4. CERRADA
+
+### R.5.a. EL ROTULO Y EL VOLUMEN, **REMEDIDOS POR MI** (`EXTRACTOR.md` 5)
+
+*El auditor me da el rotulo y la cuenta ya medidos, y ademas registra que su encargo anterior los
+tenia mal. **Los remido igual: una cifra de mi encargo no es fuente de una cifra mia.***
+
+Salida de los tres comandos, guardada en `.v24/rotulo_cap14.txt`:
+
+    $ sed -n "1,7p" fuentes/scott_radical_candor/cap_14.md
+    ---
+    libro: Scott, Radical Candor
+    edicion: Fully Revised & Updated Edition, St. Martin's Press, First Edition October 2019
+    unidad: Bonus Chapter
+    titulo_textual: Bonus Chapter: A Radically Candid Performance Review
+    fidelidad: verbatim
+    ---
+    $ sed -n "8,$p" fuentes/scott_radical_candor/cap_14.md | wc -w
+    7638
+    $ wc -l fuentes/scott_radical_candor/cap_14.md
+    243 fuentes/scott_radical_candor/cap_14.md
+
+**LOS TRES CUADRAN AL DIGITO CON LOS DEL ENCARGO.** El rotulo es
+`Bonus Chapter: A Radically Candid Performance Review`, la unidad es `Bonus Chapter`, el cuerpo son
+**7.638** palabras y el fichero **243** lineas. **La caida del rotulo del encargo anterior queda
+registrada con el nombre de quien la firmo y no la reabro.**
+
+### R.5.b. **EL PAR MAS CARO DE FALLAR, LEIDO ENTERO ANTES DE CORTAR** (`EXTRACTOR.md` 2)
+
+*El encargo me manda leer `entregar_evaluacion_formal_desempenio_nueve_consejos` ENTERO antes de
+cortar `cap_14`, no despues de que la aduana me bloquee. **Lo lei entero, sus 22 pasos, y va aqui su
+lectura con la conclusion delante.***
+
+**EL GEMELO DECLARADO Y SU MEDIDA, impresa de su fichero:**
+
+| | |
+|---|---|
+| id | `entregar_evaluacion_formal_desempenio_nueve_consejos` |
+| unidad | `cap_11` |
+| pasos | **22** |
+| condicion de activacion | *Cuando tu empresa tiene un proceso formal de evaluacion de desempenio y te toca dar la de alguien de tu equipo.* |
+| entregable | *Una evaluacion dada sin sorpresas, contrastada con mas de un juicio, escrita, con la mitad del tiempo puesta en el plan que la propia persona propone, y con sus revisiones marcadas en el calendario.* |
+
+> ## **VEREDICTO DEL PAR `cap_14` CONTRA `entregar_evaluacion_formal_desempenio_nueve_consejos`: `SANO`. NO SON GEMELOS Y LA RAZON ES EL SUJETO.**
+>
+> **El nodo de `cap_11` tiene por sujeto UN JEFE que entrega UNA evaluacion a UNA persona**, y su
+> procedimiento entero son actos de esa conversacion: no des sorpresas, pide primero que te evaluen
+> a ti, escribela, decide cuando la entregas, reserva cincuenta minutos, parte el tiempo en
+> diagnostico y plan, no traigas tu el plan, deja la nota y la paga para el final.
+>
+> **`cap_14` tiene por sujeto UN EQUIPO DE GESTION DEL DESEMPENIO que disenia EL SISTEMA de una
+> empresa**, y su procedimiento entero son decisiones de disenio: si hay nota, cuantas, como se
+> llaman, que reparto se espera, si se fuerza la curva, como se calibra, cada cuanto, si es de
+> trescientos sesenta grados, si es transparente, si es ligero.
+>
+> **LA PRUEBA MAS BARATA DE QUE NO SE PISAN:** el nodo de `cap_11` **presupone** el sistema (*cuando
+> tu empresa TIENE un proceso formal*) y `cap_14` **lo construye**. Y no hay ni un paso repetido: la
+> unica frontera que se tocan es la palabra evaluacion.
+>
+> **Y LO DIGO ANTES DE QUE LA ADUANA OPINE, que es la orden:** ninguno de los 15 informes de esta
+> tanda levanto a `entregar_evaluacion_formal_desempenio_nueve_consejos` como vecino de ningun
+> candidato de `cap_14`. **La lectura y la senial coinciden, y la lectura iba primero.**
+
+### R.5.c. LA FRONTERA DE `cap_14`, **PUBLICADA ANTES DE CORTAR Y CERRADA CONTRA EL CUERPO AL DIGITO**
+
+Salida de `python .v24/frontera_cap14.py`, guardada en `.v24/salida_frontera_cap14.txt`:
+
+<!-- TALLADO: salida=.v24/salida_frontera_cap14.txt -->
+
+| pieza | lineas | palabras | que es |
+|---|---|---:|---|
+| `R1` | L9 a L19 | **589** | residuo: rotulo y el alegato de separar desarrollo de gestion del desempenio |
+| `P1` | L21 a L33 | **477** | arrancar la revision del sistema, con sus seis rotulos |
+| `P2` | L35 a L63 | **111** | la cabeza: los trece elementos del proceso, nombrados uno a uno |
+| `P3` | L65 a L71 | **287** | elemento 1, poner nota o no |
+| `P4` | L73 a L93 | **721** | elemento 2, las categorias de la nota |
+| `P5` | L95 a L97 | **222** | elemento 3, las escaleras de puesto |
+| `P6` | L99 a L115 | **594** | elemento 4, cuantas notas |
+| `P7` | L117 a L123 | **253** | elemento 5, el lenguaje de la nota |
+| `P8` | L125 a L141 | **834** | elemento 6, las consecuencias de la nota |
+| `P9` | L143 a L151 | **328** | elemento 7, el reparto de notas |
+| `P10` | L153 a L169 | **496** | elemento 8, curva forzada o no |
+| `P11` | L171 a L185 | **841** | elemento 9, la calibracion |
+| `P12` | L187 a L195 | **287** | elemento 10, la frecuencia |
+| `P13` | L197 a L203 | **390** | elemento 11, proceso de 360 grados o juicio unilateral |
+| `P14` | L205 a L219 | **450** | elemento 12, transparente o confidencial |
+| `P15` | L221 a L239 | **699** | elemento 13, ligero o pesado |
+| `R2` | L241 a L243 | **59** | residuo: la conclusion y la direccion de correo |
+| **el cuerpo entero** | **L8 a L243** | **7638** | **suma de las piezas: 7638, residuo sin asignar: 0** |
+
+**LA FRONTERA CIERRA AL DIGITO: las diecisiete piezas suman `7.638` palabras, que es exactamente el
+cuerpo, y el residuo sin asignar es `0`.** Ninguna linea del capitulo se queda fuera de alguna
+pieza, que es la caida que la vuelta 7 pago y que este instrumento no deja repetir.
+
+**LOS DOS RESIDUOS, DECLARADOS COMO TALES Y NO CALLADOS:**
+
+| residuo | lineas | palabras | por que no da nodo |
+|---|---|---:|---|
+| `R1` | L9 a L19 | **589** | **es POSTURA, y es la decision mas discutible de esta vuelta.** El tramo argumenta **por que** hay que separar la gestion del desempenio de la guia de desarrollo, y su unico imperativo es *explicar la diferencia*. `EXTRACTOR.md` 9: **nombrar no es procedimentar**, y una postura no ejecuta una busqueda. Lo que si es accionable de ese tramo, comunicar el desacoplamiento, **ya vive como paso `P8` de `montar_equipo_gestion_desempenio_revisar_sistema`**, que sale de `L29`, donde el libro si lo pone como acto. **Va marcado como discutible 4** (`R.11`) |
+| `R2` | L241 a L243 | **59** | es la **conclusion** del capitulo mas una direccion de correo para mandar opiniones. No hay procedimiento: es despedida |
+
+> **LO QUE `R1` ME COSTO DECIDIR, Y LO ESCRIBO PORQUE VA CONTRA MI:** 589 palabras es la segunda
+> pieza mas grande del capitulo, y tirarla a residuo es la clase de decision que abulta poco y pesa
+> mucho. **El argumento a favor de hacerla nodo**, que no es malo: `L19` nombra cuatro cosas de las
+> que va la buena gestion del desempenio (resultados, justicia, retencion y transparencia), y eso
+> parece un inventario. **El argumento por el que no la hago nodo, y es el que sigo:** `EXTRACTOR.md`
+> 9.1 restriccion 1 dice literalmente que **un inventario de METAS o de FINES no cuenta**, y
+> resultados, justicia, retencion y transparencia son adonde hay que llegar, no con que se llega.
+
+### R.5.d. LOS QUINCE CANDIDATOS, **CON LA ADUANA CORRIDA EN EL ACTO DE ESCRIBIR CADA UNO** (`EXTRACTOR.md` 16)
+
+*Un informe por candidato, en el minuto en que se escribio, y la prueba de que no se corrieron todos
+al final esta en la columna de poblacion: **recorre de `331` a `342` a lo largo de la tanda**, porque
+cada candidato escrito cambia la poblacion que mide el siguiente. Si los hubiera corrido todos al
+final, los quince dirian la misma cifra.*
+
+Salida de `python .v24/saldo_v24.py`, guardada en `.v24/salida_saldo_v24.txt`:
+
+<!-- TALLADO: salida=.v24/salida_saldo_v24.txt -->
+
+| # | candidato | saldo | poblacion del barrido | vecinos levantados |
+|---:|---|---|---:|---:|
+| 1 | `repartir_semana_cuarenta_horas_jefe` | **ENTRARIA** | 330 | **0** |
+| 2 | `montar_equipo_gestion_desempenio_revisar_sistema` | **ENTRARIA** | 331 | **0** |
+| 3 | `recorrer_trece_elementos_proceso_evaluacion_formal` | **BLOQUEARIA** | 333 | **1** |
+| 4 | `decidir_poner_nota_comunicar_proposito_limites` | **BLOQUEARIA** | 333 | **1** |
+| 5 | `elegir_categorias_nota_palabras_propias_empresa` | **ENTRARIA** | 334 | **0** |
+| 6 | `escribir_escaleras_puesto_evitar_dos_extremos` | **BLOQUEARIA** | 335 | **1** |
+| 7 | `fijar_cuatro_notas_calcular_nota_global` | **ENTRARIA** | 336 | **0** |
+| 8 | `elegir_palabras_nota_definirlas_empresa_entera` | **BLOQUEARIA** | 337 | **4** |
+| 9 | `aplicar_consecuencias_nota_apoyar_fuerzas_persona` | **ENTRARIA** | 338 | **0** |
+| 10 | `repartir_notas_publicar_reparto_esperado` | **BLOQUEARIA** | 339 | **3** |
+| 11 | `presionar_curva_notas_sin_forzarla` | **CAERIA** | 340 | **0** |
+| 12 | `presionar_curva_notas_evitar_forzarla` | **BLOQUEARIA** | 345 | **4** |
+| 13 | `calibrar_notas_reunion_jefes_pares` | **ENTRARIA** | 341 | **0** |
+| 14 | `evaluar_desempenio_dos_veces_anio` | **BLOQUEARIA** | 342 | **4** |
+| 15 | `montar_evaluacion_360_grados_ligera_pares` | **BLOQUEARIA** | 343 | **1** |
+| 16 | `hacer_critica_pares_transparente_ensenar_escribirla` | **BLOQUEARIA** | 344 | **3** |
+| 17 | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | **BLOQUEARIA** | 345 | **5** |
+
+| el saldo de la tanda | cuantos |
+|---|---:|
+| corridas del informe de un candidato | **17** |
+| `ENTRARIA` | **6** |
+| `BLOQUEARIA` (cola de lectura, no rechazo) | **10** |
+| `CAERIA` | **1** |
+| filas vecino levantadas en total | **27** |
+| pares distintos y sus veredictos | **ver la tabla de `R.5.e`** |
+
+**LA UNICA CAIDA DE PUERTA DE LA TANDA, DICHA CON SU NOMBRE: `1` de `15`.** El candidato del
+elemento 8 se escribio con el id `presionar_curva_notas_sin_forzarla` y la aduana lo tumbo por la
+**regla 3 de `docs/REGLAS_DE_ID.md`, preposicion o articulo prohibido, `sin`**, que es la regla que
+mas cae de todas (35 de los 65 rechazos del estreno). **La correccion va declarada dentro del propio
+fichero**, el id nuevo es `presionar_curva_notas_evitar_forzarla`, y **el viejo no se guarda como
+alias porque nunca vivio en el grafo**. Por eso la tabla tiene **17 filas para 15 candidatos**: una
+es el donante corregido de la TAREA 2 y otra es la repeticion de este.
+
+> **LO QUE ESA CAIDA ENSENIA Y NO ME ABSUELVE: la regla 3 me ha tumbado un id en tres tandas
+> seguidas.** No es mala suerte: es que el castellano natural mete la preposicion sola. **El remedio
+> que me pongo, y es de escritura y no de maquinaria: leer el id en voz alta buscando la
+> preposicion ANTES de correr la aduana**, que es lo que hice con los otros catorce y no con este.
+
+### R.5.e. LOS VEREDICTOS DE LOS 25 PARES, **CADA UNO CON SU RAZON ESCRITA** (`EXTRACTOR.md` 2)
+
+*Los pares y sus seniales salen de los informes crudos; **el veredicto y su razon son mios**, que es
+lo unico que un instrumento no puede sacar. Ningun `SANO` va sin razon: un `SANO` sin razon es un
+nodo que entro por cansancio.*
+
+Salida de `python .v24/veredictos_v24.py`, guardada en `.v24/salida_veredictos_v24.txt`:
+
+<!-- TALLADO: salida=.v24/salida_veredictos_v24.txt -->
+
+| # | candidato | vecino | levantada por | sim | fam | paso | veredicto | la razon, escrita |
+|---:|---|---|---|---:|---:|---:|---|---|
+| 1 | `decidir_poner_nota_comunicar_proposito_limites` | `recorrer_trece_elementos_proceso_evaluacion_formal` | similitud_texto | 0.352 | 0.000 | 0.495 | **CONTINUA** | el vecino es la CABEZA de la serie y este candidato es su primera parte: el paso 2 de la cabeza dice uno, decide si pones nota o no, y este nodo despliega esa decision en 8 pasos que la cabeza no tiene. La arista 58 declara este par con su paso citado |
+| 2 | `elegir_palabras_nota_definirlas_empresa_entera` | `decidir_momento_despedir_persona` | paso_contra_nodo | 0.220 | 0.000 | 0.626 | **SANO** | el paso 7 de este candidato dice que en otras empresas la nota mas baja puede ser menos grave, y el paso 2 del vecino dice que no hay respuesta absoluta a cuando toca despedir: la senial 3 los empareja en 0,626 por la forma de la frase, no hay respuesta unica, pero uno define el lenguaje de una nota y el otro decide un despido. No hay procedimiento compartido |
+| 3 | `elegir_palabras_nota_definirlas_empresa_entera` | `elegir_categorias_nota_palabras_propias_empresa` | familia_id | 0.332 | 0.500 | 0.488 | **SANO** | hermanos de la misma serie, elementos 5 y 2, y la familia_id los junta en 0,500 porque los dos ids empiezan por elegir y hablan de nota y de palabras. Pero uno elige QUE se califica, las categorias, y el otro elige COMO SE LLAMA cada escalon de la nota. La propia serie los separa en dos elementos numerados distintos |
+| 4 | `elegir_palabras_nota_definirlas_empresa_entera` | `escribir_escaleras_puesto_evitar_dos_extremos` | similitud_texto | 0.384 | 0.000 | 0.469 | **SANO** | hermanos de la misma serie, elementos 5 y 3. Los dos avisan de que el lenguaje importa, que es lo que la senial 1 ve, pero uno escribe la escalera de puesto por nivel y el otro escribe la definicion de cada escalon de la nota. Son dos textos distintos con dos destinatarios distintos |
+| 5 | `elegir_palabras_nota_definirlas_empresa_entera` | `recorrer_trece_elementos_proceso_evaluacion_formal` | similitud_texto | 0.362 | 0.000 | 0.457 | **CONTINUA** | el vecino es la CABEZA y este candidato es su quinta parte: el paso 6 de la cabeza dice cinco, cuida el lenguaje, porque el texto dice que las palabras importan, y este nodo lo despliega en 10 pasos. La arista 62 declara este par con su paso citado |
+| 6 | `escribir_escaleras_puesto_evitar_dos_extremos` | `decidir_poner_nota_comunicar_proposito_limites` | similitud_texto | 0.373 | 0.000 | 0.457 | **SANO** | son dos elementos DISTINTOS de la misma serie numerada, el 3 y el 1, hermanos y no madre e hija. La senial 1 los junta porque los dos pesan pegas contra beneficios con el mismo vocabulario de nota y jefe, pero uno decide si hay nota y el otro escribe las descripciones de puesto por nivel. Ninguno de los dos nombra al otro en ningun paso |
+| 7 | `evaluar_desempenio_dos_veces_anio` | `presionar_curva_notas_sin_forzarla` | similitud_texto | 0.388 | 0.000 | 0.512 | **SANO** | hermanos de la misma serie, elementos 10 y 8. La senial 1 los junta en 0,388 porque los dos usan el verbo recomendar sobre la misma nota, pero uno fija CADA CUANTO se evalua y el otro fija QUE SE HACE con la curva del reparto. AVISO DE IDENTIDAD: este informe se corrio cuando el vecino todavia llevaba su id viejo, presionar_curva_notas_sin_forzarla, que la aduana tumbo despues por la regla 3; el nodo es el mismo y hoy se llama presionar_curva_notas_evitar_forzarla |
+| 8 | `evaluar_desempenio_dos_veces_anio` | `repartir_notas_publicar_reparto_esperado` | similitud_texto | 0.354 | 0.000 | 0.483 | **SANO** | hermanos de la misma serie, elementos 10 y 7. Uno fija cada cuanto se evalua y el otro que porcentaje cae en cada nota: la frecuencia no toca el reparto y el reparto no toca la frecuencia |
+| 9 | `evaluar_desempenio_dos_veces_anio` | `elegir_palabras_nota_definirlas_empresa_entera` | similitud_texto | 0.381 | 0.000 | 0.462 | **SANO** | hermanos de la misma serie, elementos 10 y 5. No comparten ni objeto ni acto: uno pone dos fechas en el calendario y el otro escribe las definiciones de los escalones |
+| 10 | `evaluar_desempenio_dos_veces_anio` | `decidir_poner_nota_comunicar_proposito_limites` | similitud_texto | 0.368 | 0.000 | 0.429 | **SANO** | hermanos de la misma serie, elementos 10 y 1. Los dos hablan de la nota frente al desarrollo, que es lo que la senial 1 ve, pero uno decide SI hay nota y el otro CADA CUANTO se pone |
+| 11 | `hacer_critica_pares_transparente_ensenar_escribirla` | `montar_evaluacion_360_grados_ligera_pares` | similitud_texto | 0.383 | 0.100 | 0.510 | **SANO** | hermanos de la misma serie, elementos 12 y 11, y el par mas proximo de los trece: el 12 solo tiene sentido si el 11 se decidio que si, y su P1 lo dice, si ya has decidido hacer critica de trescientos sesenta grados. Pero decidir SI la haces y decidir si lo que se escribe es VISIBLE son dos decisiones que el libro numera por separado, y ninguno de los dos despliega un paso del otro |
+| 12 | `hacer_critica_pares_transparente_ensenar_escribirla` | `calibrar_notas_reunion_jefes_pares` | similitud_texto | 0.371 | 0.100 | 0.463 | **SANO** | hermanos de la misma serie, elementos 12 y 9. Los dos hablan de lo que pasa cuando la gente sabe que otros van a ver su juicio, que es lo que la senial 1 ve, pero uno trata la critica escrita entre pares y el otro la reunion en la que los jefes cuadran sus notas |
+| 13 | `hacer_critica_pares_transparente_ensenar_escribirla` | `decidir_poner_nota_comunicar_proposito_limites` | similitud_texto | 0.371 | 0.000 | 0.453 | **SANO** | hermanos de la misma serie, elementos 12 y 1. Comparten la palabra transparencia y nada mas: uno decide si hay nota y el otro si la critica entre pares lleva nombre |
+| 14 | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | `elegir_palabras_nota_definirlas_empresa_entera` | paso_contra_nodo | 0.334 | 0.000 | 0.637 | **SANO** | hermanos de la misma serie, elementos 13 y 5, y el unico par de la tanda que levanta la senial 3 por encima de 0,60 dentro de cap_14: el paso 9 del uno comprueba que el impreso se rellena en menos de treinta minutos y el paso 10 del otro comprueba que la definicion es facil de entender y rapida de leer. Son dos varas de comprobacion con la misma forma y objetos distintos, que es exactamente lo que D.19 mide que la senial no puede separar |
+| 15 | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | `montar_evaluacion_360_grados_ligera_pares` | similitud_texto | 0.396 | 0.100 | 0.480 | **SANO** | hermanos de la misma serie, elementos 13 y 11, con remision lateral escrita: el P6 del 13 dice monta la herramienta de evaluacion ligera igual que la herramienta de trescientos sesenta grados. LO MARCO COMO DISCUTIBLE porque la remision es la mas fuerte de las trece y podria defenderse una arista por lectura; no la declaro porque ninguno despliega al otro, los dos cuelgan de la misma cabeza (aristas 68 y 70) y una arista lateral sin madre ni hija no esta autorizada |
+| 16 | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | `calibrar_notas_reunion_jefes_pares` | similitud_texto | 0.374 | 0.000 | 0.464 | **SANO** | hermanos de la misma serie, elementos 13 y 9. Los dos avisan de procesos que se comen el tiempo y piden una parada, que es lo que la senial 1 ve, pero uno vigila el proceso entero y el otro una reunion concreta |
+| 17 | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | `presionar_curva_notas_sin_forzarla` | similitud_texto | 0.389 | 0.000 | 0.452 | **SANO** | hermanos de la misma serie, elementos 13 y 8. Los dos piden explicacion al jefe que se sale del reparto esperado, y esa coincidencia es del libro y no mia: el elemento 13 pone esa comprobacion dentro de la herramienta y el 8 dentro de la presion sobre la curva. Ninguno despliega al otro. AVISO DE IDENTIDAD: el informe se corrio con el id viejo del vecino, hoy presionar_curva_notas_evitar_forzarla |
+| 18 | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | `evaluar_desempenio_dos_veces_anio` | similitud_texto | 0.393 | 0.000 | 0.441 | **SANO** | hermanos de la misma serie, elementos 13 y 10, con remision lateral: el P4 del 13 recomienda un proceso ligero que ocurra dos veces al anio, que es la cifra del elemento 10. La cifra viaja, el procedimiento no |
+| 19 | `montar_evaluacion_360_grados_ligera_pares` | `evaluar_desempenio_dos_veces_anio` | similitud_texto | 0.399 | 0.000 | 0.454 | **SANO** | hermanos de la misma serie, elementos 11 y 10, y con una remision lateral real: el P6 del elemento 10 dice que la evaluacion escrita lleve un componente ligero de trescientos sesenta grados. Es una remision, no un despliegue: ninguno de los dos tiene los pasos del otro, y los dos cuelgan ya de la misma cabeza por las aristas 67 y 68. Una arista lateral sin madre ni hija es justo lo que EXTRACTOR.md 15.6 no autoriza |
+| 20 | `presionar_curva_notas_evitar_forzarla` | `evaluar_desempenio_dos_veces_anio` | similitud_texto | 0.356 | 0.000 | 0.512 | **SANO** | hermanos de la misma serie, elementos 8 y 10, y es el espejo del par 11 de esta misma tabla, levantado por los dos lados. El veredicto es el mismo por la misma razon: uno decide que se hace con la curva del reparto y el otro cada cuanto se evalua |
+| 21 | `presionar_curva_notas_evitar_forzarla` | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | similitud_texto | 0.370 | 0.000 | 0.456 | **SANO** | hermanos de la misma serie, elementos 8 y 13, espejo del par 22 de esta tabla. Los dos exigen explicacion al jefe que se sale del reparto esperado, y esa coincidencia la escribe el libro en dos sitios: en la presion sobre la curva y dentro de la herramienta ligera. Ninguno despliega al otro |
+| 22 | `presionar_curva_notas_evitar_forzarla` | `escribir_escaleras_puesto_evitar_dos_extremos` | similitud_texto | 0.356 | 0.100 | 0.450 | **SANO** | hermanos de la misma serie, elementos 8 y 3, y la familia_id los roza en 0,100 porque los dos ids llevan evitar. Uno evita forzar la curva y el otro evita los dos extremos de una escalera de puesto: el verbo es el mismo y el objeto no se parece en nada |
+| 23 | `presionar_curva_notas_evitar_forzarla` | `manejar_enfado_persona_desafiada` | similitud_texto | 0.367 | 0.000 | 0.406 | **SANO** | el paso 1 de este candidato define que es una curva forzada y el paso 2 del vecino habla de aceptar que la gente se enfade contigo. La senial 1 los junta en 0,367 por el vocabulario de jefe y equipo, que es el vocabulario de todo el libro. No hay ni objeto compartido ni despliegue: el vecino es de cap_04 y trata una conversacion de dos personas |
+| 24 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `aprender_resultados_vencer_dos_presiones` | paso_contra_nodo | 0.272 | 0.000 | 0.600 | **SANO** | el paso 11 de la cabeza dice decide la frecuencia de la evaluacion y el paso 4 del vecino dice aprende de la experiencia: los dos son imperativos cortos de una linea y por eso la senial 3 los empareja en el umbral justo, 0,600, pero uno decide un elemento del sistema de notas y el otro cierra la rueda de gestion de un equipo. Ni uno despliega al otro ni comparten objeto |
+| 25 | `repartir_notas_publicar_reparto_esperado` | `decidir_poner_nota_comunicar_proposito_limites` | similitud_texto | 0.376 | 0.100 | 0.504 | **SANO** | hermanos de la misma serie, elementos 7 y 1. Los dos hablan de lo que la nota arrastra y por eso la senial 1 los junta, pero uno decide SI hay nota y el otro decide QUE PROPORCION de cada nota espera la empresa. El elemento 7 presupone que ya se decidio que si |
+| 26 | `repartir_notas_publicar_reparto_esperado` | `elegir_palabras_nota_definirlas_empresa_entera` | similitud_texto | 0.375 | 0.100 | 0.492 | **SANO** | hermanos de la misma serie, elementos 7 y 5. Uno reparte porcentajes y el otro elige palabras: comparten el objeto nota y nada mas |
+| 27 | `repartir_notas_publicar_reparto_esperado` | `fijar_cuatro_notas_calcular_nota_global` | similitud_texto | 0.367 | 0.111 | 0.423 | **SANO** | hermanos de la misma serie, elementos 7 y 4, y son el par mas proximo de la tanda porque los dos manejan cifras sobre la misma nota. Pero uno decide CUANTOS escalones hay y como se combinan en la global, y el otro decide QUE PORCENTAJE de la plantilla cae en cada escalon. Un sistema puede tener cuatro notas y cualquier reparto: la cuenta de escalones no fija el reparto |
+
+| el recuento de veredictos | cuantos |
+|---|---:|
+| filas vecino leidas | **27** |
+| pares DISTINTOS sin orden, con el id corregido normalizado | **25** |
+| de ellos levantados por los DOS lados | **2** |
+| `CONTINUA` | **2** |
+| `SANO` | **25** |
+
+> **LOS DOS `CONTINUA` SON LAS DOS UNICAS RELACIONES REALES QUE LA ADUANA VIO, y las dos son
+> cabeza contra parte**, que es justo lo que `D.19` predice que la senial no sabe separar del ruido:
+> **de 25 pares levantados, 23 son hermanos.** La aduana me dio **2 de 13** de las aristas de la
+> serie; las otras **once las declaro yo por lectura** en `R.5.f`, y ninguna espera a que una senial
+> la levante.
+>
+> **Y LOS DOS PARES QUE SE LEVANTARON POR LOS DOS LADOS estan contados una sola vez**, con el id
+> corregido normalizado, para que la cifra no se infle por mi propia correccion.
+
+### R.5.f. LAS TRECE ARISTAS DE LA SERIE MAS LA QUE NO ES DE LA SERIE, **DECLARADAS EN LA MISMA VUELTA** (`D.37` y `EXTRACTOR.md` 15.6)
+
+*`D.37` manda declararlas en la misma vuelta en que se insertan las partes, no en la siguiente.
+Aqui van con el paso de la cabeza impreso de su fichero, que es lo que hace la cita verificable.*
+
+Salida de `python .v24/aristas_cap14.py`, guardada en `.v24/salida_aristas_cap14.txt`:
+
+<!-- TALLADO: salida=.v24/salida_aristas_cap14.txt -->
+
+| # | madre | hijo | `--paso` | especie | el paso de la cabeza, impreso del fichero | pasos del hijo |
+|---:|---|---|---:|---|---|---:|
+| 58 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `decidir_poner_nota_comunicar_proposito_limites` | **2** | `D.37` | `Uno, decide si pones nota o no.` | **8** |
+| 59 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `elegir_categorias_nota_palabras_propias_empresa` | **3** | `D.37` | `Dos, decide las categorias de la nota.` | **15** |
+| 60 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `escribir_escaleras_puesto_evitar_dos_extremos` | **4** | `D.37` | `Tres, decide las escaleras de puesto.` | **7** |
+| 61 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `fijar_cuatro_notas_calcular_nota_global` | **5** | `D.37` | `Cuatro, decide cuantas notas.` | **12** |
+| 62 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `elegir_palabras_nota_definirlas_empresa_entera` | **6** | `D.37` | `Cinco, cuida el lenguaje, porque el texto dice que las palabras importan.` | **10** |
+| 63 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `aplicar_consecuencias_nota_apoyar_fuerzas_persona` | **7** | `D.37` | `Seis, decide las consecuencias de la nota.` | **16** |
+| 64 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `repartir_notas_publicar_reparto_esperado` | **8** | `D.37` | `Siete, decide el reparto de notas.` | **9** |
+| 65 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `presionar_curva_notas_evitar_forzarla` | **9** | `D.37` | `Ocho, decide si fuerzas la curva o no.` | **11** |
+| 66 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `calibrar_notas_reunion_jefes_pares` | **10** | `D.37` | `Nueve, decide la calibracion de las notas.` | **15** |
+| 67 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `evaluar_desempenio_dos_veces_anio` | **11** | `D.37` | `Diez, decide la frecuencia.` | **11** |
+| 68 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `montar_evaluacion_360_grados_ligera_pares` | **12** | `D.37` | `Once, decide si haces un proceso de trescientos sesenta grados o te apoyas en el juicio unilateral del jefe.` | **10** |
+| 69 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `hacer_critica_pares_transparente_ensenar_escribirla` | **13** | `D.37` | `Doce, decide si es transparente o confidencial.` | **11** |
+| 70 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | **14** | `D.37` | `Trece, decide si es ligero o pesado.` | **13** |
+
+| # | madre | hijo | `--paso` | especie | el paso de la madre, impreso del fichero | pasos del hijo |
+|---:|---|---|---:|---|---|---:|
+| 71 | `montar_equipo_gestion_desempenio_revisar_sistema` | `recorrer_trece_elementos_proceso_evaluacion_formal` | **5** | `D.29` | `Repasa los elementos clave de tu evaluacion de desempenio actual, que el texto despliega uno a uno mas abajo.` | **14** |
+
+**POR QUE LAS TRECE SON `D.37` Y LAS CUATRO DE LA TAREA 3 NO LO SON, que es la pregunta que esta
+vuelta tiene que contestar sin contradecirse:**
+
+| | la serie de `cap_14` | las cuatro de `cap_09` (`R.4.b`) |
+|---|---|---|
+| **la cuenta, escrita por el libro** | **SI**: el libro numera sus propios rotulos **del 1 al 13** en las lineas 65, 73, 95, 99, 117, 125, 143, 153, 171, 187, 197, 205 y 221, y el ultimo numeral escribe el total | **NO**: `grep -c "the four\|four tips\|four elements"` sobre `cap_09` da **`0`** |
+| **las partes nombradas una a una** | SI, una por linea de la L39 a la L63 | SI, pero en `L237`, que es **otra unidad** |
+| **especie** | **`D.37`** | **`D.29` con razon escrita** |
+
+> **LA VARA QUE APLICO EN LOS DOS SITIOS ES LA MISMA: la cuenta la tiene que escribir la CABEZA, en
+> su propio texto.** En `cap_14` la escribe, numerando. En `cap_09` no la escribe nadie: la escribe
+> `cap_13`, que es la unidad de otra cabeza. **Si esta lectura esta mal, esta mal en las dos y no en
+> una**, que es lo que quiero que se pueda comprobar de un vistazo.
+>
+> **Y VA MARCADO COMO DISCUTIBLE 3** (`R.11`), porque *numerar del 1 al 13* no es literalmente *decir
+> cuantas*, y la correccion del titular del 11 sep 2026 es estrecha a proposito.
+
+**LA DEUDA DE ARISTAS, RECOMPUTADA:** `53` de la vuelta 23, mas `4` de la TAREA 3, mas `13` de la
+serie de `cap_14`, mas `1` que no es de la serie, **igual a `71`**. Se publica entera en `R.7`.
+
+### R.5.g. **LA FILA DEL FRENO DE `cap_14`, FIRMADA POR MI**, y la tabla entera del lote
+
+*El encargo la pide expresamente porque es la que decide el volumen del lote 5. **La firmo yo, leida
+en el acto de escribir cada paso contra su linea**, y el aviso que el propio encargo me hace lo
+recojo: la vuelta 22 escribio `cap_11` en `0,00` con este mismo metodo y el auditor le encontro un
+puente.*
+
+Salida de `python .v24/freno_v24.py`, guardada en `.v24/salida_freno_v24.txt`:
+
+<!-- TALLADO: salida=.v24/freno_tabla1.txt -->
+
+| unidad | candidatos | pasos | numerador | tasa | quien firma el numerador |
+|---|---:|---:|---:|---:|---|
+| `cap_01` | 1 | 9 | **0** | **0.00** | sin releer con el ancho: 1 ocurrencia |
+| `cap_03` | 1 | 10 | **0** | **0.00** | sin releer con el ancho: 6 ocurrencias en 7 pasos |
+| `cap_04` | 6 | 48 | **8** | **16.67** | FIRMADO por el extractor en la vuelta 22, leido uno a uno |
+| `cap_05` | 8 | 76 | **2** | **2.63** | sin releer con el ancho: 20 ocurrencias |
+| `cap_06` | 10 | 117 | **0** | **0.00** | sin releer con el ancho: 33 ocurrencias |
+| `cap_07` | 25 | 225 | **0** | **0.00** | sin releer con el ancho: 20 ocurrencias |
+| `cap_08` | 12 | 102 | **0** | **0.00** | sin releer con el ancho: 17 ocurrencias |
+| `cap_09` | 20 | 272 | **7** | **2.57** | FIRMADO por el extractor en la vuelta 22, leido uno a uno |
+| `cap_10` | 14 | 206 | **17** | **8.25** | numerador del auditor (ACTA 21 7.2); denominador recontado hoy |
+| `cap_11` | 16 | 187 | **1** | **0.53** | el candelabro que el auditor cazo (ACTA 22 4.1), corregido en la vuelta 23 |
+| `cap_12` | 2 | 50 | **0** | **0.00** | MIO, leido en el acto de escribir los 2 |
+| `cap_13` | 12 | 212 | **0** | **0.00** | MIO, leido en el acto de escribir los 12 |
+| `cap_14` | 15 | 174 | **0** | **0.00** | MIO, leido en el acto de escribir los 15 |
+| **el lote 4 ENTERO** | **142** | **1688** | **35** | **2.07** | **INCOMPLETO: cinco filas sin releer con el ancho** |
+
+<!-- TALLADO: salida=.v24/freno_tabla2.txt -->
+
+| | |
+|---|---:|
+| filas con numerador FIRMADO | **7** de **13** |
+| **la fila que decide, que es la peor firmada** | `cap_04` con **16.67** |
+| tope de `PASOS INVENTADOS` | **10,00** |
+| **el freno** | **DISPARADO** |
+| tramo que el freno deja | **DOS capitulos** |
+
+**LAS TRES COSAS QUE ESTA TABLA DICE Y QUE ME PERJUDICAN, DICHAS POR MI:**
+
+**1. EL FRENO SIGUE DISPARADO Y POR LA MISMA FILA.** `cap_04` da **16,67** contra un tope de
+**10,00**, la misma cifra que la vuelta 22 firmo. **No ha bajado porque nadie ha tocado `cap_04`.**
+El tramo que deja son **DOS** capitulos, y solo quedaba **uno**: no me limito.
+
+**2. `cap_03` SUBE DE 7 A 10 PASOS Y NO ES UNA MEJORA DE NADIE: ES MI PROPIA FUSION.** El donante de
+la TAREA 2 anadio tres pasos, asi que el denominador de `cap_03` crece. **Su numerador sigue siendo
+un hueco sin releer con el ancho**, y una tasa de `0,00` sobre un numerador que nadie ha medido
+**sigue sin ser un cero: es un hueco.**
+
+**3. EL TOTAL BAJA DE `2,32` A `2,07` Y TAMPOCO ES UNA MEJORA.** El numerador se queda en **35** y
+el denominador sube de **1.511** a **1.688** con los 174 pasos de `cap_14` y los 3 de la fusion.
+**Es la misma trampa que la vuelta 23 se denuncio a si misma**, y por eso el total sigue
+**declarado INCOMPLETO**: cinco filas (`cap_01`, `cap_03`, `cap_05`, `cap_06`, `cap_07`, `cap_08`)
+siguen sin releer con el instrumento ancho. **Mientras sean hueco, el total del lote 4 es un SUELO
+y no una medida.**
+
+**LA COMPROBACION DE QUE NINGUN CANDIDATO SE QUEDA FUERA DE LA TABLA**, del mismo instrumento:
+
+    candidatos en cuarentena del lote 4 : 142
+    candidatos contados en la tabla     : 142
+    capitulos fuera de la tabla         : 0   []
+
+### R.5.h. EL VOLUMEN DE LA VUELTA CONTRA SU TECHO, Y POR QUE **NO** CIERRO EN `cap_14`
+
+| | |
+|---|---:|
+| candidatos nuevos de `cap_14` | **15** |
+| techo de candidatos por vuelta (`EXTRACTOR.md` 12.4) | **15** |
+| hueco que queda | **0** |
+
+**EL TECHO SE TOCA Y NO SE PASA, asi que la regla de precedencia del 12 sep NO se dispara.**
+`EXTRACTOR.md` 12.4 pone el tramo **entre cinco y quince**, y quince es tramo y no exceso. **Si
+`cap_14` hubiera dado dieciseis, esta vuelta cerraria aqui y la TAREA 5 no se haria**, y lo diria
+con su cifra. **Da quince, y por eso la TAREA 5 se abre.**
+
+> **Y LO DIGO ANTES DE QUE SE NOTE: quince es el techo exacto, y eso me deja CERO hueco para
+> cualquier candidato nuevo que salga del cableado o de la insercion.** No preveo ninguno, porque
+> `cap_14` es la ultima unidad del lote, pero si saliera **no entraria en esta vuelta**.
+
+> ## **TAREA 4 CERRADA.** `cap_14` minado ENTERO: frontera de **17 piezas** publicada antes de
+> cortar y **cerrada contra el cuerpo al digito** (7.638 igual a 7.638, residuo 0), **15 candidatos**
+> escritos con la aduana corrida en el acto de cada uno, **1 caida de puerta corregida y declarada**,
+> **25 pares leidos con su razon**, **14 aristas declaradas**, la fila del freno firmada en
+> **`0,00` sobre 174 pasos**, y **el gemelo de `cap_11` leido entero ANTES de cortar** con su
+> veredicto `SANO` escrito.

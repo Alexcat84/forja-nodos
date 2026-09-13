@@ -1,0 +1,39 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 337   (203 del grafo mas 134 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 4
+  por candidato bloqueado          : menor 4, mediana 4, mayor 4
+  que señal levanta cada vecindad  : familia_id 1, paso_contra_nodo 1, similitud_texto 2
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] elegir_palabras_nota_definirlas_empresa_entera   (elegir_palabras_nota_definirlas_empresa_entera.json)
+    vecino decidir_momento_despedir_persona  [levantada por: paso_contra_nodo]
+      similitud_texto 0.220 | familia_id 0.000 | paso_contra_nodo 0.626
+      paso 7 del candidato contra paso 2 de decidir_momento_despedir_persona
+    vecino elegir_categorias_nota_palabras_propias_empresa  [levantada por: familia_id]
+      similitud_texto 0.332 | familia_id 0.500 | paso_contra_nodo 0.488
+      paso 7 del candidato contra paso 12 de elegir_categorias_nota_palabras_propias_empresa
+    vecino escribir_escaleras_puesto_evitar_dos_extremos  [levantada por: similitud_texto]
+      similitud_texto 0.384 | familia_id 0.000 | paso_contra_nodo 0.469
+      paso 1 del candidato contra paso 6 de escribir_escaleras_puesto_evitar_dos_extremos
+    vecino recorrer_trece_elementos_proceso_evaluacion_formal  [levantada por: similitud_texto]
+      similitud_texto 0.362 | familia_id 0.000 | paso_contra_nodo 0.457
+      paso 5 del candidato contra paso 10 de recorrer_trece_elementos_proceso_evaluacion_formal
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

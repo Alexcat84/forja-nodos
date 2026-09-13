@@ -1,0 +1,42 @@
+{
+  "id": "presionar_curva_notas_evitar_forzarla",
+  "titulo": "No forzar la curva de notas pero presionarla, con las cuatro cosas que el texto recomienda hacer en su lugar",
+  "denominaciones": {
+    "nombre_largo": "El octavo de los trece elementos: curva forzada o no, con las dos maneras de hacer trampa que la curva evita y las consecuencias no buscadas que trae",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "forced curve or no"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tienes que decidir si obligas a tus jefes a repartir sus notas segun un porcentaje rigido, o no.",
+  "entregable_esperado": "La curva esperada dicha en voz alta, visible entre pares del mismo nivel, con la salida no lamentada contada dentro de la nota mas baja y una explicacion escrita exigida a quien se salga.",
+  "pasos_accionables": [
+    "Ten delante lo que una curva forzada es, que es lo que el texto define: decirles a los jefes que tienen que tener un porcentaje rigidamente definido de notas mas bajas, un porcentaje fijo de notas altas, y asi.",
+    "Cuenta con lo que la curva forzada si evita, que son las dos maneras comunes de hacer trampa con el sistema: darle un trofeo a cada empleado, o meter a todo el mundo en el medio para ahorrarse las conversaciones duras.",
+    "Y cuenta con lo que trae, que el texto dice sin rodeos: puede dar notas injustas, y las consecuencias no buscadas y el juego politico de una curva forzada son terribles.",
+    "No fuerces la curva, que es la recomendacion que el texto escribe, pero si ponle presion, y hazlo con las cuatro cosas que enumera a continuacion.",
+    "Una, di explicitamente cual es la curva esperada.",
+    "Dos, cuenta la salida no lamentada, es decir la gente que fue despedida o a la que se acompanio a la salida, dentro de las cifras de la nota mas baja, y sigue esa salida no lamentada a lo largo del tiempo. El texto da la razon: si no, la gente se queda con sus malos desempenios dentro para cuadrar una curva en vez de despedirlos.",
+    "Tres, haz visible la curva de cada jefe a sus jefes pares, la de cada director a sus directores pares, la de cada vicepresidente a sus vicepresidentes pares, y asi hacia arriba.",
+    "Cuatro, exige una explicacion escrita a los jefes que se salgan de la curva esperada, pregunta mucho y deja que sus pares pregunten mucho.",
+    "Cuando la curva de un equipo este notablemente torcida comparada con la de otros equipos, haz la pregunta que el texto escribe: contribuyo de verdad este equipo mas o menos que los otros en este ciclo de notas. Si la respuesta es no, empuja al jefe a revalorar sus notas.",
+    "Y al reves, si un equipo entrego algo excepcional, asegurate de que su jefe lo esta reflejando en las notas.",
+    "Cuenta con hacia donde se tuerce la mayoria, que es lo que el texto dice que hace importantes las sesiones de calibracion: casi todos los jefes se quedan en el medio tirando hacia lo positivo, y dan demasiadas notas buenas y medias y demasiado pocas altas y bajas."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_14.md, unidad Bonus Chapter, titulo textual Bonus Chapter: A Radically Candid Performance Review. Sale de las lineas 153 a 169, que son la PIEZA P10 de la frontera de esta vuelta, 496 palabras, y es el elemento numero 8 de los trece que la cabeza nombra. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 161 escribe literalmente Here is my recommendation. Don't force a curve but do put pressure on it, y detras van CUATRO medidas puestas una a una por el libro en las lineas 163, 165, 167 y 169. Ese es el inventario de MEDIOS que D.27 pide, y escribir los pasos es transcribirlo. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 11 pasos, 11 TRANSCRIPCION, 0 PUENTE. P1, P2 y P3 salen de las lineas 155 y 159; P4 de la 161; P5 de la 163; P6 de la 165; P7 de la 167; P8, P9, P10 y P11 de la 169. NO ESCRIBO EL CASO COMO PASO, manual 3.5: la historia del vicepresidente que repartia las notas mas bajas a la ruleta rusa vive en la linea 159 como ilustracion de por que la curva forzada es mala idea, y el paso recoge la doctrina, no el dato del caso. NO ESCRIBO PORCENTAJE NINGUNO: esta pieza no da cifras, las da la pieza del reparto, y meter aqui las de alli seria fabricar una cifra que esta linea no escribe. NO ESCRIBO DESTINATARIO NI PERIODO: el texto no dice a quien se entrega la explicacion escrita ni cada cuanto se revisa la visibilidad entre pares. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto es notablemente torcida, que pasa si el jefe se niega a revalorar, ni quien decide que una salida es no lamentada. CORRECCION DECLARADA DENTRO DEL ACTO: el id con el que este candidato se escribio primero fue presionar_curva_notas_sin_forzarla, y la aduana lo tumbo por la regla 3 de docs/REGLAS_DE_ID.md, preposicion o articulo prohibido, sin. Es la regla que mas cae de todas, 35 de los 65 rechazos del estreno, y es la unica caida de puerta de esta tanda, 1 de 15. El id nuevo cambia sin forzarla por evitar forzarla, que dice lo mismo con verbo en vez de preposicion, y el viejo no se guarda como alias porque nunca vivio en el grafo: no hay nada que resolver.",
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ]
+}

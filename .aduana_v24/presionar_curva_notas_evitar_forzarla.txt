@@ -1,0 +1,39 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 345   (203 del grafo mas 142 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 4
+  por candidato bloqueado          : menor 4, mediana 4, mayor 4
+  que señal levanta cada vecindad  : similitud_texto 4
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] presionar_curva_notas_evitar_forzarla   (presionar_curva_notas_evitar_forzarla.json)
+    vecino evaluar_desempenio_dos_veces_anio  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.512
+      paso 4 del candidato contra paso 4 de evaluar_desempenio_dos_veces_anio
+    vecino mantener_proceso_evaluacion_ligero_vigilar_crecimiento  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.456
+      paso 1 del candidato contra paso 1 de mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+    vecino escribir_escaleras_puesto_evitar_dos_extremos  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.100 | paso_contra_nodo 0.450
+      paso 1 del candidato contra paso 2 de escribir_escaleras_puesto_evitar_dos_extremos
+    vecino manejar_enfado_persona_desafiada  [levantada por: similitud_texto]
+      similitud_texto 0.367 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 1 del candidato contra paso 2 de manejar_enfado_persona_desafiada
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

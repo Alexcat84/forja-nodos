@@ -1,0 +1,28 @@
+| # | candidato | saldo | poblacion del barrido | vecinos levantados |
+|---:|---|---|---:|---:|
+| 1 | `repartir_semana_cuarenta_horas_jefe` | **ENTRARIA** | 330 | **0** |
+| 2 | `montar_equipo_gestion_desempenio_revisar_sistema` | **ENTRARIA** | 331 | **0** |
+| 3 | `recorrer_trece_elementos_proceso_evaluacion_formal` | **BLOQUEARIA** | 333 | **1** |
+| 4 | `decidir_poner_nota_comunicar_proposito_limites` | **BLOQUEARIA** | 333 | **1** |
+| 5 | `elegir_categorias_nota_palabras_propias_empresa` | **ENTRARIA** | 334 | **0** |
+| 6 | `escribir_escaleras_puesto_evitar_dos_extremos` | **BLOQUEARIA** | 335 | **1** |
+| 7 | `fijar_cuatro_notas_calcular_nota_global` | **ENTRARIA** | 336 | **0** |
+| 8 | `elegir_palabras_nota_definirlas_empresa_entera` | **BLOQUEARIA** | 337 | **4** |
+| 9 | `aplicar_consecuencias_nota_apoyar_fuerzas_persona` | **ENTRARIA** | 338 | **0** |
+| 10 | `repartir_notas_publicar_reparto_esperado` | **BLOQUEARIA** | 339 | **3** |
+| 11 | `presionar_curva_notas_sin_forzarla` | **CAERIA** | 340 | **0** |
+| 12 | `presionar_curva_notas_evitar_forzarla` | **BLOQUEARIA** | 345 | **4** |
+| 13 | `calibrar_notas_reunion_jefes_pares` | **ENTRARIA** | 341 | **0** |
+| 14 | `evaluar_desempenio_dos_veces_anio` | **BLOQUEARIA** | 342 | **4** |
+| 15 | `montar_evaluacion_360_grados_ligera_pares` | **BLOQUEARIA** | 343 | **1** |
+| 16 | `hacer_critica_pares_transparente_ensenar_escribirla` | **BLOQUEARIA** | 344 | **3** |
+| 17 | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | **BLOQUEARIA** | 345 | **5** |
+
+| el saldo de la tanda | cuantos |
+|---|---:|
+| corridas del informe de un candidato | **17** |
+| `ENTRARIA` | **6** |
+| `BLOQUEARIA` (cola de lectura, no rechazo) | **10** |
+| `CAERIA` | **1** |
+| filas vecino levantadas en total | **27** |
+| pares distintos y sus veredictos | **ver la tabla de `R.5.e`** |

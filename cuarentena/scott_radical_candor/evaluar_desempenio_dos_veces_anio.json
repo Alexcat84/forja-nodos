@@ -1,0 +1,42 @@
+{
+  "id": "evaluar_desempenio_dos_veces_anio",
+  "titulo": "Evaluar el desempenio dos veces al anio, una ligera y oral y otra escrita, sin confundir la frecuencia de la nota con la del desarrollo",
+  "denominaciones": {
+    "nombre_largo": "El decimo de los trece elementos: la frecuencia, con lo que pasa si no las haces nunca y lo que pasa si las haces cada trimestre",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "frequency"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tienes que decidir cada cuanto se evalua el desempenio en tu empresa.",
+  "entregable_esperado": "Dos evaluaciones al anio en el calendario, una ligera y oral entre jefe y empleado y otra escrita con un componente ligero de trescientos sesenta grados, y las conversaciones de desarrollo semanales separadas de ellas.",
+  "pasos_accionables": [
+    "Ten delante lo que el texto dice que hacen las empresas: unas evaluan cada trimestre, otras una o dos veces al anio, y muchas no las hacen nunca.",
+    "Descarta no hacerlas nunca, que el texto llama mala idea con su propio caso detras.",
+    "Descarta tambien hacerlas cada trimestre, por las dos razones que el texto da: grava con fuerza a los jefes, y no le da al empleado mucho tiempo para ensenar mejora desde el ciclo de nota anterior.",
+    "Hazlas dos veces al anio, que es la recomendacion que el texto escribe.",
+    "Haz una de las dos ligera, oral y solo entre el jefe y el empleado.",
+    "Haz la otra escrita, e incluye en ella un componente ligero de trescientos sesenta grados.",
+    "Recuerda a que se refiere esa recomendacion de dos veces al anio, que es lo que el texto subraya justo despues: solo a la nota, que es gestion del desempenio y no desarrollo.",
+    "Manten las conversaciones de desarrollo improvisadas ocurriendo cada semana, en privado, de dos minutos, y sin nota ni proceso.",
+    "Cuenta con lo que el texto dice que hay detras del impulso de poner notas mas a menudo: la confusion entre gestion del desempenio y desarrollo. Si las notas ocurren demasiado a menudo se confunden con el desarrollo, y las conversaciones que deberian engancharse al deseo intrinseco de mejorar disparan en su lugar la resistencia que aparece cuando se nos juzga y el juicio arrastra premios y castigos extrinsecos.",
+    "Haz que el sistema recuerde a todo el mundo que tiene que estar dando y pidiendo conversaciones de critica de dos minutos cada dia o cada semana.",
+    "Y que recuerde tambien que si hay alguna sorpresa en los temas de la nota, es que no ha habido bastante desarrollo."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_14.md, unidad Bonus Chapter, titulo textual Bonus Chapter: A Radically Candid Performance Review. Sale de las lineas 187 a 195, que son la PIEZA P12 de la frontera de esta vuelta, 287 palabras, y es el elemento numero 10 de los trece que la cabeza nombra. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: el libro pone su propio inventario de OPCIONES con lo que cada una cuesta, y despues una recomendacion de MEDIO con su composicion nombrada, una ligera y oral y otra escrita con componente ligero de trescientos sesenta grados. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 11 pasos, 11 TRANSCRIPCION, 0 PUENTE. P1 y P2 salen de la linea 189; P3, P4, P5 y P6 de la 191; P7, P8 y P9 de la 193; P10 y P11 de la 195. EL PERIODO NO LO PONGO YO, que es la especie de puente que mas veces ha caido en esta casa: dos veces al anio lo escribe la linea 191, do it twice a year, y la frecuencia semanal o diaria del desarrollo la escriben las lineas 193 y 195, weekly y daily slash weekly. NO ESCRIBO EL CASO COMO PASO, manual 3.5: la empresa que la autora cofundo y donde nunca hizo evaluaciones, y la empresa donde las hizo cuatro veces al anio y luego dos, viven en la linea 189 como ilustracion; el P2 recoge la doctrina, que no hacerlas nunca es mala idea, y no el dato del caso. NO ESCRIBO DESTINATARIO NI RESPONSABLE. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: en que meses caen las dos, cual va primera, ni que se hace con quien entra a mitad de ciclo.",
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ]
+}

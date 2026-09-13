@@ -1,0 +1,39 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 342   (203 del grafo mas 139 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 4
+  por candidato bloqueado          : menor 4, mediana 4, mayor 4
+  que señal levanta cada vecindad  : similitud_texto 4
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] evaluar_desempenio_dos_veces_anio   (evaluar_desempenio_dos_veces_anio.json)
+    vecino presionar_curva_notas_sin_forzarla  [levantada por: similitud_texto]
+      similitud_texto 0.388 | familia_id 0.000 | paso_contra_nodo 0.512
+      paso 4 del candidato contra paso 4 de presionar_curva_notas_sin_forzarla
+    vecino repartir_notas_publicar_reparto_esperado  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.483
+      paso 2 del candidato contra paso 3 de repartir_notas_publicar_reparto_esperado
+    vecino elegir_palabras_nota_definirlas_empresa_entera  [levantada por: similitud_texto]
+      similitud_texto 0.381 | familia_id 0.000 | paso_contra_nodo 0.462
+      paso 7 del candidato contra paso 7 de elegir_palabras_nota_definirlas_empresa_entera
+    vecino decidir_poner_nota_comunicar_proposito_limites  [levantada por: similitud_texto]
+      similitud_texto 0.368 | familia_id 0.000 | paso_contra_nodo 0.429
+      paso 1 del candidato contra paso 3 de decidir_poner_nota_comunicar_proposito_limites
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
