@@ -423,3 +423,34 @@ Reemplazalos por el guion corto normal y vuelve a intentarlo.
 [2026-09-13 12:05:45]   testigo del auditor escrito en   : 2026-09-13 01:23:47 (1789277027)
 [2026-09-13 12:05:45] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-13 12:05:45] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-13 13:36:26] extractor listo (USD 45.60477499999999), 5439s, intento 1 de 7
+[2026-09-13 13:36:26] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-13 13:36:26]   hereda 1 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-13 13:58:35] auditor ciego listo (USD 7.294710500000001), 1329s, intento 1 de 7
+[2026-09-13 13:58:36]   herencia declarada: acta leida por su huella y los 1 heredados resueltos
+[2026-09-13 13:58:36]   apertura ciega sellada: 1799fe72e62081174304c6897c3d8573b12dbe51
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] tallado del reporte (D.41)
+============================================================================
+TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+============================================================================
+tablas que declaran instrumento : 26
+  talladas, celda a celda       : 23
+  que DIFIEREN de su instrumento: 0
+  sin poder comprobar           : 0
+  que CITAN y no reproducen     : 3   (declaradas PARCIAL)
+      linea 27198 de docs/loop/REPORTE.md
+      linea 27324 de docs/loop/REPORTE.md
+      linea 27622 de docs/loop/REPORTE.md
+
+TALLADO VERDE: las 23 tabla(s) comprobables son las de su instrumento, celda a celda.
+[cierre] tallado del reporte (D.41)
+
+CIERRE VERDE: el tallado del reporte.
+[pre-commit] verde
+[2026-09-13 13:58:38] VUELTA 1 : AUDITOR (claude-opus-5)
