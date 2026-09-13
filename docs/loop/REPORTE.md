@@ -26262,8 +26262,8 @@ suelto sigue siendo mio** y se corre en el mismo acto de escribir cada candidato
 | 1 | Los registros: la `ACTA 21` entera y sus ocho adjudicaciones recogidas sin reabrirlas | ~~ABIERTA~~ **CERRADA** (`P.2`) |
 | 2 | **BLOQUEANTE Y PRIMERA**: la **pieza 14** de `cap_10` (la cabeza de las conversaciones de carrera), sus **tres aristas `D.37`** declaradas, y las **dos correcciones de fichero** | ~~ABIERTA~~ **CERRADA** (`P.3`). **14 piezas, 205 pasos, frontera al digito, 0 CAERIA** |
 | 3 | **`cap_11` ENTERO**, con su frontera publicada antes de cortar y su residuo en cero o nombrado linea a linea; `cap_12` solo si cabe bajo el techo de 15 | ~~ABIERTA~~ **CERRADA** (`P.4`). **16 candidatos, 187 pasos, frontera al digito, 0 CAERIA. `cap_11` PASA EL TECHO: la vuelta cierra aqui y `cap_12` NO entra** |
-| 4 | **La cifra de fidelidad acotada**: ocurrencias por capitulo de `cap_00` a `cap_09`, y el numerador firmado SOLO de dos capitulos | ABIERTA |
-| 5 | **Las dos filas de ruta que no pueden ser verdad**, y la fila de alcance de `_insertados` | ABIERTA |
+| 4 | **La cifra de fidelidad acotada**: ocurrencias por capitulo de `cap_00` a `cap_09`, y el numerador firmado SOLO de dos capitulos | ~~ABIERTA~~ **CERRADA** (`P.5`). **160 ocurrencias medidas, 2 capitulos leidos uno a uno, 11 puentes nuevos firmados, y EL FRENO SE DISPARA: `cap_04` 16,67 contra tope 10** |
+| 5 | **Las dos filas de ruta que no pueden ser verdad**, y la fila de alcance de `_insertados` | ~~ABIERTA~~ **CERRADA** (`P.6`). **El remedio va en un guion con su lista de exclusion escrita, y `_insertados` reconciliado: 0 sueltos, 201 en tres subcarpetas** |
 
 *Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
 
@@ -26726,7 +26726,7 @@ insercion** (`P.0.1`); `bitacora/VEREDICTOS.jsonl` lo sera el dia del cierre del
 | 8 | `montar_reunion_gran_debate` P13 contra `montar_reunion_gran_decision` P6 (**los dos de `cap_11`, par mutuo**) | `familia_id 0,600` y `paso_contra_nodo 0,726`, **en los dos sentidos** | **`CONTINUA` con arista** | **el libro escribe la continuidad dos veces:** `L199` dice que la de decision *tipicamente pero no siempre **sigue** a una de gran debate*, y `L201` dice que **sus logisticas y sus normas son LAS MISMAS**. Asi que la de decision **cuelga** de la de debate y no la repite: anade **el decisor nombrado**, **la finalidad de la decision** (*si no, siempre se apelaran y seran debates*) y **el poder de veto con su regla de uso**. La de debate anade lo que la otra no tiene: **sus tres propositos**, **la norma de cambiar de papel a mitad**, y **el producto unico de un debate que no decide**. Arista `D.29` (**el libro no escribe cuenta**), madre `montar_reunion_gran_debate`, `--paso 13`, que es el paso donde el producto del debate incluye *una recomendacion de seguir debatiendo o de pasar a una decision* |
 | 9 | `montar_reunion_gran_decision` P1 contra `nutrir_ideas_nuevas_reunion_solas` P1 | `similitud_texto 0,354` | **`SANO`** | ruido de banda otra vez, `0,354` contra umbral `0,35`. Una reunion de decision para un asunto mayor contra una reunion a solas donde alguien trae una idea fragil. **Cero actos, cero entregables comunes** |
 | 10 | `montar_reunion_gran_decision` P2 contra `dirigir_reunion_decision` P10 (**vive en el grafo, y es de OTRO LIBRO, Zhuo**) | `familia_id 0,400` | **`SANO`** | **es el par que mas caro costaria fallar y por eso lo lei entero, los 14 pasos contra mis 14.** **Comparten DOS actos y los nombro por su numero:** que haya un decisor designado (su P4 contra mi P5) y que la decision no vaya y vuelva (su P12 contra mi P10). **Y ahi se acaba.** El de Zhuo es **como se decide para que la gente confie en el proceso**: enmarcar las opciones, no buscar consenso, dar el mismo tiempo de palabra a la discrepancia, no decidir habiendo oido un solo lado, y **cinco malos resultados que evitar**. El mio es **la logistica de un tipo de reunion concreto**: que sigue a la de gran debate, quien esta obligado a asistir, quien toma notas, egos en la puerta, el resumen repartido, y **tu poder de veto usado con cuentagotas**, que el de Zhuo no menciona. **Ninguno despliega al otro: son dos libros escribiendo procedimientos vecinos con dos entregables distintos**, que es exactamente el caso que la `ACTA 21` `5.2` adjudico `SANO` para `armar_plan_anual` contra `disenar_equipo_plan_anual` |
-| 11 | `recorrer_rueda_conscientemente_cultura_equipo` P9 contra `recorrer_rueda_hacer_cosas_equipo` P12 | `familia_id 0,429` | **`CONTINUA` con arista** | **lo declare en el `resumen_teorico` del candidato ANTES de tener su informe, y escribi en este mismo reporte que la aduana no lo levantaria. LA ADUANA SI LO LEVANTO, y corrijo mi frase en vez de dejarla: el informe llego despues de que yo escribiera la fila.** La madre recorre la rueda **sobre las decisiones del equipo** y entrega *una vuelta entera de la rueda dada deprisa y sin saltarse ningun paso*; esta la recorre **sobre tu propia cultura** y entrega *tus conductas revisadas contra la cultura que dices querer*. **Comparten los nombres de las siete etapas y ni un acto:** la madre no tiene la prueba de la conducta propia (`L299`), ni el cafe y el te verde (`L311`), ni el entorno de oficina (`L313`), ni la senial de que ya no vaya de ti (`L329`). Arista `D.29`, madre `recorrer_rueda_hacer_cosas_equipo`, `--paso 8` (*aprende de los resultados y vuelve a empezar el proceso entero*) |
+| 11 | `recorrer_rueda_conscientemente_cultura_equipo` P9 contra `recorrer_rueda_hacer_cosas_equipo` P12 | `familia_id 0,429` | **`CONTINUA` con arista** | **lo declare en el `resumen_teorico` del candidato ANTES de tener su informe, y escribi en este mismo reporte que la aduana no lo levantaria. LA ADUANA SI LO LEVANTO, y corrijo mi frase en vez de dejarla: el informe llego despues de que yo escribiera la fila.** La madre recorre la rueda **sobre las decisiones del equipo** y entrega *una vuelta entera de la rueda dada deprisa y sin saltarse ningun paso*; esta la recorre **sobre tu propia cultura** y entrega *tus conductas revisadas contra la cultura que dices querer*. **Comparten los nombres de las siete etapas y ni un acto:** la madre no tiene la prueba de la conducta propia (`L299`), ni el cafe y el te verde (`L311`), ni el entorno de oficina (`L313`), ni la senial de que ya no vaya de ti (`L329`). Arista `D.29`, madre `recorrer_rueda_hacer_cosas_equipo`, **`--paso 2`** (*escucha las ideas que tiene la gente de tu equipo, y **crea una cultura** en la que se escuchen entre ellos*). **Y DIGO QUE ESTA ES LA CITA MAS DEBIL DE LA TANDA Y LA CORRIJO A LA VISTA: escribi primero `--paso 8` y al abrir el fichero para citarlo vi que el paso 8 no nombra la cultura por ningun lado.** El paso 2 es lo mas cerca que la madre llega a nombrar a la hija, y aun asi nombra *crear una cultura de escucha*, no *tu propia cultura*. **Si el auditor lee que esa cita no sostiene la arista, la salida es dejar el par declarado como lectura sin arista, no inventarle un paso** |
 
 ### P.4.f. **LOS TRES HECHOS QUE ESTAS DIECISEIS LECTURAS AÑADEN SOBRE LAS SEÑALES, Y LOS TRES SON MEDIDOS**
 
@@ -26768,3 +26768,513 @@ insercion** (`P.0.1`); `bitacora/VEREDICTOS.jsonl` lo sera el dia del cierre del
 > es de Zhuo**. Es el unico vecino de toda la tanda que ya esta dentro, asi que es el unico donde un
 > `SANO` mal puesto mete un gemelo de verdad. **Lo lei entero, los 14 pasos contra mis 14**, y la
 > razon va en la tabla de `P.4.e` con los dos actos compartidos nombrados por su numero.
+
+---
+
+## P.5. TAREA 4: **LA CIFRA DE FIDELIDAD QUE FALTABA, MEDIDA Y ACOTADA**. **CERRADA**, Y **EL FRENO SE DISPARA**
+
+### P.5.a. **NO ES MAQUINARIA NUEVA, Y LO HAGO COMPROBABLE EN VEZ DE PROMETERLO** (moratoria, `EXTRACTOR.md` 13)
+
+*El encargo dice: el instrumento ya existe y lo escribiste tu; lo que se encarga es CORRERLO.*
+
+**`.t1_v22/correr_cuentas21.py` NO reescribe la lista de numerales ni la expresion regular:
+EJECUTA `.t1_v21/cuentas21.py` y le saca su propia variable `CUENTAS` del espacio de nombres
+resultante.** Si aquel fichero cambiara, este cambiaria con el.
+
+    $ python .t1_v22/correr_cuentas21.py
+    fichero corrido      : .t1_v21/cuentas21.py
+    numerales que caza   : 20  dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once,
+                               doce, quince, veinte, treinta, cuarenta, cincuenta, cien, ambas,
+                               ambos, sendas
+    su corrida de control sobre cap_10, HOY: ocurrencias de numeral que cuentan cosas,
+                                             en los 194 pasos: 35
+
+> **LA CORRECCION QUE ME HICE A MI MISMO ANTES DE PUBLICAR, y la dejo escrita porque casi publico
+> una cifra falsa:** mi primera version de este guion imprimia *en la vuelta 21 esa misma linea dio
+> 22*. **Es falso.** El `22` de la vuelta 21 era **el NUMERADOR que salio de leer las ocurrencias
+> una a una**, no la cuenta de ocurrencias. **Una ocurrencia no es un puente hasta que alguien la
+> lee contra la linea**, y esa es la distincion entera de esta tarea.
+
+### P.5.b. **EL REPARTO, CONTRASTADO CONTRA LA `ACTA 21` `1.3`, Y AHI SE CAZO UN FALLO MIO**
+
+    $ python .t1_v22/correr_cuentas21.py    (seccion 1)
+      cap_01   candidatos=  1  pasos=   9        cap_07   candidatos= 25  pasos= 225
+      cap_03   candidatos=  1  pasos=   7        cap_08   candidatos= 12  pasos= 102
+      cap_04   candidatos=  6  pasos=  48        cap_09   candidatos= 20  pasos= 272
+      cap_05   candidatos=  8  pasos=  76        cap_10   candidatos= 14  pasos= 205
+      cap_06   candidatos= 10  pasos= 117        cap_11   candidatos= 16  pasos= 187
+      TOTAL    candidatos=113  pasos=1248
+      SIN MARCA DE CAPITULO: 0  []
+
+**LAS OCHO FILAS DE `cap_01` A `cap_09` REPRODUCEN AL DIGITO LAS DE LA `ACTA 21` `1.3`.** Las dos
+que no coinciden con ella son las dos que esta vuelta movio: `cap_10` de `13/194` a **`14/205`**
+(la pieza 14) y `cap_11` de nada a **`16/187`**.
+
+> ### **CAIDA MIA, CAZADA POR MI ANTES DE PUBLICAR, Y ES LA MISMA ESPECIE QUE ME CACE EN LA VUELTA 21.**
+>
+> Mi primer reparto daba **`cap_04` con 5 candidatos y 41 pasos**, contra los `6` y `48` que el
+> auditor mide en su `1.3`. **La causa es un patron demasiado estrecho:** yo buscaba
+> `cap_(\d\d)\.md`, y `invitar_desafio_reciproco_equipo` **nombra su `cap_04` sin el `.md`**, asi
+> que perdia ese candidato y sus 7 pasos. **En la vuelta 21 me cace exactamente lo mismo** (*mi
+> instrumento de reparto perdia 7 pasos de `cap_04` por un `.md` de mas en un patron*), y volvi a
+> escribirlo.
+>
+> **LO QUE CAMBIA ES CUANDO SE CAZO:** esta vez la cifra **nunca llego a publicarse**, porque el
+> encargo me daba una cifra externa contra la que contrastarla. **La leccion que saco es de
+> metodo, no de expresion regular: un reparto que no se contrasta contra un conteo ajeno es un
+> reparto que se cree a si mismo.**
+
+### P.5.c. **LAS OCURRENCIAS POR CAPITULO, `cap_00` A `cap_09`. ES UNA MEDIDA DE OCURRENCIAS, NO UN NUMERADOR**
+
+*Y lo digo con las palabras del encargo, porque es la distincion que sostiene toda la tarea.*
+
+| unidad | candidatos | pasos | **ocurrencias** | ocurrencias por 100 pasos | **leido?** |
+|---|---:|---:|---:|---:|---|
+| `cap_00` | 0 | 0 | **0** | sin definir | no hay que leer |
+| `cap_01` | 1 | 9 | **1** | 11,11 | **sin leer** |
+| `cap_02` | 0 | 0 | **0** | sin definir | no hay que leer |
+| `cap_03` | 1 | 7 | **6** | 85,71 | **sin leer** |
+| `cap_04` | 6 | 48 | **9** | 18,75 | # **LEIDO, una a una** |
+| `cap_05` | 8 | 76 | **20** | 26,32 | **sin leer** |
+| `cap_06` | 10 | 117 | **33** | 28,21 | **sin leer** |
+| `cap_07` | 25 | 225 | **20** | 8,89 | **sin leer** |
+| `cap_08` | 12 | 102 | **17** | 16,67 | **sin leer** |
+| `cap_09` | 20 | 272 | **54** | 19,85 | # **LEIDO, una a una** |
+| | **83** | **856** | **160** | **18,69** | **2 capitulos de 8 con material** |
+
+**LOS DOS QUE SE LEEN SON LOS QUE EL ENCARGO FIJA:** el de **mas ocurrencias** (`cap_09`, con 54) y
+**`cap_04`** (la fila heredada mas alta). **De esos dos firmo el numerador. Los otros seis se
+quedan en `sin leer` con su cuenta de ocurrencias publicada, y NO los corrijo esta vuelta.**
+
+> **Y LA FILA QUE SALTA A LA VISTA LA DIGO YO EN VEZ DE ESPERAR A QUE LA VEA OTRO:** `cap_03` tiene
+> **6 ocurrencias en 7 pasos**, la densidad mas alta con diferencia (`85,71` por 100 pasos).
+> **No la leo, porque el encargo acota a dos capitulos y una relectura sin techo se come el trabajo
+> que vigila.** La dejo nombrada aqui para que la vuelta que la lea sepa por donde empezar.
+
+### P.5.d. **COMO SE SEPARA UNA OCURRENCIA DE UN PUENTE: EL CRITERIO SE LEE DE LO QUE LA VUELTA 21 RETIRO, NO SE INVENTA HOY**
+
+*Es la parte que hace verificable el numerador, y por eso va antes que las cifras.*
+
+**ABRI `.t1_v21/arreglo_cuentas.py`, que es donde viven las 22 retiradas, y la especie esta escrita
+con sus ejemplares literales:**
+
+    "El texto da sus dos ejemplares:"        ->  "El texto da sus ejemplares:"
+    "y el texto nombra tres, tu jefe, ..."   ->  "y el texto los nombra: tu jefe, ..."
+    "hazte las tres preguntas del texto:"    ->  "hazte las preguntas del texto:"
+
+> ### **EL CRITERIO, ESCRITO COMO REGLA PARA QUE SE ME PUEDA CONTRADECIR: ES PUENTE CUANDO EL PASO ATRIBUYE UNA CUENTA AL LIBRO Y EL LIBRO NO ESCRIBE ESE NUMERO, AUNQUE LA ENUMERACION QUE SIGUE SEA COMPLETA Y CIERTA.**
+>
+> **Y DIGO QUE ESTUVE A PUNTO DE ABLANDARLO**, porque es el sesgo obvio de quien mide su propio
+> trabajo: mi primer impulso fue decir que *el texto nombra tres* es una afirmacion **verdadera**
+> sobre el texto y por tanto no es puente. **La vuelta 21 ya decidio que no**, y sus ejemplares
+> retirados son literalmente de esa forma. **Me ato a su criterio en vez de estrenar el mio**, que
+> es lo que `EXTRACTOR.md` 5 llama declarar la discrepancia en vez de resolverla copiando.
+
+**LA CRIBA MECANICA QUE ORDENA LA LECTURA** (`.t1_v22/clasificar_cuentas.py`): separa las
+ocurrencias en **grupo A** (el numeral va pegado a una marca de atribucion: *el texto*, *que
+nombra*, *que pone*, *que da*) y **grupo B** (el numeral va dentro del contenido transcrito). **No
+decide nada: ordena.**
+
+| | `cap_09` | `cap_04` |
+|---|---:|---:|
+| grupo A, a leer contra la linea | **14** | **6** |
+| grupo B, la cifra dentro del contenido | **40** | **3** |
+| total | **54** | **9** |
+
+**EL GRUPO B SE COMPROBO CON UNA SEGUNDA CRIBA MAS ESTRECHA** (`.t1_v22/cribar_cuentas.py`): el
+numeral ingles equivalente tiene que aparecer **en una linea concreta del tramo**, no en el tramo
+entero.
+
+    $ python (comprobacion estrecha del grupo B de cap_09)
+      GRUPO B de cap_09: 40 ocurrencias
+        con su numeral ingles EN UNA LINEA del tramo : 40
+        SIN el en ninguna linea del tramo            : 0
+
+**LOS 40 PASAN. Y DIGO EXACTAMENTE QUE HICE Y QUE NO, sin adornarlo:** los **20 del grupo A** los
+lei **uno a uno con el `sed` del libro delante**, y sus lineas van pegadas abajo. De los **43 del
+grupo B** corri la criba estrecha sobre los 43 y **abri a mano 12 de ellos** (`L123` *2-3 minutes*,
+`L125` *five direct reports / three times a week*, `L127` *one of two things / twenty-five- and
+fifty-minute*, `L95` *three-year-old*, `L159` *slide six / 100 percent / 5 percent*, `L33` *sixty or
+so people*, `L41` *count to six*, `L317` *four rules of thumb*, `L303` *Both genders*). **Los otros
+31 los sostiene la criba y no mi lectura, y eso es lo que vale la fila.**
+
+### P.5.e. **`cap_04` LEIDO ENTERO: LAS NUEVE OCURRENCIAS, UNA A UNA, CON SU `sed` PEGADO** (`D.35`)
+
+| # | candidato, paso | lo que el paso dice | la linea del libro, pegada | **veredicto** |
+|---:|---|---|---|---|
+| 1 | `ajustar_franqueza_oido_oyente` P1 | *Mide **las dos dimensiones** en el oido del que escucha* | `157:BOTH DIMENSIONS OF Radical Candor are sensitive to context. They get measured at the listener's ear, not at the speaker's mouth.` y `81:I have identified two dimensions that, when paired, will help you move in a positive direction.` | **TRANSCRIPCION** |
+| 2 | `ajustar_franqueza_oido_oyente` P2 | *ni como un juicio sobre una cultura: **el texto descarta los tres** por su nombre* | `157:Radical Candor is not a personality type or a talent or a cultural judgment.` **Descarta tres y NO escribe la cuenta** | # **PUENTE** |
+| 3 | `cuidar_persona_completa_equipo` P9 | *ni con la charla forzada en actos sociales: **el texto descarta los tres** por su nombre* | `119:Caring personally is not about memorizing birthdays and names of family members. Nor is it about sharing the sordid details of one's personal life, or forced chitchat at social events you'd rather not attend.` **Descarta tres y NO escribe la cuenta** | # **PUENTE** |
+| 4 | `delimitar_franqueza_radical_cinco_noes` P1 | *y **pone los dos ejemplares** de lo que la anula* | `145:If you follow that phrase with words like, "You are a liar and I don't trust you," or "You're a dipshit," you've just acted like a garden-variety jerk.` **Da dos y NO escribe la cuenta**. Es literalmente la forma que la vuelta 21 retiro (*El texto da sus dos ejemplares*) | # **PUENTE** |
+| 5 | `delimitar_franqueza_radical_cinco_noes` P3 | *deja **tres cosas** sin importancia sin decir cada dia* | `147:A good rule of thumb for any relationship is to leave three unimportant things unsaid each day.` | **TRANSCRIPCION** |
+| 6 | `delimitar_franqueza_radical_cinco_noes` P4 | *que son **las tres direcciones que el texto nombra*** | `149:To be Radically Candid, you need to practice it "up," "down," and "sideways."` **Nombra tres y NO escribe la cuenta** | # **PUENTE** |
+| 7 | `invitar_desafio_reciproco_equipo` P3 | *sobre todo con quien acaba de llegar y con quien te tiene por jefe: **el texto lo dice de los dos*** | `139:Building enough trust between people to enable reciprocal challenge irrespective of reporting relationship takes time and attention.` mas `137:Elisse was new to the team and so was holding back her opinions.` **NO escribe cuenta**, pero **tampoco dice `el texto nombra dos`: dice que el texto lo afirma de los dos casos que el paso acaba de nombrar** | # **DISCUTIBLE, contado aparte** |
+| 8 | `revisar_ciclo_responsabilidades_relaciones` P2 | *Cuenta con **los cinco estorbos que el texto nombra uno a uno*** | `69:Many things get in the way, though: power dynamics first and foremost, but also fear of conflict, worry about the boundaries of what's appropriate or "professional," fear of losing credibility, time pressure.` **Nombra cinco, dice `Many` y NO escribe la cuenta** | # **PUENTE** |
+| 9 | `revisar_ciclo_responsabilidades_relaciones` P3 | *Repasa **las tres responsabilidades que el texto numera**, en su orden* | `71:They determine whether you can fulfill your three responsibilities as a manager: 1) ... 2) ... 3) ...` | **TRANSCRIPCION** |
+
+> ### **`cap_04`: `5` PUENTES DE 9 OCURRENCIAS, MAS `1` DISCUTIBLE CONTADO APARTE. TRES SON TRANSCRIPCION.**
+
+### P.5.f. **`cap_09` LEIDO: LAS CATORCE DEL GRUPO A, UNA A UNA, CON SU `sed` PEGADO**
+
+| # | candidato, paso | la linea del libro, pegada | **veredicto** |
+|---:|---|---|---|
+| 1 | `abrazar_incomodidad_arrancar_critica_equipo` P5, *las dos ventajas que el texto pone* | `33:...Airing it in public has another benefit as well: it saves you from having to hear the same thing over and over.` **Marca un segundo beneficio y NO escribe la cuenta** | # **PUENTE, y es el mas suave de los seis: el libro escribe `another benefit as well`** |
+| 2 | `dar_guia_acto_cinco_consejos` P5, *dos o tres minutos* | `123:Say it in 2-3 minutes between meetings. Just saying it right away in a minute or two, three at most...` | **TRANSCRIPCION** |
+| 3 | `dar_guia_acto_cinco_consejos` P7, *con cinco personas... elogiar tres veces por semana* | `125:If you have five direct reports and you want to offer each praise three times a week and criticism once a week...` | **TRANSCRIPCION** |
+| 4 | `dar_guia_acto_cinco_consejos` P8, *la primera de las dos salidas que el texto pone* | `127:...you must do one of two things. One, keep slack time in your calendar...` | **TRANSCRIPCION** |
+| 5 | `dar_guia_humilde_tres_tecnicas` P14, *alguien de tres anios* | `95:This is funny in a three-year-old, but when adults confuse subjective tastes with objective reality, it's arrogant.` | **TRANSCRIPCION** |
+| 6 | `elogiar_publico_criticar_privado_sus_tres_matices` P1, *los dos motivos que el texto da* | `157:Public criticism tends to trigger a defensive reaction... Public praise tends to lend more weight to the praise...` **Da los motivos y NO escribe la cuenta** | # **PUENTE** |
+| 7 | `elogiar_publico_criticar_privado_sus_tres_matices` P2, *antes de poner las tres cosas que hay que pensar* | `157:However, this is a rule of thumb, not a hard and fast rule. Here are some things to think about.` **Dice `SOME things`, no tres** | # **PUENTE, Y EL PEOR DE LOS SEIS: LA CUENTA VIVE TAMBIEN EN EL `id` DEL FICHERO** (`..._sus_tres_matices`) |
+| 8 | `evitar_personalizar_guia_aceptar_personal` P3, *los dos motivos por los que el texto dice* | `169:It's a problem because 1) it's generally inaccurate and 2) it renders an otherwise solvable problem really hard to fix...` **El libro los NUMERA** | **TRANSCRIPCION** |
+| 9 | `exigir_critica_jefe_reticente` P2, *una de las tres frases que el texto da* | `299:Try saying, "What can I do or stop doing...?" or "I'm worried you're so concerned..." or "The thing that I most need from you..."` **Da tres y NO escribe la cuenta** | # **PUENTE** |
+| 10 | `medir_guia_propia_pegatinas_marco` P7, *los cuatro casos que el texto nombra uno a uno* | `185:If somebody feels you were unnecessarily harsh... If they feel you pulled your punches... If they feel you dished out too many... If they feel you told them they did a good job but then...` **Nombra cuatro y NO escribe la cuenta** | # **PUENTE** |
+| 11 | `medir_guia_propia_pegatinas_marco` P8, *las cuatro cosas... numeradas por el mismo* | `189:...Two, when you have a shared vocabulary... Three, the visual cue is a reminder... Four, if you ask them to do this but they don't...` **El libro las NUMERA hasta cuatro** | **TRANSCRIPCION** |
+| 12 | `organizar_sistema_recoger_quejas_equipo` P1, *la diferencia que el texto marca entre las dos redacciones* | `59:JOHNSON & JOHNSON'S ORIGINAL credo had an interesting line... When it got rewritten, this intention got watered down into a much vaguer and less useful statement...` **Contrasta dos y NO escribe la cuenta** | # **PUENTE** |
+| 13 | `responder_critica_abrasiva_cuatro_reglas` P1, *las cuatro reglas generales que el texto anuncia* | `317:Before you react to feedback that you're too aggressive/abrasive/etc., consider the following four rules of thumb:` | **TRANSCRIPCION** |
+| 14 | `revisar_critica_mujer_agresiva_cuatro_tacticas` P2, *el texto dice que los dos generos* | `303:Both genders are equally guilty here I've found, unfortunately.` | **TRANSCRIPCION** |
+
+> ### **`cap_09`: `6` PUENTES DE 54 OCURRENCIAS. OCHO DEL GRUPO A SON TRANSCRIPCION Y LOS 40 DEL GRUPO B PASAN LA CRIBA ESTRECHA.**
+
+### P.5.g. **EL NUMERADOR FIRMADO DE LOS DOS CAPITULOS, Y LO QUE HACE CON EL FRENO**
+
+**LOS PUENTES NUEVOS SON DISJUNTOS DE LOS HEREDADOS, Y LO COMPRUEBO EN VEZ DE SUPONERLO:** el `3`
+heredado de `cap_04` sale entero de **`invitar_desafio_hacia_arriba`** (hoy
+`invitar_desafio_reciproco_equipo`), segun mi propia tabla de la vuelta 15 (`REPORTE.md` `L18379`:
+`| invitar_desafio_hacia_arriba | 7 | 4 | 3 | 0 |`). **Mis cinco de hoy estan en otros cuatro
+ficheros.** El `1` heredado de `cap_09` es el puente que la vuelta 20 se cazo, y tampoco es ninguno
+de mis seis.
+
+| unidad | numerador heredado | **puentes nuevos del ancho** | **numerador firmado** | pasos | **tasa** | quien firma |
+|---|---:|---:|---:|---:|---:|---|
+| `cap_04` | 3 | # **5** | # **8** | 48 | # **16,67** | **numerador y criterio, MIOS** |
+| `cap_09` | 1 | # **6** | # **7** | 272 | # **2,57** | **numerador y criterio, MIOS** |
+
+**Y CON EL DISCUTIBLE DE `cap_04` DENTRO, que publico igual para no elegir la cifra que me
+conviene:** `9 de 48 = 18,75`.
+
+> # **EL FRENO SE DISPARA. `cap_04` PASA DEL TOPE DE 10 CON `16,67`, Y NO HAY LECTURA DE ESTA CIFRA EN QUE NO LO PASE: CON EL DISCUTIBLE FUERA DA `16,67` Y CON EL DENTRO DA `18,75`.**
+>
+> **LO QUE `EXTRACTOR.md` 12.4 Y LA `ACTA 21` `7.3` MANDAN ENTONCES:** *sube por encima del 10 por
+> ciento? -> el tramo BAJA un escalon*. **El tramo pasa de TRES capitulos a DOS.**
+>
+> **Y DIGO CONTRA MI MISMO LO QUE ESTO SIGNIFICA, PORQUE ES INCOMODO:** el encargo de hoy decia
+> *`PASOS INVENTADOS` da peor fila `cap_10` 8,76 contra tope 10 y no se dispara*. **Con la medida
+> que el propio encargo me mando hacer, esa frase deja de ser cierta:** la peor fila ya no es
+> `cap_10` con `8,76`, es **`cap_04` con `16,67`**. **No es que el trabajo haya empeorado. Es que
+> `cap_04` nunca se habia medido con el instrumento ancho, y el total del lote era un suelo**,
+> exactamente como el encargo escribio.
+>
+> **NO CORRIJO LOS CINCO PUENTES DE `cap_04` NI LOS SEIS DE `cap_09` EN ESTA VUELTA, Y DIGO POR
+> QUE:** el encargo acota esta tarea a **medir y firmar**, no a reparar, y `ACTA 21` `4.8` deja
+> dicho que **el numerador cuenta los puentes cazados se hayan corregido o no**, asi que corregirlos
+> no bajaria ni una decima. **Cada uno lleva arriba su linea del libro y su correccion es de una
+> frase**, asi que la vuelta que los repare los tiene listos. **No se empieza lo que no se cierra.**
+
+### P.5.h. LA TABLA DE `PASOS INVENTADOS` ENTERA, FILA POR CAPITULO MAS TOTAL DEL LOTE, CON EL CRITERIO CORREGIDO DE `ACTA 21` `4.8`
+
+| unidad | rotulo | cuerpo | candidatos | numerador | pasos | **tasa** | quien lo firma |
+|---|---|---:|---:|---:|---:|---:|---|
+| `cap_00` | `Copyright Page` | 218 | 0 | 0 | 0 | **sin definir** | |
+| `cap_01` | `Preface` | 2.846 | 1 | 0 | 9 | **0,00** | **sin leer con el ancho**: 1 ocurrencia |
+| `cap_02` | `Introduction` | 3.908 | 0 | 0 | 0 | **sin definir** | |
+| `cap_03` | `How to Use This Book` | 627 | 1 | 0 | 7 | **0,00** | **sin leer con el ancho**: **6 ocurrencias en 7 pasos** |
+| **`cap_04`** | **`Cap. 1`** | 6.263 | 6 | # **8** | **48** | # **16,67** | # **FIRMADO POR MI HOY** |
+| `cap_05` | `Cap. 2` | 8.756 | 8 | 2 | 76 | **2,63** | **sin leer con el ancho**: 20 ocurrencias |
+| `cap_06` | `Cap. 3` | 11.587 | 10 | 0 | 117 | **0,00** | **sin leer con el ancho**: 33 ocurrencias |
+| `cap_07` | `Cap. 4` | 13.678 | 25 | 0 | 225 | **0,00** | **sin leer con el ancho**: 20 ocurrencias |
+| `cap_08` | `Cap. 5` | 6.140 | 12 | 0 | 102 | **0,00** | **sin leer con el ancho**: 17 ocurrencias |
+| **`cap_09`** | **`Cap. 6`** | 17.482 | 20 | # **7** | **272** | # **2,57** | # **FIRMADO POR MI HOY** |
+| `cap_10` | `Cap. 7` | 8.976 | 14 | **17** | **205** | **8,29** | numerador del auditor (`ACTA 21` `7.2`); **denominador remedido hoy: 205 y no 194** |
+| `cap_11` | `Cap. 8` | 8.626 | 16 | **0** | **187** | **0,00** | **MIO, leido en el acto de escribir los 16** |
+| | **lote 4 hasta `cap_11`** | **89.107** | **113** | **34** | **1.248** | **2,72** | **INCOMPLETO, y lo digo: SEIS filas siguen sin medir con el instrumento ancho** |
+
+> **DOS AVISOS SOBRE ESTA TABLA, Y LOS DOY YO:**
+>
+> **1. `cap_10` baja de `8,76` a `8,29` y NO es una mejora: es que le sume 11 pasos.** El numerador
+> del auditor (`17`) no se toca; el denominador pasa de `194` a `205` porque la pieza 14 anadio sus
+> once. **Una tasa que baja porque crece el denominador no dice nada bueno de nadie**, y la `ACTA
+> 21` `12` ya avisaba de esta misma trampa. Con los dos pasos de transposicion de `P.3.b` contados
+> como puente serian `19 de 205 = 9,27`.
+>
+> **2. El total del lote (`2,72`) SIGUE SIENDO UN SUELO, y la cifra la sume con la maquina despues
+> de haberla tecleado mal.** Escribi `32` y `2,56` de cabeza; el sumatorio da **`34` y `2,72`**, y
+> **publico el del sumatorio** (`EXTRACTOR.md` 5: la celda que no salga de un instrumento no se
+> escribe). Lo dejo dicho porque es exactamente la especie de caida que esta casa cuenta. Seis filas sin leer con el ancho suman
+> **97 ocurrencias** sin adjudicar. **La fila que decide no es el total: es la peor**, y la peor
+> esta firmada.
+
+---
+
+## P.6. TAREA 5: **LAS FILAS DE RUTA QUE NO PODIAN SER VERDAD, Y LA FILA DE ALCANCE DE `_insertados`**. **CERRADA**
+
+### P.6.a. LO QUE RECOJO DEL DIAGNOSTICO, SIN DISCUTIRLO (`ACTA 21` `1.5` y `4.7`)
+
+**El auditor midio con la hora de cada fichero que mi remedio de la vuelta 20 se ejecuto a la
+letra** (las nueve filas con su comando y su salida, la tabla contada la ultima) **y que aun asi dos
+filas salieron falsas, porque contaban el fichero que el propio acto de publicar creaba.**
+`.t1_v21/*.txt` decia `13` y hoy hay `14`; `.v21/*.md` decia `14` y hoy hay `16`. **Las dos eran
+ciertas en el segundo en que se contaron.**
+
+> **NO LO REABRO Y NO ME DEFIENDO.** La frase que me llevo es suya y es la que aplico: **un remedio
+> es una promesa que se puede cumplir leyendo y midiendo mejor, y estas dos filas no se arreglaban
+> midiendo mejor.** Lo que cambia no es mi cuidado: es **el alcance de lo que la fila cuenta**.
+
+### P.6.b. **EL REMEDIO, ESCRITO EN UN GUION Y NO EN UNA INTENCION** (`D.35`: los dos remedios que han funcionado obligan a teclear algo)
+
+**`.t1_v22/rutas_cierre.py` construye la tabla, y cada fila declara DOS cosas que antes no
+declaraba: su ALCANCE (que comando exacto la cuenta) y su ESPECIE (cerrada o auto referencial).**
+En las auto referenciales **el guion excluye por nombre los ficheros que van a nacer despues de que
+la tabla se cuente, y los imprime**, para que quien audite pueda sumarlos y volver a contar.
+
+**POR QUE VA EN UN GUION Y NO EN UNA REGLA QUE YO ME ACUERDE DE CUMPLIR:** porque el remedio de la
+vuelta 20 **era una regla que yo cumpli** y aun asi fallo. **La lista `NACEN_DESPUES` esta escrita en
+el fichero**, asi que la exclusion no depende de que yo me acuerde al publicar: depende de que la
+lista este bien, y la lista se puede auditar.
+
+    $ python .t1_v22/rutas_cierre.py
+
+| ruta | comando, QUE ES SU ALCANCE | especie | **cuenta** | que es, y que excluye |
+|---|---|---|---:|---|
+| `.aduana_v22/*.txt` | `ls .aduana_v22/*.txt \| wc -l` | cerrada | **17** | los informes de un candidato de esta vuelta |
+| `.aduana_v22/[ABCD]_*.txt` | `ls .aduana_v22/[ABCD]_*.txt \| wc -l` | cerrada | **16** | los de cap_11, escritos cuatro por lote |
+| `.t1_v22/*.py` | `ls .t1_v22/*.py \| wc -l` | cerrada | **10** | los guiones de la vuelta |
+| `.t1_v22/*.txt` | `ls .t1_v22/*.txt \| wc -l` | **AUTO REFERENCIAL** | **10** | las salidas guardadas. **excluidos por nombre: `salida_rutas_cierre.txt`, `salida_gate_cierre.txt`, `salida_guiones_cierre.txt`, `salida_aceptacion_cierre.txt`** |
+| `.v22/*.md` | `ls .v22/*.md \| wc -l` | **AUTO REFERENCIAL** | **4** | los fragmentos del reporte. **excluidos por nombre: `frag_t5.md`, `frag_cierre.md`** |
+| `cuarentena/scott_radical_candor/*.json` | `ls cuarentena/scott_radical_candor/*.json \| wc -l` | cerrada | **113** | la bandeja del lote 4 entera |
+
+**LAS DOS FILAS AUTO REFERENCIALES, CON SUS EXCLUIDOS NOMBRADOS UNO A UNO** (salida del guion):
+
+      .t1_v22/*.txt    excluye 4: salida_rutas_cierre.txt, salida_gate_cierre.txt,
+                                  salida_guiones_cierre.txt, salida_aceptacion_cierre.txt
+      .v22/*.md        excluye 2: frag_t5.md, frag_cierre.md
+
+> ### **LAS DOS FILAS QUE FALLARON DOS VUELTAS SEGUIDAS SON EXACTAMENTE ESTAS DOS, Y HOY SE PUBLICAN CON SU EXCLUSION DICHA.** Quien las audite suma los seis nombres de arriba y vuelve a contar: `10 + 4 = 14` en `.t1_v22/*.txt` y `4 + 2 = 6` en `.v22/*.md`. **La cuenta publicada no caduca, porque dice de que esta hecha.**
+
+### P.6.c. **LA FILA DE ALCANCE DE `cuarentena/_insertados/`, RECONCILIADA** (`ACTA 21` `1.2`)
+
+*El auditor lo dijo asi y lo recojo: **ninguna de las dos salidas es falsa y ninguna es caida**,
+pero una carpeta con dos numeros y sin reconciliar invita a sospechar. **El encargo pide el alcance
+del comando en la misma fila**, y va con la reconciliacion entera detras.*
+
+| comando | alcance | cuenta |
+|---|---|---:|
+| `ls cuarentena/_insertados/*.json \| wc -l` | **glob PLANO**: solo la raiz de la carpeta | **0** |
+| `find cuarentena/_insertados -name "*.json" \| wc -l` | **RECURSIVO**: raiz mas subcarpetas | **201** |
+
+**LA RECONCILIACION, IMPRESA DEL ARBOL Y NO TECLEADA:**
+
+       cuarentena/_insertados/onu_consumidor/             6
+       cuarentena/_insertados/smart_who/                 59
+       cuarentena/_insertados/zhuo_manager/             136
+       SUMA DE LAS SUBCARPETAS                          201
+       SUELTOS EN LA RAIZ                                 0
+
+> ### **`0` Y `201` SON LA MISMA CARPETA MEDIDA DE DOS MANERAS, Y LA DIFERENCIA ES ENTERA: EN LA RAIZ NO HAY NI UN JSON SUELTO. LOS 201 VIVEN EN TRES SUBCARPETAS POR LIBRO, Y LAS TRES SUMAN 201.**
+>
+> **Y LA CUARTA SUBCARPETA QUE NO EXISTE ES LA QUE CUENTA LA HISTORIA:** no hay
+> `cuarentena/_insertados/scott_radical_candor/`, **porque el lote 4 no ha insertado ni un nodo
+> todavia**. Es la misma cifra que `P.0.1` mide por otro lado.
+>
+> **DESDE AHORA LAS DOS FILAS VIAJAN JUNTAS O NO VIAJA NINGUNA.** La fila que publico en `P.0` de
+> esta vuelta ya llevaba su alcance pegado, antes de escribir esta tarea.
+
+---
+
+# P.7. LOS DISCUTIBLES, MARCADOS **ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+*La metrica de credito distingue una caida DENTRO del marcado de una caida FUERA, y esa diferencia
+solo significa algo si el marcado se hizo a ciegas. **Ninguno de estos ocho esta resuelto, y en
+cinco de ellos escribo el argumento que va CONTRA mi decision.***
+
+| # | lo que dudo | lo que hice | **el argumento en mi contra** |
+|---:|---|---|---|
+| **1** | **los pasos 10 y 11 de la pieza 14 salen de una frase que el libro escribe EN PASADO Y SOBRE OTRO** (`L43`, *He taught every manager on his team...*) y aqui van en imperativo al lector | los di por **TRANSCRIPCION con transposicion de persona declarada** | **el libro no le encarga NADA al lector en `L43`: cuenta lo que hizo Russ.** Si eso es puente, son dos, y `cap_10` pasa de `17/205` a `19/205 = 9,27`. **Publico las dos cuentas y no elijo** |
+| **2** | **`cap_11` da 16 piezas contra un techo de 15**, y la numero 16 (`debatir_decidir_asuntos_cultura_evitar_delegar`) es un rotulo interior de la seccion de cultura | lo corte como **nodo propio**, por su activacion distinta (te tienta delegar) y su inventario propio de **seis asuntos nombrados uno a uno** en `L303` | **los otros seis rotulos de esa misma seccion NO los corte**, y son de la misma especie formal. **Si este se funde dentro de `P15`, `cap_11` cierra en 15, justo EN el techo**, y la vuelta no cerro corta. **La asimetria es mia y la digo** |
+| **3** | **`pelear_proliferacion_reuniones_bloquear_ejecucion` contra `reservar_calendario_tiempo_ejecutar`** (`cap_07`): los dos bloquean calendario para ejecutar | **`CONTINUA` con arista**, no `REPITE` | **es el par mas cerca de un `REPITE` de todo el capitulo.** Lo que salva al mio son **los tres remedios descartados con su razon**; si el auditor lee que eso es contexto y no procedimiento, **el nodo entero sobra y el capitulo baja a 15** |
+| **4** | **`nutrir_ideas_nuevas_reunion_solas` contra `crear_espacio_seguro_madurar_ideas_nuevas`**: los pasos 12, 13 y 14 de la madre ya dicen *trata tus reuniones a solas como ese sitio seguro* | **`CONTINUA` con arista** | **los dos entregables casi se tocan** (*la idea explicada con claridad suficiente*). Lo que separa al mio son **las SEIS preguntas literales**; si eso se lee como un anexo de la madre, esto es `REPITE` y no entra |
+| **5** | **la pieza 6 de `cap_11` lleva la cuenta en el `id`** (`..._agenda_tres_bloques`) y el libro escribe *three goals*, que son **fines**, no bloques | deje la cuenta en el `id` **porque los tres bloques se cuentan de tres lineas del libro** (`L139`, `L141`, `L143`) | **es exactamente la especie que mi vuelta 21 se retiro 22 veces**: una cuenta que el libro no escribe **para esa cosa**. El libro cuenta metas, yo cuento bloques. **Si cae, el `id` se reescribe y el numerador de `cap_11` pasa de `0` a `1`** |
+| **6** | **el criterio con que firmo el numerador de `PASOS INVENTADOS`**: es puente cuando el paso atribuye una cuenta al libro y el libro no escribe ese numero, **aunque la enumeracion sea completa y cierta** | me **ate al criterio de la vuelta 21**, leido de sus 22 retiradas literales | **hay una lectura razonable en la que ninguno de mis once es puente**: *el texto nombra tres* es una afirmacion **verdadera** sobre el texto. Con esa lectura `cap_04` vuelve a `3/48 = 6,25` **y el freno no se dispara**. **Elegi el criterio que me perjudica, y digo que lo elegi** |
+| **7** | **`L88 a L92` de `cap_10` sigue en el resto**, y `L91` contiene *lo que se juega en hacerlas bien: construir confianza con quien te reporta, y averiguar para que papel encaja mejor cada persona* | lo deje **fuera de la pieza 14**, porque el encargo acota su material a `L19`, `L21` y `L43` (254 palabras) | **es doctrina y hoy no viaja a ningun nodo, que es literalmente el criterio con que el auditor encontro la pieza 14.** Si eso pide un paso mas, la pieza 14 tiene 12 y no 11, y el resto de `cap_10` baja de 1.686 a 1.585 palabras |
+| **8** | **la cita `--paso 2` de la arista `recorrer_rueda_hacer_cosas_equipo` a `recorrer_rueda_conscientemente_cultura_equipo`** | la declare **con la cita mas debil de la tanda, y lo dije en su fila** | **el paso 2 de la madre nombra *crear una cultura de escucha*, no *tu propia cultura*.** Una arista sin su linea es una afirmacion sin cita (`D.37`), y **esta cita esta al borde**. La salida limpia seria dejar el par como lectura sin arista |
+
+---
+
+# P.8. LA DEUDA DE ARISTAS, **REPETIDA ENTERA AL CIERRE, SIN RESUMIRLA Y SIN INVENTARLE SEDE** (orden del encargo)
+
+**LAS `19` QUE VENIAN**, tal como el encargo las cuenta: **12 `D.29` mas 3 `D.37` mas 1 par de
+lectura de la vuelta 21 (16), mas las 3 `D.37` de la pieza 14 (19)**. Las tres nuevas van escritas
+enteras en `P.3.e` con su `--paso 11` y su razon, y **no se resumen aqui: se cuentan**.
+
+**LAS QUE ESTA VUELTA AÑADE, CON SU `--paso` CITADO Y SU FICHERO ABIERTO PARA CITARLO:**
+
+| # | madre | hijo | `--paso` | especie | el paso de la madre, pegado |
+|---:|---|---|---:|---|---|
+| 1 a 10 | `decidir_quien_comunica_cada_cuanto` | **las diez herramientas**: `montar_reuniones_solas_mentalidad_frecuencia`, `conducir_reunion_equipo_agenda_tres_bloques`, `bloquear_tiempo_pensar_calendario`, `montar_reunion_gran_debate`, `montar_reunion_gran_decision`, `montar_reunion_general_presentaciones_preguntas`, `pelear_proliferacion_reuniones_bloquear_ejecucion`, `montar_tablero_kanban_medir_actividades`, `pasear_organizacion_hallar_problemas_pequenios`, `recorrer_rueda_conscientemente_cultura_equipo` | **6** | **`D.29`**, porque **el libro enumera las diez y NO escribe cuantas** | `Y ten delante las herramientas que el texto enumera para sacar cosas adelante juntos, que son las reuniones a solas, las reuniones de equipo, el tiempo para pensar, las reuniones de gran debate, las reuniones de gran decision, las reuniones generales, las zonas libres de reuniones, los tableros kanban, pasear por la organizacion y ser consciente de la cultura.` |
+| 11 | `conducir_reunion_equipo_agenda_tres_bloques` | `escribir_apuntes_sala_estudio_equipo` | **6** | `D.29` | `Escuchar, poner las actualizaciones en un documento compartido, quince minutos.` |
+| 12 | `conducir_reunion_equipo_agenda_tres_bloques` | `montar_reunion_gran_debate` | **18** | `D.29` | `Si tu equipo es mas grande que unas veinte personas, ponte mas formal: pon esos temas en las agendas de reuniones separadas de gran decision y de gran debate, e identifica duenios para cada uno.` |
+| 13 | `conducir_reunion_equipo_agenda_tres_bloques` | `montar_reunion_gran_decision` | **18** | `D.29` | *(el mismo paso 18, que nombra las dos)* |
+| 14 | `montar_reunion_gran_debate` | `montar_reunion_gran_decision` | **13** | `D.29` | `...una recomendacion de seguir debatiendo o de pasar a una decision.` |
+| 15 | `crear_espacio_seguro_madurar_ideas_nuevas` (`cap_07`) | `nutrir_ideas_nuevas_reunion_solas` | **12** | `D.29` | `Trata tus reuniones semanales a solas como ese sitio seguro donde vengan a hablarte de ideas nuevas.` |
+| 16 | `recorrer_rueda_hacer_cosas_equipo` (`cap_07`) | `recorrer_rueda_conscientemente_cultura_equipo` | **2** | `D.29`, **con la cita mas debil de la tanda** (discutible 8) | `Escucha las ideas que tiene la gente de tu equipo, y crea una cultura en la que se escuchen entre ellos.` |
+
+**Y LAS DOS QUE NO DECLARO COMO ARISTA, PORQUE NO TENGO PASO QUE CITAR, Y LAS DIGO IGUAL:**
+
+| par leido | por que NO lleva arista hoy |
+|---|---|
+| `preguntar_seguimiento_hallar_huecos` con `impedir_punialadas_espalda_equipo` | **el remite existe en el LIBRO** (`cap_11` `L97` manda a *Prevent Backstabbing* del capitulo seis) **pero no en mi nodo**: decidi no transcribir el remite como paso (`EXTRACTOR.md` 9: nombrar el procedimiento de otro). **Sin paso en la madre no hay cita, y una arista sin su linea es una afirmacion sin cita** |
+| `recorrer_rueda_conscientemente_cultura_equipo` con `debatir_decidir_asuntos_cultura_evitar_delegar` | **son hermanos de la misma seccion y ninguno nombra al otro en un paso.** Por extension de `EXTRACTOR.md` 15.6 (los hermanos de serie son `SANO`, `ACTA 21` `4.5`), **su veredicto es `SANO` y no llevan arista** |
+
+> # **LA DEUDA TOTAL AL CERRAR: `19 + 16 = 35` ARISTAS DECLARADAS Y NO CABLEADAS.**
+>
+> **Y LAS `35` SE DESBLOQUEAN CON EL MISMO ACTO: el cierre del lote 4 y su insercion.** Ninguna se
+> puede cablear hoy, y **no es una eleccion mia**: `forja.py arista` rechaza por construccion una
+> arista cuyos extremos viven en cuarentena, medido por mi en la vuelta 21 (`O.4.b`) y remordido por
+> el auditor en la `ACTA 21` `2.3` **por los dos extremos**. **No lo he vuelto a intentar hoy: un
+> rechazo medido dos veces no se mide una tercera.**
+
+---
+
+# P.9. EL CIERRE DE LA VUELTA 22
+
+## P.9.1. LAS TRES GUARDAS, CORRIDAS AL CERRAR Y NO AL EMPEZAR
+
+    $ python forja.py gate
+      GATE VERDE.
+        nodos verificados: 203
+        guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada,
+                 vuelta, cita_incompleta, deprecado_en_superficie, arista_rota,
+                 arista_incompleta, guiones
+    $ python forja.py guiones
+      BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py | tail -3
+      total: 98 pruebas, 0 fallos, 0 errores
+
+**LAS TRES EN VERDE.** Y **el hook corrio en los tres commits de la vuelta** sin que lo saltara
+ninguna vez: su salida esta en el registro de cada uno.
+
+## P.9.2. EL ESTADO AL CIERRE, **RECOMPUTADO AL CIERRE** (`EXTRACTOR.md` 4), CONTRA LA APERTURA
+
+| medida | al abrir (`P.0`) | **al cerrar** | movio? |
+|---|---:|---:|---|
+| nodos en el grafo | 203 | **203** | **NO.** Cero inserciones |
+| veredictos en `bitacora/` | 148 | **148** | **NO.** Cero veredictos en sede |
+| ficheros en `cuarentena/_insertados/` (`find`, recursivo) | 201 | **201** | **NO** |
+| ficheros sueltos en la raiz de `_insertados` (`ls`, glob plano) | 0 | **0** | **NO** |
+| candidatos en cuarentena del lote 4 | 96 | # **113** | # **SI: `+17`** (la pieza 14 mas los 16 de `cap_11`) |
+| lineas del reporte | 26.182 | **27280** (`wc -l`, AUTO REFERENCIAL: contado tras anexar el cierre entero y antes de esta misma correccion, que no cambia el numero de lineas) | si |
+| commit | `3eee6a0` | **`a2e2778` mas el de este cierre** | si |
+| fecha | 2026-09-12 | **2026-09-12** | **NO: la vuelta no cruzo la medianoche** |
+
+> ### **LA REGLA FUNCIONO POR QUINTA VEZ: LA INSERCION LLEGO ABIERTA Y NO ENTRO NI UN NODO.**
+> `MODO_INSERCION=insertar` es el default desde `D.39`, y `D.39` abre la insercion **de un lote
+> CERRADO**. El lote 4 tiene hoy **`cap_12`, `cap_13` y `cap_14` sin minar** (`19.054` palabras),
+> asi que **no hay lote que insertar**. **Grafo `203` a `203`, bitacora `148` a `148`,
+> `_insertados` `201` a `201`: ningun nodo entro y ninguno lo intento.**
+
+## P.9.3. LO QUE ESTA VUELTA PRODUJO, EN CIFRAS DE SU PROPIO INSTRUMENTO
+
+| | |
+|---|---|
+| **candidatos escritos** | **17**: la pieza 14 de `cap_10` mas los **16** de `cap_11` |
+| **pasos escritos** | **198**: 11 mas 187 |
+| **informes de un candidato corridos** | **17, uno por candidato y en el acto de escribirlo**. Saldo: **10 `ENTRARIA`, 7 `BLOQUEARIA`, 0 `CAERIA`** |
+| **`CAERIA` en toda la vuelta** | # **CERO, y ningun id tumbado en la puerta** (la vuelta 21 tuvo uno) |
+| **filas de vecino levantadas** | **13**, que son **11 pares distintos**, **los 11 leidos y con su razon escrita** (`P.3.d` y `P.4.e`) |
+| **veredictos emitidos** | **11**: **8 `SANO`** y **3 `CONTINUA` con arista** |
+| **aristas declaradas** | **16 nuevas** (`P.8`), **mas las 3 `D.37` de la pieza 14** ya contadas en las 19 |
+| **fronteras cerradas contra el cuerpo** | **2**: `cap_10` recerrada en `8.976 = 8.976` con residuo troceado en 6 filas, y `cap_11` en `8.626 = 8.626` con residuo de 281 palabras en 1 fila nombrada linea a linea |
+| **correcciones declaradas sin borrar texto viejo** | **2** (`P.3.f`), **y ninguna toco un paso**: 11 y 11, 13 y 13 |
+| **ocurrencias de numeral medidas** | **160** en `cap_00` a `cap_09`; **63 leidas una a una** (los 20 del grupo A con su `sed`, los 43 del grupo B por criba estrecha mas 12 abiertos a mano) |
+| **puentes nuevos firmados** | **11**: 5 en `cap_04` y 6 en `cap_09`, mas **1 discutible contado aparte** |
+| **paradas** | # **CERO** |
+
+## P.9.4. **MIS CAIDAS DE ESTA VUELTA, DICHAS POR MI**
+
+*`EXTRACTOR.md` 8 y la practica de esta casa: las que me cazo yo tambien se escriben.*
+
+| # | que paso | cuando se cazo | que costo |
+|---:|---|---|---|
+| **1** | **mi reparto por capitulo perdia `invitar_desafio_reciproco_equipo` y sus 7 pasos**, por buscar `cap_NN.md` cuando ese fichero escribe su `cap_04` sin el `.md`. **Es la misma especie que me cace en la vuelta 21**, y la volvi a escribir | **antes de publicar**, al contrastar contra la `ACTA 21` `1.3` | **nada, porque la cifra no llego a publicarse.** Pero **es reincidencia y la cuento** |
+| **2** | **escribi en mi propio guion que *en la vuelta 21 esa linea dio 22***, confundiendo **ocurrencias** con **numerador**. El `22` era el numerador tras leer, no la cuenta de ocurrencias | **antes de publicar**, al releer mi propia salida | nada. **Pero la distincion que confundi es la que sostiene la TAREA 4 entera** |
+| **3** | **tecleé el total del lote de `PASOS INVENTADOS` de cabeza: escribi `32` y `2,56`.** El sumatorio da **`34` y `2,72`** | **antes de anexar la tabla**, al correr la comprobacion | nada. **Es exactamente lo que `EXTRACTOR.md` 5 prohibe**: la celda que no sale de un instrumento no se escribe |
+| **4** | **escribi en `P.4.f` que la aduana NO levantaria el par de la rueda de la cultura**, cuando su informe todavia no habia terminado | **el informe llego despues y dijo lo contrario** (`familia_id 0,429`) | **corregi la fila en vez de dejarla**, y la correccion queda escrita en la propia fila 11 de `P.4.e` |
+| **5** | **declare la arista de la rueda de la cultura con `--paso 8`**, y al abrir el fichero para citarlo **el paso 8 no nombra la cultura por ningun lado** | al aplicar `D.35` (la cita se pega, no se promete) | la cambie a `--paso 2` **y dije que es la cita mas debil de la tanda** (discutible 8) |
+
+> ### **LAS CINCO SE CAZARON ANTES DE PUBLICAR, Y LAS CINCO SE CAZARON POR LA MISMA RAZON: PORQUE ALGO ME OBLIGO A TECLEAR LA PRUEBA.** Un conteo ajeno contra el que contrastar (1), mi propia salida releida (2), un sumatorio corrido (3), un informe que llego (4) y un fichero abierto para pegar su linea (5). **Es `D.35` funcionando cinco veces: un remedio que se cumple acordandose no es un remedio.**
+
+## P.9.5. LAS RUTAS QUE PUBLICO COMO PRUEBA, **CON SU ALCANCE Y SU EXCLUSION DICHOS** (TAREA 5)
+
+*La tabla entera, con sus dos filas auto referenciales y sus seis ficheros excluidos por nombre,
+esta en `P.6.b`. **No la repito aqui**, que seria publicar dos veces una cifra que caduca.*
+
+## P.9.6. LO QUE PASA A LA VUELTA SIGUIENTE, Y **EL VOLUMEN QUE EL FRENO LE DEJA**
+
+| puerta de `EXTRACTOR.md` 12.4 | la cifra de hoy | se dispara? |
+|---|---|---|
+| **`PASOS INVENTADOS`** | peor fila **`cap_04` `16,67`** contra tope **10** (`P.5.g`) | # **SI. EL TRAMO BAJA UN ESCALON: DE TRES CAPITULOS A DOS** |
+| **cerrar el reporte** | **esta vuelta cierra el suyo, entero** | **NO** |
+| **techo de candidatos** | `cap_12` **2.118** palabras (proyecta ~3), `cap_13` **9.298** (proyecta ~14), `cap_14` **7.638** (proyecta ~12) | **manda el techo: `cap_12` mas `cap_13` proyectan ~17 y NO caben juntos** |
+
+> ### **LA COLA, DICHA ENTERA: `cap_12`, `cap_13` Y `cap_14`, `19.054` PALABRAS. CON EL TRAMO BAJADO A DOS CAPITULOS Y EL TECHO DE 15 DELANTE, LA VUELTA SIGUIENTE NO CIERRA EL LOTE 4.**
+>
+> **Y LO DIGO PORQUE ES LA CONSECUENCIA INCOMODA DE MI PROPIA MEDIDA:** la TAREA 4 que yo mismo
+> propuse **retrasa el cierre del lote**, y con el las **35** aristas y los **11** veredictos que
+> esperan sede. **La alternativa era no medir `cap_04`, y entonces el lote se habria cerrado sobre
+> una cifra que era un suelo.**
+
+## P.9.7. LAS PROPUESTAS, EN MI SEDE Y SIN ADJUDICARME NADA (`EXTRACTOR.md` 14)
+
+| # | propuesta | por que |
+|---:|---|---|
+| **1** | **que el criterio de `PASOS INVENTADOS` se escriba como regla en el banco, con sus ejemplares literales**, en vez de vivir deducido de `.t1_v21/arreglo_cuentas.py` | hoy el criterio con que se firma la peor fila del lote **se lee de los comentarios de un guion mio de la vuelta anterior**. **Lo he tenido que reconstruir yo leyendo lo que retire**, y mi discutible 6 dice que hay otra lectura razonable que da `6,25` en vez de `16,67`. **Una cifra que dispara un freno no deberia depender de que yo reconstruya bien un criterio.** No la escribo yo: `EXTRACTOR.md` 14 dice que el banco es de Alexis |
+| **2** | **que la relectura con el instrumento ancho de los seis capitulos que quedan `sin leer` se encargue por capitulos y no de golpe**, empezando por `cap_03` (**6 ocurrencias en 7 pasos**, la densidad mas alta) y `cap_06` (**33 ocurrencias**) | **97 ocurrencias siguen sin adjudicar** y el total del lote sigue siendo un suelo. **Dos capitulos por vuelta caben**; los seis de golpe se comen el trabajo que vigilan (cosecha `7.G`) |
+| **3** | **que `D.41` recoja la medida de hoy: el informe de un candidato costo `165` segundos**, no los `156,5` de la regla ni los `453` que yo medi en la vuelta 21 | las tres son ciertas en su corrida y **la poblacion crecio de `299` a `316` entre medias**, asi que la cifra de la regla no describe la maquina de hoy. **Con `165` s los informes de un capitulo entero caben en un turno**, y eso cambia lo que se puede encargar |
+| **4** | **que la proyeccion por densidad se declare como suelo y no como estimacion** | ha fallado **dos veces seguidas y en el mismo sentido**: `10,3` contra `14` en `cap_10`, `13,5` contra `16` en `cap_11`. **No pido cambiar la formula: pido que su fila diga `al menos N`** |
+
+## P.9.8. LA IDENTIDAD DE LA VUELTA, **LEIDA DE GIT** (`EXTRACTOR.md` 5)
+
+    $ git rev-parse --abbrev-ref HEAD    ->  extraccion-mundo-11
+    $ git rev-parse --short HEAD         ->  (el commit de apertura fue 3eee6a0)
+    $ git log --oneline 3eee6a0..HEAD
+      a2e2778 VUELTA 22, cap_11 (Cap. 8, Results) CERRADO ENTERO: 16 candidatos y 187 pasos...
+      d203ce4 VUELTA 22, cap_10: LA PIEZA 14 ESCRITA Y POR LA ADUANA al primer intento...
+    $ git diff --name-only 3eee6a0..HEAD | sed 's#/.*##' | sort | uniq -c
+      17 .aduana_v22     19 .t1_v22      3 .v22     19 cuarentena      1 docs
+       1 .sec78.tmp.md    1 .sec9.tmp.md
+
+> **LOS DOS FICHEROS `.sec*.tmp.md` NO SON MIOS Y LO DIGO:** son fragmentos sueltos de la `ACTA 21`
+> que el auditor dejo sin recoger en el arbol (el mismo los nombra en su `11`, entre los ficheros de
+> usar y tirar que van a Alexis). **Entraron en mi commit porque commitee el arbol entero, que es lo
+> que `EXTRACTOR.md` 1.1 manda.** No los he escrito, no los he tocado y no son mi sede.
+>
+> **Y LO QUE MIS COMMITS NO TOCAN, medido y no supuesto:** cero en `dataset/`, cero en `bitacora/`,
+> cero en `censos/`, cero en `config/`, cero en `src/`, cero en `esquema/`, y de `docs/` **solo
+> `docs/loop/REPORTE.md`**, que es mi sede.
+
+## P.9.9. LA VUELTA 22, EN UNA TABLA
+
+| | |
+|---|---|
+| **tareas encargadas** | **5**, el tope es 5. **Las cinco CERRADAS.** Cero cola por techo de tareas |
+| **la bloqueante** | **cerrada la primera**, como el encargo mandaba: `cap_10` queda en **14 piezas y 205 pasos** |
+| **unidad minada** | **`cap_11` (`Cap. 8`, `Results`) ENTERO**, 16 candidatos y 187 pasos |
+| **`cap_12`** | # **NO ENTRA**, y se declara con su cifra: `cap_11` da **16 contra un techo de 15**, asi que `EXTRACTOR.md` 12.4 cierra la vuelta en ese capitulo. Hueco bajo 15: **cero** |
+| **aduana** | **17 informes de un candidato, uno por candidato y en su acto**. **10 `ENTRARIA`, 7 `BLOQUEARIA`, 0 `CAERIA`**. Poblacion de `300` a `316`, creciendo lote a lote |
+| **insercion** | # **CERO, por quinta vez con la puerta abierta.** Grafo `203` a `203`, bitacora `148` a `148`, `_insertados` `201` a `201` |
+| **veredictos** | **11 pares leidos, 11 razones escritas**: 8 `SANO`, 3 `CONTINUA` con arista. **Su sede hoy es este reporte y lo digo**; `bitacora/` lo sera el dia de la insercion |
+| **aristas** | **35 declaradas y no cableadas** (`19` heredadas mas `16` nuevas), **repetidas enteras en `P.8`**, mas **2 pares leidos que NO llevan arista porque no tengo paso que citar** |
+| **`PASOS INVENTADOS`** | **peor fila `cap_04` `16,67` contra tope `10`**. # **EL FRENO SE DISPARA Y EL TRAMO BAJA A DOS CAPITULOS.** `cap_11` sale en **`0,00` (0 de 187)**, leido en el acto. Lote 4 **`2,72` (34 de 1.248)**, **declarado INCOMPLETO**: seis filas sin leer con el ancho, **97 ocurrencias sin adjudicar** |
+| **discutibles** | **8, marcados antes de saber si acierto**, y **en cinco escribo el argumento contra mi propia decision** |
+| **caidas mias** | **5, las cinco cazadas por mi ANTES de publicar**, y una de ellas **es reincidencia de la vuelta 21 y la cuento como tal** |
+| **guardas** | `gate` **VERDE 203**, `guiones` **VERDE**, `test_aceptacion` **98 pruebas, 0 fallos**, **corridas al cerrar**. Hook verde en los tres commits, **ninguno saltado** |
+| **paradas** | # **CERO.** Nada contradijo una regla vigente ni una cifra publicada con su corte |
+| **lo que pasa a la siguiente** | **`cap_12`, `cap_13` y `cap_14`** (`19.054` palabras), **con el tramo bajado a DOS capitulos por el freno**; la relectura con el instrumento ancho de **los seis capitulos sin leer**; y **el cableado de las 35 aristas**, que se desbloquean todas con el mismo acto |
+
+> # **LA VUELTA 22 CIERRA CON LA DEUDA DE `cap_10` PAGADA, `cap_11` ENTERO EN 16 PIEZAS, Y UNA CIFRA QUE ME PERJUDICA MEDIDA POR MI: EL FRENO DE FIDELIDAD SE DISPARA EN `cap_04` CON `16,67` CONTRA UN TOPE DE `10`.**
+>
+> **Y LA LECTURA QUE SACO, QUE ES LA QUE ME TOCA:** la TAREA 4 fue **propuesta mia** en la vuelta
+> 21, el auditor la subio a tarea, y **lo primero que ha hecho al correrse es bajarme el volumen y
+> retrasar el cierre del lote**. Eso es exactamente lo que tenia que pasar si la propuesta era
+> buena: **el total del lote era un suelo porque `856` pasos se habian medido con un instrumento mas
+> estrecho**, y ahora dos de esos capitulos estan medidos. **La cifra no empeoro el trabajo: dejo de
+> esconderlo.**

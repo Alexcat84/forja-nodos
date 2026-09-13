@@ -1,0 +1,33 @@
+| ruta | comando, QUE ES SU ALCANCE | especie | **cuenta** | que es, y que excluye |
+|---|---|---|---:|---|
+| `.aduana_v22/*.txt` | `ls .aduana_v22/*.txt \| wc -l` | cerrada | **17** | los informes de un candidato de esta vuelta |
+| `.aduana_v22/[ABCD]_*.txt` | `ls .aduana_v22/[ABCD]_*.txt \| wc -l` | cerrada | **16** | los de cap_11, escritos cuatro por lote |
+| `.t1_v22/*.py` | `ls .t1_v22/*.py \| wc -l` | cerrada | **10** | los guiones de la vuelta |
+| `.t1_v22/*.txt` | `ls .t1_v22/*.txt \| wc -l` | **AUTO REFERENCIAL** | **10** | las salidas guardadas. **excluidos por nombre: `salida_rutas_cierre.txt`, `salida_gate_cierre.txt`, `salida_guiones_cierre.txt`, `salida_aceptacion_cierre.txt`** |
+| `.v22/*.md` | `ls .v22/*.md \| wc -l` | **AUTO REFERENCIAL** | **4** | los fragmentos del reporte. **excluidos por nombre: `frag_t5.md`, `frag_cierre.md`** |
+| `cuarentena/scott_radical_candor/*.json` | `ls cuarentena/scott_radical_candor/*.json \| wc -l` | cerrada | **113** | la bandeja del lote 4 entera |
+
+LAS DOS FILAS AUTO REFERENCIALES, CON SUS EXCLUIDOS NOMBRADOS UNO A UNO:
+  .t1_v22/*.txt    excluye 4: .t1_v22/salida_rutas_cierre.txt, .t1_v22/salida_gate_cierre.txt, .t1_v22/salida_guiones_cierre.txt, .t1_v22/salida_aceptacion_cierre.txt
+  .v22/*.md        excluye 2: .v22/frag_t5.md, .v22/frag_cierre.md
+
+POR QUE SE EXCLUYEN Y NO SE ESTIMAN: son los ficheros que el cierre escribe
+DESPUES de que esta tabla se cuente. Sumarlos seria publicar una cifra que
+todavia no es cierta; contarlos sin decirlo es lo que hizo falsas las dos
+filas de la vuelta 21. Quien audite suma estos nombres y vuelve a contar.
+
+==========================================================================
+LA FILA DE ALCANCE DE cuarentena/_insertados/, RECONCILIADA (TAREA 5)
+==========================================================================
+| comando | alcance | cuenta |
+|---|---|---:|
+| `ls cuarentena/_insertados/*.json \| wc -l` | **glob PLANO**: solo la raiz de la carpeta | **0** |
+| `find cuarentena/_insertados -name "*.json" \| wc -l` | **RECURSIVO**: raiz mas subcarpetas | **201** |
+
+LAS DOS SON CIERTAS Y MIDEN COSAS DISTINTAS. La reconciliacion es que en la
+raiz NO hay ni un JSON suelto: los 201 viven en 3 subcarpetas por libro.
+   cuarentena/_insertados/onu_consumidor/             6
+   cuarentena/_insertados/smart_who/                 59
+   cuarentena/_insertados/zhuo_manager/             136
+   SUMA DE LAS SUBCARPETAS                          201
+   SUELTOS EN LA RAIZ                                 0
