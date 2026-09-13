@@ -454,3 +454,10 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-11 | revisar_incentivos_trampas_equipo | otro_idioma | create the right incentives | ingles | - |
 | 2026-09-11 | vivir_primero_valor_declarado | nombre_largo | Los cinco ejemplos de decir una cosa y hacer otra, y la regla de no sacar a colacion un valor por el que no estas dispuesto a cambiar tu conducta | castellano | - |
 | 2026-09-11 | vivir_primero_valor_declarado | otro_idioma | always walk the walk | ingles | - |
+| 2026-09-13 | desplegar_marco_franqueza_radical | nombre_largo | Recortar el marco del propio libro, fotocopiarlo, ponerlo a la vista y repartirlo entre los colegas, usandolo como brujula de conversaciones y no como test de personalidad | castellano | - |
+| 2026-09-13 | desplegar_marco_franqueza_radical | otro_idioma | radical candor framework | ingles | - |
+| 2026-09-13 | repartir_semana_cuarenta_horas_jefe | nombre_largo | Las diez horas semanales que cuesta aplicar el libro entero, las quince que se bloquean para el trabajo propio de experto y las quince que quedan | castellano | - |
+| 2026-09-13 | repartir_semana_cuarenta_horas_jefe | otro_idioma | ten hours a week managing your team | ingles | - |
+| 2026-09-13 | delimitar_franqueza_radical_cinco_noes | nombre_largo | Lo que la franqueza radical no es: no es licencia para ser duro, no es buscar defectos, no es jerarquica, no es confraternizar y no es de Silicon Valley | castellano | - |
+| 2026-09-13 | delimitar_franqueza_radical_cinco_noes | otro_idioma | What Radical Candor is not | ingles | - |
+| 2026-09-13 | delimitar_franqueza_radical_cinco_noes | otro_idioma | front-stab | ingles | - |

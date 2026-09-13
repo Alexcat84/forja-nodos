@@ -1,0 +1,55 @@
+ADUANA DE INSERCION, candidato 'cuidar_persona_completa_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi seÃ±al contra 205 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las seÃ±ales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino usar_lenguaje_no_discriminatorio_entrevista  [Usar lenguaje no discriminatorio en las entrevistas y en los formularios]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.205 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.615 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de usar_lenguaje_no_discriminatorio_entrevista
+
+  vecino gestionar_personas_equipo  [Gestionar bien a las personas de tu equipo]
+    levantada por: familia_id
+    similitud_texto    0.221 (umbral 0.35)
+    familia_id         0.400 (umbral 0.30)
+    paso_contra_nodo   0.455 (umbral 0.60)
+    paso 6 del candidato contra paso 5 de gestionar_personas_equipo
+
+  vecino respetar_cuidar_persona_cargo  [Respetar a tu persona a cargo y cuidar de ella]
+    levantada por: familia_id
+    similitud_texto    0.236 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.425 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de respetar_cuidar_persona_cargo
+
+  vecino desplegar_marco_franqueza_radical  [Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.424 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de desplegar_marco_franqueza_radical
+
+BLOQUEADO: faltan veredictos para usar_lenguaje_no_discriminatorio_entrevista, gestionar_personas_equipo, respetar_cuidar_persona_cargo, desplegar_marco_franqueza_radical
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "usar_lenguaje_no_discriminatorio_entrevista|CONTINUA|madre=usar_lenguaje_no_discriminatorio_entrevista|que aÃ±ade el hijo a la madre"
+    --veredicto "usar_lenguaje_no_discriminatorio_entrevista|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "usar_lenguaje_no_discriminatorio_entrevista|SANO|por que no son el mismo trabajo"
+    --veredicto "usar_lenguaje_no_discriminatorio_entrevista|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "gestionar_personas_equipo|CONTINUA|madre=gestionar_personas_equipo|que aÃ±ade el hijo a la madre"
+    --veredicto "gestionar_personas_equipo|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "gestionar_personas_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "gestionar_personas_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "respetar_cuidar_persona_cargo|CONTINUA|madre=respetar_cuidar_persona_cargo|que aÃ±ade el hijo a la madre"
+    --veredicto "respetar_cuidar_persona_cargo|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "respetar_cuidar_persona_cargo|SANO|por que no son el mismo trabajo"
+    --veredicto "respetar_cuidar_persona_cargo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "desplegar_marco_franqueza_radical|CONTINUA|madre=desplegar_marco_franqueza_radical|que aÃ±ade el hijo a la madre"
+    --veredicto "desplegar_marco_franqueza_radical|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "desplegar_marco_franqueza_radical|SANO|por que no son el mismo trabajo"
+    --veredicto "desplegar_marco_franqueza_radical|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
