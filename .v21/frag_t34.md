@@ -67,6 +67,13 @@ se puede o no se puede. **Esta es la salida literal.***
 antes de tocar `dataset/` ni `bitacora/`, y lo comprueban las cifras del cierre (`O.6`), que
 cierran donde abrieron.
 
+**Y UNA PRECISION QUE VA CONTRA MI PROPIA CITA, porque si no la digo nadie la ve:** el rechazo cae
+en **la primera guarda del modulo** (que los dos ids vivan en el grafo), asi que **el instrumento
+NO llego a validar mi `--paso 11`**. Ese `11` **lo valide yo contando los pasos de la madre en su
+fichero** (`O.3.c`: `facilitar_despido_tres_cosas` tiene **11** pasos, y el que enumera la serie es
+el ultimo). **No presento el `--paso` como comprobado por la maquina: esta comprobado por mi, y el
+dia que se cablee la maquina lo comprobara tambien**, porque el modulo exige `1 <= paso <= len(pasos)`.
+
 > ### **Y EL INSTRUMENTO NO ESTA ROTO: DICE LA MISMA COSA QUE MI MANUAL, CON OTRAS PALABRAS.**
 >
 > **`EXTRACTOR.md` 15.6, literal:** *DESDE AHORA DECLARAS ESAS ARISTAS EN LA MISMA VUELTA EN QUE
@@ -149,8 +156,20 @@ en vez de resolverlo copiando. Lo traigo con la medida del mismo medidor que usa
 
 **Y LO CONFIRMA SU PROPIO INFORME DE LA ADUANA, que es otro instrumento y no el mismo:**
 
-    $ grep -A3 "^\[" .aduana_v21/final/reconocer_excelencia_trayectoria_gradual.txt
-      (el vecino `reconocer_recompensar_gente_estable` NO aparece en su lista)
+    $ tail -8 .aduana_v21/final/reconocer_excelencia_trayectoria_gradual.txt
+      LA LISTA COMPLETA, candidato por candidato
+      ============================================================================
+
+      [ENTRARIA] reconocer_excelencia_trayectoria_gradual   (reconocer_excelencia_trayectoria_gradual.json)
+
+      NADA SE INSERTO. Este informe es de SOLO LECTURA: ...
+    $ grep "BLOQUEARIAN" .aduana_v21/final/reconocer_excelencia_trayectoria_gradual.txt
+        BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+    $ grep -c "reconocer_recompensar_gente_estable" .aduana_v21/final/reconocer_excelencia_trayectoria_gradual.txt
+      0
+
+**`[ENTRARIA]` CON LA COLA VACIA, Y CERO MENCIONES DE LA MADRE EN SU PROPIO INFORME.** El vecino
+que el fundador eligio a mano **no aparece**, y el candidato entraria *sin leer nada*.
 
 > ### **LAS TRES POR DEBAJO, Y NO POR POCO EN DOS DE LAS TRES: `0,257` contra `0,35`; `0,143` contra `0,30`; `0,472` contra `0,60`.**
 >

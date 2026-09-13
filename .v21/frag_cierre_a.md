@@ -29,7 +29,7 @@ y quedan como prueba de lo que se corrigio.*
 > **286**; la mia se midio contra **287** y sale casi **tres veces mas alta**. **No la contradigo
 > ni la corrijo: declaro la discrepancia**, que es lo que `EXTRACTOR.md` 5 manda hacer en vez de
 > resolverla copiando. Y digo lo que significa para un turno: **trece candidatos en serie son
-> unas 98 minutos de instrumento**, sin escribir una sola palabra.
+> unos 98 minutos de instrumento**, sin escribir una sola palabra.
 >
 > **Y POR ESO LOS CORRI SOLAPADOS, Y LO DIGO ANTES DE QUE SE ME PREGUNTE.** `EXTRACTOR.md` 16
 > prohibe por su nombre *escribir doce candidatos y pasar la aduana al final*, y no lo hice: **el
