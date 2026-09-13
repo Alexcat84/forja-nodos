@@ -1,0 +1,9 @@
+pelear_proliferacion_reuniones_bloquear_ejecucion   (8 pasos)   poblacion 316 = 203 grafo + 113 bandejas
+  vecinos POR ENCIMA de umbral: 0
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    nutrir_ideas_nuevas_reunion_solas                    sim=0.325 fam=0.111 paso=0.428
+    bloquear_tiempo_pensar_calendario                    sim=0.322 fam=0.125 paso=0.393
+    decidir_quien_comunica_cada_cuanto                   sim=0.319 fam=0.000 paso=0.438
+    correr_semana_arreglo_averias_gestion                sim=0.307 fam=0.000 paso=0.409
+    leer_seniales_fallo_jefe_reunion_solas               sim=0.303 fam=0.100 paso=0.390
+  segundos: 143.8

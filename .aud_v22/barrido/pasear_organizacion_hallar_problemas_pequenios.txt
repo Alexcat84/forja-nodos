@@ -1,0 +1,9 @@
+pasear_organizacion_hallar_problemas_pequenios   (9 pasos)   poblacion 316 = 203 grafo + 113 bandejas
+  vecinos POR ENCIMA de umbral: 0
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    leer_seniales_fallo_jefe_reunion_solas               sim=0.347 fam=0.000 paso=0.401
+    montar_tablero_kanban_medir_actividades              sim=0.339 fam=0.000 paso=0.395
+    reconocer_emociones_propias_avisar_equipo            sim=0.331 fam=0.000 paso=0.434
+    pelear_proliferacion_reuniones_bloquear_ejecucion    sim=0.307 fam=0.000 paso=0.451
+    bloquear_tiempo_pensar_calendario                    sim=0.305 fam=0.000 paso=0.571
+  segundos: 156.6

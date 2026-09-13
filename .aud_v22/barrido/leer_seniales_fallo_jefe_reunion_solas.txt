@@ -1,0 +1,9 @@
+leer_seniales_fallo_jefe_reunion_solas   (6 pasos)   poblacion 316 = 203 grafo + 113 bandejas
+  vecinos POR ENCIMA de umbral: 0
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    preguntar_seguimiento_hallar_huecos                  sim=0.345 fam=0.000 paso=0.500
+    pasear_organizacion_hallar_problemas_pequenios       sim=0.339 fam=0.000 paso=0.401
+    reconocer_emociones_propias_avisar_equipo            sim=0.331 fam=0.000 paso=0.410
+    aprender_resultados_vencer_dos_presiones             sim=0.328 fam=0.000 paso=0.361
+    pelear_proliferacion_reuniones_bloquear_ejecucion    sim=0.326 fam=0.100 paso=0.391
+  segundos: 114.5

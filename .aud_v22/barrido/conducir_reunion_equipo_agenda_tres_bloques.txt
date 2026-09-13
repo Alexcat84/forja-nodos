@@ -1,0 +1,9 @@
+conducir_reunion_equipo_agenda_tres_bloques   (22 pasos)   poblacion 316 = 203 grafo + 113 bandejas
+  vecinos POR ENCIMA de umbral: 0
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    escribir_apuntes_sala_estudio_equipo                 sim=0.274 fam=0.100 paso=0.494
+    escuchar_callado_equipo_tranquilizar_incomodo        sim=0.267 fam=0.100 paso=0.448
+    facilitar_despido_tres_cosas                         sim=0.262 fam=0.111 paso=0.463
+    retirar_etiquetas_permanentes_equipo                 sim=0.262 fam=0.111 paso=0.424
+    sopesar_consejo_legal_despedir_humildad              sim=0.262 fam=0.000 paso=0.418
+  segundos: 229.3

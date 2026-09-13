@@ -1,0 +1,10 @@
+preguntar_seguimiento_hallar_huecos   (16 pasos)   poblacion 316 = 203 grafo + 113 bandejas
+  vecinos POR ENCIMA de umbral: 1
+    calibrar_normalidad_preguntas_jefe                   sim=0.166 fam=0.000 paso=0.673  <- paso_contra_nodo
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    nutrir_ideas_nuevas_reunion_solas                    sim=0.338 fam=0.000 paso=0.465
+    leer_seniales_fallo_jefe_reunion_solas               sim=0.333 fam=0.000 paso=0.516
+    decidir_quien_comunica_cada_cuanto                   sim=0.327 fam=0.000 paso=0.446
+    reconocer_emociones_propias_avisar_equipo            sim=0.315 fam=0.000 paso=0.514
+    crear_obligacion_disentir_equipo                     sim=0.313 fam=0.000 paso=0.406
+  segundos: 122.1

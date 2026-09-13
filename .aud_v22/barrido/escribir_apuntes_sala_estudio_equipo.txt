@@ -1,0 +1,9 @@
+escribir_apuntes_sala_estudio_equipo   (14 pasos)   poblacion 316 = 203 grafo + 113 bandejas
+  vecinos POR ENCIMA de umbral: 0
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    montar_reunion_general_presentaciones_preguntas      sim=0.326 fam=0.000 paso=0.441
+    desplegar_tres_conversaciones_carrera                sim=0.311 fam=0.000 paso=0.484
+    montar_reuniones_solas_mentalidad_frecuencia         sim=0.304 fam=0.000 paso=0.536
+    evitar_obsesion_ascenso_estatus                      sim=0.301 fam=0.000 paso=0.431
+    organizar_sistema_recoger_quejas_equipo              sim=0.287 fam=0.111 paso=0.439
+  segundos: 179.2

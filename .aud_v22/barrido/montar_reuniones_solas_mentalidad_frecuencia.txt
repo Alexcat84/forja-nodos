@@ -1,0 +1,9 @@
+montar_reuniones_solas_mentalidad_frecuencia   (22 pasos)   poblacion 316 = 203 grafo + 113 bandejas
+  vecinos POR ENCIMA de umbral: 0
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    dar_guia_humilde_tres_tecnicas                       sim=0.297 fam=0.000 paso=0.437
+    escribir_apuntes_sala_estudio_equipo                 sim=0.292 fam=0.000 paso=0.545
+    evitar_obsesion_ascenso_estatus                      sim=0.276 fam=0.000 paso=0.427
+    leer_seniales_fallo_jefe_reunion_solas               sim=0.275 fam=0.222 paso=0.453
+    conducir_reuniones_salto_nivel_diez_reglas           sim=0.272 fam=0.100 paso=0.465
+  segundos: 251.7
