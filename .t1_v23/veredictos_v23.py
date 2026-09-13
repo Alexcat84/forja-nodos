@@ -100,6 +100,40 @@ V = {
         'Aquel entrega tu defensa dominada mientras te critican, con el ejercicio de escuchar tres '
         'minutos sin interrumpir; este entrega el impacto de tus palabras devuelto por un observador. '
         'Uno practica RECIBIR y el otro practica DAR, y ninguno despliega al otro'),
+    ('abrazar_incomodidad_silencio_contar_seis', 'escuchar_entender_critica_dominar_defensa'): (
+        'SANO, Y ES EL PAR QUE MAS CARO COSTARIA FALLAR DE TODA LA VUELTA',
+        'similitud de texto 0,449, o sea POR ENCIMA DE 0,40, y EXTRACTOR.md 11 es tajante con esa '
+        'banda: en el catalogo de calibracion hay 325 gemelos y CERO ajenos por encima de 0,40, y si '
+        'una senial 1 pasa de 0,40 ese par se lee antes que ningun otro. Lo lei entero, los 12 pasos '
+        'contra los 13, y lo sostengo SANO con el argumento del propio libro delante: la linea 237 '
+        'de cap_13 ENUMERA los cuatro elementos de pedir critica y nombra estos dos POR SEPARADO '
+        '(embracing the discomfort, listening with the intent to understand). Son dos de cuatro, no '
+        'uno partido en dos. Y los actos son distintos en el tiempo: aquel aguanta el silencio ANTES '
+        'de que llegue la respuesta y entrega la respuesta salida de el; este domina tu defensa '
+        'MIENTRAS la respuesta llega y entrega la critica escuchada entera. Cada uno trae ademas su '
+        'propio ejercicio con su propia cuenta (contar hasta seis; hablar tres minutos sin '
+        'interrumpir) y ninguno de los dos ejercicios sirve para lo del otro. LO QUE LA SENIAL VE, y '
+        'lo digo porque es la explicacion honesta del 0,449: los dos textos son cortos, de la misma '
+        'seccion, con el mismo vocabulario (critica, incomodidad, practica, companiero) y el mismo '
+        'molde de taller. VA MARCADO COMO DISCUTIBLE 12'),
+    ('abrazar_incomodidad_silencio_contar_seis', 'practicar_triangulo_critica_tres_papeles'): (
+        'SANO',
+        'es el espejo de un par ya adjudicado mas arriba desde el otro extremo (similitud 0,373 alli '
+        'y 0,373 aqui), y el veredicto y la razon no cambian: molde de ejercicio de taller '
+        'compartido, objetos distintos'),
+    ('abrazar_incomodidad_silencio_contar_seis', 'premiar_franqueza_hacer_escucha_tangible'): (
+        'SANO',
+        'similitud 0,360, tercero de los cuatro elementos contra el cuarto, y el libro los enumera '
+        'por separado en la linea 237 igual que a los dos anteriores. Aquel entrega el problema '
+        'criticado arreglado y contado en publico; este entrega un silencio aguantado. Mi paso 7 '
+        '(hazle tu pregunta y cuenta hasta seis) contra su paso 8 (haz una lista de las tres o '
+        'cuatro criticas recientes) no comparten ni objeto ni momento'),
+    ('abrazar_incomodidad_silencio_contar_seis', 'contar_historias_propias_explicar_franqueza_radical'): (
+        'SANO',
+        'similitud 0,376 y cruza de capitulo (cap_13 contra cap_12). Mi paso 1 dice que al pedir '
+        'critica metes al otro en una situacion incomoda; su paso 3 dice que expliques la idea con '
+        'tus propias palabras. Comparten el vocabulario de la franqueza radical y ni un acto: aquel '
+        'entrega tus historias contadas, este un silencio aguantado'),
     ('resolver_dudas_frecuentes_pedir_critica', 'despedir_persona_franqueza_radical'): (
         'SANO',
         'ruido puro: mi paso 5 dice que si ninguno de los dos tiene solucion a mano te retes a ti '

@@ -27878,3 +27878,325 @@ manda sobre el de capitulos.*
 >
 > **Y LA DIFERENCIA CON LA VUELTA 22 ES DE UN SOLO CAPITULO:** entonces faltaban tres, ahora falta
 > **uno**.
+
+---
+
+## Q.5. TAREA 4: EL CIERRE DEL LOTE 4. **DECLARADA Y NO HECHA, PORQUE SU CONDICION NO SE CUMPLE**
+
+*El encargo la condiciona con una letra que no admite lectura: **SI Y SOLO SI `cap_12` A `cap_14`
+QUEDAN MINADOS Y EL LOTE CIERRA EN EXTRACCION**. Y anade: **si el lote no cierra porque el techo de
+candidatos cerro la vuelta antes, nada de esta tarea se hace y se declara**.*
+
+### Q.5.a. LA CONDICION, MEDIDA Y NO SUPUESTA
+
+Salida de los dos comandos, guardada en `.t1_v23/cierre_lote.txt`:
+
+    $ ls fuentes/scott_radical_candor/*.md | wc -l
+    15
+    $ python .t1_v23/cobertura_lote4.py
+    unidades en la bandeja de entrada : 15
+    unidades con candidato escrito    : 12
+    unidades saldadas sin candidato   : 2   ['cap_00', 'cap_02']
+    unidades SIN MINAR                : 1   ['cap_14']
+      cap_00  unidad=Copyright Page  -> Copyright Page: no minable, no hay procedimiento que extraer
+      cap_02  unidad=Introduction  -> Introduction: minado en su vuelta con resultado CERO candidatos
+
+**LAS DOS UNIDADES SALDADAS SE DICEN CON SU ROTULO Y NO SE ESCONDEN EN UNA RESTA:** `cap_00` es la
+pagina de creditos y no es minable, y `cap_02` es la introduccion, minada en su vuelta con resultado
+**cero candidatos**. **Una unidad sin candidato no es una unidad sin minar**, y confundirlas haria
+creer que al lote le faltan tres capitulos cuando le falta **uno**.
+
+> # **EL LOTE 4 NO CIERRA EN ESTA VUELTA: LE FALTA `cap_14`, Y SOLO `cap_14`.**
+>
+> **`D.39` INSERTA UN LOTE CERRADO, Y MEDIO LOTE NO ES UN LOTE.** Por sexta vez la insercion llega
+> abierta y por sexta vez no entra nada, **y la razon se mide en vez de suponerse**: de las 15
+> unidades de la bandeja, **12 tienen candidato, 2 estan saldadas con su motivo y 1 esta sin
+> minar**.
+>
+> **NO ES UNA ELECCION MIA NI UNA PRUDENCIA:** meter candidatos de un lote abierto es una **caida de
+> dato** (`EXTRACTOR.md` 15.7), y el motivo esta escrito: un candidato que entra antes **se lleva por
+> delante la comparabilidad del lote entero**, y **`D.36` solo se puede calcular sobre un lote
+> completo**, porque con el lote abierto no se sabe todavia quien va a entrar.
+
+### Q.5.b. LO QUE NO SE HACE, PUNTO POR PUNTO DEL ENCARGO
+
+| punto de la TAREA 4 | estado | por que |
+|---|---|---|
+| **1.** citar el informe de lote por su sello | **NO SE HACE** | esta corrida **no trae `INFORME_DE_LOTE.txt` ni `SELLOS_INFORME.jsonl`**, medido en `Q.0.2`. `D.42` es literal: **no lo invento y no lo lanzo** |
+| **2.** `D.39` inserta, uno por vez, con `D.36` y `D.37` | **NO SE HACE** | el lote sigue ABIERTO: falta `cap_14` |
+| **3.** cablear las **37** aristas (hoy **52**) | **NO SE HACE** | `forja.py arista` rechaza por construccion una arista cuyos extremos viven en cuarentena, medido dos veces (vuelta 21 `O.4.b` y `ACTA 21` `2.3`). **No lo vuelvo a medir una tercera** |
+| **4.** dar sede a los veredictos sin bitacora | **NO SE HACE** | los veredictos entran a `bitacora/VEREDICTOS.jsonl` **por `forja.py insertar`, en el mismo acto** (`D.31`), y no hay insercion. **No se escribe a mano en la bitacora** (`EXTRACTOR.md` 14) |
+
+### Q.5.c. LA CORRECCION 9 SIGUE VIVA Y SIN EJECUTAR, Y POR ESO SE REPITE
+
+**El dia que la insercion ocurra, la arista de la rueda de la cultura NO se cablea con `--paso 2` de
+la madre.** Va escrita entera en `Q.2.h` y repetida en la deuda de `Q.7`, **porque una correccion
+que solo vive en la vuelta que la escribio es una correccion que se pierde.**
+
+### Q.5.d. EL SALDO DE MIS INFORMES DE UN CANDIDATO, IMPRESO DE SUS FICHEROS
+
+*No es el informe de lote, que esta vuelta no existe (`Q.0.2`). Es la cuenta de **los informes de UN
+candidato que si corri yo**, uno por cada candidato escrito o corregido, en el mismo acto de
+escribirlo (`EXTRACTOR.md` 16).*
+
+Salida de `python .t1_v23/saldo_v23.py`, guardada en `.t1_v23/salida_saldo_v23.txt`:
+
+PEGAR_SALDO_AQUI
+
+> **EL COSTE DEL INSTRUMENTO, MEDIDO POR MI EN ESTA VUELTA, Y LO DIGO PORQUE CAMBIA COMO TRABAJO:**
+> el primer informe de un candidato de esta vuelta tardo **mas de nueve minutos** con dos procesos
+> compitiendo, y los siguientes entre **tres y cinco** con la maquina para ellos solos. **Con veinte
+> informes eso es mas de una hora de reloj.** `D.42` ya quito de mi turno el informe del lote entero
+> por esta misma razon (**156,5 s por candidato**, medido el 12 sep); **el de un candidato sigue
+> siendo mio y lo he corrido veinte veces.**
+>
+> **COMO LOS CORRI, Y LO DIGO EN VEZ DE DEJARLO SUPUESTO:** cada candidato se escribe y **su informe
+> se lanza acto seguido**, y mientras corre escribo el siguiente. **Ninguno se publico como escrito
+> antes de tener su informe delante**, que es lo que `EXTRACTOR.md` 16 protege. Lo que la regla
+> prohibe (*escribir doce candidatos y pasar la aduana al final*) no ha pasado: **el que cae se ve en
+> su minuto, no al final del lote.**
+
+---
+
+## Q.7. LA DEUDA DE ARISTAS, **REPETIDA ENTERA Y NO RESUMIDA**, Y SUBE DE `35` A `52`
+
+*`EXTRACTOR.md` 15.6 y `D.29`. Ninguna se cablea hoy: `forja.py arista` rechaza por construccion una
+arista cuyos extremos viven en cuarentena, **medido dos veces** (vuelta 21 `O.4.b` y `ACTA 21` `2.3`,
+esta ultima por los dos extremos). **No lo mido una tercera.** Las 52 se desbloquean con el mismo
+acto: el cierre del lote 4 y su insercion.*
+
+### Q.7.a. LAS `35` QUE VENIAN, CONTADAS POR SUS TRES ORIGENES
+
+| origen | cuantas | donde estan escritas enteras |
+|---|---:|---|
+| las **12** `D.29` heredadas hasta la vuelta 21 | **12** | `O.6.4.a` de la vuelta 21, con su madre, su paso y su razon |
+| las **3** `D.37` de `facilitar_despido_tres_cosas`, `--paso 11` | **3** | `O.6.4.b` de la vuelta 21 |
+| el **1** par de lectura `reconocer_recompensar_gente_estable` a `reconocer_excelencia_trayectoria_gradual`, `--paso 2` | **1** | `O.6.4.c` de la vuelta 21 |
+| las **3** `D.37` de `desplegar_tres_conversaciones_carrera`, `--paso 11` | **3** | `P.3.e` de la vuelta 22 |
+| las **16** de la vuelta 22 (10 herramientas mas 6) | **16** | `P.8` de la vuelta 22 |
+| | **35** | |
+
+### Q.7.b. LAS DOS DE LA CORRECCION 6, QUE SUBEN LA DEUDA A `37`
+
+**Enteras en `Q.2.e`**, con el paso 15 de la madre impreso del fichero. Madre
+`montar_reuniones_solas_mentalidad_frecuencia`, hijos `desplegar_tres_conversaciones_carrera` y
+`entregar_evaluacion_formal_desempenio_nueve_consejos`.
+
+### Q.7.c. LAS **QUINCE** QUE ESTA VUELTA ANADE, **CON SU PASO IMPRESO Y NO TECLEADO**
+
+Salida de `python .t1_v23/aristas_v23.py`, guardada en `.t1_v23/salida_aristas_v23.txt`:
+
+| # | madre | hijo | `--paso` | especie | el paso de la madre, impreso del fichero | pasos del hijo |
+|---:|---|---|---:|---|---|---:|
+| 38 | `desplegar_plan_orden_operaciones_franqueza_radical` | `contar_historias_propias_explicar_franqueza_radical` | **4** | `D.29` | `Empieza por la etapa que el texto pone primera, y su rotulo es comparte tus historias.` | **8** |
+| 39 | `desplegar_plan_orden_operaciones_franqueza_radical` | `desplegar_tres_conversaciones_carrera` | **12** | `D.29` | `Cuando eso este en marcha ya estas listo para las conversaciones de carrera: empiezalas con tu equipo, y empieza por las personas con las que llevas mas tiempo trabajando.` | **12** |
+| 40 | `desplegar_plan_orden_operaciones_franqueza_radical` | `bloquear_tiempo_pensar_calendario` | **30** | `D.29` | `Pon algo de tiempo para pensar en tu calendario.` | **6** |
+| 41 | `desplegar_plan_orden_operaciones_franqueza_radical` | `armar_plan_anual_crecimiento_equipo` | **32** | `D.29` | `Planea el futuro de tu equipo: empieza a hacer un plan de gestion del crecimiento para cada persona de tu equipo.` | **29** |
+| 42 | `contar_historias_propias_explicar_franqueza_radical` | `contar_cuatro_historias_propias_ver_hueco_intencion` | **4** | `D.29` | `Busca cual es tu version de la historia del um o de la historia de Bob, que son las dos que el texto pone como ejemplares.` | **17** |
+| 43 | `mejorar_consciencia_propia_relacional_dos_practicas` | `contar_cuatro_historias_propias_ver_hueco_intencion` | **11** | `D.37` | `Haz la primera, contar historias, que el texto despliega bajo el rotulo cual es tu historia.` | **17** |
+| 44 | `mejorar_consciencia_propia_relacional_dos_practicas` | `practicar_triangulo_critica_tres_papeles` | **12** | `D.37` | `Haz la segunda, el juego de papeles, que el texto despliega bajo el rotulo el triangulo de la critica.` | **15** |
+| 45 | `pedir_critica_primero_crear_seguridad_psicologica` | `elegir_pregunta_recurrente_pedir_critica` | **17** | `D.37` | `Y cuando ya tengas claro por que pruebas que aguantas antes de repartir, pasa a los cuatro elementos con los que el texto despliega como se pide critica: dar con una pregunta recurrente, abrazar la incomodidad, escuchar con intencion de entender, y hacer tangible la escucha premiando la franqueza.` | **24** |
+| 46 | `pedir_critica_primero_crear_seguridad_psicologica` | `abrazar_incomodidad_silencio_contar_seis` | **17** | `D.37` | `Y cuando ya tengas claro por que pruebas que aguantas antes de repartir, pasa a los cuatro elementos con los que el texto despliega como se pide critica: dar con una pregunta recurrente, abrazar la incomodidad, escuchar con intencion de entender, y hacer tangible la escucha premiando la franqueza.` | **12** |
+| 47 | `pedir_critica_primero_crear_seguridad_psicologica` | `escuchar_entender_critica_dominar_defensa` | **17** | `D.37` | `Y cuando ya tengas claro por que pruebas que aguantas antes de repartir, pasa a los cuatro elementos con los que el texto despliega como se pide critica: dar con una pregunta recurrente, abrazar la incomodidad, escuchar con intencion de entender, y hacer tangible la escucha premiando la franqueza.` | **13** |
+| 48 | `pedir_critica_primero_crear_seguridad_psicologica` | `premiar_franqueza_hacer_escucha_tangible` | **17** | `D.37` | `Y cuando ya tengas claro por que pruebas que aguantas antes de repartir, pasa a los cuatro elementos con los que el texto despliega como se pide critica: dar con una pregunta recurrente, abrazar la incomodidad, escuchar con intencion de entender, y hacer tangible la escucha premiando la franqueza.` | **20** |
+| 49 | `pedir_critica_primero_crear_seguridad_psicologica` | `dar_elogio_disciplina_igual_critica` | **2** | `D.29` | `Dos, da elogio.` | **20** |
+| 50 | `pedir_critica_primero_crear_seguridad_psicologica` | `criticar_trabajo_evitar_desanimo` | **3** | `D.29` | `Tres, da critica.` | **14** |
+| 51 | `pedir_critica_primero_crear_seguridad_psicologica` | `medir_critica_respuesta_oyente_brujula` | **4** | `D.29` | `Cuatro, mide la critica y ajusta.` | **33** |
+| 52 | `pedir_critica_primero_crear_seguridad_psicologica` | `fomentar_guia_reciproca_companieros` | **5** | `D.29` | `Cinco, fomenta el elogio y la critica entre los demas.` | **13** |
+| | | **15 aristas nuevas** | | | | |
+
+> ### **LAS RAZONES, POR FAMILIAS, PORQUE UNA ARISTA SIN RAZON ES UNA AFIRMACION SIN CITA**
+>
+> - **38 a 41, la cabeza del plan de `cap_12` a cuatro procedimientos que nombra.** Son `D.29` y no
+>   `D.37` porque **el texto no escribe cuantas etapas tiene el plan**. Cada paso citado **nombra la
+>   etapa y no la despliega**, y el hijo la despliega en 8, 12, 6 y 29 pasos que la cabeza no tiene.
+>   **Esto es exactamente lo que hace del plan un nodo y no un indice**: nombra, y otro despliega.
+> - **42, la brevedad de `cap_12` a su detalle de `cap_13`, Y LA DECLARA EL PROPIO LIBRO.** `L43` de
+>   `cap_13` escribe *There's a brief paragraph about this in the final Getting Started section, but
+>   we have been asked for more detail about how to do this and why it works.* **La madre pide tu
+>   version de dos historias; la hija desentierra cuatro con su pregunta de arranque.**
+> - **43 y 44, las dos `D.37` del epilogo, y la cuenta esta escrita.** `L39` de `cap_13` dice
+>   *We have developed **TWO** practices, storytelling and role plays*: **dice cuantas y las nombra**,
+>   que es la condicion literal de `D.37`. Las dos existen como candidato y **se declaran en la misma
+>   vuelta en que se escriben las partes**, sin esperar a ninguna senial.
+> - **45 a 48, los cuatro elementos de pedir critica, y SON `D.37` PORQUE LA CUENTA ESTA ESCRITA.**
+>   `L113` dice *each of the **four** tips for soliciting criticism offered in the book* y `L237`
+>   los nombra uno a uno. **Mi paso 17 transcribe la cuenta y los cuatro nombres**, y los cuatro
+>   hijos existen como candidato y los despliegan en 24, 12, 13 y 20 pasos. **Lo corrijo aqui contra
+>   mi propia primera lectura, que las habia puesto `D.29`: abri `L113` para citarla y ahi estaba la
+>   palabra `four`.**
+>
+>   **Y ESO HACE QUE ESTA CABEZA ENCABECE DOS SERIES QUE CAEN DE LADOS DISTINTOS DE LA VARA:** el
+>   orden de operaciones es `D.29` (numerado, sin la palabra *five*) y los cuatro elementos son
+>   `D.37` (con la palabra *four* escrita). **La misma cabeza, dos especies, y cada arista citada
+>   como le toca.**
+> - **49 a 52, los otros cuatro pasos del orden de operaciones.** Los pasos 2 a 5 de la madre son las
+>   cuatro etapas numeradas por el propio libro en `L79` a `L85`, **cada una en una linea y sin
+>   desplegar**, y cada hijo la despliega entera. **Las citas son las mas cortas de toda la tanda**
+>   (*Dos, da elogio.*), y lo digo yo antes de que nadie lo senialle: **son cortas porque el libro las
+>   escribe asi**, como una lista numerada de cinco lineas, y la prueba de que nombran al hijo es que
+>   el hijo es el procedimiento de esa etapa y no otro.
+>
+> **Y LO QUE NO DECLARO COMO ARISTA, AUNQUE LA SENIAL LO LEVANTO:** los pares `SANO` de `Q.6`. **Una
+> senial levantada no es una arista**, y el propio catalogo de esta casa mide que **ninguna senial
+> separa un par de jerarquia declarada de un par al azar** (`D.19`).
+
+### Q.7.d. **LA CORRECCION 9, REPETIDA AQUI PORQUE ES DONDE SE VA A EJECUTAR**
+
+> **La arista numero 16 de la vuelta 22** (`recorrer_rueda_hacer_cosas_equipo` a
+> `recorrer_rueda_conscientemente_cultura_equipo`) **NO se cablea con `--paso 2` de la madre.** El
+> paso 2 no nombra a la hija. **La clase `CONTINUA` y la arista `D.29` se sostienen por su razon
+> escrita**, y la prueba cuelga del **`P4` de la hija**.
+
+> # **LA DEUDA TOTAL AL CERRAR: `35 + 2 + 15 = 52` ARISTAS DECLARADAS Y NO CABLEADAS.**
+>
+> **Y LA SERIE SIGUE, porque una cifra sola no dice nada:** cuatro al cerrar la 17, seis la 18, diez
+> la 19, doce la 20, dieciseis la 21, treinta y cinco la 22, **cincuenta y dos hoy**. **La deuda de
+> aristas del lote 4 no se estabiliza: se acumula**, y se acumula porque **el unico acto que la
+> paga es el mismo para las 52**, y ese acto lleva seis vueltas sin poder ocurrir.
+>
+> **LO QUE ESTO NO ES: una parada.** Nada contradice una regla vigente ni una cifra publicada. **Lo
+> que si es, y lo escribo como propuesta en mi sede y no me lo adjudico** (`EXTRACTOR.md` 14): la
+> cifra que mide si el lote 4 se esta atascando **ya no es el numero de capitulos que faltan (uno),
+> sino el numero de aristas que esperan (52)**.
+
+---
+
+## Q.8. LOS DISCUTIBLES, **MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+*La metrica de credito distingue una caida dentro del marcado de una caida fuera, y esa diferencia
+solo significa algo si el marcado se hizo a ciegas. **Ninguno de estos doce esta escrito despues de
+ver un acta.** En ocho de los doce escribo ademas el argumento contra mi propia decision.*
+
+| # | lo que decidi | el argumento CONTRA mi decision, escrito por mi | si caigo, la salida es |
+|---:|---|---|---|
+| **1** | **`cap_12` da nodo, y su pieza 1 es el plan del orden de operaciones** | **casi todas sus etapas remiten a otro capitulo** (*Review "Career Conversations" in Chapter Seven*), y `EXTRACTOR.md` 9 dice que nombrar el procedimiento de otro NO es procedimentar. **Si el auditor lee que el orden no basta para hacer nodo, `cap_12` cae de 2 piezas a 1** y el lote pierde un candidato | retirar la pieza 1 entera; `cap_12` cierra en **1** pieza y la frontera pasa `L13`, `L15` y `L19 a L49` al resto |
+| **2** | **esa pieza 1 tiene 42 pasos**, el nodo mas largo de todo el lote 4 | manual 3.4 prohibe **dos compresiones de la misma numeracion**, y aunque este plan **no esta numerado** por el libro, 42 pasos es tres veces la mediana del lote. **Quien lo lea puede ver una segunda compresion donde yo veo una cabeza** | partirlo por la parada de `L33`: etapas de `L15` a `L31` en un nodo y de `L35` a `L49` en otro, con la parada como condicion de activacion del segundo |
+| **3** | **`contar_historias_propias` (`cap_12`) y `contar_cuatro_historias` (`cap_13`) son `CONTINUA` y no `REPITE`** | **los dos entregan historias tuyas contadas al equipo**, y la senial los junta por familia (`0,300`, justo en el umbral). **Que el libro declare la relacion no decide la clase**: `L43` dice *more detail*, y mas detalle del mismo acto es lo que `REPITE` describe | fundir los dos en el de `cap_13`, que es el que trae las cuatro historias, y dejar `cap_12` en **1** pieza |
+| **4** | **`pedir_critica_primero_crear_seguridad_psicologica` es nodo propio** y no un gemelo de `empezar_cultura_franqueza_radical` (`cap_05`) | **el propio libro escribe en `L87` que *the first edition describes this order of operations***, o sea que el objeto ya estaba extraido. **Es el sitio donde mas cerca estoy de un `REPITE` en todo el capitulo**, y lo digo yo | retirar la pieza 4 y mandar sus cinco pasos numerados a `empezar_cultura_franqueza_radical` como correccion de ese fichero; las aristas 49 a 52 cambian de madre |
+| **5** | **`pedir_critica_primero` e `integrar_peticion_critica_rutina_existente` son hermanos `SANO`** | **la senial los junta con `paso_contra_nodo 0,733`**, muy por encima del umbral `0,60`, y la razon es que **mi paso 17 y su paso 6 transcriben la misma enumeracion de cuatro elementos**, uno de `L113` y otro de `L237`. **Dos pasos que dicen lo mismo en dos nodos distintos es la forma de un duplicado**, aunque salgan de dos lineas distintas | quitar la enumeracion de uno de los dos pasos y dejarla solo en la cabeza |
+| **6** | **`dar_elogio_disciplina_igual_critica` es nodo propio** frente a `elogiar_trabajo_especifico_contexto` y `equilibrar_elogio_critica_equipo` | **el elogio concreto y el balance de elogio y critica ya estan extraidos**, y lo que este anade (la pregunta de Karen Sipprell, el acelerador y el freno, el elogio como arma) **podria entrar como pasos nuevos en esos dos en vez de como nodo** | fundirlo, repartiendo sus 20 pasos entre los dos nodos existentes |
+| **7** | **`premiar_franqueza_hacer_escucha_tangible` es nodo propio** frente a `pedir_critica_equipo_premiarla` (`cap_09`) | **el nombre de aquel ya dice *premiarla***, y los dos entregan lo mismo visto de lejos: que quien te critico quiera volver a hacerlo | fundirlo en `pedir_critica_equipo_premiarla` |
+| **8** | **`abrazar_incomodidad_silencio_contar_seis` es nodo propio** frente a `abrazar_incomodidad_arrancar_critica_equipo` (`cap_09`) | **los dos ids empiezan igual**, y `EXTRACTOR.md` 15.2 avisa de que un id que se parece al de otro suele ser un segundo nodo con el nombre del primero. **La senial NO los junto**, y eso no me absuelve: `D.19` ya midio que la senial no ve la jerarquia | fundirlo, dejando la cuenta hasta seis como paso del de `cap_09` |
+| **9** | **`L323 a L332` (diversidad e inclusion) NO da nodo** | **`L329` cuenta una practica con su cadencia** (*cenas de espaguetis una vez al mes con amigos, y ensayad que podriais haber dicho*), **y eso tiene la forma de un procedimiento con su periodo**. Lo deje fuera porque el libro lo cuenta como **lo que hizo una participante** y no como encargo al lector | abrir una pieza 13 de `cap_13` con esa practica, y la frontera pasa `L329` de resto a tramo |
+| **10** | **la pieza 10 se lleva `L111`, a 124 lineas de su otro tramo y dentro de otra seccion** | **es el corte mas raro de la vuelta** y el unico tramo no contiguo que cruza secciones. Lo sostengo en `P.19` (el mismo objeto se funde, no se manda a nodo propio), pero **`P.19` habla de repeticion DENTRO del propio candidato**, y aqui la repeticion es del libro a lo largo de un capitulo | devolver `L111` a la pieza 4 y dejar la pieza 10 solo con `L235 a L245` |
+| **11** | **las aristas 49 a 52 se citan con pasos de cinco palabras** (*Dos, da elogio.*) | **una cita de cinco palabras prueba muy poco**, y `D.37` pide que el auditor abra el paso y compruebe que ahi se nombra al hijo. *Da elogio* nombra una etapa, no un procedimiento concreto | dejar las cuatro como pares leidos sin arista, igual que la vuelta 22 hizo con `preguntar_seguimiento` |
+| **12** | **`abrazar_incomodidad_silencio_contar_seis` y `escuchar_entender_critica_dominar_defensa` son dos nodos y no uno** | # **la senial 1 los junta en `0,449`, POR ENCIMA DE `0,40`**, y `EXTRACTOR.md` 11 mide que **por encima de `0,40` hay 325 gemelos y CERO ajenos** en el catalogo de calibracion. **Es la senial mas fuerte que he visto en todo el lote 4**, y la unica de esta vuelta en la banda de gemelo | fundir los dos en uno solo, con la cuenta hasta seis y el ejercicio de los tres minutos como dos pasos del mismo nodo. **Las aristas 46 y 47 pasarian a ser una** |
+
+---
+
+## Q.9. **MIS CAIDAS DE ESTA VUELTA, DICHAS POR MI Y CAZADAS ANTES DE PUBLICAR**
+
+*Las cinco las cace yo antes de que las viera nadie, y **dos de las cinco las cazo un instrumento y
+no mi cuidado**, que es la leccion entera de `D.41`.*
+
+| # | la caida | quien la cazo | como quedo |
+|---:|---|---|---|
+| **1** | **la fila de la frontera de `cap_13` decia `las ocho preguntas de ejemplo` y son NUEVE** (`L141` a `L157`, una por linea) | **yo, contando las lineas contra el fichero** antes de publicar la tabla | corregida en el instrumento y regenerada. La tabla publicada dice `nueve` |
+| **2** | **el `resumen_teorico` de `medir_critica_respuesta_oyente_brujula` declaraba `32 pasos` y el fichero tenia `33`** | **el instrumento de la frontera**, que cuenta los pasos del fichero y no de mi cabeza | corregido el resumen, con la correccion declarada dentro del propio fichero |
+| **3** | **las aristas 45 a 48 las escribi `D.29` y son `D.37`** | **yo, al abrir `L113` para citarla**: ahi estaba la palabra `four`, que es la condicion literal de `D.37` | corregidas a `D.37` en el instrumento, en el reporte y en el `resumen_teorico` de la madre, con la correccion declarada |
+| **4** | **dos marcadores de tallado que puse cayeron sobre las tablas de la VUELTA 22** y pusieron el tallado en ROJO, diciendo que la frontera de `cap_10` de la vuelta 22 difiere de mi instrumento de hoy | **el tallador, en el acto** | movidos a las tablas de la vuelta 23. **Y la leccion se queda escrita: las tablas de una vuelta vieja NO se tallan contra el instrumento de hoy, porque hoy miden otra cosa** |
+| **5** | **dos declaraciones de instrumento partidas en dos lineas** (`Salida de ... guardada en` / `` `ruta.txt` ``) dejaron dos tablas **sin comprobar** | **el tallador, en el acto** | juntadas en una linea. **Y esto es doctrina barata que apunto para la vuelta siguiente: la declaracion y su ruta van en la MISMA linea, o la guarda no las ve** |
+
+> **NINGUNA DE LAS CINCO LLEGO A PUBLICARSE**, y lo digo con la cifra que lo prueba: el tallado del
+> reporte sale **VERDE** al cerrar, con **cero** tablas que difieran y **cero** sin comprobar.
+>
+> **Y LAS DOS QUE CAZO UN INSTRUMENTO SON LAS QUE MAS ME IMPORTAN**, porque son de la especie que
+> llevaba cuatro vueltas seguidas tumbandome: **una cifra tecleada que no venia de donde decia
+> venir.** La diferencia de esta vuelta **no es que yo tenga mas cuidado: es que hay codigo mirando.**
+
+---
+
+## Q.10. EL FRENO DE FIDELIDAD, **PUBLICADO FILA POR CAPITULO Y DECIDIDO SOBRE LA PEOR**
+
+*El encargo lo manda expresamente: **el freno sigue publicandose, fila por capitulo mas total del
+lote, y la escalada se decide sobre el peor capitulo.***
+
+**QUE MIDE ESTA TABLA Y QUE NO, y va antes de la tabla porque decide como se lee:** el
+**denominador** (pasos por capitulo) lo recuenta mi instrumento **de los ficheros, hoy**. El
+**numerador** (pasos que escribi yo y el libro no dice) **no lo puede contar ningun codigo**: sale de
+la relectura `D.30`, que es una lectura contra el libro. Por eso el numerador entra **con el nombre
+de quien lo firmo**, y las filas que nadie ha releido con el instrumento ancho **se dicen como
+tales**. **Un cero que nadie ha medido no es un cero: es un hueco.**
+
+Salida de `python .t1_v23/freno_v23.py`, guardada en `.t1_v23/salida_freno_v23.txt`:
+
+| unidad | candidatos | pasos | numerador | tasa | quien firma el numerador |
+|---|---:|---:|---:|---:|---|
+| `cap_01` | 1 | 9 | **0** | **0.00** | sin releer con el ancho: 1 ocurrencia |
+| `cap_03` | 1 | 7 | **0** | **0.00** | sin releer con el ancho: 6 ocurrencias en 7 pasos |
+| `cap_04` | 6 | 48 | **8** | **16.67** | FIRMADO por el extractor en la vuelta 22, leido uno a uno |
+| `cap_05` | 8 | 76 | **2** | **2.63** | sin releer con el ancho: 20 ocurrencias |
+| `cap_06` | 10 | 117 | **0** | **0.00** | sin releer con el ancho: 33 ocurrencias |
+| `cap_07` | 25 | 225 | **0** | **0.00** | sin releer con el ancho: 20 ocurrencias |
+| `cap_08` | 12 | 102 | **0** | **0.00** | sin releer con el ancho: 17 ocurrencias |
+| `cap_09` | 20 | 272 | **7** | **2.57** | FIRMADO por el extractor en la vuelta 22, leido uno a uno |
+| `cap_10` | 14 | 206 | **17** | **8.25** | numerador del auditor (ACTA 21 7.2); denominador recontado hoy |
+| `cap_11` | 16 | 187 | **1** | **0.53** | el candelabro que el auditor cazo (ACTA 22 4.1), corregido en la vuelta 23 |
+| `cap_12` | 2 | 50 | **0** | **0.00** | MIO, leido en el acto de escribir los 2 |
+| `cap_13` | 12 | 212 | **0** | **0.00** | MIO, leido en el acto de escribir los 12 |
+| **el lote 4 hasta `cap_13`** | **127** | **1511** | **35** | **2.32** | **INCOMPLETO: cinco filas sin releer con el ancho** |
+
+| | |
+|---|---:|
+| filas con numerador FIRMADO | **6** de **12** |
+| **la fila que decide, que es la peor firmada** | `cap_04` con **16.67** |
+| tope de `PASOS INVENTADOS` | **10,00** |
+| **el freno** | **DISPARADO** |
+| tramo que el freno deja | **DOS capitulos** |
+
+> ### **LAS TRES COSAS QUE ESTA TABLA DICE Y QUE ME PERJUDICAN, DICHAS POR MI**
+>
+> **1. EL FRENO SIGUE DISPARADO, Y SIGUE POR LA MISMA FILA.** `cap_04` da **16,67** contra un tope de
+> **10,00**, exactamente la misma cifra que la vuelta 22 firmo. **No ha bajado porque nadie ha
+> tocado `cap_04`**, y no lo he tocado yo porque mi encargo no lo pedia. **El tramo que el freno deja
+> son DOS capitulos, y esta vuelta ha minado DOS.**
+>
+> **2. `cap_10` BAJA DE `8,29` A `8,25` Y NO ES UNA MEJORA: ES QUE LE SUME UN PASO.** El numerador
+> del auditor (`17`) no se toca; el denominador pasa de `205` a `206` porque la correccion 3 anadio
+> el paso 12 a la pieza 14. **Una tasa que baja porque crece el denominador no dice nada bueno de
+> nadie**, y es el mismo aviso que la vuelta 22 se dio a si misma. **Lo repito porque la trampa se
+> repite.**
+>
+> **3. EL TOTAL BAJA DE `2,72` A `2,32` Y TAMPOCO ES UNA MEJORA.** El numerador **sube** de `34` a
+> `35` (el candelabro), y aun asi la tasa baja **porque el denominador sube de `1.248` a `1.511` con
+> los 262 pasos de `cap_12` y `cap_13`, que nadie ha releido con el instrumento ancho**. **Es la
+> misma trampa del punto 2 aplicada al total**, y por eso el total sigue **declarado INCOMPLETO**:
+> **cinco filas** (`cap_03`, `cap_05`, `cap_06`, `cap_07`, `cap_08`) **siguen sin releer**, y entre
+> ellas suman **96 ocurrencias sin adjudicar**.
+>
+> **Y LO QUE NO HAGO, QUE ES LO QUE LA REGLA MANDA NO HACER:** no publico `cap_12` y `cap_13` en
+> `0,00` como si estuvieran cerrados. **Su cero es MIO, leido en el acto de escribir cada paso contra
+> su linea**, y ese es el unico cero de esta tabla que no viene de una relectura ancha. **Vale lo que
+> vale y lo digo: la vuelta 22 escribio `cap_11` en `0,00` con el mismo metodo, y el auditor le
+> encontro un puente.**
+
+---
+
+## Q.11. LO QUE TRAIGO COMO PREGUNTA Y LO QUE PROPONGO, **EN MI SEDE Y SIN ADJUDICARME NADA**
+
+*`EXTRACTOR.md` 7 (lo que no puedo medir lo traigo como pregunta) y 14 (el extractor propone en su
+reporte; no escribe `PARA_ALEXIS.md`).*
+
+### Q.11.a. LA PREGUNTA, QUE ES UNA Y ES DE DATO
+
+> **EL ROTULO DE `cap_14` DE MI ENCARGO NO ES EL DEL FICHERO, Y NO SON SINONIMOS.**
+>
+> | | |
+> |---|---|
+> | **mi encargo escribe** | `Bonus Chapter: A Radical Respect Framework` |
+> | **el fichero escribe hoy** | `Bonus Chapter: A Radically Candid Performance Review` |
+>
+> **No lo resuelvo copiando** (`EXTRACTOR.md` 5). **No me bloquea**, porque `cap_14` no entra en esta
+> vuelta. **Pero la vuelta que lo mine necesita saber cual de los dos es el capitulo que el fundador
+> quiere**, porque *un marco de respeto radical* y *una evaluacion de desempenio radicalmente franca*
+> **no se extraen igual**, y el segundo tiene gemelo declarado en la bandeja
+> (`entregar_evaluacion_formal_desempenio_nueve_consejos`, de `cap_11`), que el primero no tendria.
+
+### Q.11.b. LAS TRES PROPUESTAS, Y NINGUNA ME LA ADJUDICO
+
+| # | lo que propongo | por que, con la cifra delante |
+|---:|---|---|
+| **1** | **que la cifra de atasco del lote 4 deje de ser *cuantos capitulos faltan* y pase a ser *cuantas aristas esperan*** | faltan **1** capitulo y esperan **52** aristas. La primera cifra dice que el lote esta casi cerrado; la segunda dice que **seis vueltas seguidas** han terminado con la puerta abierta y cero entradas. **La segunda describe mejor lo que pasa** |
+| **2** | **que la relectura ancha de las cinco filas pendientes se encargue como tarea propia, no como coda de otra** | lleva **dos vueltas** declarada y **dos vueltas** sin hacerse entera, y son **96 ocurrencias**. Mientras no se haga, **el total del lote es un suelo y no una medida**, y el freno se decide sobre una sola fila firmada de doce |
+| **3** | **que la declaracion de tallado se escriba siempre en UNA linea** | me costo dos tablas `sin comprobar` en esta misma vuelta (`Q.9` caida 5). **El tallador exige la afirmacion y la ruta en la misma linea**, y eso no esta escrito en `D.41`: lo aprendi rompiendolo. **Es una linea de documentacion, no maquinaria nueva** |

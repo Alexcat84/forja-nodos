@@ -15,7 +15,29 @@ tales**. **Un cero que nadie ha medido no es un cero: es un hueco.**
 
 Salida de `python .t1_v23/freno_v23.py`, guardada en `.t1_v23/salida_freno_v23.txt`:
 
-PEGAR_FRENO_AQUI
+| unidad | candidatos | pasos | numerador | tasa | quien firma el numerador |
+|---|---:|---:|---:|---:|---|
+| `cap_01` | 1 | 9 | **0** | **0.00** | sin releer con el ancho: 1 ocurrencia |
+| `cap_03` | 1 | 7 | **0** | **0.00** | sin releer con el ancho: 6 ocurrencias en 7 pasos |
+| `cap_04` | 6 | 48 | **8** | **16.67** | FIRMADO por el extractor en la vuelta 22, leido uno a uno |
+| `cap_05` | 8 | 76 | **2** | **2.63** | sin releer con el ancho: 20 ocurrencias |
+| `cap_06` | 10 | 117 | **0** | **0.00** | sin releer con el ancho: 33 ocurrencias |
+| `cap_07` | 25 | 225 | **0** | **0.00** | sin releer con el ancho: 20 ocurrencias |
+| `cap_08` | 12 | 102 | **0** | **0.00** | sin releer con el ancho: 17 ocurrencias |
+| `cap_09` | 20 | 272 | **7** | **2.57** | FIRMADO por el extractor en la vuelta 22, leido uno a uno |
+| `cap_10` | 14 | 206 | **17** | **8.25** | numerador del auditor (ACTA 21 7.2); denominador recontado hoy |
+| `cap_11` | 16 | 187 | **1** | **0.53** | el candelabro que el auditor cazo (ACTA 22 4.1), corregido en la vuelta 23 |
+| `cap_12` | 2 | 50 | **0** | **0.00** | MIO, leido en el acto de escribir los 2 |
+| `cap_13` | 12 | 212 | **0** | **0.00** | MIO, leido en el acto de escribir los 12 |
+| **el lote 4 hasta `cap_13`** | **127** | **1511** | **35** | **2.32** | **INCOMPLETO: cinco filas sin releer con el ancho** |
+
+| | |
+|---|---:|
+| filas con numerador FIRMADO | **6** de **12** |
+| **la fila que decide, que es la peor firmada** | `cap_04` con **16.67** |
+| tope de `PASOS INVENTADOS` | **10,00** |
+| **el freno** | **DISPARADO** |
+| tramo que el freno deja | **DOS capitulos** |
 
 > ### **LAS TRES COSAS QUE ESTA TABLA DICE Y QUE ME PERJUDICAN, DICHAS POR MI**
 >

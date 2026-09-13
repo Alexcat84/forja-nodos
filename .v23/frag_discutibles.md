@@ -4,8 +4,8 @@
 ## Q.8. LOS DISCUTIBLES, **MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
 
 *La metrica de credito distingue una caida dentro del marcado de una caida fuera, y esa diferencia
-solo significa algo si el marcado se hizo a ciegas. **Ninguno de estos once esta escrito despues de
-ver un acta.** En siete de los once escribo ademas el argumento contra mi propia decision.*
+solo significa algo si el marcado se hizo a ciegas. **Ninguno de estos doce esta escrito despues de
+ver un acta.** En ocho de los doce escribo ademas el argumento contra mi propia decision.*
 
 | # | lo que decidi | el argumento CONTRA mi decision, escrito por mi | si caigo, la salida es |
 |---:|---|---|---|
@@ -20,6 +20,7 @@ ver un acta.** En siete de los once escribo ademas el argumento contra mi propia
 | **9** | **`L323 a L332` (diversidad e inclusion) NO da nodo** | **`L329` cuenta una practica con su cadencia** (*cenas de espaguetis una vez al mes con amigos, y ensayad que podriais haber dicho*), **y eso tiene la forma de un procedimiento con su periodo**. Lo deje fuera porque el libro lo cuenta como **lo que hizo una participante** y no como encargo al lector | abrir una pieza 13 de `cap_13` con esa practica, y la frontera pasa `L329` de resto a tramo |
 | **10** | **la pieza 10 se lleva `L111`, a 124 lineas de su otro tramo y dentro de otra seccion** | **es el corte mas raro de la vuelta** y el unico tramo no contiguo que cruza secciones. Lo sostengo en `P.19` (el mismo objeto se funde, no se manda a nodo propio), pero **`P.19` habla de repeticion DENTRO del propio candidato**, y aqui la repeticion es del libro a lo largo de un capitulo | devolver `L111` a la pieza 4 y dejar la pieza 10 solo con `L235 a L245` |
 | **11** | **las aristas 49 a 52 se citan con pasos de cinco palabras** (*Dos, da elogio.*) | **una cita de cinco palabras prueba muy poco**, y `D.37` pide que el auditor abra el paso y compruebe que ahi se nombra al hijo. *Da elogio* nombra una etapa, no un procedimiento concreto | dejar las cuatro como pares leidos sin arista, igual que la vuelta 22 hizo con `preguntar_seguimiento` |
+| **12** | **`abrazar_incomodidad_silencio_contar_seis` y `escuchar_entender_critica_dominar_defensa` son dos nodos y no uno** | # **la senial 1 los junta en `0,449`, POR ENCIMA DE `0,40`**, y `EXTRACTOR.md` 11 mide que **por encima de `0,40` hay 325 gemelos y CERO ajenos** en el catalogo de calibracion. **Es la senial mas fuerte que he visto en todo el lote 4**, y la unica de esta vuelta en la banda de gemelo | fundir los dos en uno solo, con la cuenta hasta seis y el ejercicio de los tres minutos como dos pasos del mismo nodo. **Las aristas 46 y 47 pasarian a ser una** |
 
 ---
 

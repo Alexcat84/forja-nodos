@@ -20,19 +20,19 @@ LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
 LA LISTA COMPLETA, candidato por candidato
 ============================================================================
 
-[BLOQUEARIA] abrazar_incomodidad_silencio_contar_seis   (abrazar_incomodidad_silencio_contar_seis.json)
-    vecino escuchar_entender_critica_dominar_defensa  [levantada por: similitud_texto]
-      similitud_texto 0.449 | familia_id 0.000 | paso_contra_nodo 0.498
-      paso 1 del candidato contra paso 4 de escuchar_entender_critica_dominar_defensa
-    vecino practicar_triangulo_critica_tres_papeles  [levantada por: similitud_texto]
-      similitud_texto 0.373 | familia_id 0.000 | paso_contra_nodo 0.489
-      paso 5 del candidato contra paso 4 de practicar_triangulo_critica_tres_papeles
-    vecino premiar_franqueza_hacer_escucha_tangible  [levantada por: similitud_texto]
-      similitud_texto 0.360 | familia_id 0.000 | paso_contra_nodo 0.485
-      paso 7 del candidato contra paso 8 de premiar_franqueza_hacer_escucha_tangible
+[BLOQUEARIA] escuchar_entender_critica_dominar_defensa   (escuchar_entender_critica_dominar_defensa.json)
     vecino contar_historias_propias_explicar_franqueza_radical  [levantada por: similitud_texto]
-      similitud_texto 0.376 | familia_id 0.100 | paso_contra_nodo 0.464
-      paso 1 del candidato contra paso 3 de contar_historias_propias_explicar_franqueza_radical
+      similitud_texto 0.393 | familia_id 0.000 | paso_contra_nodo 0.549
+      paso 4 del candidato contra paso 3 de contar_historias_propias_explicar_franqueza_radical
+    vecino abrazar_incomodidad_silencio_contar_seis  [levantada por: similitud_texto]
+      similitud_texto 0.446 | familia_id 0.000 | paso_contra_nodo 0.507
+      paso 4 del candidato contra paso 1 de abrazar_incomodidad_silencio_contar_seis
+    vecino premiar_franqueza_hacer_escucha_tangible  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.484
+      paso 5 del candidato contra paso 8 de premiar_franqueza_hacer_escucha_tangible
+    vecino practicar_triangulo_critica_tres_papeles  [levantada por: similitud_texto]
+      similitud_texto 0.350 | familia_id 0.111 | paso_contra_nodo 0.469
+      paso 6 del candidato contra paso 1 de practicar_triangulo_critica_tres_papeles
 
 NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
 entre hace falta python forja.py insertar, uno por vez, con su
