@@ -134,6 +134,36 @@ V = {
         'critica metes al otro en una situacion incomoda; su paso 3 dice que expliques la idea con '
         'tus propias palabras. Comparten el vocabulario de la franqueza radical y ni un acto: aquel '
         'entrega tus historias contadas, este un silencio aguantado'),
+    ('escuchar_entender_critica_dominar_defensa', 'abrazar_incomodidad_silencio_contar_seis'): (
+        'SANO',
+        'es el espejo del par de 0,449 leido desde el otro extremo (aqui 0,446, y la diferencia son '
+        'los dos decimales de una medida no simetrica). Mismo veredicto, misma razon, y va al mismo '
+        'discutible 12'),
+    ('escuchar_entender_critica_dominar_defensa', 'contar_historias_propias_explicar_franqueza_radical'): (
+        'SANO',
+        'similitud 0,393, justo por debajo de la banda de gemelo, y cruza de capitulo. Mi paso 4 dice '
+        'que practiques con otros y su paso 3 dice que expliques la idea con tus propias palabras. '
+        'Aquel entrega tus historias contadas al equipo; este tu defensa dominada mientras te '
+        'critican. Ni un objeto compartido'),
+    ('escuchar_entender_critica_dominar_defensa', 'premiar_franqueza_hacer_escucha_tangible'): (
+        'SANO',
+        'similitud 0,370, tercer elemento contra cuarto, y el libro los enumera por separado en la '
+        'linea 237. Aquel entrega el problema criticado arreglado y contado en publico; este la '
+        'critica escuchada entera sin defensa. La palabra escuchar esta en los dos titulos y ese es '
+        'todo el parecido: uno escucha para no defenderse, el otro ENSENIA que escucho'),
+    ('escuchar_entender_critica_dominar_defensa', 'practicar_triangulo_critica_tres_papeles'): (
+        'SANO',
+        'es el espejo de un par ya adjudicado mas arriba desde el otro extremo (0,352 alli y 0,350 '
+        'aqui). Mismo veredicto y misma razon: molde de ejercicio de taller compartido, objetos '
+        'distintos'),
+    ('premiar_franqueza_hacer_escucha_tangible', 'abrazar_incomodidad_silencio_contar_seis'): (
+        'SANO',
+        'espejo de un par ya adjudicado desde el otro extremo (0,360 alli, 0,353 aqui). Cuarto '
+        'elemento contra segundo, enumerados por separado en la linea 237. Mismo veredicto'),
+    ('premiar_franqueza_hacer_escucha_tangible', 'escuchar_entender_critica_dominar_defensa'): (
+        'SANO',
+        'espejo de un par ya adjudicado desde el otro extremo (0,370 alli, 0,382 aqui). Cuarto '
+        'elemento contra tercero, enumerados por separado en la linea 237. Mismo veredicto'),
     ('resolver_dudas_frecuentes_pedir_critica', 'despedir_persona_franqueza_radical'): (
         'SANO',
         'ruido puro: mi paso 5 dice que si ninguno de los dos tiene solucion a mano te retes a ti '
