@@ -1,0 +1,78 @@
+ADUANA DE INSERCION, candidato 'cuidar_persona_completa_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi seÃ±al contra 215 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 9. LA INSERCION QUEDA BLOQUEADA.
+  Las seÃ±ales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino usar_lenguaje_no_discriminatorio_entrevista  [Usar lenguaje no discriminatorio en las entrevistas y en los formularios]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.205 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.615 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de usar_lenguaje_no_discriminatorio_entrevista
+
+  vecino delimitar_franqueza_radical_cinco_noes  [Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir]
+    levantada por: similitud_texto
+    similitud_texto    0.419 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.466 (umbral 0.60)
+    paso 2 del candidato contra paso 6 de delimitar_franqueza_radical_cinco_noes
+
+  vecino gestionar_personas_equipo  [Gestionar bien a las personas de tu equipo]
+    levantada por: familia_id
+    similitud_texto    0.221 (umbral 0.35)
+    familia_id         0.400 (umbral 0.30)
+    paso_contra_nodo   0.455 (umbral 0.60)
+    paso 6 del candidato contra paso 5 de gestionar_personas_equipo
+
+  vecino ajustar_franqueza_oido_oyente  [Ajustar la franqueza radical al oido del que escucha y no a la boca del que habla, buscando la forma local de cada dimension]
+    levantada por: similitud_texto
+    similitud_texto    0.361 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.438 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de ajustar_franqueza_oido_oyente
+
+  vecino manejar_enfado_persona_desafiada  [Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario]
+    levantada por: similitud_texto
+    similitud_texto    0.370 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.435 (umbral 0.60)
+    paso 10 del candidato contra paso 1 de manejar_enfado_persona_desafiada
+
+  vecino imaginar_caso_simple_bragueta_abierta  [Imaginar el caso simple de la bragueta abierta antes de decir algo dificil, y mirar en que cuadrante cae tu silencio]
+    levantada por: similitud_texto
+    similitud_texto    0.359 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.430 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de imaginar_caso_simple_bragueta_abierta
+
+  vecino respetar_cuidar_persona_cargo  [Respetar a tu persona a cargo y cuidar de ella]
+    levantada por: familia_id
+    similitud_texto    0.236 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.425 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de respetar_cuidar_persona_cargo
+
+  vecino desplegar_marco_franqueza_radical  [Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.424 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de desplegar_marco_franqueza_radical
+
+  vecino equilibrar_elogio_critica_equipo  [Dar mas elogio que critica sin usar ningun ratio fijo, y repartir tu energia al reves de como te sale]
+    levantada por: similitud_texto
+    similitud_texto    0.378 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.410 (umbral 0.60)
+    paso 4 del candidato contra paso 9 de equilibrar_elogio_critica_equipo
+
+BLOQUEADO: faltan veredictos para ajustar_franqueza_oido_oyente
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "ajustar_franqueza_oido_oyente|CONTINUA|madre=ajustar_franqueza_oido_oyente|que aÃ±ade el hijo a la madre"
+    --veredicto "ajustar_franqueza_oido_oyente|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "ajustar_franqueza_oido_oyente|SANO|por que no son el mismo trabajo"
+    --veredicto "ajustar_franqueza_oido_oyente|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

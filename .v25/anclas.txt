@@ -1,0 +1,30 @@
+| candidato | unidad declarada | ancla que llama UNICA | unidades donde aparece |
+|---|---|---|---|
+| `cambiar_potencial_trayectoria_crecimiento` | `cap_06` | `performance-potential matrix` | **cap_06** |
+| `criticar_trabajo_evitar_desanimo` | `cap_05` | `perilous border` | **cap_05** |
+| `dar_critica_inmediata_ayuda_tangible` | `cap_05` | `sandwich` | **cap_05** |
+| `delimitar_franqueza_radical_cinco_noes` | `cap_04` | `front-stab` | **cap_04, cap_05**  # NO ES UNICA |
+| `desplegar_marco_franqueza_radical` | `cap_01` | `make photocopies` | **cap_01** |
+| `equilibrar_elogio_critica_equipo` | `cap_05` | `Horowitz` | **cap_05** |
+| `imaginar_caso_simple_bragueta_abierta` | `cap_05` | `fly is down` | **cap_05** |
+| `manejar_enfado_persona_desafiada` | `cap_04` | `insulting` | **cap_04** |
+| `repartir_semana_cuarenta_horas_jefe` | `cap_03` | `ten hours a week` | **cap_03, cap_12**  # NO ES UNICA |
+| `acompaniar_mejores_equipo_socio` | `cap_06` | `absentee manager` | **cap_06** |
+| `ajustar_franqueza_oido_oyente` | `cap_04` | `politely persistent` | **cap_04** |
+| `cuidar_persona_completa_equipo` | `cap_04` | `sordid details` | **cap_04** |
+| `decidir_momento_despedir_persona` | `cap_06` | `time to fire somebody` | **cap_06** |
+| `descubrir_motivacion_sentido_persona` | `cap_06` | `three bricklayers` | **cap_06** |
+| `despedir_persona_franqueza_radical` | `cap_06` | `person you are firing` | **cap_10**  # NO ES UNICA |
+| `elogiar_trabajo_especifico_contexto` | `cap_05` | `who did what` | **cap_05** |
+| `empezar_cultura_franqueza_radical` | `cap_05` | `start by getting` | **NINGUNA**  # NO ES UNICA |
+| `pedir_critica_equipo_premiarla` | `cap_05` | `red square` | **cap_05** |
+| `reconocer_recompensar_gente_estable` | `cap_06` | `level of incompetence` | **NINGUNA**  # NO ES UNICA |
+| `retar_superestrellas_equipo_constantemente` | `cap_06` | `intellectual partnership` | **cap_06** |
+| `retirar_etiquetas_permanentes_equipo` | `cap_06` | `permanent marker` | **NINGUNA**  # NO ES UNICA |
+| `revisar_ciclo_responsabilidades_relaciones` | `cap_04` | `dream of individually` | **cap_04** |
+| `revisar_cinco_causas_mal_desempenio` | `cap_06` | `look at yourself in the mirror` | **cap_06** |
+| `subir_vara_calidad_equipo` | `cap_06` | `B-player` | **cap_06** |
+
+candidatos con ancla declarada     : 24
+anclas que SI son unicas y cuadran : 18
+anclas que NO lo son               : 6

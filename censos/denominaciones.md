@@ -482,3 +482,9 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-13 | cambiar_potencial_trayectoria_crecimiento | nombre_largo | Dejar de preguntar si alguien tiene potencial alto o bajo y empezar a preguntar en que trayectoria de crecimiento quiere estar ahora mismo, con las dos columnas del texto y sus cuatro parejas de rasgos | castellano | - |
 | 2026-09-13 | cambiar_potencial_trayectoria_crecimiento | otro_idioma | growth trajectory | ingles | - |
 | 2026-09-13 | cambiar_potencial_trayectoria_crecimiento | otro_idioma | performance potential matrix | ingles | - |
+| 2026-09-13 | ajustar_franqueza_oido_oyente | nombre_largo | La franqueza radical es universalmente humana pero relativa entre personas y entre culturas: se mide en el oido del oyente | castellano | - |
+| 2026-09-13 | ajustar_franqueza_oido_oyente | otro_idioma | measured at the listener's ear, not at the speaker's mouth | ingles | - |
+| 2026-09-13 | ajustar_franqueza_oido_oyente | otro_idioma | politely persistent | ingles | - |
+| 2026-09-13 | revisar_ciclo_responsabilidades_relaciones | nombre_largo | Las tres responsabilidades que las relaciones deciden si puedes cumplir: cultura de guia, entender que motiva a cada uno, y llevar resultados en colaboracion | castellano | - |
+| 2026-09-13 | revisar_ciclo_responsabilidades_relaciones | otro_idioma | guidance, team-building, and results | ingles | - |
+| 2026-09-13 | revisar_ciclo_responsabilidades_relaciones | otro_idioma | virtuous cycle between your responsibilities and your relationships | ingles | - |

@@ -1,0 +1,7 @@
+$ grep -in "incompetence" fuentes/scott_radical_candor/cap_06.md | cut -c1-110
+$ grep -iln "person you are firing" fuentes/scott_radical_candor/*.md
+    fuentes/scott_radical_candor/cap_10.md
+$ grep -in "firing" fuentes/scott_radical_candor/cap_06.md | head -3 | cut -c1-110
+    15:A leader at Apple had a good way to think about different types of ambition that people on her team had so 
+    269:The knowledge that you are about to inflict some measure of suffering on someone you may care a lot about 
+    279:Have you sought out a second opinion, spoken to someone whom you trust and with whom you can talk the prob

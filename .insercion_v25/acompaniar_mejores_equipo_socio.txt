@@ -1,0 +1,40 @@
+ADUANA DE INSERCION, candidato 'acompaniar_mejores_equipo_socio'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi seÃ±al contra 214 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las seÃ±ales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino manejar_enfado_persona_desafiada  [Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario]
+    levantada por: similitud_texto
+    similitud_texto    0.350 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.457 (umbral 0.60)
+    paso 9 del candidato contra paso 3 de manejar_enfado_persona_desafiada
+
+  vecino delimitar_franqueza_radical_cinco_noes  [Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir]
+    levantada por: similitud_texto
+    similitud_texto    0.372 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.448 (umbral 0.60)
+    paso 11 del candidato contra paso 2 de delimitar_franqueza_radical_cinco_noes
+
+  vecino cambiar_potencial_trayectoria_crecimiento  [Cambiar la palabra potencial por trayectoria de crecimiento y hacer con el equipo el ejercicio de las dos columnas]
+    levantada por: similitud_texto
+    similitud_texto    0.374 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.433 (umbral 0.60)
+    paso 1 del candidato contra paso 9 de cambiar_potencial_trayectoria_crecimiento
+
+BLOQUEADO: faltan veredictos para manejar_enfado_persona_desafiada, cambiar_potencial_trayectoria_crecimiento
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "manejar_enfado_persona_desafiada|CONTINUA|madre=manejar_enfado_persona_desafiada|que aÃ±ade el hijo a la madre"
+    --veredicto "manejar_enfado_persona_desafiada|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "manejar_enfado_persona_desafiada|SANO|por que no son el mismo trabajo"
+    --veredicto "manejar_enfado_persona_desafiada|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "cambiar_potencial_trayectoria_crecimiento|CONTINUA|madre=cambiar_potencial_trayectoria_crecimiento|que aÃ±ade el hijo a la madre"
+    --veredicto "cambiar_potencial_trayectoria_crecimiento|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "cambiar_potencial_trayectoria_crecimiento|SANO|por que no son el mismo trabajo"
+    --veredicto "cambiar_potencial_trayectoria_crecimiento|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

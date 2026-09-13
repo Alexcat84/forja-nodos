@@ -1,0 +1,53 @@
+==============================================================================
+criticar_trabajo_evitar_desanimo   [GRAFO]
+==============================================================================
+TITULO    : Criticar el trabajo sin desanimar a la persona, con la lista que el texto pone y el error de atribucion evitado
+ACTIVACION: 
+ENTREGABLE: 
+  P1  Critica el trabajo y no a la persona. El texto lo saca de la entrevista que transcribe: Jobs se corrige a si mismo a mitad de frase y dice cuando su trabajo no es bastante bueno, en vez de cuando ellos no son bastante buenos.
+  P2  Cuenta con el error de atribucion fundamental que el texto nombra: es mas facil encontrar el fallo en la persona que en el contexto de lo que esta haciendo. Es mas facil decir eres descuidado que decir has estado trabajando noches y fines de semana y eso empieza a pasarle factura a tu capacidad de detectar errores en tu razonamiento. Y es muchisimo menos util.
+  P3  No te quedes en decir que el trabajo no vale, ni siquiera dicho con suavidad. El texto dice que hay que hacerlo muy claramente, articular por que, y devolver a la persona a la via.
+  P4  Hazlo de forma que no ponga en duda tu confianza en su capacidad y que no deje demasiado margen de interpretacion, que es lo que el propio texto reconoce como la parte dificil de hacer.
+  P5  Antes de mandar una critica, averigua por que la otra persona esta haciendo lo que hace. El texto lo saca de un correo suyo que analiza como ejemplar de lo que no hay que hacer: no se habia molestado en averiguar por que el otro tomaba esa postura, y dio por hecha una motivacion que resulto ser falsa.
+  P6  Se humilde, sobre todo si llevas poco tiempo y no entiendes todavia como funcionan las cosas ahi dentro, que es el primer problema que el texto senala en aquel correo.
+  P7  Se util, que segun el texto quiere decir estar invertido en ayudar a la persona a mejorar.
+  P8  Da la guia en persona e inmediatamente.
+  P9  Elogia en publico y critica en privado. El texto lo repite dos veces y lo cuenta como uno de los fallos de aquel correo, que fue mandado a treinta personas cuando lo respetuoso habria sido decirlo a solas.
+  P10 Concentrate en tu relacion con la persona, que es lo primero que el texto pone en su lista.
+  P11 Pide critica antes de darla, y ofrece mas elogio que critica.
+  P12 No personalices, y deja claro que el problema no viene de un defecto de personalidad que no tenga arreglo.
+  P13 Cuenta historias de cuando te criticaron a ti por algo parecido.
+  P14 Y si lo que quieres es que un recien llegado aprenda a encajar la critica, el texto pone aparte el caso de un responsable veterano que despues de la primera revision de diseno de cada nuevo le ensenaba dos carpetas: una con diez hojas, que era su archivo de los si, las ideas de diseno aprobadas, y otra con mas de mil, que era el de los noes, y que dejaba caer para que se oyera el golpe, diciendo que no dejara que la critica le desanimara.
+
+==============================================================================
+dar_critica_inmediata_ayuda_tangible   [GRAFO]
+==============================================================================
+TITULO    : Dar la critica en el acto sin dejar que el buen resultado la tape, y ofrecer ayuda tangible con ella
+ACTIVACION: 
+ENTREGABLE: 
+  P1  No dejes que el buen resultado global te impida senialar lo que hay que arreglar. El texto lo pone asi sobre el caso que analiza: aunque la charla habia ido bien en conjunto, Sheryl no dejo que el resultado positivo se interpusiera.
+  P2  Hazlo inmediatamente, que segun el texto es lo que evita que el problema danie la reputacion de la persona donde trabaja.
+  P3  Senala lo positivo que la persona consiguio, y hazlo a fondo y sinceramente. El texto subraya que en ese caso no hubo ningun intento de meter la critica en un sandwich entre elogios falsos, y que Sheryl menciono tres o cuatro cosas concretas que la autora habia dicho, para ilustrar su punto.
+  P4  Que tu primer acercamiento sea suave pero directo.
+  P5  Cuando se vea claro que no te estan oyendo, ponte mas directo. En el caso, la autora hizo dos veces el gesto de espantar una mosca con la mano y Sheryl le dijo que cuando hacia eso sentia que la estaba ignorando, y que iba a tener que ser muy muy directa para llegar a ella.
+  P6  Aun entonces, no personalices: no lo conviertas en un rasgo esencial de la persona. El texto lo subraya sobre el caso, que dijo que sonaba estupida y no que era estupida.
+  P7  Pregunta si la persona era consciente de eso. En el caso la autora contesto que si, que sabia que lo decia demasiado, y Sheryl le pregunto ademas si era porque estaba nerviosa.
+  P8  Ofrece ayuda tangible en vez de dejar a la persona sola con el problema. En el caso fue recomendar un entrenador de oratoria y decir que la empresa lo pagaba, y repetir el ofrecimiento cuando la primera vez no fue recogido.
+  P9  Cierra con que tiene arreglo. La formula del caso es que la buena noticia es que un entrenador ayuda de verdad con eso, y que esto se puede arreglar sin duda.
+  P10 Cuenta con que aun haciendolo asi escuece un poco, que es lo que el texto dice del que la recibio.
+
+==============================================================================
+reparar_mal_comportamiento_evitar_disculpa_falsa   [GRAFO]
+==============================================================================
+TITULO    : Reparar tu propio mal comportamiento sin caer en la disculpa falsa: entender primero, resolver despues y admitir al final
+ACTIVACION: 
+ENTREGABLE: 
+  P1  Cuenta con que la respuesta que sale sola cuando te portas mal y te lo dicen es volverte menos genuino y mas politico, que es pasar de la agresion odiosa a un sitio peor, la insinceridad manipuladora.
+  P2  Separa el tono de la posicion antes de abrir la boca: el texto dice que no habria habido nada malo en disculparse por el tono que habia usado, y pone justo enfrente lo que si estuvo mal.
+  P3  No inviertas de golpe tu posicion intelectual y sin explicacion. En el caso de la autora esa fue exactamente la jugada equivocada, y su insinceridad fue obvia.
+  P4  Si lo unico que se te ocurre te mueve en la direccion equivocada del eje desafiar directamente, callate: el texto dice que habria sido mejor no haber dicho nada.
+  P5  Mejor todavia, sube por el eje de cuidar personalmente.
+  P6  Tomate la molestia de entender el pensamiento del otro. En el caso de la autora, el pensamiento de Larry.
+  P7  Busca despues una solucion que atienda las preocupaciones del otro y las tuyas.
+  P8  Admite solo en ese contexto que te portaste mal. El texto dice que asi probablemente se habria recibido mejor.
+

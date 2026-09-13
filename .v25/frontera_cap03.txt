@@ -1,0 +1,22 @@
+$ grep -n "ten hours a week" fuentes/scott_radical_candor/cap_03.md   (la unidad que el fichero declara)
+    ocurrencias de las tres piezas de los pasos 5, 6 y 7 en cap_03: 0
+$ grep -n "five of which are 1:1" fuentes/scott_radical_candor/*.md
+    fuentes/scott_radical_candor/cap_12.md
+$ sed -n "51p" fuentes/scott_radical_candor/cap_12.md
+    That’s a lot of things to do, but it’s not as bad as it sounds. If you take every suggestion rec
+    ommended in this book, the total time required is about ten hours a week, five of which are 1:1 meet
+    ings that you’re probably already holding anyway. Of course, some processes like growth-management
+     conversations, skip-level meetings, and calibrations don’t get spread out each week but will come
+     in bursts, so some weeks you may have eight hours of work associated with your core responsibilitie
+    s as a boss, others twelve others five. But that still leaves fifteen hours a week to think and exec
+    ute, and another fifteen hours to deal with the various unpredictable things that you’ll be asked 
+    to do.
+$ grep -n "^unidad\|^titulo_textual" fuentes/scott_radical_candor/cap_12.md
+    4:unidad: Getting Started
+    5:titulo_textual: Getting Started
+$ grep -c "ten hours a week" fuentes/scott_radical_candor/*.md   (el ancla que su resumen llama UNICA)
+    fuentes/scott_radical_candor/cap_03.md:1
+    fuentes/scott_radical_candor/cap_12.md:1
+
+$ grep -n "ten hours a week" fuentes/scott_radical_candor/cap_12.md | cut -c1-120
+    51:That’s a lot of things to do, but it’s not as bad as it sounds. If you take every suggestion recommended in this book, the total time required is about t

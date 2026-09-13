@@ -1,0 +1,13 @@
+| candidato bloqueado | pares en la cola de la vuelta 24 | con veredicto escrito | sin el |
+|---|---:|---:|---:|
+| `ajustar_franqueza_oido_oyente` | 3 | 1 | **2** |
+| `cuidar_persona_completa_equipo` | 7 | 4 | **3** |
+| `revisar_ciclo_responsabilidades_relaciones` | 2 | 1 | **1** |
+| `elogiar_trabajo_especifico_contexto` | 3 | 1 | **2** |
+| `empezar_cultura_franqueza_radical` | 4 | 1 | **3** |
+| `pedir_critica_equipo_premiarla` | 3 | 2 | **1** |
+| `acompaniar_mejores_equipo_socio` | 2 | 1 | **1** |
+| **los 7** | **24** | **11** | # **13** |
+
+veredictos guardados en el fichero, en total : 19
+de esos, que son de los 7 bloqueados         : 11

@@ -1,0 +1,39 @@
+==============================================================================
+cambiar_potencial_trayectoria_crecimiento   [GRAFO]
+==============================================================================
+TITULO    : Cambiar la palabra potencial por trayectoria de crecimiento y hacer con el equipo el ejercicio de las dos columnas
+ACTIVACION: 
+ENTREGABLE: 
+  P1  Cuenta con el problema que el texto encuentra en la palabra potencial: el cuadro de desempenio y potencial que muchas empresas usan pide juzgar a cada persona y meterla en una de nueve casillas, y la peor de las nueve se llama bajo desempenio y bajo potencial. El texto objeta que no existe un ser humano de bajo potencial.
+  P2  Cuenta con la segunda objecion, que es la que lo vuelve operativo: la categoria potencial no dejaba sitio para evaluar bien a quien es excelente en lo que hace y quiere seguir haciendolo.
+  P3  Cambia la palabra potencial por la palabra crecimiento. El texto atribuye el cambio a Scott Forstall, que construyo el equipo de iOS, y dice que cambiar una sola palabra marco toda la diferencia.
+  P4  Preguntate en que trayectoria de crecimiento quiere estar ahora mismo cada persona de tu equipo.
+  P5  Preguntate si has dado a todo el mundo oportunidades alineadas con lo que de verdad quieren.
+  P6  Preguntate en que trayectoria de crecimiento creen tus reportes que estan, si estas de acuerdo, y si no lo estas, por que no.
+  P7  Cuenta con las dos respuestas distintas que el texto avisa que vas a encontrar: a veces la persona quiere de verdad crecer y es capaz de aportar mas de lo que le han dejado, y a veces solo quiere mas dinero o mas reconocimiento sin cambiar como trabaja ni aportar mas de lo que ya aporta.
+  P8  Ten la conversacion radicalmente franca cuando tu lectura y la suya no coincidan, que es lo que el texto pone como tu trabajo en cuanto las distingas.
+  P9  Para distinguir los dos tipos, suelta tus juicios y tus propias ambiciones, olvida por un rato lo que tu necesitas de la gente, y concentrate en conocer a cada persona como ser humano.
+  P10 Haz el ejercicio que el texto imprime con sus dos columnas. La columna de trayectoria empinada lleva agente de cambio, ambicioso en el trabajo, quiere oportunidades nuevas, y la etiqueta de superestrella. La de trayectoria gradual lleva fuerza de estabilidad, ambicioso fuera del trabajo o simplemente contento en la vida, feliz en su papel actual, y la etiqueta de estrella de rock.
+  P11 Con las dos columnas delante, piensa en ejemplos positivos de gente con la que has trabajado que caeria en cada una.
+  P12 Piensa despues en equipos en los que has estado que necesitaban algo de las dos, y cual seria la proporcion correcta.
+  P13 Y piensa por ultimo en momentos de tu propia vida en que tu estuviste en cada columna, y por que. El texto aniade que lo ideal habria sido que la eleccion hubiera sido tuya y no de tu jefe.
+  P14 No pongas etiquetas permanentes: el texto dice que estas preguntas sirven justo para recordarte que las trayectorias cambian.
+
+==============================================================================
+acompaniar_mejores_equipo_socio   [bandeja]
+==============================================================================
+TITULO    : Acompaniar a los que hacen el mejor trabajo como socio, ni de jefe ausente ni de microgestor
+ACTIVACION: 
+ENTREGABLE: 
+  P1  Antes de distinguir entre estrellas de rock y superestrellas, atiende a lo que las dos necesitan de ti por igual: que te concentres en ellas y te asegures de que tienen todo lo que hace falta para seguir haciendo un gran trabajo.
+  P2  No ignores a quien hace el mejor trabajo con la excusa de que no te necesita o de que no quieres microgestionar. El texto lo llama uno de los errores mas comunes de los jefes y dice que ignorar a alguien es una forma terrible de construir una relacion.
+  P3  Cuenta con lo que el texto opone a la receta de contratar bien y dejarlos en paz, en boca de Dick Costolo: es como decir que para tener un buen matrimonio te cases con la persona adecuada y despues evites pasar tiempo con ella.
+  P4  Cuenta con lo que te cuesta ignorarlos, que el texto enumera: no entiendes como quieren y necesitan crecer en su puesto en ese momento de sus vidas, asignas las tareas equivocadas a las personas equivocadas, promocionas a quien no toca, y no les das la guia que necesitan.
+  P5  Ten delante la cuenta que el texto hace del reparto de tu tiempo: cada minuto que pasas con alguien que hace un gran trabajo rinde en los resultados del equipo mucho mas que el tiempo que pasas con alguien que esta fallando.
+  P6  En vez de jefe ausente o microgestor, se socio: dedica el tiempo a ayudar a quien hace el mejor trabajo a superar obstaculos y a hacer que su buen trabajo sea todavia mejor.
+  P7  Cuenta con lo que eso te va a costar, que el texto dice sin adornarlo: lleva tiempo, porque exige que sepas bastante del detalle del trabajo de la persona como para entender sus matices.
+  P8  Arremangate y ayuda a hacer el trabajo, y no solo a aconsejar sobre el.
+  P9  Haz muchas preguntas y desafia a la persona.
+  P10 No dediques mas tiempo a quien va mal que a quien va bien. El texto da dos razones: no es justo para quien lo esta haciendo bien, y pasar de grande a extraordinario inspira mas a todo el mundo que pasar de malo a mediocre.
+  P11 Cuenta con el efecto secundario que el texto aniade: ver que aspecto tiene un desempenio verdaderamente excepcional ayuda a quienes estan fallando a ver con mas claridad que se espera de ellos.
+

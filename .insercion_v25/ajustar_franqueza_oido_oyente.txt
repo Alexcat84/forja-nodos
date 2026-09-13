@@ -1,0 +1,40 @@
+ADUANA DE INSERCION, candidato 'ajustar_franqueza_oido_oyente'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi seÃ±al contra 214 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las seÃ±ales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino desplegar_marco_franqueza_radical  [Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones]
+    levantada por: similitud_texto
+    similitud_texto    0.384 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.465 (umbral 0.60)
+    paso 2 del candidato contra paso 7 de desplegar_marco_franqueza_radical
+
+  vecino delimitar_franqueza_radical_cinco_noes  [Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir]
+    levantada por: similitud_texto
+    similitud_texto    0.360 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.460 (umbral 0.60)
+    paso 6 del candidato contra paso 3 de delimitar_franqueza_radical_cinco_noes
+
+  vecino manejar_enfado_persona_desafiada  [Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario]
+    levantada por: similitud_texto
+    similitud_texto    0.387 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.434 (umbral 0.60)
+    paso 1 del candidato contra paso 5 de manejar_enfado_persona_desafiada
+
+  vecino equilibrar_elogio_critica_equipo  [Dar mas elogio que critica sin usar ningun ratio fijo, y repartir tu energia al reves de como te sale]
+    levantada por: similitud_texto
+    similitud_texto    0.359 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.393 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de equilibrar_elogio_critica_equipo
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 215
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 4

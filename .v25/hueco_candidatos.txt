@@ -1,0 +1,22 @@
+cap_01  desplegar_marco_franqueza_radical                           9 pasos  [INSERTADO]
+        UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_01.md, unidad Preface, Preface to the Revised Edition: Radical Candor on Radical Candor. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA
+cap_03  repartir_semana_cuarenta_horas_jefe                        10 pasos  [INSERTADO]
+        UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_03.md, unidad How to Use This Book, How to Use This Book. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la q
+cap_05  criticar_trabajo_evitar_desanimo                           14 pasos  [INSERTADO]
+        UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_05.md, unidad Cap. 2, Get, Give, and Encourage Guidance. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la qu
+cap_05  dar_critica_inmediata_ayuda_tangible                       10 pasos  [INSERTADO]
+        UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_05.md, unidad Cap. 2, Get, Give, and Encourage Guidance. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la qu
+cap_05  elogiar_trabajo_especifico_contexto                         7 pasos  [bandeja]
+        UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_05.md, unidad Cap. 2, Get, Give, and Encourage Guidance. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la qu
+cap_05  empezar_cultura_franqueza_radical                           6 pasos  [bandeja]
+        UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_05.md, unidad Cap. 2, Get, Give, and Encourage Guidance. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la qu
+cap_05  equilibrar_elogio_critica_equipo                            9 pasos  [INSERTADO]
+        UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_05.md, unidad Cap. 2, Get, Give, and Encourage Guidance. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la qu
+cap_05  imaginar_caso_simple_bragueta_abierta                      11 pasos  [INSERTADO]
+        UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_05.md, unidad Cap. 2, Get, Give, and Encourage Guidance. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la qu
+cap_05  pedir_critica_equipo_premiarla                             11 pasos  [bandeja]
+        UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_05.md, unidad Cap. 2, Get, Give, and Encourage Guidance. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la qu
+cap_05  reparar_mal_comportamiento_evitar_disculpa_falsa            8 pasos  [INSERTADO]
+        Sale del rotulo The false apology de fuentes/scott_radical_candor/cap_05.md, lineas 181 a 187. Lo que lo hace procedimiento no es la leccion sino el ORDEN: entender, resolver, y solo entonce
+
+candidatos: 10    pasos: 95
