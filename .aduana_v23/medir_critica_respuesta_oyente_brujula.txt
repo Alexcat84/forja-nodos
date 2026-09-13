@@ -20,10 +20,10 @@ LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
 LA LISTA COMPLETA, candidato por candidato
 ============================================================================
 
-[BLOQUEARIA] pedir_critica_primero_crear_seguridad_psicologica   (pedir_critica_primero_crear_seguridad_psicologica.json)
-    vecino integrar_peticion_critica_rutina_existente  [levantada por: paso_contra_nodo]
-      similitud_texto 0.278 | familia_id 0.100 | paso_contra_nodo 0.733
-      paso 17 del candidato contra paso 6 de integrar_peticion_critica_rutina_existente
+[BLOQUEARIA] medir_critica_respuesta_oyente_brujula   (medir_critica_respuesta_oyente_brujula.json)
+    vecino desplegar_marco_franqueza_radical  [levantada por: paso_contra_nodo]
+      similitud_texto 0.139 | familia_id 0.000 | paso_contra_nodo 0.723
+      paso 4 del candidato contra paso 6 de desplegar_marco_franqueza_radical
 
 NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
 entre hace falta python forja.py insertar, uno por vez, con su

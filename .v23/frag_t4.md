@@ -61,14 +61,62 @@ escribirlo (`EXTRACTOR.md` 16).*
 
 Salida de `python .t1_v23/saldo_v23.py`, guardada en `.t1_v23/salida_saldo_v23.txt`:
 
-PEGAR_SALDO_AQUI
+| grupo | informes | `ENTRARIA` | `BLOQUEARIA` | `CAERIA` | vecinos levantados |
+|---|---:|---:|---:|---:|---:|
+| **la cola de siete (TAREA 1)** | 6 | **4** | **2** | **0** | 2 |
+| **cap_12** | 2 | **0** | **2** | **0** | 5 |
+| **cap_13** | 12 | **2** | **10** | **0** | 21 |
+| **los tres grupos** | **20** | **6** | **14** | **0** | **28** |
+
+| informe | poblacion | del grafo | de bandejas |
+|---|---:|---:|---:|
+| el primero de la vuelta, `desplegar_tres_conversaciones_carrera` | **316** | 203 | 113 |
+| el ultimo de la vuelta, `medir_critica_respuesta_oyente_brujula` | **330** | 203 | 127 |
+
+| candidato | vecino | senial |
+|---|---|---|
+| `desplegar_tres_conversaciones_carrera` | `conversar_historia_vida_descubrir_motivadores` | `paso_contra_nodo` |
+| `preguntar_seguimiento_hallar_huecos` | `calibrar_normalidad_preguntas_jefe` | `paso_contra_nodo` |
+| `desplegar_plan_orden_operaciones_franqueza_radical` | `armar_plan_anual_crecimiento_equipo` | `paso_contra_nodo` |
+| `desplegar_plan_orden_operaciones_franqueza_radical` | `bloquear_tiempo_pensar_calendario` | `paso_contra_nodo` |
+| `desplegar_plan_orden_operaciones_franqueza_radical` | `desplegar_tres_conversaciones_carrera` | `paso_contra_nodo` |
+| `desplegar_plan_orden_operaciones_franqueza_radical` | `desplegar_marco_franqueza_radical` | `familia_id` |
+| `contar_historias_propias_explicar_franqueza_radical` | `contar_cuatro_historias_propias_ver_hueco_intencion` | `familia_id` |
+| `mejorar_consciencia_propia_relacional_dos_practicas` | `desplegar_plan_orden_operaciones_franqueza_radical` | `paso_contra_nodo` |
+| `contar_cuatro_historias_propias_ver_hueco_intencion` | `evitar_presion_social_actos_equipo` | `paso_contra_nodo` |
+| `contar_cuatro_historias_propias_ver_hueco_intencion` | `contar_historias_propias_explicar_franqueza_radical` | `familia_id` |
+| `practicar_triangulo_critica_tres_papeles` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` |
+| `practicar_triangulo_critica_tres_papeles` | `escuchar_entender_critica_dominar_defensa` | `similitud_texto` |
+| `pedir_critica_primero_crear_seguridad_psicologica` | `integrar_peticion_critica_rutina_existente` | `paso_contra_nodo` |
+| `resolver_dudas_frecuentes_pedir_critica` | `despedir_persona_franqueza_radical` | `paso_contra_nodo` |
+| `resolver_dudas_frecuentes_pedir_critica` | `resolver_dudas_frecuentes_reuniones_salto_nivel` | `familia_id` |
+| `abrazar_incomodidad_silencio_contar_seis` | `escuchar_entender_critica_dominar_defensa` | `similitud_texto` |
+| `abrazar_incomodidad_silencio_contar_seis` | `practicar_triangulo_critica_tres_papeles` | `similitud_texto` |
+| `abrazar_incomodidad_silencio_contar_seis` | `premiar_franqueza_hacer_escucha_tangible` | `similitud_texto` |
+| `abrazar_incomodidad_silencio_contar_seis` | `contar_historias_propias_explicar_franqueza_radical` | `similitud_texto` |
+| `escuchar_entender_critica_dominar_defensa` | `contar_historias_propias_explicar_franqueza_radical` | `similitud_texto` |
+| `escuchar_entender_critica_dominar_defensa` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` |
+| `escuchar_entender_critica_dominar_defensa` | `premiar_franqueza_hacer_escucha_tangible` | `similitud_texto` |
+| `escuchar_entender_critica_dominar_defensa` | `practicar_triangulo_critica_tres_papeles` | `similitud_texto` |
+| `premiar_franqueza_hacer_escucha_tangible` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` |
+| `premiar_franqueza_hacer_escucha_tangible` | `escuchar_entender_critica_dominar_defensa` | `similitud_texto` |
+| `integrar_peticion_critica_rutina_existente` | `pedir_critica_primero_crear_seguridad_psicologica` | `paso_contra_nodo` |
+| `integrar_peticion_critica_rutina_existente` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` |
+| `medir_critica_respuesta_oyente_brujula` | `desplegar_marco_franqueza_radical` | `paso_contra_nodo` |
+| | **28 pares levantados** | |
 
 > **EL COSTE DEL INSTRUMENTO, MEDIDO POR MI EN ESTA VUELTA, Y LO DIGO PORQUE CAMBIA COMO TRABAJO:**
 > el primer informe de un candidato de esta vuelta tardo **mas de nueve minutos** con dos procesos
 > compitiendo, y los siguientes entre **tres y cinco** con la maquina para ellos solos. **Con veinte
 > informes eso es mas de una hora de reloj.** `D.42` ya quito de mi turno el informe del lote entero
 > por esta misma razon (**156,5 s por candidato**, medido el 12 sep); **el de un candidato sigue
-> siendo mio y lo he corrido veinte veces.**
+> siendo mio y lo he corrido 21 veces: 20 candidatos mas una repeticion.**
+>
+> **LA REPETICION LA CUENTO Y DIGO POR QUE EXISTE:** toque el `resumen_teorico` de
+> `pedir_critica_primero_crear_seguridad_psicologica` **despues** de tener su informe, para corregir
+> la especie de sus cuatro aristas de `D.29` a `D.37` (`Q.9` caida 3). **Una correccion vuelve a
+> escribir el candidato, asi que vuelve a pasar la puerta** (`EXTRACTOR.md` 16), y por eso hay 21
+> corridas y 20 ficheros.
 >
 > **COMO LOS CORRI, Y LO DIGO EN VEZ DE DEJARLO SUPUESTO:** cada candidato se escribe y **su informe
 > se lanza acto seguido**, y mientras corre escribo el siguiente. **Ninguno se publico como escrito

@@ -1,5 +1,5 @@
 ==============================================================================
-1. LAS QUINCE ARISTAS NUEVAS, CON SU PASO DE MADRE IMPRESO Y SU HIJO CONTADO
+1. LAS DIECISEIS ARISTAS NUEVAS, CON SU PASO DE MADRE IMPRESO Y SU HIJO CONTADO
 ==============================================================================
 | # | madre | hijo | `--paso` | especie | el paso de la madre, impreso del fichero | pasos del hijo |
 |---:|---|---|---:|---|---|---:|
@@ -18,10 +18,11 @@
 | 50 | `pedir_critica_primero_crear_seguridad_psicologica` | `criticar_trabajo_evitar_desanimo` | **3** | `D.29` | `Tres, da critica.` | **14** |
 | 51 | `pedir_critica_primero_crear_seguridad_psicologica` | `medir_critica_respuesta_oyente_brujula` | **4** | `D.29` | `Cuatro, mide la critica y ajusta.` | **33** |
 | 52 | `pedir_critica_primero_crear_seguridad_psicologica` | `fomentar_guia_reciproca_companieros` | **5** | `D.29` | `Cinco, fomenta el elogio y la critica entre los demas.` | **13** |
-| | | **15 aristas nuevas** | | | | |
+| 53 | `desplegar_marco_franqueza_radical` | `medir_critica_respuesta_oyente_brujula` | **6** | `D.29` | `Usa el marco como una brujula, para llevar cada conversacion concreta a un sitio mejor.` | **33** |
+| | | **16 aristas nuevas** | | | | |
 
 ==============================================================================
 2. LA COMPROBACION QUE D.37 PIDE: LOS DOS EXTREMOS EXISTEN COMO FICHERO
 ==============================================================================
-extremos comprobados : 30
+extremos comprobados : 32
 extremos que faltan  : 0

@@ -27368,10 +27368,10 @@ sigue siendo mio** y se corre en el mismo acto de escribir cada candidato (`EXTR
 
 | # | tarea | estado |
 |---:|---|---|
-| 1 | **PRIMERA Y SIN SOLAPE**: la cola de siete correcciones del auditor (las numeradas 3 a 9 de su `PARA_ALEXIS` 5) | ABIERTA |
-| 2 | **El tallador** (`D.41`): toda tabla que diga venir de un instrumento se anexa desde su fichero | ABIERTA |
-| 3 | **`cap_12`, `cap_13` y `cap_14`**, con el techo de candidatos por vuelta mandando sobre el de capitulos | ABIERTA |
-| 4 | **El cierre del lote 4**, y la insercion de `D.39` con sus aristas y sus veredictos si y solo si el lote cierra | ABIERTA |
+| 1 | **PRIMERA Y SIN SOLAPE**: la cola de siete correcciones del auditor (las numeradas 3 a 9 de su `PARA_ALEXIS` 5) | ~~ABIERTA~~ **CERRADA** (`Q.2`). **Las siete hechas**: seis tocan fichero y **las seis vuelven a pasar la aduana con 0 `CAERIA`**; la novena es encargo para el dia de la insercion y queda escrita dos veces |
+| 2 | **El tallador** (`D.41`): toda tabla que diga venir de un instrumento se anexa desde su fichero | ~~ABIERTA~~ **CERRADA** (`Q.3`). **23 tablas comprobadas celda a celda, 0 que difieren, 0 sin comprobar**, y las 3 que resumen van declaradas `parcial` |
+| 3 | **`cap_12`, `cap_13` y `cap_14`**, con el techo de candidatos por vuelta mandando sobre el de capitulos | ~~ABIERTA~~ **CERRADA** (`Q.4`). **`cap_12` y `cap_13` ENTEROS, 2 mas 12 = 14 candidatos bajo el techo de 15. `cap_14` NO ENTRA y se declara con su cuenta** |
+| 4 | **El cierre del lote 4**, y la insercion de `D.39` con sus aristas y sus veredictos si y solo si el lote cierra | ~~ABIERTA~~ **CERRADA DECLARANDO QUE NO SE HACE** (`Q.5`). **Su condicion no se cumple: al lote 4 le falta `cap_14` y solo `cap_14`**, medido y no supuesto |
 
 *Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
 
@@ -27924,7 +27924,7 @@ creer que al lote le faltan tres capitulos cuando le falta **uno**.
 |---|---|---|
 | **1.** citar el informe de lote por su sello | **NO SE HACE** | esta corrida **no trae `INFORME_DE_LOTE.txt` ni `SELLOS_INFORME.jsonl`**, medido en `Q.0.2`. `D.42` es literal: **no lo invento y no lo lanzo** |
 | **2.** `D.39` inserta, uno por vez, con `D.36` y `D.37` | **NO SE HACE** | el lote sigue ABIERTO: falta `cap_14` |
-| **3.** cablear las **37** aristas (hoy **52**) | **NO SE HACE** | `forja.py arista` rechaza por construccion una arista cuyos extremos viven en cuarentena, medido dos veces (vuelta 21 `O.4.b` y `ACTA 21` `2.3`). **No lo vuelvo a medir una tercera** |
+| **3.** cablear las **37** aristas (hoy **53**) | **NO SE HACE** | `forja.py arista` rechaza por construccion una arista cuyos extremos viven en cuarentena, medido dos veces (vuelta 21 `O.4.b` y `ACTA 21` `2.3`). **No lo vuelvo a medir una tercera** |
 | **4.** dar sede a los veredictos sin bitacora | **NO SE HACE** | los veredictos entran a `bitacora/VEREDICTOS.jsonl` **por `forja.py insertar`, en el mismo acto** (`D.31`), y no hay insercion. **No se escribe a mano en la bitacora** (`EXTRACTOR.md` 14) |
 
 ### Q.5.c. LA CORRECCION 9 SIGUE VIVA Y SIN EJECUTAR, Y POR ESO SE REPITE
@@ -27941,14 +27941,62 @@ escribirlo (`EXTRACTOR.md` 16).*
 
 Salida de `python .t1_v23/saldo_v23.py`, guardada en `.t1_v23/salida_saldo_v23.txt`:
 
-PEGAR_SALDO_AQUI
+| grupo | informes | `ENTRARIA` | `BLOQUEARIA` | `CAERIA` | vecinos levantados |
+|---|---:|---:|---:|---:|---:|
+| **la cola de siete (TAREA 1)** | 6 | **4** | **2** | **0** | 2 |
+| **cap_12** | 2 | **0** | **2** | **0** | 5 |
+| **cap_13** | 12 | **2** | **10** | **0** | 21 |
+| **los tres grupos** | **20** | **6** | **14** | **0** | **28** |
+
+| informe | poblacion | del grafo | de bandejas |
+|---|---:|---:|---:|
+| el primero de la vuelta, `desplegar_tres_conversaciones_carrera` | **316** | 203 | 113 |
+| el ultimo de la vuelta, `medir_critica_respuesta_oyente_brujula` | **330** | 203 | 127 |
+
+| candidato | vecino | senial |
+|---|---|---|
+| `desplegar_tres_conversaciones_carrera` | `conversar_historia_vida_descubrir_motivadores` | `paso_contra_nodo` |
+| `preguntar_seguimiento_hallar_huecos` | `calibrar_normalidad_preguntas_jefe` | `paso_contra_nodo` |
+| `desplegar_plan_orden_operaciones_franqueza_radical` | `armar_plan_anual_crecimiento_equipo` | `paso_contra_nodo` |
+| `desplegar_plan_orden_operaciones_franqueza_radical` | `bloquear_tiempo_pensar_calendario` | `paso_contra_nodo` |
+| `desplegar_plan_orden_operaciones_franqueza_radical` | `desplegar_tres_conversaciones_carrera` | `paso_contra_nodo` |
+| `desplegar_plan_orden_operaciones_franqueza_radical` | `desplegar_marco_franqueza_radical` | `familia_id` |
+| `contar_historias_propias_explicar_franqueza_radical` | `contar_cuatro_historias_propias_ver_hueco_intencion` | `familia_id` |
+| `mejorar_consciencia_propia_relacional_dos_practicas` | `desplegar_plan_orden_operaciones_franqueza_radical` | `paso_contra_nodo` |
+| `contar_cuatro_historias_propias_ver_hueco_intencion` | `evitar_presion_social_actos_equipo` | `paso_contra_nodo` |
+| `contar_cuatro_historias_propias_ver_hueco_intencion` | `contar_historias_propias_explicar_franqueza_radical` | `familia_id` |
+| `practicar_triangulo_critica_tres_papeles` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` |
+| `practicar_triangulo_critica_tres_papeles` | `escuchar_entender_critica_dominar_defensa` | `similitud_texto` |
+| `pedir_critica_primero_crear_seguridad_psicologica` | `integrar_peticion_critica_rutina_existente` | `paso_contra_nodo` |
+| `resolver_dudas_frecuentes_pedir_critica` | `despedir_persona_franqueza_radical` | `paso_contra_nodo` |
+| `resolver_dudas_frecuentes_pedir_critica` | `resolver_dudas_frecuentes_reuniones_salto_nivel` | `familia_id` |
+| `abrazar_incomodidad_silencio_contar_seis` | `escuchar_entender_critica_dominar_defensa` | `similitud_texto` |
+| `abrazar_incomodidad_silencio_contar_seis` | `practicar_triangulo_critica_tres_papeles` | `similitud_texto` |
+| `abrazar_incomodidad_silencio_contar_seis` | `premiar_franqueza_hacer_escucha_tangible` | `similitud_texto` |
+| `abrazar_incomodidad_silencio_contar_seis` | `contar_historias_propias_explicar_franqueza_radical` | `similitud_texto` |
+| `escuchar_entender_critica_dominar_defensa` | `contar_historias_propias_explicar_franqueza_radical` | `similitud_texto` |
+| `escuchar_entender_critica_dominar_defensa` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` |
+| `escuchar_entender_critica_dominar_defensa` | `premiar_franqueza_hacer_escucha_tangible` | `similitud_texto` |
+| `escuchar_entender_critica_dominar_defensa` | `practicar_triangulo_critica_tres_papeles` | `similitud_texto` |
+| `premiar_franqueza_hacer_escucha_tangible` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` |
+| `premiar_franqueza_hacer_escucha_tangible` | `escuchar_entender_critica_dominar_defensa` | `similitud_texto` |
+| `integrar_peticion_critica_rutina_existente` | `pedir_critica_primero_crear_seguridad_psicologica` | `paso_contra_nodo` |
+| `integrar_peticion_critica_rutina_existente` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` |
+| `medir_critica_respuesta_oyente_brujula` | `desplegar_marco_franqueza_radical` | `paso_contra_nodo` |
+| | **28 pares levantados** | |
 
 > **EL COSTE DEL INSTRUMENTO, MEDIDO POR MI EN ESTA VUELTA, Y LO DIGO PORQUE CAMBIA COMO TRABAJO:**
 > el primer informe de un candidato de esta vuelta tardo **mas de nueve minutos** con dos procesos
 > compitiendo, y los siguientes entre **tres y cinco** con la maquina para ellos solos. **Con veinte
 > informes eso es mas de una hora de reloj.** `D.42` ya quito de mi turno el informe del lote entero
 > por esta misma razon (**156,5 s por candidato**, medido el 12 sep); **el de un candidato sigue
-> siendo mio y lo he corrido veinte veces.**
+> siendo mio y lo he corrido 21 veces: 20 candidatos mas una repeticion.**
+>
+> **LA REPETICION LA CUENTO Y DIGO POR QUE EXISTE:** toque el `resumen_teorico` de
+> `pedir_critica_primero_crear_seguridad_psicologica` **despues** de tener su informe, para corregir
+> la especie de sus cuatro aristas de `D.29` a `D.37` (`Q.9` caida 3). **Una correccion vuelve a
+> escribir el candidato, asi que vuelve a pasar la puerta** (`EXTRACTOR.md` 16), y por eso hay 21
+> corridas y 20 ficheros.
 >
 > **COMO LOS CORRI, Y LO DIGO EN VEZ DE DEJARLO SUPUESTO:** cada candidato se escribe y **su informe
 > se lanza acto seguido**, y mientras corre escribo el siguiente. **Ninguno se publico como escrito
@@ -27958,12 +28006,19 @@ PEGAR_SALDO_AQUI
 
 ---
 
-## Q.7. LA DEUDA DE ARISTAS, **REPETIDA ENTERA Y NO RESUMIDA**, Y SUBE DE `35` A `52`
+## Q.7. LA DEUDA DE ARISTAS, **REPETIDA ENTERA Y NO RESUMIDA**, Y SUBE DE `35` A ~~`52`~~ `53`
 
 *`EXTRACTOR.md` 15.6 y `D.29`. Ninguna se cablea hoy: `forja.py arista` rechaza por construccion una
 arista cuyos extremos viven en cuarentena, **medido dos veces** (vuelta 21 `O.4.b` y `ACTA 21` `2.3`,
-esta ultima por los dos extremos). **No lo mido una tercera.** Las 52 se desbloquean con el mismo
+esta ultima por los dos extremos). **No lo mido una tercera.** Las 53 se desbloquean con el mismo
 acto: el cierre del lote 4 y su insercion.*
+
+> **AVISO DE CORRECCION DECLARADA, Y VA ARRIBA DEL TODO PARA QUE NADIE LEA LA CIFRA VIEJA:** esta
+> seccion se escribio con **`52`** y cierra con **`53`**. La numero 53 **no estaba en mi lista**: la
+> levanto el informe de un candidato de `medir_critica_respuesta_oyente_brujula` con
+> `paso_contra_nodo 0,723`, **despues** de que yo hubiera escrito la tabla. La lei, la sostuve y la
+> anadi. **No tacho la cifra vieja: la dejo tachada al lado de la nueva**, que es correccion
+> declarada y no reescritura.
 
 ### Q.7.a. LAS `35` QUE VENIAN, CONTADAS POR SUS TRES ORIGENES
 
@@ -27982,7 +28037,7 @@ acto: el cierre del lote 4 y su insercion.*
 `montar_reuniones_solas_mentalidad_frecuencia`, hijos `desplegar_tres_conversaciones_carrera` y
 `entregar_evaluacion_formal_desempenio_nueve_consejos`.
 
-### Q.7.c. LAS **QUINCE** QUE ESTA VUELTA ANADE, **CON SU PASO IMPRESO Y NO TECLEADO**
+### Q.7.c. LAS ~~**QUINCE**~~ **DIECISEIS** QUE ESTA VUELTA ANADE, **CON SU PASO IMPRESO Y NO TECLEADO**
 
 Salida de `python .t1_v23/aristas_v23.py`, guardada en `.t1_v23/salida_aristas_v23.txt`:
 
@@ -28003,7 +28058,8 @@ Salida de `python .t1_v23/aristas_v23.py`, guardada en `.t1_v23/salida_aristas_v
 | 50 | `pedir_critica_primero_crear_seguridad_psicologica` | `criticar_trabajo_evitar_desanimo` | **3** | `D.29` | `Tres, da critica.` | **14** |
 | 51 | `pedir_critica_primero_crear_seguridad_psicologica` | `medir_critica_respuesta_oyente_brujula` | **4** | `D.29` | `Cuatro, mide la critica y ajusta.` | **33** |
 | 52 | `pedir_critica_primero_crear_seguridad_psicologica` | `fomentar_guia_reciproca_companieros` | **5** | `D.29` | `Cinco, fomenta el elogio y la critica entre los demas.` | **13** |
-| | | **15 aristas nuevas** | | | | |
+| 53 | `desplegar_marco_franqueza_radical` | `medir_critica_respuesta_oyente_brujula` | **6** | `D.29` | `Usa el marco como una brujula, para llevar cada conversacion concreta a un sitio mejor.` | **33** |
+| | | **16 aristas nuevas** | | | | |
 
 > ### **LAS RAZONES, POR FAMILIAS, PORQUE UNA ARISTA SIN RAZON ES UNA AFIRMACION SIN CITA**
 >
@@ -28037,6 +28093,15 @@ Salida de `python .t1_v23/aristas_v23.py`, guardada en `.t1_v23/salida_aristas_v
 >   escribe asi**, como una lista numerada de cinco lineas, y la prueba de que nombran al hijo es que
 >   el hijo es el procedimiento de esa etapa y no otro.
 >
+> - **53, el marco usado como brujula, Y ESTA ME LA ENCONTRO LA ADUANA Y NO MI LECTURA.** El paso
+>   6 de `desplegar_marco_franqueza_radical` dice *usa el marco como una brujula, para llevar cada
+>   conversacion concreta a un sitio mejor*, y mi paso 4 dice casi la misma frase porque las dos
+>   transcriben la misma instruccion del libro desde dos capitulos distintos. **La madre nombra el
+>   acto y no lo despliega; la hija lo despliega en 33 pasos** con las tres respuestas del oyente,
+>   el nombrar la emocion y el lema de escuchar, desafiar y comprometer. **Lo digo entero: esta
+>   arista no salio de mi lectura, salio de un `paso_contra_nodo` de `0,723`**, y es el ejemplar de
+>   que las seniales ordenan, aunque no decidan.
+>
 > **Y LO QUE NO DECLARO COMO ARISTA, AUNQUE LA SENIAL LO LEVANTO:** los pares `SANO` de `Q.6`. **Una
 > senial levantada no es una arista**, y el propio catalogo de esta casa mide que **ninguna senial
 > separa un par de jerarquia declarada de un par al azar** (`D.19`).
@@ -28048,17 +28113,17 @@ Salida de `python .t1_v23/aristas_v23.py`, guardada en `.t1_v23/salida_aristas_v
 > paso 2 no nombra a la hija. **La clase `CONTINUA` y la arista `D.29` se sostienen por su razon
 > escrita**, y la prueba cuelga del **`P4` de la hija**.
 
-> # **LA DEUDA TOTAL AL CERRAR: `35 + 2 + 15 = 52` ARISTAS DECLARADAS Y NO CABLEADAS.**
+> # **LA DEUDA TOTAL AL CERRAR: `35 + 2 + 16 = 53` ARISTAS DECLARADAS Y NO CABLEADAS.**
 >
 > **Y LA SERIE SIGUE, porque una cifra sola no dice nada:** cuatro al cerrar la 17, seis la 18, diez
 > la 19, doce la 20, dieciseis la 21, treinta y cinco la 22, **cincuenta y dos hoy**. **La deuda de
 > aristas del lote 4 no se estabiliza: se acumula**, y se acumula porque **el unico acto que la
-> paga es el mismo para las 52**, y ese acto lleva seis vueltas sin poder ocurrir.
+> paga es el mismo para las 53**, y ese acto lleva seis vueltas sin poder ocurrir.
 >
 > **LO QUE ESTO NO ES: una parada.** Nada contradice una regla vigente ni una cifra publicada. **Lo
 > que si es, y lo escribo como propuesta en mi sede y no me lo adjudico** (`EXTRACTOR.md` 14): la
 > cifra que mide si el lote 4 se esta atascando **ya no es el numero de capitulos que faltan (uno),
-> sino el numero de aristas que esperan (52)**.
+> sino el numero de aristas que esperan (53)**.
 
 ---
 
@@ -28087,8 +28152,8 @@ ver un acta.** En ocho de los doce escribo ademas el argumento contra mi propia 
 
 ## Q.9. **MIS CAIDAS DE ESTA VUELTA, DICHAS POR MI Y CAZADAS ANTES DE PUBLICAR**
 
-*Las cinco las cace yo antes de que las viera nadie, y **dos de las cinco las cazo un instrumento y
-no mi cuidado**, que es la leccion entera de `D.41`.*
+*Las seis se cazaron antes de publicar. **Tres de las seis las cazo un instrumento y no mi
+cuidado**, que es la leccion entera de `D.41`, y la sexta la cazo la propia aduana.*
 
 | # | la caida | quien la cazo | como quedo |
 |---:|---|---|---|
@@ -28097,11 +28162,12 @@ no mi cuidado**, que es la leccion entera de `D.41`.*
 | **3** | **las aristas 45 a 48 las escribi `D.29` y son `D.37`** | **yo, al abrir `L113` para citarla**: ahi estaba la palabra `four`, que es la condicion literal de `D.37` | corregidas a `D.37` en el instrumento, en el reporte y en el `resumen_teorico` de la madre, con la correccion declarada |
 | **4** | **dos marcadores de tallado que puse cayeron sobre las tablas de la VUELTA 22** y pusieron el tallado en ROJO, diciendo que la frontera de `cap_10` de la vuelta 22 difiere de mi instrumento de hoy | **el tallador, en el acto** | movidos a las tablas de la vuelta 23. **Y la leccion se queda escrita: las tablas de una vuelta vieja NO se tallan contra el instrumento de hoy, porque hoy miden otra cosa** |
 | **5** | **dos declaraciones de instrumento partidas en dos lineas** (`Salida de ... guardada en` / `` `ruta.txt` ``) dejaron dos tablas **sin comprobar** | **el tallador, en el acto** | juntadas en una linea. **Y esto es doctrina barata que apunto para la vuelta siguiente: la declaracion y su ruta van en la MISMA linea, o la guarda no las ve** |
+| **6** | **cerre `Q.7` con `52` aristas y son `53`**: no vi el par del marco usado como brujula, que es una `D.29` con una cita literal buenisima | **la aduana**, con `paso_contra_nodo 0,723` en el ultimo informe de la tanda | anadida como arista 53 **con la correccion declarada arriba de la seccion y la cifra vieja tachada al lado de la nueva**, y la tabla regenerada desde el instrumento |
 
-> **NINGUNA DE LAS CINCO LLEGO A PUBLICARSE**, y lo digo con la cifra que lo prueba: el tallado del
+> **NINGUNA DE LAS SEIS LLEGO A PUBLICARSE SIN CORREGIR**, y lo digo con la cifra que lo prueba: el tallado del
 > reporte sale **VERDE** al cerrar, con **cero** tablas que difieran y **cero** sin comprobar.
 >
-> **Y LAS DOS QUE CAZO UN INSTRUMENTO SON LAS QUE MAS ME IMPORTAN**, porque son de la especie que
+> **Y LAS TRES QUE CAZO UN INSTRUMENTO SON LAS QUE MAS ME IMPORTAN**, porque son de la especie que
 > llevaba cuatro vueltas seguidas tumbandome: **una cifra tecleada que no venia de donde decia
 > venir.** La diferencia de esta vuelta **no es que yo tenga mas cuidado: es que hay codigo mirando.**
 
@@ -28197,6 +28263,171 @@ reporte; no escribe `PARA_ALEXIS.md`).*
 
 | # | lo que propongo | por que, con la cifra delante |
 |---:|---|---|
-| **1** | **que la cifra de atasco del lote 4 deje de ser *cuantos capitulos faltan* y pase a ser *cuantas aristas esperan*** | faltan **1** capitulo y esperan **52** aristas. La primera cifra dice que el lote esta casi cerrado; la segunda dice que **seis vueltas seguidas** han terminado con la puerta abierta y cero entradas. **La segunda describe mejor lo que pasa** |
+| **1** | **que la cifra de atasco del lote 4 deje de ser *cuantos capitulos faltan* y pase a ser *cuantas aristas esperan*** | faltan **1** capitulo y esperan **53** aristas. La primera cifra dice que el lote esta casi cerrado; la segunda dice que **seis vueltas seguidas** han terminado con la puerta abierta y cero entradas. **La segunda describe mejor lo que pasa** |
 | **2** | **que la relectura ancha de las cinco filas pendientes se encargue como tarea propia, no como coda de otra** | lleva **dos vueltas** declarada y **dos vueltas** sin hacerse entera, y son **96 ocurrencias**. Mientras no se haga, **el total del lote es un suelo y no una medida**, y el freno se decide sobre una sola fila firmada de doce |
 | **3** | **que la declaracion de tallado se escriba siempre en UNA linea** | me costo dos tablas `sin comprobar` en esta misma vuelta (`Q.9` caida 5). **El tallador exige la afirmacion y la ruta en la misma linea**, y eso no esta escrito en `D.41`: lo aprendi rompiendolo. **Es una linea de documentacion, no maquinaria nueva** |
+
+---
+
+# Q.12. EL CIERRE DE LA VUELTA 23
+
+## Q.12.a. LAS TRES GUARDAS, CORRIDAS AL CERRAR Y NO AL EMPEZAR
+
+Salida de `python forja.py gate`, guardada en `.t1_v23/salida_gate_cierre.txt`:
+
+    GATE VERDE.
+      nodos verificados: 203
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+
+Salida de `python forja.py guiones`, guardada en `.t1_v23/salida_guiones_cierre.txt`:
+
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+Salida de `python tests/test_aceptacion.py`, guardada en `.t1_v23/salida_aceptacion_cierre.txt`:
+
+      D.40, lo que un auditor le deja al siguiente lo entrega el arnes: 13 pruebas mas
+      la poblacion del informe es grafo mas bandejas (12 sep 2026, punto 3): 6 pruebas mas
+      D.41, la tabla que dice ser de instrumento es la del instrumento: 13 pruebas mas
+    
+      total: 111 pruebas, 0 fallos, 0 errores
+    ========================================================================
+
+**Y EL HOOK NO SE SALTO NI UNA VEZ.** Cada commit de esta vuelta paso por `gate`, `guiones` y el
+**tallado de `D.41`**, y el tallado **aborto un commit** cuando dos marcadores mios cayeron sobre las
+tablas de la vuelta 22 (`Q.9` caida 4). **Se arreglo moviendo el marcador, no tecleando la celda.**
+
+## Q.12.b. EL ESTADO AL CIERRE, **RECOMPUTADO AL CIERRE** (`EXTRACTOR.md` 4)
+
+Salida de `python .t1_v23/cierre_v23.py`, guardada en `.t1_v23/salida_cierre_v23.txt`:
+
+| medida | al abrir | al cerrar | se movio |
+|---|---:|---:|---|
+| nodos en el grafo | 203 | **203** | NO |
+| veredictos en bitacora | 148 | **148** | NO |
+| candidatos en cuarentena del lote 4 | 113 | **127** | **SI, +14** |
+| ficheros en cuarentena/_insertados | 201 | **201** | NO |
+| unidades en la bandeja del lote 4 | 15 | **15** | NO |
+
+| sede | ficheros tocados desde `b05d040` |
+|---|---:|
+| `dataset/` | **0** |
+| `bitacora/` | **0** |
+| `censos/` | **0** |
+| `config/` | **0** |
+| `src/` | **0** |
+| `esquema/` | **0** |
+| `fuentes/` | **0** |
+| `docs/` | **1** |
+
+## Q.12.c. LOS PARES LEIDOS Y SUS VEREDICTOS, **IMPRESOS DE LOS INFORMES**
+
+*`EXTRACTOR.md` 2: si la aduana bloquea, **lees a los vecinos antes de escribir el veredicto**, y
+todo veredicto lleva su razon escrita. **Su sede propia es `bitacora/VEREDICTOS.jsonl` y hoy no puede
+serlo**, porque a la bitacora se escribe por `forja.py insertar` y esta vuelta no inserta. **Lo digo
+en vez de esconderlo: hoy su sede es este reporte.***
+
+Salida de `python .t1_v23/veredictos_v23.py`, guardada en `.t1_v23/salida_veredictos_v23.txt`:
+
+| # | candidato | vecino | senial que lo levanto | `sim` | `fam` | `paso` | veredicto |
+|---:|---|---|---|---:|---:|---:|---|
+| 1 | `abrazar_incomodidad_silencio_contar_seis` | `escuchar_entender_critica_dominar_defensa` | `similitud_texto` | 0.449 | 0.000 | 0.498 | **SANO, Y ES EL PAR QUE MAS CARO COSTARIA FALLAR DE TODA LA VUELTA** |
+| 2 | `abrazar_incomodidad_silencio_contar_seis` | `practicar_triangulo_critica_tres_papeles` | `similitud_texto` | 0.373 | 0.000 | 0.489 | **SANO** |
+| 3 | `abrazar_incomodidad_silencio_contar_seis` | `premiar_franqueza_hacer_escucha_tangible` | `similitud_texto` | 0.360 | 0.000 | 0.485 | **SANO** |
+| 4 | `abrazar_incomodidad_silencio_contar_seis` | `contar_historias_propias_explicar_franqueza_radical` | `similitud_texto` | 0.376 | 0.100 | 0.464 | **SANO** |
+| 5 | `contar_cuatro_historias_propias_ver_hueco_intencion` | `evitar_presion_social_actos_equipo` | `paso_contra_nodo` | 0.183 | 0.000 | 0.619 | **SANO** |
+| 6 | `contar_cuatro_historias_propias_ver_hueco_intencion` | `contar_historias_propias_explicar_franqueza_radical` | `familia_id` | 0.301 | 0.300 | 0.487 | **CONTINUA con arista** |
+| 7 | `contar_historias_propias_explicar_franqueza_radical` | `contar_cuatro_historias_propias_ver_hueco_intencion` | `familia_id` | 0.305 | 0.300 | 0.513 | **CONTINUA con arista** |
+| 8 | `desplegar_plan_orden_operaciones_franqueza_radical` | `armar_plan_anual_crecimiento_equipo` | `paso_contra_nodo` | 0.166 | 0.100 | 0.711 | **CONTINUA con arista** |
+| 9 | `desplegar_plan_orden_operaciones_franqueza_radical` | `bloquear_tiempo_pensar_calendario` | `paso_contra_nodo` | 0.189 | 0.000 | 0.650 | **CONTINUA con arista** |
+| 10 | `desplegar_plan_orden_operaciones_franqueza_radical` | `desplegar_tres_conversaciones_carrera` | `paso_contra_nodo` | 0.227 | 0.111 | 0.608 | **CONTINUA con arista** |
+| 11 | `desplegar_plan_orden_operaciones_franqueza_radical` | `desplegar_marco_franqueza_radical` | `familia_id` | 0.120 | 0.429 | 0.440 | **SANO, y con una tension del LIBRO declarada** |
+| 12 | `desplegar_tres_conversaciones_carrera` | `conversar_historia_vida_descubrir_motivadores` | `paso_contra_nodo` | 0.225 | 0.000 | 0.647 | **CONTINUA con arista** |
+| 13 | `escuchar_entender_critica_dominar_defensa` | `contar_historias_propias_explicar_franqueza_radical` | `similitud_texto` | 0.393 | 0.000 | 0.549 | **SANO** |
+| 14 | `escuchar_entender_critica_dominar_defensa` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` | 0.446 | 0.000 | 0.507 | **SANO** |
+| 15 | `escuchar_entender_critica_dominar_defensa` | `premiar_franqueza_hacer_escucha_tangible` | `similitud_texto` | 0.370 | 0.000 | 0.484 | **SANO** |
+| 16 | `escuchar_entender_critica_dominar_defensa` | `practicar_triangulo_critica_tres_papeles` | `similitud_texto` | 0.350 | 0.111 | 0.469 | **SANO** |
+| 17 | `integrar_peticion_critica_rutina_existente` | `pedir_critica_primero_crear_seguridad_psicologica` | `paso_contra_nodo` | 0.282 | 0.100 | 0.733 | **SANO, y es el espejo del par que mas cerca esta de caer** |
+| 18 | `integrar_peticion_critica_rutina_existente` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` | 0.356 | 0.000 | 0.480 | **SANO** |
+| 19 | `medir_critica_respuesta_oyente_brujula` | `desplegar_marco_franqueza_radical` | `paso_contra_nodo` | 0.139 | 0.000 | 0.723 | **CONTINUA con arista, Y ES LA ARISTA 53, QUE NO TENIA ANTES DE ESTE INFORME** |
+| 20 | `mejorar_consciencia_propia_relacional_dos_practicas` | `desplegar_plan_orden_operaciones_franqueza_radical` | `paso_contra_nodo` | 0.202 | 0.000 | 0.601 | **SANO** |
+| 21 | `pedir_critica_primero_crear_seguridad_psicologica` | `integrar_peticion_critica_rutina_existente` | `paso_contra_nodo` | 0.278 | 0.100 | 0.733 | **SANO, y es el par que mas cerca esta de caer** |
+| 22 | `practicar_triangulo_critica_tres_papeles` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` | 0.375 | 0.000 | 0.471 | **SANO** |
+| 23 | `practicar_triangulo_critica_tres_papeles` | `escuchar_entender_critica_dominar_defensa` | `similitud_texto` | 0.352 | 0.111 | 0.469 | **SANO** |
+| 24 | `preguntar_seguimiento_hallar_huecos` | `calibrar_normalidad_preguntas_jefe` | `paso_contra_nodo` | 0.130 | 0.000 | 0.673 | **SANO** |
+| 25 | `premiar_franqueza_hacer_escucha_tangible` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` | 0.353 | 0.000 | 0.469 | **SANO** |
+| 26 | `premiar_franqueza_hacer_escucha_tangible` | `escuchar_entender_critica_dominar_defensa` | `similitud_texto` | 0.382 | 0.000 | 0.465 | **SANO** |
+| 27 | `resolver_dudas_frecuentes_pedir_critica` | `despedir_persona_franqueza_radical` | `paso_contra_nodo` | 0.192 | 0.000 | 0.621 | **SANO** |
+| 28 | `resolver_dudas_frecuentes_pedir_critica` | `resolver_dudas_frecuentes_reuniones_salto_nivel` | `familia_id` | 0.238 | 0.375 | 0.467 | **SANO, y lo levanta la familia de id porque comparten el APELLIDO resolver_dudas_frecuentes** |
+| | | **28 pares** | | | | | |
+
+**LAS RAZONES ENTERAS, UNA POR PAR, ESTAN EN LA SECCION 2 DE ESE MISMO FICHERO**
+(`.t1_v23/salida_veredictos_v23.txt`), y el guion **sale en rojo si un solo par levantado se queda
+sin razon escrita**. Hoy sale en verde.
+
+## Q.12.d. LAS RUTAS QUE PUBLICO COMO PRUEBA, **CON SU ALCANCE DICHO**
+
+| ruta | que guarda | alcance |
+|---|---|---|
+| `.t1_v23/` | **mis instrumentos de esta vuelta y su salida guardada** | 48 ficheros entre guiones y salidas. **Es lo que el tallador compara celda a celda** |
+| `.aduana_v23/` | **un informe de la aduana por candidato**, **20 ficheros y 21 corridas** (la de `pedir_critica` se repitio al corregir su `resumen`) | **solo informes de UN candidato**. El del lote entero no existe en esta corrida (`Q.0.2`) |
+| `.v23/` | los fragmentos con los que arme este reporte | andamio, no prueba |
+| `cuarentena/scott_radical_candor/` | **los 127 candidatos del lote 4** | **los 14 nuevos y los 6 corregidos viajan dentro del commit** (`D.25`), asi que quien lea *de `cap_13` salieron 12 candidatos* **puede abrir los doce** |
+
+## Q.12.e. LO QUE PASA A LA VUELTA SIGUIENTE
+
+| que | cifra | quien lo desbloquea |
+|---|---|---|
+| **`cap_14`**, la ultima unidad sin minar del lote 4 | **7.638** palabras | **y con el, el cierre del lote 4** |
+| **las 53 aristas declaradas y no cableadas** | **53** | el mismo acto: la insercion del lote cerrado |
+| **los veredictos sin sede propia** | **12 de la vuelta 22 mas 14 pares de hoy** | idem |
+| **la relectura ancha de cinco filas del freno** | **96 ocurrencias** sin adjudicar | una tarea propia, que propongo en `Q.11.b` |
+| **la pregunta del rotulo de `cap_14`** | 1 | Alexis o el auditor, y va en `Q.11.a` |
+
+## Q.12.f. LA IDENTIDAD DE LA VUELTA, **LEIDA DE GIT** (`EXTRACTOR.md` 5)
+
+Salida de los comandos, guardada en `.t1_v23/identidad_v23.txt`:
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git log --oneline b05d040..HEAD | wc -l
+    6
+    $ git log -1 --format="%h %ad" --date=iso
+    f8ebe88 2026-09-13 13:14:03 -0400
+    $ git diff --name-only b05d040..HEAD | sed "s#/.*##" | sort | uniq -c
+         18 .aduana_v23
+          1 .aduana_v23_tmp.txt
+         40 .t1_v23
+          7 .v23
+         20 cuarentena
+          1 docs
+
+## Q.12.g. LA VUELTA 23, EN UNA TABLA
+
+| | |
+|---|---|
+| **tareas encargadas** | **4**, el tope es 5. **Las cuatro CERRADAS**, una de ellas (la 4) **cerrada declarando que no se hace y por que**. Cero cola por techo de tareas |
+| **la cola de siete** | **CERRADA ENTERA Y PRIMERA**, como el encargo mandaba. Seis tocan fichero y **las seis vuelven a pasar la aduana**; la septima es encargo para el dia de la insercion y queda escrita dos veces |
+| **unidades minadas** | **`cap_12` (`Getting Started`) y `cap_13` (`Afterword`), las dos ENTERAS**, con su frontera cerrada contra el cuerpo al digito (**2.118** y **9.298** palabras) |
+| **candidatos nuevos** | **14** (2 mas 12), **bajo el techo de 15**. Hueco que queda: **1** |
+| **`cap_14`** | # **NO ENTRA, y se declara con su cuenta**: 7.638 palabras no caben en un hueco de un candidato, y `EXTRACTOR.md` 12.4 prohibe repartir un capitulo en dos vueltas |
+| **aduana** | **21 corridas del informe de un candidato**, una por candidato en su acto **mas una repeticion** por una correccion posterior. Saldo en `Q.5.d`. # **CERO `CAERIA` en las 20** |
+| **insercion** | # **CERO, por sexta vez con la puerta abierta**, y la razon medida: **al lote 4 le falta `cap_14` y solo `cap_14`**. Grafo `203` a `203`, bitacora `148` a `148`, `_insertados` `201` a `201` |
+| **veredictos** | **21 pares distintos leidos, 28 filas con su razon escrita** (una fila y su espejo son un par). **Su sede hoy es este reporte y lo digo**; `bitacora/` lo sera el dia de la insercion |
+| **aristas** | **53 declaradas y no cableadas** (`35` heredadas, `2` de la correccion 6, `16` nuevas), **repetidas enteras en `Q.7`** con su paso impreso del fichero |
+| **`PASOS INVENTADOS`** | **peor fila firmada `cap_04` `16,67` contra tope `10`**. # **EL FRENO SIGUE DISPARADO Y EL TRAMO SIGUE EN DOS CAPITULOS, que son los dos que esta vuelta mino.** Lote 4 **`2,32` (35 de 1.511)**, **declarado INCOMPLETO**: cinco filas sin releer con el ancho |
+| **discutibles** | **12, marcados antes de saber si acierto**, y en ocho escribo el argumento contra mi propia decision |
+| **caidas mias** | **6, las seis cazadas ANTES de publicar**, y **tres de las seis las cazo un instrumento y no mi cuidado** |
+| **guardas** | `gate`, `guiones` y `test_aceptacion` **corridas al cerrar**. Hook verde en todos los commits, **ninguno saltado**, y el tallado **aborto uno y se arreglo regenerando** |
+| **tablas de instrumento** | **todas pegadas de su fichero, ninguna tecleada**, comprobadas celda a celda por el hook en cada commit |
+| **paradas** | # **CERO.** Nada contradijo una regla vigente ni una cifra publicada con su corte |
+
+> # **LA VUELTA 23 CIERRA `cap_12` Y `cap_13` ENTEROS, PAGA LA COLA DE SIETE DEL AUDITOR COMPLETA, Y DEJA EL LOTE 4 A UN SOLO CAPITULO DE CERRAR.**
+>
+> **Y LA COSA QUE MAS ME IMPORTA DE ESTA VUELTA NO ES LA CIFRA DE CANDIDATOS: ES QUE NINGUNA TABLA
+> SE TECLEO.** Mi racha `REPORTE` se reinicio contra `D.41` despues de **cuatro caidas en cuatro
+> vueltas que eran la misma cosa**. Esta vuelta el tallador **me cazo dos veces en el acto** (`Q.9`
+> caidas 4 y 5) y **las dos se arreglaron regenerando**, no tecleando la celda buena.
+>
+> **LO QUE ESO PRUEBA, Y NO ES UN MERITO MIO:** *un remedio que se cumple acordandose no es un
+> remedio.* La diferencia entre la vuelta 22 y esta **no es que yo tenga mas cuidado: es que hay
+> codigo mirando.**

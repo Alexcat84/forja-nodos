@@ -1,0 +1,186 @@
+==============================================================================
+1. LOS PARES LEVANTADOS, CON SU VEREDICTO Y SU RAZON
+==============================================================================
+| # | candidato | vecino | senial que lo levanto | `sim` | `fam` | `paso` | veredicto |
+|---:|---|---|---|---:|---:|---:|---|
+| 1 | `abrazar_incomodidad_silencio_contar_seis` | `escuchar_entender_critica_dominar_defensa` | `similitud_texto` | 0.449 | 0.000 | 0.498 | **SANO, Y ES EL PAR QUE MAS CARO COSTARIA FALLAR DE TODA LA VUELTA** |
+| 2 | `abrazar_incomodidad_silencio_contar_seis` | `practicar_triangulo_critica_tres_papeles` | `similitud_texto` | 0.373 | 0.000 | 0.489 | **SANO** |
+| 3 | `abrazar_incomodidad_silencio_contar_seis` | `premiar_franqueza_hacer_escucha_tangible` | `similitud_texto` | 0.360 | 0.000 | 0.485 | **SANO** |
+| 4 | `abrazar_incomodidad_silencio_contar_seis` | `contar_historias_propias_explicar_franqueza_radical` | `similitud_texto` | 0.376 | 0.100 | 0.464 | **SANO** |
+| 5 | `contar_cuatro_historias_propias_ver_hueco_intencion` | `evitar_presion_social_actos_equipo` | `paso_contra_nodo` | 0.183 | 0.000 | 0.619 | **SANO** |
+| 6 | `contar_cuatro_historias_propias_ver_hueco_intencion` | `contar_historias_propias_explicar_franqueza_radical` | `familia_id` | 0.301 | 0.300 | 0.487 | **CONTINUA con arista** |
+| 7 | `contar_historias_propias_explicar_franqueza_radical` | `contar_cuatro_historias_propias_ver_hueco_intencion` | `familia_id` | 0.305 | 0.300 | 0.513 | **CONTINUA con arista** |
+| 8 | `desplegar_plan_orden_operaciones_franqueza_radical` | `armar_plan_anual_crecimiento_equipo` | `paso_contra_nodo` | 0.166 | 0.100 | 0.711 | **CONTINUA con arista** |
+| 9 | `desplegar_plan_orden_operaciones_franqueza_radical` | `bloquear_tiempo_pensar_calendario` | `paso_contra_nodo` | 0.189 | 0.000 | 0.650 | **CONTINUA con arista** |
+| 10 | `desplegar_plan_orden_operaciones_franqueza_radical` | `desplegar_tres_conversaciones_carrera` | `paso_contra_nodo` | 0.227 | 0.111 | 0.608 | **CONTINUA con arista** |
+| 11 | `desplegar_plan_orden_operaciones_franqueza_radical` | `desplegar_marco_franqueza_radical` | `familia_id` | 0.120 | 0.429 | 0.440 | **SANO, y con una tension del LIBRO declarada** |
+| 12 | `desplegar_tres_conversaciones_carrera` | `conversar_historia_vida_descubrir_motivadores` | `paso_contra_nodo` | 0.225 | 0.000 | 0.647 | **CONTINUA con arista** |
+| 13 | `escuchar_entender_critica_dominar_defensa` | `contar_historias_propias_explicar_franqueza_radical` | `similitud_texto` | 0.393 | 0.000 | 0.549 | **SANO** |
+| 14 | `escuchar_entender_critica_dominar_defensa` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` | 0.446 | 0.000 | 0.507 | **SANO** |
+| 15 | `escuchar_entender_critica_dominar_defensa` | `premiar_franqueza_hacer_escucha_tangible` | `similitud_texto` | 0.370 | 0.000 | 0.484 | **SANO** |
+| 16 | `escuchar_entender_critica_dominar_defensa` | `practicar_triangulo_critica_tres_papeles` | `similitud_texto` | 0.350 | 0.111 | 0.469 | **SANO** |
+| 17 | `integrar_peticion_critica_rutina_existente` | `pedir_critica_primero_crear_seguridad_psicologica` | `paso_contra_nodo` | 0.282 | 0.100 | 0.733 | **SANO, y es el espejo del par que mas cerca esta de caer** |
+| 18 | `integrar_peticion_critica_rutina_existente` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` | 0.356 | 0.000 | 0.480 | **SANO** |
+| 19 | `medir_critica_respuesta_oyente_brujula` | `desplegar_marco_franqueza_radical` | `paso_contra_nodo` | 0.139 | 0.000 | 0.723 | **CONTINUA con arista, Y ES LA ARISTA 53, QUE NO TENIA ANTES DE ESTE INFORME** |
+| 20 | `mejorar_consciencia_propia_relacional_dos_practicas` | `desplegar_plan_orden_operaciones_franqueza_radical` | `paso_contra_nodo` | 0.202 | 0.000 | 0.601 | **SANO** |
+| 21 | `pedir_critica_primero_crear_seguridad_psicologica` | `integrar_peticion_critica_rutina_existente` | `paso_contra_nodo` | 0.278 | 0.100 | 0.733 | **SANO, y es el par que mas cerca esta de caer** |
+| 22 | `practicar_triangulo_critica_tres_papeles` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` | 0.375 | 0.000 | 0.471 | **SANO** |
+| 23 | `practicar_triangulo_critica_tres_papeles` | `escuchar_entender_critica_dominar_defensa` | `similitud_texto` | 0.352 | 0.111 | 0.469 | **SANO** |
+| 24 | `preguntar_seguimiento_hallar_huecos` | `calibrar_normalidad_preguntas_jefe` | `paso_contra_nodo` | 0.130 | 0.000 | 0.673 | **SANO** |
+| 25 | `premiar_franqueza_hacer_escucha_tangible` | `abrazar_incomodidad_silencio_contar_seis` | `similitud_texto` | 0.353 | 0.000 | 0.469 | **SANO** |
+| 26 | `premiar_franqueza_hacer_escucha_tangible` | `escuchar_entender_critica_dominar_defensa` | `similitud_texto` | 0.382 | 0.000 | 0.465 | **SANO** |
+| 27 | `resolver_dudas_frecuentes_pedir_critica` | `despedir_persona_franqueza_radical` | `paso_contra_nodo` | 0.192 | 0.000 | 0.621 | **SANO** |
+| 28 | `resolver_dudas_frecuentes_pedir_critica` | `resolver_dudas_frecuentes_reuniones_salto_nivel` | `familia_id` | 0.238 | 0.375 | 0.467 | **SANO, y lo levanta la familia de id porque comparten el APELLIDO resolver_dudas_frecuentes** |
+| | | **28 pares** | | | | | |
+
+==============================================================================
+2. LAS RAZONES, UNA POR PAR, PORQUE UN SANO SIN RAZON LO RECHAZA LA ADUANA
+==============================================================================
+
+1. abrazar_incomodidad_silencio_contar_seis  CONTRA  escuchar_entender_critica_dominar_defensa
+   paso 1 del candidato contra paso 4 del vecino
+   VEREDICTO: SANO, Y ES EL PAR QUE MAS CARO COSTARIA FALLAR DE TODA LA VUELTA
+   RAZON: similitud de texto 0,449, o sea POR ENCIMA DE 0,40, y EXTRACTOR.md 11 es tajante con esa banda: en el catalogo de calibracion hay 325 gemelos y CERO ajenos por encima de 0,40, y si una senial 1 pasa de 0,40 ese par se lee antes que ningun otro. Lo lei entero, los 12 pasos contra los 13, y lo sostengo SANO con el argumento del propio libro delante: la linea 237 de cap_13 ENUMERA los cuatro elementos de pedir critica y nombra estos dos POR SEPARADO (embracing the discomfort, listening with the intent to understand). Son dos de cuatro, no uno partido en dos. Y los actos son distintos en el tiempo: aquel aguanta el silencio ANTES de que llegue la respuesta y entrega la respuesta salida de el; este domina tu defensa MIENTRAS la respuesta llega y entrega la critica escuchada entera. Cada uno trae ademas su propio ejercicio con su propia cuenta (contar hasta seis; hablar tres minutos sin interrumpir) y ninguno de los dos ejercicios sirve para lo del otro. LO QUE LA SENIAL VE, y lo digo porque es la explicacion honesta del 0,449: los dos textos son cortos, de la misma seccion, con el mismo vocabulario (critica, incomodidad, practica, companiero) y el mismo molde de taller. VA MARCADO COMO DISCUTIBLE 12
+
+2. abrazar_incomodidad_silencio_contar_seis  CONTRA  practicar_triangulo_critica_tres_papeles
+   paso 5 del candidato contra paso 4 del vecino
+   VEREDICTO: SANO
+   RAZON: es el espejo de un par ya adjudicado mas arriba desde el otro extremo (similitud 0,373 alli y 0,373 aqui), y el veredicto y la razon no cambian: molde de ejercicio de taller compartido, objetos distintos
+
+3. abrazar_incomodidad_silencio_contar_seis  CONTRA  premiar_franqueza_hacer_escucha_tangible
+   paso 7 del candidato contra paso 8 del vecino
+   VEREDICTO: SANO
+   RAZON: similitud 0,360, tercero de los cuatro elementos contra el cuarto, y el libro los enumera por separado en la linea 237 igual que a los dos anteriores. Aquel entrega el problema criticado arreglado y contado en publico; este entrega un silencio aguantado. Mi paso 7 (hazle tu pregunta y cuenta hasta seis) contra su paso 8 (haz una lista de las tres o cuatro criticas recientes) no comparten ni objeto ni momento
+
+4. abrazar_incomodidad_silencio_contar_seis  CONTRA  contar_historias_propias_explicar_franqueza_radical
+   paso 1 del candidato contra paso 3 del vecino
+   VEREDICTO: SANO
+   RAZON: similitud 0,376 y cruza de capitulo (cap_13 contra cap_12). Mi paso 1 dice que al pedir critica metes al otro en una situacion incomoda; su paso 3 dice que expliques la idea con tus propias palabras. Comparten el vocabulario de la franqueza radical y ni un acto: aquel entrega tus historias contadas, este un silencio aguantado
+
+5. contar_cuatro_historias_propias_ver_hueco_intencion  CONTRA  evitar_presion_social_actos_equipo
+   paso 16 del candidato contra paso 6 del vecino
+   VEREDICTO: SANO
+   RAZON: ruido de la banda media aplicado a paso contra nodo: mi paso 16 dice que la consciencia es el primer paso hacia el cambio y el paso 6 del vecino dice que a veces el mayor regalo es dejar al equipo irse a casa. Comparten vocabulario de equipo y ni un objeto: aquel entrega un acto al que va quien quiere ir, este entrega cuatro historias desenterradas
+
+6. contar_cuatro_historias_propias_ver_hueco_intencion  CONTRA  contar_historias_propias_explicar_franqueza_radical
+   paso 3 del candidato contra paso 8 del vecino
+   VEREDICTO: CONTINUA con arista
+   RAZON: es el MISMO par que la fila de arriba, levantado ahora desde el otro extremo, y lo digo en vez de contarlo dos veces como si fueran dos: la aduana lo levanta en los dos informes porque la poblacion es grafo mas bandejas (D.38.5) y los dos extremos viven en cuarentena. Mismo veredicto, misma razon, UNA sola arista: la 42
+
+7. contar_historias_propias_explicar_franqueza_radical  CONTRA  contar_cuatro_historias_propias_ver_hueco_intencion
+   paso 8 del candidato contra paso 3 del vecino
+   VEREDICTO: CONTINUA con arista
+   RAZON: lo declara el propio libro: L43 de cap_13 dice que hay un parrafo breve sobre esto en la seccion final de Getting Started y que les han pedido mas detalle. La madre trae los seis medios de explicar la idea; la hija trae CUATRO historias con su pregunta de arranque, y ninguna de las cuatro esta en la madre. Arista 42, y va marcado como discutible 3
+
+8. desplegar_plan_orden_operaciones_franqueza_radical  CONTRA  armar_plan_anual_crecimiento_equipo
+   paso 32 del candidato contra paso 2 del vecino
+   VEREDICTO: CONTINUA con arista
+   RAZON: cabeza y parte: el paso 32 de la cabeza nombra el plan de gestion del crecimiento en una linea y no lo despliega; el vecino lo despliega en 29 pasos, desde poner los nombres en las casillas hasta comprobar la equidad entre niveles. Arista 41
+
+9. desplegar_plan_orden_operaciones_franqueza_radical  CONTRA  bloquear_tiempo_pensar_calendario
+   paso 30 del candidato contra paso 3 del vecino
+   VEREDICTO: CONTINUA con arista
+   RAZON: cabeza y parte: el paso 30 de la cabeza es una linea entera (pon algo de tiempo para pensar en tu calendario) y el vecino la despliega en 6 pasos con su aviso al equipo y su defensa del hueco. Arista 40
+
+10. desplegar_plan_orden_operaciones_franqueza_radical  CONTRA  desplegar_tres_conversaciones_carrera
+   paso 14 del candidato contra paso 9 del vecino
+   VEREDICTO: CONTINUA con arista
+   RAZON: cabeza y parte: el paso 12 de la cabeza nombra las conversaciones de carrera y dice por donde empezar; el vecino es la cabeza de esa serie y trae sus 12 pasos. Arista 39
+
+11. desplegar_plan_orden_operaciones_franqueza_radical  CONTRA  desplegar_marco_franqueza_radical
+   paso 8 del candidato contra paso 1 del vecino
+   VEREDICTO: SANO, y con una tension del LIBRO declarada
+   RAZON: son hermanos y ninguno despliega al otro: aquel entrega copias del marco puestas a la vista y el marco en uso como brujula; este entrega el plan recorrido. La senial los junta por familia de id (0,429), que es el apellido franqueza_radical compartido. Y DECLARO LA TENSION QUE ENCONTRE AL LEERLOS, porque es del libro y no mia: mi paso 8 transcribe de L21 de cap_12 que copies el marco y lleves ahi la cuenta de quien te dice que, y el paso 8 del vecino transcribe de su capitulo que NO escribas nombres en las casillas. No son el mismo acto (uno apunta quien te critica a ti, el otro etiqueta a otros en un cuadrante) pero se tocan, y quien los lea juntos merece verlo escrito
+
+12. desplegar_tres_conversaciones_carrera  CONTRA  conversar_historia_vida_descubrir_motivadores
+   paso 1 del candidato contra paso 1 del vecino
+   VEREDICTO: CONTINUA con arista
+   RAZON: par YA adjudicado y ya declarado: es la D.37 numero 1 de la vuelta 22, madre y parte de la serie de las tres conversaciones de carrera, con --paso 11 citado. La senial lo vuelve a levantar porque la correccion 3 reescribio la madre, y el veredicto no cambia
+
+13. escuchar_entender_critica_dominar_defensa  CONTRA  contar_historias_propias_explicar_franqueza_radical
+   paso 4 del candidato contra paso 3 del vecino
+   VEREDICTO: SANO
+   RAZON: similitud 0,393, justo por debajo de la banda de gemelo, y cruza de capitulo. Mi paso 4 dice que practiques con otros y su paso 3 dice que expliques la idea con tus propias palabras. Aquel entrega tus historias contadas al equipo; este tu defensa dominada mientras te critican. Ni un objeto compartido
+
+14. escuchar_entender_critica_dominar_defensa  CONTRA  abrazar_incomodidad_silencio_contar_seis
+   paso 4 del candidato contra paso 1 del vecino
+   VEREDICTO: SANO
+   RAZON: es el espejo del par de 0,449 leido desde el otro extremo (aqui 0,446, y la diferencia son los dos decimales de una medida no simetrica). Mismo veredicto, misma razon, y va al mismo discutible 12
+
+15. escuchar_entender_critica_dominar_defensa  CONTRA  premiar_franqueza_hacer_escucha_tangible
+   paso 5 del candidato contra paso 8 del vecino
+   VEREDICTO: SANO
+   RAZON: similitud 0,370, tercer elemento contra cuarto, y el libro los enumera por separado en la linea 237. Aquel entrega el problema criticado arreglado y contado en publico; este la critica escuchada entera sin defensa. La palabra escuchar esta en los dos titulos y ese es todo el parecido: uno escucha para no defenderse, el otro ENSENIA que escucho
+
+16. escuchar_entender_critica_dominar_defensa  CONTRA  practicar_triangulo_critica_tres_papeles
+   paso 6 del candidato contra paso 1 del vecino
+   VEREDICTO: SANO
+   RAZON: es el espejo de un par ya adjudicado mas arriba desde el otro extremo (0,352 alli y 0,350 aqui). Mismo veredicto y misma razon: molde de ejercicio de taller compartido, objetos distintos
+
+17. integrar_peticion_critica_rutina_existente  CONTRA  pedir_critica_primero_crear_seguridad_psicologica
+   paso 6 del candidato contra paso 17 del vecino
+   VEREDICTO: SANO, y es el espejo del par que mas cerca esta de caer
+   RAZON: mismo par que el de 0,733 leido desde el otro extremo, mismo veredicto y misma razon: mi paso 6 y su paso 17 transcriben la misma enumeracion de cuatro elementos, de L237 y de L113. Va al mismo discutible 5
+
+18. integrar_peticion_critica_rutina_existente  CONTRA  abrazar_incomodidad_silencio_contar_seis
+   paso 1 del candidato contra paso 1 del vecino
+   VEREDICTO: SANO
+   RAZON: similitud 0,356 y la senial mira mi paso 1 contra su paso 1: los dos empiezan por parte de lo que el texto pone, que es el molde con el que escribo casi todos los primeros pasos de esta casa. Aquel entrega un silencio aguantado; este la peticion metida en la agenda de tus reuniones a solas. Es ruido de molde, no de objeto
+
+19. medir_critica_respuesta_oyente_brujula  CONTRA  desplegar_marco_franqueza_radical
+   paso 4 del candidato contra paso 6 del vecino
+   VEREDICTO: CONTINUA con arista, Y ES LA ARISTA 53, QUE NO TENIA ANTES DE ESTE INFORME
+   RAZON: paso contra nodo 0,723, y al abrir los dos pasos la razon es evidente: mi paso 4 dice usa el marco de la franqueza radical como una brujula para medir tu critica y llevar la conversacion a un sitio mejor, y su paso 6 dice usa el marco como una brujula, para llevar cada conversacion concreta a un sitio mejor. SON CASI LA MISMA FRASE, porque las dos transcriben la misma instruccion del libro desde dos capitulos distintos. NO ES REPITE, y lo mido por los dos lados: aquel entrega copias del marco puestas a la vista y repartidas, con sus dos prohibiciones (no usarlo como test de personalidad, no escribir nombres en las casillas); este entrega la critica ajustada sobre la marcha, y despliega el uso de brujula en 33 pasos que aquel no tiene: las tres respuestas del oyente una a una, nombrar la emocion, el lema de escuchar, desafiar y comprometer, y el error de ir a las consecuencias antes de tiempo. SU PASO 6 NOMBRA EL ACTO Y NO LO DESPLIEGA, que es la forma literal de D.29. ESTA ARISTA NO ESTABA EN MI LISTA CUANDO ESCRIBI Q.7: la levanto este informe, la lei y la anado con la correccion declarada
+
+20. mejorar_consciencia_propia_relacional_dos_practicas  CONTRA  desplegar_plan_orden_operaciones_franqueza_radical
+   paso 11 del candidato contra paso 4 del vecino
+   VEREDICTO: SANO
+   RAZON: son dos CABEZAS que nombran una misma tercera cosa y ninguna despliega a la otra: mi paso 11 nombra la practica de contar historias y el paso 4 del vecino nombra la etapa comparte tus historias. Es el caso literal de EXTRACTOR.md 15.6: una cabeza y un vecino que no es ninguna de sus partes son hermanos, y su veredicto es SANO. La hija comun si lleva arista de las dos, y son la 42 y la 43
+
+21. pedir_critica_primero_crear_seguridad_psicologica  CONTRA  integrar_peticion_critica_rutina_existente
+   paso 17 del candidato contra paso 6 del vecino
+   VEREDICTO: SANO, y es el par que mas cerca esta de caer
+   RAZON: paso contra nodo 0,733, la senial mas alta de la vuelta, y la razon es exacta: mi paso 17 y su paso 6 transcriben LA MISMA ENUMERACION de los cuatro elementos, uno de L113 y otro de L237, porque el libro la escribe dos veces. Los entregables si son distintos: aquel entrega el orden de operaciones recorrido desde su primer paso, este entrega la peticion metida al final de tus reuniones a solas y anunciada al equipo. Va marcado como discutible 5, y si el auditor lee que dos pasos identicos en dos nodos son un duplicado, la salida es quitar la enumeracion de uno de los dos
+
+22. practicar_triangulo_critica_tres_papeles  CONTRA  abrazar_incomodidad_silencio_contar_seis
+   paso 4 del candidato contra paso 5 del vecino
+   VEREDICTO: SANO
+   RAZON: la senial que los junta es similitud de texto 0,375, dentro de la banda que EXTRACTOR.md 11 llama de lectura prioritaria, y por eso los lei enteros. Comparten el molde de un ejercicio de taller (haz esto con un companiero) y ni un objeto: aquel entrega un silencio aguantado hasta seis despues de una pregunta, este entrega una conversacion ensayada en grupo de tres con su recorrido dibujado en el marco. Son hermanos de capitulo
+
+23. practicar_triangulo_critica_tres_papeles  CONTRA  escuchar_entender_critica_dominar_defensa
+   paso 1 del candidato contra paso 6 del vecino
+   VEREDICTO: SANO
+   RAZON: misma especie que el par anterior: similitud 0,352 por el molde del ejercicio de taller. Aquel entrega tu defensa dominada mientras te critican, con el ejercicio de escuchar tres minutos sin interrumpir; este entrega el impacto de tus palabras devuelto por un observador. Uno practica RECIBIR y el otro practica DAR, y ninguno despliega al otro
+
+24. preguntar_seguimiento_hallar_huecos  CONTRA  calibrar_normalidad_preguntas_jefe
+   paso 5 del candidato contra paso 6 del vecino
+   VEREDICTO: SANO
+   RAZON: cruza de libro (Zhuo contra Scott) y la senial los junta por un molde: el paso 5 pregunta a quien te reporta que le desvela por la noche y el paso 6 del vecino le pregunta a TU JEFE que le quita el sueno. Misma frase hecha, direccion contraria. Aquel entrega tus expectativas calibradas en tus primeros meses; este entrega los huecos de quien te reporta identificados dentro de una reunion a solas
+
+25. premiar_franqueza_hacer_escucha_tangible  CONTRA  abrazar_incomodidad_silencio_contar_seis
+   paso 9 del candidato contra paso 11 del vecino
+   VEREDICTO: SANO
+   RAZON: espejo de un par ya adjudicado desde el otro extremo (0,360 alli, 0,353 aqui). Cuarto elemento contra segundo, enumerados por separado en la linea 237. Mismo veredicto
+
+26. premiar_franqueza_hacer_escucha_tangible  CONTRA  escuchar_entender_critica_dominar_defensa
+   paso 8 del candidato contra paso 5 del vecino
+   VEREDICTO: SANO
+   RAZON: espejo de un par ya adjudicado desde el otro extremo (0,370 alli, 0,382 aqui). Cuarto elemento contra tercero, enumerados por separado en la linea 237. Mismo veredicto
+
+27. resolver_dudas_frecuentes_pedir_critica  CONTRA  despedir_persona_franqueza_radical
+   paso 5 del candidato contra paso 8 del vecino
+   VEREDICTO: SANO
+   RAZON: ruido puro: mi paso 5 dice que si ninguno de los dos tiene solucion a mano te retes a ti mismo preguntando si de verdad es algo que no puedes arreglar, y el paso 8 del vecino esta dentro de una conversacion de despido. Comparten el molde de resolver un problema y ni un objeto: aquel entrega una conversacion de despido tenida sin distanciarte, este entrega una duda de pedir critica resuelta
+
+28. resolver_dudas_frecuentes_pedir_critica  CONTRA  resolver_dudas_frecuentes_reuniones_salto_nivel
+   paso 4 del candidato contra paso 9 del vecino
+   VEREDICTO: SANO, y lo levanta la familia de id porque comparten el APELLIDO resolver_dudas_frecuentes
+   RAZON: familia de id 0,375, y la senial hace justo lo que se espera de ella: los dos ids empiezan igual porque los dos nodos son bloques de preguntas frecuentes. Y ahi acaba el parecido: aquel contesta las cuatro dudas de una reunion de salto de nivel (el equipo que ya no cree en su jefe, los que no hablan, los que no callan y el equilibrio) y este contesta las cuatro de pedir critica (la pregunta rancia, la critica que no puedes arreglar, el jefe joven con gente mayor y el miedo a empezar). Ni una duda se repite. ES ADEMAS EL PRECEDENTE QUE USE PARA CORTAR ESTE NODO, y por eso lo leo entero en vez de firmarlo: si aquel es nodo, este tambien
+
+==============================================================================
+3. LA COMPROBACION: NINGUN PAR SIN RAZON ESCRITA
+==============================================================================
+filas levantadas     : 28
+PARES DISTINTOS      : 21  (una fila y su espejo son UN par)
+pares con veredicto  : 28
+pares SIN veredicto  : 0   []

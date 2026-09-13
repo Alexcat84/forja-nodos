@@ -26,6 +26,9 @@ NUEVAS = [
     (50, 'pedir_critica_primero_crear_seguridad_psicologica', 'criticar_trabajo_evitar_desanimo', 3, 'D.29'),
     (51, 'pedir_critica_primero_crear_seguridad_psicologica', 'medir_critica_respuesta_oyente_brujula', 4, 'D.29'),
     (52, 'pedir_critica_primero_crear_seguridad_psicologica', 'fomentar_guia_reciproca_companieros', 5, 'D.29'),
+    # LA 53 NO ESTABA EN LA PRIMERA LISTA: la levanto el informe de un candidato de
+    # medir_critica (paso contra nodo 0,723), la lei y la anado con su correccion declarada.
+    (53, 'desplegar_marco_franqueza_radical', 'medir_critica_respuesta_oyente_brujula', 6, 'D.29'),
 ]
 
 
@@ -35,7 +38,7 @@ def paso(ident, n):
 
 
 print('=' * 78)
-print('1. LAS QUINCE ARISTAS NUEVAS, CON SU PASO DE MADRE IMPRESO Y SU HIJO CONTADO')
+print('1. LAS DIECISEIS ARISTAS NUEVAS, CON SU PASO DE MADRE IMPRESO Y SU HIJO CONTADO')
 print('=' * 78)
 print('| # | madre | hijo | `--paso` | especie | el paso de la madre, impreso del fichero | pasos del hijo |')
 print('|---:|---|---|---:|---|---|---:|')

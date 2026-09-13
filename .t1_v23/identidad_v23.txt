@@ -1,0 +1,13 @@
+$ git rev-parse --abbrev-ref HEAD
+extraccion-mundo-11
+$ git log --oneline b05d040..HEAD | wc -l
+6
+$ git log -1 --format="%h %ad" --date=iso
+f8ebe88 2026-09-13 13:14:03 -0400
+$ git diff --name-only b05d040..HEAD | sed "s#/.*##" | sort | uniq -c
+     18 .aduana_v23
+      1 .aduana_v23_tmp.txt
+     40 .t1_v23
+      7 .v23
+     20 cuarentena
+      1 docs

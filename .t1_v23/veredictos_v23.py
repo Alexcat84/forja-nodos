@@ -164,6 +164,32 @@ V = {
         'SANO',
         'espejo de un par ya adjudicado desde el otro extremo (0,370 alli, 0,382 aqui). Cuarto '
         'elemento contra tercero, enumerados por separado en la linea 237. Mismo veredicto'),
+    ('medir_critica_respuesta_oyente_brujula', 'desplegar_marco_franqueza_radical'): (
+        'CONTINUA con arista, Y ES LA ARISTA 53, QUE NO TENIA ANTES DE ESTE INFORME',
+        'paso contra nodo 0,723, y al abrir los dos pasos la razon es evidente: mi paso 4 dice usa '
+        'el marco de la franqueza radical como una brujula para medir tu critica y llevar la '
+        'conversacion a un sitio mejor, y su paso 6 dice usa el marco como una brujula, para llevar '
+        'cada conversacion concreta a un sitio mejor. SON CASI LA MISMA FRASE, porque las dos '
+        'transcriben la misma instruccion del libro desde dos capitulos distintos. NO ES REPITE, y '
+        'lo mido por los dos lados: aquel entrega copias del marco puestas a la vista y repartidas, '
+        'con sus dos prohibiciones (no usarlo como test de personalidad, no escribir nombres en las '
+        'casillas); este entrega la critica ajustada sobre la marcha, y despliega el uso de brujula '
+        'en 33 pasos que aquel no tiene: las tres respuestas del oyente una a una, nombrar la '
+        'emocion, el lema de escuchar, desafiar y comprometer, y el error de ir a las consecuencias '
+        'antes de tiempo. SU PASO 6 NOMBRA EL ACTO Y NO LO DESPLIEGA, que es la forma literal de '
+        'D.29. ESTA ARISTA NO ESTABA EN MI LISTA CUANDO ESCRIBI Q.7: la levanto este informe, la lei '
+        'y la anado con la correccion declarada'),
+    ('integrar_peticion_critica_rutina_existente', 'pedir_critica_primero_crear_seguridad_psicologica'): (
+        'SANO, y es el espejo del par que mas cerca esta de caer',
+        'mismo par que el de 0,733 leido desde el otro extremo, mismo veredicto y misma razon: mi '
+        'paso 6 y su paso 17 transcriben la misma enumeracion de cuatro elementos, de L237 y de '
+        'L113. Va al mismo discutible 5'),
+    ('integrar_peticion_critica_rutina_existente', 'abrazar_incomodidad_silencio_contar_seis'): (
+        'SANO',
+        'similitud 0,356 y la senial mira mi paso 1 contra su paso 1: los dos empiezan por parte de '
+        'lo que el texto pone, que es el molde con el que escribo casi todos los primeros pasos de '
+        'esta casa. Aquel entrega un silencio aguantado; este la peticion metida en la agenda de tus '
+        'reuniones a solas. Es ruido de molde, no de objeto'),
     ('resolver_dudas_frecuentes_pedir_critica', 'despedir_persona_franqueza_radical'): (
         'SANO',
         'ruido puro: mi paso 5 dice que si ninguno de los dos tiene solucion a mano te retes a ti '
