@@ -28209,7 +28209,7 @@ Salida de `python .t1_v23/freno_v23.py`, guardada en `.t1_v23/salida_freno_v23.t
 | `cap_11` | 16 | 187 | **1** | **0.53** | el candelabro que el auditor cazo (ACTA 22 4.1), corregido en la vuelta 23 |
 | `cap_12` | 2 | 50 | **0** | **0.00** | MIO, leido en el acto de escribir los 2 |
 | `cap_13` | 12 | 212 | **0** | **0.00** | MIO, leido en el acto de escribir los 12 |
-| **el lote 4 hasta `cap_13`** | **127** | **1511** | **35** | **2.32** | **INCOMPLETO: cinco filas sin releer con el ancho** |
+| **el lote 4 hasta `cap_13`** | **127** | **1511** | **35** | **2.32** | **INCOMPLETO: 6 filas sin releer con el ancho** |
 
 | | |
 |---|---:|
@@ -28236,7 +28236,9 @@ Salida de `python .t1_v23/freno_v23.py`, guardada en `.t1_v23/salida_freno_v23.t
 > `35` (el candelabro), y aun asi la tasa baja **porque el denominador sube de `1.248` a `1.511` con
 > los 262 pasos de `cap_12` y `cap_13`, que nadie ha releido con el instrumento ancho**. **Es la
 > misma trampa del punto 2 aplicada al total**, y por eso el total sigue **declarado INCOMPLETO**:
-> **cinco filas** (`cap_03`, `cap_05`, `cap_06`, `cap_07`, `cap_08`) **siguen sin releer**, y entre
+> ~~**cinco filas**~~ # **SEIS filas** (`cap_01`, `cap_03`, `cap_05`, `cap_06`, `cap_07`, `cap_08`)
+> **siguen sin releer** # **CORRECCION DECLARADA EN LA VUELTA 25** (`S.2.b`), sin borrar la cifra vieja: la lista olvidaba `cap_01` y la palabra decia
+> `cinco` por copiarse de la vuelta anterior en vez de restar la tabla. Y entre
 > ellas suman **96 ocurrencias sin adjudicar**.
 >
 > **Y LO QUE NO HAGO, QUE ES LO QUE LA REGLA MANDA NO HACER:** no publico `cap_12` y `cap_13` en
@@ -28265,14 +28267,15 @@ reporte; no escribe `PARA_ALEXIS.md`).*
 > vuelta. **Pero la vuelta que lo mine necesita saber cual de los dos es el capitulo que el fundador
 > quiere**, porque *un marco de respeto radical* y *una evaluacion de desempenio radicalmente franca*
 > **no se extraen igual**, y el segundo tiene gemelo declarado en la bandeja
-> (`entregar_evaluacion_formal_desempenio_nueve_consejos`, de `cap_11`), que el primero no tendria.
+> (`entregar_evaluacion_formal_desempenio_nueve_consejos`, de ~~`cap_11`~~ # **`cap_09`**), que el
+> primero no tendria. **CORRECCION DECLARADA EN LA VUELTA 25** (`S.2.c`), sin borrar: su fichero escribe `cap_09` dos veces y su propio `resumen_teorico` pone *UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_09.md, unidad Cap. 6, Guidance*. `cap_11` es `Cap. 8, Results`. Remedido por mi hoy en `.v25/correccion_cap09.txt`.
 
 ### Q.11.b. LAS TRES PROPUESTAS, Y NINGUNA ME LA ADJUDICO
 
 | # | lo que propongo | por que, con la cifra delante |
 |---:|---|---|
 | **1** | **que la cifra de atasco del lote 4 deje de ser *cuantos capitulos faltan* y pase a ser *cuantas aristas esperan*** | faltan **1** capitulo y esperan **53** aristas. La primera cifra dice que el lote esta casi cerrado; la segunda dice que **seis vueltas seguidas** han terminado con la puerta abierta y cero entradas. **La segunda describe mejor lo que pasa** |
-| **2** | **que la relectura ancha de las cinco filas pendientes se encargue como tarea propia, no como coda de otra** | lleva **dos vueltas** declarada y **dos vueltas** sin hacerse entera, y son **96 ocurrencias**. Mientras no se haga, **el total del lote es un suelo y no una medida**, y el freno se decide sobre una sola fila firmada de doce |
+| **2** | **que la relectura ancha de las ~~cinco~~ # SEIS filas pendientes se encargue como tarea propia, no como coda de otra** | lleva **dos vueltas** declarada y **dos vueltas** sin hacerse entera, y son ~~**96 ocurrencias**~~ # **97 ocurrencias**. # **CORRECCION DECLARADA EN LA VUELTA 25** (`S.2.b`), sin borrar la cifra vieja: las dos cifras viejas eran la suma exacta de CINCO filas, sin `cap_01`. Mientras no se haga, **el total del lote es un suelo y no una medida**, y el freno se decide sobre una sola fila firmada de doce |
 | **3** | **que la declaracion de tallado se escriba siempre en UNA linea** | me costo dos tablas `sin comprobar` en esta misma vuelta (`Q.9` caida 5). **El tallador exige la afirmacion y la ruta en la misma linea**, y eso no esta escrito en `D.41`: lo aprendi rompiendolo. **Es una linea de documentacion, no maquinaria nueva** |
 
 ---
@@ -28388,7 +28391,7 @@ sin razon escrita**. Hoy sale en verde.
 | **`cap_14`**, la ultima unidad sin minar del lote 4 | **7.638** palabras | **y con el, el cierre del lote 4** |
 | **las 53 aristas declaradas y no cableadas** | **53** | el mismo acto: la insercion del lote cerrado |
 | **los veredictos sin sede propia** | **12 de la vuelta 22 mas ~~14~~ `21` pares distintos de hoy** (`Q.12.c`), ~~28~~ **28 filas contando espejos** (`Q.12.c`) | idem. **CORRECCION DECLARADA de la vuelta 24, TAREA 1.a, correccion 1: el `14` era el numero de CANDIDATOS y no el de pares. Mi propio `Q.12.g` ya escribia `21 pares distintos leidos, 28 filas`, y el recuento del auditor sobre los 20 informes crudos da lo mismo: `28` filas, `21` pares distintos, `7` levantados por los dos lados** |
-| **la relectura ancha de cinco filas del freno** | **96 ocurrencias** sin adjudicar | una tarea propia, que propongo en `Q.11.b` |
+| **la relectura ancha de ~~cinco~~ # SEIS filas del freno** | ~~**96 ocurrencias**~~ # **97 ocurrencias** sin adjudicar | una tarea propia, que propongo en `Q.11.b`. # **CORRECCION DECLARADA EN LA VUELTA 25** (`S.2.b`), sin borrar la cifra vieja: falta `cap_01`, 1 candidato, 9 pasos, 1 ocurrencia |
 | **la pregunta del rotulo de `cap_14`** | 1 | Alexis o el auditor, y va en `Q.11.a` |
 
 ## Q.12.f. LA IDENTIDAD DE LA VUELTA, **LEIDA DE GIT** (`EXTRACTOR.md` 5)
@@ -28422,7 +28425,7 @@ Salida de los comandos, guardada en `.t1_v23/identidad_v23.txt`:
 | **insercion** | # **CERO, por sexta vez con la puerta abierta**, y la razon medida: **al lote 4 le falta `cap_14` y solo `cap_14`**. Grafo `203` a `203`, bitacora `148` a `148`, `_insertados` `201` a `201` |
 | **veredictos** | **21 pares distintos leidos, 28 filas con su razon escrita** (una fila y su espejo son un par). **Su sede hoy es este reporte y lo digo**; `bitacora/` lo sera el dia de la insercion |
 | **aristas** | **53 declaradas y no cableadas** (`35` heredadas, `2` de la correccion 6, `16` nuevas), **repetidas enteras en `Q.7`** con su paso impreso del fichero |
-| **`PASOS INVENTADOS`** | **peor fila firmada `cap_04` `16,67` contra tope `10`**. # **EL FRENO SIGUE DISPARADO Y EL TRAMO SIGUE EN DOS CAPITULOS, que son los dos que esta vuelta mino.** Lote 4 **`2,32` (35 de 1.511)**, **declarado INCOMPLETO**: cinco filas sin releer con el ancho |
+| **`PASOS INVENTADOS`** | **peor fila firmada `cap_04` `16,67` contra tope `10`**. # **EL FRENO SIGUE DISPARADO Y EL TRAMO SIGUE EN DOS CAPITULOS, que son los dos que esta vuelta mino.** Lote 4 **`2,32` (35 de 1.511)**, **declarado INCOMPLETO**: ~~cinco~~ # **SEIS** filas sin releer con el ancho # **CORRECCION DECLARADA EN LA VUELTA 25** (`S.2.b`), sin borrar la cifra vieja: |
 | **discutibles** | **12, marcados antes de saber si acierto**, y en ocho escribo el argumento contra mi propia decision |
 | **caidas mias** | **6, las seis cazadas ANTES de publicar**, y **tres de las seis las cazo un instrumento y no mi cuidado** |
 | **guardas** | `gate`, `guiones` y `test_aceptacion` **corridas al cerrar**. Hook verde en todos los commits, **ninguno saltado**, y el tallado **aborto uno y se arreglo regenerando** |
@@ -29040,8 +29043,9 @@ lectura con la conclusion delante.***
 | | |
 |---|---|
 | id | `entregar_evaluacion_formal_desempenio_nueve_consejos` |
-| unidad | `cap_11` |
-| pasos | **22** |
+| unidad | ~~`cap_11`~~ # **`cap_09`** |
+| pasos | **22**, que **si** eran correctos |
+| **la correccion** | # **CORRECCION DECLARADA EN LA VUELTA 25** (`S.2.c`), sin borrar: su fichero escribe `cap_09` dos veces y su propio `resumen_teorico` pone *UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_09.md, unidad Cap. 6, Guidance*. `cap_11` es `Cap. 8, Results`. Remedido por mi hoy en `.v25/correccion_cap09.txt` |
 | condicion de activacion | *Cuando tu empresa tiene un proceso formal de evaluacion de desempenio y te toca dar la de alguien de tu equipo.* |
 | entregable | *Una evaluacion dada sin sorpresas, contrastada con mas de un juicio, escrita, con la mitad del tiempo puesta en el plan que la propia persona propone, y con sus revisiones marcadas en el calendario.* |
 
@@ -29296,7 +29300,7 @@ Salida de `python .v24/freno_v24.py`, guardada en `.v24/salida_freno_v24.txt`:
 | `cap_12` | 2 | 50 | **0** | **0.00** | MIO, leido en el acto de escribir los 2 |
 | `cap_13` | 12 | 212 | **0** | **0.00** | MIO, leido en el acto de escribir los 12 |
 | `cap_14` | 15 | 174 | **0** | **0.00** | MIO, leido en el acto de escribir los 15 |
-| **el lote 4 ENTERO** | **142** | **1688** | **35** | **2.07** | **INCOMPLETO: cinco filas sin releer con el ancho** |
+| **el lote 4 ENTERO** | **142** | **1688** | **35** | **2.07** | **INCOMPLETO: 6 filas sin releer con el ancho** |
 
 <!-- TALLADO: salida=.v24/freno_tabla2.txt -->
 
@@ -29322,7 +29326,7 @@ un hueco sin releer con el ancho**, y una tasa de `0,00` sobre un numerador que 
 **3. EL TOTAL BAJA DE `2,32` A `2,07` Y TAMPOCO ES UNA MEJORA.** El numerador se queda en **35** y
 el denominador sube de **1.511** a **1.688** con los 174 pasos de `cap_14` y los 3 de la fusion.
 **Es la misma trampa que la vuelta 23 se denuncio a si misma**, y por eso el total sigue
-**declarado INCOMPLETO**: cinco filas (`cap_01`, `cap_03`, `cap_05`, `cap_06`, `cap_07`, `cap_08`)
+**declarado INCOMPLETO**: ~~cinco~~ # **SEIS** filas (`cap_01`, `cap_03`, `cap_05`, `cap_06`, `cap_07`, `cap_08`) # **CORRECCION DECLARADA EN LA VUELTA 25** (`S.2.b`), sin borrar la cifra vieja: la propia frase nombra SEIS capitulos detras de la palabra `cinco`
 siguen sin releer con el instrumento ancho. **Mientras sean hueco, el total del lote 4 es un SUELO
 y no una medida.**
 
@@ -29624,7 +29628,7 @@ Salida de `python .v24/freno_cierre.py`, guardada en `.v24/freno_cierre_t1.txt`:
 | `cap_12` | 2 | 50 | **0** | **0.00** | MIO, leido en el acto de escribir los 2 |
 | `cap_13` | 12 | 212 | **0** | **0.00** | MIO, leido en el acto de escribir los 12 |
 | `cap_14` | 15 | 174 | **0** | **0.00** | MIO, leido en el acto de escribir los 15 |
-| **el lote 4 ENTERO** | **142** | **1688** | **35** | **2.07** | **INCOMPLETO: cinco filas sin releer con el ancho** |
+| **el lote 4 ENTERO** | **142** | **1688** | **35** | **2.07** | **INCOMPLETO: 6 filas sin releer con el ancho** |
 
 Y su segunda tabla, guardada en `.v24/freno_cierre_t2.txt`:
 
@@ -29652,7 +29656,7 @@ que si habria movido la cifra es un instrumento que mirara solo la bandeja**, y 
 > porque **el lote 4 ya no tiene capitulos que minar**. Lo que decide de verdad es el **lote 5**, y
 > ahi la cifra que manda es la misma `cap_04` con `16,67` **mientras nadie la releea**.
 >
-> **Y REPITO LA PROPUESTA QUE EL AUDITOR YA ACEPTO PARA LA VUELTA 25:** mientras las cinco filas de
+> **Y REPITO LA PROPUESTA QUE EL AUDITOR YA ACEPTO PARA LA VUELTA 25:** mientras las ~~cinco~~ # **SEIS** filas de
 > hueco (`cap_01`, `cap_03`, `cap_05`, `cap_06`, `cap_07`, `cap_08`) sigan sin releer con el
 > instrumento ancho, **el `2,07` del lote 4 es un SUELO y no una medida.**
 
@@ -29727,7 +29731,7 @@ uno** (`R.9` caida 7) y **se arreglo regenerando**, no tecleando la celda buena.
 | **los pares que los 7 candidatos parados abren** | **24** por leer (`R.6.d`) | idem |
 | **las aristas declaradas y no cableadas** | **71** (`R.7.a`) | `python .v24/deuda_v24.py` |
 | **los 19 veredictos de insercion ya escritos y no gastados** | **19** en `.v24/veredictos_insercion.json` (`R.8`) | se pasan a `forja.py insertar` en el intento siguiente |
-| **la relectura ancha de las filas de hueco del freno** | **5 filas** (`R.10`) | ya encargada por la `ACTA 23` `11.1` como primera tarea de la vuelta 25 |
+| **la relectura ancha de las filas de hueco del freno** | ~~**5 filas**~~ # **6 filas** (`R.10`) | ya encargada por la `ACTA 23` `11.1` como primera tarea de la vuelta 25. # **CORRECCION DECLARADA EN LA VUELTA 25** (`S.2.b`): la cifra vieja se deja tachada y no se borra. `R.10` imprime `7 de 13` firmadas, y trece menos siete son SEIS |
 | **la correccion 9 de la vuelta 22** | 1, viva y escrita por tercera vez (`R.7.c`) | su acto es el cableado |
 | **la PARADA de la sede del banco** | 1 (`R.2.d`) | la resuelve quien tenga la sede |
 
@@ -29844,7 +29848,7 @@ sigue siendo mio** y se corre en el mismo acto de escribir o de tocar cada candi
 
 | # | tarea | estado |
 |---:|---|---|
-| 1 | **PRIMERA, SIN SOLAPE Y BLOQUEANTE**: los registros, las dos correcciones que acumularon, las ocho aristas adjudicadas y el puente de fidelidad de `cap_14` | **ABIERTA** |
+| 1 | **PRIMERA, SIN SOLAPE Y BLOQUEANTE**: los registros, las dos correcciones que acumularon, las ocho aristas adjudicadas y el puente de fidelidad de `cap_14` | ~~ABIERTA~~ **CERRADA** (`S.2`). **Las dos correcciones hechas regenerando desde el instrumento arreglado y no tecleando la celda buena**, y la primera con # **una CUARTA sede que el acta no encontro: el ORIGEN, `.t1_v23/freno_v23.py`**. Las ocho aristas declaradas con el paso de su madre impreso, **8 de 8 existen**, y la deuda sube de `71` a `79`. El puente corregido con su aduana vuelta a correr (`ENTRARIA`, `0 CAERIA`) y **`cap_14` firmado en `0,57`** |
 | 2 | **Terminar la tanda de insercion del lote 4**, y declarar donde me paro con su cifra | **ABIERTA** |
 | 3 | **Cablear las aristas que ya puedan cablearse**, medido y no supuesto | **ABIERTA** |
 | 4 | **La relectura ancha de tres de las seis filas de hueco del freno** (`cap_01`, `cap_03`, `cap_05`) | **ABIERTA** |
@@ -29853,3 +29857,253 @@ sigue siendo mio** y se corre en el mismo acto de escribir o de tocar cada candi
 *Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
 
 ---
+## S.2. TAREA 1: LOS REGISTROS, LAS DOS CORRECCIONES, LAS OCHO ARISTAS Y EL PUENTE. **CERRADA**
+
+*Primera, sin solape y bloqueante, por orden expreso del encargo. No se abrio ninguna otra tarea
+hasta que esta cerro.*
+
+### S.2.a. LOS REGISTROS DE LA `ACTA 24`, RECOGIDOS SIN REABRIRLOS
+
+**LAS CUATRO ADJUDICACIONES DE LA SECCION `3`:**
+
+| # | lo que el acta adjudica | lo que me toca |
+|---:|---|---|
+| `3.1` | **el libro escribe OCHO remisiones que yo no declare**, y el auditor **retira DOS de las diez que el mismo leyo a ciegas**, porque `L157` no llego a ser ninguno de los once pasos de su madre | declararlas en mi sede: `S.2.d` |
+| `3.2` | **los discutibles 1 y 3 se adjudican juntos y los dos SE SOSTIENEN**: `cap_14` es `D.37` porque `L221` imprime `13.`, y `cap_09` es `D.29` porque su `grep -c` de la cuenta da `0` | nada que corregir. **Queda dicho que un ordinal impreso cuenta como cuenta**, y que estrecharlo seria correccion del fundador |
+| `3.3` | **el discutible 7 SE SOSTIENE**: dejar en cola al bloqueado y seguir cae del lado que `D.36` nombra, *entre dos ordenes posibles, el que abre la cola gana* | **escribir el orden ANTES de correr la tanda**, que es lo que el acta encarga: `S.3.a` |
+| `3.4` | **el gemelo es de `cap_09` y no de `cap_11`**, y la caida nacio en el `PROMPT_SIGUIENTE.md` del propio auditor | la correccion declarada en mi sede: `S.2.c` |
+
+**LAS DOS CAIDAS `REPORTE` DE `8.2`, LAS DOS CON SEDE DE TABLA Y LAS DOS ACUMULAN:**
+
+| # | la caida | donde vivia | mi correccion |
+|---:|---|---|---|
+| **1** | **`cinco filas sin releer con el ancho`** donde la segunda tabla del mismo instrumento imprime `7 de 13` firmadas | **TABLA** de `R.5.g`, **TABLA** de `R.10`, **TABLA** de cierre `R.12.d` | `S.2.b` |
+| **2** | **`unidad: cap_11`** para un candidato cuyo fichero escribe `cap_09` dos veces | **TABLA** de `R.5.b` | `S.2.c` |
+
+**Y LA TERCERA, QUE NO ACUMULA POR SEDE PERO ES MIA IGUAL** (`8.2` fila 3): *la columna de poblacion
+recorre de `331` a `342`* cuando la propia tabla imprime de `330` a `345`. Vive en **PROSA** de
+`R.5.d`. **La recojo aqui para no cobrarme solo lo que acumula.**
+
+**LO QUE TAMBIEN ES MIO Y EL ENCARGO MANDA RECOGER, porque un registro que solo apunta las caidas
+mide media cosa:**
+
+| | |
+|---|---|
+| **los discutibles** | **de los OCHO que marque antes de saber si acertaba, SIETE se sostienen.** La unica caida dentro del marcado es el `5`, **y no es de clase: es una arista que faltaba** |
+| **el corte de `cap_14`** | **mi frontera y la del auditor coinciden en las DIECISIETE piezas y en los QUINCE bordes, sin habernos visto.** Suma de palabras `7638` contra `7638`, residuo `0` |
+| **la unica diferencia de los dos cortes** | **una linea en blanco**: el abre el residuo B en `L240` y yo en `L241`. `L240` no tiene texto y las palabras son `59` en los dos. **Lo escribo porque el lo escribio: no es coincidencia perfecta al digito de la linea** |
+| **la muestra pineada** | **8 de 8 `SANO` sostenidos**, y el propio auditor declara que **con `8` de poblacion la banda dice que la tasa no sirve**. Lo recojo con su salvedad y no sin ella |
+
+> ### **LO QUE ME CORRIGE DE DOCTRINA, Y LO ACEPTO ESCRITO**
+>
+> **Escribi que *una arista lateral sin madre ni hija no esta autorizada*, citando `EXTRACTOR.md`
+> 15.6. Estaba mal, y el motivo es comprobable:**
+>
+>     $ grep -ric "lateral" docs/BANCO_DE_REGLAS.md docs/loop/EXTRACTOR.md docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md
+>
+> **La palabra `lateral` no existe en ninguno de los tres.** Me invente una categoria y despues la
+> use como si fuera regla, que es la especie de caida mas cara de todas: **no se cae una cifra, se
+> cae el criterio.** Lo que 15.6 prohibe es otra cosa y esta impresa: *declarar una arista porque dos
+> nodos compartan familia o tema*. **Aqui no comparten tema: hay una linea del libro que nombra al
+> otro con sus palabras, y un paso del nodo que la recoge.**
+>
+> **Y EL ESQUEMA LO CIERRA:** solo hay `nodos_previos` y `nodos_siguientes`, que su propia descripcion
+> llama *Secuencia dirigida*. **Toda arista de esta casa es madre a hijo**, y la direccion la pone el
+> paso que nombra, **no el orden del libro**: el ejemplar fundacional de `D.29` tiene la madre en el
+> parrafo 31 y el hijo en el 30.
+
+### S.2.b. **CORRECCION 1: LA CIFRA SE CALCULA, Y LA MENTIRA TENIA UNA CUARTA SEDE QUE EL ACTA NO ENCONTRO**
+
+**EL ARREGLO ES EL QUE `D.41` ESCRIBE, y no es teclear la celda buena:** la linea 68 de
+`.v24/freno_cierre.py` escribia `cinco` a mano mientras la linea 77 CALCULABA `7 de 13`. **Ahora las
+dos calculan, y de la misma lista `NUM`:**
+
+    $ sed -n "68,70p" .v24/freno_cierre.py
+    print('| **el lote 4 ENTERO** | **%d** | **%d** | **%d** | **%.2f** | **INCOMPLETO: %d filas sin releer con el ancho** |'
+          % (tot_cand, tot_pasos, tot_num, 100.0 * tot_num / tot_pasos,
+             len([1 for _c, _n, _q, f in NUM if not f])))
+
+> ### **Y BUSCANDO SU GEMELA ENCONTRE EL ORIGEN, QUE ES UNA CUARTA SEDE Y NADIE LA HABIA NOMBRADO**
+>
+>     $ grep -rln "INCOMPLETO: cinco filas" --include=*.py .
+>     ./.t1_v23/freno_v23.py
+>
+> **`.t1_v23/freno_v23.py` linea 67 tiene la misma celda tecleada, y es de donde los dos instrumentos
+> de la vuelta 24 la copiaron.** Su tabla vive en el reporte de la vuelta 23 (`| el lote 4 hasta
+> cap_13 | 127 | 1511 | 35 | 2.32 | INCOMPLETO: cinco filas ... |`) **y tambien era falsa**: su lista
+> `NUM` tiene **12 filas, 6 firmadas y 6 de hueco**, contado por mi hoy con `.v25/arreglar_cinco.py`:
+>
+>     .t1_v23/freno_v23.py: filas en NUM 12, FIRMADAS 6, HUECO calculado 6
+>     .v24/freno_v24.py   : filas en NUM 13, FIRMADAS 7, HUECO calculado 6
+>     .v24/freno_cierre.py: filas en NUM 13, FIRMADAS 7, HUECO calculado 6
+>
+> **El acta nombro tres sedes de tabla en la vuelta 24 y dos suyas. Son CUATRO de tabla, y la cuarta
+> es la primera.** Lo digo porque la conclusion del auditor (*tres sedes, tres vueltas, y ninguna de
+> las tres lo caza porque las tres copian*) **se refuerza con la cuarta, no se debilita**: el `cinco`
+> entro en el codigo UNA vez y despues **viajo por copia de instrumento a instrumento**, que es
+> exactamente lo que `D.41` dice de las tablas, aplicado un piso mas abajo.
+>
+> **COMO SE REGENERO CADA UNA, Y POR QUE NO RE EJECUTE LOS TRES INSTRUMENTOS ENTEROS:** su poblacion
+> de ficheros **cambio** (once candidatos pasaron de `cuarentena/` a `_insertados/` en la vuelta 24),
+> asi que re correrlos hoy daria **un denominador de hoy bajo un rotulo de entonces**, que es
+> falsear la historia para arreglar una celda. `.v25/arreglar_cinco.py` **lee la lista `NUM` del
+> propio fichero fuente, cuenta las filas sin firmar y regenera SOLO esa celda**. La cifra no se
+> teclea en ningun punto de la cadena.
+
+**LA PRUEBA DE QUE LA CORRECCION NO TOCO NADA MAS, y es la que a mi me importaba:**
+
+    $ diff .v25/t1_cierre_viejo.txt .v24/freno_cierre_t1.txt
+    16c16
+    < | **el lote 4 ENTERO** | **142** | **1688** | **35** | **2.07** | **INCOMPLETO: cinco filas sin releer con el ancho** |
+    ---
+    > | **el lote 4 ENTERO** | **142** | **1688** | **35** | **2.07** | **INCOMPLETO: 6 filas sin releer con el ancho** |
+
+**UNA linea de dieciseis. Las quince filas de capitulo, el `142`, el `1688`, el `35` y el `2.07` son
+las mismas.** Y los dos ficheros viejos (`R.5.g` y `R.10`) eran **identicos entre si**, comprobado
+con `diff` y no supuesto, que es lo que el reporte de la vuelta 24 afirmaba en prosa.
+
+**LAS SEDES TOCADAS, UNA A UNA:**
+
+| sede | especie | como se corrigio |
+|---|---|---|
+| `R.5.g`, celda del total | **TABLA** de instrumento | **regenerada por `python scripts/tallar_reporte.py --arreglar`**, que la reescribe desde el fichero del instrumento ya arreglado |
+| `R.10`, la misma celda recomputada | **TABLA** de instrumento | idem, en la misma corrida |
+| **la tabla de la vuelta 23**, *el lote 4 hasta `cap_13`* | **TABLA** de instrumento | idem, tras arreglar el origen `.t1_v23/freno_v23.py`. # **ES LA CUARTA SEDE Y LA ENCONTRE YO** |
+| `R.12.d`, *la relectura ancha ... 5 filas* | **TABLA sin instrumento declarado** | no hay instrumento del que regenerarla, asi que va **TACHADA y no borrada**, con la cifra nueva y el porque al lado |
+| las **seis** sedes de prosa de las vueltas 23 y 24 | **PROSA** | tachadas y no borradas, cada una con su correccion declarada |
+
+**Y LAS CIFRAS DEL HUECO, REMEDIDAS POR MI Y NO COPIADAS DEL ENCARGO** (`EXTRACTOR.md` 5, que es la
+regla que esta caida rompio, y por eso aqui se aplica con mas motivo). Salida de
+`python .v25/hueco.py`, guardada en `.v25/hueco.txt`:
+
+<!-- TALLADO: parcial salida=.v25/hueco.txt -->
+
+| fila de hueco | candidatos | pasos | ocurrencias que su rotulo declara |
+|---|---:|---:|---:|
+| `cap_01` | 1 | 9 | 1 |
+| `cap_03` | 1 | 10 | 6 |
+| `cap_05` | 8 | 76 | 20 |
+| `cap_06` | 10 | 117 | 33 |
+| `cap_07` | 25 | 225 | 20 |
+| `cap_08` | 12 | 102 | 17 |
+| **el hueco entero** | **57** | **539** | **97** |
+
+**ME SALEN LAS CUATRO IGUALES QUE AL ENCARGO: `6` filas, `57` candidatos, `539` pasos, `97`
+ocurrencias.** Lo escribo asi y no como *confirmo las del encargo*, porque **la medicion es mia y la
+coincidencia es el resultado, no el metodo.**
+
+### S.2.c. **CORRECCION 2: `unidad: cap_11` DONDE EL FICHERO ESCRIBE `cap_09` DOS VECES**
+
+Salida de mi lectura de hoy, guardada en `.v25/correccion_cap09.txt`:
+
+    $ grep -o "cap_[0-9]*" cuarentena/scott_radical_candor/entregar_evaluacion_formal_desempenio_nueve_consejos.json | sort | uniq -c
+          2 cap_09
+    $ (su resumen_teorico, impreso)
+    UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_09.md, unidad Cap. 6, Guidance. Sale de las lineas 331 a 361, bajo el rotulo FORMAL PERFORMANCE REVIEWS.
+    pasos_accionables: 22
+    $ sed -n "1,7p" fuentes/scott_radical_candor/cap_11.md
+    unidad: Cap. 8          titulo_textual: Results
+    $ sed -n "1,7p" fuentes/scott_radical_candor/cap_09.md
+    unidad: Cap. 6          titulo_textual: Guidance
+
+**DOS SEDES TOCADAS, las dos tachadas y no borradas:** la tabla de `R.5.b` de la vuelta 24, y la
+prosa de `Q.11.a` de la vuelta 23, que escribia *de `cap_11`* sobre el mismo candidato. **Los `22`
+pasos si eran correctos** y quedan escritos como tales.
+
+> **LO QUE ME TOCA ADMITIR, Y NO ES LA ETIQUETA:** la caida nacio en el `PROMPT_SIGUIENTE.md` del
+> auditor y el la declara en su `3.4` y su `7.2`. **Pero mi propia regla la habria cazado**
+> (`EXTRACTOR.md` 5: *una cifra de su encargo no es fuente de una cifra mia*), **y ese mismo dia la
+> aplique al rotulo de `cap_14` y no a esta.** La diferencia entre las dos no fue el cuidado: **fue
+> que en una remedi y en la otra copie.** Es la misma leccion que `D.41` tiene escrita para las
+> tablas, en una celda que ninguna tabla de instrumento cubre.
+
+### S.2.d. **LAS OCHO ARISTAS ADJUDICADAS, DECLARADAS EN MI SEDE, Y LA CONDICION COMPROBADA UNA A UNA**
+
+*Las adjudica la `ACTA 24` `3.1`. **No las acepto de su palabra: abro el fichero de cada madre y
+compruebo que el paso citado existe**, que es la condicion que `forja.py arista` impone por
+construccion y la que tumbo las dos que el auditor retira.*
+
+Salida de `python .v25/pasos_madres.py`, guardada en `.v25/pasos_madres.txt`. El paso citado de cada
+madre va impreso de su fichero, no parafraseado. **La tabla la compongo yo con las celdas de esa
+salida, asi que va declarada PARCIAL** (`D.41`):
+
+<!-- TALLADO: parcial salida=.v25/pasos_madres.txt -->
+
+| # | madre | `--paso` | hijo | el paso de la madre, impreso | libro | existe? |
+|---:|---|---:|---|---|---|---|
+| **72** | `fijar_cuatro_notas_calcular_nota_global` | **8** de 12 | `elegir_categorias_nota_palabras_propias_empresa` | *Cuenta con lo que cuatro notas por separado en cada una de **las categorias elegidas** permiten...* | `L109` | **SI** |
+| **73** | `repartir_notas_publicar_reparto_esperado` | **3** de 9 | `calibrar_notas_reunion_jefes_pares` | *Cuenta con lo que el texto dice que es lo mas importante en general: **el proceso de calibracion**.* | `L145` y `L151` | **SI** |
+| **74** | `presionar_curva_notas_evitar_forzarla` | **11** de 11 | `calibrar_notas_reunion_jefes_pares` | *...lo que el texto dice que hace importantes **las sesiones de calibracion**...* | `L169` | **SI** |
+| **75** | `evaluar_desempenio_dos_veces_anio` | **6** de 11 | `montar_evaluacion_360_grados_ligera_pares` | *Haz la otra escrita, e incluye en ella **un componente ligero de trescientos sesenta grados**.* | `L191` | **SI** |
+| **76** | `hacer_critica_pares_transparente_ensenar_escribirla` | **1** de 11 | `montar_evaluacion_360_grados_ligera_pares` | *...si haces **critica de trescientos sesenta grados**, tienes que decidir si sera transparente...* | `L207` | **SI** |
+| **77** | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | **6** de 13 | `montar_evaluacion_360_grados_ligera_pares` | *Monta la herramienta de evaluacion ligera **igual que la herramienta de trescientos sesenta grados**...* | `L231` | **SI**. # **es mi discutible 5** |
+| **78** | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | **5** de 13 | `hacer_critica_pares_transparente_ensenar_escribirla` | *...el proceso tardara menos ... si toda la critica de trescientos sesenta grados **es transparente**...* | `L231` | **SI** |
+| **79** | `montar_evaluacion_360_grados_ligera_pares` | **6** de 10 | `elegir_categorias_nota_palabras_propias_empresa` | *...pide simplemente a los empleados que califiquen a sus pares en cada uno de **los cuatro criterios**.* | `L201` | **SI** |
+
+    aristas con el paso de la madre EXISTENTE : 8 de 8
+    aristas con LOS DOS extremos en el grafo  : 0 de 8
+
+**LAS OCHO SON `D.29` Y NO `D.37`**, y la razon es la que el acta escribe: **no hay cuenta escrita,
+hay una lectura que se argumenta.** Por eso cada una lleva delante **el paso impreso que nombra al
+hijo**, y no la cita del libro sola.
+
+**LA DEUDA SUBE DE `71` A `79`.** Y **ninguna se cablea por esta seccion**: los ocho extremos de
+madre y los ocho de hijo viven **todos en la bandeja**, medido arriba y no supuesto. **El cableado es
+la TAREA 3 y se mide DESPUES de insertar, no antes.**
+
+**Y LAS DOS QUE EL AUDITOR RETIRA, escritas para que nadie las vuelva a buscar:** las que su apertura
+leyo en `L157` de `presionar_curva_notas_evitar_forzarla` hacia `elegir_categorias` y hacia
+`fijar_cuatro_notas`. **`L157` no llego a ser ninguno de los once pasos de esa madre**, y una
+remision del libro que no llego a ser paso **no es una arista declarable**. La caida es suya y va
+declarada en su `7.3`.
+
+### S.2.e. **EL PUENTE DE FIDELIDAD DE `cap_14`, CORREGIDO, Y FIRMO `0,57` Y NO `0,00`**
+
+**LA LINEA DEL LIBRO, ABIERTA POR MI CON `sed` Y PEGADA** (`D.35`), guardada en `.v25/puente_L97.txt`:
+
+    $ sed -n "95,99p" fuentes/scott_radical_candor/cap_14.md
+    3. Job ladders
+    I hate job ladders, since bad ones tend to celebrate climbing the corporate ladder rather than
+    doing work that is meaningful. ... So you need to describe what TEAMWORK means for an
+    entry-level employee versus a manager, a director, a VP, and so on. Again, the language is
+    important here. ...
+    4. Number of ratings
+
+<!-- TALLADO: parcial salida=.v25/puente_L97.txt -->
+
+| | |
+|---|---|
+| **lo que mi paso 2 decia** | *Describe que significa **cada categoria** en cada nivel, y el texto pone los niveles que hay que recorrer: empleado de entrada, jefe, director, vicepresidente, y asi hacia arriba.* |
+| **lo que el libro escribe** | **UNA sola categoria: `teamwork`** |
+| **por que es PUENTE y no lectura ancha** | **mandaba escribir CUATRO descripciones por nivel donde el libro escribe UNA palabra.** No es cosmetico: **multiplica el trabajo por cuatro sobre una linea que el libro no escribio**, que es la especie *completar el inventario* de `D.30` |
+| **lo que dice ahora** | *Describe que significa en cada nivel **la categoria de la escalera**, y el texto **la ejemplifica con una sola, el trabajo en equipo**: empleado de entrada, jefe, director, vicepresidente, y asi hacia arriba.* |
+| **la correccion declarada** | **dentro del propio fichero**, anexada a su `resumen_teorico`, con la linea 97 pegada y **con la cifra vieja dicha**: *la marca de 7 TRANSCRIPCION 0 PUENTE era mia y era falsa: eran 6 y 1* |
+
+**Y LA ADUANA SE VOLVIO A CORRER SOBRE EL FICHERO TOCADO, EN EL MISMO ACTO** (`EXTRACTOR.md` 16).
+Salida de `python forja.py informe cuarentena/scott_radical_candor/escribir_escaleras_puesto_evitar_dos_extremos.json`,
+guardada en `.v25/aduana_puente.txt`:
+
+    candidatos revisados        : 1
+    poblacion del barrido       : 345   (214 del grafo mas 131 que esperan en bandejas)
+    EL SALDO
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+> ### **FIRMO `cap_14` EN `0,57` (1 DE 174) Y NO EN `0,00`, Y LA FIRMA ES MIA**
+>
+> **El puente lo encontro el auditor y la firma la pongo yo**, que es lo que su `8.3` pide: el
+> numerador lo firma quien lo releyo. **Lo relei contra la linea 97 antes de aceptarlo**, y es puente:
+> el libro pone una palabra donde mi paso ponia cuatro descripciones.
+>
+> **Y NO ENTRA EN LA METRICA DE CREDITO**, porque su `8.4` es explicita: **un puente encontrado y
+> corregido es la regla funcionando**, no una caida. Lo que seria caida es uno que entrase al grafo
+> sin corregir, **y este esta en la bandeja y sale corregido ANTES de que su lote se inserte.**
+>
+> **LO QUE ME LLEVO DE AQUI, Y VA EN MI PROPIA LETRA:** ese candidato declaraba en su
+> `resumen_teorico` *NO ESCRIBO PERIODO NI DESTINATARIO* y *NO ESCRIBO NUMERO DE NIVELES*, o sea que
+> **estaba mirando expresamente las tres especies de puente que `D.30` nombra por su nombre, y se le
+> colo una CUARTA que esa tabla no lista: generalizar el ejemplo del libro.** **Un catalogo de
+> especies enseña a mirar donde el catalogo mira.** Lo propongo como especie nueva en `S.8`, y no me
+> lo adjudico yo.

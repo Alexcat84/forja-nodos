@@ -1,0 +1,12 @@
+| fila de hueco | candidatos | pasos | ocurrencias que su rotulo declara |
+|---|---:|---:|---:|
+| `cap_01` | 1 | 9 | 1 |
+| `cap_03` | 1 | 10 | 6 |
+| `cap_05` | 8 | 76 | 20 |
+| `cap_06` | 10 | 117 | 33 |
+| `cap_07` | 25 | 225 | 20 |
+| `cap_08` | 12 | 102 | 17 |
+| **el hueco entero** | **57** | **539** | **97** |
+
+filas de hueco contadas : 6
+filas firmadas          : 7 de 13

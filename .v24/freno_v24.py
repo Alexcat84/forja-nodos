@@ -65,8 +65,9 @@ for cap, num, quien, firmado in NUM:
     if firmado and tasa > peor[1]:
         peor = (cap, tasa)
     print('| `%s` | %d | %d | **%d** | **%.2f** | %s |' % (cap, cand, pasos, num, tasa, quien))
-print('| **el lote 4 ENTERO** | **%d** | **%d** | **%d** | **%.2f** | **INCOMPLETO: cinco filas sin releer con el ancho** |'
-      % (tot_cand, tot_pasos, tot_num, 100.0 * tot_num / tot_pasos))
+print('| **el lote 4 ENTERO** | **%d** | **%d** | **%d** | **%.2f** | **INCOMPLETO: %d filas sin releer con el ancho** |'
+      % (tot_cand, tot_pasos, tot_num, 100.0 * tot_num / tot_pasos,
+         len([1 for _c, _n, _q, f in NUM if not f])))
 
 print('')
 print('=' * 78)

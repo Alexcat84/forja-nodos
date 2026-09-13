@@ -1,0 +1,23 @@
+$ grep -o "cap_[0-9]*" cuarentena/scott_radical_candor/entregar_evaluacion_formal_desempenio_nueve_consejos.json | sort | uniq -c
+      2 cap_09
+
+$ python -c "...imprime su UNIDAD DE ORIGEN y cuenta sus pasos..."
+UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_09.md, unidad Cap. 6, Guidance. Sale de las lineas 331 a 361, bajo el rotulo FORMAL PERFORMANCE REVIEWS. ES L
+pasos_accionables: 22
+
+$ sed -n "1,7p" fuentes/scott_radical_candor/cap_11.md
+---
+libro: Scott, Radical Candor
+edicion: Fully Revised & Updated Edition, St. Martin's Press, First Edition October 2019
+unidad: Cap. 8
+titulo_textual: Results
+fidelidad: verbatim
+---
+$ sed -n "1,7p" fuentes/scott_radical_candor/cap_09.md
+---
+libro: Scott, Radical Candor
+edicion: Fully Revised & Updated Edition, St. Martin's Press, First Edition October 2019
+unidad: Cap. 6
+titulo_textual: Guidance
+fidelidad: verbatim
+---

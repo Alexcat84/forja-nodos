@@ -16,7 +16,7 @@
 | `cap_12` | 2 | 50 | **0** | **0.00** | MIO, leido en el acto de escribir los 2 |
 | `cap_13` | 12 | 212 | **0** | **0.00** | MIO, leido en el acto de escribir los 12 |
 | `cap_14` | 15 | 174 | **0** | **0.00** | MIO, leido en el acto de escribir los 15 |
-| **el lote 4 ENTERO** | **142** | **1688** | **35** | **2.07** | **INCOMPLETO: cinco filas sin releer con el ancho** |
+| **el lote 4 ENTERO** | **142** | **1688** | **35** | **2.07** | **INCOMPLETO: 6 filas sin releer con el ancho** |
 
 ==============================================================================
 2. EL FRENO SE DECIDE SOBRE EL PEOR CAPITULO FIRMADO, NO SOBRE EL TOTAL

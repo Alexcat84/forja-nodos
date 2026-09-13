@@ -15,7 +15,7 @@
 | `cap_11` | 16 | 187 | **1** | **0.53** | el candelabro que el auditor cazo (ACTA 22 4.1), corregido en la vuelta 23 |
 | `cap_12` | 2 | 50 | **0** | **0.00** | MIO, leido en el acto de escribir los 2 |
 | `cap_13` | 12 | 212 | **0** | **0.00** | MIO, leido en el acto de escribir los 12 |
-| **el lote 4 hasta `cap_13`** | **127** | **1511** | **35** | **2.32** | **INCOMPLETO: cinco filas sin releer con el ancho** |
+| **el lote 4 hasta `cap_13`** | **127** | **1511** | **35** | **2.32** | **INCOMPLETO: 6 filas sin releer con el ancho** |
 
 ==============================================================================
 2. EL FRENO SE DECIDE SOBRE EL PEOR CAPITULO FIRMADO, NO SOBRE EL TOTAL
