@@ -1,3 +1,90 @@
+# PARADA DEL 13 SEP 2026: LA TABLA TECLEADA
+
+> ## LA DECISION DEL FUNDADOR, 13 sep 2026
+>
+> **1. LA RACHA `REPORTE` DEL EXTRACTOR SE REINICIA con condicion mecanica**, la que
+> ya funciono en la otra casa: nace `scripts/tallar_reporte.py`, que **REGENERA** desde
+> los ficheros de salida de los instrumentos todas las tablas que el reporte declara
+> como salida de instrumento (fronteras, censos, conteos de pasos, aristas) y **las
+> compara celda a celda** con las escritas; y `cerrar_reporte.py` corre **en el cierre
+> de cada vuelta y en el pre-commit**: una tabla que difiere de su instrumento
+> **ABORTA el commit nombrando la fila**. Regla **`D.41`: LA TABLA QUE DICE SER DE
+> INSTRUMENTO ES LA DEL INSTRUMENTO**, verificada por codigo y no por promesa. Caso
+> positivo: la tabla de la vuelta 22 tal como quedo **debe caer nombrando sus 14
+> filas**; regenerada, pasa.
+>
+> **2. Las tres cifras falsas de la vuelta 22 se corrigen POR REGENERACION** (no a
+> mano), con correccion declarada citando la caida.
+>
+> **3. `PROMPT_SIGUIENTE` de la vuelta 23:** `cap_12` a `cap_14` del lote 4 con el
+> tallador ya corriendo en cada cierre; al cerrar el lote, `D.39` inserta (el informe
+> de lote lo corre el arnes antes, como se decidio).
+
+> **ARCHIVADA.** Este fichero fue `docs/loop/PARA_ALEXIS.md` hasta que el fundador
+> resolvio lo que pedia. **Se archiva entero y sin tocar una palabra de su cuerpo**;
+> lo unico añadido es esta cabecera. El arnes solo mira `docs/loop/PARA_ALEXIS.md`,
+> asi que el bucle ya no esta detenido por el.
+>
+> ### EL CASO POSITIVO, CORRIDO ANTES DE TOCAR EL REPORTE
+>
+>     $ python scripts/tallar_reporte.py
+>     DIFIERE  docs/loop/REPORTE.md linea 26614
+>       declara: .t1_v22/salida_frontera_cap11.txt
+>       14 fila(s) distintas de su instrumento:
+>         `L37 a L65`    palabras  reporte '1198'  instrumento '1083'
+>         ... y trece mas, cada una con su fila, su columna y los dos valores
+>
+>     $ python scripts/tallar_reporte.py --arreglar
+>     TALLADA de nuevo: docs/loop/REPORTE.md linea 26614, 16 celda(s) tecleadas
+>
+>     $ python scripts/tallar_reporte.py
+>     TALLADO VERDE
+>
+> **CATORCE FILAS, QUE ES EXACTAMENTE LO QUE LA DECISION PIDIO POR SU NOMBRE.**
+>
+> ### LAS TRES CIFRAS, REGENERADAS Y NO TECLEADAS (punto 2)
+>
+> | cifra | estaba | esta | de donde sale ahora |
+> |---|---|---|---|
+> | la tabla de frontera de `cap_11` | 14 filas falsas | las 18 del instrumento | `.t1_v22/salida_frontera_cap11.txt` |
+> | el saldo de la aduana | `10` y `7` | **`9` y `8`** | `.t1_v22/salida_saldo_v22.txt`, que lee los 17 informes de `.aduana_v22/` |
+> | pares y veredictos | `11`, con `3 CONTINUA` | **`12`**, con **`4 CONTINUA`** | el mismo |
+>
+> **Y UNA COSA QUE EL INSTRUMENTO NUEVO APRENDIO DEL ACTA, no al reves:** contaba
+> **13** pares donde el auditor leyo **12**, porque `montar_reunion_gran_debate`
+> contra `montar_reunion_gran_decision` **se levanta por los dos lados y es UN par,
+> no dos**. **Un par es dos nodos, no una flecha.** Tenia razon el acta y se corrigio
+> el instrumento.
+>
+> ### LO QUE LA DECISION **NO** CONTESTA, Y EL AUDITOR LO PIDIO POR ESCRITO
+>
+> Su seccion `3` pregunta si *tanda limpia* (`D.38.1`) significa **sin caida
+> registrada** (lectura `A`) o **sin caida de la especie que acumula** (lectura `B`),
+> y avisa: *hoy la regla tiene dos lecturas y la diferencia es una parada.*
+>
+> **LA DECISION REINICIA LA RACHA, Y REINICIAR SOLO TIENE SENTIDO BAJO LA LECTURA
+> `A`** (bajo la `B` no habria parada que reiniciar). **Pero la letra sigue sin
+> escribirse**, y la proxima parada volvera a depender de cual se lea. **Queda
+> abierto y nombrado aqui**, que es lo unico que puedo hacer sin decidir por el
+> fundador una regla que es suya.
+>
+> ### LA RACHA QUEDA EN 0 DE 3, Y NO POR INDULTO
+>
+> **El trabajo de la vuelta 22 nunca estuvo en discusion** y el propio auditor lo
+> dice en su ultima linea: cuatro vueltas sin caida de `CLASE` ni de `CIFRA
+> PUBLICADA`, `cap_11` cerrado al digito, cero `CAERIA` en 17 informes, y una medida
+> corrida contra su propio interes. **Lo que se rompio cuatro veces fue teclear una
+> tabla que un fichero ya tenia impresa, y eso a partir de hoy lo comprueba el
+> codigo.**
+>
+> ### Y LAS NUEVE CORRECCIONES DE SU SECCION 5 NO SE PIERDEN
+>
+> Las dos que eran cifra falsa (`1` y `2`) **quedan hechas aqui, por regeneracion**.
+> **Las siete restantes van enteras al encargo de la vuelta 23**, que es donde el
+> auditor las dejo escritas.
+
+---
+
 # PARA ALEXIS. **EL BUCLE SE DETIENE EL 13 SEP 2026 POR CREDITO ROTO: LA RACHA `REPORTE` DEL EXTRACTOR LLEGA A 3 DE 3**
 
 *Escrito por el auditor al cerrar la `ACTA 22` (`docs/loop/ACTA_AUDITOR.md`, la seccion que abre con

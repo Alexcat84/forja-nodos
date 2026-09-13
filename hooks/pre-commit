@@ -33,5 +33,18 @@ if ! "$PYTHON" forja.py guiones; then
     exit 1
 fi
 
+# LA TABLA QUE DICE SER DE INSTRUMENTO ES LA DEL INSTRUMENTO (D.41, 13 sep 2026).
+# Solo lee ficheros ya escritos: no corre ningun instrumento. Cuesta menos de un
+# segundo, y caza la especie que tumbo la racha REPORTE cuatro veces seguidas.
+echo "[pre-commit] tallado del reporte (D.41)"
+if ! "$PYTHON" scripts/cerrar_reporte.py --hook; then
+    echo ""
+    echo "[pre-commit] COMMIT ABORTADO: una tabla dice venir de un instrumento y no"
+    echo "coincide con el. NO se corrige tecleando la celda:"
+    echo "  python scripts/tallar_reporte.py --arreglar"
+    echo "y se escribe al lado de que caida sale (correccion declarada)."
+    exit 1
+fi
+
 echo "[pre-commit] verde"
 exit 0

@@ -26613,24 +26613,24 @@ parte en cuatro y cada trozo dice que es.**
 
 | tramo | palabras | nodos | que es | la salida, pegada |
 |---|---:|---:|---|---|
-| `L15 a L35` | 88 | **1** | P1 la cabeza: quien se comunica con quien y las herramientas nombradas | `15:One of your most important responsibilities to keep everything moving smooth` |
-| `L37 a L65` | 1198 | **1** | P2 el 1:1: mentalidad, frecuencia, presentarse y la agenda del reportado | `37:1:1 CONVERSATIONS` |
-| `L67 a L97` | 231 | **1** | P3 las preguntas de seguimiento que buscan los huecos | `67:Some good follow-up questions` |
-| `L99 a L113` | 220 | **1** | P4 nutrir en el 1:1 las ideas nuevas, que son fragiles | `99:Encourage new ideas in the 1:1.` |
-| `L115 a L127` | 208 | **1** | P5 las seniales del 1:1 de que estas fallando como jefe | `115:Signs you'll get from 1:1s that you're failing as a boss` |
-| `L129 a L145` | 391 | **1** | P6a la reunion de equipo y su agenda de tres bloques | `129:STAFF MEETINGS` |
-| `L147 a L157` | 524 | **1** | P7 los apuntes de sala de estudio | `147:Listen: put updates in a shared document during a "study hall" (15 minutes)` |
+| `L15 a L35` | 88 | **1** | P1  la cabeza: quien se comunica con quien y las herramientas nombradas | `15:One of your most important responsibilities to keep everything moving smooth` |
+| `L37 a L65` | 1083 | **1** | P2  el 1:1: mentalidad, frecuencia, presentarse y la agenda del reportado | `37:1:1 CONVERSATIONS` |
+| `L67 a L97` | 226 | **1** | P3  las preguntas de seguimiento que buscan los huecos | `67:Some good follow-up questions` |
+| `L99 a L113` | 218 | **1** | P4  nutrir en el 1:1 las ideas nuevas, que son fragiles | `99:Encourage new ideas in the 1:1.` |
+| `L115 a L127` | 267 | **1** | P5  las seniales del 1:1 de que estas fallando como jefe | `115:Signs you'll get from 1:1s that you're failing as a boss` |
+| `L129 a L145` | 399 | **1** | P6a la reunion de equipo y su agenda de tres bloques | `129:STAFF MEETINGS` |
+| `L147 a L157` | 527 | **1** | P7  los apuntes de sala de estudio | `147:Listen: put updates in a shared document during a "study hall" (15 minutes).` |
 | `L159 a L163` | 249 | **0** | P6b el bloque de aclarar de esa misma agenda | `159:Clarify: identify key decisions/debates (30 minutes). What are the one or tw` |
-| `L165 a L173` | 313 | **1** | P8 el tiempo para pensar, bloqueado y sagrado | `165:THINK TIME` |
-| `L175 a L193` | 501 | **1** | P9 la reunion de gran debate | `175:"BIG DEBATE" MEETINGS` |
+| `L165 a L173` | 322 | **1** | P8  el tiempo para pensar, bloqueado y sagrado | `165:THINK TIME` |
+| `L175 a L193` | 532 | **1** | P9  la reunion de gran debate | `175:"BIG DEBATE" MEETINGS` |
 | `L195 a L203` | 302 | **1** | P10 la reunion de gran decision | `195:"BIG DECISION" MEETINGS` |
-| `L205 a L221` | 446 | **1** | P11 la reunion general | `205:ALL-HANDS MEETINGS` |
-| `L223 a L233` | 269 | **1** | P12 pelear la proliferacion con tiempo de ejecutar | `223:EXECUTION TIME` |
-| `L235 a L249` | 757 | **1** | P13 el tablero kanban | `235:KANBAN BOARDS` |
-| `L251 a L269` | 506 | **1** | P14 pasear por la organizacion | `251:WALK AROUND` |
-| `L271 a L299` | 626 | **1** | P15a la rueda recorrida sobre tu propia cultura | `271:BE CONSCIOUS OF CULTURE` |
+| `L205 a L221` | 548 | **1** | P11 la reunion general | `205:ALL-HANDS MEETINGS` |
+| `L223 a L233` | 272 | **1** | P12 pelear la proliferacion de reuniones con tiempo de ejecutar | `223:EXECUTION TIME` |
+| `L235 a L249` | 759 | **1** | P13 el tablero kanban | `235:KANBAN BOARDS` |
+| `L251 a L269` | 530 | **1** | P14 pasear por la organizacion | `251:WALK AROUND` |
+| `L271 a L299` | 897 | **1** | P15a la rueda recorrida sobre tu propia cultura | `271:BE CONSCIOUS OF CULTURE` |
 | `L301 a L305` | 211 | **1** | P16 debatir y decidir lo que te tienta delegar a recursos humanos | `301:Debate and decide explicitly. Don't let things that pervert your culture "ju` |
-| `L307 a L333` | 305 | **0** | P15b persuadir, ejecutar, aprender y escuchar, de esa misma rueda | `307:Persuade. Pay attention to the small things` |
+| `L307 a L333` | 915 | **0** | P15b persuadir, ejecutar, aprender y escuchar, de esa misma rueda | `307:Persuade. Pay attention to the small things` |
 | | **8345** | **16** | **los tramos que dan nodo** | |
 
 **LA FILA DE RESIDUO, NOMBRADA LINEA A LINEA** (`ACTA 19` `7.4` ORDEN A). **Es UNA fila, de
@@ -27173,14 +27173,36 @@ ninguna vez: su salida esta en el registro de cada uno.
 
 ## P.9.3. LO QUE ESTA VUELTA PRODUJO, EN CIFRAS DE SU PROPIO INSTRUMENTO
 
+<!-- TALLADO: parcial salida=.t1_v22/salida_saldo_v22.txt -->
+> ### CORRECCION DECLARADA, 13 sep 2026, POR REGENERACION Y NO A MANO
+>
+> *Decision del fundador del 13 sep 2026 sobre la parada de la vuelta 22, punto
+> 2. Caida citada: `ACTA 22` y `PARA_ALEXIS` `2.2` y `2.3`. **El texto viejo se
+> tacha y no se borra.***
+>
+> **LAS CIFRAS DE ESTAS DOS FILAS SALEN AHORA DE UN INSTRUMENTO**, no de una
+> lectura de cabeza: `python .t1_v22/saldo_v22.py`, guardada en
+> `.t1_v22/salida_saldo_v22.txt`, que **lee los diecisiete informes de
+> `.aduana_v22/`** y no recomputa la aduana.
+>
+> **LA CAUSA DE LAS DOS ERA UNA SOLA: la pieza 14 salio `BLOQUEARIA` en su
+> propio informe y el agregado la sumo como `ENTRARIA`.** De ahi el `10` y el
+> `7` donde hay `9` y `8`, y el par que faltaba.
+>
+> **Y UNA COSA QUE EL INSTRUMENTO APRENDIO AL ESCRIBIRSE:** contaba **13** pares
+> donde el acta leyo **12**, porque `montar_reunion_gran_debate` contra
+> `montar_reunion_gran_decision` **se levanta por los dos lados y es UN par, no
+> dos**. **Un par es dos nodos, no una flecha.** La que tenia razon era el acta,
+> y el instrumento se corrigio, no al reves.
+
 | | |
 |---|---|
 | **candidatos escritos** | **17**: la pieza 14 de `cap_10` mas los **16** de `cap_11` |
 | **pasos escritos** | **198**: 11 mas 187 |
-| **informes de un candidato corridos** | **17, uno por candidato y en el acto de escribirlo**. Saldo: **10 `ENTRARIA`, 7 `BLOQUEARIA`, 0 `CAERIA`** |
+| **informes de un candidato corridos** | **17, uno por candidato y en el acto de escribirlo**. Saldo: ~~**10 `ENTRARIA`, 7 `BLOQUEARIA`**~~ **9 `ENTRARIA`, 8 `BLOQUEARIA`, 0 `CAERIA`** |
 | **`CAERIA` en toda la vuelta** | # **CERO, y ningun id tumbado en la puerta** (la vuelta 21 tuvo uno) |
-| **filas de vecino levantadas** | **13**, que son **11 pares distintos**, **los 11 leidos y con su razon escrita** (`P.3.d` y `P.4.e`) |
-| **veredictos emitidos** | **11**: **8 `SANO`** y **3 `CONTINUA` con arista** |
+| **filas de vecino levantadas** | **13**, que son ~~**11 pares distintos**, **los 11 leidos**~~ **12 pares distintos**, **los 12 leidos y con su razon escrita** (`P.3.d` y `P.4.e`) |
+| **veredictos emitidos** | ~~**11**: **8 `SANO`** y **3 `CONTINUA`**~~ **12**: **8 `SANO`** y **4 `CONTINUA` con arista**. *El reparto sale de la lectura (`ACTA 22` `1.7`), no del instrumento: el instrumento cuenta los pares, no los clasifica* |
 | **aristas declaradas** | **16 nuevas** (`P.8`), **mas las 3 `D.37` de la pieza 14** ya contadas en las 19 |
 | **fronteras cerradas contra el cuerpo** | **2**: `cap_10` recerrada en `8.976 = 8.976` con residuo troceado en 6 filas, y `cap_11` en `8.626 = 8.626` con residuo de 281 palabras en 1 fila nombrada linea a linea |
 | **correcciones declaradas sin borrar texto viejo** | **2** (`P.3.f`), **y ninguna toco un paso**: 11 y 11, 13 y 13 |
@@ -27259,9 +27281,9 @@ esta en `P.6.b`. **No la repito aqui**, que seria publicar dos veces una cifra q
 | **la bloqueante** | **cerrada la primera**, como el encargo mandaba: `cap_10` queda en **14 piezas y 205 pasos** |
 | **unidad minada** | **`cap_11` (`Cap. 8`, `Results`) ENTERO**, 16 candidatos y 187 pasos |
 | **`cap_12`** | # **NO ENTRA**, y se declara con su cifra: `cap_11` da **16 contra un techo de 15**, asi que `EXTRACTOR.md` 12.4 cierra la vuelta en ese capitulo. Hueco bajo 15: **cero** |
-| **aduana** | **17 informes de un candidato, uno por candidato y en su acto**. **10 `ENTRARIA`, 7 `BLOQUEARIA`, 0 `CAERIA`**. Poblacion de `300` a `316`, creciendo lote a lote |
+| **aduana** | **17 informes de un candidato, uno por candidato y en su acto**. ~~**10 `ENTRARIA`, 7 `BLOQUEARIA`**~~ **9 `ENTRARIA`, 8 `BLOQUEARIA`, 0 `CAERIA`** (corregido por regeneracion, `P.9.3`). Poblacion de `300` a `316`, creciendo lote a lote |
 | **insercion** | # **CERO, por quinta vez con la puerta abierta.** Grafo `203` a `203`, bitacora `148` a `148`, `_insertados` `201` a `201` |
-| **veredictos** | **11 pares leidos, 11 razones escritas**: 8 `SANO`, 3 `CONTINUA` con arista. **Su sede hoy es este reporte y lo digo**; `bitacora/` lo sera el dia de la insercion |
+| **veredictos** | ~~**11 pares leidos, 11 razones escritas**: 8 `SANO`, 3 `CONTINUA`~~ **12 pares leidos, 12 razones escritas**: 8 `SANO`, 4 `CONTINUA` con arista (corregido por regeneracion, `P.9.3`). **Su sede hoy es este reporte y lo digo**; `bitacora/` lo sera el dia de la insercion |
 | **aristas** | **35 declaradas y no cableadas** (`19` heredadas mas `16` nuevas), **repetidas enteras en `P.8`**, mas **2 pares leidos que NO llevan arista porque no tengo paso que citar** |
 | **`PASOS INVENTADOS`** | **peor fila `cap_04` `16,67` contra tope `10`**. # **EL FRENO SE DISPARA Y EL TRAMO BAJA A DOS CAPITULOS.** `cap_11` sale en **`0,00` (0 de 187)**, leido en el acto. Lote 4 **`2,72` (34 de 1.248)**, **declarado INCOMPLETO**: seis filas sin leer con el ancho, **97 ocurrencias sin adjudicar** |
 | **discutibles** | **8, marcados antes de saber si acierto**, y **en cinco escribo el argumento contra mi propia decision** |

@@ -319,7 +319,9 @@ Lo que este documento añade es **el ritmo de la vuelta**:
    cuantos entrarian, cuantos bloquearian y cuantos caerian, con cero
    inserciones. **Se lee entero antes de la primera insercion.**
 
-   > ### **PERO EL DEL LOTE ENTERO YA NO LO CORRES TU** (`D.41`, 12 sep 2026)
+   > ### **PERO EL DEL LOTE ENTERO YA NO LO CORRES TU** (~~`D.41`~~ `D.42`, 12 sep 2026)
+   >
+   > *Renumerada el 13 sep: `D.41` es ahora la del tallado de tablas.*
    >
    > **LO CORRE EL ARNES, COMO PASO PROPIO, ANTES DE TU TURNO**, y te lo entrega en
    > `docs/loop/INFORME_DE_LOTE.txt` **sellado con su `git hash-object`**, anotado
@@ -381,6 +383,30 @@ Lo que este documento añade es **el ritmo de la vuelta**:
    > dispare no baja el volumen del lote: **el volumen lo baja su propia cifra.**
 5. **AL CERRAR EL LIBRO**, los cuatro barridos de la fase 3 del flujo, y la
    auditoria ciega de la fase 4 antes de darlo por integrado.
+6. **AL CERRAR LA VUELTA, `python scripts/cerrar_reporte.py`** (`D.41`). Corre el
+   tallado en estricto mas las cinco guardas. **No es un tramite: es lo que
+   comprueba que lo que publicaste es lo que midio tu instrumento.**
+
+   > ### **LA TABLA QUE DIGA SER DE UN INSTRUMENTO SE ANEXA, NO SE TECLEA** (`D.41`)
+   >
+   > **Guarda la salida del instrumento en un fichero y pega la tabla de ahi.** El
+   > hook compara **celda a celda** contra ese fichero en cada commit, y **una tabla
+   > que difiere ABORTA el commit nombrando la fila.**
+   >
+   > **SE ARREGLA REGENERANDO, NUNCA TECLEANDO LA CELDA BUENA:**
+   >
+   >     python scripts/tallar_reporte.py --arreglar
+   >
+   > y despues **escribes al lado de que caida sale**, que es correccion declarada.
+   >
+   > **POR QUE EXISTE, y es tu historial:** cuatro caidas de la racha `REPORTE` en
+   > cuatro vueltas fueron la misma cosa. En la vuelta 22, **tu mismo reporte llevaba
+   > una tabla pegada** (`cap_10`, al digito) **y una tecleada** (`cap_11`, 14 de 18
+   > filas falsas). **La diferencia no fue el cuidado: fue el metodo.**
+   >
+   > **SI TU TABLA RESUME UN INSTRUMENTO en vez de reproducirlo** (dos filas de
+   > quince salen de el), **dilo** con `<!-- TALLADO: parcial salida=<ruta> -->`
+   > encima. Queda listada como cita en cada corrida. **Lo que no vale es callarlo.**
 
 **CUANDO UN CAPITULO ENTERO CAE EN LA MISMA FAMILIA**, que es el caso que la
 seccion vieja dejaba sin escribir: **eso no es una señal de duplicado, es una

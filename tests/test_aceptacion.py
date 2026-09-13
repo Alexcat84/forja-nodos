@@ -1951,6 +1951,177 @@ class PruebaPoblacionDelInforme(BaseForja):
         self.assertIn("CHOCAN entre si dentro del lote", texto)
 
 
+class PruebaTallado(BaseForja):
+    """D.41: LA TABLA QUE DICE SER DE INSTRUMENTO ES LA DEL INSTRUMENTO.
+
+    Cuatro caidas de la racha `REPORTE` en cuatro vueltas fueron la misma cosa: una
+    tabla presentada como salida de un instrumento y tecleada. En la vuelta 22 el
+    mismo reporte llevaba una tabla **pegada** (`cap_10`, al digito) y una
+    **tecleada** (`cap_11`, 14 de 18 filas falsas), y el fichero del instrumento ya
+    tenia la buena impresa. **La diferencia no fue el cuidado: fue el metodo.**
+    """
+
+    TABLA = ("| tramo | palabras | nodos |\n"
+             "|---|---:|---:|\n"
+             "| `L15 a L35` | 88 | **1** |\n"
+             "| `L37 a L65` | 1083 | **1** |\n"
+             "| `L67 a L97` | 226 | **1** |\n")
+
+    def _instrumento(self, tabla=None, cabecera=True):
+        ruta = os.path.join(self.taller, "salida_frontera.txt")
+        cuerpo = "LA COMPROBACION\n  suma de las filas : 1397\n\n" if cabecera else ""
+        comun.escribir_texto(ruta, cuerpo + (tabla or self.TABLA))
+        return ruta
+
+    def _reporte(self, cuerpo):
+        ruta = os.path.join(self.taller, "REPORTE.md")
+        comun.escribir_texto(ruta, cuerpo)
+        return ruta
+
+    def _declarado(self, tabla=None, entremedio=""):
+        """Un reporte con la declaracion que esta casa escribe de verdad."""
+        return ("## P.4.b. LA FRONTERA\n\n"
+                "*Salida de `python .t1/frontera.py`, guardada en "
+                "`salida_frontera.txt`.*\n\n" + entremedio + (tabla or self.TABLA))
+
+    def _revisar(self, cuerpo):
+        from scripts import tallar_reporte
+        self._instrumento()
+        return tallar_reporte.revisar(self._reporte(cuerpo), raiz=self.taller)
+
+    def test_una_tabla_pegada_de_su_instrumento_pasa(self):
+        dictamenes = self._revisar(self._declarado())
+        self.assertEqual(len(dictamenes), 1)
+        self.assertEqual(dictamenes[0]["estado"], "TALLADA")
+        self.assertEqual(dictamenes[0]["diferencias"], [])
+
+    def test_caso_positivo_una_celda_tecleada_cae_y_nombra_su_fila(self):
+        """Sin esto, la guarda podria estar diciendo siempre que si.
+
+        Es la caida de la vuelta 22 en pequenio: el instrumento dice 1083 y la
+        tabla publicada dice 1198.
+        """
+        tecleada = self.TABLA.replace("| 1083 |", "| 1198 |")
+        dictamenes = self._revisar(self._declarado(tecleada))
+        self.assertEqual(dictamenes[0]["estado"], "DIFIERE")
+        self.assertEqual(len(dictamenes[0]["diferencias"]), 1)
+        diferencia = dictamenes[0]["diferencias"][0]
+        self.assertEqual(diferencia["fila"], "`L37 a L65`")
+        self.assertEqual(diferencia["columna"], "palabras")
+        self.assertEqual(diferencia["reporte"], "1198")
+        self.assertEqual(diferencia["instrumento"], "1083")
+        self.anotar("D41", "una celda tecleada: cazada, con su fila y su columna")
+
+    def test_el_informe_nombra_la_fila_y_manda_regenerar(self):
+        from scripts import tallar_reporte
+        dictamenes = self._revisar(
+            self._declarado(self.TABLA.replace("| 1083 |", "| 1198 |")))
+        texto = tallar_reporte.texto_informe(dictamenes)
+        self.assertIn("TALLADO EN ROJO", texto)
+        self.assertIn("`L37 a L65`", texto)
+        self.assertIn("--arreglar", texto)
+
+    def test_una_fila_que_falta_y_una_que_sobra_se_nombran(self):
+        sin_una = ("| tramo | palabras | nodos |\n"
+                   "|---|---:|---:|\n"
+                   "| `L15 a L35` | 88 | **1** |\n"
+                   "| `L37 a L65` | 1083 | **1** |\n"
+                   "| `L99 a L113` | 218 | **1** |\n")
+        dictamenes = self._revisar(self._declarado(sin_una))
+        notas = " ".join(d["nota"] for d in dictamenes[0]["diferencias"])
+        self.assertIn("NO esta en la salida del instrumento", notas)
+        self.assertIn("el instrumento la imprime y el reporte NO la lleva", notas)
+
+    def test_un_reflujo_de_espacios_no_es_una_cifra_falsa(self):
+        """El instrumento alinea con dos espacios y el markdown con uno.
+
+        Hacer caer una vuelta por eso enseñaria a desconfiar de la guarda, que es
+        la unica forma segura de que nadie la mire.
+        """
+        reflujo = self.TABLA.replace("| `L15 a L35` | 88 |",
+                                     "|  `L15 a L35`  |  88  |")
+        dictamenes = self._revisar(self._declarado(reflujo))
+        self.assertEqual(dictamenes[0]["estado"], "TALLADA")
+
+    def test_la_declaracion_vale_aunque_haya_un_bloque_en_medio(self):
+        """La casa declara, luego pega la comprobacion, y solo despues la tabla.
+
+        Una ventana fija dejo fuera justo la tabla de `cap_11`, que es el caso
+        que obligo a esta guarda a existir.
+        """
+        medio = ("    tramos que dan nodo : 18\n    lineas NO cubiertas : 0\n"
+                 "    IGUALES             : True\n\n" * 4)
+        dictamenes = self._revisar(self._declarado(entremedio=medio))
+        self.assertEqual(len(dictamenes), 1)
+        self.assertEqual(dictamenes[0]["estado"], "TALLADA")
+
+    def test_caso_positivo_una_tabla_sin_declaracion_no_se_mira(self):
+        """El reporte tiene 705 tablas y 8 declaran instrumento.
+
+        Una guarda que midiera las 705 contra nada convertiria el commit en un
+        campo de minas, y la regla es sobre las que DICEN venir de un instrumento.
+        """
+        dictamenes = self._revisar("## Una seccion cualquiera\n\n" + self.TABLA)
+        self.assertEqual(dictamenes, [])
+
+    def test_citar_un_fichero_no_es_declarar_que_la_tabla_sale_de_el(self):
+        """La primera version marco ocho tablas por nombrar `loop.log` cerca."""
+        cuerpo = ("## El coste de la vuelta\n\n"
+                  "Los tiempos estan en `docs/loop/loop.log` y en `salida_frontera.txt`, "
+                  "por si alguien quiere mirarlos.\n\n" + self.TABLA)
+        self.assertEqual(self._revisar(cuerpo), [])
+
+    def test_una_tabla_declarada_PARCIAL_cita_y_no_reproduce(self):
+        """Una tabla de resumen puede traer DOS filas de instrumento y diez que no."""
+        cuerpo = ("## P.9.3. EL RESUMEN\n\n"
+                  "<!-- TALLADO: parcial salida=salida_frontera.txt -->\n"
+                  "*Salida de `salida_frontera.txt` en dos de sus filas.*\n\n"
+                  "| | |\n|---|---|\n| **tareas** | **5** |\n| **paradas** | **0** |\n")
+        dictamenes = self._revisar(cuerpo)
+        self.assertEqual(dictamenes[0]["estado"], "CITA")
+        self.assertEqual(dictamenes[0]["diferencias"], [])
+
+    def test_un_instrumento_sin_tabla_no_se_puede_comprobar_y_no_es_diferencia(self):
+        from scripts import tallar_reporte
+        comun.escribir_texto(os.path.join(self.taller, "salida_frontera.txt"),
+                             "EL SALDO\n  ENTRARIAN : 9\n  BLOQUEARIAN : 8\n")
+        dictamenes = tallar_reporte.revisar(
+            self._reporte(self._declarado()), raiz=self.taller)
+        self.assertEqual(dictamenes[0]["estado"], "SIN COMPROBAR")
+        self.assertIn("la resume, no la reproduce", dictamenes[0]["motivo"])
+
+    def test_una_salida_que_no_esta_es_SIN_COMPROBAR_y_lo_dice(self):
+        from scripts import tallar_reporte
+        dictamenes = tallar_reporte.revisar(
+            self._reporte(self._declarado()), raiz=self.taller)
+        self.assertEqual(dictamenes[0]["estado"], "SIN COMPROBAR")
+        self.assertIn("salida_frontera.txt", dictamenes[0]["motivo"])
+
+    def test_el_estricto_tumba_lo_que_el_hook_deja_pasar(self):
+        """El cierre de vuelta es el momento en que los instrumentos siguen ahi."""
+        from scripts import tallar_reporte
+        dictamenes = tallar_reporte.revisar(
+            self._reporte(self._declarado()), raiz=self.taller)
+        blando = tallar_reporte.texto_informe(dictamenes, estricto=False)
+        duro = tallar_reporte.texto_informe(dictamenes, estricto=True)
+        self.assertNotIn("EN ROJO", blando)
+        self.assertIn("EN ROJO (estricto)", duro)
+
+    def test_arreglar_regenera_la_tabla_desde_su_instrumento(self):
+        """La correccion es por regeneracion, NUNCA tecleando la celda buena."""
+        from scripts import tallar_reporte
+        self._instrumento()
+        ruta = self._reporte(self._declarado(
+            self.TABLA.replace("| 1083 |", "| 1198 |")))
+        arregladas = tallar_reporte.arreglar(ruta, regenerar=False, raiz=self.taller)
+        self.assertEqual(len(arregladas), 1)
+        self.assertIn("1083", comun.leer_texto(ruta))
+        self.assertNotIn("1198", comun.leer_texto(ruta))
+        # Y DESPUES DE ARREGLAR, EL TALLADO PASA.
+        self.assertEqual(
+            tallar_reporte.revisar(ruta, raiz=self.taller)[0]["estado"], "TALLADA")
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
@@ -1961,7 +2132,8 @@ def main():
              PruebaAristaDeclarada37,
              PruebaSedeVacia,
              PruebaHerencia,
-             PruebaPoblacionDelInforme]
+             PruebaPoblacionDelInforme,
+             PruebaTallado]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -2001,6 +2173,8 @@ def main():
     print("  la poblacion del informe es grafo mas bandejas (12 sep 2026, punto 3): "
           "%d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaPoblacionDelInforme)._tests))
+    print("  D.41, la tabla que dice ser de instrumento es la del instrumento: "
+          "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaTallado)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

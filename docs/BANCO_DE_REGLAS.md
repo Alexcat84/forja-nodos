@@ -1817,11 +1817,105 @@ deja de ser posible es **perder un remedio por no haber ido a buscarlo.**
 escalones. **La racha se reinicia a 0 de 3 una sola vez**, por esta decision y con esta
 condicion mecanica puesta; **el siguiente `REMEDIO ROTO` acumula como cualquier otro.**
 
-## D.41. EL INFORME DE LOTE VIVE DONDE CABE, Y NO CABE EN UN TURNO (12 sep 2026, decision del fundador)
+## D.41. LA TABLA QUE DICE SER DE INSTRUMENTO ES LA DEL INSTRUMENTO (13 sep 2026, decision del fundador)
 
-*Punto 2 de la decision del fundador del 12 sep 2026. **El numero lo pongo yo**: el
-fundador no lo numero, y una decision sin sede se pierde. Si el numero estorba, se
-renumera; lo que no se puede es dejarla sin banco.*
+*Punto 1 de la decision del fundador del 13 sep 2026, sobre la parada de la vuelta 22,
+archivada en `docs/loop/paradas/2026-09-13-la-tabla-tecleada.md`. **La racha `REPORTE`
+del extractor se reinicia CON ESTA CONDICION MECANICA PUESTA ENCIMA**, que es la forma
+que ya funciono en la otra casa y la que funciono aqui con `D.40`.*
+
+### CUATRO CAIDAS EN CUATRO VUELTAS, Y LAS CUATRO ERAN LA MISMA COSA
+
+| vuelta | que se publico | que decia el instrumento |
+|---|---|---|
+| **19** | una fila de rutas | otra |
+| **22** | la tabla de frontera de `cap_11`, **14 de sus 18 filas** | el fichero la tenia impresa, bajo el titulo `LA TABLA, IMPRESA Y NO TECLEADA` |
+| **22** | el saldo de la aduana: `10 ENTRARIA`, `7 BLOQUEARIA` | los diecisiete informes dicen **`9` y `8`** |
+| **22** | `11` pares distintos, `8 SANO` y `3 CONTINUA` | son **`12`**, `8 SANO` y **`4 CONTINUA`** |
+
+**Y LO QUE LO CIERRA: EN LA MISMA VUELTA, EL MISMO REPORTE LLEVABA UNA TABLA PEGADA Y
+UNA TECLEADA.** La de `cap_10` reprodujo al digito; la de `cap_11` tenia 14 filas
+falsas. **La diferencia no fue el cuidado: fue el metodo.**
+
+**NI UNA DE LAS CUATRO MOVIO UN DATO.** El grafo, la bitacora, los veredictos y las
+fronteras estaban bien. **Lo que estaba mal era la cuenta de lo que se habia hecho**, y
+no era inocuo: quien sumara la columna publicada de `cap_11` obtenia `7345` y concluia
+que la frontera **no cierra**, que es lo contrario de lo que pasa.
+
+> ### **UNA REGLA QUE SE CUMPLE TECLEANDO CON CUIDADO NO ES UNA REGLA: ES UNA INTENCION.**
+
+### La letra
+
+> **TODA TABLA QUE EL REPORTE DECLARE COMO SALIDA DE UN INSTRUMENTO (fronteras, censos,
+> conteos de pasos, aristas) SE COMPARA CELDA A CELDA CONTRA LA SALIDA DE ESE
+> INSTRUMENTO.**
+>
+> **UNA TABLA QUE DIFIERE ABORTA EL COMMIT, NOMBRANDO LA FILA.**
+>
+> **Y SE CORRIGE REGENERANDO, NUNCA TECLEANDO LA CELDA BUENA.**
+
+| pieza | donde |
+|---|---|
+| el tallador | `scripts/tallar_reporte.py` |
+| el cierre | `scripts/cerrar_reporte.py`, en el cierre de cada vuelta (**estricto**) y en `hooks/pre-commit` (modo corto) |
+| como se declara | la prosa que esta casa ya escribe (*Salida de `X`, guardada en `Y`*) o el marcador `<!-- TALLADO: script=X salida=Y -->` |
+| como se arregla | `python scripts/tallar_reporte.py --arreglar`, y la correccion se declara citando la caida |
+
+### Lo que la guarda NO hace, y cada linea tiene su motivo medido
+
+**NO CORRE NINGUN INSTRUMENTO POR SU CUENTA.** Compara contra **el fichero de salida
+guardado**. Los instrumentos de una vuelta **escriben** (`.t1_v22/lote_a.py` crea
+candidatos en `cuarentena/`) y **llaman a la aduana**, que cuesta minutos por candidato:
+**un hook que re ejecuta lo que encuentra escrito en un documento no es una guarda, es
+una bomba.** Correr el instrumento es una orden explicita (`--regenerar`) y el hook no
+la da nunca. **Coste medido del hook entero: 1,3 segundos.**
+
+**NO MIRA LAS TABLAS QUE NO DECLARAN NADA.** El reporte tiene **705 tablas** y **8**
+dicen venir de un instrumento. Medir las 705 contra nada convertiria cada commit en un
+campo de minas, y la regla es sobre las que **dicen** venir de un instrumento.
+
+**NO CONFUNDE CITAR CON REPRODUCIR.** Una tabla de resumen puede traer dos filas que
+salen de un instrumento y diez que no: se declara `<!-- TALLADO: parcial ... -->` y
+queda como **CITA**, listada en cada corrida para que se vea. **La primera version de
+esta guarda se lo hizo a si misma con su propia correccion**, y por eso la distincion
+esta escrita.
+
+**Y UN RE FLUJO DE ESPACIOS NO ES UNA CIFRA FALSA.** Que el instrumento alinee con dos
+espacios y el markdown con uno no cambia ningun dato. **Una guarda que grita donde no
+hay nada enseña a no mirarla**, que es la unica forma segura de que nadie la mire.
+
+### Caso positivo, y es el que la decision pidio por su nombre
+
+> **LA TABLA DE LA VUELTA 22, TAL COMO QUEDO, CAE NOMBRANDO SUS 14 FILAS. REGENERADA,
+> PASA.**
+
+Corrido el 13 sep 2026, antes de tocar el reporte: `14 fila(s) distintas de su
+instrumento`, con su fila, su columna y los dos valores. Tras `--arreglar`: `TALLADO
+VERDE`. Mas **13 pruebas de unidad** (`PruebaTallado`), entre ellas que una celda
+tecleada cae con su fila y su columna, que una tabla sin declaracion no se mira, y que
+citar un fichero cerca **no** es declarar que la tabla salga de el.
+
+### Lo que esta regla NO arregla, y conviene decirlo
+
+**No comprueba que el instrumento tenga razon.** Comprueba que la tabla sea la suya. Un
+instrumento mal escrito publica una tabla mal escrita, y eso lo caza una lectura, no un
+`diff`. **Lo que esta regla cierra es el hueco entre lo que la maquina midio y lo que el
+documento dice que midio**, que es donde cayeron las cuatro.
+
+## D.42. EL INFORME DE LOTE VIVE DONDE CABE, Y NO CABE EN UN TURNO (12 sep 2026, decision del fundador)
+
+*Punto 2 de la decision del fundador del 12 sep 2026.*
+
+> ### RENUMERADA, 13 sep 2026. **ERA `D.41` Y PASA A `D.42`.**
+>
+> El numero se lo puse yo el 12 sep porque el fundador no numero su decision, y lo
+> escribi con esta condicion: *si el numero estorba, se renumera.* **Estorbo al dia
+> siguiente:** la decision del 13 sep asigna `D.41` a otra regla, con esas letras.
+> **El numero del fundador manda sobre el mio**, y esta regla se corre un sitio.
+>
+> **El texto viejo no se borra y el contenido no cambia**: lo unico que cambia es el
+> numero. Si encuentras un `D.41` que habla del informe de lote en un acta o un
+> reporte de la vuelta 21 o 22, **es esta, y esta aqui.**
 
 ### La cifra que lo obliga
 
