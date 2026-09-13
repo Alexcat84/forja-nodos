@@ -1,0 +1,46 @@
+{
+ "condiciones_activacion": "Cuando estas dentro de una reunion a solas y quieres ensenar que escuchas, que te importa y que quieres ayudar, y ademas sacar los huecos entre lo que la persona hace, lo que cree que deberia hacer y lo que quiere hacer.",
+ "denominaciones": {
+  "nombre_largo": "El repertorio literal de preguntas de seguimiento de la reunion a solas, con las tres que abren, las seis del trabajo que se quiere y no se quiere, las tres de los equipos de los que dependes, y la nota del texto sobre para que sirve la ultima",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "Some good follow-up questions"
+   }
+  ],
+  "sigla": ""
+ },
+ "dominio": "gestion_equipos",
+ "entregable_esperado": "Los huecos de esa persona identificados con sus palabras, y el asunto de otro equipo planteado por ella misma a ese equipo en vez de resuelto por ti.",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "id": "preguntar_seguimiento_hallar_huecos",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "pasos_accionables": [
+  "Haz estas preguntas de seguimiento con el doble proposito que el texto les pone: ensenar no solo que estas escuchando sino que te importa y quieres ayudar, e identificar los huecos entre lo que la gente hace, lo que cree que deberia hacer y lo que quiere hacer.",
+  "Pregunta: por que?",
+  "Pregunta: como puedo ayudar?",
+  "Pregunta: que puedo hacer, o dejar de hacer, que te facilitaria esto?",
+  "Pregunta: que es lo que te desvela por la noche?",
+  "Pregunta: en que estas trabajando en lo que no quieres trabajar?",
+  "Pregunta: no quieres trabajar en ello porque no te interesa o porque crees que no es importante?",
+  "Pregunta: que puedes hacer para dejar de trabajar en ello?",
+  "Pregunta: en que no estas trabajando en lo que si quieres trabajar?",
+  "Pregunta: por que no estas trabajando en ello?",
+  "Pregunta: que puedes hacer para empezar a trabajar en ello?",
+  "Pregunta: como te sientes respecto a las prioridades de los equipos de los que dependes?",
+  "Pregunta: en que estan trabajando ellos que parezca poco importante o incluso contraproducente?",
+  "Pregunta: que es lo que no estan haciendo y a ti te gustaria que hicieran?",
+  "Pregunta: has hablado directamente con esos otros equipos de lo que te preocupa? Y si no, por que no?",
+  "Y ten presente lo que el texto marca como nota importante sobre esa ultima: el objetivo aqui es animar a la gente a plantear el asunto directamente entre ellos, no resolverles el problema tu."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 67 a 97, bajo el rotulo Some good follow-up questions, dentro de la seccion 1:1 CONVERSATIONS. ES LA PIEZA P3 DE LA FRONTERA DE cap_11. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante y en su caso mas facil: el libro pone su inventario ENTERO Y LITERAL, catorce preguntas escritas una a una entre las lineas 71 y 97, mas su proposito escrito en la linea 69 y su nota de uso en la 97. Escribir los pasos aqui es transcribir, y no se inventa nada. POR QUE ES NODO PROPIO Y NO PARTE DE montar_reuniones_solas_mentalidad_frecuencia: su par es otro. Aquel se dispara cuando vas a MONTAR las reuniones y entrega las reuniones puestas; este se dispara cuando ya estas DENTRO de una y entrega los huecos identificados. La linea 69 escribe ese entregable con sus propias palabras (to identify the gaps between what people are doing, what they think they ought to be doing, and what they want to be doing). LAS PREGUNTAS VAN EN CASTELLANO Y EN SU ORDEN, y la unica que lleva coletilla es la ultima, porque el propio texto le cuelga una nota que empieza con Important note. EL REENVIO DE LA LINEA 97 A Prevent Backstabbing DEL CAPITULO SEIS NO SE TRANSCRIBE COMO PASO: es un remite a otro sitio del libro, que EXTRACTOR.md 9 llama el caso literal de nombrar el procedimiento de otro. Ese procedimiento ya vive en la bandeja como impedir_punialadas_espalda_equipo, y la arista va declarada en docs/loop/REPORTE.md de la vuelta 22. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 16 pasos, 16 TRANSCRIPCION, 0 PUENTE. P1 de la linea 69; P2 a P15 de las lineas 71 a 97, una por linea; P16 de la linea 97. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuantas de las catorce se hacen en una misma reunion, en que orden, y que se hace con el hueco una vez identificado. El libro da las preguntas y no da el despues.",
+ "titulo": "Preguntar en la reunion a solas las preguntas de seguimiento que ensenian los huecos entre lo que la persona hace, lo que cree que deberia hacer y lo que quiere hacer"
+}

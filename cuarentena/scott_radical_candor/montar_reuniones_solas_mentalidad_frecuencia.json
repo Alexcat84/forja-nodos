@@ -1,0 +1,72 @@
+{
+ "condiciones_activacion": "Cuando vas a montar o a arreglar las reuniones a solas con las personas que te reportan directamente, y quieres que salga de ellas lo que el texto dice que son: tu mejor oportunidad de escuchar de verdad.",
+ "denominaciones": {
+  "nombre_largo": "Las cuatro cosas que el texto pone para sacar el maximo de las reuniones a solas: la mentalidad de comida o cafe en vez de reunion, la frecuencia atada al cuello de botella del jefe, no cancelarlas nunca, y la agenda en manos de quien te reporta",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "1:1 CONVERSATIONS"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Employees set the agenda, you listen and help them clarify"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Mind-set"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Frequency"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Show up!"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Your direct report's agenda, not yours"
+   }
+  ],
+  "sigla": ""
+ },
+ "dominio": "gestion_equipos",
+ "entregable_esperado": "Las reuniones a solas puestas con su frecuencia, no canceladas, con la agenda puesta por quien te reporta, y con la direccion en la que esa persona quiere ir y lo que se lo bloquea entendidos por ti.",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "id": "montar_reuniones_solas_mentalidad_frecuencia",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "pasos_accionables": [
+  "Trata las reuniones a solas como tus reuniones de obligado cumplimiento: el texto dice que son tu mejor oportunidad de escuchar, escuchar de verdad, a la gente de tu equipo, para asegurarte de que entiendes su punto de vista sobre lo que funciona y lo que no.",
+  "Usalas tambien para llegar a conocer a las personas a tu cargo, que es como subes en la dimension de importarte personalmente del marco de la franqueza radical.",
+  "No las uses para soltar toda la critica que llevas guardada: el texto dice que eso va en las conversaciones improvisadas de dos a tres minutos que ya estas teniendo.",
+  "Ten claro cual es el proposito, que el texto escribe entero: escuchar y aclarar, o sea entender hacia que direccion quiere ir cada persona que trabaja para ti y que se lo esta bloqueando.",
+  "Cambia primero tu mentalidad, porque el texto dice que es lo que mas decide como salen: deja de pensar en ellas como reuniones y tratalas como si estuvieras comiendo o tomando un cafe con alguien a quien tienes ganas de conocer mejor.",
+  "Si programarlas sobre una comida ayuda, hazlas comidas periodicas.",
+  "Si a ti y a la persona os gusta andar y hay un buen sitio para pasear cerca de la oficina, hazlas paseando.",
+  "Ajusta la hora a tu energia: si eres de maniana, ponlas por la maniana; si eres de los que se desinflan a las dos de la tarde, no las pongas a las dos de la tarde.",
+  "Pero no seas un cretino con eso, que es como el texto lo dice: si a ti te gusta levantarte a las cinco e ir al gimnasio, no esperes que la gente que trabaja para ti quede alli contigo.",
+  "Pon la frecuencia contando tu propio limite, porque el texto dice que las reuniones a solas deben ser el cuello de botella natural que decide cuantas personas puede tener a su cargo un jefe: el suyo son cincuenta minutos a la semana con cada persona y no mas de unas cinco horas de reuniones a solas en el calendario, porque escuchar es trabajo duro y no hay capacidad infinita para ello.",
+  "Si la gente esta en remoto, ten esas conversaciones por videoconferencia y complementalas con comprobaciones rapidas mas frecuentes.",
+  "Si tienes diez personas a tu cargo, pasa las reuniones a solas a veinticinco minutos a la semana.",
+  "Si tienes veinte y no hay nada que puedas hacer al respecto, ponlas de veinticinco minutos cada dos semanas con cada persona.",
+  "Y mira ademas si puedes crear oportunidades de liderazgo para la gente que trabaja para ti y reducir el numero de personas que te reportan.",
+  "Para evitar que las reuniones se multipliquen, usa el tiempo de la reunion a solas para tener las conversaciones de carrera y, si toca, para hacer las evaluaciones formales de desempenio.",
+  "Presentate: el texto dice que es probablemente el consejo mas importante de todos para las reuniones a solas.",
+  "Cuenta con la cuenta que el texto hace, para que no te pille: entre viajes, las veces que inevitablemente caeras enfermo y alguna vacacion, cancelaras al menos dos o tres de cada trece programadas; y si ademas reservas algunas para las especiales, te quedan siete u ocho normales por trimestre, o tres o cuatro si tienes mas de diez personas y las haces cada dos semanas.",
+  "Asi que no canceles tus reuniones a solas, se incendie lo que se incendie en tu dia.",
+  "Deja que la agenda la ponga y la posea la persona que te reporta, y no tu: el texto dice que asi son mas productivas, porque te dejan escuchar lo que a ellos les importa.",
+  "Pon aun asi las expectativas basicas sobre la agenda y sobre como llega: si quieres una agenda estructurada dilo, si la quieres por adelantado dilo, y si no la vas a mirar por adelantado ponlo claro tambien.",
+  "Di tambien si te vale que lleguen con unos puntos apuntados en una servilleta o si prefieres que la lleven en un documento compartido al que se pueda volver despues.",
+  "Y haz tu propio trabajo, que el texto define en una linea: pedir cuentas a quien llega sin preparar, o decidir que de vez en cuando esta bien tener una reunion a solas sin agenda."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 37 a 65, bajo el rotulo 1:1 CONVERSATIONS y sus cuatro rotulos interiores Mind-set, Frequency, Show up! y Your direct report's agenda, not yours. ES LA PIEZA P2 DE LA FRONTERA DE cap_11. POR QUE LOS CUATRO ROTULOS VAN EN UN SOLO NODO Y NO EN CUATRO, con la vara de la ACTA 20 seccion 4.1 y la confirmacion de la ACTA 21 seccion 4.2 delante: la linea 45 los encadena ella misma con una sola frase (Here are a few things you can do to make sure you and each of your reports are getting the most out of these 1:1 meetings), y los cuatro comparten UNA condicion de activacion (vas a montar tus reuniones a solas) y UN entregable (las reuniones puestas y no canceladas, con su agenda). Es la misma forma que armar_plan_anual_crecimiento_equipo en cap_10. Y EL LIBRO NO ESCRIBE LA CUENTA: dice a few things, no cuatro, asi que ni el titulo ni el id llevan numero y esto NO es una serie D.37. EL CASO DE SHERYL SANDBERG, DE LA LINEA 43, NO VIAJA A NINGUN PASO: es el ejemplar de un problema resuelto en una reunion a solas (viajar a diez ciudades contra quedarse embarazada, resuelto trayendo al equipo en vez de yendo). Lo que SI viaja de la linea 43 es su primera frase, que es doctrina y no caso: el proposito de una reunion a solas es escuchar y aclarar. Manual 3.5. RELECTURA DE FIDELIDAD D.30 EN EL ACTO, paso a paso contra su linea: 22 pasos, 22 TRANSCRIPCION, 0 PUENTE. P1 a P3 de la linea 41; P4 de la linea 43; P5 a P9 de la linea 49; P10 y P11 de la linea 53; P12 a P14 de la linea 55; P15 de la linea 57; P16 a P18 de la linea 61; P19 a P22 de la linea 65. LAS CIFRAS QUE LLEVAN LOS PASOS SON TODAS DEL LIBRO Y LAS COMPROBE UNA A UNA, que es la especie que mi propia vuelta 21 se cazo 22 veces: cincuenta minutos, cinco horas, cinco personas, veinticinco minutos, diez personas, veinte personas, dos o tres de cada trece, siete u ocho por trimestre y tres o cuatro por trimestre estan todas escritas en las lineas 53, 55 y 61. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se recupera una reunion a solas cancelada, que se hace si quien te reporta no quiere poner agenda nunca, y cada cuanto se revisa si la frecuencia elegida sigue valiendo.",
+ "titulo": "Montar tus reuniones a solas con cada persona a tu cargo: la mentalidad, la frecuencia, presentarte siempre y la agenda puesta por quien te reporta"
+}

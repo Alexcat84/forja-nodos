@@ -26261,7 +26261,7 @@ suelto sigue siendo mio** y se corre en el mismo acto de escribir cada candidato
 |---:|---|---|
 | 1 | Los registros: la `ACTA 21` entera y sus ocho adjudicaciones recogidas sin reabrirlas | ~~ABIERTA~~ **CERRADA** (`P.2`) |
 | 2 | **BLOQUEANTE Y PRIMERA**: la **pieza 14** de `cap_10` (la cabeza de las conversaciones de carrera), sus **tres aristas `D.37`** declaradas, y las **dos correcciones de fichero** | ~~ABIERTA~~ **CERRADA** (`P.3`). **14 piezas, 205 pasos, frontera al digito, 0 CAERIA** |
-| 3 | **`cap_11` ENTERO**, con su frontera publicada antes de cortar y su residuo en cero o nombrado linea a linea; `cap_12` solo si cabe bajo el techo de 15 | ABIERTA |
+| 3 | **`cap_11` ENTERO**, con su frontera publicada antes de cortar y su residuo en cero o nombrado linea a linea; `cap_12` solo si cabe bajo el techo de 15 | ~~ABIERTA~~ **CERRADA** (`P.4`). **16 candidatos, 187 pasos, frontera al digito, 0 CAERIA. `cap_11` PASA EL TECHO: la vuelta cierra aqui y `cap_12` NO entra** |
 | 4 | **La cifra de fidelidad acotada**: ocurrencias por capitulo de `cap_00` a `cap_09`, y el numerador firmado SOLO de dos capitulos | ABIERTA |
 | 5 | **Las dos filas de ruta que no pueden ser verdad**, y la fila de alcance de `_insertados` | ABIERTA |
 
@@ -26569,3 +26569,202 @@ parte en cuatro y cada trozo dice que es.**
 > **TAREA 2 CERRADA.** La pieza 14 escrita y por la aduana al primer intento, sus tres aristas
 > `D.37` declaradas enteras con su paso citado, las dos correcciones de fichero hechas sin borrar el
 > texto viejo y sin tocar ni un paso, y la frontera de `cap_10` recerrada contra el cuerpo en 14.
+
+---
+
+## P.4. TAREA 3: **`cap_11` ENTERO**. **CERRADA**, Y CIERRA LA VUELTA: `cap_12` NO ENTRA
+
+### P.4.a. EL CUERPO, REMEDIDO POR MI COMO EL ENCARGO MANDA
+
+    $ sed -n '8,$p' fuentes/scott_radical_candor/cap_11.md | wc -w
+      8626
+    $ sed -n '8,$p' fuentes/scott_radical_candor/cap_12.md | wc -w
+      2118
+    $ sed -n '1,6p' fuentes/scott_radical_candor/cap_11.md
+      unidad: Cap. 8
+      titulo_textual: Results
+
+**LAS DOS CIFRAS DEL ENCARGO REPRODUCEN AL DIGITO: `8.626` y `2.118`.**
+
+| | proyeccion por densidad | **cuenta real** |
+|---|---:|---:|
+| `cap_11` | **~13,5** (`8.626 / 641`, con `641 = 8.976 / 14` medido en `cap_10`) | # **16** |
+| error de la proyeccion | | **`+2,5` piezas, el 18,5 por ciento por debajo** |
+
+> ### **LA PROYECCION POR DENSIDAD VUELVE A QUEDARSE CORTA, Y ES LA SEGUNDA VEZ SEGUIDA.** En `cap_10` predijo `10,3` y fueron `14`; aqui predijo `13,5` y son `16`. **Publico las dos como manda el encargo, y digo lo que veo: se queda corta en el mismo sentido las dos veces.** No propongo cambiarla, porque el propio encargo la manda usar **como orden de magnitud** y no como cuenta. La cuenta la da la frontera.
+
+### P.4.b. LA FRONTERA, PUBLICADA ANTES DE CORTAR Y CERRADA CONTRA EL CUERPO
+
+*Salida de `python .t1_v22/frontera_cap11.py`, guardada en `.t1_v22/salida_frontera_cap11.txt`.
+`ACTA 18` `7.5` orden 1: si no cierra, no se publica ninguna cuenta de nodos.*
+
+    tramos que dan nodo (contando los dos partidos): 18
+    tramos de resto                        : 1
+    lineas con contenido de L8 en adelante : 163
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 8626 palabras
+    cuerpo medido aparte (sed 8,$ | wc -w) : 8626 palabras
+    IGUALES                                : True
+
+    NODOS QUE LA FRONTERA DA               : 16
+    TECHO DE 12.4                          : 15
+    palabras de resto                      : 281  (3.3 por ciento del cuerpo)
+
+| tramo | palabras | nodos | que es | la salida, pegada |
+|---|---:|---:|---|---|
+| `L15 a L35` | 88 | **1** | P1 la cabeza: quien se comunica con quien y las herramientas nombradas | `15:One of your most important responsibilities to keep everything moving smooth` |
+| `L37 a L65` | 1198 | **1** | P2 el 1:1: mentalidad, frecuencia, presentarse y la agenda del reportado | `37:1:1 CONVERSATIONS` |
+| `L67 a L97` | 231 | **1** | P3 las preguntas de seguimiento que buscan los huecos | `67:Some good follow-up questions` |
+| `L99 a L113` | 220 | **1** | P4 nutrir en el 1:1 las ideas nuevas, que son fragiles | `99:Encourage new ideas in the 1:1.` |
+| `L115 a L127` | 208 | **1** | P5 las seniales del 1:1 de que estas fallando como jefe | `115:Signs you'll get from 1:1s that you're failing as a boss` |
+| `L129 a L145` | 391 | **1** | P6a la reunion de equipo y su agenda de tres bloques | `129:STAFF MEETINGS` |
+| `L147 a L157` | 524 | **1** | P7 los apuntes de sala de estudio | `147:Listen: put updates in a shared document during a "study hall" (15 minutes)` |
+| `L159 a L163` | 249 | **0** | P6b el bloque de aclarar de esa misma agenda | `159:Clarify: identify key decisions/debates (30 minutes). What are the one or tw` |
+| `L165 a L173` | 313 | **1** | P8 el tiempo para pensar, bloqueado y sagrado | `165:THINK TIME` |
+| `L175 a L193` | 501 | **1** | P9 la reunion de gran debate | `175:"BIG DEBATE" MEETINGS` |
+| `L195 a L203` | 302 | **1** | P10 la reunion de gran decision | `195:"BIG DECISION" MEETINGS` |
+| `L205 a L221` | 446 | **1** | P11 la reunion general | `205:ALL-HANDS MEETINGS` |
+| `L223 a L233` | 269 | **1** | P12 pelear la proliferacion con tiempo de ejecutar | `223:EXECUTION TIME` |
+| `L235 a L249` | 757 | **1** | P13 el tablero kanban | `235:KANBAN BOARDS` |
+| `L251 a L269` | 506 | **1** | P14 pasear por la organizacion | `251:WALK AROUND` |
+| `L271 a L299` | 626 | **1** | P15a la rueda recorrida sobre tu propia cultura | `271:BE CONSCIOUS OF CULTURE` |
+| `L301 a L305` | 211 | **1** | P16 debatir y decidir lo que te tienta delegar a recursos humanos | `301:Debate and decide explicitly. Don't let things that pervert your culture "ju` |
+| `L307 a L333` | 305 | **0** | P15b persuadir, ejecutar, aprender y escuchar, de esa misma rueda | `307:Persuade. Pay attention to the small things` |
+| | **8345** | **16** | **los tramos que dan nodo** | |
+
+**LA FILA DE RESIDUO, NOMBRADA LINEA A LINEA** (`ACTA 19` `7.4` ORDEN A). **Es UNA fila, de
+`281` palabras, el `3,3` por ciento del cuerpo, y dice que hay en cada una de sus cinco lineas:**
+
+| tramo de resto | palabras | nodos | que es, nombrado linea a linea |
+|---|---:|---:|---|
+| `L9 a L13` | 281 | **0** | `L9` el subtitulo; `L11` la meta de la franqueza radical y el estado del equipo que la tiene; `L13` las protesis mentales de Kosslyn, **la rueda de hacer cosas (que YA esta extraida de `cap_07` en `recorrer_rueda_hacer_cosas_equipo`, 12 pasos)** y el formador de New Jersey Transit (*no empieces mandando; empieza escuchandoles*, **que ya vive en `crear_cultura_escucha_equipo`**) |
+
+> **LAS DOS PIEZAS QUE PODRIAN ESCONDERSE EN ESE RESTO LAS NOMBRO Y DIGO DONDE VIVEN YA, que es
+> justo lo que la `ORDEN A` obliga a hacer y lo que cazo la pieza 14 de `cap_10`.** Ninguna de las
+> dos es doctrina nueva de `cap_11`: las dos son remites a `cap_07`, y `EXTRACTOR.md` 9 llama a eso
+> **nombrar el procedimiento de otro**, que no da nodo.
+
+**DOS TRAMOS SON NO CONTIGUOS Y LO DIGO ANTES DE QUE SE NOTE:** la pieza **P6** vive en
+`L129 a L145` **mas** `L159 a L163`, con los apuntes de sala de estudio (`L147 a L157`) en medio
+como pieza propia; y la pieza **P15** vive en `L271 a L299` **mas** `L307 a L333`, con el rotulo de
+debatir y decidir (`L301 a L305`) en medio como pieza propia. **Las dos particiones estan escritas
+en el `resumen_teorico` de sus ficheros**, para que la frontera se pueda comprobar sin este reporte
+delante.
+
+### P.4.c. **`cap_11` PASA EL TECHO, ASI QUE LA VUELTA CIERRA AQUI Y LO DECLARO CON SU CIFRA** (`EXTRACTOR.md` 12.4)
+
+**LA REGLA DE PRECEDENCIA, LITERAL:** *SI UN SOLO CAPITULO PASA DEL TECHO DE CANDIDATOS, LA VUELTA
+CIERRA EN ESE CAPITULO Y LO DECLARA. No se reparte el capitulo en dos vueltas ni se estira el tramo
+para completar el numero de capitulos del lote.*
+
+> # **LA VUELTA CIERRA EN `cap_11` CON `16` CANDIDATOS, POR ENCIMA DEL TECHO DE `15`. `cap_12` NO ENTRA, Y LOS CAPITULOS RESTANTES DEL TRAMO (`cap_12`, `cap_13` Y `cap_14`) PASAN A LA VUELTA SIGUIENTE.**
+
+**Y LA CUENTA DE `cap_12` LA DOY IGUAL, porque el encargo pide declararlo con su cifra EN LOS DOS
+CASOS:** `cap_12` (`Getting Started`) mide **2.118 palabras** y proyecta **~3,3** piezas a la
+densidad de `cap_10`. **Hueco bajo 15: cero.** `16 + 3 = 19`, muy por encima. **No se mina.**
+
+> **Y EL AVISO QUE ME DEBO A MI MISMO:** `16` no es un numero al que yo apuntara. La frontera dio
+> `16` y la publique antes de escribir el primer candidato. **La pieza P16 es mi corte mas
+> discutible del capitulo** y va marcada como tal en `P.8`: **si el auditor la lee como un paso de
+> `P15` y no como nodo, `cap_11` cierra en `15`, justo EN el techo**, y entonces la vuelta no cerro
+> corta sino exacta. **Digo las dos cuentas porque no quiero que la que me conviene sea la unica
+> escrita.**
+
+### P.4.d. LOS DIECISEIS CANDIDATOS, Y CADA UNO POR LA ADUANA EN EL ACTO EN QUE SE ESCRIBIO (`EXTRACTOR.md` 16)
+
+**COMO SE CUMPLIO LA REGLA DE LOS CUATRO PASOS, y lo digo porque es donde se podria hacer trampa:**
+los candidatos se escribieron **en cuatro lotes de cuatro**, y **el informe de cada lote se lanzo
+antes de escribir el siguiente**. **Ningun lote se escribio con el anterior sin pasar por la
+aduana.** Lo que `EXTRACTOR.md` 16 prohibe por su nombre (*escribir doce candidatos y pasar la
+aduana al final*) no ocurrio, y el orden esta en las horas de los ficheros de `.aduana_v22/`.
+
+**Y ADEMAS SE VE EN UNA CIFRA DE LOS PROPIOS INFORMES, que es la prueba mas barata: LA POBLACION
+CRECE LOTE A LOTE.** `304` en el lote A, `308` en el B, `312` en el C, `316` en el D. **Es
+`EXTRACTOR.md` 12.3 midiendose a si mismo:** *el primero que entra cambia lo que el segundo mide*.
+Aqui ni siquiera entro nadie, y aun asi **cada lote escrito cambio la poblacion que midio el
+siguiente**.
+
+*Salida de `python .t1_v22/salida_saldo_cap11.txt`, impresa de los dieciseis ficheros de
+`.aduana_v22/`.*
+
+| # | candidato | pasos | poblacion | saldo | filas de vecino |
+|---:|---|---:|---:|---|---:|
+| 1 | `bloquear_tiempo_pensar_calendario` | 6 | 308 | **BLOQUEARIA** | 4 |
+| 2 | `conducir_reunion_equipo_agenda_tres_bloques` | 22 | 308 | **ENTRARIA** | 0 |
+| 3 | `debatir_decidir_asuntos_cultura_evitar_delegar` | 6 | 316 | **ENTRARIA** | 0 |
+| 4 | `decidir_quien_comunica_cada_cuanto` | 6 | 304 | **BLOQUEARIA** | 1 |
+| 5 | `escribir_apuntes_sala_estudio_equipo` | 14 | 308 | **ENTRARIA** | 0 |
+| 6 | `leer_seniales_fallo_jefe_reunion_solas` | 6 | 308 | **ENTRARIA** | 0 |
+| 7 | `montar_reunion_general_presentaciones_preguntas` | 11 | 312 | **ENTRARIA** | 0 |
+| 8 | `montar_reunion_gran_debate` | 13 | 312 | **BLOQUEARIA** | 1 |
+| 9 | `montar_reunion_gran_decision` | 14 | 312 | **BLOQUEARIA** | 3 |
+| 10 | `montar_reuniones_solas_mentalidad_frecuencia` | 22 | 304 | **ENTRARIA** | 0 |
+| 11 | `montar_tablero_kanban_medir_actividades` | 10 | 316 | **ENTRARIA** | 0 |
+| 12 | `nutrir_ideas_nuevas_reunion_solas` | 10 | 304 | **BLOQUEARIA** | 1 |
+| 13 | `pasear_organizacion_hallar_problemas_pequenios` | 9 | 316 | **ENTRARIA** | 0 |
+| 14 | `pelear_proliferacion_reuniones_bloquear_ejecucion` | 8 | 312 | **ENTRARIA** | 0 |
+| 15 | `preguntar_seguimiento_hallar_huecos` | 16 | 304 | **BLOQUEARIA** | 1 |
+| 16 | `recorrer_rueda_conscientemente_cultura_equipo` | 14 | 316 | **BLOQUEARIA** | 1 |
+| | **16 candidatos** | **187** | | **9 ENTRARIA, 7 BLOQUEARIA, 0 CAERIA** | **12** |
+
+### P.4.e. LAS LECTURAS DE LOS VECINOS QUE LA ADUANA LEVANTO, **UNA A UNA Y CON SU RAZON ESCRITA** (`EXTRACTOR.md` 2)
+
+*Las señales ordenan, nunca deciden (manual principio 4). Leo a los vecinos antes de escribir el
+veredicto, y el veredicto lleva su razon. **Hoy su sede es solo `REPORTE.md` porque no hay
+insercion** (`P.0.1`); `bitacora/VEREDICTOS.jsonl` lo sera el dia del cierre del lote.*
+
+| # | par | señal que lo levanta | **clase** | **razon escrita** |
+|---:|---|---|---|---|
+| 1 | `decidir_quien_comunica_cada_cuanto` P5 contra `construir_confianza_equipo_tiempo_solas` P7 | `paso_contra_nodo 0,625` | **`SANO`** | **lo que comparten es el molde `cada persona que te reporta directamente` y nada mas.** Mi P5 dice *empieza por la reunion a solas, que el texto llama la mas importante de estas reuniones*; su P7 dice *manten conversaciones anuales de carrera*. Uno monta **el mapa de comunicacion del equipo** (quien con quien, cada cuanto, con cuanta gente dentro); el otro **sube en el eje de importarte** con una persona de la que no sabes nada. **Dos activaciones y dos entregables sin interseccion** |
+| 2 | `nutrir_ideas_nuevas_reunion_solas` P2 contra `crear_espacio_seguro_madurar_ideas_nuevas` P1 | `paso_contra_nodo 0,650`, `familia_id 0,222` | **`CONTINUA` con arista** | **la madre es la de `cap_07` y esta declarada en el `resumen_teorico` del propio candidato ANTES de que la señal la levantara.** La madre trae lo que este no tiene: **no pidas tres soluciones y una recomendacion**, la tecnica del *plussing*, la reunion previa donde las ideas se afilan, y el aviso de que una lluvia de ideas no es una conversacion sin negativas. Este trae lo que la madre no tiene: **las SEIS preguntas literales** de `L103` a `L113`, la cita de Jony Ive, y la regla de describir la idea distinto para un ingeniero y para un comercial. **Los dos lados tienen procedimiento fuera del solape y la vara de manual 4 no tiene bascula: `CONTINUA`, no `REPITE`.** Arista `D.29` (**el libro no escribe cuenta**), madre `crear_espacio_seguro_madurar_ideas_nuevas`, `--paso 12` (*trata tus reuniones semanales a solas como ese sitio seguro*) |
+| 3 | `preguntar_seguimiento_hallar_huecos` P5 contra `calibrar_normalidad_preguntas_jefe` P6 (**vive en el grafo**) | `paso_contra_nodo 0,673` | **`SANO`** | **es la misma pregunta en dos direcciones opuestas de la jerarquia, y eso no es el mismo nodo.** Mi P5 es *que es lo que te desvela por la noche*, que **el jefe hace a quien le reporta** para hallar sus huecos; su P6 es *preguntale que es lo que le quita el sueno*, que **el jefe nuevo hace a SU PROPIO jefe** para calibrar que es normal aqui. **Activaciones opuestas** (tu escuchas contra tu te calibras) **y entregables disjuntos** (los huecos de esa persona contra tus expectativas calibradas) |
+| 4 | `bloquear_tiempo_pensar_calendario` P6 contra `calibrar_ascensos_evitar_politica` P14 | `paso_contra_nodo 0,911` | **`SANO`** | **la cifra mas alta de toda la tanda y es una coletilla repetida, no un procedimiento.** *Y anima a todos los de tu equipo a hacer lo mismo* contra *Y anima a todo tu equipo a hacer lo mismo*. Uno **bloquea calendario para pensar y lo defiende**; el otro **calibra ascensos entre iguales antes de aprobarlos**. **Cero actos compartidos.** Va ademas como hecho medido en `P.4.f` |
+| 5 | `bloquear_tiempo_pensar_calendario` P6 contra `proteger_tiempo_equipo_jefe` P7 | `paso_contra_nodo 0,604` | **`SANO`** | mismo molde (*a los de tu equipo*) contra *ensenia a los de tu equipo a ser mas persuasivos*. El otro **despeja el tiempo del equipo quitando obstaculos y reuniones**; este **defiende una hora del calendario propio**. Ni un acto comun |
+| 6 | `bloquear_tiempo_pensar_calendario` P3 contra `reservar_calendario_tiempo_ejecutar` P4 | `familia_id 0,333` | **`SANO`** | **y lo decide el propio libro, no yo:** `cap_11` `L233` escribe *For the same reason I blocked off think-time in calendar, I **ALSO** found it necessary to block off time to be alone and execute*. **Son DOS bloques distintos del calendario para DOS cosas distintas**, y el libro los pone uno al lado del otro para distinguirlos. Entregables disjuntos: tiempo para pensar mantenido sagrado contra tiempo para ejecutar el plan ya decidido |
+| 7 | `bloquear_tiempo_pensar_calendario` P3 contra `exigir_critica_jefe_reticente` P4 | `similitud_texto 0,364` | **`SANO`** | **es ruido de banda, y la banda esta medida:** `0,364` cae **justo encima del umbral de `0,35` y muy por debajo del `0,4` a partir del cual `EXTRACTOR.md` 11 dice que son gemelos y nada mas**. Mi P3 es *agenda algo de tiempo para pensar y manten ese tiempo sagrado*; su P4 es *lo que mas necesito de ti es que me digas lo que piensas de verdad*. **La palabra compartida es `pensar` y nada mas** |
+| 8 | `montar_reunion_gran_debate` P13 contra `montar_reunion_gran_decision` P6 (**los dos de `cap_11`, par mutuo**) | `familia_id 0,600` y `paso_contra_nodo 0,726`, **en los dos sentidos** | **`CONTINUA` con arista** | **el libro escribe la continuidad dos veces:** `L199` dice que la de decision *tipicamente pero no siempre **sigue** a una de gran debate*, y `L201` dice que **sus logisticas y sus normas son LAS MISMAS**. Asi que la de decision **cuelga** de la de debate y no la repite: anade **el decisor nombrado**, **la finalidad de la decision** (*si no, siempre se apelaran y seran debates*) y **el poder de veto con su regla de uso**. La de debate anade lo que la otra no tiene: **sus tres propositos**, **la norma de cambiar de papel a mitad**, y **el producto unico de un debate que no decide**. Arista `D.29` (**el libro no escribe cuenta**), madre `montar_reunion_gran_debate`, `--paso 13`, que es el paso donde el producto del debate incluye *una recomendacion de seguir debatiendo o de pasar a una decision* |
+| 9 | `montar_reunion_gran_decision` P1 contra `nutrir_ideas_nuevas_reunion_solas` P1 | `similitud_texto 0,354` | **`SANO`** | ruido de banda otra vez, `0,354` contra umbral `0,35`. Una reunion de decision para un asunto mayor contra una reunion a solas donde alguien trae una idea fragil. **Cero actos, cero entregables comunes** |
+| 10 | `montar_reunion_gran_decision` P2 contra `dirigir_reunion_decision` P10 (**vive en el grafo, y es de OTRO LIBRO, Zhuo**) | `familia_id 0,400` | **`SANO`** | **es el par que mas caro costaria fallar y por eso lo lei entero, los 14 pasos contra mis 14.** **Comparten DOS actos y los nombro por su numero:** que haya un decisor designado (su P4 contra mi P5) y que la decision no vaya y vuelva (su P12 contra mi P10). **Y ahi se acaba.** El de Zhuo es **como se decide para que la gente confie en el proceso**: enmarcar las opciones, no buscar consenso, dar el mismo tiempo de palabra a la discrepancia, no decidir habiendo oido un solo lado, y **cinco malos resultados que evitar**. El mio es **la logistica de un tipo de reunion concreto**: que sigue a la de gran debate, quien esta obligado a asistir, quien toma notas, egos en la puerta, el resumen repartido, y **tu poder de veto usado con cuentagotas**, que el de Zhuo no menciona. **Ninguno despliega al otro: son dos libros escribiendo procedimientos vecinos con dos entregables distintos**, que es exactamente el caso que la `ACTA 21` `5.2` adjudico `SANO` para `armar_plan_anual` contra `disenar_equipo_plan_anual` |
+| 11 | `recorrer_rueda_conscientemente_cultura_equipo` P9 contra `recorrer_rueda_hacer_cosas_equipo` P12 | `familia_id 0,429` | **`CONTINUA` con arista** | **lo declare en el `resumen_teorico` del candidato ANTES de tener su informe, y escribi en este mismo reporte que la aduana no lo levantaria. LA ADUANA SI LO LEVANTO, y corrijo mi frase en vez de dejarla: el informe llego despues de que yo escribiera la fila.** La madre recorre la rueda **sobre las decisiones del equipo** y entrega *una vuelta entera de la rueda dada deprisa y sin saltarse ningun paso*; esta la recorre **sobre tu propia cultura** y entrega *tus conductas revisadas contra la cultura que dices querer*. **Comparten los nombres de las siete etapas y ni un acto:** la madre no tiene la prueba de la conducta propia (`L299`), ni el cafe y el te verde (`L311`), ni el entorno de oficina (`L313`), ni la senial de que ya no vaya de ti (`L329`). Arista `D.29`, madre `recorrer_rueda_hacer_cosas_equipo`, `--paso 8` (*aprende de los resultados y vuelve a empezar el proceso entero*) |
+
+### P.4.f. **LOS TRES HECHOS QUE ESTAS DIECISEIS LECTURAS AÑADEN SOBRE LAS SEÑALES, Y LOS TRES SON MEDIDOS**
+
+> ### **HECHO 3: LA SEÑAL 3 LEVANTO UN PAR CON `0,911` QUE ES LA MISMA FRASE Y NI UN PROCEDIMIENTO COMPARTIDO. ES EL EJEMPLAR MAS LIMPIO QUE ESTA CASA TIENE DE QUE LA SEÑAL 3 MIDE REDACCION.**
+>
+> `bloquear_tiempo_pensar_calendario` paso 6 dice **`Y anima a todos los de tu equipo a hacer lo
+> mismo`**; `calibrar_ascensos_evitar_politica` paso 14 dice **`Y anima a todo tu equipo a hacer lo
+> mismo`**. **`paso_contra_nodo 0,911` contra un umbral de `0,60`.** Uno bloquea calendario para
+> pensar; el otro calibra ascensos entre iguales antes de aprobarlos. **Cero actos compartidos, dos
+> entregables sin interseccion.** `EXTRACTOR.md` 11 dice que *paso contra nodo cerca de 1,0* suele
+> significar que **el material ya vive en el grafo**; aqui `0,911` significa que **la coletilla ya
+> vive en el grafo**, que no es lo mismo. **No propongo mover nada** (`EXTRACTOR.md` 11: ninguna
+> vuelta mueve un umbral): dejo el ejemplar medido.
+
+> ### **HECHO 4: LA SEÑAL SI LEVANTO, ELLA SOLA, LAS DOS ARISTAS QUE YO YA HABIA DECLARADO POR LECTURA. LO DIGO PORQUE VA CONTRA MI PROPIA EXPECTATIVA.**
+>
+> **Declare TRES aristas en el `resumen_teorico` de sus candidatos ANTES de correr ningun informe**,
+> y en las tres escribi que esperaba tener que declararlas por lectura porque la señal no las veria.
+> **LA ADUANA LEVANTO LAS TRES:**
+>
+> | arista declarada por mi lectura | lo que la levanto |
+> |---|---|
+> | `nutrir_ideas_nuevas_reunion_solas` a `crear_espacio_seguro_madurar_ideas_nuevas` | `paso_contra_nodo 0,650` |
+> | `montar_reunion_gran_decision` a `montar_reunion_gran_debate` | `familia_id 0,600` y `paso_contra_nodo 0,726` |
+> | `recorrer_rueda_conscientemente_cultura_equipo` a `recorrer_rueda_hacer_cosas_equipo` | `familia_id 0,429` |
+>
+> **Mas una de las tres `D.37` de la pieza 14** (`P.3.c`). **`D.19` midio que la señal 3 levanta el
+> 3 por ciento de las aristas declaradas**, y esta tanda da **4 de 6**. **Tres vueltas de esta casa,
+> la mia incluida, dijeron que la señal no ve las aristas; esta vuelta dice que aqui si las vio.**
+>
+> **Y DIGO POR QUE NO PROPONGO NADA CON ESTO, que es lo que me tienta:** una tanda de seis no mueve
+> una calibracion hecha sobre 3.169 nodos (`D.4`), y **hay una explicacion mas barata que tengo
+> medida delante**: las cuatro aristas de hoy son **madre e hija dentro del mismo libro o entre dos
+> capitulos del mismo libro**, que comparten vocabulario y molde de redaccion. Las de `D.19` no
+> tenian por que. **Traigo la medida y no la conclusion.**
+
+> ### **HECHO 5: UN PAR CRUZA DE LIBRO, Y ES EL QUE MAS CARO COSTARIA FALLAR.**
+> `montar_reunion_gran_decision` (Scott) contra **`dirigir_reunion_decision`, que VIVE EN EL GRAFO y
+> es de Zhuo**. Es el unico vecino de toda la tanda que ya esta dentro, asi que es el unico donde un
+> `SANO` mal puesto mete un gemelo de verdad. **Lo lei entero, los 14 pasos contra mis 14**, y la
+> razon va en la tabla de `P.4.e` con los dos actos compartidos nombrados por su numero.

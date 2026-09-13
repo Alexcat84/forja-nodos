@@ -1,0 +1,40 @@
+{
+ "condiciones_activacion": "Cuando te toca decidir que reuniones hay en tu equipo, quien va a cada una y cada cuanto, y quieres que la comunicacion fluya sin que las reuniones se coman el tiempo de todos.",
+ "denominaciones": {
+  "nombre_largo": "La cabeza del capitulo de resultados: la responsabilidad de decidir el mapa de comunicacion del equipo, el coste que toda reunion trae, las tres cosas que se minimizan, y las herramientas que el texto enumera una a una",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "Things you can do to get stuff done together-faster"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Get Stuff Done wheel"
+   }
+  ],
+  "sigla": ""
+ },
+ "dominio": "gestion_equipos",
+ "entregable_esperado": "El mapa de quien se comunica con quien y cada cuanto, con cada reunion puesta con su duracion, su frecuencia y el minimo de personas a las que hace falta que asistan.",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "id": "decidir_quien_comunica_cada_cuanto",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "pasos_accionables": [
+  "Asume como una de tus responsabilidades mas importantes para que todo siga moviendose sin roces: decidir quien necesita comunicarse con quien y con que frecuencia.",
+  "Cuenta con lo que eso significa en la practica, y el texto lo dice en dos palabras: reuniones.",
+  "Cuenta tambien con que toda reunion viene con un coste significativo, que el texto nombra: el tiempo.",
+  "Minimiza por eso las tres cosas que el texto nombra una a una: la duracion, la frecuencia y el numero de personas a las que hace falta que asistan.",
+  "Empieza por la que el texto llama la mas importante de todas estas reuniones: la reunion a solas con cada persona que te reporta directamente.",
+  "Y ten delante las herramientas que el texto enumera para sacar cosas adelante juntos, que son las reuniones a solas, las reuniones de equipo, el tiempo para pensar, las reuniones de gran debate, las reuniones de gran decision, las reuniones generales, las zonas libres de reuniones, los tableros kanban, pasear por la organizacion y ser consciente de la cultura."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 15 a 35. ES LA PIEZA P1 DE LA FRONTERA DE cap_11 Y ES LA CABEZA DEL CAPITULO. POR QUE ES PROCEDIMIENTO Y NO ENTRADA, con D.27 delante: la linea 15 pone un mandato (decide who needs to communicate with whom and how frequently) Y SU PROPIO INVENTARIO DE OBJETOS A MINIMIZAR nombrados uno a uno (the duration, frequency and number of people required to attend), y las lineas 17 a 35 ponen el inventario de MEDIOS del capitulo entero, diez herramientas nombradas una a una. Escribir los pasos es transcribir esos dos inventarios. POR QUE NO ES UNA SERIE D.37 SINO D.29: el libro NO escribe la cuenta en ningun sitio. Enumera las diez sin decir cuantas son, y EXTRACTOR.md 15.6 dice que si el texto solo enumera sin decir cuantas esto NO es D.37 sino D.29, y la arista se declara igual pero con razon escrita que la sostenga. Las aristas van declaradas en docs/loop/REPORTE.md de la vuelta 22. UNA DISCREPANCIA DEL PROPIO LIBRO QUE DECLARO EN VEZ DE ARREGLARLA: el indice de la linea 29 dice Meeting-Free Zones y el rotulo de la seccion que le corresponde, en la linea 223, dice EXECUTION TIME. Transcribo el indice tal como esta en la linea 29 y dejo dicho aqui que el rotulo de la seccion es otro. No elijo por el libro. RELECTURA DE FIDELIDAD D.30 EN EL ACTO, paso a paso contra su linea: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. P1 a P5 de la linea 15; P6 de las lineas 17 a 35. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto es demasiada duracion, cada cuanto es demasiada frecuencia, cuantas personas son demasiadas, y en que orden se montan las diez herramientas. El libro pone el mandato de minimizar y NO pone el umbral, asi que cualquier cifra que yo escribiera ahi la escribiria yo.",
+ "titulo": "Decidir quien necesita comunicarse con quien y cada cuanto, minimizando el coste de cada reunion"
+}

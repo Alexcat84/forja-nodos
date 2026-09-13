@@ -1,0 +1,40 @@
+{
+ "condiciones_activacion": "Cuando entre las reuniones a solas, la de equipo, las de gran debate y gran decision y lo que va surgiendo no te queda un momento tranquilo para aclarar tu propio pensamiento ni para ayudar a aclarar el de los tuyos.",
+ "denominaciones": {
+  "nombre_largo": "El tiempo para pensar como bloque del calendario que no se mueve por nadie, con el enfado explicito ante quien intenta agendar encima y el encargo de que el equipo entero haga lo mismo",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "THINK TIME"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Block time to think, and hold that time sacred"
+   }
+  ],
+  "sigla": ""
+ },
+ "dominio": "gestion_equipos",
+ "entregable_esperado": "El tiempo para pensar bloqueado en tu calendario y mantenido, con tu equipo avisado de que ahi no se agenda y animado a bloquear el suyo.",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "id": "bloquear_tiempo_pensar_calendario",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "pasos_accionables": [
+  "Reconoce primero a que te enfrentas, que es lo que el texto describe: acabas de anadir al calendario las reuniones a solas y la de equipo, probablemente tendras que ir a alguna de gran debate y de gran decision, y ademas la gente querra hablarte de esto o de aquello y surgiran asuntos urgentes que tendras que atender.",
+  "Cuenta con lo que el texto dice que pasa si no haces nada: apenas tendras tiempo de ir al banio o de coger agua, no digamos de comer, seras un tiranizado por tu calendario, y el unico momento tranquilo para pensar que tendras sera en casa, de noche, cuando de verdad deberias estar durmiendo.",
+  "Agenda entonces algo de tiempo para pensar, y manten ese tiempo sagrado.",
+  "Hazle saber a la gente que no pueden agendar nada encima de el, nunca.",
+  "Enfadate de verdad, y en serio, si lo intentan.",
+  "Y anima a todos los de tu equipo a hacer lo mismo."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 165 a 173, bajo el rotulo THINK TIME. ES LA PIEZA P8 DE LA FRONTERA DE cap_11 y es la mas fina del capitulo, con 311 palabras de cuerpo. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante y sabiendo que un parrafo pobre produce un nodo inventado (D.30): la linea 173 pone CUATRO imperativos propios del libro, uno detras de otro, dirigidos al lector (schedule in some think time, hold that think time sacred, let people know that they cannot ever schedule over it, get really seriously angry if they try, encourage everyone on your team to do the same). No hace falta ningun inventario indirecto: el libro escribe los pasos. EL CASO DEL CONSEJERO DELEGADO QUE BLOQUEABA DOS HORAS DIARIAS Y NO SE LAS MOVIO NI AL PRESIDENTE DE UN PAIS, Y EL DEL DIRECTIVO QUE ENCONTRO A SU CONSEJERO DELEGADO MIRANDO AL CIELO, NO VIAJAN A NINGUN PASO, y es a proposito: manual 3.5. Las DOS HORAS son del caso, no de la doctrina, y por eso este nodo NO pone ninguna cantidad de tiempo. El texto dice some think time y eso es lo que dice el paso 3. Escribir aqui dos horas seria exactamente el puente que D.30 llama el periodo. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. P1 y P2 de la linea 169; P3 a P6 de la linea 173. EL PAR QUE DECLARO: bloquear_tiempo_pensar_calendario contra pelear_proliferacion_reuniones_bloquear_ejecucion, que sale de las lineas 223 a 233 del mismo capitulo. Son dos bloques distintos del calendario para dos cosas distintas, y el propio libro los distingue en la linea 233 (For the same reason I blocked off think-time in calendar, I ALSO found it necessary to block off time to be alone and execute). MI VEREDICTO ES SANO: comparten el medio (bloquear calendario) y no comparten ni el entregable ni la activacion. Razon escrita en el reporte de la vuelta 22. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto tiempo para pensar, a que hora, cada cuanto, y que se hace cuando el que agenda encima es tu propio jefe. Las cuatro son las especies de puente que D.30 nombra y las cuatro se quedan fuera.",
+ "titulo": "Bloquear tiempo para pensar en tu calendario y mantener ese tiempo sagrado"
+}

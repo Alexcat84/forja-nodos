@@ -1,0 +1,52 @@
+{
+ "condiciones_activacion": "Cuando quieres que todo el mundo sepa en que anda todo el mundo para poder senialar solapes y motivos de preocupacion, y ni te vale una reunion de horas ni te funciona que cada cual escriba sus apuntes por su cuenta.",
+ "denominaciones": {
+  "nombre_largo": "El mecanismo de los apuntes de sala de estudio: cinco a siete minutos para escribir tres a cinco cosas, cinco a siete para leer los de los demas, sin conversaciones laterales, en documento compartido, y publicos si eres jefe de jefes",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "study hall"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "snippets"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Listen: put updates in a shared document during a study hall"
+   }
+  ],
+  "sigla": ""
+ },
+ "dominio": "gestion_equipos",
+ "entregable_esperado": "Los apuntes de la semana de cada persona escritos y leidos dentro de la reunion, con las preguntas de seguimiento fuera de ella, en un documento compartido y publicos al equipo mas amplio si eres jefe de jefes.",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "id": "escribir_apuntes_sala_estudio_equipo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "pasos_accionables": [
+  "Parte del problema que el texto pone: mantener a todos al tanto de lo que hacen los demas, para que puedan senialar zonas de preocupacion o de solape, sin gastar muchisimo tiempo en ello.",
+  "Distingue las actualizaciones de los indicadores clave, porque el texto dice que no son lo mismo: las actualizaciones son cosas que nunca entrarian en el cuadro de mando, del tipo necesitamos cambiar los objetivos de este proyecto, estoy pensando en reorganizar, empiezo a pensar que tengo que despedir a fulano, o me tienen que operar el mes que viene y estare fuera tres semanas.",
+  "No lo resuelvas con una reunion de equipo de varias horas para compartir esa clase de informacion, porque el texto dice que casi todo el mundo odia las reuniones largas.",
+  "Y cuenta tambien con lo que le pasa al otro extremo, el documento publico donde cada cual apunta por su cuenta lo que hizo y lo que hara: en teoria es facil de usar y evita reuniones interminables, pero en la practica mucha gente se resiste enormemente a escribir sus apuntes, y cuando algunos no los hacen el sistema entero se viene abajo.",
+  "Haz por eso lo que el texto dice que le funciono mucho mejor: hacer sitio para que lo hagais todos dentro de la reunion de equipo.",
+  "Haz que cada persona se tome de cinco a siete minutos para escribir las tres a cinco cosas que ella o su equipo hicieron esa semana y que los demas necesitan saber.",
+  "Y de cinco a siete minutos mas para leer las actualizaciones de todos los demas.",
+  "No permitas conversaciones laterales: exige que las preguntas de seguimiento se traten despues de la reunion.",
+  "Cuenta con lo que el texto dice que se juega en esa regla simple: ahorra cantidades enormes de tiempo perdido, y si no la pones, la mayor parte de la reunion seran dos o tres personas hablando mientras el resto mira sin interes.",
+  "Hazlo en un documento compartido que varias personas puedan editar a la vez, y el texto nombra los sitios donde vale hacerlo.",
+  "Si tu equipo no tiene portatiles ni telefonos, usa papel y boligrafo: cada cual apunta sus notas en un papel y luego hacedlos circular.",
+  "Si eres jefe de jefes, haz publicos esos apuntes al equipo mas amplio.",
+  "Y cuenta con lo que eso implica, que el texto dice a continuacion: entonces la gente no puede meter ahi cosas que hay que mantener confidenciales, como los problemas de desempenio de una persona o ajustes de salario que se estan contemplando.",
+  "Si te hace falta, ten un documento de apuntes confidenciales para tu equipo, pero asegurate de que no haya demasiadas cosas ahi: la mayoria de lo que tratais deberia compartirse con el equipo mas amplio."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 147 a 157, dentro de la seccion STAFF MEETINGS y del bloque Listen de su agenda. ES LA PIEZA P7 DE LA FRONTERA DE cap_11. POR QUE ES NODO PROPIO Y NO UN PASO DE conducir_reunion_equipo_agenda_tres_bloques: su par es otro y se puede montar sin la reunion de equipo del otro nodo. Este se dispara cuando quieres que todos sepan en que anda todo el mundo y entrega los apuntes escritos y leidos; aquel se dispara cuando conduces la reunion semanal y entrega la reunion corrida con sus tres bloques. La madre lo nombra en una linea (su paso 6) y este lo despliega en catorce: es la forma de CONTINUA CON ARISTA que EXTRACTOR.md 15.6 describe, declarada en el reporte de la vuelta 22 con su paso citado. POR QUE ES PROCEDIMIENTO, con D.27 delante: la linea 153 pone el mecanismo entero con sus tiempos y su regla (five to seven minutes, three to five things, five to seven minutes to read, don't allow side conversations), y las lineas 155 y 157 ponen el medio y la regla de publicidad. Es inventario de MEDIOS y de ETAPAS, no de metas. LA PALABRA snippets NO SE TRADUCE COMO PRESTAMO SINO COMO apuntes, porque no esta en la lista blanca de EXTRACTOR.md 15.1 y tiene equivalente corriente en castellano. El termino ingles va en denominaciones. LOS NOMBRES DE PRODUCTO DE LA LINEA 155 NO SE TRANSCRIBEN UNO A UNO EN EL PASO 10, y digo por que: son marcas de tres proveedores concretos y lo que el libro pide es la propiedad (un documento compartido editable por varias personas a la vez), que si esta transcrita. El paso dice que el texto los nombra. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 14 pasos, 14 TRANSCRIPCION, 0 PUENTE. P1 y P2 de la linea 147; P3 de la 149; P4 de la 151; P5 de la 151; P6 a P9 de la 153; P10 y P11 de la 155; P12 a P14 de la 157. LAS CIFRAS SON TODAS DEL LIBRO: cinco a siete minutos, tres a cinco cosas y tres semanas estan escritas en las lineas 147 y 153. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: que se hace con quien aun asi no escribe sus apuntes dentro de la reunion, quien revisa el documento confidencial, y cuanto es demasiadas cosas en el.",
+ "titulo": "Escribir y leer los apuntes de la semana dentro de la propia reunion, como sala de estudio, en vez de contarlos en voz alta o dejarlos a que cada cual los ponga por su cuenta"
+}

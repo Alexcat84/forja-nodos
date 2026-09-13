@@ -1,0 +1,47 @@
+{
+ "condiciones_activacion": "Cuando tu equipo tiene delante un asunto importante con mucho desacuerdo y hace falta discutirlo sin que nadie salga de ahi con una decision tomada.",
+ "denominaciones": {
+  "nombre_largo": "La reunion reservada al debate y no a la decision: sus tres propositos escritos, quien la convoca despues de la reunion de equipo, la norma de dejar los egos en la puerta y cambiar de papel a mitad, y el resumen que es su unico producto",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "BIG DEBATE MEETINGS"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Lower the tension by making it clear that you are debating, not deciding."
+   }
+  ],
+  "sigla": ""
+ },
+ "dominio": "gestion_equipos",
+ "entregable_esperado": "El resumen cuidadoso de los hechos y los asuntos que salieron, una definicion mas clara de las opciones que hay por delante, y una recomendacion de seguir debatiendo o de pasar a decidir, enviados a todas las partes implicadas.",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "id": "montar_reunion_gran_debate",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "pasos_accionables": [
+  "Reserva estas reuniones para lo que el texto dice: debate, pero no decisiones, sobre los asuntos mayores que tiene delante el equipo.",
+  "Cuenta con el primero de los tres propositos que el texto les pone: bajan la tension. Parte de la friccion de muchas reuniones viene de que media sala cree que esta ahi para tomar una decision y la otra media para debatir; los que querian decidir se enfurecen porque los que debaten no van hacia una respuesta, y los que querian debatir se enfurecen porque los que deciden se niegan a pensarlo bien y a mirar todos los angulos. Cuando todo el mundo sabe que la reunion acabara sin decision, esa fuente de tension se elimina.",
+  "Cuenta con el segundo: te permiten frenar decisiones clave cuando conviene. Cuando un tema es realmente importante y hay mucho desacuerdo, los equipos a veces se lanzan a decidir antes de haberlo pensado bien o de tener suficiente informacion; meter ese tema en la agenda de debate obliga al equipo a seguir peleandose con el, a desenterrar la informacion que falta, a buscar opinion experta o simplemente a pensarlo mas hondo.",
+  "Cuenta con el tercero: alimentan una cultura de debate mas amplia. El debate deberia ocurrir constantemente en un equipo que funciona, y tener estas reuniones con regularidad y buscarles temas ayuda a construir el musculo y la tolerancia a la discusion y a la disension.",
+  "Y cuenta con lo que el texto anade sobre esa tercera: cuando toca un debate de los que se juegan la empresa, es importante que las partes implicadas hayan participado antes en unos cuantos debates abiertos; y tener debates, incluso discusiones, con regularidad tambien baja la tension, porque evita las peleas explosivas. El texto lo apoya en el principio de la criticidad autoorganizada, que dice que muchas correcciones pequenias crean estabilidad y una sola correccion enorme crea catastrofe.",
+  "Monta la logistica, que el texto dice que es bien simple: despues de tu reunion de equipo, manda el tema, el duenio y los participantes del gran debate al equipo mas amplio, si eres jefe de jefes, y tambien a la gente de otros equipos que trabaja con el tuyo.",
+  "Deja que los unicos obligados a participar en el debate sean los que identificaste en la reunion de equipo.",
+  "Pero deja que cualquiera pueda asistir u observar la reunion de gran debate.",
+  "Haz que el duenio del debate nombre a alguien para tomar notas y mandarlas a todas las partes implicadas.",
+  "Pon las normas, que el texto dice que tambien son sencillas: deja claro que todo el mundo tiene que dejar los egos en la puerta de esta reunion.",
+  "Di cual es el objetivo del debate: trabajar juntos para dar con la mejor respuesta. No deberia haber ni ganadores ni perdedores.",
+  "Pide a los participantes que se cambien los papeles a mitad de cada debate, que es la norma que el texto recomienda: asi te aseguras de que se estan escuchando unos a otros, y les ayuda a mantenerse centrados en dar con la mejor respuesta y a soltar sus egos y sus posiciones.",
+  "Y no dejes que salga de ahi ninguna otra cosa, porque el texto dice que el unico producto del debate deberia ser un resumen cuidadoso de los hechos y los asuntos que emergieron, una definicion mas clara de las opciones que hay por delante, y una recomendacion de seguir debatiendo o de pasar a una decision."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 175 a 193, bajo el rotulo BIG DEBATE MEETINGS. ES LA PIEZA P9 DE LA FRONTERA DE cap_11. POR QUE LOS TRES PROPOSITOS DE LA LINEA 179 NO SON TRES NODOS, y la cuenta esta escrita (They serve three purposes), asi que esto hay que decirlo con la regla delante: la restriccion 1 de D.27 excluye expresamente el inventario de METAS o de FINES, y purposes son fines. Nombrar adonde hay que llegar sigue siendo nombrar. Por eso los tres entran como pasos de cuenta con y NO como partes de una serie D.37. La cuenta escrita decide si la arista es D.37 o D.29, no si se corta (ACTA 20 seccion 4.1). POR QUE ES PROCEDIMIENTO, con D.27 delante: las lineas 189, 191 y 193 ponen el inventario de MEDIOS y de ETAPAS, nombrados uno a uno (quien manda que y a quien, quien esta obligado, quien puede asistir, quien toma notas, la norma de los egos, la de cambiar de papel, y el producto unico). EL PAR QUE DECLARO: montar_reunion_gran_debate contra montar_reunion_gran_decision, de las lineas 195 a 203 del mismo capitulo. MI VEREDICTO ES CONTINUA CON ARISTA: el libro dice en la linea 199 que la de decision tipicamente pero no siempre SIGUE a la de debate, y en la linea 201 que sus logisticas y normas son LAS MISMAS que las de esta, asi que la de decision cuelga de esta y no la repite: aporta el decisor, la finalidad de las decisiones y el poder de veto. Razon escrita en el reporte de la vuelta 22. Y declaro tambien la arista con centrar_debate_ideas_fuera_egos, de cap_07, que es la madre de la norma de los egos. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 13 pasos, 13 TRANSCRIPCION, 0 PUENTE. P1 y P2 de las lineas 179 y 181; P3 de la 183; P4 y P5 de la 185; P6 a P9 de la 189; P10 a P12 de la 191; P13 de la 193. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cada cuanto se convoca, cuanto dura, quien elige al duenio del debate, y que se hace si el debate no llega a producir su resumen.",
+ "titulo": "Montar la reunion de gran debate, donde se debate y no se decide, con sus logisticas, sus normas y su unico producto"
+}

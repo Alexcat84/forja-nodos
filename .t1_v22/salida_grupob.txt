@@ -1,0 +1,5 @@
+GRUPO B de cap_09: 40 ocurrencias
+  con su numeral ingles EN UNA LINEA del tramo : 40
+  SIN el en ninguna linea del tramo            : 0  <- a mano
+
+--- LAS QUE FALLAN ---

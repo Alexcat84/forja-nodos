@@ -1,0 +1,45 @@
+==============================================================================
+1. LA COMPROBACION, ANTES DE LA TABLA
+==============================================================================
+tramos que dan nodo (contando los dos partidos): 18
+tramos de resto                        : 1
+lineas con contenido de L8 en adelante : 163
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 8626 palabras
+cuerpo medido aparte (sed 8,$ | wc -w) : 8626 palabras
+IGUALES                                : True
+
+NODOS QUE LA FRONTERA DA               : 16
+TECHO DE 12.4                          : 15
+palabras de resto                      : 281  (3.3 por ciento del cuerpo)
+
+==============================================================================
+2. LA TABLA, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo | palabras | nodos | que es | la salida, pegada |
+|---|---:|---:|---|---|
+| `L15 a L35` | 88 | **1** | P1  la cabeza: quien se comunica con quien y las herramientas nombradas | `15:One of your most important responsibilities to keep everything moving smooth` |
+| `L37 a L65` | 1083 | **1** | P2  el 1:1: mentalidad, frecuencia, presentarse y la agenda del reportado | `37:1:1 CONVERSATIONS` |
+| `L67 a L97` | 226 | **1** | P3  las preguntas de seguimiento que buscan los huecos | `67:Some good follow-up questions` |
+| `L99 a L113` | 218 | **1** | P4  nutrir en el 1:1 las ideas nuevas, que son fragiles | `99:Encourage new ideas in the 1:1.` |
+| `L115 a L127` | 267 | **1** | P5  las seniales del 1:1 de que estas fallando como jefe | `115:Signs you'll get from 1:1s that you're failing as a boss` |
+| `L129 a L145` | 399 | **1** | P6a la reunion de equipo y su agenda de tres bloques | `129:STAFF MEETINGS` |
+| `L147 a L157` | 527 | **1** | P7  los apuntes de sala de estudio | `147:Listen: put updates in a shared document during a "study hall" (15 minutes).` |
+| `L159 a L163` | 249 | **0** | P6b el bloque de aclarar de esa misma agenda | `159:Clarify: identify key decisions/debates (30 minutes). What are the one or tw` |
+| `L165 a L173` | 322 | **1** | P8  el tiempo para pensar, bloqueado y sagrado | `165:THINK TIME` |
+| `L175 a L193` | 532 | **1** | P9  la reunion de gran debate | `175:"BIG DEBATE" MEETINGS` |
+| `L195 a L203` | 302 | **1** | P10 la reunion de gran decision | `195:"BIG DECISION" MEETINGS` |
+| `L205 a L221` | 548 | **1** | P11 la reunion general | `205:ALL-HANDS MEETINGS` |
+| `L223 a L233` | 272 | **1** | P12 pelear la proliferacion de reuniones con tiempo de ejecutar | `223:EXECUTION TIME` |
+| `L235 a L249` | 759 | **1** | P13 el tablero kanban | `235:KANBAN BOARDS` |
+| `L251 a L269` | 530 | **1** | P14 pasear por la organizacion | `251:WALK AROUND` |
+| `L271 a L299` | 897 | **1** | P15a la rueda recorrida sobre tu propia cultura | `271:BE CONSCIOUS OF CULTURE` |
+| `L301 a L305` | 211 | **1** | P16 debatir y decidir lo que te tienta delegar a recursos humanos | `301:Debate and decide explicitly. Don't let things that pervert your culture "ju` |
+| `L307 a L333` | 915 | **0** | P15b persuadir, ejecutar, aprender y escuchar, de esa misma rueda | `307:Persuade. Pay attention to the small things` |
+| | **8345** | **16** | **los tramos que dan nodo** | |
+
+| tramo de resto | palabras | nodos | que es, nombrado linea a linea |
+|---|---:|---:|---|
+| `L9 a L13` | 281 | **0** | subtitulo, la meta de la franqueza radical, las protesis mentales de Kosslyn, la rueda de hacer cosas (ya extraida de cap_07 en recorrer_rueda_hacer_cosas_equipo) y el formador de New Jersey Transit |
+| | **281** | **0** | |

@@ -1,0 +1,68 @@
+{
+ "condiciones_activacion": "Cuando conduces la reunion semanal con las personas que te reportan y quieres que sirva para algo, en vez de que la temas tu, la vean como perdida de tiempo los que van, y se sientan excluidos los que no.",
+ "denominaciones": {
+  "nombre_largo": "La reunion de equipo con sus tres goles escritos, su agenda de veinte, quince y treinta minutos, el cuadro de mando de unos pocos numeros, y la regla de identificar las decisiones sin tomarlas",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "STAFF MEETINGS"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Review metrics, study hall updates, and identify (but do not make) key decisions"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Learn: review key metrics"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Listen: put updates in a shared document"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Clarify: identify key decisions & debates"
+   }
+  ],
+  "sigla": ""
+ },
+ "dominio": "gestion_equipos",
+ "entregable_esperado": "La reunion semanal corrida con sus tres bloques y sus tiempos, el cuadro de mando revisado, y las una o dos decisiones y el debate mas importante de la semana identificados con su duenio, sin haberlos decidido ni debatido dentro.",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "id": "conducir_reunion_equipo_agenda_tres_bloques",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "pasos_accionables": [
+  "Cuenta con lo que el texto mide antes de darte la agenda: bien llevada, una reunion de equipo te ahorra tiempo porque te avisa de los problemas, comparte las actualizaciones con eficiencia y os deja a todos de acuerdo sobre cuales son las prioridades compartidas de la semana.",
+  "Ponle los tres goles que el texto escribe: repasar como han ido las cosas la semana anterior, dejar que la gente comparta actualizaciones importantes, y forzar al equipo a aclarar cuales son las decisiones y los debates mas importantes de la semana que viene.",
+  "Y para ahi: el texto dice que eso es todo, y que esta no es la reunion donde se debate ni donde se decide.",
+  "Haz tu trabajo, que el texto define en tres actos: establecer una agenda constante, insistir en que la gente se cinia a ella, y cortar a quien se alarga demasiado o se va por las ramas.",
+  "Monta la agenda con los tres bloques y sus tiempos: aprender, repasar los indicadores clave, veinte minutos.",
+  "Escuchar, poner las actualizaciones en un documento compartido, quince minutos.",
+  "Aclarar, identificar las decisiones y los debates clave, treinta minutos.",
+  "En el bloque de aprender, pregunta que fue bien esa semana y por que, y que fue mal y por que.",
+  "Monta para eso un cuadro de mando de indicadores clave, y el texto aclara que no significa un sistema sofisticadisimo montado por un departamento de informatica: significa una hoja de calculo con unos pocos numeros.",
+  "Elige esos numeros con la pregunta que el texto da: cuales son las actividades y los resultados mas importantes que ves cada semana y que te dicen si vas camino de lograr tus objetivos.",
+  "Disenia tu misma el cuadro de mando: el texto dice que no necesitas que te lo haga una infraestructura corporativa.",
+  "Idealmente que se actualice solo; y si eso no es posible, asegurate de que cada persona que trabaja para ti actualice su parte la noche anterior a la reunion.",
+  "Si hace falta, compruebalo tu y dales la lata hasta que metan sus actualizaciones.",
+  "Si puedes, pon el cuadro de mando en un sitio donde lo vea el equipo entero.",
+  "Y haz publicas casi siempre las notas de esa conversacion.",
+  "En el bloque de aclarar, pregunta cuales son la una o dos decisiones mas importantes y el unico debate mas importante que tu equipo tiene que abordar esa semana.",
+  "Si tu equipo es de menos de unas veinte personas, probablemente puedas limitarte a listarlos y decidir o debatir sobre la marcha.",
+  "Si tu equipo es mas grande que unas veinte personas, ponte mas formal: pon esos temas en las agendas de reuniones separadas de gran decision y de gran debate, e identifica duenios para cada uno.",
+  "Cuenta con que eso parece multiplicar reuniones y con lo que el texto responde: en realidad es la manera de sacarte a ti de reuniones y de que esten presentes los que quieren estar en esos debates y decisiones.",
+  "Y deja que los duenios del debate y de la decision no sean ni tu ni la gente que te reporta, porque esas reuniones separadas son la manera de delegar debates y decisiones, y delegarlos los empuja hacia los hechos y evita el pensamiento jerarquico.",
+  "Comunica al equipo mas amplio la agenda de esas dos reuniones, y deja que asista libremente quien quiera.",
+  "Cuenta con lo que el texto dice que pasa entonces: al principio seran probablemente demasiado grandes, pero muy pronto la gente ira solo si de verdad quiere o necesita estar, porque odia mas asistir a reuniones que no le incumben que quedarse fuera de decisiones que si."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 129 a 145 y de las lineas 159 a 163, bajo el rotulo STAFF MEETINGS. ES LA PIEZA P6 DE LA FRONTERA DE cap_11, Y SU TRAMO ES NO CONTIGUO: entre sus dos mitades viven las lineas 147 a 157, que son el mecanismo de los apuntes de sala de estudio y salen en su propio nodo, escribir_apuntes_sala_estudio_equipo. Lo digo aqui para que la frontera se pueda comprobar. POR QUE LOS TRES BLOQUES VAN EN UN SOLO NODO Y NO EN TRES: comparten UNA activacion (conduces la reunion semanal) y UN entregable (la reunion corrida con sus tres bloques), y el libro los encadena el mismo en la linea 137 con una sola frase (Here's the agenda that I've found to be most effective). Es la vara de la ACTA 20 seccion 4.1 confirmada por la ACTA 21 seccion 4.2. LA CUENTA QUE EL LIBRO SI ESCRIBE, y por eso el id la lleva: la linea 135 dice An effective staff meeting has three goals. PERO ES UNA CUENTA DE GOLES, NO DE PARTES, y por eso esto NO es una serie D.37: EXTRACTOR.md 15.6 pide que la cuenta sea de las PARTES que existen como nodos, y aqui los tres goles son fines, que la restriccion 1 de D.27 excluye expresamente. Los tres bloques de la agenda son pasos de este nodo y no nodos hermanos. EL PAR QUE DECLARO YO ANTES DE QUE LO LEVANTE NADIE: el paso 6 de este nodo nombra en una linea poner las actualizaciones en un documento compartido, y escribir_apuntes_sala_estudio_equipo lo despliega en su mecanismo entero. CONTINUA CON ARISTA, declarada en docs/loop/REPORTE.md de la vuelta 22 con su paso citado. Y lo mismo con los pasos 18 y 20, que nombran las reuniones de gran debate y de gran decision, desplegadas en montar_reunion_gran_debate y montar_reunion_gran_decision. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 22 pasos, 22 TRANSCRIPCION, 0 PUENTE. P1 de la linea 133; P2 a P4 de la 135; P5 a P7 de las 139, 141 y 143; P8 a P15 de la 145; P16 y P17 de la 159; P18 a P20 de la 161; P21 y P22 de la 163. LAS CIFRAS SON TODAS DEL LIBRO: veinte minutos, quince minutos, treinta minutos, veinte personas y una o dos decisiones y un debate estan escritas en las lineas 139, 141, 143, 159 y 161. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto dura la reunion entera, quien la convoca, que se hace si un bloque se pasa de su tiempo, y cada cuanto se revisa el cuadro de mando en si.",
+ "titulo": "Conducir la reunion semanal de equipo con la agenda de tres bloques del texto: aprender, escuchar y aclarar, sin debatir ni decidir dentro"
+}
