@@ -567,3 +567,11 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | repartir_decision_cercanos_hechos | nombre_largo | Tu no eres el que decide, casi nunca: crear un proceso claro de decision que da poder a los que estan mas cerca de los hechos | castellano | - |
 | 2026-09-16 | repartir_decision_cercanos_hechos | otro_idioma | you are not the decider (usually) | ingles | - |
 | 2026-09-16 | repartir_decision_cercanos_hechos | otro_idioma | garbage can decision-making | ingles | - |
+| 2026-09-16 | pedir_hechos_decision_evitar_recomendaciones | nombre_largo | El que decide tiene que recibir hechos, no recomendaciones, porque la gente mete su ego en una recomendacion de una manera que lleva a la politica | castellano | - |
+| 2026-09-16 | pedir_hechos_decision_evitar_recomendaciones | otro_idioma | the decider should get facts, not recommendations | ingles | - |
+| 2026-09-16 | persuadir_emocion_oyente_no_propia | nombre_largo | Las emociones del oyente, no las del que habla: la primera de las tres piezas de la persuasion de Aristoteles aplicada a una decision que hay que ejecutar | castellano | - |
+| 2026-09-16 | persuadir_emocion_oyente_no_propia | otro_idioma | the listener's emotions, not the speaker's | ingles | - |
+| 2026-09-16 | persuadir_emocion_oyente_no_propia | otro_idioma | pathos | griego | - |
+| 2026-09-16 | establecer_credibilidad_pericia_humildad | nombre_largo | Demostrar pericia y humildad: la segunda pieza de la persuasion, con la salida para quien no tiene todavia historial | castellano | - |
+| 2026-09-16 | establecer_credibilidad_pericia_humildad | otro_idioma | demonstrate expertise and humility | ingles | - |
+| 2026-09-16 | establecer_credibilidad_pericia_humildad | otro_idioma | ethos | griego | - |

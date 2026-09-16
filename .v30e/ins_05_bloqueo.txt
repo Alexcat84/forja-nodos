@@ -1,0 +1,44 @@
+ADUANA DE INSERCION, candidato 'persuadir_emocion_oyente_no_propia'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (247 del grafo mas 101 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino explicar_idea_facil_comprender_oyente  [Explicar una idea de forma que sea imposible no entenderla, cargando tu con la responsabilidad de que se entienda]
+    levantada por: similitud_texto
+    similitud_texto    0.371 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.504 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de explicar_idea_facil_comprender_oyente
+
+  vecino escuchar_callado_equipo_tranquilizar_incomodo  [Escuchar en silencio para oir lo que no quieres oir, y tranquilizar a quien tu silencio incomoda]
+    levantada por: similitud_texto
+    similitud_texto    0.352 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.438 (umbral 0.60)
+    paso 3 del candidato contra paso 5 de escuchar_callado_equipo_tranquilizar_incomodo
+
+  vecino establecer_credibilidad_pericia_humildad  [Establecer tu credibilidad demostrando pericia y humildad, y ayudar a que la establezcan los que deciden en tu equipo]
+    levantada por: similitud_texto
+    similitud_texto    0.357 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.422 (umbral 0.60)
+    paso 3 del candidato contra paso 3 de establecer_credibilidad_pericia_humildad
+
+BLOQUEADO: faltan veredictos para explicar_idea_facil_comprender_oyente, escuchar_callado_equipo_tranquilizar_incomodo, establecer_credibilidad_pericia_humildad
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "explicar_idea_facil_comprender_oyente|CONTINUA|madre=explicar_idea_facil_comprender_oyente|que añade el hijo a la madre"
+    --veredicto "explicar_idea_facil_comprender_oyente|REPITE|por que no añade procedimiento"
+    --veredicto "explicar_idea_facil_comprender_oyente|SANO|por que no son el mismo trabajo"
+    --veredicto "explicar_idea_facil_comprender_oyente|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "escuchar_callado_equipo_tranquilizar_incomodo|CONTINUA|madre=escuchar_callado_equipo_tranquilizar_incomodo|que añade el hijo a la madre"
+    --veredicto "escuchar_callado_equipo_tranquilizar_incomodo|REPITE|por que no añade procedimiento"
+    --veredicto "escuchar_callado_equipo_tranquilizar_incomodo|SANO|por que no son el mismo trabajo"
+    --veredicto "escuchar_callado_equipo_tranquilizar_incomodo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "establecer_credibilidad_pericia_humildad|CONTINUA|madre=establecer_credibilidad_pericia_humildad|que añade el hijo a la madre"
+    --veredicto "establecer_credibilidad_pericia_humildad|REPITE|por que no añade procedimiento"
+    --veredicto "establecer_credibilidad_pericia_humildad|SANO|por que no son el mismo trabajo"
+    --veredicto "establecer_credibilidad_pericia_humildad|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

@@ -1,0 +1,44 @@
+ADUANA DE INSERCION, candidato 'establecer_credibilidad_pericia_humildad'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (248 del grafo mas 100 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino compartir_logica_mostrar_razonamiento  [Compartir tu logica mostrando el razonamiento entero y no solo la conclusion]
+    levantada por: similitud_texto
+    similitud_texto    0.368 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.486 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de compartir_logica_mostrar_razonamiento
+
+  vecino repartir_decision_cercanos_hechos  [Repartir las decisiones entre los mas cercanos a los hechos en vez de tomarlas tu por ser el jefe]
+    levantada por: similitud_texto
+    similitud_texto    0.365 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.473 (umbral 0.60)
+    paso 3 del candidato contra paso 6 de repartir_decision_cercanos_hechos
+
+  vecino persuadir_emocion_oyente_no_propia  [Persuadir atendiendo a la emocion del que escucha y no a la tuya, aunque tu conexion con la decision sea fuerte]
+    levantada por: similitud_texto
+    similitud_texto    0.352 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.435 (umbral 0.60)
+    paso 3 del candidato contra paso 3 de persuadir_emocion_oyente_no_propia
+
+BLOQUEADO: faltan veredictos para compartir_logica_mostrar_razonamiento, repartir_decision_cercanos_hechos, persuadir_emocion_oyente_no_propia
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "compartir_logica_mostrar_razonamiento|CONTINUA|madre=compartir_logica_mostrar_razonamiento|que añade el hijo a la madre"
+    --veredicto "compartir_logica_mostrar_razonamiento|REPITE|por que no añade procedimiento"
+    --veredicto "compartir_logica_mostrar_razonamiento|SANO|por que no son el mismo trabajo"
+    --veredicto "compartir_logica_mostrar_razonamiento|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "repartir_decision_cercanos_hechos|CONTINUA|madre=repartir_decision_cercanos_hechos|que añade el hijo a la madre"
+    --veredicto "repartir_decision_cercanos_hechos|REPITE|por que no añade procedimiento"
+    --veredicto "repartir_decision_cercanos_hechos|SANO|por que no son el mismo trabajo"
+    --veredicto "repartir_decision_cercanos_hechos|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "persuadir_emocion_oyente_no_propia|CONTINUA|madre=persuadir_emocion_oyente_no_propia|que añade el hijo a la madre"
+    --veredicto "persuadir_emocion_oyente_no_propia|REPITE|por que no añade procedimiento"
+    --veredicto "persuadir_emocion_oyente_no_propia|SANO|por que no son el mismo trabajo"
+    --veredicto "persuadir_emocion_oyente_no_propia|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
