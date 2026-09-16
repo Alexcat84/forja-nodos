@@ -35217,3 +35217,83 @@ solo hueco**, y el cerrojo no aviso ni una vez.
 hubiera tecleado**, y las tres las caza el mismo metodo. **`D.41` dice que la diferencia no es el
 cuidado sino el metodo, y hoy lo he comprobado tres veces en una vuelta.**
 
+
+# VUELTA 32, **la celda tecleada DENTRO del instrumento**, la septima arista de la cabeza, y **cerrar `cap_11` en insercion** (lote 4, `scott_radical_candor`)
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor al cerrar la `ACTA 30`. Cinco
+tareas, que es el tope (`EXTRACTOR.md` 1.3). **La `TAREA 2` es BLOQUEANTE y va antes de la primera
+insercion.***
+
+## Y.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**LA MIDO YO, CON MIS COMANDOS**, y despues la cuadro contra la tabla que el encargo publica. La
+primera operacion de esta vuelta es el commit del arnes pendiente (`EXTRACTOR.md` 1.1), asi que esta
+tabla se lee **justo despues de ese commit y antes de la `TAREA 1`**, y el commit que cita es ya
+estado intermedio y se dice.
+
+<!-- TALLADO: script=.v32/apertura.py salida=.v32/apertura_tabla.txt -->
+
+| pieza | valor | de donde sale |
+|---|---:|---|
+| rama | `extraccion-mundo-11` | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno | `56a0df6` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | **267** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **391** | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| aristas por `nodos_siguientes` | **102** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | **102** | `dataset/nodos.jsonl` |
+| candidatos en bandeja, lote 4 | **78** | PATRON: `cuarentena/scott_radical_candor/*.json` |
+| insertados y archivados, lote 4 | **64** | PATRON: `cuarentena/_insertados/scott_radical_candor/*.json` |
+| candidatos en bandeja, lote 5 | **3** | PATRON: `cuarentena/marquet_turn_the_ship/*.json` |
+| lote 4 insertado sobre `142`, por ciento | **45,1** | `cuarentena/_insertados/scott_radical_candor/` |
+
+**LAS DIEZ FILAS COMPARABLES ME SALEN AL DIGITO CONTRA EL ENCARGO**: `267` nodos, `391` veredictos,
+`102` y `102` aristas por los dos extremos y **cero sin reciproco**, `78` en bandeja del lote 4, `64`
+archivados y `3` en el lote 5. **Cero discrepancias que declarar** (`EXTRACTOR.md` 5).
+
+**LA UNICA FILA QUE NO CUADRA AL DIGITO ES DE REDONDEO Y LO DIGO EN VEZ DE CALLARLO:** el encargo
+publica **`45,07`** por ciento y mi instrumento imprime **`45,1`**, porque imprime a una decimal.
+`64` sobre `142` es `45,070...`, asi que **las dos cifras son la misma medida a distinta precision**
+y no hay discrepancia de dato. Lo apunto porque una fila que no coincide al digito tiene que llevar
+escrito por que.
+
+**Y LAS DOS CIFRAS QUE FALTABAN EN ESA TABLA, corridas por mi:**
+
+<!-- TALLADO: parcial salida=.v32/aceptacion_apertura.txt -->
+
+    $ python tests/test_aceptacion.py
+      total: 200 pruebas, 0 fallos, 0 errores
+
+**`200` pruebas y `0` fallos, al digito contra el encargo.** El tallado y el censo de rutas los
+corrio el hook en el commit de apertura y salieron **VERDE los dos**, con `61` tablas talladas y
+`500` rutas censadas; el encargo publica `493` rutas, y **la diferencia es mia y esperada**: las
+rutas que este mismo bloque de apertura acaba de publicar aun no existian cuando el auditor conto.
+Lo recuento al cierre, que es donde `EXTRACTOR.md` 4 manda medirlo.
+
+### Y.0.a. **ESTA VUELTA TAMPOCO TRAE SALDO DE LOTE NI COLA SELLADA, Y LO DECLARO EN VEZ DE INVENTARLO** (`D.43`)
+
+*Van dos vueltas seguidas. Lo compruebo en vez de suponerlo, y lo compruebo hoy.*
+
+<!-- TALLADO: parcial salida=.v32/entrega_arnes.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ ls docs/loop/ | grep -i -E "cola|vecin"
+      (ni una linea)
+
+**ASI QUE: ni informe de lote sellado, ni cola de vecinos sellada.** `D.43` manda no recomputar el
+primero y no inventarlo: **esta vuelta no trae saldo de lote**, y la cifra `CHOCAN entre si dentro
+del lote` no se publica porque no hay quien la firme. **La cola de vecinos la vuelvo a pagar yo
+dentro del turno**, que son las dos corridas de aduana por candidato que el encargo `3.d` ya
+presupuesta.
+
+## Y.SKEL. LAS CINCO TAREAS ENCARGADAS, CON SU FILA VACIA HASTA QUE CIERREN (`EXTRACTOR.md` 3)
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | los registros de la `ACTA 30` | **ABIERTA** |
+| 2 | **BLOQUEANTE**: la celda tecleada dentro del instrumento, y la arista que se perdio por ella | **ABIERTA** |
+| 3 | cerrar `cap_11` en insercion: los tres que quedan, con sus dos aristas de caducidad | **ABIERTA** |
+| 4 | el `resumen_teorico` que dice lo contrario del grafo y de la `ACTA 25` | **ABIERTA** |
+| 5 | la cola entera, recontada fila a fila contra el dato | **ABIERTA** |
