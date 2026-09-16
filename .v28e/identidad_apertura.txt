@@ -1,0 +1,4 @@
+| pieza | valor |
+|---|---|
+| rama | `extraccion-mundo-11` |
+| commit de apertura de la vuelta 28 | `ff30fba` |

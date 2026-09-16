@@ -32638,3 +32638,83 @@ de ella**, y por eso la reparto en vez de resumirla.
 *Fin del reporte de la **VUELTA 27**. **Tres tareas cerradas, una declarada como cola por la linea del
 propio encargo, y TRES PARADAS declaradas y no arregladas por mi.** El extractor propone en su reporte
 y no se adjudica nada: las seis propuestas de `U.8.f` y `U.9.d` van aqui, y quien tenga la sede decide.*
+
+---
+
+# VUELTA 28, **las tres paradas adjudicadas y ninguna era parada**, `D.29` llegando a `src/aduana.py`, la vigencia devuelta a lo que `D.15` dice que es, y `cap_07` hasta el final (lote 4, `scott_radical_candor`)
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor al cerrar la `ACTA 27`.*
+
+**ESTE ESQUELETO SE ABRE ANTES DE LA PRIMERA TAREA** (`EXTRACTOR.md` 3) y **cada tarea anexa su fila
+al cerrarse**, no al final.
+
+## V.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+### V.0.a. LAS CUATRO GUARDAS AL ABRIR
+
+Salidas guardadas en `.v28e/`, corridas antes de tocar nada:
+
+| guarda | salida | de donde sale |
+|---|---|---|
+| `python forja.py gate` | `GATE VERDE`, **239** nodos verificados | `.v28e/gate_apertura.txt` |
+| `python forja.py guiones` | `BARRIDO DE GUIONES VERDE` | `.v28e/guiones_apertura.txt` |
+| `python forja.py resolutor` | **239** vivos, `0` deprecados, `0` alias | `.v28e/resolutor_apertura.txt` |
+| `python tests/test_aceptacion.py` | **148** pruebas, `0` fallos, `0` errores | `.v28e/test_apertura.txt` |
+
+### V.0.b. LAS CUENTAS AL ABRIR
+
+Salida de `.v28e/cuentas_apertura.txt`, anexada entera:
+
+<!-- TALLADO: parcial salida=.v28e/cuentas_apertura.txt -->
+
+| | |
+|---|---:|
+| nodos en `dataset/nodos.jsonl` | **239** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **264** |
+| candidatos en bandeja, lote 4 (`cuarentena/scott_radical_candor`) | **106** |
+| ya insertados y archivados, lote 4 (`cuarentena/_insertados/scott_radical_candor`) | **36** |
+| candidatos en bandeja, lote 5 (`cuarentena/marquet_turn_the_ship`) | **3** |
+
+**LAS CINCO ME SALEN AL DIGITO CONTRA LAS DEL ENCARGO**, que publica `106`, `36`, `239`, `264` y `3`.
+
+### V.0.c. LA IDENTIDAD, LEIDA DE GIT (`EXTRACTOR.md` 5)
+
+<!-- TALLADO: parcial salida=.v28e/identidad_apertura.txt -->
+
+| pieza | valor |
+|---|---|
+| rama | `extraccion-mundo-11` |
+| commit de apertura de la vuelta 28 | `ff30fba` |
+
+### V.0.d. **ESTA VUELTA TAMPOCO TRAE SALDO DE LOTE, Y LO DECLARO EN VEZ DE INVENTARLO** (`D.43`)
+
+    $ ls -la docs/loop/INFORME_DE_LOTE.txt
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+    $ ls -la docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+
+**`D.43` es literal para este caso.** Ni una cifra de esta vuelta sale de un informe de lote.
+
+### V.0.e. **LA INSERCION LLEGA ABIERTA Y LA CONDICION SE COMPRUEBA AL ABRIR** (`D.39`)
+
+**El lote 4 esta CERRADO en extraccion** y su informe lo certifico el acta que cerro el lote. **Los
+`15` de `cap_07` que quedan en bandeja son de ese lote cerrado**, asi que entran. **El lote 5 tiene
+`3` candidatos en bandeja y su lote esta ABIERTO: no se toca ni uno**, que seria caida de dato.
+
+### V.0.f. **MI SEDE DE TRABAJO ES `.v28e/` Y NO `.v28/`**
+
+`.v28/` es la sede de la fase ciega y del turno normal del auditor de la `ACTA 27`, citada por ella
+instrumento a instrumento. **Escribir encima seria pisar evidencia sellada de otro rol.**
+
+## V.1. LAS CINCO TAREAS ENCARGADAS, Y SUS FILAS SE ANEXAN AL CERRARSE
+
+| # | tarea | estado |
+|---:|---|---|
+| **1** | los registros de la `ACTA 27`, con sus cinco puntos | ABIERTA |
+| **2** | **BLOQUEANTE**: `D.29` llega a `src/aduana.py`, y con ella entra la cabeza de la rueda | ABIERTA |
+| **3** | la vigencia, devuelta a lo que `D.15` dice que es | ABIERTA |
+| **4** | seguir insertando `cap_07` hasta el final del capitulo | ABIERTA |
+| **5** | el hueco de transcripcion de `L153`, y el resto de la cola con su cifra | ABIERTA |
+
+**Son CINCO tareas y el tope son cinco** (`EXTRACTOR.md` 1.3). **La `TAREA 2` va antes que la `4`**
+por orden expreso del encargo.
