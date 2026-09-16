@@ -1,0 +1,38 @@
+nodos en el grafo                 : 234
+veredictos en bitacora            : 240
+nodos en f52f77e (antes de la 26) : 222
+veredictos en f52f77e             : 203
+NUEVOS NODOS                      : 12
+NUEVAS LINEAS DE BITACORA         : 37
+aristas antes                     : 81
+aristas ahora                     : 84
+NUEVAS ARISTAS                    : 3
+   acompaniar_mejores_equipo_socio > reconocer_recompensar_gente_estable
+   acompaniar_mejores_equipo_socio > retar_superestrellas_equipo_constantemente
+   cambiar_potencial_trayectoria_crecimiento > retirar_etiquetas_permanentes_equipo
+RETIRADAS                         : 0
+
+LOS NUEVOS (12):
+   abrir_debate_humor_explicar_proposito
+   adaptar_escucha_cultura_ajena
+   aprender_resultados_vencer_dos_presiones
+   bajar_detalle_organizacion_fuente_hechos
+   cambiar_posicion_hechos_explicar_cambio
+   decidir_momento_despedir_persona
+   despedir_persona_franqueza_radical
+   reconocer_recompensar_gente_estable
+   retar_superestrellas_equipo_constantemente
+   retirar_etiquetas_permanentes_equipo
+   revisar_cinco_causas_mal_desempenio
+   subir_vara_calidad_equipo
+
+LINEAS NUEVAS DE BITACORA: 37
+  por veredicto: {'SANO': 34, 'CONTINUA': 3}
+   cambiar_posicion_hechos_explicar_cambio        1
+   decidir_momento_despedir_persona               4
+   despedir_persona_franqueza_radical             7
+   reconocer_recompensar_gente_estable            3
+   retar_superestrellas_equipo_constantemente     9
+   retirar_etiquetas_permanentes_equipo           4
+   revisar_cinco_causas_mal_desempenio            1
+   subir_vara_calidad_equipo                      8

@@ -1,0 +1,37 @@
+=== LAS RAZONES DE LA MUESTRA PINEADA, DESTAPADAS DESPUES DE ADJUDICAR ===
+
+subir_vara_calidad_equipo contra descubrir_motivacion_sentido_persona
+   veredicto : SANO
+   razon     : el vecino averigua de donde saca cada persona el sentido de su trabajo y yo subo la vara de calidad a quien lleva tiempo en aceptable. Mi paso 8 que la señal enfrenta dice lo que la politica de los dos anios costo en estres, y su paso 4 es del descubrimiento del sentido: no hay linea comun
+
+retar_superestrellas_equipo_constantemente contra cuidar_persona_completa_equipo
+   veredicto : SANO
+   razon     : el vecino construye la relacion humana con los cuatro medios que el libro nombra y los tres que descarta, y yo reparto oportunidades de crecimiento. Mi paso 1 es retala y su paso 2 es reconoce que ser jefe es un puesto de trabajo y no un juicio de valor
+
+retar_superestrellas_equipo_constantemente contra despedir_persona_franqueza_radical
+   veredicto : SANO
+   razon     : estamos en los dos extremos opuestos del desempenio: el vecino despide a quien no mejora y yo reto a quien hace un trabajo excelente. Su paso 7 reformula el problema como que el puesto es malo y mi paso 1 es retala y asegurate de que esta aprendiendo. Lo unico que comparten es que los dos hablan de encajar a una persona en un puesto, que es el tema del capitulo entero
+
+despedir_persona_franqueza_radical contra desplegar_marco_franqueza_radical
+   veredicto : SANO
+   razon     : el vecino despliega el marco como objeto fisico (recortarlo, fotocopiarlo, pegarlo, no escribir nombres en las casillas) y yo no lo uso en ningun paso. Su paso 6, usar el marco como brujula para llevar cada conversacion concreta a un sitio mejor, no nombra NINGUNA conversacion en particular, y una linea que dice cada no nombra la mia: eso es exactamente lo que EXTRACTOR.md 9.1 llama nombrar sin procedimentar, y declarar la arista ahi la pondria yo y no el libro
+
+decidir_momento_despedir_persona contra elegir_recolocar_despedir_persona
+   veredicto : SANO
+   razon     : otro libro (zhuo_manager) y ademas doctrina contraria en la misma linea: mi paso 11 llama tercera mentira a que un traslado sea la solucion y el paso 2 del vecino manda considerar siempre recolocar dentro. Dos libros que se contradicen sobre el mismo objeto no son madre e hija ni la misma cosa dicha dos veces: son dos posturas, y la contradiccion la declaro en mi reporte en vez de resolverla insertando
+
+subir_vara_calidad_equipo contra cuidar_persona_completa_equipo
+   veredicto : SANO
+   razon     : los dos pasos 1 que la señal enfrenta dicen cosas distintas: el suyo es el mandato de mantenerlo profesional como causa de no cuidar personalmente, y el mio es que no existe el jugador de segunda ni el ser humano mediocre. El vecino construye la relacion humana y yo subo una vara de calidad
+
+despedir_persona_franqueza_radical contra elogiar_trabajo_especifico_contexto
+   veredicto : SANO
+   razon     : no hay ni un paso comun: el vecino elogia con su porque dentro y averigua quien hizo que antes de elogiar en publico, y yo despido. La señal es similitud de texto 0.386, y lo que se parece es el REGISTRO del libro (los dos nodos cuentan casos de la autora con nombre propio), no el procedimiento. Es la banda justo por encima del umbral, no la banda alta de gemelos que EXTRACTOR.md 11 describe
+
+
+=== D.8: ALGUN VEREDICTO DE LA TANDA SIN RAZON ESCRITA? ===
+veredictos nuevos          : 37
+SIN razon escrita          : 0
+con razon de menos de 40 caracteres : 0
+
+longitud media de razon    : 437 caracteres

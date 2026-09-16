@@ -1,0 +1,13 @@
+D.8 sobre el par de las dos listas de cinco (T.3.f):
+  veredictos en bitacora para ese par: 0  -> el reporte dice que no existe
+
+Aristas que cruzan de libro en f52f77e (antes de la vuelta 26):
+  aristas por nodos_siguientes: 81   de ellas entre libros: 0
+
+Los 5 pares de la tanda con vecino de otro libro (recuento del arbol): ver .v27/pares_entre_libros.txt
+  el reporte T.5 discutible 2 dice 'los dos pares con zhuo_manager'
+  pares de la tanda cuyo vecino es de zhuo_manager: 4
+     despedir_persona_franqueza_radical contra despedir_persona_respeto_franqueza -> SANO
+     despedir_persona_franqueza_radical contra elegir_recolocar_despedir_persona -> SANO
+     decidir_momento_despedir_persona contra despedir_persona_respeto_franqueza -> SANO
+     decidir_momento_despedir_persona contra elegir_recolocar_despedir_persona -> SANO

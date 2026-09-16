@@ -1,0 +1,64 @@
+
+====================================================================================================
+PAR: retirar_etiquetas_permanentes_equipo  CONTRA  manejar_enfado_persona_desafiada
+====================================================================================================
+  === retirar_etiquetas_permanentes_equipo   [GRAFO]
+      activacion: Cuando te oyes decir que alguien de tu equipo es de una manera, en presente permanente, y cuando alguien que llevaba anios estable de pronto pide un cambio o al reves.
+      entregable: Ninguna etiqueta permanente puesta sobre nadie del equipo, el motivo de la trayectoria de cada cual hablado con la persona, y las puntuaciones de desempenio referidas a un periodo y no a una persona.
+      previos   : ['cambiar_potencial_trayectoria_crecimiento']   siguientes: []
+       1. Cuenta con lo que es dificil aqui, que el texto nombra: cuesta no fijar tus percepciones sobre la gente, y salen solas frases del tipo esta persona es de tal manera y siempre lo sera.
+       2. No uses los nombres de las dos fases como etiquetas permanentes. El texto dice que esa es su mayor preocupacion con esos dos nombres, y lo pide expresamente.
+       3. Cuenta con que la gente cambia de verdad: quien llevaba tiempo en trayectoria gradual puede ponerse inquieto de golpe y ansiar un reto nuevo, y quien lleva anios en trayectoria empinada puede estar deseando un periodo de estabilidad.
+       4. Toma eso como una razon mas para dirigir de verdad: ser un gran jefe supone ajustarse constantemente a la realidad nueva del dia, la semana o el anio segun se despliega.
+       5. Y cuenta con la condicion de ese ajuste, que es la que el texto pone como filo: no puedes ajustarte si no has estado prestando atencion, o si no conoces a la persona lo bastante como para notar que algo importante ha cambiado.
+       6. No etiquetes tampoco por desempenio. El texto dice que el desempenio de la gente tambien cambia con el tiempo y que todo el mundo tiene un trimestre malo de vez en cuando.
+       7. Para combatir las etiquetas permanentes, refiere la puntuacion al periodo y no a la persona. El texto recoge las tres que ideo Jared Smith: trimestre flojo, trimestre solido y trimestre excepcional.
+       8. Cuenta con que el ajuste mas dificil es cuando toca mover a quien te hacia la vida facil a un papel nuevo que te la va a hacer mas dificil, al menos a corto plazo, y con que eso es estresante para ti.
+       9. Habla con la persona de que esta impulsando su grado de trayectoria en cada momento. El texto dice que es importante que lo tengan claro los dos, el miembro del equipo y el jefe, para que se beneficien la persona y la empresa.
+      10. Usa el marco pero no abuses de el: asegurate de ver a cada persona de tu equipo con ojos nuevos cada dia, porque la gente evoluciona y tus relaciones tienen que evolucionar con ella. El texto lo cierra asi: cuida personalmente, y no metas a la gente en cajas para dejarla ahi.
+
+  === manejar_enfado_persona_desafiada   [GRAFO]
+      activacion: Cuando alguien de tu equipo esta enfadado contigo despues de que le desafiaras directamente, y lo que dijiste le ha dolido.
+      entregable: El dolor reconocido en voz alta, la frase no te lo tomes como algo personal fuera de tu vocabulario, y una oferta de ayuda para arreglar el problema sin haber negado que el problema existe.
+      previos   : []   siguientes: []
+       1. Acepta antes de empezar lo que el texto pone como parte del puesto: que a veces la gente de tu equipo va a estar enfadada contigo. El texto anade que si nadie se enfada nunca contigo es probable que no estes desafiando bastante a tu equipo.
+       2. Trata como la clave lo que el texto llama la clave, igual que en cualquier relacion: como manejas el enfado.
+       3. Cuando lo que dices duele, reconoce el dolor de la otra persona.
+       4. No finjas que no duele y no digas que no deberia doler: solo demuestra que te importa.
+       5. Elimina de tu vocabulario la frase no te lo tomes como algo personal. El texto dice que es insultante.
+       6. En su lugar, ofrecete a ayudar a arreglar el problema.
+       7. No finjas que no hay problema solo para intentar que alguien se sienta mejor.
+
+====================================================================================================
+PAR: subir_vara_calidad_equipo  CONTRA  acompaniar_mejores_equipo_socio
+====================================================================================================
+  === subir_vara_calidad_equipo   [GRAFO]
+      activacion: Cuando alguien de tu equipo lleva tiempo haciendo un trabajo que no es malo pero tampoco es bueno, y te has acostumbrado a que sea asi.
+      entregable: La persona con un proyecto donde pueda brillar por delante, y despues de eso o brillando o ayudada a buscar un sitio donde pueda hacerlo, y en ningun caso etiquetada como mediocre.
+      previos   : []   siguientes: []
+       1. Parte de lo que el texto afirma: no existe el jugador de segunda ni el ser humano mediocre, y todo el mundo puede ser excelente en algo. Y parte tambien de lo que eso NO significa, que el texto se para a decir: no es que cualquiera pueda ser bueno en cualquier cosa.
+       2. Cuenta con por que la gente se queda atascada, que el texto enumera: se quedan tanto tiempo en el trabajo equivocado que cualquier cambio exigiria uno o dos pasos atras, han llegado a depender del prestigio y del dinero del puesto, y notan la presion de su familia para conservarlo.
+       3. Cuenta con las tres razones por las que los jefes mantienen a esa persona, que el texto tambien enumera: no estan seguros de poder encontrar a alguien mejor, formar gente nueva cuesta tiempo y esfuerzo, y les cae bien la persona y les parece injusto animarla a buscar un trabajo que le pegue mas.
+       4. Reconoce eso por lo que el texto dice que es: la peor forma de empatia ruinosa que los jefes practican con regularidad, y una fuente enorme de posibilidad desperdiciada.
+       5. Antes de empujar, conoce a la persona lo bastante como para entender por que no esta prosperando. El texto da la excepcion expresa: si simplemente esta pasando una mala racha, es mejor darle el tiempo y el espacio para recuperarse que pedirle mas de lo que puede dar en ese momento.
+       6. Da a quien lleve mas de dos anios sin hacer un trabajo excepcional la oportunidad de trabajar en un proyecto donde pueda brillar. El texto lo presenta como la politica concreta que la autora impuso en sus equipos, y dice que fue una de las cosas menos populares que hizo.
+       7. Si aun asi el trabajo sigue siendo mediocre, empieza a animar a esa persona a buscar trabajo en otro sitio.
+       8. Cuenta con lo que esa politica cuesta, que el texto no esconde: fue dificil de hacer cumplir, genero mucho estres, y a quien mas le peso fue a los jefes, porque les obligaba a tener muchas conversaciones dificiles y a apretar de verdad.
+       9. Y cuenta con el argumento con el que el texto la sostiene: si alguien no ha demostrado en dos anios que puede hacer un trabajo excepcional, es casi seguro que nunca va a llegar ahi, y ser etiquetado permanentemente como mediocre hace mas dania que ser empujado.
+      10. Entiende tu trabajo como poner y sostener una vara de calidad. El texto avisa de lo que se siente y de lo que cuesta lo contrario: puede parecer duro a corto plazo, pero a la larga lo unico mas cruel es bajar la vara.
+
+  === acompaniar_mejores_equipo_socio   [GRAFO]
+      activacion: Cuando te descubres dedicando mas tiempo a quien va mal que a quien va bien, o diciendote que a los que hacen buen trabajo no hace falta molestarlos porque no te necesitan.
+      entregable: Tiempo real dedicado a los que hacen el mejor trabajo, con sus obstaculos conocidos al detalle y con al menos parte del trabajo hecho a su lado y no solo aconsejado desde fuera.
+      previos   : []   siguientes: ['retar_superestrellas_equipo_constantemente', 'reconocer_recompensar_gente_estable']
+       1. Antes de distinguir entre estrellas de rock y superestrellas, atiende a lo que las dos necesitan de ti por igual: que te concentres en ellas y te asegures de que tienen todo lo que hace falta para seguir haciendo un gran trabajo.
+       2. No ignores a quien hace el mejor trabajo con la excusa de que no te necesita o de que no quieres microgestionar. El texto lo llama uno de los errores mas comunes de los jefes y dice que ignorar a alguien es una forma terrible de construir una relacion.
+       3. Cuenta con lo que el texto opone a la receta de contratar bien y dejarlos en paz, en boca de Dick Costolo: es como decir que para tener un buen matrimonio te cases con la persona adecuada y despues evites pasar tiempo con ella.
+       4. Cuenta con lo que te cuesta ignorarlos, que el texto enumera: no entiendes como quieren y necesitan crecer en su puesto en ese momento de sus vidas, asignas las tareas equivocadas a las personas equivocadas, promocionas a quien no toca, y no les das la guia que necesitan.
+       5. Ten delante la cuenta que el texto hace del reparto de tu tiempo: cada minuto que pasas con alguien que hace un gran trabajo rinde en los resultados del equipo mucho mas que el tiempo que pasas con alguien que esta fallando.
+       6. En vez de jefe ausente o microgestor, se socio: dedica el tiempo a ayudar a quien hace el mejor trabajo a superar obstaculos y a hacer que su buen trabajo sea todavia mejor.
+       7. Cuenta con lo que eso te va a costar, que el texto dice sin adornarlo: lleva tiempo, porque exige que sepas bastante del detalle del trabajo de la persona como para entender sus matices.
+       8. Arremangate y ayuda a hacer el trabajo, y no solo a aconsejar sobre el.
+       9. Haz muchas preguntas y desafia a la persona.
+      10. No dediques mas tiempo a quien va mal que a quien va bien. El texto da dos razones: no es justo para quien lo esta haciendo bien, y pasar de grande a extraordinario inspira mas a todo el mundo que pasar de malo a mediocre.
+      11. Cuenta con el efecto secundario que el texto aniade: ver que aspecto tiene un desempenio verdaderamente excepcional ayuda a quienes estan fallando a ver con mas claridad que se espera de ellos.

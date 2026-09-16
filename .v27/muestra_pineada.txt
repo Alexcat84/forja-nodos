@@ -1,0 +1,17 @@
+pares nuevos de la tanda            : 37
+  SANO                              : 34
+  CONTINUA                          : 3
+menos los 3 contaminados (3.2)      : 34
+  de ellos SANO                     : 31
+20%% de los SANO limpios (31)        : 6,2 -> 7   |  20%% de 34 : 6,8 -> 7
+EL MAYOR ENTRE 3 Y 7                : 7   (techo 20, no muerde)
+SEMILLA SELLADA                     : 27
+
+LA MUESTRA, EN EL ORDEN QUE LA SACA random.Random(27).sample:
+  1. subir_vara_calidad_equipo                    contra descubrir_motivacion_sentido_persona          [SANO]
+  2. retar_superestrellas_equipo_constantemente   contra cuidar_persona_completa_equipo                [SANO]
+  3. retar_superestrellas_equipo_constantemente   contra despedir_persona_franqueza_radical            [SANO]
+  4. despedir_persona_franqueza_radical           contra desplegar_marco_franqueza_radical             [SANO]
+  5. decidir_momento_despedir_persona             contra elegir_recolocar_despedir_persona             [SANO]
+  6. subir_vara_calidad_equipo                    contra cuidar_persona_completa_equipo                [SANO]
+  7. despedir_persona_franqueza_radical           contra elogiar_trabajo_especifico_contexto           [SANO]

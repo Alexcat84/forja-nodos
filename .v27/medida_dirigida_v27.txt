@@ -1,0 +1,41 @@
+umbrales: similitud 0.35 | familia 0.30 | paso_contra_nodo 0.60
+
+CANDIDATO adaptar_escucha_cultura_ajena
+   escuchar_callado_equipo_tranquilizar_incomodo            [BANDEJA] fam 0.000 pxn 0.484 sim 0.289  -> no levanta                   sin veredicto
+   escuchar_ruidoso_opinion_fuerte_pedir_agujeros           [BANDEJA] fam 0.000 pxn 0.405 sim 0.298  -> no levanta                   sin veredicto
+   crear_cultura_escucha_equipo                             [BANDEJA] fam 0.333 pxn 0.453 sim 0.267  -> LEVANTA (familia_id)         sin veredicto
+   organizar_sistema_recoger_quejas_equipo                  [BANDEJA] fam 0.000 pxn 0.414 sim 0.298  -> no levanta                   sin veredicto
+   recorrer_rueda_hacer_cosas_equipo                        [BANDEJA] fam 0.000 pxn 0.449 sim 0.273  -> no levanta                   sin veredicto
+   demostrar_apertura_visiones_distintas                    [BANDEJA] fam 0.000 pxn 0.379 sim 0.213  -> no levanta                   sin veredicto
+   escuchar_entender_critica_dominar_defensa                [BANDEJA] fam 0.000 pxn 0.446 sim 0.226  -> no levanta                   sin veredicto
+
+CANDIDATO abrir_debate_humor_explicar_proposito
+   centrar_debate_ideas_fuera_egos                          [BANDEJA] fam 0.111 pxn 0.462 sim 0.336  -> no levanta                   sin veredicto
+   crear_obligacion_disentir_equipo                         [BANDEJA] fam 0.000 pxn 0.438 sim 0.344  -> no levanta                   sin veredicto
+   parar_debate_emocion_agotamiento                         [BANDEJA] fam 0.125 pxn 0.463 sim 0.392  -> LEVANTA (similitud_texto)    sin veredicto
+   fijar_fecha_cierre_debate_equipo                         [BANDEJA] fam 0.111 pxn 0.508 sim 0.372  -> LEVANTA (similitud_texto)    sin veredicto
+   montar_reunion_gran_debate                               [BANDEJA] fam 0.125 pxn 0.485 sim 0.200  -> no levanta                   sin veredicto
+   recorrer_rueda_hacer_cosas_equipo                        [BANDEJA] fam 0.000 pxn 0.453 sim 0.341  -> no levanta                   sin veredicto
+
+CANDIDATO bajar_detalle_organizacion_fuente_hechos
+   pedir_hechos_decision_evitar_recomendaciones             [BANDEJA] fam 0.111 pxn 0.442 sim 0.275  -> no levanta                   sin veredicto
+   repartir_decision_cercanos_hechos                        [BANDEJA] fam 0.125 pxn 0.664 sim 0.319  -> LEVANTA (paso_contra_nodo)   sin veredicto
+   ceder_autoridad_unilateral_equipo                        [BANDEJA] fam 0.000 pxn 0.435 sim 0.220  -> no levanta                   sin veredicto
+   pasear_organizacion_hallar_problemas_pequenios           [BANDEJA] fam 0.111 pxn 0.436 sim 0.260  -> no levanta                   sin veredicto
+   mantener_manos_trabajo_real_equipo                       [BANDEJA] fam 0.000 pxn 0.404 sim 0.310  -> no levanta                   sin veredicto
+   recorrer_rueda_hacer_cosas_equipo                        [BANDEJA] fam 0.000 pxn 0.470 sim 0.313  -> no levanta                   sin veredicto
+
+CANDIDATO aprender_resultados_vencer_dos_presiones
+   cambiar_posicion_hechos_explicar_cambio                  [GRAFO  ] fam 0.000 pxn 0.429 sim 0.279  -> no levanta                   sin veredicto
+   cuidarse_agotamiento_centro_rueda                        [BANDEJA] fam 0.000 pxn 0.409 sim 0.341  -> no levanta                   sin veredicto
+   recorrer_rueda_hacer_cosas_equipo                        [BANDEJA] fam 0.000 pxn 0.460 sim 0.342  -> no levanta                   sin veredicto
+   recorrer_rueda_conscientemente_cultura_equipo            [BANDEJA] fam 0.000 pxn 0.433 sim 0.228  -> no levanta                   sin veredicto
+   bloquear_tiempo_pensar_calendario                        [BANDEJA] fam 0.000 pxn 0.493 sim 0.287  -> no levanta                   sin veredicto
+
+CANDIDATO cambiar_posicion_hechos_explicar_cambio
+   aprender_resultados_vencer_dos_presiones                 [GRAFO  ] fam 0.000 pxn 0.429 sim 0.272  -> no levanta                   sin veredicto
+   cuidarse_agotamiento_centro_rueda                        [BANDEJA] fam 0.000 pxn 0.456 sim 0.365  -> LEVANTA (similitud_texto)    sin veredicto
+   abrir_debate_humor_explicar_proposito                    [GRAFO  ] fam 0.111 pxn 0.475 sim 0.377  -> LEVANTA (similitud_texto)    con veredicto
+   recorrer_rueda_hacer_cosas_equipo                        [BANDEJA] fam 0.000 pxn 0.436 sim 0.292  -> no levanta                   sin veredicto
+
+PARES MEDIDOS QUE SUPERAN ALGUN UMBRAL: 6

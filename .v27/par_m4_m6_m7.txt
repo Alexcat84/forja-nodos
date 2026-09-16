@@ -1,0 +1,97 @@
+
+====================================================================================================
+PAR: despedir_persona_franqueza_radical  CONTRA  desplegar_marco_franqueza_radical
+====================================================================================================
+  === despedir_persona_franqueza_radical   [GRAFO]
+      activacion: Cuando ya has decidido que tienes que despedir a alguien y te toca preparar y tener esa conversacion.
+      entregable: La conversacion tenida sin distanciarte de la persona, con el problema reformulado en el puesto y no en ella, con un trabajo concreto imaginado para ella y una presentacion ofrecida si puedes hacerla.
+      previos   : []   siguientes: []
+       1. No te distancies de la persona a la que vas a despedir. El texto dice que si intentas evitar sentir el dolor que hay en la situacion, sobre todo el de la persona que se va, vas a hacer una chapuza.
+       2. Cuenta con que esto es duro de verdad y con que no eres el unico: el texto cuenta el caso de un empresario de exito con fama de mas descarado que compasivo, que le conto que las manianas en que iba a despedir a alguien se despertaba con sudores frios.
+       3. Para llegar con la cabeza en el sitio correcto, primer recordatorio: acuerdate de un trabajo en el que tu fuiste malo y piensa en lo contento que estas de no estar ya en el. El texto pone el suyo, un verano de cajera de banco haciendo mal las cuentas de cabeza, y lo que su jefa hizo, que fue no despedirla y animarla a intentarlo mas, con lo que lo que era un problema de calculo empezo a sentirse como un defecto de caracter.
+       4. Cuenta con lo que el texto saca de ese caso: si aquella jefa la hubiera despedido diciendo que claramente ese trabajo no le interesaba y que por que no buscaba otro ese verano, le habria hecho un gran favor y le habria ahorrado mucho dinero al banco.
+       5. Parte de que al despedir a alguien creas la posibilidad de que esa persona destaque y encuentre felicidad haciendo un trabajo con sentido en otro sitio, porque parte de conseguir un buen trabajo es dejar uno malo, o uno que es malo para ti.
+       6. Antes de la reunion, intenta imaginar concretamente cual podria ser ese trabajo para esa persona.
+       7. Reformula el problema para ti y para ella: no es que la persona sea mala, es que el puesto es malo, al menos para esa persona.
+       8. Preguntate si puedes ayudar haciendo una presentacion.
+       9. Segundo recordatorio: mantener a quien hace un mal trabajo castiga a quien lo hace excelente. El texto lo concreta: el trabajo sin hacer acaba recayendo en los que mas rinden, sobrecargandolos.
+      10. Cuenta con lo que el texto dice haber visto siempre en la practica: la moral ha mejorado cada vez que se ha retirado a alguien que rendia mal, y en cambio ha llegado a perder a la gente que mas queria conservar por aguantar demasiado tiempo a quien rendia poco.
+      11. Presta atencion especial cuando el que rinde mal es un jefe, porque el texto dice que retenerlo es especialmente daniino: los malos jefes tienen un impacto negativo enorme sobre la gente que les reporta, y eso es lo contrario de la palanca de un directivo.
+
+  === desplegar_marco_franqueza_radical   [GRAFO]
+      activacion: Cuando estas desplegando la franqueza radical en tu equipo y crees que puede haber confusion sobre lo que significa.
+      entregable: Copias del marco puestas a la vista y repartidas entre tus colegas, y el marco en uso como brujula de conversaciones concretas, sin nombres escritos en las casillas.
+      previos   : []   siguientes: []
+       1. Usa la version nueva del marco de la franqueza radical que trae esta edicion, que es la forma que el propio texto propone para ayudar a que todos entiendan que la idea no es comportarse como un imbecil.
+       2. Recorta el marco del propio libro. El texto dice que hay una version mas grande en su pagina 297.
+       3. Haz fotocopias.
+       4. Ponlas en tu nevera, encima de tu mesa o en cualquier otro sitio, como recordatorio.
+       5. Comparte copias con tus colegas.
+       6. Usa el marco como una brujula, para llevar cada conversacion concreta a un sitio mejor.
+       7. No lo uses como test de personalidad para juzgarte a ti ni para juzgar a otros.
+       8. No escribas nombres en las casillas.
+       9. Cuenta con lo que el texto aniade justo despues de las dos prohibiciones: todos caemos en cada cuadrante varias veces al dia.
+
+====================================================================================================
+PAR: subir_vara_calidad_equipo  CONTRA  cuidar_persona_completa_equipo
+====================================================================================================
+  === subir_vara_calidad_equipo   [GRAFO]
+      activacion: Cuando alguien de tu equipo lleva tiempo haciendo un trabajo que no es malo pero tampoco es bueno, y te has acostumbrado a que sea asi.
+      entregable: La persona con un proyecto donde pueda brillar por delante, y despues de eso o brillando o ayudada a buscar un sitio donde pueda hacerlo, y en ningun caso etiquetada como mediocre.
+      previos   : []   siguientes: []
+       1. Parte de lo que el texto afirma: no existe el jugador de segunda ni el ser humano mediocre, y todo el mundo puede ser excelente en algo. Y parte tambien de lo que eso NO significa, que el texto se para a decir: no es que cualquiera pueda ser bueno en cualquier cosa.
+       2. Cuenta con por que la gente se queda atascada, que el texto enumera: se quedan tanto tiempo en el trabajo equivocado que cualquier cambio exigiria uno o dos pasos atras, han llegado a depender del prestigio y del dinero del puesto, y notan la presion de su familia para conservarlo.
+       3. Cuenta con las tres razones por las que los jefes mantienen a esa persona, que el texto tambien enumera: no estan seguros de poder encontrar a alguien mejor, formar gente nueva cuesta tiempo y esfuerzo, y les cae bien la persona y les parece injusto animarla a buscar un trabajo que le pegue mas.
+       4. Reconoce eso por lo que el texto dice que es: la peor forma de empatia ruinosa que los jefes practican con regularidad, y una fuente enorme de posibilidad desperdiciada.
+       5. Antes de empujar, conoce a la persona lo bastante como para entender por que no esta prosperando. El texto da la excepcion expresa: si simplemente esta pasando una mala racha, es mejor darle el tiempo y el espacio para recuperarse que pedirle mas de lo que puede dar en ese momento.
+       6. Da a quien lleve mas de dos anios sin hacer un trabajo excepcional la oportunidad de trabajar en un proyecto donde pueda brillar. El texto lo presenta como la politica concreta que la autora impuso en sus equipos, y dice que fue una de las cosas menos populares que hizo.
+       7. Si aun asi el trabajo sigue siendo mediocre, empieza a animar a esa persona a buscar trabajo en otro sitio.
+       8. Cuenta con lo que esa politica cuesta, que el texto no esconde: fue dificil de hacer cumplir, genero mucho estres, y a quien mas le peso fue a los jefes, porque les obligaba a tener muchas conversaciones dificiles y a apretar de verdad.
+       9. Y cuenta con el argumento con el que el texto la sostiene: si alguien no ha demostrado en dos anios que puede hacer un trabajo excepcional, es casi seguro que nunca va a llegar ahi, y ser etiquetado permanentemente como mediocre hace mas dania que ser empujado.
+      10. Entiende tu trabajo como poner y sostener una vara de calidad. El texto avisa de lo que se siente y de lo que cuesta lo contrario: puede parecer duro a corto plazo, pero a la larga lo unico mas cruel es bajar la vara.
+
+  === cuidar_persona_completa_equipo   [GRAFO]
+      activacion: Cuando la relacion con una persona a cargo se ha quedado en lo estrictamente profesional y quieres saber que hacer con ella, sin caer en memorizar cumpleanios ni en la charla forzada.
+      entregable: Una relacion en la que las dos partes traen su persona entera al trabajo, con tiempo real de conversacion reservado y un espacio seguro en el que otros pueden hacer lo mismo.
+      previos   : []   siguientes: []
+       1. Cuenta con lo que el texto pone como causa de que la gente no cuide personalmente: el mandato de mantenerlo profesional, que segun el texto niega algo esencial, y la sensacion de ser mejor o mas listo que quien trabaja para ti, que el texto llama sentido de superioridad.
+       2. Reconoce que ser jefe es un puesto de trabajo, no un juicio de valor, que es lo que el texto pone contra ese sentido de superioridad.
+       3. No te quedes en cuidar el trabajo de la persona ni su carrera: el texto dice expresamente que eso no basta y que solo cuidando a la persona completa con tu persona completa se construye la relacion.
+       4. Busca tiempo para conversaciones de verdad, que es el primero de los medios que el texto nombra.
+       5. Conoceos mutuamente a nivel humano, que es el segundo.
+       6. Aprende que es importante para cada persona, que es el tercero.
+       7. Compartid mutuamente que os hace querer levantaros por la maniana e ir a trabajar, y que tiene el efecto contrario, que es el cuarto.
+       8. Da ejemplo tu primero mostrando alguna vulnerabilidad a tus personas a cargo, o simplemente admitiendo cuando tienes un mal dia, y crea un espacio seguro para que los demas hagan lo mismo, que es como el texto describe traer tu persona entera al trabajo.
+       9. No confundas esto con memorizar cumpleanios y nombres de familiares, ni con contar los detalles sordidos de tu vida personal, ni con la charla forzada en actos sociales a los que preferirias no ir: el texto descarta los tres por su nombre.
+      10. Cuenta con el precio que el texto pone al lado: tienes que cuidar profundamente de la gente estando preparado para que te odien a cambio, y si puedes absorber los golpes es mas probable que los tuyos sean buenos jefes cuando les toque. El texto avisa de que puede que nunca te lo devuelvan, y de que es probable que lo pasen adelante.
+
+====================================================================================================
+PAR: despedir_persona_franqueza_radical  CONTRA  elogiar_trabajo_especifico_contexto
+====================================================================================================
+  === despedir_persona_franqueza_radical   [GRAFO]
+      activacion: Cuando ya has decidido que tienes que despedir a alguien y te toca preparar y tener esa conversacion.
+      entregable: La conversacion tenida sin distanciarte de la persona, con el problema reformulado en el puesto y no en ella, con un trabajo concreto imaginado para ella y una presentacion ofrecida si puedes hacerla.
+      previos   : []   siguientes: []
+       1. No te distancies de la persona a la que vas a despedir. El texto dice que si intentas evitar sentir el dolor que hay en la situacion, sobre todo el de la persona que se va, vas a hacer una chapuza.
+       2. Cuenta con que esto es duro de verdad y con que no eres el unico: el texto cuenta el caso de un empresario de exito con fama de mas descarado que compasivo, que le conto que las manianas en que iba a despedir a alguien se despertaba con sudores frios.
+       3. Para llegar con la cabeza en el sitio correcto, primer recordatorio: acuerdate de un trabajo en el que tu fuiste malo y piensa en lo contento que estas de no estar ya en el. El texto pone el suyo, un verano de cajera de banco haciendo mal las cuentas de cabeza, y lo que su jefa hizo, que fue no despedirla y animarla a intentarlo mas, con lo que lo que era un problema de calculo empezo a sentirse como un defecto de caracter.
+       4. Cuenta con lo que el texto saca de ese caso: si aquella jefa la hubiera despedido diciendo que claramente ese trabajo no le interesaba y que por que no buscaba otro ese verano, le habria hecho un gran favor y le habria ahorrado mucho dinero al banco.
+       5. Parte de que al despedir a alguien creas la posibilidad de que esa persona destaque y encuentre felicidad haciendo un trabajo con sentido en otro sitio, porque parte de conseguir un buen trabajo es dejar uno malo, o uno que es malo para ti.
+       6. Antes de la reunion, intenta imaginar concretamente cual podria ser ese trabajo para esa persona.
+       7. Reformula el problema para ti y para ella: no es que la persona sea mala, es que el puesto es malo, al menos para esa persona.
+       8. Preguntate si puedes ayudar haciendo una presentacion.
+       9. Segundo recordatorio: mantener a quien hace un mal trabajo castiga a quien lo hace excelente. El texto lo concreta: el trabajo sin hacer acaba recayendo en los que mas rinden, sobrecargandolos.
+      10. Cuenta con lo que el texto dice haber visto siempre en la practica: la moral ha mejorado cada vez que se ha retirado a alguien que rendia mal, y en cambio ha llegado a perder a la gente que mas queria conservar por aguantar demasiado tiempo a quien rendia poco.
+      11. Presta atencion especial cuando el que rinde mal es un jefe, porque el texto dice que retenerlo es especialmente daniino: los malos jefes tienen un impacto negativo enorme sobre la gente que les reporta, y eso es lo contrario de la palanca de un directivo.
+
+  === elogiar_trabajo_especifico_contexto   [GRAFO]
+      activacion: Cuando vas a elogiar el trabajo de alguien, y sobre todo cuando vas a hacerlo delante de otras personas.
+      entregable: Un elogio dicho con su porque dentro, contextualizado y sentido de verdad, comprobado en como aterrizo y repetido mejor si cayo plano, y en el caso del elogio publico con la averiguacion de quien hizo que hecha por delante.
+      previos   : []   siguientes: []
+       1. Di por que admiras lo que admiras, y no te quedes en el hecho. El texto pone el caso de un elogio suyo que se quedo en decir a su socio que admiraba que fuera entrenador de un equipo infantil, sin decir por que, y lo llama vago e inutil.
+       2. Comprueba que lo que dices lo sientes de verdad. En ese mismo caso el problema de fondo resulto ser otro: el socio contesto que no creia que lo dijera en serio, porque a ella el deporte le desagrada. El texto lo cuenta como un elogio que sono insincero aunque el aprecio fuera real.
+       3. Mide como aterriza tu elogio en la persona que lo recibe, que es lo que el texto llama calibrar tu guia y da como razon de que dar un elogio con sentido sea dificil.
+       4. Si cayo plano, vuelve a intentarlo. La segunda version del caso lleva dentro la ocasion concreta en que ella le habia dado la lata por irse pronto al entrenamiento, lo que admira, que integra trabajo y vida como nadie que ella conozca, el efecto que eso tiene sobre ella, que le ayuda a estar mas con sus hijos, y lo que de ahi ha salido para el trabajo comun.
+       5. Antes de elogiar en publico, investiga hasta que entiendas de verdad quien hizo que y por que estuvo tan bien. El texto lo saca del caso del ingeniero al que su jefe felicito delante de toda la empresa por una funcionalidad en la que habia trabajado un punado de ingenieros mas, y que acabo mandando un correo a toda la empresa con la lista de todos los que la habian hecho con el.
+       6. Se tan concreto y tan a fondo con el elogio como con la critica, y baja al detalle.
+       7. No copies y pegues las justificaciones que te mandan sin leerlas. El texto pone el correo de un jefe que felicito a setenta personas de un equipo de seiscientas pegando lo que le habian mandado sus jefes, y que en una de esas lineas publico el sueldo de una persona, que estaba cincuenta por ciento por debajo de mercado, y que era riesgo de fuga.

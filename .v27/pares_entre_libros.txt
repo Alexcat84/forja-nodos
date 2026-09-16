@@ -1,0 +1,10 @@
+PARES DE LA TANDA CUYO VECINO ES DE OTRO LIBRO:
+  despedir_persona_franqueza_radical [scott_radical_candor]  contra  despedir_persona_respeto_franqueza [zhuo_manager]   -> SANO
+  despedir_persona_franqueza_radical [scott_radical_candor]  contra  elegir_recolocar_despedir_persona [zhuo_manager]   -> SANO
+  decidir_momento_despedir_persona [scott_radical_candor]  contra  despedir_persona_respeto_franqueza [zhuo_manager]   -> SANO
+  decidir_momento_despedir_persona [scott_radical_candor]  contra  elegir_recolocar_despedir_persona [zhuo_manager]   -> SANO
+  reconocer_recompensar_gente_estable [scott_radical_candor]  contra  reconocer_recompensar_uso_metodo [smart_who]   -> SANO
+TOTAL: 5
+
+ARISTAS DEL GRAFO QUE CRUZAN DE LIBRO:
+aristas declaradas por nodos_siguientes: 84, de ellas entre libros: 0
