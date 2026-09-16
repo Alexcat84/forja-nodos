@@ -1627,6 +1627,40 @@ porque **`286` solo no deja leer por que un candidato levanto vecino.**
 del catalogo de control **quedan fuera**, como el propio auditor los habia dejado
 fuera a mano en su barrido de la vuelta 20.
 
+> ## CORRECCION DECLARADA, 16 sep 2026: **LLEVABA CUATRO DIAS A MEDIO CABLEAR**
+>
+> **ESTA REGLA DICE `TAMBIEN PARA LA ADUANA` EN SU PROPIO TITULAR, y durante cuatro
+> dias solo estuvo en `src/informe.py`, que corre EN SECO.** La que decide es
+> `src/aduana.py`, y ahi seguia midiendo **solo el grafo**:
+>
+>     src/informe.py:222   poblacion = list(nodos) + list(bandejas)
+>     src/aduana.py:797    vecinos = buscar_vecinos(candidato, nodos, umbrales)
+>     $ grep -n "poblacion_de_bandejas" src/aduana.py   ->  cero coincidencias
+>
+> **LO LEVANTARON LOS DOS A CIEGAS Y POR CAMINOS DISTINTOS** en la vuelta 26: el
+> auditor con un barrido dirigido, el extractor con un rechazo de la aduana.
+>
+> **EL COSTE, MEDIDO POR LA `ACTA 26`:** cinco pares por encima de umbral **sin
+> veredicto**, los cinco con un extremo en la bandeja. **No era perdida: era
+> aplazamiento**, porque el par se paga cuando entra el segundo. **Pero esta regla
+> nacio para que un par no dependa de que alguien se acuerde.**
+>
+> **YA ESTA CABLEADA DONDE SE DECIDE**, con la poblacion mudada a `src/aduana.py` y
+> el informe tomandola de ahi. **La tabla de arriba no cambia ni una linea**: el
+> resolutor sigue mirando solo el grafo, los instrumentos de calibracion siguen
+> midiendo contra su catalogo, y el candidato sigue sin medirse contra si mismo.
+>
+> **CASO POSITIVO:** un candidato cuyo unico vecino vive en la bandeja **queda
+> BLOQUEADO** por la aduana de verdad, y antes entraba limpio. **CASO NEGATIVO:** sin
+> vecino en la bandeja entra limpio, **porque una aduana que bloquea todo es un
+> candado**; y `el id ya vive en el grafo` **sigue mirando solo el grafo**, que si se
+> ensanchara convertiria la bandeja entera en un lote rechazado. **6 pruebas**
+> (`PruebaAduanaMideBandejas`).
+>
+> **Y LA BANDEJA SE PUEDE SOBREESCRIBIR** (`FORJA_CUARENTENA`), como el dataset y la
+> bitacora: sin eso la prueba de aceptacion mediria contra los candidatos del repo de
+> verdad y su resultado cambiaria de una vuelta a otra.
+
 ---
 
 ## D.39. LA INSERCION DE UN LOTE CERRADO ES AUTOMATICA (11 sep 2026, decision del fundador)

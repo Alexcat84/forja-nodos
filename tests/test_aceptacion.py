@@ -102,6 +102,11 @@ class BaseForja(unittest.TestCase):
         self.veredictos = os.path.join(self.taller, "VEREDICTOS.jsonl")
         self.censos = os.path.join(self.taller, "censos")
         self.pares_mutuos = os.path.join(self.taller, "pares_mutuos.jsonl")
+        # LA BANDEJA DEL TALLER, desde que D.38.5 llego a la aduana: sin esto la
+        # prueba mediria contra los candidatos del repo de verdad y su resultado
+        # cambiaria de una vuelta a otra.
+        self.bandeja = os.path.join(self.taller, "cuarentena")
+        os.makedirs(self.bandeja)
         self.fuentes_tabla = os.path.join(self.taller, "FUENTES_CANONICAS.json")
         os.makedirs(self.censos)
         comun.escribir_texto(self.dataset, "")
@@ -121,6 +126,7 @@ class BaseForja(unittest.TestCase):
             "FORJA_VEREDICTOS": self.veredictos,
             "FORJA_CENSOS": self.censos,
             "FORJA_PARES_MUTUOS": self.pares_mutuos,
+            "FORJA_CUARENTENA": self.bandeja,
             "FORJA_FUENTES": self.fuentes_tabla,
             "PYTHONIOENCODING": "utf-8",
         })
@@ -2335,6 +2341,100 @@ class PruebaCensoDeRutas(BaseForja):
         self.assertIn("docs/loop/PROMPT_SIGUIENTE.md", censar_rutas._sedes_exentas())
 
 
+class PruebaAduanaMideBandejas(BaseForja):
+    """D.38.5 EN LA ADUANA, que es donde se decide (16 sep 2026).
+
+    La regla lleva **TAMBIEN PARA LA ADUANA** en su propio titular desde el 12 sep,
+    y durante cuatro dias solo estuvo cableada en `informe.py`, que corre EN SECO.
+    La `ACTA 26` lo levanto con su coste medido: **cinco pares por encima de umbral
+    sin veredicto, los cinco con un extremo en la bandeja.** No era perdida, era
+    aplazamiento; pero la regla nacio para que un par **no dependa de que alguien se
+    acuerde.**
+    """
+
+    TEXTO = ("bloquear en el calendario dos horas de pensar cada dia y tratarlas "
+             "como una reunion sagrada que no se mueve por nadie")
+
+    def _en_bandeja(self, identificador, texto=None, lote="un_lote", pasos=None):
+        datos = {
+            "id": identificador,
+            "titulo": identificador.replace("_", " "),
+            "resumen_teorico": texto or self.TEXTO,
+            "condiciones_activacion": "cuando el calendario se llena de reuniones",
+            "entregable_esperado": "dos horas de pensar bloqueadas",
+            "pasos_accionables": pasos or ["Abrir el calendario.",
+                                           "Bloquear dos horas.",
+                                           "Tratarlas como sagradas."],
+            "dominio": "gestion", "estado": "vivo",
+            "fuentes": [{"clave": "manual_sistema_conocimiento", "fecha": "2026-09-16"}],
+            "denominaciones": {"nombre_largo": identificador.replace("_", " ")},
+        }
+        carpeta = os.path.join(self.bandeja, lote)
+        if not os.path.isdir(carpeta):
+            os.makedirs(carpeta)
+        ruta = os.path.join(carpeta, identificador + ".json")
+        comun.escribir_texto(ruta, json.dumps(datos, ensure_ascii=False))
+        return ruta
+
+    def test_caso_positivo_un_vecino_que_vive_en_la_bandeja_BLOQUEA(self):
+        """Antes del 16 sep esto entraba limpio, y el par se aplazaba."""
+        self._en_bandeja("bloquear_tiempo_pensar_calendario")
+        candidato = self._en_bandeja("reservar_horas_pensar_agenda")
+        codigo, salida = self.forja("insertar", candidato, "--sin-preguntas")
+        self.assertIn("que esperan en bandejas", salida)
+        self.assertIn("bloquear_tiempo_pensar_calendario", salida)
+        self.assertNotEqual(codigo, 0, salida)
+        self.anotar("D385", "vecino en bandeja: la aduana lo bloquea, ya no lo aplaza")
+
+    def test_caso_negativo_sin_vecino_en_la_bandeja_entra_limpio(self):
+        """Una aduana que bloquea todo es un candado, no una guarda."""
+        self._en_bandeja(
+            "revisar_presupuesto_compras_trimestre",
+            texto=("reunir al equipo cada trimestre para repasar el presupuesto de "
+                   "compras y firmar las desviaciones que encuentre"),
+            pasos=["Convocar al equipo de compras.",
+                   "Repasar las partidas del trimestre.",
+                   "Firmar cada desviacion encontrada."])
+        candidato = self._en_bandeja("reservar_horas_pensar_agenda")
+        codigo, salida = self.forja("insertar", candidato, "--sin-preguntas")
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("que esperan en bandejas", salida)
+
+    def test_la_poblacion_va_con_su_reparto_y_no_con_un_numero_solo(self):
+        """`348` no dice lo mismo que `234 del grafo mas 114 que esperan`."""
+        self._en_bandeja("revisar_presupuesto_compras_trimestre",
+                         pasos=["Convocar al equipo.", "Repasar partidas."])
+        candidato = self._en_bandeja("reservar_horas_pensar_agenda")
+        _codigo, salida = self.forja("insertar", candidato, "--sin-preguntas")
+        self.assertIn("del grafo mas", salida)
+        self.assertIn("que esperan en bandejas", salida)
+
+    def test_caso_positivo_el_id_ya_vive_en_el_grafo_SIGUE_MIRANDO_SOLO_EL_GRAFO(self):
+        """Lo dice la propia tabla de `D.38.5`.
+
+        Un id que espera en la bandeja NO vive en el grafo todavia, y tumbarlo por
+        eso **convertiria la bandeja entera en un lote rechazado.**
+        """
+        self._en_bandeja("reservar_horas_pensar_agenda")
+        candidato = self._en_bandeja("reservar_horas_pensar_agenda", lote="otro_lote")
+        _codigo, salida = self.forja("insertar", candidato, "--sin-preguntas")
+        self.assertNotIn("el id ya vive en el grafo", salida)
+
+    def test_el_candidato_no_se_mide_contra_si_mismo(self):
+        """Esta EN la bandeja mientras se le mide: lo excluye su propio id."""
+        candidato = self._en_bandeja("reservar_horas_pensar_agenda")
+        codigo, salida = self.forja("insertar", candidato, "--sin-preguntas")
+        self.assertEqual(codigo, 0, salida)
+
+    def test_lo_archivado_no_se_cuenta_dos_veces(self):
+        """`D.31` lo archiva al insertarlo: ya vive en el grafo."""
+        self._en_bandeja("bloquear_tiempo_pensar_calendario",
+                         lote=os.path.join("_insertados", "un_lote"))
+        candidato = self._en_bandeja("reservar_horas_pensar_agenda")
+        codigo, salida = self.forja("insertar", candidato, "--sin-preguntas")
+        self.assertEqual(codigo, 0, salida)
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
@@ -2347,7 +2447,8 @@ def main():
              PruebaHerencia,
              PruebaPoblacionDelInforme,
              PruebaTallado,
-             PruebaCensoDeRutas]
+             PruebaCensoDeRutas,
+             PruebaAduanaMideBandejas]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -2391,6 +2492,8 @@ def main():
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaTallado)._tests))
     print("  D.42, la unidad de la ruta es la celda: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaCensoDeRutas)._tests))
+    print("  D.38.5 en la aduana, que es donde se decide: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaAduanaMideBandejas)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

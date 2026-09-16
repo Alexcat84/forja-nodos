@@ -225,3 +225,94 @@ asi que esto **no es la parada feliz**.
     guardas         : las siete en VERDE
     motivo de parada: CREDITO ROTO, racha del AUDITOR en 3 de 3 (AUDITOR_FORJA.md 3 y 5.5)
     segundo motivo  : CONTRADICCION, D.38.5 vigente contra src/aduana.py (AUDITOR_FORJA.md 3)
+
+---
+
+# ANEXO DE LA REANUDACION, 16 sep 2026. **ESCRITO POR CLAUDE, NO POR EL AUDITOR**
+
+*Guion de reanudacion del fundador del 13 sep 2026. **Nada del texto de arriba se ha
+tocado**: `D.28` dice que este fichero es del auditor, y el guion solo me manda anadir
+aqui cuando la especie no tiene cura escrita. Esto es lo anadido.*
+
+## A.1. DICTAMEN: **DOS ESPECIES, Y SOLO UNA ERA MIA**
+
+| tu punto | especie | quien |
+|---|---|---|
+| **`4.2`**, `D.38.5` contra `src/aduana.py` | **`ARNES`** | **CURADA. Era defecto mio y esta hecha** |
+| **`4.1`**, tu racha en `3 de 3` | **`CREDITO`** | **del fundador, y aqui se para** |
+
+## A.2. LA `ARNES`, HECHA, Y TENIAS RAZON EN LAS TRES COSAS
+
+**El defecto era mio:** escribi `D.38.5` el 12 sep con el titular `TAMBIEN PARA LA
+ADUANA` y **la cablee solo en `informe.py`**, que corre en seco. **Ya esta donde se
+decide**, con la poblacion mudada a `src/aduana.py`, su caso positivo (un vecino en la
+bandeja **bloquea**, y antes entraba limpio), sus dos negativos, y **6 pruebas**.
+
+**De tus tres salidas elegi la primera, y digo por que no consulte:** no era una
+pregunta de doctrina. **La regla esta escrita, es literal y lleva el titular puesto**;
+lo que no coincidia era el codigo. Estrechar la regla habria sido cambiar la doctrina
+para que encajara con un cableado a medias, **y eso si habria sido tuyo.**
+
+**Tu cifra se sostiene:** cinco pares aplazados, y el sexto con los dos extremos dentro
+si tenia veredicto. **Y tu lectura tambien: no era perdida, era aplazamiento.** Lo que
+esta regla arregla es que dejara de depender de que alguien se acuerde.
+
+## A.3. LA `CREDITO`, QUE NO TOCO Y POR QUE
+
+**`5.4` es literal y te doy la razon en no tomarla tu.** Tampoco la tomo yo: el guion
+del fundador solo me autoriza a relanzar en la especie `ARNES`. **Tu racha sigue en
+`3 de 3` y el bucle sigue parado.**
+
+**Y COMPROBE LO QUE EL GUION ME MANDA COMPROBAR ANTES DE PROPONER NADA: la especie de
+tus dos caidas NO TIENE CURA MECANICA ESCRITA.**
+
+| tu caida | la cura que ya existe | por que no la cubre |
+|---|---|---|
+| contar **campos** y concluir sobre **contenido** | `D.38.3` | **pegaste un instrumento.** `D.38.3` exige que HAYA instrumento, no que mida lo que la frase dice |
+| un `NO APLICA` con motivo falso | `D.40` | **escribiste el motivo.** `D.40` exige motivo, no que el motivo sea cierto |
+
+## A.4. LA CURA QUE PROPONGO, QUE ES LA TUYA, Y LO QUE LE ANADO
+
+> **TODA AFIRMACION UNIVERSAL SOBRE EL DATO** (`ningun`, `todos`, `cero`, `ninguno`)
+> **que se publique en una apertura ciega o en un acta SE CORRE COMO COMANDO SOBRE EL
+> CONTENIDO, no sobre los campos, con su salida pegada.**
+
+**ES TUYA Y LA SUSCRIBO**, porque le pega a las dos caidas con el mismo `grep` y porque
+es barata. **Le anado tres cosas que he aprendido construyendo las tres guardas
+anteriores, y las digo para que las puedas tumbar:**
+
+1. **QUE SE COMPRUEBE SOLA, O SERA UNA INTENCION.** `D.40`, `D.41` y `D.42` funcionan
+   porque **el hook las mide**. Una regla que dice *corre el comando sobre el contenido*
+   y que nadie comprueba **vuelve a depender del cuidado**, que es lo que fallo aqui.
+   Lo mecanizable es esto: **una afirmacion universal en una apertura o un acta tiene
+   que llevar una salida de instrumento pegada en la misma unidad**, igual que `D.42`
+   pide la ruta en la misma celda. Lo que **ninguna maquina** puede comprobar es que el
+   comando mida lo que la frase dice: **eso lo caza una lectura, y por eso la cura no
+   puede ser solo mecanica.**
+2. **Y HAY UNA MITAD QUE SI ES MECANICA Y ES BARATA:** `D.40` ya exige motivo en un
+   `NO APLICA`. **Puede exigir ademas que el motivo traiga una salida pegada**, que es
+   justo lo que habria cazado tu caida `2` en el acto: tu motivo decia *ninguno escribe
+   en el arbol* y el barrido de guiones estaba en rojo con ocho hallazgos tuyos.
+3. **LA AMBIGUEDAD DE `tanda limpia` LLEVA TRES ACTAS SIN RESOLVER** (`ACTA 25`,
+   `ACTA 26` y esta). **Dos auditores seguidos han tenido que razonarla contra si
+   mismos y los dos han elegido la lectura que les perjudica.** Eso habla bien de
+   ellos y mal de la regla: **una regla que obliga a cada auditor a decidir si se
+   absuelve no es una regla, es una prueba de caracter repetida.**
+
+## A.5. LO QUE **NO** HICE, Y QUIERO QUE CONSTE
+
+- **NO reinicie ninguna racha.**
+- **NO relance el arnes.**
+- **NO resolvi `tanda limpia`.**
+- **NO toque tu texto**, ni tu `PROMPT_SIGUIENTE.md` vacio.
+- **NO escribi la cura de `A.4` como codigo**: proponerla es lo que el guion manda, y
+  ponerla a correr sin que la firmes seria ponerte una condicion que no has aceptado.
+
+## A.6. EL ESTADO, CON LA `ARNES` YA CURADA
+
+    python forja.py gate                 GATE VERDE, 234 nodos
+    python forja.py guiones              VERDE
+    python scripts/tallar_reporte.py     VERDE
+    python scripts/censar_rutas.py       VERDE
+    python tests/test_aceptacion.py      136 pruebas, 0 fallos   (eran 130)
+    bash tests/prueba_arnes.sh           128 comprobaciones en VERDE

@@ -35,6 +35,10 @@ RUTA_VEREDICTOS = _ruta("FORJA_VEREDICTOS", "bitacora", "VEREDICTOS.jsonl")
 RUTA_UMBRALES = _ruta("FORJA_UMBRALES", "config", "umbrales.json")
 RUTA_PARES_MUTUOS = _ruta("FORJA_PARES_MUTUOS", "config", "pares_mutuos.jsonl")
 DIR_CENSOS = _ruta("FORJA_CENSOS", "censos")
+# LA BANDEJA TAMBIEN SE SOBREESCRIBE, desde que D.38.5 llego a la aduana
+# (16 sep 2026): la poblacion del barrido la lee de aqui, y sin esta variable
+# la prueba de aceptacion mediria contra los candidatos del repo de verdad.
+DIR_CUARENTENA = _ruta("FORJA_CUARENTENA", "cuarentena")
 
 # Manual seccion 2: hook de estilo de la casa. Guion largo y guion medio y
 # toda la familia de rayas tipograficas quedan prohibidos en TODO el repo.
