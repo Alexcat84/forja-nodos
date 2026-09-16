@@ -1,0 +1,88 @@
+ADUANA DE INSERCION, candidato 'reservar_calendario_tiempo_ejecutar'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (253 del grafo mas 95 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 7. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino bloquear_tiempo_pensar_calendario  [Bloquear tiempo para pensar en tu calendario y mantener ese tiempo sagrado]
+    levantada por: familia_id
+    similitud_texto    0.279 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.519 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de bloquear_tiempo_pensar_calendario
+
+  vecino proteger_tiempo_equipo_jefe  [No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba]
+    levantada por: similitud_texto
+    similitud_texto    0.409 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.465 (umbral 0.60)
+    paso 3 del candidato contra paso 6 de proteger_tiempo_equipo_jefe
+
+  vecino cambiar_posicion_hechos_explicar_cambio  [Cambiar de posicion cuando cambian los hechos, y explicar el cambio en voz alta en vez de dejar que se note]
+    levantada por: similitud_texto
+    similitud_texto    0.376 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.448 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de cambiar_posicion_hechos_explicar_cambio
+
+  vecino mantener_manos_trabajo_real_equipo  [Mantener las manos en el trabajo real de tu equipo, ejecutando tu tambien y no solo mirando ejecutar a otros]
+    levantada por: similitud_texto
+    similitud_texto    0.373 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.444 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de mantener_manos_trabajo_real_equipo
+
+  vecino parar_debate_emocion_agotamiento  [Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio]
+    levantada por: similitud_texto
+    similitud_texto    0.404 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.406 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de parar_debate_emocion_agotamiento
+
+  vecino reservar_tiempo_reflexion_metas  [Reservar tiempo para reflexionar y ponerte metas]
+    levantada por: familia_id
+    similitud_texto    0.177 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.404 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de reservar_tiempo_reflexion_metas
+
+  vecino crear_obligacion_disentir_equipo  [Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja]
+    levantada por: similitud_texto
+    similitud_texto    0.388 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.379 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de crear_obligacion_disentir_equipo
+
+BLOQUEADO: faltan veredictos para bloquear_tiempo_pensar_calendario, proteger_tiempo_equipo_jefe, cambiar_posicion_hechos_explicar_cambio, mantener_manos_trabajo_real_equipo, parar_debate_emocion_agotamiento, reservar_tiempo_reflexion_metas, crear_obligacion_disentir_equipo
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "bloquear_tiempo_pensar_calendario|CONTINUA|madre=bloquear_tiempo_pensar_calendario|que añade el hijo a la madre"
+    --veredicto "bloquear_tiempo_pensar_calendario|REPITE|por que no añade procedimiento"
+    --veredicto "bloquear_tiempo_pensar_calendario|SANO|por que no son el mismo trabajo"
+    --veredicto "bloquear_tiempo_pensar_calendario|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "proteger_tiempo_equipo_jefe|CONTINUA|madre=proteger_tiempo_equipo_jefe|que añade el hijo a la madre"
+    --veredicto "proteger_tiempo_equipo_jefe|REPITE|por que no añade procedimiento"
+    --veredicto "proteger_tiempo_equipo_jefe|SANO|por que no son el mismo trabajo"
+    --veredicto "proteger_tiempo_equipo_jefe|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "cambiar_posicion_hechos_explicar_cambio|CONTINUA|madre=cambiar_posicion_hechos_explicar_cambio|que añade el hijo a la madre"
+    --veredicto "cambiar_posicion_hechos_explicar_cambio|REPITE|por que no añade procedimiento"
+    --veredicto "cambiar_posicion_hechos_explicar_cambio|SANO|por que no son el mismo trabajo"
+    --veredicto "cambiar_posicion_hechos_explicar_cambio|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "mantener_manos_trabajo_real_equipo|CONTINUA|madre=mantener_manos_trabajo_real_equipo|que añade el hijo a la madre"
+    --veredicto "mantener_manos_trabajo_real_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "mantener_manos_trabajo_real_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "mantener_manos_trabajo_real_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "parar_debate_emocion_agotamiento|CONTINUA|madre=parar_debate_emocion_agotamiento|que añade el hijo a la madre"
+    --veredicto "parar_debate_emocion_agotamiento|REPITE|por que no añade procedimiento"
+    --veredicto "parar_debate_emocion_agotamiento|SANO|por que no son el mismo trabajo"
+    --veredicto "parar_debate_emocion_agotamiento|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "reservar_tiempo_reflexion_metas|CONTINUA|madre=reservar_tiempo_reflexion_metas|que añade el hijo a la madre"
+    --veredicto "reservar_tiempo_reflexion_metas|REPITE|por que no añade procedimiento"
+    --veredicto "reservar_tiempo_reflexion_metas|SANO|por que no son el mismo trabajo"
+    --veredicto "reservar_tiempo_reflexion_metas|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "crear_obligacion_disentir_equipo|CONTINUA|madre=crear_obligacion_disentir_equipo|que añade el hijo a la madre"
+    --veredicto "crear_obligacion_disentir_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "crear_obligacion_disentir_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "crear_obligacion_disentir_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

@@ -582,3 +582,9 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | minimizar_impuesto_colaboracion_equipo | otro_idioma | minimize the collaboration tax | ingles | - |
 | 2026-09-16 | proteger_tiempo_equipo_jefe | nombre_largo | No malgastes el tiempo de tu equipo: la primera de las tres cosas del equilibrio, con el retrato de como lo hacia Sheryl Sandberg | castellano | - |
 | 2026-09-16 | proteger_tiempo_equipo_jefe | otro_idioma | don't waste your team's time | ingles | - |
+| 2026-09-16 | mantener_manos_trabajo_real_equipo | nombre_largo | Conserva la tierra bajo tus uñas: la segunda de las tres cosas del equilibrio, con sus tres ejemplares de oficio | castellano | - |
+| 2026-09-16 | mantener_manos_trabajo_real_equipo | otro_idioma | keep the dirt under your fingernails | ingles | - |
+| 2026-09-16 | reservar_calendario_tiempo_ejecutar | nombre_largo | Bloquea tiempo para ejecutar: la tercera de las tres cosas del equilibrio, y el motivo por el que el calendario solo recoge lo colaborativo | castellano | - |
+| 2026-09-16 | reservar_calendario_tiempo_ejecutar | otro_idioma | block time to execute | ingles | - |
+| 2026-09-16 | cuidarse_agotamiento_centro_rueda | nombre_largo | El agotamiento: la segunda de las dos presiones que empujan a dejar de aprender, y la reserva de tiempo de pensar que la desactiva | castellano | - |
+| 2026-09-16 | cuidarse_agotamiento_centro_rueda | otro_idioma | burnout | ingles | - |

@@ -1,0 +1,61 @@
+ADUANA DE INSERCION, candidato 'reservar_calendario_tiempo_ejecutar'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (253 del grafo mas 95 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 7. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino bloquear_tiempo_pensar_calendario  [Bloquear tiempo para pensar en tu calendario y mantener ese tiempo sagrado]
+    levantada por: familia_id
+    similitud_texto    0.279 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.519 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de bloquear_tiempo_pensar_calendario
+
+  vecino proteger_tiempo_equipo_jefe  [No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba]
+    levantada por: similitud_texto
+    similitud_texto    0.409 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.465 (umbral 0.60)
+    paso 3 del candidato contra paso 6 de proteger_tiempo_equipo_jefe
+
+  vecino cambiar_posicion_hechos_explicar_cambio  [Cambiar de posicion cuando cambian los hechos, y explicar el cambio en voz alta en vez de dejar que se note]
+    levantada por: similitud_texto
+    similitud_texto    0.376 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.448 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de cambiar_posicion_hechos_explicar_cambio
+
+  vecino mantener_manos_trabajo_real_equipo  [Mantener las manos en el trabajo real de tu equipo, ejecutando tu tambien y no solo mirando ejecutar a otros]
+    levantada por: similitud_texto
+    similitud_texto    0.373 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.444 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de mantener_manos_trabajo_real_equipo
+
+  vecino parar_debate_emocion_agotamiento  [Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio]
+    levantada por: similitud_texto
+    similitud_texto    0.404 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.406 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de parar_debate_emocion_agotamiento
+
+  vecino reservar_tiempo_reflexion_metas  [Reservar tiempo para reflexionar y ponerte metas]
+    levantada por: familia_id
+    similitud_texto    0.177 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.404 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de reservar_tiempo_reflexion_metas
+
+  vecino crear_obligacion_disentir_equipo  [Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja]
+    levantada por: similitud_texto
+    similitud_texto    0.388 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.379 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de crear_obligacion_disentir_equipo
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 254
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 7

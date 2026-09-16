@@ -1,0 +1,99 @@
+ADUANA DE INSERCION, candidato 'mantener_manos_trabajo_real_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (252 del grafo mas 96 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 8. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino compartir_logica_mostrar_razonamiento  [Compartir tu logica mostrando el razonamiento entero y no solo la conclusion]
+    levantada por: similitud_texto
+    similitud_texto    0.362 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.512 (umbral 0.60)
+    paso 8 del candidato contra paso 3 de compartir_logica_mostrar_razonamiento
+
+  vecino cambiar_posicion_hechos_explicar_cambio  [Cambiar de posicion cuando cambian los hechos, y explicar el cambio en voz alta en vez de dejar que se note]
+    levantada por: similitud_texto
+    similitud_texto    0.381 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.491 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de cambiar_posicion_hechos_explicar_cambio
+
+  vecino abrir_debate_humor_explicar_proposito  [Abrir un debate con humor y explicando para que sirve, porque el tono con que se lanza marca el de todo lo que viene detras]
+    levantada por: similitud_texto
+    similitud_texto    0.385 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.427 (umbral 0.60)
+    paso 8 del candidato contra paso 5 de abrir_debate_humor_explicar_proposito
+
+  vecino proteger_tiempo_equipo_jefe  [No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba]
+    levantada por: similitud_texto
+    similitud_texto    0.404 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.422 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de proteger_tiempo_equipo_jefe
+
+  vecino parar_debate_emocion_agotamiento  [Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio]
+    levantada por: similitud_texto
+    similitud_texto    0.377 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.404 (umbral 0.60)
+    paso 6 del candidato contra paso 2 de parar_debate_emocion_agotamiento
+
+  vecino pedir_hechos_decision_evitar_recomendaciones  [Pedir hechos y no recomendaciones cuando reunes informacion para una decision]
+    levantada por: similitud_texto
+    similitud_texto    0.373 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.387 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de pedir_hechos_decision_evitar_recomendaciones
+
+  vecino cuidarse_agotamiento_centro_rueda  [Cuidarte a ti mismo contra el agotamiento, porque estas en el centro de la rueda y es la rueda la que se para]
+    levantada por: similitud_texto
+    similitud_texto    0.369 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.380 (umbral 0.60)
+    paso 1 del candidato contra paso 4 de cuidarse_agotamiento_centro_rueda
+
+  vecino crear_obligacion_disentir_equipo  [Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja]
+    levantada por: similitud_texto
+    similitud_texto    0.360 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.373 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de crear_obligacion_disentir_equipo
+
+BLOQUEADO: faltan veredictos para compartir_logica_mostrar_razonamiento, cambiar_posicion_hechos_explicar_cambio, abrir_debate_humor_explicar_proposito, proteger_tiempo_equipo_jefe, parar_debate_emocion_agotamiento, pedir_hechos_decision_evitar_recomendaciones, cuidarse_agotamiento_centro_rueda, crear_obligacion_disentir_equipo
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "compartir_logica_mostrar_razonamiento|CONTINUA|madre=compartir_logica_mostrar_razonamiento|que añade el hijo a la madre"
+    --veredicto "compartir_logica_mostrar_razonamiento|REPITE|por que no añade procedimiento"
+    --veredicto "compartir_logica_mostrar_razonamiento|SANO|por que no son el mismo trabajo"
+    --veredicto "compartir_logica_mostrar_razonamiento|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "cambiar_posicion_hechos_explicar_cambio|CONTINUA|madre=cambiar_posicion_hechos_explicar_cambio|que añade el hijo a la madre"
+    --veredicto "cambiar_posicion_hechos_explicar_cambio|REPITE|por que no añade procedimiento"
+    --veredicto "cambiar_posicion_hechos_explicar_cambio|SANO|por que no son el mismo trabajo"
+    --veredicto "cambiar_posicion_hechos_explicar_cambio|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "abrir_debate_humor_explicar_proposito|CONTINUA|madre=abrir_debate_humor_explicar_proposito|que añade el hijo a la madre"
+    --veredicto "abrir_debate_humor_explicar_proposito|REPITE|por que no añade procedimiento"
+    --veredicto "abrir_debate_humor_explicar_proposito|SANO|por que no son el mismo trabajo"
+    --veredicto "abrir_debate_humor_explicar_proposito|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "proteger_tiempo_equipo_jefe|CONTINUA|madre=proteger_tiempo_equipo_jefe|que añade el hijo a la madre"
+    --veredicto "proteger_tiempo_equipo_jefe|REPITE|por que no añade procedimiento"
+    --veredicto "proteger_tiempo_equipo_jefe|SANO|por que no son el mismo trabajo"
+    --veredicto "proteger_tiempo_equipo_jefe|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "parar_debate_emocion_agotamiento|CONTINUA|madre=parar_debate_emocion_agotamiento|que añade el hijo a la madre"
+    --veredicto "parar_debate_emocion_agotamiento|REPITE|por que no añade procedimiento"
+    --veredicto "parar_debate_emocion_agotamiento|SANO|por que no son el mismo trabajo"
+    --veredicto "parar_debate_emocion_agotamiento|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "pedir_hechos_decision_evitar_recomendaciones|CONTINUA|madre=pedir_hechos_decision_evitar_recomendaciones|que añade el hijo a la madre"
+    --veredicto "pedir_hechos_decision_evitar_recomendaciones|REPITE|por que no añade procedimiento"
+    --veredicto "pedir_hechos_decision_evitar_recomendaciones|SANO|por que no son el mismo trabajo"
+    --veredicto "pedir_hechos_decision_evitar_recomendaciones|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "cuidarse_agotamiento_centro_rueda|CONTINUA|madre=cuidarse_agotamiento_centro_rueda|que añade el hijo a la madre"
+    --veredicto "cuidarse_agotamiento_centro_rueda|REPITE|por que no añade procedimiento"
+    --veredicto "cuidarse_agotamiento_centro_rueda|SANO|por que no son el mismo trabajo"
+    --veredicto "cuidarse_agotamiento_centro_rueda|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "crear_obligacion_disentir_equipo|CONTINUA|madre=crear_obligacion_disentir_equipo|que añade el hijo a la madre"
+    --veredicto "crear_obligacion_disentir_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "crear_obligacion_disentir_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "crear_obligacion_disentir_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

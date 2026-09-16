@@ -1,0 +1,10 @@
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: minimizar_impuesto_colaboracion_equipo
+  hijo : reservar_calendario_tiempo_ejecutar
+  paso citado de la madre: 4
+    Aplica las tres cosas que el texto dice haber aprendido sobre como acertar con ese equilibrio: no malgastes el tiempo de tu equipo, manten la tierra b
+  señales del par: familia_id 0.0, paso_contra_nodo 0.452, similitud_texto 0.347
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: minimizar_impuesto_colaboracion_equipo > reservar_calendario_tiempo_ejecutar
+  razon en bitacora/VEREDICTOS.jsonl
