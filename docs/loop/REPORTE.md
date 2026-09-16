@@ -31137,3 +31137,82 @@ Las tres corridas por mi al cerrar, con su salida guardada:
 > vecino nuevo de los que acababan de entrar.** Cualquier plan que presuponga que la cola de hoy es la
 > que se paga manana **esta mal presupuestado**, y `D.36` ya dijo por que eso no cambia el orden:
 > **leer de menos cuesta una arista que nadie sabra que falta.**
+
+---
+
+# VUELTA 26, `D.42` como condicion de trabajo, **la insercion del lote 4 que queda**, y el lote 5 por su orden si cabe (lote 4, `scott_radical_candor`)
+
+*Esqueleto abierto ANTES de la primera tarea (`EXTRACTOR.md` 3). Las filas se anexan al cerrarse
+cada tarea, no al final de la vuelta. **El encargo pone TRES tareas y el tope son cinco**
+(`EXTRACTOR.md` 1.3), asi que no hay cola por techo de tareas.*
+
+## T.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION
+
+*`EXTRACTOR.md` 4: la apertura se mide antes de la primera operacion. Se midio con el arbol ya
+limpio, es decir DESPUES del commit de pendientes que `EXTRACTOR.md` 1.1 manda hacer primero y ANTES
+de la primera linea de trabajo. Ese commit (`0215594`) movio el hash y no movio ninguna otra cifra:
+lo unico que llevaba dentro eran los tres ficheros del arnes (`loop.log`, `ultimo_auditor.json`,
+`ultimo_extractor.json`).*
+
+Salida de `sh .v26/apertura.sh`, guardada en `.v26/apertura.txt`. La tabla la recoge:
+
+<!-- TALLADO: parcial salida=.v26/apertura.txt -->
+
+| medida | instrumento corrido en esta vuelta | de donde sale | valor al abrir |
+|---|---|---|---:|
+| nodos en el grafo | `wc -l < dataset/nodos.jsonl` | `dataset/nodos.jsonl` | **222** |
+| veredictos en bitacora | `wc -l < bitacora/VEREDICTOS.jsonl` | `bitacora/VEREDICTOS.jsonl` | **203** |
+| candidatos en bandeja del lote 4 | `ls cuarentena/scott_radical_candor/*.json \| wc -l` | `PATRON: cuarentena/scott_radical_candor/*.json` | **123** |
+| insertados del lote 4 | `ls cuarentena/_insertados/scott_radical_candor/*.json \| wc -l` | `PATRON: cuarentena/_insertados/scott_radical_candor/*.json` | **19** |
+| candidatos en bandeja del lote 5 | `ls cuarentena/marquet_turn_the_ship/*.json \| wc -l` | `PATRON: cuarentena/marquet_turn_the_ship/*.json` | **3** |
+| ficheros en `_insertados` (todos los lotes) | `ls cuarentena/_insertados/*/*.json \| wc -l` | `PATRON: cuarentena/_insertados/*/*.json` | **220** |
+| lineas del reporte | `wc -l < docs/loop/REPORTE.md` | `docs/loop/REPORTE.md` | **31139** |
+| rama | `git rev-parse --abbrev-ref HEAD` | leida de git | `extraccion-mundo-11` |
+| commit de apertura | `git rev-parse --short HEAD` | leida de git | `0215594` |
+
+**LAS CUATRO CIFRAS QUE EL ENCARGO ME ENTREGA CUADRAN CON MI MEDICION**, y lo digo porque la
+costumbre de esta casa es no copiarlas (`EXTRACTOR.md` 5): el encargo da bandeja del lote 4 `123`,
+insertados `19 de 142`, grafo `222` y bitacora `203`. **Las cuatro me salen iguales corridas por mi.**
+Y la quinta, la bandeja del lote 5, el encargo la da en `3` y me sale `3`.
+
+## T.0.1. LA INSERCION LLEGA ABIERTA, Y LA CONDICION SE COMPRUEBA OTRA VEZ AL ABRIR
+
+*`MODO_INSERCION=insertar` es el default desde `D.39` y la corrida me lo entrega abierto.*
+
+| la mitad de la condicion | como la compruebo | |
+|---|---|---|
+| **el lote 4 cerrado en extraccion** | lo cerro la `ACTA 24` y la vuelta 25 lo remidio con su instrumento. **No he escrito ni un candidato nuevo del lote 4 en esta vuelta**, asi que sigue cerrado | **se sostiene** |
+| **el acta del auditor lo certifica** | `ACTA 24` seccion `9`, *ESTA ACTA CIERRA EL LOTE 4 EN EXTRACCION Y ABRE EL LOTE 5* | **CERTIFICADO** |
+| **el lote 5** | ABRIO en la vuelta 25 y **sigue ABIERTO**: el encargo de hoy me manda seguir minandolo | **NO SE INSERTA** |
+
+**La insercion del lote 4 esta autorizada y es la TAREA 2. Los 3 candidatos del lote 5 que ya estan
+en bandeja, mas los que escriba hoy, SE QUEDAN EN CUARENTENA** (`D.39`, `EXTRACTOR.md` 15.7):
+meterlos antes de que su lote cierre **es una caida de dato y no un adelanto**.
+
+## T.0.2. ESTA VUELTA TAMPOCO TRAE SALDO DE LOTE (`D.43`)
+
+Salida de los dos comandos, guardada en `.v26/informe_de_lote.txt`:
+
+<!-- TALLADO: parcial salida=.v26/informe_de_lote.txt -->
+
+    $ ls -la docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+    ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+    ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ tail -4 docs/loop/loop.log
+    [2026-09-15 23:30:42] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+
+**`D.43`: si el prompt no me entrega ningun informe, no lo invento y no lo lanzo.** El arnes lo dice
+por su cuenta en `loop.log`. **La vuelta no trae saldo de lote**, y por tanto **no publico `CHOCAN
+entre si dentro del lote`**, que es la unica cifra que un informe de uno en uno no puede ver. **El de
+un candidato suelto sigue siendo mio** y se corre en el mismo acto de escribir o de tocar cada
+candidato (`EXTRACTOR.md` 16).
+
+## T.1. LAS TRES TAREAS ENCARGADAS, Y SU ESTADO
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | **`D.42` es como se trabaja a partir de hoy**: toda ruta publicada como sede de una cifra la sostiene, y la unidad es la celda | ABIERTA (`T.2`) |
+| 2 | **Seguir insertando el lote 4**, uno por vez, con su veredicto por vecino, y declarar donde me paro con su cifra | ABIERTA (`T.3`) |
+| 3 | **Seguir el lote 5** (`marquet_turn_the_ship`) por el orden escrito, si la insercion deja sitio | ABIERTA (`T.4`) |
+
+*Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
