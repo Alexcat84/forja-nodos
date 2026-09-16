@@ -672,3 +672,13 @@ Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion
 [pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
 Reemplazalos por el guion corto normal y vuelve a intentarlo.
 [2026-09-16 10:41:04] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-16 11:18:22] auditor listo (USD 19.034013500000007), 2238s, intento 1 de 7
+[2026-09-16 11:18:22]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-16 11:18:22] DETENIDO en la vuelta 3: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-16 11:18:22] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-16 13:03:06] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-16 13:03:06] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-16 13:03:06]   ultimo commit de REPORTE.md      : 2026-09-16 09:53:59 (1789566839)
+[2026-09-16 13:03:06]   ultimo commit de ACTA_AUDITOR.md : 2026-09-16 11:17:11 (1789571831)
+[2026-09-16 13:03:06] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-16 13:03:06] VUELTA 1 : EXTRACTOR (claude-opus-5)

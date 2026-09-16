@@ -1,0 +1,22 @@
+{
+  "fecha": "2026-09-16 12:37:12",
+  "commit": "97584aff3608",
+  "huella_del_arbol": "eed3ebcdbc9b4ea7",
+  "guardas": {
+    "gate": {
+      "estado": "VERDE",
+      "codigo": 0,
+      "salida": "GATE VERDE.\r\n  nodos verificados: 243\r\n  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece"
+    },
+    "guiones": {
+      "estado": "VERDE",
+      "codigo": 0,
+      "salida": "BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios."
+    },
+    "censo_rutas": {
+      "estado": "VERDE",
+      "codigo": 0,
+      "salida": "      PATRON                           29\r\n      VACIA A PROPOSITO                3\r\n      con contenido                    398\r\n      vacia por protocolo              4\r\n\r\nCENSO VERDE: las 434 rutas publicadas sostienen lo que dicen sostener."
+    }
+  }
+}
