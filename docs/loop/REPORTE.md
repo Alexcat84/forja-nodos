@@ -31212,8 +31212,8 @@ candidato (`EXTRACTOR.md` 16).
 | # | tarea | estado |
 |---:|---|---|
 | 1 | **`D.42` es como se trabaja a partir de hoy**: toda ruta publicada como sede de una cifra la sostiene, y la unidad es la celda | ~~ABIERTA~~ **CERRADA** (`T.2`). **`303` rutas censadas, `0` caen, `0` marcas puestas por mi hoy**
-| 2 | **Seguir insertando el lote 4**, uno por vez, con su veredicto por vecino, y declarar donde me paro con su cifra | ABIERTA (`T.3`) |
-| 3 | **Seguir el lote 5** (`marquet_turn_the_ship`) por el orden escrito, si la insercion deja sitio | ABIERTA (`T.4`) |
+| 2 | **Seguir insertando el lote 4**, uno por vez, con su veredicto por vecino, y declarar donde me paro con su cifra | ~~ABIERTA~~ **CERRADA** (`T.3`). **12 nodos dentro, `cap_06` cerrado entero, 35 pares adjudicados y CERO bloqueados al cerrar.** # **Tres aristas declaradas** y # **la aduana me corrigio el orden en su primera linea** |
+| 3 | **Seguir el lote 5** (`marquet_turn_the_ship`) por el orden escrito, si la insercion deja sitio | ~~ABIERTA~~ **EN COLA** (`T.4`). **La insercion se comio la vuelta y el encargo decide este caso el mismo.** Declarada con su cifra: 20 pasadas, 12 nodos, 111 en bandeja |
 
 *Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
 
@@ -31565,3 +31565,217 @@ existe en la bitacora y lo digo en vez de fabricarlo.**
 
 **LO ESCRIBO PORQUE ES LA CARA BUENA DE LA MISMA MONEDA DE `T.3.e`:** la señal 1 me trajo 27 pares que
 no eran nada, **y este, que si merecia mirarse, no lo trajo ninguna.**
+
+### T.3.g. **DONDE ME PARO, CON SU CIFRA EXACTA Y SIN RESUMIRLA**
+
+*El encargo lo pide con estas palabras: **declara donde me paro con su cifra**. Aqui esta, unidad por
+unidad.*
+
+| unidad | candidatos que tenia al abrir | entran hoy | quedan en bandeja | estado |
+|---|---:|---:|---:|---|
+| `cap_06` | 7 | **7** | **0** | **CERRADA ENTERA** |
+| `cap_07` | 25 | **5** | **20** | **ABIERTA**, y me paro en ella |
+| `cap_08` a `cap_14` | 91 | 0 | **91** | sin tocar |
+| **TOTAL lote 4** | **123** | **12** | **111** | |
+
+**ME PARO DENTRO DE `cap_07`, en su sexto candidato por orden alfabetico**
+(`centrar_debate_ideas_fuera_egos`), **con 20 de sus 25 sin insertar.** No lo dejo a medias por
+descuido: **`cap_07` tiene 25 candidatos, que es mas que el techo de 15 de `EXTRACTOR.md` 12.4**, asi
+que una unidad de este tamanio **no cabe entera en ninguna vuelta** y la unica pregunta es donde se
+corta. Lo corto aqui y lo digo.
+
+**Y NO EMPIEZO A LEER PARES NUEVOS QUE NO PUEDA CERRAR.** Al parar, **la cola de lectura de esta
+vuelta esta vacia**: los 35 pares que la aduana levanto **estan los 35 adjudicados y escritos en
+bitacora**, y no dejo ningun candidato bloqueado esperando veredicto. **Es la primera vuelta de la
+campania que cierra sin cola heredada**, y lo digo con la tabla de `T.3.d` al lado: `12 de 12
+DENTRO`, ninguno `EN COLA`.
+
+> ### **LA COLA NO SE VACIA, SE REALIMENTA, Y HOY LO MIDO EN VEZ DE REPETIRLO**
+>
+> La vuelta 25 descubrio que cada nodo que entra cambia lo que mide el siguiente. **Hoy tengo el
+> ejemplar limpio:** `cambiar_posicion_hechos_explicar_cambio` bloqueo por un vecino,
+> `abrir_debate_humor_explicar_proposito`, **que no existia en el grafo cuando esta vuelta abrio**:
+> entro cuatro pasadas antes, en esta misma tanda. **Ese par no estaba en ninguna cola heredada
+> porque no habia par.**
+>
+> **Por eso la cifra de cola de `T.3.g` se recuenta al cerrar** (`.v26/pendientes.txt`) **y no se
+> hereda del fichero de orden que escribi al abrir** (`.v26/orden.txt`), que ya esta viejo.
+
+---
+## T.4. TAREA 3: EL LOTE 5. **NO SE ABRE HOY, Y LO DECLARO CON LA LINEA DEL ENCARGO DELANTE**
+
+**El encargo decide este caso el mismo, y no lo decido yo:**
+
+> *Si la insercion del lote 4 se come la vuelta, la vuelta se cierra ahi y lo declaras con su cifra.
+> Abrir el lote 5 con medio lote 4 dentro no adelanta nada: **lo que cierra un lote es insertarlo
+> entero.***
+
+**LA CIFRA CON LA QUE LO DECLARO, y es la de `T.3.d` y `T.3.g`:** la insercion gasto **20 pasadas del
+instrumento** para **12 nodos** y **35 pares leidos y adjudicados**, cerro **`cap_06` entero** y dejo
+**111 candidatos del lote 4 en bandeja**. **La insercion se comio la vuelta.**
+
+**LO QUE EL LOTE 5 TIENE HOY, MEDIDO Y NO COPIADO DEL ENCARGO** (`.v26/apertura.txt`, fila 5):
+**3 candidatos en bandeja**, los tres de la vuelta 25, **los tres sin insertar y los tres correctos
+asi**: su lote esta **ABIERTO** y `D.39` dice que se quedan en cuarentena hasta que cierre.
+
+**LO QUE NO HAGO Y POR QUE, dicho antes de que se note:** no mino un capitulo mas del lote 5. Minar
+una unidad entera pide leer el capitulo, **publicar su frontera cerrada contra el cuerpo al digito
+antes de cortar** (`EXTRACTOR.md` 10) y escribir cada candidato con su relectura de fidelidad y su
+aduana **en el mismo acto** (`D.30`, `EXTRACTOR.md` 16). **Media unidad minada no es media tarea: es
+una frontera sin cerrar**, y una frontera sin cerrar no se publica.
+
+**TAREA 3 PASA A LA COLA, ENTERA Y SIN TOCAR.**
+
+---
+## T.5. LOS DISCUTIBLES, MARCADOS **ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+*Se escriben aqui antes de que ningun acta los mire. **Son NUEVE**, y los ordeno por lo que costaria
+que estuvieran mal.*
+
+| # | lo que decidi | por que es discutible | que pasaria si esta mal |
+|---:|---|---|---|
+| **1** | **`L117` es `D.37` y no `D.29`**, porque *what **both** need* cuenta las partes | **la cuenta es una palabra (*both*, *las dos*) y no un numeral ni un ordinal impreso.** La `ACTA 24` `3.2` sostuvo que *un ordinal impreso cuenta como cuenta*, y yo estoy estirando eso a un adjetivo | **las dos aristas siguen en pie, pero bajo `D.29`**, que exige razon escrita. **La razon esta escrita en las dos**, asi que el coste seria de etiqueta y no de arista |
+| **2** | **`SANO` a los dos pares con `zhuo_manager`**, con `PENDIENTE DE DOCTRINA` | **la forma de `D.29` SI se cumple** en uno de ellos (el paso 8 de Zhuo nombra el capitulo siguiente y yo lo despliego en tres pasos). Lo que me frena es que **`0` de `81` aristas de esta casa cruzan de libro**, medido hoy | **faltaria una arista `despedir_persona_respeto_franqueza > despedir_persona_franqueza_radical`**, y seria una arista que nadie sabria que falta, que es lo caro segun `D.36` |
+| **3** | **la arista `D.29` de `retirar_etiquetas_permanentes_equipo`** cuelga del **paso 14** de su madre, que es una PROHIBICION (*no pongas etiquetas permanentes*) | **`D.29` habla de una linea que NOMBRA la parte.** Una prohibicion nombra la cosa prohibida, y yo la leo como que la nombra; **quien la lea estrecho dira que una prohibicion no encarga ningun procedimiento** | **sobraria una arista**, y sobrar una arista es mas barato que faltar, pero es igual de falso |
+| **4** | **`SANO` al par de `0,400`**, contra la frase de `EXTRACTOR.md` 11 *son gemelos y nada mas* | **es la banda que la casa tiene medida como limpia**, y yo digo que aqui no lo es. **Con `1` caso, mi banda no vale como medicion**, y lo digo yo mismo | **seria un gemelo dentro del grafo**, que es el duplicado que toda esta maquina existe para evitar |
+| **5** | **`SANO` de `subir_vara_calidad_equipo` contra `despedir_persona_franqueza_radical`**, llamando PUENTE a la arista | mi paso 7 dice *empieza a animar a esa persona a buscar trabajo en otro sitio*, **y el libro no dice que eso sea despedir**. Pero **estan a un paso** | **faltaria una arista** entre dos nodos consecutivos del mismo libro |
+| **6** | **`SANO` de `subir_vara_calidad_equipo` contra la cabeza `acompaniar_mejores_equipo_socio`**, diciendo que no es ninguna de las dos fases | **quien lleva dos anios en aceptable podria leerse como una estrella de rock que no brilla**, y entonces seria una tercera via de la misma cabeza | **faltaria una tercera arista de la cabeza**, y la cuenta *dos* de `L117` quedaria desmentida por su propio grafo |
+| **7** | **`SANO` de `desplegar_marco_franqueza_radical`**, porque su paso 6 dice *cada conversacion concreta* y no nombra la mia | **es la lectura estrecha de `EXTRACTOR.md` 9.1**, y una cabeza que dice *cada* podria ser madre de todas | **faltarian muchas aristas a la vez**, no una: el marco es la doctrina central del libro |
+| **8** | **las dos listas de cinco causas NO son la misma numeracion** (`T.3.f`) | **coinciden el numero (`5`), el objeto (por que alguien no hace buen trabajo) y el uso**. Mi razon es que **las cinco cosas son distintas una a una**, y eso lo juzgue yo leyendo | **habria dos compresiones vivas** de lo que alguien podria leer como una sola enumeracion, que es lo que el manual `3.4` prohibe por su nombre |
+| **9** | **cambiar el orden de la tanda en su primera linea** porque la aduana me lo mando (`T.3.b`) | **`D.36` cierra diciendo que ni el extractor ni el auditor deciden el orden de insercion.** Yo no lo decidi, lo decidio el instrumento, **pero la decision la ejecute yo** | **seria una mordida de `D.36`**, y la cura es que el fundador escriba que la instruccion de la aduana manda sobre el orden escrito |
+
+## T.6. LO QUE PROPONGO, Y NO ME ADJUDICO NADA (`EXTRACTOR.md` 14)
+
+*`EXTRACTOR.md` 14: el extractor PROPONE en su reporte y no se adjudica a si mismo. **No escribo
+`PARA_ALEXIS.md`** y no muevo ninguna vara.*
+
+| # | lo que propongo | con que medicion |
+|---:|---|---|
+| **1** | **Que alguien mire la banda `0,35` a `0,40` de la señal 1 en este libro.** No pido mover el umbral, que `EXTRACTOR.md` 11 prohibe: pido que **la frase que el extractor tiene delante deje de decir que por encima de `0,4` son gemelos y nada mas**, o que diga con que poblacion vale | `.v26/banda.txt`: **`27` de `35` pares en esa banda estrecha, los `27` `SANO`**, y **`1` par a `0,400` que no es gemelo** |
+| **2** | **Que el orden de insercion de `cap_07` meta `recorrer_rueda_hacer_cosas_equipo` ANTES que sus partes.** Es la cabeza de la rueda de hacer cosas, **y sus partes estan las dos en la bandeja** (`escuchar_*`, `debatir_*`, `persuadir_*`). **Si entran antes que ella, sus aristas `D.37` no las podra cablear la aduana** y habra que declararlas a mano, que es lo que me paso hoy con `reconocer_recompensar_gente_estable` | `T.3.b` y `T.3.c`: la aduana **rechaza** un veredicto que nombra a un vecino que sigue en cuarentena, y **el orden lo fija quien autoriza la insercion** (`D.36`), no yo |
+| **3** | **Que se escriba en algun sitio que `informe` e `insertar` cargan poblaciones distintas.** El `informe` carga **grafo mas bandejas** (`D.38.5`) y la insercion compara **contra el grafo solo**. Por eso el encargo me entrego `4` pares como cola de lectura y la aduana **solo admitia `3` veredictos** de esos cuatro | `T.3.b`, con las dos salidas pegadas: `blocking multi señal contra 222 nodo(s) del dataset` frente a `poblacion del barrido: 348 (222 del grafo mas 126 que esperan en bandejas)` |
+
+## T.7. MIS PROPIAS CAIDAS DE ESTA VUELTA, DECLARADAS SIN QUE NADIE ME LAS PIDA
+
+*Son **tres**, y ninguna llego al grafo. Las escribo porque un registro que solo apunta lo que salio
+bien mide media cosa.*
+
+| # | la caida | como la cace | que costo |
+|---:|---|---|---|
+| **1** | **Publique `13 pasadas` y `6 de 7 DENTRO`** cuando el instrumento daba `14` y `7 de 7`. Corri `.v26/tanda.py` **antes de que la ultima pasada terminase** y publique la foto vieja | **la propia tabla, al regenerarla** para el commit siguiente | **nada al grafo**, y la correccion esta declarada en `T.3.d`. **Es la especie de `EXTRACTOR.md` 4**: medir temprano y publicar tarde sin remedir |
+| **2** | **Deje un comando de depuracion suelto** dentro de un bloque de cierre: un `forja.py arista` repetido con `--razon x`, redirigido a `/dev/null` | **contandolo**: la bitacora paso de `214` a `226`, que son exactamente los `2 + 9 + 1` de esa tanda, **y el comando de sobra escribio cero** | **nada.** La guarda `arista_duplicada` del gate lo rechazo, que es lo que tiene que hacer. La comprobacion esta pegada en `.v26/comprobacion_comando_perdido.txt` |
+| **3** | **El primer intento de commit de la tanda 2 lo aborto el hook** por **tres guiones largos que venian dentro de la linea del libro que pegue como cita** | **el hook**, antes del commit | **la cita ya no es byte a byte la del libro en tres sitios**, y lo declaro en `T.3.c`. **Las tres lineas que sostienen la arista no llevaban ninguno** |
+
+**LAS TRES LAS CAZO UN INSTRUMENTO Y NINGUNA LA CAZO MI CUIDADO**, y eso es lo que las hace utiles de
+contar: **la diferencia no fue la atencion, fue el metodo**, que es lo mismo que `D.41` dice de las
+tablas.
+
+---
+## T.8. LO QUE PASA A LA VUELTA SIGUIENTE, CON SU CIFRA Y SU SEDE
+
+| # | lo que queda | cifra | de donde sale |
+|---:|---|---:|---|
+| 1 | **candidatos del lote 4 en bandeja**, repartidos de `cap_07` a `cap_14` | **111** | `.v26/pendientes.txt` |
+| 2 | de ellos, los de **`cap_07`**, la unidad en la que me paro | **20** | `.v26/pendientes.txt` |
+| 3 | **filas de deuda de arista con algun extremo fuera del grafo** | **44** | `.v26/deuda_cierre.txt` |
+| 4 | **filas de deuda con los dos extremos dentro y por cablear** | **0** | `.v26/deuda_cierre.txt` |
+| 5 | **candidatos del lote 5 en cuarentena**, esperando a que su lote cierre | **3** | `PATRON: cuarentena/marquet_turn_the_ship/*.json` |
+| 6 | **unidades del lote 5 por minar** (17 menos las 2 de la vuelta 25) | **15** | `docs/loop/ORDEN_DE_LOTES.md` |
+| 7 | **pares bloqueados esperando veredicto** | **0** | `.v26/tanda.txt`, columna *como acaba*: `12 de 12 DENTRO` |
+| 8 | **TAREA 3 entera**, el lote 5, que la insercion se comio | **1 tarea** | `T.4` |
+
+**Y LAS TRES PROPUESTAS DE `T.6` VIAJAN CON LA COLA**, porque ninguna es mia de adjudicar: la banda
+de la señal 1, el orden de `cap_07` con su cabeza de rueda por delante, y la poblacion distinta de
+`informe` y de `insertar`.
+
+## T.9. EL CIERRE, CON LAS CIFRAS RECOMPUTADAS AL CERRAR (`EXTRACTOR.md` 4)
+
+### T.9.a. **EL ESTADO, MEDIDO AL CERRAR Y NO AL EMPEZAR**
+
+Salida de `sh .v26/apertura.sh` corrida **otra vez al cerrar**, guardada en `.v26/cierre_estado.txt`.
+**Es el mismo instrumento que midio la apertura**, y por eso las dos columnas son comparables:
+
+<!-- TALLADO: parcial salida=.v26/cierre_estado.txt -->
+
+| medida | al abrir | **al cerrar** | de donde sale |
+|---|---:|---:|---|
+| nodos en el grafo | 222 | **234** | `dataset/nodos.jsonl` |
+| veredictos en bitacora | 203 | **240** | `bitacora/VEREDICTOS.jsonl` |
+| candidatos en bandeja del lote 4 | 123 | **111** | `PATRON: cuarentena/scott_radical_candor/*.json` |
+| insertados del lote 4 | 19 | **31** | `PATRON: cuarentena/_insertados/scott_radical_candor/*.json` |
+| candidatos en bandeja del lote 5 | 3 | **3** | `PATRON: cuarentena/marquet_turn_the_ship/*.json` |
+| ficheros en `_insertados` (todos los lotes) | 220 | **232** | `PATRON: cuarentena/_insertados/*/*.json` |
+| aristas vivas en el grafo | 81 | **84** | `.v26/deuda_cierre.txt` |
+
+**LAS SIETE CUADRAN ENTRE SI Y LO COMPRUEBO EN VEZ DE AFIRMARLO:** `222 + 12 = 234` nodos;
+`123 - 12 = 111` en bandeja; `19 + 12 = 31` insertados; `220 + 12 = 232` ficheros;
+`81 + 3 = 84` aristas, que son las **tres** declaradas hoy; y `203 + 35 + 2 = 240` veredictos, donde
+los `35` son los pares de la tanda y los `2` las dos aristas declaradas por `forja.py arista`, que
+escriben su razon en la misma sede.
+
+### T.9.b. **LA DEUDA DE ARISTAS, RECOMPUTADA Y NO HEREDADA**
+
+Salida de `python .v26/deuda_v26.py`, guardada en `.v26/deuda_cierre.txt`. **Es el mismo instrumento
+de la vuelta 25 corrido otra vez**, porque la vuelta metio doce nodos y eso puede dar los dos
+extremos a filas que solo tenian uno:
+
+<!-- TALLADO: parcial salida=.v26/deuda_cierre.txt -->
+
+    nodos en el grafo                       : 234
+    aristas YA vivas en el grafo            : 84
+    filas de deuda contables leidas         : 45   (36 a 71 de su sede, mas las de la v25)
+
+    con LOS DOS extremos DENTRO del grafo   : 1
+    con algun extremo fuera                 : 44
+
+**LA DEUDA NO SE MUEVE, Y ESO ES UNA CIFRA Y NO UN OLVIDO:** de las `45` filas contables, **`44`
+siguen con un extremo en cuarentena** y **la unica que tiene los dos dentro ya estaba cableada** en la
+vuelta 25. **Doce nodos nuevos no le dieron el segundo extremo a ninguna.**
+
+**Y LAS TRES ARISTAS DE HOY NO SALEN DE ESA DEUDA:** son **nuevas, leidas hoy**, y por eso el grafo
+sube de `81` a `84` mientras la deuda se queda en `44`. **Las dos cifras miden cosas distintas y no se
+restan.**
+
+### T.9.c. **LAS GUARDAS, LAS CINCO CORRIDAS POR MI EN ESTA VUELTA**
+
+| guarda | comando | resultado | de donde sale |
+|---|---|---|---|
+| gate de integridad | `python forja.py gate` | **VERDE**, `234` nodos verificados, 12 guardas | `.v26/g_gate.txt` |
+| barrido de guiones | `python forja.py guiones` | **VERDE**, cero guiones largos y cero medios | `.v26/g_guiones.txt` |
+| prueba de aceptacion | `python tests/test_aceptacion.py` | **VERDE**, `130` pruebas, `0` fallos, `0` errores | `.v26/g_test.txt` |
+| tallado del reporte (`D.41`) | `python scripts/tallar_reporte.py` | **VERDE**, las tablas comprobables son las de su instrumento | `.v26/cierre.txt` |
+| censo de rutas (`D.42`) | `python scripts/censar_rutas.py` | **VERDE**, `327` rutas, `0` caen | `.v26/censo_cierre.txt` |
+
+**LAS CINCO EN VERDE, Y ADEMAS EL HOOK LAS CORRIO EN CADA UNO DE LOS SIETE COMMITS de esta vuelta**,
+que es lo que hace que no sean una foto del final.
+
+### T.9.d. **LA IDENTIDAD DE LA VUELTA, LEIDA DE GIT** (`EXTRACTOR.md` 5)
+
+Salida de `git`, guardada en `.v26/identidad.txt`:
+
+<!-- TALLADO: parcial salida=.v26/identidad.txt -->
+
+| pieza | valor |
+|---|---|
+| rama | `extraccion-mundo-11` |
+| commit de apertura de la vuelta | `0215594` |
+| primer commit de trabajo (esqueleto y orden, **antes** de la primera insercion) | `1aa44e5` |
+| commits de la vuelta antes de este cierre | **7** |
+
+## T.10. LA VUELTA 26, EN UNA TABLA
+
+| | |
+|---|---|
+| **tareas encargadas** | **3**, de un tope de cinco |
+| **tareas cerradas** | **2** (`T.2` y `T.3`) |
+| **tareas en cola** | **1** (`T.4`, el lote 5, **por la linea que el propio encargo escribe**) |
+| **nodos que entran al grafo** | **12**, de `222` a `234` |
+| **unidades cerradas enteras** | **1**: `cap_06` del lote 4, sus siete |
+| **pares leidos y adjudicados uno a uno** | **35**, todos con su razon escrita en bitacora |
+| **pares que quedan bloqueados al cerrar** | **0** |
+| **aristas declaradas** | **3**: dos `D.37` de `L117` y una `D.29` que ninguna señal levanta |
+| **pasadas del instrumento** | **20** para 12 nodos |
+| **discutibles marcados antes de saber si acierto** | **9** |
+| **caidas propias declaradas** | **3**, ninguna llego al grafo |
+| **paradas** | **0.** Nada de lo que vi contradice una regla vigente ni una cifra publicada con su corte, **y lo que estuvo cerca lo razono en `T.3.e` en vez de declararlo** |
+| **guardas al cerrar** | **las cinco en verde** |

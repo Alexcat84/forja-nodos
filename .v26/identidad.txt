@@ -1,0 +1,13 @@
+$ git rev-parse --abbrev-ref HEAD
+extraccion-mundo-11
+$ git rev-parse --short HEAD
+dce9675
+$ git log --oneline extraccion-mundo-11 | head -8
+dce9675 VUELTA 26 TANDA cap_07: entran CINCO mas, y la vuelta suma 12 nodos dentro
+50a1c7c VUELTA 26 CIERRA cap_06 DEL LOTE 4: los SIETE entran los siete, con 34 pares leidos y adjudicados
+07c1dc2 VUELTA 26 TANDA 3: entra retirar_etiquetas_permanentes_equipo y con el una arista D.29 que ninguna senial levanta
+432d340 VUELTA 26 TANDA 2: entran reconocer_recompensar_gente_estable y retar_superestrellas_equipo_constantemente, y con ellos las DOS aristas D.37 de L117
+a963a50 VUELTA 26 TANDA: entran los DOS del despido de cap_06, y la aduana me corrige el orden antes de tocar el grafo
+dc305dc VUELTA 26 TAREA 1 CERRADA: D.42 es como se trabaja, con el censo corrido por mi
+1aa44e5 VUELTA 26 ABRE: esqueleto del reporte y el orden de la tanda, escritos ANTES de la primera insercion
+0215594 arnes: estado del bucle al abrir la vuelta 26

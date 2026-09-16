@@ -1,0 +1,9 @@
+nodos en el grafo                        : 234
+veredictos en bitacora                   : 240
+candidatos en bandeja del lote 4         : 111
+insertados del lote 4                    : 31
+candidatos en bandeja del lote 5         : 3
+ficheros en _insertados (todos los lotes): 232
+lineas del reporte                       : 31671
+rama                                     : extraccion-mundo-11
+commit de apertura                       : dce9675
