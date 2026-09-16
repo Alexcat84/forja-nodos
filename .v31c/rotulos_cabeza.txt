@@ -1,0 +1,10 @@
+L17  1:1 Conversations
+L19  Staff Meetings
+L21  Think Time
+L23  “Big Debate” Meetings
+L25  “Big Decision” Meetings
+L27  All-Hands Meetings
+L29  Meeting-Free Zones
+L31  Kanban Boards
+L33  Walk Around
+L35  Be Conscious of Culture

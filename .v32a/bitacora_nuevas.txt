@@ -1,0 +1,21 @@
+lineas totales: 391
+
+LAS LINEAS 376 a 391 (las 16 nuevas de la vuelta 31):
+  376: veredicto=CONTINUA                 par=[None, None]
+  377: veredicto=SANO                     par=[None, None]
+  378: veredicto=CONTINUA                 par=[None, None]
+  379: veredicto=SANO                     par=[None, None]
+  380: veredicto=CONTINUA                 par=[None, None]
+  381: veredicto=CONTINUA                 par=[None, None]
+  382: veredicto=CONTINUA                 par=[None, None]
+  383: veredicto=SANO                     par=[None, None]
+  384: veredicto=CONTINUA                 par=[None, None]
+  385: veredicto=SANO                     par=[None, None]
+  386: veredicto=SANO                     par=[None, None]
+  387: veredicto=SANO                     par=[None, None]
+  388: veredicto=CONTINUA                 par=[None, None]
+  389: veredicto=CONTINUA                 par=[None, None]
+  390: veredicto=CONTINUA                 par=[None, None]
+  391: veredicto=CONTINUA                 par=[None, None]
+
+  no-arista: 16   arista: 0

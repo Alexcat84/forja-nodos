@@ -1,0 +1,13 @@
+======================================================================
+recorrer_rueda_conscientemente_cultura_equipo (14 pasos)
+  nodos_previos   : []
+  nodos_siguientes: ['recorrer_rueda_hacer_cosas_equipo']
+======================================================================
+recorrer_rueda_hacer_cosas_equipo (12 pasos)
+  nodos_previos   : ['recorrer_rueda_conscientemente_cultura_equipo']
+  nodos_siguientes: []
+
+LINEA 265 de la bitacora:
+  veredicto: CONTINUA | candidato: recorrer_rueda_conscientemente_cultura_equipo | vecino: recorrer_rueda_hacer_cosas_equipo
+  arista_en_cola: True
+  razon: Adjudicado por la ACTA 25 3.3 con los dos ficheros impresos: la que NOMBRA es este candidato, en su paso 4 (e influye en tu cultura recorriendo a sabiendas los pasos de la rueda de hacer cosas), y el hijo es quien despliega esa rueda en sus doce pasos, que la madre no tiene. La madre recorre la rueda SOBRE SU PROPIA CULTURA y el hijo la recorre para DECIDIR Y EJECUTAR con el equipo: el entregable de la madre es la cultura influida a sabiendas y el del hijo es una vuelta entera de la rueda con la decision ejecutada.

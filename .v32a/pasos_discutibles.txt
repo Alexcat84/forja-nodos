@@ -1,0 +1,84 @@
+==============================================================================
+escribir_apuntes_sala_estudio_equipo
+  ENTREGABLE: Los apuntes de la semana de cada persona escritos y leidos dentro de la reunion, con las preguntas de seguimiento fuera de ella, en un documento compartido y publicos al equipo mas amplio si eres jefe de jefes.
+  CONDICIONES: "Cuando quieres que todo el mundo sepa en que anda todo el mundo para poder senialar solapes y motivos de preocupacion, y ni te vale una reunion de horas ni te funciona que cada cual escriba sus apuntes por su cuenta."
+    1. Parte del problema que el texto pone: mantener a todos al tanto de lo que hacen los demas, para que puedan senialar zonas de preocupacion o de solape, sin gastar muchisimo tiempo en ello.
+    2. Distingue las actualizaciones de los indicadores clave, porque el texto dice que no son lo mismo: las actualizaciones son cosas que nunca entrarian en el cuadro de mando, del tipo necesitamos cambiar los objetivos de este proyecto, estoy pensando en reorganizar, empiezo a pensar que tengo que despedir a fulano, o me tienen que operar el mes que viene y estare fuera tres semanas.
+    3. No lo resuelvas con una reunion de equipo de varias horas para compartir esa clase de informacion, porque el texto dice que casi todo el mundo odia las reuniones largas.
+    4. Y cuenta tambien con lo que le pasa al otro extremo, el documento publico donde cada cual apunta por su cuenta lo que hizo y lo que hara: en teoria es facil de usar y evita reuniones interminables, pero en la practica mucha gente se resiste enormemente a escribir sus apuntes, y cuando algunos no los hacen el sistema entero se viene abajo.
+    5. Haz por eso lo que el texto dice que le funciono mucho mejor: hacer sitio para que lo hagais todos dentro de la reunion de equipo.
+    6. Haz que cada persona se tome de cinco a siete minutos para escribir las tres a cinco cosas que ella o su equipo hicieron esa semana y que los demas necesitan saber.
+    7. Y de cinco a siete minutos mas para leer las actualizaciones de todos los demas.
+    8. No permitas conversaciones laterales: exige que las preguntas de seguimiento se traten despues de la reunion.
+    9. Cuenta con lo que el texto dice que se juega en esa regla simple: ahorra cantidades enormes de tiempo perdido, y si no la pones, la mayor parte de la reunion seran dos o tres personas hablando mientras el resto mira sin interes.
+   10. Hazlo en un documento compartido que varias personas puedan editar a la vez, y el texto nombra los sitios donde vale hacerlo.
+   11. Si tu equipo no tiene portatiles ni telefonos, usa papel y boligrafo: cada cual apunta sus notas en un papel y luego hacedlos circular.
+   12. Si eres jefe de jefes, haz publicos esos apuntes al equipo mas amplio.
+   13. Y cuenta con lo que eso implica, que el texto dice a continuacion: entonces la gente no puede meter ahi cosas que hay que mantener confidenciales, como los problemas de desempenio de una persona o ajustes de salario que se estan contemplando.
+   14. Si te hace falta, ten un documento de apuntes confidenciales para tu equipo, pero asegurate de que no haya demasiadas cosas ahi: la mayoria de lo que tratais deberia compartirse con el equipo mas amplio.
+==============================================================================
+montar_reunion_gran_debate
+  ENTREGABLE: El resumen cuidadoso de los hechos y los asuntos que salieron, una definicion mas clara de las opciones que hay por delante, y una recomendacion de seguir debatiendo o de pasar a decidir, enviados a todas las partes implicadas.
+  CONDICIONES: "Cuando tu equipo tiene delante un asunto importante con mucho desacuerdo y hace falta discutirlo sin que nadie salga de ahi con una decision tomada."
+    1. Reserva estas reuniones para lo que el texto dice: debate, pero no decisiones, sobre los asuntos mayores que tiene delante el equipo.
+    2. Cuenta con el primero de los tres propositos que el texto les pone: bajan la tension. Parte de la friccion de muchas reuniones viene de que media sala cree que esta ahi para tomar una decision y la otra media para debatir; los que querian decidir se enfurecen porque los que debaten no van hacia una respuesta, y los que querian debatir se enfurecen porque los que deciden se niegan a pensarlo bien y a mirar todos los angulos. Cuando todo el mundo sabe que la reunion acabara sin decision, esa fuente de tension se elimina.
+    3. Cuenta con el segundo: te permiten frenar decisiones clave cuando conviene. Cuando un tema es realmente importante y hay mucho desacuerdo, los equipos a veces se lanzan a decidir antes de haberlo pensado bien o de tener suficiente informacion; meter ese tema en la agenda de debate obliga al equipo a seguir peleandose con el, a desenterrar la informacion que falta, a buscar opinion experta o simplemente a pensarlo mas hondo.
+    4. Cuenta con el tercero: alimentan una cultura de debate mas amplia. El debate deberia ocurrir constantemente en un equipo que funciona, y tener estas reuniones con regularidad y buscarles temas ayuda a construir el musculo y la tolerancia a la discusion y a la disension.
+    5. Y cuenta con lo que el texto anade sobre esa tercera: cuando toca un debate de los que se juegan la empresa, es importante que las partes implicadas hayan participado antes en unos cuantos debates abiertos; y tener debates, incluso discusiones, con regularidad tambien baja la tension, porque evita las peleas explosivas. El texto lo apoya en el principio de la criticidad autoorganizada, que dice que muchas correcciones pequenias crean estabilidad y una sola correccion enorme crea catastrofe.
+    6. Monta la logistica, que el texto dice que es bien simple: despues de tu reunion de equipo, manda el tema, el duenio y los participantes del gran debate al equipo mas amplio, si eres jefe de jefes, y tambien a la gente de otros equipos que trabaja con el tuyo.
+    7. Deja que los unicos obligados a participar en el debate sean los que identificaste en la reunion de equipo.
+    8. Pero deja que cualquiera pueda asistir u observar la reunion de gran debate.
+    9. Haz que el duenio del debate nombre a alguien para tomar notas y mandarlas a todas las partes implicadas.
+   10. Pon las normas, que el texto dice que tambien son sencillas: deja claro que todo el mundo tiene que dejar los egos en la puerta de esta reunion.
+   11. Di cual es el objetivo del debate: trabajar juntos para dar con la mejor respuesta. No deberia haber ni ganadores ni perdedores.
+   12. Pide a los participantes que se cambien los papeles a mitad de cada debate, que es la norma que el texto recomienda: asi te aseguras de que se estan escuchando unos a otros, y les ayuda a mantenerse centrados en dar con la mejor respuesta y a soltar sus egos y sus posiciones.
+   13. Y no dejes que salga de ahi ninguna otra cosa, porque el texto dice que el unico producto del debate deberia ser un resumen cuidadoso de los hechos y los asuntos que emergieron, una definicion mas clara de las opciones que hay por delante, y una recomendacion de seguir debatiendo o de pasar a una decision.
+==============================================================================
+montar_reunion_gran_decision
+  ENTREGABLE: Un resumen cuidadoso de la reunion repartido a todas las partes implicadas, con la decision tomada y final, y tu veto puesto antes de que salgan las notas si es que lo pusiste.
+  CONDICIONES: "Cuando hay que tomar una decision importante y quieres que quede claro que se esta decidiendo y no debatiendo, normalmente despues de una reunion de gran debate."
+    1. Convocala normalmente despues de una reunion de gran debate, aunque el texto aclara que no siempre es asi.
+    2. Cuenta con el primero de los dos papeles que el texto le da, que llama el obvio: tomar decisiones importantes.
+    3. Cuenta con el segundo, que llama mas sutil: cuesta saber cuando dejar de debatir y empezar a decidir, y el texto dice que no ha encontrado ningun principio absoluto que responda a eso; el acto simple de ser explicito y consciente de cuando decides y cuando debates es lo que mas ayuda a saber cuando hace falta de verdad tomar una decision. El texto dice que esa es la razon principal por la que recomienda dos reuniones separadas.
+    4. Ponle las mismas logisticas y las mismas normas que a la reunion de gran debate.
+    5. Haz que dirija la reunion el decisor, que es a quien habras nombrado en tu reunion de equipo.
+    6. Deja que los unicos obligados a asistir sean los identificados en la reunion de equipo, y que cualquiera pueda asistir.
+    7. Haz que se tomen notas y que se pongan a disposicion de todas las partes implicadas.
+    8. Egos en la puerta, y ni ganadores ni perdedores.
+    9. Saca de ahi el producto que el texto le pone: un resumen cuidadoso de la reunion repartido a todas las partes implicadas.
+   10. Y asegurate de que las decisiones son finales, porque el texto dice que si no siempre se apelaran y entonces seran debates y no decisiones.
+   11. Acata tu las decisiones tomadas en estas reuniones igual que todos los demas.
+   12. Si sabes que es un tema sobre el que tienes opiniones fuertes, o vas tu a la reunion, o le dices al decisor que tienes poder de veto.
+   13. Si tienes poder de veto, haz que el decisor te mande la decision para que la apruebes o la rechaces antes de que las notas salgan mas ampliamente.
+   14. Y usa ese poder con cuentagotas, porque el texto dice que si no las reuniones se volveran irrelevantes.
+==============================================================================
+preguntar_seguimiento_hallar_huecos
+  ENTREGABLE: Los huecos de esa persona identificados con sus palabras, y el asunto de otro equipo planteado por ella misma a ese equipo en vez de resuelto por ti.
+  CONDICIONES: "Cuando estas dentro de una reunion a solas y quieres ensenar que escuchas, que te importa y que quieres ayudar, y ademas sacar los huecos entre lo que la persona hace, lo que cree que deberia hacer y lo que quiere hacer."
+    1. Haz estas preguntas de seguimiento con el doble proposito que el texto les pone: ensenar no solo que estas escuchando sino que te importa y quieres ayudar, e identificar los huecos entre lo que la gente hace, lo que cree que deberia hacer y lo que quiere hacer.
+    2. Pregunta: por que?
+    3. Pregunta: como puedo ayudar?
+    4. Pregunta: que puedo hacer, o dejar de hacer, que te facilitaria esto?
+    5. Pregunta: que es lo que te desvela por la noche?
+    6. Pregunta: en que estas trabajando en lo que no quieres trabajar?
+    7. Pregunta: no quieres trabajar en ello porque no te interesa o porque crees que no es importante?
+    8. Pregunta: que puedes hacer para dejar de trabajar en ello?
+    9. Pregunta: en que no estas trabajando en lo que si quieres trabajar?
+   10. Pregunta: por que no estas trabajando en ello?
+   11. Pregunta: que puedes hacer para empezar a trabajar en ello?
+   12. Pregunta: como te sientes respecto a las prioridades de los equipos de los que dependes?
+   13. Pregunta: en que estan trabajando ellos que parezca poco importante o incluso contraproducente?
+   14. Pregunta: que es lo que no estan haciendo y a ti te gustaria que hicieran?
+   15. Pregunta: has hablado directamente con esos otros equipos de lo que te preocupa? Y si no, por que no?
+   16. Y ten presente lo que el texto marca como nota importante sobre esa ultima: el objetivo aqui es animar a la gente a plantear el asunto directamente entre ellos, no resolverles el problema tu.
+==============================================================================
+calibrar_normalidad_preguntas_jefe
+  ENTREGABLE: Tus expectativas calibradas sobre que es normal aqui, sacadas de mirar escenarios concretos junto a tu jefe y no de suponerlo.
+  CONDICIONES: "En tus primeros meses como jefe nuevo, cuando lo que mas necesitas entender es como calibrar tus expectativas sobre que es lo normal en este entorno, y todavia no tienes criterio propio para juzgarlo."
+    1. Acepta que en tus primeros meses tu trabajo principal es escuchar, preguntar y aprender.
+    2. Para calibrar que es lo normal, mira escenarios concretos junto a tu propio jefe, que es la manera eficaz de hacerlo.
+    3. Preguntale que significa hacer un gran trabajo frente a uno medio o malo, y pidele algunos ejemplos.
+    4. Pidele que te comparta sus impresiones sobre como cree que fue tal proyecto o tal reunion, y por que lo cree.
+    5. Cuentale que te has fijado en que paso tal cosa el otro dia y preguntale si eso es normal o si deberias preocuparte.
+    6. Preguntale que es lo que le quita el sueno, y por que.
+    7. Y preguntale como determina el que cosas priorizar.

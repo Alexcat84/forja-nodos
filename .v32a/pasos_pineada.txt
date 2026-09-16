@@ -1,0 +1,53 @@
+==============================================================================
+decidir_quien_comunica_cada_cuanto (6 pasos)
+  ENTREGABLE: El mapa de quien se comunica con quien y cada cuanto, con cada reunion puesta con su duracion, su frecuencia y el minimo de personas a las que hace falta que asistan.
+  CONDICIONES: "Cuando te toca decidir que reuniones hay en tu equipo, quien va a cada una y cada cuanto, y quieres que la comunicacion fluya sin que las reuniones se coman el tiempo de todos."
+    1. Asume como una de tus responsabilidades mas importantes para que todo siga moviendose sin roces: decidir quien necesita comunicarse con quien y con que frecuencia.
+    2. Cuenta con lo que eso significa en la practica, y el texto lo dice en dos palabras: reuniones.
+    3. Cuenta tambien con que toda reunion viene con un coste significativo, que el texto nombra: el tiempo.
+    4. Minimiza por eso las tres cosas que el texto nombra una a una: la duracion, la frecuencia y el numero de personas a las que hace falta que asistan.
+    5. Empieza por la que el texto llama la mas importante de todas estas reuniones: la reunion a solas con cada persona que te reporta directamente.
+    6. Y ten delante las herramientas que el texto enumera para sacar cosas adelante juntos, que son las reuniones a solas, las reuniones de equipo, el tiempo para pensar, las reuniones de gran debate, las reuniones de gran decision, las reuniones generales, las zonas libres de reuniones, los tab
+==============================================================================
+construir_confianza_equipo_tiempo_solas (7 pasos)   FUENTE EN BANDEJA: cuarentena\scott_radical_candor\construir_confianza_equipo_tiempo_solas.json
+  ENTREGABLE: Confianza construida sobre un patron constante de actuar de buena fe, con tiempo a solas reservado con cada persona y sin haberte metido donde no te habian llamado.
+  CONDICIONES: "Cuando quieres subir en el eje de importarte las personas con alguien de tu equipo y todavia no sabes casi nada de su vida."
+    1. Cuenta con que construir confianza en cualquier relacion lleva tiempo, porque la confianza se construye sobre un patron constante de actuar de buena fe.
+    2. No des por supuesta demasiada confianza demasiado pronto, como hurgando en preguntas muy personales cuando apenas conoces a la persona.
+    3. Pero empieza por algun sitio: si no preguntas nunca ni una sola cosa sobre la vida de alguien, es dificil subir en el eje de que te importe personalmente.
+    4. Pasa un poco de tiempo a solas con cada una de las personas que te reportan, con regularidad, que es lo que el texto llama probablemente lo mas importante que puedes hacer para construir confianza.
+    5. Manten reuniones a solas periodicas en las que el orden del dia lo pone la persona que te reporta y tu haces preguntas, que es una buena manera de empezar a construir confianza.
+    6. Cuida como pides critica y como reaccionas cuando te la dan, porque eso construye confianza o la destruye.
+    7. Y manten conversaciones anuales de carrera, que el texto llama una manera excelente de reforzar tu relacion con cada persona que te reporta directamente.
+==============================================================================
+nutrir_ideas_nuevas_reunion_solas (10 pasos)
+  ENTREGABLE: La idea explicada con la claridad suficiente para llevarla al equipo mas amplio, y explicada de la manera que entiende cada persona a la que hay que comunicarsela.
+  CONDICIONES: "Cuando alguien de tu equipo trae una idea nueva a su reunion a solas contigo y todavia no esta clara ni lista para llevarla al equipo mas amplio."
+    1. Ten en la cabeza, antes de entrar a una reunion a solas, la frase de Jony Ive que el texto cita: las ideas nuevas son fragiles.
+    2. Trata esa reunion como un sitio seguro donde la gente pueda nutrir ideas nuevas antes de someterlas al empujon y el revolcon del debate.
+    3. Ayudales con las dos cosas que el texto nombra: a aclarar lo que ellos mismos piensan de la idea, y a aclarar su comprension de las personas a las que tienen que comunicarsela.
+    4. Cuenta con que la misma idea puede necesitar describirse de una manera para un ingeniero y de otra para un comercial.
+    5. Pregunta: que necesitas para desarrollar mas esa idea, de manera que este lista para discutirla con el equipo mas amplio? Como puedo ayudarte?
+    6. Pregunta: creo que tienes algo entre manos, pero todavia no me queda claro. Puedes intentar explicarmelo otra vez?
+    7. Pregunta: vamos a pelearnos un poco mas con esto, te parece?
+    8. Pregunta: entiendo lo que quieres decir, pero no creo que los demas lo entiendan. Como puedes explicarlo para que a ellos les resulte mas facil de entender?
+    9. Pregunta: no creo que fulano vaya a entender esto. Puedes explicarlo otra vez para que quede mas claro especificamente para el?
+   10. Pregunta: el problema es de verdad que ellos son demasiado tontos para entenderlo, o es que tu no lo estas explicando con la claridad suficiente?
+==============================================================================
+dirigir_reunion_decision (14 pasos)
+  ENTREGABLE: Una decision clara tomada por quien estaba designado para tomarla, y unos afectados que salen sintiendo que la forma de decidir fue eficiente y justa aunque no estuvieran de acuerdo.
+  CONDICIONES: "Cuando el resultado excelente que persigues es que se tome una decision y que quede tomada, y hay opciones distintas sobre la mesa."
+    1. Enmarca las distintas opciones que hay sobre la mesa y pide a quien decide que tome la decision.
+    2. Persigue las dos cosas a la vez: llegar a una decision clara, y que todo el mundo salga con sensacion de confianza en el proceso.
+    3. No busques consenso. Lo que hace falta es que aquellos a quienes la decision afecta sientan que la manera en que se tomo fue eficiente y justa. Si la gente no confia en el proceso, lo que veras es que la decision se alarga.
+    4. Incluye a las personas mas directamente afectadas por la decision, y tambien a alguien claramente designado como quien decide.
+    5. Presenta todas las opciones creibles de forma objetiva y con la informacion de contexto relevante, e incluye la recomendacion del equipo si la hay.
+    6. Da el mismo tiempo de palabra a las opiniones discrepantes y haz que la gente sienta que fue escuchada.
+    7. No tomes la decision habiendo oido un solo trozo de contexto. La autora cuenta el caso: su reporte le pidio mover una semana el plazo del trabajo de diseno porque no daba tiempo a explorar las tres opciones, ella contesto que le parecia bien, y despues aparecio el responsable de ingenieria
+    8. Si ya has decidido de esa manera y el otro lado aparece pidiendote rehacer la decision, admite que te equivocaste con tu proceso y reune a todos para volver a decidir. El libro dice que esa es la mejor salida que te queda, porque cambiar la decision a solas frustra al primero y no cambiarl
+    9. No aceptes el argumento de que cualquier decision va a dejar a alguien descontento porque los dos lados discrepan. Todos en un equipo comparten en ultima instancia las mismas metas, y parte de trabajar bien juntos es depositar confianza en quien decide y en un proceso justo.
+   10. Evita el primer mal resultado: que la gente sienta que su lado no se presento bien y por eso no confie en la decision que salio.
+   11. Evita el segundo: que las decisiones tarden mucho en tomarse y eso retrase el avance. Las decisiones importantes y dificiles de revertir merecen consideracion profunda, pero desconfia de gastar demasiado tiempo en las pequenias y faciles de revertir.
+   12. Evita el tercero: que las decisiones vayan y vuelvan una y otra vez, porque asi es dificil confiar en ellas y actuar sobre ellas.
+   13. Evita el cuarto: que se gaste demasiado tiempo intentando llevar al grupo al consenso en vez de escalar rapido a quien decide.
+   14. Evita el quinto: que se pierda tiempo rumiando el mismo argumento de veinte maneras distintas.

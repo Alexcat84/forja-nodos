@@ -1,0 +1,80 @@
+MIS CLASES SOBRE LOS NUEVE DISCUTIBLES MARCADOS DE LA VUELTA 31,
+escritas con los PASOS delante (.v32a/pasos_discutibles.txt) y ANTES de destapar
+ninguna razon de bitacora/VEREDICTOS.jsonl. Auditor, vuelta 32, turno normal.
+
+D1  las SEIS aristas cabeza a parte de decidir_quien_comunica_cada_cuanto
+    MI CLASE: LAS SEIS SE SOSTIENEN por D.29. Ya la escribi a ciegas en
+    .v31c/mis_clases_pineada.txt C15, antes de ver el reporte.
+    Y AHI MISMO ESCRIBI QUE LOS CABLEABLES HOY SON SIETE Y NO SEIS.
+
+D2  NO declarar la de Meeting-Free Zones hacia pelear_proliferacion
+    MI CLASE: SOSTENIDO. Coincido, y llegue solo (apertura ciega 3.1 y C15):
+    el rotulo L29 no tiene cuerpo, el emparejamiento con EXECUTION TIME es por
+    posicion y no por texto, y la enumeracion tiene que estar escrita.
+
+D3  escribir_apuntes_sala_estudio_equipo paso 10 marcado TRANSCRIPCION
+    MI CLASE: TRANSCRIPCION, SOSTENIDO. Un PUENTE es lo que el libro NO dice, y
+    L155 si nombra los tres sitios: el paso dice MENOS, no mas.
+    PERO EL PASO 10 ES UN HUECO DE TRANSCRIPCION DE ESPECIE NUEVA: no es un paso
+    que falta (L153) sino UN PASO QUE REMITE EN VEZ DE TRANSCRIBIR. Sin el libro
+    delante el paso no se puede ejecutar. Eso lo levanto yo aparte.
+
+D4  el SANO de montar_reunion_gran_debate contra montar_reunion_gran_decision
+    MI CLASE: SANO, SOSTENIDO, por la vara 6.1 y sin bascula. Fuera del solape
+    queda procedimiento en los dos lados: alli los tres propositos, la
+    criticidad autoorganizada y la prohibicion de que salga una decision; aqui
+    el decisor, el caracter final de la decision, el veto y su uso con
+    cuentagotas. El solape es el que el libro declara: el paso 4 de la decision
+    dice mismas logisticas y mismas normas que la del debate.
+
+D5  la TERCERA madre de bloquear_tiempo_pensar_calendario
+    MI CLASE: SOSTENIDA. Las tres citan pasos de nodos distintos: cuidarse
+    (paso 7), decidir_quien_comunica (paso 6, la lista) y desplegar_plan (en
+    cola). Tres madres sobre un nodo de 6 pasos no es de suyo un defecto: es lo
+    que le pasa a un procedimiento corto al que varios sitios del libro mandan.
+
+D6  el SANO de preguntar_seguimiento_hallar_huecos contra
+    calibrar_normalidad_preguntas_jefe, en vez de MUTUO
+    MI CLASE: SANO, SOSTENIDO. El paso 5 de uno pregunta a QUIEN TE REPORTA y el
+    paso 6 del otro pregunta A TU PROPIO JEFE; los entregables son distintos
+    (los huecos de esa persona / tus expectativas calibradas) y las condiciones
+    tambien (dentro de una reunion a solas / tus primeros meses como jefe nuevo).
+    No es MUTUO: un MUTUO pide que cada uno necesite al otro, y aqui no.
+
+D7  entregar 4 remedios para la ACTA 28 cuando el encargo decia 2
+    MI CLASE: POR MEDIR con el instrumento antes de adjudicar.
+
+D8  exigir que la cabecera sea exactamente REMEDIO o REMEDIOS
+    MI CLASE: POR MEDIR con el instrumento antes de adjudicar.
+
+D9  contar la cola de aristas de la bitacora entera y no de la tabla del encargo
+    MI CLASE: POR MEDIR con mi propio conteo antes de adjudicar.
+
+--------------------------------------------------------------------------
+LA MUESTRA PINEADA: LOS SEIS SANO DE LA TANDA. Mis clases, escritas con los
+pasos delante (.v32a/pasos_pineada.txt) y ANTES de destapar sus razones.
+
+P377 decidir_quien_comunica_cada_cuanto vs construir_confianza_equipo_tiempo_solas
+     MI CLASE: SANO. El vecino usa la reunion a solas como UN MEDIO para
+     construir confianza (sus pasos 4 y 5, junto a preguntar por la vida, cuidar
+     como pides critica y la conversacion anual de carrera); el candidato decide
+     EL MAPA ENTERO de reuniones con su duracion, frecuencia y minimo de
+     asistentes. Entregables distintos, y fuera del solape hay procedimiento en
+     los dos lados.
+
+P385 montar_reunion_gran_decision vs montar_reunion_gran_debate
+     MI CLASE: SANO. Es el mismo par de D4 visto desde el otro extremo y mi
+     clase es la misma.
+
+P386 montar_reunion_gran_decision vs nutrir_ideas_nuevas_reunion_solas
+     MI CLASE: SANO, y es ruido. Uno decide un asunto importante en una reunion
+     convocada; el otro cuida una idea fragil dentro de una reunion a solas. No
+     comparten ni condicion ni entregable ni un solo acto.
+
+P387 montar_reunion_gran_decision vs dirigir_reunion_decision (zhuo)
+     MI CLASE: SANO. El candidato pone DONDE ENCAJA la reunion en el sistema
+     (viene tras la de debate, decisor nombrado, decisiones finales, veto con
+     cuentagotas); el vecino pone COMO SE DELIBERA DENTRO (enmarcar opciones,
+     mismo tiempo de palabra, no buscar consenso, los cinco malos resultados).
+     Dos doctrinas legitimas, y la vara 6.1 dice que eso es FRONTERA DECLARADA
+     y no duplicado.

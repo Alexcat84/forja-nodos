@@ -1,0 +1,19 @@
+sede        id                                                         pasos  rango
+scott_radical_candordebatir_decidir_asuntos_cultura_evitar_delegar                 6  cap_11.md | cap_11. POR QUE ES NODO PROPIO Y NO UN PASO DE recorrer_rueda_conscientemente_cultura_equipo | cap_11 cierra
+scott_radical_candorintegrar_peticion_critica_rutina_existente                    13  cap_11
+scott_radical_candormontar_tablero_kanban_medir_actividades                       10  cap_11.md | cap_11. POR QUE ES PROCEDIMIENTO
+scott_radical_candorpasear_organizacion_hallar_problemas_pequenios                 9  cap_11.md | cap_11. POR QUE ES PROCEDIMIENTO
+INSERTADO   bloquear_tiempo_pensar_calendario                              6  cap_11.md | cap_11 y es la mas fina del capitulo
+INSERTADO   conducir_reunion_equipo_agenda_tres_bloques                   22  cap_11.md | cap_11
+INSERTADO   decidir_quien_comunica_cada_cuanto                             6  cap_11.md | cap_11 Y ES LA CABEZA DEL CAPITULO. POR QUE ES PROCEDIMIENTO Y NO ENTRADA
+INSERTADO   escribir_apuntes_sala_estudio_equipo                          14  cap_11.md | cap_11. POR QUE ES NODO PROPIO Y NO UN PASO DE conducir_reunion_equipo_agenda_tres_bloques: su par es otro y
+INSERTADO   leer_seniales_fallo_jefe_reunion_solas                         6  cap_11.md | cap_11. POR QUE ES PROCEDIMIENTO Y NO UNA ADVERTENCIA
+INSERTADO   montar_reunion_general_presentaciones_preguntas               11  cap_11.md | cap_11. POR QUE ES PROCEDIMIENTO
+INSERTADO   montar_reunion_gran_debate                                    13  cap_11.md | cap_11. POR QUE LOS TRES PROPOSITOS DE LA LINEA 179 NO SON TRES NODOS
+INSERTADO   montar_reunion_gran_decision                                  14  cap_11.md | cap_11. POR QUE ES NODO PROPIO Y NO UN PASO DE montar_reunion_gran_debate
+INSERTADO   montar_reuniones_solas_mentalidad_frecuencia                  22  cap_11.md | cap_11. POR QUE LOS CUATRO ROTULOS VAN EN UN SOLO NODO Y NO EN CUATRO | cap_11 sigue en 187 pasos. RELECTURA
+INSERTADO   nutrir_ideas_nuevas_reunion_solas                             10  cap_11.md | cap_11. POR QUE ES PROCEDIMIENTO
+INSERTADO   pelear_proliferacion_reuniones_bloquear_ejecucion              8  cap_11.md | cap_11. En el indice del capitulo
+INSERTADO   preguntar_seguimiento_hallar_huecos                           16  cap_11.md | cap_11. POR QUE ES PROCEDIMIENTO Y NO POSTURA | cap_11 debe
+INSERTADO   recorrer_rueda_conscientemente_cultura_equipo                 14  cap_11.md | cap_11
+TOTAL ficheros cap_11: 17

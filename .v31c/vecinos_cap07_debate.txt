@@ -1,0 +1,155 @@
+==========================================================================================
+ID: cerrar_reunion_pasos_siguientes | ['zhuo_manager']
+COND: En los ultimos minutos de cualquier reunion, y en las horas siguientes a que termine.
+ENTR: Unos pasos siguientes acordados en voz alta antes de levantarse, y un resumen enviado a los asistentes con la discusion, las acciones concretas con su responsable, y la fecha de la proxima revision.
+   1 | Trata los seguimientos con tanto cuidado como la preparacion. Una sola reunion no es un fin en si misma: es un peldano en el camino mucho mas largo de crear algo valioso para el mundo.
+   2 | En los ultimos minutos de la reunion, coge la costumbre de preguntar: antes de levantarnos, vamos a asegurarnos de que estamos de acuerdo en los pasos siguientes.
+   3 | Despues de la reunion, envia a los asistentes un resumen con la discusion, con una lista de las acciones concretas y de quien es responsable de cada una, y con cuando sera la proxima revision.
+   4 | Si lo que hubo fue una decision, comunicala a las personas adecuadas.
+   5 | Si lo que hubo fue opinion sobre un trabajo, actua sobre ella.
+   6 | Si lo que hubo fue generacion de ideas, haz que quien organizo la reunion aclare cual es el proceso para llevar esas ideas a la etapa siguiente.
+   7 | Usa esos seguimientos como ancla de la agenda de la proxima vez que el grupo se reuna.
+==========================================================================================
+ID: fijar_resultado_excelente_reunion | ['zhuo_manager']
+COND: Antes de convocar cualquier reunion, y otra vez dentro de ella en cuanto la conversacion empieza a desviarse del tema.
+ENTR: Una reunion con su resultado excelente nombrado, con una sola de las razones del libro como proposito primario, y una conversacion que vuelve a la agenda prevista cuando se desvia.
+   1 | No te quedes en el consejo corriente de que toda reunion debe tener un proposito. Es buen consejo, pero no llega lo bastante lejos: la autora cuenta que su reunion de estado si tenia proposito, mantener a todo el mundo informado d
+   2 | Preguntate a ti mismo, antes de nada, a que se parece un gran resultado. Esa es la pregunta que ella no se hizo.
+   3 | Ten cristalinamente claro el resultado que persigues: el libro dice que ese es el primer paso para dirigir grandes reuniones.
+   4 | Elige cual es tu razon, porque solo hay un punado de razones para que la gente se junte en persona, y el libro las nombra una a una: tomar una decision, compartir informacion, dar opinion sobre un trabajo en curso, generar ideas, 
+   5 | Deja claro en cada reunion cual de esas esta intentando conseguir.
+   6 | No intentes que una sola reunion haga demasiado.
+   7 | Recuerda al grupo su proposito primario cuando la conversacion empiece a desviarse.
+   8 | Si lo que buscas es una decision sobre precios y la gente empieza a proponer funciones nuevas, di que buscaras tiempo aparte para ese otro tema, y despues devuelve la conversacion a la agenda prevista.
+   9 | No cuentes con que la estructura de una reunion de decision sirva de foro para generar ideas: en la experiencia de la autora es improbable.
+   10 | Practica claridad y eficiencia despiadada con tus reuniones, y la gente te lo agradecera por respetar lo sagrado de su tiempo.
+==========================================================================================
+ID: invitar_personas_necesarias_reunion | ['zhuo_manager']
+COND: Al armar la lista de invitados de cualquier reunion, y otra vez cuando una reunion periodica lleva tiempo creciendo de asistentes.
+ENTR: Una lista de invitados en la que esta todo el que hace falta para que el resultado excelente ocurra, y nadie mas.
+   1 | Vuelve a tu respuesta de a que se parece un resultado excelente para esta reunion, y preguntate: que personas son necesarias para que ese resultado ocurra? Esa es la pregunta con la que el libro decide la lista.
+   2 | Vigila el primer fallo, invitar de mas. Todos hemos estado en salas con energia apagada porque hay demasiada gente apretada alrededor de la mesa, mucha de ella distraida y mirando el movil.
+   3 | Vigila el segundo fallo, invitar de menos, que el libro dice que sale igual de caro. Si la decision va a tener un impacto grande en otro equipo, por ejemplo una decision de producto sobre que funciones construir, que afecta tambie
+   4 | Cuenta con que gente razonable pueda discrepar sobre quien tiene que estar. La autora cuenta el caso de su reunion de revision de diseno, a la que estaban invitados todos los disenadores: segun contrataban a mas gente, el numero d
+   5 | Escucha los argumentos a favor de la lista larga antes de cortarla, porque en ese caso eran buenos: que la reunion ensenaba a los disenadores nuevos que clase de opinion esperar, y que era una reunion muy visible, con mucha exposi
+   6 | Vuelve entonces a la meta primaria de la reunion y mide contra ella, que es lo que el libro hace para desempatar: la meta era que ella y otros directivos pudieran dar opinion util sobre proyectos a mitad de vuelo, y tener tantos o
+   7 | Si la meta primaria pierde, encoge la lista de asistentes.
+   8 | Busca entonces otras vias para los beneficios que pierdes al encogerla. Ellos resolvieron buscar otras maneras de invertir en la formacion en diseno y en construir relaciones, y el libro nombra dentro de esas maneras, sin cerrar l
+==========================================================================================
+ID: mediar_tiempo_palabra_reunion | ['zhuo_manager']
+COND: Cuando tus reuniones tienden a estar dominadas por unos pocos individuos.
+ENTR: Una reunion en la que quien fue interrumpido termina su frase, quien buscaba hueco lo recibe, quien callaba es preguntado, y quien habla de mas cede el turno.
+   1 | Si tus reuniones tienden a estar dominadas por unos pocos individuos, prueba a mediar la cantidad de tiempo de palabra que recibe cada uno.
+   2 | Manten la vigilancia sobre las interrupciones. Si alguien empieza a exponer un punto y otra voz mas alta le corta, dale cobertura diciendo: espera, Ana no habia terminado. El libro anade que hacer esto, de propina, refuerza tu pro
+   3 | Si ves a alguien buscando meter baza, ayudale a abrir el hueco: parece que Juan quiere decir algo. La autora cuenta que un colega hizo eso por ella una vez en una revision con veinte personas, y que todavia recuerda la oleada de g
+   4 | Prueba las preguntas dirigidas, que el libro atribuye a los directivos especialmente perceptivos: Susana, te veo con cara de duda, que crees que deberiamos hacer? O bien: Ricardo, todavia no te hemos oido, cual es tu opinion?
+   5 | Con los que hablan de mas, se claro pero educado al hacerles saber que es el turno de otro: Ivan, esta claro que tienes mas cosas que decir, pero vamos a asegurarnos primero de que otras personas tienen ocasion de opinar. O bien: 
+   6 | Cuenta con que no siempre resulta comodo interrumpir a otros y llevar asi el flujo de la conversacion, y hazlo igual por lo que senala: manda una senal fuerte de que crees que los mejores resultados vienen de oir una diversidad de
+==========================================================================================
+ID: repartir_material_antes_reunion | ['zhuo_manager']
+COND: Cuando la meta de la reunion es tomar decisiones o dar opinion y los asistentes van a ver el material por primera vez alli dentro.
+ENTR: Las presentaciones o documentos en manos de los asistentes el dia antes, y una agenda enviada por adelantado.
+   1 | Da por hecho que quien presenta sufre lo que los psicologos sociales llaman la maldicion del conocimiento: como conoce su material de arriba abajo, el sesgo cognitivo le hace dificil recordar que se siente al ser un principiante q
+   2 | No te sientas mal por no seguir el ritmo ni supongas que eres tu quien va lento: la autora cuenta que a ella le pasaba en muchas revisiones, entrecerrando los ojos ante graficas y datos mientras le decian como se ve claramente en 
+   3 | Reconoce el limite real: si la meta de la reunion es tomar decisiones o dar opinion, a las partes interesadas les puede costar entender el material lo bastante bien dentro de una sola reunion como para llegar a conclusiones medita
+   4 | Pide a quien organiza que envie cualquier presentacion o documento el dia antes, que es el cambio concreto que ellos hicieron en sus reuniones de decision y de revision, para que todo el mundo tenga ocasion de procesar la informac
+   5 | Envia tambien la agenda por adelantado, que muestra un nivel de cuidado e intencion al ayudar al grupo a mantenerse enfocado.
+   6 | Hazlo con reuniones de cualquier tamano, incluidas las individuales, y ten presente que cuanto mayor es la reunion mas importante es la preparacion.
+   7 | Si te parece mucho trabajo preparar, considera el coste monetario real de una reunion dada: si una reunion de toda la empresa a la que asisten quinientos empleados no es atractiva ni memorable, la empresa habra desperdiciado quini
+==========================================================================================
+ID: abrir_debate_humor_explicar_proposito | ['scott_radical_candor']
+COND: Cuando vas a lanzar un debate en tu equipo, y sobre todo cuando hay en la sala gente a la que el acto mismo de debatir le parece agresivo o amenazante.
+ENTR: Un debate lanzado con un tono que la gente pueda seguir, con el proposito del debate explicado por delante a quien no lo da por supuesto.
+   1 | Cuida el espiritu con el que lanzas el debate, porque el texto dice que suele determinar el tono de todo lo que viene detras.
+   2 | Cuenta con que la gente de tu equipo se guia por tu estado de animo hasta un punto casi alarmante, y que cuando tu encuentras la manera de pasartelo bien en un debate, los demas suelen seguirte.
+   3 | Usa humor simple, o abre la reunion con una buena historia a tu costa.
+   4 | Preocupate mas del tono que transmites y del animo que dejas puesto que de lo que dices exactamente: el texto dice que lo que dices importa menos.
+   5 | Cuenta con que no todo el mundo disfruta debatiendo, y que a algunos el acto mismo de debatir les parece agresivo o amenazante, o las dos cosas.
+   6 | Da por delante una explicacion clara de para que sirve el debate, y crea un espacio positivo donde pueda ocurrir.
+   7 | Conoce lo bastante bien a las personas con las que debates para darte cuenta de cuando las estas volviendo locas sin querer.
+==========================================================================================
+ID: centrar_debate_ideas_fuera_egos | ['scott_radical_candor']
+COND: Cuando en un debate de tu equipo empiezas a notar que la gente esta pensando voy a ganar esta discusion, o mi idea contra la tuya, en vez de buscar la mejor respuesta.
+ENTR: Un debate que vuelve a estar sobre los hechos, sin propietarios de ideas, con las reglas del juego dichas si hizo falta decirlas, y con la gente escuchando mas atentamente porque sabe que puede tener que defender la posicion contraria.
+   1 | Interven en cuanto empieces a notar que la gente esta pensando voy a ganar esta discusion, o mi idea contra tu idea, o mi recomendacion contra tu recomendacion, o lo que siente mi equipo.
+   2 | Redirigelos a centrarse en los hechos.
+   3 | No permitas que nadie se atribuya la propiedad de una idea.
+   4 | No dejes que el debate lo secuestre como puedan sentirse o no sentirse los que no estan en la sala.
+   5 | Recuerdales cual es la meta: llegar a la mejor respuesta, como equipo.
+   6 | Cuenta con lo que el texto dice que estas haciendo: una colaboracion de grandes cabezas, no un concurso de debate de instituto ni unas elecciones presidenciales.
+   7 | Si hace falta, fija las reglas del juego al principio de la reunion.
+   8 | Y si a tu equipo le va a parecer divertido y util en vez de ridiculo, pon un objeto a la puerta, del tipo guardarropa de egos.
+   9 | Para que busquen la mejor respuesta en vez de la validacion de su ego, haz que cambien de papel: si alguien lleva rato defendiendo A, pidele que empiece a defender B.
+   10 | Si el debate va a durar un rato, avisales de antemano de que les vas a pedir que cambien de papel. El texto dice que cuando la gente sabe que va a tener que defender el punto de vista de otro, escucha con mas atencion de forma nat
+==========================================================================================
+ID: crear_obligacion_disentir_equipo | ['scott_radical_candor']
+COND: Cuando quieres que en tu equipo haya debate de verdad y te encuentras con reuniones donde todos estan de acuerdo, o con una discusion que no acaba de ser lo bastante robusta.
+ENTR: Una voz discrepante puesta en cada discusion donde todos estaban de acuerdo, con la obligacion de disentir declarada como norma del equipo y no como iniciativa de un valiente.
+   1 | Declara en tu equipo una obligacion de disentir, que es lo que McKinsey creo muy conscientemente y lo que a la autora mas le impresiono de esa empresa.
+   2 | Trata como una bandera roja que todos los que estan alrededor de la mesa esten de acuerdo.
+   3 | Cuando eso pase, haz que alguien tome la voz discrepante.
+   4 | Si la discusion de una reunion no esta siendo lo bastante robusta, usa un objeto que pase el turno de disentir, como los mazos con el deber de disentir escrito en japones que un directivo de Apple mando hacer para el equipo que he
+   5 | Deslizale el objeto a alguien de la mesa como señal de que le toca tomar el punto de vista contrario. El texto dice que ese objeto tan simple fue sorprendentemente eficaz.
+==========================================================================================
+ID: parar_debate_emocion_agotamiento | ['scott_radical_candor']
+COND: Cuando en un debate de tu equipo la gente esta demasiado cansada, quemada o cargada de emocion como para discutir de forma productiva.
+ENTR: El debate aplazado hasta que la gente este en mejor disposicion, sin decision tomada por agotamiento y sin la pelea que habria estallado.
+   1 | Manten la conciencia puesta en estos momentos, porque el texto dice que es crucial y que rara vez llevan a un buen resultado.
+   2 | Cuando los detectes, interven y pide tiempo muerto.
+   3 | Cuenta con lo que pasa si no lo haces: la gente tomara una decision solo para poder irse a casa, o peor, estallara una pelea enorme salida de la emocion en carne viva.
+   4 | Aplaza el debate hasta que la gente este en mejor disposicion de animo.
+   5 | Para poder detectarlo, conoce a cada persona de tu equipo lo bastante bien: el texto dice que si lo has hecho, seras suficientemente consciente de las emociones y las energias de cada uno como para saber cuando hace falta interven
+==========================================================================================
+ID: fijar_fecha_cierre_debate_equipo | ['scott_radical_candor']
+COND: Cuando media sala espera una decision al final de la reunion y la otra media quiere seguir discutiendo en otra, o cuando el debate se ha vuelto tan doloroso que todos te miran a ti para que lo cierres.
+ENTR: Cada asunto en debate con su fecha de decidir al lado, las reuniones de debate y las de decision separadas, y la decision en manos de quien la estaba llevando y no arrebatada por el jefe.
+   1 | Cuenta con la causa que el texto pone al estres del debate: a menudo media sala espera una decision al final de la reunion y la otra media quiere seguir discutiendo en una reunion posterior.
+   2 | Separa las reuniones de debate de las reuniones de decision.
+   3 | Pon al lado de cada asunto que se debate una fecha de decidir, para que al menos se sepa cuando acaba el debate y cuando se va a tomar la decision.
+   4 | Monta una reunion semanal de gran debate, identificando cada semana cual es el debate mas importante y quien tiene que estar en el.
+   5 | Resiste el impulso de cerrar el debate y decidir demasiado pronto cuando se vuelve doloroso, que es justo cuando la gente mira al jefe para que acabe con el sufrimiento.
+   6 | Cuenta con lo que el texto dice que es a menudo el trabajo del jefe: mantener el debate vivo en vez de resolverlo con una decision.
+   7 | Cuenta con lo que se pierde si lo cortas: el texto dice que son los debates del trabajo los que hacen crecer a cada uno y los que hacen que el equipo funcione mejor en conjunto para llegar a la mejor respuesta.
+   8 | Si el debate te parece demasiado agrio, preguntale a quien lo esta llevando como puedes ayudarle.
+   9 | Sugiere por ejemplo que las personas cuyas diferencias le cuesta reconciliar lo cierren durante una comida o un paseo.
+   10 | O sugiere que cambien de papel y defienda cada uno la posicion del otro.
+   11 | No le arrebates la decision para tomarla tu: el texto dice de esa jugada suya que no solo fue prepotente, es que ademas no funciono.
+==========================================================================================
+ID: repartir_decision_cercanos_hechos | ['scott_radical_candor']
+COND: Cuando en tu equipo las decisiones las estas tomando tu, o las toma el mas veterano de la sala, y no quien tiene delante los hechos.
+ENTR: Un proceso de decision claro en el que deciden los que estan mas cerca de los hechos, con las decisiones apoyadas en hechos y con gente dispuesta a ejecutarlas porque participo en ellas.
+   1 | Mete las decisiones en los hechos, o trae los hechos a las decisiones, y deja el ego fuera, empezando por el tuyo.
+   2 | No des por hecho que ser jefe te convierte en el que decide. El texto lo dice con el ejemplo de George W. Bush, que dijo yo soy el que decide y parecia ser el unico que no sabia que no lo era.
+   3 | Cuenta con la averia que James March llama decidir a bote de basura: deciden los que por casualidad estan alrededor de la mesa, en vez de los que tienen la mejor informacion.
+   4 | Cuenta con que la mayoria de las culturas tienden a favorecer o a los mas veteranos o a los que tienen la clase de caracter que insiste en sentarse a la mesa, y que las malas decisiones que salen de ahi estan entre las mayores cau
+   5 | En vez de decidir tu, crea un proceso de decision claro que de poder a los que estan mas cerca de los hechos para tomar tantas decisiones como sea posible.
+   6 | Cuenta con lo que el texto dice que se gana con eso: no solo mejores decisiones, tambien mejor animo.
+   7 | Si sospechas que alguien de tu equipo esta decidiendo por todos, ve a su reunion y mira a la sala, no al que habla. La autora vio hombros caidos, brazos cruzados, caras de piedra y un silencio tan alto que atravesaba el discurso b
+   8 | Cuando veas eso, haz la pregunta a la sala que abre la conversacion. La autora pregunto: si Mark no hubiera decidido estos objetivos, que habriais planeado hacer vosotros el trimestre que viene.
+   9 | Da la vuelta a la mesa hasta oir a todo el mundo, y convoca de nuevo al dia siguiente.
+   10 | Comprueba las tres cosas que el texto pone como el diagnostico de ese caso: si las decisiones estan apoyadas en los hechos, si alguien va a ejecutarlas aunque fueran las correctas, y si el jefe esta en peligro de perder a su equip
+   11 | Cuenta con que saltarse escuchar, clarificar, debatir y decidir para ir directo a persuadir es un error corriente que no se limita a los jefes nuevos.
+==========================================================================================
+ID: pedir_hechos_decision_evitar_recomendaciones | ['scott_radical_candor']
+COND: Cuando estas reuniendo informacion para tomar una decision y te sale solo preguntar a la gente que cree que deberiais hacer.
+ENTR: La informacion de la decision reunida en forma de hechos, sin recomendaciones que nadie tenga despues que defender como suyas.
+   1 | Resiste la tentacion de pedir recomendaciones, que es la forma en que sale sola la pregunta: tu que crees que deberiamos hacer.
+   2 | Pide en su lugar hechos, no recomendaciones, que es lo que una directiva de Apple le recomendo a la autora.
+   3 | Cuenta con el motivo que esa directiva puso: la gente tiende a meter su ego en una recomendacion de una manera que puede llevar a la politica, y con ella a peores decisiones.
+   4 | Cuenta tambien con el limite que el propio texto le pone: los hechos vienen teñidos del punto de vista particular de cada uno.
+   5 | Pidelos igual, porque un hecho tiene menos probabilidad que una recomendacion de convertirse en una raya en el suelo.
+==========================================================================================
+ID: persuadir_emocion_oyente_no_propia | ['scott_radical_candor']
+COND: Cuando ya hay una decision tomada, quedan personas que no la comparten y son justo las que tienen que ayudar a ejecutarla.
+ENTR: La decision aceptada por gente que no participo en tomarla, con sus emociones atendidas por su nombre y no solo la logica explicada.
+   1 | No esperes que nadie ejecute una decision sin haber sido persuadido de que es lo correcto: el texto dice que esa es una receta para resultados terribles.
+   2 | No te imagines que puedes entrar y decirle a todo el mundo que se ponga detras de la decision, la hayas tomado tu o la haya tomado otro.
+   3 | Cuenta con que explicar la decision no basta, porque eso solo atiende a la logica.
+   4 | Atiende ademas a las emociones de quien te escucha.
+   5 | No des por supuesto que tu conexion emocional con la decision hace el trabajo: puedes tener una conexion fuerte, y si no tienes en cuenta tambien las emociones de quien escucha, no vas a persuadir.
+   6 | Preguntate por las emociones concretas del otro lado, que es lo que la autora le pregunto a Jason: como estaban las emociones en el equipo de ingenieria. La respuesta era que estaban agotados, llevaban semanas de noches en blanco.
+   7 | Y preguntate despues que has hecho tu para atender esas emociones, que es la segunda pregunta que la autora le hizo y donde Jason se dio un golpe en la frente.
+   8 | Cuando la decision vaya a sentarle mal a un grupo, reconoce por delante su incredulidad en vez de liderar solo con la logica, que es lo que hizo Steve Jobs con el titular de se helo el infierno al anunciar iTunes para Windows.
+   9 | Y tomate en serio su respuesta emocional tranquilizandoles sobre lo que no va a cambiar, que es lo que el mismo anuncio hizo al asegurar que Apple seguiria fiel a lo suyo.
+   10 | Cuenta con que el humor calido conecta con las emociones y gana confianza, que es lo que hacia a Dick Costolo persuasivo en las reuniones generales de Twitter.
+   11 | Si no se te da el humor, busca la ayuda que el propio Dick recomendaba a otros lideres: clases de improvisacion, para encontrar la manera de pasarlo bien contestando las preguntas incomodas en vez de temerlas.

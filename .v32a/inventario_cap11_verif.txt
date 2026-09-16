@@ -1,0 +1,7 @@
+FICHEROS DE scott_radical_candor QUE MENCIONAN cap_11
+  en _insertados : 13
+  en bandeja     : 4
+  TOTAL          : 17
+
+  de ellos, cuya UNIDAD DE ORIGEN declarada es cap_11.md:
+    SI: 16   NO: 1  -> ['integrar_peticion_critica_rutina_existente']

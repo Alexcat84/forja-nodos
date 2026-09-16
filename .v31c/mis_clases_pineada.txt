@@ -1,0 +1,127 @@
+MIS CLASES, ESCRITAS A CIEGAS ANTES DE DESTAPAR NINGUNA RAZON DE bitacora/VEREDICTOS.jsonl
+apertura ciega de la vuelta 31, auditor. Fuente de mi lectura: fuentes/scott_radical_candor/cap_11.md
+(333 lineas) mas los 17 ficheros de candidato de cap_11 y los nodos del grafo que les hacen de vecino.
+
+C1  montar_reuniones_solas_mentalidad_frecuencia  vs  dirigir_reunion_individual_semanal (zhuo)
+    MI CLASE: NO ES DUPLICADO. Lo que queda fuera del solape es procedimiento en los dos lados:
+    aquel pone las cuatro ideas de preparacion y el criterio de si sirvio; este pone la aritmetica
+    de capacidad del jefe (cincuenta minutos, cinco horas, cinco personas) que decide cuantas
+    personas puede tener a cargo, la cuenta de cancelaciones y el protocolo de agenda.
+
+C2  montar_reuniones_solas_mentalidad_frecuencia  vs  preguntar_conducir_reunion_individual (zhuo)
+    MI CLASE: NO ES DUPLICADO. Aquel son once preguntas en tres grupos; este monta la reunion.
+
+C3  preguntar_seguimiento_hallar_huecos  vs  preguntar_conducir_reunion_individual (zhuo)
+    MI CLASE: NO ES DUPLICADO. Mismo genero (preguntas para una reunion a solas), inventarios
+    distintos y propositos escritos distintos: aquel identifica-entiende-apoya; este ensenia
+    escucha y saca el hueco entre lo que se hace, lo que se cree que se debe y lo que se quiere.
+
+C4  preguntar_seguimiento_hallar_huecos  como NODO PROPIO y no paso de montar_reuniones_solas
+    MI CLASE: NODO PROPIO, SOSTENIDO, PERO LA RAZON ESCRITA EN EL RESUMEN DE LA MADRE ES DEMASIADO
+    ANCHA. El resumen de montar_reuniones_solas funde cuatro rotulos porque la linea 45 los
+    encadena ella misma. Leida al pie de la letra, la linea 45 encadena SIETE rotulos: Mind-set,
+    Frequency, Show up!, Your direct report agenda, Some good follow-up questions, Encourage new
+    ideas in the 1:1 y Signs you get from 1:1s. Los tres ultimos salieron en nodo propio. El
+    corte lo sostengo por condicion y entregable distintos, NO por la cadena de la linea 45.
+
+C5  nutrir_ideas_nuevas_reunion_solas  vs  crear_espacio_seguro_madurar_ideas_nuevas (cap_07)
+    MI CLASE: CONTINUA. El paso 12 de la madre ya dice que trates tus reuniones semanales a solas
+    como ese sitio seguro; la hija anade las seis preguntas literales de las lineas 103 a 113 y el
+    objeto nuevo de aclarar la comprension de la persona a quien hay que comunicar la idea.
+    ARISTA madre > hija: SI, y es la que estaba en cola.
+
+C6  leer_seniales_fallo_jefe_reunion_solas
+    MI CLASE: PROCEDIMIENTO, no advertencia. Cinco senales nombradas una a una y tres de ellas con
+    su acto escrito (pedir explicitamente las malas noticias, redirigir el uso del tiempo, la frase
+    literal para el que llega sin agenda). Es diagnostico con remedio, no postura.
+
+C7  conducir_reunion_equipo_agenda_tres_bloques  vs  dirigir_reunion_revision_trabajo /
+    dirigir_reunion_informativa (zhuo)
+    MI CLASE: NO ES DUPLICADO. Aquellas son reuniones por proposito; esta es la reunion de equipo
+    con su agenda de tres bloques y sus tiempos (20, 15, 30).
+
+C8  escribir_apuntes_sala_estudio_equipo  como NODO PROPIO y no paso de conducir_reunion_equipo
+    MI CLASE: NODO PROPIO. Trae protocolo propio entero (cinco a siete minutos para escribir tres a
+    cinco cosas, cinco a siete para leer, prohibicion de conversaciones laterales, documento
+    compartido, publico si eres jefe de jefes, documento confidencial acotado).
+    ARISTA conducir_reunion_equipo > escribir_apuntes: SI, el bloque Listen de la agenda la nombra.
+
+C9  montar_reunion_gran_debate  vs  centrar_debate_ideas_fuera_egos (cap_07)
+    MI CLASE: NO ES DUPLICADO POR LA VARA, PERO ES EL PAR MAS DISCUTIBLE DEL TRAMO Y LO MARCO.
+    Dos procedimientos aparecen en los dos nodos: dejar los egos en la puerta y cambiar de papel a
+    mitad del debate. En cap_07 son los pasos 8, 9 y 10 de centrar_debate_ideas_fuera_egos; en
+    cap_11 son los pasos 10 y 12 de montar_reunion_gran_debate. Lo que queda fuera es procedimiento
+    en los dos lados (alli, intervenir cuando aparece el ego y redirigir a los hechos; aqui, los
+    tres propositos, la logistica de convocatoria y el producto unico del debate), asi que por la
+    seccion 6.1 no es duplicado. QUIERO VER QUE VEREDICTO SE LE PUSO A ESTE PAR.
+
+C10 montar_reunion_gran_decision  vs  dirigir_reunion_decision (zhuo) y vs
+    repartir_decision_cercanos_hechos (cap_07)
+    MI CLASE: NO ES DUPLICADO con ninguno. El de zhuo pone cuatro rasgos y cinco malos resultados;
+    el de cap_07 decide QUIEN decide; este pone la mecanica de la reunion (decisor, notas, caracter
+    final de la decision, veto y su uso con cuentagotas).
+
+C11 montar_reunion_general_presentaciones_preguntas  vs  dirigir_reunion_informativa (zhuo) y vs
+    persuadir_emocion_oyente_no_propia (cap_07)
+    MI CLASE: NO ES DUPLICADO. Aquel duda de si la reunion debe existir y pone cuatro logros; este
+    pone el corte de tamanio (diez o menos no hace falta, cien o mas si) y las dos partes.
+
+C12 pelear_proliferacion_reuniones_bloquear_ejecucion  vs  reservar_calendario_tiempo_ejecutar
+    MI CLASE: CONTINUA, y la arista madre > hija es la que mi propia ACTA 29 6.1 adjudico con
+    fecha de caducidad. La hija anade los tres remedios que el libro prueba y descarta (quitar
+    sillas, dia sin reuniones, terminar antes el 25 por ciento), la solucion de combatir fuego con
+    fuego y el encargo al equipo.
+
+C13 pelear_proliferacion (paso 7)  >  bloquear_tiempo_pensar_calendario
+    MI CLASE: NO ES ARISTA, Y LO DIGO PORQUE LA LEVANTE YO LEYENDO. El paso 7 nombra el tiempo
+    para pensar (por la misma razon por la que bloqueaste el tiempo para pensar, linea 233), pero
+    no lo ENUMERA como parte suya ni la hija despliega ese paso: es una cita de precedente. D.29
+    pide una lectura argumentada y aqui la lectura dice que no.
+
+C14 decidir_quien_comunica_cada_cuanto  como CABEZA del capitulo
+    MI CLASE: PROCEDIMIENTO, SOSTENIDO PERO FINO. Sus pasos 1 a 5 salen enteros de la linea 15 y
+    ordenan algo (minimizar duracion, frecuencia y numero de asistentes; empezar por la reunion a
+    solas). Su paso 6 NO ES PROCEDIMIENTO: es la lista de rotulos de las lineas 17 a 35, y nombrar
+    no es procedimentar (seccion 6.1). El nodo se sostiene sobre los pasos 1 a 5.
+
+C15 LAS ARISTAS DE LA CABEZA. El paso 6 nombra DIEZ rotulos. Mi cuenta por lectura:
+    1:1 Conversations          -> montar_reuniones_solas_mentalidad_frecuencia     EN EL GRAFO
+    Staff Meetings             -> conducir_reunion_equipo_agenda_tres_bloques      EN EL GRAFO
+    Think Time                 -> bloquear_tiempo_pensar_calendario                EN EL GRAFO
+    Big Debate Meetings        -> montar_reunion_gran_debate                       EN EL GRAFO
+    Big Decision Meetings      -> montar_reunion_gran_decision                     EN EL GRAFO
+    All-Hands Meetings         -> montar_reunion_general_presentaciones_preguntas  EN EL GRAFO
+    Meeting-Free Zones         -> SIN NODO Y SIN CUERPO: el rotulo vive solo en la lista de la
+                                  linea 29 y el capitulo no le escribe seccion. NO SE CABLEA.
+    Kanban Boards              -> montar_tablero_kanban_medir_actividades          EN BANDEJA
+    Walk Around                -> pasear_organizacion_hallar_problemas_pequenios   EN BANDEJA
+    Be Conscious of Culture    -> recorrer_rueda_conscientemente_cultura_equipo    EN EL GRAFO
+    MI CLASE: SON SIETE LOS CABLEABLES HOY Y NO SEIS. El decimo rotulo, Be Conscious of Culture,
+    tiene su nodo EN EL GRAFO desde antes de esta vuelta (lineas 271 a 299 y 307 a 333), y la
+    arista decidir_quien_comunica_cada_cuanto > recorrer_rueda_conscientemente_cultura_equipo NO
+    ESTA CABLEADA. Es la misma figura D.29 con la que se cablearon las otras seis.
+    Y NO LA TAPA debatir_decidir_asuntos_cultura_evitar_delegar, que espera en bandeja: ese es el
+    rotulo interior Debate and decide explicitly de las lineas 301 a 305, no la seccion entera.
+    ES D.29 Y NO D.37 porque la lista de las lineas 17 a 35 no dice cuantos rotulos tiene.
+
+C16 LOS TRES DE CAP_11 QUE SIGUEN EN BANDEJA
+    montar_tablero_kanban_medir_actividades: PROCEDIMIENTO. Lineas 235 a 249, con el inventario de
+      medios literal (tablero, tres columnas nombradas, notas de color, el acto de moverlas).
+    pasear_organizacion_hallar_problemas_pequenios: POR ADJUDICAR hasta leerlo entero.
+    debatir_decidir_asuntos_cultura_evitar_delegar: NODO PROPIO Y NO PASO, y es corte discutible.
+      Su condicion es el momento en que te tienta delegar, y su entregable es ese asunto decidido
+      por ti; la seccion madre entrega tus conductas revisadas. Ademas trae inventario propio (los
+      asuntos nombrados uno a uno en la linea 303).
+
+C17 FIDELIDAD D.30 DEL TRAMO DE ONCE
+    MI LECTURA: CERO PUENTES. Lei los pasos de los once nodos contra sus lineas y comprobe una a
+    una las cifras que llevan (20, 15 y 30 minutos de la agenda; veinte personas; cinco a siete
+    minutos y tres a cinco cosas; diez o menos y cien o mas; el 25 por ciento; cincuenta minutos,
+    cinco horas, cinco personas, veinticinco minutos, diez y veinte personas a cargo, dos o tres de
+    cada trece, siete u ocho y tres o cuatro por trimestre). Las catorce preguntas de
+    preguntar_seguimiento son catorce en el libro; las seis de nutrir_ideas son seis; las cinco
+    senales de leer_seniales son cinco; los tres propositos del gran debate son tres.
+    LA UNICA FRASE QUE NO ES LITERAL: el paso 6 de decidir_quien_comunica llama a los diez rotulos
+    las herramientas que el texto enumera para sacar cosas adelante juntos. La lista de las
+    lineas 17 a 35 no lleva esa frase delante: la frase sale del subtitulo del capitulo, linea 9.
+    Es un empalme de dos sitios, no un paso inventado, y lo dejo marcado.

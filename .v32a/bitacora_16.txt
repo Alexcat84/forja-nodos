@@ -1,0 +1,20 @@
+LAS 16 LINEAS NUEVAS (376 a 391), por operacion:
+  376: CONTINUA  | arista declarada por lectura (D.37)    | bloquear_tiempo_pensar_calendario vs cuidarse_agotamiento_centro_rueda
+  377: SANO      | (sin operacion)                        | decidir_quien_comunica_cada_cuanto vs construir_confianza_equipo_tiempo_solas
+  378: CONTINUA  | arista declarada por lectura (D.37)    | montar_reuniones_solas_mentalidad_frecuencia vs decidir_quien_comunica_cada_cuanto
+  379: SANO      | (sin operacion)                        | preguntar_seguimiento_hallar_huecos vs calibrar_normalidad_preguntas_jefe
+  380: CONTINUA  | (sin operacion)                        | nutrir_ideas_nuevas_reunion_solas vs crear_espacio_seguro_madurar_ideas_nuevas
+  381: CONTINUA  | arista declarada por lectura (D.37)    | conducir_reunion_equipo_agenda_tres_bloques vs decidir_quien_comunica_cada_cuanto
+  382: CONTINUA  | arista declarada por lectura (D.37)    | escribir_apuntes_sala_estudio_equipo vs conducir_reunion_equipo_agenda_tres_bloques
+  383: SANO      | (sin operacion)                        | montar_reunion_gran_debate vs montar_reunion_gran_decision
+  384: CONTINUA  | arista declarada por lectura (D.37)    | montar_reunion_gran_debate vs decidir_quien_comunica_cada_cuanto
+  385: SANO      | (sin operacion)                        | montar_reunion_gran_decision vs montar_reunion_gran_debate
+  386: SANO      | (sin operacion)                        | montar_reunion_gran_decision vs nutrir_ideas_nuevas_reunion_solas
+  387: SANO      | (sin operacion)                        | montar_reunion_gran_decision vs dirigir_reunion_decision
+  388: CONTINUA  | arista declarada por lectura (D.37)    | montar_reunion_gran_decision vs decidir_quien_comunica_cada_cuanto
+  389: CONTINUA  | arista declarada por lectura (D.37)    | montar_reunion_general_presentaciones_preguntas vs decidir_quien_comunica_cada_cuanto
+  390: CONTINUA  | arista declarada por lectura (D.37)    | pelear_proliferacion_reuniones_bloquear_ejecucion vs reservar_calendario_tiempo_ejecutar
+  391: CONTINUA  | arista declarada por lectura (D.37)    | bloquear_tiempo_pensar_calendario vs decidir_quien_comunica_cada_cuanto
+
+    9  arista declarada por lectura (D.37)
+    7  (sin operacion)

@@ -1,0 +1,9 @@
+LA COLA DE ARISTAS, CONTADA DE SU SEDE (bitacora/VEREDICTOS.jsonl)
+  linea  265: recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo   CABLEADA=True
+  linea  279: crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas       CABLEADA=True
+  linea  333: minimizar_impuesto_colaboracion_equipo > proteger_tiempo_equipo_jefe                CABLEADA=True
+  linea  371: desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario  CABLEADA=False
+
+  arista_en_cola escritas : 4
+  ya cableadas            : 3
+  ABIERTAS                : 1

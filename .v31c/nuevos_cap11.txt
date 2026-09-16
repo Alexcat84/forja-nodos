@@ -1,0 +1,170 @@
+==========================================================================================
+ID: decidir_quien_comunica_cada_cuanto
+COND: Cuando te toca decidir que reuniones hay en tu equipo, quien va a cada una y cada cuanto, y quieres que la comunicacion fluya sin que las reuniones se coman el tiempo de todos.
+ENTR: El mapa de quien se comunica con quien y cada cuanto, con cada reunion puesta con su duracion, su frecuencia y el minimo de personas a las que hace falta que asistan.
+PREV: []  SIG: ['montar_reuniones_solas_mentalidad_frecuencia', 'conducir_reunion_equipo_agenda_tres_bloques', 'montar_reunion_gran_debate', 'montar_reunion_gran_decision', 'montar_reunion_general_presentaciones_preguntas', 'bloquear_tiempo_pensar_calendario']
+  1 | Asume como una de tus responsabilidades mas importantes para que todo siga moviendose sin roces: decidir quien necesita comunicarse con quien y con que frecuencia.
+  2 | Cuenta con lo que eso significa en la practica, y el texto lo dice en dos palabras: reuniones.
+  3 | Cuenta tambien con que toda reunion viene con un coste significativo, que el texto nombra: el tiempo.
+  4 | Minimiza por eso las tres cosas que el texto nombra una a una: la duracion, la frecuencia y el numero de personas a las que hace falta que asistan.
+  5 | Empieza por la que el texto llama la mas importante de todas estas reuniones: la reunion a solas con cada persona que te reporta directamente.
+  6 | Y ten delante las herramientas que el texto enumera para sacar cosas adelante juntos, que son las reuniones a solas, las reuniones de equipo, el tiempo para pensar, las reuniones de gran debate, las reuniones de gran decision, las reuniones generales, las zonas libres de reuniones, los tableros kanban, pasear por la organizacion y ser consciente de la cultura.
+==========================================================================================
+ID: preguntar_seguimiento_hallar_huecos
+COND: Cuando estas dentro de una reunion a solas y quieres ensenar que escuchas, que te importa y que quieres ayudar, y ademas sacar los huecos entre lo que la persona hace, lo que cree que deberia hacer y lo que quiere hacer.
+ENTR: Los huecos de esa persona identificados con sus palabras, y el asunto de otro equipo planteado por ella misma a ese equipo en vez de resuelto por ti.
+PREV: []  SIG: []
+  1 | Haz estas preguntas de seguimiento con el doble proposito que el texto les pone: ensenar no solo que estas escuchando sino que te importa y quieres ayudar, e identificar los huecos entre lo que la gente hace, lo que cree que deberia hacer y lo que quiere hacer.
+  2 | Pregunta: por que?
+  3 | Pregunta: como puedo ayudar?
+  4 | Pregunta: que puedo hacer, o dejar de hacer, que te facilitaria esto?
+  5 | Pregunta: que es lo que te desvela por la noche?
+  6 | Pregunta: en que estas trabajando en lo que no quieres trabajar?
+  7 | Pregunta: no quieres trabajar en ello porque no te interesa o porque crees que no es importante?
+  8 | Pregunta: que puedes hacer para dejar de trabajar en ello?
+  9 | Pregunta: en que no estas trabajando en lo que si quieres trabajar?
+  10 | Pregunta: por que no estas trabajando en ello?
+  11 | Pregunta: que puedes hacer para empezar a trabajar en ello?
+  12 | Pregunta: como te sientes respecto a las prioridades de los equipos de los que dependes?
+  13 | Pregunta: en que estan trabajando ellos que parezca poco importante o incluso contraproducente?
+  14 | Pregunta: que es lo que no estan haciendo y a ti te gustaria que hicieran?
+  15 | Pregunta: has hablado directamente con esos otros equipos de lo que te preocupa? Y si no, por que no?
+  16 | Y ten presente lo que el texto marca como nota importante sobre esa ultima: el objetivo aqui es animar a la gente a plantear el asunto directamente entre ellos, no resolverles el problema tu.
+==========================================================================================
+ID: nutrir_ideas_nuevas_reunion_solas
+COND: Cuando alguien de tu equipo trae una idea nueva a su reunion a solas contigo y todavia no esta clara ni lista para llevarla al equipo mas amplio.
+ENTR: La idea explicada con la claridad suficiente para llevarla al equipo mas amplio, y explicada de la manera que entiende cada persona a la que hay que comunicarsela.
+PREV: ['crear_espacio_seguro_madurar_ideas_nuevas']  SIG: []
+  1 | Ten en la cabeza, antes de entrar a una reunion a solas, la frase de Jony Ive que el texto cita: las ideas nuevas son fragiles.
+  2 | Trata esa reunion como un sitio seguro donde la gente pueda nutrir ideas nuevas antes de someterlas al empujon y el revolcon del debate.
+  3 | Ayudales con las dos cosas que el texto nombra: a aclarar lo que ellos mismos piensan de la idea, y a aclarar su comprension de las personas a las que tienen que comunicarsela.
+  4 | Cuenta con que la misma idea puede necesitar describirse de una manera para un ingeniero y de otra para un comercial.
+  5 | Pregunta: que necesitas para desarrollar mas esa idea, de manera que este lista para discutirla con el equipo mas amplio? Como puedo ayudarte?
+  6 | Pregunta: creo que tienes algo entre manos, pero todavia no me queda claro. Puedes intentar explicarmelo otra vez?
+  7 | Pregunta: vamos a pelearnos un poco mas con esto, te parece?
+  8 | Pregunta: entiendo lo que quieres decir, pero no creo que los demas lo entiendan. Como puedes explicarlo para que a ellos les resulte mas facil de entender?
+  9 | Pregunta: no creo que fulano vaya a entender esto. Puedes explicarlo otra vez para que quede mas claro especificamente para el?
+  10 | Pregunta: el problema es de verdad que ellos son demasiado tontos para entenderlo, o es que tu no lo estas explicando con la claridad suficiente?
+==========================================================================================
+ID: leer_seniales_fallo_jefe_reunion_solas
+COND: Cuando quieres las seniales tempranas de que estas fallando como jefe, y las buscas donde el texto dice que aparecen primero: en tus propias reuniones a solas.
+ENTR: Las seniales presentes en tus reuniones a solas identificadas una a una con lo que el texto dice que significan, y la accion que el texto encarga para las que la llevan.
+PREV: []  SIG: []
+  1 | Parte de para quien vale cada cosa: la reunion a solas vale a quien te reporta para compartir su pensamiento contigo y decidir en que direccion sigue su trabajo, y te vale a ti porque es ahi donde te llegan las primeras seniales de aviso de que estas fallando como jefe.
+  2 | Mira si hay cancelaciones: si la gente que te reporta cancela las reuniones a solas demasiado a menudo, es senial de que vuestra asociacion no les resulta fructifera, o de que la estas usando de forma inapropiada para soltar la critica que llevabas acumulando.
+  3 | Mira si lo que te dan son solo actualizaciones: si la gente se limita a darte cosas que podrian habersete mandado por correo, animales a usar ese tiempo de forma mas constructiva.
+  4 | Mira si solo oyes buenas noticias: si es asi, es senial de que la gente no se siente comoda trayendote sus problemas, o de que cree que no vas a hacer nada con ellos. En esos casos, pide explicitamente las malas noticias, y no dejes caer el asunto hasta que oigas alguna.
+  5 | Mira si nunca te critican: si nunca te critican, no eres lo bastante bueno consiguiendo guia de tu equipo. Acuerdate de esa frase, que puedo hacer o dejar de hacer que te facilitaria esto.
+  6 | Mira si llegan sin agenda: si vienen sistematicamente sin temas que tratar, puede significar que estan desbordados, que no entienden para que es esta reunion, o que no la consideran util. Se directo pero educado, con la frase que el texto escribe: este es tu tiempo, pero no pareces venir con mucho de que hablar. Puedes decirme por que?
+==========================================================================================
+ID: conducir_reunion_equipo_agenda_tres_bloques
+COND: Cuando conduces la reunion semanal con las personas que te reportan y quieres que sirva para algo, en vez de que la temas tu, la vean como perdida de tiempo los que van, y se sientan excluidos los que no.
+ENTR: La reunion semanal corrida con sus tres bloques y sus tiempos, el cuadro de mando revisado, y las una o dos decisiones y el debate mas importante de la semana identificados con su duenio, sin haberlos decidido ni debatido dentro.
+PREV: ['decidir_quien_comunica_cada_cuanto']  SIG: ['escribir_apuntes_sala_estudio_equipo']
+  1 | Cuenta con lo que el texto mide antes de darte la agenda: bien llevada, una reunion de equipo te ahorra tiempo porque te avisa de los problemas, comparte las actualizaciones con eficiencia y os deja a todos de acuerdo sobre cuales son las prioridades compartidas de la semana.
+  2 | Ponle los tres goles que el texto escribe: repasar como han ido las cosas la semana anterior, dejar que la gente comparta actualizaciones importantes, y forzar al equipo a aclarar cuales son las decisiones y los debates mas importantes de la semana que viene.
+  3 | Y para ahi: el texto dice que eso es todo, y que esta no es la reunion donde se debate ni donde se decide.
+  4 | Haz tu trabajo, que el texto define en tres actos: establecer una agenda constante, insistir en que la gente se cinia a ella, y cortar a quien se alarga demasiado o se va por las ramas.
+  5 | Monta la agenda con los tres bloques y sus tiempos: aprender, repasar los indicadores clave, veinte minutos.
+  6 | Escuchar, poner las actualizaciones en un documento compartido, quince minutos.
+  7 | Aclarar, identificar las decisiones y los debates clave, treinta minutos.
+  8 | En el bloque de aprender, pregunta que fue bien esa semana y por que, y que fue mal y por que.
+  9 | Monta para eso un cuadro de mando de indicadores clave, y el texto aclara que no significa un sistema sofisticadisimo montado por un departamento de informatica: significa una hoja de calculo con unos pocos numeros.
+  10 | Elige esos numeros con la pregunta que el texto da: cuales son las actividades y los resultados mas importantes que ves cada semana y que te dicen si vas camino de lograr tus objetivos.
+  11 | Disenia tu misma el cuadro de mando: el texto dice que no necesitas que te lo haga una infraestructura corporativa.
+  12 | Idealmente que se actualice solo; y si eso no es posible, asegurate de que cada persona que trabaja para ti actualice su parte la noche anterior a la reunion.
+  13 | Si hace falta, compruebalo tu y dales la lata hasta que metan sus actualizaciones.
+  14 | Si puedes, pon el cuadro de mando en un sitio donde lo vea el equipo entero.
+  15 | Y haz publicas casi siempre las notas de esa conversacion.
+  16 | En el bloque de aclarar, pregunta cuales son la una o dos decisiones mas importantes y el unico debate mas importante que tu equipo tiene que abordar esa semana.
+  17 | Si tu equipo es de menos de unas veinte personas, probablemente puedas limitarte a listarlos y decidir o debatir sobre la marcha.
+  18 | Si tu equipo es mas grande que unas veinte personas, ponte mas formal: pon esos temas en las agendas de reuniones separadas de gran decision y de gran debate, e identifica duenios para cada uno.
+  19 | Cuenta con que eso parece multiplicar reuniones y con lo que el texto responde: en realidad es la manera de sacarte a ti de reuniones y de que esten presentes los que quieren estar en esos debates y decisiones.
+  20 | Y deja que los duenios del debate y de la decision no sean ni tu ni la gente que te reporta, porque esas reuniones separadas son la manera de delegar debates y decisiones, y delegarlos los empuja hacia los hechos y evita el pensamiento jerarquico.
+  21 | Comunica al equipo mas amplio la agenda de esas dos reuniones, y deja que asista libremente quien quiera.
+  22 | Cuenta con lo que el texto dice que pasa entonces: al principio seran probablemente demasiado grandes, pero muy pronto la gente ira solo si de verdad quiere o necesita estar, porque odia mas asistir a reuniones que no le incumben que quedarse fuera de decisiones que si.
+==========================================================================================
+ID: escribir_apuntes_sala_estudio_equipo
+COND: Cuando quieres que todo el mundo sepa en que anda todo el mundo para poder senialar solapes y motivos de preocupacion, y ni te vale una reunion de horas ni te funciona que cada cual escriba sus apuntes por su cuenta.
+ENTR: Los apuntes de la semana de cada persona escritos y leidos dentro de la reunion, con las preguntas de seguimiento fuera de ella, en un documento compartido y publicos al equipo mas amplio si eres jefe de jefes.
+PREV: ['conducir_reunion_equipo_agenda_tres_bloques']  SIG: []
+  1 | Parte del problema que el texto pone: mantener a todos al tanto de lo que hacen los demas, para que puedan senialar zonas de preocupacion o de solape, sin gastar muchisimo tiempo en ello.
+  2 | Distingue las actualizaciones de los indicadores clave, porque el texto dice que no son lo mismo: las actualizaciones son cosas que nunca entrarian en el cuadro de mando, del tipo necesitamos cambiar los objetivos de este proyecto, estoy pensando en reorganizar, empiezo a pensar que tengo que despedir a fulano, o me tienen que operar el mes que viene y estare fuera tres semanas.
+  3 | No lo resuelvas con una reunion de equipo de varias horas para compartir esa clase de informacion, porque el texto dice que casi todo el mundo odia las reuniones largas.
+  4 | Y cuenta tambien con lo que le pasa al otro extremo, el documento publico donde cada cual apunta por su cuenta lo que hizo y lo que hara: en teoria es facil de usar y evita reuniones interminables, pero en la practica mucha gente se resiste enormemente a escribir sus apuntes, y cuando algunos no los hacen el sistema entero se viene abajo.
+  5 | Haz por eso lo que el texto dice que le funciono mucho mejor: hacer sitio para que lo hagais todos dentro de la reunion de equipo.
+  6 | Haz que cada persona se tome de cinco a siete minutos para escribir las tres a cinco cosas que ella o su equipo hicieron esa semana y que los demas necesitan saber.
+  7 | Y de cinco a siete minutos mas para leer las actualizaciones de todos los demas.
+  8 | No permitas conversaciones laterales: exige que las preguntas de seguimiento se traten despues de la reunion.
+  9 | Cuenta con lo que el texto dice que se juega en esa regla simple: ahorra cantidades enormes de tiempo perdido, y si no la pones, la mayor parte de la reunion seran dos o tres personas hablando mientras el resto mira sin interes.
+  10 | Hazlo en un documento compartido que varias personas puedan editar a la vez, y el texto nombra los sitios donde vale hacerlo.
+  11 | Si tu equipo no tiene portatiles ni telefonos, usa papel y boligrafo: cada cual apunta sus notas en un papel y luego hacedlos circular.
+  12 | Si eres jefe de jefes, haz publicos esos apuntes al equipo mas amplio.
+  13 | Y cuenta con lo que eso implica, que el texto dice a continuacion: entonces la gente no puede meter ahi cosas que hay que mantener confidenciales, como los problemas de desempenio de una persona o ajustes de salario que se estan contemplando.
+  14 | Si te hace falta, ten un documento de apuntes confidenciales para tu equipo, pero asegurate de que no haya demasiadas cosas ahi: la mayoria de lo que tratais deberia compartirse con el equipo mas amplio.
+==========================================================================================
+ID: montar_reunion_gran_debate
+COND: Cuando tu equipo tiene delante un asunto importante con mucho desacuerdo y hace falta discutirlo sin que nadie salga de ahi con una decision tomada.
+ENTR: El resumen cuidadoso de los hechos y los asuntos que salieron, una definicion mas clara de las opciones que hay por delante, y una recomendacion de seguir debatiendo o de pasar a decidir, enviados a todas las partes implicadas.
+PREV: ['decidir_quien_comunica_cada_cuanto']  SIG: []
+  1 | Reserva estas reuniones para lo que el texto dice: debate, pero no decisiones, sobre los asuntos mayores que tiene delante el equipo.
+  2 | Cuenta con el primero de los tres propositos que el texto les pone: bajan la tension. Parte de la friccion de muchas reuniones viene de que media sala cree que esta ahi para tomar una decision y la otra media para debatir; los que querian decidir se enfurecen porque los que debaten no van hacia una respuesta, y los que querian debatir se enfurecen porque los que deciden se niegan a pensarlo bien y a mirar todos los angulos. Cuando todo el mundo sabe que la reunion acabara sin decision, esa fuente de tension se elimina.
+  3 | Cuenta con el segundo: te permiten frenar decisiones clave cuando conviene. Cuando un tema es realmente importante y hay mucho desacuerdo, los equipos a veces se lanzan a decidir antes de haberlo pensado bien o de tener suficiente informacion; meter ese tema en la agenda de debate obliga al equipo a seguir peleandose con el, a desenterrar la informacion que falta, a buscar opinion experta o simplemente a pensarlo mas hondo.
+  4 | Cuenta con el tercero: alimentan una cultura de debate mas amplia. El debate deberia ocurrir constantemente en un equipo que funciona, y tener estas reuniones con regularidad y buscarles temas ayuda a construir el musculo y la tolerancia a la discusion y a la disension.
+  5 | Y cuenta con lo que el texto anade sobre esa tercera: cuando toca un debate de los que se juegan la empresa, es importante que las partes implicadas hayan participado antes en unos cuantos debates abiertos; y tener debates, incluso discusiones, con regularidad tambien baja la tension, porque evita las peleas explosivas. El texto lo apoya en el principio de la criticidad autoorganizada, que dice que muchas correcciones pequenias crean estabilidad y una sola correccion enorme crea catastrofe.
+  6 | Monta la logistica, que el texto dice que es bien simple: despues de tu reunion de equipo, manda el tema, el duenio y los participantes del gran debate al equipo mas amplio, si eres jefe de jefes, y tambien a la gente de otros equipos que trabaja con el tuyo.
+  7 | Deja que los unicos obligados a participar en el debate sean los que identificaste en la reunion de equipo.
+  8 | Pero deja que cualquiera pueda asistir u observar la reunion de gran debate.
+  9 | Haz que el duenio del debate nombre a alguien para tomar notas y mandarlas a todas las partes implicadas.
+  10 | Pon las normas, que el texto dice que tambien son sencillas: deja claro que todo el mundo tiene que dejar los egos en la puerta de esta reunion.
+  11 | Di cual es el objetivo del debate: trabajar juntos para dar con la mejor respuesta. No deberia haber ni ganadores ni perdedores.
+  12 | Pide a los participantes que se cambien los papeles a mitad de cada debate, que es la norma que el texto recomienda: asi te aseguras de que se estan escuchando unos a otros, y les ayuda a mantenerse centrados en dar con la mejor respuesta y a soltar sus egos y sus posiciones.
+  13 | Y no dejes que salga de ahi ninguna otra cosa, porque el texto dice que el unico producto del debate deberia ser un resumen cuidadoso de los hechos y los asuntos que emergieron, una definicion mas clara de las opciones que hay por delante, y una recomendacion de seguir debatiendo o de pasar a una decision.
+==========================================================================================
+ID: montar_reunion_gran_decision
+COND: Cuando hay que tomar una decision importante y quieres que quede claro que se esta decidiendo y no debatiendo, normalmente despues de una reunion de gran debate.
+ENTR: Un resumen cuidadoso de la reunion repartido a todas las partes implicadas, con la decision tomada y final, y tu veto puesto antes de que salgan las notas si es que lo pusiste.
+PREV: ['decidir_quien_comunica_cada_cuanto']  SIG: []
+  1 | Convocala normalmente despues de una reunion de gran debate, aunque el texto aclara que no siempre es asi.
+  2 | Cuenta con el primero de los dos papeles que el texto le da, que llama el obvio: tomar decisiones importantes.
+  3 | Cuenta con el segundo, que llama mas sutil: cuesta saber cuando dejar de debatir y empezar a decidir, y el texto dice que no ha encontrado ningun principio absoluto que responda a eso; el acto simple de ser explicito y consciente de cuando decides y cuando debates es lo que mas ayuda a saber cuando hace falta de verdad tomar una decision. El texto dice que esa es la razon principal por la que recomienda dos reuniones separadas.
+  4 | Ponle las mismas logisticas y las mismas normas que a la reunion de gran debate.
+  5 | Haz que dirija la reunion el decisor, que es a quien habras nombrado en tu reunion de equipo.
+  6 | Deja que los unicos obligados a asistir sean los identificados en la reunion de equipo, y que cualquiera pueda asistir.
+  7 | Haz que se tomen notas y que se pongan a disposicion de todas las partes implicadas.
+  8 | Egos en la puerta, y ni ganadores ni perdedores.
+  9 | Saca de ahi el producto que el texto le pone: un resumen cuidadoso de la reunion repartido a todas las partes implicadas.
+  10 | Y asegurate de que las decisiones son finales, porque el texto dice que si no siempre se apelaran y entonces seran debates y no decisiones.
+  11 | Acata tu las decisiones tomadas en estas reuniones igual que todos los demas.
+  12 | Si sabes que es un tema sobre el que tienes opiniones fuertes, o vas tu a la reunion, o le dices al decisor que tienes poder de veto.
+  13 | Si tienes poder de veto, haz que el decisor te mande la decision para que la apruebes o la rechaces antes de que las notas salgan mas ampliamente.
+  14 | Y usa ese poder con cuentagotas, porque el texto dice que si no las reuniones se volveran irrelevantes.
+==========================================================================================
+ID: montar_reunion_general_presentaciones_preguntas
+COND: Cuando tu equipo ha crecido lo bastante como para que las decisiones que se toman empiecen a parecer misteriosas o incluso turbias a quien no estuvo cerca del proceso.
+ENTR: La reunion general celebrada con sus dos partes, con las iniciativas presentadas por el equipo que las lleva y con el disenso oido y respondido de frente por quien dirige.
+PREV: ['decidir_quien_comunica_cada_cuanto']  SIG: []
+  1 | Mira primero si te hace falta, con el corte que el texto da: si tienes un equipo de diez personas o menos, probablemente no necesitas una reunion aparte para asegurarte de que todo el mundo esta persuadido de que se han tomado las decisiones correctas.
+  2 | Pero segun tu equipo se hace mas grande, empieza a pensar como te traes a todos contigo, porque el texto dice que es chocante lo rapido que las decisiones que toman algunos empiezan a parecerles misteriosas o incluso turbias a quienes no estuvieron cerca del proceso.
+  3 | Si tu equipo es de cien personas o mas, monta una reunion general con regularidad, que el texto dice que ayuda de verdad a conseguir respaldo amplio para las decisiones que se toman y tambien a enterarte del disenso.
+  4 | Montala con las dos partes que el texto dice que suelen incluir: presentaciones para persuadir a la gente de que la empresa esta tomando buenas decisiones y va en la direccion correcta, y un turno de preguntas y respuestas llevado de manera que quien dirige pueda oir el disenso y responderlo de frente.
+  5 | Cuenta con lo que el texto dice que pasa cuando se lleva bien: las respuestas que dan los que dirigen a esas preguntas, que a menudo son bastante incomodas, suelen persuadir mas que las presentaciones.
+  6 | Centra las presentaciones en una o dos iniciativas que sean especialmente emocionantes e importantes.
+  7 | Usalas para las dos cosas que el texto les pone: informar a todos de las prioridades mas amplias y conseguir su respaldo.
+  8 | Y haz que las presente el equipo que esta trabajando en la iniciativa, no tu: el texto dice que esa practica construia el musculo de persuadir en toda la empresa, y que a la gente normalmente le encantaba presentar en esas reuniones. Si tu equipo quiere el escenario, dale el escenario.
+  9 | Deja el turno de preguntas en manos de quien dirige la empresa o la fundo, porque es a ellos a quienes les toca responder esas preguntas a menudo desagradables, desafiantes o incomodas, y porque es asi como se enteran de lo que la gente piensa de verdad.
+  10 | Cuida como se responden esas preguntas, porque el texto dice que es enormemente importante para persuadir a mucha gente a la vez de que se estan tomando las decisiones correctas de la manera correcta.
+  11 | Y responde como el texto dice que respondian los dos fundadores que pone de ejemplo: aceptando toda clase de preguntas semana tras semana, sin ese tono sobrepreparado y sobremensajeado en el que caen a veces los que dirigen, con respuestas espontaneas, humanas y del todo autenticas, y volviendo a la reunion siguiente a recibir otra vez preguntas duras e incomodas.
+==========================================================================================
+ID: pelear_proliferacion_reuniones_bloquear_ejecucion
+COND: Cuando la rueda de sacar cosas adelante ha empezado a parecer la rueda de las reuniones del infierno, y la multiplicacion de reuniones amenaza con dejar a tu equipo y a ti sin capacidad de ejecutar.
+ENTR: Tiempo bloqueado en tu calendario para estar a solas y ejecutar, y tu equipo animado a bloquear el suyo, con los tres remedios que no cuajan descartados y dicho por que.
+PREV: ['reservar_calendario_tiempo_ejecutar']  SIG: []
+  1 | Reconoce el sintoma que el texto nombra: si no tienes cuidado, la multiplicacion de reuniones puede de verdad frenar en seco tu capacidad de ejecutar, tanto como persona como equipo.
+  2 | Asume que ser implacable en asegurarte de que tu equipo tiene tiempo para ejecutar es una de las cosas mas importantes que puedes hacer como jefe.
+  3 | Ten delante el primer remedio que el texto cuenta que no cuaja, quitar las sillas de las salas de reunion: el texto reconoce que en teoria acorta las reuniones porque casi nadie aguanta de pie mas de una hora, que hay investigacion que dice que la gente es mas creativa de pie que sentada, que hay quien dice que estar sentado es el nuevo fumar, y que ademas te ahorras el mobiliario, y aun asi cuenta que nunca funciona de verdad y que no conoce ninguna empresa que se haya mantenido en ello.
+  4 | Ten delante el segundo, declarar un dia de la semana sin reuniones: el texto cuenta que distintos equipos lo intentaron y que ninguno fue capaz de sostenerlo.
+  5 | Y ten delante el tercero, ponerse el objetivo de terminar antes de tiempo una cuarta parte de tus reuniones: el texto cuenta que le encanto la idea y que no cree que quien se la puso llegara nunca a cumplirla.
+  6 | Haz en cambio lo que el texto dice que es la solucion mas eficaz: combatir fuego con fuego.
+  7 | Bloquea en tu calendario tiempo para estar a solas y ejecutar, por la misma razon por la que bloqueaste el tiempo para pensar.
+  8 | Y anima a los demas a hacer lo mismo, porque el texto dice que eso les ayudo a decir que no a mas reuniones innecesarias.

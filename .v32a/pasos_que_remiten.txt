@@ -1,0 +1,65 @@
+pasos_accionables barridos en dataset/nodos.jsonl : 2156
+pasos que casan el patron 'el texto/libro NOMBRA/ENUMERA los...' : 21
+
+  dar_opinion_critica_directa_desapasionada  paso 1:
+    Cuenta con que el como importa enormemente, porque el mismo punto se puede transmitir de una docena de formas variando las palabras, el tono o el lenguaje corporal, y el libro pone cinco en fila para que las compares.
+
+  dirigir_reunion_individual_semanal  paso 7:
+    Para prepararla el libro da cuatro ideas con las que empezar. La primera, discutir las prioridades de mas arriba: cuales son los uno, dos o tres resultados mas criticos para tu persona a cargo, y como puedes ayudarla a atacar esos retos.
+
+  establecer_dinamica_nueva_antiguos_pares  paso 1:
+    Cuenta con que se hace raro establecer una dinamica nueva con tus antiguos pares: antes eras un contribuidor individual mas del equipo y ahora eres el jefe, asi que la relacion con tus companieros puede sentirse alterada. El libro nombra tres cosas que a la autora se le hicieron dificiles al empezar
+
+  ejecutar_embudo_reclutamiento_escala  paso 7:
+    Busca ademas oportunidades de hacer tu embudo mas eficiente, y el libro da las preguntas con las que se buscan: puedes retocar tu correo inicial para que resulte mas atractivo y te responda mas gente? Puedes organizar eventos para que los candidatos potenciales quieran mas venir a entrevistarse? Pue
+
+  ligar_tareas_proposito_organizacion  paso 5:
+    Desconfia de confundir tu proposito con los indicadores que usas para medir tu avance. El libro pone el caso: si te importa dar el mejor servicio al cliente del sector, un dato que podrias seguir es cuanto se tarda en resolver una queja, y podrias fijar como meta que ninguna queja tarde mas de tres 
+
+  partir_meta_grande_hitos  paso 5:
+    Trata los proyectos grandes como una serie de proyectos pequenios. El libro pone el ejemplo del arquitecto que construye una casa: el primer hito puede ser hacer un estudio del terreno para tener la informacion mas exacta sobre topografia, condicion del suelo y riesgo de inundacion; el segundo, iden
+
+  priorizar_pocas_cosas_bien  paso 8:
+    Cuenta con que el esfuerzo no cuenta y lo que importa son los resultados. El libro pone el caso: cuando su casa lanzo en 2005 una forma de subir fotos personales, el producto era pobrisimo al lado del que era entonces el patron oro, que estaba lleno de funciones, fotos de alta resolucion, modo de pa
+
+  involucrar_varios_entrevistadores  paso 2:
+    Reparte las preguntas para que cada entrevistador pregunte cosas distintas, de manera que el grupo salga con una perspectiva redonda. El libro pone el ejemplo de contratar a un responsable de finanzas: un entrevistador puede evaluar habilidades de gestion y de colaboracion, otro hacer preguntas deta
+
+  contrastar_cultura_actual_aspirada  paso 7:
+    Cuenta con que, segun lo que este dentro de tu control, algunas de tus aspiraciones seran posibles y otras poco realistas. El libro pone el caso: si quieres que tu equipo opere con concentracion absoluta y cero distracciones, preferirias que se sentaran en una zona apartada y evitaran tratar con otr
+
+  revisar_incentivos_trampas_equipo  paso 2:
+    Si los incentivos no casan, cava mas hondo para entender que esta mandando ese mensaje. El libro pone el caso: te importa mucho operar con transparencia, y tu equipo cree que le ira mejor si te oculta informacion importante.
+
+  equilibrar_elogio_critica_equipo  paso 3:
+    No apliques un ratio fijo de elogio a critica. El texto nombra los que circulan, tres a uno, cinco a uno y hasta siete a uno, y dice por que la nocion de un ratio correcto es peligrosa: te lleva a decir cosas antinaturales, insinceras o directamente ridiculas, del estilo de alabar la tipografia de u
+
+  elogiar_trabajo_especifico_contexto  paso 1:
+    Di por que admiras lo que admiras, y no te quedes en el hecho. El texto pone el caso de un elogio suyo que se quedo en decir a su socio que admiraba que fuera entrenador de un equipo infantil, sin decir por que, y lo llama vago e inutil.
+
+  elogiar_trabajo_especifico_contexto  paso 7:
+    No copies y pegues las justificaciones que te mandan sin leerlas. El texto pone el correo de un jefe que felicito a setenta personas de un equipo de seiscientas pegando lo que le habian mandado sus jefes, y que en una de esas lineas publico el sueldo de una persona, que estaba cincuenta por ciento p
+
+  descubrir_motivacion_sentido_persona  paso 7:
+    Cuenta con que la persona que ya tiene su propia forma de encontrar sentido no la necesita de ti. El texto pone el caso de una joven que habia estudiado filosofia y que corto en seco el eslogan de su jefa diciendo que el trabajo era un poco aburrido, que habia que admitirlo, que no pasaba nada, y qu
+
+  despedir_persona_franqueza_radical  paso 3:
+    Para llegar con la cabeza en el sitio correcto, primer recordatorio: acuerdate de un trabajo en el que tu fuiste malo y piensa en lo contento que estas de no estar ya en el. El texto pone el suyo, un verano de cajera de banco haciendo mal las cuentas de cabeza, y lo que su jefa hizo, que fue no desp
+
+  reconocer_recompensar_gente_estable  paso 12:
+    Cuenta con las dos formas de promocion mala que el texto describe: la que sube a la gente por encima de su nivel de competencia, y la de quien si es competente para el puesto siguiente pero no lo desea en ese momento de su vida. El texto pone el caso del colega que habia planificado tener su primer 
+
+  revisar_cinco_causas_mal_desempenio  paso 9:
+    Cuarta causa, problema personal: a veces alguien que iba lanzado deja de rendir de golpe porque esta pasando algo en su vida. Si el problema es temporal, lo mejor es simplemente darle el tiempo que necesita para volver a la via. El texto pone el ejemplar de lo que recibio ella misma en una crisis fa
+
+  revisar_cinco_causas_mal_desempenio  paso 11:
+    Cuando sea esa, cuenta con lo que el texto dice sin rodeos: si no pueden cambiar ni la cultura ni la persona, lo mejor es separarse, porque en general un problema de encaje cultural no se arregla. El texto pone el caso de quien triunfo en una empresa cuya cultura era lanzar y corregir y perdio su cr
+
+  subir_vara_calidad_equipo  paso 5:
+    Antes de empujar, conoce a la persona lo bastante como para entender por que no esta prosperando. El texto da la excepcion expresa: si simplemente esta pasando una mala racha, es mejor darle el tiempo y el espacio para recuperarse que pedirle mas de lo que puede dar en ese momento.
+
+  explicar_idea_facil_comprender_oyente  paso 12:
+    Cambia esas tres elecciones cuando cambie el publico: el texto pone el mismo asunto del trabajo contado a tu abuela y contado a tu jefe, y dice que probablemente sera al reves.
+
+  escribir_apuntes_sala_estudio_equipo  paso 10:
+    Hazlo en un documento compartido que varias personas puedan editar a la vez, y el texto nombra los sitios donde vale hacerlo.
