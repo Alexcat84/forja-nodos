@@ -1,0 +1,66 @@
+ADUANA DE INSERCION, candidato 'bloquear_tiempo_pensar_calendario'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (255 del grafo mas 93 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 5. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino calibrar_ascensos_evitar_politica  [Calibrar los ascensos con tus iguales y conducir esa reunion sin que la politica la arruine, con los consejos que el texto da]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.223 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.911 (umbral 0.60)
+    paso 6 del candidato contra paso 14 de calibrar_ascensos_evitar_politica
+
+  vecino desplegar_plan_orden_operaciones_franqueza_radical  [Desplegar en tu equipo el plan de franqueza radical por el orden de operaciones que el texto pone, etapa a etapa y con su parada de evaluacion en medio]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.182 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.615 (umbral 0.60)
+    paso 3 del candidato contra paso 30 de desplegar_plan_orden_operaciones_franqueza_radical
+
+  vecino proteger_tiempo_equipo_jefe  [No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.228 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.604 (umbral 0.60)
+    paso 6 del candidato contra paso 7 de proteger_tiempo_equipo_jefe
+
+  vecino reservar_calendario_tiempo_ejecutar  [Reservar en el calendario el tiempo de ejecutar, que es solitario y por eso nunca se apunta]
+    levantada por: familia_id
+    similitud_texto    0.271 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.458 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de reservar_calendario_tiempo_ejecutar
+
+  vecino exigir_critica_jefe_reticente  [Exigir la critica que tu jefe no se atreve a darte, con las tres frases del texto y el silencio contado hasta seis]
+    levantada por: similitud_texto
+    similitud_texto    0.364 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.422 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de exigir_critica_jefe_reticente
+
+BLOQUEADO: faltan veredictos para calibrar_ascensos_evitar_politica, desplegar_plan_orden_operaciones_franqueza_radical, proteger_tiempo_equipo_jefe, reservar_calendario_tiempo_ejecutar, exigir_critica_jefe_reticente
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "calibrar_ascensos_evitar_politica|CONTINUA|madre=calibrar_ascensos_evitar_politica|que añade el hijo a la madre"
+    --veredicto "calibrar_ascensos_evitar_politica|REPITE|por que no añade procedimiento"
+    --veredicto "calibrar_ascensos_evitar_politica|SANO|por que no son el mismo trabajo"
+    --veredicto "calibrar_ascensos_evitar_politica|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "desplegar_plan_orden_operaciones_franqueza_radical|CONTINUA|madre=desplegar_plan_orden_operaciones_franqueza_radical|que añade el hijo a la madre"
+    --veredicto "desplegar_plan_orden_operaciones_franqueza_radical|REPITE|por que no añade procedimiento"
+    --veredicto "desplegar_plan_orden_operaciones_franqueza_radical|SANO|por que no son el mismo trabajo"
+    --veredicto "desplegar_plan_orden_operaciones_franqueza_radical|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "proteger_tiempo_equipo_jefe|CONTINUA|madre=proteger_tiempo_equipo_jefe|que añade el hijo a la madre"
+    --veredicto "proteger_tiempo_equipo_jefe|REPITE|por que no añade procedimiento"
+    --veredicto "proteger_tiempo_equipo_jefe|SANO|por que no son el mismo trabajo"
+    --veredicto "proteger_tiempo_equipo_jefe|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "reservar_calendario_tiempo_ejecutar|CONTINUA|madre=reservar_calendario_tiempo_ejecutar|que añade el hijo a la madre"
+    --veredicto "reservar_calendario_tiempo_ejecutar|REPITE|por que no añade procedimiento"
+    --veredicto "reservar_calendario_tiempo_ejecutar|SANO|por que no son el mismo trabajo"
+    --veredicto "reservar_calendario_tiempo_ejecutar|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "exigir_critica_jefe_reticente|CONTINUA|madre=exigir_critica_jefe_reticente|que añade el hijo a la madre"
+    --veredicto "exigir_critica_jefe_reticente|REPITE|por que no añade procedimiento"
+    --veredicto "exigir_critica_jefe_reticente|SANO|por que no son el mismo trabajo"
+    --veredicto "exigir_critica_jefe_reticente|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

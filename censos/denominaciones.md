@@ -588,3 +588,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | reservar_calendario_tiempo_ejecutar | otro_idioma | block time to execute | ingles | - |
 | 2026-09-16 | cuidarse_agotamiento_centro_rueda | nombre_largo | El agotamiento: la segunda de las dos presiones que empujan a dejar de aprender, y la reserva de tiempo de pensar que la desactiva | castellano | - |
 | 2026-09-16 | cuidarse_agotamiento_centro_rueda | otro_idioma | burnout | ingles | - |
+| 2026-09-16 | bloquear_tiempo_pensar_calendario | nombre_largo | El tiempo para pensar como bloque del calendario que no se mueve por nadie, con el enfado explicito ante quien intenta agendar encima y el encargo de que el equipo entero haga lo mismo | castellano | - |
+| 2026-09-16 | bloquear_tiempo_pensar_calendario | otro_idioma | THINK TIME | ingles | - |
+| 2026-09-16 | bloquear_tiempo_pensar_calendario | otro_idioma | Block time to think, and hold that time sacred | ingles | - |

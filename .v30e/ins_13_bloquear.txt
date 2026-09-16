@@ -1,0 +1,59 @@
+ADUANA DE INSERCION, candidato 'bloquear_tiempo_pensar_calendario'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (255 del grafo mas 93 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 1. Ninguna señal los levanto.
+  agendar_cuidados_propios_cumplirlos  [Poner en el calendario lo que necesitas hacer por ti, y despues presentarte a esas citas como te presentarias a una con tu jefe]
+    señales: familia_id 0.0, paso_contra_nodo 0.492, similitud_texto 0.309
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 5. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino calibrar_ascensos_evitar_politica  [Calibrar los ascensos con tus iguales y conducir esa reunion sin que la politica la arruine, con los consejos que el texto da]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.223 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.911 (umbral 0.60)
+    paso 6 del candidato contra paso 14 de calibrar_ascensos_evitar_politica
+
+  vecino desplegar_plan_orden_operaciones_franqueza_radical  [Desplegar en tu equipo el plan de franqueza radical por el orden de operaciones que el texto pone, etapa a etapa y con su parada de evaluacion en medio]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.182 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.615 (umbral 0.60)
+    paso 3 del candidato contra paso 30 de desplegar_plan_orden_operaciones_franqueza_radical
+
+  vecino proteger_tiempo_equipo_jefe  [No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.228 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.604 (umbral 0.60)
+    paso 6 del candidato contra paso 7 de proteger_tiempo_equipo_jefe
+
+  vecino reservar_calendario_tiempo_ejecutar  [Reservar en el calendario el tiempo de ejecutar, que es solitario y por eso nunca se apunta]
+    levantada por: familia_id
+    similitud_texto    0.271 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.458 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de reservar_calendario_tiempo_ejecutar
+
+  vecino exigir_critica_jefe_reticente  [Exigir la critica que tu jefe no se atreve a darte, con las tres frases del texto y el silencio contado hasta seis]
+    levantada por: similitud_texto
+    similitud_texto    0.364 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.422 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de exigir_critica_jefe_reticente
+  ARISTA EN COLA, no cableada: desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre desplegar_plan_orden_operaciones_franqueza_radical --hijo bloquear_tiempo_pensar_calendario --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 256
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+  ARISTAS EN COLA, sin cablear: 1
+    desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
