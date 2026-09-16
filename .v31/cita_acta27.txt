@@ -1,0 +1,11 @@
+$ awk 'NR>=24413 && NR<25208' docs/loop/ACTA_AUDITOR.md | grep -n '^### 2.2'   (rango de la ACTA 27)
+24666: ### 2.2. **`DISCUTIBLE 3`: `centrar_debate_ideas_fuera_egos` contra `fijar_fecha_cierre_debate_equipo`. SOSTENIDO, CONTAMINADA, Y LA DISCREPANCIA ES CONTRA MI**
+
+$ awk 'NR>=25208 && NR<26226' docs/loop/ACTA_AUDITOR.md | grep '^### 2.2'   (rango de la ACTA 28)
+25470: ### 2.2. **`DISCUTIBLE 2`: `SIN HUELLA` en vez de `NODO IDO` para la huella de un nodo vacio. SOSTENIDO**
+
+$ grep -n 'remision hacia atras no es una cabeza' docs/loop/ACTA_AUDITOR.md
+24700:>    remision de la autora a una tecnica que ella ya dio**. Una remision hacia atras no es una cabeza.
+26485:> La objecion es *una remision hacia atras no es una cabeza*, y **es cierta y es cita de esta casa**.
+26908:> la **`ACTA 28`** `2.2` adjudico que **una remision hacia atras no es una cabeza**
+26918:      24700:  ... Una remision hacia atras no es una cabeza.                  (dentro de la ACTA 27)

@@ -1,0 +1,15 @@
+LA APERTURA DE LA VUELTA 31, medida antes de la primera operacion
+
+| pieza | valor | de donde sale |
+|---|---:|---|
+| rama | `extraccion-mundo-11` | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno | `9d10f80` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | **256** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **375** | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| aristas por `nodos_siguientes` | **92** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | **92** | `dataset/nodos.jsonl` |
+| candidatos en bandeja, lote 4 | **89** | PATRON: `cuarentena/scott_radical_candor/*.json` |
+| insertados y archivados, lote 4 | **53** | PATRON: `cuarentena/_insertados/scott_radical_candor/*.json` |
+| candidatos en bandeja, lote 5 | **3** | PATRON: `cuarentena/marquet_turn_the_ship/*.json` |
+| lote 4 insertado sobre `142`, por ciento | **37,3** | `cuarentena/_insertados/scott_radical_candor/` |

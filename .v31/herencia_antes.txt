@@ -1,0 +1,40 @@
+REMEDIOS PENDIENTES QUE HEREDAS
+
+Esto NO lo has buscado tu: lo entrega el arnes (D.40), porque tres actas seguidas perdieron el mismo remedio por tener que ir a buscarlo.
+
+  acta anterior : ACTA 29. VUELTA 30, lote 4 (`scott_radical_candor`), `cap_07` CERRADO EN INSERCION mas la cabeza `THINK TIME` de `cap_11`: la vuelta sale **limpia de `CLASE` y de `CIFRA PUBLICADA`**, sus **veintiuna cifras me salen al digito**, mis **dieciseis relecturas pineadas se sostienen las dieciseis** y sus **ocho discutibles se sostienen los ocho**. Y aun asi: **una cita que publica en celda de tabla apunta a la `ACTA 28` y la adjudicacion vive en la `ACTA 27`**, y **mi propia apertura sellada publica `4` puentes que son `0`, rompiendo el remedio que yo mismo escribi. `REPORTE` sube a `1 de 3` y MI RACHA a `1 de 3`. NO HAY PARADA**
+  su huella     : 5ddb0d9f61253f785e3878cee54a9b17173d8731
+  heredados     : 4
+
+HEREDADO 1   [REMEDIO, linea 26226 del acta]
+# ACTA 29. VUELTA 30, lote 4 (`scott_radical_candor`), `cap_07` CERRADO EN INSERCION mas la cabeza `THINK TIME` de `cap_11`: la vuelta sale **limpia de `CLASE` y de `CIFRA PUBLICADA`**, sus **veintiuna cifras me salen al digito**, mis **dieciseis relecturas pineadas se sostienen las dieciseis** y sus **ocho discutibles se sostienen los ocho**. Y aun asi: **una cita que publica en celda de tabla apunta a la `ACTA 28` y la adjudicacion vive en la `ACTA 27`**, y **mi propia apertura sellada publica `4` puentes que son `0`, rompiendo el remedio que yo mismo escribi. `REPORTE` sube a `1 de 3` y MI RACHA a `1 de 3`. NO HAY PARADA**
+
+| | |
+|---|---|
+| fecha del acta | **2026-09-16**, leida del instrumento (`date` da `Wed, Sep 16, 2026 4:39:35 PM`; `src.aduana._hoy()` da `2026-09-16`) |
+| vueltas que cubre esta acta | **la vuelta 30, y solo ella.** Medido en la seccion 0, no supuesto. **No hay vuelta 29 y lo mido**, no lo supongo |
+| rama | `extraccion-mundo-11` (`git rev-parse --abbrev-ref HEAD`) |
+| hash auditado | **`b2edb7b`**, `HEAD` al abrir mi turno. El cierre tallado del extractor declara `37fe5c7` mas el commit que lo publica, y su apertura `b9f484a` |
+| sello de mi apertura ciega | **`406ca90e54a2097d3f8371f01346b48a5d377d51`**, **intacto**: `git hash-object docs/loop/APERTURA_CIEGA.md` lo devuelve hoy y es el que `SELLOS_APERTURA.jsonl` anoto a las `16:16:54` |
+| testigo de guardas al sellar (`D.45`) | **no desmiente ni una cifra mia**: `gate` VERDE, `guiones` VERDE, `censo_rutas` VERDE a las `16:16:52`. **Es la primera vez que la cura de `A.4` corre sobre mi, y paso** |
+| arbol de trabajo | **ninguna sede de dato modificada por mi turno.** Mis mutaciones corrieron **sobre copia**, y la de `guiones` se retiro en el acto con el barrido verde detras |
+| veredicto general | **REPORTE VERIFICADO AL DIGITO EN LAS VEINTIUNA CIFRAS QUE PUBLICA.** Cero `CLASE`, cero `CIFRA PUBLICADA`, **una `REPORTE`: la cita mal atribuida de la seccion 7.1** |
+| paradas del extractor | **CERO declaradas**, y lo compruebo: es la segunda vuelta seguida sin ninguna |
+| **parada mia** | **NO.** Mi racha va a `1 de 3` y ninguna de las seis condiciones se cumple. `PROMPT_SIGUIENTE.md` se escribe y `PARA_ALEXIS.md` **no** |
+
+---
+
+
+HEREDADO 2   [REMEDIO, linea 26281 del acta]
+> ### **PERO LO QUE EL ARNES ME ENTREGO NO ERAN LOS REMEDIOS DE LA `ACTA 28`, Y ESO TIENE CONSECUENCIA**
+>
+> Lo mido corriendo el mismo instrumento que corre el arnes:
+>
+>     $ python forja.py herencia
+>       HEREDADO 1   [REMEDIO, linea 25541 del acta]  -> ACTA 28 seccion 3.2
+>       HEREDADO 2   [REMEDIO, linea 25794 del acta]  -> ACTA 28 seccion 6.1
+>
+> **Las secciones `3.2` y `6.1` de la `ACTA 28` no ESCRIBEN remedios: CITAN los de la `ACTA 27` para
+> decir que se cumplieron.** Los remedios que la `ACTA 28` escribe de nuevo estan en la tabla que
+> precede a su seccion `9`, y son otros dos. **El de esa tabla que a mi me tocaba es el `1`**, y no me
+> llego. **La seccion 8 dice lo que hice con el sin saberlo, y lo que eso me cuesta.**

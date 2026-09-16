@@ -1571,7 +1571,10 @@ entra**: un candidato no puede tener por madre a algo que todavia no vive. **Per
 apertura ciega no decide inserciones: decide si dos lecturas independientes ven lo
 mismo**, y para eso la poblacion tiene que ser la que el extractor tuvo delante.
 
-**EL METODO, con instrumentos que ya existen y sin maquinaria nueva:**
+**~~EL METODO, con instrumentos que ya existen y sin maquinaria nueva:~~**
+**TACHADO EL 16 sep 2026. El texto viejo se queda en pie y el vigente esta al
+final de esta regla, en la CORRECCION DECLARADA del 16 sep: la receta de abajo
+cuenta las bandejas DOS VECES desde que `D.38.5` llego a `src/aduana.py`.**
 
     # la poblacion entera, grafo mas bandejas, en un jsonl de usar y tirar
     python -c "import io,json,os,glob; \
@@ -1624,6 +1627,36 @@ pegado** es exactamente la especie que `D.38.3` prohibe.
 > con la exclusion puesta y no dejo escrito que la receta del banco no la trae.** Una regla
 > que solo funciona si quien la lee la arregla por su cuenta **no esta escrita: esta
 > adivinada.**
+
+> ### **CORRECCION DECLARADA, 16 sep 2026, `ACTA 29` `6.6`: LA RECETA DE ARRIBA CUENTA LAS BANDEJAS DOS VECES**
+>
+> *`D.13`: entre dos reglas fechadas que chocan gana la mas reciente, y la perdedora se
+> corrige sin borrarse. Aqui la mas reciente es `D.38.5`, y lo que la hace ganar no es su
+> fecha sola: es que el 16 sep llego a `src/aduana.py` y cambio lo que la maquina hace.*
+>
+> **LO QUE QUEDA SUPERADO:** la receta de construir **a mano** la poblacion del barrido como
+> grafo mas bandejas, volcarla a un jsonl de usar y tirar y pasarsela a la aduana por
+> `FORJA_DATASET`. **Era correcta mientras la aduana cargaba solo el grafo. Hoy ya no.**
+>
+> **LO QUE PASA SI SE CORRE HOY AL PIE DE LA LETRA, medido en `ACTA 29` `6.6`:** la aduana
+> **vuelve a poner las bandejas por su cuenta**, asi que la poblacion sale con las bandejas
+> **contadas dos veces**, `440` en vez de `348`, y **el candidato acaba dentro de su propia
+> poblacion**: la guarda `el id ya vive en el grafo` lo tumba. Es la misma figura que la
+> `ACTA 18` corrigio en 2026, **pero por la puerta contraria**: entonces la sobraba la
+> bandeja en el fichero, hoy la pone la aduana.
+>
+> **EL METODO VIGENTE, y es mas corto que el viejo:**
+>
+>     # se le entrega a la aduana la poblacion del GRAFO, y ella pone las bandejas
+>     python forja.py informe cuarentena/<lote>/<id>.json
+>
+> **EL BARRIDO SE HACE ENTREGANDO A LA ADUANA LA POBLACION DEL GRAFO Y DEJANDO QUE ELLA
+> PONGA LAS BANDEJAS.** Lo que `D.38.4` mandaba (que el auditor y la maquina midan la misma
+> poblacion) **se cumple hoy sin construir nada a mano**, que era justamente su motivo.
+>
+> **Y LO QUE NO CAMBIA:** la exclusion del propio candidato sigue entera (`ACTA 18`), la
+> guarda `el id ya vive en el grafo` sigue mirando **solo el grafo** (`D.38.5`), y la cifra
+> de la poblacion se sigue publicando con su instrumento al lado (`D.38.3`).
 
 ### D.38.5. LA POBLACION DEL BARRIDO ES GRAFO MAS BANDEJAS **TAMBIEN PARA LA ADUANA** (12 sep 2026, decision del fundador)
 

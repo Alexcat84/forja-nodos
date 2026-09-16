@@ -34272,3 +34272,194 @@ como cola de esta vuelta.**
 | una caida de dato | **ninguna**. `13` inserciones, `13` incrementos consecutivos del censo de `244` a `256`, **el cerrojo sin avisar una sola vez**, y la bitacora con `8` lineas tocadas y `367` intactas, comprobado por diferencia | **NO ES PARADA** |
 
 **NINGUNA DE LAS SEIS SE CUMPLE. LA VUELTA 30 CIERRA SIN PARADA Y SIN CAIDA DE DATO DECLARADA.**
+
+---
+
+# VUELTA 31, **el arnes que no entrega la herencia**, la arista que nadie juzgo, y **seguir insertando el lote 4 por `cap_11`** (lote 4, `scott_radical_candor`)
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor al cerrar la `ACTA 29`. Cinco
+tareas, que es el tope (`EXTRACTOR.md` 1.3). **La `TAREA 2` es BLOQUEANTE y va antes de la primera
+insercion.***
+
+## X.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**LA MIDO YO, CON MIS COMANDOS, ANTES DE TOCAR NADA**, y despues la cuadro contra la tabla que el
+encargo publica. La primera operacion de esta vuelta es el commit del arnes pendiente, asi que esta
+tabla se lee **justo despues de ese commit y antes de la `TAREA 1`**.
+
+<!-- TALLADO: script=.v31/apertura.py salida=.v31/apertura_tabla.txt -->
+
+| pieza | valor | de donde sale |
+|---|---:|---|
+| rama | `extraccion-mundo-11` | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno | `9d10f80` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | **256** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **375** | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| aristas por `nodos_siguientes` | **92** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | **92** | `dataset/nodos.jsonl` |
+| candidatos en bandeja, lote 4 | **89** | PATRON: `cuarentena/scott_radical_candor/*.json` |
+| insertados y archivados, lote 4 | **53** | PATRON: `cuarentena/_insertados/scott_radical_candor/*.json` |
+| candidatos en bandeja, lote 5 | **3** | PATRON: `cuarentena/marquet_turn_the_ship/*.json` |
+| lote 4 insertado sobre `142`, por ciento | **37,3** | `cuarentena/_insertados/scott_radical_candor/` |
+
+**LAS ONCE FILAS ME SALEN AL DIGITO CONTRA EL ENCARGO**: `256` nodos, `375` veredictos, `14`
+`no_consumada`, `92` y `92` aristas por los dos extremos, `89` en bandeja del lote 4, `53`
+archivados, `3` en el lote 5 y `37,3` por ciento de `142`. **Cero discrepancias que declarar**
+(`EXTRACTOR.md` 5).
+
+**Y LA CIFRA QUE FALTABA EN ESA TABLA, corrida por mi:**
+
+<!-- TALLADO: parcial salida=.v31/aceptacion_apertura.txt -->
+
+    $ python tests/test_aceptacion.py
+      total: 193 pruebas, 0 fallos, 0 errores
+
+### X.0.a. **ESTA VUELTA NO TRAE SALDO DE LOTE NI COLA SELLADA, Y LO DECLARO EN VEZ DE INVENTARLO** (`D.43`)
+
+`D.43` dice dos cosas que hoy tocan las dos: *si el prompt no te entrega ningun informe, no lo
+inventes y no lo lances, y declara en tu reporte que la vuelta no trae saldo de lote*; y su extension
+del 16 sep manda que **la cola de vecinos por candidato llegue sellada al turno**. **Lo compruebo en
+vez de suponerlo:**
+
+<!-- TALLADO: parcial salida=.v31/entrega_arnes.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ ls docs/loop/ | grep -i -E "cola|vecin"
+      (ni una linea)
+
+**ASI QUE: ni informe de lote sellado, ni cola de vecinos sellada.** No recomputo el primero (`D.43`
+lo saco de mi turno y correrlo sobre `89` candidatos son horas) **y el segundo lo tengo que pagar yo
+dentro del turno**, que es exactamente la deuda que la `TAREA 2.d` me manda declarar con su cifra.
+Vuelvo a ella en `X.2.d`.
+
+## X.1. **TAREA 1**: los registros de la `ACTA 29` y sus dos correcciones declaradas
+
+### X.1.a. LO QUE LA `ACTA 29` ADJUDICA, ANEXADO SIN REHACER SUS MEDIDAS
+
+*El encargo lo dice con estas palabras: **sin rehacer mis medidas**. Asi que esta tabla es
+**registro de lo adjudicado por el auditor**, no medicion mia, y va marcada como tal
+(`EXTRACTOR.md` 5: un acta previa se cita como contraste, nunca como fuente de una cifra nueva).*
+
+| lo que la `ACTA 29` adjudica | lo que queda registrado | donde lo dice |
+|---|---|---|
+| los `8` discutibles de `W.6` | **SOSTENIDOS LOS OCHO.** Cero caidas dentro del marcado | `ACTA 29` `2` |
+| `16` relecturas pineadas, semilla `300916` | **las `16` se sostienen.** Tasa de caida de `CLASE` `0,00` por ciento, banda al 95 por ciento de `0,00` a `17,07` | `ACTA 29` `3` |
+| propuesta `1` | **queda registrada y NO se encarga** (moratoria `5.6`) | `ACTA 29` `5` |
+| propuesta `2` | **adjudicada por `EXTRACTOR.md` 9**, y la consecuencia es la buscada | `ACTA 29` `5` |
+| propuesta `3` | va dentro de la `TAREA 2`, y la respondo en `X.2.d` | `ACTA 29` `5` |
+| **la unica caida cargada contra mi** | **`REPORTE`**: la cita `ACTA 28` `2.2` que es `ACTA 27` `2.2` | `ACTA 29` `7.1` |
+| la racha `REPORTE` | **`1 de 3`** | `ACTA 29` `9.1` |
+| las rachas `CLASE` y `CIFRA PUBLICADA` | **`0 de 2` las dos** | `ACTA 29` `9.1` |
+
+> **LA ACEPTO SIN REGATEARLA, y digo por que aunque nadie me lo pida.** El auditor escribe en
+> `7.1` que *el contenido es correcto y solo falla el numero* es justo lo que hace la cita
+> peligrosa, **y tiene razon**: quien la fuera a comprobar habria leido en la `ACTA 28` `2.2` un
+> discutible sobre `SIN HUELLA` contra `NODO IDO`, que no tiene nada que ver, **y lo habria dado
+> por bueno**. Es la figura de la ruta vacia que `D.42` vino a cerrar, pero apuntando a una sede
+> que existe y dice otra cosa, **que es peor: la ruta vacia se ve, y esta no.**
+
+### X.1.b. **CORRECCION DECLARADA EN `docs/BANCO_DE_REGLAS.md`, `D.38.4`, SIN BORRAR EL TEXTO VIEJO** (`D.13`)
+
+**QUEDA TACHADO EN SU SITIO Y NO BORRADO**, que es lo que `D.13` manda: el encabezado de la receta
+vieja lleva ahora su `~~tachado~~` y una linea que manda al texto vigente, y **el texto vigente es
+un bloque de correccion declarada al final de la regla**, antes de `D.38.5`.
+
+    $ grep -n "TACHADO EL 16 sep 2026" docs/BANCO_DE_REGLAS.md
+      1575:**TACHADO EL 16 sep 2026. El texto viejo se queda en pie y el vigente esta al
+    $ grep -n "CORRECCION DECLARADA, 16 sep 2026, .ACTA 29. .6.6." docs/BANCO_DE_REGLAS.md
+      1631:> ### **CORRECCION DECLARADA, 16 sep 2026, `ACTA 29` `6.6`: LA RECETA DE ARRIBA CUENTA LAS BANDEJAS DOS VECES**
+
+**LO QUE EL BLOQUE NUEVO DICE, en una linea:** la receta de construir **a mano** la poblacion del
+barrido como grafo mas bandejas **queda superada por `D.38.5`**, que llego a `src/aduana.py` el
+16 sep; **corrida al pie de la letra hoy cuenta las bandejas dos veces** (`440` en vez de `348`) **y
+tumba al candidato por la guarda `el id ya vive en el grafo`**, porque acaba dentro de su propia
+poblacion. **El barrido se hace entregando a la aduana la poblacion del grafo y dejando que ella
+ponga las bandejas.**
+
+> **Y DIGO LA PARTE QUE NO ME PIDIERON, porque la regla vieja la tenia y no quiero que se pierda al
+> tacharla:** la exclusion del propio candidato (`ACTA 18`), que la guarda `el id ya vive en el
+> grafo` siga mirando **solo el grafo** (`D.38.5`), y que la cifra de la poblacion se publique con
+> su instrumento al lado (`D.38.3`) **siguen enteras**, y van escritas dentro del bloque nuevo. Una
+> correccion que al tachar la receta se lleva por delante sus tres cautelas **no corrige: amputa.**
+
+### X.1.c. **CORRECCION DECLARADA EN LA LINEA `300` DE `bitacora/VEREDICTOS.jsonl`, SIN TOCAR LA CLASE**
+
+**LO COMPRUEBO YO ANTES DE ESCRIBIRLO, con mis comandos y en esta vuelta** (`EXTRACTOR.md` 5), en
+vez de fiarme del encargo:
+
+<!-- TALLADO: parcial salida=.v31/cita_acta27.txt -->
+
+    $ awk 'NR>=24413 && NR<25208' docs/loop/ACTA_AUDITOR.md | grep -n '^### 2.2'   (rango de la ACTA 27)
+    24666: ### 2.2. **`DISCUTIBLE 3`: `centrar_debate_ideas_fuera_egos` contra `fijar_fecha_cierre_debate_equipo`. SOSTENIDO, CONTAMINADA, Y LA DISCREPANCIA ES CONTRA MI**
+
+    $ awk 'NR>=25208 && NR<26226' docs/loop/ACTA_AUDITOR.md | grep '^### 2.2'   (rango de la ACTA 28)
+    25470: ### 2.2. **`DISCUTIBLE 2`: `SIN HUELLA` en vez de `NODO IDO` para la huella de un nodo vacio. SOSTENIDO**
+
+    $ grep -n 'remision hacia atras no es una cabeza' docs/loop/ACTA_AUDITOR.md
+    24700:>    remision de la autora a una tecnica que ella ya dio**. Una remision hacia atras no es una cabeza.
+    26485:> La objecion es *una remision hacia atras no es una cabeza*, y **es cierta y es cita de esta casa**.
+    26908:> la **`ACTA 28`** `2.2` adjudico que **una remision hacia atras no es una cabeza**
+    26918:      24700:  ... Una remision hacia atras no es una cabeza.                  (dentro de la ACTA 27)
+
+**LAS TRES LINEAS DICEN LO MISMO QUE EL AUDITOR**: la `ACTA 27` `2.2` es el discutible del par
+`centrar_debate` contra `fijar_fecha` (linea `24666`), la `ACTA 28` `2.2` es otro (linea `25470`,
+`SIN HUELLA` contra `NODO IDO`), y la frase citada vive en la linea `24700`, **dentro del rango de
+la `ACTA 27`** (`24413` a `25207`). **Cero discrepancias.**
+
+**Y LA ANOTACION, ESCRITA CON EL INSTRUMENTO Y NO A MANO** (`EXTRACTOR.md` 14: la bitacora no se
+edita, la escribe la aduana):
+
+<!-- TALLADO: parcial salida=.v31/anotar_300_prueba.txt -->
+
+    $ python forja.py anotar --linea 300 ... (salida literal)
+    ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+      sede : bitacora/VEREDICTOS.jsonl
+      linea: 300
+      veredicto: SANO (NO se toca)
+      par      : fijar_fecha_cierre_debate_equipo contra centrar_debate_ideas_fuera_egos
+      la razon vieja SIGUE ENTERA: 619 caracteres, ninguno borrado
+      se aniaden 793 caracteres al final de la razon
+      lineas de la bitacora tocadas: 1 (la 300). Las otras 374, intactas.
+
+    ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 300.
+
+    $ (comprobacion por diferencia, corrida despues)
+      veredicto         : SANO
+      anotaciones       : 1
+      lineas del fichero: 375
+
+**LA CLASE NO SE TOCA Y LO DICE EL PROPIO INSTRUMENTO**: `veredicto: SANO (NO se toca)`. La razon
+vieja sigue entera con sus `619` caracteres, se aniaden `793`, **una sola linea tocada y las otras
+`374` intactas**, y el fichero sigue teniendo `375` lineas: **una anotacion no aniade linea nueva**,
+que es lo que `D.15` ya midio en la vuelta 30.
+
+## X.2. **TAREA 2, BLOQUEANTE**: el arnes que no entrega los remedios que `D.40` le manda entregar
+
+PENDIENTE
+
+## X.3. **TAREA 3**: la arista `D.29` que existe, que nadie juzgo y que hoy se cablea
+
+PENDIENTE
+
+## X.4. **TAREA 4**: seguir insertando el lote 4 por `cap_11` y por el orden del libro
+
+PENDIENTE
+
+## X.5. **TAREA 5**: la cola entera, recontada fila a fila contra el dato
+
+PENDIENTE
+
+## X.6. LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO (`EXTRACTOR.md` 8)
+
+PENDIENTE
+
+## X.7. LAS PROPUESTAS
+
+PENDIENTE
+
+## X.8. EL CIERRE DE LA VUELTA 31
+
+PENDIENTE

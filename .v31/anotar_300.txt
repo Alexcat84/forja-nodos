@@ -1,0 +1,10 @@
+ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+  sede : bitacora/VEREDICTOS.jsonl
+  linea: 300
+  veredicto: SANO (NO se toca)
+  par      : fijar_fecha_cierre_debate_equipo contra centrar_debate_ideas_fuera_egos
+  la razon vieja SIGUE ENTERA: 619 caracteres, ninguno borrado
+  se aniaden 793 caracteres al final de la razon
+  lineas de la bitacora tocadas: 1 (la 300). Las otras 374, intactas.
+
+ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 300.

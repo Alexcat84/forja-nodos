@@ -1,0 +1,5 @@
+  el cerrojo de insercion y D.44, el censo no decrece: 8 pruebas mas
+  el testigo de guardas al sellar (D.38.3, 16 sep): 4 pruebas mas
+
+  total: 193 pruebas, 0 fallos, 0 errores
+========================================================================
