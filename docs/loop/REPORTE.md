@@ -31744,7 +31744,25 @@ restan.**
 | barrido de guiones | `python forja.py guiones` | **VERDE**, cero guiones largos y cero medios | `.v26/g_guiones.txt` |
 | prueba de aceptacion | `python tests/test_aceptacion.py` | **VERDE**, `130` pruebas, `0` fallos, `0` errores | `.v26/g_test.txt` |
 | tallado del reporte (`D.41`) | `python scripts/tallar_reporte.py` | **VERDE**, las tablas comprobables son las de su instrumento | `.v26/cierre.txt` |
-| censo de rutas (`D.42`) | `python scripts/censar_rutas.py` | **VERDE**, `327` rutas, `0` caen | `.v26/censo_cierre.txt` |
+| censo de rutas (`D.42`) | `python scripts/censar_rutas.py` | **VERDE**, `353` rutas, `0` caen | `.v26/censo_cierre.txt` |
+
+> ### **CORRECCION DECLARADA, Y ES LA MISMA ESPECIE QUE `T.7` FILA 1, DOS SECCIONES DESPUES DE ESCRIBIRLA**
+>
+> **Publique `327` rutas censadas, y al recontar salen `353`.** El motivo es exacto: **corri el censo
+> ANTES de anexar estas mismas secciones de cierre**, que traen 26 rutas nuevas. **Medir temprano y
+> publicar tarde sin remedir** (`EXTRACTOR.md` 4). La celda de arriba es la regenerada.
+>
+> **Y el recuento cazo ademas una caida de verdad, mia y de hoy:** al regenerar con
+> `python scripts/censar_rutas.py > .v26/censo_cierre.txt`, **la redireccion vacia el fichero ANTES de
+> que el censo lo lea**, y el censo se encontro su propia sede con cero bytes:
+>
+>     CAE  docs\loop\REPORTE.md linea 31747, celda 4
+>          ruta : .v26/censo_cierre.txt
+>          esta y esta VACIA, y la celda no lleva la marca 'VACIA A PROPOSITO: <motivo>'
+>
+> **`D.42` cazo su propio caso en el acto**, y la cura fue escribir a un temporal y moverlo despues.
+> **Es la prueba mas barata que va a tener esa guarda de que sirve**: la caida de la vuelta 25 fue
+> exactamente un fichero de cero bytes publicado como sede, y hoy el commit no habria pasado.
 
 **LAS CINCO EN VERDE, Y ADEMAS EL HOOK LAS CORRIO EN CADA UNO DE LOS SIETE COMMITS de esta vuelta**,
 que es lo que hace que no sean una foto del final.

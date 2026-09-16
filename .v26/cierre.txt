@@ -29,7 +29,7 @@ tablas que declaran instrumento : 65
       linea 31365 de docs/loop/REPORTE.md
       linea 31524 de docs/loop/REPORTE.md
       linea 31700 de docs/loop/REPORTE.md
-      linea 31758 de docs/loop/REPORTE.md
+      linea 31776 de docs/loop/REPORTE.md
 
 TALLADO VERDE: las 42 tabla(s) comprobables son las de su instrumento, celda a celda.
 ============================================================================
@@ -254,7 +254,7 @@ test_una_ruta_relativa_al_documento_resuelve (__main__.PruebaCensoDeRutas.test_u
 Un acta que vive en docs/loop/ y escribe `paradas/x.md` no miente. ... ok
 
 ----------------------------------------------------------------------
-Ran 130 tests in 14.213s
+Ran 130 tests in 14.175s
 
 OK
 
