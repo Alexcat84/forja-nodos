@@ -1,0 +1,11 @@
+| lo que mido | al abrir | **al cerrar** | movimiento |
+|---|---:|---:|---:|
+| nodos en `dataset/nodos.jsonl` | 243 | **256** | **+13** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | 289 | **375** | **+86** |
+| de ellos, con `no_consumada: true` | 14 | **14** | **+0** |
+| nodos con fuente `scott_radical_candor` | 40 | **53** | **+13** |
+| bandeja del lote 4 | 102 | **89** | **-13** |
+| archivados del lote 4 | 40 | **53** | **+13** |
+| bandeja del lote 5 | 3 | **3** | **0** |
+| aristas del grafo, contadas por `nodos_siguientes` | | **92** | |
+| lote 4 insertado, por ciento del total de 142 | 28 | **37** | **+9** |

@@ -1,0 +1,14 @@
+| lo que queda | cifra al abrir | cifra al cerrar | estado |
+|---|---:|---:|---|
+| la arista en cola `crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas` | **1** | **1** | sigue: el hijo esta en bandeja |
+| la serie `D.37` de `minimizar_impuesto_colaboracion_equipo` | **3** partes | **0** | **CERRADA: las tres viven y las tres estan cableadas** |
+| la mitad `Burnout` de la serie de `aprender_resultados_vencer_dos_presiones` | **1** | **0** | **CERRADA: `cuidarse_agotamiento_centro_rueda` entro y su arista se declaro** |
+| los `12` candidatos de `cap_07` con su cola de lectura | **12** candidatos, **77** pares | **0** y **0** | **CERRADA: `cap_07` queda entero en el grafo** |
+| el hueco de transcripcion de `L153` | **1** modo de **3**, en **1** nodo | **1** de **3** | sigue **SIN VIA**, y con un solo ejemplar no se construye |
+| las entradillas de `LISTEN`, `CLARIFY` y `DEBATE` de `cap_07` | **3** tramos | **3** | sigue: medido hoy en `.v30e/entradillas.txt`, `3` de `7` rotulos sin nodo |
+| las `8` lineas `SIN HUELLA` de `D.15` | **8**, ninguna declarada | **8**, **las 8 declaradas** | **CERRADA por la segunda salida de `D.15`** |
+| `cap_04` releido antes que las tres filas de hueco | **6** candidatos, **48** pasos | **6** y **48** | **SIGUE SIN CABER**, y lo declaro otra vez con su motivo |
+| la frontera por capitulo con las `QUESTIONS TO CONSIDER` | **14** de **17** unidades | **14** de **17** | la vuelta que mine un capitulo del lote 5 |
+| **NUEVA**: la arista en cola `desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario` | 0 | **1** | la desbloquea que entre la MADRE, que espera en bandeja |
+| el lote 5 por su orden | **3** candidatos en bandeja | **3** | **NO TOCADO**, y es deliberado (`D.39`) |
+| la bandeja del lote 4, lo que queda por insertar | **102** | **89** | sigue |

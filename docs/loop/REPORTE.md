@@ -33979,3 +33979,287 @@ etapa y su condicion, y NO copia los pasos del nodo que la despliega, que es jus
 `cap_11` desde `cap_12`. **Mi lectura es que aquella era una remision suelta dentro de una anecdota y
 esta es un ITEM de un inventario ordenado**, que es la cara positiva de `D.27`; pero el que adjudica
 no soy yo.
+
+## W.4. TAREA 3: **LA COLA QUE SIGUE ABIERTA, PARA QUE NO SE PIERDA**
+
+*El encargo la manda entera **porque ya se perdio una vez**: el remedio de la fase ciega cazo que
+siete de ocho encargos de la `ACTA 25` no llegaron al encargo siguiente. **La recuento hoy fila a
+fila con un instrumento**, no la copio.*
+
+### W.4.a. **LA COLA ENTERA, RECONTADA CONTRA EL DATO Y NO CONTRA EL ENCARGO**
+
+<!-- TALLADO: salida=.v30e/cola_cifras.txt -->
+
+| lo que queda | cifra al abrir | cifra al cerrar | estado |
+|---|---:|---:|---|
+| la arista en cola `crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas` | **1** | **1** | sigue: el hijo esta en bandeja |
+| la serie `D.37` de `minimizar_impuesto_colaboracion_equipo` | **3** partes | **0** | **CERRADA: las tres viven y las tres estan cableadas** |
+| la mitad `Burnout` de la serie de `aprender_resultados_vencer_dos_presiones` | **1** | **0** | **CERRADA: `cuidarse_agotamiento_centro_rueda` entro y su arista se declaro** |
+| los `12` candidatos de `cap_07` con su cola de lectura | **12** candidatos, **77** pares | **0** y **0** | **CERRADA: `cap_07` queda entero en el grafo** |
+| el hueco de transcripcion de `L153` | **1** modo de **3**, en **1** nodo | **1** de **3** | sigue **SIN VIA**, y con un solo ejemplar no se construye |
+| las entradillas de `LISTEN`, `CLARIFY` y `DEBATE` de `cap_07` | **3** tramos | **3** | sigue: medido hoy en `.v30e/entradillas.txt`, `3` de `7` rotulos sin nodo |
+| las `8` lineas `SIN HUELLA` de `D.15` | **8**, ninguna declarada | **8**, **las 8 declaradas** | **CERRADA por la segunda salida de `D.15`** |
+| `cap_04` releido antes que las tres filas de hueco | **6** candidatos, **48** pasos | **6** y **48** | **SIGUE SIN CABER**, y lo declaro otra vez con su motivo |
+| la frontera por capitulo con las `QUESTIONS TO CONSIDER` | **14** de **17** unidades | **14** de **17** | la vuelta que mine un capitulo del lote 5 |
+| **NUEVA**: la arista en cola `desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario` | 0 | **1** | la desbloquea que entre la MADRE, que espera en bandeja |
+| el lote 5 por su orden | **3** candidatos en bandeja | **3** | **NO TOCADO**, y es deliberado (`D.39`) |
+| la bandeja del lote 4, lo que queda por insertar | **102** | **89** | sigue |
+
+**CUATRO FILAS SE CIERRAN HOY** (las dos series `D.37`, los `12` de `cap_07` con sus `77` pares, y las
+`8` lineas `SIN HUELLA`), **una nace** (la arista `D.29` del plan de `cap_12`), y **el resto sigue
+abierto con su cifra remedida.**
+
+### W.4.b. **LAS `8` LINEAS `SIN HUELLA`, CERRADAS POR LA SEGUNDA SALIDA DE `D.15`**
+
+*El encargo lo dice con estas palabras: `D.15` **da dos salidas, releerlas o declararlas, y hoy no hay
+ninguna hecha**. Hoy hay las ocho.*
+
+**POR QUE SE PODIAN CERRAR HOY Y NO ANTES, y es la mitad que explica la fila:** las ocho se emitieron
+cuando **su vecino esperaba en la bandeja**, asi que la huella que guardaron es la de un nodo VACIO.
+**Siete de esos ocho vecinos han entrado en esta misma vuelta o en la anterior**, asi que por primera
+vez hay texto contra el que leer.
+
+**LAS OCHO, UNA POR VEZ, CON `python forja.py anotar`**, que es la operacion que `EXTRACTOR.md` 14
+deja para tocar una linea ya escrita sin tocarla a mano. **Ni una clase se cambio**: `anotar` no
+toca la clase, ni el candidato, ni el vecino, ni las huellas, ni las señales.
+
+<!-- TALLADO: parcial salida=.v30e/anotar_sin_huella.txt -->
+
+    ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+      sede : bitacora/VEREDICTOS.jsonl
+      linea: 264
+      veredicto: SANO (NO se toca)
+      par      : centrar_debate_ideas_fuera_egos contra minimizar_impuesto_colaboracion_equipo
+      la razon vieja SIGUE ENTERA: 412 caracteres, ninguno borrado
+      se aniaden 498 caracteres al final de la razon
+      lineas de la bitacora tocadas: 1 (la 264). Las otras 374, intactas.
+    ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 264.
+
+**Y LO COMPRUEBO POR DIFERENCIA EN VEZ DE CREERME LA SALIDA**, con la copia que guarde antes de la
+primera anotacion:
+
+<!-- TALLADO: parcial salida=.v30e/diff_sin_huella.txt -->
+
+    LA BITACORA, ANTES Y DESPUES DE LAS OCHO ANOTACIONES
+      lineas antes  : 375
+      lineas ahora  : 375
+      lineas tocadas: 8  ->  252, 256, 258, 260, 261, 262, 263, 264
+      lineas intactas: 367
+
+**OCHO LINEAS TOCADAS Y `367` INTACTAS, Y SON EXACTAMENTE LAS OCHO QUE EL INSTRUMENTO NOMBRA.**
+
+### W.4.c. **EL BLOQUE DE VIGENCIA ENTERO, CRUZADO CONTRA LA MARCA QUE LO DECLARA**
+
+<!-- TALLADO: parcial salida=.v30e/vigencia_declarada.txt -->
+
+    EL BLOQUE DE VIGENCIA, CRUZADO CONTRA LA MARCA QUE LO DECLARA
+      hallazgos del instrumento : 34
+      RANCIO                    : 26, declarados 26, sin declarar 0
+      SIN HUELLA                : 8, declarados 8, sin declarar 0
+      las lineas SIN HUELLA     : 252, 256, 258, 260, 261, 262, 263, 264
+
+**`34` de `34` declarados, `0` sin declarar.** Los `26` `RANCIO` los declaro la vuelta 28 (`V.4.b`) y
+los `8` `SIN HUELLA` los declaro esta.
+
+> ### **Y AQUI VA UN HALLAZGO QUE NO ME GUSTA Y PUBLICO IGUAL** (`D.38.3` ensanchada)
+>
+> **La frase del instrumento no cambia: `python forja.py rancios` sigue imprimiendo `RANCIO 26, SIN
+> HUELLA 8`, exactamente igual antes y despues de mis ocho anotaciones.** Las dos salidas estan
+> guardadas y son comparables: `.v30e/rancios_apertura.txt` y `.v30e/rancios_tras_declarar.txt`.
+>
+> **`LECTURA`, en linea aparte y separada de la frase del instrumento: eso es correcto por diseño y
+> aun asi deja un hueco.** Es correcto porque `anotar` **no toca las huellas** a proposito (*cambiar
+> un veredicto es volver a juzgar el par, no anotar su linea*), y porque `D.15` dice que este bloque
+> **no pone el gate en rojo**. **El hueco es que el instrumento no sabe distinguir una linea declarada
+> de una que nadie ha mirado**, asi que la cifra `8` va a seguir saliendo igual la vuelta que viene y
+> la siguiente. **La distincion existe en el dato** y la mide `.v30e/vigencia_declarada.py`, que lee
+> el campo `anotaciones`. **Lo subo como propuesta en `W.7` y no me lo adjudico.**
+
+### W.4.d. **LAS ENTRADILLAS DE ETAPA, MEDIDAS EN VEZ DE HEREDADAS**
+
+*El encargo publica **`3` tramos** con texto y sin nodo, y dice que **no es caida de nadie: es cola**.
+Lo mido, porque `cap_07` acaba de entrar entero y la cifra podia haberse movido.*
+
+<!-- TALLADO: salida=.v30e/entradillas.txt -->
+
+poblacion: dataset/nodos.jsonl mas cuarentena/scott_radical_candor
+los rotulos se leen de fuentes/scott_radical_candor/cap_07.md con grep -n, no se teclean
+
+| rotulo de etapa | linea del rotulo | nodo cuyo tramo declarado lo cubre |
+|---|---:|---|
+| `LISTEN` | `L79` | **NINGUNO: es cola** |
+| `CLARIFY` | `L165` | **NINGUNO: es cola** |
+| `DEBATE` | `L213` | **NINGUNO: es cola** |
+| `DECIDE` | `L259` | `repartir_decision_cercanos_hechos` (GRAFO) |
+| `PERSUADE` | `L303` | `persuadir_emocion_oyente_no_propia` (GRAFO) |
+| `EXECUTE` | `L367` | `minimizar_impuesto_colaboracion_equipo` (GRAFO) |
+| `LEARN` | `L389` | `aprender_resultados_vencer_dos_presiones` (GRAFO) |
+
+**`3` de `7` rotulos siguen sin nodo que los cubra, y son exactamente `LISTEN`, `CLARIFY` y `DEBATE`**,
+que es lo que el encargo dice. **Los otros cuatro los cubre un nodo cuyo tramo declarado incluye la
+linea del rotulo**, y tres de esos cuatro entraron hoy.
+
+> **`LECTURA`: por que los cuatro cubiertos lo estan y los tres de cola no.** En `DECIDE`, `PERSUADE`,
+> `EXECUTE` y `LEARN` la entradilla trae **procedimiento propio** y se pudo meter en los pasos de la
+> primera pieza de su etapa (`persuadir_emocion_oyente_no_propia` lo dice en su propio
+> `resumen_teorico`: *los pasos P1 a P3 vienen de la entradilla de la seccion, que ninguna otra pieza
+> recoge*). **En `LISTEN`, `CLARIFY` y `DEBATE` la entradilla es cabeza de lista** (`L223`: *Here are
+> some ideas that can help you...*), **y una cabeza de lista sin procedimiento propio no es un nodo**
+> (`EXTRACTOR.md` 9). **Que no lo sea es justo lo que deja a sus piezas sin madre**, que es lo que
+> este reporte ha tenido que escribir tres veces hoy en tres veredictos distintos.
+
+### W.4.e. **LAS DOS FILAS QUE NO TOCO, Y DIGO POR QUE EN VEZ DE DEJARLAS CALLADAS**
+
+| fila | por que no la toco |
+|---|---|
+| `cap_04` releido, **6** candidatos y **48** pasos | **la insercion se comio la vuelta**, que es el caso que el propio encargo previo. Trece candidatos por la aduana son **`26` corridas** (una para leer la cola, otra para insertar) a entre `63` y `136` segundos cada una. Releer `48` pasos mas contra su capitulo es una tarea cuarta, y **lo que la impide no es el tope de cinco sino el reloj** |
+| el lote 5, **3** candidatos | **`D.39` lo dice por su letra** y el encargo lo repite: *no se toca hasta que el 4 cierre*. Sus `3` siguen en bandeja, **sin una sola insercion**, y eso se ve en la tabla de `W.4.a` |
+| el hueco de transcripcion de `L153` | **sigue sin via, y con un solo ejemplar no se construye**, que es lo que la vuelta 28 ya declaro en su `V.6.a` y lo que el encargo repite. **No he encontrado un segundo ejemplar en esta vuelta**, y fabricar la via con uno solo seria maquinaria (`EXTRACTOR.md` 13) |
+
+## W.5. **LAS ARISTAS EN COLA AL CERRAR, EN SU BLOQUE PROPIO Y TITULADO** (`D.29`)
+
+*Van en bloque propio porque `D.29` lo manda asi y porque la `ACTA 25` midio que siete de ocho
+encargos se pierden cuando no tienen sede.*
+
+| arista en cola | que la desbloquea | desde |
+|---|---|---|
+| `crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas` | que entre el HIJO, que espera en la bandeja del lote 4 | vuelta 28 (`V.5.h`) |
+| `desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario` | que entre la MADRE, que espera en la bandeja del lote 4 | **esta vuelta** (`W.3.a`) |
+
+**SON `2`, Y NINGUNA SE PUEDE CABLEAR HOY** sin insertar antes a un candidato que no es de esta tanda.
+**Las dos tienen su veredicto escrito en `bitacora/VEREDICTOS.jsonl`**, que es la mitad que `D.29`
+protege: lo que se difiere es el cableado, no la lectura.
+
+## W.6. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+*Van marcados a ciegas para que el auditor empiece la relectura por ellos, y para que la metrica de
+credito distinga una caida dentro del marcado de una fuera.*
+
+| # | el discutible | por que lo marco |
+|---:|---|---|
+| **1** | **la arista `D.29` nueva**: `desplegar_plan_orden_operaciones_franqueza_radical` MADRE de `bloquear_tiempo_pensar_calendario` | **es el mas fragil de la vuelta y lo pongo el primero.** La `ACTA 28` `2.2` adjudico que **una remision hacia atras no es una cabeza**, y el paso `30` del plan (`cap_12`) remite a un procedimiento de `cap_11`. **Mi lectura es que aquella era una remision suelta dentro de una anecdota y esta es un ITEM de un inventario ordenado**, que es la cara positiva de `D.27`, y que la propia madre se declara cabeza y parte en su `resumen_teorico`. **Si el auditor lee lo contrario, la arista sobra y la caida es mia** |
+| **2** | `persuadir_emocion_oyente_no_propia` contra `establecer_credibilidad_pericia_humildad`, `SANO` sin arista | **los dos citan la MISMA linea `L313` en sus pasos**, y son dos de las tres piezas de la retorica que el libro reparte. Firmo `SANO` porque `D.37` exige que **la cuenta este escrita en un paso** y ninguno de los dos dice cuantas piezas son ni nombra al otro, asi que **no hay `--paso n` que citar**. Pero una cabeza existe en el libro (`L321`) y **no es nodo**, asi que estos dos quedan hermanos por un hueco y no por el texto |
+| **3** | `establecer_credibilidad_pericia_humildad` contra `compartir_logica_mostrar_razonamiento`, `SANO` | **el mismo caso que el `2` y por eso va aparte**: es el tercer lado del mismo triangulo. Si el auditor decide que `L321` pide nodo, **caen los tres pares de golpe y no uno** |
+| **4** | `calibrar_ascensos_evitar_politica` contra `bloquear_tiempo_pensar_calendario`, `SANO` con `paso_contra_nodo = 0.911` | **es la señal mas alta que he visto en toda la campania** y `EXTRACTOR.md` 11 dice de esa banda que **el material del candidato YA VIVE en el grafo**. Firmo falso positivo porque las dos frases son casi identicas (*anima a todo tu equipo a hacer lo mismo*) y **el LO MISMO es cosa distinta en cada una**. **Si me equivoco, es un duplicado que entro con la señal en rojo** |
+| **5** | **haber insertado un candidato numero `13` que no es de `cap_07`** | el encargo dice *seguir insertando `cap_07`* en su `TAREA 1` y *la vuelta que inserte al primero* en la `TAREA 2`. **Lei que la `TAREA 2` no se puede hacer sin insertar `bloquear_tiempo_pensar_calendario`**, que es de `cap_11`, y lo meti **despues** de cerrar `cap_07` entero. **Si el auditor lee que la `TAREA 2` era solo para cuando ese candidato tocara por orden, esta insercion se adelanto** |
+| **6** | **haber cerrado las `8` lineas `SIN HUELLA` con `anotar` y no volviendolas a juzgar** | `D.15` da **dos** salidas y elegi la segunda. La primera (releer contra el texto de hoy) habria sido **volver a pasar `8` pares por la aduana**, y `anotar` **no toca las huellas**, asi que el instrumento las sigue contando. **Si el auditor lee que declarar sin re estampar la huella no cierra la fila, esta fila sigue abierta y yo la publique como cerrada** |
+| **7** | `explicar_idea_facil_comprender_oyente` contra `fijar_fecha_cierre_debate_equipo`, `SANO` con `paso_contra_nodo = 0.610` | es la **unica** señal `3` del tramo que pasa su umbral por lectura y no por ruido de texto corto, y la firmo falso positivo. **Si me equivoco, hay una arista `CLARIFY` a `DEBATE` que no declare** |
+| **8** | **haber usado dos vias distintas para las tres aristas de la MISMA serie `D.37`** | la aduana cablea una (`proteger_tiempo`) y `forja.py arista` cablea las otras dos, **segun si la señal levanto a la madre**. El resultado en el dataset es identico y lo compruebo en `W.2.h`, pero **el registro de la bitacora las guarda con `levantada_por` distinto**, y eso es visible. **Si el auditor prefiere una sola via, la eleccion fue mia** |
+
+## W.7. **LO QUE PROPONGO, SIN ADJUDICARME NADA** (`EXTRACTOR.md` 14)
+
+| # | propuesta | su medicion de hoy |
+|---:|---|---|
+| **1** | que **`python forja.py rancios` distinga un hallazgo DECLARADO de uno que nadie ha mirado** | hoy imprime `RANCIO 26, SIN HUELLA 8` **igual antes y despues de declarar las ocho**, y la distincion **ya existe en el dato**: `34` de `34` llevan `VIGENCIA DECLARADA` en su campo `anotaciones` (`.v30e/vigencia_declarada.txt`). **Sin esa distincion, la fila de la cola va a publicar `8` para siempre** y la vuelta siguiente no sabra si ya se hizo |
+| **2** | que se adjudique **que hacer con una entradilla que es cabeza de lista y no trae procedimiento propio** | **`3` de `7` rotulos de etapa de `cap_07` no tienen nodo** (`.v30e/entradillas.txt`), y **esta vuelta ha tenido que escribir tres veces en tres veredictos distintos la frase *su cabeza seria X, que no es nodo***. No propongo crearlos: `EXTRACTOR.md` 9 dice que una cabeza de lista sin procedimiento propio **no es un nodo**, y esto es pedir que se diga si esa consecuencia (piezas hermanas sin madre) es la buscada |
+| **3** | que el arnes entregue **la cola de vecinos sellada**, que `D.43` extendida manda desde el 16 sep y esta corrida no trajo | medido hoy: **`26` corridas de la aduana** para `13` candidatos, entre `63` y `136` segundos cada una. **`D.43` saco el informe de lote del turno por exactamente este motivo**, y la extension lo dice de la cola. Hoy la produje yo, una por candidato, porque no habia otra via |
+
+## W.8. EL CIERRE DE LA VUELTA 30
+
+### W.8.a. LAS CUATRO GUARDAS AL CERRAR, CORRIDAS AL CIERRE Y NO AL EMPEZAR (`EXTRACTOR.md` 4)
+
+| guarda | salida | de donde sale |
+|---|---|---|
+| `python forja.py gate` | `GATE VERDE`, **256** nodos verificados | `.v30e/gate_cierre.txt` |
+| `python forja.py guiones` | `BARRIDO DE GUIONES VERDE` | `.v30e/guiones_cierre.txt` |
+| `python forja.py resolutor` | **256** vivos, `0` deprecados, `0` alias | `.v30e/resolutor_cierre.txt` |
+| `python tests/test_aceptacion.py` | **192** pruebas, `0` fallos, `0` errores | `.v30e/test_cierre.txt` |
+
+### W.8.b. LAS CIFRAS DEL CIERRE, RECOMPUTADAS AL CIERRE Y NO COPIADAS DE LA APERTURA
+
+<!-- TALLADO: salida=.v30e/cuentas_cierre.txt -->
+
+| lo que mido | al abrir | **al cerrar** | movimiento |
+|---|---:|---:|---:|
+| nodos en `dataset/nodos.jsonl` | 243 | **256** | **+13** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | 289 | **375** | **+86** |
+| de ellos, con `no_consumada: true` | 14 | **14** | **+0** |
+| nodos con fuente `scott_radical_candor` | 40 | **53** | **+13** |
+| bandeja del lote 4 | 102 | **89** | **-13** |
+| archivados del lote 4 | 40 | **53** | **+13** |
+| bandeja del lote 5 | 3 | **3** | **0** |
+| aristas del grafo, contadas por `nodos_siguientes` | | **92** | |
+| lote 4 insertado, por ciento del total de 142 | 28 | **37** | **+9** |
+
+### W.8.c. **Y LAS `86` LINEAS NUEVAS DE LA BITACORA, CUADRADAS POR QUIEN LAS ESCRIBIO**
+
+*La tabla de la tanda (`W.2.e`) suma `83`. La bitacora dice `86`. **La diferencia no es un error y la
+mido en vez de explicarla.***
+
+<!-- TALLADO: parcial salida=.v30e/cuadre_veredictos.txt -->
+
+    LAS LINEAS NUEVAS DE LA BITACORA, REPARTIDAS POR QUIEN LAS ESCRIBIO
+      lineas al abrir : 289
+      lineas al cerrar: 375
+      lineas nuevas   : 86
+        vecinos levantados por la aduana y juzgados   : 82
+        aristas D.37 declaradas con forja.py arista   : 3
+        veredictos declarados por lectura sin arista  : 1
+        suma                                          : 86
+      lineas ANOTADAS sin aniadir linea nueva (D.15)  : 8
+
+**`82` mas `3` mas `1` igual a `86`.** Las `82` y la `1` son las de la tabla de la tanda (`83`); **las
+`3` que faltaban son las declaraciones de arista `D.37`**, que escriben su linea en la bitacora y **no
+pasan por `insertar`**, asi que no aparecen en la columna de esa tabla. **Y las `8` anotaciones de
+`D.15` no suman ninguna linea**, porque `anotar` escribe DENTRO de la linea que ya existe.
+
+### W.8.d. LA VIGENCIA AL CERRAR, QUE HOY ES COLA Y NO GUARDA (`D.15`)
+
+| | al abrir | **al cerrar** |
+|---|---:|---:|
+| hallazgos del bloque de vigencia | **34** | **34** |
+| `RANCIO` | **26** | **26** |
+| `SIN HUELLA` | **8** | **8** |
+| **de los `34`, con `VIGENCIA DECLARADA` escrita** | **26** | **34** |
+| **sin declarar** | **8** | **0** |
+| lineas `no_consumada` y por eso no medidas | **14** | **14** |
+
+**LA CIFRA DEL INSTRUMENTO NO SE MUEVE Y LA DE LA DECLARACION SI**, y las dos filas van juntas a
+proposito: es el hallazgo de `W.4.c` puesto donde se ve. **`D.15` dice que este bloque NO pone el gate
+en rojo**, y la vuelta 27 adjudico que la vigencia **no tumba** (`ACTA 27`, *`D.15` diciendo
+literalmente que la vigencia NO pone nada en rojo*). **No es parada.**
+
+### W.8.e. LA IDENTIDAD, LEIDA DE GIT (`EXTRACTOR.md` 5)
+
+<!-- TALLADO: salida=.v30e/identidad_cierre.txt -->
+
+| pieza | valor |
+|---|---|
+| rama | `extraccion-mundo-11` |
+| commit de apertura de la vuelta 30 | `b9f484a` |
+| commit ultimo al escribir este cierre | `445a13e` |
+| commits de esta vuelta sobre la rama | **7** |
+
+### W.8.f. LAS TRES TAREAS, CON SU ESTADO AL CERRAR
+
+| # | tarea | estado | donde |
+|---:|---|---|---|
+| **1** | seguir insertando `cap_07`, que es donde se paro | **CERRADA, 12 de 12** | `W.2` |
+| **2** | el par del calendario, que ninguna señal cruza | **CERRADA**, su veredicto esta en la bitacora | `W.3` |
+| **3** | la cola que sigue abierta, para que no se pierda | **CERRADA como tarea**, y **4 de sus filas se cierran como cola** | `W.4` |
+
+**Son TRES y el tope son cinco** (`EXTRACTOR.md` 1.3). **Ninguna queda a medias y ninguna se declara
+como cola de esta vuelta.**
+
+> ### **Y LA VUELTA NO CIERRA CORTA: CIERRA EN EL TECHO** (`EXTRACTOR.md` 12.4)
+>
+> **`13` candidatos contra un tramo de entre `5` y `15`.** El encargo preveia el caso (*si la
+> insercion se come la vuelta, la vuelta se cierra ahi y lo declaras con su cifra*) **y esta vez la
+> insercion cupo entera**, con las tres tareas dentro.
+>
+> **EL COSTE, MEDIDO Y NO ESTIMADO:** `26` corridas de la aduana (una para leer la cola de cada
+> candidato y otra para insertarlo con sus veredictos escritos), **entre `63` y `136` segundos cada
+> una**. Eso es lo que impidio la cuarta tarea de `cap_04`, y va dicho en `W.4.e` con su fila.
+
+### W.8.g. **LAS SEIS CONDICIONES DE PARADA, REPASADAS UNA A UNA** (`EXTRACTOR.md` 7)
+
+| condicion | lo que mido | veredicto |
+|---|---|---|
+| algo contradice una regla vigente | ninguna regla se contradijo; los dos casos dudosos (`D.37` sin cuenta escrita, la remision de `cap_12`) **se resolvieron dentro de la regla y van marcados como discutibles**, que es lo que `EXTRACTOR.md` 8 manda | **NO ES PARADA** |
+| algo contradice una cifra publicada con su corte | **cero discrepancias**: las `6` de apertura, los `77` pares, los `12` candidatos, los `90` pasos, los `6` y `48` de `cap_04` y los `3` tramos de entradilla **salen todos al digito** contra el encargo y contra `APERTURA_CIEGA.md` | **NO ES PARADA** |
+| una operacion cuyo texto no alcanza para ejecutarse sin decidir | la `TAREA 2` pedia decidir **cuando** entra `bloquear_tiempo_pensar_calendario`, y el propio encargo lo resuelve (*la vuelta que inserte al primero*). **Lo ejecute y marque la decision como discutible `5`** | **NO ES PARADA** |
+| un pendiente de doctrina | **hay dos** (la entradilla sin nodo, y si `rancios` debe distinguir lo declarado). **`EXTRACTOR.md` 7 dice que un pendiente de doctrina NO detiene**: van a `W.7` como propuestas y la vuelta sigue | **NO ES PARADA** |
+| una guarda en rojo al sellar (`D.45`) | las cuatro en verde al cerrar (`W.8.a`), **corridas al cierre y no al empezar**, y el arbol queda limpio | **NO ES PARADA** |
+| una caida de dato | **ninguna**. `13` inserciones, `13` incrementos consecutivos del censo de `244` a `256`, **el cerrojo sin avisar una sola vez**, y la bitacora con `8` lineas tocadas y `367` intactas, comprobado por diferencia | **NO ES PARADA** |
+
+**NINGUNA DE LAS SEIS SE CUMPLE. LA VUELTA 30 CIERRA SIN PARADA Y SIN CAIDA DE DATO DECLARADA.**

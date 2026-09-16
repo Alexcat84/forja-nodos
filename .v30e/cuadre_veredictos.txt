@@ -1,0 +1,9 @@
+LAS LINEAS NUEVAS DE LA BITACORA, REPARTIDAS POR QUIEN LAS ESCRIBIO
+  lineas al abrir : 289
+  lineas al cerrar: 375
+  lineas nuevas   : 86
+    vecinos levantados por la aduana y juzgados   : 82
+    aristas D.37 declaradas con forja.py arista   : 3
+    veredictos declarados por lectura sin arista  : 1
+    suma                                          : 86
+  lineas ANOTADAS sin aniadir linea nueva (D.15)  : 8

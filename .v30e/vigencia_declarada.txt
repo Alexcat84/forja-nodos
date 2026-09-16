@@ -1,0 +1,5 @@
+EL BLOQUE DE VIGENCIA, CRUZADO CONTRA LA MARCA QUE LO DECLARA
+  hallazgos del instrumento : 34
+  RANCIO                    : 26, declarados 26, sin declarar 0
+  SIN HUELLA                : 8, declarados 8, sin declarar 0
+  las lineas SIN HUELLA     : 252, 256, 258, 260, 261, 262, 263, 264

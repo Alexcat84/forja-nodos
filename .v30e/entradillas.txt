@@ -1,0 +1,12 @@
+poblacion: dataset/nodos.jsonl mas cuarentena/scott_radical_candor
+los rotulos se leen de fuentes/scott_radical_candor/cap_07.md con grep -n, no se teclean
+
+| rotulo de etapa | linea del rotulo | nodo cuyo tramo declarado lo cubre |
+|---|---:|---|
+| `LISTEN` | `L79` | **NINGUNO: es cola** |
+| `CLARIFY` | `L165` | **NINGUNO: es cola** |
+| `DEBATE` | `L213` | **NINGUNO: es cola** |
+| `DECIDE` | `L259` | `repartir_decision_cercanos_hechos` (GRAFO) |
+| `PERSUADE` | `L303` | `persuadir_emocion_oyente_no_propia` (GRAFO) |
+| `EXECUTE` | `L367` | `minimizar_impuesto_colaboracion_equipo` (GRAFO) |
+| `LEARN` | `L389` | `aprender_resultados_vencer_dos_presiones` (GRAFO) |

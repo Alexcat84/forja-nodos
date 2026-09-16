@@ -1,0 +1,5 @@
+LA BITACORA, ANTES Y DESPUES DE LAS OCHO ANOTACIONES
+  lineas antes  : 375
+  lineas ahora  : 375
+  lineas tocadas: 8  ->  252, 256, 258, 260, 261, 262, 263, 264
+  lineas intactas: 367
