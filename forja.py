@@ -15,6 +15,10 @@
     python forja.py rancios                     el bloque de vigencia (D.15)
     python forja.py resolutor [id ...]          el resolutor de ids
     python forja.py censos                      crea las plantillas de censo
+    python forja.py herencia [--acta "ACTA 28"] lo que esta vuelta hereda (D.40).
+                                                Sin --acta, la ULTIMA acta, que es
+                                                lo que corre el arnes
+    python forja.py herencia --comprobar        la apertura ciega contra ello
     python forja.py ayuda
 """
 

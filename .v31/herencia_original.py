@@ -14,48 +14,10 @@ LO QUE HACE. Lee la ULTIMA acta de `docs/loop/ACTA_AUDITOR.md` (de su ultimo
 encabezado `# ACTA` hasta el final) y saca de ahi:
 
   - cada bloque en cita cuyo titulo diga `TAREA BLOQUEANTE DEL AUDITOR`
-  - **cada FILA de la tabla de remedios que esa acta ESCRIBE**
+  - cada seccion cuyo encabezado nombre un `REMEDIO`
 
-y los numera.
-
-ENTREGA LOS REMEDIOS QUE EL ACTA ESCRIBE, NO LOS QUE CITA (16 sep 2026, TAREA 2 de
-la vuelta 31, encargada por la `ACTA 29` `8.1` con su caida delante). **Hasta hoy
-cogia cada seccion cuyo encabezado nombrara un REMEDIO, y eso es otra cosa.** Un
-auditor escribe sus remedios UNA vez, en su tabla, y despues los MENCIONA muchas:
-para decir que se cumplieron, para contarse una caida, hasta en el titulo del acta.
-La regla vieja se quedaba con las menciones y perdia la tabla.
-
-    LO QUE MEDIA LA REGLA VIEJA, corrido contra la ACTA 28:
-      HEREDADO 1  -> ACTA 28 seccion 3.2   (CITA el remedio 2 de la ACTA 27)
-      HEREDADO 2  -> ACTA 28 seccion 6.1   (CITA el heredado 1 para decir que aguanto)
-    y su tabla de remedios, la de su seccion 10, NO SALIA.
-
-    Y CONTRA LA ACTA 29 era peor: el HEREDADO 1 era **el titulo del acta**, que
-    lleva la palabra remedio dentro de la frase `rompiendo el remedio que yo mismo
-    escribi`.
-
-**EL COSTE ESTA MEDIDO Y NO ES HIPOTETICO:** el auditor de la `ACTA 29` rompio en su
-apertura sellada el `REMEDIO 1` que el mismo habia escrito, **porque el arnes no se lo
-entrego** (`ACTA 29` `8.1`). Se lo cargo igualmente, citando `D.40`: *el fallo era de
-arquitectura, y la arquitectura es del arnes.*
-
-LA FORMA QUE SE RECONOCE, Y ES LA QUE ESTA CASA YA ESCRIBE: una tabla markdown cuya
-CABECERA nombre `REMEDIO`, **fuera de cita**. Cada fila de datos es un remedio.
-
-    | # | **REMEDIO** | como se comprueba que se cumplio |
-    |---:|---|---|
-    | **1** | **NINGUNA CELDA DE MI APERTURA SELLADA ...** | que ninguna celda ... |
-
-**FUERA DE CITA es la mitad que hace el trabajo:** un acta que copia la tabla de la
-anterior dentro de un bloque de cita la esta CITANDO, y eso es justo lo que no se
-entrega.
-
-**Y SI EL ACTA NOMBRA REMEDIOS Y NO PONE TABLA, EL INSTRUMENTO LO DICE EN VOZ ALTA**
-en vez de callarse: un arnes que entrega cero remedios sin avisar es el mismo defecto
-por la puerta de atras.
-
-EL ARNES **antepone** esa lista al prompt de la fase ciega, y **exige** que la
-apertura ciega traiga:
+y los numera. El arnes **antepone** esa lista al prompt de la fase ciega, y
+**exige** que la apertura ciega traiga:
 
     ACTA ANTERIOR LEIDA: <hash>
     HEREDADO 1: CUMPLIDO            (o NO APLICA, con su motivo detras)
@@ -110,18 +72,6 @@ TITULO_TAREA = "TAREA BLOQUEANTE DEL AUDITOR"
 ENCABEZADO = re.compile(r"^>?\s*#{1,6}\s")
 TOPE_DE_CUERPO = 40          # lineas por item: el resto se cita por su linea
 
-# LA TABLA DE REMEDIOS: una tabla markdown, FUERA DE CITA, cuya cabecera nombre
-# REMEDIO. Lo que se entrega son sus FILAS, una por remedio.
-FILA = re.compile(r"^\s*\|")
-SEPARADOR = re.compile(r"^\s*\|[\s:|-]+\|?\s*$")
-EN_CITA = re.compile(r"^\s*>")
-# LA CELDA TIENE QUE SER LA COLUMNA REMEDIO, NO UNA QUE NOMBRE LA PALABRA. La
-# ACTA 29 9.4 pone `| lo que detecto | el remedio autorizado | donde lo encargo |`,
-# que es una tabla SOBRE remedios y no la que los escribe. Se exige la cabecera
-# desnuda, que es como esta casa la escribe: `| # | **REMEDIO** | como se comprueba |`.
-CABECERAS_DE_REMEDIO = ("REMEDIO", "REMEDIOS")
-NUMERO_ACTA = re.compile(r"^#*\s*ACTA\s+(\d+)")
-
 
 def huella(ruta):
     """La misma huella que usa el testigo del arnes, para no medir de dos formas."""
@@ -153,128 +103,41 @@ def _recortar(cuerpo, linea_inicial):
         "D.34.2 retira.]" % (resto, linea_inicial + TOPE_DE_CUERPO)]
 
 
-def _es_cabecera_de_remedios(lineas, numero):
-    """Cierto si la linea `numero` abre una tabla cuya CABECERA nombra REMEDIO.
-
-    LAS TRES CONDICIONES, y ninguna sobra:
-
-      1. **es la PRIMERA fila de su tabla.** Sin esto, una fila de datos que diga
-         `REMEDIO ROTO` abre una tabla de remedios que nadie escribio: es el falso
-         positivo real de la `ACTA 29` `8.1`, cuya tabla `| | |` lleva esa celda.
-      2. **lleva el separador markdown justo debajo.** Es lo que distingue una
-         cabecera de una fila suelta.
-      3. **no esta en cita.** Una tabla copiada dentro de un bloque de cita se esta
-         CITANDO, y citar es justo lo que no se entrega.
-
-    Se mira celda a celda y sin adorno: esta casa escribe `| # | **REMEDIO** | ... |`
-    y la negrita no es parte del nombre de la columna.
-    """
-    linea = lineas[numero]
-    if EN_CITA.match(linea) or not FILA.match(linea):
-        return False
-    anterior = lineas[numero - 1] if numero > 0 else ""
-    if FILA.match(anterior):
-        return False
-    if numero + 1 >= len(lineas) or not SEPARADOR.match(lineas[numero + 1]):
-        return False
-    for celda in linea.strip().strip("|").split("|"):
-        if ADORNO.sub("", celda).strip().upper() in CABECERAS_DE_REMEDIO:
-            return True
-    return False
-
-
-def _seccion_de(lineas, numero):
-    """El encabezado bajo el que vive esa linea, para que la fila no llegue desnuda."""
-    for atras in range(numero, -1, -1):
-        if ENCABEZADO.match(lineas[atras]) and not MARCA_ACTA.match(lineas[atras]):
-            return lineas[atras].strip()
-    return ""
-
-
-def _numero_de_acta(texto):
-    """El numero propio de un encabezado de acta: `# ACTA 28. VUELTA ...` da `28`."""
-    encaje = NUMERO_ACTA.match(ADORNO.sub("", (texto or "").strip()))
-    return encaje.group(1) if encaje else ""
-
-
-def _acta_pedida(lineas, seleccion):
-    """(inicio, fin, titulo) del acta pedida. Sin seleccion, la ULTIMA."""
-    marcas = [n for n, l in enumerate(lineas) if MARCA_ACTA.match(l)]
-    if not marcas:
-        return 0, len(lineas), "(sin encabezado de acta)"
-    elegida = marcas[-1]
-    if seleccion:
-        # SE ELIGE POR EL NUMERO PROPIO DEL ACTA, NO POR LOS QUE SU TITULO CITA.
-        # El titulo de la ACTA 29 nombra dentro a la 28 y a la 27, asi que buscar
-        # el texto suelto devolvia siempre la ultima: la misma especie de defecto
-        # que esta tarea vino a cerrar, cazada al probarla.
-        numeros = [_numero_de_acta(lineas[n]) for n in marcas]
-        busca = _numero_de_acta(seleccion) or _numero_de_acta("ACTA " + str(seleccion))
-        candidatas = [n for n, suyo in zip(marcas, numeros) if suyo and suyo == busca]
-        if not candidatas:
-            raise ValueError("ninguna acta lleva el numero de %r. Las que hay: %s"
-                             % (seleccion, ", ".join(s for s in numeros if s)))
-        elegida = candidatas[-1]
-    siguientes = [n for n in marcas if n > elegida]
-    fin = siguientes[0] if siguientes else len(lineas)
-    return elegida, fin, lineas[elegida].strip().lstrip("# ").strip()
-
-
-def extraer(ruta_acta=None, seleccion=None):
-    """Devuelve el diccionario de lo que la vuelta hereda.
-
-    `seleccion` es un trozo del encabezado del acta (`"ACTA 28"`), y existe para el
-    CASO POSITIVO: una guarda que solo se puede probar contra el acta de hoy no se
-    puede probar (cosecha 7.C). Sin ella se lee la ULTIMA, que es lo que hace el arnes.
-    """
+def extraer(ruta_acta=None):
+    """Devuelve el diccionario de lo que la vuelta hereda."""
     ruta_acta = ruta_acta or RUTA_ACTA
     if not os.path.exists(ruta_acta):
-        return {"huella": "sin-acta", "acta": "(no hay acta todavia)", "items": [],
-                "avisos": []}
+        return {"huella": "sin-acta", "acta": "(no hay acta todavia)", "items": []}
     lineas = comun.leer_texto(ruta_acta).split("\n")
-    inicio, fin, titulo = _acta_pedida(lineas, seleccion)
-    items, avisos = [], []
-    menciones = 0
+    inicio, titulo = _ultima_acta(lineas)
+    items = []
 
     numero = inicio
-    while numero < fin:
+    while numero < len(lineas):
         linea = lineas[numero]
         # 1. EL BLOQUE EN CITA con el titulo de la tarea bloqueante.
         if linea.lstrip().startswith(">") and TITULO_TAREA in linea:
             cuerpo = []
-            while numero < fin and lineas[numero].lstrip().startswith(">"):
+            while numero < len(lineas) and lineas[numero].lstrip().startswith(">"):
                 cuerpo.append(lineas[numero])
                 numero += 1
             items.append({"clase": "TAREA BLOQUEANTE", "linea": numero - len(cuerpo) + 1,
                           "cuerpo": _recortar(cuerpo, numero - len(cuerpo) + 1)})
             continue
-        # 2. LA TABLA DE REMEDIOS QUE EL ACTA ESCRIBE: se entregan sus FILAS.
-        if _es_cabecera_de_remedios(lineas, numero):
-            cabecera, seccion = linea, _seccion_de(lineas, numero)
-            numero += 1
-            if numero < fin and SEPARADOR.match(lineas[numero]):
-                numero += 1
-            while (numero < fin and FILA.match(lineas[numero])
-                   and not EN_CITA.match(lineas[numero])):
-                items.append({"clase": "REMEDIO", "linea": numero + 1,
-                              "cuerpo": _recortar([seccion, "", cabecera,
-                                                   lineas[numero]], numero + 1)})
-                numero += 1
-            continue
-        # 3. LO QUE SOLO MENCIONA LA PALABRA SE CUENTA, PARA PODER AVISAR.
+        # 2. LA SECCION cuyo encabezado nombra un remedio.
         if ENCABEZADO.match(linea) and "REMEDIO" in linea.upper():
-            menciones += 1
+            primera = numero
+            cuerpo = [linea]
+            numero += 1
+            while numero < len(lineas) and not ENCABEZADO.match(lineas[numero]):
+                cuerpo.append(lineas[numero])
+                numero += 1
+            items.append({"clase": "REMEDIO", "linea": primera + 1,
+                          "cuerpo": _recortar(cuerpo, primera + 1)})
+            continue
         numero += 1
 
-    if menciones and not any(i["clase"] == "REMEDIO" for i in items):
-        avisos.append(
-            "AVISO: esta acta MENCIONA remedios en %d encabezado(s) y no ESCRIBE "
-            "ninguna tabla de remedios fuera de cita. No se entrega ninguno, y se "
-            "dice en voz alta: un arnes que entrega cero sin avisar es el defecto "
-            "que la TAREA 2 de la vuelta 31 vino a cerrar." % menciones)
-
-    return {"huella": huella(ruta_acta), "acta": titulo, "items": items,
-            "avisos": avisos}
+    return {"huella": huella(ruta_acta), "acta": titulo, "items": items}
 
 
 def texto_para_prompt(herencia):
@@ -288,8 +151,6 @@ def texto_para_prompt(herencia):
               "  su huella     : %s" % herencia["huella"],
               "  heredados     : %d" % len(herencia["items"]),
               ""]
-    for aviso in herencia.get("avisos") or []:
-        lineas.extend([aviso, ""])
     if not herencia["items"]:
         lineas.append("El acta anterior no dejo ninguna tarea bloqueante ni ningun "
                       "remedio escrito. Aun asi tienes que declarar la linea de lectura.")
@@ -396,19 +257,7 @@ def comprobar(herencia, ruta_apertura=None):
 def main(argumentos=None):
     comun.salida_utf8()
     argumentos = list(argumentos or [])
-    seleccion = None
-    if "--acta" in argumentos:
-        donde = argumentos.index("--acta")
-        if donde + 1 >= len(argumentos):
-            print("forja.py herencia --acta necesita un trozo del encabezado del "
-                  "acta, por ejemplo: --acta ACTA 28")
-            return 2
-        seleccion = argumentos[donde + 1]
-    try:
-        herencia = extraer(seleccion=seleccion)
-    except ValueError as fallo:
-        print("forja.py herencia: %s" % fallo)
-        return 2
+    herencia = extraer()
     if "--comprobar" in argumentos:
         faltan = comprobar(herencia)
         if not faltan:

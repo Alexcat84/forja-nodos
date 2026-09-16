@@ -1,0 +1,30 @@
+REMEDIOS PENDIENTES QUE HEREDAS
+
+Esto NO lo has buscado tu: lo entrega el arnes (D.40), porque tres actas seguidas perdieron el mismo remedio por tener que ir a buscarlo.
+
+  acta anterior : ACTA 29. VUELTA 30, lote 4 (`scott_radical_candor`), `cap_07` CERRADO EN INSERCION mas la cabeza `THINK TIME` de `cap_11`: la vuelta sale **limpia de `CLASE` y de `CIFRA PUBLICADA`**, sus **veintiuna cifras me salen al digito**, mis **dieciseis relecturas pineadas se sostienen las dieciseis** y sus **ocho discutibles se sostienen los ocho**. Y aun asi: **una cita que publica en celda de tabla apunta a la `ACTA 28` y la adjudicacion vive en la `ACTA 27`**, y **mi propia apertura sellada publica `4` puentes que son `0`, rompiendo el remedio que yo mismo escribi. `REPORTE` sube a `1 de 3` y MI RACHA a `1 de 3`. NO HAY PARADA**
+  su huella     : 5ddb0d9f61253f785e3878cee54a9b17173d8731
+  heredados     : 3
+
+HEREDADO 1   [REMEDIO, linea 27009 del acta]
+### 8.5. **MIS REMEDIOS PARA EL SIGUIENTE, numerados y con comprobacion mecanica**
+
+| # | **REMEDIO** | como se comprueba que se cumplio |
+| **1** | **NINGUNA CELDA DE MI APERTURA SELLADA LLEVA UN NUMERO QUE SALGA DE UNA LECTURA MIA.** Si el numero lo produce un instrumento, va con su salida pegada; **si lo produzco yo leyendo, la celda dice `POR ADJUDICAR` y el numero va en la frase, marcado `LECTURA`** | que **ninguna celda de tabla** de `APERTURA_CIEGA.md` contenga una cifra cuya unica fuente sea una lectura mia, y que **cada `POR ADJUDICAR` tenga su seccion en el acta** |
+
+HEREDADO 2   [REMEDIO, linea 27010 del acta]
+### 8.5. **MIS REMEDIOS PARA EL SIGUIENTE, numerados y con comprobacion mecanica**
+
+| # | **REMEDIO** | como se comprueba que se cumplio |
+| **2** | **LA RELECTURA CIEGA DESTAPA UNA RAZON POR VEZ, Y DESPUES DE ESCRIBIR MI CLASE A FICHERO.** Nunca un comando que saque varias razones de golpe | que el acta publique **la hora del fichero de mis clases** y que sea **anterior** a la primera consulta de la bitacora. Hoy: `.v30c/mis_clases_pineada.txt`, `16:32:33` |
+
+HEREDADO 3   [REMEDIO, linea 27011 del acta]
+### 8.5. **MIS REMEDIOS PARA EL SIGUIENTE, numerados y con comprobacion mecanica**
+
+| # | **REMEDIO** | como se comprueba que se cumplio |
+| **3** | **TODA REGLA QUE CITE LA LEO EN SU SEDE EN LA MISMA FASE EN QUE LA CITO.** Mi caida de `4.2` fue citar el manual de memoria y atribuirle lo contrario de lo que dice | que cada cita de regla del acta o de la apertura **lleve su texto pegado o su numero de seccion comprobado**, no solo su nombre |
+
+LO QUE TU APERTURA CIEGA TIENE QUE TRAER, O EL ARNES SE DETIENE ANTES DE QUE ESCRIBAS EL ACTA:
+
+    ACTA ANTERIOR LEIDA: 5ddb0d9f61253f785e3878cee54a9b17173d8731
+    HEREDADO 1: CUMPLIDO          (o NO APLICA y su motivo detras)

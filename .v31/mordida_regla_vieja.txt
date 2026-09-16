@@ -1,0 +1,15 @@
+LA GUARDA MUERDE: la misma prueba, contra el codigo viejo y contra el nuevo
+
+$ (src/herencia.py VIEJO, el de antes de esta vuelta)
+  AssertionError: 'SOLO LO CITO' unexpectedly found in '> ### **TAREA BLOQUEANTE DEL AUDITOR DE LA VUELTA 10, ESCRITA POR EL AUDITOR DE LA 9**\n>\n> Pega el instrumento al lado de cada cifra.\n### 7.4. EL REMEDIO QUE SI CUMPLI, Y AQUI SOLO LO CITO\nEsta seccion MENCIONA el remedio de la ACTA 8 para decir que aguanto. Citar no es\nescribir, asi que NO SE HEREDA: es la caida que costo la ACTA 29 8.1.\n\n> | # | **REMEDIO** | como se comprueba que se cumplio |\n> |---:|---|---|\n> | **1** | LA TABLA COPIADA DENTRO DE UNA CITA ESTA CITADA, NO ESCRITA | y por eso no se entrega |\n\n## 8. MIS REMEDIOS PARA EL SIGUIENTE\n\n| # | **REMEDIO** | como se comprueba que se cumplio |\n|---:|---|---|\n| **1** | PEGA EL INSTRUMENTO AL LADO DE CADA CIFRA | que cada cifra lleve su salida debajo |\n'
+  
+  ----------------------------------------------------------------------
+  Ran 1 test in 0.071s
+  
+  FAILED (failures=1)
+
+$ (src/herencia.py NUEVO, el de la TAREA 2)
+  ----------------------------------------------------------------------
+  Ran 1 test in 0.047s
+  
+  OK
