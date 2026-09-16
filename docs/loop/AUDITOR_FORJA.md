@@ -154,6 +154,31 @@ ultimas caidas propias fueron de la misma familia: una cifra de esa fase.
 **NO ES UNA PROHIBICION DE MEDIR: ES UNA PROHIBICION DE CONTAR A OJO.** El metodo
 del barrido, con instrumentos que ya existen, esta en `D.38.4` del banco.
 
+> ### **Y DESDE EL 16 sep 2026: LA FRASE ES LA DEL INSTRUMENTO** (`D.38.3` ensanchada)
+>
+> **La linea que acompania a una cifra dice lo que el instrumento MIDIO.** Toda
+> conclusion sobre **contenido** va en **linea aparte marcada `LECTURA`**, con lo que la
+> sostiene. **Contar campos y publicar una frase sobre contenido es caida de cifra.**
+>
+> **TE PASO A TI, y por eso esta aqui:** la vuelta 26 corrio un censo de **campos** y
+> publico *ningun nodo dice de que capitulo sale*. **`33` de `234` lo decian.** El
+> instrumento estaba pegado y la cifra era cierta: **lo falso era la frase.**
+>
+> **NINGUNA MAQUINA TE VA A CAZAR ESTO**, y por eso la regla es de forma: separa la
+> medida de la conclusion y **deja tu conclusion a la vista, marcada**, para que el
+> siguiente lector la cace. Una conclusion escondida dentro de la frase de una cifra
+> viaja de acta en acta sin que nadie la mire.
+
+> ### **Y UN `NO APLICA` LLEVA LA SALIDA PEGADA** (`D.40` ensanchada, 16 sep 2026)
+>
+> **No basta el motivo: debajo va el comando que lo sostiene**, con una linea que empiece
+> por `$`. **Sin salida pegada el sello NO lo acepta y el arnes se detiene.**
+>
+> **El caso es tuyo tambien:** declaraste `NO APLICA` con el motivo de que ninguno de tus
+> instrumentos escribia en el arbol, **seis escribian**, y el barrido estaba en rojo con
+> ocho hallazgos tuyos. **Una salida pegada no prueba que el motivo sea cierto, pero
+> obliga a correr algo antes de escribirlo.**
+
 ### Y DESDE `D.40`, LA HERENCIA TE LLEGA ENTREGADA, Y TIENES QUE DECLARARLA
 
 > **`D.40`: LO QUE UN AUDITOR LE DEJA AL SIGUIENTE LO ENTREGA EL ARNES, NO LA
@@ -369,6 +394,20 @@ frase mientras los datos estaban intactos.
   extractor. La metrica que solo encuentra fallos ajenos no es una metrica.
 
 ### 5.4. Cuando para, y quien la reinicia
+
+> ### **CORRECCION DECLARADA, 16 sep 2026: QUE SIGNIFICA `LIMPIA`**
+>
+> > **`LIMPIA` SIGNIFICA SIN CAIDAS DE LA ESPECIE QUE ESA RACHA ACUMULA.** Una tanda
+> > con caidas solo de las que **no** acumulan **reinicia la racha igual.**
+>
+> **NO TIENES QUE VOLVER A DECIDIR ESTO CADA VUELTA.** Tus dos predecesores lo
+> razonaron contra si mismos, los dos eligieron la lectura que les perjudicaba, y los
+> dos lo dejaron escrito para que cualquiera pudiera decir que se habian absuelto.
+> **Eso habla bien de ellos y mal de la regla.**
+>
+> **LA CAIDA QUE NO ACUMULA SE SIGUE REGISTRANDO CON TU NOMBRE**, que es lo que la
+> hace util: lo unico que deja de hacer es **congelar** el contador.
+
 
 - **CLASE o CIFRA PUBLICADA: dos tandas seguidas.**
 - **REPORTE: tres tandas seguidas** de la especie que acumula.

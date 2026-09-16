@@ -1366,6 +1366,28 @@ fundador**, y el acta lo dice citando cual de las dos (`AUDITOR_FORJA.md` 5.4).
 **Un auditor que pone su propia racha a cero sin una de esas dos cosas se esta
 absolviendo.**
 
+> ## **QUE SIGNIFICA `LIMPIA`, RESUELTO PARA SIEMPRE** (16 sep 2026, decision del fundador)
+>
+> > **`LIMPIA` SIGNIFICA SIN CAIDAS DE LA ESPECIE QUE ESA RACHA ACUMULA.**
+> >
+> > **Una tanda con caidas solo de las que NO acumulan reinicia la racha igual.**
+>
+> **POR QUE HACIA FALTA DECIRLO.** `D.38.1` dijo *una tanda limpia pone el contador a
+> cero* y **no dijo que es limpia**. Con una caida registrada que no acumula, la regla
+> tenia dos lecturas, y la diferencia entre ellas **era una parada**.
+>
+> **Y NO ERA UNA DUDA TEORICA: PASO TRES ACTAS SEGUIDAS.** La `ACTA 25` se la planteo
+> sobre si misma y escribio *que ninguna acumule por la letra no la vuelve limpia*; la
+> `ACTA 26` la volvio a plantear y volvio a elegir la lectura estrecha; y las dos lo
+> hicieron **sabiendo que la otra lectura las salvaba**, y dejandolo escrito para que
+> cualquiera pudiera acusarlas de absolverse.
+>
+> > ### **UNA REGLA QUE OBLIGA A CADA AUDITOR A DECIDIR SI SE ABSUELVE ES UNA PRUEBA DE CARACTER, NO UNA REGLA. SE ACABA HOY.**
+>
+> **LO QUE NO CAMBIA:** la racha **sigue sin reiniciarse sola por el paso del tiempo**,
+> y la caida que no acumula **se sigue registrando con su nombre**. Lo que deja de
+> pasar es que una caida registrada y no acumulable **congele** el contador.
+
 ### D.38.2. El auditor tiene UNA sola racha, con DOS especies propias
 
 > **`REMEDIO ROTO` y `CIFRA PUBLICADA PROPIA` acumulan EN LA MISMA RACHA. Tres
@@ -1489,6 +1511,39 @@ capaz de darlas. **Ahora el cruce es obligatorio.**
 es cada candidato, de que especie es cada pieza) y **lecturas** (que dice el texto,
 que linea lo sostiene). **Eso es lo que despues se compara con la del extractor**,
 y para eso no hace falta ninguna cifra contada de memoria.
+
+> ## SE ENSANCHA, 16 sep 2026: **LA FRASE ES LA DEL INSTRUMENTO**
+>
+> *Punto 2.b de la decision del fundador del 16 sep 2026.*
+>
+> > **LA LINEA QUE ACOMPANIA A UNA CIFRA DICE LO QUE EL INSTRUMENTO MIDIO** (*campo `X`
+> > presente en `33` de `234`*), **Y TODA CONCLUSION SOBRE CONTENIDO VA EN LINEA APARTE
+> > MARCADA `LECTURA`, CON LO QUE LA SOSTIENE.**
+> >
+> > **Contar campos y publicar una frase sobre contenido es caida de cifra.**
+>
+> **EL CASO.** La vuelta 26 corrio un censo de **campos** y publico, en su apertura
+> sellada, que *ningun nodo del grafo y ningun candidato de la bandeja dice de que capitulo
+> sale*. **`33` de `234` lo dicen**, en `resumen_teorico`, **y los doce de esa vuelta
+> estaban entre ellos.** El instrumento estaba pegado y la cifra era cierta: **lo falso era
+> la frase.**
+>
+> **NINGUNA MAQUINA COMPRUEBA SEMANTICA, y por eso esta mitad es de FORMA y no de codigo.**
+> Lo que la forma consigue es separar **la medida** de **la conclusion**, y **dejar la
+> conclusion a la vista, marcada, para que el siguiente lector la cace.** Una conclusion
+> escondida dentro de la frase de una cifra viaja de acta en acta sin que nadie la mire;
+> una marcada `LECTURA` se lee como lo que es: **una lectura, que puede estar mal.**
+>
+> **ASI SE ESCRIBE:**
+>
+>     campo cap_NN presente en resumen_teorico : 33 de 234
+>     $ grep -lc "cap_[0-9]" ...   ->  33
+>     LECTURA: la costumbre de nombrar la unidad empieza en cap_07, asi que los
+>     anteriores no la traen. La sostiene el reparto por commit de alta de 4.2.
+>
+> **Y LA REGLA DE ORO DE LA FASE CIEGA SIGUE ENTERA:** *contar bien un campo y sacar la
+> conclusion equivocada sigue siendo una caida; la fuente hay que elegirla antes de
+> contarla* (`AUDITOR_FORJA.md` `0`).
 
 **NO ES UNA PROHIBICION DE MEDIR: ES UNA PROHIBICION DE CONTAR A OJO.** Medir con
 el instrumento y pegar su salida esta no solo permitido, sino que es lo unico que
@@ -1777,6 +1832,35 @@ sobreviva ocho actas no es herencia, es deuda vieja y se declara a mano.
 **`NO APLICA` EN BLANCO NO VALE.** Un remedio que no toca esta vuelta se declara y se
 dice por que; dejarlo sin motivo es perderlo con una palabra encima, que es justo lo que
 esta regla vino a impedir.
+
+> ## SE ENSANCHA, 16 sep 2026: **UN `NO APLICA` LLEVA LA SALIDA PEGADA**
+>
+> *Punto 2.a de la decision del fundador del 16 sep 2026, sobre la parada de la vuelta 26.*
+>
+> > **UN `NO APLICA` SOBRE UN HEREDADO LLEVA PEGADA LA SALIDA DEL INSTRUMENTO QUE LO
+> > SOSTIENE, NO SOLO EL MOTIVO. SIN SALIDA PEGADA, EL SELLO NO LO ACEPTA.**
+>
+> **EL CASO, Y ES LITERAL.** La vuelta 26 declaro `NO APLICA` el heredado que le pedia
+> sanear los guiones al volcar texto del libro al arbol, **con el motivo de que ninguno de
+> sus instrumentos escribia en el arbol.** Seis escribian, **su propia tabla los lista**, y
+> **el barrido de guiones estaba en ROJO con ocho hallazgos suyos** al empezar su turno.
+>
+> **`D.40` EXIGIA MOTIVO Y EL MOTIVO ESTABA ESCRITO: exigia que lo hubiera, no que fuera
+> cierto.** Esa es la grieta, y es la misma forma que `D.41` y `D.42` ya cerraron en sus
+> sedes: **una regla que se cumple escribiendo algo se cumple escribiendo cualquier cosa.**
+>
+> **UNA SALIDA PEGADA NO PRUEBA QUE EL MOTIVO SEA CIERTO**, y conviene decirlo para no
+> vender mas de lo que es. **Lo que hace es obligar a correr algo antes de escribirlo**, y
+> ese motivo concreto **lo habria cazado al instante**: no hay forma de pegar un comando que
+> diga que ninguno escribe cuando seis escriben.
+>
+> **LA FORMA:** una linea que empiece por `$` dentro de las doce lineas siguientes a la
+> declaracion. Vale el markdown de la casa (cita, negrita, sangria). **Un `CUMPLIDO` no la
+> necesita**: la exigencia es de la excusa, no del cumplimiento.
+>
+> **Sede:** `src/herencia.py`. **Pruebas:** 5 mas, con su caso positivo (un `NO APLICA`
+> pelado cae), su negativo (con la salida debajo pasa) y el que fija que **pegada quiere
+> decir DEBAJO** y no en cualquier sitio del documento.
 
 **Y EL `<hash>` ES EL DE `git hash-object` SOBRE EL ACTA**, el mismo que usa el testigo:
 **no vale decir que se leyo otra version.**

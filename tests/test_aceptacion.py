@@ -1686,6 +1686,7 @@ Esto ya no pertenece al remedio anterior.
             "ACTA ANTERIOR LEIDA: %s\n"
             "HEREDADO 1: CUMPLIDO\n"
             "HEREDADO 2: NO APLICA porque esta vuelta no publica cifras ajenas\n"
+            "    $ el comando que lo sostiene   ->  (su salida)\n"
             % datos["huella"])
         self.assertEqual(herencia.comprobar(datos, ruta), [])
 
@@ -1736,7 +1737,8 @@ El arnes me entrega como `HEREDADO 1` la seccion 7.6 del acta anterior.
         """CASO NEGATIVO. Es la apertura real de la vuelta 19, que la guarda tumbo."""
         datos = herencia.extraer(self._acta())
         ruta = self._apertura((self.APERTURA_DE_LA_19 % datos["huella"])
-                              + "\nHEREDADO 2: NO APLICA porque no hay cifras ajenas\n")
+                              + "\nHEREDADO 2: NO APLICA porque no hay cifras ajenas\n"
+                              + "    $ el comando que lo sostiene -> (su salida)\n")
         self.assertEqual(herencia.comprobar(datos, ruta), [])
 
     def test_citar_dos_veces_la_linea_que_declaras_no_tumba_la_vuelta(self):
@@ -1746,6 +1748,7 @@ El arnes me entrega como `HEREDADO 1` la seccion 7.6 del acta anterior.
         ruta = self._apertura(
             "ACTA ANTERIOR LEIDA: %s\nHEREDADO 1: CUMPLIDO\n"
             "HEREDADO 2: NO APLICA porque esta vuelta no publica cifras ajenas\n"
+            "    $ el comando que lo sostiene   ->  (su salida)\n"
             "\n## tabla de cierre\n"
             "| herencia | ACTA ANTERIOR LEIDA: %s, HEREDADO 1: CUMPLIDO |\n"
             % (datos["huella"], datos["huella"]))
@@ -1784,7 +1787,68 @@ El arnes me entrega como `HEREDADO 1` la seccion 7.6 del acta anterior.
             "ACTA ANTERIOR LEIDA: %s\n"
             "| resumen | HEREDADO 1: NO APLICA |\n"
             "HEREDADO 1: NO APLICA porque esta vuelta no toca esa sede\n"
+            "    $ el comando que lo sostiene   ->  (su salida)\n"
             "HEREDADO 2: CUMPLIDO\n" % datos["huella"])
+        self.assertEqual(herencia.comprobar(datos, ruta), [])
+
+    def test_caso_positivo_un_NO_APLICA_sin_salida_pegada_no_lo_acepta_el_sello(self):
+        """D.40 ensanchada el 16 sep 2026, punto 2.a de la decision.
+
+        La vuelta 26 declaro `NO APLICA` un heredado con el motivo de que ninguno de
+        sus instrumentos escribia en el arbol. **Seis escribian, su propia tabla los
+        listaba, y el barrido de guiones estaba en ROJO con ocho hallazgos suyos.**
+        `D.40` exigia motivo y el motivo estaba escrito: exigia que lo hubiera, **no
+        que fuera cierto.**
+        """
+        datos = herencia.extraer(self._acta())
+        ruta = self._apertura(
+            "ACTA ANTERIOR LEIDA: %s" % datos["huella"] + chr(10) +
+            "HEREDADO 1: NO APLICA porque ninguno de mis instrumentos escribe" + chr(10) +
+            "HEREDADO 2: CUMPLIDO" + chr(10))
+        faltan = herencia.comprobar(datos, ruta)
+        self.assertEqual(len(faltan), 1)
+        self.assertIn("SIN LA SALIDA DEL INSTRUMENTO PEGADA", faltan[0])
+        self.anotar("D40_salida", "NO APLICA sin salida pegada: cazado")
+
+    def test_caso_negativo_con_la_salida_pegada_debajo_pasa(self):
+        datos = herencia.extraer(self._acta())
+        ruta = self._apertura(
+            "ACTA ANTERIOR LEIDA: %s" % datos["huella"] + chr(10) +
+            "HEREDADO 1: NO APLICA porque ninguno de mis instrumentos escribe" + chr(10) +
+            "    $ grep -l open( .v27/*.py    ->  (ninguno)" + chr(10) +
+            "HEREDADO 2: CUMPLIDO" + chr(10))
+        self.assertEqual(herencia.comprobar(datos, ruta), [])
+
+    def test_la_salida_pegada_se_busca_en_el_markdown_de_la_casa(self):
+        """El auditor escribe en markdown, con cita y negrita."""
+        datos = herencia.extraer(self._acta())
+        ruta = self._apertura(
+            "> ### **ACTA ANTERIOR LEIDA: `%s`**" % datos["huella"] + chr(10) +
+            "> ### `HEREDADO 1`: **NO APLICA**, porque esta vuelta no toca esa sede" + chr(10) +
+            ">" + chr(10) +
+            ">     $ ls .v27/*.py    ->  (ninguno)" + chr(10) +
+            "### `HEREDADO 2`: **CUMPLIDO**" + chr(10))
+        self.assertEqual(herencia.comprobar(datos, ruta), [])
+
+    def test_caso_positivo_una_salida_lejos_no_cuenta_como_suya(self):
+        """Pegada quiere decir DEBAJO, no en algun sitio del documento."""
+        datos = herencia.extraer(self._acta())
+        lejos = chr(10).join(["relleno que separa"] * 20)
+        ruta = self._apertura(
+            "ACTA ANTERIOR LEIDA: %s" % datos["huella"] + chr(10) +
+            "HEREDADO 1: NO APLICA porque no toca" + chr(10) + lejos + chr(10) +
+            "    $ un comando que no es suyo" + chr(10) +
+            "HEREDADO 2: CUMPLIDO" + chr(10))
+        faltan = herencia.comprobar(datos, ruta)
+        self.assertEqual(len(faltan), 1)
+        self.assertIn("SIN LA SALIDA", faltan[0])
+
+    def test_un_CUMPLIDO_no_necesita_salida_pegada(self):
+        """La exigencia es del NO APLICA: es la excusa, no el cumplimiento."""
+        datos = herencia.extraer(self._acta())
+        ruta = self._apertura(
+            "ACTA ANTERIOR LEIDA: %s" % datos["huella"] + chr(10) +
+            "HEREDADO 1: CUMPLIDO" + chr(10) + "HEREDADO 2: CUMPLIDO" + chr(10))
         self.assertEqual(herencia.comprobar(datos, ruta), [])
 
     def test_sin_acta_no_revienta_y_la_linea_de_lectura_sigue_en_pie(self):

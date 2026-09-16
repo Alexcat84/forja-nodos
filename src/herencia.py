@@ -50,6 +50,24 @@ ADORNO = re.compile(r"[`*~]+")
 MARGEN = re.compile(r"^[>\s#]+", re.M)
 LINEA_ACTA = re.compile(r"ACTA\s+ANTERIOR\s+LEIDA\s*:\s*([0-9a-fA-F]{7,40})")
 HUELLA_MINIMA = 7            # una huella corta sigue siendo la misma huella
+
+# UN `NO APLICA` LLEVA LA SALIDA DEL INSTRUMENTO PEGADA, NO SOLO EL MOTIVO
+# (D.40 ensanchada el 16 sep 2026, decision del fundador, punto 2.a).
+#
+# POR QUE. La vuelta 26 declaro `NO APLICA` el heredado que le pedia sanear los
+# guiones al volcar texto al arbol, con el motivo de que ninguno de sus
+# instrumentos escribia en el arbol. **Seis escribian, su propia tabla los lista, y
+# el barrido de guiones estaba en ROJO con ocho hallazgos suyos al empezar su turno
+# normal.** D.40 exigia motivo y el motivo estaba escrito: exigia que lo hubiera,
+# no que fuera cierto.
+#
+# UNA SALIDA PEGADA NO PRUEBA QUE EL MOTIVO SEA CIERTO, pero obliga a correr algo
+# antes de escribirlo, y **habria cazado ese motivo al instante**: no hay manera de
+# pegar un `grep` que diga que ninguno escribe cuando seis escriben.
+SALIDA_PEGADA = re.compile(r"^\s*(?:>\s*)?\$\s+\S", re.M)
+VENTANA_DE_SALIDA = 12       # lineas tras el NO APLICA donde se busca su salida
+NO_APLICA_CRUDO = re.compile(
+    r"HEREDADO\s*`?\s*(\d+)\s*`?\s*[:\*]*\s*\**\s*NO APLICA([^\n]*)", re.I)
 TITULO_TAREA = "TAREA BLOQUEANTE DEL AUDITOR"
 ENCABEZADO = re.compile(r"^>?\s*#{1,6}\s")
 TOPE_DE_CUERPO = 40          # lineas por item: el resto se cita por su linea
@@ -152,9 +170,16 @@ def texto_para_prompt(herencia):
                       % indice)
     lineas.extend([
         "",
-        "NO APLICA NECESITA MOTIVO ESCRITO. Un remedio que no aplica a esta vuelta se "
-        "declara y se dice por que; dejarlo en blanco es lo mismo que perderlo, que es "
-        "lo que D.40 vino a impedir.",
+        "NO APLICA NECESITA MOTIVO ESCRITO **Y LA SALIDA DEL INSTRUMENTO PEGADA "
+        "DEBAJO** (D.40, 16 sep 2026). Un remedio que no aplica a esta vuelta se "
+        "declara, se dice por que, y se pega el comando que lo sostiene, con una "
+        "linea que empiece por '$'. Sin salida pegada, el sello NO lo acepta.",
+        "",
+        "POR QUE: la vuelta 26 declaro NO APLICA un heredado con el motivo de que "
+        "ninguno de sus instrumentos escribia en el arbol. Seis escribian, su propia "
+        "tabla los listaba, y el barrido de guiones estaba en ROJO con ocho hallazgos "
+        "suyos. Una salida pegada no prueba que el motivo sea cierto, pero obliga a "
+        "correr algo antes de escribirlo, y ese lo habria cazado al instante.",
         "",
         "ESCRIBELAS COMO ESCRIBES TODO LO DEMAS. Valen las comillas, la negrita, el "
         "encabezado y la cita: se comprueba que la declaracion ESTE, no que vaya "
@@ -169,6 +194,23 @@ def _sin_adornos(texto):
     return MARGEN.sub("", ADORNO.sub("", texto))
 
 
+def _tiene_salida_pegada(crudo, indice):
+    """Cierto si ALGUN `NO APLICA` de ese heredado trae su salida debajo.
+
+    Se mira el texto CRUDO y no el desnudo, porque lo que se busca es la sangria y
+    el `$` de una salida pegada, y `_sin_adornos` se los come.
+    """
+    lineas = crudo.splitlines()
+    for numero, linea in enumerate(lineas):
+        encaje = NO_APLICA_CRUDO.search(linea)
+        if not encaje or int(encaje.group(1)) != indice:
+            continue
+        ventana = chr(10).join(lineas[numero:numero + VENTANA_DE_SALIDA + 1])
+        if SALIDA_PEGADA.search(ventana):
+            return True
+    return False
+
+
 def comprobar(herencia, ruta_apertura=None):
     """Devuelve la lista de lo que FALTA en la apertura ciega. Vacia es verde.
 
@@ -180,7 +222,8 @@ def comprobar(herencia, ruta_apertura=None):
     ruta_apertura = ruta_apertura or RUTA_APERTURA
     if not os.path.exists(ruta_apertura):
         return ["docs/loop/APERTURA_CIEGA.md no existe"]
-    texto = _sin_adornos(comun.leer_texto(ruta_apertura))
+    crudo = comun.leer_texto(ruta_apertura)
+    texto = _sin_adornos(crudo)
     faltan = []
 
     huellas = LINEA_ACTA.findall(texto)
@@ -198,9 +241,16 @@ def comprobar(herencia, ruta_apertura=None):
         if not encajes:
             faltan.append("falta la linea 'HEREDADO %d: CUMPLIDO' o 'NO APLICA' "
                           "(heredado %d de %d)" % (indice, indice, len(herencia["items"])))
-        elif not any(clase == "CUMPLIDO" or resto.strip(" :.-")
-                     for clase, resto in encajes):
+        elif any(clase == "CUMPLIDO" for clase, _resto in encajes):
+            continue
+        elif not any(resto.strip(" :.-") for _clase, resto in encajes):
             faltan.append("el HEREDADO %d dice NO APLICA y va SIN MOTIVO escrito" % indice)
+        elif not _tiene_salida_pegada(crudo, indice):
+            faltan.append(
+                "el HEREDADO %d dice NO APLICA con su motivo, pero SIN LA SALIDA DEL "
+                "INSTRUMENTO PEGADA debajo (D.40, 16 sep 2026). Un motivo sin salida "
+                "es una afirmacion; pega el comando que lo sostiene, con una linea "
+                "que empiece por '$'" % indice)
     return faltan
 
 

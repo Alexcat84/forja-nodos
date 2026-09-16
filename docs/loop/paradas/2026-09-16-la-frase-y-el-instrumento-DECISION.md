@@ -1,3 +1,89 @@
+# PARADA DEL 16 SEP 2026: LA FRASE Y EL INSTRUMENTO. **DECISION DEL FUNDADOR**
+
+> ## LA DECISION DEL FUNDADOR, 16 sep 2026
+>
+> **1. `TANDA LIMPIA`, resuelta para siempre: LIMPIA significa SIN CAIDAS DE LA ESPECIE
+> QUE ESA RACHA ACUMULA.** Una tanda con caidas solo de las que no acumulan reinicia la
+> racha igual. Correccion declarada en `AUDITOR_FORJA.md` `5.4` con esta letra, y la racha
+> del auditor se **RECOMPUTA** bajo ella: si con esa lectura no esta en `3 de 3`, la parada
+> se disuelve por letra y se declara asi. **Una regla que obliga a cada auditor a decidir
+> si se absuelve es una prueba de caracter, no una regla: se acaba hoy.**
+>
+> **2. La cura de la especie, en sus dos mitades, se instala IGUAL** (la parada no fue en
+> vano): **(a) mecanica, `D.40` se ensancha:** un `NO APLICA` sobre un heredado lleva
+> **PEGADA** la salida del instrumento que lo sostiene, no solo el motivo; sin salida
+> pegada, el sello no lo acepta (habria cazado el motivo falso al instante). **(b) de
+> forma, `D.38.3` se ensancha: LA FRASE ES LA DEL INSTRUMENTO.** La linea que acompania a
+> una cifra dice lo que el instrumento **MIDIO** (*campo X presente en 33 de 234*), y toda
+> conclusion sobre contenido va en linea aparte marcada **`LECTURA`**, con lo que la
+> sostiene. Contar campos y publicar una frase sobre contenido es caida de cifra. Ninguna
+> maquina comprueba semantica; **la forma separa medida de conclusion y deja la conclusion
+> a la vista para que el siguiente lector la cace.**
+>
+> **3. LA PRIMERA ARISTA ENTRE LIBROS NO ES CEREMONIA:** esta adjudicada y vencida, se
+> declara en la vuelta 27 **por lectura como cualquier arista**, con su razon. **La firma
+> del fundador es para la doctrina, no para las aristas; una arista que espera un estreno
+> es una arista que falta.**
+>
+> **4. Los siete puntos de la `ACTA 25` que no llegaron al encargo de la 26** entran al
+> `PROMPT_SIGUIENTE` de la 27 tal como el auditor los dejo escritos en `4.3`, con la
+> continuacion de la insercion del lote 4 (`31` de `142`) y la apertura del lote 5 por el
+> orden escrito.
+
+> **ARCHIVADA.** Este fichero fue `docs/loop/PARA_ALEXIS.md` hasta que el fundador resolvio
+> lo que pedia. **Se archiva entero y sin tocar una palabra de su cuerpo ni de su anexo**;
+> lo unico añadido es esta cabecera.
+>
+> ## EL RECOMPUTO, HECHO CONTRA LAS ACTAS Y NO CONTRA EL RESUMEN
+>
+> **`LA PARADA SE DISUELVE POR LETRA.`** La cuenta, fila a fila y con su cita:
+>
+> | tanda | lo que la acta dice de sus caidas propias | bajo la letra nueva |
+> |---|---|---:|
+> | **vuelta 24** | cierra en `2 de 3` | **2 de 3** |
+> | **vuelta 25** | *tres caidas propias declaradas (`7.1`, `7.2`, `7.3`) y una retirada (`7.4`), **y ninguna de las tres acumula por la letra***, `ACTA 25` `8.1` | # **LIMPIA: 0 de 3** |
+> | **vuelta 26** | dos caidas que si acumulan, **una tanda, un escalon** (`ACTA 26` `8.1`) | # **1 de 3** |
+>
+> **LA `ACTA 25` ERA LIMPIA A EFECTOS DE ESA RACHA Y LO DIJO ELLA MISMA:** *ninguna de las
+> tres acumula por la letra*. Con `LIMPIA = sin caidas de la especie que esa racha
+> acumula`, **el contador se pone a cero ahi**, y lo de la vuelta 26 es el primer escalon,
+> no el tercero.
+>
+> > ### **LA RACHA DEL AUDITOR QUEDA EN `1 de 3`. NO HAY CREDITO ROTO Y NO HAY PARADA.**
+>
+> **Y LOS DOS AUDITORES TENIAN RAZON EN NO TOMARSELA.** La `ACTA 25` y la `ACTA 26`
+> razonaron esta misma lectura contra si mismas, las dos eligieron la que las perjudicaba,
+> y las dos dejaron escrito que existia la otra **para que cualquiera pudiera acusarlas de
+> absolverse.** Eso no era exceso de celo: era `5.4` funcionando. **Lo que estaba mal era
+> la regla, no ellos.**
+>
+> ## LA CURA SE INSTALA IGUAL, Y LAS DOS MITADES ESTAN HECHAS
+>
+> **(a) MECANICA.** `src/herencia.py`: un `NO APLICA` sin la salida pegada debajo **ya no
+> pasa el sello**. Con su caso positivo (un `NO APLICA` pelado cae), su negativo (con la
+> salida debajo pasa), y el que fija que **pegada quiere decir DEBAJO** y no en cualquier
+> sitio del documento. **Cinco pruebas mas.**
+>
+> **Y CUATRO PRUEBAS VIEJAS SE PUSIERON EN ROJO AL INSTALARLA**, porque sus `NO APLICA`
+> llevaban motivo y no llevaban salida. **Se actualizaron los fixtures, no la regla**: eso
+> es la regla mordiendo donde tenia que morder.
+>
+> **(b) DE FORMA.** `D.38.3` y `AUDITOR_FORJA.md` llevan la letra, con el ejemplo escrito.
+> **No la mecanizo, y digo por que:** lo unico comprobable seria que exista una linea
+> `LECTURA`, y eso se cumple escribiendo la palabra. **La mitad que importa es que la
+> conclusion quede separada y a la vista**, y esa la caza un lector. Forzar una guarda ahi
+> daria una marca que se pone sin mirar, que es justo lo que `D.40` acaba de aprender.
+>
+> ## Y UNA COSA QUE DIGO PORQUE ES LECTURA MIA
+>
+> **El punto 4 habla de *los siete puntos* y el `grep` del auditor dio siete `NO ESTA` de
+> ocho.** Meti **los ocho** en el encargo: de los dos que el `grep` daba por presentes, el
+> propio auditor comprobo que **ninguno lo estaba de verdad** (*un `grep` que acierta por
+> casualidad es peor que uno que falla*). **Si querias solo siete, sobra el de la cola de
+> `decidir_momento_despedir_persona`, que ya esta pagada.**
+
+---
+
 # PARA ALEXIS. EL BUCLE SE DETIENE: **CREDITO ROTO, Y LA RACHA ROTA ES LA DEL AUDITOR**
 
 *Escrito por el auditor al cerrar la `ACTA 26`, que audita la **vuelta 26**.
