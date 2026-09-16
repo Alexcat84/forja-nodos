@@ -1,0 +1,31 @@
+=== recorrer_trece_elementos_proceso_evaluacion_formal  [cuarentena\scott_radical_candor]  14 pasos
+  titulo    : Recorrer los trece elementos que el texto nombra para disenar un proceso formal de evaluacion de desempenio, sabiendo que no hay talla unica
+  activacion: Cuando tu equipo de gestion del desempenio va a disenar o a rehacer el proceso formal de evaluacion y necesita tener delante todo lo que hay que decidir antes de decidir nada.
+   1. Parte de lo que el texto avisa antes de empezar: cada empresa tiene necesidades distintas para sus evaluaciones, asi que el texto dice que no puede disenar una evaluacion de talla unica por mucho que quisiera. Lo que si hace es llevarte por las consideraciones clave que tu y tu equipo querreis tener en cuenta.
+   2. Uno, decide si pones nota o no.
+   3. Dos, decide las categorias de la nota.
+   4. Tres, decide las escaleras de puesto.
+   5. Cuatro, decide cuantas notas.
+   6. Cinco, cuida el lenguaje, porque el texto dice que las palabras importan.
+   7. Seis, decide las consecuencias de la nota.
+   8. Siete, decide el reparto de notas.
+   9. Ocho, decide si fuerzas la curva o no.
+  10. Nueve, decide la calibracion de las notas.
+  11. Diez, decide la frecuencia.
+  12. Once, decide si haces un proceso de trescientos sesenta grados o te apoyas en el juicio unilateral del jefe.
+  13. Doce, decide si es transparente o confidencial.
+  14. Trece, decide si es ligero o pesado.
+  ENTREGABLE: La lista de los trece elementos del proceso recorrida entera, con la decision de tu empresa tomada en cada uno y sin haber copiado la evaluacion de nadie.
+
+=== reconocer_emociones_propias_avisar_equipo  [cuarentena\scott_radical_candor]  7 pasos
+  titulo    : Reconocer en voz alta el animo con el que llegas, para que tu equipo no crea que tu mal dia es culpa suya
+  activacion: Cuando llegas al trabajo teniendo un mal dia y tu equipo ya te lo ha notado en la cara al entrar por la puerta.
+   1. Cuenta con que tu equipo nota en que animo llegas: el texto cuenta que un companiero suyo le dijo una maniana que sabia que clase de dia iba a tener por el animo con el que ella entraba por la puerta, y que todo el mundo se fija en el animo del jefe porque no le queda mas remedio, porque es adaptativo.
+   2. No intentes reprimir lo que sientes, porque eso tampoco suele funcionar.
+   3. Cuenta con que no puedes esconder como te sientes a la gente que trabaja muy cerca de ti.
+   4. No lo pagues con tu equipo los dias malos, pero tampoco escondas que no estas en tu mejor momento.
+   5. Reconoce en voz alta como te sientes y que te esta pasando en el resto de tu vida, para que los demas no sientan que tu animo es culpa suya.
+   6. Di algo parecido a lo que el texto dice haber aprendido a decir: estoy teniendo un dia malisimo, estoy intentando no estar de mal humor, pero si parece que hoy salto a la minima es que salto, y no es por ti ni por tu trabajo, es porque he tenido una discusion fuerte con un amigo.
+   7. Y si lo que tienes es un disgusto emocional de verdad grave en tu vida, quedate en casa un dia: el texto dice que no querrias ir repartiendolo mas de lo que querrias repartir un virus por la oficina, que las emociones se contagian igual que los germenes, y que los dias de salud mental deberian tomarse mas en serio de lo que se toman.
+  ENTREGABLE: Tu animo dicho en voz alta y situado donde corresponde, con el equipo sabiendo que no es culpa suya y sin haberlo pagado con ellos.
+

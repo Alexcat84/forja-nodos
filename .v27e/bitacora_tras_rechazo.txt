@@ -1,0 +1,6 @@
+total en bitacora: 251
+  cambiar_posicion_hechos_explicar_cambio        vecino=aprender_resultados_vencer_dos_presiones       CONTINUA  arista='aprender_resultados_vencer_dos_presiones > cambiar_posicion_hechos_explicar_cambio'
+  recorrer_rueda_hacer_cosas_equipo              vecino=recorrer_trece_elementos_proceso_evaluacion_formal SANO  arista=''
+  recorrer_rueda_hacer_cosas_equipo              vecino=recorrer_rueda_conscientemente_cultura_equipo  CONTINUA  arista='recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo'
+  recorrer_rueda_hacer_cosas_equipo              vecino=reconocer_emociones_propias_avisar_equipo      SANO  arista=''
+  recorrer_rueda_conscientemente_cultura_equipo  vecino=recorrer_rueda_hacer_cosas_equipo              CONTINUA  arista='recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo'

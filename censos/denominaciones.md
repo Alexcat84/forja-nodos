@@ -529,3 +529,10 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | bajar_detalle_organizacion_fuente_hechos | otro_idioma | go spelunking | ingles | - |
 | 2026-09-16 | cambiar_posicion_hechos_explicar_cambio | nombre_largo | La presion de ser coherente: la primera de las dos presiones que empujan a dejar de aprender, y la comunicacion que la desactiva | castellano | - |
 | 2026-09-16 | cambiar_posicion_hechos_explicar_cambio | otro_idioma | pressure to be consistent | ingles | - |
+| 2026-09-16 | escuchar_callado_equipo_tranquilizar_incomodo | nombre_largo | La escucha callada: callarse para dejar sitio a que hablen, con sus dos costes y lo que hay que hacer para compensarlos | castellano | - |
+| 2026-09-16 | escuchar_callado_equipo_tranquilizar_incomodo | otro_idioma | quiet listening | ingles | - |
+| 2026-09-16 | escuchar_ruidoso_opinion_fuerte_pedir_agujeros | nombre_largo | La escucha ruidosa: decir algo con la intencion de provocar una reaccion, y construir la confianza de quien no se atreve a devolverla | castellano | - |
+| 2026-09-16 | escuchar_ruidoso_opinion_fuerte_pedir_agujeros | otro_idioma | loud listening | ingles | - |
+| 2026-09-16 | escuchar_ruidoso_opinion_fuerte_pedir_agujeros | otro_idioma | strong opinions, weakly held | ingles | - |
+| 2026-09-16 | crear_cultura_escucha_equipo | nombre_largo | Crear una cultura de escucha: las tres claves del sistema, el equipo de ideas que lo sostiene, y las tres cosas que hay que decir cuando una idea funciona | castellano | - |
+| 2026-09-16 | crear_cultura_escucha_equipo | otro_idioma | create a culture of listening | ingles | - |

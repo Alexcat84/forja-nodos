@@ -1,0 +1,22 @@
+ADUANA DE INSERCION, candidato 'recorrer_rueda_conscientemente_cultura_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (234 del grafo mas 114 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino recorrer_rueda_hacer_cosas_equipo  [Recorrer la rueda de hacer cosas con tu equipo, sin saltarte un paso y sin atascarte en uno]
+    levantada por: familia_id
+    similitud_texto    0.250 (umbral 0.35)
+    familia_id         0.429 (umbral 0.30)
+    paso_contra_nodo   0.507 (umbral 0.60)
+    paso 9 del candidato contra paso 12 de recorrer_rueda_hacer_cosas_equipo
+
+BLOQUEADO: faltan veredictos para recorrer_rueda_hacer_cosas_equipo
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "recorrer_rueda_hacer_cosas_equipo|CONTINUA|madre=recorrer_rueda_hacer_cosas_equipo|que añade el hijo a la madre"
+    --veredicto "recorrer_rueda_hacer_cosas_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "recorrer_rueda_hacer_cosas_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "recorrer_rueda_hacer_cosas_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

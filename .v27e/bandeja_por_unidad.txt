@@ -1,0 +1,32 @@
+LA BANDEJA DEL LOTE 4, repartida por UNIDAD DE ORIGEN declarada
+  cap_07        20
+  cap_08        12
+  cap_09        20
+  cap_10        14
+  cap_11        16
+  cap_12         2
+  cap_13        12
+  cap_14        15
+  TOTAL        111
+
+cap_07, en el orden del fichero:
+   1. centrar_debate_ideas_fuera_egos
+   2. compartir_logica_mostrar_razonamiento
+   3. crear_cultura_escucha_equipo
+   4. crear_espacio_seguro_madurar_ideas_nuevas
+   5. crear_obligacion_disentir_equipo
+   6. cuidarse_agotamiento_centro_rueda
+   7. escuchar_callado_equipo_tranquilizar_incomodo
+   8. escuchar_ruidoso_opinion_fuerte_pedir_agujeros
+   9. establecer_credibilidad_pericia_humildad
+  10. explicar_idea_facil_comprender_oyente
+  11. fijar_fecha_cierre_debate_equipo
+  12. mantener_manos_trabajo_real_equipo
+  13. minimizar_impuesto_colaboracion_equipo
+  14. parar_debate_emocion_agotamiento
+  15. pedir_hechos_decision_evitar_recomendaciones
+  16. persuadir_emocion_oyente_no_propia
+  17. proteger_tiempo_equipo_jefe
+  18. recorrer_rueda_hacer_cosas_equipo
+  19. repartir_decision_cercanos_hechos
+  20. reservar_calendario_tiempo_ejecutar

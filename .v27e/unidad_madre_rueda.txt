@@ -1,0 +1,4 @@
+UNIDAD DE ORIGEN declarada por el fichero, primeros 260 caracteres:
+  UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 271 a 299 y de las lineas 307 a 333, bajo el rotulo BE CONSCIOUS OF CULTURE y sus rotulos interiores. ES LA PIEZA P15 DE LA FRONTERA DE cap_11, Y SU TRAMO ES N
+
+lineas que declara: [65, 271, 275, 277, 281, 283]

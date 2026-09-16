@@ -1,0 +1,55 @@
+ADUANA DE INSERCION, candidato 'crear_cultura_escucha_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (236 del grafo mas 112 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino crear_obligacion_disentir_equipo  [Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja]
+    levantada por: familia_id
+    similitud_texto    0.255 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.449 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de crear_obligacion_disentir_equipo
+
+  vecino adaptar_escucha_cultura_ajena  [Adaptar tu forma de escuchar cuando entras en una cultura que no es la tuya, empezando por los errores que traes de la tuya]
+    levantada por: familia_id
+    similitud_texto    0.266 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.420 (umbral 0.60)
+    paso 2 del candidato contra paso 8 de adaptar_escucha_cultura_ajena
+
+  vecino juzgar_cultura_renuncias_equipo  [Juzgar la cultura de un equipo por lo que esta dispuesto a ceder por sus valores]
+    levantada por: familia_id
+    similitud_texto    0.163 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.418 (umbral 0.60)
+    paso 17 del candidato contra paso 2 de juzgar_cultura_renuncias_equipo
+
+  vecino crear_plan_creible_equipo  [Crear un plan que tenga posibilidades reales de funcionar]
+    levantada por: familia_id
+    similitud_texto    0.218 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.393 (umbral 0.60)
+    paso 8 del candidato contra paso 5 de crear_plan_creible_equipo
+
+BLOQUEADO: faltan veredictos para crear_obligacion_disentir_equipo, adaptar_escucha_cultura_ajena, juzgar_cultura_renuncias_equipo, crear_plan_creible_equipo
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "crear_obligacion_disentir_equipo|CONTINUA|madre=crear_obligacion_disentir_equipo|que añade el hijo a la madre"
+    --veredicto "crear_obligacion_disentir_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "crear_obligacion_disentir_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "crear_obligacion_disentir_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "adaptar_escucha_cultura_ajena|CONTINUA|madre=adaptar_escucha_cultura_ajena|que añade el hijo a la madre"
+    --veredicto "adaptar_escucha_cultura_ajena|REPITE|por que no añade procedimiento"
+    --veredicto "adaptar_escucha_cultura_ajena|SANO|por que no son el mismo trabajo"
+    --veredicto "adaptar_escucha_cultura_ajena|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "juzgar_cultura_renuncias_equipo|CONTINUA|madre=juzgar_cultura_renuncias_equipo|que añade el hijo a la madre"
+    --veredicto "juzgar_cultura_renuncias_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "juzgar_cultura_renuncias_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "juzgar_cultura_renuncias_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "crear_plan_creible_equipo|CONTINUA|madre=crear_plan_creible_equipo|que añade el hijo a la madre"
+    --veredicto "crear_plan_creible_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "crear_plan_creible_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "crear_plan_creible_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
