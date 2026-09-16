@@ -1,0 +1,23 @@
+CANDIDATO : recorrer_rueda_conscientemente_cultura_equipo   (14 pasos)
+VECINOS QUE SUPERAN UMBRAL : 1   sobre una poblacion de 347
+   - recorrer_rueda_hacer_cosas_equipo                    GRAFO    [familia_id=0.429]
+CANDIDATO : recorrer_rueda_hacer_cosas_equipo   (12 pasos)
+VECINOS QUE SUPERAN UMBRAL : 3   sobre una poblacion de 347
+   - recorrer_trece_elementos_proceso_evaluacion_formal   BANDEJA  [paso_contra_nodo=0.61]
+   - recorrer_rueda_conscientemente_cultura_equipo        GRAFO    [familia_id=0.429]
+   - reconocer_emociones_propias_avisar_equipo            BANDEJA  [similitud_texto=0.353]
+CANDIDATO : crear_espacio_seguro_madurar_ideas_nuevas   (14 pasos)
+VECINOS QUE SUPERAN UMBRAL : 1   sobre una poblacion de 347
+   - nutrir_ideas_nuevas_reunion_solas                    BANDEJA  [paso_contra_nodo=0.617]
+CANDIDATO : crear_obligacion_disentir_equipo   (5 pasos)
+VECINOS QUE SUPERAN UMBRAL : 10   sobre una poblacion de 347
+   - parar_debate_emocion_agotamiento                     BANDEJA  [similitud_texto=0.411]
+   - pedir_hechos_decision_evitar_recomendaciones         BANDEJA  [similitud_texto=0.474]
+   - crear_cultura_escucha_equipo                         GRAFO    [familia_id=0.333]
+   - proteger_tiempo_equipo_jefe                          BANDEJA  [similitud_texto=0.357]
+   - compartir_logica_mostrar_razonamiento                BANDEJA  [similitud_texto=0.368]
+   - reservar_calendario_tiempo_ejecutar                  BANDEJA  [similitud_texto=0.393]
+   - cambiar_posicion_hechos_explicar_cambio              GRAFO    [similitud_texto=0.399]
+   - aprender_resultados_vencer_dos_presiones             GRAFO    [similitud_texto=0.402]
+   - evitar_presion_social_actos_equipo                   BANDEJA  [similitud_texto=0.393]
+   - crear_plan_creible_equipo                            GRAFO    [familia_id=0.333]

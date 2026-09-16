@@ -1,0 +1,4 @@
+(candidato, nodos, umbrales=None)
+poblacion: 510
+vecinos por encima de umbral: 10
+SEGUNDOS de buscar_vecinos sobre 510: 73.3

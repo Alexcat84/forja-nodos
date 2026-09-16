@@ -1,0 +1,25 @@
+265 CONTINUA | recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo | consumada= (sin campo) | arista= recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo | en_cola= True
+266 SANO | recorrer_rueda_hacer_cosas_equipo > recorrer_trece_elementos_proceso_evaluacion_formal | consumada= (sin campo) | arista=  | en_cola= None
+267 CONTINUA | recorrer_rueda_hacer_cosas_equipo > recorrer_rueda_conscientemente_cultura_equipo | consumada= (sin campo) | arista= recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo | en_cola= None
+268 SANO | recorrer_rueda_hacer_cosas_equipo > reconocer_emociones_propias_avisar_equipo | consumada= (sin campo) | arista=  | en_cola= None
+269 SANO | crear_obligacion_disentir_equipo > parar_debate_emocion_agotamiento | consumada= False | arista=  | en_cola= None
+270 SANO | crear_obligacion_disentir_equipo > pedir_hechos_decision_evitar_recomendaciones | consumada= False | arista=  | en_cola= None
+271 SANO | crear_obligacion_disentir_equipo > crear_cultura_escucha_equipo | consumada= False | arista=  | en_cola= None
+272 SANO | crear_obligacion_disentir_equipo > proteger_tiempo_equipo_jefe | consumada= False | arista=  | en_cola= None
+273 SANO | crear_obligacion_disentir_equipo > compartir_logica_mostrar_razonamiento | consumada= False | arista=  | en_cola= None
+274 SANO | crear_obligacion_disentir_equipo > reservar_calendario_tiempo_ejecutar | consumada= False | arista=  | en_cola= None
+275 SANO | crear_obligacion_disentir_equipo > cambiar_posicion_hechos_explicar_cambio | consumada= False | arista=  | en_cola= None
+276 SANO | crear_obligacion_disentir_equipo > aprender_resultados_vencer_dos_presiones | consumada= False | arista=  | en_cola= None
+277 SANO | crear_obligacion_disentir_equipo > evitar_presion_social_actos_equipo | consumada= False | arista=  | en_cola= None
+278 SANO | crear_obligacion_disentir_equipo > crear_plan_creible_equipo | consumada= False | arista=  | en_cola= None
+279 CONTINUA | crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas | consumada= (sin campo) | arista= crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas | en_cola= True
+280 SANO | crear_obligacion_disentir_equipo > parar_debate_emocion_agotamiento | consumada= (sin campo) | arista=  | en_cola= None
+281 SANO | crear_obligacion_disentir_equipo > pedir_hechos_decision_evitar_recomendaciones | consumada= (sin campo) | arista=  | en_cola= None
+282 SANO | crear_obligacion_disentir_equipo > crear_cultura_escucha_equipo | consumada= (sin campo) | arista=  | en_cola= None
+283 SANO | crear_obligacion_disentir_equipo > proteger_tiempo_equipo_jefe | consumada= (sin campo) | arista=  | en_cola= None
+284 SANO | crear_obligacion_disentir_equipo > compartir_logica_mostrar_razonamiento | consumada= (sin campo) | arista=  | en_cola= None
+285 SANO | crear_obligacion_disentir_equipo > reservar_calendario_tiempo_ejecutar | consumada= (sin campo) | arista=  | en_cola= None
+286 SANO | crear_obligacion_disentir_equipo > cambiar_posicion_hechos_explicar_cambio | consumada= (sin campo) | arista=  | en_cola= None
+287 SANO | crear_obligacion_disentir_equipo > aprender_resultados_vencer_dos_presiones | consumada= (sin campo) | arista=  | en_cola= None
+288 SANO | crear_obligacion_disentir_equipo > evitar_presion_social_actos_equipo | consumada= (sin campo) | arista=  | en_cola= None
+289 SANO | crear_obligacion_disentir_equipo > crear_plan_creible_equipo | consumada= (sin campo) | arista=  | en_cola= None

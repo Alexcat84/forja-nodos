@@ -1,0 +1,117 @@
+poblacion del barrido : 348   (243 del grafo mas 105 que esperan en bandejas)
+umbrales              : {"umbral_familia_id": 0.3, "umbral_paso_contra_nodo": 0.6, "umbral_similitud_texto": 0.35}
+
+======================================================================================
+CANDIDATO : parar_debate_emocion_agotamiento   (5 pasos)
+VECINOS QUE SUPERAN UMBRAL : 9   sobre una poblacion de 347
+   - pedir_hechos_decision_evitar_recomendaciones         BANDEJA  [similitud_texto=0.476]
+   - abrir_debate_humor_explicar_proposito                GRAFO    [similitud_texto=0.385]
+   - crear_obligacion_disentir_equipo                     GRAFO    [similitud_texto=0.405]
+   - compartir_logica_mostrar_razonamiento                BANDEJA  [similitud_texto=0.369]
+   - cambiar_posicion_hechos_explicar_cambio              GRAFO    [similitud_texto=0.381]
+   - proteger_tiempo_equipo_jefe                          BANDEJA  [similitud_texto=0.367]
+   - reservar_calendario_tiempo_ejecutar                  BANDEJA  [similitud_texto=0.403]
+   - minimizar_impuesto_colaboracion_equipo               BANDEJA  [similitud_texto=0.391]
+   - centrar_debate_ideas_fuera_egos                      GRAFO    [similitud_texto=0.359]
+======================================================================================
+CANDIDATO : fijar_fecha_cierre_debate_equipo   (11 pasos)
+VECINOS QUE SUPERAN UMBRAL : 4   sobre una poblacion de 347
+   - explicar_idea_facil_comprender_oyente                GRAFO    [paso_contra_nodo=0.61]
+   - centrar_debate_ideas_fuera_egos                      GRAFO    [similitud_texto=0.355]
+   - abrir_debate_humor_explicar_proposito                GRAFO    [similitud_texto=0.367]
+   - definir_receta_propia_mantenerse_centrado            BANDEJA  [similitud_texto=0.35]
+======================================================================================
+CANDIDATO : repartir_decision_cercanos_hechos   (11 pasos)
+VECINOS QUE SUPERAN UMBRAL : 1   sobre una poblacion de 347
+   - centrar_debate_ideas_fuera_egos                      GRAFO    [similitud_texto=0.352]
+======================================================================================
+CANDIDATO : pedir_hechos_decision_evitar_recomendaciones   (5 pasos)
+VECINOS QUE SUPERAN UMBRAL : 7   sobre una poblacion de 347
+   - parar_debate_emocion_agotamiento                     BANDEJA  [similitud_texto=0.472]
+   - cambiar_posicion_hechos_explicar_cambio              GRAFO    [similitud_texto=0.386]
+   - abrir_debate_humor_explicar_proposito                GRAFO    [similitud_texto=0.356]
+   - compartir_logica_mostrar_razonamiento                BANDEJA  [similitud_texto=0.389]
+   - crear_obligacion_disentir_equipo                     GRAFO    [similitud_texto=0.456]
+   - mantener_manos_trabajo_real_equipo                   BANDEJA  [similitud_texto=0.375]
+   - aprender_resultados_vencer_dos_presiones             GRAFO    [similitud_texto=0.353]
+======================================================================================
+CANDIDATO : persuadir_emocion_oyente_no_propia   (11 pasos)
+VECINOS QUE SUPERAN UMBRAL : 3   sobre una poblacion de 347
+   - explicar_idea_facil_comprender_oyente                GRAFO    [similitud_texto=0.371]
+   - escuchar_callado_equipo_tranquilizar_incomodo        GRAFO    [similitud_texto=0.352]
+   - establecer_credibilidad_pericia_humildad             BANDEJA  [similitud_texto=0.357]
+======================================================================================
+CANDIDATO : establecer_credibilidad_pericia_humildad   (9 pasos)
+VECINOS QUE SUPERAN UMBRAL : 3   sobre una poblacion de 347
+   - compartir_logica_mostrar_razonamiento                BANDEJA  [similitud_texto=0.368]
+   - repartir_decision_cercanos_hechos                    BANDEJA  [similitud_texto=0.365]
+   - persuadir_emocion_oyente_no_propia                   BANDEJA  [similitud_texto=0.352]
+======================================================================================
+CANDIDATO : compartir_logica_mostrar_razonamiento   (6 pasos)
+VECINOS QUE SUPERAN UMBRAL : 10   sobre una poblacion de 347
+   - centrar_debate_ideas_fuera_egos                      GRAFO    [similitud_texto=0.364]
+   - minimizar_impuesto_colaboracion_equipo               BANDEJA  [similitud_texto=0.381]
+   - establecer_credibilidad_pericia_humildad             BANDEJA  [similitud_texto=0.371]
+   - explicar_idea_facil_comprender_oyente                GRAFO    [similitud_texto=0.38]
+   - comprobar_criticas_hombre_mujeres_equipo             BANDEJA  [similitud_texto=0.365]
+   - persuadir_emocion_oyente_no_propia                   BANDEJA  [similitud_texto=0.356]
+   - pedir_hechos_decision_evitar_recomendaciones         BANDEJA  [similitud_texto=0.365]
+   - parar_debate_emocion_agotamiento                     BANDEJA  [similitud_texto=0.371]
+   - bajar_detalle_organizacion_fuente_hechos             GRAFO    [similitud_texto=0.371]
+   - crear_obligacion_disentir_equipo                     GRAFO    [similitud_texto=0.366]
+======================================================================================
+CANDIDATO : minimizar_impuesto_colaboracion_equipo   (4 pasos)
+VECINOS QUE SUPERAN UMBRAL : 10   sobre una poblacion de 347
+   - aprender_resultados_vencer_dos_presiones             GRAFO    [similitud_texto=0.501]
+   - abrir_debate_humor_explicar_proposito                GRAFO    [similitud_texto=0.38]
+   - cuidarse_agotamiento_centro_rueda                    BANDEJA  [similitud_texto=0.377]
+   - compartir_logica_mostrar_razonamiento                BANDEJA  [similitud_texto=0.381]
+   - cambiar_posicion_hechos_explicar_cambio              GRAFO    [similitud_texto=0.36]
+   - construir_confianza_equipo_tiempo_solas              BANDEJA  [similitud_texto=0.353]
+   - proteger_tiempo_equipo_jefe                          BANDEJA  [similitud_texto=0.388]
+   - centrar_debate_ideas_fuera_egos                      GRAFO    [similitud_texto=0.369]
+   - parar_debate_emocion_agotamiento                     BANDEJA  [similitud_texto=0.388]
+   - agendar_cuidados_propios_cumplirlos                  BANDEJA  [similitud_texto=0.365]
+======================================================================================
+CANDIDATO : proteger_tiempo_equipo_jefe   (9 pasos)
+VECINOS QUE SUPERAN UMBRAL : 10   sobre una poblacion de 347
+   - bloquear_tiempo_pensar_calendario                    BANDEJA  [paso_contra_nodo=0.625]
+   - cuidarse_agotamiento_centro_rueda                    BANDEJA  [similitud_texto=0.36]
+   - mantener_manos_trabajo_real_equipo                   BANDEJA  [similitud_texto=0.427]
+   - cambiar_posicion_hechos_explicar_cambio              GRAFO    [similitud_texto=0.376]
+   - reservar_calendario_tiempo_ejecutar                  BANDEJA  [similitud_texto=0.423]
+   - parar_debate_emocion_agotamiento                     BANDEJA  [similitud_texto=0.362]
+   - pedir_hechos_decision_evitar_recomendaciones         BANDEJA  [similitud_texto=0.36]
+   - centrar_debate_ideas_fuera_egos                      GRAFO    [similitud_texto=0.353]
+   - compartir_logica_mostrar_razonamiento                BANDEJA  [similitud_texto=0.373]
+   - minimizar_impuesto_colaboracion_equipo               BANDEJA  [similitud_texto=0.375]
+======================================================================================
+CANDIDATO : mantener_manos_trabajo_real_equipo   (8 pasos)
+VECINOS QUE SUPERAN UMBRAL : 8   sobre una poblacion de 347
+   - compartir_logica_mostrar_razonamiento                BANDEJA  [similitud_texto=0.362]
+   - cambiar_posicion_hechos_explicar_cambio              GRAFO    [similitud_texto=0.381]
+   - abrir_debate_humor_explicar_proposito                GRAFO    [similitud_texto=0.385]
+   - proteger_tiempo_equipo_jefe                          BANDEJA  [similitud_texto=0.404]
+   - parar_debate_emocion_agotamiento                     BANDEJA  [similitud_texto=0.377]
+   - pedir_hechos_decision_evitar_recomendaciones         BANDEJA  [similitud_texto=0.373]
+   - cuidarse_agotamiento_centro_rueda                    BANDEJA  [similitud_texto=0.369]
+   - crear_obligacion_disentir_equipo                     GRAFO    [similitud_texto=0.36]
+======================================================================================
+CANDIDATO : reservar_calendario_tiempo_ejecutar   (4 pasos)
+VECINOS QUE SUPERAN UMBRAL : 7   sobre una poblacion de 347
+   - bloquear_tiempo_pensar_calendario                    BANDEJA  [familia_id=0.333]
+   - proteger_tiempo_equipo_jefe                          BANDEJA  [similitud_texto=0.409]
+   - cambiar_posicion_hechos_explicar_cambio              GRAFO    [similitud_texto=0.376]
+   - mantener_manos_trabajo_real_equipo                   BANDEJA  [similitud_texto=0.373]
+   - parar_debate_emocion_agotamiento                     BANDEJA  [similitud_texto=0.404]
+   - reservar_tiempo_reflexion_metas                      GRAFO    [familia_id=0.333]
+   - crear_obligacion_disentir_equipo                     GRAFO    [similitud_texto=0.388]
+======================================================================================
+CANDIDATO : cuidarse_agotamiento_centro_rueda   (7 pasos)
+VECINOS QUE SUPERAN UMBRAL : 5   sobre una poblacion de 347
+   - cambiar_posicion_hechos_explicar_cambio              GRAFO    [similitud_texto=0.402]
+   - abrir_debate_humor_explicar_proposito                GRAFO    [similitud_texto=0.353]
+   - reconocer_emociones_propias_avisar_equipo            BANDEJA  [similitud_texto=0.353]
+   - minimizar_impuesto_colaboracion_equipo               BANDEJA  [similitud_texto=0.376]
+   - mantener_manos_trabajo_real_equipo                   BANDEJA  [similitud_texto=0.379]
+======================================================================================

@@ -1,0 +1,6 @@
+D.8 lineas SIN razon escrita en TODA la bitacora: 0 []
+D.8 en las 25 lineas nuevas (265-289): 0 []
+MUESTRA PINEADA: 0 caidas de 12 releidos -> tasa 0,00 por ciento, banda Wilson 95%: 0.0 a 24.3
+de los 12 de V.5.g siguen en bandeja: 12 de 12
+crear_cultura_escucha_equipo pasos: 17
+  pasos que mencionan pasear/levantarse/bloquear fisicamente: []

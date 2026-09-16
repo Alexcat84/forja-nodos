@@ -1,0 +1,7 @@
+=== los 4 nodos que entraron en esta vuelta (campo vuelta del dataset) ===
+Traceback (most recent call last):
+  File "<string>", line 13, in <module>
+ValueError: max() iterable argument is empty
+  vuelta None -> 243 nodos
+
+=== los de la vuelta mas alta ===

@@ -1,0 +1,15 @@
+CLAVES DEL NODO:
+  condiciones_activacion
+  denominaciones
+  dominio
+  entregable_esperado
+  escala_minima
+  estado
+  fuentes
+  id
+  ids_alias
+  nodos_previos
+  nodos_siguientes
+  pasos_accionables
+  resumen_teorico
+  titulo

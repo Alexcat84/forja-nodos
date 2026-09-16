@@ -1,0 +1,4 @@
+lineas RANCIO segun el instrumento: 26
+las 26 con VIGENCIA DECLARADA dentro de la razon: 26 de 26
+lineas con consumada=False: 14 [248, 249, 250, 251, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278]
+lineas con CORRECCION DECLARADA: 15 [248, 249, 250, 251, 256, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278]

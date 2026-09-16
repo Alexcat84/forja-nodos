@@ -1,0 +1,4 @@
+$ grep -c agendar_cuidados_propios_cumplirlos .v29/barrido_bandeja_v29.txt
+1
+$ grep -B20 agendar_cuidados_propios_cumplirlos .v29/barrido_bandeja_v29.txt | grep '^CANDIDATO' | tail -1
+CANDIDATO : minimizar_impuesto_colaboracion_equipo   (4 pasos)

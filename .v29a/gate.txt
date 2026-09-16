@@ -1,0 +1,5 @@
+=== GATE ===
+GATE VERDE.
+  nodos verificados: 243
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+exit=0

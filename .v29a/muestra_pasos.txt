@@ -1,0 +1,24 @@
+POBLACION DE LA MUESTRA: los pasos de los 12 candidatos de cap_07 que NO entraron y que mi fase ciega NO leyo
+pasos en esa poblacion: 90
+SEMILLA: 280916 (random.Random(280916).sample(poblacion,20))
+
+[cuidarse_agotamiento_centro_rueda L409-L419] paso 1: Cuenta con que los momentos en los que el trabajo y la vida personal te desbordan son justo los mas dificiles para aprender de tus resultados y volver a empezar el ciclo entero.
+[cuidarse_agotamiento_centro_rueda L409-L419] paso 2: Cuida de ti mismo antes que de nada, porque estas en el centro mismo de la rueda que te mueve hacia adelante como jefe.
+[cuidarse_agotamiento_centro_rueda L409-L419] paso 6: Y no finjas que no pasa nada cuando si pasa: el texto dice que Dick tampoco lo hacia, y que dio una charla a su empresa sobre la dureza mental que hace falta para mantener la confianza bajo una lluvia de malas noticias.
+[establecer_credibilidad_pericia_humildad L349-L357] paso 2: Conoce tu materia y demuestra un historial de decisiones solidas, que son las dos primeras partes de la credibilidad segun el texto.
+[establecer_credibilidad_pericia_humildad L349-L357] paso 5: Se humilde e invoca un nosotros en vez de un yo siempre que puedas, que es lo que el texto subraya de la frase de Steve Jobs me gusta olvidarlo, porque no es asi como pensamos en Apple.
+[fijar_fecha_cierre_debate_equipo L245-L257] paso 5: Resiste el impulso de cerrar el debate y decidir demasiado pronto cuando se vuelve doloroso, que es justo cuando la gente mira al jefe para que acabe con el sufrimiento.
+[fijar_fecha_cierre_debate_equipo L245-L257] paso 9: Sugiere por ejemplo que las personas cuyas diferencias le cuesta reconciliar lo cierren durante una comida o un paseo.
+[fijar_fecha_cierre_debate_equipo L245-L257] paso 11: No le arrebates la decision para tomarla tu: el texto dice de esa jugada suya que no solo fue prepotente, es que ademas no funciono.
+[mantener_manos_trabajo_real_equipo L381-L383] paso 3: Aplicalo a tu oficio concreto: si te haces director de orquesta, sigue tocando tu instrumento; si te haces jefe de ventas, sigue yendo tu a visitar clientes; si diriges un equipo de fontaneros, arregla algun grifo.
+[mantener_manos_trabajo_real_equipo L381-L383] paso 7: Cuenta con lo que se pierde si te alejas demasiado del trabajo de tu equipo: no vas a entender sus ideas lo bastante bien para ayudarles a clarificarlas, ni para participar en los debates, ni para saber que decisiones empujarles a tomar, ni para enseñarles a ser mas persuasivos.
+[mantener_manos_trabajo_real_equipo L381-L383] paso 8: Cuenta con la consecuencia que el texto pone al final: la rueda entera se para si no entiendes a fondo la cosa que tu equipo esta intentando hacer.
+[minimizar_impuesto_colaboracion_equipo L367-L373] paso 1: Echate encima buena parte del impuesto de colaboracion, para que tu equipo pueda dedicar mas tiempo a ejecutar. El texto dice que eso es parte de tu puesto.
+[persuadir_emocion_oyente_no_propia L303-L347] paso 1: No esperes que nadie ejecute una decision sin haber sido persuadido de que es lo correcto: el texto dice que esa es una receta para resultados terribles.
+[persuadir_emocion_oyente_no_propia L303-L347] paso 7: Y preguntate despues que has hecho tu para atender esas emociones, que es la segunda pregunta que la autora le hizo y donde Jason se dio un golpe en la frente.
+[persuadir_emocion_oyente_no_propia L303-L347] paso 9: Y tomate en serio su respuesta emocional tranquilizandoles sobre lo que no va a cambiar, que es lo que el mismo anuncio hizo al asegurar que Apple seguiria fiel a lo suyo.
+[persuadir_emocion_oyente_no_propia L303-L347] paso 11: Si no se te da el humor, busca la ayuda que el propio Dick recomendaba a otros lideres: clases de improvisacion, para encontrar la manera de pasarlo bien contestando las preguntas incomodas en vez de temerlas.
+[proteger_tiempo_equipo_jefe L375-L379] paso 2: Escucha, asegurate de haberlo entendido, y desactiva las situaciones que podrian estallarles en la cara.
+[proteger_tiempo_equipo_jefe L375-L379] paso 6: Hazles debatir como equipo, pero justo antes de que el debate empiece a hacerse pesado, identifica a un decisor y pidele que vuelva con una decision para una fecha concreta.
+[repartir_decision_cercanos_hechos L259-L289] paso 4: Cuenta con que la mayoria de las culturas tienden a favorecer o a los mas veteranos o a los que tienen la clase de caracter que insiste en sentarse a la mesa, y que las malas decisiones que salen de ahi estan entre las mayores causas de mediocridad de una organizacion y de insatisfaccion de su gente.
+[repartir_decision_cercanos_hechos L259-L289] paso 10: Comprueba las tres cosas que el texto pone como el diagnostico de ese caso: si las decisiones estan apoyadas en los hechos, si alguien va a ejecutarlas aunque fueran las correctas, y si el jefe esta en peligro de perder a su equipo.

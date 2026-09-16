@@ -1,0 +1,54 @@
+ROTULOS DETECTADOS: 49
+
+linea  donde    nodo que lo recoge                             rotulo
+9      NADIE    -                                              Telling people what to do doesn’t work
+11     NADIE    -                                              TELLING PEOPLE WHAT TO DO DIDN’T WORK AT GOOGLE
+45     NADIE    -                                              TELLING PEOPLE WHAT TO DO DIDN’T WORK FOR STEVE JOBS EITHER
+65     GRAFO    recorrer_rueda_hacer_cosas_equipo              THE ART OF GETTING STUFF DONE WITHOUT TELLING PEOPLE WHAT TO
+79     NADIE    -                                              LISTEN
+81     NADIE    -                                              “Give the quiet ones a voice.”
+91     GRAFO    escuchar_callado_equipo_tranquilizar_incomodo  Quiet listening
+113    GRAFO    escuchar_ruidoso_opinion_fuerte_pedir_agujeros Loud listening
+131    GRAFO    adaptar_escucha_cultura_ajena                  Create a culture of listening
+155    GRAFO    adaptar_escucha_cultura_ajena                  Adapt to a culture of listening
+165    NADIE    -                                              CLARIFY
+181    GRAFO    crear_espacio_seguro_madurar_ideas_nuevas      Be clear in your own mind
+183    GRAFO    crear_espacio_seguro_madurar_ideas_nuevas      Create a safe space to nurture new ideas
+197    GRAFO    explicar_idea_facil_comprender_oyente          Be clear to others
+199    GRAFO    explicar_idea_facil_comprender_oyente          Make thoughts/ideas drop-dead easy for others to comprehend
+213    NADIE    -                                              DEBATE
+215    NADIE    -                                              The rock tumbler
+225    GRAFO    centrar_debate_ideas_fuera_egos                Keep the conversation focused on ideas not egos
+231    GRAFO    crear_obligacion_disentir_equipo               Create an obligation to dissent
+235    BANDEJA  parar_debate_emocion_agotamiento               Pause for emotion/exhaustion
+239    GRAFO    abrir_debate_humor_explicar_proposito          Use humor and have fun
+245    BANDEJA  fijar_fecha_cierre_debate_equipo               Be clear when the debate will end
+251    BANDEJA  fijar_fecha_cierre_debate_equipo               Don’t grab a decision just because the debate has gotten pai
+259    BANDEJA  repartir_decision_cercanos_hechos              DECIDE
+261    BANDEJA  repartir_decision_cercanos_hechos              Push decisions into the facts, or pull the facts into the de
+265    BANDEJA  repartir_decision_cercanos_hechos              You’re not the decider (usually)
+291    BANDEJA  pedir_hechos_decision_evitar_recomendaciones   The decider should get facts, not recommendations
+295    GRAFO    bajar_detalle_organizacion_fuente_hechos       Go spelunking
+303    BANDEJA  persuadir_emocion_oyente_no_propia             PERSUADE
+305    BANDEJA  persuadir_emocion_oyente_no_propia             ”Emotion. Credibility. Logic.”
+323    BANDEJA  persuadir_emocion_oyente_no_propia             Emotion
+325    BANDEJA  persuadir_emocion_oyente_no_propia             The listener’s emotions, not the speaker’s
+337    BANDEJA  persuadir_emocion_oyente_no_propia             “What did you do to address their emotions?”
+349    BANDEJA  establecer_credibilidad_pericia_humildad       Credibility
+351    BANDEJA  establecer_credibilidad_pericia_humildad       Demonstrate expertise and humility
+359    BANDEJA  compartir_logica_mostrar_razonamiento          Logic
+361    BANDEJA  compartir_logica_mostrar_razonamiento          Show your work
+367    BANDEJA  minimizar_impuesto_colaboracion_equipo         EXECUTE
+369    BANDEJA  minimizar_impuesto_colaboracion_equipo         Minimize the collaboration tax
+375    BANDEJA  proteger_tiempo_equipo_jefe                    Don’t waste your team’s time
+381    BANDEJA  mantener_manos_trabajo_real_equipo             Keep the “dirt under your fingernails”
+385    BANDEJA  reservar_calendario_tiempo_ejecutar            Block time to execute
+389    GRAFO    aprender_resultados_vencer_dos_presiones       LEARN
+391    GRAFO    aprender_resultados_vencer_dos_presiones       “Consistency is the hobgoblin of little minds.”
+403    GRAFO    cambiar_posicion_hechos_explicar_cambio        Pressure to be consistent
+409    BANDEJA  cuidarse_agotamiento_centro_rueda              Burnout
+421    NADIE    -                                              PART II
+423    NADIE    -                                              TOOLS & TECHNIQUES
+433    NADIE    -                                              RELATIONSHIPS
+
+ROTULOS SIN NODO QUE LOS RECLAME: 11 de 49

@@ -1,0 +1,29 @@
+=== las 4 ultimas lineas del dataset (las que la vuelta anadio; 243 contra las 239 de la ACTA 27 1.2) ===
+
+ID       : recorrer_rueda_conscientemente_cultura_equipo
+TITULO   : Recorrer conscientemente los pasos de la rueda de hacer cosas sobre tu propia cultura, mirando la conducta y no el caracter
+PASOS    : 14
+PREVIOS  : []
+SIGUIENTS: ['recorrer_rueda_hacer_cosas_equipo']
+FUENTES  : [{'clave': 'scott_radical_candor', 'fecha': '2026-09-12'}]
+
+ID       : recorrer_rueda_hacer_cosas_equipo
+TITULO   : Recorrer la rueda de hacer cosas con tu equipo, sin saltarte un paso y sin atascarte en uno
+PASOS    : 12
+PREVIOS  : ['recorrer_rueda_conscientemente_cultura_equipo']
+SIGUIENTS: []
+FUENTES  : [{'clave': 'scott_radical_candor', 'fecha': '2026-09-12'}]
+
+ID       : crear_espacio_seguro_madurar_ideas_nuevas
+TITULO   : Crear un espacio seguro donde una idea nueva madure antes de entrar en el debate, ayudando a pensar en vez de pedir soluciones
+PASOS    : 14
+PREVIOS  : []
+SIGUIENTS: []
+FUENTES  : [{'clave': 'scott_radical_candor', 'fecha': '2026-09-12'}]
+
+ID       : crear_obligacion_disentir_equipo
+TITULO   : Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja
+PASOS    : 5
+PREVIOS  : []
+SIGUIENTS: []
+FUENTES  : [{'clave': 'scott_radical_candor', 'fecha': '2026-09-12'}]

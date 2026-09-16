@@ -1,0 +1,24 @@
+fichero: cuarentena/scott_radical_candor\abrazar_incomodidad_arrancar_critica_equipo.json
+{
+ "id": "abrazar_incomodidad_arrancar_critica_equipo",
+ "titulo": "Abrazar la incomodidad para arrancarle la critica a tu equipo, con los seis consejos que el texto nombra uno a uno",
+ "denominaciones": {
+  "nombre_largo": "Como se consigue que el equipo critique al jefe: la excepcion publica, la pregunta de cabecera, el silencio contado, la escucha que no debate, el premio visible y la cuenta semanal",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "soliciting impromptu guidance: embrace the discomfort"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando eres el jefe y quieres que tu equipo te critique de verdad, y te encuentras con que nadie lo hace.",
+ "entregable_esperado": "Critica dicha en voz alta por tu equipo, recibida sin defenderte y premiada de forma visible, con la cuenta semanal de cuanta recibes.",
+ "pasos_accionables": [
+  "Cuenta con lo que el texto pone como punto de partida: cuando eres el jefe la gente de verdad no quiere criticarte ni decirte lo que piensa, porque con el puesto heredas un monton de suposiciones que no tienen nada que ver con quien eres, y el papel cambia la impresion que la gente tiene de ti de maneras desconcertantes.",
+  "Trabaja duro para ganarte la confianza de tu equipo cuando te haces jefe, y no te centres de mas en el respeto: el texto avisa de que centrarse demasiado en el respeto sale al reves, porque te pone extra a la defensiva cuando te critican, y de que si escuchas la critica y reaccionas bien te llegan los dos.",
+  "Tratate a ti mismo como la excepcion a la regla de criticar en privado, que es como el texto rotula el primero de sus consejos.",
+  "Averigua quien de tu equipo esta mas comodo criticandote y pidele que lo haga delante de otros, en una reunion de equipo o en una general. El texto avisa de que al principio siempre se resisten preguntando por la regla de criticar en privado, y de que cuando eres el jefe esa regla no se te aplica.",
+  "Cuenta con las dos ventajas que el texto pone a airearlo en publico: si tienes mas de sesenta personas trabajando para ti y las haces esperar a un momento privado para darte una critica, probablemente no la oigas nunca; y te ahorra tener que oir lo mismo una y otra vez.",
+  "Cuenta con lo que el texto contesta al miedo a que el desafio publico socave tu autoridad: una buena reaccion a la critica publica puede ser justo lo que establece tu credibilidad como lider fuerte, y ayuda a construir una cultura de guia.",
+  "Ten una pregunta de cabecera. El texto da la que su autora adopto de Fred Kofman, autor de Conscious Business y su entr

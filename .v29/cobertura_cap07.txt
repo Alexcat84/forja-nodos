@@ -1,0 +1,105 @@
+fichero            : fuentes/scott_radical_candor/cap_07.md
+lineas totales     : 434
+lineas NO vacias   : 220
+lineas reclamadas  : 160
+lineas HUERFANAS   : 60
+lineas reclamadas por MAS DE UN nodo: 35
+
+--- LAS HUERFANAS, con su primer tramo de texto ---
+   1: ---
+   2: libro: Scott, Radical Candor
+   3: edicion: Fully Revised & Updated Edition, St. Martin's Press, First Edition October 2019
+   4: unidad: Cap. 4
+   5: titulo_textual: Drive Results Collaboratively
+   6: fidelidad: verbatim
+   7: ---
+   9: Telling people what to do doesn’t work
+  11: TELLING PEOPLE WHAT TO DO DIDN’T WORK AT GOOGLE
+  13: AT FIRST BLUSH, it seems like achieving results is more a matter of challenging directly than caring personally. But the ultimate goal of Radical Cand
+  15: Steve Squyres, who led the Mars Exploration Rover Mission, described perfectly the thrill of collaboration: “Over four thousand people have worked on 
+  17: If you want your team to achieve something bigger than you could achieve alone, if you want to “burst the bounds of your brain,” you have to care abou
+  19: Don’t let your focus on results get in the way of caring about the people you work with. I made that mistake when I first got to Google. I was laser-f
+  21: The AdSense team I was leading was responsible for sales and support of small and medium AdSense customers. We had five main jobs: to approve new cust
+  23: One of my mentors once told me, “There’s a fine line between success and failure.” Now I saw what he meant. By any normal measure, our growth was grea
+  25: The reporting structure was faulty as well, which was why there was no real accountability. When a new person got hired, they were assigned randomly t
+  27: What a mess! How could such a nonsensical situation arise at such a successful company? A friend of mine didn’t at first believe this story. At The Ne
+  29: And I knew exactly what to do. Rather than having a team of one hundred in which everybody did a little bit of everything, with a random management st
+  31: An entirely reasonable change, don’t you agree? The result: three of my five direct reports complained to my boss, Sheryl Sandberg, that they couldn’t
+  33: She agreed with the way I’d restructured the work, but not with the way I’d gone about it. “Kim, you’re moving too fast. It’s like you’re spinning a l
+  35: Telling people what to do didn’t work. At a time when we were obviously in need of big changes, it had seemed like it was the fastest way forward, but
+  37: The great thing about working at Google was that the company gave me a chance to fix my mistake. My boss explained exactly what I’d done wrong—and the
+  39: Decisions really didn’t get made by authority at Google—not even by the founders. At one point, Google’s engineers decided to redesign the AdWords2 fr
+  41: Sergey, in a rare burst of frustration, banged the table and said, “If this were an ordinary company, you’d all be doing it my way. I just want a coup
+  43: Of course, not all companies insist on collaboration or let anyone change teams when they are unhappy with their boss. But I’ve found, again and again
+  45: TELLING PEOPLE WHAT TO DO DIDN’T WORK FOR STEVE JOBS EITHER
+  47: “FUCKING STEVE ALWAYS gets it right,” barked Andy Grove, Intel’s legendary CEO, over a cup of Jamoca Almond Fudge at Baskin-Robbins in Los Altos. I wa
+  49: I laughed, thinking he was making a joke, but Andy shook his head at me vehemently. “No. You didn’t understand me. Steve really always gets it right. 
+  51: I knew Andy was telling me something important, and a part of me hoped it was true. One of the things that was appealing about going to Apple after Go
+  53: “Nobody’s always right,” I said.
+  55: “I didn’t say Steve is always right. I said he always gets it right. Like anyone, he is wrong sometimes, but he insists, and not gently either, that p
+  57: Andy’s words tapped into a complex and somewhat paradoxical set of beliefs and ideals I had about how great bosses get a team to execute well. On the 
+  59: After I took the job at Apple, I learned that Andy’s description had been accurate. Steve often demonstrated that he was willing—eager, even—to change
+  61: One colleague told me about a time he’d argued with Steve but eventually backed down, even though he wasn’t convinced by Steve’s reasoning. When event
+  63: Another colleague told me about an argument she’d had with Steve. She eventually persuaded him he was wrong, but then he so thoroughly adopted her pos
+  79: LISTEN
+  81: “Give the quiet ones a voice.”
+  83: —JONY IVE
+  85: YOU ALREADY KNOW you’re supposed to listen, and you probably already know how (and how not) to listen. The problem is that when you become the boss, p
+  87: The good news is you can stick to your own style and still make sure that everyone on your team gets heard and is thus able to contribute.
+  89: Jony Ive, Apple’s chief design officer, once said at an Apple University class that a manager’s most important role is to “give the quiet ones a voice
+ 165: CLARIFY
+ 167: “It is only by selection, by elimination, and by emphasis that we get at the real meaning of things.”
+ 169: —GEORGIA O’KEEFFE
+ 171: ONCE YOU’VE CREATED a culture of listening, the next step is to push yourself and your direct reports to understand and convey thoughts and ideas more
+ 173: Speaking at an Apple memorial service for Steve Jobs, Jony Ive noted that Steve Jobs had understood how important it was to nurture and clarify new id
+ 175: New ideas don’t have to be grandiose plans for the next iPad. Your team may be saying something like, “I’m frustrated by this process,” or “I’m not fe
+ 213: DEBATE
+ 215: The rock tumbler
+ 217: ONCE YOU’VE SPENT all that time clarifying an idea—getting it really clear in your own mind and making it easy for others to understand—it’s tempting 
+ 219: When Steve Jobs was a kid, his neighbor showed him a rock tumbler—a can that spun on a motor. The neighbor asked Steve to gather up some ordinary rock
+ 221: Your job as a boss is to turn on that “rock tumbler.” Too many bosses think their role is to turn it off—to avoid all the friction by simply making a 
+ 223: Of course, it’s also possible to leave the rock tumbler on too long, leaving nothing in the can but some dust. Here are some ideas that can help you k
+ 421: PART II
+ 423: TOOLS & TECHNIQUES
+ 425: I hope Part I of this book has alleviated some of the fear, anxiety, and self-doubt that can be the constant companion of any boss. Chapters One throu
+ 427: Now you understand how building Radically Candid relationships with each of your direct reports will help you guide your team to achieve results. And 
+ 429: Part II of this book will describe some tools and techniques you can use to put the ideas from Part I into place immediately. I’ve organized these cha
+ 431: 5.
+ 433: RELATIONSHIPS
+
+--- LAS SOLAPADAS ---
+ 131: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 132: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 133: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 134: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 135: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 136: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 137: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 138: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 139: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 140: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 141: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 142: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 143: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 144: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 145: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 146: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 147: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 148: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 149: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 150: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 151: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 152: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 153: GRAFO adaptar_escucha_cultura_ajena | GRAFO crear_cultura_escucha_equipo
+ 309: BANDEJA persuadir_emocion_oyente_no_propia | BANDEJA persuadir_emocion_oyente_no_propia
+ 310: BANDEJA persuadir_emocion_oyente_no_propia | BANDEJA persuadir_emocion_oyente_no_propia
+ 311: BANDEJA persuadir_emocion_oyente_no_propia | BANDEJA persuadir_emocion_oyente_no_propia
+ 312: BANDEJA persuadir_emocion_oyente_no_propia | BANDEJA persuadir_emocion_oyente_no_propia
+ 313: BANDEJA persuadir_emocion_oyente_no_propia | BANDEJA persuadir_emocion_oyente_no_propia
+ 333: BANDEJA persuadir_emocion_oyente_no_propia | BANDEJA persuadir_emocion_oyente_no_propia
+ 334: BANDEJA persuadir_emocion_oyente_no_propia | BANDEJA persuadir_emocion_oyente_no_propia
+ 335: BANDEJA persuadir_emocion_oyente_no_propia | BANDEJA persuadir_emocion_oyente_no_propia
+ 336: BANDEJA persuadir_emocion_oyente_no_propia | BANDEJA persuadir_emocion_oyente_no_propia
+ 337: BANDEJA persuadir_emocion_oyente_no_propia | BANDEJA persuadir_emocion_oyente_no_propia
+ 338: BANDEJA persuadir_emocion_oyente_no_propia | BANDEJA persuadir_emocion_oyente_no_propia
+ 339: BANDEJA persuadir_emocion_oyente_no_propia | BANDEJA persuadir_emocion_oyente_no_propia

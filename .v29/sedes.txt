@@ -1,0 +1,5 @@
+== wc -l de las sedes ==
+    243 dataset/nodos.jsonl
+    289 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+    533 total

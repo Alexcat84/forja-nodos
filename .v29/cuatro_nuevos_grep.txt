@@ -1,0 +1,12 @@
+ID       : recorrer_rueda_conscientemente_cultura_equipo
+PASOS    : 14
+PREVIOS  : []
+ID       : recorrer_rueda_hacer_cosas_equipo
+PASOS    : 12
+PREVIOS  : ['recorrer_rueda_conscientemente_cultura_equipo']
+ID       : crear_espacio_seguro_madurar_ideas_nuevas
+PASOS    : 14
+PREVIOS  : []
+ID       : crear_obligacion_disentir_equipo
+PASOS    : 5
+PREVIOS  : []

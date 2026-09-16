@@ -1,0 +1,50 @@
+lineas totales            : 289
+  consumada=False  -> 14
+  consumada=None   -> 275
+
+--- LAS DECLARADAS NO CONSUMADAS, con su numero de linea ---
+  linea 248  SANO                         recorrer_rueda_hacer_cosas_equipo              recorrer_trece_elementos_proceso_evaluacion_formal
+  linea 249  CONTINUA                     recorrer_rueda_hacer_cosas_equipo              recorrer_rueda_conscientemente_cultura_equipo
+  linea 250  SANO                         recorrer_rueda_hacer_cosas_equipo              reconocer_emociones_propias_avisar_equipo
+  linea 251  CONTINUA                     recorrer_rueda_conscientemente_cultura_equipo  recorrer_rueda_hacer_cosas_equipo
+  linea 269  SANO                         crear_obligacion_disentir_equipo               parar_debate_emocion_agotamiento
+  linea 270  SANO                         crear_obligacion_disentir_equipo               pedir_hechos_decision_evitar_recomendaciones
+  linea 271  SANO                         crear_obligacion_disentir_equipo               crear_cultura_escucha_equipo
+  linea 272  SANO                         crear_obligacion_disentir_equipo               proteger_tiempo_equipo_jefe
+  linea 273  SANO                         crear_obligacion_disentir_equipo               compartir_logica_mostrar_razonamiento
+  linea 274  SANO                         crear_obligacion_disentir_equipo               reservar_calendario_tiempo_ejecutar
+  linea 275  SANO                         crear_obligacion_disentir_equipo               cambiar_posicion_hechos_explicar_cambio
+  linea 276  SANO                         crear_obligacion_disentir_equipo               aprender_resultados_vencer_dos_presiones
+  linea 277  SANO                         crear_obligacion_disentir_equipo               evitar_presion_social_actos_equipo
+  linea 278  SANO                         crear_obligacion_disentir_equipo               crear_plan_creible_equipo
+
+--- LINEAS 265 EN ADELANTE (las nuevas sobre las 264 de la ACTA 27) ---
+linea veredicto consumada  candidato                                    vecino
+265   CONTINUA  None       recorrer_rueda_conscientemente_cultura_equipo recorrer_rueda_hacer_cosas_equipo
+266   SANO      None       recorrer_rueda_hacer_cosas_equipo            recorrer_trece_elementos_proceso_evaluacion_formal
+267   CONTINUA  None       recorrer_rueda_hacer_cosas_equipo            recorrer_rueda_conscientemente_cultura_equipo
+268   SANO      None       recorrer_rueda_hacer_cosas_equipo            reconocer_emociones_propias_avisar_equipo
+269   SANO      False      crear_obligacion_disentir_equipo             parar_debate_emocion_agotamiento
+270   SANO      False      crear_obligacion_disentir_equipo             pedir_hechos_decision_evitar_recomendaciones
+271   SANO      False      crear_obligacion_disentir_equipo             crear_cultura_escucha_equipo
+272   SANO      False      crear_obligacion_disentir_equipo             proteger_tiempo_equipo_jefe
+273   SANO      False      crear_obligacion_disentir_equipo             compartir_logica_mostrar_razonamiento
+274   SANO      False      crear_obligacion_disentir_equipo             reservar_calendario_tiempo_ejecutar
+275   SANO      False      crear_obligacion_disentir_equipo             cambiar_posicion_hechos_explicar_cambio
+276   SANO      False      crear_obligacion_disentir_equipo             aprender_resultados_vencer_dos_presiones
+277   SANO      False      crear_obligacion_disentir_equipo             evitar_presion_social_actos_equipo
+278   SANO      False      crear_obligacion_disentir_equipo             crear_plan_creible_equipo
+279   CONTINUA  None       crear_espacio_seguro_madurar_ideas_nuevas    nutrir_ideas_nuevas_reunion_solas
+280   SANO      None       crear_obligacion_disentir_equipo             parar_debate_emocion_agotamiento
+281   SANO      None       crear_obligacion_disentir_equipo             pedir_hechos_decision_evitar_recomendaciones
+282   SANO      None       crear_obligacion_disentir_equipo             crear_cultura_escucha_equipo
+283   SANO      None       crear_obligacion_disentir_equipo             proteger_tiempo_equipo_jefe
+284   SANO      None       crear_obligacion_disentir_equipo             compartir_logica_mostrar_razonamiento
+285   SANO      None       crear_obligacion_disentir_equipo             reservar_calendario_tiempo_ejecutar
+286   SANO      None       crear_obligacion_disentir_equipo             cambiar_posicion_hechos_explicar_cambio
+287   SANO      None       crear_obligacion_disentir_equipo             aprender_resultados_vencer_dos_presiones
+288   SANO      None       crear_obligacion_disentir_equipo             evitar_presion_social_actos_equipo
+289   SANO      None       crear_obligacion_disentir_equipo             crear_plan_creible_equipo
+
+nuevas: 25   de ellas consumadas: 0   no consumadas: 10
+veredictos de las nuevas: {'CONTINUA': 3, 'SANO': 22}
