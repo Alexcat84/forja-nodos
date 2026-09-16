@@ -1,0 +1,10 @@
+| # | candidato | pasadas | vecinos leidos | veredictos | aristas | como acaba |
+|---:|---|---:|---:|---:|---:|---|
+| 1 | `decidir_momento_despedir_persona` | **2** | 4 | **4** | 0 | **DENTRO** |
+| 2 | `despedir_persona_franqueza_radical` | **2** | 7 | **7** | 0 | **DENTRO** |
+| 3 | `reconocer_recompensar_gente_estable` | **2** | 2 | **2** | 0 | **DENTRO** |
+| 4 | `retar_superestrellas_equipo_constantemente` | **2** | 9 | **9** | 1 | **DENTRO** |
+| 5 | `retirar_etiquetas_permanentes_equipo` | **2** | 3 | **3** | 0 | **DENTRO** |
+| 6 | `revisar_cinco_causas_mal_desempenio` | **2** | 1 | **1** | 0 | **DENTRO** |
+| 7 | `subir_vara_calidad_equipo` | **2** | 8 | **8** | 0 | **DENTRO** |
+| | **TOTAL** | **14** | **34** | **34** | **1** | **7 de 7 DENTRO** |

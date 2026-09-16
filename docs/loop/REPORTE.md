@@ -31430,3 +31430,43 @@ son vias, **y por eso cada una cuelga de la cabeza y ninguna cuelga de la otra.*
 >
 > **Lo escribo en vez de callarlo porque callarlo es la especie exacta de la caida que paro la vuelta
 > 25**: publicar una ruta como prueba sin comprobar que prueba lo que dice.
+
+### T.3.d. **LA TANDA, CONTADA DE SUS PROPIAS SALIDAS Y NO DE MI MEMORIA**
+
+Salida de `python .v26/tanda.py`, guardada en `.v26/tanda.txt`. El script no teclea ninguna celda:
+abre los `.v26/ins_*.txt` que escribio la aduana en esta vuelta y los cuenta.
+
+<!-- TALLADO: salida=.v26/tanda.txt -->
+
+| # | candidato | pasadas | vecinos leidos | veredictos | aristas | como acaba |
+|---:|---|---:|---:|---:|---:|---|
+| 1 | `decidir_momento_despedir_persona` | **2** | 4 | **4** | 0 | **DENTRO** |
+| 2 | `despedir_persona_franqueza_radical` | **2** | 7 | **7** | 0 | **DENTRO** |
+| 3 | `reconocer_recompensar_gente_estable` | **2** | 2 | **2** | 0 | **DENTRO** |
+| 4 | `retar_superestrellas_equipo_constantemente` | **2** | 9 | **9** | 1 | **DENTRO** |
+| 5 | `retirar_etiquetas_permanentes_equipo` | **2** | 3 | **3** | 0 | **DENTRO** |
+| 6 | `revisar_cinco_causas_mal_desempenio` | **2** | 1 | **1** | 0 | **DENTRO** |
+| 7 | `subir_vara_calidad_equipo` | **2** | 8 | **8** | 0 | **DENTRO** |
+| | **TOTAL** | **14** | **34** | **34** | **1** | **7 de 7 DENTRO** |
+
+**`cap_06` QUEDA CERRADO ENTERO.** Salida de `sh` con los dos conteos, guardada en
+`.v26/saldo_cap06.txt`:
+
+<!-- TALLADO: parcial salida=.v26/saldo_cap06.txt -->
+
+    nodos en el grafo   : 229
+    veredictos          : 239
+    bandeja lote 4      : 116
+    insertados del lote 4: 26
+
+| medida | al abrir | al cerrar `cap_06` | de donde sale |
+|---|---:|---:|---|
+| nodos en el grafo | 222 | **229** | `dataset/nodos.jsonl` |
+| veredictos en bitacora | 203 | **239** | `bitacora/VEREDICTOS.jsonl` |
+| candidatos del lote 4 en bandeja | 123 | **116** | `PATRON: cuarentena/scott_radical_candor/*.json` |
+| insertados del lote 4 | 19 | **26** | `PATRON: cuarentena/_insertados/scott_radical_candor/*.json` |
+
+**LOS SIETE DE `cap_06` ENTRAN LOS SIETE**, en **13 pasadas del instrumento** y con **34 pares
+leidos y adjudicados uno a uno**. **Y el reparto de las 13 pasadas dice donde esta el coste:** seis
+candidatos gastaron dos pasadas (una para que la aduana levantase su cola, otra para entrar con los
+veredictos escritos) y **uno gasto dos por una razon distinta**, que es el rechazo de `T.3.b`.

@@ -1,0 +1,68 @@
+ADUANA DE INSERCION, candidato 'subir_vara_calidad_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 228 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 8. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino acompaniar_mejores_equipo_socio  [Acompaniar a los que hacen el mejor trabajo como socio, ni de jefe ausente ni de microgestor]
+    levantada por: similitud_texto
+    similitud_texto    0.362 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.491 (umbral 0.60)
+    paso 9 del candidato contra paso 11 de acompaniar_mejores_equipo_socio
+
+  vecino retirar_etiquetas_permanentes_equipo  [Retirar las etiquetas permanentes de la gente de tu equipo y volver a mirarla con ojos nuevos cada dia]
+    levantada por: similitud_texto
+    similitud_texto    0.361 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.442 (umbral 0.60)
+    paso 4 del candidato contra paso 6 de retirar_etiquetas_permanentes_equipo
+
+  vecino despedir_persona_franqueza_radical  [Despedir con franqueza radical, sin distanciarte de la persona y con el trabajo siguiente imaginado antes de la reunion]
+    levantada por: similitud_texto
+    similitud_texto    0.386 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.431 (umbral 0.60)
+    paso 4 del candidato contra paso 11 de despedir_persona_franqueza_radical
+
+  vecino descubrir_motivacion_sentido_persona  [Descubrir de donde saca cada persona el sentido de su trabajo, en vez de proveerle tu un proposito]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.426 (umbral 0.60)
+    paso 8 del candidato contra paso 4 de descubrir_motivacion_sentido_persona
+
+  vecino retar_superestrellas_equipo_constantemente  [Retar constantemente a quien esta en trayectoria empinada, no bloquearlo, y no confundir crecer con dirigir]
+    levantada por: similitud_texto
+    similitud_texto    0.362 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.424 (umbral 0.60)
+    paso 10 del candidato contra paso 13 de retar_superestrellas_equipo_constantemente
+
+  vecino cuidar_persona_completa_equipo  [Cuidar a la persona completa de cada miembro del equipo, con los cuatro medios que el libro nombra y los tres que descarta]
+    levantada por: similitud_texto
+    similitud_texto    0.353 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.418 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de cuidar_persona_completa_equipo
+
+  vecino delimitar_franqueza_radical_cinco_noes  [Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir]
+    levantada por: similitud_texto
+    similitud_texto    0.360 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.407 (umbral 0.60)
+    paso 10 del candidato contra paso 2 de delimitar_franqueza_radical_cinco_noes
+
+  vecino pedir_critica_equipo_premiarla  [Pedir activamente que tu equipo te critique, aguantar el silencio y premiar la primera franqueza a la vista de todos]
+    levantada por: similitud_texto
+    similitud_texto    0.362 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.405 (umbral 0.60)
+    paso 1 del candidato contra paso 7 de pedir_critica_equipo_premiarla
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 229
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 8

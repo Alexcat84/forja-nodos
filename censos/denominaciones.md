@@ -515,3 +515,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | retar_superestrellas_equipo_constantemente | otro_idioma | individual contributor | ingles | - |
 | 2026-09-16 | retirar_etiquetas_permanentes_equipo | nombre_largo | El aviso con el que el capitulo se cierra: usar el marco sin abusar de el, porque las trayectorias cambian, el desempenio cambia, y quien no presta atencion no se entera de que algo ha cambiado | castellano | - |
 | 2026-09-16 | retirar_etiquetas_permanentes_equipo | otro_idioma | no permanent markers | ingles | - |
+| 2026-09-16 | revisar_cinco_causas_mal_desempenio | nombre_largo | El cuadrante de mirarse al espejo: papel equivocado, recien llegado al papel, demasiado de golpe, problema personal y encaje malo, y por que la primera de las cinco es culpa tuya | castellano | - |
+| 2026-09-16 | revisar_cinco_causas_mal_desempenio | otro_idioma | manager, look at yourself in the mirror | ingles | - |
+| 2026-09-16 | subir_vara_calidad_equipo | nombre_largo | La empatia ruinosa peor de todas: dejar que alguien siga anios en un trabajo que no es el suyo. La politica de darle un proyecto donde pueda brillar, y que pasa si sigue sin brillar | castellano | - |
+| 2026-09-16 | subir_vara_calidad_equipo | otro_idioma | there is no such thing as a B-player | ingles | - |

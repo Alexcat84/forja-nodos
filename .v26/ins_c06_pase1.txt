@@ -1,0 +1,22 @@
+ADUANA DE INSERCION, candidato 'revisar_cinco_causas_mal_desempenio'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 227 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino pedir_critica_equipo_premiarla  [Pedir activamente que tu equipo te critique, aguantar el silencio y premiar la primera franqueza a la vista de todos]
+    levantada por: similitud_texto
+    similitud_texto    0.364 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.375 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de pedir_critica_equipo_premiarla
+
+BLOQUEADO: faltan veredictos para pedir_critica_equipo_premiarla
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "pedir_critica_equipo_premiarla|CONTINUA|madre=pedir_critica_equipo_premiarla|que añade el hijo a la madre"
+    --veredicto "pedir_critica_equipo_premiarla|REPITE|por que no añade procedimiento"
+    --veredicto "pedir_critica_equipo_premiarla|SANO|por que no son el mismo trabajo"
+    --veredicto "pedir_critica_equipo_premiarla|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
