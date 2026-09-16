@@ -3233,6 +3233,159 @@ class PruebaVigenciaNoEsGuarda(BaseForja):
         self.assertIn("gate de integridad", salida)
 
 
+class PruebaCerrojoYCenso(BaseForja):
+    """LAS DOS REDES QUE LA CAIDA DE LA VUELTA 28 DEJO AL DESCUBIERTO.
+
+    Un nodo entro y desaparecio **con el gate en VERDE**: una corrida leyo el
+    dataset, otra escribio el suyo, y la primera volco su copia en memoria dejando
+    fuera lo que la segunda habia metido. **Un grafo al que le quitan un nodo entero
+    sigue siendo coherente, solo que mas pequenio.**
+
+    Son dos redes a dos alturas: **el cerrojo impide que pase**; **`D.44` impide que
+    una perdida llegue a un commit.**
+    """
+
+    def test_el_cerrojo_es_exclusivo(self):
+        from src import cerrojo
+        ruta = os.path.join(self.taller, "nodos.jsonl")
+        with cerrojo.tomar(ruta):
+            self.assertTrue(os.path.exists(cerrojo.ruta_de(ruta)))
+            # CASO POSITIVO: el segundo NO entra. Con tope corto para no esperar.
+            segundo = cerrojo.tomar(ruta, espera=0.01, tope=0.05)
+            self.assertRaises(cerrojo.CerrojoOcupado, segundo.__enter__)
+        # Y AL SALIR SE SUELTA, pase lo que pase.
+        self.assertFalse(os.path.exists(cerrojo.ruta_de(ruta)))
+        self.anotar("cerrojo", "el segundo espera y nunca pisa")
+
+    def test_el_cerrojo_se_suelta_aunque_reviente_lo_de_dentro(self):
+        """Un cerrojo que se queda puesto bloquea la casa para siempre."""
+        from src import cerrojo
+        ruta = os.path.join(self.taller, "nodos.jsonl")
+        try:
+            with cerrojo.tomar(ruta):
+                raise ValueError("algo revienta dentro")
+        except ValueError:
+            pass
+        self.assertFalse(os.path.exists(cerrojo.ruta_de(ruta)))
+
+    def test_un_cerrojo_huerfano_se_rompe_pero_nunca_en_silencio(self):
+        from src import cerrojo
+        import json as _json
+        ruta = os.path.join(self.taller, "nodos.jsonl")
+        # Un proceso que no existe y un cerrojo viejo.
+        comun.escribir_texto(cerrojo.ruta_de(ruta),
+                             _json.dumps({"pid": 999999999, "desde": 0}))
+        dichos = []
+        with cerrojo.tomar(ruta, espera=0.01, tope=2, avisar=dichos.append):
+            pass
+        self.assertTrue(any("HUERFANO" in d for d in dichos), dichos)
+
+    def test_caso_positivo_dos_inserciones_a_la_vez_y_ninguna_pisa(self):
+        """Es la caida de la vuelta 28, reproducida contra la aduana de verdad."""
+        import subprocess
+        self.sembrar_ejemplo()
+        uno = self.fixture("hijo_valido.json")
+        if not os.path.exists(uno):
+            self.skipTest("sin fixture de candidato")
+        antes = len(self.nodos())
+        procesos = [subprocess.Popen(
+            [sys.executable, "forja.py", "insertar", uno, "--sin-preguntas"],
+            cwd=RAIZ, env=self.entorno, stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT) for _ in range(2)]
+        for proceso in procesos:
+            proceso.communicate()
+        # NINGUNA PIERDE NADA: o entra uno, o entra uno y el otro choca por id.
+        self.assertGreaterEqual(len(self.nodos()), antes)
+
+    # ------------------------------------------------------------------ D.44
+    def test_caso_positivo_un_nodo_que_desaparece_tumba_el_gate(self):
+        """`D.44`, con el nodo de verdad que la vuelta 28 perdio.
+
+        Antes de esta guarda, quitar un nodo entero dejaba el gate **VERDE**.
+        """
+        from src import gate
+        nodos = comun.leer_jsonl(comun.RUTA_DATASET)
+        if not nodos:
+            self.skipTest("sin dataset de verdad")
+        sin_uno = nodos[1:]
+        fallos = gate.censo_no_decrece(sin_uno)
+        self.assertTrue(fallos)
+        self.assertIn(nodos[0]["id"], str(fallos[0]))
+        self.anotar("D44", "un nodo que desaparece: el gate ya lo ve")
+
+    def test_caso_negativo_el_arbol_tal_como_esta_pasa(self):
+        from src import gate
+        nodos = comun.leer_jsonl(comun.RUTA_DATASET)
+        if not nodos:
+            self.skipTest("sin dataset de verdad")
+        self.assertEqual(gate.censo_no_decrece(nodos), [])
+
+    def test_caso_negativo_un_nodo_deprecado_sigue_estando_y_pasa(self):
+        """`D.17`: un nodo que sale de superficie NO se borra, se marca."""
+        from src import gate
+        nodos = comun.leer_jsonl(comun.RUTA_DATASET)
+        if not nodos:
+            self.skipTest("sin dataset de verdad")
+        copia = [dict(n) for n in nodos]
+        copia[0]["estado"] = "deprecado"
+        self.assertEqual(gate.censo_no_decrece(copia), [])
+
+    def test_sin_commit_anterior_no_hay_nada_que_comparar(self):
+        """Un repo recien nacido, o un dataset de usar y tirar, no es un fallo."""
+        from src import gate
+        self.assertEqual(
+            gate.censo_no_decrece([], ruta_dataset=os.path.join(
+                self.taller, "no_commiteado.jsonl")), [])
+
+
+class PruebaTestigoDeGuardas(BaseForja):
+    """UNA CIFRA VALE EN EL INSTANTE DEL SELLO (D.38.3 ensanchada, 16 sep 2026).
+
+    La apertura de la vuelta 29 publico `guardas en rojo: 2` **sostenido con la
+    salida literal de su instrumento, que era VERDE cuando corrio**. Entre esa
+    corrida y el sello pasaron **44 minutos** y cinco guiones largos entraron en el
+    arbol. **Cierto al medirse, falso al publicarse**, y ninguna regla cubria eso.
+    """
+
+    def _testigo(self, **guardas):
+        return {"fecha": "2026-09-16 10:41:02", "commit": "abc123",
+                "huella_del_arbol": "def456",
+                "guardas": dict((n, {"estado": e, "codigo": 0 if e == "VERDE" else 1,
+                                     "salida": "la salida de %s" % n})
+                                for n, e in guardas.items())}
+
+    def test_caso_negativo_todo_verde_el_sello_se_acepta(self):
+        from scripts import testigo_guardas
+        testigo = self._testigo(gate="VERDE", guiones="VERDE", censo_rutas="VERDE")
+        self.assertEqual(testigo_guardas.comprobar(testigo=testigo), [])
+
+    def test_caso_positivo_una_guarda_en_rojo_al_sellar_no_acepta_el_sello(self):
+        """Es la vuelta 29: `guiones` en rojo en el instante del sello."""
+        from scripts import testigo_guardas
+        testigo = self._testigo(gate="VERDE", guiones="ROJO", censo_rutas="VERDE")
+        impiden = testigo_guardas.comprobar(testigo=testigo)
+        self.assertEqual(len(impiden), 1)
+        self.assertIn("guiones", impiden[0])
+        self.assertIn("instante del sello", impiden[0])
+        self.anotar("testigo", "guarda en rojo al sellar: el sello no se acepta")
+
+    def test_sin_testigo_tampoco_se_acepta(self):
+        """Un sello sin testigo es un sello sin nada detras."""
+        from scripts import testigo_guardas
+        impiden = testigo_guardas.comprobar(
+            ruta_testigo=os.path.join(self.taller, "no_existe.json"))
+        self.assertEqual(len(impiden), 1)
+        self.assertIn("no hay testigo", impiden[0])
+
+    def test_el_testigo_registra_el_instante_y_el_arbol(self):
+        """Sin hora y sin huella, el testigo no prueba CUANDO fue cierto."""
+        from scripts import testigo_guardas
+        escrito = testigo_guardas.escribir(os.path.join(self.taller, "testigo.json"))
+        for clave in ("fecha", "commit", "huella_del_arbol", "guardas"):
+            self.assertIn(clave, escrito)
+        self.assertTrue(escrito["guardas"])
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
@@ -3250,7 +3403,9 @@ def main():
              PruebaCorreccionDeclarada,
              PruebaInsercionAtomica,
              PruebaAnotacionDeclarada,
-             PruebaVigenciaNoEsGuarda]
+             PruebaVigenciaNoEsGuarda,
+             PruebaCerrojoYCenso,
+             PruebaTestigoDeGuardas]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -3302,6 +3457,10 @@ def main():
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaAnotacionDeclarada)._tests))
     print("  D.15: la vigencia es COLA DE TRABAJO y no guarda que tumbe el cierre: "
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaVigenciaNoEsGuarda)._tests))
+    print("  el cerrojo de insercion y D.44, el censo no decrece: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaCerrojoYCenso)._tests))
+    print("  el testigo de guardas al sellar (D.38.3, 16 sep): %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaTestigoDeGuardas)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

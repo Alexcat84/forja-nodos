@@ -64,6 +64,13 @@ montar_banco() { # $1 = nombre del escenario
   cp "$RAIZ_REPO/forja.py" "$taller/forja.py"
   cp -r "$RAIZ_REPO/src" "$taller/src"
   rm -rf "$taller/src/__pycache__"
+  # Y LOS INSTRUMENTOS DE scripts/, desde que el testigo de guardas corre dentro
+  # de la fase ciega (D.38.3, 16 sep 2026). Sin ellos el arnes no puede medir el
+  # arbol al sellar, y una guarda que no puede correr no es una guarda verde: es
+  # una guarda ausente.
+  cp -r "$RAIZ_REPO/scripts" "$taller/scripts"
+  rm -rf "$taller/scripts/__pycache__"
+  cp -r "$RAIZ_REPO/config" "$taller/config" 2>/dev/null || true
   # Un acta con una TAREA BLOQUEANTE de verdad, para que haya algo que heredar.
   cat > "$taller/docs/loop/ACTA_AUDITOR.md" <<'ACTA'
 # ACTA 1. VUELTA 1 de prueba

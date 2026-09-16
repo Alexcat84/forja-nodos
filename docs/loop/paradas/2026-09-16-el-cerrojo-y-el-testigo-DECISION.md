@@ -1,3 +1,99 @@
+# PARADA DEL 16 SEP 2026: EL CERROJO Y EL TESTIGO. **DECISION DEL FUNDADOR**
+
+> ## LA DECISION DEL FUNDADOR, 16 sep 2026
+>
+> **1. PRIMERO EL DATO.** (a) Recupera el nodo borrado: identificalo por git (el commit
+> que lo inserto y el que lo perdio), restauralo desde su version insertada con su
+> veredicto y su bitacora, y declara la reparacion con los dos hashes; **nada se borra
+> jamas, y lo que se borro se devuelve.** (b) Construye el **CERROJO DE INSERCION** tal
+> como la regla escrita lo describe (`4.2`), con caso positivo: dos procesos sobre el
+> dataset, **el segundo se bloquea o espera, nunca pisa.** (c) Guarda nueva en el gate,
+> **`D.44`, EL CENSO NO DECRECE**: si un nodo presente en `dataset/nodos.jsonl` en el
+> commit padre falta en `HEAD` sin estar marcado deprecado con motivo, **el gate cae
+> nombrandolo**; caso positivo: la perdida consumada de esta vuelta, reproducida sobre
+> copia, **debe tumbar**.
+>
+> **2. LA RACHA DEL AUDITOR SE REINICIA** con la cura de `A.4`: el **TESTIGO DE GUARDAS AL
+> SELLAR**. Al sellar la apertura ciega, el arnes corre las guardas y deja junto al sello
+> **la verdad del arbol en ese instante** (hora, salida de cada guarda, hash del arbol);
+> `D.38.3` se ensancha: **una cifra vale en el instante del sello**, que el testigo
+> registra; si la pagina sellada afirma un estado que el testigo desmiente, **el sello no
+> se acepta** (caida cazada por codigo, no por racha). La caida de hoy (cierto al medir,
+> falso al publicar, con 44 minutos y cinco guiones en medio) es el ejemplar: **con
+> testigo, habria sido verde a las 09:57 y desmentida a las 10:41 por la maquina.**
+>
+> **3. LAS TRES DE DOCTRINA**, aprobadas como el auditor las escribio en `4.3`: la fila que
+> falta a la tabla de especies, **el censo y el tallado leen tambien `APERTURA_CIEGA.md`**
+> (la unica sede de cifra que ninguna guarda leia, ya con dos ejemplares), y **`D.43` se
+> extiende a la cola de vecinos**.
+>
+> **4. `PROMPT_SIGUIENTE` de la vuelta 30** con la tarea `1` del retomar del auditor y la
+> continuacion del lote en curso.
+
+> **ARCHIVADA.** Este fichero fue `docs/loop/PARA_ALEXIS.md`. **Se archiva entero y sin
+> tocar una palabra de su cuerpo ni de su anexo**; lo unico añadido es esta cabecera.
+>
+> ## 1(a): **NO HABIA NADA QUE RECUPERAR, Y SE DICE CON LA MEDIDA**
+>
+> La orden era restaurar el nodo borrado con los dos hashes. **Lo busque antes de
+> construir nada, y el dato estaba entero:**
+>
+>     $ (censo del dataset en los 27 commits que lo tocan)
+>       222 -> 224 -> 226 -> 227 -> 229 -> 234 -> 234 -> 237 -> 239 -> 240 -> 241 -> 243
+>       nodos perdidos entre un commit y el siguiente: 0
+>
+>     $ grep -c '"id": "crear_obligacion_disentir_equipo"' dataset/nodos.jsonl   ->  1
+>     $ (commit donde entro definitivamente)                                     ->  32fa203
+>     $ (lineas suyas en bitacora/VEREDICTOS.jsonl)                              ->  21
+>
+> **LOS DOS HASHES QUE PEDIAS SON EL MISMO, Y ESO ES LA RESPUESTA:** `32fa203` es a la vez
+> **el commit donde el nodo entra** y **el que declara la caida**. **No hay commit que lo
+> perdiera.** La perdida vivio en el arbol de trabajo, entre dos ordenes, y **el extractor
+> la reparo antes de commitear**, como su propia `V.5.e` cuenta.
+>
+> **NO HICE UNA RESTAURACION CEREMONIAL SOBRE UN DATO QUE YA ESTABA ENTERO.** Lo que sigue
+> valiendo de tu punto 1 es todo lo demas, y esta hecho.
+>
+> ## 1(b) y 1(c): LAS DOS REDES, A DOS ALTURAS
+>
+> | pieza | que impide | caso positivo |
+> |---|---|---|
+> | **el cerrojo** (`src/cerrojo.py`) | que la perdida **ocurra** | con el cerrojo tomado, **el segundo no entra**; y se suelta aunque lo de dentro reviente |
+> | **`D.44`** (`src/gate.py`) | que una perdida **llegue a un commit** | quitar `crear_obligacion_disentir_equipo`, **el nodo de verdad**, tumba el gate nombrandolo. **Antes salia VERDE** |
+>
+> **EL CERROJO ENVUELVE LA CORRIDA ENTERA Y NO SOLO LA ESCRITURA**, porque el dano no fue
+> escribir a la vez: **fue LEER antes y escribir despues.** Un cerrojo sobre el `write` no
+> habria salvado nada.
+>
+> **Y DIGO LO QUE `D.44` NO HACE:** no habria cazado la caida de la vuelta 28, porque se
+> reparo antes de commitear. **Esa la caza el cerrojo.** `D.44` es la red de abajo.
+>
+> ## 2: EL TESTIGO, Y UN INTENTO QUE TIRE
+>
+> **La primera version comprobaba lo que tu letra dice al pie**: *si la pagina afirma un
+> estado que el testigo desmiente, el sello no se acepta.* **La escribi, la probe contra la
+> pagina de la vuelta 29, y la daba por buena.** En seiscientas lineas que hablan de las
+> guardas, cualquier heuristica encuentra una linea con `guion` y `rojo` cerca. **Una
+> guarda que se deja convencer por la prosa no guarda nada.**
+>
+> **ASI QUE MIDE EL ARBOL Y NO EL TEXTO:** si una guarda esta en **ROJO en el instante del
+> sello**, el sello no se acepta. Es mas estrecho que tu letra y **mas fuerte**: un rojo al
+> cerrar significa que la pagina cerro sobre un arbol que ya no era el que midio, **y eso
+> vale para cualquier cifra suya, no solo para las que hablen de guardas.** Lo digo por si
+> prefieres la otra lectura.
+>
+> **LA RACHA DEL AUDITOR QUEDA EN `0 de 3`**, con `D.45` instalada y corriendo.
+>
+> ## 3: LAS TRES, HECHAS
+>
+> | | |
+> |---|---|
+> | la fila que faltaba | **`DATO MOVIDO`**: una operacion que cambia `dataset/`, `bitacora/` o `censos/` **sin que ningun veredicto este mal puesto**. Acumula como las demas: **cambia el nombre, no el escalon** |
+> | el censo y el tallado | leen **tambien `APERTURA_CIEGA.md`**. El censo pasa de `434` a `436` rutas |
+> | `D.43` a la cola de vecinos | escrito en el manual del extractor, con la medida que lo obliga (`73,3` s sobre `510`) y **con lo que no es**: no es permiso para pedir mas candidatos |
+
+---
+
 # PARA ALEXIS. **EL BUCLE SE DETIENE, Y LA RACHA QUE LO DETIENE ES LA DEL AUDITOR, NO LA DEL EXTRACTOR**
 
 *Escrito por el **auditor** al cerrar la `ACTA 28`, el 16 sep 2026. Sede del auditor por

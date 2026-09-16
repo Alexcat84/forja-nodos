@@ -53,6 +53,12 @@ import sys
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RUTA_REPORTE = os.path.join(RAIZ, "docs", "loop", "REPORTE.md")
+# Y LA APERTURA CIEGA, desde el 16 sep 2026 (decision del fundador, punto 3): era
+# la unica sede de cifra que ninguna guarda leia, con dos ejemplares ya encontrados
+# a mano. Una tabla suya que diga venir de un instrumento se talla igual que las
+# del reporte.
+RUTA_APERTURA = os.path.join(RAIZ, "docs", "loop", "APERTURA_CIEGA.md")
+DOCUMENTOS = (RUTA_REPORTE, RUTA_APERTURA)
 
 VENTANA = 12                 # lineas por encima de la tabla donde se busca
 TOPE_DE_SEGUNDOS = 900       # un instrumento que no acaba en 15 min se declara
@@ -308,6 +314,21 @@ def comparar(tabla, texto_instrumento):
     return diferencias, aviso
 
 
+def comun_relativa(ruta):
+    try:
+        return os.path.relpath(ruta, RAIZ).replace(chr(92), "/")
+    except ValueError:
+        return ruta
+
+
+def revisar_todos(regenerar=False, raiz=None):
+    """Los dictamenes de las DOS sedes de cifra que publican tablas."""
+    todos = []
+    for documento in DOCUMENTOS:
+        todos.extend(revisar(documento, regenerar=regenerar, raiz=raiz))
+    return todos
+
+
 def revisar(ruta_reporte=None, regenerar=False, raiz=None):
     """Devuelve la lista de dictamenes, uno por tabla declarada."""
     raiz = raiz or RAIZ
@@ -326,6 +347,7 @@ def revisar(ruta_reporte=None, regenerar=False, raiz=None):
     texto = io.open(ruta_reporte, encoding="utf-8").read()
     dictamenes = []
     for tabla in declaradas(texto, ruta_reporte):
+        tabla["documento"] = comun_relativa(ruta_reporte)
         if tabla.get("parcial"):
             dictamenes.append({"tabla": tabla, "estado": "CITA", "motivo":
                                "declarada PARCIAL: cita a su instrumento en alguna "
@@ -426,8 +448,9 @@ def texto_informe(dictamenes, estricto=False):
     lineas.append("  que CITAN y no reproducen     : %d   (declaradas PARCIAL)"
                   % len(citas))
     for dictamen in citas:
-        lineas.append("      linea %d de docs/loop/REPORTE.md"
-                      % (dictamen["tabla"]["inicio"] + 1))
+        lineas.append("      linea %d de %s"
+                      % (dictamen["tabla"]["inicio"] + 1,
+                         dictamen["tabla"].get("documento", "docs/loop/REPORTE.md")))
 
     for dictamen in difieren:
         tabla = dictamen["tabla"]
@@ -436,7 +459,8 @@ def texto_informe(dictamenes, estricto=False):
             if diferencia["fila"] not in filas:
                 filas.append(diferencia["fila"])
         lineas.append("")
-        lineas.append("DIFIERE  docs/loop/REPORTE.md linea %d" % (tabla["inicio"] + 1))
+        lineas.append("DIFIERE  %s linea %d"
+                      % (tabla.get("documento", "docs/loop/REPORTE.md"), tabla["inicio"] + 1))
         lineas.append("  declara: %s" % (tabla.get("salida") or tabla.get("script")))
         lineas.append("  %d fila(s) distintas de su instrumento:" % len(filas))
         for diferencia in dictamen["diferencias"]:
@@ -450,16 +474,16 @@ def texto_informe(dictamenes, estricto=False):
     for dictamen in vacias:
         tabla = dictamen["tabla"]
         lineas.append("")
-        lineas.append("RUTA VACIA  docs/loop/REPORTE.md linea %d"
-                      % (tabla["inicio"] + 1))
+        lineas.append("RUTA VACIA  %s linea %d"
+                      % (tabla.get("documento", "docs/loop/REPORTE.md"), tabla["inicio"] + 1))
         lineas.append("  declara: %s" % (tabla.get("salida") or tabla.get("script")))
         lineas.append("  %s" % dictamen["motivo"])
 
     for dictamen in sin:
         tabla = dictamen["tabla"]
         lineas.append("")
-        lineas.append("SIN COMPROBAR  docs/loop/REPORTE.md linea %d"
-                      % (tabla["inicio"] + 1))
+        lineas.append("SIN COMPROBAR  %s linea %d"
+                      % (tabla.get("documento", "docs/loop/REPORTE.md"), tabla["inicio"] + 1))
         lineas.append("  %s" % dictamen["motivo"])
 
     lineas.append("")
@@ -510,7 +534,7 @@ def main(argumentos=None):
               "y con que orden se regenero. Una correccion silenciosa vuelve a ser "
               "una tabla sin origen.")
         return 0
-    dictamenes = revisar(regenerar=regenerar)
+    dictamenes = revisar_todos(regenerar=regenerar)
     print(texto_informe(dictamenes, estricto))
     if any(d["estado"] in ("DIFIERE", "RUTA VACIA") for d in dictamenes):
         return 1

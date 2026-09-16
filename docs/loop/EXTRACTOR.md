@@ -338,6 +338,20 @@ Lo que este documento añade es **el ritmo de la vuelta**:
    >
    > **EL DE UN CANDIDATO SUELTO SIGUE SIENDO TUYO**, en el mismo acto en que lo
    > escribes. Lo que se saco de tu turno es el del lote entero, y solo ese.
+
+   > ### **Y DESDE EL 16 sep 2026, TAMPOCO LA COLA DE VECINOS** (`D.43` extendida)
+   >
+   > **El arnes te entrega la cola por candidato, sellada, como ya te entrega el informe
+   > de lote.** Tu la **citas por su sello**; no la recomputas.
+   >
+   > **LA MEDIDA QUE LO OBLIGA, cronometrada por el auditor de la vuelta 28:**
+   > `buscar_vecinos` tarda **`73,3` segundos sobre `510`**, y quedaban **`12` candidatos
+   > con `77` pares**. Es exactamente la frase con la que `D.43` saco el informe de lote
+   > del turno: **una cifra que no cabe en un turno no se firma en un turno.**
+   >
+   > **Y LO QUE ESTO NO ES:** no es permiso para pedir mas candidatos por vuelta. El
+   > propio extractor lo escribio contra si mismo: *el coste del instrumento es un motivo
+   > para pedir menos candidatos, no para correr dos a la vez.*
    >
    > **Y SI EL PROMPT NO TE ENTREGA NINGUN INFORME**, es que esta corrida no lo
    > pidio: entonces **no lo inventes y no lo lances**, y declara en tu reporte que

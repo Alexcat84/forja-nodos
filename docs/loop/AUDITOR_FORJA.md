@@ -222,6 +222,24 @@ otro.**
 | **`REMEDIO ROTO`** | un remedio **de sustancia de auditoria** que tu escribiste y tu no cumpliste |
 | **`CIFRA PUBLICADA PROPIA`** | una cifra falsa en tu acta o en tu apertura sellada |
 
+> ### **LA FILA QUE FALTABA: `DATO MOVIDO`** (16 sep 2026, decision del fundador, punto 3)
+>
+> > **`DATO MOVIDO`: una operacion que cambia `dataset/`, `bitacora/` o `censos/` sin que
+> > ningun veredicto este mal puesto.**
+>
+> **LO QUE LA OBLIGO.** La caida de la vuelta 28 **movio el dataset** (sede de `CLASE`)
+> **y ningun veredicto estaba mal puesto** (definicion de `CLASE`). El auditor la cargo
+> como `CLASE` **eligiendo la lectura que le costaba un escalon al extractor**, y declaro
+> la tension en vez de resolverla copiando. **Tenia razon en las dos cosas: en cargarla y
+> en decir que no encajaba.**
+>
+> **ES LA MISMA FIGURA DEL 2 sep 2026**, cuando una cifra dentro del codigo de una guarda
+> no tenia casillero: **un dano real sin sitio donde anotarlo acaba anotandose donde no
+> va, y entonces la racha que lo recibe deja de significar lo que dice.**
+>
+> **ACUMULA COMO LAS DEMAS**, en la racha de quien movio el dato. **Y no absuelve nada:**
+> lo que cambia es el nombre, no el escalon.
+
 > ### **`REMEDIO ROTO` SE ACOTO EL 12 sep 2026** (decision del fundador, punto 1)
 >
 > > **CUENTA SOLO CUANDO EL REMEDIO ES DE SUSTANCIA DE AUDITORIA: clases, cifras,

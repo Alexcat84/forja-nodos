@@ -32,6 +32,7 @@ import os
 import sys
 
 from . import censos
+from . import cerrojo
 from . import comun
 from . import config as modulo_config
 from . import esquema as modulo_esquema
@@ -1442,6 +1443,20 @@ def main(argumentos=None):
         interactivo = sys.stdin is not None and sys.stdin.isatty()
 
     bruto = comun.leer_json(ruta_candidato)
-    resultado = insertar(bruto, veredictos, respuestas, interactivo=interactivo)
+    # EL CERROJO ENVUELVE LA CORRIDA ENTERA, no solo la escritura, porque el dano
+    # no fue escribir a la vez: fue LEER antes y escribir despues. La corrida que
+    # perdio el nodo en la vuelta 28 habia leido el dataset ANTES de que la otra
+    # escribiera, y al volcar su propia copia en memoria dejo fuera lo que la otra
+    # habia metido. Un cerrojo que solo cubriera el `write` no habria salvado nada.
+    #
+    # `EXTRACTOR.md` 2 manda UN CANDIDATO POR VEZ. Hasta hoy esa regla la cumplia
+    # el que teclea; desde hoy la cumple el codigo.
+    try:
+        with cerrojo.tomar(comun.RUTA_DATASET, avisar=lambda m: print("  " + m)):
+            resultado = insertar(bruto, veredictos, respuestas,
+                                 interactivo=interactivo)
+    except cerrojo.CerrojoOcupado as ocupado:
+        print("INSERCION NO INTENTADA: %s" % ocupado)
+        return CODIGO_RECHAZO
     print(resultado.texto())
     return resultado.codigo

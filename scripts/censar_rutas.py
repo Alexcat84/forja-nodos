@@ -55,8 +55,14 @@ import sys
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RUTA_SEDES = os.path.join(RAIZ, "config", "sedes_vacias.json")
 
+# LA APERTURA CIEGA ENTRA EL 16 sep 2026 (decision del fundador, punto 3). Era
+# **la unica sede de cifra de esta casa que ninguna guarda leia**, y ya llevaba DOS
+# ejemplares encontrados a mano: la `ACTA 27` 8.1 y la caida de la vuelta 29.
+# Una sede que publica cifras y que nadie mide es una sede donde las cifras viven
+# tranquilas.
 DOCUMENTOS = (os.path.join("docs", "loop", "REPORTE.md"),
-              os.path.join("docs", "loop", "ACTA_AUDITOR.md"))
+              os.path.join("docs", "loop", "ACTA_AUDITOR.md"),
+              os.path.join("docs", "loop", "APERTURA_CIEGA.md"))
 
 EN_COMILLAS = re.compile(r"`([^`\n]+)`")
 MARCA_VACIA = re.compile(r"VACIA A PROPOSITO\s*:\s*(\S.*)")

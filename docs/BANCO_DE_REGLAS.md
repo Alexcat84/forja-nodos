@@ -2186,3 +2186,126 @@ entero**, y solo ese.
 que comprueban que el sello cae **antes** del turno, que un lote inexistente detiene
 la corrida **sin que el extractor corra**, y que sin lote el prompt **no promete un
 informe que no existe.**
+
+## D.44. EL CENSO NO DECRECE, Y UNA SOLA CORRIDA ESCRIBE EL DATASET (16 sep 2026, decision del fundador)
+
+*Punto 1 de la decision del fundador del 16 sep 2026, sobre la parada de la vuelta 29,
+archivada en `docs/loop/paradas/2026-09-16-el-cerrojo-y-el-testigo-DECISION.md`.*
+
+### LA CAIDA, Y ES LA PEOR FORMA QUE ESTA CASA HA VISTO
+
+**UN NODO ENTRO EN EL GRAFO Y DESAPARECIO, CON EL `gate` EN VERDE ENCIMA.** La vuelta 28
+lanzo dos `insertar` a la vez: el segundo escribio su nodo, y el primero, que **habia
+leido el dataset ANTES**, volco su propia copia en memoria **dejando fuera lo que el
+segundo habia metido.**
+
+> **UN GRAFO AL QUE LE QUITAN UN NODO ENTERO SIGUE SIENDO COHERENTE, solo que mas
+> pequenio.** Las doce guardas lo miraban todo menos eso. **Lo cazo el extractor con una
+> resta que no cuadro por uno.**
+
+**`EXTRACTOR.md` 2 manda UN CANDIDATO POR VEZ desde que existe.** Es la tercera vez que
+esta casa encuentra la misma figura: **una regla escrita que no llego a `src/`** (`D.29` a
+la aduana, `D.38.5` a la aduana, y esta).
+
+### PRIMERO EL DATO: lo que se busco antes de construir nada
+
+**EL FUNDADOR MANDO RECUPERAR EL NODO BORRADO. NO HABIA NADA QUE RECUPERAR, y se declara
+con su medida en vez de con una ceremonia:**
+
+    $ (censo del dataset en los 27 commits que lo tocan)
+      222 -> 224 -> 226 -> 227 -> 229 -> 234 -> 234 -> 237 -> 239 -> 240 -> 241 -> 243
+      nodos perdidos entre un commit y el siguiente: 0
+
+    $ grep -c '"id": "crear_obligacion_disentir_equipo"' dataset/nodos.jsonl   ->  1
+    $ (commit donde entro definitivamente)  32fa203
+    $ (lineas suyas en bitacora/VEREDICTOS.jsonl)                             ->  21
+
+**LA PERDIDA VIVIO SOLO EN EL ARBOL DE TRABAJO, ENTRE DOS ORDENES, Y EL EXTRACTOR LA
+REPARO ANTES DE COMMITEAR.** El `32fa203` es a la vez el commit donde el nodo entra y el
+que declara la caida. **Ningun commit de esta casa ha perdido nunca un nodo.**
+
+### Las dos redes, a dos alturas distintas
+
+| pieza | que impide | sede |
+|---|---|---|
+| **el cerrojo** | que la perdida **ocurra** | `src/cerrojo.py`, tomado en la entrada de `insertar` |
+| **`D.44`** | que una perdida **llegue a un commit** | `src/gate.py`, guarda `censo_no_decrece` |
+
+> **LA LETRA.** Si un nodo que estaba en el dataset del commit anterior **falta en el arbol
+> que se va a commitear**, y **no esta marcado `deprecado` con su motivo** (`D.17`), **el
+> gate cae nombrandolo.**
+
+**EL CERROJO ENVUELVE LA CORRIDA ENTERA, no solo la escritura**, y el motivo es la caida
+misma: **el dano no fue escribir a la vez, fue LEER antes y escribir despues.** Un cerrojo
+que cubriera solo el `write` no habria salvado nada. Quien no lo consigue **espera**; no
+pisa, y no se salta el turno de nadie. **Un cerrojo huerfano se rompe, pero nunca en
+silencio**, y se dice si el proceso no existe o si no se pudo comprobar.
+
+### Casos positivos, que es lo que hace que esto guarde algo
+
+| | |
+|---|---|
+| **el cerrojo** | con el cerrojo tomado, **el segundo no entra**; y se suelta aunque lo de dentro reviente, **porque un cerrojo que se queda puesto bloquea la casa para siempre** |
+| **`D.44`** | quitar `crear_obligacion_disentir_equipo` del arbol, **que es el nodo de verdad que la vuelta 28 perdio**, tumba el gate nombrandolo. **Antes salia VERDE** |
+| **negativo de `D.44`** | el arbol tal como esta **pasa**, y un nodo marcado `deprecado` **pasa**: `D.17` dice que no se borra, se marca |
+
+**12 pruebas** entre las dos (`PruebaCerrojoYCenso`).
+
+### Lo que `D.44` NO hace, y conviene no venderlo de mas
+
+**NO habria cazado la caida de la vuelta 28**, porque el extractor la reparo antes de
+commitear. **Esa la caza el cerrojo.** `D.44` es la red de abajo: la que se entera cuando
+la de arriba falla.
+
+---
+
+## D.45. UNA CIFRA VALE EN EL INSTANTE DEL SELLO (16 sep 2026, decision del fundador)
+
+*Punto 2 de la decision del fundador del 16 sep 2026. **La racha del auditor se reinicia
+con esta condicion mecanica encima**, que es la forma que ya funciono con `D.40`, `D.41` y
+`D.42`. Ensancha `D.38.3`.*
+
+### El caso, con sus horas
+
+| | |
+|---|---|
+| `09:57:02` | el auditor corre el barrido de guiones. **VERDE**, y pega la salida literal |
+| `10:41:02` | se sella la pagina, que publica **`guardas en rojo: 2`** |
+| `10:41:05` | el `pre-commit` imprime **cinco guiones largos** metidos por los ficheros de trabajo del propio auditor, y **aborta el commit del sello** |
+
+> **LA CIFRA ERA CIERTA AL MEDIRSE Y FALSA AL PUBLICARSE**, y ninguna regla cubria eso:
+> `D.38.3` exige que la cifra **tenga** instrumento, **no que el instrumento siga siendo
+> cierto al publicar.** Cuarenta y cuatro minutos en medio.
+
+### La letra
+
+> **AL SELLAR LA APERTURA CIEGA, EL ARNES CORRE LAS GUARDAS Y DEJA JUNTO AL SELLO LA
+> VERDAD DEL ARBOL EN ESE INSTANTE**: la hora, la salida de cada guarda y el hash del
+> arbol.
+>
+> **SI UNA GUARDA ESTA EN ROJO EN EL INSTANTE DEL SELLO, EL SELLO NO SE ACEPTA**, y el
+> arnes se detiene nombrandola.
+
+**POR QUE NO SE LEE LA PAGINA, Y ES UNA LECCION QUE COSTO UN INTENTO.** La primera version
+comprobaba *si el testigo dice rojo y la pagina no lo dice, se rechaza*. **No servia:** en
+una pagina de seiscientas lineas que habla de las guardas, cualquier heuristica encuentra
+una linea con `guion` y `rojo` cerca. **Probada contra la pagina de la vuelta 29, la daba
+por buena.** Una guarda que se deja convencer por la prosa no guarda nada.
+
+**ASI QUE SE MIDE EL ARBOL Y NO EL TEXTO.** Un rojo al cerrar significa que la pagina
+cerro **sobre un arbol que ya no era el que midio**, y eso vale para cualquier cifra suya,
+no solo para las que hablen de guardas. **El remedio que el propio auditor se escribio
+dice lo mismo por el otro lado:** *la tabla de cierre se escribe DESPUES de volver a
+correr las guardas.* **Si al sellar hay un rojo, esa tabla no se escribio despues.**
+
+**Con este testigo, la caida de la vuelta 29 habria sido VERDE a las `09:57` y DETENIDA a
+las `10:41` por la maquina**, con el nombre de la guarda delante y **sin gastar una
+racha.**
+
+**Sede:** `scripts/testigo_guardas.py`, cableado en `apertura_ciega()` antes del sello, con
+su parada propia. **4 pruebas** (`PruebaTestigoDeGuardas`), con su caso positivo (una
+guarda en rojo no deja sellar) y su negativo (todo verde sella).
+
+**LO QUE NO HACE:** no comprueba que las cifras de la pagina sean ciertas. **Hace imposible
+que una medida caduque sin que quede constancia de que caduco.** Lo demas lo caza una
+lectura.

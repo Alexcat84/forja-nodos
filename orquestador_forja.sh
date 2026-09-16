@@ -583,6 +583,35 @@ $PROMPT_APERTURA_CIEGA" \
     log "  durante la fase ciega. Solo se recuperan a mano, asi que fue deliberado."
   fi
 
+  # EL TESTIGO DE GUARDAS, ANTES DEL SELLO (D.38.3 ensanchada el 16 sep 2026).
+  #
+  # UNA CIFRA VALE EN EL INSTANTE DEL SELLO. La apertura de la vuelta 29 publico
+  # `guardas en rojo: 2` sostenido con la salida literal de su instrumento, que era
+  # VERDE cuando corrio; entre esa corrida y el sello pasaron 44 minutos y cinco
+  # guiones largos entraron en el arbol. La cifra era cierta al medirse y falsa al
+  # publicarse, y ninguna regla cubria eso.
+  #
+  # El testigo corre las guardas baratas y deja la verdad del arbol en ese instante.
+  # SI ALGUNA ESTA EN ROJO, EL SELLO NO SE ACEPTA: un rojo al cerrar significa que
+  # la pagina cerro sobre un arbol que ya no era el que midio.
+  log "  testigo de guardas, antes de sellar (D.38.3)"
+  python scripts/testigo_guardas.py >>"$LOOP/loop.log" 2>&1 || true
+  local desmiente
+  if ! desmiente="$(python scripts/testigo_guardas.py --comprobar 2>&1)"; then
+    log "SELLO NO ACEPTADO en la vuelta $vuelta: una guarda estaba en ROJO al sellar."
+    printf '%s\n' "$desmiente" | while IFS= read -r renglon; do log "    $renglon"; done
+    log "DETENIDO en la vuelta $vuelta: el testigo desmiente el estado del sello. Ver $LOOP/PARA_ALEXIS.md"
+    para_alexis_por_testigo "$vuelta" "$desmiente"
+    for fichero in $retirar; do
+      [ -f "$refugio/$fichero" ] && mv "$refugio/$fichero" "$LOOP/$fichero"
+    done
+    LOG_ACTIVO=""
+    [ -f "$refugio/loop_provisional.log" ] && cat "$refugio/loop_provisional.log" >> "$LOOP/loop.log"
+    rm -rf "$refugio"
+    exit 1
+  fi
+  log "  testigo: las guardas estaban en verde en el instante del sello"
+
   # EL SELLO. git hash-object da la misma huella que usa el testigo, asi que no
   # hay dos formas de medir lo mismo en este fichero.
   sello="$(git hash-object "$APERTURA" 2>/dev/null || echo sin-sello)"
@@ -623,6 +652,34 @@ verificar_sello() { # $1 = vuelta. Cierto si la apertura ciega sigue siendo la s
   fi
   log "  sello de la apertura ciega verificado: intacto tras el turno"
   return 0
+}
+
+para_alexis_por_testigo() { # vuelta lo_que_desmiente
+  cat > "$LOOP/PARA_ALEXIS.md" <<EOF
+# PARA_ALEXIS: el testigo de guardas desmiente el estado del sello
+
+La vuelta $1 cerro su apertura ciega con **una guarda en ROJO en el instante del
+sello**, y por eso el sello NO se acepta (D.38.3 ensanchada el 16 sep 2026).
+
+Lo que el testigo registro:
+
+$2
+
+QUE SIGNIFICA. Una cifra vale en el instante del sello. Si al cerrar hay una guarda
+en rojo, la tabla de cierre de la pagina **no se escribio despues de volver a correr
+las guardas**, asi que cualquier cifra de estado que publique puede haber caducado
+entre la medida y el sello. Le paso a la vuelta 29 con 44 minutos y cinco guiones en
+medio, y costo una racha entera.
+
+QUE NO SIGNIFICA. No dice que la clasificacion sea falsa ni que el trabajo este mal.
+Dice que el estado que la pagina publica no se puede firmar.
+
+Estado: rama $RAMA, hash $(git rev-parse --short HEAD 2>/dev/null || echo desconocido).
+
+Como retomar: deja el arbol limpio (lo que ensucio la guarda suele ser un fichero de
+trabajo de la propia fase ciega), borra este fichero y relanza. El auditor vuelve a
+abrir y esta vez el testigo lo confirma.
+EOF
 }
 
 para_alexis_por_herencia() { # vuelta lo_que_falta
