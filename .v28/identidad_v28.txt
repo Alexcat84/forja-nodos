@@ -1,0 +1,10 @@
+=== fecha, leida del instrumento ===
+Wed, Sep 16, 2026  8:37:12 AM
+src.aduana._hoy() -> 2026-09-16
+=== identidad, leida de git ===
+rama            : extraccion-mundo-11
+hash auditado   : 3f5450e2fe7f88b2fb71993dfdffcc832f09ec28  (3f5450e)
+cierre v27      : 24bffee
+apertura v27    : 360f941
+=== huella de la ACTA anterior (la que mi apertura dice haber leido) ===
+git hash-object docs/loop/ACTA_AUDITOR.md (HOY, antes de aniadir) -> aebb5219006cb8ac6804e37a450c0f7f17498c32

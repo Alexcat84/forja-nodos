@@ -1,0 +1,6 @@
+$ sed -n "245,257p" fuentes/scott_radical_candor/cap_07.md | grep -ciE "two ways|three ways|four|both ways|these two"
+0
+
+$ grep -n "switch roles" fuentes/scott_radical_candor/cap_07.md
+229:Another way to help people search for the best answer instead of seeking ego validation is to make them switch roles. If a person has been arguing for A, ask them to start arguing for B. If a deba
+257:The right thing to do would have been to set a “decide by” date, so everybody would know that they couldn’t lobby the project manager endlessly. If the debate seemed too rancorous, I could h

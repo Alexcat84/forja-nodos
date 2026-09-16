@@ -1,0 +1,20 @@
+== nodos en el grafo (hoy) ==
+239 dataset/nodos.jsonl
+== nodos en el grafo (al abrir la v27, 360f941) ==
+234
+== veredictos en bitacora (hoy) ==
+264 bitacora/VEREDICTOS.jsonl
+== veredictos al abrir la v27 ==
+240
+== bandeja lote 4 (hoy) ==
+106
+== bandeja lote 4 (al abrir v27) ==
+111
+== bandeja lote 5 (hoy) ==
+3
+== insertados lote 4 (hoy) ==
+36
+== insertados totales (hoy) ==
+237
+== pares_mutuos ==
+1 config/pares_mutuos.jsonl

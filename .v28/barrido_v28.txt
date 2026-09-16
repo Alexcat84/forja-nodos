@@ -1,0 +1,45 @@
+poblacion del barrido       : 348   (234 del grafo mas 114 que esperan en bandejas)
+fuente del grafo            : git show 360f941:dataset/nodos.jsonl
+fuente de las bandejas      : git archive 360f941 cuarentena (sin _insertados ni _derivadas)
+
+==============================================================================
+CANDIDATO : crear_cultura_escucha_equipo
+pasos     : 17
+barrido contra 347 (la poblacion menos el propio candidato)
+VECINOS QUE SUPERAN UMBRAL : 4
+   - crear_obligacion_disentir_equipo                         [familia_id=0.333]
+   - adaptar_escucha_cultura_ajena                            [familia_id=0.333]
+   - juzgar_cultura_renuncias_equipo                          [familia_id=0.333]
+   - crear_plan_creible_equipo                                [familia_id=0.333]
+==============================================================================
+CANDIDATO : escuchar_callado_equipo_tranquilizar_incomodo
+pasos     : 11
+barrido contra 347 (la poblacion menos el propio candidato)
+VECINOS QUE SUPERAN UMBRAL : 0
+   (ninguno)
+==============================================================================
+CANDIDATO : escuchar_ruidoso_opinion_fuerte_pedir_agujeros
+pasos     : 13
+barrido contra 347 (la poblacion menos el propio candidato)
+VECINOS QUE SUPERAN UMBRAL : 0
+   (ninguno)
+==============================================================================
+CANDIDATO : centrar_debate_ideas_fuera_egos
+pasos     : 10
+barrido contra 347 (la poblacion menos el propio candidato)
+VECINOS QUE SUPERAN UMBRAL : 8
+   - rechazar_candidato_razones_relevantes                    [paso_contra_nodo=0.607]
+   - fijar_fecha_cierre_debate_equipo                         [similitud_texto=0.372]
+   - bajar_detalle_organizacion_fuente_hechos                 [similitud_texto=0.356]
+   - mantener_manos_trabajo_real_equipo                       [similitud_texto=0.354]
+   - compartir_logica_mostrar_razonamiento                    [similitud_texto=0.369]
+   - parar_debate_emocion_agotamiento                         [similitud_texto=0.36]
+   - proteger_tiempo_equipo_jefe                              [similitud_texto=0.357]
+   - minimizar_impuesto_colaboracion_equipo                   [similitud_texto=0.369]
+==============================================================================
+CANDIDATO : explicar_idea_facil_comprender_oyente
+pasos     : 13
+barrido contra 347 (la poblacion menos el propio candidato)
+VECINOS QUE SUPERAN UMBRAL : 1
+   - compartir_logica_mostrar_razonamiento                    [similitud_texto=0.37]
+==============================================================================

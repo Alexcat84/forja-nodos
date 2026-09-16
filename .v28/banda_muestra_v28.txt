@@ -1,0 +1,5 @@
+releidos            : 13
+caidas              : 0
+tasa                : 0.00 por ciento
+banda Wilson 95 pct : 0.0 a 22.8 por ciento
+cota alta exacta    : 24.7 por ciento  (Clopper-Pearson, 1 - 0,025^(1/13))

@@ -1,0 +1,11 @@
+$ grep -c "cap_07" en el resumen_teorico de los CINCO nodos nuevos, leido del GRAFO y no de la bandeja
+   escuchar_callado_equipo_tranquilizar_incomodo      cap_NN=True  punteros_de_linea=True
+   escuchar_ruidoso_opinion_fuerte_pedir_agujeros     cap_NN=True  punteros_de_linea=True
+   crear_cultura_escucha_equipo                       cap_NN=True  punteros_de_linea=True
+   explicar_idea_facil_comprender_oyente              cap_NN=True  punteros_de_linea=True
+   centrar_debate_ideas_fuera_egos                    cap_NN=True  punteros_de_linea=True
+   dicen de que capitulo salen : 5 de 5
+   traen punteros de linea     : 5 de 5
+
+$ y sobre el grafo ENTERO, el mismo censo de CONTENIDO
+   nodos cuyo resumen_teorico nombra un cap_NN : 38 de 239

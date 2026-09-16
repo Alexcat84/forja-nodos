@@ -1,0 +1,28 @@
+PASOS INVENTADOS: LA POBLACION, contada del dataset
+
+nodo                                                  pasos  unidad    lineas declaradas
+----------------------------------------------------------------------------------------------------
+escuchar_callado_equipo_tranquilizar_incomodo            11  cap_07    L91 a L111
+escuchar_ruidoso_opinion_fuerte_pedir_agujeros           13  cap_07    L113 a L129
+crear_cultura_escucha_equipo                             17  cap_07    L131 a L153
+explicar_idea_facil_comprender_oyente                    13  cap_07    L197 a L211
+centrar_debate_ideas_fuera_egos                          10  cap_07    L225 a L229
+----------------------------------------------------------------------------------------------------
+TOTAL DE PASOS DE LA POBLACION                           64
+
+EL NUMERADOR, PUESTO POR EL AUDITOR LEYENDO LOS 64 PASOS CONTRA SU PARRAFO
+(AUDITOR_FORJA 8.3 punto 1 y punto 2; el libro se reabrio con su lector, D.35)
+
+  escuchar_callado_equipo_tranquilizar_incomodo    11 de 11 TRANSCRIPCION   0 PUENTE
+  escuchar_ruidoso_opinion_fuerte_pedir_agujeros   13 de 13 TRANSCRIPCION   0 PUENTE
+  crear_cultura_escucha_equipo                     17 de 17 TRANSCRIPCION   0 PUENTE
+  explicar_idea_facil_comprender_oyente            13 de 13 TRANSCRIPCION   0 PUENTE
+  centrar_debate_ideas_fuera_egos                  10 de 10 TRANSCRIPCION   0 PUENTE
+
+  cap_07 :  0 PUENTE sobre 64 pasos  ->  0,00 POR CIENTO
+
+LO QUE NO ES UN PUENTE Y SI ES UN HUECO, y se declara aparte porque la metrica
+no lo mide: cap_07 L153 da TRES maneras de gestionar una reunion y
+crear_cultura_escucha_equipo recoge DOS. La que falta es la segunda del libro,
+levantarse y pasear bloqueando fisicamente a quien habla de mas. Un paso que
+falta no es un paso inventado: no sube esta cifra y va a la cola como hueco.
