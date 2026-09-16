@@ -1,0 +1,14 @@
+lineas con campo anotaciones: 48
+tipos de anotacion: {'["fecha", "no_consumada", "razon", "texto"]': 49}
+lineas con VIGENCIA DECLARADA: 34
+cuales: [149, 151, 154, 158, 181, 199, 204, 205, 206, 207, 208, 209, 210, 211, 215, 216, 219, 222, 226, 228, 234, 238, 241, 242, 243, 244, 252, 256, 258, 260, 261, 262, 263, 264]
+las 8 esperadas estan: True
+
+252 SANO crear_cultura_escucha_equipo vs crear_obligacion_disentir_equipo | len razon 1025
+256 SANO explicar_idea_facil_comprender_oyente vs compartir_logica_mostrar_razonamiento | len razon 1943
+258 SANO centrar_debate_ideas_fuera_egos vs fijar_fecha_cierre_debate_equipo | len razon 1242
+260 SANO centrar_debate_ideas_fuera_egos vs mantener_manos_trabajo_real_equipo | len razon 834
+261 SANO centrar_debate_ideas_fuera_egos vs compartir_logica_mostrar_razonamiento | len razon 896
+262 SANO centrar_debate_ideas_fuera_egos vs parar_debate_emocion_agotamiento | len razon 986
+263 SANO centrar_debate_ideas_fuera_egos vs proteger_tiempo_equipo_jefe | len razon 865
+264 SANO centrar_debate_ideas_fuera_egos vs minimizar_impuesto_colaboracion_equipo | len razon 910

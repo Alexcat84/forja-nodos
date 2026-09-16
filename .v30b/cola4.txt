@@ -1,0 +1,7 @@
+$ (las CUATRO lineas con arista_en_cola de toda la bitacora, resueltas hoy contra el grafo)
+
+  linea  arista                                                                                          estado de hoy
+  265    recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo               CABLEADA por los dos extremos
+  279    crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas                   EN COLA todavia: nutrir_ideas_nuevas_reunion_solas sigue en la bandeja
+  333    minimizar_impuesto_colaboracion_equipo > proteger_tiempo_equipo_jefe                            CABLEADA por los dos extremos
+  371    desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario          EN COLA todavia: desplegar_plan_orden_operaciones_franqueza_radical sigue en la bandeja

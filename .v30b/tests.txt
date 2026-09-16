@@ -1,0 +1,17 @@
+  la poblacion del informe es grafo mas bandejas (12 sep 2026, punto 3): 6 pruebas mas
+  D.41, la tabla que dice ser de instrumento es la del instrumento: 18 pruebas mas
+  D.42, la unidad de la ruta es la celda: 19 pruebas mas
+  D.38.5 en la aduana, que es donde se decide: 6 pruebas mas
+  D.29 en la aduana: la insercion es atomica y la arista espera en cola: 10 pruebas mas
+  la linea ya escrita de la bitacora se marca por operacion, sin borrar: 15 pruebas mas
+  D.15: la vigencia es COLA DE TRABAJO y no guarda que tumbe el cierre: 3 pruebas mas
+  el cerrojo de insercion y D.44, el censo no decrece: 8 pruebas mas
+  el testigo de guardas al sellar (D.38.3, 16 sep): 4 pruebas mas
+
+  total: 193 pruebas, 4 fallos, 0 errores
+========================================================================
+FAIL: test_e_guion_largo_rompe_el_hook (__main__.PruebaE.test_e_guion_largo_rompe_el_hook)
+FAIL: test_caso_positivo_una_ruta_de_CERO_BYTES_es_caida_de_cifra (__main__.PruebaTallado.test_caso_positivo_una_ruta_de_CERO_BYTES_es_caida_de_cifra)
+FAIL: test_el_estricto_tumba_lo_que_el_hook_deja_pasar (__main__.PruebaTallado.test_el_estricto_tumba_lo_que_el_hook_deja_pasar)
+FAIL: test_el_informe_nombra_la_fila_y_manda_regenerar (__main__.PruebaTallado.test_el_informe_nombra_la_fila_y_manda_regenerar)
+FAILED (failures=4, skipped=1)

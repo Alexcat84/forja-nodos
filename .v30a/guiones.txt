@@ -1,0 +1,7 @@
+$ python forja.py guiones
+  .v30a/poblacion.jsonl linea 367 columna 1952: guion largo (U+2014)
+  .v30a/poblacion.jsonl linea 367 columna 1985: guion largo (U+2014)
+  .v30a/poblacion.jsonl linea 393 columna 1387: guion largo (U+2014)
+  .v30a/poblacion.jsonl linea 393 columna 1418: guion largo (U+2014)
+  .v30a/poblacion.jsonl linea 404 columna 1591: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.

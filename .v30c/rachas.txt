@@ -1,0 +1,3 @@
+muestra pineada: 16 relecturas, 0 caidas de CLASE
+tasa: 0,00 por ciento
+banda 95 por ciento, cota superior con k=0: 1-0.05**(1/16) = 17.07 por ciento

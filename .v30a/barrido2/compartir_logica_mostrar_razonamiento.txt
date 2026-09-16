@@ -1,0 +1,57 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (255 del grafo mas 92 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 10
+  por candidato bloqueado          : menor 10, mediana 10, mayor 10
+  que señal levanta cada vecindad  : similitud_texto 10
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] compartir_logica_mostrar_razonamiento   (compartir_logica_mostrar_razonamiento.json)
+    vecino centrar_debate_ideas_fuera_egos  [levantada por: similitud_texto]
+      similitud_texto 0.364 | familia_id 0.000 | paso_contra_nodo 0.493
+      paso 4 del candidato contra paso 6 de centrar_debate_ideas_fuera_egos
+    vecino minimizar_impuesto_colaboracion_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.381 | familia_id 0.000 | paso_contra_nodo 0.487
+      paso 4 del candidato contra paso 1 de minimizar_impuesto_colaboracion_equipo
+    vecino establecer_credibilidad_pericia_humildad  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.000 | paso_contra_nodo 0.486
+      paso 4 del candidato contra paso 3 de establecer_credibilidad_pericia_humildad
+    vecino explicar_idea_facil_comprender_oyente  [levantada por: similitud_texto]
+      similitud_texto 0.380 | familia_id 0.000 | paso_contra_nodo 0.473
+      paso 3 del candidato contra paso 4 de explicar_idea_facil_comprender_oyente
+    vecino comprobar_criticas_hombre_mujeres_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.365 | familia_id 0.000 | paso_contra_nodo 0.466
+      paso 3 del candidato contra paso 6 de comprobar_criticas_hombre_mujeres_equipo
+    vecino persuadir_emocion_oyente_no_propia  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.453
+      paso 4 del candidato contra paso 1 de persuadir_emocion_oyente_no_propia
+    vecino pedir_hechos_decision_evitar_recomendaciones  [levantada por: similitud_texto]
+      similitud_texto 0.365 | familia_id 0.000 | paso_contra_nodo 0.445
+      paso 4 del candidato contra paso 4 de pedir_hechos_decision_evitar_recomendaciones
+    vecino parar_debate_emocion_agotamiento  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.000 | paso_contra_nodo 0.439
+      paso 4 del candidato contra paso 1 de parar_debate_emocion_agotamiento
+    vecino bajar_detalle_organizacion_fuente_hechos  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.000 | paso_contra_nodo 0.437
+      paso 3 del candidato contra paso 8 de bajar_detalle_organizacion_fuente_hechos
+    vecino crear_obligacion_disentir_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.366 | familia_id 0.000 | paso_contra_nodo 0.418
+      paso 4 del candidato contra paso 1 de crear_obligacion_disentir_equipo
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

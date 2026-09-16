@@ -1,0 +1,13 @@
+candidatos en bandeja que citan cap_07.md: 0 []
+nodos del grafo que citan cap_07.md: 25
+archivados en _insertados/scott_radical_candor: 53
+archivados que estan en el grafo: 53  fuera: 0
+
+rotulos de etapa y su linea: {'LISTEN': 79, 'CLARIFY': 165, 'DEBATE': 213, 'DECIDE': 259, 'PERSUADE': 303, 'EXECUTE': 367, 'LEARN': 389}
+  LISTEN    L79   -> NINGUNO: es cola
+  CLARIFY   L165  -> NINGUNO: es cola
+  DEBATE    L213  -> NINGUNO: es cola
+  DECIDE    L259  -> ['repartir_decision_cercanos_hechos']
+  PERSUADE  L303  -> ['persuadir_emocion_oyente_no_propia']
+  EXECUTE   L367  -> ['minimizar_impuesto_colaboracion_equipo']
+  LEARN     L389  -> ['aprender_resultados_vencer_dos_presiones']

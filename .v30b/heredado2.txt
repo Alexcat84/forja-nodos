@@ -1,0 +1,8 @@
+ D docs/loop/APERTURA_CIEGA.md
+ D docs/loop/REPORTE.md
+ D docs/loop/loop.log
+ M docs/loop/ultimo_apertura.json
+ D docs/loop/ultimo_auditor.json
+ D docs/loop/ultimo_extractor.json
+?? .v30a/
+?? .v30b/

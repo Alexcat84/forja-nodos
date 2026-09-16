@@ -1,0 +1,15 @@
+$ (las DOS aristas en cola de la casa, buscadas en el grafo y en la bandeja)
+  crear_espacio_seguro_madurar_ideas_nuevas            GRAFO
+  nutrir_ideas_nuevas_reunion_solas                    BANDEJA
+  CABLEADA: NO, un extremo no vive en el grafo
+
+  desplegar_plan_orden_operaciones_franqueza_radical   BANDEJA
+  bloquear_tiempo_pensar_calendario                    GRAFO
+  CABLEADA: NO, un extremo no vive en el grafo
+
+$ (lineas de toda la bitacora con arista_en_cola)
+  linea 265  recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo
+  linea 279  crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas
+  linea 333  minimizar_impuesto_colaboracion_equipo > proteger_tiempo_equipo_jefe
+  linea 371  desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario
+  total: 4

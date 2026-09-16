@@ -1,0 +1,10 @@
+$ (cuenta sobre bitacora/VEREDICTOS.jsonl, campos veredicto y longitud de razon)
+  veredictos ahora                 : 375
+  escritos por la vuelta 30        : 86
+  por veredicto                    : {'SANO': 80, 'CONTINUA': 6}
+  candidatos distintos             : 13
+  SIN razon escrita (D.8)          : 0
+  largo minimo de razon            : 125
+  con arista declarada             : 6
+
+  claves de una linea: ['arista', 'candidato', 'detalle_paso', 'fecha', 'huella_candidato', 'huella_vecino', 'levantada_por', 'razon', 'senales', 'vecino', 'veredicto']

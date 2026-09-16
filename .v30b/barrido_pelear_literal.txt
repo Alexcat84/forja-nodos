@@ -1,0 +1,27 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 440   (348 del grafo mas 92 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 1
+  CHOCAN entre si dentro del lote  : 0
+
+POR QUE GUARDA CAEN
+     1  el id ya vive en el grafo
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[CAERIA] pelear_proliferacion_reuniones_bloquear_ejecucion   (pelear_proliferacion_reuniones_bloquear_ejecucion.json)
+    guarda: el id ya vive en el grafo
+      'pelear_proliferacion_reuniones_bloquear_ejecucion' resuelve a 'pelear_proliferacion_reuniones_bloquear_ejecucion'. UN CONCEPTO, UN NODO (manual principio 1)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

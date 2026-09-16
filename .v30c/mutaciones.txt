@@ -1,0 +1,4 @@
+MUTACION 1, censo_no_decrece (D.44)
+  caso negativo, el arbol tal como esta: []
+  caso positivo, quito un nodo         : 1 fallo(s)
+    [censo_no_decrece] registrar_fuente_canonica: estaba en el dataset del commit HEAD y NO esta en el arbol. Un nodo no se borra: si de verdad sale de superficie, se marca estado=deprecado con su motivo 

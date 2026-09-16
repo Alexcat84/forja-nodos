@@ -1,0 +1,57 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (255 del grafo mas 92 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 10
+  por candidato bloqueado          : menor 10, mediana 10, mayor 10
+  que señal levanta cada vecindad  : paso_contra_nodo 1, similitud_texto 9
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] proteger_tiempo_equipo_jefe   (proteger_tiempo_equipo_jefe.json)
+    vecino bloquear_tiempo_pensar_calendario  [levantada por: paso_contra_nodo]
+      similitud_texto 0.220 | familia_id 0.143 | paso_contra_nodo 0.625
+      paso 7 del candidato contra paso 6 de bloquear_tiempo_pensar_calendario
+    vecino cuidarse_agotamiento_centro_rueda  [levantada por: similitud_texto]
+      similitud_texto 0.360 | familia_id 0.000 | paso_contra_nodo 0.489
+      paso 1 del candidato contra paso 2 de cuidarse_agotamiento_centro_rueda
+    vecino mantener_manos_trabajo_real_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.427 | familia_id 0.125 | paso_contra_nodo 0.452
+      paso 1 del candidato contra paso 4 de mantener_manos_trabajo_real_equipo
+    vecino cambiar_posicion_hechos_explicar_cambio  [levantada por: similitud_texto]
+      similitud_texto 0.376 | familia_id 0.000 | paso_contra_nodo 0.427
+      paso 5 del candidato contra paso 6 de cambiar_posicion_hechos_explicar_cambio
+    vecino reservar_calendario_tiempo_ejecutar  [levantada por: similitud_texto]
+      similitud_texto 0.423 | familia_id 0.143 | paso_contra_nodo 0.427
+      paso 3 del candidato contra paso 4 de reservar_calendario_tiempo_ejecutar
+    vecino parar_debate_emocion_agotamiento  [levantada por: similitud_texto]
+      similitud_texto 0.362 | familia_id 0.000 | paso_contra_nodo 0.417
+      paso 4 del candidato contra paso 2 de parar_debate_emocion_agotamiento
+    vecino pedir_hechos_decision_evitar_recomendaciones  [levantada por: similitud_texto]
+      similitud_texto 0.360 | familia_id 0.000 | paso_contra_nodo 0.410
+      paso 5 del candidato contra paso 2 de pedir_hechos_decision_evitar_recomendaciones
+    vecino centrar_debate_ideas_fuera_egos  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.407
+      paso 7 del candidato contra paso 7 de centrar_debate_ideas_fuera_egos
+    vecino compartir_logica_mostrar_razonamiento  [levantada por: similitud_texto]
+      similitud_texto 0.373 | familia_id 0.000 | paso_contra_nodo 0.407
+      paso 8 del candidato contra paso 2 de compartir_logica_mostrar_razonamiento
+    vecino minimizar_impuesto_colaboracion_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.375 | familia_id 0.143 | paso_contra_nodo 0.386
+      paso 5 del candidato contra paso 1 de minimizar_impuesto_colaboracion_equipo
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

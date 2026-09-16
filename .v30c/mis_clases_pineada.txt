@@ -1,0 +1,18 @@
+MIS CLASES DE LA MUESTRA PINEADA, ESCRITAS ANTES DE CONSULTAR NINGUNA RAZON
+semilla 300916, 16 de 80 SANO
+291 parar_debate vs abrir_debate_humor            SANO  actos opuestos (cerrar contra abrir), hermanos de DEBATE
+298 parar_debate vs centrar_debate_ideas          SANO  disparadores distintos (agotamiento contra ego)
+299 fijar_fecha vs explicar_idea_facil            SANO  CLARIFY contra DEBATE, falso positivo de paso_contra_nodo
+300 fijar_fecha vs centrar_debate_ideas           SANO  sin arista, como ya adjudico ACTA 27 2.2
+304 pedir_hechos vs parar_debate                  SANO  DECIDE contra DEBATE, la similitud es de estilo de frase
+307 pedir_hechos vs compartir_logica              SANO  reunir informacion contra ensenar el razonamiento
+308 pedir_hechos vs crear_obligacion_disentir     SANO  mismo fin (sacar el ego) y actos distintos
+310 pedir_hechos vs aprender_resultados           SANO  DECIDE contra LEARN
+317 compartir_logica vs centrar_debate_ideas      SANO  PERSUADE contra DEBATE
+318 compartir_logica vs minimizar_impuesto        SANO  no se tocan
+323 compartir_logica vs pedir_hechos              SANO  el mismo par del 307 al reves
+335 minimizar_impuesto vs parar_debate            SANO  no se tocan
+341 proteger_tiempo vs reservar_calendario        SANO  hermanos de la serie D.37 de L373, ninguno madre del otro
+349 mantener_manos vs abrir_debate_humor          SANO  no se tocan
+364 cuidarse vs cambiar_posicion_hechos           SANO  hermanos de la serie de L401, ninguno madre del otro
+372 bloquear_tiempo_pensar vs proteger_tiempo     SANO  tu tiempo de pensar contra el tiempo de tu equipo

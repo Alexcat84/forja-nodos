@@ -1,0 +1,15 @@
+lineas al abrir la vuelta 30 (b9f484a): 289
+lineas hoy                          : 375
+lineas nuevas                       : 86
+de las 289 viejas, CAMBIADAS: 8 -> [252, 256, 258, 260, 261, 262, 263, 264]
+de las 289 viejas, INTACTAS : 281
+
+prefijo intacto: ninguna linea vieja se borro ni se reordeno: True
+  linea 252: clase/huellas/senales intactas=True | la razon vieja sigue entera al principio=True | +498 caracteres
+  linea 256: clase/huellas/senales intactas=True | la razon vieja sigue entera al principio=True | +498 caracteres
+  linea 258: clase/huellas/senales intactas=True | la razon vieja sigue entera al principio=True | +498 caracteres
+  linea 260: clase/huellas/senales intactas=True | la razon vieja sigue entera al principio=True | +498 caracteres
+  linea 261: clase/huellas/senales intactas=True | la razon vieja sigue entera al principio=True | +498 caracteres
+  linea 262: clase/huellas/senales intactas=True | la razon vieja sigue entera al principio=True | +498 caracteres
+  linea 263: clase/huellas/senales intactas=True | la razon vieja sigue entera al principio=True | +498 caracteres
+  linea 264: clase/huellas/senales intactas=True | la razon vieja sigue entera al principio=True | +498 caracteres

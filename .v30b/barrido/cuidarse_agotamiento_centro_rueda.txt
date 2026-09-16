@@ -1,0 +1,42 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (255 del grafo mas 92 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 5
+  por candidato bloqueado          : menor 5, mediana 5, mayor 5
+  que señal levanta cada vecindad  : similitud_texto 5
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] cuidarse_agotamiento_centro_rueda   (cuidarse_agotamiento_centro_rueda.json)
+    vecino cambiar_posicion_hechos_explicar_cambio  [levantada por: similitud_texto]
+      similitud_texto 0.402 | familia_id 0.000 | paso_contra_nodo 0.456
+      paso 3 del candidato contra paso 3 de cambiar_posicion_hechos_explicar_cambio
+    vecino abrir_debate_humor_explicar_proposito  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.455
+      paso 1 del candidato contra paso 7 de abrir_debate_humor_explicar_proposito
+    vecino reconocer_emociones_propias_avisar_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.443
+      paso 3 del candidato contra paso 2 de reconocer_emociones_propias_avisar_equipo
+    vecino minimizar_impuesto_colaboracion_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.376 | familia_id 0.000 | paso_contra_nodo 0.429
+      paso 3 del candidato contra paso 2 de minimizar_impuesto_colaboracion_equipo
+    vecino mantener_manos_trabajo_real_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.379 | familia_id 0.000 | paso_contra_nodo 0.404
+      paso 3 del candidato contra paso 2 de mantener_manos_trabajo_real_equipo
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
