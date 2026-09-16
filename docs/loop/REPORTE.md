@@ -34221,14 +34221,23 @@ literalmente que la vigencia NO pone nada en rojo*). **No es parada.**
 
 ### W.8.e. LA IDENTIDAD, LEIDA DE GIT (`EXTRACTOR.md` 5)
 
+> **CORRECCION DECLARADA, en el propio cierre de esta vuelta y por una caida mia.** Esta tabla la
+> escribi con la cuenta en `7` **antes** de commitear las secciones `W.4` a `W.8`, y al cerrar ya
+> eran mas. **`EXTRACTOR.md` 4 dice que el estado al cierre se RECOMPUTA si algo de la propia
+> vuelta pudo haberlo movido**, y esto es justo eso. **Se regenero con
+> `python scripts/tallar_reporte.py --arreglar`**, que reescribio `5` celdas tecleadas, **y no
+> tecleando la celda buena.** La ultima fila dice lo que la anterior no puede decir: **el commit
+> que publica esta tabla la mueve una vez mas**, y por eso va escrita en vez de callada.
+
 <!-- TALLADO: salida=.v30e/identidad_cierre.txt -->
 
 | pieza | valor |
 |---|---|
 | rama | `extraccion-mundo-11` |
 | commit de apertura de la vuelta 30 | `b9f484a` |
-| commit ultimo al escribir este cierre | `445a13e` |
-| commits de esta vuelta sobre la rama | **7** |
+| commit ultimo al escribir esta tabla | `37fe5c7` |
+| commits de esta vuelta al escribir esta tabla | **8** |
+| y el commit que publica esta tabla hace | **9** |
 
 ### W.8.f. LAS TRES TAREAS, CON SU ESTADO AL CERRAR
 
