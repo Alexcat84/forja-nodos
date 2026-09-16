@@ -1,0 +1,10 @@
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: reservar_calendario_tiempo_ejecutar
+  hijo : pelear_proliferacion_reuniones_bloquear_ejecucion
+  paso citado de la madre: 4
+    Bloquea ese tiempo para el plan que ya se decidio y se acepto.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.454, similitud_texto 0.207
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: reservar_calendario_tiempo_ejecutar > pelear_proliferacion_reuniones_bloquear_ejecucion
+  razon en bitacora/VEREDICTOS.jsonl

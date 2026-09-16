@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'montar_reuniones_solas_mentalidad_frecuencia'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (257 del grafo mas 91 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 258
+  censos escritos: denominaciones

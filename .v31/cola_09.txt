@@ -1,0 +1,44 @@
+ADUANA DE INSERCION, candidato 'montar_reunion_gran_decision'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (264 del grafo mas 84 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino montar_reunion_gran_debate  [Montar la reunion de gran debate, donde se debate y no se decide, con sus logisticas, sus normas y su unico producto]
+    levantada por: familia_id, paso_contra_nodo
+    similitud_texto    0.326 (umbral 0.35)
+    familia_id         0.600 (umbral 0.30)
+    paso_contra_nodo   0.726 (umbral 0.60)
+    paso 6 del candidato contra paso 7 de montar_reunion_gran_debate
+
+  vecino nutrir_ideas_nuevas_reunion_solas  [Nutrir en la reunion a solas las ideas nuevas, que son fragiles, empujando a quien la trae a explicarla mas claro y para quien la tiene que oir]
+    levantada por: similitud_texto
+    similitud_texto    0.354 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.476 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de nutrir_ideas_nuevas_reunion_solas
+
+  vecino dirigir_reunion_decision  [Dirigir una reunion cuyo resultado excelente es una decision tomada]
+    levantada por: familia_id
+    similitud_texto    0.177 (umbral 0.35)
+    familia_id         0.400 (umbral 0.30)
+    paso_contra_nodo   0.464 (umbral 0.60)
+    paso 2 del candidato contra paso 10 de dirigir_reunion_decision
+
+BLOQUEADO: faltan veredictos para montar_reunion_gran_debate, nutrir_ideas_nuevas_reunion_solas, dirigir_reunion_decision
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "montar_reunion_gran_debate|CONTINUA|madre=montar_reunion_gran_debate|que añade el hijo a la madre"
+    --veredicto "montar_reunion_gran_debate|REPITE|por que no añade procedimiento"
+    --veredicto "montar_reunion_gran_debate|SANO|por que no son el mismo trabajo"
+    --veredicto "montar_reunion_gran_debate|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "nutrir_ideas_nuevas_reunion_solas|CONTINUA|madre=nutrir_ideas_nuevas_reunion_solas|que añade el hijo a la madre"
+    --veredicto "nutrir_ideas_nuevas_reunion_solas|REPITE|por que no añade procedimiento"
+    --veredicto "nutrir_ideas_nuevas_reunion_solas|SANO|por que no son el mismo trabajo"
+    --veredicto "nutrir_ideas_nuevas_reunion_solas|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "dirigir_reunion_decision|CONTINUA|madre=dirigir_reunion_decision|que añade el hijo a la madre"
+    --veredicto "dirigir_reunion_decision|REPITE|por que no añade procedimiento"
+    --veredicto "dirigir_reunion_decision|SANO|por que no son el mismo trabajo"
+    --veredicto "dirigir_reunion_decision|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

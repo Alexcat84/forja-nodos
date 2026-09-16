@@ -591,3 +591,43 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | bloquear_tiempo_pensar_calendario | nombre_largo | El tiempo para pensar como bloque del calendario que no se mueve por nadie, con el enfado explicito ante quien intenta agendar encima y el encargo de que el equipo entero haga lo mismo | castellano | - |
 | 2026-09-16 | bloquear_tiempo_pensar_calendario | otro_idioma | THINK TIME | ingles | - |
 | 2026-09-16 | bloquear_tiempo_pensar_calendario | otro_idioma | Block time to think, and hold that time sacred | ingles | - |
+| 2026-09-16 | decidir_quien_comunica_cada_cuanto | nombre_largo | La cabeza del capitulo de resultados: la responsabilidad de decidir el mapa de comunicacion del equipo, el coste que toda reunion trae, las tres cosas que se minimizan, y las herramientas que el texto enumera una a una | castellano | - |
+| 2026-09-16 | decidir_quien_comunica_cada_cuanto | otro_idioma | Things you can do to get stuff done together-faster | ingles | - |
+| 2026-09-16 | decidir_quien_comunica_cada_cuanto | otro_idioma | Get Stuff Done wheel | ingles | - |
+| 2026-09-16 | montar_reuniones_solas_mentalidad_frecuencia | nombre_largo | Las cuatro cosas que el texto pone para sacar el maximo de las reuniones a solas: la mentalidad de comida o cafe en vez de reunion, la frecuencia atada al cuello de botella del jefe, no cancelarlas nunca, y la agenda en manos de quien te reporta | castellano | - |
+| 2026-09-16 | montar_reuniones_solas_mentalidad_frecuencia | otro_idioma | 1:1 CONVERSATIONS | ingles | - |
+| 2026-09-16 | montar_reuniones_solas_mentalidad_frecuencia | otro_idioma | Employees set the agenda, you listen and help them clarify | ingles | - |
+| 2026-09-16 | montar_reuniones_solas_mentalidad_frecuencia | otro_idioma | Mind-set | ingles | - |
+| 2026-09-16 | montar_reuniones_solas_mentalidad_frecuencia | otro_idioma | Frequency | ingles | - |
+| 2026-09-16 | montar_reuniones_solas_mentalidad_frecuencia | otro_idioma | Show up! | ingles | - |
+| 2026-09-16 | montar_reuniones_solas_mentalidad_frecuencia | otro_idioma | Your direct report's agenda, not yours | ingles | - |
+| 2026-09-16 | preguntar_seguimiento_hallar_huecos | nombre_largo | El repertorio literal de preguntas de seguimiento de la reunion a solas, con las tres que abren, las seis del trabajo que se quiere y no se quiere, las tres de los equipos de los que dependes, y la nota del texto sobre para que sirve la ultima | castellano | - |
+| 2026-09-16 | preguntar_seguimiento_hallar_huecos | otro_idioma | Some good follow-up questions | ingles | - |
+| 2026-09-16 | nutrir_ideas_nuevas_reunion_solas | nombre_largo | Las seis preguntas literales con que se empuja una idea nueva a ser mas clara dentro de la reunion a solas, con la reunion tratada como sitio seguro antes del empujon del debate | castellano | - |
+| 2026-09-16 | nutrir_ideas_nuevas_reunion_solas | otro_idioma | Encourage new ideas in the 1:1. | ingles | - |
+| 2026-09-16 | nutrir_ideas_nuevas_reunion_solas | otro_idioma | new ideas are fragile | ingles | - |
+| 2026-09-16 | leer_seniales_fallo_jefe_reunion_solas | nombre_largo | Las cinco seniales tempranas que una reunion a solas da al jefe: cancelaciones, actualizaciones que podrian ir por correo, solo buenas noticias, ninguna critica hacia ti, y ninguna agenda | castellano | - |
+| 2026-09-16 | leer_seniales_fallo_jefe_reunion_solas | otro_idioma | Signs you'll get from 1:1s that you're failing as a boss | ingles | - |
+| 2026-09-16 | conducir_reunion_equipo_agenda_tres_bloques | nombre_largo | La reunion de equipo con sus tres goles escritos, su agenda de veinte, quince y treinta minutos, el cuadro de mando de unos pocos numeros, y la regla de identificar las decisiones sin tomarlas | castellano | - |
+| 2026-09-16 | conducir_reunion_equipo_agenda_tres_bloques | otro_idioma | STAFF MEETINGS | ingles | - |
+| 2026-09-16 | conducir_reunion_equipo_agenda_tres_bloques | otro_idioma | Review metrics, study hall updates, and identify (but do not make) key decisions | ingles | - |
+| 2026-09-16 | conducir_reunion_equipo_agenda_tres_bloques | otro_idioma | Learn: review key metrics | ingles | - |
+| 2026-09-16 | conducir_reunion_equipo_agenda_tres_bloques | otro_idioma | Listen: put updates in a shared document | ingles | - |
+| 2026-09-16 | conducir_reunion_equipo_agenda_tres_bloques | otro_idioma | Clarify: identify key decisions & debates | ingles | - |
+| 2026-09-16 | escribir_apuntes_sala_estudio_equipo | nombre_largo | El mecanismo de los apuntes de sala de estudio: cinco a siete minutos para escribir tres a cinco cosas, cinco a siete para leer los de los demas, sin conversaciones laterales, en documento compartido, y publicos si eres jefe de jefes | castellano | - |
+| 2026-09-16 | escribir_apuntes_sala_estudio_equipo | otro_idioma | study hall | ingles | - |
+| 2026-09-16 | escribir_apuntes_sala_estudio_equipo | otro_idioma | snippets | ingles | - |
+| 2026-09-16 | escribir_apuntes_sala_estudio_equipo | otro_idioma | Listen: put updates in a shared document during a study hall | ingles | - |
+| 2026-09-16 | montar_reunion_gran_debate | nombre_largo | La reunion reservada al debate y no a la decision: sus tres propositos escritos, quien la convoca despues de la reunion de equipo, la norma de dejar los egos en la puerta y cambiar de papel a mitad, y el resumen que es su unico producto | castellano | - |
+| 2026-09-16 | montar_reunion_gran_debate | otro_idioma | BIG DEBATE MEETINGS | ingles | - |
+| 2026-09-16 | montar_reunion_gran_debate | otro_idioma | Lower the tension by making it clear that you are debating, not deciding. | ingles | - |
+| 2026-09-16 | montar_reunion_gran_decision | nombre_largo | La reunion que sigue al gran debate: sus dos papeles escritos, el decisor nombrado en la reunion de equipo, las mismas logisticas y normas que la de debate, y la advertencia de que una decision apelable es un debate y no una decision | castellano | - |
+| 2026-09-16 | montar_reunion_gran_decision | otro_idioma | BIG DECISION MEETINGS | ingles | - |
+| 2026-09-16 | montar_reunion_gran_decision | otro_idioma | Push decisions into the facts, pull facts into the decisions, and keep egos at bay | ingles | - |
+| 2026-09-16 | montar_reunion_general_presentaciones_preguntas | nombre_largo | La reunion general como herramienta de traerse a todos: cuando hace falta segun el tamanio del equipo, sus dos partes, quien hace cada una, y por que las respuestas persuaden mas que las presentaciones | castellano | - |
+| 2026-09-16 | montar_reunion_general_presentaciones_preguntas | otro_idioma | ALL-HANDS MEETINGS | ingles | - |
+| 2026-09-16 | montar_reunion_general_presentaciones_preguntas | otro_idioma | Bring others along | ingles | - |
+| 2026-09-16 | pelear_proliferacion_reuniones_bloquear_ejecucion | nombre_largo | La pelea contra la multiplicacion de reuniones: los tres remedios probados que nunca se sostienen, y el que el texto dice que si funciona, que es combatir fuego con fuego bloqueando calendario | castellano | - |
+| 2026-09-16 | pelear_proliferacion_reuniones_bloquear_ejecucion | otro_idioma | EXECUTION TIME | ingles | - |
+| 2026-09-16 | pelear_proliferacion_reuniones_bloquear_ejecucion | otro_idioma | Fight meeting proliferation | ingles | - |
+| 2026-09-16 | pelear_proliferacion_reuniones_bloquear_ejecucion | otro_idioma | Meeting-Free Zones | ingles | - |

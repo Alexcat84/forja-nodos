@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'pelear_proliferacion_reuniones_bloquear_ejecucion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (266 del grafo mas 82 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 267
+  censos escritos: denominaciones

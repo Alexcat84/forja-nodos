@@ -1,0 +1,20 @@
+VECINO: crear_espacio_seguro_madurar_ideas_nuevas   sede: dataset/nodos.jsonl (EN EL GRAFO)
+titulo: Crear un espacio seguro donde una idea nueva madure antes de entrar en el debate, ayudando a pensar en vez de pedir soluciones
+fuentes: [{'clave': 'scott_radical_candor', 'fecha': '2026-09-12'}]
+origen: Sale de fuentes/scott_radical_candor/cap_07.md, lineas 177 a 195, bajo los rotulos Be clear in your own mind y Create a safe space to nurture new ideas, dentro del paso CLARIFY de la rueda de hacer cosas. CABECERA CORREGIDA EN LA VUELTA 18 (ACTA 17 seccion 4.5): declaraba 181 a 195 y sus pasos P4, P5 y P6 citan las lineas 177 y 179, que s
+  P1  Asume como parte de tu puesto ayudar a la gente a pensar sus ideas antes de someterlas al empujon del debate.
+  P2  No pidas tres soluciones y una recomendacion. La autora lo hacia en Google y Russ Laraway le explico que asi no ayudaba a nadie a innovar, porque les pedia decidir antes de haber tenido tiempo de pensar.
+  P3  Dales el sitio donde puedan simplemente hablar y darle vueltas contigo.
+  P4  Resiste el impulso de cerrarlo diciendo que ahora no tienes tiempo para esto. El texto dice que tomarse esos momentos te ahorra tiempo a la larga.
+  P5  Tomate el tiempo de ayudarles a explicar que quieren decir, para que puedan arreglar el problema o perseguir la oportunidad en vez de solo quejarse.
+  P6  Empujales a aclarar su pensamiento para no aplastar su mejor idea ni pasar por alto los problemas que les molestan.
+  P7  Si el sitio donde las ideas se debaten se ha vuelto el sitio donde las ideas van a morir, crea una reunion previa donde se desarrollen antes, que es lo que hizo Susan Wojcicki con la reunion anterior al comite de direccion de Google.
+  P8  Cuenta con que una sesion de lluvia de ideas no es una conversacion donde no se puede decir nada negativo: hay ideas malas y hay que reconocerlas como tales.
+  P9  Hazle agujeros a las ideas nuevas sabiendo que eso no las mata necesariamente, y que puede empujar a la gente a aclarar su pensamiento.
+  P10 Cuenta tambien con lo contrario, que el texto dice a continuacion: hay grandes ideas que a primera vista parecen malas.
+  P11 Usa la tecnica que Pixar llama plussing: en vez de decir no, eso es una mala idea, quien senala un problema tiene que ofrecer una solucion para el.
+  P12 Trata tus reuniones semanales a solas como ese sitio seguro donde vengan a hablarte de ideas nuevas.
+  P13 En esas reuniones no juzgues la idea: ayuda a quien depende de ti a aclarar su pensamiento.
+  P14 Senala los problemas con el objetivo de encontrar una manera de rodearlos, no de matar la idea.
+entregable: La idea o el problema explicados con la claridad suficiente para que quien los trajo pueda hacer algo al respecto en vez de solo quejarse, sin que la idea se haya aplastado por el camino.
+nodos_siguientes: []

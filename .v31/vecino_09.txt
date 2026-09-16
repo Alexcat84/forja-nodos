@@ -1,0 +1,19 @@
+VECINO: dirigir_reunion_decision   sede: dataset/nodos.jsonl (EN EL GRAFO)
+titulo: Dirigir una reunion cuyo resultado excelente es una decision tomada
+fuentes: [{'clave': 'zhuo_manager', 'fecha': '2026-09-11'}]
+origen: Es la primera de las razones para juntarse en persona que el libro nombra, y la unica del capitulo que trae dos inventarios propios en vez de uno: cuatro rasgos de la reunion buena y cinco malos resultados nombrados uno a uno. Lo que sostiene el procedimiento es que el exito de una reunion de decisi
+  P1  Enmarca las distintas opciones que hay sobre la mesa y pide a quien decide que tome la decision.
+  P2  Persigue las dos cosas a la vez: llegar a una decision clara, y que todo el mundo salga con sensacion de confianza en el proceso.
+  P3  No busques consenso. Lo que hace falta es que aquellos a quienes la decision afecta sientan que la manera en que se tomo fue eficiente y justa. Si la gente no confia en el proceso, lo que veras es que la decision se alarga.
+  P4  Incluye a las personas mas directamente afectadas por la decision, y tambien a alguien claramente designado como quien decide.
+  P5  Presenta todas las opciones creibles de forma objetiva y con la informacion de contexto relevante, e incluye la recomendacion del equipo si la hay.
+  P6  Da el mismo tiempo de palabra a las opiniones discrepantes y haz que la gente sienta que fue escuchada.
+  P7  No tomes la decision habiendo oido un solo trozo de contexto. La autora cuenta el caso: su reporte le pidio mover una semana el plazo del trabajo de diseno porque no daba tiempo a explorar las tres opciones, ella contesto que le parecia bien, y despues aparecio el responsable de ingenieria diciendo que tenia siete ingenieros esperando los disenos terminados y que asi no llegaban a su propio hito.
+  P8  Si ya has decidido de esa manera y el otro lado aparece pidiendote rehacer la decision, admite que te equivocaste con tu proceso y reune a todos para volver a decidir. El libro dice que esa es la mejor salida que te queda, porque cambiar la decision a solas frustra al primero y no cambiarla enfada al segundo.
+  P9  No aceptes el argumento de que cualquier decision va a dejar a alguien descontento porque los dos lados discrepan. Todos en un equipo comparten en ultima instancia las mismas metas, y parte de trabajar bien juntos es depositar confianza en quien decide y en un proceso justo.
+  P10 Evita el primer mal resultado: que la gente sienta que su lado no se presento bien y por eso no confie en la decision que salio.
+  P11 Evita el segundo: que las decisiones tarden mucho en tomarse y eso retrase el avance. Las decisiones importantes y dificiles de revertir merecen consideracion profunda, pero desconfia de gastar demasiado tiempo en las pequenias y faciles de revertir.
+  P12 Evita el tercero: que las decisiones vayan y vuelvan una y otra vez, porque asi es dificil confiar en ellas y actuar sobre ellas.
+  P13 Evita el cuarto: que se gaste demasiado tiempo intentando llevar al grupo al consenso en vez de escalar rapido a quien decide.
+  P14 Evita el quinto: que se pierda tiempo rumiando el mismo argumento de veinte maneras distintas.
+entregable: Una decision clara tomada por quien estaba designado para tomarla, y unos afectados que salen sintiendo que la forma de decidir fue eficiente y justa aunque no estuvieran de acuerdo.

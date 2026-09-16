@@ -1,0 +1,11 @@
+VECINO: construir_confianza_equipo_tiempo_solas   (EN BANDEJA, no en el grafo)
+titulo: Construir la confianza con cada persona de tu equipo pasando tiempo a solas con ella con regularidad, sin asumir de golpe mas confianza de la que hay
+origen: Sale de fuentes/scott_radical_candor/cap_08.md, lineas 93 a 95, bajo el rotulo Building trust, dentro de la seccion RESPECT BOUNDARIES, que NO tiene cabeza propia porque su cuerpo es la formula Here are some things I have learned about walking this line y por 
+  P1  Cuenta con que construir confianza en cualquier relacion lleva tiempo, porque la confianza se construye sobre un patron constante de actuar de buena fe.
+  P2  No des por supuesta demasiada confianza demasiado pronto, como hurgando en preguntas muy personales cuando apenas conoces a la persona.
+  P3  Pero empieza por algun sitio: si no preguntas nunca ni una sola cosa sobre la vida de alguien, es dificil subir en el eje de que te importe personalmente.
+  P4  Pasa un poco de tiempo a solas con cada una de las personas que te reportan, con regularidad, que es lo que el texto llama probablemente lo mas importante que puedes hacer para construir confianza.
+  P5  Manten reuniones a solas periodicas en las que el orden del dia lo pone la persona que te reporta y tu haces preguntas, que es una buena manera de empezar a construir confianza.
+  P6  Cuida como pides critica y como reaccionas cuando te la dan, porque eso construye confianza o la destruye.
+  P7  Y manten conversaciones anuales de carrera, que el texto llama una manera excelente de reforzar tu relacion con cada persona que te reporta directamente.
+entregable: Confianza construida sobre un patron constante de actuar de buena fe, con tiempo a solas reservado con cada persona y sin haberte metido donde no te habian llamado.

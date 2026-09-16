@@ -1,0 +1,8 @@
+MADRE: reservar_calendario_tiempo_ejecutar   (EN EL GRAFO)
+titulo: Reservar en el calendario el tiempo de ejecutar, que es solitario y por eso nunca se apunta
+origen: Sale de fuentes/scott_radical_candor/cap_07.md, lineas 385 a 387, bajo el rotulo Block time to execute, y es la TERCERA de las tres partes que la linea 373 enumera dentro del paso EXECUTE de la rueda de hacer cosas. Su m
+  P1  Cuenta con que ejecutar suele ser una tarea solitaria.
+  P2  Cuenta con el sesgo que el texto nombra: usamos el calendario sobre todo para las tareas colaborativas, para convocar reuniones y cosas asi, y por eso lo que se hace a solas no aparece en el.
+  P3  Asume como uno de tus trabajos de jefe asegurarte de que las tareas colaborativas no se coman tanto tiempo tuyo ni de tu equipo que no quede tiempo para ejecutar.
+  P4  Bloquea ese tiempo para el plan que ya se decidio y se acepto.
+nodos_siguientes: []

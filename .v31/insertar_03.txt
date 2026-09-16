@@ -1,0 +1,19 @@
+ADUANA DE INSERCION, candidato 'preguntar_seguimiento_hallar_huecos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (258 del grafo mas 90 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino calibrar_normalidad_preguntas_jefe  [Calibrar con tu jefe que es lo normal en el entorno nuevo]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.130 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.673 (umbral 0.60)
+    paso 5 del candidato contra paso 6 de calibrar_normalidad_preguntas_jefe
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 259
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1

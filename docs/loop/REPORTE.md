@@ -34821,6 +34821,157 @@ obligacion que no se puede aplazar, no antes.**
 > **EL TRAMO NO SUBE, como el encargo manda.** La vuelta 30 hizo `13`; esta hace `11`. **Lo que baja
 > no es la fidelidad** (`0,00` por ciento las dos veces) **sino el peso: `142` pasos contra `90`.**
 
+### X.4.d. **LA TANDA, UNO POR VEZ, CON SU VEREDICTO ESCRITO POR VECINO**
+
+**ONCE CORRIDAS DE `forja.py insertar`, NINGUNA CARGA MASIVA**, y cada candidato archivado en
+`cuarentena/_insertados/scott_radical_candor/` **en el mismo acto** (`D.31`). La tabla la cuenta el
+instrumento del dato, no yo de memoria:
+
+<!-- TALLADO: script=.v31/tanda.py salida=.v31/tanda_cap11.txt -->
+
+| # | id | en el grafo | vecinos que levanto la aduana | veredictos escritos | aristas cableadas |
+|---:|---|---|---|---|---|
+| 1 | `decidir_quien_comunica_cada_cuanto` | **SI** | **1** | `SANO` construir_confianza_equipo_tiempo_solas | madre de 6 |
+| 2 | `montar_reuniones_solas_mentalidad_frecuencia` | **SI** | **0** | cola vacia | hija de 1 |
+| 3 | `preguntar_seguimiento_hallar_huecos` | **SI** | **1** | `SANO` calibrar_normalidad_preguntas_jefe | ninguna |
+| 4 | `nutrir_ideas_nuevas_reunion_solas` | **SI** | **1** | `CONTINUA` crear_espacio_seguro_madurar_ideas_nuevas | hija de 1 |
+| 5 | `leer_seniales_fallo_jefe_reunion_solas` | **SI** | **0** | cola vacia | ninguna |
+| 6 | `conducir_reunion_equipo_agenda_tres_bloques` | **SI** | **0** | cola vacia | madre de 1 / hija de 1 |
+| 7 | `escribir_apuntes_sala_estudio_equipo` | **SI** | **0** | cola vacia | hija de 1 |
+| 8 | `montar_reunion_gran_debate` | **SI** | **1** | `SANO` montar_reunion_gran_decision | hija de 1 |
+| 9 | `montar_reunion_gran_decision` | **SI** | **3** | `SANO` montar_reunion_gran_debate, `SANO` nutrir_ideas_nuevas_reunion_solas, `SANO` dirigir_reunion_decision | hija de 1 |
+| 10 | `montar_reunion_general_presentaciones_preguntas` | **SI** | **0** | cola vacia | hija de 1 |
+| 11 | `pelear_proliferacion_reuniones_bloquear_ejecucion` | **SI** | **0** | cola vacia | hija de 1 |
+
+| | |
+|---|---:|
+| candidatos del tramo | **11** |
+| **de ellos, dentro del grafo** | **11** |
+| **de ellos, archivados en `cuarentena/_insertados/`** | **11** |
+| **de ellos, que siguen en bandeja** | **0** |
+| vecinos levantados y juzgados en la tanda | **7** |
+| **aristas declaradas por LECTURA en esta vuelta** (`forja.py arista`) | **9** |
+| lineas nuevas de `bitacora/VEREDICTOS.jsonl` | **16** |
+| nodos en el grafo | **267** |
+| bandeja del lote 4 | **78** |
+| archivados del lote 4 | **64** |
+
+**Y LAS `16` LINEAS NUEVAS DE LA BITACORA CUADRAN AL DIGITO:** `7` vecinos juzgados mas `9` aristas
+declaradas por lectura. **La bitacora tenia `375` al abrir** (`X.0`) **y tiene `391` al cerrar la
+tanda.**
+
+> **Y AQUI ME CORRIJO A MI MISMO EN EL INSTRUMENTO, porque la primera version de esta tabla me daba
+> `18` aristas y son `9`.** Filtre las lineas de la bitacora **por fecha**, y **la vuelta 30 corrio
+> el mismo dia**: nueve aristas suyas entraron en mi cuenta. **Lo que separa las dos vueltas no es la
+> fecha sino la LINEA**, y la linea la publique yo mismo en `X.0` (`375` al abrir). El instrumento
+> lleva el motivo escrito dentro. **Es la misma especie que `D.15` ya conocia: una cifra que no se
+> puede recontar por su sede no es una cifra.**
+
+#### **LOS SIETE VECINOS, CON LA LECTURA QUE LOS DECIDIO** (`EXTRACTOR.md` 2: si la aduana bloquea, lees a los vecinos ANTES de escribir el veredicto)
+
+| par | senial que lo levanta | la lectura, en una linea |
+|---|---|---|
+| `decidir_quien_comunica_cada_cuanto` contra `construir_confianza_equipo_tiempo_solas` | `paso_contra_nodo` `0,625` | **`SANO`.** El vecino es de `cap_08`, bajo `RESPECT BOUNDARIES`, y usa la reunion a solas como **un medio entre seis** para construir confianza. El solape es de vocabulario: los dos dicen *cada persona que te reporta directamente* |
+| `preguntar_seguimiento_hallar_huecos` contra `calibrar_normalidad_preguntas_jefe` | `paso_contra_nodo` `0,673` | **`SANO`, y la direccion es la contraria.** Mi paso `5` pregunta *que es lo que te desvela por la noche* **a quien me reporta**; su paso `6` pregunta lo mismo **a mi propio jefe**. Es la misma linea con el emisor invertido, y `A.4` llama a eso **solape con firma de enlace mutuo**, no `MUTUO` |
+| `nutrir_ideas_nuevas_reunion_solas` contra `crear_espacio_seguro_madurar_ideas_nuevas` | `paso_contra_nodo` `0,650` | **`CONTINUA`, y CIERRA LA ARISTA EN COLA de la linea `279`**, escrita cuando entro la madre y que esperaba al hijo. Lo releo con los dos nodos delante y sostengo clase y direccion |
+| `montar_reunion_gran_debate` contra `montar_reunion_gran_decision` | `familia_id` `0,600`, `paso_contra_nodo` `0,726` | **`SANO`, hermanos.** El solape es **del libro**: `L201` dice literalmente que las logisticas y normas de la gran decision **son las mismas** que las de la gran debate. **Una remision hacia atras no es una cabeza** (`ACTA 27` `2.2`, linea `24700` del acta) |
+| `montar_reunion_gran_decision` contra `montar_reunion_gran_debate` | las mismas | **`SANO`**, el mismo par visto desde el otro extremo. **Lo juzgo dos veces porque la aduana lo levanta dos veces**, y las dos razones dicen quien remite a quien |
+| `montar_reunion_gran_decision` contra `nutrir_ideas_nuevas_reunion_solas` | `similitud_texto` `0,354` | **`SANO`, y es RUIDO medido.** `0,354` contra un umbral de `0,35`: **cuatro milesimas.** `EXTRACTOR.md` 11: la banda alta empieza en `0,4` y en la media conviven `745` pares de jerarquia y `1.878` ajenos. **Este es de los `1.878`** |
+| `montar_reunion_gran_decision` contra `dirigir_reunion_decision` | `familia_id` `0,400` | **`SANO`, dos libros.** El mio dice **donde encaja** la reunion en el sistema (va tras la de debate, decisor nombrado, decisiones finales, veto); el suyo (`zhuo_manager`) dice **como se delibera dentro**. `similitud_texto` `0,177`: **lejisimos de la banda de gemelo** |
+
+### X.4.e. **LO QUE ESTA TANDA DESTAPA Y NADIE ME ENCARGO: `cap_11` TIENE CABEZA, Y SUS DIEZ PARTES ESTAN ESCRITAS**
+
+*Lo traigo porque `EXTRACTOR.md` 11 me obliga: **un candidato que entra con la cola vacia esta
+certificado como SIN GEMELO, no como SIN MADRE**, y **la jerarquia la busca la lectura, no la senial**.
+Cinco de los once entraron con la cola vacia.*
+
+**EL PASO `6` DEL PRIMER CANDIDATO DEL CAPITULO ENUMERA LAS DIEZ HERRAMIENTAS UNA A UNA**, porque el
+libro las lista en `L17` a `L35`, **un rotulo por linea**. Comprobar cuales existen como nodo es mirar
+una lista, que es lo que `EXTRACTOR.md` 15.6 dice de este juicio:
+
+<!-- TALLADO: script=.v31/cabeza.py salida=.v31/cabeza_cap11.txt -->
+
+| # | rotulo del libro | linea | nodo que lo procedimenta | donde esta | arista cabeza a parte |
+|---:|---|---|---|---|---|
+| 1 | 1:1 Conversations | `L17` | `montar_reuniones_solas_mentalidad_frecuencia` | en el grafo | **CABLEADA** |
+| 2 | Staff Meetings | `L19` | `conducir_reunion_equipo_agenda_tres_bloques` | en el grafo | **CABLEADA** |
+| 3 | Think Time | `L21` | `bloquear_tiempo_pensar_calendario` | en el grafo | **CABLEADA** |
+| 4 | Big Debate Meetings | `L23` | `montar_reunion_gran_debate` | en el grafo | **CABLEADA** |
+| 5 | Big Decision Meetings | `L25` | `montar_reunion_gran_decision` | en el grafo | **CABLEADA** |
+| 6 | All-Hands Meetings | `L27` | `montar_reunion_general_presentaciones_preguntas` | en el grafo | **CABLEADA** |
+| 7 | Meeting-Free Zones | `L29` | `(ninguno)` | **no hay nodo** | **no se declara** |
+| 8 | Kanban Boards | `L31` | `montar_tablero_kanban_medir_actividades` | en bandeja | espera a que entre |
+| 9 | Walk Around | `L33` | `pasear_organizacion_hallar_problemas_pequenios` | en bandeja | espera a que entre |
+| 10 | Be Conscious of Culture | `L35` | `debatir_decidir_asuntos_cultura_evitar_delegar` | en bandeja | espera a que entre |
+
+| | |
+|---|---:|
+| rotulos que el paso 6 enumera | **10** |
+| **de ellos, con nodo dentro del grafo hoy** | **6** |
+| **de ellos, con la arista cabeza a parte cableada** | **6** |
+| de ellos, con su nodo todavia en bandeja | **3** |
+| de ellos, sin nodo ninguno | **1** |
+| hijos que la cabeza declara en `nodos_siguientes` | **6** |
+
+**SEIS ARISTAS CABEZA A PARTE DECLARADAS EN ESTA MISMA VUELTA**, que es lo que `15.6` manda: *declaras
+esas aristas en la misma vuelta en que insertas las partes. No en la siguiente, no cuando alguien las
+eche de menos.*
+
+> ### **ES `D.29` Y NO `D.37`, Y LA DIFERENCIA LA PAGO EN RAZONES ESCRITAS**
+>
+> **El paso `6` enumera y NO dice cuantas son.** `EXTRACTOR.md` 15.6, con la correccion del titular
+> del 11 sep: *la cuenta es condicion, no un adorno del ejemplo. Si el texto solo enumera sin decir
+> cuantas, esto NO es `D.37`: es `D.29`*, y la arista se declara igual **pero con razon escrita que la
+> sostenga**. **Las seis la llevan, y cada una nombra que anade el hijo que la cabeza no tiene.**
+>
+> **Y LA UNICA `D.37` DE VERDAD DE LA TANDA ES OTRA:** `conducir_reunion_equipo_agenda_tres_bloques`
+> **dice TRES en su titulo y en su paso `5`**, y nombra los tres bloques (aprender, escuchar,
+> aclarar). **De los tres, solo `escribir_apuntes_sala_estudio_equipo` existe como nodo**; los otros
+> dos viven dentro de los pasos `8` a `15` y `16` a `22` de la propia madre. **Lo digo en vez de
+> callarlo**, porque una serie de tres con una sola arista invita a pensar que faltan dos.
+
+> ### **EL ROTULO `7` NO SE CABLEA, Y ES LA PARTE DONDE ME PARO A PROPOSITO**
+>
+> El indice dice `Meeting-Free Zones` (`L29`) y **el cuerpo del libro titula esa seccion
+> `EXECUTION TIME` / `Fight meeting proliferation`** (`L223`). El nodo que sale de ahi es
+> `pelear_proliferacion_reuniones_bloquear_ejecucion`, **que entro hoy**.
+>
+> **Y AUN ASI NO DECLARO LA ARISTA, porque `15.6` dice que la parte tiene que ser LA QUE ESE PASO
+> NOMBRA**, y el paso `6` nombra *las zonas libres de reuniones*. **Que ese rotulo y esa seccion sean
+> el mismo hueco de la lista es una inferencia MIA por posicion**, no algo que el texto diga. **La
+> enumeracion tiene que estar escrita**, y esta no lo esta. Va a mis discutibles (`X.6`).
+
+### X.4.f. **LA ARISTA CON FECHA DE CADUCIDAD DE `4.d`, DECLARADA EN EL ACTO EN QUE EL HIJO PASO LA PUERTA**
+
+**La aduana dejo entrar a `pelear_proliferacion_reuniones_bloquear_ejecucion` SIN MANDAR LEER NADA**,
+exactamente como el auditor midio (`.v30c/informe_pelear.txt`). **Cola vacia, cero vecinos.** Asi que
+la declaracion fue el acto siguiente, sin commit de por medio:
+
+<!-- TALLADO: parcial salida=.v31/arista_4d.txt -->
+
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: reservar_calendario_tiempo_ejecutar
+      hijo : pelear_proliferacion_reuniones_bloquear_ejecucion
+      paso citado de la madre: 4
+        Bloquea ese tiempo para el plan que ya se decidio y se acepto.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.454, similitud_texto 0.207
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: reservar_calendario_tiempo_ejecutar > pelear_proliferacion_reuniones_bloquear_ejecucion
+      razon en bitacora/VEREDICTOS.jsonl
+
+**Y LAS TRES SEÑALES LO DAN POR DESCONOCIDO EN LAS DOS DIRECCIONES:** `familia_id 0.0`,
+`paso_contra_nodo 0.454`, `similitud_texto 0.207`, **las tres por debajo de su umbral**. **Si hubiera
+entrado sin la declaracion, no habria habido ninguna corrida que volviera a poner a estos dos
+juntos**, que es la frase con la que el encargo lo puso como no aplazable.
+
+> **Y LO QUE NO HAGO, que digo para que no se cuente como olvido:** `censos/series_y_cabezas.md`
+> **sigue vacio**, con `0` filas bajo su cabecera, **y hoy han entrado una cabeza de diez partes y una
+> serie de tres**. `EXTRACTOR.md` 9 manda registrar la serie al entrar, y el censo **lo escribe la
+> aduana** (`--censo serie=...`), **no yo a mano**: el propio fichero dice *no se edita a mano salvo
+> para corregir*. **Los once ya entraron, y volver a insertarlos no se puede.** Va como propuesta a
+> `X.7` con su cifra, no como deuda callada.
+
 ## X.5. **TAREA 5**: la cola entera, recontada fila a fila contra el dato
 
 PENDIENTE
