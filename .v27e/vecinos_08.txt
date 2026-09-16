@@ -1,0 +1,29 @@
+=== explicar_idea_facil_comprender_oyente  [cuarentena\scott_radical_candor]  13 pasos
+  titulo    : Explicar una idea de forma que sea imposible no entenderla, cargando tu con la responsabilidad de que se entienda
+  activacion: Cuando alguien de tu equipo tiene que explicar su idea a colegas, a otras areas o a la direccion, y tu le estas ayudando a prepararla.
+   1. Ponte la responsabilidad de que la idea se entienda encima de ti, el que explica, y no encima del que escucha.
+   2. Cuenta con lo que el texto dice que pasa cuando no se hace: si el genio de Keynes se queda encerrado en su cabeza, es como si no hubiera existido.
+   3. No des por supuesto que quien no te entiende es estupido o cerrado de mente. El texto dice que eso casi nunca es lo que pasa.
+   4. Cuenta con la causa que el texto si pone: sabemos de nuestro tema pero podemos no conocer a la persona a la que se lo estamos explicando, y por eso no conseguimos que la idea llegue.
+   5. Tomate el tiempo de entender a las personas con las que estas hablando: que saben y que no saben.
+   6. Decide con eso delante que detalles tienes que incluir para que les resulte facil entenderlo.
+   7. Y decide, que el texto dice que importa mas, que detalles puedes dejar fuera.
+   8. Cuando el que escucha eres tu, carga tu con la responsabilidad de entender en vez de ponerle a el la de comunicar.
+   9. Cuando les estas ayudando a preparar la explicacion para otros, empujales a ellos y a ti mismo a hacerlo mejor de lo que lo hizo Keynes.
+  10. Empujales a comunicar con tanta precision y claridad que sea imposible no captar su argumento.
+  11. Elige que seleccionas, que eliminas y que subrayas en funcion no solo de la idea sino del publico que la va a oir.
+  12. Cambia esas tres elecciones cuando cambie el publico: el texto pone el mismo asunto del trabajo contado a tu abuela y contado a tu jefe, y dice que probablemente sera al reves.
+  13. No sientas que pierdes el tiempo cuando pasas dos horas ayudando a alguien a editar un correo hasta dejarlo en dos frases: el texto dice que estas llegando a la esencia de la idea y que ademas estas ensenando una habilidad de valor incalculable.
+  ENTREGABLE: Una idea dicha con tal precision y claridad que sea imposible no captar el argumento, ajustada a lo que su oyente sabe y no sabe.
+
+=== compartir_logica_mostrar_razonamiento  [cuarentena\scott_radical_candor]  6 pasos
+  titulo    : Compartir tu logica mostrando el razonamiento entero y no solo la conclusion
+  activacion: Cuando estas explicando una decision o una idea y la logica te parece tan evidente que casi no merece contarse.
+   1. No des por hecho que la parte logica es la facil por no tener la incomodidad personal de establecer la credibilidad ni la finura psicologica de atender a las emociones de un grupo: el texto dice que tiene sus propias trampas.
+   2. Desconfia en particular de la logica que a ti te parece evidente, porque es la que te lleva a no compartirla.
+   3. Cuenta con la causa que el texto pone: cuando sabes algo a fondo es dificil acordarse de que los demas no lo saben.
+   4. Enseña tus operaciones, que es el secreto que el texto dice que ya aprendiste en clase de matematicas del instituto.
+   5. No describas solo la idea: comparte ademas como llegaste a ella, que es lo que hacia Steve Jobs.
+   6. Cuenta con lo que eso señala y con lo que consigue: que si hay un fallo en tu razonamiento quieres que te lo digan, y que si no lo hay la gente aceptara tu idea con mas facilidad.
+  ENTREGABLE: El razonamiento entero compartido, no solo su conclusion, de forma que quien lo oiga pueda encontrarle un fallo si lo tiene.
+

@@ -1,0 +1,41 @@
+=== centrar_debate_ideas_fuera_egos  [cuarentena\scott_radical_candor]  10 pasos
+  titulo    : Centrar el debate en las ideas y dejar los egos fuera, cambiando los papeles cuando alguien empieza a defender el suyo
+  activacion: Cuando en un debate de tu equipo empiezas a notar que la gente esta pensando voy a ganar esta discusion, o mi idea contra la tuya, en vez de buscar la mejor respuesta.
+   1. Interven en cuanto empieces a notar que la gente esta pensando voy a ganar esta discusion, o mi idea contra tu idea, o mi recomendacion contra tu recomendacion, o lo que siente mi equipo.
+   2. Redirigelos a centrarse en los hechos.
+   3. No permitas que nadie se atribuya la propiedad de una idea.
+   4. No dejes que el debate lo secuestre como puedan sentirse o no sentirse los que no estan en la sala.
+   5. Recuerdales cual es la meta: llegar a la mejor respuesta, como equipo.
+   6. Cuenta con lo que el texto dice que estas haciendo: una colaboracion de grandes cabezas, no un concurso de debate de instituto ni unas elecciones presidenciales.
+   7. Si hace falta, fija las reglas del juego al principio de la reunion.
+   8. Y si a tu equipo le va a parecer divertido y util en vez de ridiculo, pon un objeto a la puerta, del tipo guardarropa de egos.
+   9. Para que busquen la mejor respuesta en vez de la validacion de su ego, haz que cambien de papel: si alguien lleva rato defendiendo A, pidele que empiece a defender B.
+  10. Si el debate va a durar un rato, avisales de antemano de que les vas a pedir que cambien de papel. El texto dice que cuando la gente sabe que va a tener que defender el punto de vista de otro, escucha con mas atencion de forma natural.
+  ENTREGABLE: Un debate que vuelve a estar sobre los hechos, sin propietarios de ideas, con las reglas del juego dichas si hizo falta decirlas, y con la gente escuchando mas atentamente porque sabe que puede tener que defender la posicion contraria.
+
+=== fijar_fecha_cierre_debate_equipo  [cuarentena\scott_radical_candor]  11 pasos
+  titulo    : Fijar por escrito cuando termina el debate, y no arrebatar la decision solo porque el debate se ha vuelto doloroso
+  activacion: Cuando media sala espera una decision al final de la reunion y la otra media quiere seguir discutiendo en otra, o cuando el debate se ha vuelto tan doloroso que todos te miran a ti para que lo cierres.
+   1. Cuenta con la causa que el texto pone al estres del debate: a menudo media sala espera una decision al final de la reunion y la otra media quiere seguir discutiendo en una reunion posterior.
+   2. Separa las reuniones de debate de las reuniones de decision.
+   3. Pon al lado de cada asunto que se debate una fecha de decidir, para que al menos se sepa cuando acaba el debate y cuando se va a tomar la decision.
+   4. Monta una reunion semanal de gran debate, identificando cada semana cual es el debate mas importante y quien tiene que estar en el.
+   5. Resiste el impulso de cerrar el debate y decidir demasiado pronto cuando se vuelve doloroso, que es justo cuando la gente mira al jefe para que acabe con el sufrimiento.
+   6. Cuenta con lo que el texto dice que es a menudo el trabajo del jefe: mantener el debate vivo en vez de resolverlo con una decision.
+   7. Cuenta con lo que se pierde si lo cortas: el texto dice que son los debates del trabajo los que hacen crecer a cada uno y los que hacen que el equipo funcione mejor en conjunto para llegar a la mejor respuesta.
+   8. Si el debate te parece demasiado agrio, preguntale a quien lo esta llevando como puedes ayudarle.
+   9. Sugiere por ejemplo que las personas cuyas diferencias le cuesta reconciliar lo cierren durante una comida o un paseo.
+  10. O sugiere que cambien de papel y defienda cada uno la posicion del otro.
+  11. No le arrebates la decision para tomarla tu: el texto dice de esa jugada suya que no solo fue prepotente, es que ademas no funciono.
+  ENTREGABLE: Cada asunto en debate con su fecha de decidir al lado, las reuniones de debate y las de decision separadas, y la decision en manos de quien la estaba llevando y no arrebatada por el jefe.
+
+=== parar_debate_emocion_agotamiento  [cuarentena\scott_radical_candor]  5 pasos
+  titulo    : Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio
+  activacion: Cuando en un debate de tu equipo la gente esta demasiado cansada, quemada o cargada de emocion como para discutir de forma productiva.
+   1. Manten la conciencia puesta en estos momentos, porque el texto dice que es crucial y que rara vez llevan a un buen resultado.
+   2. Cuando los detectes, interven y pide tiempo muerto.
+   3. Cuenta con lo que pasa si no lo haces: la gente tomara una decision solo para poder irse a casa, o peor, estallara una pelea enorme salida de la emocion en carne viva.
+   4. Aplaza el debate hasta que la gente este en mejor disposicion de animo.
+   5. Para poder detectarlo, conoce a cada persona de tu equipo lo bastante bien: el texto dice que si lo has hecho, seras suficientemente consciente de las emociones y las energias de cada uno como para saber cuando hace falta intervenir.
+  ENTREGABLE: El debate aplazado hasta que la gente este en mejor disposicion, sin decision tomada por agotamiento y sin la pelea que habria estallado.
+

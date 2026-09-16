@@ -1,0 +1,60 @@
+=== rechazar_candidato_razones_relevantes  [grafo]  5 pasos
+  titulo    : No rechazar a un candidato por razones ajenas al puesto
+  activacion: Cuando vas a descartar a un candidato y tienes que poder decir por que, y que ese por que sea del puesto. Es la primera de las cuatro areas de cautela legal.
+   1. No rechaces a ningun candidato por razones que no sean relevantes para el puesto.
+   2. Define los resultados y las competencias que el puesto exige en la tarjeta de puntuacion antes de empezar a entrevistar a nadie. El libro dice que ese es un beneficio tremendo de la tarjeta: te obliga a definirlos antes.
+   3. Apoyate en esa definicion explicita durante la evaluacion, porque es lo que te mantiene honesto.
+   4. Atente a los hechos.
+   5. Excluye los asuntos y los sentimientos que sean irrelevantes para lograr lo que la tarjeta de puntuacion pide.
+  ENTREGABLE: El rechazo del candidato sostenido sobre hechos, y cada uno de esos hechos referido a un resultado o a una competencia escritos en la tarjeta de puntuacion antes de empezar a entrevistar.
+
+=== bajar_detalle_organizacion_fuente_hechos  [grafo]  9 pasos
+  titulo    : Bajar al detalle de tu organizacion y buscar los hechos en su fuente, sin dejar que te lleguen filtrados por capas
+  activacion: Cuando eres jefe, y sobre todo jefe de jefes, y quieres saber lo que de verdad esta pasando o vas a decidir tu algo importante.
+   1. Usa el derecho que tienes como jefe a meterte en cualquier detalle que te parezca interesante o importante. El texto dice que no tienes que quedarte en el nivel alto todo el tiempo.
+   2. Aunque hayas delegado las decisiones clave, metete de vez en cuando en los detalles de alguna otra decision mas pequeña. El texto dice que no puedes hacerlo con cada decision, pero si con algunas.
+   3. Usalo para enterarte de lo que de verdad esta pasando.
+   4. Usalo tambien para poner a jefes y a quienes dependen de ellos en un plano mas igual, enseñando que nada esta por encima ni por debajo de la preocupacion de nadie.
+   5. Cuando el que decide eres tu, ve a la fuente de los hechos.
+   6. No dejes que los hechos te lleguen a traves de capas de direccion, sobre todo si eres jefe de jefes. El texto lo compara con el juego del telefono, y dice que ya sabes lo que le pasa a un hecho cuando se pasa demasiadas veces de mano en mano.
+   7. Si quieres entender mas a fondo algun aspecto de una decision importante, ve directamente a la persona que esta trabajando en ello, como hacia Steve Jobs, que aparecia en el cubiculo de un ingeniero recien llegado a preguntarle por un detalle concreto de su trabajo.
+   8. Cuenta con lo que el texto dice que se gana: cuanto mas a menudo puedas hacerlo, mas poder siente toda tu organizacion.
+   9. Conoce los detalles de varias capas por debajo de la tuya, que es lo que en Apple se esperaba de los lideres, para poder entender y cuestionar los hechos tal como te los presentan.
+  ENTREGABLE: Los hechos de la decision obtenidos en su fuente, sin pasar por capas de direccion, y una organizacion que ve que nada esta por encima ni por debajo de la preocupacion de nadie.
+
+=== mantener_manos_trabajo_real_equipo  [cuarentena\scott_radical_candor]  8 pasos
+  titulo    : Mantener las manos en el trabajo real de tu equipo, ejecutando tu tambien y no solo mirando ejecutar a otros
+  activacion: Cuando el puesto de jefe te esta alejando del trabajo que tu equipo hace de verdad y ya solo miras ejecutar a otros.
+   1. Cuenta con que el impuesto de colaboracion recae sobre ti, pero no al cien por cien.
+   2. Mantente conectado al trabajo que se esta haciendo de verdad, no solo mirando ejecutar a otros sino ejecutando tu.
+   3. Aplicalo a tu oficio concreto: si te haces director de orquesta, sigue tocando tu instrumento; si te haces jefe de ventas, sigue yendo tu a visitar clientes; si diriges un equipo de fontaneros, arregla algun grifo.
+   4. No dejes por eso de dedicar tiempo a escuchar en las reuniones a solas ni a dirigir los debates.
+   5. Aprende a alternar entre dirigir y ejecutar tu mismo.
+   6. No abandones lo primero por lo segundo: integra las dos cosas.
+   7. Cuenta con lo que se pierde si te alejas demasiado del trabajo de tu equipo: no vas a entender sus ideas lo bastante bien para ayudarles a clarificarlas, ni para participar en los debates, ni para saber que decisiones empujarles a tomar, ni para enseñarles a ser mas persuasivos.
+   8. Cuenta con la consecuencia que el texto pone al final: la rueda entera se para si no entiendes a fondo la cosa que tu equipo esta intentando hacer.
+  ENTREGABLE: Trabajo de tu especialidad ejecutado por ti mismo y no solo observado, sin haber abandonado por ello las tareas de jefe.
+
+=== proteger_tiempo_equipo_jefe  [cuarentena\scott_radical_candor]  9 pasos
+  titulo    : No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba
+  activacion: Cuando quieres que tu equipo tenga el maximo de tiempo posible para ejecutar y eres tu quien decide en que se les va ese tiempo.
+   1. Pideles que vengan a las reuniones a solas con una lista de problemas que tu puedas ayudarles a resolver.
+   2. Escucha, asegurate de haberlo entendido, y desactiva las situaciones que podrian estallarles en la cara.
+   3. Quita de en medio los obstaculos que parecen insalvables.
+   4. No convoques reuniones innecesarias ni pidas analisis innecesarios.
+   5. No llegues tarde a una reunion con nadie de tu equipo, y no toleres que nadie llegue tarde a las tuyas.
+   6. Hazles debatir como equipo, pero justo antes de que el debate empiece a hacerse pesado, identifica a un decisor y pidele que vuelva con una decision para una fecha concreta.
+   7. Enseña a los de tu equipo a ser mas persuasivos.
+   8. Cuando baje desde arriba un mandato ridiculo que solo hace perder tiempo, busca la manera de protegerles de el.
+   9. Y cuando lleguen los resultados, no los dejes pasar: haz que el equipo aprenda de lo que hizo, haya salido bien o haya salido mal.
+  ENTREGABLE: El tiempo de tu equipo despejado: obstaculos quitados, reuniones y analisis innecesarios fuera, horarios respetados, debates con un decisor y una fecha, y los mandatos que no valen nada parados antes de llegarles.
+
+=== minimizar_impuesto_colaboracion_equipo  [cuarentena\scott_radical_candor]  4 pasos
+  titulo    : Minimizar el impuesto de colaboracion de tu equipo cargando tu con el, con las tres cosas que equilibran la balanza
+  activacion: Cuando tus responsabilidades de jefe te estan comiendo el tiempo y a la vez tienes trabajo propio que hacer en tu especialidad, y tu equipo necesita tiempo para ejecutar.
+   1. Echate encima buena parte del impuesto de colaboracion, para que tu equipo pueda dedicar mas tiempo a ejecutar. El texto dice que eso es parte de tu puesto.
+   2. Cuenta con que las responsabilidades que tienes como jefe se llevan una cantidad tremenda de tiempo.
+   3. Cuenta tambien con que una de las cosas mas dificiles de ser jefe es equilibrar esas responsabilidades con el trabajo que tienes que hacer tu personalmente en tu especialidad.
+   4. Aplica las tres cosas que el texto dice haber aprendido sobre como acertar con ese equilibrio: no malgastes el tiempo de tu equipo, manten la tierra bajo tus uñas, y reserva tiempo para ejecutar.
+  ENTREGABLE: El impuesto de colaboracion cargado sobre ti y no sobre tu equipo, y las tres cosas del equilibrio puestas en practica: su tiempo no malgastado, tus manos todavia en el trabajo, y tiempo reservado para ejecutar.
+

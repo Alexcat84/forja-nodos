@@ -1,0 +1,121 @@
+ADUANA DE INSERCION, candidato 'crear_obligacion_disentir_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (239 del grafo mas 109 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 10. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino parar_debate_emocion_agotamiento  [Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio]
+    levantada por: similitud_texto
+    similitud_texto    0.411 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.480 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de parar_debate_emocion_agotamiento
+
+  vecino pedir_hechos_decision_evitar_recomendaciones  [Pedir hechos y no recomendaciones cuando reunes informacion para una decision]
+    levantada por: similitud_texto
+    similitud_texto    0.474 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.451 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de pedir_hechos_decision_evitar_recomendaciones
+
+  vecino crear_cultura_escucha_equipo  [Crear una cultura en la que tu equipo se escuche entre si, con un sistema simple de ideas y quejas que alguien atiende y explica]
+    levantada por: familia_id
+    similitud_texto    0.248 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.460 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de crear_cultura_escucha_equipo
+
+  vecino proteger_tiempo_equipo_jefe  [No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba]
+    levantada por: similitud_texto
+    similitud_texto    0.357 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.455 (umbral 0.60)
+    paso 2 del candidato contra paso 8 de proteger_tiempo_equipo_jefe
+
+  vecino compartir_logica_mostrar_razonamiento  [Compartir tu logica mostrando el razonamiento entero y no solo la conclusion]
+    levantada por: similitud_texto
+    similitud_texto    0.368 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.441 (umbral 0.60)
+    paso 1 del candidato contra paso 4 de compartir_logica_mostrar_razonamiento
+
+  vecino reservar_calendario_tiempo_ejecutar  [Reservar en el calendario el tiempo de ejecutar, que es solitario y por eso nunca se apunta]
+    levantada por: similitud_texto
+    similitud_texto    0.393 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.407 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de reservar_calendario_tiempo_ejecutar
+
+  vecino cambiar_posicion_hechos_explicar_cambio  [Cambiar de posicion cuando cambian los hechos, y explicar el cambio en voz alta en vez de dejar que se note]
+    levantada por: similitud_texto
+    similitud_texto    0.399 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.403 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de cambiar_posicion_hechos_explicar_cambio
+
+  vecino aprender_resultados_vencer_dos_presiones  [Aprender de los resultados venciendo las dos presiones que empujan a dejar de aprender]
+    levantada por: similitud_texto
+    similitud_texto    0.402 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.400 (umbral 0.60)
+    paso 1 del candidato contra paso 6 de aprender_resultados_vencer_dos_presiones
+
+  vecino evitar_presion_social_actos_equipo  [Evitar que un acto no obligatorio se sienta obligatorio, y que el intento de hacer equipo acabe empeorando el animo]
+    levantada por: similitud_texto
+    similitud_texto    0.393 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.360 (umbral 0.60)
+    paso 3 del candidato contra paso 6 de evitar_presion_social_actos_equipo
+
+  vecino crear_plan_creible_equipo  [Crear un plan que tenga posibilidades reales de funcionar]
+    levantada por: familia_id
+    similitud_texto    0.192 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.359 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de crear_plan_creible_equipo
+
+BLOQUEADO: faltan veredictos para parar_debate_emocion_agotamiento, pedir_hechos_decision_evitar_recomendaciones, crear_cultura_escucha_equipo, proteger_tiempo_equipo_jefe, compartir_logica_mostrar_razonamiento, reservar_calendario_tiempo_ejecutar, cambiar_posicion_hechos_explicar_cambio, aprender_resultados_vencer_dos_presiones, evitar_presion_social_actos_equipo, crear_plan_creible_equipo
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "parar_debate_emocion_agotamiento|CONTINUA|madre=parar_debate_emocion_agotamiento|que añade el hijo a la madre"
+    --veredicto "parar_debate_emocion_agotamiento|REPITE|por que no añade procedimiento"
+    --veredicto "parar_debate_emocion_agotamiento|SANO|por que no son el mismo trabajo"
+    --veredicto "parar_debate_emocion_agotamiento|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "pedir_hechos_decision_evitar_recomendaciones|CONTINUA|madre=pedir_hechos_decision_evitar_recomendaciones|que añade el hijo a la madre"
+    --veredicto "pedir_hechos_decision_evitar_recomendaciones|REPITE|por que no añade procedimiento"
+    --veredicto "pedir_hechos_decision_evitar_recomendaciones|SANO|por que no son el mismo trabajo"
+    --veredicto "pedir_hechos_decision_evitar_recomendaciones|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "crear_cultura_escucha_equipo|CONTINUA|madre=crear_cultura_escucha_equipo|que añade el hijo a la madre"
+    --veredicto "crear_cultura_escucha_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "crear_cultura_escucha_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "crear_cultura_escucha_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "proteger_tiempo_equipo_jefe|CONTINUA|madre=proteger_tiempo_equipo_jefe|que añade el hijo a la madre"
+    --veredicto "proteger_tiempo_equipo_jefe|REPITE|por que no añade procedimiento"
+    --veredicto "proteger_tiempo_equipo_jefe|SANO|por que no son el mismo trabajo"
+    --veredicto "proteger_tiempo_equipo_jefe|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "compartir_logica_mostrar_razonamiento|CONTINUA|madre=compartir_logica_mostrar_razonamiento|que añade el hijo a la madre"
+    --veredicto "compartir_logica_mostrar_razonamiento|REPITE|por que no añade procedimiento"
+    --veredicto "compartir_logica_mostrar_razonamiento|SANO|por que no son el mismo trabajo"
+    --veredicto "compartir_logica_mostrar_razonamiento|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "reservar_calendario_tiempo_ejecutar|CONTINUA|madre=reservar_calendario_tiempo_ejecutar|que añade el hijo a la madre"
+    --veredicto "reservar_calendario_tiempo_ejecutar|REPITE|por que no añade procedimiento"
+    --veredicto "reservar_calendario_tiempo_ejecutar|SANO|por que no son el mismo trabajo"
+    --veredicto "reservar_calendario_tiempo_ejecutar|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "cambiar_posicion_hechos_explicar_cambio|CONTINUA|madre=cambiar_posicion_hechos_explicar_cambio|que añade el hijo a la madre"
+    --veredicto "cambiar_posicion_hechos_explicar_cambio|REPITE|por que no añade procedimiento"
+    --veredicto "cambiar_posicion_hechos_explicar_cambio|SANO|por que no son el mismo trabajo"
+    --veredicto "cambiar_posicion_hechos_explicar_cambio|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "aprender_resultados_vencer_dos_presiones|CONTINUA|madre=aprender_resultados_vencer_dos_presiones|que añade el hijo a la madre"
+    --veredicto "aprender_resultados_vencer_dos_presiones|REPITE|por que no añade procedimiento"
+    --veredicto "aprender_resultados_vencer_dos_presiones|SANO|por que no son el mismo trabajo"
+    --veredicto "aprender_resultados_vencer_dos_presiones|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "evitar_presion_social_actos_equipo|CONTINUA|madre=evitar_presion_social_actos_equipo|que añade el hijo a la madre"
+    --veredicto "evitar_presion_social_actos_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "evitar_presion_social_actos_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "evitar_presion_social_actos_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "crear_plan_creible_equipo|CONTINUA|madre=crear_plan_creible_equipo|que añade el hijo a la madre"
+    --veredicto "crear_plan_creible_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "crear_plan_creible_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "crear_plan_creible_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

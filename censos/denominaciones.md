@@ -536,3 +536,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | escuchar_ruidoso_opinion_fuerte_pedir_agujeros | otro_idioma | strong opinions, weakly held | ingles | - |
 | 2026-09-16 | crear_cultura_escucha_equipo | nombre_largo | Crear una cultura de escucha: las tres claves del sistema, el equipo de ideas que lo sostiene, y las tres cosas que hay que decir cuando una idea funciona | castellano | - |
 | 2026-09-16 | crear_cultura_escucha_equipo | otro_idioma | create a culture of listening | ingles | - |
+| 2026-09-16 | explicar_idea_facil_comprender_oyente | nombre_largo | Ser claro para los demas: la carga de que la idea se entienda es del que explica y no del que escucha, y lo que se selecciona, se elimina y se subraya depende del oyente | castellano | - |
+| 2026-09-16 | explicar_idea_facil_comprender_oyente | otro_idioma | make thoughts and ideas drop-dead easy for others to comprehend | ingles | - |
+| 2026-09-16 | centrar_debate_ideas_fuera_egos | nombre_largo | Mantener la conversacion sobre las ideas y no sobre los egos: intervenir cuando aparece el mi idea contra la tuya, y hacer que cada uno defienda la posicion del otro | castellano | - |
+| 2026-09-16 | centrar_debate_ideas_fuera_egos | otro_idioma | keep the conversation focused on ideas not egos | ingles | - |

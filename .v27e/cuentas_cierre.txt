@@ -1,0 +1,6 @@
+EL CIERRE DE LA TANDA, recomputado al cerrar (EXTRACTOR.md 4)
+nodos en dataset/nodos.jsonl                          : 239
+veredictos en bitacora/VEREDICTOS.jsonl               : 264
+candidatos en bandeja cuarentena/scott_radical_candor : 106
+insertados cuarentena/_insertados/scott_radical_candor: 36
+candidatos en bandeja cuarentena/marquet_turn_the_ship: 3

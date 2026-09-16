@@ -1,0 +1,4 @@
+LA VERSION CONTRA LA QUE SE CORRIO EL TALLADO Y EL CENSO DE ESTE CIERRE
+fichero : docs/loop/REPORTE.md
+huella  : c32b4e17b7a315fbfb1ae2d212921c939f366304
+leida con git hash-object en el mismo acto del cierre, no afirmada
