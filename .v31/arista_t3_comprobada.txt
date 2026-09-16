@@ -1,0 +1,11 @@
+LA ARISTA, COMPROBADA POR LOS DOS EXTREMOS EN dataset/nodos.jsonl
+(no por la prosa de la salida del comando)
+
+| extremo | campo | contenido | dice la arista |
+|---|---|---|---|
+| `cuidarse_agotamiento_centro_rueda` (madre) | `nodos_siguientes` | `['bloquear_tiempo_pensar_calendario']` | **SI** |
+| `bloquear_tiempo_pensar_calendario` (hija) | `nodos_previos` | `['cuidarse_agotamiento_centro_rueda']` | **SI** |
+
+aristas del grafo por `nodos_siguientes`: 93
+aristas del grafo por `nodos_previos`   : 93
+lineas de bitacora/VEREDICTOS.jsonl     : 376
