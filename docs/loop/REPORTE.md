@@ -33574,3 +33574,203 @@ siguen escritos y declarados NO CONSUMADOS** (`V.5.e`).
 cifras, cero paradas, y UNA CAIDA DE DATO MIA encontrada por mi, medida antes de arreglarla y
 declarada con su nombre.** El extractor propone en su reporte y no se adjudica nada: las tres
 propuestas de `V.8` van ahi, y quien tenga la sede decide.*
+
+---
+
+# VUELTA 30, **seguir insertando `cap_07`** con el cerrojo y el testigo ya puestos, el par del calendario que ninguna señal cruza, y la cola que sigue abierta (lote 4, `scott_radical_candor`)
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor al cerrar la `ACTA 28` y
+reescrito con la decision del fundador del 16 sep 2026.*
+
+**ESTE ESQUELETO SE ABRE ANTES DE LA PRIMERA TAREA** (`EXTRACTOR.md` 3) y **cada tarea anexa su fila
+al cerrarse**, no al final.
+
+## W.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+### W.0.a. LAS CUATRO GUARDAS AL ABRIR
+
+Salidas guardadas en `.v30e/`, corridas antes de tocar nada:
+
+| guarda | salida | de donde sale |
+|---|---|---|
+| `python forja.py gate` | `GATE VERDE`, **243** nodos verificados | `.v30e/gate_apertura.txt` |
+| `python forja.py guiones` | `BARRIDO DE GUIONES VERDE` | `.v30e/guiones_apertura.txt` |
+| `python forja.py resolutor` | **243** vivos, `0` deprecados, `0` alias | `.v30e/resolutor_apertura.txt` |
+| `python tests/test_aceptacion.py` | **192** pruebas, `0` fallos, `0` errores | `.v30e/test_apertura.txt` |
+
+**LAS PRUEBAS SUBEN DE `148` A `192`** contra la apertura de la vuelta 28 (`V.0.a`), y las
+`44` nuevas no las escribi yo: son las del cerrojo, `D.44` y el testigo, que llegaron con la decision
+del fundador del 16 sep 2026.
+
+### W.0.b. LAS CUENTAS AL ABRIR
+
+Salida de `.v30e/cuentas_apertura.txt`, anexada entera:
+
+<!-- TALLADO: parcial salida=.v30e/cuentas_apertura.txt -->
+
+| | |
+|---|---:|
+| nodos en `dataset/nodos.jsonl` | **243** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **289** |
+| de ellos, con `no_consumada: true` | **14** |
+| candidatos en bandeja, lote 4 (`cuarentena/scott_radical_candor`) | **102** |
+| ya insertados y archivados, lote 4 (`cuarentena/_insertados/scott_radical_candor`) | **40** |
+| candidatos en bandeja, lote 5 (`cuarentena/marquet_turn_the_ship`) | **3** |
+
+**LAS SEIS ME SALEN AL DIGITO CONTRA LAS DEL ENCARGO**, que publica `102`, `40`, `243`, `289`, `14` y
+`3`.
+
+> **Y LA DE `14` LA CASI PUBLICO MAL, asi que lo digo yo antes que nadie.** Mi primera sonda fue
+> `grep -c 'NO CONSUMAD' bitacora/VEREDICTOS.jsonl` y dio **`10`**. **La marca que cuenta no es la
+> prosa: es el campo `no_consumada: true` de `anotaciones`**, y con ese criterio salen **`14`**, que
+> es lo que el encargo publica y lo que `python forja.py rancios` imprime en su propia linea
+> (`.v30e/rancios_apertura.txt`: *lineas declaradas NO CONSUMADAS y por eso no medidas: 14*). **Las
+> cuatro que mi grep no vio son las lineas `248` a `251`, cuya prosa dice `NO SE CONSUMO` y no
+> `NO CONSUMADA`.** No hay discrepancia con el encargo: **habia discrepancia entre mi sonda y el
+> instrumento, y gana el instrumento** (`EXTRACTOR.md` 5).
+
+### W.0.c. LA IDENTIDAD, LEIDA DE GIT (`EXTRACTOR.md` 5)
+
+<!-- TALLADO: parcial salida=.v30e/identidad_apertura.txt -->
+
+| pieza | valor |
+|---|---|
+| rama | `extraccion-mundo-11` |
+| commit de apertura de la vuelta 30 | `b9f484a` |
+
+### W.0.d. **ESTA VUELTA TAMPOCO TRAE SALDO DE LOTE, Y TAMPOCO TRAE COLA DE VECINOS** (`D.43`)
+
+    $ ls -la docs/loop/INFORME_DE_LOTE.txt
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+    $ ls -la docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+
+**Y EL PROPIO ARNES LO DICE EN SU LOG**, que es la fuente que no depende de mi:
+
+<!-- TALLADO: parcial salida=.v30e/arnes_sin_informe.txt -->
+
+$ grep -n "SIN INFORME DE LOTE" docs/loop/loop.log | tail -1
+  683:[2026-09-16 13:03:06] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+
+**`D.43` es literal para este caso, y hoy lo es DOS VECES.** Ni una cifra de esta vuelta sale de un
+informe de lote, **y la cola de vecinos por candidato que `D.43` extendida (16 sep) manda entregar
+sellada tampoco ha llegado**: no existe fichero de cola en `docs/loop/`. **No lo invento y no lanzo
+el del lote entero.** La cola por candidato la produce la propia aduana al bloquear en el acto de
+insertar, que es la via que `EXTRACTOR.md` 2 manda y la unica que esta vuelta puede usar.
+
+### W.0.e. **LA INSERCION LLEGA ABIERTA Y LA CONDICION SE COMPRUEBA AL ABRIR** (`D.39`)
+
+**El lote 4 esta CERRADO en extraccion** (`ACTA 24`, que cerro `cap_14` y con el el lote) y su
+informe lo certifico el acta. **Los `12` de `cap_07` que quedan en bandeja son de ese lote cerrado**,
+asi que entran.
+
+**EL LOTE 5 TIENE `3` CANDIDATOS EN BANDEJA Y SU LOTE ESTA ABIERTO: NO SE TOCA NI UNO.** El encargo
+lo dice en su `TAREA 3` (*no se toca hasta que el 4 cierre*) y `D.39` lo llama por su nombre:
+**meterlos seria una caida de dato, no un adelanto.**
+
+### W.0.f. **MI SEDE DE TRABAJO ES `.v30e/`**
+
+`.v29/` y `.v29a/` son las sedes de la fase ciega y del turno del auditor de la `ACTA 28`, citadas
+por ella instrumento a instrumento. **Escribir encima seria pisar evidencia sellada de otro rol.**
+
+## W.1. LAS TRES TAREAS ENCARGADAS, Y SUS FILAS SE ANEXAN AL CERRARSE
+
+| # | tarea | estado |
+|---:|---|---|
+| **1** | seguir insertando `cap_07`, que es donde se paro | ABIERTA |
+| **2** | el par del calendario, que ninguna señal cruza | ABIERTA |
+| **3** | la cola que sigue abierta, para que no se pierda | ABIERTA |
+
+**Son TRES tareas y el tope son cinco** (`EXTRACTOR.md` 1.3). **La `TAREA 2` cuelga de la `1`**: su
+veredicto se escribe en el acto en que `bloquear_tiempo_pensar_calendario` entre, y ese candidato es
+de `cap_11`, no de `cap_07`.
+
+## W.2. TAREA 1: **SEGUIR INSERTANDO `cap_07`, QUE ES DONDE SE PARO**
+
+### W.2.a. **LA RELECTURA DE FIDELIDAD, HECHA ANTES DE LA PRIMERA INSERCION** (`D.30`, `EXTRACTOR.md` 15.4)
+
+> **NINGUNA GUARDA DE ESTA CASA VE UN PASO QUE TU ESCRIBISTE Y EL LIBRO NO DICE.**
+
+**LEI LOS `90` PASOS DE LOS DOCE CONTRA SU PARRAFO, NO UNA MUESTRA.** El libro reabierto por
+`.v30e/leer.py`, que imprime el rango con su numero de linea delante, y **cada paso marcado
+`TRANSCRIPCION` o `PUENTE`**. Los rangos leidos de `fuentes/scott_radical_candor/cap_07.md`:
+`L231` a `L293`, `L303` a `L365` y `L367` a `L419`.
+
+**Y LO REPITO AUNQUE LA VUELTA 28 YA LO HIZO SOBRE ESTOS MISMOS PASOS** (`V.5.a`, que leyo `135`, los
+`90` de hoy incluidos) **y aunque el auditor firmase `0` puentes sobre `65` de ellos**
+(`ACTA 28` `4.4`). `EXTRACTOR.md` 15.4 dice **en toda vuelta, antes de cualquier insercion**, y una
+lectura de otra vuelta no es la de esta.
+
+### W.2.b. **`PASOS INVENTADOS POR CAPITULO`, QUE ES LA CIFRA QUE YO DOY Y EL AUDITOR FIRMA** (`AUDITOR_FORJA.md` 8.3)
+
+<!-- TALLADO: parcial salida=.v30e/pasos_inventados_v30.txt -->
+
+| capitulo | nodos | **pasos escritos** | **PUENTE** | **PASOS INVENTADOS** |
+|---|---:|---:|---:|---:|
+| **`cap_07`** (lote 4, `scott_radical_candor`) | 12 | **90** | **0** | **0,00 por ciento** |
+| **total del tramo de esta vuelta** | 12 | **90** | **0** | **0,00 por ciento** |
+
+**EL DENOMINADOR SALE DEL DATO**: `.v30e/pasos_inventados.py` cuenta `pasos_accionables` fichero a
+fichero. **EL NUMERADOR LO PONGO YO LEYENDO**, porque ninguna maquina lo puede poner.
+
+**LOS CUATRO PASOS QUE MAS CERCA ESTUVIERON DE SER PUENTE, con su linea pegada** (`D.35`):
+
+<!-- TALLADO: parcial salida=.v30e/citas_fidelidad.txt -->
+
+| paso | la salida de `.v30e/cita.py` sobre el libro, pegada | veredicto |
+|---|---|---|
+| `proteger_tiempo_equipo_jefe` paso `2`: *escucha, asegurate de haberlo entendido, y desactiva las situaciones* | `377: ...listen, make sure she understood, and then she was like a sapper, an explosives expert. She defused some politic...` | **TRANSCRIPCION** |
+| `mantener_manos_trabajo_real_equipo` paso `8`: *la rueda entera se para si no entiendes a fondo la cosa que tu equipo esta intentando hacer* | `383: ...The GSD wheel will grind to a halt if you don't understand intimately the "stuff" your team is trying to...` | **TRANSCRIPCION** |
+| `minimizar_impuesto_colaboracion_equipo` paso `4`: las tres cosas del equilibrio | `373: Here are the three things I've learned about getting this balance right: Don't waste your team's time; Keep the "dirt under your fingernails"; and Block...` | **TRANSCRIPCION**, y ademas es la cabeza de una serie `D.37` |
+| `cuidarse_agotamiento_centro_rueda` paso `7`: *bloquea en tu calendario tiempo de pensar todos los dias* | `417: ...ability to stay centered, to do things like block two hours of think-time on his calendar ev...` | **TRANSCRIPCION** |
+| `repartir_decision_cercanos_hechos` paso `10`: las tres cosas del diagnostico | `283: ...1) his decisions were not grounded in the facts 2) even if his decisions were the right ones, nobody was going to execute on them and 3) he was in danger of losing his ...` | **TRANSCRIPCION** |
+
+> **`LECTURA`: el `0,00` no dice que el capitulo sea facil, y el sitio donde mire dos veces fue
+> `proteger_tiempo_equipo_jefe`.** Sus nueve pasos salen de **un solo parrafo descriptivo sobre
+> Sheryl** (`L377`), escrito en pasado y sobre otra persona, **y el candidato los pasa a imperativo
+> dirigido a ti**. El auditor de la `ACTA 28` ya adjudico ese mismo giro como *el estilo de
+> transcripcion de esta casa y no una invencion* (`4.3`). **Lo vuelvo a marcar aqui porque es el
+> unico del lote donde la forma cambia**, y porque `D.27` avisa de que un parrafo rico en inventario
+> propio no produce puentes: `L377` nombra **ocho conductas concretas de Sheryl**, una por paso.
+
+**Y EL FRENO DE VOLUMEN NO SE ACTIVA**: `0,00` esta por debajo del tope de `10` (`8.1`). **Lo que
+manda aqui es el techo de candidatos y el coste de la aduana**, y a eso vuelvo al cerrar la tanda.
+
+### W.2.c. **EL ORDEN, QUE ES EL DEL LIBRO Y HOY NO TIENE EXCEPCION** (`EXTRACTOR.md` 12.3, `D.36`)
+
+**LA CABEZA DE LA RUEDA YA VIVE**, asi que la unica excepcion que la vuelta 28 necesito hoy no hace
+falta. **Lo compruebo antes de decirlo, en vez de fiarme del encargo:**
+
+<!-- TALLADO: parcial salida=.v30e/cabeza_ya_vive.txt -->
+
+$ python -c "..."  sobre dataset/nodos.jsonl y la bandeja
+  recorrer_rueda_hacer_cosas_equipo              en el grafo: SI   en bandeja: no
+  recorrer_rueda_conscientemente_cultura_equipo  en el grafo: SI   en bandeja: no
+
+**El orden de la tanda, generado del propio dato y no tecleado** (`.v30e/orden.py` lee el rango
+`cap_07.md, lineas N a M` del `resumen_teorico` de cada fichero de la bandeja y ordena por el):
+
+<!-- TALLADO: salida=.v30e/orden_cap07.txt -->
+
+ORDEN DEL LIBRO, cap_07, LO QUE QUEDA EN BANDEJA
+poblacion: cuarentena/scott_radical_candor, filtrada por resumen_teorico que cita cap_07.md
+
+| # | id | lineas | pasos |
+|---:|---|---|---:|
+| 1 | `parar_debate_emocion_agotamiento` | `L235` a `L237` | 5 |
+| 2 | `fijar_fecha_cierre_debate_equipo` | `L245` a `L257` | 11 |
+| 3 | `repartir_decision_cercanos_hechos` | `L259` a `L289` | 11 |
+| 4 | `pedir_hechos_decision_evitar_recomendaciones` | `L291` a `L293` | 5 |
+| 5 | `persuadir_emocion_oyente_no_propia` | `L303` a `L347` | 11 |
+| 6 | `establecer_credibilidad_pericia_humildad` | `L349` a `L357` | 9 |
+| 7 | `compartir_logica_mostrar_razonamiento` | `L359` a `L365` | 6 |
+| 8 | `minimizar_impuesto_colaboracion_equipo` | `L367` a `L373` | 4 |
+| 9 | `proteger_tiempo_equipo_jefe` | `L375` a `L379` | 9 |
+| 10 | `mantener_manos_trabajo_real_equipo` | `L381` a `L383` | 8 |
+| 11 | `reservar_calendario_tiempo_ejecutar` | `L385` a `L387` | 4 |
+| 12 | `cuidarse_agotamiento_centro_rueda` | `L409` a `L419` | 7 |
+
+candidatos: 12   pasos: 90
+
+**LOS `12` Y LOS `90` ME SALEN AL DIGITO CONTRA EL ENCARGO** (`12` candidatos) **y contra la
+`ACTA 28` `4.3`** (*pasos en esa poblacion: 90*).
