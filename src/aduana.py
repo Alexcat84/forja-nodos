@@ -849,6 +849,7 @@ class Resultado(object):
         self.vecinos = []
         self.veredictos = []
         self.aristas = []
+        self.aristas_en_cola = []
         self.mutuos = []
         self.censos_escritos = []
         self.nodo = None
@@ -862,6 +863,47 @@ class Resultado(object):
 
 def _hoy():
     return datetime.date.today().isoformat()
+
+
+def _extremo_en_bandeja(resolutor, ids_bandeja, id_candidato, madre, hijo):
+    """¿Algun extremo de la arista espera en la bandeja en vez de vivir en el grafo?
+
+    D.29 lo tiene escrito desde el 10 sep 2026 y hasta hoy no habia llegado al
+    codigo: *una arista se cablea contra ids que ya viven, y en cuarentena
+    todavia no vive ninguno.* El candidato de esta corrida cuenta como vivo,
+    porque va a entrar en este mismo acto.
+
+    Devuelve True SOLO si el extremo que falta esta de verdad en una bandeja. Un
+    extremo que no esta ni en el grafo ni en la bandeja no es una arista en cola:
+    es un id que no existe, y ese se sigue rechazando.
+    """
+    for extremo in (madre, hijo):
+        if extremo == id_candidato:
+            continue
+        if resolutor.resolver(extremo) is not None:
+            continue
+        if extremo in ids_bandeja:
+            return True
+    return False
+
+
+def _consumar_veredictos(ruta_veredictos, registros):
+    """Escribe en la bitacora los veredictos de una corrida QUE SE CONSUMO.
+
+    `EXTRACTOR.md` 14 pone `bitacora/` bajo la aduana, y **la bitacora registra
+    lo que la aduana HIZO**. Una corrida que imprime `RECHAZADO` no hizo nada,
+    luego no tiene nada que registrar.
+
+    LA CAIDA QUE LO HIZO FALTA, contada y medida (`ACTA 27` `5.2`): `agregar_jsonl`
+    se llamaba DENTRO del bucle por vecino y el rechazo por extremos llegaba
+    despues, asi que una corrida rechazada dejaba sus lineas escritas igual.
+    **Cuatro asi en `bitacora/VEREDICTOS.jsonl`**, lineas `248` a `251`: tres
+    veredictos sobre un nodo que no vive y una arista declarada dos veces que no
+    existe, con `NADA SE INSERTO` impreso en la misma corrida.
+    """
+    for registro in registros:
+        comun.agregar_jsonl(ruta_veredictos, registro)
+    return len(registros)
 
 
 def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
@@ -922,6 +964,8 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
     # se acuerde.**
     bandejas = poblacion_de_bandejas(fecha=fecha)
     poblacion = list(nodos) + list(bandejas)
+    ids_bandeja = set(n["id"] for n in bandejas if n.get("id"))
+    nodos_bandeja = dict((n["id"], n) for n in bandejas if n.get("id"))
     censo = Poblacion(len(nodos), len(bandejas))
     vecinos = buscar_vecinos(candidato, poblacion, umbrales)
     resultado.vecinos = vecinos
@@ -972,14 +1016,20 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
     for vecino_id in sorted(veredictos):
         if vecino_id in ids_vecinos:
             continue
-        nodo_declarado = resolutor.canonicos.get(vecino_id)
+        # EL QUE ESPERA EN LA BANDEJA TAMBIEN SE LEE (D.29, ACTA 27 5.1). Antes
+        # se rechazaba con `si la madre todavia esta en cuarentena, entra ella
+        # primero`, y esa salida no existe cuando los DOS extremos esperan: entre
+        # primero el que entre, el otro no vive. D.29 da la salida buena, y es
+        # diferir el cableado, no diferir la lectura.
+        nodo_declarado = resolutor.canonicos.get(vecino_id) or nodos_bandeja.get(vecino_id)
         if nodo_declarado is None:
             resultado.codigo = CODIGO_RECHAZO
             resultado.decir("")
             resultado.decir("RECHAZADO: el veredicto nombra a '%s' y ese nodo no vive "
-                            "en el grafo." % vecino_id)
-            resultado.decir("  Una arista se cablea contra un id que YA existe. Si la "
-                            "madre todavia esta en cuarentena, entra ella primero.")
+                            "ni en el grafo ni en las bandejas." % vecino_id)
+            resultado.decir("  Una arista se cablea contra un id que existe. Un id que no "
+                            "esta en ninguna de las dos poblaciones no es una arista en "
+                            "cola: es un id que no existe.")
             return resultado
         medicion = medir(candidato, nodo_declarado, umbrales)
         # SE DECLARA COMO LO QUE ES. La bitacora guarda las señales REALES, que
@@ -1091,8 +1141,10 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
     aristas = []
     repite = []
     mutuos = []
+    registros = []
     for vecino in vecinos + declarados:
         veredicto = veredictos[vecino["id"]]
+        en_cola = False
         if veredicto["clase"] not in CLASES:
             resultado.codigo = CODIGO_RECHAZO
             resultado.decir("RECHAZADO: clase de veredicto desconocida para %s: %s"
@@ -1116,7 +1168,14 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
                                 % (vecino["id"], candidato["id"], veredicto["madre"]))
                 return resultado
             hijo = candidato["id"] if madre == vecino["id"] else vecino["id"]
-            aristas.append({"madre": madre, "hijo": hijo, "vecino": vecino["id"]})
+            # EL CABLEADO SE DIFIERE CUANDO EL OTRO EXTREMO ESPERA EN LA BANDEJA
+            # (D.29, cableada aqui por la ACTA 27 5.1). El veredicto se escribe
+            # AHORA; la arista queda EN COLA y se cablea DESPUES con
+            # `forja.py arista`, que ya existe.
+            en_cola = _extremo_en_bandeja(resolutor, ids_bandeja, candidato["id"],
+                                          madre, hijo)
+            aristas.append({"madre": madre, "hijo": hijo, "vecino": vecino["id"],
+                            "en_cola": en_cola})
         elif veredicto["clase"] == "REPITE":
             repite.append(vecino["id"])
         elif veredicto["clase"] == "MUTUO":
@@ -1146,7 +1205,13 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
         # BLOQUE DE VIGENCIA (D.15): el veredicto guarda la huella del texto
         # contra el que se emitio, en los dos lados. Sin esto, dentro de tres
         # cirugias nadie sabra si esta lectura sigue siendo de este texto.
-        vecino_nodo = resolutor.canonicos.get(vecino["id"]) or {}
+        # LA HUELLA DEL VECINO DE BANDEJA SE GUARDA DE VERDAD (`D.38.5`, su otra
+        # mitad sin cablear, medida en la vuelta 28). Hasta hoy este `or {}`
+        # guardaba la huella de un diccionario VACIO cuando el vecino esperaba en
+        # la bandeja: la señal si lo medía contra su texto, y la bitacora anotaba
+        # la huella de nada. Ocho lineas asi, `252` a `264`.
+        vecino_nodo = (resolutor.canonicos.get(vecino["id"])
+                       or nodos_bandeja.get(vecino["id"]) or {})
         registro = {
             "fecha": fecha,
             "candidato": candidato["id"],
@@ -1167,11 +1232,23 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
                       else ("%s <> %s" % (candidato["id"], vecino["id"]))
                       if veredicto["clase"] == "MUTUO" else "",
         }
-        comun.agregar_jsonl(ruta_veredictos, registro)
+        # LA LINEA DICE SI SU ARISTA SE CABLEO O QUEDO EN COLA, y lo dice en el
+        # campo y no en la prosa. Una linea que nombra una arista que no existe
+        # en el grafo es la especie que la ACTA 27 5.2 encontro cuatro veces.
+        if en_cola:
+            registro["arista_en_cola"] = True
+        # LA INSERCION ES ATOMICA (D.29 llegando al codigo, ACTA 27 5.2). El
+        # registro se GUARDA, no se escribe: la escritura llega abajo, cuando la
+        # corrida se consuma. Ver `_consumar_veredictos`.
+        registros.append(registro)
         resultado.veredictos.append(registro)
 
     if repite:
         resultado.codigo = CODIGO_REPITE
+        # UN `REPITE` SI SE CONSUMA: la aduana juzgo y devolvio el candidato a
+        # su reparto. No imprime `RECHAZADO` y su veredicto es el resultado del
+        # acto, no un residuo de uno que no ocurrio.
+        _consumar_veredictos(ruta_veredictos, registros)
         resultado.decir("")
         for vecino_id in repite:
             resultado.decir(_plantilla_de_reparto(candidato, vecino_id))
@@ -1190,6 +1267,18 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
 
     for arista in aristas:
         madre, hijo = arista["madre"], arista["hijo"]
+        if arista.get("en_cola"):
+            # D.29 POR SU LETRA: *una arista se cablea contra ids que ya viven, y
+            # en cuarentena todavia no vive ninguno... mientras el candidato
+            # espera en cuarentena, la arista vive en un bloque propio y titulado
+            # del reporte.* El veredicto YA esta escrito; esto es el despues.
+            resultado.aristas_en_cola.append("%s > %s" % (madre, hijo))
+            resultado.decir("  ARISTA EN COLA, no cableada: %s > %s" % (madre, hijo))
+            resultado.decir("    el otro extremo espera en la bandeja (D.29). El veredicto "
+                            "CONTINUA queda escrito y la arista se cablea cuando entre:")
+            resultado.decir("      python forja.py arista --madre %s --hijo %s --paso <n> "
+                            '--razon "..."' % (madre, hijo))
+            continue
         nodo_madre = nuevo if madre == candidato["id"] else por_id.get(madre)
         nodo_hijo = nuevo if hijo == candidato["id"] else por_id.get(hijo)
         if nodo_madre is None or nodo_hijo is None:
@@ -1274,6 +1363,10 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
             resultado.decir("    " + str(fallo))
         return resultado
 
+    # LA CORRIDA SE CONSUMA AQUI, Y NO ANTES. Desde este punto no hay ningun
+    # camino que devuelva `RECHAZADO`, asi que es el sitio donde la bitacora
+    # puede decir la verdad sobre lo que la aduana hizo.
+    _consumar_veredictos(ruta_veredictos, registros)
     comun.escribir_jsonl(ruta_dataset, dataset_futuro)
     # REGISTRO DE CITAS, no lista blanca (D.14). Cada par lleva su ida, su
     # vuelta, las DOS lineas que cita, la fecha, quien lo declaro y la huella
@@ -1294,6 +1387,12 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
     if resultado.mutuos:
         resultado.decir("  enlaces mutuos en %s: %d"
                         % (comun.relativa(ruta_pares_mutuos), len(resultado.mutuos)))
+    if resultado.aristas_en_cola:
+        resultado.decir("  ARISTAS EN COLA, sin cablear: %d" % len(resultado.aristas_en_cola))
+        for arista in resultado.aristas_en_cola:
+            resultado.decir("    %s" % arista)
+        resultado.decir("    D.29: van a un bloque propio y titulado del reporte, y se "
+                        "cablean con `forja.py arista` cuando el otro extremo entre.")
     return resultado
 
 

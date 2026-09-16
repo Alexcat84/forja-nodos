@@ -1,0 +1,21 @@
+LAS LINEAS DECLARADAS NO CONSUMADAS, LEIDAS DE LA SEDE (no del comando)
+
+linea 248  recorrer_rueda_hacer_cosas_equipo > recorrer_trece_elementos_proceso_evaluacion_formal  veredicto=SANO (intacto)
+  fecha de la anotacion : 2026-09-16
+  no_consumada          : True
+  razon                 : la corrida que escribio esta linea imprimio RECHAZADO y dejo el grafo intacto; la aduana registr ...
+linea 249  recorrer_rueda_hacer_cosas_equipo > recorrer_rueda_conscientemente_cultura_equipo  veredicto=CONTINUA (intacto)
+  fecha de la anotacion : 2026-09-16
+  no_consumada          : True
+  razon                 : la corrida que escribio esta linea imprimio RECHAZADO y dejo el grafo intacto; la aduana registr ...
+linea 250  recorrer_rueda_hacer_cosas_equipo > reconocer_emociones_propias_avisar_equipo  veredicto=SANO (intacto)
+  fecha de la anotacion : 2026-09-16
+  no_consumada          : True
+  razon                 : la corrida que escribio esta linea imprimio RECHAZADO y dejo el grafo intacto; la aduana registr ...
+linea 251  recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo  veredicto=CONTINUA (intacto)
+  fecha de la anotacion : 2026-09-16
+  no_consumada          : True
+  razon                 : la corrida que escribio esta linea imprimio RECHAZADO y dejo el grafo intacto; la aduana registr ...
+
+total de lineas NO CONSUMADAS: 4
+total de lineas en la bitacora: 264

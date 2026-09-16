@@ -6,6 +6,10 @@
     python forja.py arista --madre A --hijo B --paso N --razon R   D.37
     python forja.py corregir --nodo <id> --anade "CORRECCION DECLARADA ..." --razon R
                                                 correccion declarada del resumen_teorico
+    python forja.py anotar --linea <n> --anade "CORRECCION DECLARADA ..." --razon R
+                           [--no-consumada]
+                                                correccion declarada sobre una linea ya
+                                                escrita de bitacora/VEREDICTOS.jsonl
     python forja.py gate                        el gate de integridad
     python forja.py guiones [ruta ...]          el barrido de estilo
     python forja.py rancios                     el bloque de vigencia (D.15)
@@ -19,7 +23,8 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from src import (aduana, arista, censos, comun, correccion, gate, guiones,  # noqa: E402
+from src import (aduana, anotacion, arista, censos, comun, correccion,  # noqa: E402
+                 gate, guiones,
                  herencia, informe,
                  resolutor, vigencia)
 
@@ -41,6 +46,8 @@ def main(argumentos):
         return arista.main(resto)
     if comando == "corregir":
         return correccion.main(resto)
+    if comando == "anotar":
+        return anotacion.main(resto)
     if comando == "informe":
         return informe.main(resto)
     if comando == "gate":

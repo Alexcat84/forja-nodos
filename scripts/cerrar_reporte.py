@@ -53,12 +53,12 @@ def main(argumentos=None):
              # tumbo la racha REPORTE en la vuelta 25.
              ("censo de rutas (D.42)", [sys.executable, CENSO])]
     if not solo_hook:
-        # EL CIERRE DE VUELTA CORRE LAS CINCO GUARDAS, no solo la nueva. Una
+        # EL CIERRE DE VUELTA CORRE TODAS LAS GUARDAS, no solo la nueva. Una
         # guarda nueva que desplaza a las viejas no suma: sustituye.
+        # La vigencia va aparte, mas abajo, y la razon esta escrita alli.
         pasos.extend([
             ("gate de integridad", [sys.executable, "forja.py", "gate"]),
             ("barrido de guiones", [sys.executable, "forja.py", "guiones"]),
-            ("vigencia de los veredictos", [sys.executable, "forja.py", "rancios"]),
             ("prueba de aceptacion",
              [sys.executable, os.path.join("tests", "test_aceptacion.py")]),
         ])
@@ -69,6 +69,32 @@ def main(argumentos=None):
             caidos.append(titulo)
             if solo_hook:
                 break
+
+    # CORRECCION DECLARADA DEL 16 SEP 2026 (ACTA 27 5.3.a): LA VIGENCIA SALE DE
+    # LA LISTA DE ARRIBA Y NO DEVUELVE ROJO.
+    #
+    # Estuvo entre las guardas cuyo fallo devuelve CIERRE EN ROJO, y `D.15` dice
+    # lo contrario con estas palabras: *se relee con el texto de hoy, o se declara
+    # por que sigue valiendo. Las dos cosas las hace una persona, y por eso esto NO
+    # pone el gate en rojo: el gate vigila lo que es cierto o falso hoy; esto
+    # vigila lo que fue cierto ayer y nadie ha vuelto a mirar.*
+    #
+    # ENTRE UNA REGLA ESCRITA Y UN CODIGO QUE LA CONTRADICE MANDA LA REGLA, y el
+    # codigo se corrige declarandolo, que es lo que hace este parrafo.
+    #
+    # Y NO SE AFLOJA: `rancios` SIGUE CORRIENDO, SIGUE IMPRIMIENDO SUS HALLAZGOS Y
+    # EL CIERRE SIGUE PUBLICANDO SU CUENTA. *La guarda que no muerde es cifra*
+    # (cosecha 7.C). Lo unico que cambia es que **contar una cola no es caerse.**
+    if not solo_hook:
+        print("[cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda")
+        proceso = subprocess.Popen([sys.executable, "forja.py", "rancios"], cwd=RAIZ)
+        proceso.communicate()
+        if proceso.returncode != 0:
+            print("")
+            print("LA VIGENCIA TIENE COLA, Y ESO NO PONE EL CIERRE EN ROJO (D.15).")
+            print("Un rancio no se cita como vigente: se relee con el texto de hoy,")
+            print("o se declara por que sigue valiendo. Las dos cosas las hace una")
+            print("persona, y por eso esto no pone nada en rojo.")
 
     print("")
     if caidos:
@@ -87,7 +113,9 @@ def main(argumentos=None):
             print("y se escribe al lado de que caida sale (correccion declarada).")
         return 1
     print("CIERRE VERDE: %s." % ("el tallado y el censo de rutas" if solo_hook
-                                 else "las cinco guardas, el tallado y el censo"))
+                                 else "las cuatro guardas que muerden, el tallado y el "
+                                      "censo. La vigencia corrio y publico su cuenta "
+                                      "arriba: es cola, no guarda (D.15)"))
     return 0
 
 

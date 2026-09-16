@@ -1,0 +1,35 @@
+RANCIO: 26 hallazgos
+lineas distintas: 26
+nodos que envejecieron la lectura: 4
+  delimitar_franqueza_radical_cinco_noes
+  despedir_persona_franqueza_radical
+  reconocer_recompensar_gente_estable
+  repartir_semana_cuarenta_horas_jefe
+
+reparto por linea:
+  linea 149: vecino=delimitar_franqueza_radical_cinco_noes
+  linea 151: vecino=repartir_semana_cuarenta_horas_jefe
+  linea 154: vecino=delimitar_franqueza_radical_cinco_noes
+  linea 158: vecino=delimitar_franqueza_radical_cinco_noes
+  linea 181: vecino=delimitar_franqueza_radical_cinco_noes
+  linea 199: vecino=delimitar_franqueza_radical_cinco_noes
+  linea 204: candidato=despedir_persona_franqueza_radical
+  linea 205: candidato=despedir_persona_franqueza_radical
+  linea 206: candidato=despedir_persona_franqueza_radical
+  linea 207: candidato=despedir_persona_franqueza_radical
+  linea 208: candidato=despedir_persona_franqueza_radical
+  linea 209: candidato=despedir_persona_franqueza_radical
+  linea 210: candidato=despedir_persona_franqueza_radical
+  linea 211: vecino=despedir_persona_franqueza_radical
+  linea 215: candidato=reconocer_recompensar_gente_estable
+  linea 216: candidato=reconocer_recompensar_gente_estable
+  linea 219: vecino=despedir_persona_franqueza_radical
+  linea 222: vecino=reconocer_recompensar_gente_estable
+  linea 226: candidato=reconocer_recompensar_gente_estable
+  linea 228: vecino=delimitar_franqueza_radical_cinco_noes
+  linea 234: vecino=despedir_persona_franqueza_radical
+  linea 238: vecino=delimitar_franqueza_radical_cinco_noes
+  linea 241: vecino=repartir_semana_cuarenta_horas_jefe
+  linea 242: vecino=delimitar_franqueza_radical_cinco_noes
+  linea 243: vecino=despedir_persona_franqueza_radical
+  linea 244: vecino=reconocer_recompensar_gente_estable

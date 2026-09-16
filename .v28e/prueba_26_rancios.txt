@@ -1,0 +1,42 @@
+LA PRUEBA DE QUE LAS 26 LECTURAS SIGUEN VALIENDO, MEDIDA Y NO PROMETIDA
+
+correcciones escritas en la bitacora: 4
+
+Para cada nodo corregido: se QUITA del resumen_teorico de hoy el texto que la
+correccion aniadio, se recomputa la huella del nodo asi reconstruido, y se
+compara con la huella que guardaron los veredictos de antes.
+
+repartir_semana_cuarenta_horas_jefe
+  campo tocado por la operacion        : resumen_teorico
+  huella ANTES, guardada por corregir  : 5741a0fe40ead016
+  huella HOY                           : de520028526c0f00
+  huella al QUITAR el texto aniadido   : 5741a0fe40ead016
+  coincide con la de ANTES             : SI
+  caracteres antes / despues           : 3543 / 4418
+delimitar_franqueza_radical_cinco_noes
+  campo tocado por la operacion        : resumen_teorico
+  huella ANTES, guardada por corregir  : c43d1ffc6688387b
+  huella HOY                           : e28c5904cc8adc22
+  huella al QUITAR el texto aniadido   : c43d1ffc6688387b
+  coincide con la de ANTES             : SI
+  caracteres antes / despues           : 1808 / 2595
+despedir_persona_franqueza_radical
+  campo tocado por la operacion        : resumen_teorico
+  huella ANTES, guardada por corregir  : 02aa38ffba624594
+  huella HOY                           : d140e5bc404a277b
+  huella al QUITAR el texto aniadido   : 02aa38ffba624594
+  coincide con la de ANTES             : SI
+  caracteres antes / despues           : 1366 / 2309
+reconocer_recompensar_gente_estable
+  campo tocado por la operacion        : resumen_teorico
+  huella ANTES, guardada por corregir  : 3f8f1a490caf481b
+  huella HOY                           : bbb6bfa7089e76fb
+  huella al QUITAR el texto aniadido   : 3f8f1a490caf481b
+  coincide con la de ANTES             : SI
+  caracteres antes / despues           : 1568 / 2668
+
+LAS CUATRO COINCIDEN: SI
+
+LECTURA: si al quitar SOLO la prosa aniadida la huella vuelve a ser la de antes,
+entonces NINGUN otro campo del nodo cambio. Ni un paso, ni el titulo, ni el
+entregable, ni las fuentes, ni las condiciones de activacion.

@@ -32855,3 +32855,255 @@ construir exactamente esa operacion (*se marcan por operacion, con su razon, igu
 `EXTRACTOR.md` 13.
 
 **ESTADO DEL PUNTO 5: MEDIDO AQUI, EJECUTADO EN `V.3.e`.**
+
+## V.3. TAREA 2, BLOQUEANTE: **`D.29` LLEGA A `src/aduana.py`, Y CON ELLA ENTRA LA CABEZA DE LA RUEDA**
+
+*Adjudicado en `ACTA 27` `5.1` y `5.2`. **No es maquinaria nueva: es una regla escrita que no llego al
+codigo.** La moratoria de `EXTRACTOR.md` 13 se levanta con la cita del acta: `4` candidatos parados, la
+cabeza de la rueda fuera con `10` de sus `24` partes ya dentro y `0` aristas tocandola, y `4` lineas
+fantasma en la bitacora.*
+
+### V.3.a. **EL ESTADO ANTES, LEIDO DE `git` Y NO DE MI MEMORIA** (`EXTRACTOR.md` 5)
+
+<!-- TALLADO: parcial salida=.v28e/aduana_antes.txt -->
+
+    $ git show HEAD:src/aduana.py | sed -n "1169,1171p"
+            }
+            comun.agregar_jsonl(ruta_veredictos, registro)
+            resultado.veredictos.append(registro)
+    $ git show HEAD:src/aduana.py | sed -n "1195,1198p"
+            if nodo_madre is None or nodo_hijo is None:
+                resultado.codigo = CODIGO_RECHAZO
+                resultado.decir("RECHAZADO: no encuentro los dos extremos de la arista %s > %s"
+                                % (madre, hijo))
+
+**LAS DOS MITADES SE VEN AHI:** la escritura va **dentro** del bucle por vecino y el rechazo llega
+**veinticinco lineas despues**. Entre las dos no hay nada que deshaga lo escrito.
+
+### V.3.b. **MITAD `2.a`: LA INSERCION ES ATOMICA**
+
+**QUE HICE, y es un cambio de sitio, no de regla:** el `registro` se GUARDA en una lista y la escritura
+se hace en **`_consumar_veredictos`**, llamada **solo desde los dos puntos donde la corrida se consuma**:
+
+| punto | por que escribe |
+|---|---|
+| el camino de exito, **justo antes de `escribir_jsonl` del dataset** | desde ahi no hay ningun camino que devuelva `RECHAZADO` |
+| el camino `REPITE` | **no imprime `RECHAZADO`**: la aduana juzgo y devolvio el candidato a su reparto. Ese acto SI ocurrio |
+
+**LA VARA QUE USO ES LA DEL ENCARGO, literal:** *una corrida que imprime `RECHAZADO` no escribe nada.*
+No es *una corrida que no inserta*, que se habria llevado por delante al `REPITE`.
+
+**LOS CUATRO CASOS POSITIVOS**, y el primero es la reproduccion exacta de la caida:
+
+| prueba | que muerde |
+|---|---|
+| `test_caso_positivo_una_corrida_RECHAZADA_no_deja_ni_una_linea` | el vecino `1` ya tenia su veredicto construido cuando el `2` tumbo la corrida. **`0` lineas en la bitacora** |
+| `test_el_gate_que_muerde_en_la_simulacion_tampoco_deja_linea` | el rechazo **mas tardio de todo el camino**, el de la simulacion sobre copia |
+| `test_caso_negativo_una_corrida_QUE_ENTRA_si_escribe_sus_veredictos` | **una aduana que no escribe nunca es un cajon, no una bitacora** |
+| `test_un_REPITE_si_se_consuma_porque_no_imprime_rechazado` | el `REPITE` sigue dejando su linea y el grafo sigue intacto |
+
+### V.3.c. **MITAD `2.b`: UN `CONTINUA` CON EL OTRO EXTREMO EN LA BANDEJA SE ESCRIBE Y LA ARISTA QUEDA EN COLA**
+
+**QUE HICE:** la arista se marca `en_cola` cuando **el extremo que no es el candidato no vive en el
+grafo pero SI espera en una bandeja**. Entonces el veredicto `CONTINUA` se escribe con el campo nuevo
+`arista_en_cola`, el nodo entra, y **el cableado no se hace**. La salida imprime el comando exacto de
+`forja.py arista` con el que se cablea despues.
+
+**LO QUE NO SE MOVIO, comprobado prueba a prueba y no prometido:**
+
+| lo que el encargo prohibe mover | como lo compruebo |
+|---|---|
+| **la clase sigue siendo `CONTINUA`** | `test_la_clase_sigue_siendo_CONTINUA_y_no_se_degrada_a_SANO` lee la linea escrita |
+| **ningun umbral de `config/umbrales.json`** | `git status --short config/` sale vacio en `V.3.f` |
+| **la guarda de `D.8` sigue mordiendo** | `test_la_guarda_de_D8_SIGUE_MORDIENDO_un_CONTINUA_sin_razon`, y ademas **no deja linea** |
+| **un id que no existe en ninguna poblacion sigue cayendo** | `test_un_id_que_no_esta_NI_EN_EL_GRAFO_NI_EN_BANDEJA_se_sigue_rechazando` |
+
+> ### **DONDE ENSANCHO MAS DE LO QUE EL ENCARGO NOMBRA, Y LO DIGO ANTES DE QUE SE VEA** (va de discutible)
+>
+> El encargo nombra el caso del **vecino levantado por señal**. Yo lo aplico **tambien al declarado por
+> lectura**, que hasta hoy se rechazaba con *si la madre todavia esta en cuarentena, entra ella
+> primero*. **Mi motivo:** esa salida **no existe cuando los dos extremos esperan**, que es justo la
+> configuracion que `D.29` contempla, y dejar una de las dos puertas con la regla vieja **es la misma
+> enfermedad de la media regla cableada** que este arreglo viene a curar. **Va marcado en `V.7`.**
+
+### V.3.d. **LA REPRODUCCION SOBRE COPIA, CON LAS SEDES DE VERDAD INTACTAS**
+
+*Como hizo el auditor en `ACTA 27` `5`: primero se reproduce, despues se toca.*
+
+<!-- TALLADO: parcial salida=.v28e/reproduccion_2b.txt -->
+
+    $ ANTES
+    veredictos=264  nodos=239
+    ...
+      ARISTA EN COLA, no cableada: recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo
+        el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+          python forja.py arista --madre recorrer_rueda_conscientemente_cultura_equipo --hijo recorrer_rueda_hacer_cosas_equipo --paso <n> --razon "..."
+
+    GATE VERDE sobre la simulacion. NODO INSERTADO en .v28e/mutacion/nodos2.jsonl.
+      nodos en el grafo: 240
+      veredictos en .v28e/mutacion/VEREDICTOS2.jsonl: 1
+      ARISTAS EN COLA, sin cablear: 1
+    $ DESPUES
+    veredictos=265  nodos=240
+
+**EL CANDIDATO QUE LLEVABA DOS VUELTAS PARADO ENTRA.** Y las sedes de verdad no se tocaron:
+
+    $ git status --short dataset/ config/
+    (vacio)
+
+### V.3.e. **MITAD `2.c`: LAS CUATRO LINEAS SE DECLARAN NO CONSUMADAS, Y NO SE BORRAN**
+
+**EL INSTRUMENTO NUEVO ES `python forja.py anotar`**, y nace porque el encargo lo ordena expresamente
+(*se marcan por operacion, con su razon, igual que hiciste con `corregir`*), que es la primera de las
+dos puertas de `EXTRACTOR.md` 13.
+
+**LO QUE HACE Y LO QUE NO, que es donde una operacion se estrecha o se ensancha:**
+
+| hace | no hace |
+|---|---|
+| aniade al final de la **razon** de UNA linea, sin borrar | **no toca la clase, ni el candidato, ni el vecino, ni las huellas, ni las señales, ni el campo `arista`**, y lo comprueba campo a campo antes de escribir |
+| deja la anotacion tambien en su campo propio `anotaciones`, con fecha y razon | **no toca `dataset/nodos.jsonl`** |
+| con `--no-consumada` marca la linea y **la vigencia deja de pedirle huella** | **no borra el hallazgo de un `RANCIO`**: la vara de `D.15` no se mueve |
+| exige la marca de `D.35` (`CORRECCION DECLARADA` o `VIGENCIA DECLARADA`) y razon escrita | **no escribe mas de una linea**, y lo mide antes de guardar |
+
+**LAS CUATRO, ESCRITAS. Y LA PRUEBA SE LEE DE LA SEDE, NO DE LA SALIDA DEL COMANDO**, que es donde
+todavia estara dentro de diez vueltas:
+
+<!-- TALLADO: parcial salida=.v28e/lineas_no_consumadas.txt -->
+
+    linea 248  recorrer_rueda_hacer_cosas_equipo > recorrer_trece_elementos_proceso_evaluacion_formal  veredicto=SANO (intacto)
+      fecha de la anotacion : 2026-09-16
+      no_consumada          : True
+    linea 249  recorrer_rueda_hacer_cosas_equipo > recorrer_rueda_conscientemente_cultura_equipo  veredicto=CONTINUA (intacto)
+    linea 250  recorrer_rueda_hacer_cosas_equipo > reconocer_emociones_propias_avisar_equipo  veredicto=SANO (intacto)
+    linea 251  recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo  veredicto=CONTINUA (intacto)
+
+    total de lineas NO CONSUMADAS: 4
+    total de lineas en la bitacora: 264
+
+**LAS CUATRO CLASES SIGUEN INTACTAS Y LAS `264` LINEAS SIGUEN AHI.** No se borro ninguna: se
+declararon.
+
+**Y EL PUNTO 5 DE LA `TAREA 1` SE CIERRA AQUI**, con el mismo instrumento y sin inventar un segundo:
+la linea `256` recibe su **correccion declarada** de la premisa falsa, **con la clase `SANO` sin tocar**
+(`veredicto: SANO (NO se toca)` impreso por el propio comando).
+
+### V.3.f. **LA CUENTA DE LO QUE LA BITACORA SE MOVIO, MEDIDA Y NO PROMETIDA**
+
+<!-- TALLADO: parcial salida=.v28e/bitacora_movida.txt -->
+
+    lineas antes/despues: 264 264
+    lineas distintas: 31
+    clases movidas: []
+    razones acortadas: []
+
+**LECTURA:** `31` lineas cambiaron (`26` de la `TAREA 3.b`, `4` de `2.c` y `1` del punto 5), **ninguna
+clase se movio y ninguna razon se acorto**. La bitacora no perdio ni un caracter.
+
+## V.4. TAREA 3: **LA VIGENCIA, DEVUELTA A LO QUE `D.15` DICE QUE ES**
+
+### V.4.a. **`3.a`: LA VIGENCIA SALE DE LAS GUARDAS QUE DEVUELVEN `CIERRE EN ROJO`**
+
+<!-- TALLADO: parcial salida=.v28e/cierre_antes_y_hoy.txt -->
+
+    $ git show HEAD:scripts/cerrar_reporte.py | sed -n "61p;75p"
+                ("vigencia de los veredictos", [sys.executable, "forja.py", "rancios"]),
+            print("CIERRE EN ROJO. No pasa: %s" % ", ".join(caidos))
+
+**ENTRE UNA REGLA ESCRITA Y UN CODIGO QUE LA CONTRADICE MANDA LA REGLA.** La vigencia sale de la lista
+de `pasos` y pasa a un bloque propio **que corre igual, imprime igual y no acumula en `caidos`**, con
+la correccion declarada escrita encima en el codigo y con su motivo al lado.
+
+**Y NO LA AFLOJO. Las tres mitades, con su prueba:**
+
+| lo que sigue igual | la prueba |
+|---|---|
+| `forja.py rancios` **sigue devolviendo `1`** cuando hay cola | `test_la_vigencia_en_rojo_por_su_cuenta_SIGUE_devolviendo_1` |
+| **el cierre sigue publicando su cuenta** | `test_el_cierre_NO_se_pone_en_rojo_por_ella_Y_SIGUE_publicando_su_cuenta` exige `BLOQUE DE VIGENCIA` en la salida |
+| **el gate en rojo SIGUE tumbando el cierre** | `test_caso_positivo_el_gate_en_rojo_SI_tumba_el_cierre` |
+
+### V.4.b. **`3.b`: LOS `26` `RANCIO` SE DECLARAN, Y LA DECLARACION LLEVA SU MEDICION**
+
+**LOS `26` SALEN DE `4` NODOS, Y LOS `4` SON LOS DE LAS CORRECCIONES DE LA VUELTA 27:**
+
+<!-- TALLADO: parcial salida=.v28e/rancios_reparto.txt -->
+
+    RANCIO: 26 hallazgos
+    lineas distintas: 26
+    nodos que envejecieron la lectura: 4
+      delimitar_franqueza_radical_cinco_noes
+      despedir_persona_franqueza_radical
+      reconocer_recompensar_gente_estable
+      repartir_semana_cuarenta_horas_jefe
+
+**LA PRUEBA DE QUE SIGUEN VALIENDO NO ES UNA PROMESA: ES UNA HUELLA RECONSTRUIDA.** Si al quitar del
+`resumen_teorico` de hoy **solo** el texto que la correccion aniadio la huella del nodo vuelve a ser la
+que esa lectura guardo, entonces **ningun otro campo cambio**:
+
+<!-- TALLADO: parcial salida=.v28e/prueba_26_rancios.txt -->
+
+    repartir_semana_cuarenta_horas_jefe
+      huella ANTES, guardada por corregir  : 5741a0fe40ead016
+      huella HOY                           : de520028526c0f00
+      huella al QUITAR el texto aniadido   : 5741a0fe40ead016
+      coincide con la de ANTES             : SI
+    ...
+    LAS CUATRO COINCIDEN: SI
+
+**LA DECLARACION VA EN SEDE DURADERA Y NO EN EL REPORTE**, como manda el encargo: **dentro de la propia
+linea de `bitacora/VEREDICTOS.jsonl`**, por operacion, con la marca nueva `VIGENCIA DECLARADA` y
+diciendo **contra que huella se emitio** y por que el cambio no la invalida. **`26` de `26` escritas**
+(`.v28e/declaraciones_26.txt`).
+
+**Y LA DECLARACION NO BORRA EL HALLAZGO: las `26` siguen saliendo `RANCIO`.** Cambiar lo que la guarda
+considera rancio es mover la vara de `D.15`, **y eso no lo hago yo**: es mi propuesta `5`, adjudicada
+*en parte*, y la mitad que no se autoriza **no se toca**.
+
+### V.4.c. **`3.c`: LA POBLACION DE LA VIGENCIA ES GRAFO MAS BANDEJAS, Y APARECE UNA MITAD SIN CABLEAR QUE NADIE HABIA MEDIDO**
+
+**LO QUE EL ENCARGO ESPERA:** que al ensanchar la poblacion, los `8` hallazgos de `NODO IDO` sobre
+vecinos de bandeja dejen de serlo porque *su huella se comprueba ahi*.
+
+> **LECTURA: NO SE PUEDE COMPROBAR AHI, Y EL MOTIVO ES UNA SEGUNDA MITAD DE `D.38.5` QUE SIGUE SIN
+> CABLEAR.** La aduana guardaba en esas `8` lineas la huella **de un diccionario VACIO**:
+
+<!-- TALLADO: parcial salida=.v28e/huella_de_nada.txt -->
+
+    huella de un dict vacio: e3b0c44298fc1c14
+    252 crear_obligacion_disentir_equipo        huella_vecino= e3b0c44298fc1c14  vacia? True
+    256 compartir_logica_mostrar_razonamiento   huella_vecino= e3b0c44298fc1c14  vacia? True
+    258 fijar_fecha_cierre_debate_equipo        huella_vecino= e3b0c44298fc1c14  vacia? True
+    260 mantener_manos_trabajo_real_equipo      huella_vecino= e3b0c44298fc1c14  vacia? True
+    261 compartir_logica_mostrar_razonamiento   huella_vecino= e3b0c44298fc1c14  vacia? True
+    262 parar_debate_emocion_agotamiento        huella_vecino= e3b0c44298fc1c14  vacia? True
+    263 proteger_tiempo_equipo_jefe             huella_vecino= e3b0c44298fc1c14  vacia? True
+    264 minimizar_impuesto_colaboracion_equipo  huella_vecino= e3b0c44298fc1c14  vacia? True
+
+**LA SEÑAL SI MEDIA CONTRA EL TEXTO DE LA BANDEJA, Y LA BITACORA ANOTABA LA HUELLA DE NADA.** Es la
+misma figura del `9ef933b`: `D.38.5` cableada en la busqueda de vecinos y no en el registro.
+
+**LAS TRES COSAS QUE HAGO, Y NINGUNA MUEVE LA VARA:**
+
+| # | que | por que no es mover la vara |
+|---:|---|---|
+| **1** | `forja.py rancios` mide sobre **grafo mas bandejas**, descartando `_insertados` y `_derivadas` | es `D.38.4` y `D.38.5` por su letra, y es lo que el encargo adjudica a favor |
+| **2** | la aduana guarda **la huella de verdad** del vecino de bandeja, de aqui en adelante | era un `or {}` que escribia la huella de nada. **Corregirlo no cambia ninguna clase** |
+| **3** | una huella igual a la de un nodo vacio se clasifica **`SIN HUELLA`** y no `VIGENTE` | **`D.15` ya tiene esa casilla escrita**: *SIN HUELLA: incomprobable, y eso se declara en vez de darse por bueno.* Lo que NO hago es darlas por buenas |
+
+**EL SALDO, RECONTADO CON EL INSTRUMENTO Y NO CON LA CABEZA** (`D.38.3` ensanchada):
+
+<!-- TALLADO: parcial salida=.v28e/vigencia_antes_despues.txt -->
+
+    $ ANTES (.v28e/rancios_apertura.txt)
+    BLOQUE DE VIGENCIA: 42 hallazgo(s) sobre 264 veredicto(s) y 0 cita(s).
+      NODO IDO 16, RANCIO 26
+    $ HOY (.v28e/rancios_tras_tarea3.txt)
+    BLOQUE DE VIGENCIA: 34 hallazgo(s) sobre 260 veredicto(s) y 0 cita(s).
+      RANCIO 26, SIN HUELLA 8
+      lineas declaradas NO CONSUMADAS y por eso no medidas: 4
+
+**LECTURA, en linea aparte como manda `D.38.3`:** los `16` `NODO IDO` son **`0`**. De ellos, `8` eran
+las lineas fantasma y los resuelve la `TAREA 2.c`; los otros `8` eran vecinos de bandeja y ahora se
+llaman por su nombre verdadero, **`SIN HUELLA`**, que es la casilla que `D.15` escribio para lo
+incomprobable. **La cola no se ha escondido: ha cambiado de nombre al nombre que es cierto, y sigue
+contandose.**

@@ -2622,6 +2622,576 @@ class PruebaCorreccionDeclarada(BaseForja):
         self.assertIn("ya esta escrita", segunda[1])
 
 
+class PruebaInsercionAtomica(BaseForja):
+    """LA INSERCION ES ATOMICA: una corrida que imprime `RECHAZADO` no escribe nada.
+
+    `EXTRACTOR.md` 14 pone `bitacora/` bajo la aduana, y **la bitacora registra lo
+    que la aduana HIZO.** Una corrida que no inserto no hizo nada, luego no tiene
+    nada que registrar.
+
+    LA CAIDA QUE LO HIZO FALTA, medida por la `ACTA 27` `5.2` y reproducida por el
+    auditor sobre copia: `comun.agregar_jsonl` se llamaba DENTRO del bucle por
+    vecino y el rechazo llegaba DESPUES. **Cuatro lineas asi en la bitacora de esta
+    casa**, las `248` a `251`: tres veredictos sobre un nodo que no vive y una arista
+    declarada dos veces que no existe, con `NADA SE INSERTO` en la misma corrida.
+    """
+
+    TEXTO = ("bloquear en el calendario dos horas de pensar cada dia y tratarlas "
+             "como una reunion sagrada que no se mueve por nadie")
+
+    def _nodo(self, identificador, texto=None, pasos=None):
+        return {
+            "id": identificador,
+            "titulo": identificador.replace("_", " "),
+            "resumen_teorico": texto or self.TEXTO,
+            "condiciones_activacion": "cuando el calendario se llena de reuniones",
+            "entregable_esperado": "dos horas de pensar bloqueadas",
+            "pasos_accionables": pasos or ["Abrir el calendario.",
+                                           "Bloquear dos horas.",
+                                           "Tratarlas como sagradas."],
+            "dominio": "gestion", "estado": "vivo",
+            "fuentes": [{"clave": "manual_sistema_conocimiento", "fecha": "2026-09-16"}],
+            "denominaciones": {"nombre_largo": identificador.replace("_", " "),
+                               "otros_idiomas": [], "sigla": ""},
+            "ids_alias": [], "nodos_previos": [], "nodos_siguientes": [],
+            "atribuciones": [],
+        }
+
+    def _en_bandeja(self, identificador, texto=None, pasos=None, lote="un_lote"):
+        carpeta = os.path.join(self.bandeja, lote)
+        if not os.path.isdir(carpeta):
+            os.makedirs(carpeta)
+        ruta = os.path.join(carpeta, identificador + ".json")
+        comun.escribir_texto(ruta, json.dumps(
+            self._nodo(identificador, texto, pasos), ensure_ascii=False))
+        return ruta
+
+    # ----------------------------------------------------------- 2.a atomica
+
+    def test_caso_positivo_una_corrida_RECHAZADA_no_deja_ni_una_linea(self):
+        """El vecino 1 ya tenia su veredicto escrito cuando el 2 tumbo la corrida."""
+        self.escribir_dataset([self._nodo("bloquear_tiempo_pensar_calendario"),
+                               self._nodo("reservar_horas_pensar_agenda")])
+        candidato = self._en_bandeja("apartar_ratos_pensar_semana")
+        codigo, salida = self.forja(
+            "insertar", candidato, "--sin-preguntas",
+            "--veredicto", "bloquear_tiempo_pensar_calendario|SANO|"
+                           "no son el mismo trabajo y sus entregables no se parecen",
+            # LA MADRE NO ES NI EL VECINO NI EL CANDIDATO: tumba la corrida, y lo
+            # hace DESPUES de que el primer veredicto se haya construido.
+            "--veredicto", "reservar_horas_pensar_agenda|CONTINUA|"
+                           "madre=un_tercero_que_no_pinta_nada|"
+                           "el hijo despliega en tres pasos lo que la madre nombra")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("RECHAZADO", salida)
+        self.assertEqual(comun.leer_jsonl(self.veredictos), [], salida)
+        self.anotar("ATOMICA", "una corrida RECHAZADA deja la bitacora intacta")
+
+    def test_caso_negativo_una_corrida_QUE_ENTRA_si_escribe_sus_veredictos(self):
+        """Una aduana que no escribe nunca es un cajon, no una bitacora."""
+        self.escribir_dataset([self._nodo("bloquear_tiempo_pensar_calendario")])
+        candidato = self._en_bandeja("apartar_ratos_pensar_semana")
+        codigo, salida = self.forja(
+            "insertar", candidato, "--sin-preguntas",
+            "--veredicto", "bloquear_tiempo_pensar_calendario|SANO|"
+                           "no son el mismo trabajo y sus entregables no se parecen")
+        self.assertEqual(codigo, 0, salida)
+        lineas = comun.leer_jsonl(self.veredictos)
+        self.assertEqual(len(lineas), 1, salida)
+        self.assertEqual(lineas[0]["veredicto"], "SANO")
+
+    def test_un_REPITE_si_se_consuma_porque_no_imprime_rechazado(self):
+        """La aduana juzgo y devolvio el candidato a su reparto: eso SI lo hizo."""
+        self.escribir_dataset([self._nodo("bloquear_tiempo_pensar_calendario")])
+        candidato = self._en_bandeja("apartar_ratos_pensar_semana")
+        codigo, salida = self.forja(
+            "insertar", candidato, "--sin-preguntas",
+            "--veredicto", "bloquear_tiempo_pensar_calendario|REPITE|"
+                           "no aniade ni un paso que la madre no tenga ya escrito")
+        self.assertNotIn("RECHAZADO", salida)
+        self.assertNotEqual(codigo, 0, salida)
+        lineas = comun.leer_jsonl(self.veredictos)
+        self.assertEqual(len(lineas), 1, salida)
+        self.assertEqual(lineas[0]["veredicto"], "REPITE")
+        self.assertEqual(self.nodos(), [self._nodo("bloquear_tiempo_pensar_calendario")])
+
+    def test_el_gate_que_muerde_en_la_simulacion_tampoco_deja_linea(self):
+        """El ultimo rechazo del camino, que es el mas tardio de todos."""
+        madre = self._nodo("bloquear_tiempo_pensar_calendario")
+        # Una arista rota deja el gate rojo en la simulacion sobre copia.
+        madre["nodos_siguientes"] = ["un_nodo_que_no_existe_en_ninguna_parte"]
+        self.escribir_dataset([madre])
+        candidato = self._en_bandeja("apartar_ratos_pensar_semana")
+        codigo, salida = self.forja(
+            "insertar", candidato, "--sin-preguntas",
+            "--veredicto", "bloquear_tiempo_pensar_calendario|SANO|"
+                           "no son el mismo trabajo y sus entregables no se parecen")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("RECHAZADO POR EL GATE", salida)
+        self.assertEqual(comun.leer_jsonl(self.veredictos), [], salida)
+
+    # ------------------------------------------------ 2.b la arista en cola
+
+    def test_caso_positivo_CONTINUA_con_el_otro_extremo_EN_BANDEJA_se_escribe(self):
+        """`D.29`: el veredicto se escribe AHORA y la arista se cablea DESPUES."""
+        self._en_bandeja("bloquear_tiempo_pensar_calendario")
+        candidato = self._en_bandeja("reservar_horas_pensar_agenda")
+        codigo, salida = self.forja(
+            "insertar", candidato, "--sin-preguntas",
+            "--veredicto", "bloquear_tiempo_pensar_calendario|CONTINUA|"
+                           "madre=bloquear_tiempo_pensar_calendario|"
+                           "el hijo despliega en tres pasos lo que la madre nombra "
+                           "en una sola linea de su paso 2")
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("ARISTA EN COLA", salida)
+        lineas = comun.leer_jsonl(self.veredictos)
+        self.assertEqual(len(lineas), 1, salida)
+        self.assertEqual(lineas[0]["veredicto"], "CONTINUA")
+        self.assertEqual(lineas[0]["arista_en_cola"], True)
+        # EL GRAFO NO SE CABLEA CONTRA UN ID QUE NO VIVE, que es la mitad que
+        # `D.29` protege: la linea no miente y el grafo no se rompe.
+        entrado = dict((n["id"], n) for n in self.nodos())
+        self.assertEqual(entrado["reservar_horas_pensar_agenda"]["nodos_previos"], [])
+        self.assertEqual(entrado["reservar_horas_pensar_agenda"]["nodos_siguientes"], [])
+        self.anotar("COLA", "CONTINUA con el otro extremo en bandeja: veredicto escrito, "
+                            "arista en cola")
+
+    def test_caso_negativo_si_el_otro_extremo_VIVE_la_arista_se_cablea_igual(self):
+        """Lo que se difiere es el cableado imposible, no todos los cableados."""
+        self.escribir_dataset([self._nodo("bloquear_tiempo_pensar_calendario")])
+        candidato = self._en_bandeja("reservar_horas_pensar_agenda")
+        codigo, salida = self.forja(
+            "insertar", candidato, "--sin-preguntas",
+            "--veredicto", "bloquear_tiempo_pensar_calendario|CONTINUA|"
+                           "madre=bloquear_tiempo_pensar_calendario|"
+                           "el hijo despliega en tres pasos lo que la madre nombra")
+        self.assertEqual(codigo, 0, salida)
+        self.assertNotIn("ARISTA EN COLA", salida)
+        self.assertIn("arista madre-hijo cableada", salida)
+        lineas = comun.leer_jsonl(self.veredictos)
+        self.assertNotIn("arista_en_cola", lineas[0])
+        entrado = dict((n["id"], n) for n in self.nodos())
+        self.assertEqual(entrado["reservar_horas_pensar_agenda"]["nodos_previos"],
+                         ["bloquear_tiempo_pensar_calendario"])
+
+    def test_la_clase_sigue_siendo_CONTINUA_y_no_se_degrada_a_SANO(self):
+        """La vara de `6.1` no se mueve: escribir `SANO` seria caida de CLASE."""
+        self._en_bandeja("bloquear_tiempo_pensar_calendario")
+        candidato = self._en_bandeja("reservar_horas_pensar_agenda")
+        self.forja("insertar", candidato, "--sin-preguntas",
+                   "--veredicto", "bloquear_tiempo_pensar_calendario|CONTINUA|"
+                                  "madre=bloquear_tiempo_pensar_calendario|"
+                                  "el hijo despliega lo que la madre nombra")
+        lineas = comun.leer_jsonl(self.veredictos)
+        self.assertEqual(lineas[0]["veredicto"], "CONTINUA")
+        self.assertEqual(lineas[0]["arista"],
+                         "bloquear_tiempo_pensar_calendario > reservar_horas_pensar_agenda")
+
+    def test_la_guarda_de_D8_SIGUE_MORDIENDO_un_CONTINUA_sin_razon(self):
+        """Y al morder tampoco deja linea: las dos mitades a la vez."""
+        self._en_bandeja("bloquear_tiempo_pensar_calendario")
+        candidato = self._en_bandeja("reservar_horas_pensar_agenda")
+        codigo, salida = self.forja(
+            "insertar", candidato, "--sin-preguntas",
+            "--veredicto", "bloquear_tiempo_pensar_calendario|CONTINUA|"
+                           "madre=bloquear_tiempo_pensar_calendario|   ")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("sin razon escrita", salida)
+        self.assertEqual(comun.leer_jsonl(self.veredictos), [], salida)
+
+    def test_un_id_que_no_esta_NI_EN_EL_GRAFO_NI_EN_BANDEJA_se_sigue_rechazando(self):
+        """Una arista en cola tiene los dos extremos escritos en alguna parte."""
+        self.escribir_dataset([self._nodo("bloquear_tiempo_pensar_calendario")])
+        candidato = self._en_bandeja("reservar_horas_pensar_agenda")
+        codigo, salida = self.forja(
+            "insertar", candidato, "--sin-preguntas",
+            "--veredicto", "bloquear_tiempo_pensar_calendario|SANO|"
+                           "no son el mismo trabajo ni se solapan en su entregable",
+            "--veredicto", "nodo_que_nadie_escribio_nunca|CONTINUA|"
+                           "madre=nodo_que_nadie_escribio_nunca|"
+                           "el hijo despliega lo que la madre nombra")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("ni en el grafo ni en las bandejas", salida)
+        self.assertEqual(comun.leer_jsonl(self.veredictos), [], salida)
+
+    def test_una_lectura_declarada_contra_un_candidato_de_bandeja_entra_en_cola(self):
+        """`D.37` y `D.29` a la vez: la serie se declara aunque la parte espere."""
+        self._en_bandeja("revisar_presupuesto_compras_trimestre",
+                         texto=("reunir al equipo cada trimestre para repasar el "
+                                "presupuesto de compras y firmar las desviaciones"),
+                         pasos=["Convocar al equipo de compras.",
+                                "Repasar las partidas del trimestre.",
+                                "Firmar cada desviacion encontrada."])
+        candidato = self._en_bandeja("reservar_horas_pensar_agenda")
+        codigo, salida = self.forja(
+            "insertar", candidato, "--sin-preguntas",
+            "--veredicto", "revisar_presupuesto_compras_trimestre|CONTINUA|"
+                           "madre=reservar_horas_pensar_agenda|"
+                           "la madre nombra el repaso trimestral en su paso 2 y el hijo "
+                           "lo despliega en tres pasos que ella no tiene")
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("DECLARADOS POR LECTURA", salida)
+        self.assertIn("ARISTA EN COLA", salida)
+        lineas = comun.leer_jsonl(self.veredictos)
+        self.assertEqual(lineas[0]["levantada_por"], ["lectura declarada"])
+        self.assertEqual(lineas[0]["arista_en_cola"], True)
+
+
+
+class PruebaAnotacionDeclarada(BaseForja):
+    """La operacion que anota una linea YA ESCRITA de la bitacora.
+
+    `EXTRACTOR.md` 14 pone `bitacora/` bajo la aduana y prohibe tocarla a mano; el
+    manual, principio 6, manda corregir sin borrar. **Entre las dos quedaba un
+    hueco: una linea ya escrita que hay que marcar no tenia via.** La `ACTA 27`
+    `5.2` lo encargo con estas palabras: *se marcan por operacion, con su razon,
+    igual que hiciste con `corregir`*.
+    """
+
+    MARCA = "CORRECCION DECLARADA"
+
+    def _una_linea(self, candidato="recorrer_rueda_hacer_cosas_equipo",
+                   vecino="recorrer_rueda_conscientemente_cultura_equipo",
+                   clase="CONTINUA", razon="la madre lo nombra en su paso 4"):
+        return {"fecha": "2026-09-16", "candidato": candidato, "vecino": vecino,
+                "huella_candidato": "aaaa", "huella_vecino": "bbbb",
+                "senales": {}, "levantada_por": ["lectura declarada"],
+                "veredicto": clase, "razon": razon,
+                "arista": "%s > %s" % (vecino, candidato)}
+
+    def _un_nodo_vivo(self, identificador):
+        return {"id": identificador, "titulo": identificador.replace("_", " "),
+                "resumen_teorico": "un texto cualquiera de " + identificador,
+                "condiciones_activacion": "cuando toque", "entregable_esperado": "algo",
+                "pasos_accionables": ["Uno.", "Dos."], "dominio": "gestion",
+                "estado": "vivo",
+                "fuentes": [{"clave": "manual_sistema_conocimiento",
+                             "fecha": "2026-09-16"}],
+                "denominaciones": {"nombre_largo": identificador.replace("_", " "),
+                                   "otros_idiomas": [], "sigla": ""},
+                "ids_alias": [], "nodos_previos": [], "nodos_siguientes": [],
+                "atribuciones": []}
+
+    def _anotar(self, *argumentos):
+        return self.forja("anotar", *argumentos)
+
+    def test_la_anotacion_se_escribe_y_la_razon_vieja_sigue_entera(self):
+        vieja = self._una_linea()
+        comun.escribir_jsonl(self.veredictos, [self._una_linea(clase="SANO"), vieja])
+        texto = (self.MARCA + " del 16 sep 2026: esta linea la escribio una corrida "
+                 "que imprimio RECHAZADO y no inserto nada.")
+        codigo, salida = self._anotar(
+            "--linea", "2", "--anade", texto,
+            "--razon", "la corrida imprimio NADA SE INSERTO en la misma salida")
+        self.assertEqual(codigo, 0, salida)
+        filas = comun.leer_jsonl(self.veredictos)
+        self.assertEqual(len(filas), 2)
+        self.assertIn(vieja["razon"], filas[1]["razon"])
+        self.assertIn(texto, filas[1]["razon"])
+        self.assertEqual(filas[1]["anotaciones"][0]["texto"], texto)
+        self.anotar("ANOTAR", "una linea de la bitacora se marca por operacion, "
+                              "con su razon y sin borrar")
+
+    def test_caso_positivo_ninguna_otra_linea_se_toca(self):
+        """La bitacora se reescribe entera: que solo cambie una es una medida."""
+        primera = self._una_linea(clase="SANO", razon="no son el mismo trabajo")
+        tercera = self._una_linea(candidato="otro_nodo", clase="SANO",
+                                  razon="tampoco son el mismo trabajo")
+        comun.escribir_jsonl(self.veredictos, [primera, self._una_linea(), tercera])
+        codigo, salida = self._anotar(
+            "--linea", "2",
+            "--anade", self.MARCA + " del 16 sep 2026: corrida no consumada, no inserto.",
+            "--razon", "la corrida imprimio NADA SE INSERTO")
+        self.assertEqual(codigo, 0, salida)
+        filas = comun.leer_jsonl(self.veredictos)
+        self.assertEqual(filas[0], primera)
+        self.assertEqual(filas[2], tercera)
+        self.assertIn("Las otras 2, intactas", salida)
+
+    def test_caso_positivo_ni_la_clase_ni_el_par_ni_las_huellas_se_mueven(self):
+        """Cambiar un veredicto es volver a juzgar el par, no anotar su linea."""
+        vieja = self._una_linea()
+        comun.escribir_jsonl(self.veredictos, [vieja])
+        codigo, salida = self._anotar(
+            "--linea", "1",
+            "--anade", self.MARCA + " del 16 sep 2026: corrida no consumada, no inserto.",
+            "--razon", "la corrida imprimio NADA SE INSERTO")
+        self.assertEqual(codigo, 0, salida)
+        nueva = comun.leer_jsonl(self.veredictos)[0]
+        for campo in ("candidato", "vecino", "veredicto", "arista", "fecha",
+                      "huella_candidato", "huella_vecino", "senales", "levantada_por"):
+            self.assertEqual(nueva.get(campo), vieja.get(campo), campo)
+
+    def test_no_consumada_saca_la_linea_de_la_vigencia_y_deja_su_cuenta(self):
+        """`ACTA 27` `5.3.b`: las cuatro fantasma desaparecen al declararse."""
+        comun.escribir_jsonl(self.veredictos, [self._una_linea()])
+        self.escribir_dataset([])
+        antes = self.forja("rancios")
+        self.assertIn("NODO IDO", antes[1])
+        codigo, salida = self._anotar(
+            "--linea", "1",
+            "--anade", self.MARCA + " del 16 sep 2026: corrida no consumada, no inserto.",
+            "--razon", "la corrida imprimio NADA SE INSERTO",
+            "--no-consumada")
+        self.assertEqual(codigo, 0, salida)
+        despues = self.forja("rancios")
+        self.assertNotIn("NODO IDO", despues[1])
+        # LA GUARDA QUE NO MUERDE ES CIFRA: la linea sale de la medida pero NO
+        # sale de la cuenta.
+        self.assertIn("NO CONSUMADAS y por eso no medidas: 1", despues[1])
+
+    def test_caso_positivo_una_linea_SIN_marcar_sigue_mordiendo(self):
+        """Una guarda que se afloja para todos no es una guarda."""
+        comun.escribir_jsonl(self.veredictos, [self._una_linea()])
+        self.escribir_dataset([])
+        codigo, salida = self.forja("rancios")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("NODO IDO", salida)
+        self.assertNotIn("NO CONSUMADAS", salida)
+
+    def test_sin_la_marca_de_D35_la_anotacion_no_corre(self):
+        comun.escribir_jsonl(self.veredictos, [self._una_linea()])
+        codigo, salida = self._anotar(
+            "--linea", "1",
+            "--anade", "esta linea no se consumo, la escribio una corrida rechazada",
+            "--razon", "la corrida imprimio NADA SE INSERTO")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("no se declara como lo que es", salida)
+        self.assertEqual(comun.leer_jsonl(self.veredictos), [self._una_linea()])
+
+    def test_la_marca_de_VIGENCIA_DECLARADA_tambien_vale_y_no_borra_el_hallazgo(self):
+        """`D.15` segunda salida: se declara por que sigue valiendo.
+
+        **Y la declaracion NO retira el hallazgo.** Cambiar lo que la guarda
+        considera `RANCIO` seria mover la vara de `D.15`, y eso se propone a
+        Alexis, no se hace en una vuelta.
+        """
+        linea = self._una_linea(clase="SANO", razon="no son el mismo trabajo")
+        linea["huella_vecino"] = "una_huella_vieja"
+        comun.escribir_jsonl(self.veredictos, [linea])
+        self.escribir_dataset([self._un_nodo_vivo("recorrer_rueda_hacer_cosas_equipo"),
+                               self._un_nodo_vivo(
+                                   "recorrer_rueda_conscientemente_cultura_equipo")])
+        antes = self.forja("rancios")
+        self.assertIn("RANCIO", antes[1])
+        codigo, salida = self._anotar(
+            "--linea", "1",
+            "--anade", "VIGENCIA DECLARADA del 16 sep 2026: sigue valiendo porque el "
+                       "unico cambio fue prosa aniadida al resumen_teorico.",
+            "--razon", "la operacion corregir solo toca resumen_teorico")
+        self.assertEqual(codigo, 0, salida)
+        despues = self.forja("rancios")
+        self.assertIn("RANCIO", despues[1])
+        self.assertIn("VIGENCIA DECLARADA",
+                      comun.leer_jsonl(self.veredictos)[0]["razon"])
+
+    def test_la_vigencia_mide_GRAFO_MAS_BANDEJAS_y_no_solo_el_grafo(self):
+        """`D.38.4` y `D.38.5`: un vecino de bandeja no se fue, aun no ha llegado."""
+        nodo = self._un_nodo_vivo("recorrer_rueda_hacer_cosas_equipo")
+        vecino = self._un_nodo_vivo("recorrer_rueda_conscientemente_cultura_equipo")
+        linea = self._una_linea(clase="SANO", razon="no son el mismo trabajo")
+        linea["huella_candidato"] = comun.huella_de_nodo(nodo)
+        linea["huella_vecino"] = comun.huella_de_nodo(vecino)
+        comun.escribir_jsonl(self.veredictos, [linea])
+        self.escribir_dataset([nodo])
+        carpeta = os.path.join(self.bandeja, "un_lote")
+        os.makedirs(carpeta)
+        comun.escribir_texto(os.path.join(carpeta, vecino["id"] + ".json"),
+                             json.dumps(vecino, ensure_ascii=False))
+        codigo, salida = self.forja("rancios")
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("BLOQUE DE VIGENCIA VERDE", salida)
+
+    def test_caso_positivo_un_vecino_que_NO_esta_en_ninguna_de_las_dos_sigue_IDO(self):
+        """Ensanchar la poblacion no es dejar de mirar."""
+        nodo = self._un_nodo_vivo("recorrer_rueda_hacer_cosas_equipo")
+        linea = self._una_linea(clase="SANO", razon="no son el mismo trabajo")
+        linea["huella_candidato"] = comun.huella_de_nodo(nodo)
+        linea["huella_vecino"] = "lo_que_sea"
+        comun.escribir_jsonl(self.veredictos, [linea])
+        self.escribir_dataset([nodo])
+        codigo, salida = self.forja("rancios")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("NODO IDO", salida)
+
+    def test_la_huella_de_un_nodo_VACIO_no_es_una_huella(self):
+        """`D.15` ya tiene su casilla: SIN HUELLA, incomprobable y declarado."""
+        nodo = self._un_nodo_vivo("recorrer_rueda_hacer_cosas_equipo")
+        vecino = self._un_nodo_vivo("recorrer_rueda_conscientemente_cultura_equipo")
+        linea = self._una_linea(clase="SANO", razon="no son el mismo trabajo")
+        linea["huella_candidato"] = comun.huella_de_nodo(nodo)
+        linea["huella_vecino"] = comun.huella_de_nodo({})
+        comun.escribir_jsonl(self.veredictos, [linea])
+        self.escribir_dataset([nodo, vecino])
+        codigo, salida = self.forja("rancios")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("SIN HUELLA", salida)
+        self.assertIn("es la de un nodo VACIO", salida)
+
+    def test_sin_razon_escrita_no_se_anota(self):
+        comun.escribir_jsonl(self.veredictos, [self._una_linea()])
+        codigo, salida = self._anotar(
+            "--linea", "1",
+            "--anade", self.MARCA + " del 16 sep 2026: corrida no consumada, no inserto.",
+            "--razon", "   ")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("sin razon escrita", salida)
+
+    def test_una_linea_que_no_existe_es_rechazo(self):
+        comun.escribir_jsonl(self.veredictos, [self._una_linea()])
+        codigo, salida = self._anotar(
+            "--linea", "9",
+            "--anade", self.MARCA + " del 16 sep 2026: corrida no consumada, no inserto.",
+            "--razon", "la corrida imprimio NADA SE INSERTO")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("esa linea no existe", salida)
+
+    def test_la_misma_anotacion_no_se_declara_dos_veces(self):
+        comun.escribir_jsonl(self.veredictos, [self._una_linea()])
+        texto = self.MARCA + " del 16 sep 2026: corrida no consumada, no inserto nada."
+        primera = self._anotar("--linea", "1", "--anade", texto,
+                               "--razon", "la corrida imprimio NADA SE INSERTO")
+        self.assertEqual(primera[0], 0, primera[1])
+        segunda = self._anotar("--linea", "1", "--anade", texto,
+                               "--razon", "la corrida imprimio NADA SE INSERTO")
+        self.assertEqual(segunda[0], 1, segunda[1])
+        self.assertIn("ya esta escrita", segunda[1])
+
+    def test_el_guion_largo_tumba_la_anotacion(self):
+        comun.escribir_jsonl(self.veredictos, [self._una_linea()])
+        codigo, salida = self._anotar(
+            "--linea", "1",
+            # EL GUION LARGO SE CONSTRUYE, NO SE TECLEA: el barrido de esta casa
+            # es sobre el repo entero y tumbaria el propio fichero de pruebas.
+            "--anade", self.MARCA + " del 16 sep 2026: corrida " + chr(0x2014)
+                       + " no consumada, no inserto nada.",
+            "--razon", "la corrida imprimio NADA SE INSERTO")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("guiones largos", salida)
+
+    def test_esta_operacion_no_toca_el_dataset(self):
+        nodo = {"id": "recorrer_rueda_hacer_cosas_equipo",
+                "titulo": "recorrer la rueda", "resumen_teorico": "un texto",
+                "condiciones_activacion": "cuando toque", "entregable_esperado": "algo",
+                "pasos_accionables": ["Uno.", "Dos."], "dominio": "gestion",
+                "estado": "vivo",
+                "fuentes": [{"clave": "manual_sistema_conocimiento",
+                             "fecha": "2026-09-16"}],
+                "denominaciones": {"nombre_largo": "recorrer la rueda",
+                                   "otros_idiomas": [], "sigla": ""},
+                "ids_alias": [], "nodos_previos": [], "nodos_siguientes": [],
+                "atribuciones": []}
+        self.escribir_dataset([nodo])
+        self.assertEqual(comun.leer_jsonl(self.veredictos), [])
+        comun.escribir_jsonl(self.veredictos, [self._una_linea()])
+        codigo, salida = self._anotar(
+            "--linea", "1",
+            "--anade", self.MARCA + " del 16 sep 2026: corrida no consumada, no inserto.",
+            "--razon", "la corrida imprimio NADA SE INSERTO")
+        self.assertEqual(codigo, 0, salida)
+        self.assertEqual(self.nodos(), [nodo])
+
+
+
+class PruebaVigenciaNoEsGuarda(BaseForja):
+    """`D.15` DICE QUE LA VIGENCIA NO PONE NADA EN ROJO, Y EL CIERRE LA TENIA DENTRO.
+
+    `scripts/cerrar_reporte.py` metia `forja.py rancios` entre las guardas cuyo
+    fallo devuelve `CIERRE EN ROJO`. `D.15` dice lo contrario con estas palabras:
+    *se relee con el texto de hoy, o se declara por que sigue valiendo. Las dos
+    cosas las hace una persona, y por eso esto NO pone el gate en rojo.*
+
+    **ENTRE UNA REGLA ESCRITA Y UN CODIGO QUE LA CONTRADICE MANDA LA REGLA**
+    (`ACTA 27` `5.3.a`).
+
+    Y NO SE AFLOJA: `rancios` sigue corriendo, sigue imprimiendo sus hallazgos y
+    **el cierre sigue publicando su cuenta.** *La guarda que no muerde es cifra*
+    (cosecha `7.C`). Lo unico que cambia es que **contar una cola no es caerse.**
+
+    EL FRENO DE RECURSION, y va dicho porque se nota al leer: el cierre de vuelta
+    corre `tests/test_aceptacion.py`, que es ESTE fichero. Estas dos pruebas lo
+    llaman, asi que marcan el entorno del hijo y **se saltan a si mismas cuando
+    ven la marca puesta.** Un nivel de anidamiento, no infinitos, y el cierre que
+    se mide por dentro sigue siendo el de verdad.
+    """
+
+    MARCA_ANIDADA = "FORJA_PRUEBA_DE_CIERRE"
+
+    def _un_nodo(self, identificador="recorrer_rueda_hacer_cosas_equipo"):
+        return {"id": identificador, "titulo": identificador.replace("_", " "),
+                "resumen_teorico": "un texto cualquiera de " + identificador,
+                "condiciones_activacion": "cuando toque", "entregable_esperado": "algo",
+                "pasos_accionables": ["Uno.", "Dos."], "dominio": "gestion",
+                "estado": "vivo",
+                "fuentes": [{"clave": "manual_sistema_conocimiento",
+                             "fecha": "2026-09-16"}],
+                "denominaciones": {"nombre_largo": identificador.replace("_", " "),
+                                   "otros_idiomas": [], "sigla": ""},
+                "ids_alias": [], "nodos_previos": [], "nodos_siguientes": [],
+                "atribuciones": []}
+
+    def _con_un_rancio(self, nodo=None):
+        nodo = nodo or self._un_nodo()
+        self.escribir_dataset([nodo])
+        comun.escribir_jsonl(self.veredictos, [{
+            "fecha": "2026-09-13", "candidato": nodo["id"], "vecino": nodo["id"],
+            "huella_candidato": "una_huella_que_ya_no_es",
+            "huella_vecino": "una_huella_que_ya_no_es",
+            "senales": {}, "levantada_por": ["lectura declarada"],
+            "veredicto": "SANO", "razon": "no son el mismo trabajo", "arista": ""}])
+
+    def _cerrar(self):
+        entorno = dict(self.entorno)
+        entorno[self.MARCA_ANIDADA] = "1"
+        proceso = subprocess.Popen(
+            [sys.executable, os.path.join("scripts", "cerrar_reporte.py")],
+            cwd=RAIZ, env=entorno,
+            stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        crudo = proceso.communicate()[0]
+        return proceso.returncode, crudo.decode("utf-8", "replace")
+
+    def test_la_vigencia_en_rojo_por_su_cuenta_SIGUE_devolviendo_1(self):
+        """La guarda no se afloja: sigue mordiendo cuando se la llama sola."""
+        self._con_un_rancio()
+        codigo, salida = self.forja("rancios")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("RANCIO", salida)
+        self.anotar("VIGENCIA", "la vigencia muerde sola y NO tumba el cierre (D.15)")
+
+    def test_el_cierre_NO_se_pone_en_rojo_por_ella_Y_SIGUE_publicando_su_cuenta(self):
+        """Si el arreglo hace que la cuenta deje de imprimirse, esta mal hecho."""
+        if os.environ.get(self.MARCA_ANIDADA):
+            self.skipTest("corriendo DENTRO del cierre: freno de recursion")
+        self._con_un_rancio()
+        _codigo, salida = self._cerrar()
+        # LA CUENTA SIGUE SALIENDO, que es la mitad que no se puede perder.
+        self.assertIn("vigencia de los veredictos (D.15)", salida)
+        self.assertIn("BLOQUE DE VIGENCIA", salida)
+        self.assertIn("LA VIGENCIA TIENE COLA", salida)
+        # Y NO ENTRA EN LA LISTA DE LOS QUE TUMBAN, que es lo que se mide aqui.
+        #
+        # NO se mide `codigo == 0`, y va dicho: el cierre que esta prueba lanza
+        # corre contra el taller de usar y tirar, donde el gate tiene un dataset
+        # de un solo nodo y la prueba de aceptacion anidada se salta la mitad de
+        # sus casos. Esos dos pueden caerse por el taller y no por la vigencia.
+        # **La afirmacion exacta es que la vigencia NO figura entre los caidos.**
+        for linea in salida.splitlines():
+            if linea.startswith("CIERRE EN ROJO. No pasa:"):
+                self.assertNotIn("vigencia", linea)
+
+    def test_caso_positivo_el_gate_en_rojo_SI_tumba_el_cierre(self):
+        """Una vigencia que no tumba no puede volver blando a todo lo demas."""
+        if os.environ.get(self.MARCA_ANIDADA):
+            self.skipTest("corriendo DENTRO del cierre: freno de recursion")
+        roto = self._un_nodo()
+        roto["nodos_siguientes"] = ["un_nodo_que_no_existe_en_ninguna_parte"]
+        self._con_un_rancio(roto)
+        codigo, salida = self._cerrar()
+        self.assertNotEqual(codigo, 0, salida)
+        self.assertIn("CIERRE EN ROJO", salida)
+        self.assertIn("gate de integridad", salida)
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
@@ -2636,7 +3206,10 @@ def main():
              PruebaTallado,
              PruebaCensoDeRutas,
              PruebaAduanaMideBandejas,
-             PruebaCorreccionDeclarada]
+             PruebaCorreccionDeclarada,
+             PruebaInsercionAtomica,
+             PruebaAnotacionDeclarada,
+             PruebaVigenciaNoEsGuarda]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -2682,6 +3255,12 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaCensoDeRutas)._tests))
     print("  D.38.5 en la aduana, que es donde se decide: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaAduanaMideBandejas)._tests))
+    print("  D.29 en la aduana: la insercion es atomica y la arista espera en cola: "
+          "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaInsercionAtomica)._tests))
+    print("  la linea ya escrita de la bitacora se marca por operacion, sin borrar: "
+          "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaAnotacionDeclarada)._tests))
+    print("  D.15: la vigencia es COLA DE TRABAJO y no guarda que tumbe el cierre: "
+          "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaVigenciaNoEsGuarda)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))
