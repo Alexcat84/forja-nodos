@@ -575,3 +575,10 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | establecer_credibilidad_pericia_humildad | nombre_largo | Demostrar pericia y humildad: la segunda pieza de la persuasion, con la salida para quien no tiene todavia historial | castellano | - |
 | 2026-09-16 | establecer_credibilidad_pericia_humildad | otro_idioma | demonstrate expertise and humility | ingles | - |
 | 2026-09-16 | establecer_credibilidad_pericia_humildad | otro_idioma | ethos | griego | - |
+| 2026-09-16 | compartir_logica_mostrar_razonamiento | nombre_largo | Enseña tus operaciones: la tercera pieza de la persuasion, y la trampa de dar por evidente lo que sabes a fondo | castellano | - |
+| 2026-09-16 | compartir_logica_mostrar_razonamiento | otro_idioma | show your work | ingles | - |
+| 2026-09-16 | compartir_logica_mostrar_razonamiento | otro_idioma | logos | griego | - |
+| 2026-09-16 | minimizar_impuesto_colaboracion_equipo | nombre_largo | El impuesto de colaboracion: echartelo encima para que tu equipo tenga mas tiempo de ejecutar, con las tres cosas que el libro dice haber aprendido sobre ese equilibrio | castellano | - |
+| 2026-09-16 | minimizar_impuesto_colaboracion_equipo | otro_idioma | minimize the collaboration tax | ingles | - |
+| 2026-09-16 | proteger_tiempo_equipo_jefe | nombre_largo | No malgastes el tiempo de tu equipo: la primera de las tres cosas del equilibrio, con el retrato de como lo hacia Sheryl Sandberg | castellano | - |
+| 2026-09-16 | proteger_tiempo_equipo_jefe | otro_idioma | don't waste your team's time | ingles | - |
