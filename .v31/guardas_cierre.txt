@@ -1,0 +1,15 @@
+$ python forja.py gate
+  GATE VERDE.
+    nodos verificados: 267
+$ python forja.py guiones
+  BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+$ python forja.py resolutor
+  nodos vivos: 267
+  nodos deprecados (archivo): 0
+  alias registrados: 0
+$ python tests/test_aceptacion.py
+    total: 200 pruebas, 0 fallos, 0 errores
+$ python scripts/tallar_reporte.py --estricto
+  TALLADO VERDE: las 59 tabla(s) comprobables son las de su instrumento, celda a celda.
+$ python scripts/censar_rutas.py
+  CENSO VERDE: las 480 rutas publicadas sostienen lo que dicen sostener.

@@ -1,0 +1,20 @@
+| lo que queda | cifra del encargo | **cifra que mido hoy** | estado |
+|---|---:|---:|---|
+| arista en cola `crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas` | 1 | **0** | **CERRADA HOY**: el hijo entro en `X.4` y la aduana cablo la arista en el acto. Los dos extremos en el GRAFO |
+| arista en cola `desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario` | 1 | **1** | **SIGUE ABIERTA**: la cierra que entre la MADRE, que esta en bandeja |
+| **las aristas en cola, contadas TODAS y no solo las dos que el encargo nombra** | 2 | **1** de **4** escritas | **ABIERTAS 1**, y las nombro debajo |
+| las entradillas de `LISTEN`, `CLARIFY` y `DEBATE` de `cap_07` sin nodo | 3 de 7 | **3** de **7** | **NADA la cierra**: adjudicado que es la consecuencia buena de `EXTRACTOR.md` 9 (`ACTA 29` `5`). Registro, no deuda |
+| `L221` de `cap_07`, *Your job as a boss is to turn on that rock tumbler* | 1 | **1** tramo | **NO se toca**: `cap_07` cerrado en insercion y reabrirlo pide decision de alcance |
+| el hueco de transcripcion de `L153` | 1 modo de 3 | **1** de **3** | sigue **SIN VIA**: con un solo ejemplar no se construye |
+| `cap_04` releido, candidatos y pasos | 6 y 48 | **6** y **48** | **SIGUE SIN CABER**, y lo declaro otra vez con su motivo |
+| la frontera por capitulo con las `QUESTIONS TO CONSIDER` | 14 de 17 | **14** de **17** | la vuelta que mine un capitulo del lote 5 |
+| las `8` lineas `SIN HUELLA` de `D.15` | 8, las 8 declaradas | **8**, **las 8 declaradas** | **CERRADA**. Lo que sigue imprimiendo `8` es el instrumento, no el trabajo |
+| bandeja del lote 4 | 89 | **78** | la insercion. **`11` menos que al abrir** |
+| **de esa bandeja, lo que queda de `cap_11`** | (no la da) | **3** | **NUEVA fila**: el tramo cerro en el `11` de `14` |
+| lote 5 | 3 | **3** | **NO TOCADO**, y es deliberado (`D.39`) |
+
+LAS ARISTAS EN COLA QUE SIGUEN ABIERTAS, CONTADAS DE LA BITACORA Y NO DE LA MEMORIA
+
+| linea | arista en cola | que la cierra |
+|---:|---|---|
+| `371` | `desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario` | que entre la MADRE, hoy en bandeja |
