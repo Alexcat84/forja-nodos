@@ -1,3 +1,83 @@
+============================================================================
+TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+============================================================================
+tablas que declaran instrumento : 95
+  talladas, celda a celda       : 42
+  que DIFIEREN de su instrumento: 0
+  con la ruta VACIA             : 0   (cero bytes, 7.B)
+  sin poder comprobar           : 0
+  que CITAN y no reproducen     : 53   (declaradas PARCIAL)
+      linea 27198 de docs/loop/REPORTE.md
+      linea 27324 de docs/loop/REPORTE.md
+      linea 27622 de docs/loop/REPORTE.md
+      linea 28467 de docs/loop/REPORTE.md
+      linea 29796 de docs/loop/REPORTE.md
+      linea 29981 de docs/loop/REPORTE.md
+      linea 30032 de docs/loop/REPORTE.md
+      linea 30074 de docs/loop/REPORTE.md
+      linea 30142 de docs/loop/REPORTE.md
+      linea 30279 de docs/loop/REPORTE.md
+      linea 30431 de docs/loop/REPORTE.md
+      linea 30575 de docs/loop/REPORTE.md
+      linea 30721 de docs/loop/REPORTE.md
+      linea 31003 de docs/loop/REPORTE.md
+      linea 31050 de docs/loop/REPORTE.md
+      linea 31161 de docs/loop/REPORTE.md
+      linea 31265 de docs/loop/REPORTE.md
+      linea 31308 de docs/loop/REPORTE.md
+      linea 31339 de docs/loop/REPORTE.md
+      linea 31365 de docs/loop/REPORTE.md
+      linea 31524 de docs/loop/REPORTE.md
+      linea 31700 de docs/loop/REPORTE.md
+      linea 31776 de docs/loop/REPORTE.md
+      linea 31831 de docs/loop/REPORTE.md
+      linea 31845 de docs/loop/REPORTE.md
+      linea 31892 de docs/loop/REPORTE.md
+      linea 31903 de docs/loop/REPORTE.md
+      linea 31930 de docs/loop/REPORTE.md
+      linea 31979 de docs/loop/REPORTE.md
+      linea 32049 de docs/loop/REPORTE.md
+      linea 32072 de docs/loop/REPORTE.md
+      linea 32120 de docs/loop/REPORTE.md
+      linea 32226 de docs/loop/REPORTE.md
+      linea 32258 de docs/loop/REPORTE.md
+      linea 32280 de docs/loop/REPORTE.md
+      linea 32320 de docs/loop/REPORTE.md
+      linea 32435 de docs/loop/REPORTE.md
+      linea 32471 de docs/loop/REPORTE.md
+      linea 32510 de docs/loop/REPORTE.md
+      linea 32599 de docs/loop/REPORTE.md
+      linea 32670 de docs/loop/REPORTE.md
+      linea 32684 de docs/loop/REPORTE.md
+      linea 33020 de docs/loop/REPORTE.md
+      linea 33088 de docs/loop/REPORTE.md
+      linea 33129 de docs/loop/REPORTE.md
+      linea 33157 de docs/loop/REPORTE.md
+      linea 33257 de docs/loop/REPORTE.md
+      linea 33306 de docs/loop/REPORTE.md
+      linea 33375 de docs/loop/REPORTE.md
+      linea 33398 de docs/loop/REPORTE.md
+      linea 33485 de docs/loop/REPORTE.md
+      linea 33506 de docs/loop/REPORTE.md
+      linea 33523 de docs/loop/REPORTE.md
+
+TALLADO VERDE: las 42 tabla(s) comprobables son las de su instrumento, celda a celda.
+============================================================================
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+============================================================================
+rutas publicadas y censadas : 434
+  pasan                     : 434
+  CAEN                      : 0
+      PATRON                           29
+      VACIA A PROPOSITO                3
+      con contenido                    401
+      vacia por protocolo              1
+
+CENSO VERDE: las 434 rutas publicadas sostienen lo que dicen sostener.
+GATE VERDE.
+  nodos verificados: 243
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 test_a_caso_positivo_esquema_roto (__main__.PruebaA.test_a_caso_positivo_esquema_roto)
 Caso positivo: la guarda de esquema puede fallar, y falla. ... ok
 test_a_nodo_ejemplo_entra_limpio (__main__.PruebaA.test_a_nodo_ejemplo_entra_limpio) ... ok
@@ -280,7 +360,7 @@ test_la_vigencia_en_rojo_por_su_cuenta_SIGUE_devolviendo_1 (__main__.PruebaVigen
 La guarda no se afloja: sigue mordiendo cuando se la llama sola. ... ok
 
 ----------------------------------------------------------------------
-Ran 176 tests in 59.544s
+Ran 176 tests in 48.155s
 
 OK
 
@@ -314,3 +394,58 @@ PRUEBA DE ACEPTACION DE forja-nodos
 
   total: 176 pruebas, 0 fallos, 0 errores
 ========================================================================
+BLOQUE DE VIGENCIA: 34 hallazgo(s) sobre 275 veredicto(s) y 0 cita(s).
+  RANCIO 26, SIN HUELLA 8
+  lineas declaradas NO CONSUMADAS y por eso no medidas: 14
+    (las escribio una corrida que no inserto nada; ver su razon en la propia linea)
+  [RANCIO] veredicto manejar_enfado_persona_desafiada contra delimitar_franqueza_radical_cinco_noes (linea 149, 2026-09-13): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto manejar_enfado_persona_desafiada contra repartir_semana_cuarenta_horas_jefe (linea 151, 2026-09-13): el texto de su vecino 'repartir_semana_cuarenta_horas_jefe' cambio desde que se emitio (huella 5741a0fe40ead016, hoy de520028526c0f00)
+  [RANCIO] veredicto cambiar_potencial_trayectoria_crecimiento contra delimitar_franqueza_radical_cinco_noes (linea 154, 2026-09-13): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto ajustar_franqueza_oido_oyente contra delimitar_franqueza_radical_cinco_noes (linea 158, 2026-09-13): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto cuidar_persona_completa_equipo contra delimitar_franqueza_radical_cinco_noes (linea 181, 2026-09-13): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto acompaniar_mejores_equipo_socio contra delimitar_franqueza_radical_cinco_noes (linea 199, 2026-09-13): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra despedir_persona_respeto_franqueza (linea 204, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra acompaniar_mejores_equipo_socio (linea 205, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra empezar_cultura_franqueza_radical (linea 206, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra equilibrar_elogio_critica_equipo (linea 207, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra elogiar_trabajo_especifico_contexto (linea 208, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra elegir_recolocar_despedir_persona (linea 209, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra desplegar_marco_franqueza_radical (linea 210, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto decidir_momento_despedir_persona contra despedir_persona_franqueza_radical (linea 211, 2026-09-16): el texto de su vecino 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto reconocer_recompensar_gente_estable contra pedir_critica_equipo_premiarla (linea 215, 2026-09-16): el texto de su candidato 'reconocer_recompensar_gente_estable' cambio desde que se emitio (huella 3f8f1a490caf481b, hoy bbb6bfa7089e76fb)
+  [RANCIO] veredicto reconocer_recompensar_gente_estable contra reconocer_recompensar_uso_metodo (linea 216, 2026-09-16): el texto de su candidato 'reconocer_recompensar_gente_estable' cambio desde que se emitio (huella 3f8f1a490caf481b, hoy bbb6bfa7089e76fb)
+  [RANCIO] veredicto retar_superestrellas_equipo_constantemente contra despedir_persona_franqueza_radical (linea 219, 2026-09-16): el texto de su vecino 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto retar_superestrellas_equipo_constantemente contra reconocer_recompensar_gente_estable (linea 222, 2026-09-16): el texto de su vecino 'reconocer_recompensar_gente_estable' cambio desde que se emitio (huella 3f8f1a490caf481b, hoy bbb6bfa7089e76fb)
+  [RANCIO] veredicto reconocer_recompensar_gente_estable contra acompaniar_mejores_equipo_socio (linea 226, 2026-09-16): el texto de su candidato 'reconocer_recompensar_gente_estable' cambio desde que se emitio (huella 3f8f1a490caf481b, hoy bbb6bfa7089e76fb)
+  [RANCIO] veredicto retirar_etiquetas_permanentes_equipo contra delimitar_franqueza_radical_cinco_noes (linea 228, 2026-09-16): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto subir_vara_calidad_equipo contra despedir_persona_franqueza_radical (linea 234, 2026-09-16): el texto de su vecino 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto subir_vara_calidad_equipo contra delimitar_franqueza_radical_cinco_noes (linea 238, 2026-09-16): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto repartir_semana_cuarenta_horas_jefe contra repartir_semana_cuarenta_horas_jefe (linea 241, 2026-09-16): el texto de su vecino 'repartir_semana_cuarenta_horas_jefe' cambio desde que se emitio (huella 5741a0fe40ead016, hoy de520028526c0f00)
+  [RANCIO] veredicto delimitar_franqueza_radical_cinco_noes contra delimitar_franqueza_radical_cinco_noes (linea 242, 2026-09-16): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra despedir_persona_franqueza_radical (linea 243, 2026-09-16): el texto de su vecino 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto reconocer_recompensar_gente_estable contra reconocer_recompensar_gente_estable (linea 244, 2026-09-16): el texto de su vecino 'reconocer_recompensar_gente_estable' cambio desde que se emitio (huella 3f8f1a490caf481b, hoy bbb6bfa7089e76fb)
+  [SIN HUELLA] veredicto crear_cultura_escucha_equipo contra crear_obligacion_disentir_equipo (linea 252, 2026-09-16): la huella que guarda de su vecino 'crear_obligacion_disentir_equipo' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto explicar_idea_facil_comprender_oyente contra compartir_logica_mostrar_razonamiento (linea 256, 2026-09-16): la huella que guarda de su vecino 'compartir_logica_mostrar_razonamiento' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto centrar_debate_ideas_fuera_egos contra fijar_fecha_cierre_debate_equipo (linea 258, 2026-09-16): la huella que guarda de su vecino 'fijar_fecha_cierre_debate_equipo' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto centrar_debate_ideas_fuera_egos contra mantener_manos_trabajo_real_equipo (linea 260, 2026-09-16): la huella que guarda de su vecino 'mantener_manos_trabajo_real_equipo' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto centrar_debate_ideas_fuera_egos contra compartir_logica_mostrar_razonamiento (linea 261, 2026-09-16): la huella que guarda de su vecino 'compartir_logica_mostrar_razonamiento' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto centrar_debate_ideas_fuera_egos contra parar_debate_emocion_agotamiento (linea 262, 2026-09-16): la huella que guarda de su vecino 'parar_debate_emocion_agotamiento' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto centrar_debate_ideas_fuera_egos contra proteger_tiempo_equipo_jefe (linea 263, 2026-09-16): la huella que guarda de su vecino 'proteger_tiempo_equipo_jefe' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto centrar_debate_ideas_fuera_egos contra minimizar_impuesto_colaboracion_equipo (linea 264, 2026-09-16): la huella que guarda de su vecino 'minimizar_impuesto_colaboracion_equipo' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+
+Un rancio NO SE CITA COMO VIGENTE: se relee con el texto de hoy, o se
+declara por que sigue valiendo. Las dos cosas las hace una persona, y
+por eso esto no pone el gate en rojo (D.15).
+[cierre] tallado del reporte (D.41)
+[cierre] censo de rutas (D.42)
+[cierre] gate de integridad
+[cierre] barrido de guiones
+[cierre] prueba de aceptacion
+[cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda
+
+LA VIGENCIA TIENE COLA, Y ESO NO PONE EL CIERRE EN ROJO (D.15).
+Un rancio no se cita como vigente: se relee con el texto de hoy,
+o se declara por que sigue valiendo. Las dos cosas las hace una
+persona, y por eso esto no pone nada en rojo.
+
+CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).

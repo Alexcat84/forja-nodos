@@ -33274,7 +33274,7 @@ sede rota.
 | **la regla que rompi** | `EXTRACTOR.md` 2, primera linea: *un nodo entra con `python forja.py insertar candidato.json`, **uno por vez***. La lei al empezar la vuelta y la cite en mi propio `V.3.e` |
 | **por que la rompi, sin que sea excusa** | la aduana cuesta **unos cuatro minutos por candidato** y quise solapar. **El coste del instrumento es un motivo para pedir menos candidatos, no para correr dos a la vez** |
 
-> **Y LA PROPUESTA QUE SACO DE ELLA VA EN `V.7`, no aqui**, porque el extractor propone en su reporte
+> **Y LA PROPUESTA QUE SACO DE ELLA VA EN `V.8`, no aqui** (es la numero `8`), porque el extractor propone en su reporte
 > y no se adjudica nada (`EXTRACTOR.md` 14).
 
 ### V.5.g. **LA TANDA ENTERA, Y LA VUELTA CIERRA CORTA CON SU CIFRA**
@@ -33299,7 +33299,7 @@ sede rota.
 | la cifra | cuanto | de donde sale |
 |---|---:|---|
 | **la cola de lectura que queda**, pares por leer y razonar uno a uno | **77** | `.v28e/cola_por_candidato.txt`, contado del fichero |
-| **el coste del instrumento por candidato**, medido hoy en mi maquina | **unos 4 minutos** | `.v28e/insercion_01_madre.txt` y `.v28e/insercion_04_disentir.txt`, por sus marcas de tiempo |
+| **el coste del instrumento por candidato**, medido hoy en mi maquina | **unos 4 minutos**, de los cuales **63 segundos** son solo `buscar_vecinos` | `.v28e/coste_aduana_v28.txt`, con las horas de las cuatro salidas y el reloj de python sobre la pieza cara |
 
 <!-- TALLADO: parcial salida=.v28e/cola_por_candidato.txt -->
 
@@ -33469,7 +33469,7 @@ distinga una caida dentro del marcado de una fuera.*
 
 ## V.9. EL CIERRE DE LA VUELTA 28
 
-### V.9.a. LAS CUATRO GUARDAS AL CERRAR, RECORRIDAS AL CIERRE Y NO AL EMPEZAR (`EXTRACTOR.md` 4)
+### V.9.a. LAS CUATRO GUARDAS AL CERRAR, CORRIDAS AL CIERRE Y NO AL EMPEZAR (`EXTRACTOR.md` 4)
 
 | guarda | salida | de donde sale |
 |---|---|---|
@@ -33477,6 +33477,27 @@ distinga una caida dentro del marcado de una fuera.*
 | `python forja.py guiones` | `BARRIDO DE GUIONES VERDE` | `.v28e/guiones_cierre.txt` |
 | `python forja.py resolutor` | **243** vivos, `0` deprecados, `0` alias | `.v28e/resolutor_cierre.txt` |
 | `python tests/test_aceptacion.py` | **176** pruebas, `0` fallos, `0` errores | `.v28e/test_cierre_v28.txt` |
+
+### V.9.a.bis. **`python scripts/cerrar_reporte.py`, Y ES LA PRIMERA VUELTA EN QUE LA VIGENCIA NO LO TUMBA**
+
+*`D.41`: no es un tramite, es lo que comprueba que lo que publicaste es lo que midio tu instrumento.*
+
+<!-- TALLADO: parcial salida=.v28e/cierre_reporte_v28.txt -->
+
+    [cierre] tallado del reporte (D.41)
+    [cierre] censo de rutas (D.42)
+    [cierre] gate de integridad
+    [cierre] barrido de guiones
+    [cierre] prueba de aceptacion
+    [cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda
+    BLOQUE DE VIGENCIA: 34 hallazgo(s) sobre 275 veredicto(s) y 0 cita(s).
+    LA VIGENCIA TIENE COLA, Y ESO NO PONE EL CIERRE EN ROJO (D.15).
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia
+    corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**LAS DOS MITADES QUE LA `TAREA 3.a` EXIGIA, LAS DOS EN LA MISMA SALIDA:** la vigencia **corrio y
+publico su cuenta**, y **no entro en la lista de los que tumban**. La vuelta 27 cerro en rojo por
+esto mismo.
 
 ### V.9.b. LAS CINCO CIFRAS, RECOMPUTADAS AL CIERRE
 
