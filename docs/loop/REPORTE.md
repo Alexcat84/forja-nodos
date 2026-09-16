@@ -35502,3 +35502,112 @@ tecleada dentro del instrumento `.v31/cabeza.py`*.
 por desconocida en las dos direcciones (`familia_id 0.0`, `paso_contra_nodo 0.378`,
 `similitud_texto 0.233`, **las tres por debajo de su umbral**), que es otra vez `D.19`: **ninguna
 corrida iba a volver a poner a estos dos juntos.**
+
+## Y.3. **TAREA 3**: cerrar `cap_11` en insercion, los tres que quedan
+
+### Y.3.a. **LA RELECTURA DE FIDELIDAD `D.30`, ANTES DE LA PRIMERA INSERCION**
+
+*`EXTRACTOR.md` 15.4: ninguna guarda de esta casa ve un paso que yo escribi y el libro no dice, y un
+informe verde certifica que la ficha esta bien construida, **no que sus pasos sean del libro**. Los
+`25` pasos van releidos **uno a uno contra su parrafo**, no por muestra.*
+
+**EL ORDEN DEL LIBRO, GENERADO DEL DATO Y NO TECLEADO** (`D.36`), con el mismo endurecimiento que la
+`TAREA 2` le puso al lector de rangos:
+
+<!-- TALLADO: script=.v32/orden.py salida=.v32/orden_cap11.txt -->
+
+
+| # | id | lineas | pasos |
+|---:|---|---|---:|
+| 1 | `montar_tablero_kanban_medir_actividades` | `L235` a `L249` | 10 |
+| 2 | `pasear_organizacion_hallar_problemas_pequenios` | `L251` a `L269` | 9 |
+| 3 | `debatir_decidir_asuntos_cultura_evitar_delegar` | `L301` a `L305` | 6 |
+
+**LOS TRES SALEN AL DIGITO CONTRA LA TABLA DEL ENCARGO**: `L235` a `L249` con `10` pasos, `L251` a
+`L269` con `9` y `L301` a `L305` con `6`. **Cero discrepancias**, y la fila `Y LOS QUE NOMBRAN cap_11
+SIN SALIR DE EL` baja de `1` a `0` porque `integrar_peticion_critica_rutina_existente` ya no esta en
+bandeja.
+
+**Y LA RELECTURA, CON LA SALIDA DEL LIBRO PEGADA AL LADO DE CADA PASO** (`D.35`). El trozo lo saca
+`.v32/fidelidad.py` del propio `cap_11.md` **y el instrumento revienta si el ancla no esta en esa
+linea**, asi que una linea mal apuntada no puede salir publicada como buena:
+
+<!-- TALLADO: script=.v32/fidelidad.py salida=.v32/fidelidad_cap11.txt -->
+
+
+### `montar_tablero_kanban_medir_actividades`, 10 pasos, todos releidos
+
+| paso de `montar_tablero_kanban_medir_actividades` | la salida del libro, pegada por `.v32/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `239: ...you put up a board with three columns: To Do, In Progress, and Done. Then you buy a bunch of Post-its in diffe...` | **TRANSCRIPCION** |
+| `2` | `239: ...Then you buy a bunch of Post-its in different colors. The different colors represent different people or teams...` | **TRANSCRIPCION** |
+| `3` | `239: ...They write their tasks on their color of Post-it and move them around from To Do, In Progress, and Done. You c...` | **TRANSCRIPCION** |
+| `4` | `239: ...You can quickly see who's the bottleneck. It's a great way to drive personal accountability but also for every...` | **TRANSCRIPCION** |
+| `5` | `239: ...A Kanban board is different from a dashboard because it focuses activities and work in progress. It gives your...` | **TRANSCRIPCION** |
+| `6` | `241: Making progress visible to everyone gives more, not less, autonomy to the team. When it's clear to everyone wh...` | **TRANSCRIPCION** |
+| `7` | `243: Another reason why measuring activities and visualizing workflows is important is that when a business is doin...` | **TRANSCRIPCION** |
+| `8` | `245: Measuring activities and visualizing workflows will push you and your team to make sure you really understand ...` | **TRANSCRIPCION**, y se para en la primera frase: **lo que sigue en `L245` es el caso de AdSense**, y un caso no es la casa (manual 3.5) |
+| `9` | `247: Measuring activities will also create more respect between teams. It's always surprising how quick one team is...` | **TRANSCRIPCION** |
+| `10` | `249: Measuring activities and displaying them publicly also tends to lead to ratings and promotions that more consi...` | **TRANSCRIPCION**, **el que mire dos veces.** La frase de cabecera de `L249` es general; el *porque* del paso lo saca de la ultima frase del parrafo, que esta dicha sobre el equipo de Rivkin. **No lleva ni una cifra del caso** (ni el quince, ni el cuatro, ni el uno, ni los anios), asi que no es la senial barata de `3.5` |
+
+### `pasear_organizacion_hallar_problemas_pequenios`, 9 pasos, todos releidos
+
+| paso de `pasear_organizacion_hallar_problemas_pequenios` | la salida del libro, pegada por `.v32/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `255: LISTENING TO THE people who report directly to you is relatively straightforward, even if it requires time and...` | **TRANSCRIPCION** |
+| `2` | `259: ...Schedule an hour a week of walking-around time. Management by walking around is a tried-and-true technique. Ac...` | **TRANSCRIPCION**, **el periodo lo escribe el libro**, asi que no es la especie *el periodo* de `D.30` |
+| `3` | `259: ...Management by walking around is a tried-and-true technique. According to historian Stephen B. Oates, Abraham L...` | **TRANSCRIPCION** |
+| `4` | `261: Notice the things you don't notice when you're buried in work at your desk or racing, head down, from one meet...` | **TRANSCRIPCION** |
+| `5` | `261: ...Ask people who catch your attention-ideally, people you haven't talked to in a while-what they're working on. ...` | **TRANSCRIPCION** |
+| `6` | `261: ...Find some small problems and treat them like "the universe through a grain of sand." Awareness of these small ...` | **TRANSCRIPCION** |
+| `7` | `263: First they'll help you find the devil in the details. Too often a boss is the last to know when something is g...` | **TRANSCRIPCION** |
+| `8` | `265: Second, being aware of small problems and maybe even rolling up your sleeves and fixing them yourself is the b...` | **TRANSCRIPCION** |
+| `9` | `267: Third, when you show that you care about the small things that contribute to customer happiness or the quality...` | **TRANSCRIPCION** |
+
+### `debatir_decidir_asuntos_cultura_evitar_delegar`, 6 pasos, todos releidos
+
+| paso de `debatir_decidir_asuntos_cultura_evitar_delegar` | la salida del libro, pegada por `.v32/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `303: There are a number of debates and decisions that you are going to be tempted to "delegate to HR." These are of...` | **TRANSCRIPCION** |
+| `2` | `303: ...Are you going to call it a "holiday party" or a "Christmas party"? Will there be a Christmas tree there, or no...` | **TRANSCRIPCION**, **es el inventario propio del libro** (`D.27`), nombrado uno a uno: fiesta, arbol, candelabro, alcohol, la ropa interior sobre la mesa y la patada |
+| `3` | `303: ...Who's going to decide how to deal with it?` | **TRANSCRIPCION** |
+| `4` | `305: ...But if you do, the decisions that do get made by HR/employment lawyers without your humanizing influence will ...` | **TRANSCRIPCION** |
+| `5` | `305: ...If nobody makes a decision, you wind up in Lord of the Flies territory. Neither is the culture you want.` | **TRANSCRIPCION** |
+| `6` | `305: ...Neither is the culture you want.` | **TRANSCRIPCION** |
+
+| | |
+|---|---:|
+| nodos releidos | **3** |
+| pasos escritos | **25** |
+| pasos releidos contra su parrafo | **25** |
+| **PUENTE** | **0** |
+
+
+> **LOS DOS QUE MIRE DOS VECES, Y LOS DOS SON LA MISMA ESPECIE: EL CASO QUE SE COME LA DOCTRINA.**
+>
+> **`kanban` paso `8`** se para en la primera frase de `L245` y deja fuera el caso de AdSense, que
+> ocupa el resto del parrafo. **`kanban` paso `10`** hace lo mismo con el caso de Rivkin en `L249`,
+> pero se lleva de el la frase del *porque*. La senial barata de `manual 3.5` es que **el entregable
+> del caso lleve un dato del caso**, y aqui **no entra ni una cifra**: ni el quince, ni el cuatro, ni
+> el uno, ni los anios, ni el nombre de la casa. **Lo digo en vez de callarlo** porque es el borde, y
+> va a mis discutibles.
+>
+> **Y LA TERCERA ESPECIE DE `D.30` QUE NO SE ACTIVA, y digo por que en vez de darlo por hecho:**
+> `paseo` paso `2` escribe **una hora a la semana**, que es un periodo. **No es la especie *el
+> periodo* de `D.30` porque el periodo lo escribe el libro**, literal, en `L259`:
+> `Schedule an hour a week of walking-around time`. La especie se activa cuando el libro dice
+> *periodicamente* y el periodo lo pone el extractor.
+
+**`PASOS INVENTADOS POR CAPITULO`, la cifra que el auditor firma** (`AUDITOR_FORJA.md` 8.3):
+
+<!-- TALLADO: script=.v32/pasos_inventados.py salida=.v32/pasos_inventados_v32.txt -->
+
+
+| capitulo | nodos | **pasos escritos** | **PUENTE** | **PASOS INVENTADOS** |
+|---|---:|---:|---:|---:|
+| **`cap_11`** (lote 4, `scott_radical_candor`), el tramo que lo cierra | 3 | **25** | **0** | **0,00 por ciento** |
+| **total del tramo de esta vuelta** | 3 | **25** | **0** | **0,00 por ciento** |
+
+**`0,00` por ciento sobre `25` pasos. EL FRENO DE FIDELIDAD NO SE ACTIVA**, y con esto `cap_11`
+cierra su relectura entera: `142` pasos en la vuelta 31 mas `25` hoy son **`167`**, que es
+exactamente el total que `.v31/orden_cap11.txt` publico para los `14` candidatos del capitulo.
