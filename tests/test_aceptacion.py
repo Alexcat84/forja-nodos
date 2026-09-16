@@ -2165,6 +2165,176 @@ class PruebaTallado(BaseForja):
             tallar_reporte.revisar(ruta, raiz=self.taller)[0]["estado"], "TALLADA")
 
 
+class PruebaCensoDeRutas(BaseForja):
+    """D.42: LA UNIDAD DE LA RUTA ES LA CELDA.
+
+    `D.41` ata un instrumento a una TABLA entera. La vuelta 25 no cayo asi: cayo
+    publicando una ruta **por fila**, en una columna titulada *de donde sale*, que
+    apuntaba a un fichero de **cero bytes** mientras la cifra decia `2` donde el
+    instrumento da `4`. **La unidad de `D.41` es la tabla; aqui es la celda.**
+    """
+
+    def _doc(self, cuerpo, nombre="REPORTE.md"):
+        carpeta = os.path.join(self.taller, "docs", "loop")
+        if not os.path.isdir(carpeta):
+            os.makedirs(carpeta)
+        comun.escribir_texto(os.path.join(carpeta, nombre), cuerpo)
+        return [os.path.join("docs", "loop", nombre)]
+
+    def _fichero(self, ruta, cuerpo="una salida con algo dentro"):
+        entera = os.path.join(self.taller, *ruta.split("/"))
+        carpeta = os.path.dirname(entera)
+        if carpeta and not os.path.isdir(carpeta):
+            os.makedirs(carpeta)
+        comun.escribir_texto(entera, cuerpo)
+        return entera
+
+    def _censar(self, cuerpo, nombre="REPORTE.md"):
+        from scripts import censar_rutas
+        docs = self._doc(cuerpo, nombre)
+        return censar_rutas.censar(documentos=docs, raiz=self.taller)
+
+    TABLA = ("## S.10. LO QUE PASA A LA VUELTA SIGUIENTE, CON SU CIFRA Y SU SEDE\n\n"
+             "| que | cifra | de donde sale |\n|---|---|---|\n"
+             "| los pares del candidato parado | **2** por leer | `%s` |\n")
+
+    # ------------------------------------------------------------- forma (a)
+    def test_una_ruta_con_contenido_pasa(self):
+        self._fichero(".v25/cola_lectura.txt")
+        caidas, pasan = self._censar(self.TABLA % ".v25/cola_lectura.txt")
+        self.assertEqual(caidas, [])
+        self.assertEqual(pasan[0]["forma"], "con contenido")
+
+    # ------------------------------------------------------------- forma (b)
+    def test_caso_positivo_la_ruta_de_cero_bytes_tumba_y_nombra_la_celda(self):
+        """Es la caida de la vuelta 25, entera y en pequenio."""
+        self._fichero(".v25/cola_lectura.txt", "")
+        caidas, _pasan = self._censar(self.TABLA % ".v25/cola_lectura.txt")
+        self.assertEqual(len(caidas), 1)
+        self.assertEqual(caidas[0]["ruta"], ".v25/cola_lectura.txt")
+        # LA CELDA, NOMBRADA: sin esto la guarda diria "algo falla" y no donde.
+        self.assertEqual(caidas[0]["sitio"], "celda 3")
+        self.assertIn("esta y esta VACIA", caidas[0]["motivo"])
+        self.anotar("D42", "ruta de cero bytes en una celda: cazada, con su celda")
+
+    def test_una_ruta_que_no_esta_tumba_igual(self):
+        caidas, _pasan = self._censar(self.TABLA % ".v25/no_existe.txt")
+        self.assertEqual(len(caidas), 1)
+        self.assertIn("NO esta en el arbol", caidas[0]["motivo"])
+
+    def test_caso_negativo_la_marca_en_la_misma_celda_la_deja_pasar(self):
+        """`.barrido_C_con_ensayo_v16.txt` con su marca y su cita de la ACTA 15."""
+        self._fichero(".barrido_C_con_ensayo_v16.txt", "")
+        caidas, pasan = self._censar(
+            "| testigo | que es |\n|---|---|\n"
+            "| `.barrido_C_con_ensayo_v16.txt` VACIA A PROPOSITO: adjudicado en la "
+            "ACTA 15 1.9 | su testigo lo prueba |\n")
+        self.assertEqual(caidas, [])
+        self.assertIn("VACIA A PROPOSITO", pasan[0]["forma"])
+
+    def test_caso_positivo_la_marca_SIN_MOTIVO_no_vale(self):
+        """Una excusa sin motivo escrito es una excusa que se concede siempre."""
+        self._fichero(".v25/cola_lectura.txt", "")
+        caidas, _pasan = self._censar(
+            (self.TABLA % ".v25/cola_lectura.txt").replace(
+                "| `.v25", "| VACIA A PROPOSITO: | `.v25"))
+        self.assertEqual(len(caidas), 1)
+
+    def test_la_marca_de_OTRA_celda_no_cubre_esta(self):
+        """La marca va en LA MISMA celda: es lo que la hace visible junto a la cifra."""
+        self._fichero(".v25/cola_lectura.txt", "")
+        caidas, _pasan = self._censar(
+            "| que | cifra | de donde sale |\n|---|---|---|\n"
+            "| VACIA A PROPOSITO: lo digo aqui al lado | **2** | `.v25/cola_lectura.txt` |\n")
+        self.assertEqual(len(caidas), 1)
+
+    # ------------------------------------------------------------- forma (c)
+    def test_caso_negativo_un_patron_declarado_con_coincidencias_pasa(self):
+        self._fichero(".aduana_v22/A_uno.txt")
+        self._fichero(".aduana_v22/B_dos.txt")
+        caidas, pasan = self._censar(
+            "| los informes | 17 | PATRON: `.aduana_v22/*.txt` |\n"
+            "|---|---|---|\n| otra | fila | para que sea tabla |\n")
+        self.assertEqual(caidas, [])
+        self.assertIn("PATRON", pasan[0]["forma"])
+
+    def test_caso_positivo_un_patron_sin_declarar_tumba(self):
+        self._fichero(".aduana_v22/A_uno.txt")
+        caidas, _pasan = self._censar(
+            "| los informes | 17 | `.aduana_v22/*.txt` |\n"
+            "|---|---|---|\n| otra | fila | para que sea tabla |\n")
+        self.assertEqual(len(caidas), 1)
+        self.assertIn("no lo declara", caidas[0]["motivo"])
+
+    def test_caso_positivo_un_patron_sin_NI_UNA_coincidencia_tumba(self):
+        caidas, _pasan = self._censar(
+            "| los cinco | 5 | PATRON: `.frag_*.md` |\n"
+            "|---|---|---|\n| otra | fila | para que sea tabla |\n")
+        self.assertEqual(len(caidas), 1)
+        self.assertIn("NI UNA coincidencia", caidas[0]["motivo"])
+
+    def test_cero_coincidencias_puede_ser_la_cifra_si_se_declara(self):
+        """`cuarentena/_insertados/*.json` da 0 porque ahi no cuelga ningun JSON
+        suelto, y eso es exactamente lo que la fila publica."""
+        caidas, pasan = self._censar(
+            "| sueltos en la raiz | 0 | PATRON: `cuarentena/_insertados/*.json` "
+            "VACIA A PROPOSITO: cero coincidencias ES la cifra |\n"
+            "|---|---|---|\n| otra | fila | para que sea tabla |\n")
+        self.assertEqual(caidas, [])
+
+    # ------------------------------------------- lo que el censo NO cuenta
+    def test_caso_positivo_una_ruta_NOMBRADA_no_es_una_ruta_publicada(self):
+        """*el barrido tumbo `.c9/mk.py`* no ofrece nada como origen de una cifra.
+
+        Censar toda mencion daria 42 celdas que marcar en dos documentos de treinta
+        mil lineas, y **una marca que se pone cuarenta veces deja de leerse.**
+        """
+        caidas, pasan = self._censar(
+            "El barrido de guiones tumbo `.c9/mk.py`, el guion de un solo uso con el "
+            "que escribo, y por eso lo borre en esa misma vuelta sin mas.\n")
+        self.assertEqual(caidas, [])
+        self.assertEqual(pasan, [])
+
+    def test_pero_la_celda_que_ES_la_ruta_si_se_cuenta(self):
+        """Es la forma de la columna *de donde sale*, y es donde cayo la vuelta 25."""
+        caidas, _pasan = self._censar(
+            "| que | cifra | de donde sale |\n|---|---|---|\n"
+            "| lo que sea | **9** | `.v25/no_existe.txt` |\n")
+        self.assertEqual(len(caidas), 1)
+
+    def test_un_comando_no_es_una_ruta_pero_su_fichero_si(self):
+        """Lo que va en comillas suele ser la ORDEN entera."""
+        from scripts import censar_rutas
+        self.assertIsNone(censar_rutas.parece_ruta("sed -n '8,$p' cap_07.md"))
+        self.assertEqual(censar_rutas.parece_ruta("wc -l dataset/nodos.jsonl"),
+                         "dataset/nodos.jsonl")
+        self.assertEqual(censar_rutas.parece_ruta("python .t1/frontera.py"),
+                         ".t1/frontera.py")
+        # CASO POSITIVO: un molde no es una ruta.
+        self.assertIsNone(censar_rutas.parece_ruta("cuarentena/<lote>/<id>.json"))
+
+    def test_una_ruta_relativa_al_documento_resuelve(self):
+        """Un acta que vive en docs/loop/ y escribe `paradas/x.md` no miente."""
+        self._fichero("docs/loop/paradas/2026-09-13-algo.md", "una parada archivada")
+        caidas, pasan = self._censar(
+            "| la parada | 1 | `paradas/2026-09-13-algo.md` |\n"
+            "|---|---|---|\n| otra | fila | para que sea tabla |\n",
+            nombre="ACTA_AUDITOR.md")
+        self.assertEqual(caidas, [])
+
+    def test_un_candidato_insertado_resuelve_en_su_archivo(self):
+        """`D.31` lo archiva en `_insertados` en el mismo acto de insertarlo."""
+        self._fichero("cuarentena/_insertados/un_lote/entrado.json", "{}")
+        caidas, _pasan = self._censar(
+            "| el candidato | 1 | `cuarentena/un_lote/entrado.json` |\n"
+            "|---|---|---|\n| otra | fila | para que sea tabla |\n")
+        self.assertEqual(caidas, [])
+
+    def test_la_lista_fija_de_config_exime_por_protocolo(self):
+        from scripts import censar_rutas
+        self.assertIn("docs/loop/PROMPT_SIGUIENTE.md", censar_rutas._sedes_exentas())
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
@@ -2176,7 +2346,8 @@ def main():
              PruebaSedeVacia,
              PruebaHerencia,
              PruebaPoblacionDelInforme,
-             PruebaTallado]
+             PruebaTallado,
+             PruebaCensoDeRutas]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -2218,6 +2389,8 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaPoblacionDelInforme)._tests))
     print("  D.41, la tabla que dice ser de instrumento es la del instrumento: "
           "%d pruebas mas" % len(cargador.loadTestsFromTestCase(PruebaTallado)._tests))
+    print("  D.42, la unidad de la ruta es la celda: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaCensoDeRutas)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

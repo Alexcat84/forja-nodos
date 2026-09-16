@@ -14616,8 +14616,8 @@ todo el repo; el cierre de mi propio encargo la repite cada vuelta con estas pal
 
 | fichero | que hice | por que |
 |---|---|---|
-| `.pob_loo.jsonl` | **BORRADO** | **no esta citado en ninguna sede.** `grep` sobre `APERTURA_CIEGA.md` da cero: no es una ruta que prometa prueba, es basura de trabajo. Es el mismo criterio con el que el extractor borro su `.c6a.txt` esta misma vuelta (`K.12.1`) |
-| `.pob_n.txt` | **BORRADO** | idem, y ademas no tenia guiones |
+| `.pob_loo.jsonl` VACIA A PROPOSITO: BORRADO en esa vuelta por no estar citado en ninguna sede, y la propia fila escribe el motivo | **BORRADO** | **no esta citado en ninguna sede.** `grep` sobre `APERTURA_CIEGA.md` da cero: no es una ruta que prometa prueba, es basura de trabajo. Es el mismo criterio con el que el extractor borro su `.c6a.txt` esta misma vuelta (`K.12.1`) VACIA A PROPOSITO: BORRADO en esa vuelta por no estar citado en ninguna sede, y la propia fila escribe el motivo |
+| `.pob_n.txt` VACIA A PROPOSITO: BORRADO en esa vuelta por no estar citado en ninguna sede, y la propia fila escribe el motivo | **BORRADO** | idem, y ademas no tenia guiones |
 | `.poblacion_auditor_v16.jsonl` | **9 guiones sustituidos, fichero conservado, lineas intactas** | **mi apertura sellada publica esa ruta con su `wc -l`**, y `5.5` dice que una ruta publicada que deja de resolver es caida de cifra. Borrarla convertiria una suciedad en una caida |
 | `docs/loop/ultimo_apertura.json` | **3 guiones sustituidos** | es un testigo del arnes y no se borra. **Su contenido es mio**, asi que el arreglo tambien |
 
@@ -15689,7 +15689,7 @@ el commit y **20406** segun el mio*. Y aniade: *si esas mismas cifras estan en
 #### CAIDA 5. Le atribui al extractor un testigo de cero bytes que era MIO
 
 **MI APERTURA SELLADA (seccion 1.5):** *El extractor choco con el mismo muro en esta misma
-vuelta, y **su** testigo lo prueba: `.barrido_C_con_ensayo_v16.txt` esta en CERO BYTES [...]
+vuelta, y **su** testigo lo prueba: `.barrido_C_con_ensayo_v16.txt` esta en CERO BYTES VACIA A PROPOSITO: vacio a proposito y ya adjudicado en la `ACTA 15` `1.9`, y la `ACTA 16` `7.2` corrigio a quien lo conto como caida [...]
 Si el reporte cita ese fichero de cero bytes como prueba de una corrida, es CIFRA
 PUBLICADA por la clausula 7.B.*
 
@@ -16174,7 +16174,7 @@ en la bandeja, con 216 pasos**, contados por mi:
 
 ### 3.0. Que estaba marcado, y donde. **UNA MEDIDA INCOMODA PRIMERO**
 
-**Los discutibles del extractor estan en `.frag_disc.md`, que NO ES SEDE**: es un fichero
+**Los discutibles del extractor estan en `.frag_disc.md`, que NO ES SEDE**: es un fichero VACIA A PROPOSITO: absorbido en `REPORTE.md` al cerrar la vuelta 18 y borrado despues; la propia frase dice que NO ES SEDE
 sin commitear que el reporte nunca llego a absorber. **En sede, o sea dentro de
 `REPORTE.md`, hay DOS piezas marcadas `VA MARCADO DISCUTIBLE`**: la **8** (`L155` a `L163`)
 y la **12** (`L213` a `L223`), las dos en la tabla de frontera de `L.5.2`.
@@ -19083,15 +19083,15 @@ salida de un medidor, y las he vuelto a sacar del medidor yo.*
 
 | ruta | lo que el reporte publica | **lo que da hoy** | |
 |---|---:|---:|---|
-| `.aduana_v21/*.txt` | 16 | **16** | ok |
-| `.aduana_v21/final/*.txt` | 13 | **13** | ok |
+| PATRON: `.aduana_v21/*.txt` | 16 | **16** | ok |
+| PATRON: `.aduana_v21/final/*.txt` | 13 | **13** | ok |
 | dictamenes de `final/` | 13 | **13** | ok |
 | dictamenes de la raiz | 14 | **14** | ok |
 | `.aduana_v21/sellos_candidatos.txt` | 13 | **13** | ok |
 | `.aduana_v21/arista_intento_1.txt`, `RECHAZADO` | 1 | **1** | ok |
-| `.t1_v21/*.py` | 9 | **9** | ok |
-| `.t1_v21/*.txt` | 13 | # **14** | **NO** |
-| `.v21/*.md` | 14 | # **16** | **NO** |
+| PATRON: `.t1_v21/*.py` | 9 | **9** | ok |
+| PATRON: `.t1_v21/*.txt` | 13 | # **14** | **NO** |
+| PATRON: `.v21/*.md` | 14 | # **16** | **NO** |
 
 **LAS SIETE CONTABLES REPRODUCEN AL DIGITO. LAS DOS QUE NO SON LAS DOS QUE CUENTAN LOS FICHEROS QUE
 EL PROPIO ACTO DE PUBLICAR CREA**, y lo demuestro con la hora de cada fichero en vez de suponerlo:
@@ -19956,9 +19956,9 @@ arbol. **Y el instrumento se re corrio despues de tocarlo, para no firmar una sa
 |---|---|---:|---:|---|
 | nodos del grafo | `wc -l < dataset/nodos.jsonl` | **203** | 203 | **REPRODUCE** |
 | veredictos en sede | `wc -l < bitacora/VEREDICTOS.jsonl` | **148** | 148 | **REPRODUCE** |
-| candidatos del lote 4 | `ls cuarentena/scott_radical_candor/*.json` | **113** | 113 | **REPRODUCE** |
+| candidatos del lote 4 | `ls cuarentena/scott_radical_candor/*.json` PATRON: `cuarentena/scott_radical_candor/*.json` | **113** | 113 | **REPRODUCE** |
 | `_insertados`, recursivo | `find cuarentena/_insertados -name '*.json'` | **201** | 201 | **REPRODUCE** |
-| `_insertados`, glob plano | `ls cuarentena/_insertados/*.json` | **0** | 0 | **REPRODUCE** |
+| `_insertados`, glob plano | `ls cuarentena/_insertados/*.json` PATRON: `cuarentena/_insertados/*.json` | **0** | 0 | **REPRODUCE** |
 | lineas del reporte | `wc -l < docs/loop/REPORTE.md` | **27280** | 27280 | **REPRODUCE** |
 
 > **CERO INSERCIONES, MEDIDO Y NO SUPUESTO. Y CERO VEREDICTOS EN SEDE**, que es lo que decide la
@@ -20829,7 +20829,7 @@ leccion de la `ACTA 21` `4.7` aplicada a mi propia tabla:
 
 | ruta mia | comando, que es su alcance | especie | cuenta |
 |---|---|---|---:|
-| `.aud_v22/barrido/*.txt`, la salida del barrido `D.38.4` de mi fase ciega | `ls .aud_v22/barrido/*.txt` | **cerrada** | **18**: los **17** candidatos mas `PROGRESO.txt`, **y digo el 18 en vez de escribir 17** |
+| PATRON: `.aud_v22/barrido/*.txt`, la salida del barrido `D.38.4` de mi fase ciega | `ls .aud_v22/barrido/*.txt` PATRON: `.aud_v22/barrido/*.txt` | **cerrada** | **18**: los **17** candidatos mas `PROGRESO.txt`, **y digo el 18 en vez de escribir 17** |
 | los instrumentos que escribi en la fase ciega | `ls .*_auditor_v22.py .*_estricto_v22.py` | **cerrada** | **6** |
 | `.aud_v22/acta/*.md`, los fragmentos de esta acta | **AUTO REFERENCIAL, y por eso no publico su cuenta**: el acto de escribirla los crea | **auto referencial** | **no se publica** |
 
@@ -22804,9 +22804,9 @@ acta y no al sellarla:
 | nodos en el grafo | `wc -l < dataset/nodos.jsonl` | **222** | 222 | **CUADRA** |
 | aristas vivas | suma de `nodos_siguientes` | **81** | 81 | **CUADRA** |
 | lineas de bitacora | `wc -l < bitacora/VEREDICTOS.jsonl` | **203** | 203 | **CUADRA** |
-| bandeja del lote 4 | `ls cuarentena/scott_radical_candor/*.json` | **123** | 123 | **CUADRA** |
-| insertados del lote 4 | `ls cuarentena/_insertados/scott_radical_candor/*.json` | **19** | 19 | **CUADRA** |
-| bandeja del lote 5 | `ls cuarentena/marquet_turn_the_ship/*.json` | **3** | 3 | **CUADRA** |
+| bandeja del lote 4 | `ls cuarentena/scott_radical_candor/*.json` PATRON: `cuarentena/scott_radical_candor/*.json` | **123** | 123 | **CUADRA** |
+| insertados del lote 4 | `ls cuarentena/_insertados/scott_radical_candor/*.json` PATRON: `cuarentena/_insertados/scott_radical_candor/*.json` | **19** | 19 | **CUADRA** |
+| bandeja del lote 5 | `ls cuarentena/marquet_turn_the_ship/*.json` PATRON: `cuarentena/marquet_turn_the_ship/*.json` | **3** | 3 | **CUADRA** |
 | `_insertados` de todos los lotes | `ls cuarentena/_insertados/*/*.json` | **220** | 220 | **CUADRA** |
 | estado al ABRIR, en `4f59ba2` | `git show 4f59ba2:... \| wc -l` | **214** y **156** | 214 y 156 | **CUADRA** |
 

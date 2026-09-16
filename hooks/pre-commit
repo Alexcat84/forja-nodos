@@ -36,13 +36,12 @@ fi
 # LA TABLA QUE DICE SER DE INSTRUMENTO ES LA DEL INSTRUMENTO (D.41, 13 sep 2026).
 # Solo lee ficheros ya escritos: no corre ningun instrumento. Cuesta menos de un
 # segundo, y caza la especie que tumbo la racha REPORTE cuatro veces seguidas.
-echo "[pre-commit] tallado del reporte (D.41)"
+echo "[pre-commit] tallado del reporte (D.41) y censo de rutas (D.42)"
 if ! "$PYTHON" scripts/cerrar_reporte.py --hook; then
     echo ""
-    echo "[pre-commit] COMMIT ABORTADO: una tabla dice venir de un instrumento y no"
-    echo "coincide con el. NO se corrige tecleando la celda:"
-    echo "  python scripts/tallar_reporte.py --arreglar"
-    echo "y se escribe al lado de que caida sale (correccion declarada)."
+    echo "[pre-commit] COMMIT ABORTADO: una tabla no coincide con su instrumento"
+    echo "(D.41), o una ruta publicada como sede de una cifra no sostiene nada (D.42)."
+    echo "Ninguna de las dos se corrige tecleando la celda buena."
     exit 1
 fi
 

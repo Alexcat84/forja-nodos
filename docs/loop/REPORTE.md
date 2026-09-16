@@ -27035,12 +27035,12 @@ lista este bien, y la lista se puede auditar.
 
 | ruta | comando, QUE ES SU ALCANCE | especie | **cuenta** | que es, y que excluye |
 |---|---|---|---:|---|
-| `.aduana_v22/*.txt` | `ls .aduana_v22/*.txt \| wc -l` | cerrada | **17** | los informes de un candidato de esta vuelta |
-| `.aduana_v22/[ABCD]_*.txt` | `ls .aduana_v22/[ABCD]_*.txt \| wc -l` | cerrada | **16** | los de cap_11, escritos cuatro por lote |
-| `.t1_v22/*.py` | `ls .t1_v22/*.py \| wc -l` | cerrada | **10** | los guiones de la vuelta |
-| `.t1_v22/*.txt` | `ls .t1_v22/*.txt \| wc -l` | **AUTO REFERENCIAL** | **10** | las salidas guardadas. **excluidos por nombre: `salida_rutas_cierre.txt`, `salida_gate_cierre.txt`, `salida_guiones_cierre.txt`, `salida_aceptacion_cierre.txt`** |
-| `.v22/*.md` | `ls .v22/*.md \| wc -l` | **AUTO REFERENCIAL** | **4** | los fragmentos del reporte. **excluidos por nombre: `frag_t5.md`, `frag_cierre.md`** |
-| `cuarentena/scott_radical_candor/*.json` | `ls cuarentena/scott_radical_candor/*.json \| wc -l` | cerrada | **113** | la bandeja del lote 4 entera |
+| PATRON: `.aduana_v22/*.txt` | `ls .aduana_v22/*.txt \| wc -l` | cerrada | **17** | los informes de un candidato de esta vuelta |
+| PATRON: `.aduana_v22/[ABCD]_*.txt` | `ls .aduana_v22/[ABCD]_*.txt \| wc -l` | cerrada | **16** | los de cap_11, escritos cuatro por lote |
+| PATRON: `.t1_v22/*.py` | `ls .t1_v22/*.py \| wc -l` | cerrada | **10** | los guiones de la vuelta |
+| PATRON: `.t1_v22/*.txt` | `ls .t1_v22/*.txt \| wc -l` | **AUTO REFERENCIAL** | **10** | las salidas guardadas. **excluidos por nombre: `salida_rutas_cierre.txt`, `salida_gate_cierre.txt`, `salida_guiones_cierre.txt`, `salida_aceptacion_cierre.txt`** |
+| PATRON: `.v22/*.md` | `ls .v22/*.md \| wc -l` | **AUTO REFERENCIAL** | **4** | los fragmentos del reporte. **excluidos por nombre: `frag_t5.md`, `frag_cierre.md`** |
+| PATRON: `cuarentena/scott_radical_candor/*.json` | `ls cuarentena/scott_radical_candor/*.json \| wc -l` | cerrada | **113** | la bandeja del lote 4 entera |
 
 **LAS DOS FILAS AUTO REFERENCIALES, CON SUS EXCLUIDOS NOMBRADOS UNO A UNO** (salida del guion):
 
@@ -27649,9 +27649,9 @@ instrumento **tiene su fichero de salida en el arbol** y **esta pegada de ahi**.
 | la frontera de `cap_10` recerrada | `python .t1_v23/frontera_cap10.py` | `.t1_v23/salida_frontera_cap10.txt` |
 | la frontera de `cap_12` | `python .t1_v23/frontera_cap12.py` | `.t1_v23/salida_frontera_cap12.txt` |
 | la frontera de `cap_13` | `python .t1_v23/frontera_cap13.py` | `.t1_v23/salida_frontera_cap13.txt` |
-| las seis correcciones de fichero | `python .t1_v23/correccion_N.py` | `.t1_v23/salida_correccion_N.txt` |
+| las seis correcciones de fichero | `python .t1_v23/correccion_*.py` PATRON: `.t1_v23/correccion_*.py` | PATRON: `.t1_v23/salida_correccion_*.txt` |
 | el saldo de la aduana | `python .t1_v23/saldo_v23.py` | `.t1_v23/salida_saldo_v23.txt` |
-| las tres guardas del cierre | `gate`, `guiones`, `test_aceptacion` | `.t1_v23/salida_*_cierre.txt` |
+| las tres guardas del cierre | `gate`, `guiones`, `test_aceptacion` | PATRON: `.t1_v23/salida_*_cierre.txt` |
 
 **Y LAS QUE RESUMEN EN VEZ DE REPRODUCIR VAN DECLARADAS `parcial`** con su marcador encima, que es
 lo que `D.41` manda decir en vez de callar. **En esta vuelta son tres**, y estan en `Q.0`, `Q.2.i` y
@@ -30542,6 +30542,31 @@ se llevo por delante al otro.**
 
 ### S.3.e. **DONDE ME PARO, CON SU CIFRA EXACTA Y SIN RESUMIRLA** (lo que el encargo pide expresamente)
 
+<!-- TALLADO: parcial salida=.v25/cola_lectura.txt -->
+> ### CORRECCION DECLARADA, 15 sep 2026, POR REGENERACION
+>
+> *Decision del fundador del 15 sep 2026, punto 2, sobre la parada de la vuelta
+> 25. Caida citada: `ACTA 25` `3.6`. **El texto viejo se tacha y no se borra.***
+>
+> **LA CIFRA ERA `2` Y ES `4`**, y no la tecleo: sale del instrumento corrido hoy y
+> guardado en `.v25/cola_lectura.txt`, que antes tenia **cero bytes**.
+>
+>     $ python forja.py informe cuarentena/scott_radical_candor/decidir_momento_despedir_persona.json
+>       vecinos levantados en total : 4
+>       despedir_persona_franqueza_radical
+>       pedir_critica_equipo_premiarla
+>       despedir_persona_respeto_franqueza
+>       elegir_recolocar_despedir_persona
+>
+> **Y DIGO LA MITAD QUE SI SE EXPLICA, porque el auditor me la dio y es cierta:**
+> `pedir_critica_equipo_premiarla` entro al grafo en esta misma vuelta, asi que ese
+> vecino **pudo nacer despues de mi medicion**. Los otros tres los levanta
+> `familia_id` y los tres vivian en la bandeja, y `D.38.5` carga grafo mas bandejas
+> desde el 12 sep: **mi medicion ya tenia que dar por lo menos tres, y publique dos.**
+>
+> **LO QUE FALLO NO FUE LA CUENTA: FUE LA SEDE.** La ruta que publique como prueba
+> tenia cero bytes, asi que nadie podia recontarla. Eso es `D.42` desde hoy.
+
 *El encargo dice: **no te encargo los `131`, entrega lo que quepa, declara donde te paras con su cifra
 exacta, y no lo resumas.** Aqui esta, candidato por candidato.*
 
@@ -30564,7 +30589,7 @@ repartidas en siete corridas, y **13 lecturas de par que el encargo daba por pag
 
 | unidad | candidato | como acaba |
 |---|---|---|
-| `cap_06` | `decidir_momento_despedir_persona` | # **EN COLA.** Le faltan **2** pares por leer: `despedir_persona_respeto_franqueza` y `elegir_recolocar_despedir_persona` |
+| `cap_06` | `decidir_momento_despedir_persona` | # **EN COLA.** Le faltan ~~**2**~~ **4** pares por leer, regenerados de `.v25/cola_lectura.txt`: `despedir_persona_franqueza_radical`, `pedir_critica_equipo_premiarla`, `despedir_persona_respeto_franqueza`, `elegir_recolocar_despedir_persona` |
 | `cap_06` | `descubrir_motivacion_sentido_persona` | **DENTRO**, sin un solo vecino por encima de umbral |
 
 > ### **Y LO QUE NO HAGO, DICHO ANTES DE QUE SE NOTE: NO EMPIEZO A LEER LOS PARES DE `decidir_momento_despedir_persona`**
@@ -30953,7 +30978,7 @@ como estan **hasta que quien tenga la sede decida los cuatro juntos**, y esa dec
 | que | cifra | de donde sale |
 |---|---|---|
 | **la tanda de insercion sin terminar** | la bandeja del lote 4, recontada al cierre en `S.11` | `python .v25/insertar_tanda.py`, con el orden ya escrito en `.v25/orden.txt` |
-| **los pares del candidato parado** | **2** por leer, los dos del despido, de `decidir_momento_despedir_persona` | `.v25/cola_lectura.txt` |
+| **los pares del candidato parado** | ~~**2** por leer, los dos del despido~~ **4** por leer, regenerados el 15 sep (`S.3.e`), de `decidir_momento_despedir_persona` | `.v25/cola_lectura.txt` |
 | **las aristas declaradas y no cableadas** | recontadas al cierre en `S.11` | `python .v25/deuda_v25.py` |
 | **la PARADA del ancla unica** | **4 de 24**, **2 dentro del grafo** | `S.9`. **La resuelve quien tenga la sede de `dataset/`** |
 | **la correccion 9 de la vuelta 22** | 1, viva y escrita por **quinta** vez, y hoy **con una pregunta de direccion encima** | `S.4.c`. Su acto sigue siendo el cableado, y los dos extremos siguen en la bandeja |

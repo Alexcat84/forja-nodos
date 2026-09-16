@@ -1,3 +1,95 @@
+# PARADA DEL 15 SEP 2026: LA RUTA VACIA. **DECISION DEL FUNDADOR**
+
+> ## LA DECISION DEL FUNDADOR, 15 sep 2026
+>
+> **1. `D.42`, LA UNIDAD DE LA RUTA ES LA CELDA.** Toda ruta publicada en un reporte o
+> acta como sede de una cifra (en tabla, en columna *de donde sale*, o en linea) la
+> verifica el censo en el commit, celda a celda, con tres formas y solo tres:
+> **(a) RUTA CON CONTENIDO: pasa. (b) RUTA VACIA: tumba**, salvo que la misma celda
+> lleve la marca literal `VACIA A PROPOSITO: <motivo>`; una ruta vacia sin marca es
+> caida de cifra (cosecha `7.B`). **(c) PATRON:** una celda que declara un patron lo
+> escribe como `PATRON: <glob>`, y el censo exige al menos una coincidencia con
+> contenido; un patron sin coincidencias tumba. Y una **lista FIJA**, en `config/`, de
+> sedes vacias por protocolo (`docs/loop/PROMPT_SIGUIENTE.md` en parada) que el censo
+> no cuenta. El **caso positivo** es la vuelta 25 tal como quedo: `.v25/cola_lectura.txt`
+> sin marca debe tumbar nombrando la celda; con la marca, o regenerada con sus `4`,
+> pasa. El **negativo**: `.barrido_C_con_ensayo_v16.txt` con su marca y su cita de la
+> `ACTA 15` pasa; `.aduana_v22/*.txt` declarado como `PATRON` pasa.
+>
+> **2. LA RACHA `REPORTE` DEL EXTRACTOR SE REINICIA** con `D.42` instalada y corriendo
+> en el hook: la cifra `2` de la vuelta 25 se corrige **por regeneracion** (`4`, del
+> instrumento de hoy) con correccion declarada.
+>
+> **3. El censo de las 84 ausentes se re-corre bajo `D.42` y se publica:** las que sean
+> patrones se declaran como tales por correccion declarada en su sede; las que resulten
+> rutas de verdad inexistentes se nombran y se traen, si las hay.
+>
+> **4. `PROMPT_SIGUIENTE` de la vuelta 26:** continuar la insercion del lote 4 y abrir
+> el lote 5 por el orden escrito.
+
+> **ARCHIVADA.** Este fichero fue `docs/loop/PARA_ALEXIS.md` hasta que el fundador
+> resolvio lo que pedia. **Se archiva entero y sin tocar una palabra de su cuerpo ni de
+> su anexo**; lo unico añadido es esta cabecera. El arnes solo mira
+> `docs/loop/PARA_ALEXIS.md`, asi que el bucle ya no esta detenido por el.
+>
+> ### LOS TRES CASOS, CORRIDOS SOBRE EL ARBOL DE VERDAD
+>
+> **POSITIVO**, con el fichero vaciado a proposito para comprobarlo:
+>
+>     $ python scripts/censar_rutas.py
+>     CAE  docs/loop/REPORTE.md linea 30980, celda 3
+>          ruta : .v25/cola_lectura.txt
+>          esta y esta VACIA, y la celda no lleva la marca 'VACIA A PROPOSITO: <motivo>'
+>     rc=1
+>
+> **NEGATIVOS**, los dos que la decision nombra: `.barrido_C_con_ensayo_v16.txt` pasa
+> con su marca y su cita de la `ACTA 15` `1.9`; `.aduana_v22/*.txt` pasa como `PATRON`
+> con sus **17** coincidencias.
+>
+> ### EL CENSO DE LAS AUSENTES, RE CORRIDO Y PUBLICADO (punto 3)
+>
+> **LAS 84 DE AYER ERAN 84 PORQUE EL CENSO DE AYER ERA MALO.** Contaba globs como
+> ficheros, trozos de comando como rutas (`wc -l dataset/nodos.jsonl` entero) y moldes
+> como caminos. Con el censo de `D.42` delante, el reparto real es este:
+>
+> | | |
+> |---|---:|
+> | menciones de ruta en las dos sedes | **902** |
+> | de esas, publicadas **como sede de una cifra** | **293** |
+> | pasan con contenido | **272** |
+> | declaradas `PATRON` | **14** |
+> | declaradas `VACIA A PROPOSITO` | **3** |
+> | vacias por protocolo (`config/`) | **4** |
+> | **rutas de verdad inexistentes que haya que traer** | # **CERO** |
+>
+> **NINGUNA ERA UNA RUTA PERDIDA.** Se reparten asi, y cada grupo con su arreglo:
+>
+> | lo que eran | cuantas | que se hizo |
+> |---|---:|---|
+> | **patrones sin declarar** | 14 | escritos `PATRON: <glob>` en su celda, cada uno con sus coincidencias |
+> | **moldes con `N` literal** (`.t1_v23/correccion_N.py`, `cap_0N.md`) | 3 | reescritos a su patron **verdadero** (`correccion_*.py`), que se puede recontar |
+> | **andamio borrado** (`.c9/mk.py`, `.frag_disc.md`, `.c6a.txt`, `.pob_*`) | 6 | marcados con su motivo, o **fuera del censo por ser el sujeto de la frase y no una sede** |
+> | **candidatos insertados** | 7 | **resueltos solos**: `D.31` los archiva en `_insertados/` en el acto de insertarlos, y el censo lo sabe |
+> | **rutas relativas al documento** (`paradas/...` dentro de `docs/loop/`) | 3 | **resueltas solas**: un acta que escribe una ruta relativa no publica una ruta falsa |
+>
+> ### Y TRES COSAS QUE DIGO PORQUE SON LECTURAS MIAS, NO LETRA TUYA
+>
+> 1. **`CERO COINCIDENCIAS ES A VECES LA CIFRA.** `cuarentena/_insertados/*.json` da
+>    `0` **porque ahi no cuelga ningun JSON suelto**, y eso es justo lo que su fila
+>    publica. La letra dice que un patron sin coincidencias tumba; lo resuelvo con la
+>    misma marca, que sigue exigiendo motivo escrito. **Puedes tumbar esta lectura.**
+> 2. **SEDE NO ES TODA MENCION.** Censar toda mencion daba **42 celdas que marcar**;
+>    censar las sedes da **cero**. Una marca que se pone cuarenta veces deja de leerse,
+>    y a la quinta se pone sin mirar: seria fabricar la excusa que `D.42` vino a cerrar.
+>    El criterio esta escrito en `D.42` y en el codigo.
+> 3. **TU NUMERO `D.42` CHOCABA CON EL QUE YO ME HABIA PUESTO.** La regla del informe de
+>    lote, que numere yo el 12 sep, **se ha movido dos veces en tres dias**: fue `D.41`,
+>    luego `D.42`, y hoy es **`D.43`**. El tuyo manda siempre; pero una regla que se
+>    mueve cada dos dias no la puede citar nadie de memoria, **y fijarle numero es
+>    tuyo.**
+
+---
+
 # PARA ALEXIS. EL BUCLE SE DETIENE: CREDITO ROTO, RACHA `REPORTE` EN 3 DE 3
 
 *Escrito por el auditor al cerrar la **VUELTA 25**, el 13 sep 2026. `AUDITOR_FORJA.md` `3`,

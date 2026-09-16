@@ -1,0 +1,26 @@
+{
+  "_lee_esto": [
+    "LISTA FIJA DE SEDES QUE ESTAN VACIAS O AUSENTES POR PROTOCOLO (D.42, 15 sep 2026).",
+    "El censo de rutas NO las cuenta. Es una lista FIJA y corta a proposito: una",
+    "exencion que crece sola deja de ser exencion y pasa a ser la regla.",
+    "",
+    "AQUI SOLO ENTRA LO QUE UNA REGLA ESCRITA MANDA DEJAR VACIO O MOVER, con su cita.",
+    "Un fichero que esta vacio porque alguien no lo lleno NO entra aqui: eso se",
+    "declara en su propia celda con la marca 'VACIA A PROPOSITO: <motivo>', que",
+    "es visible donde se publica la cifra y no escondida en config/.",
+    "",
+    "ESTA LISTA LA ESCRIBE EL FUNDADOR. Ni el extractor ni el auditor la tocan."
+  ],
+  "sedes": [
+    {
+      "ruta": "docs/loop/PROMPT_SIGUIENTE.md",
+      "motivo": "En una parada queda VACIO por mandato de AUDITOR_FORJA.md 3. Esta vacio porque el auditor cumplio, y contarlo como caida seria castigar el cumplimiento.",
+      "regla": "AUDITOR_FORJA.md 3"
+    },
+    {
+      "ruta": "docs/loop/PARA_ALEXIS.md",
+      "motivo": "Es una sede ROTATORIA: existe mientras el bucle esta parado y, cuando el fundador decide, su contenido se archiva entero en docs/loop/paradas/<fecha>-<nombre>.md. Un acta que la cito estaba citando la parada viva, que es la unica que habia. Exigirle al auditor que vuelva sobre su acta cada vez que se archiva una parada seria castigar que las paradas se resuelvan.",
+      "regla": "D.28 mas la costumbre de archivado de docs/loop/paradas/"
+    }
+  ]
+}

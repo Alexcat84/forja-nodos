@@ -1902,20 +1902,124 @@ instrumento mal escrito publica una tabla mal escrita, y eso lo caza una lectura
 `diff`. **Lo que esta regla cierra es el hueco entre lo que la maquina midio y lo que el
 documento dice que midio**, que es donde cayeron las cuatro.
 
-## D.42. EL INFORME DE LOTE VIVE DONDE CABE, Y NO CABE EN UN TURNO (12 sep 2026, decision del fundador)
+## D.42. LA UNIDAD DE LA RUTA ES LA CELDA (15 sep 2026, decision del fundador)
+
+*Punto 1 de la decision del fundador del 15 sep 2026, sobre la parada de la vuelta 25,
+archivada en `docs/loop/paradas/2026-09-15-la-ruta-vacia-DECISION.md`. **La racha
+`REPORTE` del extractor se reinicia con esta condicion instalada y corriendo en el
+hook**, que es la forma que ya funciono con `D.40` y con `D.41`.*
+
+### POR QUE `D.41` NO BASTABA, Y NO ES QUE ESTUVIERA MAL ESCRITA
+
+**`D.41` ata un instrumento a una TABLA ENTERA**: lee la declaracion de encima
+(*Salida de `X`, guardada en `Y`*) y compara la tabla contra `Y`. La vuelta 25 **no
+cayo asi**. Cayo publicando una ruta **por fila**, en una columna titulada *de donde
+sale*:
+
+    | los pares del candidato parado | 2 por leer | `.v25/cola_lectura.txt` |
+
+y ese fichero tenia **CERO BYTES** mientras la cifra decia `2` donde el instrumento da
+`4`. **La unidad de `D.41` es la tabla; aqui la unidad es la celda**, y por eso hizo
+falta otra guarda y no un parche a la primera.
+
+### La letra: TRES FORMAS Y SOLO TRES
+
+> **TODA RUTA PUBLICADA EN UN REPORTE O UN ACTA COMO SEDE DE UNA CIFRA** (en tabla, en
+> columna *de donde sale*, o en linea) **LA VERIFICA EL CENSO EN EL COMMIT, CELDA A
+> CELDA:**
+>
+> | | |
+> |---|---|
+> | **(a) RUTA CON CONTENIDO** | pasa |
+> | **(b) RUTA VACIA** (o que no esta) | **TUMBA**, salvo que la MISMA celda lleve la marca literal `VACIA A PROPOSITO: <motivo>`. Una ruta vacia sin marca es **caida de cifra** (cosecha `7.B`) |
+> | **(c) PATRON** | la celda lo escribe como `PATRON: <glob>` y se exige **al menos una coincidencia con contenido**. Un patron sin coincidencias tumba |
+>
+> Mas una **lista FIJA** en `config/sedes_vacias.json` con las sedes que una regla
+> escrita manda dejar vacias, que el censo no cuenta.
+
+**POR QUE LA MARCA VA EN LA CELDA Y NO EN UN FICHERO DE EXCEPCIONES.** Una excepcion
+escondida en `config/` la lee quien va a buscarla; **una marca en la celda la lee quien
+lee la cifra**, que es justo el que tiene que saber que la sede esta vacia. Y obliga a
+escribir el motivo **al lado del numero que sostiene.**
+
+**Y POR QUE LA LISTA DE `config/` ES FIJA Y CORTA.** Ahi solo entra lo que **una regla
+escrita manda dejar vacio**, con su cita: hoy solo `docs/loop/PROMPT_SIGUIENTE.md`, que
+`AUDITOR_FORJA.md` `3` manda vaciar en una parada. **Esta vacio porque el auditor
+cumplio, y contarlo como caida seria castigar el cumplimiento.** Una exencion que crece
+sola deja de ser exencion y pasa a ser la regla.
+
+### Que es SEDE y que es solo NOMBRAR, porque la diferencia era la guarda entera
+
+La letra dice **como sede de una cifra**, y eso no es toda mencion. Una frase que
+**habla** de un fichero (*el barrido de guiones tumbo `.c9/mk.py`*, *los cinco
+`.frag_*.md`*) no esta ofreciendo nada como origen de ningun numero: **es el sujeto de
+la frase.**
+
+> **SE CUENTA COMO SEDE cuando la CELDA ES la ruta** (la forma de la columna *de donde
+> sale*) **o cuando la unidad la OFRECE como origen** (*salida de*, *guardada en*, *de
+> donde sale*, *medido con*, *su testigo lo prueba*, *como prueba*).
+
+**MEDIDO EL 15 sep 2026, y por eso la distincion esta escrita:** censar toda mencion da
+**902 rutas y 42 celdas que marcar** en dos documentos de treinta mil lineas, casi
+ninguna sosteniendo una cifra. Censar las sedes da **293 rutas**. **Una marca que se
+pone cuarenta veces deja de leerse**, y a la quinta se pone sin mirar: seria fabricar
+exactamente la excusa que esta regla vino a cerrar.
+
+### Dos resoluciones que son regla de la casa, no excepciones
+
+| | |
+|---|---|
+| una ruta **relativa al documento** | un acta que vive en `docs/loop/` y escribe `paradas/2026-09-13-....md` **no publica una ruta falsa**: escribe una relativa, y resuelve |
+| un candidato **insertado** | `D.31` lo archiva en `cuarentena/_insertados/<lote>/` **en el mismo acto de insertarlo**. El acta que lo cito en su bandeja publico la unica ruta que habia; el fichero sigue en el arbol un nivel mas alla. **Pedirle al auditor que vuelva sobre su acta de hace cuatro vueltas cada vez que un candidato entra seria castigar la insercion** |
+
+### Casos, y son los que la decision pidio por su nombre
+
+| | |
+|---|---|
+| **POSITIVO** | `.v25/cola_lectura.txt` **sin marca y en cero bytes TUMBA nombrando la celda** (`docs/loop/REPORTE.md` linea 30980, `celda 3`). Con la marca, o regenerada con sus `4`, pasa |
+| **NEGATIVO** | `.barrido_C_con_ensayo_v16.txt` **con su marca y su cita de la `ACTA 15` `1.9` pasa** |
+| **NEGATIVO** | `.aduana_v22/*.txt` **declarado `PATRON` pasa**, con sus 17 coincidencias |
+
+Mas **16 pruebas de unidad** (`PruebaCensoDeRutas`), entre ellas que la marca **sin
+motivo** no vale, que la marca **de otra celda** no cubre esta, y que una ruta
+**nombrada** en prosa no se cuenta.
+
+### Lo que la guarda NO hace
+
+**NO corre ningun instrumento.** Solo mira ficheros que ya estan escritos: **el hook
+entero cuesta 1,75 segundos.**
+
+**NO dice que la cifra sea correcta.** Dice que **la sede que la sostiene sostiene algo**.
+Una cifra falsa con su fichero lleno pasa el censo y la caza una lectura. **Lo que esta
+regla cierra es el hueco entre la cifra y su prueba**, que es donde cayo la vuelta 25.
+
+### Una cosa que la letra no preveia, y se declara
+
+**CERO COINCIDENCIAS ES A VECES LA CIFRA.** `cuarentena/_insertados/*.json` da `0`
+**porque ahi no cuelga ningun JSON suelto**, y eso es exactamente lo que su fila
+publica. La letra dice que un patron sin coincidencias tumba; **se resuelve con la
+misma marca**, que sigue exigiendo el motivo escrito al lado. **Se anota aqui porque es
+una lectura mia de un caso que la decision no nombra**, y el fundador puede tumbarla.
+
+## D.43. EL INFORME DE LOTE VIVE DONDE CABE, Y NO CABE EN UN TURNO (12 sep 2026, decision del fundador)
 
 *Punto 2 de la decision del fundador del 12 sep 2026.*
 
-> ### RENUMERADA, 13 sep 2026. **ERA `D.41` Y PASA A `D.42`.**
+> ### RENUMERADA DOS VECES. **FUE `D.41`, LUEGO `D.42`, Y HOY ES `D.43`.**
 >
 > El numero se lo puse yo el 12 sep porque el fundador no numero su decision, y lo
-> escribi con esta condicion: *si el numero estorba, se renumera.* **Estorbo al dia
-> siguiente:** la decision del 13 sep asigna `D.41` a otra regla, con esas letras.
-> **El numero del fundador manda sobre el mio**, y esta regla se corre un sitio.
+> escribi con esta condicion: *si el numero estorba, se renumera.* **Estorbo el 13
+> sep**, cuando el fundador asigno `D.41` al tallado, **y volvio a estorbar el 15**,
+> cuando asigno `D.42` al censo de rutas. **El numero del fundador manda sobre el
+> mio, las veces que haga falta.**
 >
 > **El texto viejo no se borra y el contenido no cambia**: lo unico que cambia es el
-> numero. Si encuentras un `D.41` que habla del informe de lote en un acta o un
-> reporte de la vuelta 21 o 22, **es esta, y esta aqui.**
+> numero. Si encuentras un `D.41` o un `D.42` que hablan del informe de lote en un
+> acta o un reporte de las vueltas 21 a 25, **son esta, y esta aqui.**
+>
+> **Y LO DIGO PARA QUE SE PUEDA DECIDIR:** una regla que se ha movido dos veces en
+> tres dias es una regla cuyo numero nadie puede citar de memoria. **Si el fundador
+> quiere fijarlo, este es el sitio**; yo no me asigno otro numero por mi cuenta.
 
 ### La cifra que lo obliga
 

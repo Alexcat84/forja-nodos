@@ -319,9 +319,10 @@ Lo que este documento añade es **el ritmo de la vuelta**:
    cuantos entrarian, cuantos bloquearian y cuantos caerian, con cero
    inserciones. **Se lee entero antes de la primera insercion.**
 
-   > ### **PERO EL DEL LOTE ENTERO YA NO LO CORRES TU** (~~`D.41`~~ `D.42`, 12 sep 2026)
+   > ### **PERO EL DEL LOTE ENTERO YA NO LO CORRES TU** (~~`D.41`~~ ~~`D.42`~~ `D.43`, 12 sep 2026)
    >
-   > *Renumerada el 13 sep: `D.41` es ahora la del tallado de tablas.*
+   > *Renumerada dos veces: `D.41` es el tallado de tablas (13 sep) y `D.42` es el
+   > censo de rutas (15 sep). El contenido no ha cambiado ninguna de las dos veces.*
    >
    > **LO CORRE EL ARNES, COMO PASO PROPIO, ANTES DE TU TURNO**, y te lo entrega en
    > `docs/loop/INFORME_DE_LOTE.txt` **sellado con su `git hash-object`**, anotado
@@ -407,6 +408,26 @@ Lo que este documento añade es **el ritmo de la vuelta**:
    > **SI TU TABLA RESUME UN INSTRUMENTO en vez de reproducirlo** (dos filas de
    > quince salen de el), **dilo** con `<!-- TALLADO: parcial salida=<ruta> -->`
    > encima. Queda listada como cita en cada corrida. **Lo que no vale es callarlo.**
+
+   > ### **Y TODA RUTA QUE PUBLIQUES COMO SEDE DE UNA CIFRA TIENE QUE SOSTENERLA** (`D.42`)
+   >
+   > **La unidad es la CELDA.** El censo mira, en cada commit, toda ruta que ofrezcas
+   > como origen de un numero: en una tabla, en la columna *de donde sale*, o en una
+   > linea. **Tres formas y solo tres:**
+   >
+   > | | |
+   > |---|---|
+   > | la ruta tiene contenido | pasa |
+   > | la ruta esta vacia o no esta | **TUMBA**, salvo que escribas en la MISMA celda `VACIA A PROPOSITO: <motivo>` |
+   > | era un conjunto | escribela `PATRON: <glob>`, y tiene que tener al menos una coincidencia |
+   >
+   > **POR QUE EXISTE, y es la caida que paro la vuelta 25:** publicaste `2` pares por
+   > leer con sede `.v25/cola_lectura.txt`, y ese fichero tenia **cero bytes** cuando
+   > el instrumento da `4`. **No fallo la cuenta: fallo que nadie podia recontarla.**
+   >
+   > **Y LA MARCA NO ES UN COMODIN.** Lleva motivo escrito, va al lado del numero que
+   > sostiene, y cada corrida la cuenta y la publica. Una marca que se pone sin mirar
+   > se ve en el recuento.
 
 **CUANDO UN CAPITULO ENTERO CAE EN LA MISMA FAMILIA**, que es el caso que la
 seccion vieja dejaba sin escribir: **eso no es una señal de duplicado, es una
