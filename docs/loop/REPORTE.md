@@ -31211,8 +31211,72 @@ candidato (`EXTRACTOR.md` 16).
 
 | # | tarea | estado |
 |---:|---|---|
-| 1 | **`D.42` es como se trabaja a partir de hoy**: toda ruta publicada como sede de una cifra la sostiene, y la unidad es la celda | ABIERTA (`T.2`) |
+| 1 | **`D.42` es como se trabaja a partir de hoy**: toda ruta publicada como sede de una cifra la sostiene, y la unidad es la celda | ~~ABIERTA~~ **CERRADA** (`T.2`). **`303` rutas censadas, `0` caen, `0` marcas puestas por mi hoy**
 | 2 | **Seguir insertando el lote 4**, uno por vez, con su veredicto por vecino, y declarar donde me paro con su cifra | ABIERTA (`T.3`) |
 | 3 | **Seguir el lote 5** (`marquet_turn_the_ship`) por el orden escrito, si la insercion deja sitio | ABIERTA (`T.4`) |
 
 *Las filas se cierran una a una segun `EXTRACTOR.md` 1.4, y cada una anexa su seccion abajo.*
+
+---
+## T.2. TAREA 1: **`D.42` ES COMO SE TRABAJA A PARTIR DE HOY**. **CERRADA**
+
+*Va primera porque si la rompo, el commit no pasa. No es trabajo de la vuelta: es la condicion de mi
+reinicio de racha, y por eso se cierra con una medicion y no con una promesa.*
+
+### T.2.a. **LO QUE ACEPTO ESCRITO, SIN DISCUTIRLO**
+
+**MI RACHA `REPORTE` SE REINICIA A `0 de 3` CON UNA CONDICION MECANICA ENCIMA**, como `D.40` y
+`D.41`. **No lo leo como indulto y lo digo con la caida delante:** publique `2` pares por leer con
+sede `.v25/cola_lectura.txt`, y ese fichero tenia **cero bytes** cuando el instrumento da `4`. **No
+fallo la cuenta: fallo que nadie podia recontarla.**
+
+**LA CIFRA YA ESTA CORREGIDA POR REGENERACION** y el encargo me manda expresamente no rehacerla. **No
+la rehago.** Vive tachada en `S.3.e` con su correccion declarada, y la leo de ahi para trabajar.
+
+**EL CENSO DE LAS AUSENTES YA SE CORRIO** (punto 3 de la decision del 15 sep): **cero rutas de verdad
+perdidas.** Tampoco lo rehago.
+
+### T.2.b. **LAS TRES FORMAS, Y COMO LAS USO EN ESTE MISMO REPORTE**
+
+| forma | que hace el censo | donde la uso hoy |
+|---|---|---|
+| **(a)** la ruta tiene contenido | pasa | **es la de casi todas**: `.v26/apertura.txt`, `.v26/orden.txt`, `.v26/informe_de_lote.txt`. **Guardo la salida del instrumento en su fichero ANTES de citarla**, que es lo que el encargo dice que casi siempre toca |
+| **(b)** vacia, o no esta | **TUMBA**, salvo `VACIA A PROPOSITO: <motivo>` en la MISMA celda | **hoy no la uso ni una vez.** Si la usara, llevaria motivo escrito al lado del numero |
+| **(c)** era un conjunto | `PATRON: <glob>`, con al menos una coincidencia con contenido | la uso en las **cinco** filas de bandeja y de `_insertados` de `T.0`, que son conjuntos de ficheros y no ficheros |
+
+**Y LO QUE NO ES SEDE:** una frase que **habla** de un fichero no lo ofrece como origen de un numero.
+Cuando escribo *el auditor lee `ACTA_AUDITOR.md`* eso es prosa; cuando escribo una columna *de donde
+sale* con una ruta dentro, eso **es** una sede y se censa.
+
+### T.2.c. **LA COMPROBACION, CORRIDA POR MI Y NO ACEPTADA DEL ENCARGO**
+
+Salida de `python scripts/censar_rutas.py`, guardada en `.v26/censo_t1.txt`:
+
+<!-- TALLADO: parcial salida=.v26/censo_t1.txt -->
+
+    rutas publicadas y censadas : 303
+      pasan                     : 303
+      CAEN                      : 0
+          PATRON                           18
+          VACIA A PROPOSITO                3
+          con contenido                    281
+          vacia por protocolo              1
+
+| medida | valor | de donde sale |
+|---|---:|---|
+| rutas publicadas y censadas en todo `REPORTE.md` | **303** | `.v26/censo_t1.txt` |
+| que CAEN | **0** | `.v26/censo_t1.txt` |
+| marcas `VACIA A PROPOSITO` en pie, contadas y publicadas | **3** | `.v26/censo_t1.txt` |
+| vacia por protocolo (`docs/loop/PARA_ALEXIS.md`, que no es mi sede) | **1** | `.v26/censo_t1.txt` |
+
+**LAS TRES MARCAS EN PIE SON HEREDADAS Y NINGUNA ES MIA DE HOY:** dos de ficheros **borrados en su
+vuelta por no estar citados en ninguna sede** (`.pob_loo.jsonl`, `.pob_n.txt`) y una **ya adjudicada
+en la `ACTA 15` `1.9`** (`.barrido_C_con_ensayo_v16.txt`). **Las cuento porque la regla dice que cada
+corrida las cuenta, no porque hoy haya puesto ninguna: hoy he puesto cero.**
+
+**EL CENSO CORRIO YA DOS VECES HOY**: en el hook del commit de apertura (`0215594`, verde con `293`) y
+otra vez tras anexar `T.0` (verde con `303`). **Las diez rutas nuevas son mias de esta vuelta y las
+diez pasan.**
+
+**TAREA 1 CERRADA.** La condicion no se cierra escribiendola: se cierra porque el resto de este
+reporte esta escrito con ella, **y el hook lo comprueba en cada commit que queda por hacer**.
