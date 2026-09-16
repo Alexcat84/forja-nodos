@@ -905,3 +905,7 @@ CENSO VERDE: las 493 rutas publicadas sostienen lo que dicen sostener.
 CIERRE VERDE: el tallado y el censo de rutas.
 [pre-commit] verde
 [2026-09-16 19:01:15] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-16 19:35:39] auditor listo (USD 12.243518999999997), 2064s, intento 1 de 7
+[2026-09-16 19:35:39]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-16 19:35:39] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-16 19:35:39] VUELTA 3 : EXTRACTOR (claude-opus-5)
