@@ -32718,3 +32718,140 @@ instrumento a instrumento. **Escribir encima seria pisar evidencia sellada de ot
 
 **Son CINCO tareas y el tope son cinco** (`EXTRACTOR.md` 1.3). **La `TAREA 2` va antes que la `4`**
 por orden expreso del encargo.
+
+## V.2. TAREA 1: **LOS REGISTROS DE LA `ACTA 27`**
+
+*Van primeros y no se solapan. **El punto `5` necesita un instrumento que la `TAREA 2` construye**, asi
+que se registra aqui su medicion y se ejecuta en `V.3.e`, con su fila anexada alli.*
+
+### V.2.a. **PUNTO 1: LAS `13` ADJUDICACIONES DE LA `ACTA 27`, RECOGIDAS UNA A UNA**
+
+**LOS `7` DISCUTIBLES** (`ACTA 27` `2`). La columna *mio* es lo que firme en `U.8.d`:
+
+| # | el discutible | mio | **adjudicado** | donde |
+|---:|---|---|---|---|
+| **1** | el `--paso 4` de la arista en vez del `--paso 1` | `paso 4` | **SOSTENIDO** | `ACTA 27` `2.4` |
+| **2** | `explicar_idea_facil_comprender_oyente` contra `compartir_logica_mostrar_razonamiento` | `SANO` | **SOSTENIDO**, y a ciegas | `ACTA 27` `2.1` |
+| **3** | `centrar_debate_ideas_fuera_egos` contra `fijar_fecha_cierre_debate_equipo` | `SANO` | **SOSTENIDO**, CONTAMINADA | `ACTA 27` `2.2` |
+| **4** | `crear_obligacion_disentir_equipo` contra `crear_cultura_escucha_equipo` | `SANO` | **SOSTENIDO**, CONTAMINADA | `ACTA 27` `2.3` |
+| **5** | la operacion nueva solo toca `resumen_teorico` y exige la marca | bien alcanzada | **BIEN ALCANZADA.** Ni ancha ni estrecha | `ACTA 27` `2.5` |
+| **6** | fundir el punto `2` en el punto `3` de la `TAREA 1` | fundirlos | **CORRECTA, y ademas mide antes de decidir** | `ACTA 27` `2.5` |
+| **7** | declarar `PARADA` y no `PENDIENTE DE DOCTRINA` las dos de `U.7` | `PARADA` | **SE CAE, Y CON ELLA LA TERCERA** | `ACTA 27` `2.5` y `5` |
+
+**`6` de `7` sostenidos. El `7` se cae**, y su caida es la que abre las `TAREAS 2` y `3` de hoy.
+
+**LAS `6` PROPUESTAS** (`ACTA 27` `7`), que son las de `U.8.f` y `U.9.d`:
+
+| # | lo que propuse | **adjudicacion** | que hago hoy |
+|---:|---|---|---|
+| **1** | que una insercion rechazada no escriba nada | **A FAVOR** | **`TAREA 2.a`** |
+| **2** | una salida para el par con los dos extremos en la bandeja | **A FAVOR, y el auditor elige la forma**: el `CONTINUA` se escribe y la arista queda **EN COLA** | **`TAREA 2.b`** |
+| **3** | que `D.36` diga tambien que orden se toma con los dos extremos en bandeja | **NO HACE FALTA TOCAR `D.36`**: los dos leen, no hay empate que romper | **nada, y no lo toco** |
+| **4** | que `corregir` la revise quien tenga la sede antes de usarse mas | **REVISADA Y FIRMADA.** Queda autorizada | **la sigo usando** |
+| **5** | que la vigencia distinga aniadir prosa declarada de tocar un paso | **EN PARTE**: la salida barata de `D.15` si; **cambiar la vara NO** | **`TAREA 3.b`, y NO toco la vara** |
+| **6** | que la vigencia sepa que un vecino de BANDEJA no es `NODO IDO` | **A FAVOR**, citando `D.38.5` y `D.38.4` | **`TAREA 3.c`** |
+
+**`13` adjudicaciones recogidas: `7` mas `6`.**
+
+### V.2.b. **PUNTO 2: LAS TRES PARADAS, ADJUDICADAS Y NO SOSTENIDAS, CADA UNA CON SU REGLA**
+
+*`ACTA 27` `5`. **Las tres las reprodujo el auditor con mis propios comandos sobre copia, o las midio;
+lo que se cae no es la medicion, es la conclusion.** Lo registro sin descuento.*
+
+| # | lo que declare PARADA | **la regla que la cubre** | que la resuelve hoy |
+|---:|---|---|---|
+| **1** | el par con los dos extremos en la bandeja: con `CONTINUA` no hay orden que funcione | **`D.29` por su letra**: *una arista se cablea contra ids que ya viven, y en cuarentena todavia no vive ninguno... mientras el candidato espera en cuarentena, la arista vive en un bloque propio y titulado del reporte*. **No falta doctrina: falta que llegue al codigo** | `TAREA 2.b` |
+| **2** | la insercion rechazada que escribe igual en la bitacora | **`EXTRACTOR.md` 14**: `bitacora/` esta bajo la aduana y **registra lo que la aduana HIZO**. Una corrida que no inserto no hizo nada, luego no tiene nada que registrar | `TAREA 2.a` y `2.c` |
+| **3** | la vigencia en rojo, con la frase *la salida no esta escrita en ningun sitio* | **`D.15` la escribe y ademas NIEGA el rojo**: *se relee con el texto de hoy, **o se declara por que sigue valiendo**... y por eso esto **NO** pone el gate en rojo* | `TAREA 3` |
+
+**LO QUE ACEPTO SIN ATENUANTE:** la tercera se cae **contra una regla que tenia delante y que cite en
+la fila de encima**. Las otras dos se caen por no haber buscado la mitad de `D.29` que dice *despues*.
+
+### V.2.c. **PUNTO 3: MIS DOS CAIDAS DE `REPORTE`, CON SU ESPECIE Y SU SEDE**
+
+| # | la caida | **especie** | **sede** | acumula |
+|---:|---|---|---|---|
+| **1** | `NODO IDO` son **`16` HALLAZGOS sobre `12` LINEAS**, y yo escribi *`16` lineas, `11` nodos distintos*. Las lineas `248` a `251` dan **dos hallazgos cada una** | **`REPORTE`** | **TABLA** (`U.9.b`, columna *cuantos*) | **SI** |
+| **2** | declarar que la salida de la `PARADA 3` *no esta escrita en ningun sitio* cuando `D.15` la escribe | **`REPORTE`** | **TABLA** (`U.9.c`) **y CONCLUSION** (`U.9` y el cierre) | **SI** |
+
+**Las dos son UNA SOLA TANDA** (`ACTA 25` `8.2`: las rachas cuentan tandas, no piezas), asi que
+**`REPORTE` sube UN escalon, de `1 de 3` a `2 de 3`. Estoy en el penultimo escalon.**
+
+**Y LAS DOS SON DE LA MISMA FAMILIA, que es lo que hay que llevarse:** una cifra contada de una salida
+**sin volver a contarla**, y una regla declarada inexistente **que estaba en el parrafo siguiente al
+que cite**. Las dos se evitaban con un comando.
+
+### V.2.d. **EL REMEDIO BLOQUEANTE DE LA `ACTA 27`, ESTRENADO AQUI Y CON SU SALIDA PEGADA**
+
+> **ANTES DE ESCRIBIR UNA CONCLUSION QUE DIGA QUE ALGO NO ESTA ESCRITO EN NINGUN SITIO, LO BUSCAS CON
+> UN `grep` Y PEGAS LA SALIDA.**
+
+**Lo estreno sobre la afirmacion que me costo la caida `2`**, para que quede el ejemplar y no la
+promesa. Salida en `.v28e/grep_remedio.txt`:
+
+<!-- TALLADO: parcial salida=.v28e/grep_remedio.txt -->
+
+    $ grep -n "declara por que sigue valiendo" docs/BANCO_DE_REGLAS.md docs/loop/EXTRACTOR.md
+    docs/BANCO_DE_REGLAS.md:204:declara por que sigue valiendo. Las dos cosas las hace una persona, **y por eso
+    $ sed -n "203,206p" docs/BANCO_DE_REGLAS.md
+    **UN RANCIO NO SE CITA COMO VIGENTE:** se relee con el texto de hoy, o se
+    declara por que sigue valiendo. Las dos cosas las hace una persona, **y por eso
+    esto NO pone el gate en rojo**: el gate vigila lo que es cierto o falso hoy;
+    esto vigila lo que fue cierto ayer y nadie ha vuelto a mirar.
+
+**Estaba a un `grep` de distancia.** Cada conclusion de esta vuelta que diga *no existe* lleva su
+`grep` pegado, y las hay en `V.3.e` y en `V.6`.
+
+### V.2.e. **PUNTO 4: LA ARISTA RETIRADA POR EL AUDITOR, QUE ES UNA CAIDA SUYA Y NO MIA**
+
+*`ACTA 27` `2.2` y `8.1`. Lo registro porque el encargo lo manda, y lo registro sin comentario de mas.*
+
+| | |
+|---|---|
+| **lo que su apertura sellada firmo** | `SANO`, **pero con arista `D.29` pendiente**: `fijar_fecha_cierre_debate_equipo` **madre de** `centrar_debate_ideas_fuera_egos` |
+| **lo que yo firme** | `SANO` **sin arista** |
+| **la adjudicacion** | **la arista se retira por correccion declarada, sin borrar.** El libro pone el procedimiento del cambio de papeles en `L229`, que es el parrafo del **propio hijo**, y `L257` es una **remision hacia atras** veintiocho lineas despues |
+| **lo que le cuesta** | su cifra sellada *aristas que mi lectura levanta y la señal no: `1`* **es falsa: es `0`**. Su racha propia sube a `2 de 3` |
+
+**MI `SANO` ERA EL BUENO.** Y lo que me llevo de aqui no es el acierto: es que **la discrepancia se
+adjudico leyendo el libro y no la señal** (`D.19`), que es la unica forma en que un empate entre dos
+lecturas se rompe sin que gane el que argumenta mejor.
+
+### V.2.f. **PUNTO 5: LA PREMISA FALSA DE LA LINEA `256`, MEDIDA AQUI Y EJECUTADA EN `V.3.e`**
+
+**PRIMERO LA MEDICION, con la salida pegada** (`.v28e/linea_256.txt`):
+
+<!-- TALLADO: parcial salida=.v28e/linea_256.txt -->
+
+    candidato: explicar_idea_facil_comprender_oyente
+    vecino   : compartir_logica_mostrar_razonamiento
+    veredicto: SANO
+    RAZON    : Son HERMANOS de la misma etapa de persuadir y no madre e hijo: ninguno nombra el procedimiento d ...
+
+**LECTURA:** la razon dice *la misma etapa de persuadir* **y los dos nodos declaran etapas distintas**.
+La medicion de las dos etapas, tambien pegada. **Uno vive en el grafo y el otro sigue en la bandeja**,
+asi que la poblacion es grafo mas bandejas (`D.38.4`, `D.38.5`):
+
+<!-- TALLADO: parcial salida=.v28e/etapas_256.txt -->
+
+    POBLACION: grafo mas bandejas (D.38.4 y D.38.5)
+    explicar_idea_facil_comprender_oyente    [grafo]   -> paso CLARIFY de la rueda
+    compartir_logica_mostrar_razonamiento    [bandeja] -> paso PERSUADE de la rueda
+
+**La clase `SANO` es correcta y no se toca** (la premisa falsa la refuerza, no la debilita): **lo que
+se corrige es la premisa, por correccion declarada y sin borrar.**
+
+**POR QUE NO LO EJECUTO AQUI, y lo busco con un comando en vez de afirmarlo** (`V.2.d`):
+
+<!-- TALLADO: parcial salida=.v28e/grep_operacion_bitacora.txt -->
+
+    $ python forja.py ayuda | grep -in "bitacora"
+    (cero lineas)
+
+**`bitacora/` es sede de la aduana y no se toca a mano** (`EXTRACTOR.md` 14), y **hoy ninguna
+operacion de la casa escribe sobre una linea ya escrita de la bitacora.** La `TAREA 2.c` manda
+construir exactamente esa operacion (*se marcan por operacion, con su razon, igual que hiciste con
+`corregir`*). **Uso esa y no invento una segunda**, que seria maquinaria de mas contra
+`EXTRACTOR.md` 13.
+
+**ESTADO DEL PUNTO 5: MEDIDO AQUI, EJECUTADO EN `V.3.e`.**

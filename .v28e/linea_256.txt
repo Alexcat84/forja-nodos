@@ -1,0 +1,4 @@
+candidato: explicar_idea_facil_comprender_oyente
+vecino   : compartir_logica_mostrar_razonamiento
+veredicto: SANO
+RAZON    : Son HERMANOS de la misma etapa de persuadir y no madre e hijo: ninguno nombra el procedimiento d ...
