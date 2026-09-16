@@ -1,0 +1,7 @@
+=== persuadir_emocion_oyente_no_propia  (3 vecinos)
+  explicar_idea_facil_comprender_oyente          [GRAFO]  por similitud_texto
+      similitud 0.371  familia 0.111  paso 0.504   paso 1 del candidato contra paso 3 de explicar_idea_facil_comprender_oyente
+  escuchar_callado_equipo_tranquilizar_incomodo  [GRAFO]  por similitud_texto
+      similitud 0.352  familia 0.000  paso 0.438   paso 3 del candidato contra paso 5 de escuchar_callado_equipo_tranquilizar_incomodo
+  establecer_credibilidad_pericia_humildad       [bandeja]  por similitud_texto
+      similitud 0.357  familia 0.000  paso 0.422   paso 3 del candidato contra paso 3 de establecer_credibilidad_pericia_humildad

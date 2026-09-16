@@ -1,0 +1,21 @@
+=== minimizar_impuesto_colaboracion_equipo  (10 vecinos)
+  aprender_resultados_vencer_dos_presiones       [GRAFO]  por similitud_texto
+      similitud 0.501  familia 0.000  paso 0.431   paso 4 del candidato contra paso 6 de aprender_resultados_vencer_dos_presiones
+  abrir_debate_humor_explicar_proposito          [GRAFO]  por similitud_texto
+      similitud 0.380  familia 0.000  paso 0.471   paso 1 del candidato contra paso 4 de abrir_debate_humor_explicar_proposito
+  cuidarse_agotamiento_centro_rueda              [bandeja]  por similitud_texto
+      similitud 0.377  familia 0.000  paso 0.449   paso 2 del candidato contra paso 3 de cuidarse_agotamiento_centro_rueda
+  compartir_logica_mostrar_razonamiento          [bandeja]  por similitud_texto
+      similitud 0.381  familia 0.000  paso 0.439   paso 4 del candidato contra paso 4 de compartir_logica_mostrar_razonamiento
+  cambiar_posicion_hechos_explicar_cambio        [GRAFO]  por similitud_texto
+      similitud 0.360  familia 0.000  paso 0.419   paso 2 del candidato contra paso 1 de cambiar_posicion_hechos_explicar_cambio
+  construir_confianza_equipo_tiempo_solas        [bandeja]  por similitud_texto
+      similitud 0.353  familia 0.125  paso 0.418   paso 3 del candidato contra paso 3 de construir_confianza_equipo_tiempo_solas
+  proteger_tiempo_equipo_jefe                    [bandeja]  por similitud_texto
+      similitud 0.388  familia 0.143  paso 0.417   paso 1 del candidato contra paso 5 de proteger_tiempo_equipo_jefe
+  centrar_debate_ideas_fuera_egos                [GRAFO]  por similitud_texto
+      similitud 0.369  familia 0.000  paso 0.414   paso 2 del candidato contra paso 9 de centrar_debate_ideas_fuera_egos
+  parar_debate_emocion_agotamiento               [bandeja]  por similitud_texto
+      similitud 0.388  familia 0.000  paso 0.370   paso 1 del candidato contra paso 1 de parar_debate_emocion_agotamiento
+  agendar_cuidados_propios_cumplirlos            [bandeja]  por similitud_texto
+      similitud 0.365  familia 0.000  paso 0.385   paso 3 del candidato contra paso 5 de agendar_cuidados_propios_cumplirlos

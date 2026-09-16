@@ -1,0 +1,21 @@
+=== crear_obligacion_disentir_equipo  (10 vecinos)
+  parar_debate_emocion_agotamiento               [bandeja]  por similitud_texto
+      similitud 0.411  familia 0.000  paso 0.480   paso 3 del candidato contra paso 4 de parar_debate_emocion_agotamiento
+  pedir_hechos_decision_evitar_recomendaciones   [bandeja]  por similitud_texto
+      similitud 0.474  familia 0.000  paso 0.451   paso 1 del candidato contra paso 2 de pedir_hechos_decision_evitar_recomendaciones
+  crear_cultura_escucha_equipo                   [GRAFO]  por familia_id
+      similitud 0.248  familia 0.333  paso 0.460   paso 2 del candidato contra paso 3 de crear_cultura_escucha_equipo
+  proteger_tiempo_equipo_jefe                    [bandeja]  por similitud_texto
+      similitud 0.357  familia 0.143  paso 0.455   paso 2 del candidato contra paso 8 de proteger_tiempo_equipo_jefe
+  compartir_logica_mostrar_razonamiento          [bandeja]  por similitud_texto
+      similitud 0.368  familia 0.000  paso 0.441   paso 1 del candidato contra paso 4 de compartir_logica_mostrar_razonamiento
+  reservar_calendario_tiempo_ejecutar            [bandeja]  por similitud_texto
+      similitud 0.393  familia 0.000  paso 0.407   paso 3 del candidato contra paso 1 de reservar_calendario_tiempo_ejecutar
+  cambiar_posicion_hechos_explicar_cambio        [GRAFO]  por similitud_texto
+      similitud 0.399  familia 0.000  paso 0.403   paso 2 del candidato contra paso 3 de cambiar_posicion_hechos_explicar_cambio
+  aprender_resultados_vencer_dos_presiones       [GRAFO]  por similitud_texto
+      similitud 0.402  familia 0.000  paso 0.400   paso 1 del candidato contra paso 6 de aprender_resultados_vencer_dos_presiones
+  evitar_presion_social_actos_equipo             [bandeja]  por similitud_texto
+      similitud 0.393  familia 0.125  paso 0.360   paso 3 del candidato contra paso 6 de evitar_presion_social_actos_equipo
+  crear_plan_creible_equipo                      [GRAFO]  por familia_id
+      similitud 0.192  familia 0.333  paso 0.359   paso 2 del candidato contra paso 4 de crear_plan_creible_equipo

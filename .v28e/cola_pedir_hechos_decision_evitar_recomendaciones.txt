@@ -1,0 +1,15 @@
+=== pedir_hechos_decision_evitar_recomendaciones  (7 vecinos)
+  parar_debate_emocion_agotamiento               [bandeja]  por similitud_texto
+      similitud 0.472  familia 0.000  paso 0.405   paso 1 del candidato contra paso 1 de parar_debate_emocion_agotamiento
+  cambiar_posicion_hechos_explicar_cambio        [GRAFO]  por similitud_texto
+      similitud 0.386  familia 0.111  paso 0.470   paso 4 del candidato contra paso 2 de cambiar_posicion_hechos_explicar_cambio
+  abrir_debate_humor_explicar_proposito          [GRAFO]  por similitud_texto
+      similitud 0.356  familia 0.000  paso 0.467   paso 2 del candidato contra paso 7 de abrir_debate_humor_explicar_proposito
+  compartir_logica_mostrar_razonamiento          [bandeja]  por similitud_texto
+      similitud 0.389  familia 0.000  paso 0.462   paso 1 del candidato contra paso 4 de compartir_logica_mostrar_razonamiento
+  crear_obligacion_disentir_equipo               [bandeja]  por similitud_texto
+      similitud 0.456  familia 0.000  paso 0.458   paso 2 del candidato contra paso 1 de crear_obligacion_disentir_equipo
+  mantener_manos_trabajo_real_equipo             [bandeja]  por similitud_texto
+      similitud 0.375  familia 0.000  paso 0.416   paso 4 del candidato contra paso 8 de mantener_manos_trabajo_real_equipo
+  aprender_resultados_vencer_dos_presiones       [GRAFO]  por similitud_texto
+      similitud 0.353  familia 0.000  paso 0.388   paso 3 del candidato contra paso 1 de aprender_resultados_vencer_dos_presiones

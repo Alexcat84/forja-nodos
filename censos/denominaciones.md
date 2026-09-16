@@ -547,3 +547,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | recorrer_rueda_conscientemente_cultura_equipo | otro_idioma | Clarify. Be vigilant about clarifying what you are communicating | ingles | - |
 | 2026-09-16 | recorrer_rueda_conscientemente_cultura_equipo | otro_idioma | Persuade. Pay attention to the small things | ingles | - |
 | 2026-09-16 | recorrer_rueda_conscientemente_cultura_equipo | otro_idioma | Execute: Action should reflect your culture | ingles | - |
+| 2026-09-16 | recorrer_rueda_hacer_cosas_equipo | nombre_largo | El arte de hacer que las cosas se hagan sin decirle a la gente lo que tiene que hacer: escuchar, clarificar, debatir, decidir, persuadir, ejecutar y aprender | castellano | - |
+| 2026-09-16 | recorrer_rueda_hacer_cosas_equipo | sigla | GSD | castellano | - |
+| 2026-09-16 | recorrer_rueda_hacer_cosas_equipo | otro_idioma | the Get Stuff Done (GSD) wheel | ingles | - |
