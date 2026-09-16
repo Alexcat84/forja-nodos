@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'adaptar_escucha_cultura_ajena'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 230 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 231
+  censos escritos: denominaciones

@@ -1,0 +1,10 @@
+  cap_07 : 20
+  cap_08 : 12
+  cap_09 : 20
+  cap_10 : 14
+  cap_11 : 16
+  cap_12 : 2
+  cap_13 : 12
+  cap_14 : 15
+  TOTAL en la bandeja del lote 4 : 111
+  insertados del lote 4          : 31

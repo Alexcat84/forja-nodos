@@ -31447,26 +31447,121 @@ abre los `.v26/ins_*.txt` que escribio la aduana en esta vuelta y los cuenta.
 | 5 | `retirar_etiquetas_permanentes_equipo` | **2** | 3 | **3** | 0 | **DENTRO** |
 | 6 | `revisar_cinco_causas_mal_desempenio` | **2** | 1 | **1** | 0 | **DENTRO** |
 | 7 | `subir_vara_calidad_equipo` | **2** | 8 | **8** | 0 | **DENTRO** |
-| | **TOTAL** | **14** | **34** | **34** | **1** | **7 de 7 DENTRO** |
+| 8 | `abrir_debate_humor_explicar_proposito` | **1** | 0 | **0** | 0 | **DENTRO** |
+| 9 | `adaptar_escucha_cultura_ajena` | **1** | 0 | **0** | 0 | **DENTRO** |
+| 10 | `aprender_resultados_vencer_dos_presiones` | **1** | 0 | **0** | 0 | **DENTRO** |
+| 11 | `bajar_detalle_organizacion_fuente_hechos` | **1** | 0 | **0** | 0 | **DENTRO** |
+| 12 | `cambiar_posicion_hechos_explicar_cambio` | **2** | 1 | **1** | 0 | **DENTRO** |
+| | **TOTAL** | **20** | **35** | **35** | **1** | **12 de 12 DENTRO** |
 
-**`cap_06` QUEDA CERRADO ENTERO.** Salida de `sh` con los dos conteos, guardada en
-`.v26/saldo_cap06.txt`:
+**LO QUE QUEDA EN LA BANDEJA, RECONTADO AL CERRAR LA TANDA Y NO HEREDADO DEL FICHERO DE ORDEN.**
+Salida de `python .v26/pendientes.py`, guardada en `.v26/pendientes.txt`. **Lo recuento porque la
+bandeja se movio dentro de esta misma vuelta**, que es exactamente como envejece una cifra de cola:
 
-<!-- TALLADO: parcial salida=.v26/saldo_cap06.txt -->
+<!-- TALLADO: parcial salida=.v26/pendientes.txt -->
 
-    nodos en el grafo   : 229
-    veredictos          : 239
-    bandeja lote 4      : 116
-    insertados del lote 4: 26
+      cap_07 : 20
+      cap_08 : 12
+      cap_09 : 20
+      cap_10 : 14
+      cap_11 : 16
+      cap_12 : 2
+      cap_13 : 12
+      cap_14 : 15
+      TOTAL en la bandeja del lote 4 : 111
+      insertados del lote 4          : 31
 
-| medida | al abrir | al cerrar `cap_06` | de donde sale |
-|---|---:|---:|---|
-| nodos en el grafo | 222 | **229** | `dataset/nodos.jsonl` |
-| veredictos en bitacora | 203 | **239** | `bitacora/VEREDICTOS.jsonl` |
-| candidatos del lote 4 en bandeja | 123 | **116** | `PATRON: cuarentena/scott_radical_candor/*.json` |
-| insertados del lote 4 | 19 | **26** | `PATRON: cuarentena/_insertados/scott_radical_candor/*.json` |
+**`cap_06` NO APARECE EN ESA LISTA, Y ESO ES SU CIERRE:** la unidad que abrio la vuelta con siete
+candidatos **ya no tiene ninguno en bandeja.**
 
-**LOS SIETE DE `cap_06` ENTRAN LOS SIETE**, en **13 pasadas del instrumento** y con **34 pares
-leidos y adjudicados uno a uno**. **Y el reparto de las 13 pasadas dice donde esta el coste:** seis
-candidatos gastaron dos pasadas (una para que la aduana levantase su cola, otra para entrar con los
-veredictos escritos) y **uno gasto dos por una razon distinta**, que es el rechazo de `T.3.b`.
+**LA TANDA ENTERA ENTRA: `12` de `12`**, en **20 pasadas del instrumento** y con **35 pares leidos y
+adjudicados uno a uno**, que la tabla suma como **35 veredictos escritos**. **`cap_06` cierra entero
+con sus `7`, y de `cap_07` entran `5` de `25`.**
+
+> ### **CORRECCION DECLARADA, EN EL ACTO Y CONTRA EL INSTRUMENTO**
+>
+> **Escribi `13 pasadas` y `6 de 7 DENTRO` en esta misma seccion y en el mensaje del commit
+> `cap_06`, y el instrumento da `14` y `7 de 7`.** El motivo es que corri `.v26/tanda.py` **antes de
+> que la ultima pasada de `subir_vara_calidad_equipo` terminase**, y publique la foto vieja.
+> **La tabla de arriba es la regenerada, no la tecleada** (`D.41`), y la prosa se corrige contra
+> ella. **Es la caida que `EXTRACTOR.md` 4 nombra: medir temprano y publicar tarde sin remedir.**
+
+**EL REPARTO DE LAS 14 PASADAS DICE DONDE ESTA EL COSTE:** **los siete gastaron exactamente dos**,
+una para que la aduana levantase su cola y otra para entrar con los veredictos escritos. **Ninguno
+necesito una tercera**, ni siquiera el que la aduana rechazo en `T.3.b`: aquel rechazo gasto una de
+sus dos y la segunda entro limpia.
+
+### T.3.e. **LO QUE LA SEÑAL 1 LEVANTO HOY, MEDIDO, Y UN PAR EN LA BANDA ALTA QUE NO ES GEMELO**
+
+*`EXTRACTOR.md` 11 manda leer antes que ningun otro el par cuya señal 1 pase de `0,4`, porque en el
+catalogo de la calibracion **no hay ni un ajeno por encima de esa cifra**. Hoy me salio uno, lo lei el
+primero por ese mandato, **y no es gemelo.** Lo publico con la medicion entera al lado y **no pido
+mover ningun umbral**, que es lo que `EXTRACTOR.md` 11 prohibe expresamente.*
+
+Salida de `python .v26/banda.py`, guardada en `.v26/banda.txt`:
+
+<!-- TALLADO: parcial salida=.v26/banda.txt -->
+
+    pares distintos leidos en esta vuelta : 35
+
+    QUE SENIAL LOS LEVANTA
+      similitud_texto    : 28
+      familia_id         : 8
+      paso_contra_nodo   : 0
+
+    EN QUE BANDA DE SIMILITUD DE TEXTO CAEN
+      0.35 a 0.40 (justo por encima)           : 27
+      0.40 en adelante (la ALTA de 11)         : 1
+      por debajo de 0.35 (no la levanta la 1)  : 7
+
+    LOS QUE PASAN DE 0.40, uno a uno
+      0.400  retirar_etiquetas_permanentes_equipo contra manejar_enfado_persona_desafiada
+
+    MAYOR SIMILITUD DE TEXTO DE LA VUELTA : 0.400
+
+**LAS TRES COSAS QUE ESTA MEDICION DICE, Y NINGUNA MUEVE UNA VARA:**
+
+| # | lo medido | lo que significa |
+|---:|---|---|
+| **1** | **`paso_contra_nodo` levanto `0` de 35** | es `D.19` otra vez: la señal 3 no aparece. **Las tres aristas de esta vuelta las trajo la lectura y ninguna la trajo una señal** |
+| **2** | **`27` de los `35` pares caen entre `0,35` y `0,40`** | en este libro **esa banda estrecha es casi toda la cola de lectura**, y lo que comparten esos pares es el **registro narrativo de la autora** (casos con nombre propio, cifras, dialogo), no el procedimiento. **Los 27 salieron `SANO`** |
+| **3** | **`1` par llega a `0,400` y NO es gemelo** | `retirar_etiquetas_permanentes_equipo` contra `manejar_enfado_persona_desafiada`. Lo que se parece es la FORMA de un paso en cada uno (*elimina de tu vocabulario la frase no te lo tomes como algo personal* contra *no uses los nombres de las dos fases como etiquetas permanentes*): **los dos son un no digas esto.** Activacion, entregable y seccion del libro distintos |
+
+> ### **POR QUE ESTO NO ES UNA PARADA, Y LO RAZONO EN VEZ DE DECIDIRLO**
+>
+> `EXTRACTOR.md` 7 dice que se para si algo **contradice una cifra publicada con su corte**. **La cifra
+> de `CERO ajenos por encima de 0,4` esta publicada con su poblacion: el catalogo de 3.169 nodos
+> auditados de `docs/CALIBRACION_D4.md`.** Mi par **no vive en esa poblacion**: vive en este grafo,
+> que es otro. **Asi que no la contradigo, y por eso no paro.**
+>
+> **Lo que si hago es dejarlo escrito para quien pueda adjudicarlo**, porque la frase que el extractor
+> tiene delante al trabajar es *son gemelos y nada mas*, **y hoy seguirla al pie de la letra habria
+> sido un error.** Va como propuesta en `T.6`, no como adjudicacion mia (`EXTRACTOR.md` 14).
+
+### T.3.f. **UN PAR QUE NINGUNA SEÑAL LEVANTO Y QUE ENCONTRE MIRANDO UN CENSO**
+
+**`revisar_cinco_causas_mal_desempenio` (Scott, `cap_06`) dice en su titulo LAS CINCO CAUSAS de que
+alguien bueno rinda mal. Y ya vivia en el grafo `mover_rapido_persona_papel_equivocado` (Zhuo), cuyo
+`nombre_largo` en el censo dice LAS CINCO RAZONES por las que alguien no hace buen trabajo.**
+
+**Lo encontre corriendo un `grep` sobre `censos/denominaciones.md` antes de insertar**, no por una
+señal: la aduana no lo levanto. **Y el manual seccion 3.4 tiene una linea que obliga a mirarlo:
+*jamas dos compresiones de la misma numeracion.***
+
+**NO SON LA MISMA NUMERACION, y se ve poniendo las dos listas una al lado de la otra:**
+
+| las cinco de Scott (`cap_06`) | las cinco de Zhuo |
+|---|---|
+| papel equivocado | no sabe a que se parece un gran trabajo |
+| recien llegado al papel | sus aspiraciones no encajan con lo que el puesto necesita |
+| demasiado de golpe | no se siente apreciado |
+| problema personal | le faltan las habilidades |
+| encaje cultural malo | los valores no casan con los del equipo |
+
+**Dos autores contaron cinco cada uno y no contaron las mismas cinco.** La prohibicion del manual es
+contra **partir en dos la numeracion de UN libro**, y aqui hay dos libros con dos listas propias.
+**No hay nada que fundir y no declaro arista**: el par no llego a la aduana, asi que **su veredicto no
+existe en la bitacora y lo digo en vez de fabricarlo.**
+
+**LO ESCRIBO PORQUE ES LA CARA BUENA DE LA MISMA MONEDA DE `T.3.e`:** la señal 1 me trajo 27 pares que
+no eran nada, **y este, que si merecia mirarse, no lo trajo ninguna.**

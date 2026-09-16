@@ -1,0 +1,16 @@
+pares distintos leidos en esta vuelta : 35
+
+QUE SENIAL LOS LEVANTA
+  similitud_texto    : 28
+  familia_id         : 8
+  paso_contra_nodo   : 0
+
+EN QUE BANDA DE SIMILITUD DE TEXTO CAEN
+  0.35 a 0.40 (justo por encima)           : 27
+  0.40 en adelante (la ALTA de 11)         : 1
+  por debajo de 0.35 (no la levanta la 1)  : 7
+
+LOS QUE PASAN DE 0.40, uno a uno
+  0.400  retirar_etiquetas_permanentes_equipo contra manejar_enfado_persona_desafiada
+
+MAYOR SIMILITUD DE TEXTO DE LA VUELTA : 0.400

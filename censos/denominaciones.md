@@ -519,3 +519,13 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | revisar_cinco_causas_mal_desempenio | otro_idioma | manager, look at yourself in the mirror | ingles | - |
 | 2026-09-16 | subir_vara_calidad_equipo | nombre_largo | La empatia ruinosa peor de todas: dejar que alguien siga anios en un trabajo que no es el suyo. La politica de darle un proyecto donde pueda brillar, y que pasa si sigue sin brillar | castellano | - |
 | 2026-09-16 | subir_vara_calidad_equipo | otro_idioma | there is no such thing as a B-player | ingles | - |
+| 2026-09-16 | abrir_debate_humor_explicar_proposito | nombre_largo | Usar el humor y pasarlo bien: el equipo copia el humor del jefe, y a quien el debate le parece una agresion hay que explicarle antes para que es | castellano | - |
+| 2026-09-16 | abrir_debate_humor_explicar_proposito | otro_idioma | use humor and have fun | ingles | - |
+| 2026-09-16 | adaptar_escucha_cultura_ajena | nombre_largo | Adaptarse a una cultura de escucha: el retrato de Astrid Tuminez en el proceso de paz del sur de Filipinas, dentro del paso LISTEN de la rueda | castellano | - |
+| 2026-09-16 | adaptar_escucha_cultura_ajena | otro_idioma | adapt to a culture of listening | ingles | - |
+| 2026-09-16 | aprender_resultados_vencer_dos_presiones | nombre_largo | Aprender: la disciplina casi sobrehumana de reconocer que el resultado podria ser mucho mejor, y las dos presiones que el libro dice que le tentaban a dejar de hacerlo | castellano | - |
+| 2026-09-16 | aprender_resultados_vencer_dos_presiones | otro_idioma | learn | ingles | - |
+| 2026-09-16 | bajar_detalle_organizacion_fuente_hechos | nombre_largo | Hacer espeleologia en tu organizacion: meterse de vez en cuando en los detalles de una decision pequeña, e ir al que hace el trabajo cuando el que decide eres tu | castellano | - |
+| 2026-09-16 | bajar_detalle_organizacion_fuente_hechos | otro_idioma | go spelunking | ingles | - |
+| 2026-09-16 | cambiar_posicion_hechos_explicar_cambio | nombre_largo | La presion de ser coherente: la primera de las dos presiones que empujan a dejar de aprender, y la comunicacion que la desactiva | castellano | - |
+| 2026-09-16 | cambiar_posicion_hechos_explicar_cambio | otro_idioma | pressure to be consistent | ingles | - |

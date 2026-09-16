@@ -7,4 +7,9 @@
 | 5 | `retirar_etiquetas_permanentes_equipo` | **2** | 3 | **3** | 0 | **DENTRO** |
 | 6 | `revisar_cinco_causas_mal_desempenio` | **2** | 1 | **1** | 0 | **DENTRO** |
 | 7 | `subir_vara_calidad_equipo` | **2** | 8 | **8** | 0 | **DENTRO** |
-| | **TOTAL** | **14** | **34** | **34** | **1** | **7 de 7 DENTRO** |
+| 8 | `abrir_debate_humor_explicar_proposito` | **1** | 0 | **0** | 0 | **DENTRO** |
+| 9 | `adaptar_escucha_cultura_ajena` | **1** | 0 | **0** | 0 | **DENTRO** |
+| 10 | `aprender_resultados_vencer_dos_presiones` | **1** | 0 | **0** | 0 | **DENTRO** |
+| 11 | `bajar_detalle_organizacion_fuente_hechos` | **1** | 0 | **0** | 0 | **DENTRO** |
+| 12 | `cambiar_posicion_hechos_explicar_cambio` | **2** | 1 | **1** | 0 | **DENTRO** |
+| | **TOTAL** | **20** | **35** | **35** | **1** | **12 de 12 DENTRO** |
