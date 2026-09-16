@@ -1,0 +1,6 @@
+ADUANA DE INSERCION, candidato 'decidir_momento_despedir_persona'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 222 nodo(s) del dataset
+
+RECHAZADO: el veredicto nombra a 'despedir_persona_franqueza_radical' y ese nodo no vive en el grafo.
+  Una arista se cablea contra un id que YA existe. Si la madre todavia esta en cuarentena, entra ella primero.

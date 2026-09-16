@@ -503,3 +503,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-13 | pedir_critica_equipo_premiarla | otro_idioma | soliciting criticism | ingles | - |
 | 2026-09-13 | acompaniar_mejores_equipo_socio | nombre_largo | Lo que necesitan de ti por igual la estrella de rock y la superestrella: que no los ignores porque no te necesitan, y que te arremangues con ellos en vez de solo aconsejar | castellano | - |
 | 2026-09-13 | acompaniar_mejores_equipo_socio | otro_idioma | be a partner, not an absentee manager or a micromanager | ingles | - |
+| 2026-09-15 | despedir_persona_franqueza_radical | nombre_largo | Los dos recordatorios con los que el texto dice que hay que llegar a esa reunion: acordarse de un trabajo en el que tu fuiste malo, y tener presente que mantener a quien lo hace mal castiga a quien lo hace bien | castellano | - |
+| 2026-09-15 | despedir_persona_franqueza_radical | otro_idioma | be Radically Candid with the person you are firing | ingles | - |
+| 2026-09-16 | decidir_momento_despedir_persona | nombre_largo | Las tres preguntas que hay que contestar antes de despedir a alguien que no mejora, y las cuatro mentiras que los jefes se cuentan a si mismos para no hacerlo | castellano | - |
+| 2026-09-16 | decidir_momento_despedir_persona | otro_idioma | how do you know when it is time to fire somebody | ingles | - |

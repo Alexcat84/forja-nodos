@@ -31280,3 +31280,74 @@ diez pasan.**
 
 **TAREA 1 CERRADA.** La condicion no se cierra escribiendola: se cierra porque el resto de este
 reporte esta escrito con ella, **y el hook lo comprueba en cada commit que queda por hacer**.
+
+---
+## T.3. TAREA 2: LA INSERCION DEL LOTE 4 QUE QUEDA
+
+### T.3.a. **EL ORDEN, ESCRITO Y COMMITEADO ANTES DE CORRER LA TANDA**
+
+*La `ACTA 24` `3.3` lo dejo dicho y la vuelta 25 lo estreno: **una razon dada antes es metodo, la
+misma razon dada despues es justificacion, y no se distinguen leyendolas.** Asi que esta seccion
+viaja en el commit de apertura de la vuelta (`0215594` mas el de esqueleto), **anterior al primer
+`insertar`**. Quien dude puede comprobarlo con `git log`.*
+
+Salida de `python .v26/orden.py`, guardada en `.v26/orden_publicado.txt`:
+
+<!-- TALLADO: parcial salida=.v26/orden_publicado.txt -->
+
+    1. el que la aduana dejo EN COLA al cerrar la vuelta 25 : 1
+        1. decidir_momento_despedir_persona   (cap_06, 4 pares por leer)
+
+    2. despues, el orden del libro, alfabetico por id dentro de cada unidad : 122
+       cap_06 : 6     cap_09 : 20     cap_12 : 2
+       cap_07 : 25    cap_10 : 14     cap_13 : 12
+       cap_08 : 12    cap_11 : 16     cap_14 : 15
+
+    TOTAL en la bandeja del lote 4 : 123
+
+| la decision | la razon, escrita antes |
+|---|---|
+| **primero el que quedo en cola** | **su cola ya esta medida y publicada** (`4` pares, `.v25/cola_lectura.txt`), y el encargo me manda citarla de ahi y no recontarla de memoria. **Es el unico candidato de la bandeja cuyo trabajo de lectura ya estaba identificado al abrir** |
+| **despues el orden del libro** | `EXTRACTOR.md` 12.3: *los nodos de un mismo capitulo llegan juntos, y el primero que entra cambia lo que el segundo mide* |
+| **alfabetico por id dentro de cada unidad** | es el desempate que la casa usa desde la vuelta 24. **No lo elijo hoy: lo heredo, y por eso no necesita argumento nuevo** |
+| **cuando uno bloquee, queda en cola y sigo** | **`D.36`:** *entre dos ordenes posibles, el que abre la cola gana.* El `ACTA 25` `3.3` sostuvo este mismo criterio en la vuelta 25 y no lo reabro |
+| **y una insercion cada vez, jamas dos a la vez** | **es mi propia caida de dato de la vuelta 25** (`S.3.d`): corri dos a la vez y el grafo perdio un nodo con el gate en verde. **Hoy no corro ninguna concurrente**, y cada pasada espera a la anterior |
+
+**LO QUE NO ENTRA EN ESTA TANDA, DICHO ANTES DE EMPEZAR:** el lote 5 sigue **ABIERTO** y el encargo
+de hoy me manda seguir minandolo. **Sus candidatos no se insertan** (`D.39`, `EXTRACTOR.md` 15.7).
+
+### T.3.b. **LA PRIMERA PASADA TUMBA EL ORDEN QUE YO HABIA ESCRITO, Y LA ADUANA DICE POR QUE**
+
+*Esto es lo contrario de una caida: es el instrumento corrigiendome antes de que el error entrase al
+grafo. Lo escribo entero porque el encargo me entrega esa cola como trabajo pagado y **no lo estaba
+del todo**.*
+
+**QUE PASO.** Escribi los cuatro veredictos de `decidir_momento_despedir_persona`, leyendo los cuatro
+vecinos que `.v25/cola_lectura.txt` nombra, y corri la aduana. Salida guardada en `.v26/ins_c01.txt`:
+
+<!-- TALLADO: parcial salida=.v26/ins_c01.txt -->
+
+    ADUANA DE INSERCION, candidato 'decidir_momento_despedir_persona'
+      esquema, reglas de id, fuentes canonicas y guiones: verde
+      blocking multi señal contra 222 nodo(s) del dataset
+
+    RECHAZADO: el veredicto nombra a 'despedir_persona_franqueza_radical' y ese nodo no vive en el grafo.
+      Una arista se cablea contra un id que YA existe. Si la madre todavia esta en cuarentena, entra ella primero.
+
+**LO QUE ESTO ENSEÑA, Y NO LO SABIA AL ABRIR:**
+
+| | |
+|---|---|
+| **la cola de lectura y la cola de la aduana NO son la misma poblacion** | el `informe` carga **grafo mas bandejas** desde `D.38.5`, y por eso levanta `4`. **La insercion compara contra el grafo y solo el grafo** (`222 nodo(s) del dataset`, impreso arriba), y por eso solo admite `3` veredictos de esos cuatro |
+| **el cuarto par no era ilegible: era prematuro** | `despedir_persona_franqueza_radical` vivia en `cuarentena/scott_radical_candor/`. **La lectura que hice de ese par no se pierde: se paga cuando el vecino entra** |
+| **y el instrumento me da el orden** | *Si la madre todavia esta en cuarentena, entra ella primero.* **Cambio el orden por lo que dice la aduana y no por lo que me parece**, que es `D.36` en su literal: entre dos ordenes posibles, gana el que abre la cola |
+
+**ASI QUE EL ORDEN DE `T.3.a` SE CORRIGE EN SU PRIMERA LINEA, Y LO DECLARO EN VEZ DE REESCRIBIRLO:**
+antes de `decidir_momento_despedir_persona` entra `despedir_persona_franqueza_radical`. **El resto del
+orden no se toca.**
+
+**Y LA CIFRA DEL ENCARGO, RELEIDA CON ESTO DELANTE:** el encargo dice que a
+`decidir_momento_despedir_persona` le faltan **4** pares por leer, y es cierto **como cola de
+lectura**. **Como cola de la aduana eran 3 el 15 sep y son 4 hoy**, porque el cuarto vecino entro al
+grafo en esta misma vuelta. **No corrijo la cifra del encargo: no estaba mal. Digo que mide otra
+cosa que la que la aduana pide.**
