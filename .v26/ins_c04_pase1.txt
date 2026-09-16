@@ -1,0 +1,110 @@
+ADUANA DE INSERCION, candidato 'retar_superestrellas_equipo_constantemente'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 225 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 9. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino criticar_trabajo_evitar_desanimo  [Criticar el trabajo sin desanimar a la persona, con la lista que el texto pone y el error de atribucion evitado]
+    levantada por: similitud_texto
+    similitud_texto    0.360 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.474 (umbral 0.60)
+    paso 1 del candidato contra paso 10 de criticar_trabajo_evitar_desanimo
+
+  vecino pedir_critica_equipo_premiarla  [Pedir activamente que tu equipo te critique, aguantar el silencio y premiar la primera franqueza a la vista de todos]
+    levantada por: similitud_texto
+    similitud_texto    0.376 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.472 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de pedir_critica_equipo_premiarla
+
+  vecino despedir_persona_franqueza_radical  [Despedir con franqueza radical, sin distanciarte de la persona y con el trabajo siguiente imaginado antes de la reunion]
+    levantada por: similitud_texto
+    similitud_texto    0.371 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.467 (umbral 0.60)
+    paso 1 del candidato contra paso 7 de despedir_persona_franqueza_radical
+
+  vecino revisar_ciclo_responsabilidades_relaciones  [Revisar el ciclo entre tus tres responsabilidades de jefe y tus relaciones, con la lista que lo fortalece y la lista que lo erosiona]
+    levantada por: similitud_texto
+    similitud_texto    0.373 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.452 (umbral 0.60)
+    paso 7 del candidato contra paso 6 de revisar_ciclo_responsabilidades_relaciones
+
+  vecino cuidar_persona_completa_equipo  [Cuidar a la persona completa de cada miembro del equipo, con los cuatro medios que el libro nombra y los tres que descarta]
+    levantada por: similitud_texto
+    similitud_texto    0.374 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.439 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de cuidar_persona_completa_equipo
+
+  vecino reconocer_recompensar_gente_estable  [Reconocer y recompensar a la gente estable de tu equipo por vias que no sean la promocion]
+    levantada por: similitud_texto
+    similitud_texto    0.373 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.437 (umbral 0.60)
+    paso 13 del candidato contra paso 5 de reconocer_recompensar_gente_estable
+
+  vecino ajustar_franqueza_oido_oyente  [Ajustar la franqueza radical al oido del que escucha y no a la boca del que habla, buscando la forma local de cada dimension]
+    levantada por: similitud_texto
+    similitud_texto    0.388 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.430 (umbral 0.60)
+    paso 1 del candidato contra paso 6 de ajustar_franqueza_oido_oyente
+
+  vecino acompaniar_mejores_equipo_socio  [Acompaniar a los que hacen el mejor trabajo como socio, ni de jefe ausente ni de microgestor]
+    levantada por: similitud_texto
+    similitud_texto    0.380 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.430 (umbral 0.60)
+    paso 7 del candidato contra paso 7 de acompaniar_mejores_equipo_socio
+
+  vecino elogiar_trabajo_especifico_contexto  [Elogiar el trabajo con el porque dentro, contextualizado y sincero, y averiguar quien hizo que antes de elogiar en publico]
+    levantada por: similitud_texto
+    similitud_texto    0.387 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.424 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de elogiar_trabajo_especifico_contexto
+
+BLOQUEADO: faltan veredictos para criticar_trabajo_evitar_desanimo, pedir_critica_equipo_premiarla, despedir_persona_franqueza_radical, revisar_ciclo_responsabilidades_relaciones, cuidar_persona_completa_equipo, reconocer_recompensar_gente_estable, ajustar_franqueza_oido_oyente, acompaniar_mejores_equipo_socio, elogiar_trabajo_especifico_contexto
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "criticar_trabajo_evitar_desanimo|CONTINUA|madre=criticar_trabajo_evitar_desanimo|que añade el hijo a la madre"
+    --veredicto "criticar_trabajo_evitar_desanimo|REPITE|por que no añade procedimiento"
+    --veredicto "criticar_trabajo_evitar_desanimo|SANO|por que no son el mismo trabajo"
+    --veredicto "criticar_trabajo_evitar_desanimo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "pedir_critica_equipo_premiarla|CONTINUA|madre=pedir_critica_equipo_premiarla|que añade el hijo a la madre"
+    --veredicto "pedir_critica_equipo_premiarla|REPITE|por que no añade procedimiento"
+    --veredicto "pedir_critica_equipo_premiarla|SANO|por que no son el mismo trabajo"
+    --veredicto "pedir_critica_equipo_premiarla|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "despedir_persona_franqueza_radical|CONTINUA|madre=despedir_persona_franqueza_radical|que añade el hijo a la madre"
+    --veredicto "despedir_persona_franqueza_radical|REPITE|por que no añade procedimiento"
+    --veredicto "despedir_persona_franqueza_radical|SANO|por que no son el mismo trabajo"
+    --veredicto "despedir_persona_franqueza_radical|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "revisar_ciclo_responsabilidades_relaciones|CONTINUA|madre=revisar_ciclo_responsabilidades_relaciones|que añade el hijo a la madre"
+    --veredicto "revisar_ciclo_responsabilidades_relaciones|REPITE|por que no añade procedimiento"
+    --veredicto "revisar_ciclo_responsabilidades_relaciones|SANO|por que no son el mismo trabajo"
+    --veredicto "revisar_ciclo_responsabilidades_relaciones|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "cuidar_persona_completa_equipo|CONTINUA|madre=cuidar_persona_completa_equipo|que añade el hijo a la madre"
+    --veredicto "cuidar_persona_completa_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "cuidar_persona_completa_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "cuidar_persona_completa_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "reconocer_recompensar_gente_estable|CONTINUA|madre=reconocer_recompensar_gente_estable|que añade el hijo a la madre"
+    --veredicto "reconocer_recompensar_gente_estable|REPITE|por que no añade procedimiento"
+    --veredicto "reconocer_recompensar_gente_estable|SANO|por que no son el mismo trabajo"
+    --veredicto "reconocer_recompensar_gente_estable|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "ajustar_franqueza_oido_oyente|CONTINUA|madre=ajustar_franqueza_oido_oyente|que añade el hijo a la madre"
+    --veredicto "ajustar_franqueza_oido_oyente|REPITE|por que no añade procedimiento"
+    --veredicto "ajustar_franqueza_oido_oyente|SANO|por que no son el mismo trabajo"
+    --veredicto "ajustar_franqueza_oido_oyente|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "acompaniar_mejores_equipo_socio|CONTINUA|madre=acompaniar_mejores_equipo_socio|que añade el hijo a la madre"
+    --veredicto "acompaniar_mejores_equipo_socio|REPITE|por que no añade procedimiento"
+    --veredicto "acompaniar_mejores_equipo_socio|SANO|por que no son el mismo trabajo"
+    --veredicto "acompaniar_mejores_equipo_socio|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "elogiar_trabajo_especifico_contexto|CONTINUA|madre=elogiar_trabajo_especifico_contexto|que añade el hijo a la madre"
+    --veredicto "elogiar_trabajo_especifico_contexto|REPITE|por que no añade procedimiento"
+    --veredicto "elogiar_trabajo_especifico_contexto|SANO|por que no son el mismo trabajo"
+    --veredicto "elogiar_trabajo_especifico_contexto|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

@@ -507,3 +507,9 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-15 | despedir_persona_franqueza_radical | otro_idioma | be Radically Candid with the person you are firing | ingles | - |
 | 2026-09-16 | decidir_momento_despedir_persona | nombre_largo | Las tres preguntas que hay que contestar antes de despedir a alguien que no mejora, y las cuatro mentiras que los jefes se cuentan a si mismos para no hacerlo | castellano | - |
 | 2026-09-16 | decidir_momento_despedir_persona | otro_idioma | how do you know when it is time to fire somebody | ingles | - |
+| 2026-09-16 | reconocer_recompensar_gente_estable | nombre_largo | Como se gestiona a quien hace un trabajo excelente ano tras ano en una trayectoria gradual: puntuacion justa, papel de experto de referencia, respeto, premios de antiguedad, y la promocion que no se impone | castellano | - |
+| 2026-09-16 | reconocer_recompensar_gente_estable | otro_idioma | rock star | ingles | - |
+| 2026-09-16 | reconocer_recompensar_gente_estable | otro_idioma | recognize, reward, but do not promote | ingles | - |
+| 2026-09-16 | retar_superestrellas_equipo_constantemente | nombre_largo | Como se gestiona a quien hace un trabajo excelente y esta creciendo deprisa: retos nuevos, mentores de fuera, sucesor pensado por adelantado, salvaguardas para que su jefe no pueda frenarlo, y una via de experto tan prestigiosa como la de jefe | castellano | - |
+| 2026-09-16 | retar_superestrellas_equipo_constantemente | otro_idioma | superstar | ingles | - |
+| 2026-09-16 | retar_superestrellas_equipo_constantemente | otro_idioma | individual contributor | ingles | - |

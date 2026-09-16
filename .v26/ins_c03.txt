@@ -1,0 +1,26 @@
+ADUANA DE INSERCION, candidato 'reconocer_recompensar_gente_estable'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 224 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino pedir_critica_equipo_premiarla  [Pedir activamente que tu equipo te critique, aguantar el silencio y premiar la primera franqueza a la vista de todos]
+    levantada por: similitud_texto
+    similitud_texto    0.367 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.464 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de pedir_critica_equipo_premiarla
+
+  vecino reconocer_recompensar_uso_metodo  [Reconocer y recompensar a quienes usan el metodo y consiguen resultados]
+    levantada por: familia_id
+    similitud_texto    0.123 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.405 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de reconocer_recompensar_uso_metodo
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 225
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2

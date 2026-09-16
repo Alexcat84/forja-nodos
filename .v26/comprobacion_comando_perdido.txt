@@ -1,0 +1,8 @@
+$ python -c "aristas del par, contadas en el grafo"
+   nodos_siguientes de la madre: ['retar_superestrellas_equipo_constantemente', 'reconocer_recompensar_gente_estable']
+   repeticiones de la hija     : 1
+$ grep -c "razon\": \"x\"" bitacora/VEREDICTOS.jsonl
+0
+   0
+$ wc -l bitacora/VEREDICTOS.jsonl
+226
