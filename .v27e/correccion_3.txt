@@ -1,0 +1,10 @@
+CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+  nodo : despedir_persona_franqueza_radical
+  campo: resumen_teorico
+  el texto viejo SIGUE ENTERO: 1366 caracteres, ninguno borrado
+  se aniaden 943 caracteres al final
+  huella antes  : 02aa38ffba624594
+  huella despues: d140e5bc404a277b
+
+GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: despedir_persona_franqueza_radical
+  razon en bitacora/VEREDICTOS.jsonl

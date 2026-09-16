@@ -1,0 +1,23 @@
+ANCLAS SUSTITUTAS, comprobadas por mi con grep -ril contra las quince unidades
+bank teller            -> cap_06.md 
+go-to expert           -> cap_06.md 
+front-stab             -> cap_04.md cap_05.md 
+ten hours a week       -> cap_03.md cap_12.md 
+
+$ grep -n -i "front-stab" fuentes/scott_radical_candor/cap_04.md fuentes/scott_radical_candor/cap_05.md | cut -c1-120
+fuentes/scott_radical_candor/cap_04.md:145:WE TALKED ABOUT the importance of humility. Radical Candor is not a license t
+fuentes/scott_radical_candor/cap_05.md:109:Front-stabbing
+fuentes/scott_radical_candor/cap_05.md:125:The incident with Larry is a good example of how criticism can be obnoxiously
+
+$ grep -n -i "go-to expert" fuentes/scott_radical_candor/cap_06.md | cut -c1-160
+169:Of course, some people hate teaching and are terrible at it: this role should be an honor, not a requirement. And there are times when being the go-to exper
+
+$ grep -n -i "ten hours a week" fuentes/scott_radical_candor/cap_03.md fuentes/scott_radical_candor/cap_12.md | cut -c1-130
+fuentes/scott_radical_candor/cap_03.md:17:As you read on, you might occasionally feel overwhelmed by the number of things Iâ€™m su
+fuentes/scott_radical_candor/cap_12.md:51:Thatâ€™s a lot of things to do, but itâ€™s not as bad as it sounds. If you take every su
+not an invitation to nitpick         -> cap_04.md 
+three unimportant things unsaid      -> cap_04.md 
+driving go-carts                     -> cap_04.md 
+litter your calendar with meetings     -> cap_03.md 
+fifteen hours a week                   -> cap_03.md cap_12.md 
+Take a deep breath                     -> cap_03.md cap_07.md cap_10.md cap_12.md 

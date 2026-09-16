@@ -4,6 +4,8 @@
     python forja.py insertar candidato.json     la aduana (manual seccion 3)
     python forja.py informe candidato.json      la aduana EN SECO, cero inserciones
     python forja.py arista --madre A --hijo B --paso N --razon R   D.37
+    python forja.py corregir --nodo <id> --anade "CORRECCION DECLARADA ..." --razon R
+                                                correccion declarada del resumen_teorico
     python forja.py gate                        el gate de integridad
     python forja.py guiones [ruta ...]          el barrido de estilo
     python forja.py rancios                     el bloque de vigencia (D.15)
@@ -17,8 +19,8 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from src import (aduana, arista, censos, comun, gate, guiones, herencia,  # noqa: E402
-                 informe,
+from src import (aduana, arista, censos, comun, correccion, gate, guiones,  # noqa: E402
+                 herencia, informe,
                  resolutor, vigencia)
 
 AYUDA = __doc__
@@ -37,6 +39,8 @@ def main(argumentos):
         return herencia.main(resto)
     if comando == "arista":
         return arista.main(resto)
+    if comando == "corregir":
+        return correccion.main(resto)
     if comando == "informe":
         return informe.main(resto)
     if comando == "gate":

@@ -1,0 +1,10 @@
+--- ancla candidata: 'B player'
+
+--- ancla candidata: 'topped out'
+
+--- ancla candidata: 'go-to expert'
+cap_06.md 
+--- ancla candidata: 'not optional'
+
+--- ancla candidata: 'rationing'
+

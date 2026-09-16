@@ -1,0 +1,5 @@
+PUNTO 6. Las QUESTIONS TO CONSIDER, contadas por mi
+$ grep -l "QUESTIONS TO CONSIDER" fuentes/marquet_turn_the_ship/*.md | wc -l
+14
+$ ls fuentes/marquet_turn_the_ship/*.md | wc -l
+17

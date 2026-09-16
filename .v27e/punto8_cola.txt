@@ -1,0 +1,8 @@
+los CUATRO vecinos que la ACTA 25 3.6 midio (y no los 2 publicados):
+  despedir_persona_franqueza_radical       CON VEREDICTO ESCRITO (CONTINUA)
+  pedir_critica_equipo_premiarla           CON VEREDICTO ESCRITO (SANO)
+  despedir_persona_respeto_franqueza       CON VEREDICTO ESCRITO (SANO)
+  elegir_recolocar_despedir_persona        CON VEREDICTO ESCRITO (SANO)
+vecinos levantados en total : 4
+con veredicto ya escrito    : 4
+sin veredicto, o sea por leer: 0

@@ -1,0 +1,10 @@
+CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+  nodo : reconocer_recompensar_gente_estable
+  campo: resumen_teorico
+  el texto viejo SIGUE ENTERO: 1568 caracteres, ninguno borrado
+  se aniaden 1100 caracteres al final
+  huella antes  : 3f8f1a490caf481b
+  huella despues: bbb6bfa7089e76fb
+
+GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: reconocer_recompensar_gente_estable
+  razon en bitacora/VEREDICTOS.jsonl

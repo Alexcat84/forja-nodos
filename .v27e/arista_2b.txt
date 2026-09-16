@@ -1,0 +1,10 @@
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: decidir_momento_despedir_persona
+  hijo : despedir_persona_franqueza_radical
+  paso citado de la madre: 4
+    Si la respuesta a esa primera pregunta es que si y no has visto mejora, o solo destellos de mejora, ha llegado el momento. El texto lo cierra con la d
+  señales del par: familia_id 0.333, paso_contra_nodo 0.512, similitud_texto 0.295
+    levantada tambien por la señal: familia_id
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: decidir_momento_despedir_persona > despedir_persona_franqueza_radical
+  razon en bitacora/VEREDICTOS.jsonl

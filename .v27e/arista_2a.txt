@@ -1,0 +1,10 @@
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: despedir_persona_respeto_franqueza
+  hijo : despedir_persona_franqueza_radical
+  paso citado de la madre: 8
+    Y ayuda a tu persona a cargo a ponerse en el mejor camino posible hacia su capitulo siguiente, y usa la experiencia para volverte mejor directivo.
+  señales del par: familia_id 0.6, paso_contra_nodo 0.398, similitud_texto 0.178
+    levantada tambien por la señal: familia_id
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: despedir_persona_respeto_franqueza > despedir_persona_franqueza_radical
+  razon en bitacora/VEREDICTOS.jsonl

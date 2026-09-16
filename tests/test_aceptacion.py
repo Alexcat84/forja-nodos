@@ -2499,6 +2499,129 @@ class PruebaAduanaMideBandejas(BaseForja):
         self.assertEqual(codigo, 0, salida)
 
 
+class PruebaCorreccionDeclarada(BaseForja):
+    """La operacion que corrige el `resumen_teorico` de un nodo YA INSERTADO.
+
+    Nace de la parada de la vuelta 25 (`REPORTE.md` `S.9`), adjudicada por la
+    `ACTA 25` `3.1`: `EXTRACTOR.md` 2 prohibe escribir a mano en el dataset Y
+    dice como nace la via que falta, *una operacion escrita con su simulacion y
+    su caso positivo*. Estas son la simulacion y los casos positivos.
+    """
+
+    MARCA = "CORRECCION DECLARADA"
+
+    def _un_nodo(self, resumen=None):
+        return nodo_base(
+            "declarar_ancla_textual_unidad",
+            resumen_teorico=resumen or (
+                "UNIDAD DE ORIGEN: cap_06, con el ancla textual unica que la "
+                "sostiene, 'level of incompetence'."))
+
+    def _corregir(self, *extra):
+        return self.forja("corregir", *extra)
+
+    def test_la_correccion_se_escribe_y_el_texto_viejo_sigue_entero(self):
+        nodo = self._un_nodo()
+        viejo = nodo["resumen_teorico"]
+        self.escribir_dataset([nodo])
+        codigo, salida = self._corregir(
+            "--nodo", "declarar_ancla_textual_unidad",
+            "--anade", self.MARCA + " del 16 sep 2026: el ancla que esta frase "
+                       "llama unica no esta en ninguna unidad del libro.",
+            "--razon", "grep del ancla contra las quince unidades: cero coincidencias")
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("CORRECCION ESCRITA EN", salida)
+
+        nuevo = dict((n["id"], n) for n in self.nodos())[
+            "declarar_ancla_textual_unidad"]["resumen_teorico"]
+        # LO QUE HABIA SIGUE LITERAL: esto es correccion declarada, no edicion.
+        self.assertIn(viejo, nuevo)
+        self.assertIn("no esta en ninguna unidad del libro", nuevo)
+        self.assertTrue(len(nuevo) > len(viejo))
+
+        registro = comun.leer_jsonl(self.veredictos)[-1]
+        self.assertEqual(registro["veredicto"], "CORREGIDO")
+        self.assertEqual(registro["campo"], "resumen_teorico")
+        self.assertEqual(registro["levantada_por"], ["correccion declarada"])
+        self.assertNotEqual(registro["huella_vecino"], registro["huella_candidato"])
+        self.assertEqual(self.forja("gate")[0], 0)
+
+    def test_caso_positivo_sin_la_marca_no_se_escribe_nada(self):
+        """Sin esto, la prueba de arriba solo probaria que el comando escribe."""
+        nodo = self._un_nodo()
+        viejo = nodo["resumen_teorico"]
+        self.escribir_dataset([nodo])
+        codigo, salida = self._corregir(
+            "--nodo", "declarar_ancla_textual_unidad",
+            "--anade", "El ancla de esta frase no esta en ninguna unidad del libro.",
+            "--razon", "una razon cualquiera")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("no se declara como correccion", salida)
+        self.assertEqual(dict((n["id"], n) for n in self.nodos())[
+            "declarar_ancla_textual_unidad"]["resumen_teorico"], viejo)
+        self.assertEqual(comun.leer_jsonl(self.veredictos), [])
+
+    def test_caso_positivo_el_gate_muerde_en_la_simulacion(self):
+        """Un guion largo en el texto aniadido tumba la copia en memoria."""
+        nodo = self._un_nodo()
+        viejo = nodo["resumen_teorico"]
+        self.escribir_dataset([nodo])
+        codigo, salida = self._corregir(
+            "--nodo", "declarar_ancla_textual_unidad",
+            # EL GUION LARGO SE CONSTRUYE, NO SE TECLEA: el barrido de esta casa
+            # es sobre el repo entero y tumbaria el propio fichero de pruebas.
+            "--anade", self.MARCA + " del 16 sep 2026: el ancla " + chr(0x2014)
+                       + " esa no esta en ninguna unidad del libro.",
+            "--razon", "una razon cualquiera")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("guiones largos", salida)
+        self.assertEqual(dict((n["id"], n) for n in self.nodos())[
+            "declarar_ancla_textual_unidad"]["resumen_teorico"], viejo)
+        self.assertEqual(comun.leer_jsonl(self.veredictos), [])
+
+    def test_sin_razon_escrita_no_se_corrige(self):
+        self.escribir_dataset([self._un_nodo()])
+        codigo, salida = self._corregir(
+            "--nodo", "declarar_ancla_textual_unidad",
+            "--anade", self.MARCA + " del 16 sep 2026: el ancla no esta en el libro.",
+            "--razon", "   ")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("sin razon escrita", salida)
+
+    def test_un_nodo_que_no_vive_es_rechazo(self):
+        self.escribir_dataset([self._un_nodo()])
+        codigo, salida = self._corregir(
+            "--nodo", "nodo_que_sigue_en_cuarentena",
+            "--anade", self.MARCA + " del 16 sep 2026: el ancla no esta en el libro.",
+            "--razon", "una razon cualquiera")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("no vive en el grafo", salida)
+
+    def test_ningun_otro_campo_se_corrige_por_aqui(self):
+        """Cambiar un paso es cambiar el procedimiento, y eso entra por la aduana."""
+        self.escribir_dataset([self._un_nodo()])
+        codigo, salida = self._corregir(
+            "--nodo", "declarar_ancla_textual_unidad", "--campo", "pasos_accionables",
+            "--anade", self.MARCA + " del 16 sep 2026: el ancla no esta en el libro.",
+            "--razon", "una razon cualquiera")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("solo toca 'resumen_teorico'", salida)
+
+    def test_la_misma_correccion_no_se_declara_dos_veces(self):
+        self.escribir_dataset([self._un_nodo()])
+        texto = (self.MARCA + " del 16 sep 2026: el ancla que esta frase llama "
+                 "unica no esta en ninguna unidad del libro.")
+        primera = self._corregir(
+            "--nodo", "declarar_ancla_textual_unidad", "--anade", texto,
+            "--razon", "grep del ancla: cero coincidencias")
+        self.assertEqual(primera[0], 0, primera[1])
+        segunda = self._corregir(
+            "--nodo", "declarar_ancla_textual_unidad", "--anade", texto,
+            "--razon", "grep del ancla: cero coincidencias")
+        self.assertEqual(segunda[0], 1, segunda[1])
+        self.assertIn("ya esta escrita", segunda[1])
+
+
 def main():
     comun.salida_utf8()
     orden = [PruebaA, PruebaB, PruebaC, PruebaD, PruebaE, PruebaF,
@@ -2512,7 +2635,8 @@ def main():
              PruebaPoblacionDelInforme,
              PruebaTallado,
              PruebaCensoDeRutas,
-             PruebaAduanaMideBandejas]
+             PruebaAduanaMideBandejas,
+             PruebaCorreccionDeclarada]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:

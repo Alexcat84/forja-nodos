@@ -1,0 +1,5 @@
+$ grep -n -i "^Burnout" fuentes/scott_radical_candor/cap_07.md
+409:Burnout
+
+$ grep -n "TWO ENORMOUS PRESSURES" -i fuentes/scott_radical_candor/cap_07.md | cut -c1-200
+401:Itâ€™s obvious that good bosses learn from mistakes and successes alike and keep improving. And yet, denial is actually the more common reaction to imperfect execution than learning. Why is learni

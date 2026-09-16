@@ -31877,3 +31877,339 @@ pisar evidencia sellada de otro rol**, asi que mis salidas van a `.v27e/`, `e` d
 | **4** | abrir el lote 5 por su orden, si la insercion deja sitio | ABIERTA |
 
 **Son CUATRO tareas y el tope son cinco** (`EXTRACTOR.md` 1.3).
+
+## U.2. TAREA 1: **LOS OCHO PUNTOS DE LA `ACTA 25` QUE NO LLEGARON AL ENCARGO DE LA 26**
+
+*Van primeros y no se solapan, porque ya se perdieron una vez.*
+
+### U.2.a. **LO PRIMERO QUE MIDO CAMBIA DOS DE LOS OCHO PUNTOS, Y LO DIGO ANTES DE EJECUTAR NINGUNO**
+
+El punto **2** manda corregir **en la bandeja** los dos candidatos del ancla, y el punto **3** manda
+escribir la operacion para **los dos que ya viven en el grafo**. **Los cuatro viven hoy en el grafo.**
+
+<!-- TALLADO: parcial salida=.v27e/ancla_estado.txt -->
+
+| candidato del ancla | grafo | bandeja | archivado en `_insertados` |
+|---|---:|---:|---:|
+| `repartir_semana_cuarenta_horas_jefe` | 1 | 0 | 1 |
+| `delimitar_franqueza_radical_cinco_noes` | 1 | 0 | 1 |
+| `despedir_persona_franqueza_radical` | 1 | 0 | 1 |
+| `reconocer_recompensar_gente_estable` | 1 | 0 | 1 |
+
+**Y NO LO AFIRMO, LO LEO DE GIT** (`EXTRACTOR.md` 5):
+
+<!-- TALLADO: parcial salida=.v27e/ancla_cuando_entraron.txt -->
+
+| candidato | commit que lo archivo |
+|---|---|
+| `despedir_persona_franqueza_radical` | `a963a50` **VUELTA 26 TANDA: entran los DOS del despido de `cap_06`** |
+| `reconocer_recompensar_gente_estable` | `432d340` **VUELTA 26 TANDA 2** |
+| `repartir_semana_cuarenta_horas_jefe` | `2f99a09` VUELTA 24 TAREA 5 |
+| `delimitar_franqueza_radical_cinco_noes` | `2f99a09` VUELTA 24 TAREA 5 |
+
+> ### **LECTURA: LOS PUNTOS `2` Y `3` SE FUNDEN EN UNO SOLO, Y EL DENOMINADOR PASA DE `2` A `4`**
+>
+> **La `ACTA 25` se escribio sobre la vuelta 25, y la vuelta 26 metio doce nodos entremedias**: los
+> **dos** que aquella acta dejaba en la bandeja **entraron los dos en la vuelta 26**, por sus commits
+> `a963a50` y `432d340`. **La via ordinaria del punto 2 ya no existe para ellos.**
+>
+> **ESTO NO CANCELA EL PUNTO 2: LO MUEVE AL PUNTO 3.** Los cuatro se corrigen por la operacion
+> escrita, y el trabajo es mayor y no menor. **Es la misma ley que el propio extractor descubrio en
+> la vuelta 25 y que la `ACTA 25` `3.6` le devolvio:** *cualquier plan que presuponga que la cola de
+> hoy es la que se paga maniana esta mal presupuestado.*
+
+### U.2.b. **LA CAIDA `4 DE 24`, REPRODUCIDA POR MI ANTES DE CORREGIR NADA** (`EXTRACTOR.md` 5)
+
+**No acepto la cifra de un acta: la vuelvo a medir.** Salida en `.v27e/anclas_recorridas.txt`, con el
+comando corrido en esta vuelta sobre las quince unidades del libro:
+
+    $ grep -ril "<ancla>" fuentes/scott_radical_candor/*.md
+
+<!-- TALLADO: parcial salida=.v27e/anclas_recorridas.txt -->
+
+| candidato | unidad declarada | su ancla | donde aparece HOY | la especie |
+|---|---|---|---|---|
+| `repartir_semana_cuarenta_horas_jefe` | `cap_03` | `ten hours a week` | `cap_03.md` y `cap_12.md` | **no es unica** |
+| `delimitar_franqueza_radical_cinco_noes` | `cap_04` | `front-stab` | `cap_04.md` y `cap_05.md` | **no es unica** |
+| `despedir_persona_franqueza_radical` | `cap_06` | `person you are firing` | **solo `cap_10.md`** | **la unidad declarada NO contiene su propia ancla** |
+| `reconocer_recompensar_gente_estable` | `cap_06` | `level of incompetence` | **ninguna** | **el ancla no existe en el libro** |
+
+**LAS CUATRO ME SALEN AL DIGITO CONTRA LA `ACTA 25` `1.5`, y las cuatro especies tambien.**
+
+### U.2.c. **PUNTOS `2` Y `3`: LA OPERACION ESCRITA, CON SU SIMULACION Y SUS CASOS POSITIVOS**
+
+**LA MORATORIA DE MAQUINARIA NO LO IMPIDE, y digo cual de sus dos excepciones uso** (`EXTRACTOR.md`
+13): **una tarea del encargo lo ordena expresamente**, el punto 3 de la `TAREA 1`. No me apoyo en la
+otra.
+
+**LA FRASE QUE LA HACE NACER, Y NO ES MIA:** `EXTRACTOR.md` 2 dice *si hace falta tocar el dataset por
+otra via, eso es una operacion escrita con su simulacion y su caso positivo, no una edicion.* La
+`ACTA 25` `3.1` adjudico que **esa frase no dice que el caso sea indecidible: dice como nace la
+operacion que falta.**
+
+    python forja.py corregir --nodo <id> --anade "CORRECCION DECLARADA ..." --razon "..."
+
+| lo que hace | por que asi |
+|---|---|
+| **ANIADE AL FINAL, no borra ni sustituye** | es correccion declarada, que es como corrige esta casa. **Un borrado no deja rastro de la caida, y una caida sin rastro se repite** |
+| **solo `resumen_teorico`** | cambiar un paso es cambiar el procedimiento, **y eso entra por la aduana como candidato**, no por una correccion de prosa |
+| **simula sobre copia en memoria y pasa el gate ANTES de escribir** | es lo que `EXTRACTOR.md` 2 pide por su nombre, y es el patron que ya usa `src/arista.py` |
+| **exige que el texto empiece por `CORRECCION DECLARADA`** | remedio mecanico de `D.35`: **un remedio que se cumple acordandose no es un remedio** |
+| **deja su razon en `bitacora/VEREDICTOS.jsonl`**, con la huella antes y despues | una correccion sin razon escrita **es una edicion a mano con otro nombre** |
+
+**LOS CASOS POSITIVOS, que son lo que impide que la prueba buena solo pruebe que el comando escribe:**
+
+| el caso positivo | que prueba |
+|---|---|
+| `test_caso_positivo_sin_la_marca_no_se_escribe_nada` | sin `CORRECCION DECLARADA` delante, **rechazo, el `resumen_teorico` queda IDENTICO y la bitacora VACIA** |
+| `test_caso_positivo_el_gate_muerde_en_la_simulacion` | un guion largo dentro del texto aniadido **tumba la copia en memoria y no se escribe nada** |
+| `test_sin_razon_escrita_no_se_corrige` | `D.8` aplicado a esta sede |
+| `test_un_nodo_que_no_vive_es_rechazo` | lo que sigue en cuarentena **se corrige por la via ordinaria**, no por aqui |
+| `test_ningun_otro_campo_se_corrige_por_aqui` | `--campo pasos_accionables` es rechazo |
+| `test_la_misma_correccion_no_se_declara_dos_veces` | una correccion no se declara dos veces |
+| `test_la_correccion_se_escribe_y_el_texto_viejo_sigue_entero` | **el texto viejo sigue LITERAL dentro del nuevo**, comprobado y no prometido |
+
+    $ python tests/test_aceptacion.py
+      total: 148 pruebas, 0 fallos, 0 errores          (eran 141 al abrir: SIETE nuevas)
+
+### U.2.d. **LAS CUATRO CORRECCIONES, PASADAS UNA A UNA POR LA OPERACION**
+
+<!-- TALLADO: parcial salida=.v27e/correccion_1.txt -->
+
+| nodo | ancla vieja | lo que mide mi comando | ancla que SI es unica, comprobada | huella antes | huella despues |
+|---|---|---|---|---|---|
+| `repartir_semana_cuarenta_horas_jefe` | `ten hours a week` | `cap_03.md` y `cap_12.md` | `litter your calendar with meetings` | `5741a0fe40ead016` | `de520028526c0f00` |
+| `delimitar_franqueza_radical_cinco_noes` | `front-stab` | `cap_04.md` y `cap_05.md` | `not an invitation to nitpick` | `c43d1ffc6688387b` | `e28c5904cc8adc22` |
+| `despedir_persona_franqueza_radical` | `person you are firing` | solo `cap_10.md` | `bank teller` | `02aa38ffba624594` | `d140e5bc404a277b` |
+| `reconocer_recompensar_gente_estable` | `level of incompetence` | **ninguna** | `go-to expert` | `3f8f1a490caf481b` | `bbb6bfa7089e76fb` |
+
+**LAS CUATRO ANCLAS SUSTITUTAS ESTAN COMPROBADAS CON EL MISMO COMANDO Y NO ELEGIDAS A OJO**, salida en
+`.v27e/anclas_sustitutas.txt`:
+
+    bank teller                            -> cap_06.md
+    go-to expert                           -> cap_06.md
+    not an invitation to nitpick           -> cap_04.md
+    litter your calendar with meetings     -> cap_03.md
+
+**LO QUE NO CAMBIA, Y ES LA MITAD QUE IMPORTA:** **ni un paso, ni una cita, ni una fuente, ni una
+cifra del freno.** Lo corregido es la etiqueta de procedencia y la palabra `unica`. **Las cuatro
+unidades declaradas se sostienen**, y las dos que estaban en duda las sostengo contra el texto y no
+contra la etiqueta: `despedir_persona_franqueza_radical` sale de `cap_06` `L297` y `L299`
+(`.v27e/anclas_verdaderas.txt`), y `reconocer_recompensar_gente_estable` de `cap_06` `L169`
+(`.v27e/anclas_sustitutas.txt`).
+
+    $ python forja.py gate            ->  GATE VERDE.   nodos verificados: 234
+    $ wc -l bitacora/VEREDICTOS.jsonl ->  244   (eran 240 al abrir: CUATRO correcciones)
+
+### U.2.e. **PUNTO 4: EL PUENTE `Pide` DE `cap_02`, CORREGIDO EN LA BANDEJA Y CON SU ADUANA VUELTA A CORRER**
+
+**LA LINEA DEL LIBRO, REABIERTA CON SU LECTOR Y NO DE MEMORIA** (`D.35`), en
+`.v27e/cita_cap02_L25.txt`:
+
+    25: "Look, here's the deal. If you need to change out some people, let me know, but I'm
+        not interested in a lot of turnover. ..."
+
+| | |
+|---|---|
+| **paso 3, como estaba** | *Pide igualmente el canal abierto para cambiar a alguien si hace falta, que es como el texto lo deja dicho: avisame si necesitas cambiar a alguien.* |
+| **paso 3, hoy** | *Avisa a tu jefe si necesitas cambiar a alguien, que es el canal que el texto deja abierto sin que nadie lo pida: avisame si necesitas cambiar a alguien.* |
+| **la especie** | **PUENTE DE ACTO**, la cuarta, que **no esta en la tabla de tres de `D.30`** |
+| **por que** | el que ejecuta este nodo **es el que RECIBE el encargo**, y para el el libro contiene *avisa cuando lo necesites*, **no** *pide que exista el aviso*. **El jefe concede el canal sin que nadie lo pida** |
+
+**LA CORRECCION VA DECLARADA DENTRO DEL FICHERO Y SIN BORRAR LO QUE SE DICE QUE HABIA**, y **la aduana
+se volvio a correr en el mismo acto** (`EXTRACTOR.md` 16). Salida entera en
+`.v27e/informe_pide_corregido.txt`:
+
+    poblacion del barrido       : 348   (234 del grafo mas 114 que esperan en bandejas)
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      vecinos levantados en total      : 3
+
+**`CAERIAN 0`: el candidato sale corregido ANTES de entrar al grafo**, que es el caso que la `ACTA 25`
+`3.4` llama **la regla funcionando** y no una caida de ninguna especie.
+
+### U.2.f. **PUNTO 6: LAS `QUESTIONS TO CONSIDER` NO SON NODO, Y CUENTO SU RESIDUO EN VEZ DE ESCONDERLO**
+
+    $ grep -l "QUESTIONS TO CONSIDER" fuentes/marquet_turn_the_ship/*.md | wc -l   ->  14
+    $ ls fuentes/marquet_turn_the_ship/*.md | wc -l                                ->  17
+
+**`14` de `17` unidades**, contado por mi y no copiado del acta, salida en `.v27e/punto6_questions.txt`.
+**La adjudicacion es de la `ACTA 25` `3.2` y la aplico sin moverla**, con sus tres reglas: regla 4 de
+id contra los catorce casi gemelos, `EXTRACTOR.md` 12.1 y 17 contra el nodo unico sin
+`UNIDAD DE ORIGEN`, y `EXTRACTOR.md` 9 mas `D.27` restriccion 1 a favor de que **no son nodo**.
+
+**LO QUE ME TOCA A MI ES EL RESIDUO DECLARADO:** la pieza sale en la frontera de cada capitulo del
+lote 5 **con su clase escrita**, y eso se cumple en `U.5` de esta misma vuelta.
+
+### U.2.g. **PUNTO 7: LA CORRECCION 9 AL REVES, CON LOS DOS EXTREMOS MEDIDOS HOY**
+
+<!-- TALLADO: parcial salida=.v27e/extremos_correccion9.txt -->
+
+| extremo | grafo | bandeja |
+|---|---:|---:|
+| `recorrer_rueda_conscientemente_cultura_equipo` (madre) | 0 | 1 |
+| `recorrer_rueda_hacer_cosas_equipo` (hijo) | 0 | 1 |
+
+**LA DIRECCION BUENA, adjudicada por la `ACTA 25` `3.3`:** madre
+`recorrer_rueda_conscientemente_cultura_equipo`, **`--paso 4`**, hijo
+`recorrer_rueda_hacer_cosas_equipo`, **y NO al reves**. **Los dos siguen en la bandeja**, asi que la
+arista no se puede cablear todavia: `forja.py arista` rechaza por su nombre un extremo que no vive.
+**Va a la cola de `U.6` con su fecha de vencimiento escrita: el dia que entren los dos.**
+
+### U.2.h. **PUNTO 8: LA COLA DE `decidir_momento_despedir_persona` ES `4`, Y HOY LA RECOMPUTO ENTERA**
+
+**La cifra corregida es `4` y no `2`**, y su sede tiene hoy contenido:
+
+    $ ls -la .v25/cola_lectura.txt   ->  2210 bytes  (era CERO cuando la vuelta 25 la publico)
+    $ (de ese fichero)  vecinos levantados en total : 4
+
+**PERO `EXTRACTOR.md` 4 ME OBLIGA A RECOMPUTAR, porque ese fichero se regenero el 15 sep contra `222`
+nodos y hoy hay `234`.** Salida en `.v27e/punto8_cola.txt`:
+
+<!-- TALLADO: parcial salida=.v27e/punto8_cola.txt -->
+
+| vecino de los cuatro | estado hoy en la bitacora |
+|---|---|
+| `despedir_persona_franqueza_radical` | **CON VEREDICTO ESCRITO** (`CONTINUA`) |
+| `pedir_critica_equipo_premiarla` | **CON VEREDICTO ESCRITO** (`SANO`) |
+| `despedir_persona_respeto_franqueza` | **CON VEREDICTO ESCRITO** (`SANO`) |
+| `elegir_recolocar_despedir_persona` | **CON VEREDICTO ESCRITO** (`SANO`) |
+
+    vecinos levantados en total   : 4
+    con veredicto ya escrito      : 4
+    sin veredicto, o sea por leer : 0
+
+**LA COLA ERA `4` Y ESTA PAGADA ENTERA.** El nodo entro en la vuelta 26 y sus cuatro vecinos se
+leyeron uno a uno. **LECTURA: la caida de la vuelta 25 no fue que la cola existiera, fue que se
+publico `2` con sede de cero bytes.**
+
+### U.2.i. **PUNTO 1: LA CELDA DEL TALLADO DICE CONTRA QUE VERSION SE CORRIO**
+
+**Es del cierre por su naturaleza** (la version del reporte cambia con cada anexion), asi que **se
+cumple en `U.8.b`** con el `git hash-object` del fichero contra el que corrio el tallado, y no aqui.
+
+### U.2.j. **EL `grep` QUE LA `ACTA 25` DEJO COMO REMEDIO, CORRIDO POR MI SOBRE EL ENCARGO DE HOY**
+
+*Es el remedio que cazo la perdida, y **ya fallo una vez sin que nadie lo viera**. Se corre con un
+comando, no con la memoria.* Salida en `.v27e/grep_ocho_puntos.txt`.
+
+| punto del encargo | esta en `PROMPT_SIGUIENTE.md` | donde lo cierro |
+|---:|---|---|
+| **1** version del tallado | si | `U.8.b` |
+| **2** los dos de la bandeja | si | `U.2.a` y `U.2.d`, **fundido en el 3 porque los cuatro viven en el grafo** |
+| **3** la operacion escrita | si | `U.2.c` y `U.2.d` |
+| **4** el puente `Pide` | si | `U.2.e` |
+| **5** `cap_04` releido antes que el hueco | si | `U.6`, **declarado como cola con su motivo** |
+| **6** `QUESTIONS TO CONSIDER` | si | `U.2.f` y `U.5` |
+| **7** la correccion 9 al reves | si | `U.2.g`, **no cableable: los dos extremos en bandeja** |
+| **8** la cola es `4` | si | `U.2.h` |
+
+**TAREA 1 CERRADA**, con los puntos `5` y `7` declarados como cola y su motivo escrito, y el `2`
+fundido en el `3` por medicion propia.
+
+## U.3. TAREA 2: **LAS TRES ARISTAS ADJUDICADAS, Y UNA ES LA PRIMERA ENTRE LIBROS**
+
+*Adjudicadas y vencidas. **La primera entre libros NO ES CEREMONIA** (decision del fundador del 16
+sep 2026, punto 3): se declara como cualquier arista, con su razon.*
+
+**LOS CINCO EXTREMOS, MEDIDOS ANTES DE DECLARAR NADA**, salida en `.v27e/extremos_aristas.txt`:
+
+<!-- TALLADO: parcial salida=.v27e/extremos_aristas.txt -->
+
+| id | grafo | bandeja |
+|---|---:|---:|
+| `decidir_momento_despedir_persona` | 1 | 0 |
+| `despedir_persona_respeto_franqueza` | 1 | 0 |
+| `aprender_resultados_vencer_dos_presiones` | 1 | 0 |
+| `cambiar_posicion_hechos_explicar_cambio` | 1 | 0 |
+| `cuidarse_agotamiento_centro_rueda` | **0** | **1** |
+
+**Los dos extremos de cada una de las tres viven. El quinto no, y es el que deja media serie
+pendiente en `U.3.c`.**
+
+### U.3.a. **`2.a`: LA PRIMERA ARISTA ENTRE DOS LIBROS DE ESTA CASA**
+
+**LA SALIDA DEL INSTRUMENTO, PEGADA Y NO PROMETIDA** (`D.37`), en `.v27e/arista_2a.txt`:
+
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: despedir_persona_respeto_franqueza
+      hijo : despedir_persona_franqueza_radical
+      paso citado de la madre: 8
+        Y ayuda a tu persona a cargo a ponerse en el mejor camino posible hacia su
+        capitulo siguiente, y usa la experiencia para volverte mejor directivo.
+      seniales del par: familia_id 0.6, paso_contra_nodo 0.398, similitud_texto 0.178
+        levantada tambien por la senial: familia_id
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA:
+      despedir_persona_respeto_franqueza > despedir_persona_franqueza_radical
+
+**LA MADRE ES DE `zhuo_manager` Y EL HIJO DE `scott_radical_candor`.** Admisible por `ACTA 15` `3.4`,
+que la `ACTA 26` `2.3` comprobo que **nadie ha retirado**, con sus tres condiciones cumplidas: el hijo
+vive, la razon cita el paso de la madre, y la vara de continua contra repite no se toca.
+
+**Y EL LIBRO LO ESCRIBE LITERAL**, `cap_06` `L299`, reabierto con mi lector en
+`.v27e/anclas_verdaderas.txt`:
+
+    fuentes/scott_radical_candor/cap_06.md:299: ... it's not the person who sucks, it's the
+    job that sucks-at least for this person. What job would be great for that person?
+    Can I help by making an introduction?
+
+### U.3.b. **`2.b`: EL RELEVO QUE LOS DOS NODOS ESCRIBEN EN SU CABECERA Y QUE NADIE CABLEO**
+
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: decidir_momento_despedir_persona
+      hijo : despedir_persona_franqueza_radical
+      paso citado de la madre: 4
+        Si la respuesta a esa primera pregunta es que si y no has visto mejora, o solo
+        destellos de mejora, ha llegado el momento. El texto lo cierra con la d
+      seniales del par: familia_id 0.333, paso_contra_nodo 0.512, similitud_texto 0.295
+        levantada tambien por la senial: familia_id
+
+**EL ENTREGABLE DE LA MADRE ES LA CONDICION DE ACTIVACION DEL HIJO, con esas palabras en los dos
+ficheros**, y los cuatro campos de arista de los dos estaban vacios (`APERTURA_CIEGA.md` `4.3`).
+
+> **DISCUTIBLE `1`, MARCADO ANTES DE SABER SI ACIERTO: CITO EL `--paso 4` Y NO EL `--paso 1`.**
+>
+> La razon adjudicada es de **entregable contra activacion**, y `forja.py arista` **no tiene campo
+> para eso: exige un paso de la madre.** Elijo el `4` porque **es donde su decision CIERRA** (*ha
+> llegado el momento*), que es literalmente lo que el hijo presupone. **La lectura contraria existe y
+> la escribo:** el `paso 1` dice *por que importa COMO LO HACES*, y el hijo es exactamente el como.
+> **No la firmo porque el `paso 1` nombra el efecto sobre el equipo y no el procedimiento del hijo**,
+> y `D.29` manda que la direccion la ponga **el paso que nombra**.
+
+### U.3.c. **`2.c`: `D.37` EN SU FORMA FUERTE, Y LA MITAD QUE NO VENCE TODAVIA**
+
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: aprender_resultados_vencer_dos_presiones
+      hijo : cambiar_posicion_hechos_explicar_cambio
+      paso citado de la madre: 6
+        Vence las dos enormes presiones que el texto dice que tentaban a la autora a
+        dejar de aprender cuando dirigia un equipo grande: la presion de cohe
+      seniales del par: familia_id 0.0, paso_contra_nodo 0.429, similitud_texto 0.272
+        NINGUNA SENIAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+**LOS DOS ROTULOS DEL LIBRO, REABIERTOS CON SU LECTOR Y PEGADOS** (`D.35`), en
+`.v27e/cita_cap07_dos_presiones.txt` y `.v27e/cita_burnout.txt`:
+
+| pieza | linea | la salida, pegada |
+|---|---:|---|
+| el enunciado de la cuenta | L401 | `401: ... there were TWO ENORMOUS PRESSURES that tempted me to quit learning.` |
+| rotulo 1 | L403 | `403: Pressure to be consistent` |
+| rotulo 2 | L409 | `409: Burnout` |
+
+**LA CUENTA ES CONDICION Y ESTA ESCRITA: `dos`, y el libro imprime `dos` rotulos.** Es `D.37` y no
+`D.29`.
+
+> **LA SEGUNDA MITAD DE LA SERIE NO VENCE HOY Y LO DIGO EN VEZ DE CALLARLO:** el rotulo `Burnout` es
+> `cuidarse_agotamiento_centro_rueda`, **que sigue en la bandeja** (medido arriba). **Su arista vence
+> el dia que entre**, y va a la cola de `U.6`.
+
+### U.3.d. LAS TRES, Y LO QUE LE HACEN A LA BITACORA
+
+    $ wc -l bitacora/VEREDICTOS.jsonl   ->  247   (244 tras las correcciones: TRES aristas)
+    $ python forja.py gate              ->  GATE VERDE.   nodos verificados: 234
+
+**Ningun nodo entra ni sale por esto: una arista cambia dos campos, no la poblacion.**
+
+**TAREA 2 CERRADA**, con las tres escritas y la mitad de la serie de `2.c` declarada como cola.
