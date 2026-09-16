@@ -1,0 +1,10 @@
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: cambiar_potencial_trayectoria_crecimiento
+  hijo : retirar_etiquetas_permanentes_equipo
+  paso citado de la madre: 14
+    No pongas etiquetas permanentes: el texto dice que estas preguntas sirven justo para recordarte que las trayectorias cambian.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.542, similitud_texto 0.327
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: cambiar_potencial_trayectoria_crecimiento > retirar_etiquetas_permanentes_equipo
+  razon en bitacora/VEREDICTOS.jsonl

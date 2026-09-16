@@ -1,0 +1,10 @@
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: acompaniar_mejores_equipo_socio
+  hijo : reconocer_recompensar_gente_estable
+  paso citado de la madre: 1
+    Antes de distinguir entre estrellas de rock y superestrellas, atiende a lo que las dos necesitan de ti por igual: que te concentres en ellas y te aseg
+  señales del par: familia_id 0.0, paso_contra_nodo 0.409, similitud_texto 0.342
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: acompaniar_mejores_equipo_socio > reconocer_recompensar_gente_estable
+  razon en bitacora/VEREDICTOS.jsonl

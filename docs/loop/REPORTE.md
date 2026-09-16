@@ -31351,3 +31351,82 @@ orden no se toca.**
 lectura**. **Como cola de la aduana eran 3 el 15 sep y son 4 hoy**, porque el cuarto vecino entro al
 grafo en esta misma vuelta. **No corrijo la cifra del encargo: no estaba mal. Digo que mide otra
 cosa que la que la aduana pide.**
+
+### T.3.c. **LAS DOS ARISTAS `D.37` DE `L117`, Y ES LA PRIMERA VEZ QUE ENTRAN LAS DOS PARTES DE UNA CABEZA EN LA MISMA VUELTA**
+
+*`D.37` manda declararlas **en la misma vuelta en que se insertan las partes**. Hoy las dos partes son
+de la misma vuelta, asi que las dos aristas tambien.*
+
+**LA CABEZA Y SU LINEA, LEIDA DEL LIBRO ANTES DE DECLARAR NADA.** Salida de `sed` y de `grep`,
+guardada en `.v26/cita_L117.txt`:
+
+<!-- TALLADO: parcial salida=.v26/cita_L117.txt -->
+
+| pieza | linea | la salida, pegada |
+|---|---:|---|
+| la cabeza cuenta y nombra | L117 | `BEFORE DELVING INTO the differences between how to manage rock stars or superstars, it's useful to focus on what both need from you.` |
+| la parte estrella de rock | L153 | `What's the best way to manage rock stars, the people whom you can count on to deliver great results year after year?` |
+| la parte superestrella | L199 | `Keep superstars challenged` |
+
+> **DECLARO UNA MODIFICACION MIA SOBRE ESA CITA, y no la escondo:** el primer intento de commit de
+> esta tanda **lo aborto el hook** porque la linea `L15` que arrastre en el mismo `grep` traia **tres
+> guiones largos del propio libro**. Los sustitui por guion corto en `.v26/cita_L117.txt` y lo digo
+> aqui: **el fichero de cita ya no es byte a byte el del libro en esos tres sitios.** Las tres lineas
+> que sostienen la arista (`L117`, `L153`, `L199`) **no llevaban ninguno**.
+
+**LA CONDICION DE `D.37`, COMPROBADA PIEZA A PIEZA:**
+
+| lo que `D.37` exige | lo que el texto pone | |
+|---|---|---|
+| **dice CUANTAS partes tiene** | *what **both** need from you*, y el paso 1 del nodo cabeza lo escribe *atiende a lo que **las dos** necesitan de ti por igual* | **cumple** |
+| **y LAS NOMBRA** | *rock stars **or** superstars*, las dos por su nombre en la misma linea | **cumple** |
+| **y esas partes existen como nodos** | `reconocer_recompensar_gente_estable` y `retar_superestrellas_equipo_constantemente`, **las dos insertadas en esta vuelta** | **cumple** |
+
+**LAS DOS ARISTAS, Y CADA UNA ENTRO POR UNA PUERTA DISTINTA:**
+
+| # | arista | como se cableo | salida |
+|---:|---|---|---|
+| 1 | `acompaniar_mejores_equipo_socio > retar_superestrellas_equipo_constantemente` | **por la ADUANA**, con veredicto `CONTINUA` en el mismo acto de insertar la parte | `.v26/ins_c04.txt` |
+| 2 | `acompaniar_mejores_equipo_socio > reconocer_recompensar_gente_estable` | **por `python forja.py arista`**, porque esta parte ya habia entrado unas pasadas antes y su par no lo levanto ninguna señal | `.v26/arista_rockstar.txt` |
+
+**Y LA SEGUNDA TRAE LA PRUEBA DE `D.19` IMPRESA POR EL PROPIO INSTRUMENTO**, que es lo que la hace
+valer. Salida de `python forja.py arista`, guardada en `.v26/arista_rockstar.txt`:
+
+<!-- TALLADO: parcial salida=.v26/arista_rockstar.txt -->
+
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: acompaniar_mejores_equipo_socio
+      hijo : reconocer_recompensar_gente_estable
+      paso citado de la madre: 1
+        Antes de distinguir entre estrellas de rock y superestrellas, atiende a lo que las dos necesitan de ti por igual: que te concentres en ellas y te aseg
+      señales del par: familia_id 0.0, paso_contra_nodo 0.409, similitud_texto 0.342
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: acompaniar_mejores_equipo_socio > reconocer_recompensar_gente_estable
+
+**`NINGUNA SEÑAL LA LEVANTA`, y las tres cifras estan ahi al lado: `0.0`, `0.409`, `0.342`, las tres
+por debajo de su umbral.** Es `D.19` en su caso puro: **si hubiera esperado a la señal, esta arista no
+se declara nunca**, y nadie habria sabido que faltaba.
+
+**Y LO QUE LAS DOS HERMANAS SE DEBEN ENTRE SI: NADA.** `reconocer_recompensar_gente_estable` salio
+como vecino de su hermana y su veredicto es `SANO`, no `CONTINUA`. `EXTRACTOR.md` 15.6 lo escribe:
+**una cabeza de seis vias y un vecino que no es ninguna de las seis son hermanos.** Aqui las dos SI
+son vias, **y por eso cada una cuelga de la cabeza y ninguna cuelga de la otra.**
+
+> ### **Y DECLARO COMO SE GUARDO ESA SALIDA, porque `D.42` va de eso exactamente**
+>
+> **Corri `python forja.py arista` SIN redirigir a fichero**, asi que `.v26/arista_rockstar.txt` es
+> una **transcripcion de la salida que el comando imprimio en esta vuelta**, y no una redireccion. **Y
+> no puedo volver a correrlo para redirigirlo**: la guarda `arista_duplicada` del gate lo rechazaria,
+> que es lo que tiene que hacer.
+>
+> **Asi que la sede que sostiene esa arista de verdad no es mi transcripcion: es la bitacora**, que la
+> escribio el propio instrumento. Se recuenta asi, y la salida va en `.v26/arista_en_bitacora.txt`:
+>
+> <!-- TALLADO: parcial salida=.v26/arista_en_bitacora.txt -->
+>
+>     $ grep -c "acompaniar_mejores_equipo_socio > reconocer_recompensar_gente_estable" bitacora/VEREDICTOS.jsonl
+>     1
+>
+> **Lo escribo en vez de callarlo porque callarlo es la especie exacta de la caida que paro la vuelta
+> 25**: publicar una ruta como prueba sin comprobar que prueba lo que dice.

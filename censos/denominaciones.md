@@ -513,3 +513,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | retar_superestrellas_equipo_constantemente | nombre_largo | Como se gestiona a quien hace un trabajo excelente y esta creciendo deprisa: retos nuevos, mentores de fuera, sucesor pensado por adelantado, salvaguardas para que su jefe no pueda frenarlo, y una via de experto tan prestigiosa como la de jefe | castellano | - |
 | 2026-09-16 | retar_superestrellas_equipo_constantemente | otro_idioma | superstar | ingles | - |
 | 2026-09-16 | retar_superestrellas_equipo_constantemente | otro_idioma | individual contributor | ingles | - |
+| 2026-09-16 | retirar_etiquetas_permanentes_equipo | nombre_largo | El aviso con el que el capitulo se cierra: usar el marco sin abusar de el, porque las trayectorias cambian, el desempenio cambia, y quien no presta atencion no se entera de que algo ha cambiado | castellano | - |
+| 2026-09-16 | retirar_etiquetas_permanentes_equipo | otro_idioma | no permanent markers | ingles | - |

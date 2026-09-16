@@ -1,0 +1,2 @@
+$ grep -c "acompaniar_mejores_equipo_socio > reconocer_recompensar_gente_estable" bitacora/VEREDICTOS.jsonl
+1
