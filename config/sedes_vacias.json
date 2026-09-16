@@ -36,6 +36,11 @@
       "ruta": "docs/loop/ultimo_auditor.json",
       "motivo": "Retirado por D.34.2 durante la fase ciega, junto con el reporte.",
       "regla": "D.34.2"
+    },
+    {
+      "ruta": "docs/loop/loop.log",
+      "motivo": "Retirado por D.34.2 durante la fase ciega, junto con el reporte y los dos testigos. Es el cuarto de los cuatro, y se me olvido al meter los otros tres: por eso hay ahora una prueba que compara esta lista con la que el arnes retira de verdad.",
+      "regla": "D.34.2"
     }
   ]
 }

@@ -49,6 +49,7 @@ docs/COSECHA_2026-09.md), cada pieza con su caso positivo:
 import io
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -2435,6 +2436,26 @@ class PruebaCensoDeRutas(BaseForja):
         for retirado in ("docs/loop/REPORTE.md", "docs/loop/ultimo_extractor.json",
                          "docs/loop/ultimo_auditor.json"):
             self.assertIn(retirado, exentas)
+
+    def test_la_lista_de_exentos_cubre_LOS_CUATRO_que_el_arnes_retira(self):
+        """La lista de `config/` duplica la del arnes, y una copia se desincroniza.
+
+        **Paso el 16 sep 2026 y paro el bucle:** meti en la lista `REPORTE.md` y los
+        dos testigos, **y me deje `loop.log`**, que es el cuarto. La fase ciega sello
+        con el censo en rojo por una ruta ausente **por protocolo**, y el arnes se
+        detuvo por una caida que no existia.
+
+        **UNA LISTA QUE HAY QUE ACORDARSE DE COMPLETAR NO ESTA COMPLETA.** Esta prueba
+        lee los cuatro del propio arnes y exige que la lista los cubra.
+        """
+        from scripts import censar_rutas
+        arnes = comun.leer_texto(os.path.join(RAIZ, "orquestador_forja.sh"))
+        encaje = re.search(r'retirar="([^"]+)"', arnes)
+        self.assertIsNotNone(encaje, "el arnes ya no declara que retira")
+        exentas = censar_rutas._sedes_exentas()
+        for fichero in encaje.group(1).split():
+            self.assertIn("docs/loop/" + fichero, exentas,
+                          "D.34.2 retira %s y el censo no lo exime" % fichero)
 
     def test_caso_positivo_otro_fichero_ausente_sigue_cayendo(self):
         """La exencion es de los cuatro que D.34.2 nombra, no de todo lo que falte."""
