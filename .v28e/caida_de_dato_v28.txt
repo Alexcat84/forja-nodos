@@ -1,0 +1,17 @@
+LA CAIDA DE DATO DE LA VUELTA 28, MEDIDA ANTES DE ARREGLARLA
+
+$ grep -c '"id": "crear_obligacion_disentir_equipo"' dataset/nodos.jsonl
+0
+$ lineas de la bitacora que lo nombran como candidato
+10
+$ lineas de censos/denominaciones.md que lo nombran
+3
+$ nodos en el grafo
+242
+$ veredictos en la bitacora
+279
+
+$ python forja.py gate
+GATE VERDE.
+  nodos verificados: 242
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones

@@ -1,0 +1,3 @@
+=== crear_espacio_seguro_madurar_ideas_nuevas  (1 vecinos)
+  nutrir_ideas_nuevas_reunion_solas              [bandeja]  por paso_contra_nodo
+      similitud 0.192  familia 0.222  paso 0.617   paso 1 del candidato contra paso 2 de nutrir_ideas_nuevas_reunion_solas

@@ -1,0 +1,11 @@
+=== cuidarse_agotamiento_centro_rueda  (5 vecinos)
+  cambiar_posicion_hechos_explicar_cambio        [GRAFO]  por similitud_texto
+      similitud 0.402  familia 0.000  paso 0.456   paso 3 del candidato contra paso 3 de cambiar_posicion_hechos_explicar_cambio
+  abrir_debate_humor_explicar_proposito          [GRAFO]  por similitud_texto
+      similitud 0.353  familia 0.000  paso 0.455   paso 1 del candidato contra paso 7 de abrir_debate_humor_explicar_proposito
+  reconocer_emociones_propias_avisar_equipo      [bandeja]  por similitud_texto
+      similitud 0.353  familia 0.000  paso 0.443   paso 3 del candidato contra paso 2 de reconocer_emociones_propias_avisar_equipo
+  minimizar_impuesto_colaboracion_equipo         [bandeja]  por similitud_texto
+      similitud 0.376  familia 0.000  paso 0.429   paso 3 del candidato contra paso 2 de minimizar_impuesto_colaboracion_equipo
+  mantener_manos_trabajo_real_equipo             [bandeja]  por similitud_texto
+      similitud 0.379  familia 0.000  paso 0.404   paso 3 del candidato contra paso 2 de mantener_manos_trabajo_real_equipo

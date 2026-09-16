@@ -1,0 +1,3 @@
+=== repartir_decision_cercanos_hechos  (1 vecinos)
+  centrar_debate_ideas_fuera_egos                [GRAFO]  por similitud_texto
+      similitud 0.352  familia 0.000  paso 0.531   paso 6 del candidato contra paso 6 de centrar_debate_ideas_fuera_egos

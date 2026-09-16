@@ -71,8 +71,10 @@ via que no existe.*
 | lo que queda | cifra al abrir | **cifra al cerrar** | estado |
 |---|---:|---:|---|
 | la arista `recorrer_rueda_conscientemente_cultura_equipo --paso 4--> recorrer_rueda_hacer_cosas_equipo` | **1** | **0** | **CERRADA en `V.5`** |
-| la mitad `Burnout` de la serie `D.37` de `aprender_resultados_vencer_dos_presiones` | **1** | ver `V.5` | depende de que entre `cuidarse_agotamiento_centro_rueda` |
-| la serie `D.37` de `minimizar_impuesto_colaboracion_equipo` | **3** partes | ver `V.5` | depende de que entren sus tres partes |
+| la mitad `Burnout` de la serie `D.37` de `aprender_resultados_vencer_dos_presiones` | **1** | **1** | sigue: `cuidarse_agotamiento_centro_rueda` no entro (`V.5.i`) |
+| la serie `D.37` de `minimizar_impuesto_colaboracion_equipo` | **3** partes | **3** | sigue: ni la cabeza ni sus tres partes entraron (`V.5.i`) |
+| **NUEVA**: la arista en cola `crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas` | 0 | **1** | la desbloquea que entre el hijo (`V.5.h`) |
+| **NUEVA**: los `12` candidatos de `cap_07` que no cupieron, con su cola de lectura | 0 | **12** candidatos, **77** pares | la vuelta siguiente (`V.5.g`) |
 | `cap_04` releido antes que las tres filas de hueco | **6** candidatos, **48** pasos | **6** y **48** | **SIGUE SIN CABER, y lo declaro otra vez con su motivo** |
 | la frontera por capitulo con las `QUESTIONS TO CONSIDER` y su clase escrita | **14** de **17** unidades | **14** de **17** | la vuelta que mine un capitulo del lote 5 |
 | el lote 5 por su orden | **3** candidatos en bandeja | **3** | **NO TOCADO**, y es deliberado |

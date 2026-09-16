@@ -1,0 +1,21 @@
+=== proteger_tiempo_equipo_jefe  (10 vecinos)
+  bloquear_tiempo_pensar_calendario              [bandeja]  por paso_contra_nodo
+      similitud 0.220  familia 0.143  paso 0.625   paso 7 del candidato contra paso 6 de bloquear_tiempo_pensar_calendario
+  cuidarse_agotamiento_centro_rueda              [bandeja]  por similitud_texto
+      similitud 0.360  familia 0.000  paso 0.489   paso 1 del candidato contra paso 2 de cuidarse_agotamiento_centro_rueda
+  mantener_manos_trabajo_real_equipo             [bandeja]  por similitud_texto
+      similitud 0.427  familia 0.125  paso 0.452   paso 1 del candidato contra paso 4 de mantener_manos_trabajo_real_equipo
+  cambiar_posicion_hechos_explicar_cambio        [GRAFO]  por similitud_texto
+      similitud 0.376  familia 0.000  paso 0.427   paso 5 del candidato contra paso 6 de cambiar_posicion_hechos_explicar_cambio
+  reservar_calendario_tiempo_ejecutar            [bandeja]  por similitud_texto
+      similitud 0.423  familia 0.143  paso 0.427   paso 3 del candidato contra paso 4 de reservar_calendario_tiempo_ejecutar
+  parar_debate_emocion_agotamiento               [bandeja]  por similitud_texto
+      similitud 0.362  familia 0.000  paso 0.417   paso 4 del candidato contra paso 2 de parar_debate_emocion_agotamiento
+  pedir_hechos_decision_evitar_recomendaciones   [bandeja]  por similitud_texto
+      similitud 0.360  familia 0.000  paso 0.410   paso 5 del candidato contra paso 2 de pedir_hechos_decision_evitar_recomendaciones
+  centrar_debate_ideas_fuera_egos                [GRAFO]  por similitud_texto
+      similitud 0.353  familia 0.000  paso 0.407   paso 7 del candidato contra paso 7 de centrar_debate_ideas_fuera_egos
+  compartir_logica_mostrar_razonamiento          [bandeja]  por similitud_texto
+      similitud 0.373  familia 0.000  paso 0.407   paso 8 del candidato contra paso 2 de compartir_logica_mostrar_razonamiento
+  minimizar_impuesto_colaboracion_equipo         [bandeja]  por similitud_texto
+      similitud 0.375  familia 0.143  paso 0.386   paso 5 del candidato contra paso 1 de minimizar_impuesto_colaboracion_equipo

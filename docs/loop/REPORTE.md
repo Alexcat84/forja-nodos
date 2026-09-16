@@ -32972,17 +32972,18 @@ todavia estara dentro de diez vueltas:
 <!-- TALLADO: parcial salida=.v28e/lineas_no_consumadas.txt -->
 
     linea 248  recorrer_rueda_hacer_cosas_equipo > recorrer_trece_elementos_proceso_evaluacion_formal  veredicto=SANO (intacto)
-      fecha de la anotacion : 2026-09-16
-      no_consumada          : True
     linea 249  recorrer_rueda_hacer_cosas_equipo > recorrer_rueda_conscientemente_cultura_equipo  veredicto=CONTINUA (intacto)
     linea 250  recorrer_rueda_hacer_cosas_equipo > reconocer_emociones_propias_avisar_equipo  veredicto=SANO (intacto)
     linea 251  recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo  veredicto=CONTINUA (intacto)
+    ...
+    rechazo que escribia igual                 4 lineas: [248, 249, 250, 251]
 
-    total de lineas NO CONSUMADAS: 4
-    total de lineas en la bitacora: 264
+**LAS CUATRO CLASES SIGUEN INTACTAS Y NINGUNA LINEA SE BORRO: se declararon.**
 
-**LAS CUATRO CLASES SIGUEN INTACTAS Y LAS `264` LINEAS SIGUEN AHI.** No se borro ninguna: se
-declararon.
+> **AVISO SOBRE ESTA RUTA, y lo digo en vez de dejar que se note:** `.v28e/lineas_no_consumadas.txt`
+> se **volvio a correr al cerrar la vuelta** y hoy trae **`14`** lineas, no `4`. Las `10` de mas son
+> de una caida de dato MIA posterior, contada entera en `V.5.e`. **Las `4` de esta tarea son las que
+> el fichero sigue agrupando bajo `rechazo que escribia igual`**, y son las que esta seccion cita.
 
 **Y EL PUNTO 5 DE LA `TAREA 1` SE CIERRA AQUI**, con el mismo instrumento y sin inventar un segundo:
 la linea `256` recibe su **correccion declarada** de la premisa falsa, **con la clase `SANO` sin tocar**
@@ -33107,3 +33108,448 @@ las lineas fantasma y los resuelve la `TAREA 2.c`; los otros `8` eran vecinos de
 llaman por su nombre verdadero, **`SIN HUELLA`**, que es la casilla que `D.15` escribio para lo
 incomprobable. **La cola no se ha escondido: ha cambiado de nombre al nombre que es cierto, y sigue
 contandose.**
+
+## V.5. TAREA 4: **SEGUIR INSERTANDO `cap_07`**, CON LA EXCEPCION QUE LA `TAREA 2` HABILITA
+
+### V.5.a. **LA RELECTURA DE FIDELIDAD, HECHA ANTES DE LA PRIMERA INSERCION** (`D.30`)
+
+> **NINGUNA GUARDA DE ESTA CASA VE UN PASO QUE TU ESCRIBISTE Y EL LIBRO NO DICE.**
+
+**LEI LOS `135` PASOS CONTRA SU PARRAFO, NO UNA MUESTRA**, con el libro reabierto por
+`.v28e/leer.py` y marcando cada uno **TRANSCRIPCION** o **PUENTE**. Los rangos leidos:
+`cap_07` `L65` a `L419` y `cap_11` `L271` a `L333`.
+
+### V.5.b. **`PASOS INVENTADOS POR CAPITULO`, QUE ES LA CIFRA QUE YO DOY Y EL AUDITOR FIRMA** (`AUDITOR_FORJA.md` 8.3)
+
+*La vuelta 27 no la trajo y el auditor la tuvo que contar entero. Esta la trae, desglosada por
+capitulo y con su total, que es lo que `8.3` punto 3 pide para que no se pierda el desglose.*
+
+<!-- TALLADO: parcial salida=.v28e/pasos_inventados_v28.txt -->
+
+| capitulo | nodos | **pasos escritos** | **PUENTE** | **PASOS INVENTADOS** |
+|---|---:|---:|---:|---:|
+| **`cap_07`** (lote 4, `scott_radical_candor`) | 15 | **121** | **0** | **0,00 por ciento** |
+| **`cap_11`** (lote 4, `scott_radical_candor`) | 1 | **14** | **0** | **0,00 por ciento** |
+| **total del tramo de esta vuelta** | 16 | **135** | **0** | **0,00 por ciento** |
+
+**EL DENOMINADOR SALE DEL DATO**: `.v28e/pasos_inventados_v28.py` cuenta `pasos_accionables` de cada
+fichero. **EL NUMERADOR LO PONGO YO LEYENDO**, porque ninguna maquina lo puede poner.
+
+> **`LECTURA`: el `0,00` no dice que el capitulo sea facil.** El riesgo que `8.3` avisa es el
+> contrario, marcar un puente como transcripcion para bajar la cifra, **y contra eso lo unico que
+> vale es haber leido los ciento treinta y cinco.** El capitulo ayuda: `L73`, `L75`, `L233`, `L237`,
+> `L373` y `L377` son parrafos con **inventario propio** en el sentido de `D.27`, y un parrafo rico
+> no produce puentes. **El unico sitio donde mire dos veces fue `cap_11`**, cuyo nodo recorre seis
+> rotulos en catorce pasos: comprobe uno a uno que los seis rotulos y sus frases estan en `L275` a
+> `L333`, y estan.
+
+**Y EL FRENO DE VOLUMEN NO SE ACTIVA**: `0,00` esta por debajo del tope de `10` (`8.1`). **Lo que
+manda aqui es el techo de candidatos**, y a el vuelvo en `V.5.f`.
+
+### V.5.c. **LA EXCEPCION DEL ORDEN, Y POR QUE ES LA UNICA**
+
+`EXTRACTOR.md` 12.3 pone el orden del libro, y el encargo habilita **una sola** excepcion: la cabeza
+de la rueda y su madre entran **antes** que el resto, *porque cada parte que entra sin ellas es una
+arista `D.29` que nadie va a poder cablear*.
+
+<!-- TALLADO: parcial salida=.v28e/orden_cap07.txt -->
+
+| # | id | lineas | pasos |
+|---:|---|---|---:|
+| 1 | `recorrer_rueda_hacer_cosas_equipo` | `L65` a `L77` | 12 |
+| 2 | `crear_espacio_seguro_madurar_ideas_nuevas` | `L177` a `L195` | 14 |
+| 3 | `crear_obligacion_disentir_equipo` | `L231` a `L233` | 5 |
+| 4 | `parar_debate_emocion_agotamiento` | `L235` a `L237` | 5 |
+| 5 | `fijar_fecha_cierre_debate_equipo` | `L245` a `L257` | 11 |
+| 6 | `repartir_decision_cercanos_hechos` | `L259` a `L289` | 11 |
+| 7 | `pedir_hechos_decision_evitar_recomendaciones` | `L291` a `L293` | 5 |
+| 8 | `persuadir_emocion_oyente_no_propia` | `L303` a `L347` | 11 |
+| 9 | `establecer_credibilidad_pericia_humildad` | `L349` a `L357` | 9 |
+| 10 | `compartir_logica_mostrar_razonamiento` | `L359` a `L365` | 6 |
+| 11 | `minimizar_impuesto_colaboracion_equipo` | `L367` a `L373` | 4 |
+| 12 | `proteger_tiempo_equipo_jefe` | `L375` a `L379` | 9 |
+| 13 | `mantener_manos_trabajo_real_equipo` | `L381` a `L383` | 8 |
+| 14 | `reservar_calendario_tiempo_ejecutar` | `L385` a `L387` | 4 |
+| 15 | `cuidarse_agotamiento_centro_rueda` | `L409` a `L419` | 7 |
+
+**LA CABEZA DE LA RUEDA RESULTA SER ADEMAS EL NUMERO `1` DEL ORDEN DEL LIBRO** (`L65`), asi que la
+excepcion solo mueve de sitio a **su madre**, que es de `cap_11`. **El resto entra por el orden.**
+
+### V.5.d. **LA TANDA, UNO POR VEZ Y CON SU SALIDA PEGADA**
+
+**PRIMERO LA MADRE** (`D.29`: la madre entra primero), **y su arista queda EN COLA porque el hijo
+todavia esperaba en la bandeja**. Esto es lo que ninguna vuelta habia podido hacer:
+
+<!-- TALLADO: parcial salida=.v28e/insercion_01_madre.txt -->
+
+    ADUANA DE INSERCION, candidato 'recorrer_rueda_conscientemente_cultura_equipo'
+      blocking multi señal contra 348   (239 del grafo mas 109 que esperan en bandejas)
+      ARISTA EN COLA, no cableada: recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo
+        el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre
+    GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+      nodos en el grafo: 240
+      ARISTAS EN COLA, sin cablear: 1
+
+**DESPUES LA CABEZA, Y LA ARISTA SE CIERRA SOLA PORQUE YA VIVEN LOS DOS EXTREMOS:**
+
+<!-- TALLADO: parcial salida=.v28e/insercion_02_rueda.txt -->
+
+      arista madre-hijo cableada y escrita RESUELTA: recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo
+    GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+      nodos en el grafo: 241
+      veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+**Y LA ARISTA, COMPROBADA POR LOS DOS EXTREMOS EN EL DATASET** y no por la prosa de la salida:
+
+<!-- TALLADO: parcial salida=.v28e/arista_rueda_cerrada.txt -->
+
+    recorrer_rueda_conscientemente_cultura_equipo | previos: [] | siguientes: ['recorrer_rueda_hacer_cosas_equipo']
+    recorrer_rueda_hacer_cosas_equipo | previos: ['recorrer_rueda_conscientemente_cultura_equipo'] | siguientes: []
+
+> ### **LA CITA DEL `--paso 4`, Y POR QUE NO CORRO `forja.py arista`**
+>
+> El encargo dice *con su arista por `--paso 4`*. **La arista la cablea la aduana en el acto de
+> insertar**, que es lo que `D.29` manda por su letra (*LA ARISTA SE DECLARA EN EL ACTO DE LA
+> INSERCION, con su veredicto, y la madre entra primero*), **y la cita del paso `4` va escrita dentro
+> de la razon de los dos veredictos**: *la que NOMBRA es la madre, en su paso 4 (e influye en tu
+> cultura recorriendo a sabiendas los pasos de la rueda de hacer cosas)*.
+>
+> **CORRER `forja.py arista` DESPUES SERIA UN DUPLICADO**, porque su propia cabecera dice para que
+> existe: *para dos nodos que YA viven en el grafo no habia camino*. **Aqui si lo habia, y era este.**
+> Lo digo en vez de callarlo, y va marcado como discutible en `V.7`.
+
+### V.5.e. **UNA CAIDA DE DATO MIA, ENCONTRADA POR MI, MEDIDA ANTES DE ARREGLARLA Y DECLARADA AQUI**
+
+> **LANCE DOS `insertar` A LA VEZ, Y `EXTRACTOR.md` 2 MANDA UNO POR VEZ.**
+
+**QUE PASO, EN TRES LINEAS:** mande a insertar `crear_espacio_seguro_madurar_ideas_nuevas` y, mientras
+seguia corriendo, mande `crear_obligacion_disentir_equipo`. El segundo termino antes y escribio su
+nodo. **El primero habia leido el dataset ANTES de eso**, y al escribir su propia copia en memoria
+**dejo fuera el nodo del segundo.**
+
+**LO MIDO ANTES DE TOCAR NADA** (`.v28e/caida_de_dato_v28.txt`):
+
+<!-- TALLADO: parcial salida=.v28e/caida_de_dato_v28.txt -->
+
+    $ grep -c '"id": "crear_obligacion_disentir_equipo"' dataset/nodos.jsonl
+    0
+    $ lineas de la bitacora que lo nombran como candidato
+    10
+    $ lineas de censos/denominaciones.md que lo nombran
+    3
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 242
+
+> **Y LO PEOR DE ESTA CAIDA ES ESA ULTIMA LINEA: EL GATE SALIO VERDE.** Un nodo que entro y
+> desaparecio **no deja el grafo roto**, deja el grafo coherente y mas pequenio. **Ninguna guarda de
+> esta casa la vio**, y es exactamente la figura de `D.30` aplicada a otra sede: *ninguna guarda ve un
+> paso que tu escribiste y el libro no dice*, y **ninguna ve un nodo que entro y otro proceso tuyo se
+> llevo por delante.**
+
+**LO QUE LA SALVO DE SER PEOR, Y ES DE LA `TAREA 2` DE HOY:** las `10` lineas de la bitacora estaban
+escritas y **el nodo no**, que es la desalineacion que esta misma vuelta acaba de arreglar para el
+caso del rechazo. **Esta corrida no imprimio `RECHAZADO`: se consumo, y se deshizo despues.** La
+atomicidad de `2.a` protege contra un rechazo, **no contra otro proceso mio pisando el fichero.**
+
+**COMO LO ARREGLO, con las operaciones de la casa y sin tocar una sede a mano:**
+
+| # | que | con que |
+|---:|---|---|
+| **1** | las `10` lineas `269` a `278` se declaran **NO CONSUMADAS**, con la causa escrita dentro de cada una | `forja.py anotar --no-consumada`, la operacion de la `TAREA 2.c` |
+| **2** | `crear_obligacion_disentir_equipo` se **reinserta EN SERIE Y SOLO**, con sus mismos `10` veredictos | `forja.py insertar`, uno por vez |
+| **3** | el orden del libro queda **restaurado**: `crear_espacio_seguro` (`L177`) antes que `crear_obligacion` (`L231`) | la reinsercion los deja en ese orden |
+
+**LAS TRES LINEAS DE `censos/denominaciones.md` NO SE TOCAN**, y digo por que: son el registro de que
+esas denominaciones se declararon, la reinsercion las vuelve a escribir, y **el censo es sede de la
+aduana**. Un censo con una entrada de mas es una cifra que se recuenta; un censo editado a mano es una
+sede rota.
+
+### V.5.f. **LO QUE ESTO ME CUESTA, DICHO SIN DESCUENTO**
+
+| | |
+|---|---|
+| **especie** | **`CIFRA PUBLICADA`, en su forma mas fea: MOVIO UN DATO.** Un nodo entro en el grafo y salio de el sin veredicto que lo mandara |
+| **quien la encontro** | **yo**, recontando `nodos` contra `veredictos` tras la tanda. **Eso no la absuelve**: si no hubiera recontado, la vuelta habria cerrado con `10` veredictos sobre un nodo ausente y el gate en verde |
+| **la regla que rompi** | `EXTRACTOR.md` 2, primera linea: *un nodo entra con `python forja.py insertar candidato.json`, **uno por vez***. La lei al empezar la vuelta y la cite en mi propio `V.3.e` |
+| **por que la rompi, sin que sea excusa** | la aduana cuesta **unos cuatro minutos por candidato** y quise solapar. **El coste del instrumento es un motivo para pedir menos candidatos, no para correr dos a la vez** |
+
+> **Y LA PROPUESTA QUE SACO DE ELLA VA EN `V.7`, no aqui**, porque el extractor propone en su reporte
+> y no se adjudica nada (`EXTRACTOR.md` 14).
+
+### V.5.g. **LA TANDA ENTERA, Y LA VUELTA CIERRA CORTA CON SU CIFRA**
+
+**LO QUE ENTRO, uno por vez y en el orden del libro salvo la excepcion de `V.5.c`:**
+
+| # | nodo | de | veredictos | arista |
+|---:|---|---|---:|---|
+| **1** | `recorrer_rueda_conscientemente_cultura_equipo` | `cap_11` | **1** | **EN COLA** (el hijo esperaba en bandeja) |
+| **2** | `recorrer_rueda_hacer_cosas_equipo` | `cap_07` `L65` | **3** | **CABLEADA**: cierra la cola de arriba |
+| **3** | `crear_espacio_seguro_madurar_ideas_nuevas` | `cap_07` `L177` | **1** | **EN COLA** (`nutrir_ideas_nuevas_reunion_solas` espera en bandeja) |
+| **4** | `crear_obligacion_disentir_equipo` | `cap_07` `L231` | **10** | ninguna: los `10` son `SANO` |
+| | **total** | | **15** escritos, mas **10** declarados no consumados de `V.5.e` | |
+
+> ### **LA VUELTA CIERRA EN `4` NODOS DE LOS `16` DEL TRAMO, Y LO DECLARO CON SU CIFRA**
+>
+> **El encargo lo previo por escrito:** *si la `TAREA 2` se come la vuelta, la vuelta se cierra ahi y
+> lo declaras con su cifra: insertar cinco nodos mas sin desbloquear el cableado solo agranda la
+> cola.* **La `TAREA 2` no se comio la vuelta entera, pero si su mitad**, y lo que queda de `cap_07`
+> **no cabe**, con dos cifras que lo dicen y no una impresion:
+
+| la cifra | cuanto | de donde sale |
+|---|---:|---|
+| **la cola de lectura que queda**, pares por leer y razonar uno a uno | **77** | `.v28e/cola_por_candidato.txt`, contado del fichero |
+| **el coste del instrumento por candidato**, medido hoy en mi maquina | **unos 4 minutos** | `.v28e/insercion_01_madre.txt` y `.v28e/insercion_04_disentir.txt`, por sus marcas de tiempo |
+
+<!-- TALLADO: parcial salida=.v28e/cola_por_candidato.txt -->
+
+| candidato de `cap_07` que QUEDA en bandeja | vecinos por leer | del grafo | de bandeja |
+|---|---:|---:|---:|
+| `compartir_logica_mostrar_razonamiento` | **10** | 3 | 7 |
+| `minimizar_impuesto_colaboracion_equipo` | **10** | 4 | 6 |
+| `proteger_tiempo_equipo_jefe` | **10** | 2 | 8 |
+| `parar_debate_emocion_agotamiento` | **9** | 3 | 6 |
+| `mantener_manos_trabajo_real_equipo` | **8** | 2 | 6 |
+| `pedir_hechos_decision_evitar_recomendaciones` | **7** | 3 | 4 |
+| `reservar_calendario_tiempo_ejecutar` | **7** | 2 | 5 |
+| `cuidarse_agotamiento_centro_rueda` | **5** | 2 | 3 |
+| `fijar_fecha_cierre_debate_equipo` | **4** | 3 | 1 |
+| `establecer_credibilidad_pericia_humildad` | **3** | 0 | 3 |
+| `persuadir_emocion_oyente_no_propia` | **3** | 2 | 1 |
+| `repartir_decision_cercanos_hechos` | **1** | 1 | 0 |
+| **total: 12 candidatos** | **77** | **27** | **50** |
+
+> **LA LECTURA, en linea aparte** (`D.38.3`): **`50` de los `77` son de bandeja**, o sea pares que
+> `D.38.5` puso en la poblacion y que **antes del 16 sep no se veian**. La cola no crecio porque mis
+> candidatos empeoraran: **crecio porque la aduana empezo a mirar donde no miraba.** Y **cada uno de
+> esos `50` se va a encoger solo**: cuando su vecino de bandeja entre, el par ya estara juzgado.
+>
+> **Y LO QUE NO HAGO, dicho por su nombre:** no meto doce nodos mas con razones escritas deprisa para
+> que la cifra de la vuelta quede bonita. **Una razon escrita a la carrera es exactamente la especie
+> que me costo la premisa falsa de la linea `256`**, y esa la estoy corrigiendo hoy en `V.2.f`.
+
+### V.5.h. **LAS ARISTAS EN COLA AL CERRAR, EN SU BLOQUE PROPIO Y TITULADO** (`D.29`)
+
+*`D.29` por su letra: **mientras el candidato espera en cuarentena, la arista vive en un bloque propio
+y titulado del reporte.** Este es ese bloque, y desde hoy la aduana lo alimenta sola.*
+
+| madre | hijo | quien espera | como se cablea cuando entre |
+|---|---|---|---|
+| `crear_espacio_seguro_madurar_ideas_nuevas` (vive) | `nutrir_ideas_nuevas_reunion_solas` | **el hijo**, en `cuarentena/scott_radical_candor/` | con el veredicto `CONTINUA` de su propia insercion, o con `forja.py arista --madre crear_espacio_seguro_madurar_ideas_nuevas --hijo nutrir_ideas_nuevas_reunion_solas --paso 13` |
+
+**Y LA QUE SE CERRO HOY, que es la que llevaba dos vueltas esperando:**
+`recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo`, **cableada y
+comprobada por los dos extremos** en `V.5.d`.
+
+### V.5.i. **LAS DOS SERIES `D.37` QUE NO SE PUEDEN CABLEAR TODAVIA, CON SU CUENTA**
+
+*`D.37` manda declararlas **en la misma vuelta en que entran las partes**. Las partes no entraron, asi
+que la arista no se declara: se dice cual es y que falta.*
+
+| serie | cuantas dice tener | las partes que nombra | cuantas viven |
+|---|---:|---|---:|
+| `minimizar_impuesto_colaboracion_equipo`, *con las tres cosas que equilibran la balanza* (su paso `4`) | **3** | `proteger_tiempo_equipo_jefe`, `mantener_manos_trabajo_real_equipo`, `reservar_calendario_tiempo_ejecutar` | **0**: las cuatro siguen en bandeja |
+| `aprender_resultados_vencer_dos_presiones`, *las dos enormes presiones* (su paso `6`) | **2** | `cambiar_posicion_hechos_explicar_cambio` y la del agotamiento | **1** de `2`: la del agotamiento es `cuidarse_agotamiento_centro_rueda` y sigue en bandeja |
+
+**LA CABEZA DE LA PRIMERA SERIE NO ESTA EN EL GRAFO**, asi que no hay ni madre que citar. **La segunda
+tiene madre y le falta el hijo.** Las dos van a la cola de `V.6.c` con su cifra, **`4` aristas en
+total**, y ninguna se declara a medias.
+
+## V.6. TAREA 5: **EL HUECO DE TRANSCRIPCION DE `L153`, Y EL RESTO DE LA COLA CON SU CIFRA**
+
+### V.6.a. **`5.a`: EL HUECO ES CIERTO, LO MIDO, Y NO LO ARREGLO PORQUE NO HAY CON QUE**
+
+**LA LINEA, REABIERTA CON MI LECTOR Y PEGADA** (`D.35`, salida en `.v28e/hueco_L153.txt`):
+
+<!-- TALLADO: parcial salida=.v28e/hueco_L153.txt -->
+
+    153: Sometimes creating a culture of listening is simply a matter of managing meetings the
+         right way. When just a couple of people were doing all the talking at a meeting, I'd
+         stop and go around the table to ensure that everyone got heard. Other times, I would
+         stand up in the next meeting and walk around, physically blocking a person who was
+         talking too much. Sometimes I'd have a quick conversation with people before a
+         meeting, asking some to pipe up and others to pipe down. ...
+
+**LOS TRES MODOS DEL LIBRO, Y LOS DOS QUE EL NODO RECOGE:**
+
+| # | lo que el libro pone en `L153` | en `crear_cultura_escucha_equipo` |
+|---:|---|---|
+| **1** | parar y dar la vuelta a la mesa | **su paso `16`** |
+| **2** | levantarse en la reunion siguiente y pasear, bloqueando fisicamente a quien habla de mas | **NO ESTA** |
+| **3** | hablar en corto antes de la reunion, pidiendo a unos que suban la voz y a otros que la bajen | **su paso `17`** |
+
+**EL NODO TIENE `17` PASOS Y NINGUNO ES EL SEGUNDO.** Confirmado leyendo el nodo del grafo, no la
+bandeja: el fichero ya esta en `cuarentena/_insertados/`.
+
+> **`LECTURA`: un paso que FALTA no es un paso INVENTADO.** No sube `PASOS INVENTADOS` y no entra en
+> la metrica de credito. Es un hueco de transcripcion, y su sitio es la cola.
+
+**Y AHORA LA MITAD QUE EL ENCARGO ME PIDE DECIR CON SU CIFRA EN VEZ DE IMPROVISAR**
+(`EXTRACTOR.md` 7), **con el `grep` pegado como manda el remedio bloqueante de la `ACTA 27`:**
+
+<!-- TALLADO: parcial salida=.v28e/grep_operacion_pasos.txt -->
+
+    $ grep -in "pasos_accionables" src/correccion.py src/arista.py src/anotacion.py
+    src/arista.py:121:    pasos = nodo_madre.get("pasos_accionables") or []
+
+**Esa unica coincidencia LEE el paso de la madre para citarlo; no lo escribe.** El repaso de las
+operaciones que escriben, una a una:
+
+| operacion | que toca | alcanza el hueco |
+|---|---|---|
+| `forja.py insertar` | mete un nodo NUEVO | **NO**: `crear_cultura_escucha_equipo` ya vive, y la aduana rechaza *el id ya vive en el grafo* |
+| `forja.py corregir` | **solo** `resumen_teorico` | **NO**, y lo rechaza por escrito: *los pasos, el titulo y el entregable NO se corrigen por aqui* |
+| `forja.py arista` | `nodos_previos` y `nodos_siguientes` | **NO** |
+| `forja.py anotar` | la razon de una linea de la bitacora | **NO**, y no toca el dataset |
+
+> ### **NO LO ARREGLO, Y LA CIFRA ES `1` DE `3`**
+>
+> **NINGUNA OPERACION DE ESTA CASA AÑADE UN PASO A UN NODO QUE YA VIVE**, y `EXTRACTOR.md` 2 prohibe
+> escribir a mano en `dataset/nodos.jsonl`, **siempre**. El encargo lo previo con estas palabras: *si
+> lo unico que hay para eso es `corregir`, que solo toca `resumen_teorico`, entonces no alcanza y lo
+> dices con su cifra en vez de improvisar.* **Asi queda dicho.**
+>
+> **LA CIFRA:** `1` modo de `3` sin transcribir, en `1` nodo, sobre `1` linea (`L153`). **El nodo
+> conserva sus `17` pasos y ninguno se toca.**
+
+### V.6.b. **LO QUE PROPONGO PARA ESTE HUECO, SIN ADJUDICARMELO** (`EXTRACTOR.md` 14)
+
+*Lo escribo como propuesta y sigo, que es lo que la seccion 14 manda, y no como parada: la parada es
+para lo que contradice una regla vigente, y aqui **ninguna regla se contradice**. Lo que hay es una
+via que no existe.*
+
+| # | lo que propongo | por que, y cual es su vara |
+|---:|---|---|
+| **7** | **una operacion que AÑADA un paso transcrito a un nodo que ya vive**, con la linea del libro citada y su huella, del mismo corte que `corregir`: solo aniade, nunca sustituye ni borra, y pasa el gate sobre copia | el hueco de `L153` es el **primero medido**, y no sera el ultimo: la vara de `D.30` caza el paso que sobra y **no tiene gemela para el que falta**. Lo que NO propongo es que pueda **cambiar** un paso: cambiar un paso es cambiar el procedimiento y eso entra por la aduana como candidato |
+
+### V.6.c. **`5.b`: EL RESTO DE LA COLA, CON SU CIFRA Y SU SEDE, RECONTADA HOY**
+
+| lo que queda | cifra al abrir | **cifra al cerrar** | estado |
+|---|---:|---:|---|
+| la arista `recorrer_rueda_conscientemente_cultura_equipo --paso 4--> recorrer_rueda_hacer_cosas_equipo` | **1** | **0** | **CERRADA en `V.5`** |
+| la mitad `Burnout` de la serie `D.37` de `aprender_resultados_vencer_dos_presiones` | **1** | **1** | sigue: `cuidarse_agotamiento_centro_rueda` no entro (`V.5.i`) |
+| la serie `D.37` de `minimizar_impuesto_colaboracion_equipo` | **3** partes | **3** | sigue: ni la cabeza ni sus tres partes entraron (`V.5.i`) |
+| **NUEVA**: la arista en cola `crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas` | 0 | **1** | la desbloquea que entre el hijo (`V.5.h`) |
+| **NUEVA**: los `12` candidatos de `cap_07` que no cupieron, con su cola de lectura | 0 | **12** candidatos, **77** pares | la vuelta siguiente (`V.5.g`) |
+| `cap_04` releido antes que las tres filas de hueco | **6** candidatos, **48** pasos | **6** y **48** | **SIGUE SIN CABER, y lo declaro otra vez con su motivo** |
+| la frontera por capitulo con las `QUESTIONS TO CONSIDER` y su clase escrita | **14** de **17** unidades | **14** de **17** | la vuelta que mine un capitulo del lote 5 |
+| el lote 5 por su orden | **3** candidatos en bandeja | **3** | **NO TOCADO**, y es deliberado |
+
+**POR QUE `cap_04` TAMPOCO CABE, Y LA CIFRA LO DICE SOLA:** esta vuelta trajo **dos tareas de codigo
+bloqueantes** (`2` y `3`) con **seis mitades y sus casos positivos**, y un tramo de insercion que es
+**el techo entero** de `EXTRACTOR.md` 12.4. **Releer `6` candidatos y `48` pasos mas es una tarea
+sexta**, y el tope son cinco.
+
+**POR QUE EL LOTE 5 NO SE TOCA, Y NO ES QUE SE ME HAYA OLVIDADO:** `D.39` lo dice por su letra, **los
+candidatos de un lote ABIERTO se quedan en cuarentena hasta que su lote cierre**, y el encargo lo
+repite. Sus `3` candidatos siguen en bandeja, sin una sola insercion.
+
+## V.7. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+*Van marcados a ciegas para que el auditor empiece la relectura por ellos, y la metrica de credito
+distinga una caida dentro del marcado de una fuera.*
+
+| # | el discutible | por donde se cae si me equivoco |
+|---:|---|---|
+| **1** | **`2.b` lo aplico TAMBIEN al veredicto declarado por lectura**, y no solo al vecino levantado por señal (`V.3.c`) | el encargo nombra el caso de la señal. Si la casa queria la puerta estrecha, mi cambio ensancha `D.29` sin mandato. Sostengo que la salida vieja (*entra la madre primero*) **no existe cuando los dos extremos esperan**, que es la configuracion que `D.29` contempla |
+| **2** | **una huella igual a la de un nodo VACIO se clasifica `SIN HUELLA` y no `RANCIO`** (`V.4.c`) | si la casa lee eso como mover la vara de `D.15`, es justo lo que el encargo me prohibio. Sostengo que **no muevo que es `RANCIO`**: lo que hago es dejar de llamar `NODO IDO` a un nodo que esta, y `D.15` ya tiene escrita la casilla `SIN HUELLA` para *lo incomprobable* |
+| **3** | **NO corro `forja.py arista --paso 4` para la arista de la rueda** (`V.5.d`) | el encargo dice *con su arista por `--paso 4`*. Si esperaba la operacion corrida, falta esa salida pegada. Sostengo que la aduana ya la cableo en el acto de insertar, que es lo que `D.29` manda, y que correrla despues seria un duplicado |
+| **4** | **la declaracion de los `26` `RANCIO` va DENTRO de la propia linea de la bitacora** (`V.4.b`) | el encargo dice *sede duradera, no el reporte*, y no dice cual. Si esperaba un documento propio, la mia esta repartida en veintiseis sitios. Sostengo que la linea del veredicto es **donde el siguiente lector va a mirar**, y que un documento aparte se despega del dato que declara |
+| **5** | **`anotar` estrena una segunda marca, `VIGENCIA DECLARADA`** (`V.3.e`) | si la casa queria una sola marca, ensanche el remedio de `D.35`. Sostengo que llamar `CORRECCION` a una declaracion que **no corrige nada** es peor que tener dos marcas, y que la primera palabra sigue diciendo al lector que ese tramo es declarado |
+| **6** | **cierro la vuelta en `4` nodos de `16` en vez de estirar el tramo** (`V.5.g`) | si el tramo era el entregable de la vuelta, me quedo a `12` candidatos y `77` pares. Sostengo lo contrario con la linea del propio encargo: *insertar cinco nodos mas sin desbloquear el cableado solo agranda la cola* |
+| **7** | **NO arreglo el hueco de `L153` y digo que no hay via** (`V.6.a`) | si existe una via que no encontre, mi `grep` estaba mal apuntado y la conclusion es de la especie que me costo una caida en la vuelta 27. **Por eso esta vez el `grep` va pegado** |
+
+## V.8. **LO QUE PROPONGO, SIN ADJUDICARME NADA** (`EXTRACTOR.md` 14)
+
+| # | lo que propongo | por que, con su cita |
+|---:|---|---|
+| **7** | **una operacion que AÑADA un paso transcrito a un nodo que ya vive** | razonada entera en `V.6.b`. La vara de `D.30` caza el paso que sobra y **no tiene gemela para el que falta** |
+| **8** | **que la aduana no deje correr dos inserciones a la vez sobre la misma sede**, con un cerrojo en el fichero o una comprobacion de que el dataset no cambio entre leerlo y escribirlo | **es mi caida de dato de hoy** (`V.5.e`), y el dato que la hace grave es que **el gate salio VERDE**: un nodo que entro y desaparecio deja el grafo coherente y mas pequenio. `EXTRACTOR.md` 2 ya manda *uno por vez*, y **hoy esa regla la cumple el que teclea, no el codigo**. Es la misma figura que las dos mitades de la `TAREA 2`: una regla escrita que no llego a `src/` |
+| **9** | **que el arnes entregue la cola de vecinos por candidato, sellada, como ya entrega el informe de lote** (`D.43`) | **la aduana cuesta unos cuatro minutos por candidato y el tramo son `15`**. `D.43` ya saco del turno del extractor el informe de lote por ese mismo motivo, con la misma medicion: *una cifra que no cabe en un turno no se firma en un turno*. **Sin esto, ninguna vuelta va a cerrar `cap_07` de una sentada**, y lo digo con las dos cifras de `V.5.g` delante |
+
+## V.9. EL CIERRE DE LA VUELTA 28
+
+### V.9.a. LAS CUATRO GUARDAS AL CERRAR, RECORRIDAS AL CIERRE Y NO AL EMPEZAR (`EXTRACTOR.md` 4)
+
+| guarda | salida | de donde sale |
+|---|---|---|
+| `python forja.py gate` | `GATE VERDE`, **243** nodos verificados | `.v28e/gate_cierre.txt` |
+| `python forja.py guiones` | `BARRIDO DE GUIONES VERDE` | `.v28e/guiones_cierre.txt` |
+| `python forja.py resolutor` | **243** vivos, `0` deprecados, `0` alias | `.v28e/resolutor_cierre.txt` |
+| `python tests/test_aceptacion.py` | **176** pruebas, `0` fallos, `0` errores | `.v28e/test_cierre_v28.txt` |
+
+### V.9.b. LAS CINCO CIFRAS, RECOMPUTADAS AL CIERRE
+
+<!-- TALLADO: parcial salida=.v28e/cuentas_cierre.txt -->
+
+| | al abrir | **al cerrar** |
+|---|---:|---:|
+| nodos en `dataset/nodos.jsonl` | 239 | **243** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | 264 | **289** |
+| candidatos en bandeja, lote 4 | 106 | **102** |
+| ya insertados y archivados, lote 4 | 36 | **40** |
+| candidatos en bandeja, lote 5 | 3 | **3** |
+
+**LA ARITMETICA, CUADRADA A MANO PARA QUE SE PUEDA RECONTAR:** `239 + 4 = 243` nodos; `106 - 4 = 102`
+en bandeja y `36 + 4 = 40` archivados; **`264 + 15 + 10 = 289` veredictos**, donde los `15` son los de
+las cuatro inserciones buenas y los `10` son los de la corrida que mi caida de dato deshizo, **que
+siguen escritos y declarados NO CONSUMADOS** (`V.5.e`).
+
+### V.9.c. LA VIGENCIA AL CERRAR, QUE HOY ES COLA Y NO GUARDA (`D.15`)
+
+<!-- TALLADO: parcial salida=.v28e/rancios_cierre.txt -->
+
+    BLOQUE DE VIGENCIA: 34 hallazgo(s) sobre 275 veredicto(s) y 0 cita(s).
+      RANCIO 26, SIN HUELLA 8
+      lineas declaradas NO CONSUMADAS y por eso no medidas: 14
+
+| especie | al abrir | **al cerrar** | que son |
+|---|---:|---:|---|
+| `NODO IDO` | **16** | **0** | `8` eran lineas fantasma (`TAREA 2.c`) y `8` eran vecinos de bandeja (`TAREA 3.c`) |
+| `RANCIO` | **26** | **26** | **las `26` siguen**, y ahora **las `26` llevan su `VIGENCIA DECLARADA` dentro** |
+| `SIN HUELLA` | **0** | **8** | la casilla que `D.15` escribio para *lo incomprobable*: la aduana habia guardado la huella de un nodo VACIO |
+| NO CONSUMADAS, contadas y no medidas | **0** | **14** | `4` del rechazo que escribia igual, `10` de mi caida de dato |
+| **total de hallazgos** | **42** | **34** | |
+
+> **`LECTURA`: la cola no se escondio, cambio de nombre al nombre que es cierto.** Las `8` que pasaron
+> de `NODO IDO` a `SIN HUELLA` **siguen contandose y siguen imprimiendose**; lo que cambio es que ya
+> no dicen *el nodo se fue* de un nodo que esta en la bandeja. Y **las `14` que salen de la medida
+> salen con su cuenta publicada**, porque *la guarda que no muerde es cifra*.
+
+### V.9.d. LA IDENTIDAD, LEIDA DE GIT (`EXTRACTOR.md` 5)
+
+<!-- TALLADO: parcial salida=.v28e/identidad_cierre.txt -->
+
+| pieza | valor |
+|---|---|
+| rama | `extraccion-mundo-11` |
+| commit de apertura de la vuelta 28 | `ff30fba` |
+| ultimo commit al tallar este cierre | `5802702` |
+
+### V.9.e. LAS CINCO TAREAS, CON SU ESTADO AL CERRAR
+
+| # | tarea | estado |
+|---:|---|---|
+| **1** | los registros de la `ACTA 27`, con sus cinco puntos | **CERRADA**. Los `13` adjudicados recogidos, las `3` paradas registradas como no sostenidas, mis `2` caidas con su especie y su sede, la arista retirada del auditor, y la premisa de la linea `256` corregida por operacion |
+| **2** | **BLOQUEANTE**: `D.29` llega a `src/aduana.py` | **CERRADA**. Las tres mitades, cada una con su caso positivo. **La cabeza de la rueda y su madre dentro, y la arista cableada** |
+| **3** | la vigencia devuelta a lo que `D.15` dice que es | **CERRADA**. Las tres mitades. `NODO IDO` de `16` a `0` y la cuenta sigue imprimiendose |
+| **4** | seguir insertando `cap_07` hasta el final | **CERRADA CORTA Y DECLARADA**: `4` nodos de `16`, con `12` candidatos y `77` pares de cola, y **una caida de dato mia dentro** (`V.5.e`) |
+| **5** | el hueco de `L153` y el resto de la cola con su cifra | **CERRADA**. El hueco medido y **no arreglado, con el `grep` pegado de por que no hay via**; la cola recontada fila a fila |
+
+### V.9.f. **LAS SEIS CONDICIONES DE PARADA, REPASADAS UNA A UNA** (`EXTRACTOR.md` 7)
+
+| | |
+|---|---|
+| ¿algo contradice una regla vigente? | **NO.** La unica contradiccion que traia la vuelta (`cerrar_reporte.py` contra `D.15`) **estaba adjudicada por la `ACTA 27` `5.3.a` y se arreglo hoy** |
+| ¿algo contradice una cifra publicada con su corte? | **NO.** Mis cinco cifras de apertura salen al digito contra las del encargo |
+| ¿alguna operacion pedia decidir sin texto que la sostenga? | **NO.** La unica que no existe es la del hueco de `L153`, **y eso lo declaro con su cifra y lo propongo, que es lo que `EXTRACTOR.md` 7 manda cuando el texto no alcanza** |
+| ¿algun pendiente de doctrina? | **NO.** Los `7` discutibles de `V.7` son lecturas mias, no huecos de doctrina |
+| ¿alguna caida de dato? | **SI, UNA, Y ES MIA**: `V.5.e`. **No es parada**: la regla que rompi esta escrita (`EXTRACTOR.md` 2), el remedio existia (`forja.py anotar` y `forja.py insertar`), y lo apliqué en el acto |
+| **conclusion** | **ESTA VUELTA NO DECLARA NINGUNA PARADA.** Es la primera desde la vuelta 25 |
+
+---
+
+*Fin del reporte de la **VUELTA 28**. **Cinco tareas cerradas, la cuarta corta y declarada con sus dos
+cifras, cero paradas, y UNA CAIDA DE DATO MIA encontrada por mi, medida antes de arreglarla y
+declarada con su nombre.** El extractor propone en su reporte y no se adjudica nada: las tres
+propuestas de `V.8` van ahi, y quien tenga la sede decide.*

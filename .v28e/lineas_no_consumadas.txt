@@ -1,21 +1,22 @@
-LAS LINEAS DECLARADAS NO CONSUMADAS, LEIDAS DE LA SEDE (no del comando)
+LAS LINEAS DECLARADAS NO CONSUMADAS, LEIDAS DE LA SEDE (no de la salida del comando)
 
 linea 248  recorrer_rueda_hacer_cosas_equipo > recorrer_trece_elementos_proceso_evaluacion_formal  veredicto=SANO (intacto)
-  fecha de la anotacion : 2026-09-16
-  no_consumada          : True
-  razon                 : la corrida que escribio esta linea imprimio RECHAZADO y dejo el grafo intacto; la aduana registr ...
 linea 249  recorrer_rueda_hacer_cosas_equipo > recorrer_rueda_conscientemente_cultura_equipo  veredicto=CONTINUA (intacto)
-  fecha de la anotacion : 2026-09-16
-  no_consumada          : True
-  razon                 : la corrida que escribio esta linea imprimio RECHAZADO y dejo el grafo intacto; la aduana registr ...
 linea 250  recorrer_rueda_hacer_cosas_equipo > reconocer_emociones_propias_avisar_equipo  veredicto=SANO (intacto)
-  fecha de la anotacion : 2026-09-16
-  no_consumada          : True
-  razon                 : la corrida que escribio esta linea imprimio RECHAZADO y dejo el grafo intacto; la aduana registr ...
 linea 251  recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo  veredicto=CONTINUA (intacto)
-  fecha de la anotacion : 2026-09-16
-  no_consumada          : True
-  razon                 : la corrida que escribio esta linea imprimio RECHAZADO y dejo el grafo intacto; la aduana registr ...
+linea 269  crear_obligacion_disentir_equipo > parar_debate_emocion_agotamiento  veredicto=SANO (intacto)
+linea 270  crear_obligacion_disentir_equipo > pedir_hechos_decision_evitar_recomendaciones  veredicto=SANO (intacto)
+linea 271  crear_obligacion_disentir_equipo > crear_cultura_escucha_equipo  veredicto=SANO (intacto)
+linea 272  crear_obligacion_disentir_equipo > proteger_tiempo_equipo_jefe  veredicto=SANO (intacto)
+linea 273  crear_obligacion_disentir_equipo > compartir_logica_mostrar_razonamiento  veredicto=SANO (intacto)
+linea 274  crear_obligacion_disentir_equipo > reservar_calendario_tiempo_ejecutar  veredicto=SANO (intacto)
+linea 275  crear_obligacion_disentir_equipo > cambiar_posicion_hechos_explicar_cambio  veredicto=SANO (intacto)
+linea 276  crear_obligacion_disentir_equipo > aprender_resultados_vencer_dos_presiones  veredicto=SANO (intacto)
+linea 277  crear_obligacion_disentir_equipo > evitar_presion_social_actos_equipo  veredicto=SANO (intacto)
+linea 278  crear_obligacion_disentir_equipo > crear_plan_creible_equipo  veredicto=SANO (intacto)
 
-total de lineas NO CONSUMADAS: 4
-total de lineas en la bitacora: 264
+caida de dato del extractor (V.5.e)        10 lineas: [269, 270, 271, 272, 273, 274, 275, 276, 277, 278]
+rechazo que escribia igual                 4 lineas: [248, 249, 250, 251]
+
+total de lineas NO CONSUMADAS: 14
+total de lineas en la bitacora: 289

@@ -550,3 +550,12 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | recorrer_rueda_hacer_cosas_equipo | nombre_largo | El arte de hacer que las cosas se hagan sin decirle a la gente lo que tiene que hacer: escuchar, clarificar, debatir, decidir, persuadir, ejecutar y aprender | castellano | - |
 | 2026-09-16 | recorrer_rueda_hacer_cosas_equipo | sigla | GSD | castellano | - |
 | 2026-09-16 | recorrer_rueda_hacer_cosas_equipo | otro_idioma | the Get Stuff Done (GSD) wheel | ingles | - |
+| 2026-09-16 | crear_obligacion_disentir_equipo | nombre_largo | La obligacion de disentir: si todos los de la mesa estan de acuerdo, alguien tiene que tomar la voz discrepante | castellano | - |
+| 2026-09-16 | crear_obligacion_disentir_equipo | otro_idioma | obligation to dissent | ingles | - |
+| 2026-09-16 | crear_obligacion_disentir_equipo | otro_idioma | duty to dissent | ingles | - |
+| 2026-09-16 | crear_espacio_seguro_madurar_ideas_nuevas | nombre_largo | Ser claro en tu propia cabeza: dejar que la gente piense en voz alta contigo antes de someter su idea al empujon del debate | castellano | - |
+| 2026-09-16 | crear_espacio_seguro_madurar_ideas_nuevas | otro_idioma | create a safe space to nurture new ideas | ingles | - |
+| 2026-09-16 | crear_espacio_seguro_madurar_ideas_nuevas | otro_idioma | plussing | ingles | - |
+| 2026-09-16 | crear_obligacion_disentir_equipo | nombre_largo | La obligacion de disentir: si todos los de la mesa estan de acuerdo, alguien tiene que tomar la voz discrepante | castellano | - |
+| 2026-09-16 | crear_obligacion_disentir_equipo | otro_idioma | obligation to dissent | ingles | - |
+| 2026-09-16 | crear_obligacion_disentir_equipo | otro_idioma | duty to dissent | ingles | - |
