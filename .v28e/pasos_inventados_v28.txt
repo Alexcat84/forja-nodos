@@ -1,0 +1,24 @@
+| nodo | capitulo | pasos escritos | PUENTE |
+|---|---|---:|---:|
+| `recorrer_rueda_conscientemente_cultura_equipo` | `cap_11` | 14 | 0 |
+| `recorrer_rueda_hacer_cosas_equipo` | `cap_07` | 12 | 0 |
+| `crear_espacio_seguro_madurar_ideas_nuevas` | `cap_07` | 14 | 0 |
+| `crear_obligacion_disentir_equipo` | `cap_07` | 5 | 0 |
+| `parar_debate_emocion_agotamiento` | `cap_07` | 5 | 0 |
+| `fijar_fecha_cierre_debate_equipo` | `cap_07` | 11 | 0 |
+| `repartir_decision_cercanos_hechos` | `cap_07` | 11 | 0 |
+| `pedir_hechos_decision_evitar_recomendaciones` | `cap_07` | 5 | 0 |
+| `persuadir_emocion_oyente_no_propia` | `cap_07` | 11 | 0 |
+| `establecer_credibilidad_pericia_humildad` | `cap_07` | 9 | 0 |
+| `compartir_logica_mostrar_razonamiento` | `cap_07` | 6 | 0 |
+| `minimizar_impuesto_colaboracion_equipo` | `cap_07` | 4 | 0 |
+| `proteger_tiempo_equipo_jefe` | `cap_07` | 9 | 0 |
+| `mantener_manos_trabajo_real_equipo` | `cap_07` | 8 | 0 |
+| `reservar_calendario_tiempo_ejecutar` | `cap_07` | 4 | 0 |
+| `cuidarse_agotamiento_centro_rueda` | `cap_07` | 7 | 0 |
+
+| capitulo | nodos | pasos escritos | PUENTE | PASOS INVENTADOS |
+|---|---:|---:|---:|---:|
+| **`cap_07`** (lote 4, `scott_radical_candor`) | 15 | **121** | **0** | **0,00 por ciento** |
+| **`cap_11`** (lote 4, `scott_radical_candor`) | 1 | **14** | **0** | **0,00 por ciento** |
+| **total del tramo de esta vuelta** | 16 | **135** | **0** | **0,00 por ciento** |

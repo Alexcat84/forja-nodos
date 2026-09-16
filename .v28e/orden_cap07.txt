@@ -1,0 +1,21 @@
+LOS 15 CANDIDATOS DE cap_07 EN BANDEJA, POR EL ORDEN DEL LIBRO
+
+| # | id | lineas | pasos |
+|---:|---|---|---:|
+| 1 | `recorrer_rueda_hacer_cosas_equipo` | `L65` a `L77` | 12 |
+| 2 | `crear_espacio_seguro_madurar_ideas_nuevas` | `L177` a `L195` | 14 |
+| 3 | `crear_obligacion_disentir_equipo` | `L231` a `L233` | 5 |
+| 4 | `parar_debate_emocion_agotamiento` | `L235` a `L237` | 5 |
+| 5 | `fijar_fecha_cierre_debate_equipo` | `L245` a `L257` | 11 |
+| 6 | `repartir_decision_cercanos_hechos` | `L259` a `L289` | 11 |
+| 7 | `pedir_hechos_decision_evitar_recomendaciones` | `L291` a `L293` | 5 |
+| 8 | `persuadir_emocion_oyente_no_propia` | `L303` a `L347` | 11 |
+| 9 | `establecer_credibilidad_pericia_humildad` | `L349` a `L357` | 9 |
+| 10 | `compartir_logica_mostrar_razonamiento` | `L359` a `L365` | 6 |
+| 11 | `minimizar_impuesto_colaboracion_equipo` | `L367` a `L373` | 4 |
+| 12 | `proteger_tiempo_equipo_jefe` | `L375` a `L379` | 9 |
+| 13 | `mantener_manos_trabajo_real_equipo` | `L381` a `L383` | 8 |
+| 14 | `reservar_calendario_tiempo_ejecutar` | `L385` a `L387` | 4 |
+| 15 | `cuidarse_agotamiento_centro_rueda` | `L409` a `L419` | 7 |
+
+total de pasos: 121
