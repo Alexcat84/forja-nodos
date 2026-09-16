@@ -1,0 +1,36 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 348   (240 del grafo mas 108 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : familia_id 1, paso_contra_nodo 1, similitud_texto 1
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] recorrer_rueda_hacer_cosas_equipo   (recorrer_rueda_hacer_cosas_equipo.json)
+    vecino recorrer_trece_elementos_proceso_evaluacion_formal  [levantada por: paso_contra_nodo]
+      similitud_texto 0.294 | familia_id 0.100 | paso_contra_nodo 0.610
+      paso 10 del candidato contra paso 6 de recorrer_trece_elementos_proceso_evaluacion_formal
+    vecino recorrer_rueda_conscientemente_cultura_equipo  [levantada por: familia_id]
+      similitud_texto 0.248 | familia_id 0.429 | paso_contra_nodo 0.457
+      paso 12 del candidato contra paso 9 de recorrer_rueda_conscientemente_cultura_equipo
+    vecino reconocer_emociones_propias_avisar_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.111 | paso_contra_nodo 0.411
+      paso 4 del candidato contra paso 3 de reconocer_emociones_propias_avisar_equipo
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
