@@ -1,0 +1,51 @@
+=== leer_seniales_fallo_jefe_reunion_solas   (6 pasos)
+    titulo: Leer en tus reuniones a solas las cinco seniales que el texto da de que estas fallando como jefe
+    P1  Parte de para quien vale cada cosa: la reunion a solas vale a quien te reporta para compartir su pensamiento contigo y decidir en que direccion sigue su trabajo, y te vale a ti porque es ahi donde te llegan las primeras seniales de aviso de que estas fallando como jefe.
+    P2  Mira si hay cancelaciones: si la gente que te reporta cancela las reuniones a solas demasiado a menudo, es senial de que vuestra asociacion no les resulta fructifera, o de que la estas usando de forma inapropiada para soltar la critica que llevabas acumulando.
+    P3  Mira si lo que te dan son solo actualizaciones: si la gente se limita a darte cosas que podrian habersete mandado por correo, animales a usar ese tiempo de forma mas constructiva.
+    P4  Mira si solo oyes buenas noticias: si es asi, es senial de que la gente no se siente comoda trayendote sus problemas, o de que cree que no vas a hacer nada con ellos. En esos casos, pide explicitamente las malas noticias, y no dejes caer el asunto hasta que oigas alguna.
+    P5  Mira si nunca te critican: si nunca te critican, no eres lo bastante bueno consiguiendo guia de tu equipo. Acuerdate de esa frase, que puedo hacer o dejar de hacer que te facilitaria esto.
+    P6  Mira si llegan sin agenda: si vienen sistematicamente sin temas que tratar, puede significar que estan desbordados, que no entienden para que es esta reunion, o que no la consideran util. Se directo pero educado, con la frase que el texto escribe: este es tu tiempo, pero no pareces venir con mucho de que hablar. Puedes decirme por que?
+
+=== conducir_reunion_equipo_agenda_tres_bloques   (22 pasos)
+    titulo: Conducir la reunion semanal de equipo con la agenda de tres bloques del texto: aprender, escuchar y aclarar, sin debatir ni decidir dentro
+    P1  Cuenta con lo que el texto mide antes de darte la agenda: bien llevada, una reunion de equipo te ahorra tiempo porque te avisa de los problemas, comparte las actualizaciones con eficiencia y os deja a todos de acuerdo sobre cuales son las prioridades compartidas de la semana.
+    P2  Ponle los tres goles que el texto escribe: repasar como han ido las cosas la semana anterior, dejar que la gente comparta actualizaciones importantes, y forzar al equipo a aclarar cuales son las decisiones y los debates mas importantes de la semana que viene.
+    P3  Y para ahi: el texto dice que eso es todo, y que esta no es la reunion donde se debate ni donde se decide.
+    P4  Haz tu trabajo, que el texto define en tres actos: establecer una agenda constante, insistir en que la gente se cinia a ella, y cortar a quien se alarga demasiado o se va por las ramas.
+    P5  Monta la agenda con los tres bloques y sus tiempos: aprender, repasar los indicadores clave, veinte minutos.
+    P6  Escuchar, poner las actualizaciones en un documento compartido, quince minutos.
+    P7  Aclarar, identificar las decisiones y los debates clave, treinta minutos.
+    P8  En el bloque de aprender, pregunta que fue bien esa semana y por que, y que fue mal y por que.
+    P9  Monta para eso un cuadro de mando de indicadores clave, y el texto aclara que no significa un sistema sofisticadisimo montado por un departamento de informatica: significa una hoja de calculo con unos pocos numeros.
+    P10 Elige esos numeros con la pregunta que el texto da: cuales son las actividades y los resultados mas importantes que ves cada semana y que te dicen si vas camino de lograr tus objetivos.
+    P11 Disenia tu misma el cuadro de mando: el texto dice que no necesitas que te lo haga una infraestructura corporativa.
+    P12 Idealmente que se actualice solo; y si eso no es posible, asegurate de que cada persona que trabaja para ti actualice su parte la noche anterior a la reunion.
+    P13 Si hace falta, compruebalo tu y dales la lata hasta que metan sus actualizaciones.
+    P14 Si puedes, pon el cuadro de mando en un sitio donde lo vea el equipo entero.
+    P15 Y haz publicas casi siempre las notas de esa conversacion.
+    P16 En el bloque de aclarar, pregunta cuales son la una o dos decisiones mas importantes y el unico debate mas importante que tu equipo tiene que abordar esa semana.
+    P17 Si tu equipo es de menos de unas veinte personas, probablemente puedas limitarte a listarlos y decidir o debatir sobre la marcha.
+    P18 Si tu equipo es mas grande que unas veinte personas, ponte mas formal: pon esos temas en las agendas de reuniones separadas de gran decision y de gran debate, e identifica duenios para cada uno.
+    P19 Cuenta con que eso parece multiplicar reuniones y con lo que el texto responde: en realidad es la manera de sacarte a ti de reuniones y de que esten presentes los que quieren estar en esos debates y decisiones.
+    P20 Y deja que los duenios del debate y de la decision no sean ni tu ni la gente que te reporta, porque esas reuniones separadas son la manera de delegar debates y decisiones, y delegarlos los empuja hacia los hechos y evita el pensamiento jerarquico.
+    P21 Comunica al equipo mas amplio la agenda de esas dos reuniones, y deja que asista libremente quien quiera.
+    P22 Cuenta con lo que el texto dice que pasa entonces: al principio seran probablemente demasiado grandes, pero muy pronto la gente ira solo si de verdad quiere o necesita estar, porque odia mas asistir a reuniones que no le incumben que quedarse fuera de decisiones que si.
+
+=== escribir_apuntes_sala_estudio_equipo   (14 pasos)
+    titulo: Escribir y leer los apuntes de la semana dentro de la propia reunion, como sala de estudio, en vez de contarlos en voz alta o dejarlos a que cada cual los ponga por su cuenta
+    P1  Parte del problema que el texto pone: mantener a todos al tanto de lo que hacen los demas, para que puedan senialar zonas de preocupacion o de solape, sin gastar muchisimo tiempo en ello.
+    P2  Distingue las actualizaciones de los indicadores clave, porque el texto dice que no son lo mismo: las actualizaciones son cosas que nunca entrarian en el cuadro de mando, del tipo necesitamos cambiar los objetivos de este proyecto, estoy pensando en reorganizar, empiezo a pensar que tengo que despedir a fulano, o me tienen que operar el mes que viene y estare fuera tres semanas.
+    P3  No lo resuelvas con una reunion de equipo de varias horas para compartir esa clase de informacion, porque el texto dice que casi todo el mundo odia las reuniones largas.
+    P4  Y cuenta tambien con lo que le pasa al otro extremo, el documento publico donde cada cual apunta por su cuenta lo que hizo y lo que hara: en teoria es facil de usar y evita reuniones interminables, pero en la practica mucha gente se resiste enormemente a escribir sus apuntes, y cuando algunos no los hacen el sistema entero se viene abajo.
+    P5  Haz por eso lo que el texto dice que le funciono mucho mejor: hacer sitio para que lo hagais todos dentro de la reunion de equipo.
+    P6  Haz que cada persona se tome de cinco a siete minutos para escribir las tres a cinco cosas que ella o su equipo hicieron esa semana y que los demas necesitan saber.
+    P7  Y de cinco a siete minutos mas para leer las actualizaciones de todos los demas.
+    P8  No permitas conversaciones laterales: exige que las preguntas de seguimiento se traten despues de la reunion.
+    P9  Cuenta con lo que el texto dice que se juega en esa regla simple: ahorra cantidades enormes de tiempo perdido, y si no la pones, la mayor parte de la reunion seran dos o tres personas hablando mientras el resto mira sin interes.
+    P10 Hazlo en un documento compartido que varias personas puedan editar a la vez, y el texto nombra los sitios donde vale hacerlo.
+    P11 Si tu equipo no tiene portatiles ni telefonos, usa papel y boligrafo: cada cual apunta sus notas en un papel y luego hacedlos circular.
+    P12 Si eres jefe de jefes, haz publicos esos apuntes al equipo mas amplio.
+    P13 Y cuenta con lo que eso implica, que el texto dice a continuacion: entonces la gente no puede meter ahi cosas que hay que mantener confidenciales, como los problemas de desempenio de una persona o ajustes de salario que se estan contemplando.
+    P14 Si te hace falta, ten un documento de apuntes confidenciales para tu equipo, pero asegurate de que no haya demasiadas cosas ahi: la mayoria de lo que tratais deberia compartirse con el equipo mas amplio.
+

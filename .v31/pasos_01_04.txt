@@ -1,0 +1,66 @@
+=== decidir_quien_comunica_cada_cuanto   (6 pasos)
+    titulo: Decidir quien necesita comunicarse con quien y cada cuanto, minimizando el coste de cada reunion
+    P1  Asume como una de tus responsabilidades mas importantes para que todo siga moviendose sin roces: decidir quien necesita comunicarse con quien y con que frecuencia.
+    P2  Cuenta con lo que eso significa en la practica, y el texto lo dice en dos palabras: reuniones.
+    P3  Cuenta tambien con que toda reunion viene con un coste significativo, que el texto nombra: el tiempo.
+    P4  Minimiza por eso las tres cosas que el texto nombra una a una: la duracion, la frecuencia y el numero de personas a las que hace falta que asistan.
+    P5  Empieza por la que el texto llama la mas importante de todas estas reuniones: la reunion a solas con cada persona que te reporta directamente.
+    P6  Y ten delante las herramientas que el texto enumera para sacar cosas adelante juntos, que son las reuniones a solas, las reuniones de equipo, el tiempo para pensar, las reuniones de gran debate, las reuniones de gran decision, las reuniones generales, las zonas libres de reuniones, los tableros kanban, pasear por la organizacion y ser consciente de la cultura.
+
+=== montar_reuniones_solas_mentalidad_frecuencia   (22 pasos)
+    titulo: Montar tus reuniones a solas con cada persona a tu cargo: la mentalidad, la frecuencia, presentarte siempre y la agenda puesta por quien te reporta
+    P1  Trata las reuniones a solas como tus reuniones de obligado cumplimiento: el texto dice que son tu mejor oportunidad de escuchar, escuchar de verdad, a la gente de tu equipo, para asegurarte de que entiendes su punto de vista sobre lo que funciona y lo que no.
+    P2  Usalas tambien para llegar a conocer a las personas a tu cargo, que es como subes en la dimension de importarte personalmente del marco de la franqueza radical.
+    P3  No las uses para soltar toda la critica que llevas guardada: el texto dice que eso va en las conversaciones improvisadas de dos a tres minutos que ya estas teniendo.
+    P4  Ten claro cual es el proposito, que el texto escribe entero: escuchar y aclarar, o sea entender hacia que direccion quiere ir cada persona que trabaja para ti y que se lo esta bloqueando.
+    P5  Cambia primero tu mentalidad, porque el texto dice que es lo que mas decide como salen: deja de pensar en ellas como reuniones y tratalas como si estuvieras comiendo o tomando un cafe con alguien a quien tienes ganas de conocer mejor.
+    P6  Si programarlas sobre una comida ayuda, hazlas comidas periodicas.
+    P7  Si a ti y a la persona os gusta andar y hay un buen sitio para pasear cerca de la oficina, hazlas paseando.
+    P8  Ajusta la hora a tu energia: si eres de maniana, ponlas por la maniana; si eres de los que se desinflan a las dos de la tarde, no las pongas a las dos de la tarde.
+    P9  Pero no seas un cretino con eso, que es como el texto lo dice: si a ti te gusta levantarte a las cinco e ir al gimnasio, no esperes que la gente que trabaja para ti quede alli contigo.
+    P10 Pon la frecuencia contando tu propio limite, porque el texto dice que las reuniones a solas deben ser el cuello de botella natural que decide cuantas personas puede tener a su cargo un jefe: el suyo son cincuenta minutos a la semana con cada persona y no mas de unas cinco horas de reuniones a solas en el calendario, porque escuchar es trabajo duro y no hay capacidad infinita para ello; y por esa misma razon el texto dice que se limita a cinco personas a su cargo.
+    P11 Si la gente esta en remoto, ten esas conversaciones por videoconferencia y complementalas con comprobaciones rapidas mas frecuentes.
+    P12 Si tienes diez personas a tu cargo, pasa las reuniones a solas a veinticinco minutos a la semana.
+    P13 Si tienes veinte y no hay nada que puedas hacer al respecto, ponlas de veinticinco minutos cada dos semanas con cada persona.
+    P14 Y mira ademas si puedes crear oportunidades de liderazgo para la gente que trabaja para ti y reducir el numero de personas que te reportan.
+    P15 Para evitar que las reuniones se multipliquen, usa el tiempo de la reunion a solas para tener las conversaciones de carrera y, si toca, para hacer las evaluaciones formales de desempenio.
+    P16 Presentate: el texto dice que es probablemente el consejo mas importante de todos para las reuniones a solas.
+    P17 Cuenta con la cuenta que el texto hace, para que no te pille: entre viajes, las veces que inevitablemente caeras enfermo y alguna vacacion, cancelaras al menos dos o tres de cada trece programadas; y si ademas reservas algunas para las especiales, te quedan siete u ocho normales por trimestre, o tres o cuatro si tienes mas de diez personas y las haces cada dos semanas.
+    P18 Asi que no canceles tus reuniones a solas, se incendie lo que se incendie en tu dia.
+    P19 Deja que la agenda la ponga y la posea la persona que te reporta, y no tu: el texto dice que asi son mas productivas, porque te dejan escuchar lo que a ellos les importa.
+    P20 Pon aun asi las expectativas basicas sobre la agenda y sobre como llega: si quieres una agenda estructurada dilo, si la quieres por adelantado dilo, y si no la vas a mirar por adelantado ponlo claro tambien.
+    P21 Di tambien si te vale que lleguen con unos puntos apuntados en una servilleta o si prefieres que la lleven en un documento compartido al que se pueda volver despues.
+    P22 Y haz tu propio trabajo, que el texto define en una linea: pedir cuentas a quien llega sin preparar, o decidir que de vez en cuando esta bien tener una reunion a solas sin agenda.
+
+=== preguntar_seguimiento_hallar_huecos   (16 pasos)
+    titulo: Preguntar en la reunion a solas las preguntas de seguimiento que ensenian los huecos entre lo que la persona hace, lo que cree que deberia hacer y lo que quiere hacer
+    P1  Haz estas preguntas de seguimiento con el doble proposito que el texto les pone: ensenar no solo que estas escuchando sino que te importa y quieres ayudar, e identificar los huecos entre lo que la gente hace, lo que cree que deberia hacer y lo que quiere hacer.
+    P2  Pregunta: por que?
+    P3  Pregunta: como puedo ayudar?
+    P4  Pregunta: que puedo hacer, o dejar de hacer, que te facilitaria esto?
+    P5  Pregunta: que es lo que te desvela por la noche?
+    P6  Pregunta: en que estas trabajando en lo que no quieres trabajar?
+    P7  Pregunta: no quieres trabajar en ello porque no te interesa o porque crees que no es importante?
+    P8  Pregunta: que puedes hacer para dejar de trabajar en ello?
+    P9  Pregunta: en que no estas trabajando en lo que si quieres trabajar?
+    P10 Pregunta: por que no estas trabajando en ello?
+    P11 Pregunta: que puedes hacer para empezar a trabajar en ello?
+    P12 Pregunta: como te sientes respecto a las prioridades de los equipos de los que dependes?
+    P13 Pregunta: en que estan trabajando ellos que parezca poco importante o incluso contraproducente?
+    P14 Pregunta: que es lo que no estan haciendo y a ti te gustaria que hicieran?
+    P15 Pregunta: has hablado directamente con esos otros equipos de lo que te preocupa? Y si no, por que no?
+    P16 Y ten presente lo que el texto marca como nota importante sobre esa ultima: el objetivo aqui es animar a la gente a plantear el asunto directamente entre ellos, no resolverles el problema tu.
+
+=== nutrir_ideas_nuevas_reunion_solas   (10 pasos)
+    titulo: Nutrir en la reunion a solas las ideas nuevas, que son fragiles, empujando a quien la trae a explicarla mas claro y para quien la tiene que oir
+    P1  Ten en la cabeza, antes de entrar a una reunion a solas, la frase de Jony Ive que el texto cita: las ideas nuevas son fragiles.
+    P2  Trata esa reunion como un sitio seguro donde la gente pueda nutrir ideas nuevas antes de someterlas al empujon y el revolcon del debate.
+    P3  Ayudales con las dos cosas que el texto nombra: a aclarar lo que ellos mismos piensan de la idea, y a aclarar su comprension de las personas a las que tienen que comunicarsela.
+    P4  Cuenta con que la misma idea puede necesitar describirse de una manera para un ingeniero y de otra para un comercial.
+    P5  Pregunta: que necesitas para desarrollar mas esa idea, de manera que este lista para discutirla con el equipo mas amplio? Como puedo ayudarte?
+    P6  Pregunta: creo que tienes algo entre manos, pero todavia no me queda claro. Puedes intentar explicarmelo otra vez?
+    P7  Pregunta: vamos a pelearnos un poco mas con esto, te parece?
+    P8  Pregunta: entiendo lo que quieres decir, pero no creo que los demas lo entiendan. Como puedes explicarlo para que a ellos les resulte mas facil de entender?
+    P9  Pregunta: no creo que fulano vaya a entender esto. Puedes explicarlo otra vez para que quede mas claro especificamente para el?
+    P10 Pregunta: el problema es de verdad que ellos son demasiado tontos para entenderlo, o es que tu no lo estas explicando con la claridad suficiente?
+
