@@ -2210,6 +2210,30 @@ class PruebaTallado(BaseForja):
             self._reporte(self._declarado()), raiz=self.taller)
         self.assertEqual(dictamenes[0]["estado"], "RUTA VACIA")
 
+    def test_caso_positivo_sin_reporte_el_tallado_no_revienta_y_no_bloquea(self):
+        """`D.34.2` RETIRA `REPORTE.md` durante la fase ciega, a proposito.
+
+        Y esto no era cosmetico: **el arnes COMMITEA la pagina sellada con los cuatro
+        ficheros retirados**, asi que el hook corria el tallador sin reporte, este
+        reventaba con `FileNotFoundError`, y **el commit del propio sello se
+        abortaba**. No habia mordido todavia solo porque en la vuelta 29 el barrido
+        de guiones cayo tres segundos antes. **Una guarda que impide sellar la fase
+        ciega no protege el dato: bloquea el bucle.**
+        """
+        from scripts import tallar_reporte
+        ausente = os.path.join(self.taller, "no_existe_REPORTE.md")
+        self.assertEqual(tallar_reporte.revisar(ausente, raiz=self.taller), [])
+        self.anotar("D41_ciega", "sin reporte el tallado calla, no revienta")
+
+    def test_caso_negativo_con_reporte_presente_sigue_tumbando(self):
+        """La exencion es por AUSENCIA, no un indulto general."""
+        from scripts import tallar_reporte
+        self._instrumento()
+        ruta = self._reporte(self._declarado(
+            self.TABLA.replace("| 1083 |", "| 1198 |")))
+        dictamenes = tallar_reporte.revisar(ruta, raiz=self.taller)
+        self.assertEqual(dictamenes[0]["estado"], "DIFIERE")
+
     def test_el_estricto_tumba_lo_que_el_hook_deja_pasar(self):
         """El cierre de vuelta es el momento en que los instrumentos siguen ahi."""
         from scripts import tallar_reporte
@@ -2399,6 +2423,23 @@ class PruebaCensoDeRutas(BaseForja):
             "| el candidato | 1 | `cuarentena/un_lote/entrado.json` |\n"
             "|---|---|---|\n| otra | fila | para que sea tabla |\n")
         self.assertEqual(caidas, [])
+
+    def test_los_retirados_por_D342_estan_exentos_por_protocolo(self):
+        """La fase ciega retira cuatro ficheros y commitea mientras no estan.
+
+        Un acta que cita `REPORTE.md` como sede no publica una ruta falsa: la
+        publica mientras existe, y la fase ciega la esconde a proposito.
+        """
+        from scripts import censar_rutas
+        exentas = censar_rutas._sedes_exentas()
+        for retirado in ("docs/loop/REPORTE.md", "docs/loop/ultimo_extractor.json",
+                         "docs/loop/ultimo_auditor.json"):
+            self.assertIn(retirado, exentas)
+
+    def test_caso_positivo_otro_fichero_ausente_sigue_cayendo(self):
+        """La exencion es de los cuatro que D.34.2 nombra, no de todo lo que falte."""
+        caidas, _pasan = self._censar(self.TABLA % ".v29/no_existe.txt")
+        self.assertEqual(len(caidas), 1)
 
     def test_la_lista_fija_de_config_exime_por_protocolo(self):
         from scripts import censar_rutas

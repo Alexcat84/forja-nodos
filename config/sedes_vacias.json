@@ -21,6 +21,21 @@
       "ruta": "docs/loop/PARA_ALEXIS.md",
       "motivo": "Es una sede ROTATORIA: existe mientras el bucle esta parado y, cuando el fundador decide, su contenido se archiva entero en docs/loop/paradas/<fecha>-<nombre>.md. Un acta que la cito estaba citando la parada viva, que es la unica que habia. Exigirle al auditor que vuelva sobre su acta cada vez que se archiva una parada seria castigar que las paradas se resuelvan.",
       "regla": "D.28 mas la costumbre de archivado de docs/loop/paradas/"
+    },
+    {
+      "ruta": "docs/loop/REPORTE.md",
+      "motivo": "La fase ciega lo RETIRA del arbol a proposito para que el auditor clasifique sin verlo, y el arnes commitea la pagina sellada mientras no esta. Un acta que lo cita como sede no publica una ruta falsa: la publica mientras existe.",
+      "regla": "D.34.2"
+    },
+    {
+      "ruta": "docs/loop/ultimo_extractor.json",
+      "motivo": "Retirado por D.34.2 durante la fase ciega, junto con el reporte.",
+      "regla": "D.34.2"
+    },
+    {
+      "ruta": "docs/loop/ultimo_auditor.json",
+      "motivo": "Retirado por D.34.2 durante la fase ciega, junto con el reporte.",
+      "regla": "D.34.2"
     }
   ]
 }

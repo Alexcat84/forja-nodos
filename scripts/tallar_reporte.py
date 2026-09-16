@@ -312,6 +312,17 @@ def revisar(ruta_reporte=None, regenerar=False, raiz=None):
     """Devuelve la lista de dictamenes, uno por tabla declarada."""
     raiz = raiz or RAIZ
     ruta_reporte = ruta_reporte or RUTA_REPORTE
+    # EL REPORTE PUEDE NO ESTAR, Y NO ES UN ERROR: `D.34.2` LO RETIRA DEL ARBOL
+    # DURANTE LA FASE CIEGA, a proposito, para que el auditor clasifique sin verlo.
+    #
+    # Y ESTO NO ERA COSMETICO: el arnes COMMITEA la pagina sellada con los cuatro
+    # ficheros retirados, asi que el hook corria este tallador sin reporte, este
+    # reventaba con FileNotFoundError, y **el commit del propio sello se abortaba**.
+    # No habia mordido todavia solo porque en la vuelta 29 el barrido de guiones
+    # cayo tres segundos antes. **Una guarda que impide sellar la fase ciega no
+    # protege el dato: bloquea el bucle.**
+    if not os.path.exists(ruta_reporte):
+        return []
     texto = io.open(ruta_reporte, encoding="utf-8").read()
     dictamenes = []
     for tabla in declaradas(texto, ruta_reporte):
@@ -390,6 +401,12 @@ def arreglar(ruta_reporte=None, regenerar=True, raiz=None):
 # ---------------------------------------------------------------------------
 
 def texto_informe(dictamenes, estricto=False):
+    if not os.path.exists(RUTA_REPORTE):
+        return ("TALLADO SIN OBJETO: docs/loop/REPORTE.md no esta en el arbol." + "\n"
+                "La fase ciega lo retira A PROPOSITO (D.34.2), asi que no hay ninguna"
+                " tabla que tallar" + "\n" + "y esto NO es un fallo. Las demas guardas"
+                " siguen corriendo: el gate, el barrido" + "\n" + "y el censo no"
+                " dependen de este fichero.")
     lineas = []
     difieren = [d for d in dictamenes if d["estado"] == "DIFIERE"]
     sin = [d for d in dictamenes if d["estado"] == "SIN COMPROBAR"]

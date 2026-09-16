@@ -168,3 +168,104 @@ encargo de la vuelta 29 tiene este material ya adjudicado y no hace falta volver
 **EL BUCLE NO FUNDE RAMAS Y EL BUCLE NO CREA REMOTOS.** Esto no pide merge: **la campania no esta
 consumada** y el lote 4 va por el `28` por ciento de su insercion. Lo unico que pide es **tu decision
 sobre la racha de `4.1`** y, si la das, **el cerrojo de `4.2` como primera tarea**.
+
+---
+
+# ANEXO DE LA REANUDACION, 16 sep 2026. **ESCRITO POR CLAUDE, NO POR EL AUDITOR**
+
+*Guion de reanudacion del fundador del 13 sep 2026. **Nada del texto de arriba se ha
+tocado**: `D.28` dice que este fichero es del auditor, y el guion solo me manda anadir
+aqui cuando la especie no tiene cura escrita.*
+
+## A.1. DICTAMEN
+
+| tu punto | especie | quien |
+|---|---|---|
+| **`4.4`**, el tallado en la fase ciega | **`ARNES`** | **CURADA, y era peor de lo que viste** |
+| **`4.1`**, tu racha en `3 de 3` | **`CREDITO`** | **del fundador, y aqui se para** |
+
+## A.2. TU `4.4` NO ERA UNA MOLESTIA: **BLOQUEABA EL SELLO**
+
+Lo contaste como rojos que un auditor ciego podria atribuirse por error. **Lo medi:**
+
+    $ mv docs/loop/REPORTE.md (fuera)          # lo que hace D.34.2
+    $ python scripts/cerrar_reporte.py --hook
+      FileNotFoundError: docs/loop/REPORTE.md
+      rc=1
+
+**El arnes COMMITEA tu pagina sellada con los cuatro ficheros retirados.** Asi que el
+hook corria el tallador sin reporte, **reventaba, y el commit de tu propio sello se
+abortaba**. No habia mordido todavia **por tres segundos**: en la vuelta 29 el barrido de
+guiones cayo antes, y el log lo registra. **La proxima fase ciega con los guiones verdes
+se habria quedado sin poder sellar.**
+
+**Ya esta arreglado**, y con una pieza que no viste: con el reporte retirado **el censo
+caia dos veces**, por dos actas que citan `docs/loop/REPORTE.md` como sede. **Un acta que
+lo cita no publica una ruta falsa: la publica mientras existe.** Los cuatro retirados por
+`D.34.2` entran en la lista fija de `config/`, con su regla citada. **4 pruebas mas.**
+
+## A.3. TU RACHA NO LA TOCO, Y LA ESPECIE NO TIENE CURA ESCRITA
+
+**Tu caida es una cifra que era CIERTA al medirse y FALSA al publicarse.** Barrido verde
+a las `09:57:02`, sello a las `10:41:02`, y en medio tus propios ficheros metieron cinco
+guiones en el arbol.
+
+| la cura que existe | por que no la cubre |
+|---|---|
+| `D.38.3`, cifra con instrumento pegado | **lo pegaste, y era verde cuando corrio.** Exige que la cifra tenga instrumento, **no que el instrumento siga siendo cierto al publicar** |
+| `D.38.3` ensanchada hoy | es sobre medir campos y concluir sobre contenido. **Tu frase decia lo que el instrumento midio: lo que caduco fue la medida** |
+| `D.40` ensanchada hoy | **cierra una via lateral y conviene que lo sepas:** el remedio de la `ACTA 25` que mandaba sanear los guiones al volcar texto **se declaro `NO APLICA` con motivo falso en la vuelta 26.** Desde hoy eso no pasa el sello sin salida pegada |
+
+## A.4. LA CURA QUE PROPONGO, Y ES TU REMEDIO `1` CON UNA MITAD MECANIZADA
+
+**TU REMEDIO `1` ES EL BUENO Y LO SUSCRIBO:** *la tabla de cierre de la apertura ciega se
+escribe DESPUES de volver a correr las guardas, y el barrido se corre sin acotar.*
+
+**LE ANADO LA MITAD QUE UNA MAQUINA SI PUEDE HACER, y la propongo porque tu remedio, tal
+como esta, vuelve a depender de que te acuerdes**, que es lo que `D.40` enseño que no
+funciona:
+
+> **QUE EL ARNES DEJE UN TESTIGO DE GUARDAS AL SELLAR.** Justo antes de sellar, el arnes
+> corre las guardas baratas (`gate`, `guiones`, `censo`) y **escribe su resultado con la
+> hora en un fichero sellado junto a la pagina.** No juzga la pagina: **deja al lado la
+> verdad del arbol en el instante del sello**, para que cualquiera pueda cruzar lo que la
+> pagina afirma con lo que era cierto cuando se cerro.
+>
+> **Es barato** (son las tres guardas que ya corren en el hook, `1,75` segundos) **y no
+> comprueba semantica**: solo hace imposible que una medida caduque **sin que quede
+> constancia de que caduco.**
+
+**NO LA CONSTRUYO**, porque el guion me manda proponer y parar cuando la especie no tiene
+cura escrita, y **poner una condicion mecanica nueva sobre tu fase ciega sin que el
+fundador la firme seria ponerte una condicion que no ha aceptado nadie.**
+
+## A.5. Y TU `4.2`, EL CERROJO, QUE ES LA QUE MAS ME COSTO DEJAR
+
+**Tienes razon en la figura: es una regla escrita que no llego a `src/`**, la misma que
+`D.29` y `D.38.5`, **y las dos las arregle yo como `ARNES`**. Hay una caida de dato
+consumada, que es justo lo que la moratoria admite como motivo, y el guion mete *codigo
+nuevo* dentro de la especie `ARNES`.
+
+**No la construyo por dos razones y las digo enteras:** la adjudicaste y la asignaste como
+**tarea `1` del retomar**, con sus casos escritos; y **el bucle no puede correr hasta que
+el fundador decida tu racha**, asi que construirla ahora no adelanta nada y me pone a
+cambiar la ruta de insercion sin que nadie la audite. **Queda dicho aqui para que el
+fundador pueda pedirlo en una linea.**
+
+## A.6. LO QUE **NO** HICE
+
+- **NO reinicie ninguna racha.**
+- **NO relance el arnes.**
+- **NO toque tus tres de doctrina** (`4.3`): la fila que le falta a la tabla de especies,
+  el censo sobre `APERTURA_CIEGA.md`, y `D.43` extendida a la cola de vecinos. **Las tres
+  son del fundador y las tres estan bien planteadas.**
+- **NO toque tu texto**, ni tu `PROMPT_SIGUIENTE.md` vacio.
+
+## A.7. EL ESTADO, CON LA `ARNES` CURADA
+
+    python forja.py gate                 GATE VERDE, 243 nodos
+    python tests/test_aceptacion.py      180 pruebas, 0 fallos   (eran 176)
+    bash tests/prueba_arnes.sh           128 comprobaciones en VERDE
+
+    y con REPORTE.md retirado, como en tu fase ciega:
+    python scripts/cerrar_reporte.py --hook   CIERRE VERDE   (antes: rc=1)
