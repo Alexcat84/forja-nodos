@@ -31797,3 +31797,83 @@ Salida de `git`, guardada en `.v26/identidad.txt`:
 | **caidas propias declaradas** | **3**, ninguna llego al grafo |
 | **paradas** | **0.** Nada de lo que vi contradice una regla vigente ni una cifra publicada con su corte, **y lo que estuvo cerca lo razono en `T.3.e` en vez de declararlo** |
 | **guardas al cerrar** | **las cinco en verde** |
+
+---
+
+# VUELTA 27, **la cola que se perdio dos veces**, las tres aristas adjudicadas, **seguir insertando el lote 4** y el lote 5 por su orden si cabe (lote 4, `scott_radical_candor`)
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor al cerrar la `ACTA 26` y
+reescrito con la decision del fundador del 16 sep 2026
+(`docs/loop/paradas/2026-09-16-la-frase-y-el-instrumento-DECISION.md`).*
+
+**ESTE ESQUELETO SE ABRE ANTES DE LA PRIMERA TAREA** (`EXTRACTOR.md` 3) y **cada tarea anexa su
+fila al cerrarse**, no al final.
+
+## U.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+### U.0.a. LAS CUATRO GUARDAS AL ABRIR
+
+Salidas guardadas en `.v27e/`, corridas antes de tocar nada:
+
+| guarda | salida | de donde sale |
+|---|---|---|
+| `python forja.py gate` | `GATE VERDE`, **234** nodos verificados | `.v27e/gate_apertura.txt` |
+| `python forja.py guiones` | `BARRIDO DE GUIONES VERDE` | `.v27e/guiones_apertura.txt` |
+| `python forja.py resolutor` | **234** vivos, `0` deprecados, `0` alias | `.v27e/resolutor_apertura.txt` |
+| `python tests/test_aceptacion.py` | **141** pruebas, `0` fallos, `0` errores | `.v27e/test_apertura.txt` |
+
+### U.0.b. LAS CUENTAS AL ABRIR
+
+Salida de `.v27e/cuentas_apertura.txt`, anexada entera:
+
+<!-- TALLADO: parcial salida=.v27e/cuentas_apertura.txt -->
+
+| | |
+|---|---:|
+| nodos en `dataset/nodos.jsonl` | **234** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **240** |
+| candidatos en bandeja, lote 4 (`cuarentena/scott_radical_candor`) | **111** |
+| ya insertados y archivados, lote 4 (`cuarentena/_insertados/scott_radical_candor`) | **31** |
+| candidatos en bandeja, lote 5 (`cuarentena/marquet_turn_the_ship`) | **3** |
+
+**LAS CINCO ME SALEN AL DIGITO CONTRA LAS DEL ENCARGO**, que publica `111`, `31`, `234`, `240` y `3`.
+
+### U.0.c. LA IDENTIDAD, LEIDA DE GIT (`EXTRACTOR.md` 5)
+
+<!-- TALLADO: parcial salida=.v27e/identidad_apertura.txt -->
+
+| pieza | valor |
+|---|---|
+| rama | `extraccion-mundo-11` |
+| commit de apertura de la vuelta 27 | `360f941` |
+
+### U.0.d. **ESTA VUELTA NO TRAE SALDO DE LOTE, Y LO DECLARO EN VEZ DE INVENTARLO** (`D.43`)
+
+    $ ls -la docs/loop/INFORME_DE_LOTE.txt
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+    $ ls -la docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+
+**`D.43` es literal para este caso:** *si el prompt no te entrega ningun informe, es que esta corrida
+no lo pidio: entonces no lo inventes y no lo lances, y declara en tu reporte que la vuelta no trae
+saldo de lote.* **Asi queda declarado. Ni una cifra de esta vuelta sale de un informe de lote.**
+
+### U.0.e. **MI SEDE DE TRABAJO ES `.v27e/` Y NO `.v27/`, Y DIGO POR QUE**
+
+    $ git log --oneline -1 -- .v27
+      57289ab ACTA 26: la vuelta 26 sale limpia de CLASE y de CIFRA PUBLICADA, ...
+
+**`.v27/` ya esta ocupada por la fase ciega y el turno normal del auditor de la `ACTA 26`**
+(`APERTURA_CIEGA.md` `1.4` la declara como suya, instrumento a instrumento). **Escribir encima seria
+pisar evidencia sellada de otro rol**, asi que mis salidas van a `.v27e/`, `e` de extractor.
+
+## U.1. LAS TAREAS ENCARGADAS, Y SUS FILAS SE ANEXAN AL CERRARSE
+
+| # | tarea | estado |
+|---:|---|---|
+| **1** | los ocho puntos de la `ACTA 25` que no llegaron al encargo de la 26 | ABIERTA |
+| **2** | las tres aristas adjudicadas, y una es la primera entre libros | ABIERTA |
+| **3** | seguir insertando el lote 4 | ABIERTA |
+| **4** | abrir el lote 5 por su orden, si la insercion deja sitio | ABIERTA |
+
+**Son CUATRO tareas y el tope son cinco** (`EXTRACTOR.md` 1.3).
