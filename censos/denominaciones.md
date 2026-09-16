@@ -559,3 +559,11 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | crear_obligacion_disentir_equipo | nombre_largo | La obligacion de disentir: si todos los de la mesa estan de acuerdo, alguien tiene que tomar la voz discrepante | castellano | - |
 | 2026-09-16 | crear_obligacion_disentir_equipo | otro_idioma | obligation to dissent | ingles | - |
 | 2026-09-16 | crear_obligacion_disentir_equipo | otro_idioma | duty to dissent | ingles | - |
+| 2026-09-16 | parar_debate_emocion_agotamiento | nombre_largo | Pausa por emocion o por agotamiento: pedir tiempo muerto antes de que la gente decida solo para poder irse a casa | castellano | - |
+| 2026-09-16 | parar_debate_emocion_agotamiento | otro_idioma | pause for emotion/exhaustion | ingles | - |
+| 2026-09-16 | fijar_fecha_cierre_debate_equipo | nombre_largo | Dejar claro cuando va a acabar el debate: separar la reunion de debate de la de decision, poner una fecha de decidir para cada asunto, y resistir el impulso de cortar por lo sano | castellano | - |
+| 2026-09-16 | fijar_fecha_cierre_debate_equipo | otro_idioma | be clear when the debate will end | ingles | - |
+| 2026-09-16 | fijar_fecha_cierre_debate_equipo | otro_idioma | decide by date | ingles | - |
+| 2026-09-16 | repartir_decision_cercanos_hechos | nombre_largo | Tu no eres el que decide, casi nunca: crear un proceso claro de decision que da poder a los que estan mas cerca de los hechos | castellano | - |
+| 2026-09-16 | repartir_decision_cercanos_hechos | otro_idioma | you are not the decider (usually) | ingles | - |
+| 2026-09-16 | repartir_decision_cercanos_hechos | otro_idioma | garbage can decision-making | ingles | - |

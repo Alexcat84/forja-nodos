@@ -1,0 +1,55 @@
+ADUANA DE INSERCION, candidato 'fijar_fecha_cierre_debate_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (244 del grafo mas 104 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino explicar_idea_facil_comprender_oyente  [Explicar una idea de forma que sea imposible no entenderla, cargando tu con la responsabilidad de que se entienda]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.309 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.610 (umbral 0.60)
+    paso 6 del candidato contra paso 2 de explicar_idea_facil_comprender_oyente
+
+  vecino centrar_debate_ideas_fuera_egos  [Centrar el debate en las ideas y dejar los egos fuera, cambiando los papeles cuando alguien empieza a defender el suyo]
+    levantada por: similitud_texto
+    similitud_texto    0.355 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.551 (umbral 0.60)
+    paso 6 del candidato contra paso 6 de centrar_debate_ideas_fuera_egos
+
+  vecino abrir_debate_humor_explicar_proposito  [Abrir un debate con humor y explicando para que sirve, porque el tono con que se lanza marca el de todo lo que viene detras]
+    levantada por: similitud_texto
+    similitud_texto    0.367 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.468 (umbral 0.60)
+    paso 6 del candidato contra paso 1 de abrir_debate_humor_explicar_proposito
+
+  vecino definir_receta_propia_mantenerse_centrado  [Averiguar cual es tu receta para mantenerte centrado y cumplirla, sobre todo cuando los tiempos se ponen duros]
+    levantada por: similitud_texto
+    similitud_texto    0.350 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.436 (umbral 0.60)
+    paso 9 del candidato contra paso 8 de definir_receta_propia_mantenerse_centrado
+
+BLOQUEADO: faltan veredictos para explicar_idea_facil_comprender_oyente, centrar_debate_ideas_fuera_egos, abrir_debate_humor_explicar_proposito, definir_receta_propia_mantenerse_centrado
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "explicar_idea_facil_comprender_oyente|CONTINUA|madre=explicar_idea_facil_comprender_oyente|que añade el hijo a la madre"
+    --veredicto "explicar_idea_facil_comprender_oyente|REPITE|por que no añade procedimiento"
+    --veredicto "explicar_idea_facil_comprender_oyente|SANO|por que no son el mismo trabajo"
+    --veredicto "explicar_idea_facil_comprender_oyente|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "centrar_debate_ideas_fuera_egos|CONTINUA|madre=centrar_debate_ideas_fuera_egos|que añade el hijo a la madre"
+    --veredicto "centrar_debate_ideas_fuera_egos|REPITE|por que no añade procedimiento"
+    --veredicto "centrar_debate_ideas_fuera_egos|SANO|por que no son el mismo trabajo"
+    --veredicto "centrar_debate_ideas_fuera_egos|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "abrir_debate_humor_explicar_proposito|CONTINUA|madre=abrir_debate_humor_explicar_proposito|que añade el hijo a la madre"
+    --veredicto "abrir_debate_humor_explicar_proposito|REPITE|por que no añade procedimiento"
+    --veredicto "abrir_debate_humor_explicar_proposito|SANO|por que no son el mismo trabajo"
+    --veredicto "abrir_debate_humor_explicar_proposito|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "definir_receta_propia_mantenerse_centrado|CONTINUA|madre=definir_receta_propia_mantenerse_centrado|que añade el hijo a la madre"
+    --veredicto "definir_receta_propia_mantenerse_centrado|REPITE|por que no añade procedimiento"
+    --veredicto "definir_receta_propia_mantenerse_centrado|SANO|por que no son el mismo trabajo"
+    --veredicto "definir_receta_propia_mantenerse_centrado|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

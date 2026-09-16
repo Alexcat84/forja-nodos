@@ -33747,8 +33747,10 @@ $ python -c "..."  sobre dataset/nodos.jsonl y la bandeja
   recorrer_rueda_hacer_cosas_equipo              en el grafo: SI   en bandeja: no
   recorrer_rueda_conscientemente_cultura_equipo  en el grafo: SI   en bandeja: no
 
-**El orden de la tanda, generado del propio dato y no tecleado** (`.v30e/orden.py` lee el rango
-`cap_07.md, lineas N a M` del `resumen_teorico` de cada fichero de la bandeja y ordena por el):
+### W.2.d. **EL ORDEN DE LA TANDA, GENERADO DEL PROPIO DATO Y NO TECLEADO**
+
+`.v30e/orden.py` lee el rango `cap_07.md, lineas N a M` del `resumen_teorico` de cada fichero de la
+bandeja y ordena por el. **Es la tabla del instrumento entera, no un resumen suyo:**
 
 <!-- TALLADO: salida=.v30e/orden_cap07.txt -->
 
