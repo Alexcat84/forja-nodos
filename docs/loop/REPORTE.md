@@ -35292,8 +35292,213 @@ presupuesta.
 
 | # | tarea | estado |
 |---:|---|---|
-| 1 | los registros de la `ACTA 30` | **ABIERTA** |
-| 2 | **BLOQUEANTE**: la celda tecleada dentro del instrumento, y la arista que se perdio por ella | **ABIERTA** |
+| 1 | los registros de la `ACTA 30` | **CERRADA**, `Y.1` |
+| 2 | **BLOQUEANTE**: la celda tecleada dentro del instrumento, y la arista que se perdio por ella | **CERRADA**, `Y.2` |
 | 3 | cerrar `cap_11` en insercion: los tres que quedan, con sus dos aristas de caducidad | **ABIERTA** |
 | 4 | el `resumen_teorico` que dice lo contrario del grafo y de la `ACTA 25` | **ABIERTA** |
 | 5 | la cola entera, recontada fila a fila contra el dato | **ABIERTA** |
+
+## Y.1. **TAREA 1**: los registros de la `ACTA 30`, anexados sin rehacer sus medidas
+
+*El encargo lo dice con estas palabras: **sin rehacer mis medidas**. Asi que esta tabla es
+**registro de lo adjudicado por el auditor**, no medicion mia, y va marcada como tal
+(`EXTRACTOR.md` 5: un acta previa se cita como contraste, nunca como fuente de una cifra nueva).*
+
+| lo que la `ACTA 30` adjudica | lo que queda registrado | donde lo dice |
+|---|---|---|
+| los `9` discutibles de `X.6` | **SOSTENIDOS LOS NUEVE.** Cero caidas dentro del marcado | `ACTA 30`, encargo `TAREA 1` |
+| `6` relecturas pineadas | **las `6` se sostienen.** Tasa de caida de `CLASE` `0,00` por ciento, banda al 95 por ciento de `0,00` a `39,03` | `ACTA 30`, encargo `TAREA 1` |
+| las `3` propuestas | **REGISTRADAS LAS TRES Y NINGUNA ENCARGADA** (moratoria de maquinaria, `AUDITOR_FORJA.md` 5.6) | `ACTA 30`, encargo `TAREA 1` |
+| mis tres caidas propias de `X.8.f` | **las tres las cace yo y las tres las da por buenas** | `ACTA 30`, encargo `TAREA 1` |
+| **la unica caida cargada contra mi** | **`REPORTE`**: la fila `10` de la tabla de la cabeza de `cap_11` | `ACTA 30` `7.1` |
+| la racha `REPORTE` | **`2 de 3`** | `ACTA 30`, encargo `TAREA 1` |
+| las rachas `CLASE` y `CIFRA PUBLICADA` | **`0 de 2` las dos** | `ACTA 30`, encargo `TAREA 1` |
+| la racha propia del auditor | **vuelve a `0 de 3` por tanda limpia** | `ACTA 30`, encargo `TAREA 1` |
+| mi `DISCUTIBLE 7` | **tenia razon, y la atribucion mala era del auditor anterior.** Queda registrada contra la sede del auditor, no contra la mia | `ACTA 30` `7.2` |
+
+> **LA ACEPTO SIN REGATEARLA, y digo lo que me parece la parte fea.** La banda de `0,00` a `39,03`
+> sobre seis relecturas es ancha **porque la poblacion es de seis**, y el encargo lo dice el primero:
+> *eso es la cifra y no un defecto suyo*. Lo apunto porque una tasa del `0,00` por ciento con esa
+> banda **no es la misma prueba** que la de la vuelta 30, que tenia diecisiete pineadas debajo, y
+> quien lea las dos seguidas puede leerlas como si lo fueran.
+
+> **Y LA CAIDA DE LA FILA `10` LA ACEPTO ENTERA, con la parte que mas escuece.** Mi tabla de `X.4.e`
+> salio **VERDE en el tallado**, y salio verde **con razon**: era la tabla de mi instrumento, celda a
+> celda. Lo que estaba mal era **el dato que mi instrumento tenia tecleado dentro**. Escribi en
+> `X.4.a` de la vuelta 31, con estas palabras, que *un instrumento que se equivoca lo dice; una celda
+> tecleada, no* **y acto seguido teclee una celda dentro de un instrumento**. La `TAREA 2` es el
+> remedio y la ejecuto antes de insertar nada.
+
+## Y.2. **TAREA 2, BLOQUEANTE**: la celda tecleada DENTRO del instrumento, y la arista que se perdio por ella
+
+*Va antes de la primera insercion, y por eso esta seccion esta escrita y commiteada antes de que
+esta vuelta toque `forja.py insertar`.*
+
+### Y.2.a. LO QUE ACEPTO, Y LA FRASE MIA QUE ME LO COBRA
+
+**La fila `10` de mi tabla de `X.4.e` decia `debatir_decidir_asuntos_cultura_evitar_delegar` donde va
+`recorrer_rueda_conscientemente_cultura_equipo`.** No lo discuto y no lo rebajo. Lo que si digo es
+**por que salio verde el tallado**, porque ahi esta el remedio y no en el cuidado:
+
+> **La tabla ERA la de mi instrumento, celda a celda.** Lo que estaba mal era **el dato que el
+> instrumento llevaba tecleado dentro**, en una constante de veinte lineas. `D.41` compara la tabla
+> contra la salida del instrumento; **nada compara el instrumento contra el libro.**
+
+Y la frase que me lo cobra es mia, de la vuelta 31, `X.4.a`: *un instrumento que se equivoca lo dice;
+una celda tecleada, no.* **La escribi y acto seguido teclee una celda dentro de un instrumento.**
+
+### Y.2.b. EL REMEDIO: EL MAPEO DE ROTULO A NODO SE GENERA DEL DATO, Y CERO NODOS TECLEADOS
+
+**`.v32/cabeza.py` sustituye a `.v31/cabeza.py`, y lo que cambia es de donde sale cada celda:**
+
+| pieza de la tabla | version 1 (`.v31`) | version 2 (`.v32`) |
+|---|---|---|
+| los diez rotulos y su linea | **TECLEADOS** en la constante `ROTULOS` | leidos del bloque de indice del propio `cap_11.md` |
+| el titular del cuerpo | no existia la columna | leido de los titulares en mayuscula del propio `cap_11.md` |
+| el casado rotulo a titular | no existia: el nodo se ponia a mano | **por DOS vias independientes**, nombre y posicion, y **si no coinciden lo dice** |
+| el nodo que procedimenta | **TECLEADO**, *el nodo lo pongo yo leyendo* | casado por el **rango de lineas que el propio `resumen_teorico` declara de si mismo** |
+| si vive y si esta cableado | del dato | del dato |
+
+**Y LA PRIMERA LINEA DE SALIDA LLEVA SU `AVISO`**, como el encargo manda y como hace `herencia.py`:
+
+    AVISO: cero nodos tecleados en este instrumento. El rotulo sale del indice de
+           fuentes/scott_radical_candor/cap_11.md, el titular sale del cuerpo del
+           mismo fichero, y el nodo se casa por el rango que su propio resumen declara.
+
+> ### **Y LA PRIMERA CORRIDA DE LA VERSION 2 CAZO UNA SEGUNDA CELDA MALA, QUE ERA MIA Y NO ESTABA ENCARGADA**
+>
+> La primera version del casado por rango puso en la fila `5`, `Big Decision Meetings`, el nodo
+> `montar_reunion_gran_debate`. **Y no era un fallo del casado: era que yo leia mal el dato.** El
+> `resumen_teorico` de `montar_reunion_gran_debate` declara **su** tramo (`175` a `193`) **y cita
+> ademas el del vecino** al justificar el par:
+>
+>     $ python - (regex ingenua `lineas (\d+) a (\d+)` sobre los dos resumenes)
+>       montar_reunion_gran_debate    [('175', '193'), ('195', '203')]
+>       montar_reunion_gran_decision  [('195', '203')]
+>
+> **Asi que `195` caia dentro de dos tramos y ganaba el mas estrecho, que era el ajeno.** El arreglo
+> es que el lector **solo toma los tramos que cuelgan de la formula literal `Sale de las lineas`**,
+> encadenados por `y de las lineas`, **y se para en cuanto el texto deja de ser un tramo**. Un rango
+> que el resumen cite de un vecino mas adelante en la prosa no entra.
+>
+> **LO DIGO PORQUE ES EXACTAMENTE LA MORALEJA DE LA TAREA:** el instrumento se equivoco **y lo dijo**,
+> en una fila que yo podia comprobar en dos segundos. La constante tecleada se equivoco y no dijo
+> nada durante una vuelta entera.
+
+### Y.2.c. **LA TABLA DE LA CABEZA, REPUBLICADA ENTERA Y GENERADA DEL DATO** (correccion declarada, `D.13`)
+
+**EL TEXTO VIEJO NO SE BORRA**: la tabla de `X.4.e` de la vuelta 31 sigue en pie en su sitio, con su
+fila `10` mala, y esta es la que la corrige. **Y esta es de despues de la `TAREA 2.d`**, asi que la
+columna de la arista ya refleja el cableado de hoy.
+
+<!-- TALLADO: script=.v32/cabeza.py salida=.v32/cabeza_cap11_tras_2d.txt -->
+
+| # | rotulo del indice | linea | titular del cuerpo | linea | las dos vias | nodo que lo procedimenta | donde esta | arista cabeza a parte |
+|---:|---|---|---|---|---|---|---|---|
+| 1 | 1:1 Conversations | `L17` | 1:1 CONVERSATIONS | `L37` | las dos | `montar_reuniones_solas_mentalidad_frecuencia` | en el grafo | **CABLEADA** |
+| 2 | Staff Meetings | `L19` | STAFF MEETINGS | `L129` | las dos | `conducir_reunion_equipo_agenda_tres_bloques` | en el grafo | **CABLEADA** |
+| 3 | Think Time | `L21` | THINK TIME | `L165` | las dos | `bloquear_tiempo_pensar_calendario` | en el grafo | **CABLEADA** |
+| 4 | “Big Debate” Meetings | `L23` | “BIG DEBATE” MEETINGS | `L175` | las dos | `montar_reunion_gran_debate` | en el grafo | **CABLEADA** |
+| 5 | “Big Decision” Meetings | `L25` | “BIG DECISION” MEETINGS | `L195` | las dos | `montar_reunion_gran_decision` | en el grafo | **CABLEADA** |
+| 6 | All-Hands Meetings | `L27` | ALL-HANDS MEETINGS | `L205` | las dos | `montar_reunion_general_presentaciones_preguntas` | en el grafo | **CABLEADA** |
+| 7 | Meeting-Free Zones | `L29` | EXECUTION TIME | `L223` | **SOLO LA POSICION** | `pelear_proliferacion_reuniones_bloquear_ejecucion` | en el grafo | **NO, y se dice por que** |
+| 8 | Kanban Boards | `L31` | KANBAN BOARDS | `L235` | las dos | `montar_tablero_kanban_medir_actividades` | en bandeja | espera a que entre |
+| 9 | Walk Around | `L33` | WALK AROUND | `L251` | las dos | `pasear_organizacion_hallar_problemas_pequenios` | en bandeja | espera a que entre |
+| 10 | Be Conscious of Culture | `L35` | BE CONSCIOUS OF CULTURE | `L271` | las dos | `recorrer_rueda_conscientemente_cultura_equipo` | en el grafo | **CABLEADA** |
+
+### Y.2.d. **LOS DOS RECUENTOS Y LA CONCLUSION, CORREGIDOS, Y UNA DISCREPANCIA CONTRA EL ENCARGO QUE DECLARO**
+
+**Esta es la cuenta de ANTES de la `TAREA 2.d`**, que es la que hay que poner al lado de la del
+encargo para que se puedan comparar:
+
+<!-- TALLADO: parcial salida=.v32/cabeza_cap11.txt -->
+
+    | rotulos que el indice enumera | **10** |
+    | **de ellos, con nodo dentro del grafo hoy** | **8** |
+    | **de ellos, con la arista cabeza a parte cableada** | **6** |
+    | de ellos, con su nodo todavia en bandeja | **2** |
+    | de ellos, sin nodo ninguno | **0** |
+    | **rotulos donde las dos vias de casado NO coinciden** | **1** |
+
+| recuento | lo que la vuelta 31 publico | lo que el encargo corrige | **lo que mi instrumento mide hoy** |
+|---|---:|---:|---:|
+| con nodo dentro del grafo | `6` | `7` | **`8`** |
+| con su nodo todavia en bandeja | `3` | `2` | **`2`** |
+| sin nodo ninguno | `1` | no lo toca | **`0`** |
+
+> ### **LA DISCREPANCIA, DECLARADA Y NO RESUELTA COPIANDO** (`EXTRACTOR.md` 5)
+>
+> **El encargo dice `7` con nodo en el grafo y mi instrumento dice `8`.** El propio encargo manda
+> que en ese caso **gane el mio y lo declare**, asi que lo declaro, **y digo donde esta la fila que
+> los separa**: es el rotulo `7`, `Meeting-Free Zones`.
+>
+> **Y NO ES UN HALLAZGO NUEVO: ES UNA CELDA QUE MI PROPIA TABLA VIEJA TENIA MAL Y MI PROSA VIEJA
+> TENIA BIEN.** La vuelta 31 escribio en su recuadro del rotulo `7`, con estas palabras, *el nodo que
+> sale de ahi es `pelear_proliferacion_reuniones_bloquear_ejecucion`, que entro hoy* **y acto seguido
+> su tabla puso `(ninguno)` y `no hay nodo` en esa fila**. La constante tecleada **no tenia sitio
+> donde escribir "existe pero no se cablea"**, asi que escribio un hueco, y el hueco se llevo por
+> delante el recuento. **Son dos celdas malas en la misma constante, no una**, y la segunda nadie la
+> pidio porque nadie podia verla.
+>
+> **LA VERSION 2 SI TIENE DONDE ESCRIBIRLO, y por eso la cuenta cambia:** la columna
+> `las dos vias` dice **`SOLO LA POSICION`** en esa fila, y el recuento
+> `rotulos donde las dos vias de casado NO coinciden` la cuenta aparte. **El nodo existe** (por eso
+> `8`) **y la arista sigue sin declararse** (por eso `7` cableadas y no `8`), **y ahora las dos cosas
+> caben en la misma tabla.**
+>
+> **LA ARISTA DEL ROTULO `7` SIGUE SIN DECLARARSE, Y POR LA MISMA RAZON DE LA VUELTA 31**, que la
+> `ACTA 30` sostuvo como `DISCUTIBLE 2`: `EXTRACTOR.md` 15.6 pide que la parte sea **la que ese paso
+> nombra**, y el paso `6` nombra *las zonas libres de reuniones*, no *el tiempo de ejecutar*. **Que
+> los dos sean el mismo hueco de la lista lo pone la posicion, no el texto.** Lo que cambia hoy no es
+> el veredicto: es que **el instrumento lo dice en vez de esconderlo en un hueco.**
+
+**Y LA CONCLUSION DE `X.8.d` DE LA VUELTA 31 QUEDA CORREGIDA, sin borrar la vieja:** decia que los
+tres que quedaban en bandeja cerraban **tres** aristas de cabeza. **Cierran dos**, las de `TAREA 3.b`,
+porque `debatir_decidir_asuntos_cultura_evitar_delegar` **no es uno de los diez rotulos**: es un
+rotulo interior de la seccion del decimo. **La tercera no la cierra una insercion, la cerro la
+declaracion de `TAREA 2.d`.**
+
+### Y.2.e. **LA SEPTIMA ARISTA DE LA CABEZA, CABLEADA HOY** (`TAREA 2.d`)
+
+**LOS DOS EXTREMOS, COMPROBADOS EN `dataset/nodos.jsonl` Y NO EN LA PROSA DE LA SALIDA**, que es lo
+que el encargo pide expresamente:
+
+<!-- TALLADO: parcial salida=.v32/extremos_t2d.txt -->
+
+    LOS DOS EXTREMOS, COMPROBADOS EN dataset/nodos.jsonl Y NO EN LA PROSA
+      decidir_quien_comunica_cada_cuanto                 linea 257 del dataset, 6 pasos, estado vivo
+      recorrer_rueda_conscientemente_cultura_equipo      linea 240 del dataset, 14 pasos, estado vivo
+
+**LA DECLARACION, con la salida del instrumento pegada** (`EXTRACTOR.md` 15.6):
+
+<!-- TALLADO: parcial salida=.v32/arista_t2d.txt -->
+
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: decidir_quien_comunica_cada_cuanto
+      hijo : recorrer_rueda_conscientemente_cultura_equipo
+      paso citado de la madre: 6
+        Y ten delante las herramientas que el texto enumera para sacar cosas adelante juntos, que son las reuniones a solas, las reuniones de equipo, el tiemp
+      señales del par: familia_id 0.0, paso_contra_nodo 0.378, similitud_texto 0.233
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: decidir_quien_comunica_cada_cuanto > recorrer_rueda_conscientemente_cultura_equipo
+      razon en bitacora/VEREDICTOS.jsonl
+
+**LA RAZON ES LA QUE EL AUDITOR ME DIO HECHA**, y la copie entera a la bitacora para no inventarla,
+con el motivo de la perdida anotado detras: *la arista se perdio en la vuelta 31 por una celda
+tecleada dentro del instrumento `.v31/cabeza.py`*.
+
+**Y LA COMPROBACION POR LOS DOS EXTREMOS, DESPUES:**
+
+<!-- TALLADO: parcial salida=.v32/extremos_t2d_despues.txt -->
+
+    COMPROBADA POR LOS DOS EXTREMOS EN dataset/nodos.jsonl, DESPUES DE DECLARARLA
+      nodos_siguientes de la madre contiene a la hija : True
+      nodos_previos de la hija contiene a la madre    : True
+      hijos de la madre ahora: 7
+      aristas del grafo por los dos extremos: 103 y 103
+
+**`102` a `103` por los dos extremos, y la cabeza pasa de `6` hijos a `7`.** Las tres señales la dan
+por desconocida en las dos direcciones (`familia_id 0.0`, `paso_contra_nodo 0.378`,
+`similitud_texto 0.233`, **las tres por debajo de su umbral**), que es otra vez `D.19`: **ninguna
+corrida iba a volver a poner a estos dos juntos.**
