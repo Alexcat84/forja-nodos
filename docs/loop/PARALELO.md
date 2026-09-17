@@ -61,6 +61,26 @@ ocurrir por accidente.**
     git worktree add ../forja-gerber_emyth             extraccion-gerber_emyth
     git worktree add ../forja-marquet_turn_the_ship    extraccion-marquet_turn_the_ship
 
+### 3.1.b. **COPIAR EL CORPUS, QUE NO VIAJA EN GIT** (paso obligatorio)
+
+**`fuentes/<clave>/` ESTA EN `.gitignore` A PROPOSITO**: son libros con derechos y pesan,
+y lo unico que entra al repo es `fuentes/FUENTES_CANONICAS.json`. **Un worktree recien
+creado NO tiene los libros**, y sin ellos el frente no puede minar **ni pasar el censo**:
+el reporte que hereda cita rutas como `fuentes/smart_who/cap_01.md`, y ahi no estarian.
+
+**Esto lo descubrio el censo `D.42` al preparar los frentes**, abortando el primer commit
+de un worktree. **Se deja escrito porque es justo lo que habria reventado en el
+lanzamiento:**
+
+    cd /c/Users/AlexDesk/Documents/forja-nodos
+    for k in grove_high_output gerber_emyth marquet_turn_the_ship; do
+      cp -r fuentes/*/ "../forja-$k/fuentes/" 2>/dev/null
+    done
+
+**Se copia el corpus ENTERO y no solo su libro**, y por dos motivos: el reporte heredado
+cita capitulos de libros ya minados, **y un auditor de frente tiene derecho a recontar una
+ruta que su propio reporte publica.**
+
 ### 3.2. LANZAR CADA FRENTE
 
 **Los tres son el mismo comando con tres nombres cambiados**, y los tres llevan
