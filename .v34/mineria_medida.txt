@@ -1,0 +1,9 @@
+poblacion: 282 nodos de dataset/nodos.jsonl (el arbol entero)
+mapa leido de la cabecera 'unidad:' de fuentes/scott_radical_candor/cap_*.md
+
+| lo que la linea 95 nombra | fichero del capitulo | nodos en el grafo | pasos en el grafo | la afirmacion del nodo |
+|---|---|---:|---:|---|
+| **capitulo ocho** (1:1 Conversations) | `cap_11` | **16** | **187** | **FALSA** |
+| **capitulo seis** (Soliciting Impromptu Guidance) | `cap_09` | **0** | **0** | cierta |
+| **capitulo siete** (las conversaciones de carrera) | `cap_10` | **0** | **0** | cierta |
+| **los tres** | | **16** | **187** | |

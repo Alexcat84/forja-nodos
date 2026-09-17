@@ -36993,6 +36993,158 @@ esta vuelta.
 
 | # | tarea | estado |
 |---:|---|---|
-| 1 | **BLOQUEANTE**: el nodo que afirma un estado de mineria falso, corregido contra la medicion del dia, **mas el barrido de la especie entera** | ABIERTA |
+| 1 | **BLOQUEANTE**: el nodo que afirma un estado de mineria falso, corregido contra la medicion del dia, **mas el barrido de la especie entera** | **CERRADA** en `AA.2` |
 | 2 | seguir insertando el lote 4, `cap_09`, con el techo de `15` mandando sobre el capitulo | ABIERTA |
 | 3 | `PASOS INVENTADOS` por capitulo, **ANTES de que los nodos entren** | ABIERTA |
+
+## AA.2. **TAREA 1, BLOQUEANTE: EL NODO QUE AFIRMA UN ESTADO DE MINERIA FALSO** (`D.13`)
+
+### AA.2.a. **PRIMERO EL MAPA, PORQUE SIN EL LA CORRECCION SALE AL REVES**
+
+**El encargo dice que uno de los tres capitulos tiene `16` nodos y `187` pasos. Mi primera medicion
+puso esa cifra en `cap_11`, que NO es ninguno de los tres que el nodo nombra.** La discrepancia se
+declara y se resuelve, que es lo que `EXTRACTOR.md` 5 manda hacer con ella en vez de copiar.
+
+**NO HABIA DISCREPANCIA: HABIA UN DESFASE DE NUMERACION, Y ES EL MISMO QUE ESCRIBIO LA FRASE FALSA.**
+El libro lleva **tres unidades de frente** antes de su `Cap. 1`, asi que **el capitulo `N` del libro es
+el fichero `cap_(N+3).md`**. Leido de la cabecera `unidad:` de cada fuente, que es donde vive:
+
+<!-- TALLADO: parcial salida=.v34/mapa_capitulos.txt -->
+
+    $ head -4 fuentes/scott_radical_candor/cap_11.md | tail -1
+      unidad: Cap. 8
+    $ head -4 fuentes/scott_radical_candor/cap_09.md | tail -1
+      unidad: Cap. 6
+    $ head -4 fuentes/scott_radical_candor/cap_10.md | tail -1
+      unidad: Cap. 7
+
+**LA LINEA QUE ORIGINA TODO, CON SU `grep -n` PEGADO** (`D.35`). Las tres remisiones estan en la
+**misma linea 95**, y las tres se recortan de ella para no arrastrar el guion largo del original:
+
+<!-- TALLADO: parcial salida=.v34/remisiones_l95.txt -->
+
+    $ grep -n -o "(See .1:1 Conversations,. chapter eight.)" fuentes/scott_radical_candor/cap_08.md
+      95:(See "1:1 Conversations," chapter eight.)
+    $ grep -n -o "(See .Soliciting Impromptu Guidance,. chapter six.)" fuentes/scott_radical_candor/cap_08.md
+      95:(See "Soliciting Impromptu Guidance," chapter six.)
+    $ grep -n -o "(see chapter seven)" fuentes/scott_radical_candor/cap_08.md
+      95:(see chapter seven)
+
+> **LAS COMILLAS DE LA SALIDA PEGADA SON RECTAS Y EN EL FICHERO SON TIPOGRAFICAS**, y lo digo en vez de
+> callarlo: el patron las caza con un punto y no las escribe. **El numero de linea, el rotulo y el
+> ordinal del capitulo son literales**, que es lo que la cita tiene que sostener.
+
+### AA.2.b. **LA MEDICION DEL DIA, GENERADA DEL DATO Y NO LEIDA DE LA TABLA QUE CORRIJO**
+
+*`REMEDIO 2` de la `ACTA 31`. **El comando con el que lo medi va primero, y el que lo arregla despues**,
+que es el orden que el encargo pide.*
+
+<!-- TALLADO: script=.v34/mineria_medida.py salida=.v34/mineria_medida.txt -->
+
+| lo que la linea 95 nombra | fichero del capitulo | nodos en el grafo | pasos en el grafo | la afirmacion del nodo |
+|---|---|---:|---:|---|
+| **capitulo ocho** (1:1 Conversations) | `cap_11` | **16** | **187** | **FALSA** |
+| **capitulo seis** (Soliciting Impromptu Guidance) | `cap_09` | **0** | **0** | cierta |
+| **capitulo siete** (las conversaciones de carrera) | `cap_10` | **0** | **0** | cierta |
+| **los tres** | | **16** | **187** | |
+
+    $ python .v34/mineria_medida.py          EL COMANDO QUE MIDE
+      poblacion: 282 nodos de dataset/nodos.jsonl (el arbol entero)
+      mapa leido de la cabecera 'unidad:' de fuentes/scott_radical_candor/cap_*.md
+
+**`16` y `187` AL DIGITO CONTRA EL ENCARGO**, y ahora en el capitulo que le toca. **Dos de las tres
+afirmaciones eran ciertas y una era falsa**, que es mas preciso que decir que la frase entera era
+falsa.
+
+### AA.2.c. **LA PRUEBA VIVIA DENTRO DEL PROPIO NODO**
+
+<!-- TALLADO: parcial salida=.v34/arista_prueba.txt -->
+
+    $ python .v34/arista_prueba.py
+      madre : construir_confianza_equipo_tiempo_solas   (de cap_08)
+      hijo  : montar_reuniones_solas_mentalidad_frecuencia
+         capitulo del hijo, por la ruta que cita: cap_11
+
+**LA UNICA ARISTA DE SALIDA DEL NODO APUNTA A `cap_11`**, el capitulo que su propio texto declaraba sin
+minar, **y la cablearon en la vuelta 33, la misma que escribio la frase**. No hizo falta una senial ni
+un lector de fuera: **el nodo se contradecia dentro de su propio registro.**
+
+### AA.2.d. LA CORRECCION, ESCRITA CON `D.13` Y SIN BORRAR UN CARACTER
+
+<!-- TALLADO: parcial salida=.v34/correccion_t1.txt -->
+
+    $ python forja.py corregir --nodo construir_confianza_equipo_tiempo_solas --anade "CORRECCION DECLARADA ..." --razon "..."
+      CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+        nodo : construir_confianza_equipo_tiempo_solas
+        campo: resumen_teorico
+        el texto viejo SIGUE ENTERO: 1402 caracteres, ninguno borrado
+        se aniaden 1840 caracteres al final
+        huella antes  : d70267db73796f36
+        huella despues: 51454685dd4c5a97
+
+      GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: construir_confianza_equipo_tiempo_solas
+        razon en bitacora/VEREDICTOS.jsonl
+
+> ### **LA CORRECCION NO PONE LA CIFRA DE HOY DENTRO DEL NODO, Y ES DELIBERADO**
+>
+> **Sustituir `no estan minados` por `cap_11 tiene 16 nodos` arregla la frase de hoy y reproduce la
+> especie**: la cifra nueva envejece con la proxima insercion igual que envejecio la vieja. **La
+> correccion retira la afirmacion como afirmacion del nodo** y deja en su sitio la razon que si se
+> sostiene sola: *el procedimiento de otro capitulo no se escribe aqui*.
+>
+> **Y LA CIFRA DE HOY NO SE PIERDE**: vive en esta seccion, que es sede de medicion fechada, y en la
+> razon que quedo en `bitacora/VEREDICTOS.jsonl`.
+
+> ### **LO QUE EVITE SIN ADJUDICARLO: LA PREGUNTA `4` DE LA COLA DE DOCTRINA**
+>
+> La cola pregunta por *un `resumen_teorico` del dataset que cita EL REPORTE DE ESTA VUELTA: sede
+> duradera apuntando a una que se reescribe cada vuelta*. **Citar `.v34/mineria_medida.py` dentro del
+> nodo es la misma figura** con otro andamio. **Asi que el texto de la correccion describe el metodo
+> con sedes duraderas** (`dataset/nodos.jsonl`, la ruta `fuentes/scott_radical_candor/cap_NN.md`, la
+> cabecera `unidad:`) **y el comando de `.v34/` se queda en el reporte**, que es donde el encargo lo
+> pide. **No adjudico la pregunta `4`: la esquivo y lo digo** (`PROMPT_SIGUIENTE.md` 1).
+
+### AA.2.e. **EL BARRIDO DE LA ESPECIE ENTERA, QUE ES LA MITAD QUE IMPORTA** (encargo 2.b)
+
+<!-- TALLADO: parcial salida=.v34/barrido_mineria.txt -->
+
+    $ python .v34/barrido_mineria.py
+      BARRIDO: nodos que afirman ESTADO DE MINERIA dentro de su texto
+        poblacion : 282 nodos de dataset/nodos.jsonl (el arbol entero, sin filtrar)
+        patrones  : 14 de la familia
+        campos    : TODO campo de texto del nodo, incluidos los anidados
+      ------------------------------------------------------------------------------
+      coincidencias : 9
+      nodos tocados : 6 de 282
+
+**LOS `6` NODOS, UNO A UNO, CON SU ID Y SU FRASE, Y NINGUNO SE ESCONDE DETRAS DE UN TOTAL:**
+
+| # | id | campo | la frase | que es |
+|---:|---|---|---|---|
+| 1 | `construir_confianza_equipo_tiempo_solas` | `resumen_teorico` | *Esos tres capitulos NO estan minados todavia* | **EL EJEMPLAR**, corregido en `AA.2.d` |
+| 2 | `registrar_fuente_canonica` | `condiciones_activacion` | *Cuando entra un libro o mundo nuevo y todavia no se ha extraido su primer nodo* | **NO es la especie**: su `dominio` es `forja` y su fuente es `manual_sistema_conocimiento`. **La campania ES su conocimiento**, y la frase no envejece |
+| 3 | `hacer_repaso_posterior_proyecto` | `pasos_accionables[4]` | *una ocasion de minar la experiencia en busca de lecciones futuras* | **FALSO POSITIVO**: `minar` en castellano corriente, dentro de un paso de `zhuo_manager` |
+| 4 | `delimitar_franqueza_radical_cinco_noes` | `resumen_teorico` | *con el candidato todavia en cuarentena* | **NO es la especie**: es el relato **en pasado y fechado** de una `CORRECCION DECLARADA DE LA VUELTA 27`. Narra un acto, no afirma un estado de hoy |
+| 5 | `integrar_trabajo_vida_mejor_version` | `resumen_teorico` | *porque vive en cuarentena, que no es sede de CIFRA PUBLICADA* | **NO es la especie**, misma razon que el `4` |
+| 6 | `adaptar_escucha_cultura_ajena` | `resumen_teorico` | *la especie PERIODO que el lote 1 pago cara* | **NO es la especie**: nota de fidelidad `D.30`, cita una leccion del lote 1 y no un estado de mineria |
+
+> **LA CIFRA QUE EL ENCARGO PIDE QUE SE PUBLIQUE AUNQUE SALGA VACIA:** **`1` ejemplar de la especie en
+> `282` nodos, y es el que el encargo ya nombraba. CERO ejemplares nuevos.** De las `9` coincidencias,
+> `4` son del ejemplar (una de ellas la escribio mi propia correccion, al citar la frase que corrige),
+> `1` es falso positivo del castellano corriente y `4` son de una familia vecina que **no** es esta.
+
+**NO ES COLA Y NO SUBE:** una familia de `1` ya corregido no cuesta una vuelta. **Coste de lo que
+quedaria por hacer: cero**, porque no queda nada.
+
+> ### **LA FAMILIA VECINA QUE EL BARRIDO SI DESTAPO, Y LA DEJO PROPUESTA, NO ADJUDICADA** (`EXTRACTOR.md` 14)
+>
+> **`3` nodos** (`4`, `5`, `6` de la tabla) llevan dentro de su `resumen_teorico` **relato de proceso
+> de la forja**: numeros de vuelta, nombres de especie, el lote 1, la palabra cuarentena. **Ninguno
+> afirma un estado que envejezca**, que es por lo que no los cuento como la especie de la `TAREA 1` ni
+> los toco. **Pero comparten con ella la raiz**: un nodo cuyo texto habla de la campania en vez de
+> hablar del libro.
+>
+> **Lo propongo y no lo decido**, porque la vara de que es un `resumen_teorico` no es mia. **Si el
+> auditor la quiere medida, la medicion es este mismo barrido** y el coste es el de una tarea.
+
+**TAREA 1 CERRADA.**
