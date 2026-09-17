@@ -690,3 +690,14 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | elegir_medio_dar_guia_jerarquia_modos | otro_idioma | in person (if possible) | ingles | - |
 | 2026-09-17 | elegir_medio_dar_guia_jerarquia_modos | otro_idioma | hierarchy of modes | ingles | - |
 | 2026-09-17 | elegir_medio_dar_guia_jerarquia_modos | otro_idioma | Reply All do's and don'ts | ingles | - |
+| 2026-09-17 | elogiar_publico_criticar_privado_sus_tres_matices | nombre_largo | La regla general del elogio publico y la critica privada, la frontera entre correccion y critica, la adaptacion al gusto de cada uno, y el elogio publico explicado como aprendizaje del grupo | castellano | - |
+| 2026-09-17 | elogiar_publico_criticar_privado_sus_tres_matices | otro_idioma | praise in public, criticize in private | ingles | - |
+| 2026-09-17 | elogiar_publico_criticar_privado_sus_tres_matices | otro_idioma | group learning | ingles | - |
+| 2026-09-17 | evitar_personalizar_guia_aceptar_personal | nombre_largo | La diferencia entre cuidar personalmente y personalizar: el error fundamental de atribucion, decir eso esta mal en vez de tu estas mal, y por que no te lo tomes como algo personal es peor que inutil | castellano | - |
+| 2026-09-17 | evitar_personalizar_guia_aceptar_personal | otro_idioma | don't personalize | ingles | - |
+| 2026-09-17 | evitar_personalizar_guia_aceptar_personal | otro_idioma | fundamental attribution error | ingles | - |
+| 2026-09-17 | medir_guia_propia_pegatinas_marco | nombre_largo | La guia sobre tu guia: el marco impreso junto a tu mesa, una pegatina por color y por cuadrante, la cuenta semanal, y que hacer segun donde caigan | castellano | - |
+| 2026-09-17 | medir_guia_propia_pegatinas_marco | otro_idioma | gauge your impromptu guidance, get a baseline, track your improvements | ingles | - |
+| 2026-09-17 | practicar_franqueza_radical_jefe_propio | nombre_largo | La franqueza radical hacia arriba: pedir guia antes de darla, pedir permiso para darla, probar con algo pequenio y benigno, y leer la reaccion para decidir si sigues o te vas | castellano | - |
+| 2026-09-17 | practicar_franqueza_radical_jefe_propio | otro_idioma | being Radically Candid with your boss | ingles | - |
+| 2026-09-17 | practicar_franqueza_radical_jefe_propio | otro_idioma | Listen, Challenge, Commit | ingles | - |
