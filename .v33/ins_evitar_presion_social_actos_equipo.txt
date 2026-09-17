@@ -1,0 +1,33 @@
+ADUANA DE INSERCION, candidato 'evitar_presion_social_actos_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 353   (275 del grafo mas 78 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino contar_cuatro_historias_propias_ver_hueco_intencion  [Contar tus cuatro historias propias del marco de la franqueza radical para ver el hueco entre lo que pretendes y el impacto que tienes, y compartirlas con tu equipo]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.198 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.604 (umbral 0.60)
+    paso 6 del candidato contra paso 16 de contar_cuatro_historias_propias_ver_hueco_intencion
+
+  vecino proteger_tiempo_equipo_jefe  [No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba]
+    levantada por: similitud_texto
+    similitud_texto    0.380 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.417 (umbral 0.60)
+    paso 1 del candidato contra paso 8 de proteger_tiempo_equipo_jefe
+
+  vecino crear_obligacion_disentir_equipo  [Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja]
+    levantada por: similitud_texto
+    similitud_texto    0.405 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.346 (umbral 0.60)
+    paso 6 del candidato contra paso 4 de crear_obligacion_disentir_equipo
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 276
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3

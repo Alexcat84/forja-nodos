@@ -649,3 +649,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | agendar_cuidados_propios_cumplirlos | otro_idioma | calendar, show up for yourself | ingles | - |
 | 2026-09-17 | ceder_autoridad_unilateral_equipo | nombre_largo | Libres en el trabajo: la primera regla de la relacion que hace que la gente se sienta libre, con los tres procesos de Google como ejemplo | castellano | - |
 | 2026-09-17 | ceder_autoridad_unilateral_equipo | otro_idioma | free at work | ingles | - |
+| 2026-09-17 | dominar_arte_socializar_trabajo | nombre_largo | El arte, y los peligros, de socializar en el trabajo: el paseo, la comida campestre, las familias y la comida en tu casa, y las dos advertencias del final | castellano | - |
+| 2026-09-17 | dominar_arte_socializar_trabajo | otro_idioma | master the art of socializing at work | ingles | - |
+| 2026-09-17 | evitar_presion_social_actos_equipo | nombre_largo | Hasta los actos no obligatorios pueden sentirse obligatorios: la primera de las dos advertencias que el libro pone al que organiza | castellano | - |
+| 2026-09-17 | evitar_presion_social_actos_equipo | otro_idioma | even non-mandatory events can feel mandatory | ingles | - |
