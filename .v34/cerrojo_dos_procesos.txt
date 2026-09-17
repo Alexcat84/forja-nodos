@@ -1,0 +1,10 @@
+$ python .v34/cerrojo_dos_procesos.py
+sede del cerrojo : procesos/nodos.jsonl.66c1fadb.cerrojo
+dentro de dataset/ : NO
+
+proceso 1: TOMADO por pid 28360 tras esperar 0.00 s
+proceso 2: TOMADO por pid 7396 tras esperar 2.51 s
+
+el segundo tardo 2.56 s en entrar, y el primero retuvo 3 s
+VEREDICTO: ESPERO, no fallo
+cerrojo suelto al final: True

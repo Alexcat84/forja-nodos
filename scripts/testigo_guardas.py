@@ -63,6 +63,11 @@ GUARDAS = (
     ("gate", [sys.executable, "forja.py", "gate"]),
     ("guiones", [sys.executable, "forja.py", "guiones"]),
     ("censo_rutas", [sys.executable, os.path.join("scripts", "censar_rutas.py")]),
+    # D.52 punto 3 (17 sep 2026): UNA CITA DEL REGISTRO DE CREDITO ES UNA
+    # REFERENCIA, NUNCA UN RESULTADO COPIADO. Va al sello y no solo a `anotar`
+    # porque `anotar` solo mira lo que se escribe por el instrumento: una linea
+    # anadida a mano al fichero no pasaria por ahi, y el sello mide el ARBOL.
+    ("citas_de_credito", [sys.executable, "forja.py", "credito", "--citas"]),
 )
 
 

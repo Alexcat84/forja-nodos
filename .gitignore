@@ -32,3 +32,8 @@ cuarentena/_derivadas/
 # Commiteado, un checkout entrega un cerrojo de un proceso que ya no existe y la
 # insercion siguiente se encuentra bloqueada por un muerto.
 *.cerrojo
+
+# LA SEDE DE LOS FICHEROS DE COORDINACION (D.52). Son de proceso, no de dato:
+# llevan el pid de quien escribe en ese instante y no significan nada fuera de
+# esta maquina.
+procesos/

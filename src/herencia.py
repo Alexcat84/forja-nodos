@@ -245,8 +245,20 @@ def extraer(ruta_acta=None, seleccion=None):
     # entera delante: esa acta es de la linea de la que salio. El 16 sep los tres
     # frentes nacieron de la serial, heredaron `4 remedio(s)` cada uno, y el auditor
     # del primero paro citando como suyas tres tandas de un libro que no era el suyo.
+    #
+    # Y EL DISCRIMINADOR NO ES "ESTA LINEA NO TIENE FICHERO", que es lo que escribi
+    # primero y lo que el banco del arnes tumbo con tres rojos: en un arbol donde el
+    # registro de credito NO SE USA TODAVIA, ninguna linea tiene fichero, y D.40
+    # dejaba de entregar nada **por una ausencia que no significa nada**. Es el mismo
+    # defecto que D.40 vino a cerrar, reintroducido por la puerta de atras.
+    #
+    # LO QUE SI DISCRIMINA: que el mecanismo este EN USO en este arbol. Si alguna
+    # linea tiene registro y esta no, entonces esta salio de aquella y no ha dictado
+    # nada (D.48). Si no lo tiene nadie, no hay de que deducir nada y se dice.
     linea = credito.linea_actual()
-    if not credito.nacida(linea):
+    if not credito.lineas_con_registro():
+        pass
+    elif not credito.nacida(linea):
         return {"huella": huella(ruta_acta), "acta": "(ninguna de esta linea)",
                 "items": [], "linea": linea, "avisos": [
                     "LINEA RECIEN NACIDA: '%s' no tiene ninguna tanda cerrada en %s, "

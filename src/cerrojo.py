@@ -18,6 +18,9 @@ en `V.5.e` antes de arreglarla:
 quitan un nodo entero sigue siendo coherente, solo que mas pequenio. **Ninguna de
 las doce guardas lo veia.**
 
+DONDE VIVE, DESDE EL 17 sep 2026 (`D.52`): en `procesos/`, **nunca dentro de
+`dataset/`**. `dataset/` contiene el catalogo y nada mas.
+
 COMO FUNCIONA, Y POR QUE ASI. Un fichero de cerrojo creado con `O_EXCL`, que es
 atomico en todos los sistemas donde corre esta casa. Quien no lo consigue **espera
 y reintenta**; no pisa, no falla en silencio, y **no se salta el turno de nadie**.
@@ -34,10 +37,13 @@ NO se hace nunca es romperlo en silencio.
 """
 
 import errno
+import hashlib
 import io
 import json
 import os
 import time
+
+from . import comun
 
 ESPERA = 0.25                # segundos entre intentos
 TOPE_DE_ESPERA = 120.0       # un minuto no basta: la aduana mide minutos por candidato
@@ -49,7 +55,24 @@ class CerrojoOcupado(Exception):
 
 
 def ruta_de(ruta_dataset):
-    return ruta_dataset + ".cerrojo"
+    """LA SEDE DEL CERROJO VIVE FUERA DE `dataset/` (`D.52`, 17 sep 2026).
+
+    **Era `dataset/nodos.jsonl.cerrojo` y es `procesos/nodos.jsonl.<huella>.cerrojo`.**
+    El 17 sep 2026 el turno de un extractor commiteo con `git add -A` mientras una
+    insercion corria, y **el cerrojo vivo entro en git dentro de `dataset/`**. Un
+    `checkout` de ese commit entrega **el cerrojo de un proceso que ya no existe**, y la
+    insercion siguiente se queda esperando a un cadaver hasta que el tope de huerfano lo
+    declara. No fallo en silencio, pero costo una espera que no es de nadie.
+
+    **LA HUELLA DE LA RUTA VA EN EL NOMBRE, y no es adorno:** el taller de las pruebas
+    usa un dataset que se llama `nodos.jsonl` igual que el de verdad, y sin la huella
+    **las pruebas y la forja compartirian cerrojo**. Se calcula sobre la ruta absoluta
+    normalizada, asi que el mismo dataset da siempre el mismo fichero.
+    """
+    absoluta = os.path.normcase(os.path.abspath(ruta_dataset))
+    huella = hashlib.sha1(absoluta.encode("utf-8")).hexdigest()[:8]
+    nombre = "%s.%s.cerrojo" % (os.path.basename(ruta_dataset), huella)
+    return os.path.join(comun.DIR_PROCESOS, nombre)
 
 
 def _dueno(ruta):
@@ -93,6 +116,15 @@ class tomar(object):
         self.mio = False
 
     def _intentar(self):
+        # La sede vive fuera de `dataset/` (D.52) y puede no existir todavia: se crea
+        # ANTES del O_EXCL, que es lo unico que no puede fallar por otro motivo.
+        carpeta = os.path.dirname(self.ruta)
+        if carpeta and not os.path.isdir(carpeta):
+            try:
+                os.makedirs(carpeta)
+            except OSError as roto:
+                if roto.errno != errno.EEXIST:
+                    raise
         descriptor = os.open(self.ruta, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
         with os.fdopen(descriptor, "w") as f:
             f.write(json.dumps({"pid": os.getpid(), "desde": time.time()}))

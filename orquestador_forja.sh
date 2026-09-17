@@ -568,13 +568,39 @@ apertura_ciega() { # $1 = vuelta
   herencia="$(python forja.py herencia 2>&1)"
   local heredados
   heredados="$(printf '%s' "$herencia" | grep -c '^HEREDADO [0-9]* ' || true)"
-  log "VUELTA $vuelta : APERTURA CIEGA ($MODELO_AUDITOR), retirados: $retirar"
+  # LA FASE CIEGA NO VE EL REGISTRO DE CREDITO (D.52 punto 3, 17 sep 2026,
+  # correccion declarada del fundador sobre su propia D.48).
+  #
+  # EL DEFECTO, MEDIDO POR EL AUDITOR DE LA ACTA 32: el registro trae el campo
+  # `cita` de cada tanda, y ahi cabe una conclusion del reporte copiada dentro. A
+  # ese auditor le dijo `11 SANO` ANTES de que contara los suyos. El arnes retiraba
+  # cuatro ficheros por una puerta y D.48 abrio otra.
+  #
+  # SE RETIRA SOLO ALREDEDOR DEL TURNO DEL CIEGO, Y EL ORDEN IMPORTA: `herencia` ya
+  # esta calculada arriba, porque forja.py herencia PREGUNTA al registro de que
+  # linea es (D.48), y retirarlo antes haria que D.40 entregara CERO remedios
+  # creyendo que la linea acaba de nacer. Primero se calcula, luego se retira.
+  local credito_fichero
+  credito_fichero="CREDITO_$(python -c "import sys; sys.path.insert(0, '.'); from src import credito; print(credito.linea_actual())" 2>/dev/null || echo serial).jsonl"
+  [ -f "$LOOP/$credito_fichero" ] && mv "$LOOP/$credito_fichero" "$refugio/$credito_fichero"
+
+  log "VUELTA $vuelta : APERTURA CIEGA ($MODELO_AUDITOR), retirados: $retirar $credito_fichero"
   log "  hereda $heredados remedio(s) del acta anterior, entregados en el prompt (D.40)"
+  log "  y solo eso: remedios con su motivo, sin cifras ni conclusiones (D.52)"
   invocar_claude "auditor ciego" "$MODELO_AUDITOR" \
     "$herencia
 
 $PROMPT_APERTURA_CIEGA" \
     "$LOOP/ultimo_apertura.json" "$vuelta" "$APERTURA"
+
+  # EL REGISTRO DE CREDITO VUELVE EN CUANTO EL CIEGO TERMINA, antes de que D.40 se
+  # compruebe: esa comprobacion es del arnes, no del ciego, y necesita saber de que
+  # linea es el acta. Si reaparecio durante el turno, se dice, igual que los otros.
+  if [ -f "$LOOP/$credito_fichero" ]; then
+    reaparecidos="$reaparecidos $credito_fichero"
+    rm -f "$LOOP/$credito_fichero"
+  fi
+  [ -f "$refugio/$credito_fichero" ] && mv "$refugio/$credito_fichero" "$LOOP/$credito_fichero"
 
   # Y SE COMPRUEBA ANTES DE SELLAR. Un remedio entregado y no declarado es un
   # remedio perdido, que es justo lo que D.40 vino a impedir.

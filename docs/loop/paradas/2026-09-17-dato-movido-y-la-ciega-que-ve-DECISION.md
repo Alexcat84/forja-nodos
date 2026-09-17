@@ -1,3 +1,92 @@
+# DECISION DEL FUNDADOR, 17 SEP 2026: **UN CERROJO NO ES DATO, Y LA CIEGA NO VE EL CREDITO**
+
+*Archivo de `docs/loop/PARA_ALEXIS.md` de la linea serial, escrito por el auditor al
+cerrar la `ACTA 32` sobre la vuelta 33. **La decision va arriba, literal. El cuerpo de la
+parada va debajo sin tocar una coma.***
+
+---
+
+## LA DECISION, LITERAL
+
+> SESION DE CHAT en forja-nodos. DECISION DEL FUNDADOR (17 sep 2026)
+> sobre la parada de la vuelta 33. Archiva su PARA_ALEXIS en
+> docs/loop/paradas/2026-09-17-dato-movido-y-la-ciega-que-ve-DECISION.md
+> con esto literal, aplicalo y relanza el principal:
+>
+> 1. UN CERROJO DE PROCESO NO ES DATO, Y NO VIVE EN dataset/. Regla al
+>    banco: dataset/ contiene el catalogo y nada mas; los ficheros de
+>    coordinacion (cerrojo, marcas de proceso) viven fuera, con su ruta
+>    escrita. El cerrojo se MUDA fuera de dataset/ en esta vuelta, con su
+>    caso positivo re-corrido (dos procesos, el segundo espera), y su
+>    ejemplar de la racha se RECLASIFICA de DATO MOVIDO a ARNES: no
+>    acumula. La racha DATO MOVIDO queda en 1 de 2.
+> 2. EL EJEMPLAR QUE SI ES DATO SE REPARA ANTES DE SEGUIR, como TAREA 1:
+>    el nodo que afirma que tres capitulos no estan minados cuando uno
+>    tiene 16 nodos y 187 pasos dentro se corrige contra la medicion del
+>    dia, con correccion declarada y la cifra citada; y se mide si hay
+>    mas nodos con afirmaciones de estado de mineria dentro de su texto
+>    (esa especie no deberia existir: un nodo describe conocimiento, no
+>    el estado de la campaña), nombrando lo que salga.
+> 3. LA FASE CIEGA NO VE EL REGISTRO DE CREDITO, y el defecto es del
+>    fundador por D.48: correccion declarada. El arnes RETIRA
+>    docs/loop/CREDITO_<linea>.jsonl durante la fase ciega, como ya
+>    retira los otros cuatro, y le entrega al ciego SOLO la herencia que
+>    D.40 exige (remedios pendientes con su motivo y su salida pegada),
+>    sin cifras ni conclusiones. Y el campo cita del registro se escribe
+>    como REFERENCIA (ruta y linea del acta), nunca como resultado
+>    copiado: con su prueba, un cita con conclusion dentro no pasa el
+>    sello. Caso positivo con claude falso.
+> 4. Las otras seis preguntas de doctrina quedan EN COLA declarada: se
+>    resuelven cuando el mundo 11 cierre, salvo que alguna bloquee a una
+>    linea, y entonces sube sola. Escribelas en una seccion COLA DE
+>    DOCTRINA del TABLERO para que no se pierdan.
+> 5. Escribe el PROMPT_SIGUIENTE de la vuelta 34 con la TAREA 1 delante,
+>    luego la continuacion del lote 4 (79 de 142) por el tablero y su
+>    prioridad, y relanza el principal.
+
+---
+
+## LO QUE SE APLICO, Y DONDE QUEDO CADA COSA
+
+| punto | donde vive ahora |
+|---|---|
+| **1. el cerrojo no es dato** | **`D.52`** en `docs/BANCO_DE_REGLAS.md`. `comun.DIR_PROCESOS` y `cerrojo.ruta_de()`: la sede pasa de `dataset/nodos.jsonl.cerrojo` a **`procesos/nodos.jsonl.<huella>.cerrojo`**, con la huella de la ruta en el nombre **porque el taller de las pruebas usa un dataset que se llama igual** |
+| **el caso positivo, re corrido** | `.v34/cerrojo_dos_procesos.py`, dos procesos de verdad: el primero retiene `3` s, **el segundo espera `2,51` s y entra**, y el cerrojo queda suelto al final |
+| **la reclasificacion** | suceso `reinicio` en `docs/loop/CREDITO_serial.jsonl` con la cita a este fichero: **`DATO MOVIDO` vuelve a `1 de 2`** |
+| **2. el ejemplar que si es dato** | **`TAREA 1` del encargo de la vuelta 34**, con las dos mitades: corregir el nodo por `D.13` y **medir si hay mas nodos con estado de mineria dentro de su texto** |
+| **3. la ciega no ve el credito** | el arnes **retira `CREDITO_<linea>.jsonl` alrededor del turno del ciego**, y el orden importa: la herencia `D.40` se calcula ANTES, porque `forja.py herencia` pregunta al registro de que linea es |
+| **la cita como referencia** | `credito.cita_es_referencia()` y `forja.py credito --citas`, **en `anotar` y en el SELLO**. El testigo tiene ahora **cuatro guardas** |
+| **4. la cola de doctrina** | seccion `COLA DE DOCTRINA` de `docs/loop/TABLERO.jsonl`, **las seis con su medida y su sitio** |
+| **5. el encargo y el relanzamiento** | `docs/loop/PROMPT_SIGUIENTE.md`, vuelta 34 |
+
+### La mudanza del cerrojo, con su medida
+
+    $ python .v34/cerrojo_dos_procesos.py
+    sede del cerrojo : procesos/nodos.jsonl.66c1fadb.cerrojo
+    dentro de dataset/ : NO
+
+    proceso 1: TOMADO por pid 28360 tras esperar 0.00 s
+    proceso 2: TOMADO por pid 7396 tras esperar 2.51 s
+
+    el segundo tardo 2.56 s en entrar, y el primero retuvo 3 s
+    VEREDICTO: ESPERO, no fallo
+
+### Y CINCO CITAS YA ESCRITAS CAYERON AL ESTRENAR LA GUARDA
+
+**La escribio el auditor de esta misma parada**, y es el ejemplar de lo que el levanto:
+`11 SANO`, `en verde`, `13 de 13 pares adjudicados`. **No se borro ninguna:** el texto
+entero pasa a `cita_original` y `cita` se queda con la referencia que ese mismo texto ya
+traia delante (`REPORTE.md Z.3.a`, `ACTA 32 5.3`). **Se tacha y se pone al lado, que es
+como corrige esta casa.**
+
+**Y EL VOCABULARIO SE AFINO ANTES DE ESTRENARLO:** `de 2` y `de 3` **se quedaron fuera a
+proposito**, porque cazarian `punto 2 de 3` en una referencia legitima. Esta casa ya pago
+dos veces el precio de una guarda con falsos positivos: **se aprende a no mirarla.**
+
+---
+
+# EL CUERPO DE LA PARADA, SIN TOCAR
+
 # PARA ALEXIS. **EL BUCLE SE DETIENE: `DATO MOVIDO` LLEGA A `2 de 2` Y EL CREDITO QUEDA ROTO**
 
 *Escrito por el **auditor** al cerrar la `ACTA 32`, el 17 sep 2026, sobre la vuelta 33 de la linea

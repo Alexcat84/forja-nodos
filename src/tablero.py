@@ -241,6 +241,7 @@ def medir():
         # mundo 11: no se eligen, porque no queda nada que elegir de ellos.
         prioridad = orden.get(clave) or {}
         filas.append({
+            "tipo": "libro",
             "lote": numero,
             "clave": clave,
             "prioridad": prioridad.get("prioridad"),
@@ -263,7 +264,46 @@ def medir():
             "unidades_del_libro": unidades,
             "commits_propios_de_su_rama": len(propios),
         })
+    return filas + cola_de_doctrina(declarado)
+
+
+def libros(filas=None):
+    """Las filas de LIBRO del tablero. La cola de doctrina no es un libro."""
+    return [f for f in (filas if filas is not None else leer())
+            if f.get("tipo", "libro") == "libro"]
+
+
+def cola_de_doctrina(declarado=None):
+    """LA COLA DE DOCTRINA, UNA FILA POR PREGUNTA (`D.52` punto 4).
+
+    **Una pregunta que se contesta cuando haya tiempo y que no esta escrita en ningun
+    sitio no esta en cola: esta olvidada.** Por eso vive en el tablero, que es la sede
+    que toda linea lee en su apertura, y no en un acta de dieciseis mil lineas.
+
+    **`bloquea` es el campo que la saca de la cola:** una pregunta que impide a una
+    linea seguir **sube sola**, sin esperar al cierre del mundo 11.
+    """
+    declarado = declarado if declarado is not None else declaraciones()
+    cola = declarado.get("cola_de_doctrina") or {}
+    filas = []
+    for pregunta in cola.get("preguntas", []):
+        filas.append({
+            "tipo": "doctrina",
+            "n": pregunta.get("n"),
+            "pregunta": pregunta.get("pregunta", ""),
+            "medida_en": pregunta.get("medida_en", ""),
+            "bloquea": bool(pregunta.get("bloquea")),
+            "levantada_por": cola.get("levantadas_por", ""),
+            "cita": cola.get("cita", ""),
+            "cuando_se_resuelve": cola.get("que_dice", ""),
+        })
     return filas
+
+
+def doctrina_que_bloquea(filas=None):
+    """Las preguntas de la cola que SI bloquean, y que por eso suben solas."""
+    return [f for f in (filas if filas is not None else leer())
+            if f.get("tipo") == "doctrina" and f.get("bloquea")]
 
 
 def _contar_json_md(carpeta):
@@ -286,7 +326,7 @@ def escribir(filas=None):
 
 
 def fila_de(clave, filas=None):
-    for fila in (filas if filas is not None else leer()):
+    for fila in libros(filas):
         if fila.get("clave") == clave:
             return fila
     return None
@@ -335,8 +375,7 @@ def puede_abrir(clave, linea, filas=None):
 
 def siguiente_libre(linea, filas=None):
     """El primer libro del orden que esta linea SI puede tomar, con su motivo."""
-    for fila in sorted(filas if filas is not None else leer(),
-                       key=lambda f: f.get("lote", 999)):
+    for fila in sorted(libros(filas), key=lambda f: f.get("lote", 999)):
         vale, motivo = puede_abrir(fila["clave"], linea, filas)
         if vale and fila.get("estado") in ("SIN EMPEZAR", "COSECHADO"):
             return fila["clave"], motivo
@@ -361,7 +400,7 @@ def siguiente_por_prioridad(linea, filas=None):
     lo decida**, y una campania que los tomara sola seria la campania decidiendo su
     propio alcance.
     """
-    filas = filas if filas is not None else leer()
+    filas = libros(filas)
 
     propio = [f for f in filas if f.get("dueno") == linea
               and f.get("estado") in ("EN CURSO", "CERRADO EN EXTRACCION")]
@@ -399,7 +438,7 @@ def siguiente_por_prioridad(linea, filas=None):
 
 def mundo_11_completo(filas=None):
     """Los tres libros del mundo 11, y si los tres estan ya `INSERTADO`."""
-    filas = filas if filas is not None else leer()
+    filas = libros(filas)
     del_mundo = [f for f in sorted(filas, key=lambda f: f.get("prioridad") or 99)
                  if f.get("prioridad") and not f.get("fuera_de_campania")]
     faltan = [f for f in del_mundo if f.get("estado") != "INSERTADO"]
@@ -409,8 +448,7 @@ def mundo_11_completo(filas=None):
 def relevables(filas=None):
     """Los libros que `D.50` manda relevar: `EN CURSO` o `PAUSADO` en otra rama."""
     pendientes = []
-    for fila in sorted(filas if filas is not None else leer(),
-                       key=lambda f: f.get("lote", 999)):
+    for fila in sorted(libros(filas), key=lambda f: f.get("lote", 999)):
         if fila.get("estado") in ("EN CURSO", "PAUSADO") and fila.get("rama"):
             pendientes.append(fila)
     return pendientes
@@ -425,7 +463,8 @@ def texto(filas=None):
     partes.append("  %-4s %-4s %-30s %-22s %-20s %5s %7s"
                   % ("prio", "lote", "clave", "estado", "dueno", "band", "ult cap"))
     partes.append("  " + "-" * 104)
-    for fila in sorted(filas, key=lambda f: (f.get("prioridad") or 0, f.get("lote", 99))):
+    for fila in sorted(libros(filas),
+                       key=lambda f: (f.get("prioridad") or 0, f.get("lote", 99))):
         marca = str(fila.get("prioridad") or ".")
         if fila.get("fuera_de_campania"):
             marca += "*"
@@ -438,7 +477,7 @@ def texto(filas=None):
     partes.append("  CAMPANIA: no se extrae, queda en bandeja para la aduana de a uno.")
     partes.append("  Sin prioridad: ya dentro del mundo 11, no hay nada que elegir.")
     partes.append("")
-    con_dueno = [f for f in filas if f["dueno"] != NINGUNO]
+    con_dueno = [f for f in libros(filas) if f["dueno"] != NINGUNO]
     partes.append("  libros CON DUEÑO ahora mismo: %d" % len(con_dueno))
     for fila in con_dueno:
         partes.append("    %-30s lo trabaja '%s' (%s)"
@@ -453,6 +492,17 @@ def texto(filas=None):
         partes.append("  MUNDO 11: faltan %d de %d libros del corte (%s)"
                       % (len(faltan), len(del_mundo),
                          ", ".join(f["clave"] for f in faltan)))
+
+    cola = [f for f in filas if f.get("tipo") == "doctrina"]
+    if cola:
+        bloquean = [f for f in cola if f.get("bloquea")]
+        partes.append("")
+        partes.append("  COLA DE DOCTRINA (D.52): %d pregunta(s), %d bloquea(n)"
+                      % (len(cola), len(bloquean)))
+        for fila in sorted(cola, key=lambda f: f.get("n") or 0):
+            partes.append("    %s%-2s %s"
+                          % ("BLOQUEA " if fila.get("bloquea") else "        ",
+                             fila.get("n"), (fila.get("pregunta") or "")[:78]))
 
     pendientes = relevables(filas)
     if pendientes:

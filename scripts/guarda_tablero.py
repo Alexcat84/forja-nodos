@@ -97,6 +97,21 @@ def comprobar(texto=None, linea=None, filas=None):
 def main(argumentos=()):
     comun.salida_utf8()
     linea = credito.linea_actual()
+
+    # SIN OBJETO, Y SE DICE EN VOZ ALTA. Un arbol sin `ORDEN_DE_LOTES.md` no tiene
+    # campania que coordinar: no hay libros, no hay lineas y no hay nada que D.49 o
+    # D.51 puedan decidir. **Una guarda que no puede medir no inventa un veredicto**,
+    # igual que el tallado dice TALLADO SIN OBJETO cuando no hay documento.
+    #
+    # Y NO ES UN AGUJERO: el banco de pruebas del arnes corre asi a proposito, y hay
+    # una prueba que exige que el repo de verdad SI tenga su tablero con una fila por
+    # lote. Que esto pase en silencio ahi seria el agujero.
+    if not os.path.exists(tablero.RUTA_ORDEN):
+        print("GUARDA DEL TABLERO SIN OBJETO: no hay %s en este arbol, asi que no hay "
+              "campania que coordinar (D.49, D.51)."
+              % comun.relativa(tablero.RUTA_ORDEN))
+        return 0
+
     try:
         filas = tablero.escribir()
     except tablero.TableroMalDeclarado as roto:
@@ -110,7 +125,8 @@ def main(argumentos=()):
     toca, porque, _ = tablero.siguiente_por_prioridad(linea, filas)
     print("  libro que el orden le da (D.51): %s" % (toca or "NINGUNO"))
     print("    %s" % porque[:150])
-    con_dueno = [f for f in filas if f["dueno"] != tablero.NINGUNO]
+    con_dueno = [f for f in tablero.libros(filas)
+                 if f["dueno"] != tablero.NINGUNO]
     for fila in con_dueno:
         print("  con dueño: %-30s %-22s lo trabaja '%s'"
               % (fila["clave"], fila["estado"], fila["dueno"]))

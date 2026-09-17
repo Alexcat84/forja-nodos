@@ -6,7 +6,8 @@
     python forja.py credito --lineas             que lineas tienen registro
     python forja.py credito --revisar            replay contra lo declarado
     python forja.py credito --anotar --especie REPORTE --vuelta 33 --tanda "ACTA 32"
-                            --racha "0 de 3" [--cae] --cita "ACTA 32 9.1"
+                            --racha "0 de 3" [--cae] --cita "ACTA 32 seccion 9.1"
+    python forja.py credito --citas          comprueba que las citas sean REFERENCIA
 
 POR QUE EXISTE. El 16 sep 2026 corrieron cuatro sesiones a la vez: la de insercion y
 tres frentes de libro. Los tres frentes nacieron de una rama de la serial, **se llevaron
@@ -74,6 +75,45 @@ TIPOS = ("nacimiento", "tanda", "reinicio")
 
 class CreditoMalEscrito(Exception):
     """Una linea del registro que no se puede leer. Nunca se salta en silencio."""
+
+
+# EL VOCABULARIO DE LA CONCLUSION (D.52 punto 3, 17 sep 2026).
+#
+# UNA `cita` ES UNA REFERENCIA: ruta y linea del acta. NUNCA un resultado copiado.
+# El motivo lo midio el auditor de la ACTA 32 contra el instrumento: la fase ciega
+# leia el registro de credito, y el `cita` de una tanda ajena le dijo `11 SANO`
+# ANTES de que contara los suyos. El arnes retiraba cuatro ficheros por una puerta
+# y D.48 abrio otra.
+#
+# SE CAZA POR VOCABULARIO Y NO POR DIGITOS, y esa es la decision que importa: una
+# referencia legitima lleva numeros por todas partes (`ACTA 33, seccion 9.1`,
+# `docs/loop/paradas/2026-09-17-....md, punto 3`), asi que contar digitos daria
+# falso positivo en casi todas. Lo que una referencia NO lleva nunca es el
+# vocabulario con el que esta casa dice un veredicto o una medida.
+PALABRAS_DE_CONCLUSION = (
+    "sano", "continua", "repite", "mutuo", "puente", "transcripcion",
+    "inventados", "por ciento", "al digito", "coinciden", "se sostienen",
+    "verde", "rojo", "releidos", "discutibles", "caidas", "bloquearian",
+    "entrarian", "tope",
+)
+
+# LO QUE SE QUEDO FUERA A PROPOSITO: `de 2` y `de 3`, que son la forma de una racha.
+# Cazarian `punto 2 de 3` en una referencia legitima, y esta casa ya pago dos veces el
+# precio de una guarda con falsos positivos: se aprende a no mirarla. La racha ya vive
+# en su propio campo, asi que repetirla en la cita es redundante, no contaminante.
+
+
+def cita_es_referencia(texto):
+    """`(True, "")` si esa `cita` es una REFERENCIA; `(False, palabra)` si no.
+
+    **Caso positivo:** `"ACTA 32, 11 SANO releidos"` cae y nombra `sano`.
+    **Negativo:** `"ACTA 33, seccion 9.1"` pasa, con sus dos numeros dentro.
+    """
+    plano = comun.sin_acentos((texto or "").lower())
+    for palabra in PALABRAS_DE_CONCLUSION:
+        if palabra in plano:
+            return False, palabra
+    return True, ""
 
 
 def rama_actual():
@@ -271,6 +311,22 @@ def revisar(linea=None, sucesos=None):
     return discrepancias
 
 
+def citas_con_conclusion(linea=None, sucesos=None):
+    """Las lineas del registro cuya `cita` trae una conclusion dentro (`D.52`)."""
+    malas = []
+    for suceso in (sucesos if sucesos is not None else leer(linea)):
+        vale, palabra = cita_es_referencia(suceso.get("cita"))
+        if not vale:
+            malas.append({
+                "linea_del_fichero": suceso.get("_linea_del_fichero", 0),
+                "especie": _normalizar_especie(suceso.get("especie")),
+                "tanda": suceso.get("tanda", ""),
+                "cita": suceso.get("cita", ""),
+                "palabra": palabra,
+            })
+    return malas
+
+
 def anotar(suceso, linea=None, ruta_registro=None):
     """Aniade un suceso al registro de una linea, comprobandolo antes de escribir."""
     # los campos con guion bajo los pone `leer` al vuelo (el numero de linea del
@@ -288,6 +344,14 @@ def anotar(suceso, linea=None, ruta_registro=None):
             raise CreditoMalEscrito(
                 "un suceso %s sin cita. Una racha sin cita no se puede releer"
                 % suceso["tipo"])
+        vale, palabra = cita_es_referencia(suceso.get("cita"))
+        if not vale:
+            raise CreditoMalEscrito(
+                "la cita %r trae la palabra %r dentro, y eso es una CONCLUSION, no "
+                "una referencia (D.52). Una cita es la ruta y la linea del acta: "
+                "'ACTA 33, seccion 9.1'. La fase ciega lee este registro, y un "
+                "resultado copiado aqui es contaminacion."
+                % (suceso.get("cita"), palabra))
     destino = ruta_registro or ruta(suceso["linea"])
     comun.agregar_jsonl(destino, suceso)
     return destino
@@ -379,6 +443,8 @@ def main(argumentos):
             modo = "lineas"
         elif pieza == "--revisar":
             modo = "revisar"
+        elif pieza == "--citas":
+            modo = "citas"
         elif pieza == "--anotar":
             modo = "anotar"
         elif pieza == "--cae":
@@ -405,6 +471,23 @@ def main(argumentos):
                 print("  %-28s %3d tanda(s)   %s"
                       % (nombre, tandas, comun.relativa(ruta(nombre))))
             return 0
+        if modo == "citas":
+            malas = citas_con_conclusion(linea)
+            objetivo = linea or linea_actual()
+            if not malas:
+                print("CITAS VERDES en la linea '%s': todas son referencia, ninguna "
+                      "trae una conclusion dentro (D.52)." % objetivo)
+                return 0
+            print("CITAS EN ROJO en la linea '%s': %d con conclusion dentro (D.52)"
+                  % (objetivo, len(malas)))
+            for mala in malas:
+                print("  linea %d, %s en %s: %r trae %r"
+                      % (mala["linea_del_fichero"], mala["especie"],
+                         mala["tanda"] or "?", mala["cita"], mala["palabra"]))
+            print("")
+            print("UNA CITA ES LA RUTA Y LA LINEA DEL ACTA, nunca su resultado. La "
+                  "fase ciega lee este registro.")
+            return 1
         if modo == "revisar":
             print(texto_revision(linea))
             return 0

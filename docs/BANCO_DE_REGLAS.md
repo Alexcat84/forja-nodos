@@ -2759,3 +2759,102 @@ continua** (`cap_11`).
 
 **Y MIENTRAS LA LINEA TIENE LIBRO PROPIO EN CURSO, `--siguiente` DEVUELVE ESE**, porque
 `D.50` releva **al cerrar** uno y no a mitad.
+
+---
+
+## D.52. `dataset/` ES EL CATALOGO Y NADA MAS (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026 sobre la parada de la vuelta 33. **Tres piezas: la
+sede de los ficheros de coordinacion, una reclasificacion de racha, y una correccion
+declarada del fundador sobre su propia `D.48`.***
+
+### 1. La letra
+
+> **`dataset/` CONTIENE EL CATALOGO Y NADA MAS.** Los ficheros de coordinacion (el
+> cerrojo, las marcas de proceso) **viven fuera, con su ruta escrita.**
+
+**Sede nueva:** `procesos/`, declarada en `comun.DIR_PROCESOS` y **fuera de git**.
+
+**LA HUELLA DE LA RUTA VA EN EL NOMBRE, y no es adorno:** el taller de las pruebas usa un
+dataset que **se llama `nodos.jsonl` igual que el de verdad**, y sin la huella las pruebas
+y la forja compartirian cerrojo. Se calcula sobre la ruta absoluta normalizada, asi que el
+mismo dataset da siempre el mismo fichero: `procesos/nodos.jsonl.66c1fadb.cerrojo`.
+
+### Por que, con la caida delante
+
+El 17 sep 2026 el turno de un extractor commiteo con `git add -A` mientras una insercion
+corria, **y el cerrojo VIVO entro en git dentro de `dataset/`**. Un `checkout` de ese
+commit entrega **el cerrojo de un proceso que ya no existe**, y la insercion siguiente se
+queda esperando a un cadaver hasta que el tope de huerfano lo declara. **No fallo en
+silencio** (el cerrojo resuelve la duda por edad y nunca por adivinanza, `D.44`), **pero
+costo una espera y una parada que no son de nadie.**
+
+**Caso positivo, re corrido tras la mudanza** (`.v34/cerrojo_dos_procesos.py`): dos
+procesos de verdad sobre el mismo dataset, el primero retiene `3` segundos, **el segundo
+espera `2,51` y entra**, y el cerrojo queda suelto al final.
+
+### 2. La reclasificacion, y lo que ensena sobre las especies
+
+> **EL EJEMPLAR DEL CERROJO SE RECLASIFICA DE `DATO MOVIDO` A `ARNES`: NO ACUMULA.** La
+> racha `DATO MOVIDO` queda en **`1 de 2`**.
+
+**Y EL AUDITOR QUE LA CARGO TENIA RAZON CON LA LETRA QUE HABIA.** La fila de `DATO MOVIDO`
+dice *una operacion que cambia `dataset/`, `bitacora/` o `censos/`*, y `git add -A` cambio
+lo que `dataset/` contiene en el repositorio. **Eligio la lectura que le costaba el
+escalon teniendo la contraria ofrecida.** Lo que cambia no es su adjudicacion: **es la
+letra**, porque `dataset/` deja de poder contener un fichero de proceso.
+
+**LA ESPECIE SE DECIDE POR LA SEDE** (`5.2`), y esta regla **limpia la sede** en vez de
+discutir el ejemplar. Es la unica via que no deja la pregunta abierta para la proxima.
+
+### 3. La fase ciega no ve el registro de credito
+
+> **CORRECCION DECLARADA DEL FUNDADOR SOBRE `D.48`**, que es suya. **El arnes RETIRA
+> `docs/loop/CREDITO_<linea>.jsonl` durante la fase ciega**, como ya retira los otros
+> cuatro, y le entrega al ciego **SOLO la herencia que `D.40` exige** (remedios pendientes
+> con su motivo y su salida pegada), **sin cifras ni conclusiones.**
+
+**QUIEN LO LEVANTO Y CON QUE MEDIDA:** el auditor de la `ACTA 32`. *La apertura ciega esta
+OBLIGADA a leer el registro de credito, y el campo `cita` trae conclusiones del reporte
+copiadas dentro. Hoy me dijo `11 SANO` antes de que yo contara los mios.* **El arnes
+retiraba cuatro ficheros por una puerta y `D.48` abrio otra.**
+
+**EL ORDEN DE LA RETIRADA IMPORTA, y es la parte que se puede romper sin darse cuenta:**
+la herencia `D.40` se calcula **ANTES**, porque `forja.py herencia` **pregunta al registro
+de que linea es** (`D.48`). Retirarlo antes haria que `D.40` entregara **CERO remedios
+creyendo que la linea acaba de nacer**, que es el defecto que `D.40` vino a cerrar,
+reintroducido por la puerta de atras.
+
+### Y la cita se escribe como REFERENCIA
+
+> **EL CAMPO `cita` DEL REGISTRO ES LA RUTA Y LA LINEA DEL ACTA, NUNCA UN RESULTADO
+> COPIADO.** Un `cita` con conclusion dentro **no pasa el sello.**
+
+    python forja.py credito --citas
+
+**Va en `anotar` Y en el SELLO**, y las dos hacen falta: `anotar` solo mira lo que se
+escribe por el instrumento, y **una linea anadida a mano al fichero no pasaria por ahi**.
+El testigo de guardas tiene ahora **cuatro**.
+
+**SE CAZA POR VOCABULARIO Y NO POR DIGITOS**, y esa es la decision de diseno: una
+referencia legitima **lleva numeros por todas partes** (`ACTA 33, seccion 9.1`), asi que
+contar digitos daria falso positivo en casi todas. Lo que una referencia **no lleva nunca**
+es el vocabulario con el que esta casa dice un veredicto: `SANO`, `CONTINUA`, `PUENTE`,
+`por ciento`, `al digito`, `verde`, `rojo`.
+
+**Y `de 2` Y `de 3` SE QUEDARON FUERA A PROPOSITO:** cazarian `punto 2 de 3` en una
+referencia legitima. **Esta casa ya pago dos veces el precio de una guarda con falsos
+positivos: se aprende a no mirarla.**
+
+**Al estrenarla cayeron CINCO citas ya escritas**, todas del auditor que levanto el
+defecto. **No se borro ninguna:** el texto entero pasa a `cita_original` y `cita` se queda
+con la referencia que ese mismo texto ya traia delante.
+
+### 4. La cola de doctrina
+
+> **Las preguntas de doctrina que no bloquean a nadie quedan EN COLA DECLARADA: se
+> resuelven cuando el mundo 11 cierre.** Si alguna **bloquea a una linea, sube sola.**
+
+**Viven en la seccion `COLA DE DOCTRINA` de `docs/loop/TABLERO.jsonl`**, con su medida y su
+sitio, **para que no se pierdan**. Una pregunta que se contesta *cuando haya tiempo* y que
+no esta escrita en ningun sitio **no esta en cola: esta olvidada.**

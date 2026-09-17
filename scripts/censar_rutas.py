@@ -46,6 +46,7 @@ eso como caida seria inventar tres caidas donde no hay ninguna.
 """
 
 import glob as _glob
+import fnmatch
 import io
 import json
 import os
@@ -101,12 +102,39 @@ def _es_artefacto(ruta):
     return comun.es_artefacto_de_maquina(partes[-1], "/".join(partes[:-1]))
 
 
-def _sedes_exentas():
+def _config_de_sedes():
     try:
-        datos = json.loads(io.open(RUTA_SEDES, encoding="utf-8").read())
+        return json.loads(io.open(RUTA_SEDES, encoding="utf-8").read())
     except (IOError, ValueError):
         return {}
-    return dict((s["ruta"], s.get("motivo", "")) for s in datos.get("sedes", []))
+
+
+def _sedes_exentas():
+    return dict((s["ruta"], s.get("motivo", ""))
+                for s in _config_de_sedes().get("sedes", []))
+
+
+def _patrones_exentos():
+    """LOS PATRONES, POR LA LECCION DE `D.33`.
+
+    Una sede cuyo NOMBRE depende de la linea (`CREDITO_serial.jsonl`,
+    `CREDITO_grove_high_output.jsonl`) **no cabe en una lista fija sin acordarse de
+    anadir la siguiente**, y esta casa ya pago tres veces que **un nombre que hay que
+    acordarse de anadir protege hasta el dia en que nace otro.**
+    """
+    return [(p["patron"], p.get("motivo", ""))
+            for p in _config_de_sedes().get("patrones", [])]
+
+
+def _exenta(ruta, exentas=None, patrones=None):
+    """`(True, motivo)` si esa ruta esta exenta por lista fija o por patron."""
+    exentas = _sedes_exentas() if exentas is None else exentas
+    if ruta in exentas:
+        return True, exentas[ruta]
+    for patron, motivo in (_patrones_exentos() if patrones is None else patrones):
+        if fnmatch.fnmatch(ruta, patron):
+            return True, motivo
+    return False, ""
 
 
 def parece_ruta(cita):
@@ -251,6 +279,7 @@ def censar(documentos=None, raiz=None):
     """Devuelve (caidas, pasan). Una caida es un dict con su sitio y su motivo."""
     documentos = documentos or DOCUMENTOS
     exentas = _sedes_exentas()
+    patrones = _patrones_exentos()
     caidas, pasan = [], []
     for doc in documentos:
         entera = os.path.join(raiz or RAIZ, doc)
@@ -303,7 +332,7 @@ def censar(documentos=None, raiz=None):
                     continue
 
                 # (b) RUTA VACIA, o que no esta
-                if ruta in exentas or _es_artefacto(ruta):
+                if _exenta(ruta, exentas, patrones)[0] or _es_artefacto(ruta):
                     sitio_entero["forma"] = "vacia por protocolo (config/)"
                     pasan.append(sitio_entero)
                     continue

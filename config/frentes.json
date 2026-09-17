@@ -82,5 +82,48 @@
       }
     },
     "corte_del_mundo_11": "Con los tres primeros mas los cuatro ya insertados (onu_consumidor, smart_who, zhuo_manager, scott_radical_candor), el MUNDO 11 SE DECLARA COMPLETO: gente, comunicacion, contratacion, operaciones y sistematizacion. La campania de extraccion cierra ahi. Los tres del corte quedan en la bandeja, con su ficha, para entrar por la aduana de a uno y sin campania cuando el fundador lo decida."
+  },
+  "cola_de_doctrina": {
+    "cita": "decision del fundador del 17 sep 2026, punto 4",
+    "que_dice": "Se resuelven cuando el mundo 11 cierre, salvo que alguna bloquee a una linea, y entonces sube sola.",
+    "levantadas_por": "el auditor de la ACTA 32, linea serial, sobre la vuelta 33",
+    "preguntas": [
+      {
+        "n": 1,
+        "pregunta": "EXTRACTOR.md 11 y la banda de 0,4: dice que por encima hay gemelos y cero ajenos, acotado al catalogo de la otra casa. Esta casa tiene ya su primer par propio a 0,405 leido por dos lectores por separado. La medicion no se contradice; la generalizacion escrita encima pide su primer contraejemplo.",
+        "medida_en": "ACTA 32 3.7",
+        "bloquea": false
+      },
+      {
+        "n": 2,
+        "pregunta": "src/arista.py:187 teclea (D.37) en toda arista declarada por lectura, y se estampa igual sobre las que son D.29. Quien cuente aristas D.37 en la bitacora cuenta tambien las D.29.",
+        "medida_en": "APERTURA_CIEGA.md 9.2",
+        "bloquea": false
+      },
+      {
+        "n": 3,
+        "pregunta": "Una cifra en denominaciones.nombre_largo que el libro no escribe: 'las cuatro conversaciones' donde L95 nombra tres. Segunda vuelta seguida con la figura, y las dos veces se registro sin cargar, porque D.30 cuenta pasos.",
+        "medida_en": "ACTA 32 4, fila 2",
+        "bloquea": false
+      },
+      {
+        "n": 4,
+        "pregunta": "Un resumen_teorico del dataset que cita EL REPORTE DE ESTA VUELTA: sede duradera apuntando a una que se reescribe cada vuelta.",
+        "medida_en": "APERTURA_CIEGA.md 5.4",
+        "bloquea": false
+      },
+      {
+        "n": 5,
+        "pregunta": "Un orden roto no tiene casillero: el extractor corrio la relectura de fidelidad con tres nodos ya dentro, contra la letra de D.30. No mueve dato, no publica cifra falsa y no mueve veredicto. Es la tercera vez que aparece un dano sin fila.",
+        "medida_en": "ACTA 32 5.4",
+        "bloquea": false
+      },
+      {
+        "n": 6,
+        "pregunta": "La regla de la busqueda negativa vale para el extractor? 'Una busqueda negativa no se puede citar' esta escrita en AUDITOR_FORJA.md 1.1 y no en EXTRACTOR.md.",
+        "medida_en": "ACTA 32 3.8",
+        "bloquea": false
+      }
+    ]
   }
 }

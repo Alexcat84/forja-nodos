@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-09-17 08:51:07",
-  "commit": "1ae327e30a96",
-  "huella_del_arbol": "2a78c7e65d779d32",
+  "fecha": "2026-09-17 09:39:00",
+  "commit": "48e4682caf41",
+  "huella_del_arbol": "d2b1b7b78a64a780",
   "guardas": {
     "gate": {
       "estado": "VERDE",
@@ -16,7 +16,12 @@
     "censo_rutas": {
       "estado": "VERDE",
       "codigo": 0,
-      "salida": "      PATRON                           10\r\n      VACIA A PROPOSITO                3\r\n      con contenido                    111\r\n      vacia por protocolo              7\r\n\r\nCENSO VERDE: las 131 rutas publicadas sostienen lo que dicen sostener."
+      "salida": "  CAEN                      : 0\r\n      PATRON                           38\r\n      VACIA A PROPOSITO                3\r\n      con contenido                    522\r\n\r\nCENSO VERDE: las 563 rutas publicadas sostienen lo que dicen sostener."
+    },
+    "citas_de_credito": {
+      "estado": "VERDE",
+      "codigo": 0,
+      "salida": "CITAS VERDES en la linea 'serial': todas son referencia, ninguna trae una conclusion dentro (D.52)."
     }
   }
 }
