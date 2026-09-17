@@ -736,6 +736,49 @@ y esta vez tiene que declararla.
 EOF
 }
 
+para_alexis_por_tablero() { # vuelta salida_de_la_guarda
+  cat > "$LOOP/PARA_ALEXIS.md" <<EOF
+# PARA_ALEXIS: el encargo no puede abrir el libro que declara (D.49, D.51)
+
+La vuelta $1 no llego a gastar un turno. El arnes volvio a medir el tablero, leyo
+que libro DECLARA docs/loop/PROMPT_SIGUIENTE.md, y ese libro no le corresponde a
+esta linea.
+
+Lo que midio la guarda:
+
+$2
+
+QUE SIGNIFICA. D.49: un libro, un dueño a la vez. Ninguna linea abre ni continua
+un libro cuyo ESTADO no sea SIN EMPEZAR con dueño NINGUNO, o PAUSADO con dueño
+NINGUNO y ya COSECHADO. Y D.51: ninguna linea elige libro, toma el de PRIORIDAD
+mas baja cuyo estado lo permita.
+
+QUE NO SIGNIFICA. No dice que el trabajo anterior este mal, ni que ninguna cifra
+sea falsa. Dice que la vuelta iba a trabajar sobre un libro que otra linea tiene
+abierto, o sobre uno que no le toca por el orden del mundo 11.
+
+POR QUE ESTA GUARDA EXISTE. El 17 sep 2026 el lote 4 estaba a punto de cerrar, y
+D.32 abre el lote siguiente SIN PARADA entre medias. El siguiente por orden era
+el lote 5, que se estaba extrayendo en otra rama con 9 candidatos dentro. Lo unico
+que lo impedia era una frase escrita a mano en el encargo, y D.35 dice lo que vale
+eso: un remedio que se cumple acordandose no es un remedio.
+
+Estado: rama $RAMA, hash $(git rev-parse --short HEAD 2>/dev/null || echo desconocido).
+
+Como retomar, y son dos caminos distintos:
+
+  1. Si el libro que toca esta PAUSADO en otra rama, lo que falta es el RELEVO
+     (D.50): el frente detenido y sin proceso vivo, su rama cosechada a esta, el
+     tablero puesto al dia, y solo entonces se continua desde el capitulo
+     siguiente al ultimo minado. El paso de fundir es del fundador: el bucle no
+     funde ramas.
+
+  2. Si el encargo simplemente declaraba otro libro, corrige su linea
+     'LIBRO DE ESTA VUELTA:' con el que 'python forja.py tablero --siguiente'
+     nombra, borra este fichero y relanza.
+EOF
+}
+
 para_alexis_por_sello() { # vuelta sellado actual
   cat > "$LOOP/PARA_ALEXIS.md" <<EOF
 # PARA_ALEXIS: la apertura ciega se modifico despues de ver el reporte
@@ -777,6 +820,25 @@ for i in $(seq 1 "$MAX_VUELTAS"); do
     log "DETENIDO en la vuelta $i: no hay PROMPT_SIGUIENTE.md con contenido."
     break
   fi
+
+  # LA GUARDA DEL TABLERO (D.49, D.51). Vuelve a medir el tablero, lee que libro
+  # DECLARA el encargo, y comprueba dos cosas distintas: que esta linea pueda
+  # tomarlo (D.49, un libro un dueño a la vez) y que sea el que el orden del
+  # mundo 11 le da (D.51, ninguna linea elige libro).
+  #
+  # VA DESPUES DE LAS DOS DE ARRIBA Y ANTES DE GASTAR UN TURNO, que es donde una
+  # guarda cuesta menos: el 17 sep 2026 el lote 4 estaba a punto de cerrar y D.32
+  # habria abierto el lote 5 SIN PARADA, que se estaba extrayendo en otra rama con
+  # 9 candidatos dentro. Lo unico que lo impedia era una frase escrita a mano.
+  if ! guarda_tablero="$(python scripts/guarda_tablero.py 2>&1)"; then
+    echo "$guarda_tablero" >> "$LOOP/loop.log"
+    log "DETENIDO en la vuelta $i: la guarda del tablero esta en ROJO (D.49, D.51)."
+    log "  El encargo no puede abrir el libro que declara. Ver $LOOP/TABLERO.jsonl"
+    para_alexis_por_tablero "$i" "$guarda_tablero"
+    break
+  fi
+  echo "$guarda_tablero" >> "$LOOP/loop.log"
+  log "  tablero comprobado: la vuelta puede abrir (D.49, D.51)"
 
   # La medicion del rol inicial se hace DESPUES del primer pull, para que mida
   # el estado de verdad de la rama y no una copia local rezagada.

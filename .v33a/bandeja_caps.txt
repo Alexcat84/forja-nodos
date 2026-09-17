@@ -1,0 +1,9 @@
+LO QUE ESPERA EN cuarentena/scott_radical_candor/ HOY (arbol 1ae327e), por capitulo
+  el capitulo sale del resumen_teorico del propio candidato, no de una lista
+  cap_09.md    20 candidatos
+  cap_10.md    14 candidatos
+  cap_12.md     2 candidatos
+  cap_13.md    12 candidatos
+  cap_14.md    15 candidatos
+  sin capitulo legible: 0
+  TOTAL en bandeja: 63

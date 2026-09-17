@@ -1,0 +1,40 @@
+{
+  "id": "definir_receta_propia_mantenerse_centrado",
+  "titulo": "Averiguar cual es tu receta para mantenerte centrado y cumplirla, sobre todo cuando los tiempos se ponen duros",
+  "denominaciones": {
+    "nombre_largo": "Tu receta para mantenerte centrado: haz lo que te funcione a ti, dale prioridad cuando aprieta, y la receta de la autora como ejemplo y no como norma",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "figure out your recipe to stay centered and stick to it"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando quieres saber que tienes que hacer tu para mantenerte centrado, y sobre todo cuando llegan los tiempos duros, que es cuando lo primero que se cae es eso.",
+  "entregable_esperado": "Tu propia receta, sabida y cumplida, con prioridad reservada justo en las temporadas de mas presion.",
+  "pasos_accionables": [
+    "Averigua cual es tu receta para mantenerte centrado, y despues cumplela.",
+    "Cuenta con que el mundo esta lleno de consejos sobre esto y con que lo que a una persona le resulta enormemente valioso para otra es pura basura.",
+    "Haz lo que te funcione a ti.",
+    "Dale prioridad a hacerlo, pero sin pasarte, cuando los tiempos se pongan duros.",
+    "Hazle sitio a lo que te mantiene centrado con mas empenio todavia cuando estas estresado y ocupado que cuando las cosas estan relativamente tranquilas.",
+    "Cuenta con lo que hacen otros dicho como lo que hacen ellos y no como receta tuya: un emprendedor de mucho exito que la autora conocia iba al gimnasio antes y despues del trabajo en las temporadas de mas presion, y la receta diaria de la propia autora es dormir ocho horas, hacer ejercicio cuarenta y cinco minutos y desayunar y cenar con su familia.",
+    "Cuenta con que una receta admite cosas de tarde en tarde y no solo diarias: en la de la autora entran leer una novela, idealmente una a la semana, irse un fin de semana romantico con su marido, idealmente cuatro veces al anio, y dos semanas de vacaciones con sus hermanos y sus padres, una vez al anio.",
+    "Cuenta con que saltarte una o dos cosas de la receta durante un dia o dos no la rompe, y con que aun asi la rutina es la rutina.",
+    "Cuenta con la senial que el texto da para saber si esta funcionando: cuando su autora consigue hacer esas cosas se mantiene centrada por muchas tormentas que haya alrededor, y cuando no las consigue se le va un poco la cabeza aunque todo este tranquilo."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_08.md, lineas 29 a 35, bajo el rotulo Figure out your recipe to stay centered and stick to it, dentro de la seccion STAY CENTERED, que no tiene cabeza propia. EL P1 ES EL ROTULO DEL LIBRO TRANSCRITO, y lo es porque ese rotulo esta escrito en imperativo por el propio texto. LA DIFICULTAD DE LA PIEZA ES QUE SU MATERIAL MAS CONCRETO ES LA RECETA DE LA AUTORA, Y ESA RECETA NO ES LA DEL LECTOR: el propio texto lo dice en la linea 31 (lo que a uno le resulta valioso para otro es basura) y en la 33 (haz lo que te funcione a ti). Por eso las ocho horas, los cuarenta y cinco minutos, la novela semanal, los cuatro fines de semana al anio y las dos semanas de vacaciones van todos DENTRO de pasos que dicen que son suyos, y ninguno se escribe como norma para quien lea. Escribirlos como norma habria sido el puente mas facil del capitulo. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. P1 de la linea 29; P2 de la 31; P3, P4 y P5 de la 33; P6 de la 33 y la 35; P7, P8 y P9 de la 35. LA ANECDOTA DEL POLICIA DE NUEVA YORK Y EL DE MOSCU (linea 31) NO DA PASO PROPIO: su leccion es la del P2 y va dentro de el. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se averigua la receta propia cuando no la sabes, y que se hace cuando el trabajo no deja cumplirla.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

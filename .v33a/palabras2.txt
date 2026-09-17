@@ -1,0 +1,16 @@
+cuerpo entero tras el frontmatter (L8 al final)
+    split() a secas                       6140
+    regex [A-Za-z0-9 apostrofo guion]     6162
+    regex solo letras y digitos           6393
+cuerpo sin el arranque del capitulo siguiente
+    split() a secas                       6138
+    regex [A-Za-z0-9 apostrofo guion]     6160
+    regex solo letras y digitos           6391
+tramo FREE AT WORK (L46 a L66)
+    split() a secas                       1153
+    regex [A-Za-z0-9 apostrofo guion]     1154
+    regex solo letras y digitos           1194
+tramo FREE AT WORK con su rotulo (L45 a L66)
+    split() a secas                       1156
+    regex [A-Za-z0-9 apostrofo guion]     1157
+    regex solo letras y digitos           1197
