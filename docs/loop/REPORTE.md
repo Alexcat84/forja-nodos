@@ -36035,3 +36035,23 @@ lo compruebo tres veces.**
 
 **LAS CINCO ENTREGADAS Y NINGUNA EN COLA** (`EXTRACTOR.md` 1.3, tope de cinco). **Lo que esta vuelta
 deja pendiente esta en `Y.5`, medido fila a fila, y no hay ni una tarea del encargo dentro.**
+
+---
+
+# FRENTE `gerber_emyth`, VUELTA 1: **la apertura del lote 9**, la frontera de sus unidades, y el primer tramo de candidatos **EN CUARENTENA** (`D.45`, frente en paralelo: **NO INSERTA**)
+
+> ## **ESTE BLOQUE SE ESCRIBE EN LA RAMA `extraccion-gerber_emyth`, CON `MODO_INSERCION=cuarentena`. CERO INSERCIONES, Y NO POR FALTA DE CANDIDATOS BUENOS: PORQUE LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR Y ESTA CORRIDA NO LA TRAE.**
+>
+> **MODO AUSTERO (`D.47`) VIGENTE.** Nada que el registro ya diga, cifras talladas, discutibles por
+> numero y linea. **Las guardas de dato, intactas**: la aduana en seco candidato a candidato, la
+> fidelidad `D.30` con su relectura contra el parrafo, `D.41` y `D.42`.
+
+## G1.0. EL ESQUELETO DE LA VUELTA, ABIERTO ANTES DE LA PRIMERA TAREA (`EXTRACTOR.md` 3)
+
+| # | tarea del encargo | estado |
+|---:|---|---|
+| 1 | la frontera de cada unidad minada, cerrada contra el cuerpo | **ABIERTA** |
+| 2 | minar con el techo de candidatos por delante, aduana en seco en el acto | **ABIERTA** |
+| 3 | `PASOS INVENTADOS POR CAPITULO` (`D.30`), fila por unidad mas total | **ABIERTA** |
+| | el cierre: guardas, cifras recomputadas, discutibles marcados, commit y push | **ABIERTA** |
+
