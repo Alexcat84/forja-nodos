@@ -19,6 +19,9 @@
                                                 Sin --acta, la ULTIMA acta, que es
                                                 lo que corre el arnes
     python forja.py herencia --comprobar        la apertura ciega contra ello
+    python forja.py tablero                     el tablero de frentes (D.49, D.50)
+    python forja.py tablero --escribir          lo vuelca a docs/loop/TABLERO.jsonl
+    python forja.py tablero --puedo <clave>     si esta linea puede abrir ese libro
     python forja.py credito                     la racha de ESTA linea (D.48)
     python forja.py credito --lineas            que lineas tienen registro
     python forja.py credito --revisar           el replay contra lo declarado
@@ -34,6 +37,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from src import (aduana, anotacion, arista, censos, comun, correccion,  # noqa: E402
                  credito,
+                 tablero,
                  gate, guiones,
                  herencia, informe,
                  resolutor, vigencia)
@@ -54,6 +58,8 @@ def main(argumentos):
         return herencia.main(resto)
     if comando == "credito":
         return credito.main(resto)
+    if comando == "tablero":
+        return tablero.main(resto)
     if comando == "arista":
         return arista.main(resto)
     if comando == "corregir":

@@ -27,6 +27,21 @@ distintas.**
 
 ---
 
+## 1.b. **EL ALCANCE DE HOY: DOS LINEAS Y NO MAS** (17 sep 2026, `D.50`)
+
+> **La principal SIEMPRE ACTIVA, y UN SOLO frente de extraccion**, hoy
+> `grove_high_output` **hasta cerrar su libro**.
+>
+> **`gerber_emyth` y `marquet_turn_the_ship` quedan `PAUSADOS` con dueño `NINGUNO`**, su
+> trabajo parcial declarado en el tablero (**`10` y `9` candidatos**). **No se lanzan**, y
+> **seran relevados por el principal cuando le toquen por el orden** (`D.50`).
+
+**LO QUE SIGUE DE ESTE DOCUMENTO DESCRIBE TRES FRENTES PORQUE ASI SE MONTO EL 16 SEP.**
+Los comandos siguen siendo buenos y por eso no se borran: **lo que cambia es cuantos
+corren a la vez**, y hoy es **uno**.
+
+---
+
 ## 2. LOS TRES FRENTES, EN ORDEN DE VALOR
 
 | # | libro | unidades | palabras | rama | carpeta |
@@ -161,9 +176,51 @@ escrita dos veces en paralelo es peor que una regla que falta: la que falta se n
 
 ---
 
-## 5. EL PROCEDIMIENTO DE COSECHA
+## 5. EL PROCEDIMIENTO DE COSECHA Y RELEVO (`D.49`, `D.50`)
 
-*Cuando un frente cierra su libro en extraccion, su rama se funde a la de insercion.*
+*Cuando un frente cierra su libro en extraccion, su rama se funde a la de insercion. **Y
+desde el 17 sep 2026 eso tiene una sede y un orden obligatorio.***
+
+### 5.0. **PRIMERO SE MIRA EL TABLERO, SIEMPRE** (`D.49`)
+
+**`docs/loop/TABLERO.jsonl` es la sede unica del estado de la campania**, y **ninguna
+linea abre ni continua un libro sin consultarlo.**
+
+    python forja.py tablero                        el tablero entero, medido hoy
+    python forja.py tablero --puedo <clave>         si ESTA linea puede tomar ese libro
+    python forja.py tablero --escribir              lo vuelve a medir y lo vuelca
+
+> **LA REGLA, LITERAL:** ninguna linea abre ni continua un libro cuyo `ESTADO` no sea
+> **`SIN EMPEZAR` con dueño `NINGUNO`**, o **`PAUSADO` con dueño `NINGUNO` y ya
+> `COSECHADO`**. **El arnes lo comprueba al abrir vuelta y se detiene nombrando al
+> dueño.**
+
+**LO QUE ESTO IMPIDE, Y NO ES HIPOTETICO:** `D.32` abre el lote siguiente **sin parada
+entre medias** en cuanto uno cierra. El siguiente por orden era el lote `5`,
+`marquet_turn_the_ship`, **con `9` candidatos ya minados en otra rama**. La serial habria
+vuelto a minar `cap_01`, `cap_02` y `cap_03`.
+
+### 5.0.b. **EL RELEVO, Y SUS CUATRO PASOS EN ORDEN** (`D.50`)
+
+**Cuando la principal CIERRA un libro**, consulta el tablero; si hay un libro `EN CURSO` o
+`PAUSADO` en otra rama, **lo releva ENTERO**:
+
+| | paso | quien | como se comprueba |
+|---|---|---|---|
+| **(a)** | el frente **detenido y sin proceso vivo** | el fundador | `ps` sin su `orquestador_forja.sh`, y su `PARA_ALEXIS.md` en el arbol |
+| **(b)** | **su rama se COSECHA** a la de insercion, **una por vez**, gate y suite detras | **el fundador**: *el bucle no funde ramas* | `5.1` a `5.3` de este documento |
+| **(c)** | el tablero pasa ese libro a **dueño `NINGUNO`, estado `PAUSADO COSECHADO`** | quien coseche | `python forja.py tablero --escribir` |
+| **(d)** | **solo entonces** la principal lo toma y **continua desde el capitulo SIGUIENTE al ultimo minado, citando la frontera heredada** | la principal | `--puedo <clave>` da `SI` y nombra el ultimo capitulo |
+
+> # **NUNCA SE RELEVAN CAPITULOS SUELTOS: SE RELEVA EL LIBRO ENTERO.**
+>
+> **Un libro medio relevado tiene dos fronteras que nadie casa.** El frente cerro las
+> suyas contra el cuerpo, al digito; un relevo por capitulos obligaria a **volver a cerrar
+> la frontera del tramo partido**. **El libro entero tiene una sola frontera que heredar.**
+
+**Y EL PASO `(b)` NO LO HACE EL BUCLE.** *El bucle no funde ramas y el bucle no crea
+remotos.* Lo que el bucle hace es **pedirlo, nombrando la rama y el estado, y detenerse
+hasta que llegue.**
 
 ### 5.1. Una por vez, y en este orden
 
@@ -190,6 +247,14 @@ poder decir cual de las dos rompio algo.**
 > **LA REGLA DE RESOLUCION, EN UNA LINEA: EN LOS REGISTROS SE CONSERVAN LOS DOS; EN LAS
 > SEDES DE DATO NO DEBERIA HABER NADA QUE RESOLVER.** Si hay que elegir en una sede de
 > dato, **la cosecha se para**: eso no es un conflicto, es un sintoma.
+
+### 5.2.b. **Y EL TABLERO SE VUELVE A MEDIR** (`D.49`)
+
+    python forja.py tablero --escribir
+
+**En el cierre de cada vuelta de CUALQUIER linea**, y **detras de cada fusion**. Un
+tablero que se actualiza cuando alguien se acuerda **es la frase escrita a mano que
+`D.49` vino a sustituir.**
 
 ### 5.3. Detras de CADA fusion, sin excepcion
 

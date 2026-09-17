@@ -2553,3 +2553,136 @@ sola con tope: sin el literal al lado, aquel `7` se leeria como siete de tres.
 **`cae` solo se escribio donde el acta publica sus dos columnas** y se puede restar.
 Donde el acta publica una sola cifra, la fila va **sin `cae`**, y el replay la declara no
 replayable. **Un migrador que rellena huecos con su criterio no migra: dicta.**
+
+---
+
+## D.49. UN LIBRO, UN DUEÑO A LA VEZ (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026, puntos 1 y 2. **Nace `docs/loop/TABLERO.jsonl`**,
+sede unica del estado de la campania de extraccion.*
+
+### La caida que no llego a ocurrir, y por que iba a ocurrir
+
+**`D.32` dice que el acta que cierra un lote ABRE EL SIGUIENTE, sin parada entre medias**,
+con las dos condiciones de apertura en verde. Y estan en verde **para los diez lotes que
+quedan.**
+
+El lote `4` iba por el `47` por ciento. **El siguiente por orden es el lote `5`,
+`marquet_turn_the_ship`, que estaba siendo extraido en otra rama con `9` candidatos
+dentro**, tres de ellos ya en la bandeja de la serial. Si el lote 4 hubiera cerrado, el
+acta habria abierto el `5` **y habria vuelto a minar `cap_01`, `cap_02` y `cap_03`**, que
+el frente ya cerro con sus fronteras al digito.
+
+> **LO UNICO QUE LO IMPEDIA ERA UNA FRASE ESCRITA A MANO EN EL ENCARGO.** Y esta casa
+> tiene medido lo que vale eso: **`D.35`, un remedio que se cumple acordandose no es un
+> remedio.**
+
+### El tablero
+
+> **`docs/loop/TABLERO.jsonl` ES LA SEDE UNICA DEL ESTADO DE LA CAMPANIA DE EXTRACCION**,
+> una linea por libro con: **clave, rama, worktree, ESTADO, ultimo capitulo minado y su
+> commit, candidatos en su bandeja, y quien es su DUEÑO ACTUAL** (la linea que lo
+> trabaja) **o `NINGUNO`.**
+>
+> **SE GENERA DEL DATO** (ramas, bandejas, actas), **no se teclea**, y **se actualiza en
+> el cierre de cada vuelta de cualquier linea.**
+
+**LOS SEIS ESTADOS:** `SIN EMPEZAR`, `EN CURSO`, `PAUSADO`, `CERRADO EN EXTRACCION`,
+`COSECHADO`, `INSERTADO`.
+
+**LA BANDEJA SE CUENTA EN EL ARBOL DE SU DUEÑO, y esa es la mitad que nadie ve venir.**
+Los cuatro worktrees comparten historial, asi que **el arbol de cada frente tiene las
+bandejas de los otros libros copiadas**: `cuarentena/marquet_turn_the_ship/` da `3` en la
+serial y `9` en su frente. **La cifra buena es la de quien lo trabaja.**
+
+**Y LO QUE EL DATO NO PUEDE DECIR VA DECLARADO CON SU CITA**, en `config/frentes.json`:
+cual es el frente activo (**un frente detenido esperando decision sigue teniendo su
+libro**, que no es lo mismo que tener proceso vivo) y que libro esta `CERRADO EN
+EXTRACCION` (que es la adjudicacion de un acta, no una cuenta de ficheros). **El
+instrumento se detiene si una declaracion no lleva cita.**
+
+### La letra
+
+> **NINGUNA LINEA ABRE NI CONTINUA UN LIBRO CUYO `ESTADO` NO SEA:**
+>
+> - **`SIN EMPEZAR` con dueño `NINGUNO`**, o
+> - **`PAUSADO` con dueño `NINGUNO` y ya `COSECHADO`.**
+>
+> **EL ARNES LO COMPRUEBA AL ABRIR VUELTA CONTRA EL TABLERO Y SE DETIENE NOMBRANDO AL
+> DUEÑO** si el libro tiene uno.
+>
+> **TODA LINEA LEE EL TABLERO EN SU APERTURA Y LO CITA.**
+
+### El instrumento
+
+    python forja.py tablero              lo imprime, medido en este instante
+    python forja.py tablero --escribir   lo vuelca a docs/loop/TABLERO.jsonl
+    python forja.py tablero --puedo <clave>   si ESTA linea puede abrir ese libro
+    python forja.py tablero --dueno <clave>   quien lo trabaja hoy
+
+**Caso positivo:** `--puedo marquet_turn_the_ship` desde la serial **dice NO** y nombra
+sus `9` candidatos sin cosechar y la rama donde estan. **Negativo:**
+`--puedo openstax_business_ethics` **dice SI**, porque esta `SIN EMPEZAR` y sin dueño.
+
+---
+
+## D.50. EL RELEVO: SE RELEVA EL LIBRO ENTERO, NUNCA CAPITULOS SUELTOS (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026, punto 3. **Es lo que convierte un frente pausado
+en trabajo que la serial puede continuar**, y el orden de sus cuatro pasos es obligatorio.*
+
+### La letra
+
+> **CUANDO LA LINEA PRINCIPAL CIERRA UN LIBRO, CONSULTA EL TABLERO**, y si hay un libro
+> `EN CURSO` o `PAUSADO` en otra rama, **lo RELEVA en este orden obligatorio:**
+>
+> **(a)** el frente **debe estar detenido y sin proceso vivo**;
+> **(b)** su rama **se COSECHA a la rama de insercion** (una por vez, gate y suite
+> despues), con lo que **sus candidatos, su frontera y sus actas llegan**;
+> **(c)** el tablero pasa ese libro a **dueño `NINGUNO` y estado `PAUSADO COSECHADO`**;
+> **(d)** **solo entonces** el principal lo toma y **continua DESDE EL CAPITULO SIGUIENTE
+> al ultimo minado, citando la frontera heredada.**
+>
+> **NUNCA SE RELEVAN CAPITULOS SUELTOS: SE RELEVA EL LIBRO ENTERO.**
+
+### Por que el orden es obligatorio y no una recomendacion
+
+**Cada paso existe porque el anterior no basta.**
+
+| paso | que impide que pase |
+|---|---|
+| **(a) detenido y sin proceso vivo** | que la cosecha lea un arbol **que se esta escribiendo**. El 17 sep un frente que yo di por muerto llevaba **seis horas y media** dentro de un turno de extractor y cerro una vuelta entera despues |
+| **(b) cosechar antes de tocar** | que la serial mine **lo que ya esta minado**. Los candidatos del frente no existen en esta rama hasta que se funden: **contarlos no es tenerlos** |
+| **(c) el tablero antes de trabajar** | que dos lineas se crean dueñas del mismo libro. **El tablero es la sede, y una sede que se actualiza despues del trabajo no es una sede: es un parte** |
+| **(d) desde el capitulo SIGUIENTE, citando la frontera** | que el relevo **repita o se salte** una unidad. La frontera heredada es lo unico que dice donde acaba lo minado, y `D.41` obliga a que venga de su instrumento |
+
+### Por que el libro entero y no el capitulo
+
+**Un libro medio relevado tiene dos fronteras que nadie casa.** El frente cerro las suyas
+contra el cuerpo, al digito; un relevo por capitulos obligaria a **volver a cerrar la
+frontera del tramo partido**, y eso es rehacer el trabajo con mas sitios donde fallar.
+**El libro entero tiene una sola frontera que heredar.**
+
+### Y no releva cualquiera
+
+**EL RELEVO LO HACE LA LINEA PRINCIPAL, y solo cuando CIERRA un libro.** No es una tarea
+que se pueda encargar a mitad de lote: `D.45` dice que **la insercion es serial y de un
+libro por vez**, y un relevo a mitad de libro es dos libros a la vez por la puerta de
+atras.
+
+**EL BUCLE NO FUNDE RAMAS** (`AUDITOR_FORJA.md`, y lo repite cada parada). **El paso
+`(b)` lo hace el fundador**, con el procedimiento de `docs/loop/PARALELO.md`. Lo que el
+bucle si hace es **pedirlo, nombrando la rama y el estado**, y **detenerse hasta que
+llegue**.
+
+### El alcance de hoy, que es parte de la decision
+
+> **DOS LINEAS Y NO MAS:** la principal **siempre activa**, y **UN solo frente de
+> extraccion**, hoy `grove_high_output` **hasta cerrar su libro**.
+>
+> **`gerber_emyth` y `marquet_turn_the_ship` quedan `PAUSADOS` con dueño `NINGUNO`** y su
+> trabajo parcial declarado en el tablero (**`10` y `9` candidatos**): **no se lanzan**, y
+> **seran relevados por el principal cuando le toquen por el orden.**
+
+**Vive en `config/frentes.json` con su cita**, porque es una decision y no una medida, y
+el tablero lo dice en la columna `estado_de` de cada fila que lo usa.

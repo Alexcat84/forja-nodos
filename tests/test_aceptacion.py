@@ -3492,6 +3492,131 @@ class PruebaCerrojoYCenso(BaseForja):
                 self.taller, "no_commiteado.jsonl")), [])
 
 
+class PruebaTableroDeFrentes(BaseForja):
+    """UN LIBRO, UN DUEÑO A LA VEZ (D.49) Y EL RELEVO (D.50), 17 sep 2026.
+
+    D.32 abre el lote siguiente SIN PARADA en cuanto uno cierra. El siguiente por orden
+    era `marquet_turn_the_ship`, **que se estaba extrayendo en otra rama con 9
+    candidatos dentro**, y lo unico que lo impedia era una frase escrita a mano en el
+    encargo. D.35: un remedio que se cumple acordandose no es un remedio.
+    """
+
+    def _filas(self):
+        return [
+            {"lote": 4, "clave": "scott_radical_candor", "rama": "",
+             "estado": "CERRADO EN EXTRACCION", "dueno": "serial",
+             "candidatos_en_bandeja": 75, "ultimo_capitulo": "cap_14"},
+            {"lote": 5, "clave": "marquet_turn_the_ship",
+             "rama": "extraccion-marquet_turn_the_ship", "estado": "PAUSADO",
+             "dueno": "NINGUNO", "candidatos_en_bandeja": 9,
+             "bandeja_medida_en": "C:/Users/x/forja-marquet_turn_the_ship/cuarentena",
+             "ultimo_capitulo": "cap_03"},
+            {"lote": 6, "clave": "openstax_business_ethics", "rama": "",
+             "estado": "SIN EMPEZAR", "dueno": "NINGUNO",
+             "candidatos_en_bandeja": 0, "ultimo_capitulo": ""},
+            {"lote": 7, "clave": "grove_high_output",
+             "rama": "extraccion-grove_high_output", "estado": "EN CURSO",
+             "dueno": "grove_high_output", "candidatos_en_bandeja": 23,
+             "ultimo_capitulo": "cap_03"},
+            {"lote": 9, "clave": "gerber_emyth", "rama": "extraccion-gerber_emyth",
+             "estado": "COSECHADO", "dueno": "NINGUNO",
+             "candidatos_en_bandeja": 10, "ultimo_capitulo": "cap_11"},
+        ]
+
+    # ------------------------------------------------------- D.49, el dueño manda
+
+    def test_caso_positivo_un_libro_con_dueno_ajeno_no_se_abre(self):
+        """Es grove: EN CURSO en otra rama. La serial no lo toca."""
+        from src import tablero
+        vale, motivo = tablero.puede_abrir("grove_high_output", "serial", self._filas())
+        self.assertFalse(vale)
+        self.assertIn("TIENE DUEÑO Y NO ERES TU", motivo)
+        self.assertIn("grove_high_output", motivo)
+
+    def test_caso_positivo_pausado_sin_cosechar_tampoco_se_abre(self):
+        """Es marquet, y es la caida que D.49 vino a impedir: dueño NINGUNO, pero sus
+        9 candidatos no han llegado a esta rama."""
+        from src import tablero
+        vale, motivo = tablero.puede_abrir("marquet_turn_the_ship", "serial",
+                                           self._filas())
+        self.assertFalse(vale)
+        self.assertIn("PAUSADO y NO COSECHADO", motivo)
+        self.assertIn("9 candidato", motivo)
+
+    def test_caso_negativo_sin_empezar_y_sin_dueno_si_se_abre(self):
+        from src import tablero
+        vale, motivo = tablero.puede_abrir("openstax_business_ethics", "serial",
+                                           self._filas())
+        self.assertTrue(vale)
+
+    def test_caso_negativo_cosechado_y_sin_dueno_si_se_continua(self):
+        """D.50 (d): se continua desde el capitulo SIGUIENTE al ultimo minado."""
+        from src import tablero
+        vale, motivo = tablero.puede_abrir("gerber_emyth", "serial", self._filas())
+        self.assertTrue(vale)
+        self.assertIn("cap_11", motivo)
+
+    def test_su_propio_dueno_si_lo_continua(self):
+        from src import tablero
+        vale, _ = tablero.puede_abrir("grove_high_output", "grove_high_output",
+                                      self._filas())
+        self.assertTrue(vale)
+
+    def test_un_libro_sin_fila_no_se_abre(self):
+        """Un libro sin fila no se abre: primero se mide. Nunca por omision."""
+        from src import tablero
+        vale, motivo = tablero.puede_abrir("libro_que_no_existe", "serial",
+                                           self._filas())
+        self.assertFalse(vale)
+        self.assertIn("no tiene fila", motivo)
+
+    # -------------------------------------------------- el orden, y a quien saltar
+
+    def test_el_siguiente_libre_salta_los_que_tienen_trabajo_en_otra_rama(self):
+        """La serial NO va al lote 5: va al 6, que es el primero que puede tomar."""
+        from src import tablero
+        clave, _ = tablero.siguiente_libre("serial", self._filas())
+        self.assertEqual(clave, "openstax_business_ethics")
+
+    def test_los_relevables_salen_en_orden_de_lote(self):
+        from src import tablero
+        claves = [f["clave"] for f in tablero.relevables(self._filas())]
+        self.assertEqual(claves, ["marquet_turn_the_ship", "grove_high_output"])
+
+    # ------------------------------------------ lo declarado, que va con su cita
+
+    def test_una_declaracion_sin_cita_detiene_el_instrumento(self):
+        from src import tablero
+        ruta = os.path.join(self.taller, "frentes.json")
+        comun.escribir_texto(ruta, json.dumps(
+            {"alcance": {"lineas_a_la_vez": 2}, "frente_activo": {"clave": "x"}}))
+        anterior = tablero.RUTA_FRENTES
+        tablero.RUTA_FRENTES = ruta
+        self.addCleanup(lambda: setattr(tablero, "RUTA_FRENTES", anterior))
+        with self.assertRaises(tablero.TableroMalDeclarado):
+            tablero.declaraciones()
+
+    def test_el_config_del_repo_lleva_todas_sus_citas(self):
+        from src import tablero
+        datos = tablero.declaraciones()
+        self.assertTrue(datos["frente_activo"]["cita"])
+
+    # ------------------------------------------------- lo medido contra el arbol
+
+    def test_el_tablero_del_repo_tiene_una_fila_por_lote(self):
+        """Si esto cae, D.49 deja de poder decidir sobre algun libro del orden."""
+        from src import tablero
+        claves_del_orden = [c for _, c in tablero.lotes()]
+        escrito = [f["clave"] for f in tablero.leer()]
+        self.assertEqual(sorted(escrito), sorted(claves_del_orden))
+
+    def test_ningun_estado_del_tablero_esta_fuera_de_los_seis(self):
+        from src import tablero
+        for fila in tablero.leer():
+            self.assertIn(fila["estado"], tablero.ESTADOS,
+                          "%s tiene un estado que D.49 no define" % fila["clave"])
+
+
 class PruebaCreditoPorLinea(BaseForja):
     """LA RACHA ES DE SU LINEA (D.48, 17 sep 2026, decision del fundador).
 
@@ -3771,7 +3896,7 @@ def main():
              PruebaVigenciaNoEsGuarda,
              PruebaCerrojoYCenso,
              PruebaTestigoDeGuardas, PruebaCreditoPorLinea,
-             PruebaHerenciaPorLinea]
+             PruebaHerenciaPorLinea, PruebaTableroDeFrentes]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -3831,6 +3956,8 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaCreditoPorLinea)._tests))
     print("  D.48, la herencia de D.40 es la de SU linea: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaHerenciaPorLinea)._tests))
+    print("  D.49 y D.50, un libro un dueño a la vez y el relevo: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaTableroDeFrentes)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

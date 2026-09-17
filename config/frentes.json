@@ -1,0 +1,47 @@
+{
+  "_lea_esto": [
+    "LO QUE EL DATO NO PUEDE DECIR, DECLARADO CON SU CITA (D.49, 17 sep 2026).",
+    "",
+    "El tablero (docs/loop/TABLERO.jsonl) se GENERA del dato: ramas, bandejas, commits,",
+    "candidatos y grafo. Pero hay dos cosas que ningun comando puede medir, porque no",
+    "son hechos del arbol sino decisiones del fundador, y esas viven aqui CON SU CITA:",
+    "",
+    "  1. CUAL es el frente de extraccion activo, que no es lo mismo que cual tiene",
+    "     proceso vivo: un frente detenido esperando decision sigue siendo el frente",
+    "     activo de su libro, y su libro sigue teniendo dueño.",
+    "  2. QUE libro esta CERRADO EN EXTRACCION, que es una adjudicacion de un acta y no",
+    "     una cuenta de ficheros.",
+    "",
+    "CADA ENTRADA LLEVA SU CITA. Una declaracion sin cita no se puede releer, y",
+    "src/tablero.py se detiene si falta."
+  ],
+
+  "alcance": {
+    "lineas_a_la_vez": 2,
+    "cita": "decision del fundador del 17 sep 2026, punto 4",
+    "que_dice": "dos lineas y no mas: la principal siempre activa, y UN solo frente de extraccion"
+  },
+
+  "frente_activo": {
+    "clave": "grove_high_output",
+    "cita": "decision del fundador del 17 sep 2026, punto 4",
+    "que_dice": "hoy grove_high_output hasta cerrar su libro"
+  },
+
+  "liberados": {
+    "gerber_emyth": {
+      "cita": "decision del fundador del 17 sep 2026, punto 4",
+      "que_dice": "PAUSADO con dueño NINGUNO y su trabajo parcial declarado. No se lanza, y sera relevado por el principal cuando le toque por el orden"
+    },
+    "marquet_turn_the_ship": {
+      "cita": "decision del fundador del 17 sep 2026, punto 4",
+      "que_dice": "PAUSADO con dueño NINGUNO y su trabajo parcial declarado. No se lanza, y sera relevado por el principal cuando le toque por el orden"
+    }
+  },
+
+  "cerrados_en_extraccion": {
+    "smart_who": {"cita": "ACTA 8 seccion 10"},
+    "zhuo_manager": {"cita": "ACTA 13 seccion 8.1"},
+    "scott_radical_candor": {"cita": "ACTA 24"}
+  }
+}
