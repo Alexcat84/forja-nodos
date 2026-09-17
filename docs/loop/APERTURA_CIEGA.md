@@ -572,3 +572,117 @@ diff de la bandeja**, que es el material que esta fase manda abrir.
 
 **Lo que si he abierto, y lo repito porque tres vueltas se comportaron como si estuviera prohibido**:
 `docs/loop/ACTA_AUDITOR.md`, que es obra mia.
+
+---
+
+## 11. EL CIERRE DE LA PAGINA, MEDIDO A LA HORA DEL SELLO
+
+> ### **ESTA SECCION LA ESCRIBE UNA SEGUNDA FASE CIEGA QUE EL ARNES ABRIO ENCIMA DE LA PRIMERA, SOBRE ESTE MISMO ARBOL Y SIN CERRAR LA ANTERIOR. NO HE BORRADO NI UNA LINEA DE LO QUE YA ESTABA: LO HE VUELTO A MEDIR Y LO FIRMO.**
+
+**POR QUE SE QUEDA TODO LO DE ARRIBA Y NO LO REESCRIBO.** Las secciones `0` a `10` son la lectura
+ciega del auditor de esta misma vuelta, sobre esta misma bandeja, hecha antes de ver el reporte.
+Reescribirlas de cero habria destruido trabajo verificado para poner en su sitio un duplicado.
+**Lo que si me toca, por `HEREDADO 3`, es no firmar ninguna cifra que no haya corrido yo**, y eso es
+lo que hace esta seccion.
+
+### 11.1. Lo que el arnes hizo mientras esta pagina estaba viva, con su salida
+
+`docs/loop/ultimo_apertura.json` se vacio a las `22:25:08`, que es lo que `apertura_ciega()` hace al
+empezar una fase nueva, y los cuatro de `D.34.2` volvieron a salir del arbol:
+
+    $ date '+%H:%M:%S'; ls -la --time-style=full-iso docs/loop/ultimo_apertura.json
+    22:27:56
+    -rw-r--r-- 1 AlexDesk 197609 0 2026-09-16 22:25:08.727878900 -0400 docs/loop/ultimo_apertura.json
+
+    $ git status --porcelain docs/loop/ | grep '^ D'
+     D docs/loop/REPORTE.md
+     D docs/loop/loop.log
+     D docs/loop/ultimo_auditor.json
+     D docs/loop/ultimo_extractor.json
+
+**Y LA PAGINA SE MOVIO TRES VECES SIN QUE YO ESCRIBIERA NADA**, medido con su huella y sin tocarla:
+
+    $ for i in 1 2 3; do printf '%s  %s\n' "$(date '+%H:%M:%S')" "$(git hash-object docs/loop/APERTURA_CIEGA.md)"; sleep 20; done
+    22:28:48  2bd7b2d67b95c52f5a09f37a34f146fe0d6e8ea0
+    22:29:13  993c24ac0830fb896538d3b311ea88626bd3612f
+    22:30:21  bfa62878d2f6a94e525aab413bf34ba1a798a934
+    22:32:02  bfa62878d2f6a94e525aab413bf34ba1a798a934
+
+**`LECTURA`: dos fases ciegas del auditor han estado vivas a la vez sobre este arbol.** Lo sostienen
+tres cosas que yo no he hecho y que llevan hora de mi turno: el vaciado de `ultimo_apertura.json` de
+las `22:25:08`, las tres huellas distintas de la pagina entre las `22:28:48` y las `22:30:21`, y los
+ficheros de `.marquet_v1/` escritos entre las `22:07` y las `22:23`. **Es la misma figura que la
+seccion `9.3` declara desde el otro lado**, y por `D.45` es del fundador y no mia: **sube, no se
+arregla aqui.**
+
+### 11.2. Las cifras de esta pagina, vueltas a correr a la hora del sello
+
+**Las tres guardas de la casa**, corridas por mi a las `22:32:47`, dan lo mismo que la seccion `1.1`:
+
+    $ date '+%H:%M:%S'; python forja.py gate; python forja.py guiones; python tests/test_aceptacion.py
+    22:32:47
+    GATE VERDE.
+      nodos verificados: 270
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+      total: 201 pruebas, 0 fallos, 0 errores
+
+**La huella del acta anterior**, que es la cifra de la seccion `0`:
+
+    $ git hash-object docs/loop/ACTA_AUDITOR.md
+    f6c76f63bd9b6aeea7b1d5a9d485977d2d61f593
+
+**El corte de la bandeja de la seccion `3`, a las `22:34:06`: las nueve huellas coinciden una a una**,
+y ninguna se ha movido desde que la seccion `3` las congelo:
+
+    $ for f in cuarentena/marquet_turn_the_ship/*.json; do echo "$(git hash-object $f)  $(basename $f)"; done
+    319bc9d6deef958f82c184dad90778f7a4127a54  auditar_formacion_premios_ultima_fila.json
+    36cfd9d6f74ca02d7b7d5c69aa49a030131475c0  cambiar_forma_trabajar_conservar_plantilla.json
+    d3d72f7548cbbd043acb6f2ce5d61bc922d36dd2  ceder_control_reforzar_competencia_claridad.json
+    71426b3f58e9b0293ee59df6fadde0accf36582e  contar_firmas_cadena_tramite_parado.json
+    cda982ac44e84ff2674b793e022ec0f100dd8e9e  encargar_meta_especifica_dejar_libre_metodo.json
+    34ea4932a90ef3f5812b9f4e9e4aba0cff6b84ac  inspeccionar_reparto_informacion_notas_jefe.json
+    9d6356c978a80cd5eaaa486f0293651eae0aee8d  observar_reunion_rutinaria_senales_plantilla.json
+    fdda3b318a856b52923cbbfcf2fa9c91146efa21  recorrer_organizacion_escuchar_plantilla.json
+    33921de02e1c2bf027d89e5c03852b848fb3e77d  seguir_frustrado_preguntar_implantacion_ideas.json
+
+**El censo de pasos de la seccion `4` y la columna `pasos` de la tabla de la seccion `7`**, contados
+otra vez por mi, con un contador escrito aqui y sin ninguna lista de ids tecleada dentro
+(`HEREDADO 4`): recorre la carpeta con `glob`, cuenta `pasos_accionables` y saca la unidad del
+`UNIDAD DE ORIGEN:` del propio `resumen_teorico`.
+
+    $ python - (cuenta pasos_accionables y lee UNIDAD DE ORIGEN de cada .json de la bandeja)
+       11  cap_03.md     auditar_formacion_premios_ultima_fila
+        5  cap_02.md     cambiar_forma_trabajar_conservar_plantilla
+        7  cap_01.md     ceder_control_reforzar_competencia_claridad
+       10  cap_03.md     contar_firmas_cadena_tramite_parado
+        5  cap_02.md     encargar_meta_especifica_dejar_libre_metodo
+        8  cap_03.md     inspeccionar_reparto_informacion_notas_jefe
+        9  cap_03.md     observar_reunion_rutinaria_senales_plantilla
+        7  cap_03.md     recorrer_organizacion_escuchar_plantilla
+        8  cap_03.md     seguir_frustrado_preguntar_implantacion_ideas
+      TOTAL PASOS EN LA BANDEJA: 70
+
+**El recuento del barrido de la seccion `5.1`**, releido de `.marquet_v1/informe_nueve.txt` por un
+contador propio y no a ojo:
+
+    $ python - (recuenta ### y 'vecino ... [levantada por: ...]' sobre .marquet_v1/informe_nueve.txt)
+    CANDIDATOS BARRIDOS      : 9
+    VECINOS LEVANTADOS TOTAL : 21
+    POR SENIAL               : {'similitud_texto': 20, 'paso_contra_nodo': 1}
+      vecino DENTRO de la bandeja marquet : 20
+      vecino FUERA                        : 1
+
+### 11.3. Lo que esta seccion firma y lo que no
+
+**FIRMO, porque lo he corrido yo entre las `22:32` y las `22:35`:** las tres guardas de la casa, la
+huella del acta anterior, las nueve huellas del corte, los setenta pasos repartidos en sus nueve
+filas con su unidad, y el recuento de veintiun vecinos del barrido. **Las cinco cuadran al digito con
+lo que las secciones `0` a `10` ya decian.**
+
+**NO FIRMO COMO MIAS DE ESTA FASE, y por eso van nombradas:** las lecturas de contenido de la seccion
+`8` y los hallazgos de `9.1` y `9.2`. Son lectura del auditor de esta vuelta, estan sostenidas con
+su cita y su linea en el sitio donde se escriben, **y yo no las he vuelto a leer paso por paso en
+esta segunda fase.** Quedan como estan y se cierran en mi turno normal.
+
+**NO HE ABIERTO NINGUNO DE LOS CUATRO DE `D.34.2` NI LOS HE RECUPERADO DE `git`**, y tampoco
+`.vm01/`. Lo unico que he abierto del arbol del extractor son los nueve candidatos de la bandeja.
