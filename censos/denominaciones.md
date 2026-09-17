@@ -657,3 +657,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | construir_confianza_equipo_tiempo_solas | otro_idioma | building trust | ingles | - |
 | 2026-09-17 | vivir_valores_propios_evitar_listarlos | nombre_largo | Compartir valores: las tres objeciones al ejercicio de valores personales, y lo que si hay que hacer con los tuyos | castellano | - |
 | 2026-09-17 | vivir_valores_propios_evitar_listarlos | otro_idioma | sharing values | ingles | - |
+| 2026-09-17 | demostrar_apertura_visiones_distintas | nombre_largo | Demostrar apertura: no hace falta compartir valores para construir relacion, y el trabajo es el vinculo que si comparte todo el equipo | castellano | - |
+| 2026-09-17 | demostrar_apertura_visiones_distintas | otro_idioma | demonstrating openness | ingles | - |
+| 2026-09-17 | manejar_contacto_fisico_regla_platino | nombre_largo | Espacio fisico: cuando un abrazo demuestra que te importa alguien, cuando es agresion odiosa, y la regla de platino que decide | castellano | - |
+| 2026-09-17 | manejar_contacto_fisico_regla_platino | otro_idioma | physical space, platinum rule | ingles | - |

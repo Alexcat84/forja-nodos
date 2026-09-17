@@ -1,1 +1,78 @@
 ### demostrar_apertura_visiones_distintas
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 279
+  censos escritos: denominaciones
+### manejar_contacto_fisico_regla_platino
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 280
+  censos escritos: atribuciones, denominaciones
+### reconocer_emociones_propias_avisar_equipo
+PARADA EN reconocer_emociones_propias_avisar_equipo, codigo 2
+ADUANA DE INSERCION, candidato 'reconocer_emociones_propias_avisar_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 358   (280 del grafo mas 78 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 5. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino minimizar_impuesto_colaboracion_equipo  [Minimizar el impuesto de colaboracion de tu equipo cargando tu con el, con las tres cosas que equilibran la balanza]
+    levantada por: similitud_texto
+    similitud_texto    0.355 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.503 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de minimizar_impuesto_colaboracion_equipo
+
+  vecino centrar_debate_ideas_fuera_egos  [Centrar el debate en las ideas y dejar los egos fuera, cambiando los papeles cuando alguien empieza a defender el suyo]
+    levantada por: similitud_texto
+    similitud_texto    0.363 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.449 (umbral 0.60)
+    paso 5 del candidato contra paso 4 de centrar_debate_ideas_fuera_egos
+
+  vecino cuidarse_agotamiento_centro_rueda  [Cuidarte a ti mismo contra el agotamiento, porque estas en el centro de la rueda y es la rueda la que se para]
+    levantada por: similitud_texto
+    similitud_texto    0.370 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.443 (umbral 0.60)
+    paso 3 del candidato contra paso 3 de cuidarse_agotamiento_centro_rueda
+
+  vecino construir_confianza_equipo_tiempo_solas  [Construir la confianza con cada persona de tu equipo pasando tiempo a solas con ella con regularidad, sin asumir de golpe mas confianza de la que hay]
+    levantada por: similitud_texto
+    similitud_texto    0.377 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.414 (umbral 0.60)
+    paso 2 del candidato contra paso 6 de construir_confianza_equipo_tiempo_solas
+
+  vecino construir_confianza_equipo_tiempo_solas  [Construir la confianza con cada persona de tu equipo pasando tiempo a solas con ella con regularidad, sin asumir de golpe mas confianza de la que hay]
+    levantada por: similitud_texto
+    similitud_texto    0.377 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.414 (umbral 0.60)
+    paso 2 del candidato contra paso 6 de construir_confianza_equipo_tiempo_solas
+
+BLOQUEADO: faltan veredictos para minimizar_impuesto_colaboracion_equipo, centrar_debate_ideas_fuera_egos, cuidarse_agotamiento_centro_rueda, construir_confianza_equipo_tiempo_solas, construir_confianza_equipo_tiempo_solas
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "minimizar_impuesto_colaboracion_equipo|CONTINUA|madre=minimizar_impuesto_colaboracion_equipo|que añade el hijo a la madre"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "centrar_debate_ideas_fuera_egos|CONTINUA|madre=centrar_debate_ideas_fuera_egos|que añade el hijo a la madre"
+    --veredicto "centrar_debate_ideas_fuera_egos|REPITE|por que no añade procedimiento"
+    --veredicto "centrar_debate_ideas_fuera_egos|SANO|por que no son el mismo trabajo"
+    --veredicto "centrar_debate_ideas_fuera_egos|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "cuidarse_agotamiento_centro_rueda|CONTINUA|madre=cuidarse_agotamiento_centro_rueda|que añade el hijo a la madre"
+    --veredicto "cuidarse_agotamiento_centro_rueda|REPITE|por que no añade procedimiento"
+    --veredicto "cuidarse_agotamiento_centro_rueda|SANO|por que no son el mismo trabajo"
+    --veredicto "cuidarse_agotamiento_centro_rueda|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "construir_confianza_equipo_tiempo_solas|CONTINUA|madre=construir_confianza_equipo_tiempo_solas|que añade el hijo a la madre"
+    --veredicto "construir_confianza_equipo_tiempo_solas|REPITE|por que no añade procedimiento"
+    --veredicto "construir_confianza_equipo_tiempo_solas|SANO|por que no son el mismo trabajo"
+    --veredicto "construir_confianza_equipo_tiempo_solas|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "construir_confianza_equipo_tiempo_solas|CONTINUA|madre=construir_confianza_equipo_tiempo_solas|que añade el hijo a la madre"
+    --veredicto "construir_confianza_equipo_tiempo_solas|REPITE|por que no añade procedimiento"
+    --veredicto "construir_confianza_equipo_tiempo_solas|SANO|por que no son el mismo trabajo"
+    --veredicto "construir_confianza_equipo_tiempo_solas|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

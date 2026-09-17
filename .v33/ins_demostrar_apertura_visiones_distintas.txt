@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'demostrar_apertura_visiones_distintas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 356   (278 del grafo mas 78 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 279
+  censos escritos: denominaciones
