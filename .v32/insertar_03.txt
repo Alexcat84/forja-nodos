@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'debatir_decidir_asuntos_cultura_evitar_delegar'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (269 del grafo mas 79 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 270
+  censos escritos: denominaciones

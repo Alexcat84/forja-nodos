@@ -631,3 +631,13 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | pelear_proliferacion_reuniones_bloquear_ejecucion | otro_idioma | EXECUTION TIME | ingles | - |
 | 2026-09-16 | pelear_proliferacion_reuniones_bloquear_ejecucion | otro_idioma | Fight meeting proliferation | ingles | - |
 | 2026-09-16 | pelear_proliferacion_reuniones_bloquear_ejecucion | otro_idioma | Meeting-Free Zones | ingles | - |
+| 2026-09-16 | montar_tablero_kanban_medir_actividades | nombre_largo | El tablero kanban con sus tres columnas y sus notas adhesivas de color por persona o equipo, y las cinco cosas que el texto dice que consigue medir la actividad y ensenarla en publico | castellano | - |
+| 2026-09-16 | montar_tablero_kanban_medir_actividades | otro_idioma | KANBAN BOARDS | ingles | - |
+| 2026-09-16 | montar_tablero_kanban_medir_actividades | otro_idioma | Make activity and workflows visible | ingles | - |
+| 2026-09-16 | montar_tablero_kanban_medir_actividades | otro_idioma | To Do, In Progress, and Done | ingles | - |
+| 2026-09-16 | pasear_organizacion_hallar_problemas_pequenios | nombre_largo | La hora semanal de pasear como manera de escuchar hondo cuando eres jefe de jefes y no puedes tener reuniones a solas con cientos de personas, con las tres cosas para las que sirve enterarse de los problemas pequenios | castellano | - |
+| 2026-09-16 | pasear_organizacion_hallar_problemas_pequenios | otro_idioma | WALK AROUND | ingles | - |
+| 2026-09-16 | pasear_organizacion_hallar_problemas_pequenios | otro_idioma | Learn about small problems to prevent big ones | ingles | - |
+| 2026-09-16 | pasear_organizacion_hallar_problemas_pequenios | otro_idioma | Management by walking around | ingles | - |
+| 2026-09-16 | debatir_decidir_asuntos_cultura_evitar_delegar | nombre_largo | Los asuntos de cultura que el texto nombra uno a uno como los que se delegan por no gastar neuronas en ellos, con los dos sitios adonde va la cultura si se delegan o si nadie los decide | castellano | - |
+| 2026-09-16 | debatir_decidir_asuntos_cultura_evitar_delegar | otro_idioma | Debate and decide explicitly. Don't let things that pervert your culture just happen | ingles | - |

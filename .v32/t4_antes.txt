@@ -1,0 +1,12 @@
+LO QUE EL GRAFO TIENE, LEIDO HOY DE dataset/nodos.jsonl
+  recorrer_rueda_conscientemente_cultura_equipo -> nodos_siguientes: ['recorrer_rueda_hacer_cosas_equipo']
+  recorrer_rueda_hacer_cosas_equipo -> nodos_previos   : ['recorrer_rueda_conscientemente_cultura_equipo']
+  o sea: la MADRE es recorrer_rueda_conscientemente_cultura_equipo
+
+LO QUE SU resumen_teorico SIGUE DICIENDO, con el trozo pegado:
+   ... lo dice sin el nombre de la empresa. LA SENIAL BARATA DE MANUAL 3.5 SALE LIMPIA: el entregable no lleva ni un dato de ninguno de los siete casos. EL PAR QUE DECLARO YO ANTES DE QUE LO LEVANTE NADIE: recorrer_rueda_hacer_cosas_equipo, que sale de cap_07 lineas 65 a 77 y tiene 12 pasos, es la MADRE de este nodo. MI VEREDICTO ES CONTINUA CON ARISTA: la madre recorre la rueda sobre LAS DECISIONES del equipo y entrega una vuelta entera de la rueda dada;...
+
+LA LINEA 265 DE bitacora/VEREDICTOS.jsonl, que es lo que se adjudico:
+  arista: recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo
+  clase : None
+  razon : Adjudicado por la ACTA 25 3.3 con los dos ficheros impresos: la que NOMBRA es este candidato, en su paso 4 (e influye en tu cultura recorriendo a sabiendas los pasos de la rueda de hacer cosas), y el hijo es quien despliega esa rueda en sus doce pasos, que la madre no tiene. La madre recorre la rueda SOBRE SU PROPIA CULTURA y el hijo la recorre para DECIDIR Y EJECUTAR con el equipo: el entregable 

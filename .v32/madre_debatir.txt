@@ -1,0 +1,8 @@
+3.c COMPROBADO CONTRA EL DATO Y NO ACEPTADO DE PALABRA
+la madre por contenido: recorrer_rueda_conscientemente_cultura_equipo, 14 pasos
+
+BUSCO EN SUS 14 PASOS UNA MENCION DEL HIJO. Anclas: debat, decid, recursos humanos, delegar
+  pasos con alguna ancla: 0
+
+Y EN SU resumen_teorico:
+   ..., bajo el rotulo BE CONSCIOUS OF CULTURE y sus rotulos interiores. ES LA PIEZA P15 DE LA FRONTERA DE cap_11, Y SU TRAMO ES NO CONTIGUO: entre sus dos mitades viven las lineas 301 a 305, que son el rotulo Debate and decide explicitly y salen en su propio nodo, debatir_decidir_asuntos_cultura_evitar_delegar. Lo digo aqui para que la frontera se pueda comprobar. POR QUE ES PROCEDIMIENTO Y NO POSTURA, Y ES DONDE MAS CERCA HE E...

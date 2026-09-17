@@ -1,0 +1,22 @@
+EL VECINO, LEIDO ENTERO. SEDE: cuarentena/scott_radical_candor/repartir_notas_publicar_reparto_esperado.json (EN BANDEJA, no en el grafo)
+id                    : repartir_notas_publicar_reparto_esperado
+titulo                : Repartir las notas sin una distribucion rigida y publicar el reparto que esperas, para que la calibracion no se vuelva opaca
+dominio               : gestion_equipos
+escala_minima         : (no lo trae)
+estado                : vivo
+condiciones_activacion: Cuando tienes que decidir que reparto de notas espera tu empresa y si lo haces publico.
+entregable_esperado   : El reparto de notas que esperas decidido a partir de las consecuencias de cada nota, y publicado a la organizacion para que las calibraciones no se vuelvan opacas.
+fuentes               : [{'clave': 'scott_radical_candor', 'fecha': '2026-09-13'}]
+
+resumen: UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_14.md, unidad Bonus Chapter, titulo textual Bonus Chapter: A Radically Candid Performance Review. Sale de las lineas 143 a 151, que son la PIEZA P9 de la frontera de esta vuelta, 328 palabras, y es el elemento numero 7 de los trece que la cabeza nombra. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: el libro pone su propio inventario de OBJETOS con cifras propias, cinco por ciento, quince por ciento, de uno a cinco por ciento y cuarenta mas cuarenta, y cierra con una recomendacion de medio, hacer transparente el reparto esperado. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. P1, P2 y P3 salen de la linea 145; P4, P5, P6 y P7 de la 147; P8 de la 149; P9 de la 151. LAS CIFRAS SON DEL TEXTO Y VAN ADEMAS EN atribuciones, con su banda tal como el texto la escribe, roughly very roughly, porque una tasa s
+
+PASOS:
+   1. Ten delante la consideracion practica que el texto pone primera, y que no es menor: como repartes la tarta de la retribucion. Si vas a dar primas muy grandes a la gente que saca la nota alta, probablemente no te puedes permitir tener al cincuenta por ciento de la empresa en esa categoria.
+   2. Evita en general una distribucion demasiado rigida, por la razon que el texto da: puedes estar bendecido en un anio dado con un equipo excepcionalmente capaz, o maldito con un punado de gente haciendo un trabajo mediocre, y no quieres que una distribucion esperada te ciegue a la realidad.
+   3. Cuenta con lo que el texto dice que es lo mas importante en general: el proceso de calibracion.
+   4. Ten delante los porcentajes que la experiencia de la autora le da, y que ella misma marca como suyos: al menos un cinco por ciento de la gente probablemente necesita en cualquier momento dado el tipo de aviso fuerte que da la nota mas baja, y puede que a ti eso te parezca excesivamente duro para tu entorno, o no bastante duro.
+   5. Cuenta con lo que la nota alta significa en ese reparto: quieres dar premios desmesurados porque quieres retribuir con justicia a quien ha conseguido mas que los demas, y retenerlo. La autora ha encontrado que ese grupo es aproximadamente, y muy aproximadamente, un quince por ciento de un equipo.
+   6. Cuenta con que normalmente entre el uno y el cinco por ciento de una poblacion hace un trabajo de verdad excepcional, a quien quieres retener a toda costa. Identificar a esa gente es un ejercicio importante, y el texto dice que no hace falta crear una nota especial para ella.
+   7. Haz la cuenta que el texto hace con lo que queda: alrededor de un cuarenta por ciento de tu poblacion sacando la nota media y un cuarenta por ciento sacando la nota buena.
+   8. Decide tu las consecuencias de cada nota y, a partir de ahi, cual deberia ser el reparto, porque el texto dice expresamente que no sabe bastante de tu organizacion para decir si el reparto que describe es el correcto para ti.
+   9. Haz transparente a la organizacion el reparto que esperas ver, que es lo que el texto si recomienda, porque si no lo haces las calibraciones se vuelven opacas y excesivamente frustrantes.

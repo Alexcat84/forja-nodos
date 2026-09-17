@@ -35294,8 +35294,8 @@ presupuesta.
 |---:|---|---|
 | 1 | los registros de la `ACTA 30` | **CERRADA**, `Y.1` |
 | 2 | **BLOQUEANTE**: la celda tecleada dentro del instrumento, y la arista que se perdio por ella | **CERRADA**, `Y.2` |
-| 3 | cerrar `cap_11` en insercion: los tres que quedan, con sus dos aristas de caducidad | **ABIERTA** |
-| 4 | el `resumen_teorico` que dice lo contrario del grafo y de la `ACTA 25` | **ABIERTA** |
+| 3 | cerrar `cap_11` en insercion: los tres que quedan, con sus dos aristas de caducidad | **CERRADA**, `Y.3` |
+| 4 | el `resumen_teorico` que dice lo contrario del grafo y de la `ACTA 25` | **CERRADA**, `Y.4` |
 | 5 | la cola entera, recontada fila a fila contra el dato | **ABIERTA** |
 
 ## Y.1. **TAREA 1**: los registros de la `ACTA 30`, anexados sin rehacer sus medidas
@@ -35611,3 +35611,195 @@ linea**, asi que una linea mal apuntada no puede salir publicada como buena:
 **`0,00` por ciento sobre `25` pasos. EL FRENO DE FIDELIDAD NO SE ACTIVA**, y con esto `cap_11`
 cierra su relectura entera: `142` pasos en la vuelta 31 mas `25` hoy son **`167`**, que es
 exactamente el total que `.v31/orden_cap11.txt` publico para los `14` candidatos del capitulo.
+
+### Y.3.b. **LA TANDA, UNO POR VEZ Y EN EL ORDEN DEL LIBRO. CERO CARGAS MASIVAS**
+
+*`EXTRACTOR.md` 2: un nodo entra con `python forja.py insertar`, **uno por vez**, y no existe la
+carga masiva. `EXTRACTOR.md` 16: el informe de un candidato suelto va **en el mismo acto** en que se
+escribe, y aqui va **antes de cada insercion**, que es lo que la vuelta 31 hizo y salio bien.*
+
+<!-- TALLADO: script=.v32/tanda.py salida=.v32/tanda_cap11.txt -->
+
+| # | id | informe en seco | el grafo tras insertarlo | vive hoy | archivado | arista de cabeza |
+|---:|---|---|---:|---|---|---|
+| 12 | `montar_tablero_kanban_medir_actividades` | **BLOQUEARIA**, 1 vecino | 268 | **SI** | **SI** | **CABLEADA hoy** |
+| 13 | `pasear_organizacion_hallar_problemas_pequenios` | **ENTRARIA sin leer nada**, 0 vecinos | 269 | **SI** | **SI** | **CABLEADA hoy** |
+| 14 | `debatir_decidir_asuntos_cultura_evitar_delegar` | **ENTRARIA sin leer nada**, 0 vecinos | 270 | **SI** | **SI** | **no lleva, y se dice por que** |
+
+<!-- TALLADO: parcial salida=.v32/tanda_cap11.txt -->
+
+| | |
+|---|---:|
+| corridas de `forja.py informe` de un candidato suelto | **3** |
+| corridas de `forja.py insertar`, una por candidato | **3** |
+| cargas masivas | **0** |
+| nodos que entraron | **3** |
+| pasos que entraron con ellos | **25** |
+| archivados en `cuarentena/_insertados/scott_radical_candor/` | **3** |
+| aristas de cabeza declaradas en el acto | **2** |
+
+**LOS DOS SALDOS QUE EL ENCARGO PREDIJO ME SALEN AL DIGITO** (`3.b`): el kanban da `BLOQUEARIA` con
+`1` vecino que **no es la cabeza**, y el paseo da `0` vecinos y `ENTRARIA sin leer nada`. **Y el
+tercero, que el encargo no cronometro, tambien entro sin leer nada.**
+
+**EL RELOJ DE LA ADUANA, CRONOMETRADO POR MI EN ESTA VUELTA:** la primera corrida en seco tardo
+**`189,9` segundos** (`3m09,9s` de `time`), **dentro de la banda de `109` a `321` que publique en la
+vuelta 31 y al lado de los `192` que el auditor midio**. Seis corridas a ese precio son el coste de
+la tanda, y por eso caben tres candidatos y no quince.
+
+### Y.3.c. **EL VECINO DEL KANBAN, LEIDO ANTES DE ESCRIBIR EL VEREDICTO** (`EXTRACTOR.md` 2)
+
+*Las señales ordenan, nunca deciden (manual principio 4). Asi que el vecino se abre entero antes de
+que se escriba una sola palabra de veredicto, y **este vivia en bandeja, no en el grafo**, que es
+justo lo que `D.38.5` anadio a la poblacion del barrido.*
+
+<!-- TALLADO: parcial salida=.v32/vecino_01.txt -->
+
+    EL VECINO, LEIDO ENTERO. SEDE: cuarentena/scott_radical_candor/repartir_notas_publicar_reparto_esperado.json (EN BANDEJA, no en el grafo)
+    titulo                : Repartir las notas sin una distribucion rigida y publicar el reparto que esperas, para que la calibracion no se vuelva opaca
+    resumen: UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_14.md, unidad Bonus Chapter ... Sale de las lineas 143 a 151
+
+**EL VEREDICTO ES `SANO`, Y LA RAZON ESTA EN `bitacora/VEREDICTOS.jsonl`:** ni el mismo capitulo
+(`cap_11` contra `cap_14`), ni el mismo objeto (un tablero de tres columnas contra el reparto de
+notas de la evaluacion), ni el mismo entregable.
+
+> ### **Y LO QUE ESTE PAR ENSENIA, QUE ME LO ENSENIA CONTRA MI: LA SENIAL LEVANTO MI FORMULA, NO MI CONTENIDO**
+>
+> El par que `paso_contra_nodo 0,607` levanta es **mi paso `4` contra su paso `3`**:
+>
+> | | |
+> |---|---|
+> | mi paso `4` | *Usalo para **lo que el texto dice que** sirve al momento: ver rapidamente quien es el cuello de botella* |
+> | su paso `3` | *Cuenta con **lo que el texto dice que** es lo mas importante en general: el proceso de calibracion* |
+>
+> **Lo que comparten es el andamio con el que yo redacto**, no el objeto. Las otras dos señales lo
+> confirman: `similitud_texto 0,234` y `familia_id 0,000`, **las dos muy por debajo de su umbral**.
+>
+> **NO PROPONGO MOVER NINGUN UMBRAL** (`EXTRACTOR.md` 11: ninguna vuelta mueve un umbral, y una cola
+> falsa por candidato de `2,4` es el precio medido de la señal 3). **Lo que apunto es otra cosa, y es
+> mia:** si mis pasos empiezan todos por la misma formula, **estoy fabricando cola de lectura con mi
+> estilo**. Va como propuesta a `Y.7`, no como cambio.
+
+### Y.3.d. **LAS DOS ARISTAS CON FECHA DE CADUCIDAD, DECLARADAS EN EL ACTO** (`TAREA 3.b`)
+
+**La primera, en el acto siguiente a que el kanban pasara la puerta, sin commit de por medio:**
+
+<!-- TALLADO: parcial salida=.v32/arista_t3_kanban.txt -->
+
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: decidir_quien_comunica_cada_cuanto
+      hijo : montar_tablero_kanban_medir_actividades
+      paso citado de la madre: 6
+      señales del par: familia_id 0.0, paso_contra_nodo 0.418, similitud_texto 0.211
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: decidir_quien_comunica_cada_cuanto > montar_tablero_kanban_medir_actividades
+
+**Y la segunda, igual, tras el paseo:**
+
+<!-- TALLADO: parcial salida=.v32/arista_t3_paseo.txt -->
+
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: decidir_quien_comunica_cada_cuanto
+      hijo : pasear_organizacion_hallar_problemas_pequenios
+      paso citado de la madre: 6
+      señales del par: familia_id 0.0, paso_contra_nodo 0.414, similitud_texto 0.299
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: decidir_quien_comunica_cada_cuanto > pasear_organizacion_hallar_problemas_pequenios
+
+**SEIS SEÑALES Y NINGUNA LLEGA A SU UMBRAL**, en las dos declaraciones. **Es `D.19` otra vez**: si
+hubieran entrado sin declaracion, **ninguna corrida futura habria vuelto a poner a estos dos junto a
+su cabeza**, y por eso el encargo las puso con fecha de caducidad y no en cola.
+
+### Y.3.e. **`debatir_decidir` NO LLEVA ARISTA DE CABEZA, Y LO COMPRUEBO EN VEZ DE ACEPTARLO** (`TAREA 3.c`)
+
+*El encargo lo dice y lo razona. Pero `EXTRACTOR.md` 5 manda medirlo, no copiarlo, asi que abri los
+catorce pasos de la madre por contenido y busque al hijo dentro.*
+
+<!-- TALLADO: parcial salida=.v32/madre_debatir.txt -->
+
+    3.c COMPROBADO CONTRA EL DATO Y NO ACEPTADO DE PALABRA
+    la madre por contenido: recorrer_rueda_conscientemente_cultura_equipo, 14 pasos
+
+    BUSCO EN SUS 14 PASOS UNA MENCION DEL HIJO. Anclas: debat, decid, recursos humanos, delegar
+      pasos con alguna ancla: 0
+
+    Y EN SU resumen_teorico:
+       ...entre sus dos mitades viven las lineas 301 a 305, que son el rotulo Debate and decide
+       explicitly y salen en su propio nodo, debatir_decidir_asuntos_cultura_evitar_delegar...
+
+**`0` de `14` pasos lo nombran, y el unico sitio donde aparece es el `resumen_teorico`.** El encargo
+tiene razon al digito: **`D.37` y `D.29` piden citar el paso, y no hay paso que citar.** No se
+declara, **y tampoco se declara hacia la cabeza**, porque `debatir_decidir` **no es uno de los diez
+rotulos**: es un rotulo interior del decimo.
+
+> **Y ES EL MISMO CORTE QUE EL ROTULO `7`, QUE LO DIGO PORQUE LOS DOS JUNTOS HACEN DOCTRINA:** en los
+> dos casos **el emparejamiento existe y el texto no lo escribe en un paso**. En uno lo pone la
+> posicion en una lista; en el otro, un resumen. **Ninguna de las dos es una cita de paso, y las dos
+> se quedan fuera.** Lo que cambia hoy es que **el instrumento las dice** en vez de dejarlas en
+> blanco.
+
+### Y.3.f. **`cap_11` CIERRA EN INSERCION: `14` DE `14`, Y LA CABEZA QUEDA CON SUS DIEZ ROTULOS EN EL GRAFO**
+
+<!-- TALLADO: parcial salida=.v32/cabeza_cierre.txt -->
+
+    | rotulos que el indice enumera | **10** |
+    | **de ellos, con nodo dentro del grafo hoy** | **10** |
+    | **de ellos, con la arista cabeza a parte cableada** | **9** |
+    | de ellos, con su nodo todavia en bandeja | **0** |
+    | de ellos, sin nodo ninguno | **0** |
+    | **rotulos donde las dos vias de casado NO coinciden** | **1** |
+    | hijos que la cabeza declara en `nodos_siguientes` | **9** |
+
+**`10` de `10` rotulos con nodo en el grafo, `9` cableados y `1` sin cablear con su razon escrita.**
+La cabeza abrio la vuelta con `6` hijos y cierra con `9`: **uno de la `TAREA 2.d` y dos de la
+`TAREA 3.b`.** **El decimo rotulo que no se cablea es el `7`**, y su motivo esta en `Y.2.d`.
+
+## Y.4. **TAREA 4**: el `resumen_teorico` que decia lo contrario del grafo y de la `ACTA 25`
+
+*No es caida mia ni de esta tanda: **viene de la vuelta 22** y ninguna posterior la toco. La cazo el
+auditor recontando la cola de aristas (`ACTA 30` `4.3`).*
+
+**LO QUE MEDI YO ANTES DE TOCAR NADA, con los tres textos delante:**
+
+<!-- TALLADO: parcial salida=.v32/t4_antes.txt -->
+
+    LO QUE EL GRAFO TIENE, LEIDO HOY DE dataset/nodos.jsonl
+      recorrer_rueda_conscientemente_cultura_equipo -> nodos_siguientes: ['recorrer_rueda_hacer_cosas_equipo']
+      recorrer_rueda_hacer_cosas_equipo -> nodos_previos   : ['recorrer_rueda_conscientemente_cultura_equipo']
+      o sea: la MADRE es recorrer_rueda_conscientemente_cultura_equipo
+
+    LO QUE SU resumen_teorico SIGUE DICIENDO, con el trozo pegado:
+       ...EL PAR QUE DECLARO YO ANTES DE QUE LO LEVANTE NADIE: recorrer_rueda_hacer_cosas_equipo,
+       que sale de cap_07 lineas 65 a 77 y tiene 12 pasos, es la MADRE de este nodo...
+
+    LA LINEA 265 DE bitacora/VEREDICTOS.jsonl, que es lo que se adjudico:
+      arista: recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo
+
+**LOS TRES TEXTOS CUADRAN CON EL ENCARGO AL DIGITO.** El dato y la bitacora dicen lo mismo y la frase
+del resumen dice lo contrario. **`D.13`: gana el mas reciente y el perdedor se corrige sin borrarse.**
+
+<!-- TALLADO: parcial salida=.v32/t4_corregir.txt -->
+
+    CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+      nodo : recorrer_rueda_conscientemente_cultura_equipo
+      campo: resumen_teorico
+      el texto viejo SIGUE ENTERO: 3312 caracteres, ninguno borrado
+      se aniaden 991 caracteres al final
+      huella antes  : 51c014343239ec45
+      huella despues: f2039c320fabe9f9
+
+    GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: recorrer_rueda_conscientemente_cultura_equipo
+      razon en bitacora/VEREDICTOS.jsonl
+
+**Y LO COMPRUEBO DESPUES, porque una correccion que borra al perdedor no es una correccion:**
+
+<!-- TALLADO: parcial salida=.v32/t4_despues.txt -->
+
+    EL RESUMEN, DESPUES: 4303 caracteres
+      la frase vieja sigue entera: True
+      la correccion esta al final: True
+
+**`3312` a `4303` caracteres, cero borrados, y la frase vieja sigue donde estaba.** La via existia y
+no hubo que construirla, que es lo que el encargo decia y lo que la moratoria manda.
