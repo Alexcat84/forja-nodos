@@ -423,12 +423,6 @@ def arreglar(ruta_reporte=None, regenerar=True, raiz=None):
 # ---------------------------------------------------------------------------
 
 def texto_informe(dictamenes, estricto=False):
-    if not os.path.exists(RUTA_REPORTE):
-        return ("TALLADO SIN OBJETO: docs/loop/REPORTE.md no esta en el arbol." + "\n"
-                "La fase ciega lo retira A PROPOSITO (D.34.2), asi que no hay ninguna"
-                " tabla que tallar" + "\n" + "y esto NO es un fallo. Las demas guardas"
-                " siguen corriendo: el gate, el barrido" + "\n" + "y el censo no"
-                " dependen de este fichero.")
     lineas = []
     difieren = [d for d in dictamenes if d["estado"] == "DIFIERE"]
     sin = [d for d in dictamenes if d["estado"] == "SIN COMPROBAR"]
@@ -533,6 +527,15 @@ def main(argumentos=None):
         print("CORRECCION DECLARADA: escribe al lado de la tabla de que caida sale "
               "y con que orden se regenero. Una correccion silenciosa vuelve a ser "
               "una tabla sin origen.")
+        return 0
+    # SI NINGUNA SEDE ESTA EN EL ARBOL, NO HAY NADA QUE TALLAR Y NO ES UN FALLO:
+    # la fase ciega retira el reporte a proposito (D.34.2). La comprobacion va AQUI
+    # y no en `texto_informe`, porque ese recibe los dictamenes de quien sea (una
+    # prueba en su taller, por ejemplo) y no tiene por que mirar el arbol de verdad.
+    if not any(os.path.exists(d) for d in DOCUMENTOS):
+        print("TALLADO SIN OBJETO: ninguna sede de tablas esta en el arbol.")
+        print("La fase ciega retira docs/loop/REPORTE.md A PROPOSITO (D.34.2), asi que")
+        print("no hay ninguna tabla que tallar y esto NO es un fallo.")
         return 0
     dictamenes = revisar_todos(regenerar=regenerar)
     print(texto_informe(dictamenes, estricto))

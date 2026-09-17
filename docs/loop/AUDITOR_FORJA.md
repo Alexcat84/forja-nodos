@@ -274,6 +274,33 @@ suben a la mitad de velocidad.
 **Se cuenta aparte de la del extractor**: una racha mezclada no dice de quien es el
 problema. **Y no se reinicia sola**, como ninguna.
 
+
+> ## **MODO AUSTERO, VIGENTE HASTA QUE SE CIERRE EL MUNDO 11** (`D.47`, 16 sep 2026)
+>
+> > **EL AUSTERO RECORTA TINTA, NO CONTROL.**
+>
+> | encoge | queda INTACTO |
+> |---|---|
+> | **nada que el registro ya diga**: si el `loop.log` lo registro o el acta anterior lo adjudico, **no se repite** | **la cifra con su instrumento al lado** (`D.38.3`) |
+> | **cifras talladas**, sin parrafo de acompaniamiento | **la tabla pegada de su fichero** (`D.41`) |
+> | **los discutibles por numero y linea**, sin reabrir el argumento | **la ruta que sostiene lo que dice** (`D.42`) |
+> | **los lotes al techo de candidatos**, no por encima | **las guardas de dato: cerrojo, `D.44`, la aduana entera y la fidelidad `D.30`** |
+> | **cero instrumentos nuevos**, salvo caida **de DATO** con su cita | |
+>
+> **UN REPORTE MAS CORTO NO ES UN REPORTE CON MENOS PRUEBA.** Lo que se quita es la
+> repeticion. **Y el motivo esta medido:** un registro de treinta mil lineas no es un
+> registro mejor, es uno que nadie relee, y lo que se pierde ahi no es la cifra: **es el
+> encargo que no llego.**
+
+> ### **Y EN PARALELO, UNA PREGUNTA DE DOCTRINA ES PARADA** (`D.45`)
+>
+> Mientras corran frentes en paralelo, **ninguna sesion toca `src/`, el banco, el arnes ni
+> los protocolos.** Tres sesiones que corrigen la misma regla a la vez **producen tres
+> doctrinas**, y el banco es una sede unica igual que el dataset.
+>
+> **Ni siquiera con una caida de dato**: se declara, **se para y sube al fundador**.
+> Arreglar `src/` en tres ramas a la vez es justo lo que la cosecha no sabria fundir.
+
 ## 2. DISCIPLINA DEL DICTADO (tus propios limites)
 
 - **Nada se afirma sin haberse consultado EN ESTA vuelta:** estados, cifras,

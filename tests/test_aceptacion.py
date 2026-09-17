@@ -2573,6 +2573,23 @@ class PruebaCensoDeRutas(BaseForja):
             self.assertIn("docs/loop/" + fichero, exentas,
                           "D.34.2 retira %s y el censo no lo exime" % fichero)
 
+    def test_un_artefacto_de_maquina_esta_exento_POR_SU_FAMILIA(self):
+        """`D.33` lo resolvio por PATRON el 12 sep, y el censo usa la misma funcion.
+
+        **Tercera vez que aparece la misma leccion.** Meti en `config/` los cuatro
+        ficheros que `D.34.2` retira y el hook me cazo con un quinto,
+        `docs/loop/ultimo_apertura.json`, **que esta vacio unos segundos mientras el
+        arnes lo escribe.** Un nombre que hay que acordarse de anadir protege hasta
+        el dia en que nace otro fichero.
+        """
+        from scripts import censar_rutas
+        self.assertTrue(censar_rutas._es_artefacto("docs/loop/ultimo_apertura.json"))
+        self.assertTrue(censar_rutas._es_artefacto("docs/loop/ultimo_manana.json"))
+        self.assertTrue(censar_rutas._es_artefacto("docs/loop/loop.log"))
+        # CASO POSITIVO: la prosa de la casa NO es un artefacto, ni en esa carpeta.
+        self.assertFalse(censar_rutas._es_artefacto("docs/loop/ACTA_AUDITOR.md"))
+        self.assertFalse(censar_rutas._es_artefacto("docs/ultimo_disfrazado.json"))
+
     def test_caso_positivo_otro_fichero_ausente_sigue_cayendo(self):
         """La exencion es de los cuatro que D.34.2 nombra, no de todo lo que falte."""
         caidas, _pasan = self._censar(self.TABLA % ".v29/no_existe.txt")

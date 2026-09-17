@@ -76,6 +76,31 @@ EXTENSIONES = (".txt", ".out", ".json", ".jsonl", ".py", ".md", ".log", ".sh")
 NO_ES_RUTA = re.compile(r"[<>!$\"'()]")
 
 
+def _es_artefacto(ruta):
+    """Cierto si es un artefacto de maquina (D.33), exento POR SU FAMILIA.
+
+    ESTA ES LA TERCERA VEZ QUE LA MISMA LECCION APARECE, y la escribo aqui para no
+    volver a aprenderla: **arregle por LISTA lo que habia que arreglar por PATRON.**
+    Meti en `config/` los cuatro ficheros que `D.34.2` retira, y el hook me cazo con
+    un quinto: `docs/loop/ultimo_apertura.json`, **que esta vacio unos segundos
+    mientras el arnes lo escribe**, no esta en esa lista, y tumbo el commit.
+    
+    `D.33` ya resolvio esto el 12 sep para el barrido de guiones: **la exencion de
+    los artefactos de maquina es un PATRON, no un inventario**, porque un nombre que
+    hay que acordarse de anadir protege hasta el dia en que nace otro fichero.
+    El censo usa **la misma funcion**, no una copia.
+    """
+    import sys as _sys
+    if RAIZ not in _sys.path:
+        _sys.path.insert(0, RAIZ)
+    try:
+        from src import comun
+    except Exception:
+        return False
+    partes = ruta.replace(chr(92), "/").split("/")
+    return comun.es_artefacto_de_maquina(partes[-1], "/".join(partes[:-1]))
+
+
 def _sedes_exentas():
     try:
         datos = json.loads(io.open(RUTA_SEDES, encoding="utf-8").read())
@@ -278,7 +303,7 @@ def censar(documentos=None, raiz=None):
                     continue
 
                 # (b) RUTA VACIA, o que no esta
-                if ruta in exentas:
+                if ruta in exentas or _es_artefacto(ruta):
                     sitio_entero["forma"] = "vacia por protocolo (config/)"
                     pasan.append(sitio_entero)
                     continue

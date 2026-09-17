@@ -450,6 +450,24 @@ espera que la cola de lectura sea larga**: es el precio de un capitulo
 monotematico, no un fallo de la aduana. Lo que NO se hace es subir un umbral
 para que la cola se acorte.
 
+
+> ## **MODO AUSTERO, VIGENTE HASTA QUE SE CIERRE EL MUNDO 11** (`D.47`, 16 sep 2026)
+>
+> > **EL AUSTERO RECORTA TINTA, NO CONTROL.**
+>
+> | encoge | queda INTACTO |
+> |---|---|
+> | **nada que el registro ya diga**: si el `loop.log` lo registro o el acta anterior lo adjudico, **no se repite** | **la cifra con su instrumento al lado** (`D.38.3`) |
+> | **cifras talladas**, sin parrafo de acompaniamiento | **la tabla pegada de su fichero** (`D.41`) |
+> | **los discutibles por numero y linea**, sin reabrir el argumento | **la ruta que sostiene lo que dice** (`D.42`) |
+> | **los lotes al techo de candidatos**, no por encima | **las guardas de dato: cerrojo, `D.44`, la aduana entera y la fidelidad `D.30`** |
+> | **cero instrumentos nuevos**, salvo caida **de DATO** con su cita | |
+>
+> **UN REPORTE MAS CORTO NO ES UN REPORTE CON MENOS PRUEBA.** Lo que se quita es la
+> repeticion. **Y el motivo esta medido:** un registro de treinta mil lineas no es un
+> registro mejor, es uno que nadie relee, y lo que se pierde ahi no es la cifra: **es el
+> encargo que no llego.**
+
 ## 13. LA MORATORIA DE MAQUINARIA
 
 *Regla madre: My-idea, decision del fundador del 7 sep 2026, la parada llamada

@@ -177,6 +177,7 @@ correr() { # taller, y el resto son variables de entorno ya exportadas
   ( cd "$1" && MAX_VUELTAS="${MAX_VUELTAS:-1}" \
       UMBRAL_SEGUNDOS=1 ESPERA_SEGUNDOS=1 MAX_INTENTOS=2 \
       CLAUDE_BIN="$1/bin/claude" RAMA="${RAMA:-bucle}" \
+      RAMA_DE_INSERCION="${RAMA_DE_INSERCION:-${RAMA:-bucle}}" \
       bash orquestador_forja.sh 2>&1 )
 }
 
