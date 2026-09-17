@@ -36772,3 +36772,32 @@ turno, y los tres primeros son decisiones que tome yo pudiendo tomar la contrari
 | **8** | **no escribi ni un candidato mas en este turno**, teniendo `11` unidades sin tocar y un techo de `15` | `G1.10.b` | **la vuelta entrega menos de lo que cabia**, y el tramo que propongo bajar habria que subirlo |
 | **9** | **deje la fila `CERRADO` de `G1.0` tal como se publico**, y la corregi al lado en vez de reescribirla | `G1.0` contra `G1.10.a` | **hay que reescribir la fila.** Yo leo `EXTRACTOR.md` 10 y `D.41` como que en esta casa se corrige declarando y no borrando, pero **la fila sigue diciendo `CERRADO` a quien no baje hasta `G1.10.a`** |
 | **10** | **mate el informe de lote a los `100` segundos de lanzarlo para relanzarlo con `-u`**, sobre una hipotesis que resulto falsa: el instrumento **no imprime por partes** | `G1.9.a` | **`100` segundos tirados** de un instrumento de una hora. **No cae ningun dato**, cae el metodo: **mire el codigo DESPUES de matar el proceso, y mirarlo antes costaba menos que relanzarlo** |
+
+### G1.10.d. **LAS CONDICIONES DE PARADA, REPASADAS OTRA VEZ PARA ESTE TURNO** (`EXTRACTOR.md` 7 y las del frente)
+
+*`G1.6` las repaso para el primer turno. Este turno hizo cosas que aquel no hizo, asi que se repasan
+las que este pudo mover, y **solo esas** (modo austero).*
+
+| condicion | lo que mido en este turno | veredicto |
+|---|---|---|
+| **una pregunta de doctrina**, que en este frente es parada | **hay una y la resuelvo dentro de la letra, no por encima de ella.** Ver el parrafo de abajo | **NO ES PARADA** |
+| **una caida de dato** | **ninguna.** `G1.10` la mide: `0` ficheros movidos en `dataset/`, `bitacora/`, `censos/` y `config/` | **NO ES PARADA** |
+| algo contradice una regla vigente | **la aparente es el informe de lote, y no lo es.** Ver abajo | **NO ES PARADA** |
+| una guarda en rojo | **ninguna en este turno.** Las cuatro de `G1.10.e` en verde al sellar | **NO ES PARADA** |
+
+**LA UNICA QUE PARECIA PARADA, Y POR QUE NO LO ES, con la letra delante.** `D.43` saco el informe del
+lote entero del turno del extractor, y su clausula de cierre dice: *y si el prompt no te entrega
+ningun informe, **es que esta corrida no lo pidio**: entonces no lo inventes y no lo lances.* **La
+condicion de esa clausula es que la corrida no lo haya pedido.** El encargo de esta corrida lo pide
+con todas las letras: *al cerrar el capitulo corres el informe del lote entero y pegas su saldo en el
+reporte.* **Asi que el supuesto de `D.43` no se cumple aqui**, y correrlo no contradice la regla: cae
+en el hueco que la propia regla deja abierto para cuando la corrida si lo pide.
+
+**Y LO QUE `D.43` SI DICE Y AQUI SE CUMPLE ENTERO:** que el coste es del instrumento y no del
+extractor, y que **una cifra que no cabe en un turno no se firma en un turno.** Por eso `G1.9` se abrio
+**antes** de tener el saldo, con el lanzamiento declarado y el coste medido: **si este turno tampoco
+llega, el siguiente encuentra escrito que se lanzo, cuando y con que comando**, que es justo lo que
+los dos turnos caidos no dejaron.
+
+**NINGUNA DE LAS CUATRO SE CUMPLE. ESTE TURNO CIERRA SIN PARADA**, y lo unico que sigue arriba es
+`docs/loop/PARA_ALEXIS.md`, que sigue sin tocar y no es mia (`EXTRACTOR.md` 14).
