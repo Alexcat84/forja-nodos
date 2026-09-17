@@ -36405,3 +36405,115 @@ arista es automatica y **las cuatro llevan razon escrita**, que es lo que `D.29`
 **Y UNA DE LAS CUATRO LA CONFIRMO LA ADUANA SIN SABERLO:** el informe del candidato `4` levanto
 precisamente **su paso `5` contra el paso `9` de su madre**, que son los dos pasos de los desfases.
 La senal ordeno; la arista la declara la lectura.
+
+
+---
+
+# VUELTA 2 DEL FRENTE `grove_high_output`, **el libro sigue por `cap_03`**: la frontera de la unidad, el tramo minado con la aduana en el acto, la fidelidad `D.30` y el saldo del lote entero (lote 7, `grove_high_output`)
+
+*`docs/loop/PROMPT_SIGUIENTE.md` esta **VACIO** (`0` bytes, medido abajo): el auditor lo dejo asi al
+escribir `PARA_ALEXIS.md` y detener el bucle. **El encargo de esta vuelta lo da el fundador de viva
+voz al relanzarme**, y dice cinco cosas: `MODO_INSERCION=cuarentena`, todo candidato a
+`cuarentena/<libro>/<id>.json` con su informe EN SECO en el mismo acto, **cero
+`python forja.py insertar`**, el informe del lote entero al cerrar el capitulo con su saldo pegado, y
+el reporte abierto al empezar y crecido por anexion con los discutibles marcados antes de saber si
+acierto. Frente de extraccion en paralelo (`D.45`), rama `extraccion-grove_high_output`. **Modo
+austero** (`D.47`).*
+
+## AA.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION DE EXTRACCION (`EXTRACTOR.md` 4)
+
+La primera operacion de la vuelta es el commit de lo pendiente (`EXTRACTOR.md` 1.1), asi que esta
+tabla se lee **justo despues de ese commit y antes de la `TAREA 1`**. **El commit que cita es ya
+estado intermedio y va rotulado como tal en su propia celda.**
+
+<!-- TALLADO: script=.v2g/apertura.py salida=.v2g/apertura_tabla.txt -->
+
+| pieza, con el rotulo de lo que se conto | valor | de donde sale |
+|---|---:|---|
+| rama | `extraccion-grove_high_output` | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno, ya intermedio | `a641846` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl`, el grafo entero | **270** | `dataset/nodos.jsonl` |
+| aristas por `nodos_siguientes`, sobre el grafo entero | **105** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos`, sobre el grafo entero | **105** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl`, el fichero entero | **396** | `bitacora/VEREDICTOS.jsonl` |
+| de esos veredictos, con `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| unidades del libro `grove_high_output`, las 18 del fichero | **18** | PATRON: `fuentes/grove_high_output/cap_*.md` |
+| palabras de cuerpo de esas 18 unidades, de `L8` en adelante | **64.372** | PATRON: `fuentes/grove_high_output/cap_*.md` |
+| candidatos en bandeja de ESTE libro, escritos por la vuelta 1 | **8** | PATRON: `cuarentena/grove_high_output/*.json` |
+| pasos escritos en esos candidatos de ESTE libro | **57** | PATRON: `cuarentena/grove_high_output/*.json` |
+| ficheros `.json` en TODAS las bandejas, contados a ojo | **249** | PATRON: `cuarentena/*/*.json` |
+| de esos ficheros, los que la ADUANA admite al barrido | **86** | `src/aduana.py`, `poblacion_de_bandejas()` |
+| POBLACION QUE VERA CADA INFORME MIO: grafo mas bandejas admitidas | **356** | `dataset/nodos.jsonl` mas `src/aduana.py`, `poblacion_de_bandejas()` |
+
+### AA.0.a. **EL REMEDIO BLOQUEANTE QUE HEREDO, APLICADO EN LA PRIMERA TABLA QUE PUBLICO**
+
+`PARA_ALEXIS.md` 4, ultimo bloque, deja encargado a la vuelta que retome, sin decision del fundador
+de por medio, que **toda cifra de poblacion y toda cifra de `PASOS INVENTADOS` se publique con el
+rotulo de la poblacion que el instrumento MIDIO.** Nace de la caida que paro el bucle: `167` pasos
+rotulados *en el grafo* y *capitulo entero* cuando eran *los `14` candidatos de dos tramos*.
+
+**ASI QUE EN LA TABLA DE ARRIBA NINGUNA FILA DICE SOLO SU NUMERO:** cada una dice sobre que conjunto
+se conto, y las tres poblaciones que se parecen van separadas a proposito, porque **`249`, `86` y
+`356` son tres cosas distintas** y confundirlas es exactamente la especie que paro el bucle.
+
+<!-- TALLADO: parcial salida=.v2g/apertura_tabla.txt -->
+
+      REPARTO DE LA POBLACION DE BANDEJAS, con su reparto (D.38.5)
+        grove_high_output               8
+        marquet_turn_the_ship           3
+        scott_radical_candor           75
+        FUERA DEL BARRIDO                163   (cuarentena/ensayo_referencia_163/,
+                                              clave quality_is_free_the, no canonica)
+      REPARTO DE MI PROPIA BANDEJA POR UNIDAD DE ORIGEN, leido del resumen_teorico
+        cap_01                          1
+        cap_02                          7
+        SIN MINAR TODAVIA                 16 unidades de las 18
+
+**LOS `163` DE `cuarentena/ensayo_referencia_163/` NO ENTRAN AL BARRIDO** porque su clave
+`quality_is_free_the` no esta en `fuentes/FUENTES_CANONICAS.json` (`src/aduana.py`,
+`poblacion_de_bandejas()`, filtro `_fuentes_canonicas`). **Es la misma lectura que la vuelta 1
+publico en la apertura que su propio commit borro, y la misma que el auditor reconocio haber medido
+mal en su apertura sellada** (`ACTA 31` `7.1`, `511` contra `348`).
+
+### AA.0.b. **ESTA VUELTA TAMPOCO TRAE SALDO DE LOTE SELLADO NI COLA SELLADA** (`D.43`)
+
+<!-- TALLADO: parcial salida=.v2g/entrega_arnes.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ ls docs/loop/ | grep -i -c -E "cola|vecin"
+      0
+    $ wc -c docs/loop/PROMPT_SIGUIENTE.md
+      0 docs/loop/PROMPT_SIGUIENTE.md
+
+**NI INFORME DE LOTE SELLADO NI COLA DE VECINOS SELLADA**, asi que no se citan por sello. **El
+informe de candidato sigue siendo mio y va en el mismo acto de escribirlo** (`EXTRACTOR.md` 16), y
+**el del lote entero lo corre esta vuelta por orden expresa del fundador al relanzarme**, que es
+quien puede darla (`D.43`: *si el prompt no te entrega ninguno, no lo inventes y no lo lances*; aqui
+si hay quien lo ordena).
+
+## AA.0.c. **LO QUE ME ENCUENTRO AL ABRIR, Y QUE NO ARREGLO YO** (`EXTRACTOR.md` 7)
+
+**LA VUELTA 1 DE ESTE FRENTE CERRO SUS TRES TAREAS Y MURIO ANTES DE PUBLICAR SU CIERRE.** El arnes
+lo registra: `extractor: fallo instantaneo (probable limite de uso), 5505s`. En el arbol quedaron sus
+guardas y sus cuentas de cierre ya corridas, y **viajan en el commit `a641846` de esta vuelta**, sin
+que yo las publique como cierre suyo: **el cierre de una vuelta se mide al cierre de esa vuelta**
+(`EXTRACTOR.md` 4) y esa ya no esta abierta.
+
+**Y EL BORRADO DE SU TITULO, SU APERTURA Y SU ESQUELETO NO LO REPONGO.** Es la parada `2.1` de
+`PARA_ALEXIS.md`, ya escalada al fundador como **doctrina nueva sin casillero**, y su decision `3`
+esta pendiente. `EXTRACTOR.md` 7 manda escribirlo y **no arreglarlo yo**. Lo escribo aqui y sigo.
+
+## AA.SKEL. LAS CINCO TAREAS DE ESTA VUELTA, CON SU FILA VACIA HASTA QUE CIERREN (`EXTRACTOR.md` 3)
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | la frontera de `cap_03`, cerrada contra el cuerpo, con el techo por delante | **ABIERTA** |
+| 2 | minar `cap_03` un candidato por vez, con la aduana EN SECO en el mismo acto | **ABIERTA** |
+| 3 | la fidelidad `D.30` paso a paso, `PASOS INVENTADOS` fila por unidad mas total | **ABIERTA** |
+| 4 | las aristas que levante mi lectura y no levanto ninguna senal | **ABIERTA** |
+| 5 | el informe del lote ENTERO de `cuarentena/grove_high_output` y su saldo pegado | **ABIERTA** |
+
+**CINCO TAREAS, QUE ES EL TOPE** (`EXTRACTOR.md` 1.3). **Y NINGUNA INSERCION EN NINGUNA DE LAS
+CINCO** (`D.45`, y la orden expresa del fundador al relanzarme).
