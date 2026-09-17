@@ -40,6 +40,7 @@ sys.path.insert(0, RAIZ)
 from src import comun, credito, tablero  # noqa: E402
 
 RUTA_ENCARGO = os.path.join(RAIZ, "docs", "loop", "PROMPT_SIGUIENTE.md")
+RUTA_PARADA = os.path.join(RAIZ, "docs", "loop", "PARA_ALEXIS.md")
 
 # La declaracion, con la decoracion que esta casa escribe: negrita, cita, comillas.
 DECLARACION = re.compile(
@@ -56,12 +57,36 @@ def libro_declarado(texto=None):
     return encaje.group(1) if encaje else None
 
 
-def comprobar(texto=None, linea=None, filas=None):
+def hay_parada(ruta_parada=None):
+    """Cierto si `docs/loop/PARA_ALEXIS.md` esta en el arbol: el bucle esta parado."""
+    return os.path.exists(ruta_parada or RUTA_PARADA)
+
+
+def comprobar(texto=None, linea=None, filas=None, ruta_parada=None):
     """Devuelve la lista de motivos que IMPIDEN abrir la vuelta. Vacia es verde."""
     linea = linea or credito.linea_actual()
     clave = libro_declarado(texto)
 
     if clave is None:
+        # UN ENCARGO VACIO CON UNA PARADA AL LADO NO ES UN DESCUIDO: ES UNA PARADA.
+        #
+        # ESTE ES UN DEFECTO MIO, del 17 sep 2026, y lo cazo el auditor de la ACTA 34
+        # en su punto 5: `AUDITOR_FORJA.md` 3 manda dejar el encargo VACIO al parar, y
+        # `D.49` exige que el encargo declare su libro. **Las dos reglas piden lo mismo
+        # en efecto** (que la vuelta siguiente no abra), pero mi guarda llamaba
+        # "descuido" a lo que era **cumplimiento**, y con eso ponia en rojo la suite
+        # entera cada vez que el bucle paraba bien.
+        #
+        # SIGUE SIENDO IMPEDIMENTO, que es la mitad que no se puede aflojar: la vuelta
+        # NO abre. Lo que cambia es que ahora dice por que, y el motivo es el correcto.
+        vacio = not (texto if texto is not None else
+                     (comun.leer_texto(RUTA_ENCARGO)
+                      if os.path.exists(RUTA_ENCARGO) else "")).strip()
+        if vacio and hay_parada(ruta_parada):
+            return ["EL BUCLE ESTA PARADO: %s esta vacio y %s esta en el arbol, que es "
+                    "lo que AUDITOR_FORJA.md 3 manda al parar. No es un encargo sin "
+                    "libro: es una parada sin resolver. Lee la parada."
+                    % (comun.relativa(RUTA_ENCARGO), comun.relativa(RUTA_PARADA))]
         return ["el encargo de esta vuelta NO DECLARA su libro. D.49: toda linea lee el "
                 "tablero en su apertura y lo cita. Escribe en %s una linea "
                 "'LIBRO DE ESTA VUELTA: <clave>', o 'LIBRO DE ESTA VUELTA: NINGUNO' si "

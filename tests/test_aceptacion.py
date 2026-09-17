@@ -4035,12 +4035,40 @@ class PruebaGuardaDelTablero(BaseForja):
             texto="LIBRO DE ESTA VUELTA: NINGUNO",
             linea="serial", filas=self._filas()), [])
 
-    def test_el_encargo_vivo_del_repo_declara_su_libro(self):
-        """Si esto cae, la proxima vuelta del principal se detiene antes de abrir."""
+    def test_caso_positivo_un_encargo_vacio_CON_PARADA_es_una_parada(self):
+        """DEFECTO MIO, cazado por el auditor de la ACTA 34 en su punto 5.
+
+        `AUDITOR_FORJA.md` 3 manda dejar el encargo VACIO al parar, y `D.49` exige que
+        el encargo declare su libro. **Mi guarda llamaba descuido a lo que era
+        cumplimiento**, y con eso ponia en rojo la suite entera cada vez que el bucle
+        paraba bien. Sigue siendo impedimento (la vuelta NO abre), y ahora dice por que.
+        """
         from scripts import guarda_tablero
-        self.assertIsNotNone(
-            guarda_tablero.libro_declarado(),
-            "docs/loop/PROMPT_SIGUIENTE.md sin 'LIBRO DE ESTA VUELTA:'")
+        parada = os.path.join(self.taller, "PARA_ALEXIS.md")
+        comun.escribir_texto(parada, "el bucle se detiene")
+        impiden = guarda_tablero.comprobar(texto="", linea="serial",
+                                           filas=self._filas(), ruta_parada=parada)
+        self.assertEqual(len(impiden), 1)
+        self.assertIn("EL BUCLE ESTA PARADO", impiden[0])
+
+    def test_caso_negativo_un_encargo_vacio_SIN_parada_sigue_siendo_descuido(self):
+        """La otra mitad, y sin ella la de arriba no probaria nada."""
+        from scripts import guarda_tablero
+        impiden = guarda_tablero.comprobar(
+            texto="", linea="serial", filas=self._filas(),
+            ruta_parada=os.path.join(self.taller, "no_hay_parada.md"))
+        self.assertEqual(len(impiden), 1)
+        self.assertIn("NO DECLARA su libro", impiden[0])
+
+    def test_el_encargo_vivo_del_repo_declara_su_libro_O_HAY_PARADA(self):
+        """El invariante de verdad: o el encargo declara su libro, o el bucle esta
+        parado. Las dos cosas impiden abrir, y ninguna de las dos es un fallo."""
+        from scripts import guarda_tablero
+        self.assertTrue(
+            guarda_tablero.libro_declarado() is not None
+            or guarda_tablero.hay_parada(),
+            "docs/loop/PROMPT_SIGUIENTE.md sin 'LIBRO DE ESTA VUELTA:' y sin parada "
+            "que lo explique")
 
 
 class PruebaCreditoPorLinea(BaseForja):
