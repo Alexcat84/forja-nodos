@@ -36035,6 +36035,45 @@ lo compruebo tres veces.**
 
 **LAS CINCO ENTREGADAS Y NINGUNA EN COLA** (`EXTRACTOR.md` 1.3, tope de cinco). **Lo que esta vuelta
 deja pendiente esta en `Y.5`, medido fila a fila, y no hay ni una tarea del encargo dentro.**
+# FRENTE `gerber_emyth`, VUELTA 1: **la apertura del lote 9**, la frontera de sus unidades, y el primer tramo de candidatos **EN CUARENTENA** (`D.45`, frente en paralelo: **NO INSERTA**)
+
+> ## **ESTE BLOQUE SE ESCRIBE EN LA RAMA `extraccion-gerber_emyth`, CON `MODO_INSERCION=cuarentena`. CERO INSERCIONES, Y NO POR FALTA DE CANDIDATOS BUENOS: PORQUE LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR Y ESTA CORRIDA NO LA TRAE.**
+>
+> **MODO AUSTERO (`D.47`) VIGENTE.** Nada que el registro ya diga, cifras talladas, discutibles por
+> numero y linea. **Las guardas de dato, intactas**: la aduana en seco candidato a candidato, la
+> fidelidad `D.30` con su relectura contra el parrafo, `D.41` y `D.42`.
+
+## G1.0. EL ESQUELETO DE LA VUELTA, ABIERTO ANTES DE LA PRIMERA TAREA (`EXTRACTOR.md` 3)
+
+| # | tarea del encargo | como cierra | donde |
+|---:|---|---|---|
+| 1 | la frontera de cada unidad minada, cerrada contra el cuerpo | **CERRADA**: `11` de `11` con residuo `0`, cero solapes y cero lineas sin cubrir | `G1.2` |
+| 2 | minar con el techo de candidatos por delante, aduana en seco en el acto | **CERRADA**: `10` candidatos bajo el techo de `15`, `10` de `10` con su informe y **`0 CAERIA`** | `G1.3` y `G1.8` |
+| 3 | `PASOS INVENTADOS POR CAPITULO` (`D.30`), fila por unidad mas total | **CERRADA**: `89` de `89` pasos releidos contra su parrafo, `0,00` por ciento, peor capitulo `0,00` contra un tope de `10` | `G1.4` |
+| | el cierre: guardas, cifras recomputadas, discutibles marcados, commit y push | **CERRADO** | `G1.6` a `G1.10` |
+
+**LAS TRES TAREAS ENTREGADAS Y CERO COLA** (`EXTRACTOR.md` 1.3, tope de cinco). **Y CERO
+INSERCIONES**, que es la regla que manda en este frente.
+
+> ### **ESTE BLOQUE SE ABRIO A LAS `21:06:13` EN EL COMMIT `6d2d56a` Y DESAPARECIO DEL ARBOL ANTES DE LAS `21:32:43`. SE RESTAURA DESDE GIT, NO SE REESCRIBE.**
+>
+> **Como se vio:** releyendo mi propio reporte al cerrar, `G1.1` aparecia **sin cabecera de vuelta y
+> sin esqueleto**, colgando del cierre de la vuelta 32. **Como se comprobo, y no de memoria:**
+> `git show <commit>:docs/loop/REPORTE.md | grep -c` sobre los cinco commits del frente da `1` en
+> `6d2d56a` y `0` en los cuatro siguientes.
+>
+> **Quien lo quito: no fui yo con una escritura mia.** Todas mis escrituras sobre el reporte son
+> anexiones o sustituciones de un texto por otro, y ninguna toca ese bloque. **Lo que si ocurrio en
+> esa ventana es la fase ciega del arnes** (`21:19:13`), la misma que dejo la guarda `guiones` en rojo
+> y escribio `PARA_ALEXIS.md` (`G1.5`). **No lo afirmo como causa: afirmo la ventana, y la ventana
+> esta medida.**
+>
+> **LO QUE ESTO ENSENA, y es la razon de que lo cuente en vez de arreglarlo callando:** `EXTRACTOR.md`
+> 3 dice que `REPORTE.md` es **el testigo del turno** y que una vuelta cortada deja **reporte parcial,
+> nunca vacio**. Un reporte al que se le cae la cabecera **sigue teniendo todas sus cifras y ya no
+> dice de quien son.** La unica razon de que se viera es que **relei mi propio reporte antes de
+> cerrarlo**, y eso pasa a ser parte del cierre de este frente.
+
 ## G1.1. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
 
 Salida de `python .gerber_v1/apertura.py`, guardada en `.gerber_v1/apertura.txt`:
@@ -36452,6 +36491,7 @@ fundador es lo que el arnes ya subio solo: `docs/loop/PARA_ALEXIS.md`, que **no 
 | **1** | **mi instrumento de citas llevaba dentro los guiones que existe para quitar** | **el que borra tiene que nombrar**: para sustituir U+2014 hay que escribirlo, y el barrido no distingue el guion que escribes del que borras | **lo cazo la fase ciega del arnes a las `21:19:13`**, no yo, y costo un `PARA_ALEXIS.md`. `.v32/fidelidad.py` ya usaba `chr(0x2014)` y **yo no lo copie** (`G1.5`) |
 | **2** | **teclee CUATRO cifras de cabeza y las CUATRO salieron mal.** `25.992` y `41,5 por ciento` de volumen de vuelta, cuando son `27.992` y `44,7`; `2.101` palabras de diagnostico en `cap_07`, cuando `R3` mas `R4` mas `R5` dan `1.249`; **`22` pares levantados con `19` propios y `3` ajenos**, cuando el recuento da `21`, `15` y `6`; y **`cinco` aristas declaradas**, cuando las que declaro son `cuatro` | **la celda tecleada**, que es la especie exacta de `D.41`, **repetida cuatro veces en la misma vuelta** | **las cuatro me las cace yo antes de commitear**, contando con un instrumento en vez de con la cabeza, y las cuatro las arregle **metiendo el recuento en un fichero y pegandolo de ahi**, nunca tecleando la celda buena. **Que cayera cuatro veces es el dato, y no lo suavizo:** `D.41` lleva escrito desde la vuelta 22 que la diferencia no es el cuidado sino el metodo, y **cada vez que me salte el metodo, falle; ninguna de las cifras que salieron de un instrumento fallo** |
 | **3** | **lance la aduana de seis candidatos en tanda con `tail -25`, y dos de ellos salieron con la salida vacia** | **el filtro que se come la prueba**: una ventana fija recorta lo que el informe imprime, y un informe recortado a cero **no es un veredicto** | **lo vi al recontar los veredictos contra los candidatos**: tenia 10 candidatos y 8 saldos. **Los dos los volvi a correr enteros y sin filtro** (`.gerber_v1/aduana_tanda_c.txt`), en vez de publicar un saldo que no tenia |
+| **4** | **mi propio reporte perdio su cabecera de vuelta y su esqueleto**, y estuvo cuatro commits publicado con `G1.1` colgando del cierre de la vuelta 32 | **el testigo sin firma**: todas las cifras estaban, y ya no decian de quien eran | **lo vi releyendo mi propio reporte al cerrar**, no por una guarda: **ninguna de las seis guardas mira si el reporte tiene cabecera.** Restaurado desde `6d2d56a` con `git show`, no reescrito de memoria (`G1.0`) |
 
 **LAS TRES SON DE LA MISMA FAMILIA:** las tres son **el instrumento contradicho por su propio
 resultado**, y ninguna se habria visto si la celda se teclea o si el saldo se da por bueno sin
