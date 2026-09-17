@@ -10,3 +10,7 @@ cap_08  piezas: 6   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2183   s
 cap_09  piezas: 6   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2845   suma 2845   residuo 0
 cap_10  piezas: 5   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1411   suma 1411   residuo 0
 cap_11  piezas: 11   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4360   suma 4360   residuo 0
+
+SUMA DE LAS ONCE UNIDADES CORTADAS : 27992 palabras de cuerpo
+CUERPO DEL LIBRO ENTERO            : 62648 palabras
+CORTADO EN ESTA VUELTA             : 44,7 por ciento

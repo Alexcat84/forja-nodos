@@ -36203,3 +36203,128 @@ Salida de `python .gerber_v1/frontera.py fuentes/gerber_emyth/cap_11.md .gerber_
 
 Es el capitulo que sostiene la vuelta: **seis de sus once piezas dan nodo**, y las dos que no (`R3` y `R4`) son las reglas 3 y 5 de la propia serie, declaradas aqui con su motivo y no calladas. **Es este capitulo el que llena el techo de la vuelta, no el lote entero.**
 
+## G1.3. TAREA 2: **DIEZ CANDIDATOS, EN EL ORDEN DEL LIBRO Y CON EL TECHO POR DELANTE**. **CERRADA**
+
+> ### **LA VUELTA CIERRA EN `cap_11` CON `10` CANDIDATOS, POR DEBAJO DEL TECHO DE `15`. `cap_12` A `cap_22` SIGUEN SIN TOCAR, Y SU BANDEJA ESTA VACIA.**
+
+**POR QUE SE PARA AHI Y NO ANTES NI DESPUES**, con las dos cifras que lo deciden (`EXTRACTOR.md` 12.4):
+**`6` de los `10` salen de `cap_11` solo**, y ese capitulo abre una serie numerada de seis reglas que
+**no se puede repartir en dos vueltas sin partir la serie**. Las diez unidades anteriores dan `4` entre
+todas. Parar en `cap_11` es lo unico que deja la serie entera dentro de una vuelta.
+
+**Y LO QUE ESTA VUELTA MIDE SOBRE ESTE LIBRO, QUE ES LA CIFRA QUE EL LOTE 9 NECESITA:**
+
+<!-- TALLADO: parcial salida=.gerber_v1/frontera_saldo.txt -->
+
+| | | de donde sale |
+|---|---:|---|
+| palabras de cuerpo cortadas en esta vuelta | **27.992** de **62.648**, un **44,7** por ciento del libro | `.gerber_v1/frontera_saldo.txt`, tres ultimas lineas |
+| unidades cortadas | **11** de **22** | `PATRON: .gerber_v1/frontera_cap*.txt` |
+| unidades que dieron cero nodos | **7** de las 11 | `PATRON: .gerber_v1/piezas_cap*.txt` |
+| candidatos escritos | **10** | `PATRON: cuarentena/gerber_emyth/*.json` |
+
+    SUMA DE LAS ONCE UNIDADES CORTADAS : 27992 palabras de cuerpo
+    CUERPO DEL LIBRO ENTERO            : 62648 palabras
+    CORTADO EN ESTA VUELTA             : 44,7 por ciento
+
+> **ESTA TABLA LLEVA UNA CORRECCION MIA, Y LA DECLARO EN VEZ DE BORRARLA** (`D.41`, y es su leccion
+> exacta): la escribi primero **tecleando** `25.992` y `41,5 por ciento`, sumando de cabeza las once
+> filas de la frontera. **La suma real es `27.992` y el `44,7` por ciento.** Me lo cace yo antes de
+> commitear, sumando la columna con el instrumento en vez de con la cabeza, y **la arregle por el
+> unico metodo que vale: anadiendo el total AL FICHERO del instrumento y pegandolo de ahi.** `D.41` lo
+> dice con estas palabras: *la diferencia no fue el cuidado, fue el metodo.* Es la unica celda tecleada
+> que escribi en toda la vuelta y fue la unica que salio mal.
+
+**SIETE UNIDADES DE ONCE DAN CERO, Y ESO NO ES UNA VUELTA POBRE: ES ESTE LIBRO.** *The E-Myth
+Revisited* es una parabola: su primer tercio diagnostica (el ataque emprendedor, la suposicion fatal,
+las tres fases, la zona de confort) y lo hace con el caso de Sarah y la panaderia de fondo. **Una
+postura no ejecuta una busqueda y el caso no es la casa** (`EXTRACTOR.md` 9), y sacarle nodos a
+`cap_03` o a `cap_06` seria fabricar procedimientos que el libro no da. **La frontera de las siete
+esta publicada fila a fila para que esa decision se pueda recusar pieza a pieza**, que es justo lo
+que una cuenta de nodos sin frontera no permite.
+
+### G1.3.a. **LA SERIE NUMERADA DE `cap_11`: UNA CABEZA Y CUATRO PARTES, NO SEIS**
+
+*Manual seccion 3.4: **un nodo por paso mas UNA cabeza, y jamas dos compresiones de la misma
+numeracion.** Y `EXTRACTOR.md` 9.1: una regla que solo trae mandato y adjetivo de adecuacion es
+postura, **aunque venga numerada.***
+
+**LAS DOS VARAS CHOCAN AQUI Y DIGO CUAL APLICO Y POR QUE.** La numeracion pide seis partes; la vara de
+que es un nodo dice que una parte sin inventario propio no es nodo. **Aplico la vara de que es un
+nodo, porque una serie no convierte en procedimiento lo que no lo es**, y lo declaro regla a regla en
+vez de dejar el hueco sin explicar:
+
+| regla | lo que el libro despliega detras del enunciado | veredicto |
+|---:|---|---|
+| **1** | la pregunta que todo emprendedor tiene que hacerse, y **cinco formas concretas de valor** nombradas una a una (la palabra en la puerta, el regalo por correo, el reconocimiento al novato y al veterano, el precio y la dedicacion al explicar, el agradecimiento al banquero) | **NODO**, `dar_valor_constante_cuatro_publicos` |
+| **2** | **la definicion del propio adjetivo** (el nivel mas bajo NECESARIO para cumplir las funciones), la salvedad con dos oficios, dos preguntas transcritas, y el reparto de trabajo entre el dueno y su gente | **NODO**, `operar_modelo_gente_destreza_minima` |
+| **3** | el mundo caotico, una cita de Toffler, y **cinco frases de lo que un negocio ordenado DICE** a su cliente y a su gente | **NO ES NODO.** Es un inventario de **lo que el orden comunica**, y la restriccion 1 de `EXTRACTOR.md` 9.1 dice que un inventario de **fines** no cuenta. Queda como `R3` de la frontera |
+| **4** | los **tres contenidos** que el manual tiene que llevar, nombrados en una sola linea: el proposito del trabajo, los pasos que hay que dar, y los estandares del proceso y del resultado | **NODO**, `documentar_trabajo_manual_operaciones` |
+| **5** | **el caso del barbero en tres visitas**, el sindrome del Burnt Child, y la doctrina propia en **una linea** (*haz lo que hagas igual cada vez*) | **NO ES NODO.** El unico inventario que hay (tijeras contra maquinilla, el lavado, la ayudante, el cafe) **es el del caso**, y el caso no es la casa (manual 3.5). Queda como `R4` de la frontera |
+| **6** | el verbo del criterio escrito por el libro (**determinados cientificamente**), **ocho sitios** para el color y **cuatro soportes** para la forma, nombrados uno a uno | **NODO**, `unificar_color_forma_vestuario_modelo` |
+
+**LA CABEZA TRANSCRIBE LAS SEIS**, incluidas la 3 y la 5, en sus pasos 7 y 9: **lo que el libro
+enumera no se pierde**; lo que no se hace es fabricarle un procedimiento a lo que no lo trae.
+
+### G1.3.b. **LAS CUATRO ARISTAS DE `D.37`, DECLARADAS POR LECTURA Y NO CABLEADAS AQUI**
+
+*`D.37` pide **las dos condiciones**: que el texto diga **cuantas** partes tiene y que **las nombre una
+a una**. Este las cumple las dos: `there are rules to follow if you are to win` seguido de una
+numeracion del 1 al 6 (`cap_11.md` `L43` a `L55`). **Es `D.37` y no `D.29`.***
+
+**Y NO SE CABLEAN EN ESTA VUELTA, POR LA REGLA DEL FRENTE Y NO POR OLVIDO:** `python forja.py arista`
+escribe en `dataset/` y en `bitacora/`, que son **sedes de dato**, y este frente tiene
+`MODO_INSERCION=cuarentena`. Quedan escritas aqui con su paso citado, tal como se correran.
+
+Salida de `python` sobre los propios candidatos, guardada en `.gerber_v1/aristas.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v1/aristas.txt -->
+
+    --madre fingir_prototipo_cinco_mil_replicas --hijo dar_valor_constante_cuatro_publicos --paso 5
+       paso 5 de la madre: Regla 1: el modelo dara valor constante a tus clientes, empleados, proveedores y prestamistas, por encima de lo que esperan.
+       pasos del hijo     : 8
+
+    --madre fingir_prototipo_cinco_mil_replicas --hijo operar_modelo_gente_destreza_minima --paso 6
+       paso 6 de la madre: Regla 2: el modelo lo operara gente con el nivel de destreza mas bajo posible.
+       pasos del hijo     : 10
+
+    --madre fingir_prototipo_cinco_mil_replicas --hijo documentar_trabajo_manual_operaciones --paso 8
+       paso 8 de la madre: Regla 4: todo el trabajo del modelo estara documentado en Manuales de Operaciones.
+       pasos del hijo     : 10
+
+    --madre fingir_prototipo_cinco_mil_replicas --hijo unificar_color_forma_vestuario_modelo --paso 10
+       paso 10 de la madre: Regla 6: el modelo usara un codigo uniforme de color, vestuario e instalaciones.
+       pasos del hijo     : 8
+
+**LA RAZON, LA MISMA PARA LAS CUATRO Y ESCRITA UNA SOLA VEZ:** *el paso N de la madre nombra la regla
+en una linea y el hijo la despliega en los pasos que la cabeza no tiene.*
+
+### G1.3.c. **Y UNA ARISTA QUE NO DECLARO, DICHA PARA QUE NO PAREZCA UN DESPISTE**
+
+`construir_empresa_plantilla_vision_diaria` y `trazar_modelo_negocio_cliente_primero` salen **del mismo
+capitulo**, van **seguidos** y los dos hablan de **retratos**. **No declaro arista entre ellos**, y el
+motivo es la propia letra de `D.37`: *lo que no autoriza es declarar una arista porque dos nodos
+compartan familia o tema.* El libro **no dice** que el segundo sea parte del primero ni al reves, y
+de hecho **se contradicen en el arranque**: el primero arranca del retrato de la **empresa**
+terminada y el segundo dice expresamente que **no** se arranca del retrato del negocio sino del
+**cliente**. Son hermanos, y su veredicto, el dia que se inserten, **es `SANO`**.
+
+### G1.3.d. **MIS SEIS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+*Modo austero: **por numero y linea, sin reabrir el argumento.** Cada uno dice donde mirar y que cae
+si el auditor lo tumba, que es lo unico que la relectura ciega necesita de mi.*
+
+| # | el discutible | donde mirar | que cae si lo tumban |
+|---:|---|---|---|
+| **1** | **`hacer_trabajo_futuro_imaginar_negocio` es nodo o es postura.** Los cuatro rasgos del negocio sonado del paso 5 son **fines**, y la restriccion 1 de `EXTRACTOR.md` 9.1 dice que un inventario de fines no cuenta | `cap_04.md` `L285` a `L291`, pieza `P1` | **el paso 5, no el nodo.** El inventario que lo sostiene son las etapas, no los rasgos |
+| **2** | **la regla 3 se queda sin nodo.** Llamo fines a las cinco frases de lo que un negocio ordenado *dice* | `cap_11.md` `L135` a `L151`, pieza `R3` | **falta una parte de la serie.** Si es nodo, la cabeza pasa a tener 5 partes y la arista sale del paso 7 |
+| **3** | **la regla 5 se queda sin nodo.** Llamo caso al barbero y doctrina de una linea a lo que queda | `cap_11.md` `L175` a `L211`, pieza `R4` | **igual que el 2**, y la arista saldria del paso 9 |
+| **4** | **`interrogar_negocio_cinco_preguntas` aparte de la cabeza.** Su tercera pregunta repite las 5.000 replicas de la cabeza | `cap_11.md` `L242` a `L265`, pieza `P6` | **se funde en la cabeza**, y el lote baja a 9 |
+| **5** | **el dominio `gestion_negocio`, que es nuevo en esta casa.** Los cuatro vivos son `gestion_equipos`, `contratacion`, `proteccion_consumidor` y `forja`, y ninguno es este libro | los diez candidatos, campo `dominio` | **nada de dato**: `solo_dominio_y_nucleo` esta en `false` en `config/umbrales.json`, asi que el dominio **no recorta** la busqueda de vecinos. Si se decide otro, es un renombrado |
+| **6** | **el grano de las siete fronteras que dan cero.** Las corto por seccion y no por parrafo, entre 4 y 7 piezas por unidad | `PATRON: .gerber_v1/piezas_cap*.txt` | **hay que recortar mas fino** la unidad que se recuse. Las cuatro que dan nodo van al grano de la pieza |
+
+**LOS TRES PRIMEROS SON LA MISMA PREGUNTA VISTA POR TRES SITIOS, y lo digo porque ahorra trabajo a
+quien relea: donde esta la raya entre un inventario de MEDIOS y uno de FINES cuando el libro enumera
+las dos cosas seguidas.** Los tres los resuelvo por el mismo lado, el estrecho, y **los tres se pueden
+tumbar juntos sin tocar el resto del lote.**
+
