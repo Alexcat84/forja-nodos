@@ -1,0 +1,66 @@
+INSTRUMENTO celdas.py  SIN CONSTANTES TECLEADAS: fichero=docs/loop/APERTURA_CIEGA.md
+L141   **270**
+L141   `.vg01c/guardas.txt`, `forja.py gate`
+L142   **396**
+L142   `.vg01c/heredado2.txt`, `wc -l`
+L143   **0**
+L143   `.vg01c/heredado2.txt`, `grep -c`
+L144   **0**
+L144   `.vg01c/heredado2.txt`, `ls`, la carpeta no existe
+L145   poblacion de vecinos, `D.38.4`
+L145   **511**
+L145   `.vg01c/poblacion.txt`, `poblacion.py`
+L146   **18**
+L146   `.vg01c/heredado3.txt`, `ls` mas `wc -l`
+L147   **64.862**
+L147   `.vg01c/heredado3.txt`, `wc -w`
+L148   **201**
+L148   `.vg01c/guardas.txt`, `tests/test_aceptacion.py`
+L335   `Q1`
+L336   `Q2`
+L336   definicion de a quien va dirigido el libro. `L57` define al know-how manager, y definir no es procedimentar
+L337   `Q3`
+L337   **POSTURA.** `L65`: *let chaos reign, then rein in chaos*. Una postura no ejecuta una busqueda (vara `6.1`)
+L338   `Q4`
+L339   `Q5`
+L340   `Q6`
+L340   diagnostico de carrera. `L101` dice literalmente *I can offer you no surefire formula*
+L341   `Q7`
+L342   `Q8`
+L352   `P0`
+L353   `P1`
+L354   `P2`
+L354   es `P1` aplicado al reclutamiento. Lo unico propio es el cribado telefonico de `L33`. **Lo que le daria la vuelta:** leer el cribado como paso con entregable propio, la razon de ofertas por visita
+L355   `P3`
+L356   `P4`
+L357   `P5`
+L358   `P6`
+L359   `P7`
+L360   `P8`
+L360   la justicia penal es **ILUSTRACION** de `P1` y `P7`. El texto no le da ni un paso al lector. **Si el reporte trae nodo de aqui, mi clase es PUENTE** (`D.30`)
+L403   `P1`
+L403   bandeja `ensayo_referencia_163`
+L404   `P4`
+L404   bandeja `ensayo_referencia_163`
+L404   **CONTINUA** de `P1`, no del vecino
+L404   `P4` anade lo que `P1` no dice: que el limitante **se mueve** cuando la capacidad aprieta, y el canje cuantificado. Si el reporte funde `P1` y `P4` en un nodo, **mi clase es que pierde el desplazamiento del limitante**
+L405   `P6`
+L405   bandeja `ensayo_referencia_163`
+L406   `P7`
+L406   bandeja `ensayo_referencia_163`
+L407   `Q5` si se escribe
+L407   el nodo del grafo ya monta la reunion a solas con su mentalidad, su frecuencia y su agenda. `L81` a `L85` de Grove **solo le cambia el mando de la frecuencia**, y eso es una linea, no una expansion
+L450   `.vg01c/frontera.py` y sus tres `.txt`
+L450   el corte en lineas y palabras de `cap_01`, `cap_02` y `cap_03`
+L451   `.vg01c/cierre_frontera.py`, `.vg01c/cierre.txt`
+L452   `.vg01c/piezas.py`, `.vg01c/piezas_cap_01.txt`, `.vg01c/piezas_cap_02.txt`
+L453   `.vg01c/poblacion.py`, `.vg01c/poblacion.txt`
+L453   la poblacion de `D.38.4`, grafo mas bandejas
+L454   `.vg01c/mis_clases.txt`
+L455   `.vg01c/guardas.txt`
+L455   gate, guiones y las 201 pruebas, corridas por mi
+L456   `.vg01c/celdas.py`, `.vg01c/heredado1.txt`
+L457   `.vg01c/heredado2.txt`, `.vg01c/heredado3.txt`, `.vg01c/heredado4.txt`
+L458   `.vg01c/cuatro_repuestos.txt`
+L458   la averia de la seccion `3`, con su commit y sus horas
+CELDAS DE TABLA CON CIFRA: 64

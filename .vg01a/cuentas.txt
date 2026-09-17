@@ -1,0 +1,42 @@
+INSTRUMENTO .vg01a/cuentas.py  SIN CONSTANTES TECLEADAS: lee dataset/nodos.jsonl, bitacora/ y cuarentena/ del disco
+nodos                : 270
+aristas siguientes   : 105
+aristas previos      : 105
+veredictos           : 396
+de ellos no_consumada: 0
+FUENTES EN EL GRAFO:
+   zhuo_manager                      136
+   scott_radical_candor               67
+   smart_who                          59
+   onu_consumidor                      6
+   manual_sistema_conocimiento         2
+BANDEJAS (descartando _insertados y _derivadas, D.38.4):
+   ensayo_referencia_163             163
+   grove_high_output                   2
+   marquet_turn_the_ship               3
+   scott_radical_candor               75
+   TOTAL BANDEJAS                    243
+   POBLACION D.38.4 grafo+bandejas   513
+ARCHIVADOS EN _insertados:
+   onu_consumidor                      6
+   scott_radical_candor               67
+   smart_who                          59
+   zhuo_manager                      136
+VEREDICTOS POR CLAVE 'veredicto':
+   SANO                      279
+   CONTINUA                  112
+   CORREGIDO                   5
+lineas con alguna anotacion no_consumada=true : 14
+OPERACIONES:
+   None                          317
+   arista declarada por lectura (D.37)   74
+   correccion declarada del resumen_teorico (EXTRACTOR.md 2)    5
+ULTIMAS 8 LINEAS, fecha/operacion/veredicto/candidato:
+   2026-09-16  arista declarada por lectura (D.37) CONTINUA   montar_reunion_general_presentaciones_preguntas | vecino decidir_quien_comunica_cada_cuanto
+   2026-09-16  arista declarada por lectura (D.37) CONTINUA   pelear_proliferacion_reuniones_bloquear_ejecucion | vecino reservar_calendario_tiempo_ejecutar
+   2026-09-16  arista declarada por lectura (D.37) CONTINUA   bloquear_tiempo_pensar_calendario | vecino decidir_quien_comunica_cada_cuanto
+   2026-09-16  arista declarada por lectura (D.37) CONTINUA   recorrer_rueda_conscientemente_cultura_equipo | vecino decidir_quien_comunica_cada_cuanto
+   2026-09-16  None                   SANO       montar_tablero_kanban_medir_actividades | vecino repartir_notas_publicar_reparto_esperado
+   2026-09-16  arista declarada por lectura (D.37) CONTINUA   montar_tablero_kanban_medir_actividades | vecino decidir_quien_comunica_cada_cuanto
+   2026-09-16  arista declarada por lectura (D.37) CONTINUA   pasear_organizacion_hallar_problemas_pequenios | vecino decidir_quien_comunica_cada_cuanto
+   2026-09-16  correccion declarada del resumen_teorico (EXTRACTOR.md 2) CORREGIDO  recorrer_rueda_conscientemente_cultura_equipo | vecino recorrer_rueda_conscientemente_cultura_equipo

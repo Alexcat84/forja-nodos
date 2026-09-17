@@ -1,0 +1,18 @@
+INSTRUMENTO: lee cuarentena/grove_high_output/*.json del disco. Cifra de ESTADO, no de reporte: estos candidatos NO estan en docs/loop/REPORTE.md
+  clasificar_trabajo_proceso_montaje_prueba        cap_02   ?                  pasos= 7
+  construir_flujo_produccion_paso_limitante        cap_02   ?                  pasos=10
+  detectar_arreglar_fallo_etapa_menor_valor        cap_02   ?                  pasos= 6
+  dimensionar_inventario_materia_prima_reposicion  cap_02   ?                  pasos= 7
+  equilibrar_capacidad_personal_inventario_plazo   cap_02   ?                  pasos= 8
+  preferir_inspeccion_proceso_prueba_destructiva   cap_02   ?                  pasos= 6
+  rehacer_flujo_paso_limitante_capacidad           cap_02   ?                  pasos= 6
+  revisar_tres_preguntas_valor_carrera             cap_01   ?                  pasos= 7
+  candidatos: 8   pasos escritos: 57
+clasificar_trabajo_proceso_montaje_prueba        L37 a L47
+construir_flujo_produccion_paso_limitante        L15 a L27
+detectar_arreglar_fallo_etapa_menor_valor        L71 a L75
+dimensionar_inventario_materia_prima_reposicion  UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_02.md, unidad Cap. 1, titulo textual The B
+equilibrar_capacidad_personal_inventario_plazo   L57 a L61
+preferir_inspeccion_proceso_prueba_destructiva   UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_02.md, unidad Cap. 1, titulo textual The B
+rehacer_flujo_paso_limitante_capacidad           L49 a L55
+revisar_tres_preguntas_valor_carrera             L101 a L107

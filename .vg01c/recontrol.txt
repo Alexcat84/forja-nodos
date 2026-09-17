@@ -1,0 +1,15 @@
+$ python forja.py gate | head -3
+GATE VERDE.
+  nodos verificados: 270
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+$ wc -l bitacora/VEREDICTOS.jsonl ; ls cuarentena/grove_high_output/ ; python .vg01c/poblacion.py | tail -2
+396 bitacora/VEREDICTOS.jsonl
+ls: cannot access 'cuarentena/grove_high_output/': No such file or directory
+GRAFO                             270
+POBLACION TOTAL                   511
+
+$ git log --oneline -3
+862390c VUELTA 1 grove_high_output: el reporte se abre con la apertura medida y las tres tareas con su fila vacia
+be2b678 loop.log: registro pendiente antes de abrir la vuelta 1 del frente grove_high_output
+6c93aa2 FRENTE grove_high_output: encargo de su vuelta 1 en austero, y este frente NO inserta (D.45)
