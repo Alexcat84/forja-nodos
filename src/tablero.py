@@ -5,6 +5,7 @@
     python forja.py tablero --escribir      lo vuelca a docs/loop/TABLERO.jsonl
     python forja.py tablero --puedo <clave> si esta linea puede abrir ese libro
     python forja.py tablero --dueno <clave> quien lo trabaja hoy
+    python forja.py tablero --siguiente     que libro le toca a ESTA linea (D.51)
 
 POR QUE EXISTE. El 17 sep 2026 la linea serial iba a cerrar el lote 4, y `D.32` dice
 que **el acta que cierra un lote abre el siguiente sin parada entre medias**. El
@@ -81,6 +82,10 @@ def declaraciones():
             raise TableroMalDeclarado(
                 "config/frentes.json: '%s' sin cita. Una declaracion sin cita no se "
                 "puede releer." % nombre)
+    if not (datos.get("orden_de_prioridad") or {}).get("cita"):
+        raise TableroMalDeclarado(
+            "config/frentes.json: 'orden_de_prioridad' sin cita. El orden lo da el "
+            "tablero (D.51), y un orden sin cita no se puede releer.")
     for grupo in ("liberados", "cerrados_en_extraccion"):
         for clave, dato in (datos.get(grupo) or {}).items():
             if not (dato or {}).get("cita"):
@@ -184,6 +189,8 @@ def medir():
     existentes = ramas()
     nodos = comun.leer_jsonl(comun.RUTA_DATASET)
 
+    orden = ((declarado.get("orden_de_prioridad") or {}).get("libros")) or {}
+
     filas = []
     for numero, clave in lotes():
         rama = "extraccion-%s" % clave
@@ -229,9 +236,16 @@ def medir():
         else:
             estado, dueno = "SIN EMPEZAR", NINGUNO
 
+        # LA PRIORIDAD ES UNA DECISION, NO UNA MEDIDA, y por eso sale declarada con
+        # su cita. Los libros que no estan en la lista son los que ya entraron al
+        # mundo 11: no se eligen, porque no queda nada que elegir de ellos.
+        prioridad = orden.get(clave) or {}
         filas.append({
             "lote": numero,
             "clave": clave,
+            "prioridad": prioridad.get("prioridad"),
+            "fuera_de_campania": bool(prioridad.get("fuera_de_campania")),
+            "motivo_de_prioridad": prioridad.get("motivo", ""),
             "rama": rama or "",
             "worktree": (worktree or "").replace("\\", "/"),
             "estado": estado,
@@ -329,6 +343,69 @@ def siguiente_libre(linea, filas=None):
     return None, "ningun libro del orden esta libre para la linea '%s'." % linea
 
 
+def siguiente_por_prioridad(linea, filas=None):
+    """`D.51`: EL ORDEN LO DA EL TABLERO, Y NINGUNA LINEA ELIGE LIBRO.
+
+    Devuelve `(clave, motivo, relevo)`:
+
+      - `clave` es el libro de **PRIORIDAD MAS BAJA cuyo estado lo permita** (`D.49`);
+      - si esta linea **ya tiene un libro suyo en curso**, ese es el que le toca, porque
+        `D.50` releva **al cerrar** uno, no a mitad;
+      - `relevo` es la fila del primer libro que **solo** esta bloqueado por no estar
+        cosechado, que es lo que hay que pedirle al fundador (`D.50` `(b)`);
+      - si no hay ninguno, `clave` es `None` **y el motivo lo dice**: `D.51` manda parar
+        y decirlo, no buscarse otro.
+
+    **LOS LIBROS FUERA DE CAMPANIA NO SE ELIGEN NUNCA.** El corte del mundo 11 los deja
+    en la bandeja con su ficha, para entrar por la aduana de a uno **cuando el fundador
+    lo decida**, y una campania que los tomara sola seria la campania decidiendo su
+    propio alcance.
+    """
+    filas = filas if filas is not None else leer()
+
+    propio = [f for f in filas if f.get("dueno") == linea
+              and f.get("estado") in ("EN CURSO", "CERRADO EN EXTRACCION")]
+    if propio:
+        fila = sorted(propio, key=lambda f: f.get("lote", 999))[0]
+        return fila["clave"], ("'%s' ya es de esta linea y esta %s: se continua, que "
+                               "D.50 releva AL CERRAR y no a mitad."
+                               % (fila["clave"], fila["estado"])), None
+
+    ordenadas = sorted([f for f in filas if f.get("prioridad")],
+                       key=lambda f: f["prioridad"])
+    relevo = None
+    for fila in ordenadas:
+        if fila.get("fuera_de_campania"):
+            continue
+        vale, motivo = puede_abrir(fila["clave"], linea, filas)
+        if vale:
+            return fila["clave"], ("prioridad %s del orden del mundo 11. %s"
+                                   % (fila["prioridad"], motivo)), relevo
+        if relevo is None and fila.get("estado") == "PAUSADO" and fila.get("rama"):
+            relevo = fila
+
+    if relevo is not None:
+        return None, ("NINGUN LIBRO DEL ORDEN ESTA LIBRE PARA '%s'. El de prioridad "
+                      "mas baja que lo estaria es '%s', y le falta el paso (b) de "
+                      "D.50: su rama '%s' no esta cosechada, con %d candidato(s) "
+                      "dentro. El bucle no funde ramas: se pide y se para."
+                      % (linea, relevo["clave"], relevo.get("rama") or "?",
+                         relevo.get("candidatos_en_bandeja", 0))), relevo
+    return None, ("NINGUN LIBRO DEL ORDEN ESTA LIBRE PARA '%s', y ninguno espera "
+                  "relevo. Si los tres del mundo 11 estan INSERTADOS, lo que toca es "
+                  "el CIERRE DEL MUNDO 11 (PARALELO.md): un PARA_ALEXIS de MUNDO 11 "
+                  "COMPLETO y parar." % linea), None
+
+
+def mundo_11_completo(filas=None):
+    """Los tres libros del mundo 11, y si los tres estan ya `INSERTADO`."""
+    filas = filas if filas is not None else leer()
+    del_mundo = [f for f in sorted(filas, key=lambda f: f.get("prioridad") or 99)
+                 if f.get("prioridad") and not f.get("fuera_de_campania")]
+    faltan = [f for f in del_mundo if f.get("estado") != "INSERTADO"]
+    return (not faltan), del_mundo, faltan
+
+
 def relevables(filas=None):
     """Los libros que `D.50` manda relevar: `EN CURSO` o `PAUSADO` en otra rama."""
     pendientes = []
@@ -345,20 +422,38 @@ def texto(filas=None):
     filas = filas if filas is not None else medir()
     partes = ["TABLERO DE FRENTES (D.49, D.50): sede unica del estado de la campania",
               "  registro: %s" % comun.relativa(RUTA_TABLERO), ""]
-    partes.append("  %-4s %-30s %-22s %-22s %5s %5s %7s"
-                  % ("lote", "clave", "estado", "dueno", "band", "graf", "ult cap"))
+    partes.append("  %-4s %-4s %-30s %-22s %-20s %5s %7s"
+                  % ("prio", "lote", "clave", "estado", "dueno", "band", "ult cap"))
     partes.append("  " + "-" * 104)
-    for fila in filas:
-        partes.append("  %-4s %-30s %-22s %-22s %5d %5d %7s"
-                      % (fila["lote"], fila["clave"], fila["estado"], fila["dueno"],
-                         fila["candidatos_en_bandeja"], fila["nodos_en_grafo"],
+    for fila in sorted(filas, key=lambda f: (f.get("prioridad") or 0, f.get("lote", 99))):
+        marca = str(fila.get("prioridad") or ".")
+        if fila.get("fuera_de_campania"):
+            marca += "*"
+        partes.append("  %-4s %-4s %-30s %-22s %-20s %5d %7s"
+                      % (marca, fila["lote"], fila["clave"], fila["estado"],
+                         fila["dueno"], fila["candidatos_en_bandeja"],
                          fila["ultimo_capitulo"] or "."))
+    partes.append("")
+    partes.append("  prioridad: el orden del mundo 11 (D.51). El asterisco es FUERA DE")
+    partes.append("  CAMPANIA: no se extrae, queda en bandeja para la aduana de a uno.")
+    partes.append("  Sin prioridad: ya dentro del mundo 11, no hay nada que elegir.")
     partes.append("")
     con_dueno = [f for f in filas if f["dueno"] != NINGUNO]
     partes.append("  libros CON DUEÑO ahora mismo: %d" % len(con_dueno))
     for fila in con_dueno:
         partes.append("    %-30s lo trabaja '%s' (%s)"
                       % (fila["clave"], fila["dueno"], fila["estado"]))
+    completo, del_mundo, faltan = mundo_11_completo(filas)
+    partes.append("")
+    if completo:
+        partes.append("  MUNDO 11 COMPLETO: los tres libros del corte estan INSERTADOS.")
+        partes.append("  Lo que toca es el CIERRE (PARALELO.md): PARA_ALEXIS de MUNDO 11")
+        partes.append("  COMPLETO con el censo por libro, y parar.")
+    else:
+        partes.append("  MUNDO 11: faltan %d de %d libros del corte (%s)"
+                      % (len(faltan), len(del_mundo),
+                         ", ".join(f["clave"] for f in faltan)))
+
     pendientes = relevables(filas)
     if pendientes:
         partes.append("")
@@ -391,6 +486,16 @@ def main(argumentos):
             print("%s: estado %s, dueno %s (%s)"
                   % (clave, fila["estado"], fila["dueno"], fila["estado_de"]))
             return 0
+        if "--siguiente" in resto:
+            from . import credito
+            linea = credito.linea_actual()
+            clave, motivo, relevo = siguiente_por_prioridad(linea)
+            print("D.51, EL ORDEN LO DA EL TABLERO. Linea '%s':" % linea)
+            print("  le toca: %s" % (clave or "NINGUNO, y es parada"))
+            print("  %s" % motivo)
+            if relevo is not None:
+                print("  el relevo que hay que pedir: rama %s" % relevo.get("rama"))
+            return 0 if clave else 1
         if "--escribir" in resto:
             filas = escribir()
             print(texto(filas))

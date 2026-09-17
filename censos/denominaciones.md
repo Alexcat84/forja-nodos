@@ -653,3 +653,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | dominar_arte_socializar_trabajo | otro_idioma | master the art of socializing at work | ingles | - |
 | 2026-09-17 | evitar_presion_social_actos_equipo | nombre_largo | Hasta los actos no obligatorios pueden sentirse obligatorios: la primera de las dos advertencias que el libro pone al que organiza | castellano | - |
 | 2026-09-17 | evitar_presion_social_actos_equipo | otro_idioma | even non-mandatory events can feel mandatory | ingles | - |
+| 2026-09-17 | construir_confianza_equipo_tiempo_solas | nombre_largo | Construir confianza: el patron constante de actuar de buena fe, y las cuatro conversaciones con las que el libro dice que se empieza | castellano | - |
+| 2026-09-17 | construir_confianza_equipo_tiempo_solas | otro_idioma | building trust | ingles | - |

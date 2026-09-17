@@ -15,19 +15,16 @@
     "CADA ENTRADA LLEVA SU CITA. Una declaracion sin cita no se puede releer, y",
     "src/tablero.py se detiene si falta."
   ],
-
   "alcance": {
     "lineas_a_la_vez": 2,
     "cita": "decision del fundador del 17 sep 2026, punto 4",
     "que_dice": "dos lineas y no mas: la principal siempre activa, y UN solo frente de extraccion"
   },
-
   "frente_activo": {
     "clave": "grove_high_output",
     "cita": "decision del fundador del 17 sep 2026, punto 4",
     "que_dice": "hoy grove_high_output hasta cerrar su libro"
   },
-
   "liberados": {
     "gerber_emyth": {
       "cita": "decision del fundador del 17 sep 2026, punto 4",
@@ -38,10 +35,52 @@
       "que_dice": "PAUSADO con dueño NINGUNO y su trabajo parcial declarado. No se lanza, y sera relevado por el principal cuando le toque por el orden"
     }
   },
-
   "cerrados_en_extraccion": {
-    "smart_who": {"cita": "ACTA 8 seccion 10"},
-    "zhuo_manager": {"cita": "ACTA 13 seccion 8.1"},
-    "scott_radical_candor": {"cita": "ACTA 24"}
+    "smart_who": {
+      "cita": "ACTA 8 seccion 10"
+    },
+    "zhuo_manager": {
+      "cita": "ACTA 13 seccion 8.1"
+    },
+    "scott_radical_candor": {
+      "cita": "ACTA 24"
+    }
+  },
+  "orden_de_prioridad": {
+    "cita": "decision del fundador del 17 sep 2026, EL ORDEN DE PRIORIDAD DEL MUNDO 11",
+    "que_dice": "Ninguna linea elige libro: toma el primero de esta lista cuyo ESTADO lo permita por D.49, y al cerrar uno pasa al siguiente por D.50.",
+    "libros": {
+      "grove_high_output": {
+        "prioridad": 1,
+        "fuera_de_campania": false,
+        "motivo": "Operaciones y apalancamiento gerencial: cubre el hueco de la campania, que tiene mucho trato con la gente y poco produccion de la maquina. Densidad de procedimiento la mas alta del lote, medida: 0,00 por ciento de pasos inventados en su ultimo capitulo, porque el autor escribe en pasos."
+      },
+      "gerber_emyth": {
+        "prioridad": 2,
+        "fuera_de_campania": false,
+        "motivo": "Sistematizacion del negocio, manual de operaciones, trabajar SOBRE el negocio y no EN el: es el libro que habla directo al usuario final y el unico del lote que aporta esa materia. Al minarlo entero se completa ademas el capitulo 17 reservado al mundo 10."
+      },
+      "marquet_turn_the_ship": {
+        "prioridad": 3,
+        "fuera_de_campania": false,
+        "motivo": "Delegacion real y control distribuido con practicas concretas. Solapa en parte con Zhuo y Scott, ya insertados, pero es barato de cerrar y cierra el cuerpo."
+      },
+      "bernerslee_bananas": {
+        "prioridad": 4,
+        "fuera_de_campania": true,
+        "motivo": "19 cap. Mas analisis que procedimiento."
+      },
+      "openstax_business_ethics": {
+        "prioridad": 5,
+        "fuera_de_campania": true,
+        "motivo": "17 cap. Manual academico, densidad de procedimiento baja, mucho marco conceptual."
+      },
+      "openstax_org_behavior": {
+        "prioridad": 6,
+        "fuera_de_campania": true,
+        "motivo": "32 cap. El mas caro del lote y el de mayor solape con lo ya insertado (Zhuo, Scott, Grove): el peor candidato por costo y beneficio de los diez."
+      }
+    },
+    "corte_del_mundo_11": "Con los tres primeros mas los cuatro ya insertados (onu_consumidor, smart_who, zhuo_manager, scott_radical_candor), el MUNDO 11 SE DECLARA COMPLETO: gente, comunicacion, contratacion, operaciones y sistematizacion. La campania de extraccion cierra ahi. Los tres del corte quedan en la bandeja, con su ficha, para entrar por la aduana de a uno y sin campania cuando el fundador lo decida."
   }
 }
