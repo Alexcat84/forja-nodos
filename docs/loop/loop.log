@@ -1158,3 +1158,19 @@ TABLERO EN ROJO. La vuelta NO abre:
 [2026-09-17 09:25:09] DETENIDO en la vuelta 1: la guarda del tablero esta en ROJO (D.49, D.51).
 [2026-09-17 09:25:09]   El encargo no puede abrir el libro que declara. Ver docs/loop/TABLERO.jsonl
 [2026-09-17 09:25:09] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-17 10:02:53] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : serial
+  libro que declara el encargo : scott_radical_candor
+  libro que el orden le da (D.51): scott_radical_candor
+    'scott_radical_candor' ya es de esta linea y esta CERRADO EN EXTRACCION: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: scott_radical_candor           CERRADO EN EXTRACCION  lo trabaja 'serial'
+  con dueño: grove_high_output              EN CURSO               lo trabaja 'grove_high_output'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-17 10:02:54]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-17 10:02:54] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-17 10:02:54]   ultimo commit de REPORTE.md      : 2026-09-17 08:05:45 (1789646745)
+[2026-09-17 10:02:54]   ultimo commit de ACTA_AUDITOR.md : 2026-09-17 09:18:15 (1789651095)
+[2026-09-17 10:02:54] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-17 10:02:54] VUELTA 1 : EXTRACTOR (claude-opus-5)
