@@ -36511,8 +36511,8 @@ esta pendiente. `EXTRACTOR.md` 7 manda escribirlo y **no arreglarlo yo**. Lo esc
 |---:|---|---|
 | 1 | la frontera de `cap_03`, cerrada contra el cuerpo, con el techo por delante | **CERRADA** en `AA.1`: `5828` contra `5828`, cero lineas sin cubrir, cero solapes, `15` nodos en el techo justo |
 | 2 | minar `cap_03` un candidato por vez, con la aduana EN SECO en el mismo acto | **ABIERTA** |
-| 3 | la fidelidad `D.30` paso a paso, `PASOS INVENTADOS` fila por unidad mas total | **ABIERTA** |
-| 4 | las aristas que levante mi lectura y no levanto ninguna senal | **ABIERTA** |
+| 3 | la fidelidad `D.30` paso a paso, `PASOS INVENTADOS` fila por unidad mas total | **CERRADA** en `AA.3`: `121` pasos releidos, `0` puentes, `0,00` por ciento, y los `2` que retire en el acto con nombre |
+| 4 | las aristas que levante mi lectura y no levanto ninguna senal | **CERRADA** en `AA.4`: `6` declaradas con el paso de la madre pegado, `3` consideradas y rechazadas con su motivo, `0` cableadas |
 | 5 | el informe del lote ENTERO de `cuarentena/grove_high_output` y su saldo pegado | **ABIERTA** |
 
 **CINCO TAREAS, QUE ES EL TOPE** (`EXTRACTOR.md` 1.3). **Y NINGUNA INSERCION EN NINGUNA DE LAS
@@ -36627,3 +36627,155 @@ parametros de la operacion, la desviacion respecto de la norma), y con eso los p
 que es el techo justo; las `17` unidades restantes del libro pasan a la vuelta siguiente.*
 
 **`TAREA 1` CERRADA.**
+
+> **EL REPORTE CRECE EN EL ORDEN EN QUE LAS TAREAS CIERRAN, NO EN EL ORDEN EN QUE ESTAN
+> NUMERADAS** (`EXTRACTOR.md` 3: cada tarea anexa su fila al cerrarse). `AA.3` y `AA.4` cierran
+> antes que `AA.2` y `AA.5` porque las dos de la aduana dependen de un instrumento que **sigue
+> corriendo**: el informe de un solo candidato tardo **`610` segundos** en esta maquina. Se anexan
+> ya para que una vuelta cortada deje reporte parcial y no vacio.
+
+## AA.3. **TAREA 3**: LA FIDELIDAD `D.30`, PASO A PASO Y CON SU CITA PEGADA
+
+**LOS `121` PASOS DE LOS `15` CANDIDATOS, RELEIDOS UNO A UNO CONTRA SU LINEA DEL LIBRO.** Ninguna
+guarda de esta casa ve un paso que yo escribiera y el libro no diga: la aduana compara el candidato
+con el grafo y consigo mismo, **no tiene el libro delante**. Esta seccion es lo que la aduana no
+puede hacer.
+
+### AA.3.a. UNA MUESTRA DE LA RELECTURA, PEGADA DEL INSTRUMENTO
+
+<!-- TALLADO: parcial salida=.v2g/fidelidad_tanda.txt -->
+
+    $ python .v2g/fidelidad.py   (2 de los 15 bloques)
+      construir_indicador_tendencia_patron   pasos 6 | TRANSCRIPCION 6 | PUENTE 0
+        paso  1  L89   TRANSCRIPCION  Also valuable are trend indicators. These show output (breakfasts delivered, s
+        paso  2  L89   TRANSCRIPCION  Also valuable are trend indicators. These show output (breakfasts delivered, s
+        paso  3  L89   TRANSCRIPCION  Also valuable are trend indicators. These show output (breakfasts delivered, s
+        paso  4  L89   TRANSCRIPCION  Also valuable are trend indicators. These show output (breakfasts delivered, s
+        paso  5  L89   TRANSCRIPCION  Also valuable are trend indicators. These show output (breakfasts delivered, s
+        paso  6  L89   TRANSCRIPCION  Also valuable are trend indicators. These show output (breakfasts delivered, s
+
+      archivar_indicadores_resolver_problemas   pasos 4 | TRANSCRIPCION 4 | PUENTE 0
+        paso  1  L99   TRANSCRIPCION  Finally, indicators can be a big help in solving all types of problems. If som
+        paso  2  L99   TRANSCRIPCION  Finally, indicators can be a big help in solving all types of problems. If som
+        paso  3  L99   TRANSCRIPCION  Finally, indicators can be a big help in solving all types of problems. If som
+        paso  4  L99   TRANSCRIPCION  Finally, indicators can be a big help in solving all types of problems. If som
+
+**Y EL SALDO DE LA RELECTURA ENTERA, DEL MISMO INSTRUMENTO:**
+
+<!-- TALLADO: parcial salida=.v2g/fidelidad_tanda.txt -->
+
+      poblacion releida : los 15 candidatos que esta vuelta escribio de cap_03,
+                          NO el grafo y NO el capitulo entero del libro
+      pasos releidos    : 121
+      PUENTE            : 0
+      PASOS INVENTADOS  : 0,00 por ciento
+
+### AA.3.b. `PASOS INVENTADOS`, CON EL ROTULO DE LA POBLACION QUE MIDE
+
+<!-- TALLADO: script=.v2g/pasos_inventados.py salida=.v2g/pasos_inventados_v2g.txt -->
+
+| capitulo | nodos | **pasos escritos** | **PUENTE** | **PASOS INVENTADOS** | puentes reescritos en el acto |
+|---|---:|---:|---:|---:|---:|
+| **`cap_03`** (lote 7, `grove_high_output`), los candidatos de ESTA vuelta | 15 | **121** | **0** | **0,00 por ciento** | 2 |
+| **total del tramo de esta vuelta**, y no del libro ni del grafo | 15 | **121** | **0** | **0,00 por ciento** | 2 |
+
+<!-- TALLADO: parcial salida=.v2g/pasos_inventados_v2g.txt -->
+
+      EL PEOR CAPITULO, que es sobre el que se decide la escalada: 0,00 por ciento
+      TOPE                                                       : 10
+      ESCALADA                                                   : NO
+      LA POBLACION DE ESTA TABLA, DICHA ENTERA (remedio bloqueante de PARA_ALEXIS.md 4)
+        candidatos releidos en esta tabla          : 15
+        ficheros en la bandeja del libro hoy       : 23   (arrastra los 8 de la vuelta 1)
+        unidades del libro minadas hasta hoy       : 3 de 18   (cap_01, cap_02 y cap_03)
+
+**EL ROTULO ES LA MITAD DE LA CIFRA, Y ESTA VUELTA LO HEREDA COMO REMEDIO BLOQUEANTE.** `121` son
+**los pasos de los 15 candidatos que esta vuelta escribio de `cap_03`**. No son los de la bandeja
+del libro, que hoy tiene `23` ficheros porque arrastra los `8` de la vuelta 1; no son los del grafo;
+y no son los del capitulo entero en ningun sentido que incluya lo ya insertado, porque **de este
+libro no hay ni un nodo insertado**. Es exactamente la distincion cuya ausencia paro el bucle.
+
+### AA.3.c. **LOS DOS PUENTES QUE ESCRIBI Y RETIRE EN EL ACTO**, que es lo que el cero no cuenta
+
+Un `0` sin su historia no dice si hubo trabajo o si no hubo mirada, asi que los dos van con nombre:
+
+| candidato | lo que iba a escribir | por que es puente | como quedo |
+|---|---|---|---|
+| `construir_indicador_linealidad_alerta_temprana` | *revisa el indicador de linealidad cada semana* | **especie PERIODO**. El libro no pone ritmo de lectura en ningun sitio del tramo: pone **un momento dentro de un ejemplo** (`by April`) y nada mas | el paso dice *lee a media carrera* y cita el abril del libro **como lo que es, el ejemplo** |
+| `elegir_inspeccion_barrera_monitorizacion` | *fija de antemano cuando paras la linea* | el libro pone la condicion **como ejemplo** (`if, for example, three successive samples fail`), y *de antemano* era una obligacion que anadia yo | el paso dice *para la linea cuando el seguimiento lo pida*, con el ejemplo detras y sin volverlo norma |
+
+**Y UNO MAS QUE NI SIQUIERA LLEGO A PASO**, y lo digo porque es el que mas me costo dejar fuera: en
+`variar_frecuencia_inspeccion_nivel_calidad` iba a generalizar la salida que el libro da **para la
+embajada** (*sustituye la comprobacion del cien por cien por un muestreo con criterios fijados de
+antemano*) a cualquier proceso. **El libro lo dice de la embajada, no de cualquier proceso**, y
+generalizar el caso es justo la senal barata del manual 3.5: *el entregable del caso lleva un dato
+del caso*.
+
+### AA.3.d. **EL AVISO DE `D.30` SOBRE EL PARRAFO POBRE, CONTRASTADO OTRA VEZ CONTRA MI TANDA**
+
+`D.30` mide que el parrafo pobre produce el puente (el mas rico del lote 1 dio `0` por ciento y el
+mas pobre `83`). **En mi tanda los dos parrafos mas pobres que dan nodo, `L89` con `94` palabras y
+`L99` con `88`, dieron `0` puentes los dos.** Lo que si se cumplio es la otra mitad: **los dos
+puentes que si escribi salieron de dos de los tramos mas largos de la unidad**, `L83` con `352`
+palabras y `L141` con `356`.
+
+> **LO QUE MI TANDA ANADE AL AVISO, y lo escribo como propuesta y no como regla** (`EXTRACTOR.md`
+> 14, el extractor propone y no se adjudica): **el puente no aparecio donde el inventario era
+> escaso, sino donde el inventario era TAN largo que yo estaba ordenandolo.** En `L141`, doce pasos
+> seguidos salidos de un solo parrafo de `356` palabras, el puente fue una palabra de orden (*de
+> antemano*) colada entre dos transcripciones buenas. **La pobreza del parrafo no es la unica puerta
+> del puente: la abundancia que obliga a ordenar tambien lo es**, y esa no esta en la tabla de las
+> tres especies. Es el segundo aviso seguido que este frente le pone a la misma regla, porque la
+> vuelta 1 ya publico el suyo (la afirmacion en vez del encargo), y **dos avisos no son una
+> correccion: son material para que el auditor decida si hay que medirlo.**
+
+**`TAREA 3` CERRADA: `121` pasos, `0` puentes, `0,00` por ciento, contra un tope de escalada de `10`.**
+
+## AA.4. **TAREA 4**: LAS ARISTAS QUE LEVANTA MI LECTURA Y NO LEVANTO NINGUNA SENAL (`D.29`, `EXTRACTOR.md` 11)
+
+**SEIS DECLARADAS, TRES CONSIDERADAS Y RECHAZADAS, CERO CABLEADAS.** `forja.py arista` escribe en
+`bitacora/` y en `dataset/`, y este frente no inserta (`D.45`). Quedan escritas con su razon y con
+**el paso de la madre pegado de su propio fichero**.
+
+<!-- TALLADO: script=.v2g/aristas.py salida=.v2g/aristas_cola.txt -->
+
+| # | madre | `--paso` | el paso de la madre, pegado de su fichero | hijo | regla | por que |
+|---:|---|---:|---|---|---|---|
+| 1 | `dimensionar_inventario_materia_prima_reposicion` | `3` | Devuelve el material que no sea aceptable, contando con lo que eso te deja: sin material, y por tanto parado. | `decidir_aceptar_rechazar_material_defectuoso` | `D.29` | el paso 3 de la madre despacha en una linea que el material inaceptable se devuelve, y nombra el precio de hacerlo (sin material, y por tanto parado). El hijo es quien despliega esa encrucijada en ocho pasos que la madre no tiene: las DOS salidas, devolver o renunciar a la especificacion, la comparacion de costes entre una y otra, el grupo de las tres areas que lo decide y la excepcion de fiabilidad que no admite componenda |
+| 2 | `casar_flujo_fabricacion_flujo_ventas` | `11` | Guarda ese inventario en la etapa de menor valor, como los huevos crudos de la fabrica de desayunos, porque cuanto menor es el valor mas flexibilidad de produccion obtienes por el mismo coste de inventario. | `detectar_arreglar_fallo_etapa_menor_valor` | `D.29` | el paso 11 de la madre manda guardar el inventario en la etapa de menor valor y el propio libro lo dice remitiendose atras (as we have learned before, L119). El hijo es quien despliega que es esa etapa de menor valor, ordenando las etapas por el valor que el material lleva encima, cosa que la madre usa y no explica |
+| 3 | `dimensionar_plantilla_administrativa_pronostico` | `1` | Elige con cuidado los indicadores que caracterizan a la unidad administrativa y vigilalos de cerca, porque solo con eso estaras en condiciones de aplicarle los metodos de control de una fabrica. | `elegir_indicador_salida_trabajo_administrativo` | `D.29` | el paso 1 de la madre pone como condicion de entrada haber elegido con cuidado los indicadores que caracterizan a la unidad administrativa, y lo dice en una linea. El hijo es quien despliega COMO se elige ese indicador, con las dos varas del libro y su pareja de calidad, en siete pasos que la madre no tiene |
+| 4 | `representar_actividad_caja_negra_ventanas` | `8` | Recorta ventanas en la caja, para poder ver una parte de lo que ocurre dentro. | `construir_indicador_linealidad_alerta_temprana` | `D.29` | el paso 8 de la madre manda recortar ventanas en la caja y no dice cuales. El libro nombra esta en una linea y con esas palabras: A generally applicable example of a window cut into the black box is the linearity indicator (L83). El hijo la despliega en nueve pasos |
+| 5 | `representar_actividad_caja_negra_ventanas` | `8` | Recorta ventanas en la caja, para poder ver una parte de lo que ocurre dentro. | `construir_indicador_tendencia_patron` | `D.29` | misma madre y mismo paso, y el libro vuelve a usar la palabra ventana para este otro: This extrapolation gives us another window in our black box (L89). El hijo lo despliega en seis pasos |
+| 6 | `elegir_fabricar_pedido_pronostico` | `4` | Cuando esa comparacion te cierre la via del pedido, pasa a fabricar contra pronostico, que es actuar sobre una contemplacion de los pedidos futuros, aunque preferirias fabricar contra pedido. | `casar_flujo_fabricacion_flujo_ventas` | `D.29` | el paso 4 de la madre manda pasar a fabricar contra pronostico y ahi se detiene. El libro empalma con el hijo en la frase siguiente del capitulo: Delivering a product that was built to forecast to a customer consists of two simultaneous processes (L111). El hijo despliega esa entrega en doce pasos que la madre no tiene |
+
+### AA.4.a. **LAS TRES QUE CONSIDERE Y NO DECLARO**, que valen tanto como las que si
+
+**`EXTRACTOR.md` 15.6 lo dice al reves de como apetece leerlo:** *lo que no autoriza es declarar una
+arista porque dos nodos compartan familia o tema*, y *una cabeza de seis vias y un vecino que no es
+ninguna de las seis son hermanos*. Las tres siguientes comparten seccion, vocabulario y hasta verbo
+con su pareja, **y ninguna tiene la linea que la sostenga**.
+
+<!-- TALLADO: script=.v2g/aristas.py salida=.v2g/aristas_cola.txt -->
+
+| par que considere | por que NO declaro la arista |
+|---|---|
+| `representar_actividad_caja_negra_ventanas` con `construir_grafico_escalonado_pronosticos` | el libro NO llama ventana al grafico escalonado. Lo presenta como Another sound way to anticipate the future (L91), no como una ventana recortada en la caja, y las otras dos si llevan la palabra escrita. EXTRACTOR.md 15.6: la parte tiene que ser la que ese paso nombra, y compartir seccion y tema no autoriza la arista |
+| `elegir_indicador_salida_trabajo_administrativo` con `emparejar_indicadores_efecto_contraefecto` | el paso 5 de la primera manda emparejar el indicador de cantidad con uno de CALIDAD, y el segundo nodo empareja el efecto con su CONTRAEFECTO. Son dos pares distintos, y declarar la arista seria declararla porque comparten la palabra emparejar. Los dejo como lo que mi lectura dice que son, dos procedimientos hermanos |
+| `elegir_inspeccion_barrera_monitorizacion` con `variar_frecuencia_inspeccion_nivel_calidad` | el libro los presenta como dos maneras PARALELAS de bajar el coste del aseguramiento de la calidad: L143 abre con Another way to lower the cost of quality assurance, o sea otra ademas de la anterior, no una parte de ella. EXTRACTOR.md 15.6 dice que un vecino que no es una de las partes de la cabeza es un hermano, y su veredicto es SANO |
+
+<!-- TALLADO: parcial salida=.v2g/aristas_cola.txt -->
+
+      ARISTAS DECLARADAS POR LECTURA : 6
+      CONSIDERADAS Y NO DECLARADAS   : 3
+      CABLEADAS HOY                  : 0   (D.45: este frente no inserta)
+      DE ELLAS POR D.37 (el texto dice CUANTAS partes): 0. Ningun tramo de cap_03 dice
+      cuantas partes tiene, asi que las 6 son D.29 y las 6 llevan razon escrita.
+
+**LA QUE MAS ME COSTO DEJAR FUERA ES LA PRIMERA**, y por eso la explico: el grafico escalonado esta
+en la misma seccion que las otras dos ventanas, hace lo mismo que ellas y yo lo habria declarado sin
+pensarlo. **Lo que lo tumba es una comprobacion de una linea:** `L83` dice literalmente
+`a "window" cut into the black box` y `L89` dice `another window in our black box`; **`L91` no dice
+ventana en ningun sitio.** Las dos que declaro llevan la palabra escrita y la tercera no, y esa es
+toda la diferencia.
+
+**`TAREA 4` CERRADA.**

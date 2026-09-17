@@ -1,0 +1,39 @@
+{
+  "id": "archivar_indicadores_resolver_problemas",
+  "titulo": "Mantener un archivo de indicadores para poder repasarlos el dia que algo vaya mal",
+  "dominio": "produccion",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [],
+  "fuentes": [
+    {
+      "clave": "grove_high_output",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "denominaciones": {
+    "nombre_largo": "El banco de informacion de los indicadores: el archivo que ya esta hecho cuando algo se rompe, y que ensena de golpe todos los parametros de la operacion",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "bank of information"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "unhealthy departures from the norm"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando ya tienes indicadores en marcha y tienes que decidir si los guardas o los tiras, sabiendo que el dia que algo se rompa no vas a tener tiempo de salir a buscar la informacion.",
+  "entregable_esperado": "El archivo de indicadores al dia, y, cuando algo falla, el repaso hecho sobre el con las desviaciones no sanas respecto de la norma ya senaladas.",
+  "pasos_accionables": [
+    "Recoge de forma sistematica los indicadores de tu operacion y mantenlos en un archivo, en vez de dejar que se pierdan segun pasan los dias.",
+    "Haz que ese archivo sea un banco de informacion que ensene de golpe todos los parametros de tu operacion.",
+    "Cuando algo vaya mal, repasa en ese archivo todos esos parametros.",
+    "Busca en ese repaso las desviaciones no sanas respecto de la norma, que es lo que te senala donde esta el problema."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_03.md, unidad Cap. 2, titulo textual Managing the Breakfast Factory. Sale de la PIEZA P12 de la frontera publicada en la vuelta 2 del frente, L99 a L99, 88 palabras, y de ningun otro tramo. ES EL TRAMO MAS CORTO DE MI TANDA QUE DA NODO, y el mas pequeno que da uno en toda la unidad: 88 palabras contra las 397 de la embajada de Londres, que da cero. Eso es lo que prueba que la vara no es el tamano sino el inventario. POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el libro nombra sus propios objetos de trabajo uno a uno, el archivo de indicadores, el banco de informacion, los parametros de la operacion y la desviacion respecto de la norma, y dice que se hace con cada uno. No hay un solo adjetivo de adecuacion en el sitio del criterio. DE DONDE SALE CADA PASO, uno a uno, y todos de L99: paso 1 de If you do not systematically collect and maintain an archive of indicators; paso 2 de you will have a bank of information that readily shows all the parameters of your operation; paso 3 de If something goes wrong, unido a allowing you to scan them; paso 4 de allowing you to scan them for unhealthy departures from the norm. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 4 pasos, 4 TRANSCRIPCION, 0 PUENTE. POR QUE SON CUATRO PASOS Y NO SEIS, y lo digo porque la tentacion de estirarlo estuvo ahi: el libro cierra el tramo con el precio de no tener el archivo (you will have to do an awful lot of quick research, y by the time you have it, the problem is likely to have gotten worse). Eso es el PORQUE del procedimiento, no un paso suyo, y por eso vive aqui en el resumen y no en pasos_accionables. Convertir un motivo en un paso es inflar la ficha con material que el libro no puso como accion. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: NO escribo cada cuanto se actualiza el archivo, porque el libro dice systematically y no dice con que ritmo; ese habria sido un puente de la especie periodo, que es la misma que el lote 1 pago trece veces. NO escribo en que soporte vive el archivo ni quien lo mantiene: el libro no pone ni soporte ni responsable. NO escribo que es una desviacion no sana ni a partir de cuanto lo es, porque el libro dice unhealthy departures from the norm y no pone vara; poner una cifra ahi seria inventarla entera. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: un lector estricto puede decir que cuatro pasos salidos de una sola frase larga son una LINEA y no un procedimiento, y que su sitio es un paso dentro del nodo de los cinco indicadores diarios. Lo sostengo porque el objeto es distinto, alli se eligen los indicadores que se miran cada dia y aqui se guarda la serie historica de todos ellos, y porque el disparador tambien es distinto, alli la primera hora de cada dia y aqui el momento en que algo se rompe. Si cae, cae DENTRO de mi marcado, y es el segundo de mi cola de relectura despues de la caja negra."
+}
