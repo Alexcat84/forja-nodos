@@ -928,3 +928,5 @@ CIERRE VERDE: el tallado y el censo de rutas.
 [2026-09-16 21:19:18] DETENIDO en la vuelta 1: el testigo desmiente el estado del sello. Ver docs/loop/PARA_ALEXIS.md
 [2026-09-16 22:04:28] extractor: fallo instantaneo (probable limite de uso), 4149s, costo "vacio", intento 1 de 7
 [2026-09-16 22:04:28] fallo "instantaneo"; espero 1800 segundos y reintento
+[2026-09-16 22:39:51] extractor: TURNO MUDO, el turno corrio 323s y cobro "2.2646879999999996" pero docs/loop/REPORTE.md quedo identico, intento 2 de 7
+[2026-09-16 22:39:51] fallo "extractor mudo"; espero 1800 segundos y reintento
