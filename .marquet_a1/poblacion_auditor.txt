@@ -1,0 +1,48 @@
+TODOS LOS .json BAJO cuarentena/ : 515
+    _insertados                   268
+    ensayo_referencia_163         163
+    marquet_turn_the_ship           9
+    scott_radical_candor           75
+
+CARPETAS FUERA DE POBLACION (aduana.CARPETAS_FUERA_DE_POBLACION) : _insertados, _derivadas
+POBLACION DE BANDEJAS QUE LA CASA MIDE (aduana.poblacion_de_bandejas) : 84
+GRAFO dataset/nodos.jsonl : 270
+POBLACION DEL BARRIDO D.38.4 = GRAFO MAS BANDEJAS : 354
+
+LO QUE QUEDA FUERA Y POR QUE (no por su nombre: por su tabla de fuentes)
+     268  carpeta fuera de poblacion
+      10  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: a_basic_guide_to
+       4  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: a_project_manager_s
+       6  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: assembling_tomorrow_a_guide
+       2  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: business_model_generation_osterwalder
+       3  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: change_by_design_revised
+       1  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: chris_voss_rompe_la
+       2  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: co_intelligence_living_and
+       3  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: cradle_to_cradle_michael
+       2  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: cybersecurity_for_small_business
+       4  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: essentials_of_supply_chain
+       1  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: financial_intelligence_for_entrepreneurs
+      11  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: franchise_your_business_mark
+       1  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: getting_started_with_the
+      24  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: juran_s_quality_handbook
+       7  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: managing_the_risks_of
+       3  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: never_lose_a_customer
+       1  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: osha3885
+      10  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: out_of_the_crisis
+       5  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: quality_is_free_the
+       1  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: rushton_croucher_y_baker
+       1  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: small_business
+       1  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: spin_selling_neil_rackham
+       2  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: the_art_of_thought
+       4  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: the_field_guide_to
+       8  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: the_founder_s_dilemmas
+       8  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: the_green_to_gold
+       5  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: the_hard_thing_about
+       5  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: the_lean_startup_eric
+       8  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: the_startup_owner_s
+       4  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: traction_gabriel_weinberg
+       2  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: value_proposition_design
+       4  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: venture_deals_brad_feld
+      10  clave(s) fuera de fuentes/FUENTES_CANONICAS.json: winning_at_new_products
+
+CLAVES DE fuentes/FUENTES_CANONICAS.json : 13 -> _lea_esto, bernerslee_bananas, gerber_emyth, gerber_emyth_cap17_reservado, grove_high_output, manual_sistema_conocimiento, marquet_turn_the_ship, onu_consumidor, openstax_business_ethics, openstax_org_behavior, scott_radical_candor, smart_who, zhuo_manager

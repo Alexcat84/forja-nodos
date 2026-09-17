@@ -1,0 +1,17 @@
+BANDEJA cuarentena/marquet_turn_the_ship : 9 candidatos
+
+id                                                   unidad       pasos  den fecha      lineas citadas en el resumen
+auditar_formacion_premios_ultima_fila                cap_03.md       11    2 2026-09-16 [55, 57]
+cambiar_forma_trabajar_conservar_plantilla           cap_02.md        5    2 2026-09-13 [25, 27, 29, 51]
+ceder_control_reforzar_competencia_claridad          cap_01.md        7    4 2026-09-13 [97]
+contar_firmas_cadena_tramite_parado                  cap_03.md       10    2 2026-09-16 [37, 39, 41, 43]
+encargar_meta_especifica_dejar_libre_metodo          cap_02.md        5    2 2026-09-13 [33, 49, 51]
+inspeccionar_reparto_informacion_notas_jefe          cap_03.md        8    2 2026-09-16 [45, 47, 49, 51, 53]
+observar_reunion_rutinaria_senales_plantilla         cap_03.md        9    2 2026-09-16 [17, 19, 21]
+recorrer_organizacion_escuchar_plantilla             cap_03.md        7    2 2026-09-16 [11, 15]
+seguir_frustrado_preguntar_implantacion_ideas        cap_03.md        8    2 2026-09-16 [23, 25, 27, 29]
+
+PASOS ESCRITOS EN LA BANDEJA: 70
+  cap_01.md         7 pasos
+  cap_02.md        10 pasos
+  cap_03.md        53 pasos

@@ -1,0 +1,33 @@
+$ git hash-object docs/loop/APERTURA_CIEGA.md
+4a0f7cfec6392179961b023062f0a7eb2ec0a4e9
+
+$ tail -4 docs/loop/SELLOS_APERTURA.jsonl
+{"vuelta": 1, "fecha": "2026-09-16 16:16:54", "sello": "406ca90e54a2097d3f8371f01346b48a5d377d51"}
+{"vuelta": 2, "fecha": "2026-09-16 19:01:13", "sello": "480d3b91340f63988cb1fb028d50106fee142ac2"}
+{"vuelta": 1, "fecha": "2026-09-16 22:30:55", "sello": "bfa62878d2f6a94e525aab413bf34ba1a798a934"}
+{"vuelta": 1, "fecha": "2026-09-16 22:37:41", "sello": "4a0f7cfec6392179961b023062f0a7eb2ec0a4e9"}
+
+$ sed -n "920,930p" docs/loop/loop.log
+[2026-09-16 21:55:07] auditor ciego: fallo instantaneo (probable limite de uso), 3664s, costo "vacio", intento 1 de 7
+[2026-09-16 21:55:08] fallo "instantaneo"; espero 1800 segundos y reintento
+[2026-09-16 22:37:37] auditor ciego listo (USD 2.7617724999999993), 749s, intento 2 de 7
+[2026-09-16 22:37:38]   herencia declarada: acta leida por su huella y los 4 heredados resueltos
+[2026-09-16 22:37:38] APERTURA CIEGA ROTA en la vuelta 1: REAPARECIERON REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 22:37:38]   durante la fase ciega. Solo se recuperan a mano, asi que fue deliberado.
+[2026-09-16 22:37:38]   testigo de guardas, antes de sellar (D.38.3)
+[2026-09-16 22:37:41]   testigo: las guardas estaban en verde en el instante del sello
+[2026-09-16 22:37:41]   apertura ciega sellada: 4a0f7cfec6392179961b023062f0a7eb2ec0a4e9
+[pre-commit] gate de integridad
+GATE VERDE.
+
+$ tail -1 docs/loop/loop.log
+[2026-09-16 22:37:45] VUELTA 1 : AUDITOR (claude-opus-5)
+
+$ git diff --stat HEAD -- docs/loop/REPORTE.md
+ docs/loop/REPORTE.md | 171 ---------------------------------------------------
+ 1 file changed, 171 deletions(-)
+
+$ ls --time-style=full-iso -la docs/loop/REPORTE.md docs/loop/ultimo_extractor.json docs/loop/ultimo_auditor.json
+-rw-r--r-- 1 AlexDesk 197609 2499868 2026-09-16 20:47:10.882590300 -0400 docs/loop/REPORTE.md
+-rw-r--r-- 1 AlexDesk 197609       0 2026-09-16 22:37:45.747348900 -0400 docs/loop/ultimo_auditor.json
+-rw-r--r-- 1 AlexDesk 197609       0 2026-09-16 20:47:10.900782000 -0400 docs/loop/ultimo_extractor.json
