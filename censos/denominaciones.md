@@ -733,3 +733,15 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | conversar_historia_vida_descubrir_motivadores | otro_idioma | CAREER CONVERSATIONS | ingles | - |
 | 2026-09-17 | conversar_suenios_cruzar_habilidades | nombre_largo | La segunda conversacion de carrera, la de los suenios, con la pregunta de arranque que sustituye a las preguntas al uso, los tres a cinco suenios, el cuadro de suenios contra habilidades y la comprobacion contra los valores | castellano | - |
 | 2026-09-17 | conversar_suenios_cruzar_habilidades | otro_idioma | The second conversation: dreams | ingles | - |
+| 2026-09-17 | trazar_plan_dieciocho_meses_aprendizaje | nombre_largo | La tercera conversacion de carrera, la del plan de dieciocho meses, con las cuatro preguntas que la persona se hace a si misma y la lista de cambios de papel, maestros y formacion con quien hace que y para cuando | castellano | - |
+| 2026-09-17 | trazar_plan_dieciocho_meses_aprendizaje | otro_idioma | Conversation three: eighteen-month plan | ingles | - |
+| 2026-09-17 | armar_plan_anual_crecimiento_equipo | nombre_largo | El plan anual de gestion del crecimiento del equipo, con sus cuatro etapas encadenadas por el propio texto: poner los nombres en las casillas, buscar una mirada de fuera, escribir los planes de crecimiento de tres a cinco puntos, y comprobar que no eres un corrector blando ni duro y que la equidad se sostiene entre niveles | castellano | - |
+| 2026-09-17 | armar_plan_anual_crecimiento_equipo | otro_idioma | GROWTH MANAGEMENT | ingles | - |
+| 2026-09-17 | armar_plan_anual_crecimiento_equipo | otro_idioma | growth-management plan | ingles | - |
+| 2026-09-17 | montar_proceso_contratacion_reducir_sesgo | nombre_largo | El proceso de contratacion con sus practicas rotuladas una a una por el libro: la descripcion del puesto escrita por quien contrata, el filtro previo de habilidades a ciegas, el mismo comite para varios candidatos, las entrevistas informales, los apuntes escritos en el momento, y la reunion presencial de decision con su sesgo hacia el no | castellano | - |
+| 2026-09-17 | montar_proceso_contratacion_reducir_sesgo | otro_idioma | HIRING: YOUR MENTALITY AND YOUR PROCESS | ingles | - |
+| 2026-09-17 | montar_proceso_contratacion_reducir_sesgo | otro_idioma | Process | ingles | - |
+| 2026-09-17 | facilitar_despido_tres_cosas | nombre_largo | La cabeza de la serie de tres del despido: los dos errores opuestos de las empresas, la premisa de que despedir es duro y debe serlo, y las tres cosas que lo vuelven mucho mas facil para la persona despedida, para ti y para tu equipo | castellano | - |
+| 2026-09-17 | facilitar_despido_tres_cosas | otro_idioma | FIRING | ingles | - |
+| 2026-09-17 | facilitar_despido_tres_cosas | otro_idioma | A necessary evil | ingles | - |
+| 2026-09-17 | facilitar_despido_tres_cosas | otro_idioma | if you do three things | ingles | - |

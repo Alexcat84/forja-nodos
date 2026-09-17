@@ -1,2 +1,12 @@
 cadena arrancada
 OK conversar_historia_vida_descubrir_motivadores  (304 nodos)
+cadena 3 arrancada desde el candidato 4, con el archivado D.31 dentro del mismo acto
+PARADA EN trazar_plan_dieciocho_meses_aprendizaje
+cadena 3 arrancada desde el candidato 4, con el archivado D.31 dentro del mismo acto
+OK trazar_plan_dieciocho_meses_aprendizaje  (306 nodos, bandeja 39)
+PARADA EN armar_plan_anual_crecimiento_equipo
+cadena 4 arrancada desde el candidato 5
+OK armar_plan_anual_crecimiento_equipo  (307 nodos, bandeja 38)
+OK montar_proceso_contratacion_reducir_sesgo  (308 nodos, bandeja 37)
+OK facilitar_despido_tres_cosas  (309 nodos, bandeja 36)
+PARADA EN admitir_pronto_mal_desempenio_cuatro_razones

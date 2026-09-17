@@ -38434,3 +38434,67 @@ escrita que la sostenga**.
 por el instrumento, y `L43` y `L173` llevan ademas **los guiones largos del libro sustituidos por coma**,
 porque pegarlos enteros pone en rojo el barrido de guiones de esta casa. **El numero de linea y el
 fragmento salen del mismo fichero y del mismo `open`**, no de mi memoria.
+
+### AC.3.c. **LA CAIDA QUE ME CACE A MI MISMO EN EL SEGUNDO CANDIDATO, Y NO LA CALLO** (`D.31`)
+
+> **`D.31` MANDA ARCHIVAR EL INSERTADO EN `cuarentena/_insertados/<libro>/` EN EL MISMO ACTO, Y ESO
+> LO HAGO YO, NO LA ADUANA.** Lo comprobe en el codigo antes de acusar a nadie: `src/aduana.py` define
+> `CARPETA_ARCHIVO` y sabe leer si una ruta esta archivada, **pero no mueve ni un fichero**. El mandato
+> del arnes lo dice con todas las letras: *los insertados a `cuarentena/_insertados/<libro>/` en el
+> mismo acto*.
+
+**NO LO HICE EN LOS DOS PRIMEROS, Y LA CONSECUENCIA SALIO MEDIDA EN LA SALIDA DEL SEGUNDO:**
+
+<!-- TALLADO: parcial salida=.v36/informes/02_historia.txt -->
+
+      vecino desplegar_tres_conversaciones_carrera  [...]
+        levantada por: paso_contra_nodo
+        paso_contra_nodo   0.641 (umbral 0.60)
+      vecino desplegar_tres_conversaciones_carrera  [...]
+        levantada por: paso_contra_nodo
+        paso_contra_nodo   0.641 (umbral 0.60)
+      arista madre-hijo cableada y escrita RESUELTA: desplegar_tres_conversaciones_carrera > conversar_historia_vida_descubrir_motivadores
+      arista madre-hijo cableada y escrita RESUELTA: desplegar_tres_conversaciones_carrera > conversar_historia_vida_descubrir_motivadores
+
+**EL MISMO VECINO DOS VECES, CON LAS MISMAS TRES SEÑALES**, porque
+`desplegar_tres_conversaciones_carrera` **vivia a la vez en el grafo y en la bandeja**, y la poblacion
+de la aduana es grafo mas bandejas (`D.38.5`). **Es exactamente lo que el propio codigo avisa que
+pasaria**, en `src/aduana.py` `L383`: *se descartan `_insertados` porque contarlos dos veces seria
+medir el mismo nodo contra si mismo*. **La carpeta hace el descarte; yo no puse el fichero dentro.**
+
+**QUE SE MOVIO Y QUE NO, medido y no supuesto:**
+
+| | |
+|---|---|
+| el **dato** | **NO se movio.** Gate verde, y la arista quedo escrita **una sola vez** en los dos sentidos (`nodos_siguientes` y `nodos_previos` con un elemento cada uno) |
+| la **bitacora** | **SI se duplico**: las lineas `430` y `431` son el mismo veredicto escrito dos veces |
+| la **poblacion publicada** | queda **inflada en 1** en la corrida del candidato `2`, y lo digo aqui porque esa cifra esta pegada arriba |
+
+**LAS TRES COSAS QUE HICE AL CAZARLO, Y NINGUNA BORRA NADA:**
+
+1. **PARE LA CADENA** antes del cuarto candidato, para que la bandeja fantasma no midiera a los diez
+   que faltaban. **El tercero ya estaba corriendo y lo deje terminar**: matar una insercion a mitad de
+   escritura es peor que la caida que estaba arreglando.
+2. **ARCHIVE LOS TRES** con `git mv`, y la cuenta lo dice:
+
+<!-- TALLADO: parcial salida=.v36/archivado.txt -->
+
+       antes:    bandeja: 43   archivados: 99
+       despues:  bandeja: 40   archivados: 102
+
+3. **ANOTE LA LINEA `431` SIN BORRARLA** (`forja.py anotar`), que es la via de la casa para una
+   correccion declarada:
+
+<!-- TALLADO: parcial salida=.v36/anotacion_431.txt -->
+
+       ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+         linea: 431
+         veredicto: CONTINUA (NO se toca)
+         la razon vieja SIGUE ENTERA: 416 caracteres, ninguno borrado
+         se aniaden 696 caracteres al final de la razon
+         lineas de la bitacora tocadas: 1 (la 431). Las otras 432, intactas.
+
+**Y EL REMEDIO VA DENTRO DEL INSTRUMENTO, NO DENTRO DE MI MEMORIA:** el `git mv` esta **en la misma
+funcion** que corre `forja.py insertar` en `.v36/cadena3.sh`, detras de la comprobacion del codigo de
+salida. **Un remedio que se cumple acordandose no es un remedio** (`D.35`), y este ya me habia fallado
+dos veces seguidas en la misma vuelta.

@@ -9,3 +9,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | desplegar_tres_conversaciones_carrera | las tres conversaciones de carrera | cabeza | - | scott_radical_candor | la cuenta esta escrita en la linea 43 del capitulo |
 | 2026-09-17 | conversar_historia_vida_descubrir_motivadores | las tres conversaciones de carrera | paso | desplegar_tres_conversaciones_carrera | scott_radical_candor | - |
 | 2026-09-17 | conversar_suenios_cruzar_habilidades | las tres conversaciones de carrera | paso | desplegar_tres_conversaciones_carrera | scott_radical_candor | - |
+| 2026-09-17 | trazar_plan_dieciocho_meses_aprendizaje | las tres conversaciones de carrera | paso | desplegar_tres_conversaciones_carrera | scott_radical_candor | - |
+| 2026-09-17 | facilitar_despido_tres_cosas | las tres cosas que facilitan un despido | cabeza | - | scott_radical_candor | la cuenta esta escrita en la linea 173 del capitulo |
