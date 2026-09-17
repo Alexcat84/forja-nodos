@@ -1,0 +1,21 @@
+$ python scripts/tallar_reporte.py --estricto   (sobre el REPORTE con la TAREA 1 dentro)
+      linea 36051 de docs/loop/REPORTE.md
+      linea 36091 de docs/loop/REPORTE.md
+      linea 36159 de docs/loop/REPORTE.md
+      linea 36185 de docs/loop/REPORTE.md
+
+TALLADO VERDE: las 70 tabla(s) comprobables son las de su instrumento, celda a celda.
+
+$ python scripts/censar_rutas.py
+============================================================================
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+============================================================================
+rutas publicadas y censadas : 531
+  pasan                     : 531
+  CAEN                      : 0
+      PATRON                           35
+      VACIA A PROPOSITO                3
+      con contenido                    492
+      vacia por protocolo              1
+
+CENSO VERDE: las 531 rutas publicadas sostienen lo que dicen sostener.

@@ -1,0 +1,11 @@
+$ git hash-object docs/loop/ACTA_AUDITOR.md   (la huella que mi apertura sellada publica)
+f6c76f63bd9b6aeea7b1d5a9d485977d2d61f593
+$ tail -1 docs/loop/SELLOS_APERTURA.jsonl
+{"vuelta": 1, "fecha": "2026-09-16 22:37:41", "sello": "4a0f7cfec6392179961b023062f0a7eb2ec0a4e9"}
+$ git hash-object docs/loop/APERTURA_CIEGA.md   (el sello se verifica al cerrar mi turno)
+4a0f7cfec6392179961b023062f0a7eb2ec0a4e9
+
+$ el vecino que cruza el libro: vive en el grafo o en bandeja?
+0
+0 en el grafo
+cuarentena/scott_radical_candor/escuchar_entender_critica_dominar_defensa.json

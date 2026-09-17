@@ -163,3 +163,107 @@ y el del lote entero. **El material para escribirlo esta entero en `.vm01/`, sin
 
 > **NADA DE ESTO PIDE DESHACER TRABAJO.** Los 9 candidatos estan bien y verificados, el grafo no
 > se movio, y las guardas estan en verde. **Lo que esta roto es la tuberia, no el dato.**
+
+---
+
+# ANEXO DEL SEGUNDO AUDITOR DE LA MISMA VUELTA. **NO BORRA NADA DE LO DE ARRIBA**
+
+*Escrito el 16 sep 2026 por el otro turno de auditor de la vuelta 1 de este frente, el que el arnes
+lanzo a las `22:37:45` con el sello `4a0f7cfe`. **Mi acta es la `ACTA M1`**, anexada detras de la que
+firma la pagina de arriba. `PARALELO.md` 5.2: en los registros **se conservan los dos**.*
+
+> **LOS CUATRO MOTIVOS DE ARRIBA SE SOSTIENEN Y NO LOS REPITO.** Los verifique con mis propios
+> comandos y coinciden con lo que yo medi por separado. **Este anexo anade UN motivo mas y CIERRA
+> una de las preguntas abiertas de arriba.**
+
+## MOTIVO 5, QUE ARRIBA QUEDO SIN DECIDIR: **`REPORTE` LLEGA A `3 de 3`. CREDITO ROTO**
+
+**El `MOTIVO 3` de arriba deja la racha en manos del fundador y dice la verdad al decir que no se la
+adjudica.** Yo si la adjudico, **y no por valiente: porque la alternativa exige un reinicio, y
+`AUDITOR_FORJA.md` 5.4 dice que los reinicios no son del auditor.**
+
+    5.4: La racha NO se reinicia sola. La reinicia una decision de Alexis escrita en
+         docs/loop/paradas/, y el acta lo dice citandola. Un auditor que pone su propia
+         racha a cero se esta absolviendo.
+
+**Abrir este frente en `1 de 3` es poner a cero con otro nombre.** Asi que aplico la racha heredada:
+
+| tanda | acta | caida de `REPORTE` | racha |
+|---|---|---|---:|
+| vuelta 31 | `ACTA 30` | la fila `10` de la tabla de la cabeza de `cap_11` pone un nodo que no es | `2 de 3` |
+| vuelta 32 | `ACTA 31` (otra rama) | `167` pasos publicados de `cap_11` donde el grafo tiene `187` | `3 de 3` |
+| **vuelta 1 de este frente** | **`ACTA M1`** | **ver abajo** | **`3 de 3`. TOPE** |
+
+### La caida de esta vuelta, con su medida y no con su adjetivo
+
+**Lo que el reporte publica**, en la celda `3` de su tabla de discutibles y otra vez en la prosa de
+su `1.a`:
+
+    | 3 | la vuelta mina UNA unidad cuando el tramo vigente del lote eran DOS, y el motivo es el coste de la aduana, no la cosecha | 1.a y 1.c |
+
+**Lo que dicen las sedes, leidas por mi en esta vuelta:**
+
+    $ grep -n "EL TRAMO DEL LOTE 5" docs/loop/ACTA_AUDITOR.md
+    24062:> **EL TRAMO DEL LOTE 5 SE QUEDA EN TRES CAPITULOS**, y el techo de candidatos de `EXTRACTOR.md`
+    $ grep -n "el tramo del lote 5" docs/loop/ACTA_AUDITOR.md
+    24403:| **el tramo del lote 5** | **se queda en TRES**, razonado en `4.4`
+
+Y `docs/loop/ORDEN_DE_LOTES.md` **no tiene fila de lote 5**: su ultima es `lote 4   TRES capitulos por
+vuelta`. **Ninguna acta posterior lo movio.** El `DOS` no sale de ninguna sede: sale de lo que hizo la
+vuelta 25, que mino dos unidades, **y el propio parrafo lo delata al escribir *las DOS minadas en la
+vuelta 25* dos lineas antes.**
+
+**LO QUE NO CAE, para que esto no se lea mas grande de lo que es:** la decision de minar UNA unidad
+**es correcta** (`EXTRACTOR.md` 17, *un capitulo por vuelta*, y el encargo de este frente en singular),
+los `6` candidatos estan dentro del techo de `5` a `15`, y el cierre corto va declarado con su cifra.
+**Lo que cae es el numero, no el acto.** Y cae **dentro del marcado**: el extractor marco esa duda
+antes de saber si acertaba.
+
+## LO QUE ESTE ANEXO CAMBIA Y LO QUE NO
+
+| | |
+|---|---|
+| **la parada** | **no cambia.** Arriba para por cuatro motivos; abajo por cinco. **Y si el fundador decide que cada frente lleva su propia racha, sigue parando por los cuatro de arriba** |
+| **lo que se te pide** | **una cosa mas, y es la que desbloquea:** el `MOTIVO 3` de arriba pide decidir **si un frente hereda la racha**. **Si decides que SI, esta parada ya tiene su motivo escrito y lo unico que falta es tu reinicio en `docs/loop/paradas/`.** Si decides que NO, este motivo 5 cae y los otros cuatro siguen en pie |
+
+## LO QUE YO VERIFIQUE POR SEPARADO, Y SALE IGUAL
+
+*Corrido por mi, no copiado de la pagina de arriba.*
+
+    $ python forja.py gate                      GATE VERDE. nodos verificados: 270
+    $ python forja.py guiones                   BARRIDO DE GUIONES VERDE
+    $ python tests/test_aceptacion.py           total: 201 pruebas, 0 fallos, 0 errores
+    $ python scripts/tallar_reporte.py --estricto   TALLADO VERDE: 70 tablas
+    $ python scripts/censar_rutas.py                CENSO VERDE: 531 rutas
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl    270    396
+    $ lineas de bitacora que nombran un id de este frente    0
+    $ nodos del grafo con fuente marquet_turn_the_ship       0
+
+**Las dieciseis filas de la frontera de `cap_03`, comprobadas una a una contra el fichero: `0` filas
+que no coinciden, suma `1978`, cuerpo `1978`, cero solapes, cero lineas con contenido sin cubrir.**
+**`PASOS INVENTADOS`: `0,00` en `cap_01` (7 pasos), `cap_02` (10) y `cap_03` (53), firmado tras releer
+los `70` a ciegas y `10` mas al azar con semilla `916` en mi turno normal.** **Los tres discutibles se
+sostienen los tres**, y el `2` lo adjudico citando la restriccion 1 de `D.27` y su ejemplar del banco.
+
+## Y UN HALLAZGO QUE NO ES PARADA NI CAIDA, PERO QUE TE TOCA SABER ANTES DE INSERTAR
+
+**RETIRAR UN PUENTE DE ONCE PASOS BORRO TRES PARES DE LA COLA DE LECTURA.** El extractor corrigio el
+paso `2` de `auditar_formacion_premios_ultima_fila` a las `21:24`, tres minutos despues de que la
+aduana midiera `contar_firmas` contra el. Medido por mi:
+
+    ANTES de la correccion, auditar_formacion levantaba CINCO vecinos:
+      observar 0.391 | recorrer 0.388 | contar_firmas 0.359 | seguir_frustrado 0.356 | encargar_meta 0.355
+    DESPUES, levanta DOS:
+      observar 0.370 | recorrer 0.353
+    Y hoy, medido con src.aduana.medir sobre el par:
+      contar_firmas -> auditar_formacion : similitud_texto 0.31, levantada_por []
+
+**No es de poblacion:** la señal de texto es `difflib.SequenceMatcher` (`src/aduana.py:266`), que no
+mira el corpus. **Es la consecuencia de dos reglas buenas juntas** (*un candidato por vez, en el acto
+de escribirlo* y *el puente se retira en el mismo acto*), **y nadie la habia escrito.** Lo que deja:
+**los informes de aduana de `c1` a `c5` que hay en `.vm01/` nombran una vecindad que ya no existe**, y
+**el unico barrido que describe la bandeja tal como esta hoy es el que se corre al final.**
+
+> **NADA DE ESTE ANEXO PIDE DESHACER TRABAJO, igual que la pagina de arriba.** Los `9` candidatos
+> estan bien y verificados por dos auditores por separado, el grafo no se movio, y las cinco guardas
+> estan en verde. **El bucle no funde ramas y el bucle no crea remotos.**

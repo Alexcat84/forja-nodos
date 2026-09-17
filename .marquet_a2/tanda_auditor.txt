@@ -1,0 +1,10 @@
+$ veredictos de la tanda y poblacion de SANO, contados por el auditor en esta vuelta
+LINEAS EN bitacora/VEREDICTOS.jsonl                 : 396
+LINEAS QUE NOMBRAN UN ID DE LA BANDEJA marquet      : 0
+IDS EN LA BANDEJA marquet_turn_the_ship             : 9
+VEREDICTOS SANO DE ESTA TANDA (poblacion pineada)   : 0
+NOTA: este comando cuenta lineas; NO abre el campo razon
+
+$ inserciones de esta vuelta en el grafo, contadas por el auditor
+NODOS EN dataset/nodos.jsonl                        : 270
+NODOS DEL GRAFO CON FUENTE marquet_turn_the_ship    : 0

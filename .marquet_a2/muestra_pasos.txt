@@ -1,0 +1,32 @@
+POBLACION DE PASOS EN LA BANDEJA: 70
+SEMILLA ESCRITA EN EL ACTA: 916
+
+--- cambiar_forma_trabajar_conservar_plantilla  [fuentes/marquet_turn_the_ship/cap_02.md,]  paso 2
+    Centrate en trabajar con lo que tienes, que es lo que el texto recomienda por encima de mucha rotacion.
+
+--- ceder_control_reforzar_competencia_claridad  [fuentes/marquet_turn_the_ship/cap_01.md,]  paso 1
+    Cuenta con las cuatro fases que el texto dice que describe en su lucha por cambiar la forma de relacionarse, y con como reparte sus partes: la primera en la Parte I, y el puente y los pilares en las Partes II, III y IV.
+
+--- ceder_control_reforzar_competencia_claridad  [fuentes/marquet_turn_the_ship/cap_01.md,]  paso 6
+    Refuerza por eso las dos cosas que el texto nombra segun vas cediendo control: la competencia tecnica y la claridad organizativa.
+
+--- contar_firmas_cadena_tramite_parado  [fuentes/marquet_turn_the_ship/cap_03.md,]  paso 2
+    Deja que salga el tramite concreto que le tiene parado. En el texto es la papeleta de permiso que no habia vuelto, entregada semanas antes, con las vacaciones de Navidad encima.
+
+--- encargar_meta_especifica_dejar_libre_metodo  [fuentes/marquet_turn_the_ship/cap_02.md,]  paso 2
+    No digas como se hace. El texto lo pone como la segunda mitad de lo mismo y es lo que separa este encargo de la microgestion.
+
+--- inspeccionar_reparto_informacion_notas_jefe  [fuentes/marquet_turn_the_ship/cap_03.md,]  paso 7
+    Quedate con el motivo que el subordinado atribuye al jefe. En el texto es que si algo no pasa y un equipo de inspeccion mira los registros, el comandante puede decir yo le dije que lo hiciera, y saca buena nota por estar muy implicado y por tener sus huellas por todas partes.
+
+--- recorrer_organizacion_escuchar_plantilla  [fuentes/marquet_turn_the_ship/cap_03.md,]  paso 2
+    Deja de lado la revision de expedientes que el procedimiento manda. El texto enumera la lista que le tocaba repasar en dos semanas: registros de formacion, de escuela, administrativos, de premios, de ascensos, los de operacion y mantenimiento de la planta del reactor, el sistema de armas, los torpedos y misiles, calendarios, ejercicios y material clasificado; y dice que la ignoro.
+
+--- recorrer_organizacion_escuchar_plantilla  [fuentes/marquet_turn_the_ship/cap_03.md,]  paso 4
+    Monta ademas una serie de recorridos en los que cada jefe o cada oficial te ensene sus propios espacios.
+
+--- seguir_frustrado_preguntar_implantacion_ideas  [fuentes/marquet_turn_the_ship/cap_03.md,]  paso 5
+    Fijate en si la respuesta es siempre la misma. En el texto lo fue todas las veces: alguien mas arriba en la cadena de mando no habia apoyado la iniciativa, asi que no paso nada.
+
+--- seguir_frustrado_preguntar_implantacion_ideas  [fuentes/marquet_turn_the_ship/cap_03.md,]  paso 6
+    Mira si lo mismo pasa un piso mas abajo. El texto registra que los suboficiales que trabajaban para el tampoco parecian dispuestos a salir con ideas propias.

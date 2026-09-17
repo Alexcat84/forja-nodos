@@ -1,0 +1,17 @@
+LA DISCREPANCIA, MEDIDA EN EL PAR Y NO EN LA TABLA: se llama a src.aduana.medir,
+que es la funcion de la casa, sobre UN par. difflib.SequenceMatcher (src/aduana.py:266)
+no depende de la poblacion, asi que la diferencia de 517 contra 354 no puede explicarla.
+
+umbrales: {}
+
+  contar_firmas_cadena_tramite_parado  ->  auditar_formacion_premios_ultima_fila
+   senales     : {'similitud_texto': 0.31, 'familia_id': 0.0, 'paso_contra_nodo': 0.481}
+   levantada_por: []
+
+  inspeccionar_reparto_informacion_notas_jefe  ->  auditar_formacion_premios_ultima_fila
+   senales     : {'similitud_texto': 0.311, 'familia_id': 0.0, 'paso_contra_nodo': 0.419}
+   levantada_por: []
+
+  auditar_formacion_premios_ultima_fila  ->  contar_firmas_cadena_tramite_parado
+   senales     : {'similitud_texto': 0.308, 'familia_id': 0.0, 'paso_contra_nodo': 0.465}
+   levantada_por: []

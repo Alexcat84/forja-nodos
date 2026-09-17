@@ -1023,3 +1023,5 @@ CENSO VERDE: las 522 rutas publicadas sostienen lo que dicen sostener.
 CIERRE VERDE: el tallado y el censo de rutas.
 [pre-commit] verde
 [2026-09-16 22:37:45] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-16 22:56:36] auditor: fallo instantaneo (probable limite de uso), 1534s, costo "vacio", intento 1 de 7
+[2026-09-16 22:56:36] fallo "instantaneo"; espero 1800 segundos y reintento
