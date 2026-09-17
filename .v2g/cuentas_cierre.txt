@@ -1,0 +1,21 @@
+| pieza, con el rotulo de lo que se cuenta | al abrir | **al cerrar** | movimiento |
+|---|---:|---:|---:|
+| nodos en `dataset/nodos.jsonl`, el grafo entero | 270 | **270** | 0 |
+| aristas por `nodos_siguientes`, sobre el grafo entero | 105 | **105** | 0 |
+| aristas por `nodos_previos`, sobre el grafo entero | 105 | **105** | 0 |
+| veredictos en `bitacora/VEREDICTOS.jsonl`, el fichero entero | 396 | **396** | 0 |
+| de esos veredictos, con `no_consumada: true` | 14 | **14** | 0 |
+| candidatos en bandeja de ESTE libro (al abrir eran los `8` de la vuelta 1; al cerrar, esos `8` mas los `15` de hoy) | 8 | **23** | **+15** |
+| pasos escritos en esos candidatos de ESTE libro | 57 | **178** | **+121** |
+| ficheros `.json` en TODAS las bandejas, contados a ojo | 249 | **264** | **+15** |
+| de esos ficheros, los que la ADUANA admite al barrido | 86 | **101** | **+15** |
+| POBLACION QUE VERA CADA INFORME MIO: grafo mas bandejas admitidas | 356 | **371** | **+15** |
+| pruebas de `tests/test_aceptacion.py` | sin medir al abrir, y se dice en vez de rellenarlo | **201**, `0` fallos | la vuelta 1 publico `201` en su corrida de las `22:23` |
+
+LO QUE ESTE FRENTE NO PUEDE HABER MOVIDO, Y SE COMPRUEBA EN VEZ DE PROMETERLO
+  nodos, aristas y veredictos: INTACTOS, como manda D.45: este frente no inserta
+  cero lineas escritas en dataset/, bitacora/, censos/ y config/pares_mutuos.jsonl
+
+LO QUE SI SE MOVIO, Y ES LO UNICO QUE ESTA VUELTA TENIA QUE MOVER
+  candidatos en la bandeja del libro : 15 mas
+  pasos escritos en esa bandeja      : 121 mas
