@@ -661,3 +661,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | demostrar_apertura_visiones_distintas | otro_idioma | demonstrating openness | ingles | - |
 | 2026-09-17 | manejar_contacto_fisico_regla_platino | nombre_largo | Espacio fisico: cuando un abrazo demuestra que te importa alguien, cuando es agresion odiosa, y la regla de platino que decide | castellano | - |
 | 2026-09-17 | manejar_contacto_fisico_regla_platino | otro_idioma | physical space, platinum rule | ingles | - |
+| 2026-09-17 | reconocer_emociones_propias_avisar_equipo | nombre_largo | Reconocer tus propias emociones: no puedes esconderlas, no debes pagarlas con el equipo, y lo unico que queda es decirlas | castellano | - |
+| 2026-09-17 | reconocer_emociones_propias_avisar_equipo | otro_idioma | recognizing your own emotions | ingles | - |
+| 2026-09-17 | dominar_reacciones_emociones_ajenas | nombre_largo | Dominar tus reacciones ante las emociones ajenas: reconocerlas, preguntar, no repartir culpa, y los tres apanios de mesa que el libro deja | castellano | - |
+| 2026-09-17 | dominar_reacciones_emociones_ajenas | otro_idioma | master your reactions to others' emotions | ingles | - |

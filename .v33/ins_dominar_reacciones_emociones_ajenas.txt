@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'dominar_reacciones_emociones_ajenas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (281 del grafo mas 67 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 282
+  censos escritos: denominaciones

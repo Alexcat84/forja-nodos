@@ -1,0 +1,441 @@
+test_a_caso_positivo_esquema_roto (__main__.PruebaA.test_a_caso_positivo_esquema_roto)
+Caso positivo: la guarda de esquema puede fallar, y falla. ... ok
+test_a_nodo_ejemplo_entra_limpio (__main__.PruebaA.test_a_nodo_ejemplo_entra_limpio) ... ok
+test_b_caso_positivo_vecino_legitimo_entra (__main__.PruebaB.test_b_caso_positivo_vecino_legitimo_entra)
+Caso positivo: un nodo del mismo dominio y la misma fuente, que hace ... ok
+test_b_gemelo_bloqueado (__main__.PruebaB.test_b_gemelo_bloqueado) ... ok
+test_b_senal_2_familia_de_id_sola (__main__.PruebaB.test_b_senal_2_familia_de_id_sola)
+La señal 2 aislada: mismo trabajo NO, id de la misma familia SI. ... ok
+test_c_caso_positivo_continua_sin_arista_es_rechazado (__main__.PruebaC.test_c_caso_positivo_continua_sin_arista_es_rechazado)
+Caso positivo: CONTINUA exige declarar la arista madre-hijo, y con ... ok
+test_c_caso_positivo_veredicto_sin_razon_es_rechazado (__main__.PruebaC.test_c_caso_positivo_veredicto_sin_razon_es_rechazado)
+Caso positivo: la razon escrita no es opcional. ... ok
+test_c_hijo_bloqueado_y_luego_cableado (__main__.PruebaC.test_c_hijo_bloqueado_y_luego_cableado) ... ok
+test_d_auto_arista_via_alias (__main__.PruebaD.test_d_auto_arista_via_alias) ... ok
+test_d_caso_positivo_arista_a_alias_ajeno_si_resuelve (__main__.PruebaD.test_d_caso_positivo_arista_a_alias_ajeno_si_resuelve)
+Caso positivo del otro lado: una arista hacia el ALIAS de OTRO nodo ... ok
+test_d_caso_positivo_sin_alias_queda_verde (__main__.PruebaD.test_d_caso_positivo_sin_alias_queda_verde)
+Caso positivo: el mismo dataset, con la arista hacia otro nodo de ... ok
+test_e_guion_largo_rompe_el_hook (__main__.PruebaE.test_e_guion_largo_rompe_el_hook) ... ok
+test_f_caso_positivo_con_fuente_canonica_entra (__main__.PruebaF.test_f_caso_positivo_con_fuente_canonica_entra)
+Caso positivo: el MISMO candidato con una fuente de la tabla entra ... ok
+test_f_fuente_fuera_de_tabla (__main__.PruebaF.test_f_fuente_fuera_de_tabla) ... ok
+test_a1_vuelta_declarada_en_lista_blanca_pasa (__main__.PruebaGate.test_a1_vuelta_declarada_en_lista_blanca_pasa)
+A.1: la unica vuelta legitima es el enlace mutuo declarado. Sin ... ok
+test_a2_orden_de_fuentes_por_fecha (__main__.PruebaGate.test_a2_orden_de_fuentes_por_fecha)
+A.2: en un nodo con mas de una fuente, la fecha no puede ... ok
+test_arista_duplicada_tras_resolver (__main__.PruebaGate.test_arista_duplicada_tras_resolver) ... ok
+test_arista_hacia_id_inexistente (__main__.PruebaGate.test_arista_hacia_id_inexistente) ... ok
+test_familia_de_id_repetida (__main__.PruebaGate.test_familia_de_id_repetida)
+Misma familia: cambia el orden y el plural, nada mas. ... ok
+test_guion_largo_en_un_nodo (__main__.PruebaGate.test_guion_largo_en_un_nodo) ... ok
+test_reglas_de_id_en_el_gate (__main__.PruebaGate.test_reglas_de_id_en_el_gate) ... ok
+test_vuelta_en_par_madre_hijo (__main__.PruebaGate.test_vuelta_en_par_madre_hijo) ... ok
+test_caso_control_sin_declarar_el_gate_lo_rechaza (__main__.PruebaMutuo.test_caso_control_sin_declarar_el_gate_lo_rechaza)
+Control: la MISMA vuelta escrita a mano, sin pasar por la aduana ... ok
+test_caso_negativo_mutuo_sin_las_dos_razones_es_rechazado (__main__.PruebaMutuo.test_caso_negativo_mutuo_sin_las_dos_razones_es_rechazado)
+Caso positivo de la guarda inversa: sin ida Y vuelta, MUTUO no ... ok
+test_mutuo_declarado_cablea_los_dos_sentidos (__main__.PruebaMutuo.test_mutuo_declarado_cablea_los_dos_sentidos) ... ok
+test_c1_caso_positivo_paso_que_el_nodo_no_tiene (__main__.PruebaCitaDeLinea.test_c1_caso_positivo_paso_que_el_nodo_no_tiene) ... ok
+test_c1_caso_positivo_sin_citar_la_linea_cae (__main__.PruebaCitaDeLinea.test_c1_caso_positivo_sin_citar_la_linea_cae) ... ok
+test_c1_caso_positivo_solape_disfrazado_cae (__main__.PruebaCitaDeLinea.test_c1_caso_positivo_solape_disfrazado_cae)
+La misma linea en los dos sentidos NO es enlace mutuo: es solape, ... ok
+test_c1_mutuo_legitimo_con_dos_lineas_distintas (__main__.PruebaCitaDeLinea.test_c1_mutuo_legitimo_con_dos_lineas_distintas) ... ok
+test_c2_cita_incompleta_es_rojo_y_la_nombra (__main__.PruebaCitaDeLinea.test_c2_cita_incompleta_es_rojo_y_la_nombra) ... ok
+test_c2_cita_que_apunta_hoy_a_la_misma_linea_es_rojo (__main__.PruebaCitaDeLinea.test_c2_cita_que_apunta_hoy_a_la_misma_linea_es_rojo)
+Una cita que era buena deja de serlo si el texto se movio debajo. ... ok
+test_c2_par_bidireccional_sin_cita_es_rojo (__main__.PruebaCitaDeLinea.test_c2_par_bidireccional_sin_cita_es_rojo)
+C.2: el gate verifica LA CITA, no la pertenencia. ... ok
+test_c3_la_cita_de_un_mutuo_tambien_envejece (__main__.PruebaVigencia.test_c3_la_cita_de_un_mutuo_tambien_envejece) ... ok
+test_c3_un_veredicto_contra_texto_que_cambio_es_rancio (__main__.PruebaVigencia.test_c3_un_veredicto_contra_texto_que_cambio_es_rancio) ... ok
+test_c3_un_veredicto_sin_huella_se_declara_no_se_da_por_bueno (__main__.PruebaVigencia.test_c3_un_veredicto_sin_huella_se_declara_no_se_da_por_bueno)
+Un veredicto de antes del bloque de vigencia no es vigente ni ... ok
+test_c4_caso_positivo_una_senal_que_si_aplica_sigue_votando (__main__.PruebaNoAplica.test_c4_caso_positivo_una_senal_que_si_aplica_sigue_votando) ... ok
+test_c4_las_tres_senales_declaran_su_dominio (__main__.PruebaNoAplica.test_c4_las_tres_senales_declaran_su_dominio) ... ok
+test_c4_medir_declara_en_vez_de_votar (__main__.PruebaNoAplica.test_c4_medir_declara_en_vez_de_votar) ... ok
+test_c4_una_senal_que_no_aplica_revienta_si_se_compara (__main__.PruebaNoAplica.test_c4_una_senal_que_no_aplica_revienta_si_se_compara) ... ok
+test_d17_caso_positivo_vivo_si_bloquea (__main__.PruebaDeprecado.test_d17_caso_positivo_vivo_si_bloquea)
+El mismo gemelo contra el mismo nodo VIVO si bloquea: la guarda ... ok
+test_d17_el_deprecado_no_se_ofrece_como_vecino (__main__.PruebaDeprecado.test_d17_el_deprecado_no_se_ofrece_como_vecino)
+Un gemelo del candidato que esta DEPRECADO no bloquea: su material ... ok
+test_d17_el_resolutor_camina_del_deprecado_al_superviviente (__main__.PruebaDeprecado.test_d17_el_resolutor_camina_del_deprecado_al_superviviente) ... ok
+test_d17_las_aristas_del_archivo_no_se_reciprocan (__main__.PruebaDeprecado.test_d17_las_aristas_del_archivo_no_se_reciprocan)
+El deprecado conserva su cableado y eso NO abre un hueco: si sus ... ok
+test_d17_ningun_vivo_nombra_a_un_deprecado (__main__.PruebaDeprecado.test_d17_ningun_vivo_nombra_a_un_deprecado) ... ok
+test_d17_un_candidato_no_puede_declararse_deprecado (__main__.PruebaDeprecado.test_d17_un_candidato_no_puede_declararse_deprecado) ... ok
+test_alias_que_es_id_vivo_es_fallo (__main__.PruebaResolutor.test_alias_que_es_id_vivo_es_fallo) ... ok
+test_cadena_de_alias (__main__.PruebaResolutor.test_cadena_de_alias) ... ok
+test_d33_se_ensancha_por_patron_y_no_por_lista (__main__.PruebaBandejas.test_d33_se_ensancha_por_patron_y_no_por_lista)
+12 sep 2026, decision del fundador, punto 1. ... ok
+test_el_patron_mira_el_nombre_y_la_carpeta (__main__.PruebaBandejas.test_el_patron_mira_el_nombre_y_la_carpeta) ... ok
+test_la_guarda_del_gate_si_muerde_al_candidato (__main__.PruebaBandejas.test_la_guarda_del_gate_si_muerde_al_candidato)
+No barrer la bandeja NO es indultar: la puerta sigue mordiendo. ... ok
+test_las_subcarpetas_de_bandeja_no_se_barren (__main__.PruebaBandejas.test_las_subcarpetas_de_bandeja_no_se_barren) ... ok
+test_regla1_ingles_con_equivalente_cae (__main__.PruebaReglasDeId.test_regla1_ingles_con_equivalente_cae) ... ok
+test_regla1_las_dos_listas_no_se_solapan (__main__.PruebaReglasDeId.test_regla1_las_dos_listas_no_se_solapan)
+Si chocan, la regla dejo de tener criterio. ... ok
+test_regla1_nombre_propio_no_es_palabra_ajena (__main__.PruebaReglasDeId.test_regla1_nombre_propio_no_es_palabra_ajena)
+Un apellido no tiene equivalente en castellano: no se caza. ... ok
+test_regla1_prestamo_asentado_pasa (__main__.PruebaReglasDeId.test_regla1_prestamo_asentado_pasa)
+CASO POSITIVO: la blanca indulta, o la regla seria un candado. ... ok
+test_regla2_la_version_cuya_base_vive_la_caza_tambien_la_señal (__main__.PruebaReglasDeId.test_regla2_la_version_cuya_base_vive_la_caza_tambien_la_señal)
+La puerta y la cola dicen lo mismo por caminos distintos. ... ok
+test_regla2_numero_de_denominacion_pasa (__main__.PruebaReglasDeId.test_regla2_numero_de_denominacion_pasa)
+CASO POSITIVO: los cuatro vivos que la regla vieja tumbaba mal. ... ok
+test_regla2_numero_en_medio_nunca_fue_version (__main__.PruebaReglasDeId.test_regla2_numero_en_medio_nunca_fue_version) ... ok
+test_regla2_sufijo_de_version_cae (__main__.PruebaReglasDeId.test_regla2_sufijo_de_version_cae) ... ok
+test_caso_positivo_con_el_candidato_de_HIJO_el_campo_sigue_bien (__main__.PruebaAristaDeclarada.test_caso_positivo_con_el_candidato_de_HIJO_el_campo_sigue_bien)
+El sentido que ya funcionaba, para que el arreglo no lo rompa. ... ok
+test_caso_positivo_sin_veredicto_no_hay_arista_ni_registro (__main__.PruebaAristaDeclarada.test_caso_positivo_sin_veredicto_no_hay_arista_ni_registro)
+La arista la crea la LECTURA, no la insercion. ... ok
+test_el_campo_arista_dice_madre_a_hijo_cuando_el_candidato_es_la_MADRE (__main__.PruebaAristaDeclarada.test_el_campo_arista_dice_madre_a_hijo_cuando_el_candidato_es_la_MADRE)
+ACTA 16 seccion 8.1: el campo `arista` escribia `X > X`. ... ok
+test_la_arista_declarada_se_cablea_y_deja_su_razon (__main__.PruebaAristaDeclarada.test_la_arista_declarada_se_cablea_y_deja_su_razon) ... ok
+test_ninguna_señal_levanta_la_pareja (__main__.PruebaAristaDeclarada.test_ninguna_señal_levanta_la_pareja)
+El supuesto de la prueba, comprobado y no supuesto. ... ok
+test_un_veredicto_sobre_un_id_que_no_vive_es_rechazo (__main__.PruebaAristaDeclarada.test_un_veredicto_sobre_un_id_que_no_vive_es_rechazo)
+Antes se tiraba en silencio. Ahora se rechaza nombrandolo. ... ok
+test_caso_positivo_la_misma_carpeta_sin_archivar_si_se_cuenta (__main__.PruebaArchivoDeInsertados.test_caso_positivo_la_misma_carpeta_sin_archivar_si_se_cuenta)
+Sin esto, la prueba de arriba solo probaria que el informe calla. ... ok
+test_la_carpeta_archivada_no_se_cuenta (__main__.PruebaArchivoDeInsertados.test_la_carpeta_archivada_no_se_cuenta) ... ok
+test_la_marca_es_el_segmento_de_ruta_no_el_nombre (__main__.PruebaArchivoDeInsertados.test_la_marca_es_el_segmento_de_ruta_no_el_nombre) ... ok
+test_un_lote_mezclado_declara_cuantos_no_conto (__main__.PruebaArchivoDeInsertados.test_un_lote_mezclado_declara_cuantos_no_conto)
+Lo peligroso no es no contarlos: es no contarlos EN SILENCIO. ... ok
+test_caso_positivo_un_paso_que_la_madre_no_tiene_es_rechazo (__main__.PruebaAristaDeclarada37.test_caso_positivo_un_paso_que_la_madre_no_tiene_es_rechazo)
+Sin esto, la prueba de arriba solo probaria que el comando escribe. ... ok
+test_declararla_dos_veces_es_rechazo (__main__.PruebaAristaDeclarada37.test_declararla_dos_veces_es_rechazo) ... ok
+test_la_arista_se_declara_y_deja_su_paso_citado (__main__.PruebaAristaDeclarada37.test_la_arista_se_declara_y_deja_su_paso_citado) ... ok
+test_la_auto_arista_es_rechazo (__main__.PruebaAristaDeclarada37.test_la_auto_arista_es_rechazo) ... ok
+test_la_simulacion_del_gate_manda_y_no_escribe_si_sale_roja (__main__.PruebaAristaDeclarada37.test_la_simulacion_del_gate_manda_y_no_escribe_si_sale_roja)
+La vuelta que el gate no admite no llega al dataset. ... ok
+test_sin_razon_escrita_no_se_declara (__main__.PruebaAristaDeclarada37.test_sin_razon_escrita_no_se_declara) ... ok
+test_un_extremo_que_no_vive_es_rechazo (__main__.PruebaAristaDeclarada37.test_un_extremo_que_no_vive_es_rechazo) ... ok
+test_caso_positivo_una_cita_de_verdad_SI_cuenta (__main__.PruebaSedeVacia.test_caso_positivo_una_cita_de_verdad_SI_cuenta)
+Sin esto, el salto podria estarse tragando el fichero entero. ... ok
+test_el_gate_y_la_vigencia_no_tropiezan_con_la_cabecera (__main__.PruebaSedeVacia.test_el_gate_y_la_vigencia_no_tropiezan_con_la_cabecera)
+La averia que este salto evita: un fallo cantado sobre una linea ... ok
+test_la_cabecera_no_cuenta_como_cita (__main__.PruebaSedeVacia.test_la_cabecera_no_cuenta_como_cita) ... ok
+test_caso_negativo_con_la_salida_pegada_debajo_pasa (__main__.PruebaHerencia.test_caso_negativo_con_la_salida_pegada_debajo_pasa) ... ok
+test_caso_positivo_el_adorno_no_es_una_puerta_trasera (__main__.PruebaHerencia.test_caso_positivo_el_adorno_no_es_una_puerta_trasera)
+Quitar el adorno afloja el FORMATO, no la EXIGENCIA: sin declaracion, ... ok
+test_caso_positivo_la_apertura_que_no_declara_se_caza (__main__.PruebaHerencia.test_caso_positivo_la_apertura_que_no_declara_se_caza)
+Sin esto, la guarda podria estar diciendo siempre que si. ... ok
+test_caso_positivo_sobre_el_acta_real_de_esta_casa (__main__.PruebaHerencia.test_caso_positivo_sobre_el_acta_real_de_esta_casa)
+CASO POSITIVO OBLIGATORIO de la TAREA 2.c, sobre el acta de verdad. ... ok
+test_caso_positivo_un_NO_APLICA_sin_salida_pegada_no_lo_acepta_el_sello (__main__.PruebaHerencia.test_caso_positivo_un_NO_APLICA_sin_salida_pegada_no_lo_acepta_el_sello)
+D.40 ensanchada el 16 sep 2026, punto 2.a de la decision. ... ok
+test_caso_positivo_una_huella_ajena_decorada_tampoco_cuela (__main__.PruebaHerencia.test_caso_positivo_una_huella_ajena_decorada_tampoco_cuela) ... ok
+test_caso_positivo_una_salida_lejos_no_cuenta_como_suya (__main__.PruebaHerencia.test_caso_positivo_una_salida_lejos_no_cuenta_como_suya)
+Pegada quiere decir DEBAJO, no en algun sitio del documento. ... ok
+test_caso_positivo_una_seccion_que_solo_menciona_la_palabra_no_se_hereda (__main__.PruebaHerencia.test_caso_positivo_una_seccion_que_solo_menciona_la_palabra_no_se_hereda)
+LA PRUEBA QUE CAZA A LA REGLA VIEJA. Falla si el extractor vuelve a ... ok
+test_caso_positivo_una_tabla_citada_no_se_entrega (__main__.PruebaHerencia.test_caso_positivo_una_tabla_citada_no_se_entrega)
+Un acta que copia la tabla de la anterior dentro de una cita la esta ... ok
+test_caso_positivo_una_tabla_que_habla_de_remedios_no_es_la_que_los_escribe (__main__.PruebaHerencia.test_caso_positivo_una_tabla_que_habla_de_remedios_no_es_la_que_los_escribe)
+La ACTA 29 9.4 pone `| lo que detecto | el remedio autorizado | ... |`. ... ok
+test_citar_dos_veces_la_linea_que_declaras_no_tumba_la_vuelta (__main__.PruebaHerencia.test_citar_dos_veces_la_linea_que_declaras_no_tumba_la_vuelta)
+CASO NEGATIVO. El remedio viejo pedia `grep -c` igual a 1, y la propia ... ok
+test_el_acta_se_elige_por_su_numero_y_no_por_los_que_su_titulo_cita (__main__.PruebaHerencia.test_el_acta_se_elige_por_su_numero_y_no_por_los_que_su_titulo_cita)
+Cazado al probar la TAREA 2: el titulo de la ACTA 29 nombra dentro a la ... ok
+test_el_prompt_lleva_el_texto_y_lo_que_exige (__main__.PruebaHerencia.test_el_prompt_lleva_el_texto_y_lo_que_exige) ... ok
+test_hereda_solo_de_la_ultima_acta (__main__.PruebaHerencia.test_hereda_solo_de_la_ultima_acta) ... ok
+test_la_apertura_escrita_en_markdown_de_la_casa_pasa (__main__.PruebaHerencia.test_la_apertura_escrita_en_markdown_de_la_casa_pasa)
+CASO NEGATIVO. Es la apertura real de la vuelta 19, que la guarda tumbo. ... ok
+test_la_salida_pegada_se_busca_en_el_markdown_de_la_casa (__main__.PruebaHerencia.test_la_salida_pegada_se_busca_en_el_markdown_de_la_casa)
+El auditor escribe en markdown, con cita y negrita. ... ok
+test_la_tabla_de_una_acta_vieja_no_viaja (__main__.PruebaHerencia.test_la_tabla_de_una_acta_vieja_no_viaja) ... ok
+test_no_aplica_sin_motivo_en_una_cita_y_con_motivo_en_otra_pasa (__main__.PruebaHerencia.test_no_aplica_sin_motivo_en_una_cita_y_con_motivo_en_otra_pasa)
+PRESENCIA: basta con que UNA de las veces este bien puesta. ... ok
+test_no_aplica_sin_motivo_es_lo_mismo_que_perderlo (__main__.PruebaHerencia.test_no_aplica_sin_motivo_es_lo_mismo_que_perderlo) ... ok
+test_otra_huella_no_cuela (__main__.PruebaHerencia.test_otra_huella_no_cuela)
+Decir que se leyo OTRA version del acta no es haberla leido. ... ok
+test_si_el_acta_nombra_remedios_y_no_escribe_tabla_se_dice_en_voz_alta (__main__.PruebaHerencia.test_si_el_acta_nombra_remedios_y_no_escribe_tabla_se_dice_en_voz_alta)
+Un arnes que entrega cero sin avisar es el mismo defecto por detras. ... ok
+test_sin_acta_no_revienta_y_la_linea_de_lectura_sigue_en_pie (__main__.PruebaHerencia.test_sin_acta_no_revienta_y_la_linea_de_lectura_sigue_en_pie)
+La primera vuelta de una casa no tiene acta anterior. ... ok
+test_un_CUMPLIDO_no_necesita_salida_pegada (__main__.PruebaHerencia.test_un_CUMPLIDO_no_necesita_salida_pegada)
+La exigencia es del NO APLICA: es la excusa, no el cumplimiento. ... ok
+test_una_apertura_completa_pasa (__main__.PruebaHerencia.test_una_apertura_completa_pasa) ... ok
+test_una_huella_corta_sigue_siendo_la_misma_huella (__main__.PruebaHerencia.test_una_huella_corta_sigue_siendo_la_misma_huella) ... ok
+test_caso_positivo_lo_que_no_puede_entrar_no_es_poblacion (__main__.PruebaPoblacionDelInforme.test_caso_positivo_lo_que_no_puede_entrar_no_es_poblacion)
+`cuarentena/` tambien aloja un CATALOGO DE REFERENCIA ajeno. ... ok
+test_el_candidato_no_se_mide_contra_si_mismo (__main__.PruebaPoblacionDelInforme.test_el_candidato_no_se_mide_contra_si_mismo)
+La errata de metodo de `D.38.4`, corregida en la `ACTA 18`: menos el ... ok
+test_el_informe_publica_la_poblacion_con_su_reparto (__main__.PruebaPoblacionDelInforme.test_el_informe_publica_la_poblacion_con_su_reparto)
+Un numero solo miente: 286 no dice lo mismo que 203 mas 83. ... ok
+test_el_resolutor_no_se_ensancha_con_las_bandejas (__main__.PruebaPoblacionDelInforme.test_el_resolutor_no_se_ensancha_con_las_bandejas)
+'el id ya vive en el grafo' es sobre el GRAFO. ... ok
+test_la_poblacion_suma_las_bandejas_y_descarta_lo_archivado (__main__.PruebaPoblacionDelInforme.test_la_poblacion_suma_las_bandejas_y_descarta_lo_archivado) ... ok
+test_un_par_con_los_dos_extremos_en_cuarentena_se_levanta (__main__.PruebaPoblacionDelInforme.test_un_par_con_los_dos_extremos_en_cuarentena_se_levanta)
+Es el ejemplar exacto que obligo a esta decision. ... ok
+test_arreglar_regenera_la_tabla_desde_su_instrumento (__main__.PruebaTallado.test_arreglar_regenera_la_tabla_desde_su_instrumento)
+La correccion es por regeneracion, NUNCA tecleando la celda buena. ... ok
+test_caso_negativo_con_reporte_presente_sigue_tumbando (__main__.PruebaTallado.test_caso_negativo_con_reporte_presente_sigue_tumbando)
+La exencion es por AUSENCIA, no un indulto general. ... ok
+test_caso_negativo_los_espacios_en_blanco_tampoco_son_una_salida (__main__.PruebaTallado.test_caso_negativo_los_espacios_en_blanco_tampoco_son_una_salida) ... ok
+test_caso_negativo_una_salida_con_contenido_sin_tabla_no_es_ruta_vacia (__main__.PruebaTallado.test_caso_negativo_una_salida_con_contenido_sin_tabla_no_es_ruta_vacia)
+VACIA no es lo mismo que SIN TABLA, y la diferencia tiene que aguantar. ... ok
+test_caso_positivo_sin_reporte_el_tallado_no_revienta_y_no_bloquea (__main__.PruebaTallado.test_caso_positivo_sin_reporte_el_tallado_no_revienta_y_no_bloquea)
+`D.34.2` RETIRA `REPORTE.md` durante la fase ciega, a proposito. ... ok
+test_caso_positivo_una_celda_tecleada_cae_y_nombra_su_fila (__main__.PruebaTallado.test_caso_positivo_una_celda_tecleada_cae_y_nombra_su_fila)
+Sin esto, la guarda podria estar diciendo siempre que si. ... ok
+test_caso_positivo_una_ruta_de_CERO_BYTES_es_caida_de_cifra (__main__.PruebaTallado.test_caso_positivo_una_ruta_de_CERO_BYTES_es_caida_de_cifra)
+Cosecha `7.B`: una ruta publicada como prueba que apunta a un fichero ... ok
+test_caso_positivo_una_tabla_sin_declaracion_no_se_mira (__main__.PruebaTallado.test_caso_positivo_una_tabla_sin_declaracion_no_se_mira)
+El reporte tiene 705 tablas y 8 declaran instrumento. ... ok
+test_citar_un_fichero_no_es_declarar_que_la_tabla_sale_de_el (__main__.PruebaTallado.test_citar_un_fichero_no_es_declarar_que_la_tabla_sale_de_el)
+La primera version marco ocho tablas por nombrar `loop.log` cerca. ... ok
+test_el_estricto_tumba_lo_que_el_hook_deja_pasar (__main__.PruebaTallado.test_el_estricto_tumba_lo_que_el_hook_deja_pasar)
+El cierre de vuelta es el momento en que los instrumentos siguen ahi. ... ok
+test_el_informe_nombra_la_fila_y_manda_regenerar (__main__.PruebaTallado.test_el_informe_nombra_la_fila_y_manda_regenerar) ... ok
+test_la_declaracion_vale_aunque_haya_un_bloque_en_medio (__main__.PruebaTallado.test_la_declaracion_vale_aunque_haya_un_bloque_en_medio)
+La casa declara, luego pega la comprobacion, y solo despues la tabla. ... ok
+test_un_instrumento_sin_tabla_no_se_puede_comprobar_y_no_es_diferencia (__main__.PruebaTallado.test_un_instrumento_sin_tabla_no_se_puede_comprobar_y_no_es_diferencia) ... ok
+test_un_reflujo_de_espacios_no_es_una_cifra_falsa (__main__.PruebaTallado.test_un_reflujo_de_espacios_no_es_una_cifra_falsa)
+El instrumento alinea con dos espacios y el markdown con uno. ... ok
+test_una_fila_que_falta_y_una_que_sobra_se_nombran (__main__.PruebaTallado.test_una_fila_que_falta_y_una_que_sobra_se_nombran) ... ok
+test_una_salida_que_no_esta_es_SIN_COMPROBAR_y_lo_dice (__main__.PruebaTallado.test_una_salida_que_no_esta_es_SIN_COMPROBAR_y_lo_dice) ... ok
+test_una_tabla_declarada_PARCIAL_cita_y_no_reproduce (__main__.PruebaTallado.test_una_tabla_declarada_PARCIAL_cita_y_no_reproduce)
+Una tabla de resumen puede traer DOS filas de instrumento y diez que no. ... ok
+test_una_tabla_pegada_de_su_instrumento_pasa (__main__.PruebaTallado.test_una_tabla_pegada_de_su_instrumento_pasa) ... ok
+test_caso_negativo_la_marca_en_la_misma_celda_la_deja_pasar (__main__.PruebaCensoDeRutas.test_caso_negativo_la_marca_en_la_misma_celda_la_deja_pasar)
+`.barrido_C_con_ensayo_v16.txt` con su marca y su cita de la ACTA 15. ... ok
+test_caso_negativo_un_patron_declarado_con_coincidencias_pasa (__main__.PruebaCensoDeRutas.test_caso_negativo_un_patron_declarado_con_coincidencias_pasa) ... ok
+test_caso_positivo_la_marca_SIN_MOTIVO_no_vale (__main__.PruebaCensoDeRutas.test_caso_positivo_la_marca_SIN_MOTIVO_no_vale)
+Una excusa sin motivo escrito es una excusa que se concede siempre. ... ok
+test_caso_positivo_la_ruta_de_cero_bytes_tumba_y_nombra_la_celda (__main__.PruebaCensoDeRutas.test_caso_positivo_la_ruta_de_cero_bytes_tumba_y_nombra_la_celda)
+Es la caida de la vuelta 25, entera y en pequenio. ... ok
+test_caso_positivo_otro_fichero_ausente_sigue_cayendo (__main__.PruebaCensoDeRutas.test_caso_positivo_otro_fichero_ausente_sigue_cayendo)
+La exencion es de los cuatro que D.34.2 nombra, no de todo lo que falte. ... ok
+test_caso_positivo_un_patron_sin_NI_UNA_coincidencia_tumba (__main__.PruebaCensoDeRutas.test_caso_positivo_un_patron_sin_NI_UNA_coincidencia_tumba) ... ok
+test_caso_positivo_un_patron_sin_declarar_tumba (__main__.PruebaCensoDeRutas.test_caso_positivo_un_patron_sin_declarar_tumba) ... ok
+test_caso_positivo_una_ruta_NOMBRADA_no_es_una_ruta_publicada (__main__.PruebaCensoDeRutas.test_caso_positivo_una_ruta_NOMBRADA_no_es_una_ruta_publicada)
+*el barrido tumbo `.c9/mk.py`* no ofrece nada como origen de una cifra. ... ok
+test_cero_coincidencias_puede_ser_la_cifra_si_se_declara (__main__.PruebaCensoDeRutas.test_cero_coincidencias_puede_ser_la_cifra_si_se_declara)
+`cuarentena/_insertados/*.json` da 0 porque ahi no cuelga ningun JSON ... ok
+test_la_lista_de_exentos_cubre_LOS_CUATRO_que_el_arnes_retira (__main__.PruebaCensoDeRutas.test_la_lista_de_exentos_cubre_LOS_CUATRO_que_el_arnes_retira)
+La lista de `config/` duplica la del arnes, y una copia se desincroniza. ... ok
+test_la_lista_fija_de_config_exime_por_protocolo (__main__.PruebaCensoDeRutas.test_la_lista_fija_de_config_exime_por_protocolo) ... ok
+test_la_marca_de_OTRA_celda_no_cubre_esta (__main__.PruebaCensoDeRutas.test_la_marca_de_OTRA_celda_no_cubre_esta)
+La marca va en LA MISMA celda: es lo que la hace visible junto a la cifra. ... ok
+test_los_retirados_por_D342_estan_exentos_por_protocolo (__main__.PruebaCensoDeRutas.test_los_retirados_por_D342_estan_exentos_por_protocolo)
+La fase ciega retira cuatro ficheros y commitea mientras no estan. ... ok
+test_pero_la_celda_que_ES_la_ruta_si_se_cuenta (__main__.PruebaCensoDeRutas.test_pero_la_celda_que_ES_la_ruta_si_se_cuenta)
+Es la forma de la columna *de donde sale*, y es donde cayo la vuelta 25. ... ok
+test_un_artefacto_de_maquina_esta_exento_POR_SU_FAMILIA (__main__.PruebaCensoDeRutas.test_un_artefacto_de_maquina_esta_exento_POR_SU_FAMILIA)
+`D.33` lo resolvio por PATRON el 12 sep, y el censo usa la misma funcion. ... ok
+test_un_candidato_insertado_resuelve_en_su_archivo (__main__.PruebaCensoDeRutas.test_un_candidato_insertado_resuelve_en_su_archivo)
+`D.31` lo archiva en `_insertados` en el mismo acto de insertarlo. ... ok
+test_un_comando_no_es_una_ruta_pero_su_fichero_si (__main__.PruebaCensoDeRutas.test_un_comando_no_es_una_ruta_pero_su_fichero_si)
+Lo que va en comillas suele ser la ORDEN entera. ... ok
+test_una_ruta_con_contenido_pasa (__main__.PruebaCensoDeRutas.test_una_ruta_con_contenido_pasa) ... ok
+test_una_ruta_que_no_esta_tumba_igual (__main__.PruebaCensoDeRutas.test_una_ruta_que_no_esta_tumba_igual) ... ok
+test_una_ruta_relativa_al_documento_resuelve (__main__.PruebaCensoDeRutas.test_una_ruta_relativa_al_documento_resuelve)
+Un acta que vive en docs/loop/ y escribe `paradas/x.md` no miente. ... ok
+test_caso_negativo_sin_vecino_en_la_bandeja_entra_limpio (__main__.PruebaAduanaMideBandejas.test_caso_negativo_sin_vecino_en_la_bandeja_entra_limpio)
+Una aduana que bloquea todo es un candado, no una guarda. ... ok
+test_caso_positivo_el_id_ya_vive_en_el_grafo_SIGUE_MIRANDO_SOLO_EL_GRAFO (__main__.PruebaAduanaMideBandejas.test_caso_positivo_el_id_ya_vive_en_el_grafo_SIGUE_MIRANDO_SOLO_EL_GRAFO)
+Lo dice la propia tabla de `D.38.5`. ... ok
+test_caso_positivo_un_vecino_que_vive_en_la_bandeja_BLOQUEA (__main__.PruebaAduanaMideBandejas.test_caso_positivo_un_vecino_que_vive_en_la_bandeja_BLOQUEA)
+Antes del 16 sep esto entraba limpio, y el par se aplazaba. ... ok
+test_el_candidato_no_se_mide_contra_si_mismo (__main__.PruebaAduanaMideBandejas.test_el_candidato_no_se_mide_contra_si_mismo)
+Esta EN la bandeja mientras se le mide: lo excluye su propio id. ... ok
+test_la_poblacion_va_con_su_reparto_y_no_con_un_numero_solo (__main__.PruebaAduanaMideBandejas.test_la_poblacion_va_con_su_reparto_y_no_con_un_numero_solo)
+`348` no dice lo mismo que `234 del grafo mas 114 que esperan`. ... ok
+test_lo_archivado_no_se_cuenta_dos_veces (__main__.PruebaAduanaMideBandejas.test_lo_archivado_no_se_cuenta_dos_veces)
+`D.31` lo archiva al insertarlo: ya vive en el grafo. ... ok
+test_caso_positivo_el_gate_muerde_en_la_simulacion (__main__.PruebaCorreccionDeclarada.test_caso_positivo_el_gate_muerde_en_la_simulacion)
+Un guion largo en el texto aniadido tumba la copia en memoria. ... ok
+test_caso_positivo_sin_la_marca_no_se_escribe_nada (__main__.PruebaCorreccionDeclarada.test_caso_positivo_sin_la_marca_no_se_escribe_nada)
+Sin esto, la prueba de arriba solo probaria que el comando escribe. ... ok
+test_la_correccion_se_escribe_y_el_texto_viejo_sigue_entero (__main__.PruebaCorreccionDeclarada.test_la_correccion_se_escribe_y_el_texto_viejo_sigue_entero) ... ok
+test_la_misma_correccion_no_se_declara_dos_veces (__main__.PruebaCorreccionDeclarada.test_la_misma_correccion_no_se_declara_dos_veces) ... ok
+test_ningun_otro_campo_se_corrige_por_aqui (__main__.PruebaCorreccionDeclarada.test_ningun_otro_campo_se_corrige_por_aqui)
+Cambiar un paso es cambiar el procedimiento, y eso entra por la aduana. ... ok
+test_sin_razon_escrita_no_se_corrige (__main__.PruebaCorreccionDeclarada.test_sin_razon_escrita_no_se_corrige) ... ok
+test_un_nodo_que_no_vive_es_rechazo (__main__.PruebaCorreccionDeclarada.test_un_nodo_que_no_vive_es_rechazo) ... ok
+test_caso_negativo_si_el_otro_extremo_VIVE_la_arista_se_cablea_igual (__main__.PruebaInsercionAtomica.test_caso_negativo_si_el_otro_extremo_VIVE_la_arista_se_cablea_igual)
+Lo que se difiere es el cableado imposible, no todos los cableados. ... ok
+test_caso_negativo_una_corrida_QUE_ENTRA_si_escribe_sus_veredictos (__main__.PruebaInsercionAtomica.test_caso_negativo_una_corrida_QUE_ENTRA_si_escribe_sus_veredictos)
+Una aduana que no escribe nunca es un cajon, no una bitacora. ... ok
+test_caso_positivo_CONTINUA_con_el_otro_extremo_EN_BANDEJA_se_escribe (__main__.PruebaInsercionAtomica.test_caso_positivo_CONTINUA_con_el_otro_extremo_EN_BANDEJA_se_escribe)
+`D.29`: el veredicto se escribe AHORA y la arista se cablea DESPUES. ... ok
+test_caso_positivo_una_corrida_RECHAZADA_no_deja_ni_una_linea (__main__.PruebaInsercionAtomica.test_caso_positivo_una_corrida_RECHAZADA_no_deja_ni_una_linea)
+El vecino 1 ya tenia su veredicto escrito cuando el 2 tumbo la corrida. ... ok
+test_el_gate_que_muerde_en_la_simulacion_tampoco_deja_linea (__main__.PruebaInsercionAtomica.test_el_gate_que_muerde_en_la_simulacion_tampoco_deja_linea)
+El ultimo rechazo del camino, que es el mas tardio de todos. ... ok
+test_la_clase_sigue_siendo_CONTINUA_y_no_se_degrada_a_SANO (__main__.PruebaInsercionAtomica.test_la_clase_sigue_siendo_CONTINUA_y_no_se_degrada_a_SANO)
+La vara de `6.1` no se mueve: escribir `SANO` seria caida de CLASE. ... ok
+test_la_guarda_de_D8_SIGUE_MORDIENDO_un_CONTINUA_sin_razon (__main__.PruebaInsercionAtomica.test_la_guarda_de_D8_SIGUE_MORDIENDO_un_CONTINUA_sin_razon)
+Y al morder tampoco deja linea: las dos mitades a la vez. ... ok
+test_un_REPITE_si_se_consuma_porque_no_imprime_rechazado (__main__.PruebaInsercionAtomica.test_un_REPITE_si_se_consuma_porque_no_imprime_rechazado)
+La aduana juzgo y devolvio el candidato a su reparto: eso SI lo hizo. ... ok
+test_un_id_que_no_esta_NI_EN_EL_GRAFO_NI_EN_BANDEJA_se_sigue_rechazando (__main__.PruebaInsercionAtomica.test_un_id_que_no_esta_NI_EN_EL_GRAFO_NI_EN_BANDEJA_se_sigue_rechazando)
+Una arista en cola tiene los dos extremos escritos en alguna parte. ... ok
+test_una_lectura_declarada_contra_un_candidato_de_bandeja_entra_en_cola (__main__.PruebaInsercionAtomica.test_una_lectura_declarada_contra_un_candidato_de_bandeja_entra_en_cola)
+`D.37` y `D.29` a la vez: la serie se declara aunque la parte espere. ... ok
+test_caso_positivo_ni_la_clase_ni_el_par_ni_las_huellas_se_mueven (__main__.PruebaAnotacionDeclarada.test_caso_positivo_ni_la_clase_ni_el_par_ni_las_huellas_se_mueven)
+Cambiar un veredicto es volver a juzgar el par, no anotar su linea. ... ok
+test_caso_positivo_ninguna_otra_linea_se_toca (__main__.PruebaAnotacionDeclarada.test_caso_positivo_ninguna_otra_linea_se_toca)
+La bitacora se reescribe entera: que solo cambie una es una medida. ... ok
+test_caso_positivo_un_vecino_que_NO_esta_en_ninguna_de_las_dos_sigue_IDO (__main__.PruebaAnotacionDeclarada.test_caso_positivo_un_vecino_que_NO_esta_en_ninguna_de_las_dos_sigue_IDO)
+Ensanchar la poblacion no es dejar de mirar. ... ok
+test_caso_positivo_una_linea_SIN_marcar_sigue_mordiendo (__main__.PruebaAnotacionDeclarada.test_caso_positivo_una_linea_SIN_marcar_sigue_mordiendo)
+Una guarda que se afloja para todos no es una guarda. ... ok
+test_el_guion_largo_tumba_la_anotacion (__main__.PruebaAnotacionDeclarada.test_el_guion_largo_tumba_la_anotacion) ... ok
+test_esta_operacion_no_toca_el_dataset (__main__.PruebaAnotacionDeclarada.test_esta_operacion_no_toca_el_dataset) ... ok
+test_la_anotacion_se_escribe_y_la_razon_vieja_sigue_entera (__main__.PruebaAnotacionDeclarada.test_la_anotacion_se_escribe_y_la_razon_vieja_sigue_entera) ... ok
+test_la_huella_de_un_nodo_VACIO_no_es_una_huella (__main__.PruebaAnotacionDeclarada.test_la_huella_de_un_nodo_VACIO_no_es_una_huella)
+`D.15` ya tiene su casilla: SIN HUELLA, incomprobable y declarado. ... ok
+test_la_marca_de_VIGENCIA_DECLARADA_tambien_vale_y_no_borra_el_hallazgo (__main__.PruebaAnotacionDeclarada.test_la_marca_de_VIGENCIA_DECLARADA_tambien_vale_y_no_borra_el_hallazgo)
+`D.15` segunda salida: se declara por que sigue valiendo. ... ok
+test_la_misma_anotacion_no_se_declara_dos_veces (__main__.PruebaAnotacionDeclarada.test_la_misma_anotacion_no_se_declara_dos_veces) ... ok
+test_la_vigencia_mide_GRAFO_MAS_BANDEJAS_y_no_solo_el_grafo (__main__.PruebaAnotacionDeclarada.test_la_vigencia_mide_GRAFO_MAS_BANDEJAS_y_no_solo_el_grafo)
+`D.38.4` y `D.38.5`: un vecino de bandeja no se fue, aun no ha llegado. ... ok
+test_no_consumada_saca_la_linea_de_la_vigencia_y_deja_su_cuenta (__main__.PruebaAnotacionDeclarada.test_no_consumada_saca_la_linea_de_la_vigencia_y_deja_su_cuenta)
+`ACTA 27` `5.3.b`: las cuatro fantasma desaparecen al declararse. ... ok
+test_sin_la_marca_de_D35_la_anotacion_no_corre (__main__.PruebaAnotacionDeclarada.test_sin_la_marca_de_D35_la_anotacion_no_corre) ... ok
+test_sin_razon_escrita_no_se_anota (__main__.PruebaAnotacionDeclarada.test_sin_razon_escrita_no_se_anota) ... ok
+test_una_linea_que_no_existe_es_rechazo (__main__.PruebaAnotacionDeclarada.test_una_linea_que_no_existe_es_rechazo) ... ok
+test_caso_positivo_el_gate_en_rojo_SI_tumba_el_cierre (__main__.PruebaVigenciaNoEsGuarda.test_caso_positivo_el_gate_en_rojo_SI_tumba_el_cierre)
+Una vigencia que no tumba no puede volver blando a todo lo demas. ... ok
+test_el_cierre_NO_se_pone_en_rojo_por_ella_Y_SIGUE_publicando_su_cuenta (__main__.PruebaVigenciaNoEsGuarda.test_el_cierre_NO_se_pone_en_rojo_por_ella_Y_SIGUE_publicando_su_cuenta)
+Si el arreglo hace que la cuenta deje de imprimirse, esta mal hecho. ... ok
+test_la_vigencia_en_rojo_por_su_cuenta_SIGUE_devolviendo_1 (__main__.PruebaVigenciaNoEsGuarda.test_la_vigencia_en_rojo_por_su_cuenta_SIGUE_devolviendo_1)
+La guarda no se afloja: sigue mordiendo cuando se la llama sola. ... ok
+test_caso_negativo_el_arbol_tal_como_esta_pasa (__main__.PruebaCerrojoYCenso.test_caso_negativo_el_arbol_tal_como_esta_pasa) ... ok
+test_caso_negativo_un_nodo_deprecado_sigue_estando_y_pasa (__main__.PruebaCerrojoYCenso.test_caso_negativo_un_nodo_deprecado_sigue_estando_y_pasa)
+`D.17`: un nodo que sale de superficie NO se borra, se marca. ... ok
+test_caso_positivo_dos_inserciones_a_la_vez_y_ninguna_pisa (__main__.PruebaCerrojoYCenso.test_caso_positivo_dos_inserciones_a_la_vez_y_ninguna_pisa)
+Es la caida de la vuelta 28, reproducida contra la aduana de verdad. ... skipped 'sin fixture de candidato'
+test_caso_positivo_un_nodo_que_desaparece_tumba_el_gate (__main__.PruebaCerrojoYCenso.test_caso_positivo_un_nodo_que_desaparece_tumba_el_gate)
+`D.44`, con el nodo de verdad que la vuelta 28 perdio. ... ok
+test_el_cerrojo_es_exclusivo (__main__.PruebaCerrojoYCenso.test_el_cerrojo_es_exclusivo) ... ok
+test_el_cerrojo_se_suelta_aunque_reviente_lo_de_dentro (__main__.PruebaCerrojoYCenso.test_el_cerrojo_se_suelta_aunque_reviente_lo_de_dentro)
+Un cerrojo que se queda puesto bloquea la casa para siempre. ... ok
+test_sin_commit_anterior_no_hay_nada_que_comparar (__main__.PruebaCerrojoYCenso.test_sin_commit_anterior_no_hay_nada_que_comparar)
+Un repo recien nacido, o un dataset de usar y tirar, no es un fallo. ... ok
+test_un_cerrojo_huerfano_se_rompe_pero_nunca_en_silencio (__main__.PruebaCerrojoYCenso.test_un_cerrojo_huerfano_se_rompe_pero_nunca_en_silencio) ... ok
+test_caso_negativo_todo_verde_el_sello_se_acepta (__main__.PruebaTestigoDeGuardas.test_caso_negativo_todo_verde_el_sello_se_acepta) ... ok
+test_caso_positivo_una_guarda_en_rojo_al_sellar_no_acepta_el_sello (__main__.PruebaTestigoDeGuardas.test_caso_positivo_una_guarda_en_rojo_al_sellar_no_acepta_el_sello)
+Es la vuelta 29: `guiones` en rojo en el instante del sello. ... ok
+test_el_testigo_registra_el_instante_y_el_arbol (__main__.PruebaTestigoDeGuardas.test_el_testigo_registra_el_instante_y_el_arbol)
+Sin hora y sin huella, el testigo no prueba CUANDO fue cierto. ... ok
+test_sin_testigo_tampoco_se_acepta (__main__.PruebaTestigoDeGuardas.test_sin_testigo_tampoco_se_acepta)
+Un sello sin testigo es un sello sin nada detras. ... ok
+test_caso_negativo_por_debajo_del_tope_no_para (__main__.PruebaCreditoPorLinea.test_caso_negativo_por_debajo_del_tope_no_para) ... ok
+test_caso_negativo_una_tanda_escrita_ya_es_una_linea_con_historia (__main__.PruebaCreditoPorLinea.test_caso_negativo_una_tanda_escrita_ya_es_una_linea_con_historia) ... ok
+test_caso_negativo_una_tanda_limpia_pone_el_contador_a_cero (__main__.PruebaCreditoPorLinea.test_caso_negativo_una_tanda_limpia_pone_el_contador_a_cero)
+D.38.1: seguidas significa consecutivas. ... ok
+test_caso_positivo_el_replay_caza_una_racha_que_no_suma (__main__.PruebaCreditoPorLinea.test_caso_positivo_el_replay_caza_una_racha_que_no_suma)
+Dos tandas con caida seguidas dan 2, y la que declare 1 se publica. ... ok
+test_caso_positivo_la_especie_en_su_tope_es_lo_que_para_el_bucle (__main__.PruebaCreditoPorLinea.test_caso_positivo_la_especie_en_su_tope_es_lo_que_para_el_bucle) ... ok
+test_caso_positivo_registro_sin_tandas_es_linea_recien_nacida (__main__.PruebaCreditoPorLinea.test_caso_positivo_registro_sin_tandas_es_linea_recien_nacida)
+Un `nacimiento` escrito NO es una tanda: la linea no ha dictado todavia. ... ok
+test_caso_positivo_sin_ningun_suceso_tampoco_ha_dictado_nada (__main__.PruebaCreditoPorLinea.test_caso_positivo_sin_ningun_suceso_tampoco_ha_dictado_nada) ... ok
+test_el_replay_no_acusa_a_la_historia_migrada (__main__.PruebaCreditoPorLinea.test_el_replay_no_acusa_a_la_historia_migrada)
+Sus reinicios viven en docs/loop/paradas/, no en el registro. Una guarda ... ok
+test_la_rama_de_insercion_es_la_linea_serial (__main__.PruebaCreditoPorLinea.test_la_rama_de_insercion_es_la_linea_serial)
+Y se comprueba ANTES que el prefijo: `extraccion-mundo-11` tambien empieza ... ok
+test_la_ultima_linea_de_la_especie_es_la_que_manda (__main__.PruebaCreditoPorLinea.test_la_ultima_linea_de_la_especie_es_la_que_manda) ... ok
+test_lo_escrito_se_vuelve_a_leer_igual (__main__.PruebaCreditoPorLinea.test_lo_escrito_se_vuelve_a_leer_igual) ... ok
+test_un_reinicio_del_fundador_pone_la_especie_a_cero (__main__.PruebaCreditoPorLinea.test_un_reinicio_del_fundador_pone_la_especie_a_cero)
+5.4 sigue entera: la reinicia una decision escrita, y va con su cita. ... ok
+test_una_linea_ilegible_del_registro_no_se_salta_en_silencio (__main__.PruebaCreditoPorLinea.test_una_linea_ilegible_del_registro_no_se_salta_en_silencio) ... ok
+test_una_racha_sin_cita_no_se_escribe (__main__.PruebaCreditoPorLinea.test_una_racha_sin_cita_no_se_escribe) ... ok
+test_una_rama_de_libro_es_su_libro (__main__.PruebaCreditoPorLinea.test_una_rama_de_libro_es_su_libro) ... ok
+test_caso_negativo_la_linea_serial_sigue_heredando_lo_suyo (__main__.PruebaHerenciaPorLinea.test_caso_negativo_la_linea_serial_sigue_heredando_lo_suyo)
+La serial tiene 31 tandas escritas: para ella no cambia nada. ... ok
+test_caso_positivo_un_frente_recien_nacido_hereda_cero (__main__.PruebaHerenciaPorLinea.test_caso_positivo_un_frente_recien_nacido_hereda_cero)
+Con las dos filas de remedios delante, y por eso lo dice en voz alta. ... ok
+test_el_aviso_nombra_la_linea_y_su_registro (__main__.PruebaHerenciaPorLinea.test_el_aviso_nombra_la_linea_y_su_registro)
+Un arnes que entrega cero sin avisar es el defecto por la puerta de atras. ... ok
+test_la_linea_serial_del_repo_tiene_su_registro_escrito (__main__.PruebaHerenciaPorLinea.test_la_linea_serial_del_repo_tiene_su_registro_escrito)
+Si esto cae, la serial se comporta como un frente recien nacido y deja de ... ok
+test_caso_negativo_cosechado_y_sin_dueno_si_se_continua (__main__.PruebaTableroDeFrentes.test_caso_negativo_cosechado_y_sin_dueno_si_se_continua)
+D.50 (d): se continua desde el capitulo SIGUIENTE al ultimo minado. ... ok
+test_caso_negativo_sin_empezar_y_sin_dueno_si_se_abre (__main__.PruebaTableroDeFrentes.test_caso_negativo_sin_empezar_y_sin_dueno_si_se_abre) ... ok
+test_caso_positivo_pausado_sin_cosechar_tampoco_se_abre (__main__.PruebaTableroDeFrentes.test_caso_positivo_pausado_sin_cosechar_tampoco_se_abre)
+Es marquet, y es la caida que D.49 vino a impedir: dueño NINGUNO, pero sus ... ok
+test_caso_positivo_un_libro_con_dueno_ajeno_no_se_abre (__main__.PruebaTableroDeFrentes.test_caso_positivo_un_libro_con_dueno_ajeno_no_se_abre)
+Es grove: EN CURSO en otra rama. La serial no lo toca. ... ok
+test_el_config_del_repo_lleva_todas_sus_citas (__main__.PruebaTableroDeFrentes.test_el_config_del_repo_lleva_todas_sus_citas) ... ok
+test_el_siguiente_libre_salta_los_que_tienen_trabajo_en_otra_rama (__main__.PruebaTableroDeFrentes.test_el_siguiente_libre_salta_los_que_tienen_trabajo_en_otra_rama)
+La serial NO va al lote 5: va al 6, que es el primero que puede tomar. ... ok
+test_el_tablero_del_repo_tiene_una_fila_por_lote (__main__.PruebaTableroDeFrentes.test_el_tablero_del_repo_tiene_una_fila_por_lote)
+Si esto cae, D.49 deja de poder decidir sobre algun libro del orden. ... ok
+test_los_relevables_salen_en_orden_de_lote (__main__.PruebaTableroDeFrentes.test_los_relevables_salen_en_orden_de_lote) ... ok
+test_ningun_estado_del_tablero_esta_fuera_de_los_seis (__main__.PruebaTableroDeFrentes.test_ningun_estado_del_tablero_esta_fuera_de_los_seis) ... ok
+test_su_propio_dueno_si_lo_continua (__main__.PruebaTableroDeFrentes.test_su_propio_dueno_si_lo_continua) ... ok
+test_un_libro_sin_fila_no_se_abre (__main__.PruebaTableroDeFrentes.test_un_libro_sin_fila_no_se_abre)
+Un libro sin fila no se abre: primero se mide. Nunca por omision. ... ok
+test_una_declaracion_sin_cita_detiene_el_instrumento (__main__.PruebaTableroDeFrentes.test_una_declaracion_sin_cita_detiene_el_instrumento) ... ok
+test_caso_negativo_el_libro_de_esta_linea_abre (__main__.PruebaGuardaDelTablero.test_caso_negativo_el_libro_de_esta_linea_abre) ... ok
+test_caso_negativo_ninguno_es_una_declaracion_valida (__main__.PruebaGuardaDelTablero.test_caso_negativo_ninguno_es_una_declaracion_valida) ... ok
+test_caso_positivo_pausado_sin_cosechar_tampoco_abre (__main__.PruebaGuardaDelTablero.test_caso_positivo_pausado_sin_cosechar_tampoco_abre) ... ok
+test_caso_positivo_un_encargo_que_declara_libro_de_otro_dueno_no_abre (__main__.PruebaGuardaDelTablero.test_caso_positivo_un_encargo_que_declara_libro_de_otro_dueno_no_abre) ... ok
+test_caso_positivo_un_encargo_que_no_declara_libro_no_abre (__main__.PruebaGuardaDelTablero.test_caso_positivo_un_encargo_que_no_declara_libro_no_abre)
+Un silencio no es una declaracion: para eso existe NINGUNO. ... ok
+test_el_encargo_vivo_del_repo_declara_su_libro (__main__.PruebaGuardaDelTablero.test_el_encargo_vivo_del_repo_declara_su_libro)
+Si esto cae, la proxima vuelta del principal se detiene antes de abrir. ... ok
+test_la_declaracion_se_lee_con_la_decoracion_de_la_casa (__main__.PruebaGuardaDelTablero.test_la_declaracion_se_lee_con_la_decoracion_de_la_casa) ... ok
+test_mencionar_un_frente_no_tumba_la_vuelta (__main__.PruebaGuardaDelTablero.test_mencionar_un_frente_no_tumba_la_vuelta)
+El encargo dice que NO los toca, y eso no puede ser lo que lo tumbe. ... ok
+test_caso_negativo_con_el_de_prioridad_2_cosechado_le_toca_ese (__main__.PruebaOrdenDePrioridad.test_caso_negativo_con_el_de_prioridad_2_cosechado_le_toca_ese) ... ok
+test_caso_negativo_el_encargo_que_declara_el_que_toca_pasa (__main__.PruebaOrdenDePrioridad.test_caso_negativo_el_encargo_que_declara_el_que_toca_pasa) ... ok
+test_caso_positivo_la_guarda_tumba_un_encargo_que_elige_otro_libro (__main__.PruebaOrdenDePrioridad.test_caso_positivo_la_guarda_tumba_un_encargo_que_elige_otro_libro) ... ok
+test_caso_positivo_sin_libro_no_elige_y_nombra_el_relevo_que_falta (__main__.PruebaOrdenDePrioridad.test_caso_positivo_sin_libro_no_elige_y_nombra_el_relevo_que_falta)
+Es la parada util: NINGUNO, y dice cual necesita y que le falta. ... ok
+test_caso_positivo_un_libro_fuera_de_campania_no_se_elige_nunca (__main__.PruebaOrdenDePrioridad.test_caso_positivo_un_libro_fuera_de_campania_no_se_elige_nunca)
+Estan SIN EMPEZAR y sin dueño, asi que D.49 los dejaria pasar. D.51 no. ... ok
+test_con_libro_propio_en_curso_le_toca_ese (__main__.PruebaOrdenDePrioridad.test_con_libro_propio_en_curso_le_toca_ese)
+D.50 releva AL CERRAR, no a mitad. ... ok
+test_el_mundo_11_completo_son_los_tres_del_corte_y_no_los_seis (__main__.PruebaOrdenDePrioridad.test_el_mundo_11_completo_son_los_tres_del_corte_y_no_los_seis) ... ok
+test_el_mundo_11_no_esta_completo_mientras_falte_uno (__main__.PruebaOrdenDePrioridad.test_el_mundo_11_no_esta_completo_mientras_falte_uno) ... ok
+test_el_orden_del_repo_lleva_los_seis_libros_con_su_motivo (__main__.PruebaOrdenDePrioridad.test_el_orden_del_repo_lleva_los_seis_libros_con_su_motivo) ... ok
+test_el_tablero_del_repo_publica_la_prioridad_de_los_seis (__main__.PruebaOrdenDePrioridad.test_el_tablero_del_repo_publica_la_prioridad_de_los_seis) ... ok
+test_la_prioridad_manda_sobre_el_numero_de_lote (__main__.PruebaOrdenDePrioridad.test_la_prioridad_manda_sobre_el_numero_de_lote)
+marquet es el lote 5 y gerber el 9, y gerber va ANTES por prioridad. ... ok
+
+----------------------------------------------------------------------
+Ran 251 tests in 67.946s
+
+OK (skipped=1)
+
+========================================================================
+PRUEBA DE ACEPTACION DE forja-nodos
+========================================================================
+  A. VERDE: el nodo ejemplo entro limpio, el gate quedo verde y los censos registraron las tres denominaciones por separado
+  B. VERDE: gemelo bloqueado (codigo 2) citando a registrar_fuente_canonica y la señal (similitud_texto)
+  C. VERDE: el hijo quedo bloqueado sin veredicto y entro tras declarar CONTINUA; la arista se declaro por el alias 'registro_fuentes_canonicas' y quedo escrita resuelta como registrar_fuente_canonica > elegir_grafia_clave
+  D. VERDE: la auto-arista via alias (saneo_grafo apunta a sanear_grafo) puso el gate en rojo, y la comparacion literal no la veia: cero coincidencias literales en el mismo dato
+  E. VERDE: hooks/pre-commit aborto con el guion largo (rojo con el archivo, verde sin el, verde de nuevo al quitarlo)
+  F. VERDE: el candidato con la fuente 'libro_que_nadie_registro' fue rechazado y no toco el dataset
+
+  guardas del gate y resolutor: 10 pruebas mas, cada una con su caso positivo
+  adjudicaciones del auditor (A.1 MUTUO, A.2 fuentes con fecha): 3 pruebas mas
+  TANDA A de la v0.3 (C.1 cita de linea, C.2 registro de citas, C.3 vigencia, C.4 no aplica, D.17 deprecado): 20 pruebas mas
+  el barrido NO entra en las bandejas de entrada (estreno del 9 sep 2026): 4 pruebas mas
+  reglas de id 1 y 2, reescritas por el fundador (10 sep 2026): 8 pruebas mas
+  D.29, la arista que la señal no levanta se declara por lectura: 6 pruebas mas
+  D.31, el candidato insertado se archiva y el informe no lo cuenta: 4 pruebas mas
+  D.37, la serie declarada por el titulo es arista por lectura: 7 pruebas mas
+  la sede de los pares mutuos nace vacia con su cabecera (5.7): 3 pruebas mas
+  D.40, lo que un auditor le deja al siguiente lo entrega el arnes: 25 pruebas mas
+  la poblacion del informe es grafo mas bandejas (12 sep 2026, punto 3): 6 pruebas mas
+  D.41, la tabla que dice ser de instrumento es la del instrumento: 18 pruebas mas
+  D.42, la unidad de la ruta es la celda: 20 pruebas mas
+  D.38.5 en la aduana, que es donde se decide: 6 pruebas mas
+  D.29 en la aduana: la insercion es atomica y la arista espera en cola: 10 pruebas mas
+  la linea ya escrita de la bitacora se marca por operacion, sin borrar: 15 pruebas mas
+  D.15: la vigencia es COLA DE TRABAJO y no guarda que tumbe el cierre: 3 pruebas mas
+  el cerrojo de insercion y D.44, el censo no decrece: 8 pruebas mas
+  el testigo de guardas al sellar (D.38.3, 16 sep): 4 pruebas mas
+  D.48, la racha es de su linea, y el credito vive por linea: 15 pruebas mas
+  D.48, la herencia de D.40 es la de SU linea: 4 pruebas mas
+  D.49 y D.50, un libro un dueño a la vez y el relevo: 12 pruebas mas
+  D.49, la guarda del tablero al abrir vuelta: 8 pruebas mas
+  D.51, el orden lo da el tablero, y el corte del mundo 11: 11 pruebas mas
+
+  total: 251 pruebas, 0 fallos, 0 errores
+========================================================================

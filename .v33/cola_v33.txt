@@ -1,0 +1,10 @@
+| lote | unidad | del libro | en bandeja | pasos escritos |
+|---|---|---|---:|---:|
+| lote 4, `scott_radical_candor` | `cap_09` | Cap. 6 | **20** | 272 |
+| lote 4, `scott_radical_candor` | `cap_10` | Cap. 7 | **14** | 206 |
+| lote 4, `scott_radical_candor` | `cap_12` | Getting Started | **2** | 50 |
+| lote 4, `scott_radical_candor` | `cap_13` | Afterword | **12** | 212 |
+| lote 4, `scott_radical_candor` | `cap_14` | Bonus Chapter | **15** | 174 |
+| lote 5, `marquet_turn_the_ship` | `cap_01` | *no mapeada* | **1** | 7 |
+| lote 5, `marquet_turn_the_ship` | `cap_02` | *no mapeada* | **2** | 10 |
+| **las dos bandejas** | | | **66** | **931** |
