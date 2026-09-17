@@ -37819,3 +37819,104 @@ inmediatamente* seguido de *vuelve a intentarlo con cuidado* **se contradice a s
 tamaños **no puede tener dos valores publicados sin decir cual manda**.
 
 **TAREA 1 CERRADA.**
+
+## AB.3. **TAREA 2: LA FIDELIDAD, ANTES DE QUE ENTRE NI UN NODO** (`D.30`)
+
+**El orden se ve en mis commits:** esta seccion se escribe y se commitea **antes** de la primera
+insercion de la `TAREA 3`, que es lo que el encargo no discute.
+
+### AB.3.a. **`PASOS INVENTADOS` DEL TRAMO, FILA POR UNIDAD MAS TOTAL**
+
+<!-- TALLADO: script=.v35/fidelidad.py salida=.v35/fidelidad_tabla.txt -->
+
+| unidad | linea | pasos | TRANSCRIPCION | PUENTE | por ciento |
+|---|---:|---:|---:|---:|---:|
+| `entregar_evaluacion_formal_desempenio_nueve_consejos` | L331 | 22 | 22 | **0** | 0,00 |
+| `impedir_punialadas_espalda_equipo` | L363 | 9 | 9 | **0** | 0,00 |
+| `fomentar_guia_reciproca_companieros` | L369 | 13 | 13 | **0** | 0,00 |
+| `conducir_reuniones_salto_nivel_diez_reglas` | L383 | 31 | 31 | **0** | 0,00 |
+| `resolver_dudas_frecuentes_reuniones_salto_nivel` | L415 | 16 | 16 | **0** | 0,00 |
+| **TOTAL del tramo** | | **91** | **91** | **0** | **0,00** |
+
+**Los `91` pasos cuadran al digito con la cuenta que el encargo publica** en su seccion 4
+(`cap_09 candidatos= 5 pasos= 91`), y la columna de pasos **se lee del fichero**, no se teclea.
+
+**`0,00` por ciento contra un tope de `10`. La escalada se decide sobre el peor capitulo**, y el peor
+de este tramo es tambien `0,00`: **el tramo no cambia de escalon.**
+
+> **Y LO DIGO YO ANTES QUE NADIE:** la vuelta 34 publico este mismo `0` sobre `cap_09` y **el auditor
+> le encontro un puente** (`AB.2.d`). **Un `0` mio ya fallo una vez en este capitulo**, asi que lo de
+> abajo no es un adorno de la tabla: es la unica parte de esta tarea que vale algo.
+
+### AB.3.b. **EL OJO NUEVO, BARRIDO A MAQUINA Y NO DE MEMORIA**
+
+*El encargo lo pide asi: **relee expresamente todo paso cuya linea se contradiga consigo misma o cuya
+polaridad el paso parta por la mitad, y declara cuales releiste aunque sean cero.** Un barrido que solo
+se cuenta cuando encuentra algo no es un barrido.*
+
+**NO LO BUSCO A OJO. LO BUSCO CON UN `grep`**, porque el puente de la vuelta 34 se colo precisamente de
+un `X or Y` que nadie fue a buscar.
+
+<!-- TALLADO: script=.v35/polaridad.py salida=.v35/polaridad.txt -->
+
+    TRAMO cap_09, lineas 331 a 425: las 5 unidades del tramo
+      construcciones 'X or Y' halladas : 25
+      de ellas, BAJO NEGACION cercana  : 6
+      releidas por el ojo nuevo        : 6
+
+**`25` construcciones `X or Y` en el tramo, y `6` caen bajo una negacion cercana**, que es el sitio
+exacto donde la polaridad se puede partir. **Releo esas `6` una por una**, con su linea pegada
+(`D.35`) y su veredicto al lado:
+
+<!-- TALLADO: parcial salida=.v35/ojo_nuevo_citas.txt -->
+
+| n | la linea, pegada de `grep -n -o` | el paso | veredicto |
+|---:|---|---|---|
+| 1 | `367:This must be a live conversation (i.e., not over email or text).` | `P5` de `impedir_punialadas_espalda_equipo`: *Exige que sea una conversacion en vivo, y no por correo ni por mensaje.* | **SANO.** `not (X or Y)` reparte la negacion a las dos mitades, y el paso escribe `ni ... ni`: **las dos en negativo, como la unica lectura posible** |
+| 2 | `377:As long as the pilots hadn't been careless or reckless` | **ninguno** | **NO DA PASO.** Es el sistema de la aviacion, que el `resumen_teorico` de `fomentar_guia_reciproca_companieros` ya declara fuera de los pasos por ser ejemplar y no acto del lector |
+| 3 | `391:it must be clear that you aren't automatically presuming that the boss, your direct report, is guilty, or that you're unwilling to hear any criticism of your direct report.` | `P3` de `conducir_reuniones_salto_nivel_diez_reglas` | **DISCUTIBLE 1, y lo marco antes de saber si acierto.** Ver `AB.3.c` |
+| 4 | `411:If people feel that no changes were made, or that the meeting didn't make a difference` | `P29` de `conducir_reuniones_salto_nivel_diez_reglas`: *Si la gente cree que no se hizo ningun cambio, o que la reunion no sirvio de nada...* | **SANO.** Las dos mitades vienen **ya negadas en el libro** (`no changes`, `didn't make`) y el paso escribe las dos en negativo |
+| 5 | `425:Be careful not to judge or defend the manager about whom you are soliciting feedback.` | `P11` de `resolver_dudas_frecuentes_reuniones_salto_nivel`: *ten cuidado de no juzgar ni defender al jefe...* | **SANO.** `not (judge or defend)`, y el paso reparte con `ni`: **las dos en negativo** |
+| 6 | `425:Don't defend or malign the boss you're hearing about.` | `P15` de `resolver_dudas_frecuentes_reuniones_salto_nivel`: *No defiendas ni denigres al jefe...* | **SANO.** Mismo reparto, mismo `ni`, **cero mitades sueltas** |
+
+**CINCO DE LAS SEIS SALEN SANAS Y LA SEXTA LA MARCO YO COMO DISCUTIBLE.** Ninguna repite la caida de
+`P13`: **en las cinco, las dos mitades comparten polaridad en el paso igual que en el libro.**
+
+### AB.3.c. **`DISCUTIBLE 1`: LA UNICA DE LAS SEIS QUE NO ME ATREVO A FIRMAR SOLO**
+
+| | |
+|---|---|
+| **el libro**, `L391` | `it must be clear that you aren't automatically presuming that the boss ... is guilty, or that you're unwilling to hear any criticism` |
+| **el paso `P3`** | *tiene que quedar claro que **no** das por supuesto que el jefe ... sea culpable, **ni** que **no** estes dispuesto a oir ninguna critica suya* |
+
+**POR QUE LO CUENTO `TRANSCRIPCION`:** en ingles, `aren't (A or B)` reparte la negacion, y `B` es
+`unwilling`, que **ya es un concepto negativo escrito en forma positiva**. Al castellano, `unwilling`
+es `no estar dispuesto`, asi que el paso escribe `ni que no estes dispuesto` y **llega al mismo sitio
+que el libro**: no presumes culpa, y no eres reacio a oir critica.
+
+**POR QUE LO MARCO IGUAL, Y ANTES DE SABER SI ACIERTO:** el paso encadena **`no ... ni ... no`**, que es
+una doble negacion, y **la lectura literal de una doble negacion es la contraria de la que el libro
+quiere**. No es el defecto de `P13` (aquella partia la polaridad; esta la conserva), **pero es la unica
+de las seis cuya correccion depende de como se lea una particula y no de lo que diga el libro.**
+
+**LO QUE NO HAGO:** no lo reescribo. `D.30` me manda retirar o reescribir **un puente**, y esto **no lo
+he juzgado puente**. Si el auditor lo lee al reves, **cae dentro de mi marcado**, que es de lo que sirve
+marcar a ciegas (`EXTRACTOR.md` 8).
+
+### AB.3.d. **LAS CUENTAS QUE PONGO YO DONDE EL LIBRO NO LAS ESCRIBE** (cola de doctrina `3`)
+
+**Me topo con la pregunta `3` de la cola y solo aporto el caso, sin adjudicarla.** Tres ids de este
+tramo llevan una cuenta en el nombre, y **en los tres la cuenta la pongo yo** porque el libro escribe
+un indefinido. **Las recuento de los rotulos antes de insertar**, que es lo que la vuelta 34 encontro
+mal una vez de seis:
+
+| id | lo que el libro escribe | rotulos contados | cuadra |
+|---|---|---:|---|
+| `..._nueve_consejos` | `here is my advice`, `L339`, **sin cuenta** | `341,343,345,347,353,355,357,359,361` = **9** | **si** |
+| `..._diez_reglas` | `a few rules of thumb`, `L391`, **sin cuenta** | `393,395,397,401,403,405,407,409,411,413` = **10** | **si** |
+| `resolver_dudas_frecuentes...` (titulo: *las cuatro dudas*) | `some of the questions`, `L417`, **sin cuenta** | `419,421,423,425` = **4** | **si** |
+
+**LAS TRES CUADRAN, Y NINGUNA ES `D.37`**: `D.37` exige que **la cuenta este escrita**, y aqui no lo
+esta en ninguna de las tres. **Cero series cableadas por cuenta en este tramo.**
+
+**TAREA 2 CERRADA.**
