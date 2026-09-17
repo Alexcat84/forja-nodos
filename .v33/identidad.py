@@ -37,8 +37,14 @@ print("| rama | `%s` | `git rev-parse --abbrev-ref HEAD` |"
       % git("rev-parse", "--abbrev-ref", "HEAD"))
 print("| commit que abrio mi turno | `%s`, %s | `git log` |" % (mios[-1][0], mios[-1][1]))
 print("| commit al escribir este bloque | `%s`, %s | `git log` |" % (mios[0][0], mios[0][1]))
-print("| commits de esta vuelta | **%d** | `git log` |" % len(mios))
+MARCAS = ("V.33", "Apertura de la vuelta 33")
+ajenos = [c for c in mios if not c[2].startswith(MARCAS)]
+print("| commits en la ventana de mi turno | **%d** | `git log` |" % len(mios))
+print("| de ellos, MIOS | **%d** | el asunto empieza por `V.33` o por la apertura |"
+      % (len(mios) - len(ajenos)))
+print("| de ellos, **de la otra sesion viva** | **%d** | `Z.4` |" % len(ajenos))
 print("")
-print("LOS COMMITS DE ESTA VUELTA, DEL PRIMERO AL ULTIMO:")
+print("LA VENTANA ENTERA, DEL PRIMERO AL ULTIMO. `>` marca los que NO son mios:")
 for hash_corto, fecha, asunto in reversed(mios):
-    print("  %s  %s  %s" % (hash_corto, fecha, asunto[:96]))
+    quien = " " if asunto.startswith(MARCAS) else ">"
+    print("%s %s  %s  %s" % (quien, hash_corto, fecha, asunto[:92]))

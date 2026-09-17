@@ -22,7 +22,10 @@ UNIDADES = {"cap_04": "Cap. 1", "cap_05": "Cap. 2", "cap_06": "Cap. 3", "cap_07"
             "cap_08": "Cap. 5", "cap_09": "Cap. 6", "cap_10": "Cap. 7", "cap_11": "Cap. 8",
             "cap_12": "Getting Started", "cap_13": "Afterword", "cap_14": "Bonus Chapter"}
 
-print("| lote | unidad | del libro | en bandeja | pasos escritos |")
+# LA PRIMERA COLUMNA TIENE QUE SER UNICA POR FILA, o el tallado de `D.41` no puede
+# casar fila con fila y la tabla sale DIFIERE aunque cada celda sea correcta. Me paso
+# en esta vuelta con `lote 4` repetido cinco veces: la unidad va delante.
+print("| unidad | lote | del libro | en bandeja | pasos escritos |")
 print("|---|---|---|---:|---:|")
 gran_total = gran_pasos = 0
 for nombre, clave in LOTES:
@@ -35,8 +38,8 @@ for nombre, clave in LOTES:
         cuenta[unidad] += 1
         pasos[unidad] += len(datos.get("pasos_accionables") or [])
     for unidad in sorted(cuenta):
-        print("| %s, `%s` | `%s` | %s | **%d** | %d |"
-              % (nombre, clave, unidad, UNIDADES.get(unidad, "*no mapeada*"),
+        print("| `%s` | %s, `%s` | %s | **%d** | %d |"
+              % (unidad, nombre, clave, UNIDADES.get(unidad, "*no mapeada*"),
                  cuenta[unidad], pasos[unidad]))
         gran_total += cuenta[unidad]
         gran_pasos += pasos[unidad]

@@ -36649,3 +36649,224 @@ posteriores a `dd52033`.
 **Y LO QUE NO HAGO, A PROPOSITO:** no reescribo esos dos commits. Estan **empujados**, la otra sesion
 **ya escribio su declaracion encima**, y reescribir historia compartida con una sesion viva moveria de
 sitio trabajo que no es mio. **Una parada se declara, no se tapa.**
+
+## Z.5. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+**Por numero y linea, sin reabrir el argumento** (`D.47`). Empieza la relectura ciega por aqui.
+
+| # | que discuto | donde |
+|---:|---|---|
+| 1 | **`agendar_cuidados_propios_cumplirlos` funde DOS rotulos del libro** (`Calendar` de `L37` y `Show up for yourself` de `L41`) en un solo nodo por `P.19`. **Rompo aqui el criterio de corte por rotulo de linea que uso en los otros once del capitulo.** Si la vara es el rotulo, esto son dos nodos de tres y dos pasos | `Z.3`, fila 3 |
+| 2 | **`dominar_reacciones_emociones_ajenas` guarda los SIETE consejos de `L167` a `L181` como pasos y no como nodos.** Ninguno tiene rotulo de linea propia, que es mi criterio, **pero cada uno abre con su frase en negrita y es ejecutable solo**. Es el nodo de 11 pasos mas largo del capitulo | `Z.2.a`, ultimo bloque |
+| 3 | **La `fecha_corte` de la unica atribucion del capitulo es `2019`, la de la EDICION citada, y no la de la investigacion de Gretchen Rubin, que el libro no fecha.** Una cifra con fecha de corte prestada es media cifra | `manejar_contacto_fisico_regla_platino`, `atribuciones` |
+| 4 | **`integrar_trabajo_vida_mejor_version` es la pieza mas cerca de la postura de las que si extraigo.** Su inventario no es de medios sino de maneras de pensarlo, y lo que la sostiene es que el libro la escribe en imperativos | `Z.3`, fila 1 |
+| 5 | **Extraigo `MASTER THE ART OF SOCIALIZING AT WORK` como nodo de cabecera de seccion y dejo fuera las otras dos cabeceras** (`STAY CENTERED`, `RESPECT BOUNDARIES`). La diferencia que alego es que aquella trae inventario propio y estas solo anuncian a sus hijos | `Z.3`, fila 5 |
+| 6 | **Mi poblacion de `137` fechas contra las `119` del encargo.** No se cual midio el auditor y no lo resuelvo copiando | `Z.1` |
+| 7 | **Un `ajeno` a `0,405` de similitud de texto**, cuando `EXTRACTOR.md` 11 dice que por encima de `0,4` no hay ajenos. Puede que el ajeno sea mi lectura y no la banda | `Z.6`, propuesta 1 |
+| 8 | **La segunda arista le pone una SEGUNDA madre a un hijo que ya tenia una.** No he encontrado escrito que eso este prohibido, y el gate lo dejo pasar, pero **no he encontrado tampoco un ejemplar previo en esta casa** | `Z.3.c` |
+
+## Z.6. **LO QUE PROPONGO, Y NO ME LO ADJUDICO YO** (`EXTRACTOR.md` 14)
+
+**1. LA BANDA DE `0,4` DE LA SENIAL 1 TIENE SU PRIMER CONTRAEJEMPLO DE ESTA CASA, Y LO TRAIGO CON SU
+CASO DELANTE.** `EXTRACTOR.md` 11 escribe: *similitud de texto ALTA (0,4 en adelante): son gemelos y
+nada mas. En el catalogo entero hay 325 gemelos y CERO ajenos por encima de 0,4.* Hoy
+`evitar_presion_social_actos_equipo` contra `crear_obligacion_disentir_equipo` da **`0,405`** y mi
+lectura lo escribe `SANO` (linea `400` de la bitacora, con su razon entera).
+
+> **POR QUE NO LO TRAIGO COMO PARADA, y lo razono en vez de decidirlo yo:** la cifra citada esta
+> **acotada a su poblacion**, los `3.169` nodos auditados de la otra casa (`docs/CALIBRACION_D4.md`), y
+> mi par **no esta en ese catalogo**, asi que no contradice la medicion. Lo que roza es la
+> **generalizacion** que se escribio encima. Y el propio `EXTRACTOR.md` anticipa esto en su cabecera:
+> *la vara de la seccion 10 vive de los ejemplares de la otra casa; la primera tanda de veredictos
+> propios trae sus casos, y entonces la vara se vuelve a escribir con ellos delante.*
+>
+> **NO MUEVO NINGUN UMBRAL** (`EXTRACTOR.md` 11: ninguna vuelta mueve un umbral) **y el de `0,35`
+> funciono**: obligo a leer el par, que es para lo que esta.
+
+**2. QUE `D.31` DIGA POR QUE ES EN EL MISMO ACTO.** La regla da su motivo (*el informe lo contaba*)
+pero no el que yo medi hoy: **un insertado que sigue en bandeja se cuenta DOS VECES en la poblacion de
+`D.38.5` y pide dos veredictos del mismo par**, con las tres seniales identicas al milesimo. Medido en
+`Z.3.d`.
+
+**3. QUE EL LOTE 4 TENGA SU `LEEME.md` EN `_insertados`, QUE `D.31` PIDE Y NO EXISTE.** Comprobado hoy:
+`onu_consumidor`, `smart_who` y `zhuo_manager` lo tienen; `scott_radical_candor` **no**, con `79`
+ficheros archivados dentro. No lo escribo yo porque reconstruir el commit de entrada de los `79`
+anteriores no es trabajo de una vuelta de extraccion (`D.13`, la moratoria de maquinaria), **pero la
+deuda existe y crece cada vuelta.**
+
+**4. QUE EL ARNES DECLARE SI HAY OTRA SESION VIVA EN EL MISMO ARBOL.** El cerrojo de `D.44` protege
+`dataset/nodos.jsonl` y funciono; **lo que nadie protege es el indice de git**, y ahi es donde mi
+`git add -A` se llevo trabajo ajeno (`Z.4`). Lo propongo, no lo construyo: `D.13` y la moratoria de
+`D.45`.
+
+## Z.7. **LA COLA AL CERRAR, CONTADA DE SU FICHERO**
+
+> **CORRECCION DECLARADA, 17 sep 2026, y digo de que caida sale** (`D.41`). Esta tabla salio `DIFIERE`
+> en el cierre y la regenere con `python scripts/tallar_reporte.py --arreglar`, **14 celdas**. La caida
+> **no era de las cifras**: era que mi instrumento imprimia `lote 4, scott_radical_candor` como primera
+> columna en **cinco filas seguidas**, y el tallado casa fila con fila **por su primera celda**, asi que
+> no podia distinguirlas y las comparaba todas contra la primera. **Arregle el instrumento** (la unidad
+> pasa delante, que si es unica) **y regenere; no toque ni una celda a mano.**
+>
+> **LA LECCION, que no he visto escrita en `D.41`:** una tabla de instrumento necesita **primera
+> columna unica**, o el propio tallado la tumba teniendo razon en cada numero.
+
+<!-- TALLADO: script=.v33/cola.py salida=.v33/cola_v33.txt -->
+
+| unidad | lote | del libro | en bandeja | pasos escritos |
+|---|---|---|---:|---:|
+| `cap_09` | lote 4, `scott_radical_candor` | Cap. 6 | **20** | 272 |
+| `cap_10` | lote 4, `scott_radical_candor` | Cap. 7 | **14** | 206 |
+| `cap_12` | lote 4, `scott_radical_candor` | Getting Started | **2** | 50 |
+| `cap_13` | lote 4, `scott_radical_candor` | Afterword | **12** | 212 |
+| `cap_14` | lote 4, `scott_radical_candor` | Bonus Chapter | **15** | 174 |
+| `cap_01` | lote 5, `marquet_turn_the_ship` | *no mapeada* | **1** | 7 |
+| `cap_02` | lote 5, `marquet_turn_the_ship` | *no mapeada* | **2** | 10 |
+| **las dos bandejas** | | | **66** | **931** |
+
+**`cap_08` YA NO APARECE, QUE ES LA PRUEBA DE QUE CIERRA.** El siguiente en el orden del libro es
+`cap_09` con `20` candidatos, **por encima del techo de `15`**: `EXTRACTOR.md` 12.4 manda entonces que
+la vuelta cierre en ese capitulo y lo declare, asi que **la vuelta siguiente no va a cerrar `cap_09` de
+una sentada** y conviene que su encargo lo sepa antes de escribirse.
+
+**LAS TRES ARISTAS EN COLA QUE ABRE ESTA VUELTA, para que no se pierdan** (`D.29`, bloque propio):
+
+| madre | paso | el hijo que falta | cuando se puede cablear |
+|---|---:|---|---|
+| `construir_confianza_equipo_tiempo_solas` | 6 | el nodo de `Soliciting Impromptu Guidance` | cuando entre `cap_09` (`Cap. 6`), hoy `20` en bandeja |
+| `construir_confianza_equipo_tiempo_solas` | 7 | el nodo de las conversaciones de carrera | cuando entre `cap_10` (`Cap. 7`), hoy `14` en bandeja |
+| `dominar_arte_socializar_trabajo` | 9 | **ninguno, y es definitivo** | la segunda advertencia, `Booze` (`L83` a `L87`), **no se extrajo y no se extraera**: no nombra ni un acto ejecutable |
+
+## Z.8. EL CIERRE, CON LAS CIFRAS RECOMPUTADAS AL CERRAR (`EXTRACTOR.md` 4)
+
+<!-- TALLADO: script=.v33/cuentas_cierre.py salida=.v33/cuentas_cierre.txt -->
+
+| pieza | al abrir | **al cerrar** | movimiento |
+|---|---:|---:|---:|
+| nodos en `dataset/nodos.jsonl` | 270 | **282** | **+12** |
+| aristas por `nodos_siguientes` | 105 | **107** | **+2** |
+| aristas por `nodos_previos` | 105 | **107** | **+2** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | 396 | **410** | **+14** |
+| de ellos, con alguna anotacion `no_consumada: true` | 14 | **14** | 0 |
+| candidatos en bandeja, lote 4 | 75 | **63** | **-12** |
+| insertados y archivados, lote 4 | 67 | **79** | **+12** |
+| candidatos en bandeja, lote 5 | 3 | **3** | 0 |
+| pruebas de `tests/test_aceptacion.py` | 220 | **251** | **+31** |
+| lote 4 insertado sobre `142`, por ciento | 47,2 | **55,6** | **+8,4** |
+
+> ### **LA FILA DE LAS PRUEBAS NO ES MIA, Y NO ME LA APUNTO** (`D.48`)
+>
+> **`+31` pruebas, y no escribi ni una.** Salen de tres suites que no existian cuando medi la apertura
+> y que son de otro frente: `D.49 y D.50, un libro un dueño a la vez y el relevo` (`12`), `D.49, la
+> guarda del tablero al abrir vuelta` (`8`) y `D.51, el orden lo da el tablero` (`11`). `12+8+11 = 31`,
+> al digito, y se ve en el `diff` de `.v33/aceptacion_apertura_full.txt` contra
+> `.v33/aceptacion_cierre_full.txt`. **La publico porque la medi al cerrar, y digo de quien es porque
+> `D.48` nacio exactamente de un auditor que se apunto tandas de otra linea.**
+
+**LO QUE SI ES MIO, FILA POR FILA:** `+12` nodos, `+2` aristas por los dos extremos y **cero sin
+reciproco**, `+14` lineas de bitacora, `-12` en bandeja y `+12` archivados. El lote 4 pasa de **`47,2`
+a `55,6` por ciento**, que es la primera vez que cruza la mitad.
+
+### Z.8.a. LAS GUARDAS
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 282
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py
+      total: 251 pruebas, 0 fallos, 0 errores
+
+### Z.8.b. `PASOS INVENTADOS`, LA CIFRA QUE DECIDE LA ESCALADA
+
+<!-- TALLADO: script=.v33/pasos_inventados.py salida=.v33/pasos_inventados_v33.txt -->
+
+| capitulo | nodos | **pasos escritos** | **PUENTE** | **PASOS INVENTADOS** |
+|---|---:|---:|---:|---:|
+| **`cap_08`** (lote 4, `scott_radical_candor`), el tramo de esta vuelta | 12 | **102** | **0** | **0,00 por ciento** |
+| **total del tramo de esta vuelta** | 12 | **102** | **0** | **0,00 por ciento** |
+
+### Z.8.c. LA IDENTIDAD, LEIDA DE GIT
+
+<!-- TALLADO: script=.v33/identidad.py salida=.v33/identidad_cierre.txt -->
+
+| pieza | valor | de donde sale |
+|---|---|---|
+| rama | `extraccion-mundo-11` | `git rev-parse --abbrev-ref HEAD` |
+| commit que abrio mi turno | `bc5dae4`, 2026-09-17 06:39:59 | `git log` |
+| commit al escribir este bloque | `bcd3693`, 2026-09-17 07:50:57 | `git log` |
+| commits en la ventana de mi turno | **12** | `git log` |
+| de ellos, MIOS | **9** | el asunto empieza por `V.33` o por la apertura |
+| de ellos, **de la otra sesion viva** | **3** | `Z.4` |
+
+
+    LA VENTANA ENTERA, DEL PRIMERO AL ULTIMO. `>` marca los que NO son mios:
+      bc5dae4  2026-09-17 06:39:59  Apertura de la vuelta 33: el esqueleto del reporte abierto antes de la primera tarea
+      2edae47  2026-09-17 06:47:33  V.33 TAREA 1: la fecha que un acto se escribio a si mismo, corregida por D.13 en las dos sed
+    > 783acee  2026-09-17 07:03:03  D.49 y D.50, EL TABLERO DE FRENTES Y EL RELEVO: nace docs/loop/TABLERO.jsonl como sede unica
+      cc181f3  2026-09-17 07:03:42  V.33 TAREA 3: cap_08 releido paso a paso contra su parrafo, 0 de 102 PASOS INVENTADOS con la
+    > c240720  2026-09-17 07:08:17  D.49, LA GUARDA DEL TABLERO AL ABRIR VUELTA: el encargo DECLARA su libro y el arnes lo pasa 
+      d39c37b  2026-09-17 07:14:54  V.33 TAREA 2 (1 de 2): entran los seis primeros de cap_08 por el orden del libro, con los tr
+      bf413c2  2026-09-17 07:22:01  V.33 TAREA 2 (2 de 3): entra construir_confianza_equipo_tiempo_solas con sus tres veredictos
+      504cd38  2026-09-17 07:28:04  V.33 TAREA 2 (3 de 4): entra vivir_valores_propios_evitar_listarlos con su veredicto, un hom
+    > 1954005  2026-09-17 07:29:43  CAIDA DE DATO DECLARADA Y REPARADA: el cerrojo de insercion estaba entrando en git, y mi tra
+      dd52033  2026-09-17 07:37:20  V.33 D.31: archivados en _insertados los diez de cap_08 que ya viven en el grafo. El lote pa
+      3ef609b  2026-09-17 07:46:51  V.33 TAREA 2 (4 de 4): cap_08 CIERRA EN INSERCION, 12 de 12, con sus cuatro veredictos final
+      bcd3693  2026-09-17 07:50:57  V.33: anexado el bloque de la TAREA 2 y la PARADA de los commits que se llevaron trabajo de
+
+### Z.8.d. **EL CREDITO DE MI LINEA AL CERRAR, Y LO ROMPO YO** (`D.48`)
+
+**ESCRIBO MI TANDA COMO EL ENCARGO MANDA, UNA LINEA POR ESPECIE, Y UNA DE ELLAS ES UN `--cae` SOBRE MI
+MISMO.**
+
+<!-- TALLADO: parcial salida=.v33/credito_cierre.txt -->
+
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+      tandas: 32, en 131 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA 31
+      CIFRA PUBLICADA    0 de 2     ACTA 32
+      CLASE              1 de 2     ACTA 32
+      DATO MOVIDO        2 de 2     ACTA 32  TOPE
+      REPORTE            0 de 3     ACTA 32
+
+      CREDITO ROTO: DATO MOVIDO en su tope.
+
+**`DATO MOVIDO` LLEGA A `2 de 2` Y EL CREDITO QUEDA ROTO, POR UNA CAIDA QUE DECLARO YO.** La caida es
+la de `Z.4`: `dataset/nodos.jsonl.cerrojo`, **un fichero vivo bajo `dataset/`**, entro al indice en mi
+commit `504cd38` sin que ningun veredicto estuviera mal puesto, que es **la definicion literal** de la
+especie (`AUDITOR_FORJA.md` 5.5, 16 sep 2026). La otra sesion la llamo por su nombre antes que yo:
+*CAIDA DE DATO DECLARADA Y REPARADA*.
+
+> **POR QUE LA ESCRIBO SABIENDO LO QUE CUESTA.** El encargo dice `--cae` si la especie cayo en tu
+> tanda. Cayo. **Callarla para que el bucle siguiera es exactamente la especie de fallo que `D.48`
+> existe para cazar**, y la racha dejaria de significar lo que dice.
+>
+> **Y LO QUE SI DEJO AL AUDITOR, porque no es mio:** si esto es `DATO MOVIDO` o no lo es. **Se puede
+> argumentar que el cerrojo no es contenido de `dataset/` sino un fichero de proceso que vive dentro**,
+> y entonces la especie seria otra o ninguna. **Yo elegi la lectura que me cuesta el escalon**, que es
+> lo que el propio `AUDITOR_FORJA.md` 5.5 elogia del auditor de la vuelta 28. **Una linea suya la
+> corrige.**
+
+**`AUDITOR` SE QUEDA EN `ACTA 31` Y NO LA ANOTO YO**, y es deliberado: es la especie del auditor y
+`EXTRACTOR.md` 14 dice que el extractor propone y no se adjudica. Las otras cuatro son de mi tanda y
+estan escritas.
+
+### Z.8.e. LAS TRES TAREAS, CERRADAS
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | **BLOQUEANTE**: la fecha que un acto se escribio a si mismo | **CERRADA** en `Z.1`: `2` celdas tocadas por `D.13` sin borrar un caracter, `0` choques vivos |
+| 2 | seguir insertando el lote 4 | **CERRADA** en `Z.3`: `cap_08` cierra `12` de `12`, con `12` veredictos razonados y `2` aristas por lectura |
+| 3 | `PASOS INVENTADOS` por capitulo | **CERRADA** en `Z.2`: `0` de `102`, `0,00` por ciento contra un tope de `10` |
+
+**LAS TRES ENTREGADAS, CERO EN COLA** (`EXTRACTOR.md` 1.3, tope de cinco). **Lo que esta vuelta deja
+pendiente esta en `Z.7`**, y no hay ni una tarea del encargo dentro.
+
+**Y LA VUELTA DEJA UNA PARADA ABIERTA QUE NO ES DEL ENCARGO SINO MIA**, en `Z.4`: dos de mis commits se
+llevaron ocho ficheros de otro frente bajo mi mensaje. **La causa esta cortada, la parada no la arreglo
+yo.**
