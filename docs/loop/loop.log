@@ -909,3 +909,110 @@ CIERRE VERDE: el tallado y el censo de rutas.
 [2026-09-16 19:35:39]   sello de la apertura ciega verificado: intacto tras el turno
 [2026-09-16 19:35:39] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-16 19:35:39] VUELTA 3 : EXTRACTOR (claude-opus-5)
+[2026-09-16 20:25:37] extractor listo (USD 15.374163500000003), 2998s, intento 1 de 7
+[2026-09-16 20:25:38] VUELTA 3 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 20:25:38]   hereda 4 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-16 20:58:34] auditor ciego listo (USD 9.867772500000003), 1976s, intento 1 de 7
+[2026-09-16 20:58:34]   herencia declarada: acta leida por su huella y los 4 heredados resueltos
+[2026-09-16 20:58:34]   testigo de guardas, antes de sellar (D.38.3)
+[2026-09-16 20:58:38]   testigo: las guardas estaban en verde en el instante del sello
+[2026-09-16 20:58:39]   apertura ciega sellada: a0bb0af6a47ab40913eb94460e9055d31f70b00a
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 270
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] tallado del reporte (D.41) y censo de rutas (D.42)
+============================================================================
+TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+============================================================================
+tablas que declaran instrumento : 130
+  talladas, celda a celda       : 69
+  que DIFIEREN de su instrumento: 0
+  con la ruta VACIA             : 0   (cero bytes, 7.B)
+  sin poder comprobar           : 0
+  que CITAN y no reproducen     : 61   (declaradas PARCIAL)
+      linea 27198 de docs/loop/REPORTE.md
+      linea 27324 de docs/loop/REPORTE.md
+      linea 27622 de docs/loop/REPORTE.md
+      linea 28467 de docs/loop/REPORTE.md
+      linea 29796 de docs/loop/REPORTE.md
+      linea 29981 de docs/loop/REPORTE.md
+      linea 30032 de docs/loop/REPORTE.md
+      linea 30074 de docs/loop/REPORTE.md
+      linea 30142 de docs/loop/REPORTE.md
+      linea 30279 de docs/loop/REPORTE.md
+      linea 30431 de docs/loop/REPORTE.md
+      linea 30575 de docs/loop/REPORTE.md
+      linea 30721 de docs/loop/REPORTE.md
+      linea 31003 de docs/loop/REPORTE.md
+      linea 31050 de docs/loop/REPORTE.md
+      linea 31161 de docs/loop/REPORTE.md
+      linea 31265 de docs/loop/REPORTE.md
+      linea 31308 de docs/loop/REPORTE.md
+      linea 31339 de docs/loop/REPORTE.md
+      linea 31365 de docs/loop/REPORTE.md
+      linea 31524 de docs/loop/REPORTE.md
+      linea 31700 de docs/loop/REPORTE.md
+      linea 31776 de docs/loop/REPORTE.md
+      linea 31831 de docs/loop/REPORTE.md
+      linea 31845 de docs/loop/REPORTE.md
+      linea 31892 de docs/loop/REPORTE.md
+      linea 31903 de docs/loop/REPORTE.md
+      linea 31930 de docs/loop/REPORTE.md
+      linea 31979 de docs/loop/REPORTE.md
+      linea 32049 de docs/loop/REPORTE.md
+      linea 32072 de docs/loop/REPORTE.md
+      linea 32120 de docs/loop/REPORTE.md
+      linea 32226 de docs/loop/REPORTE.md
+      linea 32258 de docs/loop/REPORTE.md
+      linea 32280 de docs/loop/REPORTE.md
+      linea 32320 de docs/loop/REPORTE.md
+      linea 32435 de docs/loop/REPORTE.md
+      linea 32471 de docs/loop/REPORTE.md
+      linea 32510 de docs/loop/REPORTE.md
+      linea 32599 de docs/loop/REPORTE.md
+      linea 32670 de docs/loop/REPORTE.md
+      linea 32684 de docs/loop/REPORTE.md
+      linea 33020 de docs/loop/REPORTE.md
+      linea 33088 de docs/loop/REPORTE.md
+      linea 33129 de docs/loop/REPORTE.md
+      linea 33157 de docs/loop/REPORTE.md
+      linea 33257 de docs/loop/REPORTE.md
+      linea 33306 de docs/loop/REPORTE.md
+      linea 33375 de docs/loop/REPORTE.md
+      linea 33398 de docs/loop/REPORTE.md
+      linea 33506 de docs/loop/REPORTE.md
+      linea 33527 de docs/loop/REPORTE.md
+      linea 33544 de docs/loop/REPORTE.md
+      linea 33611 de docs/loop/REPORTE.md
+      linea 33636 de docs/loop/REPORTE.md
+      linea 33708 de docs/loop/REPORTE.md
+      linea 33720 de docs/loop/REPORTE.md
+      linea 35010 de docs/loop/REPORTE.md
+      linea 35416 de docs/loop/REPORTE.md
+      linea 35631 de docs/loop/REPORTE.md
+      linea 35747 de docs/loop/REPORTE.md
+
+TALLADO VERDE: las 69 tabla(s) comprobables son las de su instrumento, celda a celda.
+============================================================================
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+============================================================================
+rutas publicadas y censadas : 512
+  pasan                     : 512
+  CAEN                      : 0
+      PATRON                           35
+      VACIA A PROPOSITO                3
+      con contenido                    473
+      vacia por protocolo              1
+
+CENSO VERDE: las 512 rutas publicadas sostienen lo que dicen sostener.
+[cierre] tallado del reporte (D.41)
+[cierre] censo de rutas (D.42)
+
+CIERRE VERDE: el tallado y el censo de rutas.
+[pre-commit] verde
+[2026-09-16 20:58:43] VUELTA 3 : AUDITOR (claude-opus-5)
+[2026-09-16 21:02:31] auditor: TURNO MUDO, el turno corrio 228s y cobro "1.1219905000000001" pero docs/loop/ACTA_AUDITOR.md quedo identico, intento 1 de 7
+[2026-09-16 21:02:31] fallo "auditor mudo"; espero 1800 segundos y reintento
