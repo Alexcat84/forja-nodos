@@ -36328,3 +36328,71 @@ quien relea: donde esta la raya entre un inventario de MEDIOS y uno de FINES cua
 las dos cosas seguidas.** Los tres los resuelvo por el mismo lado, el estrecho, y **los tres se pueden
 tumbar juntos sin tocar el resto del lote.**
 
+## G1.4. TAREA 3: **LA FIDELIDAD `D.30`, RELEIDA PASO A PASO CONTRA SU PARRAFO EN EL ACTO DE ESCRIBIR**. **CERRADA**
+
+*`D.30`: **ninguna guarda de esta casa ve un paso que tu escribiste y el libro no dice.** El lote 1
+pago 13 puentes de 36 pasos con la aduana dando 6 de 6 verdes antes y despues. **La aduana mide otra
+cosa**, y por eso esto se hace a mano y en el acto.*
+
+**COMO SE HIZO, Y ES LO QUE HACE LA CIFRA VERIFICABLE:** `.gerber_v1/fidelidad.py` **saca el trozo del
+libro de la maquina** y **revienta si el ancla que yo apunto no esta en esa linea**, asi que una linea
+mal apuntada no puede salir publicada como buena. Tambien **revienta si el numero de filas releidas no
+es el numero de pasos escritos**, para que no se pueda firmar como entera una relectura parcial. **Las
+89 filas, con su cita pegada una a una, estan en `.gerber_v1/fidelidad.txt`.**
+
+Salida de `python .gerber_v1/fidelidad.py`, guardada en `.gerber_v1/fidelidad.txt`:
+
+<!-- TALLADO: salida=.gerber_v1/fidelidad.txt -->
+
+| unidad | nodos | pasos escritos | pasos releidos | **PUENTE** | **PASOS INVENTADOS, por ciento** |
+|---|---:|---:|---:|---:|---:|
+| `cap_04` | 1 | 7 | 7 | **0** | **0,00** |
+| `cap_07` | 1 | 8 | 8 | **0** | **0,00** |
+| `cap_08` | 2 | 17 | 17 | **0** | **0,00** |
+| `cap_11` | 6 | 57 | 57 | **0** | **0,00** |
+| **el lote entero** | **10** | **89** | **89** | **0** | **0,00** |
+
+    peor capitulo: 0,00 por ciento   tope: 10   total: 0,00 por ciento
+
+### G1.4.a. **LA CABEZA DE LA SERIE, PEGADA ENTERA, PORQUE ES DONDE VIVEN DOS DE MIS DISCUTIBLES**
+
+*De las diez tablas de la relectura pego esta, y las otras nueve quedan citadas en el fichero: **es la
+que contiene los pasos 7 y 9**, que son las reglas 3 y 5 transcritas sin nodo propio, y por eso es la
+que un auditor tiene que poder leer sin abrir nada.*
+
+Salida de `python .gerber_v1/fidelidad.py`, guardada en `.gerber_v1/fidelidad.txt`:
+
+<!-- TALLADO: salida=.gerber_v1/fidelidad.txt -->
+
+| paso de `fingir_prototipo_cinco_mil_replicas` | la salida del libro, pegada por `.gerber_v1/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `35: Pretend that the business you own-or want to own-is the prototype, or will be the prototype, for 5,000 mo...` | **TRANSCRIPCION**, **y `L37`**: the model for 5,000 more just like it |
+| `2` | `39: Not almost like it, but just like it. Perfect replicates. Clones.` | **TRANSCRIPCION** |
+| `3` | `41: ...pretend that you are going to franchise your business. (Note: I said pretend . I'm not saying that you sh...` | **TRANSCRIPCION** |
+| `4` | `43: ...there are rules to follow if you are to win:` | **TRANSCRIPCION**, **la cuenta es condicion de `D.37`**, y aqui el libro la escribe numerando del 1 al 6 |
+| `5` | `45: ...The model will provide consistent value to your customers, employees, suppliers, and lenders, beyond what...` | **TRANSCRIPCION** |
+| `6` | `47: ...The model will be operated by people with the lowest possible level of skill.` | **TRANSCRIPCION** |
+| `7` | `49: ...The model will stand out as a place of impeccable order .` | **TRANSCRIPCION**, **se transcribe como regla de la cabeza**, y NO se le hace nodo propio: ver `R3` de la frontera |
+| `8` | `51: ...All work in the model will be documented in Operations Manuals.` | **TRANSCRIPCION** |
+| `9` | `53: ...The model will provide a uniformly predictable service to the customer.` | **TRANSCRIPCION**, **igual que la 3**: se transcribe aqui y no tiene nodo propio, ver `R4` de la frontera |
+| `10` | `55: ...The model will utilize a uniform color, dress, and facilities code.` | **TRANSCRIPCION** |
+| `11` | `57: Let's take a look at each of these rules in turn.` | **TRANSCRIPCION** |
+
+> ### **UN `0,00` NO ES UNA ABSOLUCION, Y LO DIGO YO ANTES QUE NADIE**
+>
+> **`0` puentes sobre `89` pasos y `0,00` por ciento en el peor capitulo, contra un tope de `10`.** Pero
+> la cifra mide **una sola cosa**: que cada paso que escribi esta en la linea que digo. **No mide si
+> esa linea era procedimiento o postura**, que es la otra vara y es donde estan mis seis discutibles.
+>
+> **DONDE ATACAR ESTE `0,00`, dicho por mi:** no por las anclas, que las comprueba el codigo, sino por
+> **los pasos que transcriben un inventario de FINES como si fuera de MEDIOS**. Estan senalados en la
+> propia tabla: el paso 5 de `hacer_trabajo_futuro_imaginar_negocio`, y los pasos 7 y 9 de la cabeza.
+> **Si esos caen, no caen como puentes: caen como piezas que no eran nodo.** Son dos varas distintas y
+> esta vuelta pasa la primera limpia.
+>
+> **Y EL AVISO DE `D.30` APLICADO A ESTE LIBRO:** *un parrafo pobre no produce un nodo pobre, produce un
+> nodo inventado.* Los diez candidatos salen de **las piezas mas ricas** de sus capitulos (las que
+> enumeran, numeran o transcriben un dialogo entero), y **las siete unidades que no enumeran nada dan
+> cero nodos**. Es la misma correlacion que el lote 1 midio, y esta vuelta la confirma por el lado de
+> no haber forzado ninguna.
+
