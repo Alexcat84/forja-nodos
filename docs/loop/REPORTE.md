@@ -36146,6 +36146,106 @@ porque no hay quien la firme. **La cola de vecinos la vuelvo a pagar yo dentro d
 
 | # | tarea | estado |
 |---:|---|---|
-| 1 | **BLOQUEANTE**: la fecha `17 sep 2026` escrita a mano el dia `16` dentro de `dataset/nodos.jsonl` y de `bitacora/VEREDICTOS.jsonl` | *abierta* |
+| 1 | **BLOQUEANTE**: la fecha `17 sep 2026` escrita a mano el dia `16` dentro de `dataset/nodos.jsonl` y de `bitacora/VEREDICTOS.jsonl` | **CERRADA** en `Z.1`: `2` celdas tocadas, `0` choques vivos |
 | 2 | seguir insertando el lote 4, uno por vez y por el orden del libro | *abierta* |
 | 3 | `PASOS INVENTADOS` por capitulo, antes de cerrar (`D.30`) | *abierta* |
+
+## Z.1. **TAREA 1, BLOQUEANTE**: la fecha que un acto se escribio a si mismo, contra el sello de la maquina
+
+**LA CIFRA, Y CON QUE COMANDO LA ENCONTRE.** El instrumento es `.v33/fechas.py`, escrito en esta
+vuelta y sin lista de ids dentro: recorre las dos sedes del dato celda a celda y cuadra **cada fecha
+que un acto del bucle se escribe A SI MISMO** contra el sello que la maquina estampa para ESE acto.
+
+    $ python .v33/fechas.py
+
+**LA POBLACION ESTA DEFINIDA EN LA CABECERA DEL FICHERO Y NO EN PROSA MIA**, porque es lo unico que
+hace comparable la cifra: entra la fecha precedida por el rotulo con el que un acto se firma
+(`... DECLARAD[AO]`, `ESCRITA EN LA VUELTA <n>`), y queda fuera la fecha citada como dato de otro,
+que la maquina no estampa.
+
+**Y EL SELLO HAY QUE IR A BUSCARLO DONDE ESTA**, que fue lo que me costo dos pasadas y lo digo:
+
+| donde vive la fecha escrita | cual es su sello | por que |
+|---|---|---|
+| dentro de `anotaciones[i]` | el `fecha` de **esa anotacion** | `src/anotacion.py:185` lo escribe ahi |
+| en `razon`, texto que una anotacion tambien lleva | el de **esa anotacion** | `anotar` lo pega en los dos sitios a la vez |
+| resto de la bitacora | el `fecha` de **la linea** | |
+| `dataset/nodos.jsonl` | el de **la linea de la bitacora que registro esa correccion** | el nodo **no lleva fecha de escritura**: no hay sello propio |
+
+**SI SE CUADRA CONTRA EL `fecha` DE LA LINEA Y NO CONTRA EL DE LA ANOTACION, SALEN `26` CHOQUES QUE
+NO SON CHOQUES**: son las `VIGENCIA DECLARADA del 16 sep 2026` de la vuelta 28 pegadas a veredictos
+emitidos el `13` y el `15`, donde el `fecha` de la linea es del veredicto original y no del acto que
+lo anota. **Lo apunto porque es la trampa de esta medicion**, y quien la repita sin mirar la va a
+pisar.
+
+### Z.1.a. ANTES, medido contra `HEAD` con el mismo fichero de instrumento
+
+<!-- TALLADO: script=.v33/fechas.py salida=.v33/fechas_antes.txt -->
+
+| sede | linea | celda | la mano escribio | la maquina estampo | sujeto | remedio |
+|---|---:|---|---|---|---|---|
+| `dataset/nodos.jsonl` | 240 | `/resumen_teorico` | `17 sep 2026` | `2026-09-16` | `recorrer_rueda_conscientemente_cultura_equipo` | **SIN CORREGIR** |
+| `bitacora/VEREDICTOS.jsonl` | 396 | `/texto_anadido` | `17 sep 2026` | `2026-09-16` | `recorrer_rueda_conscientemente_cultura_equipo` | **SIN CORREGIR** |
+
+    CELDAS QUE CHOCAN CON EL SELLO DE LA MAQUINA: 2
+       de ellas, con su CORRECCION DECLARADA al lado : 0
+       de ellas, VIVAS y sin remedio escrito         : 2
+
+### Z.1.b. LAS DOS CORRECCIONES, POR `D.13` Y SIN BORRAR UN CARACTER
+
+<!-- TALLADO: parcial salida=.v33/correcciones_t1.txt -->
+
+    $ python forja.py corregir --nodo recorrer_rueda_conscientemente_cultura_equipo --anade "CORRECCION DECLARADA, 17 sep 2026, vuelta 33 TAREA 1, ..." --razon "D.13, ..."
+
+    CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+      nodo : recorrer_rueda_conscientemente_cultura_equipo
+      campo: resumen_teorico
+      el texto viejo SIGUE ENTERO: 4303 caracteres, ninguno borrado
+      se aniaden 639 caracteres al final
+      huella antes  : f2039c320fabe9f9
+      huella despues: 2ac793d46c4f5a5a
+
+    GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: recorrer_rueda_conscientemente_cultura_equipo
+      razon en bitacora/VEREDICTOS.jsonl
+
+    $ python forja.py anotar --linea 396 --anade "CORRECCION DECLARADA, 17 sep 2026, vuelta 33 TAREA 1, ..." --razon "D.13, ..."
+
+    ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+      sede : bitacora/VEREDICTOS.jsonl
+      linea: 396
+      veredicto: CORREGIDO (NO se toca)
+      par      : recorrer_rueda_conscientemente_cultura_equipo contra recorrer_rueda_conscientemente_cultura_equipo
+      la razon vieja SIGUE ENTERA: 275 caracteres, ninguno borrado
+      se aniaden 641 caracteres al final de la razon
+      lineas de la bitacora tocadas: 1 (la 396). Las otras 396, intactas.
+
+    ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 396.
+
+### Z.1.c. DESPUES, el mismo instrumento corrido sobre el dato de ahora
+
+<!-- TALLADO: script=.v33/fechas.py salida=.v33/fechas_despues.txt -->
+
+| sede | linea | celda | la mano escribio | la maquina estampo | sujeto | remedio |
+|---|---:|---|---|---|---|---|
+| `dataset/nodos.jsonl` | 240 | `/resumen_teorico` | `17 sep 2026` | `2026-09-16` | `recorrer_rueda_conscientemente_cultura_equipo` | **CORREGIDA** |
+| `bitacora/VEREDICTOS.jsonl` | 396 | `/texto_anadido` | `17 sep 2026` | `2026-09-16` | `recorrer_rueda_conscientemente_cultura_equipo` | **CORREGIDA** |
+
+    CELDAS QUE CHOCAN CON EL SELLO DE LA MAQUINA: 2
+       de ellas, con su CORRECCION DECLARADA al lado : 2
+       de ellas, VIVAS y sin remedio escrito         : 0
+
+**CELDAS TOCADAS: `2`, una en cada sede, y son las dos que el encargo nombra.** Las dos siguen
+apareciendo en la tabla **porque `D.13` corrige sin borrar**, y por eso el instrumento trae la
+columna `remedio`: lo que baja a **`0`** no es el recuento de choques, es el de **choques vivos**.
+
+**LA DISCREPANCIA CON EL ENCARGO, DECLARADA EN VEZ DE RESUELTA COPIANDO** (`EXTRACTOR.md` 5): el
+encargo publica **`119`** fechas escritas a mano en las dos sedes y mi instrumento cuenta **`137`**
+antes de tocar nada. **No se cual de las dos poblaciones midio el auditor**, porque el encargo no
+dice su criterio, y la mia esta escrita en la cabecera de `.v33/fechas.py`. **Lo que si cuadra al
+digito es lo que la tarea pide:** la celda que choca es **la unica**, y son las dos caras de la
+misma. Lo traigo como pregunta y no lo arreglo yo (`EXTRACTOR.md` 7).
+
+**LAS `25` FECHAS SIN SELLO NO LAS JUZGO Y LAS DIGO** (listadas una a una en
+`.v33/fechas_despues.txt`): son `ESCRITA EN LA VUELTA <n>` dentro de `resumen_teorico` de nodos que
+entraron por `insertar`, no por `corregir`, asi que **no hay linea de bitacora con la que cuadrarlas**.
+Inventarles un sello seria lo mismo que el defecto que esta tarea corrige.
