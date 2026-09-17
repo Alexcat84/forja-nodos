@@ -1,0 +1,23 @@
+$ cat procesos/nodos.jsonl.679b2259.cerrojo
+{"pid": 25892, "desde": 1789679275.6330981}
+$ python -c "import os,json; d=json.load(open(...)); os.kill(d[pid],0)"
+pid declarado en el cerrojo: 25892
+mi pid                    : 8308
+os.kill da errno 22 (ESRCH=3) -> duda
+$ tasklist /FI "PID eq 25892"
+INFO: No tasks are running which match the specified criteria.
+
+$ rm procesos/nodos.jsonl.679b2259.cerrojo   # declarado, no esquivado
+$ ls -la procesos/
+total 64
+drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 17:11 ./
+drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 16:41 ../
+
+SEGUNDO CERROJO HUERFANO, misma causa: mi propia corrida matada por el tope del arnes
+$ cat procesos/nodos.jsonl.679b2259.cerrojo
+{"pid": 21492, "desde": 1789680779.231872}
+$ tasklist /FI "PID eq <ese pid>"
+INFO: No tasks are running which match the specified criteria.
+$ rm procesos/nodos.jsonl.679b2259.cerrojo
+$ wc -l < dataset/nodos.jsonl   (nada se escribio)
+302

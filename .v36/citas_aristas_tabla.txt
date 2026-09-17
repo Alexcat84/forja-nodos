@@ -1,0 +1,6 @@
+| que sostiene | fichero | linea | la salida, pegada |
+|---|---|---:|---|
+| D.37 serie 1: la cuenta y las partes | `cap_10.md` | L43 | `43: ...eams. He taught every manager on his team to have a succession of three forty-five-minute conversations with each direct report over the course of three ...` |
+| D.37 serie 2: la cuenta de las tres del despido | `cap_10.md` | L173 | `173: ...ring people is hard, and it ought to be hard. But if you do three things, you can make it far, far easier on the person yo...` |
+| D.29: el plan anual NOMBRA el despido sin desplegarlo | `cap_10.md` | L111 | `111: ...ot getting any better. At some point, you have to initiate the process of firing these people, most bosses understandably wait too long for this...` |
+| D.29: la remision de cap_08 al capitulo siete | `cap_08.md` | L95 | `95: ...Impromptu Guidance," chapter six.) Having annual "career conversations" is also an excellent way to strengthen your rela...` |

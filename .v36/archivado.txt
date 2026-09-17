@@ -1,0 +1,12 @@
+$ ls cuarentena/scott_radical_candor/ | wc -l   y  ls cuarentena/_insertados/scott_radical_candor/ | wc -l
+  bandeja: 43   archivados: 99
+$ los tres que YA viven en el grafo y seguian en la bandeja:
+  cuarentena/scott_radical_candor/desplegar_tres_conversaciones_carrera.json
+  cuarentena/scott_radical_candor/conversar_historia_vida_descubrir_motivadores.json
+  cuarentena/scott_radical_candor/conversar_suenios_cruzar_habilidades.json
+$ git mv cuarentena/scott_radical_candor/<id>.json cuarentena/_insertados/scott_radical_candor/  (D.31)
+  archivado: desplegar_tres_conversaciones_carrera
+  archivado: conversar_historia_vida_descubrir_motivadores
+  archivado: conversar_suenios_cruzar_habilidades
+$ despues:
+  bandeja: 40   archivados: 102

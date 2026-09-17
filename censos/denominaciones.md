@@ -725,3 +725,11 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | conducir_reuniones_salto_nivel_diez_reglas | otro_idioma | skip level meetings | ingles | - |
 | 2026-09-17 | resolver_dudas_frecuentes_reuniones_salto_nivel | nombre_largo | Las cuatro preguntas que mas se hacen los jefes de jefes que estrenan las reuniones de salto de nivel, con la respuesta que el texto da a cada una | castellano | - |
 | 2026-09-17 | resolver_dudas_frecuentes_reuniones_salto_nivel | otro_idioma | Skip level meeting FAQs | ingles | - |
+| 2026-09-17 | desplegar_tres_conversaciones_carrera | nombre_largo | La cabeza de la serie de las tres conversaciones de carrera: con quien se tienen, para que, donde caben, cuando se hacen y quien mas tiene que aprender a tenerlas | castellano | - |
+| 2026-09-17 | desplegar_tres_conversaciones_carrera | otro_idioma | CAREER CONVERSATIONS | ingles | - |
+| 2026-09-17 | desplegar_tres_conversaciones_carrera | otro_idioma | a succession of three forty-five-minute conversations | ingles | - |
+| 2026-09-17 | conversar_historia_vida_descubrir_motivadores | nombre_largo | La primera conversacion de carrera, la de la historia de vida, con su apertura literal, el foco en los momentos de cambio y el limite de no presionar donde la persona senializa incomodidad | castellano | - |
+| 2026-09-17 | conversar_historia_vida_descubrir_motivadores | otro_idioma | Conversation one: life story | ingles | - |
+| 2026-09-17 | conversar_historia_vida_descubrir_motivadores | otro_idioma | CAREER CONVERSATIONS | ingles | - |
+| 2026-09-17 | conversar_suenios_cruzar_habilidades | nombre_largo | La segunda conversacion de carrera, la de los suenios, con la pregunta de arranque que sustituye a las preguntas al uso, los tres a cinco suenios, el cuadro de suenios contra habilidades y la comprobacion contra los valores | castellano | - |
+| 2026-09-17 | conversar_suenios_cruzar_habilidades | otro_idioma | The second conversation: dreams | ingles | - |

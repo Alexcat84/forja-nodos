@@ -38398,3 +38398,39 @@ pobre del tramo es `L251`**, una sola frase, y tambien da `0`, porque el nodo qu
 
 **TRES LECTURAS QUE NO LLAMO PUENTE Y QUE MARCO COMO DISCUTIBLES ANTES DE SABER SI ACIERTO**
 (`EXTRACTOR.md` 8), listadas en `AC.5.c` por su numero.
+
+## AC.3. **TAREA 1: `cap_10` ENTERO, SUS `14`, UNO POR VEZ Y EN EL ORDEN DEL LIBRO**
+
+**`14` contra un techo de `15`** (`EXTRACTOR.md` 12.4): cabe justo, y por eso el encargo manda que entre
+entero y no se parta.
+
+### AC.3.a. **EL ORDEN, Y POR QUE ES EL QUE LEE** (`D.36`)
+
+**Inserto en el orden del libro, y ese orden coincide aqui con el que abre la cola.** Las dos cabezas
+(`desplegar_tres_conversaciones_carrera` en `L19` y `facilitar_despido_tres_cosas` en `L169`) **entran
+ANTES que sus partes**, asi que cuando cada parte llega, su cabeza ya vive en el grafo y la señal mide
+el par. Al reves, la cabeza habria entrado contra una bandeja y **el par se habria leido igual pero la
+arista habria quedado en cola en vez de cablearse**. `D.36` elige la lectura, y aqui elige tambien el
+cableado.
+
+### AC.3.b. **LAS DOS SERIES `D.37` DE ESTE CAPITULO, CON SU CUENTA PEGADA** (`D.35`)
+
+<!-- TALLADO: script=.v36/citas_aristas.py salida=.v36/citas_aristas_tabla.txt -->
+
+| que sostiene | fichero | linea | la salida, pegada |
+|---|---|---:|---|
+| D.37 serie 1: la cuenta y las partes | `cap_10.md` | L43 | `43: ...eams. He taught every manager on his team to have a succession of three forty-five-minute conversations with each direct report over the course of three ...` |
+| D.37 serie 2: la cuenta de las tres del despido | `cap_10.md` | L173 | `173: ...ring people is hard, and it ought to be hard. But if you do three things, you can make it far, far easier on the person yo...` |
+| D.29: el plan anual NOMBRA el despido sin desplegarlo | `cap_10.md` | L111 | `111: ...ot getting any better. At some point, you have to initiate the process of firing these people, most bosses understandably wait too long for this...` |
+| D.29: la remision de cap_08 al capitulo siete | `cap_08.md` | L95 | `95: ...Impromptu Guidance," chapter six.) Having annual "career conversations" is also an excellent way to strengthen your rela...` |
+
+**LAS DOS PRIMERAS SON `D.37` Y LAS DOS ULTIMAS SON `D.29`**, y la diferencia es exactamente la que
+el titular corregido del 11 sep 2026 pone: **`D.37` exige que el texto diga CUANTAS partes hay**
+(*three forty-five-minute conversations*, *if you do three things*), y donde el libro solo nombra el
+procedimiento sin contarlo (`L111`, `cap_08` `L95`) **la arista se declara igual pero con razon
+escrita que la sostenga**.
+
+**Y EL RECORTE DE LAS CITAS LO DIGO YO:** las cuatro salen recortadas a `50` caracteres a cada lado
+por el instrumento, y `L43` y `L173` llevan ademas **los guiones largos del libro sustituidos por coma**,
+porque pegarlos enteros pone en rojo el barrido de guiones de esta casa. **El numero de linea y el
+fragmento salen del mismo fichero y del mismo `open`**, no de mi memoria.
