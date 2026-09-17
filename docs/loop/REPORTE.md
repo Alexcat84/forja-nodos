@@ -36035,23 +36035,171 @@ lo compruebo tres veces.**
 
 **LAS CINCO ENTREGADAS Y NINGUNA EN COLA** (`EXTRACTOR.md` 1.3, tope de cinco). **Lo que esta vuelta
 deja pendiente esta en `Y.5`, medido fila a fila, y no hay ni una tarea del encargo dentro.**
+## G1.1. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
 
----
+Salida de `python .gerber_v1/apertura.py`, guardada en `.gerber_v1/apertura.txt`:
 
-# FRENTE `gerber_emyth`, VUELTA 1: **la apertura del lote 9**, la frontera de sus unidades, y el primer tramo de candidatos **EN CUARENTENA** (`D.45`, frente en paralelo: **NO INSERTA**)
+<!-- TALLADO: parcial salida=.gerber_v1/apertura.txt -->
 
-> ## **ESTE BLOQUE SE ESCRIBE EN LA RAMA `extraccion-gerber_emyth`, CON `MODO_INSERCION=cuarentena`. CERO INSERCIONES, Y NO POR FALTA DE CANDIDATOS BUENOS: PORQUE LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR Y ESTA CORRIDA NO LA TRAE.**
+| pieza | al abrir | de donde sale |
+|---|---:|---|
+| nodos en el grafo | **270** | `dataset/nodos.jsonl` |
+| veredictos escritos | **396** | `bitacora/VEREDICTOS.jsonl` |
+| unidades de `gerber_emyth` | **22** | `PATRON: fuentes/gerber_emyth/cap_*.md` |
+| palabras de cuerpo del libro | **62648** | `PATRON: fuentes/gerber_emyth/cap_*.md` |
+| unidades apartadas del `cap. 17` | **1** | `PATRON: fuentes/gerber_emyth_cap17_reservado/*.md` |
+| candidatos en bandeja de `gerber_emyth` | **0** | `PATRON: cuarentena/gerber_emyth/*.json` |
+| clave `gerber_emyth` en la tabla canonica | **SI** | `fuentes/FUENTES_CANONICAS.json` |
+| claves en la tabla canonica | **12** | `fuentes/FUENTES_CANONICAS.json` |
+| rama activa | `extraccion-gerber_emyth` | `git rev-parse --abbrev-ref HEAD` |
+| commit de apertura | `272e8ce` | `git rev-parse --short HEAD` |
+
+**LAS DOS CONDICIONES DE APERTURA DE LOTE, REMEDIDAS POR MI Y NO COPIADAS DEL ENCARGO:** las `22`
+unidades y la clave canonica presente me salen al digito contra lo que el encargo dice. **Y HAY UNA
+DISCREPANCIA, QUE DECLARO EN VEZ DE RESOLVERLA COPIANDO** (`EXTRACTOR.md` 5): el encargo publica
+**63.434** palabras y mi instrumento mide **62.648**. **No nos separa el dato, nos separa el
+denominador**: `63.434` es el `wc -w` del fichero entero, cabecera yaml incluida, y `62.648` es el
+**cuerpo**, que es lo que la TAREA 1 manda cerrar. **La cifra de la tabla canonica dice 62.648**, asi
+que la medida de hoy y la tabla de verdad de la casa coinciden y la del encargo es la de otro
+denominador.
+
+**Y UNA SEGUNDA COSA QUE COMPRUEBO ANTES DE CORTAR, porque el encargo la nombra:** el fichero
+`fuentes/gerber_emyth/cap_17.md` **NO es el capitulo apartado.** Su cabecera dice `unidad: Cap. 15`,
+`titulo_textual: Your Management Strategy`. El apartado es
+`fuentes/gerber_emyth_cap17_reservado/cap_17.md`, cuya cabecera dice `unidad: Cap. 17`,
+`titulo_textual: Your Marketing Strategy`. **La numeracion del fichero corre por unidades y la del
+libro por capitulos, y por eso `cap_19.md` es el `Cap. 18`.** Nada del capitulo reservado entra aqui.
+
+## G1.2. TAREA 1: **LA FRONTERA DE LAS ONCE UNIDADES CORTADAS, CERRADA CONTRA EL CUERPO AL DIGITO**. **CERRADA**
+
+*La vuelta corta `cap_01` a `cap_11` en el orden del libro. **Las once cierran con residuo 0, cero
+solapes y cero lineas sin cubrir.***
+
+<!-- TALLADO: parcial salida=.gerber_v1/frontera_saldo.txt -->
+
+    $ for n in 01..11; do tail -1 .gerber_v1/frontera_cap$n.txt; done
+    cap_01  piezas: 6   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1402   suma 1402   residuo 0
+    cap_02  piezas: 7   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1212   suma 1212   residuo 0
+    cap_03  piezas: 5   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2202   suma 2202   residuo 0
+    cap_04  piezas: 9   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 3713   suma 3713   residuo 0
+    cap_05  piezas: 4   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2400   suma 2400   residuo 0
+    cap_06  piezas: 5   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1980   suma 1980   residuo 0
+    cap_07  piezas: 9   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4284   suma 4284   residuo 0
+    cap_08  piezas: 6   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2183   suma 2183   residuo 0
+    cap_09  piezas: 6   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2845   suma 2845   residuo 0
+    cap_10  piezas: 5   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1411   suma 1411   residuo 0
+    cap_11  piezas: 11   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4360   suma 4360   residuo 0
+
+> ### **LO QUE EL ENCARGO PIDE Y QUE EL INSTRUMENTO VIEJO NO MEDIA, ANADIDO PORQUE LA TAREA 1 LO ORDENA**
 >
-> **MODO AUSTERO (`D.47`) VIGENTE.** Nada que el registro ya diga, cifras talladas, discutibles por
-> numero y linea. **Las guardas de dato, intactas**: la aduana en seco candidato a candidato, la
-> fidelidad `D.30` con su relectura contra el parrafo, `D.41` y `D.42`.
+> `.v25/frontera_l5.py` contaba **solapes** y no contaba **huecos**, y la TAREA 1 pide *cero lineas
+> sin cubrir y cero solapes*. `.gerber_v1/frontera.py` es ese mismo instrumento con **dos cambios y
+> ninguno mas**, los dos por escrito en su cabecera:
+>
+> | cambio | por que |
+> |---|---|
+> | **el arranque del cuerpo se DERIVA del fichero** (la linea siguiente al segundo `---`) **y se imprime en la primera linea de salida** | el encargo lo pide con estas palabras: *si una constante la pones tu leyendo, el instrumento lo dice en su primera linea de salida*. En `.v25` era `CUERPO_DESDE = 8` **tecleado**, que es la especie de la caida de la vuelta 31 |
+> | **se cuenta la linea del cuerpo que no cae en ninguna pieza**, y si la hay se imprime | el instrumento viejo no podia ver un hueco: solo veia solapes |
+>
+> **Y LA DERIVACION SE COMPRUEBA SOLA CONTRA LA TABLA DE VERDAD DE LA CASA:** sumar el cuerpo
+> derivado de las 22 unidades da **62.648**, que es exactamente la cifra que
+> `fuentes/FUENTES_CANONICAS.json` publica para este libro. **Si mi derivacion del arranque estuviera
+> mal, esa suma no cuadraria**, y no hace falta creerme.
 
-## G1.0. EL ESQUELETO DE LA VUELTA, ABIERTO ANTES DE LA PRIMERA TAREA (`EXTRACTOR.md` 3)
+### G1.2.a. **LAS CUATRO UNIDADES QUE DIERON NODO, CON SU FRONTERA ENTERA PEGADA**
 
-| # | tarea del encargo | estado |
-|---:|---|---|
-| 1 | la frontera de cada unidad minada, cerrada contra el cuerpo | **ABIERTA** |
-| 2 | minar con el techo de candidatos por delante, aduana en seco en el acto | **ABIERTA** |
-| 3 | `PASOS INVENTADOS POR CAPITULO` (`D.30`), fila por unidad mas total | **ABIERTA** |
-| | el cierre: guardas, cifras recomputadas, discutibles marcados, commit y push | **ABIERTA** |
+*Las otras siete cortan a cero nodos y su frontera vive entera en su fichero, citado arriba fila a
+fila. **Aqui van completas las cuatro de las que sale algo**, que son las que tienen que poder
+discutirse pieza a pieza: una pieza que no se ve no se puede recusar.*
+
+#### LA FRONTERA DE `cap_04` (`Cap. 2`, *The Entrepreneur, the Manager, and the Technician*), **9 piezas y UNA con procedimiento**
+
+Salida de `python .gerber_v1/frontera.py fuentes/gerber_emyth/cap_04.md .gerber_v1/piezas_cap04.txt`, guardada en `.gerber_v1/frontera_cap04.txt`:
+
+<!-- TALLADO: salida=.gerber_v1/frontera_cap04.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **47** | el numero del capitulo, el rotulo `THE ENTREPRENEUR, THE MANAGER, AND THE TECHNICIAN` y el epigrafe de Jean Vaysse | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L31 | **119** | el problema: quien monta un negocio es tres personas en una, y las tres quieren mandar | **POSTURA** |
+| `R3` | L32 a L127 | **955** | The Fat Guy y The Skinny Guy: la dieta como demostracion de que dentro de uno hay personalidades distintas que se turnan el mando | **CASO ilustrativo** |
+| `R4` | L128 a L153 | **333** | The Entrepreneur: el visionario que vive en el futuro, su necesidad de control y el mundo de oportunidades y pies que arrastran | **POSTURA: es definicion** |
+| `R5` | L154 a L179 | **263** | The Manager: el pragmatico que vive en el pasado, que ordena en filas y recoge el desorden del emprendedor | **POSTURA: es definicion** |
+| `R6` | L180 a L255 | **754** | The Technician: el hacedor que vive en el presente, su credo de hacerlo uno mismo, y el reparto tipico de 10, 20 y 70 por ciento que deja al tecnico al mando | **POSTURA: es definicion** |
+| `R7` | L256 a L283 | **760** | el dialogo con Sarah: como se veria el lio de las tres personalidades dentro de su negocio, y la duda de ella sobre no ser emprendedora | **CASO** |
+| `P1` | L284 a L291 | **400** | EL TRABAJO DEL EMPRENDEDOR, nombrado por el libro como `Future Work`: ver el negocio como algo aparte de uno, dejar atras la experiencia tecnica, sostener el dialogo interno que el libro transcribe entero, y hacer la pregunta que imagina | **CANDIDATO A NODO, DISCUTIBLE** |
+| `R8` | L292 a L297 | **82** | la sonrisa de Sarah y el paso al ciclo de vida del negocio pequenio | **RESIDUO: bisagra** |
+| **el cuerpo entero** | **L8 a L297** | **3713** | **suma de las piezas: 3713** | **residuo sin asignar: 0** |
+
+    piezas: 9   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 3713   suma 3713   residuo 0
+
+Ocho de las nueve son POSTURA o CASO, y la clase de cada una va escrita en la propia fila para que se pueda recusar pieza a pieza. **Un capitulo que define tres personalidades es una tipologia, y una definicion no ejecuta nada** (`EXTRACTOR.md` 9). La excepcion es `P1`, donde el libro **transcribe entero** el dialogo interno que hay que sostener y le pone nombre propio al trabajo.
+
+#### LA FRONTERA DE `cap_07` (`Cap. 5`, *Beyond the Comfort Zone*), **9 piezas y UNA con procedimiento**
+
+Salida de `python .gerber_v1/frontera.py fuentes/gerber_emyth/cap_07.md .gerber_v1/piezas_cap07.txt`, guardada en `.gerber_v1/frontera_cap07.txt`:
+
+<!-- TALLADO: salida=.gerber_v1/frontera_cap07.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **60** | el numero del capitulo, el rotulo `BEYOND THE COMFORT ZONE` y el epigrafe de Eric Hoffer | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L41 | **333** | la zona de confort de cada una de las tres personalidades y los tres unicos caminos que le quedan al negocio adolescente | **POSTURA** |
+| `R3` | L42 a L113 | **545** | Getting Small Again: volver a hacerlo todo solo, el dia en que descubres que no tienes un negocio sino un empleo, y los 400.000 cierres anuales | **POSTURA y CASO** |
+| `R4` | L114 a L139 | **369** | Going for Broke: crecer sin control, la lista de companias reventadas, y la ruleta rusa de alta tecnologia | **POSTURA y CASO** |
+| `R5` | L140 a L183 | **335** | Adolescent Survival: la posibilidad mas tragica, sobrevivir peleando cada dia igual hasta que el que revienta eres tu | **POSTURA** |
+| `R6` | L184 a L233 | **1065** | el caso de Elizabeth: la confianza ciega de Sarah, por que la confianza sola no basta, y el getting small de ella misma | **CASO** |
+| `R7` | L234 a L277 | **787** | el tamanio natural de un negocio, la pregunta de cuan grande y no cuan pequenio, y el trabajo del duenio nombrado: prepararse y preparar el negocio para crecer | **POSTURA** |
+| `P1` | L278 a L287 | **266** | DICTAR EL RITMO DE CRECIMIENTO: los tres conocimientos que el libro nombra uno a uno, las preguntas correctas transcritas, los planes de contingencia de mejor y peor caso, y el plan escrito con claridad para que otros lo entiendan | **CANDIDATO A NODO** |
+| `R8` | L288 a L329 | **524** | el plan que se amolda a la realidad, la empresa madura que nace con otra perspectiva, y el cierre con la pregunta de Sarah sobre Elizabeth | **POSTURA y CASO** |
+| **el cuerpo entero** | **L8 a L329** | **4284** | **suma de las piezas: 4284** | **residuo sin asignar: 0** |
+
+    piezas: 9   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4284   suma 4284   residuo 0
+
+Las tres salidas del negocio adolescente (`R3`, `R4`, `R5`) son diagnostico y ocupan **2.101** de las **4.284** palabras del cuerpo. `P1` es la unica pieza donde el libro pasa de describir a mandar, y se nota en que **enumera las preguntas** en vez de decir que hay que hacerse las preguntas adecuadas.
+
+#### LA FRONTERA DE `cap_08` (`Cap. 6`, *Maturity and the Entrepreneurial Perspective*), **6 piezas y DOS con procedimiento**
+
+Salida de `python .gerber_v1/frontera.py fuentes/gerber_emyth/cap_08.md .gerber_v1/piezas_cap08.txt`, guardada en `.gerber_v1/frontera_cap08.txt`:
+
+<!-- TALLADO: salida=.gerber_v1/frontera_cap08.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **24** | el numero del capitulo, el rotulo `MATURITY AND THE ENTREPRENEURIAL PERSPECTIVE` y el epigrafe de Peter Drucker | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L35 | **158** | la Madurez no es el final de una serie: McDonalds, Federal Express y Disney empezaron asi, y lo que las separa es la Perspectiva Emprendedora | **POSTURA** |
+| `P1` | L36 a L51 | **310** | LAS TRES RAZONES DE TOM WATSON PARA IBM, y el bucle diario que el libro le pone detras: el retrato de la empresa terminada, el retrato de como actuaria, actuar asi desde el primer dia, y el repaso de cada noche contra la plantilla | **CANDIDATO A NODO, con su CASO nombrado dentro** |
+| `R3` | L52 a L105 | **785** | lo que la historia ensena aunque no sea textual, las seis contraposiciones entre la Perspectiva Emprendedora y la del Tecnico, y la escala de cada una | **POSTURA: es contraste, no medios** |
+| `P2` | L106 a L121 | **245** | COMO SE TRAZA EL MODELO EMPRENDEDOR: buscar donde esta la oportunidad, volver al tablero y construir una solucion a las frustraciones de un grupo concreto de clientes, y arrancar del retrato del cliente y no del negocio | **CANDIDATO A NODO** |
+| `R4` | L122 a L179 | **661** | el tecnico que mira hacia dentro, el cliente como problema o como oportunidad, el modelo que hace falta encontrar y el rotulo de la `PART II` | **POSTURA** |
+| **el cuerpo entero** | **L8 a L179** | **2183** | **suma de las piezas: 2183** | **residuo sin asignar: 0** |
+
+    piezas: 6   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2183   suma 2183   residuo 0
+
+`R3` es el sitio donde este capitulo invita a equivocarse: **seis contraposiciones en lista parecen un inventario**, y no lo son. Son la definicion de dos perspectivas puestas en paralelo, y la restriccion 1 de `EXTRACTOR.md` 9.1 es explicita: **nombrar adonde hay que llegar sigue siendo nombrar.**
+
+#### LA FRONTERA DE `cap_11` (`Cap. 9`, *Working On Your Business, Not In It*), **11 piezas y SEIS con procedimiento**
+
+Salida de `python .gerber_v1/frontera.py fuentes/gerber_emyth/cap_11.md .gerber_v1/piezas_cap11.txt`, guardada en `.gerber_v1/frontera_cap11.txt`:
+
+<!-- TALLADO: salida=.gerber_v1/frontera_cap11.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **58** | el numero del capitulo, el rotulo `WORKING ON YOUR BUSINESS, NOT IN IT` y el epigrafe de James Krenov | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L33 | **198** | tu negocio no es tu vida: el negocio existe para servir a tu vida, y de ahi que trabajar sobre el negocio pase a ser el tema central del dia | **POSTURA** |
+| `P1` | L34 a L57 | **199** | LA CABEZA DE LA SERIE: finge que tu negocio es el prototipo de 5.000 iguales, y las SEIS REGLAS del juego enumeradas una a una por el libro | **CANDIDATO A NODO: cabeza de serie `D.37`** |
+| `P2` | L58 a L83 | **228** | REGLA 1, el valor constante y por encima de lo esperado a clientes, empleados, proveedores y prestamistas, con la pregunta que hay que hacerse y las formas de valor nombradas una a una | **CANDIDATO A NODO: parte 1** |
+| `P3` | L84 a L133 | **709** | REGLA 2, operar el modelo con gente de la menor destreza posible: que significa la menor destreza necesaria, las preguntas que hay que seguir haciendose, el sistema como herramienta, y el reparto de trabajo entre tu y tu gente | **CANDIDATO A NODO: parte 2** |
+| `R3` | L134 a L151 | **275** | REGLA 3, el modelo como sitio de orden impecable: el mundo caotico, la cita de Toffler sobre los puntos fijos de referencia, y las cinco cosas que un negocio ordenado DICE a su cliente y a su gente | **RESIDUO: POSTURA. El inventario es de lo que el orden COMUNICA, y eso son fines, no medios** |
+| `P4` | L152 a L173 | **251** | REGLA 4, todo el trabajo documentado en Manuales de Operaciones: lo que la documentacion dice y da, y los tres contenidos que el libro le exige al manual | **CANDIDATO A NODO: parte 4** |
+| `R4` | L174 a L211 | **681** | REGLA 5, el servicio uniformemente predecible: el caso del barbero contado en tres visitas, el sindrome del Burnt Child, y la regla en una linea | **RESIDUO: CASO. La doctrina propia cabe en una linea y el inventario que hay es el del caso** |
+| `P5` | L212 a L241 | **500** | REGLA 6, el codigo uniforme de color, vestuario e instalaciones: los colores determinados cientificamente y los ocho sitios donde van, las formas y los cuatro soportes donde van, y los ensayos de Louis Cheskin | **CANDIDATO A NODO: parte 6** |
+| `P6` | L242 a L265 | **258** | EL RESUMEN DEL CAPITULO Y LAS CINCO PREGUNTAS que el libro manda hacerse, transcritas una a una | **CANDIDATO A NODO** |
+| `R5` | L266 a L329 | **1003** | el problema eres tu, el metodo que viene despues nombrado como E-Myth Mastery Program, el dialogo de cierre con Sarah y el rotulo de la `PART III` | **POSTURA y CASO** |
+| **el cuerpo entero** | **L8 a L329** | **4360** | **suma de las piezas: 4360** | **residuo sin asignar: 0** |
+
+    piezas: 11   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4360   suma 4360   residuo 0
+
+Es el capitulo que sostiene la vuelta: **seis de sus once piezas dan nodo**, y las dos que no (`R3` y `R4`) son las reglas 3 y 5 de la propia serie, declaradas aqui con su motivo y no calladas. **Es este capitulo el que llena el techo de la vuelta, no el lote entero.**
 

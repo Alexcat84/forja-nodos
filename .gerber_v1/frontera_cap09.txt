@@ -1,0 +1,15 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_09.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L233.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **47** | el numero del capitulo, el rotulo `THE TURN-KEY REVOLUTION` y el epigrafe de Fritjof Capra | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L27 | **155** | la Revolucion Llave en Mano nombrada y su poder para transformar cualquier negocio | **POSTURA** |
+| `R3` | L28 a L77 | **608** | el fenomeno de la franquicia: Ray Kroc en 1952, el milagro del puesto de los MacDonald, y las cifras de franquicias contra el fracaso de los negocios independientes | **CASO con cifra** |
+| `R4` | L78 a L109 | **312** | la franquicia de nombre comercial contra la de formato de negocio, y la creencia que las separa: el producto verdadero de un negocio es el negocio mismo | **POSTURA** |
+| `R5` | L110 a L171 | **605** | vender el negocio en vez del producto: el franquiciado como cliente, el negocio a prueba de fallos, trabajar sobre el negocio y no en el, y el Prototipo de Franquicia nombrado | **POSTURA y CASO** |
+| `R6` | L172 a L233 | **1118** | el dialogo con Sarah y su tia sobre McDonalds: la integridad como hacer lo que dices que haras, y los dos artesanos separados por un orden de magnitud | **CASO** |
+| **el cuerpo entero** | **L8 a L233** | **2845** | **suma de las piezas: 2845** | **residuo sin asignar: 0** |
+
+piezas: 6   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2845   suma 2845   residuo 0

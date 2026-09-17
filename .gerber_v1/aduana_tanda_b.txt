@@ -1,0 +1,2 @@
+########## documentar_trabajo_manual_operaciones
+########## unificar_color_forma_vestuario_modelo

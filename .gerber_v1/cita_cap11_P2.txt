@@ -1,0 +1,16 @@
+AVISO: cero celdas tecleadas. Cada linea es la que sed -n imprime de fuentes/gerber_emyth/cap_11.md.
+UNICA TRANSFORMACION DECLARADA: 0 guion(es) largo(s) U+2014 sustituido(s) por coma mas
+espacio y 0 guion(es) medio(s) U+2013 por guion corto, porque el barrido de estilo de
+esta casa tumba los dos. El resto es byte a byte el del libro.
+
+59: 1. The Model Will Provide Consistent Value to Your Customers, Employees, Suppliers, and Lenders, Beyond What They Expect
+63: How do we understand it? I would suggest that value is what people perceive it to be, and nothing more.
+65: So what could your Prototype do that would not only provide consistent value to your customers, employees, suppliers, and lenders but would provide it beyond their wildest expectations?
+67: That is the question every Entrepreneur must ask.
+71: It is in the understanding of value, as it impacts every person with whom your business comes into contact, that every extraordinary business lives.
+73: Value can be a word said at the door of the business as a customer leaves.
+75: Value can be an unexpected gift from the business arriving in the mail.
+77: Value can be a word of recognition to a new recruit for a job well done, or, for that matter, to a seasoned salesperson who’s been successful for years.
+79: Value can be the reasonable price of your products, or the dedication you show in the process of explaining them to a customer who needs more help than usual.
+81: Value can be a simple word of thanks to your banker for his conscientiousness.
+83: Value is essential to your business and to the satisfaction you get from it as it grows.

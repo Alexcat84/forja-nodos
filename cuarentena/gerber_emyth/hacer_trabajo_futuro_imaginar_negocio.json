@@ -1,0 +1,33 @@
+{
+  "id": "hacer_trabajo_futuro_imaginar_negocio",
+  "titulo": "Hacer el trabajo futuro del emprendedor: dejar atras el oficio y sostener el dialogo interno hasta la pregunta que imagina el negocio",
+  "denominaciones": {
+    "nombre_largo": "El trabajo que el libro llama Future Work: el dialogo interno del emprendedor, transcrito entero por el texto, y la pregunta que lo cierra",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "Future Work"},
+      {"idioma": "ingles", "termino": "the dreaming question"}
+    ]
+  },
+  "condiciones_activacion": "Cuando eres bueno en un oficio y vas a montar o a rehacer un negocio, y toca hacer el trabajo del emprendedor en vez del trabajo tecnico.",
+  "entregable_esperado": "El dialogo interno sostenido y la pregunta que el libro llama la pregunta que suena, hecha sobre tu propio negocio: me pregunto que negocio seria ese.",
+  "pasos_accionables": [
+    "Haz el trabajo de ver el negocio como algo aparte de ti, su dueno, que es como el texto define el trabajo de un emprendedor.",
+    "Hazte las preguntas correctas de por que este negocio y no aquel, con el ejemplo que el propio texto pone: por que un negocio de hornear tartas y no un taller de chapa.",
+    "Deja atras tu experiencia en el oficio antes de seguir, que es lo que el texto le pide al que hornea tartas y esta decidido a hacer trabajo de emprendedor.",
+    "Entra en el dialogo interno que el texto transcribe entero, y empieza por donde el empieza: es hora de crear una vida nueva, es hora de retar a mi imaginacion y de empezar el proceso de dar forma a una vida entera nueva.",
+    "Sigue el dialogo por donde el texto lo sigue, nombrando lo que ese negocio tendria que ser: uno que pueda darme todo lo que quiero, que no me exija estar alli todo el tiempo, que tenga el potencial de ser asombrosamente unico, y del que la gente hable mucho despues de haber comprado alli la primera vez y vuelva por esa experiencia.",
+    "Cierra el dialogo con la pregunta que el texto llama la pregunta que suena y senala como el corazon del trabajo del emprendedor: me pregunto que negocio seria ese.",
+    "Repite ese trabajo al principio del negocio y en cada etapa del camino, que es donde el texto dice que la personalidad emprendedora lo hace, y llamalo por el nombre que el texto le da: Future Work."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_04.md, unidad Cap. 2, titulo textual The Entrepreneur the Manager, and the Technician. Sale de la PIEZA P1 de la frontera publicada en esta misma vuelta, L284 a L291, 429 palabras, unica pieza con procedimiento propio de las nueve del capitulo. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: el capitulo entero es una tipologia de tres personalidades y se lee entero como definicion, que es el caso dificil. Esta pieza es la excepcion porque el libro pone AQUI SU PROPIO INVENTARIO y no un adjetivo de adecuacion: nombra el trabajo por su nombre (Future Work), nombra la operacion de partida (ver el negocio como algo aparte del dueno), nombra lo que hay que dejar atras (la experiencia en el oficio), TRANSCRIBE ENTERO el dialogo interno que hay que sostener, y nombra la pregunta que lo cierra (I wonder what that business would be). Son etapas y objetos de trabajo. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE, con su cita pegada en .gerber_v1/cita_cap04_P1.txt. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: cuanto dura ese dialogo, cada cuanto se repite, donde se anota, ni quien mas participa. El texto dice que se hace al principio y en cada etapa del camino, y poner un periodo o un soporte seria un puente de la especie periodo. ESTE ES MI DISCUTIBLE 1 DE LA VUELTA, MARCADO ANTES DE SABER SI ACIERTO: los cuatro rasgos del negocio sonado del paso 5 son FINES, y la restriccion 1 de EXTRACTOR.md 9.1 dice que un inventario de fines no cuenta. Lo defiendo porque no son el inventario que sostiene el nodo: el inventario que lo sostiene son las etapas (ver aparte, dejar atras el oficio, entrar en el dialogo, cerrar con la pregunta, repetirlo en cada etapa), y esos rasgos van dentro del dialogo que el libro transcribe, como contenido de un paso y no como criterio. Si el auditor lo tumba, cae el paso 5 y no el nodo.",
+  "atribuciones": [],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-16"}
+  ]
+}

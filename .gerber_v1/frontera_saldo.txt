@@ -1,0 +1,12 @@
+$ for n in 01..11; do tail -1 .gerber_v1/frontera_cap$n.txt; done
+cap_01  piezas: 6   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1402   suma 1402   residuo 0
+cap_02  piezas: 7   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1212   suma 1212   residuo 0
+cap_03  piezas: 5   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2202   suma 2202   residuo 0
+cap_04  piezas: 9   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 3713   suma 3713   residuo 0
+cap_05  piezas: 4   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2400   suma 2400   residuo 0
+cap_06  piezas: 5   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1980   suma 1980   residuo 0
+cap_07  piezas: 9   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4284   suma 4284   residuo 0
+cap_08  piezas: 6   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2183   suma 2183   residuo 0
+cap_09  piezas: 6   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2845   suma 2845   residuo 0
+cap_10  piezas: 5   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1411   suma 1411   residuo 0
+cap_11  piezas: 11   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4360   suma 4360   residuo 0

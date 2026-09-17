@@ -1,0 +1,35 @@
+{
+  "id": "trazar_modelo_negocio_cliente_primero",
+  "titulo": "Trazar el modelo de tu negocio arrancando del retrato del cliente y no del retrato del negocio",
+  "denominaciones": {
+    "nombre_largo": "El Modelo Emprendedor tal como el libro lo traza: buscar donde esta la oportunidad, volver al tablero, construir una solucion a las frustraciones de un grupo concreto de clientes, y empezar por el retrato de ese cliente",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "Entrepreneurial Model"},
+      {"idioma": "ingles", "termino": "perceived needs"}
+    ]
+  },
+  "condiciones_activacion": "Cuando vas a definir que negocio montar o rehacer y tienes que decidir por donde se empieza el modelo.",
+  "entregable_esperado": "El modelo del negocio trazado como solucion a las frustraciones de un grupo concreto de clientes, con el retrato de ese cliente hecho antes que el del negocio y con las dos preguntas del libro contestadas.",
+  "pasos_accionables": [
+    "Parte de lo que el texto dice que es el modelo: un modelo de negocio que satisface las necesidades percibidas de un segmento concreto de clientes de una manera innovadora.",
+    "Mira el mundo y pregunta donde esta la oportunidad, que es por donde el texto dice que el emprendedor empieza cuando crea el modelo.",
+    "Una vez la has identificado, vuelve al tablero de dibujo.",
+    "Construye alli una solucion a las frustraciones que encuentres entre un grupo concreto de clientes.",
+    "Dale a esa solucion la forma de un negocio que se ve y actua de una manera muy concreta: la manera en que el cliente necesita que se vea y actue, y no la que necesites tu.",
+    "Preguntate como se vera tu negocio para el cliente.",
+    "Preguntate como destacara tu negocio entre todos los demas.",
+    "No arranques del retrato del negocio que vas a crear sino del retrato del cliente para el que lo vas a crear, que es lo que el texto pone como la diferencia del modelo emprendedor.",
+    "Cuenta con la condicion con la que el texto lo cierra: sin un retrato claro de ese cliente, ningun negocio puede tener exito."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_08.md, unidad Cap. 6, titulo textual Maturity and the Entrepreneurial Perspective. Sale de la PIEZA P2 de la frontera publicada en esta misma vuelta, L106 a L121, 245 palabras. Es la segunda de las dos piezas con procedimiento propio de las seis del capitulo. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la seccion que lo rodea es una contraposicion de dos perspectivas y es postura entera, y de hecho la pieza R3 de la frontera, con sus seis contraposiciones, queda declarada como residuo por eso mismo. Esta pieza es distinta porque el libro pone su propio inventario de ETAPAS con verbos: mirar el mundo y preguntar donde esta la oportunidad, volver al tablero, construir la solucion, darle la forma que el cliente necesita, y dos preguntas transcritas una a una. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE, con su cita pegada en .gerber_v1/cita_cap08_P2.txt. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: como se averiguan las frustraciones de ese grupo, como se delimita el segmento, ni con que se comprueba que el retrato del cliente es claro. El texto no lo dice en esta pieza y ponerlo seria inventarle al libro un metodo de investigacion que no tiene. ARISTA DECLARADA POR LECTURA, no por senal (D.29): este nodo y construir_empresa_plantilla_vision_diaria salen del mismo capitulo y los dos hablan de retratos, pero no son el mismo procedimiento y la frontera lo ensena: aquel arranca del retrato de la EMPRESA terminada y este dice expresamente que NO se arranca del retrato del negocio sino del cliente. La razon completa va en el reporte de esta vuelta, porque este frente no inserta y las aristas no se cablean aqui.",
+  "atribuciones": [],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-16"}
+  ]
+}

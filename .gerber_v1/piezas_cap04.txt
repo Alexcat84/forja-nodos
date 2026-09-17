@@ -1,0 +1,11 @@
+[
+ ('R1',   8,  19, 'el numero del capitulo, el rotulo `THE ENTREPRENEUR, THE MANAGER, AND THE TECHNICIAN` y el epigrafe de Jean Vaysse', 'RESIDUO: rotulo y epigrafe'),
+ ('R2',  20,  31, 'el problema: quien monta un negocio es tres personas en una, y las tres quieren mandar', 'POSTURA'),
+ ('R3',  32, 127, 'The Fat Guy y The Skinny Guy: la dieta como demostracion de que dentro de uno hay personalidades distintas que se turnan el mando', 'CASO ilustrativo'),
+ ('R4', 128, 153, 'The Entrepreneur: el visionario que vive en el futuro, su necesidad de control y el mundo de oportunidades y pies que arrastran', 'POSTURA: es definicion'),
+ ('R5', 154, 179, 'The Manager: el pragmatico que vive en el pasado, que ordena en filas y recoge el desorden del emprendedor', 'POSTURA: es definicion'),
+ ('R6', 180, 255, 'The Technician: el hacedor que vive en el presente, su credo de hacerlo uno mismo, y el reparto tipico de 10, 20 y 70 por ciento que deja al tecnico al mando', 'POSTURA: es definicion'),
+ ('R7', 256, 283, 'el dialogo con Sarah: como se veria el lio de las tres personalidades dentro de su negocio, y la duda de ella sobre no ser emprendedora', 'CASO'),
+ ('P1', 284, 291, 'EL TRABAJO DEL EMPRENDEDOR, nombrado por el libro como `Future Work`: ver el negocio como algo aparte de uno, dejar atras la experiencia tecnica, sostener el dialogo interno que el libro transcribe entero, y hacer la pregunta que imagina', 'CANDIDATO A NODO, DISCUTIBLE'),
+ ('R8', 292, 297, 'la sonrisa de Sarah y el paso al ciclo de vida del negocio pequenio', 'RESIDUO: bisagra'),
+]

@@ -1,0 +1,20 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_11.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L329.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **58** | el numero del capitulo, el rotulo `WORKING ON YOUR BUSINESS, NOT IN IT` y el epigrafe de James Krenov | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L33 | **198** | tu negocio no es tu vida: el negocio existe para servir a tu vida, y de ahi que trabajar sobre el negocio pase a ser el tema central del dia | **POSTURA** |
+| `P1` | L34 a L57 | **199** | LA CABEZA DE LA SERIE: finge que tu negocio es el prototipo de 5.000 iguales, y las SEIS REGLAS del juego enumeradas una a una por el libro | **CANDIDATO A NODO: cabeza de serie `D.37`** |
+| `P2` | L58 a L83 | **228** | REGLA 1, el valor constante y por encima de lo esperado a clientes, empleados, proveedores y prestamistas, con la pregunta que hay que hacerse y las formas de valor nombradas una a una | **CANDIDATO A NODO: parte 1** |
+| `P3` | L84 a L133 | **709** | REGLA 2, operar el modelo con gente de la menor destreza posible: que significa la menor destreza necesaria, las preguntas que hay que seguir haciendose, el sistema como herramienta, y el reparto de trabajo entre tu y tu gente | **CANDIDATO A NODO: parte 2** |
+| `R3` | L134 a L151 | **275** | REGLA 3, el modelo como sitio de orden impecable: el mundo caotico, la cita de Toffler sobre los puntos fijos de referencia, y las cinco cosas que un negocio ordenado DICE a su cliente y a su gente | **RESIDUO: POSTURA. El inventario es de lo que el orden COMUNICA, y eso son fines, no medios** |
+| `P4` | L152 a L173 | **251** | REGLA 4, todo el trabajo documentado en Manuales de Operaciones: lo que la documentacion dice y da, y los tres contenidos que el libro le exige al manual | **CANDIDATO A NODO: parte 4** |
+| `R4` | L174 a L211 | **681** | REGLA 5, el servicio uniformemente predecible: el caso del barbero contado en tres visitas, el sindrome del Burnt Child, y la regla en una linea | **RESIDUO: CASO. La doctrina propia cabe en una linea y el inventario que hay es el del caso** |
+| `P5` | L212 a L241 | **500** | REGLA 6, el codigo uniforme de color, vestuario e instalaciones: los colores determinados cientificamente y los ocho sitios donde van, las formas y los cuatro soportes donde van, y los ensayos de Louis Cheskin | **CANDIDATO A NODO: parte 6** |
+| `P6` | L242 a L265 | **258** | EL RESUMEN DEL CAPITULO Y LAS CINCO PREGUNTAS que el libro manda hacerse, transcritas una a una | **CANDIDATO A NODO** |
+| `R5` | L266 a L329 | **1003** | el problema eres tu, el metodo que viene despues nombrado como E-Myth Mastery Program, el dialogo de cierre con Sarah y el rotulo de la `PART III` | **POSTURA y CASO** |
+| **el cuerpo entero** | **L8 a L329** | **4360** | **suma de las piezas: 4360** | **residuo sin asignar: 0** |
+
+piezas: 11   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4360   suma 4360   residuo 0

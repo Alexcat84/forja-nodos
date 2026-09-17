@@ -909,7 +909,20 @@ CIERRE VERDE: el tallado y el censo de rutas.
 [2026-09-16 19:35:39]   sello de la apertura ciega verificado: intacto tras el turno
 [2026-09-16 19:35:39] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-16 19:35:39] VUELTA 3 : EXTRACTOR (claude-opus-5)
-[2026-09-16 20:55:18] arranque: rama extraccion-gerber_emyth, MODO_INSERCION=cuarentena
-[2026-09-16 20:55:18] ROL INICIAL FORZADO por EMPEZAR_EN: extractor (gana sobre la medicion)
-[2026-09-16 20:55:18] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
-[2026-09-16 20:55:18] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-16 20:53:56] arranque: rama extraccion-gerber_emyth, MODO_INSERCION=cuarentena
+[2026-09-16 20:53:57] ROL INICIAL POR MEDICION: AUDITOR. El REPORTE es mas nuevo que el ACTA, asi que la vuelta anterior quedo SIN AUDITAR.
+[2026-09-16 20:53:57]   y los testigos del arnes lo confirman: el ultimo turno NO fue el del auditor
+[2026-09-16 20:53:57]   ultimo commit de REPORTE.md      : 2026-09-16 20:23:56 (1789604636)
+[2026-09-16 20:53:57]   ultimo commit de ACTA_AUDITOR.md : 2026-09-16 19:33:58 (1789601638)
+[2026-09-16 20:53:57] VUELTA 1 : SE SALTA EL TURNO DEL EXTRACTOR, la corrida empieza por el AUDITOR
+[2026-09-16 20:53:57] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 20:53:58]   hereda 4 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-16 21:19:12] auditor ciego listo (USD 11.674637999999996), 1513s, intento 1 de 7
+[2026-09-16 21:19:12]   herencia declarada: acta leida por su huella y los 4 heredados resueltos
+[2026-09-16 21:19:13] APERTURA CIEGA ROTA en la vuelta 1: REAPARECIERON REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 21:19:13]   durante la fase ciega. Solo se recuperan a mano, asi que fue deliberado.
+[2026-09-16 21:19:13]   testigo de guardas, antes de sellar (D.38.3)
+[2026-09-16 21:19:17] SELLO NO ACEPTADO en la vuelta 1: una guarda estaba en ROJO al sellar.
+[2026-09-16 21:19:18]     EL SELLO NO SE ACEPTA: 1 guarda(s) en rojo al sellar.
+[2026-09-16 21:19:18]       la guarda 'guiones' estaba en ROJO en el instante del sello (2026-09-16 21:19:13). Una cifra vale en el instante del sello (D.38.3, 16 sep 2026): si al cerrar hay un rojo, la tabla de cierre no se escribio DESPUES de volver a correr las guardas. BARRIDO DE GUIONES EN ROJO: 4 hallazgo(s)
+[2026-09-16 21:19:18] DETENIDO en la vuelta 1: el testigo desmiente el estado del sello. Ver docs/loop/PARA_ALEXIS.md
