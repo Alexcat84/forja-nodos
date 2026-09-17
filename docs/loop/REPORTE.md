@@ -36071,3 +36071,81 @@ lo compruebo tres veces.**
 
 **LAS CINCO ENTREGADAS Y NINGUNA EN COLA** (`EXTRACTOR.md` 1.3, tope de cinco). **Lo que esta vuelta
 deja pendiente esta en `Y.5`, medido fila a fila, y no hay ni una tarea del encargo dentro.**
+
+
+# VUELTA 33, **la fecha que se escribio en el dato**, y **seguir insertando el lote 4 por `cap_08`** (lote 4, `scott_radical_candor`)
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`. Tres tareas, bajo el tope de cinco (`EXTRACTOR.md` 1.3).
+**La `TAREA 1` es BLOQUEANTE y va antes de minar o insertar nada.** Vuelta en **MODO AUSTERO**
+(`D.47`).*
+
+## Z.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**La primera operacion de mi turno es el commit del arnes pendiente** (`EXTRACTOR.md` 1.1), asi que
+esta tabla se lee **justo despues de ese commit y antes de la `TAREA 1`**: el commit que cita es ya
+estado intermedio y lo digo.
+
+<!-- TALLADO: script=.v33/apertura.py salida=.v33/apertura_tabla.txt -->
+
+| pieza | valor | de donde sale |
+|---|---:|---|
+| rama | extraccion-mundo-11 | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno | `9b36072` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | **270** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **396** | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con alguna anotacion `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| aristas por `nodos_siguientes` | **105** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | **105** | `dataset/nodos.jsonl` |
+| candidatos en bandeja, lote 4 | **75** | PATRON: `cuarentena/scott_radical_candor/*.json` |
+| insertados y archivados, lote 4 | **67** | PATRON: `cuarentena/_insertados/scott_radical_candor/*.json` |
+| candidatos en bandeja, lote 5 | **3** | PATRON: `cuarentena/marquet_turn_the_ship/*.json` |
+| lote 4 insertado sobre `142`, por ciento | **47,2** | `cuarentena/_insertados/scott_radical_candor/` |
+
+**LAS CUATRO FILAS COMPARABLES CUADRAN AL DIGITO CONTRA `.v33/estado.txt`**, que es el recuento que el
+encargo publica: `270` nodos, `396` veredictos, `75` en bandeja del lote 4 y `3` en el lote 5. **Cero
+discrepancias que declarar** (`EXTRACTOR.md` 5).
+
+<!-- TALLADO: parcial salida=.v33/aceptacion_apertura_full.txt -->
+
+      total: 220 pruebas, 0 fallos, 0 errores
+
+### Z.0.a. **NI SALDO DE LOTE NI COLA SELLADA, Y VAN TRES VUELTAS** (`D.43`)
+
+<!-- TALLADO: parcial salida=.v33/entrega_arnes.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ ls docs/loop/ | grep -i -E "cola|vecin"
+      (ni una linea)
+
+Y el propio arnes lo escribe en su registro: `VUELTA 1 : SIN INFORME DE LOTE en esta corrida
+(INFORME_DE_LOTE vacio)`, linea del `docs/loop/loop.log` de hoy. **No lo invento y no lo lanzo**
+(`D.43`): esta vuelta **no trae saldo de lote**, y `CHOCAN entre si dentro del lote` no se publica
+porque no hay quien la firme. **La cola de vecinos la vuelvo a pagar yo dentro del turno.**
+
+### Z.0.b. **EL CREDITO DE MI LINEA AL ABRIR** (`D.48`)
+
+<!-- TALLADO: parcial salida=.v33/credito_apertura.txt -->
+
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+      tandas: 31, en 127 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA 31
+      CIFRA PUBLICADA    0 de 2     ACTA 31
+      CLASE              1 de 2     ACTA 31
+      DATO MOVIDO        1 de 2     ACTA 31
+      REPORTE            0 de 3     docs/loop/paradas/2026-09-17-de-quien-es-la-racha-DECISION.md, punto 3
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+## Z.SKEL. LAS TRES TAREAS ENCARGADAS, CON SU FILA VACIA HASTA QUE CIERREN (`EXTRACTOR.md` 3)
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | **BLOQUEANTE**: la fecha `17 sep 2026` escrita a mano el dia `16` dentro de `dataset/nodos.jsonl` y de `bitacora/VEREDICTOS.jsonl` | *abierta* |
+| 2 | seguir insertando el lote 4, uno por vez y por el orden del libro | *abierta* |
+| 3 | `PASOS INVENTADOS` por capitulo, antes de cerrar (`D.30`) | *abierta* |
