@@ -267,3 +267,156 @@ de escribirlo* y *el puente se retira en el mismo acto*), **y nadie la habia esc
 > **NADA DE ESTE ANEXO PIDE DESHACER TRABAJO, igual que la pagina de arriba.** Los `9` candidatos
 > estan bien y verificados por dos auditores por separado, el grafo no se movio, y las cinco guardas
 > estan en verde. **El bucle no funde ramas y el bucle no crea remotos.**
+
+---
+
+# SEGUNDO ANEXO. **EL TERCER AUDITOR DE LA MISMA VUELTA. NO BORRA NADA DE LO DE ARRIBA**
+
+*Escrito el 16 sep 2026 por el TERCER turno de auditor de la vuelta 1 de este frente. **Mi acta es la
+`ACTA M2`**, anexada detras de la `ACTA M1`. `PARALELO.md` 5.2: en los registros **se conservan los
+tres**. **Mi turno no tuvo fase ciega**: el arnes me invoco con el reporte ya expuesto, y por eso
+ninguna de mis lecturas se publica como ciega.*
+
+> **LOS CINCO MOTIVOS DE ARRIBA SE SOSTIENEN Y NO LOS REPITO.** Los recomprobe con mis propios
+> comandos. **Este anexo anade UNO mas, y es el unico hallazgo de esta vuelta que CAMBIA UNA
+> DECISION.**
+
+## MOTIVO 6. **`PASOS INVENTADOS` DE `cap_03` NO ES `0,00`. ES `15,09`, Y EL FRENO DE VOLUMEN SE ACTIVA**
+
+**Las dos actas de arriba publicaron `0,00` en las tres filas y *el freno NO SE ACTIVA*. Las dos se
+equivocaron en el mismo sitio, y por eso hizo falta un tercero.**
+
+**LAS DOS DECLARARON LOS OCHO PUENTES**, con su fichero, su especie y su cuenta, en seccion propia.
+**Nadie escondio nada.** Lo que fallo fue **donde pusieron el ocho**: en la prosa, y no en el
+numerador. Y para justificarlo citaron `8.4` (*un puente corregido no es una caida*), que es cierto
+**y contesta a otra pregunta**: dice si hay culpa, no si el puente cuenta.
+
+**QUIEN SI CONTESTA A ESA PREGUNTA ES LA PROPIA CASA, Y HACE DOCE VUELTAS:**
+
+    ACTA 4, seccion 3.6 (docs/loop/ACTA_AUDITOR.md L2841):
+    > ADJUDICO: SE CUENTAN PASOS ESCRITOS, Y LA CORRECCION NO BORRA EL PUENTE. El
+    > denominador es "pasos que el extractor escribio"; el numerador, "de esos, cuantos
+    > el libro no decia". Cuando se corrigio es irrelevante para la cifra y decisivo
+    > para el dato, que es justo por lo que D.30 manda corregir en el acto.
+
+    ACTA 5, seccion 7.2 (L4427):
+    > El denominador son pasos ESCRITOS y el puente corregido se cuenta ... y lo aplico
+    > igual en las dos formas de correccion, la que retira y la que reescribe.
+
+    y su tabla de aquella vuelta, que es el ejemplar exacto del caso de hoy (L4404):
+    | Cap. 2 | pasos escritos 35 | transcripcion 34 | PUENTE 1 | 2,86 |
+    (aquel puente se habia REESCRITO, y conto igual, con el denominador sin tocar)
+
+**Y LA LINEA BASE LO EXIGE:** el `36,11` del lote 1 son **13 puentes de 36 pasos ESCRITOS**, y **los
+13 se corrigieron tambien** (`CALIBRACION_D4.md` 9.1: *el lote quedo en 32 pasos*). Si un lote cuenta
+escritos y el siguiente cuenta supervivientes, **la serie entera es falsa**.
+
+### La cifra corregida, firmada por mi, con el numerador leido uno a uno contra el libro
+
+| unidad | nodos | pasos escritos | transcripcion | **PUENTE** | **PASOS INVENTADOS** |
+|---|---:|---:|---:|---:|---:|
+| `cap_01` | 1 | **7** | 7 | **0** | **0,00 por ciento** |
+| `cap_02` | 2 | **10** | 10 | **0** | **0,00 por ciento** |
+| `cap_03` | 6 | **53** | 45 | **8** | **15,09 por ciento** |
+| **el lote 5, lo minado hasta hoy** | **9** | **70** | 62 | **8** | **11,43 por ciento** |
+
+**LA FILA QUE DECIDE ES LA PEOR** (`AUDITOR_FORJA.md` 8.2): `cap_03` con **`15,09`** contra un tope de
+**`10,00`**. **El freno SE ACTIVA y el tramo baja un escalon.**
+
+**LOS OCHO PUENTES LOS FIRMO YO**: abri los cuatro mas dudosos con `sed` contra su linea del libro y
+comprobe que el texto original decia lo que el libro no dice. **Y relei una muestra propia de los
+marcados transcripcion**, `10` de `70` con semilla `20260916`: **`10` de `10` TRANSCRIPCION**.
+
+### Lo que cambia y lo que no
+
+| | |
+|---|---|
+| **ningun trabajo se deshace** | esta vuelta mino **UNA** unidad, por debajo de `DOS` y de `TRES`. **Los nueve candidatos no se tocan.** El grafo no se movio |
+| **no es caida del extractor** | `8.4` es explicita: **un puente cazado y corregido por quien lo escribio es `D.30` funcionando** |
+| **si es caida nuestra** | `0,00` es **una cifra falsa en sede duradera**, y vive en las dos actas y en la apertura sellada. **`CIFRA PUBLICADA PROPIA`**, y por ella **la racha del auditor de esta tanda pasa de `0 de 3` a `1 de 3`** |
+| **lo que costaba** | `8.3`: *una cifra de volumen mal firmada no cuesta una discusion: cuesta un lote entero corriendo al tamanio equivocado*. **Con `0,00` el lote subia un escalon; con `15,09` baja uno.** El doble de material por vuelta entre las dos lecturas |
+
+## Y UNA CORRECCION QUE SI PUDE HACER YO, PORQUE VIVE EN MI SEDE
+
+**El `MOTIVO 3` de arriba y el `MOTIVO 5` giran sobre la celda del reporte que dice *el tramo vigente
+del lote eran `DOS`*. La `ACTA M1` la cargo diciendo que ese `DOS` no salia de ninguna sede. Salia de
+dos**, y las dos son sede del auditor (`5.6`):
+
+    22356 y 22597  ACTA 24 : "el lote 5 corre a DOS capitulos por vuelta"
+    23532          ACTA 25 : "Tramo: DOS capitulos"
+    24062          ACTA 26 : "EL TRAMO DEL LOTE 5 SE QUEDA EN TRES CAPITULOS"
+
+**LA CAIDA DEL EXTRACTOR SE SOSTIENE IGUAL**, por `D.13` (entre dos reglas fechadas que chocan gana la
+mas reciente): el tramo vigente era `TRES`. **Lo que cambia es de que fue la caida:** no se invento un
+numero, **copio el de dos actas que nadie habia marcado como corregidas**, y fallo al llamarlo
+*vigente*.
+
+**Y LA MITAD QUE ES NUESTRA:** la `ACTA 26` movio el tramo de `DOS` a `TRES` escribiendo *se queda*,
+como si `TRES` ya fuese lo vigente, **y `6.2` manda que la perdedora se corrija por correccion
+declarada, sin borrar. Esa correccion no se escribio nunca.** La he escrito yo en la `ACTA M2`
+seccion `3.2`, que es mi sede y no toca el banco ni `src/` ni el arnes. **No he movido ninguna racha
+de tandas ya cerradas: la casa no aplica retroactividad.**
+
+## UNA COLUMNA QUE FALTABA EN LAS DOS PAGINAS DE ARRIBA, Y QUE TE TOCA ANTES DE INSERTAR
+
+**`0 CAERIA` es cierto. Lo que ninguna de las dos publico es que NINGUNO ENTRARIA SOLO.** Leido por mi
+de los informes del propio extractor (`PATRON: .vm01/aduana/c*.txt`), los siete candidatos con
+informe en esta corrida:
+
+    ENTRARIAN 0    BLOQUEARIAN 7    CAERIAN 0
+
+**Los siete esperan veredicto**, que es cola de lectura y no rechazo. **Hoy no bloquea nada porque
+este frente no inserta.** Bloquea el dia que se pida la insercion de los nueve.
+
+**Y LAS DOS CORRIDAS EN VUELO SIGUEN EN CERO BYTES**, medido por mi: el informe del lote entero y el
+de `cambiar_forma_trabajar_conservar_plantilla`. **Ninguna de las dos actas las publico como ruta de
+prueba**, asi que no hay caida de `7.B`; lo digo porque lo comprobe.
+
+## LO QUE VERIFIQUE POR SEPARADO, Y SALE IGUAL QUE ARRIBA
+
+    $ python forja.py gate                    GATE VERDE. nodos verificados: 270
+    $ python forja.py guiones                 BARRIDO DE GUIONES VERDE
+    $ python tests/test_aceptacion.py         total: 201 pruebas, 0 fallos, 0 errores
+    $ python forja.py resolutor               nodos vivos 270, deprecados 0, alias 0
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl   270  396  1
+    $ ls cuarentena/marquet_turn_the_ship/*.json | wc -l                              9
+    $ grep -c marquet_turn_the_ship dataset/nodos.jsonl                               0
+    lineas de bitacora que nombran uno de los nueve ids, buscadas una a una           0
+
+**La frontera de `cap_03` contada por tercera vez con contador propio: `16` filas, `0` que no
+coinciden, suma `1978`, cuerpo `1978`, `0` solapes, `0` lineas con contenido sin cubrir.** **Las
+cuatro celdas de apertura cuadran** (`270`, `3`, `17`, `dbff694`). **Los tres discutibles se sostienen
+los tres.**
+
+**Y UNA COLA `D.15` QUE NINGUNA DE LAS DOS ACTAS REGISTRO:** `python forja.py rancios` da **6 filas**
+(`2` sin huella y `4` rancias), **las seis de `scott_radical_candor` y ninguna de este frente**. **No
+pone nada en rojo** y el gate lo confirma; va escrito porque una cola sin registrar se pierde.
+
+## LO QUE ESTE ANEXO ANIADE A LO QUE SE TE PIDE
+
+1. **Lo de arriba, intacto:** el arnes (un turno por arbol, y que la restauracion de `D.34.2` no
+   devuelva copias mas viejas que el ultimo commit), y tus decisiones de los motivos 3 y 4.
+2. **Nuevo, y es el unico que cambia trabajo:** **el tramo del lote 5 baja a `DOS` capitulos por
+   vuelta.** Es mecanico y esta escrito (`8.1`), pero **lo firma un auditor cuya racha acaba de subir
+   por este mismo asunto**, asi que **lo dejo medido delante de ti y no lo escondo en una celda.**
+3. **Nuevo, pequenio, y tuyo:** las dos actas de arriba se declararon **limpias de la especie del
+   auditor**. **No lo estaban.** La racha del auditor de esta tanda queda en **`1 de 3`**. No para
+   nada por si sola; cambia el punto de partida de la siguiente.
+
+## COMO RETOMAR, CON LO QUE ESTE ANEXO AGREGA A LA LISTA DE ARRIBA
+
+La vuelta 2 abre con la tarea bloqueante que ya dice la pagina de arriba, **mas estas cuatro**:
+
+1. **Correr el lote a `DOS` capitulos por vuelta**, no a tres.
+2. **Escribir `TAREA 2` y `TAREA 3` del reporte desde los papeles de `.vm01/`, publicando `cap_03` en
+   `15,09` y NO en `0,00`.** Si se copia `.vm01/fidelidad_lote.txt` tal cual **vuelve a salir
+   `0,00`**: ese fichero describe la bandeja **despues** de las correcciones y los ocho puentes no
+   estan dentro.
+3. **Cerrar las dos corridas de aduana en cero bytes** antes de que nadie pida insertar estos nueve.
+4. **Reescribir o retirar el paso `1` de `ceder_control_reforzar_competencia_claridad`** antes de que
+   ese nodo entre al grafo.
+
+> **NADA DE ESTE ANEXO PIDE DESHACER TRABAJO, igual que las dos paginas de arriba.** Los nueve
+> candidatos estan bien y verificados ahora por tres auditores por separado, el grafo no se movio, y
+> las guardas estan en verde. **Lo unico que se corrige es una cifra nuestra, y lo que esa cifra
+> decide es el tamanio de la vuelta que viene.**

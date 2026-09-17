@@ -28766,3 +28766,475 @@ por la restauracion del arnes, y **las dos actas concluyen PARADA.**
 en seis minutos (`bfa62878` a las `22:30:55` y `4a0f7cfe` a las `22:37:41`), **uno encima del otro**,
 y cada auditor mide contra el suyo. **La averia no esta en ninguna de las dos actas: esta en que el
 arnes emitio dos sellos para una vuelta**, y eso ya esta en la parada.
+
+---
+
+# ACTA M2. VUELTA 1 DEL FRENTE `marquet_turn_the_ship`, **TERCER TURNO DE AUDITOR DE LA MISMA VUELTA**: las cuatro guardas y las cifras del reporte **me salen al digito otra vez**, los **tres discutibles se sostienen los tres** y **firmo los ocho puentes uno a uno contra su linea**. Y aun asi: **`PASOS INVENTADOS` de `cap_03` no es `0,00`, es `15,09`, y EL FRENO DE VOLUMEN SE ACTIVA**, porque la casa adjudico en la `ACTA 4` que **el puente corregido se cuenta**; **el `DOS` del reporte si salia de una sede** (`ACTA 24` y `ACTA 25`), y la que lo movio a `TRES` lo hizo **sin declarar la correccion**. **MI RACHA PROPIA SUBE A `1 de 3` Y LA PARADA SE SOSTIENE CON UN MOTIVO MAS**
+
+*Escrita por el auditor del bucle. Protocolo: `docs/loop/AUDITOR_FORJA.md`. **Frente en paralelo
+(`D.45`): este frente extrae y no inserta.** Modo austero (`D.47`).*
+
+## 0. LO PRIMERO, PORQUE CONDICIONA TODO LO DEMAS: **ESTE TURNO NO TUVO FASE CIEGA**
+
+**El arnes no me abrio apertura ciega: me invoco con el reporte ya expuesto.** Lo digo antes que
+nada porque `5.1` dice que la relectura ciega **es lo unico que hace informativa a la metrica**, y
+sin ella mis adjudicaciones de los discutibles **valen menos que las de mis dos predecesores**.
+
+    $ tail -3 docs/loop/SELLOS_APERTURA.jsonl
+    {"vuelta": 2, "fecha": "2026-09-16 19:01:13", "sello": "480d3b91340f63988cb1fb028d50106fee142ac2"}
+    {"vuelta": 1, "fecha": "2026-09-16 22:30:55", "sello": "bfa62878d2f6a94e525aab413bf34ba1a798a934"}
+    {"vuelta": 1, "fecha": "2026-09-16 22:37:41", "sello": "4a0f7cfec6392179961b023062f0a7eb2ec0a4e9"}
+    $ git hash-object docs/loop/APERTURA_CIEGA.md
+    4a0f7cfec6392179961b023062f0a7eb2ec0a4e9
+    $ git status --porcelain docs/loop/
+     M docs/loop/loop.log
+
+**DOS SELLOS PARA LA VUELTA 1 Y NINGUNO MIO.** No he abierto `APERTURA_CIEGA.md` para escribir: el
+fichero vale lo mismo que el ultimo sello y `git status` no lo lista. **No publico ni una sola
+lectura como ciega**, y donde mis predecesores pueden decir *lo vi antes de verlo*, yo solo puedo
+decir *lo recomprobe*. **Eso es menos, y por eso lo escribo arriba y no escondido al final.**
+
+## 0.1. HUECO DE ACTA (`AUDITOR_FORJA.md` 1.0): **NO HAY HUECO. HAY LO CONTRARIO**
+
+    $ grep -c "" docs/loop/ACTA_AUDITOR.md      (antes de anexar esta)
+    28768
+    $ git log --oneline -3
+    aa8649e ACTA M1 del frente marquet_turn_the_ship, VUELTA 1: PARADA, y es la SEGUNDA acta de esta misma vuelta
+    c5ac9c7 ACTA DEL FRENTE marquet_turn_the_ship, VUELTA 1: PARADA
+    3b33091 Apertura ciega de la vuelta 1, sellada antes de exponer el reporte
+
+**LA VUELTA 1 DE ESTE FRENTE YA TIENE DOS ACTAS Y ESTA ES LA TERCERA.** No audito ninguna vuelta sin
+acta: **audito una vuelta que tiene dos.** La numero `M2` por el mismo motivo por el que la anterior
+se numero `M1` (`PARALELO.md` 5.2, en los registros se conservan los dos y **nunca se elige uno**).
+
+> **`LECTURA`: mi trabajo util en este turno no es repetir lo que ya esta verificado dos veces.** Es
+> **recomputar lo que las dos publicaron igual**, porque dos lecturas que coinciden pueden coincidir
+> **en el mismo error**, y eso es justo lo que encontre en la seccion `4`.
+
+## 1. VERIFICACION, CORRIDA POR MI EN ESTE TURNO
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 270
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py
+      total: 201 pruebas, 0 fallos, 0 errores
+    $ python forja.py resolutor
+    nodos vivos: 270
+    nodos deprecados (archivo): 0
+    alias registrados: 0
+
+    $ wc -l < dataset/nodos.jsonl ; wc -l < bitacora/VEREDICTOS.jsonl ; wc -l < config/pares_mutuos.jsonl
+    270
+    396
+    1
+    $ ls cuarentena/marquet_turn_the_ship/*.json | wc -l
+    9
+    $ grep -c 'marquet_turn_the_ship' dataset/nodos.jsonl
+    0
+
+**Y EL DATO QUIETO, MEDIDO ID A ID Y NO EN BLOQUE**, que es la unica forma de saber que este frente
+no inserto: recorri los nueve ficheros de la bandeja y busque su `id` en la bitacora.
+
+    auditar_formacion_premios_ultima_fila          0
+    cambiar_forma_trabajar_conservar_plantilla     0
+    ceder_control_reforzar_competencia_claridad    0
+    contar_firmas_cadena_tramite_parado            0
+    encargar_meta_especifica_dejar_libre_metodo    0
+    inspeccionar_reparto_informacion_notas_jefe    0
+    observar_reunion_rutinaria_senales_plantilla   0
+    recorrer_organizacion_escuchar_plantilla       0
+    seguir_frustrado_preguntar_implantacion_ideas  0
+
+**CERO `CLASE` Y CERO `DATO MOVIDO` POSIBLES EN ESTA TANDA**, y no por confianza: `dataset/`,
+`bitacora/` y `config/` estan donde estaban, y ninguno de los nueve nombres aparece en la bitacora.
+
+### 1.1. La vigencia, que no pone nada en rojo y aun asi se dice (`D.15`)
+
+    $ python forja.py rancios
+    [SIN HUELLA] 2 veredictos (lineas 263 y 264)
+    [RANCIO]     4 veredictos (lineas 265, 267, 392 y 396)
+
+**SEIS FILAS DE COLA DE LECTURA, LAS SEIS DE `scott_radical_candor` Y NINGUNA DE ESTE FRENTE.** Ni
+una nombra un id de la bandeja `marquet`. **`D.15` dice literalmente que la vigencia es COLA DE
+TRABAJO y no guarda que tumbe el cierre**, y el gate lo confirma en verde. **No es fallo tecnico y no
+cuenta para la parada.** Se registra porque no estaba registrado en ninguna de las dos actas.
+
+### 1.2. La apertura del reporte, celda a celda, con mi comando al lado
+
+    $ wc -l < dataset/nodos.jsonl                                       -> 270   (el reporte dice 270)
+    $ git ls-tree --name-only dbff694 cuarentena/marquet_turn_the_ship/ -> 3     (el reporte dice 3)
+    $ ls fuentes/marquet_turn_the_ship/*.md | wc -l                     -> 17    (el reporte dice 17)
+    $ git show -s --format='%h %ci' dbff694   -> dbff694 2026-09-16 20:56:15     (el reporte dice dbff694)
+
+**LAS CUATRO CUADRAN.** Y la bandeja de apertura la cruzo contra el commit del capitulo, que es lo
+que hace auditable el `6`:
+
+    $ git show --stat --name-only 4138f53 | grep -c cuarentena
+    7
+
+> **`LECTURA`, y la escribo porque el `7` invita al error contrario:** el commit toca **siete**
+> ficheros de bandeja, pero **uno de los siete ya existia en `dbff694`**
+> (`encargar_meta_especifica_dejar_libre_metodo.json`, que la vuelta reescribio para declarar su
+> frontera incompleta). **Los candidatos NUEVOS son SEIS**, `3 + 6 = 9`, y la cuenta cierra. **El
+> siete es de ficheros tocados, no de candidatos escritos.**
+
+## 2. `TAREA 1`, LA FRONTERA DE `cap_03`: **AL DIGITO, Y CONTADA POR TERCERA VEZ**
+
+Contador propio, sin ninguna constante tecleada, sobre las dieciseis filas de la tabla `1.b` del
+reporte:
+
+    lineas del fichero        : 81
+    wc -w del fichero entero  : 2008
+    CUERPO_DESDE              : 8      (segundo cierre "---" en L7, leido del fichero)
+    FILAS QUE NO COINCIDEN          : []
+    SUMA DE LAS 16 FILAS            : 1978
+    CUERPO (L8 en adelante)         : 1978
+    SOLAPES                         : []
+    LINEAS CON CONTENIDO SIN CUBRIR : []
+    piezas: 16    P: 7    R: 9
+
+**LAS DIECISEIS FILAS SON LAS DEL FICHERO, UNA A UNA.** Tres auditores han contado esta frontera por
+separado y **da lo mismo las tres veces**. Es la parte mejor verificada de la campania y lo digo con
+su cifra en vez de con un adjetivo.
+
+## 3. LOS TRES DISCUTIBLES, RELEIDOS CONTRA SU LINEA
+
+**Sin fase ciega y sin par que releer:** `0` lineas de bitacora nombran a ninguno de los nueve
+(seccion `1`), asi que los discutibles **no son veredictos**, son decisiones de frontera, y se
+adjudican con `D.27` leyendo los pasos.
+
+| # | discutible | mi adjudicacion | coincide con `M1` |
+|---:|---|---|---|
+| **1** | `R5` (`L35`) fuera | **SE SOSTIENE** | si |
+| **2** | `R7` (`L61`) fuera teniendo inventario de seis | **SE SOSTIENE** | si |
+| **3** | minar UNA unidad y no dos | **SE SOSTIENE LA DECISION. CAE LA CIFRA** | si, **y con una correccion de procedencia** |
+
+**`R5` y `R7` no los reabro**, porque `D.47` dice que los discutibles van por numero y linea sin
+reabrir el argumento, y **mi lectura de las dos lineas da lo mismo que la suya**: `L35` nombra un
+sintoma (*hunker-down mode*) y un techo (*the minimum requirements*) **sin un solo medio de
+deteccion**, y los seis de `L61` son **seis cosas que se EVITAN**, que es el ejemplar literal de la
+restriccion 1 de `D.27` (*los cuatro desenlaces del parrafo 19 de `cap_01`*).
+
+### 3.1. **EL `DISCUTIBLE 3` CAE IGUAL, PERO NO POR EL MOTIVO QUE LA `ACTA M1` PUBLICA**
+
+La `ACTA M1` escribio, en linea marcada `LECTURA`:
+
+> *el `DOS` no sale de ninguna sede. Sale de lo que hizo la vuelta 25*
+
+**SALE DE DOS SEDES, Y LAS DOS SON SEDE DEL AUDITOR** (`5.6`). Las busque en el fichero:
+
+    $ grep -n "lote 5 corre a\|Tramo: DOS capitulos\|tramo que deja al lote 5" docs/loop/ACTA_AUDITOR.md
+    22356:| **tramo que deja al lote 5** | **DOS capitulos por vuelta** |          (ACTA 24)
+    22597:| **el lote 5 corre a** | # **DOS capitulos por vuelta** |                (ACTA 24)
+    23532:| ... lote entero 5,88 ... **Tramo: DOS capitulos** |                     (ACTA 25)
+    24062:> **EL TRAMO DEL LOTE 5 SE QUEDA EN TRES CAPITULOS**                     (ACTA 26)
+
+**LA CADENA ENTERA, Y CADA ESLABON CON SU ACTA:**
+
+| acta | que dice del tramo del lote 5 | por que |
+|---|---|---|
+| `ACTA 24` | **baja a DOS** | el freno de `8.1`: `cap_04` con `16,67` por encima del tope de `10` |
+| `ACTA 25` | **se queda en DOS** | *por `cap_04` y no por el lote 5* |
+| `ACTA 26` | **se queda en TRES** | razona **contra SUBIR a cuatro**, y no menciona el `DOS` |
+
+**LA CIFRA CAE IGUAL, Y POR `D.13`:** entre dos reglas fechadas que chocan gana la mas reciente, y la
+mas reciente es la `ACTA 26`. **El tramo vigente el 16 sep era `TRES`**, asi que la celda del reporte
+que dice *el tramo vigente del lote eran `DOS`* **es falsa y acumula**, en celda de tabla, dentro del
+marcado. **La caida del extractor se sostiene entera.**
+
+> **`LECTURA`: lo que cambia no es el veredicto, es de que fue la caida.** El extractor **no se
+> invento un numero**: copio el que dos actas del auditor habian escrito, **y ninguna de las dos
+> lleva la marca de estar corregida**. Su fallo fue **llamarlo VIGENTE sin ir a la sede mas
+> reciente**, que es exactamente *una nota vieja nunca es fuente de una cifra nueva* (`1.1`).
+>
+> **Y LA MITAD QUE ES NUESTRA:** la `ACTA 26` movio el tramo de `DOS` a `TRES` **escribiendo *se
+> queda*, como si `TRES` ya fuera lo vigente**, y `6.2` manda que la perdedora **se corrija por
+> correccion declarada, sin borrar**. **Esa correccion no se escribio nunca.** El extractor leyo una
+> sede sin marca. **La `ACTA M1` cerro esto diciendo que el `DOS` no tenia sede, y si la tenia.**
+
+### 3.2. **CORRECCION DECLARADA, EN MI PROPIA SEDE Y SIN BORRAR NADA**
+
+*`5.6`: `ACTA_AUDITOR.md` es sede del auditor. Esto no toca el banco, ni `src/`, ni el arnes, ni los
+protocolos, asi que `D.45` no lo alcanza.*
+
+> **EL TRAMO DEL LOTE 5 (`marquet_turn_the_ship`) QUEDO EN `TRES` CAPITULOS POR VUELTA EL 16 sep
+> 2026, POR LA `ACTA 26` Y POR `D.13`.** Las celdas de la `ACTA 24` (`L22356`, `L22597`) y de la
+> `ACTA 25` (`L23532`) que dicen `DOS` **eran ciertas al escribirse y hoy no lo son.** No se borran.
+> **Se leen con esta linea al lado.**
+
+**Y ESE `TRES` VUELVE A MOVERSE HOY, por la seccion `4` y por el freno de `8.1`.**
+
+## 4. `PASOS INVENTADOS POR CAPITULO` (`AUDITOR_FORJA.md` 8): **LA RECOMPUTO Y NO ES `0,00`**
+
+**ES LA CIFRA QUE FIRMO YO Y QUE NO SE COPIA** (`8.3`), y es la unica de esta vuelta en la que me
+separo de mis dos predecesores. **Las dos actas anteriores publicaron `0,00` en las tres filas y *el
+freno NO SE ACTIVA*.** Yo cuento lo mismo que ellos y **saco otra cifra**, porque el numerador que
+esta casa tiene adjudicado no es el que las dos usaron.
+
+### 4.1. El denominador y el numerador: la casa los adjudico en la `ACTA 4` y nadie los movio
+
+    $ sed -n '2841,2845p' docs/loop/ACTA_AUDITOR.md
+    > ADJUDICO: SE CUENTAN PASOS ESCRITOS, Y LA CORRECCION NO BORRA EL PUENTE. El
+    > denominador es "pasos que el extractor escribio"; el numerador, "de esos, cuantos
+    > el libro no decia". Cuando se corrigio es irrelevante para la cifra y decisivo
+    > para el dato, que es justo por lo que D.30 manda corregir en el acto.
+
+**Y LA `ACTA 5` LA APLICO LITERAL, EN LAS DOS FORMAS DE CORRECCION**, que es justo el caso de hoy:
+
+    $ sed -n '4420,4432p' docs/loop/ACTA_AUDITOR.md
+    Cap. 2  4+5+5+7+4+6+4                        = 35 finales
+            puentes retirados enteros            =  0   (el unico se REESCRIBIO)
+            pasos ESCRITOS                       = 35   <- coincide
+    Cap. 3  6+8+4+6+6+5+7+7                      = 49 finales
+            puentes retirados enteros            =  4
+            pasos ESCRITOS                       = 53   <- coincide
+
+    El denominador son pasos ESCRITOS y el puente corregido se cuenta: es la
+    adjudicacion 5 del ACTA 4 aplicada literal, y la aplico igual en las dos formas
+    de correccion, la que retira y la que reescribe.
+
+Y su tabla de aquella vuelta, que es el ejemplar que decide el caso de hoy:
+
+    $ sed -n '4404p' docs/loop/ACTA_AUDITOR.md
+    | **Cap. 2**, `Scorecard` | `smart_who` | ... | **35** | 34 | **1** | **2,86** |
+
+**EL PUENTE DE AQUEL `Cap. 2` SE HABIA REESCRITO Y CONTO IGUAL, CON EL DENOMINADOR SIN TOCAR.** Es
+letra por letra el caso de los ocho de hoy.
+
+**Y LA COMPARABILIDAD LO EXIGE, que es el argumento que la `ACTA 4` puso delante:** la linea base del
+`36,11` son **13 puentes de 36 pasos ESCRITOS** del lote 1, y **los 13 se corrigieron tambien**
+(`CALIBRACION_D4.md` 9.1: *el lote quedo en 32 pasos*). **Si el lote 1 conto escritos y este contara
+supervivientes, la serie entera seria falsa.**
+
+> **`LECTURA`: `8.4` contesta a OTRA pregunta, y ahi esta el error de las dos actas.** `8.4` dice que
+> un puente corregido **no es una caida**, y eso es cierto y las dos lo citan bien. **Lo que `8.4` no
+> dice en ningun sitio es que salga del numerador.** La `ACTA 4` si lo dice, con estas palabras:
+> *cuando se corrigio es irrelevante para la cifra*. **Citar la regla de la culpa para resolver una
+> pregunta de aritmetica es lo que convierte `15,09` en `0,00`.**
+
+### 4.2. Los ocho puentes, **firmados uno a uno contra su linea del libro**
+
+`.vm01/retirados.txt`, del propio extractor: ocho, **todos de `cap_03`**, siete de la especie *el
+medio* y uno de *destinatario invertido*. **No los copio: abri los cuatro mas dudosos con `sed` y
+comprobe que el original decia lo que el libro no dice y que el texto de hoy si lo dice.**
+
+    auditar_formacion paso 2   original: "no te quedes en el medio con los que hablan"
+      L57: "As the formation went on, I wandered around the periphery."
+      -> el libro NO se lo manda al lector: describe por donde se fue el autor. PUENTE.
+      hoy: "Andate por el borde del acto mientras sigue, que es lo que el texto hace" -> TRANSCRIPCION
+
+    contar_firmas paso 3       original: "apunta lo que ese retraso le cuesta ya"
+      L37: "He hadn t bought airline tickets yet since he didn t know if his leave would be
+            approved, and now, this late, the tickets were bound to be expensive"
+      -> el libro dice que lo supo, no que lo apuntara. PUENTE.
+
+    inspeccionar_reparto paso 2  original: "separa lo que entra por sus clases"
+      L45: "Some messages were general and administrative ..."
+      -> el libro describe tres clases; no manda clasificar nada. PUENTE.
+
+    seguir_frustrado paso 6    original: "pregunta tambien por la gente que trabaja para el"
+      L27: "The chiefs working for him didn t seem eager to step up with their own ideas either."
+      -> el libro registra una observacion; nadie pregunta. PUENTE.
+
+**LOS OCHO SON PUENTES DE VERDAD Y EL NUMERADOR ES `8`. LO FIRMO YO.**
+
+### 4.3. Y el otro lado de la cifra: **releo los pasos marcados TRANSCRIPCION** (`8.3` punto 2)
+
+*El error que esta metrica invita a cometer es marcar un puente como transcripcion.* Muestra propia,
+**con semilla distinta de la de la `ACTA M1`** para que las dos muestras no sean la misma:
+
+    POBLACION DE PASOS EN LA BANDEJA : 70
+    SEMILLA ESCRITA EN ESTA ACTA     : 20260916
+    MUESTRA                          : 10 de 70, abiertos con sed contra su linea
+    RESULTADO                        : 10 de 10 TRANSCRIPCION
+
+Los dos mas apretados, con su linea pegada:
+
+    recorrer_organizacion paso 4: "Monta ademas una serie de recorridos en los que cada jefe o cada
+      oficial te ensene sus propios espacios."
+      L15: "I also set up a series of walkabouts during which each chief or officer would walk me
+            around his spaces."
+
+    auditar_formacion paso 10: "Mira cuando se juntaron las menciones y las medallas."
+      L55: "There was a last-minute scramble to assemble the citations and medals."
+
+**EL DENOMINADOR TAMBIEN ES MIO Y NO DEL REPORTE**, contado con `len(pasos_accionables)` sobre los
+nueve JSON del disco: `11+10+8+9+7+8 = 53` en `cap_03`, `7` en `cap_01`, `5+5 = 10` en `cap_02`,
+**`70` en total**.
+
+### 4.4. **LA TABLA, UNA FILA POR CAPITULO Y EL TOTAL DEL LOTE** (`8.2`)
+
+| unidad | nodos | pasos escritos | transcripcion | **PUENTE** | **PASOS INVENTADOS** |
+|---|---:|---:|---:|---:|---:|
+| `cap_01` | 1 | **7** | 7 | **0** | **0,00 por ciento** |
+| `cap_02` | 2 | **10** | 10 | **0** | **0,00 por ciento** |
+| `cap_03` | 6 | **53** | 45 | **8** | **15,09 por ciento** |
+| **el lote 5, lo minado hasta hoy** | **9** | **70** | 62 | **8** | **11,43 por ciento** |
+
+| | |
+|---|---|
+| **la fila que decide, que es la PEOR** (`8.2`) | `cap_03` con **15,09** |
+| tope (`8.1`, 11 sep 2026) | **10,00** |
+| **el freno de volumen** | # **SE ACTIVA. SE BAJA UN ESCALON** |
+| tramo vigente antes de esta acta | **TRES** (`ACTA 26`, y la correccion declarada de mi `3.2`) |
+| **tramo del lote 5 a partir de esta acta** | # **DOS capitulos por vuelta** |
+
+**LO QUE NO CAMBIA, para que esto no se lea mas grande de lo que es:** esta vuelta mino **UNA**
+unidad, que esta por debajo de `DOS` y de `TRES`. **Ningun trabajo hecho se deshace y ningun
+candidato se toca.** Lo que cambia es **el tamanio de la vuelta siguiente**, que es exactamente para
+lo que esta metrica existe (`8.1`).
+
+**Y LO QUE SI CAMBIA, dicho sin suavizarlo:** `8.3` cierra con *una cifra de volumen mal firmada no
+cuesta una discusion: cuesta un lote entero corriendo al tamanio equivocado*. **Con `0,00` el lote 5
+subiria un escalon** (`8.1`, *se mantiene o baja: un capitulo mas por vuelta*). **Con `15,09` baja
+uno.** Entre las dos lecturas hay **el doble de material por vuelta**.
+
+> **`LECTURA` SOBRE MIS PREDECESORES, y la escribo a favor de ellos porque es verdad:** los dos
+> **declararon los ocho puentes**, con su fichero, su especie y su cuenta, en seccion propia. **Nadie
+> escondio nada.** La `ACTA M1` incluso escribio *un `0,00` sin esta linea oculta el trabajo que lo
+> dejo en `0`*. **Lo que fallo no fue la honestidad: fue el sitio donde pusieron el ocho.** Estaba en
+> la prosa y tenia que estar en el numerador.
+
+### 4.5. Lo que esta cifra sigue sin ser (`8.4`)
+
+**NO ES CAIDA DEL EXTRACTOR Y NO ENTRA EN SU METRICA DE CREDITO.** Ocho puentes escritos, cazados por
+el que los escribio y corregidos antes de commitear, **es `D.30` funcionando**. *Un extractor que
+declara veinte puentes propios esta haciendo su trabajo mejor que uno que declara cero.* **El `15,09`
+no le cuesta a nadie un escalon de racha: le cuesta al lote la mitad de su tramo, que es otra cosa.**
+
+## 5. LA ADUANA EN SECO, CON SUS TRES COLUMNAS Y NO CON UNA
+
+**Las dos actas publican *0 CAERIA* y es cierto. Ninguna publica las otras dos columnas**, y sin
+ellas la frase se lee mejor de lo que el instrumento dijo. Leidas por mi de los informes del propio
+extractor, `PATRON: .vm01/aduana/c*.txt`:
+
+    c0  encargar_meta ........ ENTRARIAN 0   BLOQUEARIAN 1   CAERIAN 0
+    c1  recorrer_organizacion   ENTRARIAN 0   BLOQUEARIAN 1   CAERIAN 0
+    c2  observar_reunion ..... ENTRARIAN 0   BLOQUEARIAN 1   CAERIAN 0
+    c3  seguir_frustrado ..... ENTRARIAN 0   BLOQUEARIAN 1   CAERIAN 0
+    c4  contar_firmas ........ ENTRARIAN 0   BLOQUEARIAN 1   CAERIAN 0
+    c5  inspeccionar_reparto . ENTRARIAN 0   BLOQUEARIAN 1   CAERIAN 0
+    c6  auditar_formacion .... ENTRARIAN 0   BLOQUEARIAN 1   CAERIAN 0
+    c1_intento1 y c2_intento1   CAERIAN 1 cada uno  <- las dos caidas de esquema, corregidas en el acto
+
+> **`LECTURA`: `0 CAERIA` es verdad y `7 BLOQUEARIAN` tambien, y la segunda es la que dice en que
+> estado queda el lote.** Ninguno de los siete entraria solo: **los siete esperan veredicto**, que es
+> cola de lectura y no rechazo. **El frente no inserta, asi que esto no bloquea nada hoy**; bloquea
+> el dia que alguien pida la insercion de estos nueve, y por eso va escrito antes y no ese dia.
+
+**Y LAS DOS CORRIDAS QUE QUEDARON EN VUELO SIGUEN EN CERO BYTES**, medido por mi y no leido del
+mensaje de nadie:
+
+    $ wc -c .vm01/informe_lote.txt .vm01/aduana/c00_cambiar_forma_trabajar_conservar_plantilla.txt
+    0 .vm01/informe_lote.txt
+    0 .vm01/aduana/c00_cambiar_forma_trabajar_conservar_plantilla.txt
+
+**NINGUNA DE LAS DOS ACTAS PUBLICO UNA RUTA A ESTOS DOS FICHEROS**, que es lo unico que las habria
+hecho caer por `7.B`. Lo comprobe antes de decirlo. **Yo tampoco los publico como prueba: los nombro
+como el hueco que son.**
+
+## 6. LAS CAIDAS, CON NOMBRE
+
+### 6.1. Del extractor
+
+| # | caida | sede | especie | dentro o fuera |
+|---:|---|---|---|---|
+| **1** | *el tramo vigente del lote eran `DOS`*; era **`TRES`** | `REPORTE.md`, celda de tabla de discutibles y prosa de `1.a` | **`REPORTE`** | **DENTRO** |
+
+**SOSTENGO LA CAIDA QUE LA `ACTA M1` CARGO**, con la correccion de procedencia de mi `3.1`: **no se
+invento el numero, lo copio de dos actas sin marca de corregidas**, y lo que falla es llamarlo
+*vigente*. **Cero `CLASE`, cero `CIFRA PUBLICADA`, cero `DATO MOVIDO`**, medido en la seccion `1`.
+
+**Y NO LE CARGO NADA POR LA SECCION `4`:** `8.4` es explicita en que un puente corregido no es caida.
+
+### 6.2. Mias y de mis dos predecesores, que somos el mismo rol y la misma tanda
+
+| # | caida | sede | especie |
+|---:|---|---|---|
+| **1** | **`PASOS INVENTADOS` de `cap_03` publicado `0,00` y *el freno NO SE ACTIVA*; es `15,09` y SE ACTIVA** | `ACTA_AUDITOR.md` (las dos actas) y `APERTURA_CIEGA.md` sellada (su `LECTURA 2`) | **`CIFRA PUBLICADA PROPIA`** |
+| **2** | *el `DOS` no sale de ninguna sede*; sale de la `ACTA 24` y de la `ACTA 25` | `ACTA_AUDITOR.md`, `ACTA M1` seccion `3.3`, linea marcada `LECTURA` | **`CIFRA PUBLICADA PROPIA`** |
+
+**LA 1 ES LA GRAVE Y LO DIGO ASI: es la unica de esta vuelta que habria cambiado una decision.** La
+`2` no mueve nada: el discutible cae igual.
+
+**LA `2` ES CAIDA AUNQUE VAYA MARCADA `LECTURA`**, y lo adjudico citando la propia regla que obliga a
+marcarlas: `D.38.3` ensanchada dice *contar campos y publicar una frase sobre contenido es caida de
+cifra*, y el ejemplar de la casa es la `ACTA 26`, que publico *ningun nodo dice de que capitulo sale*
+cuando `33` lo decian **y se la cargo a si misma**. **Misma figura, misma especie.**
+
+### 6.3. Y las mias propias de este turno, que las hay
+
+| # | lo que reviso | veredicto |
+|---:|---|---|
+| **1** | **audite sin fase ciega** | **NO ES CAIDA MIA: el arnes no me la abrio** (seccion `0`). **Pero rebaja el valor de mis adjudicaciones y por eso esta arriba del todo** |
+| **2** | **no cruce mi propio barrido de vecinos `D.38.4`** | **NO LO CORRI Y NO LO PUBLICO.** `D.47` prohibe instrumentos nuevos y la `ACTA M1` ya lo cruzo con los suyos (su seccion `5`). **Lo declaro como no hecho por mi en vez de heredar su cifra como si fuera mia** |
+| **3** | **no reabri `R5` ni `R7` con lectura propia larga** | **DECLARADO:** los lei contra su linea y coincido, pero **sin fase ciega mi coincidencia no es independiente** |
+
+## 7. LA MUESTRA PINEADA DE LOS SANOS (`AUDITOR_FORJA.md` 7)
+
+    VEREDICTOS SANO DE ESTA TANDA : 0     (0 lineas de bitacora nombran un id de la bandeja)
+
+**POBLACION CERO, Y SE DICE CON SU CIFRA**, que es lo que manda el ultimo parrafo de la seccion 7.
+**No se inventa una muestra donde no hay poblacion.** Lo que ocupa su sitio es la relectura de
+fidelidad de mi seccion `4`: **10 de 70 con semilla `20260916`, mas los 8 puentes leidos uno a uno.**
+
+## 8. LAS RACHAS
+
+| especie | de quien | venia de | queda en | por que |
+|---|---|---|---|---|
+| **`CLASE`** y `DATO MOVIDO` | extractor | `0 de 2` | **`0 de 2`** | cero veredictos y cero dato movido, medido en `1` |
+| **`CIFRA PUBLICADA`** | extractor | `0 de 2` | **`0 de 2`** | no toco sede de `5.2` |
+| **`REPORTE`** | extractor | **`2 de 3`** (`ACTA 30`) | **`3 de 3`. TOPE** | la caida de `6.1` |
+| **la mia, una sola** | auditor | `0 de 3` (`ACTA 30`) | # **`1 de 3`** | las dos caidas de `6.2`, que son **una tanda**, no dos |
+
+**SOSTENGO LA ADJUDICACION DE RACHA DE LA `ACTA M1` Y NO LA REABRO**, y digo por que: su `9.1`
+escribio las dos lecturas, eligio **la que le costaba mas** y dijo que la pregunta sube igual. **No
+traigo prueba nueva contra ella, y reabrir una adjudicacion razonada sin prueba nueva no es
+auditar.**
+
+**Y CORRIJO LA FILA QUE LAS DOS ACTAS DEJARON EN `0 de 3`:** las dos escribieron *mi tanda sale
+limpia de mi especie*. **No sale.** `5.4` dice que `LIMPIA` significa **sin caidas de la especie que
+esa racha acumula**, y la de `6.2` acumula. **La racha del auditor queda en `1 de 3`.**
+
+**LO QUE NO HAGO:** mover ninguna racha de tandas ya cerradas por lo que encontre sobre la `ACTA 26`
+en mi `3.1`. **La casa no aplica retroactividad** (`5.2`), y **un auditor que mueve contadores hacia
+atras esta reescribiendo la serie.** Se declara y sube.
+
+## 9. LAS CONDICIONES DE PARADA, REPASADAS UNA A UNA (`AUDITOR_FORJA.md` 3)
+
+| condicion | medida | veredicto |
+|---|---|---|
+| **doctrina NUEVA necesaria** | los cinco puntos que la `ACTA M1` y la pagina de `PARA_ALEXIS.md` ya subieron | **SE CUMPLE** |
+| **contradiccion con regla vigente** | dos sellos para una vuelta, **tres turnos de auditor sobre el mismo arbol**, y la `ACTA 26` moviendo el tramo sin correccion declarada | **SE CUMPLE** |
+| **decision de Alexis** | los remedios viven en el arnes, en `src/` y en el banco, y `D.45` cierra los tres | **SE CUMPLE** |
+| **fallo tecnico repetido** | `gate`, guiones, `201` pruebas y el resolutor, **las cuatro en verde**; los `6` rancios son cola `D.15` | **NO se cumple** |
+| **credito roto** | **`REPORTE` `3 de 3`** | **SE CUMPLE** |
+| **campania consumada** | `1` unidad minada de `17`; el libro no esta ni empezado | **NO se cumple** |
+
+**CUATRO DE SEIS, LAS MISMAS QUE LA `ACTA M1`.** `docs/loop/PARA_ALEXIS.md` recibe un segundo anexo y
+`docs/loop/PROMPT_SIGUIENTE.md` **queda VACIO**, que es lo que la seccion 3 manda.
+
+    $ wc -c docs/loop/PROMPT_SIGUIENTE.md
+    0 docs/loop/PROMPT_SIGUIENTE.md
+
+## 10. LO QUE ENCARGO Y LO QUE NO PUEDO ENCARGAR
+
+**`LA ESCALADA SE ENCARGA, NO SOLO SE DECLARA` (`1.4`), y con `PROMPT_SIGUIENTE.md` vacio el unico
+sitio donde puedo encargar es `PARA_ALEXIS.md`.** Ahi van, como tarea bloqueante de la vuelta 2:
+
+1. **El tramo del lote 5 baja a `DOS` capitulos por vuelta** (mi `4.4`). **Es mecanico y esta
+   escrito**: `8.1`, por encima de `10` se baja un escalon.
+2. **`TAREA 2` y `TAREA 3` del reporte se escriben desde los papeles de `.vm01/`**, que estan
+   intactos, **y la fila de `cap_03` se publica en `15,09`, no en `0,00`.** Si se copia
+   `.vm01/fidelidad_lote.txt` tal cual, **vuelve a salir `0,00`**: ese fichero lista la bandeja
+   **despues** de las correcciones y no tiene los ocho puentes dentro.
+3. **Las dos corridas de aduana en cero bytes se cierran** (el informe del lote y el `c00` de
+   `cambiar_forma`) **antes de que nadie pida la insercion de estos nueve.**
+4. **El paso `1` de `ceder_control_reforzar_competencia_claridad` se reescribe o se retira antes de
+   que ese nodo entre al grafo** (adjudicacion `3` de la `ACTA M1`, que sostengo).
+
+**Y LO QUE NO ENCARGO, con su motivo y no callado:** la correccion declarada de mi `3.2` **vive en mi
+sede y ya esta escrita**; el resto de remedios de esta vuelta **viven en el arnes, en `src/` y en el
+banco**, y `D.45` es literal: *ni siquiera con una caida de dato; se declara, se para y sube*.

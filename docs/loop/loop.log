@@ -1025,3 +1025,7 @@ CIERRE VERDE: el tallado y el censo de rutas.
 [2026-09-16 22:37:45] VUELTA 1 : AUDITOR (claude-opus-5)
 [2026-09-16 22:56:36] auditor: fallo instantaneo (probable limite de uso), 1534s, costo "vacio", intento 1 de 7
 [2026-09-16 22:56:36] fallo "instantaneo"; espero 1800 segundos y reintento
+[2026-09-16 23:04:25] auditor listo (USD 12.609955000000001), 1598s, intento 1 de 7
+[2026-09-16 23:04:26]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-16 23:04:26] DETENIDO en la vuelta 2: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-16 23:04:26] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
