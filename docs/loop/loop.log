@@ -1027,3 +1027,9 @@ CENSO VERDE: las 524 rutas publicadas sostienen lo que dicen sostener.
 CIERRE VERDE: el tallado y el censo de rutas.
 [pre-commit] verde
 [2026-09-16 21:16:45] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-16 22:21:14] auditor listo (USD 13.962244999999998), 3869s, intento 1 de 7
+[2026-09-16 22:21:14]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-16 22:21:15] DETENIDO en la vuelta 2: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-16 22:21:15] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-16 22:26:58] extractor: fallo instantaneo (probable limite de uso), 5505s, costo "vacio", intento 1 de 7
+[2026-09-16 22:26:58] fallo "instantaneo"; espero 1800 segundos y reintento

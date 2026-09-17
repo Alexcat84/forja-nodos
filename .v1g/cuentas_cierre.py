@@ -82,8 +82,10 @@ for clave in ORDEN:
     print("| %s | %d | **%d** | %s |"
           % (clave, antes, ahora, ("**%+d**" % salto) if salto else "0"))
 if pruebas is not None:
-    print("| pruebas de `tests/test_aceptacion.py` | 200 | **%d** | %s |"
-          % (pruebas, ("**%+d**" % (pruebas - 200)) if pruebas != 200 else "0"))
+    # LA APERTURA DE ESTA FILA NO LA MEDI YO: el encargo de este frente no la pide y yo no
+    # corri la suite antes de la primera operacion. Se dice en vez de rellenarla.
+    print("| pruebas de `tests/test_aceptacion.py` | sin medir al abrir | **%d**, `0` fallos | el ultimo publicado en el repo era `200`, y `269c068` (del fundador, `20:46`) anadio una |"
+          % pruebas)
 print("")
 print("LO QUE ESTE FRENTE NO PUEDE HABER MOVIDO, Y SE COMPRUEBA EN VEZ DE PROMETERLO")
 print("  nodos, aristas y veredictos: %s"
