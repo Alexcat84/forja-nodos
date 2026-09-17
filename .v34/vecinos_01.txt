@@ -1,0 +1,38 @@
+=== organizar_sistema_recoger_quejas_equipo
+  titulo    : Organizar un sistema para que el equipo te haga llegar sugerencias y quejas, en vez de anunciar que se sientan libres
+  activacion: Cuando quieres que tu equipo te haga llegar sugerencias y quejas y lo unico que has hecho es decir que se sientan libres de hacerlo.
+  entregable: Un sistema organizado y sencillo por el que las preguntas y las quejas llegan y se contestan a la vista de todos, hasta que deja de hacer falta.
+  el paso que la senial levanta, P7: Trata cada pregunta con respeto y a fondo por banal que sea, que es lo que el texto destaca de como aquel lo hacia, y no te muestres molesto ni impaciente.
+=== elogiar_publico_criticar_privado_sus_tres_matices
+  titulo    : Elogiar en publico y criticar en privado, con las tres cosas que el texto dice que hay que pensar antes de aplicarlo
+  activacion: Cuando vas a decir algo delante de mas gente y tienes que decidir si eso es una correccion que puede ir en publico o una critica que tiene que ir en privado.
+  entregable: El elogio dicho en publico de la forma en que a esa persona le sienta mejor y explicado como aprendizaje para todos, y la critica a la persona dicha en privado.
+  el paso que la senial levanta, P2: Tratala como regla general y no como regla dura, que es como el texto la presenta antes de poner las tres cosas que hay que pensar.
+
+=== correr_semana_arreglo_averias_gestion
+  titulo    : Correr una semana de arreglo de averias de gestion, con el registro publico, la votacion y el reparto que el texto describe
+  activacion: Cuando los problemas de gestion de tu organizacion molestan a todo el mundo y nadie tiene tiempo asignado para arreglarlos.
+  entregable: Las averias de gestion mas molestas de la organizacion registradas, priorizadas por voto, repartidas entre jefes y arregladas en una semana dedicada a eso.
+  el paso que la senial levanta, P7: Reparte las averias entre los jefes durante la semana de arreglo.
+=== comprobar_criticas_hombre_mujeres_equipo
+  titulo    : Comprobar si te estas conteniendo al criticar a las mujeres de tu equipo, preguntandoselo a ellas y pidiendoles que te midan
+  activacion: Cuando eres un hombre y te preocupa estar conteniendote con las mujeres de tu equipo, por recelo a la politica de genero o por miedo a que ella llore.
+  entregable: Saber, dicho por ella y no supuesto por ti, como esta cayendo tu guia, y con ello si estas yendo mas suave con unas personas que con otras.
+  el paso que la senial levanta, P2: Prueba a explicarle el marco de la franqueza radical.
+
+=== dar_guia_humilde_tres_tecnicas
+  titulo    : Dar elogio y critica con humildad, con las tres tecnicas que el texto nombra y atribuye una a una
+  activacion: Cuando vas a dar elogio o critica a alguien y quieres que no suene arrogante ni condescendiente, que es lo que levanta la resistencia natural a lo que dices.
+  entregable: Guia dicha describiendo lo que viste y no juzgando a la persona, con tu propio juicio puesto en duda antes de salir por tu boca.
+  P5: Aplica lo mismo al elogio y no solo a la critica, porque el texto dice que el elogio puede sonar igual de arrogante: en vez de eres un genio o estoy muy orgulloso de ti, que segun el texto invitan a preguntar quien eres tu para juzgar mi inteligencia o para estar orgulloso de mi, di la situacion, el comportamiento y el impacto, como en el ejemplo del texto sobre una presentacion de esa maniana.
+=== elogiar_publico_criticar_privado_sus_tres_matices
+  titulo    : Elogiar en publico y criticar en privado, con las tres cosas que el texto dice que hay que pensar antes de aplicarlo
+  activacion: Cuando vas a decir algo delante de mas gente y tienes que decidir si eso es una correccion que puede ir en publico o una critica que tiene que ir en privado.
+  entregable: El elogio dicho en publico de la forma en que a esa persona le sienta mejor y explicado como aprendizaje para todos, y la critica a la persona dicha en privado.
+  P1: Usa como regla general elogiar en publico y criticar en privado, y cuenta con los dos motivos que el texto da: la critica en publico tiende a disparar una reaccion defensiva y le pone mucho mas dificil a la persona aceptar que se ha equivocado y aprender de ello, y el elogio en publico tiende a dar mas peso al elogio y anima a los demas a imitar lo que estuvo bien.
+
+EL PAR QUE LA SENIAL CRUZA DE VERDAD (paso 15 contra paso 7):
+  dar_guia_humilde_tres_tecnicas P15:
+    Ten presente que tu experiencia subjetiva no es verdad objetiva, que es lo que segun el texto te deja desafiar a otros de una forma que invita al desafio reciproco.
+  elogiar_publico_criticar_privado_sus_tres_matices P7:
+    Ten claro cual es tu meta al elogiar, que segun el texto es que la persona sepa lo que hizo bien de la forma mas clara posible y de la manera que mejor le haga sentir a ELLA, y no de la manera en que a ti te gustaria oirlo.

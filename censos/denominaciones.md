@@ -665,3 +665,28 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | reconocer_emociones_propias_avisar_equipo | otro_idioma | recognizing your own emotions | ingles | - |
 | 2026-09-17 | dominar_reacciones_emociones_ajenas | nombre_largo | Dominar tus reacciones ante las emociones ajenas: reconocerlas, preguntar, no repartir culpa, y los tres apanios de mesa que el libro deja | castellano | - |
 | 2026-09-17 | dominar_reacciones_emociones_ajenas | otro_idioma | master your reactions to others' emotions | ingles | - |
+| 2026-09-17 | abrazar_incomodidad_arrancar_critica_equipo | nombre_largo | Como se consigue que el equipo critique al jefe: la excepcion publica, la pregunta de cabecera, el silencio contado, la escucha que no debate, el premio visible y la cuenta semanal | castellano | - |
+| 2026-09-17 | abrazar_incomodidad_arrancar_critica_equipo | otro_idioma | soliciting impromptu guidance: embrace the discomfort | ingles | - |
+| 2026-09-17 | organizar_sistema_recoger_quejas_equipo | nombre_largo | Hacer que criticarte no solo sea seguro sino natural: un sistema organizado y no elaborado, con la caja naranja de Michael Dearing como ejemplar | castellano | - |
+| 2026-09-17 | organizar_sistema_recoger_quejas_equipo | otro_idioma | make it not just safe but natural to criticize you | ingles | - |
+| 2026-09-17 | organizar_sistema_recoger_quejas_equipo | otro_idioma | orange box | ingles | - |
+| 2026-09-17 | correr_semana_arreglo_averias_gestion | nombre_largo | La semana de arreglo aplicada a la gestion y no al producto: registro publico de averias de gestion, voto para priorizar, agrupado de duplicados, reparto entre jefes y cancelacion de lo demas | castellano | - |
+| 2026-09-17 | correr_semana_arreglo_averias_gestion | otro_idioma | management fix-it weeks | ingles | - |
+| 2026-09-17 | correr_semana_arreglo_averias_gestion | otro_idioma | bureaucracy busters | ingles | - |
+| 2026-09-17 | dar_guia_humilde_tres_tecnicas | nombre_largo | La humildad como primera condicion de la guia: situacion, comportamiento e impacto; la columna de la izquierda; y la humildad ontologica | castellano | - |
+| 2026-09-17 | dar_guia_humilde_tres_tecnicas | sigla | SBI | castellano | - |
+| 2026-09-17 | dar_guia_humilde_tres_tecnicas | otro_idioma | be humble | ingles | - |
+| 2026-09-17 | dar_guia_humilde_tres_tecnicas | otro_idioma | situation, behavior, impact | ingles | - |
+| 2026-09-17 | dar_guia_humilde_tres_tecnicas | otro_idioma | left-hand column | ingles | - |
+| 2026-09-17 | dar_guia_util_cuatro_recordatorios | nombre_largo | La utilidad como segunda condicion de la guia: el preambulo que baja defensas, el detalle concreto en vez de la abstraccion, la presentacion a quien si puede ayudar, y la guia entendida como regalo | castellano | - |
+| 2026-09-17 | dar_guia_util_cuatro_recordatorios | otro_idioma | be helpful | ingles | - |
+| 2026-09-17 | dar_guia_util_cuatro_recordatorios | otro_idioma | show, don't tell | ingles | - |
+| 2026-09-17 | dar_guia_util_cuatro_recordatorios | otro_idioma | guidance is a gift, not a whip or a carrot | ingles | - |
+| 2026-09-17 | dar_guia_acto_seis_consejos | nombre_largo | La inmediatez como tercera condicion de la guia: dos o tres minutos entre reuniones, holgura en el calendario, nada guardado para la reunion uno a uno, y ningun trabajo devuelto a un agujero negro | castellano | - |
+| 2026-09-17 | dar_guia_acto_seis_consejos | otro_idioma | give feedback immediately | ingles | - |
+| 2026-09-17 | dar_guia_acto_seis_consejos | otro_idioma | guidance has a short half-life | ingles | - |
+| 2026-09-17 | dar_guia_acto_seis_consejos | otro_idioma | avoid black holes | ingles | - |
+| 2026-09-17 | elegir_medio_dar_guia_jerarquia_modos | nombre_largo | El medio como cuarta condicion de la guia: en persona primero, y si no, inmediatez contra presencia, videollamada, telefono, y el correo con copia a todos prohibido para la critica | castellano | - |
+| 2026-09-17 | elegir_medio_dar_guia_jerarquia_modos | otro_idioma | in person (if possible) | ingles | - |
+| 2026-09-17 | elegir_medio_dar_guia_jerarquia_modos | otro_idioma | hierarchy of modes | ingles | - |
+| 2026-09-17 | elegir_medio_dar_guia_jerarquia_modos | otro_idioma | Reply All do's and don'ts | ingles | - |
