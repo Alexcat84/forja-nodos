@@ -76,6 +76,14 @@ EXTENSIONES = (".txt", ".out", ".json", ".jsonl", ".py", ".md", ".log", ".sh")
 # extension suelta. Contarlos seria inventar caidas y enseñar a no mirar.
 NO_ES_RUTA = re.compile(r"[<>!$\"'()]")
 
+# LAS SEDES EXENTAS **POR MOMENTO**: solo mientras la fase ciega esta abierta.
+EXENTAS_EN_FASE_CIEGA = (
+    ("docs/loop/APERTURA_CIEGA.md",
+     "La fase ciega la esta escribiendo ahora mismo: mientras el auditor ciego no la "
+     "ha cerrado, citarla como sede no publica una ruta falsa. Fuera de la fase ciega "
+     "SIGUE siendo sede leida por el censo y el tallado (17 sep 2026, punto 3)."),
+)
+
 
 def _es_artefacto(ruta):
     """Cierto si es un artefacto de maquina (D.33), exento POR SU FAMILIA.
@@ -126,11 +134,36 @@ def _patrones_exentos():
             for p in _config_de_sedes().get("patrones", [])]
 
 
-def _exenta(ruta, exentas=None, patrones=None):
-    """`(True, motivo)` si esa ruta esta exenta por lista fija o por patron."""
+def fase_ciega_abierta(raiz=None):
+    """Cierto si la fase ciega esta abierta AHORA MISMO.
+
+    SE MIDE POR AUSENCIA DE `REPORTE.md`, y no por una marca que alguien tenga que
+    poner: el arnes **retira** ese fichero del arbol mientras el auditor ciego trabaja
+    (`D.34.2`) y lo devuelve al terminar. Su ausencia **es** la fase ciega, medida en el
+    unico sitio donde no se puede fingir.
+    """
+    return not os.path.exists(os.path.join(raiz or RAIZ, "docs", "loop", "REPORTE.md"))
+
+
+def _exenta(ruta, exentas=None, patrones=None, raiz=None):
+    """`(True, motivo)` si esa ruta esta exenta por lista fija, patron o momento."""
     exentas = _sedes_exentas() if exentas is None else exentas
     if ruta in exentas:
         return True, exentas[ruta]
+
+    # LA EXENCION DE MOMENTO, Y ES DE MOMENTO Y NO DE FICHERO (17 sep 2026, punto 3).
+    #
+    # `docs/loop/APERTURA_CIEGA.md` queda exento SOLO mientras la fase ciega esta
+    # abierta, porque entonces **se esta escribiendo**: un acta que la cite como sede
+    # pone el censo en rojo por un fichero que aun no existe, y con el la prueba de
+    # aceptacion entera. **Es ruido, no dato, y se cura sola en cuanto se escribe.**
+    #
+    # FUERA DE LA FASE CIEGA SIGUE SIENDO SEDE LEIDA por el censo y por el tallado,
+    # como ya estaba decidido el 16 sep: era **la unica sede de cifra de esta casa que
+    # ninguna guarda leia**, y ya llevaba dos ejemplares encontrados a mano.
+    for aguja, motivo in EXENTAS_EN_FASE_CIEGA:
+        if ruta == aguja and fase_ciega_abierta(raiz):
+            return True, motivo
     for patron, motivo in (_patrones_exentos() if patrones is None else patrones):
         if fnmatch.fnmatch(ruta, patron):
             return True, motivo

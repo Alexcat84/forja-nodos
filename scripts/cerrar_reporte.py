@@ -28,6 +28,7 @@ import sys
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TALLADOR = os.path.join("scripts", "tallar_reporte.py")
 CENSO = os.path.join("scripts", "censar_rutas.py")
+TABLA_DE_CIERRE = os.path.join("scripts", "tabla_de_cierre.py")
 
 
 def _correr(titulo, orden):
@@ -51,7 +52,21 @@ def main(argumentos=None):
              # D.42 VA EN LOS DOS MODOS Y SIN VARIANTE: solo lee ficheros que ya
              # estan escritos, cuesta menos de un segundo, y caza la especie que
              # tumbo la racha REPORTE en la vuelta 25.
-             ("censo de rutas (D.42)", [sys.executable, CENSO])]
+             ("censo de rutas (D.42)", [sys.executable, CENSO]),
+             # D.52 (17 sep 2026): TODA TABLA DEL REPORTE DECLARA SU INSTRUMENTO.
+             #
+             # VA EN LOS DOS MODOS Y ENTRA POR AQUI, NO POR hooks/pre-commit, y es
+             # deliberado: el hook llama a este fichero, asi que la guarda corre en
+             # cada commit igual, y `hooks/pre-commit` NO SE TOCA. Mientras haya un
+             # frente vivo, un fichero que esta sesion no mueve es un fichero que la
+             # cosecha de ese frente no puede encontrar en conflicto.
+             #
+             # NACE DE TRES TANDAS MEDIDAS, no de una sospecha: las tres caidas que
+             # llevaron la racha REPORTE a su tope viven en la tabla de cierre de
+             # tareas, que era la unica del reporte sin instrumento declarado. D.41
+             # no la miraba por diseño.
+             ("tabla de cierre de tareas (D.52)",
+              [sys.executable, TABLA_DE_CIERRE] + (["--hook"] if solo_hook else []))]
     if not solo_hook:
         # EL CIERRE DE VUELTA CORRE TODAS LAS GUARDAS, no solo la nueva. Una
         # guarda nueva que desplaza a las viejas no suma: sustituye.

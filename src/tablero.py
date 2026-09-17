@@ -274,7 +274,7 @@ def libros(filas=None):
 
 
 def cola_de_doctrina(declarado=None):
-    """LA COLA DE DOCTRINA, UNA FILA POR PREGUNTA (`D.52` punto 4).
+    """LA COLA DE DOCTRINA, UNA FILA POR PREGUNTA (`D.53` punto 4).
 
     **Una pregunta que se contesta cuando haya tiempo y que no esta escrita en ningun
     sitio no esta en cola: esta olvidada.** Por eso vive en el tablero, que es la sede
@@ -497,7 +497,7 @@ def texto(filas=None):
     if cola:
         bloquean = [f for f in cola if f.get("bloquea")]
         partes.append("")
-        partes.append("  COLA DE DOCTRINA (D.52): %d pregunta(s), %d bloquea(n)"
+        partes.append("  COLA DE DOCTRINA (D.53): %d pregunta(s), %d bloquea(n)"
                       % (len(cola), len(bloquean)))
         for fila in sorted(cola, key=lambda f: f.get("n") or 0):
             partes.append("    %s%-2s %s"

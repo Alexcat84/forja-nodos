@@ -3492,8 +3492,184 @@ class PruebaCerrojoYCenso(BaseForja):
                 self.taller, "no_commiteado.jsonl")), [])
 
 
+class PruebaTablaDeCierre(BaseForja):
+    """TODA TABLA DEL REPORTE DECLARA SU INSTRUMENTO (D.52, 17 sep 2026).
+
+    La racha REPORTE llego a su tope tres veces, y LAS TRES CAIDAS VIVEN EN LA MISMA
+    TABLA: la de cierre de tareas, que era la unica del reporte sin instrumento
+    declarado. D.41 compara cada tabla contra su fichero de salida, y una tabla sin
+    fichero no se compara con nada. Ninguna de las tres era cazable por diseño.
+    """
+
+    TABLA = chr(10).join([
+        "### AB.5.f. LAS TRES TAREAS, CERRADAS",
+        "",
+        "| # | tarea | como cerro |",
+        "|---:|---|---|",
+        "| 1 | la primera | **CERRADA**: sin cifra que medir aqui |",
+        "| 2 | la segunda | **CERRADA** en `AB.4`: `5` de `5` del tramo de `cap_09` |",
+        "| 3 | la tercera | **CERRADA**: `15` de `15` del capitulo, `cap_09` |",
+        ""])
+
+    def _nodos(self, cuantos, capitulo="cap_09"):
+        return [{"id": "n%d" % i, "pasos_accionables": ["p"],
+                 "fuentes": [{"clave": "libro"}],
+                 "cita": "libro/%s.md L1" % capitulo} for i in range(cuantos)]
+
+    def test_caso_positivo_la_tabla_de_la_vuelta_35_cae_nombrando_su_fila(self):
+        """Es el caso que el fundador pidio por su nombre: 15 de 15 donde son 20."""
+        from scripts import tabla_de_cierre
+        _filas, dictamenes = tabla_de_cierre.revisar(
+            texto=self.TABLA, clave="libro", nodos=self._nodos(20))
+        difieren = [d for d in dictamenes if d["estado"] == "DIFIERE"]
+        self.assertEqual(len(difieren), 1)
+        self.assertEqual(difieren[0]["fila"], "3")
+        self.assertEqual(difieren[0]["declarado"], 15)
+        self.assertEqual(difieren[0]["medido"], 20)
+
+    def test_caso_negativo_regenerada_pasa(self):
+        """La otra mitad de la misma decision: regenerada, pasa."""
+        from scripts import tabla_de_cierre
+        corregidas, _d = tabla_de_cierre.revisar(
+            texto=self.TABLA, clave="libro", nodos=self._nodos(20))
+        _filas, dictamenes = tabla_de_cierre.revisar(
+            texto=chr(10).join(corregidas), clave="libro", nodos=self._nodos(20))
+        self.assertEqual([d for d in dictamenes if d["estado"] == "DIFIERE"], [])
+
+    def test_una_fila_sin_cifra_medible_se_declara_y_no_se_inventa(self):
+        from scripts import tabla_de_cierre
+        _filas, dictamenes = tabla_de_cierre.revisar(
+            texto=self.TABLA, clave="libro", nodos=self._nodos(20))
+        self.assertEqual(dictamenes[0]["estado"], "SIN COMPROBAR")
+
+    def test_caso_positivo_un_de_5_de_5_DEL_TRAMO_no_se_toca(self):
+        """El patron es estrecho a proposito: un tramo no es un capitulo, y esta casa
+        ya pago dos veces el precio de una guarda con falsos positivos."""
+        from scripts import tabla_de_cierre
+        _filas, dictamenes = tabla_de_cierre.revisar(
+            texto=self.TABLA, clave="libro", nodos=self._nodos(20))
+        self.assertEqual(dictamenes[1]["estado"], "SIN COMPROBAR")
+
+    def test_el_capitulo_se_mide_por_la_ruta_completa(self):
+        """`cap_09` a secas aparece tambien en nodos de otros libros."""
+        from scripts import tabla_de_cierre
+        ajenos = [{"id": "x", "pasos_accionables": [], "cita": "otro/cap_09.md L1"}]
+        cuantos, _pasos = tabla_de_cierre.nodos_del_capitulo(
+            "libro", "cap_09", self._nodos(3) + ajenos)
+        self.assertEqual(cuantos, 3)
+
+    def test_sin_tabla_de_cierre_lo_dice_y_no_acusa(self):
+        from scripts import tabla_de_cierre
+        _filas, dictamenes = tabla_de_cierre.revisar(
+            texto="un reporte sin tabla de cierre", clave="libro", nodos=[])
+        self.assertEqual(dictamenes[0]["estado"], "SIN OBJETO")
+
+    def test_la_guarda_corre_en_el_hook_sin_tocar_el_fichero_del_hook(self):
+        """Mientras haya un frente vivo, un fichero que esta sesion no mueve es un
+        fichero que la cosecha de ese frente no puede encontrar en conflicto."""
+        cierre = comun.leer_texto(os.path.join(RAIZ, "scripts", "cerrar_reporte.py"))
+        self.assertIn("tabla_de_cierre.py", cierre)
+        hook = comun.leer_texto(os.path.join(RAIZ, "hooks", "pre-commit"))
+        self.assertNotIn("tabla_de_cierre", hook)
+
+    def test_el_reporte_vivo_pasa_su_propia_guarda(self):
+        from scripts import tabla_de_cierre
+        _filas, dictamenes = tabla_de_cierre.revisar()
+        self.assertEqual([d for d in dictamenes if d["estado"] == "DIFIERE"], [])
+
+
+class PruebaPasoRetiradoDelCampo(BaseForja):
+    """UN PASO RETIRADO POR DECLARACION SE RETIRA DEL CAMPO (D.54, 17 sep 2026).
+
+    Un nodo tiene dos lectores y la declaracion solo alcanzaba a uno: quien lee el
+    resumen se entera, quien lee pasos_accionables se lleva el puente entero, y ese es
+    ademas el campo que la maquina consume.
+    """
+
+    def _nodo(self, resumen, pasos):
+        return [{"id": "un_nodo", "resumen_teorico": resumen,
+                 "pasos_accionables": list(pasos)}]
+
+    def test_caso_positivo_una_retirada_declarada_y_no_aplicada_se_ve(self):
+        from scripts import retirar_paso
+        nodos = self._nodo("EL PASO P2 DE ESTE NODO QUEDA RETIRADO POR DECLARACION",
+                           ["uno", "dos", "tres"])
+        casos = retirar_paso.pendientes(nodos)
+        self.assertEqual(len(casos), 1)
+        self.assertEqual(casos[0][1], 2)
+
+    def test_caso_negativo_una_ya_aplicada_no_se_vuelve_a_acusar(self):
+        """Un medidor que no sabe decir cuando ya se hizo no mide: acusa siempre."""
+        from scripts import retirar_paso
+        nodos = self._nodo(
+            "EL PASO P2 QUEDA RETIRADO. EL PASO 2 %s, y no solo de esta prosa."
+            % retirar_paso.APLICADA, ["uno", "tres"])
+        self.assertEqual(retirar_paso.pendientes(nodos), [])
+
+    def test_caso_negativo_un_nodo_sin_retirada_no_se_toca(self):
+        from scripts import retirar_paso
+        self.assertEqual(
+            retirar_paso.pendientes(self._nodo("un resumen normal", ["uno"])), [])
+
+    def test_retirar_saca_el_paso_del_campo(self):
+        from scripts import retirar_paso
+        nodos = self._nodo("EL PASO P2 QUEDA RETIRADO", ["uno", "dos", "tres"])
+        nodos, retirado = retirar_paso.retirar("un_nodo", 2, "porque si", nodos)
+        self.assertEqual(nodos[0]["pasos_accionables"], ["uno", "tres"])
+        self.assertEqual(retirado, "dos")
+
+    def test_y_el_texto_del_paso_retirado_NO_se_pierde(self):
+        """No borra: tacha y deja el texto al lado, que es como corrige esta casa."""
+        from scripts import retirar_paso
+        nodos = self._nodo("EL PASO P2 QUEDA RETIRADO", ["uno", "dos", "tres"])
+        nodos, _r = retirar_paso.retirar("un_nodo", 2, "porque si", nodos)
+        self.assertIn("dos", nodos[0]["resumen_teorico"])
+        self.assertIn("LOS PASOS PASAN DE 3 A 2", nodos[0]["resumen_teorico"])
+
+    def test_un_paso_que_no_existe_no_se_retira_en_silencio(self):
+        from scripts import retirar_paso
+        with self.assertRaises(ValueError):
+            retirar_paso.retirar("un_nodo", 9, "x", self._nodo("EL PASO P9 RETIRADO",
+                                                               ["uno"]))
+
+    def test_el_grafo_vivo_no_tiene_ninguna_retirada_pendiente(self):
+        """Si esto cae, hay un nodo publicando un puente a quien lee sus pasos."""
+        from scripts import retirar_paso
+        self.assertEqual(retirar_paso.pendientes(), [])
+
+
+class PruebaExencionDeMomento(BaseForja):
+    """LA EXENCION DE APERTURA_CIEGA.md ES DE MOMENTO, NO DE FICHERO (17 sep 2026)."""
+
+    def test_caso_positivo_exenta_mientras_la_fase_ciega_esta_abierta(self):
+        from scripts import censar_rutas
+        taller = os.path.join(self.taller, "arbol_en_fase_ciega")
+        os.makedirs(os.path.join(taller, "docs", "loop"))
+        self.assertTrue(censar_rutas.fase_ciega_abierta(taller))
+        self.assertTrue(censar_rutas._exenta(
+            "docs/loop/APERTURA_CIEGA.md", raiz=taller)[0])
+
+    def test_caso_negativo_fuera_de_la_fase_ciega_SIGUE_siendo_sede_leida(self):
+        """Era la unica sede de cifra que ninguna guarda leia, y ya llevaba dos
+        ejemplares encontrados a mano."""
+        from scripts import censar_rutas
+        taller = os.path.join(self.taller, "arbol_normal")
+        os.makedirs(os.path.join(taller, "docs", "loop"))
+        comun.escribir_texto(os.path.join(taller, "docs", "loop", "REPORTE.md"), "x")
+        self.assertFalse(censar_rutas.fase_ciega_abierta(taller))
+        self.assertFalse(censar_rutas._exenta(
+            "docs/loop/APERTURA_CIEGA.md", raiz=taller)[0])
+
+    def test_la_exencion_no_alcanza_a_otro_fichero_en_fase_ciega(self):
+        from scripts import censar_rutas
+        taller = os.path.join(self.taller, "otro")
+        os.makedirs(os.path.join(taller, "docs", "loop"))
+        self.assertFalse(censar_rutas._exenta(
+            "docs/loop/ACTA_AUDITOR.md", raiz=taller)[0])
+
+
 class PruebaDatasetEsElCatalogo(BaseForja):
-    """dataset/ ES EL CATALOGO Y NADA MAS (D.52, 17 sep 2026).
+    """dataset/ ES EL CATALOGO Y NADA MAS (D.53, 17 sep 2026).
 
     El 17 sep un turno commiteo con `git add -A` mientras una insercion corria, y el
     cerrojo VIVO entro en git DENTRO de dataset/. Un checkout de ese commit entrega el
@@ -3553,7 +3729,7 @@ class PruebaDatasetEsElCatalogo(BaseForja):
 
 
 class PruebaCitaEsReferencia(BaseForja):
-    """LA CITA DEL REGISTRO DE CREDITO ES UNA REFERENCIA (D.52 punto 3).
+    """LA CITA DEL REGISTRO DE CREDITO ES UNA REFERENCIA (D.53 punto 3).
 
     Lo levanto el auditor de la ACTA 32 contra el instrumento: la fase ciega leia el
     registro de credito, y el `cita` de una tanda ajena le dijo `11 SANO` ANTES de que
@@ -3636,7 +3812,7 @@ class PruebaCitaEsReferencia(BaseForja):
 
 
 class PruebaColaDeDoctrina(BaseForja):
-    """LAS PREGUNTAS EN COLA VIVEN EN EL TABLERO (D.52 punto 4).
+    """LAS PREGUNTAS EN COLA VIVEN EN EL TABLERO (D.53 punto 4).
 
     Una pregunta que se contesta cuando haya tiempo y que no esta escrita en ningun
     sitio no esta en cola: esta olvidada.
@@ -4373,7 +4549,8 @@ def main():
              PruebaHerenciaPorLinea, PruebaTableroDeFrentes,
              PruebaGuardaDelTablero, PruebaOrdenDePrioridad,
              PruebaDatasetEsElCatalogo, PruebaCitaEsReferencia,
-             PruebaColaDeDoctrina]
+             PruebaColaDeDoctrina, PruebaTablaDeCierre,
+             PruebaPasoRetiradoDelCampo, PruebaExencionDeMomento]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -4439,12 +4616,18 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaGuardaDelTablero)._tests))
     print("  D.51, el orden lo da el tablero, y el corte del mundo 11: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaOrdenDePrioridad)._tests))
-    print("  D.52, dataset es el catalogo y el cerrojo vive fuera: %d pruebas mas"
+    print("  D.53, dataset es el catalogo y el cerrojo vive fuera: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaDatasetEsElCatalogo)._tests))
-    print("  D.52, la cita del credito es referencia y no resultado: %d pruebas mas"
+    print("  D.53, la cita del credito es referencia y no resultado: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaCitaEsReferencia)._tests))
-    print("  D.52, la cola de doctrina vive en el tablero: %d pruebas mas"
+    print("  D.53, la cola de doctrina vive en el tablero: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaColaDeDoctrina)._tests))
+    print("  D.52, toda tabla del reporte declara su instrumento: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaTablaDeCierre)._tests))
+    print("  D.54, un paso retirado se retira del campo: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaPasoRetiradoDelCampo)._tests))
+    print("  la exencion del censo es de MOMENTO y no de fichero: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaExencionDeMomento)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

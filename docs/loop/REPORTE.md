@@ -38112,11 +38112,26 @@ una linea por especie y con el motivo:
 
 ### AB.5.f. LAS TRES TAREAS, CERRADAS
 
+> **CORRECCION DECLARADA, 17 sep 2026: ESTA TABLA YA SALE DE UN INSTRUMENTO**
+>
+> *Punto 1 de la decision del fundador del 17 sep 2026, archivada en
+> `docs/loop/paradas/2026-09-17-la-tabla-de-cierre-DECISION.md`. **Era la unica tabla
+> del reporte que no declaraba instrumento**, y por eso `D.41` no la miraba: el
+> tallado compara tablas contra su fichero de salida y esta no tenia ninguno. **Las
+> tres caidas de la racha `REPORTE` viven en ella.***
+>
+> **LO QUE CAMBIA EN LA FILA `3`:** decia **`15` de `15` del capitulo** y `cap_09`
+> son **`20`** en el grafo, con `272` pasos. El `15` de la izquierda es cierto (son
+> los quince que la vuelta 34 metio); **lo falso es el denominador**, que era el del
+> TRAMO y se publico como el del CAPITULO. **Ningun dato se movio: cayo el rotulo.**
+
+<!-- TALLADO: salida=docs/loop/TABLA_DE_CIERRE.txt -->
+
 | # | tarea | como cerro |
 |---:|---|---|
 | 1 | **BLOQUEANTE**: el puente que ya estaba en el grafo | **CERRADA** en `AB.2`: `P13` retirado por declaracion sin elegir lectura, la cuenta del resumen corregida de `17 TRANSCRIPCION` a `16 y 1 PUENTE`, y la cifra republicada en **`1` de `181`** |
 | 2 | la fidelidad con el ojo nuevo | **CERRADA** en `AB.3`, **y antes de la primera insercion**: `0` de `91`, y el ojo nuevo **barrido a maquina**, `6` releidas de `25`, con `1` marcada |
-| 3 | cerrar `cap_09` en insercion | **CERRADA** en `AB.4`: `5` de `5`, **`15` de `15` del capitulo**, `3` veredictos y la arista `D.29` cableada en la misma vuelta |
+| 3 | cerrar `cap_09` en insercion | **CERRADA** en `AB.4`: `5` de `5`, **`15` de **`20`** del capitulo**, `3` veredictos y la arista `D.29` cableada en la misma vuelta |
 
 **LAS TRES ENTREGADAS, CERO EN COLA** (tope de cinco). **CERO PARADAS.**
 

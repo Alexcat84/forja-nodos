@@ -2762,7 +2762,20 @@ continua** (`cap_11`).
 
 ---
 
-## D.52. `dataset/` ES EL CATALOGO Y NADA MAS (17 sep 2026, decision del fundador)
+## D.53. `dataset/` ES EL CATALOGO Y NADA MAS (17 sep 2026, decision del fundador)
+
+> ### RENUMERADA EL MISMO DIA. **ERA `D.52` Y PASA A `D.53`.**
+>
+> El numero se lo puse yo esta manana, porque aquella decision no venia numerada. **El
+> fundador asigno `D.52` por la tarde a otra regla** (la tabla de cierre), y **el numero
+> del fundador manda sobre el mio**, igual que paso con `D.45` y `D.46` el 16 sep. **El
+> contenido no cambia: solo el numero.**
+>
+> **LO QUE NO SE REESCRIBE, Y SE DICE:** las actas, el reporte y la parada ya archivada
+> siguen diciendo `D.52` donde esta regla era `D.52`. **Son registro de lo que se escribio
+> cuando se escribio**, y reescribirlos seria borrar historia para tapar una renumeracion
+> mia. Lo que si se actualizo es lo que esta sesion mantiene: `src/`, `scripts/`,
+> `config/` y las pruebas.
 
 *Decision del fundador del 17 sep 2026 sobre la parada de la vuelta 33. **Tres piezas: la
 sede de los ficheros de coordinacion, una reclasificacion de racha, y una correccion
@@ -2858,3 +2871,103 @@ con la referencia que ese mismo texto ya traia delante.
 **Viven en la seccion `COLA DE DOCTRINA` de `docs/loop/TABLERO.jsonl`**, con su medida y su
 sitio, **para que no se pierdan**. Una pregunta que se contesta *cuando haya tiempo* y que
 no esta escrita en ningun sitio **no esta en cola: esta olvidada.**
+
+---
+
+## D.52. TODA TABLA DEL REPORTE DECLARA SU INSTRUMENTO (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026 sobre la parada de la vuelta 35, punto 2. **Es la
+cura de una especie de credito con TRES tandas medidas**, y por eso viene con una
+excepcion expresa a `D.45` para poder construirse.*
+
+### La letra
+
+> **UNA TABLA SIN INSTRUMENTO DECLARADO NO SE PUBLICA**, porque es precisamente **la que
+> ninguna guarda mira.**
+
+### El ejemplar, que son tres y son la misma tabla
+
+**La racha `REPORTE` de la linea serial llego a su tope con tres caidas seguidas, y las
+tres viven en la MISMA tabla:**
+
+| tanda | vuelta | la caida |
+|---|---:|---|
+| `ACTA 32` | `33` | `13` vecindades levantadas donde se levantaron `11` |
+| `ACTA 33` | `34` | `0` PUENTE de `181` donde la relectura da `1` |
+| `ACTA 34` | `35` | `15 de 15 DEL CAPITULO` donde `cap_09` son `20 de 20` |
+
+**LA TABLA DE CIERRE DE TAREAS ERA LA UNICA DEL REPORTE QUE NO DECLARABA INSTRUMENTO.**
+`D.41` compara cada tabla contra su fichero de salida; **una tabla sin fichero no se
+compara con nada.** Es, literalmente, **el unico sitio del reporte donde una cifra
+tecleada vivia tranquila**, y las tres caidas fueron a parar ahi.
+
+> **NINGUNA DE LAS TRES ERA CAZABLE POR DISEÑO**, y esa es la frase que hace falta leer
+> antes de culpar a nadie: no fue descuido tres veces. **Fue el unico hueco que quedaba, y
+> el dictado lo encontro solo.**
+
+### El instrumento
+
+    python scripts/tabla_de_cierre.py              la comprueba y dice que cae
+    python scripts/tabla_de_cierre.py --escribir   regenera su fichero de salida
+
+**Corre en cada commit**, dentro de `scripts/cerrar_reporte.py`, que es lo que el hook
+llama. **`hooks/pre-commit` NO se toco**, y es deliberado: mientras haya un frente vivo,
+un fichero que esta sesion no mueve **es un fichero que la cosecha de ese frente no puede
+encontrar en conflicto.**
+
+**LO QUE SABE MEDIR, Y SOLO ESO:** una afirmacion de la forma **`N` de `M` del capitulo**
+con un `cap_NN` nombrado en la misma fila, donde `M` es **cuantos nodos del grafo salen de
+ese capitulo**, medido **por la ruta completa** (`<clave>/cap_NN.md`) y no por el nombre
+suelto, que aparece tambien en otros libros.
+
+**LO QUE NO INVENTA:** una fila sin cifra medible **se copia tal cual y se declara
+`SIN COMPROBAR`**. Y el patron es **estrecho a proposito**: un `5 de 5` de un TRAMO no se
+toca, porque un tramo no es un capitulo y **esta casa ya pago dos veces el precio de una
+guarda con falsos positivos.**
+
+**Caso positivo:** la tabla de la vuelta `35` **tal como quedo** cae nombrando su fila `3`
+(*la celda publica `15 de 15 del capitulo` y `cap_09` son `20 de 20` en el grafo, `272`
+pasos*). **Negativo:** regenerada y pegada, pasa.
+
+### La excepcion a `D.45` que hizo falta para construirlo
+
+> **LA MORATORIA DE MAQUINARIA NO CUBRE LA CURA DE UNA ESPECIE DE CREDITO CON TRES TANDAS
+> MEDIDAS.** Autorizada **solo en la linea serial**, y **acotada**: toca unicamente
+> `scripts/` y el hook de la rama de insercion. **No toca el banco de pruebas, ni los
+> protocolos, ni `orquestador_forja.sh`, ni nada que `grove` edite.**
+
+**POR QUE LA EXCEPCION ES SANA, y no un agujero en `D.45`:** `D.45` existe para que dos
+lineas no escriban la misma sede a la vez. **Una cura que solo toca `scripts/` de la linea
+serial no es una sede compartida**, y dejarla sin construir significaba **abrir la vuelta
+36 con el mismo hueco que produjo las tres caidas**. Una moratoria que impide arreglar lo
+que esta midiendo mal **deja de proteger y empieza a conservar el defecto.**
+
+---
+
+## D.54. UN PASO RETIRADO POR DECLARACION SE RETIRA DEL CAMPO (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026, punto 4. **Es la pregunta `7` de la cola de
+doctrina, decidida**, y se decide asi porque **es dato y no forma.***
+
+### La letra
+
+> **UN PASO RETIRADO POR DECLARACION SE RETIRA DEL CAMPO.** Un nodo insertado cuyo
+> `resumen_teorico` declara retirado un paso **que sigue literal en `pasos_accionables`**
+> publica un puente a quien lee los pasos.
+>
+> **El paso sale de `pasos_accionables`, y su retirada queda escrita con su cita.** Un
+> retiro futuro **se aplica en el mismo acto, no solo en la prosa.**
+
+### Por que es dato y no forma
+
+**Un nodo tiene dos lectores y la declaracion solo alcanza a uno.** Quien lee el
+`resumen_teorico` se entera de que el paso esta retirado; **quien lee `pasos_accionables`
+se lleva el puente entero**, sin saber que fue retirado. Y `pasos_accionables` es el campo
+que la maquina consume.
+
+**LA GUARDA QUE PARECIA CUBRIRLO NO LO CUBRE:** `deprecado_en_superficie` vigila
+**aristas**, no pasos. El hueco estaba entero.
+
+**Y NINGUN INSTRUMENTO DE LA CASA REESCRIBIA UN PASO DE UN NODO YA INSERTADO**, que es el
+motivo real de que la retirada se quedara en la prosa: **no habia por donde hacerlo.**
+`forja.py corregir` toca el `resumen_teorico`; el paso no lo tocaba nadie.

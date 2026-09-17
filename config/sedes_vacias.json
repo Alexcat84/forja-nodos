@@ -51,8 +51,8 @@
   "patrones": [
     {
       "patron": "docs/loop/CREDITO_*.jsonl",
-      "motivo": "Retirado durante la fase ciega por D.52 punto 3: el registro de credito trae el campo cita de cada tanda, y ahi cabe una conclusion del reporte. Al auditor de la ACTA 32 le dijo 11 SANO antes de que contara los suyos. Vuelve en cuanto el ciego termina.",
-      "regla": "D.52"
+      "motivo": "Retirado durante la fase ciega por D.53 punto 3: el registro de credito trae el campo cita de cada tanda, y ahi cabe una conclusion del reporte. Al auditor de la ACTA 32 le dijo 11 SANO antes de que contara los suyos. Vuelve en cuanto el ciego termina.",
+      "regla": "D.53"
     }
   ]
 }
