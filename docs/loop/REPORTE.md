@@ -36035,6 +36035,9 @@ lo compruebo tres veces.**
 
 **LAS CINCO ENTREGADAS Y NINGUNA EN COLA** (`EXTRACTOR.md` 1.3, tope de cinco). **Lo que esta vuelta
 deja pendiente esta en `Y.5`, medido fila a fila, y no hay ni una tarea del encargo dentro.**
+
+---
+
 # FRENTE `gerber_emyth`, VUELTA 1: **la apertura del lote 9**, la frontera de sus unidades, y el primer tramo de candidatos **EN CUARENTENA** (`D.45`, frente en paralelo: **NO INSERTA**)
 
 > ## **ESTE BLOQUE SE ESCRIBE EN LA RAMA `extraccion-gerber_emyth`, CON `MODO_INSERCION=cuarentena`. CERO INSERCIONES, Y NO POR FALTA DE CANDIDATOS BUENOS: PORQUE LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR Y ESTA CORRIDA NO LA TRAE.**
