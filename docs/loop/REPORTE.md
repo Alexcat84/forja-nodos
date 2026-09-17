@@ -37733,3 +37733,89 @@ yo con `forja.py informe` de a uno, que es lo que `D.43` **no** me quito.
 | 1 | **BLOQUEANTE**: el puente que ya entro al grafo (`P13`, `L215`) | *abierta* |
 | 2 | `PASOS INVENTADOS` por capitulo, con el ojo nuevo de la polaridad | *abierta* |
 | 3 | cerrar `cap_09` en insercion, `5` candidatos | *abierta* |
+
+## AB.2. **TAREA 1, BLOQUEANTE: EL PUENTE QUE YA ESTABA DENTRO DEL GRAFO** (`D.30`, `D.13`)
+
+### AB.2.a. LA LINEA DEL LIBRO, PEGADA DE SU INSTRUMENTO (`D.35`)
+
+<!-- TALLADO: parcial salida=.v35/L215_fragmento.txt -->
+
+    $ grep -n -o "If they react well.*move on\." fuentes/scott_radical_candor/cap_09.md
+    215:If they react well and reward the candor, keep going. If they don't, give up immediately or assume ill intent. Try again, carefully, but if you get the same reaction the next time, it may be time to move on.
+
+**Corto la cita en ese fragmento a proposito y lo digo:** la linea `215` entera empieza por
+`Next` seguido de un guion largo, y pegarla entera pone en rojo el barrido de guiones de esta
+casa. **El fragmento sale del mismo `grep -n`, con el mismo numero de linea delante**, y es el
+tramo que la `ACTA 33` juzga.
+
+### AB.2.b. **POR QUE ES PUENTE, EN UNA TABLA**
+
+| | lo que dice |
+|---|---|
+| **el libro**, `L215` | `If they don't, give up immediately or assume ill intent. Try again, carefully, ...` |
+| **el `P13` que entro** | *Si no, para inmediatamente, y no des por supuesta la mala intencion: vuelve a intentarlo con cuidado, ...* |
+| **lectura 1**, las dos mitades en positivo | *para inmediatamente* **y** *da por supuesta la mala intencion* |
+| **lectura 2**, las dos mitades en negativo | *no pares inmediatamente* **y** *no des por supuesta la mala intencion* |
+| **lo que `P13` escribio** | la primera mitad **en positivo** y la segunda **en negativo**: **ninguna de las dos** |
+
+**`X or Y` COMPARTE POLARIDAD EN LAS DOS LECTURAS POSIBLES**, y `P13` la partio por la mitad. Y
+la prueba barata de que lo partido no se sostiene esta **dentro de la misma linea `215`**: *para
+inmediatamente* seguido de *vuelve a intentarlo con cuidado* **se contradice a si mismo**.
+
+### AB.2.c. **LA CORRECCION, SIN BORRAR UN CARACTER Y SIN ELEGIR DIRECCION** (`D.13`)
+
+<!-- TALLADO: parcial salida=.v35/correccion_p13.txt -->
+
+    $ python forja.py corregir --nodo practicar_franqueza_radical_jefe_propio --anade "CORRECCION DECLARADA ..." --razon "..."
+    CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+      nodo : practicar_franqueza_radical_jefe_propio
+      campo: resumen_teorico
+      el texto viejo SIGUE ENTERO: 1983 caracteres, ninguno borrado
+      se aniaden 2388 caracteres al final
+      huella antes  : 98d6835edfe1d990
+      huella despues: 0392ce4b21a52500
+
+    GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: practicar_franqueza_radical_jefe_propio
+      razon en bitacora/VEREDICTOS.jsonl
+
+**LAS TRES COSAS QUE LA CORRECCION ESCRIBE, Y NINGUNA ELIGE POR EL LIBRO:**
+
+1. **QUE DE `P13` SIGUE SIENDO DEL LIBRO**, que es lo que `L215` sostiene sin ambiguedad: si
+   reacciona bien y premia la franqueza, sigue; si no, vuelve a intentarlo con cuidado; y si la
+   segunda vez la reaccion es la misma, puede que sea momento de irse.
+2. **QUE LA CLAUSULA `give up immediately or assume ill intent` QUEDA FUERA DEL PROCEDIMIENTO Y SE
+   DECLARA SIN ELEGIR**: la linea `215` del recorte se contradice con su propia frase siguiente, y
+   **este nodo no decide cual de las dos lecturas es la buena**.
+3. **QUE LA CUENTA DEL PROPIO RESUMEN ESTABA MAL**: donde decia `17 pasos, 17 TRANSCRIPCION, 0
+   PUENTE`, la cuenta buena es **`17 pasos, 16 TRANSCRIPCION, 1 PUENTE`**, y el puente es `P13`.
+   **Sin borrar la frase vieja**, por la misma via.
+
+> ### **LO QUE ESTA VIA NO PUEDE HACER, Y LO DIGO YO ANTES DE QUE SE LEA COMO UN DESCUIDO**
+>
+> **EL TEXTO LITERAL DE `P13` SIGUE DICIENDO LO QUE DECIA.** No hay en esta casa ningun instrumento
+> que reescriba un paso de un nodo ya insertado: `src/correccion.py` lo escribe en su propia
+> cabecera (*los pasos, el titulo, el entregable y las fuentes NO se tocan por aqui*), e `insertar`
+> rechaza un id que ya vive. **El encargo nombra `corregir` y `corregir` es lo que hay**, asi que el
+> puente queda **retirado por declaracion** y no por borrado.
+>
+> **ESTO NO ES PARADA** (`EXTRACTOR.md` 7): no contradice ninguna regla vigente, **es la regla
+> vigente funcionando**, que es la de corregir sin borrar (manual principio 6). **Lo traigo como
+> PROPUESTA** (`EXTRACTOR.md` 14), no como adjudicacion: si la casa quiere que un paso con puente
+> deje de leerse como procedimiento vivo, eso pide una operacion que hoy no existe, y **fabricarla
+> yo seria maquinaria nueva** (`EXTRACTOR.md` 13, `D.45`). **No la fabrico.**
+
+### AB.2.d. **`2.b`: LA CIFRA REPUBLICADA, SIN BORRAR LA VIEJA**
+
+| quien la firmo | `PASOS INVENTADOS` de `cap_09` | donde |
+|---|---:|---|
+| **mi vuelta 34** | `0` de `181`, **`0,00` por ciento** | `REPORTE.md` `AA.3`, y **se queda escrito** |
+| **el auditor, y es la buena** | **`1` de `181`, `0,55` por ciento** | `ACTA 33` seccion 3.1 |
+
+**LA CIFRA VIEJA NO SE BORRA Y LA NUEVA MANDA.** El paso que faltaba contar es el `P13` de
+`AB.2.b`. **No cambia el volumen del lote**: `0,55` sigue muy por debajo del tope de `10`, asi que
+**el tramo no cambia de escalon por esta cifra**, que es lo que la `ACTA 33` ya firma.
+
+**Y LA RAZON DE QUE ESTO SE REPUBLIQUE EN VEZ DE DEJARSE:** una cifra que la casa usa para decidir
+tamaños **no puede tener dos valores publicados sin decir cual manda**.
+
+**TAREA 1 CERRADA.**
