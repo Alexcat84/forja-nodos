@@ -411,6 +411,31 @@ seccion es ley escrita sin casos, y su contador esta en cero.
 > **LO QUE NO CAMBIA:** `5.4` entero. Lo que `D.48` cambia es **de quien** es la racha, no
 > **quien** la puede tocar. **Sigues sin poder reiniciarte la tuya.**
 
+> ### **17 sep 2026, decision del fundador: EL ENCARGO QUE ESCRIBES DECLARA SU LIBRO**
+>
+> **`D.49`: toda linea LEE EL TABLERO en su apertura y lo cita.** Y el encargo que dejas
+> en `docs/loop/PROMPT_SIGUIENTE.md` **abre declarando sobre que libro trabaja**, en su
+> propia linea y con la clave desnuda:
+>
+>     LIBRO DE ESTA VUELTA: scott_radical_candor
+>
+> **`NINGUNO` si la vuelta no toca ningun libro**, que es una declaracion y no un
+> silencio. **Sin esa linea el arnes NO ABRE la vuelta siguiente** y lo dice.
+>
+> **POR QUE DECLARADO Y NO ADIVINADO:** el arnes no sabe que es un libro (`D.45`), y
+> buscar la clave suelta dentro del encargo **tumbaria la vuelta por la seccion donde
+> dices que NO tocas los frentes**. Es la misma trampa que el tallado pago dos veces.
+>
+> **ANTES DE ESCRIBIRLO, MIRA EL TABLERO:**
+>
+>     python forja.py tablero                    el estado de los once libros
+>     python forja.py tablero --puedo <clave>    si esta linea puede tomar ese libro
+>
+> **Y SI EL LIBRO DE ESTA LINEA CIERRA, NO ABRAS EL SIGUIENTE POR ORDEN SIN MIRAR**
+> (`D.50`): si el que toca esta `EN CURSO` o `PAUSADO` en otra rama, **se releva ENTERO**
+> y **el paso de fundir es del fundador**. Escribe la peticion nombrando la rama y el
+> estado, y **para**.
+
 ### 5.1. Que se relee, y en que orden
 
 La relectura ciega **empieza siempre por los discutibles que el extractor marco

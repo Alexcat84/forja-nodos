@@ -3617,6 +3617,95 @@ class PruebaTableroDeFrentes(BaseForja):
                           "%s tiene un estado que D.49 no define" % fila["clave"])
 
 
+class PruebaGuardaDelTablero(BaseForja):
+    """EL ARNES COMPRUEBA AL ABRIR VUELTA, CONTRA EL TABLERO (D.49).
+
+    Y NO ADIVINA: exige que el encargo DECLARE su libro. Buscar la clave suelta dentro
+    del texto es la trampa que el tallado ya pago dos veces, porque un encargo nombra a
+    los frentes en su seccion de *lo que no se toca* y una guarda que lee menciones
+    **tumbaria la vuelta por decir que no los toca**.
+    """
+
+    def _filas(self):
+        return [
+            {"lote": 4, "clave": "scott_radical_candor", "rama": "",
+             "estado": "CERRADO EN EXTRACCION", "dueno": "serial",
+             "candidatos_en_bandeja": 75, "ultimo_capitulo": "cap_14"},
+            {"lote": 5, "clave": "marquet_turn_the_ship",
+             "rama": "extraccion-marquet_turn_the_ship", "estado": "PAUSADO",
+             "dueno": "NINGUNO", "candidatos_en_bandeja": 9,
+             "bandeja_medida_en": "otro arbol", "ultimo_capitulo": "cap_03"},
+            {"lote": 7, "clave": "grove_high_output",
+             "rama": "extraccion-grove_high_output", "estado": "EN CURSO",
+             "dueno": "grove_high_output", "candidatos_en_bandeja": 23,
+             "ultimo_capitulo": "cap_03"},
+        ]
+
+    def test_caso_positivo_un_encargo_que_declara_libro_de_otro_dueno_no_abre(self):
+        from scripts import guarda_tablero
+        impiden = guarda_tablero.comprobar(
+            texto="LIBRO DE ESTA VUELTA: grove_high_output",
+            linea="serial", filas=self._filas())
+        self.assertEqual(len(impiden), 1)
+        self.assertIn("grove_high_output", impiden[0])
+
+    def test_caso_positivo_pausado_sin_cosechar_tampoco_abre(self):
+        from scripts import guarda_tablero
+        impiden = guarda_tablero.comprobar(
+            texto="LIBRO DE ESTA VUELTA: marquet_turn_the_ship",
+            linea="serial", filas=self._filas())
+        self.assertEqual(len(impiden), 1)
+        self.assertIn("RELEVARLO ENTERO", impiden[0])
+
+    def test_caso_negativo_el_libro_de_esta_linea_abre(self):
+        from scripts import guarda_tablero
+        self.assertEqual(guarda_tablero.comprobar(
+            texto="LIBRO DE ESTA VUELTA: scott_radical_candor",
+            linea="serial", filas=self._filas()), [])
+
+    def test_mencionar_un_frente_no_tumba_la_vuelta(self):
+        """El encargo dice que NO los toca, y eso no puede ser lo que lo tumbe."""
+        from scripts import guarda_tablero
+        texto = (chr(10).join([
+            "LIBRO DE ESTA VUELTA: scott_radical_candor",
+            "",
+            "## LO QUE NO SE TOCA",
+            "grove_high_output esta EN CURSO en su frente y marquet_turn_the_ship",
+            "y gerber_emyth quedan PAUSADOS. Ninguno es asunto de esta linea."]))
+        self.assertEqual(guarda_tablero.comprobar(
+            texto=texto, linea="serial", filas=self._filas()), [])
+
+    def test_la_declaracion_se_lee_con_la_decoracion_de_la_casa(self):
+        from scripts import guarda_tablero
+        for escrito in ("**LIBRO DE ESTA VUELTA:** `scott_radical_candor`",
+                        "> LIBRO DE ESTA VUELTA: scott_radical_candor",
+                        "libro de esta vuelta: scott_radical_candor"):
+            self.assertEqual(guarda_tablero.libro_declarado(escrito),
+                             "scott_radical_candor", escrito)
+
+    def test_caso_positivo_un_encargo_que_no_declara_libro_no_abre(self):
+        """Un silencio no es una declaracion: para eso existe NINGUNO."""
+        from scripts import guarda_tablero
+        impiden = guarda_tablero.comprobar(
+            texto="una vuelta cualquiera, sin decir sobre que trabaja",
+            linea="serial", filas=self._filas())
+        self.assertEqual(len(impiden), 1)
+        self.assertIn("NO DECLARA su libro", impiden[0])
+
+    def test_caso_negativo_ninguno_es_una_declaracion_valida(self):
+        from scripts import guarda_tablero
+        self.assertEqual(guarda_tablero.comprobar(
+            texto="LIBRO DE ESTA VUELTA: NINGUNO",
+            linea="serial", filas=self._filas()), [])
+
+    def test_el_encargo_vivo_del_repo_declara_su_libro(self):
+        """Si esto cae, la proxima vuelta del principal se detiene antes de abrir."""
+        from scripts import guarda_tablero
+        self.assertIsNotNone(
+            guarda_tablero.libro_declarado(),
+            "docs/loop/PROMPT_SIGUIENTE.md sin 'LIBRO DE ESTA VUELTA:'")
+
+
 class PruebaCreditoPorLinea(BaseForja):
     """LA RACHA ES DE SU LINEA (D.48, 17 sep 2026, decision del fundador).
 
@@ -3896,7 +3985,8 @@ def main():
              PruebaVigenciaNoEsGuarda,
              PruebaCerrojoYCenso,
              PruebaTestigoDeGuardas, PruebaCreditoPorLinea,
-             PruebaHerenciaPorLinea, PruebaTableroDeFrentes]
+             PruebaHerenciaPorLinea, PruebaTableroDeFrentes,
+             PruebaGuardaDelTablero]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -3958,6 +4048,8 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaHerenciaPorLinea)._tests))
     print("  D.49 y D.50, un libro un dueño a la vez y el relevo: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaTableroDeFrentes)._tests))
+    print("  D.49, la guarda del tablero al abrir vuelta: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaGuardaDelTablero)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

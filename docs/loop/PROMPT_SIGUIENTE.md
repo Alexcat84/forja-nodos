@@ -4,6 +4,16 @@
 aplicar la decision del fundador del 17 sep 2026, archivada en
 `docs/loop/paradas/2026-09-17-de-quien-es-la-racha-DECISION.md`.*
 
+> # **LIBRO DE ESTA VUELTA: `scott_radical_candor`**
+>
+> *Declarado por `D.49` (17 sep 2026). **El arnes lo comprueba contra
+> `docs/loop/TABLERO.jsonl` al abrir vuelta** y se detiene si el libro tiene otro dueño.
+> Este lo tiene la linea `serial`, que eres tu, en estado `CERRADO EN EXTRACCION` con
+> `75` candidatos en bandeja.*
+>
+>     python forja.py tablero              el tablero entero
+>     python forja.py tablero --puedo scott_radical_candor
+
 > # **LA PARADA ESTA LEVANTADA, Y CON QUE**
 >
 > **`REPORTE` vuelve a `0 de 3`** por decision escrita del fundador (`5.4`), **no por
