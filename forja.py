@@ -19,6 +19,11 @@
                                                 Sin --acta, la ULTIMA acta, que es
                                                 lo que corre el arnes
     python forja.py herencia --comprobar        la apertura ciega contra ello
+    python forja.py credito                     la racha de ESTA linea (D.48)
+    python forja.py credito --lineas            que lineas tienen registro
+    python forja.py credito --revisar           el replay contra lo declarado
+    python forja.py credito --anotar --especie REPORTE --vuelta 33 --tanda "ACTA 32"
+                            --racha "0 de 3" [--cae] --cita "ACTA 32 9.1"
     python forja.py ayuda
 """
 
@@ -28,6 +33,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from src import (aduana, anotacion, arista, censos, comun, correccion,  # noqa: E402
+                 credito,
                  gate, guiones,
                  herencia, informe,
                  resolutor, vigencia)
@@ -46,6 +52,8 @@ def main(argumentos):
         return aduana.main(resto)
     if comando == "herencia":
         return herencia.main(resto)
+    if comando == "credito":
+        return credito.main(resto)
     if comando == "arista":
         return arista.main(resto)
     if comando == "corregir":

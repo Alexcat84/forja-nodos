@@ -35740,7 +35740,9 @@ rotulos**: es un rotulo interior del decimo.
 > se quedan fuera.** Lo que cambia hoy es que **el instrumento las dice** en vez de dejarlas en
 > blanco.
 
-### Y.3.f. **`cap_11` CIERRA EN INSERCION: `14` DE `14`, Y LA CABEZA QUEDA CON SUS DIEZ ROTULOS EN EL GRAFO**
+### Y.3.f. **`cap_11` CIERRA EN INSERCION: ~~`14` DE `14`~~ `16` NODOS EN EL GRAFO, Y LA CABEZA QUEDA CON SUS DIEZ ROTULOS**
+
+> **CORRECCION DECLARADA, 17 sep 2026.** El `14` es el recuento de los candidatos que esta vuelta y la anterior movieron; **el grafo tiene `16` nodos de `cap_11`**, y los dos que faltaban entraron antes (`bloquear_tiempo_pensar_calendario` y `recorrer_rueda_conscientemente_cultura_equipo`). La medida y el motivo estan en la correccion de `Y.8.d`.
 
 <!-- TALLADO: parcial salida=.v32/cabeza_cierre.txt -->
 
@@ -35989,11 +35991,45 @@ gate, en verde). **Las nueve señales de las tres declaraciones estan todas por 
 
 | | |
 |---|---|
-| `cap_11` en el grafo | **`14` de `14` candidatos.** El capitulo cierra en insercion |
-| pasos de `cap_11` en el grafo | **`167`**, los `142` de la vuelta 31 mas los `25` de hoy |
-| `PASOS INVENTADOS` de `cap_11`, capitulo entero | **`0,00` por ciento sobre `167` pasos**, en dos firmas: `142` en la `ACTA 30` y `25` en `Y.3.a` |
+| `cap_11` en el grafo | ~~**`14` de `14` candidatos.**~~ **`16` nodos.** El capitulo cierra en insercion. CORREGIDA POR REGENERACION, ver debajo |
+| pasos de `cap_11` en el grafo | ~~**`167`**, los `142` de la vuelta 31 mas los `25` de hoy~~ **`187`, en `16` nodos.** CORREGIDA POR REGENERACION, ver debajo |
+| `PASOS INVENTADOS` de `cap_11`, capitulo entero | **`0,00` por ciento**, ~~en dos firmas: `142` en la `ACTA 30` y `25` en `Y.3.a`~~ **en CUATRO firmas: `14` en la `ACTA 28`, `6` en la `ACTA 29`, `142` en la `ACTA 30` y `25` en `Y.3.a`**. ~~sobre `167` pasos~~ **sobre `187`**, y el porcentaje NO se mueve: `0` sobre `167` y `0` sobre `187` dan lo mismo |
 | la cabeza `decidir_quien_comunica_cada_cuanto` | **`10` de `10` rotulos con nodo en el grafo**, `9` cableados y `1` dicho |
 | lo que queda del lote 4 | **`75` en bandeja sobre `142`**, un `47,2` por ciento insertado |
+
+> ### **CORRECCION DECLARADA, 17 sep 2026: LAS TRES CELDAS DE ARRIBA Y LA CABECERA DE `Y.3.f`, REGENERADAS DEL DATO**
+>
+> *Punto 3 de la decision del fundador del 17 sep 2026, archivada en
+> `docs/loop/paradas/2026-09-17-de-quien-es-la-racha-DECISION.md`: **las cifras de la
+> parada se corrigen por regeneracion.** No se borra nada: se tacha y se pone al lado lo
+> que el instrumento mide.*
+>
+> **LA CAIDA, EN UNA LINEA:** el `167` es de un instrumento **cuya propia cabecera dice
+> `LO QUE QUEDA EN BANDEJA`**, y esta celda lo rotulo **`EN EL GRAFO`**. La cifra era
+> cierta de lo que medía; **el rotulo decia otra cosa.** Es `D.38.3` literal: *la linea
+> que acompania a una cifra dice lo que el instrumento MIDIO.*
+>
+> **LO QUE MIDE EL DATO, generado del dataset y no de la tabla que corrijo** (`REMEDIO 2`
+> de la `ACTA 31`):
+>
+>     $ python .v33/cap11.py
+>     poblacion: dataset/nodos.jsonl, 270 nodos, SIN filtrar por bandeja
+>     criterio : 'cap_11' citado en resumen_teorico
+>
+>     nodos del GRAFO con cap_11 como unidad de origen : 16
+>     sus pasos_accionables                          : 187
+>
+> **Sale al digito lo mismo que el auditor midio con su propio lector** (`ACTA 31` `7.1`:
+> `16` nodos, `187` pasos), **y con un instrumento distinto.** La salida entera, con los
+> `16` ids uno a uno, esta en `.v33/cap11.txt`.
+>
+> **Y LAS FIRMAS SON CUATRO, NO DOS:** `14` en la `ACTA 28`, `6` en la `ACTA 29`, `142` en la `ACTA 30` y `25` en `Y.3.a`. La celda contaba solo las dos ultimas, que son las de este capitulo en estas dos vueltas, **y el rotulo decia `capitulo entero`.** Es la misma caida que el `167`: **la cifra es de una poblacion y el rotulo nombra otra.**
+>
+> **LO QUE NO SE MUEVE, Y ES LA MITAD QUE IMPORTA:** `PASOS INVENTADOS` sigue en `0,00`
+> por ciento, porque `0` sobre `167` y `0` sobre `187` dan lo mismo. **Ningun dato estaba
+> mal puesto: cayo el rotulo, no el dato.** Los dos nodos que el `167` no contaba
+> (`bloquear_tiempo_pensar_calendario` y `recorrer_rueda_conscientemente_cultura_equipo`)
+> **estan en el grafo desde antes de esta vuelta**, y por eso el censo no se mueve.
 
 ### Y.8.e. **LAS SEIS CONDICIONES DE PARADA, REPASADAS UNA A UNA** (`EXTRACTOR.md` 7)
 

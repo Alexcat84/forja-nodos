@@ -2446,3 +2446,110 @@ con su relectura contra el parrafo.
 **cuatro libros**. Un reporte de treinta mil lineas no es un registro mejor: **es un
 registro que nadie relee**, y el propio auditor lleva tres actas midiendo que lo que se
 pierde no es la cifra, **es el encargo que no llego.**
+
+---
+
+## D.48. LA RACHA ES DE SU LINEA (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026, puntos 1 y 2. **Cierra un hueco que no se podia
+cerrar por extension**, y por eso no es una aclaracion de `D.38`: es regla nueva.*
+
+### Quien levanto el hueco, y por que no lo resolvio
+
+**El auditor del frente `gerber_emyth`**, el 16 sep 2026, parando por `DOCTRINA NUEVA
+NECESARIA` en vez de elegir la lectura que le convenia:
+
+> *`5.2` y `D.38.1` cuentan tandas **seguidas**, y seguidas significa consecutivas. Pero
+> **cuatro sesiones simultaneas no tienen orden entre si**, asi que la palabra que
+> sostiene la regla **no tiene referente aqui**. No es una regla que se pueda extender:
+> **es un hueco.***
+
+Y midio su propia posicion antes de negarse: su rama salio del commit `269c068` a las
+`20:46`, la linea serial declaro su parada a las `22:21`, **y su arbol no puede ver esa
+acta**. Las dos salidas, escritas por el con sus consecuencias opuestas:
+
+| lectura | `REPORTE` tras su tanda | que pasa con los tres frentes |
+|---|---|---|
+| **(a)** la racha del extractor es UNA sola de la campania | sigue en `3 de 3` | **los tres frentes estan corriendo por encima de una parada** |
+| **(b)** cada frente lleva la suya | `1 de 3` | los frentes siguen, y la parada es solo de la rama serial |
+
+> **Elegir `(b)` seria absolverme para poder seguir. Elegir `(a)` seria cargarle a este
+> frente tres tandas de un libro que no es el suyo.**
+
+**QUEDA CITADO COMO QUIEN LO LEVANTO.** Esta regla existe porque un auditor prefirio
+parar a elegir, teniendo delante la lectura que le dejaba seguir.
+
+### La letra
+
+> **CADA LINEA DE TRABAJO LLEVA SU PROPIA RACHA.** Una racha cuenta tandas **SEGUIDAS**,
+> y **una secuencia solo existe dentro de una linea**: entre sesiones simultaneas no hay
+> orden, asi que fuera de su linea la palabra no tiene referente.
+>
+> **UN FRENTE NACE CON SU RACHA EN CERO**, porque no ha dictado nada todavia.
+>
+> **LA RACHA DE LA SERIAL NO VIAJA A LOS FRENTES NI AL REVES.**
+>
+> **AL COSECHAR UN FRENTE, SU RACHA MUERE CON EL FRENTE.** Sus caidas quedan como
+> registro en sus actas archivadas, **y no se suman a la serial.**
+
+### Por que la racha muere al cosechar, y no se suma
+
+**Una racha no es una deuda: es una sonda.** Mide si una linea de dictado esta
+repitiendo un patron **mientras dicta**, para pararla a tiempo. Un frente cosechado ya
+no dicta: lo que queda de el es su trabajo, ya auditado, y sus actas. **Sumar sus caidas
+a la serial pararia a la serial por tandas que la serial no corrio**, que es exactamente
+el error de la vuelta 32 del frente `grove`, al reves.
+
+**Y LA CAIDA NO SE PIERDE:** queda escrita en el acta del frente, archivada con su
+cosecha. Lo que muere es el **contador**, no el **registro**.
+
+### La segunda mitad, que es la que sostiene la primera: OPCION B
+
+> **EL CREDITO VIVE EN UN FICHERO POR LINEA: `docs/loop/CREDITO_<linea>.jsonl`, LA
+> SERIAL INCLUIDA** (`CREDITO_serial.jsonl`), **con la especie, la vuelta, la tanda y su
+> cita.**
+>
+> **Y LA HERENCIA DE `D.40` ES LA DE SU LINEA.**
+
+**POR QUE UN FICHERO Y NO UNA SECCION MAS DEL ACTA.** Una sede unica compartida por
+varias lineas **es el problema, no la solucion**: es lo que hizo que tres frentes
+heredaran el acta de la serial al ramificar. Un fichero por linea convierte el registro
+en lo que ya es el `cuarentena/<libro>/`: **ficheros disjuntos que se funden sin
+tocarse**, y borra la unica fila de la tabla de cosecha de `PARALELO.md` que decia
+`CONFLICTO SEGURO`.
+
+**LO QUE NO CAMBIA, Y CONVIENE DECIRLO:** `AUDITOR_FORJA.md` 5.4 sigue entero. **La
+racha no se reinicia sola**, la reinicia una tanda limpia o una decision del fundador
+escrita en `docs/loop/paradas/`, **y ninguna de las dos es el auditor**. Lo unico que
+`D.48` cambia es **de quien** es la racha, no **quien** la puede tocar.
+
+### El instrumento
+
+    python forja.py credito             la racha de ESTA linea, con su cita
+    python forja.py credito --lineas    que lineas tienen registro
+    python forja.py credito --revisar   el replay contra lo declarado
+    python forja.py credito --anotar    escribe una tanda, un reinicio o un nacimiento
+
+`src/credito.py`. **La cifra declarada manda y el replay se publica aparte**: `estado()`
+devuelve lo que la ultima linea de cada especie declara, que es lo que el acta adjudico;
+`revisar()` vuelve a sumar `cae` y **dice donde las dos cuentas discrepan en vez de
+elegir una en silencio**. El replay **no vigila la historia migrada**, porque los
+reinicios de ese tramo viven en `docs/loop/paradas/` y no en el registro: **una guarda
+que acusa de lo que no puede saber es ruido que se aprende a ignorar.**
+
+**Caso positivo:** en una linea sin ninguna tanda cerrada, `forja.py herencia` entrega
+**CERO remedios** y dice por que, aunque el arbol tenga las `31` actas de la serial
+delante. **Negativo:** en la linea serial, que tiene `31` tandas escritas, entrega sus
+`4` remedios como siempre.
+
+### La historia migrada, y lo que la migracion no invento
+
+**`scripts/migrar_credito.py`** volco las `31` actas de la linea serial a
+`CREDITO_serial.jsonl`: `127` sucesos, uno por especie y acta, **cada uno con el literal
+de su celda al lado** (`D.38.3`). Las actas `1` a `7` escribian la fila del auditor como
+*"N actas seguidas"*, que es **otra unidad**, anterior a que `D.38` le diera una racha
+sola con tope: sin el literal al lado, aquel `7` se leeria como siete de tres.
+
+**`cae` solo se escribio donde el acta publica sus dos columnas** y se puede restar.
+Donde el acta publica una sola cifra, la fila va **sin `cae`**, y el replay la declara no
+replayable. **Un migrador que rellena huecos con su criterio no migra: dicta.**

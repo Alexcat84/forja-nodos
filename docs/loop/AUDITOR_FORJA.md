@@ -384,6 +384,33 @@ guardas). Recogidas en `docs/COSECHA_2026-09.md` seccion 1.E.
 **SE ESTRENA CUANDO EL BUCLE DEL EXTRACTOR ARRANQUE.** Hasta entonces esta
 seccion es ley escrita sin casos, y su contador esta en cero.
 
+> ### **CORRECCION DECLARADA, 17 sep 2026, decision del fundador: LA RACHA ES DE SU LINEA**
+>
+> > **CADA LINEA DE TRABAJO LLEVA SU PROPIA RACHA**, porque una racha cuenta tandas
+> > **SEGUIDAS** y una secuencia solo existe dentro de una linea. **Un frente NACE CON SU
+> > RACHA EN CERO**, la de la serial **no viaja** a los frentes ni al reves, y al cosechar
+> > un frente **su racha muere con el frente**: sus caidas quedan como registro en sus
+> > actas archivadas y **no se suman a la serial**.
+>
+> **Y EL CREDITO YA NO VIVE SOLO EN TU ACTA: VIVE EN `docs/loop/CREDITO_<linea>.jsonl`**,
+> la serial incluida. **Escribir ahi tu tanda es parte de cerrar el acta**, una linea por
+> especie, con la vuelta, la tanda y su cita:
+>
+>     python forja.py credito                    lo que tu linea trae al abrir
+>     python forja.py credito --anotar --especie REPORTE --vuelta 33 >            --tanda "ACTA 32" --racha "0 de 3" --limpia --cita "ACTA 32 9.1"
+>
+> **`--cae` si la especie cayo en tu tanda, `--limpia` si no.** El instrumento **no
+> reinicia nada por su cuenta**: un reinicio es un suceso aparte con su cita a un fichero
+> de `docs/loop/paradas/`, que es lo que `5.4` manda desde siempre.
+>
+> **LO QUE LEVANTO ESTA REGLA** fue el auditor del frente `gerber_emyth`, parando por
+> doctrina en vez de elegir la lectura que le dejaba seguir: *cuatro sesiones simultaneas
+> no tienen orden entre si, asi que la palabra que sostiene la regla no tiene referente
+> aqui.* Escrito como **`D.48`** en el banco.
+>
+> **LO QUE NO CAMBIA:** `5.4` entero. Lo que `D.48` cambia es **de quien** es la racha, no
+> **quien** la puede tocar. **Sigues sin poder reiniciarte la tuya.**
+
 ### 5.1. Que se relee, y en que orden
 
 La relectura ciega **empieza siempre por los discutibles que el extractor marco

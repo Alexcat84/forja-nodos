@@ -81,8 +81,10 @@ lanzamiento:**
 cita capitulos de libros ya minados, **y un auditor de frente tiene derecho a recontar una
 ruta que su propio reporte publica.**
 
-### 3.1.c. **LO QUE FALTA DECIDIR ANTES DE VOLVER A LANZAR** (16 sep 2026)
+### 3.1.c. **QUE REGISTRO HEREDA UN FRENTE: DECIDIDO EL 17 SEP 2026** (`D.48`)
 
+> #### ESTUVO ABIERTO UN DIA, Y ASI ESTABA PLANTEADO
+>
 > **UN FRENTE HEREDA EL REGISTRO DE LA LINEA DE INSERCION, Y ESO LE HACE AUDITAR TRABAJO
 > AJENO.** Al crear la rama, el frente se lleva `REPORTE.md` y `ACTA_AUDITOR.md` enteros,
 > **con las actas y las rachas de otra campania.**
@@ -90,10 +92,24 @@ ruta que su propio reporte publica.**
 > **Medido el 16 sep:** el frente `grove` paro citando como suyas **tres tandas de la
 > linea principal**, todas sobre `cap_11` de `scott_radical_candor`, **que no es su
 > libro**. Y `D.40` le entrego **cuatro remedios** del acta de otra linea.
+
+**LA DECISION DEL FUNDADOR DEL 17 SEP 2026 LO CIERRA, Y ES `D.48`:**
+
+> **CADA LINEA LLEVA SU PROPIA RACHA. UN FRENTE NACE CON LA SUYA EN CERO.** La racha de
+> la serial **no viaja** a los frentes ni al reves, y **al cosechar, la racha del frente
+> muere con el frente**: sus caidas quedan como registro en sus actas archivadas.
 >
-> **ESTA ABIERTO Y ES DOCTRINA**: el dictamen y las dos salidas estan en
-> `docs/loop/paradas/2026-09-16-el-registro-que-heredan-los-frentes.md`. **Hasta que se
-> decida, los frentes no se relanzan.**
+> **EL CREDITO VIVE EN `docs/loop/CREDITO_<linea>.jsonl`**, la serial incluida
+> (`CREDITO_serial.jsonl`), **y la herencia de `D.40` es la de SU linea.**
+
+**QUE SIGNIFICA AL LANZAR UN FRENTE, EN UNA LINEA:** el frente no tiene fichero de
+credito, asi que **no ha cerrado ninguna tanda, hereda CERO remedios y arranca con todas
+sus rachas en cero**, aunque tenga las `31` actas de la serial delante en el arbol. El
+arnes lo dice en voz alta en su log, y `python forja.py credito` lo dice antes de lanzar.
+
+**LO QUE EL FRENTE TIENE QUE HACER A CAMBIO:** escribir su tanda al cerrar cada acta,
+con `python forja.py credito --anotar`. Una linea que no escribe su credito **sigue
+naciendo cada vuelta**, y eso no es una racha en cero: es una racha que no existe.
 
 ### 3.2. LANZAR CADA FRENTE
 
@@ -167,6 +183,7 @@ poder decir cual de las dos rompio algo.**
 |---|---|
 | `cuarentena/<libro>/*.json` | **NINGUNO.** Son ficheros **nuevos y disjuntos**: cada frente escribe en su propia carpeta y nadie toca la del otro |
 | `docs/loop/REPORTE.md`, `ACTA_AUDITOR.md`, `loop.log`, `ultimo_*.json` | **CONFLICTO SEGURO Y ESPERADO.** Cada frente escribe su propio registro. **Se resuelven conservando LOS DOS**, uno detras del otro, y **nunca eligiendo uno** |
+| `docs/loop/CREDITO_<linea>.jsonl` | **CERO CONFLICTO, y es la fila que `D.48` vino a crear.** Cada linea escribe SOLO su fichero, asi que al fundir **no se tocan**. **La racha del frente muere con el frente** (`D.48`): su fichero se conserva como registro y **sus caidas no se suman a la serial** |
 | `dataset/`, `bitacora/`, `censos/`, `config/pares_mutuos.jsonl` | **NO DEBERIA HABER NINGUNO.** Un frente que los toco **inserto**, y eso es una caida de dato: **se para la cosecha y se mira antes de seguir** |
 | `src/`, `docs/BANCO_DE_REGLAS.md`, `orquestador_forja.sh` | **NO DEBERIA HABER NINGUNO.** La moratoria lo prohibe. Si lo hay, **ese frente rompio `D.45`** |
 

@@ -1,3 +1,74 @@
+# DECISION DEL FUNDADOR, 17 SEP 2026: **DE QUIEN ES LA RACHA CUANDO HAY CUATRO SESIONES A LA VEZ**
+
+*Archivo de `docs/loop/PARA_ALEXIS.md` de la linea serial, escrito por el auditor al
+cerrar la `ACTA 31`. **La decision va arriba, literal. El cuerpo de la parada va debajo
+sin tocar una coma**, que es como se archiva en esta casa.*
+
+---
+
+## LA DECISION, LITERAL
+
+> SESION DE CHAT en forja-nodos. DECISION DEL FUNDADOR (17 sep 2026),
+> tres decisiones. Aplicalas SOLO en la rama de insercion, archiva su
+> PARA_ALEXIS y relanza SOLO el principal. Grove sigue vivo: no lo toques.
+> Gerber y marquet quedan PAUSADOS tal como estan, con su PARA_ALEXIS y su
+> arbol intactos.
+>
+> 1. D.48, LA RACHA ES DE SU LINEA: cada frente lleva su propia racha,
+>    porque una racha cuenta tandas SEGUIDAS y una secuencia solo existe
+>    dentro de una linea de trabajo; entre sesiones simultaneas no hay
+>    orden, asi que la palabra no tiene referente fuera del frente. Un
+>    frente NACE CON SU RACHA EN CERO (no ha dictado nada todavia) y la
+>    racha de la linea serial no viaja a los frentes ni al reves. Al
+>    cosechar un frente, su racha MUERE con el frente y sus caidas quedan
+>    como registro en sus actas archivadas: no se suman a la serial. El
+>    auditor de gerber planteo el hueco y se nego a elegir para no
+>    absolverse: queda citado como quien lo levanto.
+> 2. OPCION B PARA EL REGISTRO, que es la que sostiene lo anterior: el
+>    credito vive en un fichero por linea, docs/loop/CREDITO_<linea>.jsonl
+>    (la serial incluida), con la especie, la vuelta, la tanda y su cita;
+>    y la herencia de D.40 es la de SU linea. Migra el estado actual a ese
+>    formato sin perder historia.
+> 3. LA RACHA REPORTE DE LA LINEA SERIAL SE REINICIA: las tres curas de
+>    la especie ya estan instaladas y corriendo en el hook (D.41 tallado,
+>    D.42 censo de celdas, D.46 el instante del sello), asi que la
+>    proxima caida de esa especie la caza el codigo antes del commit, no
+>    la racha. Las cifras de la parada se corrigen por regeneracion.
+> 4. Archiva el PARA_ALEXIS de la serial en
+>    docs/loop/paradas/2026-09-17-de-quien-es-la-racha-DECISION.md con lo
+>    anterior literal, escribe el PROMPT_SIGUIENTE de su vuelta siguiente
+>    (continuacion de la insercion en austero) y RELANZA SOLO EL
+>    PRINCIPAL con su comando. No lances gerber ni marquet.
+
+---
+
+## LO QUE SE APLICO, Y DONDE QUEDO CADA COSA
+
+| punto | donde vive ahora |
+|---|---|
+| **1. la racha es de su linea** | **`D.48`** en `docs/BANCO_DE_REGLAS.md`, con las dos lecturas del auditor de `gerber` citadas enteras y **el frente que lo levanto nombrado**. Correccion declarada en `AUDITOR_FORJA.md` `5`, delante de `5.1` |
+| **2. opcion B, el registro por linea** | `src/credito.py` y **`docs/loop/CREDITO_serial.jsonl`**, con `python forja.py credito`. La herencia `D.40` de `src/herencia.py` **pregunta al registro de SU linea** antes de entregar nada |
+| **la migracion sin perder historia** | `scripts/migrar_credito.py` volco **las `31` actas de la serial: `127` sucesos**, uno por especie y acta, **cada uno con el literal de su celda al lado** |
+| **3. `REPORTE` reiniciada** | un suceso `reinicio` en `CREDITO_serial.jsonl` **con la cita a este fichero**, porque `5.4` no deja reiniciar sin decision escrita |
+| **las cifras, por regeneracion** | correccion declarada en `docs/loop/REPORTE.md` `Y.8.d`: `167` tachado y **`187` en `16` nodos** al lado, generado del dataset con `.v33/cap11.py` y **no leyendo la tabla que corrige** |
+| **4. el encargo siguiente** | `docs/loop/PROMPT_SIGUIENTE.md`, **vuelta 33, insercion en austero** |
+
+**LO QUE NO SE TOCO, PORQUE LA DECISION LO PROHIBE:** el arbol de `grove` (vivo), y los
+de `gerber` y `marquet` (pausados con su `PARA_ALEXIS` y su arbol intactos). **Ninguno de
+los tres tiene fichero de credito**, y eso **no es un olvido: es la regla funcionando.**
+Cuando cada uno relance, `D.48` lo vera como **linea recien nacida**, con sus rachas en
+cero y **heredando cero remedios de la serial.**
+
+### Las guardas al aplicar esto
+
+    gate       270 nodos, VERDE          pruebas   220, 0 fallos
+    guiones    VERDE                     tallado   69 tablas, VERDE
+    censo      520 rutas, VERDE          credito   REPLAY VERDE
+
+---
+
+# EL CUERPO DE LA PARADA, SIN TOCAR
+
 # PARADA DEL BUCLE DEL EXTRACTOR: **CREDITO ROTO, `REPORTE` A `3 de 3`**
 
 *Escrita por el auditor al cerrar la `ACTA 31`, que audita la vuelta 32. Sede del auditor por

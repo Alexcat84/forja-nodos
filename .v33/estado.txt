@@ -1,0 +1,5 @@
+$ python -c (recuento de hoy, 17 sep 2026)
+dataset/nodos.jsonl            : 270 nodos
+bitacora/VEREDICTOS.jsonl      : 396 lineas
+cuarentena/scott_radical_candor    : 75 candidatos en bandeja
+cuarentena/marquet_turn_the_ship   : 3 candidatos en bandeja

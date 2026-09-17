@@ -3492,6 +3492,217 @@ class PruebaCerrojoYCenso(BaseForja):
                 self.taller, "no_commiteado.jsonl")), [])
 
 
+class PruebaCreditoPorLinea(BaseForja):
+    """LA RACHA ES DE SU LINEA (D.48, 17 sep 2026, decision del fundador).
+
+    El 16 sep corrieron cuatro sesiones a la vez. Tres frentes nacieron de la rama
+    serial, se llevaron su `ACTA_AUDITOR.md` entero, y **el arnes les entrego cuatro
+    remedios de otra secuencia a cada uno**. El auditor del primero paro citando como
+    suyas **tres tandas de un libro que no era el suyo**.
+    """
+
+    def _registro(self, nombre="frente_de_prueba"):
+        return os.path.join(self.taller, "CREDITO_%s.jsonl" % nombre)
+
+    # ---------------------------------------------- de que linea es este arbol
+
+    def test_la_rama_de_insercion_es_la_linea_serial(self):
+        """Y se comprueba ANTES que el prefijo: `extraccion-mundo-11` tambien empieza
+        por `extraccion-`, y sin ese orden la serial seria un frente `mundo-11`."""
+        from src import credito
+        self.assertEqual(credito.linea_actual(rama=credito.RAMA_DE_INSERCION),
+                         credito.LINEA_SERIAL)
+
+    def test_una_rama_de_libro_es_su_libro(self):
+        from src import credito
+        self.assertEqual(
+            credito.linea_actual(rama="extraccion-gerber_emyth"), "gerber_emyth")
+
+    # ------------------------------------------------ nacer con la racha en cero
+
+    def test_caso_positivo_registro_sin_tandas_es_linea_recien_nacida(self):
+        """Un `nacimiento` escrito NO es una tanda: la linea no ha dictado todavia."""
+        from src import credito
+        sucesos = [{"tipo": "nacimiento", "linea": "x", "cita": "D.48"}]
+        self.assertFalse(credito.nacida(sucesos=sucesos))
+
+    def test_caso_positivo_sin_ningun_suceso_tampoco_ha_dictado_nada(self):
+        from src import credito
+        self.assertFalse(credito.nacida(sucesos=[]))
+
+    def test_caso_negativo_una_tanda_escrita_ya_es_una_linea_con_historia(self):
+        from src import credito
+        sucesos = [{"tipo": "tanda", "linea": "x", "especie": "REPORTE",
+                    "racha": "1 de 3", "cita": "ACTA 1"}]
+        self.assertTrue(credito.nacida(sucesos=sucesos))
+
+    # ------------------------------------------- la racha que cada especie declara
+
+    def test_la_ultima_linea_de_la_especie_es_la_que_manda(self):
+        from src import credito
+        sucesos = [
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "2 de 3", "cita": "A"},
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "3 de 3", "cita": "B"},
+        ]
+        self.assertEqual(credito.estado(sucesos=sucesos)["REPORTE"]["cuenta"], 3)
+
+    def test_caso_positivo_la_especie_en_su_tope_es_lo_que_para_el_bucle(self):
+        from src import credito
+        sucesos = [{"tipo": "tanda", "especie": "REPORTE", "racha": "3 de 3",
+                    "cita": "ACTA 31"}]
+        self.assertEqual([e for e, _ in credito.en_tope(sucesos=sucesos)], ["REPORTE"])
+
+    def test_caso_negativo_por_debajo_del_tope_no_para(self):
+        from src import credito
+        sucesos = [{"tipo": "tanda", "especie": "REPORTE", "racha": "2 de 3",
+                    "cita": "ACTA 30"}]
+        self.assertEqual(credito.en_tope(sucesos=sucesos), [])
+
+    def test_un_reinicio_del_fundador_pone_la_especie_a_cero(self):
+        """5.4 sigue entera: la reinicia una decision escrita, y va con su cita."""
+        from src import credito
+        sucesos = [
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "3 de 3",
+             "cita": "ACTA 31"},
+            {"tipo": "reinicio", "especie": "REPORTE", "racha": "0 de 3",
+             "cita": "docs/loop/paradas/2026-09-17-de-quien-es-la-racha-DECISION.md"},
+        ]
+        self.assertEqual(credito.estado(sucesos=sucesos)["REPORTE"]["cuenta"], 0)
+        self.assertEqual(credito.en_tope(sucesos=sucesos), [])
+
+    # ------------------------------------------------- el replay, que no se calla
+
+    def test_caso_positivo_el_replay_caza_una_racha_que_no_suma(self):
+        """Dos tandas con caida seguidas dan 2, y la que declare 1 se publica."""
+        from src import credito
+        sucesos = [
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3", "cae": True,
+             "cita": "ACTA 1", "_linea_del_fichero": 1},
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3", "cae": True,
+             "cita": "ACTA 2", "_linea_del_fichero": 2},
+        ]
+        discrepancias = credito.revisar(sucesos=sucesos)
+        self.assertEqual(len(discrepancias), 1)
+        self.assertEqual(discrepancias[0]["replay"], 2)
+        self.assertEqual(discrepancias[0]["declarada"], 1)
+
+    def test_caso_negativo_una_tanda_limpia_pone_el_contador_a_cero(self):
+        """D.38.1: seguidas significa consecutivas."""
+        from src import credito
+        sucesos = [
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3", "cae": True,
+             "cita": "ACTA 1", "_linea_del_fichero": 1},
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "0 de 3", "cae": False,
+             "cita": "ACTA 2", "_linea_del_fichero": 2},
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3", "cae": True,
+             "cita": "ACTA 3", "_linea_del_fichero": 3},
+        ]
+        self.assertEqual(credito.revisar(sucesos=sucesos), [])
+
+    def test_el_replay_no_acusa_a_la_historia_migrada(self):
+        """Sus reinicios viven en docs/loop/paradas/, no en el registro. Una guarda
+        que acusa de lo que no puede saber es ruido que se aprende a ignorar."""
+        from src import credito
+        sucesos = [
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3", "cae": True,
+             "cita": "ACTA 1", "migrado": True, "_linea_del_fichero": 1},
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3", "cae": True,
+             "cita": "ACTA 2", "migrado": True, "_linea_del_fichero": 2},
+        ]
+        self.assertEqual(credito.revisar(sucesos=sucesos), [])
+
+    # ------------------------------------------- lo que no se escribe sin su cita
+
+    def test_una_racha_sin_cita_no_se_escribe(self):
+        from src import credito
+        with self.assertRaises(credito.CreditoMalEscrito):
+            credito.anotar({"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3"},
+                           ruta_registro=self._registro())
+
+    def test_una_linea_ilegible_del_registro_no_se_salta_en_silencio(self):
+        from src import credito
+        comun.escribir_texto(self._registro(), "{esto no es json}" + chr(10))
+        with self.assertRaises(credito.CreditoMalEscrito):
+            credito.leer(ruta_registro=self._registro())
+
+    def test_lo_escrito_se_vuelve_a_leer_igual(self):
+        from src import credito
+        credito.anotar({"tipo": "tanda", "especie": "CLASE", "racha": "1 de 2",
+                        "cae": True, "cita": "ACTA 9", "vuelta": 9},
+                       linea="frente_de_prueba", ruta_registro=self._registro())
+        sucesos = credito.leer(ruta_registro=self._registro())
+        self.assertEqual(len(sucesos), 1)
+        self.assertEqual(sucesos[0]["especie"], "CLASE")
+        self.assertEqual(sucesos[0]["linea"], "frente_de_prueba")
+
+
+class PruebaHerenciaPorLinea(BaseForja):
+    """LA HERENCIA DE D.40 ES LA DE SU LINEA (D.48).
+
+    Esta es la caida entera: el arnes le entrego a cada frente `4 remedio(s)` del acta
+    de la linea de la que salio, y el auditor de `grove` paro por una racha que su
+    frente no habia corrido.
+    """
+
+    def setUp(self):
+        BaseForja.setUp(self)
+        self.acta = os.path.join(self.taller, "ACTA_AUDITOR.md")
+        comun.escribir_texto(self.acta, chr(10).join([
+            "# ACTA 31. VUELTA 32, la de la linea de la que sale el frente",
+            "",
+            "## 9.3. MIS REMEDIOS PARA EL SIGUIENTE",
+            "",
+            "| # | **REMEDIO** | como se comprueba |",
+            "|---:|---|---|",
+            "| **1** | **UNA COSA DE LA LINEA SERIAL** | mirandola |",
+            "| **2** | **OTRA COSA DE LA LINEA SERIAL** | mirandola |",
+            ""]))
+
+    def _con_linea(self, nombre):
+        anterior = os.environ.get("FORJA_LINEA")
+
+        def devolver():
+            if anterior is None:
+                os.environ.pop("FORJA_LINEA", None)
+            else:
+                os.environ["FORJA_LINEA"] = anterior
+
+        os.environ["FORJA_LINEA"] = nombre
+        self.addCleanup(devolver)
+
+    def test_caso_positivo_un_frente_recien_nacido_hereda_cero(self):
+        """Con las dos filas de remedios delante, y por eso lo dice en voz alta."""
+        from src import herencia
+        self._con_linea("libro_que_nunca_dicto_nada")
+        recibido = herencia.extraer(ruta_acta=self.acta)
+        self.assertEqual(recibido["items"], [])
+        self.assertTrue(any("RECIEN NACIDA" in a for a in recibido["avisos"]))
+
+    def test_el_aviso_nombra_la_linea_y_su_registro(self):
+        """Un arnes que entrega cero sin avisar es el defecto por la puerta de atras."""
+        from src import herencia
+        self._con_linea("libro_que_nunca_dicto_nada")
+        aviso = " ".join(herencia.extraer(ruta_acta=self.acta)["avisos"])
+        self.assertIn("libro_que_nunca_dicto_nada", aviso)
+        self.assertIn("CREDITO_libro_que_nunca_dicto_nada.jsonl", aviso)
+
+    def test_caso_negativo_la_linea_serial_sigue_heredando_lo_suyo(self):
+        """La serial tiene 31 tandas escritas: para ella no cambia nada."""
+        from src import credito, herencia
+        self._con_linea(credito.LINEA_SERIAL)
+        recibido = herencia.extraer(ruta_acta=self.acta)
+        self.assertEqual(len(recibido["items"]), 2)
+        self.assertFalse(any("RECIEN NACIDA" in a for a in recibido["avisos"]))
+
+    def test_la_linea_serial_del_repo_tiene_su_registro_escrito(self):
+        """Si esto cae, la serial se comporta como un frente recien nacido y deja de
+        heredar sus propios remedios, que es peor que el defecto que D.48 arregla."""
+        from src import credito
+        self.assertTrue(credito.nacida(credito.LINEA_SERIAL),
+                        "docs/loop/CREDITO_serial.jsonl sin tandas: la migracion de "
+                        "D.48 no esta en el arbol")
+
+
 class PruebaTestigoDeGuardas(BaseForja):
     """UNA CIFRA VALE EN EL INSTANTE DEL SELLO (D.38.3 ensanchada, 16 sep 2026).
 
@@ -3559,7 +3770,8 @@ def main():
              PruebaAnotacionDeclarada,
              PruebaVigenciaNoEsGuarda,
              PruebaCerrojoYCenso,
-             PruebaTestigoDeGuardas]
+             PruebaTestigoDeGuardas, PruebaCreditoPorLinea,
+             PruebaHerenciaPorLinea]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -3615,6 +3827,10 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaCerrojoYCenso)._tests))
     print("  el testigo de guardas al sellar (D.38.3, 16 sep): %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaTestigoDeGuardas)._tests))
+    print("  D.48, la racha es de su linea, y el credito vive por linea: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaCreditoPorLinea)._tests))
+    print("  D.48, la herencia de D.40 es la de SU linea: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaHerenciaPorLinea)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))
