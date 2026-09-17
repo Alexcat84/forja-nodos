@@ -1,0 +1,45 @@
+{
+  "id": "rehacer_flujo_paso_limitante_capacidad",
+  "titulo": "Rehacer el flujo cuando una capacidad limitada mueve el paso que manda",
+  "dominio": "produccion",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [],
+  "fuentes": [
+    {
+      "clave": "grove_high_output",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "denominaciones": {
+    "nombre_largo": "La cola del tostador: cuando la capacidad limitada, y no la duracion, decide cual es el paso limitante",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "limited capacity"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "new limiting step"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "time offsets"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando ya tienes un flujo construido y resulta que en uno de sus pasos hay que esperar turno por una maquina, una sala o una persona ocupada.",
+  "entregable_esperado": "El flujo rehecho alrededor del paso de capacidad limitada, con el tiempo de espera contado dentro, los desfases alterados y los ciclos que la cola no toca dejados igual.",
+  "pasos_accionables": [
+    "Comprueba si tu flujo esta dibujado suponiendo capacidad infinita, o sea suponiendo que nadie tiene que esperar por una maquina libre.",
+    "Busca donde hay cola, que es el sitio en el que tienes que ponerte en fila y esperar tu turno para usar algo.",
+    "Cuenta el tiempo de espera dentro del flujo y no solo el tiempo de la operacion, porque si no ajustas el flujo por la cola tu huevo de tres minutos se convierte facilmente en uno de seis.",
+    "Declara paso limitante nuevo el de la capacidad limitada, y rehaz el flujo entero alrededor de el, calculando otra vez hacia atras desde la hora de entrega.",
+    "Deja iguales los ciclos que la cola no toca, como siguen iguales el del huevo y el del cafe, y altera los desfases.",
+    "Y no cambies de componente el que manda la calidad: el huevo sigue determinando la calidad general del desayuno aunque el paso limitante ya sea el tostador."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_02.md, unidad Cap. 1, titulo textual The Basics of Production: Delivering a Breakfast (or a College Graduate, or a Compiler, or a Convicted Criminal...). Sale de la PIEZA P6 de la frontera publicada en la vuelta 1 del frente, L49 a L55, 231 palabras. FRONTERA DENTRO DEL NODO: pasos 1, 2, 3 y 6 de L51; pasos 4 y 5 de L53. L55 es el pie de la figura y dice la conclusion con la que el tramo cierra (With limited toaster capacity, making the toast becomes the limiting step). POR QUE ES PROCEDIMIENTO: el libro lo escribe en imperativo suyo y con su inventario de etapas (So limited toaster capacity means you have to redo your flow around the new limiting step. The egg still determines the overall quality of the breakfast, but your time offsets must be altered; y Now you must account for the delivery time of the toast and the wait for a free toaster. This means the whole production process has to be conceived differently). POR QUE NO ES EL MISMO NODO QUE construir_flujo_produccion_paso_limitante, y es mi discutible principal de esta unidad: los dos hablan del paso limitante y salen de tramos contiguos. Los separo porque aquel CONSTRUYE el flujo la primera vez desde la duracion de cada componente, y este lo REHACE cuando una capacidad limitada cambia cual es el paso que manda; porque sus condiciones de activacion son distintas (el que todavia no tiene flujo contra el que ya lo tiene y se le ha metido una cola dentro); y porque este trae una distincion que aquel no tiene: el paso que manda el PLAZO deja de ser el que manda la CALIDAD, y el libro lo dice en una linea. Si cae como gemelo, cae DENTRO de mi marcado. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: NO escribo que se mida la cola ni con que instrumento, porque el libro no lo dice en este tramo; NO escribo a quien se avisa del plazo nuevo, que seria puente de la especie destinatario. Lo que el libro deja abierto se queda abierto."
+}

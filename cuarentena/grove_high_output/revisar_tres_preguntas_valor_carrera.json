@@ -1,0 +1,46 @@
+{
+  "id": "revisar_tres_preguntas_valor_carrera",
+  "titulo": "Examinar tu propio trabajo con las tres preguntas que el libro deja para tu carrera",
+  "dominio": "carrera_profesional",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [],
+  "fuentes": [
+    {
+      "clave": "grove_high_output",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "denominaciones": {
+    "nombre_largo": "Las tres preguntas del final de la Introduction: anadir valor real, estar enchufado a lo que pasa, y probar tu mismo lo nuevo",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "questions to ponder"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "adding real value"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "plugged in"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando revisas tu propia carrera de mando intermedio y quieres saber si sigues anadiendo valor, sabiendo que el libro dice que no hay formula segura y que solo deja preguntas.",
+  "entregable_esperado": "Las tres preguntas contestadas contra tu propio trabajo, y en cada una el lado en el que caes: el que anade valor o el que solo pasa informacion, el que esta enchufado o el que flota solo, el que prueba lo nuevo en persona o el que espera a que otros lo averiguen.",
+  "pasos_accionables": [
+    "Preguntate si estas anadiendo valor real o si solo estas pasando informacion de un lado a otro.",
+    "Contesta el como que el propio libro pone para esa primera pregunta: buscar sin parar maneras de hacer que las cosas sean de verdad mejores en tu departamento.",
+    "Mide esa primera pregunta con la vara que el libro le pone: en principio, cada hora de tu dia deberia irse en aumentar la produccion, o el valor de la produccion, de las personas de las que respondes.",
+    "Preguntate si estas enchufado a lo que pasa a tu alrededor, y cuenta dentro de eso lo que pasa dentro de tu empresa y lo que pasa dentro de tu sector entero.",
+    "Comprueba en esa segunda pregunta si esperas a que un jefe o cualquier otro te interprete lo que esta pasando, y si eres un nodo conectado a una red de gente enchufada o vas flotando por tu cuenta.",
+    "Preguntate si estas probando ideas, tecnicas y tecnologias nuevas, y probandolas en persona, no solo leyendo sobre ellas.",
+    "Comprueba en esa tercera pregunta si estas esperando a que otros averiguen como rehacer tu puesto de trabajo, y a ti fuera de ese puesto."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_01.md, unidad Introduction, titulo textual Introduction. Sale de la PIEZA P12 de la frontera publicada en la vuelta 1 del frente, L101 a L107, 193 palabras, y de ningun otro tramo: el nodo entero cabe en cuatro lineas del libro. POR QUE ES PROCEDIMIENTO Y NO POSTURA, que es el juicio caro de una Introduction entera de postura: por la prueba del inventario de EXTRACTOR.md 9.1. L101 dice I can offer you no surefire formula. But here are a few questions to ponder, y el libro PONE LAS TRES, numeradas 1, 2 y 3, cada una con su contenido propio. El inventario es de OBJETOS DE TRABAJO, las preguntas que te haces y las dos caras de cada una, y no de metas: el texto no dice adonde hay que llegar, dice que te preguntes y da el material de cada pregunta. DE DONDE SALE CADA PASO, uno a uno: pasos 1, 2 y 3 de L103 (Are you adding real value or merely passing information along? How do you add more value? By continually looking for ways to make things truly better in your department; y en principle, every hour of your day should be spent increasing the output or the value of the output of the people whom you are responsible for); pasos 4 y 5 de L105 (Are you plugged into what is happening around you? And that includes what is happening inside your company as well as inside your industry as a whole. Or do you wait for a supervisor or others to interpret whatever is happening? Are you a node connected to a network of plugged-in people or are you floating by yourself?); pasos 6 y 7 de L107 (Are you trying new ideas, new techniques, and new technologies, and I mean personally trying them, not just reading about them? Or are you waiting for others to figure out how they can re-engineer your workplace, and you out of that workplace?). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. Cada paso tiene su frase en una de las tres lineas y ninguna de las tres lineas queda sin usar. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI, y es lo que D.30 manda declarar: NO escribo que las respuestas se anoten por escrito ni cada cuanto se repasan, porque el libro dice questions to ponder y el periodo y el soporte los pondria yo, que son dos de las tres especies de puente del lote 1 (el periodo y el destinatario). NO escribo que hagas nada con el resultado: el libro no pone consecuencia a las tres preguntas, y cerrar ese bucle seria un puente. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: un lector estricto puede decir que tres preguntas para meditar son POSTURA y no procedimiento, porque lo que se ejecuta es un examen y no un trabajo. Lo sostengo porque 9.1 no pide que el entregable sea material, pide que el inventario sea del libro y que los pasos sean transcripcion, y aqui las dos cosas se cumplen al digito; y porque el texto que las introduce esta en imperativo implicito con su vara de medida dentro (cada hora del dia). Si cae, cae DENTRO de mi marcado. DOMINIO NUEVO, declarado en el reporte: carrera_profesional no existia en el catalogo, y lo abro porque gestion_equipos diria lo contrario de lo que este nodo hace, que es examinarte a ti y no a tu equipo. config/umbrales.json tiene solo_dominio_y_nucleo en false, asi que un dominio nuevo NO estrecha el barrido de ningun candidato."
+}

@@ -36124,3 +36124,284 @@ preguntas que te haces), no de metas.
 paso limitante a un desayuno, a un reclutamiento y a un juzgado, y **el tercero lo aplica al reves
 para ensenar el error**. Los tres viven en el `resumen_teorico` de un solo nodo, que es donde el
 manual los pone.
+
+## Z.2. **TAREA 2**: MINAR CON EL TECHO POR DELANTE, UN CANDIDATO POR VEZ Y LA ADUANA EN EL ACTO
+
+**OCHO CANDIDATOS ESCRITOS, OCHO PASADOS POR LA ADUANA EN SECO, CERO INSERTADOS** (`D.45`).
+El techo de `EXTRACTOR.md` 12.4 es de `5` a `15` y la vuelta cierra en `8`.
+
+### Z.2.a. EL SALDO, CANDIDATO A CANDIDATO, LEIDO DE MIS PROPIOS INFORMES
+
+<!-- TALLADO: script=.v1g/saldo_candidatos.py salida=.v1g/saldo_candidatos.txt -->
+
+| # | candidato | unidad | pieza | puerta | poblacion del barrido | vecinos | la cola, nombrada |
+|---:|---|---|---|---|---|---:|---|
+| 1 | `revisar_tres_preguntas_valor_carrera` | `cap_01` | `P12` | **ENTRARIA** | 349 (270 mas 79) | 0 | cola vacia |
+| 2 | `construir_flujo_produccion_paso_limitante` | `cap_02` | `P2` | **BLOQUEARIA** | 356 (270 mas 86) | 2 | `retirar_barreras_politicas_metodo` por `paso_contra_nodo`, similitud 0,122, familia 0,000, paso contra nodo 0,614; `rehacer_flujo_paso_limitante_capacidad` por `familia_id`, similitud 0,268, familia 0,429, paso contra nodo 0,430 |
+| 3 | `clasificar_trabajo_proceso_montaje_prueba` | `cap_02` | `P5` | **ENTRARIA** | 351 (270 mas 81) | 0 | cola vacia |
+| 4 | `rehacer_flujo_paso_limitante_capacidad` | `cap_02` | `P6` | **BLOQUEARIA** | 352 (270 mas 82) | 1 | `construir_flujo_produccion_paso_limitante` por `familia_id`, similitud 0,321, familia 0,429, paso contra nodo 0,430 |
+| 5 | `equilibrar_capacidad_personal_inventario_plazo` | `cap_02` | `P7` | **ENTRARIA** | 353 (270 mas 83) | 0 | cola vacia |
+| 6 | `preferir_inspeccion_proceso_prueba_destructiva` | `cap_02` | `P9` | **BLOQUEARIA** | 354 (270 mas 84) | 2 | `clasificar_trabajo_proceso_montaje_prueba` por `similitud_texto`, similitud 0,385, familia 0,250, paso contra nodo 0,446; `equilibrar_capacidad_personal_inventario_plazo` por `similitud_texto`, similitud 0,370, familia 0,000, paso contra nodo 0,406 |
+| 7 | `dimensionar_inventario_materia_prima_reposicion` | `cap_02` | `P10` | **BLOQUEARIA** | 355 (270 mas 85) | 2 | `preferir_inspeccion_proceso_prueba_destructiva` por `similitud_texto`, similitud 0,432, familia 0,000, paso contra nodo 0,403; `equilibrar_capacidad_personal_inventario_plazo` por `similitud_texto`, similitud 0,374, familia 0,111, paso contra nodo 0,392 |
+| 8 | `detectar_arreglar_fallo_etapa_menor_valor` | `cap_02` | `P11` | **BLOQUEARIA** | 356 (270 mas 86) | 2 | `construir_flujo_produccion_paso_limitante` por `similitud_texto`, similitud 0,354, familia 0,000, paso contra nodo 0,411; `rehacer_flujo_paso_limitante_capacidad` por `similitud_texto`, similitud 0,359, familia 0,000, paso contra nodo 0,397 |
+| | **8 candidatos** | | | **3 ENTRARIAN, 5 BLOQUEARIAN, 0 CAERIAN** | | **9** | |
+
+**CERO `CAERIAN`**, y eso es lo unico que la aduana certifica: que las ocho fichas estan bien
+construidas. **No certifica que sus pasos sean del libro**, y por eso la `TAREA 3` va aparte
+(`D.30`).
+
+**LA POBLACION SUBE DE `349` A `356` FILA A FILA, Y ESO ES LO QUE LA HACE LEGIBLE:** cada informe
+vio a los candidatos escritos antes que el, porque `D.38.5` manda que la poblacion sea grafo mas
+bandejas. **Los cinco `BLOQUEARIA` no son rechazos: son cola de lectura**, y **ocho de los nueve
+vecinos levantados son candidatos mios de esta misma vuelta**: del grafo entero de `270` nodos solo
+uno se levanta, y es un ajeno de `smart_who`. **Eso es lo que se espera al abrir un libro cuyo tema
+no esta en casa**, y no una cola corta por suerte.
+
+### Z.2.b. **LA CORRECCION DE PUERTA Y LA DE FIDELIDAD, LAS DOS EN EL MISMO ACTO** (`EXTRACTOR.md` 16)
+
+| # | candidato | que cayo | como se corrigio |
+|---:|---|---|---|
+| 1 | ninguno | **cero caidas de puerta en los ocho**: ni esquema, ni reglas de id, ni fuente | nada que corregir. Las reglas de id se leyeron ANTES de escribir el primer id, que es lo que `D.23` manda |
+| 2 | `construir_flujo_produccion_paso_limitante` | **una caida de FIDELIDAD, cazada por mi y no por la aduana**: el paso 6 decia *mira si ademas es el componente que mas le importa al cliente*, y el libro no encarga esa comprobacion: la AFIRMA del huevo | reescrito a transcripcion, con la correccion declarada dentro del `resumen_teorico` sin borrar lo que decia, y **la aduana vuelta a correr despues** (`.v1g/informe_02b.txt`). El informe de ANTES no se borra: `.v1g/informe_02.txt` |
+
+**LA ESPECIE ERA LA DEL ACTO**, que es la cuarta y **no esta en la tabla de las tres de `D.30`**
+(destinatario, periodo, responsable). Ya salio una vez en esta casa, en la vuelta 27 del frente
+serial, y **vuelve a salir aqui**: convertir una afirmacion del libro en una comprobacion del
+lector es escribir un paso que el libro no dice.
+
+### Z.2.c. LOS NUEVE PARES QUE LA ADUANA LEVANTO, CON MI VEREDICTO Y SU RAZON
+
+<!-- TALLADO: script=.v1g/veredictos.py salida=.v1g/veredictos_pares.txt -->
+
+| # | candidato | vecino | la levanto | similitud | familia | paso contra nodo | pasos cruzados | veredicto y razon |
+|---:|---|---|---|---:|---:|---:|---|---|
+| 1 | `construir_flujo_produccion_paso_limitante` | `retirar_barreras_politicas_metodo` | `paso_contra_nodo` | 0,122 | 0,000 | 0,614 | `4` contra `1` | **SANO**, AJENOS, y el par es instructivo contra mi: el vecino es de `smart_who` y trata de quitar politicas que estorban a un metodo de contratacion. Lei sus cinco pasos. Lo unico que comparte con mi paso 4 es LA FORMULA CON LA QUE YO ESCRIBO: `que es por donde el libro dice que se empieza` contra `que es con quien el libro dice que se hace esto`. La senal 3 midio mi manera de escribir, no el contenido del procedimiento |
+| 2 | `rehacer_flujo_paso_limitante_capacidad` | `construir_flujo_produccion_paso_limitante` | `familia_id` | 0,321 | 0,429 | 0,430 | `5` contra `9` | **SANO**, HERMANOS EN SECUENCIA, y es el par que yo marque como discutible ANTES de que la aduana lo levantara. Uno construye el flujo la primera vez y el otro lo rehace cuando una capacidad limitada mueve el paso que manda. La senal que lo levanta es `familia_id`, que mide que comparten `flujo` y `paso_limitante` en el id: es exactamente la banda que `D.4` midio como ruido de jerarquia. **Y de este par sale una arista declarada por lectura** (`D.29`), no un gemelo |
+| 3 | `construir_flujo_produccion_paso_limitante` | `rehacer_flujo_paso_limitante_capacidad` | `familia_id` | 0,268 | 0,429 | 0,430 | `9` contra `5` | **SANO**, EL MISMO PAR DE LA FILA DE ARRIBA, VISTO DESDE LA OTRA PUNTA: aparece porque el informe de este candidato se volvio a correr DESPUES de la correccion de fidelidad, cuando su hermano ya estaba en la bandeja. La senal cruza ahora su paso 9 contra el paso 5 del otro, que son los dos pasos de los desfases, y es exactamente el par del que sale la arista 1 de Z.4. **Mismo veredicto y misma razon: hermanos en secuencia, no gemelos** |
+| 4 | `preferir_inspeccion_proceso_prueba_destructiva` | `clasificar_trabajo_proceso_montaje_prueba` | `similitud_texto` | 0,385 | 0,250 | 0,446 | `6` contra `7` | **SANO**, MADRE E HIJO, no gemelos: el paso 3 de la madre nombra la prueba y este despliega QUE CLASE de prueba se elige. **Tambien sale arista declarada** (`D.29`). El par que la senal cruza es mi paso 6 contra su paso 7, y los dos dicen `antes de` con sujetos distintos: uno elige prueba, el otro manda probar el sistema completo antes de enviar |
+| 5 | `preferir_inspeccion_proceso_prueba_destructiva` | `equilibrar_capacidad_personal_inventario_plazo` | `similitud_texto` | 0,370 | 0,000 | 0,406 | `6` contra `1` | **SANO**, AJENOS de procedimiento y vecinos de vocabulario: los dos enumeran salidas y les apuntan el coste, y los dos empiezan sus pasos con `Considera`. Uno decide COMO VIGILAR una operacion continua y el otro decide COMO DESPLEGAR recursos cuando dos pasos chocan. Ni un objeto de trabajo en comun |
+| 6 | `dimensionar_inventario_materia_prima_reposicion` | `preferir_inspeccion_proceso_prueba_destructiva` | `similitud_texto` | 0,432 | 0,000 | 0,403 | `2` contra `2` | **SANO**, **EL PAR QUE LEO PRIMERO, porque es el unico por encima de `0,4`** y `EXTRACTOR.md` 11 dice que en esa banda son gemelos y nada mas. Lo leo entero y NO lo son: salen de dos lineas consecutivas sobre la misma maquina de huevos (`L67` y `L69`), y de ahi el vocabulario compartido. Uno elige el TIPO DE PRUEBA sobre el producto que sale, y el otro INSPECCIONA EL MATERIAL QUE ENTRA y dimensiona el inventario que evita el parado. Sus condiciones de activacion no se solapan y ni un paso de uno cabe en el otro. **Es el caso del capitulo monotematico de `EXTRACTOR.md` 12, no un duplicado, y va marcado como mi discutible 1** |
+| 7 | `dimensionar_inventario_materia_prima_reposicion` | `equilibrar_capacidad_personal_inventario_plazo` | `similitud_texto` | 0,374 | 0,111 | 0,392 | `2` contra `7` | **SANO**, AJENOS, y por la misma via que el par 5 de esta tabla: los dos pesan un coste contra otro, y de ahi el vocabulario. Uno decide CUANTO MATERIAL guardar contra lo que cuesta guardarlo, y el otro decide COMO REPARTIR capacidad, personal e inventario cuando dos pasos chocan. El inventario aparece en los dos porque el libro lo nombra en los dos tramos, pero en uno es materia prima que entra y en el otro producto terminado que se acumula a proposito |
+| 8 | `detectar_arreglar_fallo_etapa_menor_valor` | `construir_flujo_produccion_paso_limitante` | `similitud_texto` | 0,354 | 0,000 | 0,411 | `3` contra `4` | **SANO**, AJENOS: la senal cruza mi paso 3 (la regla de la etapa de menor valor) contra su paso 4 (mirar el flujo de produccion), y lo que comparten es la palabra `proceso` y la forma de citar al libro. Uno ordena las etapas por VALOR y el otro las ordena por TIEMPO |
+| 9 | `detectar_arreglar_fallo_etapa_menor_valor` | `rehacer_flujo_paso_limitante_capacidad` | `similitud_texto` | 0,359 | 0,000 | 0,397 | `4` contra `6` | **SANO**, AJENOS: mi paso 4 rechaza material en la entrega y su paso 6 dice que el huevo sigue mandando la calidad. Los dos hablan del mismo caso del libro, que es de donde viene la similitud |
+
+**LOS NUEVE SON `SANO`, Y NINGUNO VA HOY A `bitacora/VEREDICTOS.jsonl`**: esa sede la escribe la
+aduana con `insertar` (`EXTRACTOR.md` 14), y este frente no inserta. **Viajan aqui con su razon
+escrita** y se escriben el dia de la insercion.
+
+**EL PAR `6` ES EL UNICO POR ENCIMA DE `0,4`** (`0,432`), que es la banda donde `docs/CALIBRACION_D4.md`
+midio `325` gemelos y **cero ajenos**. **Lo leo entero antes que ningun otro, como `EXTRACTOR.md` 11
+manda, y digo que NO son gemelos**, con la razon escrita en su fila. **Va marcado como mi discutible
+`1`**: si la vara de la otra casa vale aqui al digito, este par cae, y cae dentro de mi marcado.
+
+### Z.2.d. LO QUE HICE DISTINTO Y LO DIGO YO ANTES DE QUE LO ENCUENTRE NADIE
+
+**LANCE LOS INFORMES DE LOS CANDIDATOS `6`, `7` Y `8` SIN ESPERAR A QUE ACABARA EL ANTERIOR.**
+`EXTRACTOR.md` 16 manda que **cada candidato pase la aduana en el acto de escribirlo**, y eso se
+cumple: hay un informe por candidato y ninguno se escribio sin el. **Lo que no hice fue esperar a
+que uno acabara para escribir el siguiente**, y el motivo es el medido: `5` minutos `25` segundos
+por candidato con la maquina libre, y **los tres frentes del paralelo corriendo a la vez en la misma
+maquina** (lo vi con `Get-CimInstance Win32_Process`: informes de `gerber_emyth` y de
+`marquet_turn_the_ship` corriendo mientras corrian los mios).
+
+**LO QUE ESO CUESTA, Y NO LO TAPO:** el informe de un candidato **no vio a los escritos despues de
+que el arrancara**, asi que un par entre dos de los mios podria no aparecer en ninguno de sus dos
+informes. **La cifra que cierra ese hueco es `CHOCAN entre si dentro del lote` del informe del lote
+entero**, que esta vuelta corre por orden expresa del fundador, y va en `Z.5`.
+
+## Z.3. **TAREA 3**: LA FIDELIDAD `D.30`, PASO A PASO Y CON SU CITA PEGADA
+
+**LA RELECTURA VA ANTES DE CERRAR Y LA HAGO ENTERA**: `57` pasos escritos, `77` filas de relectura
+(un paso puede apoyarse en dos lineas, y entonces lleva dos filas), **`0` PUENTE**.
+
+**EL INSTRUMENTO NO SE CREE MI CITA:** saca el trozo del libro del fichero de la unidad y **revienta
+si el ancla que yo apunto no esta en esa linea**; y **revienta tambien si un paso escrito del
+candidato se queda sin fila**. Lo que pongo yo es la linea y el veredicto, que es el numerador que
+ninguna guarda puede poner.
+
+### `revisar_tres_preguntas_valor_carrera`, 7 pasos escritos, 7 filas releidas, unidad `cap_01`
+
+<!-- TALLADO: script=.v1g/fidelidad.py salida=.v1g/fidelidad_tanda.txt -->
+
+| paso de `revisar_tres_preguntas_valor_carrera` | la salida del libro, pegada por `.v1g/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `103: ...Are you adding real value or merely passing information along? How do you add more value? By continually...` | **TRANSCRIPCION** |
+| `2` | `103: ...By continually looking for ways to make things truly better in your department. You are a manager. The c...` | **TRANSCRIPCION** |
+| `3` | `103: ...every hour of your day should be spent increasing the output or the value of the output of the people wh...` | **TRANSCRIPCION** |
+| `4` | `105: ...Are you plugged into what's happening around you? And that includes what's happening inside your company...` | **TRANSCRIPCION** |
+| `5` | `105: ...Or do you wait for a supervisor or others to interpret whatever is happening? Are you a node connected t...` | **TRANSCRIPCION** |
+| `6` | `107: ...Are you trying new ideas, new techniques, and new technologies, and I mean personally trying them, not j...` | **TRANSCRIPCION** |
+| `7` | `107: ...Or are you waiting for others to figure out how they can re-engineer your workplace-and you out of that ...` | **TRANSCRIPCION** |
+
+### `construir_flujo_produccion_paso_limitante`, 10 pasos escritos, 11 filas releidas, unidad `cap_02`
+
+<!-- TALLADO: script=.v1g/fidelidad.py salida=.v1g/fidelidad_tanda.txt -->
+
+| paso de `construir_flujo_produccion_paso_limitante` | la salida del libro, pegada por `.v1g/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `19: ...These are to build and deliver products in response to the demands of the customer at a scheduled delive...` | **TRANSCRIPCION** |
+| `2` | `19: ...Production's charter cannot be to deliver whatever the customer wants whenever he wants it, for this wou...` | **TRANSCRIPCION** |
+| `3` | `21: ...a manufacturer should accept the responsibility of delivering a product at the time committed to-in this...` | **TRANSCRIPCION** |
+| `4` | `21: ...We start by looking at our production flow.` | **TRANSCRIPCION** |
+| `5` | `23: The first thing we must do is to pin down the step in the flow that will determine the overall shape of ...` | **TRANSCRIPCION** |
+| `6a` | `23: ...we should plan the entire job around the time needed to boil it. Not only does that component take the l...` | **TRANSCRIPCION** |
+| `6b` | `23: ...the egg is also for most customers the most important feature of the breakfast.` | **TRANSCRIPCION**, **el que mire dos veces.** El paso 6 decia antes mira si ademas es el componente mas importante, y eso era un acto que el libro no encarga: hoy transcribe la afirmacion. Es la correccion de fidelidad de esta vuelta |
+| `7` | `25: ...To work back from the time of delivery, you'll need to calculate the time required to prepare the three ...` | **TRANSCRIPCION** |
+| `8` | `25: ...defines the length of the entire process-called, in production jargon, the total throughput time.` | **TRANSCRIPCION** |
+| `9` | `27: ...Using the egg time as your base, you must allow yourself time to get and toast the slices of bread. Fina...` | **TRANSCRIPCION** |
+| `10` | `27: ...starting with the longest (or most difficult, or most sensitive, or most expensive) step and work our wa...` | **TRANSCRIPCION** |
+
+### `clasificar_trabajo_proceso_montaje_prueba`, 7 pasos escritos, 12 filas releidas, unidad `cap_02`
+
+<!-- TALLADO: script=.v1g/fidelidad.py salida=.v1g/fidelidad_tanda.txt -->
+
+| paso de `clasificar_trabajo_proceso_montaje_prueba` | la salida del libro, pegada por `.v1g/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1a` | `39: ...process manufacturing, an activity that physically or chemically changes material just as boiling change...` | **TRANSCRIPCION** |
+| `1b` | `41: ...is a process step, which transforms data into strategies. The combination of the various sales strategie...` | **TRANSCRIPCION**, la segunda mitad del paso, del caso de la fuerza de ventas |
+| `2a` | `39: ...assembly, in which components are put together to constitute a new entity just as the egg, the toast, an...` | **TRANSCRIPCION** |
+| `2b` | `41: ...are made to flow into one presentation, along with such things as brochures, handouts, and flip charts. ...` | **TRANSCRIPCION**, la segunda mitad del paso |
+| `3a` | `39: ...test, which subjects the components or the total to an examination of its characteristics. There are, fo...` | **TRANSCRIPCION** |
+| `3b` | `39: ...visual tests made at points in the breakfast production process: you can see that the coffee is steaming...` | **TRANSCRIPCION**, las pruebas visuales, que el libro cuenta como prueba |
+| `4a` | `45: ...Each piece then undergoes an individual operation called a "unit test." When one fails, the defective po...` | **TRANSCRIPCION** |
+| `4b` | `41: ...presentation with a selected group of field sales personnel and field sales management. If the dry run f...` | **TRANSCRIPCION**, la forma que la prueba toma en un trabajo de personas |
+| `5a` | `45: ...the defective portion of the software is returned to the process phase for "rework." After all the piece...` | **TRANSCRIPCION** |
+| `5b` | `41: ...to meet the concerns and objections of the test audience.` | **TRANSCRIPCION**, contra que se rehace |
+| `6` | `45: ...After all the pieces pass their respective unit tests, they are assembled to form the compiler. Then, of...` | **TRANSCRIPCION** |
+| `7` | `45: ...is performed on the complete product before it is shipped to the customer. Time offsets are used extensi...` | **TRANSCRIPCION** |
+
+### `rehacer_flujo_paso_limitante_capacidad`, 6 pasos escritos, 9 filas releidas, unidad `cap_02`
+
+<!-- TALLADO: script=.v1g/fidelidad.py salida=.v1g/fidelidad_tanda.txt -->
+
+| paso de `rehacer_flujo_paso_limitante_capacidad` | la salida del libro, pegada por `.v1g/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `51: ...our breakfast operation assumed infinite capacity, meaning that nobody had to wait for an available toas...` | **TRANSCRIPCION** |
+| `2` | `51: ...What would happen if you had to stand in a line of waiters, waiting for your turn to use the toaster? If...` | **TRANSCRIPCION** |
+| `3` | `51: ...your three-minute egg could easily become a six-minute egg. So limited toaster capacity means you have t...` | **TRANSCRIPCION** |
+| `4a` | `51: ...you have to redo your flow around the new limiting step. The egg still determines the overall quality of...` | **TRANSCRIPCION** |
+| `4b` | `53: ...Working back from the time of breakfast delivery, let's see how the production is affected, as illustrat...` | **TRANSCRIPCION** |
+| `4c` | `53: ...Toaster capacity has become the limiting step, and what you do has to be reworked around it.` | **TRANSCRIPCION**, y el pie de la figura de L55 lo repite |
+| `5a` | `53: ...The egg cycle remains the same, as does the one for coffee. But limited toaster capacity makes for quite...` | **TRANSCRIPCION** |
+| `5b` | `51: ...but your time offsets must be altered.` | **TRANSCRIPCION** |
+| `6` | `51: ...The egg still determines the overall quality of the breakfast, but your time offsets must be altered.` | **TRANSCRIPCION** |
+
+### `equilibrar_capacidad_personal_inventario_plazo`, 8 pasos escritos, 13 filas releidas, unidad `cap_02`
+
+<!-- TALLADO: script=.v1g/fidelidad.py salida=.v1g/fidelidad_tanda.txt -->
+
+| paso de `equilibrar_capacidad_personal_inventario_plazo` | la salida del libro, pegada por `.v1g/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `57: ...Your conflict is seemingly irreconcilable, but it really isn't. If you were managing the restaurant, you...` | **TRANSCRIPCION** |
+| `2a` | `57: ...you could turn your personnel into specialists by hiring one egg-cooker, one toast-maker, one coffee-pou...` | **TRANSCRIPCION** |
+| `2b` | `57: ...that, of course, creates an immense amount of overhead, probably making it too expensive to consider.` | **TRANSCRIPCION**, el coste de esa salida, escrito por el libro |
+| `3a` | `59: ...you could ask the waiter in line next to you to help out-to put your toast in while you ran off to start...` | **TRANSCRIPCION** |
+| `3b` | `59: ...when you have to depend on someone else, the results are likely to be less predictable. As the manager, ...` | **TRANSCRIPCION**, el coste de esa salida |
+| `4` | `59: ...you could add another toaster, but this becomes an expensive addition of capital equipment. You could ru...` | **TRANSCRIPCION** |
+| `5a` | `59: ...You could run the toaster continuously and build up an inventory of hot toast, throwing away what you ca...` | **TRANSCRIPCION** |
+| `5b` | `59: ...That means waste, which can also become too expensive for the operation. But at least you know that alte...` | **TRANSCRIPCION**, el coste de esa salida |
+| `6` | `59: ...equipment capacity, manpower, and inventory can be traded off against each other and then balanced again...` | **TRANSCRIPCION** |
+| `7a` | `61: ...your task is to find the most cost-effective way to deploy your resources-the key to optimizing all type...` | **TRANSCRIPCION** |
+| `7b` | `61: ...the one that can give you the best delivery time and product quality at the lowest possible cost. To fin...` | **TRANSCRIPCION**, la vara de la respuesta correcta |
+| `8a` | `61: ...you must reduce the understanding to a quantifiable set of relationships. You probably won't use a stopw...` | **TRANSCRIPCION** |
+| `8b` | `61: ...What is important is the thinking you force yourself to go through to understand the relationship betwee...` | **TRANSCRIPCION**, el freno que el propio libro pone al calculo |
+
+### `preferir_inspeccion_proceso_prueba_destructiva`, 6 pasos escritos, 9 filas releidas, unidad `cap_02`
+
+<!-- TALLADO: script=.v1g/fidelidad.py salida=.v1g/fidelidad_tanda.txt -->
+
+| paso de `preferir_inspeccion_proceso_prueba_destructiva` | la salida del libro, pegada por `.v1g/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1a` | `67: ...all the eggs in the boiler-and the output of the machine from the time the temperature climbed or droppe...` | **TRANSCRIPCION** |
+| `1b` | `67: ...to the time the malfunction was discovered becomes unusable. All the toast is also wasted because you do...` | **TRANSCRIPCION** |
+| `2` | `67: ...All the toast is also wasted because you don't have any eggs to serve with it. How do you minimize the r...` | **TRANSCRIPCION** |
+| `3a` | `67: ...Performing a functional test is one way. From time to time you open an egg as it comes out of the machin...` | **TRANSCRIPCION** |
+| `3b` | `67: ...But you will have to throw away the egg tested. A second way involves in-process inspection, which can t...` | **TRANSCRIPCION** |
+| `4a` | `67: ...A second way involves in-process inspection, which can take many forms. You could, for example, simply i...` | **TRANSCRIPCION** |
+| `4b` | `67: ...insert a thermometer into the water so that the temperature could be easily and frequently checked. To a...` | **TRANSCRIPCION** |
+| `5` | `67: ...connect an electronic gadget to it that would set off bells anytime the temperature varied by a degree o...` | **TRANSCRIPCION** |
+| `6` | `67: ...whenever possible, you should choose in-process tests over those that destroy product.` | **TRANSCRIPCION** |
+
+### `dimensionar_inventario_materia_prima_reposicion`, 7 pasos escritos, 9 filas releidas, unidad `cap_02`
+
+<!-- TALLADO: script=.v1g/fidelidad.py salida=.v1g/fidelidad_tanda.txt -->
+
+| paso de `dimensionar_inventario_materia_prima_reposicion` | la salida del libro, pegada por `.v1g/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `69: ...you will want to look at the eggs at the time of receipt, something called incoming or receiving inspect...` | **TRANSCRIPCION** |
+| `2` | `69: ...The eggs going into it could be cracked or rotten, or they could be over- or undersized, which would aff...` | **TRANSCRIPCION** |
+| `3` | `69: ...you are going to have to send them back, leaving you with none. Now you have to shut down. To avoid that...` | **TRANSCRIPCION** |
+| `4` | `69: ...To avoid that, you need a raw material inventory. But how large should it be? The principle to be applie...` | **TRANSCRIPCION** |
+| `5a` | `69: ...you should have enough to cover your consumption rate for the length of time it takes to replace your ra...` | **TRANSCRIPCION** |
+| `5b` | `69: ...if your egg man comes by and delivers once a day, you want to keep a day's worth of inventory on hand to...` | **TRANSCRIPCION**, el ejemplo del propio libro, que es lo unico que fija un numero |
+| `6` | `69: ...you have to weigh the advantage of carrying a day's supply against the cost of carrying it. Besides the ...` | **TRANSCRIPCION** |
+| `7a` | `69: ...you should also try to gauge the opportunity at risk: what would it cost if you had to shut your egg mac...` | **TRANSCRIPCION** |
+| `7b` | `69: ...How many customers would you lose? How much would it cost to lure them back? Such questions define the o...` | **TRANSCRIPCION**, las otras dos preguntas de las tres |
+
+### `detectar_arreglar_fallo_etapa_menor_valor`, 6 pasos escritos, 7 filas releidas, unidad `cap_02`
+
+<!-- TALLADO: script=.v1g/fidelidad.py salida=.v1g/fidelidad_tanda.txt -->
+
+| paso de `detectar_arreglar_fallo_etapa_menor_valor` | la salida del libro, pegada por `.v1g/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1a` | `73: ...the material becomes more valuable as it moves through the process. A boiled egg is more valuable than a...` | **TRANSCRIPCION** |
+| `1b` | `73: ...A boiled egg is more valuable than a raw one, a fully assembled breakfast is more valuable than its cons...` | **TRANSCRIPCION** |
+| `2` | `73: ...The last carries the perceived value the customer associates with the establishment when he drives into ...` | **TRANSCRIPCION**, **el que mire dos veces.** El libro AFIRMA que la ultima etapa lleva ese valor percibido; el paso manda contarlo dentro del orden por valor del paso 1, que es el uso que el propio tramo le da |
+| `3` | `75: A common rule we should always try to heed is to detect and fix any problem in a production process at t...` | **TRANSCRIPCION** |
+| `4` | `75: ...we should find and reject the rotten egg as it's being delivered from our supplier rather than permittin...` | **TRANSCRIPCION** |
+| `5` | `75: ...if we can decide that we don't want a college candidate at the time of the campus interview rather than ...` | **TRANSCRIPCION** |
+| `6` | `75: ...we should also try to find any performance problem at the time of the unit test of the pieces that make ...` | **TRANSCRIPCION** |
+
+### Z.3.a. `PASOS INVENTADOS POR CAPITULO`, FILA POR UNIDAD MAS TOTAL
+
+<!-- TALLADO: script=.v1g/pasos_inventados.py salida=.v1g/pasos_inventados_v1g.txt -->
+
+| capitulo | nodos | **pasos escritos** | **PUENTE** | **PASOS INVENTADOS** | puentes reescritos en el acto |
+|---|---:|---:|---:|---:|---:|
+| **`cap_01`** (lote 7, `grove_high_output`) | 1 | **7** | **0** | **0,00 por ciento** | 0 |
+| **`cap_02`** (lote 7, `grove_high_output`) | 7 | **50** | **0** | **0,00 por ciento** | 1 |
+| **total del tramo de esta vuelta** | 8 | **57** | **0** | **0,00 por ciento** | 1 |
+
+**LA ESCALADA SE DECIDE SOBRE EL PEOR CAPITULO Y NO SOBRE EL PROMEDIO** (encargo, `TAREA 3`): el
+peor capitulo de esta vuelta es **`0,00` por ciento**, el tope es `10`, y **no hay escalada**.
+
+**Y EL AVISO DE `D.30` NO SE CUMPLIO DONDE YO LO ESPERABA, ASI QUE LO DIGO AL REVES DE COMO
+QUEDA BIEN:** `D.30` mide que **el parrafo pobre es el que produce el puente** (el mas rico del lote 1
+dio `0` por ciento y el mas pobre `83`). El unico paso que tuve que reescribir salio de `L23`, que con
+`106` palabras **no es de los pobres de mi tramo**: `L21` tiene `78` y `L57` tiene `81`, y de los dos
+salieron pasos limpios.
+
+<!-- TALLADO: parcial salida=.v1g/lineas_del_puente.txt -->
+
+    $ python .v1g/mapa.py fuentes/grove_high_output/cap_02.md   (tres filas de las 36)
+      21    78  Instead, a manufacturer should accept the responsibility of delivering a product at the time committ
+      23   106  The first thing we must do is to pin down the step in the flow that will determine the overall shape
+      57    81  Now let's complicate things a little further. What happens if you are stuck in line waiting for a to
+
+**LO QUE SI SE CUMPLIO ES LA OTRA MITAD DE LA REGLA, Y ES LA QUE ME LLEVO A MIRAR:** el puente
+aparecio en la unica frase del tramo donde **el libro AFIRMA algo en vez de encargarlo** (*the egg is
+also for most customers the most important feature*). **La pobreza del parrafo no es la unica puerta
+del puente: la afirmacion tambien lo es**, y esa no esta en la tabla de las tres especies.
+
+## Z.4. LAS ARISTAS QUE MI LECTURA LEVANTA Y NINGUNA SENAL LEVANTO (`D.29`, `EXTRACTOR.md` 11)
+
+**CUATRO, Y NINGUNA SE CABLEA HOY**: `forja.py arista` escribe en `bitacora/` y en `dataset/`, y este
+frente no inserta (`D.45`). **Quedan escritas con su razon y con el paso de la madre pegado**, que es
+lo que el encargo manda para este frente.
+
+<!-- TALLADO: script=.v1g/aristas.py salida=.v1g/aristas_cola.txt -->
+
+| # | madre | `--paso` | el paso de la madre, pegado de su fichero | hijo | regla | por que |
+|---:|---|---:|---|---|---|---|
+| 1 | `construir_flujo_produccion_paso_limitante` | `9` | `Escalona los demas pasos tomando como base el tiempo del anterior, que es lo que el libro hace con el huevo como base del pan y el pan como base del c...` | `rehacer_flujo_paso_limitante_capacidad` | `D.29` | el paso 9 de la madre construye los desfases, y el hijo es el unico tramo del libro que manda ALTERARLOS: L51 dice but your time offsets must be altered. El hijo empieza donde la madre acaba, y lo dice nombrando el producto de la madre (our breakfast operation assumed infinite capacity) |
+| 2 | `clasificar_trabajo_proceso_montaje_prueba` | `3` | `Senala la prueba, que es la operacion que somete los componentes o el total a un examen de sus caracteristicas, y cuenta tambien las pruebas visuales:...` | `preferir_inspeccion_proceso_prueba_destructiva` | `D.29` | el paso 3 de la madre nombra la prueba en una linea y dice que somete los componentes o el total a un examen; el hijo despliega en seis pasos QUE CLASE de prueba se elige cuando la operacion es continua, que la madre no tiene |
+| 3 | `detectar_arreglar_fallo_etapa_menor_valor` | `6` | `Aplicalo al trabajo de ingenieria como el libro lo aplica: busca el fallo de funcionamiento en la prueba unitaria de las piezas que componen el produc...` | `clasificar_trabajo_proceso_montaje_prueba` | `D.29` | el paso 6 de la madre nombra la prueba unitaria de las piezas en una linea, y el hijo es quien la despliega con su vuelta a proceso, su montaje y su prueba de sistema |
+| 4 | `detectar_arreglar_fallo_etapa_menor_valor` | `4` | `Aplicalo al material que entra: encuentra y rechaza el huevo podrido cuando lo esta entregando el proveedor, en vez de permitir que lo encuentre el cl...` | `dimensionar_inventario_materia_prima_reposicion` | `D.29` | el paso 4 de la madre nombra rechazar el material cuando lo entrega el proveedor, y el hijo es quien despliega esa inspeccion de recepcion y lo que hay que tener para poder rechazar sin pararse |
+
+**LAS CUATRO SON `D.29` Y NINGUNA ES `D.37`**, y la diferencia importa: `D.37` pide que el texto diga
+**cuantas** partes tiene y las nombre. **Ningun tramo de `cap_02` dice cuantas**, asi que ninguna
+arista es automatica y **las cuatro llevan razon escrita**, que es lo que `D.29` exige.
+
+**Y UNA DE LAS CUATRO LA CONFIRMO LA ADUANA SIN SABERLO:** el informe del candidato `4` levanto
+precisamente **su paso `5` contra el paso `9` de su madre**, que son los dos pasos de los desfases.
+La senal ordeno; la arista la declara la lectura.
