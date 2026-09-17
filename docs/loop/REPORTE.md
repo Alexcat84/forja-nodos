@@ -36429,3 +36429,33 @@ por su punto de codigo, que es lo que `.v32/fidelidad.py` ya hacia con `chr(0x20
 - **NO lo escondo en una nota al pie.** Lo que ensucio el arbol fue **un fichero mio**, en **mi**
   turno, y el arnes lo cazo antes que yo.
 
+## G1.6. **LAS SEIS CONDICIONES DE PARADA, REPASADAS UNA A UNA** (`EXTRACTOR.md` 7 y las del frente)
+
+| condicion | lo que mido | veredicto |
+|---|---|---|
+| **una pregunta de doctrina**, que en este frente es parada por `D.45` | **ninguna que yo tenga que decidir.** Los seis discutibles de `G1.3.d` se resuelven **dentro** de la regla vigente y por el lado estrecho, que es lo que `EXTRACTOR.md` 8 manda hacer con ellos: marcarlos a ciegas, no adjudicarlos | **NO ES PARADA** |
+| **una caida de dato**, que se declara y no se arregla aqui | **ninguna.** Cero inserciones, cero escrituras en `dataset/`, `bitacora/`, `censos/` y `config/`, comprobado con `git diff --name-only` contra el commit de apertura del frente | **NO ES PARADA** |
+| algo contradice una regla vigente | **ninguna.** La unica vara que choco consigo misma (serie numerada contra que es un nodo) **esta resuelta dentro de las dos**, declarando regla por regla en `G1.3.a` por que cuatro dan nodo y dos no | **NO ES PARADA** |
+| algo contradice una cifra publicada con su corte | **hay una y se declara en vez de resolverse copiando** (`G1.1`): el encargo publica `63.434` palabras y yo mido `62.648`. **No nos separa el dato sino el denominador**, y la tabla canonica de la casa esta del lado de mi medida | **NO ES PARADA** |
+| una operacion cuyo texto no alcanza para ejecutarse sin decidir | **ninguna.** Las tres tareas del encargo dicen que medir, con que instrumento y contra que tope | **NO ES PARADA** |
+| una guarda en rojo | **hubo una, mia, y esta reparada dentro de la vuelta** (`G1.5`): la guarda `guiones` en ROJO en el instante del sello de la fase ciega, por cuatro caracteres de mi `citas.py`. **Reparada en el commit `1ede50b` y verde en todos los commits desde entonces** | **NO ES PARADA, Y SE DECLARA** |
+
+**NINGUNA DE LAS SEIS SE CUMPLE. LA VUELTA 1 DEL FRENTE CIERRA SIN PARADA.** Lo unico que sube al
+fundador es lo que el arnes ya subio solo: `docs/loop/PARA_ALEXIS.md`, que **no toco.**
+
+## G1.7. **LO QUE ME CARGO A MI MISMO ANTES DE QUE LO HAGA EL AUDITOR**
+
+*Una vuelta que solo encuentra aciertos propios no esta midiendo.*
+
+| # | lo mio | especie | como salio a la luz |
+|---:|---|---|---|
+| **1** | **mi instrumento de citas llevaba dentro los guiones que existe para quitar** | **el que borra tiene que nombrar**: para sustituir U+2014 hay que escribirlo, y el barrido no distingue el guion que escribes del que borras | **lo cazo la fase ciega del arnes a las `21:19:13`**, no yo, y costo un `PARA_ALEXIS.md`. `.v32/fidelidad.py` ya usaba `chr(0x2014)` y **yo no lo copie** (`G1.5`) |
+| **2** | **teclee `25.992` y `41,5 por ciento` sumando de cabeza las once filas de la frontera.** La suma real es `27.992` y `44,7` | **la celda tecleada**, que es la especie exacta de `D.41` | **me lo cace yo antes de commitear**, sumando con el instrumento en vez de con la cabeza, y **lo arregle por el unico metodo que vale**: metiendo el total en el fichero del instrumento y pegandolo de ahi (`G1.3`) |
+| **3** | **lance la aduana de seis candidatos en tanda con `tail -25`, y dos de ellos salieron con la salida vacia** | **el filtro que se come la prueba**: una ventana fija recorta lo que el informe imprime, y un informe recortado a cero **no es un veredicto** | **lo vi al recontar los veredictos contra los candidatos**: tenia 10 candidatos y 8 saldos. **Los dos los volvi a correr enteros y sin filtro** (`.gerber_v1/aduana_tanda_c.txt`), en vez de publicar un saldo que no tenia |
+
+**LAS TRES SON DE LA MISMA FAMILIA:** las tres son **el instrumento contradicho por su propio
+resultado**, y ninguna se habria visto si la celda se teclea o si el saldo se da por bueno sin
+recontarlo. **La 2 y la 3 las cace yo; la 1 la cazo el arnes.** Esa proporcion, dos de tres, es la
+cifra honrada de esta vuelta y no la publico para lucirla: la publico para que la siguiente sepa que
+**el recuento de veredictos contra candidatos hay que hacerlo siempre**, porque esta vez fallo.
+
