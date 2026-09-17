@@ -1,0 +1,29 @@
+BANDEJA DEL LOTE 4 POR CAPITULO (cuarentena/scott_radical_candor/*.json)
+  cap_09         20
+  cap_10         14
+  cap_12          2
+  cap_13         12
+  cap_14         15
+  TOTAL          63
+
+cap_09, en el orden del fichero:
+   1  abrazar_incomodidad_arrancar_critica_equipo
+   2  comprobar_criticas_hombre_mujeres_equipo
+   3  conducir_reuniones_salto_nivel_diez_reglas
+   4  correr_semana_arreglo_averias_gestion
+   5  dar_guia_acto_cinco_consejos
+   6  dar_guia_humilde_tres_tecnicas
+   7  dar_guia_util_cuatro_recordatorios
+   8  elegir_medio_dar_guia_jerarquia_modos
+   9  elogiar_publico_criticar_privado_sus_tres_matices
+  10  entregar_evaluacion_formal_desempenio_nueve_consejos
+  11  evitar_personalizar_guia_aceptar_personal
+  12  exigir_critica_jefe_reticente
+  13  fomentar_guia_reciproca_companieros
+  14  impedir_punialadas_espalda_equipo
+  15  medir_guia_propia_pegatinas_marco
+  16  organizar_sistema_recoger_quejas_equipo
+  17  practicar_franqueza_radical_jefe_propio
+  18  resolver_dudas_frecuentes_reuniones_salto_nivel
+  19  responder_critica_abrasiva_cuatro_reglas
+  20  revisar_critica_mujer_agresiva_cuatro_tacticas

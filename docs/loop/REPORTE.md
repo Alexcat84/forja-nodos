@@ -36995,7 +36995,7 @@ esta vuelta.
 |---:|---|---|
 | 1 | **BLOQUEANTE**: el nodo que afirma un estado de mineria falso, corregido contra la medicion del dia, **mas el barrido de la especie entera** | **CERRADA** en `AA.2` |
 | 2 | seguir insertando el lote 4, `cap_09`, con el techo de `15` mandando sobre el capitulo | ABIERTA |
-| 3 | `PASOS INVENTADOS` por capitulo, **ANTES de que los nodos entren** | ABIERTA |
+| 3 | `PASOS INVENTADOS` por capitulo, **ANTES de que los nodos entren** | **CERRADA** en `AA.3`, y antes de la primera insercion |
 
 ## AA.2. **TAREA 1, BLOQUEANTE: EL NODO QUE AFIRMA UN ESTADO DE MINERIA FALSO** (`D.13`)
 
@@ -37148,3 +37148,123 @@ quedaria por hacer: cero**, porque no queda nada.
 > auditor la quiere medida, la medicion es este mismo barrido** y el coste es el de una tarea.
 
 **TAREA 1 CERRADA.**
+
+## AA.3. **TAREA 3: LA FIDELIDAD, Y ESTA VEZ ANTES DE QUE LOS NODOS ENTREN** (`D.30`)
+
+*El encargo la pone la tercera y manda correrla la primera. **Va aqui, ANTES de `AA.4`**, y la
+prueba de que el orden se cumplio es que el commit de esta seccion precede al de la primera
+insercion.*
+
+### AA.3.a. **EL TRAMO, DECIDIDO ANTES DE RELEER: `15` DE `20`, Y EL TECHO MANDA**
+
+<!-- TALLADO: parcial salida=.v34/orden_cap09.txt -->
+
+    $ python .v34/orden_cap09.py
+      cap_09 EN EL ORDEN DEL LIBRO (linea que cada candidato cita de cap_09.md)
+      ...
+      total cap_09 en bandeja: 20
+      pasos totales          : 272
+
+> **LA VUELTA CIERRA DONDE CABE Y LO DECLARA CON SU CIFRA** (`EXTRACTOR.md` 12.4, y el encargo 3):
+> **`cap_09` trae `20` candidatos contra un techo de `15`.** El tramo son **los `15` primeros en el
+> orden del libro**, de la linea `17` a la `315`. **Los `5` que quedan** (`entregar_evaluacion_formal_desempenio_nueve_consejos`
+> L331, `impedir_punialadas_espalda_equipo` L363, `fomentar_guia_reciproca_companieros` L369,
+> `conducir_reuniones_salto_nivel_diez_reglas` L383 y `resolver_dudas_frecuentes_reuniones_salto_nivel`
+> L415) **se quedan en bandeja y `cap_09` NO cierra en insercion en esta vuelta.**
+
+### AA.3.b. **LO QUE LA RELECTURA ENCONTRO ANTES DE INSERTAR, Y POR ESO SE PUDO ARREGLAR GRATIS**
+
+**UN CANDIDATO PUBLICABA UNA CUENTA QUE EL LIBRO CONTRADICE.** `dar_guia_acto_cinco_consejos` decia
+en su `resumen_teorico` *son CINCO consejos rotulados uno a uno por el libro* y enumeraba cinco. **Los
+rotulos de las lineas `115` a `135` son SEIS**, y los cuento uno a uno con su `sed` pegado (`D.35`):
+
+<!-- TALLADO: script=.v34/rotulos_l115_135.py salida=.v34/rotulos_l115_135.txt -->
+
+    123: Say it in 2-3 minutes between meetings. Just saying it right away in a m
+    127: Keep slack time in your calendar, or be willing to be late. Prioritizing
+    129: Don't "save up" guidance for a 1:1 or a performance review. One of the f
+    131: Guidance has a short half-life. If you wait to tell somebody for a week
+    133: Unspoken criticism explodes like a dirty bomb. Just as in your personal
+    135: Avoid black holes. Be sure to let people know immediately how their work
+
+> **PASA POR LA MISMA `limpia()` QUE LA RELECTURA**, y lo digo: la linea `123` del libro trae un guion
+> **medio** en `2-3` y las comillas son tipograficas. **En este repo no entra ni un guion medio**
+> (manual seccion 2), asi que el instrumento los mapea al corto y las comillas a rectas. **El rotulo,
+> el numero de linea y la cuenta son literales.**
+
+**EL QUE FALTABA EN LA CUENTA ES EL DE LA LINEA `133`**, y la prueba de que el defecto era de la
+cuenta y no del procedimiento es que **el propio `P12` del candidato ya lo transcribia**.
+
+<!-- TALLADO: parcial salida=.v34/correccion_cinco_seis.txt -->
+
+    $ python .v34/correccion_cinco_seis.py
+      CORRECCION EN CUARENTENA, ANTES DE INSERTAR
+        id viejo : dar_guia_acto_cinco_consejos
+        id nuevo : dar_guia_acto_seis_consejos
+        la cuenta pasa de CINCO a SEIS rotulos, contados L123 L127 L129 L131 L133 L135
+        pasos    : 14, ninguno anadido ni quitado
+
+> **POR QUE ESTO NO ES UNA CAIDA DE `CIFRA PUBLICADA`, Y NO ME LO APUNTO NI ME LO PERDONO:** el
+> candidato **vive en cuarentena**, que no es sede de cifra publicada. **Es el precedente literal que
+> el barrido de `AA.2.e` me puso delante**, escrito por mi antecesor dentro de
+> `integrar_trabajo_vida_mejor_version`: *NO ES CAIDA de ninguna especie, porque vive en cuarentena
+> (...); se corrige igual, y antes de insertar*. **Lo que lo dejo salir barato fue el orden**: si la
+> relectura hubiera corrido despues de insertar, como paso en la vuelta 33, la misma cuenta habria
+> entrado en `dataset/nodos.jsonl` y ahi ya no es una edicion.
+>
+> **Ese es el argumento entero de por que `D.30` pone la relectura antes.** Esta vuelta lo cobra.
+
+### AA.3.c. **`PASOS INVENTADOS` POR CAPITULO, LA CIFRA QUE DECIDE LA ESCALADA**
+
+<!-- TALLADO: script=.v34/pasos_inventados.py salida=.v34/pasos_inventados_v34.txt -->
+
+| capitulo | nodos | **pasos escritos** | **PUENTE** | **PASOS INVENTADOS** |
+|---|---:|---:|---:|---:|
+| **`cap_09`** (lote 4, `scott_radical_candor`), el tramo de esta vuelta | 15 | **181** | **0** | **0,00 por ciento** |
+| **total del tramo de esta vuelta** | 15 | **181** | **0** | **0,00 por ciento** |
+
+**`0,00` POR CIENTO CONTRA UN TOPE DE `10`. NO HAY ESCALADA.** El peor capitulo y el promedio son la
+misma cifra porque la vuelta no toca ninguna otra unidad.
+
+**LA RELECTURA ENTERA, PASO A PASO Y CON LA LINEA DEL LIBRO PEGADA**, esta en
+`.v34/fidelidad_v34.txt`: **`181` filas, una por paso**, y el instrumento **revienta si un ancla no
+esta en su linea** y **revienta si la relectura no cubre todos los pasos del fichero**. Su cierre:
+
+<!-- TALLADO: parcial salida=.v34/fidelidad_v34.txt -->
+
+    TOTAL DEL TRAMO: 181 pasos releidos, 0 PUENTE, 181 TRANSCRIPCION
+
+### AA.3.d. **LO QUE NO CUENTA COMO PUENTE Y AUN ASI LO DIGO: LA CIFRA DEL TITULO**
+
+> **ES LA PREGUNTA `3` DE LA COLA DE DOCTRINA, Y NO LA ADJUDICO.** La cola la enuncia asi: *una cifra
+> en `denominaciones.nombre_largo` que el libro no escribe (...). Segunda vuelta seguida con la
+> figura, y las dos veces se registro sin cargar, porque `D.30` cuenta pasos.* **Con esta van tres.**
+
+**SEIS DE LOS QUINCE LLEVAN UNA CUENTA EN SU TITULO O SU ID, Y LAS SEPARO EN DOS MONTONES**, porque no
+son la misma cosa:
+
+| el libro ESCRIBE la cuenta | el libro NO la escribe, pero se cuenta de sus rotulos |
+|---|---|
+| `responder_critica_abrasiva_cuatro_reglas`: L317 dice literal `consider the following four rules of thumb` | `abrazar_incomodidad_arrancar_critica_equipo` (seis), `dar_guia_humilde_tres_tecnicas` (tres), `dar_guia_util_cuatro_recordatorios` (cuatro), `elogiar_publico_criticar_privado_sus_tres_matices` (tres), `revisar_critica_mujer_agresiva_cuatro_tacticas` (cuatro) |
+| **`1`** | **`5`** |
+
+**LAS CINCO DEL MONTON DERECHO SON CUENTAS VERDADERAS**: los conte uno a uno contra los rotulos del
+libro y **ninguna esta mal**. Lo que el libro escribe en su lugar es `some techniques`, `some tips and
+reminders`, `some things to think about`, `these tactics`. **La figura no es una cifra falsa: es una
+cifra que el lector pone donde el libro escribio un indefinido.**
+
+**Y LA SEXTA ERA FALSA, Y ES LA DE `AA.3.b`.** `cinco` contra `seis`. **Eso es exactamente lo que
+hace que la pregunta `3` no sea cosmetica**, y lo digo como medicion y no como veredicto: **de `6`
+cuentas puestas por el extractor donde el libro no la escribe, `1` estaba mal.** Quien adjudique la
+pregunta `3` tiene ahora un caso con su cifra.
+
+### AA.3.e. **DISCUTIBLE `1`, MARCADO ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+**`practicar_franqueza_radical_jefe_propio`, `P13`, linea `215`.** El libro escribe
+`give up immediately or assume ill intent` y el paso lo traduce como *para inmediatamente, y **no** des
+por supuesta la mala intencion*. **La frase inglesa admite las dos lecturas** y el candidato eligio la
+que encaja con el resto del parrafo. **Lo cuento `TRANSCRIPCION` porque el paso existe en el libro y
+no lo escribi yo**, pero **la eleccion entre las dos lecturas si es mia**, y por eso va marcada aqui
+antes de que nadie me diga si acerte.
+
+**TAREA 3 CERRADA, Y CERRADA ANTES DE LA PRIMERA INSERCION.**
