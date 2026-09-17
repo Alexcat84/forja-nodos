@@ -15,7 +15,7 @@ EL SALDO
 LA LISTA COMPLETA, candidato por candidato
 ============================================================================
 
-[ENTRARIA] representar_actividad_caja_negra_ventanas   (representar_actividad_caja_negra_ventanas.json)
+[ENTRARIA] variar_frecuencia_inspeccion_nivel_calidad   (variar_frecuencia_inspeccion_nivel_calidad.json)
 
 NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
 entre hace falta python forja.py insertar, uno por vez, con su

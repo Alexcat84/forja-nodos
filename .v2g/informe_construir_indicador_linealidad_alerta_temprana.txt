@@ -15,7 +15,7 @@ EL SALDO
 LA LISTA COMPLETA, candidato por candidato
 ============================================================================
 
-[ENTRARIA] representar_actividad_caja_negra_ventanas   (representar_actividad_caja_negra_ventanas.json)
+[ENTRARIA] construir_indicador_linealidad_alerta_temprana   (construir_indicador_linealidad_alerta_temprana.json)
 
 NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
 entre hace falta python forja.py insertar, uno por vez, con su

@@ -1,3 +1,29 @@
 [23:25:21] ADUANA EN SECO: elegir_indicador_salida_trabajo_administrativo
 [23:35:31] elegir_indicador_salida_trabajo_administrativo codigo=0 610s
 [23:35:31] ADUANA EN SECO: representar_actividad_caja_negra_ventanas
+[23:45:52] representar_actividad_caja_negra_ventanas codigo=0 621s
+[23:45:52] ADUANA EN SECO: construir_indicador_linealidad_alerta_temprana
+[23:54:34] construir_indicador_linealidad_alerta_temprana codigo=1 522s
+[23:54:34] ADUANA EN SECO: construir_indicador_tendencia_patron
+[00:01:47] construir_indicador_tendencia_patron codigo=0 433s
+[00:01:47] ADUANA EN SECO: construir_grafico_escalonado_pronosticos
+[00:11:34] construir_grafico_escalonado_pronosticos codigo=0 587s
+[00:11:34] ADUANA EN SECO: archivar_indicadores_resolver_problemas
+[00:18:08] archivar_indicadores_resolver_problemas codigo=0 394s
+[00:18:08] ADUANA EN SECO: elegir_fabricar_pedido_pronostico
+[00:29:09] elegir_fabricar_pedido_pronostico codigo=0 661s
+[00:29:09] ADUANA EN SECO: casar_flujo_fabricacion_flujo_ventas
+[00:42:12] casar_flujo_fabricacion_flujo_ventas codigo=0 783s
+[00:42:12] ADUANA EN SECO: dimensionar_plantilla_administrativa_pronostico
+[00:50:52] dimensionar_plantilla_administrativa_pronostico codigo=0 520s
+[00:50:52] ADUANA EN SECO: decidir_aceptar_rechazar_material_defectuoso
+[01:01:45] decidir_aceptar_rechazar_material_defectuoso codigo=0 653s
+[01:01:45] ADUANA EN SECO: elegir_inspeccion_barrera_monitorizacion
+[01:15:01] elegir_inspeccion_barrera_monitorizacion codigo=0 796s
+[01:15:01] ADUANA EN SECO: variar_frecuencia_inspeccion_nivel_calidad
+[01:24:22] variar_frecuencia_inspeccion_nivel_calidad codigo=0 561s
+[01:24:22] ADUANA EN SECO: simplificar_trabajo_reducir_numero_pasos
+[01:32:57] simplificar_trabajo_reducir_numero_pasos codigo=0 515s
+[01:32:57] ADUANA EN SECO: construir_indicador_linealidad_alerta_temprana
+[01:44:29] construir_indicador_linealidad_alerta_temprana codigo=0 692s
+[01:44:30] COLA VACIA

@@ -15,7 +15,7 @@ EL SALDO
 LA LISTA COMPLETA, candidato por candidato
 ============================================================================
 
-[ENTRARIA] representar_actividad_caja_negra_ventanas   (representar_actividad_caja_negra_ventanas.json)
+[ENTRARIA] decidir_aceptar_rechazar_material_defectuoso   (decidir_aceptar_rechazar_material_defectuoso.json)
 
 NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
 entre hace falta python forja.py insertar, uno por vez, con su

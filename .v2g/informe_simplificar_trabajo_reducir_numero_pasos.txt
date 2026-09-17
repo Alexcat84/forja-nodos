@@ -15,7 +15,7 @@ EL SALDO
 LA LISTA COMPLETA, candidato por candidato
 ============================================================================
 
-[ENTRARIA] representar_actividad_caja_negra_ventanas   (representar_actividad_caja_negra_ventanas.json)
+[ENTRARIA] simplificar_trabajo_reducir_numero_pasos   (simplificar_trabajo_reducir_numero_pasos.json)
 
 NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
 entre hace falta python forja.py insertar, uno por vez, con su

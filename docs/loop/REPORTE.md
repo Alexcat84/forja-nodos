@@ -36510,7 +36510,7 @@ esta pendiente. `EXTRACTOR.md` 7 manda escribirlo y **no arreglarlo yo**. Lo esc
 | # | tarea | estado |
 |---:|---|---|
 | 1 | la frontera de `cap_03`, cerrada contra el cuerpo, con el techo por delante | **CERRADA** en `AA.1`: `5828` contra `5828`, cero lineas sin cubrir, cero solapes, `15` nodos en el techo justo |
-| 2 | minar `cap_03` un candidato por vez, con la aduana EN SECO en el mismo acto | **ABIERTA** |
+| 2 | minar `cap_03` un candidato por vez, con la aduana EN SECO en el mismo acto | **CERRADA** en `AA.2`: `15` escritos y `15` por la aduana en el acto, `9` ENTRARIAN, `6` BLOQUEARIAN, `0` CAERIAN, `9` pares juzgados y `0` insertados |
 | 3 | la fidelidad `D.30` paso a paso, `PASOS INVENTADOS` fila por unidad mas total | **CERRADA** en `AA.3`: `121` pasos releidos, `0` puentes, `0,00` por ciento, y los `2` que retire en el acto con nombre |
 | 4 | las aristas que levante mi lectura y no levanto ninguna senal | **CERRADA** en `AA.4`: `6` declaradas con el paso de la madre pegado, `3` consideradas y rechazadas con su motivo, `0` cableadas |
 | 5 | el informe del lote ENTERO de `cuarentena/grove_high_output` y su saldo pegado | **ABIERTA** |
@@ -36779,3 +36779,186 @@ ventana en ningun sitio.** Las dos que declaro llevan la palabra escrita y la te
 toda la diferencia.
 
 **`TAREA 4` CERRADA.**
+
+## AA.2. **TAREA 2**: MINAR `cap_03` UN CANDIDATO POR VEZ, CON LA ADUANA EN SECO EN EL MISMO ACTO
+
+**QUINCE CANDIDATOS ESCRITOS, QUINCE PASADOS POR LA ADUANA UNO A UNO, CERO INSERTADOS.**
+`EXTRACTOR.md` 16: un candidato no esta escrito hasta que ha pasado la aduana, y el informe va **en
+el mismo acto**, no al final del lote. **Ni un `python forja.py insertar` en toda la vuelta**, que es
+lo que `D.45` manda a este frente y lo que el fundador repitio al relanzarme.
+
+### AA.2.a. EL SALDO, CANDIDATO A CANDIDATO, LEIDO DE MIS PROPIOS INFORMES
+
+<!-- TALLADO: script=.v2g/saldo_candidatos.py salida=.v2g/saldo_candidatos.txt -->
+
+| # | candidato | pieza de cap_03 | puerta | poblacion que midio SU informe | vecinos | la cola, nombrada |
+|---:|---|---|---|---|---:|---|
+| 1 | `elegir_cinco_indicadores_diarios_fabrica` | `P2` | **ENTRARIA** | 358 (270 del grafo mas 88 en bandejas) | 0 | cola vacia |
+| 2 | `emparejar_indicadores_efecto_contraefecto` | `P3` | **BLOQUEARIA** | 358 (270 del grafo mas 88 en bandejas) | 1 | `revisar_tres_preguntas_valor_carrera` por `similitud_texto`, similitud 0,354, familia 0,000, paso contra nodo 0,386 |
+| 3 | `elegir_indicador_salida_trabajo_administrativo` | `P4 mas P5` | **BLOQUEARIA** | 363 (270 del grafo mas 93 en bandejas) | 2 | `evaluar_directivo_resultados_fortaleza` por `paso_contra_nodo`, similitud 0,184, familia 0,000, paso contra nodo 0,766; `emparejar_indicadores_efecto_contraefecto` por `similitud_texto`, similitud 0,355, familia 0,125, paso contra nodo 0,489 |
+| 4 | `representar_actividad_caja_negra_ventanas` | `P7` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 5 | `construir_indicador_linealidad_alerta_temprana` | `P9` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 6 | `construir_indicador_tendencia_patron` | `P10` | **BLOQUEARIA** | 371 (270 del grafo mas 101 en bandejas) | 3 | `construir_grafico_escalonado_pronosticos` por `similitud_texto`, similitud 0,350, familia 0,143, paso contra nodo 0,461; `archivar_indicadores_resolver_problemas` por `similitud_texto`, similitud 0,391, familia 0,143, paso contra nodo 0,427; `equilibrar_capacidad_personal_inventario_plazo` por `similitud_texto`, similitud 0,352, familia 0,000, paso contra nodo 0,422 |
+| 7 | `construir_grafico_escalonado_pronosticos` | `P11` | **BLOQUEARIA** | 371 (270 del grafo mas 101 en bandejas) | 3 | `construir_indicador_tendencia_patron` por `similitud_texto`, similitud 0,354, familia 0,143, paso contra nodo 0,453; `elegir_fabricar_pedido_pronostico` por `similitud_texto`, similitud 0,354, familia 0,143, paso contra nodo 0,453; `emparejar_indicadores_efecto_contraefecto` por `similitud_texto`, similitud 0,363, familia 0,000, paso contra nodo 0,434 |
+| 8 | `archivar_indicadores_resolver_problemas` | `P12` | **BLOQUEARIA** | 371 (270 del grafo mas 101 en bandejas) | 2 | `construir_indicador_tendencia_patron` por `similitud_texto`, similitud 0,384, familia 0,143, paso contra nodo 0,420; `revisar_tres_preguntas_valor_carrera` por `similitud_texto`, similitud 0,369, familia 0,000, paso contra nodo 0,414 |
+| 9 | `elegir_fabricar_pedido_pronostico` | `P13` | **BLOQUEARIA** | 371 (270 del grafo mas 101 en bandejas) | 1 | `construir_grafico_escalonado_pronosticos` por `similitud_texto`, similitud 0,352, familia 0,143, paso contra nodo 0,440 |
+| 10 | `casar_flujo_fabricacion_flujo_ventas` | `P14` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 11 | `dimensionar_plantilla_administrativa_pronostico` | `P15` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 12 | `decidir_aceptar_rechazar_material_defectuoso` | `P17` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 13 | `elegir_inspeccion_barrera_monitorizacion` | `P18` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 14 | `variar_frecuencia_inspeccion_nivel_calidad` | `P19` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 15 | `simplificar_trabajo_reducir_numero_pasos` | `P23` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| | **15 candidatos** | | **9 ENTRARIAN, 6 BLOQUEARIAN, 0 CAERIAN** | | **12** | |
+
+<!-- TALLADO: parcial salida=.v2g/saldo_candidatos.txt -->
+
+      EL SALDO, RECONTADO DE LAS FILAS DE ARRIBA
+        candidatos escritos y pasados por la aduana en el acto : 15
+        ENTRARIAN                                             : 9
+        BLOQUEARIAN (cola de lectura, no rechazo)             : 6
+        CAERIAN                                               : 0
+        vecinos levantados en total                           : 12
+        INSERTADOS                                            : 0   (D.45, y la orden del fundador)
+      LA POBLACION NO ES UNA SOLA Y POR ESO VA POR FILA: el primer informe midio 358 y el
+      ultimo 371, porque la bandeja crece segun se escriben los candidatos.
+      ficheros en la bandeja del libro al cerrar esta tabla   : 23
+
+**LA POBLACION NO ES UNA SOLA Y POR ESO VA POR FILA**, que es el remedio bloqueante aplicado donde
+mas facil seria saltarselo: el primer informe midio **`358`** y los ultimos **`371`**, porque **la
+bandeja crece segun se van escribiendo los candidatos** y cada informe barre contra la que habia
+cuando arranco. Publicar *una* poblacion de la tanda habria sido una cifra cierta con rotulo falso.
+
+### AA.2.b. **LO QUE ME COSTO LA ADUANA, MEDIDO, PORQUE ES LA CIFRA QUE `D.43` USA**
+
+<!-- TALLADO: parcial salida=.v2g/cola.log -->
+
+    $ cat .v2g/cola.log   (las lineas 1, 2, 16, 28 y 29 de las 29)
+      [23:25:21] ADUANA EN SECO: elegir_indicador_salida_trabajo_administrativo
+      [23:35:31] elegir_indicador_salida_trabajo_administrativo codigo=0 610s
+      [00:42:12] casar_flujo_fabricacion_flujo_ventas codigo=0 783s
+      [01:44:29] construir_indicador_linealidad_alerta_temprana codigo=0 692s
+      [01:44:30] COLA VACIA
+
+**ENTRE `394` Y `796` SEGUNDOS POR CANDIDATO**, contra los `156,5` que `D.43` midio el 12 sep. **La
+cola de los quince tardo casi dos horas y veinte minutos**, de las `23:25` a la `1:44`. No es una
+queja: es la cifra que sostiene por que `D.43` saco el informe de lote del turno del extractor, y
+esta vuelta la vuelve a medir con su propia poblacion, que ya es de `371`.
+
+### AA.2.c. **LA ADUANA SE MURIO DOS VECES SIN ESCRIBIR UNA LINEA, Y LO DIGO YO ANTES QUE NADIE**
+
+**Dos corridas de `python forja.py informe` terminaron con el fichero de salida a `0` bytes**, una
+de ellas con `codigo=1` tras `522` segundos. **Las dos veces habia otro informe corriendo a la vez**;
+corridas en solitario, las dos pasaron a la primera. La segunda de ellas es la que dejo
+`construir_indicador_linealidad_alerta_temprana` sin informe, y **el pasador lo reintento solo** y
+salio `ENTRARIA` a la `1:44`.
+
+| corrida | cuando | con que compania | resultado |
+|---|---|---|---|
+| `elegir_cinco_indicadores_diarios_fabrica` | `23:11` | otro informe en marcha | **`0` bytes**, y a la segunda `ENTRARIA` |
+| `construir_indicador_linealidad_alerta_temprana` | `23:45` a `23:54` | el informe del lote entero en marcha | **`0` bytes, `codigo=1`**, y al reintento `ENTRARIA` |
+| el informe del LOTE, primer intento | `23:36` a `23:54` | la cola de candidatos en marcha | **`0` bytes** |
+
+**NO LO ARREGLO, Y DIGO POR QUE:** `D.45` prohibe tocar `src/` durante el paralelo, y `EXTRACTOR.md`
+13 pone moratoria de maquinaria. **Lo que hago es lo unico que me toca: no correr dos a la vez, y
+declararlo.** Queda como observacion medida para quien pueda decidir, no como propuesta de cambio.
+
+### AA.2.d. LA MITAD BARATA DEL DICTAMEN, CORRIDA ANTES QUE LA CARA
+
+Antes de gastar dos horas de barrido corri las **mismas** funciones de `src/aduana.py` que deciden
+`CAERIA` (`normalizar_candidato` y `validar_candidato`), que son las baratas, sobre los `23` ficheros
+de la bandeja. **Ninguno caia y ninguno chocaba**, asi que la cola larga solo podia decidir entre
+`ENTRARIA` y `BLOQUEARIA`, y ningun candidato iba a necesitar correccion de puerta a mitad de camino.
+
+<!-- TALLADO: parcial salida=.v2g/guardas_candidatos.txt -->
+
+      POBLACION DE ESTA COMPROBACION: los 23 ficheros de cuarentena/grove_high_output/,
+      que son los 8 de la vuelta 1 mas los 15 de la vuelta 2. NO es el grafo.
+      CAERIAN O CHOCAN: 0
+
+**NO ES UN INSTRUMENTO NUEVO Y NO SUSTITUYE A NADA:** llama a las funciones de la aduana y a nada
+mas, y **los quince informes se corrieron igual, uno por uno**, mas el del lote entero.
+
+### AA.2.e. LOS NUEVE PARES QUE LA ADUANA LEVANTO, CON MI VEREDICTO Y SU RAZON
+
+**`12` vecindades levantadas, `9` pares distintos** (tres aparecen por las dos puntas). **Ninguno de
+estos veredictos se escribe hoy en `bitacora/VEREDICTOS.jsonl`**: esa sede la escribe la aduana con
+`insertar`, y este frente no inserta.
+
+<!-- TALLADO: script=.v2g/veredictos.py salida=.v2g/veredictos_pares.txt -->
+
+| # | candidato | vecino | senal que lo levanta | las tres senales, pegadas | el paso contra el paso | veredicto | la razon, leida |
+|---:|---|---|---|---|---|---|---|
+| 1 | `emparejar_indicadores_efecto_contraefecto` | `revisar_tres_preguntas_valor_carrera` | `similitud_texto` | similitud `0,354`, familia `0,000`, paso contra nodo `0,386` | paso `2` del candidato contra paso `2` del vecino | **SANO** | AJENOS. Lei los siete pasos del vecino: son las tres preguntas con las que te examinas a ti mismo en la carrera, de `cap_01`, y no tocan ni un indicador. Lo unico que comparten con mi nodo es EL ARMAZON CON EL QUE YO ESCRIBO el `resumen_teorico`. Medido: quitando el resumen, la senal 1 de este par cae de `0,354` a `0,225`, o sea por debajo del umbral |
+| 2 | `elegir_indicador_salida_trabajo_administrativo` | `evaluar_directivo_resultados_fortaleza` | `paso_contra_nodo` | similitud `0,184`, familia `0,000`, paso contra nodo `0,766` | paso `2` del candidato contra paso `1` del vecino | **SANO** | EL UNICO PAR DE MI TANDA CON UNA COINCIDENCIA DE VERDAD, y el unico levantado por la senal 3 (`0,766`, la mas alta de las 12). Mi paso 2 dice medir al vendedor por los pedidos que consigue y no por las visitas que hace; el paso 1 del vecino dice lo mismo con las mismas piezas. NO son gemelos: el vecino es de `zhuo_manager` y su procedimiento es juzgar a un directivo por resultados y fortaleza del equipo, con nueve pasos que no tienen nada que ver con elegir el indicador de una unidad administrativa. Lo que comparten es UNA MAXIMA, no un procedimiento. Y ese par es la prueba al reves de lo que digo en las otras filas: aqui, quitando el resumen, la senal 1 SUBE de `0,184` a `0,267`, porque la coincidencia esta en los PASOS y mi armazon la estaba diluyendo |
+| 3 | `elegir_indicador_salida_trabajo_administrativo` | `emparejar_indicadores_efecto_contraefecto` | `similitud_texto` | similitud `0,355`, familia `0,125`, paso contra nodo `0,489` | paso `3` del candidato contra paso `4` del vecino | **CONTINUA** | ESTE ES EL PAR QUE ME HACE CORREGIR LO QUE YA HABIA PUBLICADO EN `AA.4`, y la correccion va declarada y sin borrar nada (`P.17`). Alli lo rechace como hermanos. La aduana me mando releer, y releyendo encontre la linea que no habia pesado: `L35` abre la seccion administrativa diciendo `Nowhere can indicators-and paired indicators-be of more help than in administrative work`, o sea que **usa `paired indicators` como concepto YA INTRODUCIDO**, que es el de `L31`. Mi paso 5 nombra emparejar en una linea y el vecino lo despliega en siete pasos. Es `D.29` con su linea, y la arista se anade en `AA.5.c`. Que la pareja concreta sea de calidad aqui y de contraefecto alli es diferencia del EJEMPLO, no del procedimiento que el paso nombra |
+| 4 | `construir_indicador_tendencia_patron` | `construir_grafico_escalonado_pronosticos` | `similitud_texto` | similitud `0,350`, familia `0,143`, paso contra nodo `0,461` | paso `5` del candidato contra paso `4` del vecino | **SANO** | HERMANOS QUE EL LIBRO CONTRASTA EL MISMO, y por eso cae mi propia marca previa. En la ficha del grafico escalonado yo habia escrito que si la aduana los levantaba mi veredicto seria `CONTINUA`. La aduana los levanto y la relectura dice `SANO`: `L91` los pone uno frente a otro con todas las letras, `which can help you anticipate future trends better than if you used a simple trend chart`. Mejor QUE, no parte DE. `EXTRACTOR.md` 15.6: un vecino que no es una de las partes de la cabeza es un hermano, y su veredicto es `SANO`. **CAIDA DENTRO DE MI PROPIO MARCADO** |
+| 5 | `construir_indicador_tendencia_patron` | `archivar_indicadores_resolver_problemas` | `similitud_texto` | similitud `0,391`, familia `0,143`, paso contra nodo `0,427` | paso `2` del candidato contra paso `1` del vecino | **SANO** | AJENOS DE OBJETO Y DE DISPARADOR. El de tendencia se monta para mirar hacia delante y se lee de continuo; el del archivo se usa el dia que algo se rompe. Ni un paso del uno aparece en el otro. Quitando el resumen, la senal 1 cae de `0,384` a `0,289` |
+| 6 | `construir_indicador_tendencia_patron` | `equilibrar_capacidad_personal_inventario_plazo` | `similitud_texto` | similitud `0,352`, familia `0,000`, paso contra nodo `0,422` | paso `1` del candidato contra paso `4` del vecino | **SANO** | AJENOS, y este es el par mas instructivo contra mi manera de escribir: el vecino es de `cap_02` y trata de intercambiar equipo, personal e inventario contra el plazo. Lo que la senal esta viendo es que sus pasos empiezan por `Considera` y `apunta su coste` y los mios por `Pon` y `Mide`, mas el armazon del resumen. Quitando el resumen cae de `0,352` a `0,232` |
+| 7 | `construir_grafico_escalonado_pronosticos` | `elegir_fabricar_pedido_pronostico` | `similitud_texto` | similitud `0,354`, familia `0,143`, paso contra nodo `0,453` | paso `7` del candidato contra paso `4` del vecino | **SANO** | AJENOS EN PROCEDIMIENTO, y comparten la palabra `pronostico` porque el capitulo entero habla de pronosticar: uno elige COMO se controla la salida de una fabrica y el otro monta UN GRAFICO. **Pero releer este par me encontro una arista que yo no habia visto**, y no es con este vecino sino con otro: `L121` dice `It is a good idea to use stagger charts in both the manufacturing and sales forecasts. As noted...`, y ese `As noted` remite a `L91`. La arista va en `AA.5.c` y el veredicto de ESTE par sigue siendo `SANO` |
+| 8 | `construir_grafico_escalonado_pronosticos` | `emparejar_indicadores_efecto_contraefecto` | `similitud_texto` | similitud `0,363`, familia `0,000`, paso contra nodo `0,434` | paso `1` del candidato contra paso `3` del vecino | **SANO** | AJENOS. Montar un grafico escalonado de pronosticos y emparejar un indicador con su contraefecto no comparten ni objeto ni disparador ni entregable. Es la senal 1 leyendo mi armazon: quitando el resumen cae de `0,363` a `0,291` |
+| 9 | `archivar_indicadores_resolver_problemas` | `revisar_tres_preguntas_valor_carrera` | `similitud_texto` | similitud `0,369`, familia `0,000`, paso contra nodo `0,414` | paso `2` del candidato contra paso `1` del vecino | **SANO** | AJENOS, Y ES LA CAIDA MAS GRANDE DE LAS NUEVE. Guardar el historico de los indicadores de una operacion no tiene nada que ver con las tres preguntas con las que te examinas la carrera. Quitando el resumen, la senal 1 cae de `0,369` a `0,179`, **medio punto de umbral de distancia**, que es la medida mas limpia de que aqui no habia nada que leer |
+
+<!-- TALLADO: parcial salida=.v2g/veredictos_pares.txt -->
+
+      PARES LEVANTADOS POR LA ADUANA, contando los dos sentidos : 12
+      PARES DISTINTOS, que son los que se juzgan               : 9
+        SANO                                                   : 8
+        CONTINUA                                               : 1
+      ESCRITOS EN bitacora/VEREDICTOS.jsonl HOY                : 0   (D.45: este frente no inserta)
+
+### AA.2.f. **CUANTO DE ESA COLA LA FABRICO MI FORMULA DE REDACCION, MEDIDO**
+
+**`EXTRACTOR.md` 2 manda leer a los vecinos antes de escribir el veredicto.** Leyendolos aparecio lo
+mismo nueve veces: pares sin nada en comun salvo **el armazon con el que yo escribo el
+`resumen_teorico`**. La senal 1 mira `titulo` mas `resumen_teorico` mas `pasos`
+(`src/comun.py`, `texto_comparable`), y en mis fichas **el resumen es con diferencia la pieza mas
+larga** y repite en los quince las mismas seis rubricas.
+
+**ASI QUE LO MEDI, con la propia funcion de la aduana, sobre los pares que la aduana ya levanto:**
+
+<!-- TALLADO: script=.v2g/formula_cola.py salida=.v2g/formula_cola.txt -->
+
+| par que la aduana levanto | senal 1 **como la mide la aduana** | senal 1 **sin el `resumen_teorico`** | caida |
+|---|---:|---:|---:|
+| `archivar_indicadores_resolver_problemas` con `construir_indicador_tendencia_patron` | 0,384 | 0,289 | **-0,095** |
+| `archivar_indicadores_resolver_problemas` con `revisar_tres_preguntas_valor_carrera` | 0,369 | 0,179 | **-0,190** |
+| `construir_grafico_escalonado_pronosticos` con `construir_indicador_tendencia_patron` | 0,354 | 0,236 | **-0,117** |
+| `construir_grafico_escalonado_pronosticos` con `elegir_fabricar_pedido_pronostico` | 0,354 | 0,255 | **-0,099** |
+| `construir_grafico_escalonado_pronosticos` con `emparejar_indicadores_efecto_contraefecto` | 0,363 | 0,291 | **-0,072** |
+| `construir_indicador_tendencia_patron` con `equilibrar_capacidad_personal_inventario_plazo` | 0,352 | 0,232 | **-0,120** |
+| `elegir_indicador_salida_trabajo_administrativo` con `evaluar_directivo_resultados_fortaleza` | 0,184 | 0,267 | **+0,083** |
+| `elegir_indicador_salida_trabajo_administrativo` con `emparejar_indicadores_efecto_contraefecto` | 0,355 | 0,227 | **-0,128** |
+| `emparejar_indicadores_efecto_contraefecto` con `revisar_tres_preguntas_valor_carrera` | 0,354 | 0,225 | **-0,129** |
+
+<!-- TALLADO: parcial salida=.v2g/formula_cola.txt -->
+
+      PARES DISTINTOS MEDIDOS                         : 9
+      UMBRAL DE LA SENAL 1, QUE NO TOCO NI PROPONGO MOVER: 0,35
+      PARES QUE BAJAN AL QUITAR EL RESUMEN            : 8 de 9
+      PARES QUE DEJARIAN DE LEVANTARSE                : 8 de 9
+      ESTO NO ES UNA PROPUESTA DE UMBRAL NI DE CAMBIO DE FICHA. Es la medida que me
+      hacia falta para escribir la razon de cada veredicto, y se publica entera.
+
+> **OCHO DE LOS NUEVE PARES DEJARIAN DE LEVANTARSE SI LA SENAL NO MIRARA MI `resumen_teorico`.** Y
+> el noveno, el unico que la senal 1 **no** levanto, hace lo contrario: **sube** de `0,184` a
+> `0,267` al quitar el resumen, porque ahi la coincidencia esta de verdad **en los pasos** y mi
+> armazon la estaba **diluyendo**.
+
+**LO QUE ESTO ES Y LO QUE NO ES.** Es la medida que me hacia falta para escribir nueve razones en
+vez de nueve corazonadas. **No es una propuesta de mover el umbral**, que es de Alexis y del auditor
+(`EXTRACTOR.md` 11: *ninguna vuelta mueve un umbral*), **ni una propuesta de cambiar la ficha**, que
+seria doctrina. **Lo registro porque responde con cifras a una pregunta que ya estaba abierta**: la
+cuarta propuesta de la vuelta 32, *medir si la formula de redaccion fabrica cola*
+(`PARA_ALEXIS.md` 4). **La respuesta de mi tanda es que si, y cuanto: `8` de `9`.**
+
+### AA.2.g. **Y EL CAPITULO MONOTEMATICO, QUE `EXTRACTOR.md` 12 YA TENIA ESCRITO**
+
+Seis de mis quince candidatos bloquean, y **cinco de los nueve pares son candidatos mios contra
+candidatos mios**. `EXTRACTOR.md` 12 lo dice sin que haga falta anadir nada: *cuando un capitulo
+entero cae en la misma familia, eso no es una senal de duplicado, es una senal de que el libro trata
+un tema; se extraen igual, uno a uno, y se espera que la cola de lectura sea larga.* `cap_03` es un
+capitulo entero sobre indicadores. **Lo que NO se hace es subir un umbral para que la cola se
+acorte**, y no lo propongo.
+
+**`TAREA 2` CERRADA: `15` escritos, `15` por la aduana en el acto, `9` ENTRARIAN, `6` BLOQUEARIAN,
+`0` CAERIAN, `0` CHOCAN, `0` insertados.**
