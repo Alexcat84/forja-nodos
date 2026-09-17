@@ -1,788 +1,771 @@
-# APERTURA CIEGA DE LA VUELTA 33, lote 4 (`scott_radical_candor`), insercion de `cap_08`
+# APERTURA CIEGA DE LA VUELTA 34, lote 4 (`scott_radical_candor`), tramo de `cap_09`
 
-*Escrita antes de que el arnes me exponga `docs/loop/REPORTE.md`. Los cuatro ficheros que
-`D.34.2` retira (`REPORTE.md`, `loop.log`, `ultimo_extractor.json`, `ultimo_auditor.json`)
-**no estan en el arbol y no los he recuperado de git ni por ninguna otra via**. Si he abierto
-`docs/loop/ACTA_AUDITOR.md`, que es obra mia y no del extractor y que `D.40` manda leer.*
-
-    ACTA ANTERIOR LEIDA: 6e911728e6b1151e6e4d32d4d60fd84a09e75572
-    HEREDADO 1: CUMPLIDO
-    HEREDADO 2: CUMPLIDO
-    HEREDADO 3: CUMPLIDO
-    HEREDADO 4: CUMPLIDO
-
-**LAS CUATRO SON `CUMPLIDO`, ASI QUE NINGUNA NECESITA EL MOTIVO NI LA SALIDA PEGADA QUE `D.40`
-EXIGE A UN `NO APLICA`.** Cada una lleva igualmente debajo, en `0.1`, el comando que la sostiene.
+*Escrita ANTES de ver `docs/loop/REPORTE.md`, que el arnes retiro del arbol junto con
+`loop.log`, `ultimo_extractor.json`, `ultimo_auditor.json` y, desde `D.52`, tambien
+`CREDITO_serial.jsonl`. **No he recuperado ninguno de ellos de `git` ni por ninguna otra
+via.*** Lo que si he abierto, y `AUDITOR_FORJA.md` 1.5 lo autoriza por su nombre, es
+`docs/loop/ACTA_AUDITOR.md`, que es obra mia.
 
 ---
 
-## 0.1. LOS CUATRO HEREDADOS, CON LA PRUEBA DEBAJO Y NO SOLO LA PALABRA
+## 0. LA LINEA DE LECTURA (`D.40`)
 
-### **HEREDADO 1: CUMPLIDO.** Toda cifra de esta pagina dice, en su encabezado, la poblacion y el estado del arbol que el instrumento midio
+**ACTA ANTERIOR LEIDA: 3b176db2f9bbb25f92a76a0cfff0a365c30d5822**
 
-**Es el remedio que me escribi yo por el encabezado de la `ACTA 31` `1.2`**, que nombraba un
-hash cuyo clon limpio daba otra cosa. Aqui el encabezado de cada tabla nombra **el arbol
-`1ae327e` SUCIO**, con los cuatro ficheros del arnes fuera, y **la poblacion exacta** de la
-corrida de debajo, y las dos las mide un instrumento y no yo:
+**HEREDADOS: `0`.** No hay `HEREDADO 1` que declarar porque el instrumento de la casa
+entrega **cero**, y esa cuenta no la pongo yo:
 
-    $ python .v33a/poblacion.py
-    POBLACION MEDIDA HOY. arbol: 1ae327e  ficheros con cambio sin commitear: 7
+    $ python forja.py herencia
+      acta anterior : ACTA 32. VUELTA 33, lote 4 (`scott_radical_candor`), **`cap_08` CERRADO
+                      EN INSERCION, `12` de `12`**: ...
+      su huella     : 3b176db2f9bbb25f92a76a0cfff0a365c30d5822
+      heredados     : 0
 
-      dataset/nodos.jsonl            :  282 nodos
-      bitacora/VEREDICTOS.jsonl      :  410 lineas
-      config/pares_mutuos.jsonl      :    1 lineas
+      El acta anterior no dejo ninguna tarea bloqueante ni ningun remedio escrito. Aun asi
+      tienes que declarar la linea de lectura.
 
-      cuarentena/ensayo_referencia_163        bandeja 163   _insertados   0
-      cuarentena/marquet_turn_the_ship        bandeja   3   _insertados   0
-      cuarentena/onu_consumidor               bandeja   0   _insertados   6
-      cuarentena/scott_radical_candor         bandeja  63   _insertados  79
-      cuarentena/smart_who                    bandeja   0   _insertados  59
-      cuarentena/zhuo_manager                 bandeja   0   _insertados 136
-      TOTAL de cuarentena/                    bandeja 229   _insertados 280
+**LA HUELLA QUE DECLARO ES LA QUE EL PROMPT ME ENTREGA Y LA QUE EL INSTRUMENTO IMPRIME, Y
+SON LA MISMA.** Y he leido la `ACTA 32` en el arbol, no de memoria: su cabecera, su
+seccion `6` (mi caida propia de aquella tanda) y su seccion `9`, que es donde mi antecesor
+dejo escrito que **no dejaba remedio ninguno**.
 
-**LOS `7` FICHEROS SIN COMMITEAR SON LOS DEL PROPIO ARNES**, y los pego porque forman parte del
-estado del arbol que todas estas cifras midieron:
+> **LO QUE ESTO NO ES:** no es que la vuelta anterior no me encargase nada **a mi**. Es que
+> el acta no escribio ninguna fila de `REMEDIO`, y por eso `forja.py herencia` entrega `0`.
+> **Lo que si heredo, y no por la via de `D.40`, es una racha propia en `1 de 3`** (`ACTA 32`
+> `9.1`, fila `AUDITOR`). Eso pesa sobre la seccion `8` de este documento.
 
-    $ git status --porcelain
+---
+
+## 1. HUECO DE ACTA (`AUDITOR_FORJA.md` 1.0): **MEDIDO, Y NO LO HAY**
+
+    $ grep -n "^# ACTA " docs/loop/ACTA_AUDITOR.md | tail -1
+      28473:# ACTA 32. VUELTA 33, lote 4 (scott_radical_candor), cap_08 CERRADO EN INSERCION,
+             12 de 12 ...
+
+    $ git log --oneline -8
+      3dbc901 V.34 CIERRE: cap_09 entra 15 de 15 del tramo, las tres tareas cerradas, ...
+      1a356dd V.34 TAREA 2 (3 de 3): cierra el tramo de cap_09 con 15 de 15 insertados, 282 a 297
+      2cce7b5 V.34 TAREA 2 (2 de N): entran cuatro mas de cap_09, ...
+      e484b6e V.34 TAREA 2 (1 de N): entran los siete primeros de cap_09 por el orden del libro
+      0fc22c9 V.34 TAREA 3: la relectura de fidelidad de los 15 de cap_09 corrida ANTES de insertar
+      1054e06 V.34 TAREA 1: el nodo que declaraba tres capitulos sin minar, corregido por D.13 ...
+      b698aef Apertura de la vuelta 34: el esqueleto del reporte abierto antes de la primera tarea
+      6315b30 Apertura de la vuelta 34: el registro del arnes de la vuelta previa entra antes de
+              tocar nada
+
+**La `ACTA 32` cubre la vuelta 33 y la que audito es la 34, que es la inmediatamente
+siguiente. CERO vueltas sin acta.**
+
+---
+
+## 2. LAS GUARDAS DE LA CASA, CORRIDAS POR MI EN ESTA FASE
+
+*`D.46`: una cifra vale en el instante en que se sella. Estas son de ahora.*
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 297
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python forja.py resolutor
+    nodos vivos: 297
+    nodos deprecados (archivo): 0
+    alias registrados: 0
+
+    $ python forja.py rancios | head -3      (los 48 hallazgos, enteros, en .v34aud/rancios_completo.txt)
+    BLOQUE DE VIGENCIA: 48 hallazgo(s) sobre 409 veredicto(s) y 0 cita(s).
+      RANCIO 40, SIN HUELLA 8
+      lineas declaradas NO CONSUMADAS y por eso no medidas: 14
+
+**`gate`, `guiones` y `resolutor` en VERDE sobre `297` nodos.** El bloque de vigencia
+(`rancios`) da `48` hallazgos sobre `409` veredictos medidos, y **`D.15` dice literalmente
+que la vigencia NO pone nada en rojo**: se cita aqui como estado, no como caida. Los `409`
+mas los `14` declarados NO CONSUMADOS son las `423` lineas del fichero, y esa suma la
+comprueba la tabla de la seccion 3.
+
+### 2.1. **LAS PRUEBAS DE ACEPTACION DAN `3` FALLOS, Y NO LOS PUBLICO COMO CAIDA DE LA VUELTA**
+
+    $ python tests/test_aceptacion.py   (cola)
+      D.52, dataset es el catalogo y el cerrojo vive fuera: 7 pruebas mas
+      D.52, la cita del credito es referencia y no resultado: 10 pruebas mas
+      D.52, la cola de doctrina vive en el tablero: 5 pruebas mas
+
+      total: 274 pruebas, 3 fallos, 0 errores
+    ========================================================================
+
+    $ grep -n 'FAIL:' .v34aud/aceptacion_full.txt
+    433:FAIL: test_caso_positivo_un_frente_recien_nacido_hereda_cero (__main__.PruebaHerenciaPorLinea.test_caso_positivo_un_frente_recien_nacido_hereda_cero)
+    460:FAIL: test_el_aviso_nombra_la_linea_y_su_registro (__main__.PruebaHerenciaPorLinea.test_el_aviso_nombra_la_linea_y_su_registro)
+    469:FAIL: test_la_linea_serial_del_repo_tiene_su_registro_escrito (__main__.PruebaHerenciaPorLinea.test_la_linea_serial_del_repo_tiene_su_registro_escrito)
+
+**LA MEDIDA ES ESA: `274` pruebas, `3` fallos, `0` errores.** Y ahora la conclusion, aparte
+y marcada, porque `D.38.3` ensanchada manda separarlas:
+
+> **`LECTURA`: LOS TRES FALLOS SON DE LA FASE, NO DE LA VUELTA.** Los tres viven en
+> `PruebaHerenciaPorLinea` y los tres se resuelven por `src/credito.lineas_con_registro()`
+> y `src/credito.nacida()`, que leen `docs/loop/CREDITO_*.jsonl`. **El arnes retira ese
+> fichero durante mi fase ciega (`D.52`)**, y con el fuera la serial se comporta como una
+> linea recien nacida, que es justo lo que las tres pruebas comprueban que NO pase.
+
+    $ git ls-tree --name-only HEAD docs/loop/ | grep CREDITO
+    docs/loop/CREDITO_serial.jsonl
+
+    $ git status --short docs/loop/
      D docs/loop/APERTURA_CIEGA.md
+     D docs/loop/CREDITO_serial.jsonl
      D docs/loop/REPORTE.md
      D docs/loop/loop.log
      M docs/loop/ultimo_apertura.json
      D docs/loop/ultimo_auditor.json
      D docs/loop/ultimo_extractor.json
-    ?? .v33a/
 
-### **HEREDADO 2: CUMPLIDO.** Todo recuento con el que contrasto una tabla ajena lo genero del dato
+    $ python -c "from src import credito; print(credito.lineas_con_registro()); print(credito.nacida(credito.LINEA_SERIAL))"
+    lineas_con_registro(): []
+    nacida(serial): False
 
-El ejemplar es `5.1`: el `resumen_teorico` de un nodo dice que tres capitulos no estan minados,
-y **no lo compruebo leyendo ese resumen ni ninguna tabla: abro `dataset/nodos.jsonl` y cuento**.
+    $ ls docs/loop/CREDITO_serial.jsonl
+    ls: cannot access 'docs/loop/CREDITO_serial.jsonl': No such file or directory
 
-    $ python .v33a/capitulos.py
-    NODOS DE scott_radical_candor EN EL GRAFO, por capitulo del fichero fuente
-      (el capitulo se saca del patron cap_NN.md dentro del resumen_teorico; dataset de 282 nodos)
-
-      fichero      en fuentes/     nodos    pasos
-      cap_00.md    SI                  0        0
-      cap_01.md    SI                  1        9
-      cap_02.md    SI                  0        0
-      cap_03.md    SI                  1       10
-      cap_04.md    SI                  5       41
-      cap_05.md    SI                  8       76
-      cap_06.md    SI                 10      117
-      cap_07.md    SI                 25      225
-      cap_08.md    SI                 12      102
-      cap_09.md    SI                  0        0
-      cap_10.md    SI                  0        0
-      cap_11.md    SI                 16      187
-      cap_12.md    SI                  0        0
-      cap_13.md    SI                  0        0
-      cap_14.md    SI                  0        0
-
-      nodos de scott en el grafo: 79   sin capitulo legible en su resumen: 1
-
-**LA FILA DE `cap_11` ES LA CIFRA QUE MI PROPIA `ACTA 31` `4.1` CORRIGIO**, `187` pasos en `16`
-nodos, **y la vuelvo a generar del dato en vez de copiarla de mi acta**, que es justo lo que este
-remedio pide.
-
-### **HEREDADO 3: CUMPLIDO.** Mis clases estan escritas a fichero ANTES de la primera corrida que imprime una razon, y lo mido
-
-    $ cat .v33a/hora_clases.txt
-    FICHERO DE CLASES ESCRITO: .v33a/mis_clases.txt
-    HORA DEL FICHERO (mtime): 2026-09-17 08:17:27
-    bytes: 5809
-    SEGUNDO BLOQUE ANEXADO. hora del fichero: 2026-09-17 08:22:57   bytes: 10827
-
-    $ python .v33a/destapar.py 5 | head -1
-    == DESTAPADA LA RAZON 5 DE 14, a las 2026-09-17 08:23:12 ==
-
-**`08:22:57` es anterior a `08:23:12`, y las dos horas las estampa la maquina y no yo.** Entre
-una y otra no hay ninguna corrida que imprima una razon: los dos instrumentos que leen la
-bitacora antes de esa hora (`.v33a/bitacora.py` y `.v33a/pares.py`) **imprimen el par, el
-veredicto y la senial, y de la razon solo su longitud en caracteres**, que es exactamente lo que
-`AUDITOR_FORJA.md` `1.2` deja mirar antes de adjudicar.
-
-### **HEREDADO 4: CUMPLIDO.** Ningun instrumento mio lleva una lista de ids tecleada, y su primera linea lo dice
-
-    $ head -2 .v33a/tanda.py
-    # PRIMERA LINEA (HEREDADO 4): CERO IDS TECLEADOS. La tanda sale de git diff entre
-    # ef3e7f9 (commit anterior a la apertura de la vuelta 33) y HEAD, sobre el dato.
-
-Los doce ids de la tanda salen de un `git diff` del dataset; los capitulos, de un patron buscado
-dentro del propio dato; los rotulos del capitulo, del fichero fuente por forma; los vecinos, del
-campo `vecino` de la bitacora. **Lo unico tecleado en toda la fase son dos cosas, y las dos son
-el SUJETO del instrumento y no una celda de su mapeo:** el nombre del fichero fuente
-`fuentes/scott_radical_candor/cap_08.md`, y la huella `ef3e7f9`, que es el punto de corte que el
-propio prompt define como *antes de la vuelta 33*.
+**EL FICHERO ESTA EN `HEAD` Y NO ESTA EN EL ARBOL: lo quito el arnes, no la vuelta. NO LO
+RECUPERO**, y por eso **no firmo la suite ni en verde ni en rojo en esta fase**: la vuelvo
+a correr en mi turno normal con el registro devuelto, y esa sera la cifra que publique. Lo
+digo aqui para que nadie lea ese `274 / 3` como un resultado de la vuelta 34.
 
 ---
 
-## 1. EL ARBOL QUE MIDO, Y EL PUNTO DE CORTE
+## 3. MI RECUENTO DEL DATO, ANTES Y DESPUES, HECHO SOBRE EL FICHERO
 
-| | **medido hoy, arbol `1ae327e` sucio con los `7` del arnes** |
-|---|---|
-| `HEAD` | `1ae327e30a96dff65c7edc9b3a3c35a1b4d1f261` |
-| **antes de la vuelta 33** | `ef3e7f9d498fe8afee4decd57981d853e2a4458b`, el commit anterior a `9b36072`, que es la apertura del arnes |
-| rama | `extraccion-mundo-11` |
+*Base `b698aef`, que es el ultimo commit antes de la primera tarea. Las dos columnas son
+recuentos mios, no lecturas de ninguna tabla ajena.*
 
-    $ git rev-parse 9b36072^
-    ef3e7f9d498fe8afee4decd57981d853e2a4458b
+*Salida de `python .v34aud/tabla_cifras.py`, guardada en `.v34aud/tabla_cifras.txt`.*
 
-**HUECO DE ACTA (`AUDITOR_FORJA.md` 1.0): NO HAY.** Mi ultima acta es la `ACTA 31` y cubre la
-**vuelta 32**; la vuelta que voy a auditar es la **33**, la inmediatamente siguiente. **No tengo
-ninguna vuelta sin acta que recoger.**
+| pieza | **yo, sobre `b698aef`** | **yo, sobre el arbol de hoy** |
+|---|---:|---:|
+| nodos en `dataset/nodos.jsonl` | **282** | **297** |
+| pasos del grafo entero | **2283** | **2464** |
+| lineas en `bitacora/VEREDICTOS.jsonl` | **410** | **423** |
+| veredictos con `consumada == False` | **14** | **14** |
+| aristas por `nodos_siguientes` | **107** | **108** |
+| aristas por `nodos_previos` | **107** | **108** |
+| candidatos en bandeja, lote 4 | **63** | **48** |
+| archivados en `_insertados`, lote 4 | **79** | **94** |
+| candidatos en bandeja, lote 5 | **3** | **3** |
+| nodos que citan `cap_09.md` | **0** | **15** |
+| pasos de los nodos de `cap_09` | **0** | **181** |
+| lote 4 insertado sobre `142`, por ciento | **55.63** | **66.20** |
 
----
+    $ python .v34aud/cifras.py
+      TANDA DE LA VUELTA AUDITADA, del dato: 15 ficheros
+      pasos de la tanda: 181
+      ids NUEVOS en el grafo: 15
+      ids QUE DESAPARECEN del grafo: 0 []
+      nodos PREEXISTENTES que cambiaron: 1
+        ~ construir_confianza_equipo_tiempo_solas
+            campo nodos_siguientes
+            campo resumen_teorico
 
-## 2. LA TANDA, SACADA DEL DATO Y NO DE UNA LISTA
+**LA TANDA LA SACA `git diff --name-only b698aef HEAD -- cuarentena/_insertados/`, NO UNA
+LISTA QUE YO TECLEE.** `2283` mas `181` da los `2464` pasos, entran `15` nodos, `13` lineas
+de bitacora y `1` arista por los dos extremos; **cero nodos desaparecidos** y **un solo
+nodo preexistente tocado**, que es el de la `TAREA 1`.
 
-**Encabezado (`HEREDADO 1`): `dataset/nodos.jsonl` entre `ef3e7f9` y `1ae327e`, de `270` a `282`
-nodos.**
+### 3.1. LAS SEDES DE DATO, Y QUIEN LAS TOCO
 
-    $ python .v33a/tanda.py
-    NODOS QUE ENTRAN AL GRAFO EN LA VUELTA 33 (dataset/nodos.jsonl, ef3e7f9 -> HEAD)
-      antes: 270 nodos   ahora: 282 nodos   ENTRAN: 12   salen: 0
-       1  integrar_trabajo_vida_mejor_version
-       2  definir_receta_propia_mantenerse_centrado
-       3  agendar_cuidados_propios_cumplirlos
-       4  ceder_autoridad_unilateral_equipo
-       5  dominar_arte_socializar_trabajo
-       6  evitar_presion_social_actos_equipo
-       7  construir_confianza_equipo_tiempo_solas
-       8  vivir_valores_propios_evitar_listarlos
-       9  demostrar_apertura_visiones_distintas
-      10  manejar_contacto_fisico_regla_platino
-      11  reconocer_emociones_propias_avisar_equipo
-      12  dominar_reacciones_emociones_ajenas
+    $ git ls-files procesos/
+    (vacio = nada versionado)
 
-    FICHEROS DE cuarentena/ QUE SE MUEVEN EN LA VUELTA 33: 12 lineas de git diff --name-status
+    $ grep -n procesos .gitignore
+    32:# Commiteado, un checkout entrega un cerrojo de un proceso que ya no existe y la
+    34:*.cerrojo
+    39:procesos/
 
-**Encabezado (`HEREDADO 1`): los mismos `12` ids leidos de `dataset/nodos.jsonl` con `282` nodos,
-arbol `1ae327e`.**
+    $ git log --oneline --name-only b698aef..HEAD -- dataset/ procesos/ bitacora/ censos/ | head -40
+    3dbc901 V.34 CIERRE: cap_09 entra 15 de 15 del tramo, las tres tareas cerradas, y una PARADA en el cierre de D.41 que no es de mi sede
+    bitacora/VEREDICTOS.jsonl
+    dataset/nodos.jsonl
+    1a356dd V.34 TAREA 2 (3 de 3): cierra el tramo de cap_09 con 15 de 15 insertados, 282 a 297 nodos
+    bitacora/VEREDICTOS.jsonl
+    censos/atribuciones.md
+    censos/denominaciones.md
+    dataset/nodos.jsonl
+    2cce7b5 V.34 TAREA 2 (2 de N): entran cuatro mas de cap_09, con el par que la senial 3 levanta a 0,867 leido y juzgado SANO
+    bitacora/VEREDICTOS.jsonl
+    censos/denominaciones.md
+    dataset/nodos.jsonl
+    e484b6e V.34 TAREA 2 (1 de N): entran los siete primeros de cap_09 por el orden del libro, con tres veredictos SANO razonados
+    bitacora/VEREDICTOS.jsonl
+    censos/denominaciones.md
+    dataset/nodos.jsonl
+    1054e06 V.34 TAREA 1: el nodo que declaraba tres capitulos sin minar, corregido por D.13 contra la medicion del dia, y la especie barrida entera en los 282 nodos
+    bitacora/VEREDICTOS.jsonl
+    dataset/nodos.jsonl
 
-    $ python .v33a/procedencia.py
-      id                                           pasos  fuente                   localizador
-      integrar_trabajo_vida_mejor_version              5  scott_radical_candor     (sin localizador)
-      definir_receta_propia_mantenerse_centrado        9  scott_radical_candor     (sin localizador)
-      agendar_cuidados_propios_cumplirlos              5  scott_radical_candor     (sin localizador)
-      ceder_autoridad_unilateral_equipo               15  scott_radical_candor     (sin localizador)
-      dominar_arte_socializar_trabajo                  9  scott_radical_candor     (sin localizador)
-      evitar_presion_social_actos_equipo               6  scott_radical_candor     (sin localizador)
-      construir_confianza_equipo_tiempo_solas          7  scott_radical_candor     (sin localizador)
-      vivir_valores_propios_evitar_listarlos           9  scott_radical_candor     (sin localizador)
-      demostrar_apertura_visiones_distintas           10  scott_radical_candor     (sin localizador)
-      manejar_contacto_fisico_regla_platino            9  scott_radical_candor     (sin localizador)
-      reconocer_emociones_propias_avisar_equipo        7  scott_radical_candor     (sin localizador)
-      dominar_reacciones_emociones_ajenas             11  scott_radical_candor     (sin localizador)
-
-      TOTAL de pasos_accionables en los 12 nodos que entran: 102
-
-> **`LECTURA`, marcada aparte de la cifra (`D.38.3` ensanchada, 16 sep 2026):** el campo
-> `fuentes` de un nodo **no guarda el capitulo**, solo la clave del libro. El capitulo hay que
-> sacarlo del `resumen_teorico`, que es prosa. **Lo digo porque es lo que obligo a mi instrumento
-> a casar por patron en vez de por campo**, y porque una casa que publica `PASOS INVENTADOS POR
-> CAPITULO` en cada acta no tiene el capitulo en ningun campo del esquema.
-
----
-
-## 3. EL CAPITULO, LEIDO ENTERO ANTES QUE LOS NODOS
-
-`fuentes/scott_radical_candor/cap_08.md`, `189` lineas, cuyo frontmatter declara **`unidad: Cap.
-5`, `titulo_textual: Relationships`, `fidelidad: verbatim`**. Lo he leido entero.
-
-**Encabezado (`HEREDADO 1`): rotulos sacados por forma del fichero de `189` lineas; los nodos que
-los cubren, de `dataset/nodos.jsonl` con `282` nodos, arbol `1ae327e`.**
-
-    $ python .v33a/rotulos.py
-      linea rotulo                                               cuerpo nodo del grafo que lo cubre
-      L9    An approach to establishing trust with your direct r 5      --- NINGUNO ---
-      L15   STAY CENTERED                                        9      --- NINGUNO ---
-      L25   Work-life integration                                3      integrar_trabajo_vida_mejor_version
-      L29   Figure out your recipe to stay centered and stick    7      definir_receta_propia_mantenerse_centrado
-      L37   Calendar                                             3      agendar_cuidados_propios_cumplirlos
-      L41   Show up for yourself                                 3      agendar_cuidados_propios_cumplirlos
-      L45   FREE AT WORK                                         21     ceder_autoridad_unilateral_equipo
-      L67   MASTER THE ART OF SOCIALIZING AT WORK                9      dominar_arte_socializar_trabajo
-      L77   Even non-mandatory events can feel mandatory         5      evitar_presion_social_actos_equipo
-      L83   Booze                                                5      --- NINGUNO ---
-      L89   RESPECT BOUNDARIES                                   3      --- NINGUNO ---
-      L93   Building trust                                       3      construir_confianza_equipo_tiempo_solas
-      L97   Sharing values                                       7      vivir_valores_propios_evitar_listarlos
-      L105  Demonstrating openness                               17     demostrar_apertura_visiones_distintas
-      L123  Physical space                                       9      manejar_contacto_fisico_regla_platino
-      L133  Were you weirded out that a strange man hugged and   17     manejar_contacto_fisico_regla_platino
-      L151  Recognizing your own emotions                        9      reconocer_emociones_propias_avisar_equipo
-      L161  Master your reactions to others emotions             27     dominar_reacciones_emociones_ajenas
-      L189  GUIDANCE                                             0      --- NINGUNO ---
-
-      rotulos cubiertos por un nodo: 14   sin nodo: 5
-      nodos distintos de cap_08 en el grafo: 12
-
-> **`LECTURA`, marcada aparte de la cifra:** de los `19` que el instrumento saca por forma,
-> **tres NO son piezas del capitulo, y los descarto yo leyendo y no la maquina**: `L9` es el
-> subtitulo del capitulo, `L133` es una linea de dialogo dentro del tramo de `Physical space`, y
-> `L189` es el titulo del capitulo SIGUIENTE. **Quedan `16` rotulos de rango de pieza**, de los
-> cuales **`13` tienen nodo** y **`12` nodos los cubren**, porque `L37` y `L41` caen en el mismo.
-> **Y quedan TRES rotulos de pieza SIN nodo: `L15` `STAY CENTERED`, `L83` `Booze` y `L89`
-> `RESPECT BOUNDARIES`.** Los tres los clasifico yo en `5.3`.
+> **`LECTURA`, y va marcada:** **el cerrojo de `D.44` ya NO vive dentro de `dataset/`**
+> (`D.52`), `procesos/` esta ignorado y `git ls-files dataset/` devuelve **un solo
+> fichero**. El ejemplar de `DATO MOVIDO` que la `ACTA 32` cargo en su `5.1` **no se ha
+> repetido en esta vuelta**, y lo digo con el listado delante y no de memoria. Lo que
+> **queda por mirar en mi turno normal** es el commit de CIERRE `3dbc901`, que toca las dos
+> sedes de dato: **un cierre que mueve `dataset/` merece que yo lea su diff**, y lo leo alli.
 
 ---
 
-## 4. MI CLASE PARA CADA UNO DE LOS DOCE, ESCRITA A CIEGAS
+## 4. EL MATERIAL, LEIDO POR MI: **`cap_09` ES `Cap. 6, Guidance`, Y SE REPARTE EN `20` PIEZAS**
 
-**El fichero es `.v33a/mis_clases.txt`, con su hora publicada en `0.1`, y va pegado aqui sin
-tocarlo.**
+    $ for f in fuentes/scott_radical_candor/cap_*.md; do sed -n '2,6p' $f | grep -E "^(unidad|titulo_textual):"; done
+      cap_08.md   unidad: Cap. 5   titulo_textual: Relationships
+      cap_09.md   unidad: Cap. 6   titulo_textual: Guidance
+      cap_10.md   unidad: Cap. 7   titulo_textual: Team
+      cap_11.md   unidad: Cap. 8   titulo_textual: Results
 
-    $ sed -n '13,26p' .v33a/mis_clases.txt
-     1 integrar_trabajo_vida_mejor_version          MI CLASE: SANO
-     2 definir_receta_propia_mantenerse_centrado    MI CLASE: SANO
-     3 agendar_cuidados_propios_cumplirlos          MI CLASE: SANO
-     4 ceder_autoridad_unilateral_equipo            MI CLASE: SANO
-     5 dominar_arte_socializar_trabajo              MI CLASE: SANO
-     6 evitar_presion_social_actos_equipo           MI CLASE: SANO, con arista D.29 a su madre, la 5
-     7 construir_confianza_equipo_tiempo_solas      MI CLASE: SANO, con arista de lectura a cap_11
-     8 vivir_valores_propios_evitar_listarlos       MI CLASE: SANO
-     9 demostrar_apertura_visiones_distintas        MI CLASE: SANO
-    10 manejar_contacto_fisico_regla_platino        MI CLASE: SANO, con atribucion
-    11 reconocer_emociones_propias_avisar_equipo    MI CLASE: SANO
-    12 dominar_reacciones_emociones_ajenas          MI CLASE: SANO
+*Salida de `python .v34aud/cobertura.py`, guardada en `.v34aud/cobertura.txt`.*
 
-**LO QUE LO SOSTIENE, Y NO ES UNA SENIAL (`D.19`):** `cap_08` es un capitulo de rotulos, y cada
-uno de los doce sale de un rotulo distinto del fichero, con **una sola fusion**, el `3`, que
-junta `L37` `Calendar` con `L41` `Show up for yourself`. **Ninguno REPITE a otro de los once ni a
-nada que yo reconozca del grafo: lo que comparten es el libro, no el procedimiento.**
+| linea | rotulo del libro | quien lo tiene | donde |
+|---:|---|---|---|
+| L9 | Ideas for getting/giving/encouraging praise & criticism | **NADIE** | **.** |
+| L15 | SOLICITING IMPROMPTU GUIDANCE | **NADIE** | **.** |
+| L17 | Embrace the discomfort | `abrazar_incomodidad_arrancar_critica_equipo` (L17 a L53) | **GRAFO** |
+| L27 | Here are some tips/techniques I’ve seen work to get the conversation f | dentro de un nodo | . |
+| L55 | ORANGE BOX | `organizar_sistema_recoger_quejas_equipo` (L55 a L63) | **GRAFO** |
+| L57 | Make it not just safe but natural to criticize you | dentro de un nodo | . |
+| L65 | MANAGEMENT “FIX-IT” WEEKS | `correr_semana_arreglo_averias_gestion` (L65 a L71) | **GRAFO** |
+| L73 | GIVING IMPROMPTU GUIDANCE | **NADIE** | **.** |
+| L77 | Be humble | `dar_guia_humilde_tres_tecnicas` (L77 a L95) | **GRAFO** |
+| L81 | Here are some techniques I’ve found helpful to make sure I’m being hum | dentro de un nodo | . |
+| L97 | Be helpful | `dar_guia_util_cuatro_recordatorios` (L97 a L113) | **GRAFO** |
+| L115 | Give feedback immediately | `dar_guia_acto_seis_consejos` (L115 a L135) | **GRAFO** |
+| L137 | In person (if possible) | `elegir_medio_dar_guia_jerarquia_modos` (L137 a L153) | **GRAFO** |
+| L155 | Praise in public, criticize in private | `elogiar_publico_criticar_privado_sus_tres_matices` (L155 a L163) | **GRAFO** |
+| L165 | Don’t personalize | `evitar_personalizar_guia_aceptar_personal` (L165 a L177) | **GRAFO** |
+| L179 | GAUGE YOUR IMPROMPTU GUIDANCE, GET A BASELINE, TRACK YOUR IMPROVEMENTS | `medir_guia_propia_pegatinas_marco` (L179 a L203) | **GRAFO** |
+| L205 | BEING RADICALLY CANDID WITH YOUR BOSS | `practicar_franqueza_radical_jefe_propio` (L205 a L221) | **GRAFO** |
+| L223 | GENDER AND GUIDANCE | **NADIE** | **.** |
+| L227 | Why Radical Candor may be harder for men managing women | **NADIE** | **.** |
+| L249 | We must stop gender politics. | **NADIE** | **.** |
+| L251 | Why gender bias makes Radical Candor harder for women | **NADIE** | **.** |
+| L253 | Gender bias makes it difficult for women to be Radically Candid with b | **NADIE** | **.** |
+| L255 | One common bias women often fall prey to: the “Abrasive Trap.” | **NADIE** | **.** |
+| L271 | “Jessica is really talented, but I wish she’d be less abrasive. She co | **NADIE** | **.** |
+| L273 | “Steve is smart and great to work with. He needs to learn to be a litt | **NADIE** | **.** |
+| L285 | What can you do? | **NADIE** | **.** |
+| L291 | Men: don’t “pull punches” with women | `comprobar_criticas_hombre_mujeres_equipo` (L291 a L293) | **GRAFO** |
+| L295 | Women: demand criticism | `exigir_critica_jefe_reticente` (L295 a L299) | **GRAFO** |
+| L301 | Men and women: things to think about when you feel a woman is being “t | `revisar_critica_mujer_agresiva_cuatro_tacticas` (L301 a L313) | **GRAFO** |
+| L315 | Things to think about if you’re a woman who’s being told, “You’re abra | `responder_critica_abrasiva_cuatro_reglas` (L315 a L329) | **GRAFO** |
+| L331 | FORMAL PERFORMANCE REVIEWS | `entregar_evaluacion_formal_desempenio_nueve_consejos` (L331 a L361) | **BANDEJA** |
+| L363 | PREVENT BACKSTABBING | `impedir_punialadas_espalda_equipo` (L363 a L367) | **BANDEJA** |
+| L365 | You are a boss, not a diplomat. Shuttle diplomacy won’t work for you. | dentro de un nodo | . |
+| L369 | PEER GUIDANCE | `fomentar_guia_reciproca_companieros` (L369 a L381) | **BANDEJA** |
+| L383 | SPEAKING TRUTH TO “POWER” | `conducir_reuniones_salto_nivel_diez_reglas` (L383 a L413) | **BANDEJA** |
+| L415 | Skip level meeting FAQs | `resolver_dudas_frecuentes_reuniones_salto_nivel` (L415 a L425) | **BANDEJA** |
+| L427 | * * * | **NADIE** | **.** |
+| L431 | 7. | **NADIE** | **.** |
+| L433 | TEAM | **NADIE** | **.** |
 
----
+lineas del fichero          : 434
+lineas dentro de algun nodo : 318
+rotulos con nodo propio     : 20  (GRAFO 15, BANDEJA 5)
+tramos SIN nodo ninguno, con texto dentro:
+  L9 a L9
+  L11 a L11
+  L13 a L13
+  L15 a L15
+  L73 a L73
+  L75 a L75
+  L223 a L223
+  L225 a L225
+  L227 a L227
+  L229 a L229
+  L231 a L231
+  L233 a L233
+  L235 a L235
+  L237 a L237
+  L239 a L239
+  L241 a L241
+  L243 a L243
+  L245 a L245
+  L247 a L247
+  L249 a L249
+  L251 a L251
+  L253 a L253
+  L255 a L255
+  L257 a L257
+  L259 a L259
+  L261 a L261
+  L263 a L263
+  L265 a L265
+  L267 a L267
+  L269 a L269
+  L271 a L271
+  L273 a L273
+  L275 a L275
+  L277 a L277
+  L279 a L279
+  L281 a L281
+  L283 a L283
+  L285 a L285
+  L287 a L287
+  L289 a L289
+  L427 a L427
+  L429 a L429
+  L431 a L431
+  L433 a L433
 
-## 5. LA FIDELIDAD `D.30`, PASO A PASO Y CONTRA SU LINEA DEL LIBRO
+**`20` rotulos con nodo propio: `15` en el grafo y `5` en bandeja.** El corte es el rotulo
+de linea, que es el que esta casa lleva usando desde `cap_05`, y **no hay ni un rotulo con
+dos nodos ni un nodo a caballo de dos rotulos.**
 
-**Encabezado (`HEREDADO 1`): los `102` pasos de los `12` nodos de `dataset/nodos.jsonl` (`282`
-nodos, arbol `1ae327e`), leidos uno a uno contra `fuentes/scott_radical_candor/cap_08.md` (`189`
-lineas). No es una muestra: son los `102`.**
+### 4.1. **EL TRAMO CIERRA EN `L329` POR EL TECHO DE CANDIDATOS, Y LOS `5` QUE QUEDAN TIENEN NOMBRE**
 
-| # | nodo | pasos | `TRANSCRIPCION` | `PUENTE` | lineas del libro que los sostienen |
-|---:|---|---:|---:|---:|---|
-| 1 | `integrar_trabajo_vida_mejor_version` | 5 | **5** | **0** | `L27` |
-| 2 | `definir_receta_propia_mantenerse_centrado` | 9 | **9** | **0** | `L29`, `L31`, `L33`, `L35` |
-| 3 | `agendar_cuidados_propios_cumplirlos` | 5 | **5** | **0** | `L39`, `L43` |
-| 4 | `ceder_autoridad_unilateral_equipo` | 15 | **15** | **0** | `L47` a `L65`, una linea por paso |
-| 5 | `dominar_arte_socializar_trabajo` | 9 | **9** | **0** | `L69`, `L71`, `L73`, `L75` |
-| 6 | `evitar_presion_social_actos_equipo` | 6 | **6** | **0** | `L79`, `L81` |
-| 7 | `construir_confianza_equipo_tiempo_solas` | 7 | **7** | **0** | `L95`, los siete |
-| 8 | `vivir_valores_propios_evitar_listarlos` | 9 | **9** | **0** | `L99`, `L101`, `L103` |
-| 9 | `demostrar_apertura_visiones_distintas` | 10 | **10** | **0** | `L107`, `L109`, `L111`, `L115`, `L119`, `L121` |
-| 10 | `manejar_contacto_fisico_regla_platino` | 9 | **9** | **0** | `L125`, `L127`, `L131`, `L139`, `L141`, `L143`, `L145`, `L149` |
-| 11 | `reconocer_emociones_propias_avisar_equipo` | 7 | **7** | **0** | `L153`, `L155`, `L157`, `L159` |
-| 12 | `dominar_reacciones_emociones_ajenas` | 11 | **11** | **0** | `L163`, y `L167` a `L181` |
-| | **`cap_08` ENTERO** | **102** | **102** | **0** | **`0,00` por ciento de `PASOS INVENTADOS`** |
+*Salida de `python .v34aud/bandeja_restante.py`, guardada en `.v34aud/bandeja_restante.txt`.*
 
-**LAS TRES TRAMPAS DEL CAPITULO, QUE ES DONDE YO HABRIA BUSCADO UN PUENTE, Y LAS TRES AGUANTAN:**
+| # | candidato de `cap_09` que SIGUE EN BANDEJA | lineas del libro | pasos |
+|---:|---|---|---:|
+| 1 | `entregar_evaluacion_formal_desempenio_nueve_consejos` | L331 a L361 | 22 |
+| 2 | `impedir_punialadas_espalda_equipo` | L363 a L367 | 9 |
+| 3 | `fomentar_guia_reciproca_companieros` | L369 a L381 | 13 |
+| 4 | `conducir_reuniones_salto_nivel_diez_reglas` | L383 a L413 | 31 |
+| 5 | `resolver_dudas_frecuentes_reuniones_salto_nivel` | L415 a L425 | 16 |
 
-| donde | por que era trampa | que leo |
+candidatos de cap_09 en bandeja : 5
+candidatos de cap_09 insertados : 15
+total del capitulo              : 20   techo de EXTRACTOR.md 12.4: 15
+
+**`20` contra un techo de `15`** (`EXTRACTOR.md` 12.4: *si un solo capitulo pasa del techo
+de candidatos, la vuelta cierra en ese capitulo y lo declara*). **Los `15` que entran son
+exactamente los `15` primeros por el orden del libro**, de `L17` a `L329`, y **los `5` que
+quedan son exactamente los `5` ultimos**, de `L331` a `L425`. **No hay ni un salto de orden.**
+
+> **LO QUE ME TOCA COMPROBAR EN MI TURNO NORMAL** (`AUDITOR_FORJA.md` 8.1, ultimo bloque):
+> que el **REPORTE** declare el cierre corto con su cifra. *Una vuelta que cierra en un
+> capitulo y no lo dice no esta aplicando esta regla*, y eso seria caida de `REPORTE`. **El
+> asunto de un commit NO es sede** (`5.6`), asi que lo que haya leido en `git log` no vale
+> como declaracion.
+
+### 4.2. **EL UNICO TRAMO DE `cap_09` QUE NO PRODUCE NI UN CANDIDATO: `L223` a `L289`**
+
+Son treinta y cuatro parrafos bajo `GENDER AND GUIDANCE`. **Los lei enteros.** Lo que hay
+dentro:
+
+| linea | que es | procedimiento? |
 |---|---|---|
-| las **ocho horas de suenio** (`L27`, nodo `1` `P4`) | escribirlas como norma para el lector seria un puente de la especie `PERIODO` | **el libro las escribe en condicional y al lector**, *If you need to get eight hours of sleep to stay centered*, y el paso las escribe asi |
-| la **receta de la autora** (`L35`, nodo `2` `P6` y `P7`) | ocho horas, cuarenta y cinco minutos, una novela a la semana, cuatro fines de semana, dos semanas de vacaciones: cinco periodos de golpe | **los cinco van DENTRO de pasos que dicen que son SUYOS**, y el propio libro dice en `L31` y `L33` que lo de uno es basura para otro |
-| **`regularmente`** (`L95`, nodo `7` `P4` y `P5`) | el libro dice *on a regular basis* y *regular 1:1s*, y **no dice cada cuanto** | **el paso tampoco lo dice.** El unico periodo escrito es el `P7`, y lo lleva porque el libro escribe *annual* |
+| `L225` a `L247` | el diagnostico de por que a los hombres les cuesta, con el caso de la ecuacion cuadratica y dos anecdotas nominales | **no**: es diagnostico |
+| `L249` | *We must stop gender politics.* | **no**: es postura, y la vara dice que **una advertencia es linea, no nodo** |
+| `L253` a `L281` | la trampa de lo abrasivo, el estudio de Kieran Snyder y la simulacion de promociones | **no**: es evidencia |
+| `L283` | *We must stop this madness, too.* | **no**: postura otra vez |
+| `L285` a `L289` | *What can you do?* y su entradilla | **no**: es el anuncio de los cuatro rotulos que SI se extraen (`L291`, `L295`, `L301`, `L315`) |
 
-**LA UNICA CIFRA DE AUTOR DEL CAPITULO ESTA PUESTA DONDE VA, Y NO EN UN PASO:**
+> **`LECTURA`, marcada aparte: dejarlo fuera es lo que yo habria hecho, y por la misma
+> razon.** Todo lo accionable de ese bloque vive en los cuatro rotulos siguientes, y uno de
+> sus avisos (*no te creas a salvo por ser mujer*, `L303`) **ya esta dentro** como paso `2`
+> de `revisar_critica_mujer_agresiva_cuatro_tacticas`. **Queda `POR ADJUDICAR` contra el
+> reporte** si lo declaro como frontera o si simplemente no lo miro.
 
-    $ python .v33a/aristas.py       (dataset de 282 nodos, arbol 1ae327e)
-      manejar_contacto_fisico_regla_platino   previos 0 []  siguientes 0 []  atribuciones 1
-        ATRIBUCION: {"autor": "Gretchen Rubin, en The Happiness Project, citada por Kim Scott",
-        "cifra": "para que el flujo de oxitocina y de serotonina ... sea lo mas eficaz posible,
-        hay que aguantar un abrazo al menos seis segundos",
-        "fecha_corte": "2019, que es la fecha de la edicion citada de Radical Candor; el libro
-        no fecha la investigacion de la que sale la cifra", "fuente": "scott_radical_candor"}
+---
 
-### 5.1. **MI DISCUTIBLE CIEGO 1, Y ES EL MAS GORDO QUE TRAIGO:** una sede duradera dice que tres capitulos no estan minados, y uno de los tres lo esta entero
+## 5. MI RELECTURA DE FIDELIDAD (`D.30`): **`181` PASOS CONTRA SU LINEA DEL LIBRO**
 
-**QUE DICE LA SEDE.** `dataset/nodos.jsonl`, nodo `construir_confianza_equipo_tiempo_solas`,
-campo `resumen_teorico`:
+*Los lei uno a uno con el parrafo delante, no por muestra. Cada nodo se imprimio con sus
+lineas de `fuentes/scott_radical_candor/cap_09.md` al lado, con `python .v34aud/leer.py`.*
 
-> *Los tres reenvios del libro no se convierten en pasos inventados: la linea 95 manda a `1:1
-> Conversations` del capitulo ocho, a `Soliciting Impromptu Guidance` del capitulo seis y al
-> capitulo siete para las conversaciones de carrera.* **`Esos tres capitulos NO estan minados
-> todavia`**, *asi que los pasos 5, 6 y 7 transcriben lo que esta linea dice de cada uno y ni una
-> palabra mas.*
+*Salida de `python .v34aud/fidelidad.py`, guardada en `.v34aud/fidelidad.txt`.*
 
-**QUE MIDO YO, DEL DATO Y NO DE ESA FRASE (`HEREDADO 2`).** `cap_08.md` declara en su frontmatter
-`unidad: Cap. 5`, asi que **el capitulo OCHO del libro es el fichero `cap_11.md`**. Y entonces:
+| # | nodo | lineas del libro | pasos | **TRANSCRIPCION (yo)** | **PUENTE (yo)** | paso |
+|---:|---|---|---:|---:|---:|---|
+| 1 | `abrazar_incomodidad_arrancar_critica_equipo` | L17 a L53 | 20 | 20 | **0** | . |
+| 2 | `organizar_sistema_recoger_quejas_equipo` | L55 a L63 | 9 | 9 | **0** | . |
+| 3 | `correr_semana_arreglo_averias_gestion` | L65 a L71 | 8 | 8 | **0** | . |
+| 4 | `dar_guia_humilde_tres_tecnicas` | L77 a L95 | 15 | 15 | **0** | . |
+| 5 | `dar_guia_util_cuatro_recordatorios` | L97 a L113 | 10 | 10 | **0** | . |
+| 6 | `dar_guia_acto_seis_consejos` | L115 a L135 | 14 | 14 | **0** | . |
+| 7 | `elegir_medio_dar_guia_jerarquia_modos` | L137 a L153 | 13 | 13 | **0** | . |
+| 8 | `elogiar_publico_criticar_privado_sus_tres_matices` | L155 a L163 | 9 | 9 | **0** | . |
+| 9 | `evitar_personalizar_guia_aceptar_personal` | L165 a L177 | 12 | 12 | **0** | . |
+| 10 | `medir_guia_propia_pegatinas_marco` | L179 a L203 | 13 | 13 | **0** | . |
+| 11 | `practicar_franqueza_radical_jefe_propio` | L205 a L221 | 17 | 16 | **1** | P13 |
+| 12 | `comprobar_criticas_hombre_mujeres_equipo` | L291 a L293 | 6 | 6 | **0** | . |
+| 13 | `exigir_critica_jefe_reticente` | L295 a L299 | 9 | 9 | **0** | . |
+| 14 | `revisar_critica_mujer_agresiva_cuatro_tacticas` | L301 a L313 | 12 | 12 | **0** | . |
+| 15 | `responder_critica_abrasiva_cuatro_reglas` | L315 a L329 | 14 | 14 | **0** | . |
+| | **cap_09, total** | **L17 a L329** | **181** | **180** | **1** | |
 
-    $ python .v33a/capitulos.py           (dataset de 282 nodos, arbol 1ae327e)
-      cap_09.md    SI                  0        0        <- capitulo SEIS del libro
-      cap_10.md    SI                  0        0        <- capitulo SIETE del libro
-      cap_11.md    SI                 16      187        <- capitulo OCHO del libro
+PASOS INVENTADOS POR CAPITULO (AUDITOR_FORJA.md 8), leido por mi:
+  cap_09 : 1 de 181 = 0.55 por ciento
+  tope de la regla 8.1: 10 por ciento
 
-    $ python .v33a/bandeja_caps.py        (cuarentena/scott_radical_candor, 63 candidatos, arbol 1ae327e)
-      cap_09.md    20 candidatos
-      cap_10.md    14 candidatos
+### 5.1. **EL UNICO PASO QUE NO ME SALE `TRANSCRIPCION`, CON LAS DOS LINEAS ENFRENTADAS**
 
-**DOS DE LOS TRES ESTAN SIN MINAR Y EL TERCERO ESTA MINADO ENTERO**, con `16` nodos y `187` pasos
-dentro del grafo. **Y quien lo prueba es la propia vuelta 33**: ese mismo nodo lleva escrita la
-arista a `montar_reuniones_solas_mentalidad_frecuencia`, que **es de `cap_11`**.
+`practicar_franqueza_radical_jefe_propio`, paso `13`. **El libro, linea `215`:**
 
-    $ cat .v33a/madre_1a1.txt
-    ID: montar_reuniones_solas_mentalidad_frecuencia   pasos: 22
-    previos: ['decidir_quien_comunica_cada_cuanto', 'construir_confianza_equipo_tiempo_solas']
-    RESUMEN: UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results.
+    If they react well and reward the candor, keep going. If they don't, give up
+    immediately or assume ill intent. Try again, carefully, but if you get the same
+    reaction the next time, it may be time to move on. You deserve a better boss.
 
-> **`LECTURA`, marcada aparte de la cifra:** **la frase es falsa para uno de sus tres, y la vuelta
-> que la escribio lo sabia**, porque en la misma tanda cablo la arista a ese capitulo. **NO LE
-> PONGO ESPECIE AQUI, Y DIGO POR QUE:** `5.2` da el dataset como sede de `CLASE`, y aqui **ningun
-> veredicto esta mal puesto**; la fila `DATO MOVIDO` del 16 sep cubre *una operacion que cambia
-> `dataset/` sin que ningun veredicto este mal puesto*, y **mi propia `ACTA 31` `7.2` ya cargo
-> ahi una falsedad tecleada a mano dentro de `dataset/` y de `bitacora/`**. **Esa es la lectura
-> que traigo. La adjudico en el turno normal, con el reporte delante, y no aqui**, porque
-> adjudicar no es medir (`AUDITOR_FORJA.md` 2).
+**El paso que entro en el grafo:**
 
-### 5.2. **MI DISCUTIBLE CIEGO 2:** `las cuatro conversaciones` donde yo cuento tres
+    13. Si reacciona bien y premia la franqueza, sigue. Si no, para inmediatamente, y no
+        des por supuesta la mala intencion: vuelve a intentarlo con cuidado, y si la
+        segunda vez la reaccion es la misma, puede que sea momento de irse.
 
-El `nombre_largo` de `construir_confianza_equipo_tiempo_solas` dice **`las cuatro conversaciones
-con las que el libro dice que se empieza`**. Leyendo `L95`, yo cuento **TRES conversaciones con
-nombre**: las reuniones a solas periodicas, pedir critica, y las conversaciones anuales de
-carrera. La cuarta solo sale si se cuenta *spend a little time alone*, que no es una conversacion
-con nombre sino la practica general de la que cuelgan las otras. **El libro NO escribe la cifra
-cuatro en ningun sitio de esa linea.**
+**LO QUE NO CUADRA, DICHO EN UNA LINEA: el libro escribe `or assume ill intent` y el paso
+escribe `y NO des por supuesta la mala intencion`.** La negacion no esta en `L215`.
 
-**ES LA SEGUNDA VUELTA SEGUIDA CON LA MISMA FIGURA, Y POR ESO LA TRAIGO:** mi `ACTA 31`
-discutible `1` fue *las cinco cosas* del kanban, y aquella la adjudique **REGISTRADA Y NO
-CARGADA**, porque `D.30` cuenta **pasos** y esa cifra vive en el `nombre_largo`. **Me aplico mi
-propia adjudicacion: marcada y no cargada.** Lo que anoto es **la repeticion**, que es lo unico
-nuevo.
+> **`LECTURA`, marcada aparte, y con la tension dicha en vez de escondida:** **la frase del
+> libro se contradice a si misma.** *Give up immediately* y *Try again, carefully* no pueden
+> ser las dos, asi que `L215` es casi con seguridad una errata por *don't give up
+> immediately or assume ill intent*, que es la unica lectura que deja el parrafo coherente y
+> que ademas concuerda con `L211`, *assume good intent*. **El paso no elige ninguna de las
+> dos lecturas: se queda con la primera mitad literal y niega la segunda.**
+>
+> **POR ESO LO CUENTO COMO `PUENTE` Y NO COMO ERROR DE MATIZ:** `D.30` pregunta si el libro
+> lo dice, y el libro no dice *no des por supuesta la mala intencion* en `L215`. **No hace
+> falta doctrina nueva para esto**, asi que no es parada: es una discrepancia que adjudico
+> en mi turno normal con el reporte delante.
+>
+> **Y DIGO DONDE PUEDO ESTAR EQUIVOCADO YO:** si la casa lee que reconstruir una errata
+> evidente del original es transcripcion y no puente, mi cifra baja a `0` de `181` y la suya
+> es la buena. **Lo que no puede quedarse es sin mirar**, porque `8.3` dice que el error que
+> esta metrica invita a cometer es justo marcar un puente como transcripcion.
 
-### 5.3. **MI DISCUTIBLE CIEGO 3:** los tres rotulos de pieza sin nodo, clasificados por mi
+### 5.2. LAS CIFRAS QUE LOS NODOS SE PONEN EN EL TITULO, CONTADAS POR MI EN EL LIBRO
 
-| rotulo | cuerpo | **mi clase** | lo que la sostiene |
+*La `pregunta 3` de la cola de doctrina es una cifra en `nombre_largo` que el libro no
+escribe. Conte las de esta tanda contra los rotulos del fichero fuente.*
+
+| nodo | cifra que se pone | lo que cuento yo en el libro | |
 |---|---|---|---|
-| `L15` **`STAY CENTERED`** | `L17` a `L23` | **NO EXTRAIBLE, bien dejado fuera** | es postura, y remata en la pregunta que presenta a sus hijos, *What am I recommending you do about it?*. No nombra ni un acto |
-| `L89` **`RESPECT BOUNDARIES`** | `L91` | **NO EXTRAIBLE, bien dejado fuera** | la formula literal *Here are some things I have learned about walking this line* es un anuncio de hijos. Lo unico con olor a acto, *negotiate boundaries differently with each person*, no trae medio |
-| `L83` **`Booze`** | `L85` a `L87` | **NO EXTRAIBLE, y lo marco igual** | `L85` es una frase de aviso y `L87` una lista de desastres. Ni un acto que el lector pueda ejecutar |
+| `abrazar_incomodidad_arrancar_critica_equipo` | **seis** consejos | `L29`, `L37`, `L39`, `L45`, `L49`, `L53` = **6** | **cuadra** |
+| `dar_guia_humilde_tres_tecnicas` | **tres** tecnicas | `L83`, `L91`, `L95` = **3** | **cuadra** |
+| `dar_guia_util_cuatro_recordatorios` | **cuatro** recordatorios | `L103`, `L105`, `L109`, `L113` = **4** | **cuadra** |
+| `dar_guia_acto_seis_consejos` | **seis** consejos | `L123`, `L127`, `L129`, `L131`, `L133`, `L135` = **6** | **cuadra** |
+| `elogiar_publico_criticar_privado_sus_tres_matices` | **tres** matices | `L159`, `L161`, `L163` = **3** | **cuadra** |
+| `revisar_critica_mujer_agresiva_cuatro_tacticas` | **cuatro** tacticas | `L305`, `L309`, `L311`, `L313` = **4** | **cuadra** |
+| `responder_critica_abrasiva_cuatro_reglas` | **cuatro** reglas | `L317` **anuncia cuatro** y despues el libro rotula **CINCO** (`L319`, `L321`, `L323`, `L325`, `L327`) | **ver abajo** |
 
-> **`LECTURA`, marcada aparte:** **lo que marco de `Booze` no es que falte el nodo: es que la
-> cabeza publica una serie de DOS con UN solo hijo.** `L75` nombra las dos advertencias y el paso
-> `9` del nodo `5` las escribe las dos; en el grafo solo una tiene hijo cableado. **La vara dice
-> `UNA ADVERTENCIA ES LINEA`, y por eso me pare a mirarla**: aguanta, porque una advertencia es
-> linea **de su nodo**, y `L83` a `L87` no traen nada que no este ya en el paso `9` de su madre.
-> **Lo dejo escrito para que el siguiente no tenga que volver a decidirlo.**
-
-### 5.4. **MI DISCUTIBLE CIEGO 4:** el `resumen_teorico` del grafo habla del reporte de su vuelta
-
-Tres de los doce `resumen_teorico` traen, **dentro de `dataset/nodos.jsonl`**, frases del tipo
-**`VA MARCADO DISCUTIBLE EN EL REPORTE DE ESTA VUELTA`**. El dataset es sede duradera; el
-reporte, dice la tabla de `5.2`, **se reescribe cada vuelta**. Dentro de diez vueltas esa frase
-apuntara a un fichero que dice otra cosa.
-
-> **`LECTURA`, marcada aparte:** **esto le toca a mi fase antes que a nadie.** Mi apertura ciega
-> **no puede leer el dataset sin leer con el lo que el reporte dice de si mismo**, y leer el
-> reporte es exactamente lo que `D.34.2` me retira. **No lo cargo**: lo declaro como cosa de
-> forma y lo subo, porque el remedio tocaria `EXTRACTOR.md`, que esta bajo la moratoria de `D.45`.
-
-### 5.5. **LO QUE SI REPRODUCE AL DIGITO, Y LO PUBLICO PORQUE ESTABA BUSCANDO QUE NO**
-
-El `resumen_teorico` de `ceder_autoridad_unilateral_equipo` publica **`1.156 palabras de cuerpo
-de las 6.140`**. Mi primer instrumento dio `1154` y `6162`, y estuve a un paso de marcarlo. **No
-es caida: es la forma de contar, y lo mido en vez de suponerlo.**
-
-    $ python .v33a/palabras2.py       (sobre fuentes/scott_radical_candor/cap_08.md, 189 lineas)
-    cuerpo entero tras el frontmatter (L8 al final)
-        split() a secas                        6140
-        regex [A-Za-z0-9 apostrofo guion]      6162
-        regex solo letras y digitos            6393
-    tramo FREE AT WORK con su rotulo (L45 a L66)
-        split() a secas                        1156
-        regex [A-Za-z0-9 apostrofo guion]      1157
-        regex solo letras y digitos            1197
-
-**`str.split()` saca las dos EXACTAS.** La cifra es reproducible y digo con que instrumento.
-**Lo dejo escrito porque una cifra que se comprueba y aguanta vale lo mismo que una que cae**, y
-porque el remedio `2` que me escribi pide precisamente esto: generarla del dato antes de hablar.
+**EN EL ULTIMO, LA CIFRA DEL NODO ES LA DEL LIBRO, Y EL DESCUADRE ES DEL LIBRO.** Y el nodo
+**no lo esconde**: su `nombre_largo` nombra las cuatro y despues escribe *mas no descartar a
+los hombres*, que es el quinto rotulo dejado fuera de la cuenta a proposito. **Eso es lo que
+yo habria hecho.** Lo unico que dejo marcado, y es de matiz: su paso `1` dice *las cuatro
+reglas generales que el texto anuncia **y enumera***, y el texto **anuncia cuatro y enumera
+cinco**. **No es la figura de la `pregunta 3`**, porque alli la cifra no estaba en el libro
+y aqui si.
 
 ---
 
-## 6. EL BARRIDO DE VECINOS, SOBRE GRAFO MAS BANDEJAS (`D.38.4`)
+## 6. MI BARRIDO DE VECINOS (`D.38.4` y `D.38.5`): **GRAFO MAS BANDEJAS, `347`**
 
-**Encabezado (`HEREDADO 1`): `12` corridas de `forja.py informe` EN SECO, cero inserciones. La
-poblacion de cada una es `dataset/nodos.jsonl` de `282` nodos MENOS el propio candidato, mas las
-bandejas de `cuarentena/`, que las pone la aduana sola. Arbol `1ae327e`.**
+*Uno por vez, con la poblacion recortada por mi (el nodo ya vive dentro del grafo, asi que
+le quito su propia linea) y las bandejas puestas por la aduana, que es el metodo vigente.*
 
-    $ sh .v33a/barrido.sh   (12 corridas, resumidas por .v33a/resumen_barrido.py)
-      candidato                                      poblacion ENTRARIA  BLOQUEA   CAE
-      integrar_trabajo_vida_mejor_version            347       1         0         0
-      definir_receta_propia_mantenerse_centrado      347       1         0         0
-      agendar_cuidados_propios_cumplirlos            347       1         0         0
-      ceder_autoridad_unilateral_equipo              347       1         0         0
-      dominar_arte_socializar_trabajo                347       1         0         0
-      evitar_presion_social_actos_equipo             347       0         1         0
-      construir_confianza_equipo_tiempo_solas        347       0         1         0
-      vivir_valores_propios_evitar_listarlos         347       0         1         0
-      demostrar_apertura_visiones_distintas          347       1         0         0
-      manejar_contacto_fisico_regla_platino          347       1         0         0
-      reconocer_emociones_propias_avisar_equipo      347       0         1         0
-      dominar_reacciones_emociones_ajenas            347       1         0         0
+*Salida de `python .v34aud/resumen_barrido.py`, guardada en `.v34aud/resumen_barrido.txt`.*
 
-      poblacion, literal de la aduana: 347  (281 del grafo mas 66 que esperan en bandejas)
+| # | candidato | poblacion | saldo de la aduana | vecinos | cuales |
+|---:|---|---:|---|---:|---|
+| 1 | `abrazar_incomodidad_arrancar_critica_equipo` | 347 | ENTRA | 0 | . |
+| 2 | `comprobar_criticas_hombre_mujeres_equipo` | 347 | BLOQUEA | 3 | `exigir_critica_jefe_reticente`, `revisar_critica_mujer_agresiva_cuatro_tacticas`, `correr_semana_arreglo_averias_gestion` |
+| 3 | `correr_semana_arreglo_averias_gestion` | 347 | BLOQUEA | 1 | `comprobar_criticas_hombre_mujeres_equipo` |
+| 4 | `dar_guia_acto_seis_consejos` | 347 | ENTRA | 0 | . |
+| 5 | `dar_guia_humilde_tres_tecnicas` | 347 | BLOQUEA | 1 | `elogiar_publico_criticar_privado_sus_tres_matices` |
+| 6 | `dar_guia_util_cuatro_recordatorios` | 347 | ENTRA | 0 | . |
+| 7 | `elegir_medio_dar_guia_jerarquia_modos` | 347 | ENTRA | 0 | . |
+| 8 | `elogiar_publico_criticar_privado_sus_tres_matices` | 347 | BLOQUEA | 1 | `dar_guia_humilde_tres_tecnicas` |
+| 9 | `evitar_personalizar_guia_aceptar_personal` | 347 | BLOQUEA | 1 | `manejar_enfado_persona_desafiada` |
+| 10 | `exigir_critica_jefe_reticente` | 347 | BLOQUEA | 2 | `comprobar_criticas_hombre_mujeres_equipo`, `bloquear_tiempo_pensar_calendario` |
+| 11 | `medir_guia_propia_pegatinas_marco` | 347 | ENTRA | 0 | . |
+| 12 | `organizar_sistema_recoger_quejas_equipo` | 347 | BLOQUEA | 1 | `elogiar_publico_criticar_privado_sus_tres_matices` |
+| 13 | `practicar_franqueza_radical_jefe_propio` | 347 | ENTRA | 0 | . |
+| 14 | `responder_critica_abrasiva_cuatro_reglas` | 347 | ENTRA | 0 | . |
+| 15 | `revisar_critica_mujer_agresiva_cuatro_tacticas` | 347 | BLOQUEA | 1 | `comprobar_criticas_hombre_mujeres_equipo` |
+| | **total** | | | **11** | |
 
-### 6.1. **Y AQUI ES DONDE `D.38.5` COBRA: MI BARRIDO Y EL DE LA MAQUINA SALEN IGUALES, VECINO A VECINO**
+poblaciones distintas vistas: 1
+  poblacion del barrido       : 347   (296 del grafo mas 51
 
-`D.38.5` dice que desde el 12 sep la aduana mide **la misma poblacion que yo**, y que **si no
-cuadran es una discrepancia de verdad y no de metodo**. Cuadran, y lo mido en vez de afirmarlo:
+**`296` del grafo mas `51` de bandeja da `347`, la misma poblacion en las quince corridas.**
+Las bandejas son `48` de `scott_radical_candor` mas `3` de `marquet_turn_the_ship`.
 
-    $ python .v33a/vecinos_barrido.py
-      integrar_trabajo_vida_mejor_version           yo 0   la maquina de la vuelta 0   IGUALES
-      definir_receta_propia_mantenerse_centrado     yo 0   la maquina de la vuelta 0   IGUALES
-      agendar_cuidados_propios_cumplirlos           yo 0   la maquina de la vuelta 0   IGUALES
-      ceder_autoridad_unilateral_equipo             yo 0   la maquina de la vuelta 0   IGUALES
-      dominar_arte_socializar_trabajo               yo 0   la maquina de la vuelta 0   IGUALES
-      evitar_presion_social_actos_equipo            yo 3   la maquina de la vuelta 3   IGUALES
-      construir_confianza_equipo_tiempo_solas       yo 3   la maquina de la vuelta 3   IGUALES
-      vivir_valores_propios_evitar_listarlos        yo 1   la maquina de la vuelta 1   IGUALES
-      demostrar_apertura_visiones_distintas         yo 0   la maquina de la vuelta 0   IGUALES
-      manejar_contacto_fisico_regla_platino         yo 0   la maquina de la vuelta 0   IGUALES
-      reconocer_emociones_propias_avisar_equipo     yo 4   la maquina de la vuelta 4   IGUALES
-      dominar_reacciones_emociones_ajenas           yo 0   la maquina de la vuelta 0   IGUALES
-
-      TOTAL vecinos levantados: yo 11, la vuelta 11
-
-**LOS `12` DE `12` SALEN `IGUALES`, Y NO SOLO EN LA CUENTA: SALEN LOS MISMOS IDS.** Y las
-seniales tambien salen al milesimo; las dos que mas cerca pasan del umbral son las que pego,
-sacadas de mi corrida y no de su bitacora:
-
-    $ grep -A2 'BLOQUEARIA]' .v33a/barrido.txt
-    [BLOQUEARIA] construir_confianza_equipo_tiempo_solas
-        vecino decidir_quien_comunica_cada_cuanto  [levantada por: paso_contra_nodo]
-          similitud_texto 0.244 | familia_id 0.000 | paso_contra_nodo 0.619
-    [BLOQUEARIA] vivir_valores_propios_evitar_listarlos
-        vecino sostener_contacto_oferta_aceptacion  [levantada por: paso_contra_nodo]
-          similitud_texto 0.112 | familia_id 0.000 | paso_contra_nodo 0.606
-
-> **`LECTURA`, marcada aparte de la cifra:** **es la primera vez que puedo decir esto con las dos
-> cifras delante.** Mi `ACTA 14` barrio `135` titulos donde el extractor barrio `203`, y de ahi
-> salio `D.38.4`. Hoy barremos `347` los dos y **levantamos los mismos `11` vecinos**. Lo que
-> `D.38.5` prometio esta cumplido, y lo digo porque **un metodo que ya cuadra deja de ser
-> sospechoso y pasa a ser instrumento**.
-
-### 6.2. **MI DISCUTIBLE CIEGO 5, Y ES DE LOS QUE LA MAQUINA NO LEVANTA**
-
-**`agendar_cuidados_propios_cumplirlos` no levanta vecino ni en mi barrido ni en el suyo**, y aun
-asi me pare a mirarlo, porque su `P1` dice *pon en tu calendario las cosas que necesitas hacer
-para ti, igual que pondrias una reunion importante*, y `cuidarse_agotamiento_centro_rueda`, que
-lleva en el grafo desde `cap_07`, lleva su `P7` *bloquea en tu calendario tiempo de pensar todos
-los dias*.
-
-**MI CLASE PARA ESE PAR ES `SANO`, Y DIGO SOBRE QUE:** el objeto de uno es **la cita contigo
-mismo de tu receta** y el del otro es **el tiempo de pensar**; lo que queda fuera del solape es
-procedimiento en los dos lados (el desplazamiento, el tren y que otros no te la pisen de un lado;
-declinar invitaciones y el humor a tu costa del otro). **`6.1` de la vara: no hay bascula, y lo
-que decide es si lo que queda fuera es procedimiento en los dos lados.** Lo es.
-
-**LO MARCO PORQUE NINGUNA SENIAL LO LEVANTO, no porque crea que esta mal puesto**, y porque esta
-casa mide tambien el error de dejar pasar (`AUDITOR_FORJA.md` 7).
+**`11` VECINDADES LEVANTADAS.** `D.38.5` dice que desde que la aduana carga las bandejas
+**mi cifra y la del informe ya son comparables**: si no cuadran, es discrepancia de verdad y
+no de metodo. La comparo en la seccion 7, y **los once ids son los once de la bitacora.**
 
 ---
 
-## 7. LOS TRECE PARES, ADJUDICADOS POR MI ANTES DE DESTAPAR NI UNA RAZON
+## 7. MIS CLASES, ADJUDICADAS A CIEGAS ANTES DE DESTAPAR NI UNA RAZON
 
-**Encabezado (`HEREDADO 1`): las `14` lineas que `bitacora/VEREDICTOS.jsonl` gana entre `ef3e7f9`
-(`396` lineas) y `1ae327e` (`410` lineas). Trece son pares; la catorceava es una correccion
-declarada y va en `7.2`.**
+*`AUDITOR_FORJA.md` 1.2: imprimir primero los pasos de los dos nodos, adjudicar con la vara,
+**y solo despues** destapar la razon escrita. Lo hice en ese orden: mis clases se fijaron con
+`python .v34aud/mis_clases.py` delante, que es el lector que **oculta a proposito** el campo
+`veredicto` y el campo `razon`.*
 
-    $ python .v33a/bitacora.py
-    bitacora/VEREDICTOS.jsonl   antes de la vuelta 33: 396 lineas   ahora: 410   ENTRAN: 14
-      clase CONTINUA       2
-      clase CORREGIDO      1
-      clase SANO          11
-      lineas nuevas SIN razon escrita (D.8): 0 de 14
+*Salida de `python .v34aud/tabla_clases.py`, guardada en `.v34aud/tabla_clases.txt`.*
 
-**`D.8` EN VERDE: `0` de `14` sin razon escrita.** *Un `SANO` sin razon escrita es una caida
-aunque acierte*, y no hace falta releerlo para verlo: se ve en la bitacora. No hay ninguno.
+| # | candidato | vecino | senial que la levanta | **MI CLASE, a ciegas** | la de la vuelta | |
+|---:|---|---|---|---|---|---|
+| 411 | `construir_confianza_equipo_tiempo_solas` | `construir_confianza_equipo_tiempo_solas` | correccion declarada (txt ., pcn .) | **CORREGIDO** | CORREGIDO | COINCIDE |
+| 412 | `organizar_sistema_recoger_quejas_equipo` | `elogiar_publico_criticar_privado_sus_tres_matices` | similitud_texto (txt 0.357, pcn 0.470) | **SANO** | SANO | COINCIDE |
+| 413 | `correr_semana_arreglo_averias_gestion` | `comprobar_criticas_hombre_mujeres_equipo` | similitud_texto (txt 0.356, pcn 0.431) | **SANO** | SANO | COINCIDE |
+| 414 | `dar_guia_humilde_tres_tecnicas` | `elogiar_publico_criticar_privado_sus_tres_matices` | similitud_texto (txt 0.350, pcn 0.393) | **SANO** | SANO | COINCIDE |
+| 415 | `elogiar_publico_criticar_privado_sus_tres_matices` | `dar_guia_humilde_tres_tecnicas` | similitud_texto (txt 0.352, pcn 0.405) | **SANO** | SANO | COINCIDE |
+| 416 | `evitar_personalizar_guia_aceptar_personal` | `manejar_enfado_persona_desafiada` | paso_contra_nodo (txt 0.234, pcn 0.867) | **SANO** | SANO | COINCIDE |
+| 417 | `comprobar_criticas_hombre_mujeres_equipo` | `exigir_critica_jefe_reticente` | similitud_texto (txt 0.402, pcn 0.555) | **SANO** | SANO | COINCIDE |
+| 418 | `comprobar_criticas_hombre_mujeres_equipo` | `revisar_critica_mujer_agresiva_cuatro_tacticas` | similitud_texto (txt 0.382, pcn 0.436) | **SANO** | SANO | COINCIDE |
+| 419 | `comprobar_criticas_hombre_mujeres_equipo` | `correr_semana_arreglo_averias_gestion` | similitud_texto (txt 0.366, pcn 0.431) | **SANO** | SANO | COINCIDE |
+| 420 | `exigir_critica_jefe_reticente` | `comprobar_criticas_hombre_mujeres_equipo` | similitud_texto (txt 0.382, pcn 0.577) | **SANO** | SANO | COINCIDE |
+| 421 | `exigir_critica_jefe_reticente` | `bloquear_tiempo_pensar_calendario` | similitud_texto (txt 0.357, pcn 0.435) | **SANO** | SANO | COINCIDE |
+| 422 | `revisar_critica_mujer_agresiva_cuatro_tacticas` | `comprobar_criticas_hombre_mujeres_equipo` | similitud_texto (txt 0.381, pcn 0.430) | **SANO** | SANO | COINCIDE |
+| 423 | `abrazar_incomodidad_arrancar_critica_equipo` | `construir_confianza_equipo_tiempo_solas` | lectura declarada (txt 0.219, pcn 0.430) | **CONTINUA** | CONTINUA | COINCIDE |
 
-**MI TABLA, PEGADA DE `.v33a/mis_clases.txt` SIN TOCARLA, Y LA SUYA AL LADO:**
+lineas comparadas: 13   COINCIDEN: 13   DISCREPAN: 0
+lineas nuevas SIN razon escrita (D.8): 0 de 13
 
-| # | candidato | vecino | **MI CLASE, a ciegas** | la de la vuelta |
-|---:|---|---|---|---|
-| 2 | `evitar_presion_social_actos_equipo` | `contar_cuatro_historias_propias` (BANDEJA) | **SANO** | SANO |
-| 3 | `evitar_presion_social_actos_equipo` | `proteger_tiempo_equipo_jefe` | **SANO** | SANO |
-| 4 | `evitar_presion_social_actos_equipo` | `crear_obligacion_disentir_equipo` | **SANO** | SANO |
-| 5 | `evitar_presion_social_actos_equipo` | `dominar_arte_socializar_trabajo` | **CONTINUA** | CONTINUA |
-| 6 | `construir_confianza_equipo_tiempo_solas` | `decidir_quien_comunica_cada_cuanto` | **SANO** | SANO |
-| 7 | `construir_confianza_equipo_tiempo_solas` | `reconocer_emociones_propias_avisar_equipo` | **SANO** | SANO |
-| 8 | `construir_confianza_equipo_tiempo_solas` | `minimizar_impuesto_colaboracion_equipo` | **SANO** | SANO |
-| 9 | `montar_reuniones_solas_mentalidad_frecuencia` | `construir_confianza_equipo_tiempo_solas` | **CONTINUA** | CONTINUA |
-| 10 | `vivir_valores_propios_evitar_listarlos` | `sostener_contacto_oferta_aceptacion` | **SANO** | SANO |
-| 11 | `reconocer_emociones_propias_avisar_equipo` | `minimizar_impuesto_colaboracion_equipo` | **SANO** | SANO |
-| 12 | `reconocer_emociones_propias_avisar_equipo` | `centrar_debate_ideas_fuera_egos` | **SANO** | SANO |
-| 13 | `reconocer_emociones_propias_avisar_equipo` | `cuidarse_agotamiento_centro_rueda` | **SANO** | SANO |
-| 14 | `reconocer_emociones_propias_avisar_equipo` | `construir_confianza_equipo_tiempo_solas` | **SANO** | SANO |
+> **ESTA TABLA SI LA IMPRIME SU INSTRUMENTO, Y ES A PROPOSITO.** La de mi apertura anterior
+> decia venir de un fichero que no imprimia ninguna tabla, y `D.41` en estricto la puso en
+> rojo con razon. La seccion 8 lo cuenta entero.
 
-> # **`13` DE `13`. NI UNA DISCREPANCIA DE CLASE EN ESTA TANDA.**
+### 7.1. LAS TRES QUE MERECEN UNA LINEA, Y LAS DEMAS NO
 
-**MIS DOS `CONTINUA`, CON SU DIRECCION, QUE ES LO QUE LA VARA `6.1` PIDE** (que anade el HIJO a la
-MADRE, nunca al reves), y escritos antes de destapar nada:
+- **`L416`, `evitar_personalizar_guia_aceptar_personal` contra `manejar_enfado_persona_desafiada`, senial `3` a `0,867`.** Los dos pasos dicen casi lo mismo porque **el libro lo dice dos veces**: `cap_04` `L131` y `cap_09` `L175`. Fuera de esa linea le quedan al candidato once pasos de procedimiento propio (el error fundamental de atribucion de Lee Ross, *eso esta mal* y no *tu estas mal*, el concurso de egos, el caso del olor corporal) y al vecino los suyos. **La vara no tiene bascula: decide si lo que queda fuera es procedimiento en los dos lados, y lo es. SANO.**
+- **`L417` y `L420`, el mismo par por los dos extremos, `0,402` de ida y `0,382` de vuelta.** La similitud sale de que **el libro escribe los dos parrafos en paralelo a proposito**: `L293` abre *If you're a man and worried that...* y `L297` abre ***Similarly**, if you're a woman and worried that...*. Actor opuesto, direccion opuesta, entregable opuesto. **SANO los dos.**
+- **`L423`, la arista `construir_confianza_equipo_tiempo_solas > abrazar_incomodidad_arrancar_critica_equipo`.** No la levanto ninguna senial (`0,219` de texto, por debajo del umbral): la levanto una lectura. **Y la lectura esta en el libro, literal:** `cap_08` `L95` escribe *(See "Soliciting Impromptu Guidance," chapter six.)*, y `cap_09` **es** `Cap. 6`. La madre **nombra** y el hijo **despliega en veinte pasos**: **NOMBRAR NO ES PROCEDIMENTAR**, asi que la direccion es la correcta. **CONTINUA.**
 
-| par | **MADRE**, que NOMBRA | **HIJO**, que PROCEDIMENTA |
-|---|---|---|
-| `5` | `dominar_arte_socializar_trabajo`, cuyo `P9` nombra las dos advertencias de `L75` | `evitar_presion_social_actos_equipo`, que despliega la primera en seis pasos (`L79` y `L81`) |
-| `9` | `construir_confianza_equipo_tiempo_solas`, cuyo `P5` nombra las reuniones a solas periodicas de `L95` | `montar_reuniones_solas_mentalidad_frecuencia`, que las despliega en `22` pasos desde `cap_11` |
-
-**`NOMBRAR NO ES PROCEDIMENTAR` (`P.5.1`), y en los dos casos es literalmente eso: la madre las
-nombra en una linea y el hijo trae el procedimiento que la madre no tiene.**
-
-**LOS ONCE `SANO`, EN UNA LINEA Y SIN REABRIR EL ARGUMENTO (`D.47` austero):** en los once, lo
-que queda FUERA del solape es procedimiento **en los dos lados**, que es lo que `6.1` manda mirar,
-y en ninguno hay bascula que valga. Los dos que mas cerca pasan y por que aguantan:
-
-- **par `6`**, la senial mas alta de la tanda (`paso_contra_nodo 0,619`): los dos apuntan a la
-  reunion a solas, pero `decidir_quien_comunica` decide **que reuniones hay y a que coste**, y
-  `construir_confianza` **construye confianza**. Y la prueba de que la casa lo vio bien es el par
-  `9`: **la MADRE del procedimiento del `1:1` es `montar_reuniones_solas`, no este.**
-- **par `10`**, `paso_contra_nodo 0,606` entre *no montar un ejercicio de valores* y *sostener el
-  contacto entre la oferta y la aceptacion*. **Es un homonimo castellano**, *mantener el contacto*
-  en dos sentidos que no se tocan, con las otras dos seniales en el suelo (`0,112` y `0,000`), y
-  **ni siquiera son del mismo libro**. `D.19`: una senial dice donde mirar y ahi acaba su trabajo.
-
-### 7.1. **LA MUESTRA PINEADA DE LOS `SANO` (`AUDITOR_FORJA.md` 7): NO HAY MUESTRA, PORQUE LEI LA POBLACION ENTERA**
+### 7.2. LA MUESTRA PINEADA DE LOS `SANO` (`AUDITOR_FORJA.md` 7)
 
 | | |
-|---|---|
-| **`SANO` de la tanda** | **`11`**, medidos por `.v33a/bitacora.py` sobre las `14` lineas nuevas |
-| **lo que la regla pide** | el mayor entre `TRES` y el `20` por ciento de `11`, que es `2,2`. **Pide `3`**, con techo de `20` |
-| **lo que relei** | **los `11`**, uno a uno y con los pasos de los dos extremos delante |
-| **semilla** | **no hay, y no es un olvido**: una semilla elige una muestra, y aqui **no hay muestra que elegir**. `7` lo dice con todas las letras: *no se inventa una muestra donde no hay poblacion*, y la simetrica vale igual |
-| **cuantos caen** | **`0` de `11`** |
-| **tasa con su banda** | **`0` caidas sobre `11` releidos, `0,0` por ciento, banda de Wilson al `95` por ciento de `0,0` a `25,9`** |
+|---|---:|
+| `SANO` de la tanda | **11** |
+| lo que la regla pide | el mayor entre `3` y el `20` por ciento de `11`, que es **`3`** |
+| releidos por mi | **`11` de `11`**, la poblacion entera |
+| caen | **`0`** |
+| `SANO` sin razon escrita (`D.8`) | **`0`**, y la cuenta la da el instrumento de arriba |
 
-    $ python .v33a/banda.py 0
-    MUESTRA PINEADA DE LOS SANO (AUDITOR_FORJA.md 7)
-      SANO nuevos de la tanda, contados de bitacora/VEREDICTOS.jsonl: 11
-      releidos: 11 de 11 (la poblacion entera, no una muestra)
-      caen: 0
-      tasa: 0.0 por ciento
-      banda de Wilson al 95 por ciento: de 0.0 a 25.9 por ciento
+**MIENTRAS LA POBLACION QUEPA, LA RELEO ENTERA Y NO INVENTO UNA MUESTRA.**
 
-> **`LECTURA`, marcada aparte de la cifra:** **una tasa sin banda es media cifra, y con `11`
-> puestos la banda llega al `25,9` por ciento.** Lo que esta cifra dice es que **en estos once no
-> encontre ninguno mal puesto**, no que el error de dejar pasar sea cero: con esta poblacion, el
-> instrumento no puede distinguir un sistema perfecto de uno que falla uno de cada cuatro.
+### 7.3. LO QUE COMPROBE DE LA `TAREA 1`, QUE ES LA UNICA LINEA `CORREGIDO`
 
----
+*Es una correccion que entra en `dataset/`, asi que su cifra es cifra publicada. La
+recompongo del dato, no de su texto.*
 
-## 8. LAS GUARDAS, CORRIDAS POR MI EN ESTA MISMA FASE
+    nodos del dataset: 297
+    capitulo    nodos    pasos
+    cap_01          1        9
+    cap_03          1       10
+    cap_04          5       41
+    cap_05          8       76
+    cap_06         10      117
+    cap_07         25      225
+    cap_08         12      102
+    cap_09         15      181
+    cap_11         16      187
+    suma 93 nodos, 948 pasos
 
-**Encabezado (`HEREDADO 1`): arbol `1ae327e` SUCIO, con los `7` ficheros del arnes fuera y `.v33a/`
-sin seguir. `dataset/nodos.jsonl` con `282` nodos.**
+    paso 6 de construir_confianza_equipo_tiempo_solas:
+      Cuida como pides critica y como reaccionas cuando te la dan, porque eso construye confianza o la destruye.
+    paso 7:
+      Y manten conversaciones anuales de carrera, que el texto llama una manera excelente de reforzar tu relacion con cada persona que te reporta directamente.
+    nodos_siguientes: ['montar_reuniones_solas_mentalidad_frecuencia', 'abrazar_incomodidad_arrancar_critica_equipo']
 
-    $ python forja.py gate
-    GATE VERDE.
-      nodos verificados: 282
-      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada,
-      vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta,
-      guiones, censo_no_decrece
+    $ awk 'NR==95' fuentes/scott_radical_candor/cap_08.md
+      ... (See "1:1 Conversations," chapter eight.) ... (See "Soliciting Impromptu
+      Guidance," chapter six.) ... (see chapter seven).
 
-    $ python forja.py guiones
-    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
-
-    $ python tests/test_aceptacion.py
-      total: 251 pruebas, 0 fallos, 0 errores
-
-    $ python forja.py resolutor
-    nodos vivos: 282
-    nodos deprecados (archivo): 0
-    alias registrados: 0
-
-> **`LECTURA`, marcada aparte de la cifra, y es sobre mi:** **mi apertura de la `ACTA 31` publico
-> `4` pruebas en rojo, y esta publica `0`** sobre un arbol igual de sucio. La cifra de entonces la
-> cito de mi propia sede y no de una tabla ajena: `ACTA 31` `6`, *las `4` pruebas en rojo eran de
-> mi fase ciega*, adjudicado alli **CIERTO** contra un clon limpio. **No me lo apunto como
-> merito: lo apunto porque el remedio `1` que me escribi obliga a decir el estado del arbol junto
-> a la cifra, y este es justo el caso donde las dos cifras solo se entienden con el arbol al
-> lado.** `251` es la poblacion de pruebas de HOY, medida arriba, y no la comparo con ninguna
-> cifra vieja de poblacion porque no la he vuelto a generar del dato.
-
-### 8.1. **LA COLA DE VIGENCIA `D.15`, QUE NO PONE NADA EN ROJO PERO SI CUENTA**
-
-    $ python forja.py rancios
-    BLOQUE DE VIGENCIA: 40 hallazgo(s) sobre 396 veredicto(s) y 0 cita(s).
-      RANCIO 32, SIN HUELLA 8
-      lineas declaradas NO CONSUMADAS y por eso no medidas: 14
-
-    $ python forja.py rancios | grep '\[RANCIO\]' | grep -c 'recorrer_rueda_conscientemente_cultura_equipo'
-    6
-
-> **`LECTURA`, marcada aparte:** **`6` de los `32` rancios los produce la `TAREA 1` de esta misma
-> vuelta.** Corregir el `resumen_teorico` de `recorrer_rueda_conscientemente_cultura_equipo` le
-> cambio la huella, y con ella quedaron rancios los seis veredictos que lo citaban. **No es una
-> caida: `D.15` dice que un rancio es COLA DE TRABAJO y no guarda que tumbe el cierre.** Lo
-> publico porque **es el precio de la `TAREA 1`, y el precio de una tarea bloqueante se dice.**
-
-### 8.2. **EL CERROJO, QUE ES LA CAIDA QUE LA VUELTA SE DECLARO A SI MISMA**
-
-    $ git ls-files | grep -i cerrojo
-    docs/loop/paradas/2026-09-16-el-cerrojo-y-el-testigo-DECISION.md
-    src/cerrojo.py
-
-    $ grep -i cerrojo .gitignore
-    # EL CERROJO DE INSERCION NUNCA ENTRA EN GIT (D.44).
-    # Commiteado, un checkout entrega un cerrojo de un proceso que ya no existe y la
-    *.cerrojo
-
-    $ ls -a dataset/
-    .  ..  nodos.jsonl
-
-**NINGUN `.cerrojo` ESTA EN EL INDICE HOY, Y LA REGLA QUE LO IMPIDE ESTA ESCRITA.** Lo mido
-porque el registro de credito de esta linea dice que el cerrojo **entro** al indice en la vuelta
-33 y que **se reparo**. **La reparacion esta, y la compruebo del arbol y no de la linea que lo
-cuenta** (`HEREDADO 2`).
+**LAS TRES REMISIONES DE `L95` SON `Cap. 8`, `Cap. 6` Y `Cap. 7`, QUE SON LOS FICHEROS
+`cap_11.md`, `cap_09.md` Y `cap_10.md`**, y el mapa de unidades de la seccion 4 lo sostiene
+sin que yo tenga que creerme nada. **`cap_11` tiene `16` nodos y `187` pasos**, que es lo
+que mi propio recuento de hoy imprime, **asi que la frase vieja era falsa en uno de los tres
+el dia en que se escribio.** La correccion la retira en vez de sustituirla por la cifra de
+hoy, **y eso es lo correcto**: la cifra de hoy habria envejecido dentro de la misma vuelta,
+porque `cap_09` acaba de pasar de `0` a `15` en esta misma tabla.
 
 ---
 
-## 9. DOS COSAS DE LA PROPIA FASE CIEGA QUE TENGO QUE DECLARAR, PORQUE ME PASARON A MI HOY
+## 8. **LO QUE ENCUENTRO CONTRA MI, Y LO ENCUENTRO YO: MI TABLA DE LA VUELTA 33 ESTA EN ROJO POR `D.41`**
 
-### 9.1. **LA SEDE QUE `D.48` ME MANDA LEER AL ABRIR TRAE DENTRO CONCLUSIONES DEL REPORTE**
+*Va aqui, en mi propia apertura, porque `5.3` dice que los errores del auditor se declaran
+con su nombre igual que los del extractor, y porque una caida propia guardada hasta el acta
+es exactamente lo que `D.38.2` vino a cerrar.*
 
-`D.48` (17 sep 2026) manda **leer el credito al abrir**, y dice que la sede es
-`docs/loop/CREDITO_serial.jsonl`. **Y aqui va la mitad que me favorece, dicha primero para que no
-parezca que la escondo: el instrumento NO filtra nada.** `python forja.py credito` imprime una
-tabla de especie, racha y tanda, y ni una cita:
+**LA LINEA `498` DE MI APERTURA CIEGA DE LA VUELTA 33 DICE ESTO, Y LA TABLA QUE ANUNCIA
+EMPIEZA EN LA `500`, QUE ES LA QUE EL INSTRUMENTO NOMBRA:**
 
-    $ python forja.py credito
-      especie            racha      de donde sale
-      ----------------------------------------------------------------------
-      AUDITOR            0 de 3     ACTA 31
-      CIFRA PUBLICADA    0 de 2     ACTA 32
-      CLASE              1 de 2     ACTA 32
-      DATO MOVIDO        2 de 2     ACTA 32  TOPE
-      REPORTE            0 de 3     ACTA 32
+    **MI TABLA, PEGADA DE `.v33a/mis_clases.txt` SIN TOCARLA, Y LA SUYA AL LADO:**
 
-      CREDITO ROTO: DATO MOVIDO en su tope.
+**Y `.v33a/mis_clases.txt` NO IMPRIME NINGUNA TABLA.** Lo reproduzco con el instrumento de
+la casa, **sobre una copia fuera del repo** para no tocar ninguna sede:
 
-**LO QUE FILTRA ES LA SEDE, Y LA SEDE ES LO QUE `D.48` NOMBRA.** Dentro del campo `cita` de las
-cuatro lineas que la vuelta 33 escribio esta **el contenido de las secciones del reporte que
-vengo a leer a ciegas**:
+    $ python -c "tallar_reporte.revisar + texto_informe(estricto=True)" sobre una COPIA de git show 6315b30:docs/loop/APERTURA_CIEGA.md
+    ============================================================================
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    ============================================================================
+    tablas que declaran instrumento : 1
+      talladas, celda a celda       : 0
+      que DIFIEREN de su instrumento: 0
+      con la ruta VACIA             : 0   (cero bytes, 7.B)
+      sin poder comprobar           : 1
+      que CITAN y no reproducen     : 0   (declaradas PARCIAL)
 
-    $ tail -3 docs/loop/CREDITO_serial.jsonl
-    {..."cita": "REPORTE.md Z.4: dataset/nodos.jsonl.cerrojo, fichero vivo, entro al indice en mi
-     commit 504cd38 por un git add -A; declarado y reparado por la otra sesion en 1954005",
-     "especie": "DATO MOVIDO", "racha": "2 de 2", "tanda": "ACTA 32"...}
-    {..."cita": "REPORTE.md Z.3.a: 12 veredictos razonados, 11 SANO y ninguna clase que yo sepa
-     mal puesta; mis dudas van marcadas a ciegas en Z.5", "especie": "CLASE"...}
-    {..."cita": "REPORTE.md Z.8: toda tabla pegada de su fichero, tallado y censo en verde en cada
-     commit, y la fila +31 de pruebas publicada diciendo que no es mia", "especie": "CIFRA
-     PUBLICADA"...}
+    SIN COMPROBAR  ../../AppData/Local/Temp/claude/C--Users-AlexDesk-Documents-forja-nodos/111462d1-d2ac-44e9-9b8f-9e168265d865/scratchpad/APERTURA_CIEGA_v33.md linea 500
+      el instrumento no imprime ninguna tabla: esta la resume, no la reproduce
 
-> **`LECTURA`, marcada aparte, y esta es contra el arnes y no contra nadie:** **`D.34.2` retira
-> cuatro ficheros para que yo no lea el reporte, y `D.48` me manda leer una sede que lleva tres de
-> sus conclusiones copiadas dentro.** **Y me paso a mi hoy, con su hora:** abri
-> `CREDITO_serial.jsonl` al empezar, y la segunda de esas citas me dijo **`11 SANO`** antes de que
-> yo contara los mios. **Lo declaro porque el motivo de toda esta fase es que mi lectura sea
-> independiente de la suya, y hoy no lo fue del todo.**
+    TALLADO EN ROJO (estricto): 1 tabla(s) declaran instrumento y no se pueden comprobar.
+    Una tabla que dice venir de un instrumento y no puede enseñarlo no esta declarando su origen: lo esta prometiendo.
+
+    $ head -12 .v33a/mis_clases.txt
+    MIS CLASES, ESCRITAS A CIEGAS Y ANTES DE DESTAPAR NI UNA RAZON DE bitacora/VEREDICTOS.jsonl
+    (HEREDADO 3 de la ACTA 31: este fichero es anterior a la primera corrida que IMPRIMA UNA
+    RAZON. En esta fase no he corrido ninguna, y la hora de este fichero queda publicada.)
+
+    TANDA: los 12 ids que .v33a/tanda.py saca del git diff de dataset/nodos.jsonl entre
+    ef3e7f9 (commit anterior a la apertura de la vuelta 33) y HEAD. DEL DATO, no de una lista.
+    POBLACION DEL BARRIDO: dataset/nodos.jsonl de 282 nodos menos el propio candidato, mas las
+    bandejas de cuarentena/, que las pone la aduana sola (D.38.4 con el metodo de D.38.5).
+
+    PRIMER BLOQUE: LO QUE DIGO LEYENDO fuentes/scott_radical_candor/cap_08.md Y LOS 12 NODOS,
+    ANTES DE SABER QUE VECINO LEVANTA LA ADUANA.
+
+**ASI EMPIEZA EL FICHERO QUE MI TABLA DECIA PEGAR: una lista de `id` y clase, una por
+linea. Ni una barra vertical.**
+
+**LA CELDA NO ERA FALSA: LA PROCEDENCIA SI.** La `ACTA 32` seccion `2` comprobo que aquellas
+trece clases coincidian trece de trece, asi que **lo que la tabla dice es cierto**; lo que es
+falso es la frase **`PEGADA ... SIN TOCARLA`**, porque la tabla la compuse yo a mano leyendo
+el fichero. **Es la misma familia que `7.B` de la cosecha, *la ruta que promete prueba es
+cifra*: una tabla que promete un instrumento y no puede ensenarlo esta prometiendo, no
+declarando.**
+
+> **NO ME ADJUDICO LA ESPECIE EN ESTA FASE**, porque adjudicar con el reporte retirado seria
+> decidir a medias. **La adjudico en mi turno normal**, y digo ya cual es mi lectura de
+> partida: **`CIFRA PUBLICADA PROPIA`**, en sede duradera mia, con mi racha viniendo de
+> `1 de 3` (`ACTA 32` `9.1`). Si se sostiene, **queda en `2 de 3`, que es el penultimo
+> escalon, y entonces `5.5` obliga a que el remedio vaya ENCARGADO y no solo declarado.**
 >
-> **LO QUE SI PUEDO DECIR EN MI DESCARGO, Y ES MEDIBLE:** mi fichero de clases (`08:17:27`)
-> escribe los doce a mano **antes de abrir la bitacora**, y el barrido de `6.1` levanta los mismos
-> `11` vecinos por su cuenta, con la aduana y no conmigo. **La cita no me dio ninguna clase: me
-> dio una cuenta.** Aun asi, **el que la cuenta estuviera ahi es la averia**, y no la arreglo yo:
-> `D.48` y la retirada de `D.34.2` viven las dos en el arnes, que `D.45` me prohibe tocar. **Sube.**
->
-> **Y LO QUE NO ES AVERIA, PARA QUE NADIE LO ARREGLE DE MAS:** el instrumento `forja.py credito`
-> **no filtra nada**, y su tabla, pegada arriba, es la que la apertura necesita. Lo que filtra es
-> el campo `cita` del fichero. **Quien mire esto tiene que mirar la sede, no el instrumento.**
-
-### 9.2. **MI DISCUTIBLE CIEGO 6: la bitacora estampa `(D.37)` en aristas que son `D.29`, y el rotulo esta tecleado en el codigo**
-
-Las dos lineas `CONTINUA` de la bitacora llevan escrito
-`operacion: arista declarada por lectura (D.37)`. Los `resumen_teorico` de los dos nodos del par
-`5` dicen, con todas las letras, **que esa arista es `D.29` y NO `D.37`**. **No es contradiccion
-del extractor: el rotulo esta tecleado en el codigo y se estampa igual en toda arista declarada
-por lectura.**
-
-    $ grep -rn 'arista declarada por lectura' src/
-    src/arista.py:187:        "operacion": "arista declarada por lectura (D.37)",
-
-> **`LECTURA`, marcada aparte:** **quien lea la bitacora contando aristas `D.37` va a contar
-> tambien las `D.29`, y no hay campo que las separe.** **Lo marco y no lo toco**: `src/` esta bajo
-> la moratoria de `D.45` mientras el frente `grove` este vivo, y una pregunta de doctrina **se
-> declara, se para y sube al fundador**.
+> **EL REMEDIO YA ESTA PUESTO EN ESTE MISMO DOCUMENTO Y NO ESPERA AL ACTA:** las tablas de
+> instrumento de esta apertura (secciones `3`, `4`, `4.1`, `5`, `6`, `7`) **las imprime su
+> instrumento en markdown**, y este fichero se monta con `python .v34aud/armar.py`, que las
+> **lee del `.txt`** en vez de dejar que mi mano las escriba.
 
 ---
 
-## 10. LO QUE DEJO `POR ADJUDICAR` PARA MI TURNO NORMAL, CON EL REPORTE DELANTE
+## 9. LO QUE DEJO `POR ADJUDICAR` PARA MI TURNO NORMAL
 
-**Nada de esta lista lo adjudico aqui, porque adjudicar no es medir (`AUDITOR_FORJA.md` 2) y
-porque la mitad de estas preguntas son de doctrina y `D.45` manda pararlas.**
-
-| # | lo que dejo abierto | donde esta medido |
+| # | que | por que no lo cierro ahora |
 |---:|---|---|
-| 1 | la frase del `resumen_teorico` que dice que `cap_11` no esta minado cuando tiene `16` nodos y `187` pasos. **Que especie es una falsedad tecleada dentro de `dataset/` sin veredicto mal puesto** | `5.1` |
-| 2 | `las cuatro conversaciones` que yo cuento tres. **Segunda vuelta seguida con la misma figura** | `5.2` |
-| 3 | la serie de `L75` con dos advertencias y un solo hijo cableado | `5.3` |
-| 4 | el `resumen_teorico` que cita `EL REPORTE DE ESTA VUELTA` desde una sede duradera | `5.4` |
-| 5 | `agendar_cuidados_propios_cumplirlos` contra `cuidarse_agotamiento_centro_rueda`, que **ninguna senial levanta** | `6.2` |
-| 6 | el `(D.37)` tecleado en `src/arista.py` que se estampa sobre aristas `D.29` | `9.2` |
-| 7 | **`D.48` contra `D.34.2`**: el instrumento que la apertura esta obligada a correr le enseña conclusiones del reporte | `9.1` |
-| 8 | los `6` rancios que produce la `TAREA 1`, y si la cola se encarga o se declara | `8.1` |
+| **1** | **el paso `13` de `practicar_franqueza_radical_jefe_propio`**: yo leo `PUENTE`, y el `resumen_teorico` del nodo declara `17 TRANSCRIPCION, 0 PUENTE` | es una discrepancia de lectura, y quiero ver **si la marco como discutible** antes de decidir quien la paga |
+| **2** | **`L223` a `L289` sin ni un candidato** | hay que ver si el reporte lo **declara** como frontera o si simplemente no lo miro |
+| **3** | **el cierre corto de `cap_09` en `15` de `20`** | `EXTRACTOR.md` 12.4 exige que se declare **en el reporte**, y el asunto de un commit no es sede (`5.6`) |
+| **4** | **el diff de `dataset/` y `bitacora/` dentro del commit de CIERRE `3dbc901`** | un cierre que toca sedes de dato se lee entero, por el ejemplar de la `ACTA 32` `5.1` |
+| **5** | **la suite de aceptacion** | la vuelvo a correr con `CREDITO_serial.jsonl` devuelto, y esa sera la cifra que firme |
+| **6** | **mi propia tabla de la vuelta 33 en rojo por `D.41`** | seccion 8: la especie la adjudico con el reporte delante |
+| **7** | **el par `L416` como posible `D.29`** | lei la misma duda que el barrido levanta: la madre seria el nodo pequenio de otro capitulo y la jerarquia saldria al reves de como el libro ordena su material. **No la adjudico a ciegas** |
+
+**NINGUNA DE LAS SIETE ES UNA DE LAS `6` DE LA COLA DE DOCTRINA DEL TABLERO**, y ninguna me
+bloquea, asi que ninguna sube sola.
 
 ---
 
-## 11. LO QUE ESTA APERTURA AFIRMA, EN UNA TABLA, CON SU INSTRUMENTO AL LADO
+## 10. EL TABLERO, CITADO EN LA APERTURA COMO `D.49` MANDA
 
-**Encabezado (`HEREDADO 1`): todas las filas, sobre el arbol `1ae327e` sucio con los `7` del arnes,
-`dataset/nodos.jsonl` de `282` nodos, `bitacora/VEREDICTOS.jsonl` de `410` lineas, bandejas de
-`229` candidatos.**
+    $ python forja.py tablero
+    TABLERO DE FRENTES (D.49, D.50): sede unica del estado de la campania
+      registro: docs/loop/TABLERO.jsonl
 
-| lo que afirmo | cifra | **instrumento que la saco** |
-|---|---:|---|
-| nodos que entran en la vuelta 33 | **12** | `.v33a/tanda.py`, del `git diff` del dataset |
-| pasos de esos 12 | **102** | `.v33a/procedencia.py` |
-| de ellos `PUENTE` | **0**, `0,00` por ciento | mi relectura de los `102` contra `cap_08.md`, tabla de `5` |
-| rotulos de pieza del capitulo | **16**, `13` con nodo, `3` sin | `.v33a/rotulos.py`, mas mi descarte de `3` falsos positivos |
-| lineas nuevas de bitacora | **14**: `11 SANO`, `2 CONTINUA`, `1 CORREGIDO` | `.v33a/bitacora.py` |
-| `SANO` sin razon escrita (`D.8`) | **0** de `14` | `.v33a/bitacora.py` |
-| vecinos que levanta la tanda | **11**, y mi barrido levanta **los mismos 11** | `.v33a/barrido.sh` y `.v33a/vecinos_barrido.py` |
-| poblacion de mi barrido | **347** = `281` de grafo mas `66` de bandejas | la propia aduana, en `.v33a/barrido.txt` |
-| pares que adjudico igual que la vuelta | **13 de 13** | `.v33a/mis_clases.txt`, escrito a las `08:22:57` |
-| `SANO` releidos de la tanda | **11 de 11**, `0` caen, banda de `0,0` a `25,9` por ciento | `7.1` |
-| `gate` | **VERDE**, `282` nodos | `forja.py gate` |
-| `guiones` | **VERDE** | `forja.py guiones` |
-| pruebas de aceptacion | **251**, `0` fallos | `tests/test_aceptacion.py` |
-| cola de vigencia `D.15` | **32** rancios, `8` sin huella, de los cuales **6** los produce la `TAREA 1` | `forja.py rancios` |
-| lote 4, bandeja mas archivados | **63 + 79 = 142** | `.v33a/cerrojo.txt` |
-| discutibles ciegos que traigo | **6** | `5.1`, `5.2`, `5.3`, `5.4`, `6.2` y `9.2` |
+      prio lote clave                          estado                 dueno                 band ult cap
+      --------------------------------------------------------------------------------------------------------
+      .    1    onu_consumidor                 INSERTADO              NINGUNO                  0  cap_02
+      .    2    smart_who                      INSERTADO              NINGUNO                  0  cap_05
+      .    3    zhuo_manager                   INSERTADO              NINGUNO                  0       .
+      .    4    scott_radical_candor           CERRADO EN EXTRACCION  serial                  48  cap_14
+      .    11   gerber_emyth_cap17_reservado   SIN EMPEZAR            NINGUNO                  0       .
+      1    7    grove_high_output              EN CURSO               grove_high_output       23  cap_03
+      2    9    gerber_emyth                   PAUSADO                NINGUNO                 10  cap_11
+      3    5    marquet_turn_the_ship          PAUSADO                NINGUNO                  9  cap_03
+      4*   8    bernerslee_bananas             SIN EMPEZAR            NINGUNO                  0       .
+      5*   6    openstax_business_ethics       SIN EMPEZAR            NINGUNO                  0       .
+      6*   10   openstax_org_behavior          SIN EMPEZAR            NINGUNO                  0       .
 
----
+      prioridad: el orden del mundo 11 (D.51). El asterisco es FUERA DE
+      CAMPANIA: no se extrae, queda en bandeja para la aduana de a uno.
+      Sin prioridad: ya dentro del mundo 11, no hay nada que elegir.
 
----
+      libros CON DUEÑO ahora mismo: 2
+        scott_radical_candor           lo trabaja 'serial' (CERRADO EN EXTRACCION)
+        grove_high_output              lo trabaja 'grove_high_output' (EN CURSO)
 
-## 12. **LAS RUTAS QUE PUBLICO COMO PRUEBA, COMPROBADAS CONTRA EL DISCO** (cosecha `7.B`)
+      MUNDO 11: faltan 3 de 3 libros del corte (grove_high_output, gerber_emyth, marquet_turn_the_ship)
 
-*`LA RUTA QUE PROMETE PRUEBA ES CIFRA`: si apunta a un fichero inexistente o de cero bytes, es
-caida de cifra en su sede, y esta pagina es mi sede. Asi que la compruebo yo antes de entregarla,
-y con un instrumento que saca las rutas del propio fichero por patron y no de una lista mia.*
+      COLA DE DOCTRINA (D.52): 6 pregunta(s), 0 bloquea(n)
+                1  EXTRACTOR.md 11 y la banda de 0,4: dice que por encima hay gemelos y cero ajen
+                2  src/arista.py:187 teclea (D.37) en toda arista declarada por lectura, y se est
+                3  Una cifra en denominaciones.nombre_largo que el libro no escribe: 'las cuatro
+                4  Un resumen_teorico del dataset que cita EL REPORTE DE ESTA VUELTA: sede durade
+                5  Un orden roto no tiene casillero: el extractor corrio la relectura de fidelida
+                6  La regla de la busqueda negativa vale para el extractor? 'Una busqueda negativ
 
-    $ python .v33a/rutas.py
-      rutas publicadas: 37   en rojo: 4
+      PENDIENTES DE RELEVO (D.50), en orden de lote:
+        lote 5   marquet_turn_the_ship           9 candidato(s) en extraccion-marquet_turn_the_ship
+        lote 7   grove_high_output              23 candidato(s) en extraccion-grove_high_output
+        lote 9   gerber_emyth                   10 candidato(s) en extraccion-gerber_emyth
 
-      NO EXISTE        -  docs/loop/REPORTE.md
-      CERO BYTES       0  docs/loop/ultimo_apertura.json
-      NO EXISTE        -  docs/loop/ultimo_auditor.json
-      NO EXISTE        -  docs/loop/ultimo_extractor.json
+    $ python forja.py tablero --puedo scott_radical_candor
+    LINEA 'serial', LIBRO 'scott_radical_candor': SI
+      'scott_radical_candor' ya es de esta linea ('serial'): continuarlo es lo que toca.
 
-**LAS `33` RESTANTES ESTAN LAS `33`, Y NINGUNA EN CERO BYTES**, incluidos los `21` instrumentos
-mios de `.v33a/` que sostienen cada cifra de esta pagina.
+**MI LIBRO ES `scott_radical_candor` Y ME TOCA A MI PORQUE YA ES DE MI LINEA.** Esta
+`CERRADO EN EXTRACCION` con `48` en bandeja, asi que lo que corre es insercion. **`D.50`
+releva al CERRAR y no a mitad**, y este no cierra: quedan `48`, de los cuales `5` son del
+propio `cap_09`.
 
-> **Y DIGO POR QUE SON `37` Y NO `36`, QUE ES LO QUE DIO LA PRIMERA CORRIDA:** el instrumento saca
-> las rutas **del propio fichero**, y al escribir esta seccion el fichero paso a citar tambien
-> `.v33a/rutas.py`. **La primera corrida era cierta para la pagina de entonces y falsa para esta**,
-> asi que la volvi a correr contra la pagina que entrego. **Lo dejo escrito en vez de cambiar el
-> numero y callarme**, que es exactamente la especie de celda que mi remedio `1` persigue: una
-> cifra cuyo encabezado no dice la poblacion que midio.
-
-> **`LECTURA`, marcada aparte, y la escribo porque si no alguien contara cuatro rojos contra mi:**
-> **las cuatro en rojo son exactamente los cuatro ficheros del arnes**, tres que `D.34.2` retira y
-> el cuarto, `ultimo_apertura.json`, que el arnes deja en cero bytes hasta que sella. **No las
-> publico como prueba de ninguna corrida: las nombro en la cabecera para decir que NO estan en el
-> arbol y que no las he recuperado.** Una ruta que se nombra para declarar una ausencia no es una
-> ruta que promete prueba, y la diferencia se ve en que **ninguna cifra de esta pagina cuelga de
-> ninguna de las cuatro.**
+> **Y LO DIGO AHORA PORQUE LLEGA PRONTO:** cuando `scott_radical_candor` cierre, el que toca
+> por el orden del mundo 11 es `grove_high_output`, que el tablero da **`EN CURSO`** en
+> `extraccion-grove_high_output`. **`D.50`: se releva ENTERO y el paso de fundir es del
+> fundador**, asi que eso sera **parada con peticion escrita**, no apertura de lote. **No es
+> de esta vuelta**, pero el encargo que escriba tendra que decirlo.
 
 ---
 
-**APERTURA CIEGA CERRADA. NO LA TOCO MAS: el arnes la sella y el sello se verifica al terminar mi
-turno.** No he commiteado nada.
+## 11. EL ESTADO DEL ARBOL AL SELLAR
+
+    $ git rev-parse HEAD
+    3dbc9017cd7056efb83a7c9c9c40472588a7010c
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+
+    $ git status --short
+     D docs/loop/APERTURA_CIEGA.md
+     D docs/loop/CREDITO_serial.jsonl
+     D docs/loop/REPORTE.md
+     D docs/loop/loop.log
+     M docs/loop/ultimo_apertura.json
+     D docs/loop/ultimo_auditor.json
+     D docs/loop/ultimo_extractor.json
+    ?? .v34aud/
+
+    $ git log -1 --format=%h %ad --date=iso
+    3dbc901 2026-09-17 12:22:49 -0400
+
+### 11.1. LAS GUARDAS QUE MIRAN ESTE MISMO FICHERO, CORRIDAS SOBRE EL
+
+*`D.41` mira mis tablas de instrumento, `D.42` mis rutas publicadas y `D.40` mi linea de
+lectura. Las tres corridas enteras estan en `.v34aud/cierre_apertura.txt`; aqui van sus
+cuatro lineas de veredicto **tal cual las imprime cada instrumento**, sacadas de esa misma
+salida con un `grep`, para no reescribir ni una.*
+
+    $ grep -E 'VERDE|COMPLETA' .v34aud/cierre_apertura.txt      (la corrida entera esta en ese fichero)
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    TALLADO VERDE: las 6 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO VERDE: las 143 rutas publicadas sostienen lo que dicen sostener.
+    CIERRE VERDE: el tallado y el censo de rutas.
+    APERTURA CIEGA COMPLETA: el acta anterior va leida por su huella y los 0 heredados van declarados.
+
+**EL TALLADO EN VERDE ES LA PRUEBA DE QUE EL REMEDIO DE LA SECCION 8 MUERDE**, y es el
+mismo instrumento que puso en rojo mi tabla de la vuelta anterior.
+
+**NO HE COMMITEADO NADA Y NO HE TOCADO NINGUNA SEDE DE DATO.** Lo unico que mi turno escribe
+en el arbol es `.v34aud/`, que son mis instrumentos y sus salidas, y este fichero. **Mi unica
+corrida sobre contenido que no es mio** fue el tallado de la seccion 8, y corrio **sobre una
+copia en el temporal de la sesion**, fuera del repo.
+
+**ACTA ANTERIOR LEIDA: 3b176db2f9bbb25f92a76a0cfff0a365c30d5822**
