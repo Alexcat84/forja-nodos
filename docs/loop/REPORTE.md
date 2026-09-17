@@ -37868,6 +37868,22 @@ un `X or Y` que nadie fue a buscar.
 exacto donde la polaridad se puede partir. **Releo esas `6` una por una**, con su linea pegada
 (`D.35`) y su veredicto al lado:
 
+### AB.3.b.bis. **LAS SEIS, LEIDAS UNA POR UNA**
+
+**LAS SEIS LINEAS, PEGADAS DE SU INSTRUMENTO ANTES DE JUZGARLAS** (`D.35`):
+
+<!-- TALLADO: parcial salida=.v35/ojo_nuevo_citas.txt -->
+
+    $ grep -n -o "<cada construccion>" fuentes/scott_radical_candor/cap_09.md
+    367:This must be a live conversation (i.e., not over email or text).
+    391:it must be clear that you aren't automatically presuming that the boss, your direct report, is guilty, or that you're unwilling to hear any criticism of your direct report.
+    411:If people feel that no changes were made, or that the meeting didn't make a difference
+    425:Be careful not to judge or defend the manager about whom you are soliciting feedback.
+    425:Don't defend or malign the boss you're hearing about.
+    377:As long as the pilots hadn't been careless or reckless
+
+**Y EL VEREDICTO DE CADA UNA, QUE ES MIO Y NO DE NINGUN INSTRUMENTO:**
+
 <!-- TALLADO: parcial salida=.v35/ojo_nuevo_citas.txt -->
 
 | n | la linea, pegada de `grep -n -o` | el paso | veredicto |
@@ -37920,3 +37936,86 @@ mal una vez de seis:
 esta en ninguna de las tres. **Cero series cableadas por cuenta en este tramo.**
 
 **TAREA 2 CERRADA.**
+
+## AB.4. **TAREA 3: `cap_09` CERRADO EN INSERCION, `5` DE `5`**
+
+### AB.4.a. **EL TRAMO, UNO POR VEZ Y EN EL ORDEN DEL LIBRO**
+
+<!-- TALLADO: script=.v35/insercion_tabla.py salida=.v35/insercion_tabla.txt -->
+
+| # | candidato | linea | pasos | nodos tras entrar | vecinos | veredictos |
+|---:|---|---:|---:|---:|---:|---|
+| 1 | `entregar_evaluacion_formal_desempenio_nueve_consejos` | L331 | 22 | **298** | 0 | sin cola |
+| 2 | `impedir_punialadas_espalda_equipo` | L363 | 9 | **299** | 0 | sin cola |
+| 3 | `fomentar_guia_reciproca_companieros` | L369 | 13 | **300** | 0 | sin cola |
+| 4 | `conducir_reuniones_salto_nivel_diez_reglas` | L383 | 31 | **301** | 1 | 1 CONTINUA, arista EN COLA |
+| 5 | `resolver_dudas_frecuentes_reuniones_salto_nivel` | L415 | 16 | **302** | 2 | 1 CONTINUA (cablea) y 1 SANO |
+| | **TOTAL del tramo** | | **91** | | **3** | **3 escritos** |
+
+**`297` nodos al abrir, `302` al cerrar el tramo. `5` de `5`, uno por vez**, y cada uno archivado en
+`cuarentena/_insertados/scott_radical_candor/` **en el mismo acto** (`D.31`), que es el precio que la
+vuelta 34 se cobro a si misma por no hacerlo.
+
+**LA BANDEJA DE `cap_09` QUEDA VACIA, y esa es la definicion de cerrado:**
+
+    $ (cuenta de cuarentena/scott_radical_candor por capitulo, al cerrar)
+      {'cap_10': 14, 'cap_12': 2, 'cap_13': 12, 'cap_14': 15}
+
+**`cap_09` ya no aparece. `15` de `15` del capitulo**, contando los `10` que entraron en la vuelta 34.
+
+**EL TRAMO ES CORTO Y DECLARO POR QUE**, que es lo que la vuelta 17 no hizo: **`5` mas los `14` de
+`cap_10` son `19`, por encima del techo de `15`** (`EXTRACTOR.md` 12.4), y `cap_10` **cabe entero en
+una vuelta**, asi que no se parte. `5` esta dentro del tramo permitido, que es de cinco a quince.
+**La vuelta cierra en `cap_09` y `cap_10` pasa entero a la siguiente.**
+
+### AB.4.b. **LOS TRES VEREDICTOS, CON LA COLA LEIDA ANTES DE ESCRIBIRLOS**
+
+**Ninguno de los tres lo decidio una señal.** Las tres colas las levanto `familia_id` y **solo
+`familia_id`**: las otras dos quedaron por debajo de umbral en los tres pares. `EXTRACTOR.md` 11 ya
+tiene medido que **ninguna señal separa jerarquia de ruido**, asi que los tres se juzgaron leyendo los
+pasos.
+
+| par | señales | clase | por que |
+|---|---|---|---|
+| `conducir_...diez_reglas` **>** `resolver_dudas_...salto_nivel` | texto 0,207 / familia **0,333** / paso 0,471 | **CONTINUA** | la cabeza son las diez reglas de `L393` a `L413`; el hijo es la seccion siguiente del libro, `Skip level meeting FAQs` de `L415`, y **aporta cuatro situaciones con actos que no estan en los 31 pasos de la madre** |
+| el mismo par, **visto desde el hijo** | texto 0,221 / familia **0,333** / paso 0,479 | **CONTINUA** | **mismo veredicto y misma direccion**: no cambio de clase por cambiar de asiento |
+| `resolver_dudas_...salto_nivel` contra `resolver_dudas_frecuentes_pedir_critica` | texto 0,229 / familia **0,375** / paso 0,457 | **SANO** | **lo levanta el prefijo del id y nada mas.** Uno contesta dudas de quien conduce una reunion **sobre otro jefe** (`cap_09`, `L415`); el otro, dudas de quien **pide critica para si mismo** (`cap_13`, `L167`) |
+
+> **EL PAR DE `0,375` ES EL MAS ALTO DE `familia_id` DEL TRAMO, Y ES EL MAS AJENO DE LOS TRES.** Los
+> dos ids empiezan por `resolver_dudas_frecuentes`, asi que **la señal esta midiendo mi convencion de
+> nombres, no el parentesco de los nodos.** Lo traigo como **caso medido y no como propuesta de mover
+> nada**: `EXTRACTOR.md` 11 dice que ninguna vuelta mueve un umbral, y **esta no lo mueve.**
+
+### AB.4.c. **LA ARISTA `D.29`, DECLARADA Y CABLEADA EN LA MISMA VUELTA**
+
+**Al entrar la cabeza quedo EN COLA porque el hijo seguia en la bandeja. Al entrar el hijo, minutos
+despues y en esta misma vuelta, se cablea sola:**
+
+    ARISTA EN COLA, no cableada: conducir_reuniones_salto_nivel_diez_reglas > resolver_dudas_frecuentes_reuniones_salto_nivel
+      el otro extremo espera en la bandeja (D.29).
+    ...
+    arista madre-hijo cableada y escrita RESUELTA: conducir_reuniones_salto_nivel_diez_reglas > resolver_dudas_frecuentes_reuniones_salto_nivel
+
+**Y SE COMPRUEBA EN LOS DOS SENTIDOS, que es lo unico que prueba que quedo bien:**
+
+<!-- TALLADO: parcial salida=.v35/arista_cableada.txt -->
+
+    conducir_reuniones_salto_nivel_diez_reglas
+      nodos_siguientes: ['resolver_dudas_frecuentes_reuniones_salto_nivel']
+      nodos_previos   : []
+    resolver_dudas_frecuentes_reuniones_salto_nivel
+      nodos_siguientes: []
+      nodos_previos   : ['conducir_reuniones_salto_nivel_diez_reglas']
+
+**NO ES `D.37` Y LO DIGO:** `D.37` exige que **la cuenta este escrita**, y `L417` dice
+`some of the questions` sin decir cuantas. **Es `D.29`, con razon escrita que la sostiene**, que es
+justo lo que `D.37` manda hacer cuando la cuenta no esta.
+
+**LA REMISION QUE NO FUERZO:** queda **una** de las tres de `cap_08.md` `L95`, la del capitulo siete, y
+**espera a que entre `cap_10`**. El encargo dice por su nombre que no la fuerce ahora, y **no la
+fuerzo.**
+
+**NINGUN LOTE ABIERTO SE TOCO** (`D.32`), y **el cerrojo estuvo libre en las cinco corridas**: ninguna
+dijo `INSERCION NO INTENTADA`.
+
+**TAREA 3 CERRADA.**

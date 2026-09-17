@@ -710,3 +710,18 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | responder_critica_abrasiva_cuatro_reglas | nombre_largo | Las cuatro reglas generales para una mujer a la que le dicen que es abrasiva: no dejar de desafiar directamente, matar al angel de la oficina, seguir abierta a haberse pasado, y no hacer lo contrario de la pelota; mas no descartar a los hombres | castellano | - |
 | 2026-09-17 | responder_critica_abrasiva_cuatro_reglas | otro_idioma | Things to think about if you're a woman who's being told, You're abrasive | ingles | - |
 | 2026-09-17 | responder_critica_abrasiva_cuatro_reglas | otro_idioma | four rules of thumb | ingles | - |
+| 2026-09-17 | entregar_evaluacion_formal_desempenio_nueve_consejos | nombre_largo | Los nueve consejos para dar bien una evaluacion formal de desempenio: sin sorpresas, sin juicio unilateral, pidiendo antes la tuya, por escrito, con el momento decidido, cincuenta minutos y no seguidas, mitad diagnostico y mitad plan, con revisiones programadas, y la nota despues | castellano | - |
+| 2026-09-17 | entregar_evaluacion_formal_desempenio_nueve_consejos | otro_idioma | FORMAL PERFORMANCE REVIEWS | ingles | - |
+| 2026-09-17 | entregar_evaluacion_formal_desempenio_nueve_consejos | otro_idioma | performance review | ingles | - |
+| 2026-09-17 | impedir_punialadas_espalda_equipo | nombre_largo | Eres un jefe, no un diplomatico: la diplomacia de ida y vuelta no te sirve, y escuchar a uno hablar de otro es remover la olla y no ser empatico | castellano | - |
+| 2026-09-17 | impedir_punialadas_espalda_equipo | otro_idioma | prevent backstabbing | ingles | - |
+| 2026-09-17 | impedir_punialadas_espalda_equipo | otro_idioma | shuttle diplomacy won't work for you | ingles | - |
+| 2026-09-17 | fomentar_guia_reciproca_companieros | nombre_largo | La guia entre companieros: la conversacion en persona antes que la herramienta, el premio que nomina el ganador anterior, la metedura de pata auto nominada con perdon automatico, y la medicion entre pares | castellano | - |
+| 2026-09-17 | fomentar_guia_reciproca_companieros | otro_idioma | peer guidance | ingles | - |
+| 2026-09-17 | fomentar_guia_reciproca_companieros | otro_idioma | Whoops-a-Daisy | ingles | - |
+| 2026-09-17 | fomentar_guia_reciproca_companieros | otro_idioma | peer gauging | ingles | - |
+| 2026-09-17 | conducir_reuniones_salto_nivel_diez_reglas | nombre_largo | Las diez reglas generales para que una reunion de salto de nivel sirva a la cultura de guia y no se convierta en una sesion de quejas ni en un ataque al jefe del que se habla | castellano | - |
+| 2026-09-17 | conducir_reuniones_salto_nivel_diez_reglas | otro_idioma | SPEAKING TRUTH TO POWER | ingles | - |
+| 2026-09-17 | conducir_reuniones_salto_nivel_diez_reglas | otro_idioma | skip level meetings | ingles | - |
+| 2026-09-17 | resolver_dudas_frecuentes_reuniones_salto_nivel | nombre_largo | Las cuatro preguntas que mas se hacen los jefes de jefes que estrenan las reuniones de salto de nivel, con la respuesta que el texto da a cada una | castellano | - |
+| 2026-09-17 | resolver_dudas_frecuentes_reuniones_salto_nivel | otro_idioma | Skip level meeting FAQs | ingles | - |
