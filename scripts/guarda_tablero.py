@@ -14,6 +14,9 @@ QUE HACE, EN TRES PASOS.
 
   3. **LO PASA POR `D.49`** con la linea de este arbol. Si el libro tiene dueño y no es
      esta linea, **se detiene nombrando al dueño.**
+  4. **Y LO PASA POR `D.51`:** el libro declarado tiene que ser **el que el orden del
+     mundo 11 le toca a esta linea**, no otro. Si no lo es, se detiene **nombrando el
+     que si**.
 
 POR QUE EL ENCARGO TIENE QUE DECLARARLO, Y NO SE ADIVINA. El arnes no sabe que es un
 libro (`D.45`), y buscar la clave suelta dentro del texto del encargo **es exactamente la
@@ -67,11 +70,28 @@ def comprobar(texto=None, linea=None, filas=None):
     if clave.upper() == SIN_LIBRO:
         return []
 
+    impiden = []
+
     vale, motivo = tablero.puede_abrir(clave, linea, filas)
-    if vale:
-        return []
-    return ["el encargo declara el libro '%s' y esta linea ('%s') NO puede tomarlo. %s"
-            % (clave, linea, motivo)]
+    if not vale:
+        impiden.append(
+            "D.49: el encargo declara el libro '%s' y esta linea ('%s') NO puede "
+            "tomarlo. %s" % (clave, linea, motivo))
+
+    # D.51: NINGUNA LINEA ELIGE LIBRO. Se comprueba aunque D.49 ya haya caido, porque
+    # las dos cosas que el encargo puede tener mal son distintas: D.49 dice que ese
+    # libro no es tuyo, y D.51 dice cual es.
+    toca, porque, relevo = tablero.siguiente_por_prioridad(linea, filas)
+    if toca is None:
+        impiden.append("D.51: a esta linea no le toca NINGUN libro ahora mismo. %s"
+                       % porque)
+    elif toca != clave:
+        aviso = ("D.51: el encargo declara '%s' y el orden del mundo 11 le da a esta "
+                 "linea '%s'. %s" % (clave, toca, porque))
+        if relevo is not None:
+            aviso += (" El relevo pendiente es la rama '%s'." % relevo.get("rama"))
+        impiden.append(aviso)
+    return impiden
 
 
 def main(argumentos=()):
@@ -87,6 +107,9 @@ def main(argumentos=()):
     print("GUARDA DEL TABLERO (D.49)")
     print("  linea de este arbol : %s" % linea)
     print("  libro que declara el encargo : %s" % (clave or "(NINGUNO DECLARADO)"))
+    toca, porque, _ = tablero.siguiente_por_prioridad(linea, filas)
+    print("  libro que el orden le da (D.51): %s" % (toca or "NINGUNO"))
+    print("    %s" % porque[:150])
     con_dueno = [f for f in filas if f["dueno"] != tablero.NINGUNO]
     for fila in con_dueno:
         print("  con dueño: %-30s %-22s lo trabaja '%s'"

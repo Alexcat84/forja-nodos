@@ -176,6 +176,59 @@ escrita dos veces en paralelo es peor que una regla que falta: la que falta se n
 
 ---
 
+## 4.b. **EL ORDEN DE PRIORIDAD DEL MUNDO 11** (`D.51`, 17 sep 2026)
+
+> **NINGUNA LINEA ELIGE LIBRO.** Toma el primero de esta lista **cuyo `ESTADO` lo permita
+> por `D.49`**, y **al cerrar uno pasa al siguiente por `D.50`.**
+
+    python forja.py tablero --siguiente     que libro le toca a ESTA linea, y por que
+
+### Los tres del mundo 11, con el motivo literal de la decision
+
+| | libro | estado al escribirse | por que ahi |
+|---:|---|---|---|
+| **1** | `grove_high_output` | `EN CURSO`, dueño grove | **Operaciones y apalancamiento gerencial: cubre el hueco de la campania**, que tiene mucho trato con la gente y poco produccion de la maquina. **Densidad de procedimiento la mas alta del lote, medida:** `0,00` por ciento de pasos inventados en su ultimo capitulo, **porque el autor escribe en pasos** |
+| **2** | `gerber_emyth` | `PAUSADO`, `10` candidatos hechos | **Sistematizacion del negocio, manual de operaciones, trabajar SOBRE el negocio y no EN el**: es el libro que **habla directo al usuario final** y el unico del lote que aporta esa materia. Al minarlo entero **se completa ademas el capitulo 17 reservado al mundo 10** |
+| **3** | `marquet_turn_the_ship` | `PAUSADO`, `9` candidatos hechos | **Delegacion real y control distribuido con practicas concretas.** Solapa en parte con Zhuo y Scott, ya insertados, **pero es barato de cerrar y cierra el cuerpo** |
+
+> # **=== CORTE DEL MUNDO 11 ===**
+
+### Los tres que NO se extraen en esta campania
+
+| | libro | por que |
+|---:|---|---|
+| **4** | `bernerslee_bananas` | `19` cap. **Mas analisis que procedimiento** |
+| **5** | `openstax_business_ethics` | `17` cap. **Manual academico, densidad de procedimiento baja, mucho marco conceptual** |
+| **6** | `openstax_org_behavior` | `32` cap. **El mas caro del lote y el de mayor solape con lo ya insertado** (Zhuo, Scott, Grove): **el peor candidato por costo y beneficio de los diez** |
+
+**Quedan en la bandeja, con su ficha**, para **entrar por la aduana de a uno y sin
+campania cuando el fundador lo decida.** El tablero los marca con un asterisco, y
+`--siguiente` **nunca los devuelve.**
+
+---
+
+## 4.c. **EL CIERRE DEL MUNDO 11** (17 sep 2026, punto `c`)
+
+> **CUANDO LOS TRES PRIMEROS ESTEN `INSERTADOS`**, la linea serial **escribe un
+> `PARA_ALEXIS` de `MUNDO 11 COMPLETO` y SE DETIENE.** **El fundador decide que sigue.**
+
+**Lo que ese `PARA_ALEXIS` lleva, y son tres cosas medidas, no tres parrafos:**
+
+| | que va | como se mide |
+|---|---|---|
+| **1** | **el censo POR LIBRO** | nodos del grafo por su fuente, uno por libro, **mas el total**, con el instrumento pegado (`D.41`) |
+| **2** | **las aristas ENTRE libros** | las que cruzan de una clave a otra, **contadas y nombradas**: son lo que prueba que los siete libros son **un grafo** y no siete grafos |
+| **3** | **los tres libros que quedan en bandeja** | `bernerslee_bananas`, `openstax_business_ethics` y `openstax_org_behavior`, **con su ficha y su motivo de corte** |
+
+**Y SE DETIENE.** No abre el `4` por orden, no propone un mundo 12, **no decide su propio
+alcance.** El tablero lo dice solo cuando llega:
+
+    MUNDO 11 COMPLETO: los tres libros del corte estan INSERTADOS.
+    Lo que toca es el CIERRE (PARALELO.md): PARA_ALEXIS de MUNDO 11
+    COMPLETO con el censo por libro, y parar.
+
+---
+
 ## 5. EL PROCEDIMIENTO DE COSECHA Y RELEVO (`D.49`, `D.50`)
 
 *Cuando un frente cierra su libro en extraccion, su rama se funde a la de insercion. **Y

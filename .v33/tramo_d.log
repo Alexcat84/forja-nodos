@@ -1,1 +1,24 @@
 ### vivir_valores_propios_evitar_listarlos
+PARADA EN vivir_valores_propios_evitar_listarlos, codigo 2
+ADUANA DE INSERCION, candidato 'vivir_valores_propios_evitar_listarlos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 355   (277 del grafo mas 78 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino sostener_contacto_oferta_aceptacion  [Sostener el contacto entre tu oferta y la aceptacion del candidato]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.112 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.606 (umbral 0.60)
+    paso 7 del candidato contra paso 3 de sostener_contacto_oferta_aceptacion
+
+BLOQUEADO: faltan veredictos para sostener_contacto_oferta_aceptacion
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "sostener_contacto_oferta_aceptacion|CONTINUA|madre=sostener_contacto_oferta_aceptacion|que añade el hijo a la madre"
+    --veredicto "sostener_contacto_oferta_aceptacion|REPITE|por que no añade procedimiento"
+    --veredicto "sostener_contacto_oferta_aceptacion|SANO|por que no son el mismo trabajo"
+    --veredicto "sostener_contacto_oferta_aceptacion|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

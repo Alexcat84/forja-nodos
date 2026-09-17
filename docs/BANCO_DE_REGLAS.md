@@ -2686,3 +2686,76 @@ llegue**.
 
 **Vive en `config/frentes.json` con su cita**, porque es una decision y no una medida, y
 el tablero lo dice en la columna `estado_de` de cada fila que lo usa.
+
+---
+
+## D.51. EL ORDEN LO DA EL TABLERO (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026, **EL ORDEN DE PRIORIDAD DEL MUNDO 11**. Cierra el
+ultimo hueco que quedaba abierto en `D.49` y `D.50`: **saben decir que NO, y no sabian
+decir que SI.***
+
+### La letra
+
+> **NINGUNA LINEA ELIGE LIBRO POR SU CUENTA.** Toma el de **PRIORIDAD MAS BAJA cuyo
+> estado lo permita** (`D.49`), y **si ninguno lo permite, PARA Y LO DICE.**
+>
+> **EL ARNES LO COMPRUEBA EN LA APERTURA.**
+
+**Y AL CERRAR UNO, PASA AL SIGUIENTE POR `D.50`**, que es el relevo con sus cuatro pasos.
+
+### El orden, y lleva sus motivos porque un orden sin motivo no se puede discutir
+
+| prioridad | libro | estado al escribirse | por que ahi |
+|---:|---|---|---|
+| **1** | `grove_high_output` | `EN CURSO`, dueño grove | **Operaciones y apalancamiento gerencial: cubre el hueco de la campania**, que tiene mucho trato con la gente y poco produccion de la maquina. **Densidad de procedimiento la mas alta del lote, medida:** `0,00` por ciento de pasos inventados en su ultimo capitulo, **porque el autor escribe en pasos** |
+| **2** | `gerber_emyth` | `PAUSADO`, `10` candidatos hechos | **Sistematizacion del negocio, manual de operaciones, trabajar SOBRE el negocio y no EN el**: es el libro que **habla directo al usuario final** y el unico del lote que aporta esa materia. Al minarlo entero **se completa ademas el capitulo 17 reservado al mundo 10** |
+| **3** | `marquet_turn_the_ship` | `PAUSADO`, `9` candidatos hechos | **Delegacion real y control distribuido con practicas concretas.** Solapa en parte con Zhuo y Scott, ya insertados, **pero es barato de cerrar y cierra el cuerpo** |
+
+> # **=== CORTE DEL MUNDO 11 ===**
+>
+> **Con los tres anteriores mas los cuatro ya insertados** (`onu_consumidor`,
+> `smart_who`, `zhuo_manager`, `scott_radical_candor`), **EL MUNDO 11 SE DECLARA
+> COMPLETO**: gente, comunicacion, contratacion, operaciones y sistematizacion. **La
+> campania de extraccion cierra ahi.**
+
+| prioridad | libro | por que NO entra en esta campania |
+|---:|---|---|
+| **4** | `bernerslee_bananas` | `19` cap. **Mas analisis que procedimiento** |
+| **5** | `openstax_business_ethics` | `17` cap. **Manual academico, densidad de procedimiento baja, mucho marco conceptual** |
+| **6** | `openstax_org_behavior` | `32` cap. **El mas caro del lote y el de mayor solape con lo ya insertado** (Zhuo, Scott, Grove): **el peor candidato por costo y beneficio de los diez** |
+
+**LOS TRES DEL CORTE NO SE EXTRAEN EN ESTA CAMPANIA.** Quedan en la bandeja, **con su
+ficha**, para **entrar por la aduana de a uno y sin campania cuando el fundador lo
+decida.** Ninguna linea los elige sola: **una campania que decide su propio alcance no
+tiene alcance.**
+
+### Por que esto es una regla y no una lista
+
+**`D.49` y `D.50` sabian decir que NO.** Sabian que un libro con dueño no se toca y que un
+frente pausado se releva entero. **Lo que ninguna de las dos sabia decir es cual SI**, y
+ese hueco lo llenaba lo mismo de siempre: el orden de `ORDEN_DE_LOTES.md`, que es el orden
+en que los libros **llegaron**, no el orden en que **valen**. Por ese orden, el siguiente
+del lote 4 era el lote 5; **por este, el siguiente es el `1`.**
+
+**Y HAY UNA SEGUNDA COSA QUE ESTA REGLA IMPIDE, mas silenciosa:** que una linea que se
+queda sin libro **se busque uno.** Con `D.51`, una linea sin libro **no elige: para y
+dice cual necesita y que le falta a ese libro para estar disponible.**
+
+### El instrumento
+
+    python forja.py tablero               la tabla, ordenada por prioridad
+    python forja.py tablero --siguiente   que libro le toca a ESTA linea, y por que
+
+**La prioridad vive en `config/frentes.json` con su cita**, porque es una decision y no
+una medida, y `src/tablero.py` **se detiene si el orden no la lleva.** Cada fila de
+`docs/loop/TABLERO.jsonl` publica `prioridad`, `fuera_de_campania` y su `motivo`.
+
+**Caso positivo:** con `scott_radical_candor` ya `INSERTADO` y `grove` todavia vivo,
+`--siguiente` **da `NINGUNO` y nombra el relevo que falta**: `gerber_emyth`, prioridad `2`,
+rama `extraccion-gerber_emyth` sin cosechar con `10` candidatos dentro. **Negativo:** con
+ese mismo `gerber_emyth` ya `COSECHADO`, **da `gerber_emyth` y dice desde que capitulo se
+continua** (`cap_11`).
+
+**Y MIENTRAS LA LINEA TIENE LIBRO PROPIO EN CURSO, `--siguiente` DEVUELVE ESE**, porque
+`D.50` releva **al cerrar** uno y no a mitad.

@@ -655,3 +655,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | evitar_presion_social_actos_equipo | otro_idioma | even non-mandatory events can feel mandatory | ingles | - |
 | 2026-09-17 | construir_confianza_equipo_tiempo_solas | nombre_largo | Construir confianza: el patron constante de actuar de buena fe, y las cuatro conversaciones con las que el libro dice que se empieza | castellano | - |
 | 2026-09-17 | construir_confianza_equipo_tiempo_solas | otro_idioma | building trust | ingles | - |
+| 2026-09-17 | vivir_valores_propios_evitar_listarlos | nombre_largo | Compartir valores: las tres objeciones al ejercicio de valores personales, y lo que si hay que hacer con los tuyos | castellano | - |
+| 2026-09-17 | vivir_valores_propios_evitar_listarlos | otro_idioma | sharing values | ingles | - |

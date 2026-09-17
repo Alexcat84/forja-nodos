@@ -3617,6 +3617,160 @@ class PruebaTableroDeFrentes(BaseForja):
                           "%s tiene un estado que D.49 no define" % fila["clave"])
 
 
+class PruebaOrdenDePrioridad(BaseForja):
+    """EL ORDEN LO DA EL TABLERO (D.51, 17 sep 2026, decision del fundador).
+
+    D.49 y D.50 sabian decir que NO. Lo que ninguna sabia decir es cual SI, y ese hueco
+    lo llenaba el orden de ORDEN_DE_LOTES.md, que es el orden en que los libros
+    LLEGARON y no el orden en que VALEN.
+    """
+
+    def _filas(self, **cambios):
+        base = [
+            {"lote": 4, "clave": "scott_radical_candor", "rama": "",
+             "estado": "CERRADO EN EXTRACCION", "dueno": "serial", "prioridad": None,
+             "fuera_de_campania": False, "candidatos_en_bandeja": 75,
+             "ultimo_capitulo": "cap_14"},
+            {"lote": 7, "clave": "grove_high_output",
+             "rama": "extraccion-grove_high_output", "estado": "EN CURSO",
+             "dueno": "grove_high_output", "prioridad": 1, "fuera_de_campania": False,
+             "candidatos_en_bandeja": 23, "ultimo_capitulo": "cap_03"},
+            {"lote": 9, "clave": "gerber_emyth", "rama": "extraccion-gerber_emyth",
+             "estado": "PAUSADO", "dueno": "NINGUNO", "prioridad": 2,
+             "fuera_de_campania": False, "candidatos_en_bandeja": 10,
+             "bandeja_medida_en": "otro arbol", "ultimo_capitulo": "cap_11"},
+            {"lote": 5, "clave": "marquet_turn_the_ship",
+             "rama": "extraccion-marquet_turn_the_ship", "estado": "PAUSADO",
+             "dueno": "NINGUNO", "prioridad": 3, "fuera_de_campania": False,
+             "candidatos_en_bandeja": 9, "bandeja_medida_en": "otro arbol",
+             "ultimo_capitulo": "cap_03"},
+            {"lote": 8, "clave": "bernerslee_bananas", "rama": "",
+             "estado": "SIN EMPEZAR", "dueno": "NINGUNO", "prioridad": 4,
+             "fuera_de_campania": True, "candidatos_en_bandeja": 0,
+             "ultimo_capitulo": ""},
+            {"lote": 6, "clave": "openstax_business_ethics", "rama": "",
+             "estado": "SIN EMPEZAR", "dueno": "NINGUNO", "prioridad": 5,
+             "fuera_de_campania": True, "candidatos_en_bandeja": 0,
+             "ultimo_capitulo": ""},
+        ]
+        for fila in base:
+            if fila["clave"] in cambios:
+                fila.update(cambios[fila["clave"]])
+        return base
+
+    # ------------------------------------------- mientras tiene libro, lo continua
+
+    def test_con_libro_propio_en_curso_le_toca_ese(self):
+        """D.50 releva AL CERRAR, no a mitad."""
+        from src import tablero
+        clave, _, _ = tablero.siguiente_por_prioridad("serial", self._filas())
+        self.assertEqual(clave, "scott_radical_candor")
+
+    # ------------------------------------- sin libro, manda la prioridad y no el lote
+
+    def test_caso_positivo_sin_libro_no_elige_y_nombra_el_relevo_que_falta(self):
+        """Es la parada util: NINGUNO, y dice cual necesita y que le falta."""
+        from src import tablero
+        filas = self._filas(scott_radical_candor={"estado": "INSERTADO",
+                                                  "dueno": "NINGUNO"})
+        clave, motivo, relevo = tablero.siguiente_por_prioridad("serial", filas)
+        self.assertIsNone(clave)
+        self.assertIsNotNone(relevo)
+        self.assertEqual(relevo["clave"], "gerber_emyth")
+        self.assertIn("no esta cosechada", motivo)
+
+    def test_caso_negativo_con_el_de_prioridad_2_cosechado_le_toca_ese(self):
+        from src import tablero
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            gerber_emyth={"estado": "COSECHADO"})
+        clave, motivo, _ = tablero.siguiente_por_prioridad("serial", filas)
+        self.assertEqual(clave, "gerber_emyth")
+        self.assertIn("cap_11", motivo)
+
+    def test_la_prioridad_manda_sobre_el_numero_de_lote(self):
+        """marquet es el lote 5 y gerber el 9, y gerber va ANTES por prioridad."""
+        from src import tablero
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            gerber_emyth={"estado": "COSECHADO"},
+            marquet_turn_the_ship={"estado": "COSECHADO"})
+        clave, _, _ = tablero.siguiente_por_prioridad("serial", filas)
+        self.assertEqual(clave, "gerber_emyth")
+
+    def test_caso_positivo_un_libro_fuera_de_campania_no_se_elige_nunca(self):
+        """Estan SIN EMPEZAR y sin dueño, asi que D.49 los dejaria pasar. D.51 no."""
+        from src import tablero
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            grove_high_output={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            gerber_emyth={"estado": "INSERTADO"},
+            marquet_turn_the_ship={"estado": "INSERTADO"})
+        clave, motivo, _ = tablero.siguiente_por_prioridad("serial", filas)
+        self.assertIsNone(clave)
+        self.assertIn("CIERRE DEL MUNDO 11", motivo)
+
+    # ------------------------------------------------- el cierre del mundo 11
+
+    def test_el_mundo_11_no_esta_completo_mientras_falte_uno(self):
+        from src import tablero
+        filas = self._filas(grove_high_output={"estado": "INSERTADO",
+                                               "dueno": "NINGUNO"},
+                            gerber_emyth={"estado": "INSERTADO"})
+        completo, del_mundo, faltan = tablero.mundo_11_completo(filas)
+        self.assertFalse(completo)
+        self.assertEqual(len(del_mundo), 3)
+        self.assertEqual([f["clave"] for f in faltan], ["marquet_turn_the_ship"])
+
+    def test_el_mundo_11_completo_son_los_tres_del_corte_y_no_los_seis(self):
+        from src import tablero
+        filas = self._filas(grove_high_output={"estado": "INSERTADO",
+                                               "dueno": "NINGUNO"},
+                            gerber_emyth={"estado": "INSERTADO"},
+                            marquet_turn_the_ship={"estado": "INSERTADO"})
+        completo, del_mundo, _ = tablero.mundo_11_completo(filas)
+        self.assertTrue(completo, "los del corte no cuentan para el mundo 11")
+        self.assertEqual(len(del_mundo), 3)
+
+    # --------------------------------------------- la guarda del arnes lo exige
+
+    def test_caso_positivo_la_guarda_tumba_un_encargo_que_elige_otro_libro(self):
+        from scripts import guarda_tablero
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            gerber_emyth={"estado": "COSECHADO"})
+        impiden = guarda_tablero.comprobar(
+            texto="LIBRO DE ESTA VUELTA: bernerslee_bananas",
+            linea="serial", filas=filas)
+        self.assertTrue(any("D.51" in m for m in impiden))
+        self.assertTrue(any("gerber_emyth" in m for m in impiden))
+
+    def test_caso_negativo_el_encargo_que_declara_el_que_toca_pasa(self):
+        from scripts import guarda_tablero
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            gerber_emyth={"estado": "COSECHADO"})
+        self.assertEqual(guarda_tablero.comprobar(
+            texto="LIBRO DE ESTA VUELTA: gerber_emyth",
+            linea="serial", filas=filas), [])
+
+    # ----------------------------------------- lo declarado, contra el repo real
+
+    def test_el_orden_del_repo_lleva_los_seis_libros_con_su_motivo(self):
+        from src import tablero
+        libros = tablero.declaraciones()["orden_de_prioridad"]["libros"]
+        self.assertEqual(len(libros), 6)
+        for clave, dato in libros.items():
+            self.assertTrue(dato.get("motivo"), "%s sin motivo" % clave)
+
+    def test_el_tablero_del_repo_publica_la_prioridad_de_los_seis(self):
+        from src import tablero
+        con_prioridad = [f for f in tablero.leer() if f.get("prioridad")]
+        self.assertEqual(len(con_prioridad), 6)
+        fuera = [f["clave"] for f in con_prioridad if f.get("fuera_de_campania")]
+        self.assertEqual(len(fuera), 3)
+
+
 class PruebaGuardaDelTablero(BaseForja):
     """EL ARNES COMPRUEBA AL ABRIR VUELTA, CONTRA EL TABLERO (D.49).
 
@@ -3646,16 +3800,18 @@ class PruebaGuardaDelTablero(BaseForja):
         impiden = guarda_tablero.comprobar(
             texto="LIBRO DE ESTA VUELTA: grove_high_output",
             linea="serial", filas=self._filas())
-        self.assertEqual(len(impiden), 1)
-        self.assertIn("grove_high_output", impiden[0])
+        # Se mira POR REGLA y no por cuenta: desde D.51 un mismo encargo puede caer
+        # por dos motivos distintos (ese libro no es tuyo, y no es el que te toca), y
+        # una prueba que cuenta impedimentos se rompe cada vez que nace una regla.
+        self.assertTrue(any("D.49" in m and "grove_high_output" in m for m in impiden),
+                        impiden)
 
     def test_caso_positivo_pausado_sin_cosechar_tampoco_abre(self):
         from scripts import guarda_tablero
         impiden = guarda_tablero.comprobar(
             texto="LIBRO DE ESTA VUELTA: marquet_turn_the_ship",
             linea="serial", filas=self._filas())
-        self.assertEqual(len(impiden), 1)
-        self.assertIn("RELEVARLO ENTERO", impiden[0])
+        self.assertTrue(any("RELEVARLO ENTERO" in m for m in impiden), impiden)
 
     def test_caso_negativo_el_libro_de_esta_linea_abre(self):
         from scripts import guarda_tablero
@@ -3986,7 +4142,7 @@ def main():
              PruebaCerrojoYCenso,
              PruebaTestigoDeGuardas, PruebaCreditoPorLinea,
              PruebaHerenciaPorLinea, PruebaTableroDeFrentes,
-             PruebaGuardaDelTablero]
+             PruebaGuardaDelTablero, PruebaOrdenDePrioridad]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -4050,6 +4206,8 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaTableroDeFrentes)._tests))
     print("  D.49, la guarda del tablero al abrir vuelta: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaGuardaDelTablero)._tests))
+    print("  D.51, el orden lo da el tablero, y el corte del mundo 11: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaOrdenDePrioridad)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))
