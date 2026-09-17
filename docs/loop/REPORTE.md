@@ -36509,7 +36509,7 @@ esta pendiente. `EXTRACTOR.md` 7 manda escribirlo y **no arreglarlo yo**. Lo esc
 
 | # | tarea | estado |
 |---:|---|---|
-| 1 | la frontera de `cap_03`, cerrada contra el cuerpo, con el techo por delante | **ABIERTA** |
+| 1 | la frontera de `cap_03`, cerrada contra el cuerpo, con el techo por delante | **CERRADA** en `AA.1`: `5828` contra `5828`, cero lineas sin cubrir, cero solapes, `15` nodos en el techo justo |
 | 2 | minar `cap_03` un candidato por vez, con la aduana EN SECO en el mismo acto | **ABIERTA** |
 | 3 | la fidelidad `D.30` paso a paso, `PASOS INVENTADOS` fila por unidad mas total | **ABIERTA** |
 | 4 | las aristas que levante mi lectura y no levanto ninguna senal | **ABIERTA** |
@@ -36517,3 +36517,113 @@ esta pendiente. `EXTRACTOR.md` 7 manda escribirlo y **no arreglarlo yo**. Lo esc
 
 **CINCO TAREAS, QUE ES EL TOPE** (`EXTRACTOR.md` 1.3). **Y NINGUNA INSERCION EN NINGUNA DE LAS
 CINCO** (`D.45`, y la orden expresa del fundador al relanzarme).
+
+## AA.1. **TAREA 1**: LA FRONTERA DE `cap_03`, CERRADA CONTRA EL CUERPO ANTES DE CORTAR
+
+**MINO `cap_03` Y SOLO `cap_03`, EN EL ORDEN DEL LIBRO** (`EXTRACTOR.md` 12.3). Es la unidad
+`Cap. 2` del libro, `Managing the Breakfast Factory`, y **da `15` nodos, que es exactamente el techo
+de 12.4**. Por eso **la vuelta cierra en esta unidad y las otras `17` del libro pasan a la
+siguiente**, que es lo que manda la regla de precedencia de 12.4 cuando un solo capitulo llena el
+techo. **No reparto el capitulo ni estiro el tramo con un segundo capitulo.**
+
+### AA.1.a. LA COMPROBACION, QUE VA ANTES DE LA TABLA
+
+<!-- TALLADO: parcial salida=.v2g/frontera_cap_03.txt -->
+
+    $ python .v2g/frontera.py
+      fichero                                : fuentes/grove_high_output/cap_03.md
+      la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+      tramos de mi lectura                   : 24
+      lineas con contenido tras la cabecera  : 86
+      lineas NO cubiertas                    : 0  []
+      SOLAPES                                : 0  []
+      suma de las filas                      : 5828 palabras
+      cuerpo medido aparte                   : 5828 palabras
+      fichero entero, para cruzar con wc -w  : 5855 palabras
+      IGUALES                                : True
+      NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_03 Y SOLO cap_03: 15
+
+**CIERRA AL DIGITO Y SE CRUZA CON `wc -w`:** `5828` de cuerpo mas `27` de cabecera son los `5855`
+que `wc -w` da del fichero entero. **Ninguna constante de cabecera esta tecleada dentro del
+instrumento**: el corte se busca por el segundo guion triple y la salida imprime que la cabecera
+acaba en la linea `7`.
+
+<!-- TALLADO: parcial salida=.v2g/cruce_wc.txt -->
+
+    $ wc -w fuentes/grove_high_output/cap_03.md
+      5855 fuentes/grove_high_output/cap_03.md
+    $ sed -n "1,7p" fuentes/grove_high_output/cap_03.md | wc -w
+      27
+
+### AA.1.b. `cap_03`, `Managing the Breakfast Factory`: VEINTICUATRO TRAMOS Y QUINCE NODOS
+
+<!-- TALLADO: script=.v2g/frontera.py salida=.v2g/frontera_cap_03.txt -->
+
+| tramo de cap_03 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L13` | 10 | **0** | P1  rotulos: el numero, el titulo y el subtitulo Indicators as a Key Tool | `9:2` |
+| `L15 a L29` | 560 | **1** | P2  LOS CINCO INDICADORES DIARIOS: el libro los nombra uno a uno y anade el repaso de primera hora | `15:A hungry public has loved the breakfast you've been serving, and` |
+| `L31 a L33` | 208 | **1** | P3  el indicador dirige la atencion, y el par de efecto y contraefecto, con su caso del compilador | `31:Indicators tend to direct your attention toward what they are mo` |
+| `L35 a L37` | 196 | **1** | P4  las dos varas del indicador administrativo: salida y no actividad, y cosa fisica y contable | `35:Nowhere can indicators-and paired indicators-be of more help tha` |
+| `L39 a L67` | 47 | **0** | P5  la TABLA de seis funciones administrativas con su indicador, y su pie: material del nodo de P4 | `39:ADMINISTRATIVE FUNCTION` |
+| `L69 a L69` | 127 | **0** | P6  para que sirven esos indicadores: objetivos, objetividad y comparacion entre grupos, POSTURA | `69:Such indicators have many uses. First, they spell out very clear` |
+| `L71 a L79` | 348 | **1** | P7  LA CAJA NEGRA: entrada, salida y trabajo, y las ventanas que se abren para ver dentro | `71:The Black Box` |
+| `L81 a L81` | 139 | **0** | P8  los indicadores adelantados han de ser CREIBLES: adjetivo de adecuacion en el sitio del criterio, 9.1 restriccion 2 | `81:Leading indicators give you one way to look inside the black box` |
+| `L83 a L87` | 352 | **1** | P9  EL INDICADOR DE LINEALIDAD: la recta ideal contra lo real, con sus dos casos | `83:Leading indicators might include the daily monitors we use to ru` |
+| `L89 a L89` | 94 | **1** | P10 el indicador de tendencia: la salida contra el tiempo y contra un patron | `89:Also valuable are trend indicators. These show output (breakfast` |
+| `L91 a L97` | 306 | **1** | P11 EL GRAFICO ESCALONADO: el pronostico rehecho cada mes sobre los anteriores | `91:Another sound way to anticipate the future is through the use of` |
+| `L99 a L99` | 88 | **1** | P12 el archivo de indicadores para resolver averias | `99:Finally, indicators can be a big help in solving all types of pr` |
+| `L101 a L109` | 425 | **1** | P13 fabricar contra pedido o contra pronostico: las dos vias nombradas, con su riesgo de inventario | `101:Controlling Future Output` |
+| `L111 a L121` | 453 | **1** | P14 casar el flujo de fabricacion con el de ventas: dos pronosticos, holgura en inventario y escalonados | `111:Delivering a product that was built to forecast to a customer co` |
+| `L123 a L125` | 228 | **1** | P15 dimensionar la plantilla administrativa con el pronostico y los patrones de hecho | `123:Forecasting future work demands and then adjusting the output of` |
+| `L127 a L133` | 206 | **0** | P16 rechazar al menor valor y los NOMBRES de los tres puntos de inspeccion: DEFINICION, y el fondo ya vive en cap_02 | `127:Assuring Quality` |
+| `L135 a L137` | 242 | **1** | P17 aceptar o rechazar el material defectuoso, con su grupo equilibrado y su excepcion de fiabilidad | `135:When material is rejected at incoming inspection, a couple of ch` |
+| `L139 a L141` | 356 | **1** | P18 barrera contra monitorizacion: las dos mecanicas enteras y su regla de pulgar | `139:Inspections, of course, cost money to perform and further add to` |
+| `L143 a L145` | 157 | **1** | P19 la inspeccion variable: la frecuencia sigue al nivel de calidad | `143:Another way to lower the cost of quality assurance is to use var` |
+| `L147 a L153` | 397 | **0** | P20 la embajada de Londres y sus visados: CASO de P19, manual 3.5, entra nombrado dentro de su nodo | `147:I recently read a story in a news magazine that said that the Am` |
+| `L155 a L155` | 106 | **0** | P21 la inspeccion variable aplicada al mando: su procedimiento vive en otro capitulo, extraerlo aqui fabrica el gemelo de su donante | `155:Later, when we examine managerial productivity, we'll see that w` |
+| `L157 a L167` | 395 | **0** | P22 productividad como salida partida por trabajo, y la palanca: DEFINICION y concepto | `157:Productivity` |
+| `L169 a L173` | 382 | **1** | P23 LA SIMPLIFICACION DEL TRABAJO: diagrama, cuenta, meta de reduccion y la pregunta a cada paso | `169:Automation is certainly one way to improve the leverage of all t` |
+| `L175 a L179` | 6 | **0** | P24 el rotulo de la parte II del libro, que ya no es de esta unidad | `175:II` |
+| | **5828** | **15** | **el cuerpo entero de cap_03, cero lineas sin cubrir y cero solapes** | |
+
+### AA.1.c. **LOS NUEVE TRAMOS QUE DAN CERO, CADA UNO CON SU MOTIVO ESCRITO**
+
+Son `9` de los `24` tramos y **`1.424` palabras del cuerpo**, o sea casi una cuarta parte del
+capitulo. **Un tramo que da cero es una decision, no un descuido**, asi que cada uno lleva aqui la
+regla por la que cae.
+
+| tramo | palabras | por que da cero, con la regla que lo tumba |
+|---|---:|---|
+| `P1` `L9 a L13` | 10 | rotulos: numero de capitulo, titulo y subtitulo |
+| `P5` `L39 a L67` | 47 | **es la TABLA de seis funciones administrativas con su indicador de salida.** No es nodo aparte: es **el inventario del nodo de `P4`**, y sacarla a nodo propio seria fabricar el gemelo de su donante (`P.19`) |
+| `P6` `L69 a L69` | 127 | para que sirven los indicadores (objetivos claros, objetividad, comparar grupos). **Es POSTURA: nombra adonde se llega, no como.** `9.1` restriccion 1: un inventario de FINES no cuenta |
+| `P8` `L81 a L81` | 139 | **el caso de libro de la restriccion 2 de `9.1`**: el libro pide que los indicadores adelantados sean **`credible`**, y **creible es adjetivo de adecuacion en el sitio del criterio**. Cualquier paso que escribiera yo para decidir si un indicador es creible lo escribiria yo |
+| `P16` `L127 a L133` | 206 | **DEFINICION mas repeticion.** `L131` solo pone los NOMBRES de los tres puntos (`incoming`, `in-process`, `final`), y el fondo, rechazar en la etapa de menor valor, **ya vive en el grafo de la vuelta 1** en `detectar_arreglar_fallo_etapa_menor_valor`. Volver a extraerlo es el duplicado mas comun de todos (`EXTRACTOR.md` 11) |
+| `P20` `L147 a L153` | 397 | **la embajada americana en Londres y su atasco de visados es CASO** (manual 3.5): el caso no es la casa. Entra **nombrado dentro** del nodo de `P19`, que es la inspeccion variable que el caso ilustra. **Y sus cifras no se extraen**: `some one million Britons`, `about 98 percent`, `sixty people`, `6,000 applications a day` salen de *a news magazine* sin nombre y sin fecha de corte, y una cifra del autor sin fecha de corte es media cifra (manual principio 5) |
+| `P21` `L155 a L155` | 106 | el libro dice literalmente **`Later, when we examine managerial productivity, we'll see...`**: su procedimiento vive en otro capitulo. Extraerlo aqui fabrica **el gemelo de su propio donante** |
+| `P22` `L157 a L167` | 395 | **DEFINICION de productividad** (salida partida por trabajo) y **concepto de palanca**, con cuatro ejemplos. Una definicion o un concepto sin nada que hacer **no es un nodo** (`EXTRACTOR.md` 9, la tabla). Lo accionable de este tramo esta en `P23`, que si trae procedimiento |
+| `P24` `L175 a L179` | 6 | el rotulo de la parte `II` del libro, que ya no es de esta unidad |
+
+### AA.1.d. **EL TRAMO MAS GRANDE QUE DA CERO Y EL MAS PEQUENO QUE DA UNO, QUE ES LO QUE PRUEBA LA VARA**
+
+`P20` tiene **`397` palabras y da `0`**; `P12` tiene **`88` y da `1`**. **El tamano no decide: decide
+el inventario.** `P20` son cuatro parrafos de un caso periodistico con sus cifras sin corte; `P12`
+es una sola frase que nombra sus propios objetos de trabajo (el archivo de indicadores, los
+parametros de la operacion, la desviacion respecto de la norma), y con eso los pasos se
+**transcriben**.
+
+### AA.1.e. EL TECHO, CONTRASTADO Y NO DECIDIDO POR EL INSTRUMENTO
+
+<!-- TALLADO: parcial salida=.v2g/frontera_cap_03.txt -->
+
+      NODOS QUE MI FRONTERA DA EN LA UNIDAD DE ESTA VUELTA (cap_03): 15
+      TECHO DE CANDIDATOS POR VUELTA (EXTRACTOR.md 12.4): entre 5 y 15
+      DENTRO DEL TECHO                                             : SI
+      LA VUELTA CIERRA EN cap_03 (12.4, precedencia): las otras 17 unidades del
+      libro pasan a la vuelta siguiente, y eso se declara en el reporte.
+
+**LA DECLARACION QUE 12.4 PIDE, EN UNA LINEA:** *la vuelta cierra en `cap_03` con `15` candidatos,
+que es el techo justo; las `17` unidades restantes del libro pasan a la vuelta siguiente.*
+
+**`TAREA 1` CERRADA.**
