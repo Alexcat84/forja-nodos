@@ -1,0 +1,102 @@
+AVISO: DENOMINADOR CONTADO DE LOS JSON DE LA BANDEJA EN ESTA CORRIDA. La clase de cada paso y su linea salen de .vm01/clases.txt, escritas por el extractor leyendo (D.30).
+
+| nodo | unidad | paso | linea del libro | clase |
+|---|---|---:|---|---|
+| `ceder_control_reforzar_competencia_claridad` | `cap_01` | 1 | L97 | **TRANSCRIPCION** |
+| `ceder_control_reforzar_competencia_claridad` | `cap_01` | 2 | L97 | **TRANSCRIPCION** |
+| `ceder_control_reforzar_competencia_claridad` | `cap_01` | 3 | L97 | **TRANSCRIPCION** |
+| `ceder_control_reforzar_competencia_claridad` | `cap_01` | 4 | L97 | **TRANSCRIPCION** |
+| `ceder_control_reforzar_competencia_claridad` | `cap_01` | 5 | L97 | **TRANSCRIPCION** |
+| `ceder_control_reforzar_competencia_claridad` | `cap_01` | 6 | L97 | **TRANSCRIPCION** |
+| `ceder_control_reforzar_competencia_claridad` | `cap_01` | 7 | L97 | **TRANSCRIPCION** |
+| `cambiar_forma_trabajar_conservar_plantilla` | `cap_02` | 1 | L25 | **TRANSCRIPCION** |
+| `cambiar_forma_trabajar_conservar_plantilla` | `cap_02` | 2 | L25 | **TRANSCRIPCION** |
+| `cambiar_forma_trabajar_conservar_plantilla` | `cap_02` | 3 | L25 | **TRANSCRIPCION** |
+| `cambiar_forma_trabajar_conservar_plantilla` | `cap_02` | 4 | L29 | **TRANSCRIPCION** |
+| `cambiar_forma_trabajar_conservar_plantilla` | `cap_02` | 5 | L29 | **TRANSCRIPCION** |
+| `encargar_meta_especifica_dejar_libre_metodo` | `cap_02` | 1 | L49 | **TRANSCRIPCION** |
+| `encargar_meta_especifica_dejar_libre_metodo` | `cap_02` | 2 | L49 mas L51 | **TRANSCRIPCION** |
+| `encargar_meta_especifica_dejar_libre_metodo` | `cap_02` | 3 | L49 | **TRANSCRIPCION** |
+| `encargar_meta_especifica_dejar_libre_metodo` | `cap_02` | 4 | L49 | **TRANSCRIPCION** |
+| `encargar_meta_especifica_dejar_libre_metodo` | `cap_02` | 5 | L33 | **TRANSCRIPCION** |
+| `recorrer_organizacion_escuchar_plantilla` | `cap_03` | 1 | L11 | **TRANSCRIPCION** |
+| `recorrer_organizacion_escuchar_plantilla` | `cap_03` | 2 | L15 | **TRANSCRIPCION** |
+| `recorrer_organizacion_escuchar_plantilla` | `cap_03` | 3 | L15 | **TRANSCRIPCION** |
+| `recorrer_organizacion_escuchar_plantilla` | `cap_03` | 4 | L15 | **TRANSCRIPCION** |
+| `recorrer_organizacion_escuchar_plantilla` | `cap_03` | 5 | L15 | **TRANSCRIPCION** |
+| `recorrer_organizacion_escuchar_plantilla` | `cap_03` | 6 | L15 | **TRANSCRIPCION** |
+| `recorrer_organizacion_escuchar_plantilla` | `cap_03` | 7 | L15 | **TRANSCRIPCION** |
+| `observar_reunion_rutinaria_senales_plantilla` | `cap_03` | 1 | L17 | **TRANSCRIPCION** |
+| `observar_reunion_rutinaria_senales_plantilla` | `cap_03` | 2 | L21 | **TRANSCRIPCION** |
+| `observar_reunion_rutinaria_senales_plantilla` | `cap_03` | 3 | L19 | **TRANSCRIPCION** |
+| `observar_reunion_rutinaria_senales_plantilla` | `cap_03` | 4 | L19 | **TRANSCRIPCION** |
+| `observar_reunion_rutinaria_senales_plantilla` | `cap_03` | 5 | L19 | **TRANSCRIPCION** |
+| `observar_reunion_rutinaria_senales_plantilla` | `cap_03` | 6 | L19 | **TRANSCRIPCION** |
+| `observar_reunion_rutinaria_senales_plantilla` | `cap_03` | 7 | L21 | **TRANSCRIPCION** |
+| `observar_reunion_rutinaria_senales_plantilla` | `cap_03` | 8 | L21 | **TRANSCRIPCION** |
+| `observar_reunion_rutinaria_senales_plantilla` | `cap_03` | 9 | L19 | **TRANSCRIPCION** |
+| `seguir_frustrado_preguntar_implantacion_ideas` | `cap_03` | 1 | L23 | **TRANSCRIPCION** |
+| `seguir_frustrado_preguntar_implantacion_ideas` | `cap_03` | 2 | L25 | **TRANSCRIPCION** |
+| `seguir_frustrado_preguntar_implantacion_ideas` | `cap_03` | 3 | L27 | **TRANSCRIPCION** |
+| `seguir_frustrado_preguntar_implantacion_ideas` | `cap_03` | 4 | L27 | **TRANSCRIPCION** |
+| `seguir_frustrado_preguntar_implantacion_ideas` | `cap_03` | 5 | L27 | **TRANSCRIPCION** |
+| `seguir_frustrado_preguntar_implantacion_ideas` | `cap_03` | 6 | L27 | **TRANSCRIPCION** |
+| `seguir_frustrado_preguntar_implantacion_ideas` | `cap_03` | 7 | L27 | **TRANSCRIPCION** |
+| `seguir_frustrado_preguntar_implantacion_ideas` | `cap_03` | 8 | L29 | **TRANSCRIPCION** |
+| `contar_firmas_cadena_tramite_parado` | `cap_03` | 1 | L37 | **TRANSCRIPCION** |
+| `contar_firmas_cadena_tramite_parado` | `cap_03` | 2 | L37 | **TRANSCRIPCION** |
+| `contar_firmas_cadena_tramite_parado` | `cap_03` | 3 | L37 | **TRANSCRIPCION** |
+| `contar_firmas_cadena_tramite_parado` | `cap_03` | 4 | L39 | **TRANSCRIPCION** |
+| `contar_firmas_cadena_tramite_parado` | `cap_03` | 5 | L39 | **TRANSCRIPCION** |
+| `contar_firmas_cadena_tramite_parado` | `cap_03` | 6 | L39 | **TRANSCRIPCION** |
+| `contar_firmas_cadena_tramite_parado` | `cap_03` | 7 | L39 | **TRANSCRIPCION** |
+| `contar_firmas_cadena_tramite_parado` | `cap_03` | 8 | L43 | **TRANSCRIPCION** |
+| `contar_firmas_cadena_tramite_parado` | `cap_03` | 9 | L43 | **TRANSCRIPCION** |
+| `contar_firmas_cadena_tramite_parado` | `cap_03` | 10 | L41 mas L43 | **TRANSCRIPCION** |
+| `inspeccionar_reparto_informacion_notas_jefe` | `cap_03` | 1 | L45 | **TRANSCRIPCION** |
+| `inspeccionar_reparto_informacion_notas_jefe` | `cap_03` | 2 | L45 | **TRANSCRIPCION** |
+| `inspeccionar_reparto_informacion_notas_jefe` | `cap_03` | 3 | L47 | **TRANSCRIPCION** |
+| `inspeccionar_reparto_informacion_notas_jefe` | `cap_03` | 4 | L49 | **TRANSCRIPCION** |
+| `inspeccionar_reparto_informacion_notas_jefe` | `cap_03` | 5 | L49 | **TRANSCRIPCION** |
+| `inspeccionar_reparto_informacion_notas_jefe` | `cap_03` | 6 | L51 | **TRANSCRIPCION** |
+| `inspeccionar_reparto_informacion_notas_jefe` | `cap_03` | 7 | L53 | **TRANSCRIPCION** |
+| `inspeccionar_reparto_informacion_notas_jefe` | `cap_03` | 8 | L53 | **TRANSCRIPCION** |
+| `auditar_formacion_premios_ultima_fila` | `cap_03` | 1 | L55 | **TRANSCRIPCION** |
+| `auditar_formacion_premios_ultima_fila` | `cap_03` | 2 | L55 mas L57 | **TRANSCRIPCION** |
+| `auditar_formacion_premios_ultima_fila` | `cap_03` | 3 | L57 | **TRANSCRIPCION** |
+| `auditar_formacion_premios_ultima_fila` | `cap_03` | 4 | L57 | **TRANSCRIPCION** |
+| `auditar_formacion_premios_ultima_fila` | `cap_03` | 5 | L57 | **TRANSCRIPCION** |
+| `auditar_formacion_premios_ultima_fila` | `cap_03` | 6 | L57 | **TRANSCRIPCION** |
+| `auditar_formacion_premios_ultima_fila` | `cap_03` | 7 | L55 | **TRANSCRIPCION** |
+| `auditar_formacion_premios_ultima_fila` | `cap_03` | 8 | L55 | **TRANSCRIPCION** |
+| `auditar_formacion_premios_ultima_fila` | `cap_03` | 9 | L55 | **TRANSCRIPCION** |
+| `auditar_formacion_premios_ultima_fila` | `cap_03` | 10 | L55 | **TRANSCRIPCION** |
+| `auditar_formacion_premios_ultima_fila` | `cap_03` | 11 | L55 | **TRANSCRIPCION** |
+
+| unidad | nodos | **pasos escritos** | **PUENTE** | **PASOS INVENTADOS** |
+|---|---:|---:|---:|---:|
+| `cap_01` | 1 | **7** | **0** | **0,00 por ciento** |
+| `cap_02` | 2 | **10** | **0** | **0,00 por ciento** |
+| `cap_03` | 6 | **53** | **0** | **0,00 por ciento** |
+| **el lote marquet_turn_the_ship ENTERO** | **9** | **70** | **0** | **0,00 por ciento** |
+
+| | |
+|---|---:|
+| unidades releidas y firmadas por mi en esta vuelta | **3** de **3** |
+| **la fila que decide, que es la peor** | `cap_01` con **0,00** |
+| tope de `PASOS INVENTADOS` | **10,00** |
+| **el freno** | **NO SE ACTIVA** |
+
+COBERTURA VERDE: cada paso de cada nodo del lote tiene su clase y su linea escritas.
+
+| nodo | paso | especie | lo que escribi primero | el parrafo NO lo dice | como quedo |
+|---|---:|---|---|---|---|
+| `seguir_frustrado_preguntar_implantacion_ideas` | 5 | **el medio** | *cuenta cuantas veces sale la misma respuesta* | el texto no cuenta nada: dice que cada vez era la misma | *fijate en si la respuesta es siempre la misma* |
+| `seguir_frustrado_preguntar_implantacion_ideas` | 6 | **el medio** | *pregunta tambien por la gente que trabaja para el* | el texto no dice que preguntara: dice que no parecian dispuestos | *mira si lo mismo pasa un piso mas abajo* |
+| `seguir_frustrado_preguntar_implantacion_ideas` | 7 | **el medio** | *pidele un ejemplo concreto con fecha* | el texto no pide ninguno: trae el suyo | *quedate con el ejemplo concreto que salga de ahi* |
+| `contar_firmas_cadena_tramite_parado` | 3 | **el medio** | *apunta lo que ese retraso le cuesta ya* | el texto dice que lo supo, no que lo apuntara | *mira lo que ese retraso le esta costando ya* |
+| `contar_firmas_cadena_tramite_parado` | 10 | **el medio** | *escribe el veredicto sobre el sistema y no sobre la gente* | el texto lo saca, no lo escribe | *saca el veredicto sobre el sistema y no sobre la gente* |
+| `inspeccionar_reparto_informacion_notas_jefe` | 2 | **el medio** | *separa lo que entra por sus clases* | el texto no manda clasificar nada: describe las tres clases | *mira que clases de cosa entran por ahi* |
+| `inspeccionar_reparto_informacion_notas_jefe` | 3 | **el medio** | *di en voz alta para que sirve ese orden* | el texto no manda decir nada en voz alta | *quedate con el efecto que el propio texto le atribuye* |
+| `auditar_formacion_premios_ultima_fila` | 2 | **el destinatario invertido** | *no te quedes en el medio con los que hablan* | el texto no le dice al lector que NO se quede en el medio: dice que el medio es donde estaban los que hablaban y que el autor se fue por la periferia | *andate por el borde del acto mientras sigue, que es lo que el texto hace* |
+| **total de puentes escritos y RETIRADOS EN EL ACTO** | **8** | | | | |

@@ -1,0 +1,44 @@
+[
+ ('cap_01', [
+   ('ceder_control_reforzar_competencia_claridad', [
+     (1,'L97','TRANSCRIPCION'),(2,'L97','TRANSCRIPCION'),(3,'L97','TRANSCRIPCION'),
+     (4,'L97','TRANSCRIPCION'),(5,'L97','TRANSCRIPCION'),(6,'L97','TRANSCRIPCION'),
+     (7,'L97','TRANSCRIPCION')]),
+ ]),
+ ('cap_02', [
+   ('cambiar_forma_trabajar_conservar_plantilla', [
+     (1,'L25','TRANSCRIPCION'),(2,'L25','TRANSCRIPCION'),(3,'L25','TRANSCRIPCION'),
+     (4,'L29','TRANSCRIPCION'),(5,'L29','TRANSCRIPCION')]),
+   ('encargar_meta_especifica_dejar_libre_metodo', [
+     (1,'L49','TRANSCRIPCION'),(2,'L49 mas L51','TRANSCRIPCION'),(3,'L49','TRANSCRIPCION'),
+     (4,'L49','TRANSCRIPCION'),(5,'L33','TRANSCRIPCION')]),
+ ]),
+ ('cap_03', [
+   ('recorrer_organizacion_escuchar_plantilla', [
+     (1,'L11','TRANSCRIPCION'),(2,'L15','TRANSCRIPCION'),(3,'L15','TRANSCRIPCION'),
+     (4,'L15','TRANSCRIPCION'),(5,'L15','TRANSCRIPCION'),(6,'L15','TRANSCRIPCION'),
+     (7,'L15','TRANSCRIPCION')]),
+   ('observar_reunion_rutinaria_senales_plantilla', [
+     (1,'L17','TRANSCRIPCION'),(2,'L21','TRANSCRIPCION'),(3,'L19','TRANSCRIPCION'),
+     (4,'L19','TRANSCRIPCION'),(5,'L19','TRANSCRIPCION'),(6,'L19','TRANSCRIPCION'),
+     (7,'L21','TRANSCRIPCION'),(8,'L21','TRANSCRIPCION'),(9,'L19','TRANSCRIPCION')]),
+   ('seguir_frustrado_preguntar_implantacion_ideas', [
+     (1,'L23','TRANSCRIPCION'),(2,'L25','TRANSCRIPCION'),(3,'L27','TRANSCRIPCION'),
+     (4,'L27','TRANSCRIPCION'),(5,'L27','TRANSCRIPCION'),(6,'L27','TRANSCRIPCION'),
+     (7,'L27','TRANSCRIPCION'),(8,'L29','TRANSCRIPCION')]),
+   ('contar_firmas_cadena_tramite_parado', [
+     (1,'L37','TRANSCRIPCION'),(2,'L37','TRANSCRIPCION'),(3,'L37','TRANSCRIPCION'),
+     (4,'L39','TRANSCRIPCION'),(5,'L39','TRANSCRIPCION'),(6,'L39','TRANSCRIPCION'),
+     (7,'L39','TRANSCRIPCION'),(8,'L43','TRANSCRIPCION'),(9,'L43','TRANSCRIPCION'),
+     (10,'L41 mas L43','TRANSCRIPCION')]),
+   ('inspeccionar_reparto_informacion_notas_jefe', [
+     (1,'L45','TRANSCRIPCION'),(2,'L45','TRANSCRIPCION'),(3,'L47','TRANSCRIPCION'),
+     (4,'L49','TRANSCRIPCION'),(5,'L49','TRANSCRIPCION'),(6,'L51','TRANSCRIPCION'),
+     (7,'L53','TRANSCRIPCION'),(8,'L53','TRANSCRIPCION')]),
+   ('auditar_formacion_premios_ultima_fila', [
+     (1,'L55','TRANSCRIPCION'),(2,'L55 mas L57','TRANSCRIPCION'),(3,'L57','TRANSCRIPCION'),
+     (4,'L57','TRANSCRIPCION'),(5,'L57','TRANSCRIPCION'),(6,'L57','TRANSCRIPCION'),
+     (7,'L55','TRANSCRIPCION'),(8,'L55','TRANSCRIPCION'),(9,'L55','TRANSCRIPCION'),
+     (10,'L55','TRANSCRIPCION'),(11,'L55','TRANSCRIPCION')]),
+ ]),
+]

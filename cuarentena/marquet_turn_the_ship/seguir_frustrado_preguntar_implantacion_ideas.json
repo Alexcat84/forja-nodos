@@ -1,0 +1,43 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "id": "seguir_frustrado_preguntar_implantacion_ideas",
+  "titulo": "Seguir al que viste frustrado en una reunion y preguntarle, idea por idea, como la implanto",
+  "denominaciones": {
+    "nombre_largo": "La conversacion que el autor tiene al salir de la reunion con el responsable que vio frustrado: nombrarle lo que vio, dejarle contar la vision que tiene de lo suyo, y preguntar por cada idea de mejora como la llego a implantar",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "leader-follower"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "chain of command"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando acabas de ver en una reunion a un responsable frustrado o a la defensiva y quieres saber si la causa esta en el o en el sistema en que trabaja.",
+  "entregable_esperado": "La cuenta de por que las ideas de ese responsable no llegaron a pasar, respuesta por respuesta, y su ejemplo concreto de una que se quedo sin programar o cancelada.",
+  "pasos_accionables": [
+    "Al acabar la reunion, siguelo a su sitio de trabajo. El texto lo dice asi: despues de la reunion segui a Dave a su camarote.",
+    "Nombrale lo que viste, sin pregunta y sin acusacion. La frase del texto es que parecias un poco frustrado.",
+    "Dejale contar la vision que tiene de como quiere que funcione lo suyo, y escuchale hasta el final. El texto registra que al escucharle se fue poniendo cada vez mas entusiasmado e impresionado, y que a el lo estaban ignorando.",
+    "Segun vaya desgranando las ideas que tiene para mejorar su area, pregunta por cada una como la implanto.",
+    "Fijate en si la respuesta es siempre la misma. En el texto lo fue todas las veces: alguien mas arriba en la cadena de mando no habia apoyado la iniciativa, asi que no paso nada.",
+    "Mira si lo mismo pasa un piso mas abajo. El texto registra que los suboficiales que trabajaban para el tampoco parecian dispuestos a salir con ideas propias.",
+    "Quedate con el ejemplo concreto que salga de ahi. El del texto es el adiestramiento de ataque con misiles Tomahawk que habia querido dar a los oficiales varias veces, con el examen de enero por delante, y que o no se llego a programar nunca o se cancelo.",
+    "Lee el resultado como el texto lo lee: en esencia te estaba describiendo un problema propio del modelo de lider a seguidores, aunque no usara esas palabras."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_03.md, unidad Cap. 5, titulo textual Call to Action. FRONTERA DENTRO DEL NODO, declarada aqui porque EXTRACTOR.md 10 la pide: el paso 1 sale de la linea 23, el paso 2 de la linea 25 y los pasos 3 a 7 de la linea 27, las tres dentro de la PIEZA P4 de la frontera publicada en esta vuelta, 149 palabras; el paso 8 sale de la linea 29, que es la PIEZA R4 y esta clasificada POSTURA y CASO. Todo es de la misma unidad y del mismo libro. POR QUE EL PASO 8 VIENE DE UNA PIEZA NO MINADA: la linea 29 es la regla de lectura con que el propio libro interpreta la conversacion de la linea 27, y sin ella el nodo tendria la entrevista y no su veredicto. La pieza sigue siendo postura por su cuerpo, que es el diagnostico del modelo y la biografia del entrevistado; lo que tomo de ella es la frase que lee la conversacion. POR QUE ES PROCEDIMIENTO Y NO CASO, con D.27 delante: el libro pone SU PROPIO inventario de ETAPAS de la conversacion, nombradas una a una y en orden (seguirlo, nombrarle lo que viste, dejarle contar su vision, preguntar por cada idea como la implanto), y pone la respuesta que se repite y el ejemplo concreto. No hay adjetivo de adecuacion en el sitio del criterio. EL CASO ENTRA COMO EJEMPLO NOMBRADO DENTRO DE LA DOCTRINA (manual 3.5): los nombres y el Tomahawk van dentro de los pasos como el caso del texto, y el entregable NO lleva ningun dato del caso. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE. TRES PASOS QUE ESCRIBI Y REESCRIBI EN EL ACTO ANTES DE QUE CONTARAN COMO ESCRITOS, y los digo porque son las tres especies de puente que D.30 nombra: escribi cuenta cuantas veces sale la misma respuesta y el texto no cuenta nada, dice que cada vez era la misma, asi que quedo en fijate en si la respuesta es siempre la misma; escribi pregunta tambien por la gente que trabaja para el y el texto no dice que preguntara, dice que no parecian dispuestos, asi que quedo en mira si lo mismo pasa un piso mas abajo; y escribi pidele un ejemplo concreto con fecha y el texto no pide ninguno, trae el suyo, asi que quedo en quedate con el ejemplo concreto que salga de ahi. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: que se hace con lo que el responsable te cuente, a quien se le lleva, ni cada cuanto se repite la conversacion. El texto no lo dice."
+}

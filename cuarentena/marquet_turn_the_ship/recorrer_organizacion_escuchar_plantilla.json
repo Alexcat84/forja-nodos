@@ -1,0 +1,42 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "id": "recorrer_organizacion_escuchar_plantilla",
+  "titulo": "Recorrer la organizacion y escuchar a su gente en vez de revisar sus expedientes, con el recorrido guiado y la linterna como excusa de inspeccion",
+  "denominaciones": {
+    "nombre_largo": "El primer paso del autor al preparar el mando: caminar y escuchar lo bueno, lo malo y lo feo de la gestion de arriba abajo, montar recorridos donde cada jefe ensena sus propios espacios, y pedir una linterna para inspeccionarlos",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "walkabout"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "top-down management"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando vas a tomar el mando de una organizacion que no conoces y el procedimiento de la casa te manda dedicar las primeras semanas a revisar sus expedientes.",
+  "entregable_esperado": "Tu propia lectura de la organizacion, oida de su gente y vista en sus espacios en vez de leida en sus registros, con el estado real del material comun medido en el propio recorrido.",
+  "pasos_accionables": [
+    "Pregunta primero por ti mismo cuando fue la ultima vez que caminaste tu organizacion para oir lo bueno, lo malo y lo feo de la gestion de arriba abajo. El texto abre con esa pregunta dirigida al lector y llama a caminar y escuchar su primer paso al preparar el mando.",
+    "Deja de lado la revision de expedientes que el procedimiento manda. El texto enumera la lista que le tocaba repasar en dos semanas: registros de formacion, de escuela, administrativos, de premios, de ascensos, los de operacion y mantenimiento de la planta del reactor, el sistema de armas, los torpedos y misiles, calendarios, ejercicios y material clasificado; y dice que la ignoro.",
+    "Gasta ese tiempo caminando la instalacion y hablando con la gente.",
+    "Monta ademas una serie de recorridos en los que cada jefe o cada oficial te ensene sus propios espacios.",
+    "Pideles que traigan una linterna para poder hacer esas inspecciones como se deben hacer.",
+    "Lee el estado de esas linternas como dato y no como examen. El texto dice que no pretendia ser una prueba, y que estaban lamentables: rotas, con las pilas gastadas y las bombillas mortecinas, de forma que no se veia nada.",
+    "Consiguete una que funcione y llevala encima a todas partes. El texto registra lo que vino despues sin pedirlo: pronto otros empezaron a llevar linternas que tambien funcionaban."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_03.md, unidad Cap. 5, titulo textual Call to Action. FRONTERA DENTRO DEL NODO, declarada aqui porque EXTRACTOR.md 10 la pide: el paso 1 sale de la linea 11, que es la PIEZA P1 de la frontera publicada en esta vuelta, 37 palabras; los pasos 2 a 7 salen de la linea 15, que es la PIEZA P2, 169 palabras. Las dos lineas son de la misma unidad y del mismo libro. POR QUE ES PROCEDIMIENTO Y NO CASO, con D.27 delante: el capitulo entero es narrativo y en pasado, y leido por encima se lee como autobiografia. Esta pieza pasa la prueba del inventario porque el libro pone SU PROPIO inventario de MEDIOS, nombrados uno a uno: caminar y escuchar, los recorridos guiados donde cada jefe ensena sus espacios, y la linterna que se pide para inspeccionar. Y pone ademas, uno a uno, el inventario de los OBJETOS que decide NO revisar, que es lo que da sentido al paso 2. No hay adjetivo de adecuacion en el sitio del criterio. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: cuantos recorridos se montan, cada cuanto se repiten, a quien se le cuenta lo que se oyo, ni que se hace con las linternas rotas. El texto no lo dice y ponerlo seria un puente de la especie periodo o destinatario. El texto si da una cifra de plazo, las dos semanas, pero es el plazo de la revision que se ignora y no el del recorrido, y por eso va en el paso 2 y no en la activacion. DISCUTIBLE MARCADO ANTES DE SABER SI ACIERTO, y va en el reporte de esta vuelta: el paso 7 lleva pegada una consecuencia observada (que otros empezaron a llevar linternas que funcionaban) y no una instruccion. La dejo porque el texto la escribe en la misma frase que la accion y porque es lo que hace de la linterna un medio y no una anecdota; pero quien lea que una consecuencia no es un paso tiene donde agarrarse."
+}

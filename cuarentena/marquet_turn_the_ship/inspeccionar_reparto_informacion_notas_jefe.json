@@ -1,0 +1,43 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "id": "inspeccionar_reparto_informacion_notas_jefe",
+  "titulo": "Inspeccionar con el responsable delante como se reparte la informacion que entra, y leer las notas que el jefe deja escritas en ella",
+  "denominaciones": {
+    "nombre_largo": "El tablero de mensajes del barco leido con el jefe de maquinas delante: el orden de reparto que fija el protocolo, las notas que el comandante y el segundo dejan escritas, la pregunta que se le hace al subordinado y los dos costes que el subordinado nombra",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "message board"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "routing stamp"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando quieres saber si el reparto de la informacion que entra cada dia a la organizacion le esta quitando decisiones a quien las tiene que tomar.",
+  "entregable_esperado": "El orden de reparto de la informacion que entra escrito con el efecto que produce, las notas que el jefe deja escritas sobre ella, y los costes que el subordinado nombra al leerlas.",
+  "pasos_accionables": [
+    "Coge el canal por el que entra la informacion del dia y miralo con el responsable delante. El del texto es el tablero de mensajes: los treinta o cuarenta mensajes navales que llegaban al barco cada dia, impresos y repartidos en una tablilla con un sello de reparto que tenia un hueco para que cada uno pusiera sus iniciales al haberlos visto.",
+    "Mira que clases de cosa entran por ahi. El texto nombra tres: generales y administrativos, que anunciaban cursos o cambios de requisitos de papeleo o actualizaciones de manuales; de material, que informaban de cambios en procedimientos de mantenimiento o pedian datos de una valvula concreta de un fabricante concreto; y operativos, que daban direccion al calendario del barco, le asignaban espacio de navegacion y le encargaban operaciones.",
+    "Lee el orden de reparto que fija el protocolo, y quedate con el efecto que el propio texto le atribuye. En el suyo los mensajes van primero al comandante, luego al segundo y despues cadena de mando abajo; asi el comandante era el primero en saber cualquier cambio del calendario del barco, y el texto lo cierra diciendo que era asi como controlaban la informacion.",
+    "Mira las notas que el jefe ha dejado escritas en lo que ya paso por sus manos. El texto pone dos textuales: mete este cambio de mensaje en la publicacion, y quiero un informe de esto para el viernes.",
+    "Escucha lo que el responsable dice al leerlas. El del texto lo dice asi: me estan diciendo que haga cosas antes de que yo sepa siquiera que tengo cosas que hacer.",
+    "Preguntale despues por que crees que el comandante y el segundo sienten que necesitan escribir esas cosas. Es la pregunta textual del autor.",
+    "Quedate con el motivo que el subordinado atribuye al jefe. En el texto es que si algo no pasa y un equipo de inspeccion mira los registros, el comandante puede decir yo le dije que lo hiciera, y saca buena nota por estar muy implicado y por tener sus huellas por todas partes.",
+    "Quedate con los dos costes que el subordinado nombra, que son los dos que el texto escribe: que le mandan hacer cosas que ya sabe que tiene que hacer, y que muchas veces le dicen exactamente como y cuando hacerlas, lo que le quita cualquier oportunidad de decidir que pudiera tener."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_03.md, unidad Cap. 5, titulo textual Call to Action. FRONTERA DENTRO DEL NODO, declarada aqui porque EXTRACTOR.md 10 la pide: los pasos 1 y 2 salen de la linea 45, el paso 3 de la linea 47, los pasos 4 y 5 de la linea 49, el paso 6 de la linea 51 y los pasos 7 y 8 de la linea 53. Las cinco lineas estan dentro de la PIEZA P6 de la frontera publicada en esta vuelta, 415 palabras, la mas larga del capitulo, y son de la misma unidad y del mismo libro. POR QUE ES PROCEDIMIENTO Y NO CASO, con D.27 delante: el libro pone SU PROPIO inventario de OBJETOS DE TRABAJO nombrados uno a uno (el canal, el sello de iniciales, las tres clases de mensaje, el orden de reparto, las dos notas textuales) y pone ademas LA PREGUNTA en su forma literal, que es un medio y no una meta. No hay adjetivo de adecuacion en el sitio del criterio. LA PREGUNTA DEL PASO 6 ES LA LINEA 51 ENTERA, que en el libro es una sola frase entre comillas, y es el paso mas accionable del nodo: se ejecuta diciendola. POR QUE UN SOLO NODO Y NO DOS, con P.19 delante: el reparto y las notas son el mismo objeto visto dos veces, y el texto los encadena en una escena, asi que fundirlos es lo que P.19 manda y partirlos fabricaria el gemelo de su propio donante. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE. DOS PASOS REESCRITOS EN EL ACTO ANTES DE QUE CONTARAN COMO ESCRITOS: escribi separa lo que entra por sus clases, y el texto no manda clasificar nada, describe las tres clases, asi que quedo en mira que clases de cosa entran por ahi; y escribi di en voz alta para que sirve ese orden, que el texto no dice, asi que quedo en quedate con el efecto que el propio texto le atribuye. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: que se cambia en el reparto despues de verlo, si el jefe deja de escribir notas, a quien se le cuenta, ni cada cuanto se revisa. El texto describe el hallazgo y no trae el remedio, y el remedio es lo que el resto del libro desarrolla en otras unidades. DISCUTIBLE MARCADO ANTES DE SABER SI ACIERTO, y va en el reporte de esta vuelta: los pasos 7 y 8 son quedate con, o sea que el entregable es una lectura y no un acto. Sostengo que son pasos porque el texto los pone como lo que el observador saca de la conversacion y porque sin ellos el nodo se queda en la pregunta sin su respuesta; pero quien lea que quedate con no es un imperativo ejecutable tiene donde agarrarse."
+}

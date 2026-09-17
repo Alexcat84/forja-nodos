@@ -1,0 +1,15 @@
+MIS CLASES CIEGAS DE LA VUELTA 1 DEL FRENTE marquet_turn_the_ship
+Escritas ANTES de consultar ninguna razon escrita (HEREDADO 2 de la ACTA 30).
+Formato: id | MI CLASE | MI FIDELIDAD D.30 | MI VEREDICTO DE VECINDAD
+
+auditar_formacion_premios_ultima_fila        | PROCEDIMIENTO | SOSTIENE | NUEVO, no gemelo de observar_reunion_rutinaria_senales_plantilla
+cambiar_forma_trabajar_conservar_plantilla   | PROCEDIMIENTO | SOSTIENE | NUEVO, no gemelo de encargar_meta_especifica_dejar_libre_metodo
+ceder_control_reforzar_competencia_claridad  | PROCEDIMIENTO CON RESERVA EN EL PASO 1 | SOSTIENE | NUEVO
+contar_firmas_cadena_tramite_parado          | PROCEDIMIENTO | SOSTIENE | NUEVO
+encargar_meta_especifica_dejar_libre_metodo  | PROCEDIMIENTO | SOSTIENE | NUEVO
+inspeccionar_reparto_informacion_notas_jefe  | PROCEDIMIENTO | SOSTIENE | NUEVO
+observar_reunion_rutinaria_senales_plantilla | PROCEDIMIENTO | SOSTIENE | NUEVO
+recorrer_organizacion_escuchar_plantilla     | PROCEDIMIENTO | SOSTIENE | NUEVO, cabeza de escena de cap_03 pero NO cabeza D.37
+seguir_frustrado_preguntar_implantacion_ideas| PROCEDIMIENTO | SOSTIENE | NUEVO
+
+MI FRONTERA CIEGA DE cap_03: en .marquet_v1/mi_frontera_cap03.txt, cerrada al digito.
