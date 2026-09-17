@@ -1,0 +1,11 @@
+EL BLOQUE DE VIGENCIA D.15, ANTES Y DESPUES DE ESTA VUELTA
+  RANCIO en la vuelta 31 : 26
+  RANCIO al cerrar la 32 : 30
+  NUEVOS de esta vuelta  : 4
+  que dejaron de serlo   : 0
+
+LOS NUEVOS, UNO A UNO:
+  [RANCIO] veredicto recorrer_rueda_conscientemente_cultura_equipo contra recorrer_rueda_hacer_cosas_equipo (linea 265, 2026-09-16): el texto de su candidato 'recorrer_rueda_conscientemente_cultura_equipo' cambio desde que se emitio (huella 51c014343239ec45, hoy f2039c320fabe9f9)
+  [RANCIO] veredicto recorrer_rueda_hacer_cosas_equipo contra recorrer_rueda_conscientemente_cultura_equipo (linea 267, 2026-09-16): el texto de su vecino 'recorrer_rueda_conscientemente_cultura_equipo' cambio desde que se emitio (huella 51c014343239ec45, hoy f2039c320fabe9f9)
+  [RANCIO] veredicto recorrer_rueda_conscientemente_cultura_equipo contra decidir_quien_comunica_cada_cuanto (linea 392, 2026-09-16): el texto de su candidato 'recorrer_rueda_conscientemente_cultura_equipo' cambio desde que se emitio (huella 51c014343239ec45, hoy f2039c320fabe9f9)
+  [RANCIO] veredicto recorrer_rueda_conscientemente_cultura_equipo contra recorrer_rueda_conscientemente_cultura_equipo (linea 396, 2026-09-16): el texto de su vecino 'recorrer_rueda_conscientemente_cultura_equipo' cambio desde que se emitio (huella 51c014343239ec45, hoy f2039c320fabe9f9)

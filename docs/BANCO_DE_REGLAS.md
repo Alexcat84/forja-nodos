@@ -2292,7 +2292,80 @@ la de arriba falla.
 
 ---
 
-## D.45. UNA CIFRA VALE EN EL INSTANTE DEL SELLO (16 sep 2026, decision del fundador)
+## D.45. EL PARALELO EXTRAE, EL SERIAL INSERTA (16 sep 2026, decision del fundador)
+
+*Decision del fundador del 16 sep 2026. **Es la regla que abre la extraccion en paralelo
+por libro**, y lo que la hace posible es que separa dos actos que hasta hoy corrian juntos.*
+
+### Por que se puede paralelizar la extraccion y NO la insercion
+
+| acto | que toca | se puede en paralelo |
+|---|---|---|
+| **EXTRAER** | escribe en `cuarentena/<libro>/`, **ficheros nuevos y disjuntos**, uno por candidato | **SI** |
+| **INSERTAR** | escribe en `dataset/nodos.jsonl`, `bitacora/`, `censos/` y `config/pares_mutuos.jsonl`, **que son sedes UNICAS y compartidas** | **NO** |
+
+**Y NO ES UNA PRECAUCION TEORICA: ES LA CAIDA DE LA VUELTA 28.** Dos `insertar` a la vez,
+y un nodo entro y desaparecio **con el `gate` en VERDE encima**. Por eso existe
+`src/cerrojo.py`, y por eso esta regla **no se apoya solo en el cerrojo**: el cerrojo
+impide que dos escrituras se pisen, **no hace que dos lecturas del grafo midan lo mismo.**
+Cada insercion cambia lo que la siguiente mide (`D.36`, el orden que lee), asi que **dos
+inserciones en paralelo no son la misma campania corriendo mas deprisa: son dos campanias
+distintas.**
+
+### La letra
+
+> **LA EXTRACCION DE LIBROS DISTINTOS PUEDE CORRER EN PARALELO**, una rama y una carpeta
+> por libro, **siempre en `MODO_INSERCION=cuarentena`.**
+>
+> **LA INSERCION ES SERIAL Y UNICA:** una sola sesion, en la rama de insercion, **de un
+> libro por vez, con gate entre libros.**
+>
+> **DURANTE EL PARALELO RIGE MORATORIA DE MAQUINARIA Y DOCTRINA:** ninguna sesion toca
+> `src/`, el banco, el arnes ni los protocolos. **Una pregunta de doctrina es PARADA y
+> sube al fundador.**
+
+### Por que la moratoria de doctrina, y no solo la de maquinaria
+
+**Tres sesiones que corrigen la misma regla a la vez producen tres doctrinas.** El banco
+es una sede unica igual que el dataset, y **una regla escrita dos veces en paralelo es
+peor que una regla que falta**: la que falta se nota. **Por eso una pregunta de doctrina
+no se resuelve en un frente: se para y sube.**
+
+**Y LA MORATORIA DE MAQUINARIA YA EXISTIA** (`EXTRACTOR.md` 13, cosecha `7.F`). Lo que esta
+regla anade es que **en paralelo no admite ni la excepcion de la caida de dato**: un frente
+que encuentre una caida de dato **la declara y para**, porque arreglar `src/` en tres ramas
+a la vez es exactamente lo que la cosecha siguiente no sabria fundir.
+
+### La guarda, que es lo unico que el arnes puede comprobar
+
+> **AL ARRANCAR, SI `MODO_INSERCION=insertar`, LA RAMA ACTIVA TIENE QUE SER LA RAMA DE
+> INSERCION. Si no lo es, el arnes se detiene.**
+
+**El arnes no sabe que es un libro ni que es un frente**, igual que no sabe que es un lote
+cerrado (`D.39`). Lo unico que puede comprobar sin leer nada es **donde esta parado y con
+que permiso corre**, y eso basta para que **ninguna rama de libro pueda insertar por
+accidente.** Se declara con `RAMA_DE_INSERCION`, que por defecto es
+`extraccion-mundo-11`.
+
+**Caso positivo:** con `MODO_INSERCION=insertar` en una rama que no es la de insercion,
+**el arnes se detiene y nombra las dos ramas**. **Negativo:** en cuarentena corre en
+cualquier rama, que es lo que el paralelo necesita.
+
+### El procedimiento de cosecha va escrito aparte
+
+**`docs/loop/PARALELO.md`**: como se lanza cada frente, la regla de que ninguno inserta, y
+**como se funde cada rama de libro a la rama de insercion**, una por vez, con gate y suite
+detras de cada una.
+
+---
+
+## D.46. UNA CIFRA VALE EN EL INSTANTE DEL SELLO (16 sep 2026, decision del fundador)
+
+> ### RENUMERADA EL MISMO DIA. **ERA `D.45` Y PASA A `D.46`.**
+>
+> El numero se lo puse yo esta manana, porque el punto 2 de aquella decision no venia
+> numerado. **El fundador asigno `D.45` por la tarde a otra regla**, y el numero del
+> fundador manda sobre el mio. **El contenido no cambia; solo el numero.**
 
 *Punto 2 de la decision del fundador del 16 sep 2026. **La racha del auditor se reinicia
 con esta condicion mecanica encima**, que es la forma que ya funciono con `D.40`, `D.41` y
@@ -2342,3 +2415,34 @@ guarda en rojo no deja sellar) y su negativo (todo verde sella).
 **LO QUE NO HACE:** no comprueba que las cifras de la pagina sean ciertas. **Hace imposible
 que una medida caduque sin que quede constancia de que caduco.** Lo demas lo caza una
 lectura.
+
+## D.47. MODO AUSTERO DE LA FORJA (16 sep 2026, decision del fundador)
+
+*Vigente **hasta que se cierre el mundo 11**. Punto 2 de la decision del 16 sep 2026.*
+
+> **EL AUSTERO RECORTA TINTA, NO CONTROL.**
+
+### Lo que encoge
+
+| | |
+|---|---|
+| **el reporte y el acta** | **nada que el registro ya diga**; cifras talladas; **los discutibles por numero y linea**, sin reabrir el argumento |
+| **los lotes** | **al techo de candidatos** (`EXTRACTOR.md` 12.4), no por encima |
+| **los instrumentos** | **CERO nuevos**, salvo que una caida **de DATO** lo exija **con su cita** |
+
+### Lo que NO se toca, y es la mitad que importa
+
+**LAS GUARDAS DE DATO QUEDAN INTACTAS:** el cerrojo (`D.44`), el censo no decreciente
+(`D.44`), la aduana entera con sus tres señales y sus doce guardas, y la fidelidad `D.30`
+con su relectura contra el parrafo.
+
+> **UN REPORTE MAS CORTO NO ES UN REPORTE CON MENOS PRUEBA.** Lo que se quita es la
+> repeticion: lo que el `loop.log` ya registro, lo que el acta anterior ya adjudico, el
+> argumento que ya esta escrito en el banco. **Lo que no se quita nunca es la cifra con su
+> instrumento al lado** (`D.38.3`), **la tabla pegada de su fichero** (`D.41`) **ni la ruta
+> que sostiene lo que dice sostener** (`D.42`).
+
+**POR QUE AHORA.** La campania va por el `45` por ciento de un lote de `142` y quedan
+**cuatro libros**. Un reporte de treinta mil lineas no es un registro mejor: **es un
+registro que nadie relee**, y el propio auditor lleva tres actas midiendo que lo que se
+pierde no es la cifra, **es el encargo que no llego.**

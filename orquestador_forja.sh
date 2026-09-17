@@ -70,6 +70,12 @@ RAMA="${RAMA:-bucle}"
 # cae al default: un modo mal escrito es una autorizacion que nadie dio.
 MODO_INSERCION="${MODO_INSERCION:-insertar}"
 
+# LA RAMA DONDE SE INSERTA, Y SOLO AHI (D.45, 16 sep 2026). La extraccion de
+# libros distintos corre en paralelo, una rama por libro y todas en cuarentena;
+# la insercion es serial y unica. El arnes se detiene si alguien pide insertar
+# desde una rama de libro.
+RAMA_DE_INSERCION="${RAMA_DE_INSERCION:-extraccion-mundo-11}"
+
 # ---------------------------------------------------------------------------
 # EL INFORME DE LOTE QUE NO CABE EN UN TURNO SE SACA DEL TURNO
 # (12 sep 2026, decision del fundador, punto 2).
@@ -156,6 +162,27 @@ comprobar_arranque() {
       exit 1
       ;;
   esac
+  # 3. SI SE VA A INSERTAR, LA RAMA TIENE QUE SER LA DE INSERCION (D.45).
+  #
+  # LA EXTRACCION DE LIBROS DISTINTOS CORRE EN PARALELO; LA INSERCION NO. El
+  # dataset, la bitacora, los censos y los pares mutuos son sedes UNICAS, y cada
+  # insercion cambia lo que la siguiente mide (D.36): dos inserciones a la vez no
+  # son la misma campania mas deprisa, son dos campanias distintas. La caida de la
+  # vuelta 28 ya lo enseño con un nodo perdido y el gate en verde.
+  #
+  # EL ARNES NO SABE QUE ES UN LIBRO NI QUE ES UN FRENTE, igual que no sabe que es
+  # un lote cerrado (D.39). Lo unico que puede comprobar sin leer nada es DONDE
+  # esta parado y CON QUE PERMISO corre, y eso basta para que ninguna rama de libro
+  # pueda insertar por accidente.
+  if [ "$MODO_INSERCION" = "insertar" ] && [ "$activa" != "$RAMA_DE_INSERCION" ]; then
+    log "DETENIDO ANTES DE ARRANCAR: MODO_INSERCION=insertar en la rama \"$activa\","
+    log "  y la rama de insercion es \"$RAMA_DE_INSERCION\" (D.45)."
+    log "  LA INSERCION ES SERIAL Y UNICA. Un frente de extraccion corre asi:"
+    log "      MODO_INSERCION=cuarentena RAMA=$activa bash orquestador_forja.sh"
+    log "  Si de verdad quieres insertar, hazlo en la rama de insercion, o declara"
+    log "  otra con RAMA_DE_INSERCION=<rama>."
+    exit 1
+  fi
   log "arranque: rama $RAMA, MODO_INSERCION=$MODO_INSERCION"
 }
 

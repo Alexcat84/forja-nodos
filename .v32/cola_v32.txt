@@ -1,0 +1,25 @@
+| lo que queda | cifra del encargo | **cifra que mido hoy** | estado |
+|---|---:|---:|---|
+| la arista de la cabeza al decimo rotulo | 1 | **0** | **CERRADA HOY** por la `TAREA 2.d`. Los dos extremos en el GRAFO |
+| las dos aristas con fecha de caducidad de la `TAREA 3.b` | 2 | **0** | **CERRADAS LAS DOS HOY**, declaradas en el acto de cada insercion |
+| aristas en cola escritas en la bitacora | 4 escritas, 3 cableadas, 1 abierta | **4** escritas, **3** cableadas, **1** abierta | la abierta es la linea `371`, y la cierra que entre la MADRE, hoy en bandeja |
+| el `resumen_teorico` de `recorrer_rueda_conscientemente` | 1 | **0** | **CERRADA HOY** por la `TAREA 4`, correccion declarada sin borrar |
+| **huecos de transcripcion** | 2 ejemplares y 2 especies | **2** y **2** | sigue **SIN VIA** y **NO construyo la via** (moratoria de maquinaria, y el encargo lo manda expresamente) |
+| las entradillas de `LISTEN`, `CLARIFY` y `DEBATE` de `cap_07` sin nodo | 3 de 7 | **3** de **7** | **NADA la cierra**: adjudicado consecuencia buena (`ACTA 29` `5`). Registro, no deuda |
+| `L221` de `cap_07`, *turn on that rock tumbler* | 1 | **1** tramo | **NO se toca**: `cap_07` cerrado en insercion |
+| `cap_04` releido, candidatos y pasos | 6 y 48 | **6** y **48** | **SIGUE SIN CABER**, y van cuatro vueltas. Lo declaro otra vez con su motivo |
+| la frontera por capitulo con las `QUESTIONS TO CONSIDER` | 14 de 17 | **14** de **17** | la vuelta que mine un capitulo del lote 5 |
+| las `8` lineas `SIN HUELLA` de `D.15` | 8, las 8 declaradas | **8**, **las 8 declaradas** | **CERRADA**. Lo que sigue imprimiendo `8` es el instrumento, no el trabajo |
+| `censos/series_y_cabezas.md` | 0 filas con 267 nodos | **0** filas con **270** nodos | **propuesta registrada y NO encargada.** Moratoria |
+| bandeja del lote 4 | 78 | **75** | la insercion. **`3` menos que al abrir** |
+| de esa bandeja, lo que queda de `cap_11` | 3 | **0** | **CERRADA HOY**: `cap_11` queda entero en el grafo, `14` de `14` |
+| lote 5 | 3 | **3** | **NO TOCADO**, y es deliberado (`D.39`) |
+
+LAS ARISTAS EN COLA, CONTADAS DE SU SEDE Y NO DE LA MEMORIA
+
+| linea | arista en cola | estado | que la cierra |
+|---:|---|---|---|
+| `265` | `recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo` | **CABLEADA** | nada: los dos extremos viven y la arista esta puesta |
+| `279` | `crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas` | **CABLEADA** | nada: los dos extremos viven y la arista esta puesta |
+| `333` | `minimizar_impuesto_colaboracion_equipo > proteger_tiempo_equipo_jefe` | **CABLEADA** | nada: los dos extremos viven y la arista esta puesta |
+| `371` | `desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario` | **ABIERTA** | que entre la MADRE, hoy en bandeja |

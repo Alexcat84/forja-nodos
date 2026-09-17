@@ -610,6 +610,30 @@ comprobar "y la vuelta sigue entera"         "VUELTA 1 : AUDITOR"           "$sa
 prompt_ext="$(cat "$taller/prompt_extractor.txt" 2>/dev/null || echo AUSENTE)"
 comprobar_no "el prompt no promete un informe que no hay" "NO LO RECOMPUTES" "$prompt_ext"
 
+# --------------------------------------------------------------- escenario 16
+echo ""
+echo "ESCENARIO 16: D.45. CON MODO_INSERCION=insertar EN UNA RAMA QUE NO ES LA DE"
+echo "              INSERCION, el arnes se detiene ANTES de gastar un turno. El"
+echo "              paralelo extrae y el serial inserta: dos inserciones a la vez"
+echo "              no son la misma campania mas deprisa, son dos campanias."
+taller="$(montar_banco e16)"
+salida="$(RAMA_DE_INSERCION=otra-rama MODO_INSERCION=insertar FALSO_EXTRACTOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "se detiene antes de arrancar"     "DETENIDO ANTES DE ARRANCAR"  "$salida"
+comprobar "nombra las DOS ramas"             "y la rama de insercion es"   "$salida"
+comprobar "dice como se corre un frente"     "MODO_INSERCION=cuarentena"   "$salida"
+comprobar_no "no gasta un turno"             "extractor listo"             "$salida"
+
+# -------------------------------------------------------------- escenario 16b
+echo ""
+echo "ESCENARIO 16b: EL CASO NEGATIVO. En cuarentena corre en CUALQUIER rama, que"
+echo "               es justo lo que el paralelo necesita."
+taller="$(montar_banco e16b)"
+salida="$(RAMA_DE_INSERCION=otra-rama MODO_INSERCION=cuarentena FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar_no "NO se detiene"                 "DETENIDO ANTES DE ARRANCAR"  "$salida"
+comprobar "y el turno corre"                 "extractor listo"             "$salida"
+
 echo ""
 echo "================================================================"
 echo "RESULTADO: $verdes comprobaciones en VERDE, $rojos en ROJO"
