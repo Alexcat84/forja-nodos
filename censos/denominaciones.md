@@ -641,3 +641,11 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | pasear_organizacion_hallar_problemas_pequenios | otro_idioma | Management by walking around | ingles | - |
 | 2026-09-16 | debatir_decidir_asuntos_cultura_evitar_delegar | nombre_largo | Los asuntos de cultura que el texto nombra uno a uno como los que se delegan por no gastar neuronas en ellos, con los dos sitios adonde va la cultura si se delegan o si nadie los decide | castellano | - |
 | 2026-09-16 | debatir_decidir_asuntos_cultura_evitar_delegar | otro_idioma | Debate and decide explicitly. Don't let things that pervert your culture just happen | ingles | - |
+| 2026-09-17 | integrar_trabajo_vida_mejor_version | nombre_largo | Integracion de trabajo y vida: el rechazo del juego de suma cero, y las horas que te mantienen centrado contadas dentro y no fuera | castellano | - |
+| 2026-09-17 | integrar_trabajo_vida_mejor_version | otro_idioma | work-life integration | ingles | - |
+| 2026-09-17 | definir_receta_propia_mantenerse_centrado | nombre_largo | Tu receta para mantenerte centrado: haz lo que te funcione a ti, dale prioridad cuando aprieta, y la receta de la autora como ejemplo y no como norma | castellano | - |
+| 2026-09-17 | definir_receta_propia_mantenerse_centrado | otro_idioma | figure out your recipe to stay centered and stick to it | ingles | - |
+| 2026-09-17 | agendar_cuidados_propios_cumplirlos | nombre_largo | Calendario y presentarte por ti: las dos piezas que el libro separa y que comparten un solo objeto, la cita contigo mismo | castellano | - |
+| 2026-09-17 | agendar_cuidados_propios_cumplirlos | otro_idioma | calendar, show up for yourself | ingles | - |
+| 2026-09-17 | ceder_autoridad_unilateral_equipo | nombre_largo | Libres en el trabajo: la primera regla de la relacion que hace que la gente se sienta libre, con los tres procesos de Google como ejemplo | castellano | - |
+| 2026-09-17 | ceder_autoridad_unilateral_equipo | otro_idioma | free at work | ingles | - |

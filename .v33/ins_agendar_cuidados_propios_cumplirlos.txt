@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'agendar_cuidados_propios_cumplirlos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 350   (272 del grafo mas 78 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 273
+  censos escritos: denominaciones

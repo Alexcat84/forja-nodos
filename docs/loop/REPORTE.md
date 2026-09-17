@@ -36148,7 +36148,7 @@ porque no hay quien la firme. **La cola de vecinos la vuelvo a pagar yo dentro d
 |---:|---|---|
 | 1 | **BLOQUEANTE**: la fecha `17 sep 2026` escrita a mano el dia `16` dentro de `dataset/nodos.jsonl` y de `bitacora/VEREDICTOS.jsonl` | **CERRADA** en `Z.1`: `2` celdas tocadas, `0` choques vivos |
 | 2 | seguir insertando el lote 4, uno por vez y por el orden del libro | *abierta* |
-| 3 | `PASOS INVENTADOS` por capitulo, antes de cerrar (`D.30`) | *abierta* |
+| 3 | `PASOS INVENTADOS` por capitulo, antes de cerrar (`D.30`) | **CERRADA** en `Z.2`: `0` de `102`, `0,00` por ciento |
 
 ## Z.1. **TAREA 1, BLOQUEANTE**: la fecha que un acto se escribio a si mismo, contra el sello de la maquina
 
@@ -36249,3 +36249,215 @@ misma. Lo traigo como pregunta y no lo arreglo yo (`EXTRACTOR.md` 7).
 `.v33/fechas_despues.txt`): son `ESCRITA EN LA VUELTA <n>` dentro de `resumen_teorico` de nodos que
 entraron por `insertar`, no por `corregir`, asi que **no hay linea de bitacora con la que cuadrarlas**.
 Inventarles un sello seria lo mismo que el defecto que esta tarea corrige.
+
+## Z.2. **TAREA 3**: `PASOS INVENTADOS` de `cap_08`, releido paso a paso contra su parrafo (`D.30`)
+
+**VA ANTES QUE LA `TAREA 2` EN ESTE REPORTE PORQUE CERRO ANTES**, que es lo que `EXTRACTOR.md` 3
+manda: cada tarea anexa su fila **al cerrarse**, no al final. Y va antes **tambien por doctrina**:
+`D.30` manda la relectura de fidelidad **antes de cualquier insercion**.
+
+<!-- TALLADO: script=.v33/pasos_inventados.py salida=.v33/pasos_inventados_v33.txt -->
+
+| capitulo | nodos | **pasos escritos** | **PUENTE** | **PASOS INVENTADOS** |
+|---|---:|---:|---:|---:|
+| **`cap_08`** (lote 4, `scott_radical_candor`), el tramo de esta vuelta | 12 | **102** | **0** | **0,00 por ciento** |
+| **total del tramo de esta vuelta** | 12 | **102** | **0** | **0,00 por ciento** |
+
+    EL PEOR CAPITULO ES EL UNICO: la vuelta cierra en cap_08 y no toca ninguna otra unidad,
+    asi que el peor y el promedio son la misma cifra (AUDITOR_FORJA.md 8.3, la escalada
+    se decide sobre el peor capitulo).
+
+**`0` de `102`. `0,00` por ciento, y el tope es `10`.** El peor capitulo y el promedio son la misma
+cifra porque la vuelta cierra en una sola unidad.
+
+### Z.2.a. **LA RELECTURA ENTERA, CON LA SALIDA DEL LIBRO PEGADA POR LA MAQUINA** (`D.35`)
+
+**EL ANCLA LA PONGO YO Y EL TROZO LO SACA EL INSTRUMENTO**, y si el ancla no esta en esa linea el
+instrumento **revienta**: una linea mal apuntada no puede salir publicada como buena. Comprueba
+ademas que la relectura cubre **todos** los pasos del fichero, asi que no se puede releer medio nodo
+y publicarlo como entero. **Es el desfase de ocho lineas de la vuelta 7 vuelto imposible de teclear.**
+
+<!-- TALLADO: script=.v33/fidelidad.py salida=.v33/fidelidad_cap08.txt -->
+
+    LA RELECTURA DE FIDELIDAD D.30 DE LOS DOCE DE cap_08
+    AVISO: el trozo del libro lo saca la maquina de fuentes/scott_radical_candor/cap_08.md y
+           revienta si el ancla no esta en esa linea. LA LINEA Y EL VEREDICTO LOS PONGO
+           YO LEYENDO: es el numerador que D.30 dice que ninguna guarda puede poner.
+
+### `integrar_trabajo_vida_mejor_version`, 5 pasos, todos releidos
+
+| paso | la salida del libro, pegada por `.v33/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `27: Be relentlessly insistent on bringing your fullest and best self to work-and taking it back home again. ...` | **TRANSCRIPCION** |
+| `2` | `27: ...Don't think of it as work-life balance, some kind of zero-sum game where anything you put into your work...` | **TRANSCRIPCION** |
+| `3` | `27: ...Instead, think of it as work-life integration. If you need to get eight hours of sleep to stay centered,...` | **TRANSCRIPCION** |
+| `4` | `27: ...If you need to get eight hours of sleep to stay centered, those hours are not something that you do for ...` | **TRANSCRIPCION**, **las ocho horas son el condicional del libro y el paso las dice como suyas**: escritas como regla del lector serian la especie *el periodo* de `D.30` |
+| `5` | `27: ...Your work and your life can give each other a "double bounce." The time you spend at work can be an expr...` | **TRANSCRIPCION** |
+
+### `definir_receta_propia_mantenerse_centrado`, 9 pasos, todos releidos
+
+| paso | la salida del libro, pegada por `.v33/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `29: Figure out your "recipe" to stay centered and stick to it` | **TRANSCRIPCION**, es el rotulo del libro, y esta escrito en imperativo por el |
+| `2` | `31: The world is full of advice here, and what is enormously meaningful for one person is pure crap for anot...` | **TRANSCRIPCION** |
+| `3` | `33: Do whatever works for you. The key, I've found, is to prioritize doing it (but not overdoing it) when ti...` | **TRANSCRIPCION** |
+| `4` | `33: ...is to prioritize doing it (but not overdoing it) when times get tough. It's even more important to focus...` | **TRANSCRIPCION** |
+| `5` | `33: ...It's even more important to focus on making time for whatever keeps you centered when you are stressed a...` | **TRANSCRIPCION** |
+| `6` | `33: ...A very successful entrepreneur I knew went to the gym both before and after work during crunch times.` | **TRANSCRIPCION**, **la receta ajena va dicha como ajena**: las ocho horas y los cuarenta y cinco minutos son de la autora, y el propio `L33` escribe *do whatever works for you* |
+| `7` | `35: ...Also, every so often I need to read a novel (ideally one a week), go away for a romantic weekend with my...` | **TRANSCRIPCION** |
+| `8` | `35: ...If I skip one or two of those things for a day or two, it's OK. But that's the routine. Also, every so o...` | **TRANSCRIPCION** |
+| `9` | `35: ...If I can manage to do those things, I can usually stay centered no matter what storms are raging around ...` | **TRANSCRIPCION** |
+
+### `agendar_cuidados_propios_cumplirlos`, 5 pasos, todos releidos
+
+| paso | la salida del libro, pegada por `.v33/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `39: Put the things you need to do for yourself on your calendar, just as you would an important meeting. If ...` | **TRANSCRIPCION** |
+| `2` | `39: ...If you are having trouble leaving the office in time to get home for dinner, put your commute time in yo...` | **TRANSCRIPCION** |
+| `3` | `39: ...Pretend you have a train to catch.` | **TRANSCRIPCION**, el tren es del libro, no imagen mia |
+| `4` | `43: Don't blow off those meetings with yourself or let others schedule over them any more than you would a m...` | **TRANSCRIPCION** |
+| `5` | `43: ...or let others schedule over them any more than you would a meeting with your boss.` | **TRANSCRIPCION** |
+
+### `ceder_autoridad_unilateral_equipo`, 15 pasos, todos releidos
+
+| paso | la salida del libro, pegada por `.v33/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `47: ...is to relinquish unilateral authority. If you're a manager at Google, it got laid down for you. If you'r...` | **TRANSCRIPCION** |
+| `2` | `47: ...you're going to have to relinquish it voluntarily. That will take enormous discipline. It's natural to c...` | **TRANSCRIPCION** |
+| `3` | `47: ...It's natural to crave a little control. But power and control are illusory and won't get you where you r...` | **TRANSCRIPCION** |
+| `4` | `49: ...If you have to use someone else's name or authority to get a point across, there is little merit to the ...` | **TRANSCRIPCION** |
+| `5` | `49: ...If you believe something to be correct, focus on showing your work to prove it. Authority derives natura...` | **TRANSCRIPCION** |
+| `6` | `51: ...you're creating the conditions for them to bring it out of themselves.` | **TRANSCRIPCION** |
+| `7` | `53: ...When you treat people like cogs in a machine, you'll get no more than you demand, and you create an ince...` | **TRANSCRIPCION** |
+| `8` | `55: ...the only thing worse than tyranny is anarchy, which is, as Hobbes put it in Leviathan, "nasty, brutish, ...` | **TRANSCRIPCION** |
+| `9` | `57: ...She carefully constructed a hiring process, a promotion process, and a performance review process with t...` | **TRANSCRIPCION**, el caso de Google va **nombrado dentro** del paso que lo usa (manual 3.5) |
+| `10` | `59: ...Managers couldn't just hire people-they had to put candidates through a rigorous interview process that ...` | **TRANSCRIPCION** |
+| `11` | `59: ...Promotions were decided not by the managers but by a committee of peers. Performance ratings were influe...` | **TRANSCRIPCION** |
+| `12` | `59: ...Performance ratings were influenced by 360-degree feedback on each employee, not just the manager's subj...` | **TRANSCRIPCION** |
+| `13` | `61: Whether or not Google's extreme approach would work for your company, you can see how it gives people a ...` | **TRANSCRIPCION**, **la reserva es del libro y va dentro del paso**, no puesta por mi |
+| `14` | `63: ...I'm not recommending abdication or anarchy. I'm not talking about simply ignoring the people who report ...` | **TRANSCRIPCION** |
+| `15` | `65: I recommend that you look for places where you can let go of some of the traditional sources of a boss's...` | **TRANSCRIPCION** |
+
+### `dominar_arte_socializar_trabajo`, 9 pasos, todos releidos
+
+| paso | la salida del libro, pegada por `.v33/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `69: ...While retreats and parties can be productive if people on your team really want them, it is best to reme...` | **TRANSCRIPCION** |
+| `2` | `71: Spending time with people from work in a more relaxed setting, without the pressure of work deadlines, c...` | **TRANSCRIPCION** |
+| `3` | `71: ...It doesn't have to be expensive. You can take a walk together or have a picnic. Meeting each other's fam...` | **TRANSCRIPCION** |
+| `4` | `71: ...Meeting each other's families can also have a big impact. More memorable than the extravagant carnival s...` | **TRANSCRIPCION** |
+| `5` | `71: ...Inviting your team and their families or significant/insignificant others over to your home for a meal c...` | **TRANSCRIPCION** |
+| `6` | `73: ...when these events are introduced by management, they can feel both obligatory and forced-unintentionally...` | **TRANSCRIPCION** |
+| `7` | `73: ...You already spend a lot of hours every day with your colleagues and direct reports. Use that time to bui...` | **TRANSCRIPCION** |
+| `8` | `73: ...it's better to use the time after work to keep yourself centered than to socialize with work colleagues.` | **TRANSCRIPCION** |
+| `9` | `75: ...bear these warnings in mind: even non-mandatory events can feel mandatory. And booze can land you in dan...` | **TRANSCRIPCION**, **nombra sus dos advertencias pero NO dice cuantas son**: la arista al hijo es `D.29`, no `D.37` (correccion del titular del 11 sep 2026) |
+
+### `evitar_presion_social_actos_equipo`, 6 pasos, todos releidos
+
+| paso | la salida del libro, pegada por `.v33/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `79: Fun events can be a good way to get to know the people on your team, and to help them get to know one an...` | **TRANSCRIPCION** |
+| `2` | `79: ...the social pressure will drag some people into situations they'd rather avoid. I'll never forget talking...` | **TRANSCRIPCION** |
+| `3` | `79: ...You shouldn't have to barf over the side of a boat to demonstrate you're a good team player.` | **TRANSCRIPCION**, el caso de Marissa Mayer va **nombrado dentro** del paso |
+| `4` | `81: It's important to avoid those ironic moments when attempts to team-build and improve morale actually mak...` | **TRANSCRIPCION** |
+| `5` | `81: ...I once worked with a leader whose team was working eighty hours a week. At their off-site retreat, work-...` | **TRANSCRIPCION** |
+| `6` | `81: ...the greatest gift you can give your team is to let them go home.` | **TRANSCRIPCION** |
+
+### `construir_confianza_equipo_tiempo_solas`, 7 pasos, todos releidos
+
+| paso | la salida del libro, pegada por `.v33/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `95: Building trust in any relationship takes time because trust is built on a consistent pattern of acting i...` | **TRANSCRIPCION** |
+| `2` | `95: ...It's a big mistake to assume too much trust too quickly (e.g., by prying into deeply personal questions ...` | **TRANSCRIPCION** |
+| `3` | `95: ...If you never ask a single question about a person's life, it's hard to move up on the "care personally" ...` | **TRANSCRIPCION** |
+| `4` | `95: ...Probably the most important thing you can do to build trust is to spend a little time alone with each of...` | **TRANSCRIPCION**, **`on a regular basis` es del libro y el periodo NO se escribe**: es la especie *el periodo* de `D.30`, y el libro no dice cada cuanto |
+| `5` | `95: ...Holding regular 1:1s in which your direct report sets the agenda and you ask questions is a good way to ...` | **TRANSCRIPCION** |
+| `6` | `95: ...The way you ask for criticism and react when you get it goes a long way toward building trust-or destroy...` | **TRANSCRIPCION** |
+| `7` | `95: ...Having annual "career conversations" is also an excellent way to strengthen your relationship with each ...` | **TRANSCRIPCION**, **este si lleva periodo, y lo lleva porque el libro escribe `annual`** |
+
+### `vivir_valores_propios_evitar_listarlos`, 9 pasos, todos releidos
+
+| paso | la salida del libro, pegada por `.v33/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `99: ...But I'm extremely wary of these kinds of exercises. First, developing one's personal values is the work ...` | **TRANSCRIPCION** |
+| `2` | `99: ...First, developing one's personal values is the work of a lifetime. It can feel cheapened by a forty-five...` | **TRANSCRIPCION** |
+| `3` | `99: ...Second, while some people find it helpful to articulate their values explicitly, others feel that it's i...` | **TRANSCRIPCION** |
+| `4` | `99: ...Third, and most important, many people feel that their values are a deeply private set of beliefs that t...` | **TRANSCRIPCION** |
+| `5` | `99: ...Others may take the exercise as an invitation to proselytize, and the way they talk about their values m...` | **TRANSCRIPCION** |
+| `6` | `99: ...An exercise that requires people to talk publicly about their values may drive a wedge rather than help ...` | **TRANSCRIPCION**, el caso del alumno esta en `L101` y va **nombrado dentro** del paso |
+| `7` | `103: The important thing to do is to stay in touch with your personal values, and to demonstrate them in how ...` | **TRANSCRIPCION** |
+| `8` | `103: ...to demonstrate them in how you manage your team, not by writing down things like "hard work," "honesty,"...` | **TRANSCRIPCION** |
+| `9` | `103: ...Live your values. Don't try to list them like an HR exercise from the show The Office.` | **TRANSCRIPCION** |
+
+### `demostrar_apertura_visiones_distintas`, 10 pasos, todos releidos
+
+| paso | la salida del libro, pegada por `.v33/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `107: ...You don't have to share the same deeply personal values to build good relationships at work; and it's a ...` | **TRANSCRIPCION** |
+| `2` | `107: ...it's a terrible idea to try to convince your colleagues that your values are "right" and theirs are "wro...` | **TRANSCRIPCION** |
+| `3` | `107: ...But you do need to respect other people's values when they do share them with you.` | **TRANSCRIPCION** |
+| `4` | `109: ...whether it's the gay man forced to weather anti-gay jokes or the conservative forced to weather anti-con...` | **TRANSCRIPCION**, los dos casos estan **en la misma frase del libro** y por eso van en el mismo paso |
+| `5` | `111: ...it's crucial to remind people that an important part of Radically Candid relationships is opening yourse...` | **TRANSCRIPCION** |
+| `6` | `111: ...It's possible to care personally about a person who disagrees with your views on abortion or guns or God...` | **TRANSCRIPCION** |
+| `7` | `111: ...The fastest path to artificial relationships at work, and to the gravitational pull of organizational me...` | **TRANSCRIPCION** |
+| `8` | `111: ...starts with the basic respect and common decency that every human being owes each other, regardless of w...` | **TRANSCRIPCION** |
+| `9` | `111: ...the work is the bond everybody on a team does share, and the most productive way to strengthen that bond...` | **TRANSCRIPCION** |
+| `10` | `121: ...Dick spent real energy training himself to say "you all" instead of "you guys."` | **TRANSCRIPCION**, el caso arranca en `L115`; **el unico acto ejecutable de `L113` a `L121` es este**, y el Test de Asociacion Implicita de `L113` se deja fuera por ser rasgo del retratado y no cifra que el libro afirme |
+
+### `manejar_contacto_fisico_regla_platino`, 9 pasos, todos releidos
+
+| paso | la salida del libro, pegada por `.v33/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `125: ...a super-professional handshake just doesn't cut it, and real hug may be the world's most effective way t...` | **TRANSCRIPCION** |
+| `2` | `131: ...before he said anything to me he gave me a great big bear hug and a kiss on the cheek. So I knew he was ...` | **TRANSCRIPCION**, el caso arranca en `L127` y va **nombrado dentro** del paso |
+| `3` | `141: ...hold a hug for at least six seconds."` | **TRANSCRIPCION**, **es la unica cifra de autor del capitulo** y va a `atribuciones` (principio 5), citada en `L139` como de Gretchen Rubin en `The Happiness Project` |
+| `4` | `143: ...If a hug is sexual or belittling or obviously unwanted, it's obnoxiously aggressive. If all you ever giv...` | **TRANSCRIPCION** |
+| `5` | `143: ...If all you ever give is hugs and you never challenge the other person, then your hugs may be ruinously e...` | **TRANSCRIPCION** |
+| `6` | `143: ...don't feel bad when the other person doesn't want to be hugged. And if you are not comfortable with a hu...` | **TRANSCRIPCION** |
+| `7` | `145: ...you have to obey the "platinum rule." The "golden rule" says do unto others as you'd have them do unto y...` | **TRANSCRIPCION** |
+| `8` | `145: ...If most people on your team are comfortable with hugs but a couple are not, you need to figure out a way...` | **TRANSCRIPCION** |
+| `9` | `149: ...It's fine to push yourself past your comfort zone, but not fine to make others uncomfortable, so try it ...` | **TRANSCRIPCION** |
+
+### `reconocer_emociones_propias_avisar_equipo`, 7 pasos, todos releidos
+
+| paso | la salida del libro, pegada por `.v33/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `153: ...I know what kind of day I'm gonna have by the kind of mood you're in when you walk in the door," Russ to...` | **TRANSCRIPCION** |
+| `2` | `155: ...But repressing those feelings tends not to work, either. You can't successfully hide how you feel from p...` | **TRANSCRIPCION** |
+| `3` | `155: ...You can't successfully hide how you feel from people who work closely with you. You don't want to take y...` | **TRANSCRIPCION** |
+| `4` | `155: ...You don't want to take your bad days out on your team, but nor can you hide the fact you're not at your ...` | **TRANSCRIPCION** |
+| `5` | `155: ...The best you can do is to own up to how you feel and what's going on in the rest of your life, so others...` | **TRANSCRIPCION** |
+| `6` | `157: I learned simply to say something along the lines of, "Hey, I'm having a shitty day. I'm trying hard not...` | **TRANSCRIPCION**, **es un guion literal del libro**, no una plantilla mia |
+| `7` | `159: If you have a truly terrible emotional upset in your life, stay home for a day. You don't want to spread...` | **TRANSCRIPCION**, **el dia en casa lo escribe el libro**: `stay home for a day` |
+
+### `dominar_reacciones_emociones_ajenas`, 11 pasos, todos releidos
+
+| paso | la salida del libro, pegada por `.v33/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `163: ...do not try to prevent, control, or manage other people's emotions. Do acknowledge them and react compass...` | **TRANSCRIPCION** |
+| `2` | `163: ...There are fewer faster paths to Manipulative Insincerity than imagining you can control another person's...` | **TRANSCRIPCION** |
+| `3` | `163: ...Do acknowledge them and react compassionately when emotions run high. And do try to master your reaction...` | **TRANSCRIPCION** |
+| `4` | `167: Acknowledge emotions. Emotional reactions can offer important clues to help you better understand what's...` | **TRANSCRIPCION** |
+| `5` | `169: Ask questions. When somebody is frustrated or angry or upset enough about a situation at work that they ...` | **TRANSCRIPCION** |
+| `6` | `171: Adding your guilt to other people's difficult emotions doesn't make them feel better. People I've manage...` | **TRANSCRIPCION** |
+| `7` | `173: Telling other people how to feel will backfire. Here are some of the most counterproductive words you ca...` | **TRANSCRIPCION** |
+| `8` | `175: If you really can't handle emotional outbursts, forgive yourself. You don't have to sit there watching s...` | **TRANSCRIPCION** |
+| `9` | `177: Keep tissues a short walk away from your desk. I used to keep a box of tissues in my office in case of t...` | **TRANSCRIPCION** |
+| `10` | `179: Keep some closed bottles of water at your desk. Another good piece of advice I heard from an HR business...` | **TRANSCRIPCION** |
+| `11` | `181: Walk, don't sit. When planning a difficult conversation, try taking a walk instead of sitting and talkin...` | **TRANSCRIPCION**, los siete consejos de `L167` a `L181` **no llevan rotulo de linea propia**, que es el criterio de corte de esta casa: por eso son pasos y no siete nodos. Va marcado DISCUTIBLE |
+
+| | |
+|---|---:|
+| nodos releidos | **12** |
+| pasos escritos | **102** |
+| pasos releidos contra su parrafo | **102** |
+| **PUENTE** | **0** |
+
+### Z.2.b. **MI PROPIA CAIDA DE ORDEN, DECLARADA SIN QUE NADIE ME LA PIDA**
+
+**`D.30` dice ANTES DE CUALQUIER INSERCION, y yo corri `.v33/fidelidad.py` con TRES nodos ya
+dentro.** Lo que hice antes del primer insertar fue leer los tres candidatos enteros y comprobar sus
+citas de linea con `sed`; lo que llegue tarde a correr fue **el instrumento que lo comprueba a
+maquina**. La cifra no cambia (`0` puentes en los tres, y en los doce), pero **el orden que la regla
+manda si se rompio**, y es mio. Lo escribo porque una caida que solo se nota cuando el resultado sale
+mal es una caida que no se aprende.
