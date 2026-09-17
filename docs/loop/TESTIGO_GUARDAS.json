@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-09-16 21:19:13",
-  "commit": "6d2d56aa8df5",
-  "huella_del_arbol": "49d786d54ae39519",
+  "fecha": "2026-09-17 00:47:09",
+  "commit": "6bb714c2d0fb",
+  "huella_del_arbol": "e3a8ed84b4db0472",
   "guardas": {
     "gate": {
       "estado": "VERDE",
@@ -9,14 +9,14 @@
       "salida": "GATE VERDE.\r\n  nodos verificados: 270\r\n  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece"
     },
     "guiones": {
-      "estado": "ROJO",
-      "codigo": 1,
-      "salida": "BARRIDO DE GUIONES EN ROJO: 4 hallazgo(s)\r\n  .gerber_v1/citas.py linea 24 columna 25: guion largo (U+2014)\r\n  .gerber_v1/citas.py linea 25 columna 25: guion medio (U+2013)\r\n  .gerber_v1/citas.py linea 26 columna 21: guion largo (U+2014)\r\n  .gerber_v1/citas.py linea 26 columna 42: guion medio (U+2013)\r\nRegla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal."
+      "estado": "VERDE",
+      "codigo": 0,
+      "salida": "BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios."
     },
     "censo_rutas": {
       "estado": "VERDE",
       "codigo": 0,
-      "salida": "      PATRON                           10\r\n      VACIA A PROPOSITO                3\r\n      con contenido                    99\r\n      vacia por protocolo              4\r\n\r\nCENSO VERDE: las 116 rutas publicadas sostienen lo que dicen sostener."
+      "salida": "      PATRON                           10\r\n      VACIA A PROPOSITO                3\r\n      con contenido                    98\r\n      vacia por protocolo              3\r\n\r\nCENSO VERDE: las 114 rutas publicadas sostienen lo que dicen sostener."
     }
   }
 }

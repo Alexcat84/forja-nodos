@@ -1,0 +1,9 @@
+NO ESTA        docs/loop/REPORTE.md
+NO ESTA        docs/loop/loop.log
+CERO BYTES     docs/loop/ultimo_apertura.json
+NO ESTA        docs/loop/ultimo_auditor.json
+NO ESTA        docs/loop/ultimo_extractor.json
+rutas nombradas por la pagina : 34
+  con contenido               : 29
+  de cero bytes               : 1
+  que no estan en el arbol    : 4
