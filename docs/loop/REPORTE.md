@@ -36036,72 +36036,91 @@ lo compruebo tres veces.**
 **LAS CINCO ENTREGADAS Y NINGUNA EN COLA** (`EXTRACTOR.md` 1.3, tope de cinco). **Lo que esta vuelta
 deja pendiente esta en `Y.5`, medido fila a fila, y no hay ni una tarea del encargo dentro.**
 
----
+## Z.1. **TAREA 1**: LA FRONTERA DE LAS DOS UNIDADES QUE MINO, CERRADA CONTRA EL CUERPO
 
-# VUELTA 1 DEL FRENTE `grove_high_output`, **el libro se abre**: la frontera de dos unidades, el primer tramo minado y la fidelidad `D.30` de sus pasos (lote 7, `grove_high_output`)
+**MINO `cap_01` Y `cap_02`, EN EL ORDEN DEL LIBRO** (`EXTRACTOR.md` 12.3). `cap_01` es la
+`Introduction` y da **un solo nodo**, asi que sola no llega al piso de cinco del techo; las dos
+juntas dan **8**, dentro de `5` a `15`. **Ninguna unidad sola pasa el techo, asi que la regla de
+precedencia de 12.4 no se activa en esta vuelta.**
 
-*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el fundador al abrir el paralelo el 16 sep
-2026. **Tres tareas.** Frente de extraccion en paralelo (`D.45`), rama `extraccion-grove_high_output`:
-**este frente NO INSERTA NUNCA**, `MODO_INSERCION=cuarentena`. **Modo austero** (`D.47`).*
+### Z.1.a. LA COMPROBACION, QUE VA ANTES DE LA TABLA
 
-## Z.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+<!-- TALLADO: parcial salida=.v1g/frontera_dos_unidades.txt -->
 
-La primera operacion de la vuelta es el commit del `loop.log` pendiente (`EXTRACTOR.md` 1.1), asi que
-esta tabla se lee **justo despues de ese commit y antes de la `TAREA 1`**, y el commit que cita es ya
-estado intermedio y se dice.
+    $ python .v1g/frontera.py
+      cap_01: cabecera acaba en L7, 14 tramos, 56 lineas con contenido
+              lineas NO cubiertas 0 | SOLAPES 0 | suma 3841 | cuerpo 3841 | IGUALES True
+      cap_02: cabecera acaba en L7, 12 tramos, 36 lineas con contenido
+              lineas NO cubiertas 0 | SOLAPES 0 | suma 3386 | cuerpo 3386 | IGUALES True
+      NODOS QUE MI FRONTERA DA EN LAS DOS UNIDADES : 8   DENTRO DEL TECHO: SI
 
-<!-- TALLADO: script=.v1g/apertura.py salida=.v1g/apertura_tabla.txt -->
+**LAS DOS CIERRAN AL DIGITO Y SE CRUZAN CON `wc -w`**: `3841` mas `23` de cabecera son los `3864`
+que `wc -w` da de `cap_01`, y `3386` mas `41` son los `3427` de `cap_02`. **Ninguna constante de
+cabecera esta tecleada dentro del instrumento**: el corte se busca por el segundo `---` y la salida
+lo imprime (`la cabecera acaba en la linea 7`).
 
-| pieza | valor | de donde sale |
+### Z.1.b. `cap_01`, LA `Introduction`: CATORCE TRAMOS Y UN SOLO NODO
+
+<!-- TALLADO: script=.v1g/frontera.py salida=.v1g/frontera_dos_unidades.txt -->
+
+| tramo de cap_01 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L11` | 6 | **0** | P1  los rotulos: el titulo y la seccion I | `9:Introduction` |
+| `L13 a L17` | 124 | **0** | P2  el libro de 1983 y los dos sucesos que obligan una introduccion nueva | `13:I wrote this book in 1983. It was the result of twenty years of ` |
+| `L19 a L25` | 357 | **0** | P3  el ataque japones de las DRAM y la salida de Intel de ese negocio: CASO historico | `19:By the mid-eighties, the Japanese producers of Dynamic Random Ac` |
+| `L27 a L35` | 248 | **0** | P4  la globalizacion y su consecuencia sobre cada empleado: POSTURA | `27:Globalization simply means that business knows no national bound` |
+| `L37 a L49` | 484 | **0** | P5  el correo electronico y el fin de los escondites: POSTURA con su caso del correo postal | `37:Just as the Japanese DRAM attack was the first wave of a much gr` |
+| `L51 a L59` | 497 | **0** | P6  a quien va dirigido el libro: el mando intermedio y el gestor de conocimiento, DEFINICION | `51:II. Operating in the new environment` |
+| `L61 a L67` | 369 | **0** | P7  las reglas del entorno nuevo, la tolerancia al desorden y el micro CEO: POSTURA, y el lema es lema | `61:All managers in such companies need to adapt to the new environm` |
+| `L69 a L75` | 463 | **0** | P8  las tres ideas del libro: MAPA del propio libro, cada una desarrollada en su capitulo | `69:This book contains three basic ideas. The first is an output-ori` |
+| `L77 a L79` | 127 | **0** | P9  planear como planea un cuerpo de bomberos y menos niveles de mando: POSTURA | `77:We must recognize that no amount of formal planning can anticipa` |
+| `L81 a L85` | 353 | **0** | P10 el 1:1 con mas reportados, menos veces y mas corto: su procedimiento vive en su capitulo, extraerlo aqui fabrica el gemelo de su donante | `81:With fewer levels in today's organization, each manager will hav` |
+| `L87 a L99` | 424 | **0** | P11 gestionar tu carrera: eres un negocio de un solo empleado, POSTURA | `87:III. Managing your own career` |
+| `L101 a L107` | 193 | **1** | P12 LAS TRES PREGUNTAS PARA EXAMINARTE: el libro pone su propio inventario y lo nombra uno a uno | `101:I can offer you no surefire formula. But here are a few question` |
+| `L109 a L115` | 191 | **0** | P13 el cierre y el paso al capitulo 1 | `109:I am an engineer by training and a manager of a high-technology ` |
+| `L117 a L119` | 5 | **0** | P14 la firma y la fecha | `117:Andrew S. Grove` |
+| | **3841** | **1** | **el cuerpo entero de cap_01, cero lineas sin cubrir y cero solapes** | |
+
+**UNA INTRODUCCION ES EL CASO DIFICIL AL REVES:** no es que el inventario sea delgado, es que el
+texto es **mapa de si mismo**. `P8` nombra las tres ideas del libro y **cada una se desarrolla en su
+capitulo**; `P10` habla del `1:1` y **su procedimiento es de otro capitulo**. Extraer ahi seria
+fabricar **el gemelo de su propio donante**, que es lo que `P.19` prohibe por dentro y la señal 3
+caza por fuera.
+
+**Y EL UNICO TRAMO QUE SI ES PROCEDIMIENTO ES `P12`, por la prueba del inventario (`EXTRACTOR.md`
+9.1):** `L101` dice `here are a few questions to ponder` y **el libro pone las tres, numeradas y
+enteras**, cada una con su propio contenido. El inventario es de **objetos de trabajo** (las
+preguntas que te haces), no de metas.
+
+### Z.1.c. `cap_02`, `The Basics of Production`: DOCE TRAMOS Y SIETE NODOS
+
+<!-- TALLADO: script=.v1g/frontera.py salida=.v1g/frontera_dos_unidades.txt -->
+
+| tramo de cap_02 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L13` | 19 | **0** | P1  rotulo, titulo y subtitulo | `9:1` |
+| `L15 a L27` | 602 | **1** | P2  el huevo de tres minutos: los requisitos, el PASO LIMITANTE y el escalonado | `15:The Three-Minute Egg` |
+| `L29 a L29` | 7 | **0** | P3  pie de figura | `29:Making the eggs is the limiting step.` |
+| `L31 a L35` | 259 | **0** | P4  el reclutamiento universitario: CASO del mismo principio, manual 3.5 | `31:The idea of a limiting step has very broad applicability. Take, ` |
+| `L37 a L47` | 582 | **1** | P5  proceso, montaje y prueba: los tres tipos nombrados uno a uno, con sus dos casos | `37:Production Operations` |
+| `L49 a L55` | 231 | **1** | P6  la cola del tostador: la capacidad limitada cambia cual es el paso limitante | `49:A Few Complications` |
+| `L57 a L61` | 365 | **1** | P7  los intercambios entre equipo, personal e inventario contra el plazo | `57:Now let's complicate things a little further. What happens if yo` |
+| `L63 a L65` | 168 | **0** | P8  la fabrica de desayunos continua: CASO mas un intercambio, y el paso que falta seria puente | `63:Let's take our manufacturing example a step further and turn our` |
+| `L67 a L67` | 202 | **1** | P9  prueba funcional contra inspeccion en proceso | `67:But continuous operation does not automatically mean lower cost ` |
+| `L69 a L69` | 237 | **1** | P10 inspeccion de recepcion, inventario de materia prima y oportunidad en riesgo | `69:What else could go wrong with our continuous egg-machine? The eg` |
+| `L71 a L75` | 263 | **1** | P11 el valor que se anade y arreglar en la etapa de menor valor | `71:Adding Value` |
+| `L77 a L79` | 451 | **0** | P12 la justicia penal como proceso de produccion: CASO, y sus cifras sin fecha de corte en el recorte | `77:Finally, at the risk of being considered hard-hearted, let's exa` |
+| | **3386** | **7** | **el cuerpo entero de cap_02, cero lineas sin cubrir y cero solapes** | |
+
+**LOS TRES TRAMOS GRANDES QUE DAN CERO, Y SU MOTIVO ESCRITO:**
+
+| tramo | palabras | por que da cero |
 |---|---:|---|
-| rama | `extraccion-grove_high_output` | `git rev-parse --abbrev-ref HEAD` |
-| commit al abrir mi turno | `be2b678` | `git rev-parse --short HEAD` |
-| nodos en `dataset/nodos.jsonl` | **270** | `dataset/nodos.jsonl` |
-| aristas por `nodos_siguientes` | **105** | `dataset/nodos.jsonl` |
-| aristas por `nodos_previos` | **105** | `dataset/nodos.jsonl` |
-| veredictos en `bitacora/VEREDICTOS.jsonl` | **396** | `bitacora/VEREDICTOS.jsonl` |
-| de ellos, con `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
-| unidades de `grove_high_output` | **18** | PATRON: `fuentes/grove_high_output/cap_*.md` |
-| palabras de fichero, las 18 unidades | **64.862** | PATRON: `fuentes/grove_high_output/cap_*.md` |
-| palabras de cuerpo, de `L8` en adelante | **64.372** | PATRON: `fuentes/grove_high_output/cap_*.md` |
-| candidatos en bandeja de este libro | **0** | PATRON: `cuarentena/grove_high_output/*.json`. VACIA A PROPOSITO: es la vuelta 1 del frente y la bandeja se abre hoy |
-| ficheros `.json` en las bandejas, contados a ojo | **241** | PATRON: `cuarentena/*/*.json` |
-| de ellos, poblacion que la ADUANA admite al barrido | **78** | `src/aduana.py`, `poblacion_de_bandejas()` |
-| poblacion que vera cada informe mio | **348** | `dataset/nodos.jsonl` mas `src/aduana.py`, `poblacion_de_bandejas()` |
+| `P4` `L31 a L35` | 259 | el reclutamiento universitario es **CASO** del paso limitante, no una segunda casa (manual 3.5). Entra **nombrado dentro** del nodo de `P2` |
+| `P8` `L63 a L65` | 168 | la fabrica continua es **CASO mas intercambio**. Lo unico que podria pasar por paso es *avisa al cliente*, y el libro dice que los clientes **tienen que** ajustar su expectativa, no que se les avise: seria **PUENTE de la especie destinatario** |
+| `P12` `L77 a L79` | 451 | la justicia penal es **CASO** del paso limitante mal elegido, y **sus cifras no se extraen**: el texto dice `even today only some $80,000` sin decir que anio es *hoy*, y una cifra del autor sin fecha de corte es media cifra (manual principio 5). Entra como **ejemplo nombrado** en el nodo de `P2` |
 
-**LAS DOS CIFRAS DEL ENCARGO CUADRAN AL DIGITO Y LA TERCERA SE EXPLICA:** `18` unidades y `64.862`
-palabras salen iguales; la ficha canonica de `fuentes/FUENTES_CANONICAS.json` dice **`64.372` de
-cuerpo** y mi instrumento mide `64.372` contando de `L8` en adelante. **Las dos son la misma medida
-sobre poblaciones distintas** (fichero entero contra cuerpo sin cabecera), y la diferencia de `490`
-palabras son las siete lineas de cabecera de las 18 unidades. **Cero discrepancias que declarar.**
-
-**Y LA CIFRA QUE ME CACE A MI MISMO ANTES DE PUBLICARLA:** mi primer recuento de la poblacion de
-bandejas conto los ficheros a ojo y dio **`241`**; la aduana dice **`78`**. Los `163` de
-`cuarentena/ensayo_referencia_163/` **no entran al barrido** porque su clave `quality_is_free_the`
-**no esta en `fuentes/FUENTES_CANONICAS.json`** (`src/aduana.py`, `poblacion_de_bandejas()`, filtro
-`_fuentes_canonicas`). El instrumento publica hoy **las dos filas y la resta**, y la que manda es la
-de la aduana: `270` mas `78` son `348`, **que es exactamente la poblacion que imprime mi primer
-informe**.
-
-### Z.0.a. **ESTA VUELTA NO TRAE SALDO DE LOTE SELLADO NI COLA SELLADA** (`D.43`)
-
-<!-- TALLADO: parcial salida=.v1g/entrega_arnes.txt -->
-
-    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
-      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
-      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
-    $ ls docs/loop/ | grep -i -E "cola|vecin"
-      (ni una linea)
-
-**NI INFORME DE LOTE SELLADO NI COLA DE VECINOS SELLADA**, asi que no se citan por sello. **El
-informe de candidato sigue siendo mio y va en el mismo acto de escribirlo** (`EXTRACTOR.md` 16), y
-**el del lote entero lo corre esta vuelta por orden expresa del fundador en el lanzamiento**, que es
-quien puede darla.
-
-## Z.SKEL. LAS TRES TAREAS ENCARGADAS, CON SU FILA VACIA HASTA QUE CIERREN (`EXTRACTOR.md` 3)
-
-| # | tarea | estado |
-|---:|---|---|
-| 1 | la frontera de la unidad que se mina, cerrada contra el cuerpo | **ABIERTA** |
-| 2 | minar con el techo por delante, un candidato por vez y la aduana en el acto | **ABIERTA** |
-| 3 | la fidelidad `D.30`, `PASOS INVENTADOS` fila por unidad mas total | **ABIERTA** |
+**Y EL CASO DE `P4` Y `P12` JUNTOS ES LO QUE HACE FUERTE AL NODO DE `P2`:** el libro aplica el mismo
+paso limitante a un desayuno, a un reclutamiento y a un juzgado, y **el tercero lo aplica al reves
+para ensenar el error**. Los tres viven en el `resumen_teorico` de un solo nodo, que es donde el
+manual los pone.
