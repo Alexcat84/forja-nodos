@@ -36147,7 +36147,7 @@ porque no hay quien la firme. **La cola de vecinos la vuelvo a pagar yo dentro d
 | # | tarea | estado |
 |---:|---|---|
 | 1 | **BLOQUEANTE**: la fecha `17 sep 2026` escrita a mano el dia `16` dentro de `dataset/nodos.jsonl` y de `bitacora/VEREDICTOS.jsonl` | **CERRADA** en `Z.1`: `2` celdas tocadas, `0` choques vivos |
-| 2 | seguir insertando el lote 4, uno por vez y por el orden del libro | *abierta* |
+| 2 | seguir insertando el lote 4, uno por vez y por el orden del libro | **CERRADA** en `Z.3`: `cap_08` cierra `12` de `12`, con `12` veredictos y `2` aristas |
 | 3 | `PASOS INVENTADOS` por capitulo, antes de cerrar (`D.30`) | **CERRADA** en `Z.2`: `0` de `102`, `0,00` por ciento |
 
 ## Z.1. **TAREA 1, BLOQUEANTE**: la fecha que un acto se escribio a si mismo, contra el sello de la maquina
@@ -36461,3 +36461,191 @@ citas de linea con `sed`; lo que llegue tarde a correr fue **el instrumento que 
 maquina**. La cifra no cambia (`0` puentes en los tres, y en los doce), pero **el orden que la regla
 manda si se rompio**, y es mio. Lo escribo porque una caida que solo se nota cuando el resultado sale
 mal es una caida que no se aprende.
+
+## Z.3. **TAREA 2**: `cap_08` CIERRA EN INSERCION, **`12` de `12`**, uno por vez y por el orden del libro
+
+**EL LOTE 4 ESTA CERRADO EN EXTRACCION Y SU INFORME CERTIFICADO** (`D.39`, `ACTA 24`), asi que esta
+vuelta no mina: inserta. **El capitulo que tocaba es `cap_08`**, que es el primero sin insertar en el
+orden del libro, y **sus `12` candidatos caben bajo el techo de `15`** (`EXTRACTOR.md` 12.4).
+
+<!-- TALLADO: script=.v33/orden_cap08.py salida=.v33/orden_cap08.txt -->
+
+| # | arranca en | candidato | pasos | en el grafo | sede del fichero |
+|---:|---:|---|---:|---|---|
+| 1 | `L25` | `integrar_trabajo_vida_mejor_version` | 5 | **si** | `_insertados` |
+| 2 | `L29` | `definir_receta_propia_mantenerse_centrado` | 9 | **si** | `_insertados` |
+| 3 | `L37` | `agendar_cuidados_propios_cumplirlos` | 5 | **si** | `_insertados` |
+| 4 | `L45` | `ceder_autoridad_unilateral_equipo` | 15 | **si** | `_insertados` |
+| 5 | `L67` | `dominar_arte_socializar_trabajo` | 9 | **si** | `_insertados` |
+| 6 | `L77` | `evitar_presion_social_actos_equipo` | 6 | **si** | `_insertados` |
+| 7 | `L93` | `construir_confianza_equipo_tiempo_solas` | 7 | **si** | `_insertados` |
+| 8 | `L97` | `vivir_valores_propios_evitar_listarlos` | 9 | **si** | `_insertados` |
+| 9 | `L105` | `demostrar_apertura_visiones_distintas` | 10 | **si** | `_insertados` |
+| 10 | `L123` | `manejar_contacto_fisico_regla_platino` | 9 | **si** | `_insertados` |
+| 11 | `L151` | `reconocer_emociones_propias_avisar_equipo` | 7 | **si** | `_insertados` |
+| 12 | `L161` | `dominar_reacciones_emociones_ajenas` | 11 | **si** | `_insertados` |
+| | | **12 candidatos** | **102** | **12 en el grafo** | |
+
+**EL ORDEN ES EL DEL LIBRO, Y LO FIJA EL ENCARGO, NO YO** (`D.36`: *no lo fija el bucle*). La columna
+`arranca en` no esta tecleada: sale de la linea que cada candidato declara en su `resumen_teorico`.
+
+### Z.3.a. **LO QUE LA ADUANA PIDIO LEER, Y LO QUE ESCRIBI LEYENDO**
+
+**`4` de los `12` bloquearon y `8` entraron con la cola vacia.** Los cuatro se leyeron **vecino a
+vecino antes de escribir nada**, y sus veredictos estan en su sede, no en este reporte.
+
+<!-- TALLADO: script=.v33/bitacora_v33.py salida=.v33/bitacora_v33.txt -->
+
+    poblacion: bitacora/VEREDICTOS.jsonl, lineas con fecha 2026-09-17 (src/aduana._hoy())
+    lineas escritas por esta vuelta: 14
+
+| linea | el par, en el sentido en que el registro lo escribe | que se escribio | levantada por |
+|---:|---|---|---|
+| 397 | `recorrer_rueda_conscientemente_cultura_equipo` contra `recorrer_rueda_conscientemente_cultura_equipo` | CORREGIDO | correccion declarada |
+| 398 | `evitar_presion_social_actos_equipo` contra `contar_cuatro_historias_propias_ver_hueco_intencion` | SANO | paso_contra_nodo |
+| 399 | `evitar_presion_social_actos_equipo` contra `proteger_tiempo_equipo_jefe` | SANO | similitud_texto |
+| 400 | `evitar_presion_social_actos_equipo` contra `crear_obligacion_disentir_equipo` | SANO | similitud_texto |
+| 401 | `dominar_arte_socializar_trabajo > evitar_presion_social_actos_equipo` | **ARISTA por lectura**, paso 9 | lectura declarada |
+| 402 | `construir_confianza_equipo_tiempo_solas` contra `decidir_quien_comunica_cada_cuanto` | SANO | paso_contra_nodo |
+| 403 | `construir_confianza_equipo_tiempo_solas` contra `reconocer_emociones_propias_avisar_equipo` | SANO | similitud_texto |
+| 404 | `construir_confianza_equipo_tiempo_solas` contra `minimizar_impuesto_colaboracion_equipo` | SANO | similitud_texto |
+| 405 | `construir_confianza_equipo_tiempo_solas > montar_reuniones_solas_mentalidad_frecuencia` | **ARISTA por lectura**, paso 5 | lectura declarada |
+| 406 | `vivir_valores_propios_evitar_listarlos` contra `sostener_contacto_oferta_aceptacion` | SANO | paso_contra_nodo |
+| 407 | `reconocer_emociones_propias_avisar_equipo` contra `minimizar_impuesto_colaboracion_equipo` | SANO | similitud_texto |
+| 408 | `reconocer_emociones_propias_avisar_equipo` contra `centrar_debate_ideas_fuera_egos` | SANO | similitud_texto |
+| 409 | `reconocer_emociones_propias_avisar_equipo` contra `cuidarse_agotamiento_centro_rueda` | SANO | similitud_texto |
+| 410 | `reconocer_emociones_propias_avisar_equipo` contra `construir_confianza_equipo_tiempo_solas` | SANO | similitud_texto |
+
+**`14` lineas: `1` de la `TAREA 1`, `11` veredictos `SANO` razonados y `2` aristas por lectura.**
+Cero `CONTINUA` por senial, cero `REPITE`, cero `MUTUO`.
+
+**Y LA CIFRA QUE MAS DICE DE ESTE CAPITULO:** de las `13` vecindades levantadas, **ninguna era un
+gemelo y ninguna era jerarquia**. `EXTRACTOR.md` 11 ya avisa de como se lee eso: *un candidato que
+entra con la cola vacia no esta certificado como sin madre, esta certificado como sin gemelo.* Por eso
+**las dos aristas de esta vuelta las puso la lectura y no la senial.**
+
+### Z.3.b. **LA PRIMERA ARISTA: la cabeza del capitulo a su primera advertencia** (`D.29`)
+
+<!-- TALLADO: parcial salida=.v33/arista_d29_cap08.txt -->
+
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: dominar_arte_socializar_trabajo
+      hijo : evitar_presion_social_actos_equipo
+      paso citado de la madre: 9
+        Cuando si organices un acto social en el trabajo, ten presentes las dos advertencias que el texto deja escritas: que un acto no obligatorio puede sent
+      señales del par: familia_id 0.0, paso_contra_nodo 0.459, similitud_texto 0.308
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: dominar_arte_socializar_trabajo > evitar_presion_social_actos_equipo
+      razon en bitacora/VEREDICTOS.jsonl
+
+**ES `D.29` Y NO `D.37`, Y LA DIFERENCIA ESTA EN LA LINEA DEL LIBRO Y NO EN MI PASO.** `L75` escribe
+*bear these warnings in mind* y las nombra una a una **sin decir cuantas son**; mi paso 9 si dice *las
+dos*, pero ese **`dos` lo cuento yo mirando**. La cuenta es condicion (correccion del titular del
+11 sep 2026), asi que la arista se declara **argumentando**.
+
+### Z.3.c. **LA SEGUNDA ARISTA: la que el libro senala con el dedo y ninguna senial ve**
+
+<!-- TALLADO: parcial salida=.v33/puntero_L95.txt -->
+
+    $ sed -n '95p' fuentes/scott_radical_candor/cap_08.md | grep -o 'Holding regular 1:1s[^.]*\.'
+      Holding regular 1:1s in which your direct report sets the agenda and you ask questions is a good way to begin building trust.
+    $ sed -n '95p' fuentes/scott_radical_candor/cap_08.md | grep -o '(See .1:1 Conversations,. chapter eight.)'
+      (See “1:1 Conversations,” chapter eight.)
+
+**EL LIBRO PONE SU PROPIO PUNTERO EN LA MISMA LINEA**, y el capitulo ocho del libro es `cap_11.md`
+(comprobado en su `frontmatter`: `unidad: Cap. 8`), **que entro en la vuelta 32**. Asi que la condicion
+que el propio candidato se puso al escribirse, *cuando esos capitulos entren*, **se cumplio para uno de
+los tres**.
+
+<!-- TALLADO: parcial salida=.v33/arista_d29_1a1.txt -->
+
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: construir_confianza_equipo_tiempo_solas
+      hijo : montar_reuniones_solas_mentalidad_frecuencia
+      paso citado de la madre: 5
+        Manten reuniones a solas periodicas en las que el orden del dia lo pone la persona que te reporta y tu haces preguntas, que es una buena manera de emp
+      señales del par: familia_id 0.111, paso_contra_nodo 0.487, similitud_texto 0.22
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: construir_confianza_equipo_tiempo_solas > montar_reuniones_solas_mentalidad_frecuencia
+      razon en bitacora/VEREDICTOS.jsonl
+
+**LOS OTROS DOS PUNTEROS DE `L95` NO SE CABLEAN, Y SE DICE POR QUE**, que es lo que distingue una cola
+declarada de un olvido: el paso 6 apunta a `chapter six`, que es `cap_09.md`, con sus `20` candidatos
+en bandeja; y el paso 7 a `chapter seven`, que es `cap_10.md`, con `14`. **Comprobado y no supuesto:**
+`pedir_critica_equipo_premiarla`, que es el que mas se le parece por titulo, sale de `cap_05.md`, o sea
+`Cap. 2`, y **no es el destino de ese puntero**.
+
+### Z.3.d. **EL ARCHIVADO `D.31`, Y LA MEDIDA QUE ME ENSENIO POR QUE ES EN EL MISMO ACTO**
+
+<!-- TALLADO: parcial salida=.v33/archivado_d31.txt -->
+
+    $ git mv, uno a uno, de cuarentena/scott_radical_candor a cuarentena/_insertados/scott_radical_candor
+      agendar_cuidados_propios_cumplirlos
+      ceder_autoridad_unilateral_equipo
+      construir_confianza_equipo_tiempo_solas
+      definir_receta_propia_mantenerse_centrado
+      demostrar_apertura_visiones_distintas
+      dominar_arte_socializar_trabajo
+      evitar_presion_social_actos_equipo
+      integrar_trabajo_vida_mejor_version
+      manejar_contacto_fisico_regla_platino
+      vivir_valores_propios_evitar_listarlos
+
+    movidos: 10
+    bandeja  cuarentena/scott_radical_candor    : 65
+    archivo  cuarentena/_insertados/scott_...   : 77
+
+**`D.31` DICE EN EL MISMO ACTO Y YO ARCHIVE DIEZ DE GOLPE, Y ESO TUVO UNA CONSECUENCIA MEDIDA.** Al
+insertar `reconocer_emociones_propias_avisar_equipo` la aduana levanto **`5` vecinos y dos eran el
+mismo**: `construir_confianza_equipo_tiempo_solas` aparecio **dos veces, con sus tres seniales iguales
+al milesimo**, una vez desde el grafo y otra desde la bandeja, porque yo no lo habia sacado de la
+bandeja todavia. La poblacion de `D.38.5` es **grafo mas bandejas**, asi que un nodo que esta en las
+dos **se cuenta dos veces y pide dos veredictos del mismo par**.
+
+**ARCHIVE ANTES DE REINTENTAR Y EL DUPLICADO DESAPARECIO.** Los dos ultimos los archive **en el acto**,
+como la regla manda. **La leccion no es que `D.31` sea burocracia: es que el retraso ENSUCIA LA COLA DE
+LECTURA DEL SIGUIENTE**, y eso no lo he leido escrito en ningun sitio.
+
+## Z.4. **PARADA: MIS PROPIOS COMMITS SE LLEVARON TRABAJO DE OTRO FRENTE** (`EXTRACTOR.md` 7 y 14)
+
+**NO LA ARREGLO YO Y NO REESCRIBO HISTORIA.** La declaro con su medida y corto la causa.
+
+**QUE PASO:** commitee con `git add -A` mientras **otra sesion trabajaba en el mismo arbol** aplicando
+`D.49`, `D.50` y `D.51`. Mis commits se llevaron sus ficheros dentro, bajo mi mensaje.
+
+<!-- TALLADO: script=.v33/mis_commits.py salida=.v33/mis_commits.txt -->
+
+| commit mio | ficheros que NO son de mis sedes |
+|---|---|
+| `9b36072` | `docs/loop/loop.log`, `docs/loop/ultimo_extractor.json` |
+| `bc5dae4` | **ninguno** |
+| `2edae47` | **ninguno** |
+| `cc181f3` | **ninguno** |
+| `d39c37b` | **ninguno** |
+| `bf413c2` | `config/frentes.json`, `docs/loop/TABLERO.jsonl`, `src/tablero.py` |
+| `504cd38` | `docs/BANCO_DE_REGLAS.md`, `docs/loop/PARALELO.md`, `docs/loop/TABLERO.jsonl`, `scripts/guarda_tablero.py`, `tests/test_aceptacion.py` |
+| `dd52033` | **ninguno** |
+| **8 commits mios** | **10 ficheros ajenos arrastrados** |
+
+**LA PRIMERA FILA NO ES LA PARADA:** `docs/loop/loop.log` y `ultimo_extractor.json` los escribio el
+arnes para mi turno, y `EXTRACTOR.md` 1.1 me manda commitear lo pendiente antes de tocar nada.
+
+**LA PARADA SON `bf413c2` Y `504cd38`**, con **`8` ficheros que no son de mis sedes** y que ademas
+estan **bajo la moratoria de `D.45`** que el propio encargo me repite: `src/tablero.py`,
+`tests/test_aceptacion.py`, `docs/BANCO_DE_REGLAS.md`, `docs/loop/PARALELO.md`,
+`docs/loop/TABLERO.jsonl`, `scripts/guarda_tablero.py` y `config/frentes.json`.
+
+**LA CAIDA DE DATO QUE ESTO CAUSO YA ESTA REPARADA, Y NO POR MI:** el commit `1954005` de la otra
+sesion dice que `dataset/nodos.jsonl.cerrojo`, **un fichero vivo con el pid de la corrida que estaba
+escribiendo el dataset**, entro al indice en mi `504cd38`. Lo reparo poniendo `*.cerrojo` en
+`.gitignore` y con `git rm --cached`. **Lo escribo aqui porque la causa fue mia aunque el remedio no.**
+
+**LA CAUSA, CORTADA EN ESTA MISMA VUELTA:** desde el commit que cierra la `TAREA 2` **no vuelvo a usar
+`git add -A`**: solo mis sedes, por ruta explicita. Se comprueba en el `--name-only` de los commits
+posteriores a `dd52033`.
+
+**Y LO QUE NO HAGO, A PROPOSITO:** no reescribo esos dos commits. Estan **empujados**, la otra sesion
+**ya escribio su declaracion encima**, y reescribir historia compartida con una sesion viva moveria de
+sitio trabajo que no es mio. **Una parada se declara, no se tapa.**
