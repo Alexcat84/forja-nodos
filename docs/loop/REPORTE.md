@@ -36035,3 +36035,73 @@ lo compruebo tres veces.**
 
 **LAS CINCO ENTREGADAS Y NINGUNA EN COLA** (`EXTRACTOR.md` 1.3, tope de cinco). **Lo que esta vuelta
 deja pendiente esta en `Y.5`, medido fila a fila, y no hay ni una tarea del encargo dentro.**
+
+---
+
+# VUELTA 1 DEL FRENTE `grove_high_output`, **el libro se abre**: la frontera de dos unidades, el primer tramo minado y la fidelidad `D.30` de sus pasos (lote 7, `grove_high_output`)
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el fundador al abrir el paralelo el 16 sep
+2026. **Tres tareas.** Frente de extraccion en paralelo (`D.45`), rama `extraccion-grove_high_output`:
+**este frente NO INSERTA NUNCA**, `MODO_INSERCION=cuarentena`. **Modo austero** (`D.47`).*
+
+## Z.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+La primera operacion de la vuelta es el commit del `loop.log` pendiente (`EXTRACTOR.md` 1.1), asi que
+esta tabla se lee **justo despues de ese commit y antes de la `TAREA 1`**, y el commit que cita es ya
+estado intermedio y se dice.
+
+<!-- TALLADO: script=.v1g/apertura.py salida=.v1g/apertura_tabla.txt -->
+
+| pieza | valor | de donde sale |
+|---|---:|---|
+| rama | `extraccion-grove_high_output` | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno | `be2b678` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | **270** | `dataset/nodos.jsonl` |
+| aristas por `nodos_siguientes` | **105** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | **105** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **396** | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| unidades de `grove_high_output` | **18** | PATRON: `fuentes/grove_high_output/cap_*.md` |
+| palabras de fichero, las 18 unidades | **64.862** | PATRON: `fuentes/grove_high_output/cap_*.md` |
+| palabras de cuerpo, de `L8` en adelante | **64.372** | PATRON: `fuentes/grove_high_output/cap_*.md` |
+| candidatos en bandeja de este libro | **0** | PATRON: `cuarentena/grove_high_output/*.json`. VACIA A PROPOSITO: es la vuelta 1 del frente y la bandeja se abre hoy |
+| ficheros `.json` en las bandejas, contados a ojo | **241** | PATRON: `cuarentena/*/*.json` |
+| de ellos, poblacion que la ADUANA admite al barrido | **78** | `src/aduana.py`, `poblacion_de_bandejas()` |
+| poblacion que vera cada informe mio | **348** | `dataset/nodos.jsonl` mas `src/aduana.py`, `poblacion_de_bandejas()` |
+
+**LAS DOS CIFRAS DEL ENCARGO CUADRAN AL DIGITO Y LA TERCERA SE EXPLICA:** `18` unidades y `64.862`
+palabras salen iguales; la ficha canonica de `fuentes/FUENTES_CANONICAS.json` dice **`64.372` de
+cuerpo** y mi instrumento mide `64.372` contando de `L8` en adelante. **Las dos son la misma medida
+sobre poblaciones distintas** (fichero entero contra cuerpo sin cabecera), y la diferencia de `490`
+palabras son las siete lineas de cabecera de las 18 unidades. **Cero discrepancias que declarar.**
+
+**Y LA CIFRA QUE ME CACE A MI MISMO ANTES DE PUBLICARLA:** mi primer recuento de la poblacion de
+bandejas conto los ficheros a ojo y dio **`241`**; la aduana dice **`78`**. Los `163` de
+`cuarentena/ensayo_referencia_163/` **no entran al barrido** porque su clave `quality_is_free_the`
+**no esta en `fuentes/FUENTES_CANONICAS.json`** (`src/aduana.py`, `poblacion_de_bandejas()`, filtro
+`_fuentes_canonicas`). El instrumento publica hoy **las dos filas y la resta**, y la que manda es la
+de la aduana: `270` mas `78` son `348`, **que es exactamente la poblacion que imprime mi primer
+informe**.
+
+### Z.0.a. **ESTA VUELTA NO TRAE SALDO DE LOTE SELLADO NI COLA SELLADA** (`D.43`)
+
+<!-- TALLADO: parcial salida=.v1g/entrega_arnes.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ ls docs/loop/ | grep -i -E "cola|vecin"
+      (ni una linea)
+
+**NI INFORME DE LOTE SELLADO NI COLA DE VECINOS SELLADA**, asi que no se citan por sello. **El
+informe de candidato sigue siendo mio y va en el mismo acto de escribirlo** (`EXTRACTOR.md` 16), y
+**el del lote entero lo corre esta vuelta por orden expresa del fundador en el lanzamiento**, que es
+quien puede darla.
+
+## Z.SKEL. LAS TRES TAREAS ENCARGADAS, CON SU FILA VACIA HASTA QUE CIERREN (`EXTRACTOR.md` 3)
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | la frontera de la unidad que se mina, cerrada contra el cuerpo | **ABIERTA** |
+| 2 | minar con el techo por delante, un candidato por vez y la aduana en el acto | **ABIERTA** |
+| 3 | la fidelidad `D.30`, `PASOS INVENTADOS` fila por unidad mas total | **ABIERTA** |

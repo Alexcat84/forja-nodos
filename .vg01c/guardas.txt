@@ -1,0 +1,17 @@
+$ python forja.py gate
+GATE VERDE.
+  nodos verificados: 270
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+$ python forja.py guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+$ python tests/test_aceptacion.py
+  D.29 en la aduana: la insercion es atomica y la arista espera en cola: 10 pruebas mas
+  la linea ya escrita de la bitacora se marca por operacion, sin borrar: 15 pruebas mas
+  D.15: la vigencia es COLA DE TRABAJO y no guarda que tumbe el cierre: 3 pruebas mas
+  el cerrojo de insercion y D.44, el censo no decrece: 8 pruebas mas
+  el testigo de guardas al sellar (D.38.3, 16 sep): 4 pruebas mas
+
+  total: 201 pruebas, 0 fallos, 0 errores
+========================================================================

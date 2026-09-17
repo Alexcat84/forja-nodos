@@ -1,0 +1,13 @@
+$ ls .vg01c/*.py   (los instrumentos que escribo en esta fase)
+.vg01c/cierre_frontera.py
+.vg01c/frontera.py
+.vg01c/piezas.py
+.vg01c/poblacion.py
+
+$ grep -nE "\"[a-z_]{8,}\"|'[a-z_]{8,}'" .vg01c/*.py   (toda constante de texto larga dentro de mis instrumentos)
+.vg01c/poblacion.py:12:raiz = 'cuarentena'
+
+$ head -1 de la salida de cada instrumento
+INSTRUMENTO frontera.py  SIN CONSTANTES TECLEADAS: fichero=fuentes/grove_high_output/cap_01.md
+INSTRUMENTO poblacion.py  SIN IDS TECLEADOS: lee dataset/nodos.jsonl y cuarentena/*/ (descarta los que empiezan por _)
+INSTRUMENTO piezas.py  CONSTANTE TECLEADA DENTRO: SI, los RANGOS de linea, que son MI LECTURA. Las palabras y la cobertura las mide el fichero.

@@ -1,0 +1,6 @@
+INSTRUMENTO poblacion.py  SIN IDS TECLEADOS: lee dataset/nodos.jsonl y cuarentena/*/ (descarta los que empiezan por _)
+BANDEJA:ensayo_referencia_163     163
+BANDEJA:marquet_turn_the_ship       3
+BANDEJA:scott_radical_candor       75
+GRAFO                             270
+POBLACION TOTAL                   511
