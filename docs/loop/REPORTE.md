@@ -38180,3 +38180,221 @@ compara la huella guardada con la de hoy, **y la de hoy es exactamente la que es
 
 **LOS OTROS `41` NO SON DE ESTA VUELTA Y NO LOS TOCO.** El registro ya los lleva, y `D.15` dice que
 releerlos es trabajo de una persona, no de una guarda.
+
+---
+
+# VUELTA 36, **`cap_10` entero y sin partirlo**, y **la remision de `cap_08` `L95` que esperaba a que entrara** (lote 4, `scott_radical_candor`)
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`. Tres tareas, bajo el tope de cinco (`EXTRACTOR.md` 1.3).
+Vuelta en **MODO AUSTERO** (`D.47`), con `MODO_INSERCION=insertar` sobre un lote **CERRADO EN
+EXTRACCION** (`D.39`). **La `TAREA 2`, la relectura de fidelidad, corre ANTES de la primera insercion**
+(`EXTRACTOR.md` 15.4), asi que el orden de ejecucion no es el orden de numeracion y lo digo aqui.*
+
+## AC.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**La primera operacion de mi turno es el commit del arnes pendiente** (`EXTRACTOR.md` 1.1), asi que
+esta tabla se lee **justo despues de ese commit y antes de la primera tarea**: el commit que cita es ya
+estado intermedio y lo digo.
+
+<!-- TALLADO: script=.v36/apertura.py salida=.v36/apertura_tabla.txt -->
+
+| pieza | valor | de donde sale |
+|---|---:|---|
+| rama | extraccion-mundo-11 | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno | `8cb6a99` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | **302** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **427** | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con alguna anotacion `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| aristas por `nodos_siguientes` | **109** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | **109** | `dataset/nodos.jsonl` |
+| candidatos en bandeja, lote 4 | **43** | PATRON: `cuarentena/scott_radical_candor/*.json` |
+| insertados y archivados, lote 4 | **99** | PATRON: `cuarentena/_insertados/scott_radical_candor/*.json` |
+| candidatos en bandeja, lote 5 | **3** | PATRON: `cuarentena/marquet_turn_the_ship/*.json` |
+| lote 4 insertado sobre `142`, por ciento | **69,7** | `cuarentena/_insertados/scott_radical_candor/` |
+
+**LAS CIFRAS CUADRAN AL DIGITO CON EL ESTADO QUE EL ENCARGO PUBLICA** en su seccion 2 (`302` nodos,
+`427` veredictos, `43` en bandeja, `99` insertados, `69,7` por ciento). **Cero discrepancias que
+declarar** (`EXTRACTOR.md` 5). Lo corro yo, no lo copio:
+
+<!-- TALLADO: parcial salida=.v36/estado_apertura.txt -->
+
+    $ python .v36/estado.py
+    poblacion: el arbol entero, sin filtrar
+    dataset/nodos.jsonl                        : 302 nodos
+    bitacora/VEREDICTOS.jsonl                  : 427 lineas
+    cuarentena/scott_radical_candor            : 43
+    cuarentena/_insertados/scott_radical_candor: 99
+    la bandeja por capitulo                    : cap_10 14, cap_12 2, cap_13 12, cap_14 15
+
+<!-- TALLADO: parcial salida=.v36/aceptacion_apertura.txt -->
+
+      total: 294 pruebas, 0 fallos, 0 errores
+
+### AC.0.a. **EL TABLERO Y SU PRIORIDAD** (`D.49`, `D.51`)
+
+<!-- TALLADO: parcial salida=.v36/tablero_apertura.txt -->
+
+      prio lote clave                          estado                 dueno                 band ult cap
+      --------------------------------------------------------------------------------------------------------
+      .    4    scott_radical_candor           CERRADO EN EXTRACCION  serial                  43  cap_14
+      1    7    grove_high_output              EN CURSO               grove_high_output       23  cap_03
+      2    9    gerber_emyth                   PAUSADO                NINGUNO                 10  cap_11
+      3    5    marquet_turn_the_ship          PAUSADO                NINGUNO                  9  cap_03
+
+**EL ESTADO Y EL DUEÑO DE MI LIBRO:** `scott_radical_candor` esta **`CERRADO EN EXTRACCION`** y **lo
+trabaja mi linea, `serial`**, con `43` en bandeja y `cap_14` como ultimo capitulo minado.
+
+**POR QUE ME TOCA ESE Y NO OTRO**, con la salida del instrumento delante:
+
+<!-- TALLADO: parcial salida=.v36/tablero_siguiente.txt -->
+
+    $ python forja.py tablero --siguiente
+    D.51, EL ORDEN LO DA EL TABLERO. Linea 'serial':
+      le toca: scott_radical_candor
+      'scott_radical_candor' ya es de esta linea y esta CERRADO EN EXTRACCION: se continua, que D.50 releva AL CERRAR y no a mitad.
+
+**LA COLA DE DOCTRINA ESTA EN `6` Y `0` BLOQUEAN**, linea `COLA DE DOCTRINA (D.53): 6 pregunta(s), 0
+bloquea(n)` del mismo tablero. **No adjudico ninguna**: si me topo con una, digo su numero y sigo.
+
+### AC.0.b. **EL CERROJO, EN SU SEDE DE `procesos/`** (`D.53`)
+
+<!-- TALLADO: parcial salida=.v36/cerrojo.txt -->
+
+    $ ls -la procesos/
+    total 64
+    drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 16:57 ./
+    drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 16:41 ../
+
+**`procesos/` esta vacio: no hay otra corrida viva** y la insercion no queda `INSERCION NO INTENTADA`.
+
+### AC.0.c. **NI SALDO DE LOTE NI COLA SELLADA, Y VAN SEIS VUELTAS** (`D.43`)
+
+<!-- TALLADO: parcial salida=.v36/entrega_arnes.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ ls docs/loop/ | grep -i -E "cola|vecin"
+      (ni una linea)
+
+**`D.43` lo dice literal: si el prompt no te entrega ningun informe, no lo inventes y no lo lances, y
+declara que la vuelta no trae saldo de lote. Lo declaro**, y con el se va la unica cifra que un informe
+de uno en uno no puede ver, `CHOCAN entre si dentro del lote`. **La cola de vecinos de cada candidato la
+leo yo con `forja.py informe` de a uno**, que es lo que `D.43` no me quito.
+
+### AC.0.d. **MI CREDITO AL ABRIR, Y NO ME LO ESCRIBO YO** (`D.48`)
+
+<!-- TALLADO: parcial salida=.v36/credito_apertura.txt -->
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA 34
+      CIFRA PUBLICADA    0 de 2     ACTA 34
+      CLASE              0 de 2     ACTA 34
+      DATO MOVIDO        0 de 2     ACTA 34
+      REPORTE            0 de 3     docs/loop/paradas/2026-09-17-la-tabla-de-cierre-DECISION.md, punto 2
+
+**`REPORTE` vuelve a `0 de 3` con un remedio delante y no con un perdon**, y el remedio es
+`scripts/tabla_de_cierre.py` corriendo en cada commit. **Las cinco especies estan a cero y el credito
+entero.** No escribo ni una linea en `docs/loop/CREDITO_serial.jsonl`, que es sede del acta.
+
+## AC.1. LAS TRES TAREAS, ABIERTAS Y VACIAS (`EXTRACTOR.md` 3)
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | `cap_10` entero, sus `14`, y no se parte | *abierta* |
+| 2 | la fidelidad `D.30`, **antes de la primera insercion** | *abierta* |
+| 3 | cerrar con la tabla de cierre **regenerada**, no tecleada | *abierta* |
+
+## AC.2. **TAREA 2, LA FIDELIDAD, Y CORRE ANTES DE LA PRIMERA INSERCION** (`D.30`, `EXTRACTOR.md` 15.4)
+
+**Ninguna guarda de esta casa ve un paso que yo escribi y el libro no dice.** Los `14` candidatos de
+`cap_10` estaban escritos de vueltas anteriores, asi que esta relectura no es la del acto de escribir:
+es la que `D.30` exige **antes de cualquier insercion**, y la corro entera sobre el capitulo.
+
+### AC.2.a. **`PASOS INVENTADOS` POR UNIDAD, CON SU TOTAL**
+
+<!-- TALLADO: script=.v36/fidelidad.py salida=.v36/fidelidad_tabla.txt -->
+
+| unidad | lineas | pasos | TRANSCRIPCION | PUENTE | por ciento |
+|---|---:|---:|---:|---:|---:|
+| `desplegar_tres_conversaciones_carrera` | L19,L21,L43,L91 | 12 | 12 | **0** | 0,00 |
+| `conversar_historia_vida_descubrir_motivadores` | L47-L59 | 15 | 15 | **0** | 0,00 |
+| `conversar_suenios_cruzar_habilidades` | L61-L75 | 15 | 15 | **0** | 0,00 |
+| `trazar_plan_dieciocho_meses_aprendizaje` | L77-L87 | 14 | 14 | **0** | 0,00 |
+| `armar_plan_anual_crecimiento_equipo` | L93-L125 | 29 | 29 | **0** | 0,00 |
+| `montar_proceso_contratacion_reducir_sesgo` | L129-L163 | 32 | 32 | **0** | 0,00 |
+| `facilitar_despido_tres_cosas` | L169-L173 | 11 | 11 | **0** | 0,00 |
+| `admitir_pronto_mal_desempenio_cuatro_razones` | L175-L179 | 9 | 9 | **0** | 0,00 |
+| `calibrar_decision_despido_documentarla` | L181-L187 | 13 | 13 | **0** | 0,00 |
+| `sopesar_consejo_legal_despedir_humildad` | L189-L195 | 8 | 8 | **0** | 0,00 |
+| `contactar_despedido_mes_despues` | L197-L201 | 6 | 6 | **0** | 0,00 |
+| `calibrar_ascensos_evitar_politica` | L205-L223 | 19 | 19 | **0** | 0,00 |
+| `evitar_obsesion_ascenso_estatus` | L229-L237 | 10 | 10 | **0** | 0,00 |
+| `reconocer_excelencia_trayectoria_gradual` | L239-L251 | 13 | 13 | **0** | 0,00 |
+| **TOTAL de `cap_10`** | | **206** | **206** | **0** | **0,00** |
+
+**`0` PUENTE de `206`, y el peor capitulo es este mismo porque es el unico del tramo: `0,00` por
+ciento contra un tope de `10`. No hay escalada que decidir.**
+
+### AC.2.b. **EL BARRIDO DE LAS TRES ESPECIES, A MAQUINA Y CONTADO TAMBIEN CUANDO NO ENCUENTRA**
+
+`D.30` nombra tres especies de puente por su nombre (**el destinatario, el periodo, el responsable**),
+asi que las busco a maquina en los `206` pasos antes de leerlos uno a uno, y **publico el recuento
+aunque salga limpio**, que es la vara de la pregunta `6` de la cola de doctrina.
+
+<!-- TALLADO: parcial salida=.v36/barrido_puentes.txt -->
+
+    $ python - (barrido de las tres especies de PUENTE que D.30 nombra, sobre los 206 pasos)
+      periodo      : 14 paso(s) levantados
+      destinatario : 3 paso(s) levantados
+      responsable  : 0 paso(s) levantados
+      TOTAL levantados por el barrido: 17 de 206
+
+**`17` levantados, y cada uno contra su linea con la salida pegada** (`D.35`):
+
+<!-- TALLADO: script=.v36/citas_barrido.py salida=.v36/citas_barrido_tabla.txt -->
+
+| especie | unidad y paso | linea | la salida de `grep -n`, pegada | veredicto |
+|---|---|---:|---|---|
+| periodo | `admitir_pronto_mal_desempenio_cuatro_razones` P7 | L179 | `179: ...eep them on the payroll for months of painful legal documentation. Three, to be fair to yours...` | **TRANSCRIPCION** |
+| periodo | `admitir_pronto_mal_desempenio_cuatro_razones` P8 | L179 | `179: ...ss performance problems, it takes a lot more time and is far more unpleasant ...` | **TRANSCRIPCION** |
+| periodo | `armar_plan_anual_crecimiento_equipo` P2 | L99 | `99: ...Once a year, you need to put together a...` | **TRANSCRIPCION** |
+| periodo | `armar_plan_anual_crecimiento_equipo` P9 | L103 | `103: ... better. Don't obsess, spend twenty minutes, maximum, doing this exercise. Think...` | **TRANSCRIPCION** |
+| periodo | `armar_plan_anual_crecimiento_equipo` P20 | L113 | `113: ...n't need to spend more than five to fifteen minutes per direct report jotting d...` | **TRANSCRIPCION** |
+| periodo | `calibrar_ascensos_evitar_politica` P3 | L209 | `209: ...were assembled off-site for one day twice a year. They debated the promotion...` | **TRANSCRIPCION** |
+| periodo | `calibrar_decision_despido_documentarla` P10 | L185 | `185: ...rmance problem drags on for another three or six months....` | **TRANSCRIPCION** |
+| periodo | `contactar_despedido_mes_despues` P1 | L199 | `199: ...I usually email people about a month after I've fired them to check in...` | **TRANSCRIPCION** |
+| periodo | `conversar_historia_vida_descubrir_motivadores` P15 | L59 | `59: ...ct. First, you've done more in forty-five minutes to get to know each person ...` | **TRANSCRIPCION** |
+| periodo | `desplegar_tres_conversaciones_carrera` P9 | L43 | `43: ...t report over the course of three to six weeks....` | **TRANSCRIPCION** |
+| destinat | `montar_proceso_contratacion_reducir_sesgo` P10 | L137 | `137: ...job description should then go to all interviewers, so they know precisely wha...` | **TRANSCRIPCION** |
+| periodo | `montar_proceso_contratacion_reducir_sesgo` P26 | L157 | `157: ...rything down. Here's a tip: schedule an hour, interview for forty-five m...` | **TRANSCRIPCION** |
+| periodo | `montar_proceso_contratacion_reducir_sesgo` P31 | L163 | `163: ... same page is to schedule a one-hour meeting with a fifteen-minute "study hall" time at the be...` | **TRANSCRIPCION** |
+| destinat | `montar_proceso_contratacion_reducir_sesgo` P32 | L163 | `163: ... your recommendation to the powers that be at your company, and push them to make a de...` | **TRANSCRIPCION** |
+| periodo | `reconocer_excelencia_trayectoria_gradual` P8 | L247 | `247: ...others the skill. Give them a couple of months to develop a class, to real...` | **TRANSCRIPCION** |
+| periodo | `trazar_plan_dieciocho_meses_aprendizaje` P6 | L79 | `79: ... develop skills in the next six to eighteen months that would take them in the...` | **TRANSCRIPCION** |
+| destinat | `trazar_plan_dieciocho_meses_aprendizaje` P8 | L81 | `81: ...Here's what to do: make a list of how the person's role can chang...` | **TRANSCRIPCION** |
+
+levantados por el barrido : 17 de 206
+sostenidos por su linea   : 17
+PUENTE                    : 0
+
+**LOS `17` SE SOSTIENEN LOS `17`, Y UNO DE ELLOS ES UN FALSO POSITIVO MIO QUE DECLARO:**
+`trazar_plan_dieciocho_meses_aprendizaje` `P8` lo levanta el patron `destinatario` por la palabra
+*manda*, **y ahi `manda` no es enviar algo a alguien: es *la lista que el texto manda hacer***. El
+barrido no sabe la diferencia y yo si, asi que lo digo en vez de callarlo. La linea `81` que lo
+sostiene es la misma de todas formas.
+
+**`responsable` sale en `0` y eso tambien es un resultado.** El capitulo reparte trabajo entre jefe,
+recursos humanos, abogado y comite, **y el libro nombra a cada uno en su sitio**: ninguno de los
+`206` pasos inventa un responsable que el texto no ponga.
+
+### AC.2.c. **LO QUE EL BARRIDO NO PUEDE VER, Y POR ESO LEI LOS `206` UNO A UNO**
+
+`D.30` avisa de donde mirar: **el parrafo pobre produce el nodo inventado.** El parrafo mas rico de
+`cap_10` es `L137` (la descripcion del puesto, con cinco medios nombrados) y da `0` puentes; **el mas
+pobre del tramo es `L251`**, una sola frase, y tambien da `0`, porque el nodo que sale de el
+(`reconocer_excelencia_trayectoria_gradual` `P12` y `P13`) **transcribe la frase y no la completa**.
+
+**TRES LECTURAS QUE NO LLAMO PUENTE Y QUE MARCO COMO DISCUTIBLES ANTES DE SABER SI ACIERTO**
+(`EXTRACTOR.md` 8), listadas en `AC.5.c` por su numero.

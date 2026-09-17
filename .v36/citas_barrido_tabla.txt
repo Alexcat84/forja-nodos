@@ -1,0 +1,23 @@
+| especie | unidad y paso | linea | la salida de `grep -n`, pegada | veredicto |
+|---|---|---:|---|---|
+| periodo | `admitir_pronto_mal_desempenio_cuatro_razones` P7 | L179 | `179: ...eep them on the payroll for months of painful legal documentation. Three, to be fair to yours...` | **TRANSCRIPCION** |
+| periodo | `admitir_pronto_mal_desempenio_cuatro_razones` P8 | L179 | `179: ...ss performance problems, it takes a lot more time and is far more unpleasant ...` | **TRANSCRIPCION** |
+| periodo | `armar_plan_anual_crecimiento_equipo` P2 | L99 | `99: ...Once a year, you need to put together a...` | **TRANSCRIPCION** |
+| periodo | `armar_plan_anual_crecimiento_equipo` P9 | L103 | `103: ... better. Don't obsess, spend twenty minutes, maximum, doing this exercise. Think...` | **TRANSCRIPCION** |
+| periodo | `armar_plan_anual_crecimiento_equipo` P20 | L113 | `113: ...n't need to spend more than five to fifteen minutes per direct report jotting d...` | **TRANSCRIPCION** |
+| periodo | `calibrar_ascensos_evitar_politica` P3 | L209 | `209: ...were assembled off-site for one day twice a year. They debated the promotion...` | **TRANSCRIPCION** |
+| periodo | `calibrar_decision_despido_documentarla` P10 | L185 | `185: ...rmance problem drags on for another three or six months....` | **TRANSCRIPCION** |
+| periodo | `contactar_despedido_mes_despues` P1 | L199 | `199: ...I usually email people about a month after I've fired them to check in...` | **TRANSCRIPCION** |
+| periodo | `conversar_historia_vida_descubrir_motivadores` P15 | L59 | `59: ...ct. First, you've done more in forty-five minutes to get to know each person ...` | **TRANSCRIPCION** |
+| periodo | `desplegar_tres_conversaciones_carrera` P9 | L43 | `43: ...t report over the course of three to six weeks....` | **TRANSCRIPCION** |
+| destinat | `montar_proceso_contratacion_reducir_sesgo` P10 | L137 | `137: ...job description should then go to all interviewers, so they know precisely wha...` | **TRANSCRIPCION** |
+| periodo | `montar_proceso_contratacion_reducir_sesgo` P26 | L157 | `157: ...rything down. Here's a tip: schedule an hour, interview for forty-five m...` | **TRANSCRIPCION** |
+| periodo | `montar_proceso_contratacion_reducir_sesgo` P31 | L163 | `163: ... same page is to schedule a one-hour meeting with a fifteen-minute "study hall" time at the be...` | **TRANSCRIPCION** |
+| destinat | `montar_proceso_contratacion_reducir_sesgo` P32 | L163 | `163: ... your recommendation to the powers that be at your company, and push them to make a de...` | **TRANSCRIPCION** |
+| periodo | `reconocer_excelencia_trayectoria_gradual` P8 | L247 | `247: ...others the skill. Give them a couple of months to develop a class, to real...` | **TRANSCRIPCION** |
+| periodo | `trazar_plan_dieciocho_meses_aprendizaje` P6 | L79 | `79: ... develop skills in the next six to eighteen months that would take them in the...` | **TRANSCRIPCION** |
+| destinat | `trazar_plan_dieciocho_meses_aprendizaje` P8 | L81 | `81: ...Here's what to do: make a list of how the person's role can chang...` | **TRANSCRIPCION** |
+
+levantados por el barrido : 17 de 206
+sostenidos por su linea   : 17
+PUENTE                    : 0
