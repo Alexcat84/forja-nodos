@@ -1,0 +1,16 @@
+$ grep -hE "^\[(ENTRARIA|BLOQUEARIA|CAERIA)\]" .gerber_v1/aduana_candidato_1.txt .gerber_v1/aduana_tanda_[abc].txt | sort -u
+
+[BLOQUEARIA] construir_empresa_plantilla_vision_diaria   (construir_empresa_plantilla_vision_diaria.json)
+[BLOQUEARIA] dar_valor_constante_cuatro_publicos   (dar_valor_constante_cuatro_publicos.json)
+[BLOQUEARIA] dictar_ritmo_crecimiento_preguntas_escritas   (dictar_ritmo_crecimiento_preguntas_escritas.json)
+[BLOQUEARIA] documentar_trabajo_manual_operaciones   (documentar_trabajo_manual_operaciones.json)
+[BLOQUEARIA] hacer_trabajo_futuro_imaginar_negocio   (hacer_trabajo_futuro_imaginar_negocio.json)
+[BLOQUEARIA] trazar_modelo_negocio_cliente_primero   (trazar_modelo_negocio_cliente_primero.json)
+[BLOQUEARIA] unificar_color_forma_vestuario_modelo   (unificar_color_forma_vestuario_modelo.json)
+[ENTRARIA] fingir_prototipo_cinco_mil_replicas   (fingir_prototipo_cinco_mil_replicas.json)
+[ENTRARIA] interrogar_negocio_cinco_preguntas   (interrogar_negocio_cinco_preguntas.json)
+[ENTRARIA] operar_modelo_gente_destreza_minima   (operar_modelo_gente_destreza_minima.json)
+
+recuento:
+      7 [BLOQUEARIA]
+      3 [ENTRARIA]

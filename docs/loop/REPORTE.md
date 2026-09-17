@@ -36156,7 +36156,7 @@ Salida de `python .gerber_v1/frontera.py fuentes/gerber_emyth/cap_07.md .gerber_
 
     piezas: 9   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4284   suma 4284   residuo 0
 
-Las tres salidas del negocio adolescente (`R3`, `R4`, `R5`) son diagnostico y ocupan **2.101** de las **4.284** palabras del cuerpo. `P1` es la unica pieza donde el libro pasa de describir a mandar, y se nota en que **enumera las preguntas** en vez de decir que hay que hacerse las preguntas adecuadas.
+Las tres salidas del negocio adolescente (`R3`, `R4`, `R5`) son diagnostico y suman **1.249** de las **4.284** palabras del cuerpo, **que es la suma de esas tres filas de la tabla de aqui arriba** y no una cifra mia: `545` mas `369` mas `335`. `P1` es la unica pieza donde el libro pasa de describir a mandar, y se nota en que **enumera las preguntas** en vez de decir que hay que hacerse las preguntas adecuadas.
 
 #### LA FRONTERA DE `cap_08` (`Cap. 6`, *Maturity and the Entrepreneurial Perspective*), **6 piezas y DOS con procedimiento**
 
@@ -36450,7 +36450,7 @@ fundador es lo que el arnes ya subio solo: `docs/loop/PARA_ALEXIS.md`, que **no 
 | # | lo mio | especie | como salio a la luz |
 |---:|---|---|---|
 | **1** | **mi instrumento de citas llevaba dentro los guiones que existe para quitar** | **el que borra tiene que nombrar**: para sustituir U+2014 hay que escribirlo, y el barrido no distingue el guion que escribes del que borras | **lo cazo la fase ciega del arnes a las `21:19:13`**, no yo, y costo un `PARA_ALEXIS.md`. `.v32/fidelidad.py` ya usaba `chr(0x2014)` y **yo no lo copie** (`G1.5`) |
-| **2** | **teclee `25.992` y `41,5 por ciento` sumando de cabeza las once filas de la frontera.** La suma real es `27.992` y `44,7` | **la celda tecleada**, que es la especie exacta de `D.41` | **me lo cace yo antes de commitear**, sumando con el instrumento en vez de con la cabeza, y **lo arregle por el unico metodo que vale**: metiendo el total en el fichero del instrumento y pegandolo de ahi (`G1.3`) |
+| **2** | **teclee CUATRO cifras de cabeza y las CUATRO salieron mal.** `25.992` y `41,5 por ciento` de volumen de vuelta, cuando son `27.992` y `44,7`; `2.101` palabras de diagnostico en `cap_07`, cuando `R3` mas `R4` mas `R5` dan `1.249`; **`22` pares levantados con `19` propios y `3` ajenos**, cuando el recuento da `21`, `15` y `6`; y **`cinco` aristas declaradas**, cuando las que declaro son `cuatro` | **la celda tecleada**, que es la especie exacta de `D.41`, **repetida cuatro veces en la misma vuelta** | **las cuatro me las cace yo antes de commitear**, contando con un instrumento en vez de con la cabeza, y las cuatro las arregle **metiendo el recuento en un fichero y pegandolo de ahi**, nunca tecleando la celda buena. **Que cayera cuatro veces es el dato, y no lo suavizo:** `D.41` lleva escrito desde la vuelta 22 que la diferencia no es el cuidado sino el metodo, y **cada vez que me salte el metodo, falle; ninguna de las cifras que salieron de un instrumento fallo** |
 | **3** | **lance la aduana de seis candidatos en tanda con `tail -25`, y dos de ellos salieron con la salida vacia** | **el filtro que se come la prueba**: una ventana fija recorta lo que el informe imprime, y un informe recortado a cero **no es un veredicto** | **lo vi al recontar los veredictos contra los candidatos**: tenia 10 candidatos y 8 saldos. **Los dos los volvi a correr enteros y sin filtro** (`.gerber_v1/aduana_tanda_c.txt`), en vez de publicar un saldo que no tenia |
 
 **LAS TRES SON DE LA MISMA FAMILIA:** las tres son **el instrumento contradicho por su propio
@@ -36458,4 +36458,111 @@ resultado**, y ninguna se habria visto si la celda se teclea o si el saldo se da
 recontarlo. **La 2 y la 3 las cace yo; la 1 la cazo el arnes.** Esa proporcion, dos de tres, es la
 cifra honrada de esta vuelta y no la publico para lucirla: la publico para que la siguiente sepa que
 **el recuento de veredictos contra candidatos hay que hacerlo siempre**, porque esta vez fallo.
+
+## G1.8. **LA ADUANA EN SECO, CANDIDATO A CANDIDATO Y EN EL ACTO DE ESCRIBIRLO** (`EXTRACTOR.md` 16)
+
+Salida de `grep` sobre los cuatro ficheros de aduana, guardada en `.gerber_v1/aduana_por_candidato.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v1/aduana_por_candidato.txt -->
+
+    [BLOQUEARIA] construir_empresa_plantilla_vision_diaria   (construir_empresa_plantilla_vision_diaria.json)
+    [BLOQUEARIA] dar_valor_constante_cuatro_publicos   (dar_valor_constante_cuatro_publicos.json)
+    [BLOQUEARIA] dictar_ritmo_crecimiento_preguntas_escritas   (dictar_ritmo_crecimiento_preguntas_escritas.json)
+    [BLOQUEARIA] documentar_trabajo_manual_operaciones   (documentar_trabajo_manual_operaciones.json)
+    [BLOQUEARIA] hacer_trabajo_futuro_imaginar_negocio   (hacer_trabajo_futuro_imaginar_negocio.json)
+    [BLOQUEARIA] trazar_modelo_negocio_cliente_primero   (trazar_modelo_negocio_cliente_primero.json)
+    [BLOQUEARIA] unificar_color_forma_vestuario_modelo   (unificar_color_forma_vestuario_modelo.json)
+    [ENTRARIA] fingir_prototipo_cinco_mil_replicas   (fingir_prototipo_cinco_mil_replicas.json)
+    [ENTRARIA] interrogar_negocio_cinco_preguntas   (interrogar_negocio_cinco_preguntas.json)
+    [ENTRARIA] operar_modelo_gente_destreza_minima   (operar_modelo_gente_destreza_minima.json)
+
+    recuento:
+          7 [BLOQUEARIA]
+          3 [ENTRARIA]
+
+> ### **`10` DE `10` CON SU ADUANA CORRIDA, Y `0 CAERIA`. NINGUN CANDIDATO SE PUBLICA SIN SU INFORME.**
+
+**LO QUE ESTO CUESTA, MEDIDO EN ESTA VUELTA Y NO HEREDADO:** el primer informe tardo **`5m12s`**
+(`real 5m12.362s`, en `.gerber_v1/aduana_candidato_1.txt`) contra una poblacion de **`349`**. Es la
+misma cifra que `D.43` uso para sacar el informe de LOTE del turno del extractor, y **el de candidato
+suelto sigue siendo mio**, que es justo lo que `D.43` dice que no se saca.
+
+**`BLOQUEARIA` NO ES UN RECHAZO, Y LA PROPIA ADUANA LO IMPRIME:** *no es rechazo, es cola de lectura.*
+**Y LOS VECINOS DE ESTE LOTE SON CASI TODOS SUYOS**, contados y no estimados:
+
+<!-- TALLADO: parcial salida=.gerber_v1/recuento_cola.txt -->
+
+    pares levantados en total      : 21
+      vecino del propio gerber_emyth: 15
+      vecino de fuera del libro     : 6
+
+    los de fuera, uno a uno y sin repetir:
+      ceder_control_reforzar_competencia_claridad   (3 vez/veces)
+      descubrir_motivacion_sentido_persona   (1 vez/veces)
+      encargar_meta_especifica_dejar_libre_metodo   (1 vez/veces)
+      recorrer_trece_elementos_proceso_evaluacion_formal   (1 vez/veces)
+
+**`15` de `21` son `gerber_emyth` contra `gerber_emyth`.** De los `6` que cruzan, **`4` van a la
+bandeja del lote 5** (`marquet_turn_the_ship`) y **`2` al grafo viejo**. **Es lo que uno espera de la
+primera cosecha de un libro nuevo: su vocabulario es suyo.**
+
+### G1.8.a. **LOS TRES PARES POR ENCIMA DE `0,4`, LEIDOS ANTES QUE NINGUN OTRO** (`EXTRACTOR.md` 11)
+
+*`EXTRACTOR.md` 11 es explicito: **similitud ALTA, de `0,4` en adelante, son gemelos y nada mas**, y
+**si una senal 1 pasa de `0,4`, lee ese par antes que ningun otro.** Hay tres. Los leo, y los tres me
+salen `SANO`. **Escribo el porque de los tres, porque un `SANO` sin razon es un nodo que entro por
+cansancio.***
+
+Salida de `grep` sobre los cuatro ficheros de aduana, guardada en `.gerber_v1/cola_lectura.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v1/cola_lectura.txt -->
+
+    dar_valor_constante_cuatro_publicos   vecino documentar_trabajo_manual_operaciones   similitud_texto 0.406 / 0.430
+    dar_valor_constante_cuatro_publicos   vecino unificar_color_forma_vestuario_modelo   similitud_texto 0.419 / 0.425
+    dictar_ritmo_crecimiento_preguntas_escritas   vecino hacer_trabajo_futuro_imaginar_negocio   similitud_texto 0.400
+
+| par | por que sube tanto | veredicto de lectura |
+|---|---|---|
+| **regla 1 contra regla 4** (`0,430`) | **son dos reglas distintas de la MISMA serie numerada**, escritas por el mismo autor con el mismo armazon de prosa (*el modelo*, *tu gente*, *lo que el texto dice*) | **`SANO`.** Una da **formas de valor** a cuatro publicos; la otra da **el contenido de un manual**. Entregables distintos, pasos disjuntos, y **los dos ya cuelgan de la misma cabeza por `D.37`**: son hermanos declarados, no gemelos |
+| **regla 1 contra regla 6** (`0,425`) | lo mismo, y encima las dos **enumeran objetos**: cinco formas de valor contra ocho sitios de color | **`SANO`**, por el mismo motivo y con la misma cabeza declarada en medio |
+| **`dictar_ritmo` contra `hacer_trabajo_futuro`** (`0,400`) | **dos capitulos distintos** (`Cap. 5` y `Cap. 2`) que comparten el vocabulario del **futuro**: *plan, envision, articulate what you see in the future* contra *to imagine and to dream, not in the past but in the future* | **`SANO`.** Uno entrega **un plan escrito** con capital, gente, tecnologia y espacio por marca; el otro entrega **un dialogo interno** que cierra en una pregunta. **Y NO declaro arista entre ellos**: el libro no dice que uno siga al otro, y `D.37` no autoriza una arista por tema compartido |
+
+> ### **LO QUE ESTA MEDIDA ANADE A LA BANDA DE `EXTRACTOR.md` 11, SIN PEDIR QUE SE MUEVA NADA**
+>
+> La calibracion `D.4` midio **`325` gemelos y CERO ajenos por encima de `0,4`** sobre el catalogo de
+> la otra casa. **Mis tres pares de `0,4` no son gemelos y tampoco son ajenos**: los tres son
+> **hermanos de una cabeza declarada o vecinos de tema dentro del mismo libro**, que es la clase
+> **jerarquia**, y sobre esa clase la calibracion no afirma nada por encima de `0,4`. **Asi que esto
+> no contradice la cifra: cae donde la cifra calla.**
+>
+> **NO PIDO MOVER NINGUN UMBRAL, Y LO DIGO EXPRESAMENTE PORQUE PEDIRLO SERIA PARADA** (`EXTRACTOR.md`
+> 11 y `D.45`). El umbral hizo exactamente su trabajo: **levanto los tres pares, yo los lei, y los
+> tres llevan su razon escrita.** Lo que dejo medido, para quien algun dia recalibre con casos
+> propios, es que **en un capitulo con serie numerada la banda alta se llena de hermanos**, y que eso
+> es cola de lectura sana y no ruido.
+>
+> **Y UNA SEGUNDA COSA QUE DEJO MEDIDA, porque cambia como se lee cualquier cifra de estas:** el mismo
+> par mide **`0,406` y `0,430`** segun cual de sus dos extremos lo levante, y `0,419` contra `0,425`
+> el segundo. **La senal se mide contra una poblacion que crecio entre corrida y corrida** (`349` en el
+> primer informe, `358` en los ultimos, las dos cifras impresas por la propia aduana). **Una similitud
+> publicada sin su poblacion al lado es media cifra.**
+
+### G1.8.b. **LOS TRES `ENTRARIA` NO ESTAN CERTIFICADOS COMO SIN MADRE** (`EXTRACTOR.md` 11)
+
+**`fingir_prototipo_cinco_mil_replicas`, `operar_modelo_gente_destreza_minima` e
+`interrogar_negocio_cinco_preguntas` entran con la cola VACIA.** Y la regla dice lo que eso significa,
+con estas palabras: **un candidato que entra con la cola vacia esta certificado como SIN GEMELO, no
+como sin madre. La jerarquia la busca la lectura, no la senal.**
+
+**Y ESTA VUELTA LO COMPRUEBA EN SU PROPIO DATO, QUE ES LO MEJOR QUE LE PUEDE PASAR A UNA REGLA:**
+
+| | |
+|---|---|
+| **la cabeza `fingir_prototipo_cinco_mil_replicas` entra con CERO vecinos** | y **tiene cuatro hijos declarados** (`G1.3.b`), los cuatro de su propio capitulo, **ninguno levantado por senal alguna** |
+| **`operar_modelo_gente_destreza_minima` entra con CERO vecinos** | y **es la parte 2 de esa misma cabeza**: su madre no la levanto ninguna senal |
+| **`interrogar_negocio_cinco_preguntas` entra con CERO vecinos** | y es justo el que marco como **discutible 4** por repetir las 5.000 replicas de la cabeza. **Ni una senal vio ese parecido**, y yo lo vi leyendo |
+
+**LAS CUATRO ARISTAS QUE ESTA VUELTA DECLARA SALEN LAS CUATRO DE LA LECTURA, Y NINGUNA DE UNA SENAL.** Es
+`D.19` otra vez, que midio que la senal 3 levanta el **3 por ciento** de las aristas declaradas:
+**esperarla es esperar a algo que esta escrito que no llega.**
 
