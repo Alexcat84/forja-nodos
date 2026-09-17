@@ -36652,6 +36652,29 @@ pensando que asi la salida parcial sobreviviria a un corte. **No sobrevive, y ah
 partes.** El instrumento es atomico: **o termina, o no hay saldo**, y esa es la propiedad que convierte
 esta cifra en la que `D.43` saco del turno del extractor.
 
+### G1.9.b. **LO QUE SI SE PUEDE COMPROBAR DEL SALDO YA PUBLICADO: QUE ES EL DE ESTOS BYTES**
+
+*`G1.7` cargo contra mi que la aduana de `G1.8` se corrio **en tandas** y no candidato a candidato, que
+es lo que `EXTRACTOR.md` 16 manda. **Eso queda dicho y no se suaviza.** Lo que se puede medir hoy es lo
+que de ahi queda en pie: si algun candidato se toco DESPUES de su informe, el saldo publicado seria el
+de una version anterior y `G1.8` no valdria nada.*
+
+Salida de `python .gerber_v1/relojes.py`, guardada en `.gerber_v1/relojes.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v1/relojes.txt -->
+
+    candidatos en la bandeja            : 10
+    ficheros de aduana corridos         : 5
+    el candidato tocado MAS TARDE       : 21:24:26  (interrogar_negocio_cinco_preguntas.json)
+    el informe de aduana MAS TEMPRANO   : 21:40:04  (aduana_tanda_b.txt)
+
+    candidatos tocados DESPUES de su informe mas temprano : 0
+
+**QUINCE MINUTOS Y MEDIO SEPARAN EL ULTIMO BYTE ESCRITO DEL PRIMER INFORME CORRIDO**, asi que los diez
+dictamenes de `G1.8` describen **los ficheros que hoy estan en la bandeja** y no una version que ya no
+existe. **No es lo mismo que haber corrido la aduana en el acto, y no lo vendo como si lo fuera:** es
+la mitad de la regla que si se cumplio, medida en vez de prometida.
+
 ## G1.10. **EL CIERRE, RECOMPUTADO AL CIERRE Y NO COPIADO DE LA APERTURA** (`EXTRACTOR.md` 4)
 
 Salida de `python .gerber_v1/cierre.py`, guardada en `.gerber_v1/cierre.txt`:
