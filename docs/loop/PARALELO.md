@@ -81,6 +81,20 @@ lanzamiento:**
 cita capitulos de libros ya minados, **y un auditor de frente tiene derecho a recontar una
 ruta que su propio reporte publica.**
 
+### 3.1.c. **LO QUE FALTA DECIDIR ANTES DE VOLVER A LANZAR** (16 sep 2026)
+
+> **UN FRENTE HEREDA EL REGISTRO DE LA LINEA DE INSERCION, Y ESO LE HACE AUDITAR TRABAJO
+> AJENO.** Al crear la rama, el frente se lleva `REPORTE.md` y `ACTA_AUDITOR.md` enteros,
+> **con las actas y las rachas de otra campania.**
+>
+> **Medido el 16 sep:** el frente `grove` paro citando como suyas **tres tandas de la
+> linea principal**, todas sobre `cap_11` de `scott_radical_candor`, **que no es su
+> libro**. Y `D.40` le entrego **cuatro remedios** del acta de otra linea.
+>
+> **ESTA ABIERTO Y ES DOCTRINA**: el dictamen y las dos salidas estan en
+> `docs/loop/paradas/2026-09-16-el-registro-que-heredan-los-frentes.md`. **Hasta que se
+> decida, los frentes no se relanzan.**
+
 ### 3.2. LANZAR CADA FRENTE
 
 **Los tres son el mismo comando con tres nombres cambiados**, y los tres llevan
