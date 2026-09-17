@@ -926,3 +926,5 @@ CIERRE VERDE: el tallado y el censo de rutas.
 [2026-09-16 21:19:18]     EL SELLO NO SE ACEPTA: 1 guarda(s) en rojo al sellar.
 [2026-09-16 21:19:18]       la guarda 'guiones' estaba en ROJO en el instante del sello (2026-09-16 21:19:13). Una cifra vale en el instante del sello (D.38.3, 16 sep 2026): si al cerrar hay un rojo, la tabla de cierre no se escribio DESPUES de volver a correr las guardas. BARRIDO DE GUIONES EN ROJO: 4 hallazgo(s)
 [2026-09-16 21:19:18] DETENIDO en la vuelta 1: el testigo desmiente el estado del sello. Ver docs/loop/PARA_ALEXIS.md
+[2026-09-16 22:04:28] extractor: fallo instantaneo (probable limite de uso), 4149s, costo "vacio", intento 1 de 7
+[2026-09-16 22:04:28] fallo "instantaneo"; espero 1800 segundos y reintento
