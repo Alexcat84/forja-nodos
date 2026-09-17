@@ -37622,3 +37622,114 @@ detengo aqui, que es lo que la regla manda hacer con lo que no es mio.**
 
 **`scott_radical_candor` baja de `63` a `48` en bandeja y sigue siendo de mi linea.** El corte del
 mundo 11 no se mueve: **faltan los `3` de siempre**, y ninguno es asunto mio.
+
+---
+
+# VUELTA 35, **el puente que ya entro al grafo**, y **cerrar `cap_09` en insercion** (lote 4, `scott_radical_candor`)
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`. Tres tareas, bajo el tope de cinco (`EXTRACTOR.md` 1.3).
+**La `TAREA 1` es BLOQUEANTE y va antes de insertar nada.** Vuelta en **MODO AUSTERO** (`D.47`), y con
+`MODO_INSERCION=insertar` sobre un lote **CERRADO EN EXTRACCION** (`D.39`).*
+
+## AB.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**La primera operacion de mi turno es el commit del arnes pendiente** (`EXTRACTOR.md` 1.1), asi que
+esta tabla se lee **justo despues de ese commit y antes de la `TAREA 1`**: el commit que cita es ya
+estado intermedio y lo digo.
+
+<!-- TALLADO: script=.v35/apertura.py salida=.v35/apertura_tabla.txt -->
+
+| pieza | valor | de donde sale |
+|---|---:|---|
+| rama | extraccion-mundo-11 | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno | `0d92254` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | **297** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **423** | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con alguna anotacion `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| aristas por `nodos_siguientes` | **108** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | **108** | `dataset/nodos.jsonl` |
+| candidatos en bandeja, lote 4 | **48** | PATRON: `cuarentena/scott_radical_candor/*.json` |
+| insertados y archivados, lote 4 | **94** | PATRON: `cuarentena/_insertados/scott_radical_candor/*.json` |
+| candidatos en bandeja, lote 5 | **3** | PATRON: `cuarentena/marquet_turn_the_ship/*.json` |
+| lote 4 insertado sobre `142`, por ciento | **66,2** | `cuarentena/_insertados/scott_radical_candor/` |
+
+**LOS `48` EN BANDEJA CUADRAN AL DIGITO CON EL ENCARGO**, que publica esa misma cifra en su cabecera y
+en la cuenta por capitulo de su seccion 4. **Cero discrepancias que declarar** (`EXTRACTOR.md` 5).
+
+<!-- TALLADO: parcial salida=.v35/aceptacion_apertura.txt -->
+
+      total: 274 pruebas, 0 fallos, 0 errores
+
+### AB.0.a. **EL TABLERO Y SU PRIORIDAD** (`D.49`)
+
+<!-- TALLADO: parcial salida=.v35/tablero_apertura.txt -->
+
+      prio lote clave                          estado                 dueno                 band ult cap
+      --------------------------------------------------------------------------------------------------------
+      .    4    scott_radical_candor           CERRADO EN EXTRACCION  serial                  48  cap_14
+      1    7    grove_high_output              EN CURSO               grove_high_output       23  cap_03
+      2    9    gerber_emyth                   PAUSADO                NINGUNO                 10  cap_11
+      3    5    marquet_turn_the_ship          PAUSADO                NINGUNO                  9  cap_03
+
+**EL ESTADO Y EL DUEÑO DE MI LIBRO:** `scott_radical_candor` esta **`CERRADO EN EXTRACCION`** y **lo
+trabaja mi linea, `serial`**, con `48` en bandeja y `cap_14` como ultimo capitulo minado.
+
+**POR QUE ME TOCA ESE Y NO OTRO**, con la salida del instrumento y no con mi memoria:
+
+<!-- TALLADO: parcial salida=.v35/tablero_siguiente.txt -->
+
+    $ python forja.py tablero --siguiente
+    D.51, EL ORDEN LO DA EL TABLERO. Linea 'serial':
+      le toca: scott_radical_candor
+      'scott_radical_candor' ya es de esta linea y esta CERRADO EN EXTRACCION: se continua, que D.50 releva AL CERRAR y no a mitad.
+
+**LA COLA DE DOCTRINA ESTA EN `6` Y `0` BLOQUEAN**, linea `COLA DE DOCTRINA (D.52): 6 pregunta(s), 0
+bloquea(n)` del mismo tablero. **No adjudico ninguna.**
+
+### AB.0.b. **EL CERROJO, EN SU SEDE DE `D.44` Y `D.52`**
+
+<!-- TALLADO: parcial salida=.v35/cerrojo.txt -->
+
+    $ ls -la procesos/
+    total 64
+    drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 13:59 ./
+    drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 13:55 ../
+
+**`procesos/` esta vacio: no hay otra corrida viva** y la insercion no queda `NO INTENTADA`.
+
+### AB.0.c. **NI SALDO DE LOTE NI COLA SELLADA, Y VAN CINCO VUELTAS** (`D.43`)
+
+<!-- TALLADO: parcial salida=.v35/entrega_arnes.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ ls docs/loop/ | grep -i -E "cola|vecin"
+      (ni una linea)
+
+**`D.43` lo dice literal: si el prompt no te entrega ningun informe, no lo inventes y no lo lances, y
+declara que la vuelta no trae saldo de lote. Lo declaro.** La cola de vecinos de cada candidato la leo
+yo con `forja.py informe` de a uno, que es lo que `D.43` **no** me quito.
+
+### AB.0.d. **MI CREDITO AL ABRIR, Y NO ME LO ESCRIBO YO** (`ACTA 33` 9.1)
+
+<!-- TALLADO: parcial salida=.v35/credito_apertura.txt -->
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            2 de 3     ACTA 33
+      CIFRA PUBLICADA    0 de 2     ACTA 33
+      CLASE              0 de 2     ACTA 33
+      DATO MOVIDO        0 de 2     ACTA 33
+      REPORTE            2 de 3     ACTA 33
+
+**`REPORTE` esta en `2 de 3`, el penultimo escalon.** No escribo ni una linea en
+`docs/loop/CREDITO_serial.jsonl` (`D.48`, sede del acta).
+
+## AB.1. LAS TRES TAREAS, ABIERTAS Y VACIAS (`EXTRACTOR.md` 3)
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | **BLOQUEANTE**: el puente que ya entro al grafo (`P13`, `L215`) | *abierta* |
+| 2 | `PASOS INVENTADOS` por capitulo, con el ojo nuevo de la polaridad | *abierta* |
+| 3 | cerrar `cap_09` en insercion, `5` candidatos | *abierta* |
