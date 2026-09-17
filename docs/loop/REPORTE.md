@@ -38019,3 +38019,149 @@ fuerzo.**
 dijo `INSERCION NO INTENTADA`.
 
 **TAREA 3 CERRADA.**
+
+## AB.5. EL CIERRE DE LA VUELTA 35
+
+### AB.5.a. **EL ESTADO AL CERRAR, RECOMPUTADO AL CERRAR** (`EXTRACTOR.md` 4)
+
+<!-- TALLADO: script=.v35/cierre.py salida=.v35/cierre_tabla.txt -->
+
+| pieza | valor | de donde sale |
+|---|---:|---|
+| rama | extraccion-mundo-11 | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno | `eaaf78f` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | **302** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **427** | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con alguna anotacion `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| aristas por `nodos_siguientes` | **109** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | **109** | `dataset/nodos.jsonl` |
+| candidatos en bandeja, lote 4 | **43** | PATRON: `cuarentena/scott_radical_candor/*.json` |
+| insertados y archivados, lote 4 | **99** | PATRON: `cuarentena/_insertados/scott_radical_candor/*.json` |
+| candidatos en bandeja, lote 5 | **3** | PATRON: `cuarentena/marquet_turn_the_ship/*.json` |
+| lote 4 insertado sobre `142`, por ciento | **69,7** | `cuarentena/_insertados/scott_radical_candor/` |
+
+**LO QUE MOVIO ESTA VUELTA, contra la apertura de `AB.0`:** nodos **`297` a `302`**, veredictos
+**`423` a `427`** (`1` correccion declarada mas `3` veredictos de vecino), aristas **`108` a `109`**
+en los dos sentidos, bandeja del lote 4 **`48` a `43`** e insertados **`94` a `99`**.
+
+**LA FILA DE `no_consumada` NO SE MOVIO: sigue en `14`.** Ninguna de mis cinco corridas quedo a medias.
+
+**EL CERROJO SIGUE LIBRE AL CERRAR:** `procesos/` tiene `0` ficheros.
+
+### AB.5.b. **LAS CINCO GUARDAS**
+
+| guarda | como sale |
+|---|---|
+| `python forja.py gate` | **VERDE**, `302` nodos verificados, `13` guardas |
+| `python forja.py guiones` | **VERDE**, cero guiones largos y cero medios |
+| `python tests/test_aceptacion.py` | **VERDE**, `274` pruebas, `0` fallos, `0` errores |
+| tallado `D.41` en estricto | **VERDE**, `97` tablas comprobables celda a celda |
+| censo de rutas `D.42` | **VERDE**, ver `scripts/cerrar_reporte.py` al pie |
+
+<!-- TALLADO: parcial salida=.v35/aceptacion_cierre.txt -->
+
+      total: 274 pruebas, 0 fallos, 0 errores
+
+> **UNA CAIDA DEL TALLADO QUE ME COMI YO Y LA DECLARO**, porque es correccion declarada y no un
+> tramite: la tabla de veredictos de `AB.3.b.bis` salio **`SIN COMPROBAR` en estricto** la primera vez.
+> **No era una celda mala: era el alcance del marcador.** La ventana de `scripts/tallar_reporte.py`
+> llega hasta el ultimo encabezado, asi que mi tabla de lectura heredaba el marcador del barrido de
+> `AB.3.b`, que declara `script=` y no `parcial`. **Se arreglo partiendo la seccion con su propio
+> encabezado**, no tecleando ninguna celda. **Lo escribo porque `D.41` existe precisamente para que
+> esto no se calle.**
+
+### AB.5.c. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| # | donde | que es |
+|---:|---|---|
+| 1 | `AB.3.c` | `P3` de `conducir_reuniones_salto_nivel_diez_reglas`, `L391`. Lo cuento **TRANSCRIPCION**, pero el paso encadena `no ... ni ... no` y **la lectura literal de una doble negacion es la contraria de la que el libro quiere** |
+| 2 | `AB.4.b` | el par de `0,375`, el `familia_id` mas alto del tramo: lo juzgue **`SANO`** siendo la señal mas fuerte que vi, **y la causa que doy es mi propia convencion de nombres** |
+| 3 | `AB.2.c` | la correccion de `P13` deja el **texto literal del paso sin tocar**, porque no hay instrumento que lo reescriba. Lo llamo retirada **por declaracion** y **puede que el auditor no lo acepte como retirada** |
+
+### AB.5.d. **LA COLA DE DOCTRINA: DOS DE LAS SEIS, Y NINGUNA ADJUDICADA**
+
+| n | donde me la encontre | lo que aporto, y nada mas |
+|---:|---|---|
+| **3** | `AB.3.d` | **tres** ids de este tramo llevan cuenta en el nombre donde el libro escribe un indefinido (`nueve`, `diez`, `cuatro`), **y las tres cuadran** al recontar los rotulos. La pregunta suma tres casos con cifra |
+| **6** | `AB.3.b` | **la busqueda negativa hecha y contada:** `25` construcciones `X or Y`, `6` bajo negacion, **y declaro las `5` que salieron sanas igual que la que no.** Es el ejemplar de *un barrido que solo se cuenta cuando encuentra algo no es un barrido* |
+
+**Las otras cuatro no me las encontre**, y no las voy a buscar para tener algo que decir.
+
+### AB.5.e. **MI TANDA, PROPUESTA Y NO ADJUDICADA** (`EXTRACTOR.md` 14, `D.48`)
+
+**No escribo ni una linea en `docs/loop/CREDITO_serial.jsonl`**, que es sede del acta. Lo que propongo,
+una linea por especie y con el motivo:
+
+| especie | lo que propongo | por que |
+|---|---|---|
+| `REPORTE` | **no cae** | abierto antes de la `TAREA 1`, una fila por tarea al cerrarse, las cinco guardas en verde y la caida del tallado declarada en `AB.5.b` en vez de callada |
+| `CIFRA PUBLICADA` | **no cae** | las cifras salen de su instrumento, y **la unica que tenia dos valores publicados la republique yo** en `AB.2.d` citando la `ACTA 33` |
+| `CLASE` | **el auditor la lee en `AB.4.b`** | tres veredictos, los tres leidos de los pasos y no de la señal. **`DISCUTIBLE 2` esta marcado a ciegas** |
+| `DATO MOVIDO` | **no encuentro ninguno mio** | `5` de `5` entraron con gate verde, la arista quedo en los dos sentidos y `no_consumada` no se movio de `14` |
+| `AUDITOR` | **no la anoto yo** | es la especie del auditor |
+
+<!-- TALLADO: parcial salida=.v35/credito_cierre.txt -->
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            2 de 3     ACTA 33
+      CIFRA PUBLICADA    0 de 2     ACTA 33
+      CLASE              0 de 2     ACTA 33
+      DATO MOVIDO        0 de 2     ACTA 33
+      REPORTE            2 de 3     ACTA 33
+
+### AB.5.f. LAS TRES TAREAS, CERRADAS
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | **BLOQUEANTE**: el puente que ya estaba en el grafo | **CERRADA** en `AB.2`: `P13` retirado por declaracion sin elegir lectura, la cuenta del resumen corregida de `17 TRANSCRIPCION` a `16 y 1 PUENTE`, y la cifra republicada en **`1` de `181`** |
+| 2 | la fidelidad con el ojo nuevo | **CERRADA** en `AB.3`, **y antes de la primera insercion**: `0` de `91`, y el ojo nuevo **barrido a maquina**, `6` releidas de `25`, con `1` marcada |
+| 3 | cerrar `cap_09` en insercion | **CERRADA** en `AB.4`: `5` de `5`, **`15` de `15` del capitulo**, `3` veredictos y la arista `D.29` cableada en la misma vuelta |
+
+**LAS TRES ENTREGADAS, CERO EN COLA** (tope de cinco). **CERO PARADAS.**
+
+**LO QUE DEJO PARA LA SIGUIENTE, y no es tarea de este encargo:** `cap_10` entero, sus `14` candidatos,
+que **caben en una vuelta y por eso no se parten**; y la remision de `cap_08.md` `L95` al capitulo
+siete, que **espera a que entre `cap_10`** y que el encargo me dijo por su nombre que no forzara.
+
+### AB.5.g. EL TABLERO, VUELTO A MEDIR AL CERRAR (`D.49`)
+
+<!-- TALLADO: parcial salida=.v35/tablero_cierre.txt -->
+
+      prio lote clave                          estado                 dueno                 band ult cap
+      --------------------------------------------------------------------------------------------------------
+      .    4    scott_radical_candor           CERRADO EN EXTRACCION  serial                  43  cap_14
+      1    7    grove_high_output              EN CURSO               grove_high_output       23  cap_03
+      2    9    gerber_emyth                   PAUSADO                NINGUNO                 10  cap_11
+      3    5    marquet_turn_the_ship          PAUSADO                NINGUNO                  9  cap_03
+
+**`scott_radical_candor` baja de `48` a `43` en bandeja y sigue siendo de mi linea.** El corte del
+mundo 11 no se mueve y ninguno de los otros tres es asunto mio.
+
+### AB.5.h. **EL RANCIO QUE FABRIQUE YO, DECLARADO Y NO CALLADO** (`D.15`)
+
+**El cierre sale VERDE y la vigencia publica cola: `42` rancios.** `D.15` dice que eso **no pone nada en
+rojo**, pero tambien que **un rancio no se cita como vigente: se relee con el texto de hoy, o se declara
+por que sigue valiendo**. **Uno de los `42` lo fabrique yo en esta vuelta**, y es el unico que me toca:
+
+    [RANCIO] veredicto practicar_franqueza_radical_jefe_propio contra practicar_franqueza_radical_jefe_propio
+             (linea 424, 2026-09-17): el texto de su vecino cambio desde que se emitio
+             (huella 98d6835edfe1d990, hoy 0392ce4b21a52500)
+
+**LO QUE ES, LEIDO DE SU PROPIA LINEA:**
+
+    $ sed -n '424p' bitacora/VEREDICTOS.jsonl
+    correccion declarada del resumen_teorico (EXTRACTOR.md 2) | practicar_franqueza_radical_jefe_propio
+      | 98d6835edfe1d990 -> 0392ce4b21a52500
+
+**LA LINEA `424` NO ES UN VEREDICTO DE VECINO: ES MI PROPIA CORRECCION DE LA `TAREA 1`**, y sus dos
+huellas son **el antes y el despues que ella misma escribio**. La vigencia la lee como rancia porque
+compara la huella guardada con la de hoy, **y la de hoy es exactamente la que esta operacion produjo**.
+
+> **SIGUE VALIENDO, Y ESTA ES LA RAZON ESCRITA:** la correccion **solo aniadio texto al
+> `resumen_teorico`** (`src/correccion.py` no toca otra cosa), asi que **ningun paso, ninguna fuente y
+> ninguna arista de ese nodo cambio**. **Un rancio que se declara a si mismo en el acto de nacer no es
+> deuda de lectura: es la huella del remedio.**
+
+**LOS OTROS `41` NO SON DE ESTA VUELTA Y NO LOS TOCO.** El registro ya los lleva, y `D.15` dice que
+releerlos es trabajo de una persona, no de una guarda.
