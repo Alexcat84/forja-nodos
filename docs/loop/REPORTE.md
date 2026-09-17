@@ -36609,3 +36609,45 @@ como sin madre. La jerarquia la busca la lectura, no la senal.**
 `D.19` otra vez, que midio que la senal 3 levanta el **3 por ciento** de las aristas declaradas:
 **esperarla es esperar a algo que esta escrito que no llega.**
 
+## G1.9. **EL SALDO DEL LOTE ENTERO, QUE ES LA CIFRA QUE UN INFORME DE UNO EN UNO NO PUEDE VER**
+
+*El encargo de esta corrida lo manda con estas palabras: **al cerrar el capitulo corres el informe del
+lote entero y pegas su saldo en el reporte.** `EXTRACTOR.md` 16 dice lo mismo (*el de candidato es tu
+correccion, el de lote es la prueba que lee el fundador*), y `D.43` lo habia sacado del turno del
+extractor **porque el arnes lo entregaba sellado**. **Esta corrida no lo entrega**, y su propio registro
+lo dice: `[2026-09-16 19:35:39] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)`.
+**Entre el default de `D.43` y la orden expresa de la corrida, mando la orden expresa, y lo declaro
+aqui en vez de resolverlo callando.***
+
+**ESTA SECCION SE ABRE CON EL INSTRUMENTO YA LANZADO Y SE CIERRA CON SU SALIDA PEGADA.** Se escribe
+asi a proposito: `D.43` tiene por ejemplar **una vuelta que lanzo este mismo informe y lo dejo en
+`480` bytes, solo la cabecera**, y **esta misma corrida ya lo dejo en `0` bytes** en su intento
+anterior (`.gerber_v1/informe_de_lote.txt`, `22:37`, cero bytes, el turno que el arnes registro como
+`TURNO MUDO`). Una seccion que solo existe si el instrumento termina es una seccion que se pierde
+entera cuando no termina.
+
+**LAS DOS CITAS DE ARRIBA, CON SU `grep -n` PEGADO AL LADO** (`D.35`: la cita se pega, no se promete).
+Salida de `grep -n` sobre `docs/loop/loop.log`, guardada en `.gerber_v1/cita_loglote.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v1/cita_loglote.txt -->
+
+    910:[2026-09-16 19:35:39] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+    931:[2026-09-16 22:39:51] extractor: TURNO MUDO, el turno corrio 323s y cobro "2.2646879999999996" pero docs/loop/REPORTE.md quedo identico, intento 2 de 7
+
+### G1.9.a. **LA CORRIDA DEL INSTRUMENTO, DECLARADA ANTES DE SABER SI TERMINA**
+
+| | |
+|---|---|
+| el comando | `python -u forja.py informe --carpeta cuarentena/gerber_emyth` |
+| candidatos que mide | **10**, la bandeja entera del libro |
+| lanzado a las | `23:14:06` |
+| donde cae su salida | `.gerber_v1/informe_de_lote.txt` |
+| lo que cuesta, medido en esta vuelta y no heredado | **`5m12s` el de UN candidato** contra una poblacion de `349` (`G1.8`), asi que **la orden de magnitud del de diez es cerca de una hora** |
+
+**Y UNA MEDIDA QUE DEJO ESCRITA PORQUE ME COSTO UN ARRANQUE:** lance este informe la primera vez a las
+`23:12:25` **sin `-u`**, lo vi en `88` bytes al minuto y medio y lo mate para relanzarlo **sin buffer**,
+pensando que asi la salida parcial sobreviviria a un corte. **No sobrevive, y ahora se por que:**
+`src/informe.py` acumula los diez dictamenes en una lista y **solo imprime al final**
+(`texto_informe` se llama una vez, con todo dentro). **`-u` no parte un informe que no se imprime por
+partes.** El instrumento es atomico: **o termina, o no hay saldo**, y esa es la propiedad que convierte
+esta cifra en la que `D.43` saco del turno del extractor.
