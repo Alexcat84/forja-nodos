@@ -1,0 +1,6 @@
+$ grep -n 'techo' docs/loop/EXTRACTOR.md | head -20
+373:   techo (5 sep 2026), donde el bucle producia trabajo bueno que no cabia en una
+386:   > candidatos contra un techo de 15**, y la vuelta 17 intento ademas los otros
+388:   > estaba mal medido; lo que faltaba era decir **cual de los dos techos manda
+392:   > `cap_NN` con N candidatos, por encima del techo de 15; los capitulos
+463:> | **los lotes al techo de candidatos**, no por encima | **las guardas de dato: cerrojo, `D.44`, la aduana entera y la fidelidad `D.30`** |

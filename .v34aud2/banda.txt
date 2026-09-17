@@ -1,0 +1,3 @@
+muestra pineada de los SANO                0 de 11   -> tasa  0.00 por ciento, banda al 95 por ciento: 0.00 a 25.88
+PUENTE sobre los pasos del tramo           1 de 181  -> tasa  0.55 por ciento, banda al 95 por ciento: 0.10 a 3.06
+caida de CLASE sobre los 13 veredictos     0 de 13   -> tasa  0.00 por ciento, banda al 95 por ciento: 0.00 a 22.81

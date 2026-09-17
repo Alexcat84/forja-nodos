@@ -1,0 +1,18 @@
+| # | candidato | vecino | senial que la levanta | **MI CLASE, a ciegas** | la de la vuelta | |
+|---:|---|---|---|---|---|---|
+| 411 | `construir_confianza_equipo_tiempo_solas` | `construir_confianza_equipo_tiempo_solas` | correccion declarada (txt ., pcn .) | **CORREGIDO** | CORREGIDO | COINCIDE |
+| 412 | `organizar_sistema_recoger_quejas_equipo` | `elogiar_publico_criticar_privado_sus_tres_matices` | similitud_texto (txt 0.357, pcn 0.470) | **SANO** | SANO | COINCIDE |
+| 413 | `correr_semana_arreglo_averias_gestion` | `comprobar_criticas_hombre_mujeres_equipo` | similitud_texto (txt 0.356, pcn 0.431) | **SANO** | SANO | COINCIDE |
+| 414 | `dar_guia_humilde_tres_tecnicas` | `elogiar_publico_criticar_privado_sus_tres_matices` | similitud_texto (txt 0.350, pcn 0.393) | **SANO** | SANO | COINCIDE |
+| 415 | `elogiar_publico_criticar_privado_sus_tres_matices` | `dar_guia_humilde_tres_tecnicas` | similitud_texto (txt 0.352, pcn 0.405) | **SANO** | SANO | COINCIDE |
+| 416 | `evitar_personalizar_guia_aceptar_personal` | `manejar_enfado_persona_desafiada` | paso_contra_nodo (txt 0.234, pcn 0.867) | **SANO** | SANO | COINCIDE |
+| 417 | `comprobar_criticas_hombre_mujeres_equipo` | `exigir_critica_jefe_reticente` | similitud_texto (txt 0.402, pcn 0.555) | **SANO** | SANO | COINCIDE |
+| 418 | `comprobar_criticas_hombre_mujeres_equipo` | `revisar_critica_mujer_agresiva_cuatro_tacticas` | similitud_texto (txt 0.382, pcn 0.436) | **SANO** | SANO | COINCIDE |
+| 419 | `comprobar_criticas_hombre_mujeres_equipo` | `correr_semana_arreglo_averias_gestion` | similitud_texto (txt 0.366, pcn 0.431) | **SANO** | SANO | COINCIDE |
+| 420 | `exigir_critica_jefe_reticente` | `comprobar_criticas_hombre_mujeres_equipo` | similitud_texto (txt 0.382, pcn 0.577) | **SANO** | SANO | COINCIDE |
+| 421 | `exigir_critica_jefe_reticente` | `bloquear_tiempo_pensar_calendario` | similitud_texto (txt 0.357, pcn 0.435) | **SANO** | SANO | COINCIDE |
+| 422 | `revisar_critica_mujer_agresiva_cuatro_tacticas` | `comprobar_criticas_hombre_mujeres_equipo` | similitud_texto (txt 0.381, pcn 0.430) | **SANO** | SANO | COINCIDE |
+| 423 | `abrazar_incomodidad_arrancar_critica_equipo` | `construir_confianza_equipo_tiempo_solas` | lectura declarada (txt 0.219, pcn 0.430) | **CONTINUA** | CONTINUA | COINCIDE |
+
+lineas comparadas: 13   COINCIDEN: 13   DISCREPAN: 0
+lineas nuevas SIN razon escrita (D.8): 0 de 13

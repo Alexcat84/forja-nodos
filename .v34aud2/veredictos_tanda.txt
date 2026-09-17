@@ -1,0 +1,174 @@
+--- linea 411 ---
+  candidato: reconocer_emociones_propias_avisar_equipo
+  vecino: construir_confianza_equipo_tiempo_solas
+  veredicto: SANO
+  fecha: 2026-09-17
+  arista: ""
+  detalle_paso: "paso 2 del candidato contra paso 6 de construir_confianza_equipo_tiempo_solas"
+  huella_candidato: "f45a99f556a0816a"
+  huella_vecino: "d70267db73796f36"
+  levantada_por: ["similitud_texto"]
+  razon: "leido el par entero, y ES EL MISMO PAR QUE YA JUZGUE HOY EN EL OTRO SENTIDO: al insertar construir_confianza_equipo_tiempo_solas la senial lo levanto contra mi con 0,358, y ahora me lo levanta a mi contra el con 0,377. Es la asimetria de difflib que D.36 nombra, y aqui no cambio nada porque los dos sentidos pasaron el umbral; el veredicto es el mismo y lo sostengo por lo mismo. Ahora el par que cruza es mi paso 2 (no intentes reprimir lo que sientes) contra su paso 6 (cuida como pides critica y como reaccionas cuando te la dan). Somos hermanos de capitulo y de seccion: los dos salimos de cap_08 bajo RESPECT BOUNDARIES, el suyo del rotulo Building trust de L93 y el mio del rotulo Recognizing your own emotions de L151, y el libro nos separa con un rotulo de linea cada uno, que es el criterio de corte de esta casa en todo el capitulo. SANO."
+  senales: {"familia_id": 0.111, "paso_contra_nodo": 0.414, "similitud_texto": 0.377}
+--- linea 412 ---
+  candidato: construir_confianza_equipo_tiempo_solas
+  vecino: construir_confianza_equipo_tiempo_solas
+  veredicto: CORREGIDO
+  fecha: 2026-09-17
+  campo: "resumen_teorico"
+  caracteres_antes: 1402
+  caracteres_despues: 3242
+  huella_candidato: "51454685dd4c5a97"
+  huella_vecino: "d70267db73796f36"
+  levantada_por: ["correccion declarada"]
+  operacion: "correccion declarada del resumen_teorico (EXTRACTOR.md 2)"
+  razon: "Un nodo del dataset afirmaba que tres capitulos no estaban minados, y uno de los tres tenia 16 nodos y 187 pasos en el grafo el dia en que la frase se escribio. La medicion del dia cuenta las rutas fuentes/scott_radical_candor/cap_NN.md citadas en el resumen_teorico de los 282 nodos de dataset/nodos.jsonl, y el mapa capitulo del libro a fichero se lee de la cabecera unidad: de cada fuente. D.13, sin borrar el texto viejo."
+  senales: {}
+  texto_anadido: "CORRECCION DECLARADA DE LA VUELTA 34, 17 sep 2026: LA FRASE 'Esos tres capitulos NO estan minados todavia' ERA FALSA EN UNO DE LOS TRES EL DIA EN QUE SE ESCRIBIO. El libro numera sus capitulos con tres unidades de frente por delante (Preface, Introduction, How to Use This Book), asi que el capitulo ocho que nombra la linea 95 es el fichero cap_11.md y no cap_08.md. MEDIDO HOY sobre los 282 nodos de dataset/nodos.jsonl, contando cuantos citan cada ruta fuentes/scott_radical_candor/cap_NN.md en su resumen_teorico: el capitulo ocho (1:1 Conversations, fichero cap_11) tiene 16 nodos y 187 pasos YA EN EL GRAFO, metidos por la vuelta 32; el capitulo seis (Soliciting Impromptu Guidance, fichero cap_09) tiene 0 nodos y 0 pasos, y el capitulo siete (fichero cap_10) tiene 0 nodos y 0 pasos. LO CIERTO, ENTONCES: de los tres reenvios de la linea 95, DOS apuntan a capitulos sin minar y UNO apunta a un capitulo minado y cerrado en insercion. LA PRUEBA ESTABA DENTRO DE ESTE MISMO NODO: su unica arista de salida, cableada en la vuelta 33 que lo escribio, va a montar_reuniones_solas_mentalidad_frecuencia, que vive en cap_11. Y LA FRASE SIGUIENTE, 'Cuando cap_09 y los siguientes entren, esas tres aristas son cola de lectura', QUEDA EN DOS: la del capitulo ocho ya esta cableada. LO QUE NO CAMBIA: los pasos 5, 6 y 7 siguen transcribiendo la linea 95 y ni una palabra mas. La razon de no desplegarl
+--- linea 413 ---
+  candidato: organizar_sistema_recoger_quejas_equipo
+  vecino: elogiar_publico_criticar_privado_sus_tres_matices
+  veredicto: SANO
+  fecha: 2026-09-17
+  arista: ""
+  detalle_paso: "paso 7 del candidato contra paso 2 de elogiar_publico_criticar_privado_sus_tres_matices"
+  huella_candidato: "a154b7cf110fe48e"
+  huella_vecino: "8736546d2c4212fc"
+  levantada_por: ["similitud_texto"]
+  razon: "no son el mismo trabajo y ninguno continua al otro: el candidato ORGANIZA UN CANAL para que las quejas del equipo lleguen al jefe (la caja naranja de las lineas 59 a 63, su entregable es un sistema por el que las preguntas llegan y se contestan a la vista de todos), y el vecino DECIDE EL SITIO donde se dice algo que ya se va a decir (elogio en publico, critica en privado, lineas 155 a 163). Los dos pasos que la senial cruza, el P7 del candidato y el P2 del vecino, no comparten ni un objeto: uno manda tratar cada pregunta de la caja con respeto por banal que sea, y el otro manda tomar la regla del elogio como general y no como dura. LO QUE LA SENIAL ESTA MIDIENDO ES MI PROPIA PROSA, no el libro: los dos pasos empiezan por Trata y siguen por que es lo que el texto, que es la formula con la que este extractor ata un paso a su parrafo. 0,357 contra un umbral de 0,35 es la banda baja, y EXTRACTOR.md 11 dice que por debajo de 0,4 conviven gemelos y ajenos. Veredicto SANO, y son hermanos del mismo capitulo"
+  senales: {"familia_id": 0.0, "paso_contra_nodo": 0.47, "similitud_texto": 0.357}
+--- linea 414 ---
+  candidato: correr_semana_arreglo_averias_gestion
+  vecino: comprobar_criticas_hombre_mujeres_equipo
+  veredicto: SANO
+  fecha: 2026-09-17
+  arista: ""
+  detalle_paso: "paso 7 del candidato contra paso 2 de comprobar_criticas_hombre_mujeres_equipo"
+  huella_candidato: "b5b4744cf5f2d772"
+  huella_vecino: "ca1f824eb4400245"
+  levantada_por: ["similitud_texto"]
+  razon: "no son el mismo trabajo, no comparten objeto y ninguno continua al otro: el candidato monta una SEMANA DE ARREGLO DE AVERIAS DE GESTION (lineas 65 a 71, registro publico, voto, reparto entre jefes) y el vecino es lo que UN HOMBRE HACE PARA SABER SI SE ESTA CONTENIENDO al criticar a las mujeres de su equipo (linea 293). Ni el mismo tema, ni la misma seccion, ni el mismo activador. Los dos pasos que la senial cruza son el P7 del candidato, reparte las averias entre los jefes durante la semana de arreglo, y el P2 del vecino, prueba a explicarle el marco de la franqueza radical: no comparten un solo objeto de trabajo. LO QUE LA SENIAL MIDE AQUI ES LA LONGITUD: son las dos frases mas cortas de sus respectivas fichas, y difflib sube su ratio cuando las cadenas son cortas. 0,356 contra un umbral de 0,35 es la banda baja que EXTRACTOR.md 11 llama ruido con cifras. Veredicto SANO"
+  senales: {"familia_id": 0.0, "paso_contra_nodo": 0.431, "similitud_texto": 0.356}
+--- linea 415 ---
+  candidato: dar_guia_humilde_tres_tecnicas
+  vecino: elogiar_publico_criticar_privado_sus_tres_matices
+  veredicto: SANO
+  fecha: 2026-09-17
+  arista: ""
+  detalle_paso: "paso 15 del candidato contra paso 7 de elogiar_publico_criticar_privado_sus_tres_matices"
+  huella_candidato: "89f685f15ba9c119"
+  huella_vecino: "8736546d2c4212fc"
+  levantada_por: ["similitud_texto"]
+  razon: "son hermanos del mismo capitulo y ninguno continua al otro: el candidato ensenia a NO SONAR ARROGANTE al dar guia, con las tres tecnicas de las lineas 79 a 95 (situacion comportamiento impacto, la columna de la izquierda y la humildad ontologica), y el vecino decide DONDE se dice, en publico o en privado, con los tres matices de las lineas 155 a 163. Los dos pasos que la senial cruza son el P15 del candidato, ten presente que tu experiencia subjetiva no es verdad objetiva, y el P7 del vecino, ten claro cual es tu meta al elogiar: uno viene del capitulo Ontological Humility de Fred Kofman y el otro de adaptarse al gusto de cada persona. No comparten objeto ni procedimiento. Y ES LA TERCERA VEZ EN ESTE MISMO TRAMO que la senial 1 levanta un par por MI PROPIA FORMULA y no por el libro: los dos pasos empiezan por Ten y siguen por que es lo que segun el texto. 0,350 es el umbral clavado, la banda mas baja que existe. Veredicto SANO"
+  senales: {"familia_id": 0.091, "paso_contra_nodo": 0.393, "similitud_texto": 0.35}
+--- linea 416 ---
+  candidato: elogiar_publico_criticar_privado_sus_tres_matices
+  vecino: dar_guia_humilde_tres_tecnicas
+  veredicto: SANO
+  fecha: 2026-09-17
+  arista: ""
+  detalle_paso: "paso 2 del candidato contra paso 15 de dar_guia_humilde_tres_tecnicas"
+  huella_candidato: "8736546d2c4212fc"
+  huella_vecino: "89f685f15ba9c119"
+  levantada_por: ["similitud_texto"]
+  razon: "MISMO PAR QUE YA JUZGUE AL INSERTAR dar_guia_humilde_tres_tecnicas, LEIDO AHORA DESDE EL OTRO EXTREMO, y lo digo porque es lo que D.36 manda mirar: en el sentido de ida la senial dio 0,350 cruzando el paso 15 contra el paso 7, y en el de vuelta da 0,352 cruzando el paso 2 contra el paso 15. La asimetria de difflib no cambia el veredicto pero si cambia QUE PASOS se ponen delante, asi que la segunda lectura no es la primera repetida. El fondo es el mismo: el candidato decide DONDE se dice la guia, en publico o en privado, con los tres matices de las lineas 155 a 163, y el vecino ensenia a NO SONAR ARROGANTE al decirla, con las tres tecnicas de las lineas 79 a 95. Los pasos cruzados esta vez son tratala como regla general y no como regla dura, y ten presente que tu experiencia subjetiva no es verdad objetiva: no comparten objeto. Otra vez la senial levanta por mi formula de atar el paso a su parrafo y no por el libro. Veredicto SANO, hermanos del mismo capitulo"
+  senales: {"familia_id": 0.091, "paso_contra_nodo": 0.405, "similitud_texto": 0.352}
+--- linea 417 ---
+  candidato: evitar_personalizar_guia_aceptar_personal
+  vecino: manejar_enfado_persona_desafiada
+  veredicto: SANO
+  fecha: 2026-09-17
+  arista: ""
+  detalle_paso: "paso 9 del candidato contra paso 5 de manejar_enfado_persona_desafiada"
+  huella_candidato: "3dbf3c96e5725c28"
+  huella_vecino: "52259f31e0303e1a"
+  levantada_por: ["paso_contra_nodo"]
+  razon: "ES EL LIBRO EL QUE SE REPITE, NO EL EXTRACTOR, Y ESO NO LOS HACE EL MISMO NODO. El paso 9 del candidato y el paso 5 del vecino dicen los dos elimina de tu vocabulario la frase no te lo tomes como algo personal, y la senial 3 los cruza a 0,867. Los lei y vienen de DOS CAPITULOS DISTINTOS con DOS RAZONES DISTINTAS del propio libro: cap_04 linea 131 escribe Eliminate the phrase dont take it personally from your vocabulary, its insulting, y cap_09 linea 175 escribe The phrase dont take it personally is worse than useless y detras pone el parrafo entero que explica por que (niega los sentimientos, es como decir no estes triste). NINGUNO CONTINUA AL OTRO Y NINGUNO REPITE AL OTRO. El vecino es el procedimiento de MANEJAR EL ENFADO de alguien a quien acabas de desafiar, 7 pasos, y se activa cuando esa persona ya esta enfadada. El candidato es el procedimiento de NO PERSONALIZAR LA GUIA, 12 pasos, y se activa cuando la explicacion que te sale es un rasgo de caracter del otro: trae el error fundamental de atribucion de Lee Ross, el di eso esta mal y no tu estas mal, el concurso de egos y el caso del olor corporal, y de todo eso el vecino no tiene nada. COMPARTEN UNA LINEA DE DOCE Y DE SIETE. Veredicto SANO, y son hermanos que heredan la misma frase de dos sitios del libro. LO QUE SI DEJO MARCADO COMO DISCUTIBLE, sin adjudicarmelo: se puede leer como D.29, con el vecino de madre porque N
+  senales: {"familia_id": 0.0, "paso_contra_nodo": 0.867, "similitud_texto": 0.234}
+--- linea 418 ---
+  candidato: comprobar_criticas_hombre_mujeres_equipo
+  vecino: exigir_critica_jefe_reticente
+  veredicto: SANO
+  fecha: 2026-09-17
+  arista: ""
+  detalle_paso: "paso 1 del candidato contra paso 1 de exigir_critica_jefe_reticente"
+  huella_candidato: "ca1f824eb4400245"
+  huella_vecino: "48d8519801b6eeee"
+  levantada_por: ["similitud_texto"]
+  razon: "PAR POR ENCIMA DE 0,4, LEIDO EL PRIMERO COMO EXTRACTOR.md 11 MANDA, Y NO SON GEMELOS. La similitud sale del PARALELISMO QUE EL PROPIO LIBRO ESCRIBE: la linea 293 abre If youre a man and worried that you might be pulling your punches with female employees (...) it can be helpful to, y la linea 297 abre Similarly, if youre a woman and worried that your male boss is hesitant to criticize your work, it can be helpful to. El libro pone la palabra Similarly para marcar que son la misma figura con los papeles cambiados, asi que los dos primeros pasos comparten esqueleto porque los transcriben fielmente. PERO EL PROCEDIMIENTO ES OTRO, y el actor tambien: el candidato lo ejecuta UN JEFE HOMBRE sobre SU PROPIA guia hacia las mujeres de su equipo (preguntarle a ella como le cae, explicarle el marco, pedirle que lo mida), y el vecino lo ejecuta UNA SUBORDINADA hacia ARRIBA para arrancarle critica a su jefe (tres frases textuales, contar hasta seis, abrazar la incomodidad, redoblar). Direccion opuesta, activador opuesto, entregable opuesto. Ninguno continua al otro y ninguno repite al otro. Veredicto SANO. Y LO QUE ESTO ES ADEMAS, Y NO LO ADJUDICO YO: es la pregunta 1 de la cola de doctrina del tablero, la banda de 0,4 y su primer contraejemplo. Aqui hay un par propio a 0,402 que NO es gemelo, y la causa esta medida: el libro escribio dos parrafos en paralelo a proposito. Va al reporte con
+  senales: {"familia_id": 0.125, "paso_contra_nodo": 0.555, "similitud_texto": 0.402}
+--- linea 419 ---
+  candidato: comprobar_criticas_hombre_mujeres_equipo
+  vecino: revisar_critica_mujer_agresiva_cuatro_tacticas
+  veredicto: SANO
+  fecha: 2026-09-17
+  arista: ""
+  detalle_paso: "paso 1 del candidato contra paso 7 de revisar_critica_mujer_agresiva_cuatro_tacticas"
+  huella_candidato: "ca1f824eb4400245"
+  huella_vecino: "b24e64e9aed1aafc"
+  levantada_por: ["similitud_texto"]
+  razon: "no son el mismo trabajo y ninguno continua al otro: el candidato es lo que UN HOMBRE hace para saber si se esta conteniendo al criticar a las mujeres de su equipo (linea 293), y el vecino es lo que se REVISA ANTES de decirle a una mujer que es demasiado agresiva, con las cuatro tacticas de las lineas 301 a 313. Uno mira hacia atras sobre la guia que ya das, el otro frena una critica concreta antes de decirla. Los pasos que la senial cruza, averigua como se siente ella con tu guia y describe ejemplos concretos de como se manifiesta eso, comparten la formula con la que ato cada paso a su parrafo y no el objeto. 0,382 es banda media, que EXTRACTOR.md 11 llama ruido con cifras. Veredicto SANO, hermanos de la misma seccion GENDER AND GUIDANCE"
+  senales: {"familia_id": 0.222, "paso_contra_nodo": 0.436, "similitud_texto": 0.382}
+--- linea 420 ---
+  candidato: comprobar_criticas_hombre_mujeres_equipo
+  vecino: correr_semana_arreglo_averias_gestion
+  veredicto: SANO
+  fecha: 2026-09-17
+  arista: ""
+  detalle_paso: "paso 2 del candidato contra paso 7 de correr_semana_arreglo_averias_gestion"
+  huella_candidato: "ca1f824eb4400245"
+  huella_vecino: "b5b4744cf5f2d772"
+  levantada_por: ["similitud_texto"]
+  razon: "MISMO PAR QUE YA JUZGUE AL INSERTAR correr_semana_arreglo_averias_gestion, LEIDO AHORA DESDE EL OTRO EXTREMO: alli la senial dio 0,356 cruzando su paso 7 contra el paso 2 de este, y aqui da 0,366 cruzando el paso 2 de este contra su paso 7. Es el mismo par de pasos y la misma lectura. El candidato es lo que un hombre hace para saber si se esta conteniendo con las mujeres de su equipo (linea 293) y el vecino monta una semana de arreglo de averias de gestion (lineas 65 a 71): ni el mismo tema ni la misma seccion. Los dos pasos cruzados, prueba a explicarle el marco de la franqueza radical y reparte las averias entre los jefes durante la semana de arreglo, no comparten un solo objeto: son las dos frases mas cortas de sus fichas y difflib sube su ratio cuando las cadenas son cortas. Veredicto SANO"
+  senales: {"familia_id": 0.0, "paso_contra_nodo": 0.431, "similitud_texto": 0.366}
+--- linea 421 ---
+  candidato: exigir_critica_jefe_reticente
+  vecino: comprobar_criticas_hombre_mujeres_equipo
+  veredicto: SANO
+  fecha: 2026-09-17
+  arista: ""
+  detalle_paso: "paso 1 del candidato contra paso 1 de comprobar_criticas_hombre_mujeres_equipo"
+  huella_candidato: "48d8519801b6eeee"
+  huella_vecino: "ca1f824eb4400245"
+  levantada_por: ["similitud_texto"]
+  razon: "MISMO PAR QUE YA JUZGUE AL INSERTAR comprobar_criticas_hombre_mujeres_equipo, LEIDO DESDE EL OTRO EXTREMO, Y LA CIFRA CAMBIA: en el sentido de ida dio 0,402 y en el de vuelta da 0,382, con los mismos dos pasos delante (el P1 contra el P1). Es la asimetria de difflib que D.36 nombra, y aqui vale la pena decirla porque la de ida cruzaba la banda de 0,4 y la de vuelta no: el mismo par es contraejemplo de la banda alta por un lado y par corriente por el otro. EL FONDO NO CAMBIA Y ES EL DE LA IDA: la similitud sale del paralelismo que el propio libro escribe entre la linea 293 y la 297, que abre con Similarly para marcar que son la misma figura con los papeles cambiados. El candidato lo ejecuta UNA SUBORDINADA hacia ARRIBA para arrancarle critica a su jefe, con tres frases textuales y el silencio contado hasta seis; el vecino lo ejecuta UN JEFE HOMBRE sobre su propia guia hacia las mujeres de su equipo. Direccion opuesta y entregable opuesto. Veredicto SANO"
+  senales: {"familia_id": 0.125, "paso_contra_nodo": 0.577, "similitud_texto": 0.382}
+--- linea 422 ---
+  candidato: exigir_critica_jefe_reticente
+  vecino: bloquear_tiempo_pensar_calendario
+  veredicto: SANO
+  fecha: 2026-09-17
+  arista: ""
+  detalle_paso: "paso 4 del candidato contra paso 3 de bloquear_tiempo_pensar_calendario"
+  huella_candidato: "48d8519801b6eeee"
+  huella_vecino: "3c70d325ce3f390f"
+  levantada_por: ["similitud_texto"]
+  razon: "no son el mismo trabajo, no comparten objeto y ninguno continua al otro: el candidato son las tres frases con las que le exiges critica a un jefe que no se atreve a darla (lineas 295 a 299) y el vecino es bloquear tiempo para pensar en tu calendario y mantenerlo sagrado, que es un procedimiento de agenda de otro capitulo del mismo libro. Los dos pasos que la senial cruza son lo que mas necesito de ti es que me digas lo que piensas de verdad y agenda entonces algo de tiempo para pensar, y manten ese tiempo sagrado: lo unico que comparten es la raiz pensar, en dos sentidos distintos, uno el de opinar y otro el de reflexionar. Son ademas dos frases cortas, y difflib sube su ratio cuando las cadenas son cortas: es la tercera vez en este tramo que la banda baja levanta un par por longitud. 0,357 sobre un umbral de 0,35. Veredicto SANO"
+  senales: {"familia_id": 0.0, "paso_contra_nodo": 0.435, "similitud_texto": 0.357}
+--- linea 423 ---
+  candidato: revisar_critica_mujer_agresiva_cuatro_tacticas
+  vecino: comprobar_criticas_hombre_mujeres_equipo
+  veredicto: SANO
+  fecha: 2026-09-17
+  arista: ""
+  detalle_paso: "paso 2 del candidato contra paso 6 de comprobar_criticas_hombre_mujeres_equipo"
+  huella_candidato: "b24e64e9aed1aafc"
+  huella_vecino: "ca1f824eb4400245"
+  levantada_por: ["similitud_texto"]
+  razon: "MISMO PAR QUE YA JUZGUE AL INSERTAR comprobar_criticas_hombre_mujeres_equipo, LEIDO DESDE EL OTRO EXTREMO Y CRUZANDO OTROS DOS PASOS: en la ida fue 0,382 con el P1 contra el P7, y en la vuelta es 0,381 con el P2 contra el P6. Es la tercera vez en este tramo que la vuelta de un par no pone delante los mismos pasos que la ida, que es lo que D.36 manda mirar: la segunda lectura no es la primera repetida. LA LECTURA SOSTIENE EL MISMO VEREDICTO. El candidato es lo que se REVISA ANTES de decirle a una mujer que es demasiado agresiva, con las cuatro tacticas de las lineas 301 a 313 (cambiar el genero, ser mas concreto, no usar lenguaje de genero, no quedarse en se mas simpatica), y el vecino es lo que UN HOMBRE hace para saber si se esta conteniendo con las mujeres de su equipo (linea 293, preguntarle a ella y pedirle que te mida). Los dos pasos cruzados son dos avisos distintos sobre el mismo sesgo: uno dice que ser mujer no te libra de la trampa y el otro dice que puede que no seas consciente de estar siendo mas blando con unos que con otros. Avisan de lo mismo desde dos procedimientos que no comparten ni activador ni entregable. Veredicto SANO, hermanos de la seccion GENDER AND GUIDANCE"
+  senales: {"familia_id": 0.222, "paso_contra_nodo": 0.43, "similitud_texto": 0.381}
+--- linea 424 ---
+  candidato: abrazar_incomodidad_arrancar_critica_equipo
+  vecino: construir_confianza_equipo_tiempo_solas
+  veredicto: CONTINUA
+  fecha: 2026-09-17
+  arista: "construir_confianza_equipo_tiempo_solas > abrazar_incomodidad_arrancar_critica_equipo"
+  detalle_paso: "paso 16 del candidato contra paso 7 de construir_confianza_equipo_tiempo_solas"
+  huella_candidato: "d49b9546dd062386"
+  huella_vecino: "51454685dd4c5a97"
+  levantada_por: ["lectura declarada"]
+  operacion: "arista declarada por lectura (D.37)"
+  paso_citado: 6
+  razon: "D.29 POR LECTURA, Y NINGUNA SENIAL LA LEVANTO. El paso 6 de la madre nombra en UNA linea cuidar como pides critica y como reaccionas cuando te la dan, y el hijo lo despliega en 20 pasos que la madre no tiene: la pregunta de cabecera de Fred Kofman, contar hasta seis, senialar el lenguaje corporal, escuchar para entender y no para responder, premiar la critica y medirla con la cuenta semanal. EL LIBRO MANDA LA ARISTA POR ESCRITO: la linea 95 de cap_08.md cierra esa clausula con la remision See Soliciting Impromptu Guidance, chapter six, y el hijo sale justamente de esa seccion, lineas 17 a 53 de cap_09.md, que es el fichero del capitulo seis del libro porque lleva tres unidades de frente por delante. ES LA SEGUNDA DE LAS TRES REMISIONES DE LA LINEA 95: la del capitulo ocho se cablea en la vuelta 33 y la del capitulo siete espera a que entre cap_10. SE DECLARA POR D.29 Y NO POR D.37 a proposito: el nombre_largo de la madre dice cuatro conversaciones donde la linea 95 nombra tres, y esa cifra es la pregunta 3 de la cola de doctrina, asi que no me apoyo en una cuenta discutida para declarar una arista. La razon la sostiene la remision escrita del libro, no el numero"
+  senales: {"familia_id": 0.111, "paso_contra_nodo": 0.43, "similitud_texto": 0.219}
+  texto_citado: "Cuida como pides critica y como reaccionas cuando te la dan, porque eso construye confianza o la destruye."

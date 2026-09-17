@@ -1,0 +1,12 @@
+$ python tests/test_aceptacion.py   (cola)
+  D.52, dataset es el catalogo y el cerrojo vive fuera: 7 pruebas mas
+  D.52, la cita del credito es referencia y no resultado: 10 pruebas mas
+  D.52, la cola de doctrina vive en el tablero: 5 pruebas mas
+
+  total: 274 pruebas, 3 fallos, 0 errores
+========================================================================
+
+$ grep -n 'FAIL:' .v34aud/aceptacion_full.txt
+433:FAIL: test_caso_positivo_un_frente_recien_nacido_hereda_cero (__main__.PruebaHerenciaPorLinea.test_caso_positivo_un_frente_recien_nacido_hereda_cero)
+460:FAIL: test_el_aviso_nombra_la_linea_y_su_registro (__main__.PruebaHerenciaPorLinea.test_el_aviso_nombra_la_linea_y_su_registro)
+469:FAIL: test_la_linea_serial_del_repo_tiene_su_registro_escrito (__main__.PruebaHerenciaPorLinea.test_la_linea_serial_del_repo_tiene_su_registro_escrito)

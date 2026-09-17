@@ -1,0 +1,57 @@
+nodos en dataset/nodos.jsonl  : 297
+pasos del grafo entero        : 2464
+lineas en bitacora/VEREDICTOS : 423
+veredictos consumada==False   : 14
+aristas nodos_siguientes      : 108
+aristas nodos_previos         : 108
+--- nodos y pasos por capitulo citado en fuentes ---
+  suma 0 nodos, 0 pasos
+--- scott_radical_candor: nodos y pasos por capitulo (cita en el nodo) ---
+  cap_01  nodos=  1  pasos=   9
+  cap_03  nodos=  1  pasos=  10
+  cap_04  nodos=  5  pasos=  41
+  cap_05  nodos=  8  pasos=  76
+  cap_06  nodos= 10  pasos= 117
+  cap_07  nodos= 25  pasos= 225
+  cap_08  nodos= 12  pasos= 102
+  cap_09  nodos= 15  pasos= 181
+  cap_11  nodos= 16  pasos= 187
+  cap_12  nodos=  1  pasos=  10
+  suma 94 nodos, 958 pasos
+--- scott_radical_candor por UNIDAD DE ORIGEN (metodo comparable con .v34aud/verif_t1.py) ---
+  cap_01  nodos=  1  pasos=   9
+  cap_03  nodos=  1  pasos=  10
+  cap_04  nodos=  5  pasos=  41
+  cap_05  nodos=  7  pasos=  68
+  cap_06  nodos= 10  pasos= 117
+  cap_09  nodos= 15  pasos= 181
+  cap_11  nodos= 16  pasos= 187
+  suma 55 nodos, 613 pasos
+
+los 15 de cap_09, por orden alfabetico:
+    abrazar_incomodidad_arrancar_critica_equipo
+    comprobar_criticas_hombre_mujeres_equipo
+    correr_semana_arreglo_averias_gestion
+    dar_guia_acto_seis_consejos
+    dar_guia_humilde_tres_tecnicas
+    dar_guia_util_cuatro_recordatorios
+    elegir_medio_dar_guia_jerarquia_modos
+    elogiar_publico_criticar_privado_sus_tres_matices
+    evitar_personalizar_guia_aceptar_personal
+    exigir_critica_jefe_reticente
+    medir_guia_propia_pegatinas_marco
+    organizar_sistema_recoger_quejas_equipo
+    practicar_franqueza_radical_jefe_propio
+    responder_critica_abrasiva_cuatro_reglas
+    revisar_critica_mujer_agresiva_cuatro_tacticas
+--- primer capitulo citado en resumen_teorico (metodo de .v34aud/verif_t1.py, recorrido por mi) ---
+  cap_01  nodos=  1  pasos=   9
+  cap_03  nodos=  1  pasos=  10
+  cap_04  nodos=  5  pasos=  41
+  cap_05  nodos=  8  pasos=  76
+  cap_06  nodos= 10  pasos= 117
+  cap_07  nodos= 25  pasos= 225
+  cap_08  nodos= 12  pasos= 102
+  cap_09  nodos= 15  pasos= 181
+  cap_11  nodos= 16  pasos= 187
+  suma 93 nodos, 948 pasos

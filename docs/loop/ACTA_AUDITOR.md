@@ -29058,3 +29058,537 @@ reinicio yo**: la reinicia una decision de Alexis escrita en `docs/loop/paradas/
 
 **Y NO TOCO NADA MAS:** ni `src/`, ni el banco, ni el arnes, ni los protocolos, ni un umbral, ni el
 dataset, ni la bitacora. **La moratoria de `D.45` sigue viva y el frente `grove` sigue corriendo.**
+
+---
+
+# ACTA 33. VUELTA 34, lote 4 (`scott_radical_candor`), **`cap_09` insertado `15` de `20` con el techo mandando**: la vuelta entrega sus **tres tareas**, sus **nueve cifras de apertura y sus nueve de cierre me salen al digito**, mis **trece adjudicaciones ciegas y las suyas coinciden en las trece**, **los `11` SANO de la tanda los releo enteros y se sostienen los `11`** y **su `PARADA` no es parada**. Y aun asi: **su `0` PUENTE de `181` es `1`**, el paso lo marco el como `DISCUTIBLE 1` y **la cifra vive en dos TABLAS y en la conclusion del cierre**, asi que `REPORTE` sube a **`2 de 3`**, que es el penultimo escalon y obliga a encargar el remedio. **Y mi propia apertura sellada publica `434` lineas de un fichero que tiene `433`: MI RACHA SUBE A `2 de 3`.** `CLASE`, `CIFRA PUBLICADA` y `DATO MOVIDO` salen **LIMPIAS** y vuelven a `0`
+
+*Auditada el 17 sep 2026 sobre `3dbc9017cd7056efb83a7c9c9c40472588a7010c`, rama
+`extraccion-mundo-11`, linea **serial**. Acta en **MODO AUSTERO** (`D.47`): lo que el
+registro ya dice no se repite, y lo que sostiene una cifra si.*
+
+## 0. HUECO DE ACTA (`AUDITOR_FORJA.md` 1.0): **NO LO HAY, Y LO MIDO YO**
+
+    $ grep -n "^# ACTA " docs/loop/ACTA_AUDITOR.md | tail -1
+      28473:# ACTA 32. VUELTA 33, lote 4 (scott_radical_candor), cap_08 CERRADO EN INSERCION ...
+
+**La `ACTA 32` cubre la vuelta 33 y audito la 34, que es la inmediatamente siguiente.
+CERO vueltas sin acta.** Y `forja.py herencia` entrega **`0` heredados**, con la huella
+`3b176db2f9bbb25f92a76a0cfff0a365c30d5822`, que es la que mi apertura sellada declara.
+
+    $ python forja.py herencia --comprobar
+    APERTURA CIEGA COMPLETA: el acta anterior va leida por su huella y los 0 heredados van declarados.
+
+## 1. LO QUE VERIFIQUE CON MIS PROPIOS COMANDOS, EN ESTA VUELTA
+
+### 1.1. LAS GUARDAS, CORRIDAS POR MI Y NO LEIDAS DE SU TABLA
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 297
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python forja.py resolutor
+    nodos vivos: 297
+    nodos deprecados (archivo): 0
+    alias registrados: 0
+
+    $ python tests/test_aceptacion.py   (cola)
+      total: 274 pruebas, 0 fallos, 0 errores
+
+**LA SUITE LA FIRMO AHORA Y NO EN LA FASE CIEGA, QUE ES LO QUE ALLI DIJE QUE HARIA.**
+Mi apertura publico `274` pruebas con `3` fallos y **declaro que no los publicaba como
+caida de la vuelta**, porque los tres colgaban de `docs/loop/CREDITO_serial.jsonl`, que
+el arnes retira en esa fase (`D.52`). **Con el registro devuelto, los tres pasan.** La
+lectura de mi apertura era la correcta y la cifra que firma esta acta es `274 / 0 / 0`.
+
+### 1.2. MI RECUENTO DEL DATO CONTRA LAS DOS TABLAS SUYAS
+
+*Salida de `python .v34aud2/cifras_acta.py`, guardada en `.v34aud2/cifras_acta.txt`. La
+columna mia sale de contar el fichero; la suya la tecleo yo de su documento, que es lo
+unico que se puede hacer con una afirmacion ajena.*
+
+<!-- TALLADO: script=.v34aud2/cifras_acta.py salida=.v34aud2/cifras_acta.txt -->
+
+| pieza | **yo, sobre `b698aef`** | el reporte, `AA.0` | **yo, sobre `HEAD`** | el reporte, `AA.5` | |
+|---|---:|---:|---:|---:|---|
+| nodos en `dataset/nodos.jsonl` | **282** | 282 | **297** | 297 | AL DIGITO |
+| pasos del grafo entero | **2283** | . | **2464** | . | *no lo publica* |
+| lineas en `bitacora/VEREDICTOS.jsonl` | **410** | 410 | **423** | 423 | AL DIGITO |
+| de ellas, `consumada: false` | **14** | 14 | **14** | 14 | AL DIGITO |
+| aristas por `nodos_siguientes` | **107** | 107 | **108** | 108 | AL DIGITO |
+| aristas por `nodos_previos` | **107** | 107 | **108** | 108 | AL DIGITO |
+| candidatos en bandeja, lote 4 | **63** | 63 | **48** | 48 | AL DIGITO |
+| insertados y archivados, lote 4 | **79** | 79 | **94** | 94 | AL DIGITO |
+| candidatos en bandeja, lote 5 | **3** | 3 | **3** | 3 | AL DIGITO |
+| lote 4 insertado sobre `142`, por ciento | **55.6** | 55.6 | **66.2** | 66.2 | AL DIGITO |
+
+    filas comparables: 9   AL DIGITO: 9   DISCREPAN: 0
+    142 de la tabla del lote: 48 en bandeja mas 94 archivados = 142
+
+**LAS DIECIOCHO CELDAS COMPARABLES ME SALEN AL DIGITO**, y el `142` del denominador lo
+recompongo del arbol en vez de creermelo. **Los `2464` pasos y los `2283` de la base los
+mido yo y el reporte no los publica**: lo digo como cifra mia, no como hueco suyo.
+
+### 1.3. LO QUE LA VUELTA MOVIO EN LAS SEDES DE DATO, LEIDO DEL `diff` Y NO DE SU PALABRA
+
+    $ git log --oneline --name-only b698aef..HEAD -- dataset/ bitacora/ censos/ procesos/
+      (cinco commits, y ninguno toca procesos/, que ademas esta en .gitignore)
+
+**EL COMMIT DE CIERRE `3dbc901` TOCA LAS DOS SEDES DE DATO Y LO LEI ENTERO**, que era el
+`POR ADJUDICAR 4` de mi apertura:
+
+    ids antes: 297  ids despues: 297
+    nuevos: []   desaparecidos: []
+      CAMBIA abrazar_incomodidad_arrancar_critica_equipo   campo nodos_previos
+      CAMBIA construir_confianza_equipo_tiempo_solas       campo nodos_siguientes
+    bitacora/VEREDICTOS.jsonl: +1 linea, la 423, el veredicto CONTINUA de esa misma arista
+
+**Es la arista `D.29` por los dos extremos y su veredicto, y nada mas.** Cero nodos
+nuevos en el cierre, cero desaparecidos, cero campos de contenido tocados.
+
+**Y LAS FECHAS, QUE ES LO QUE LA VUELTA 33 PAGO:** las `13` lineas nuevas de la bitacora
+llevan `2026-09-17` las trece, y las dos unicas fechas que esta vuelta escribe dentro de
+`dataset/` dicen `17 sep 2026`, **que es el dia en que se escribieron**. Los otros `16`
+sellos de fecha del `diff` son los `2026-09-12` de `fuentes[].fecha` de los quince nodos,
+que es la fecha de extraccion del candidato y no la de hoy.
+
+## 2. LA RELECTURA CIEGA: **`13` DE `13`**
+
+**Mi tabla de clases la escribi a ciegas y el arnes la sello** antes de exponerme el
+reporte (sello `aa747a0ebffd826796a0e75d7e4e75edaad53833`, que es el blob de `HEAD` y
+sigue intacto). **No la reproduzco aqui**, que es lo que `D.47` manda: **la compruebo.**
+
+    $ python .v34aud2/clases_acta.py
+    lineas de mi tabla ciega sellada  : 13
+    el par (candidato, vecino) cuadra : 13 de 13
+    MI CLASE es la de la bitacora     : 13
+    DISCREPAN                         : 0
+    lineas de la tanda SIN razon escrita (D.8): 0
+    SANO de la tanda                  : 11
+    la regla 7 pide el mayor entre 3 y el 20 por ciento: 3
+
+**`1` CORREGIDO, `11` SANO y `1` CONTINUA, las trece coincidiendo, y `0` SANO sin razon
+escrita.** La tabla de `AA.4.b` del reporte dice lo mismo y sale de su propio fichero.
+
+### 2.1. LA MUESTRA PINEADA (`AUDITOR_FORJA.md` 7): **RELEIDA ENTERA, `11` DE `11`**
+
+| | |
+|---|---:|
+| `SANO` de la tanda | **11** |
+| lo que la regla pide | **3** |
+| releidos por mi, con los dos pasos delante | **11 de 11**, la poblacion entera |
+| se sostienen | **11** |
+| caen | **0** |
+| tasa de caida, con su banda | **`0,00` por ciento, Wilson al `95` por ciento de `0,00` a `25,88`** |
+
+    $ python .v34aud2/banda.py
+    muestra pineada de los SANO                0 de 11   -> tasa  0.00 por ciento, banda al 95 por ciento: 0.00 a 25.88
+    caida de CLASE sobre los 13 veredictos     0 de 13   -> tasa  0.00 por ciento, banda al 95 por ciento: 0.00 a 22.81
+
+> **`LECTURA`, y va marcada aparte de la cifra:** **una banda de veinticinco puntos con
+> once puestos dice que esta tanda casi no acota el error de dejar pasar.** La tasa es
+> `0,00` y la banda es lo que la hace honesta. **No invento una muestra donde no hay
+> poblacion y tampoco pretendo que once puestos midan mas de lo que miden.**
+
+**LO QUE COMPROBE DE LAS RAZONES, Y NO POR MUESTRA:** las cuatro citas de linea que las
+once razones usan para sostenerse las lei yo en el fichero fuente. `cap_04` `L131`
+escribe `Eliminate the phrase "don't take it personally" from your vocabulary` y remata
+con `it's insulting`; `cap_09` `L175` escribe `The phrase "don't take it personally" is
+worse than useless`; `L293` abre `If you're a man and worried that...` y `L297` abre
+`Similarly, if you're a woman and worried that...`. **Las cuatro estan donde la razon
+dice, y la palabra `Similarly` es del libro.**
+
+## 3. LOS TRES DISCUTIBLES, ADJUDICADOS
+
+*`AUDITOR_FORJA.md` 5.1: la relectura ciega empieza por los que el extractor marco antes
+de saber si acertaba. `D.47`: por numero y linea, sin reabrir el argumento.*
+
+### 3.1. **DISCUTIBLE 1** (`AA.3.e`, `practicar_franqueza_radical_jefe_propio` `P13`, `L215`): **CAE. ES `PUENTE`**
+
+**El libro, `L215`, leido por mi del fichero:**
+
+    If they react well and reward the candor, keep going. If they don't, give up
+    immediately or assume ill intent. Try again, carefully, but if you get the same
+    reaction the next time, it may be time to move on. You deserve a better boss.
+
+**El paso que entro al grafo:**
+
+    13. Si reacciona bien y premia la franqueza, sigue. Si no, para inmediatamente, y no
+        des por supuesta la mala intencion: vuelve a intentarlo con cuidado, y si la
+        segunda vez la reaccion es la misma, puede que sea momento de irse.
+
+**LA RAZON DE QUE CAIGA NO ES QUE YO LEA LA FRASE DISTINTO: ES QUE EL PASO NO ELIGE
+NINGUNA DE LAS DOS LECTURAS.** El reporte la defiende asi: *la frase inglesa admite las
+dos lecturas y el candidato eligio la que encaja con el resto del parrafo*. **Las dos
+lecturas posibles de `X or Y` comparten polaridad**, y son estas:
+
+| lectura | lo que daria el paso |
+|---|---|
+| literal del recorte, `give up immediately or assume ill intent` | *para inmediatamente **o** da por supuesta la mala intencion* |
+| con el `don't` elidido, `don't give up immediately or assume ill intent` | ***no** pares inmediatamente **ni** des por supuesta la mala intencion* |
+
+**EL PASO ESCRIBE LA PRIMERA MITAD EN POSITIVO Y LA SEGUNDA EN NEGATIVO**, que es una
+tercera combinacion que el libro no escribe en ninguna de las dos. **Y se contradice
+dentro de si mismo**: *para inmediatamente* seguido de *vuelve a intentarlo con cuidado*.
+`D.30` pregunta **si el libro lo dice**, y *no des por supuesta la mala intencion* no
+esta en `L215`. **PUENTE.**
+
+> **DONDE PUEDO ESTAR EQUIVOCADO YO, y lo dejo escrito para que se pueda revocar:** si la
+> casa lee que reconstruir una errata evidente del original es transcripcion, mi cifra
+> baja a `0` y la suya es la buena. **Lo que no se sostiene es el argumento escrito**,
+> porque el paso no reconstruye la errata: la parte por la mitad.
+>
+> **NO ES DOCTRINA NUEVA Y POR ESO NO ES PARADA.** `D.30` lo cubre por su letra, y su
+> remedio esta escrito en el propio `D.30`: *cada puente se retira o se reescribe,
+> citando el parrafo que NO lo dice. Un puente no se queda callado dentro de un nodo.*
+
+### 3.2. **DISCUTIBLE 2** (`AA.4.e`, el par de `0,867`): **SE SOSTIENE. `SANO`, Y SIN ARISTA**
+
+**Lei los pasos de los dos antes de destapar su razon** (la tabla de mi apertura lo
+registra, linea `416`). El par comparte **una** clausula, la de *elimina de tu vocabulario
+la frase no te lo tomes como algo personal*, que es `P09` de doce en uno y `P05` de siete
+en el otro, **y el libro la escribe dos veces en dos capitulos**.
+
+**LA VARA NO TIENE BASCULA** (`AUDITOR_FORJA.md` 6.1): decide si lo que queda fuera es
+procedimiento en los dos lados, **y lo es**. Al candidato le quedan el error fundamental
+de atribucion de Lee Ross, el *di eso esta mal y no tu estas mal*, el concurso de egos y
+la conversacion de verdad personal; al vecino, el manejo del enfado de alguien a quien ya
+desafiaste. **Activadores opuestos y entregables distintos. `SANO`.**
+
+**Y LA ARISTA `D.29` QUE EL REPORTE SE PREGUNTA SI DEBIA DECLARAR: NO.** Su duda era de
+jerarquia y la resuelvo con la misma vara: **`NOMBRAR NO ES PROCEDIMENTAR` pide que la
+madre nombre lo que el hijo despliega**, y aqui ninguno de los dos nombra al otro: los dos
+**heredan del libro la misma linea** desde dos sitios distintos. Una clausula compartida
+no es una remision. **La decision del extractor de no declararla se sostiene, y su motivo
+escrito, que la jerarquia saldria al reves del libro, tambien.**
+
+### 3.3. **DISCUTIBLE 3** (`AA.4.f`, el par de `0,402`): **SE SOSTIENE. `SANO`, Y LA DOCTRINA NO SE TOCA**
+
+**El veredicto lo adjudico leyendo los pasos, que es lo unico que `D.19` deja hacer:**
+*una discrepancia NUNCA se adjudica citando una señal*. Actor opuesto (un jefe hombre
+sobre su propia guia contra una subordinada arrancandole critica a su jefe), activador
+opuesto y entregable opuesto. **La similitud la escribe el libro**, y la palabra
+`Similarly` de `L297` la lei yo en el fichero. **`SANO`.**
+
+**LO QUE NO ADJUDICO, Y LO DIGO EN VEZ DE COLARLO:** que la banda de `0,4` de
+`EXTRACTOR.md` 11 sea o no una regla **es la pregunta `1` de la cola de doctrina** del
+tablero, **no me bloquea** y por tanto no sube sola. **El extractor hizo exactamente lo
+que el encargo le pedia: dijo que numero era y siguio**, y ademas trajo el caso con su
+cifra y con la asimetria de `D.36` medida (`0,402` de ida y `0,382` de vuelta sobre el
+mismo par). **Eso es aportar a la cola sin adjudicarla.**
+
+## 4. `PASOS INVENTADOS POR CAPITULO` (`AUDITOR_FORJA.md` 8): **LA FIRMO YO, Y NO EN `0,00`**
+
+*`8.3`: es una cifra que el extractor me da y que yo firmo. **Conte los pasos nodo a nodo
+del dataset** y **relei los `181` contra su linea del libro**, no por muestra.*
+
+<!-- TALLADO: script=.v34aud2/pasos_inventados_acta.py salida=.v34aud2/pasos_inventados_acta.txt -->
+
+| capitulo | nodos | **pasos escritos** | **PUENTE, firmado por mi** | **PASOS INVENTADOS** | el reporte |
+|---|---:|---:|---:|---:|---:|
+| **`cap_09`** (lote 4, `scott_radical_candor`), el tramo de esta vuelta | 15 | **181** | **1** | **0.55 por ciento** | 0,00 |
+| **total del tramo de esta vuelta** | 15 | **181** | **1** | **0.55 por ciento** | 0,00 |
+
+    PASOS INVENTADOS de cap_09, firmado por el auditor: 1 de 181 = 0.55 por ciento
+      banda de Wilson al 95 por ciento: 0.10 a 3.06
+      tope de AUDITOR_FORJA.md 8.1     : 10 por ciento    -> NO HAY ESCALADA
+      el peor capitulo es el unico: la vuelta no toca ninguna otra unidad
+
+**MIS QUINCE RECUENTOS DE PASOS Y LOS SUYOS COINCIDEN NODO A NODO**, y los `181` del
+denominador son los mismos. **Lo unico que cambia es el numerador, y es de lectura.**
+
+**EL TOTAL DEL LOTE NO LO PUBLICO, Y DIGO POR QUE** (`8.2` pide la fila y el total): la
+tabla de lote vive en la `ACTA 24` `5.3` y **deja cinco capitulos en `sin medir`**, asi que
+un total del lote 4 hoy seria una suma con huecos dentro. **La fila es la que decide el
+volumen y esa si la firmo.** `0,55` contra un tope de `10`: **el tramo siguiente no baja
+ni sube de escalon por esta cifra.**
+
+### 4.1. LA CUENTA QUE EL EXTRACTOR SE CAZO A SI MISMO, Y QUE NO ES CAIDA SUYA
+
+`dar_guia_acto_cinco_consejos` decia **cinco** rotulos donde el libro pone **seis**, y el
+extractor lo corrigio **en cuarentena y antes de insertar**, renombrandolo
+`dar_guia_acto_seis_consejos`. **Los seis los conte yo**, `L123`, `L127`, `L129`, `L131`,
+`L133` y `L135`. **No es caida de ninguna especie**, por la sede: un candidato en bandeja
+no es sede de cifra publicada, y el precedente escrito que el propio reporte cita es el
+correcto.
+
+**LO QUE SI HAGO ES DECIR DE DONDE VENIA EL `cinco`:** de la tabla de frontera de `cap_09`
+del reporte, fila `P10`, escrita en la vuelta 22, donde se lee *cinco consejos rotulados*.
+**Sede `REPORTE.md`, en TABLA.** Lo registro con su nombre y **no lo cargo a ninguna racha
+viva**: una racha cuenta tandas **seguidas**, las tandas intermedias ya estan medidas y
+retro cargar una de hace doce vueltas no cambia ningun contador de hoy. **Y la regla
+funciono: `D.30` corriendo antes de insertar es lo que la caza gratis, que es el argumento
+entero de por que va antes.**
+
+## 5. **LA `PARADA` QUE EL REPORTE DECLARA NO ES PARADA, Y YA NO EXISTE**
+
+*`AA.5.h`: `scripts/cerrar_reporte.py` en rojo por una tabla de
+`docs/loop/APERTURA_CIEGA.md` linea `500`, que no es sede del extractor.*
+
+**LO REPRODUJE SIN TOCAR EL ARBOL, extrayendo cada commit a una carpeta aparte:**
+
+    $ git archive 6315b30 | tar -x -C .v34aud2/abre && cd .v34aud2/abre
+      talladas, celda a celda       : 80
+      SIN COMPROBAR  docs/loop/APERTURA_CIEGA.md linea 500
+      TALLADO EN ROJO (estricto): 1 tabla(s) declaran instrumento y no se pueden comprobar.
+
+    $ git archive 3dbc901 | tar -x -C .v34aud2/close && cd .v34aud2/close
+      talladas, celda a celda       : 88
+      TALLADO EN ROJO (estricto): 1 tabla(s) declaran instrumento y no se pueden comprobar.
+
+    $ python scripts/cerrar_reporte.py     HOY, sobre el arbol de mi turno
+      TALLADO VERDE: las 94 tabla(s) comprobables son las de su instrumento, celda a celda.
+      CENSO VERDE: las 143 rutas publicadas sostienen lo que dicen sostener.
+      CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo.
+
+> **LAS DOS CARPETAS DE EXTRACCION ERAN TEMPORALES Y LAS BORRE AL TERMINAR**, que es por lo
+> que no las publico como ruta: **la prueba es la salida pegada arriba**, y el comando que la
+> regenera esta ahi entero. Lo digo para que nadie busque un fichero que yo mismo quite.
+
+**SUS TRES AFIRMACIONES SE SOSTIENEN Y LAS COMPROBE UNA A UNA:** ya estaba en rojo en el
+commit que abrio su turno, la escribio el auditor y es el primer extractor que se la
+encuentra. **Y NO ES PARADA, porque el rojo se apago solo:** el fichero que lo causaba era
+la apertura ciega de la **vuelta 33**, y **mi apertura de la vuelta 34 lo sobrescribio**
+con seis tablas que **imprime su instrumento**. **El cierre esta en VERDE hoy.**
+
+> **NO ME ABSUELVE DE NADA, Y VA A LA SECCION 6:** la tabla que puso el cierre en rojo la
+> escribi yo. Lo que esta seccion establece es que **la parada no hay que llevarsela a
+> Alexis**, no que no hubiera nada.
+
+**LO QUE SI CAE DE ESA MISMA SECCION ES UNA CIFRA SUYA:** `AA.5.h` punto `3` publica *MIS
+`85` TABLAS COMPROBABLES ESTAN EN VERDE* y **el instrumento imprimio `88`** en ese mismo
+commit, como se ve arriba. Su propio mensaje de commit dice `88`. **Va registrada en la
+seccion 8 y no cambia el escalon, porque la tanda ya acumula por otra.**
+
+## 6. **MIS ERRORES PROPIOS, CON MI NOMBRE** (`5.3`)
+
+### 6.1. **`CIFRA PUBLICADA PROPIA`: MI APERTURA SELLADA DICE `434` LINEAS Y EL FICHERO TIENE `433`**
+
+*La encontre yo, recontando el fichero para verificar el corte del capitulo.*
+
+    $ wc -l < fuentes/scott_radical_candor/cap_09.md
+    433
+    $ sed -n '433p' fuentes/scott_radical_candor/cap_09.md
+    TEAM
+    $ sed -n '434p' fuentes/scott_radical_candor/cap_09.md
+    (ni una linea)
+
+**LA LINEA `434` NO EXISTE.** Mi instrumento `.v34aud/cobertura.py` cuenta
+`read().split("\n")`, que devuelve un elemento vacio de mas detras del ultimo salto, y mi
+apertura publica ese numero bajo el rotulo **`lineas del fichero`**. **La salida estaba
+pegada y la cifra era la del instrumento: lo falso es lo que el rotulo dice que midio**,
+que es exactamente la figura de `D.38.3` ensanchada el 16 sep. **La tabla de frontera del
+propio reporte, escrita en la vuelta 22, cierra en `L431 a L433`: el `433` estaba delante
+y no lo cruce.**
+
+**NO CAMBIA NINGUNA CONCLUSION MIA:** el reparto por rotulos, los `20` con nodo propio y
+los tramos sin candidato no usan ese total. **Eso no la salva:** `5.2` no tiene prueba de
+materialidad, y mis tres predecesores cargaron cifras de esta misma familia.
+
+**`CIFRA PUBLICADA PROPIA`. Mi racha pasa de `1 de 3` a `2 de 3`**, que es el penultimo
+escalon, y por `5.5` su remedio va **ENCARGADO** en la seccion 9 y no solo declarado.
+
+### 6.2. LA OTRA, QUE ES DE LA TANDA ANTERIOR Y NO SUMA ESCALON
+
+Mi apertura de la vuelta 34, seccion 8, trajo por su cuenta que **mi tabla de la apertura
+de la vuelta 33, linea `500`, decia `PEGADA DE .v33a/mis_clases.txt SIN TOCARLA` y ese
+fichero no imprime ninguna tabla**. Lo adjudico ahora con el reporte delante:
+**`CIFRA PUBLICADA PROPIA`, por la procedencia y no por las celdas**, que la `ACTA 32`
+comprobo coincidentes trece de trece. **Es la misma familia que `7.B` de la cosecha.**
+
+**PERO ES DE LA TANDA DE LA `ACTA 32`, QUE YA ESTABA CARGADA** (`AUDITOR 1 de 3`, y su
+ejemplar fue otro). **Una racha cuenta tandas y no caidas**, asi que esta **registra con
+mi nombre y no anade escalon**. El precedente es el de la `ACTA 31`, que declaro que una
+caida hallada despues ensucia **la tanda en que se cometio**.
+
+**EL REMEDIO YA MORDIO, Y ESO SI SE MIDE:** las seis tablas de instrumento de mi apertura
+de esta vuelta **las imprime su instrumento** y el documento se monta leyendolas.
+`TALLADO VERDE: las 94 tabla(s) comprobables son las de su instrumento, celda a celda`,
+corrido hoy con el mismo tallador que puso la otra en rojo.
+
+### 6.3. **UNA COSA QUE HIZO MAL MI PROPIO ENCARGO, Y LA ARREGLO EN VEZ DE CARGARSELA A EL**
+
+El `PROMPT_SIGUIENTE.md` de la vuelta 34, seccion 5 y `AL CERRAR`, mando al **extractor**
+escribir su tanda en `docs/loop/CREDITO_serial.jsonl`. **`D.48` dice que escribir ahi es
+parte de CERRAR EL ACTA**, y el acta es mia. El extractor escribio cuatro lineas sin
+`--cae` ni `--limpia`, que es lo unico honesto que podia hacer (**el que mide no
+adjudica**), **y su reporte lo dice con todas las letras**: *si el auditor lee que si lo
+es, la racha cae al tope y yo no tengo argumento que oponer*. **No se lo cargo**, porque
+castigar esa postura seria castigar la regla madre. **Lo corrijo en la seccion 8, donde
+escribo las lineas definitivas, y en el encargo nuevo.**
+
+## 7. LOS `POR ADJUDICAR` DE MI APERTURA, CERRADOS UNO A UNO
+
+| # | que era | como cierra |
+|---:|---|---|
+| **1** | el `P13` de `practicar_franqueza_radical_jefe_propio` | **CAE contra el reporte.** Seccion `3.1` |
+| **2** | `L223` a `L289` sin ni un candidato | **NO ES DE ESTA VUELTA.** La frontera de `cap_09` se publico en la vuelta 22, y ahi estan sus cuatro piezas con su motivo (`P16` postura, `P17` diagnostico, `P18` investigacion, `P19` nombra a sus hijos). **Mi lectura ciega y la de entonces coinciden pieza a pieza.** Una vuelta de insercion no vuelve a declarar una frontera ya publicada |
+| **3** | el cierre corto de `cap_09` en `15` de `20` | **DECLARADO, y dos veces**: `AA.3.a` antes de releer y `AA.4.a` al cerrar, las dos con los cinco que quedan nombrados por su linea. **No hay caida de `EXTRACTOR.md` 12.4** |
+| **4** | el `diff` de dato del commit de CIERRE | **LIMPIO.** Seccion `1.3` |
+| **5** | la suite de aceptacion | **`274 / 0 / 0`.** Seccion `1.1` |
+| **6** | mi tabla de la vuelta 33 en rojo por `D.41` | **`CIFRA PUBLICADA PROPIA`, sin escalon nuevo.** Seccion `6.2` |
+| **7** | el par `L416` como posible `D.29` | **NO SE DECLARA LA ARISTA.** Seccion `3.2` |
+
+**LAS SIETE CERRADAS. CERO PENDIENTES DE MI PROPIA APERTURA.**
+
+## 8. EL REGISTRO DE LA TANDA (`5.3`)
+
+### 8.1. LAS CAIDAS, POR ESPECIE Y CON SU SEDE
+
+| # | que | sede | especie | acumula |
+|---:|---|---|---|---|
+| 1 | `0` PUENTE de `181` donde mi relectura da `1` | `docs/loop/REPORTE.md`, `AA.3.c` y `AA.5.b` en **TABLA**, y la conclusion de `AA.5.b` | **`REPORTE`** | **SI** |
+| 2 | `85` tablas comprobables donde el instrumento imprimio `88` | `docs/loop/REPORTE.md`, `AA.5.h` punto 3, **prosa de una lista** | **`REPORTE`** | no, y la tanda ya acumula por la `1` |
+| 3 | `434` lineas de un fichero de `433` | `docs/loop/APERTURA_CIEGA.md`, apertura **sellada** | **`CIFRA PUBLICADA PROPIA`** | **SI** |
+| 4 | *PEGADA SIN TOCARLA* de una tabla compuesta a mano | `docs/loop/APERTURA_CIEGA.md` de la vuelta 33 | **`CIFRA PUBLICADA PROPIA`** | no: es la tanda de la `ACTA 32`, ya cargada |
+
+**EL `1` ES EL QUE MUEVE EL CREDITO, Y DIGO POR QUE ES `REPORTE` Y NO OTRA COSA**, porque
+la sede decide la especie (`5.2`):
+
+- **no es `DATO MOVIDO`.** El paso infiel vive en `dataset/`, pero `8.4` dice literal que
+  `PASOS INVENTADOS` **no entra en la metrica de credito**, y meterlo por la puerta de
+  `DATO MOVIDO` obligaria a ensanchar esa especie hasta tragarse `D.30` entero: **toda
+  lectura de fidelidad pasaria a ser una operacion de dato.** Eso es doctrina, y una
+  doctrina no se estrena en la vuelta en que le cuesta un escalon a alguien.
+- **si es `REPORTE`, y la regla es de esta misma seccion 8.** `8.3` punto `3` dice que un
+  fallo **de como se reporta esta metrica** es *caida de especie `REPORTE` y la nombras*;
+  y `8.3` punto `2` nombra por adelantado el error exacto que aqui se cometio: *el error
+  que esta metrica invita a cometer es marcar un puente como transcripcion*. **La cifra
+  vive en dos tablas y en la conclusion del cierre**, que es lo que `5.2` exige para que
+  acumule.
+- **el escudo de `8.4` queda entero:** al extractor **no** se le cobra por TENER un
+  puente. Se le cobra por publicar un `0` que la relectura contradice. **Un extractor que
+  declara veinte puentes propios sigue haciendo mejor su trabajo que uno que declara
+  cero.**
+
+**Y LO QUE EL PASO NECESITA NO ES UN ESCALON, ES UNA CORRECCION:** `D.30` manda retirarlo
+o reescribirlo, y eso va **encargado y bloqueante** en el encargo nuevo.
+
+### 8.2. DENTRO CONTRA FUERA DEL MARCADO, que es la cifra que mueve el credito (`5.1`)
+
+| | |
+|---|---:|
+| discutibles marcados por el extractor | **3** |
+| de ellos, caen | **1** (`DISCUTIBLE 1`) |
+| de ellos, se sostienen | **2** |
+| caidas de clase **FUERA** del marcado | **0** |
+| caidas de cifra **FUERA** del marcado | **2** (el `85` de `AA.5.h` y, por mi lado, el `434`) |
+
+> **`LECTURA`, marcada aparte:** **la unica caida de lectura de la vuelta esta DENTRO de
+> su marcado**, y eso es lo que `5.1` dice que hace informativa a la metrica: el extractor
+> sabia donde estaba su duda y la puso delante. **Las dos que salen fuera son de cifra, y
+> una es mia.** `7.G` no me exime aqui: este tramo **si** tiene discutibles marcados, asi
+> que la comparacion que la regla supone existe.
+
+### 8.3. LAS RACHAS VIVAS, Y LAS ESCRIBO YO PORQUE ES PARTE DE CERRAR EL ACTA (`D.48`)
+
+| especie | venia de | **esta tanda** | **queda en** | por que |
+|---|---|---|---|---|
+| **`CLASE`** | `0 de 2` | **LIMPIA** | **`0 de 2`** | `13` de `13` veredictos releidos y sostenidos |
+| **`CIFRA PUBLICADA`** | `1 de 2` | **LIMPIA** | **`0 de 2`** | ninguna cifra falsa en `docs/`, `config/`, `esquema/` ni en codigo de guarda. `D.38.1`: una tanda limpia pone el contador a cero |
+| **`DATO MOVIDO`** | `1 de 2` | **LIMPIA** | **`0 de 2`** | el `diff` de `dataset/`, `bitacora/` y `censos/` es el que el encargo ordeno, con la fecha del dia. `D.38.1` otra vez, y no es un perdon mio: es la letra |
+| **`REPORTE`** | `1 de 3` | **CAE** | **`2 de 3`** | seccion `8.1`, caida `1`. **Penultimo escalon** |
+| **`AUDITOR`** (mia) | `1 de 3` | **CAE** | **`2 de 3`** | seccion `6.1`. **Penultimo escalon** |
+
+> **`DATO MOVIDO` BAJA DE `1` A `0` Y NO SOY YO QUIEN LA REINICIA.** La pone a cero **una
+> tanda limpia**, que es lo que `D.38.1` dice con todas sus letras: *seguidas significa
+> consecutivas; una tanda limpia en medio pone el contador a cero, NO lo congela.* El
+> fundador la dejo en `1 de 2` el 17 sep y la tanda siguiente, que es esta, sale limpia de
+> esa especie. **Lo digo asi de claro porque es la lectura que favorece al que audito**, y
+> por eso la apoyo en la regla y no en mi criterio.
+
+**EL REPLAY TRAE UNA DISCREPANCIA VIEJA Y NO LA TOCO:**
+
+    $ python forja.py credito --revisar
+    REPLAY CON 1 DISCREPANCIA(S) en la linea 'serial':
+      linea 131 del registro, CLASE en ACTA 32: declara 1, el replay da 0 (REPORTE.md Z.3.a)
+
+**Es anterior a mi tanda y el propio instrumento dice que una adjudicacion posterior puede
+cambiar una tanda cerrada. Lo publico y no lo arreglo.**
+
+**CREDITO ENTERO: ninguna especie en su tope. NO HAY PARADA POR CREDITO.**
+
+## 9. LO QUE ENCARGO, Y LO QUE ME ENCARGO A MI
+
+> ### **TAREA BLOQUEANTE DEL AUDITOR**, por `5.5` y por `AUDITOR_FORJA.md` 1.4
+>
+> **Mi racha esta en `2 de 3`, que es el penultimo escalon, asi que el remedio va
+> encargado y no declarado. Las dos caidas que me han costado los dos escalones son de la
+> misma familia: una cifra de mi apertura sellada cuyo ROTULO dice mas de lo que el
+> instrumento midio.**
+>
+> **ANTES DE SELLAR MI PROXIMA APERTURA, TODA CIFRA DE RECUENTO DE UN FICHERO DE TEXTO SE
+> COMPRUEBA CON UN SEGUNDO INSTRUMENTO DE LA CASA QUE NO SEA EL MIO**, y la salida de los
+> dos va pegada. Para las lineas de un fichero, el segundo instrumento es `wc -l`. **Si
+> los dos no dan lo mismo, no se publica ninguno de los dos: se publica la discrepancia.**
+>
+> **COMO SE COMPRUEBA QUE SE CUMPLIO:** que junto a cada cifra de recuento de fichero de
+> la apertura siguiente haya **dos** lineas que empiecen por `$`, de dos instrumentos
+> distintos. **Una sola linea cuenta como remedio roto.**
+
+### 9.1. LA TABLA DE REMEDIOS DE ESTA ACTA
+
+| # | **REMEDIO** | como se comprueba que se cumplio |
+|---:|---|---|
+| 1 | **El `P13` de `practicar_franqueza_radical_jefe_propio` se corrige por `D.13` sin borrar el texto viejo**, y la errata del libro no se resuelve en ninguna de las dos direcciones: el paso se queda con lo que `L215` sostiene sin ambiguedad y la contradiccion de la linea se declara | `python forja.py corregir` corrido sobre ese nodo, con la linea `215` pegada y el gate en verde |
+| 2 | **`PASOS INVENTADOS` de `cap_09` se vuelve a publicar con el numerador corregido**, y el reporte dice que su `0` de la vuelta 34 quedo en `1` por adjudicacion del auditor, sin borrar la cifra vieja | la fila de `cap_09` del reporte nuevo dice `1 de 181` y cita esta acta |
+| 3 | **Antes de publicar un `0 PUENTE`, se relee el paso cuya linea de libro sea internamente contradictoria o cuya polaridad el paso parta por la mitad**, y se declara cual se releyo | el reporte nombra los pasos releidos por ese motivo, aunque sean cero |
+| 4 | **El extractor NO escribe su tanda en `docs/loop/CREDITO_serial.jsonl`**: la escribe el auditor al cerrar el acta, que es lo que `D.48` manda. El extractor propone en su reporte la lectura de cada especie y dice por que | `git log -1 --name-only` del cierre de la vuelta no toca `docs/loop/CREDITO_*.jsonl` |
+
+## 10. EL TABLERO Y `D.32`: **NO SE ABRE NINGUN LOTE, Y EL ACTA NO CIERRA NINGUNO**
+
+    $ python forja.py tablero --puedo scott_radical_candor
+    LINEA 'serial', LIBRO 'scott_radical_candor': SI
+      'scott_radical_candor' ya es de esta linea ('serial'): continuarlo es lo que toca.
+
+**`scott_radical_candor` esta `CERRADO EN EXTRACCION`, lo trabaja mi linea y baja de `63` a
+`48` en bandeja.** `D.32` pide medir las dos condiciones de apertura **si el acta cierra un
+lote**, y **esta acta no cierra ninguno**: quedan `48` candidatos, de los cuales `5` son
+del propio `cap_09`. **`D.50` releva al CERRAR y no a mitad.**
+
+> **Y LO DIGO OTRA VEZ PORQUE SE ACERCA:** cuando este lote cierre, el que toca por `D.51`
+> es `grove_high_output`, que el tablero da **`EN CURSO`** en su propia rama. **`D.50`: se
+> releva ENTERO y el paso de fundir es del fundador**, asi que aquello sera **parada con
+> peticion escrita** y no apertura de lote. **No es de esta vuelta.**
+
+**LA COLA DE DOCTRINA SIGUE EN `6` Y `0` BLOQUEAN.** El extractor se topo con cuatro y no
+adjudico ninguna, que es lo que el encargo pedia. **Yo tampoco adjudico ninguna**, y la
+unica sobre la que aporto es la `3`: su medicion de `6` cuentas puestas donde el libro
+escribe un indefinido, `1` de ellas falsa, **la compruebo y se sostiene**.
+
+## 11. EL ESTADO AL CERRAR
+
+    $ git rev-parse HEAD
+    3dbc9017cd7056efb83a7c9c9c40472588a7010c
+    $ python forja.py gate
+    GATE VERDE.  nodos verificados: 297
+    $ python scripts/cerrar_reporte.py
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo.
+
+**`297` nodos, `423` veredictos, `108` aristas por los dos extremos, lote 4 al `66,2` por
+ciento y `48` en bandeja. Cero paradas.**
+
+### 11.1. LA GUARDA QUE DECLARE MORDIENDO, RE CORRIDA POR MUTACION (cosecha `7.C`)
+
+*El reporte declara que su instrumento de fidelidad **revienta** si un ancla no esta en su
+linea y si la relectura no cubre todos los pasos. **Una guarda publicada como mordiendo
+que no muerde es cifra publicada falsa**, asi que la mordi sobre copia.*
+
+    $ python .v34aud2/fid_mut.py      (ancla cambiada por una frase que no esta en el libro)
+    exit=1
+    EL ANCLA NO ESTA EN LA LINEA 21: 'ESTA FRASE NO ESTA EN NINGUNA LINEA DEL LIBRO'
+
+    $ python .v34aud2/fid_mut2.py     (una fila de paso borrada)
+    exit=1
+    RELECTURA INCOMPLETA en abrazar_incomodidad_arrancar_critica_equipo: 20 pasos y 19 releidos
+
+**LAS DOS MUERDEN, y las dos mutaciones corrieron sobre copias en `.v34aud2/`, nunca sobre
+`.v34/`.** **Lo que esa guarda NO puede ver, y por eso existe `D.30`, es el veredicto**:
+comprueba que el ancla este en la linea, no que el paso diga lo que la linea dice. **La
+caida de la seccion `3.1` esta justo en ese hueco, y no hay maquina que lo cierre.**
+
+**ACTA ANTERIOR LEIDA: 3b176db2f9bbb25f92a76a0cfff0a365c30d5822**

@@ -1,147 +1,148 @@
-# ENCARGO DE LA VUELTA 34: **LA REPARACION PRIMERO, Y DESPUES EL LOTE 4**
+# ENCARGO DE LA VUELTA 35: **EL PUENTE QUE ENTRO AL GRAFO, Y DESPUES CERRAR `cap_09`**
 
-*Linea **serial** (`extraccion-mundo-11`), la unica que inserta (`D.45`). Escrito al
-aplicar la decision del fundador del 17 sep 2026, archivada en
-`docs/loop/paradas/2026-09-17-dato-movido-y-la-ciega-que-ve-DECISION.md`.*
+**Commitea y pushea lo pendiente en la rama activa antes de tocar nada.**
 
-> # **LA PARADA ESTA LEVANTADA, Y NO POR UN PERDON**
->
-> El auditor te paro con `DATO MOVIDO` en `2 de 2`. **De sus dos ejemplares, uno se
-> reclasifica y el otro se repara.**
->
-> | ejemplar | que pasa con el |
-> |---|---|
-> | **el cerrojo que entro en `git` dentro de `dataset/`** | **NO es dato: es `ARNES`.** `D.52` muda la sede fuera de `dataset/` y **el ejemplar no acumula** |
-> | **el nodo que afirma que tres capitulos no estan minados** | **SI es dato, y es tu `TAREA 1`.** Se repara antes de seguir |
->
-> **`DATO MOVIDO` queda en `1 de 2`**, por decision escrita del fundador (`5.4`), no por
-> tanda limpia y no por ti. **Sigue en su penultimo escalon: la proxima cae al tope.**
+*Linea **serial** (`extraccion-mundo-11`), la unica que inserta (`D.45`). Escrito al cerrar
+la `ACTA 33`, que audita la vuelta 34.*
 
----
-
-## 1. LA APERTURA: **EL TABLERO Y SU PRIORIDAD** (`D.49`, `D.51`)
-
-> # **LIBRO DE ESTA VUELTA: `scott_radical_candor`**
+> # **LIBRO DE ESTA VUELTA: scott_radical_candor**
 
 **El arnes lee esa linea y la comprueba contra el tablero ANTES de gastar un turno.**
 
     python forja.py tablero                el estado de los once libros
     python forja.py tablero --siguiente    que libro le toca a ESTA linea, y por que
 
-**TU APERTURA CITA LAS DOS COSAS** (`D.49`: *toda linea lee el tablero en su apertura y lo
-cita*): **el estado y el dueño de tu libro**, y **por que te toca ese y no otro**.
+**TU APERTURA CITA LAS DOS COSAS** (`D.49`): **el estado y el dueño de tu libro**, y **por
+que te toca ese y no otro**. `scott_radical_candor` esta `CERRADO EN EXTRACCION`, es de tu
+linea y **`D.50` releva AL CERRAR y no a mitad**: quedan `48` en bandeja.
 
-**EL ORDEN DEL MUNDO 11, QUE NO ELIGES TU** (`D.51`): `1` `grove_high_output`,
-`2` `gerber_emyth`, `3` `marquet_turn_the_ship`, **y ahi esta el corte**. Mientras
-`scott_radical_candor` no cierre, **te toca `scott_radical_candor`**: `D.50` releva **al
-cerrar** y no a mitad.
-
-**Y HAY UNA COLA DE DOCTRINA EN EL TABLERO**, con **seis** preguntas que tu antecesor
-levanto y que **NO se resuelven ahora**: se resuelven cuando el mundo 11 cierre, **salvo
-que alguna te bloquee, y entonces sube sola**. Si te topas con una de las seis, **no la
-adjudiques: di que es la numero `N` de la cola y sigue.**
+**LA COLA DE DOCTRINA SIGUE EN SEIS Y NINGUNA BLOQUEA.** Si te topas con una, **di que es
+la numero `N` y sigue**. La vuelta 34 se topo con cuatro y lo hizo bien: eso no se cambia.
 
 ---
 
-## 2. **TAREA 1, BLOQUEANTE: EL NODO QUE AFIRMA UN ESTADO DE MINERIA FALSO**
+## 1. **LO QUE LA `ACTA 33` ADJUDICO, Y QUE NO TIENES QUE IR A BUSCAR**
 
-*Es el ejemplar de `DATO MOVIDO` que **si** es dato. Va **antes** de insertar nada.*
+| # | que | como quedo |
+|---:|---|---|
+| **`DISCUTIBLE 1`** | `practicar_franqueza_radical_jefe_propio` `P13`, `L215` | **CAE. ES `PUENTE`**, y es tu `TAREA 1` |
+| **`DISCUTIBLE 2`** | el par de `0,867` | **SE SOSTIENE. `SANO`, y la arista `D.29` NO se declara** |
+| **`DISCUTIBLE 3`** | el par de `0,402` | **SE SOSTIENE. `SANO`**, y la banda de `0,4` sigue en la cola de doctrina |
+| **tu `PARADA` de `AA.5.h`** | el cierre de `D.41` en rojo por una tabla ajena | **NO ERA PARADA, e hiciste bien en declararla y no tocarla.** El rojo se apago cuando la apertura ciega de la vuelta 34 sobrescribio a la de la 33. **El cierre esta VERDE hoy** |
+| **`PASOS INVENTADOS` de `cap_09`** | tu `0` de `181` | **el auditor firma `1` de `181`, `0,55` por ciento.** Sigue muy por debajo del tope de `10`: **el tramo no cambia de escalon por esta cifra** |
 
-**Un nodo que entro en la vuelta 33 dice, dentro de `dataset/nodos.jsonl`, que tres
-capitulos NO estan minados todavia. Uno de los tres tiene `16` nodos y `187` pasos en el
-grafo**, metidos por la vuelta 32, **y la propia vuelta 33 lo probo** cableando una arista
-a ese capitulo.
+**TU CREDITO AL ABRIR, Y NO TE LO ESCRIBES TU** (`ACTA 33` 9.1, remedio 4):
 
-### 2.a. Corregirlo **contra la medicion del dia**
+    python forja.py credito          CLASE 0 de 2, CIFRA PUBLICADA 0 de 2, DATO MOVIDO 0 de 2,
+                                     REPORTE 2 de 3, AUDITOR 2 de 3
 
-    python forja.py corregir --nodo <id> --anade "CORRECCION DECLARADA ..." --razon ...
+**`CLASE`, `CIFRA PUBLICADA` y `DATO MOVIDO` vuelven a `0` por tanda limpia** (`D.38.1`).
+**`REPORTE` esta en `2 de 3`, que es el penultimo escalon: la proxima cae al tope.** Y por
+eso las tres primeras tareas de este encargo son exactamente su remedio.
 
-**`D.13`, sin borrar el texto viejo**, y **con la cifra citada**: la afirmacion nueva dice
-lo que mide tu instrumento de hoy, no lo que recuerdas. **Publica el comando con el que lo
-mediste**, no solo el que lo arregla (`REMEDIO 2` de la `ACTA 31`: *todo recuento que
-publico corrigiendo una tabla ajena lo genero del dato, nunca leyendo la tabla que
-corrijo*).
-
-### 2.b. Y **medir si hay mas**, que es la mitad que importa
-
-> **ESA ESPECIE NO DEBERIA EXISTIR: un nodo describe CONOCIMIENTO, no el estado de la
-> campania.**
-
-**Barre el dataset entero buscando nodos que afirmen estado de mineria dentro de su
-texto** (*no esta minado*, *pendiente de minar*, *queda por extraer*, *en bandeja*, y lo
-que se te ocurra de esa familia), **y NOMBRA LO QUE SALGA**, uno a uno, con su id y la
-frase. **Si no sale ninguno mas, esa cifra tambien se publica**: un barrido que solo se
-cuenta cuando encuentra algo no es un barrido.
-
-**Lo que NO haces:** corregirlos todos por tu cuenta si son muchos. **Los nombras, cuentas
-cuantos son, y dices cuanto costaria.** Si es una familia grande, **es cola y sube**.
+> **NO ESCRIBAS NINGUNA LINEA EN `docs/loop/CREDITO_serial.jsonl`.** `D.48` dice que eso es
+> parte de **cerrar el acta**, y el acta no es tuya (`AUDITOR_FORJA.md` 5.6). **Lo que si
+> haces, y en tu reporte**, es proponer la lectura de cada especie con su motivo: eso es lo
+> que `EXTRACTOR.md` 14 llama proponer sin adjudicarse.
 
 ---
 
-## 3. TAREA 2. **SEGUIR INSERTANDO EL LOTE 4**
+## 2. **TAREA 1, BLOQUEANTE: EL PUENTE QUE YA ESTA DENTRO DEL GRAFO** (`D.30`, `D.13`)
 
-    $ python .v34/estado.py
-    poblacion: el arbol entero, sin filtrar
-    dataset/nodos.jsonl                     : 282 nodos
-    bitacora/VEREDICTOS.jsonl               : 410 lineas
-    cuarentena/scott_radical_candor         : 63
-    cuarentena/_insertados/scott_radical_candor: 79
+*`D.30`: **cada puente se retira o se reescribe, citando el parrafo que NO lo dice. Un
+puente no se queda callado dentro de un nodo.** Va ANTES de insertar nada.*
 
-**`79` de `142` insertados, el `55,6` por ciento.** `cap_08` cerro en insercion, `12` de
-`12`. **El siguiente es `cap_09`, con `20` candidatos en bandeja contra un techo de `15`**
-(`EXTRACTOR.md` 12.4). **El techo manda:** si el capitulo entero no cabe, la vuelta cierra
-donde cabe y **lo declara con su cifra**.
+**EL CASO, EN DOS LINEAS.** El libro, `cap_09.md` `L215`:
 
-- **Un candidato por vez y en el orden del libro**, por la aduana, con su veredicto.
-- **Las aristas `D.29` que la señal no levanta se declaran por lectura y se cablean en la
-  misma vuelta.**
-- **`NO SE ABRE NINGUN LOTE** (`D.32`), y el lote 5 no se toca: **ahora lo impide el
-  tablero, no una frase**.
+    If they don't, give up immediately or assume ill intent. Try again, carefully, ...
 
-> **EL CERROJO ESTA PUESTO Y HA CAMBIADO DE SITIO** (`D.44`, `D.52`): vive en
-> `procesos/`, **nunca dentro de `dataset/`**. Si algo dice `INSERCION NO INTENTADA`, hay
-> otra corrida viva. **No la esquives.**
+**El paso `13` que entro al grafo:**
 
-## 4. TAREA 3. **LA FIDELIDAD, Y ESTA VEZ EN SU ORDEN**
+    Si no, para inmediatamente, y no des por supuesta la mala intencion: vuelve a
+    intentarlo con cuidado, ...
 
-**`PASOS INVENTADOS` por capitulo** (`D.30`), fila por unidad mas total, **releyendo los
-pasos contra su parrafo**.
+**`X or Y` comparte polaridad en las dos lecturas posibles** (`give up ... or assume ...`,
+o `don't give up ... or assume ...`). **El paso escribe la primera mitad en positivo y la
+segunda en negativo**, que no es ninguna de las dos, y **se contradice a si mismo**: *para
+inmediatamente* seguido de *vuelve a intentarlo con cuidado*.
 
-> **LA RELECTURA VA ANTES DE QUE LOS NODOS ENTREN**, que es la letra que la vuelta 33
-> rompio: corrio la fidelidad con tres nodos ya dentro. Tu antecesor lo declaro el solo y
-> **no se lo cargaron porque esa figura no tiene fila** (es la pregunta `5` de la cola de
-> doctrina). **No lo repitas apoyandote en que no acumula.**
+### 2.a. **CORRIGELO SIN RESOLVER LA ERRATA DEL LIBRO EN NINGUNA DIRECCION**
+
+    python forja.py corregir --nodo practicar_franqueza_radical_jefe_propio --anade "CORRECCION DECLARADA ..." --razon ...
+
+- **El paso se queda con lo que `L215` sostiene SIN ambiguedad**: si reacciona bien, sigue;
+  si no, vuelve a intentarlo con cuidado; si la segunda vez la reaccion es la misma, puede
+  que sea momento de irse.
+- **La clausula contradictoria se DECLARA y no se elige**: el `resumen_teorico` dice que
+  `L215` del recorte se contradice con su propia frase siguiente, **y que este nodo no
+  decide cual de las dos lecturas es la buena**. `D.30` no te deja escribir lo que el libro
+  no dice, **y tampoco te deja inventar cual queria decir**.
+- **`D.13`, sin borrar un caracter del texto viejo**, y con la linea `215` pegada (`D.35`).
+- **El `resumen_teorico` de ese nodo declara hoy `17 pasos, 17 TRANSCRIPCION, 0 PUENTE`.**
+  Esa frase tambien queda corregida, por la misma via y sin borrarla.
+
+### 2.b. **Y REPUBLICA LA CIFRA, QUE ES LA MITAD QUE IMPORTA**
+
+**Tu reporte dice que `PASOS INVENTADOS` de `cap_09` fue `0,00` por ciento. El auditor lo
+firma en `1` de `181`, `0,55` por ciento.** El reporte nuevo lo dice **sin borrar la cifra
+vieja** y **citando la `ACTA 33` seccion 3.1**. No es una humillacion y no cambia el
+volumen del lote: **es la cifra que la casa usa para decidir tamaños, y una cifra firmada
+por dos manos distintas no puede tener dos valores publicados sin decirlo.**
+
+---
+
+## 3. **TAREA 2: LA FIDELIDAD, ANTES DE INSERTAR, Y CON UN OJO NUEVO** (`D.30`, remedio 3)
+
+**`PASOS INVENTADOS` por capitulo, fila por unidad mas total, releyendo los pasos contra su
+parrafo.** El orden no se discute: **va antes de que entre ni un nodo**, y se ve en el orden
+de tus commits. La vuelta 34 lo cumplio y eso no se pierde.
+
+> **LO QUE ANADE ESTA VUELTA, Y SALE DE LA CAIDA DE LA 34:** antes de publicar un
+> `0 PUENTE`, **relee expresamente todo paso cuya linea del libro se contradiga consigo
+> misma o cuya polaridad el paso parta por la mitad** (una mitad en positivo y la otra en
+> negativo). **Declara cuales releiste por ese motivo, aunque sean cero.** Un barrido que
+> solo se cuenta cuando encuentra algo no es un barrido.
 
 **La escalada se decide sobre el peor capitulo, no sobre el promedio.** Tope `10`.
 
 ---
 
-## 5. **TU CREDITO, Y COMO SE ESCRIBE AHORA** (`D.48`, `D.52`)
+## 4. **TAREA 3: CERRAR `cap_09` EN INSERCION, Y AHI PARA EL TRAMO**
 
-    python forja.py credito              lo que tu linea trae al abrir
-    python forja.py credito --citas      que ninguna cita traiga una conclusion dentro
+    $ python -c "cuenta cuarentena/scott_radical_candor por capitulo"
+      cap_09   candidatos= 5  pasos=  91
+      cap_10   candidatos=14  pasos= 206
+      cap_12   candidatos= 2  pasos=  50
+      cap_13   candidatos=12  pasos= 212
+      cap_14   candidatos=15  pasos= 174
+      TOTAL   candidatos=48  pasos=733
 
-**Al cerrar escribes tu tanda, una linea por especie, y es parte de cerrar:**
+**EL TRAMO SON LOS `5` DE `cap_09`, Y CIERRAN EL CAPITULO**, en el orden del libro:
+`entregar_evaluacion_formal_desempenio_nueve_consejos` (L331),
+`impedir_punialadas_espalda_equipo` (L363), `fomentar_guia_reciproca_companieros` (L369),
+`conducir_reuniones_salto_nivel_diez_reglas` (L383) y
+`resolver_dudas_frecuentes_reuniones_salto_nivel` (L415).
 
-    python forja.py credito --anotar --especie "DATO MOVIDO" --vuelta 34 \
-           --tanda "ACTA 33" --racha "0 de 2" --limpia --cita "ACTA 33, seccion 9.1"
+> **POR QUE NO SE EMPIEZA `cap_10` EN LA MISMA VUELTA, con la cuenta delante:** `5` mas `14`
+> son `19`, **por encima del techo de `15`** (`EXTRACTOR.md` 12.4), y `cap_10` **cabe entero
+> en una vuelta**, asi que **no se reparte en dos**. `5` esta dentro del tramo permitido,
+> que es *entre cinco y quince candidatos*. **Declara el tramo corto con su cifra**, que es
+> lo que la vuelta 34 hizo bien y lo que la 17 no hizo.
 
-> ### **Y LA `cita` ES UNA REFERENCIA, NUNCA UN RESULTADO** (`D.52`)
->
-> **Ruta y linea del acta**, y nada mas: `"ACTA 33, seccion 9.1"`. **Nunca**
-> `"11 SANO releidos"` ni `"censo en verde"`.
->
-> **POR QUE, y es una caida de verdad:** la fase ciega leia este registro y el `cita` de
-> una tanda ajena le dijo `11 SANO` **antes de que contara los suyos**. Ahora el arnes
-> **retira el registro durante la fase ciega**, y ademas **una cita con conclusion dentro
-> no pasa el sello**: el testigo tiene cuatro guardas.
->
-> **Cinco citas ya escritas cayeron al estrenar la guarda**, todas de tu antecesor. **No
-> se borro ninguna:** el texto entero vive en `cita_original`.
+- **Un candidato por vez y en el orden del libro**, por la aduana, con su veredicto.
+- **Archiva en `_insertados` EN EL MISMO ACTO** (`D.31`). La vuelta 34 se cobro a si misma
+  el precio de no hacerlo: un vecino listado dos veces.
+- **Las aristas `D.29` que la señal no levanta se declaran por lectura y se cablean en la
+  misma vuelta.** Queda **una** de las tres remisiones de `cap_08.md` `L95`, la del capitulo
+  siete, y **espera a que entre `cap_10`**: no la fuerces ahora.
+- **NO SE ABRE NINGUN LOTE** (`D.32`). El tablero lo impide y no una frase.
+
+> **EL CERROJO VIVE EN `procesos/`, nunca dentro de `dataset/`** (`D.44`, `D.52`). Si algo
+> dice `INSERCION NO INTENTADA`, hay otra corrida viva. **No la esquives.**
 
 ---
 
-## MODO AUSTERO (`D.47`)
+## MODO AUSTERO (`D.47`), QUE SIGUE VIGENTE HASTA QUE CIERRE EL MUNDO 11
 
 | | |
 |---|---|
@@ -156,9 +157,8 @@ pasos contra su parrafo**.
 ## LO QUE NO SE TOCA
 
 - **`src/`, el banco, el arnes y los protocolos**: moratoria de `D.45`.
-- **`config/umbrales.json`**, ningun umbral.
-- **`config/frentes.json`**: ahi viven **decisiones del fundador con su cita**, no
-  configuracion. Se lee, no se edita.
+- **`config/umbrales.json`**, ningun umbral, y **`config/frentes.json`** se lee y no se edita.
+- **`docs/loop/CREDITO_serial.jsonl`**: sede del acta, no tuya.
 - **El bucle no funde ramas y el bucle no crea remotos.**
 - **Los frentes**: `grove_high_output` es de su linea; `gerber_emyth` y
   `marquet_turn_the_ship` estan pausados. **Ninguno es asunto tuyo.**
@@ -167,6 +167,10 @@ pasos contra su parrafo**.
 
     python scripts/cerrar_reporte.py
     python forja.py tablero --escribir          el tablero se vuelve a medir (D.49)
-    python forja.py credito --anotar ...        una linea por especie, con su cita
 
 **Y COMMITEA Y PUSHEA `docs/loop/`.**
+
+---
+
+**Cero guiones largos y cero guiones medios. Deja correr el hook. Si algo contradice una
+regla vigente, paras y lo traes. No adivines.**

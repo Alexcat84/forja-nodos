@@ -1,0 +1,18 @@
+nodos del dataset: 297
+capitulo    nodos    pasos
+cap_01          1        9
+cap_03          1       10
+cap_04          5       41
+cap_05          8       76
+cap_06         10      117
+cap_07         25      225
+cap_08         12      102
+cap_09         15      181
+cap_11         16      187
+suma 93 nodos, 948 pasos
+
+paso 6 de construir_confianza_equipo_tiempo_solas:
+  Cuida como pides critica y como reaccionas cuando te la dan, porque eso construye confianza o la destruye.
+paso 7:
+  Y manten conversaciones anuales de carrera, que el texto llama una manera excelente de reforzar tu relacion con cada persona que te reporta directamente.
+nodos_siguientes: ['montar_reuniones_solas_mentalidad_frecuencia', 'abrazar_incomodidad_arrancar_critica_equipo']

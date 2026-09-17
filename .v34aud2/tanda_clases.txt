@@ -1,0 +1,18 @@
+total lineas: 423
+lineas nuevas de la tanda (411..423): 13
+  411  CORREGIDO  construir_confianza_equipo_tiempo_solas  vs  construir_confianza_equipo_tiempo_solas
+  412  SANO       organizar_sistema_recoger_quejas_equipo  vs  elogiar_publico_criticar_privado_sus_tres_matices
+  413  SANO       correr_semana_arreglo_averias_gestion  vs  comprobar_criticas_hombre_mujeres_equipo
+  414  SANO       dar_guia_humilde_tres_tecnicas  vs  elogiar_publico_criticar_privado_sus_tres_matices
+  415  SANO       elogiar_publico_criticar_privado_sus_tres_matices  vs  dar_guia_humilde_tres_tecnicas
+  416  SANO       evitar_personalizar_guia_aceptar_personal  vs  manejar_enfado_persona_desafiada
+  417  SANO       comprobar_criticas_hombre_mujeres_equipo  vs  exigir_critica_jefe_reticente
+  418  SANO       comprobar_criticas_hombre_mujeres_equipo  vs  revisar_critica_mujer_agresiva_cuatro_tacticas
+  419  SANO       comprobar_criticas_hombre_mujeres_equipo  vs  correr_semana_arreglo_averias_gestion
+  420  SANO       exigir_critica_jefe_reticente  vs  comprobar_criticas_hombre_mujeres_equipo
+  421  SANO       exigir_critica_jefe_reticente  vs  bloquear_tiempo_pensar_calendario
+  422  SANO       revisar_critica_mujer_agresiva_cuatro_tacticas  vs  comprobar_criticas_hombre_mujeres_equipo
+  423  CONTINUA   abrazar_incomodidad_arrancar_critica_equipo  vs  construir_confianza_equipo_tiempo_solas
+
+por clase: {'CORREGIDO': 1, 'SANO': 11, 'CONTINUA': 1}
+SANO sin razon escrita (D.8): 0 []
