@@ -1,0 +1,10 @@
+############ responder_critica_abrasiva_cuatro_reglas
+ADUANA DE INSERCION, candidato 'responder_critica_abrasiva_cuatro_reglas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (296 del grafo mas 52 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 297
+  censos escritos: atribuciones, denominaciones
+############ OK responder_critica_abrasiva_cuatro_reglas
+exit=0

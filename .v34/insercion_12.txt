@@ -1,0 +1,33 @@
+ADUANA DE INSERCION, candidato 'comprobar_criticas_hombre_mujeres_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (293 del grafo mas 55 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino exigir_critica_jefe_reticente  [Exigir la critica que tu jefe no se atreve a darte, con las tres frases del texto y el silencio contado hasta seis]
+    levantada por: similitud_texto
+    similitud_texto    0.402 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.555 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de exigir_critica_jefe_reticente
+
+  vecino revisar_critica_mujer_agresiva_cuatro_tacticas  [Revisar una critica de demasiado agresiva a una mujer de tu equipo con las cuatro tacticas que el texto da, antes de darsela]
+    levantada por: similitud_texto
+    similitud_texto    0.382 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.436 (umbral 0.60)
+    paso 1 del candidato contra paso 7 de revisar_critica_mujer_agresiva_cuatro_tacticas
+
+  vecino correr_semana_arreglo_averias_gestion  [Correr una semana de arreglo de averias de gestion, con el registro publico, la votacion y el reparto que el texto describe]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.431 (umbral 0.60)
+    paso 2 del candidato contra paso 7 de correr_semana_arreglo_averias_gestion
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 294
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3

@@ -701,3 +701,12 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | practicar_franqueza_radical_jefe_propio | nombre_largo | La franqueza radical hacia arriba: pedir guia antes de darla, pedir permiso para darla, probar con algo pequenio y benigno, y leer la reaccion para decidir si sigues o te vas | castellano | - |
 | 2026-09-17 | practicar_franqueza_radical_jefe_propio | otro_idioma | being Radically Candid with your boss | ingles | - |
 | 2026-09-17 | practicar_franqueza_radical_jefe_propio | otro_idioma | Listen, Challenge, Commit | ingles | - |
+| 2026-09-17 | comprobar_criticas_hombre_mujeres_equipo | nombre_largo | Lo que puede hacer un jefe que teme la politica de genero o el llanto: explicar el marco, decir la frase, y pedir que midan su elogio y su critica | castellano | - |
+| 2026-09-17 | comprobar_criticas_hombre_mujeres_equipo | otro_idioma | Men: don't pull punches with women | ingles | - |
+| 2026-09-17 | exigir_critica_jefe_reticente | nombre_largo | Lo que puede hacer quien sospecha que su jefe se contiene: hacerselo saber, decir una de las tres frases, parar, contar hasta seis y aguantar la incomodidad | castellano | - |
+| 2026-09-17 | exigir_critica_jefe_reticente | otro_idioma | Women: demand criticism | ingles | - |
+| 2026-09-17 | revisar_critica_mujer_agresiva_cuatro_tacticas | nombre_largo | Las cuatro tacticas para no caer en la trampa de competencia contra simpatia cuando sientes que una mujer esta siendo demasiado agresiva: cambiar el genero, concretar, vigilar el lenguaje y no quedarse en se mas simpatica | castellano | - |
+| 2026-09-17 | revisar_critica_mujer_agresiva_cuatro_tacticas | otro_idioma | Men and women: things to think about when you feel a woman is being too aggressive | ingles | - |
+| 2026-09-17 | responder_critica_abrasiva_cuatro_reglas | nombre_largo | Las cuatro reglas generales para una mujer a la que le dicen que es abrasiva: no dejar de desafiar directamente, matar al angel de la oficina, seguir abierta a haberse pasado, y no hacer lo contrario de la pelota; mas no descartar a los hombres | castellano | - |
+| 2026-09-17 | responder_critica_abrasiva_cuatro_reglas | otro_idioma | Things to think about if you're a woman who's being told, You're abrasive | ingles | - |
+| 2026-09-17 | responder_critica_abrasiva_cuatro_reglas | otro_idioma | four rules of thumb | ingles | - |
