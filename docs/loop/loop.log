@@ -1022,3 +1022,11 @@ CIERRE VERDE: el tallado y el censo de rutas.
 [2026-09-16 22:23:56] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
 [2026-09-16 22:23:56] DETENIDO en la vuelta 1: existe docs/loop/PARA_ALEXIS.md. Leelo.
 [2026-09-16 22:23:56] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-17 06:31:34] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-17 06:31:34] ROL INICIAL POR MEDICION: EXTRACTOR. El REPORTE es mas nuevo que el ACTA, PERO el ultimo turno que corrio el arnes fue el del AUDITOR: el reporte se toco FUERA de un turno y no hay vuelta sin auditar.
+[2026-09-17 06:31:34]   ultimo commit de REPORTE.md      : 2026-09-17 06:31:14 (1789641074)
+[2026-09-17 06:31:34]   ultimo commit de ACTA_AUDITOR.md : 2026-09-16 22:21:09 (1789611669)
+[2026-09-17 06:31:35]   testigo del extractor escrito en : 2026-09-16 20:25:37 (1789604737)
+[2026-09-17 06:31:35]   testigo del auditor escrito en   : 2026-09-16 22:23:55 (1789611835)
+[2026-09-17 06:31:35] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-17 06:31:35] VUELTA 1 : EXTRACTOR (claude-opus-5)
