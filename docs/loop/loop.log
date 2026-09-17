@@ -909,3 +909,7 @@ CIERRE VERDE: el tallado y el censo de rutas.
 [2026-09-16 19:35:39]   sello de la apertura ciega verificado: intacto tras el turno
 [2026-09-16 19:35:39] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-16 19:35:39] VUELTA 3 : EXTRACTOR (claude-opus-5)
+[2026-09-16 20:55:24] arranque: rama extraccion-marquet_turn_the_ship, MODO_INSERCION=cuarentena
+[2026-09-16 20:55:24] ROL INICIAL FORZADO por EMPEZAR_EN: extractor (gana sobre la medicion)
+[2026-09-16 20:55:25] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-16 20:55:25] VUELTA 1 : EXTRACTOR (claude-opus-5)
