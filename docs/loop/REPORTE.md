@@ -36870,3 +36870,129 @@ pendiente esta en `Z.7`**, y no hay ni una tarea del encargo dentro.
 **Y LA VUELTA DEJA UNA PARADA ABIERTA QUE NO ES DEL ENCARGO SINO MIA**, en `Z.4`: dos de mis commits se
 llevaron ocho ficheros de otro frente bajo mi mensaje. **La causa esta cortada, la parada no la arreglo
 yo.**
+
+---
+
+# VUELTA 34, **el nodo que afirma un estado de mineria falso**, y **seguir insertando el lote 4 por `cap_09`** (lote 4, `scott_radical_candor`)
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`. Tres tareas, bajo el tope de cinco (`EXTRACTOR.md` 1.3).
+**La `TAREA 1` es BLOQUEANTE y va antes de insertar nada.** Vuelta en **MODO AUSTERO** (`D.47`), y con
+`MODO_INSERCION=insertar` sobre un lote **CERRADO EN EXTRACCION** (`D.39`).*
+
+## AA.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**La primera operacion de mi turno es el commit del arnes pendiente** (`EXTRACTOR.md` 1.1), asi que
+esta tabla se lee **justo despues de ese commit y antes de la `TAREA 1`**: el commit que cita es ya
+estado intermedio y lo digo.
+
+<!-- TALLADO: script=.v34/apertura.py salida=.v34/apertura_tabla.txt -->
+
+| pieza | valor | de donde sale |
+|---|---:|---|
+| rama | extraccion-mundo-11 | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno | `6315b30` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | **282** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **410** | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con alguna anotacion `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| aristas por `nodos_siguientes` | **107** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | **107** | `dataset/nodos.jsonl` |
+| candidatos en bandeja, lote 4 | **63** | PATRON: `cuarentena/scott_radical_candor/*.json` |
+| insertados y archivados, lote 4 | **79** | PATRON: `cuarentena/_insertados/scott_radical_candor/*.json` |
+| candidatos en bandeja, lote 5 | **3** | PATRON: `cuarentena/marquet_turn_the_ship/*.json` |
+| lote 4 insertado sobre `142`, por ciento | **55,6** | `cuarentena/_insertados/scott_radical_candor/` |
+
+**LAS CUATRO FILAS COMPARABLES CUADRAN AL DIGITO CONTRA `.v34/estado.txt`**, el recuento que el encargo
+publica en su seccion 3: `282` nodos, `410` veredictos, `63` en bandeja del lote 4 y `79` archivados.
+**Cero discrepancias que declarar** (`EXTRACTOR.md` 5).
+
+<!-- TALLADO: parcial salida=.v34/aceptacion_apertura.txt -->
+
+      total: 274 pruebas, 0 fallos, 0 errores
+
+### AA.0.a. **EL TABLERO Y SU PRIORIDAD, QUE ES COMO ABRE UNA VUELTA DESDE `D.49`**
+
+<!-- TALLADO: parcial salida=.v34/tablero_apertura.txt -->
+
+      prio lote clave                          estado                 dueno                 band ult cap
+      --------------------------------------------------------------------------------------------------------
+      .    4    scott_radical_candor           CERRADO EN EXTRACCION  serial                  63  cap_14
+      1    7    grove_high_output              EN CURSO               grove_high_output       23  cap_03
+      2    9    gerber_emyth                   PAUSADO                NINGUNO                 10  cap_11
+      3    5    marquet_turn_the_ship          PAUSADO                NINGUNO                  9  cap_03
+
+**EL ESTADO Y EL DUEÑO DE MI LIBRO:** `scott_radical_candor` esta **`CERRADO EN EXTRACCION`** y **lo
+trabaja mi linea, `serial`**, con `63` en bandeja y `cap_14` como ultimo capitulo minado.
+
+**POR QUE ME TOCA ESE Y NO OTRO**, con la salida del instrumento y no con mi memoria:
+
+<!-- TALLADO: parcial salida=.v34/tablero_siguiente.txt -->
+
+    $ python forja.py tablero --siguiente
+    D.51, EL ORDEN LO DA EL TABLERO. Linea 'serial':
+      le toca: scott_radical_candor
+      'scott_radical_candor' ya es de esta linea y esta CERRADO EN EXTRACCION: se continua, que D.50 releva AL CERRAR y no a mitad.
+
+**Y EL CORTE DEL MUNDO 11 SIGUE ENTERO POR DELANTE:** `MUNDO 11: faltan 3 de 3 libros del corte
+(grove_high_output, gerber_emyth, marquet_turn_the_ship)`, linea del mismo tablero. Ninguno es asunto
+mio (`PROMPT_SIGUIENTE.md`, LO QUE NO SE TOCA).
+
+**LA COLA DE DOCTRINA ESTA EN `6` Y `0` BLOQUEAN**, linea `COLA DE DOCTRINA (D.52): 6 pregunta(s), 0
+bloquea(n)` del tablero. **No adjudico ninguna.**
+
+### AA.0.b. **EL CERROJO, QUE YA NO VIVE EN `dataset/`** (`D.44`, `D.52`)
+
+    $ ls -la procesos/
+    total 64
+    drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 09:58 ./
+    drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 09:34 ../
+
+**`procesos/` esta vacio: no hay otra corrida viva** y la insercion no queda `NO INTENTADA`. Es la
+primera vuelta que lee el cerrojo en su sede nueva, la que `D.52` le dio ayer.
+
+### AA.0.c. **NI SALDO DE LOTE NI COLA SELLADA, Y VAN CUATRO VUELTAS** (`D.43`)
+
+<!-- TALLADO: parcial salida=.v34/entrega_arnes.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ ls docs/loop/ | grep -i -E "cola|vecin"
+      (ni una linea)
+
+El arnes lo escribe en su registro: `VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE
+vacio)`, linea de `docs/loop/loop.log` de hoy a las `10:02:54`. **No lo invento y no lo lanzo**
+(`D.43`): esta vuelta **no trae saldo de lote**, y `CHOCAN entre si dentro del lote` no se publica
+porque no hay quien la firme. **La cola de vecinos la vuelvo a pagar yo dentro del turno.**
+
+### AA.0.d. **EL CREDITO DE MI LINEA AL ABRIR** (`D.48`)
+
+<!-- TALLADO: parcial salida=.v34/credito_apertura.txt -->
+
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+      tandas: 32, en 135 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            1 de 3     ACTA 32
+      CIFRA PUBLICADA    1 de 2     ACTA 32
+      CLASE              0 de 2     ACTA 32
+      DATO MOVIDO        1 de 2     docs/loop/paradas/2026-09-17-dato-movido-y-la-ciega-que-ve-DECISION.md, punto 1
+      REPORTE            1 de 3     ACTA 32
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**ABRO CON EL CREDITO ENTERO, Y NO POR UNA TANDA MIA.** `DATO MOVIDO` bajo de `2 de 2` a `1 de 2` por
+la decision del fundador del 17 sep 2026, que reclasifico el cerrojo como `ARNES` y no como dato. **La
+especie sigue en su penultimo escalon: la proxima cae al tope**, y eso pesa sobre cada operacion de
+esta vuelta.
+
+## AA.1. LAS TRES TAREAS, EL ESQUELETO ABIERTO ANTES DE LA PRIMERA
+
+*`EXTRACTOR.md` 3: las filas se anexan al cerrarse cada tarea, no al final de la vuelta.*
+
+| # | tarea | estado |
+|---:|---|---|
+| 1 | **BLOQUEANTE**: el nodo que afirma un estado de mineria falso, corregido contra la medicion del dia, **mas el barrido de la especie entera** | ABIERTA |
+| 2 | seguir insertando el lote 4, `cap_09`, con el techo de `15` mandando sobre el capitulo | ABIERTA |
+| 3 | `PASOS INVENTADOS` por capitulo, **ANTES de que los nodos entren** | ABIERTA |
