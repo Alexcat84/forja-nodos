@@ -36316,9 +36316,9 @@ si el auditor lo tumba, que es lo unico que la relectura ciega necesita de mi.*
 
 | # | el discutible | donde mirar | que cae si lo tumban |
 |---:|---|---|---|
-| **1** | **`hacer_trabajo_futuro_imaginar_negocio` es nodo o es postura.** Los cuatro rasgos del negocio sonado del paso 5 son **fines**, y la restriccion 1 de `EXTRACTOR.md` 9.1 dice que un inventario de fines no cuenta | `cap_04.md` `L285` a `L291`, pieza `P1` | **el paso 5, no el nodo.** El inventario que lo sostiene son las etapas, no los rasgos |
-| **2** | **la regla 3 se queda sin nodo.** Llamo fines a las cinco frases de lo que un negocio ordenado *dice* | `cap_11.md` `L135` a `L151`, pieza `R3` | **falta una parte de la serie.** Si es nodo, la cabeza pasa a tener 5 partes y la arista sale del paso 7 |
-| **3** | **la regla 5 se queda sin nodo.** Llamo caso al barbero y doctrina de una linea a lo que queda | `cap_11.md` `L175` a `L211`, pieza `R4` | **igual que el 2**, y la arista saldria del paso 9 |
+| **1** | **`hacer_trabajo_futuro_imaginar_negocio` es nodo o es postura.** Los cuatro rasgos del negocio sonado del paso 5 son **fines**, y la restriccion 1 de `EXTRACTOR.md` 9.1 dice que un inventario de fines no cuenta | `cap_04.md` `L284` a `L291`, pieza `P1` (el parrafo arranca en `L285`) | **el paso 5, no el nodo.** El inventario que lo sostiene son las etapas, no los rasgos |
+| **2** | **la regla 3 se queda sin nodo.** Llamo fines a las cinco frases de lo que un negocio ordenado *dice* | `cap_11.md` `L134` a `L151`, pieza `R3` (el rotulo de la regla esta en `L135`) | **falta una parte de la serie.** Si es nodo, la cabeza pasa a tener 5 partes y la arista sale del paso 7 |
+| **3** | **la regla 5 se queda sin nodo.** Llamo caso al barbero y doctrina de una linea a lo que queda | `cap_11.md` `L174` a `L211`, pieza `R4` (el rotulo de la regla esta en `L175`) | **igual que el 2**, y la arista saldria del paso 9 |
 | **4** | **`interrogar_negocio_cinco_preguntas` aparte de la cabeza.** Su tercera pregunta repite las 5.000 replicas de la cabeza | `cap_11.md` `L242` a `L265`, pieza `P6` | **se funde en la cabeza**, y el lote baja a 9 |
 | **5** | **el dominio `gestion_negocio`, que es nuevo en esta casa.** Los cuatro vivos son `gestion_equipos`, `contratacion`, `proteccion_consumidor` y `forja`, y ninguno es este libro | los diez candidatos, campo `dominio` | **nada de dato**: `solo_dominio_y_nucleo` esta en `false` en `config/umbrales.json`, asi que el dominio **no recorta** la busqueda de vecinos. Si se decide otro, es un renombrado |
 | **6** | **el grano de las siete fronteras que dan cero.** Las corto por seccion y no por parrafo, entre 4 y 7 piezas por unidad | `PATRON: .gerber_v1/piezas_cap*.txt` | **hay que recortar mas fino** la unidad que se recuse. Las cuatro que dan nodo van al grano de la pieza |
@@ -36395,4 +36395,37 @@ Salida de `python .gerber_v1/fidelidad.py`, guardada en `.gerber_v1/fidelidad.tx
 > enumeran, numeran o transcriben un dialogo entero), y **las siete unidades que no enumeran nada dan
 > cero nodos**. Es la misma correlacion que el lote 1 midio, y esta vuelta la confirma por el lado de
 > no haber forzado ninguna.
+
+## G1.5. **LA CAIDA QUE PUSE YO Y QUE ME ENCONTRO EL ARNES, DECLARADA CON SU RELOJ**
+
+*No la encontre yo: la encontro la fase ciega del arnes, y eso la hace mas util de contar, no menos.*
+
+**QUE PASO, CON LAS HORAS LEIDAS DE `git log` Y DEL PROPIO TESTIGO, NO DE MEMORIA:**
+
+| instante | que | de donde sale |
+|---|---|---|
+| `21:06:13` | commit `6d2d56a`, el esqueleto del reporte | `git log --date=format:%H:%M:%S` |
+| entre `21:06` y `21:19` | escribo `.gerber_v1/citas.py` **con cuatro guiones largos y medios literales dentro**, como caracteres de codigo fuente | el propio fichero |
+| `21:19:13` | **la fase ciega del arnes sella y el testigo registra la guarda `guiones` en ROJO**, con mis cuatro hallazgos nombrados uno a uno | `docs/loop/TESTIGO_GUARDAS.json` |
+| `21:19:13` | **el arnes escribe `docs/loop/PARA_ALEXIS.md`**: *el testigo de guardas desmiente el estado del sello* | `docs/loop/PARA_ALEXIS.md` |
+| `21:32:43` | commit `1ede50b`, **con los cuatro guiones ya sustituidos por `chr(0x2014)` y `chr(0x2013)`** y el barrido en VERDE | `git log`, y el hook de ese commit |
+
+**POR QUE PASO, Y ES UNA TRAMPA QUE VOLVERE A PISAR SI NO LA ESCRIBO:** el instrumento que existe
+**precisamente para quitarle los guiones del editor al libro** los llevaba dentro **de su propio
+codigo**, porque para sustituir un caracter hay que nombrarlo. **El barrido no distingue un guion que
+escribes de uno que borras**, y tiene razon en no distinguirlo: la unica forma correcta es nombrarlo
+por su punto de codigo, que es lo que `.v32/fidelidad.py` ya hacia con `chr(0x2014)` **y yo no copie.**
+
+**LO QUE NO HAGO, Y DIGO POR QUE:**
+
+- **NO borro `docs/loop/PARA_ALEXIS.md`.** `EXTRACTOR.md` 14 dice que esa sede es del auditor, y
+  borrar es escribir. El propio fichero propone borrarlo y relanzar; **esa es una orden para quien
+  opera el bucle, no para el extractor de este turno.**
+- **NO lo declaro PARADA.** Repaso las condiciones de `EXTRACTOR.md` 7: no contradice ninguna regla
+  vigente, no contradice ninguna cifra publicada con su corte, y **la causa esta identificada y
+  reparada dentro de esta misma vuelta**. Lo que dice el testigo es que **el sello de la apertura
+  ciega no se puede firmar**, no que el trabajo este mal, y el propio `PARA_ALEXIS.md` lo escribe con
+  esas palabras.
+- **NO lo escondo en una nota al pie.** Lo que ensucio el arbol fue **un fichero mio**, en **mi**
+  turno, y el arnes lo cazo antes que yo.
 
