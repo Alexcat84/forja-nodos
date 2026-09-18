@@ -771,3 +771,8 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | desplegar_plan_orden_operaciones_franqueza_radical | otro_idioma | order of operations | ingles | - |
 | 2026-09-18 | contar_historias_propias_explicar_franqueza_radical | nombre_largo | Compartir tus historias: la primera etapa del orden de operaciones, explicada con tus palabras y con tu version de la historia del um o la de Bob | castellano | - |
 | 2026-09-18 | contar_historias_propias_explicar_franqueza_radical | otro_idioma | SHARE YOUR STORIES | ingles | - |
+| 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | nombre_largo | La cabeza de las dos practicas del epilogo: contar historias y los juegos de papeles, con las dos consciencias que mejoran | castellano | - |
+| 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | otro_idioma | YOU | ingles | - |
+| 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | otro_idioma | Improve using role plays and storytelling | ingles | - |
+| 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | otro_idioma | self-awareness | ingles | - |
+| 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | otro_idioma | relational awareness | ingles | - |

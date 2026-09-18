@@ -1,0 +1,3 @@
+la pregunta 7 ya estaba: no se duplica
+la pregunta 8 ya estaba: no se duplica
+la cola queda en 8 pregunta(s), 0 bloquea(n)

@@ -1,0 +1,12 @@
+$ python forja.py arista --madre desplegar_plan_orden_operaciones_franqueza_radical --hijo desplegar_marco_franqueza_radical --paso 8 --razon ...
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: desplegar_plan_orden_operaciones_franqueza_radical
+  hijo : desplegar_marco_franqueza_radical
+  paso citado de la madre: 8
+    Si quieres, copia el marco de la franqueza radical del capitulo dos y lleva ahi la cuenta de quien te dice que.
+  señales del par: familia_id 0.429, paso_contra_nodo 0.428, similitud_texto 0.115
+    levantada tambien por la señal: familia_id
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: desplegar_plan_orden_operaciones_franqueza_radical > desplegar_marco_franqueza_radical
+  razon en bitacora/VEREDICTOS.jsonl
+CODIGO DE SALIDA: 0

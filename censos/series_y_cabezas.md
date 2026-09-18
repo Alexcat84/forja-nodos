@@ -14,3 +14,4 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | admitir_pronto_mal_desempenio_cuatro_razones | las tres cosas que facilitan un despido | paso | facilitar_despido_tres_cosas | scott_radical_candor | - |
 | 2026-09-17 | calibrar_decision_despido_documentarla | las tres cosas que facilitan un despido | paso | facilitar_despido_tres_cosas | scott_radical_candor | - |
 | 2026-09-17 | sopesar_consejo_legal_despedir_humildad | las tres cosas que facilitan un despido | paso | facilitar_despido_tres_cosas | scott_radical_candor | - |
+| 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | las dos practicas que el texto desarrolla | cabeza | - | scott_radical_candor | la cuenta esta escrita en cap_13 L39, We have developed two practices, storytelling and role plays |

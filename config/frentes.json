@@ -123,6 +123,18 @@
         "pregunta": "La regla de la busqueda negativa vale para el extractor? 'Una busqueda negativa no se puede citar' esta escrita en AUDITOR_FORJA.md 1.1 y no en EXTRACTOR.md.",
         "medida_en": "ACTA 32 3.8",
         "bloquea": false
+      },
+      {
+        "n": 7,
+        "pregunta": "El propio libro se contradice y ningun nodo lo dice: cap_12 L21 invita a copiar el marco y llevar ahi la cuenta de quien te dice que, y cap_01 prohibe escribir nombres en las casillas. Los dos pasos son transcripcion fiel de su linea y ninguno es PUENTE. Se toca alguno de los dos nodos?",
+        "medida_en": "REPORTE.md AC.7 (vuelta 37) y BC.7 (vuelta 38); encargo de la vuelta 38, tarea 4.1",
+        "bloquea": false
+      },
+      {
+        "n": 8,
+        "pregunta": "La senial 1 compara titulo mas resumen_teorico mas pasos, y en un lote escrito de una sentada eso mide la formula del extractor tanto como el contenido del nodo. Lo midieron dos instrumentos por separado. Ningun umbral se toca en ninguna vuelta: la pregunta es que se hace con eso.",
+        "medida_en": "APERTURA_CIEGA.md 13.2 y ACTA 36 7; encargo de la vuelta 38, tarea 4.2",
+        "bloquea": false
       }
     ]
   }

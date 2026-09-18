@@ -1,0 +1,4 @@
+$ sed -n "21p" fuentes/scott_radical_candor/cap_12.md | cut -c300-420
+icism. If you want, you can copy the Radical Candor framework in Chapter Two and track who’s saying what to you there. 
+$ python .v38/pasos.py desplegar_marco_franqueza_radical | grep "P08"
+  P08: No escribas nombres en las casillas.

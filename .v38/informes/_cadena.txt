@@ -1,0 +1,6 @@
+cadena 1 arrancada (las dos aristas de extremos dentro, y el candidato 1)
+ARISTA desplegar_plan_orden_operaciones_franqueza_radical > desplegar_marco_franqueza_radical (paso 8)
+ARISTA empezar_cultura_franqueza_radical > contar_historias_propias_explicar_franqueza_radical (paso 2)
+OK mejorar_consciencia_propia_relacional_dos_practicas  (319 nodos, bandeja 26)
+cadena 1 terminada
+cadena 2 arrancada (candidatos 2 y 3)
