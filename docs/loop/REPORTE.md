@@ -40970,3 +40970,98 @@ linea `109` del libro en su ingles y dos son la palabra nombrada dentro de la pr
 **NO ES `CIFRA PUBLICADA` Y LO DIGO ANTES DE QUE ME LO PREGUNTEN:** las tres filas de arriba **llevan su
 corte escrito al lado**, que es lo que `EXTRACTOR.md` 4 pide de toda cifra de estado. Lo que declaro es que
 **el `0` de la vuelta 39 solo se reproduce sobre `e3950c6`**, y eso ahora esta escrito dentro del nodo.
+
+## DC.3. **TAREA 1.B: LOS DOS RANCIOS QUE SON PARES DE DOS DE MIS CUATRO, RELEIDOS Y NO INDULTADOS**
+
+**La correccion de la vuelta 39 sobre `practicar_triangulo_critica_tres_papeles` dejo `4` rancios, y `2`
+de ellos son pares de candidatos que entran hoy**: la linea `484` contra `abrazar_incomodidad` y la `485`
+contra `escuchar_entender`.
+
+<!-- TALLADO: parcial salida=.v40/rancios_triangulo.txt -->
+
+    $ python forja.py rancios | grep "practicar_triangulo" | cut -c1-118
+  [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra abrazar_incomodidad_silencio_contar_seis (linea 4
+  [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra escuchar_entender_critica_dominar_defensa (linea 
+  [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra mejorar_consciencia_propia_relacional_dos_practic
+  [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra practicar_triangulo_critica_tres_papeles (linea 4
+
+**EL ENCARGO ME DA DOS SALIDAS Y TOMO LA PRIMERA, QUE ES LA CARA:** releer el par contra el texto nuevo.
+**Lo que hice fue medir que es EXACTAMENTE lo que cambio**, en vez de decir que lo habia mirado:
+
+<!-- TALLADO: script=.v40/que_cambio_triangulo.py salida=.v40/que_cambio_triangulo.txt -->
+
+    $ python .v40/que_cambio_triangulo.py
+  nodo: practicar_triangulo_critica_tres_papeles
+  arbol viejo: a41fc11 (el de la huella eec451c2e48944c6 con la que se emitieron 484 y 485)
+  arbol de hoy: el de trabajo
+
+  campo                    cambia?   que pasa
+  ------------------------------------------------------------------------------------------------
+  titulo                   NO        identico, 139 caracter(es)
+  pasos_accionables        NO        identico, 15 elemento(s)
+  entregable_esperado      NO        identico, 213 caracter(es)
+  condiciones_activacion   NO        identico, 179 caracter(es)
+  dominio                  NO        identico, 15 caracter(es)
+  fuentes                  NO        identico, 1 elemento(s)
+  denominaciones           NO        identico
+  nodos_siguientes         NO        identico, 0 elemento(s)
+  nodos_previos            NO        identico, 1 elemento(s)
+  resumen_teorico          SI        1951 -> 2973 caracteres, prefijo comun de 1951
+
+  los 15 pasos, uno a uno, viejo contra hoy:
+    P1   IDENTICO
+    P2   IDENTICO
+    P3   IDENTICO
+    P4   IDENTICO
+    P5   IDENTICO
+    P6   IDENTICO
+    P7   IDENTICO
+    P8   IDENTICO
+    P9   IDENTICO
+    P10  IDENTICO
+    P11  IDENTICO
+    P12  IDENTICO
+    P13  IDENTICO
+    P14  IDENTICO
+    P15  IDENTICO
+
+**LA HUELLA VIEJA ES `eec451c2e48944c6` Y LA LOCALICE EN GIT, no la supuse:** vive en `a41fc11` y cambia
+a `5aebf76b97831357` en `0dda2e3`, que es el commit de la correccion de la vuelta 39. **Esa es toda la
+distancia entre la lectura y hoy.**
+
+| lo que la huella cubre (`src/comun.py` `huella_de_nodo`) | cambia? |
+|---|---|
+| `titulo` | **NO**, `139` caracteres identicos |
+| `pasos_accionables` | **NO**, los `15` identicos uno a uno |
+| `resumen_teorico` | **SI**, de `1951` a `2973`, y **el prefijo comun es `1951`**: es anexion pura |
+
+**LO QUE MOVIO LA HUELLA FUE PROSA ANEXADA SOBRE UNA CIFRA PUBLICADA** (`318` corregido a `321`, y los dos
+caracteres acentuados que si se sostenian). **Ni un paso, ni el entregable, ni las condiciones, ni el
+titulo.** Y los dos `SANO` de las lineas `484` y `485` **descansan enteros sobre el objeto y el
+entregable**: *son dos personas contra tres, es recibir contra dar* en la `484`, y *aquel domina tu propia
+defensa y este te pone a dar una critica* en la `485`.
+
+> **POR ESO LOS DOS `SANO` SE SOSTIENEN, Y NO ES UN INDULTO: ES QUE LO QUE LOS SOSTIENE NO SE MOVIO.**
+
+**LA DECLARACION VA A SU SEDE Y EN EL ACTO EN QUE CADA CANDIDATO ENTRE**, con
+`python forja.py anotar --linea <n> --anade "VIGENCIA DECLARADA ..."`, que es la segunda salida escrita de
+`D.15`: la `484` cuando entre `abrazar_incomodidad` y la `485` cuando entre `escuchar_entender`. **Las dos
+filas quedan en `DC.6`.** **Lo que no hago es insertar encima de un veredicto rancio sin decir nada**, que
+es lo unico que el encargo prohibe.
+
+**Y LOS OTROS DOS RANCIOS DE ESA CORRECCION NO SON MIOS Y NO LOS TOCO:** la `486` es contra
+`mejorar_consciencia_propia` y la `487` es la propia linea `CORREGIDO`. **Ninguna de las dos es par de un
+candidato de hoy** y se quedan en la cola de vigencia, que es `D.15` y no gate en rojo.
+
+## DC.4. **TAREA 1.C: LAS ADJUDICACIONES DE LA `ACTA 38`, RECOGIDAS Y NO REABIERTAS**
+
+| lo adjudicado | como lo recojo |
+|---|---|
+| **mis NUEVE discutibles se sostienen los nueve**, cero caidas dentro del marcado | **recogido. No reabro ninguno de los nueve** |
+| **la fila de `PASOS INVENTADOS` de mi tramo, `0` de `56`, `0,00` por ciento: FIRMADA**; `cap_13` entero, `4` de `212`, sigue siendo SUELO y el auditor no lo firma | **recogido. Hoy publico mi tramo con su denominador dicho y NO firmo la fila del capitulo** (`DC.5.e`) |
+| **el `P11` del candidato `3` NO es `PUENTE`**: `L181` pregunta y `L183` contesta, es prosa circular | **recogido. No lo vuelvo a marcar** |
+| **el prefijo `BC.6` del encargo anterior era del auditor y estaba mal**; esta vuelta el encargo no dicta prefijo | **recogido. Elijo `DC` con la salida del `grep` pegada en `DC.1`** |
+| **la propuesta de arista entre `resolver_dudas` y `elegir_pregunta`: RETIRADA**; el `SANO` se queda solo | **recogido. No cableo nada ahi** |
+| **la pregunta `11` ya esta en `config/frentes.json` y `docs/loop/TABLERO.jsonl` ya se volco** | **recogido. No lo vuelvo a volcar y no duplico la pregunta `11`** (la cola abre en `11` en `DC.0.a`) |
+
+**Ninguna de las seis se reabre. Las seis se recogen y se sigue.**
