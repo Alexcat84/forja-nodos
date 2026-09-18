@@ -40577,3 +40577,233 @@ nodo del catalogo tiene el precio de dejar rancios los veredictos que lo citaban
 barato comparado con dejar la cifra. **Los `4` son sobre el mismo nodo y sobre vecinos que no cambiaron:
 lo que cambio es el texto de mi lado.** Van a la cola de vigencia y no los releo yo, porque releerlos es
 otra tarea y esta vuelta ya entrego cuatro.
+
+
+---
+
+# VUELTA 40 DE LA LINEA SERIAL, `extraccion-mundo-11`: **CERRAR LA SERIE `D.37` DE LOS CUATRO ELEMENTOS**
+
+*Libro de la vuelta: `scott_radical_candor`, `cap_13`. Encargo escrito al cerrar la `ACTA 38`, que audita
+la vuelta 39 y no abre ninguna parada. `MODO_INSERCION` llega en `insertar`, que es el default desde
+`D.39`, y el lote 4 esta `CERRADO EN EXTRACCION` con su informe certificado: **la insercion esta
+abierta para el, y solo para el.***
+
+## DC.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**La primera operacion de mi turno es el commit de lo pendiente del arnes** (`EXTRACTOR.md` 1.1), asi que
+esta tabla se lee **justo despues de ese commit y antes de la primera tarea**: el commit que cita es ya
+estado intermedio y lo digo. **Arranco de `324` nodos y `506` veredictos, que es donde la vuelta 39 dejo
+el grafo.** Los tres ficheros que el arnes traia sucios (`loop.log`, `ultimo_auditor.json`,
+`ultimo_extractor.json`) **no son trabajo mio y no los cuento como tal.**
+
+<!-- TALLADO: script=.v40/apertura.py salida=.v40/apertura_tabla.txt -->
+
+| pieza | valor | de donde sale |
+|---|---:|---|
+| rama | extraccion-mundo-11 | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno | `b5bc8f3` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | **324** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **506** | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con alguna anotacion `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| aristas por `nodos_siguientes` | **134** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | **134** | `dataset/nodos.jsonl` |
+| candidatos en bandeja, lote 4 | **21** | PATRON: `cuarentena/scott_radical_candor/*.json` |
+| insertados y archivados, lote 4 | **121** | PATRON: `cuarentena/_insertados/scott_radical_candor/*.json` |
+| candidatos en bandeja, lote 5 | **3** | PATRON: `cuarentena/marquet_turn_the_ship/*.json` |
+| insertados y archivados, los cuatro lotes | **322** | PATRON: `cuarentena/_insertados/*/*.json` |
+| lote 4 insertado sobre `142`, por ciento | **85,2** | `cuarentena/_insertados/scott_radical_candor/` |
+
+**LA BANDEJA POR CAPITULO, QUE ES LO QUE DIMENSIONA EL TRAMO**, corrida por mi y no copiada del encargo:
+
+<!-- TALLADO: parcial salida=.v40/estado_apertura.txt -->
+
+    $ python .v40/estado.py
+    poblacion: el arbol entero, sin filtrar
+    dataset/nodos.jsonl                        : 324 nodos
+    bitacora/VEREDICTOS.jsonl                  : 506 lineas
+    cuarentena/scott_radical_candor            : 21
+    cuarentena/_insertados/scott_radical_candor: 121
+    la bandeja por capitulo                    : cap_13 6, cap_14 15
+
+**`cap_13` ABRE EN `6`, Y ESA CIFRA ES LA QUE HACE CUADRAR EL TRAMO DE HOY:** el encargo me pide **`4` de
+esos `6`** y deja fuera `dar_elogio_disciplina_igual_critica` y `medir_critica_respuesta_oyente_brujula`
+por su tamanio (`20` y `33` pasos). **`cap_13` queda con `2` al cerrar si los cuatro entran**, y eso es lo
+que la `TAREA 3.C` manda declarar. **No estiro el tramo a seis.**
+
+### DC.0.a. **EL TABLERO Y SU PRIORIDAD** (`D.49`, `D.51`)
+
+<!-- TALLADO: parcial salida=.v40/tablero_apertura.txt -->
+
+    TABLERO DE FRENTES (D.49, D.50): sede unica del estado de la campania
+      registro: docs/loop/TABLERO.jsonl
+
+      prio lote clave                          estado                 dueno                 band ult cap
+      --------------------------------------------------------------------------------------------------------
+      .    1    onu_consumidor                 INSERTADO              NINGUNO                  0  cap_02
+      .    2    smart_who                      INSERTADO              NINGUNO                  0  cap_05
+      .    3    zhuo_manager                   INSERTADO              NINGUNO                  0       .
+      .    4    scott_radical_candor           CERRADO EN EXTRACCION  serial                  21  cap_14
+      .    11   gerber_emyth_cap17_reservado   SIN EMPEZAR            NINGUNO                  0       .
+      1    7    grove_high_output              EN CURSO               grove_high_output       23  cap_03
+      2    9    gerber_emyth                   PAUSADO                NINGUNO                 10  cap_11
+      3    5    marquet_turn_the_ship          PAUSADO                NINGUNO                  9  cap_03
+      4*   8    bernerslee_bananas             SIN EMPEZAR            NINGUNO                  0       .
+      5*   6    openstax_business_ethics       SIN EMPEZAR            NINGUNO                  0       .
+      6*   10   openstax_org_behavior          SIN EMPEZAR            NINGUNO                  0       .
+
+      prioridad: el orden del mundo 11 (D.51). El asterisco es FUERA DE
+      CAMPANIA: no se extrae, queda en bandeja para la aduana de a uno.
+      Sin prioridad: ya dentro del mundo 11, no hay nada que elegir.
+
+      libros CON DUEÑO ahora mismo: 2
+        scott_radical_candor           lo trabaja 'serial' (CERRADO EN EXTRACCION)
+        grove_high_output              lo trabaja 'grove_high_output' (EN CURSO)
+
+      MUNDO 11: faltan 3 de 3 libros del corte (grove_high_output, gerber_emyth, marquet_turn_the_ship)
+
+      COLA DE DOCTRINA (D.53): 11 pregunta(s), 0 bloquea(n)
+                1  EXTRACTOR.md 11 y la banda de 0,4: dice que por encima hay gemelos y cero ajen
+                2  src/arista.py:187 teclea (D.37) en toda arista declarada por lectura, y se est
+                3  Una cifra en denominaciones.nombre_largo que el libro no escribe: 'las cuatro 
+                4  Un resumen_teorico del dataset que cita EL REPORTE DE ESTA VUELTA: sede durade
+                5  Un orden roto no tiene casillero: el extractor corrio la relectura de fidelida
+                6  La regla de la busqueda negativa vale para el extractor? 'Una busqueda negativ
+                7  El propio libro se contradice y ningun nodo lo dice: cap_12 L21 invita a copia
+                8  La senial 1 compara titulo mas resumen_teorico mas pasos, y en un lote escrito
+                9  Puede el arnes abrir la fase ciega del auditor con un proceso del extractor to
+                10 Una cita medida_en que ofrece como sede una seccion que aun no se ha escrito, 
+                11 Un defecto en dataset/ que NO es una cifra falsa ni un veredicto mal puesto no
+
+      PENDIENTES DE RELEVO (D.50), en orden de lote:
+        lote 5   marquet_turn_the_ship           9 candidato(s) en extraccion-marquet_turn_the_ship
+        lote 7   grove_high_output              23 candidato(s) en extraccion-grove_high_output
+        lote 9   gerber_emyth                   10 candidato(s) en extraccion-gerber_emyth
+
+<!-- TALLADO: parcial salida=.v40/tablero_siguiente.txt -->
+
+    $ python forja.py tablero --siguiente
+D.51, EL ORDEN LO DA EL TABLERO. Linea 'serial':
+  le toca: scott_radical_candor
+  'scott_radical_candor' ya es de esta linea y esta CERRADO EN EXTRACCION: se continua, que D.50 releva AL CERRAR y no a mitad.
+
+**LA COLA DE DOCTRINA ABRE EN `11` Y `0` BLOQUEAN**, linea `COLA DE DOCTRINA (D.53): 11 pregunta(s), 0
+bloquea(n)` del tablero de arriba. **La `11` la subio el auditor en su propia tanda** y es exactamente la
+pregunta de si se pueden retirar los dos caracteres de control de la `TAREA 1.A`. **Esta vuelta no sube
+ninguna, no adjudica ninguna y no duplica la `11`.**
+
+### DC.0.b. **EL CERROJO, EN SU SEDE DE `procesos/`** (`D.44`, `D.53`)
+
+<!-- TALLADO: parcial salida=.v40/cerrojo.txt -->
+
+    $ ls -la procesos/
+total 64
+drwxr-xr-x 1 AlexDesk 197609 0 Sep 18 06:32 .
+drwxr-xr-x 1 AlexDesk 197609 0 Sep 18 06:38 ..
+    $ ls *.cerrojo dataset/*.cerrojo 2>&1
+ls: cannot access '*.cerrojo': No such file or directory
+ls: cannot access 'dataset/*.cerrojo': No such file or directory
+
+**`procesos/` esta vacio y no hay ningun `.cerrojo` suelto: no hay otra corrida viva**, asi que la
+insercion de hoy no queda `INSERCION NO INTENTADA`.
+
+### DC.0.c. **NI SALDO DE LOTE NI COLA SELLADA, Y VAN DIEZ VUELTAS** (`D.43`)
+
+<!-- TALLADO: parcial salida=.v40/entrega_arnes.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ ls docs/loop/ | grep -i -E "cola|vecin"
+      (ni una linea)
+
+**Lo declaro como `D.43` manda**: esta vuelta **no trae saldo de lote**, y con el se va la unica cifra que
+un informe de uno en uno no puede ver, `CHOCAN entre si dentro del lote`. **No lo invento y no lo lanzo.**
+La cola de vecinos **la corro yo de a uno dentro de `forja.py informe`**, que es lo que `D.43` no me quito.
+
+### DC.0.d. **MI CREDITO AL ABRIR, Y NO ME LO ESCRIBO YO** (`D.48`)
+
+<!-- TALLADO: parcial salida=.v40/credito_apertura.txt -->
+
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+      tandas: 38, en 169 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            1 de 3     ACTA 38
+      CIFRA PUBLICADA    0 de 2     ACTA 38
+      CLASE              0 de 2     ACTA 38
+      DATO MOVIDO        1 de 2     ACTA 38
+      REPORTE            0 de 3     ACTA 38
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**`REPORTE` vuelve a `0 de 3` y `CIFRA PUBLICADA` a `0 de 2`**, y el encargo dice con todas sus letras que
+**las reinicia `D.38.1` por tanda limpia y no un indulto del auditor**. **`DATO MOVIDO` sube a `1 de 2` y
+esa si es mia**: es la `TAREA 1.A` y es lo primero de mi turno. **`AUDITOR` en `1 de 3` no es mio y no lo
+comento.**
+
+### DC.0.e. **LA COLA DE ARISTAS AL ABRIR, RECONTADA POR MI Y POR `arista_corregida`**
+
+**Punto `3` del cierre del encargo: la linea que trae `arista_corregida` se cuenta POR ESE CAMPO.** Mi
+script de la vuelta 39 contaba por `arista` a secas y por eso las `12` auto aristas viejas salian como
+deuda. **Hoy el script lee la corregida cuando la hay, y ese `12` deja de aparecer.**
+
+<!-- TALLADO: parcial salida=.v40/cola_apertura.txt -->
+
+    LA COLA DE ARISTAS ENTERA, de bitacora/VEREDICTOS.jsonl
+      lineas con arista_en_cola: true            : 16
+      de ellas, YA CABLEADAS en el grafo         : 11
+      esperan a un extremo que no ha entrado     : 5
+      con LOS DOS extremos dentro y SIN cable    : 0   <-- tiene que salir 0
+
+      linea  madre                                                hijo                                                 ambos    cable
+      --------------------------------------------------------------------------------------------------------------------------------
+      265    recorrer_rueda_conscientemente_cultura_equipo        recorrer_rueda_hacer_cosas_equipo                    si       si
+      279    crear_espacio_seguro_madurar_ideas_nuevas            nutrir_ideas_nuevas_reunion_solas                    si       si
+      333    minimizar_impuesto_colaboracion_equipo               proteger_tiempo_equipo_jefe                          si       si
+      371    desplegar_plan_orden_operaciones_franqueza_radical   bloquear_tiempo_pensar_calendario                    si       si
+      425    conducir_reuniones_salto_nivel_diez_reglas           resolver_dudas_frecuentes_reuniones_salto_nivel      si       si
+      428    desplegar_tres_conversaciones_carrera                conversar_historia_vida_descubrir_motivadores        si       si
+      429    desplegar_plan_orden_operaciones_franqueza_radical   desplegar_tres_conversaciones_carrera                si       si
+      438    desplegar_plan_orden_operaciones_franqueza_radical   armar_plan_anual_crecimiento_equipo                  si       si
+      461    desplegar_plan_orden_operaciones_franqueza_radical   evitar_obsesion_ascenso_estatus                      si       si
+      469    desplegar_plan_orden_operaciones_franqueza_radical   contar_historias_propias_explicar_franqueza_radical  si       si
+      473    contar_historias_propias_explicar_franqueza_radical  contar_cuatro_historias_propias_ver_hueco_intencion  si       si
+      489    pedir_critica_primero_crear_seguridad_psicologica    abrazar_incomodidad_silencio_contar_seis             NO       NO
+      490    pedir_critica_primero_crear_seguridad_psicologica    dar_elogio_disciplina_igual_critica                  NO       NO
+      492    pedir_critica_primero_crear_seguridad_psicologica    escuchar_entender_critica_dominar_defensa            NO       NO
+      494    pedir_critica_primero_crear_seguridad_psicologica    medir_critica_respuesta_oyente_brujula               NO       NO
+      495    pedir_critica_primero_crear_seguridad_psicologica    premiar_franqueza_hacer_escucha_tangible             NO       NO
+
+**La cifra que el encargo pide que salga `0` sale `0` al abrir.** Las `5` que esperan a un extremo son
+las `5` que el encargo me nombra: **las `3` de mis candidatos de hoy (`489`, `492`, `495`) mas las `2` de
+los dos que NO entran (`490`, `494`)**. **Mi trabajo de hoy es que siga saliendo `0` al cerrar con las
+`3` mias ya cableadas y las `2` restantes todavia esperando**, que es lo correcto: su nodo no ha entrado.
+
+## DC.1. EL ESQUELETO DE LAS TAREAS, ABIERTO ANTES DE LA PRIMERA (`EXTRACTOR.md` 3)
+
+| # | tarea | como cerro |
+|---:|---|---|
+| **1.A** | **BLOQUEANTE**: los dos `U+0008` dentro de `dataset/nodos.jsonl`, con correccion declarada y barrido de control detras | |
+| **1.B** | **BLOQUEANTE**: los `2` rancios de la vuelta 39 que son pares de dos de mis candidatos de hoy | |
+| **1.C** | las adjudicaciones de la `ACTA 38`, recogidas y no reabiertas | |
+| **2** | **BLOQUEANTE**: la fidelidad `D.30` de los cuatro, `58` pasos, ANTES de la primera insercion | |
+| **3** | `cap_13`, cuatro candidatos en el orden del libro, uno por vez, con sus aristas | |
+| **4** | `DC.6` abierta ANTES de la primera insercion, una fila por candidato en el acto | |
+| **cierre** | guardas, cifras recomputadas, cola de aristas recontada, discutibles | |
+
+**EL PREFIJO ME LO ELIJO YO ESTA VUELTA** (`TAREA 4`), y sale de esta salida:
+
+<!-- TALLADO: parcial salida=.v40/prefijos.txt -->
+
+    $ grep -oE "^## [A-Z]{2}\." docs/loop/REPORTE.md | sort -u
+## AA.
+## AB.
+## AC.
+## BC.
+## CC.
+
+**La serie va `AA`, `AB`, `AC`, `BC`, `CC`, y la ultima usada es `CC` (vuelta 39).** La siguiente por esa
+misma progresion es **`DC`**, y es la que abro. **La seccion de la insercion sera `DC.6`**, que es el `.6`
+que el encargo pide **por su numero y no por sus letras**.
