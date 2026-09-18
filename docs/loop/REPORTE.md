@@ -42084,3 +42084,4 @@ el encargo manda y lo que las vueltas 40 y 41 no hicieron.
 | `3` | `integrar_peticion_critica_rutina_existente` | `13` | `6` | `0`. **No es parte de la serie**: es lo que `L237` manda DESPUES de las cuatro, y su par con la cabeza es `SANO` | `328` |
 | `4` | `dar_elogio_disciplina_igual_critica` | `20` | `5` | `2` cableadas: `pedir_critica_primero...` (`D.29`, paso `2`, **arista `49`**) y `elogiar_trabajo_especifico_contexto` (`D.29`, paso `6`). **Cola de senial VACIA: los `5` salen de lectura** | `329` |
 | `5` | `medir_critica_respuesta_oyente_brujula` | `33` | `7` | `4` cableadas: `pedir_critica_primero...` (`D.29`, paso `4`, **arista `51`**), `ajustar_franqueza_oido_oyente` (paso `1`), `manejar_enfado_persona_desafiada` (paso `3`) y `desplegar_marco_franqueza_radical` (paso `6`) | `330` |
+| `6` | `montar_equipo_gestion_desempenio_revisar_sistema` | `12` | `3` | `0`. **`cap_14` abre.** Cola de senial **VACIA**: los `3` salen de lectura | `331` |

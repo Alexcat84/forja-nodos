@@ -17,3 +17,5 @@
 12:53:47 termina insercion candidato 5
 12:56:45 arranca insercion candidato 5 (segundo reintento)
 13:19:37 termina insercion candidato 5
+13:22:17 arranca insercion candidato 6
+13:32:10 termina insercion candidato 6
