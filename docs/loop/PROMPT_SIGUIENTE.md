@@ -1,117 +1,153 @@
-# ENCARGO DE LA VUELTA 36: **`cap_10` ENTERO, Y SIN PARTIRLO**
+# ENCARGO DE LA VUELTA 37: **`cap_12` Y `cap_13`, Y EL PUENTE SE ARREGLA ANTES DE QUE ENTRE**
 
-*Linea **serial** (`extraccion-mundo-11`), la unica que inserta (`D.45`). Escrito al
-aplicar la decision del fundador del 17 sep 2026, archivada en
-`docs/loop/paradas/2026-09-17-la-tabla-de-cierre-DECISION.md`.*
+**Commitea y pushea lo pendiente en la rama activa antes de tocar nada.**
 
-> # **LA PARADA ESTA LEVANTADA, Y CON UN REMEDIO DELANTE, NO CON UN PERDON**
+*Linea **serial** (`extraccion-mundo-11`), la unica que inserta (`D.45`). Escrito al cerrar la
+`ACTA 35`, que audita la vuelta 36 y no abre ninguna parada.*
+
+> # **LIBRO DE ESTA VUELTA: `scott_radical_candor`**
+
+> ## **EL TRAMO SUBE A DOS CAPITULOS, Y LO SUBEN LOS DOS TECHOS A LA VEZ**
 >
-> `REPORTE` vuelve a `0 de 3` **con una condicion que ya esta cumplida**: el remedio
-> corre. Las tres caidas de esa racha vivian en **la misma tabla**, la de cierre de
-> tareas, **que era la unica del reporte sin instrumento declarado**. `D.41` no la miraba
-> por diseño: compara tablas contra su fichero de salida, y esa no tenia ninguno.
+> | techo | lo medido | que sale |
+> |---|---|---:|
+> | `PASOS INVENTADOS` (`AUDITOR_FORJA.md` 8.1) | `cap_10` dio **`0` PUENTE de `206`**, `0,00` por ciento contra un tope de `10` | de `1` capitulo a **`2`** |
+> | candidatos (`EXTRACTOR.md` 12.4) | `cap_12` trae `2` y `cap_13` trae `12` | **`14`**, contra un techo de `15` |
 >
-> **Ahora lo tiene.** `scripts/tabla_de_cierre.py`, corriendo en cada commit.
->
-> **LO QUE ESO SIGNIFICA PARA TI:** si tu tabla de cierre publica `N de M del capitulo` y
-> el grafo no da ese `M`, **tu commit no pasa**. No se corrige tecleando la celda buena:
-> **se regenera y se pega.**
+> **`cap_14` NO ENTRA EN ESTA VUELTA:** trae `15` el solo, justo en el techo, y `12.4` prohibe
+> partir un capitulo para completar un tramo. **Va entero en la vuelta siguiente.**
 
 ---
 
 ## 1. LA APERTURA: **EL TABLERO Y SU PRIORIDAD** (`D.49`, `D.51`)
 
-> # **LIBRO DE ESTA VUELTA: `scott_radical_candor`**
-
     python forja.py tablero                el estado de los once libros
     python forja.py tablero --siguiente    que libro le toca a ESTA linea, y por que
 
-**Tu apertura cita las dos cosas**: el estado y el dueño de tu libro, **y por que te toca
-ese y no otro**. Mientras `scott_radical_candor` no cierre, te toca el mismo: `D.50`
-releva **al cerrar** y no a mitad.
+**Tu apertura cita las dos cosas**: el estado y el dueno de tu libro, **y por que te toca ese y
+no otro**. `scott_radical_candor` sigue `CERRADO EN EXTRACCION` con `29` en bandeja: **`D.50`
+releva AL CERRAR y no a mitad**, asi que te toca el mismo.
 
-**La cola de doctrina del tablero tiene ahora `6` preguntas**, y **una menos que ayer**:
-la `7` quedo decidida y es `D.54`. Si te topas con alguna de las seis, **no la adjudiques:
-di que es la numero `N` de la cola y sigue.**
+**La cola de doctrina sigue en `6` preguntas y ninguna bloquea.** La `ACTA 35` **retiro** la que
+mi apertura ciega iba a aniadir (la asimetria de `difflib`), porque **`D.29` ya la tenia escrita
+desde el 10 sep**: es caida mia, esta en la `ACTA 35` seccion 5, y **la cola no crece**.
 
 ---
 
-## 2. TAREA 1. **`cap_10` ENTERO, SUS `14`, Y NO SE PARTE**
+## 2. TAREA 1, **BLOQUEANTE: EL PUENTE DE `cap_12` SE ARREGLA ANTES DE QUE EL CANDIDATO ENTRE** (`D.30`)
 
-    $ python .v36/estado.py
-    poblacion: el arbol entero, sin filtrar
-    dataset/nodos.jsonl                        : 302 nodos
-    bitacora/VEREDICTOS.jsonl                  : 427 lineas
-    cuarentena/scott_radical_candor            : 43
-    cuarentena/_insertados/scott_radical_candor: 99
-    la bandeja por capitulo                    : cap_10 14, cap_12 2, cap_13 12, cap_14 15
+**`ACTA 35` seccion 6.** El paso `P33` de `desplegar_plan_orden_operaciones_franqueza_radical`,
+que **espera en la bandeja**, dice:
 
-**`99` de `142` insertados, el `69,7` por ciento.** El capitulo que toca es **`cap_10`, con
-sus `14` candidatos**, y el encargo anterior ya dejo declarado que **caben en una vuelta y
-por eso NO SE PARTEN**. Son `14` contra un techo de `15` (`EXTRACTOR.md` 12.4): **cabe
-justo, y por eso entra entero.**
+    Asegurate de que no estas creando una cultura obsesionada con el ascenso, y dedica un
+    pensamiento extra a como estas recompensando a tus superestrellas.
+
+**Y `cap_12` `L41` dice `rock stars`**, que en este libro **no es sinonimo de `superstar`: son
+las dos mitades opuestas de su marco**, y `cap_10` `L19` las escribe en la misma frase para
+oponerlas (*a mistake to push everyone to be either a "superstar" or a "rock star"*). El
+destino de la remision es la seccion `REWARD YOUR ROCK STARS` de `cap_10` `L225`.
+
+- **Reescribe el paso contra su linea, o retiralo**, que es lo que `D.30` manda para un puente.
+- **Corre tu conteo de las dos palabras sobre `cap_12` y `cap_10` y pegalo**, con la linea del
+  libro al lado.
+- **Y esto va ANTES de la primera insercion de `cap_12`**, no despues: `D.30` dice que la
+  correccion vale mas barata en el minuto en que se escribe.
+
+> **NO ES CAIDA DE NADIE TODAVIA, Y POR ESO ES BLOQUEANTE:** el paso **no ha entrado al grafo**,
+> asi que no toca el `0` de `206` de `cap_10` que la `ACTA 35` firma. **Si entra sin arreglar,
+> entonces si es un `PUENTE` dentro del grafo.**
+
+## 3. TAREA 2. **`cap_12` Y `cap_13` ENTEROS: `14` CANDIDATOS**
 
 - **Un candidato por vez y en el orden del libro**, por la aduana, con su veredicto.
-- **Las aristas `D.29` que la señal no levanta se declaran por lectura y se cablean en la
-  misma vuelta.**
-- **Y ESPERA UNA REMISION QUE YA ESTA MEDIDA:** `cap_08.md` `L95` remite al capitulo
-  siete, y **esperaba a que `cap_10` entrara**. Cablea esa arista en esta vuelta, o di por
-  que no.
-- **`NO SE ABRE NINGUN LOTE** (`D.32`). El lote 5 no se toca: lo impide el tablero.
+- **`D.31` EN EL MISMO ACTO:** el insertado se archiva en `cuarentena/_insertados/<libro>/`
+  **dentro de la misma funcion que inserta**, no despues. La vuelta 36 lo perdio dos veces y lo
+  pago con un veredicto duplicado (`DATO MOVIDO`, `1 de 2`). **El remedio ya esta escrito en
+  `.v36/cadena3.sh`: usalo o escribe el tuyo, pero que no dependa de acordarse.**
+- **LAS TRES ARISTAS EN COLA SE CIERRAN SOLAS AL ENTRAR `cap_12`**, porque su madre es
+  `desplegar_plan_orden_operaciones_franqueza_radical`. **Comprueba que se cablearon y publica
+  la cuenta**: si alguna queda en cola con sus dos extremos vivos, eso es un cableado perdido.
+- **Y UNA ARISTA MAS QUE LA `ACTA 35` TE DEJA MEDIDA:** `cap_12` `L41` lleva **DOS** remisiones
+  *(see chapter seven)* en la misma frase. La vuelta 36 cablo la primera (a
+  `evitar_obsesion_ascenso_estatus`) **y no la segunda**, que apunta a
+  `reconocer_excelencia_trayectoria_gradual`, hoy huerfano. **Cablea la segunda por lectura
+  (`D.29`) o di por que no.**
+- **`NO SE ABRE NINGUN LOTE`** (`D.32`): el lote 4 no cierra con esta vuelta.
 
 > **EL CERROJO VIVE EN `procesos/`** (`D.53`), nunca dentro de `dataset/`. Si algo dice
 > `INSERCION NO INTENTADA`, hay otra corrida viva. **No la esquives.**
 
-## 3. TAREA 2. **LA FIDELIDAD, ANTES DE QUE LOS NODOS ENTREN**
+## 4. TAREA 3. **LA FIDELIDAD, ANTES DE QUE LOS NODOS ENTREN** (`D.30`, `EXTRACTOR.md` 15.4)
 
-**`PASOS INVENTADOS` por capitulo** (`D.30`), fila por unidad mas total, **releyendo los
-pasos contra su parrafo**.
+**`PASOS INVENTADOS` por capitulo**, **fila por `cap_12` y fila por `cap_13`, mas el total**,
+releyendo los pasos contra su parrafo. Son `50` mas `212` pasos, **y la fila decide el volumen
+mientras el total solo compara lotes** (`AUDITOR_FORJA.md` 8.2).
 
-> **LA RELECTURA VA ANTES DE LA PRIMERA INSERCION**, que es la letra que la vuelta 33
-> rompio y la 35 ya cumplio. **La escalada se decide sobre el peor capitulo**, no sobre el
-> promedio. Tope `10`.
+> **LA RELECTURA VA ANTES DE LA PRIMERA INSERCION.** **La escalada se decide sobre el PEOR
+> capitulo, no sobre el promedio.** Tope `10`.
 
-## 4. TAREA 3. **CERRAR CON LA TABLA REGENERADA, NO TECLEADA**
+**Y UNA PIEZA DE `cap_13` QUE LA `ACTA 35` TE DEJA ESCRITA ANTES DE QUE LA DECIDAS**
+(`POR ADJUDICAR 7`): `L323` `DIVERSITY AND INCLUSION` **no tiene candidato**, y dentro del
+relato de una participante hay una practica con periodo y metodo (*spaghetti dinners once a
+month*, donde se comparten las historias y se ensaya lo que se podria haber dicho). **La lectura
+ciega del auditor fue que NO es nodo** (la practica se la atribuye el libro a una asistente a un
+taller, y lo que el texto hace despues es anunciar su propio taller, manual 3.5). **Decidelo tu
+con el tramo delante y publica tu razon en las dos direcciones.** `L333` `WHAT'S NEXT?` es
+promocion y esta bien fuera.
 
-    python scripts/tabla_de_cierre.py --escribir
+## 5. TAREA 4. **LA FRONTERA DE `cap_10` QUE NADIE DECLARO, COMPROBADA Y NO REABIERTA**
 
-**Y PEGAS SU SALIDA**, con su marca de tallado encima, igual que las demas tablas del
-reporte. La salida vive en `docs/loop/TABLA_DE_CIERRE.txt`.
+**`ACTA 35` `POR ADJUDICAR 2`.** `cap_10` tiene **ocho secciones en mayusculas** y **`L253`
+`AVOID ABSENTEE MANAGEMENT AND MICROMANAGEMENT` es la unica sin nodo**, ni en el grafo ni en la
+bandeja. **No es caida tuya:** la frontera se publica en la vuelta que **mina**, no en la que
+inserta, y la 36 no mino nada.
 
-**Lo que el instrumento sabe medir, y solo eso:** una afirmacion **`N` de `M` del
-capitulo** con su `cap_NN` en la misma fila, donde `M` es **cuantos nodos del grafo salen
-de ese capitulo**, medido por la ruta completa. **Una fila sin cifra medible se declara
-`SIN COMPROBAR` y se copia tal cual**: el instrumento no rellena lo que no sabe.
+**LO QUE SE PIDE ES UNA COMPROBACION DE UNA LINEA, y nada mas:** busca en el reporte la vuelta
+que mino `cap_10` y **di si su frontera declaro `L253` con su razon**. Si la declaro, pega la
+cita y cierra el punto. **Si no la declaro, dilo y deja `L253` leida con tu veredicto**
+(`D.27`: una postura no es un procedimiento; `L255` dice *I've developed a simple chart* y **el
+cuadro no esta en el texto**).
+
+**NO SE REABRE `cap_10` NI SE MINA NADA NUEVO POR ESTO.** Es una comprobacion de registro.
 
 ---
 
-## 5. **LO QUE YA ESTA HECHO Y NO SE REHACE**
+## 6. **LO QUE YA ESTA HECHO Y NO SE REHACE**
 
 | | |
 |---|---|
-| **la fila `3` de la tabla de cierre de la vuelta 35** | corregida por regeneracion: decia `15 de 15 del capitulo` y `cap_09` son **`20`**, con `272` pasos. **El `15` de la izquierda era cierto; lo falso era el denominador**, que era el del TRAMO |
-| **el paso `13` de `practicar_franqueza_radical_jefe_propio`** | **retirado del campo** (`D.54`), no solo de la prosa. Sus pasos pasan de `17` a `16` y **su texto literal queda escrito dentro del nodo** |
-| **el barrido de esa especie** | corrido sobre los `302` nodos: **era uno, y era ese**. Despues: `0` |
+| **las `37` clases de la vuelta 36** | adjudicadas y coincidentes las `37` (`ACTA 35` 2.2). **No se releen** |
+| **los `206` pasos de `cap_10`** | `0` PUENTE, firmado por el auditor con su propio conteo (`ACTA 35` 3) |
+| **el duplicado de la linea `431`** | anotado sin borrar, especie `DATO MOVIDO`, racha `1 de 2`. **Cerrado** |
+| **las cuatro lineas de credito de la tanda `ACTA 35`** | ya escritas por la vuelta 36 y adjudicadas tal cual. **La quinta, `AUDITOR`, la escribio el auditor.** No se vuelven a anotar |
 
 **No las vuelvas a tocar y no las cuentes como trabajo tuyo.**
 
-## 6. LO QUE NO SE TOCA
+## 7. LO QUE NO SE TOCA
 
-- **El banco, los protocolos y `orquestador_forja.sh`**: la excepcion a `D.45` que
-  permitio el remedio de hoy **era acotada a `scripts/`**, y ya se gasto.
+- **El banco, los protocolos, `scripts/` y `orquestador_forja.sh`**: la excepcion acotada a
+  `D.45` ya se gasto. **Las tres propuestas que la `ACTA 35` deja abiertas son de Alexis**, no
+  tuyas: el asunto del commit del arnes, la retirada de cinco ficheros donde `D.34.2` escribe
+  cuatro, y la sede unica de `docs/loop/TABLA_DE_CIERRE.txt` que el propio reporte propuso.
 - **`config/umbrales.json`**, ningun umbral. **`config/frentes.json`** se lee, no se edita.
 - **El bucle no funde ramas y el bucle no crea remotos.**
-- **Los frentes**: `grove_high_output` es de su linea; `gerber_emyth` y
-  `marquet_turn_the_ship` estan pausados. **Ninguno es asunto tuyo.**
+- **Los frentes**: `grove_high_output` es de su linea; `gerber_emyth` y `marquet_turn_the_ship`
+  estan pausados. **Ninguno es asunto tuyo.**
 
-## 7. AL CERRAR
+## 8. AL CERRAR
 
     python scripts/cerrar_reporte.py
     python scripts/tabla_de_cierre.py --escribir   y se pega su salida
     python forja.py tablero --escribir             el tablero se vuelve a medir (D.49)
     python forja.py credito --anotar ...           una linea por especie, con su cita
 
-**La `cita` es REFERENCIA, nunca un resultado** (`D.53`): `"ACTA 35, seccion 9.1"`, jamas
-`"11 SANO releidos"`. **Una cita con conclusion dentro no pasa el sello.**
+**La `cita` es REFERENCIA, nunca un resultado** (`D.53`). **Y tu tabla de cierre publica `N de M`
+del CAPITULO y no del tramo**: el instrumento lo comprueba contra el grafo y **muerde**, y el
+auditor lo verifico por mutacion (`ACTA 35` 1.2).
 
 **Y COMMITEA Y PUSHEA `docs/loop/`.**
+
+---
+
+**Cero guiones largos y cero guiones medios. Deja correr el hook. Si algo contradice una regla
+vigente, paras y lo traes. No adivines.**

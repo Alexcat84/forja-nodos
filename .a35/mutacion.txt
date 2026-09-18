@@ -1,0 +1,18 @@
+== SANO: la copia intacta ==
+  gate              codigo 0
+  tabla_de_cierre   codigo 0
+  tallado D.41      codigo 0
+  censo D.42        codigo 0
+== MUTACION 1: la celda '14 de 14 del capitulo' pasa a '13 de 13' ==
+  DIFIERE        1  la celda publica '13 de 13 del capitulo' y cap_10 son 14 de 14 en el grafo (206 pasos)
+TABLA DE CIERRE EN ROJO: 1 fila(s) publican una cifra que el dato no da.
+  tabla_de_cierre   codigo 1
+  tallado D.41      codigo 1
+== MUTACION 2: una arista a un id que no existe ==
+GATE EN ROJO: 1 fallo(s) sobre 316 nodo(s).
+  [arista_rota] facilitar_despido_tres_cosas: nodos_siguientes apunta a 'nodo_que_no_existe_mutacion', que no existe ni resuelve por alias (cadena probada: nodo_que_no_existe_mutacion)
+  gate              codigo 1
+== MUTACION 3: se borra una ruta publicada como sede de cifra ==
+CAE  docs\loop\REPORTE.md linea 38794, celda 3
+CENSO EN ROJO: 1 ruta(s) publicadas como sede de una cifra no sostienen nada.
+  censo D.42        codigo 1
