@@ -845,3 +845,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | hacer_critica_pares_transparente_ensenar_escribirla | otro_idioma | transparent or confidential | ingles | - |
 | 2026-09-18 | mantener_proceso_evaluacion_ligero_vigilar_crecimiento | nombre_largo | El decimotercero de los trece elementos: ligero o pesado, con la vigilancia activa del tiempo que el proceso consume y el impreso que se rellena en menos de treinta minutos | castellano | - |
 | 2026-09-18 | mantener_proceso_evaluacion_ligero_vigilar_crecimiento | otro_idioma | lightweight or heavyweight | ingles | - |
+| 2026-09-18 | revisar_tres_preguntas_valor_carrera | nombre_largo | Las tres preguntas del final de la Introduction: anadir valor real, estar enchufado a lo que pasa, y probar tu mismo lo nuevo | castellano | - |
+| 2026-09-18 | revisar_tres_preguntas_valor_carrera | otro_idioma | questions to ponder | ingles | - |
+| 2026-09-18 | revisar_tres_preguntas_valor_carrera | otro_idioma | adding real value | ingles | - |
+| 2026-09-18 | revisar_tres_preguntas_valor_carrera | otro_idioma | plugged in | ingles | - |

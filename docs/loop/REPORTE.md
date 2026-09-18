@@ -42763,8 +42763,48 @@ la aduana, y es otra cosa.
 
 ## EE.3. TAREA 3. **LA INSERCION, UNA FILA CADA VEZ QUE UN CANDIDATO ENTRA**
 
-| # | candidato | cap | saldo | veredictos | aristas |
-|---|---|---|---|---|---|
+**Un candidato por vez, en el orden del libro, por la aduana, con su veredicto y su razon escrita.**
+Cada fila se anexa en su propio commit, en el acto en que el nodo entra.
+
+| # | candidato | cap | grafo | veredictos escritos | aristas |
+|---:|---|---|---:|---|---|
+| 1 | `revisar_tres_preguntas_valor_carrera` | `cap_01` | **346** | `2` SANO: `archivar_indicadores_resolver_problemas` (senial 1 en `0.357`), `emparejar_indicadores_efecto_contraefecto` (`0.354`) | `0` |
+
+### EE.3.a. **EL METODO DE LA INSERCION, Y LO QUE ME CUESTA, MEDIDO EN ESTA VUELTA**
+
+**LA ADUANA NO ACEPTA VEREDICTOS POR TECLADO EN MI ARNES**, y lo digo con la medida delante porque
+cambia como corro cada candidato:
+
+    $ python forja.py insertar cuarentena/grove_high_output/revisar_tres_preguntas_valor_carrera.json
+    veredicto para archivar_indicadores_resolver_problemas (CONTINUA/REPITE/SANO/MUTUO): Traceback ...
+    EOFError: EOF when reading a line
+
+**Mi arnes no tiene `stdin`**, asi que la rama interactiva de `src/aduana.py:1108` muere. **La casa ya
+tiene la salida escrita y es `--sin-preguntas`**, que imprime la cola entera y devuelve `BLOQUEADO`
+sin preguntar. **Asi que cada candidato me cuesta DOS corridas y no una:**
+
+| corrida | que hace | duracion medida |
+|---|---|---|
+| `insertar ... --sin-preguntas` | **imprime la cola de vecinos para leerla**, cero inserciones, codigo `2` | `8:34` |
+| `insertar ... --veredicto ... --veredicto ...` | **inserta**, codigo `0` | `8:34` |
+
+> **Y LO QUE ESTO NO CAMBIA: NINGUNA CORRIDA SOBREVIVE A MI TURNO.** Las dos las espere bloqueado
+> hasta leer su codigo de salida, sin hacer nada en medio y sin avanzar al candidato siguiente.
+> **Las dos caben dentro del tope de `10` minutos de una llamada de mi arnes**, que es la medida que
+> la vuelta 42 no tuvo (su insercion mas larga duro `22:53`). Si alguna se pasa del tope, lo dire en
+> su fila con el reloj al lado.
+
+**Y LA SEGUNDA CORRIDA VUELVE A IMPRIMIR LA COLA ENTERA ANTES DE INSERTAR**, asi que la cola que cito
+en cada fila no es la de la primera corrida recordada: es la que imprime la corrida que inserto.
+
+### EE.3.b. **`D.31`: EL INSERTADO SE MUEVE A `_insertados/` EN EL MISMO ACTO, Y LO MUEVO YO**
+
+    $ ls cuarentena/_insertados/grove_high_output/ | wc -l
+    0
+
+**La aduana NO lo mueve.** Inserta en `dataset/nodos.jsonl`, escribe la bitacora y los censos, y deja
+la ficha en la bandeja. **El movimiento es mio y va en el mismo commit que la fila**, que es lo que
+`D.31` manda. `cuarentena/_insertados/grove_high_output/` **no existia**: lo creo con el primero.
 
 ## EE.4. TAREA 4. **EL CIERRE**
 

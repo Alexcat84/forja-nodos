@@ -1,0 +1,33 @@
+ADUANA DE INSERCION, candidato 'revisar_tres_preguntas_valor_carrera'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 371   (345 del grafo mas 26 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino archivar_indicadores_resolver_problemas  [Mantener un archivo de indicadores para poder repasarlos el dia que algo vaya mal]
+    levantada por: similitud_texto
+    similitud_texto    0.357 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.387 (umbral 0.60)
+    paso 7 del candidato contra paso 4 de archivar_indicadores_resolver_problemas
+
+  vecino emparejar_indicadores_efecto_contraefecto  [Emparejar cada indicador con otro que mida su contraefecto, para no pasarse de frenada]
+    levantada por: similitud_texto
+    similitud_texto    0.354 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.376 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de emparejar_indicadores_efecto_contraefecto
+
+BLOQUEADO: faltan veredictos para archivar_indicadores_resolver_problemas, emparejar_indicadores_efecto_contraefecto
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "archivar_indicadores_resolver_problemas|CONTINUA|madre=archivar_indicadores_resolver_problemas|que añade el hijo a la madre"
+    --veredicto "archivar_indicadores_resolver_problemas|REPITE|por que no añade procedimiento"
+    --veredicto "archivar_indicadores_resolver_problemas|SANO|por que no son el mismo trabajo"
+    --veredicto "archivar_indicadores_resolver_problemas|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "emparejar_indicadores_efecto_contraefecto|CONTINUA|madre=emparejar_indicadores_efecto_contraefecto|que añade el hijo a la madre"
+    --veredicto "emparejar_indicadores_efecto_contraefecto|REPITE|por que no añade procedimiento"
+    --veredicto "emparejar_indicadores_efecto_contraefecto|SANO|por que no son el mismo trabajo"
+    --veredicto "emparejar_indicadores_efecto_contraefecto|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
