@@ -27,3 +27,5 @@
 13:55:18 termina insercion candidato 8
 13:57:03 arranca insercion candidato 08 (decidir_poner_nota_comunicar_proposito_limites)
 14:04:52 termina insercion candidato 08
+14:08:56 arranca insercion candidato 09 (elegir_categorias_nota_palabras_propias_empresa)
+14:23:32 termina insercion candidato 09

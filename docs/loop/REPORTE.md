@@ -42087,3 +42087,4 @@ el encargo manda y lo que las vueltas 40 y 41 no hicieron.
 | `6` | `montar_equipo_gestion_desempenio_revisar_sistema` | `12` | `3` | `0`. **`cap_14` abre.** Cola de senial **VACIA**: los `3` salen de lectura | `331` |
 | `7` | `recorrer_trece_elementos_proceso_evaluacion_formal` | `14` | `4` | **CABEZA `D.37` de una serie de `13`**, con `0` de `13` partes dentro al entrar. `1` arista EN COLA hacia `elegir_palabras_nota...`, que sigue en la bandeja | `332` |
 | `8` | `decidir_poner_nota_comunicar_proposito_limites` | `8` | `15` | `1` cableada: la **`D.37`** con su cabeza (paso `2`). **Serie `1` de `13`** | `333` |
+| `9` | `elegir_categorias_nota_palabras_propias_empresa` | `15` | `13` | `1` cableada: la **`D.37`** con su cabeza (paso `3`). **Serie `2` de `13`** | `334` |
