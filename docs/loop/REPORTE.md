@@ -38881,3 +38881,304 @@ declaro.**
       REPORTE            0 de 3     ACTA 35
 
 **`CREDITO ENTERO: ninguna especie en su tope.`** El bucle sigue.
+
+# VUELTA 37, **`cap_12` y `cap_13` enteros**, y **el puente que se arregla antes de que entre** (lote 4, `scott_radical_candor`)
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`. Cuatro tareas, bajo el tope de cinco (`EXTRACTOR.md` 1.3).
+Vuelta en **MODO AUSTERO** (`D.47`), con `MODO_INSERCION=insertar` sobre un lote **CERRADO EN
+EXTRACCION** (`D.39`). **La `TAREA 3`, la relectura de fidelidad, corre ANTES de la primera insercion**
+(`EXTRACTOR.md` 15.4) y con ella la `TAREA 1`, que es su correccion: el orden de ejecucion no es el de
+numeracion y lo digo aqui.*
+
+## AC.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**La primera operacion de mi turno es el commit del arnes pendiente** (`EXTRACTOR.md` 1.1), asi que esta
+tabla se lee **justo despues de ese commit y antes de la primera tarea**: el commit que cita es ya estado
+intermedio y lo digo.
+
+<!-- TALLADO: script=.v37/apertura.py salida=.v37/apertura_tabla.txt -->
+
+| pieza | valor | de donde sale |
+|---|---:|---|
+| rama | extraccion-mundo-11 | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno | `5e46a8b` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | **316** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **464** | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con alguna anotacion `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| aristas por `nodos_siguientes` | **117** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | **117** | `dataset/nodos.jsonl` |
+| candidatos en bandeja, lote 4 | **29** | PATRON: `cuarentena/scott_radical_candor/*.json` |
+| insertados y archivados, lote 4 | **113** | PATRON: `cuarentena/_insertados/scott_radical_candor/*.json` |
+| candidatos en bandeja, lote 5 | **3** | PATRON: `cuarentena/marquet_turn_the_ship/*.json` |
+| lote 4 insertado sobre `142`, por ciento | **79,6** | `cuarentena/_insertados/scott_radical_candor/` |
+
+**LA BANDEJA POR CAPITULO, QUE ES LO QUE DIMENSIONA EL TRAMO**, corrida por mi y no copiada del encargo:
+
+<!-- TALLADO: parcial salida=.v37/estado_apertura.txt -->
+
+    $ python .v37/estado.py
+    poblacion: el arbol entero, sin filtrar
+    dataset/nodos.jsonl                        : 316 nodos
+    bitacora/VEREDICTOS.jsonl                  : 464 lineas
+    cuarentena/scott_radical_candor            : 29
+    cuarentena/_insertados/scott_radical_candor: 113
+    la bandeja por capitulo                    : cap_12 2, cap_13 12, cap_14 15
+
+**CUADRA AL DIGITO CON EL ENCARGO** en su cabecera (`cap_12` trae `2` y `cap_13` trae `12`, `14` contra
+un techo de `15`; `cap_14` trae `15` el solo). **Cero discrepancias que declarar** (`EXTRACTOR.md` 5).
+
+### AC.0.a. **EL TABLERO Y SU PRIORIDAD** (`D.49`, `D.51`)
+
+<!-- TALLADO: parcial salida=.v37/tablero_apertura.txt -->
+
+      prio lote clave                          estado                 dueno                 band ult cap
+      --------------------------------------------------------------------------------------------------------
+      .    4    scott_radical_candor           CERRADO EN EXTRACCION  serial                  29  cap_14
+      1    7    grove_high_output              EN CURSO               grove_high_output       23  cap_03
+      2    9    gerber_emyth                   PAUSADO                NINGUNO                 10  cap_11
+      3    5    marquet_turn_the_ship          PAUSADO                NINGUNO                  9  cap_03
+
+**EL ESTADO Y EL DUEÑO DE MI LIBRO:** `scott_radical_candor` esta **`CERRADO EN EXTRACCION`** y **lo
+trabaja mi linea, `serial`**, con `29` en bandeja y `cap_14` como ultimo capitulo minado.
+
+**POR QUE ME TOCA ESE Y NO OTRO**, con la salida del instrumento delante:
+
+<!-- TALLADO: parcial salida=.v37/tablero_siguiente.txt -->
+
+    $ python forja.py tablero --siguiente
+    D.51, EL ORDEN LO DA EL TABLERO. Linea 'serial':
+      le toca: scott_radical_candor
+      'scott_radical_candor' ya es de esta linea y esta CERRADO EN EXTRACCION: se continua, que D.50 releva AL CERRAR y no a mitad.
+
+**LA COLA DE DOCTRINA ESTA EN `6` Y `0` BLOQUEAN**, linea `COLA DE DOCTRINA (D.53): 6 pregunta(s), 0
+bloquea(n)` del mismo tablero. **No adjudico ninguna.**
+
+### AC.0.b. **EL CERROJO, EN SU SEDE DE `procesos/`** (`D.53`)
+
+<!-- TALLADO: parcial salida=.v37/cerrojo.txt -->
+
+    $ ls -la procesos/
+    total 64
+    drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 22:37 ./
+    drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 22:43 ../
+
+**`procesos/` esta vacio: no hay otra corrida viva** y la insercion no queda `INSERCION NO INTENTADA`.
+
+### AC.0.c. **NI SALDO DE LOTE NI COLA SELLADA, Y VAN SIETE VUELTAS** (`D.43`)
+
+<!-- TALLADO: parcial salida=.v37/entrega_arnes.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+    ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+    ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ ls docs/loop/ | grep -i -E "cola|vecin"
+      (ni una linea)
+
+**Lo declaro como `D.43` manda**: esta vuelta **no trae saldo de lote**, y con el se va `CHOCAN entre si
+dentro del lote`, la unica cifra que un informe de uno en uno no puede ver. **La cola de vecinos la corro
+yo de a uno**, que es lo que `D.43` no me quito.
+
+### AC.0.d. **MI CREDITO AL ABRIR, Y NO ME LO ESCRIBO YO** (`D.48`)
+
+<!-- TALLADO: parcial salida=.v37/credito_apertura.txt -->
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            1 de 3     ACTA 35
+      CIFRA PUBLICADA    0 de 2     ACTA 35
+      CLASE              0 de 2     ACTA 35
+      DATO MOVIDO        1 de 2     ACTA 35
+      REPORTE            0 de 3     ACTA 35
+
+**`AUDITOR` sube a `1 de 3` por la caida que el auditor se carga a si mismo** (`ACTA 35` 5), y `DATO
+MOVIDO` esta en `1 de 2` por el duplicado de la linea `431`. **No escribo ni una linea en
+`docs/loop/CREDITO_serial.jsonl`**, que es sede del acta.
+
+### AC.0.e. **LA HERENCIA QUE EL ARNES ENTREGA NO ES MIA, Y LO DIGO** (`D.40`)
+
+<!-- TALLADO: parcial salida=.v37/herencia.txt -->
+
+    $ python forja.py herencia | sed -n "/HEREDADO 1/,+5p"
+    HEREDADO 1   [TAREA BLOQUEANTE, linea 30341 del acta]
+    > **TAREA BLOQUEANTE DEL AUDITOR, para la `ACTA 36`: antes de escribir en mi apertura ciega que
+    > algo NO esta escrito en la casa, corro el `grep` que lo busca en `docs/BANCO_DE_REGLAS.md` y
+    > en `docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md`, y pego su salida al lado. Una ausencia sin
+    > busqueda pegada no se publica.**
+
+**El `sed` engancha DOS veces porque la propia salida repite el rotulo en su plantilla de declaracion, y
+lo digo en vez de recortarlo:** la segunda es la linea `HEREDADO 1: CUMPLIDO`, que es el formulario del
+auditor y no otro remedio. **Uno heredado, no dos.**
+
+**El unico remedio heredado es del auditor y su sede es `APERTURA_CIEGA.md`**, que no es mia
+(`EXTRACTOR.md` 14). **No lo cumplo yo y no lo cuento como trabajo mio.**
+
+## AC.1. LAS CUATRO TAREAS, ABIERTAS Y VACIAS (`EXTRACTOR.md` 3)
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | **BLOQUEANTE**: el puente de `cap_12` `P33`, arreglado antes de que el candidato entre | *abierta* |
+| 2 | `cap_12` y `cap_13` enteros, `14` candidatos, con sus aristas | *abierta* |
+| 3 | la fidelidad `D.30`, fila por capitulo, **antes de la primera insercion** | *abierta* |
+| 4 | la frontera de `cap_10` `L253`, comprobada y no reabierta | *abierta* |
+
+## AC.2. **TAREA 3, LA FIDELIDAD, Y CORRE ANTES DE LA PRIMERA INSERCION** (`D.30`, `EXTRACTOR.md` 15.4)
+
+**Ninguna guarda de esta casa ve un paso que yo escribi y el libro no dice.** Los `14` candidatos de
+`cap_12` y `cap_13` estaban escritos de vueltas anteriores, asi que esta relectura no es la del acto de
+escribir: es la que `D.30` exige **antes de cualquier insercion**, y la corro entera sobre los `262`
+pasos, uno a uno contra su linea.
+
+<!-- TALLADO: script=.v37/fidelidad.py salida=.v37/fidelidad_tabla.txt -->
+
+| unidad | lineas | pasos | TRANSCRIPCION | PUENTE | por ciento |
+|---|---:|---:|---:|---:|---:|
+| `desplegar_plan_orden_operaciones_franqueza_radical` | L13-L49 | 42 | 41 | **1** | 2,38 |
+| `contar_historias_propias_explicar_franqueza_radical` | L17 | 8 | 8 | **0** | 0,00 |
+| **TOTAL de `cap_12`** | | **50** | **49** | **1** | **2,00** |
+| `mejorar_consciencia_propia_relacional_dos_practicas` | L17-L22,L35-L40 | 13 | 13 | **0** | 0,00 |
+| `contar_cuatro_historias_propias_ver_hueco_intencion` | L41-L58 | 17 | 17 | **0** | 0,00 |
+| `practicar_triangulo_critica_tres_papeles` | L59-L72 | 15 | 15 | **0** | 0,00 |
+| `pedir_critica_primero_crear_seguridad_psicologica` | L73-L86,L105-L114 | 17 | 17 | **0** | 0,00 |
+| `elegir_pregunta_recurrente_pedir_critica` | L115-L120,L129-L166 | 24 | 24 | **0** | 0,00 |
+| `resolver_dudas_frecuentes_pedir_critica` | L167-L186 | 15 | 15 | **0** | 0,00 |
+| `abrazar_incomodidad_silencio_contar_seis` | L187-L198 | 12 | 12 | **0** | 0,00 |
+| `escuchar_entender_critica_dominar_defensa` | L199-L214 | 13 | 13 | **0** | 0,00 |
+| `premiar_franqueza_hacer_escucha_tangible` | L215-L234 | 20 | 20 | **0** | 0,00 |
+| `integrar_peticion_critica_rutina_existente` | L111-L112,L235-L246 | 13 | 13 | **0** | 0,00 |
+| `dar_elogio_disciplina_igual_critica` | L247-L252,L267-L288 | 20 | 20 | **0** | 0,00 |
+| `medir_critica_respuesta_oyente_brujula` | L289-L322 | 33 | 33 | **0** | 0,00 |
+| **TOTAL de `cap_13`** | | **212** | **212** | **0** | **0,00** |
+| **TOTAL del tramo, `cap_12` mas `cap_13`** | | **262** | **261** | **1** | **0,38** |
+
+**LA FILA DECIDE EL VOLUMEN Y EL TOTAL SOLO COMPARA LOTES** (`AUDITOR_FORJA.md` 8.2): **el PEOR capitulo
+del tramo es `cap_12` con `2,00` por ciento**, contra un tope de `10`. **El unico `PUENTE` de los `262`
+es el que la `ACTA 35` seccion 6 levanto**, y lo cuento en la fila de `cap_12` porque ahi es donde el
+paso se escribio, aunque el nodo no haya entrado todavia: la metrica mide **lo que el extractor escribio
+en el capitulo** (`AUDITOR_FORJA.md` 8).
+
+### AC.2.a. **LOS DOS DEFECTOS DE TRANSCRIPCION QUE ME CAZO YO, Y NO LOS CUENTO COMO `PUENTE`**
+
+**Son mios, salen de esta relectura y ninguna guarda los ve.** Los publico aparte porque **la
+clasificacion es discutible y va marcada** (`EXTRACTOR.md` 8): si el auditor los lee como `PUENTE` con la
+vara con la que la `ACTA 35` seccion 6 juzgo `superestrellas`, **`cap_13` pasa de `0 de 212` a `2 de
+212`, que es `0,94` por ciento**, y sigue muy por debajo del tope.
+
+<!-- TALLADO: parcial salida=.v37/citas_fidelidad.txt -->
+
+| nodo y paso | lo que decia | lo que el libro dice, con su `sed` pegado |
+|---|---|---|
+| `contar_cuatro_historias_propias_ver_hueco_intencion` `P8` | *al jefe de su jefe*, o sea DOS escalones | `49: ...email she sent to her boss s boss s boss (Chapter Two)...`, o sea **TRES** |
+| `dar_elogio_disciplina_igual_critica` `P13` | *sintiendose patrocinada* | `279: ...just as likely to leave a person feeling patronized...`, que es **tratada con condescendencia** |
+
+    $ sed -n "49p" fuentes/scott_radical_candor/cap_13.md | cut -c470-620
+    is by definition better than the story Kim tells about the rude "clutter sites" email she sent to her boss's boss's boss (Chapter Two) because
+    $ sed -n "279p" fuentes/scott_radical_candor/cap_13.md | cut -c1-120
+    When you're vague with praise, it is just as likely to leave a person feeling patronized. And either way, vague positi
+
+**MI RAZON PARA NO CONTARLOS COMO `PUENTE`, y es donde puedo estar equivocado:** `D.30` parte en dos,
+**TRANSCRIPCION** (el libro pone el medio, la etapa o el objeto) o **PUENTE** (lo escribiste tu). En los
+dos casos **el libro SI pone el objeto** y lo que falla es una palabra dentro de la transcripcion; en el
+`P33` de `cap_12`, en cambio, la palabra mala **manda recompensar a la mitad contraria del marco del
+propio libro**, que es otra cosa. **Los dos quedan corregidos contra su linea antes de insertar**, con
+su `CORRECCION DECLARADA` escrita en el `resumen_teorico` de cada nodo.
+
+**Y TRES GRAFIAS MAS, QUE NO SON DEFECTO DE FIDELIDAD Y POR ESO NO ENTRAN EN NINGUNA CUENTA:**
+`seniallaras`, `seniallandomelo` y `senialla` con doble ele, contra la grafia de toda la casa. Corregidas
+en el mismo acto y declaradas en su `resumen_teorico`.
+
+<!-- TALLADO: parcial salida=.v37/grafia.txt -->
+
+    $ grep -ho "senial[a-z]*" dataset/nodos.jsonl | sort | uniq -c | sort -rn | head -3
+         29 senial
+         16 seniales
+          6 senialar
+
+## AC.3. **TAREA 1, BLOQUEANTE: EL PUENTE DE `cap_12` `P33`, ARREGLADO ANTES DE QUE EL CANDIDATO ENTRE**
+
+**`ACTA 35` seccion 6.** El paso `P33` de `desplegar_plan_orden_operaciones_franqueza_radical`, que
+espera en la bandeja, mandaba *dedicar un pensamiento extra a como estas recompensando a tus
+superestrellas*, y `cap_12` `L41` dice **`rock stars`**.
+
+**MI CONTEO DE LAS DOS PALABRAS, CORRIDO EN ESTA VUELTA SOBRE LOS DOS CAPITULOS:**
+
+<!-- TALLADO: parcial salida=.v37/conteo_rockstar_superstar.txt -->
+
+    == grep -nic 'rock star' / 'superstar' por fichero ==
+    -- cap_10.md
+       rock star(s): 7
+       superstar(s): 8
+    -- cap_12.md
+       rock star(s): 1
+       superstar(s): 0
+
+**LAS LINEAS DEL LIBRO, PEGADAS** (`D.35`):
+
+<!-- TALLADO: parcial salida=.v37/citas_fidelidad.txt -->
+
+    $ sed -n "41p" fuentes/scott_radical_candor/cap_12.md | cut -c152-320
+    n.) Make sure that you are not creating a promotion-obsessed culture, and give some extra thought to how you're rewarding your rock stars (see chapter seven).
+    $ sed -n "19p" fuentes/scott_radical_candor/cap_10.md | cut -c78-190
+     and it's a mistake to push everyone to be either a "superstar" or a "rock star." You need to balance g
+    $ sed -n "225p;227p" fuentes/scott_radical_candor/cap_10.md
+    REWARD YOUR ROCK STARS
+    Don't give all the glory to the superstars
+
+**`L19` LAS PONE EN LA MISMA FRASE PARA OPONERLAS, Y `L227` LO REMATA:** *don't give all the glory to
+the superstars* es el subtitulo de la seccion `REWARD YOUR ROCK STARS` de `L225`. **En este libro las dos
+palabras son las dos mitades opuestas de su marco**, asi que un paso que manda recompensar a las
+superestrellas **dice lo contrario de lo que su linea dice**.
+
+**LO QUE HICE, Y ES LO QUE `D.30` MANDA:** `D.30` da dos salidas, retirar o reescribir. **Reescribo,
+porque el libro SI encarga el acto**, y lo que estaba mal era la mitad nombrada:
+
+| | |
+|---|---|
+| **antes** | *...dedica un pensamiento extra a como estas recompensando a tus **superestrellas**.* |
+| **ahora** | *...dedica un pensamiento extra a como estas recompensando a tus **estrellas de rock**.* |
+
+**LA GRAFIA NO LA ELIJO YO:** el grafo ya escribe `estrella de rock` **11** veces y `superestrella`
+**12**, y las dos salen de `cap_10`, que es el capitulo al que este paso remite.
+
+<!-- TALLADO: parcial salida=.v37/grafia_rock.txt -->
+
+    $ grep -o "estrellas* de rock" dataset/nodos.jsonl | sort | uniq -c
+          8 estrella de rock
+          3 estrellas de rock
+    $ grep -o "superestrellas*" dataset/nodos.jsonl | sort | uniq -c
+          6 superestrella
+          6 superestrellas
+
+**Y VA ANTES DE LA PRIMERA INSERCION, no despues**: el nodo entra ya reescrito, asi que **el `PUENTE` no
+llega al grafo**. Queda contado en la fila de `cap_12` de `AC.2` y escrito sin borrar en el
+`resumen_teorico` del propio candidato.
+
+## AC.4. **TAREA 4, LA FRONTERA DE `cap_10` `L253`: SI SE DECLARO, Y LA CITO**
+
+**`ACTA 35` `POR ADJUDICAR 2`** pregunta si la vuelta que **mino** `cap_10` declaro `L253` en su
+frontera. **La mino la VUELTA 21, y si la declaro**, como tramo de resto con su razon escrita:
+
+<!-- TALLADO: parcial salida=.v37/l253.txt -->
+
+    $ grep -n "^# VUELTA 21" docs/loop/REPORTE.md
+    24910:# VUELTA 21, los registros de la ACTA 20 y de la parada del 12 sep, `cap_10` ENTERO, las tres aristas `D.37` de `L173`, y el
+    $ grep -n "L253 a L263" docs/loop/REPORTE.md
+    25151:| `L253 a L263` | 198 | **0** | el cuadro que no esta en el recorte, el resumen y la cabecera del cap siguiente |
+    26544:| `L253 a L263` | 198 | **0** | el cuadro que no esta en el recorte, el resumen y la cabecera del cap siguiente |
+    27475:| `L253 a L263` | 198 | **0** | el cuadro que no esta en el recorte, el resumen y la cabecera del cap siguiente |
+
+**TRES VUELTAS LA DECLARAN Y NO UNA**: la `21` que mino, y la `22` y la `23` que recerraron la frontera.
+**La razon escrita es la misma las tres veces** y coincide con lo que el propio texto dice:
+
+    $ sed -n "253,255p" fuentes/scott_radical_candor/cap_10.md
+    AVOID ABSENTEE MANAGEMENT AND MICROMANAGEMENT
+
+    TO HELP YOU figure out when you're being a good partner rather than slipping into micromanagement or absentee management, I've developed a simple chart. I hope it will help you partner better with the people who report to you. One of the best ways to keep the people on your team engaged is by partnering actively with them.
+
+**EL PUNTO QUEDA CERRADO Y NO REABRO NADA.** La frontera de la vuelta 21 midio ademas `0` lineas no
+cubiertas y `0` solapes, asi que `L253` **no era un hueco**: era un tramo de resto nombrado. **Y mi
+lectura de `D.27` sobre esa linea coincide con la razon que ya estaba escrita:** el libro dice *I've
+developed a simple chart* y **el cuadro no esta en el texto**, asi que no hay inventario propio que
+transcribir, solo el anuncio de un cuadro que el recorte no trae. **Una postura no ejecuta una busqueda.**
+
+> **LO QUE NO HAGO:** no mino nada nuevo de `cap_10`, no toco sus `14` nodos y no vuelvo a contar sus
+> `206` pasos. Es una comprobacion de registro, como el encargo pide.

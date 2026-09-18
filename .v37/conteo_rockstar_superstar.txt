@@ -1,0 +1,7 @@
+== grep -nic 'rock star' / 'superstar' por fichero ==
+-- cap_10.md
+   rock star(s): 7
+   superstar(s): 8
+-- cap_12.md
+   rock star(s): 1
+   superstar(s): 0
