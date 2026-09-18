@@ -800,3 +800,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | escuchar_entender_critica_dominar_defensa | nombre_largo | Escucha con intencion de entender, no de responder: que hacer con la respuesta de pelea, huida o bloqueo, y el ejercicio de los tres minutos | castellano | - |
 | 2026-09-18 | escuchar_entender_critica_dominar_defensa | otro_idioma | LISTEN WITH THE INTENT TO UNDERSTAND, NOT TO REPLY | ingles | - |
 | 2026-09-18 | escuchar_entender_critica_dominar_defensa | otro_idioma | Practice: Listening | ingles | - |
+| 2026-09-18 | premiar_franqueza_hacer_escucha_tangible | nombre_largo | Haz tangible la escucha: premia la franqueza, ensenia tu trabajo, y premia tambien la critica con la que no estas de acuerdo | castellano | - |
+| 2026-09-18 | premiar_franqueza_hacer_escucha_tangible | otro_idioma | MAKE LISTENING TANGIBLE: REWARD THE CANDOR | ingles | - |
+| 2026-09-18 | premiar_franqueza_hacer_escucha_tangible | otro_idioma | Practice: Make Listening Tangible | ingles | - |
+| 2026-09-18 | premiar_franqueza_hacer_escucha_tangible | otro_idioma | Practice: Reward criticism you disagree with | ingles | - |
