@@ -41795,3 +41795,141 @@ era copia sin cortar de `.v41/citas_1a.txt`, y **la sede que el reporte publica 
 `citas_1a.txt`, que corta a `110` columnas y no arrastra ningun guion largo.** No toco ni un
 caracter de la cita: **lo que retiro es el duplicado, no el original.** El barrido vuelve a
 verde y lo dejo escrito porque **el hook mordio y mordio bien.**
+
+## EC.4. TAREA 2. **EL METODO DE LA CADENA, ARREGLADO POR MECANICA Y NO POR PROPOSITO**
+
+**Los tres puntos son un comando que ya existe, un `grep -c` y un `tail`** (`EXTRACTOR.md` 13:
+ninguna vuelta fabrica arneses). Lo unico que nace hoy es **una funcion `cuadra` de veinte
+lineas dentro del corredor que ya existia**, y la ordena la `TAREA 2.2` en bloqueante.
+
+### EC.4.a. **PUNTO 1: EL INFORME DEL CANDIDATO `1`, CORRIDO ANTES DE ESCRIBIR SU GUION**
+
+<!-- TALLADO: parcial salida=.v41/informes/i01_abrazar_incomodidad.txt -->
+
+    $ python forja.py informe cuarentena/scott_radical_candor/abrazar_incomodidad_silencio_contar_seis.json
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    candidatos revisados        : 1
+    poblacion del barrido       : 348   (324 del grafo mas 24 que esperan en bandejas)
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 3
+      por candidato bloqueado          : menor 3, mediana 3, mayor 3
+      que señal levanta cada vecindad  : similitud_texto 3
+
+    [BLOQUEARIA] abrazar_incomodidad_silencio_contar_seis
+        vecino escuchar_entender_critica_dominar_defensa  [levantada por: similitud_texto]
+          similitud_texto 0.449 | familia_id 0.000 | paso_contra_nodo 0.498
+        vecino premiar_franqueza_hacer_escucha_tangible  [levantada por: similitud_texto]
+          similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.485
+        vecino contar_historias_propias_explicar_franqueza_radical  [levantada por: similitud_texto]
+          similitud_texto 0.376 | familia_id 0.100 | paso_contra_nodo 0.464
+    CODIGO DE SALIDA: 0
+
+**`3` vecinos, los tres del encargo, con sus tres cifras al digito.** Y **`CODIGO DE SALIDA: 0`**,
+que es donde la vuelta 40 tenia un `2`. **Costo `6` minutos y `9` segundos** (`08:30:15` a
+`08:36:24`, en `.v41/informes/_tiempos.txt`): ese es el precio del instrumento y por eso se
+corre **antes** del guion y no dentro de la cadena.
+
+**Y ESTA ES LA CIFRA QUE LA VUELTA 40 NO MIRO:** `CHOCAN entre si dentro del lote` sale **`0`**.
+Lo publico **de un informe de UN candidato**, asi que **no es el saldo de lote de `D.43`**, que
+esta vuelta no trae (`EC.0.f`): es el saldo de este candidato solo, y **no lo presento como otra
+cosa.**
+
+### EC.4.b. **PUNTO 2: LA GUARDA `cuadra`, CON SU CASO POSITIVO Y SU CASO NEGATIVO**
+
+**El guion no se lanza solo: lo lanza la guarda.** Primera linea ejecutable de `cadena_1.sh`:
+
+    cuadra .v41/informes/i01_abrazar_incomodidad.txt .v41/cadena_1.sh || {
+      echo "CADENA 1 NO LANZADA: la guarda cuadra dijo que no" >> .v41/informes/_cadena.txt
+      exit 1
+    }
+
+**LO QUE MIDE, Y SON DOS COSAS:** el `grep -c` que el encargo pide (`--veredicto` contra
+vecinos del informe) **y ademas que cada vecino este por su nombre**, porque contar seis contra
+tres es justo lo que la vuelta 40 habria pasado: **traia cuatro veredictos y le faltaban los
+tres que importaban.** Un numero mayor no prueba que esten los que hacen falta.
+
+<!-- TALLADO: parcial salida=.v41/guarda_cuadra.txt -->
+
+    $ cuadra .v41/informes/i01_abrazar_incomodidad.txt .v41/cadena_1.sh          (CASO POSITIVO)
+      GUARDA cuadra: .v41/informes/i01_abrazar_incomodidad.txt tiene 3 vecino(s); .v41/cadena_1.sh trae 6 --veredicto
+      CUADRA: los 3 vecino(s) del informe tienen su --veredicto en el guion.
+      CODIGO DE SALIDA: 0
+
+    $ grep -v "escuchar_entender...|SANO" .v41/cadena_1.sh > .v41/cadena_1_mordida.sh
+    $ cuadra .v41/informes/i01_abrazar_incomodidad.txt .v41/cadena_1_mordida.sh  (CASO NEGATIVO)
+      GUARDA cuadra: .v41/informes/i01_abrazar_incomodidad.txt tiene 3 vecino(s); .v41/cadena_1_mordida.sh trae 5 --veredicto
+        FALTA el veredicto de escuchar_entender_critica_dominar_defensa
+      NO CUADRA: 1 vecino(s) del informe sin --veredicto. NO SE LANZA.
+      CODIGO DE SALIDA: 1
+
+**LA MORDI A PROPOSITO PARA VER SI MUERDE, y muerde: codigo `1` y el vecino nombrado.** La
+copia mordida se borro despues de medirla; **no queda en el arbol.** El caso negativo es
+**exactamente la vuelta 40**: un guion al que le falta el veredicto de `escuchar_entender`.
+
+### EC.4.c. **PUNTO 3: EL `tail` VA AL FINAL Y ES LA ULTIMA COSA QUE HAGO**
+
+**Queda escrito aqui antes de lanzar y se cumple en `EC.7`:** mi turno no termina hasta que
+`.v41/informes/_cadena.txt` diga que la cadena acabo. **Si sigue viva, espero; si murio, digo en
+que candidato.** La cadena estampa la hora con `date` al arrancar y al terminar, para que el
+`tail` no se pueda leer de dos maneras.
+
+## EC.5. **LOS SEIS VEREDICTOS DEL CANDIDATO `1`, Y POR QUE SON SEIS Y NO TRES**
+
+| # | vecino | de donde sale | clase |
+|---:|---|---|---|
+| `1` | `escuchar_entender_critica_dominar_defensa` | **la senial**, `0.449` | `SANO`, hermano de serie |
+| `2` | `premiar_franqueza_hacer_escucha_tangible` | **la senial**, `0.353` | `SANO`, hermano de serie |
+| `3` | `contar_historias_propias_explicar_franqueza_radical` | **la senial**, `0.376` | `SANO`, otro capitulo |
+| `4` | `pedir_critica_primero_crear_seguridad_psicologica` | **mi lectura**, linea `489` en cola | `CONTINUA`, madre, **`D.37`** |
+| `5` | `abrazar_incomodidad_arrancar_critica_equipo` | **mi lectura**, arista `55` | `CONTINUA`, madre, **`D.29`** |
+| `6` | `exigir_critica_jefe_reticente` | **mi lectura**, `ACTA 37` `3.7` | `CONTINUA`, madre, **`D.29`** |
+
+**LA SENIAL `0.449` LA LEO LA PRIMERA**, como manda `EXTRACTOR.md` 11 (*si una señal 1 pasa de
+0,4, lee ese par antes que ningun otro*), **y aun asi la declaro `SANO`**: los dos son **partes
+hermanas de la misma cabeza**, nombradas por separado en el paso `17` de
+`pedir_critica_primero_crear_seguridad_psicologica`, y `EXTRACTOR.md` 15.6 escribe que un vecino
+que no es tu parte **es hermano y su veredicto es `SANO`**. Lo que nos separa esta medido en los
+pasos: **yo trabajo el silencio ANTES de que el otro hable; el trabaja tu defensa DESPUES de que
+ya hablo.**
+
+### EC.5.a. **LAS LINEAS DEL LIBRO QUE SOSTIENEN LA SERIE, CON SU SALIDA PEGADA** (`D.35`)
+
+<!-- TALLADO: parcial salida=.v41/citas_cap13.txt -->
+
+    $ python -c "ls=open(...cap_13.md,encoding=utf-8).read().split(chr(10));print(ls[112][145:260])"
+      113:  criticism? We’d like to go into more detail on each of the four tips for soliciting criticism offered in the book.
+    $ sed -n '187p' fuentes/scott_radical_candor/cap_13.md
+      187: EMBRACE THE DISCOMFORT
+    $ sed -n '199p' fuentes/scott_radical_candor/cap_13.md
+      199: LISTEN WITH THE INTENT TO UNDERSTAND, NOT TO REPLY
+    $ sed -n '215p' fuentes/scott_radical_candor/cap_13.md
+      215: MAKE LISTENING TANGIBLE: REWARD THE CANDOR
+    $ python -c "...;print(ls[236][:67])"   (el libro trae un guion largo en el 68, y por eso corto ahi)
+      237: Now that you’ve practiced the four elements of soliciting criticism
+    $ python -c "...;print(ls[236][68:221])"
+      237: coming up with a go-to question, embracing the discomfort, listening with the intent to understand, and making listening tangible by rewarding the candor
+
+**`L113` dice CUANTAS (`four`) y `L237` las nombra una a una: esa es la condicion literal de
+`D.37`, y por eso la arista desde `pedir_critica_primero` es `D.37` y las de `cap_09` no lo son.**
+Las tres citas de rotulo (`187`, `199`, `215`) salen de `sed` entero, sin cortar. **Corto `L113` y
+`L237` por columnas porque el libro trae un guion largo en el `68` de la `237`**, y este repo no
+admite ninguno: **lo que corto es mi cita, no el libro.**
+
+## EC.6. **LA INSERCION, ABIERTA ANTES DE QUE ENTRE EL PRIMER CANDIDATO** (`TAREA 4`)
+
+**Esta seccion se abre AHORA, con `324` nodos en el grafo y CERO candidatos de esta vuelta
+dentro**, y crece **una fila cada vez que uno entra**, en su propio commit.
+
+| # | candidato | pasos | veredictos | aristas | nodos al cerrar su fila |
+|---:|---|---:|---:|---|---:|
+| `1` | `abrazar_incomodidad_silencio_contar_seis` | `12` | | | |
+| `2` | `escuchar_entender_critica_dominar_defensa` | `13` | | | |
+| `3` | `premiar_franqueza_hacer_escucha_tangible` | `20` | | | |
