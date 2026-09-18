@@ -42626,13 +42626,140 @@ sostiene sobre la linea, no sobre el argumento**, y por eso la firmo sin pelearl
 **`REPORTE` esta en `0 de 3` y ninguna especie en su tope.** Y **no anoto mi propia vuelta**, que es
 lo que `EXTRACTOR.md` 14 prohibe por su nombre: la tanda de esta vuelta la adjudica el acta.
 
-## EE.2. TAREA 2. **LA FRONTERA DE LO QUE VOY A INSERTAR**
+## EE.2. TAREA 2. **LA FRONTERA DE LO QUE VOY A INSERTAR, PUBLICADA ANTES DE LA PRIMERA INSERCION** (CERRADA)
 
-| | |
-|---|---|
-| la bandeja contada del fichero | |
-| los `6` que `d005` aparta | |
-| el orden del libro | |
+**LOS `23` DE LA BANDEJA NO SON MIOS HASTA QUE LOS MIDA.** Los mino otra mano y los cuento yo, de
+sus ficheros.
+
+### EE.2.a. La bandeja entera, contada de `cuarentena/grove_high_output/`
+
+*Salida de `python .v43/frontera.py`, pegada de `.v43/frontera.txt`. El capitulo y la pieza salen del
+`resumen_teorico` de cada ficha, que es donde su autor escribio su unidad de origen.*
+
+<!-- TALLADO: salida=.v43/frontera.txt -->
+
+| # | cap | pieza | candidato | pasos | d005 |
+|---:|---|---|---|---:|---|
+| 1 | `cap_01` | `P12` | `revisar_tres_preguntas_valor_carrera` | 7 | entra |
+| 2 | `cap_02` | `P2` | `construir_flujo_produccion_paso_limitante` | 10 | entra |
+| 3 | `cap_02` | `P5` | `clasificar_trabajo_proceso_montaje_prueba` | 7 | entra |
+| 4 | `cap_02` | `P6` | `rehacer_flujo_paso_limitante_capacidad` | 6 | entra |
+| 5 | `cap_02` | `P7` | `equilibrar_capacidad_personal_inventario_plazo` | 8 | entra |
+| 6 | `cap_02` | `P9` | `preferir_inspeccion_proceso_prueba_destructiva` | 6 | entra |
+| 7 | `cap_02` | `P10` | `dimensionar_inventario_materia_prima_reposicion` | 7 | entra |
+| 8 | `cap_02` | `P11` | `detectar_arreglar_fallo_etapa_menor_valor` | 6 | entra |
+| 9 | `cap_03` | `P2` | `elegir_cinco_indicadores_diarios_fabrica` | 10 | entra |
+| 10 | `cap_03` | `P3` | `emparejar_indicadores_efecto_contraefecto` | 7 | **APARTADO** |
+| 11 | `cap_03` | `P4` | `elegir_indicador_salida_trabajo_administrativo` | 7 | **APARTADO** |
+| 12 | `cap_03` | `P7` | `representar_actividad_caja_negra_ventanas` | 9 | entra |
+| 13 | `cap_03` | `P9` | `construir_indicador_linealidad_alerta_temprana` | 9 | entra |
+| 14 | `cap_03` | `P10` | `construir_indicador_tendencia_patron` | 6 | **APARTADO** |
+| 15 | `cap_03` | `P11` | `construir_grafico_escalonado_pronosticos` | 8 | **APARTADO** |
+| 16 | `cap_03` | `P12` | `archivar_indicadores_resolver_problemas` | 4 | **APARTADO** |
+| 17 | `cap_03` | `P13` | `elegir_fabricar_pedido_pronostico` | 9 | **APARTADO** |
+| 18 | `cap_03` | `P14` | `casar_flujo_fabricacion_flujo_ventas` | 12 | entra |
+| 19 | `cap_03` | `P15` | `dimensionar_plantilla_administrativa_pronostico` | 7 | entra |
+| 20 | `cap_03` | `P17` | `decidir_aceptar_rechazar_material_defectuoso` | 8 | entra |
+| 21 | `cap_03` | `P18` | `elegir_inspeccion_barrera_monitorizacion` | 12 | entra |
+| 22 | `cap_03` | `P19` | `variar_frecuencia_inspeccion_nivel_calidad` | 6 | entra |
+| 23 | `cap_03` | `P23` | `simplificar_trabajo_reducir_numero_pasos` | 7 | entra |
+
+### EE.2.b. El reparto por capitulo, y los `6` que `d005` aparta
+
+<!-- TALLADO: salida=.v43/frontera.txt -->
+
+| capitulo | en bandeja | apartados por `d005` | utiles |
+|---|---:|---:|---:|
+| `cap_01` | 1 | 0 | 1 |
+| `cap_02` | 7 | 0 | 7 |
+| `cap_03` | 15 | 6 | 9 |
+| **TOTAL** | **23** | **6** | **17** |
+
+> **LOS SEIS, NOMBRADOS UNO A UNO, y no salen de la deuda sino de los informes que la deuda cita.**
+> `d005` dice *de los `15` candidatos de `cap_03`, su aduana en seco dijo `9` ENTRARIAN y `6`
+> BLOQUEARIAN*, **pero no los nombra**. Los leo de los quince informes que la linea `grove` dejo en
+> `.v2g/`, uno por candidato, y son los que la columna `d005` marca arriba:
+> `emparejar_indicadores_efecto_contraefecto`, `elegir_indicador_salida_trabajo_administrativo`,
+> `construir_indicador_tendencia_patron`, `construir_grafico_escalonado_pronosticos`,
+> `archivar_indicadores_resolver_problemas` y `elegir_fabricar_pedido_pronostico`.
+>
+>     $ for f in .v2g/informe_*.txt; do grep -oE "^\[BLOQUEARIA\] \w+" $f; done
+>     (PATRON: .v2g/informe_*.txt)
+>
+> **`9` utiles de `cap_03`, que es la cifra que `d005` escribe.** Cuadra.
+
+### EE.2.c. El orden del libro, que no lo elijo yo
+
+**EL ORDEN ES EL DEL LIBRO Y SU UNIDAD ES LA PIEZA DE LA FRONTERA** (`EXTRACTOR.md` 12.3): las
+piezas van numeradas en el orden del texto, asi que `P2` entra antes que `P11` aunque dos fichas de
+`cap_02` no citen su linea. **Y primero `cap_01`, luego `cap_02`, luego `cap_03`.**
+
+<!-- TALLADO: salida=.v43/frontera.txt -->
+
+| turno | cap | pieza | candidato | esta vuelta |
+|---:|---|---|---|---|
+| 1 | `cap_01` | `P12` | `revisar_tres_preguntas_valor_carrera` | **SI** |
+| 2 | `cap_02` | `P2` | `construir_flujo_produccion_paso_limitante` | **SI** |
+| 3 | `cap_02` | `P5` | `clasificar_trabajo_proceso_montaje_prueba` | **SI** |
+| 4 | `cap_02` | `P6` | `rehacer_flujo_paso_limitante_capacidad` | **SI** |
+| 5 | `cap_02` | `P7` | `equilibrar_capacidad_personal_inventario_plazo` | **SI** |
+| 6 | `cap_02` | `P9` | `preferir_inspeccion_proceso_prueba_destructiva` | **SI** |
+| 7 | `cap_02` | `P10` | `dimensionar_inventario_materia_prima_reposicion` | **SI** |
+| 8 | `cap_02` | `P11` | `detectar_arreglar_fallo_etapa_menor_valor` | **SI** |
+| 9 | `cap_03` | `P2` | `elegir_cinco_indicadores_diarios_fabrica` | **SI** |
+| 10 | `cap_03` | `P7` | `representar_actividad_caja_negra_ventanas` | **SI** |
+| 11 | `cap_03` | `P9` | `construir_indicador_linealidad_alerta_temprana` | **SI** |
+| 12 | `cap_03` | `P14` | `casar_flujo_fabricacion_flujo_ventas` | **SI** |
+| 13 | `cap_03` | `P15` | `dimensionar_plantilla_administrativa_pronostico` | **SI** |
+| 14 | `cap_03` | `P17` | `decidir_aceptar_rechazar_material_defectuoso` | **SI** |
+| 15 | `cap_03` | `P18` | `elegir_inspeccion_barrera_monitorizacion` | **SI** |
+| 16 | `cap_03` | `P19` | `variar_frecuencia_inspeccion_nivel_calidad` | pasa a la vuelta siguiente |
+| 17 | `cap_03` | `P23` | `simplificar_trabajo_reducir_numero_pasos` | pasa a la vuelta siguiente |
+
+> # **EL TECHO DE `15` CORTA EN EL CANDIDATO `15` Y DEJA DOS FUERA, Y UNO DE LOS DOS ES EL DE `d003`.**
+>
+> **`17` utiles contra un techo de `15`.** El corte por orden de libro deja fuera
+> `variar_frecuencia_inspeccion_nivel_calidad` (`P19`) y `simplificar_trabajo_reducir_numero_pasos`
+> (`P23`).
+>
+> **Y ESO RESUELVE SOLO UNA COSA QUE IBA A TENER QUE RESOLVER A MANO:** `d003` manda *reescribir el
+> paso `6` de `variar_frecuencia_inspeccion_nivel_calidad` ANTES de que pase la aduana*, porque le
+> han puesto una cabeza que el libro no encarga. **Es un PUENTE declarado, o sea guarda de dato**, y
+> ese candidato no podia entrar hoy sin repararlo. **Por el orden del libro cae fuera del techo el
+> solo**, asi que no lo inserto y no lo toco: se repara en la vuelta de SANEAMIENTO, que es su sitio.
+
+### EE.2.d. **LA RELECTURA DE FIDELIDAD `D.30` DE LOS QUINCE, ANTES DE LA PRIMERA INSERCION**
+
+*Salida de `python .v43/fidelidad.py`, guardada entera en `.v43/fidelidad_tanda.txt`. **Son `124`
+lineas de paso con su cita pegada y aqui va el resumen; el fichero las lleva las `124`.***
+
+<!-- TALLADO: parcial salida=.v43/fidelidad_tanda.txt -->
+
+    ==============================================================================
+    LA TANDA ENTERA
+      candidatos releidos : 15
+      pasos releidos      : 124
+      TRANSCRIPCION       : 124
+      PUENTE              : 0
+      PASOS INVENTADOS    : 0.00 por ciento
+    ==============================================================================
+
+**LA CLASE DE CADA PASO LA PONGO YO LEYENDO EL PARRAFO DE HOY, NO LA MAQUINA.** Lo que la maquina
+hace es pegar al lado la linea del libro de la que digo que sale (`D.35`) y **parar si mi tabla no
+tiene tantas filas como pasos tiene la ficha**. Abri los tres capitulos enteros
+(`fuentes/grove_high_output/cap_01.md`, `cap_02.md` y `cap_03.md`) y lei los `124` pasos contra sus
+parrafos.
+
+**`0` PUENTE de `124`, y esto es lo que esa cifra SI dice y lo que NO dice.** Dice que ningun paso de
+estos quince mete destinatario, periodo ni responsable que el libro no ponga, que son las tres
+especies que el lote 1 pago trece veces. **No dice que la ficha este bien construida**: eso lo mide
+la aduana, y es otra cosa.
+
+> **Y LO DIGO CONTRA MI MISMO ANTES QUE NADIE: ESTOS PASOS NO LOS ESCRIBI YO.** La linea `grove`
+> publico su propia relectura al `0,00` por ciento, y **no la cito como prueba**: `EXTRACTOR.md` 5
+> dice que un reporte anterior nunca es fuente de una cifra nueva. **Esta es mi lectura, con mis
+> tres capitulos abiertos hoy, y coincide con la suya.** Que dos manos den la misma cifra vale mas
+> que una sola; que yo copiara la suya no habria valido nada.
 
 ## EE.3. TAREA 3. **LA INSERCION, UNA FILA CADA VEZ QUE UN CANDIDATO ENTRA**
 
