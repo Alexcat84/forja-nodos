@@ -42097,3 +42097,4 @@ el encargo manda y lo que las vueltas 40 y 41 no hicieron.
 | `16` | `calibrar_notas_reunion_jefes_pares` | `15` | `14` | `1` cableada: la **`D.37`** con su cabeza (paso `10`). **Serie `9` de `13`** | `341` |
 | `17` | `evaluar_desempenio_dos_veces_anio` | `11` | `14` | `1` cableada: la **`D.37`** con su cabeza (paso `11`). **Serie `10` de `13`** | `342` |
 | `18` | `montar_evaluacion_360_grados_ligera_pares` | `10` | `14` | `1` cableada: la **`D.37`** con su cabeza (paso `12`). **Serie `11` de `13`** | `343` |
+| `19` | `hacer_critica_pares_transparente_ensenar_escribirla` | `11` | `13` | `1` cableada: la **`D.37`** con su cabeza (paso `13`). **Serie `12` de `13`** | `344` |

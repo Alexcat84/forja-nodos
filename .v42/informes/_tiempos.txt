@@ -51,3 +51,7 @@
 16:09:45 termina insercion candidato 17
 16:11:13 arranca insercion candidato 18 (montar_evaluacion_360_grados_ligera_pares)
 16:14:14 termina insercion candidato 18
+16:15:33 arranca insercion candidato 19 (hacer_critica_pares_transparente_ensenar_escribirla)
+16:19:22 termina insercion candidato 19
+16:19:55 arranca insercion candidato 19 (hacer_critica_pares_transparente_ensenar_escribirla)
+16:23:59 termina insercion candidato 19
