@@ -41933,3 +41933,147 @@ dentro**, y crece **una fila cada vez que uno entra**, en su propio commit.
 | `1` | `abrazar_incomodidad_silencio_contar_seis` | `12` | | | |
 | `2` | `escuchar_entender_critica_dominar_defensa` | `13` | | | |
 | `3` | `premiar_franqueza_hacer_escucha_tangible` | `20` | | | |
+
+---
+
+# VUELTA 42, lote 4 (`scott_radical_candor`), `cap_13` y `cap_14`: **VUELTA DE INSERCION PURA** (`D.55`)
+
+*Linea **serial**, `extraccion-mundo-11`. El encargo abre sin una sola tarea de reparacion y
+esta seccion abre con el, ANTES de la primera insercion (`EXTRACTOR.md` 3).*
+
+## ED.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+### ED.0.a. La identidad, leida de `git` y no tecleada (`EXTRACTOR.md` 5)
+
+*Salida de `git`, guardada en `.v42/identidad_apertura.txt`.*
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git rev-parse HEAD
+    671b6f3d45d7441d19e148e6fb672f6067265366
+    $ git log -1 --format=%h%x20%ad --date=iso
+    671b6f3 2026-09-18 10:31:04 -0400
+    $ date
+    2026-09-18 10:37:25
+
+**El commit `671b6f3` es el primero de mi turno** y no trae trabajo mio: es lo pendiente del arnes
+(`loop.log` y `ultimo_extractor.json`) commiteado y pusheado **antes de tocar nada**, que es el
+paso 1 de `EXTRACTOR.md` 1.
+
+### ED.0.b. El estado del dato, contado del dato
+
+*Salida de `python .v42/estado.py`, guardada en `.v42/estado_apertura.txt`.*
+
+| sede | al abrir |
+|---|---:|
+| `dataset/nodos.jsonl` | 325 |
+| `bitacora/VEREDICTOS.jsonl` | 514 |
+| `cuarentena/scott_radical_candor` | 20 |
+| `cuarentena/_insertados/scott_radical_candor` | 122 |
+| `cuarentena/grove_high_output` | 23 |
+
+**`122` de `142` insertados, quedan `20`, y con ellos el lote 4 cierra.** La bandeja por capitulo
+sale `cap_13 5, cap_14 15`. Los `23` de `grove_high_output` **no se tocan esta vuelta** (`D.51`).
+
+### ED.0.c. Las guardas de `EXTRACTOR.md` 6, corridas por mi al abrir
+
+*Salida de los instrumentos, guardada en `.v42/guardas_apertura.txt`.*
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 325
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py
+      total: 305 pruebas, 0 fallos, 0 errores
+    $ python forja.py resolutor
+    nodos vivos: 325
+
+**LAS CUATRO EN VERDE, Y ESO ES LO UNICO QUE ME PODIA BLOQUEAR.** El encargo lo escribe: *lo unico
+que te puede bloquear es una guarda de DATO en rojo*. Ninguna lo esta.
+
+**EL CERROJO, comprobado antes de la primera insercion:** `ls -la procesos/` sale **vacio**, asi que
+**no hay ninguna corrida viva escribiendo el dataset** y el turno arranca limpio.
+
+### ED.0.d. La deuda, que NO bloquea (`D.55`)
+
+*Salida de `python scripts/deuda.py`, guardada en `.v42/deuda_apertura.txt`.*
+
+    pendientes: 7    pagadas: 0
+    ultima vuelta de saneamiento: ninguna todavia
+
+**Las siete siguen escritas con su cita y su vuelta de origen, y ninguna se paga hoy**: esta es una
+vuelta de INSERCION y la deuda se paga en una de SANEAMIENTO. **No abro ninguna de las siete.**
+
+### ED.0.e. La cola de aristas, al abrir
+
+*Salida de `python .v42/cola_aristas.py`, guardada en `.v42/cola_apertura.txt`.*
+
+    lineas con arista_en_cola: true            : 16
+    de ellas, YA CABLEADAS en el grafo         : 12
+    esperan a un extremo que no ha entrado     : 4
+    con LOS DOS extremos dentro y SIN cable    : 0   <-- tiene que salir 0
+
+**LAS CUATRO QUE ESPERAN SON CUATRO DE MIS CINCO CANDIDATOS DE `cap_13`**, las cuatro con la misma
+madre `pedir_critica_primero_crear_seguridad_psicologica` (lineas `490`, `492`, `494` y `495` de la
+bitacora), **y se cablean en el acto en que cada hijo entre.** El `0` de la cuarta fila es el que
+tiene que seguir saliendo `0` al cerrar.
+
+### ED.0.f. **ESTA VUELTA NO TRAE SALDO DE LOTE, Y LO DIGO EN VEZ DE INVENTARLO** (`D.43`)
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt
+      no existe
+
+El arnes **no ha entregado informe de lote sellado** ni cola de vecinos sellada por candidato.
+`D.43` manda exactamente esto: *si el prompt no te entrega ningun informe, no lo inventes y no lo
+lances, y declara en tu reporte que la vuelta no trae saldo de lote.* **Asi queda declarado.** El
+informe de UN candidato suelto sigue siendo mio y lo corro yo, que es la mitad de `D.43` que nunca
+se me quito.
+
+## ED.1. EL ESQUELETO DE LAS TAREAS, ABIERTO ANTES DE LA PRIMERA (`EXTRACTOR.md` 3)
+
+**El encargo trae UNA sola tarea**, y por eso este esqueleto tiene una fila.
+
+| # | tarea | estado al cerrar |
+|---:|---|---|
+| `1` | **`cap_13` y `cap_14` hasta donde llegue**, un candidato por vez, por la aduana, con su veredicto, y las aristas cableadas en el mismo acto | |
+
+## ED.2. **EL ORDEN DEL LIBRO, PUBLICADO ANTES DE LA PRIMERA INSERCION** (`EXTRACTOR.md` 12.3)
+
+*Salida de `python .v42/orden.py`, guardada en `.v42/orden_apertura.txt`.*
+
+    #    cap     rotulo pasos  id
+    1    cap_13  L199   13     escuchar_entender_critica_dominar_defensa
+    2    cap_13  L215   20     premiar_franqueza_hacer_escucha_tangible
+    3    cap_13  L235   13     integrar_peticion_critica_rutina_existente
+    4    cap_13  L247   20     dar_elogio_disciplina_igual_critica
+    5    cap_13  L289   33     medir_critica_respuesta_oyente_brujula
+    6    cap_14  L21    12     montar_equipo_gestion_desempenio_revisar_sistema
+    7    cap_14  L35    14     recorrer_trece_elementos_proceso_evaluacion_formal
+    8    cap_14  L65    8      decidir_poner_nota_comunicar_proposito_limites
+    9    cap_14  L73    15     elegir_categorias_nota_palabras_propias_empresa
+    10   cap_14  L95    7      escribir_escaleras_puesto_evitar_dos_extremos
+    11   cap_14  L99    12     fijar_cuatro_notas_calcular_nota_global
+    12   cap_14  L117   10     elegir_palabras_nota_definirlas_empresa_entera
+    13   cap_14  L125   16     aplicar_consecuencias_nota_apoyar_fuerzas_persona
+    14   cap_14  L143   9      repartir_notas_publicar_reparto_esperado
+    15   cap_14  L153   11     presionar_curva_notas_evitar_forzarla
+    16   cap_14  L171   15     calibrar_notas_reunion_jefes_pares
+    17   cap_14  L187   11     evaluar_desempenio_dos_veces_anio
+    18   cap_14  L197   10     montar_evaluacion_360_grados_ligera_pares
+    19   cap_14  L205   11     hacer_critica_pares_transparente_ensenar_escribirla
+    20   cap_14  L221   13     mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+    TOTAL: 20 candidatos
+
+**EL ORDEN NO LO ELIJO YO: LO ELIGE EL LIBRO.** La columna `rotulo` es la linea del rotulo bajo el
+que cada candidato dice haber salido, leida de su propio `resumen_teorico`, y el orden es el de esa
+linea dentro de su capitulo. **Importa porque el primero que entra cambia lo que el segundo mide**
+(`EXTRACTOR.md` 12.3).
+
+## ED.3. **LA INSERCION, ABIERTA CON `325` NODOS Y CERO CANDIDATOS DE ESTA VUELTA DENTRO**
+
+**Esta seccion crece UNA FILA CADA VEZ QUE UN CANDIDATO ENTRA, en su propio commit**, que es lo que
+el encargo manda y lo que las vueltas 40 y 41 no hicieron.
+
+| # | candidato | pasos | veredictos | aristas | nodos al cerrar su fila |
+|---:|---|---:|---:|---|---:|
