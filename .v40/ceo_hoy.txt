@@ -1,0 +1,17 @@
+    $ git show c6b2e94:dataset/nodos.jsonl > .v40/nodos_c6b2e94.jsonl
+    $ wc -l < .v40/nodos_c6b2e94.jsonl
+324
+    $ grep -o -iE "\bceo\b" .v40/nodos_c6b2e94.jsonl | wc -l
+4
+    $ grep -o -i 'consejero delegado' .v40/nodos_c6b2e94.jsonl | wc -l
+43
+    $ wc -l < .v40/nodos_e3950c6.jsonl
+321
+    $ grep -o -iE "\bceo\b" .v40/nodos_e3950c6.jsonl | wc -l
+0
+    $ grep -o -i 'consejero delegado' .v40/nodos_e3950c6.jsonl | wc -l
+39
+    $ grep -o -iE "\bceo\b" dataset/nodos.jsonl | wc -l          # el arbol de trabajo, YA con mi correccion dentro
+9
+    $ grep -o -i 'consejero delegado' dataset/nodos.jsonl | wc -l
+45

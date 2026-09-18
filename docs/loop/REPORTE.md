@@ -40807,3 +40807,166 @@ los dos que NO entran (`490`, `494`)**. **Mi trabajo de hoy es que siga saliendo
 **La serie va `AA`, `AB`, `AC`, `BC`, `CC`, y la ultima usada es `CC` (vuelta 39).** La siguiente por esa
 misma progresion es **`DC`**, y es la que abro. **La seccion de la insercion sera `DC.6`**, que es el `.6`
 que el encargo pide **por su numero y no por sus letras**.
+
+## DC.2. **TAREA 1.A, BLOQUEANTE: LOS DOS `U+0008` DE `dataset/nodos.jsonl`, CORREGIDOS POR ANEXION Y NO RETIRADOS**
+
+**Es la caida `DATO MOVIDO` que la `ACTA 38` me pone en `1 de 2`, y es la primera operacion de mi turno
+despues del commit del arnes.** El encargo me da la causa escrita y no la reabro: la ficha se corrigio
+**en bandeja** con `.v39/corregir_cand1.py` porque `forja.py corregir` **solo actua sobre nodos ya
+insertados**, el script escribia la secuencia de escape de Python y al JSON llegaron dos controles.
+
+### DC.2.a. **EL BARRIDO DE CONTROL, ANTES DE TOCAR NADA: `4` CONTROLES Y NINGUNO FUERA DE ESE NODO**
+
+**El barrido mira los VALORES DECODIFICADOS y no el fichero crudo**, que es lo que el encargo pide: un
+escape JSON de seis letras es texto legal dentro del fichero y **no** es un control dentro del valor.
+
+<!-- TALLADO: script=.v40/barrido_control.py salida=.v40/barrido_control_antes.txt -->
+
+    $ python .v40/barrido_control.py
+      dataset/nodos.jsonl                       :   324 registro(s), 2 control(es)
+      bitacora/VEREDICTOS.jsonl                 :   506 registro(s), 0 control(es)
+      config/pares_mutuos.jsonl                 :     1 registro(s), 0 control(es)
+      censos/                                   :     7 fichero(s), 0 control(es)
+      cuarentena/                               :   518 fichero(s), 2 control(es)
+
+      ficheros y registros mirados: 1356
+      CONTROLES ENCONTRADOS       : 4
+
+      U+0008  en linea 322  campo resumen_teorico  posicion 5162
+              sede: dataset/nodos.jsonl
+              id  : pedir_critica_primero_crear_seguridad_psicologica
+      U+0008  en linea 322  campo resumen_teorico  posicion 5166
+              sede: dataset/nodos.jsonl
+              id  : pedir_critica_primero_crear_seguridad_psicologica
+      U+0008  en fichero  campo resumen_teorico  posicion 5162
+              sede: cuarentena/_insertados/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json
+              id  : pedir_critica_primero_crear_seguridad_psicologica
+      U+0008  en fichero  campo resumen_teorico  posicion 5166
+              sede: cuarentena/_insertados/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json
+              id  : pedir_critica_primero_crear_seguridad_psicologica
+
+**`4` controles, los `4` `U+0008`, los `4` en el mismo campo del mismo nodo y en las mismas dos
+posiciones**: `5162` y `5166` del `resumen_teorico`, una vez en `dataset/nodos.jsonl` y otra vez en su
+copia archivada de `cuarentena/_insertados/scott_radical_candor/`. **Es exactamente lo que el encargo
+anuncia, y sobre `1.357` registros y ficheros mirados no sale ninguno mas.** `bitacora/VEREDICTOS.jsonl`,
+`config/pares_mutuos.jsonl` y `censos/` salen a cero.
+
+### DC.2.b. **LA CORRECCION DECLARADA, CON SU SALIDA PEGADA**
+
+<!-- TALLADO: parcial salida=.v40/correccion_1a.txt -->
+
+    $ python forja.py corregir --nodo pedir_critica_primero_crear_seguridad_psicologica         --anade "$(cat .v40/anade_1a.txt)" --razon "$(cat .v40/razon_1a.txt)"
+    CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+      nodo : pedir_critica_primero_crear_seguridad_psicologica
+      campo: resumen_teorico
+      el texto viejo SIGUE ENTERO: 6741 caracteres, ninguno borrado
+      se aniaden 2023 caracteres al final
+      huella antes  : bdf8b8932603d104
+      huella despues: d228fe61d4d02678
+
+    GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: pedir_critica_primero_crear_seguridad_psicologica
+      razon en bitacora/VEREDICTOS.jsonl
+
+**El texto viejo sigue entero, `6741` caracteres y ninguno borrado, y debajo van `2023` mas.** Es como
+corrige esta casa. **Y la razon queda en la bitacora**, que es su sede:
+
+<!-- TALLADO: parcial salida=.v40/bitacora_1a.txt -->
+
+    $ python -c "..." # la ultima linea de bitacora/VEREDICTOS.jsonl, la que dejo corregir
+    linea 507
+    fecha           : 2026-09-18
+    operacion       : correccion declarada del resumen_teorico (EXTRACTOR.md 2)
+    candidato       : pedir_critica_primero_crear_seguridad_psicologica
+    veredicto       : CORREGIDO
+    campos: campo, candidato, caracteres_antes, caracteres_despues, fecha, huella_candidato, huella_vecino, levantada_por, operacion, razon, senales, texto_anadido, vecino, veredicto
+
+**EL TEXTO SE PASO POR FICHERO Y NO TECLEADO EN LA LINEA DE ORDENES, Y ESO ES DELIBERADO:** la caida que
+estoy corrigiendo nacio de un texto que atraveso una capa que interpreta barras invertidas. **Antes de
+correr nada comprobe que llegaba intacto**, y lo comprobe en vez de prometerlo:
+
+    $ python -c "... repr del argumento que llega ..." "$(cat .v40/anade_1a.txt)"
+    LLEGA: 'grep -o -iE "ceo" dataset/'
+    controles: []
+    longitud: 2022
+
+### DC.2.c. **EL BARRIDO DE DESPUES: SIGUEN SIENDO `4`, Y ESO ES LO CORRECTO**
+
+<!-- TALLADO: script=.v40/barrido_control.py salida=.v40/barrido_control_despues.txt -->
+
+    $ python .v40/barrido_control.py
+      dataset/nodos.jsonl                       :   324 registro(s), 2 control(es)
+      bitacora/VEREDICTOS.jsonl                 :   507 registro(s), 0 control(es)
+      config/pares_mutuos.jsonl                 :     1 registro(s), 0 control(es)
+      censos/                                   :     7 fichero(s), 0 control(es)
+      cuarentena/                               :   518 fichero(s), 2 control(es)
+
+      ficheros y registros mirados: 1357
+      CONTROLES ENCONTRADOS       : 4
+
+      U+0008  en linea 322  campo resumen_teorico  posicion 5162
+              sede: dataset/nodos.jsonl
+              id  : pedir_critica_primero_crear_seguridad_psicologica
+      U+0008  en linea 322  campo resumen_teorico  posicion 5166
+              sede: dataset/nodos.jsonl
+              id  : pedir_critica_primero_crear_seguridad_psicologica
+      U+0008  en fichero  campo resumen_teorico  posicion 5162
+              sede: cuarentena/_insertados/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json
+              id  : pedir_critica_primero_crear_seguridad_psicologica
+      U+0008  en fichero  campo resumen_teorico  posicion 5166
+              sede: cuarentena/_insertados/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json
+              id  : pedir_critica_primero_crear_seguridad_psicologica
+
+**`4` antes y `4` despues: mi correccion no metio ni uno** (el fichero que voy a escribir lo verifique a
+cero antes de correr el comando) **y tampoco retiro ninguno**, que es lo que el encargo prohibe
+expresamente. **La copia de `cuarentena/_insertados/` no cambia y no tiene que cambiar**: es la ficha
+**tal como entro**, y `corregir` solo toca el catalogo. `bitacora/VEREDICTOS.jsonl` pasa de `506` a `507`
+registros y sigue a cero controles.
+
+### DC.2.d. **Y AQUI HAY UNA DISCREPANCIA MEDIDA QUE DECLARO EN VEZ DE COPIAR** (`EXTRACTOR.md` 5)
+
+**El encargo publica que sobre `e3950c6` y sus `321` nodos el comando da `0` y `consejero delegado` da
+`39`, y que el auditor lo comprobo. Lo he vuelto a correr y sale `0` y `39`: la cifra es cierta contra su
+corte.** Lo que el encargo no dice, y sale de correr el mismo comando **hoy**, es que **contra el arbol de
+hoy ya no da `0`**.
+
+<!-- TALLADO: parcial salida=.v40/ceo_hoy.txt -->
+
+    $ git show c6b2e94:dataset/nodos.jsonl > .v40/nodos_c6b2e94.jsonl
+    $ wc -l < .v40/nodos_c6b2e94.jsonl
+324
+    $ grep -o -iE "\bceo\b" .v40/nodos_c6b2e94.jsonl | wc -l
+4
+    $ grep -o -i 'consejero delegado' .v40/nodos_c6b2e94.jsonl | wc -l
+43
+    $ wc -l < .v40/nodos_e3950c6.jsonl
+321
+    $ grep -o -iE "\bceo\b" .v40/nodos_e3950c6.jsonl | wc -l
+0
+    $ grep -o -i 'consejero delegado' .v40/nodos_e3950c6.jsonl | wc -l
+39
+    $ grep -o -iE "\bceo\b" dataset/nodos.jsonl | wc -l          # el arbol de trabajo, YA con mi correccion dentro
+9
+    $ grep -o -i 'consejero delegado' dataset/nodos.jsonl | wc -l
+45
+
+| corte | nodos | `ceo` | `consejero delegado` |
+|---|---:|---:|---:|
+| `e3950c6`, antes de la correccion de la vuelta 39 | `321` | **`0`** | **`39`** |
+| `c6b2e94`, mi apertura de hoy | `324` | **`4`** | **`43`** |
+| el arbol de trabajo, con mi correccion de `DC.2.b` ya dentro | `324` | **`9`** | **`45`** |
+
+**LOS `4` DE MI APERTURA SON LOS `4` DEL MISMO NODO, Y NINGUNO ES LA GRAFIA DE UN NODO:** dos citan la
+linea `109` del libro en su ingles y dos son la palabra nombrada dentro de la prosa de las correcciones.
+**Lo comprobe nodo a nodo y `322` es el unico que los tiene.**
+
+> **LO QUE ESTO ENSENIA, Y NO LO ADJUDICO YO:** una correccion que publica un comando **cuya salida depende
+> del texto de la propia correccion** deja de reproducir su cifra en el momento en que se escribe. **Mi
+> propia correccion de hoy acaba de mover ese `4` a `9`.** Por eso el texto que escribi **lleva su corte
+> dentro** (`sobre los 324 nodos del arbol c6b2e94`) y no promete el numero a secas.
+>
+> **VA MARCADO COMO DISCUTIBLE** (`DC.5.d`, punto `1`). **No abro pregunta nueva de doctrina**: el encargo
+> dice que esta vuelta no sube ninguna, y lo que roza es la pregunta `4` que ya esta en la cola.
+
+**NO ES `CIFRA PUBLICADA` Y LO DIGO ANTES DE QUE ME LO PREGUNTEN:** las tres filas de arriba **llevan su
+corte escrito al lado**, que es lo que `EXTRACTOR.md` 4 pide de toda cifra de estado. Lo que declaro es que
+**el `0` de la vuelta 39 solo se reproduce sobre `e3950c6`**, y eso ahora esta escrito dentro del nodo.
