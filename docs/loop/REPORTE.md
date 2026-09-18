@@ -39932,3 +39932,351 @@ que la `TAREA 3.A` manda cablear y las tres que van A COLA.
 | **3** | `cap_13`, tres candidatos en el orden del libro, uno por vez, con sus aristas | *abierta* |
 | **4** | `CC.6` abierta ANTES de la primera insercion, una fila por candidato en el acto | *abierta* |
 | **cierre** | guardas, cifras recomputadas, cola de aristas recontada, discutibles | *abierta* |
+
+## CC.2. **TAREA 1.A, BLOQUEANTE: LAS DOS PRUEBAS DEJAN DE CLAVAR EL `6` Y LEEN SU SEDE**
+
+**Es la primera operacion de mi turno tras el commit del arnes**, porque si la vuelta cierra con la
+suite en rojo se cumple la condicion de fallo tecnico repetido de `AUDITOR_FORJA.md` 3 **y el bucle
+para**. El encargo me da la causa escrita y no la reabro: la `TAREA 4` de la vuelta 38 mando subir la
+cola de `6` a `8`, **dos pruebas clavaban el `6`**, y la suite se puso en rojo **por obedecer**.
+
+**LO QUE TOQUE, Y SOLO ESTO:** `tests/test_aceptacion.py`, las dos aseveraciones de
+`PruebaColaDeDoctrina`. **Ni `src/`, ni el banco, ni los protocolos** (`D.45`). **Ni una guarda nueva**:
+`7.F` de la cosecha veda arneses, guardas y lectores **nuevos**, y esto es reparar una aseveracion que
+ya existia y que este bucle rompio.
+
+| | antes | ahora |
+|---|---|---|
+| **la cuenta** | `assertEqual(len(cola), 6)`, una constante | `assertEqual(len(cola), len(preguntas))`, contra `config/frentes.json` |
+| **que mas comprueba** | `pregunta` y `medida_en` no vacios | eso, **mas** que `bloquea` sea de verdad un `bool` y que los `n` salgan en el mismo orden que su sede |
+| **el volcado** | `assertEqual(len(escritas), 6)`, otra constante | contra la misma sede, **que es lo que la regla de verdad exige**: que el tablero sirva lo que su sede tiene |
+| **el nombre** | `test_la_cola_del_repo_trae_las_seis_con_su_medida` | `test_la_cola_del_repo_trae_las_de_su_sede_con_su_medida`. **Un nombre que dice `seis` es la misma constante clavada, escrita en otro sitio** |
+
+**LA SUITE, EN VERDE Y CON SU SALIDA PEGADA:**
+
+<!-- TALLADO: parcial salida=.v39/aceptacion_1a_tabla.txt -->
+
+    $ python tests/test_aceptacion.py
+      D.53, la cola de doctrina vive en el tablero: 5 pruebas mas
+      total: 294 pruebas, 0 fallos, 0 errores
+
+### CC.2.a. **Y LA COMPRUEBO POR MUTACION, porque una prueba que no muerde no es una prueba**
+
+*El remedio mecanico de `D.35` aplicado a una aseveracion: **no prometo que muerde, la hago morder.***
+
+**PRIMERA MUTACION: le quito al volcado una fila de doctrina** (el volcado dice `9`, la sede dice `10`).
+
+<!-- TALLADO: parcial salida=.v39/mutacion_tablero.txt -->
+
+    $ python -m unittest tests.test_aceptacion.PruebaColaDeDoctrina -v   # con el volcado mutado, una fila de doctrina menos
+    ======================================================================
+    FAIL: test_la_cola_esta_escrita_en_el_tablero_del_arbol (tests.test_aceptacion.PruebaColaDeDoctrina.test_la_cola_esta_escrita_en_el_tablero_del_arbol)
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "C:\Users\AlexDesk\Documents\forja-nodos\tests\test_aceptacion.py", line 3850, in test_la_cola_esta_escrita_en_el_tablero_del_arbol
+        self.assertEqual(len(escritas), len(self._preguntas_de_la_sede()))
+    AssertionError: 9 != 10
+
+**SEGUNDA MUTACION: le vacio el `medida_en` a la pregunta `3` de la sede.**
+
+<!-- TALLADO: parcial salida=.v39/mutacion_medida.txt -->
+
+    $ python -m unittest tests.test_aceptacion.PruebaColaDeDoctrina   # con la pregunta 3 de la sede sin medida_en
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "C:\Users\AlexDesk\Documents\forja-nodos\tests\test_aceptacion.py", line 3844, in test_la_cola_del_repo_trae_las_de_su_sede_con_su_medida
+        self.assertTrue(fila["medida_en"], fila)
+    AssertionError: '' is not true : {'tipo': 'doctrina', 'n': 3, 'pregunta': "Una cifra en denominaciones.nombre_largo que el libro no escribe: 'las cuatro conversaciones' donde L95 nombra tres. Segunda vuelta seguida con la figura, y las dos veces se registro sin cargar, porque D.30 cuenta pasos.", 'medida_en': '', 'bloquea': False, 'levantada_por': 'el auditor de la ACTA 32, linea serial, sobre la vuelta 33', 'cita': 'decision del fundador del 17 sep 2026, punto 4', 'cuando_se_resuelve': 'Se resuelven cuando el mundo 11 cierre, salvo que alguna bloquee a una linea, y entonces sube sola.'}
+
+**Las dos mordieron y las dos se restauraron en el acto**, comprobado con `git diff --stat` sobre
+`docs/loop/TABLERO.jsonl` y `config/frentes.json`: **cero lineas de diferencia tras restaurar.**
+
+> **LO QUE ESTA REPARACION NO PUEDE COMPROBAR, Y LO DIGO YO:** que la cuenta salga de la sede significa
+> que **si maniana alguien sube una pregunta a la cola, la suite NO se pone en rojo**. Eso es lo que se
+> queria. **Pero tampoco se pondra en rojo si alguien BORRA una**, mientras el volcado la borre tambien.
+> La prueba que faltaria para eso es una que clave un minimo, **y no la escribo**: seria la guarda nueva
+> que `7.F` veda y que el encargo me prohibe por su nombre. **Queda dicho, no hecho.**
+
+## CC.3. **TAREA 1.B: LA CIFRA QUE YA ENTRO, Y LAS DOS QUE ENTRABAN SI NO LAS TOCO**
+
+### CC.3.a. **LA QUE YA ESTA DENTRO DEL CATALOGO**, corregida con el instrumento que existe para eso
+
+`practicar_triangulo_critica_tres_papeles` afirma, **dentro de `dataset/nodos.jsonl`**, que ese fichero
+tiene `318` nodos.
+
+<!-- TALLADO: parcial salida=.v39/cifra_318.txt -->
+
+    $ wc -l dataset/nodos.jsonl
+    321 dataset/nodos.jsonl
+    $ PYTHONIOENCODING=utf-8 python .v39/acentos.py
+    nodos en dataset/nodos.jsonl                     : 321
+    caracteres NO ASCII, todos                       : 169
+      U+00ED LATIN SMALL LETTER I WITH ACUTE      x1
+      U+00F1 LATIN SMALL LETTER N WITH TILDE      x167
+      U+00FC LATIN SMALL LETTER U WITH DIAERESIS  x1
+    caracteres ACENTUADOS (tilde aguda o dieresis)   : 2
+      conducir_entrevista_cronologica_trayectoria    í   ...dole como creia que se medía su exito ...
+
+**Los `318` eran los nodos de ANTES de que entraran los tres de la vuelta 38, este incluido**, asi que
+el nodo se citaba a si mismo desde un arbol en el que todavia no estaba.
+
+**LA OTRA MITAD DE LA FRASE SE SOSTIENE Y NO LA TOCO**, y la recuento yo en vez de heredarla: los
+caracteres acentuados vivos siguen siendo **`2`**, la `i` con tilde de *media* y la `u` con dieresis de
+*averguenza*, escritas ahi arriba con su acento porque es de lo que va la cuenta. **La enie no es
+acento y por eso sus `167` apariciones quedan fuera**, que es la unica decision que este instrumento
+toma y va escrita en su cabecera.
+
+    $ python forja.py corregir --nodo practicar_triangulo_critica_tres_papeles --anade "CORRECCION DECLARADA ..." --razon "..."
+    CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+      nodo : practicar_triangulo_critica_tres_papeles
+      campo: resumen_teorico
+      el texto viejo SIGUE ENTERO: 1951 caracteres, ninguno borrado
+      se aniaden 1022 caracteres al final
+      huella antes  : eec451c2e48944c6
+      huella despues: 5aebf76b97831357
+
+    GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: practicar_triangulo_critica_tres_papeles
+      razon en bitacora/VEREDICTOS.jsonl
+
+**Los veredictos suben de `486` a `487` por esta correccion**, y esa linea es la unica que mueve la
+bitacora antes de la primera insercion.
+
+### CC.3.b. **LAS DOS QUE NO HAN ENTRADO, ARREGLADAS MIENTRAS SIGUEN SIENDO BANDEJA**
+
+**LA PRIMERA, la cifra que justifica la grafia de `P15`:**
+
+<!-- TALLADO: parcial salida=.v39/grafia_ceo.txt -->
+
+    $ grep -o -i "consejero delegado" dataset/nodos.jsonl | wc -l
+    39
+    $ grep -o -iE "\bceo\b" dataset/nodos.jsonl | wc -l
+    0
+
+**`39` contra `0`, no `36` contra `1`. La grafia que esa cifra sostiene es la buena y `P15` no se
+toca**: lo que estaba mal era el numero citado para justificarla, y **hoy la sostiene con mas holgura
+que entonces**, porque `ceo` no aparece ni una sola vez en el catalogo.
+
+**LA SEGUNDA, la cifra vieja que se lee como vigente.** El campo dice *17 pasos, 17 TRANSCRIPCION, 0
+PUENTE* y, unas frases despues, *DOS defectos*. **Las dos son ciertas en momentos distintos y el campo
+no dice cual es cual**, que es justo la especie que ninguna guarda caza. **Lo que hubo, en orden:** la
+relectura de la vuelta 38 encontro `2` `PUENTE` (`P06` y `P15`), los dos se reescribieron contra sus
+lineas, y el `17 de 17` vale para el nodo **ya corregido**, no para el que se releyo.
+
+**LAS DOS SE ARREGLAN POR ANEXION Y SIN BORRAR NADA**, que es como corrige esta casa, y **antes de que
+ese campo sea `CIFRA PUBLICADA` en sede duradera** (`AUDITOR_FORJA.md` 5.2):
+
+    $ python .v39/corregir_cand1.py
+    resumen_teorico: 4764 caracteres antes, 6741 despues, 1977 aniadidos, 0 borrados
+
+**Y UNA TERCERA QUE NO ME PIDE EL ENCARGO Y SALE DE MI PROPIA RELECTURA:** la cita de `P17` estaba
+**corta**. Decia *P17 de la linea 113*, y la `113` solo trae la CUENTA (*each of the four tips for
+soliciting criticism*); **los cuatro nombres que el paso escribe salen de la `237`**, que es la unica
+linea del capitulo que los nombra uno a uno. **El paso no cambia: cambia su cita, que estaba
+incompleta.**
+
+    $ sed -n '237p' fuentes/scott_radical_candor/cap_13.md | cut -c1-105
+    237: Now that you've practiced the four elements of soliciting criticism-coming up with a go-to question,
+
+## CC.4. **TAREA 1.C: LA SEDE QUE NO EXISTIA, REPARADA EN LA CELDA Y SOLO EN LA CELDA**
+
+`CIFRA PUBLICADA` esta en `1 de 2` por esto y **no lo discuto**: `config/` es sede, y una ruta ofrecida
+como evidencia de una corrida que no existe es cosecha `7.B`.
+
+<!-- TALLADO: parcial salida=.v39/frentes_1c.txt -->
+
+    $ grep -n "BC.7" config/frentes.json
+    147:        "pregunta": "Una cita medida_en que ofrece como sede una seccion que aun no se ha escrito, o un fichero que se reescribe cada vuelta. Esta cola ofrecia REPORTE.md BC.7 y BC.7 nunca se escribio; y ofrece APERTURA_CIEGA.md 13.2, que es un fichero que el arnes sobreescribe en cada vuelta. Es la pregunta 4 de esta misma cola vista desde config/.",
+    $ python -c "import json; print(json.load(open(\"config/frentes.json\",encoding=\"utf-8\"))[\"cola_de_doctrina\"][\"preguntas\"][6][\"medida_en\"])"
+    REPORTE.md AC.7 (vuelta 37); encargo de la vuelta 38, tarea 4.1
+
+**`BC.7` sale de la celda `medida_en` y `AC.7` se queda**, que existe y lo compruebo:
+
+    $ grep -n "^## AC\.7" docs/loop/REPORTE.md
+    39319:## AC.7. **LA CONTRADICCION DEL LIBRO QUE LA ADUANA ME PUSO DELANTE, Y LA SUBO COMO PREGUNTA**
+
+**LO QUE NO TOQUE:** la pregunta `7` misma, ni las otras nueve. **Y `BC.7` sigue apareciendo una vez en
+el fichero**, dentro del TEXTO de la pregunta `10`, que es la que narra esta misma caida: **ahi no es
+una sede ofrecida, es el relato de la sede que fallo**, y borrarlo seria borrar la caida.
+
+**El tablero se vuelve a volcar porque yo he cambiado su sede**, que es la unica condicion con la que
+el encargo lo permite (`TAREA 1.D`): `ESCRITO: 21 fila(s) en docs/loop/TABLERO.jsonl`.
+
+## CC.5. **TAREA 1.D: LO ADJUDICADO SE RECOGE Y NO SE REABRE**
+
+*Austero (`D.47`): lo que la `ACTA 37` ya adjudico no se vuelve a argumentar aqui. Solo lo que cambia
+lo que yo hago hoy.*
+
+| lo adjudicado | que hago con ello |
+|---|---|
+| mis **seis** discutibles se sostienen los seis, **cero caidas dentro del marcado** | lo recojo. **La arista `50` se cablea hoy**, porque mi adjudicacion de `BC.5.b` quedo sostenida |
+| la fila de `PASOS INVENTADOS` la re firma el auditor: **`3` de `101`, `2,97` por ciento** en el tramo de la 38, y `cap_13` entero **`4` de `212`, que es un SUELO** | lo recojo, y **por eso mi fila de hoy dice TRAMO y no capitulo**, con los `212` escritos al lado (`CC.6.a`) |
+| el `DISCUTIBLE 1` del auditor **cae contra el auditor**: `mejorar_consciencia_propia_relacional_dos_practicas` **es nodo** | lo recojo. **`CLASE` sale LIMPIA** y la cabeza de serie sigue siendo nodo, que es lo que `D.37` presupone |
+| la cola de aristas: **`11` lineas, `11` cableadas, `0` con los dos extremos dentro y sin cable** | **lo recuento yo al abrir y me sale lo mismo** (`CC.0.e`). No lo heredo: lo remido |
+| **`REPORTE` en `2 de 3` es la caida que SI es mia** | **no la reabro.** Su remedio entero es la `TAREA 4`, y `CC.6` queda abierta antes de la primera insercion |
+| el auditor subio las preguntas `9` y `10` y volco `TABLERO.jsonl` | no lo repito. **Lo vuelvo a volcar una sola vez y solo porque yo cambie su sede** (`CC.4`) |
+
+## CC.6. **LA SECCION DE LA INSERCION, ABIERTA ANTES DE QUE ENTRE EL PRIMER CANDIDATO** (`TAREA 4`)
+
+> **ESTO ES LO QUE ARREGLA LA RACHA, Y POR ESO VA AQUI Y NO AL FINAL.** `REPORTE` esta en `2 de 3`. Las
+> dos ultimas vueltas entregaron trabajo bueno y **murieron antes de la linea que lo cuenta**. Asi que
+> la seccion se abre **ahora**, con la fidelidad y los discutibles dentro, **y la tabla de insercion
+> crece una fila cada vez que un candidato entra**, no al cerrar. **Si el reloj me corta en el
+> candidato `2`, lo que falta es una linea, no una seccion.**
+
+### CC.6.a. **TAREA 2, BLOQUEANTE: LA FIDELIDAD `D.30` DE LOS TRES, ANTES DE QUE ENTRE NADA**
+
+`EXTRACTOR.md` 15.4. **Los `56` pasos releidos contra su linea del libro**, con el capitulo abierto al
+lado, y no una muestra.
+
+<!-- TALLADO: script=.v39/fidelidad.py salida=.v39/fidelidad_tabla.txt -->
+
+    $ python .v39/fidelidad.py
+    RELECTURA DE FIDELIDAD D.30, VUELTA 39, ANTES DE LA PRIMERA INSERCION
+      candidato                                            cap      pasos  PUENTE releidos por ciento
+      --------------------------------------------------------------------------------------------------------
+      pedir_critica_primero_crear_seguridad_psicologica    cap_13      17       0       17       0,00
+      elegir_pregunta_recurrente_pedir_critica             cap_13      24       0       22       0,00
+      resolver_dudas_frecuentes_pedir_critica              cap_13      15       0       11       0,00
+      --------------------------------------------------------------------------------------------------------
+      LA FILA DEL TRAMO                                    cap_13      56       0       50       0,00
+
+      EL DENOMINADOR, DICHO (python .v39/denominador.py): cap_13 entero son 12
+      candidatos y 212 pasos, 9 en bandeja y 3 insertados. Mi tramo son 3 de esos 12
+      y 56 de esos 212 pasos. La fila de arriba es la del TRAMO y por eso se llama asi;
+      la del capitulo NO la firmo, porque 156 de sus 212 pasos no los he releido yo.
+      techo de PASOS INVENTADOS (AUDITOR_FORJA.md 8.1): 10 por ciento. Medido: 0,00.
+      pasos releidos enteros por nombrar persona, cuenta, escalon o adjetivo de
+      sentimiento (lo que el encargo manda declarar aunque sea cero): 50 de 56.
+
+      LOS PUENTE, UNO A UNO:
+        ninguno
+
+> **CERO `PUENTE` EN `56` PASOS, Y ESO NECESITA EXPLICACION EN VEZ DE CELEBRACION.** Las dos vueltas
+> anteriores dieron `5` `PUENTE` entre `cap_12` y `cap_13`. **La diferencia no es que yo lea mejor: es
+> que estos tres ya venian releidos.** El `1` y el `2` pasaron la relectura de la vuelta 37, el `1`
+> volvio a pasarla en la 38 y **de ahi salieron sus dos `PUENTE`, ya reescritos**. Lo que mide mi `0`
+> de hoy es **una relectura de segunda pasada sobre material ya corregido**, no una primera lectura
+> limpia. **Un lote sin estrenar no tiene por que dar esta cifra.**
+
+### CC.6.b. **LOS `50` PASOS DE LA CLASE QUE EL ENCARGO MANDA RELEER ENTERA, MARCADOS POR INSTRUMENTO**
+
+*El encargo pide declarar **cuantos** relei enteros por nombrar una persona, una cuenta, un escalon o
+un adjetivo de sentimiento, **aunque sean cero**. Si la cifra la teclease yo, seria una promesa. Va
+marcada por un instrumento que se puede volver a correr, y **el veredicto de cada paso lo sigue
+poniendo la lectura**.*
+
+<!-- TALLADO: parcial salida=.v39/clase.txt -->
+
+    $ PYTHONIOENCODING=utf-8 python .v39/clase.py
+    LOS PASOS DE LA CLASE QUE EL ENCARGO MANDA RELEER ENTERA (TAREA 2)
+      marcados por el instrumento; el veredicto de cada uno lo pone la lectura
+
+      pedir_critica_primero_crear_seguridad_psicologica
+        pasos: 17 | de la clase: 17
+          P01  cuenta
+          P02  cuenta
+          P03  cuenta
+          P04  cuenta
+          P05  cuenta
+          P06  cuenta, escalon, sentimiento
+          P07  cuenta, escalon, sentimiento
+          P08  persona, cuenta, escalon, sentimiento
+          P09  sentimiento
+          P10  cuenta, escalon, sentimiento
+          P11  persona, cuenta, escalon, sentimiento
+          P12  escalon
+          P13  cuenta, escalon, sentimiento
+          P14  cuenta
+          P15  cuenta, escalon, sentimiento
+          P16  cuenta, escalon, sentimiento
+          P17  cuenta, sentimiento
+        FUERA de la clase: ninguno
+
+      elegir_pregunta_recurrente_pedir_critica
+        pasos: 24 | de la clase: 22
+          P01  sentimiento
+          P02  cuenta
+          P03  cuenta
+          P04  cuenta, escalon, sentimiento
+          P05  cuenta, sentimiento
+          P06  cuenta, escalon
+          P07  cuenta, sentimiento
+          P08  cuenta
+          P09  cuenta, sentimiento
+          P10  sentimiento
+          P11  cuenta, sentimiento
+          P12  cuenta
+          P13  cuenta, sentimiento
+          P14  escalon
+          P16  sentimiento
+          P18  sentimiento
+          P19  cuenta
+          P20  cuenta
+          P21  sentimiento
+          P22  cuenta
+          P23  cuenta, escalon
+          P24  cuenta, sentimiento
+        FUERA de la clase: P15, P17
+
+      resolver_dudas_frecuentes_pedir_critica
+        pasos: 15 | de la clase: 11
+          P01  cuenta, sentimiento
+          P03  cuenta
+          P04  cuenta
+          P06  cuenta
+          P09  cuenta, escalon, sentimiento
+          P10  escalon, sentimiento
+          P11  sentimiento
+          P12  cuenta, sentimiento
+          P13  sentimiento
+          P14  persona, cuenta, escalon, sentimiento
+          P15  cuenta, sentimiento
+        FUERA de la clase: P02, P05, P07, P08
+
+      TOTAL del tramo: 56 pasos, 50 de la clase
+
+### CC.6.c. **LAS LINEAS DEL LIBRO QUE SOSTIENEN LOS `56` PASOS, PEGADAS Y NO PROMETIDAS** (`D.35`)
+
+*La cita se pega, no se promete. Estas son las `18` lineas de `fuentes/scott_radical_candor/cap_13.md`
+de las que salen los tres candidatos, leidas hoy con `sed -n` y cortadas a `92` columnas.*
+
+<!-- TALLADO: parcial salida=.v39/citas.txt -->
+
+    $ for n in 75 87 89 107 109 113 237 119 129 133 137 139 161 171 175 179 183 185; do sed -n "${n}p" fuentes/scott_radical_candor/cap_13.md | cut -c1-92; done
+    75: There is an important order of operations to Radical Candor:
+    87: The first edition describes this order of operations, but Kim’s story of having Sheryl San
+    89: Unfortunately, the book didn’t have a similarly memorable story about a boss soliciting fe
+    107: Why is psychological safety so important at work? Over two years, a group in Google’s Peop
+    109: When leaders solicit criticism, respond constructively to it, and reward it, they begin the 
+    113: We hope a story and some research better explain why you should prove you can take it before
+    237: Now that you’ve practiced the four elements of soliciting criticism-coming up with a go-
+    119: As noted in the first edition, if you ask, “do you have any feedback for me?” the answer
+    129: Here are some attributes of good go-to questions:
+    133: Don’t ask questions that can be answered with a yes or a no. Any parent knows that asking 
+    137: Frequency. If you only ask for criticism once every six months you’ll get a recency bias i
+    139: Here are a few great questions from workshop participants. You’ll see that tone varies a l
+    161: Brainstorm a few go-to questions. Go to a trusted peer and ask them one or two of your quest
+    171: A: In general, consistency (in terms of when you solicit feedback, and the question you use)
+    175: A: First, acknowledge that you don’t know how to fix it. Ask if they can help you solve th
+    179: A: One of the most effective things you can do with any direct report, but especially with t
+    183: A: That’s normal! Nobody really wants to hear criticism. Focus on the fact that you can on
+    185: So, you might have made a few typos in an important presentation. Maybe you went on and on i
+
+### CC.6.d. **MIS DISCUTIBLES, MARCADOS ANTES DE INSERTAR NADA Y ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+*Austero (`D.47`): por numero y por linea, sin reabrir el argumento.*
+
+| # | lo que decido | por donde puede caerse |
+|---:|---|---|
+| **1** | **mis secciones van con prefijo `CC` y la seccion que el encargo llama `BC.6` la escribo como `CC.6`** | el encargo escribe `BC.6` con todas sus letras. Si el auditor lee que la letra manda, **me aparte del encargo en la unica tarea que existe para arreglar mi propia racha**, que es el peor sitio donde apartarse |
+| **2** | la reparacion de la `TAREA 1.A` **comprueba la cuenta contra su sede y NO clava un minimo** | si la regla que esas dos pruebas guardan exige que la cola **no se vacie**, mi reparacion es corta: hoy la suite sigue verde si alguien borra preguntas de la sede y del volcado a la vez. **No escribi esa guarda porque `7.F` la veda y el encargo me la prohibe por su nombre**, pero la omision es mia |
+| **3** | **`0` `PUENTE` en los `56` pasos del tramo** | es una cifra que en dos vueltas seguidas salio distinta (`5` `PUENTE` entre `cap_12` y `cap_13`). **Si el auditor encuentra uno, cae dentro de este marcado**, y el candidato mas probable es el `2`, que es el que trae `9` pasos de cita literal |
+| **4** | el `P22` del candidato `2` escribe *hacer mejor esto* donde `L157` escribe *do X better* | la `X` es un hueco que el libro deja **literalmente sin rellenar**, y yo lo relleno con *esto*. Decido que **no es `PUENTE`** porque no aniade materia; si el auditor lee que rellenar un hueco del libro es exactamente lo que `D.30` prohibe, **la fila del tramo sube de `0` a `1`** |
+| **5** | el `P11` del candidato `3` escribe *empieza por donde el texto dice que empieces* y **`L183` no da ningun punto de partida**: contesta *That's normal!* | decido que **no es `PUENTE`** porque lo que el paso encarga despues si esta en `L183`. Si el auditor lee que la frase promete una respuesta que el libro no da, **sube a `2` de `56`** |
+| **6** | los pasos `5`, `6`, `9` y `12` del candidato `2` **numeran** los cuatro atributos (*el primer atributo*, *el segundo*...) y **`L129` escribe *some attributes*, sin numerarlos ni decir cuantos** | decido que **contar una enumeracion visible no es escribir un paso**, que es la misma vara con la que el candidato `1` dice *cinco pasos numerados*. Si el auditor la estrecha, caen cuatro pasos de golpe |
+| **7** | **no toco el titulo del candidato `2`**, que dice *los cuatro atributos que el texto da* | es **la tercera aparicion de la figura de la pregunta `3` de la cola de doctrina** (una cifra en el nombre que el libro no escribe). La cuenta es cierta al contar, y por eso la dejo. **Y no subo pregunta nueva**: la que hay ya cubre la figura, y duplicarla es lo que `D.47` llama repetir lo que el registro ya dice |
+| **8** | el `resumen_teorico` del candidato `1` entra con **DOS correcciones declaradas encadenadas** y `6.741` caracteres | la casa corrige por anexion y no borra, asi que esto es lo que la regla manda. **Pero el campo ya es largo y hoy lo alargo yo**, y si el auditor decide que un campo con dos correcciones encima deja de poder leerse, **la deuda la aumente yo y no el que la abrio** |
+| **9** | **sostengo el `SANO` de `integrar_peticion_critica_rutina_existente`** tras leer sus `13` pasos, y no lo heredo a ciegas | el solape que la aduana caza es **literal**: el `P17` del candidato y el `P06` del vecino citan la **misma frase de `L237`**. Si el auditor lee que citar la misma linea hace madre e hijo, mi `SANO` cae. **Mi razon es que `L113` dice CUATRO y `build it into your existing schedule` no es ninguno de los cuatro: es lo que `L237` manda hacer DESPUES de los cuatro** |
+
+**Y UN AVISO DE ALCANCE QUE NO ES DISCUTIBLE:** el encargo pide **tres** y `cap_13` tiene **nueve** en
+bandeja. **La vuelta cierra el capitulo a un tercio a proposito** y los otros seis no se tocan.

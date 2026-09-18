@@ -1,0 +1,4 @@
+    $ grep -o -i "consejero delegado" dataset/nodos.jsonl | wc -l
+    39
+    $ grep -o -iE "\bceo\b" dataset/nodos.jsonl | wc -l
+    0

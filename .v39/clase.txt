@@ -1,0 +1,66 @@
+LOS PASOS DE LA CLASE QUE EL ENCARGO MANDA RELEER ENTERA (TAREA 2)
+  marcados por el instrumento; el veredicto de cada uno lo pone la lectura
+
+  pedir_critica_primero_crear_seguridad_psicologica
+    pasos: 17 | de la clase: 17
+      P01  cuenta
+      P02  cuenta
+      P03  cuenta
+      P04  cuenta
+      P05  cuenta
+      P06  cuenta, escalon, sentimiento
+      P07  cuenta, escalon, sentimiento
+      P08  persona, cuenta, escalon, sentimiento
+      P09  sentimiento
+      P10  cuenta, escalon, sentimiento
+      P11  persona, cuenta, escalon, sentimiento
+      P12  escalon
+      P13  cuenta, escalon, sentimiento
+      P14  cuenta
+      P15  cuenta, escalon, sentimiento
+      P16  cuenta, escalon, sentimiento
+      P17  cuenta, sentimiento
+    FUERA de la clase: ninguno
+
+  elegir_pregunta_recurrente_pedir_critica
+    pasos: 24 | de la clase: 22
+      P01  sentimiento
+      P02  cuenta
+      P03  cuenta
+      P04  cuenta, escalon, sentimiento
+      P05  cuenta, sentimiento
+      P06  cuenta, escalon
+      P07  cuenta, sentimiento
+      P08  cuenta
+      P09  cuenta, sentimiento
+      P10  sentimiento
+      P11  cuenta, sentimiento
+      P12  cuenta
+      P13  cuenta, sentimiento
+      P14  escalon
+      P16  sentimiento
+      P18  sentimiento
+      P19  cuenta
+      P20  cuenta
+      P21  sentimiento
+      P22  cuenta
+      P23  cuenta, escalon
+      P24  cuenta, sentimiento
+    FUERA de la clase: P15, P17
+
+  resolver_dudas_frecuentes_pedir_critica
+    pasos: 15 | de la clase: 11
+      P01  cuenta, sentimiento
+      P03  cuenta
+      P04  cuenta
+      P06  cuenta
+      P09  cuenta, escalon, sentimiento
+      P10  escalon, sentimiento
+      P11  sentimiento
+      P12  cuenta, sentimiento
+      P13  sentimiento
+      P14  persona, cuenta, escalon, sentimiento
+      P15  cuenta, sentimiento
+    FUERA de la clase: P02, P05, P07, P08
+
+  TOTAL del tramo: 56 pasos, 50 de la clase
