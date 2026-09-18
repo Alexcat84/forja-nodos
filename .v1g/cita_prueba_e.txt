@@ -1,0 +1,7 @@
+$ sed -n "416,419p" tests/test_aceptacion.py
+  
+      def test_e_guion_largo_rompe_el_hook(self):
+          # Caso positivo primero: sin el archivo sucio, el hook esta VERDE.
+          codigo, salida, quien = self.correr_hook()
+$ git log -1 --format="%h %ci" 6933b64
+  6933b64 2026-09-16 22:22:07 -0400

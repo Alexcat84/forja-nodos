@@ -1,0 +1,48 @@
+{
+  "id": "representar_actividad_caja_negra_ventanas",
+  "titulo": "Representar cualquier actividad como una caja negra y abrirle ventanas para ver dentro",
+  "dominio": "produccion",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [],
+  "fuentes": [
+    {
+      "clave": "grove_high_output",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "denominaciones": {
+    "nombre_largo": "La caja negra: entrada, salida y trabajo de cualquier proceso, y las ventanas que se recortan en ella para ver el funcionamiento interno y calcular la salida futura",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "black box"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "cutting windows"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "merchandising"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando tienes delante una actividad que se parece a un proceso de produccion, sea de fabrica o administrativa, y necesitas ordenarla antes de medirla, porque sin saber cuales son su entrada, su salida y su trabajo no hay indicador que colocar.",
+  "entregable_esperado": "La actividad dibujada como una caja con sus tres piezas nombradas, entrada, salida y trabajo, y las ventanas ya recortadas por donde se mira lo que pasa dentro.",
+  "pasos_accionables": [
+    "Dibuja tu actividad como una caja negra, y hazlo aunque no sea una fabrica: sirve para cualquier actividad que se parezca a un proceso de produccion.",
+    "Nombra la entrada, que es la materia prima o la informacion que entra en la caja.",
+    "Nombra la salida, que es lo que sale de la caja ya terminado.",
+    "Nombra el trabajo que entra en la caja junto con la materia prima, y cuenta dentro de el tanto el de quienes ejecutan como el tuyo de mando.",
+    "Hazlo igual con la contratacion universitaria: la entrada son los candidatos del campus, la salida son los titulados que han aceptado la oferta de empleo, y el trabajo es el de los entrevistadores del campus mas el de los mandos y tecnicos que entrevistan de vuelta en la planta.",
+    "Hazlo igual con la formacion de la fuerza de ventas: la entrada son las especificaciones crudas del producto, la salida es el personal de ventas ya formado, y el trabajo es el de la gente de marketing y de comercializacion que convierte la informacion cruda en herramientas de venta utilizables y ensena a usarlas.",
+    "Hazlo igual con un grupo que factura: la entrada es la informacion del cliente, o sea lo que ha comprado, los datos de precio y los registros de envio; la salida es la factura final que se le manda y por la que se cobra; y el trabajo es el de todo el personal implicado.",
+    "Recorta ventanas en la caja, para poder ver una parte de lo que ocurre dentro.",
+    "Mira por esas aberturas para entender el funcionamiento interno del proceso y calcular cual va a ser probablemente la salida futura."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_03.md, unidad Cap. 2, titulo textual Managing the Breakfast Factory. Sale de la PIEZA P7 de la frontera publicada en la vuelta 2 del frente, L71 a L79, 348 palabras, y de ningun otro tramo. POR QUE ES PROCEDIMIENTO Y NO DEFINICION, que es el juicio caro de este tramo y lo digo antes que nada: el libro no se queda en decir que es una caja negra, sino que pone SU PROPIO INVENTARIO de las tres piezas que hay que nombrar (input, output, labor), LO REPITE ENTERO sobre tres actividades que no son la fabrica, nombrando en cada una cual es cada pieza, y anade la operacion de recortar ventanas con su para que. EXTRACTOR.md 9.1: el inventario es de OBJETOS DE TRABAJO y de MEDIOS, no de metas, y escribir los pasos es transcribirlo. DE DONDE SALE CADA PASO, uno a uno: pasos 1 a 4 de L73 (we can think of our breakfast factory as if it were a black box: input, the raw materials, and the labor of waiters, helpers, and you, the manager, flowing into the box, and the output, the breakfast, flowing out of it; y In general, we can represent any activity that resembles a production process in a simple fashion as a black box); paso 5 de L73 (we can draw a black box to represent college recruiting, where the input is the applicants on campus and the output is college graduates who have accepted our employment offers. The labor is the work of our on-campus interviewers and the managers and technical people who interview back at the plant); paso 6 de L73 (the process of field sales training can be seen as a black box with the input being the raw product specifications and the output being trained sales personnel. The labor here is the work of the marketing and merchandising people who turn raw information into usable sales tools and train the field sales personnel to exploit them); paso 7 de L73 (A group whose job is to bill customers has as its input the information about the customer, what he has purchased, the pricing data, and the shipment records; and output is the final bill sent to the customer through which payment is collected. The labor is the work of all personnel involved); pasos 8 y 9 de L77 y L79 (We can improve our ability to run that process by cutting some windows in our box so that we can see some of what goes on within it. By looking through the openings we can better understand the internal workings of any production process and assess what the future output is likely to be). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: NO escribo QUE ventana hay que recortar ni donde, porque este tramo dice cutting some windows y no dice cuales; las ventanas concretas son los indicadores adelantados, y el libro las despliega en el tramo siguiente, que es su propio nodo. Cerrar aqui ese bucle seria un puente. NO escribo que la caja se dibuje en ningun soporte ni que se revise cada tanto: el libro no pone ni soporte ni periodo. NO escribo responsable de dibujarla. TRADUCCION DECLARADA: merchandising no esta en la lista blanca de EXTRACTOR.md 15.1, asi que va como comercializacion y el termino ingles viaja en denominaciones; marketing si esta en la blanca y se escribe tal cual; pricing esta en la negra y va como datos de precio. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO, y es el mas gordo de mi tanda: un lector estricto puede decir que esto es un CONCEPTO con ejemplos y que la tabla de EXTRACTOR.md 9 tumba las definiciones sin nada que hacer. Lo sostengo porque aqui SI hay algo que hacer y el libro dice que se haga (represent any activity, draw a black box, cutting some windows), porque el entregable es material (la caja dibujada con sus tres piezas nombradas) y porque las tres repeticiones del libro sobre actividades distintas son la prueba de que el inventario es suyo y no mio. Si cae, cae DENTRO de mi marcado, y lo pongo el primero de la cola de relectura."
+}

@@ -1,0 +1,16 @@
+INSTRUMENTO .vg01a/par.py  SIN CONSTANTES TECLEADAS: los dos ids llegan por argumento y todo lo demas sale de dataset/nodos.jsonl
+====================================================================================================
+montar_tablero_kanban_medir_actividades | Montar un tablero kanban de tres columnas para hacer visibles las actividades y los flujos de trabajo, y medir la actividad y no solo el resultado | dominio gestion_equipos
+ENTREGABLE: Un tablero con las tareas de cada persona o equipo colocadas en las tres columnas y movidas por ellos mismos, con el cuello de botella a la vista de todos y la actividad medida ademas del resultado.
+ACTIVACION: Cuando no ves donde esta el cuello de botella de tu equipo, o cuando por los resultados solos no puedes distinguir quien esta haciendo que las cosas pasen y quien va subido al carro.
+PASOS (10):
+   1. Monta el tablero en su forma mas simple, que es la que el texto describe: pon un tablero con tres columnas, por hacer, en curso y hecho.
+   2. Compra un monton de notas adhesivas de colores distintos, y que los colores representen a las distintas personas o equipos.
+   3. Haz que cada cual escriba sus tareas en su color de nota y las vaya moviendo entre por hacer, en curso y hecho.
+   4. Usalo para lo que el texto dice que sirve al momento: ver rapidamente quien es el cuello de botella.
+   5. Distingue el tablero del cuadro de mando, porque el texto dice que no son lo mismo: el tablero se centra en las actividades y en el trabajo en curso, y por eso da tiempo al equipo a detectar y resolver problemas antes de que danien los resultados.
+   6. Cuenta con lo primero que consigue hacer visible el avance: da mas autonomia al equipo y no menos, porque cuando todos ven donde estan los cuellos de botella los recursos fluyen solos hacia donde mas falta hacen, sin que la direccion intervenga; y quien va adelantado se motiva para ir a ayudar a quien se ha quedado atras, porque sabe que si esa tarea no sale, su propio trabajo no vale para nada o se retrasa.
+   7. Cuenta con lo segundo: cuando un negocio va muy bien, por los resultados solos cuesta distinguir quien va subido al carro y quien esta haciendo de verdad que las cosas pasen; y cuando la economia se hunde por factores que nadie controla, si solo mides resultados no sabes quien esta achicando agua y quien esta entrando en panico o empeorando las cosas.
+   8. Cuenta con lo tercero: medir actividades y visualizar flujos de trabajo os empuja a ti y a tu equipo a entender de verdad como lo que haceis empuja o no empuja el exito.
+   9. Cuenta con lo cuarto: medir actividades crea mas respeto entre equipos, porque el texto dice que sorprende lo rapido que un equipo da por hecho que otro esta sentado sin hacer nada y cuanto resentimiento se acumula con eso; cuando se ve en un tablero lo que la gente hace, el respeto fluye con bastante naturalidad.
+  10. Cuenta con lo quinto: medir actividades y ensenarlas publicamente tiende a llevar a evaluaciones y ascensos que premian de forma mas consistente a los que mas rinden y son menos propensos a los sesgos que nos acechan a todos, porque cuando queda claro para todos que es lo que empuja el exito es menos probable que el sesgo se cuele en las decisiones de contratar, evaluar y ascender.

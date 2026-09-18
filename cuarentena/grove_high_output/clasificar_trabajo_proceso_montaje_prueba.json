@@ -1,0 +1,58 @@
+{
+  "id": "clasificar_trabajo_proceso_montaje_prueba",
+  "titulo": "Clasificar tu trabajo en las tres operaciones de produccion: proceso, montaje y prueba",
+  "dominio": "produccion",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [],
+  "fuentes": [
+    {
+      "clave": "grove_high_output",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "denominaciones": {
+    "nombre_largo": "Los tres tipos fundamentales de operacion de produccion, y el camino de vuelta de lo que no pasa su prueba",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "process manufacturing"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "assembly"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "unit test"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "system test"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "rework"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "dry run"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando tienes delante un trabajo que no parece una fabrica y quieres aplicarle la disciplina de la produccion: antes de medirlo, saber que parte de el es proceso, que parte es montaje y que parte es prueba.",
+  "entregable_esperado": "Tu trabajo repartido en las tres operaciones, con la prueba de cada pieza antes del montaje, el camino de vuelta a proceso para lo que falle, y la prueba del producto completo antes de mandarlo al cliente.",
+  "pasos_accionables": [
+    "Senala en tu trabajo el paso de proceso, que es la actividad que cambia el material fisica o quimicamente, como hervir cambia un huevo, o la que convierte una cantidad grande de datos crudos en algo distinto, como los datos del producto convertidos en estrategias de venta que el vendedor entiende.",
+    "Senala el paso de montaje, que es donde los componentes se juntan para constituir una entidad nueva: el huevo, el pan y el cafe juntos hacen un desayuno, y las estrategias sueltas mas los datos de mercado se hacen fluir a una sola presentacion con sus folletos, sus hojas y sus laminas.",
+    "Senala la prueba, que es la operacion que somete los componentes o el total a un examen de sus caracteristicas, y cuenta tambien las pruebas visuales: ves que el cafe humea y que el pan esta tostado.",
+    "Prueba cada pieza por separado antes de montarla, que es lo que el libro llama prueba unitaria, y en un trabajo de personas toma la forma de una presentacion en seco ante un grupo escogido.",
+    "Devuelve a la fase de proceso la pieza que falle su prueba, para rehacerla, y rehazla contra lo que la prueba dijo: las preocupaciones y las objeciones del publico que la probo.",
+    "Monta el producto solo cuando todas las piezas hayan pasado su prueba unitaria.",
+    "Haz una prueba del sistema completo antes de mandar el producto al cliente."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_02.md, unidad Cap. 1, titulo textual The Basics of Production: Delivering a Breakfast (or a College Graduate, or a Compiler, or a Convicted Criminal...). Sale de la PIEZA P5 de la frontera publicada en la vuelta 1 del frente, L37 a L47, 582 palabras. FRONTERA DENTRO DEL NODO: pasos 1, 2 y 3 de L39, que es donde el libro nombra los tres tipos uno a uno; la segunda mitad de los pasos 1 y 2 y la mitad de los pasos 4 y 5 de L41, que es el caso de la formacion de la fuerza de ventas; y los pasos 4, 5, 6 y 7 de L45, que es el caso del compilador. POR QUE ES PROCEDIMIENTO: el inventario es del libro y es de ETAPAS Y OBJETOS DE TRABAJO, nombrados uno a uno con su definicion pegada (process manufacturing, an activity that physically or chemically changes material; assembly, in which components are put together to constitute a new entity; and test, which subjects the components or the total to an examination of its characteristics). No hay adjetivo de adecuacion en el sitio del criterio: el libro no dice pruebas apropiadas, dice que prueba y sobre que. LOS DOS CASOS ENTRAN DENTRO Y NO EN CASA PROPIA (manual 3.5): la formacion de la fuerza de ventas (L41) y el desarrollo de un compilador (L43 y L45). El compilador es el que trae la secuencia entera de prueba unitaria, vuelta a proceso, montaje y prueba de sistema, y por eso sus pasos son pasos de este nodo y no de otro. LO QUE NO ME TRAIGO AQUI AUNQUE ESTE EN MI TRAMO, y lo digo para que no parezca olvido: la ultima frase de L45 vuelve sobre los desfases de tiempo (the timing of the releases of various bodies of software from one stage to another can all be calculated and staged in advance). Ese objeto ya vive entero en construir_flujo_produccion_paso_limitante, que sale de L25 y L27 de esta misma unidad, y P.19 manda no mandar a nodo propio el objeto que ya esta en casa. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: NO escribo cada cuanto se prueba ni cuantas piezas se muestrean, porque el libro no pone ni periodo ni tamano de muestra en este tramo; NO escribo quien hace cada prueba mas alla de lo que el libro dice (un grupo escogido de vendedores y de mandos de venta, en el caso), porque poner responsable seria puente de la tercera especie. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: los pasos 4 a 7 salen del caso del compilador, y un lector estricto puede decir que un caso no puede poner pasos. Lo sostengo porque la secuencia que el caso describe (prueba unitaria, vuelta a proceso, montaje y prueba de sistema) es la doctrina de las tres operaciones puesta en orden, el propio libro la escribe con sus nombres tecnicos entre comillas, y L47 cierra diciendo que los cuatro trabajos distintos poseen un flujo de actividad basicamente similar. Si cae, cae DENTRO de mi marcado."
+}

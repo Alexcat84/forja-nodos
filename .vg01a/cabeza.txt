@@ -1,0 +1,42 @@
+INSTRUMENTO .vg01a/cabeza.py  SIN IDS TECLEADOS: la cabeza llega por argumento; los rotulos se leen del indice del fichero de fuente y los nodos del dataset por su rango declarado
+cabeza: decidir_quien_comunica_cada_cuanto | pasos 6
+hijos (nodos_siguientes) : 9
+   montar_reuniones_solas_mentalidad_frecuencia         en el grafo=True reciproco=True
+   conducir_reunion_equipo_agenda_tres_bloques          en el grafo=True reciproco=True
+   montar_reunion_gran_debate                           en el grafo=True reciproco=True
+   montar_reunion_gran_decision                         en el grafo=True reciproco=True
+   montar_reunion_general_presentaciones_preguntas      en el grafo=True reciproco=True
+   bloquear_tiempo_pensar_calendario                    en el grafo=True reciproco=True
+   recorrer_rueda_conscientemente_cultura_equipo        en el grafo=True reciproco=True
+   montar_tablero_kanban_medir_actividades              en el grafo=True reciproco=True
+   pasear_organizacion_hallar_problemas_pequenios       en el grafo=True reciproco=True
+RANGO DE LA CABEZA declarado en su resumen: Sale de las lineas 15 a 35
+EL INDICE DE LA CABEZA, lineas 15 a 35 del fichero:
+   L15   One of your most important responsibilities to keep everything moving smoothly is to decid
+   L17   1:1 Conversations
+   L19   Staff Meetings
+   L21   Think Time
+   L23   “Big Debate” Meetings
+   L25   “Big Decision” Meetings
+   L27   All-Hands Meetings
+   L29   Meeting-Free Zones
+   L31   Kanban Boards
+   L33   Walk Around
+   L35   Be Conscious of Culture
+NODOS DEL CAPITULO Y SU RANGO, ordenados por linea de origen:
+   L15   a L35   decidir_quien_comunica_cada_cuanto
+   L37   a L65   montar_reuniones_solas_mentalidad_frecuencia
+   L67   a L97   preguntar_seguimiento_hallar_huecos
+   L99   a L113  nutrir_ideas_nuevas_reunion_solas
+   L115  a L127  leer_seniales_fallo_jefe_reunion_solas
+   L129  a L145  conducir_reunion_equipo_agenda_tres_bloques
+   L147  a L157  escribir_apuntes_sala_estudio_equipo
+   L165  a L173  bloquear_tiempo_pensar_calendario
+   L175  a L193  montar_reunion_gran_debate
+   L195  a L203  montar_reunion_gran_decision
+   L205  a L221  montar_reunion_general_presentaciones_preguntas
+   L223  a L233  pelear_proliferacion_reuniones_bloquear_ejecucion
+   L235  a L249  montar_tablero_kanban_medir_actividades
+   L251  a L269  pasear_organizacion_hallar_problemas_pequenios
+   L271  a L299  recorrer_rueda_conscientemente_cultura_equipo
+   L301  a L305  debatir_decidir_asuntos_cultura_evitar_delegar

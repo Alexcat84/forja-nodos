@@ -1,0 +1,173 @@
+inicio 01:51:05
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 23
+poblacion del barrido       : 371   (270 del grafo mas 101 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 9
+  BLOQUEARIAN esperando veredicto  : 14   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 33
+  por candidato bloqueado          : menor 1, mediana 2, mayor 4
+  que señal levanta cada vecindad  : familia_id 2, paso_contra_nodo 2, similitud_texto 29
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] archivar_indicadores_resolver_problemas   (archivar_indicadores_resolver_problemas.json)
+    vecino construir_indicador_tendencia_patron  [levantada por: similitud_texto]
+      similitud_texto 0.384 | familia_id 0.143 | paso_contra_nodo 0.420
+      paso 2 del candidato contra paso 3 de construir_indicador_tendencia_patron
+    vecino revisar_tres_preguntas_valor_carrera  [levantada por: similitud_texto]
+      similitud_texto 0.369 | familia_id 0.000 | paso_contra_nodo 0.414
+      paso 2 del candidato contra paso 1 de revisar_tres_preguntas_valor_carrera
+
+[ENTRARIA] casar_flujo_fabricacion_flujo_ventas   (casar_flujo_fabricacion_flujo_ventas.json)
+
+[BLOQUEARIA] clasificar_trabajo_proceso_montaje_prueba   (clasificar_trabajo_proceso_montaje_prueba.json)
+    vecino preferir_inspeccion_proceso_prueba_destructiva  [levantada por: similitud_texto]
+      similitud_texto 0.395 | familia_id 0.250 | paso_contra_nodo 0.446
+      paso 7 del candidato contra paso 6 de preferir_inspeccion_proceso_prueba_destructiva
+    vecino equilibrar_capacidad_personal_inventario_plazo  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.368
+      paso 4 del candidato contra paso 2 de equilibrar_capacidad_personal_inventario_plazo
+
+[BLOQUEARIA] construir_flujo_produccion_paso_limitante   (construir_flujo_produccion_paso_limitante.json)
+    vecino retirar_barreras_politicas_metodo  [levantada por: paso_contra_nodo]
+      similitud_texto 0.122 | familia_id 0.000 | paso_contra_nodo 0.614
+      paso 4 del candidato contra paso 1 de retirar_barreras_politicas_metodo
+    vecino rehacer_flujo_paso_limitante_capacidad  [levantada por: familia_id]
+      similitud_texto 0.268 | familia_id 0.429 | paso_contra_nodo 0.430
+      paso 9 del candidato contra paso 5 de rehacer_flujo_paso_limitante_capacidad
+
+[BLOQUEARIA] construir_grafico_escalonado_pronosticos   (construir_grafico_escalonado_pronosticos.json)
+    vecino construir_indicador_tendencia_patron  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.143 | paso_contra_nodo 0.453
+      paso 4 del candidato contra paso 5 de construir_indicador_tendencia_patron
+    vecino elegir_fabricar_pedido_pronostico  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.143 | paso_contra_nodo 0.453
+      paso 7 del candidato contra paso 4 de elegir_fabricar_pedido_pronostico
+    vecino emparejar_indicadores_efecto_contraefecto  [levantada por: similitud_texto]
+      similitud_texto 0.363 | familia_id 0.000 | paso_contra_nodo 0.434
+      paso 1 del candidato contra paso 3 de emparejar_indicadores_efecto_contraefecto
+
+[ENTRARIA] construir_indicador_linealidad_alerta_temprana   (construir_indicador_linealidad_alerta_temprana.json)
+
+[BLOQUEARIA] construir_indicador_tendencia_patron   (construir_indicador_tendencia_patron.json)
+    vecino construir_grafico_escalonado_pronosticos  [levantada por: similitud_texto]
+      similitud_texto 0.350 | familia_id 0.143 | paso_contra_nodo 0.461
+      paso 5 del candidato contra paso 4 de construir_grafico_escalonado_pronosticos
+    vecino archivar_indicadores_resolver_problemas  [levantada por: similitud_texto]
+      similitud_texto 0.391 | familia_id 0.143 | paso_contra_nodo 0.427
+      paso 2 del candidato contra paso 1 de archivar_indicadores_resolver_problemas
+    vecino equilibrar_capacidad_personal_inventario_plazo  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.000 | paso_contra_nodo 0.422
+      paso 1 del candidato contra paso 4 de equilibrar_capacidad_personal_inventario_plazo
+
+[ENTRARIA] decidir_aceptar_rechazar_material_defectuoso   (decidir_aceptar_rechazar_material_defectuoso.json)
+
+[BLOQUEARIA] detectar_arreglar_fallo_etapa_menor_valor   (detectar_arreglar_fallo_etapa_menor_valor.json)
+    vecino rehacer_flujo_paso_limitante_capacidad  [levantada por: similitud_texto]
+      similitud_texto 0.359 | familia_id 0.000 | paso_contra_nodo 0.397
+      paso 4 del candidato contra paso 6 de rehacer_flujo_paso_limitante_capacidad
+
+[BLOQUEARIA] dimensionar_inventario_materia_prima_reposicion   (dimensionar_inventario_materia_prima_reposicion.json)
+    vecino preferir_inspeccion_proceso_prueba_destructiva  [levantada por: similitud_texto]
+      similitud_texto 0.432 | familia_id 0.000 | paso_contra_nodo 0.403
+      paso 2 del candidato contra paso 2 de preferir_inspeccion_proceso_prueba_destructiva
+    vecino detectar_arreglar_fallo_etapa_menor_valor  [levantada por: similitud_texto]
+      similitud_texto 0.357 | familia_id 0.000 | paso_contra_nodo 0.401
+      paso 1 del candidato contra paso 2 de detectar_arreglar_fallo_etapa_menor_valor
+    vecino equilibrar_capacidad_personal_inventario_plazo  [levantada por: similitud_texto]
+      similitud_texto 0.374 | familia_id 0.111 | paso_contra_nodo 0.392
+      paso 2 del candidato contra paso 7 de equilibrar_capacidad_personal_inventario_plazo
+
+[ENTRARIA] dimensionar_plantilla_administrativa_pronostico   (dimensionar_plantilla_administrativa_pronostico.json)
+
+[ENTRARIA] elegir_cinco_indicadores_diarios_fabrica   (elegir_cinco_indicadores_diarios_fabrica.json)
+
+[BLOQUEARIA] elegir_fabricar_pedido_pronostico   (elegir_fabricar_pedido_pronostico.json)
+    vecino construir_grafico_escalonado_pronosticos  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.143 | paso_contra_nodo 0.440
+      paso 4 del candidato contra paso 7 de construir_grafico_escalonado_pronosticos
+
+[BLOQUEARIA] elegir_indicador_salida_trabajo_administrativo   (elegir_indicador_salida_trabajo_administrativo.json)
+    vecino evaluar_directivo_resultados_fortaleza  [levantada por: paso_contra_nodo]
+      similitud_texto 0.184 | familia_id 0.000 | paso_contra_nodo 0.766
+      paso 2 del candidato contra paso 1 de evaluar_directivo_resultados_fortaleza
+    vecino emparejar_indicadores_efecto_contraefecto  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.125 | paso_contra_nodo 0.489
+      paso 3 del candidato contra paso 4 de emparejar_indicadores_efecto_contraefecto
+
+[ENTRARIA] elegir_inspeccion_barrera_monitorizacion   (elegir_inspeccion_barrera_monitorizacion.json)
+
+[BLOQUEARIA] emparejar_indicadores_efecto_contraefecto   (emparejar_indicadores_efecto_contraefecto.json)
+    vecino construir_indicador_tendencia_patron  [levantada por: similitud_texto]
+      similitud_texto 0.358 | familia_id 0.143 | paso_contra_nodo 0.453
+      paso 3 del candidato contra paso 5 de construir_indicador_tendencia_patron
+    vecino construir_grafico_escalonado_pronosticos  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.446
+      paso 3 del candidato contra paso 1 de construir_grafico_escalonado_pronosticos
+    vecino elegir_fabricar_pedido_pronostico  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.408
+      paso 4 del candidato contra paso 1 de elegir_fabricar_pedido_pronostico
+    vecino revisar_tres_preguntas_valor_carrera  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.386
+      paso 2 del candidato contra paso 2 de revisar_tres_preguntas_valor_carrera
+
+[BLOQUEARIA] equilibrar_capacidad_personal_inventario_plazo   (equilibrar_capacidad_personal_inventario_plazo.json)
+    vecino construir_indicador_tendencia_patron  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.421
+      paso 7 del candidato contra paso 5 de construir_indicador_tendencia_patron
+    vecino dimensionar_inventario_materia_prima_reposicion  [levantada por: similitud_texto]
+      similitud_texto 0.389 | familia_id 0.111 | paso_contra_nodo 0.396
+      paso 7 del candidato contra paso 6 de dimensionar_inventario_materia_prima_reposicion
+    vecino preferir_inspeccion_proceso_prueba_destructiva  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.378
+      paso 4 del candidato contra paso 3 de preferir_inspeccion_proceso_prueba_destructiva
+
+[BLOQUEARIA] preferir_inspeccion_proceso_prueba_destructiva   (preferir_inspeccion_proceso_prueba_destructiva.json)
+    vecino clasificar_trabajo_proceso_montaje_prueba  [levantada por: similitud_texto]
+      similitud_texto 0.385 | familia_id 0.250 | paso_contra_nodo 0.446
+      paso 6 del candidato contra paso 7 de clasificar_trabajo_proceso_montaje_prueba
+    vecino dimensionar_inventario_materia_prima_reposicion  [levantada por: similitud_texto]
+      similitud_texto 0.424 | familia_id 0.000 | paso_contra_nodo 0.417
+      paso 5 del candidato contra paso 6 de dimensionar_inventario_materia_prima_reposicion
+    vecino equilibrar_capacidad_personal_inventario_plazo  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 6 del candidato contra paso 1 de equilibrar_capacidad_personal_inventario_plazo
+
+[BLOQUEARIA] rehacer_flujo_paso_limitante_capacidad   (rehacer_flujo_paso_limitante_capacidad.json)
+    vecino construir_flujo_produccion_paso_limitante  [levantada por: familia_id]
+      similitud_texto 0.270 | familia_id 0.429 | paso_contra_nodo 0.430
+      paso 5 del candidato contra paso 9 de construir_flujo_produccion_paso_limitante
+    vecino detectar_arreglar_fallo_etapa_menor_valor  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.000 | paso_contra_nodo 0.404
+      paso 6 del candidato contra paso 4 de detectar_arreglar_fallo_etapa_menor_valor
+
+[ENTRARIA] representar_actividad_caja_negra_ventanas   (representar_actividad_caja_negra_ventanas.json)
+
+[BLOQUEARIA] revisar_tres_preguntas_valor_carrera   (revisar_tres_preguntas_valor_carrera.json)
+    vecino archivar_indicadores_resolver_problemas  [levantada por: similitud_texto]
+      similitud_texto 0.357 | familia_id 0.000 | paso_contra_nodo 0.387
+      paso 7 del candidato contra paso 4 de archivar_indicadores_resolver_problemas
+    vecino emparejar_indicadores_efecto_contraefecto  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.376
+      paso 2 del candidato contra paso 4 de emparejar_indicadores_efecto_contraefecto
+
+[ENTRARIA] simplificar_trabajo_reducir_numero_pasos   (simplificar_trabajo_reducir_numero_pasos.json)
+
+[ENTRARIA] variar_frecuencia_inspeccion_nivel_calidad   (variar_frecuencia_inspeccion_nivel_calidad.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+codigo=0
+fin 05:27:11
