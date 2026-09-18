@@ -825,3 +825,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | elegir_categorias_nota_palabras_propias_empresa | otro_idioma | categories of ratings | ingles | - |
 | 2026-09-18 | escribir_escaleras_puesto_evitar_dos_extremos | nombre_largo | El tercero de los trece elementos: las escaleras de puesto, un mal necesario que se estropea tanto por demasiado especifico como por demasiado abstracto | castellano | - |
 | 2026-09-18 | escribir_escaleras_puesto_evitar_dos_extremos | otro_idioma | job ladders | ingles | - |
+| 2026-09-18 | fijar_cuatro_notas_calcular_nota_global | nombre_largo | El cuarto de los trece elementos: cuantas notas, con la regla de que solo saca la nota alta quien la saca en todas las categorias y de que una nota baja en una categoria tumba la global | castellano | - |
+| 2026-09-18 | fijar_cuatro_notas_calcular_nota_global | otro_idioma | number of ratings | ingles | - |

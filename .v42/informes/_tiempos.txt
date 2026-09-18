@@ -31,3 +31,5 @@
 14:23:32 termina insercion candidato 09
 14:24:51 arranca insercion candidato 10 (escribir_escaleras_puesto_evitar_dos_extremos)
 14:33:48 termina insercion candidato 10
+14:35:05 arranca insercion candidato 11 (fijar_cuatro_notas_calcular_nota_global)
+14:47:20 termina insercion candidato 11
