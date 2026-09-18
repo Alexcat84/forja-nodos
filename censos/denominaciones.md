@@ -794,3 +794,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | elegir_pregunta_recurrente_pedir_critica | otro_idioma | go-to question | ingles | - |
 | 2026-09-18 | resolver_dudas_frecuentes_pedir_critica | nombre_largo | Las preguntas frecuentes del epilogo sobre pedir critica: la pregunta que se queda rancia, la critica que no puedes arreglar, el jefe joven con gente mayor y el miedo a empezar | castellano | - |
 | 2026-09-18 | resolver_dudas_frecuentes_pedir_critica | otro_idioma | FAQ | ingles | - |
+| 2026-09-18 | abrazar_incomodidad_silencio_contar_seis | nombre_largo | Abraza la incomodidad, puesto en acto: el silencio que sigue a tu pregunta y la practica de contar hasta seis | castellano | - |
+| 2026-09-18 | abrazar_incomodidad_silencio_contar_seis | otro_idioma | EMBRACE THE DISCOMFORT | ingles | - |
+| 2026-09-18 | abrazar_incomodidad_silencio_contar_seis | otro_idioma | Practice: Count to six in your head | ingles | - |

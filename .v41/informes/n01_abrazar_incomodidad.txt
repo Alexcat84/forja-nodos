@@ -1,0 +1,51 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/abrazar_incomodidad_silencio_contar_seis.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'abrazar_incomodidad_silencio_contar_seis'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (324 del grafo mas 24 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 3. Ninguna señal los levanto.
+  abrazar_incomodidad_arrancar_critica_equipo  [Abrazar la incomodidad para arrancarle la critica a tu equipo, con los seis consejos que el texto nombra uno a uno]
+    señales: familia_id 0.25, paso_contra_nodo 0.5, similitud_texto 0.233
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  exigir_critica_jefe_reticente  [Exigir la critica que tu jefe no se atreve a darte, con las tres frases del texto y el silencio contado hasta seis]
+    señales: familia_id 0.0, paso_contra_nodo 0.504, similitud_texto 0.322
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  pedir_critica_primero_crear_seguridad_psicologica  [Pedir critica tu antes que nada, que es el primer paso del orden de operaciones, porque es lo que mas deprisa crea la seguridad psicologica del equipo]
+    señales: familia_id 0.0, paso_contra_nodo 0.403, similitud_texto 0.184
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino escuchar_entender_critica_dominar_defensa  [Escuchar la critica con intencion de entender y no de responder, dominando tu propia defensa con la practica de escuchar tres minutos sin interrumpir]
+    levantada por: similitud_texto
+    similitud_texto    0.449 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.498 (umbral 0.60)
+    paso 1 del candidato contra paso 4 de escuchar_entender_critica_dominar_defensa
+
+  vecino premiar_franqueza_hacer_escucha_tangible  [Premiar la franqueza de quien te critica haciendo tangible tu escucha, con la lista de las criticas recibidas y lo que has hecho con ellas contado en publico]
+    levantada por: similitud_texto
+    similitud_texto    0.353 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.485 (umbral 0.60)
+    paso 7 del candidato contra paso 8 de premiar_franqueza_hacer_escucha_tangible
+
+  vecino contar_historias_propias_explicar_franqueza_radical  [Contar a tu equipo tus propias historias para explicarle la franqueza radical, en vez de prestarle la teoria o las historias de otro]
+    levantada por: similitud_texto
+    similitud_texto    0.376 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.464 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de contar_historias_propias_explicar_franqueza_radical
+  arista madre-hijo cableada y escrita RESUELTA: abrazar_incomodidad_arrancar_critica_equipo > abrazar_incomodidad_silencio_contar_seis
+  arista madre-hijo cableada y escrita RESUELTA: exigir_critica_jefe_reticente > abrazar_incomodidad_silencio_contar_seis
+  arista madre-hijo cableada y escrita RESUELTA: pedir_critica_primero_crear_seguridad_psicologica > abrazar_incomodidad_silencio_contar_seis
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 325
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/abrazar_incomodidad_silencio_contar_seis.json
