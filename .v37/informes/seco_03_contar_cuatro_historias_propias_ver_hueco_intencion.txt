@@ -1,0 +1,1 @@
+$ python forja.py informe cuarentena/scott_radical_candor/contar_cuatro_historias_propias_ver_hueco_intencion.json

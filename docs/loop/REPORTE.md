@@ -39182,3 +39182,53 @@ transcribir, solo el anuncio de un cuadro que el recorte no trae. **Una postura 
 
 > **LO QUE NO HAGO:** no mino nada nuevo de `cap_10`, no toco sus `14` nodos y no vuelvo a contar sus
 > `206` pasos. Es una comprobacion de registro, como el encargo pide.
+
+## AC.5. **TAREA 2, `cap_12` Y `cap_13` ENTEROS: EL PLAN, ESCRITO ANTES DE LA PRIMERA INSERCION**
+
+**Uno por vez y en el orden del libro** (`EXTRACTOR.md` 12.3), con `D.36` delante: **entre dos ordenes
+posibles gana el que abre la cola**, y el orden del libro pone cada cabeza **antes** que sus partes, que
+es el sentido en el que la aduana pide el veredicto.
+
+| # | orden de insercion | pieza de su frontera | por que va ahi |
+|---:|---|---:|---|
+| 1 | `desplegar_plan_orden_operaciones_franqueza_radical` | `cap_12` 1 | `L13`, y es la madre de **cuatro** aristas que esperan en cola |
+| 2 | `contar_historias_propias_explicar_franqueza_radical` | `cap_12` 2 | `L17`, parte de la anterior |
+| 3 | `mejorar_consciencia_propia_relacional_dos_practicas` | `cap_13` 1 | `L17`, cabeza `D.37` de dos practicas |
+| 4 | `contar_cuatro_historias_propias_ver_hueco_intencion` | `cap_13` 2 | `L41`, practica primera |
+| 5 | `practicar_triangulo_critica_tres_papeles` | `cap_13` 3 | `L59`, practica segunda |
+| 6 | `pedir_critica_primero_crear_seguridad_psicologica` | `cap_13` 4 | `L73`, cabeza de DOS series |
+| 7 | `elegir_pregunta_recurrente_pedir_critica` | `cap_13` 5 | `L115`, elemento primero |
+| 8 | `resolver_dudas_frecuentes_pedir_critica` | `cap_13` 6 | `L167` |
+| 9 | `abrazar_incomodidad_silencio_contar_seis` | `cap_13` 7 | `L187`, elemento segundo |
+| 10 | `escuchar_entender_critica_dominar_defensa` | `cap_13` 8 | `L199`, elemento tercero |
+| 11 | `premiar_franqueza_hacer_escucha_tangible` | `cap_13` 9 | `L215`, elemento cuarto |
+| 12 | `integrar_peticion_critica_rutina_existente` | `cap_13` 10 | `L235`, junta los cuatro |
+| 13 | `dar_elogio_disciplina_igual_critica` | `cap_13` 11 | `L247`, paso 2 del orden |
+| 14 | `medir_critica_respuesta_oyente_brujula` | `cap_13` 12 | `L289`, paso 4 del orden |
+
+### AC.5.a. **LAS ARISTAS EN COLA SON CUATRO Y EL ENCARGO DICE TRES: DECLARO LA DISCREPANCIA** (`EXTRACTOR.md` 5)
+
+**No la resuelvo copiando.** Las cuento del dato, no del encargo:
+
+<!-- TALLADO: script=.v37/aristas_cola.py salida=.v37/aristas_cola.txt -->
+
+    aristas EN COLA en toda la bitacora : 9
+    de ellas, con la cabeza de cap_12 por madre : 4
+      linea 371  desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario
+      linea 429  desplegar_plan_orden_operaciones_franqueza_radical > desplegar_tres_conversaciones_carrera
+      linea 438  desplegar_plan_orden_operaciones_franqueza_radical > armar_plan_anual_crecimiento_equipo
+      linea 461  desplegar_plan_orden_operaciones_franqueza_radical > evitar_obsesion_ascenso_estatus
+
+**La cuarta es la de la linea `461`, `evitar_obsesion_ascenso_estatus`, que la vuelta 36 escribio al
+insertar `cap_10`**, o sea DESPUES de que el encargo contara tres. **Las cuatro se cierran en esta
+vuelta**, y la cuenta que publico al cerrar es de cuatro.
+
+### AC.5.b. **MIS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| # | lo que decido | por donde puede caerse |
+|---:|---|---|
+| **1** | los dos defectos de `AC.2.a` son **TRANSCRIPCION defectuosa y no `PUENTE`** | la vara de la `ACTA 35` 6 tumbo `superestrellas` por decir lo que el libro no dice, y *al jefe de su jefe* tambien dice lo que el libro no dice. Si el auditor la aplica igual, `cap_13` sube a `2 de 212` |
+| **2** | `cap_13` `L323` a `L332`, la cena de ensayo, **NO es nodo** | `L329` trae periodo (*una vez al mes*), medio (*con amigos*) y dos actos (*compartid las historias*, *ensayad que podriais haber dicho*), que tiene la forma de un inventario de `D.27` |
+| **3** | la arista `50` del orden de operaciones (`Tres, da critica`) **NO se cablea**, y las `49`, `51` y `52` **si** | la `ACTA 23` `3.4` sostuvo las cuatro. Yo cableo tres y dejo una por leer, asi que **me aparto de una adjudicacion a la baja** y puede que la vara sea mas ancha de lo que la leo |
+| **4** | la arista nueva a `reconocer_excelencia_trayectoria_gradual` cuelga del **paso 33** de la cabeza, el mismo del que cuelga `evitar_obsesion_ascenso_estatus` | dos hijos del mismo paso es raro, y el auditor puede leer que la segunda remision apunta a la seccion entera y no a uno de sus dos nodos |
+| **5** | `pedir_critica_primero_crear_seguridad_psicologica` entra como nodo propio y **no como `REPITE`** de `empezar_cultura_franqueza_radical` | es lo que el propio candidato marca como su sitio mas cercano a un `REPITE`, y `L87` dice que *the first edition describes this order of operations*. Lo sostengo, pero es el par mas caro de fallar del tramo |
