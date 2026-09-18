@@ -1,0 +1,10 @@
+cuarentena\LEEME.md                        0
+cuarentena\_derivadas                      2
+cuarentena\ensayo_referencia_163         163
+cuarentena\marquet_turn_the_ship           3
+cuarentena\onu_consumidor                  0
+cuarentena\scott_radical_candor           24
+cuarentena\smart_who                       0
+cuarentena\zhuo_manager                    0
+TOTAL bandejas (poblacion D.38.5)        192
+grafo                                    321

@@ -1,0 +1,1 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/elegir_pregunta_recurrente_pedir_critica.json [veredictos y censos]

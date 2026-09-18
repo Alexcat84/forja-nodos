@@ -1,0 +1,16 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json [veredictos y censos]
+DECLARADOS POR LECTURA: 7. Ninguna señal los levanto.
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  ARISTA EN COLA, no cableada: pedir_critica_primero_crear_seguridad_psicologica > abrazar_incomodidad_silencio_contar_seis
+  ARISTA EN COLA, no cableada: pedir_critica_primero_crear_seguridad_psicologica > dar_elogio_disciplina_igual_critica
+  arista madre-hijo cableada y escrita RESUELTA: empezar_cultura_franqueza_radical > pedir_critica_primero_crear_seguridad_psicologica
+  ARISTA EN COLA, no cableada: pedir_critica_primero_crear_seguridad_psicologica > escuchar_entender_critica_dominar_defensa
+  arista madre-hijo cableada y escrita RESUELTA: pedir_critica_primero_crear_seguridad_psicologica > fomentar_guia_reciproca_companieros
+  ARISTA EN COLA, no cableada: pedir_critica_primero_crear_seguridad_psicologica > medir_critica_respuesta_oyente_brujula
+  ARISTA EN COLA, no cableada: pedir_critica_primero_crear_seguridad_psicologica > premiar_franqueza_hacer_escucha_tangible
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 322
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 8
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json

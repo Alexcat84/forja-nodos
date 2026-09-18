@@ -785,3 +785,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | practicar_triangulo_critica_tres_papeles | nombre_largo | El triangulo de la critica: la version de juego de papeles de los autores, con sus tres papeles y el marco de dos por dos como cuaderno del observador | castellano | - |
 | 2026-09-18 | practicar_triangulo_critica_tres_papeles | otro_idioma | Practice: The Feedback Triangle | ingles | - |
 | 2026-09-18 | practicar_triangulo_critica_tres_papeles | otro_idioma | role play | ingles | - |
+| 2026-09-18 | pedir_critica_primero_crear_seguridad_psicologica | nombre_largo | El orden de operaciones de la franqueza radical, sus cinco pasos numerados, y la razon medida de por que pedir critica va el primero | castellano | - |
+| 2026-09-18 | pedir_critica_primero_crear_seguridad_psicologica | otro_idioma | SOLICIT CRITICISM FIRST | ingles | - |
+| 2026-09-18 | pedir_critica_primero_crear_seguridad_psicologica | otro_idioma | order of operations | ingles | - |
+| 2026-09-18 | pedir_critica_primero_crear_seguridad_psicologica | otro_idioma | psychological safety | ingles | - |
