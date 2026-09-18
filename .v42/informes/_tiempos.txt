@@ -37,3 +37,5 @@
 14:56:37 termina insercion candidato 12
 14:57:19 arranca insercion candidato 12 (elegir_palabras_nota_definirlas_empresa_entera)
 15:05:06 termina insercion candidato 12
+15:07:48 arranca insercion candidato 13 (aplicar_consecuencias_nota_apoyar_fuerzas_persona)
+15:21:45 termina insercion candidato 13

@@ -829,3 +829,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | fijar_cuatro_notas_calcular_nota_global | otro_idioma | number of ratings | ingles | - |
 | 2026-09-18 | elegir_palabras_nota_definirlas_empresa_entera | nombre_largo | El quinto de los trece elementos: el lenguaje de la nota, con las palabras que humanizan un proceso potencialmente alienante y la definicion breve de cada escalon | castellano | - |
 | 2026-09-18 | elegir_palabras_nota_definirlas_empresa_entera | otro_idioma | language of ratings | ingles | - |
+| 2026-09-18 | aplicar_consecuencias_nota_apoyar_fuerzas_persona | nombre_largo | El sexto de los trece elementos: las consecuencias de la nota sobre retribucion variable, ascensos y terminaciones, con la regla de que quien esta en la nota media no asciende y con el premio que no es solo dinero | castellano | - |
+| 2026-09-18 | aplicar_consecuencias_nota_apoyar_fuerzas_persona | otro_idioma | consequences of ratings | ingles | - |
