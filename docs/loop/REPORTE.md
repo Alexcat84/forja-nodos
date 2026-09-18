@@ -41065,3 +41065,458 @@ candidato de hoy** y se quedan en la cola de vigencia, que es `D.15` y no gate e
 | **la pregunta `11` ya esta en `config/frentes.json` y `docs/loop/TABLERO.jsonl` ya se volco** | **recogido. No lo vuelvo a volcar y no duplico la pregunta `11`** (la cola abre en `11` en `DC.0.a`) |
 
 **Ninguna de las seis se reabre. Las seis se recogen y se sigue.**
+
+## DC.5. **TAREA 2, BLOQUEANTE: LA FIDELIDAD `D.30` DE LOS CUATRO, ANTES DE LA PRIMERA INSERCION**
+
+`EXTRACTOR.md` 15.4. **Son `58` pasos** (`12` mas `13` mas `20` mas `13`) **releidos contra su linea del
+libro, no contra el grafo.** El encargo me avisa de que estos cuatro **no vienen releidos** como los tres
+de la vuelta 39, y de que un `0` aqui valdria mas. **Lo doy medido y no por hecho.**
+
+### DC.5.a. **EL DENOMINADOR, CONTADO DEL DATO Y NO COPIADO DEL ENCARGO**
+
+<!-- TALLADO: script=.v40/denominador.py salida=.v40/denominador.txt -->
+
+    $ python .v40/denominador.py
+      sede        candidato                                                pasos
+      ------------------------------------------------------------------------------
+      bandeja     abrazar_incomodidad_silencio_contar_seis                    12  <-- tramo de hoy
+      bandeja     dar_elogio_disciplina_igual_critica                         20
+      bandeja     escuchar_entender_critica_dominar_defensa                   13  <-- tramo de hoy
+      bandeja     integrar_peticion_critica_rutina_existente                  13  <-- tramo de hoy
+      bandeja     medir_critica_respuesta_oyente_brujula                      33
+      bandeja     premiar_franqueza_hacer_escucha_tangible                    20  <-- tramo de hoy
+      insertado   contar_cuatro_historias_propias_ver_hueco_intencion         17
+      insertado   elegir_pregunta_recurrente_pedir_critica                    24
+      insertado   mejorar_consciencia_propia_relacional_dos_practicas         13
+      insertado   pedir_critica_primero_crear_seguridad_psicologica           17
+      insertado   practicar_triangulo_critica_tres_papeles                    15
+      insertado   resolver_dudas_frecuentes_pedir_critica                     15
+      ------------------------------------------------------------------------------
+      cap_13 ENTERO      : 12 candidato(s), 212 paso(s)
+      de ellos, MI TRAMO :  4 candidato(s),  58 paso(s)
+      los que NO he releido yo esta vuelta: 8 candidato(s), 154 paso(s)
+
+**`cap_13` entero da `12` candidatos y `212` pasos, al digito contra lo que el encargo publica, y mi
+tramo da `4` y `58`.** Los `8` restantes suman `154` pasos **que yo no he releido en esta vuelta**, y por
+eso **la fila del capitulo no la firmo**.
+
+### DC.5.b. **LOS `58` PASOS BAJO SU LINEA, CON EL `sed -n` PEGADO** (`D.35`)
+
+**Las `20` lineas distintas del libro que cubren los `58` pasos van pegadas enteras**, y cada paso va
+debajo de la suya. **El instrumento comprueba ademas que el reparto no deja hueco ni solape**: un paso
+que no caiga en ningun tramo, o que caiga en dos, salta ahi.
+
+> **LOS CUATRO GUIONES LARGOS DE `L197` Y `L237`, DECLARADOS Y NO ESCONDIDOS.** El barrido de esta casa
+> tumba el commit si uno entra, y la vuelta 35 resolvio un caso igual **cortando la cita**. **Aqui no se
+> corta**: cortar `L197` perderia `off the hook`, que es lo que sostiene su `P12`, y cortar `L237`
+> perderia la enumeracion de los cuatro elementos, que es lo que sostiene el `P06` del cuarto candidato.
+> **El instrumento sustituye cada guion por su token entre corchetes, los cuenta, y lo publica en su
+> ultima linea: `4` en `2` de las `20` lineas.** Ni una palabra del libro se pierde.
+
+<!-- TALLADO: script=.v40/fidelidad.py salida=.v40/fidelidad.txt -->
+
+    $ python .v40/fidelidad.py
+    ==============================================================================================================
+    abrazar_incomodidad_silencio_contar_seis   rotulo L187   12 pasos
+    ==============================================================================================================
+
+      $ sed -n '191p' fuentes/scott_radical_candor/cap_13.md
+      191: When you ask someone for criticism, you put them in an uncomfortable situation. Don’t be ruinously empathetic and let them off the hook. Give them some time and space to formulate their response. Often people will be quiet after you ask. Resist the temptation to fill the silence. Silence is uncomfortable for you and for them, but your job is to endure it and even embrace it. In our workshops participants often look puzzled when we say this. But the lightbulbs really go off when we get people to practice asking the question and then sitting there silently. It sounds easy, but it takes enormous discipline.
+      --- los pasos que salen de esa linea ---
+          P01  Parte de lo que le haces al otro cuando le pides critica, que es lo que el texto pone primero: le metes en una situacion incomoda.
+          P02  No seas ruinosamente empatico y no le dejes salir del apuro.
+          P03  Dale tiempo y espacio para formular su respuesta.
+          P04  Cuenta con que a menudo la gente se queda callada despues de que preguntes, y resiste la tentacion de rellenar el silencio.
+          P05  Aguantalo aunque sea incomodo para ti y para el otro, porque el texto dice que tu trabajo es soportarlo e incluso abrazarlo.
+          P06  Cuenta con lo que el texto ha medido en sus talleres: parece facil, y hace falta una disciplina enorme.
+
+      $ sed -n '195p' fuentes/scott_radical_candor/cap_13.md
+      195: Ask your question to a friendly colleague then count to six. Do not allow yourself to say anything no matter how awkward you feel or they look. So much of putting Radical Candor into practice is being able to move through social awkwardness. This tip can help take your mind off the discomfort. Focus on counting how many seconds your friend can endure silence before jumping in to say something? Most people won’t hold out till six. They’ll say something. It may not be profound, but it’s a start.
+      --- los pasos que salen de esa linea ---
+          P07  Practicalo asi: hazle tu pregunta a un companiero amistoso y cuenta hasta seis.
+          P08  No te permitas decir nada, por incomodo que te sientas o por incomodo que parezca el otro.
+          P09  Cuenta con lo que esa cuenta te da: buena parte de poner la franqueza radical en practica es ser capaz de atravesar la incomodidad social, y este truco te saca la cabeza de la incomodidad.
+          P10  Fijate en cuantos segundos aguanta tu companiero el silencio antes de saltar a decir algo, porque el texto dice que la mayoria no aguanta hasta seis y dice algo. Puede que no sea profundo, pero es un principio.
+
+      $ sed -n '197p' fuentes/scott_radical_candor/cap_13.md
+      197: Of course, some will remain silent. If they do, tell them you’ll give them more time but that you will come back to them because you really want their feedback. And don’t forget to ask again. Don’t let them[U+2014]or yourself[U+2014]off the hook!
+          (2 guion(es) largo(s) de esa linea sustituido(s) por su token)
+      --- los pasos que salen de esa linea ---
+          P11  Y si aun asi se quedan callados, diles que les vas a dar mas tiempo pero que vas a volver a ellos porque de verdad quieres su critica.
+          P12  Y no te olvides de volver a preguntar: no les dejes salir del apuro, ni te dejes salir a ti.
+
+      COBERTURA: 12 paso(s), 12 cubierto(s), 0 sin tramo, 0 en dos tramos
+
+    ==============================================================================================================
+    escuchar_entender_critica_dominar_defensa   rotulo L199   13 pasos
+    ==============================================================================================================
+
+      $ sed -n '203p' fuentes/scott_radical_candor/cap_13.md
+      203: Receiving criticism can trigger the fight, flight, or freeze response in us even if we have asked for it. Unjust criticism is hard, but fair criticism, particularly when it touches on something we already don’t like in ourselves, is also hard.
+      --- los pasos que salen de esa linea ---
+          P01  Parte de lo que el texto reconoce que pasa: recibir critica puede disparar en nosotros la respuesta de pelea, huida o bloqueo, incluso cuando la hemos pedido.
+          P02  Cuenta con que no solo cuesta la critica injusta: la critica justa, sobre todo cuando toca algo que ya no nos gusta de nosotros mismos, tambien cuesta.
+
+      $ sed -n '205p' fuentes/scott_radical_candor/cap_13.md
+      205: Figure out what helps you to process what you hear without giving in to a defensive response: a breathing exercise can help; so can taking a long sip from a bottle of water. Most of all, practice with others.
+      --- los pasos que salen de esa linea ---
+          P03  Averigua que te ayuda a ti a procesar lo que oyes sin caer en una respuesta defensiva, que es lo que el texto encarga: un ejercicio de respiracion puede ayudar, y tambien dar un trago largo de una botella de agua.
+          P04  Y sobre todo practica con otros, que es lo que el texto pone por encima de lo demas.
+
+      $ sed -n '209p' fuentes/scott_radical_candor/cap_13.md
+      209: Find a partner to practice with (coworker, friend, family member). One person speaks for three minutes, and then you switch roles and listen to the other person speak, uninterrupted. You can talk about whatever you want: anything you really care about, at work or outside of it.
+      --- los pasos que salen de esa linea ---
+          P05  Practicalo asi: busca una pareja con quien practicar, sea companiero de trabajo, amigo o familiar.
+          P06  Que una persona hable durante tres minutos.
+          P07  Despues cambiad los papeles y escucha a la otra persona hablar, sin interrumpir.
+          P08  Podeis hablar de lo que querais: cualquier cosa que os importe de verdad, del trabajo o de fuera de el.
+
+      $ sed -n '211p' fuentes/scott_radical_candor/cap_13.md
+      211: If you’re the listener, you’re giving the speaker the gift of your full attention. You can nod, or say, “I see” or “I understand,” but this is not the time for questions, or for you to relate their story to something you care about, like your favorite Hawaii vacation story, or to give the speaker that one tip that’s going to forever change their life.… Your job is not to give advice, it’s to listen.
+      --- los pasos que salen de esa linea ---
+          P09  Si eres tu quien escucha, dale a quien habla el regalo de tu atencion completa.
+          P10  Puedes asentir, o decir ya veo o entiendo, pero este no es el momento de preguntas.
+          P11  Ni de que relaciones su historia con algo que te importe a ti, como tu historia favorita de las vacaciones en Hawai.
+          P12  Ni de darle a quien habla ese consejo que le va a cambiar la vida para siempre: tu trabajo no es dar consejo, es escuchar.
+
+      $ sed -n '213p' fuentes/scott_radical_candor/cap_13.md
+      213: What we find is that coworkers who have been on the same team for more than ten years learned more about each other in three minutes than they did in a decade working together. Listening, really listening, is incredibly efficient!
+      --- los pasos que salen de esa linea ---
+          P13  Y cuenta con lo que el texto ha medido haciendo esto: companieros que llevaban mas de diez anios en el mismo equipo aprendieron mas unos de otros en tres minutos que en una decada trabajando juntos. Escuchar, escuchar de verdad, es increiblemente eficiente.
+
+      COBERTURA: 13 paso(s), 13 cubierto(s), 0 sin tramo, 0 en dos tramos
+
+    ==============================================================================================================
+    premiar_franqueza_hacer_escucha_tangible   rotulo L215   20 pasos
+    ==============================================================================================================
+
+      $ sed -n '217p' fuentes/scott_radical_candor/cap_13.md
+      217: When someone offers you criticism, they are taking a risk. It’s your job to make sure they are rewarded for taking that risk, or they won’t do it again. We’ve found the best way to reward valuable feedback is to address the problem quickly or explain clearly why you can’t and seek a work-around.
+      --- los pasos que salen de esa linea ---
+          P01  Parte de lo que hace quien te critica, que es de donde el texto saca el encargo: esta asumiendo un riesgo, y tu trabajo es asegurarte de que se le premia por asumirlo, o no lo volvera a hacer.
+          P02  Premia la critica valiosa de la mejor manera que el texto ha encontrado: arregla el problema deprisa, o explica claramente por que no puedes y busca una solucion de rodeo.
+
+      $ sed -n '219p' fuentes/scott_radical_candor/cap_13.md
+      219: Feedback can fall prey to our innate negativity bias. That means that even if you respond well to criticism nine times out of ten, it’s the one time that you respond defensively that they will remember. As Rick Hanson, author of Resilient notes, “The brain is like Velcro for negative experiences and Teflon for positives ones.” We love to focus on and tell stories about when feedback goes horribly wrong.
+      --- los pasos que salen de esa linea ---
+          P03  Cuenta con el sesgo contra el que juegas, que el texto llama sesgo de negatividad: aunque respondas bien a la critica nueve de cada diez veces, la que recordaran es la vez que respondiste a la defensiva.
+          P04  Ten delante la frase con que el texto lo resume, de Rick Hanson, autor de Resilient: el cerebro es como el velcro para las experiencias negativas y como el teflon para las positivas.
+
+      $ sed -n '221p' fuentes/scott_radical_candor/cap_13.md
+      221: So make it memorable when you reward the candor. Spanx CEO Sara Blakely played the song “Oops! I Did It Again,” when describing a pattern of mistakes she’d made to the whole company. Celebrate your own failures, and show how the only way you can improve is when people point them out to you. Talking publicly about the helpful feedback you’ve received, and how you’ve sought to address it, signals your view that feedback is a gift, not a kick in the shins.
+      --- los pasos que salen de esa linea ---
+          P05  Por eso haz que se note cuando premias la franqueza, y el texto pone su ejemplar: la directora de Spanx, Sara Blakely, puso la cancion Oops! I Did It Again mientras describia a toda la empresa un patron de errores que habia cometido.
+          P06  Celebra tus propios fallos, y ensenia que la unica manera de que mejores es que la gente te los seniale.
+          P07  Habla en publico de la critica util que has recibido y de como has intentado resolverla, porque eso senializa que para ti la critica es un regalo y no una patada en la espinilla.
+
+      $ sed -n '225p' fuentes/scott_radical_candor/cap_13.md
+      225: Make a list of the three to four times colleagues have offered you some criticism recently. If you can’t think of anything, it doesn’t mean you’re perfect. It means either you’re not hearing what they’re saying or they’re not comfortable sharing their criticism. If you don’t have anything on your list, go on a fishing expedition! And fish for criticism not praise!
+      --- los pasos que salen de esa linea ---
+          P08  Practicalo asi: haz una lista de las tres o cuatro veces que unos companieros te han ofrecido alguna critica recientemente.
+          P09  Si no se te ocurre nada, no significa que seas perfecto: significa o que no estas oyendo lo que te dicen, o que no se sienten comodos compartiendo su critica.
+          P10  Y si no tienes nada en la lista, vete de pesca. Y pesca critica, no elogio.
+
+      $ sed -n '227p' fuentes/scott_radical_candor/cap_13.md
+      227: At a team meeting or standup, share some feedback you received in the past week, what you learned from it, your gratitude for it, and what you plan to do about it. Ask for help from the team as you try to change your behavior or address the problem raised. Make clear that you welcome additional feedback in the given areas, and welcome it with relish if you get it.
+      --- los pasos que salen de esa linea ---
+          P11  En una reunion de equipo o en una reunion de pie, comparte alguna critica que hayas recibido en la ultima semana, lo que aprendiste de ella, tu agradecimiento por ella, y que piensas hacer al respecto.
+          P12  Pide ayuda al equipo mientras intentas cambiar tu conducta o resolver el problema que te plantearon.
+          P13  Deja claro que agradeces mas critica en esas mismas areas, y recibela con gusto si te llega.
+
+      $ sed -n '229p' fuentes/scott_radical_candor/cap_13.md
+      229: When you take some time to show what you are doing about the feedback you’ve gotten, two good things happen. One, you are making your listening tangible. Often leaders work hard to address feedback but forget to share their efforts with the team. Show your work! Two, you get to learn if you’ve fixed the problem. Sometimes you’ll learn that you have gone too far, or not far enough to address the issue raised. Maybe in aiming to avoid interrupting people, you’ve allowed meetings to become free-for-alls, or maybe as meetings grow long, you start to backslide. Either way, you get a chance to calibrate your response.
+      --- los pasos que salen de esa linea ---
+          P14  Cuenta con las dos cosas buenas que el texto dice que pasan cuando dedicas un rato a ensenar que estas haciendo con la critica que te han dado: una, haces tangible tu escucha, porque a menudo los lideres trabajan duro para resolver una critica y se olvidan de compartir ese esfuerzo con el equipo. Ensenia tu trabajo.
+          P15  Y dos, te enteras de si has arreglado el problema: a veces descubriras que te has pasado, o que no has llegado, y en cualquiera de los dos casos tienes ocasion de calibrar tu respuesta.
+
+      $ sed -n '233p' fuentes/scott_radical_candor/cap_13.md
+      233: Think about some criticism you got recently that you basically disagreed with, but try to find some element of the criticism that you can agree with. Share the area of agreement with the person, to demonstrate you listened and that you’re open to feedback. Then let the person know there are some elements of what they said that you disagree with, and ask them if they’re open to a longer conversation. If they are, articulate as clearly as possible why you disagree, or why changing your behavior would produce worse results. Pretending to listen but silently dismissing what they’re saying is the worst thing you can do to a relationship. That makes people feel invisible, ignored. A respectful disagreement can strengthen a relationship. Ignoring a person rarely does.
+      --- los pasos que salen de esa linea ---
+          P16  Y practica tambien con la critica con la que no estas de acuerdo: piensa en alguna que hayas recibido hace poco y con la que basicamente no estabas de acuerdo, e intenta encontrar algun elemento de ella con el que si puedas estar de acuerdo.
+          P17  Comparte con la persona esa zona de acuerdo, para demostrar que la escuchaste y que estas abierto a la critica.
+          P18  Despues hazle saber que hay elementos de lo que dijo con los que no estas de acuerdo, y preguntale si esta dispuesta a tener una conversacion mas larga.
+          P19  Si lo esta, articula lo mas claramente que puedas por que no estas de acuerdo, o por que cambiar tu conducta daria peores resultados.
+          P20  Y cuenta con lo que el texto seniala como lo peor que puedes hacerle a una relacion: fingir que escuchas mientras descartas en silencio lo que te dicen, porque eso hace que la gente se sienta invisible e ignorada. Un desacuerdo respetuoso puede fortalecer una relacion, e ignorar a una persona casi nunca lo hace.
+
+      COBERTURA: 20 paso(s), 20 cubierto(s), 0 sin tramo, 0 en dos tramos
+
+    ==============================================================================================================
+    integrar_peticion_critica_rutina_existente   rotulo L235   13 pasos
+    ==============================================================================================================
+
+      $ sed -n '111p' fuentes/scott_radical_candor/cap_13.md
+      111: Seeing the boss solicit feedback once isn’t enough. Fear of offending the powerful does not die easy. We can only really be sure that bosses want feedback if they make a habit of soliciting it regularly. This means finding a way to build it into a regular practice so that it happens automatically. When a boss sets aside time each week for 1:1 meetings and asks for feedback at the end of each 1:1, employees come to expect this as “normal.” Establishing a regular routine signals to them that you will be asking for feedback, and makes them more generally mindful about what you might do better or change in order to make them more effective. Another great time to solicit feedback is when people are really angry with you. It’s instinctive to avoid people when they are mad, but this is the moment when you’re most likely to hear the unvarnished truth.
+      --- los pasos que salen de esa linea ---
+          P01  Parte de por que no basta con hacerlo una vez, que es lo que el texto pone: ver al jefe pedir critica una vez no es suficiente, porque el miedo a ofender al poderoso no muere facil.
+          P02  Cuenta con la consecuencia que el texto saca de ahi: solo podemos estar seguros de que un jefe quiere critica si tiene la costumbre de pedirla con regularidad.
+          P03  Asi que busca la manera de meterla en una practica regular para que ocurra automaticamente.
+          P04  Cuenta con lo que eso consigue, que el texto describe entero: cuando un jefe aparta tiempo cada semana para reuniones a solas y pide critica al final de cada una, los empleados llegan a esperarlo como lo normal. Establecer una rutina regular les senializa que vas a pedir critica, y les vuelve mas atentos en general a que podrias hacer mejor o cambiar para que ellos sean mas eficaces.
+          P05  Aprovecha ademas el otro gran momento que el texto nombra: cuando la gente esta de verdad enfadada contigo. El instinto es evitar a quien esta enfadado, y ese es justo el momento en que es mas probable que oigas la verdad sin barniz.
+
+      $ sed -n '237p' fuentes/scott_radical_candor/cap_13.md
+      237: Now that you’ve practiced the four elements of soliciting criticism[U+2014]coming up with a go-to question, embracing the discomfort, listening with the intent to understand, and making listening tangible by rewarding the candor[U+2014]you’re ready to put the four things together and make soliciting feedback a habit.
+          (2 guion(es) largo(s) de esa linea sustituido(s) por su token)
+      --- los pasos que salen de esa linea ---
+          P06  Junta ahora los cuatro elementos que has practicado por separado, que es lo que el texto ordena aqui: dar con una pregunta recurrente, abrazar la incomodidad, escuchar con intencion de entender, y hacer tangible la escucha premiando la franqueza.
+
+      $ sed -n '239p' fuentes/scott_radical_candor/cap_13.md
+      239: To build a new habit, it’s important to minimize the effort. That means building it into your existing routines. The ideal place to solicit feedback is at the end of your regularly scheduled 1:1s with team members. It doesn’t have to be a 1:1 meeting, though; different people have different approaches to these meetings. But you do need to ask for criticism frequently, so that it becomes like brushing and flossing, not an annual cleaning that you dread. It’s also best to ask in private to make it less threatening to the other person and also to lower the threat to your ego and increase your chances of maintaining your composure and curiosity.
+      --- los pasos que salen de esa linea ---
+          P07  Para construir el habito, minimiza el esfuerzo, que es la regla que el texto da: eso significa meterlo en las rutinas que ya tienes.
+          P08  Ponlo en el sitio ideal que el texto nombra: al final de tus reuniones a solas ya programadas con la gente del equipo.
+          P09  No tiene por que ser una reunion a solas, porque el texto reconoce que distinta gente tiene distintos enfoques de esas reuniones. Pero si tienes que pedir critica a menudo, para que sea como cepillarse los dientes y usar el hilo dental y no como una limpieza anual que temes.
+          P10  Y pidela en privado, que es lo que el texto dice que es mejor: hace la situacion menos amenazante para el otro, y ademas baja la amenaza a tu ego y sube tus posibilidades de mantener la compostura y la curiosidad.
+
+      $ sed -n '241p' fuentes/scott_radical_candor/cap_13.md
+      241: Remember, the first twenty or so times you do this it’s going to feel like an unnatural act. Your job is to push through the discomfort.
+      --- los pasos que salen de esa linea ---
+          P11  Cuenta con lo que te vas a encontrar las primeras veces: el texto dice que las primeras veinte o asi te va a parecer un acto antinatural, y que tu trabajo es empujar a traves de la incomodidad.
+
+      $ sed -n '245p' fuentes/scott_radical_candor/cap_13.md
+      245: Let your team know you plan to ask for feedback in your upcoming 1:1s. As a bonus, share the question you plan to ask. Particularly early in the process of normalizing this behavior, it’s important to give them time to think about behavior that really matters to them.
+      --- los pasos que salen de esa linea ---
+          P12  Practicalo asi: hazle saber a tu equipo que piensas pedir critica en vuestras proximas reuniones a solas.
+          P13  Y como extra, comparteles la pregunta que piensas hacer, porque el texto dice que sobre todo al principio de normalizar esta conducta es importante darles tiempo para pensar en conductas tuyas que de verdad les importen.
+
+      COBERTURA: 13 paso(s), 13 cubierto(s), 0 sin tramo, 0 en dos tramos
+
+    ==============================================================================================================
+    EL TRAMO ENTERO: 58 pasos de 4 candidatos, repartidos sobre 20 lineas del libro
+    NI UN HUECO NI UN SOLAPE: los 58 pasos caen cada uno en una sola linea.
+    GUIONES SUSTITUIDOS: 4 en 2 de las 20 lineas citadas, L197 con 2, L237 con 2
+
+### DC.5.c. **LA CLASE QUE SE RELEE ENTERA, MARCADA POR INSTRUMENTO Y NO A OJO**
+
+<!-- TALLADO: script=.v40/clase.py salida=.v40/clase.txt -->
+
+    $ python .v40/clase.py
+    LOS PASOS DE LA CLASE QUE EL ENCARGO MANDA RELEER ENTERA (TAREA 2)
+      marcados por el instrumento; el veredicto de cada uno lo pone la lectura
+
+      abrazar_incomodidad_silencio_contar_seis
+        pasos: 12 | de la clase: 10
+          P01  cuenta, sentimiento
+          P02  sentimiento
+          P04  sentimiento
+          P05  sentimiento
+          P06  cuenta, sentimiento
+          P07  cuenta, escalon
+          P08  sentimiento
+          P09  sentimiento
+          P10  cuenta, escalon, sentimiento
+          P12  sentimiento
+
+      escuchar_entender_critica_dominar_defensa
+        pasos: 13 | de la clase: 6
+          P03  cuenta, sentimiento
+          P05  cuenta, escalon
+          P06  cuenta
+          P09  sentimiento
+          P11  persona
+          P13  cuenta, escalon
+
+      premiar_franqueza_hacer_escucha_tangible
+        pasos: 20 | de la clase: 15
+          P01  cuenta, sentimiento
+          P02  cuenta
+          P03  cuenta, sentimiento
+          P04  persona
+          P05  persona, cuenta, escalon
+          P07  cuenta, sentimiento
+          P08  cuenta, escalon
+          P09  sentimiento
+          P11  cuenta, escalon, sentimiento
+          P12  escalon
+          P13  sentimiento
+          P14  cuenta, escalon
+          P15  cuenta
+          P18  cuenta, sentimiento
+          P20  cuenta, sentimiento
+
+      integrar_peticion_critica_rutina_existente
+        pasos: 13 | de la clase: 11
+          P01  cuenta, escalon, sentimiento
+          P02  cuenta, escalon
+          P03  cuenta
+          P04  cuenta, escalon, sentimiento
+          P05  sentimiento
+          P06  cuenta, sentimiento
+          P08  escalon
+          P09  cuenta, sentimiento
+          P10  sentimiento
+          P11  cuenta, sentimiento
+          P12  escalon
+
+      EL TRAMO ENTERO: 58 pasos, 42 de la clase (72,4 por ciento)
+
+**`42` de los `58` caen en la clase** (persona, cuenta, escalon o adjetivo de sentimiento) **y los `42`
+se releyeron con su linea completa delante.** La expresion hereda la de `.v39/clase.py` y **la amplia con
+el vocabulario propio de estos cuatro** (`Rick`, `Hanson`, `Sara`, `Blakely`, `Spanx`, `Hawai`,
+`Resilient`, `Velcro`, `Teflon`, `enfadado`, `defensiva`, `amenazante`, `agradecimiento`, `invisible`,
+`ignorada`, `antinatural`), **y lo digo en el propio fichero**: ampliar la expresion solo puede SUBIR esa
+cuenta, nunca bajarla.
+
+**Y LA CUENTA HONESTA ES OTRA Y ES MAYOR: los `58`.** Las `20` lineas del libro las lei **enteras las
+`20`**, porque `58` pasos repartidos sobre `20` lineas significa que leer entera cada linea cubre todos
+los pasos. **El `42` es lo que el instrumento marca; el `58` es lo que de verdad relei.**
+
+### DC.5.d. **EL LIBRO MAYOR DE LA RELECTURA: UNA FILA POR PASO**
+
+> **CORRECCION DECLARADA SOBRE ESTA TABLA, Y DE QUE CAIDA SALE** (`D.41`). **Su primera version tumbo mi
+> commit**: el tallado casa las filas **por su primera celda**, y con la primera celda igual a solo el
+> candidato **las `58` filas compartian `4` claves**, asi que el comparador leia la fila `P01` contra la
+> `P02` y daba `4` filas distintas de su instrumento. **No se arreglo tecleando la celda buena: se le dio
+> clave unica a cada fila** juntando candidato y paso en la primera celda, y se regenero con
+> `python scripts/tallar_reporte.py --arreglar`, que retallo `116` celdas. **Ni un veredicto cambio.**
+
+<!-- TALLADO: script=.v40/fidelidad_tabla.py salida=.v40/fidelidad_tabla.txt -->
+
+| candidato y paso | linea | de la clase | veredicto |
+|---|---:|---|---|
+| `abrazar_incomodidad_silencio_contar_seis` `P01` | `L191` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P02` | `L191` | sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P03` | `L191` | no | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P04` | `L191` | sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P05` | `L191` | sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P06` | `L191` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P07` | `L195` | cuenta, escalon | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P08` | `L195` | sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P09` | `L195` | sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P10` | `L195` | cuenta, escalon, sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P11` | `L197` | no | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P12` | `L197` | sentimiento | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P01` | `L203` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P02` | `L203` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P03` | `L205` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P04` | `L205` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P05` | `L209` | cuenta, escalon | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P06` | `L209` | cuenta | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P07` | `L209` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P08` | `L209` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P09` | `L211` | sentimiento | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P10` | `L211` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P11` | `L211` | persona | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P12` | `L211` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P13` | `L213` | cuenta, escalon | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P01` | `L217` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P02` | `L217` | cuenta | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P03` | `L219` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P04` | `L219` | persona | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P05` | `L221` | persona, cuenta, escalon | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P06` | `L221` | no | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P07` | `L221` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P08` | `L225` | cuenta, escalon | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P09` | `L225` | sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P10` | `L225` | no | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P11` | `L227` | cuenta, escalon, sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P12` | `L227` | escalon | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P13` | `L227` | sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P14` | `L229` | cuenta, escalon | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P15` | `L229` | cuenta | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P16` | `L233` | no | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P17` | `L233` | no | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P18` | `L233` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P19` | `L233` | no | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P20` | `L233` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P01` | `L111` | cuenta, escalon, sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P02` | `L111` | cuenta, escalon | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P03` | `L111` | cuenta | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P04` | `L111` | cuenta, escalon, sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P05` | `L111` | sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P06` | `L237` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P07` | `L239` | no | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P08` | `L239` | escalon | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P09` | `L239` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P10` | `L239` | sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P11` | `L241` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P12` | `L245` | escalon | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P13` | `L245` | no | **TRANSCRIPCION** |
+
+<!-- TALLADO: parcial salida=.v40/fidelidad_tabla.txt -->
+
+    LA CUENTA, SALIDA DE LA MISMA TABLA:
+      pasos releidos   : 58
+      TRANSCRIPCION    : 58
+      PUENTE           : 0
+      marcados de la clase por el instrumento: 42 de 58
+      lineas distintas del libro releidas enteras: 20
+
+> ## **`58` PASOS, `58` `TRANSCRIPCION`, `0` `PUENTE`. Y ESE `0` LO FIRMO YO.**
+
+**LA COLUMNA DEL VEREDICTO ES LO UNICO QUE TECLEA LA LECTURA**, y el instrumento lo dice en su cabecera:
+un paso ausente del diccionario `VEREDICTOS` queda `TRANSCRIPCION`, y **cada `PUENTE` tendria que traer
+su motivo escrito**. **El diccionario esta vacio porque no encontre ninguno**, no porque no lo mirase.
+
+**LAS TRES ESPECIES DE PUENTE QUE `D.30` NOMBRA, BUSCADAS UNA A UNA:**
+
+| especie | lo que busque | que salio |
+|---|---|---|
+| **el destinatario** | un paso que mande trasladar, informar o escalar a alguien que el libro no nombra | **ninguno**. `L227` nombra la reunion de equipo y `L245` nombra al equipo, y son los dos unicos destinatarios que aparecen |
+| **el periodo** | un paso que fije cada cuanto, en cuanto tiempo o durante cuanto | **ninguno inventado**. Los cuatro periodos que aparecen son del libro: `cada semana` de `L111`, `tres minutos` de `L209`, `en la ultima semana` de `L227` y `las primeras veinte o asi` de `L241` |
+| **el responsable** | un paso que escriba quien responde de algo | **ninguno**. Todos los pasos hablan en segunda persona a quien pide la critica, que es el sujeto del libro |
+
+**Y LOS CUATRO SITIOS DONDE LOS CANDIDATOS DICEN LO QUE EL LIBRO NO DICE, que es la cara positiva de lo
+mismo:** cada `resumen_teorico` cierra con un tramo *LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI*, y
+ahi estan **cuanto se espera antes de volver a preguntar**, **cada cuanto se repite el ejercicio de los
+tres minutos**, **cada cuanto se cuenta en publico** y **cuanto tiempo del final de la reunion se
+reserva**. **Son exactamente los puentes que no se escribieron.**
+
+### DC.5.e. **MIS DISCUTIBLES, MARCADOS ANTES DE INSERTAR NADA Y ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| # | el discutible | lo que decido, y por que |
+|---:|---|---|
+| **1** | **la cifra de `DC.2.d`**: el comando que el nodo publica da `0` sobre `e3950c6`, `4` sobre mi apertura y `9` con mi correccion ya dentro | **lo declaro con sus tres cortes y no lo resuelvo.** Roza la pregunta `4` de la cola de doctrina y el encargo dice que esta vuelta no sube ninguna. **Si el auditor lee que una cifra con corte escrito tenia que haberse evitado del todo, la caida es mia** |
+| **2** | **`abrazar_incomodidad` `P06`** escribe *lo que el texto ha medido en sus talleres*, y `L191` dice que los participantes ponen cara de extranieza y que se les encienden las bombillas: **el libro OBSERVA, no MIDE** | **lo dejo `TRANSCRIPCION`**: el contenido del paso, *parece facil y hace falta una disciplina enorme*, es literal de `L191`, y el verbo de marco no aniade objeto, destinatario, periodo ni responsable. **Pero el verbo es mio y por eso va aqui** |
+| **3** | **`premiar_franqueza` `P05`** escribe *la directora de Spanx, Sara Blakely* donde `L221` escribe `Spanx CEO Sara Blakely`, y la grafia de esta casa para ese escalon es **consejero delegado**, recien reafirmada en `DC.2` | **lo dejo como esta y no toco el paso.** `EXTRACTOR.md` 15.1 es regla de **id**, no de prosa de paso, y *directora* dice lo que el libro dice. **Si la grafia de la casa manda tambien dentro del paso, esto es una caida y la cargo** |
+| **4** | **`premiar_franqueza` `P04`** cita a `Rick Hanson`, autor de `Resilient`, con su frase entera, y la ficha **no lleva campo `atribuciones`**, que `70` nodos del catalogo si llevan | **no lo aniado.** `EXTRACTOR.md` 9 manda `atribuciones` para la **CIFRA del autor**, y esto es una **metafora**, no una cifra con banda ni fecha de corte. **Si la vara cubre tambien la cita literal, falta un campo y es mio** |
+| **5** | **`integrar_peticion` se lleva `L111`, a `124` lineas de su rotulo `L235`** | **lo sostengo.** Es el mismo objeto que `L239` y `P.19` manda fundirlo en vez de fabricar el gemelo de su donante; la frontera no contigua **va publicada en su `resumen_teorico` antes de cortar**, que es `EXTRACTOR.md` 10 |
+| **6** | **`premiar_franqueza` mete DOS ejercicios rotulados en UN nodo**, `Practice: Make Listening Tangible` de `L223` y `Practice: Reward criticism you disagree with` de `L231` | **lo sostengo con la vara de la `ACTA 20` 4.1**: una condicion de activacion y un entregable compartidos, y el segundo es el caso dificil del primero. **Si la vara los separa, es un nodo de mas y es mio** |
+| **7** | **`premiar_franqueza` `P15` deja fuera el ejemplo de `L229`**, las reuniones vueltas barra libre por evitar interrumpir | **lo dejo fuera.** Es omision de un ejemplo, no invencion, y la casa no obliga a transcribir cada ejemplo. **Si el criterio es transcribir el inventario entero, falta un paso** |
+| **8** | **el `SANO` de `integrar_peticion` contra la cabeza** ya esta escrito dos veces, en mi linea `488` y en la apertura sellada del auditor | **no lo peleo, lo escribo y sigo**, que es lo que la `TAREA 3.B` manda. **Al leer sus `13` pasos no discrepo**: `L237` lo pone DESPUES de los cuatro y `D.37` dice que un hermano de serie es `SANO` |
+| **9** | **los `2` `SANO` rancios de `DC.3`**, que declaro vigentes por medicion de campos y no por relectura del par entero | **la medicion dice que titulo, pasos y entregable son identicos al digito**, y eso es mas fuerte que mi memoria del par. **Si `D.15` pide releer el par entero y no medir el nodo, la caida es mia** |
+
+## DC.6. **LA SECCION DE LA INSERCION, ABIERTA ANTES DE QUE ENTRE EL PRIMER CANDIDATO** (`TAREA 4`)
+
+**Se abre aqui, con el grafo todavia en `324` nodos y `507` lineas de bitacora, y crece UNA FILA CADA VEZ
+QUE UNO ENTRA**, en su propio commit y con el candidato ya dentro. **Si el reloj me corta en el `2`, lo
+que falta es una linea y no una seccion**, que es lo que costo la racha `REPORTE` dos vueltas seguidas.
+
+**EL PREFIJO ES `DC` Y ES ELECCION MIA**, con la salida del `grep` pegada en `DC.1`: la serie va `AA`,
+`AB`, `AC`, `BC`, `CC`, y `CC` es la vuelta 39. **La seccion es la `.6`, que es lo que el encargo compra.**
+
+**LAS CUATRO COSAS QUE YA ESTAN HECHAS ANTES DE ESTA LINEA, y por eso la insercion puede empezar:**
+
+| | |
+|---|---|
+| la fidelidad `D.30` de los `58` pasos | **`DC.5`: `58` `TRANSCRIPCION`, `0` `PUENTE`** |
+| mis discutibles marcados a ciegas | **`DC.5.e`: `9`, escritos antes de que entre nada** |
+| la caida de dato de la `TAREA 1.A` | **`DC.2`: corregida por anexion, barrido a `4` y `4`** |
+| los `2` rancios que son pares de candidatos de hoy | **`DC.3`: releidos por medicion; la anotacion baja en el acto de cada entrada** |
+
+### DC.6.a. **EL ORDEN, Y POR QUE ES ESE** (`D.36`, `EXTRACTOR.md` 12.3)
+
+**El orden del libro, que es el que manda**, y el primero que entra cambia lo que el segundo mide:
+
+| # | candidato | rotulo y linea | pasos | lo que trae escrito |
+|---:|---|---|---:|---|
+| `1` | `abrazar_incomodidad_silencio_contar_seis` | `EMBRACE THE DISCOMFORT`, `L187` | `12` | arista `D.37` en cola, linea `489`; rancio `484` que anotar |
+| `2` | `escuchar_entender_critica_dominar_defensa` | `LISTEN WITH THE INTENT TO UNDERSTAND`, `L199` | `13` | arista `D.37` en cola, linea `492`; rancio `485` que anotar |
+| `3` | `premiar_franqueza_hacer_escucha_tangible` | `MAKE LISTENING TANGIBLE`, `L215` | `20` | arista `D.37` en cola, linea `495`. **Con el cierra la serie** |
+| `4` | `integrar_peticion_critica_rutina_existente` | `BUILD IT INTO YOUR EXISTING SCHEDULE`, `L235` | `13` | `SANO` ya razonado en `488` y en `500`. **No es parte de la serie** |
+
+### DC.6.b. **LO QUE `D.37` CIERRA CON EL CANDIDATO `3`, ESCRITO ANTES DE SABER SI LLEGO** (`TAREA 3.A`)
+
+`L113` escribe *each of the four tips for soliciting criticism offered in the book* y **`L237` los nombra
+uno a uno**. `elegir_pregunta_recurrente_pedir_critica` entro en la vuelta 39 y es **el primero de los
+cuatro**. **Cuando entren los candidatos `1`, `2` y `3`, las CUATRO partes de la serie estan en el grafo
+con sus CUATRO aristas cableadas desde la cabeza**, y la serie deja de estar a medias, que es su estado
+fragil. **La frase con su cifra se vuelve a escribir en `DC.6.f` cuando el `3` este dentro, y no antes.**
+
+### DC.6.c. **LOS DOS QUE NO ENTRAN HOY, Y NO LOS DECLARO CERRADOS** (`TAREA 3.C`)
+
+`dar_elogio_disciplina_igual_critica` (`20` pasos, arista `49`, linea `490`) y
+`medir_critica_respuesta_oyente_brujula` (`33` pasos, arista `51`, linea `494`) **siguen en bandeja con su
+arista en cola**. **No los toco.** `cap_13` **queda con `2`** si los cuatro entran. **No estiro el tramo
+a seis**, y el motivo esta medido en el encargo: `896` segundos de media por insercion.
+
+### DC.6.d. **LAS FILAS, UNA POR CANDIDATO, CADA UNA CON SU CANDIDATO YA DENTRO**
