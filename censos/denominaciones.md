@@ -819,3 +819,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | montar_equipo_gestion_desempenio_revisar_sistema | otro_idioma | steps for beginning the process of revamping your performance management system | ingles | - |
 | 2026-09-18 | recorrer_trece_elementos_proceso_evaluacion_formal | nombre_largo | Los elementos de un proceso formal de evaluacion de desempenio, de poner nota o no hasta ligero o pesado, nombrados uno a uno por el texto y numerados del uno al trece | castellano | - |
 | 2026-09-18 | recorrer_trece_elementos_proceso_evaluacion_formal | otro_idioma | elements of a formal performance review process | ingles | - |
+| 2026-09-18 | decidir_poner_nota_comunicar_proposito_limites | nombre_largo | El primero de los trece elementos: poner nota o no, con las tres pegas y los cuatro beneficios que el texto pone uno a uno | castellano | - |
+| 2026-09-18 | decidir_poner_nota_comunicar_proposito_limites | otro_idioma | rating or no rating | ingles | - |

@@ -23,3 +23,7 @@
 13:39:09 termina insercion candidato 7
 13:40:44 arranca insercion candidato 7 (reintento)
 13:45:54 termina insercion candidato 7
+13:47:50 arranca insercion candidato 8
+13:55:18 termina insercion candidato 8
+13:57:03 arranca insercion candidato 08 (decidir_poner_nota_comunicar_proposito_limites)
+14:04:52 termina insercion candidato 08

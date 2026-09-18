@@ -42086,3 +42086,4 @@ el encargo manda y lo que las vueltas 40 y 41 no hicieron.
 | `5` | `medir_critica_respuesta_oyente_brujula` | `33` | `7` | `4` cableadas: `pedir_critica_primero...` (`D.29`, paso `4`, **arista `51`**), `ajustar_franqueza_oido_oyente` (paso `1`), `manejar_enfado_persona_desafiada` (paso `3`) y `desplegar_marco_franqueza_radical` (paso `6`) | `330` |
 | `6` | `montar_equipo_gestion_desempenio_revisar_sistema` | `12` | `3` | `0`. **`cap_14` abre.** Cola de senial **VACIA**: los `3` salen de lectura | `331` |
 | `7` | `recorrer_trece_elementos_proceso_evaluacion_formal` | `14` | `4` | **CABEZA `D.37` de una serie de `13`**, con `0` de `13` partes dentro al entrar. `1` arista EN COLA hacia `elegir_palabras_nota...`, que sigue en la bandeja | `332` |
+| `8` | `decidir_poner_nota_comunicar_proposito_limites` | `8` | `15` | `1` cableada: la **`D.37`** con su cabeza (paso `2`). **Serie `1` de `13`** | `333` |
