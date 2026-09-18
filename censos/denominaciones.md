@@ -823,3 +823,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | decidir_poner_nota_comunicar_proposito_limites | otro_idioma | rating or no rating | ingles | - |
 | 2026-09-18 | elegir_categorias_nota_palabras_propias_empresa | nombre_largo | El segundo de los trece elementos: las categorias de la nota, con el tope de tres o cuatro y las cuatro genericas resultados, trabajo en equipo, innovacion y eficiencia | castellano | - |
 | 2026-09-18 | elegir_categorias_nota_palabras_propias_empresa | otro_idioma | categories of ratings | ingles | - |
+| 2026-09-18 | escribir_escaleras_puesto_evitar_dos_extremos | nombre_largo | El tercero de los trece elementos: las escaleras de puesto, un mal necesario que se estropea tanto por demasiado especifico como por demasiado abstracto | castellano | - |
+| 2026-09-18 | escribir_escaleras_puesto_evitar_dos_extremos | otro_idioma | job ladders | ingles | - |

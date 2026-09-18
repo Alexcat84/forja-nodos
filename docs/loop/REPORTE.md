@@ -42088,3 +42088,4 @@ el encargo manda y lo que las vueltas 40 y 41 no hicieron.
 | `7` | `recorrer_trece_elementos_proceso_evaluacion_formal` | `14` | `4` | **CABEZA `D.37` de una serie de `13`**, con `0` de `13` partes dentro al entrar. `1` arista EN COLA hacia `elegir_palabras_nota...`, que sigue en la bandeja | `332` |
 | `8` | `decidir_poner_nota_comunicar_proposito_limites` | `8` | `15` | `1` cableada: la **`D.37`** con su cabeza (paso `2`). **Serie `1` de `13`** | `333` |
 | `9` | `elegir_categorias_nota_palabras_propias_empresa` | `15` | `13` | `1` cableada: la **`D.37`** con su cabeza (paso `3`). **Serie `2` de `13`** | `334` |
+| `10` | `escribir_escaleras_puesto_evitar_dos_extremos` | `7` | `12` | `1` cableada: la **`D.37`** con su cabeza (paso `4`). **Serie `3` de `13`** | `335` |
