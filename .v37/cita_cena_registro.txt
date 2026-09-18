@@ -1,0 +1,3 @@
+$ sed -n "27820p;28154p" docs/loop/REPORTE.md | cut -c1-200
+| `L323 a L332` | 382 | **0** | DIVERSIDAD E INCLUSION: la cita de Claudia Rankine, el caso de las cenas de ensayo de una participante y el taller que los autores montaron con Second City. NO hay proc
+| **9** | **`L323 a L332` (diversidad e inclusion) NO da nodo** | **`L329` cuenta una practica con su cadencia** (*cenas de espaguetis una vez al mes con amigos, y ensayad que podriais haber dicho*), 

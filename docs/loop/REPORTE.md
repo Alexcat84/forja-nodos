@@ -39264,3 +39264,54 @@ ni la `ACTA 23` ni la `ACTA 35` la nombran**, y sale de esta relectura:
 > escribe que *leer de menos cuesta una arista que nadie sabra que falta*, y aqui los cuatro destinos
 > son unicos dentro de la unidad que la linea nombra. **Si el auditor la adjudica al otro lado, las
 > cuatro aristas estan escritas arriba con su madre, su hijo y su paso, y se cablean en un solo acto.**
+
+## AC.6. **`cap_13` `L323`, LA CENA DE ENSAYO: LA DECIDO YO, Y PUBLICO LA RAZON EN LAS DOS DIRECCIONES**
+
+**`ACTA 35` `POR ADJUDICAR 7`** la deja abierta a proposito para la vuelta que inserte `cap_13`, que es
+esta. **La vuelta 23 ya la habia dejado escrita como discutible suyo**, asi que esto no nace hoy:
+
+<!-- TALLADO: parcial salida=.v37/cita_cena_registro.txt -->
+
+    $ sed -n "27820p;28154p" docs/loop/REPORTE.md | cut -c1-200
+    | `L323 a L332` | 382 | **0** | DIVERSIDAD E INCLUSION: la cita de Claudia Rankine, el caso de las cenas de ensayo de una participante y el taller que los autores montaron con Second City. NO hay proc
+    | **9** | **`L323 a L332` (diversidad e inclusion) NO da nodo** | **`L329` cuenta una practica con su cadencia** (*cenas de espaguetis una vez al mes con amigos, y ensayad que podriais haber dicho*),
+
+**LA LINEA, PEGADA** (`D.35`):
+
+<!-- TALLADO: parcial salida=.v37/cita_cena.txt -->
+
+    $ sed -n "329p" fuentes/scott_radical_candor/cap_13.md
+    How can we handle such moments in our careers? A young woman in a workshop said that she has spaghetti dinners once a month with friends and they share these stories and practice what they could have said. The practice doesn't help with the past, but it does with the future - because unfortunately these situations repeat themselves over and over, especially around issues of diversity and inclusion.
+    $ sed -n "331p" fuentes/scott_radical_candor/cap_13.md | cut -c1-190
+    We loved the idea of a "practice dinner," and wondered if there were a safe way to do this at work. We described the idea to Kelly Leonard, from The Second City, the improv theater where
+
+**LA DIRECCION QUE DICE QUE SI ES NODO, y es de verdad buena:** `L329` trae **periodo** (*una vez al
+mes*), **medio** (*con amigos*) y **dos actos** (*compartid estas historias*, *ensayad lo que podriais
+haber dicho*), y eso es un inventario de etapas y de medios, que es **la cara positiva de `D.27`**.
+Ademas `L325` plantea el problema (*que haces cuando alguien suelta algo ofensivo y te quedas sin
+habla*) y `L329` abre con la pregunta **como podemos manejar esos momentos**, que tiene forma de
+condicion de activacion.
+
+> # **MI VEREDICTO: NO ES NODO, Y COINCIDE CON LA LECTURA CIEGA DEL AUDITOR.** Tres razones, y la
+> tercera es la que decide.
+>
+> **UNA.** El inventario **no es un encargo al lector**: el libro cuenta **lo que hace una asistente a
+> un taller** (*A young woman in a workshop said that she has...*). El verbo es descriptivo y no
+> imperativo, y `D.27` pide que el libro ponga **su** inventario bajo **su** mandato.
+>
+> **DOS.** Lo que el texto hace **inmediatamente despues** no es desplegar la practica sino **anunciar
+> la suya**: *we decided to develop a workshop called Improvising Radical Candor*. Es `WHAT'S NEXT?` un
+> poco antes de su rotulo, y el propio lote ya dejo fuera `L333` por eso mismo.
+>
+> **TRES, Y ES LA QUE DECIDE:** manual `3.5` dice que **el caso no es la casa**, y que un caso entra
+> **como ejemplo nombrado dentro de la doctrina que le corresponde**. Aqui **no hay doctrina que lo
+> aloje**: `L325` y `L327` son postura mas una cita de Claudia Rankine, sin un solo acto. Extraer la
+> cena sola **haria del caso la casa**, que es exactamente lo que `3.5` prohibe. Y la senial barata que
+> el propio manual da salta a la vista: **el entregable tendria dentro un dato del caso**, la cena de
+> espaguetis.
+>
+> **VA MARCADO COMO DISCUTIBLE `2`** (`AC.5.b`), y si el auditor lo adjudica al otro lado, la frontera
+> de `cap_13` pasa de `12` piezas a `13` y `L329` pasa de resto a tramo.
+
+**`L333` `WHAT'S NEXT?` SE QUEDA FUERA Y NO LO REABRO:** es la hoja de ruta comercial de sus programas,
+la cita de Mill, la peticion de critica y el contacto. **Ni un acto encargado al lector.**
