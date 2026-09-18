@@ -42548,14 +42548,83 @@ bloquear. **Asi que inserto.**
 | **el informe de lote sellado** | **NO EXISTE.** `docs/loop/INFORME_DE_LOTE.txt` no esta en `docs/loop/` y `docs/loop/SELLOS_INFORME.jsonl` tampoco. `D.43` manda: *si el prompt no te entrega ninguno, no lo inventes y no lo lances*. **Esta vuelta no trae saldo de lote sellado**, y por eso `EE.2` mide la bandeja de los ficheros y cita el informe en seco de la linea `grove` por su commit |
 | **la cola de vecinos sellada** | **TAMPOCO.** `D.43` extendida la pone a cargo del arnes y el arnes no la ha dejado. La leo candidato a candidato en el acto de insertar, que es lo que la aduana imprime por si sola |
 
-## EE.1. TAREA 1. **LOS REGISTROS DE LA `ACTA 41`**
+## EE.1. TAREA 1. **LOS REGISTROS DE LA `ACTA 41`** (CERRADA)
 
-| # | fila |
-|---|---|
-| `1.a` | |
-| `1.b` | |
-| `1.c` | |
-| `1.d` | |
+| # | lo adjudicado | lo que hago con ello |
+|---|---|---|
+| `1.a` | los seis discutibles de la vuelta 42 se sostienen los seis, y mi clase ciega del `1` cae contra el auditor: el `SANO` sobre `dar_elogio_disciplina_igual_critica` contra `equilibrar_elogio_critica_equipo` **queda ratificado** | **nada que tocar.** Queda dicho aqui, con su linea leida hoy en `EE.1.a` |
+| `1.b` | las OCHO aristas de la `ACTA 24` `3.1` **SI son declarables** (`ACTA 41` `6.1`) | **NO las cableo esta vuelta**: son `d008` y se pagan en la 44. **NO discrepo**, y la comprobacion que me toca esta en `EE.1.b` |
+| `1.c` | mis dos caidas de la vuelta 42 son de PROSA y no acumulan (`ACTA 41` `7`) | **correccion declarada las dos, sin borrar el texto viejo**, en `EE.1.c` |
+| `1.d` | `REPORTE` vuelve a `0 de 3` y `AUDITOR` sube a `1 de 3` | **nada que tocar.** Leido con el instrumento en `EE.1.d` |
+
+### EE.1.a. El par del `1.a`, leido de su sede y no del acta
+
+*La linea `534` de `bitacora/VEREDICTOS.jsonl`, abierta hoy. Salida guardada en `.v43/par_1a.txt`.*
+
+    $ grep -n "dar_elogio_disciplina_igual_critica" bitacora/VEREDICTOS.jsonl | grep "equilibrar_elogio_critica_equipo"
+    534:{"arista": "", "candidato": "dar_elogio_disciplina_igual_critica", ... "veredicto": "SANO"}
+
+**El veredicto `534` esta escrito `SANO` y el acta lo ratifica.** No hay nada que mover en el dato, y
+lo unico que esta vuelta le debe es no volver a abrirlo.
+
+### EE.1.b. **EL `1.b` ME PIDE DISCREPAR SI DISCREPO, Y NO DISCREPO, PERO NO LO FIRMO DE OIDAS**
+
+*La regla que el acta interpreta, impresa hoy de su fichero y guardada en `.v43/manual_3_4.txt`.*
+
+    $ sed -n "81,82p" docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md
+    4. SI ES SERIE NUMERADA de un libro: un nodo por paso mas UNA cabeza, jamas
+       dos compresiones de la misma numeracion.
+
+**LA LETRA PROHIBE DOS COMPRESIONES DE LA NUMERACION.** Una arista entre dos hermanos no pone un
+segundo nodo en el sitio de la lista: cita un paso de uno que nombra al otro. **La adjudicacion se
+sostiene sobre la linea, no sobre el argumento**, y por eso la firmo sin pelearla.
+
+> **Y LO QUE NO HAGO, QUE ES LO QUE EL ENCARGO MANDA:** no las cableo hoy. Son `d008` y esta es una
+> vuelta de INSERCION, no de SANEAMIENTO.
+
+### EE.1.c. **LAS DOS CORRECCIONES DECLARADAS DE MI VUELTA 42, SIN BORRAR NADA**
+
+> ## **CORRECCION DECLARADA 1, sobre `ED.6.f` de la vuelta 42.**
+>
+> **LO QUE ESCRIBI, y sigue arriba sin tocar:** *LAS CUATRO ARISTAS DE LA `ACTA 24` SECCION `3.3`
+> QUEDAN PAGADAS LAS CUATRO.*
+>
+> **LO FALSO ES LA CITA, NO EL HECHO.** La `ACTA 24` `3.3` trata del discutible `7` y de `D.36`, que
+> es el orden de insercion, y no de aristas. **Las cuatro aristas `54` a `57` nacen en el REPORTE de
+> la vuelta 24, `TAREA 3`**, y lo que la `ACTA 24` `3.1` adjudico son **otras ocho**, las de `1.b`.
+> **La sustancia se sostiene**: las cuatro estan pagadas.
+
+> ## **CORRECCION DECLARADA 2, sobre `ED.7.e` de la vuelta 42.**
+>
+> **LO QUE ESCRIBI, y sigue arriba sin tocar:** *`cerrar_reporte.py` publica al cerrar una cola de
+> vigencia de **doce** lineas, y **once** de las doce son consecuencia mecanica de mi propio trabajo.*
+>
+> **EL INSTRUMENTO IMPRIME `72`, no `12`.** La poblacion que mi frase describia, la de la huella
+> `bdf8b8932603d104`, son `13` lineas, no `12` ni `72`. **Dije el numero de un subconjunto y le puse
+> el nombre del total.** La cifra buena de la cola entera es `72`, con su reparto `64` `RANCIO` y
+> `8` `SIN HUELLA`.
+
+### EE.1.d. El credito, leido con su instrumento y no copiado del acta
+
+*Salida de `python forja.py credito`, guardada en `.v43/credito_apertura.txt`.*
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+      tandas: 41, en 185 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            1 de 3     ACTA 41
+      CIFRA PUBLICADA    0 de 2     ACTA 41
+      CLASE              0 de 2     ACTA 41
+      DATO MOVIDO        0 de 2     ACTA 41
+      REPORTE            0 de 3     ACTA 41
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**`REPORTE` esta en `0 de 3` y ninguna especie en su tope.** Y **no anoto mi propia vuelta**, que es
+lo que `EXTRACTOR.md` 14 prohibe por su nombre: la tanda de esta vuelta la adjudica el acta.
 
 ## EE.2. TAREA 2. **LA FRONTERA DE LO QUE VOY A INSERTAR**
 
