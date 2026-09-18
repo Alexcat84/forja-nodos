@@ -1,0 +1,1 @@
+$ python forja.py informe cuarentena/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json

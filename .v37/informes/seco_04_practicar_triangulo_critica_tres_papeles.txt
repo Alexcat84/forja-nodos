@@ -1,0 +1,1 @@
+$ python forja.py informe cuarentena/scott_radical_candor/practicar_triangulo_critica_tres_papeles.json

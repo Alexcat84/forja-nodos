@@ -39232,3 +39232,35 @@ vuelta**, y la cuenta que publico al cerrar es de cuatro.
 | **3** | la arista `50` del orden de operaciones (`Tres, da critica`) **NO se cablea**, y las `49`, `51` y `52` **si** | la `ACTA 23` `3.4` sostuvo las cuatro. Yo cableo tres y dejo una por leer, asi que **me aparto de una adjudicacion a la baja** y puede que la vara sea mas ancha de lo que la leo |
 | **4** | la arista nueva a `reconocer_excelencia_trayectoria_gradual` cuelga del **paso 33** de la cabeza, el mismo del que cuelga `evitar_obsesion_ascenso_estatus` | dos hijos del mismo paso es raro, y el auditor puede leer que la segunda remision apunta a la seccion entera y no a uno de sus dos nodos |
 | **5** | `pedir_critica_primero_crear_seguridad_psicologica` entra como nodo propio y **no como `REPITE`** de `empezar_cultura_franqueza_radical` | es lo que el propio candidato marca como su sitio mas cercano a un `REPITE`, y `L87` dice que *the first edition describes this order of operations*. Lo sostengo, pero es el par mas caro de fallar del tramo |
+| **6** | la remision de `cap_12` `L13` al epilogo **NO da cuatro aristas**, y la dejo declarada sin cablear (`AC.5.c`) | los cuatro destinos son unicos dentro de la unidad que la linea nombra, y `D.36` escribe que leer de menos cuesta una arista que nadie sabra que falta |
+
+### AC.5.c. **UNA REMISION MAS QUE NADIE HA NOMBRADO, Y NO LA CABLEO: LA DECLARO Y DIGO POR QUE**
+
+**`cap_12` `L13` remite al epilogo nombrando CUATRO cosas**, y el epilogo es `cap_13`. **Ni la vuelta 23
+ni la `ACTA 23` ni la `ACTA 35` la nombran**, y sale de esta relectura:
+
+<!-- TALLADO: parcial salida=.v37/cita_epilogo.txt -->
+
+    $ sed -n "13p" fuentes/scott_radical_candor/cap_12.md | cut -c470-620
+    th this plan. So for more detailed advice on sharing your stories, soliciting criticism, giving praise, and gauging your criticism see the Afterword.
+
+**Las cuatro tienen destino unico DENTRO del epilogo**, y por eso la lectura es tentadora:
+
+| lo que `L13` nombra | la seccion del epilogo | el nodo |
+|---|---|---|
+| *sharing your stories* | `L41` `Practice: What's your story?` | `contar_cuatro_historias_propias_ver_hueco_intencion` |
+| *soliciting criticism* | `L73` `SOLICIT CRITICISM FIRST` | `pedir_critica_primero_crear_seguridad_psicologica` |
+| *giving praise* | `L247` `PRAISE: FOCUS ON THE GOOD STUFF` | `dar_elogio_disciplina_igual_critica` |
+| *gauging your criticism* | `L289` `GAUGE CRITICISM` | `medir_critica_respuesta_oyente_brujula` |
+
+> # **NO LAS CABLEO, Y LA RAZON ES LA VARA DE `EXTRACTOR.md` 9: NOMBRAR NO ES PROCEDIMENTAR**
+>
+> El paso `3` de la madre no encarga ninguno de los cuatro procedimientos: dice **si te atascas, ve al
+> epilogo**. Lo que nombra son **cuatro asuntos**, no cuatro procedimientos, y `D.27` restriccion `1`
+> excluye expresamente el inventario de **metas o de fines**: *nombrar adonde hay que llegar sigue
+> siendo nombrar*. **Una remision a una unidad entera no es una arista a cada uno de sus nodos.**
+>
+> **VA MARCADA COMO DISCUTIBLE `6`, porque la lectura contraria tiene un argumento real:** `D.36`
+> escribe que *leer de menos cuesta una arista que nadie sabra que falta*, y aqui los cuatro destinos
+> son unicos dentro de la unidad que la linea nombra. **Si el auditor la adjudica al otro lado, las
+> cuatro aristas estan escritas arriba con su madre, su hijo y su paso, y se cablean en un solo acto.**

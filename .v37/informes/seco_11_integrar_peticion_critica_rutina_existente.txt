@@ -1,0 +1,1 @@
+$ python forja.py informe cuarentena/scott_radical_candor/integrar_peticion_critica_rutina_existente.json

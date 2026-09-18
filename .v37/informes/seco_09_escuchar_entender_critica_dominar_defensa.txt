@@ -1,0 +1,1 @@
+$ python forja.py informe cuarentena/scott_radical_candor/escuchar_entender_critica_dominar_defensa.json

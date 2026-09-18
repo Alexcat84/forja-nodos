@@ -1,0 +1,1 @@
+$ python forja.py informe cuarentena/scott_radical_candor/medir_critica_respuesta_oyente_brujula.json

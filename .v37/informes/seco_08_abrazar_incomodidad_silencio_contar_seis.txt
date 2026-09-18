@@ -1,0 +1,1 @@
+$ python forja.py informe cuarentena/scott_radical_candor/abrazar_incomodidad_silencio_contar_seis.json
