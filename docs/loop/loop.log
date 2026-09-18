@@ -2179,3 +2179,18 @@ tablas que declaran instrumento : 183
 TALLADO VERDE: las 108 tabla(s) comprobables son las de su instrumento, celda a celda.
 ============================================================================
 CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+[2026-09-18 10:29:41] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : serial
+  libro que declara el encargo : scott_radical_candor
+  libro que el orden le da (D.51): scott_radical_candor
+    'scott_radical_candor' ya es de esta linea y esta CERRADO EN EXTRACCION: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: scott_radical_candor           CERRADO EN EXTRACCION  lo trabaja 'serial'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-18 10:29:41]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-18 10:29:42] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-18 10:29:42]   ultimo commit de REPORTE.md      : 2026-09-18 10:29:27 (1789741767)
+[2026-09-18 10:29:42]   ultimo commit de ACTA_AUDITOR.md : 2026-09-18 10:29:27 (1789741767)
+[2026-09-18 10:29:42] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-18 10:29:42] VUELTA 1 : EXTRACTOR (claude-opus-5)
