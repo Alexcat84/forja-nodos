@@ -42095,3 +42095,4 @@ el encargo manda y lo que las vueltas 40 y 41 no hicieron.
 | `14` | `repartir_notas_publicar_reparto_esperado` | `9` | `14` | `1` cableada: la **`D.37`** con su cabeza (paso `8`). **Serie `7` de `13`**. Escribe en `censos/atribuciones`: las cuatro cifras que la autora marca como suyas | `339` |
 | `15` | `presionar_curva_notas_evitar_forzarla` | `11` | `15` | `1` cableada: la **`D.37`** con su cabeza (paso `9`). **Serie `8` de `13`** | `340` |
 | `16` | `calibrar_notas_reunion_jefes_pares` | `15` | `14` | `1` cableada: la **`D.37`** con su cabeza (paso `10`). **Serie `9` de `13`** | `341` |
+| `17` | `evaluar_desempenio_dos_veces_anio` | `11` | `14` | `1` cableada: la **`D.37`** con su cabeza (paso `11`). **Serie `10` de `13`** | `342` |

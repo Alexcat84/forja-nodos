@@ -837,3 +837,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | presionar_curva_notas_evitar_forzarla | otro_idioma | forced curve or no | ingles | - |
 | 2026-09-18 | calibrar_notas_reunion_jefes_pares | nombre_largo | El noveno de los trece elementos: la calibracion de notas, con sus dos razones, su parada dura y la comprobacion de si el reparto se tuerce por nivel de puesto | castellano | - |
 | 2026-09-18 | calibrar_notas_reunion_jefes_pares | otro_idioma | calibration of ratings | ingles | - |
+| 2026-09-18 | evaluar_desempenio_dos_veces_anio | nombre_largo | El decimo de los trece elementos: la frecuencia, con lo que pasa si no las haces nunca y lo que pasa si las haces cada trimestre | castellano | - |
+| 2026-09-18 | evaluar_desempenio_dos_veces_anio | otro_idioma | frequency | ingles | - |
