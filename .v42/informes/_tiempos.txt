@@ -39,3 +39,5 @@
 15:05:06 termina insercion candidato 12
 15:07:48 arranca insercion candidato 13 (aplicar_consecuencias_nota_apoyar_fuerzas_persona)
 15:21:45 termina insercion candidato 13
+15:23:37 arranca insercion candidato 14 (repartir_notas_publicar_reparto_esperado)
+15:32:08 termina insercion candidato 14

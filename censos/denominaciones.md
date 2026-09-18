@@ -831,3 +831,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | elegir_palabras_nota_definirlas_empresa_entera | otro_idioma | language of ratings | ingles | - |
 | 2026-09-18 | aplicar_consecuencias_nota_apoyar_fuerzas_persona | nombre_largo | El sexto de los trece elementos: las consecuencias de la nota sobre retribucion variable, ascensos y terminaciones, con la regla de que quien esta en la nota media no asciende y con el premio que no es solo dinero | castellano | - |
 | 2026-09-18 | aplicar_consecuencias_nota_apoyar_fuerzas_persona | otro_idioma | consequences of ratings | ingles | - |
+| 2026-09-18 | repartir_notas_publicar_reparto_esperado | nombre_largo | El septimo de los trece elementos: el reparto de notas, con los porcentajes que la autora ha encontrado en su experiencia y la advertencia de no dejar que una distribucion esperada te ciegue a la realidad | castellano | - |
+| 2026-09-18 | repartir_notas_publicar_reparto_esperado | otro_idioma | distribution of ratings | ingles | - |
