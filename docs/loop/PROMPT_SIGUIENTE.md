@@ -1,204 +1,224 @@
-# ENCARGO DE LA VUELTA 40: **CERRAR LA SERIE `D.37` DE LOS CUATRO ELEMENTOS**
+# ENCARGO DE LA VUELTA 41: **CERRAR LA SERIE `D.37`, Y PAGAR LA DEUDA DE ARISTAS DE LA VUELTA 24**
 
 **Commitea y pushea lo pendiente en la rama activa antes de tocar nada.**
 
 *Linea **serial** (`extraccion-mundo-11`), la unica que inserta (`D.45`). Escrito al cerrar la
-`ACTA 38`, que audita la vuelta 39 y **no abre ninguna parada**.*
+`ACTA 39`, que audita la vuelta 40 y **no abre ninguna parada**.*
 
-> # **LIBRO DE ESTA VUELTA: `scott_radical_candor`**
+> # **LIBRO DE ESTA VUELTA: scott_radical_candor**
 
-> ## **LA VUELTA 39 SALIO LIMPIA DE TRES ESPECIES Y NO TE LO VOY A ESCONDER**
->
-> | especie | de | a |
-> |---|---:|---:|
-> | **`REPORTE`** | `2 de 3` | **`0 de 3`** |
-> | **`CIFRA PUBLICADA`** | `1 de 2` | **`0 de 2`** |
-> | **`CLASE`** | `0 de 2` | **`0 de 2`** |
->
-> **Las dos primeras las reinicia una tanda limpia por `D.38.1`, no el auditor.** Tu reporte
-> **cerro**, escribio la linea literal con `N` igual a `3`, y sus diecinueve cifras de apertura y
-> cierre me salen al digito. **Tus nueve discutibles se sostienen los nueve. Cero caidas dentro de
-> tu marcado.**
->
-> **Y HAY UNA CAIDA, Y NO ES DE LAS QUE TU MARCASTE:** `DATO MOVIDO` sube a `1 de 2`. Esta en la
-> `TAREA 1.A` y es lo primero de tu turno.
+    $ python forja.py tablero --puedo scott_radical_candor
+      LINEA 'serial', LIBRO 'scott_radical_candor': SI
+        'scott_radical_candor' ya es de esta linea ('serial'): continuarlo es lo que toca.
 
-> ## **EL TRAMO SUBE A CUATRO, Y VA CON SU ARITMETICA DELANTE**
->
-> | techo | lo medido | que sale |
-> |---|---|---:|
-> | `PASOS INVENTADOS` (`AUDITOR_FORJA.md` 8.1) | **`0,00`** por ciento en tu tramo, contra el `2,97` del anterior y el tope de `10` | **sube un escalon** |
-> | cerrar el reporte (`EXTRACTOR.md` 12.4) | **cerraste**, con la linea literal escrita | **no frena** |
-> | **el reloj, que es el que avisa** | **`896` s de media por insercion**, contra los `483` con los que se dimensiono tu tramo | **manda elegir bien los cuatro** |
->
-> **POR ESO LOS CUATRO SON ESTOS Y NO OTROS CUATRO:** los tres que le faltan a la serie `D.37` mas
-> el nodo al que `L237` entrega. **Tres de los cuatro traen su arista ya escrita y en cola**, asi
-> que se cablean solas al entrar; **y los pares mas probables del cuarto ya estan adjudicados** en
-> las lineas `488` y `500` de la bitacora. **Ninguno abre vecindad que no este ya juzgada.**
->
-> **Y LOS DOS MAS GORDOS NO ENTRAN HOY A PROPOSITO:** `dar_elogio` (`20` pasos) y `medir_critica`
-> (`33` pasos) esperan a la vuelta 41 **con su arista `49` y su `51` ya en cola**. **No estires el
-> tramo a seis.**
+---
+
+## **LO QUE PASO EN TU VUELTA, SIN ADORNO Y SIN CASTIGO DE MAS**
+
+**Entregaste cinco de tus seis piezas y las cinco me salen al digito.** Los `4` controles en sus dos
+posiciones y sus dos sedes, los tres cortes del `ceo` (`321/0/39`, `324/4/43`, `324/9/45`), el
+denominador `12` y `212`, la cola `16/11/5/0`, la medicion campo a campo del nodo rancio. **Tus NUEVE
+discutibles se sostienen los NUEVE.** Y **tu `0` `PUENTE` de `58` lo relei yo entero y lo FIRMO**, que
+es la fila que decide el volumen.
+
+**Y no entro ni un nodo.** `0` de `4`.
+
+| especie | de | a |
+|---|---:|---:|
+| **`REPORTE`** | `0 de 3` | # **`1 de 3`** |
+| `CLASE` | `0 de 2` | `0 de 2` |
+| `CIFRA PUBLICADA` | `0 de 2` | `0 de 2` |
+| `DATO MOVIDO` | `1 de 2` | **`0 de 2`**, por `D.38.1` y no por indulto mio |
+| `AUDITOR` | `1 de 3` | # **`2 de 3`**, **y es MIA**, no tuya |
+
+### **LA CAUSA ESTA MEDIDA Y ES DE UNA LINEA, ASI QUE NO LA VOY A DISFRAZAR**
+
+    $ cat .v40/informes/_cadena.txt
+      07:06:08 arranca cadena 1
+      cadena 1 arrancada (candidato 1 de 4)
+      PARADA EN abrazar_incomodidad_silencio_contar_seis
+    $ tail -1 .v40/informes/i01_abrazar_incomodidad.txt
+      CODIGO DE SALIDA: 2
+    $ grep "^BLOQUEADO" .v40/informes/i01_abrazar_incomodidad.txt
+      BLOQUEADO: faltan veredictos para escuchar_entender_critica_dominar_defensa,
+                 premiar_franqueza_hacer_escucha_tangible,
+                 contar_historias_propias_explicar_franqueza_radical
+    $ grep -c -- "--veredicto" .v40/cadena_1.sh
+      4
+
+**Tu guion traia los `4` veredictos declarados por LECTURA y ninguno de los `3` que levanta la SEÑAL.**
+La aduana los pidio, el codigo de salida fue `2`, y **eso ocurrio a las `07:12`, cuando tu turno ya
+habia cerrado a las `07:10:55`**. El encargo anterior decia, en negrita, *NO TERMINES TU TURNO CON UNA
+CADENA TODAVIA CORRIENDO*, y la vuelta 39 lo habia comprobado con su `tail` pegado.
+
+> **LO QUE NO TE CARGO, Y LO DIGO PARA QUE NO LO ARRASTRES:** la guarda que te paro **funciono**. Dos de
+> esos tres vecinos estan en bandeja y los mide la aduana desde `D.38.5`. **No perdiste la vuelta por
+> una regla injusta: la perdiste por no correr `forja.py informe` antes de escribir el guion, y por no
+> mirar el resultado antes de irte.** Las dos cosas son la `TAREA 2`.
 
 ---
 
 ## TAREA 1, BLOQUEANTE. **LOS REGISTROS**
 
-### 1.A. **DOS CARACTERES DE CONTROL `U+0008` DENTRO DE `dataset/nodos.jsonl`, Y ES LA CAIDA DE LA VUELTA**
+### 1.A. **UN VEREDICTO MAL PUESTO DE LA VUELTA 39, Y LA DEUDA DE ARISTAS QUE ARRASTRA DESDE LA 24**
 
-    $ python -c "... repr del resumen_teorico de pedir_critica_primero_crear_seguridad_psicologica ..."
-      "... y grep -o -iE '\x08ceo\x08' dataset/nodos.jsonl | wc -l d..."
+**ADJUDICADO EN LA `ACTA 39` `4.2`, CON MI CASO ESCRITO Y LA VARA APLICADA DELANTE.** Esto es lo unico
+de esta vuelta que toca un veredicto ya escrito, y por eso va primero.
 
-**LA CIFRA ES CIERTA Y ESO VA PRIMERO:** sobre `e3950c6` y sus `321` nodos, `ceo` como palabra da
-`0` y *consejero delegado* da `39`, comprobado por el auditor. **No hay cifra falsa y no es
-`CIFRA PUBLICADA`.** Lo que hay es **dato corrompido**: el comando que ese campo publica como prueba
-lleva **dos retrocesos donde tenia que llevar dos escapes**.
+    linea 498  SANO  elegir_pregunta_recurrente_pedir_critica
+                     contra abrazar_incomodidad_arrancar_critica_equipo
 
-**LA CAUSA, Y NO ES TU PULSO:** la ficha se corrigio **en bandeja** con `.v39/corregir_cand1.py`,
-porque `forja.py corregir` **solo actua sobre nodos ya insertados** y esta casa no tiene instrumento
-para corregir un candidato en bandeja. Un script escribe `"\bceo\b"` en Python y al JSON llegan dos
-caracteres de control. **De la bandeja paso al catalogo y a `cuarentena/_insertados/`.**
+**MI CASO, EN TRES LINEAS:** el `P07` de la madre dice *ten una pregunta de cabecera*, da la de Fred
+Kofman y aniade *si esas palabras no te salen solas, busca las que si*. **Nombra el trabajo y lo deja
+sin hacer.** El hijo lo hace en `24` pasos, **y su propio `P07` CORRIGE esa misma pregunta de Kofman**.
+Eso es `NOMBRAR NO ES PROCEDIMENTAR` (`P.5.1`) con la direccion escrita. **La razon de la `498` compara
+entregable contra entregable, que es la pregunta al reves** (`AUDITOR_FORJA.md` 6.1, *se pregunta que
+aniade el HIJO a la MADRE, nunca al reves*).
 
-**LO QUE HACES, Y SOLO ESTO:**
+**Y NO ES LECTURA NUEVA: es la arista `54` de la `ACTA 24`, adjudicada y SOSTENIDA hace dieciseis
+vueltas**, junto con la `55`, la `56` y la `57`, que son las de tus tres candidatos de hoy.
 
-1. **Una correccion declarada con `python forja.py corregir --nodo pedir_critica_primero_crear_seguridad_psicologica`**,
-   que diga con todas sus letras que el comando publicado en la correccion anterior **viaja con dos
-   caracteres de control** y que el comando que reproduce la cifra es
-   `grep -o -iE "\bceo\b" dataset/nodos.jsonl | wc -l`. **Sin borrar nada**, que es como corrige
-   esta casa.
-2. **Pega el barrido de control despues**, sobre los valores decodificados de `dataset/nodos.jsonl`,
-   `bitacora/VEREDICTOS.jsonl`, `config/pares_mutuos.jsonl`, `censos/` y `cuarentena/`. **Hoy el
-   unico fichero con control es ese nodo, y su copia archivada.** Si sale otro, lo declaras.
+| # | madre | hijo | `--paso` | especie | estado hoy |
+|---:|---|---|---:|---|---|
+| `54` | `abrazar_incomodidad_arrancar_critica_equipo` | `elegir_pregunta_recurrente_pedir_critica` | **7** | `D.29` | **en el grafo, SIN cable, y con un `SANO` encima** |
+| `55` | `abrazar_incomodidad_arrancar_critica_equipo` | `abrazar_incomodidad_silencio_contar_seis` | **8** | `D.29` | el hijo entra hoy |
+| `56` | `abrazar_incomodidad_arrancar_critica_equipo` | `escuchar_entender_critica_dominar_defensa` | **12** | `D.29` | el hijo entra hoy |
+| `57` | `abrazar_incomodidad_arrancar_critica_equipo` | `premiar_franqueza_hacer_escucha_tangible` | **14** | `D.29` | el hijo entra hoy |
 
-> **NO RETIRES LOS CARACTERES Y NO ESCRIBAS UN INSTRUMENTO QUE LOS RETIRE.** La correccion por
-> anexion no puede quitarlos y `7.F` de la cosecha veda la maquinaria nueva. **La pregunta de si se
-> pueden retirar ya esta en la cola de doctrina como la `11`**, escrita en `config/frentes.json` por
-> el auditor en su propia tanda. **No la dupliques y no la resuelvas.**
+**LO QUE HACES:**
 
-**Y CUENTA CON QUE ESTA CORRECCION VUELVE A DEJAR RANCIOS** los veredictos emitidos contra la huella
-vieja de ese nodo. **Es `D.15`, cola de trabajo y no gate en rojo**, y se declara con su cifra al
-cierre igual que hiciste con los `4` de la vuelta 39.
+1. **Relee el par de la `498` contra el grafo, con los pasos de los dos delante.** Si mi lectura se
+   sostiene, **corrigela por correccion declarada y sin borrar**:
 
-### 1.B. **LA CORRECCION DE LA VUELTA 39 DEJO DOS RANCIOS QUE HOY TE TOCAN A TI**
+       python forja.py anotar --linea 498 --anade "CORRECCION DECLARADA ..." --razon "..."
 
-    $ python forja.py rancios | grep "practicar_triangulo" | cut -c1-118
-      [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra abrazar_incomodidad_silencio_contar_seis (linea 4
-      [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra escuchar_entender_critica_dominar_defensa (linea 
-      [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra mejorar_consciencia_propia_relacional_dos_practic
-      [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra practicar_triangulo_critica_tres_papeles (linea 4
+   y **cablea la arista `54`** con `python forja.py arista --madre abrazar_incomodidad_arrancar_critica_equipo
+   --hijo elegir_pregunta_recurrente_pedir_critica --paso 7 --razon "..."`.
+2. **Si al leerlos discrepas, NO la corrijas: escribe tu caso y marcalo discutible.** `AUDITOR_FORJA.md`
+   1.3 dice que la discrepancia va a relectura conjunta y que **tu decides con la vara contra el grafo**.
+   Yo pongo la evidencia; **no cierro esto a martillazos.**
+3. **Las `55`, `56` y `57` van en el acto en que cada hijo entre**, con su razon escrita, **como `D.29` y
+   NO como `D.37`**.
 
-**Las lineas `484` y `485` son pares de DOS de tus cuatro candidatos de hoy.** Cuando cada uno entre,
-**relee ese par contra el texto nuevo de `practicar_triangulo` y vuelve a emitirlo, o declara por
-escrito por que el `SANO` se sostiene sin releerlo.** Las dos cosas valen; **la que no vale es
-insertar encima de un veredicto rancio sin decir nada.**
+> ### **Y AQUI VA UNA CORRECCION DE MI PROPIA SEDE, PORQUE LA CAIDA ES MIA**
+>
+> **Mi apertura sellada de esta vuelta escribio que `abrazar_incomodidad_arrancar_critica_equipo` es
+> cabeza de serie `D.37` porque *dice seis y las nombra*. Lo lei de su `TITULO`, que es un campo de esta
+> casa, no del libro.** `cap_09` **no escribe la cuenta en ningun sitio**, y la `ACTA 24` ya lo adjudico:
+> *sin cuenta no hay `D.37`*.
+>
+> **ESO ES `CIFRA PUBLICADA PROPIA` Y LA CARGO YO: `AUDITOR` sube a `2 de 3`.** Lo escribo aqui, y no
+> solo en mi acta, **porque si mi encargo te dijera `D.37` estarias tecleando mi error dentro de
+> `dataset/`.** Las cuatro son `D.29` y su razon la sostiene tu lectura, no una cuenta escrita.
 
-### 1.C. **LAS ADJUDICACIONES DE LA `ACTA 38`, RECOGIDAS Y NO REABIERTAS**
+### 1.B. **LO ADJUDICADO EN LA `ACTA 39`, RECOGIDO Y NO REABIERTO**
 
 | | lo adjudicado |
 |---|---|
-| **tus NUEVE discutibles se sostienen los nueve** | el prefijo `CC`, la reparacion sin minimo, el `0` `PUENTE`, el `P22` con la `X` de `L157`, el `P11` con `L183`, los ordinales de `L129`, el titulo del candidato `2`, el campo de `6.741` caracteres y el `SANO` de `integrar_peticion`. **Cero caidas dentro de tu marcado** |
-| **la fila de `PASOS INVENTADOS` la firma el auditor** | **tu tramo, `0` de `56`, `0,00` por ciento: FIRMADA.** `cap_13` entero, `4` de `212`, `1,89` por ciento, **sigue siendo SUELO** y el auditor no la firma: `156` de esos pasos no los ha releido el |
-| **el `P11` del candidato `3` NO es `PUENTE`** | `L181` pregunta *Where should I start?* y `L183` **si contesta**. Es prosa circular, no contenido inventado. **Tu `0` aguanta** |
-| **el prefijo `BC.6` del encargo anterior era MIO y estaba mal** | tu `grep` tenia razon. **Esta vuelta el encargo ya no te dicta prefijo** (`TAREA 4`) |
-| **mi propuesta de arista entre `resolver_dudas` y `elegir_pregunta`: RETIRADA** | tu razon de la linea `505` la gano. **El `SANO` se queda solo, sin cable** |
-| **lo que ya esta hecho y no repitas** | el auditor subio la pregunta `11` a `config/frentes.json` y **volco `docs/loop/TABLERO.jsonl`**. **No lo vuelvas a volcar salvo que cambies su sede** |
+| **tus NUEVE discutibles se sostienen los nueve** | los tres cortes del `ceo`, el verbo *medido* del `P06`, *la directora de Spanx* (`15.1` es regla de **id**, no de prosa de paso), el Rick Hanson sin `atribuciones` (ese campo es para **cifras** de autor, no para metaforas), la `L111` de `integrar_peticion`, los dos ejercicios en un nodo, la omision del ejemplo de `L229`, el `SANO` de `integrar_peticion`, y los dos rancios declarados por medicion. **Cero caidas dentro de tu marcado** |
+| **la fila de `PASOS INVENTADOS` de tu tramo la FIRMO yo** | **`0` de `58`, `0,00` por ciento: FIRMADA.** `cap_13` entero, `4` de `212`, `1,89` por ciento, **sigue siendo SUELO** y no la firmo: `154` de esos pasos no los he releido |
+| **la fidelidad `D.30` de tus tres candidatos YA ESTA HECHA** | **no la vuelvas a correr.** Son `45` de esos `58` pasos, releidos dos veces contra sus lineas, por ti y por mi. **`D.47`, modo austero: lo que el registro ya dice no se repite** |
+| **tu puntero de `DC.2.d` decia `DC.5.d` donde los discutibles estan en `DC.5.e`** | **registrado con su nombre y NO acumula**: es prosa de acompanamiento, no tabla ni conclusion (`5.2`). **No lo arregles hacia atras, solo no lo repitas** |
+| **el rojo de la suite en la fase ciega NO es tuyo y no es parada** | lo cubre *la exencion es de MOMENTO y no de fichero*. **Sube al fundador, y `D.45` prohibe que lo arregles tu** |
 
 ---
 
-## TAREA 2, BLOQUEANTE. **LA FIDELIDAD `D.30` DE LOS CUATRO, ANTES DE LA PRIMERA INSERCION**
+## TAREA 2, BLOQUEANTE. **EL METODO DE LA CADENA, ARREGLADO POR MECANICA Y NO POR PROPOSITO**
 
-`EXTRACTOR.md` 15.4. **Son `58` pasos** (`12` mas `13` mas `20` mas `13`) y van releidos **contra su
-linea del libro**, no contra el grafo.
+**ES LA TAREA QUE COSTO LA VUELTA 40 ENTERA, y por eso va antes que la extraccion.**
 
-**LA CLASE QUE SE RELEE ENTERA SIGUE SIENDO LA MISMA:** cuando un paso nombre **una persona, una
-cuenta, un escalon o un adjetivo de sentimiento**, lee la linea completa antes de marcarlo
-`TRANSCRIPCION`. **Declara cuantos releiste por ese motivo, aunque sean cero.**
+1. **CORRE `python forja.py informe` SOBRE CADA CANDIDATO ANTES DE ESCRIBIR SU GUION**, y **pega su
+   salida**. Cada `vecino` de su cola de lectura es **un `--veredicto` obligatorio**, lo levante la
+   senial o lo traigas tu. Hoy, sobre el arbol de la vuelta 40, salen asi:
 
-> **Y UNA ADVERTENCIA QUE SALE DE TU PROPIO REPORTE, NO DE LA MIA:** tu `0` de `56` de la vuelta 39
-> lo explicaste tu mismo, y tenias razon: **los tres venian ya releidos**. **Estos cuatro NO.**
-> `premiar_franqueza` trae `20` pasos y `abrazar_incomodidad` cuenta hasta seis en voz alta.
-> **Un `0` aqui valdria mucho mas que el de la vuelta pasada, y por eso no lo des por hecho.**
+       abrazar_incomodidad : 3 vecinos   escuchar_entender 0.449 | premiar_franqueza 0.353 | contar_historias 0.376
+       escuchar_entender   : 4 vecinos   cambiar_forma_trabajar 0.634 | contar_historias 0.393 | abrazar_incomodidad 0.446 | premiar_franqueza 0.363
+       premiar_franqueza   : 1 vecino    escuchar_entender 0.375
 
-**Publica la fila con su denominador dicho:** `cap_13` entero son `12` candidatos y `212` pasos.
-**Tu tramo son `4` de esos `12` y `58` de esos `212`.** La fila del capitulo **no la firmes** si no
-has releido sus `212`.
+   **Y VUELVE A CORRERLO PARA EL `2` Y EL `3` DESPUES DE QUE ENTRE EL ANTERIOR**, porque el primero que
+   entra cambia lo que el segundo mide (`EXTRACTOR.md` 12.3) **y porque dos de esos vecinos pasan hoy de
+   bandeja a grafo.** La cifra de arriba es de **antes** de la primera insercion: no la copies como si
+   fuera la de despues.
+
+2. **CUENTA LOS VEREDICTOS CONTRA LOS VECINOS ANTES DE LANZAR**, y que el guion se niegue solo si no
+   cuadran. **Una linea de `grep -c` contra el numero de vecinos del informe.**
+
+3. **TU TURNO NO TERMINA HASTA QUE EL REGISTRO DE LA CADENA DIGA QUE ACABO.** Pega el `tail` de tu
+   fichero de cadenas como ultima cosa que haces. **Si la cadena sigue viva, esperas; si murio, lo
+   dices y escribes en que candidato.** La vuelta 39 lo hizo y le salio bien; la 40 no y perdio cuatro
+   inserciones ya preparadas.
+
+> **NO ES MAQUINARIA NUEVA Y POR ESO TE LA PUEDO PEDIR** (`7.F` de la cosecha, `EXTRACTOR.md` 13): los
+> tres puntos son **un comando que ya existe**, **un `grep -c`** y **un `tail`**. No escribas un arnes,
+> no escribas una guarda, no escribas un lector.
 
 ---
 
-## TAREA 3. **`cap_13`, CUATRO CANDIDATOS EN EL ORDEN DEL LIBRO, UNO POR VEZ**
+## TAREA 3. **`cap_13`, LOS TRES QUE CIERRAN LA SERIE, UNO POR VEZ Y EN EL ORDEN DEL LIBRO**
 
-| # | candidato | linea | pasos | lo que ya tiene escrito |
+**EL TRAMO BAJA DE `4` A `3`, y lo baja `EXTRACTOR.md` 12.4**: *si una vuelta no cierra su reporte, la
+siguiente baja el tramo*. **Tu `0,00` de `PASOS INVENTADOS` decia subir; el freno manda sobre el.**
+
+| # | candidato | rotulo y linea | pasos | lo que ya tiene escrito |
 |---:|---|---|---:|---|
-| `1` | `abrazar_incomodidad_silencio_contar_seis` | `L187`, rotulo `EMBRACE THE DISCOMFORT` | 12 | **arista `D.37` en cola, linea `489`**: se cablea sola al entrar |
-| `2` | `escuchar_entender_critica_dominar_defensa` | `L199`, rotulo `LISTEN WITH THE INTENT TO UNDERSTAND` | 13 | **arista `D.37` en cola, linea `492`** |
-| `3` | `premiar_franqueza_hacer_escucha_tangible` | `L215`, rotulo `MAKE LISTENING TANGIBLE` | 20 | **arista `D.37` en cola, linea `495`** |
-| `4` | `integrar_peticion_critica_rutina_existente` | `L235`, rotulo `BUILD IT INTO YOUR EXISTING SCHEDULE` | 13 | **`SANO` ya escrito contra la cabeza (`488`) y contra `elegir_pregunta` (`500`)** |
+| `1` | `abrazar_incomodidad_silencio_contar_seis` | `EMBRACE THE DISCOMFORT`, `L187` | 12 | arista `D.37` en cola (linea `489`) **mas la `55` de `D.29`**; rancio `484` que anotar |
+| `2` | `escuchar_entender_critica_dominar_defensa` | `LISTEN WITH THE INTENT TO UNDERSTAND`, `L199` | 13 | arista `D.37` en cola (linea `492`) **mas la `56`**; rancio `485` que anotar |
+| `3` | `premiar_franqueza_hacer_escucha_tangible` | `MAKE LISTENING TANGIBLE`, `L215` | 20 | arista `D.37` en cola (linea `495`) **mas la `57`**. **Con el cierra la serie** |
 
-### 3.A. **CON EL `3` SE CIERRA LA SERIE `D.37` DE LOS CUATRO ELEMENTOS, Y ESO SE DICE EN EL REPORTE**
+### 3.A. **CON EL `3` SE CIERRA LA SERIE `D.37`, Y ESO SE ESCRIBE CON SU CIFRA**
 
-`L113` escribe *each of the four tips for soliciting criticism* y `L237` los nombra uno a uno.
-`elegir_pregunta` entro en la vuelta 39 y es el primero. **Cuando entren estos tres, las cuatro
-partes de la serie estan en el grafo con sus cuatro aristas cableadas desde la cabeza.** **Escribe
-esa frase con la cifra al lado**, porque una serie `D.37` a medias es el estado fragil y el reporte
-tiene que decir cuando deja de estarlo.
+`L113` escribe *each of the four tips for soliciting criticism offered in the book* y `L237` los nombra
+uno a uno. `elegir_pregunta` entro en la vuelta 39 y es el primero. **Cuando entren estos tres, las
+cuatro partes estan en el grafo con sus cuatro aristas `D.37` desde la cabeza de `cap_13`.** Escribe esa
+frase con la cifra al lado: **una serie a medias es el estado fragil y el reporte tiene que decir cuando
+deja de estarlo.**
 
-### 3.B. **EL CUARTO NO ES PARTE DE LA SERIE, Y SU VEREDICTO YA ESTA RAZONADO DOS VECES**
+**Y NO CONFUNDAS LAS DOS FAMILIAS DE ARISTA, que es justo donde yo me cai:**
 
-`integrar_peticion_critica_rutina_existente` es lo que `L237` manda hacer **DESPUES** de practicar
-los cuatro. **`D.37`, apartado *lo que NO autoriza*: un nodo del mismo dominio que no es ninguna de
-las cuatro es hermano, y su veredicto es `SANO`.** Tu lo escribiste asi en la linea `488` y el
-auditor lo adjudico igual por separado en su apertura sellada. **No lo pelees otra vez: escribelo y
-sigue.** Si al leer sus `13` pasos discrepas, **lo dices y lo marcas discutible.**
+| desde | especie | que la sostiene |
+|---|---|---|
+| `pedir_critica_primero_crear_seguridad_psicologica` (`cap_13`) | **`D.37`** | **la cuenta escrita**: `L113` dice *four* |
+| `abrazar_incomodidad_arrancar_critica_equipo` (`cap_09`) | **`D.29`** | **tu lectura, con razon escrita**: `cap_09` no escribe ninguna cuenta |
 
-### 3.C. **Y LOS DOS QUE NO ENTRAN, PARA QUE NO SE PIERDAN**
+### 3.B. **LOS TRES QUE NO ENTRAN, PARA QUE NO SE PIERDAN**
 
-`dar_elogio_disciplina_igual_critica` (arista `49`, linea `490`) y
-`medir_critica_respuesta_oyente_brujula` (arista `51`, linea `494`) **siguen en bandeja con su arista
-en cola**. **No los toques y no los declares cerrados.** `cap_13` queda con `2`.
+`integrar_peticion_critica_rutina_existente` (`13` pasos, `SANO` ya razonado en las lineas `488` y `500`
+y en dos aperturas selladas), `dar_elogio_disciplina_igual_critica` (`20` pasos, arista `49`, linea
+`490`) y `medir_critica_respuesta_oyente_brujula` (`33` pasos, arista `51`, linea `494`) **siguen en
+bandeja con su arista en cola.** **No los toques y no los declares cerrados.** `cap_13` **queda con `3`**.
 
 ---
 
-## TAREA 4. **EL CIERRE SIGUE SIN IR AL FINAL, Y EL PREFIJO LO ELIGES TU**
+## TAREA 4. **EL CIERRE, Y LA LINEA LITERAL ES LA MITAD DE ESTA TAREA**
 
-**LO QUE FUNCIONO EN LA VUELTA 39 SE REPITE ENTERO:** la seccion de la insercion se abre **ANTES de
-que entre el primer candidato**, con la fidelidad y los discutibles dentro, y **crece una fila cada
-vez que uno entra**, en su propio commit y con el candidato ya dentro. **Si el reloj te corta en el
-`2`, lo que falta es una linea y no una seccion.**
+**La seccion de la insercion se abre ANTES de que entre el primer candidato y crece una fila cada vez
+que uno entra**, en su propio commit. **Eso lo hiciste bien en la vuelta 40 y no hay nada que cambiar.**
 
-> ### **EL PREFIJO NO TE LO DICTO YO, Y ESTO ES UNA CORRECCION DE MI SEDE**
->
-> El encargo de la vuelta 39 escribio *abre `BC.6`* cuando `BC` era el prefijo de la vuelta 38. **Lo
-> cazaste tu y tenias razon.** Asi que esta vez el encargo nombra **el papel y el numero, no las
-> letras**:
->
->     $ grep -oE "^## [A-Z]{2}\." docs/loop/REPORTE.md | sort -u
->
-> **Abre la seccion `.6` con el prefijo que te toque segun esa salida**, y **pega la salida al lado**
-> igual que hiciste. **Lo que el encargo compra es la seccion abierta antes de la primera insercion,
-> no un par de letras.**
+**LO QUE FALTO, Y ES LO QUE `REPORTE` CARGA:**
 
-**Y LA LINEA QUE CIERRA, LITERAL, SEA CUAL SEA LA CIFRA:**
+> *la vuelta cierra en el candidato `N` de `3`; los que quedaban pasan a la vuelta siguiente.*
 
-> *la vuelta cierra en el candidato `N` de `4`; los que quedaban pasan a la vuelta siguiente.*
+**ESCRIBELA SEA CUAL SEA `N`, INCLUIDO `0` Y INCLUIDO `3`.** Cerrar completo y decirlo cuesta una linea;
+**no decirlo costo la racha dos veces antes de la tuya y una vez en la tuya.**
 
-**Escribela aunque `N` sea `4`.** Cerrar completo y decirlo cuesta una linea.
-
-**NO TERMINES TU TURNO CON UNA CADENA TODAVIA CORRIENDO.** La vuelta 39 lo comprobo en vez de
-prometerlo, con su `tail` del registro de cadenas pegado. **Hazlo igual.**
+**El prefijo lo eliges tu, con la salida pegada, igual que la vuelta 40** (`grep -oE "^## [A-Z]{2}\."
+docs/loop/REPORTE.md | sort -u`). **La seccion es la `.6`.**
 
 ---
 
 ## EL CIERRE: LAS CUATRO COSAS QUE NO SE NEGOCIAN
 
-1. **Gate, barrido de guiones y prueba de aceptacion EN VERDE**, con su salida pegada.
+1. **Gate, barrido de guiones y prueba de aceptacion EN VERDE**, con su salida pegada. Hoy abren en
+   `324`, cero y `294 / 0 / 0`.
 2. **Las cifras del cierre recomputadas al cierre** y no copiadas de tu apertura: nodos, veredictos,
    aristas, bandeja por capitulo, insertados y archivados.
-3. **La cola de aristas recontada entera**, con la cifra de las que tienen los dos extremos dentro y
-   siguen sin cable. **Hoy sale `0`. Que siga saliendo `0`.** Y cuentala **por `arista_corregida`
-   cuando la linea la traiga**: contada por el campo `arista` a secas salen `12` auto aristas viejas
-   que ya estan corregidas al lado, y ese `12` no es deuda.
-4. **Tus discutibles marcados ANTES de saber si aciertas**, y la fila de `PASOS INVENTADOS` con su
-   denominador dicho, **de tu tramo y no del capitulo**.
+3. **La cola de aristas recontada entera**, por `arista_corregida` cuando la linea la traiga. **Hoy abre
+   en `16 / 11 / 5 / 0` y la cifra que tiene que salir `0` es la ultima.** Al cerrar, con tus tres
+   dentro, deben quedar **`14` cableadas y `2` esperando** (`490` y `494`), y **`0`** con los dos
+   extremos dentro y sin cable.
+4. **Tus discutibles marcados ANTES de saber si aciertas**, y la fila de `PASOS INVENTADOS` **de tu
+   tramo y con su denominador dicho**. Si tu tramo son los tres ya releidos, **dilo y no la infles**:
+   una fila repetida no es una fila nueva.
 
 **Y COMMITEA Y PUSHEA `docs/loop/`.**
 
