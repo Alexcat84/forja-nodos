@@ -150,3 +150,7 @@
 {"cae": true, "cita": "ACTA 34 seccion 5.1", "especie": "REPORTE", "linea": "serial", "racha": "3 de 3", "tanda": "ACTA 34", "tipo": "tanda", "vuelta": 35}
 {"cae": false, "cita": "ACTA 34 seccion 6", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 34", "tipo": "tanda", "vuelta": 35}
 {"cita": "docs/loop/paradas/2026-09-17-la-tabla-de-cierre-DECISION.md, punto 2", "especie": "REPORTE", "linea": "serial", "motivo": "el remedio del punto 1 queda construido y corriendo en el hook antes de abrir la vuelta 36: scripts/tabla_de_cierre.py dentro de scripts/cerrar_reporte.py", "racha": "0 de 3", "tipo": "reinicio"}
+{"cita": "REPORTE.md AC.4.h", "especie": "REPORTE", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 35", "tipo": "tanda", "vuelta": 36}
+{"cita": "REPORTE.md AC.4.b", "especie": "CIFRA PUBLICADA", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 35", "tipo": "tanda", "vuelta": 36}
+{"cita": "REPORTE.md AC.3.e", "especie": "CLASE", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 35", "tipo": "tanda", "vuelta": 36}
+{"cae": true, "cita": "REPORTE.md AC.3.c", "especie": "DATO MOVIDO", "linea": "serial", "racha": "1 de 2", "tanda": "ACTA 35", "tipo": "tanda", "vuelta": 36}

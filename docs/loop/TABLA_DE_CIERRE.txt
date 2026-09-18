@@ -4,6 +4,6 @@ criterio : un nodo sale de un capitulo si cita scott_radical_candor/<cap>.md
 
 | # | tarea | como cerro |
 |---:|---|---|
-| 1 | **BLOQUEANTE**: el puente que ya estaba en el grafo | **CERRADA** en `AB.2`: `P13` retirado por declaracion sin elegir lectura, la cuenta del resumen corregida de `17 TRANSCRIPCION` a `16 y 1 PUENTE`, y la cifra republicada en **`1` de `181`** |
-| 2 | la fidelidad con el ojo nuevo | **CERRADA** en `AB.3`, **y antes de la primera insercion**: `0` de `91`, y el ojo nuevo **barrido a maquina**, `6` releidas de `25`, con `1` marcada |
-| 3 | cerrar `cap_09` en insercion | **CERRADA** en `AB.4`: `5` de `5`, **`15` de **`20`** del capitulo**, `3` veredictos y la arista `D.29` cableada en la misma vuelta |
+| 1 | `cap_10` entero, sus `14`, y no se parte | **CERRADA** en `AC.3`: **14 de 14 del capitulo**, `206` pasos, `36` veredictos, `8` aristas cableadas y `3` en cola |
+| 2 | la fidelidad `D.30`, antes de la primera insercion | **CERRADA** en `AC.2`, **y antes de que entrara ni un nodo**: `0` PUENTE de `206`, el barrido de las tres especies publicado tambien donde sale limpio, y su falso positivo declarado |
+| 3 | cerrar con la tabla de cierre regenerada, no tecleada | **CERRADA** en `AC.4.h`: esta misma tabla sale de `scripts/tabla_de_cierre.py --escribir` y se pega de `docs/loop/TABLA_DE_CIERRE.txt` |

@@ -1,0 +1,20 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/reconocer_excelencia_trayectoria_gradual.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'reconocer_excelencia_trayectoria_gradual'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (315 del grafo mas 33 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 2. Ninguna señal los levanto.
+  calibrar_ascensos_evitar_politica  [Calibrar los ascensos con tus iguales y conducir esa reunion sin que la politica la arruine, con los consejos que el texto da]
+    señales: familia_id 0.0, paso_contra_nodo 0.424, similitud_texto 0.244
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  evitar_obsesion_ascenso_estatus  [Evitar que el ascenso y el estatus se conviertan en obsesion cuando vas a anunciar ascensos o a elogiar en publico]
+    señales: familia_id 0.0, paso_contra_nodo 0.429, similitud_texto 0.327
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 316
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/reconocer_excelencia_trayectoria_gradual.json

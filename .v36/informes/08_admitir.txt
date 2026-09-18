@@ -29,16 +29,11 @@ VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
     familia_id         0.000 (umbral 0.30)
     paso_contra_nodo   0.466 (umbral 0.60)
     paso 5 del candidato contra paso 1 de sopesar_consejo_legal_despedir_humildad
+  arista madre-hijo cableada y escrita RESUELTA: facilitar_despido_tres_cosas > admitir_pronto_mal_desempenio_cuatro_razones
 
-BLOQUEADO: faltan veredictos para trazar_plan_dieciocho_meses_aprendizaje, sopesar_consejo_legal_despedir_humildad
-  La aduana no juzga: obliga a juzgar (manual seccion 3).
-  Vuelve a correr el comando con un veredicto por vecino:
-    --veredicto "trazar_plan_dieciocho_meses_aprendizaje|CONTINUA|madre=trazar_plan_dieciocho_meses_aprendizaje|que añade el hijo a la madre"
-    --veredicto "trazar_plan_dieciocho_meses_aprendizaje|REPITE|por que no añade procedimiento"
-    --veredicto "trazar_plan_dieciocho_meses_aprendizaje|SANO|por que no son el mismo trabajo"
-    --veredicto "trazar_plan_dieciocho_meses_aprendizaje|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
-    --veredicto "sopesar_consejo_legal_despedir_humildad|CONTINUA|madre=sopesar_consejo_legal_despedir_humildad|que añade el hijo a la madre"
-    --veredicto "sopesar_consejo_legal_despedir_humildad|REPITE|por que no añade procedimiento"
-    --veredicto "sopesar_consejo_legal_despedir_humildad|SANO|por que no son el mismo trabajo"
-    --veredicto "sopesar_consejo_legal_despedir_humildad|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
-CODIGO DE SALIDA: 2
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 310
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/admitir_pronto_mal_desempenio_cuatro_razones.json

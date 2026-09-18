@@ -745,3 +745,24 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | facilitar_despido_tres_cosas | otro_idioma | FIRING | ingles | - |
 | 2026-09-17 | facilitar_despido_tres_cosas | otro_idioma | A necessary evil | ingles | - |
 | 2026-09-17 | facilitar_despido_tres_cosas | otro_idioma | if you do three things | ingles | - |
+| 2026-09-17 | admitir_pronto_mal_desempenio_cuatro_razones | nombre_largo | La primera de las tres cosas que facilitan un despido: no esperar demasiado a admitir el bajo desempenio, con el ejercicio de las casillas que demuestra la resistencia y las cuatro razones numeradas por el texto para forzarse a identificarlo pronto | castellano | - |
+| 2026-09-17 | admitir_pronto_mal_desempenio_cuatro_razones | otro_idioma | Don't wait too long | ingles | - |
+| 2026-09-17 | calibrar_decision_despido_documentarla | nombre_largo | La segunda de las tres cosas que facilitan un despido: no tomar la decision unilateralmente, con los tres sitios donde se pide ayuda y la regla de que no basta pedir consejo, hay que conseguir que editen lo que escribes | castellano | - |
+| 2026-09-17 | calibrar_decision_despido_documentarla | sigla | PIP | castellano | - |
+| 2026-09-17 | calibrar_decision_despido_documentarla | otro_idioma | Don't make the decision unilaterally | ingles | - |
+| 2026-09-17 | calibrar_decision_despido_documentarla | otro_idioma | Performance Improvement Plan | ingles | - |
+| 2026-09-17 | sopesar_consejo_legal_despedir_humildad | nombre_largo | La tercera de las tres cosas que facilitan un despido: que te importe de verdad la persona, no quedarte atrapada en el consejo legal y de recursos humanos, preguntar cual es el riesgo de NO seguirlo, y despedir con humildad porque el problema es el puesto y no la persona | castellano | - |
+| 2026-09-17 | sopesar_consejo_legal_despedir_humildad | otro_idioma | Give a damn | ingles | - |
+| 2026-09-17 | contactar_despedido_mes_despues | nombre_largo | El seguimiento del despido: escribir al mes, mantener la oreja pegada al suelo por si aparece un puesto que le encaje, tender la mano aunque no tengas nada que ofrecer, y no insistir ni culparla si no contesta | castellano | - |
+| 2026-09-17 | contactar_despedido_mes_despues | otro_idioma | Follow up | ingles | - |
+| 2026-09-17 | calibrar_ascensos_evitar_politica | nombre_largo | La reunion de calibracion de ascensos: por que hace falta, que hizo el comite de ascensos de ingenieria de Google y por que no es perfecto, y los consejos, rotulados uno a uno por el libro, para que la politica no arruine tu propia reunion de calibracion | castellano | - |
+| 2026-09-17 | calibrar_ascensos_evitar_politica | otro_idioma | PROMOTIONS | ingles | - |
+| 2026-09-17 | calibrar_ascensos_evitar_politica | otro_idioma | Be fair | ingles | - |
+| 2026-09-17 | calibrar_ascensos_evitar_politica | otro_idioma | calibration meetings | ingles | - |
+| 2026-09-17 | evitar_obsesion_ascenso_estatus | nombre_largo | Como anunciar o no anunciar los ascensos: el correo de celebracion que no se manda, el cambio de papel que si se anuncia porque no todo cambio de papel es un ascenso, y el elogio en publico apuntado al trabajo y no al estatus | castellano | - |
+| 2026-09-17 | evitar_obsesion_ascenso_estatus | otro_idioma | Avoid promotion/status obsession | ingles | - |
+| 2026-09-17 | evitar_obsesion_ascenso_estatus | otro_idioma | REWARD YOUR ROCK STARS | ingles | - |
+| 2026-09-17 | reconocer_excelencia_trayectoria_gradual | nombre_largo | Las vias para reconocer a quien hace un trabajo excelente en trayectoria gradual sin ascenderla: el agradecimiento en persona y por escrito, el papel de experto de referencia con su condicion de honor y no de castigo, y la presentacion publica a los colegas | castellano | - |
+| 2026-09-17 | reconocer_excelencia_trayectoria_gradual | otro_idioma | Say thank-you | ingles | - |
+| 2026-09-17 | reconocer_excelencia_trayectoria_gradual | otro_idioma | Gurus | ingles | - |
+| 2026-09-17 | reconocer_excelencia_trayectoria_gradual | otro_idioma | Public presentations | ingles | - |

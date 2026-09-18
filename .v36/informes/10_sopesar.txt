@@ -1,0 +1,36 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/sopesar_consejo_legal_despedir_humildad.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'sopesar_consejo_legal_despedir_humildad'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (311 del grafo mas 37 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 1. Ninguna señal los levanto.
+  facilitar_despido_tres_cosas  [Facilitar un despido con las tres cosas que el texto cuenta, situandolo entre los dos errores opuestos de la empresa que despide demasiado facil y la que lo hace casi imposible]
+    señales: familia_id 0.0, paso_contra_nodo 0.405, similitud_texto 0.198
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino calibrar_decision_despido_documentarla  [Calibrar la decision de despido con tu jefe, tus iguales y recursos humanos, y documentarla haciendo que alguien con experiencia edite lo que escribes]
+    levantada por: similitud_texto
+    similitud_texto    0.367 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.533 (umbral 0.60)
+    paso 1 del candidato contra paso 9 de calibrar_decision_despido_documentarla
+
+  vecino admitir_pronto_mal_desempenio_cuatro_razones  [Admitir pronto que alguien de tu equipo empieza a rendir por debajo, con las cuatro razones que el texto numera para no esperar]
+    levantada por: similitud_texto
+    similitud_texto    0.365 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.485 (umbral 0.60)
+    paso 1 del candidato contra paso 5 de admitir_pronto_mal_desempenio_cuatro_razones
+  arista madre-hijo cableada y escrita RESUELTA: facilitar_despido_tres_cosas > sopesar_consejo_legal_despedir_humildad
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 312
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/sopesar_consejo_legal_despedir_humildad.json
