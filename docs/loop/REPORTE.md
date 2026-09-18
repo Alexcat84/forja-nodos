@@ -41962,15 +41962,17 @@ paso 1 de `EXTRACTOR.md` 1.
 
 ### ED.0.b. El estado del dato, contado del dato
 
-*Salida de `python .v42/estado.py`, guardada en `.v42/estado_apertura.txt`.*
+*Salida de `python .v42/estado.py`, guardada en `.v42/estado_apertura.txt`. **El instrumento no
+imprime tabla: imprime estas lineas, y por eso van pegadas y no tecleadas en celdas.***
 
-| sede | al abrir |
-|---|---:|
-| `dataset/nodos.jsonl` | 325 |
-| `bitacora/VEREDICTOS.jsonl` | 514 |
-| `cuarentena/scott_radical_candor` | 20 |
-| `cuarentena/_insertados/scott_radical_candor` | 122 |
-| `cuarentena/grove_high_output` | 23 |
+    $ python .v42/estado.py
+    poblacion: el arbol entero, sin filtrar
+    dataset/nodos.jsonl                        : 325 nodos
+    bitacora/VEREDICTOS.jsonl                  : 514 lineas
+    cuarentena/scott_radical_candor            : 20
+    cuarentena/_insertados/scott_radical_candor: 122
+    cuarentena/grove_high_output               : 23
+    la bandeja de scott por capitulo           : cap_13 5, cap_14 15
 
 **`122` de `142` insertados, quedan `20`, y con ellos el lote 4 cierra.** La bandeja por capitulo
 sale `cap_13 5, cap_14 15`. Los `23` de `grove_high_output` **no se tocan esta vuelta** (`D.51`).
