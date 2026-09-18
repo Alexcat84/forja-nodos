@@ -843,3 +843,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | montar_evaluacion_360_grados_ligera_pares | otro_idioma | 360-degree performance process or relying on a manager's unilateral assessment | ingles | - |
 | 2026-09-18 | hacer_critica_pares_transparente_ensenar_escribirla | nombre_largo | El duodecimo de los trece elementos: transparente o confidencial, con los dos beneficios y las dos pegas de la confidencialidad puestos uno a uno | castellano | - |
 | 2026-09-18 | hacer_critica_pares_transparente_ensenar_escribirla | otro_idioma | transparent or confidential | ingles | - |
+| 2026-09-18 | mantener_proceso_evaluacion_ligero_vigilar_crecimiento | nombre_largo | El decimotercero de los trece elementos: ligero o pesado, con la vigilancia activa del tiempo que el proceso consume y el impreso que se rellena en menos de treinta minutos | castellano | - |
+| 2026-09-18 | mantener_proceso_evaluacion_ligero_vigilar_crecimiento | otro_idioma | lightweight or heavyweight | ingles | - |

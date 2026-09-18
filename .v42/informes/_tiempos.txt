@@ -55,3 +55,5 @@
 16:19:22 termina insercion candidato 19
 16:19:55 arranca insercion candidato 19 (hacer_critica_pares_transparente_ensenar_escribirla)
 16:23:59 termina insercion candidato 19
+16:25:27 arranca insercion candidato 20 (mantener_proceso_evaluacion_ligero_vigilar_crecimiento)
+16:29:08 termina insercion candidato 20
