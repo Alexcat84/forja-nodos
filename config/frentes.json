@@ -147,6 +147,12 @@
         "pregunta": "Una cita medida_en que ofrece como sede una seccion que aun no se ha escrito, o un fichero que se reescribe cada vuelta. Esta cola ofrecia REPORTE.md BC.7 y BC.7 nunca se escribio; y ofrece APERTURA_CIEGA.md 13.2, que es un fichero que el arnes sobreescribe en cada vuelta. Es la pregunta 4 de esta misma cola vista desde config/.",
         "medida_en": "ACTA 37 seccion 9",
         "bloquea": false
+      },
+      {
+        "n": 11,
+        "pregunta": "Un defecto en dataset/ que NO es una cifra falsa ni un veredicto mal puesto no tiene casillero en AUDITOR_FORJA.md 5.2: su tabla pone dataset como sede de CLASE, y CLASE se define como un veredicto mal puesto. El ejemplar son los dos caracteres de control U+0008 que la vuelta 39 escribio dentro de pedir_critica_primero_crear_seguridad_psicologica.resumen_teorico al corregir la ficha EN BANDEJA con un script de la vuelta, porque forja.py corregir solo actua sobre nodos ya insertados y no hay instrumento de casa para corregir un candidato en bandeja. Dos preguntas: que especie carga un defecto de dato que no es cifra ni clase, y puede retirarse un caracter de control de un campo ya escrito, dado que la correccion por anexion no puede quitarlo y 7.F veda el instrumento nuevo.",
+        "medida_en": "ACTA 38 seccion 6",
+        "bloquea": false
       }
     ]
   }
