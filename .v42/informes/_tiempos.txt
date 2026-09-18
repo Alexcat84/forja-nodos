@@ -41,3 +41,7 @@
 15:21:45 termina insercion candidato 13
 15:23:37 arranca insercion candidato 14 (repartir_notas_publicar_reparto_esperado)
 15:32:08 termina insercion candidato 14
+15:33:35 arranca insercion candidato 15 (presionar_curva_notas_evitar_forzarla)
+15:43:16 termina insercion candidato 15
+15:43:35 arranca insercion candidato 15 (presionar_curva_notas_evitar_forzarla)
+15:53:22 termina insercion candidato 15

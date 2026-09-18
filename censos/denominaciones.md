@@ -833,3 +833,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | aplicar_consecuencias_nota_apoyar_fuerzas_persona | otro_idioma | consequences of ratings | ingles | - |
 | 2026-09-18 | repartir_notas_publicar_reparto_esperado | nombre_largo | El septimo de los trece elementos: el reparto de notas, con los porcentajes que la autora ha encontrado en su experiencia y la advertencia de no dejar que una distribucion esperada te ciegue a la realidad | castellano | - |
 | 2026-09-18 | repartir_notas_publicar_reparto_esperado | otro_idioma | distribution of ratings | ingles | - |
+| 2026-09-18 | presionar_curva_notas_evitar_forzarla | nombre_largo | El octavo de los trece elementos: curva forzada o no, con las dos maneras de hacer trampa que la curva evita y las consecuencias no buscadas que trae | castellano | - |
+| 2026-09-18 | presionar_curva_notas_evitar_forzarla | otro_idioma | forced curve or no | ingles | - |

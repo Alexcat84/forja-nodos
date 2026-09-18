@@ -1,0 +1,75 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/presionar_curva_notas_evitar_forzarla.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'presionar_curva_notas_evitar_forzarla'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 371   (339 del grafo mas 32 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 12. Ninguna señal los levanto.
+  aplicar_consecuencias_nota_apoyar_fuerzas_persona  [Aplicar las consecuencias de la nota sin dejar que la persona se hunda en lo negativo, apoyandose en sus fuerzas y con el plan que la nota mas baja obliga a abrir]
+    señales: familia_id 0.1, paso_contra_nodo 0.526, similitud_texto 0.232
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  calibrar_ascensos_evitar_politica  [Calibrar los ascensos con tus iguales y conducir esa reunion sin que la politica la arruine, con los consejos que el texto da]
+    señales: familia_id 0.125, paso_contra_nodo 0.483, similitud_texto 0.185
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  calibrar_notas_reunion_jefes_pares  [Calibrar las notas en una reunion de jefes pares, forzando la conversacion dura en vez de ajustar las notas tu, y mirar el reparto por nivel]
+    señales: familia_id 0.111, paso_contra_nodo 0.505, similitud_texto 0.341
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  decidir_poner_nota_comunicar_proposito_limites  [Decidir si pones nota de desempenio pesando las pegas y los beneficios que el texto nombra, y comunicar su proposito y sus limites si la pones]
+    señales: familia_id 0.1, paso_contra_nodo 0.419, similitud_texto 0.306
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  elegir_categorias_nota_palabras_propias_empresa  [Elegir tres o cuatro categorias de nota y expresarlas con las palabras de tu empresa, con las cuatro genericas que el texto pone de ejemplo]
+    señales: familia_id 0.1, paso_contra_nodo 0.426, similitud_texto 0.243
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  elegir_palabras_nota_definirlas_empresa_entera  [Elegir palabras y no numeros para la nota, y definir cada una en dos o tres frases para la empresa entera]
+    señales: familia_id 0.1, paso_contra_nodo 0.411, similitud_texto 0.35
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  escribir_escaleras_puesto_evitar_dos_extremos  [Escribir las escaleras de puesto evitando los dos extremos que el texto nombra, con los operativos redactando y recursos humanos editando]
+    señales: familia_id 0.1, paso_contra_nodo 0.418, similitud_texto 0.345
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  fijar_cuatro_notas_calcular_nota_global  [Fijar cuatro notas en vez de mas o menos, y calcular la nota global sin promediar las categorias]
+    señales: familia_id 0.111, paso_contra_nodo 0.429, similitud_texto 0.215
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  hacer_critica_pares_transparente_ensenar_escribirla  [Hacer transparente la critica entre pares en vez de confidencial, extenderla a toda la plantilla y ensenar a escribirla]
+    señales: familia_id 0.0, paso_contra_nodo 0.429, similitud_texto 0.305
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  montar_evaluacion_360_grados_ligera_pares  [Montar un proceso de evaluacion de trescientos sesenta grados en vez de fiarte del juicio unilateral del jefe, y hacerlo ligero para quien escribe]
+    señales: familia_id 0.0, paso_contra_nodo 0.428, similitud_texto 0.328
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  recorrer_trece_elementos_proceso_evaluacion_formal  [Recorrer los trece elementos que el texto nombra para disenar un proceso formal de evaluacion de desempenio, sabiendo que no hay talla unica]
+    señales: familia_id 0.0, paso_contra_nodo 0.444, similitud_texto 0.259
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  repartir_notas_publicar_reparto_esperado  [Repartir las notas sin una distribucion rigida y publicar el reparto que esperas, para que la calibracion no se vuelva opaca]
+    señales: familia_id 0.111, paso_contra_nodo 0.473, similitud_texto 0.295
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino evaluar_desempenio_dos_veces_anio  [Evaluar el desempenio dos veces al anio, una ligera y oral y otra escrita, sin confundir la frecuencia de la nota con la del desarrollo]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.512 (umbral 0.60)
+    paso 4 del candidato contra paso 4 de evaluar_desempenio_dos_veces_anio
+
+  vecino mantener_proceso_evaluacion_ligero_vigilar_crecimiento  [Mantener ligero el proceso de evaluacion vigilando activamente cuanto tiempo se come, con la herramienta ligera que el texto describe]
+    levantada por: similitud_texto
+    similitud_texto    0.370 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.456 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+
+  vecino manejar_enfado_persona_desafiada  [Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario]
+    levantada por: similitud_texto
+    similitud_texto    0.367 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.406 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de manejar_enfado_persona_desafiada
+  arista madre-hijo cableada y escrita RESUELTA: recorrer_trece_elementos_proceso_evaluacion_formal > presionar_curva_notas_evitar_forzarla
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 340
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 15
+CODIGO DE SALIDA: 0

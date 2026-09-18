@@ -42093,3 +42093,4 @@ el encargo manda y lo que las vueltas 40 y 41 no hicieron.
 | `12` | `elegir_palabras_nota_definirlas_empresa_entera` | `10` | `14` | `1` cableada: la **`D.37`** con su cabeza (paso `6`), que es **la que la cabeza dejo EN COLA al entrar**. **Serie `5` de `13`** | `337` |
 | `13` | `aplicar_consecuencias_nota_apoyar_fuerzas_persona` | `16` | `17` | `1` cableada: la **`D.37`** con su cabeza (paso `7`). **Serie `6` de `13`** | `338` |
 | `14` | `repartir_notas_publicar_reparto_esperado` | `9` | `14` | `1` cableada: la **`D.37`** con su cabeza (paso `8`). **Serie `7` de `13`**. Escribe en `censos/atribuciones`: las cuatro cifras que la autora marca como suyas | `339` |
+| `15` | `presionar_curva_notas_evitar_forzarla` | `11` | `15` | `1` cableada: la **`D.37`** con su cabeza (paso `9`). **Serie `8` de `13`** | `340` |
