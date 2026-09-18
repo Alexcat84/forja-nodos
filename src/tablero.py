@@ -185,6 +185,7 @@ def medir():
     activo = (declarado.get("frente_activo") or {}).get("clave")
     liberados = declarado.get("liberados") or {}
     cerrados = declarado.get("cerrados_en_extraccion") or {}
+    cosechados = declarado.get("cosechados") or {}
     mapa_worktrees = worktrees()
     existentes = ramas()
     nodos = comun.leer_jsonl(comun.RUTA_DATASET)
@@ -201,7 +202,8 @@ def medir():
         propios = [c for c in propios if c.strip()]
 
         # LA BANDEJA SE CUENTA EN EL ARBOL DE SU DUEÑO, no en este.
-        arbol = worktree if (worktree and propios) else comun.RAIZ
+        arbol = (comun.RAIZ if clave in cosechados
+                 else (worktree if (worktree and propios) else comun.RAIZ))
         bandeja = os.path.join(arbol, "cuarentena", clave)
         candidatos = _contar_json(bandeja)
         archivo = os.path.join(comun.RAIZ, "cuarentena", "_insertados", clave)
@@ -219,7 +221,14 @@ def medir():
 
         # ------------------------------------------------- el estado y su dueño
         de = "medido"
-        if rama and propios and clave not in liberados:
+        if clave in cosechados:
+            # COSECHADO: su rama ya se fundio aqui, asi que sus candidatos estan en
+            # ESTA bandeja y su racha murio con el frente (D.48). Se comprueba ANTES
+            # que la rama: la rama sigue existiendo despues de cosechar, y sin este
+            # orden un frente cosechado seguiria pareciendo un frente vivo.
+            estado, dueno = "COSECHADO", NINGUNO
+            de = "declarado: %s" % cosechados[clave]["cita"]
+        elif rama and propios and clave not in liberados:
             estado = "EN CURSO" if clave == activo else "PAUSADO"
             dueno = clave if clave == activo else NINGUNO
             de = "declarado: %s" % (declarado["frente_activo"]["cita"])
@@ -274,7 +283,7 @@ def libros(filas=None):
 
 
 def cola_de_doctrina(declarado=None):
-    """LA COLA DE DOCTRINA, UNA FILA POR PREGUNTA (`D.53` punto 4).
+    """LA COLA DE DOCTRINA, UNA FILA POR PREGUNTA (`D.56` punto 4).
 
     **Una pregunta que se contesta cuando haya tiempo y que no esta escrita en ningun
     sitio no esta en cola: esta olvidada.** Por eso vive en el tablero, que es la sede
@@ -497,7 +506,7 @@ def texto(filas=None):
     if cola:
         bloquean = [f for f in cola if f.get("bloquea")]
         partes.append("")
-        partes.append("  COLA DE DOCTRINA (D.53): %d pregunta(s), %d bloquea(n)"
+        partes.append("  COLA DE DOCTRINA (D.56): %d pregunta(s), %d bloquea(n)"
                       % (len(cola), len(bloquean)))
         for fila in sorted(cola, key=lambda f: f.get("n") or 0):
             partes.append("    %s%-2s %s"

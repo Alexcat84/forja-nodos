@@ -1,3 +1,103 @@
+# DECISION DEL FUNDADOR, 18 SEP 2026: **LA DEUDA NO BLOQUEA LA PRODUCCION**
+
+*Archiva DOS paradas a la vez: la **operativa** que escribio la sesion de chat para poder
+cosechar `grove` sin matar un turno, y la del **auditor del frente `grove`**, que llevaba
+esperando decision desde el 17 sep. **Las dos van debajo sin tocar una coma.***
+
+---
+
+## LA DECISION, LITERAL
+
+> SESION DE CHAT en forja-nodos. Commitea y pushea lo pendiente en la
+> rama activa antes de tocar nada. DECISION DEL FUNDADOR (18 sep 2026):
+> LA DEUDA NO BLOQUEA LA PRODUCCION. Archivala en docs/loop/paradas/
+> 2026-09-18-la-deuda-tiene-cadencia-DECISION.md y aplicala aunque el
+> arnes este corriendo: entra en la vuelta siguiente.
+>
+> 1. D.55, DOS CLASES DE VUELTA: VUELTA DE INSERCION y VUELTA DE
+>    SANEAMIENTO. Una vuelta de insercion abre SIN tareas de reparacion:
+>    su unico trabajo es meter candidatos al grafo por la aduana, con sus
+>    guardas de dato intactas (fidelidad D.30, cerrojo, censo, tallado).
+>    Toda deuda (aristas en cola, relecturas, cifras mal derivadas,
+>    rotulos, propuestas de doctrina) va a docs/loop/DEUDA.jsonl con su
+>    cita y su vuelta de origen, y se paga en una VUELTA DE SANEAMIENTO
+>    que corre UNA de cada CINCO, sin insertar nada. Unica excepcion: una
+>    guarda de DATO en rojo (gate, cerrojo, censo no decreciente, fidelidad
+>    con puente) bloquea en el acto, porque eso no es deuda, es averia.
+> 2. EL AUDITOR ENCARGA, NO BLOQUEA: su acta puede dejar como maximo UNA
+>    tarea bloqueante para la vuelta siguiente, y solo si cita la guarda
+>    de dato en rojo que la justifica; todo lo demas lo escribe en
+>    DEUDA.jsonl. Un acta con mas de una bloqueante sin guarda roja es
+>    caida de reporte del auditor.
+> 3. MORATORIA DE DOCTRINA HASTA EL CIERRE DEL MUNDO 11: la cola de
+>    doctrina se congela en sus 8 y no crece; el banco no gana reglas
+>    nuevas salvo que una guarda de dato lo exija con cita. Sesenta y
+>    cuatro reglas en veinte dias son suficientes para insertar 21 nodos.
+> 4. LA VUELTA 42 ES DE INSERCION, y las que siguen tambien hasta cerrar
+>    scott: cap_13 (5) y cap_14 (15), a ritmo de la vuelta 36 (14 en una
+>    vuelta). Lo que hoy esta abierto como tarea bloqueante y NO sea
+>    guarda roja pasa a DEUDA.jsonl ahora mismo. Los 6 candidatos de
+>    grove que su aduana en seco bloquearia entran a la deuda del relevo,
+>    no a la primera vuelta de insercion.
+> 5. Austero de verdad: si un turno pasa de 10 USD sin que la vuelta sea
+>    de saneamiento, el acta lo declara con el desglose de en que se fue.
+>    Escribe el PROMPT_SIGUIENTE de la 42 como vuelta de insercion pura y,
+>    si el arnes esta parado, relanzalo.
+
+### Y LAS TRES PRECISIONES QUE EL FUNDADOR ANADIO AL APLICARLA
+
+> **La cola se congela en 11, no en 8.** Congelar en 8 seria hacer desaparecer tres
+> preguntas levantadas con su medida para cuadrar mi numero, y ese es exactamente el tipo
+> de cifra que esta casa no publica. **La `9` ya esta respondida** por la decision del 17
+> sep sobre la peticion `1` de `grove`: el arnes no puede abrir la fase ciega con un
+> extractor de su misma linea vivo. **La `11` la clasifica el auditor en la vuelta de
+> saneamiento que toque, con un ejemplar delante**, porque si existe una tercera especie de
+> defecto de dato, **las cuatro guardas de `deuda.py` tienen que saber su nombre.**
+>
+> **Sobre los numeros: a partir de hoy el fundador dicta sin numero y la sesion asigna.**
+> Dos colisiones en un dia son dos avisos. **Lo dictado como `D.55` el 17 sep es `D.56`.**
+>
+> **Y EL ORDEN DE APLICACION:** primero fundir `grove`, despues clasificar la deuda. **Si
+> se clasifica antes de fundir, la deuda de `grove` llega despues y vuelve a aparecer como
+> bloqueante en la 42**, que es justo lo que `D.55` viene a impedir.
+
+---
+
+## LO QUE SE APLICO
+
+| | donde quedo |
+|---|---|
+| **la cosecha de `grove`** | fundida. `23` candidatos en bandeja, `11` conflictos resueltos **conservando los dos**, y **ni una linea de maquinaria tocada por su rama** |
+| **su registro** | `docs/loop/archivo/grove_high_output/`: `742` lineas de acta, `866` de reporte, `66` de log |
+| **`D.55`** | en el banco, con la medida que la obliga: `14` nodos en la vuelta 36, `8` en las cinco siguientes, **una en cero** |
+| **`D.53`** | en el banco: el veredicto y la arista son puertas distintas, con su prueba por reduccion |
+| **`D.56`** | mi regla del catalogo, renumerada por segunda vez, **con la leccion escrita por mi mano** |
+| **la deuda** | `docs/loop/DEUDA.jsonl`, **7 pendientes**: los cuatro remedios de `grove`, sus `6` bloqueados, la relectura de `cap_13` y la cola congelada |
+| **el tablero** | `grove` a `COSECHADO` con dueño `NINGUNO`, y `--puedo` ya dice **SI** para cuando `scott` cierre |
+| **el auditor** | `AUDITOR_FORJA.md`: **una bloqueante como maximo, y solo con guarda roja citada** |
+
+### UN DEFECTO MIO, CAZADO Y REPARADO EN EL ACTO
+
+**Al resolver la fusion conservando los dos, pegue el acta de `grove` al final de
+`ACTA_AUDITOR.md`.** `forja.py herencia` lee **la ultima acta del fichero**, asi que **la
+linea serial pasaba a heredar los remedios de `grove`**: el defecto que `D.48` vino a
+cerrar, cometido por mi mano y por la otra puerta. Lo vi al correr `forja.py herencia`
+antes de seguir.
+
+> **CONSERVAR LOS DOS NO ES PEGARLOS EN LA SEDE VIVA.** La decision dice *sus actas se
+> archivan como registro*, y archivar es ponerlas donde no se pierdan **y donde no las lea
+> quien busca la ultima vuelta de esta linea.**
+
+### Las guardas al aplicar esto
+
+    gate       325 nodos, VERDE          pruebas   305, 0 fallos
+    guiones    VERDE                     tallado   VERDE
+    censo      VERDE                     credito   ENTERO
+
+---
+
+# LAS DOS PARADAS, SIN TOCAR
+
 # PARADA OPERATIVA: **LA COSECHA DE `grove` VA ANTES DE QUE EL LOTE 4 CIERRE**
 
 *Escrita por la **sesion de chat**, no por el auditor, el 18 sep 2026. **No es un hallazgo

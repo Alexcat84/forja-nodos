@@ -77,7 +77,7 @@ class CreditoMalEscrito(Exception):
     """Una linea del registro que no se puede leer. Nunca se salta en silencio."""
 
 
-# EL VOCABULARIO DE LA CONCLUSION (D.53 punto 3, 17 sep 2026).
+# EL VOCABULARIO DE LA CONCLUSION (D.56 punto 3, 17 sep 2026).
 #
 # UNA `cita` ES UNA REFERENCIA: ruta y linea del acta. NUNCA un resultado copiado.
 # El motivo lo midio el auditor de la ACTA 32 contra el instrumento: la fase ciega
@@ -312,7 +312,7 @@ def revisar(linea=None, sucesos=None):
 
 
 def citas_con_conclusion(linea=None, sucesos=None):
-    """Las lineas del registro cuya `cita` trae una conclusion dentro (`D.53`)."""
+    """Las lineas del registro cuya `cita` trae una conclusion dentro (`D.56`)."""
     malas = []
     for suceso in (sucesos if sucesos is not None else leer(linea)):
         vale, palabra = cita_es_referencia(suceso.get("cita"))
@@ -348,7 +348,7 @@ def anotar(suceso, linea=None, ruta_registro=None):
         if not vale:
             raise CreditoMalEscrito(
                 "la cita %r trae la palabra %r dentro, y eso es una CONCLUSION, no "
-                "una referencia (D.53). Una cita es la ruta y la linea del acta: "
+                "una referencia (D.56). Una cita es la ruta y la linea del acta: "
                 "'ACTA 33, seccion 9.1'. La fase ciega lee este registro, y un "
                 "resultado copiado aqui es contaminacion."
                 % (suceso.get("cita"), palabra))
@@ -476,9 +476,9 @@ def main(argumentos):
             objetivo = linea or linea_actual()
             if not malas:
                 print("CITAS VERDES en la linea '%s': todas son referencia, ninguna "
-                      "trae una conclusion dentro (D.53)." % objetivo)
+                      "trae una conclusion dentro (D.56)." % objetivo)
                 return 0
-            print("CITAS EN ROJO en la linea '%s': %d con conclusion dentro (D.53)"
+            print("CITAS EN ROJO en la linea '%s': %d con conclusion dentro (D.56)"
                   % (objetivo, len(malas)))
             for mala in malas:
                 print("  linea %d, %s en %s: %r trae %r"

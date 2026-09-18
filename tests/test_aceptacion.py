@@ -3492,6 +3492,93 @@ class PruebaCerrojoYCenso(BaseForja):
                 self.taller, "no_commiteado.jsonl")), [])
 
 
+class PruebaDeudaNoBloquea(BaseForja):
+    """LA DEUDA NO BLOQUEA LA PRODUCCION (D.55, 18 sep 2026).
+
+    La linea metio 14 nodos en la vuelta 36 y 8 en las cinco siguientes, con una en
+    cero. No falto candidato ni mordio ninguna guarda: cada vuelta abria con una tarea
+    bloqueante de reparacion y lo que quedaba de turno ya no daba para insertar.
+    """
+
+    def _sucesos(self, *extra):
+        base = [{"tipo": "deuda", "id": "d001", "que": "una arista en cola",
+                 "cita": "ACTA 24", "vuelta": 24},
+                {"tipo": "deuda", "id": "d002", "que": "una cifra mal derivada",
+                 "cita": "ACTA 39", "vuelta": 39}]
+        return base + list(extra)
+
+    def test_lo_pendiente_es_lo_que_no_se_ha_pagado(self):
+        from scripts import deuda
+        sucesos = self._sucesos({"tipo": "pago", "id": "d001", "vuelta": 46})
+        self.assertEqual([d["id"] for d in deuda.pendientes(sucesos)], ["d002"])
+
+    def test_caso_positivo_a_las_cinco_vueltas_toca_SANEAMIENTO(self):
+        from scripts import deuda
+        sucesos = self._sucesos({"tipo": "saneamiento", "vuelta": 41})
+        clase, motivo = deuda.clase_de_vuelta(46, sucesos)
+        self.assertEqual(clase, "SANEAMIENTO")
+        self.assertIn("cadencia", motivo)
+
+    def test_caso_negativo_antes_de_las_cinco_es_de_INSERCION(self):
+        from scripts import deuda
+        sucesos = self._sucesos({"tipo": "saneamiento", "vuelta": 41})
+        self.assertEqual(deuda.clase_de_vuelta(44, sucesos)[0], "INSERCION")
+
+    def test_sin_deuda_pendiente_no_hay_nada_que_sanear(self):
+        from scripts import deuda
+        sucesos = [{"tipo": "saneamiento", "vuelta": 41}]
+        clase, motivo = deuda.clase_de_vuelta(99, sucesos)
+        self.assertEqual(clase, "INSERCION")
+        self.assertIn("no hay deuda", motivo)
+
+    def test_la_cadencia_se_cuenta_desde_la_ULTIMA_de_saneamiento(self):
+        """Y no por el resto de una division: un contador por calendario castigaria a
+        la vuelta equivocada, y el registro no podria explicar por que le toco a esa."""
+        from scripts import deuda
+        sucesos = self._sucesos({"tipo": "saneamiento", "vuelta": 41},
+                                {"tipo": "saneamiento", "vuelta": 50})
+        self.assertEqual(deuda.clase_de_vuelta(54, sucesos)[0], "INSERCION")
+        self.assertEqual(deuda.clase_de_vuelta(55, sucesos)[0], "SANEAMIENTO")
+
+    def test_caso_positivo_una_deuda_sin_cita_no_se_escribe(self):
+        """Una deuda que no se puede releer no se paga."""
+        from scripts import deuda
+        destino = os.path.join(self.taller, "d.jsonl")
+        with self.assertRaises(deuda.DeudaMalEscrita):
+            deuda.anotar({"tipo": "deuda", "que": "algo", "vuelta": 41}, destino)
+
+    def test_caso_positivo_una_deuda_sin_vuelta_de_origen_tampoco(self):
+        from scripts import deuda
+        destino = os.path.join(self.taller, "d.jsonl")
+        with self.assertRaises(deuda.DeudaMalEscrita):
+            deuda.anotar({"tipo": "deuda", "que": "algo", "cita": "ACTA 1"}, destino)
+
+    def test_caso_negativo_con_su_cita_y_su_vuelta_si(self):
+        from scripts import deuda
+        destino = os.path.join(self.taller, "d.jsonl")
+        escrito = deuda.anotar({"tipo": "deuda", "que": "algo", "cita": "ACTA 1",
+                                "vuelta": 41}, destino)
+        self.assertTrue(escrito["id"])
+        self.assertEqual(len(deuda.leer(destino)), 1)
+
+    def test_una_linea_ilegible_no_se_salta_en_silencio(self):
+        from scripts import deuda
+        destino = os.path.join(self.taller, "d.jsonl")
+        comun.escribir_texto(destino, "{no es json}" + chr(10))
+        with self.assertRaises(deuda.DeudaMalEscrita):
+            deuda.leer(destino)
+
+    def test_las_guardas_que_SI_bloquean_son_cuatro_y_estan_nombradas(self):
+        """Eso no es deuda: es averia, y una averia se arregla antes de seguir."""
+        from scripts import deuda
+        for guarda in ("gate", "cerrojo", "censo_no_decrece", "fidelidad"):
+            self.assertIn(guarda, deuda.GUARDAS_DE_DATO)
+
+    def test_el_registro_vivo_del_repo_se_lee(self):
+        from scripts import deuda
+        self.assertTrue(deuda.leer(), "docs/loop/DEUDA.jsonl vacio o ilegible")
+
+
 class PruebaTablaDeCierre(BaseForja):
     """TODA TABLA DEL REPORTE DECLARA SU INSTRUMENTO (D.52, 17 sep 2026).
 
@@ -3669,7 +3756,7 @@ class PruebaExencionDeMomento(BaseForja):
 
 
 class PruebaDatasetEsElCatalogo(BaseForja):
-    """dataset/ ES EL CATALOGO Y NADA MAS (D.53, 17 sep 2026).
+    """dataset/ ES EL CATALOGO Y NADA MAS (D.56, 17 sep 2026).
 
     El 17 sep un turno commiteo con `git add -A` mientras una insercion corria, y el
     cerrojo VIVO entro en git DENTRO de dataset/. Un checkout de ese commit entrega el
@@ -3729,7 +3816,7 @@ class PruebaDatasetEsElCatalogo(BaseForja):
 
 
 class PruebaCitaEsReferencia(BaseForja):
-    """LA CITA DEL REGISTRO DE CREDITO ES UNA REFERENCIA (D.53 punto 3).
+    """LA CITA DEL REGISTRO DE CREDITO ES UNA REFERENCIA (D.56 punto 3).
 
     Lo levanto el auditor de la ACTA 32 contra el instrumento: la fase ciega leia el
     registro de credito, y el `cita` de una tanda ajena le dijo `11 SANO` ANTES de que
@@ -3812,7 +3899,7 @@ class PruebaCitaEsReferencia(BaseForja):
 
 
 class PruebaColaDeDoctrina(BaseForja):
-    """LAS PREGUNTAS EN COLA VIVEN EN EL TABLERO (D.53 punto 4).
+    """LAS PREGUNTAS EN COLA VIVEN EN EL TABLERO (D.56 punto 4).
 
     Una pregunta que se contesta cuando haya tiempo y que no esta escrita en ningun
     sitio no esta en cola: esta olvidada.
@@ -4568,7 +4655,8 @@ def main():
              PruebaGuardaDelTablero, PruebaOrdenDePrioridad,
              PruebaDatasetEsElCatalogo, PruebaCitaEsReferencia,
              PruebaColaDeDoctrina, PruebaTablaDeCierre,
-             PruebaPasoRetiradoDelCampo, PruebaExencionDeMomento]
+             PruebaPasoRetiradoDelCampo, PruebaExencionDeMomento,
+             PruebaDeudaNoBloquea]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -4634,11 +4722,11 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaGuardaDelTablero)._tests))
     print("  D.51, el orden lo da el tablero, y el corte del mundo 11: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaOrdenDePrioridad)._tests))
-    print("  D.53, dataset es el catalogo y el cerrojo vive fuera: %d pruebas mas"
+    print("  D.56, dataset es el catalogo y el cerrojo vive fuera: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaDatasetEsElCatalogo)._tests))
-    print("  D.53, la cita del credito es referencia y no resultado: %d pruebas mas"
+    print("  D.56, la cita del credito es referencia y no resultado: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaCitaEsReferencia)._tests))
-    print("  D.53, la cola de doctrina vive en el tablero: %d pruebas mas"
+    print("  D.56, la cola de doctrina vive en el tablero: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaColaDeDoctrina)._tests))
     print("  D.52, toda tabla del reporte declara su instrumento: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaTablaDeCierre)._tests))
@@ -4646,6 +4734,8 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaPasoRetiradoDelCampo)._tests))
     print("  la exencion del censo es de MOMENTO y no de fichero: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaExencionDeMomento)._tests))
+    print("  D.55, la deuda no bloquea la produccion: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaDeudaNoBloquea)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

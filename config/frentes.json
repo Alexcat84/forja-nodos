@@ -21,9 +21,9 @@
     "que_dice": "dos lineas y no mas: la principal siempre activa, y UN solo frente de extraccion"
   },
   "frente_activo": {
-    "clave": "grove_high_output",
-    "cita": "decision del fundador del 17 sep 2026, punto 4",
-    "que_dice": "hoy grove_high_output hasta cerrar su libro"
+    "clave": null,
+    "cita": "decision del fundador del 18 sep 2026, punto 4",
+    "que_dice": "UNA SOLA LINEA a partir de ahora: la serial, con el TABLERO y su prioridad. Ya no hay frente de extraccion activo."
   },
   "liberados": {
     "gerber_emyth": {
@@ -140,7 +140,11 @@
         "n": 9,
         "pregunta": "Puede el arnes abrir la fase ciega del auditor con un proceso del extractor todavia vivo? Dos vueltas seguidas la poblacion se movio dentro de la fase sellada, y en la vuelta 38 con la pagina abierta: el mismo forja.py gate dio 320 y despues 321 dentro del mismo turno. Es maquinaria del arnes y la moratoria de D.45 la protege.",
         "medida_en": "ACTA 37 seccion 8",
-        "bloquea": false
+        "bloquea": false,
+        "resuelta": {
+          "cita": "decision del fundador del 17 sep 2026, punto 3, sobre la peticion 1 del frente grove",
+          "respuesta": "NO PUEDE. El arnes no abre el turno del auditor mientras el extractor de su misma linea tenga proceso vivo."
+        }
       },
       {
         "n": 10,
@@ -152,8 +156,24 @@
         "n": 11,
         "pregunta": "Un defecto en dataset/ que NO es una cifra falsa ni un veredicto mal puesto no tiene casillero en AUDITOR_FORJA.md 5.2: su tabla pone dataset como sede de CLASE, y CLASE se define como un veredicto mal puesto. El ejemplar son los dos caracteres de control U+0008 que la vuelta 39 escribio dentro de pedir_critica_primero_crear_seguridad_psicologica.resumen_teorico al corregir la ficha EN BANDEJA con un script de la vuelta, porque forja.py corregir solo actua sobre nodos ya insertados y no hay instrumento de casa para corregir un candidato en bandeja. Dos preguntas: que especie carga un defecto de dato que no es cifra ni clase, y puede retirarse un caracter de control de un campo ya escrito, dado que la correccion por anexion no puede quitarlo y 7.F veda el instrumento nuevo.",
         "medida_en": "ACTA 38 seccion 6",
-        "bloquea": false
+        "bloquea": false,
+        "encargada_en": {
+          "cita": "decision del fundador del 18 sep 2026",
+          "que_dice": "En la vuelta de SANEAMIENTO que toque, el auditor la clasifica CON UN EJEMPLAR DELANTE: si existe una tercera especie de defecto de dato, las cuatro guardas de deuda.py tienen que saber su nombre."
+        }
       }
-    ]
+    ],
+    "congelada": {
+      "cita": "decision del fundador del 18 sep 2026, punto 3",
+      "que_dice": "La cola se congela en las que ya tiene y NO crece hasta que el mundo 11 cierre. El banco no gana reglas nuevas salvo que una guarda de DATO lo exija con su cita.",
+      "cuantas": 11,
+      "nota": "El fundador dicto 'se congela en sus 8' y eran 11: tres entraron mientras el arnes corria la noche del 17 al 18. Se congela en 11 por decision suya del 18 sep: congelar en 8 seria hacer desaparecer tres preguntas levantadas con su medida para cuadrar un numero, y esa es la clase de cifra que esta casa no publica."
+    }
+  },
+  "cosechados": {
+    "grove_high_output": {
+      "cita": "decision del fundador del 17 sep 2026, aplicada el 18",
+      "que_dice": "PAUSADO COSECHADO con dueño NINGUNO. Sus 23 candidatos estan en la bandeja de esta rama y su racha murio con el frente (D.48). La serial lo toma al cerrar scott_radical_candor, desde el capitulo siguiente al ultimo minado y citando su frontera heredada."
+    }
   }
 }

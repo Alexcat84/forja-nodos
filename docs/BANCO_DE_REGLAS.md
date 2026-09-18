@@ -2762,14 +2762,19 @@ continua** (`cap_11`).
 
 ---
 
-## D.53. `dataset/` ES EL CATALOGO Y NADA MAS (17 sep 2026, decision del fundador)
+## D.56. `dataset/` ES EL CATALOGO Y NADA MAS (17 sep 2026, decision del fundador)
 
-> ### RENUMERADA EL MISMO DIA. **ERA `D.52` Y PASA A `D.53`.**
+> ### RENUMERADA DOS VECES. **FUE `D.52`, FUE `D.53`, Y ES `D.56`.**
 >
-> El numero se lo puse yo esta manana, porque aquella decision no venia numerada. **El
-> fundador asigno `D.52` por la tarde a otra regla** (la tabla de cierre), y **el numero
-> del fundador manda sobre el mio**, igual que paso con `D.45` y `D.46` el 16 sep. **El
+> **Las dos veces por lo mismo y las dos veces contra mi:** la decision que la creo no
+> venia numerada, **le puse un numero yo**, y el fundador uso ese numero despues para otra
+> regla. Primero `D.52` (la tabla de cierre), luego `D.53` (el veredicto y la arista). **El
+> numero del fundador manda sobre el mio**, igual que con `D.45` y `D.46` el 16 sep. **El
 > contenido no cambia: solo el numero.**
+>
+> **Y LA LECCION ES MIA, NO DEL FUNDADOR:** numerar yo una regla que el fundador dicta sin
+> numero **invita a la colision**. Lo que corresponde es escribirla sin numero y pedirlo.
+> **Dos renumeraciones del mismo texto en un dia son dos avisos.**
 >
 > **LO QUE NO SE REESCRIBE, Y SE DICE:** las actas, el reporte y la parada ya archivada
 > siguen diciendo `D.52` donde esta regla era `D.52`. **Son registro de lo que se escribio
@@ -2971,3 +2976,123 @@ que la maquina consume.
 **Y NINGUN INSTRUMENTO DE LA CASA REESCRIBIA UN PASO DE UN NODO YA INSERTADO**, que es el
 motivo real de que la retirada se quedara en la prosa: **no habia por donde hacerlo.**
 `forja.py corregir` toca el `resumen_teorico`; el paso no lo tocaba nadie.
+
+---
+
+## D.53. EL VEREDICTO Y LA ARISTA SON PUERTAS DISTINTAS (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026, punto 2. **Es la pregunta `5` de la parada de
+`grove`, decidida**, y `grove` la levanto adjudicando contra si mismo.*
+
+### La letra
+
+> **UN `SANO` PUEDE LLEVAR ARISTA DECLARADA, Y DECLARARLA NO LO CONVIERTE EN `CONTINUA`.**
+>
+> **El veredicto dice si un par REPITE, CONTINUA o esta SANO en su procedimiento.** **La
+> arista dice si hay RELACION DECLARABLE entre los dos.** Son dos preguntas distintas y se
+> contestan por separado.
+>
+> Dos nodos sanos pueden estar unidos **por serie declarada** (`D.37`) o **por jerarquia
+> leida** (`D.19`, `D.29`).
+
+### La prueba por reduccion, que es la que cierra la discusion
+
+> **SI UN `SANO` CON ARISTA FUESE `CONTINUA`, `D.37` SERIA IMPOSIBLE: toda cabeza de serie
+> devoraria sus partes.**
+
+`D.37` manda declarar arista **de la cabeza a cada una de sus partes** cuando el texto dice
+cuantas hay y las nombra. Si declarar esa arista convirtiera el par en `CONTINUA`, **la
+cabeza y cada parte serian el mismo procedimiento**, y una serie de diez quedaria reducida
+a uno. **La regla que existe desde el 10 sep no podria aplicarse ni una sola vez.**
+
+### Quien la levanto, y como
+
+**El auditor del frente `grove`**, en su `ACTA 32`. La adjudico como `CONTINUA` **porque
+`AUDITOR_FORJA.md` 3 le obliga a adjudicar lo que una regla escrita cubre**, y acto seguido
+escribio que **si el fundador leia lo contrario, una de sus propias caidas desaparecia**:
+
+> *si tu lees que un `SANO` puede convivir con una arista `D.29`, mi caida de `3.3`
+> desaparece y la racha se queda en `4`.*
+
+**ES LA SEGUNDA VEZ QUE ESE AUDITOR ELIGE LA LECTURA QUE LE CUESTA** teniendo la contraria
+delante y escrita. **Queda escrito quien levanto la pregunta.**
+
+**Los dos veredictos que `grove` adjudico como `CONTINUA` por la lectura vieja se re
+adjudican en la linea serial bajo `D.53`, con correccion declarada**, y **la caida suya que
+dependia de ello se retira citando esta decision.**
+
+---
+
+## D.55. LA DEUDA NO BLOQUEA LA PRODUCCION: DOS CLASES DE VUELTA (18 sep 2026, decision del fundador)
+
+*Decision del fundador del 18 sep 2026. **Nace de una medida, no de una molestia.***
+
+### La medida que la obliga
+
+**La linea serial metio `14` nodos en la vuelta `36`, en una sola vuelta. En las cinco
+siguientes metio `8` en total, y una de ellas metio CERO.** No falto candidato ni mordio
+ninguna guarda: **cada vuelta abria con una tarea bloqueante de reparacion**, y lo que
+quedaba de turno ya no daba para insertar.
+
+    V.38  TAREA 1.A: la arista en cola de la linea 469 cableada
+    V.39  TAREAS 1 y 2, todas ANTES de la primera insercion
+    V.40  TAREA 1.A CERRADA: los dos U+0008 corregidos        (0 nodos)
+    V.41  TAREA 1.A CERRADA: la 498 releida contra el grafo   (0 nodos)
+
+### La letra
+
+> **HAY DOS CLASES DE VUELTA.**
+>
+> **VUELTA DE INSERCION:** abre **SIN tareas de reparacion**. Su unico trabajo es **meter
+> candidatos al grafo por la aduana**, con sus guardas de dato intactas (fidelidad `D.30`,
+> cerrojo, censo, tallado).
+>
+> **VUELTA DE SANEAMIENTO:** corre **UNA de cada CINCO**, **sin insertar nada**, y paga la
+> deuda.
+>
+> **TODA DEUDA VA A `docs/loop/DEUDA.jsonl` con su cita y su vuelta de origen**: aristas en
+> cola, relecturas, cifras mal derivadas, rotulos, propuestas de doctrina.
+>
+> **UNICA EXCEPCION:** **una guarda de DATO en rojo** (`gate`, cerrojo, censo no
+> decreciente, fidelidad con puente) **bloquea en el acto**, porque **eso no es deuda: es
+> averia.**
+
+### El auditor encarga, no bloquea
+
+> **SU ACTA PUEDE DEJAR COMO MAXIMO UNA TAREA BLOQUEANTE** para la vuelta siguiente, **y
+> solo si cita la guarda de dato en rojo que la justifica.** Todo lo demas lo escribe en
+> `DEUDA.jsonl`.
+>
+> **Un acta con mas de una bloqueante sin guarda roja es CAIDA DE REPORTE del auditor.**
+
+**POR QUE ESTO ES SANO Y NO UN INDULTO:** la deuda **no se perdona, se agenda**. Sigue
+escrita, con su cita y su vuelta de origen, y **se paga junta**, que ademas es mas barato:
+cuatro reparaciones en una vuelta cuestan menos que cuatro vueltas con una reparacion cada
+una. **Lo que se acaba es que una arista de hace dieciseis vueltas decida cuantos nodos
+entran hoy.**
+
+### El austero, con cifra
+
+> **Si un turno pasa de `10` USD sin que la vuelta sea de saneamiento, el acta lo declara
+> con el desglose de en que se fue.**
+
+**Hoy la media es `14,92` por turno**, asi que esto no es teorico: **es la mayoria.** No
+prohibe gastar; **obliga a decir en que**, que es lo unico que deja decidir despues.
+
+### El instrumento
+
+    python scripts/deuda.py                  lo pendiente, y que clase toca
+    python scripts/deuda.py --anotar ...     contrae una deuda, con su cita
+    python scripts/deuda.py --pagar <id>     la salda, en su vuelta de saneamiento
+    python scripts/deuda.py --clase N        INSERCION o SANEAMIENTO para esa vuelta
+
+**LA CADENCIA SE CUENTA DESDE LA ULTIMA DE SANEAMIENTO**, no contra un calendario fijo: si
+se contara por el resto de una division, **una vuelta perdida correria el turno de todas
+las demas** y el registro dejaria de poder explicar por que le toco a esa.
+
+### Y la doctrina se congela hasta que el mundo 11 cierre
+
+> **LA COLA DE DOCTRINA NO CRECE**, y **el banco no gana reglas nuevas salvo que una guarda
+> de dato lo exija con su cita.**
+
+**Sesenta y cuatro reglas en veinte dias son suficientes para insertar `21` nodos.**

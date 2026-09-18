@@ -436,6 +436,45 @@ seccion es ley escrita sin casos, y su contador esta en cero.
 > y **el paso de fundir es del fundador**. Escribe la peticion nombrando la rama y el
 > estado, y **para**.
 
+> ### **18 sep 2026, decision del fundador: EL AUDITOR ENCARGA, NO BLOQUEA** (`D.55`)
+>
+> > **TU ACTA PUEDE DEJAR COMO MAXIMO UNA TAREA BLOQUEANTE** para la vuelta siguiente, **y
+> > solo si cita la guarda de DATO en rojo que la justifica.** Todo lo demas lo escribes en
+> > **`docs/loop/DEUDA.jsonl`**, con su cita y su vuelta de origen.
+> >
+> > **Un acta con mas de una bloqueante sin guarda roja es CAIDA DE REPORTE tuya.**
+>
+> **LAS CUATRO GUARDAS QUE SI BLOQUEAN**, y solo esas: `gate`, el cerrojo, el censo no
+> decreciente y la fidelidad `D.30` con puente. **Eso no es deuda: es averia**, y una averia
+> se arregla antes de seguir.
+>
+>     python scripts/deuda.py --anotar --que "..." --cita "..." --vuelta 41
+>     python scripts/deuda.py                         lo pendiente y que clase toca
+>
+> **POR QUE, Y ESTA MEDIDO:** la linea metio `14` nodos en la vuelta `36` y `8` en las cinco
+> siguientes, **con una en cero**. No falto candidato ni mordio ninguna guarda: **cada vuelta
+> abria con una reparacion y lo que quedaba de turno ya no daba para insertar.** La deuda
+> **no se perdona, se agenda**: se paga junta en una vuelta de saneamiento, **una de cada
+> cinco**, y sale mas barato que cuatro vueltas con una reparacion cada una.
+>
+> **LO QUE SIGUE SIENDO TUYO, Y NO CAMBIA:** adjudicar, releer a ciegas, cargarte tus
+> propias caidas y **parar cuando la decision sea del fundador**. Lo unico que cambia es
+> **cuando se cobra la reparacion**, no si se cobra.
+
+> ### **18 sep 2026: LA DOCTRINA SE CONGELA HASTA QUE EL MUNDO 11 CIERRE** (`D.55`)
+>
+> **LA COLA DE DOCTRINA NO CRECE.** Se queda en las **`11`** que ya tiene, y **el banco no
+> gana reglas nuevas salvo que una guarda de DATO lo exija con su cita.**
+>
+> **Si encuentras una pregunta nueva de doctrina: registrala en tu acta con su medida y
+> DEJALA AHI.** No abre parada, no entra en la cola y no va al banco. **Sesenta y cuatro
+> reglas en veinte dias son suficientes para insertar `21` nodos.**
+>
+> **Y EL AUSTERO GANA UNA CIFRA:** si un turno pasa de **`10` USD** y la vuelta **no** es de
+> saneamiento, **tu acta lo declara con el desglose de en que se fue**. No prohibe gastar:
+> **obliga a decir en que**, que es lo unico que deja decidir despues. La media de hoy es
+> `14,92` por turno, asi que esto no es teorico: **es la mayoria.**
+
 ### 5.1. Que se relee, y en que orden
 
 La relectura ciega **empieza siempre por los discutibles que el extractor marco

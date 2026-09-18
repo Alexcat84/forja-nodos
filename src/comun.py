@@ -40,7 +40,7 @@ DIR_CENSOS = _ruta("FORJA_CENSOS", "censos")
 # la prueba de aceptacion mediria contra los candidatos del repo de verdad.
 DIR_CUARENTENA = _ruta("FORJA_CUARENTENA", "cuarentena")
 
-# LOS FICHEROS DE COORDINACION VIVEN FUERA DE `dataset/` (D.53, 17 sep 2026).
+# LOS FICHEROS DE COORDINACION VIVEN FUERA DE `dataset/` (D.56, 17 sep 2026).
 # `dataset/` contiene el catalogo y nada mas. Un cerrojo es un fichero de proceso,
 # con el pid de quien escribe en ese instante, y el 17 sep 2026 uno entro en git
 # desde dentro de `dataset/`: commiteado, un checkout entrega el cerrojo de un

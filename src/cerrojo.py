@@ -18,7 +18,7 @@ en `V.5.e` antes de arreglarla:
 quitan un nodo entero sigue siendo coherente, solo que mas pequenio. **Ninguna de
 las doce guardas lo veia.**
 
-DONDE VIVE, DESDE EL 17 sep 2026 (`D.53`): en `procesos/`, **nunca dentro de
+DONDE VIVE, DESDE EL 17 sep 2026 (`D.56`): en `procesos/`, **nunca dentro de
 `dataset/`**. `dataset/` contiene el catalogo y nada mas.
 
 COMO FUNCIONA, Y POR QUE ASI. Un fichero de cerrojo creado con `O_EXCL`, que es
@@ -55,7 +55,7 @@ class CerrojoOcupado(Exception):
 
 
 def ruta_de(ruta_dataset):
-    """LA SEDE DEL CERROJO VIVE FUERA DE `dataset/` (`D.53`, 17 sep 2026).
+    """LA SEDE DEL CERROJO VIVE FUERA DE `dataset/` (`D.56`, 17 sep 2026).
 
     **Era `dataset/nodos.jsonl.cerrojo` y es `procesos/nodos.jsonl.<huella>.cerrojo`.**
     El 17 sep 2026 el turno de un extractor commiteo con `git add -A` mientras una
@@ -116,7 +116,7 @@ class tomar(object):
         self.mio = False
 
     def _intentar(self):
-        # La sede vive fuera de `dataset/` (D.53) y puede no existir todavia: se crea
+        # La sede vive fuera de `dataset/` (D.56) y puede no existir todavia: se crea
         # ANTES del O_EXCL, que es lo unico que no puede fallar por otro motivo.
         carpeta = os.path.dirname(self.ruta)
         if carpeta and not os.path.isdir(carpeta):
