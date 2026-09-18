@@ -155,3 +155,8 @@
 {"cita": "REPORTE.md AC.3.e", "especie": "CLASE", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 35", "tipo": "tanda", "vuelta": 36}
 {"cae": true, "cita": "REPORTE.md AC.3.c", "especie": "DATO MOVIDO", "linea": "serial", "racha": "1 de 2", "tanda": "ACTA 35", "tipo": "tanda", "vuelta": 36}
 {"cae": true, "cita": "ACTA 35, seccion 5", "especie": "AUDITOR", "linea": "serial", "racha": "1 de 3", "tanda": "ACTA 35", "tipo": "tanda", "vuelta": 36}
+{"cae": false, "cita": "ACTA 36 10", "especie": "CLASE", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 36", "tipo": "tanda", "vuelta": 37}
+{"cae": false, "cita": "ACTA 36 10", "especie": "CIFRA PUBLICADA", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 36", "tipo": "tanda", "vuelta": 37}
+{"cae": true, "cita": "ACTA 36 5", "especie": "REPORTE", "linea": "serial", "racha": "1 de 3", "tanda": "ACTA 36", "tipo": "tanda", "vuelta": 37}
+{"cae": false, "cita": "ACTA 36 10", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 36", "tipo": "tanda", "vuelta": 37}
+{"cae": true, "cita": "ACTA 36 8", "especie": "AUDITOR", "linea": "serial", "racha": "2 de 3", "tanda": "ACTA 36", "tipo": "tanda", "vuelta": 37}

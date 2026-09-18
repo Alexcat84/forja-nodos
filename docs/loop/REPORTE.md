@@ -39315,3 +39315,38 @@ condicion de activacion.
 
 **`L333` `WHAT'S NEXT?` SE QUEDA FUERA Y NO LO REABRO:** es la hoja de ruta comercial de sus programas,
 la cita de Mill, la peticion de critica y el contacto. **Ni un acto encargado al lector.**
+
+## AC.7. **LA CONTRADICCION DEL LIBRO QUE LA ADUANA ME PUSO DELANTE, Y LA SUBO COMO PREGUNTA**
+
+*No la resuelvo yo: `EXTRACTOR.md` 7 dice que lo que no este escrito y no pueda medir se trae como
+pregunta. **No toco ninguno de los dos nodos.***
+
+**El vecino que la senial 2 levanto al insertar la cabeza de `cap_12`** (`familia_id` `0,429`, mi paso
+`8` contra su paso `1`) es `desplegar_marco_franqueza_radical`, que vive en el grafo desde `cap_01`.
+**Las dos frases son del mismo libro, en dos sitios distintos:**
+
+<!-- TALLADO: parcial salida=.v37/contradiccion_marco.txt -->
+
+    $ sed -n "21p" fuentes/scott_radical_candor/cap_12.md | cut -c300-420
+    icism. If you want, you can copy the Radical Candor framework in Chapter Two and track who's saying what to you there.
+    $ python .v37/marco.py
+    desplegar_marco_franqueza_radical P8: No escribas nombres en las casillas.
+    desplegar_marco_franqueza_radical entregable: ... el marco en uso como brujula de conversaciones concretas, sin nombres escritos en las casillas.
+
+**`cap_12` `L21` invita a llevar en el marco la cuenta de quien te dice que; `cap_01` prohibe escribir
+nombres en las casillas.** Puede que no choquen del todo (una cosa es apuntar de quien viene la guia que
+TU recibes y otra etiquetar a una persona con un cuadrante), **pero eso ya seria yo decidiendo, y el
+libro no lo escribe.** Los dos pasos son transcripcion fiel de su linea y ninguno es `PUENTE`.
+
+> **MI VEREDICTO DEL PAR ES `SANO` Y VA MARCADO COMO DISCUTIBLE `8`:** lo que mi paso `8` nombra no es
+> el procedimiento del vecino. Aquel despliega el marco **como recordatorio para el equipo**, recortado,
+> fotocopiado y repartido; el mio propone un uso **privado y distinto**. **Pero mi paso `8` empieza por
+> *copia el marco* y los pasos `2` a `5` del vecino son literalmente como se copia**, asi que quien lea
+> `CONTINUA` ahi tiene con que.
+
+### AC.7.a. **LOS DOS DISCUTIBLES QUE LA INSERCION AÑADE, MARCADOS TAMBIEN ANTES DE SABER**
+
+| # | lo que decido | por donde puede caerse |
+|---:|---|---|
+| **7** | `abrazar_incomodidad_silencio_contar_seis` recibe una **TERCERA madre** que nadie habia declarado: `exigir_critica_jefe_reticente`, cuyo paso `6` es literalmente *Cuenta hasta seis en tu cabeza* | tres madres para un hijo es mucho, y las otras dos ya estaban adjudicadas. Si sobra, sobra esta |
+| **8** | el par `desplegar_plan` contra `desplegar_marco_franqueza_radical` es **`SANO`** pese a que mi paso `8` empieza por *copia el marco* | `AC.7`. La senial que lo levanta es `familia_id` `0,429`, la segunda mas alta del tramo |

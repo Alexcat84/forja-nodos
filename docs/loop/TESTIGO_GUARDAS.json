@@ -1,12 +1,12 @@
 {
-  "fecha": "2026-09-17 22:03:04",
-  "commit": "4b74e6edef1f",
-  "huella_del_arbol": "09779481adb9d157",
+  "fecha": "2026-09-18 00:57:13",
+  "commit": "b0adda401dd5",
+  "huella_del_arbol": "4202681fa0ffa3af",
   "guardas": {
     "gate": {
       "estado": "VERDE",
       "codigo": 0,
-      "salida": "GATE VERDE.\r\n  nodos verificados: 316\r\n  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece"
+      "salida": "GATE VERDE.\r\n  nodos verificados: 318\r\n  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece"
     },
     "guiones": {
       "estado": "VERDE",
@@ -16,7 +16,7 @@
     "censo_rutas": {
       "estado": "VERDE",
       "codigo": 0,
-      "salida": "      PATRON                           10\r\n      VACIA A PROPOSITO                3\r\n      con contenido                    119\r\n      vacia por protocolo              8\r\n\r\nCENSO VERDE: las 140 rutas publicadas sostienen lo que dicen sostener."
+      "salida": "      PATRON                           10\r\n      VACIA A PROPOSITO                3\r\n      con contenido                    112\r\n      vacia por protocolo              8\r\n\r\nCENSO VERDE: las 133 rutas publicadas sostienen lo que dicen sostener."
     },
     "citas_de_credito": {
       "estado": "VERDE",

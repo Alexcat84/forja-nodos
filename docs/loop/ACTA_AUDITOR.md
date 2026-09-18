@@ -30469,3 +30469,425 @@ sube porque **esta tanda NO es limpia de la especie que esa racha acumula**. Las
 especies no la tocan, y `5.4` dice que eso las reinicia a ellas, no a la mia.
 
 **ACTA ANTERIOR LEIDA: 4ec70432816947ebfad797050359b47e537ca7d9**
+
+---
+
+# ACTA 36. VUELTA 37, lote 4 (`scott_radical_candor`), **`cap_12` cerrado en insercion y `cap_13` abierto**: la vuelta corre sus cuatro tareas, sus **cinco cifras de apertura me salen al digito contra `git`**, sus **262 pasos los cuento yo candidato a candidato y salen `14` de `14` al digito**, mis **`14` clases ciegas y las suyas coinciden en las `14`**, la **cena de ensayo de `cap_13` `L323` la adjudicamos los dos por separado y coincidimos**, y de sus **ocho discutibles se sostienen cinco**. Y aun asi: **la vuelta NO CERRO** (`2` de `14` insertados, reporte sin cierre), y su **`0` PUENTE de `cap_13` son `2`**, que vive en TABLA: `REPORTE` sube a **`1 de 3`**. **Y LA CAIDA MAS GRANDE ES MIA, POR PARTIDA DOBLE**: mi apertura sellada publico **`0` PUENTE de `262`** donde son `3`, asi que `AUDITOR` sube a **`2 de 3`**, el penultimo escalon; y **el encargo que pidio `14` inserciones en una vuelta era inviable medido** (`367` s de aduana por candidato), y esa sede es mia. `CLASE`, `CIFRA PUBLICADA` y `DATO MOVIDO` salen **LIMPIAS**. **El bucle sigue y el tramo BAJA por `EXTRACTOR.md` 12.4**
+
+*Vuelta en MODO AUSTERO (`D.47`). Rama `extraccion-mundo-11`, linea `serial`.*
+
+## 0. HUECO DE ACTA (`AUDITOR_FORJA.md` 1.0): **NO LO HAY**
+
+La `ACTA 35` cubre la vuelta 36; esta cubre la 37, que es la inmediatamente anterior a mi turno. **Una sola vuelta que auditar.**
+
+    $ git log --format='%h %ad %s' --date=format:'%m-%d %H:%M' -1 -- docs/loop/ACTA_AUDITOR.md
+    41c1945 09-17 22:37 ACTA 35: la vuelta 36 cierra cap_10 entero ...
+    $ python forja.py herencia | sed -n '4,6p'
+      acta anterior : ACTA 35. VUELTA 36 ...
+      su huella     : 7d8c203801b62735e4594dfde85cd5ae4762bfda
+      heredados     : 1
+
+**`HEREDADO 1` (correr el `grep` antes de publicar que algo NO esta escrito): CUMPLIDO**, y lo declare en la apertura sellada con sus tres busquedas pegadas (`docs/loop/APERTURA_CIEGA.md` secciones 3, 9 y 13.2). **La huella que declare es la que el instrumento entrega, no otra version.**
+
+## 1. LO QUE VERIFIQUE CON MIS PROPIOS COMANDOS, EN ESTA VUELTA
+
+### 1.1. LAS GUARDAS, CORRIDAS POR MI CON EL ARBOL ENTERO
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 318
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py 2>&1 | grep '^  total:'
+      total: 294 pruebas, 0 fallos, 0 errores
+
+**Y ESTO CIERRA MI `POR ADJUDICAR 8` DE LA APERTURA:** los `3` fallos y el `1` error que mi fase ciega midio **no eran de nadie**. Colgaban de los dos ficheros que `D.34.2` retira (el reporte y el registro de credito). Con el arbol entero, `294` de `294`. **No se cumple la parada tecnica** (`AUDITOR_FORJA.md` 3): no hay segunda vuelta seguida en rojo por la misma causa, **porque no hubo una primera**.
+
+### 1.2. LAS CINCO CIFRAS DE SU APERTURA, RECOMPUTADAS CONTRA `git` Y NO LEIDAS DE SU TABLA
+
+**El reporte declara su apertura sobre el commit `5e46a8b`. Lo saco de `git` y lo cuento yo:**
+
+    $ git show 5e46a8b:dataset/nodos.jsonl | wc -l
+    316
+    $ git show 5e46a8b:bitacora/VEREDICTOS.jsonl | wc -l
+    464
+    $ git ls-tree -r --name-only 5e46a8b cuarentena/scott_radical_candor/ | wc -l
+    29
+    $ git ls-tree -r --name-only 5e46a8b cuarentena/_insertados/scott_radical_candor/ | wc -l
+    113
+    $ git show 5e46a8b:dataset/nodos.jsonl | (contador propio de aristas)
+    siguientes 117 previos 117
+
+| cifra de su tabla `AC.0` | lo que mido yo | |
+|---|---:|---|
+| nodos | **316** | al digito |
+| veredictos | **464** | al digito |
+| aristas por `nodos_siguientes` y por `nodos_previos` | **117** y **117** | al digito |
+| candidatos en bandeja, lote 4 | **29** | al digito |
+| insertados y archivados, lote 4 | **113** | al digito |
+
+**CINCO DE CINCO AL DIGITO. Cero caidas de cifra de apertura.**
+
+### 1.3. LOS `262` PASOS, CONTADOS POR MI CANDIDATO A CANDIDATO (`AUDITOR_FORJA.md` 8.3 punto 1)
+
+**No copio su columna: abro los `14` ficheros y cuento.** `12` siguen en la bandeja del lote 4 y `2` ya estan archivados en `_insertados`.
+
+    mio  suyo  candidato
+     42 vs  42  desplegar_plan_orden_operaciones_franqueza_radical
+      8 vs   8  contar_historias_propias_explicar_franqueza_radical
+     13 vs  13  mejorar_consciencia_propia_relacional_dos_practicas
+     17 vs  17  contar_cuatro_historias_propias_ver_hueco_intencion
+     15 vs  15  practicar_triangulo_critica_tres_papeles
+     17 vs  17  pedir_critica_primero_crear_seguridad_psicologica
+     24 vs  24  elegir_pregunta_recurrente_pedir_critica
+     15 vs  15  resolver_dudas_frecuentes_pedir_critica
+     12 vs  12  abrazar_incomodidad_silencio_contar_seis
+     13 vs  13  escuchar_entender_critica_dominar_defensa
+     20 vs  20  premiar_franqueza_hacer_escucha_tangible
+     13 vs  13  integrar_peticion_critica_rutina_existente
+     20 vs  20  dar_elogio_disciplina_igual_critica
+     33 vs  33  medir_critica_respuesta_oyente_brujula
+    TOTAL medido por mi: 262  | total del reporte: 262 | discrepancias: 0
+
+**`14` de `14` al digito.** `cap_12` son `50` y `cap_13` son `212`, que es el reparto que su tabla `AC.2` publica.
+
+### 1.4. LAS GUARDAS QUE EL REPORTE DECLARA MORDIENDO: **NINGUNA, Y POR ESO NO HAY NADA QUE MUTAR** (cosecha 7.C)
+
+    $ sed -n '38885,39352p' docs/loop/REPORTE.md | grep -nic 'muerde\|mordiendo\|por mutacion'
+    0
+
+> **`LECTURA`, marcada aparte:** el tramo de la vuelta 37 **no declara ni una guarda como mordiendo**, asi que la re corrida por mutacion **no tiene caso rojo automatico**, y lo que publico es esta declaracion, que es lo que 7.C pide cuando no hay nada que mutar. **No es merito de la vuelta: es consecuencia de que la vuelta no llego a su cierre** (seccion 2).
+
+## 2. **LA VUELTA 37 NO CERRO, Y ESA ES LA CIFRA QUE MANDA EN ESTA ACTA**
+
+### 2.1. LA PRUEBA, Y NO ES UNA SOSPECHA
+
+    $ grep -n '^# VUELTA 37' docs/loop/REPORTE.md
+    38885:# VUELTA 37, cap_12 y cap_13 enteros, y el puente que se arregla antes de que entre
+    $ tail -3 docs/loop/REPORTE.md | cut -c1-90
+    | 7 | abrazar_incomodidad_silencio_contar_seis recibe una TERCERA madre ...
+    | 8 | el par desplegar_plan contra desplegar_marco_franqueza_radical es SANO ...
+
+**El reporte termina en `AC.7.a`, una tabla de discutibles. No hay seccion de cierre, no hay cifras de cierre recomputadas, no hay commit de cierre.** El mensaje final del extractor lo dice con sus palabras: *the chain is running. Candidate 1 of 14 is in the aduana now. I'll continue as each one lands.*
+
+**Y EL DATO CONCUERDA:**
+
+| | al abrir | ahora | |
+|---|---:|---:|---|
+| nodos | `316` | **`318`** | **`2` de `14`** |
+| veredictos | `464` | **`475`** | `11` |
+| aristas | `117` | **`122`** | `5` |
+| bandeja del lote 4 | `29` | **`27`** | `cap_12` queda a `0`, `cap_13` a `12`, `cap_14` a `15` |
+
+### 2.2. **LO QUE COSTO, MEDIDO POR MI CON EL INSTRUMENTO DE LA CASA Y NO ESTIMADO**
+
+**Corri la aduana EN SECO sobre un candidato del propio tramo, con el arbol quieto y sin nadie compitiendo por la CPU:**
+
+    $ python forja.py informe cuarentena/scott_radical_candor/abrazar_incomodidad_silencio_contar_seis.json
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    poblacion del barrido       : 348   (318 del grafo mas 30 que esperan en bandejas)
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+    SEGUNDOS: 367
+
+> **`LECTURA`, marcada aparte: `367` segundos por candidato son `6` minutos de maquina ANTES de leer un solo vecino.** Catorce candidatos son **`86` minutos de aduana sola**. El turno del extractor duro `4754` segundos, o sea **`79` minutos en total**. **El encargo no cabia en la vuelta, y eso se podia haber medido antes de escribirlo.** La sede del encargo es mia (`5.6`), y lo cargo en la seccion 9.
+
+### 2.3. LO QUE DISPARA, Y LA REGLA QUE LO DISPARA
+
+**`EXTRACTOR.md` 12.4 punto 4, literal:** *la cifra no es sagrada; el disparador si: si una vuelta no cierra su reporte, la siguiente baja el tramo.*
+
+**SE CUMPLE, y no por el otro camino:** el techo de candidatos **no** se paso (`14` contra `15`), y el freno de `PASOS INVENTADOS` **tampoco** se dispara (seccion 5). **El disparador que se cumple es el de cerrar**, y es el mismo que tumbo a la vuelta 17. **El tramo baja un escalon y el encargo lo recoge.**
+
+**Y SI, ES CAIDA DE ESPECIE `REPORTE` TAMBIEN POR AHI** (`AUDITOR_FORJA.md` 8.1, in fine: *una vuelta que cierra en un capitulo y no lo dice se esta quedando corta sin motivo escrito, y eso si es una caida de la especie `REPORTE`*). **Es la MISMA TANDA que la caida de la seccion 5, asi que el escalon es uno solo**: la racha cuenta tandas, no caidas.
+
+## 3. LA RELECTURA CIEGA: **EMPIEZO POR LOS DISCUTIBLES MARCADOS** (`AUDITOR_FORJA.md` 1.2, 5.1)
+
+**Mi lectura de los `14` candidatos, de las dos fronteras y de los `262` pasos esta en `docs/loop/APERTURA_CIEGA.md`, sellada por el arnes ANTES de que se me expusiera el reporte.** Lo que sigue la contrasta.
+
+**LAS `14` CLASES: `14` DE `14` COINCIDEN.** Mi tabla ciega (seccion 7 de la apertura) saca las catorce `ES NODO`; su plan de insercion las inserta las catorce. **Cero caidas de `CLASE` por esa via.**
+
+### 3.1. **DISCUTIBLE 1** (`AC.5.b`, los dos defectos de `AC.2.a`): **CAE. LOS DOS SON `PUENTE`**
+
+| paso | lo que decia | la linea |
+|---|---|---|
+| `contar_cuatro_historias_propias_ver_hueco_intencion` `P8` | *al jefe de su jefe* | `cap_13` `L49`: *her boss's boss's boss*, **tres escalones** |
+| `dar_elogio_disciplina_igual_critica` `P13` | *sintiendose patrocinada* | `cap_13` `L279`: *feeling patronized*, **tratada con condescendencia** |
+
+**MI RAZON, Y ES LA DEL PROPIO `D.30`:** la regla parte en **dos** y solo en dos, *cada paso se marca contra su parrafo como TRANSCRIPCION (el libro pone el medio, la etapa o el objeto) o como PUENTE (lo escribio el extractor)*. **No existe una tercera casilla llamada transcripcion defectuosa**, y crearla seria doctrina nueva **en la vuelta en que le ahorra un escalon a alguien**, que es justo lo que la `ACTA 33` 8.1 se prohibio a si misma.
+
+**Y EL PRIMERO NO NECESITA ANALOGIA: ES EL EJEMPLAR ESCRITO DE `D.30`.** El propio banco nombra el caso palabra por palabra: *un nodo puede pasar `D.27`, fallar `D.30` (**el extractor le anadio un destinatario que el libro no nombra**)*. Un correo al jefe del jefe **no es** el correo al jefe del jefe del jefe: **es otro destinatario.**
+
+**EL SEGUNDO CAE POR LA VARA DE LA `ACTA 35` 6**, la misma con la que `superestrellas` cayo: *patrocinada* y *tratada con condescendencia* no son matices del mismo objeto, **son mitades opuestas**, y el propio paso transcribe dos frases despues la mitad buena (*puede sonar condescendiente*). **Un paso que se contradice a si mismo dentro de su propia frase no es una transcripcion.**
+
+**LO QUE ESTO NO ES:** no es un reproche por TENER los defectos. **Los cazo el extractor, los corrigio contra su linea antes de insertar, y los publico con su `sed` pegado y su cifra alternativa escrita.** `8.4` le protege ahi entero. **Lo que cambia es la fila, y la fila esta en una TABLA** (seccion 5).
+
+### 3.2. **DISCUTIBLE 2** (`AC.5.b`, `cap_13` `L323` a `L332`, la cena de ensayo): **SE SOSTIENE**
+
+**Y SE SOSTIENE POR EL UNICO CAMINO QUE VALE:** lo adjudique **NO ES NODO** en mi apertura sellada (`6.1`), con la razon en las dos direcciones escrita, **antes de ver una sola linea de su reporte**. El adjudico **NO ES NODO** con tres razones, y la tercera (manual `3.5`, *el caso no es la casa*) **no esta en mi pagina y es mejor que las mias.** **Esto cierra el `POR ADJUDICAR 7` de la `ACTA 35`, que se dejo abierta a proposito y con dueno, y la apuesta salio bien: dos lecturas independientes, el mismo veredicto.**
+
+`L333` `WHAT'S NEXT?` fuera del corte: **coincidimos tambien**, y ninguno lo reabre.
+
+### 3.3. **DISCUTIBLE 3** (`AC.5.b`, la arista `50` del orden de operaciones): **NO ADJUDICABLE CONTRA EL DATO EN ESTA VUELTA**
+
+Su candidato, `pedir_critica_primero_crear_seguridad_psicologica`, **sigue en la bandeja**: la vuelta cerro en el `2` de `14`. **No hay veredicto que releer.** Pasa **con dueno** a la vuelta que lo inserte, que es la forma que ya funciono con la cena (`3.2`). **No lo cargo y no lo absuelvo.**
+
+### 3.4. **DISCUTIBLE 4** (`AC.5.b`, la arista a `reconocer_excelencia_trayectoria_gradual` cuelga del paso `33`): **SE SOSTIENE, Y LO COMPRUEBO EN LA LINEA**
+
+    $ awk 'NR==41' fuentes/scott_radical_candor/cap_12.md
+    Plan for the future of your team. Start doing a growth-management plan for each
+    person on your team. (See "Growth Management Plans" in chapter seven.) Make sure
+    that you are not creating a promotion-obsessed culture, and give some extra
+    thought to how you're rewarding your rock stars (see chapter seven).
+
+**`L41` lleva DOS remisiones a `chapter seven`, y la `ACTA 35` `POR ADJUDICAR 6` lo dejo medido.** La primera la cablea `P32` a `armar_plan_anual_crecimiento_equipo`; la segunda es la mitad de `P33` que dice *recompensando a tus estrellas de rock*, y su destino es `REWARD YOUR ROCK STARS` de `cap_10` `L225`. **Que del mismo paso cuelguen dos hijos no es raro aqui: el paso lleva dos oraciones y la linea lleva dos remisiones.** **Sostenido.**
+
+### 3.5. **DISCUTIBLE 5** (`AC.5.b`, `pedir_critica_primero...` entra como nodo y no como `REPITE`): **SE SOSTIENE EN SU LECTURA, Y SU DATO NO EXISTE TODAVIA**
+
+Mi apertura sellada (seccion 7, fila `6`) lo leyo **`ES NODO`** a ciegas, por el orden de operaciones numerado de `L77` a `L85` mas el por que medido de `L105` a `L111`. **Dos lecturas independientes, la misma clase.** El veredicto contra `empezar_cultura_franqueza_radical` **se escribira cuando el candidato entre**, y ahi se verifica.
+
+### 3.6. **DISCUTIBLE 6** (`AC.5.c`, la remision de `cap_12` `L13` al epilogo): **CAE. LAS CUATRO ARISTAS SE CABLEAN**
+
+**LA LINEA Y EL PASO, LOS DOS PEGADOS:**
+
+    $ awk 'NR==13' fuentes/scott_radical_candor/cap_12.md | cut -c470-620
+    th this plan. So for more detailed advice on sharing your stories, soliciting
+    criticism, giving praise, and gauging your criticism see the Afterword.
+    $ (paso 3 de desplegar_plan_orden_operaciones_franqueza_radical, leido del grafo)
+    P03| Y si te atascas en alguna parte del plan, ve al epilogo: el texto dice que
+         ahi hay consejo mas detallado sobre compartir tus historias, pedir critica,
+         dar elogio y medir tu critica.
+
+**TRES RAZONES, Y LA TERCERA ES LA QUE DECIDE.**
+
+**UNA. LA REGLA QUE APLICA NO ES LA QUE EL CITA.** `D.37`, en su correccion del 11 sep, dice que hacer con una enumeracion que **no** dice cuantas partes tiene: *solo enumera sin decir cuantas: `D.29`, con razon escrita: es una lectura que hay que argumentar, no una transcripcion.* **La casa ya tiene escrito el camino de este caso**, asi que **esto no es doctrina nueva y no es parada**: es una lectura que se argumenta, y yo la argumento al otro lado.
+
+**DOS. LAS VARAS QUE EL CITA CONTESTAN OTRA PREGUNTA.** *Nombrar no es procedimentar* vive en la tabla de `AUDITOR_FORJA.md` 6.1, que es la vara de **continua contra repite**: decide si una segunda linea cuenta como **expansion**, o sea si el hijo es nodo. Y `D.27` restriccion `1` decide si una **linea es minable**. **Ninguna de las dos decide si existe una arista entre dos nodos que ya existen**, que es la pregunta de `D.29`.
+
+**TRES, Y ES LA QUE DECIDE: LA MISMA VUELTA CABLEA CUATRO ARISTAS DE ESA MISMA FIGURA.** `P30` a `bloquear_tiempo_pensar_calendario` por *(See "Think Time" in Chapter Eight.)*; `P32` a `armar_plan_anual_crecimiento_equipo` por *(See "Growth Management Plans" in chapter seven.)*; y `P33` a `evitar_obsesion_ascenso_estatus` y a `reconocer_excelencia_trayectoria_gradual` por sus dos *(see chapter seven)*. **Ninguna de esas cuatro lineas despliega el procedimiento del hijo: todas lo nombran y mandan al capitulo.** Si *nombrar no es procedimentar* matara a las cuatro de `L13`, **matara a estas cuatro tambien.** **Una vara no puede dar dos respuestas a la misma figura dentro de la misma vuelta.**
+
+**Y LA PRUEBA DE VERIFICACION DE `D.37` PASA PARA LAS CUATRO** (*abre el paso `n` de la madre y comprueba que ahi se nombra al hijo*): `P03` **nombra las cuatro**, cada una es el rotulo de una sola seccion del epilogo, y cada seccion es un solo nodo. **La tabla de destinos la escribio el propio extractor en `AC.5.c` y la doy por buena tal cual.**
+
+| lo que `P03` nombra | el nodo |
+|---|---|
+| compartir tus historias | `contar_cuatro_historias_propias_ver_hueco_intencion` |
+| pedir critica | `pedir_critica_primero_crear_seguridad_psicologica` |
+| dar elogio | `dar_elogio_disciplina_igual_critica` |
+| medir tu critica | `medir_critica_respuesta_oyente_brujula` |
+
+**LO QUE ESTO NO ES: no es caida de `CLASE`.** Los cuatro hijos **siguen en la bandeja**, asi que no hay ningun veredicto mal puesto: hay una arista **por declarar**, y `D.29` la llama por su nombre, *un hueco de declaracion, no una contradiccion*. **Va encargada**: cada una se declara en el acto en que su hijo entre, citando `P03`.
+
+### 3.7. **DISCUTIBLE 7** (`AC.7.a`, la tercera madre de `abrazar_incomodidad_silencio_contar_seis`): **SE SOSTIENE, Y LO COMPRUEBO EN LOS PASOS**
+
+    $ (pasos 5 a 7 de exigir_critica_jefe_reticente, leidos del grafo)
+    P05| Y entonces para.
+    P06| Cuenta hasta seis en tu cabeza.
+    P07| Abraza la incomodidad.
+
+**La madre nombra el acto en tres lineas y ahi se acaba; el hijo lo despliega en `12` pasos de `cap_13` `L187` a `L198`.** Es la figura canonica de `D.29`. **Tres madres no sobran cuando las tres nombran el acto desde sitios distintos del libro.** **Sostenido, y va encargada con su candidato.**
+
+### 3.8. **DISCUTIBLE 8** (`AC.7.a`, el par `desplegar_plan` contra `desplegar_marco_franqueza_radical`): **SE SOSTIENE EN SU CLASE Y CAE EN SU ARISTA**
+
+**LA CLASE SE SOSTIENE, Y NO ME LO CONCEDO HOY:** mi apertura sellada (`13.1`) leyo ese par **antes** de ver su veredicto y escribio *ni gemelos ni jerarquia por la senial: lo levanta el prefijo `desplegar_` y nada mas*. **Dos lecturas independientes, el mismo no duplicado.** `SANO` esta bien puesto y **no hay caida de `CLASE`.**
+
+**LA ARISTA CAE, Y TAMBIEN LA ESCRIBI ANTES:** la misma pagina sigue *pero SI hay caso de arista por lectura (`D.29`), y lo levanto yo: el `P08` del plan dice copia el marco de la franqueza radical del capitulo dos, o sea **nombra el objeto que el otro nodo procedimenta**. Va de propuesta, no de caida.* **Mantengo la palabra propuesta**, y digo por que no la subo a caida ahora que se que me costaria un escalon del otro lado: **porque la escribi asi cuando no lo sabia**, y `5.1` dice que lo unico informativo es lo que se marco antes.
+
+**Es la misma figura del `3.6` y se resuelve igual: arista por `D.29`, encargada, citando `P08`.** La contradiccion del libro que el extractor levanta (`cap_12` `L21` invita a apuntar quien te dice que; `cap_01` prohibe escribir nombres en las casillas) **no la resuelvo yo y no toco ninguno de los dos nodos**: va a la cola de doctrina del tablero (`D.53`), que es donde vive una pregunta que nadie tiene escrita.
+
+### 3.9. EL SALDO DE LOS OCHO
+
+| | |
+|---|---:|
+| discutibles marcados por el extractor **antes de saber** | **`8`** |
+| se sostienen | **`5`** (`2`, `4`, `5`, `7`, y `8` en su clase) |
+| caen | **`2`** (`1` y `6`) |
+| no adjudicables contra el dato en esta vuelta | **`1`** (`3`) |
+| caidas de clase **FUERA** del marcado | **`0`** |
+| caidas de cifra **FUERA** del marcado | **`0`** del extractor; **`1`** mia (seccion 8) |
+
+> **`LECTURA`, marcada aparte: las dos que caen cayeron DENTRO del marcado**, y eso es la cifra que `5.1` pide. **El extractor sabia donde estaba su duda las dos veces**, y en la `1` llego a publicar la cifra alternativa exacta antes de que yo la adjudicara. **Eso no le quita el escalon, pero es lo contrario de un dictado suelto.**
+
+## 4. LA MUESTRA PINEADA DE LOS `SANO` (`AUDITOR_FORJA.md` 7), **CON SU BANDA**
+
+**La tanda tiene `4` `SANO`** (lineas `468`, `472`, `474` y `475` de `bitacora/VEREDICTOS.jsonl`). La regla pide el mayor entre `3` y el `20` por ciento, con techo de `20`: serian `3`. **Releo los `4`, que es barato y no inventa una muestra donde no hay poblacion.**
+
+| linea | par | mi relectura |
+|---:|---|---|
+| `468` | `desplegar_plan` contra `desplegar_marco_franqueza_radical` | **se sostiene la clase**, cae la arista (`3.8`) |
+| `472` | `contar_historias_propias` contra `escuchar_entender_critica_dominar_defensa` | **se sostiene**. Ni la misma activacion ni el mismo entregable; lo que los junta es la formula del `resumen_teorico` |
+| `474` | `contar_historias_propias` contra `abrazar_incomodidad_silencio_contar_seis` | **se sostiene**. Comparten estar en el plan de arranque y **ni un acto** |
+| `475` | `contar_historias_propias` contra `empezar_cultura_franqueza_radical` | **se sostiene la clase**, y **deja una arista por declarar**: su `P02` es *Empieza explicando la idea, y ahi se acaba*, y este hijo la despliega con seis medios |
+
+| | |
+|---|---:|
+| releidos | **`4` de `4`** |
+| se sostienen **en clase** | **`4`** |
+| caen **en clase** | **`0`** |
+| tasa de caida de clase | **`0,0` por ciento** |
+| **su banda al `95` por ciento**, regla de tres con `n=4` | **el error real puede llegar al `52,7` por ciento** |
+| dejan una arista `D.29` sin declarar | **`2` de `4`** (`468` y `475`) |
+
+> **`LECTURA`, marcada aparte: una muestra de `4` no mide casi nada, y la banda lo dice a gritos.** Publicar *cero por ciento de error en los `SANO`* sin esa banda seria media cifra. **Lo que si mide algo es el otro numero: `2` de los `4` `SANO` dejan una arista por lectura sin declarar, y los dos son la misma figura** (la madre nombra el acto en un paso, el hijo lo despliega en varios). **Con el `3.6` son tres casos en una sola tanda: no es un descuido, es un hueco de metodo**, y por eso va al encargo como tarea y no como reproche.
+
+**Y `D.8` SE CUMPLE: los `4` `SANO` traen razon escrita**, ninguno esta desnudo.
+
+## 5. `PASOS INVENTADOS POR CAPITULO` (`AUDITOR_FORJA.md` 8). **LA FILA ES MIA Y LA FIRMO**
+
+| capitulo | pasos escritos | `TRANSCRIPCION` | `PUENTE` | **`PASOS INVENTADOS`** | lo que el reporte publica |
+|---|---:|---:|---:|---:|---:|
+| **`cap_12`** | `50` | `49` | **`1`** | **`2,00` por ciento** | `2,00` |
+| **`cap_13`** | `212` | `210` | **`2`** | **`0,94` por ciento** | `0,00` |
+| **TOTAL del tramo** | `262` | `259` | **`3`** | **`1,15` por ciento** | `0,38` |
+
+**LOS TRES `PUENTE`, CON NOMBRE:** `desplegar_plan_orden_operaciones_franqueza_radical` `P33` (*superestrellas* por *rock stars*, levantado por la `ACTA 35` 6); y los dos del `3.1`, `contar_cuatro_historias_propias_ver_hueco_intencion` `P8` y `dar_elogio_disciplina_igual_critica` `P13`.
+
+**LOS TRES ESTAN CORREGIDOS CONTRA SU LINEA Y NINGUNO ENTRO AL GRAFO SIN CORREGIR**, con su `CORRECCION DECLARADA` escrita en el `resumen_teorico` de cada nodo. **`8.4` protege eso entero: tener un puente y cazarlo es la regla funcionando.**
+
+**EL VOLUMEN: EL PEOR CAPITULO ES `cap_12` CON `2,00` POR CIENTO, contra el tope de `10`.** **El freno de `8.1` NO se dispara**, ni con mi lectura ni con la suya. **El tramo baja por el OTRO disparador** (seccion 2.3), que es de cuanto cabe en una vuelta y no de si lo extraido esta en el libro. `EXTRACTOR.md` 12.4 lo dice: *son dos instrumentos distintos y ninguno absuelve al otro.*
+
+**LA CAIDA, Y SU SEDE:** el `0` de `cap_13` vive en la **TABLA** de `AC.2` del reporte. `5.2` hace que acumule cuando la cifra vive en TABLA, y `8.3` punto `2` nombra por adelantado el error exacto: *el error que esta metrica invita a cometer es marcar un puente como transcripcion*. **Es el mismo ejemplar que la `ACTA 33` 8.1 adjudico, con la misma sede y la misma razon.** **`REPORTE` sube a `1 de 3`.**
+
+## 6. LO QUE LEVANTO YO Y NINGUNA GUARDA VE: **UNA ARISTA EN COLA CON LOS DOS EXTREMOS YA DENTRO**
+
+    $ (barrido propio de bitacora/VEREDICTOS.jsonl contra dataset/nodos.jsonl)
+    aristas EN COLA en la bitacora: 11
+      linea  469 desplegar_plan_orden_operaciones_franqueza_radical
+                 > contar_historias_propias_explicar_franqueza_radical
+                 -> PENDIENTE: los dos extremos en el grafo
+      linea  473 contar_historias_propias_explicar_franqueza_radical
+                 > contar_cuatro_historias_propias_ver_hueco_intencion
+                 -> espera (madre si, hijo NO)
+      (las otras nueve: CABLEADAS)
+    EN COLA con los dos extremos YA en el grafo y SIN cablear: 1
+
+**LA LINEA `469` SE ESCRIBIO EN COLA CON RAZON:** cuando entro la madre, el hijo todavia estaba en la bandeja. **Pero el hijo entro veinte minutos despues y la arista se quedo en cola.** El gate no la ve: **una arista que nadie cablea no es una arista rota, es una arista que no existe**, y `D.36` ya escribio lo que cuesta, *una arista que nadie sabra que falta*.
+
+**NO LA CARGO COMO CAIDA:** la vuelta no cerro, y cerrar la cola es trabajo de cierre. **Va la primera del encargo.**
+
+## 7. LO QUE MEDI Y NO CARGO A NADIE, PORQUE ES METODO Y NO DATO
+
+**Estuve a punto de publicar cinco caidas que no existen, y lo digo entero porque el siguiente lector se va a meter en el mismo sitio.** Cinco de las once lineas nuevas de la bitacora tienen un `detalle_paso` que **no coincide** con el paso que su propia `razon` cita: la `470` dice *paso 13* y su razon dice *mi paso 33*; la `471` dice *paso 24* y su razon dice *mi paso 33*; la `469` y la `473` dicen *paso 8* y sus razones dicen *mi paso 4*; la `474` dice *paso 5* y su razon dice *su paso 1*.
+
+**NO ES UNA DISCREPANCIA: SON DOS COSAS DISTINTAS, Y EL CODIGO LO DICE.**
+
+    $ sed -n '304,326p' src/aduana.py
+    def senal_paso_contra_nodo(candidato, vecino):
+        """Senial 3: el texto de un paso contra el nodo del otro lado, en los DOS
+        sentidos. ..."""
+        ...
+                if valor > mejor:
+                    mejor = valor
+                    detalle = ("paso %d del candidato contra paso %d de %s" ...)
+
+> **`LECTURA`, marcada aparte: `detalle_paso` lo escribe LA MAQUINA**, y es el argumento del maximo de la senial `3`, o sea **donde el `difflib` encontro su mejor parecido**. La `razon` la escribe el extractor y dice **donde la lectura encontro la relacion**. **Que no coincidan es lo normal**, y `D.19` explica por que: la senial dice donde mirar y ahi acaba su trabajo. **Leer `detalle_paso` como si fuera la afirmacion del extractor fabrica cinco caidas de la nada.**
+
+**Y DE PASO CONFIRMA, CON EL INSTRUMENTO DE LA CASA Y NO CON EL MIO, LO QUE MI APERTURA `13.2` LEVANTO:** los `4` vecinos que la aduana levanta para `abrazar_incomodidad_silencio_contar_seis` **los levanta `similitud_texto` los cuatro**, con `paso_contra_nodo` entre `0,464` y `0,498` contra un umbral de `0,60`. **La cola de lectura de este lote se llena de hermanos de capitulo.** No es caida de nadie, **ningun umbral se toca**, y va a la cola de doctrina.
+
+## 8. **MI CAIDA PROPIA, Y LA SUBO YO: `CIFRA PUBLICADA PROPIA`, `AUDITOR` A `2 de 3`**
+
+> **LO QUE ESCRIBI EN MI APERTURA SELLADA** (seccion 8, en tabla):
+>
+> | capitulo | pasos escritos | `TRANSCRIPCION` | `PUENTE` | `PASOS INVENTADOS` |
+> |---|---:|---:|---:|---:|
+> | `cap_12` | `50` | `50` | `0` | `0,00` por ciento |
+> | `cap_13` | `212` | `212` | `0` | `0,00` por ciento |
+
+**SON `1` Y `2`, Y LA PEOR PARTE ES QUE MI PROPIA PAGINA LO DECIA.** La seccion `8.1` de esa misma apertura se titula *la tarea bloqueante de mi propio encargo: el `PUENTE` de `cap_12` `P33`, comprobado en el grafo* y remata *el puente esta arreglado y entro arreglado*. **Escribi la palabra `PUENTE` cuatro veces y puse `0` en la casilla de al lado.**
+
+**LO QUE LO CAUSO, Y NO ES UNA EXCUSA:** lei `P33` **en el grafo**, donde ya estaba corregido, en vez de contra lo que el extractor **escribio** en el capitulo, que es lo que `AUDITOR_FORJA.md` 8 mide palabra por palabra: *de todos los pasos que el extractor escribio en un capitulo, cuantos resultaron ser PUENTE*. **Elegi mal la fuente antes de contarla**, que es la caida que la cabecera del protocolo nombra: *contar bien un campo y sacar la conclusion equivocada sigue siendo una caida.*
+
+**Y LOS OTROS DOS SON PEORES QUE EL PRIMERO:** los `262` pasos **los lei enteros** y **no vi** ni *al jefe de su jefe* ni *patrocinada*. **Los cazo el extractor y yo no.** Mi unica reserva escrita (`DISCUTIBLE 3` de la apertura) apuntaba a un paso distinto de los tres. **Mi relectura de fidelidad fue peor que la suya, y esa frase tiene que estar en mi acta y no en la suya.**
+
+| | |
+|---|---|
+| **especie** | **`CIFRA PUBLICADA PROPIA`** (`D.38.2`): una cifra falsa en mi apertura sellada |
+| **sede** | `docs/loop/APERTURA_CIEGA.md`, seccion 8, en TABLA, y repetida en su conclusion |
+| **racha** | **`AUDITOR` pasa de `1 de 3` a `2 de 3`**, y la anoto yo |
+| **lo que NO hago** | **no toco la apertura ciega**: el sello se verifica al terminar mi turno. La correccion vive aqui y no borra alli |
+
+**`2 de 3` ES EL PENULTIMO ESCALON**, asi que `5.5` y la seccion `1` punto `4` me obligan: **el remedio va ENCARGADO como tarea bloqueante mia, no solo declarado.** Esta al final de esta acta.
+
+## 9. **LA SEGUNDA CAIDA MIA, QUE NO TIENE CASILLERO, Y LA DECLARO IGUAL**
+
+**El encargo de la vuelta 37 pidio insertar `14` candidatos en una vuelta.** La sede del encargo es mia (`5.6`: *`PROMPT_SIGUIENTE.md` es SEDE DEL AUDITOR*). **Medido hoy con el instrumento de la casa, eso son `86` minutos de aduana antes de leer un solo vecino** (seccion 2.2), **sobre turnos que vienen durando entre `79` y `126` minutos.** El encargo no cabia.
+
+| | |
+|---|---|
+| **especie** | **NINGUNA de las cinco.** No es una cifra falsa, no es un veredicto mal puesto, no es un remedio roto y no mueve ningun dato |
+| **quien** | **mia**, y de mi predecesor en mi misma linea |
+| **lo que hago** | **la declaro con mi nombre y la remedio en el encargo**, que sale dimensionado por el coste medido y no por el numero de candidatos que quedan |
+
+> **`LECTURA`, marcada aparte: lo digo aunque no acumule, porque es la causa raiz de la vuelta que estoy auditando.** El extractor no cerro su reporte, y el `REPORTE` que sube a `1 de 3` por la seccion 5 **carga tambien con eso**. Si el siguiente lector solo ve el escalon y no ve esta seccion, **va a creer que el problema fue del extractor.** Es la misma figura que el fundador nombro el 16 sep al crear `DATO MOVIDO`: *un dano real sin sitio donde anotarlo acaba anotandose donde no va.*
+
+## 10. EL CREDITO DE ESTA TANDA (`5.3`), **CON SU REGISTRO ESCRITO** (`D.48`)
+
+**Al abrir, leido del instrumento y no de mi memoria:**
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'serial' (D.48)
+      especie            racha      de donde sale
+      AUDITOR            1 de 3     ACTA 35
+      CIFRA PUBLICADA    0 de 2     ACTA 35
+      CLASE              0 de 2     ACTA 35
+      DATO MOVIDO        1 de 2     ACTA 35
+      REPORTE            0 de 3     ACTA 35
+
+| especie | esta tanda | racha | por que |
+|---|---|---|---|
+| **`CLASE`** | **LIMPIA** | **`0 de 2`** | los `11` veredictos releidos y los `4` `SANO` releidos enteros: **ni uno mal puesto**. Lo que falta son aristas por declarar, y `D.29` llama a eso *hueco de declaracion, no contradiccion* |
+| **`CIFRA PUBLICADA`** | **LIMPIA** | **`0 de 2`** | ninguna cifra falsa en `docs/`, `config/`, `esquema/` ni en el codigo de una guarda |
+| **`REPORTE`** | **CAE** | **`0 de 3` a `1 de 3`** | el `0` PUENTE de `cap_13` en la TABLA de `AC.2` son `2` (seccion 5); y la vuelta cerro en el `2` de `14` sin declararlo (seccion 2.3). **Misma tanda, un solo escalon** |
+| **`DATO MOVIDO`** | **LIMPIA** | **`1 de 2` a `0 de 2`** | `dataset/` y `bitacora/` se movieron, **y se movieron bien**: gate verde, los dos candidatos archivados en `_insertados` en su acto, cerrojo libre. **`D.38.1`: una tanda limpia pone el contador a cero, y no soy yo quien la absuelve, es la regla** |
+| **`AUDITOR`** | **CAE** | **`1 de 3` a `2 de 3`** | seccion 8. **Penultimo escalon** |
+
+**NINGUNA ESPECIE EN SU TOPE. EL BUCLE SIGUE.** `CLASE` y `CIFRA PUBLICADA` paran a las dos tandas y estan a `0`; `REPORTE` para a las tres y esta a `1`; `AUDITOR` para a las tres y esta a `2`.
+
+**Y EL REPLAY DEL REGISTRO, DECLARADO Y NO ARREGLADO:**
+
+    $ python forja.py credito --revisar
+    REPLAY CON 1 DISCREPANCIA(S) en la linea 'serial':
+      linea 131 del registro, CLASE en ACTA 32: declara 1, el replay da 0
+    LO DIGO Y NO LO ARREGLO: una adjudicacion posterior puede cambiar una tanda ya
+    cerrada, y eso es legitimo. Lo que no es legitimo es que no se vea.
+
+**Viene de antes de mi tanda y no la toco.**
+
+## 11. MIS `POR ADJUDICAR`, CERRADOS UNO A UNO
+
+| # | lo que dejaba abierto en la apertura sellada | como lo cierro |
+|---:|---|---|
+| `1` | la vuelta 37 insertaba mientras yo corria la fase ciega | **NO LO CARGO A LA VUELTA, Y DIGO POR QUE.** La causa es que **la vuelta no cerro** (seccion 2), y para eso la casa **si** tiene regla: `EXTRACTOR.md` 1.5 y 12.4. Lo que **no** esta escrito es si el arnes puede abrir la fase ciega con un proceso del extractor todavia vivo, **y eso es maquinaria del arnes**, que `D.45` y la moratoria me prohiben tocar. **Sube a la cola de doctrina del tablero (`D.53`), que es donde vive una pregunta sin bloquear.** **No es parada:** la vuelta se adjudica entera sin esa respuesta |
+| `2` | mi `Stop-Process` sobre todos los python | **NO FUE LA CAUSA, Y LO COMPRUEBO EN LA HORA.** El turno del extractor cerro a las `23:59:55` segun el log; mi `Stop-Process` fue despues de las `00:25`. **Lo que mate ya estaba fuera de su turno.** Las dos inserciones estan completas y archivadas y el cerrojo esta libre. **Sigue siendo una escritura mia de brocha gorda y por eso queda escrita** |
+| `3` | la senial `1` mide el `resumen_teorico` | **CONFIRMADO POR EL INSTRUMENTO DE LA CASA** (seccion 7) y **a la cola de doctrina**. Ningun umbral se toca |
+| `4` | la arista por lectura de `desplegar_plan` `P08` | **ADJUDICADA: se cablea** (`3.8`), y va al encargo |
+| `5` | `similitud_texto` parcial y `paso_contra_nodo` sin correr en mi barrido | **CERRADO POR OTRO CAMINO:** corri la aduana entera en seco sobre un candidato del tramo (seccion 2.2) y **sus tres seniales salen medidas por el instrumento, no por el mio** |
+| `6` | mis tres discutibles contra los suyos | **LOS TRES SE SOSTIENEN EN SU CLASE.** El `1` (`mejorar_consciencia_propia_relacional_dos_practicas`) y el `2` (`resolver_dudas_frecuentes_pedir_critica`) coinciden con su lectura; **el `3` era mi `0` de `262` y CAE CONTRA MI** (seccion 8) |
+| `7` | `L323` y `L333` fuera del corte | **COINCIDIMOS LOS DOS** (`3.2`) |
+| `8` | los `3` fallos y `1` error de la suite | **NO ERAN DE NADIE** (seccion 1.1) |
+
+## 12. EL ESTADO DE LA CAMPANIA Y LO QUE ENCARGO
+
+    $ python forja.py tablero --siguiente
+    D.51, EL ORDEN LO DA EL TABLERO. Linea 'serial':
+      le toca: scott_radical_candor
+      'scott_radical_candor' ya es de esta linea y esta CERRADO EN EXTRACCION: se
+      continua, que D.50 releva AL CERRAR y no a mitad.
+    $ python forja.py tablero | grep 'COLA DE DOCTRINA'
+      COLA DE DOCTRINA (D.53): 6 pregunta(s), 0 bloquea(n)
+
+| | |
+|---|---:|
+| nodos en el grafo | **`318`** |
+| veredictos | **`475`** |
+| aristas | **`122`** |
+| bandeja del lote 4 | **`27`** (`cap_13` `12`, `cap_14` `15`) |
+| insertados y archivados del lote 4 | **`115`** de `142`, o sea **`81,0` por ciento** |
+
+**EL LOTE NO CIERRA EN ESTA VUELTA**, asi que `D.32` no me pide abrir el siguiente. **`cap_12` si queda cerrado en insercion**, `2` de `2`.
+
+**EL TRAMO DEL ENCARGO BAJA** (seccion 2.3), y **no lo dimensiono por capitulos sino por el coste medido**: `367` segundos de aduana por candidato. **El encargo pide SEIS y dice que hacer si no caben**, que es menos de la mitad de lo que esta vuelta intento.
+
+## 13. **TAREA BLOQUEANTE DEL AUDITOR, para la `ACTA 37`** (`5.5`, escalada encargada y no solo declarada)
+
+> **TAREA BLOQUEANTE DEL AUDITOR, para la `ACTA 37`: toda fila de `PASOS INVENTADOS POR CAPITULO` que yo publique se cuenta contra lo que el extractor ESCRIBIO en el capitulo, no contra el texto que hoy vive en el grafo ni en la bandeja. Antes de escribir la casilla `PUENTE` de un capitulo, corro `grep -n PUENTE` sobre la ultima acta y sobre mi propia pagina, y pego su salida al lado. Un `0` en esa casilla con la palabra PUENTE escrita en mi propia pagina no se publica.**
+
+**POR QUE ASI Y NO MAS GENERAL:** mis tres ultimas caidas propias son de la misma familia, una cifra de la fase ciega, y las tres se habrian evitado corriendo una busqueda de treinta segundos antes de escribir la casilla. **El remedio que se rompe tres veces es el que pide leer mejor; este pide correr un comando.**
