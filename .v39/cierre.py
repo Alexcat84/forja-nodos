@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""El estado AL CIERRE de la vuelta 38, recomputado al cierre y no copiado de la apertura.
+"""El estado AL CIERRE de la vuelta 39, recomputado al cierre y no copiado de la apertura.
 
 EXTRACTOR.md 4: toda cifra que describa el estado al cerrar se RECOMPUTA si algo de la
 propia vuelta pudo haberla movido. Esta vuelta movio nodos, veredictos, aristas, bandeja
@@ -34,10 +34,10 @@ band5 = len(glob.glob(os.path.join(RAIZ, "cuarentena", "marquet_turn_the_ship", 
 tot = band + ins
 
 # LA APERTURA, TECLEADA AQUI A PROPOSITO PARA QUE LA COLUMNA DE MOVIMIENTO SE PUEDA
-# RECONSTRUIR. Sale de .v38/apertura_tabla.txt, que es su sede y viaja en el commit.
+# RECONSTRUIR. Sale de .v39/apertura_tabla.txt, que es su sede y viaja en el commit.
 APERTURA = {
-    "nodos": 318, "veredictos": 475, "no_consumada": 14, "siguientes": 122,
-    "previos": 122, "bandeja4": 27, "insertados4": 115, "bandeja5": 3,
+    "nodos": 321, "veredictos": 486, "no_consumada": 14, "siguientes": 129,
+    "previos": 129, "bandeja4": 24, "insertados4": 118, "bandeja5": 3,
 }
 
 filas = [
@@ -69,6 +69,6 @@ for nombre, valor, abre, sede in filas:
         print("| %s | %d | **%d** | %s | %s |"
               % (nombre, abre, valor, ("+%d" % d) if d > 0 else str(d), sede))
 pct = ("%.1f" % (100.0 * ins / tot)).replace(".", ",")
-print("| lote 4 insertado sobre `%d`, por ciento | 81,0 | **%s** | +%s | "
+print("| lote 4 insertado sobre `%d`, por ciento | 83,1 | **%s** | +%s | "
       "`cuarentena/_insertados/scott_radical_candor/` |"
-      % (tot, pct, ("%.1f" % (100.0 * ins / tot - 81.0)).replace(".", ",")))
+      % (tot, pct, ("%.1f" % (100.0 * ins / tot - 83.1)).replace(".", ",")))
