@@ -7,3 +7,5 @@
 11:31:46 termina informe candidato 2
 11:33:21 arranca insercion candidato 2
 11:47:19 termina insercion candidato 2
+11:51:40 arranca insercion candidato 3
+12:02:00 termina insercion candidato 3

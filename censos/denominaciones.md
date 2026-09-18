@@ -804,3 +804,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | premiar_franqueza_hacer_escucha_tangible | otro_idioma | MAKE LISTENING TANGIBLE: REWARD THE CANDOR | ingles | - |
 | 2026-09-18 | premiar_franqueza_hacer_escucha_tangible | otro_idioma | Practice: Make Listening Tangible | ingles | - |
 | 2026-09-18 | premiar_franqueza_hacer_escucha_tangible | otro_idioma | Practice: Reward criticism you disagree with | ingles | - |
+| 2026-09-18 | integrar_peticion_critica_rutina_existente | nombre_largo | Metelo en tu horario existente: el habito regular de pedir critica, por que verlo una vez no basta, y donde encaja | castellano | - |
+| 2026-09-18 | integrar_peticion_critica_rutina_existente | otro_idioma | BUILD IT INTO YOUR EXISTING SCHEDULE | ingles | - |
+| 2026-09-18 | integrar_peticion_critica_rutina_existente | otro_idioma | Practice: add soliciting feedback to the end of your 1:1 agenda | ingles | - |
