@@ -42471,3 +42471,109 @@ serial lo toma **al cerrar `scott`**, y `scott` acaba de cerrar.
 > no lo digo como merito: lo digo porque **es exactamente lo que `D.55` predijo que pasaria cuando la
 > deuda dejara de decidir cuantos nodos entran hoy.** La vuelta abrio sin una tarea de reparacion y
 > uso el turno entero en la aduana.
+
+---
+
+# VUELTA 43, lote 7 (`grove_high_output`), `cap_01` a `cap_03`: **EL LOTE 7 ABRE EN INSERCION**
+
+*Linea **serial**, `extraccion-mundo-11`, la unica que inserta. El encargo abre sin una sola tarea
+de reparacion y esta seccion abre con el, ANTES de la primera insercion (`EXTRACTOR.md` 3).*
+
+## EE.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+### EE.0.a. La identidad, leida de `git` y no tecleada (`EXTRACTOR.md` 5)
+
+*Salida de `git`, guardada en `.v43/identidad_apertura.txt`.*
+
+<!-- TALLADO: salida=.v43/identidad_apertura.txt -->
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git rev-parse HEAD
+    b85f15a4e270d91a0116f2c2e5210c7ba5dc122a
+    $ git log -1 --format=%h%x20%ad --date=iso
+    b85f15a 2026-09-18 19:06:01 -0400
+    $ date
+    2026-09-18 19:10:21
+
+**El commit `b85f15a` es el primero de mi turno** y no trae trabajo mio: es lo pendiente del arnes
+(`loop.log`, `ultimo_auditor.json` y `ultimo_extractor.json`) commiteado y pusheado **antes de tocar
+nada**, que es el paso 1 de `EXTRACTOR.md` 1.
+
+### EE.0.b. El estado del dato, contado del dato
+
+*Salida de `python .v43/estado.py`, guardada en `.v43/estado_apertura.txt`. El instrumento no imprime
+tabla: imprime estas lineas, y por eso van pegadas y no tecleadas en celdas.*
+
+    $ python .v43/estado.py
+    poblacion: el arbol entero, sin filtrar
+    dataset/nodos.jsonl                        : 345 lineas
+    bitacora/VEREDICTOS.jsonl                  : 729 lineas
+    config/pares_mutuos.jsonl                  : 1 lineas
+    cuarentena/grove_high_output               : 23
+    cuarentena/_insertados/grove_high_output   : 0
+    cuarentena/scott_radical_candor            : 0
+    cuarentena/_insertados/scott_radical_candor: 142
+    cuarentena/gerber_emyth                    : 0
+    cuarentena/_insertados/gerber_emyth        : 0
+    cuarentena/marquet_turn_the_ship           : 3
+    cuarentena/_insertados/marquet_turn_the_ship: 0
+    la bandeja de grove por capitulo           : cap_01 1, cap_02 7, cap_03 15
+    nodos de grove_high_output en el grafo     : 0
+
+**`0` nodos de `grove_high_output` en el grafo al abrir.** Este libro no ha metido ni uno todavia, y
+esa es la cifra contra la que se mide todo lo que esta vuelta haga. `scott_radical_candor` tiene su
+bandeja en `0` y sus `142` en `_insertados`: el lote 4 cerro y **no lo toco**.
+
+### EE.0.c. Las guardas de `EXTRACTOR.md` 6, corridas por mi al abrir
+
+*Salida de los instrumentos, guardada en `.v43/guardas_apertura.txt`.*
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 345
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py
+      total: 305 pruebas, 0 fallos, 0 errores
+
+**Ninguna guarda de dato en rojo al abrir**, que es la unica cosa que el encargo dice que me puede
+bloquear. **Asi que inserto.**
+
+### EE.0.d. **LO QUE ESTA VUELTA NO TRAE, DICHO ANTES DE QUE SE NOTE**
+
+| | |
+|---|---|
+| **el informe de lote sellado** | **NO EXISTE.** `docs/loop/INFORME_DE_LOTE.txt` no esta en `docs/loop/` y `docs/loop/SELLOS_INFORME.jsonl` tampoco. `D.43` manda: *si el prompt no te entrega ninguno, no lo inventes y no lo lances*. **Esta vuelta no trae saldo de lote sellado**, y por eso `EE.2` mide la bandeja de los ficheros y cita el informe en seco de la linea `grove` por su commit |
+| **la cola de vecinos sellada** | **TAMPOCO.** `D.43` extendida la pone a cargo del arnes y el arnes no la ha dejado. La leo candidato a candidato en el acto de insertar, que es lo que la aduana imprime por si sola |
+
+## EE.1. TAREA 1. **LOS REGISTROS DE LA `ACTA 41`**
+
+| # | fila |
+|---|---|
+| `1.a` | |
+| `1.b` | |
+| `1.c` | |
+| `1.d` | |
+
+## EE.2. TAREA 2. **LA FRONTERA DE LO QUE VOY A INSERTAR**
+
+| | |
+|---|---|
+| la bandeja contada del fichero | |
+| los `6` que `d005` aparta | |
+| el orden del libro | |
+
+## EE.3. TAREA 3. **LA INSERCION, UNA FILA CADA VEZ QUE UN CANDIDATO ENTRA**
+
+| # | candidato | cap | saldo | veredictos | aristas |
+|---|---|---|---|---|---|
+
+## EE.4. TAREA 4. **EL CIERRE**
+
+| | |
+|---|---|
+| las guardas recomputadas | |
+| la tabla de cierre | |
+| la linea del tramo | |
