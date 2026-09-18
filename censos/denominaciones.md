@@ -797,3 +797,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | abrazar_incomodidad_silencio_contar_seis | nombre_largo | Abraza la incomodidad, puesto en acto: el silencio que sigue a tu pregunta y la practica de contar hasta seis | castellano | - |
 | 2026-09-18 | abrazar_incomodidad_silencio_contar_seis | otro_idioma | EMBRACE THE DISCOMFORT | ingles | - |
 | 2026-09-18 | abrazar_incomodidad_silencio_contar_seis | otro_idioma | Practice: Count to six in your head | ingles | - |
+| 2026-09-18 | escuchar_entender_critica_dominar_defensa | nombre_largo | Escucha con intencion de entender, no de responder: que hacer con la respuesta de pelea, huida o bloqueo, y el ejercicio de los tres minutos | castellano | - |
+| 2026-09-18 | escuchar_entender_critica_dominar_defensa | otro_idioma | LISTEN WITH THE INTENT TO UNDERSTAND, NOT TO REPLY | ingles | - |
+| 2026-09-18 | escuchar_entender_critica_dominar_defensa | otro_idioma | Practice: Listening | ingles | - |

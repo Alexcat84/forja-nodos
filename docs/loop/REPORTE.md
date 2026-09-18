@@ -42079,3 +42079,4 @@ el encargo manda y lo que las vueltas 40 y 41 no hicieron.
 
 | # | candidato | pasos | veredictos | aristas | nodos al cerrar su fila |
 |---:|---|---:|---:|---|---:|
+| `1` | `escuchar_entender_critica_dominar_defensa` | `13` | `6` | `2` cableadas: `pedir_critica_primero...` (`D.37`, paso `17`) y `abrazar_incomodidad_arrancar_critica_equipo` (`D.29`, paso `12`, **arista `56`**) | `326` |

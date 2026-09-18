@@ -1,0 +1,4 @@
+10:45:39 arranca informe candidato 1
+10:52:57 termina informe candidato 1
+10:57:28 arranca insercion candidato 1
+11:05:00 termina insercion candidato 1

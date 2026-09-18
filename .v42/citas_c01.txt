@@ -1,0 +1,17 @@
+$ sed -n "199,214p" fuentes/scott_radical_candor/cap_13.md
+L1: LISTEN WITH THE INTENT TO UNDERSTAND, NOT TO REPLY
+L2: 
+L3: This is another oft-tweeted line from Radical Candor, but many have told us it didn’t really help them learn how to manage their defensiveness in the face of criticism.
+L4: 
+L5: Receiving criticism can trigger the fight, flight, or freeze response in us even if we have asked for it. Unjust criticism is hard, but fair criticism, particularly when it touches on something we already don’t like in ourselves, is also hard.
+L6: 
+L7: Figure out what helps you to process what you hear without giving in to a defensive response: a breathing exercise can help; so can taking a long sip from a bottle of water. Most of all, practice with others.
+L8: 
+L9: Practice: Listening
+L10: 
+L11: Find a partner to practice with (coworker, friend, family member). One person speaks for three minutes, and then you switch roles and listen to the other person speak, uninterrupted. You can talk about whatever you want: anything you really care about, at work or outside of it.
+L12: 
+L13: If you’re the listener, you’re giving the speaker the gift of your full attention. You can nod, or say, “I see” or “I understand,” but this is not the time for questions, or for you to relate their story to something you care about, like your favorite Hawaii vacation story, or to give the speaker that one tip that’s going to forever change their life.… Your job is not to give advice, it’s to listen.
+L14: 
+L15: What we find is that coworkers who have been on the same team for more than ten years learned more about each other in three minutes than they did in a decade working together. Listening, really listening, is incredibly efficient!
+L16: 
