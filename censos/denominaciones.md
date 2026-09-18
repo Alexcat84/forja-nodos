@@ -789,3 +789,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | pedir_critica_primero_crear_seguridad_psicologica | otro_idioma | SOLICIT CRITICISM FIRST | ingles | - |
 | 2026-09-18 | pedir_critica_primero_crear_seguridad_psicologica | otro_idioma | order of operations | ingles | - |
 | 2026-09-18 | pedir_critica_primero_crear_seguridad_psicologica | otro_idioma | psychological safety | ingles | - |
+| 2026-09-18 | elegir_pregunta_recurrente_pedir_critica | nombre_largo | La pregunta recurrente que de verdad te imaginas haciendo: sus cuatro atributos, las preguntas de ejemplo de los talleres y su ensayo | castellano | - |
+| 2026-09-18 | elegir_pregunta_recurrente_pedir_critica | otro_idioma | A GO-TO QUESTION YOU CAN ACTUALLY IMAGINE ASKING | ingles | - |
+| 2026-09-18 | elegir_pregunta_recurrente_pedir_critica | otro_idioma | go-to question | ingles | - |
