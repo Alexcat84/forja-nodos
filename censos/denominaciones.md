@@ -766,3 +766,8 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-17 | reconocer_excelencia_trayectoria_gradual | otro_idioma | Say thank-you | ingles | - |
 | 2026-09-17 | reconocer_excelencia_trayectoria_gradual | otro_idioma | Gurus | ingles | - |
 | 2026-09-17 | reconocer_excelencia_trayectoria_gradual | otro_idioma | Public presentations | ingles | - |
+| 2026-09-17 | desplegar_plan_orden_operaciones_franqueza_radical | nombre_largo | El orden de operaciones para poner en practica la franqueza radical en tu equipo: que hacer primero, que en paralelo, donde pararse a evaluar y que viene despues | castellano | - |
+| 2026-09-17 | desplegar_plan_orden_operaciones_franqueza_radical | otro_idioma | GETTING STARTED | ingles | - |
+| 2026-09-17 | desplegar_plan_orden_operaciones_franqueza_radical | otro_idioma | order of operations | ingles | - |
+| 2026-09-18 | contar_historias_propias_explicar_franqueza_radical | nombre_largo | Compartir tus historias: la primera etapa del orden de operaciones, explicada con tus palabras y con tu version de la historia del um o la de Bob | castellano | - |
+| 2026-09-18 | contar_historias_propias_explicar_franqueza_radical | otro_idioma | SHARE YOUR STORIES | ingles | - |

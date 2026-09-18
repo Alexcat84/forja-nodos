@@ -1,0 +1,8 @@
+POBLACION DEL BARRIDO (D.38.4): 348   (317 del grafo mas 31 que esperan en bandejas)
+CANDIDATOS DEL TRAMO: 13
+
+abrazar_incomodidad_silencio_contar_seis  ->  4 vecino(s) por encima de umbral
+    BANDEJA  escuchar_entender_critica_dominar_defensa            similitud_texto=0.449
+    BANDEJA  practicar_triangulo_critica_tres_papeles             similitud_texto=0.373
+    BANDEJA  premiar_franqueza_hacer_escucha_tangible             similitud_texto=0.353
+    BANDEJA  contar_historias_propias_explicar_franqueza_radical  similitud_texto=0.376
