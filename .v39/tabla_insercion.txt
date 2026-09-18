@@ -1,5 +1,5 @@
 | # | candidato | linea | vecinos | declarados | aristas cableadas | en cola | nodos al salir | codigo |
 |---:|---|---:|---:|---:|---:|---:|---:|---|
 | 1 | `pedir_critica_primero_crear_seguridad_psicologica` | `L73` | 1 | 7 | 2 | 5 | 322 | **VERDE** |
-| 2 | `elegir_pregunta_recurrente_pedir_critica` | `L115` | 0 | 0 | 0 | 0 | . | **.** |
-| 3 | `resolver_dudas_frecuentes_pedir_critica` | `L167` | . | . | . | . | . | **NO CORRIO** |
+| 2 | `elegir_pregunta_recurrente_pedir_critica` | `L115` | 0 | 5 | 1 | 0 | 323 | **VERDE** |
+| 3 | `resolver_dudas_frecuentes_pedir_critica` | `L167` | 2 | 2 | 0 | 0 | 324 | **VERDE** |
