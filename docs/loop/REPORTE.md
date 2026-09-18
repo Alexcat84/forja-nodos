@@ -41637,9 +41637,161 @@ candidato suelto sigue siendo tuyo*) **y porque la `TAREA 2` me lo ordena en blo
 
 | # | tarea | como cerro |
 |---:|---|---|
-| **1.A** | **BLOQUEANTE**: releer el par de la `498` contra el grafo y, si se sostiene, correccion declarada mas la arista `54` | |
-| **1.B** | lo adjudicado en la `ACTA 39`, recogido y NO reabierto | |
+| **1.A** | **BLOQUEANTE**: releer el par de la `498` contra el grafo y, si se sostiene, correccion declarada mas la arista `54` | **CERRADA** en `EC.2`: la lectura del auditor **se sostiene**, `20` pasos contra `24` impresos del dataset. Correccion declarada sobre la `498` (`912` caracteres aniadidos, `0` borrados) y **arista `54` cableada** con `--paso 7`, especie `D.29` medida por `grep` propio |
+| **1.B** | lo adjudicado en la `ACTA 39`, recogido y NO reabierto | **CERRADA** en `EC.3`: los seis puntos recogidos en una linea cada uno, **ninguno reabierto** y la fidelidad `D.30` de los tres NO repetida (`D.47`) |
 | **2** | **BLOQUEANTE**: el metodo de la cadena arreglado por mecanica: informe por candidato, `grep -c` contra los vecinos, `tail` antes de irme | |
 | **3** | `cap_13`, los `3` que cierran la serie, uno por vez y en el orden del libro, con sus aristas `D.29` `55`, `56` y `57` | |
 | **4** | `EC.6` abierta ANTES de la primera insercion, una fila por candidato, **y la linea literal del cierre** | |
 | **cierre** | guardas, cifras recomputadas, cola de aristas recontada, discutibles, tabla de cierre `D.52` | |
+
+## EC.2. TAREA 1.A. **LA `498` RELEIDA CONTRA EL GRAFO: LA LECTURA DEL AUDITOR SE SOSTIENE**
+
+**Relei los `20` pasos de la madre contra los `24` del hijo, impresos los dos de
+`dataset/nodos.jsonl` en esta vuelta.** No heredo la lectura: la rehago.
+
+### EC.2.a. **LA VARA, CON SU LINEA PEGADA** (`D.35`)
+
+<!-- TALLADO: parcial salida=.v41/citas_1a.txt -->
+
+    $ sed -n "575p" docs/loop/AUDITOR_FORJA.md
+      575: | **TIENE DIRECCION** | se pregunta que añade el HIJO a la MADRE, **nunca al reves** |
+
+    $ sed -n "165p" docs/loop/EXTRACTOR.md
+      165: > **NOMBRAR NO ES PROCEDIMENTAR.** Una linea solo cuenta como procedimiento
+
+### EC.2.b. **LOS DOS PASOS QUE DECIDEN, IMPRESOS DEL DATASET**
+
+<!-- TALLADO: parcial salida=.v41/pasos_498.txt -->
+
+    MADRE abrazar_incomodidad_arrancar_critica_equipo  P07 (20 pasos)
+      Ten una pregunta de cabecera. El texto da la que su autora adopto de Fred Kofman,
+      autor de Conscious Business y su entrenador en Google: que podria hacer o dejar de
+      hacer que hiciera mas facil trabajar conmigo. Si esas palabras no te salen solas,
+      busca las que si, y cuenta con que esa pregunta de apertura solo esta pensada para
+      poner las cosas en marcha.
+
+    HIJO  elegir_pregunta_recurrente_pedir_critica  P07 (24 pasos)
+      Corrige por eso la pregunta que la primera edicion recomendaba, que es una correccion
+      que el propio texto hace: preguntar hay algo que pudiera hacer o dejar de hacer que te
+      facilitara trabajar conmigo le da una salida facil a quien teme el conflicto, que
+      puede decir simplemente que no, y esa es justo la gente a la que hay que animar.
+      Pregunta en cambio que podria hacer o dejar de hacer.
+
+### EC.2.c. **MI ADJUDICACION: `CONTINUA`, Y LAS DOS COSAS QUE LA `498` HACE MAL**
+
+| | |
+|---|---|
+| **la direccion** | la razon de la `498` compara **entregable contra entregable** (*aquel entrega critica dicha en voz alta, este entrega tres o cuatro preguntas*). Eso es preguntar que aniade la MADRE al HIJO, **la pregunta al reves** que la linea `575` prohibe |
+| **la premisa de hecho** | la razon de la `498` escribe *ninguno de los dos nombra el procedimiento del otro en una linea*, **y el `P07` de la madre lo nombra**: *si esas palabras no te salen solas, busca las que si*. **Es comprobable contra el grafo y sale falsa** |
+
+**LO QUE EL HIJO ANIADE Y LA MADRE NO TIENE**, que es la pregunta con la direccion bien puesta:
+los **cuatro atributos** comprobados uno a uno (`P05` sincera, `P06` no de si o no, `P09`
+concreta u abierta, `P12` frecuencia), el **banco de nueve preguntas** de los talleres (`P14`
+a `P22`), el **ejercicio de campo** con un companiero de confianza (`P23`) y la **evaluacion
+por dos criterios**, critica util y naturalidad (`P24`). **La madre tiene una linea; el hijo
+tiene veinticuatro pasos**, y el `P07` del hijo **corrige la pregunta que el `P07` de la madre
+recomienda**. La direccion no hay que argumentarla: **esta escrita dentro del hijo.**
+
+**NO DISCREPO. La lectura del auditor se sostiene y la corrijo por correccion declarada.**
+
+### EC.2.d. **Y ES `D.29`, NO `D.37`, MEDIDO POR MI Y NO HEREDADO**
+
+<!-- TALLADO: parcial salida=.v41/citas_1a.txt -->
+
+    $ grep -c -iE "\b(six|seis)\b" fuentes/scott_radical_candor/cap_09.md
+      3
+
+**Las tres coincidencias son `count to six` dos veces (`L41` y `L299`) y `slide six` una
+(`L159`), y estan enteras en `.v41/citas_1a.txt`. NINGUNA cuenta consejos.** La cuenta de seis
+vive **solo en el `titulo` del nodo**, que es campo de esta casa. **`D.37` pide la cuenta
+escrita en el libro y aqui no esta: las cuatro son `D.29`.** Corro el `grep` porque la
+diferencia entre las dos especies es lo que yo iba a teclear dentro de `dataset/`, y **`D.47`
+deja intacta la cifra con su instrumento al lado.**
+
+### EC.2.e. **LAS DOS OPERACIONES, CON SU SALIDA PEGADA**
+
+<!-- TALLADO: parcial salida=.v41/anotar_498.txt -->
+
+    ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+      sede : bitacora/VEREDICTOS.jsonl
+      linea: 498
+      veredicto: SANO (NO se toca)
+      par      : elegir_pregunta_recurrente_pedir_critica contra abrazar_incomodidad_arrancar_critica_equipo
+      la razon vieja SIGUE ENTERA: 622 caracteres, ninguno borrado
+      se aniaden 912 caracteres al final de la razon
+      lineas de la bitacora tocadas: 1 (la 498). Las otras 506, intactas.
+
+    ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 498.
+
+<!-- TALLADO: parcial salida=.v41/arista_54.txt -->
+
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: abrazar_incomodidad_arrancar_critica_equipo
+      hijo : elegir_pregunta_recurrente_pedir_critica
+      paso citado de la madre: 7
+        Ten una pregunta de cabecera. El texto da la que su autora adopto de Fred Kofman, autor de Conscious Business y su entrenador en Google: que podria ha
+      señales del par: familia_id 0.111, paso_contra_nodo 0.434, similitud_texto 0.234
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: abrazar_incomodidad_arrancar_critica_equipo > elegir_pregunta_recurrente_pedir_critica
+      razon en bitacora/VEREDICTOS.jsonl
+
+**El instrumento rotula su cabecera `(D.37)` porque es el nombre del comando.** La especie que
+yo declaro, escrita dentro de la razon que queda en la bitacora, **es `D.29`**, y su motivo es
+el `grep` de `EC.2.d`. **Lo digo aqui para que nadie lea la cabecera como la adjudicacion.**
+
+### EC.2.f. **EL PAR, RELEIDO DEL DATASET DESPUES DE CABLEAR**
+
+<!-- TALLADO: parcial salida=.v41/par_498_tras.txt -->
+
+      abrazar_incomodidad_arrancar_critica_equipo  siguientes: ['elegir_pregunta_recurrente_pedir_critica']
+      elegir_pregunta_recurrente_pedir_critica     previos   : ['pedir_critica_primero_crear_seguridad_psicologica', 'abrazar_incomodidad_arrancar_critica_equipo']
+
+**La arista `54` esta dentro.** Y el hijo queda con **dos madres**, que es exactamente lo que la
+`ACTA 24` describe: la de `cap_13` por `D.37` (`L113` dice *four*) y la de `cap_09` por `D.29`.
+
+### EC.2.g. **LA COLA DE ARISTAS TRAS LA `54`, ESTADO INTERMEDIO Y CITADO COMO TAL** (`EXTRACTOR.md` 4)
+
+<!-- TALLADO: parcial salida=.v41/cola_tras_54.txt -->
+
+    LA COLA DE ARISTAS ENTERA, de bitacora/VEREDICTOS.jsonl
+      lineas con arista_en_cola: true            : 16
+      de ellas, YA CABLEADAS en el grafo         : 11
+      esperan a un extremo que no ha entrado     : 5
+      con LOS DOS extremos dentro y SIN cable    : 0   <-- tiene que salir 0
+
+**Sigue en `16 / 11 / 5 / 0` y eso es lo correcto**: la `54` no entro en la cola, entro
+**RESUELTA en el acto**, asi que la bitacora crece a `508` lineas y la cola no se mueve. **La
+deuda se paga cableando, no encolando.**
+
+## EC.3. TAREA 1.B. **LO ADJUDICADO EN LA `ACTA 39`, RECOGIDO Y NO REABIERTO**
+
+**No reabro nada de esto y no lo vuelvo a argumentar** (`D.47`, modo austero: *lo que el
+registro ya dice no se repite*). Lo recojo en una linea cada uno:
+
+| | lo que recojo |
+|---|---|
+| **mis nueve discutibles se sostienen los nueve** | recogido. **Cero caidas dentro de mi marcado** |
+| **`0` `PUENTE` de `58`, FIRMADA por el auditor** | recogida. Y `cap_13` entero, `4` de `212`, **sigue siendo SUELO y no firmado** |
+| **la fidelidad `D.30` de los tres candidatos de hoy YA ESTA HECHA** | **NO la vuelvo a correr.** Son `45` de esos `58` pasos, releidos dos veces, por el extractor de la 40 y por el auditor |
+| **mi puntero de `DC.2.d` decia `DC.5.d` donde estaban en `DC.5.e`** | registrado. **No lo arreglo hacia atras; solo no lo repito** |
+| **el rojo de la suite en la fase ciega no es mio y no es parada** | recogido. `D.45` prohibe que lo arregle yo |
+| **la correccion de sede del auditor**: la madre de `cap_09` es `D.29` y no `D.37` | recogida **y remedida por mi** en `EC.2.d`, porque es lo que yo escribo dentro de `dataset/` |
+
+### EC.3.a. **UNA CAIDA MIA DEL BARRIDO, DECLARADA Y NO ESCONDIDA**
+
+**El hook me aborto el commit de la `TAREA 1.A`:**
+
+    [pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+    $ python forja.py guiones
+    BARRIDO DE GUIONES EN ROJO: 2 hallazgo(s)
+      .v41/cuenta_cap09.txt linea 2 columna 174: guion largo (U+2014)
+      .v41/cuenta_cap09.txt linea 3 columna 265: guion largo (U+2014)
+
+**Los dos `U+2014` son del LIBRO**, no mios: salen dentro de `count to six before saying
+anything else` y de `criticizing a person should be done in private`, que son prosa de
+`cap_09.md` volcada entera por un `grep` mio de tanteo. **Retiro ese fichero de tanteo**, que
+era copia sin cortar de `.v41/citas_1a.txt`, y **la sede que el reporte publica es
+`citas_1a.txt`, que corta a `110` columnas y no arrastra ningun guion largo.** No toco ni un
+caracter de la cita: **lo que retiro es el duplicado, no el original.** El barrido vuelve a
+verde y lo dejo escrito porque **el hook mordio y mordio bien.**

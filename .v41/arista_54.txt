@@ -1,0 +1,10 @@
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: abrazar_incomodidad_arrancar_critica_equipo
+  hijo : elegir_pregunta_recurrente_pedir_critica
+  paso citado de la madre: 7
+    Ten una pregunta de cabecera. El texto da la que su autora adopto de Fred Kofman, autor de Conscious Business y su entrenador en Google: que podria ha
+  señales del par: familia_id 0.111, paso_contra_nodo 0.434, similitud_texto 0.234
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: abrazar_incomodidad_arrancar_critica_equipo > elegir_pregunta_recurrente_pedir_critica
+  razon en bitacora/VEREDICTOS.jsonl

@@ -1,0 +1,10 @@
+ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+  sede : bitacora/VEREDICTOS.jsonl
+  linea: 498
+  veredicto: SANO (NO se toca)
+  par      : elegir_pregunta_recurrente_pedir_critica contra abrazar_incomodidad_arrancar_critica_equipo
+  la razon vieja SIGUE ENTERA: 622 caracteres, ninguno borrado
+  se aniaden 912 caracteres al final de la razon
+  lineas de la bitacora tocadas: 1 (la 498). Las otras 506, intactas.
+
+ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 498.
