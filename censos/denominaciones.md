@@ -817,3 +817,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | medir_critica_respuesta_oyente_brujula | otro_idioma | It's not mean, it's clear | ingles | - |
 | 2026-09-18 | montar_equipo_gestion_desempenio_revisar_sistema | nombre_largo | Los pasos que el texto enumera para empezar a rehacer el sistema de gestion del desempenio, del equipo con sus dos perfiles al ciclo de revision cada tres anios | castellano | - |
 | 2026-09-18 | montar_equipo_gestion_desempenio_revisar_sistema | otro_idioma | steps for beginning the process of revamping your performance management system | ingles | - |
+| 2026-09-18 | recorrer_trece_elementos_proceso_evaluacion_formal | nombre_largo | Los elementos de un proceso formal de evaluacion de desempenio, de poner nota o no hasta ligero o pesado, nombrados uno a uno por el texto y numerados del uno al trece | castellano | - |
+| 2026-09-18 | recorrer_trece_elementos_proceso_evaluacion_formal | otro_idioma | elements of a formal performance review process | ingles | - |

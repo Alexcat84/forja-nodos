@@ -19,3 +19,7 @@
 13:19:37 termina insercion candidato 5
 13:22:17 arranca insercion candidato 6
 13:32:10 termina insercion candidato 6
+13:33:57 arranca insercion candidato 7
+13:39:09 termina insercion candidato 7
+13:40:44 arranca insercion candidato 7 (reintento)
+13:45:54 termina insercion candidato 7
