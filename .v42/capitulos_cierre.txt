@@ -1,0 +1,15 @@
+nodos del grafo por capitulo de scott_radical_candor
+  cap_01   1
+  cap_03   1
+  cap_04   5
+  cap_05   8
+  cap_06   10
+  cap_07   25
+  cap_08   12
+  cap_09   20
+  cap_10   14
+  cap_11   16
+  cap_12   3
+  cap_13   12
+  cap_14   15
+  TOTAL de nodos que citan el libro: 142

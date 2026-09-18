@@ -1,9 +1,9 @@
 $ python scripts/tabla_de_cierre.py --escribir
-poblacion: dataset/nodos.jsonl entero, libro scott_radical_candor
-criterio : un nodo sale de un capitulo si cita scott_radical_candor/<cap>.md
+poblacion: dataset/nodos.jsonl entero, libro grove_high_output
+criterio : un nodo sale de un capitulo si cita grove_high_output/<cap>.md
 
 | # | tarea | como cerro |
 |---:|---|---|
-| 1 | `cap_10` entero, sus `14`, y no se parte | **CERRADA** en `AC.3`: **14 de 14 del capitulo**, `206` pasos, `36` veredictos, `8` aristas cableadas y `3` en cola |
-| 2 | la fidelidad `D.30`, antes de la primera insercion | **CERRADA** en `AC.2`, **y antes de que entrara ni un nodo**: `0` PUENTE de `206`, el barrido de las tres especies publicado tambien donde sale limpio, y su falso positivo declarado |
-| 3 | cerrar con la tabla de cierre regenerada, no tecleada | **CERRADA** en `AC.4.h`: esta misma tabla sale de `scripts/tabla_de_cierre.py --escribir` y se pega de `docs/loop/TABLA_DE_CIERRE.txt` |
+| 1 | `cap_13` y `cap_14` hasta donde llegue, un candidato por vez y por la aduana | **CERRADA, y hasta el final**: `20` de `20` dentro, `273` pasos, `215` veredictos con razon escrita, `23` aristas nuevas y la bandeja de `scott_radical_candor` en `0` |
+| 2 | `cap_13`, cerrado en insercion | **CERRADA**: sus cifras van en `ED.8.a`, contadas por su propio instrumento |
+| 3 | `cap_14`, cerrado en insercion | **CERRADA**: sus cifras van en `ED.8.a`, contadas por su propio instrumento |
