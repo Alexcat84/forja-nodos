@@ -807,3 +807,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | integrar_peticion_critica_rutina_existente | nombre_largo | Metelo en tu horario existente: el habito regular de pedir critica, por que verlo una vez no basta, y donde encaja | castellano | - |
 | 2026-09-18 | integrar_peticion_critica_rutina_existente | otro_idioma | BUILD IT INTO YOUR EXISTING SCHEDULE | ingles | - |
 | 2026-09-18 | integrar_peticion_critica_rutina_existente | otro_idioma | Practice: add soliciting feedback to the end of your 1:1 agenda | ingles | - |
+| 2026-09-18 | dar_elogio_disciplina_igual_critica | nombre_largo | El elogio con disciplina: el acelerador y el freno, por que el elogio vago patrocina, y el ejercicio de dar un elogio concreto a un companiero | castellano | - |
+| 2026-09-18 | dar_elogio_disciplina_igual_critica | otro_idioma | PRAISE: FOCUS ON THE GOOD STUFF. REALLY. | ingles | - |
+| 2026-09-18 | dar_elogio_disciplina_igual_critica | otro_idioma | APPLY THE SAME DISCIPLINE TO PRAISE THAT YOU DO TO CRITICISM | ingles | - |
+| 2026-09-18 | dar_elogio_disciplina_igual_critica | otro_idioma | Praise Practice | ingles | - |

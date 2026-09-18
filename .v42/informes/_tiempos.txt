@@ -9,3 +9,5 @@
 11:47:19 termina insercion candidato 2
 11:51:40 arranca insercion candidato 3
 12:02:00 termina insercion candidato 3
+12:05:18 arranca insercion candidato 4
+12:25:44 termina insercion candidato 4

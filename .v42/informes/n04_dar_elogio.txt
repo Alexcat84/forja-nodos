@@ -1,0 +1,30 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/dar_elogio_disciplina_igual_critica.json [5 veredictos y censos]
+ADUANA DE INSERCION, candidato 'dar_elogio_disciplina_igual_critica'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 371   (328 del grafo mas 43 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 5. Ninguna señal los levanto.
+  dar_guia_humilde_tres_tecnicas  [Dar elogio y critica con humildad, con las tres tecnicas que el texto nombra y atribuye una a una]
+    señales: familia_id 0.111, paso_contra_nodo 0.399, similitud_texto 0.202
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  elogiar_publico_criticar_privado_sus_tres_matices  [Elogiar en publico y criticar en privado, con las tres cosas que el texto dice que hay que pensar antes de aplicarlo]
+    señales: familia_id 0.0, paso_contra_nodo 0.438, similitud_texto 0.161
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  elogiar_trabajo_especifico_contexto  [Elogiar el trabajo con el porque dentro, contextualizado y sincero, y averiguar quien hizo que antes de elogiar en publico]
+    señales: familia_id 0.0, paso_contra_nodo 0.39, similitud_texto 0.18
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  equilibrar_elogio_critica_equipo  [Dar mas elogio que critica sin usar ningun ratio fijo, y repartir tu energia al reves de como te sale]
+    señales: familia_id 0.286, paso_contra_nodo 0.451, similitud_texto 0.135
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  pedir_critica_primero_crear_seguridad_psicologica  [Pedir critica tu antes que nada, que es el primer paso del orden de operaciones, porque es lo que mas deprisa crea la seguridad psicologica del equipo]
+    señales: familia_id 0.1, paso_contra_nodo 0.412, similitud_texto 0.246
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+  arista madre-hijo cableada y escrita RESUELTA: elogiar_trabajo_especifico_contexto > dar_elogio_disciplina_igual_critica
+  arista madre-hijo cableada y escrita RESUELTA: pedir_critica_primero_crear_seguridad_psicologica > dar_elogio_disciplina_igual_critica
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 329
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 5
+CODIGO DE SALIDA: 0
