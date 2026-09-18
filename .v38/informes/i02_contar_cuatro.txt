@@ -1,1 +1,37 @@
 $ python forja.py insertar cuarentena/scott_radical_candor/contar_cuatro_historias_propias_ver_hueco_intencion.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'contar_cuatro_historias_propias_ver_hueco_intencion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (319 del grafo mas 29 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 1. Ninguna señal los levanto.
+  mejorar_consciencia_propia_relacional_dos_practicas  [Mejorar tu consciencia de ti mismo y tu consciencia de la relacion con las dos practicas que el texto desarrolla, porque en la franqueza radical el hilo comun siempre eres tu]
+    señales: familia_id 0.083, paso_contra_nodo 0.478, similitud_texto 0.288
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino evitar_presion_social_actos_equipo  [Evitar que un acto no obligatorio se sienta obligatorio, y que el intento de hacer equipo acabe empeorando el animo]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.198 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.619 (umbral 0.60)
+    paso 16 del candidato contra paso 6 de evitar_presion_social_actos_equipo
+
+  vecino contar_historias_propias_explicar_franqueza_radical  [Contar a tu equipo tus propias historias para explicarle la franqueza radical, en vez de prestarle la teoria o las historias de otro]
+    levantada por: familia_id
+    similitud_texto    0.301 (umbral 0.35)
+    familia_id         0.300 (umbral 0.30)
+    paso_contra_nodo   0.487 (umbral 0.60)
+    paso 3 del candidato contra paso 8 de contar_historias_propias_explicar_franqueza_radical
+  arista madre-hijo cableada y escrita RESUELTA: contar_historias_propias_explicar_franqueza_radical > contar_cuatro_historias_propias_ver_hueco_intencion
+  arista madre-hijo cableada y escrita RESUELTA: mejorar_consciencia_propia_relacional_dos_practicas > contar_cuatro_historias_propias_ver_hueco_intencion
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 320
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/contar_cuatro_historias_propias_ver_hueco_intencion.json

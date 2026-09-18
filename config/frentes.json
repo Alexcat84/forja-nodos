@@ -135,6 +135,18 @@
         "pregunta": "La senial 1 compara titulo mas resumen_teorico mas pasos, y en un lote escrito de una sentada eso mide la formula del extractor tanto como el contenido del nodo. Lo midieron dos instrumentos por separado. Ningun umbral se toca en ninguna vuelta: la pregunta es que se hace con eso.",
         "medida_en": "APERTURA_CIEGA.md 13.2 y ACTA 36 7; encargo de la vuelta 38, tarea 4.2",
         "bloquea": false
+      },
+      {
+        "n": 9,
+        "pregunta": "Puede el arnes abrir la fase ciega del auditor con un proceso del extractor todavia vivo? Dos vueltas seguidas la poblacion se movio dentro de la fase sellada, y en la vuelta 38 con la pagina abierta: el mismo forja.py gate dio 320 y despues 321 dentro del mismo turno. Es maquinaria del arnes y la moratoria de D.45 la protege.",
+        "medida_en": "ACTA 37 seccion 8",
+        "bloquea": false
+      },
+      {
+        "n": 10,
+        "pregunta": "Una cita medida_en que ofrece como sede una seccion que aun no se ha escrito, o un fichero que se reescribe cada vuelta. Esta cola ofrecia REPORTE.md BC.7 y BC.7 nunca se escribio; y ofrece APERTURA_CIEGA.md 13.2, que es un fichero que el arnes sobreescribe en cada vuelta. Es la pregunta 4 de esta misma cola vista desde config/.",
+        "medida_en": "ACTA 37 seccion 9",
+        "bloquea": false
       }
     ]
   }

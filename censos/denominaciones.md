@@ -776,3 +776,12 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | otro_idioma | Improve using role plays and storytelling | ingles | - |
 | 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | otro_idioma | self-awareness | ingles | - |
 | 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | otro_idioma | relational awareness | ingles | - |
+| 2026-09-18 | contar_cuatro_historias_propias_ver_hueco_intencion | nombre_largo | Cual es tu historia: el ejercicio de taller de las cuatro historias, la de franqueza radical mas las tres de las otras tres casillas del marco | castellano | - |
+| 2026-09-18 | contar_cuatro_historias_propias_ver_hueco_intencion | otro_idioma | Practice: What's your story? | ingles | - |
+| 2026-09-18 | contar_cuatro_historias_propias_ver_hueco_intencion | otro_idioma | Radical Candor story | ingles | - |
+| 2026-09-18 | contar_cuatro_historias_propias_ver_hueco_intencion | otro_idioma | Obnoxious Aggression | ingles | - |
+| 2026-09-18 | contar_cuatro_historias_propias_ver_hueco_intencion | otro_idioma | Ruinous Empathy | ingles | - |
+| 2026-09-18 | contar_cuatro_historias_propias_ver_hueco_intencion | otro_idioma | Manipulative Insincerity | ingles | - |
+| 2026-09-18 | practicar_triangulo_critica_tres_papeles | nombre_largo | El triangulo de la critica: la version de juego de papeles de los autores, con sus tres papeles y el marco de dos por dos como cuaderno del observador | castellano | - |
+| 2026-09-18 | practicar_triangulo_critica_tres_papeles | otro_idioma | Practice: The Feedback Triangle | ingles | - |
+| 2026-09-18 | practicar_triangulo_critica_tres_papeles | otro_idioma | role play | ingles | - |
