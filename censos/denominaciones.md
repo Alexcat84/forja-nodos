@@ -792,3 +792,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | elegir_pregunta_recurrente_pedir_critica | nombre_largo | La pregunta recurrente que de verdad te imaginas haciendo: sus cuatro atributos, las preguntas de ejemplo de los talleres y su ensayo | castellano | - |
 | 2026-09-18 | elegir_pregunta_recurrente_pedir_critica | otro_idioma | A GO-TO QUESTION YOU CAN ACTUALLY IMAGINE ASKING | ingles | - |
 | 2026-09-18 | elegir_pregunta_recurrente_pedir_critica | otro_idioma | go-to question | ingles | - |
+| 2026-09-18 | resolver_dudas_frecuentes_pedir_critica | nombre_largo | Las preguntas frecuentes del epilogo sobre pedir critica: la pregunta que se queda rancia, la critica que no puedes arreglar, el jefe joven con gente mayor y el miedo a empezar | castellano | - |
+| 2026-09-18 | resolver_dudas_frecuentes_pedir_critica | otro_idioma | FAQ | ingles | - |
