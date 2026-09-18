@@ -39350,3 +39350,246 @@ libro no lo escribe.** Los dos pasos son transcripcion fiel de su linea y ningun
 |---:|---|---|
 | **7** | `abrazar_incomodidad_silencio_contar_seis` recibe una **TERCERA madre** que nadie habia declarado: `exigir_critica_jefe_reticente`, cuyo paso `6` es literalmente *Cuenta hasta seis en tu cabeza* | tres madres para un hijo es mucho, y las otras dos ya estaban adjudicadas. Si sobra, sobra esta |
 | **8** | el par `desplegar_plan` contra `desplegar_marco_franqueza_radical` es **`SANO`** pese a que mi paso `8` empieza por *copia el marco* | `AC.7`. La senial que lo levanta es `familia_id` `0,429`, la segunda mas alta del tramo |
+
+---
+
+# VUELTA 38, **cerrar la cola**, y **`cap_13` a la mitad de velocidad** (lote 4, `scott_radical_candor`)
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`. Cuatro tareas, bajo el tope de cinco (`EXTRACTOR.md` 1.3).
+Vuelta en **MODO AUSTERO** (`D.47`), con `MODO_INSERCION=insertar` sobre un lote **CERRADO EN
+EXTRACCION** (`D.39`). **La `TAREA 2`, la fidelidad `D.30` de los seis, corre ANTES de la primera
+insercion** (`EXTRACTOR.md` 15.4), y la `TAREA 1.A` es la primera operacion del turno porque el encargo
+la marca bloqueante: **el orden de ejecucion no es el de numeracion y lo digo aqui.*
+
+## BC.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**La primera operacion de mi turno es el commit del arnes pendiente** (`EXTRACTOR.md` 1.1), asi que esta
+tabla se lee **justo despues de ese commit y antes de la primera tarea**: el commit que cita es ya estado
+intermedio y lo digo.
+
+<!-- TALLADO: script=.v38/apertura.py salida=.v38/apertura_tabla.txt -->
+
+| pieza | valor | de donde sale |
+|---|---:|---|
+| rama | extraccion-mundo-11 | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno | `03e9ee8` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | **318** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **475** | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con alguna anotacion `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| aristas por `nodos_siguientes` | **122** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | **122** | `dataset/nodos.jsonl` |
+| candidatos en bandeja, lote 4 | **27** | PATRON: `cuarentena/scott_radical_candor/*.json` |
+| insertados y archivados, lote 4 | **115** | PATRON: `cuarentena/_insertados/scott_radical_candor/*.json` |
+| candidatos en bandeja, lote 5 | **3** | PATRON: `cuarentena/marquet_turn_the_ship/*.json` |
+| lote 4 insertado sobre `142`, por ciento | **81,0** | `cuarentena/_insertados/scott_radical_candor/` |
+
+**LA BANDEJA POR CAPITULO, QUE ES LO QUE DIMENSIONA EL TRAMO**, corrida por mi y no copiada del encargo:
+
+<!-- TALLADO: parcial salida=.v38/estado_apertura.txt -->
+
+    $ python .v38/estado.py
+    poblacion: el arbol entero, sin filtrar
+    dataset/nodos.jsonl                        : 318 nodos
+    bitacora/VEREDICTOS.jsonl                  : 475 lineas
+    cuarentena/scott_radical_candor            : 27
+    cuarentena/_insertados/scott_radical_candor: 115
+    la bandeja por capitulo                    : cap_13 12, cap_14 15
+
+**`cap_12` YA NO APARECE, Y ESO CUADRA CON LO QUE LA VUELTA 37 HIZO:** sus `2` candidatos entraron y la
+bandeja bajo de `29` a `27`. **Quedan `12` de `cap_13`, y el encargo me pide `6` de esos doce**, o sea
+**la mitad justa del capitulo**. `cap_13` **queda abierto a proposito** y no lo estiro.
+
+### BC.0.a. **EL TABLERO Y SU PRIORIDAD** (`D.49`, `D.51`)
+
+<!-- TALLADO: parcial salida=.v38/tablero_apertura.txt -->
+
+      prio lote clave                          estado                 dueno                 band ult cap
+      --------------------------------------------------------------------------------------------------------
+      .    4    scott_radical_candor           CERRADO EN EXTRACCION  serial                  27  cap_14
+      1    7    grove_high_output              EN CURSO               grove_high_output       23  cap_03
+      2    9    gerber_emyth                   PAUSADO                NINGUNO                 10  cap_11
+      3    5    marquet_turn_the_ship          PAUSADO                NINGUNO                  9  cap_03
+
+<!-- TALLADO: parcial salida=.v38/tablero_siguiente.txt -->
+
+    $ python forja.py tablero --siguiente
+    D.51, EL ORDEN LO DA EL TABLERO. Linea 'serial':
+      le toca: scott_radical_candor
+      'scott_radical_candor' ya es de esta linea y esta CERRADO EN EXTRACCION: se continua, que D.50 releva AL CERRAR y no a mitad.
+
+**LA COLA DE DOCTRINA ABRE EN `6` Y `0` BLOQUEAN**, linea `COLA DE DOCTRINA (D.53): 6 pregunta(s), 0
+bloquea(n)` del mismo tablero. **La `TAREA 4` la deja en `8`, y sigo sin adjudicar ninguna.**
+
+### BC.0.b. **EL CERROJO, EN SU SEDE DE `procesos/`** (`D.53`)
+
+<!-- TALLADO: parcial salida=.v38/cerrojo.txt -->
+
+    $ ls -la procesos/
+    total 64
+    drwxr-xr-x 1 AlexDesk 197609 0 Sep 18 01:00 .
+    drwxr-xr-x 1 AlexDesk 197609 0 Sep 18 01:35 ..
+
+**`procesos/` esta vacio: no hay otra corrida viva** y la insercion no queda `INSERCION NO INTENTADA`.
+
+### BC.0.c. **NI SALDO DE LOTE NI COLA SELLADA, Y VAN OCHO VUELTAS** (`D.43`)
+
+<!-- TALLADO: parcial salida=.v38/entrega_arnes.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+    ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+    ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ ls docs/loop/ | grep -i -E "cola|vecin"
+      (ni una linea)
+
+**Lo declaro como `D.43` manda**: esta vuelta **no trae saldo de lote**, y con el se va `CHOCAN entre si
+dentro del lote`. **La cola de vecinos la corro yo de a uno**, que es lo que `D.43` no me quito, y es el
+coste que el encargo cronometro en `367` segundos por candidato.
+
+### BC.0.d. **MI CREDITO AL ABRIR, Y NO ME LO ESCRIBO YO** (`D.48`)
+
+<!-- TALLADO: parcial salida=.v38/credito_apertura.txt -->
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            2 de 3     ACTA 36
+      CIFRA PUBLICADA    0 de 2     ACTA 36
+      CLASE              0 de 2     ACTA 36
+      DATO MOVIDO        0 de 2     ACTA 36
+      REPORTE            1 de 3     ACTA 36
+
+**`REPORTE` en `1 de 3` es mio y lo recojo sin discutirlo** (`TAREA 1.C`). **`AUDITOR` en `2 de 3` no es
+mio** y el encargo lo dice el solo (`TAREA 1.D`): no lo cargo ni lo celebro.
+
+## BC.1. EL ESQUELETO DE LAS TAREAS, ABIERTO ANTES DE LA PRIMERA (`EXTRACTOR.md` 3)
+
+| # | tarea | estado |
+|---:|---|---|
+| **1.A** | **BLOQUEANTE**: la arista en cola de la linea `469`, con los dos extremos ya dentro | *abierta* |
+| **1.B/C/D** | las adjudicaciones de la `ACTA 36` recogidas, y las dos caidas repartidas | *abierta* |
+| **2** | **BLOQUEANTE**: la fidelidad `D.30` de los seis, ANTES de la primera insercion | *abierta* |
+| **3** | `cap_13`, seis candidatos en el orden del libro, uno por vez | *abierta* |
+| **4** | las dos preguntas que suben a la cola de doctrina, sin resolverlas | *abierta* |
+| **cierre** | guardas, cifras recomputadas, cola de aristas recontada, discutibles | *abierta* |
+
+## BC.2. **TAREA 1.A, BLOQUEANTE: LA ARISTA QUE NO EXISTIA, CABLEADA EN MI PRIMERA OPERACION**
+
+*`ACTA 36` 6. La linea `469` de `bitacora/VEREDICTOS.jsonl` la dejo en cola porque cuando entro la madre
+el hijo seguia en la bandeja. **El hijo entro veinte minutos despues y el cable no se puso.***
+
+**LO PRIMERO ES COMPROBAR QUE LOS DOS EXTREMOS ESTAN DENTRO**, que es lo que convierte esto en una
+arista que falta y no en una arista que espera:
+
+<!-- TALLADO: parcial salida=.v38/pasos_madres.txt -->
+
+    $ python .v38/pasos.py desplegar_plan_orden_operaciones_franqueza_radical contar_historias_propias_explicar_franqueza_radical
+    === desplegar_plan_orden_operaciones_franqueza_radical ===
+      P04: Empieza por la etapa que el texto pone primera, y su rotulo es comparte tus historias.
+      siguientes: ['armar_plan_anual_crecimiento_equipo', 'bloquear_tiempo_pensar_calendario', 'desplegar_tres_conversaciones_carrera', 'evitar_obsesion_ascenso_estatus', 'reconocer_excelencia_trayectoria_gradual']
+    === contar_historias_propias_explicar_franqueza_radical ===
+      P01: Explica la franqueza radical a tu equipo, para que entiendan que te traes entre manos.
+
+**Los dos viven en `dataset/nodos.jsonl` y el hijo NO estaba en los cinco `nodos_siguientes` de la
+madre.** Esa es la arista que no existia.
+
+**Y EL PASO `4` ES EL QUE LA SOSTIENE, con su linea del libro pegada** (`D.35`):
+
+<!-- TALLADO: parcial salida=.v38/cita_cap12.txt -->
+
+    $ sed -n "15p" fuentes/scott_radical_candor/cap_12.md | cut -c1-200
+    SHARE YOUR STORIES
+    $ sed -n "17p" fuentes/scott_radical_candor/cap_12.md | cut -c1-260
+    EXPLAIN RADICAL CANDOR to your team so they understand what you are up to. You can also ask them to read the book, or show them videos that are on the Radical Candor website. But it is best if you explain it in your own words. What is your version of the
+
+**`L15` es el rotulo que mi paso `4` nombra, y `L17` es donde el hijo empieza.** La madre nombra la
+etapa y ahi se acaba; el hijo la despliega en ocho pasos con los seis medios que la madre no tiene.
+
+> **AVISO DE CITA, y lo escribo yo contra mi mismo:** las dos lineas de arriba las he **transliterado**
+> al pegarlas, porque el barrido de guiones de esta casa no deja pasar el apostrofo tipografico del
+> original. **La salida literal de `sed` vive entera en `.v38/cita_cap12.txt`**, que es la ruta que esta
+> celda ofrece, y ahi estan los `you're` y los `it's` tal como el libro los escribe. **Lo que cambia es
+> el apostrofo y nada mas.**
+
+**LA SALIDA DEL COMANDO, PEGADA** (`D.37`, y la pego porque imprime el paso citado entero):
+
+<!-- TALLADO: parcial salida=.v38/arista_1a.txt -->
+
+    $ python forja.py arista --madre desplegar_plan_orden_operaciones_franqueza_radical --hijo contar_historias_propias_explicar_franqueza_radical --paso 4 --razon "..."
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: desplegar_plan_orden_operaciones_franqueza_radical
+      hijo : contar_historias_propias_explicar_franqueza_radical
+      paso citado de la madre: 4
+        Empieza por la etapa que el texto pone primera, y su rotulo es comparte tus historias.
+      señales del par: familia_id 0.2, paso_contra_nodo 0.477, similitud_texto 0.175
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: desplegar_plan_orden_operaciones_franqueza_radical > contar_historias_propias_explicar_franqueza_radical
+      razon en bitacora/VEREDICTOS.jsonl
+
+> **`NINGUNA SEÑAL LA LEVANTA` ES LA CIFRA QUE IMPORTA AQUI.** `familia_id` `0,2`, `similitud_texto`
+> `0,175`, `paso_contra_nodo` `0,477`: **las tres por debajo de su umbral**. Es `EXTRACTOR.md` 11 al
+> pie de la letra, **la jerarquia la busca la lectura, no la señal**, y es el motivo de que esta arista
+> pudiera perderse sin que ninguna guarda chistara.
+
+**Y LA LINEA `469`, ANOTADA COMO CONSUMADA SIN BORRAR SU TEXTO:**
+
+<!-- TALLADO: parcial salida=.v38/anotar_469.txt -->
+
+    $ python forja.py anotar --linea 469 --anade "CORRECCION DECLARADA ..." --razon "..."
+    ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+      sede : bitacora/VEREDICTOS.jsonl
+      linea: 469
+      veredicto: CONTINUA (NO se toca)
+      par      : desplegar_plan_orden_operaciones_franqueza_radical contra contar_historias_propias_explicar_franqueza_radical
+      la razon vieja SIGUE ENTERA: 547 caracteres, ninguno borrado
+      se aniaden 522 caracteres al final de la razon
+      lineas de la bitacora tocadas: 1 (la 469). Las otras 475, intactas.
+
+    ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 469.
+
+### BC.2.a. **LA COLA ENTERA, RECONTADA TRAS CABLEARLA** (la cifra que el encargo pide que salga `0`)
+
+*La vuelvo a correr al cierre, como manda el encargo. Esta es la de despues de mi primera operacion, y
+la declaro como estado intermedio, no como cierre (`EXTRACTOR.md` 4).*
+
+<!-- TALLADO: parcial salida=.v38/cola_apertura.txt -->
+
+    $ python .v38/cola_aristas.py
+    LA COLA DE ARISTAS ENTERA, de bitacora/VEREDICTOS.jsonl
+      lineas con arista_en_cola: true            : 11
+      de ellas, YA CABLEADAS en el grafo         : 10
+      esperan a un extremo que no ha entrado     : 1
+      con LOS DOS extremos dentro y SIN cable    : 0   <-- tiene que salir 0
+
+      linea  madre                                                hijo                                                 ambos    cable
+      --------------------------------------------------------------------------------------------------------------------------------
+      265    recorrer_rueda_conscientemente_cultura_equipo        recorrer_rueda_hacer_cosas_equipo                    si       si
+      279    crear_espacio_seguro_madurar_ideas_nuevas            nutrir_ideas_nuevas_reunion_solas                    si       si
+      333    minimizar_impuesto_colaboracion_equipo               proteger_tiempo_equipo_jefe                          si       si
+      371    desplegar_plan_orden_operaciones_franqueza_radical   bloquear_tiempo_pensar_calendario                    si       si
+      425    conducir_reuniones_salto_nivel_diez_reglas           resolver_dudas_frecuentes_reuniones_salto_nivel      si       si
+      428    desplegar_tres_conversaciones_carrera                conversar_historia_vida_descubrir_motivadores        si       si
+      429    desplegar_plan_orden_operaciones_franqueza_radical   desplegar_tres_conversaciones_carrera                si       si
+      438    desplegar_plan_orden_operaciones_franqueza_radical   armar_plan_anual_crecimiento_equipo                  si       si
+      461    desplegar_plan_orden_operaciones_franqueza_radical   evitar_obsesion_ascenso_estatus                      si       si
+      469    desplegar_plan_orden_operaciones_franqueza_radical   contar_historias_propias_explicar_franqueza_radical  si       si
+      473    contar_historias_propias_explicar_franqueza_radical  contar_cuatro_historias_propias_ver_hueco_intencion  NO       NO
+
+**`0` CON LOS DOS EXTREMOS DENTRO Y SIN CABLE.** La unica que sigue en cola es la `473`, y **espera al
+candidato `2` de esta misma vuelta**: cuando `contar_cuatro_historias_propias_ver_hueco_intencion` entre,
+se cierra en el acto.
+
+## BC.3. **TAREA 1.B, 1.C y 1.D: LO ADJUDICADO SE RECOGE Y NO SE REABRE**
+
+| | lo que recojo |
+|---|---|
+| **`DISCUTIBLE 1` CAE** | los dos defectos de `AC.2.a` son **`PUENTE`**. **La fila de `cap_13` es `2` de `212`, `0,94` por ciento**, y la del tramo `3` de `262`, `1,15` por ciento. Es la cifra que arrastro |
+| **`DISCUTIBLE 6` CAE** | la remision de `cap_12` `L13` al epilogo **SI da las cuatro aristas** por `D.29`. Dos de esas cuatro me tocan hoy y las cableo en `BC.5`; las otras dos esperan a sus hijos |
+| **`DISCUTIBLE 8`** | clase **SI**, arista **NO**: el par `desplegar_plan` contra `desplegar_marco_franqueza_radical` es **`SANO`**, y lo que falta es la arista por lectura desde `P08`. La decido en `BC.5` |
+| **`2`, `4`, `5`, `7` se sostienen** | la cena de `L323` **NO es nodo** y queda cerrada; la segunda remision de `L41` cuelga del paso `33`; `pedir_critica_primero...` entra como nodo propio; la tercera madre de `abrazar_incomodidad...` esta bien levantada |
+| **`DISCUTIBLE 3`** | **queda abierto CON DUENO, y el dueno soy yo**: `pedir_critica_primero_crear_seguridad_psicologica` es mi candidato `4`. Lo decido y lo declaro en `BC.5` |
+
+**LA CAIDA QUE ES MIA** (`1.C`): **`REPORTE` esta en `1 de 3`**, por el `0` PUENTE de `cap_13` en la
+TABLA de `AC.2` y por cerrar en `2` de `14` sin declararlo. **No la reabro.**
+
+**LA QUE NO ES MIA** (`1.D`): **`AUDITOR` sube a `2 de 3`** por la apertura sellada que publico `0`
+PUENTE de `262`. **La anoto porque el encargo me la pone delante, y no la cargo.**
