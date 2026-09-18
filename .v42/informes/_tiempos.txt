@@ -49,3 +49,5 @@
 16:05:59 termina insercion candidato 16
 16:07:06 arranca insercion candidato 17 (evaluar_desempenio_dos_veces_anio)
 16:09:45 termina insercion candidato 17
+16:11:13 arranca insercion candidato 18 (montar_evaluacion_360_grados_ligera_pares)
+16:14:14 termina insercion candidato 18

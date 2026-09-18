@@ -839,3 +839,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | calibrar_notas_reunion_jefes_pares | otro_idioma | calibration of ratings | ingles | - |
 | 2026-09-18 | evaluar_desempenio_dos_veces_anio | nombre_largo | El decimo de los trece elementos: la frecuencia, con lo que pasa si no las haces nunca y lo que pasa si las haces cada trimestre | castellano | - |
 | 2026-09-18 | evaluar_desempenio_dos_veces_anio | otro_idioma | frequency | ingles | - |
+| 2026-09-18 | montar_evaluacion_360_grados_ligera_pares | nombre_largo | El undecimo de los trece elementos: proceso de trescientos sesenta grados o juicio unilateral del jefe, con el aligeramiento concreto de la evaluacion entre pares | castellano | - |
+| 2026-09-18 | montar_evaluacion_360_grados_ligera_pares | otro_idioma | 360-degree performance process or relying on a manager's unilateral assessment | ingles | - |
