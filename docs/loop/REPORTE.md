@@ -40481,6 +40481,11 @@ juzgar.**
 | candidatos en bandeja, lote 5 | 3 | **3** | 0 | PATRON: `cuarentena/marquet_turn_the_ship/*.json` |
 | lote 4 insertado sobre `142`, por ciento | 83,1 | **85,2** | +2,1 | `cuarentena/_insertados/scott_radical_candor/` |
 
+**EL `commit al cerrar` DE ESA TABLA ES EL DEL INSTANTE EN QUE SE RECOMPUTO, y lo digo porque es una
+cifra que se lee mal**: `git rev-parse` no puede devolver el hash del commit que todavia no existe, asi
+que la celda trae el ultimo commit ANTERIOR al que lleva este cierre. **La identidad se lee de git en
+esta vuelta** (`EXTRACTOR.md` 5), y la cadena de commits de la vuelta 39 queda entera en el registro.
+
 **LOS `+20` VEREDICTOS, DESGLOSADOS, porque `3` nodos no explican `20`:** `1` de la correccion declarada
 de la `TAREA 1.B`, `8` del candidato `1`, `2` de sus dos aristas por `forja.py arista`, `5` del
 candidato `2` y `4` del candidato `3`. **`1 + 8 + 2 + 5 + 4 = 20`.**
