@@ -36,15 +36,33 @@ ELEMENTO = {
     "mantener_proceso_evaluacion_ligero_vigilar_crecimiento": (13, "lightweight or heavyweight"),
 }
 
+def leer_ficha(ident):
+    """DEL GRAFO SI YA ENTRO, Y DE LA BANDEJA SI TODAVIA NO.
+
+    CORRECCION DECLARADA, vuelta 42, candidato 12: esta funcion miraba SOLO la
+    bandeja, asi que en cuanto un hermano entraba al grafo dejaba de emitirse su
+    veredicto y la aduana bloqueaba. Costo una corrida entera. Un hermano lo sigue
+    siendo despues de entrar.
+    """
+    ruta = os.path.join(BANDEJA, ident + ".json")
+    if os.path.exists(ruta):
+        return json.load(io.open(ruta, encoding="utf-8"))
+    for linea in io.open(os.path.join(RAIZ, "dataset", "nodos.jsonl"),
+                         encoding="utf-8"):
+        linea = linea.strip()
+        if linea and json.loads(linea)["id"] == ident:
+            return json.loads(linea)
+    return None
+
+
 yo = sys.argv[1]
 mi_num, mi_rotulo = ELEMENTO[yo]
-for nombre in sorted(os.listdir(BANDEJA)):
-    if not nombre.endswith(".json"):
+for otro in sorted(ELEMENTO):
+    if otro == yo:
         continue
-    otro = nombre[:-5]
-    if otro == yo or otro not in ELEMENTO:
+    ficha = leer_ficha(otro)
+    if ficha is None:
         continue
-    ficha = json.load(io.open(os.path.join(BANDEJA, nombre), encoding="utf-8"))
     num, rotulo = ELEMENTO[otro]
     razon = (
         "HERMANO DE SERIE Y NO MADRE NI HIJO, y lo digo con la cuenta del libro delante. "

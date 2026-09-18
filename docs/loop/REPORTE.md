@@ -42090,3 +42090,4 @@ el encargo manda y lo que las vueltas 40 y 41 no hicieron.
 | `9` | `elegir_categorias_nota_palabras_propias_empresa` | `15` | `13` | `1` cableada: la **`D.37`** con su cabeza (paso `3`). **Serie `2` de `13`** | `334` |
 | `10` | `escribir_escaleras_puesto_evitar_dos_extremos` | `7` | `12` | `1` cableada: la **`D.37`** con su cabeza (paso `4`). **Serie `3` de `13`** | `335` |
 | `11` | `fijar_cuatro_notas_calcular_nota_global` | `12` | `11` | `1` cableada: la **`D.37`** con su cabeza (paso `5`). **Serie `4` de `13`**. Unico de la tanda que escribe en `censos/atribuciones` | `336` |
+| `12` | `elegir_palabras_nota_definirlas_empresa_entera` | `10` | `14` | `1` cableada: la **`D.37`** con su cabeza (paso `6`), que es **la que la cabeza dejo EN COLA al entrar**. **Serie `5` de `13`** | `337` |
