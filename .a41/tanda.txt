@@ -1,0 +1,8 @@
+lineas totales: 729   tanda = 515..729  (215 lineas)
+
+  SANO         191
+  CONTINUA     24
+
+sin razon escrita       : NINGUNA
+con campo arista escrito: 24  [519, 520, 522, 524, 533, 535, 536, 537, 541, 542, 547, 550, 576, 588, 600, 604, 630, 645, 659, 673, 688, 701, 714, 728]
+razon que dice DISCUTIBLE: 6  [523, 534, 536, 541, 663, 697]

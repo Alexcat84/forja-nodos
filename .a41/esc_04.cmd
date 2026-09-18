@@ -1,0 +1,1 @@
+grep -nE "^([0-9]+\. |[A-Z][A-Z ,“”’-]{6,}$|Rating or no|Categories of|Job ladders|Number of|Language |Consequence|Distribution|Forced curve|Calibration|Frequency|Transparent or|Lightweight or)" fuentes/scott_radical_candor/cap_14.md

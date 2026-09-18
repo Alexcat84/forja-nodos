@@ -1,0 +1,41 @@
+{
+  "id": "elegir_palabras_nota_definirlas_empresa_entera",
+  "titulo": "Elegir palabras y no numeros para la nota, y definir cada una en dos o tres frases para la empresa entera",
+  "denominaciones": {
+    "nombre_largo": "El quinto de los trece elementos: el lenguaje de la nota, con las palabras que humanizan un proceso potencialmente alienante y la definicion breve de cada escalon",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "language of ratings"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando ya sabes cuantas notas vas a tener y tienes que decidir como se llaman y donde se definen.",
+  "entregable_esperado": "Cada escalon de la nota con su palabra elegida y su definicion de dos o tres frases publicada en un sitio muy central de la empresa, facil de entender y rapida de leer.",
+  "pasos_accionables": [
+    "Traduce las palabras a numeros para lo que sea de promediar, que es lo unico para lo que el texto las quiere en numeros.",
+    "Pero entrega la nota en palabras y no en numeros, que es la eleccion que el texto hace. Podrias simplemente usar numeros, uno, dos, tres, cuatro, o podrias usar simbolos, un visto con menos, un visto, un visto con mas y un visto con dos mas, y aun asi el texto dice que su impresion general es que las palabras humanizan lo que es un proceso potencialmente alienante.",
+    "Asegurate de que las palabras que elijas demuestren el deseo de valorar el trabajo de cada persona para ayudarla a crecer profesionalmente, y no de etiquetarla ni de juzgarla como ser humano.",
+    "Define cada termino con claridad para todo el mundo en la empresa en algun sitio muy central, y el texto pone el ejemplo de una pagina en la intranet de la empresa.",
+    "Refuerza ademas esa definicion en la propia reunion de evaluacion.",
+    "Escribe en la definicion lo que la nota arrastra, y el texto da el ejemplo de lo que algunas empresas querrian dejar claro para la nota mas baja: que tu y tu jefe teneis que trabajar juntos y salir con un plan que te ayude a atender los problemas que ahi se describen, porque si no los atiendes probablemente acabaras en un plan de desempenio que puede llevar despues a la terminacion del empleo.",
+    "Cuenta con que en otras empresas esa misma nota baja puede ser menos grave, que es lo que el texto dice justo despues.",
+    "No hagas definiciones de paginas y paginas ni que suenen a definiciones juridicas: escribe dos o tres frases por cada escalon de la nota.",
+    "Mete en cada frase la aportacion del equipo de gestion del desempenio, que segun el texto debe tener siempre presente que la meta es ser simple y claro.",
+    "Comprueba el resultado contra la vara que el texto pone: facil de entender y rapido de leer."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_14.md, unidad Bonus Chapter, titulo textual Bonus Chapter: A Radically Candid Performance Review. Sale de las lineas 117 a 123, que son la PIEZA P7 de la frontera de esta vuelta, 253 palabras, y es el elemento numero 5 de los trece que la cabeza nombra. EL ROTULO DE LA CABEZA Y EL DEL DESPLIEGUE NO COINCIDEN, y lo digo en vez de elegir uno callando: la lista de la linea 47 lo llama Language matters y el despliegue de la linea 117 lo llama Language of ratings. Es el mismo elemento, el quinto en las dos listas, y el titulo de este nodo toma el del despliegue porque es el que tiene el cuerpo. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: el libro pone su propio inventario de MEDIOS, palabras contra numeros contra simbolos, la sede de la definicion, el tope de dos o tres frases por escalon y la vara de comprobacion final, facil de entender y rapido de leer. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 10 pasos, 10 TRANSCRIPCION, 0 PUENTE. P1, P2 y P3 salen de la linea 119; P4, P5 y P6 de la 121; P7, P8, P9 y P10 de la 123. EL TOPE DE DOS O TRES FRASES ES DEL TEXTO, linea 123, two to three sentences for each ratings bucket. LOS SIMBOLOS DEL TEXTO van descritos en palabras y no copiados como simbolos, porque el barrido de estilo de esta casa lee lo que escribo y los simbolos del libro llevan signos que no puedo transcribir sin romperlo: la descripcion no cambia el sentido. NO ESCRIBO DESTINATARIO NI PERIODO: el texto no dice cada cuanto se revisan las definiciones. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: que palabras usar, quien aprueba la definicion final, ni que se hace cuando la definicion de una nota cambia despues de haberla usado.",
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ]
+}
