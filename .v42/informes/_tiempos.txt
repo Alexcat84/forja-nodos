@@ -45,3 +45,5 @@
 15:43:16 termina insercion candidato 15
 15:43:35 arranca insercion candidato 15 (presionar_curva_notas_evitar_forzarla)
 15:53:22 termina insercion candidato 15
+15:55:02 arranca insercion candidato 16 (calibrar_notas_reunion_jefes_pares)
+16:05:59 termina insercion candidato 16
