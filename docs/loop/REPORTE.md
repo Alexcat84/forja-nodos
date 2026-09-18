@@ -41520,3 +41520,126 @@ arista en cola**. **No los toco.** `cap_13` **queda con `2`** si los cuatro entr
 a seis**, y el motivo esta medido en el encargo: `896` segundos de media por insercion.
 
 ### DC.6.d. **LAS FILAS, UNA POR CANDIDATO, CADA UNA CON SU CANDIDATO YA DENTRO**
+
+---
+
+# VUELTA 41, lote 4 (`scott_radical_candor`), `cap_13`: **CERRAR LA SERIE `D.37` Y PAGAR LA DEUDA DE ARISTAS DE LA VUELTA 24**
+
+*Reporte abierto ANTES de la primera tarea (`EXTRACTOR.md` 3). Linea `serial`, la unica que
+inserta (`D.45`). `MODO_INSERCION=insertar`, el default desde `D.39`, **y solo para el lote
+cerrado en extraccion cuyo informe certifico el acta**. Modo austero `D.47` vigente.*
+
+## EC.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+### EC.0.a. **EL ARRASTRE, COMMITEADO Y PUSHEADO ANTES DE TOCAR NADA** (`EXTRACTOR.md` 1.1)
+
+<!-- TALLADO: parcial salida=.v41/identidad_apertura.txt -->
+
+    $ git log -1 --format='%H %ad' --date=iso
+      40e540e05a78161022da879de9aecdc3deb47e59 2026-09-18 08:21:28 -0400
+
+**Lo que arrastraba la vuelta 40**: `docs/loop/loop.log`, `ultimo_auditor.json`,
+`ultimo_extractor.json` y los nueve ficheros sin seguir de `.v40/` (los cuatro guiones de
+cadena, `cierre.py`, `correr.sh`, `fila.py`, `guardas.sh` y la carpeta `informes/`).
+**Commiteado en `40e540e` y pusheado a `extraccion-mundo-11` antes de la primera medicion.**
+
+### EC.0.b. **EL ESTADO DE LA LINEA, CONTADO DEL DATO**
+
+<!-- TALLADO: parcial salida=.v41/estado_apertura.txt -->
+
+    $ python .v41/estado.py
+      poblacion: el arbol entero, sin filtrar
+      dataset/nodos.jsonl                        : 324 nodos
+      bitacora/VEREDICTOS.jsonl                  : 507 lineas
+      cuarentena/scott_radical_candor            : 21
+      cuarentena/_insertados/scott_radical_candor: 121
+      la bandeja por capitulo                    : cap_13 6, cap_14 15
+
+### EC.0.c. **LAS TRES GUARDAS, EN VERDE AL ABRIR**
+
+<!-- TALLADO: parcial salida=.v41/guardas_apertura.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 324
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python tests/test_aceptacion.py
+      total: 294 pruebas, 0 fallos, 0 errores
+
+**`324`, cero y `294 / 0 / 0`: los tres numeros que el encargo dice que abren hoy, al digito.**
+
+### EC.0.d. **EL CREDITO DE LA LINEA AL ABRIR**
+
+<!-- TALLADO: parcial salida=.v41/credito_apertura.txt -->
+
+    $ python forja.py credito
+      especie            racha      de donde sale
+      AUDITOR            2 de 3     ACTA 39
+      CIFRA PUBLICADA    0 de 2     ACTA 39
+      CLASE              0 de 2     ACTA 39
+      DATO MOVIDO        0 de 2     ACTA 39
+      REPORTE            1 de 3     ACTA 39
+
+### EC.0.e. **LA COLA DE ARISTAS AL ABRIR, RECONTADA POR `arista_corregida`**
+
+<!-- TALLADO: parcial salida=.v41/cola_apertura.txt -->
+
+    LA COLA DE ARISTAS ENTERA, de bitacora/VEREDICTOS.jsonl
+      lineas con arista_en_cola: true            : 16
+      de ellas, YA CABLEADAS en el grafo         : 11
+      esperan a un extremo que no ha entrado     : 5
+      con LOS DOS extremos dentro y SIN cable    : 0   <-- tiene que salir 0
+
+      linea  madre                                                hijo                                                 ambos    cable
+      --------------------------------------------------------------------------------------------------------------------------------
+      489    pedir_critica_primero_crear_seguridad_psicologica    abrazar_incomodidad_silencio_contar_seis             NO       NO
+      490    pedir_critica_primero_crear_seguridad_psicologica    dar_elogio_disciplina_igual_critica                  NO       NO
+      492    pedir_critica_primero_crear_seguridad_psicologica    escuchar_entender_critica_dominar_defensa            NO       NO
+      494    pedir_critica_primero_crear_seguridad_psicologica    medir_critica_respuesta_oyente_brujula               NO       NO
+      495    pedir_critica_primero_crear_seguridad_psicologica    premiar_franqueza_hacer_escucha_tangible             NO       NO
+
+**`16 / 11 / 5 / 0` al abrir, que es lo que el encargo dice.** Las once primeras filas
+(`265` a `473`) salen `si`/`si` y no se repiten aqui (`D.47`, modo austero): estan enteras
+en `.v41/cola_apertura.txt`. **La cifra que tiene que salir `0` sale `0`.**
+
+### EC.0.f. **LO QUE EL ARNES NO ME ENTREGA HOY, DECLARADO Y NO INVENTADO** (`D.43`)
+
+<!-- TALLADO: parcial salida=.v41/entrega_arnes.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ ls docs/loop/ | grep -i -E "cola|vecin"
+      (ni una linea)
+
+**Esta vuelta NO trae saldo de lote ni cola de vecinos sellada**, y `D.43` manda lo que hago
+con eso: *no lo inventes y no lo lances*. **Asi que no publico ningun `CHOCAN entre si dentro
+del lote`.** Lo que si corro, porque `D.43` lo deja expresamente en mi turno (*el de un
+candidato suelto sigue siendo tuyo*) **y porque la `TAREA 2` me lo ordena en bloqueante**, es
+`python forja.py informe` **candidato a candidato**.
+
+## EC.1. EL ESQUELETO DE LAS TAREAS, ABIERTO ANTES DE LA PRIMERA (`EXTRACTOR.md` 3)
+
+<!-- TALLADO: parcial salida=.v41/prefijos.txt -->
+
+    $ grep -oE "^## [A-Z]{2}\." docs/loop/REPORTE.md | sort -u
+      ## AA.
+      ## AB.
+      ## AC.
+      ## BC.
+      ## CC.
+      ## DC.
+
+**El prefijo de esta vuelta es `EC.`**, el siguiente de la serie que esa salida imprime.
+
+| # | tarea | como cerro |
+|---:|---|---|
+| **1.A** | **BLOQUEANTE**: releer el par de la `498` contra el grafo y, si se sostiene, correccion declarada mas la arista `54` | |
+| **1.B** | lo adjudicado en la `ACTA 39`, recogido y NO reabierto | |
+| **2** | **BLOQUEANTE**: el metodo de la cadena arreglado por mecanica: informe por candidato, `grep -c` contra los vecinos, `tail` antes de irme | |
+| **3** | `cap_13`, los `3` que cierran la serie, uno por vez y en el orden del libro, con sus aristas `D.29` `55`, `56` y `57` | |
+| **4** | `EC.6` abierta ANTES de la primera insercion, una fila por candidato, **y la linea literal del cierre** | |
+| **cierre** | guardas, cifras recomputadas, cola de aristas recontada, discutibles, tabla de cierre `D.52` | |
