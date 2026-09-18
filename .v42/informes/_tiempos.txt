@@ -11,3 +11,9 @@
 12:02:00 termina insercion candidato 3
 12:05:18 arranca insercion candidato 4
 12:25:44 termina insercion candidato 4
+12:29:33 arranca insercion candidato 5
+12:52:26 termina insercion candidato 5
+12:53:47 arranca insercion candidato 5 (reintento con el vecino que faltaba)
+12:53:47 termina insercion candidato 5
+12:56:45 arranca insercion candidato 5 (segundo reintento)
+13:19:37 termina insercion candidato 5

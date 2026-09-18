@@ -1,0 +1,46 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/medir_critica_respuesta_oyente_brujula.json [7 veredictos y censos]
+ADUANA DE INSERCION, candidato 'medir_critica_respuesta_oyente_brujula'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 371   (329 del grafo mas 42 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 6. Ninguna señal los levanto.
+  ajustar_franqueza_oido_oyente  [Ajustar la franqueza radical al oido del que escucha y no a la boca del que habla, buscando la forma local de cada dimension]
+    señales: familia_id 0.125, paso_contra_nodo 0.496, similitud_texto 0.175
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  criticar_trabajo_evitar_desanimo  [Criticar el trabajo sin desanimar a la persona, con la lista que el texto pone y el error de atribucion evitado]
+    señales: familia_id 0.0, paso_contra_nodo 0.438, similitud_texto 0.206
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  dominar_reacciones_emociones_ajenas  [Dominar tus reacciones ante las emociones de los demas, sin intentar prevenirlas, controlarlas ni manejarlas]
+    señales: familia_id 0.0, paso_contra_nodo 0.435, similitud_texto 0.2
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  escuchar_entender_critica_dominar_defensa  [Escuchar la critica con intencion de entender y no de responder, dominando tu propia defensa con la practica de escuchar tres minutos sin interrumpir]
+    señales: familia_id 0.111, paso_contra_nodo 0.459, similitud_texto 0.267
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  manejar_enfado_persona_desafiada  [Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario]
+    señales: familia_id 0.0, paso_contra_nodo 0.539, similitud_texto 0.142
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  pedir_critica_primero_crear_seguridad_psicologica  [Pedir critica tu antes que nada, que es el primer paso del orden de operaciones, porque es lo que mas deprisa crea la seguridad psicologica del equipo]
+    señales: familia_id 0.1, paso_contra_nodo 0.453, similitud_texto 0.207
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino desplegar_marco_franqueza_radical  [Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.139 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.723 (umbral 0.60)
+    paso 4 del candidato contra paso 6 de desplegar_marco_franqueza_radical
+  arista madre-hijo cableada y escrita RESUELTA: desplegar_marco_franqueza_radical > medir_critica_respuesta_oyente_brujula
+  arista madre-hijo cableada y escrita RESUELTA: ajustar_franqueza_oido_oyente > medir_critica_respuesta_oyente_brujula
+  arista madre-hijo cableada y escrita RESUELTA: manejar_enfado_persona_desafiada > medir_critica_respuesta_oyente_brujula
+  arista madre-hijo cableada y escrita RESUELTA: pedir_critica_primero_crear_seguridad_psicologica > medir_critica_respuesta_oyente_brujula
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 330
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 7
+CODIGO DE SALIDA: 0

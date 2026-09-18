@@ -811,3 +811,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | dar_elogio_disciplina_igual_critica | otro_idioma | PRAISE: FOCUS ON THE GOOD STUFF. REALLY. | ingles | - |
 | 2026-09-18 | dar_elogio_disciplina_igual_critica | otro_idioma | APPLY THE SAME DISCIPLINE TO PRAISE THAT YOU DO TO CRITICISM | ingles | - |
 | 2026-09-18 | dar_elogio_disciplina_igual_critica | otro_idioma | Praise Practice | ingles | - |
+| 2026-09-18 | medir_critica_respuesta_oyente_brujula | nombre_largo | Medir la critica: la franqueza radical se mide en el oido del otro y no en tu boca, y que hacer ante la tristeza, ante el enfado y ante quien no te oye | castellano | - |
+| 2026-09-18 | medir_critica_respuesta_oyente_brujula | otro_idioma | GAUGE CRITICISM | ingles | - |
+| 2026-09-18 | medir_critica_respuesta_oyente_brujula | otro_idioma | listen-challenge-commit | ingles | - |
+| 2026-09-18 | medir_critica_respuesta_oyente_brujula | otro_idioma | It's not mean, it's clear | ingles | - |
