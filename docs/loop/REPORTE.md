@@ -49275,7 +49275,14 @@ yo** (`EXTRACTOR.md` 14).
 *Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
 `docs/loop/TABLA_DE_CIERRE.txt`.*
 
-<!-- TALLADO: salida=docs/loop/TABLA_DE_CIERRE.txt -->
+> **CORRECCION DECLARADA DE LA VUELTA 52, SIN BORRAR NI UNA CELDA** (`d030`, la colision de `D.52`
+> con `D.41`, sufrida por OCTAVA vez): la ruta viva `docs/loop/TABLA_DE_CIERRE.txt` la reescribe la
+> vuelta 52 con SU tabla, asi que esta de aqui dejaria de reproducir sin que nadie la tocara. **Se
+> repunta a su copia archivada**, que esta sellada por `hash-object` en `NN.5.a` de la vuelta 52:
+> el mismo `984dab3b` en las tres lineas, o sea que la copia ES la salida y no una transcripcion.
+> **La tabla de abajo no cambia ni un caracter.**
+
+<!-- TALLADO: salida=docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v51.txt -->
 
 | # | tarea | como cerro |
 |---:|---|---|
@@ -49426,10 +49433,10 @@ nunca por la aduana.
 | tarea | que pide | estado |
 |---|---|---|
 | `NN.1` | los registros de la `ACTA 50` recogidos sin reabrirlos, la caida de `REPORTE` leida del instrumento, y **el repaso de mis propias divisiones con los dos numeros de su celda delante** | **CERRADA en `NN.1`**, con su `1.c` ejecutada en `NN.5.h` |
-| `NN.2` | `cap_05` cierra la seccion del uno a uno: `P15`, `P16`, `P17`, `P18`, `P19` y `P20`, con frontera dentro del nodo antes de cortar, palabras recomputadas, fidelidad `D.30` con su `sed` pegado y **aduana en el mismo acto**. **Cero inserciones** | |
-| `NN.3` | `d051`: el digito de senial sale del texto del que la senial se calcula, en las **seis** fichas de la vuelta 51 y en las **seis** de hoy, por correccion declarada y sin borrar. **Cero pasadas de aduana** | |
-| `NN.4` | `d052`: la frontera que ninguna senial levanta, escrita dentro de `cubrir_indicadores_problemas_reunion_individual` con las dos posiciones y sus fuentes. **Cero pasadas de aduana** | |
-| `NN.5` | el cierre: las cinco guardas, la tabla `D.52` con su sello por COMMIT y no por `HEAD`, el estado recomputado, `PASOS INVENTADOS` por capitulo, la linea del tramo con su reloj y la deuda recomputada | |
+| `NN.2` | `cap_05` cierra la seccion del uno a uno: `P15`, `P16`, `P17`, `P18`, `P19` y `P20`, con frontera dentro del nodo antes de cortar, palabras recomputadas, fidelidad `D.30` con su `sed` pegado y **aduana en el mismo acto**. **Cero inserciones** | **CERRADA ENTERA en `NN.2`**: `6` de `6`, `0 CAERIA`, `35` pasos y `0` PUENTE, `34` pares veredictados |
+| `NN.3` | `d051`: el digito de senial sale del texto del que la senial se calcula, en las **seis** fichas de la vuelta 51 y en las **seis** de hoy, por correccion declarada y sin borrar. **Cero pasadas de aduana** | **CERRADA en `NN.3`**, `d051` PAGADA |
+| `NN.4` | `d052`: la frontera que ninguna senial levanta, escrita dentro de `cubrir_indicadores_problemas_reunion_individual` con las dos posiciones y sus fuentes. **Cero pasadas de aduana** | **CERRADA en `NN.4`**, `d052` PAGADA |
+| `NN.5` | el cierre: las cinco guardas, la tabla `D.52` con su sello por COMMIT y no por `HEAD`, el estado recomputado, `PASOS INVENTADOS` por capitulo, la linea del tramo con su reloj y la deuda recomputada | **CERRADA en `NN.5` CON UNA PARADA DECLARADA**: `gate`, `guiones`, tallado y censo verdes; **la prueba de aceptacion en ROJO por un fallo que llego en `9ec9b3c` durante mi turno y que `D.45` me prohibe arreglar** (`NN.5.i`). Estado al digito (`346`, `740`, `1`, `56`), `D.52` sellada por octava vez citando `b04ac62`, `cap_05` en `0` de `84`, media `731,2` s sobre `6` de `6`, deuda de `19` a `17` y `16` discutibles marcados |
 
 **CINCO TAREAS, EN EL TOPE DE CINCO** (`EXTRACTOR.md` 3). Cero cola declarada al abrir.
 
@@ -49861,3 +49868,747 @@ porque los dos textos no se parecen. Su veredicto va en `NN.2.e`.
 pasos `2` y `3` repiten dos piezas que ya viven en `P13` y en `P16`, **porque `L55` las vuelve a
 escribir enteras dentro de su propio renglon**. Se transcriben de `L55` y se citan de `L55`, y la
 repeticion se dice en vez de callarse.
+
+#### **CANDIDATO 6 de 6, `P20`: `programar_reunion_individual_cadena`**
+
+**`L57` a `L57`, `74` palabras, `5` pasos.** **Con el, la seccion del uno a uno queda cerrada.**
+
+<!-- TALLADO: parcial script=.v52/c6.py salida=.v52/aduana_c6.txt -->
+
+    $ python .v52/c6.py
+    escrito cuarentena\grove_high_output\programar_reunion_individual_cadena.json 5 pasos
+    $ python forja.py informe cuarentena/grove_high_output/programar_reunion_individual_cadena.json
+    candidatos revisados        : 1
+    poblacion del barrido       : 405   (346 del grafo mas 59 que esperan en bandejas)
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 10
+      por candidato bloqueado          : menor 10, mediana 10, mayor 10
+      que señal levanta cada vecindad  : familia_id 2, similitud_texto 8
+
+    $ cat .v52/reloj_c6.txt
+    RELOJ: 761.9 s
+
+**`0 CAERIA` y cero correcciones de id.** Poblacion `405`, que es la que el encargo predijo.
+
+**`10` VECINOS: ES LA COLA MAS LARGA QUE UN CANDIDATO HA ABIERTO EN ESTE LIBRO**, y no es que el
+candidato este mal: es el sexto de una seccion de seis sobre la misma reunion, **asi que barre
+contra los cinco anteriores mas los de la vuelta 51**. Es exactamente el caso que `EXTRACTOR.md` 12
+escribe al final: **cuando un capitulo entero cae en la misma familia, eso no es senial de duplicado,
+es senial de que el libro trata un tema**, y la cola larga es su precio, no un fallo.
+
+> **Y AQUI SALE UNA COSA QUE TOCA LA `TAREA 4`, Y LA DIGO AUNQUE NO ME FAVOREZCA:** este candidato
+> **si levanta** a `dirigir_reunion_individual_semanal`, el nodo de `zhuo_manager` de la frontera de
+> `d052`, **por familia de id y no por texto**. **Eso NO desmiente al auditor y no mueve la
+> `TAREA 4` ni una coma**: lo que `50.5.b` mide es que la senial no levanta **ese par**, el de
+> `cubrir_indicadores_problemas_reunion_individual` contra `dirigir_reunion_individual_semanal`, y ese
+> par sigue sin levantarse. **Lo que esto anade es que el mismo vecino si aparece por otro lado y por
+> otra senial**, o sea que la contradiccion de doctrina y la vecindad de la maquina van por caminos
+> distintos. Queda registrado con su senial y su par emparejado, y su veredicto va en `NN.2.e`.
+
+### NN.2.d. **LA RELECTURA DE FIDELIDAD `D.30`, EN EL ACTO Y PASO A PASO** (`EXTRACTOR.md` 15.4)
+
+**Ninguna guarda de esta casa ve un paso que yo escribi y el libro no dice**, asi que esta cuenta no
+sale de la aduana: sale de marcar cada paso contra su parrafo **mientras se escribe**, y de dejar
+dentro de la ficha **el sitio donde estuve a punto de escribir un puente**.
+
+<!-- TALLADO: parcial script=.v52/pasos_por_candidato.py salida=.v52/pasos_tanda.txt -->
+
+    $ python .v52/pasos_por_candidato.py
+    pieza id                                                pasos  TRANSCRIPCION  PUENTE tentaciones
+    P15   facilitar_expresion_subordinado_pregunta_mas          6              6       0           3
+    P16   tomar_notas_copia_guion_reunion_individual            7              7       0           3
+    P17   acumular_asuntos_importantes_fichero_espera           4              4       0           4
+    P18   alentar_asuntos_corazon_vigilar_final_reunion         8              8       0           3
+    P19   conducir_reunion_individual_telefono_distancia        5              5       0           4
+    P20   programar_reunion_individual_cadena                   5              5       0           3
+          TOTAL DE LA TANDA                                    35             35       0          20
+
+**`35` pasos, `35` TRANSCRIPCION, `0` PUENTE, y `20` sitios de tentacion declarados dentro de las
+seis fichas.** La columna de tentaciones **la cuenta el instrumento** sobre el texto de cada ficha,
+no la tecleo yo: busca las rubricas `ESTUVE A PUNTO DE ESCRIBIR UN PUENTE` y `SITIO DE TENTACION`.
+
+**LAS ESPECIES QUE MAS ME TENTARON, y son las tres que el lote 1 pago:**
+
+| especie | donde volvio a aparecer | que escribe el libro, y por eso no lo escribi yo |
+|---|---|---|
+| **el destinatario** | `P18`, y era la mas fuerte de la tanda | `L53` avisa contra el asunto grave que llega tarde **y no encarga ningun remedio**. Escribir que se aplaza, que se abre otra reunion o que se saca al principio habria sido cerrar un bucle que el libro deja abierto |
+| **el destinatario** | `P19`, salida directa del `and so on` | la lista de `L55` termina abierta, y **cualquier tercera pieza de preparacion que yo anadiera seria mia**. El paso 3 termina donde el libro termina |
+| **el responsable** | `P16` y `P20` | `L49` dice que los dos **deben tener** copia y no dice quien la reparte; `L57` escribe el acto en pasiva y **no dice quien fija la siguiente**. Los dos pasos se quedan sin sujeto, igual que el libro |
+| **el periodo** | `P17`, y la tenia medio escrita | `L51` dice `at the next meeting`, que es un momento definido por la reunion siguiente **y no un periodo fijado por nadie** |
+
+> **EL AVISO DE `15.4` SE CUMPLIO OTRA VEZ, Y LO PUBLICO PORQUE MIDE CONTRA MI:** el tramo mas pobre
+> de la tanda (`P17`, `64` palabras) es **el que mas sitios de tentacion me produjo, `4`**, empatado
+> con `P19`, que es el que trae el `and so on` abierto. **Un parrafo pobre no produce un nodo pobre:
+> produce un nodo inventado**, y los dos sitios donde eso estuvo cerca son exactamente esos dos.
+
+### NN.2.e. **LOS `34` PARES DE COLA, LEIDOS ENTEROS Y VEREDICTADOS UNO A UNO**
+
+**Los seis informes levantaron `34` pares.** Ninguno se resuelve por su cifra: **los vecinos se leen
+enteros y el veredicto lleva su razon y su par emparejado**, que es lo que lo hace releible.
+
+<!-- TALLADO: parcial script=.v52/veredictos.py salida=.v52/veredictos.txt -->
+
+    $ python .v52/veredictos.py
+    candidato                                          pares   comunes  sede del digito
+    facilitar_expresion_subordinado_pregunta_mas           5         0  .v52/aduana_c1.txt
+    tomar_notas_copia_guion_reunion_individual             4         0  .v52/aduana_c2.txt
+    acumular_asuntos_importantes_fichero_espera            4         0  .v52/aduana_c3.txt
+    alentar_asuntos_corazon_vigilar_final_reunion          5         0  .v52/aduana_c4.txt
+    conducir_reunion_individual_telefono_distancia         6         0  .v52/aduana_c5.txt
+    programar_reunion_individual_cadena                   10         0  .v52/aduana_c6.txt
+
+    PARES DE COLA DE LA TANDA, veredictados uno a uno : 34
+    PASOS LITERALMENTE COMUNES en los 34 pares        : 0
+    DIGITOS DE SENIAL ESCRITOS DENTRO DE LAS FICHAS   : 0   (d051 aplicada desde el principio)
+    ASERCION: pasos, titulo y atribuciones identicos, y el texto viejo es PREFIJO del nuevo en las 6.
+
+**`34` veredictos `SANO` con su razon escrita, y `0` pasos literalmente comunes en los `34` pares.**
+**Esa cifra la cuenta el guion par a par y no la afirmo yo**, que es la correccion de metodo que me
+impuse en `NN.1.c`: donde antes escribia *cero pasos comunes* como conclusion de lectura, hoy sale
+de una interseccion de conjuntos impresa.
+
+**LOS TRES PARES QUE LEI ANTES QUE NINGUN OTRO, Y POR QUE:**
+
+| par | que senial lo levanta | lo que la lectura encontro |
+|---|---|---|
+| `alentar_asuntos_corazon` contra `fijar_duracion_lugar` | **paso contra nodo**, la unica senial 3 de la tanda y la que mas caza | **no es duplicado: es la mejor arista de la tanda.** Uno dice que por debajo de la hora el subordinado se limita a lo sencillo, el otro que el asunto grave llega cerca del final. **Los dos hablan del reloj de la misma reunion y no se repiten** |
+| `tomar_notas_copia_guion` contra `preparar_guion_reunion_individual_subordinado` | **familia de id ademas de texto**, la unica senial 2 entre candidatos de la tanda | los dos ids comparten `guion` y `reunion_individual` **porque hablan del mismo objeto en dos momentos**: quien lo prepara, y que se hace con el dentro de la sesion |
+| `conducir_reunion_individual_telefono` contra `preguntar_conducir_reunion_individual` | **familia de id con la similitud de texto muy por debajo del umbral** | **el caso de libro de `D.19`**: dos ids que comparten piezas y dos textos que no se parecen. Vecino de otro libro y de otra casa, `SANO` sin discusion |
+
+**Y EL VEREDICTO QUE MAS FALTA HACIA ES EL DE `programar_reunion_individual_cadena` CONTRA
+`infundir_regularidad_reunion_proceso`:** leidos deprisa **dicen cosas contrarias** (uno manda
+infundir regularidad, el otro manda no usar horario fijo) y leidos enteros **dicen lo mismo desde dos
+sitios**: la regularidad es que la reunion se celebre siempre, y la cadena es lo que impide que una
+fecha fija se lleve por delante una celebracion. **Eso es lo que un `SANO` a secas no habria
+guardado.**
+
+### NN.2.f. **CERO INSERCIONES, CON LA PUERTA MEDIDA POR MI Y NO HEREDADA**
+
+**Ni un nodo entro hoy.** La medida esta en `NN.0.a` y sale de mi propia corrida: `grove_high_output`
+**no esta en `cerrados_en_extraccion`** y **`cap_05` no cierra un lote de `18` capitulos**. La
+corrida me llega con la insercion abierta, **y abierta sigue para un lote cerrado, que este no es**.
+
+**LA COMPROBACION DE QUE NO ENTRO NADA SE HACE AL CIERRE Y NO AQUI** (`EXTRACTOR.md` 4: el estado al
+cierre se mide al cierre): son las tres cifras de `NN.5.c`, `346`, `740` y `1`. **Si alguna se
+hubiera movido, seria la caida.**
+
+**FILA DE LA TAREA 2: CERRADA ENTERA en `NN.2`**: `6` de `6` escritos y pasados por su aduana en el
+mismo acto, **`0 CAERIA`**, `35` pasos con `0` PUENTE, `34` pares veredictados y **cero inserciones**.
+
+## NN.3. **`d051`: EL DIGITO DE SENIAL SALE DE DENTRO DEL TEXTO DEL QUE LA SENIAL SE CALCULA**
+
+**Es la tercera generacion de `d038`, y la frase que la resuelve la escribi yo al pagar `d044`:**
+*un comando escrito dentro de su propia poblacion no se arregla afinandolo, se arregla sacandolo.*
+**El digito es el mismo caso que el comando**, y asi me lo devolvio la `ACTA 50`.
+
+### NN.3.a. **LAS SEIS FICHAS DE LA VUELTA 51, POR CORRECCION DECLARADA Y SIN BORRAR** (manual principio 6)
+
+<!-- TALLADO: parcial script=.v52/tarea3.py salida=.v52/tarea3.txt -->
+
+    $ python .v52/tarea3.py
+    ficha                                                  antes   despues  digitos  sede del digito
+    infundir_regularidad_reunion_proceso                    6251      8590        0  .v51/aduana_c1.txt
+    usar_tres_clases_reunion_proceso                        6728      9067        0  .v51/aduana_c2.txt
+    fijar_frecuencia_reunion_individual_madurez_tarea       9623     11944        1  .v51/aduana_c3.txt
+    fijar_duracion_lugar_reunion_individual                 9123     11444        1  .v51/aduana_c4.txt
+    preparar_guion_reunion_individual_subordinado           9796     12131        3  .v51/aduana_c5.txt
+    cubrir_indicadores_problemas_reunion_individual        10675     13017        4  .v51/aduana_c6.txt
+
+    fichas corregidas                       : 6
+    digitos de senial que llevaban dentro   : 9
+    ASERCION: solo cambia resumen_teorico, el viejo es PREFIJO del nuevo,
+              pasos, titulo y atribuciones identicos en las 6. TODAS PASARON.
+
+**`9` digitos, que son exactamente los `9` que la `ACTA 50` desentierra**, y la columna los cuenta
+**ficha a ficha con una expresion regular**, no de memoria. **Dos de las seis no llevaban ninguno**,
+porque sus informes no levantaron vecino: tambien llevan la correccion, y lo que dicen es que no
+tienen digito que reencuadrar.
+
+**QUE SE QUEDA Y QUE SE VA, y es la letra de la tarea:**
+
+| | |
+|---|---|
+| **se queda** | la **CLASE** del veredicto, el **VECINO** nombrado, la **RAZON** entera y el **PAR EMPAREJADO**. Ninguna de las cuatro depende de una cifra |
+| **se queda, y no se borra** | **el digito viejo, escrito donde estaba**. Lo que se anade es la frase que dice **de que acto es** y **donde vive su informe** |
+| **se va** | el digito **como medida viva**. Desde esa linea, ninguna de las seis fichas presenta un numero de senial como si fuera de hoy |
+
+### NN.3.b. **LAS SEIS DE ESTA VUELTA LO APLICAN DESDE EL PRINCIPIO, PARA NO VOLVER A PAGARLO**
+
+**Ya esta hecho y esta medido en `NN.2.e`:** el bloque de veredicto de los seis candidatos nuevos
+**nombra su informe** (`.v52/aduana_cN.txt`), **nombra la senial que levanta cada vecino** y **no
+copia ni un digito**. La linea del instrumento lo dice al digito:
+
+    DIGITOS DE SENIAL ESCRITOS DENTRO DE LAS FICHAS   : 0   (d051 aplicada desde el principio)
+
+### NN.3.c. **LO COMPRUEBO DESPUES DE ESCRIBIRLO, NO ANTES, Y PEGO LO QUE DA SALGA COMO SALGA**
+
+**Es la leccion entera de `49.4.a`, y la que aplique bien en `MM.1.c`.** Corro **el mismo
+instrumento** sobre el arbol ya corregido:
+
+<!-- TALLADO: parcial script=.v51/por_que_0445.py salida=.v52/por_que_0445_despues.txt -->
+
+    $ python .v51/por_que_0445.py      (SOBRE EL ARBOL YA CORREGIDO, despues de la TAREA 3.a)
+      PAR                                  : fijar_duracion_lugar_reunion_individual  contra  fijar_frecuencia_reunion_individual_madurez_tarea
+      senial 1 TAL COMO LA ADUANA LA MIDE  : 0.630   (umbral 0,35; banda alta desde 0,40)
+      senial 1 SIN el resumen_teorico      : 0.205
+      senial 1 SOLO con los pasos          : 0.179
+
+      caracteres de resumen_teorico        : 11444 y 11944
+      caracteres de los pasos              : 1127 y 1319
+      el resumen es el  93 y el 91 por ciento del texto que la senial 1 compara
+
+      PASOS LITERALMENTE COMUNES A LOS DOS : 0
+
+> # **LA SENIAL NO BAJA: SUBE DE `0,550` A `0,630`. LO PUBLICO ENTERO Y DIGO POR QUE.**
+
+**Y lo publico sabiendo que un lector rapido leera que el pago fallo**, que es exactamente lo que me
+paso con los dos `grep` de `MM.1.c` y por lo que aquel pago cerro.
+
+| lo que la `TAREA 3` promete | lo que la `TAREA 3` no promete |
+|---|---|
+| que **ningun digito de senial se presente como medida viva** dentro del texto del que la senial se calcula | **bajar la senial**. El encargo me lo prohibe con todas sus letras: *no acortas un `resumen_teorico` ni cambias un paso para bajar una senial* |
+
+**POR QUE SUBE, MEDIDO Y NO SUPUESTO, con los tres numeros de la propia salida:**
+
+- **`senial 1 SIN el resumen_teorico` sigue en `0,205`**, exactamente igual que antes de la
+  correccion. **Todo el movimiento esta dentro del `resumen_teorico` y en ningun otro campo**, que
+  es la mitad del diagnostico de `d051` confirmada por su propio instrumento;
+- el bloque de correccion declarada que `D.51` obliga a escribir es, **por construccion, casi el
+  mismo texto en las seis fichas**: la misma rubrica, la misma cita de regla, la misma frase de
+  `d044`. **Dos fichas que crecen con el mismo parrafo se parecen mas que antes**, y la senial 1
+  compara texto;
+- el resumen pasa del `90` y `89` por ciento del texto comparado al **`93` y `91`**, asi que el peso
+  del campo que no es el libro **sube**, y con el sube la medida.
+
+> **LO QUE ESTO SIGNIFICA, DICHO CONTRA MI MISMO Y REGISTRADO CON SU CIFRA** (`D.56`: lo registro,
+> **no abro doctrina**): **el metodo de correccion declarada sin borrar, que es el que esta casa
+> manda, tiene un efecto medido sobre la senial 1 entre fichas hermanas de la misma tanda.** Cada
+> pago escribe el mismo parrafo en varias fichas a la vez y las acerca. **No propongo cambiarlo, no
+> propongo mover ningun umbral y no acorto ni una linea**: lo dejo aqui con su medida, `0,550` a
+> `0,630` en una sola tarea, para que quien decida lo decida con el numero delante.
+
+### NN.3.d. **CERO PASADAS DE ADUANA POR ESTA TAREA, Y ESTA VEZ NO ES PROMESA**
+
+**La comprobacion es por asercion del propio guion**, como en `MM.3.c`, y ademas la repito **contra
+la version de `git` de la vuelta 51** para que no dependa de que mi guion se crea a si mismo:
+
+<!-- TALLADO: parcial script=.v52/tarea3_guardas.py salida=.v52/tarea3_guardas.txt -->
+
+    $ python .v52/tarea3_guardas.py
+    LA COMPROBACION SE HACE SOBRE EL ARBOL YA CORREGIDO, contra la version de git de la vuelta 51
+    ficha                                               prefijo     pasos      titulo  atribuciones
+    infundir_regularidad_reunion_proceso                   True      True        True          True
+    usar_tres_clases_reunion_proceso                       True      True        True          True
+    fijar_frecuencia_reunion_individual_madurez_tarea      True      True        True          True
+    fijar_duracion_lugar_reunion_individual                True      True        True          True
+    preparar_guion_reunion_individual_subordinado          True      True        True          True
+    cubrir_indicadores_problemas_reunion_individual        True      True        True          True
+
+    LAS SEIS PASAN LAS CUATRO: True
+    y el commit contra el que se comparan es b04ac62, que es el de la vuelta 51
+
+**`0` pasadas de aduana compradas por la `TAREA 3`**, y el motivo es que **solo cambia
+`resumen_teorico`**: comprobado contra `b04ac62` en las seis fichas, con el texto viejo de PREFIJO y
+con pasos, titulo y atribuciones identicos.
+
+**DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO, Y ES SOBRE UNA CIFRA MIA:** publico `9` digitos
+reencuadrados, y esa cifra sale de una expresion regular que busca la formula literal *levantado por
+similitud de texto* seguida de un numero. **Si alguna de las seis fichas escribiera un digito de
+senial con otra formula, mi `9` seria bajo y no lo veria.** Lo sostengo porque el `9` coincide al
+digito con lo que la `ACTA 50` conto por otro camino, pero **el metodo es mio y puede estrecharse**.
+Si cae, cae DENTRO de mi marcado.
+
+**FILA DE LA TAREA 3: CERRADA en `NN.3`**, `d051` PAGADA, con su comprobacion posterior pegada y con
+la subida de `0,550` a `0,630` publicada en vez de escondida.
+
+## NN.4. **`d052`: LA FRONTERA QUE NINGUNA SENIAL VA A LEVANTAR, ESCRITA DENTRO DE LA FICHA**
+
+**Adjudicada por el auditor con la vara `6.1`** (*dos doctrinas legitimas no son duplicado: son
+frontera declarada*). **No es caida de nadie y no abre doctrina** (`D.56`).
+
+<!-- TALLADO: parcial script=.v52/tarea4.py salida=.v52/tarea4.txt -->
+
+    $ python .v52/tarea4.py
+    ficha                                   : cubrir_indicadores_problemas_reunion_individual
+    resumen_teorico antes                   : 13017 caracteres
+    resumen_teorico despues                 : 16335 caracteres
+    veces que nombra dirigir_reunion_individual_semanal, antes y despues: 0 y 1
+    ASERCION: solo cambia resumen_teorico, el viejo es PREFIJO del nuevo,
+              pasos, titulo y atribuciones identicos. PASO.
+    dataset/nodos.jsonl y bitacora/VEREDICTOS.jsonl: NO SE TOCAN por este guion.
+
+**LA CIFRA QUE MAS DICE DE ESTA TAREA ES EL `0` Y `1` DE LA TERCERA LINEA:** la ficha que protagoniza
+la contradiccion **nombraba a ese vecino cero veces** y ahora lo nombra. **Era la unica de las cuatro
+del uno a uno que no lo hacia**, y eso lo midio el auditor, no yo.
+
+**LO QUE QUEDA ESCRITO DENTRO DE LA FICHA, y es lo que la tarea pedia:**
+
+| pieza | que dice |
+|---|---|
+| **las dos posiciones** | el paso `1` de `cubrir_indicadores_problemas_reunion_individual`, de `cap_05` `L43`, y el paso `4` de `dirigir_reunion_individual_semanal`, del grafo y de `zhuo_manager`, **impresos los dos de sus ficheros** |
+| **en que se contradicen** | uno manda **abrir la reunion por los indicadores y el estado de los proyectos**, y el otro manda **sacar el parte de situacion de esa reunion y llevarlo a otro canal**. Es el mismo acto y la instruccion es contraria |
+| **que mide la maquina** | **`0,1125` con el umbral en `0,35`**, contra `0,5501` y `0,5298` de dos pares de hermanos de la misma tanda. **Ninguna senial va a levantar ese par nunca** |
+| **por que se escribe a mano** | la aduana compara el candidato con el grafo y **no tiene los dos libros delante**. Lo encontro la lectura, no una senial (`D.19`, manual principio 4) |
+| **lo que NO hace** | no fusiona, **no emite veredicto en `bitacora/VEREDICTOS.jsonl`** (su puerta la cierra `D.39`), **no toca el nodo del grafo** ni una letra, y no abre doctrina |
+
+**Y HAY UNA COSA QUE ESTA VUELTA ANADE Y QUE NO ME FAVORECE CALLAR**, ya escrita en `NN.2.c` y
+repetida aqui porque es donde toca: el informe del candidato `6` **si levanta**
+`dirigir_reunion_individual_semanal`, por **familia de id**, contra
+`programar_reunion_individual_cadena`. **Eso no desmiente a `50.5.b` ni mueve esta tarea**: el par
+que la `ACTA 50` mide como no levantado es el de `cubrir` contra `dirigir`, y **ese sigue sin
+levantarse**. Lo que anade es que **la contradiccion de doctrina y la vecindad de la maquina van por
+caminos distintos**, que es justamente la tesis de `D.19`.
+
+**CERO PASADAS DE ADUANA POR ESTA TAREA**, con la misma comprobacion por asercion: solo cambia
+`resumen_teorico`, el viejo es prefijo del nuevo, y pasos, titulo y atribuciones identicos.
+
+**FILA DE LA TAREA 4: CERRADA en `NN.4`**, `d052` PAGADA.
+
+## NN.5. **EL CIERRE DE LA VUELTA 52**
+
+### NN.5.a. **LA COLISION DE `D.52` CON `D.41`, SUFRIDA Y REPARADA A MANO POR OCTAVA VEZ, CITANDO EL COMMIT** (`d030` y `d047`)
+
+<!-- TALLADO: parcial salida=.v52/sello_v51.txt -->
+
+    $ git log -1 --format="%h" -- docs/loop/TABLA_DE_CIERRE.txt   (el commit que la escribio, no HEAD)
+    b04ac62
+    $ git show b04ac62:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+    984dab3b09068c22d1a93459fbb54f7f2ce8517a
+    $ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v51.txt
+    984dab3b09068c22d1a93459fbb54f7f2ce8517a
+    $ git show HEAD:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin   (el mismo comando con HEAD, hoy)
+    984dab3b09068c22d1a93459fbb54f7f2ce8517a
+
+**EL MISMO `hash-object` EN LAS TRES LINEAS: la copia archivada ES la salida, no una
+transcripcion.** `42`, `46`, `47`, `48`, `49`, `50`, `51` y hoy la `52`: **octavo ejemplar
+seguido**, y por eso es deuda de maquinaria y no descuido. **`D.45` me deja fuera de arreglarla**,
+asi que la sufro, la reparo a mano y la declaro.
+
+**Y EL EJEMPLAR DE `d047` QUE EL AUDITOR PREDIJO SE CUMPLE AL DIGITO, Y LO PUBLICO PORQUE ES LA
+PRUEBA:** la `ACTA 50` escribe que mi cuarta linea *hoy da `984dab3b` donde publicaste `3b39a3fd`*.
+**Hoy da `984dab3b`**, exactamente. **El que relea `MM.4.c` con `HEAD` obtiene otra cosa que la que
+aquel reporte publico**, y esa es la deuda entera: una cita que depende de donde este el puntero **no
+es una cita**. Por eso la mia nombra `b04ac62`. **`d047` sigue DEMOSTRADA y sin pagar por `D.45`.**
+
+**LA TABLA `D.52` DE LA VUELTA 51 QUEDA REPUNTADA A SU COPIA ARCHIVADA**, por correccion declarada y
+sin tocar ni una celda de su contenido: el comentario de tallado de `MM.4.j` pasa de la ruta viva a
+`docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v51.txt`, que es la que el sello de arriba
+acredita. **Sin eso, mi tabla de hoy dejaria en rojo la suya sin que nadie la hubiera tocado.**
+
+### NN.5.b. **LAS CINCO GUARDAS AL CIERRE: CUATRO EN VERDE Y UNA EN ROJO, Y LA ROJA NO ES MIA**
+
+<!-- TALLADO: parcial salida=.v52/cierre_guardas.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+<!-- TALLADO: parcial salida=.v52/cierre_pruebas.txt -->
+
+    $ python tests/test_aceptacion.py
+    FAILED (failures=1, skipped=1)
+      total: 329 pruebas, 1 fallos, 0 errores
+
+> # **LA PRUEBA DE ACEPTACION SALE EN ROJO, Y ESO ES UNA GUARDA DE DATO EN ROJO: ES PARADA.**
+>
+> **La declaro en `NN.5.i` con su reproduccion y no la arreglo yo** (`EXTRACTOR.md` 7). El fichero
+> que hay que tocar es `tests/test_aceptacion.py` o `scripts/guarda_tablero.py`, **y `D.45` y la
+> moratoria de `EXTRACTOR.md` 13 me los vedan**, ademas de que este encargo lo escribe con todas sus
+> letras: *no tocas `src/`, `scripts/`, `tests/`, el banco, el arnes ni los protocolos.*
+
+**Y LA CUARTA GUARDA DE DATO, LA FIDELIDAD `D.30`, SALE VERDE Y ESTA EN `NN.2.d`:** `35` pasos, `35`
+TRANSCRIPCION, `0` PUENTE.
+
+### NN.5.c. **EL ESTADO, RECOMPUTADO AL CIERRE Y NO COPIADO DE LA APERTURA** (`EXTRACTOR.md` 4)
+
+<!-- TALLADO: parcial salida=.v52/cierre_estado.txt -->
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+       1087 total
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    56
+    $ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+    1
+
+| cifra | al abrir | al cerrar | lo que el encargo predice | que significa |
+|---|---:|---:|---:|---|
+| `cuarentena/grove_high_output/` | `50` | **`56`** | `56` | **los seis candidatos nuevos, y ni uno mas** |
+| `dataset/nodos.jsonl` | `346` | **`346`** | `346` | **no entro ni un nodo** |
+| `bitacora/VEREDICTOS.jsonl` | `740` | **`740`** | `740` | **no se escribio ni un veredicto en su sede**, porque `D.39` la cierra |
+| `config/pares_mutuos.jsonl` | `1` | **`1`** | `1` | **nada se fundio** |
+
+**LAS TRES ULTIMAS SON LA CAIDA QUE HABIA QUE BUSCAR, Y NINGUNA SE MOVIO.** Si una hubiera cambiado,
+seria que entro un nodo con la puerta cerrada.
+
+### NN.5.d. **`cap_05` QUEDA EN `12` DE `26`, Y LA SECCION DEL UNO A UNO QUEDA CERRADA**
+
+**No lo digo de memoria: lo leo de la tabla `LL.4.b`**, que es lo que el encargo manda.
+
+<!-- TALLADO: parcial script=.v52/frontera_uno_a_uno.py salida=.v52/frontera_uno_a_uno.txt -->
+
+    $ python .v52/frontera_uno_a_uno.py
+    de la tabla LL.4.b del reporte de la vuelta 50, leida hoy linea a linea
+    pieza tramo           palabras   nodos  que es
+    P15   L45 a L47            134       1  EL PAPEL DEL SUPERVISOR y el principio de una pregunta mas, con la
+    P16   L49 a L49            157       1  LAS PISTAS MECANICAS: las dos copias del guion, las notas, y lo qu
+    P17   L51 a L51             64       1  EL FICHERO DE ESPERA donde los dos acumulan lo importante y no urg
+    P18   L53 a L53            117       1  LOS ASUNTOS DE CORAZON A CORAZON y la guardia contra el que se sue
+    P19   L55 a L55             85       1  EL UNO A UNO POR TELEFONO A DISTANCIA: la preparacion que exige y
+    P20   L57 a L57             74       1  PROGRAMAR EN CADENA: fijar el siguiente al terminar el que se tien
+    P21   L59 a L59            105       0  la palanca del uno a uno, noventa minutos por ochenta horas: DEFIN
+    P22   L61 a L63            210       0  el uno a uno con el responsable de ventas de Intel: CASO del autor
+    P23   L65 a L65            103       0  el uno a uno en casa con sus hijas: CASO del autor, y el propio li
+
+    NODOS DE P15 A P23, sumados de la tabla   : 6
+    de ellos, escritos en la vuelta 52        : 6   (P15 a P20)
+    P21, P22 y P23 dan                        : 0   (definicion con su cuenta y dos casos del autor)
+
+**`6` mas los `6` de la vuelta 51 son `12`**, y `12` de `26` es el `46,15` por ciento del capitulo,
+recomputado en `NN.5.h`. **Lo que queda fuera son los `14` que el encargo deja fuera**: `P26` a
+`P28` (la reunion de personal), `P31` a `P35` (la revision de operaciones) y `P38` a `P42` mas `P45`
+(la reunion de mision). **`12` mas `14` son `26`.**
+
+### NN.5.e. **`PASOS INVENTADOS POR CAPITULO`, UNA FILA POR CAPITULO Y NO COMO MEDIA**
+
+<!-- TALLADO: parcial script=.v51/pasos_inventados.py salida=.v52/pasos_inventados.txt -->
+
+    $ python .v51/pasos_inventados.py
+    capitulo del libro       fichas    pasos     PUENTE inventados
+    Introduction                  1        7          0     0 de 7
+    cap_02                        7       50          0    0 de 50
+    cap_03                       15      121          0   0 de 121
+    cap_04                       22      156          0   0 de 156
+    cap_05                       12       84          0    0 de 84
+    TODO grove_high_output       57      418          0   0 de 418
+
+| capitulo | fichas | pasos | `PUENTE` | `PASOS INVENTADOS` | contra el tope de `10` por ciento |
+|---|---:|---:|---:|---|---|
+| `Introduction` | `1` | `7` | `0` | **`0` de `7`** | por debajo |
+| `cap_02` | `7` | `50` | `0` | **`0` de `50`** | por debajo |
+| `cap_03` | `15` | `121` | `0` | **`0` de `121`** | por debajo |
+| `cap_04` | `22` | `156` | `0` | **`0` de `156`** | por debajo |
+| `cap_05` | `12` | `84` | `0` | **`0` de `84`**, y pasa de `6` fichas a `12` | por debajo |
+| **todo el libro** | `57` | `418` | `0` | **`0` de `418`** | por debajo |
+
+**`cap_05` pasa de `6` fichas y `49` pasos a `12` y `84`**, que son los `35` de hoy sumados, y su
+fila se recomputa entera con el instrumento. **El freno no se dispara en ningun capitulo.**
+
+### NN.5.f. **LA LINEA DEL TRAMO, CON SU RELOJ Y SU DENOMINADOR PEGADO**
+
+<!-- TALLADO: parcial script=.v52/relojes.py salida=.v52/relojes.txt -->
+
+    $ python .v52/relojes.py
+    pieza id                                                  reloj s  vecinos  poblacion
+    P15   facilitar_expresion_subordinado_pregunta_mas         1045,6        5        400
+    P16   tomar_notas_copia_guion_reunion_individual            601,3        4        401
+    P17   acumular_asuntos_importantes_fichero_espera           636,2        4        402
+    P18   alentar_asuntos_corazon_vigilar_final_reunion         774,9        5        403
+    P19   conducir_reunion_individual_telefono_distancia        567,5        6        404
+    P20   programar_reunion_individual_cadena                   761,9       10        405
+
+    pasadas de aduana corridas            : 6
+    pasadas CON reloj                     : 6   (las seis, ninguna estimada)
+    suma de los relojes medidos           : 4387,4 s
+    MEDIA POR PASADA, sobre 6 y sobre 6   : 731,2 s
+    media de la vuelta 51, como contraste : 327,0 s   (sobre 5 pasadas de 6)
+    variacion                             : +123,6 por ciento
+    veces la media de la vuelta 51        : 2,24
+    vecinos por pasada                    : menor 4, mayor 10, suma 34
+    poblacion del barrido                 : de 400 a 405
+    suma de relojes en minutos            : 73,1 min
+
+> # **LA LINEA DEL TRAMO: `6` candidatos, `6` pasadas de aduana, `4387,4` s de reloj, `73,1` min.**
+> **La media por pasada de la vuelta 52 es `731,2` s, y su denominador es `6` sobre `6`: las seis se
+> midieron y ninguna se estimo.** Es la cifra que la vuelta 53 tiene que usar.
+
+**EL TECHO EN SU MITAD QUE MUERDE: CUMPLIDO EXACTO.** `6` pasadas de aduana encargadas, `6`
+corridas, **cero compradas por las tareas `1`, `3` y `4`**, que es lo que el encargo presupuestaba.
+**Ni una septima ficha escrita**, aunque hubiera sobrado turno.
+
+**EL TECHO EN SU MITAD DE MINUTOS: ROTO, Y ROTO POR EL INSTRUMENTO Y NO POR MI.** El encargo
+presupuesta `42` min a partir de **mi** media de `327,0` s. **Las seis pasadas costaron `73,1` min de
+reloj de aduana sola**, o sea el **`104,5` por ciento** del techo entero solo en aduana, sin contar
+las guardas ni la escritura. **La media sube `+123,6` por ciento y la primera pasada sola costo
+`1045,6` s, `3,2` veces la media de la que salio el presupuesto.**
+
+**POR QUE SUBE, Y ES LA MISMA CAUSA QUE LA `TAREA 3` MIDE:** la senial 1 compara texto con texto, y
+**el coste crece con el tamano de los dos textos**. La poblacion paso de `394` a `405` (un `2,8` por
+ciento mas de vecinos), pero **el `resumen_teorico` de las fichas de este libro crecio mucho mas**:
+las dos que la `TAREA 3` mide pasaron de `9123` y `9623` a `11444` y `11944` caracteres. **No es
+lentitud mia y no es que el lote haya empeorado: es el coste del instrumento**, medido, y es
+exactamente la figura con la que `D.43` saco del turno el informe de lote entero y la cola de
+vecinos.
+
+> **LO QUE PROPONGO, Y NO ME LO ADJUDICO** (`EXTRACTOR.md` 14, el extractor propone en su reporte):
+> **la mitad en minutos del techo de la vuelta 53 no se calcule sobre `327,0` sino sobre `731,2`**,
+> que es la media medida con la bandeja de hoy. Con `731,2` s por pasada, **un tramo de seis
+> candidatos cuesta `73,1` min de aduana**, y un tramo de quince, que es el techo de
+> `EXTRACTOR.md` 12.4, costaria **`182,8` min**. **No propongo mover ningun umbral ni tocar el
+> instrumento**, que `D.45` me veda: propongo que el presupuesto se escriba con la cifra de hoy.
+
+### NN.5.g. **LA DEUDA, RECOMPUTADA Y CON SU LISTA IMPRESA DEL INSTRUMENTO**
+
+<!-- TALLADO: parcial salida=.v52/deuda_cierre.txt -->
+
+    $ python scripts/deuda.py
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      registro: docs/loop/DEUDA.jsonl
+      pendientes: 17    pagadas: 18
+
+      id     vuelta  especie            que
+      --------------------------------------------------------------------------------------------
+      d005   grove v2 relevo de grove    De los 15 candidatos de cap_03 de grove, su aduana e
+      d006   41      relectura          cap_13 entero esta en 4 de 212, el 1,89 por ciento,
+      d007   41      doctrina           La cola de doctrina queda congelada en 11 preguntas
+      d009   42      deuda              scripts/tabla_de_cierre.py mide la tabla de cierre c
+      d011   43      deuda              TODO TECHO QUE EL AUDITOR ESCRIBA LLEVA SU MITAD EN
+      d012   43      deuda              SEGUNDO EJEMPLAR MEDIDO de la pregunta 9 de la cola
+      d020   44      maquinaria         src/arista.py linea 182 teclea veredicto CONTINUA en
+      d022   44      maquinaria         scripts/tabla_de_cierre.py localiza la tabla por la
+      d024   45      aduana             LOS 7 CANDIDATOS DE cap_02 DE grove NO TIENEN INFORM
+      d028   46      maquinaria         src/tablero.py:214 publica en capitulos_minados los
+      d029   46      maquinaria         El tallado de D.41 casa las filas por su primera cel
+      d030   47      maquinaria         scripts/tabla_de_cierre.py --escribir escribe SIEMPR
+      d031   47      aduana             RETOCAR UNA LINEA DE UN resumen_teorico EN CUARENTEN
+      d033   48      maquinaria         test_e_guion_largo_rompe_el_hook salio ROJO una vez
+      d037   49      maquinaria         LA PUERTA DE D.39 NO TIENE CASO ROJO AUTOMATICO: gre
+      d047   50      deuda              EL SELLO DE D.52 SE PEGA CON UN COMANDO QUE DEJA DE
+      d053   51      relectura          P12 (fijar_duracion_lugar_reunion_individual) ES UN
+
+      ultima vuelta de saneamiento: 49
+
+**DE `19` PENDIENTES A `17`, Y DE `16` PAGADAS A `18`:** `d051` y `d052` pagadas hoy, con su
+`como` escrito entero en el registro y no en el reporte. **`d053` no la toco**: su corte es cifra del
+auditor y se decide el dia de la insercion.
+
+**Y LAS OCHO QUE EL ENCARGO ME VEDA SIGUEN EN PIE Y SOLO SE CITAN:** `d047`, `d037`, `d028`, `d029`,
+`d030`, `d022`, `d020` y `d033`. **`d030` la sufri y la repare a mano por octava vez en `NN.5.a`, que
+no es pagarla**, y `d047` la cumplo citando el commit sin arreglar el instrumento.
+
+### NN.5.h. **LA `TAREA 1.c` EJECUTADA: TODAS MIS DIVISIONES, RECORRIDAS CON LOS DOS NUMEROS DE SU PROPIA CELDA**
+
+**Es la consecuencia que el encargo me pide y la unica que evita la segunda caida de la misma
+especie.** Cada division que publico esta declarada aqui con **su numerador y su denominador**, y el
+guion la recomputa y la compara contra lo publicado.
+
+<!-- TALLADO: parcial script=.v52/divisiones.py salida=.v52/divisiones.txt -->
+
+    $ python .v52/divisiones.py
+    donde                  que divide                                                numerador  denominad   publico   recompu cuadra
+    NN.2.c aviso de coste  la primera pasada contra la media de la vuelta 51            1045,6      327,0    3,2000    3,1976 SI
+    NN.5.f                 media por pasada de la vuelta 52                             4387,4        6,0  731,2000  731,2333 SI
+    NN.5.f                 la suma de relojes en minutos                                4387,4       60,0   73,1000   73,1233 SI
+    NN.5.f                 veces la media de la vuelta 51                                731,2      327,0    2,2400    2,2361 SI
+    NN.5.f                 el techo en minutos que el encargo fija, contra lo que c     4387,4       42,0  104,5000  104,4619 SI
+    NN.3.c                 peso del resumen en la ficha de fijar_duracion, sobre su    11444,0    12366,0    0,9300    0,9326 SI
+    NN.5.e                 PASOS INVENTADOS de cap_05, que es 0 de 84                      0,0       84,0    0,0000    0,0000 SI
+    NN.5.e                 PASOS INVENTADOS del libro entero, que es 0 de 418              0,0      418,0    0,0000    0,0000 SI
+    NN.5.d                 cap_05 en 12 de 26 nodos de su frontera                        12,0       26,0    0,4615    0,4615 SI
+
+    divisiones publicadas y recorridas    : 9
+    TODAS CUADRAN CON SU PROPIA CELDA     : True
+
+**Y UNA DE LAS NUEVE LA TUVE QUE ARREGLAR MIENTRAS LA ESCRIBIA, Y LO DIGO PORQUE ES LA PRUEBA DE QUE
+EL METODO SIRVE:** para el peso del resumen puse primero un denominador **estimado a ojo**
+(`12271`), y la comprobacion pasaba dentro de la tolerancia **con un numero que yo me habia
+inventado**. Lo cambie por el medido:
+
+<!-- TALLADO: parcial script=.v52/peso_resumen.py salida=.v52/peso_resumen.txt -->
+
+    $ python .v52/peso_resumen.py
+    fijar_duracion_lugar_reunion_individual            resumen  11444   texto comparable  12366   el resumen es el 93 por ciento
+    fijar_frecuencia_reunion_individual_madurez_tarea  resumen  11944   texto comparable  13067   el resumen es el 91 por ciento
+
+**El denominador sale ahora de `len(comun.texto_comparable(ficha))`, que es la misma funcion que usa
+la aduana**, y no de una resta mia. **Una comprobacion con un numerador medido y un denominador
+estimado no comprueba nada.**
+
+**LA SEGUNDA MITAD DE LA `TAREA 1.c`, y va con su comando:** ninguna cifra de esta vuelta sale de un
+`grep -c` sobre la salida de un instrumento que publica su propio recuento.
+
+    $ python: veces que aparece 'grep -c' en mi seccion de la vuelta 52 : 2
+    $ python: veces que aparece 'grep '   en mi seccion de la vuelta 52 : 2
+
+**Las dos apariciones estan en `NN.1.b` y `NN.1.c`, que es donde recojo la caida y escribo la regla,
+y ninguna de las dos sostiene una cifra.** Todos los recuentos de esta vuelta salen del propio
+instrumento que los publica: los `34` pares y los `0` comunes de `.v52/veredictos.py`, los `35`
+pasos y los `20` sitios de tentacion de `.v52/pasos_por_candidato.py`, los `9` digitos de
+`.v52/tarea3.py`, y las poblaciones y saldos de los seis informes de la aduana.
+
+### NN.5.i. **LA PARADA: UNA GUARDA DE DATO EN ROJO QUE NO PUEDO ARREGLAR** (`EXTRACTOR.md` 7)
+
+> # **PARADA. LA PRUEBA DE ACEPTACION ESTA EN ROJO Y SU ARREGLO ESTA EN UN FICHERO QUE TENGO VEDADO.**
+
+**QUE FALLA, con su linea:**
+
+    FAIL: test_caso_negativo_el_encargo_que_declara_el_que_toca_pasa
+          (__main__.PruebaOrdenDePrioridad)
+      File "tests\test_aceptacion.py", line 4509
+      AssertionError: Lists differ: ["el encargo no dice de que vuelta es. D.5[123 chars]>'."] != []
+      Ran 329 tests in 145.818s      FAILED (failures=1, skipped=1)
+
+**LO REPRODUZCO CON EL FIXTURE DE LA PROPIA PRUEBA, para que no dependa de mi lectura:**
+
+<!-- TALLADO: parcial salida=.v52/parada_guarda_tablero.txt -->
+
+    $ python .v52/... (la llamada literal de la prueba, con su propio _filas)
+    la prueba espera : []
+    la guarda devuelve: ["el encargo no dice de que vuelta es. D.58: la cadencia se cuenta por numero de vuelta, y sin el no se puede contar. Escribe su titulo como 'ENCARGO DE LA VUELTA <n>'."]
+
+    NI cuarentena/, NI docs/loop/REPORTE.md, NI .v52/ entran en esa llamada:
+    sus tres argumentos son literales de la propia prueba, y el fixture es el suyo.
+
+**DE DONDE SALE, Y ES LO QUE MAS IMPORTA PARA QUE NADIE LA BUSQUE DONDE NO ESTA:**
+
+<!-- TALLADO: parcial salida=.v52/parada_guarda_tablero.txt -->
+
+    $ git log --oneline -3   (el commit del arnes cayo ENCIMA de mi commit parcial)
+    9ec9b3c D.58, DOS REGIMENES: el ligero no toca el grafo, la muestra se reproduce con su semilla, y la cadencia de saneamiento deja de depender de que alguien se acuerde
+    6b8ac5b VUELTA 52, parcial: cap_05 P15, P16 y P17 escritos y pasados por su aduana en el acto
+    55c8992 Apertura de la vuelta 52: estado del arnes sellado antes de tocar nada
+    $ git log -1 --format="%h %ad %s" --date=iso 9ec9b3c
+    9ec9b3c 2026-09-19 18:15:47 -0400 D.58, DOS REGIMENES: ...
+
+| lo que mido | lo que significa |
+|---|---|
+| el commit `9ec9b3c` **cayo encima de mi commit parcial `6b8ac5b`, a las `18:15:47`, con mi turno ya corriendo** | **la averia llego durante mi vuelta y no la traje yo** |
+| la suite pasa de **`318`** pruebas, que es lo que el encargo declara en su seccion de `D.55`, a **`329`** | **son `11` pruebas nuevas**, y la que falla es de esa tanda |
+| la guarda `scripts/guarda_tablero.py` gano una comprobacion de `D.58` (*el encargo no dice de que vuelta es*) **y su prueba de caso negativo no se actualizo con ella** | **el fixture pasa un texto sin titulo de vuelta y espera lista vacia**, y la guarda nueva le devuelve su mensaje. **Es la prueba la que va por detras de la guarda** |
+| mi trabajo toca `cuarentena/`, `docs/loop/REPORTE.md`, `docs/loop/DEUDA.jsonl`, `.v52/` y la copia archivada de la tabla | **ninguno de los cuatro entra en la llamada que falla** |
+
+**NO LA ARREGLO, Y DIGO CON QUE REGLA:** `D.45` y `EXTRACTOR.md` 13 me vedan `tests/` y `scripts/`, y
+**este encargo lo repite en su lista de lo que no se toca**. `EXTRACTOR.md` 7 dice que en ese caso
+**lo escribo como PARADA y no lo arreglo yo**, y que **`PARA_ALEXIS.md` no lo escribo yo**: lo
+escribe el auditor.
+
+**Y EL GUION DE CIERRE LO DICE POR SU CUENTA, QUE ES LA CONFIRMACION QUE FALTABA** (`D.41`, `EXTRACTOR.md` 12.6):
+
+<!-- TALLADO: parcial salida=.v52/cerrar_reporte_raw.txt -->
+
+    $ python scripts/cerrar_reporte.py
+    TALLADO VERDE: las 131 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO VERDE: las 812 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    FAILED (failures=1, skipped=1)
+      total: 329 pruebas, 1 fallos, 0 errores
+    LA VIGENCIA TIENE COLA, Y ESO NO PONE EL CIERRE EN ROJO (D.15).
+    CIERRE EN ROJO. No pasa: prueba de aceptacion
+
+**Cinco de las seis comprobaciones del cierre pasan y la sexta es la que declaro.** El guion nombra
+exactamente una: `prueba de aceptacion`. **No la escondo detras de las cinco verdes.**
+
+**Y NO PARO LA VUELTA ENTERA, Y TAMBIEN DIGO POR QUE:** las cuatro tareas de produccion estaban
+cerradas antes de que la suite se corriera, **el gate, el barrido y la fidelidad `D.30` estan en
+verde**, y **ningun dato se movio** (`NN.5.c`). Cerrar el reporte con la parada dentro protege mas
+que dejarlo a medias: **una vuelta cortada deja reporte parcial, y esta lo deja entero con su averia
+declarada.**
+
+### NN.5.j. **EL TALLADO Y EL CENSO, CON SU BASE DECLARADA** (`D.41` y `D.42`)
+
+<!-- TALLADO: parcial salida=.v52/cierre_tallado.txt -->
+
+    $ python scripts/tallar_reporte.py
+    tablas que declaran instrumento : 251
+      talladas, celda a celda       : 131
+      que DIFIEREN de su instrumento: 0
+      con la ruta VACIA             : 0   (cero bytes, 7.B)
+      sin poder comprobar           : 0
+      que CITAN y no reproducen     : 120   (declaradas PARCIAL)
+    TALLADO VERDE: las 131 tabla(s) comprobables son las de su instrumento, celda a celda.
+
+<!-- TALLADO: parcial salida=.v52/cierre_censo.txt -->
+
+    $ python scripts/censar_rutas.py
+    rutas publicadas y censadas : 812
+      pasan                     : 812
+      CAEN                      : 0
+          PATRON                           72
+          VACIA A PROPOSITO                3
+          con contenido                    727
+          vacia por protocolo              10
+    CENSO VERDE: las 812 rutas publicadas sostienen lo que dicen sostener.
+
+| | al abrir esta vuelta | al cerrar | lo que anado yo |
+|---|---:|---:|---:|
+| tablas que declaran instrumento | `240` | **`251`** | **`+11`** |
+| talladas celda a celda | `130` | **`131`** | **`+1`**, que es **mi tabla `D.52` de `NN.5.m`**: es la unica tabla mia que se talla celda a celda, porque las demas son de prosa o `PARCIAL` |
+| que DIFIEREN | `0` | **`0`** | ninguna |
+| declaradas `PARCIAL` | `110` | **`120`** | **`+10`**, que son las salidas de instrumento que pego citando y sin reproducir entera |
+| rutas censadas | `808` | **`812`** | **`+4`** |
+
+**LAS DOS CIFRAS DE ESTA TABLA SE MIDIERON DESPUES DE ESCRIBIR `NN.5.m`, Y LO DIGO PORQUE ME
+OBLIGO A REMEDIRLAS:** la primera corrida, hecha antes de anadir la tabla `D.52`, daba `249 / 130 /
+119` y `811`. **Publicar aquella habria sido medir temprano y publicar tarde sin remedir**, que
+`EXTRACTOR.md` 4 pone en la misma especie que citar sin mirar.
+
+**LA BASE NO LA COPIO DEL ENCARGO NI DEL ACTA: es la salida de la apertura de esta misma vuelta**,
+que quedo pegada en el `pre-commit` de mi commit de apertura `55c8992` y da `240 / 130 / 110` y
+`808`. **Las dos corridas, la de apertura y la de cierre, son mias y de hoy.**
+
+### NN.5.k. **LOS DISCUTIBLES DE ESTA VUELTA, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+**Van numerados y por linea, sin reabrir el argumento** (`D.47`). **Los `13` de la vuelta 51 se
+sostuvieron los `13` y ninguno era una cifra: por eso esta vez `4` de los `16` son cifras mias.**
+
+| # | que marco | donde vive | si cae |
+|---:|---|---|---|
+| `1` | **`P15` es un nodo y contesta a DOS preguntas del libro** (`L45` *what is the role*, `L47` *how is this done*), igual que el `P12` que el auditor se adjudico en `d053`. **El corte, si cae, va entre el paso `3` y el `4`** | ficha de `P15` | dentro, y el arreglo esta escrito |
+| `2` | el paso `3` de `P15` es una **CITA de otro autor** y no un acto | ficha de `P15` | dentro |
+| `3` | los pasos `3`, `5` y `6` de `P16` son **PROPOSITOS y EFECTOS** de la nota, no actos | ficha de `P16` | dentro |
+| `4` | la **frontera entre el paso `5` y el `6` de `P16`**: el libro lo escribe en tres frases seguidas y yo lo parto en dos | ficha de `P16` | dentro |
+| `5` | **`P17` con `64` palabras puede ser una PRACTICA nombrada y no un procedimiento** | ficha de `P17` | dentro |
+| `6` | los pasos `3` y `4` de `P17` son principio y efecto, y dejarian el nodo en el minimo de `2` | ficha de `P17` | dentro |
+| `7` | los pasos `6`, `7` y `8` de `P18` son una **ADVERTENCIA**, que `EXTRACTOR.md` 9 tumba | ficha de `P18` | dentro |
+| `8` | partir `P18` en dos nodos, con el corte entre el paso `5` y el `6` | ficha de `P18` | dentro |
+| `9` | los pasos `2` y `3` de `P19` **repiten material que ya vive en `P13` y `P16`**, y `P.19` manda fundir lo que se repite | ficha de `P19` | dentro |
+| `10` | el paso `4` de `P19` es una **OBSERVACION** y no un acto | ficha de `P19` | dentro |
+| `11` | **CIFRA MIA:** las `85` palabras de `P19` dependen de la convencion de `wc -w`; con los guiones partidos serian `91` | ficha de `P19` y `NN.2.a` | dentro |
+| `12` | el paso `5` de `P20` **repite el paso `1`** | ficha de `P20` | dentro |
+| `13` | los pasos `3` y `4` de `P20` son efecto y caso, y dejarian el nodo en el minimo de `2` | ficha de `P20` | dentro |
+| `14` | **CIFRA MIA:** las `74` palabras de `P20` y con ellas el **`12` de `26`** y la seccion dada por cerrada | ficha de `P20`, `NN.5.d` | dentro |
+| `15` | **CIFRA MIA:** los **`9` digitos** de `NN.3.a` salen de una expresion regular que busca una formula literal; **si una ficha escribiera el digito de otra forma, mi `9` seria bajo** | `NN.3.a` | dentro |
+| `16` | **CIFRA MIA, Y ES LA QUE MENOS ME GUSTA:** la subida de `0,550` a `0,630` de `NN.3.c` la atribuyo al parrafo comun de la correccion declarada. **Lo sostengo con los tres numeros de la propia salida, pero no lo he aislado con un experimento que quite solo ese parrafo**, porque eso seria tocar la ficha para medir | `NN.3.c` | dentro |
+
+### NN.5.l. **LO QUE EL ENCARGO ME PROHIBIA, Y QUE HICE CON CADA COSA**
+
+| lo prohibido | que hice |
+|---|---|
+| **no insertar** | **cero inserciones**, con la puerta medida por mi en `NN.0.a` y las tres cifras quietas en `NN.5.c` |
+| **no saltar a `cap_06`** | **no salte.** Ni siquiera corri `tablero --puedo`, porque es `d028` y `D.45` me lo veda: se cita y ya |
+| **no reabrir la frontera de `cap_05`** | **no la reabri.** Recompute las seis cifras de palabras y **las seis reproducen al digito**, asi que no hubo nada que traer |
+| **no tocar `P12`** | **no lo toque.** `d053` sigue pendiente en el registro de `NN.5.g` |
+| **no adelantar los `14` nodos que quedan fuera** | **ni uno.** La bandeja cierra en `56`, que son `50` mas `6` |
+| **no tocar `src/`, `scripts/`, `tests/`, el banco, el arnes ni los protocolos** | **ni un fichero.** Y es justo lo que convierte en PARADA la guarda roja de `NN.5.i` en vez de en un arreglo mio |
+| **no pagar las ocho de maquinaria** | **ninguna pagada**, `NN.5.g` |
+| **no abrir doctrina** | **no la abri.** Lo que encontre lo registro con su medida: la subida de la senial en `NN.3.c` y el vecino de `d052` levantado por otro lado en `NN.2.c` |
+| **no acortar un `resumen_teorico` ni cambiar un paso para bajar una senial** | **no acorte ni una linea.** La senial subio y lo publique |
+
+### NN.5.m. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
+
+*Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
+`docs/loop/TABLA_DE_CIERRE.txt`.*
+
+<!-- TALLADO: salida=docs/loop/TABLA_DE_CIERRE.txt -->
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | los registros de la `ACTA 50` recogidos sin reabrirlos, la caida de `REPORTE` leida del instrumento y **el repaso de mis propias divisiones** | **CERRADA en `NN.1`**: las `7` adjudicaciones de `50.5` y las `4` que me favorecen recogidas sin rediscutirse, `REPORTE` en `1 de 3` leida del instrumento y no discutida, y las dos reglas de metodo de `1.c` declaradas antes de escribir una cifra y ejecutadas en `NN.5.h` con sus `9` divisiones recorridas |
+| 2 | `cap_05` cierra la seccion del uno a uno con `P15`, `P16`, `P17`, `P18`, `P19` y `P20`, aduana en el acto y cero inserciones | **CERRADA ENTERA en `NN.2`**: `6` de `6` escritos y pasados por su aduana en el mismo acto, `0 CAERIA` y cero correcciones de id, `35` pasos con `0` PUENTE y `20` sitios de tentacion declarados, las seis cifras de palabras reproduciendo `LL.4.b` al digito, `34` pares de cola leidos enteros con `34` veredictos `SANO` razonados y `0` pasos comunes contados por el guion, y `CERO INSERCIONES` con la puerta medida por mi |
+| 3 | `d051`: el digito de senial sale del texto del que la senial se calcula, en las seis fichas de la vuelta 51 y en las seis de hoy | **CERRADA en `NN.3`, `d051` PAGADA**: `9` digitos reencuadrados sin borrar ninguno, con su informe nombrado ficha a ficha, las seis nuevas escritas ya sin digito dentro, y la comprobacion posterior publicada aunque suba de `0,550` a `0,630`, con el motivo medido en la propia salida. Cero pasadas de aduana, comprobado por asercion y contra `b04ac62` |
+| 4 | `d052`: la frontera que ninguna senial va a levantar, escrita dentro de la ficha con las dos posiciones y sus fuentes | **CERRADA en `NN.4`, `d052` PAGADA**: las dos posiciones impresas de sus ficheros, la contradiccion escrita sin suavizarla, `0,1125` contra el umbral de `0,35` y contra los `0,5501` y `0,5298` de dos hermanos, la ficha pasando de nombrar `0` veces a ese vecino a nombrarlo `1`, y ni el grafo ni la bitacora tocados |
+| 5 | el cierre: las cinco guardas, la tabla `D.52` con su sello por COMMIT, el estado recomputado, `PASOS INVENTADOS` por capitulo, el tramo con su reloj y la deuda | **CERRADA en `NN.5` CON UNA PARADA DECLARADA**: `gate`, `guiones`, tallado y censo en verde, y **la prueba de aceptacion en ROJO con `1` fallo de `329` que llego en el commit `9ec9b3c` durante mi turno y que `D.45` me prohibe arreglar**. Estado al digito (`346`, `740`, `1`, `56`), colision de `D.52` sellada por `hash-object` por octava vez y citada por su COMMIT `b04ac62`, `PASOS INVENTADOS` de `cap_05` de `0` de `49` a `0` de `84`, media por pasada `731,2` s sobre `6` de `6`, techo de minutos roto al `104,5` por ciento por el coste del instrumento, deuda de `19` a `17`, y `16` discutibles marcados de los que `4` son cifras mias |

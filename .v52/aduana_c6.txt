@@ -1,0 +1,57 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 405   (346 del grafo mas 59 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 10
+  por candidato bloqueado          : menor 10, mediana 10, mayor 10
+  que señal levanta cada vecindad  : familia_id 2, similitud_texto 8
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] programar_reunion_individual_cadena   (programar_reunion_individual_cadena.json)
+    vecino fijar_duracion_lugar_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.360 | familia_id 0.286 | paso_contra_nodo 0.580
+      paso 1 del candidato contra paso 3 de fijar_duracion_lugar_reunion_individual
+    vecino alentar_asuntos_corazon_vigilar_final_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.444 | familia_id 0.111 | paso_contra_nodo 0.548
+      paso 1 del candidato contra paso 1 de alentar_asuntos_corazon_vigilar_final_reunion
+    vecino infundir_regularidad_reunion_proceso  [levantada por: similitud_texto]
+      similitud_texto 0.397 | familia_id 0.143 | paso_contra_nodo 0.494
+      paso 3 del candidato contra paso 8 de infundir_regularidad_reunion_proceso
+    vecino acumular_asuntos_importantes_fichero_espera  [levantada por: similitud_texto]
+      similitud_texto 0.426 | familia_id 0.000 | paso_contra_nodo 0.465
+      paso 3 del candidato contra paso 3 de acumular_asuntos_importantes_fichero_espera
+    vecino conducir_reunion_individual_telefono_distancia  [levantada por: similitud_texto]
+      similitud_texto 0.439 | familia_id 0.286 | paso_contra_nodo 0.463
+      paso 4 del candidato contra paso 4 de conducir_reunion_individual_telefono_distancia
+    vecino tomar_notas_copia_guion_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.420 | familia_id 0.250 | paso_contra_nodo 0.449
+      paso 4 del candidato contra paso 5 de tomar_notas_copia_guion_reunion_individual
+    vecino cubrir_indicadores_problemas_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.375 | familia_id 0.286 | paso_contra_nodo 0.447
+      paso 5 del candidato contra paso 10 de cubrir_indicadores_problemas_reunion_individual
+    vecino facilitar_expresion_subordinado_pregunta_mas  [levantada por: similitud_texto]
+      similitud_texto 0.380 | familia_id 0.000 | paso_contra_nodo 0.426
+      paso 1 del candidato contra paso 2 de facilitar_expresion_subordinado_pregunta_mas
+    vecino preguntar_conducir_reunion_individual  [levantada por: familia_id]
+      similitud_texto 0.123 | familia_id 0.333 | paso_contra_nodo 0.418
+      paso 3 del candidato contra paso 7 de preguntar_conducir_reunion_individual
+    vecino dirigir_reunion_individual_semanal  [levantada por: familia_id]
+      similitud_texto 0.155 | familia_id 0.333 | paso_contra_nodo 0.350
+      paso 5 del candidato contra paso 2 de dirigir_reunion_individual_semanal
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

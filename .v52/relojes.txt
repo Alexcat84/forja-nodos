@@ -1,0 +1,18 @@
+    pieza id                                                  reloj s  vecinos  poblacion
+    P15   facilitar_expresion_subordinado_pregunta_mas         1045,6        5        400
+    P16   tomar_notas_copia_guion_reunion_individual            601,3        4        401
+    P17   acumular_asuntos_importantes_fichero_espera           636,2        4        402
+    P18   alentar_asuntos_corazon_vigilar_final_reunion         774,9        5        403
+    P19   conducir_reunion_individual_telefono_distancia        567,5        6        404
+    P20   programar_reunion_individual_cadena                   761,9       10        405
+
+    pasadas de aduana corridas            : 6
+    pasadas CON reloj                     : 6   (las seis, ninguna estimada)
+    suma de los relojes medidos           : 4387,4 s
+    MEDIA POR PASADA, sobre 6 y sobre 6   : 731,2 s
+    media de la vuelta 51, como contraste : 327,0 s   (sobre 5 pasadas de 6)
+    variacion                             : +123,6 por ciento
+    veces la media de la vuelta 51        : 2,24
+    vecinos por pasada                    : menor 4, mayor 10, suma 34
+    poblacion del barrido                 : de 400 a 405
+    suma de relojes en minutos            : 73,1 min

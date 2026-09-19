@@ -1,0 +1,14 @@
+$ git log --oneline -3   (el commit del arnes cayo ENCIMA de mi commit parcial)
+9ec9b3c D.58, DOS REGIMENES: el ligero no toca el grafo, la muestra se reproduce con su semilla, y la cadencia de saneamiento deja de depender de que alguien se acuerde
+6b8ac5b VUELTA 52, parcial: cap_05 P15, P16 y P17 escritos y pasados por su aduana en el acto
+55c8992 Apertura de la vuelta 52: estado del arnes sellado antes de tocar nada
+
+$ git log -1 --format='%h %ad %s' --date=iso 9ec9b3c
+9ec9b3c 2026-09-19 18:15:47 -0400 D.58, DOS REGIMENES: el ligero no toca el grafo, la muestra se reproduce con su semilla, y la cadencia de saneamiento deja de depender de que alguien se acuerde
+
+$ la llamada literal de la prueba que falla, con el MISMO fixture de la prueba
+  la prueba espera : []
+  la guarda devuelve: ["el encargo no dice de que vuelta es. D.58: la cadencia se cuenta por numero de vuelta, y sin el no se puede contar. Escribe su titulo como 'ENCARGO DE LA VUELTA <n>'."]
+
+  NI cuarentena/, NI docs/loop/REPORTE.md, NI .v52/ entran en esa llamada:
+  sus tres argumentos son literales de la propia prueba, y el fixture es el suyo.

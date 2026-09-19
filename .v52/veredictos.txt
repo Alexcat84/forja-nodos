@@ -1,0 +1,12 @@
+    candidato                                          pares   comunes  sede del digito
+    facilitar_expresion_subordinado_pregunta_mas           5         0  .v52/aduana_c1.txt
+    tomar_notas_copia_guion_reunion_individual             4         0  .v52/aduana_c2.txt
+    acumular_asuntos_importantes_fichero_espera            4         0  .v52/aduana_c3.txt
+    alentar_asuntos_corazon_vigilar_final_reunion          5         0  .v52/aduana_c4.txt
+    conducir_reunion_individual_telefono_distancia         6         0  .v52/aduana_c5.txt
+    programar_reunion_individual_cadena                   10         0  .v52/aduana_c6.txt
+
+    PARES DE COLA DE LA TANDA, veredictados uno a uno : 34
+    PASOS LITERALMENTE COMUNES en los 34 pares        : 0
+    DIGITOS DE SENIAL ESCRITOS DENTRO DE LAS FICHAS   : 0   (d051 aplicada desde el principio)
+    ASERCION: pasos, titulo y atribuciones identicos, y el texto viejo es PREFIJO del nuevo en las 6.
