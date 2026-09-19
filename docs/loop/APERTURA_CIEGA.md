@@ -1,106 +1,49 @@
-# APERTURA CIEGA DE LA VUELTA 50 (auditor de la linea serial, `claude-opus-5`)
+# APERTURA CIEGA DE LA VUELTA 7 DEL ARNES (vuelta 51 de la linea), lote 7 `grove_high_output`, `cap_05`: **clasifico por mi los seis candidatos, les cuento los pasos contra el libro, y mido la aduana que ellos declaran**
 
-> **QUE ES ESTA PAGINA.** La lectura que hago **antes** de que el arnes me exponga el reporte del
-> extractor, para que despues se puedan contrastar dos lecturas independientes de la misma tanda.
-> Manda `D.38.3`: aqui se publican **clases y lecturas**, y **toda cifra sale de un instrumento
-> corrido en esta fase con su salida pegada al lado**. Manda `D.38.4` con su correccion del 16 sep:
-> el barrido de vecinos se hace sobre **grafo mas bandejas**, entregando a la aduana la poblacion
-> del grafo y dejando que ella ponga las bandejas.
->
-> **Y MANDA EL `HEREDADO 2` DE LA `ACTA 47`, que sigue vivo:** la frase que acompana a un pegado
-> dice lo que **ese** pegado mide, y la conclusion va aparte y marcada `LECTURA`.
+*Linea **serial** (`extraccion-mundo-11`), fase ciega del auditor. Escrita antes de que el arnes
+me exponga el reporte. Modo austero (`D.47`): no repito lo que el registro ya dice.*
+
+> **LAS CUATRO DECLARACIONES QUE EL ARNES EXIGE ANTES DE QUE YO ESCRIBA EL ACTA** (`D.40`), y
+> cada una con su instrumento debajo en la seccion que la sostiene:
+
+    ACTA ANTERIOR LEIDA: e508a1a9cbb136bb27e08cccf7ba2bcfac61ccce
+    HEREDADO 1: CUMPLIDO
+    HEREDADO 2: CUMPLIDO
+    HEREDADO 3: CUMPLIDO
 
 ---
 
-## 1. LA DECLARACION QUE EL ARNES EXIGE (`D.40`)
+## AC.1. LA HUELLA DEL ACTA ANTERIOR, COMPROBADA Y NO COPIADA
 
-    ACTA ANTERIOR LEIDA: 9c1eced05cb9f9b265e2f94e3a17e188af43b185
-
-**COMPROBADA CONTRA EL ARBOL Y NO COPIADA DEL PROMPT:**
+La huella que el prompt me entrega es `e508a1a9cbb136bb27e08cccf7ba2bcfac61ccce`. La saco del
+arbol con el instrumento de git y la comparo:
 
     $ git hash-object docs/loop/ACTA_AUDITOR.md
-    9c1eced05cb9f9b265e2f94e3a17e188af43b185
+    e508a1a9cbb136bb27e08cccf7ba2bcfac61ccce
 
-La salida mide la huella `git` del fichero `docs/loop/ACTA_AUDITOR.md` tal como vive en el arbol
-ahora mismo.
+    $ wc -l docs/loop/ACTA_AUDITOR.md
+    37718 docs/loop/ACTA_AUDITOR.md
 
-`LECTURA`: la huella que el prompt me entrega y la del fichero que he abierto son la misma cadena,
-asi que el acta que he leido es la que el arnes nombra y no otra version.
+    $ grep -c '^# ACTA ' docs/loop/ACTA_AUDITOR.md
+    49
 
-### 1.1. LOS HEREDADOS QUE EL ARNES ENTREGA SON `0`, Y ESO ES UN HALLAZGO Y NO UN TRAMITE
+Esa salida mide la huella del fichero `docs/loop/ACTA_AUDITOR.md` tal como esta en el arbol hoy,
+sus lineas, y cuantas cabeceras de acta contiene.
 
-    $ python forja.py herencia
-      acta anterior : ACTA 48. VUELTA 49, lote 7 (`grove_high_output`), ...
-      su huella     : 9c1eced05cb9f9b265e2f94e3a17e188af43b185
-      heredados     : 0
+`LECTURA`: la huella del arbol y la del prompt son la misma cadena de 40 caracteres, asi que el
+acta que abri es la que el prompt nombra y no otra version. **El acta de cola es la `ACTA 49`, que
+audita la vuelta 50**, y por tanto la que yo escriba al cerrar este turno es la `ACTA 50` y audita
+la vuelta 51. La abri y la lei, que es lo que `D.40` me autoriza a hacer en esta fase.
 
-    AVISO: esta acta MENCIONA remedios en 1 encabezado(s) y no ESCRIBE ninguna tabla de
-    remedios fuera de cita. No se entrega ninguno, y se dice en voz alta: un arnes que
-    entrega cero sin avisar es el defecto que la TAREA 2 de la vuelta 31 vino a cerrar.
+## AC.2. LO QUE EL ARNES ME RETIRO, DICHO POR EL ARNES Y NO POR MI
 
-    El acta anterior no dejo ninguna tarea bloqueante ni ningun remedio escrito.
+`loop.log` no se retira, asi que la linea de mi propio turno se puede abrir y comprobar:
 
-La salida mide lo que el extractor de herencia de `forja.py` saca hoy del acta `48`: cero piezas,
-con su propio aviso de que hay **un** encabezado de remedio que no ha sabido leer.
+    $ grep -n 'VUELTA 7 : APERTURA CIEGA' docs/loop/loop.log
+    3616:[2026-09-19 15:29:23] VUELTA 7 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
 
-**Y AHORA LO QUE HE ABIERTO YO, porque `AUDITOR_FORJA.md` me manda abrir mi propia acta en esta
-fase, y esta es exactamente la razon por la que me lo manda:**
-
-    $ grep -n "TAREA BLOQUEANTE DEL AUDITOR PARA LA VUELTA 50" docs/loop/ACTA_AUDITOR.md
-    37045:### 48.9.d. **MI TAREA BLOQUEANTE DEL AUDITOR PARA LA VUELTA 50** (`5.5`, escalada al penultimo escalon)
-
-La salida mide que la cadena `TAREA BLOQUEANTE DEL AUDITOR PARA LA VUELTA 50` aparece en la linea
-`37045` de `docs/loop/ACTA_AUDITOR.md`, dentro de la seccion `48.9.d`.
-
-Y esto es lo que esa seccion escribe, pegado de su sitio:
-
-    | **TAREA BLOQUEANTE DEL AUDITOR, vuelta 50** | **El barrido del remedio se corre COMO
-    ULTIMA OPERACION de mi fase ciega, sobre la pagina ya terminada, y su salida se pega
-    DESPUES de todo lo demas.** Si al pegarla escribo una linea mas de prosa, **lo vuelvo
-    a correr.** La cuenta de golpes que publique tiene que ser la del fichero que el arnes
-    va a sellar, **no la de una version intermedia** |
-    | **como se comprueba que esta roto** | se corre `.v49aud/17_superlativos.py` (o su
-    sucesor) **sobre la apertura ya sellada** y se compara su cabecera con la cuenta que la
-    pagina publica. **Si no coinciden, roto**, sin discusion y sin necesidad de leer una
-    sola frase |
-
-`LECTURA`: **la tarea bloqueante existe en el acta anterior y el instrumento de herencia la entrega
-como `0`.** La `ACTA 48` la escribio bajo el encabezado `MI TAREA BLOQUEANTE DEL AUDITOR PARA LA
-VUELTA 50`, y las actas `35` a `42` la habian escrito como `TAREA BLOQUEANTE DEL AUDITOR, para la
-ACTA N`, que es la forma que el extractor de herencia sabe leer. **La pieza no se perdio por
-memoria: se perdio por forma.** Y `D.40` nacio porque `ACTA 14`, `ACTA 15` y `ACTA 16` perdieron el
-mismo remedio tres veces seguidas. La recupero por la via que el propio protocolo me deja abierta,
-que es leer mi acta, y la cumplo en la seccion `12` como si el arnes me la hubiera puesto delante.
-Lo registro con su medida y **no abro doctrina**, que es lo que `D.56` manda hacer con una pregunta
-nueva mientras el mundo `11` no cierre.
-
-### 1.2. LA TABLA DE LO QUE HEREDO, CON SU ESTADO
-
-| # | de donde sale | que dice | estado |
-|---|---|---|---|
-| **HEREDADO 1** | `ACTA 48` `48.9.d`, **recuperado por mi, no entregado por el arnes** | el barrido del remedio se corre como operacion final de mi fase ciega, sobre la pagina ya terminada, y su salida se pega despues de todo lo demas; la cuenta de golpes que publique tiene que ser la del fichero que el arnes va a sellar | **CUMPLIDO**, seccion `12` |
-| **HEREDADO 2** | `ACTA 47`, citado vivo en `48.9.d` | la frase que acompana a un pegado dice lo que **ese** pegado mide, y la conclusion va aparte y marcada `LECTURA` | **CUMPLIDO**, en cada seccion de esta pagina |
-| **lo que `forja.py herencia` entrega** | el arnes | `0` | **declarado en `1.1` con su instrumento pegado** |
-
-**NO ESCRIBO NINGUN `NO APLICA`** en esta tabla, asi que no hay motivo de `NO APLICA` que sostener
-con una salida pegada. Las dos filas vivas salen `CUMPLIDO` y la tercera es la cuenta del arnes con
-su instrumento delante.
-
----
-
-## 2. LO QUE ESTA FASE NO VE, COMPROBADO EN `loop.log` Y NO SUPUESTO
-
-    $ tail -n 4 docs/loop/loop.log
-    [2026-09-19 13:29:49] extractor listo (USD 21.398844999999994), 3006s, intento 1 de 7
-    [2026-09-19 13:29:50] VUELTA 6 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
-    [2026-09-19 13:29:50]   hereda 0 remedio(s) del acta anterior, entregados en el prompt (D.40)
-    [2026-09-19 13:29:50]   y solo eso: remedios con su motivo, sin cifras ni conclusiones (D.52)
-
-La salida mide las cuatro lineas finales de `docs/loop/loop.log`, que el arnes acaba de escribir
-para este turno.
-
-    $ git status --short docs/loop/
-     D docs/loop/APERTURA_CIEGA.md
+    $ git status --porcelain docs/loop/
+     M docs/loop/APERTURA_CIEGA.md
      D docs/loop/CREDITO_serial.jsonl
      D docs/loop/REPORTE.md
      M docs/loop/loop.log
@@ -108,40 +51,48 @@ para este turno.
      D docs/loop/ultimo_auditor.json
      D docs/loop/ultimo_extractor.json
 
-La salida mide que cinco ficheros de `docs/loop/` estan borrados del arbol de trabajo:
-`APERTURA_CIEGA.md`, `CREDITO_serial.jsonl`, `REPORTE.md`, `ultimo_auditor.json` y
-`ultimo_extractor.json`.
+Esas dos salidas miden la linea que el arnes escribio para este turno y el estado del arbol de
+`docs/loop/` frente al commit de cabeza.
 
-`LECTURA`: el log nombra cuatro retirados y el arbol ensena cinco borrados, porque
-`APERTURA_CIEGA.md` es la pagina que estoy escribiendo y el arnes la rota en cada vuelta. En esta
-corrida el cuarto retirado es `CREDITO_serial.jsonl` en lugar de `loop.log`, **asi que el log si lo
-puedo abrir y lo he abierto**, y en cambio **el credito de mi linea no lo puedo leer en esta fase**,
-que queda declarado en la seccion `9`.
+`LECTURA`: **los cuatro que el arnes declara retirados estan los cuatro con la `D` de borrado**, y
+la `M` de `APERTURA_CIEGA.md` es esta pagina, que el arnes retiro del arbol y que yo estoy
+escribiendo ahora, asi que su marca de estado es la de mi propia escritura. **No recupero ninguno de git**, y esta pagina no cita ni una linea de ellos.
 
-### 2.1. LO QUE NO HE ABIERTO, DICHO POR SU NOMBRE
+### AC.2.a. **LA CONSECUENCIA QUE TENGO QUE DECLARAR EN VEZ DE CALLARLA**: un instrumento de la casa no puede correr en esta fase
 
-No he recuperado de `git` ni por ninguna otra via `REPORTE.md`, `ultimo_extractor.json`,
-`ultimo_auditor.json` ni `CREDITO_serial.jsonl`. **Y tampoco he abierto `.v50/`**, la carpeta de
-trabajo que el extractor commiteo en esta vuelta: sus ficheros no estan en la lista de `D.34.2`,
-pero `.v50/informe_01.txt`, `.v50/vecinos_p41.txt` y sus vecinos **son la medida del extractor sobre
-este mismo lote**, y abrirlos seria leer la lectura que vengo a contrastar a ciegas. De esa carpeta
-he tomado los nombres de fichero, que salen del `git diff` de la seccion `4`, y nada de su interior.
+`docs/loop/CREDITO_serial.jsonl` es el registro que `forja.py credito` lee, y esta retirado. Asi
+que el instrumento corre y contesta esto:
 
-**SI he abierto `.v46/frontera.py`**, el instrumento de la frontera de `cap_04`, escrito en la
-vuelta `46` y citado dentro de las propias fichas: es un instrumento de la casa de cuatro vueltas
-atras, no mide la tanda de hoy, y lo corro yo mismo en la seccion `6`.
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
 
----
+      LINEA SIN REGISTRO: no hay ningun suceso escrito.
+      Una linea sin tandas NACE CON SU RACHA EN CERO y no hereda
+      la de nadie (D.48). Lo que herede el arnes sera CERO remedios.
 
-## 3. EL ESTADO DEL ARBOL, CON SUS INSTRUMENTOS
+Esa salida mide lo que el instrumento imprime cuando su registro no esta en el arbol.
 
-    $ git rev-parse HEAD
-    216b114449de15ae97360cf84e850b23a85afb16
+`LECTURA`: **esa salida NO es el estado de las rachas de esta linea: es el efecto de que el arnes
+retirase el registro para mi fase ciega**, declarado por el arnes en la linea de mi turno que
+acabo de pegar. **Por eso esta pagina no publica ni una cifra de racha**, y las rachas se leen en
+mi turno normal, cuando el registro vuelva al arbol. Lo escribo porque el fallo simetrico ya me
+costo una caida: la `ACTA 43` publico que el registro habia salido del arbol **y que nadie lo
+habia declarado**, y el arnes lo declaraba.
 
-    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl
+## AC.3. EL ESTADO DEL ARBOL, MEDIDO POR MI HOY Y DESPUES DE QUE LA VUELTA 51 ESCRIBIERA
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
         346 dataset/nodos.jsonl
         740 bitacora/VEREDICTOS.jsonl
-       1086 total
+          1 config/pares_mutuos.jsonl
+       1087 total
+
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    50
+
+    $ ls cuarentena/*/*.json | wc -l
+    218
 
     $ python forja.py gate
     GATE VERDE.
@@ -151,764 +102,717 @@ atras, no mide la tanda de hoy, y lo corro yo mismo en la seccion `6`.
     $ python forja.py guiones
     BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 
-    $ python forja.py resolutor
-    nodos vivos: 346
-    nodos deprecados (archivo): 0
-    alias registrados: 0
+Esas salidas miden las lineas de las tres sedes de estado, las fichas de la bandeja del libro, las
+fichas de todas las bandejas, y las dos guardas de una linea corridas por mi sobre el arbol de hoy.
 
-    $ python forja.py rancios | grep -c RANCIO
-    72
+`LECTURA`: **de las cuatro guardas que `D.55` deja bloquear, las dos de una linea salen verdes**, y
+las otras dos (las pruebas de aceptacion y la fidelidad `D.30` del capitulo) las corro en mi turno
+normal porque piden minutos que esta fase gasta en el barrido de vecinos. **`dataset/nodos.jsonl`
+se queda en `346` y `bitacora/VEREDICTOS.jsonl` en `740`**, que es lo que el encargo de la vuelta
+51 puso como la caida que buscar: si una de las dos se hubiera movido, habria entrado un nodo con
+la puerta de `D.39` cerrada.
 
-Las salidas miden, por ese orden: el `HEAD` del arbol; las lineas de `dataset/nodos.jsonl` y de
-`bitacora/VEREDICTOS.jsonl`; el gate con sus trece guardas; el barrido de estilo; el resolutor de
-ids; y la cuenta de lineas que el bloque de vigencia `D.15` imprime con la marca `RANCIO`.
+## AC.4. LO QUE LA VUELTA 51 TOCO, LEIDO DEL ARBOL Y NO DE SU REPORTE
 
-`LECTURA`: el grafo trae `346` nodos y la bitacora `740` lineas. Los `72` rancios salen de la
-familia `pedir_critica_primero_crear_seguridad_psicologica` y `dar_elogio_disciplina_igual_critica`,
-que son nodos de `scott_radical_candor` y no de la tanda de hoy; `D.15` dice de forma expresa que
-esto no pone el gate en rojo.
+    $ git diff --name-status 3061fc2 b04ac62 -- cuarentena/
+    M  cuarentena/grove_high_output/buscar_regularidad_bloques_iguales_trabajo_mando.json
+    A  cuarentena/grove_high_output/cubrir_indicadores_problemas_reunion_individual.json
+    M  cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json
+    A  cuarentena/grove_high_output/fijar_duracion_lugar_reunion_individual.json
+    A  cuarentena/grove_high_output/fijar_frecuencia_reunion_individual_madurez_tarea.json
+    A  cuarentena/grove_high_output/infundir_regularidad_reunion_proceso.json
+    A  cuarentena/grove_high_output/preparar_guion_reunion_individual_subordinado.json
+    M  cuarentena/grove_high_output/preparar_respuestas_estandar_interrupciones_repetidas.json
+    A  cuarentena/grove_high_output/usar_tres_clases_reunion_proceso.json
 
-### 3.1. LA POBLACION DEL BARRIDO DE VECINOS (`D.38.4`, con su cuenta pegada)
+    $ git diff --name-only 3061fc2 -- dataset/ bitacora/ censos/ config/ esquema/ src/ scripts/ tests/ hooks/ docs/BANCO_DE_REGLAS.md
+    (vacio: ni un fichero)
 
-    $ ls cuarentena/*/*.json | grep -v _insertados | grep -v _derivadas | grep -v ensayo_referencia_163 | wc -l
-    47
+Esa salida mide que ficheros de `cuarentena/` cambiaron entre el commit de apertura de la vuelta 51
+y su commit de cierre, y que ficheros cambiaron en las sedes de dato entre esa apertura y el arbol
+de hoy.
 
-    $ for d in cuarentena/*/; do printf "%6s  %s\n" "$(ls $d*.json 2>/dev/null | wc -l)" "$d"; done
-         2  cuarentena/_derivadas/
-         0  cuarentena/_insertados/
-       163  cuarentena/ensayo_referencia_163/
-        44  cuarentena/grove_high_output/
-         3  cuarentena/marquet_turn_the_ship/
-         0  cuarentena/onu_consumidor/
-         0  cuarentena/scott_radical_candor/
-         0  cuarentena/smart_who/
-         0  cuarentena/zhuo_manager/
+`LECTURA`: **seis fichas nuevas y tres corregidas, y cero ficheros movidos en las sedes de dato.**
+Las seis nuevas son las seis piezas que mi encargo fijo (`P6`, `P7`, `P11`, `P12`, `P13`, `P14`), y
+las tres corregidas son las tres que mi `TAREA 1.c` y mi `TAREA 3` nombraban. **La especie `DATO
+MOVIDO` sale limpia por medida y no por confianza**, y lo mismo el *cero inserciones* del encargo.
 
-Las salidas miden los ficheros `json` de `cuarentena/` por carpeta, descartando `_insertados`,
-`_derivadas` y `ensayo_referencia_163` como `D.38.5` manda.
+### AC.4.a. Que dice el instrumento de poblacion, capitulo a capitulo
 
-`LECTURA`: la poblacion del barrido es `346` del grafo mas `47` de bandejas, o sea `393`, y `392`
-por candidato, porque un nodo no es vecino de si mismo (`ACTA 18`). Los `163` de
-`ensayo_referencia_163` quedan fuera por el criterio de fuentes de `D.38.5`, que no es una lista de
-carpetas. **Esta cifra la cruzo contra la que la aduana imprime, en la seccion `8`.**
+    $ python .v49aud/01_poblacion.py   (cola de la salida)
+    cap_02 : 7 fichas en la bandeja
+    cap_03 : 15 fichas en la bandeja
+    cap_04 : 22 fichas en la bandeja
+    cap_05 : 6 fichas en la bandeja
 
-### 3.2. LAS PRUEBAS DE ACEPTACION SALEN CON CUATRO EN ROJO, Y LAS CUATRO SON DE ESTA FASE
+Esa salida mide, para cada ficha de la bandeja del libro, el capitulo que declara en su propio
+`resumen_teorico`, y las agrupa.
 
-    $ python tests/test_aceptacion.py
-      total: 318 pruebas, 3 fallos, 1 errores
-
-    ERROR: test_el_reporte_vivo_pasa_su_propia_guarda (__main__.PruebaTablaDeCierre)
-      File "C:\Users\AlexDesk\Documents\forja-nodos\src\comun.py", line 80, in leer_texto
-        with io.open(ruta, "r", encoding="utf-8") as f:
-    FileNotFoundError: [Errno 2] No such file or directory:
-      'C:\\Users\\AlexDesk\\Documents\\forja-nodos\\docs\\loop\\REPORTE.md'
-
-    FAIL: test_la_linea_serial_del_repo_tiene_su_registro_escrito (PruebaHerenciaPorLinea)
-    AssertionError: False is not true : docs/loop/CREDITO_serial.jsonl sin tandas: la
-      migracion de D.48 no esta en el arbol
-
-    FAIL: test_caso_positivo_un_frente_recien_nacido_hereda_cero (PruebaHerenciaPorLinea)
-    FAIL: test_el_aviso_nombra_la_linea_y_su_registro (PruebaHerenciaPorLinea)
-    AssertionError: 'libro_que_nunca_dicto_nada' not found in ''
-
-    Ran 318 tests in 118.789s
-    FAILED (failures=3, errors=1, skipped=1)
-
-La salida mide `318` pruebas con `3` fallos, `1` error y `1` saltada, y sus trazas nombran dos
-ficheros: `docs/loop/REPORTE.md` y `docs/loop/CREDITO_serial.jsonl`.
-
-`LECTURA`: los dos ficheros que las trazas nombran son **dos de los cuatro que el arnes retiro para
-esta fase**, segun la linea de `loop.log` pegada en la seccion `2`. **La suite de aceptacion no
-puede salir verde dentro de una apertura ciega**, y por eso no cargo estos cuatro rojos contra la
-vuelta `50`: el rojo lo produce la retirada, no el trabajo. Es la figura de `D.33`, artefacto de
-maquina. Lo dejo escrito como observacion medida y **no encargo maquinaria** (`5.5`, moratoria
-`7.F`, y `D.45` mientras corran frentes en paralelo).
+`LECTURA`: **`cap_05` estrena con `6` fichas y `cap_04` se queda en `22`**, que es el reparto que
+mi encargo fijo antes de empezar. `7` mas `15` mas `22` mas `6` dan las `50` de `AC.3`.
 
 ---
 
-## 4. QUE LOTE ES ESTE, MEDIDO EN EL ARBOL Y NO SUPUESTO
+# AC.5. MI CLASIFICACION DE LOS SEIS CANDIDATOS, HECHA POR MI Y A CIEGAS
 
-    $ git log --format='%h %ad %s' --date=format:'%H:%M:%S' -n 5
-    216b114 13:27:55 VUELTA 50: cap_04 cerrado en 22 de 22 con P41, P42 y P44 por su aduana en el acto, d036 y d038 pagadas, y la frontera de cap_05 publicada
-    55cd182 13:16:30 Vuelta 50, cap_04: candidato 3 de 3 (P44), capitulo cerrado en 22 de 22, y d036 y d038 pagadas con nueve correcciones declaradas
-    adb5c9d 13:09:16 Vuelta 50, cap_04: candidato 2 de 3 (P42) escrito y pasado por su aduana en el acto, cero inserciones
-    f717235 13:02:16 Vuelta 50, cap_04: candidato 1 de 3 (P41) escrito y pasado por su aduana en el acto, cero inserciones
-    e740b2f 12:46:37 Apertura de la vuelta 50, con el esqueleto y la puerta de D.39 medida cerrada
+**COMO LA HICE, Y EN QUE ORDEN**, porque el orden es lo que la hace ciega: abri las seis fichas de
+la bandeja, les saque los pasos con un instrumento, **lei los ocho renglones de `cap_05.md` que las
+sostienen antes de leer una sola linea de lo que las fichas dicen de si mismas**, adjudique con la
+vara de `AUDITOR_FORJA.md` 6.1, y **solo despues** abri los `resumen_teorico` para ver que decian.
+**No abri `.v51/`**, que es el cuaderno de la vuelta, y lo declaro aqui como decision: sus informes
+de aduana son la prueba del extractor y los cruzo en mi turno normal, no en esta fase.
 
-    $ git diff --name-status 0ab7b6c..HEAD -- cuarentena/ dataset/ bitacora/ censos/
-    A       cuarentena/grove_high_output/agrupar_interrupciones_subordinados_reuniones_regulares.json
-    M       cuarentena/grove_high_output/buscar_actividad_alta_palanca_tres_vias.json
-    A       cuarentena/grove_high_output/canalizar_interrupciones_cartel_hora_oficina.json
-    M       cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json
-    M       cuarentena/grove_high_output/elegir_momento_actividad_palanca_maxima.json
-    M       cuarentena/grove_high_output/empujar_persona_reunion_direccion_preferida.json
-    M       cuarentena/grove_high_output/escalonar_fuentes_informacion_gerencial.json
-    A       cuarentena/grove_high_output/preparar_respuestas_estandar_interrupciones_repetidas.json
-    M       cuarentena/grove_high_output/programar_visita_area_observar_despachar.json
-    M       cuarentena/grove_high_output/reunir_informacion_gerencial_vias_variadas.json
-    M       cuarentena/grove_high_output/subir_productividad_gerencial_tres_vias.json
-    M       cuarentena/grove_high_output/transmitir_objetivos_prioridades_preferencias.json
+## AC.5.a. Los pasos, contados por el instrumento y no por mi
 
-La salida mide los cambios de `0ab7b6c`, que es el commit de mi acta anterior, a `HEAD`, dentro de
-`cuarentena/`, `dataset/`, `bitacora/` y `censos/`: tres ficheros anadidos y nueve modificados, los
-doce en `cuarentena/grove_high_output/`, y cero lineas en `dataset/`, `bitacora/` y `censos/`.
+    $ python .v51aud/03_pasos_cap05.py
+    ficha                                                pieza   pasos
+    infundir_regularidad_reunion_proceso                 P6          8
+    usar_tres_clases_reunion_proceso                     P7          4
+    fijar_frecuencia_reunion_individual_madurez_tarea    P11        10
+    fijar_duracion_lugar_reunion_individual              P12        10
+    preparar_guion_reunion_individual_subordinado        P13         7
+    cubrir_indicadores_problemas_reunion_individual      P14        10
+    TOTAL DE PASOS DE LAS SEIS FICHAS DE cap_05                     49
 
-    $ git diff --stat 0ab7b6c..HEAD -- dataset/ bitacora/ censos/ config/ esquema/ src/ scripts/ tests/ hooks/ docs/BANCO_DE_REGLAS.md docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md
-    (sin salida: cero ficheros impresos)
+Esa salida mide cuantos elementos tiene `pasos_accionables` en cada una de las seis fichas, y su
+suma.
 
-La salida mide el mismo tramo de commits sobre las nueve carpetas de dato y de codigo y sobre los
-dos documentos de doctrina, y no imprime un solo fichero.
+## AC.5.b. Las palabras de cada tramo, recomputadas por mi hoy
 
-`LECTURA`: **el lote de esta vuelta son tres candidatos nuevos**,
-`preparar_respuestas_estandar_interrupciones_repetidas` (pieza `P41`),
-`agrupar_interrupciones_subordinados_reuniones_regulares` (pieza `P42`) y
-`canalizar_interrupciones_cartel_hora_oficina` (pieza `P44`). Los nueve modificados son
-correcciones declaradas sobre fichas que ya esperaban en la bandeja, y los reviso en la seccion `7`.
-**La vuelta no inserto un nodo y no escribio un veredicto**, asi que la sede de `CLASE` de la tabla
-de `5.2` queda sin tocar y la fila `DATO MOVIDO` sale sin material.
----
+    $ python .v51aud/05_palabras_tramos.py
+    tramo            palabras
+    L21 a L21             124
+    L23 a L23              18
+    L33 a L35             187
+    L37 a L39             195
+    L41 a L41             145
+    L43 a L43             134
+    suma de los seis      803
 
-## 5. MI CLASIFICACION A CIEGAS, CANDIDATO POR CANDIDATO
+Esa salida mide las palabras de cada rango de lineas de `fuentes/grove_high_output/cap_05.md` con
+`sed` mas `wc -w`, y su suma.
 
-**COMO LO HE HECHO, dicho antes de dar un resultado:** he abierto los tres ficheros de
-`cuarentena/grove_high_output/` que el `git diff` de la seccion `4` marca como anadidos, he abierto
-`fuentes/grove_high_output/cap_04.md` por la linea que cada ficha declara, y he puesto cada paso al
-lado de su renglon. Despues he corrido la aduana en seco sobre los tres, que es la seccion `8`.
+`LECTURA`: **las seis cifras coinciden al digito con las que mi propia frontera de la vuelta 50
+publico** (`.v50/frontera_cap_05.txt`, filas `P6`, `P7`, `P11`, `P12`, `P13` y `P14`), y coinciden
+tambien con las que las seis fichas declaran en su renglon de cabecera. **La frontera que mi
+encargo mando usar se reproduce sin que yo la reabra.**
 
-**EL TEXTO FUENTE, pegado de su fichero y no de la ficha:**
+## AC.5.c. Los ocho renglones del libro que sostienen los seis nodos
 
-    $ wc -l fuentes/grove_high_output/cap_04.md
-    323 fuentes/grove_high_output/cap_04.md
+    $ sed -n '21p;23p;33p;35p;37p;39p;41p;43p' fuentes/grove_high_output/cap_05.md | cut -c1-120
+      (LA SALIDA VA CORTADA A 120 CARACTERES POR COLUMNA, Y LO DECLARO: son 8 renglones de 8)
+    To make the most of this kind of meeting, we should aim to infuse it with regularity. In other words, the people attendi
+    At Intel we use three kinds of process-oriented meetings: the one-on-one, the staff meeting, and the operation review.
+    How often should you have one-on-ones? Or put another way, how do you decide how often somebody needs such a meeting? Th
+    Another consideration here is how quickly things change in a job area. In marketing, for example, the pace may be so rap
+    How long should a one-on-one meeting last? There really is no answer to this, but the subordinate must feel that there i
+    Where should a one-on-one take place? In the supervisor’s office, in the subordinate’s office, or somewhere else? I 
+    A key point about a one-on-one: It should be regarded as the subordinate’s meeting, with its agenda and tone set by hi
+    What should be covered in a one-on-one? We can start with performance figures, indicators used by the subordinate, such 
 
-    $ for n in 313 315 317 319 321 323; do printf "L%s wc-w=%s\n" "$n" "$(sed -n "${n}p" fuentes/grove_high_output/cap_04.md | wc -w)"; done
-    L313 wc-w=68
-    L315 wc-w=92
-    L317 wc-w=74
-    L319 wc-w=67
-    L321 wc-w=160
-    L323 wc-w=41
+    $ sed -n '21p;23p;33p;35p;37p;39p;41p;43p' fuentes/grove_high_output/cap_05.md | wc -l
+    8
 
-    $ sed -n '315p;317p' fuentes/grove_high_output/cap_04.md
-    There are better ways. Let's apply a production concept. Manufacturers turn out standard
-    products. By analogy, if you can pin down what kind of interruptions you're getting, you
-    can prepare standard responses for those that pop up most often. Customers don't come up
-    with totally new questions and problems day in and day out, and because the same ones tend
-    to surface repeatedly, a manager can reduce time spent handling interruptions using
-    standard responses. Having them available also means that a manager can delegate much of
-    the job to less experienced personnel.
+Esa salida mide los ocho renglones de origen de los seis nodos, cortados por columna, y su cuenta.
 
-    Also, if you use the production principle of batching-that is, handling a group of similar
-    chores at one time-many interruptions that come from your subordinates can be accumulated
-    and handled not randomly, but at staff and at one-on-one meetings, the subject of the next
-    chapter. If such meetings are held regularly, people can't protest too much if they're
-    asked to batch questions and problems for scheduled times, instead of interrupting you
-    whenever they want.
+## AC.5.d. **MI LECTURA DE FIDELIDAD `D.30`, PASO A PASO Y CONTRA EL RENGLON**
 
-    $ sed -n '321p;323p' fuentes/grove_high_output/cap_04.md
-    If the people who interrupt you knew how much they were disturbing you, they would probably
-    police themselves more closely and cut down on the number of times they felt they had to
-    talk to you right away. In any case, a manager should try to force his frequent interrupters
-    to make an active decision about whether an issue can wait. So, instead of going into hiding,
-    a manager can hang a sign on his door that says, "I am doing individual work. Please don't
-    interrupt me unless it really can't wait until 2:00." Then hold an open office hour, and be
-    completely receptive to anybody who wants to see you. The key is this: understand that
-    interrupters have legitimate problems that need to be handled. That's why they're bringing
-    them to you. But you can channel the time needed to deal with them into organized, scheduled
-    form by providing an alternative to interruption-a scheduled meeting or an office hour.
+Lei los `49` pasos contra su renglon. **Esto es una `LECTURA` mia y no una cifra de instrumento**:
+lo que el instrumento cuenta son los `49`, y quien decide si un paso es transcripcion o puente soy
+yo leyendo.
 
-    The point is to impose a pattern on the way a manager copes with problems. To make something
-    regular that was once irregular is a fundamental production principle, and that's how you
-    should try to handle the interruptions that plague you.
+| ficha | pieza | pasos | mi lectura `D.30` | donde mire |
+|---|---|---:|---|---|
+| `infundir_regularidad_reunion_proceso` | `P6` | `8` | **8 TRANSCRIPCION, 0 PUENTE** | `L21` entero, frase a frase: la regularidad, las tres cosas que los asistentes tienen que saber, la tanda, el pronostico, el sistema de control y su efecto |
+| `usar_tres_clases_reunion_proceso` | `P7` | `4` | **4 TRANSCRIPCION, 0 PUENTE** | `L23`, que cabe en un renglon: la cuenta `three kinds` y los tres nombres |
+| `fijar_frecuencia_reunion_individual_madurez_tarea` | `P11` | `10` | **10 TRANSCRIPCION, 0 PUENTE** | `L33` para los pasos 1 a 7 y `L35` para los 8 a 10 |
+| `fijar_duracion_lugar_reunion_individual` | `P12` | `10` | **10 TRANSCRIPCION, 0 PUENTE** | `L37` para los pasos 1 a 4 y `L39` para los 5 a 10 |
+| `preparar_guion_reunion_individual_subordinado` | `P13` | `7` | **7 TRANSCRIPCION, 0 PUENTE** | `L41` entero, incluida la aritmetica de los ocho subordinados |
+| `cubrir_indicadores_problemas_reunion_individual` | `P14` | `10` | **10 TRANSCRIPCION, 0 PUENTE** | `L43` entero, con sus tres ejemplos de indicador y sus cuatro clases |
+| | | **`49`** | **`49` TRANSCRIPCION, `0` PUENTE** | |
 
-    $ sed -n '322p' fuentes/grove_high_output/cap_04.md | cat -A
-    $
+`LECTURA`: **FIRMO el `0` PUENTE de los `49` pasos de esta tanda**, leidos por mi contra el renglon
+antes de abrir lo que las fichas dicen de si mismas. `PASOS INVENTADOS POR CAPITULO` de `cap_05`
+me sale `0` de `49`, o sea `0,00` por ciento, y la fila la cierro en mi acta con el reporte delante.
 
-Las salidas miden: que `cap_04.md` tiene `323` lineas; las palabras de seis renglones de ese
-fichero contadas con `wc -w`; el texto de `L315`, `L317`, `L321` y `L323`; y que `L322` esta en
-blanco. Los renglones van doblados para que quepan, y los guiones largos del original salen como
-guion corto porque el pegado pasa por el mismo `llana` que usa la casa.
+### AC.5.e. **LOS DOS SITIOS DONDE UN PASO DICE ALGO QUE SU RENGLON NO ESCRIBE**, y por que aun asi los firmo
 
-### 5.1. `P41`: `preparar_respuestas_estandar_interrupciones_repetidas`, `L315`, `6` pasos
+Son dos marcos anadidos, no dos contenidos inventados, y los dejo escritos para que se puedan
+discutir contra mi:
 
-| paso | de donde lo saco yo en `L315` | mi fidelidad `D.30` |
-|---|---|---|
-| **1** | `There are better ways. Let's apply a production concept. Manufacturers turn out standard products` | **TRANSCRIPCION**, con una salvedad que marco en `5.1.a` |
-| **2** | `By analogy, if you can pin down what kind of interruptions you're getting` | **TRANSCRIPCION** |
-| **3** | `you can prepare standard responses for those that pop up most often` | **TRANSCRIPCION** |
-| **4** | `Customers don't come up with totally new questions and problems day in and day out, and because the same ones tend to surface repeatedly` | **TRANSCRIPCION** |
-| **5** | `a manager can reduce time spent handling interruptions using standard responses` | **TRANSCRIPCION** |
-| **6** | `Having them available also means that a manager can delegate much of the job to less experienced personnel` | **TRANSCRIPCION** |
+| # | donde | que anade el paso | por que lo firmo |
+|---|---|---|---|
+| `1` | `P7`, paso `1` | escribe *las reuniones de proceso que se usan son de tres clases*, y `L23` escribe `At Intel we use three kinds` | la cuenta y los tres nombres estan en el renglon; lo que el paso deja fuera es el sujeto `At Intel`, que es la casa del caso y no la regla (manual 3.5). **El titulo de la ficha si dice que es el libro quien las cuenta** |
+| `2` | `P11`, paso `1` | escribe *en vez de poner la misma frecuencia para todas*, y `L33` no escribe esa contraposicion | el renglon la sostiene por sus dos extremos: `frequently (for example, once a week)` con el inexperto y `less frequently (perhaps once every few weeks)` con el veterano. **La frase anadida es el resumen de esos dos extremos**, no un dato nuevo |
 
-`LECTURA`: los seis pasos tienen su frase dentro de `L315` y el orden de la ficha es el orden del
-renglon. **Mi cuenta de fidelidad de este candidato es `6` pasos, `6` TRANSCRIPCION, `0` PUENTE**, y
-coincide con la que la ficha declara dentro de su `resumen_teorico`.
-
-#### 5.1.a. **MI DISCUTIBLE, marcado antes de saber si acierto**
-
-El paso `1` escribe, en su version castellana:
-
-    Aplica a las interrupciones que te llegan el siguiente concepto de produccion, porque hay
-    formas mejores que esconderte: los fabricantes sacan productos estandar.
-
-`L315` abre con `There are better ways` y **no dice mejores que que**. Lo que dice `esconderte` es
-`L313`, que la propia ficha declara fuera de su tramo y que la frontera clasifica como pieza `P40`,
-`el experimento de los veinte mandos y las soluciones que no sirven: CASO`, con `0` nodos.
-
-`LECTURA`: **no lo cargo como PUENTE**, porque las palabras estan en el libro y el paso no inventa
-procedimiento: `L313` escribe `hiding physically` y `a less than happy answer`. Lo que si veo es un
-**cruce de tramo sin declarar**: la ficha afirma `EL TRAMO ENTERO ES DE ESTE NODO` y `cero frontera
-interna`, y ese trozo del paso `1` toma su referente de un tramo vecino que da cero nodos. Si el
-extractor lo declaro en su reporte, cae dentro de su marcado; si no, es una frontera interna que su
-ficha niega tener. **Lo dejo medido aqui, con `L313` y `L315` pegados arriba, para poder contrastar
-las dos lecturas cuando se me exponga el reporte.**
-
-### 5.2. `P42`: `agrupar_interrupciones_subordinados_reuniones_regulares`, `L317`, `5` pasos
-
-| paso | de donde lo saco yo en `L317` | mi fidelidad `D.30` |
-|---|---|---|
-| **1** | `if you use the production principle of batching, that is, handling a group of similar chores at one time` | **TRANSCRIPCION** |
-| **2** | `many interruptions that come from your subordinates can be accumulated and handled not randomly` | **TRANSCRIPCION** |
-| **3** | `but at staff and at one-on-one meetings` | **TRANSCRIPCION** |
-| **4** | `If such meetings are held regularly` | **TRANSCRIPCION**, con la salvedad de `5.2.a` |
-| **5** | `people can't protest too much if they're asked to batch questions and problems for scheduled times, instead of interrupting you whenever they want` | **TRANSCRIPCION** |
-
-`LECTURA`: **mi cuenta es `5` pasos, `5` TRANSCRIPCION, `0` PUENTE**, y coincide con la que la ficha
-declara. La ficha ademas declara por su nombre lo que el renglon dice y no convierte en paso, `the
-subject of the next chapter`, y eso es lo que `EXTRACTOR.md` 9 pide cuando el libro remite a otra
-unidad.
-
-#### 5.2.a. **MI SEGUNDO DISCUTIBLE**
-
-El paso `4` dice `Manten esas reuniones con regularidad` y el renglon dice `If such meetings are
-held regularly`, que es la protasis de una condicion y no una orden. Convertirla en imperativo es la
-misma operacion que el paso `2` de `P41` hace con `if you can pin down`, asi que **o vale en los dos
-sitios o cae en los dos**. Yo la sostengo, porque el castellano de una ficha de esta casa escribe
-actos y el libro pone ahi la condicion que hace funcionar al paso `5`. **Y registro lo que el paso
-`4` NO escribe y habria sido puente de la especie EL PERIODO:** el renglon no da cadencia, y el paso
-tampoco la da.
-
-### 5.3. `P44`: `canalizar_interrupciones_cartel_hora_oficina`, `L321` a `L323`, `8` pasos
-
-| paso | de donde lo saco yo | mi fidelidad `D.30` |
-|---|---|---|
-| **1** | `L321: If the people who interrupt you knew how much they were disturbing you, they would probably police themselves more closely and cut down on the number of times` | **TRANSCRIPCION** |
-| **2** | `L321: In any case, a manager should try to force his frequent interrupters to make an active decision about whether an issue can wait` | **TRANSCRIPCION** |
-| **3** | `L321: So, instead of going into hiding, a manager can hang a sign on his door that says, I am doing individual work. Please don't interrupt me unless it really can't wait until 2:00` | **TRANSCRIPCION** |
-| **4** | `L321: Then hold an open office hour, and be completely receptive to anybody who wants to see you` | **TRANSCRIPCION** |
-| **5** | `L321: The key is this: understand that interrupters have legitimate problems that need to be handled. That's why they're bringing them to you` | **TRANSCRIPCION** |
-| **6** | `L321: But you can channel the time needed to deal with them into organized, scheduled form by providing an alternative to interruption, a scheduled meeting or an office hour` | **TRANSCRIPCION** |
-| **7** | `L323: The point is to impose a pattern on the way a manager copes with problems` | **TRANSCRIPCION** |
-| **8** | `L323: To make something regular that was once irregular is a fundamental production principle, and that's how you should try to handle the interruptions that plague you` | **TRANSCRIPCION** |
-
-`LECTURA`: **mi cuenta es `8` pasos, `8` TRANSCRIPCION, `0` PUENTE**, y coincide con la que la ficha
-declara. **El texto del cartel lo verifico palabra por palabra contra `L321`**, incluida la hora
-`2:00`, y el paso `3` lo traslada entero sin reescribirlo; `instead of going into hiding` esta en
-`L321` y por eso el `en vez de esconderte` de este paso **si** es del tramo, al reves de lo que pasa
-en `P41` (seccion `5.1.a`).
-
-#### 5.3.a. **MI TERCER DISCUTIBLE**
-
-El paso `5` es una constatacion y no un acto, de la misma especie que el paso `1`, y la ficha marca
-como discutible el paso `1` y no el `5`. `LECTURA`: **el marcado se queda corto por una fila**, y
-como la especie es la misma, la suerte de los dos tiene que ser la misma. Yo sostengo los dos, por
-el motivo que la propia ficha da para el paso `1`: el libro pone ahi el criterio que hace
-ejecutable al paso que sigue.
-
-#### 5.3.b. **LO QUE COMPRUEBO DE LOS PASOS `7` Y `8`, QUE SALEN DE `L323`**
-
-`L322` sale en blanco con `cat -A` y `L323` es el renglon final del fichero, que tiene `323` lineas.
-La frontera de la vuelta `46` asigna `L321 a L323` a la pieza `P44` y a ninguna otra, y eso lo
-reproduzco yo en la seccion `6`.
-
-`LECTURA`: si los pasos `7` y `8` no fueran de este nodo, `L323` quedaria sin nodo y el capitulo
-cerraria con un renglon sin sede. **Sostengo el corte de la ficha**, y con ella el reparto de
-`L323`, porque es el renglon que dice que se consigue con el cartel y con la hora de oficina.
-
-### 5.4. LA PIEZA `P43`, QUE NO TIENE NODO: **MI LECTURA A CIEGAS LA SOSTIENE**
-
-`L319` dice esto, pegado arriba en su `sed`: el uso de indicadores, y sobre todo el banco de
-indicadores guardado en el tiempo, baja el tiempo que un mando gasta atendiendo interrupciones; la
-velocidad de responder depende de la velocidad de poner el dedo en la informacion; y con un archivo
-de informacion no hace falta investigar a bote pronto cada vez que suena el telefono.
-
-Y esto es lo que ya vive en la bandeja, pegado de su fichero:
-
-    $ python -c "pasos de archivar_indicadores_resolver_problemas"
-    1. Recoge de forma sistematica los indicadores de tu operacion y mantenlos en un archivo,
-       en vez de dejar que se pierdan segun pasan los dias.
-    2. Haz que ese archivo sea un banco de informacion que ensene de golpe todos los
-       parametros de tu operacion.
-    3. Cuando algo vaya mal, repasa en ese archivo todos esos parametros.
-    4. Busca en ese repaso las desviaciones no sanas respecto de la norma, que es lo que te
-       senala donde esta el problema.
-
-La salida mide los cuatro pasos de `cuarentena/grove_high_output/archivar_indicadores_resolver_problemas.json`,
-que sale de `cap_03` `L99` segun su propio `resumen_teorico`.
-
-`LECTURA`: **lo que `L319` anade sobre esos cuatro pasos es un FIN, y no un acto.** Recoger y
-mantener el archivo ya esta en el paso `1`; el banco de informacion ya esta en el paso `2`. Lo que
-`L319` trae de nuevo es para que sirve tenerlo, que es responder rapido a una interrupcion, y la
-velocidad de la respuesta no es una operacion que se ejecute: es la consecuencia de haberlo hecho.
-La vara de `6.1` pregunta que anade el hijo a la madre, y aqui el hijo anade destino y no
-procedimiento. **Adjudico `REPITE`, o sea pieza sin nodo, y coincido con la frontera de la vuelta
-`46` sin haberla mirado antes de leer los dos textos.** Ademas la ficha de `cap_03` aplica ese mismo
-criterio contra si misma cuando dice que el precio de no tener el archivo es el porque del
-procedimiento y no un paso suyo.
-
-### 5.5. MI CUENTA DE FIDELIDAD DEL LOTE, Y LA FILA DE `PASOS INVENTADOS POR CAPITULO`
-
-    $ python -c "conteo de pasos por capitulo de origen, bandeja grove_high_output mas insertados"
-    cap_01 : 1 fichas, 7 pasos
-    cap_02 : 7 fichas, 50 pasos
-    cap_03 : 15 fichas, 121 pasos
-    cap_04 : 22 fichas, 156 pasos
-    TOTAL: 45 fichas, 334 pasos
-
-La salida mide, para cada fichero `json` de `cuarentena/grove_high_output/` y de
-`cuarentena/_insertados/grove_high_output/`, el capitulo que su `resumen_teorico` declara como
-unidad de origen y la longitud de su lista `pasos_accionables`.
-
-`LECTURA`: mi acta anterior conto `137` pasos en las `19` fichas de `cap_04` que habia entonces.
-Hoy cuento `156` en `22` fichas, y `156` menos `137` da `19`, que es exactamente `6` del `P41` mas
-`5` del `P42` mas `8` del `P44`. **Las `19` fichas viejas conservan sus pasos**, comprobado por esa
-diferencia, y **la tanda de hoy aporta `19` pasos**.
-
-| capitulo | fichas | pasos escritos | pasos PUENTE, contados por mi | `PASOS INVENTADOS` |
-|---|---|---|---|---|
-| **`cap_04`, tanda de la vuelta `50`** | **`3`** | **`19`** | **`0`** | **`0,00` por ciento** |
-
-**COMO LA CUENTO Y QUE LIMITE TIENE:** los `19` pasos los he leido uno a uno contra su renglon en
-las tablas de `5.1`, `5.2` y `5.3`, y la casilla `PUENTE` sale de esa lectura mia. `AUDITOR_FORJA.md`
-`8.3` me obliga a decir hasta donde llega mi firma: **firmo los `19` de esta tanda**, y **no firmo
-la fila del capitulo entero**, porque los `137` pasos de las `19` fichas anteriores los leyeron las
-vueltas `46` a `49` y esta fase no los vuelve a abrir. Por debajo del tope de `10` por ciento de
-`8.1`, con lo cual el volumen del tramo siguiente no baja de escalon por esta cifra.
+`LECTURA`: **los dos son marco y no contenido**, asi que mi `0` PUENTE se sostiene; pero los marco
+porque si un lector estricto los tumba, **caen dentro de lo que yo mismo marque** y no fuera.
 
 ---
 
-## 6. LA FRONTERA DE `cap_04`, CORRIDA POR MI EN ESTA FASE
+# AC.6. **MI CLASE PARA CADA PAR, ADJUDICADA LEYENDO LOS PASOS Y NO LA SENIAL** (`D.19`, vara 6.1)
 
-    $ python .v46/frontera.py | tail -8
-    | `L315 a L315` | 92 | **1** | P41 RESPUESTAS ESTANDAR a las interrupciones que se repiten, y su delegacion | `315:There are better ways. Let's apply a production concept. Manufac` |
-    | `L317 a L317` | 74 | **1** | P42 AGRUPAR LAS INTERRUPCIONES en las reuniones regulares en vez de atenderlas al azar | `317:Also, if you use the production principle of batching-that is, h` |
-    | `L319 a L319` | 67 | **0** | P43 el banco de indicadores para responder rapido: ese objeto ya vive entero en cap_03, P.19 | `319:The use of indicators, especially the bank of indicators kept ov` |
-    | `L321 a L323` | 201 | **1** | P44 EL CARTEL EN LA PUERTA Y LA HORA DE OFICINA ABIERTA, con el texto del cartel dado por el libro | `321:If the people who interrupt you knew how much they were disturbi` |
-    | | **8846** | **22** | **el cuerpo entero de cap_04, cero lineas sin cubrir y cero solapes** | |
+**EN QUE ORDEN LO HICE, Y LO DIGO PORQUE IMPORTA:** los seis candidatos hablan de la reunion
+individual y de la reunion de proceso, y el grafo ya trae reuniones individuales de otro libro. Asi
+que **abri los nodos del grafo y les lei los pasos enteros ANTES de que mi barrido terminase**. La
+senial dijo despues donde mirar, y esta en `AC.7`. **La clase la pongo por la lectura.**
 
-    $ python -c "leo TRAMOS de .v46/frontera.py y sumo la columna de nodos"
-    piezas: 44   piezas con nodo: 21   nodos que la frontera predice: 22
+## AC.6.a. Los tres nodos del grafo que hablan de la misma reunion
 
-    $ python -c "mapeo de cada ficha de cap_04 a la PIEZA que declara"
-    P7    L145 a L147  reunir_informacion_gerencial_vias_variadas.json
-    P9    L153 a L153  escalonar_fuentes_informacion_gerencial.json
-    P10   L155 a L157  programar_visita_area_observar_despachar.json
-    P11   L159 a L159  transmitir_objetivos_prioridades_preferencias.json
-    P13   L167 a L167  empujar_persona_reunion_direccion_preferida.json
-    P18   L195 a L201  subir_productividad_gerencial_tres_vias.json
-    P19   L203 a L213  buscar_actividad_alta_palanca_tres_vias.json
-    P20   L215 a L217  elegir_momento_actividad_palanca_maxima.json
-    P21   L219 a L219  detectar_palanca_negativa_actividad_mando.json
-    P27   L243 a L249  delegar_tarea_base_comun_seguimiento.json
-    P29   L253 a L255  supervisar_tarea_delegada_etapa_menor_valor.json
-    P30   L257 a L257  supervisar_decision_delegada_preguntas_concretas.json
-    P32   L267 a L267  identificar_paso_limitante_jornada_desfases.json
-    P33   L269 a L271  agrupar_tareas_semejantes_aprovechar_preparacion.json
-    P34   L273 a L285  decir_no_trabajo_excede_capacidad.json
-    P34   L273 a L285  usar_calendario_herramienta_planificacion_produccion.json
-    P36   (L289)       llevar_inventario_proyectos_discrecionales.json
-    P38   L293 a L301  dimensionar_numero_subordinados_medio_dia_semanal.json
-    P39   L303 a L307  buscar_regularidad_bloques_iguales_trabajo_mando.json
-    P41   L315 a L315  preparar_respuestas_estandar_interrupciones_repetidas.json
-    P42   L317 a L317  agrupar_interrupciones_subordinados_reuniones_regulares.json
-    P44   L321 a L323  canalizar_interrupciones_cartel_hora_oficina.json
-    fichas de cap_04: 22
-    piezas distintas: 21  piezas con 2 fichas: ['P34']
+    $ python .v51aud/10_vecinos_zhuo.py
+    dirigir_reunion_individual_semanal         en el grafo: SI   libro: zhuo_manager   pasos: 10
+    preguntar_conducir_reunion_individual      en el grafo: SI   libro: zhuo_manager   pasos: 7
+    auditar_calendario_reuniones_semana        en el grafo: SI   libro: zhuo_manager   pasos: 10
+    
+    EL PAR QUE SE CONTRADICE, LOS DOS PASOS IMPRESOS DE SU FICHERO:
+      paso 1 de cubrir_indicadores_problemas_reunion_individual (cuarentena, cap_05 L43):
+        Empieza por las cifras de rendimiento, o sea los indicadores que usa el subordinado, como los ritmos de pedidos entrantes, la produccion o el estado de los proyectos.
+      paso 4 de dirigir_reunion_individual_semanal (dataset/nodos.jsonl, zhuo_manager):
+        Centrala en tu persona a cargo y en lo que la ayudaria a tener mas exito, no en ti y en lo que tu necesitas. Si lo que buscas es un parte de situacion, usa otro canal: el tiempo a solas es escaso y se aprovecha mejor en los temas que son mas dificiles de tratar en grupo o por correo.
 
-Las salidas miden: la tabla de tramos que `.v46/frontera.py` imprime hoy sobre
-`fuentes/grove_high_output/cap_04.md`; la suma de su columna de nodos; y la pieza que declara cada
-ficha de `cap_04` que vive hoy en la bandeja o en `_insertados`.
+Esa salida mide tres cosas: que los tres ids que las fichas de `cap_05` nombran como vecinos del
+grafo estan en `dataset/nodos.jsonl`, el libro y los pasos de cada uno, y el texto literal de dos
+pasos, uno de un candidato de hoy y otro del nodo del grafo, impresos de sus respectivos ficheros.
 
-`LECTURA`: **la frontera predice `22` nodos repartidos en `21` piezas, porque `P34` da dos, y en la
-bandeja hay `22` fichas repartidas en esas mismas `21` piezas, con `P34` dando dos.** La fila `P21`
-del mapeo sale de que `detectar_palanca_negativa_actividad_mando` se arma con `P21` y `P24` y lo
-declara como frontera interna, que es lo mismo que la frontera de la vuelta `46` escribe de `P21`.
-**Reproduzco el `22 de 22` del asunto del commit al digito, contando yo y sin mirar el reporte**, y
-el cuerpo del capitulo sale con cero lineas sin cubrir y cero solapes.
+`LECTURA`: **los tres estan y los tres vienen de `zhuo_manager`**, asi que las tres aristas que las
+fichas declaran hacia el grafo apuntan a nodos que existen. **Una busqueda negativa no se puede
+citar** (`1.1`), y esta es positiva: los abri y los lei.
+
+## AC.6.b. **LO QUE DECIDE, PAR POR PAR**, con la vara de `6.1` y su fila citada
+
+| par | lo que el hijo trae que la madre no | mi clase | fila de la vara |
+|---|---|---|---|
+| `fijar_frecuencia_reunion_individual_madurez_tarea` contra `dirigir_reunion_individual_semanal` | **un CRITERIO y una frecuencia VARIABLE** (madurez relevante para la tarea, semanal con el inexperto, cada pocas semanas con el veterano) donde el del grafo pone **un suelo fijo** (*no menos de una por semana*) | **SANO, y FRONTERA DECLARADA** | *DOS DOCTRINAS LEGITIMAS NO SON DUPLICADO: son FRONTERA DECLARADA* |
+| `fijar_duracion_lugar_reunion_individual` contra `dirigir_reunion_individual_semanal` | **una hora de suelo y el SITIO** (el area de trabajo del subordinado, con las cuatro cosas que ahi se ven) donde el del grafo pone **treinta minutos, y el sitio no aparece en sus diez pasos** (`AC.6.d`) | **SANO, y FRONTERA DECLARADA** | la misma, y ademas *NO TIENE BASCULA*: lo que queda fuera es procedimiento en los dos lados |
+| `preparar_guion_reunion_individual_subordinado` contra `dirigir_reunion_individual_semanal` | **QUIEN prepara y con que artefacto** (el guion lo prepara el subordinado, con la razon aritmetica de los ocho) donde el del grafo **reparte la preparacion entre los dos** y da cuatro ideas de contenido | **SANO, y FRONTERA DECLARADA** | *TIENE DIRECCION*: pregunto que anade el hijo a la madre |
+| `cubrir_indicadores_problemas_reunion_individual` contra `preguntar_conducir_reunion_individual` | **los ASUNTOS que se cubren** (indicadores, lo ocurrido desde la anterior, el problema potencial) donde el del grafo pone **las preguntas del que dirige**, en tres grupos | **SANO** | *NOMBRAR NO ES PROCEDIMENTAR*, y los dos traen procedimiento propio |
+| `infundir_regularidad_reunion_proceso` contra `agrupar_interrupciones_subordinados_reuniones_regulares` (bandeja, `cap_04`) | **el DISENO de la reunion** para que la regularidad exista, donde el de la bandeja **agrupa las interrupciones** en una reunion que ya es regular | **SANO** | *LA ARISTA NO EXCULPA*: hay relacion y no hay paso comun |
+| `usar_tres_clases_reunion_proceso` contra `subir_productividad_gerencial_tres_vias` (bandeja, `cap_04`) | **la cuenta y los nombres de las tres reuniones de proceso**, que no son las tres vias de la productividad | **SANO** | *DOS DOCTRINAS LEGITIMAS*, y ademas la senial los deja en `0.3061`, por debajo del umbral |
+| los `15` pares internos de los seis entre si | cada uno trae su propia pregunta del libro: que infundir, cuales son las tres, cada cuanto, cuanto y donde, de quien es, y que se trata | **SANO los `15`: son HERMANOS** | *DOS DOCTRINAS LEGITIMAS NO SON DUPLICADO* |
+
+`LECTURA`: **mi clase es `SANO` en los `21` pares que mire, y en ninguno leo un `REPITE`.** Lo que
+hay entre los seis y los tres del grafo **no es duplicado: son dos libros que mandan cosas
+distintas sobre la misma reunion**, y eso la vara manda escribirlo como frontera, no fundirlo.
+
+### AC.6.c. **LA FRONTERA QUE ENCUENTRO Y QUE SU PROPIA FICHA NO NOMBRA**
+
+**El par es `cubrir_indicadores_problemas_reunion_individual` contra `dirigir_reunion_individual_semanal`.** Lo mido antes de leerlo:
+
+    $ python .v51aud/11_quien_nombra_a_quien.py
+    infundir_regularidad_reunion_proceso               dirigir_reun:0  preguntar_co:0  auditar_cale:1
+    usar_tres_clases_reunion_proceso                   dirigir_reun:1  preguntar_co:1  auditar_cale:0
+    fijar_frecuencia_reunion_individual_madurez_tarea  dirigir_reun:1  preguntar_co:1  auditar_cale:0
+    fijar_duracion_lugar_reunion_individual            dirigir_reun:1  preguntar_co:0  auditar_cale:0
+    preparar_guion_reunion_individual_subordinado      dirigir_reun:1  preguntar_co:0  auditar_cale:0
+    cubrir_indicadores_problemas_reunion_individual    dirigir_reun:0  preguntar_co:1  auditar_cale:0
+
+Esa salida mide cuantas veces el fichero de cada candidato de `cap_05` escribe el id de cada uno de
+los tres vecinos del grafo.
+
+**LO QUE LOS DOS TEXTOS DICEN, uno al lado del otro y sin mi opinion en medio:**
+
+    EL PAR QUE SE CONTRADICE, LOS DOS PASOS IMPRESOS DE SU FICHERO:
+      paso 1 de cubrir_indicadores_problemas_reunion_individual (cuarentena, cap_05 L43):
+        Empieza por las cifras de rendimiento, o sea los indicadores que usa el subordinado, como los ritmos de pedidos entrantes, la produccion o el estado de los proyectos.
+      paso 4 de dirigir_reunion_individual_semanal (dataset/nodos.jsonl, zhuo_manager):
+        Centrala en tu persona a cargo y en lo que la ayudaria a tener mas exito, no en ti y en lo que tu necesitas. Si lo que buscas es un parte de situacion, usa otro canal: el tiempo a solas es escaso y se aprovecha mejor en los temas que son mas dificiles de tratar en grupo o por correo.
+
+`LECTURA`: **los dos nodos mandan cosas contrarias sobre con que se empieza la misma reunion**: uno
+manda empezar por los indicadores y el estado de los proyectos, y el del grafo manda sacar el parte
+de situacion de esa reunion y llevarlo a otro canal. **De las siete fronteras que mire, esta es la
+que leo como contradiccion en el acto de apertura, y las otras seis son suelos distintos o repartos
+distintos**, que es otra cosa. Las siete, enteras y sin recortar: (`1`) esta, indicadores contra
+parte de situacion; (`2`) el suelo de duracion, `una hora` contra `treinta minutos`; (`3`) el suelo
+de frecuencia, variable contra fijo; (`4`) quien prepara, el subordinado contra los dos; (`5`) las
+preguntas del que dirige contra los asuntos que se cubren; (`6`) el diseno de la reunion contra la
+tanda de interrupciones; (`7`) las tres clases de reunion contra las tres vias de la productividad.
+**Y la ficha de `cap_05` que la protagoniza es la que NO nombra a ese vecino**, como acaba de medir
+el instrumento de arriba: `dirigir_reun:0`.
+
+### AC.6.d. La celda que dice que el nodo del grafo no pone sitio, medida
+
+    $ python .v51aud/31_sitio_zhuo.py
+    pasos del nodo: 10
+      'oficina  ' aparece en sus pasos: 0
+      'despacho ' aparece en sus pasos: 0
+      'area     ' aparece en sus pasos: 0
+      'sitio    ' aparece en sus pasos: 0
+      'lugar    ' aparece en sus pasos: 0
+      'sala     ' aparece en sus pasos: 0
+      'mesa     ' aparece en sus pasos: 0
+      'donde    ' aparece en sus pasos: 1
+
+Esa salida mide cuantas veces aparece cada palabra de sitio en los diez pasos del nodo
+`dirigir_reunion_individual_semanal` del grafo.
+
+`LECTURA`: **de las ocho palabras de sitio, siete dan `0` y `donde` da `1`**, y ese `donde` esta en
+su paso `3` (*temas que de otro modo no saldrian nunca*), que no es un sitio de reunion. Por eso la
+celda de `AC.6.b` dice que el sitio no aparece en sus pasos, **y por eso lo que `P12` trae del lado
+del sitio no lo repite nadie**.
+
+**QUE NO HAGO CON ESTO, Y POR QUE**: no la llamo caida de nadie en esta pagina. `D.56` congela la
+doctrina, la sede de un veredicto es `bitacora/VEREDICTOS.jsonl` y ahi hoy no puede llegar nada
+porque la puerta de `D.39` esta cerrada, y mi propia adjudicacion de `d027` dice que **una ficha de
+cuarentena no es sede de `5.2`**. **Lo que hago es dejarla medida aqui**, comparar con lo que el
+reporte diga cuando el arnes me lo exponga, y anotarla en `DEUDA.jsonl` en mi turno normal para que
+se lea el dia del cableado con los dos textos delante.
+
 ---
 
-## 7. LAS DOS DEUDAS QUE LA VUELTA DICE HABER PAGADO: **UNA SALE PAGADA Y LA OTRA SE ROMPE A SI MISMA**
+# AC.7. **EL BARRIDO DE VECINOS SOBRE GRAFO MAS BANDEJAS** (`D.38.4`), CORRIDO POR MI EN ESTA FASE
 
-Los nueve ficheros que el `git diff` de la seccion `4` marca como modificados llevan dentro una
-marca de correccion declarada de esta vuelta. Esto es lo que cuento:
+Lo corro con el instrumento de la casa, **una ficha por proceso**, y la senial la calcula
+`src.aduana.senal_similitud_texto` sobre `comun.texto_comparable`, que es la misma funcion que corre
+la aduana: **no reimplemento la senial y no la aproximo.** La poblacion es `dataset/nodos.jsonl` mas
+lo que espera en las bandejas, descartando `_insertados` y `_derivadas`.
 
-    $ python -c "fichas con la marca CORRECCION DECLARADA DE LA VUELTA 50"
-      1  buscar_actividad_alta_palanca_tres_vias.json
-      1  dimensionar_numero_subordinados_medio_dia_semanal.json
-      1  elegir_momento_actividad_palanca_maxima.json
-      1  empujar_persona_reunion_direccion_preferida.json
-      1  escalonar_fuentes_informacion_gerencial.json
-      1  programar_visita_area_observar_despachar.json
-      1  reunir_informacion_gerencial_vias_variadas.json
-      1  subir_productividad_gerencial_tres_vias.json
-      1  transmitir_objetivos_prioridades_preferencias.json
-    total de marcas: 9
+    $ python .v49aud/07_barrido.py <ficha>   (seis corridas, una por candidato)
+    $ python .v51aud/29_tallado_barrido.py   (el tallado de las seis salidas)
+    ficha                                               pobl  reloj s   sobre  el vecino mas proximo y su digito
+    infundir_regularidad_reunion_proceso                 399    625.1       3  0.3699 preparar_guion_reunion_individual_subord
+    usar_tres_clases_reunion_proceso                     399    676.3       0  0.3359 infundir_regularidad_reunion_proceso
+    fijar_frecuencia_reunion_individual_madurez_tarea    399   1032.1       4  0.5492 fijar_duracion_lugar_reunion_individual
+    fijar_duracion_lugar_reunion_individual              399    964.0       3  0.5501 fijar_frecuencia_reunion_individual_madu
+    preparar_guion_reunion_individual_subordinado        399   1028.4       4  0.5222 cubrir_indicadores_problemas_reunion_ind
+    cubrir_indicadores_problemas_reunion_individual      399   1144.9       3  0.5298 preparar_guion_reunion_individual_subord
+    
+    suma de los seis relojes: 5470.8 s  (91.2 min)
+    ficheros de salida enteros: 6
 
-La salida mide cuantas veces aparece la cadena `CORRECCION DECLARADA DE LA VUELTA 50` dentro del
-campo `resumen_teorico` de cada `json` de `cuarentena/grove_high_output/`: una marca en cada uno de
-nueve ficheros, nueve marcas en total.
+Esa salida mide, para cada uno de los seis candidatos, la poblacion barrida, el reloj de su barrido,
+cuantos vecinos quedan por encima del umbral de la casa, y el vecino de cabeza con su digito. Las
+seis salidas enteras, con sus ocho vecinos cada una, estan en `.v51aud/04_barrido_*.out`.
 
-### 7.1. `d036`, LAS OCHO CIFRAS DE PALABRAS: **PAGADA, Y LAS OCHO CAEN EN MI PROPIO RECUENTO**
+`LECTURA`: **la poblacion que barri son `399` nodos en las seis corridas**, que es `346` del grafo
+mas las bandejas con filtro canonico, y **los `17` levantamientos por encima del umbral son los
+`17` pares de los seis candidatos entre si**: `3`, `0`, `4`, `3`, `4` y `3`. **Ni un nodo del grafo
+aparece en las seis listas de cabeza.**
 
-    $ python -c "toda CORRECCION DECLARADA DE LA VUELTA 50 con su cifra, contra wc -w del tramo"
-    OK   P19  L203-L213  vieja  118 -> nueva   76   wc -w   76  buscar_actividad_alta_palanca_tres_vias
-    OK   P20  L215-L217  vieja  297 -> nueva  237   wc -w  237  elegir_momento_actividad_palanca_maxima
-    OK   P13  L167-L167  vieja  174 -> nueva  147   wc -w  147  empujar_persona_reunion_direccion_preferida
-    OK   P9   L153-L153  vieja  208 -> nueva  183   wc -w  183  escalonar_fuentes_informacion_gerencial
-    OK   P10  L155-L157  vieja  337 -> nueva  236   wc -w  236  programar_visita_area_observar_despachar
-    OK   P7   L145-L147  vieja  356 -> nueva  210   wc -w  210  reunir_informacion_gerencial_vias_variadas
-    OK   P18  L195-L201  vieja   62 -> nueva   60   wc -w   60  subir_productividad_gerencial_tres_vias
-    OK   P11  L159-L159  vieja  197 -> nueva  160   wc -w  160  transmitir_objetivos_prioridades_preferencias
-    ---
-    correcciones de palabras de la vuelta 50 halladas: 8
+## AC.7.a. **LOS DIECIOCHO PARES CRUZADOS DE LIBRO, MEDIDOS UNO A UNO**, porque la lista de cabeza no los trae
 
-    $ python -c "cada cifra de palabras declarada en las fichas de cap_04 contra wc -w del tramo"
-    cifras de palabras comprobadas: 23   coinciden: 15   no coinciden: 8
+La lectura de `AC.6` adjudica frontera contra tres nodos de `zhuo_manager`. Si el barrido no los
+levanta, **eso hay que medirlo y no suponerlo**:
 
-La salida de arriba mide, para las ocho correcciones que dicen `TIENE QUE LEERSE N palabras`, la
-cifra vieja, la cifra nueva y el recuento que yo hago del mismo rango de `cap_04.md` con el mismo
-metodo de `wc -w`. La salida de abajo mide las `23` cifras de palabras que aparecen en las `22`
-fichas de `cap_04` contadas contra ese mismo recuento: `15` coinciden y `8` no.
+    $ python .v51aud/28_pares_cruzados.py
+    candidato de cap_05                                nodo del grafo (zhuo_manager)            senial pasa el umbral 0.35
+    fijar_frecuencia_reunion_individual_madurez_tarea  dirigir_reunion_individual_semanal       0.0808 no
+    fijar_frecuencia_reunion_individual_madurez_tarea  preguntar_conducir_reunion_individual    0.1272 no
+    fijar_frecuencia_reunion_individual_madurez_tarea  auditar_calendario_reuniones_semana      0.0996 no
+    fijar_duracion_lugar_reunion_individual            dirigir_reunion_individual_semanal       0.0617 no
+    fijar_duracion_lugar_reunion_individual            preguntar_conducir_reunion_individual    0.1619 no
+    fijar_duracion_lugar_reunion_individual            auditar_calendario_reuniones_semana      0.1418 no
+    preparar_guion_reunion_individual_subordinado      dirigir_reunion_individual_semanal       0.0661 no
+    preparar_guion_reunion_individual_subordinado      preguntar_conducir_reunion_individual    0.0963 no
+    preparar_guion_reunion_individual_subordinado      auditar_calendario_reuniones_semana      0.1314 no
+    cubrir_indicadores_problemas_reunion_individual    dirigir_reunion_individual_semanal       0.1125 no
+    cubrir_indicadores_problemas_reunion_individual    preguntar_conducir_reunion_individual    0.0881 no
+    cubrir_indicadores_problemas_reunion_individual    auditar_calendario_reuniones_semana      0.1196 no
+    infundir_regularidad_reunion_proceso               dirigir_reunion_individual_semanal       0.1424 no
+    infundir_regularidad_reunion_proceso               preguntar_conducir_reunion_individual    0.1114 no
+    infundir_regularidad_reunion_proceso               auditar_calendario_reuniones_semana      0.1715 no
+    usar_tres_clases_reunion_proceso                   dirigir_reunion_individual_semanal       0.0770 no
+    usar_tres_clases_reunion_proceso                   preguntar_conducir_reunion_individual    0.1212 no
+    usar_tres_clases_reunion_proceso                   auditar_calendario_reuniones_semana      0.1083 no
 
-`LECTURA`: **las ocho cifras nuevas caen en mi recuento al digito**, y son las ocho que mi acta
-anterior desenterro. Las `8` que salen como `no coinciden` en la segunda salida son **las frases
-viejas que siguen en pie**, y siguen en pie porque una correccion declarada **no borra el texto
-viejo**, que es lo que el manual manda. Las tres cifras nuevas de esta tanda (`92` de `P41`, `74`
-de `P42` y `201` de `P44`) tambien caen en mi recuento y en la frontera de la seccion `6`. **`d036`
-sale PAGADA**, y la pago el extractor antes de la insercion, que era el plazo que la deuda ponia.
+Esa salida mide la senial de la casa entre cada uno de los seis candidatos de `cap_05` y cada uno de
+los tres nodos del grafo que vienen de `zhuo_manager`, y si pasa el umbral.
 
-### 7.2. `d038`, LA CITA DE METODO: **EL PAGO REPRODUCE EL DEFECTO QUE VENIA A CERRAR**
+`LECTURA`, y es la que me hace cambiar de opinion sobre esta tanda: **los `18` pares cruzados
+de libro se quedan entre `0,0617` y `0,1715`, y el umbral esta en `0,35`: la maquina NO levanta ni
+uno.** De ahi salen dos cosas que van en direcciones contrarias y las escribo las dos:
 
-Esto es lo que la deuda pedia, pegado de su sede:
+1. **A FAVOR DE LA VUELTA:** las cuatro fichas del uno a uno **declararon su arista de contraste
+   contra `zhuo_manager` sin que ninguna senial se lo pidiera** (`AC.6.c` lo mide: `dirigir_reun:1`
+   en `P11`, `P12` y `P13`, `preguntar_co:1` en `P14`). Eso es leer los vecinos en vez de obedecer a
+   la maquina, que es lo que `D.19` y el principio `4` del manual mandan.
+2. **CONTRA LA VUELTA, Y ES LA MISMA MEDIDA:** la frontera de `AC.6.c` mide **`0,1125`**, y dos
+   pares de hermanos que dicen cosas distintas miden **`0,5501`** y **`0,5298`**. **La senial ordena
+   por como esta escrito el texto, no por lo que el texto manda hacer**, asi que el par que se
+   contradice en su acto de apertura es de los que la maquina deja abajo. **Por eso la omision de
+   `P14` no la cazan los tres instrumentos que corri en esta pagina** (el barrido de vecinos de
+   `AC.7`, la senial de los pares cruzados de `AC.7.a` y el bloque de vigencia de `AC.9.d`), **y por
+   eso la dejo escrita aqui.**
 
-    $ python -c "d038 de docs/loop/DEUDA.jsonl"
-    "que": "LA FICHA DE P38 (dimensionar_numero_subordinados_medio_dia_semanal) LLEVA DENTRO
-    UNA CITA DE METODO QUE YA NO REPRODUCE: cita grep -l PIEZA P34 cuarentena/grove_high_output/*.json
-    como prueba de que P34 es madre de dos fichas, y ese comando devuelve hoy TRES porque la
-    propia ficha pasa a contener la cadena. El comando preciso, grep -l 'Sale de la PIEZA P34',
-    sigue dando dos."
+---
 
-Y esto es lo que la vuelta `50` escribe como pago, en dos sedes. En `docs/loop/DEUDA.jsonl`:
+# AC.8. LAS TRES FICHAS QUE LA VUELTA CORRIGIO, Y SI LA CORRECCION BORRO ALGO
 
-    "como": "PAGADA en la vuelta 50, LL.3.c: ... El comando pasa a ser grep -l 'Sale de la
-    PIEZA P34', medido hoy en 2 fichas contra las 3 del ancho (.v50/d038_grep.txt)."
+Mi encargo pedia tres correcciones declaradas **sin borrar** (`d044`, `d045`, `d046`, manual
+principio `6`). Eso se puede medir sin leer una linea de prosa: **si nada se borro, el texto viejo
+tiene que seguir siendo un PREFIJO exacto del nuevo.**
 
-Y dentro del `resumen_teorico` de la propia ficha:
+    $ python .v51aud/20_sin_borrar.py
+    dimensionar_numero_subordinados_medio_dia_semanal        viejo 11576 chars, nuevo 13648, crece  2072, el viejo es PREFIJO del nuevo: True
+    buscar_regularidad_bloques_iguales_trabajo_mando         viejo  6169 chars, nuevo  7997, crece  1828, el viejo es PREFIJO del nuevo: True
+    preparar_respuestas_estandar_interrupciones_repetidas    viejo  6267 chars, nuevo  8242, crece  1975, el viejo es PREFIJO del nuevo: True
 
-    CORRECCION DECLARADA DE LA VUELTA 50, SIN BORRAR LA LINEA VIEJA ...: donde esta ficha dice
-    mas arriba comprobado hoy con grep -l 'PIEZA P34' sobre la bandeja, TIENE QUE LEERSE
-    comprobado con grep -l 'Sale de la PIEZA P34' sobre la bandeja. ... El comando preciso
-    sigue devolviendo DOS, que son las dos fichas que de verdad salen de P34. LOS DOS RENGLONES
-    DEL INSTRUMENTO, pegados (.v50/d038_grep.txt): grep -l 'PIEZA P34' da 3 fichas (...);
-    grep -l 'Sale de la PIEZA P34' da 2 fichas (decir_no_trabajo_excede_capacidad,
-    usar_calendario_herramienta_planificacion_produccion). Y LA LECCION, que es la que vale mas
-    que la linea: una cita de metodo escrita DENTRO del objeto que mide deja de reproducirse en
-    cuanto el objeto entra en la poblacion que el metodo barre.
+    dimensionar_numero_subordinados_medio_dia_semanal        claves que cambian: ['resumen_teorico']
+    buscar_regularidad_bloques_iguales_trabajo_mando         claves que cambian: ['resumen_teorico']
+    preparar_respuestas_estandar_interrupciones_repetidas    claves que cambian: ['resumen_teorico']
 
-**Y ESTO ES LO QUE ESE COMANDO DEVUELVE HOY, CORRIDO POR MI SOBRE EL ARBOL QUE EL EXTRACTOR
-COMMITEO:**
+Esa salida mide, para cada una de las tres fichas corregidas, el tamano de su `resumen_teorico` en
+el commit de apertura de la vuelta 51 y hoy, si el viejo es prefijo literal del nuevo, y que claves
+del fichero cambian entre las dos versiones.
 
-    $ grep -l "Sale de la PIEZA P34" cuarentena/grove_high_output/*.json | wc -l
-    3
+`LECTURA`: **las tres correcciones anaden y no borran**, medido y no creido; y **la clave que cambia
+es `resumen_teorico` y nada mas**, asi que ni un paso, ni una atribucion, ni un titulo se movieron.
+Eso es exactamente lo que mi `TAREA 3` compro cuando adjudico que esas dos correcciones no pagaban
+una pasada de aduana: **un cambio que no toca un paso no mueve un vecino**, y aqui se puede
+comprobar que no toco ninguno.
 
-    $ grep -l "Sale de la PIEZA P34" cuarentena/grove_high_output/*.json
+## AC.8.a. **`d044`: EL PAGO QUE MI ACTA DIJO QUE ROMPIA SU PROPIO PAGO**
+
+La vuelta 50 escribio dentro de la ficha el comando preciso, y con ello metio la cadena del comando
+en la ficha que el comando barre. Corro el comando hoy, sobre el arbol ya corregido:
+
+    $ grep -rl "Sale de la PIEZA P34" cuarentena/ docs/
     cuarentena/grove_high_output/decir_no_trabajo_excede_capacidad.json
     cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json
     cuarentena/grove_high_output/usar_calendario_herramienta_planificacion_produccion.json
+    docs/loop/ACTA_AUDITOR.md
+    docs/loop/DEUDA.jsonl
+    docs/loop/PROMPT_SIGUIENTE.md
 
-    $ grep -l "PIEZA P34" cuarentena/grove_high_output/*.json | wc -l
-    3
+Esa salida mide que ficheros de `cuarentena/` y de `docs/` contienen hoy la cadena que el pago de la
+vuelta 50 uso como comando.
 
-La salida mide cuantos ficheros de `cuarentena/grove_high_output/` contienen hoy la cadena `Sale de
-la PIEZA P34`, y cuales: son `3`, y el tercero es la propia ficha
-`dimensionar_numero_subordinados_medio_dia_semanal.json`. El comando ancho tambien da `3`.
+`LECTURA`: **el comando sigue devolviendo `3` fichas de la bandeja y no `2`**, o sea que el defecto
+que mi `ACTA 49` midio **sigue midiendose igual**. Y eso **NO es un pago roto esta vez**, por lo que
+la ficha hace con ello, que es lo contrario de afinar el comando:
 
-`LECTURA`: **el pago de `d038` escribio dentro de la ficha el comando preciso, y al escribirlo metio
-la cadena `Sale de la PIEZA P34` en la propia ficha, asi que el comando preciso devuelve `3` como
-devolvia `3` el comando ancho.** El defecto que `d038` nombra es *una cita de metodo escrita DENTRO
-del objeto que mide deja de reproducirse en cuanto el objeto entra en la poblacion que el metodo
-barre*, **y esa frase viaja dentro de la oracion que la vuelve falsa**. El pago cambio el comando y
-conservo el mecanismo.
+    $ (cola del resumen_teorico de la ficha de P38, .v51aud/17_p38_cola.out, recortada por mi a sus dos frases de cierre)
+    LA AFIRMACION, ESCRITA CON SUS DOS IDS Y SIN NINGUN COMANDO: la pieza P34 de la frontera de
+    cap_04 publicada en la vuelta 46 (HH.2.c) es la madre de DOS fichas de la bandeja de
+    grove_high_output, y son estas dos, nombradas una a una: decir_no_trabajo_excede_capacidad y
+    usar_calendario_herramienta_planificacion_produccion.
+    COMO SE COMPRUEBA SIN BARRER NADA: cada una de esas dos fichas declara su pieza de origen en la
+    primera linea de su propio resumen_teorico.
 
-**QUE NO CAMBIA, y lo digo para no cargar de mas:** la afirmacion de fondo sigue siendo cierta y
-la reproduzco en la seccion `6`, donde el mapeo ensena que `P34` es madre de
-`decir_no_trabajo_excede_capacidad` y de `usar_calendario_herramienta_planificacion_produccion` y de
-ninguna otra. **Lo que falla es la cifra publicada y la declaracion de pago**, no el reparto de la
-frontera.
+Ese pegado es el texto que la ficha de `P38` tiene hoy en la cola de su `resumen_teorico`, cortado
+por mi a las dos frases que dicen que hacer, y lo declaro cortado.
 
-**DONDE VIVE LA CIFRA, que es lo que `5.2` manda mirar antes de nombrar la especie:**
+**ASI QUE CORRO LA COMPROBACION QUE LA PROPIA FICHA PROPONE**, que es la prueba de si el pago cierra:
 
-| sede | que dice | que mide el instrumento de hoy |
+    $ python .v51aud/18_comprobacion_d044.py
+    decir_no_trabajo_excede_capacidad
+       UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_04.md, unidad Cap. 3, titulo textual Managerial Leverage. Sale de la PIEZA P34 de la frontera publicada en la vuelta 46 (H
+
+    usar_calendario_herramienta_planificacion_produccion
+       UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_04.md, unidad Cap. 3, titulo textual Managerial Leverage. Sale de la PIEZA P34 de la frontera publicada en la vuelta 46 (H
+
+    dimensionar_numero_subordinados_medio_dia_semanal
+       UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_04.md, unidad Cap. 3, titulo textual Managerial Leverage. Sale de la PIEZA P38 de la frontera publicada en la vuelta 46 (H
+
+    fichas cuya PRIMERA frase declara 'Sale de la PIEZA P34': 2
+    fichas cuya PRIMERA frase declara 'Sale de la PIEZA P38': 1
+
+Esa salida mide la cabecera del `resumen_teorico` de las tres fichas, y cuantas fichas de la bandeja
+entera declaran cada una de esas dos piezas **en su frase de cabecera**.
+
+`LECTURA`: **el metodo que la ficha propone da `2` y `1`, y da `2` y `1` sobre la bandeja de hoy, que
+ya tiene `50` fichas**. La diferencia con el metodo viejo no es de afinado: **el viejo contaba
+coincidencias en cualquier parte del fichero y por eso se contaba a si mismo; el nuevo ancla en la
+frase de cabecera, que es la que declara el origen**, y una cita de metodo escrita en la cola de
+otra ficha ya no lo ensucia. **Mi lectura es que `d044` SI cierra**, y lo que queda dentro de la
+ficha son las dos lineas viejas en pie, que es lo que el principio `6` manda.
+
+**LO QUE NO PUEDO COMPROBAR EN ESTA FASE, Y LO ESCRIBO EN VEZ DE AFIRMARLO**: la ficha dice que el
+metodo vive a partir de hoy en `REPORTE.md MM.1.c`, **y `REPORTE.md` es uno de los cuatro que el
+arnes retiro**. No se si esa seccion existe ni que pego. **Lo verifico en mi turno normal**, y si
+esa seccion no esta o no trae la salida, entonces el pago se queda sin la mitad que se saco de la
+bandeja.
+
+---
+
+# AC.9. **LAS NUEVE CIFRAS DE SENIAL QUE LAS FICHAS LLEVAN DENTRO, Y POR QUE HOY NO SE REPRODUCEN**
+
+Las fichas de esta tanda escriben su veredicto dentro de si mismas, con el digito de la senial que
+lo levanto. Cuento esos digitos con un instrumento antes de discutir ni uno:
+
+    $ python .v51aud/25_salvedad.py
+    infundir_regularidad_reunion_proceso               digitos declarados: 0   salvedad de version de texto: NINGUNA de las siete buscadas
+    usar_tres_clases_reunion_proceso                   digitos declarados: 0   salvedad de version de texto: NINGUNA de las siete buscadas
+    fijar_frecuencia_reunion_individual_madurez_tarea  digitos declarados: 1   salvedad de version de texto: NINGUNA de las siete buscadas
+    fijar_duracion_lugar_reunion_individual            digitos declarados: 1   salvedad de version de texto: NINGUNA de las siete buscadas
+    preparar_guion_reunion_individual_subordinado      digitos declarados: 3   salvedad de version de texto: NINGUNA de las siete buscadas
+    cubrir_indicadores_problemas_reunion_individual    digitos declarados: 4   salvedad de version de texto: NINGUNA de las siete buscadas
+
+    digitos declarados en la tanda: 9, repartidos en 4 de las 6 fichas
+
+Esa salida mide, por ficha, cuantas veces aparece el patron `similitud de texto 0,ddd` y si el texto
+trae alguna de las siete salvedades que busque sobre contra que version de texto se midio.
+
+`LECTURA`: **hay `9` digitos declarados repartidos en `4` de las `6` fichas, y `0` de los `9` traen
+salvedad de version.**
+
+## AC.9.a. Lo que la senial come, leido del codigo de la casa
+
+    $ grep -n -A 5 "def texto_comparable" src/comun.py
+    190:def texto_comparable(nodo):
+    191-    """Titulo mas resumen mas pasos: el texto que mira la señal 1."""
+    192-    piezas = [nodo.get("titulo") or "", nodo.get("resumen_teorico") or ""]
+    193-    piezas.extend(nodo.get("pasos_accionables") or [])
+    194-    return normalizar_texto(" ".join(piezas))
+
+Esa salida mide que campos del nodo entran en el texto que la senial compara.
+
+`LECTURA`: **el `resumen_teorico` esta dentro del texto que la senial compara.** Y el veredicto con
+su digito **se escribe en ese mismo `resumen_teorico`**, asi que el digito queda escrito dentro del
+objeto del que se calcula.
+
+## AC.9.b. Y esto es lo que da al medirlo
+
+    $ python .v51aud/24_mecanismo_senial.py
+    hijo (el que declara el digito)        vecino                                  ficha     hoy invertido recortado
+    preparar_guion_reunion_individual_subo infundir_regularidad_reunion_proceso    0.416  0.3604    0.3699    0.3685
+    fijar_frecuencia_reunion_individual_ma infundir_regularidad_reunion_proceso    0.385  0.3536    0.3617    0.3130
+    cubrir_indicadores_problemas_reunion_i infundir_regularidad_reunion_proceso    0.391  0.3442    0.3507    0.3577
+    cubrir_indicadores_problemas_reunion_i preparar_guion_reunion_individual_subo  0.432  0.5298    0.5222    0.3521
+    fijar_duracion_lugar_reunion_individua fijar_frecuencia_reunion_individual_ma  0.445  0.5501    0.5492    0.3954
+    
+    umbral de la casa (config/umbrales.json): 0.35
+
+Esa salida mide, para cinco pares que declaran digito: el digito que la ficha escribe, la senial de
+hoy con el candidato como primer argumento, la senial de hoy con los argumentos invertidos, y la
+senial de hoy con las colas de los dos resumenes recortadas en su marcador de bloque.
+
+`LECTURA`, y va en tres piezas porque son tres cosas distintas:
+
+1. **Ni uno de los cinco digitos declarados se reproduce hoy.** Dos se quedan cortos (`0,416` contra
+   `0,3604`; `0,385` contra `0,3536`) y dos se pasan por mucho (`0,432` contra `0,5298`; `0,445`
+   contra `0,5501`).
+2. **La causa esta medida y es el crecimiento del propio resumen:** al recortar las colas, `0,5298`
+   baja a `0,3521` y `0,5501` baja a `0,3954`, o sea **se acercan a lo que la ficha declara**. Cada
+   ficha midio su digito **antes** de escribirse dentro los bloques de veredicto, arista y
+   correccion, y esos bloques entran en el texto que la senial compara.
+3. **La senial NO es simetrica, y eso tiene una consecuencia que se ve en esta tanda:** el par
+   `infundir_regularidad_reunion_proceso` contra `cubrir_indicadores_problemas_reunion_individual`
+   mide `0,3507` desde un lado y `0,3442` desde el otro, **con el umbral en `0,3500` en medio**. El
+   mismo par queda levantado o no segun cual de los dos sea el candidato.
+
+## AC.9.c. **ES LA TERCERA GENERACION DE `d038`, Y LA REGLA QUE LA CUBRE YA ESTA ESCRITA POR LA PROPIA VUELTA**
+
+`d038` fue una cita de metodo escrita dentro del objeto que el metodo barre. `d044` fue su pago, que
+afino el comando y conservo el mecanismo. **Y esto de aqui es la misma figura otra vez**: un
+digito calculado del texto de la ficha, escrito dentro del texto de la ficha. **La frase que lo
+cubre la escribio el pago de `d044` de esta misma vuelta**, y la cito entera porque es suya:
+
+    LA LECCION, ya en su version entera: un comando escrito dentro de su propia poblacion no se
+    arregla afinandolo, se arregla sacandolo.
+
+Ese pegado es la frase de cierre del `resumen_teorico` de la ficha de `P38` en el arbol de hoy.
+
+`LECTURA`: **el digito de la senial es el mismo caso que el comando**, y lo que cambia es que el
+objeto barrido es el texto de la ficha en vez de la carpeta que la contiene. **No abro doctrina con esto** (`D.56` la congela): lo
+dejo medido aqui, lo cruzo con el reporte en mi turno normal, y **lo anoto en `DEUDA.jsonl` con su
+cita**, que es lo que `D.55` manda hacer con lo que no es averia.
+
+### AC.9.d. **Y LA MAQUINA QUE EXISTE PARA ESTO NO LLEGA A LA BANDEJA**, medido
+
+    $ python .v51aud/27_rancios.py
+    rancios que el bloque de vigencia D.15 encuentra hoy: 71
+    libro de los nodos que aparecen en ellos, contados: {'scott_radical_candor': 139, 'zhuo_manager': 2, 'smart_who': 1}
+    alguno de grove_high_output: no
+    
+    infundir_regularidad_reunion_proceso               'huella': 0   'vigencia': 0   'D.15': 0
+    usar_tres_clases_reunion_proceso                   'huella': 0   'vigencia': 0   'D.15': 0
+    fijar_frecuencia_reunion_individual_madurez_tarea  'huella': 0   'vigencia': 0   'D.15': 0
+    fijar_duracion_lugar_reunion_individual            'huella': 0   'vigencia': 0   'D.15': 0
+    preparar_guion_reunion_individual_subordinado      'huella': 0   'vigencia': 0   'D.15': 0
+    cubrir_indicadores_problemas_reunion_individual    'huella': 0   'vigencia': 0   'D.15': 0
+
+Esa salida mide cuantos rancios encuentra hoy el bloque de vigencia `D.15` corriendo
+`forja.py rancios`, de que libro son los nodos que aparecen en ellos, si alguno es de
+`grove_high_output`, y cuantas veces las seis fichas de `cap_05` escriben las palabras `huella`,
+`vigencia` y `D.15`.
+
+`LECTURA`: **`D.15` es la maquina de este problema** (un veredicto emitido contra un texto que ya
+cambio), **y mira `bitacora/VEREDICTOS.jsonl`**, que es donde los veredictos de esta tanda no estan
+todavia porque la puerta de `D.39` esta cerrada. Las seis fichas escriben `0` huellas, asi que el dia
+que lleguen a su sede **no habra huella vieja contra la que comparar el texto**. De los `71` rancios
+de hoy **no hay uno de `grove_high_output`**, asi que esta vuelta no anade rancios.
+
+**Y UNA CAIDA MIA QUE ME CACE A MI MISMO, ESCRITA AQUI PORQUE PASO EN ESTA PAGINA**: mi primer
+borrador de esta seccion escribio *`8` hallazgos*, porque lei la salida de `forja.py rancios` con un
+`tail -n 12` y conte las lineas que vi. **Son `71`**, contadas por el instrumento de arriba. La cifra
+falsa no llego a esta pagina sellada porque la medi antes de cerrarla, **y la dejo escrita porque un
+recorte de salida tomado por el total es exactamente la caida que mi `ACTA 40` ya se cargo una vez**
+(cuatro lineas de un `grep` que daba ocho).
+
+---
+
+# AC.10. EL CORTE QUE MI ENCARGO FIJO, COMPROBADO CONTRA EL ARBOL
+
+Mi encargo de la vuelta 51 fijo seis piezas y dejo `20` nodos fuera *aunque sobre turno*. Eso se
+comprueba contando que piezas trajo la bandeja, y ya esta contado en `AC.5.a`: las piezas son `P6`,
+`P7`, `P11`, `P12`, `P13` y `P14`, y son `6` de `6`. **Cero piezas de `P15` en adelante.**
+
+Y la puerta que el encargo mando medir en vez de heredar, la mido yo:
+
+    $ python -c "..." (las claves de cerrados_en_extraccion de config/frentes.json)
+    libros CERRADOS EN EXTRACCION: ['scott_radical_candor', 'smart_who', 'zhuo_manager']
+    'grove_high_output' entre ellos: no
+
+Esa salida mide que libros declara `config/frentes.json` como cerrados en extraccion, y si
+`grove_high_output` es uno de ellos.
+
+`LECTURA`: **`grove_high_output` no esta entre los tres cerrados en extraccion**, asi que la puerta
+sigue cerrada para este libro y las `50` fichas de su bandeja no pueden entrar al grafo todavia.
+**El *cero inserciones* de esta vuelta es lo que la puerta obliga**, y `AC.3` mide que se cumplio:
+`346` y `740` sin mover.
+
+| lo que el encargo compro | como lo compruebo | sale |
 |---|---|---|
-| `docs/loop/DEUDA.jsonl`, linea de pago de `d038` | `medido hoy en 2 fichas contra las 3 del ancho` | `3` fichas contra `3` del ancho |
-| `cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json`, `resumen_teorico` | `El comando preciso sigue devolviendo DOS` | devuelve `3` |
-| `docs/loop/REPORTE.md`, `LL.3.c` | retirado en esta fase, **no lo he abierto** | **sin medir por mi**, declarado aqui |
-
-`LECTURA`: `docs/loop/DEUDA.jsonl` vive en `docs/`, que la tabla de `5.2` nombra como sede de
-`CIFRA PUBLICADA`. La ficha de cuarentena **no** es sede de `5.2`, por la adjudicacion `d027` que
-mi acta `47` cito. **Traigo el caso medido a mi acta y lo adjudico alli, con el reporte delante**,
-porque la especie depende de si la cifra vive ademas en tabla, cabecera o conclusion del reporte, y
-eso en esta fase no lo puedo abrir. **Lo que si dejo cerrado aqui es la medida**, que no depende del
-reporte: **hoy el comando da `3`.**
-
-### 7.3. LA TERCERA DEUDA QUE MIRO POR MI CUENTA: **`d038` TIENE UNA HERMANA EN LA PROPIA `d036`**
-
-    $ python -c "veces que aparece la cadena de su propia PIEZA dentro de cada ficha corregida"
-    buscar_actividad_alta_palanca_tres_vias              P19 aparece 2 veces
-    dimensionar_numero_subordinados_medio_dia_semanal    P38 aparece 1 veces
-    elegir_momento_actividad_palanca_maxima              P20 aparece 2 veces
-    empujar_persona_reunion_direccion_preferida          P13 aparece 2 veces
-    escalonar_fuentes_informacion_gerencial              P9 aparece 2 veces
-    programar_visita_area_observar_despachar             P10 aparece 2 veces
-    reunir_informacion_gerencial_vias_variadas           P7 aparece 2 veces
-    subir_productividad_gerencial_tres_vias              P18 aparece 2 veces
-    transmitir_objetivos_prioridades_preferencias        P11 aparece 2 veces
-
-La salida mide, en cada una de las nueve fichas corregidas, cuantas veces aparece dentro de su
-`resumen_teorico` la cadena `PIEZA` seguida del rotulo de su propia pieza: dos veces en ocho de
-ellas y una en la novena.
-
-`LECTURA`: **registro y no adjudico** (`D.56`) que las ocho correcciones de `d036` dejan la cadena
-`PIEZA Pnn` escrita dos veces dentro de la misma ficha. Un recuento futuro que cuente piezas
-grepeando ese texto libre sobre la bandeja va a contar doble en ocho fichas, que es la familia del
-defecto de `d038`. Hoy no rompe una cifra publicada, porque el mapeo de la seccion `6` se hace sobre
-el campo y no sobre un `grep` de texto libre. Lo dejo escrito con su medida y **no abro doctrina**.
----
-
-## 8. EL BARRIDO DE VECINOS (`D.38.4` con su correccion del 16 sep, y `D.38.5`)
-
-**Corrido uno por vez, que es lo que la `ACTA 18` dejo corregido**, y entregando a la aduana la
-poblacion del grafo para que ella ponga las bandejas, que es lo que la correccion del 16 sep manda.
-
-    $ python forja.py informe cuarentena/grove_high_output/preparar_respuestas_estandar_interrupciones_repetidas.json
-    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
-    candidatos revisados        : 1
-    poblacion del barrido       : 393   (346 del grafo mas 47 que esperan en bandejas)
-    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
-    EL SALDO
-      ENTRARIAN sin leer nada          : 0
-      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
-      CAERIAN por una guarda           : 0
-      CHOCAN entre si dentro del lote  : 0
-    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
-      vecinos levantados en total      : 4
-      que señal levanta cada vecindad  : similitud_texto 4
-
-    [BLOQUEARIA] preparar_respuestas_estandar_interrupciones_repetidas
-        vecino buscar_regularidad_bloques_iguales_trabajo_mando  [levantada por: similitud_texto]
-          similitud_texto 0.423 | familia_id 0.000 | paso_contra_nodo 0.551
-          paso 1 del candidato contra paso 1 de buscar_regularidad_bloques_iguales_trabajo_mando
-        vecino agrupar_interrupciones_subordinados_reuniones_regulares  [levantada por: similitud_texto]
-          similitud_texto 0.530 | familia_id 0.111 | paso_contra_nodo 0.435
-          paso 1 del candidato contra paso 2 de agrupar_interrupciones_subordinados_reuniones_regulares
-        vecino llevar_inventario_proyectos_discrecionales  [levantada por: similitud_texto]
-          similitud_texto 0.385 | familia_id 0.000 | paso_contra_nodo 0.471
-          paso 5 del candidato contra paso 3 de llevar_inventario_proyectos_discrecionales
-        vecino canalizar_interrupciones_cartel_hora_oficina  [levantada por: similitud_texto]
-          similitud_texto 0.377 | familia_id 0.111 | paso_contra_nodo 0.416
-          paso 1 del candidato contra paso 5 de canalizar_interrupciones_cartel_hora_oficina
-
-    $ python forja.py informe cuarentena/grove_high_output/agrupar_interrupciones_subordinados_reuniones_regulares.json
-    poblacion del barrido       : 393   (346 del grafo mas 47 que esperan en bandejas)
-      BLOQUEARIAN esperando veredicto  : 1
-      vecinos levantados en total      : 8
-      que señal levanta cada vecindad  : paso_contra_nodo 3, similitud_texto 5
-
-    [BLOQUEARIA] agrupar_interrupciones_subordinados_reuniones_regulares
-        vecino sostener_contacto_oferta_aceptacion  [levantada por: paso_contra_nodo]
-          similitud_texto 0.094 | familia_id 0.000 | paso_contra_nodo 0.700
-          paso 4 del candidato contra paso 3 de sostener_contacto_oferta_aceptacion
-        vecino agendar_cuidados_propios_cumplirlos  [levantada por: paso_contra_nodo]
-          similitud_texto 0.129 | familia_id 0.000 | paso_contra_nodo 0.615
-          paso 4 del candidato contra paso 4 de agendar_cuidados_propios_cumplirlos
-        vecino nombrar_delegados_amigos_casa  [levantada por: paso_contra_nodo]
-          similitud_texto 0.127 | familia_id 0.000 | paso_contra_nodo 0.609
-          paso 4 del candidato contra paso 4 de nombrar_delegados_amigos_casa
-        vecino preparar_respuestas_estandar_interrupciones_repetidas  [levantada por: similitud_texto]
-          similitud_texto 0.536 | familia_id 0.111 | paso_contra_nodo 0.417
-          paso 1 del candidato contra paso 1 de preparar_respuestas_estandar_interrupciones_repetidas
-        vecino llevar_inventario_proyectos_discrecionales  [levantada por: similitud_texto]
-          similitud_texto 0.352 | familia_id 0.000 | paso_contra_nodo 0.478
-          paso 1 del candidato contra paso 1 de llevar_inventario_proyectos_discrecionales
-        vecino canalizar_interrupciones_cartel_hora_oficina  [levantada por: similitud_texto]
-          similitud_texto 0.403 | familia_id 0.111 | paso_contra_nodo 0.452
-          paso 1 del candidato contra paso 8 de canalizar_interrupciones_cartel_hora_oficina
-        vecino buscar_regularidad_bloques_iguales_trabajo_mando  [levantada por: similitud_texto]
-          similitud_texto 0.426 | familia_id 0.000 | paso_contra_nodo 0.415
-          paso 1 del candidato contra paso 1 de buscar_regularidad_bloques_iguales_trabajo_mando
-        vecino identificar_paso_limitante_jornada_desfases  [levantada por: similitud_texto]
-          similitud_texto 0.351 | familia_id 0.000 | paso_contra_nodo 0.377
-          paso 4 del candidato contra paso 1 de identificar_paso_limitante_jornada_desfases
-
-    $ python forja.py informe cuarentena/grove_high_output/canalizar_interrupciones_cartel_hora_oficina.json
-    poblacion del barrido       : 393   (346 del grafo mas 47 que esperan en bandejas)
-      BLOQUEARIAN esperando veredicto  : 1
-      vecinos levantados en total      : 3
-      que señal levanta cada vecindad  : similitud_texto 3
-
-    [BLOQUEARIA] canalizar_interrupciones_cartel_hora_oficina
-        vecino preparar_respuestas_estandar_interrupciones_repetidas  [levantada por: similitud_texto]
-          similitud_texto 0.385 | familia_id 0.111 | paso_contra_nodo 0.472
-          paso 5 del candidato contra paso 4 de preparar_respuestas_estandar_interrupciones_repetidas
-        vecino buscar_regularidad_bloques_iguales_trabajo_mando  [levantada por: similitud_texto]
-          similitud_texto 0.371 | familia_id 0.000 | paso_contra_nodo 0.471
-          paso 8 del candidato contra paso 4 de buscar_regularidad_bloques_iguales_trabajo_mando
-        vecino agrupar_interrupciones_subordinados_reuniones_regulares  [levantada por: similitud_texto]
-          similitud_texto 0.408 | familia_id 0.111 | paso_contra_nodo 0.422
-          paso 8 del candidato contra paso 2 de agrupar_interrupciones_subordinados_reuniones_regulares
-
-Las tres salidas miden, cada una sobre un candidato, la poblacion del barrido, el saldo de la aduana
-en seco y la lista de vecinos con sus tres senales al milesimo.
-
-`LECTURA`: **la poblacion que la aduana imprime es `393`, con su reparto `346` del grafo mas `47` de
-bandejas, y es la misma cifra que yo conte en la seccion `3.1` antes de correr la aduana.** `D.38.5`
-dice que desde el 16 sep mi barrido y el de la maquina son comparables, y hoy cuadran al entero.
-Los tres candidatos salen `BLOQUEARIA`, que no es rechazo sino cola de lectura, y **cero caen por
-una guarda**, lo cual quiere decir que esquema, ids, fuentes y el resto de puertas los aceptan.
-
-### 8.1. LOS `15` VECINOS LEVANTADOS SON `12` PARES, Y ESTA ES MI CLASE PARA CADA UNO
-
-`4` mas `8` mas `3` dan `15` vecinos levantados. Tres de esos pares tienen los dos extremos dentro
-de la tanda de hoy y por eso salen dos veces, una por cada lado, asi que los pares distintos son
-`12`.
-
-| # | par | senal que lo levanta | **mi clase a ciegas** | por que |
-|---|---|---|---|---|
-| **1** | `P41` contra `P42` | similitud `0,530` y `0,536` | **SANO**, hermanos `D.29` | atacan la misma interrupcion por dos sitios: `P41` escribe QUE se responde, `P42` escribe CUANDO se atiende. Cero pasos compartidos y cada uno con su inventario |
-| **2** | `P41` contra `P44` | similitud `0,377` y `0,385` | **SANO**, hermanos `D.29` | tercer remedio de la misma seccion de interrupciones, con objeto propio: el cartel y la hora de oficina |
-| **3** | `P42` contra `P44` | similitud `0,403` y `0,408` | **SANO**, hermanos `D.29` | el paso `6` de `P44` ofrece la reunion programada como alternativa y `P42` la despliega. `P44` la nombra y no repite sus pasos, que es `NOMBRAR NO ES PROCEDIMENTAR` de `6.1` |
-| **4** | `P41` contra `buscar_regularidad_bloques_iguales_trabajo_mando` | similitud `0,423` | **SANO**, hermanos `D.29` | los dos salen de la seccion de interrupciones, y los objetos son distintos: alli el bloque de tiempo propio, aqui la respuesta preparada |
-| **5** | `P42` contra `buscar_regularidad_bloques_iguales_trabajo_mando` | similitud `0,426` | **SANO**, hermanos `D.29` | el paso `4` de `P42` pide que las reuniones sean regulares y aquel nodo es donde la regularidad se ejecuta sobre el calendario |
-| **6** | `P44` contra `buscar_regularidad_bloques_iguales_trabajo_mando` | similitud `0,371` | **SANO**, hermanos `D.29` | el paso `8` de `P44` manda volver regular lo irregular, con la interrupcion ajena por objeto, y alli el objeto es el bloque propio |
-| **7** | `P41` contra `llevar_inventario_proyectos_discrecionales` | similitud `0,385` | **SANO**, sin relacion de lectura | la senal empareja el paso `5` de `P41` con el paso `3` de aquel, y los dos textos no comparten objeto: respuestas estandar contra proyectos discrecionales |
-| **8** | `P42` contra `llevar_inventario_proyectos_discrecionales` | similitud `0,352` | **SANO**, sin relacion de lectura | mismo caso, sobre el paso `1` de cada uno, que en los dos empieza por aplicar un principio de produccion |
-| **9** | `P42` contra `identificar_paso_limitante_jornada_desfases` | similitud `0,351` | **SANO**, sin relacion de lectura | roza el umbral de `0,35` y empareja el paso `4` de `P42` con el paso `1` de aquel |
-| **10** | `P42` contra `sostener_contacto_oferta_aceptacion` | **paso contra nodo `0,700`** | **SANO**, sin relacion de lectura | es de `smart_who` y su paso `3` dice `Manten el contacto con ella con regularidad` |
-| **11** | `P42` contra `agendar_cuidados_propios_cumplirlos` | **paso contra nodo `0,615`** | **SANO**, sin relacion de lectura | es de `scott_radical_candor` y su paso `4` dice `No te saltes esas reuniones contigo mismo` |
-| **12** | `P42` contra `nombrar_delegados_amigos_casa` | **paso contra nodo `0,609`** | **SANO**, sin relacion de lectura | es de `smart_who` y su paso `4` dice `Asegurate de que los delegados reportan con regularidad` |
-
-`LECTURA`: **mi lectura a ciegas da `12` SANO, cero CONTINUA, cero REPITE y cero MUTUO.** Los tres
-candidatos entran sin fusion y sin degradar a ningun nodo vivo, y los seis pares de hermanos llevan
-arista declarada por lectura, que se cablea el dia de la insercion y no hoy (`D.29`).
-
-### 8.2. **LO QUE ESTE BARRIDO MIDE DE SI MISMO, y lo registro sin adjudicar** (`D.56`)
-
-    $ python -c "pasos de los tres vecinos levantados por paso_contra_nodo"
-    sostener_contacto_oferta_aceptacion      fuente=smart_who
-       paso 3: Manten el contacto con ella con regularidad.
-    nombrar_delegados_amigos_casa            fuente=smart_who
-       paso 4: Asegurate de que los delegados reportan con regularidad.
-    agendar_cuidados_propios_cumplirlos      fuente=scott_radical_candor
-       paso 4: No te saltes esas reuniones contigo mismo.
-
-La salida mide el texto del paso que la aduana empareja en cada uno de los tres vecinos levantados
-por la senal `paso contra nodo`, y la clave de fuente de su nodo.
-
-`LECTURA`, en tres piezas, y las tres van a registro y no a doctrina:
-
-**a)** Las tres vecindades de `paso contra nodo` se levantan contra el paso `4` de `P42`, `Manten
-esas reuniones con regularidad`, que tiene cinco palabras. Los tres vecinos vienen de otros dos
-libros y comparten con el la expresion `con regularidad` o la palabra `reuniones`. Es materia de la
-pregunta `8` de la cola de doctrina, que ya esta levantada y congelada.
-
-**b)** El mismo par medido por sus dos lados da dos cifras distintas: `0,530` y `0,536` para `P41`
-contra `P42`; `0,377` y `0,385` para `P41` contra `P44`; `0,403` y `0,408` para `P42` contra `P44`.
-La diferencia es de milesimas y no mueve ninguna clase hoy, pero **la senal de similitud no es
-simetrica**, y eso vale para quien cuente pares a partir de vecindades.
-
-**c)** Las tres fichas declaran por lectura una arista `D.29` con `subir_productividad_gerencial_tres_vias`
-como madre, y **ese nodo no aparece en ninguna de las tres listas de vecinos**. La senal levanta tres
-vecindades de otros libros que no tienen relacion de lectura y deja fuera la relacion de jerarquia
-que las tres fichas declaran. Es la medida de `D.19` otra vez: **la senal dice donde mirar y ahi
-acaba su trabajo**, y la jerarquia la pone quien lee.
+| **seis candidatos, las seis piezas fijadas** | `AC.5.a`, instrumento sobre la bandeja | **`6` de `6`, y las piezas son las seis** |
+| **cero inserciones** | `AC.3` y `AC.4`, `wc -l` y `git diff` | **`346`, `740`, `1` y cero ficheros movidos** |
+| **las palabras recomputadas contra la frontera** | `AC.5.b`, `sed` mas `wc -w` | **las seis al digito** |
+| **fidelidad `D.30` paso a paso** | `AC.5.d`, mi lectura contra el renglon | **`49` de `49` TRANSCRIPCION, `0` PUENTE** |
+| **`d044` pagada sacando el comando del objeto** | `AC.8.a`, el metodo que la ficha propone | **da `2` y `1`, y aguanta en una bandeja de `50`** |
+| **`d045` y `d046` por correccion declarada sin borrar** | `AC.8`, prueba de prefijo | **`True` en las tres, y solo `resumen_teorico` cambia** |
+| **aduana en el mismo acto, con su reloj** | **NO LO PUEDO COMPROBAR AQUI**: los relojes viven en `.v51/` y en el reporte | **queda para mi turno normal** |
 
 ---
 
-## 9. LO QUE ESTA FASE NO ME DEJA COMPROBAR, DICHO EN VEZ DE AFIRMADO
+# AC.11. **LO QUE NO PUEDO COMPROBAR EN ESTA FASE, ESCRITO COMO LIMITACION Y NO COMO AFIRMACION**
 
-`AUDITOR_FORJA.md` 1.1: una busqueda negativa no se puede citar. Esto es lo que dejo sin medir, con
-el motivo de cada pieza:
+`AUDITOR_FORJA.md` `1.1`: una busqueda negativa no se puede citar. Asi que esto es la lista de lo que
+**no** mire, con el motivo de cada cosa:
 
-| pieza | por que no la mido | que hago con ella |
-|---|---|---|
-| **el credito de mi linea** | `docs/loop/CREDITO_serial.jsonl` esta retirado por el arnes en esta corrida, segun la linea de `loop.log` de la seccion `2`, y `python forja.py credito` lee ahi | **la mido en mi turno normal**, cuando el fichero vuelva al arbol |
-| **el tallado del reporte (`D.41`) y el censo de rutas (`D.42`)** | los dos se corren sobre `docs/loop/REPORTE.md`, retirado | **los corro en mi turno normal** |
-| **la tabla de cierre de tareas (`D.52`)** | su guarda lee el reporte vivo, y por eso la prueba de la seccion `3.2` sale en `ERROR` con su `FileNotFoundError` pegado | **la corro en mi turno normal** |
-| **`LL.3.c` del reporte, la sede que declara pagada la `d038`** | el reporte esta retirado y no lo he abierto | **la medida de la seccion `7.2` no depende de el**: el comando da `3` hoy. La especie de la caida la nombro en mi acta |
-| **los `137` pasos de las `19` fichas anteriores de `cap_04`** | los leyeron las vueltas `46` a `49` y esta fase no los reabre | **firmo los `19` de esta tanda y no la fila del capitulo entero**, como `8.3` me obliga a decir |
-| **la frontera de `cap_05`** | el `git diff` de la seccion `4` ensena que la vuelta escribio `.v50/frontera_cap_05.txt`, y `.v50/` es la carpeta que no abro en esta fase | **la reviso en mi turno normal, con el reporte delante** |
-
----
-
-## 10. MIS DISCUTIBLES, MARCADOS AQUI ANTES DE SABER SI ACIERTO
-
-Esto es lo que `5.1` pide: que lo que yo dudo quede escrito **antes** de que se me exponga el
-reporte, para que despues se vea si la duda estaba donde tenia que estar.
-
-| # | que dudo | donde | si cae, cae |
+| # | lo que no compruebo | por que | cuando |
 |---|---|---|---|
-| **1** | el paso `1` de `P41` resuelve su referente con `L313`, que la ficha declara fuera de su tramo y la frontera clasifica como pieza `P40` con cero nodos | `5.1.a` | **DENTRO** de mi marcado |
-| **2** | el paso `4` de `P42` convierte una condicion del libro en un imperativo, y lo sostengo porque la misma operacion se hace en el paso `2` de `P41` | `5.2.a` | **DENTRO** |
-| **3** | el paso `5` de `P44` es una constatacion de la misma especie que su paso `1`, y la ficha marca como discutible el `1` y no el `5` | `5.3.a` | **DENTRO** |
-| **4** | adjudico `REPITE` a la pieza `P43` leyendo `L319` contra los cuatro pasos de `archivar_indicadores_resolver_problemas`, y un lector estricto puede decir que responder rapido a una interrupcion es un procedimiento propio | `5.4` | **DENTRO** |
-| **5** | doy `SANO` a los pares `10`, `11` y `12`, que la senal `paso contra nodo` levanta por encima de `0,60`, y por tanto digo que la senal se equivoca tres veces sobre el mismo paso de cinco palabras | `8.1` y `8.2.a` | **DENTRO** |
-| **6** | firmo `0` PUENTE en los `19` pasos de la tanda, leidos uno a uno contra su renglon | `5.5` | **DENTRO** |
+| `1` | **las cifras del reporte de la vuelta 51** | `docs/loop/REPORTE.md` esta retirado por el arnes (`AC.2`) | mi turno normal |
+| `2` | **los relojes de las seis pasadas de aduana, y sus informes** | viven en `.v51/`, el cuaderno de la vuelta, y **decido no abrirlo en esta fase** para que mi clase sea mia | mi turno normal |
+| `3` | **las rachas de credito de la linea** | su registro esta retirado, y el instrumento contesta `LINEA SIN REGISTRO` (`AC.2.a`) | mi turno normal |
+| `4` | **la seccion `MM.1.c` donde `d044` dice que vive ahora su comando** | esa seccion es del reporte retirado | mi turno normal |
+| `5` | **las `318` pruebas de aceptacion y el tallado** | piden minutos, y esta fase los gasto en los seis barridos (`91,2` min de reloj, `AC.7`) | mi turno normal |
+| `6` | **si el reporte declaro el cierre en `6` de `26` con su cifra** (`EXTRACTOR.md` 12.4) | del reporte retirado; lo que si mido es que la bandeja trae `6` | mi turno normal |
 
 ---
 
-## 11. LA TABLA DE CIERRE DE ESTA APERTURA
+# AC.12. **LOS TRES HEREDADOS, UNO A UNO Y CON SU SALIDA PEGADA**
 
-| lo que traigo | medida | instrumento, corrido en esta fase |
-|---|---|---|
-| **`ACTA ANTERIOR LEIDA: 9c1eced05cb9f9b265e2f94e3a17e188af43b185`** | huella identica a la del arbol | `git hash-object`, seccion `1` |
-| **heredados entregados por el arnes** | `0`, y la tarea bloqueante de `48.9.d` **existe** y el instrumento no la ve | `python forja.py herencia` y `grep -n`, seccion `1.1` |
-| **el lote de la vuelta** | `3` candidatos nuevos y `9` fichas corregidas, cero lineas en `dataset/`, `bitacora/` y `censos/` | `git diff --name-status`, seccion `4` |
-| **fidelidad `D.30` de la tanda** | `19` pasos, `19` TRANSCRIPCION, `0` PUENTE, leidos por mi contra `L315`, `L317`, `L321` y `L323` | `sed` sobre el fuente, secciones `5.1` a `5.3` |
-| **`PASOS INVENTADOS`, `cap_04`, tanda de la vuelta `50`** | `0,00` por ciento sobre `19` pasos, por debajo del tope de `10` de `8.1` | conteo de pasos por capitulo, seccion `5.5` |
-| **la frontera de `cap_04`** | `22` nodos en `21` piezas, y `22` fichas en esas mismas `21` piezas | `.v46/frontera.py` y el mapeo, seccion `6` |
-| **`d036`** | **PAGADA**: las `8` cifras nuevas caen en mi `wc -w` | recuento contra el fuente, seccion `7.1` |
-| **`d038`** | **ROTA**: el comando que el pago declara en `2` da `3` hoy | `grep -l`, seccion `7.2` |
-| **poblacion del barrido** | `393`, o sea `346` del grafo mas `47` de bandejas, contada por mi y por la aduana | `wc -l`, `ls` y `forja.py informe`, secciones `3.1` y `8` |
-| **clases a ciegas** | `12` pares, `12` SANO, cero CONTINUA, cero REPITE, cero MUTUO | los tres informes, seccion `8.1` |
-| **gate, guiones, resolutor** | verdes | `forja.py`, seccion `3` |
-| **pruebas de aceptacion** | `318` pruebas, `3` fallos y `1` error, **y las cuatro trazas nombran ficheros retirados por esta misma fase** | `tests/test_aceptacion.py`, seccion `3.2` |
-| **lo que dejo sin medir** | seis piezas, con su motivo | seccion `9` |
-| **mis discutibles** | `6`, marcados antes de ver el reporte | seccion `10` |
+## HEREDADO 1: **CUMPLIDO**
 
-**NO ESCRIBO `docs/loop/PARA_ALEXIS.md` desde esta fase**, que corresponde al acta y no a la
-apertura. **No commiteo**: el arnes sella esta pagina.
+El remedio dice que el barrido de la fase ciega se corre **como ultima operacion, sobre la pagina ya
+terminada**, y que su salida se pega **despues de todo lo demas**. **Asi esta hecho**: la seccion
+`AC.13` es la de cierre de esta pagina, su salida es la del barrido corrido sobre el texto ya
+terminado, y **su cabecera es la cuenta que esta pagina publica**. La comprobacion del remedio es
+esa comparacion, y esta a la vista en `AC.13`.
+
+## HEREDADO 2: **CUMPLIDO**
+
+El remedio dice que toda frase mia que acompane a un pegado dice lo que **ese** pegado mide, y que la
+conclusion va aparte y marcada `LECTURA`. **Esta pagina esta escrita asi de punta a punta**, y la
+presencia se puede contar:
+
+    $ grep -c '^`LECTURA`' docs/loop/APERTURA_CIEGA.md
+    27
+
+    $ grep -c '^Esa salida mide' docs/loop/APERTURA_CIEGA.md
+    23
+
+Esas dos salidas miden cuantas lineas de esta pagina empiezan por la marca de conclusion y cuantas
+empiezan por la frase que describe un pegado, contadas sobre la pagina terminada.
+
+`LECTURA`: **`23` pegados descritos y `27` conclusiones marcadas.** La forma que el remedio pide es
+la que esta pagina usa en cada seccion con cifra: debajo del pegado va una linea que empieza por
+*Esa salida mide* y no concluye nada, y lo que concluyo va en su propia linea marcada. **Que haya
+`27` y no `23` es porque cuatro secciones concluyen dos veces**, una por cada cosa que el pegado
+mide.
+
+## HEREDADO 3: **CUMPLIDO, Y CON EL CASO QUE ESTA PAGINA PRODUJO**
+
+El remedio dice que toda cifra de **estado** que yo publique se mide **despues** de la operacion que
+la cambia. **Esta pagina trae un caso propio, y lo produjo ella misma**: el `grep` de
+`AC.8.a` barre `docs/`, y **esta pagina vive en `docs/` y escribe esa cadena cuatro veces**. Asi que
+lo vuelvo a correr **despues** de escribirla:
+
+    $ grep -c "Sale de la PIEZA P34" docs/loop/APERTURA_CIEGA.md
+    4
+
+    $ grep -rl "Sale de la PIEZA P34" cuarentena/ docs/
+    cuarentena/grove_high_output/decir_no_trabajo_excede_capacidad.json
+    cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json
+    cuarentena/grove_high_output/usar_calendario_herramienta_planificacion_produccion.json
+    docs/loop/ACTA_AUDITOR.md
+    docs/loop/APERTURA_CIEGA.md
+    docs/loop/DEUDA.jsonl
+    docs/loop/PROMPT_SIGUIENTE.md
+
+Esa salida mide cuantas veces esta pagina escribe la cadena, y que ficheros de `cuarentena/` y
+`docs/` la contienen **con esta pagina ya escrita dentro del arbol**.
+
+`LECTURA`: **el pegado de `AC.8.a` daba `6` ficheros y ahora da `7`, y el septimo soy yo.** La cifra
+de `AC.8.a` queda como lo que era, la medida de antes de escribir esta pagina, **y la de aqui es la
+de despues**, que es la que el remedio manda publicar. **Y el mecanismo es el de `d038` por cuarta
+vez**: escribi la cadena dentro de un fichero que el comando barre, en mi propia sede. **Por eso el
+metodo bueno es el que `AC.8.a` verifica** (anclar en la frase de cabecera de la ficha), y no contar
+coincidencias sobre una carpeta que crece.
+
 ---
 
-## 12. EL BARRIDO DEL REMEDIO, CORRIDO COMO OPERACION FINAL SOBRE ESTA PAGINA
+# AC.13. **EL BARRIDO DE LA FASE CIEGA, CORRIDO COMO OPERACION DE CIERRE SOBRE LA PAGINA TERMINADA**
 
-**HEREDADO 1, recuperado en la seccion `1.1`: CUMPLIDO.** Esta seccion se corre cuando el resto de
-la pagina ya esta escrito, y su salida va pegada debajo sin que despues se anada una linea de prosa.
-El remedio que comprueba es el `REMEDIO 1` de la `ACTA 46`: un superlativo mio lleva debajo la lista
-ordenada entera que lo sostiene, y el camino que la `ACTA 48` eligio para que no se rompa es de
-orden de operaciones y no de memoria.
+Es lo que `HEREDADO 1` obliga: se corre al final, sobre el texto ya terminado, **y su salida se pega
+detras de todo lo demas**. Barre mi prosa, o sea las lineas que no van sangradas con cuatro
+espacios; las sangradas son salidas de instrumento y van contadas aparte.
 
-**LA CUENTA QUE ESTA PAGINA PUBLICA ES LA CABECERA PEGADA DEBAJO**, que sale del fichero que el
-arnes va a sellar. Lo que va despues de este parrafo son lineas sangradas, o sea salida de
-instrumento, y el propio barrido las descarta de su cuenta de prosa.
+**LO QUE CONTESTO Y LO QUE NO, dicho antes de pegar la salida:** el remedio obliga a contestar los
+**superlativos**, y esos los deje en `0` reescribiendo las cinco frases que los traian. Las
+**afirmaciones universales** no las pide el remedio y el instrumento las barre igual, asi que las
+contesto aqui una a una **por su numero de linea**, sin repetir la palabra, para que la cuenta de
+este barrido no se mueva por contestarla:
+
+| linea | clase | donde esta sostenida |
+|---:|---|---|
+| `59` | negativa universal | es una afirmacion sobre mi propia conducta en esta fase, y **el arnes la comprueba por su cuenta**: si yo hubiera recuperado uno de los cuatro retirados, lo escribe en `loop.log` |
+| `106` | universal afirmativa | describe el pegado de `AC.3`, que es `ls cuarentena/*/*.json | wc -l` y da `218` |
+| `246` | universal afirmativa | es una cita literal del paso `1` de la ficha de `P11`, y va en cursiva como cita |
+| `293` | negativa universal | es mi lectura sobre los `21` pares que la tabla de `AC.6.b` lista fila a fila, y no sobre pares que no mire |
+| `349` | universal afirmativa | es una cita literal del paso `3` del nodo del grafo, pegada de su fichero en `AC.6.d` |
+| `425` | negativa universal | esta medida en `AC.7.a`: los `18` pares cruzados de libro dan entre `0,0617` y `0,1715` contra un umbral de `0,35` |
+| `461` | negativa universal | esta medida en `AC.8`: la prueba de claves da `['resumen_teorico']` en las tres fichas corregidas |
+
+**Y LA SALIDA, PEGADA DETRAS DE TODO LO DEMAS:**
 
     $ python .v49aud/17_superlativos.py
-    SUPERLATIVOS, que es lo que el remedio obliga a contestar: 0 golpes en mi prosa, 1 lineas sangradas (salida de instrumento) descartadas
-    
-    AFIRMACIONES UNIVERSALES, que no las pide el remedio y las barro igual: 7 golpes en mi prosa, 12 lineas sangradas (salida de instrumento) descartadas
-       linea 85   [negativa universal        ] NINGUN         ...**NO ESCRIBO NINGUN `NO APLICA`** en esta tabla...
-       linea 123  [negativa universal        ] ninguna        ...recuperado de `git` ni por ninguna otra via `REPORTE.md`, `ult...
-       linea 420  [negativa universal        ] ninguna        ...L323` a la pieza `P44` y a ninguna otra, y eso lo...
-       linea 645  [negativa universal        ] ninguna        ...ninguna otra. **Lo que falla es la...
-       linea 800  [negativa universal        ] ningun         ...sin fusion y sin degradar a ningun nodo vivo, y los seis pares...
-       linea 825  [negativa universal        ] ninguna        ...es de milesimas y no mueve ninguna clase hoy, pero **la senal...
-       linea 829  [negativa universal        ] ninguna        ...y **ese nodo no aparece en ninguna de las tres listas de vecin...
-    
+    SUPERLATIVOS, que es lo que el remedio obliga a contestar: 0 golpes en mi prosa, 3 lineas sangradas (salida de instrumento) descartadas
+
+    AFIRMACIONES UNIVERSALES, que no las pide el remedio y las barro igual: 7 golpes en mi prosa, 8 lineas sangradas (salida de instrumento) descartadas
+       linea 59   [negativa universal        ] ninguno        ...ia escritura. **No recupero ninguno de git**, y esta pagina no...
+       linea 106  [universal afirmativa      ] todas          ...fichas de todas las bandejas, y las dos gua...
+       linea 246  [universal afirmativa      ] todas          ...er la misma frecuencia para todas*, y `L33` no escribe esa co...
+       linea 293  [negativa universal        ] ninguno        ...s `21` pares que mire, y en ninguno leo un `REPITE`.** Lo que...
+       linea 349  [universal afirmativa      ] nunca          ...ue de otro modo no saldrian nunca*), que no es un sitio de re...
+       linea 425  [negativa universal        ] ninguna        ...ntra `zhuo_manager` sin que ninguna senial se lo pidiera** (`AC...
+       linea 461  [negativa universal        ] ninguno        ...comprobar que no toco ninguno....
+
+Esa salida mide los superlativos y las afirmaciones universales de mi prosa en esta pagina, corrida
+sobre el texto ya terminado, con las lineas sangradas de salida de instrumento contadas aparte.
+
+### AC.13.a. **LA CUENTA QUE ESTA PAGINA PUBLICA ES LA DE LA RELECTURA, Y AQUI ESTA SU ARITMETICA**
+
+Al pegar la salida de arriba, **sus siete lineas de detalle pasan a ser lineas sangradas**, y el
+barrido de universales las cuenta entonces como salida de instrumento. Eso cambia una de las cuatro
+cifras, asi que **lo mido despues de pegarla** (`HEREDADO 3`) y corro el instrumento otra vez sobre
+la pagina con su salida ya dentro:
+
+    $ python .v49aud/17_superlativos.py   (las dos cabeceras, tras pegar la salida de arriba)
+    SUPERLATIVOS, que es lo que el remedio obliga a contestar: 0 golpes en mi prosa, 3 lineas sangradas (salida de instrumento) descartadas
+    AFIRMACIONES UNIVERSALES, que no las pide el remedio y las barro igual: 7 golpes en mi prosa, 15 lineas sangradas (salida de instrumento) descartadas
+
+Esa salida mide las dos cabeceras del mismo barrido corrido sobre esta pagina con la salida de
+`AC.13` ya pegada dentro.
+
+`LECTURA`: **la cabecera de superlativos sale identica, `0` golpes y `3` lineas sangradas, y es la
+que el remedio ata.** La de universales conserva sus `7` golpes y sube de `8` a `15` lineas
+sangradas, **y la diferencia son las `7` lineas de detalle que acabo de pegar**: `8` mas `7` dan
+`15`. **De aqui en adelante la cuenta se queda quieta**, porque lo que se pega debajo son dos lineas
+de cabecera y el barrido no encuentra en ellas una sola de las palabras que busca. **Asi que el que
+corra este instrumento sobre la pagina sellada tiene que obtener estas dos cabeceras**, y esa es la
+cuenta que esta pagina publica.
+
+---
+
+*Fin de la apertura ciega. No la commiteo: la sella el arnes. El reporte de la vuelta 51 lo leo
+despues, en mi turno normal, y de ese cruce sale la `ACTA 50`.*
