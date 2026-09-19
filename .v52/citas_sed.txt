@@ -1,0 +1,14 @@
+$ sed -n '45p' fuentes/grove_high_output/cap_05.md
+45: What is the role of the supervisor in a one-on-one? He should facilitate the subordinates expression of what
+$ sed -n '47p' fuentes/grove_high_output/cap_05.md
+47: How is this done? By applying Groves Principle of Didactic Management, Ask one more question! When the super
+$ sed -n '49p' fuentes/grove_high_output/cap_05.md
+49: Id like to suggest some mechanical hints for effective one-on-one meetings. First, both the supervisor and s
+$ sed -n '51p' fuentes/grove_high_output/cap_05.md
+51: A real time-saver is using a hold file where both the supervisor and subordinate accumulate important but no
+$ sed -n '53p' fuentes/grove_high_output/cap_05.md
+53: The supervisor should also encourage the discussion of heart-to-heart issues during one-on-ones, because thi
+$ sed -n '55p' fuentes/grove_high_output/cap_05.md
+55: Long-distance telephone one-on-ones have become necessary because many organizations are now spread out geog
+$ sed -n '57p' fuentes/grove_high_output/cap_05.md
+57: One-on-ones should be scheduled on a rolling basis, setting up the next one as the meeting taking place ends

@@ -49412,3 +49412,372 @@ nunca por la aduana.
 > ningun instrumento lo avise**, porque el instrumento de `D.15` solo mira los veredictos que estan
 > en la bitacora. **La razon escrita dentro de la ficha es lo que lo hace releible**, y por eso la
 > escribi con el par emparejado y la medida delante, y no con un `SANO` a secas.
+
+---
+
+# VUELTA 52 DE LA LINEA SERIAL, `extraccion-mundo-11`: **CERRAR LA SECCION DEL UNO A UNO DE `cap_05` CON SUS SEIS PIEZAS**, y sacar de la ficha el digito de senial que la ficha se calcula a si misma
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor en la `ACTA 50`. Modo austero
+(`D.47`): no repito lo que el registro ya dice.*
+
+> **ESQUELETO ABIERTO AL EMPEZAR, CON LAS FILAS DE ESTADO VACIAS** (`EXTRACTOR.md` 3). Cada tarea
+> anexa su fila al cerrarse, y la columna de estado se rellena entonces, no al abrir.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `NN.1` | los registros de la `ACTA 50` recogidos sin reabrirlos, la caida de `REPORTE` leida del instrumento, y **el repaso de mis propias divisiones con los dos numeros de su celda delante** | **CERRADA en `NN.1`**, con su `1.c` ejecutada en `NN.5.h` |
+| `NN.2` | `cap_05` cierra la seccion del uno a uno: `P15`, `P16`, `P17`, `P18`, `P19` y `P20`, con frontera dentro del nodo antes de cortar, palabras recomputadas, fidelidad `D.30` con su `sed` pegado y **aduana en el mismo acto**. **Cero inserciones** | |
+| `NN.3` | `d051`: el digito de senial sale del texto del que la senial se calcula, en las **seis** fichas de la vuelta 51 y en las **seis** de hoy, por correccion declarada y sin borrar. **Cero pasadas de aduana** | |
+| `NN.4` | `d052`: la frontera que ninguna senial levanta, escrita dentro de `cubrir_indicadores_problemas_reunion_individual` con las dos posiciones y sus fuentes. **Cero pasadas de aduana** | |
+| `NN.5` | el cierre: las cinco guardas, la tabla `D.52` con su sello por COMMIT y no por `HEAD`, el estado recomputado, `PASOS INVENTADOS` por capitulo, la linea del tramo con su reloj y la deuda recomputada | |
+
+**CINCO TAREAS, EN EL TOPE DE CINCO** (`EXTRACTOR.md` 3). Cero cola declarada al abrir.
+
+## NN.0. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
+
+**Lo pendiente commiteado y pusheado antes de tocar nada** (`EXTRACTOR.md` 1.1). Ese commit llevaba
+**los cuatro ficheros del arnes** (`TABLERO.jsonl`, `loop.log`, `ultimo_auditor.json`,
+`ultimo_extractor.json`), **ninguno mio**, y el estado que deja se cita como intermedio con el
+nombre de la operacion que ya lo movio.
+
+<!-- TALLADO: parcial salida=.v52/apertura_estado.txt -->
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git log -1 --format="%h %ad %s" --date=iso
+    55c8992 2026-09-19 16:58:31 -0400 Apertura de la vuelta 52: estado del arnes sellado antes de tocar nada
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+       1087 total
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    50
+    $ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+    1
+
+**ESTA VUELTA TAMPOCO TRAE SALDO DE LOTE, Y LO DIGO EN VEZ DE INVENTARLO** (`EXTRACTOR.md` 12,
+`D.43`):
+
+<!-- TALLADO: parcial salida=.v52/informe_de_lote.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt
+    ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+
+### NN.0.a. **LA PUERTA DE `D.39`, MEDIDA POR MI Y NO HEREDADA DEL ENCARGO**
+
+**El encargo me manda medirla yo. La mido, y la cifra que publico es la de mi corrida.**
+
+<!-- TALLADO: parcial script=.v48/puerta.py salida=.v52/puerta_d39.txt -->
+
+    $ python .v48/puerta.py   sobre config/frentes.json
+    cerrados_en_extraccion : {'smart_who': {'cita': 'ACTA 8 seccion 10'}, 'zhuo_manager': {'cita': 'ACTA 13 seccion 8.1'}, 'scott_radical_candor': {'cita': 'ACTA 24'}}
+    grove_high_output CERRADO EN EXTRACCION: False
+
+**OCTAVA VUELTA SEGUIDA CON LA PUERTA MEDIDA CERRADA PARA ESTE LIBRO.** Y la segunda mitad de la
+condicion tambien la mido: **`cap_05` no cierra el lote 7.**
+
+<!-- TALLADO: parcial salida=.v52/capitulos_lote7.txt -->
+
+    $ ls fuentes/grove_high_output/cap_*.md | wc -l
+    18
+
+**`18` capitulos, y `cap_05` es el cuarto que se mina.** Ni cerrandolo entero cerraria el lote.
+
+**LA CORRIDA ME LLEGA CON LA INSERCION ABIERTA, Y AUN ASI HOY NO ENTRA NI UN NODO.** El encargo de
+esta corrida me lo dice con todas sus letras: `MODO_INSERCION=insertar` es el default desde `D.39`,
+**pero solo para un lote CERRADO en extraccion cuyo informe haya certificado el acta del auditor**,
+y **los candidatos de un lote ABIERTO se quedan en cuarentena hasta que su lote cierre**. Las dos
+mitades de esa condicion las acabo de medir yo y las dos salen en contra: el libro no esta en
+`cerrados_en_extraccion`, y el lote tiene `18` capitulos de los que van cuatro. **Meter un
+candidato hoy seria caida de dato, no un adelanto.**
+
+### NN.0.b. **LAS GUARDAS DE DATO AL ABRIR, CORRIDAS POR MI**
+
+<!-- TALLADO: parcial salida=.v52/apertura_gate.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+<!-- TALLADO: parcial salida=.v52/apertura_guiones.txt -->
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+**Ninguna de las cuatro guardas de DATO esta en rojo al abrir**, igual que dice la seccion de `D.55`
+del encargo. **La prueba de aceptacion no la corro al abrir**, por el mismo motivo de las vueltas
+50 y 51: el techo la cuenta una sola vez, en el cierre.
+
+### NN.0.c. **EL CREDITO Y LA DEUDA AL ABRIR**, leidos del instrumento y no anotados por mi (`EXTRACTOR.md` 14)
+
+<!-- TALLADO: parcial salida=.v52/credito_apertura.txt -->
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+      tandas: 50, en 230 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA 50
+      CIFRA PUBLICADA    0 de 2     ACTA 50
+      CLASE              0 de 2     ACTA 50
+      DATO MOVIDO        0 de 2     ACTA 50
+      REPORTE            1 de 3     ACTA 50
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+<!-- TALLADO: parcial salida=.v52/deuda_apertura.txt -->
+
+    $ python scripts/deuda.py
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      registro: docs/loop/DEUDA.jsonl
+      pendientes: 19    pagadas: 16
+
+**`19` pendientes y `16` pagadas al abrir**, con las tres nuevas (`d051`, `d052` y `d053`) dentro.
+
+## NN.1. **LOS REGISTROS DE LA `ACTA 50`, RECOGIDOS SIN REABRIRLOS**
+
+### NN.1.a. **LAS SIETE FILAS DE `50.5` Y LAS CUATRO DE LO QUE SE ME ADJUDICA A FAVOR**
+
+**Las recojo y no las rediscuto, y eso incluye las cuatro que me favorecen** (`EXTRACTOR.md` 14: el
+extractor propone en su reporte y no se adjudica a si mismo).
+
+| # | lo que la `ACTA 50` adjudica | donde vive | que hago hoy |
+|---:|---|---|---|
+| `1` | los nueve digitos de senial escritos dentro del texto del que la senial se calcula **NO son caida de ninguna especie**, y son la tercera generacion de `d038` | `50.5.a` | **lo pago en `NN.3`**, que es la `TAREA 3` |
+| `2` | la frontera `cubrir` contra `dirigir_reunion_individual_semanal` **no es duplicado y no es caida de nadie**: es frontera declarada por la vara `6.1` | `50.5.b` | **la escribo en `NN.4`**, que es la `TAREA 4` |
+| `3` | `d044`, `d045` y `d046` **PAGADAS las tres**, comprobadas por prefijo y por clave | `50.5.c` | **recogido**, y ya constan pagadas en `DEUDA.jsonl` |
+| `4` | la cuarta linea del sello de `D.52` **ya no reproduce, y eso le da la razon**: `d047` queda **DEMOSTRADA** y sigue sin pagarse por `D.45` | `50.5.d` | **recogido**. Hoy vuelvo a citar el sello **por su COMMIT** |
+| `5` | el `0` de `CHOCAN entre si dentro del lote` en seis pasadas de un candidato cada una **es cierto y no puede ser otra cosa**: no mide ausencia de choques | `50.5.e` | **recogido**, y hoy lo escribo asi al pegarlo |
+| `6` | **`P12` como un nodo es cifra del auditor**, no mia; no se parte hoy y se decide el dia de la insercion (`d053`) | `50.5.f` | **no lo toco**, tal como el encargo manda |
+| `7` | lo que el auditor **registra y no adjudica**: los `9` de la aduana y los `17` suyos son los mismos pares contados por direccion, y la senial de la casa **no es simetrica** (`0,3442` contra `0,3507` con el umbral en `0,3500`) | `50.5.g` | **recogido**. **No abro doctrina** (`D.56`) |
+
+| # | lo que se me adjudica A FAVOR | donde vive |
+|---:|---|---|
+| `1` | `CIFRA PUBLICADA` **baja de `1 de 2` a `0 de 2`** por tanda limpia y `D.38.1`, no por indulto | `ACTA 50` cabecera y `5.4` |
+| `2` | `CLASE` y `DATO MOVIDO` **LIMPIAS** con su motivo medido: `740` contra `740` y `git diff` vacio sobre las nueve sedes | `ACTA 50` cabecera |
+| `3` | **de mis TRECE discutibles marcados se sostienen los TRECE**, con `0` caidas DENTRO del marcado | `50.3` |
+| `4` | mis cuatro fichas del uno a uno **declararon arista de contraste contra `zhuo_manager` sin que ninguna senial se lo pidiera** | `50.5.b` |
+
+### NN.1.b. **MI CAIDA DE `REPORTE`, LEIDA DEL INSTRUMENTO Y NO TECLEADA, Y NO DISCUTIDA**
+
+**`REPORTE` esta en `1 de 3`**, y la cifra sale del instrumento corrido en esta vuelta, pegado
+entero en `NN.0.c`. **No la discuto**: la aritmetica que la sostiene esta pegada en `50.4.a`, y la
+celda que la produce es mia. **Las dos caidas de PROSA que no acumulan las recojo igual**: los
+`72` rancios que el instrumento escribe `71` porque mi `grep -c` se contaba a si mismo la linea de
+resumen, y el `ocho` de `MM.4.a` cuyo propio parentesis enumeraba nueve.
+
+### NN.1.c. **LA CONSECUENCIA QUE SI SE ME PIDE: EL REPASO DE MIS PROPIAS DIVISIONES**
+
+**Las tres caidas de esta tanda son de aritmetica y de recuento, y ninguno de mis trece marcados era
+una cifra.** Asi que en esta vuelta adopto dos reglas de metodo y las declaro aqui **antes** de
+escribir una sola cifra nueva:
+
+1. **toda division mia se recorre con los dos numeros de su propia celda delante**, y la comprobacion
+   la corre un script que lee la celda del reporte y no mi cabeza. **Se ejecuta antes de cerrar y su
+   salida se pega**, salga como salga;
+2. **ninguna cifra mia sale de un `grep -c` sobre la salida de un instrumento que publica su propio
+   recuento**: cuando el instrumento publica el recuento, **se lee el recuento del instrumento**.
+
+**La ejecucion de la primera va en `NN.5.h`, que es donde ya existen las divisiones que hay que
+recorrer.** La segunda muerde desde esta linea y en todo lo que sigue.
+
+**FILA DE LA TAREA 1: CERRADA en `NN.1`**, con su `1.c` ejecutada y pegada en `NN.5.h`.
+
+## NN.2. **`cap_05` CIERRA LA SECCION DEL UNO A UNO: SEIS CANDIDATOS, UNO POR VEZ Y CON SU ADUANA EN EL MISMO ACTO**
+
+### NN.2.a. **LAS PALABRAS DE LOS SEIS TRAMOS, RECOMPUTADAS POR MI ANTES DE CORTAR**
+
+**El corte no lo elijo yo: sale de la tabla de `LL.4.b` de la vuelta 50 por la via del encargo, y el
+encargo me prohibe reabrirlo.** Lo que si hago es recomputar sus seis cifras **antes de escribir el
+primer paso**, porque si mi recuento discrepara de la tabla tendria que parar y traerlo.
+
+<!-- TALLADO: parcial salida=.v52/palabras_tramos.txt -->
+
+    $ for spec in "P15 45 47" "P16 49 49" "P17 51 51" "P18 53 53" "P19 55 55" "P20 57 57"; do
+        set -- $spec; w=$(sed -n "$2,$3p" fuentes/grove_high_output/cap_05.md | wc -w)
+        echo "$1  L$2 a L$3  palabras=$w"; done
+    P15  L45 a L47  palabras=134
+    P16  L49 a L49  palabras=157
+    P17  L51 a L51  palabras=64
+    P18  L53 a L53  palabras=117
+    P19  L55 a L55  palabras=85
+    P20  L57 a L57  palabras=74
+
+| pieza | tramo | palabras que publica el encargo | palabras que cuento yo hoy | discrepa |
+|---|---|---:|---:|---|
+| `P15` | `L45` a `L47` | `134` | `134` | no |
+| `P16` | `L49` a `L49` | `157` | `157` | no |
+| `P17` | `L51` a `L51` | `64` | `64` | no |
+| `P18` | `L53` a `L53` | `117` | `117` | no |
+| `P19` | `L55` a `L55` | `85` | `85` | no |
+| `P20` | `L57` a `L57` | `74` | `74` | no |
+
+**LAS SEIS REPRODUCEN AL DIGITO, ASI QUE NO HAY NADA QUE PARAR.** Y como una de las seis cifras es
+mia y esta tanda me cazo en recuento, **digo con que convencion coincide**, que es la parte que la
+vuelta 51 no habria escrito:
+
+<!-- TALLADO: parcial script=.v52/palabras_guion.py salida=.v52/palabras_guion.txt -->
+
+    $ python .v52/palabras_guion.py   sobre sed -n '55p' de cap_05.md
+      palabras tal como las cuenta wc -w      : 85
+      piezas unidas por guion corto           : 4  Long-distance one-on-ones note-taking face-to-face
+      palabras si cada guion corto partiera   : 91
+
+**`P19` da `85` porque `wc -w` cuenta como una palabra cada cadena separada por espacio**, y ese
+renglon lleva **cuatro** piezas unidas por guion corto. **Un contador que partiera por cada guion
+daria `91` y no `85`**, y la tabla de `LL.4.b` coincide con el primero. **La cifra no cambia; lo que
+cambia es que ahora se puede recontar sin adivinar la regla.**
+
+### NN.2.b. **LAS SIETE CITAS DE LINEA CON SU `sed` PEGADO** (`D.35`, `EXTRACTOR.md` 15.5)
+
+<!-- TALLADO: parcial script=.v52/citas.py salida=.v52/citas_sed.txt -->
+
+    $ sed -n '45p' fuentes/grove_high_output/cap_05.md
+    45: What is the role of the supervisor in a one-on-one? He should facilitate the subordinates expression of what
+    $ sed -n '47p' fuentes/grove_high_output/cap_05.md
+    47: How is this done? By applying Groves Principle of Didactic Management, Ask one more question! When the super
+    $ sed -n '49p' fuentes/grove_high_output/cap_05.md
+    49: Id like to suggest some mechanical hints for effective one-on-one meetings. First, both the supervisor and s
+    $ sed -n '51p' fuentes/grove_high_output/cap_05.md
+    51: A real time-saver is using a hold file where both the supervisor and subordinate accumulate important but no
+    $ sed -n '53p' fuentes/grove_high_output/cap_05.md
+    53: The supervisor should also encourage the discussion of heart-to-heart issues during one-on-ones, because thi
+    $ sed -n '55p' fuentes/grove_high_output/cap_05.md
+    55: Long-distance telephone one-on-ones have become necessary because many organizations are now spread out geog
+    $ sed -n '57p' fuentes/grove_high_output/cap_05.md
+    57: One-on-ones should be scheduled on a rolling basis, setting up the next one as the meeting taking place ends
+
+**SON SIETE LINEAS Y NO SEIS PORQUE `P15` ES EL UNICO TRAMO DE TRES LINEAS DE LA TANDA**, que es
+justo lo que el encargo me manda mirar: `L45` y `L47` con `L46` en blanco. **La frontera interna de
+ese nodo va escrita dentro de su propia ficha antes de cortar**, y se lee en `NN.2.d`.
+
+**LA SALIDA VA CORTADA A `108` CARACTERES Y LOS SIGNOS TIPOGRAFICOS DEL ORIGINAL SUSTITUIDOS**, por
+el mismo motivo de la vuelta 51: el libro escribe guiones largos, comillas y apostrofes tipograficos
+y el barrido de esta casa no los admite. **Cada ficha lleva dentro su propia NOTA DE TRANSCRIPCION
+diciendo que sustituyo y por que.** La linea citada no cambia de contenido.
+
+### NN.2.c. **LOS SEIS, UNO A UNO, CON SU ADUANA EN EL MISMO ACTO Y SU RELOJ** (`EXTRACTOR.md` 16)
+
+**El orden es el del libro**, que es el de `D.36`: `P15`, `P16`, `P17`, `P18`, `P19` y `P20`. Cada
+uno se escribe, pasa su aduana **en el mismo acto** y solo entonces cuenta como escrito. **Ningun
+candidato de esta tanda espero al final para pasar la puerta.**
+
+> **AVISO DE COSTE, PUESTO AQUI ARRIBA PORQUE MUERDE TODA LA SECCION:** la primera pasada de esta
+> vuelta midio **`1045,6` s**, que son **`3,2` veces** los `327,0` s con los que el encargo calculo
+> su mitad en minutos. **La cifra esta cronometrada por mi y sale en `NN.5.f` con su denominador.**
+> No cambio el tramo por eso, porque el techo que manda es el de candidatos y son `6`; lo declaro
+> aqui para que se lea antes que los resultados y no despues.
+
+#### **CANDIDATO 1 de 6, `P15`: `facilitar_expresion_subordinado_pregunta_mas`**
+
+**`L45` a `L47`, `134` palabras, `6` pasos.** Es el unico tramo de tres lineas de la tanda.
+
+<!-- TALLADO: parcial script=.v52/c1.py salida=.v52/aduana_c1.txt -->
+
+    $ python .v52/c1.py
+    escrito cuarentena\grove_high_output\facilitar_expresion_subordinado_pregunta_mas.json 6 pasos
+    $ python forja.py informe cuarentena/grove_high_output/facilitar_expresion_subordinado_pregunta_mas.json
+    candidatos revisados        : 1
+    poblacion del barrido       : 400   (346 del grafo mas 54 que esperan en bandejas)
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 5
+      por candidato bloqueado          : menor 5, mediana 5, mayor 5
+      que señal levanta cada vecindad  : similitud_texto 5
+
+    $ cat .v52/reloj_c1.txt
+    RELOJ: 1045.6 s
+
+**`0 CAERIA` y cero correcciones de id: entro por la puerta a la primera.** Los cinco vecinos son
+cola de lectura y su veredicto se escribe en `NN.2.e`.
+
+**EL `0` DE `CHOCAN entre si dentro del lote` NO MIDE NADA DE ESTA TANDA, y lo digo al pegarlo**
+porque el auditor me lo registro en `50.5.e`: ese campo mide choques **dentro de la misma pasada**, y
+esta pasada llevo **un** candidato. **No puede salir distinto.** Lo que si mide los cruces entre los
+seis es la poblacion creciente, que sube de `400` en adelante segun entran en la bandeja.
+
+**LA FRONTERA INTERNA, ESCRITA DENTRO DE LA FICHA ANTES DE CORTAR:** pasos `1` a `3` de `L45` y
+pasos `4` a `6` de `L47`, con `L46` en blanco. **Cero frontera de libro** (las dos lineas son del
+mismo fichero y de la misma fuente), **cero solape y cero prestamo de tramos vecinos**.
+
+#### **CANDIDATO 2 de 6, `P16`: `tomar_notas_copia_guion_reunion_individual`**
+
+**`L49` a `L49`, `157` palabras, `7` pasos.** Es el tramo mas largo de la tanda.
+
+<!-- TALLADO: parcial script=.v52/c2.py salida=.v52/aduana_c2.txt -->
+
+    $ python .v52/c2.py
+    escrito cuarentena\grove_high_output\tomar_notas_copia_guion_reunion_individual.json 7 pasos
+    $ python forja.py informe cuarentena/grove_high_output/tomar_notas_copia_guion_reunion_individual.json
+    candidatos revisados        : 1
+    poblacion del barrido       : 401   (346 del grafo mas 55 que esperan en bandejas)
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 4
+      por candidato bloqueado          : menor 4, mediana 4, mayor 4
+      que señal levanta cada vecindad  : familia_id 1, similitud_texto 4
+
+    $ cat .v52/reloj_c2.txt
+    RELOJ: 601.3 s
+
+**`0 CAERIA` y cero correcciones de id.** La poblacion sube de `400` a `401`, que es el candidato 1
+ya en la bandeja: **el primero que entra cambia lo que el segundo mide**, y aqui se ve al digito.
+
+**Y ESTE CANDIDATO LEVANTA LA PRIMERA SENIAL 2 DE LA CAMPANIA DE `cap_05`**, que es cosa que merece
+decirse: `preparar_guion_reunion_individual_subordinado` lo levanta **por familia de id ademas de
+por texto**. **No es un aviso de duplicado**: los dos ids comparten las piezas `guion` y
+`reunion_individual` porque hablan del mismo objeto en dos momentos, que es exactamente lo que la
+arista `(2)` de esa ficha declara por lectura.
+
+#### **CANDIDATO 3 de 6, `P17`: `acumular_asuntos_importantes_fichero_espera`**
+
+**`L51` a `L51`, `64` palabras, `4` pasos.** Es el tramo mas corto de la tanda, y por eso su ficha
+abre desconfiando de sus propios pasos (`EXTRACTOR.md` 15.4).
+
+<!-- TALLADO: parcial script=.v52/c3.py salida=.v52/aduana_c3.txt -->
+
+    $ python .v52/c3.py
+    escrito cuarentena\grove_high_output\acumular_asuntos_importantes_fichero_espera.json 4 pasos
+    $ python forja.py informe cuarentena/grove_high_output/acumular_asuntos_importantes_fichero_espera.json
+    candidatos revisados        : 1
+    poblacion del barrido       : 402   (346 del grafo mas 56 que esperan en bandejas)
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 4
+      por candidato bloqueado          : menor 4, mediana 4, mayor 4
+      que señal levanta cada vecindad  : similitud_texto 4
+
+    $ cat .v52/reloj_c3.txt
+    RELOJ: 636.2 s
+
+**`0 CAERIA` y cero correcciones de id.** Poblacion `402`, con los candidatos 1 y 2 ya dentro.
+
+**ESTE ES EL CANDIDATO QUE MAS ARISTAS DECLARA HACIA FUERA DE SU PROPIA SECCION**, y ninguna la
+levanto una senial: el paso 3 nombra con todas sus letras *the production principle of batching*, y
+ese principio **es un nodo que ya espera en la bandeja** desde `cap_03`
+(`agrupar_tareas_semejantes_aprovechar_preparacion`). **La senial no la levanta y la lectura si**,
+que es `EXTRACTOR.md` 11 con todas sus letras: la jerarquia la busca la lectura.
