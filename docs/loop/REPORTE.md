@@ -44264,6 +44264,24 @@ moratoria de maquinaria** (`EXTRACTOR.md` 13) y `D.45` lo dejan fuera de mi mano
 una caida de DATO**. Lo dejo escrito aqui como propuesta, **hermano de la deuda `d022`**, que es
 la que ya dice que `scripts/tabla_de_cierre.py` localiza su tabla por un sitio fragil.
 
+> ### **CORRECCION DECLARADA, ESCRITA EN LA VUELTA 47 AL LADO DEL TEXTO VIEJO, QUE NO SE BORRA** (`ACTA 45`, TAREA 1.a)
+>
+> **EL `116` DE ARRIBA NO LLEVA EL INSTANTE EN QUE SE MIDIO, Y SIN INSTANTE MANDA AL LECTOR A UN
+> NUMERO QUE EL ARBOL YA NO DA.** El instrumento corrido **en la vuelta 47** da `115`:
+>
+> <!-- TALLADO: parcial salida=.v47/tallado_47.txt -->
+>
+>     $ python scripts/tallar_reporte.py
+>     tablas que declaran instrumento : 198
+>       talladas, celda a celda       : 115
+>       que DIFIEREN de su instrumento: 0
+>     TALLADO VERDE: las 115 tabla(s) comprobables son las de su instrumento, celda a celda.
+>
+> **`115` es tambien lo que dieron la corrida del auditor y la del arnes del `19 sep`** (`ACTA 45`,
+> y el arnes lo deja escrito en `docs/loop/loop.log`). **No investigo de donde salio el `116`**: la
+> correccion que esta fila pide es que el lector de manana **no se crea una cifra de guarda sin su
+> fecha al lado**. El texto viejo queda entero, que es lo que manda el manual principio 6.
+
 **Y UN SEGUNDO EJEMPLAR, SIN BUSCARLO, DE LA PREGUNTA DE `D.55` QUE LA `ACTA 44` `44.5.b` DEJO
 ABIERTA:** la cifra de fidelidad que corregi en `HH.1` era falsa **dentro de una ficha en
 cuarentena**, y ninguna guarda la ve. **Lo que esta vuelta anade es el remedio barato que se me
@@ -44522,3 +44540,57 @@ quedan en cuarentena hasta que su lote cierre*.
 **TERCERA VUELTA SEGUIDA CON LA PUERTA CERRADA, Y LA CONCLUSION ES LA MISMA: CERO INSERCIONES.**
 No es una parada: el encargo de hoy no pide insertar, pide terminar de minar, y por eso esto va en
 la apertura y no en una fila de tarea.
+
+## II.1. TAREA 1. **LOS REGISTROS DE LA `ACTA 45`: TRES FILAS DE REGISTRO, CERO REPARACIONES**
+
+**Esta tarea NO es de reparacion.** La `ACTA 45` lo dice con la medida delante: *ninguna guarda de
+DATO esta en rojo*, y las cuatro que bloquean (`gate`, cerrojo, censo no decreciente y la fidelidad
+`D.30`) salen verdes en `II.0`. **Asi que aqui solo se registra.**
+
+### II.1.a. **LA CORRECCION DECLARADA DEL `116`, ESCRITA AL LADO DEL TEXTO VIEJO**
+
+**Hecha, y su sede es `HH.5.e` y no esta seccion**: la correccion va pegada al parrafo que publico
+el `116`, en forma de cita, con el texto viejo entero encima. Lo que se escribio alli es la salida
+del instrumento **corrido en esta vuelta**, que da `115`:
+
+<!-- TALLADO: parcial salida=.v47/tallado_47.txt -->
+
+    $ python scripts/tallar_reporte.py
+    tablas que declaran instrumento : 198
+      talladas, celda a celda       : 115
+      que DIFIEREN de su instrumento: 0
+    TALLADO VERDE: las 115 tabla(s) comprobables son las de su instrumento, celda a celda.
+
+**Y NO INVESTIGO DE DONDE SALIO EL `116`**, porque el encargo dice expresamente que no hace falta:
+lo que la fila pide es que **una cifra de guarda no viaje sin su instante escrito**. La diferencia
+de `1` entre `116` y `115` cae entre dos commits mios y de nadie mas, y **este reporte crece por
+anexion**: cada vuelta que anexo tablas mueve el denominador comprobable. **Eso es contraste, no
+discrepancia** (`EXTRACTOR.md` 5).
+
+### II.1.b. **LAS TRES DEUDAS NUEVAS: DICHAS Y NO PAGADAS** (`D.55`)
+
+**Ninguna se paga hoy.** `D.55` manda que se paguen juntas en la vuelta de saneamiento, y la ultima
+fue la `44` (`II.0`). Las tres existen en el registro de la deuda y no en mi memoria:
+
+<!-- TALLADO: parcial salida=.v47/deudas_nuevas.txt -->
+
+    $ python scripts/deuda.py | grep -E "d027|d028|d029"
+      d027   46      fidelidad          CORREGIR SIN BORRAR el entregable_esperado de reunir
+      d028   46      maquinaria         src/tablero.py:214 publica en capitulos_minados los
+      d029   46      maquinaria         El tallado de D.41 casa las filas por su primera cel
+
+| id | que es, en una linea | por que no la pago hoy |
+|---|---|---|
+| **`d027`** | el `entregable_esperado` de `reunir_informacion_gerencial_vias_variadas` dice *las seis en uso* y `L145` dice *many ways* | no es `PUENTE` de paso (`D.30` cuenta pasos) ni `CIFRA PUBLICADA` (una ficha de cuarentena no es sede de `5.2`). **El nodo no entrara asi, y entrar no es hoy** |
+| **`d028`** | `src/tablero.py:214` cuenta `cap_04` como minado con `8` de sus `22` nodos, y `--puedo` deriva de ahi *continua desde el capitulo siguiente* | **`D.45` prohibe tocar `src/`** con dos frentes en paralelo. **Se neutraliza con una linea, no con codigo**, y esa linea es `II.2.a` |
+| **`d029`** | el tallado casa filas por su primera celda, y una tabla con la primera celda repetida da rojo siendo identica a su instrumento | **es maquinaria**, y la moratoria de `EXTRACTOR.md` 13 me deja fuera. Mi arreglo de la vuelta 46 (regenerar con columna de numero de par) es el correcto **y lo vuelvo a usar hoy sin tocar el script** |
+
+### II.1.c. **`d024` SIGUE PENDIENTE A PROPOSITO, Y ESTA VUELTA TAMPOCO LA ABRE**
+
+Los `7` candidatos de `cap_02` sin informe por candidato **se corren la vuelta que abra la insercion
+del lote 7**, porque su tramo no se puede dimensionar sin ellos. **Hoy no abro esa vuelta**, y la
+puerta de `D.39` la volvi a medir en `II.0`: **cerrada**.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `II.1` | los registros de la `ACTA 45` | **CERRADA**: la correccion del `116` escrita al lado del texto viejo con el instrumento de hoy (`115`), las tres deudas nuevas nombradas con su motivo de no pago, y `d024` dicha y no abierta |
