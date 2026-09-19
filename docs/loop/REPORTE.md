@@ -47648,3 +47648,246 @@ palabras.**
 trae **`3`** en un candidato de `5` pasos, o sea **dentro de lo medido**. **Y no cambio el paso `4`
 para bajar la senial**: el libro escribe `If such meetings are held regularly`, y quitarlo o
 engordarlo para complacer a un umbral seria escribir yo lo que el libro no escribe.
+
+### LL.2.i. **CANDIDATO `3` DE `3`: `P44`, `canalizar_interrupciones_cartel_hora_oficina`**
+
+| | |
+|---|---|
+| **pieza y rango** | `P44`, `L321 a L323`, **`201` palabras**, las de `HH.2.c` y recomputadas en `LL.2.d` |
+| **frontera dentro del nodo** | L321 y L323, con L322 en blanco. **Cero solapes**, y **no toma nada de L319**, que es `P43` y no tiene nodo por `P.19` |
+| **pasos** | **`8`** |
+| **fidelidad `D.30` en el acto** | **`8` TRANSCRIPCION, `0` PUENTE** |
+| **el texto del cartel** | **TRANSCRIPCION, y lo digo por su nombre** porque el encargo lo pide: el libro escribe el cartel entero entre comillas y el paso `3` lo traslada entero, **incluida la hora**. NO lo reescribo, y por eso no es puente |
+| **puentes que estuve a punto de escribir** | **`2`, declarados dentro de la ficha**: EL PERIODO (cada cuanto y cuanto dura la hora de oficina abierta) y EL DESTINATARIO (acordar el cartel con el equipo o avisar al jefe) |
+
+**LA FIDELIDAD, PASO A PASO Y CONTRA SU RENGLON**, con el `sed` pegado en `LL.2.c` filas `3` y `4`:
+
+| paso | linea | de donde sale | veredicto |
+|---:|---|---|---|
+| 1 | L321 | `If the people who interrupt you knew how much they were disturbing you, they would probably police themselves more closely and cut down on the number of times they felt they had to talk to you right away` | **TRANSCRIPCION** |
+| 2 | L321 | `In any case, a manager should try to force his frequent interrupters to make an active decision about whether an issue can wait` | **TRANSCRIPCION** |
+| 3 | L321 | `So, instead of going into hiding, a manager can hang a sign on his door that says, I am doing individual work. Please do not interrupt me unless it really cannot wait until 2:00` | **TRANSCRIPCION**, con el texto del cartel dentro |
+| 4 | L321 | `Then hold an open office hour, and be completely receptive to anybody who wants to see you` | **TRANSCRIPCION** |
+| 5 | L321 | `The key is this: understand that interrupters have legitimate problems that need to be handled. That is why they are bringing them to you` | **TRANSCRIPCION** |
+| 6 | L321 | `But you can channel the time needed to deal with them into organized, scheduled form by providing an alternative to interruption, a scheduled meeting or an office hour` | **TRANSCRIPCION** |
+| 7 | L323 | `The point is to impose a pattern on the way a manager copes with problems` | **TRANSCRIPCION** |
+| 8 | L323 | `To make something regular that was once irregular is a fundamental production principle, and that is how you should try to handle the interruptions that plague you` | **TRANSCRIPCION** |
+
+> **LA MISMA LICENCIA QUE EN `LL.2.g`, DECLARADA:** las contracciones del libro (`don't`, `can't`,
+> `That's`, `they're`, `that's`) van desatadas en esta tabla por mecanica de escritura. **El renglon
+> literal esta pegado sin tocar en la ficha** y sus lineas enteras estan en `LL.2.c`.
+
+**LA PASADA DE ADUANA, CON SU RELOJ:**
+
+<!-- TALLADO: parcial salida=.v50/informe_03.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/canalizar_interrupciones_cartel_hora_oficina.json
+    poblacion del barrido       : 393   (346 del grafo mas 47 que esperan en bandejas)
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 3
+      por candidato bloqueado          : menor 3, mediana 3, mayor 3
+      que senial levanta cada vecindad  : similitud_texto 3
+
+<!-- TALLADO: parcial salida=.v50/reloj_c03.txt -->
+
+    reloj del candidato 3 (P44), pasada de aduana propia
+    segundos: 410.0
+
+### LL.2.j. **LOS TRES VECINOS DE `P44`: LOS TRES SON DE LA MISMA SECCION DEL LIBRO**
+
+<!-- TALLADO: parcial salida=.v50/informe_03.txt -->
+
+    [BLOQUEARIA] canalizar_interrupciones_cartel_hora_oficina
+        vecino preparar_respuestas_estandar_interrupciones_repetidas  [levantada por: similitud_texto]
+          similitud_texto 0.385 | familia_id 0.111 | paso_contra_nodo 0.472
+          paso 5 del candidato contra paso 4 de preparar_respuestas_estandar_interrupciones_repetidas
+        vecino buscar_regularidad_bloques_iguales_trabajo_mando  [levantada por: similitud_texto]
+          similitud_texto 0.371 | familia_id 0.000 | paso_contra_nodo 0.471
+          paso 8 del candidato contra paso 4 de buscar_regularidad_bloques_iguales_trabajo_mando
+        vecino agrupar_interrupciones_subordinados_reuniones_regulares  [levantada por: similitud_texto]
+          similitud_texto 0.408 | familia_id 0.111 | paso_contra_nodo 0.422
+          paso 8 del candidato contra paso 2 de agrupar_interrupciones_subordinados_reuniones_regulares
+
+| vecino | senial | mi lectura |
+|---|---:|---|
+| `agrupar_interrupciones_subordinados_reuniones_regulares` (`P42`) | `0,408` de senial `1` | **HERMANO, y la arista es mas fuerte que la de hermano suelto**: mi paso `6` ofrece como alternativa *una reunion programada*, y quien despliega esa reunion programada como operacion propia es `P42`. **Este la nombra y no repite sus pasos** |
+| `preparar_respuestas_estandar_interrupciones_repetidas` (`P41`) | `0,385` de senial `1` | **HERMANO.** Tercer remedio contra primer remedio de la misma seccion, sin un paso en comun |
+| `buscar_regularidad_bloques_iguales_trabajo_mando` (`P39`) | `0,371` de senial `1` | **HERMANO.** Mi paso `8` manda volver regular lo que era irregular, y aquel es donde esa regularidad se ejecuta sobre el calendario propio |
+
+**LOS TRES ESTAN POR DEBAJO DE `0,4` SALVO UNO, Y NINGUNO PASA LA SENIAL `3`.** Y lo que dice esta
+vecindad no es una sospecha de duplicado: **es que un capitulo trata un tema.** `EXTRACTOR.md` 12 lo
+escribe con esas palabras, y **lo que NO se hace es subir un umbral para que la cola se acorte.**
+
+### LL.2.k. **`cap_04` CIERRA: `22` DE `22`, Y LA PUERTA SE VUELVE A MEDIR**
+
+**Los tres candidatos salieron `0 CAERIA` y `0` choques dentro del lote**, asi que no hay averia
+que declarar (encargo, `TAREA 2`: un `CAERIA` si lo seria).
+
+| | |
+|---|---:|
+| nodos que la frontera de `HH.2.c` da en `cap_04` | **`22`** |
+| fichas de `cap_04` en la bandeja al cerrar esta tarea | **`22`** |
+| pasos escritos hoy | **`19`** (`6` mas `5` mas `8`) |
+| `PUENTE` de esos `19` | **`0`** |
+| pasadas de aduana gastadas | **`3` de un techo de `3`** |
+
+**Y LO QUE ESTO NO ES: NO CIERRA EL LOTE 7.** `grove_high_output` tiene `18` capitulos y lleva
+**cuatro** minados (`cap_01` a `cap_04`). **La puerta de `D.39` sigue midiendo `False`** en
+`LL.0.a`, asi que **cero inserciones**, y meter uno de estos tres antes de que el lote cierre
+**seria una caida de dato y no un adelanto** (`EXTRACTOR.md` 15.7).
+
+| tarea | que pide | estado |
+|---|---|---|
+| `LL.2` | cerrar `cap_04` con `P41`, `P42` y `P44`, con su frontera dentro, su fidelidad paso a paso y su aduana en el acto | **CERRADA ENTERA en `LL.2`**: `3` de `3` escritos y pasados, `0 CAERIA`, `0` choques, `19` pasos con `0` PUENTE, `12` vecindades leidas una a una, relojes `639,0`, `335,0` y `410,0` s, y `cap_04` en `22` de `22` |
+
+## LL.3. TAREA 3. **`d036` Y `d038` PAGADAS: NUEVE CORRECCIONES DECLARADAS, CERO PASADAS DE ADUANA**
+
+**Las nueve estan DENTRO de la ficha, que es donde sobreviven al reporte**, y ninguna borra una
+letra del texto viejo (manual principio 6). **Cero pasadas de aduana**, por adjudicacion `3.c` del
+encargo, y la adjudicacion la firmo el auditor contra su propio encargo anterior: **un cambio de
+`2.360` caracteres en `d032` no movio ni un vecino, y esto son numeros de dos y tres cifras.**
+
+### LL.3.a. **`d036`: EL RECUENTO VA PRIMERO, PORQUE SI DISCREPABA ESTO ERA UNA PARADA**
+
+**El encargo me prohibe inventar una tercera cifra y me manda parar si mi recuento no da el de la
+frontera. Asi que lo corri ANTES de escribir ninguna correccion:**
+
+<!-- TALLADO: script=.v50/palabras_d036.py salida=.v50/palabras_d036.txt -->
+
+    ficha                                          pieza rango        dice  HH.2.c  cuento  veredicto
+    reunir_informacion_gerencial_vias_variadas     P7    L145 a L147    356   210     210    la frontera manda
+    escalonar_fuentes_informacion_gerencial        P9    L153 a L153    208   183     183    la frontera manda
+    programar_visita_area_observar_despachar       P10   L155 a L157    337   236     236    la frontera manda
+    transmitir_objetivos_prioridades_preferencias  P11   L159 a L159    197   160     160    la frontera manda
+    empujar_persona_reunion_direccion_preferida    P13   L167 a L167    174   147     147    la frontera manda
+    subir_productividad_gerencial_tres_vias        P18   L195 a L201     62    60      60    la frontera manda
+    buscar_actividad_alta_palanca_tres_vias        P19   L203 a L213    118    76      76    la frontera manda
+    elegir_momento_actividad_palanca_maxima        P20   L215 a L217    297   237     237    la frontera manda
+
+    fichas leidas: 8 ; mi recuento coincide con la frontera en 8 ; cifras declaradas que discrepan: 8
+
+**LAS OCHO CUADRAN CONTRA LA FRONTERA Y LAS OCHO DISCREPAN DE LO QUE LA FICHA DECLARABA: NO HAY
+PARADA QUE TRAER.** Y tres cosas de ese instrumento que valen mas que su salida:
+
+- **la columna `dice` no la teclee**: se saca de la propia ficha con una expresion regular;
+- **la columna `HH.2.c` tampoco**: se lee fila a fila de la tabla de frontera publicada en este
+  mismo reporte;
+- **el recuento es el mismo de `.v46/frontera.py` linea `136`**, no un tokenizador nuevo. **Si
+  hubiera usado otro, la comprobacion no habria comprobado nada.**
+
+### LL.3.b. **LAS OCHO CORRECCIONES, ESCRITAS DENTRO DE CADA FICHA Y SIN BORRAR EL NUMERO VIEJO**
+
+<!-- TALLADO: script=.v50/corregir_d036.py salida=.v50/corregir_d036.txt -->
+
+    corregida reunir_informacion_gerencial_vias_variadas     P7  356 pasa a leerse 210
+    corregida escalonar_fuentes_informacion_gerencial        P9  208 pasa a leerse 183
+    corregida programar_visita_area_observar_despachar       P10  337 pasa a leerse 236
+    corregida transmitir_objetivos_prioridades_preferencias  P11  197 pasa a leerse 160
+    corregida empujar_persona_reunion_direccion_preferida    P13  174 pasa a leerse 147
+    corregida subir_productividad_gerencial_tres_vias        P18  62 pasa a leerse 60
+    corregida buscar_actividad_alta_palanca_tres_vias        P19  118 pasa a leerse 76
+    corregida elegir_momento_actividad_palanca_maxima        P20  297 pasa a leerse 237
+
+    fichas corregidas por correccion declarada: 8
+
+**CADA CORRECCION LLEVA DENTRO EL RENGLON DEL INSTRUMENTO QUE LA SOSTIENE**, pegado fila a fila, que
+es lo que deja recontarla sin salir de la ficha. **Y el texto de la correccion no lo teclee ocho
+veces**: sale de una plantilla que rellena con las tres cifras leidas del fichero del instrumento,
+porque **teclear ocho veces la misma frase con ocho numeros distintos es exactamente el metodo que
+produjo las ocho cifras que hoy pago.**
+
+### LL.3.c. **`d038`: LA LINEA DEL METODO QUE DEJO DE REPRODUCIRSE PORQUE SE MIDE A SI MISMA**
+
+<!-- TALLADO: parcial salida=.v50/d038_grep.txt -->
+
+    $ grep -l "PIEZA P34" cuarentena/grove_high_output/*.json
+    cuarentena/grove_high_output/decir_no_trabajo_excede_capacidad.json
+    cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json
+    cuarentena/grove_high_output/usar_calendario_herramienta_planificacion_produccion.json
+      fichas: 3
+
+    $ grep -l "Sale de la PIEZA P34" cuarentena/grove_high_output/*.json
+    cuarentena/grove_high_output/decir_no_trabajo_excede_capacidad.json
+    cuarentena/grove_high_output/usar_calendario_herramienta_planificacion_produccion.json
+      fichas: 2
+
+**`3` CONTRA `2`, Y EL TERCERO ES LA PROPIA FICHA.** La afirmacion que la linea sostiene **es cierta
+y no cambia**: `P34` es madre de esas dos. **Lo defectuoso es la linea del metodo**, y la declare yo
+mismo en `KK.2.e` antes de que nadie me la senialara.
+
+**LA CORRECCION ESCRITA DENTRO DE LA FICHA CAMBIA EL COMANDO Y DEJA EL VIEJO EN PIE**, y lleva
+pegados los dos renglones de arriba. **Y la leccion, que vale mas que la linea:**
+
+> **UNA CITA DE METODO ESCRITA DENTRO DEL OBJETO QUE MIDE DEJA DE REPRODUCIRSE EN CUANTO EL OBJETO
+> ENTRA EN LA POBLACION QUE EL METODO BARRE.**
+
+### LL.3.d. **LO QUE ESTAS NUEVE CORRECCIONES NO TOCARON, MEDIDO POR DIFERENCIA Y NO PROMETIDO**
+
+<!-- TALLADO: script=(comparacion campo a campo contra HEAD) salida=.v50/pasos_intactos.txt -->
+
+    las 9 fichas corregidas, comparadas con HEAD campo a campo
+    reunir_informacion_gerencial_vias_variadas         campos cambiados: ['resumen_teorico']   pasos identicos: True
+    escalonar_fuentes_informacion_gerencial            campos cambiados: ['resumen_teorico']   pasos identicos: True
+    programar_visita_area_observar_despachar           campos cambiados: ['resumen_teorico']   pasos identicos: True
+    transmitir_objetivos_prioridades_preferencias      campos cambiados: ['resumen_teorico']   pasos identicos: True
+    empujar_persona_reunion_direccion_preferida        campos cambiados: ['resumen_teorico']   pasos identicos: True
+    subir_productividad_gerencial_tres_vias            campos cambiados: ['resumen_teorico']   pasos identicos: True
+    buscar_actividad_alta_palanca_tres_vias            campos cambiados: ['resumen_teorico']   pasos identicos: True
+    elegir_momento_actividad_palanca_maxima            campos cambiados: ['resumen_teorico']   pasos identicos: True
+    dimensionar_numero_subordinados_medio_dia_semanal  campos cambiados: ['resumen_teorico']   pasos identicos: True
+
+    fichas cuyo UNICO campo cambiado es resumen_teorico: 9 de 9
+
+**NI UN PASO, NI UNA ATRIBUCION, NI UNA FUENTE, NI UN TITULO.** Es lo que el encargo dice que esto
+es (*no es un puente, no mueve un paso y no toca una atribucion*), **y lo mido en vez de repetirlo.**
+
+**Y EL TEXTO VIEJO SIGUE EN PIE EN LAS NUEVE**, que es lo que convierte esto en correccion declarada
+y no en borrado:
+
+<!-- TALLADO: parcial salida=.v50/d036_intacto.txt -->
+
+    el numero VIEJO sigue escrito en la ficha, y la correccion se lee al lado
+    reunir_informacion_gerencial_vias_variadas     P7   viejo 356 en pie: True    correccion escrita: True
+    escalonar_fuentes_informacion_gerencial        P9   viejo 208 en pie: True    correccion escrita: True
+    programar_visita_area_observar_despachar       P10  viejo 337 en pie: True    correccion escrita: True
+    transmitir_objetivos_prioridades_preferencias  P11  viejo 197 en pie: True    correccion escrita: True
+    empujar_persona_reunion_direccion_preferida    P13  viejo 174 en pie: True    correccion escrita: True
+    subir_productividad_gerencial_tres_vias        P18  viejo  62 en pie: True    correccion escrita: True
+    buscar_actividad_alta_palanca_tres_vias        P19  viejo 118 en pie: True    correccion escrita: True
+    elegir_momento_actividad_palanca_maxima        P20  viejo 297 en pie: True    correccion escrita: True
+
+    d038: la linea vieja sigue en pie: True   correccion escrita: True
+
+**LAS DOS GUARDAS DE UNA LINEA QUE EL ENCARGO SI ME PIDE, sobre el arbol con las nueve dentro:**
+
+<!-- TALLADO: parcial salida=.v50/t3_gate.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+
+<!-- TALLADO: parcial salida=.v50/t3_guiones.txt -->
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+**NINGUNA FICHA ROTA**, que es lo unico que estas dos guardas pueden certificar de nueve
+correcciones de prosa.
+
+### LL.3.e. **LO QUE PROPUSE EN `KK.5.j` Y EL AUDITOR NO TOMO, DICHO SIN REABRIRLO**
+
+**Mi propuesta `4` de la vuelta 49 pedia que la linea del metodo de `P38` se rehiciera EN la pasada
+de aduana de esta vuelta**, para que saliera gratis. **El encargo adjudica lo contrario en `3.c`:
+que las nueve se escriben sin pasada propia.** No lo discuto y lo recojo, **y digo por que la
+adjudicacion es mejor que mi propuesta**: la mia daba por supuesto que `P38` iba a pasar la aduana
+hoy, y hoy **`P38` no se inserta ni se vuelve a medir**, porque el lote no cierra. **Mi propuesta
+habria comprado una pasada de `1017,3` s para un cambio que no mueve ni un vecino.**
+
+| tarea | que pide | estado |
+|---|---|---|
+| `LL.3` | pagar `d036` y `d038`: nueve correcciones declaradas sin borrar, y cero pasadas de aduana | **CERRADA en `LL.3`, las dos deudas PAGADAS**: `8` mas `1` correcciones escritas dentro de su ficha con su renglon pegado, `9` de `9` con solo `resumen_teorico` tocado, texto viejo en pie en las nueve, `gate` y `guiones` verdes, y **cero pasadas de aduana gastadas** |
