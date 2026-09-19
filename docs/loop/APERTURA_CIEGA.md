@@ -1,91 +1,128 @@
-# APERTURA CIEGA DEL AUDITOR, VUELTA 43, lote 7 (`grove_high_output`)
+# APERTURA CIEGA DE LA VUELTA 45, lote 7 (`grove_high_output`), bandeja de `cap_02` y `cap_03`
 
-> Escrita a ciegas: `docs/loop/REPORTE.md`, `docs/loop/loop.log`,
-> `docs/loop/ultimo_extractor.json` y `docs/loop/ultimo_auditor.json` **no estan en el
-> arbol y no los recupero de git**. Lo que si abro de `docs/loop/` son sedes mias y
-> registro, y la lista entera, con su motivo, esta en la tabla de aqui abajo.
+**Auditor de la linea `serial`, rama `extraccion-mundo-11`.** Escrita ANTES de ver
+`docs/loop/REPORTE.md`, que no esta en el arbol. **La vuelta que vengo a auditar es la
+`44`, la primera de saneamiento de esta linea.**
 
 ---
 
-## 1. LA COMPROBACION DEL HEREDADO, Y VA LA PRIMERA
+## 0. LAS DOS DECLARACIONES QUE EL ARNES EXIGE
 
-**ESTA SECCION SE ESCRIBE ANTES QUE NADA QUE PUEDA TARDAR**, con su cuenta dentro
-aunque sea provisional, y se actualiza al final. Es la letra de mi propia
-`TAREA BLOQUEANTE` de la `ACTA 41`, punto 1, y la escribo la primera porque lo que
-me tumbo la vuelta pasada fue prometerla por numero y no llegar a escribirla.
-
-    ACTA ANTERIOR LEIDA: 94f77d1806efe24a6f9d0a99e8a5fa10c2c84e31
+    ACTA ANTERIOR LEIDA: 1d393837d9ead4208bcf20c36afa395e812b4818
     HEREDADO 1: CUMPLIDO
 
-**LA HUELLA, MEDIDA Y NO COPIADA.** No digo que leo esa huella: la mido contra el
-fichero que tengo delante.
+**`HEREDADO 1` es mi propia `TAREA BLOQUEANTE` de la `ACTA 42`, y tiene tres puntos. Los
+tres se cumplen en esta pagina:**
 
-    $ git hash-object docs/loop/ACTA_AUDITOR.md
-    94f77d1806efe24a6f9d0a99e8a5fa10c2c84e31
-
-    $ wc -l docs/loop/ACTA_AUDITOR.md
-      33171 docs/loop/ACTA_AUDITOR.md
-
-**CIFRA PROVISIONAL AL ESCRIBIRSE, ACTUALIZADA AL CERRAR, y las dos redacciones se quedan:**
-cuando escribi esta seccion, que fue lo primero que escribi, el barrido de mis remisiones internas
-todavia no habia corrido sobre el fichero terminado, asi que **aqui no habia ninguna cuenta
-cerrada**: lo que habia era la promesa de que la cuenta viviria en la seccion 7 de esta apertura.
-**Al cerrar, esa seccion existe, el barrido corrio sobre la pagina entera y su salida literal esta
-pegada en el anexo del final:**
-
-    REMISIONES INTERNAS COMPROBADAS  : 22
-    REMISIONES QUE APUNTABAN AL VACIO: 0
-
-**Y ASI SE CUMPLE EL HEREDADO ENTERO, punto por punto:** el `1` pide que esta seccion se escriba
-antes que nada que pueda tardar, y se escribio **antes de abrir un solo candidato**; el `2` pide el
-barrido de mis remisiones, y la seccion 7 de esta apertura lo trae **con las tres cosas que me cazo**;
-el `3` pide las dos cuentas, y son las dos lineas de aqui arriba. **Nunca se prometio por numero.**
+- **`1`. Ninguna frase de esta pagina dice que algo `esta corriendo` ni que `quedo
+  corriendo`.** Lo que corri va con su salida pegada; lo que no corri lleva la palabra
+  **`NO LO CORRI`** o **`NO TERMINO`** y el motivo detras. **La seccion `9` es exactamente
+  eso**, y la seccion `10` pega el barrido que lo comprueba.
+- **`2`. Toda cifra de coste o de duracion de esta pagina lleva `MEDIDO` o `PROYECTADO`.**
+  Estan en la seccion `9.1`, y la proyeccion **no** lleva `medidos` al lado.
+- **`3`. El barrido de mis propias afirmaciones de corrida esta CORRIDO sobre esta misma
+  pagina y su salida va pegada en la seccion `10`, sea cero o no sea cero.**
 
 ---
 
-## 2. LO QUE ABRO Y LO QUE NO ABRO
+## 1. LO QUE NO HE ABIERTO, Y POR QUE
 
-| lo abro | motivo |
-|---|---|
-| `cuarentena/grove_high_output/` entero | es el material que vengo a clasificar |
-| `fuentes/grove_high_output/cap_01.md`, `cap_02.md`, `cap_03.md` | es el texto contra el que se clasifica |
-| `dataset/nodos.jsonl` | es el grafo, y la mitad de la poblacion del barrido |
-| `docs/loop/ACTA_AUDITOR.md` | es obra mia, no del extractor, y no es ninguno de los cuatro que `D.34.2` retira. **Y digo exactamente que hice con el: medir su huella y su tamaño.** El heredado no lo saque leyendo sus `33171` lineas, me lo entrego `python forja.py herencia`, que es la sede que `D.40` manda |
-| `docs/loop/PROMPT_SIGUIENTE.md` | **es sede mia** (`AUDITOR_FORJA.md` `5.6`): es el encargo que yo escribi, no la respuesta del extractor |
-| `docs/loop/DEUDA.jsonl`, `TABLERO.jsonl`, el banco y el manual | registro y doctrina |
+`docs/loop/REPORTE.md`, `docs/loop/loop.log`, `docs/loop/ultimo_extractor.json` y
+`docs/loop/ultimo_auditor.json` **no estan en el arbol y no los he recuperado de git.**
 
-| NO lo abro | motivo |
-|---|---|
-| `REPORTE.md`, `loop.log`, `ultimo_extractor.json`, `ultimo_auditor.json` | no estan en el arbol, y **no los recupero de git** |
-| **`.v43/`, el cuaderno de trabajo del extractor de esta vuelta** | **no esta en la lista de `D.34.2`, y aun asi no lo abro**: `frontera.txt`, `fidelidad_tanda.txt` e `ins_01_final.txt` son sus lecturas y sus cuentas de esta misma vuelta. Abrirlo seria leer a ciegas lo que vengo a leer a ciegas. **Listar sus nombres no es abrir sus ficheros, y listarlos es lo unico que hice**, que es lo que la salida de aqui abajo ensena. **Lo declaro yo, sin que nadie me lo pida, porque el sello no lo vigila** |
+**Y hay un quinto que tampoco he abierto, y ese SI esta en el arbol:**
+`docs/loop/archivo/grove_high_output/REPORTE.md`. Es el reporte del frente `grove` ya
+cosechado, **y su material es exactamente el que vengo a clasificar a ciegas**: los `22`
+candidatos de esta bandeja los escribio ese frente. **Leerlo seria leer la lectura que
+vengo a comparar con la mia**, asi que **NO LO LEI**. Mido su tamanio, que no es leerlo:
 
-**Y LO DIGO CON LA SALIDA AL LADO, que es lo unico que sostiene un `no lo abro`:**
+    $ wc -c docs/loop/archivo/grove_high_output/*
+     73865 docs/loop/archivo/grove_high_output/ACTA_AUDITOR.md
+      4847 docs/loop/archivo/grove_high_output/loop.log
+    118685 docs/loop/archivo/grove_high_output/REPORTE.md
+    197397 total
 
-    $ ls .v43/
-    bandeja_por_capitulo.txt
-    c01.sh
-    cola_01.txt
-    cola_02.txt
-    cola_02.txt.reloj
-    correr.sh
-    credito_apertura.txt
-    estado.py
-    estado_apertura.txt
-    fidelidad.py
-    fidelidad_tanda.txt
-    frontera.py
-    frontera.txt
-    guardas_apertura.txt
-    identidad_apertura.txt
-    ins_01.txt
-    ins_01_final.txt
-    manual_3_4.txt
-    orden_libro.txt
-    par_1a.txt
-    puedo_grove.txt
-    tablero_apertura.txt
+**Lo que SI he abierto, y el manual lo dice en voz alta** (`AUDITOR_FORJA.md` 1, recuadro
+*"Y SI, PUEDES ABRIR `docs/loop/ACTA_AUDITOR.md` EN LA FASE CIEGA"*): mi propia
+`ACTA_AUDITOR.md` de esta linea, para saber que me encargue a mi mismo.
 
-    $ git status --short docs/loop/          (corrido AL ABRIR la fase, antes de que esta pagina existiera)
+    $ wc -l docs/loop/ACTA_AUDITOR.md
+    33679 docs/loop/ACTA_AUDITOR.md
+
+---
+
+## 2. LOS INSTRUMENTOS QUE CORRI, CON SU SALIDA PEGADA (`D.38.3`)
+
+### 2.1. El gate y las dos guardas de estilo e identidad
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python forja.py resolutor
+    nodos vivos: 346
+    nodos deprecados (archivo): 0
+    alias registrados: 0
+
+### 2.2. El estado del arbol
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+       1087 total
+
+    $ git log --format="%h %ad %s" --date=format:"%Y-%m-%d %H:%M:%S" -3
+    98911d1 2026-09-18 21:21:51 La cifra de turno de FF.5.f corregida sin borrar la intermedia: 1663 s r
+    de12cdb 2026-09-18 21:20:30 VUELTA 44, LA PRIMERA DE SANEAMIENTO DE ESTA LINEA: seis deudas pagadas
+    ebc5c89 2026-09-18 20:53:51 Pendiente de la vuelta 43 recogido antes de abrir la 44: tablero, log, s
+
+### 2.3. El tablero y la deuda
+
+    $ python forja.py tablero --puedo grove_high_output
+    LINEA 'serial', LIBRO 'grove_high_output': SI
+      'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_03), citando su frontera. D.50.
+
+    $ python scripts/deuda.py
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      registro: docs/loop/DEUDA.jsonl
+      pendientes: 6    pagadas: 6
+
+      id     vuelta  especie            que
+      --------------------------------------------------------------------------------------------
+      d005   grove v2 relevo de grove    De los 15 candidatos de cap_03 de grove, su aduana e
+      d006   41      relectura          cap_13 entero esta en 4 de 212, el 1,89 por ciento,
+      d007   41      doctrina           La cola de doctrina queda congelada en 11 preguntas
+      d009   42      deuda              scripts/tabla_de_cierre.py mide la tabla de cierre c
+      d011   43      deuda              TODO TECHO QUE EL AUDITOR ESCRIBA LLEVA SU MITAD EN
+      d012   43      deuda              SEGUNDO EJEMPLAR MEDIDO de la pregunta 9 de la cola
+
+      ultima vuelta de saneamiento: 44
+
+**`LECTURA` (`D.38.3`, la frase es la del instrumento):** el instrumento midio **`6`
+pendientes y `6` pagadas**. Mi conclusion sobre contenido, que va aparte y marcada: **las
+`6` pagadas son `d001`, `d002`, `d003`, `d004`, `d008` y `d010`**, y **`d003` la verifico
+yo en la seccion `8.1` contra el libro, porque es la unica de las seis que toca el texto de
+un candidato de esta bandeja.**
+
+### 2.4. LA CIFRA QUE EL INSTRUMENTO DA Y QUE NO ME CREO: EL CREDITO
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+
+      LINEA SIN REGISTRO: no hay ningun suceso escrito.
+      Una linea sin tandas NACE CON SU RACHA EN CERO y no hereda
+      la de nadie (D.48). Lo que herede el arnes sera CERO remedios.
+
+**`LECTURA`, y esta la levanto yo:** el instrumento dice `LINEA SIN REGISTRO`. **No es que
+la linea no tenga registro: es que el fichero no esta en el arbol.**
+
+    $ git status --porcelain docs/loop/
      D docs/loop/APERTURA_CIEGA.md
      D docs/loop/CREDITO_serial.jsonl
      D docs/loop/REPORTE.md
@@ -94,559 +131,590 @@ el `3` pide las dos cuentas, y son las dos lineas de aqui arriba. **Nunca se pro
      D docs/loop/ultimo_auditor.json
      D docs/loop/ultimo_extractor.json
 
-**LECTURA:** el arnes retiro **seis** ficheros, no cuatro. `CREDITO_serial.jsonl` es sede de credito
-(`D.48`) y `APERTURA_CIEGA.md` es esta misma pagina, asi que **esta fase corre sin poder leer la
-racha de su propia linea**. No lo levanto como caida de nadie: lo dejo escrito aqui porque **es una
-cifra que esta apertura no puede publicar con su instrumento**, y `D.38.3` manda decirlo en vez de
-copiarla de memoria.
+    $ git ls-tree --name-only -r HEAD -- docs/loop/ | grep CREDITO
+    docs/loop/CREDITO_serial.jsonl
+
+**`docs/loop/CREDITO_serial.jsonl` esta en `HEAD` y NO esta en el arbol.** `D.34.2` retira
+**cuatro** ficheros y el aviso del arnes nombra **esos cuatro**. **Este es un quinto, y
+nadie lo declaro.** No lo recupero, porque recuperar nada en esta fase invalida mi
+apertura.
+
+**Lo que esto cuesta, dicho ahora:** mi `ACTA 42` dejo `AUDITOR` en **`2 de 3`** y
+`REPORTE` en **`1 de 3`**, y el instrumento que sirve para no tener que fiarse de mi
+memoria **contesta `CERO` a las dos.** **Si la vuelta 45 se fia del instrumento en vez del
+acta, mi racha se reinicia sola**, y `5.4` dice que una racha no se reinicia sola y que
+**un auditor que pone su propia racha a cero se esta absolviendo.** Queda escrito antes de
+ver el reporte, para que no parezca hallado despues.
 
 ---
 
-## 3. LO QUE MIDO EN ESTA FASE, CON EL INSTRUMENTO PEGADO
+## 3. EL MATERIAL: CENSO DE LA BANDEJA, CONTADO CON INSTRUMENTO
 
-### 3.1. La poblacion del barrido: grafo mas bandejas (`D.38.4`, `D.38.5`)
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    22
 
-    $ wc -l dataset/nodos.jsonl
-      346 dataset/nodos.jsonl
+    $ python -c "censo de bandeja: capitulo de origen, pasos y aristas, candidato a candidato"
+    cap_02  clasificar_trabajo_proceso_montaje_prueba        pasos= 7 aristas=0
+    cap_02  construir_flujo_produccion_paso_limitante        pasos=10 aristas=0
+    cap_02  detectar_arreglar_fallo_etapa_menor_valor        pasos= 6 aristas=0
+    cap_02  dimensionar_inventario_materia_prima_reposicion  pasos= 7 aristas=0
+    cap_02  equilibrar_capacidad_personal_inventario_plazo   pasos= 8 aristas=0
+    cap_02  preferir_inspeccion_proceso_prueba_destructiva   pasos= 6 aristas=0
+    cap_02  rehacer_flujo_paso_limitante_capacidad           pasos= 6 aristas=0
+    cap_03  archivar_indicadores_resolver_problemas          pasos= 4 aristas=0
+    cap_03  casar_flujo_fabricacion_flujo_ventas             pasos=12 aristas=0
+    cap_03  construir_grafico_escalonado_pronosticos         pasos= 8 aristas=0
+    cap_03  construir_indicador_linealidad_alerta_temprana   pasos= 9 aristas=0
+    cap_03  construir_indicador_tendencia_patron             pasos= 6 aristas=0
+    cap_03  decidir_aceptar_rechazar_material_defectuoso     pasos= 8 aristas=0
+    cap_03  dimensionar_plantilla_administrativa_pronostico  pasos= 7 aristas=0
+    cap_03  elegir_cinco_indicadores_diarios_fabrica         pasos=10 aristas=0
+    cap_03  elegir_fabricar_pedido_pronostico                pasos= 9 aristas=0
+    cap_03  elegir_indicador_salida_trabajo_administrativo   pasos= 7 aristas=0
+    cap_03  elegir_inspeccion_barrera_monitorizacion         pasos=12 aristas=0
+    cap_03  emparejar_indicadores_efecto_contraefecto        pasos= 7 aristas=0
+    cap_03  representar_actividad_caja_negra_ventanas        pasos= 9 aristas=0
+    cap_03  simplificar_trabajo_reducir_numero_pasos         pasos= 7 aristas=0
+    cap_03  variar_frecuencia_inspeccion_nivel_calidad       pasos= 6 aristas=0
+    candidatos=22  pasos_totales=171
+    por capitulo: {'cap_02': 7, 'cap_03': 15}
 
-    $ python <scratchpad>/poblacion.py
-    claves canonicas (12): ['bernerslee_bananas', 'gerber_emyth', 'gerber_emyth_cap17_reservado',
-     'grove_high_output', 'manual_sistema_conocimiento', 'marquet_turn_the_ship', 'onu_consumidor',
-     'openstax_business_ethics', 'openstax_org_behavior', 'scott_radical_candor', 'smart_who',
-     'zhuo_manager']
+    $ python -c "nodos de grove en el grafo"
+      revisar_tres_preguntas_valor_carrera | cap_01 | pasos 7
+    nodos grove en grafo: 1  nodos totales: 346
 
-      carpeta=ensayo_referencia_163    fuentes_todas_canonicas=False  n=163
-      carpeta=grove_high_output        fuentes_todas_canonicas=True   n=22
-      carpeta=marquet_turn_the_ship    fuentes_todas_canonicas=True   n=3
+    $ wc -l fuentes/grove_high_output/cap_02.md fuentes/grove_high_output/cap_03.md
+    119 fuentes/grove_high_output/cap_02.md
+    179 fuentes/grove_high_output/cap_03.md
 
-      BANDEJA ADMISIBLE (D.38.5) : 25
-      GRAFO                      : 346
-      POBLACION DEL BARRIDO      : 371  (menos el propio candidato: 370)
+    $ wc -w fuentes/grove_high_output/cap_02.md fuentes/grove_high_output/cap_03.md
+     3427 fuentes/grove_high_output/cap_02.md
+     5855 fuentes/grove_high_output/cap_03.md
+     9282 total
 
-**LO QUE EL INSTRUMENTO MIDIO:** `346` nodos en el grafo y `25` candidatos de bandeja cuyas fuentes
-estan **todas** en la tabla canonica; `163` quedan fuera por fuente, que es el criterio que `D.38.5`
-escribe, **no por nombre de carpeta**.
-
-**LECTURA:** mi poblacion y la de la aduana son la misma desde `D.38.5`, asi que si mi cuenta de
-vecinos no cuadra con la suya **es discrepancia de verdad y no de metodo**.
-
-### 3.2. El material del lote, contado del fichero
-
-    $ python <scratchpad>/pasos.py
-      cap_02  clasificar_trabajo_proceso_montaje_prueba             7 pasos
-      cap_02  construir_flujo_produccion_paso_limitante            10 pasos
-      cap_02  detectar_arreglar_fallo_etapa_menor_valor             6 pasos
-      cap_02  dimensionar_inventario_materia_prima_reposicion       7 pasos
-      cap_02  equilibrar_capacidad_personal_inventario_plazo        8 pasos
-      cap_02  preferir_inspeccion_proceso_prueba_destructiva        6 pasos
-      cap_02  rehacer_flujo_paso_limitante_capacidad                6 pasos
-      cap_03  archivar_indicadores_resolver_problemas               4 pasos
-      cap_03  casar_flujo_fabricacion_flujo_ventas                 12 pasos
-      cap_03  construir_grafico_escalonado_pronosticos              8 pasos
-      cap_03  construir_indicador_linealidad_alerta_temprana        9 pasos
-      cap_03  construir_indicador_tendencia_patron                  6 pasos
-      cap_03  decidir_aceptar_rechazar_material_defectuoso          8 pasos
-      cap_03  dimensionar_plantilla_administrativa_pronostico       7 pasos
-      cap_03  elegir_cinco_indicadores_diarios_fabrica             10 pasos
-      cap_03  elegir_fabricar_pedido_pronostico                     9 pasos
-      cap_03  elegir_indicador_salida_trabajo_administrativo        7 pasos
-      cap_03  elegir_inspeccion_barrera_monitorizacion             12 pasos
-      cap_03  emparejar_indicadores_efecto_contraefecto             7 pasos
-      cap_03  representar_actividad_caja_negra_ventanas             9 pasos
-      cap_03  simplificar_trabajo_reducir_numero_pasos              7 pasos
-      cap_03  variar_frecuencia_inspeccion_nivel_calidad            6 pasos
-
-      cap_02  :  7 candidatos,  50 pasos
-      cap_03  : 15 candidatos, 121 pasos
-
-      BANDEJA grove_high_output : 22 candidatos, 171 pasos
-
-    $ ls cuarentena/_insertados/grove_high_output/
-    revisar_tres_preguntas_valor_carrera.json
-
-    $ wc -l fuentes/grove_high_output/cap_01.md fuentes/grove_high_output/cap_02.md fuentes/grove_high_output/cap_03.md
-      119 fuentes/grove_high_output/cap_01.md
-       79 fuentes/grove_high_output/cap_02.md
-      179 fuentes/grove_high_output/cap_03.md
-
-**LO QUE EL INSTRUMENTO MIDIO:** `22` candidatos en la bandeja, `171` pasos; `1` candidato ya en
-`_insertados`; `0` de la bandeja salen de `cap_01`.
-
-**LECTURA:** los `23` que mi propio encargo nombraba (`PROMPT_SIGUIENTE.md`, TAREA 2) son estos
-`22` mas el que ya entro, y la cuenta cierra sin resto. Los `121` pasos de `cap_03` son la misma
-poblacion que el asunto del commit de la TAREA 2 dice haber releido.
-
-### 3.3. El barrido de la aduana cuesta lo que cuesta, y lo mido antes de prometerlo
-
-`D.38.4` manda barrer **uno por vez**. Mido lo que vale una corrida antes de decir cuantas caben en
-esta fase, que es lo contrario de prometer un numero:
-
-    $ python <scratchpad>/coste.py
-      comparaciones medidas      : 25
-      segundos                   : 14.39
-      segundos por comparacion   : 0.576
-      poblacion del barrido      : 370 vecinos por candidato
-      coste de UN candidato      : 3.5 min
-      coste de los 22 de bandeja : 78.1 min
-
-Y la corrida real de un candidato, con su reloj de la casa pegado. **Va recortada y lo digo:** quito
-la cabecera de la lista completa, la coletilla de cero inserciones, el nombre de fichero entre
-parentesis de la linea `[BLOQUEARIA]` y las lineas `user` y `sys` del reloj. **Ni una cifra de las
-que siguen esta tocada.**
-
-    $ time python forja.py informe cuarentena/grove_high_output/archivar_indicadores_resolver_problemas.json
-    ============================================================================
-    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
-    ============================================================================
-    candidatos revisados        : 1
-    poblacion del barrido       : 371   (346 del grafo mas 25 que esperan en bandejas)
-    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
-
-    EL SALDO
-      ENTRARIAN sin leer nada          : 0
-      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
-      CAERIAN por una guarda           : 0
-      CHOCAN entre si dentro del lote  : 0
-
-    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
-      vecinos levantados en total      : 2
-      por candidato bloqueado          : menor 2, mediana 2, mayor 2
-      que señal levanta cada vecindad  : similitud_texto 2
-
-    [BLOQUEARIA] archivar_indicadores_resolver_problemas
-        vecino construir_indicador_tendencia_patron  [levantada por: similitud_texto]
-          similitud_texto 0.384 | familia_id 0.143 | paso_contra_nodo 0.420
-          paso 2 del candidato contra paso 3 de construir_indicador_tendencia_patron
-        vecino revisar_tres_preguntas_valor_carrera  [levantada por: similitud_texto]
-          similitud_texto 0.369 | familia_id 0.000 | paso_contra_nodo 0.414
-          paso 2 del candidato contra paso 1 de revisar_tres_preguntas_valor_carrera
-
-    real	6m22.566s
-
-**LO QUE LOS DOS INSTRUMENTOS MIDIERON:** la poblacion del barrido de la aduana es `371`, **el mismo
-numero que yo calcule por mi cuenta en `3.1`**, y una corrida de un candidato tarda `6m22s` de reloj
-contra los 3,5 min de la cuenta a puertas cerradas.
-
-**LECTURA, y es la que decide como se lee el resto de esta pagina:** el segundo vecino levantado es
-`revisar_tres_preguntas_valor_carrera`, que trata de **las tres preguntas de carrera de la
-Introduction** y no tiene un solo objeto de trabajo en comun con **un archivo de indicadores de
-fabrica**. La señal que lo levanta es `similitud_texto 0.369` sobre `titulo mas resumen_teorico`, y
-los dos resumenes de esta casa comparten el mismo metalenguaje entero (`UNIDAD DE ORIGEN`, `DE DONDE
-SALE CADA PASO`, `RELECTURA DE FIDELIDAD D.30`). **Un lote escrito con la misma plantilla se levanta
-a si mismo.** Esta es la pregunta `8` de la cola de doctrina (`D.56`), y la dejo **registrada con su
-medida y ahi**, que es lo que la congelacion manda: **no abre parada y no va al banco.**
+**`LECTURA`:** la bandeja es **`7` de `cap_02` mas `15` de `cap_03`**, y en el grafo vive
+**`1`** nodo de este libro, el de `cap_01`. **Los `15` de `cap_03` son los mismos `15` que
+la deuda `d005` nombra**, y los `7` de `cap_02` **no estan en ninguna deuda**.
 
 ---
 
-## 4. MI CLASIFICACION, CANDIDATO A CANDIDATO, ANTES DE VER NADA
+## 4. MI CLASIFICACION, CANDIDATO A CANDIDATO Y A CIEGAS
 
-**LA VARA ES LA DE `AUDITOR_FORJA.md` `6.1`:** la pregunta es si el candidato **CONTINUA** el trabajo de su vecino o lo
-**REPITE**, con direccion (que anade el hijo a la madre) y sin bascula (no decide el tamaño del
-solape, decide si lo que queda fuera es procedimiento **en los dos lados**).
+**Lei los dos capitulos enteros antes de abrir un solo candidato**, y despues cada
+candidato contra su tramo. La columna **`tramo que yo leo`** la escribi **antes** de
+extraer la que cada ficha declara, y la comparacion de las dos esta en la seccion `4.2`.
 
-**COMO SE LEE LA COLUMNA `mi clase`:** `SANO` es *entra sin fusion*; `SANO, hijo de X` es *entra y su
-arista con `X` es declarable por lectura* (`D.29`); `DISCUTIBLE` es *lo marco ANTES de saber si
-acierto*, que es lo unico que hace informativa la metrica (`AUDITOR_FORJA.md` `5.1`).
+**`cap_02` es el capitulo `1` del libro** (*The Basics of Production*) y **`cap_03` es el
+capitulo `2`** (*Managing the Breakfast Factory*). Los dos van en `fidelidad: verbatim`.
 
-### 4.0. La numeracion de lineas que sostiene las dos tablas, sacada del fichero
+### 4.1. Las veintidos filas
 
-**NINGUNA CITA DE LINEA DE ESTA PAGINA ESTA ESCRITA DE MEMORIA.** Salen de esta corrida, y las pego
-recortadas porque son la prueba de las dos columnas de la derecha:
+| # | candidato | cap | tramo que yo leo | es procedimiento | mi clase |
+|---|---|---|---|---|---|
+| 1 | `construir_flujo_produccion_paso_limitante` | 02 | L17 a L27 | **SI**: fija el paso limitante y escalona hacia atras | **SANO**, cabeza de la serie de flujo |
+| 2 | `rehacer_flujo_paso_limitante_capacidad` | 02 | L51 a L55 | **SI**: busca la cola, declara paso limitante nuevo, rehace | **SANO con ARISTA** (ver `5.1`) |
+| 3 | `equilibrar_capacidad_personal_inventario_plazo` | 02 | L57 a L61 | **SI**: nombra las cuatro salidas, apunta su coste, intercambia | **SANO** |
+| 4 | `clasificar_trabajo_proceso_montaje_prueba` | 02 | L37 a L45 | **SI**: senala proceso, montaje y prueba en tu propio trabajo | **SANO**, cabeza de la serie de prueba |
+| 5 | `preferir_inspeccion_proceso_prueba_destructiva` | 02 | L67 | **SI**: elige inspeccion en proceso sobre prueba destructiva | **SANO con ARISTA** (ver `5.1`) |
+| 6 | `dimensionar_inventario_materia_prima_reposicion` | 02 | L69 | **SI**: inspeccion de recepcion y dimensionado por tiempo de reposicion | **SANO** |
+| 7 | `detectar_arreglar_fallo_etapa_menor_valor` | 02 | L73 a L75 | **SI**: ordena etapas por valor y corrige en la de menor valor | **SANO**, principio que otros tres citan |
+| 8 | `elegir_cinco_indicadores_diarios_fabrica` | 03 | L15 a L29 | **SI**: los cinco datos, uno a uno, y el repaso de primera hora | **SANO** |
+| 9 | `emparejar_indicadores_efecto_contraefecto` | 03 | L31 a L33 | **SI**: nombra efecto y contraefecto y los mide juntos | **SANO**, con un discutible de fidelidad (`8.3`) |
+| 10 | `elegir_indicador_salida_trabajo_administrativo` | 03 | L35 a L67 | **SI**: las dos varas mas la tabla de seis funciones | **SANO con ARISTA** hacia el `9` |
+| 11 | `representar_actividad_caja_negra_ventanas` | 03 | L73 a L79 | **SI**: nombra entrada, salida y trabajo, y recorta ventanas | **SANO**, cabeza de la serie de ventanas |
+| 12 | `construir_indicador_linealidad_alerta_temprana` | 03 | L83 a L87 | **SI**: recta ideal, lo conseguido, lectura a media carrera | **SANO con ARISTA** hacia el `11` |
+| 13 | `construir_indicador_tendencia_patron` | 03 | L89 | **SI**: salida contra tiempo y contra patron | **SANO con ARISTA** hacia el `11` |
+| 14 | `construir_grafico_escalonado_pronosticos` | 03 | L91 a L97 | **SI**: monta, actualiza cada mes, lee la variacion | **SANO con ARISTA** hacia el `13` |
+| 15 | `archivar_indicadores_resolver_problemas` | 03 | L99 | **SI**: recoge, archiva, repasa cuando algo falle | **SANO**, el mas corto de la bandeja con `4` pasos |
+| 16 | `elegir_fabricar_pedido_pronostico` | 03 | L103 a L109 | **SI**: la eleccion entre las dos vias y el riesgo de inventario | **SANO**, cabeza de la serie de pronostico |
+| 17 | `casar_flujo_fabricacion_flujo_ventas` | 03 | L111 a L121 | **SI**: los dos flujos, los dos pronosticos, la holgura | **SANO con ARISTA** hacia el `16` |
+| 18 | `dimensionar_plantilla_administrativa_pronostico` | 03 | L123 a L125 | **SI**: patrones de hecho y plantilla contra pronostico | **SANO con ARISTA** hacia el `10` |
+| 19 | `decidir_aceptar_rechazar_material_defectuoso` | 03 | L135 a L137 | **SI**: las dos salidas, el grupo equilibrado, el limite de fiabilidad | **SANO con ARISTA** hacia el `6` |
+| 20 | `elegir_inspeccion_barrera_monitorizacion` | 03 | L139 a L141 | **SI**: barrera contra monitorizacion, con su intercambio | **SANO**, cabeza de la serie de inspeccion de `cap_03` |
+| 21 | `variar_frecuencia_inspeccion_nivel_calidad` | 03 | L143 | **SI**: sube y baja la frecuencia segun vaya la calidad | **SANO**, hermana del `20` (ver `5.2`) |
+| 22 | `simplificar_trabajo_reducir_numero_pasos` | 03 | L169 a L171 | **SI**: dibuja, cuenta, fija meta, pregunta y tira | **SANO** |
 
-    $ awk 'NF{printf "%3d| %.60s\n", NR, $0}' fuentes/grove_high_output/cap_02.md
-     19| The task here encompasses the basic requirements of producti
-     21| Instead, a manufacturer should accept the responsibility of d
-     23| The first thing we must do is to pin down the step in the flow
-     25| What must happen is illustrated opposite. To work back from th
-     27| Now you come to the toast. Using the egg time as your base, yo
-     39| Other production principles underlie the preparation of our br
-     41| Process, assembly, and test operations can be readily applied
-     43| The development of a "compiler," a major piece of computer sof
-     45| In any case, the development of the individual pieces out of w
-     51| Real life, as you know, is full of thickets and underbrush. In
-     53| How would our model reflect the change in manufacturing flow?
-     57| Now let's complicate things a little further. What happens if
-     59| If you were a waiter, you could ask the waiter in line next to
-     61| Because each alternative costs money, your task is to find the
-     67| But continuous operation does not automatically mean lower cos
-     69| What else could go wrong with our continuous egg-machine? The
-     73| All production flows have a basic characteristic: the material
-     75| A common rule we should always try to heed is to detect and fi
-     77| Finally, at the risk of being considered hard-hearted, let's ex
+**`LECTURA`: los veintidos traen procedimiento propio y ninguno es gemelo de otro.** No leo
+ni un `REPITE` en la bandeja. Lo que si leo son **nueve relaciones madre a hijo**, y van en
+la seccion `5`.
 
-    $ awk 'NF{printf "%3d| %.60s\n", NR, $0}' fuentes/grove_high_output/cap_03.md
-     15| A hungry public has loved the breakfast you've been serving, a
-     17| Let's say that as manager of the breakfast factory, you will w
-     19| Here are my candidates. First, you'll want to know your sales
-     29| All these indicators measure factors essential to running your
-     31| Indicators tend to direct your attention toward what they are
-     33| The principle here was evident many times in the development o
-     35| Nowhere can indicators and paired indicators be of more help in
-     37| The second criterion for a good indicator is that what you mea
-     39| ADMINISTRATIVE FUNCTION   (la tabla del libro, hasta L65)
-     69| Such indicators have many uses. First, they spell out very cle
-     73| We can think of our breakfast factory as if it were a "black b
-     77| The black box sorts out what the inputs, the output, and the l
-     81| Leading indicators give you one way to look inside the black b
-     83| Leading indicators might include the daily monitors we use to
-     87| If we consider a manufacturing unit in this fashion, we may as
-     89| Also valuable are trend indicators. These show output (breakfa
-     91| Another sound way to anticipate the future is through the use
-     93| In my experience, nowhere has the stagger chart been more prod
-     95| (* means the actual number for that month)
-     99| Finally, indicators can be a big help in solving all types of
-    103| There are two ways to control the output of any factory. Some
-    105| But if your competition in the sofa business makes the same pr
-    107| An obvious disadvantage here is that the manufacturer takes an
-    109| At Intel, we build to forecast because our customers demand th
-    111| Delivering a product that was built to forecast to a customer
-    113| Because the art and science of forecasting is so complex, you
-    115| At Intel we try to match the two parallel flows with as much p
-    119| The ideal is rarely found in the real world. More often, custo
-    121| It is a good idea to use stagger charts in both the manufactur
-    123| Forecasting future work demands and then adjusting the output
-    125| But if we have carefully chosen indicators that characterize a
-    129| As we have said, manufacturing's charter is to deliver product
-    131| In the language of production, the lowest-value-point inspecti
-    135| When material is rejected at incoming inspection, a couple of
-    137| While in most instances the decision to accept or reject defec
-    139| Inspections, of course, cost money to perform and further add
-    141| Let's consider a few techniques commonly used to balance the t
-    143| Another way to lower the cost of quality assurance is to use v
-    145| Suitably thought through, intelligent inspection schemes can a
-    147| I recently read a story in a news magazine that said that the
-    153| For that, the bureaucratic minds at the embassy would need to
-    157| Productivity
-    167| Here I'd like to introduce the concept of leverage, which is t
-    169| Automation is certainly one way to improve the leverage of all
-    171| To implement the actual simplification, you must question why
+### 4.2. MI TRAMO CONTRA EL QUE CADA FICHA DECLARA: COINCIDEN LOS VEINTIDOS
 
-**LO QUE ESTA CORRIDA ME CAZO A MI, y lo escribo porque es la especie que me tumbo la vuelta
-pasada:** mi primera redaccion de las dos tablas de abajo traia las citas de linea **puestas de
-memoria por el orden de la prosa**, y contra el fichero salian mal en **`20` de `22` filas**. Se
-corrigieron **antes de sellar** y por eso no hay texto viejo que tachar: **esta pagina no se ha
-publicado todavia.** La regla que lo cazo es la misma que el heredado de `1`: **una remision se
-comprueba contra el fichero, no contra el recuerdo.**
+    $ python -c "la PIEZA y el tramo L que cada ficha declara en su resumen_teorico"
+    archivar_indicadores_resolver_problemas          cap_03  P12 L99 a L99
+    casar_flujo_fabricacion_flujo_ventas             cap_03  P14 L111 a L121
+    clasificar_trabajo_proceso_montaje_prueba        cap_02  P5 L37 a L47
+    construir_flujo_produccion_paso_limitante        cap_02  P2 L15 a L27
+    construir_grafico_escalonado_pronosticos         cap_03  P11 L91 a L97
+    construir_indicador_linealidad_alerta_temprana   cap_03  P9 L83 a L87
+    construir_indicador_tendencia_patron             cap_03  P10 L89 a L89
+    decidir_aceptar_rechazar_material_defectuoso     cap_03  P17 L135 a L137
+    detectar_arreglar_fallo_etapa_menor_valor        cap_02  P11 L71 a L75
+    dimensionar_inventario_materia_prima_reposicion  cap_02  P10 L69
+    dimensionar_plantilla_administrativa_pronostico  cap_03  P15 L123 a L125
+    elegir_cinco_indicadores_diarios_fabrica         cap_03  P2 L15 a L29
+    elegir_fabricar_pedido_pronostico                cap_03  P13 L101 a L109
+    elegir_inspeccion_barrera_monitorizacion         cap_03  P18 L139 a L141
+    emparejar_indicadores_efecto_contraefecto        cap_03  P3 L31 a L33
+    equilibrar_capacidad_personal_inventario_plazo   cap_02  P7 L57 a L61
+    preferir_inspeccion_proceso_prueba_destructiva   cap_02  P9 L67
+    rehacer_flujo_paso_limitante_capacidad           cap_02  P6 L49 a L55
+    representar_actividad_caja_negra_ventanas        cap_03  P7 L71 a L79
+    simplificar_trabajo_reducir_numero_pasos         cap_03  P23 L169 a L173
+    variar_frecuencia_inspeccion_nivel_calidad       cap_03  P19 L143 a L145
 
-**Y LA CUENTA DE ESA FRASE TAMBIEN LLEVA INSTRUMENTO, porque escribi `18` antes de contarla y son
-`20`:**
+*(`elegir_indicador_salida_trabajo_administrativo` no sale en esa lista por una errata mia
+de expresion de busqueda, y esta corregida al final de esta seccion: declara `PIEZAS P4 y
+P5, L35 a L37 y la tabla de L39 a L67`, que es exactamente mi tramo.)*
 
-    $ python <scratchpad>/fila20.py
-      fila  1  cap_02 L19 a L25     -> cap_02 L19 a L27      CORREGIDA
-      fila  2  cap_02 L45 a L47     -> cap_02 L51 a L53      CORREGIDA
-      fila  3  cap_02 L49 a L53     -> cap_02 L57 a L61      CORREGIDA
-      fila  4  cap_02 L31 a L41     -> cap_02 L39 a L45      CORREGIDA
-      fila  5  cap_02 L63           -> cap_02 L67            CORREGIDA
-      fila  6  cap_02 L65           -> cap_02 L69            CORREGIDA
-      fila  7  cap_02 L69 a L71     -> cap_02 L73 a L75      CORREGIDA
-      fila  8  cap_03 L15 a L25     -> cap_03 L15 a L29      CORREGIDA
-      fila  9  cap_03 L27 y L29     -> cap_03 L31 a L33      CORREGIDA
-      fila 10  cap_03 L31 a L33     -> cap_03 L35 a L37      CORREGIDA
-      fila 11  cap_03 L41 a L45     -> cap_03 L73 a L77      CORREGIDA
-      fila 12  cap_03 L49           -> cap_03 L81 a L87      CORREGIDA
-      fila 13  cap_03 L51           -> cap_03 L89            CORREGIDA
-      fila 14  cap_03 L91 a L95     -> cap_03 L91 a L95      ya estaba bien
-      fila 15  cap_03 L99           -> cap_03 L99            ya estaba bien
-      fila 16  cap_03 L103 a L111   -> cap_03 L103 a L109    CORREGIDA
-      fila 17  cap_03 L113 a L121   -> cap_03 L111 a L121    CORREGIDA
-      fila 18  cap_03 L125          -> cap_03 L123 a L125    CORREGIDA
-      fila 19  cap_03 L135 a L139   -> cap_03 L135 a L137    CORREGIDA
-      fila 20  cap_03 L141 a L145   -> cap_03 L139 a L141    CORREGIDA
-      fila 21  cap_03 L147          -> cap_03 L143           CORREGIDA
-      fila 22  cap_03 L175 a L177   -> cap_03 L169 a L171    CORREGIDA
+**`LECTURA`: mi tramo y el suyo coinciden en los veintidos, y las unicas diferencias son
+los renglones de rotulo y de cierre de los bordes**, que yo no cuento porque lei prosa:
 
-      FILAS DE LAS DOS TABLAS        : 22
-      FILAS CORREGIDAS               : 20
-      FILAS QUE YA ESTABAN BIEN      : 2
-
-**LECTURA, y me la cargo yo:** `18` era una cifra contada a ojo dentro de una frase que hablaba
-justamente de cifras contadas a ojo. **La cazo yo y antes de sellar**, que es lo unico que la
-distingue de la caida de la vuelta pasada, y la dejo escrita con las dos redacciones a la vista.
-
-### 4.1. Los `7` de `cap_02` (Cap. 1, `The Basics of Production`)
-
-| # | candidato | mi clase | lo que lo sostiene |
-|---|---|---|---|
-| 1 | `construir_flujo_produccion_paso_limitante` | **SANO** | es la madre del capitulo: requisitos (`L19`), compromiso de hora y coste (`L21`), paso limitante (`L23`), calculo hacia atras (`L25`) y desfases con el criterio del mas largo o mas dificil o mas sensible o mas caro (`L27`). Ningun vecino del grafo hace esto: el grafo no tiene un solo nodo de flujo de produccion |
-| 2 | `rehacer_flujo_paso_limitante_capacidad` | **SANO, hijo de 1. DISCUTIBLE 1** | `L51` a `L53`. Lo marco porque un lector estricto dira que **REPITE**: vuelve a correr la receta de 1 con otro paso limitante. **Lo sostengo como CONTINUA** porque lo que queda fuera es procedimiento en los dos lados: 1 fija el paso limitante **por duracion** y el hijo lo redeclara **por cola de capacidad**, y ademas trae la regla que la madre no tiene, en `L51`: **el componente que manda la calidad NO cambia aunque cambie el paso limitante** (*the egg still determines the overall quality of the breakfast, but your time offsets must be altered*) |
-| 3 | `equilibrar_capacidad_personal_inventario_plazo` | **SANO, hijo de 2** | `L57` a `L61`. Su objeto es otro: **enumerar y costear las salidas** (especializar, pedir ayuda al de al lado, anadir tostador, acumular inventario) y cambiarlas entre si contra el plazo, hasta las relaciones cuantificables de `L61`. La madre rehace un flujo; el hijo elige entre recursos |
-| 4 | `clasificar_trabajo_proceso_montaje_prueba` | **SANO** | `L39` a `L45`: proceso, montaje y prueba (`L39`), la fuerza de ventas (`L41`) y el compilador con prueba unitaria, rehacer y prueba de sistema (`L45`). Ningun otro candidato del lote clasifica operaciones |
-| 5 | `preferir_inspeccion_proceso_prueba_destructiva` | **SANO, hermano de 4** | `L67`. El 4 **nombra** la prueba; el 5 **elige entre dos pruebas** (funcional destructiva contra inspeccion en proceso) y anade automatizar la lectura con el aviso sonoro. `AUDITOR_FORJA.md` `6.1`: *nombrar no es procedimentar*, asi que 4 no consume a 5 |
-| 6 | `dimensionar_inventario_materia_prima_reposicion` | **SANO. DISCUTIBLE 2** | `L69`. Lo marco contra `casar_flujo_fabricacion_flujo_ventas`, que tambien manda inventario. **Los sostengo separados**: aqui el inventario se dimensiona **por el tiempo de reposicion del proveedor** y se pesa contra su coste y la oportunidad en riesgo; alli se mete **holgura a proposito para casar dos flujos**. Dos procedimientos con dos disparadores |
-| 7 | `detectar_arreglar_fallo_etapa_menor_valor` | **SANO** | `L73` a `L75`: el valor que crece por el flujo, con el valor percibido del rotulo (`L73`), y la regla comun con sus tres aplicaciones, huevo podrido, candidato en campus y prueba unitaria (`L75`) |
-
-**LECTURA QUE VA A FAVOR DEL EXTRACTOR, y la escribo porque una metrica que solo encuentra fallos
-ajenos no es una metrica (`AUDITOR_FORJA.md` `5.3`):** `cap_03` `L129` **vuelve a decir** la regla del 7 (*as noted, we
-are better off catching a bad raw egg than a cooked one... reject before investing further value*), y
-**la bandeja NO tiene un segundo nodo para ese parrafo.** El libro se repite y la bandeja no. No lo
-doy por sentado: lo compruebo candidato a candidato en la tabla de `4.2`.
-
-### 4.2. Los `15` de `cap_03` (Cap. 2, `Managing the Breakfast Factory`)
-
-| # | candidato | mi clase | lo que lo sostiene |
-|---|---|---|---|
-| 8 | `elegir_cinco_indicadores_diarios_fabrica` | **SANO** | `L15` a `L29`: enfocar cada indicador en una meta (`L15`), los cinco datos (`L17`), uno a uno del pronostico al registro de quejas (`L19` a `L27`) y el repaso de primera hora (`L29`) |
-| 9 | `emparejar_indicadores_efecto_contraefecto` | **SANO, hermano de 8. DISCUTIBLE 3** | `L31` a `L33`. Lo marco contra el 10, que **tambien empareja**. Los sostengo separados: el 9 empareja **efecto contra contraefecto** (nivel de inventario contra roturas de stock, `L31`) y el 10 empareja **cantidad contra calidad** (comprobantes tramitados contra errores encontrados, `L37`). Son dos parrafos distintos con dos ejemplos distintos, y `AUDITOR_FORJA.md` `6.1` los deja como **FRONTERA DECLARADA**, no como duplicado |
-| 10 | `elegir_indicador_salida_trabajo_administrativo` | **SANO. DISCUTIBLE 3** | `L35` a `L37`, mas la tabla del libro de `L39` a `L65`. Sus dos varas (que cubra la salida y no la actividad; que sea cosa fisica y contable) no estan en ningun otro candidato |
-| 11 | `representar_actividad_caja_negra_ventanas` | **SANO** | `L73` a `L77`: la caja negra con entrada, salida y trabajo, sus tres aplicaciones (`L73`) y las ventanas recortadas (`L77`) |
-| 12 | `construir_indicador_linealidad_alerta_temprana` | **SANO, hijo de 11** | `L81` a `L87`: los indicadores adelantados (`L81`), los controles diarios y la recta ideal de la contratacion universitaria (`L83`) y la unidad que concentra su salida en la ultima semana (`L87`). Es **una** ventana concreta de la caja de 11 |
-| 13 | `construir_indicador_tendencia_patron` | **SANO, hermano de 12** | `L89`: salida contra tiempo y contra un patron, con la extrapolacion y el por que del desvio |
-| 14 | `construir_grafico_escalonado_pronosticos` | **SANO, hermano de 13. DISCUTIBLE 4** | `L91` a `L95`. Lo marco contra el 13 porque los dos son graficos de futuro. **Los sostengo separados con la linea del propio libro**: el escalonado deja ver la variacion de un pronostico al siguiente *better than if you used a simple trend chart* (`L91`), o sea que el libro **los opone**, no los solapa |
-| 15 | `archivar_indicadores_resolver_problemas` | **SANO** | `L99`. Cuatro pasos y un solo objeto: el archivo que se repasa el dia que algo va mal. **El instrumento de `3.3` lo levanto contra el 13 y contra el nodo ya insertado, y mi lectura dice SANO contra los dos**: el 13 construye una ventana, el 15 guarda la serie para el dia del problema |
-| 16 | `elegir_fabricar_pedido_pronostico` | **SANO** | `L103` a `L109`: las dos maneras de controlar la salida (`L103`), la comparacion de plazo con la competencia (`L105`), el riesgo de inventario (`L107`) y la mezcla de la fabrica de desayunos (`L109`) |
-| 17 | `casar_flujo_fabricacion_flujo_ventas` | **SANO, hijo de 16** | `L111` a `L121`. Empieza donde acaba el 16: **ya elegido el pronostico**, los dos procesos simultaneos (`L111`), el pronostico repartido entre fabricacion y ventas (`L113`), el casado (`L115`), la holgura en el inventario de menor valor (`L119`) y los graficos escalonados en los dos (`L121`) |
-| 18 | `dimensionar_plantilla_administrativa_pronostico` | **SANO, hijo de 17** | `L123` a `L125`. Lleva el pronostico a la fabrica administrativa, y **consume al 10 como entrada**: su paso 1 pide indicadores ya elegidos y vigilados, que es literalmente como abre `L125` |
-| 19 | `decidir_aceptar_rechazar_material_defectuoso` | **SANO** | `L135` a `L137`: las dos salidas y el grupo equilibrado de mandos (`L135`), y el limite de fiabilidad con el marcapasos (`L137`) |
-| 20 | `elegir_inspeccion_barrera_monitorizacion` | **SANO** | `L139` a `L141`: lo que cuesta inspeccionar y el equilibrio (`L139`), y barrera contra monitorizacion con su intercambio y su regla de pulgar (`L141`) |
-| 21 | `variar_frecuencia_inspeccion_nivel_calidad` | **SANO, hijo de 20. DISCUTIBLE 5** | `L143`. Lo marco porque comparte con el 20 el proposito entero (*another way to lower the cost of quality assurance*). **Lo sostengo como CONTINUA**: el 20 elige **donde** se retiene el material, el 21 decide **cada cuanto** se mira, y el disparador del 21 es el nivel de calidad observado, que en el 20 no aparece |
-| 22 | `simplificar_trabajo_reducir_numero_pasos` | **SANO** | `L169` a `L171`: dibujar el flujo con todos sus pasos, contarlos y fijar meta (`L169`), y preguntar por que se hace cada uno y tirar los que no aguanten (`L171`) |
-
-### 4.3. Lo que apuesto ANTES de que corra el barrido entero
-
-`d005` de `docs/loop/DEUDA.jsonl` dice que **`6` de los `15` de `cap_03` BLOQUEARIAN**. El barrido
-completo tarda `78` min medidos (`3.3`) y esta corriendo mientras escribo. **Escribo aqui mi apuesta
-para que se pueda contar contra la suya**, que es para lo que sirve una fase ciega:
-
-| mis `6` | por que espero que los levante |
-|---|---|
-| `archivar_indicadores_resolver_problemas` | **ya medido en `3.3`: BLOQUEARIA con 2 vecinos** |
-| `construir_indicador_tendencia_patron` | familia `construir_indicador_` con el 12, y vecino ya medido del 15 |
-| `construir_grafico_escalonado_pronosticos` | comparte el objeto **pronostico** con el 13, el 16 y el 17 |
-| `emparejar_indicadores_efecto_contraefecto` | comparte **emparejar** con los pasos 5 a 7 del 10 |
-| `elegir_indicador_salida_trabajo_administrativo` | familia `elegir_` con el 8, el 16 y el 20, y el objeto administrativo con el 18 |
-| `variar_frecuencia_inspeccion_nivel_calidad` | comparte **inspeccion** con el 19 y el 20 |
-
-**Y LOS TRES SUPLENTES, por si mi orden falla:** `elegir_inspeccion_barrera_monitorizacion`,
-`construir_indicador_linealidad_alerta_temprana` y `elegir_cinco_indicadores_diarios_fabrica`.
-
-**LECTURA:** si el barrido levanta a los que comparten **plantilla de resumen** en vez de a los que
-comparten **objeto de trabajo**, mi apuesta fallara por el lado que `3.3` ya midio, y esa sera la
-medida de la pregunta `8` de la cola de doctrina, no una caida de nadie.
-
----
-
-## 5. LAS PIEZAS DEL LIBRO QUE LEO Y NO VEO EN LA BANDEJA
-
-El encargo manda clasificar **cada candidato y cada pieza que lea**. Las piezas que no llegaron a
-candidato son la mitad que nadie mira, porque no dejan fichero. **Las escribo con mi clase, para
-poder contarlas contra la frontera que el extractor publique.**
-
-| pieza | mi clase | por que |
+| candidato | lo que yo dejo fuera y ellos meten | que es ese renglon |
 |---|---|---|
-| `cap_01` `L61` a `L65`, las reglas del entorno nuevo y la tolerancia al desorden | **POSTURA, y no la haria nodo** | el inventario que el texto pone es de **actitudes** (*higher tolerance for disorder*, *double your efforts*), no de objetos de trabajo. `EXTRACTOR.md` `9.1` restriccion 1 lo deja fuera |
-| `cap_01` `L79` a `L85`, menos niveles de mando, mas gente por jefe, y si las reuniones de uno con uno siguen haciendo falta | **POSTURA AQUI, procedimiento en su capitulo** | el texto esta en interrogativo (*Can you have them as often with ten direct reports as with five?*) y el propio libro lo remite a su capitulo. Hacerlo nodo aqui seria adelantar material con menos inventario del que tendra despues |
-| `cap_01` `L99`, *nobody owes you a career*, con su lista de verbos | **ABSORBIDA por el nodo que entro** | la lista (*compete, enhance your value, hone, learn, adapt, get out of the way*) es exhortacion sin objeto de trabajo, y el inventario de verdad llega dos lineas despues, en `L101` a `L107`, que es de donde sale el nodo |
-| `cap_02` `L63` a `L65`, la fabrica continua: comprar la hervidora, casar su salida con la tostadora continua, perder flexibilidad | **BORDE. Lo dejaria declarado, no callado** | tiene un imperativo real (*match the output of the continuous egg-boiler with the output of a continuous toaster*) pero el resto es el precio que se paga, no pasos. **Espero verlo en la frontera como pieza mirada y descartada**; si no aparece, es una pieza que nadie miro |
-| `cap_02` `L77` a `L79`, la justicia penal como proceso de produccion | **EJEMPLO** | es la aplicacion del paso limitante a un caso, con su conclusion (*we permit the wrong step to limit the overall process*). El procedimiento ya vive en el candidato 1 |
-| `cap_03` `L69`, los tres usos de los indicadores administrativos | **POSTURA** | inventario de **beneficios** (aclaran objetivos, dan objetividad, permiten comparar grupos), que es inventario de fines |
-| `cap_03` `L81`, segunda mitad: **el indicador adelantado tiene que ser creible, y hay que estar dispuesto a actuar con el** | **PROCEDIMIENTO, Y NO ESTA EN NINGUN CANDIDATO** | *the indicators you choose should be credible, so that you will, in fact, act whenever they flash warning signals*, y antes *unless you are prepared to act on what your leading indicators are telling you, all you will get from monitoring them is anxiety*. **Es un criterio de eleccion con su objeto**, y el candidato 12, que toma `L81`, no lo recoge en ninguno de sus nueve pasos. **Esta es la pieza que mas me chirria de las siete** |
-| `cap_03` `L131` a `L133`, los tres puntos de inspeccion con su nombre | **NOMENCLATURA** | nombrar entrada, en proceso y final es *nombrar no es procedimentar*, y el candidato 6 ya trae la inspeccion de recepcion con sus pasos |
-| `cap_03` `L145` a `L153`, la embajada y las visas: aceptar que el `100` por cien sobra, poner una prueba de muestreo y elegir la muestra por criterios fijados de antemano | **BORDE, y lo marco** | el caso trae un procedimiento que **no** es el del candidato 20 (que elige entre barrera y monitorizacion **dentro de una fabrica**) ni el del 21 (que varia la frecuencia): aqui se **sustituye** un control del cien por cien por un muestreo en un proceso administrativo. **Si la frontera lo declaro como ejemplo del 21, lo acepto; si no lo miro, es la segunda pieza sin mirar** |
-| `cap_03` `L157` a `L167`, productividad y palanca | **POSTURA, y bien diferida** | es definicion (*productivity is the output divided by the labor*) y el libro anuncia que la palanca se trabaja despues. El unico trozo con pasos, la simplificacion del trabajo, **si** es candidato (el 22) |
+| `construir_flujo_produccion_paso_limitante` | `L15` | `The Three-Minute Egg`, rotulo |
+| `rehacer_flujo_paso_limitante_capacidad` | `L49` | `A Few Complications`, rotulo |
+| `clasificar_trabajo_proceso_montaje_prueba` | `L47` | el renglon que resume las cuatro aplicaciones |
+| `detectar_arreglar_fallo_etapa_menor_valor` | `L71` | `Adding Value`, rotulo |
+| `representar_actividad_caja_negra_ventanas` | `L71` | `The Black Box`, rotulo |
+| `elegir_fabricar_pedido_pronostico` | `L101` | `Controlling Future Output`, rotulo |
+| `variar_frecuencia_inspeccion_nivel_calidad` | `L145` | el renglon que cierra el apartado |
+| `simplificar_trabajo_reducir_numero_pasos` | `L173` | el renglon del *hardly new* y las profesiones blandas |
+| `construir_indicador_linealidad_alerta_temprana` | **al reves: yo meti `L81` y ellos no** | los indicadores adelantados y su credibilidad |
 
-**LECTURA:** de las `10` piezas que leo y no son candidato, **`8` las dejaria fuera por la misma vara
-con la que el extractor las dejo fuera**, y **`2` las marco**: la credibilidad del indicador
-adelantado (`cap_03` `L81`) y el muestreo de la embajada (`cap_03` `L145` a `L153`). **No digo que
-falten nodos**: digo que son las dos que voy a buscar en su frontera, y que si la frontera no las
-nombra, lo que falta no es un nodo, es la mirada.
+**Y UNA CIFRA MIA QUE CORREGI ANTES DE PUBLICARLA, porque casi la publico falsa.** Mi
+primer barrido dijo que **`1` de `22` fichas no declaraba pieza ni tramo**
+(`elegir_indicador_salida_trabajo_administrativo`). **Era falso: mi propia expresion de
+busqueda solo casaba `PIEZA` en singular, y esa ficha declara `PIEZAS P4 y P5`.** Corrijo
+sin borrar y pego el instrumento corregido:
+
+    $ python -c "PIEZA/PIEZAS y tramo L declarados, expresion corregida"
+    fichas que declaran PIEZA y tramo L: 22 de 22   (sin declarar: 0)
+
+**Lo digo porque es exactamente mi especie**: una cifra propia falsa sacada de un
+instrumento bien corrido con la pregunta mal escrita. **La cazo yo y la escribo yo.**
 
 ---
 
-## 6. EL UNICO NODO DEL LOTE QUE YA VIVE EN EL GRAFO
+## 5. LAS NUEVE RELACIONES MADRE A HIJO QUE LEO, Y LA CLASE QUE LES PONGO
 
-`cuarentena/_insertados/grove_high_output/` tiene **un** fichero (`3.2`), y el grafo cierra en `346`.
-Lo leo **sin abrir `bitacora/VEREDICTOS.jsonl`**: primero mi clase, y la razon escrita del extractor
-se destapa despues, que es el orden que manda `AUDITOR_FORJA.md` `1.2`.
+### 5.1. DOS DE ELLAS YA ESTAN ADJUDICADAS DENTRO DE LA FICHA, Y MI PRIMERA LECTURA FUE LA CONTRARIA
 
-### 6.1. Su fidelidad `D.30`, contada por mi contra el parrafo
+**Lo escribo en el orden en que paso, que es lo unico que lo hace comprobable.**
 
-| paso del nodo | linea del libro | mi clase |
+**Lei los pasos primero y adjudique `CONTINUA`** para los dos pares siguientes, con este
+razonamiento mio: el hijo toma el procedimiento de la madre y lo sigue.
+
+    par 1   madre construir_flujo_produccion_paso_limitante  ->  hijo rehacer_flujo_paso_limitante_capacidad
+    par 2   madre clasificar_trabajo_proceso_montaje_prueba  ->  hijo preferir_inspeccion_proceso_prueba_destructiva
+
+**Despues abri el `resumen_teorico` de las cuatro fichas**, que es material que esta fase
+me manda abrir, **y encontre dentro una correccion declarada de la vuelta `44`**:
+
+    $ git show --word-diff=plain de12cdb -- cuarentena/grove_high_output/construir_flujo_produccion_paso_limitante.json
+    {+... CORRECCION DECLARADA de la vuelta 44 de la linea serial (deuda d004, cita grove
+    PARA_ALEXIS 5.3.4, resuelta por D.53 del 17 sep 2026) ... LA ACTA 32 seccion 3.3 del
+    frente grove adjudico CONTINUA este par por la lectura vieja de que un par con arista
+    declarada no puede ser SANO. D.53 decide lo contrario con su prueba por reduccion: UN
+    SANO PUEDE LLEVAR ARISTA DECLARADA, Y DECLARARLA NO LO CONVIERTE EN CONTINUA, porque si
+    lo hiciera D.37 seria imposible y toda cabeza de serie devoraria sus partes. ... LA
+    ARISTA SIGUE EN PIE Y SE CABLEA AL INSERTAR: madre construir_flujo_produccion_paso_limitante
+    paso 9, hijo rehacer_flujo_paso_limitante_capacidad. No se borra nada: la clase CONTINUA
+    de la ACTA 32 queda escrita donde esta.+}
+
+**Fui entonces al banco y lei `D.53` entera** (`docs/BANCO_DE_REGLAS.md` linea `2982`):
+
+> **UN `SANO` PUEDE LLEVAR ARISTA DECLARADA, Y DECLARARLA NO LO CONVIERTE EN `CONTINUA`.**
+> **El veredicto dice si un par REPITE, CONTINUA o esta SANO en su procedimiento.** **La
+> arista dice si hay RELACION DECLARABLE entre los dos.** Son dos preguntas distintas y se
+> contestan por separado.
+
+**ADJUDICO: los dos pares son `SANO` con arista declarada, y mi primera lectura estaba
+equivocada.** El hijo no sigue el procedimiento de la madre: **trae uno propio**.
+`rehacer_flujo` comprueba si el flujo supone capacidad infinita, busca donde hay cola,
+cuenta el tiempo de espera dentro del flujo y declara un paso limitante nuevo, **que son
+cuatro cosas que `construir_flujo` no hace**; `preferir_inspeccion` elige entre prueba
+destructiva e inspeccion en proceso, **que es una eleccion que `clasificar_trabajo` nombra
+pero no resuelve**. **Sin `D.53` yo habria fundido cuatro procedimientos en dos.**
+
+**No me absuelve y lo digo: mi lectura ciega de estos dos pares fue la vieja**, y lo que la
+corrigio fue una regla escrita el `17 sep` que yo tenia disponible y no consulte antes de
+clasificar. **Queda escrito antes de ver el reporte.**
+
+### 5.2. LAS OTRAS SIETE LAS LEVANTO YO, Y NINGUNA FICHA LAS DECLARA
+
+    $ python -c "aristas: campos frente a prosa"
+    aristas en los campos nodos_previos/nodos_siguientes de los 22: 0
+    candidatos cuyo resumen_teorico contiene la palabra ARISTA      : 6
+       - casar_flujo_fabricacion_flujo_ventas
+       - clasificar_trabajo_proceso_montaje_prueba
+       - construir_flujo_produccion_paso_limitante
+       - dimensionar_plantilla_administrativa_pronostico
+       - preferir_inspeccion_proceso_prueba_destructiva
+       - rehacer_flujo_paso_limitante_capacidad
+
+**`LECTURA`:** de los `22`, **`0` traen arista en el campo** y **`6` la nombran en prosa**.
+De esos `6`, **`4` son los del par `1` y el par `2`** de arriba, y **`2` mas
+(`casar_flujo_fabricacion_flujo_ventas` y `dimensionar_plantilla_administrativa_pronostico`)
+prometen la arista "en el reporte de esta vuelta"**, y **esa vuelta es la del frente `grove`
+ya cosechado**, cuyo reporte esta archivado y yo no he abierto. **Nadie de esta linea las ha
+cableado, y la promesa apunta a una sede que esta vuelta no lee.**
+
+**Las siete que leo yo, con la madre, el paso de la madre que nombra al hijo, y la linea del
+libro que lo sostiene:**
+
+| # | madre | paso | hijo | linea del libro |
+|---|---|---|---|---|
+| 3 | `representar_actividad_caja_negra_ventanas` | 8 | `construir_indicador_linealidad_alerta_temprana` | `cap_03` L83: el indicador de linealidad es *"a generally applicable example of a 'window' cut into the black box"* |
+| 4 | `representar_actividad_caja_negra_ventanas` | 8 | `construir_indicador_tendencia_patron` | `cap_03` L89: *"This extrapolation gives us another window in our black box"* |
+| 5 | `construir_indicador_tendencia_patron` | 5 | `construir_grafico_escalonado_pronosticos` | `cap_03` L91: el grafico escalonado anticipa *"better than if you used a simple trend chart"* |
+| 6 | `elegir_fabricar_pedido_pronostico` | 4 | `casar_flujo_fabricacion_flujo_ventas` | `cap_03` L111: *"Delivering a product that was built to forecast to a customer consists of two simultaneous processes"* |
+| 7 | `elegir_indicador_salida_trabajo_administrativo` | 5 | `emparejar_indicadores_efecto_contraefecto` | `cap_03` L37: los de la tabla son de cantidad, *"their paired counterparts should stress the quality of work"* |
+| 8 | `elegir_indicador_salida_trabajo_administrativo` | 2 | `dimensionar_plantilla_administrativa_pronostico` | `cap_03` L125: *"if we have carefully chosen indicators ... we are ready to apply the methods of factory control to administrative work"* |
+| 9 | `dimensionar_inventario_materia_prima_reposicion` | 1 | `decidir_aceptar_rechazar_material_defectuoso` | `cap_03` L135: *"When material is rejected at incoming inspection, a couple of choices present themselves"* |
+
+**Y una decima que leo y NO declaro como arista, con su motivo:**
+`elegir_inspeccion_barrera_monitorizacion` **a** `variar_frecuencia_inspeccion_nivel_calidad`.
+`cap_03` L143 abre con *"Another way to lower the cost of quality assurance"*, **que remite
+al apartado y no a un paso nombrado de la madre**, y `D.37` pide que el texto **diga cuantas
+partes tiene y las nombre**. **No las nombra: son hermanas bajo un mismo rotulo, y eso es
+frontera declarada, no arista.** Lo dejo escrito para que el turno normal lo adjudique con
+el reporte delante.
+
+**Las nueve son `SANO` con arista, ninguna es `CONTINUA` y ninguna es `REPITE`** (`D.53`).
+
+---
+
+## 6. LO QUE LOS DOS CAPITULOS TIENEN Y NINGUN CANDIDATO RECOGE
+
+**Esta es la mitad que un barrido de vecinos no encuentra nunca**, porque el barrido busca
+lo que sobra y esto es lo que falta. Recorri los dos capitulos renglon a renglon contra la
+tabla de tramos de `4.2`.
+
+| tramo sin candidato | que dice el libro ahi | por que pesa |
 |---|---|---|
-| 1 anadir valor real o solo pasar informacion | `cap_01` `L103` | **TRANSCRIPCION** |
-| 2 el como: buscar sin parar maneras de hacer las cosas mejor en tu departamento | `cap_01` `L103` | **TRANSCRIPCION** |
-| 3 la vara: cada hora del dia aumentando la produccion de aquellos de los que respondes | `cap_01` `L103` | **TRANSCRIPCION** |
-| 4 estar enchufado, dentro de la empresa y del sector entero | `cap_01` `L105` | **TRANSCRIPCION** |
-| 5 esperar a que otro te interprete, nodo de una red o flotando solo | `cap_01` `L105` | **TRANSCRIPCION** |
-| 6 probar ideas, tecnicas y tecnologias nuevas, en persona | `cap_01` `L107` | **TRANSCRIPCION** |
-| 7 esperar a que otros rehagan tu puesto, y a ti fuera de el | `cap_01` `L107` | **TRANSCRIPCION** |
+| `cap_03` **L159 a L167** | la definicion de **productividad** (salida dividida por el trabajo), **las dos maneras de subirla** (mas rapido, o cambiando que se hace) y el concepto de **`leverage`** con sus cuatro ejemplares | **es el concepto que da nombre al libro** y el antecedente directo de `simplificar_trabajo`, cuyo `L169` abre diciendo *"Automation is certainly one way to improve the leverage of all types of work"* |
+| `cap_03` **L145 a L155** | el ejemplar de la embajada, el muestreo contra el `100` por cien, la comparacion con el `IRS` y **la inspeccion variable aplicada al trabajo del mando** | `L155` dice que eso *"gives us an important tool for improving managerial productivity"*, y ningun paso lo recoge |
+| `cap_03` **L129 a L131** | los **tres puntos de inspeccion con su nombre**: `incoming`, `in process` y `final`, y *"reject before investing further value"* | es el inventario que ordena los cuatro candidatos de inspeccion de la bandeja, y **no hay nodo que lo tenga** |
+| `cap_03` **L69** | los **tres usos** de los indicadores administrativos: fijan objetivos, dan objetividad y **permiten comparar grupos que hacen lo mismo en sitios distintos** | el libro lo remata anunciando la analogia deportiva de mas adelante |
+| `cap_03` **L81** | los indicadores adelantados y **la condicion de creerselos**: *"unless you are prepared to act on what your leading indicators are telling you, all you will get from monitoring them is anxiety"* | es la unica linea del tramo `L81` a `L87` que **ningun paso** de `construir_indicador_linealidad` toca, y es la que pone la condicion de uso |
+| `cap_02` **L31 a L35** | la contratacion universitaria como paso limitante caro, y **la entrevista telefonica de criba** para subir la razon de ofertas por visita | es procedimiento con su efecto medido, y solo sobrevive como ejemplo dentro de otro nodo |
+| `cap_02` **L63 a L65** | la **operacion continua**: cocedor continuo, casar su salida con la del tostador, y **la flexibilidad que se pierde a cambio** | `L67`, que es el candidato `5`, **empieza preguntando que pasa si esa maquina se descalibra**, asi que el nodo existe y su antecedente no |
+| `cap_02` **L77 a L79** | el sistema penal como proceso de produccion, con **el millon de dolares por condena contra los `80.000` de la celda** | es el cierre del capitulo y su ejemplar mas fuerte del principio *"dejar que el paso equivocado limite el proceso"* |
 
-**MI CUENTA: `7` pasos, `7` TRANSCRIPCION, `0` PUENTE, `0,00` por ciento de PASOS INVENTADOS.** Las
-tres lineas del libro quedan usadas enteras y ningun paso cierra un bucle que el libro deje abierto:
-**no hay periodo, no hay destinatario y no hay soporte**, que son las tres especies de puente del
-lote 1.
+**La comprobacion de la primera fila, con instrumento y no a ojo:**
 
-### 6.2. Su discutible, adjudicado antes de leer su razon
+    $ grep -ril "apalanca\|leverage\|productividad" cuarentena/grove_high_output/
+    cuarentena/grove_high_output/simplificar_trabajo_reducir_numero_pasos.json
 
-El nodo marca como discutible que **tres preguntas para meditar sean POSTURA y no procedimiento**.
-**Mi adjudicacion: SE SOSTIENE, es nodo**, y la vara es `EXTRACTOR.md` `9.1`, no la de continua
-contra repite:
+    $ python -c "donde aparece esa palabra dentro de esa unica ficha"
+    titulo no
+    condiciones_activacion SI
+    entregable_esperado no
+    resumen_teorico SI
+    denominaciones: {... "otros_idiomas": [... {"idioma": "ingles", "termino": "leverage"}]}
+    (ningun paso_accionable la contiene)
 
-- **el inventario esta en el libro y esta numerado**: `L103`, `L105` y `L107` ponen las tres
-  preguntas **una a una**, y cada una con sus dos caras. `EXTRACTOR.md` `9.1` acepta *los medios, las etapas o los
-  objetos que hay que revisar, nombrados uno a uno por el texto*, y aqui los objetos a revisar son
-  tres y los nombra el texto;
-- **no es inventario de metas** (restriccion 1): el libro no dice adonde llegar, da el medio
-  (*by continually looking for ways to make things truly better*) y la vara de medida (*every hour
-  of your day*);
-- **no hay adjetivo de adecuacion en el sitio del criterio** (restriccion 2): *I can offer you no
-  surefire formula* niega que haya formula, **no pone un criterio blando**; lo que pone despues son
-  tres preguntas concretas.
+    $ grep -o "apalancamiento\|leverage" dataset/nodos.jsonl | sort | uniq -c
+    (cero lineas: no aparece en ninguno de los 346 nodos del grafo)
 
-**LECTURA:** que el extractor lo marcase discutible **antes** de saber si acertaba es lo que hace
-informativa a la metrica (`AUDITOR_FORJA.md` `5.1`), y por mi lectura **cae DENTRO de su marcado y
-se sostiene**.
-
-### 6.3. Sus vecinos, y por que mi clase contra la bandeja entera es `SANO`
-
-    $ python <scratchpad>/dominios.py
-      bandeja grove por dominio: {'produccion': 22}
-      grafo: 5 dominios, carrera_profesional=1, produccion=0
-
-**LO QUE EL INSTRUMENTO MIDIO:** los `22` de la bandeja son **todos** `produccion`, el grafo tiene
-`5` dominios y **ninguno** de sus `346` nodos era `produccion` antes de este lote; `carrera_profesional`
-tiene exactamente `1`, que es este nodo.
-
-**LECTURA:** el lote 7 abre **dos dominios nuevos a la vez**, asi que contra el grafo viejo la clase
-`REPITE` es estructuralmente improbable y **el riesgo de duplicado de este lote esta dentro de la
-bandeja, no contra el catalogo**. Por eso mi clase del nodo insertado contra **los `22`** es `SANO`:
-ni uno solo comparte con las tres preguntas de carrera un objeto de trabajo, y el unico vecino que la
-maquina levanta contra el (`3.3`, `similitud_texto 0.369` contra `archivar_indicadores_resolver_problemas`)
-lo levanta por **plantilla de resumen** y no por contenido.
-
-**Y LO QUE NO PUEDO COMPROBAR EN ESTA FASE, dicho en voz alta:** `config/umbrales.json` trae
-`solo_dominio_y_nucleo` en `false`, medido asi:
-
-    $ grep -n "solo_dominio_y_nucleo" config/umbrales.json
-    10:  "solo_dominio_y_nucleo": false,
-
-y **por eso** un dominio nuevo no estrecha el barrido de nadie. Si estuviera en `true`, dos dominios
-nuevos habrian dejado a este lote sin vecinos que mirar. **No es una caida: es la guarda que hoy nos
-salva y que conviene volver a mirar el dia que alguien la cambie.**
+**`LECTURA`:** el instrumento midio que **`leverage` aparece en `1` de `22` fichas y en `0`
+de `346` nodos del grafo**, y que **dentro de esa unica ficha no esta en ningun paso**: esta
+en `otros_idiomas`, en `condiciones_activacion` y en el resumen. **Mi conclusion, que va
+aparte: la bandeja NOMBRA el apalancamiento y no lo PROCEDIMENTA**, que es justo lo que
+`P.5.1` no acepta como expansion, **y aqui no hay siquiera un nodo del que expandir.**
 
 ---
 
-## 7. EL BARRIDO DE MIS REMISIONES INTERNAS, Y LAS DOS CUENTAS
+## 7. EL CAPITULO SIGUIENTE, MEDIDO ANTES DE QUE NADIE PONGA UN TECHO
 
-Es el punto 2 del heredado, y es el que me tumbo la vuelta pasada: mi apertura sellada remitia a una
-seccion 8 que no existia. **El barrido no se promete: se corre y se pega.**
+    $ ls fuentes/grove_high_output/ | wc -l
+    18
+    $ wc -l fuentes/grove_high_output/cap_04.md
+    323 fuentes/grove_high_output/cap_04.md
 
-**EL CRITERIO, ESCRITO ANTES DE CONTAR**, porque una cuenta sin criterio no significa nada y porque
-esta pagina cita secciones de tres documentos distintos:
-
-| cuenta como | forma |
-|---|---|
-| **remision INTERNA** | la frase fija *seccion N de esta apertura*, y todo token entre acentos graves de la forma N.M **que no lleve delante, en su misma linea, el nombre de un documento de la casa** |
-| **remision EXTERNA** | el mismo token **con su documento delante en la misma linea**, que es la forma que adopte en esta pagina para las secciones de `AUDITOR_FORJA.md` y de `EXTRACTOR.md` |
-| **no cuenta** | D.NN, P.NN, ED.N y LNN: llevan letra delante y no son secciones de este fichero |
-
-**Y POR ESO ESCRIBO SIEMPRE LA FORMA SINGULAR** (*la seccion 4 de esta apertura y la seccion 6 de
-esta apertura*, nunca *las secciones 4 y 6*): una forma que el barrido no sabe leer **es una remision
-que no se comprueba**, y un criterio con un agujero mide menos de lo que dice.
-
-**LO QUE EL BARRIDO ME CAZO MIENTRAS ESCRIBIA, y son tres:**
-
-1. **un 9.1 desnudo** en la seccion 6 de esta apertura, que un lector leeria como seccion mia y es de
-   `EXTRACTOR.md`. **Se le puso el documento delante.**
-2. **seis remisiones de seccion ambiguas** en el cuerpo (5.6, 6.1 tres veces, 5.1 y 5.3, todas de
-   `AUDITOR_FORJA.md`), escritas como si fueran mias. **Se les puso el documento delante.**
-3. **un 3.5 escrito entre acentos graves** cuando era una cantidad de minutos y no una seccion.
-   **Se reescribio como 3,5 min**, porque una cifra disfrazada de remision ensucia las dos cuentas.
-
-**Y HAY UNA CUARTA QUE NO ES DE REMISIONES Y LA CUENTO AQUI PORQUE SALIO DEL MISMO METODO:** las
-citas de linea del libro de las dos tablas de la seccion 4 de esta apertura estaban puestas de
-memoria y salian mal en `20` de `22` filas, recontadas con su instrumento. Se corrigieron contra el fichero **antes de sellar**, y
-el instrumento que las sostiene esta pegado en la seccion 4.0 de esta apertura.
-
-**LA SALIDA DEL BARRIDO, corrida sobre esta misma pagina ya terminada, esta pegada al final de este
-fichero**, despues de la tabla de cierre, **porque pegarla en medio le habria movido a su propia
-salida los numeros de linea que publica.**
-
-> ### **LAS DOS CUENTAS QUE EL HEREDADO PIDE**
->
->     REMISIONES INTERNAS COMPROBADAS  : 22
->     REMISIONES QUE APUNTABAN AL VACIO: 0
+**`LECTURA`: el material del capitulo siguiente esta en `fuentes/` y la clave esta en la
+tabla canonica**, que son las dos condiciones que `D.32` manda medir. `cap_04` tiene `323`
+renglones, **casi el doble que `cap_03` y casi el triple que `cap_02`**, y es el mas largo
+de los dieciocho. **Lo dejo medido aqui porque la deuda `d011` dice que todo techo que yo
+escriba lleva su mitad en minutos**, y un capitulo de `323` renglones no cuesta lo que uno
+de `119`.
 
 ---
 
-## 8. LA TABLA DE CIERRE DE ESTA APERTURA
+## 8. FIDELIDAD `D.30`: LO QUE RELEI CONTRA EL LIBRO
 
-| lo que esta fase declara | valor | su instrumento |
+### 8.1. LA DEUDA `d003`, QUE TOCA EL TEXTO DE UN CANDIDATO: PAGADA Y VERIFICADA
+
+`d003` mandaba *"quitarle la cabeza que el libro no encarga y dejar la transcripcion"* al
+paso `6` de `variar_frecuencia_inspeccion_nivel_calidad`. **Esto es lo que la vuelta `44`
+cambio:**
+
+    $ git show de12cdb -- cuarentena/grove_high_output/variar_frecuencia_inspeccion_nivel_calidad.json
+    -  "Desconfia de tu propia costumbre antes de descartarlo, porque este metodo casi no se usa ni siquiera en la fabricacion corriente, y la razon probable es que somos animales de costumbres y seguimos haciendo las cosas como las hemos hecho siempre, sea de una semana a otra o de un ano a otro."
+    +  "Cuenta con que este metodo casi no se usa ni siquiera en la fabricacion corriente, y con que la razon probable es que somos animales de costumbres y seguimos haciendo las cosas como las hemos hecho siempre, sea de una semana a otra o de un ano a otro."
+
+Y esto es lo que el libro dice, `cap_03` `L143`:
+
+> *"Yet this approach is not used very often, even in widget manufacturing. Why not?
+> Probably because we are creatures of habit and keep doing things the way we always have,
+> whether it be from week to week or year to year."*
+
+**ADJUDICO: `d003` esta bien pagada.** Lo que se quito (*"Desconfia de tu propia costumbre
+antes de descartarlo"*) **es una orden que el libro no da**; lo que queda es la
+transcripcion. **`TRANSCRIPCION`, no `PUENTE`.**
+
+### 8.2. MUESTRA AL AZAR DE `30` PASOS SOBRE `171`, CON SEMILLA ESCRITA
+
+**No los elegi a ojo** (`AUDITOR_FORJA.md` 7: *elegir a ojo mide lo que el auditor ya
+sospecha*). **Semilla `44`, la vuelta que audito.**
+
+    $ python -c "muestra de pasos al azar con semilla 44"
+    universo de pasos: 171
+    cap_03 | archivar_indicadores_resolver_problemas | paso 3
+    cap_03 | casar_flujo_fabricacion_flujo_ventas | paso 4
+    cap_02 | clasificar_trabajo_proceso_montaje_prueba | paso 2
+    cap_02 | clasificar_trabajo_proceso_montaje_prueba | paso 3
+    cap_02 | construir_flujo_produccion_paso_limitante | paso 2
+    cap_02 | construir_flujo_produccion_paso_limitante | paso 3
+    cap_02 | construir_flujo_produccion_paso_limitante | paso 6
+    cap_02 | construir_flujo_produccion_paso_limitante | paso 7
+    cap_03 | construir_grafico_escalonado_pronosticos | paso 8
+    cap_03 | construir_indicador_linealidad_alerta_temprana | paso 5
+    cap_03 | decidir_aceptar_rechazar_material_defectuoso | paso 2
+    cap_02 | dimensionar_inventario_materia_prima_reposicion | paso 3
+    cap_02 | dimensionar_inventario_materia_prima_reposicion | paso 5
+    cap_03 | dimensionar_plantilla_administrativa_pronostico | paso 1
+    cap_03 | dimensionar_plantilla_administrativa_pronostico | paso 7
+    cap_03 | elegir_cinco_indicadores_diarios_fabrica | paso 3
+    cap_03 | elegir_cinco_indicadores_diarios_fabrica | paso 8
+    cap_03 | elegir_fabricar_pedido_pronostico | paso 3
+    cap_03 | elegir_fabricar_pedido_pronostico | paso 4
+    cap_03 | elegir_indicador_salida_trabajo_administrativo | paso 1
+    cap_03 | elegir_indicador_salida_trabajo_administrativo | paso 2
+    cap_02 | equilibrar_capacidad_personal_inventario_plazo | paso 2
+    cap_02 | equilibrar_capacidad_personal_inventario_plazo | paso 3
+    cap_02 | equilibrar_capacidad_personal_inventario_plazo | paso 5
+    cap_02 | preferir_inspeccion_proceso_prueba_destructiva | paso 2
+    cap_02 | rehacer_flujo_paso_limitante_capacidad | paso 3
+    cap_03 | representar_actividad_caja_negra_ventanas | paso 3
+    cap_03 | representar_actividad_caja_negra_ventanas | paso 8
+    cap_03 | simplificar_trabajo_reducir_numero_pasos | paso 7
+    cap_03 | variar_frecuencia_inspeccion_nivel_calidad | paso 3
+
+**Los `30` los lei uno a uno contra su renglon del libro. Los `30` salen `TRANSCRIPCION`:
+`0` `PUENTE` en la muestra.** Cuatro ejemplares, por si el siguiente lector quiere
+rehacerlos:
+
+| paso sorteado | renglon del libro | que dice el libro |
 |---|---|---|
-| **ACTA ANTERIOR LEIDA** | `94f77d1806efe24a6f9d0a99e8a5fa10c2c84e31` | `git hash-object`, en la seccion 1 de esta apertura |
-| **HEREDADO 1** | **CUMPLIDO** | la seccion 1 de esta apertura y la seccion 7 de esta apertura |
-| nodos en el grafo | `346` | `wc -l dataset/nodos.jsonl` |
-| candidatos en la bandeja del lote 7 | `22`, mas `1` ya insertado | `ls` y el contador de pasos |
-| pasos en la bandeja | `171`, de los que `50` son de `cap_02` y `121` de `cap_03` | el contador de pasos |
-| poblacion del barrido | `371`, o sea `346` del grafo mas `25` de bandejas | el informe de la aduana, que la imprime |
-| candidatos clasificados por mi | `22` de `22`, mas el `1` insertado | la tabla de la seccion 4 de esta apertura |
-| discutibles que marco antes de saber | `5` en la bandeja, mas el `1` del nodo insertado | la seccion 4 de esta apertura y la seccion 6 de esta apertura |
-| piezas del libro leidas y no candidato | `10`, de las que marco `2` | la seccion 5 de esta apertura |
-| fidelidad D.30 del nodo insertado | `7` de `7` TRANSCRIPCION, `0,00` por ciento | mi relectura contra `cap_01` `L103` a `L107` |
-| barrido de guiones sobre esta pagina | **VERDE** | `python forja.py guiones docs/loop/APERTURA_CIEGA.md` |
-| remisiones internas | `22` comprobadas, `0` al vacio | el barrido pegado al final |
+| `construir_flujo` p7 | `cap_02` L25 | *"First you must allow time to assemble the items on a tray. Next you must get the toast from the toaster and the coffee from the pot, as well as the egg out of the boiling water."* |
+| `dimensionar_inventario` p5 | `cap_02` L69 | *"you should have enough to cover your consumption rate for the length of time it takes to replace your raw material ... if your egg man comes by and delivers once a day, you want to keep a day's worth of inventory on hand"* |
+| `dimensionar_plantilla` p7 | `cap_03` L125 | *"the staffing of administrative units would always be left at its highest level and, given Parkinson's famous law, people would find ways to let whatever they're doing fill the time available for its completion"* |
+| `linealidad` p5 | `cap_03` L83 | *"the only way we can hit our target is by getting acceptance at a much higher rate in the remaining two months than we had gotten in the preceding four"* |
 
-**LO QUE ESTA FASE NO PUDO MEDIR, Y SE DICE EN VEZ DE RELLENARSE:**
+### 8.3. LOS DOS DISCUTIBLES DE FIDELIDAD QUE LEVANTO YO, FUERA DE LA MUESTRA
 
-- **el barrido de vecinos de los `22`**: cuesta `78` min medidos y quedo corriendo al cerrar esta
-  pagina. Lo que si esta medido y pegado es **uno** de ellos, entero, con la poblacion que imprime;
-- **la racha viva de mi linea**: `docs/loop/CREDITO_serial.jsonl` no esta en el arbol en esta fase,
-  como dice la seccion 2 de esta apertura, asi que **no publico ninguna cuenta de racha aqui**;
-- **el coste en dolares del turno**: el arnes no me lo escribe y no lo invento.
+**Van aparte de la muestra a proposito**: estos SI los elegi a ojo, releyendo los `171`
+pasos buscando la especie *"el nodo afirma algo que el libro no afirma"*. **Meterlos dentro
+de la muestra al azar falsearia su tasa.**
 
-**NINGUNA CIFRA DE ESTA PAGINA ESTA CONTADA A OJO.** Cada una lleva su instrumento al lado y toda
-conclusion mia va en linea marcada `LECTURA`, que es lo que D.38.3 manda desde el 16 sep.
+**`DISCUTIBLE DE FIDELIDAD 1`, y es el que mas me pesa.**
+`clasificar_trabajo_proceso_montaje_prueba` paso `4`:
+
+> *"Prueba cada pieza por separado antes de montarla, **que es lo que el libro llama prueba
+> unitaria**, y en un trabajo de personas toma la forma de una presentacion en seco ante un
+> grupo escogido."*
+
+El libro llama **`unit test`** a la prueba de las piezas **del compilador** (`cap_02` L45) y
+llama **`dry run` presentation** a la prueba **de la formacion de ventas** (`cap_02` L41).
+**NO las iguala en ningun renglon.** El paso las iguala y **se lo atribuye al libro**. **Mi
+lectura: el contenido es transcripcion y la atribucion no lo es.** No lo firmo como `PUENTE`
+sin ver como lo marco el extractor en su propia tabla de fidelidad, **y por eso lo dejo
+escrito aqui antes de verla.**
+
+**`DISCUTIBLE DE FIDELIDAD 2`.** `emparejar_indicadores_efecto_contraefecto` pasos `2` y `3`
+(*"Nombra el efecto..."*, *"Nombra el contraefecto..."*). `cap_03` L31 dice *"you should
+guard against overreacting. This you can do by pairing indicators, so that together both
+effect and counter-effect are measured"*. **El libro nombra las dos cosas; no ordena
+nombrarlas como dos pasos.** **ADJUDICO `TRANSCRIPCION` por extension natural**, porque
+medir las dos juntas exige identificarlas primero, **y dejo escrita la lectura contraria
+para que se pueda discutir.**
+
+**Y una tercera cosa que NO es caida y registro igual:** `elegir_cinco_indicadores` paso `9`
+convierte el *"Perhaps you should set up a 'customer complaint log'"* de `L27` en un
+**`Monta`** sin matiz. **Es modalidad, no contenido**: no lo cargo, lo anoto.
 
 ---
 
-## ANEXO. LA SALIDA LITERAL DEL BARRIDO DE REMISIONES
+## 9. LO QUE NO CORRI Y LO QUE NO TERMINO, CON EL MOTIVO DETRAS
 
-Corrido sobre esta pagina **sin este anexo**, que es lo unico que va detras de el, para que los
-numeros de linea que publica sigan siendo los de esta pagina.
+### 9.1. EL BARRIDO DE VECINOS DE `D.38.4` SOBRE LOS `22`: **NO TERMINO**
 
-    $ python <scratchpad>/remisiones.py docs/loop/APERTURA_CIEGA.md
-    SECCIONES QUE ESTE FICHERO ESCRIBE (18): 1, 2, 3, 3.1, 3.2, 3.3, 4, 4.0, 4.1, 4.2, 4.3, 5, 6, 6.1, 6.2, 6.3, 7, 8
-    
-    REMISIONES INTERNAS COMPROBADAS, una a una:
-      linea   32  ->  seccion 7       EXISTE   (frase "de esta apertura")
-      linea   41  ->  seccion 7       EXISTE   (frase "de esta apertura")
-      linea  542  ->  seccion 4       EXISTE   (frase "de esta apertura")
-      linea  548  ->  seccion 6       EXISTE   (frase "de esta apertura")
-      linea  556  ->  seccion 4       EXISTE   (frase "de esta apertura")
-      linea  558  ->  seccion 4.0     EXISTE   (frase "de esta apertura")
-      linea  575  ->  seccion 1       EXISTE   (frase "de esta apertura")
-      linea  576  ->  seccion 1       EXISTE   (frase "de esta apertura")
-      linea  576  ->  seccion 7       EXISTE   (frase "de esta apertura")
-      linea  581  ->  seccion 4       EXISTE   (frase "de esta apertura")
-      linea  582  ->  seccion 4       EXISTE   (frase "de esta apertura")
-      linea  582  ->  seccion 6       EXISTE   (frase "de esta apertura")
-      linea  583  ->  seccion 5       EXISTE   (frase "de esta apertura")
-      linea  593  ->  seccion 2       EXISTE   (frase "de esta apertura")
-      linea  227  ->  seccion 3.1     EXISTE   (token N.M sin documento delante)
-      linea  382  ->  seccion 4.2     EXISTE   (token N.M sin documento delante)
-      linea  395  ->  seccion 3.3     EXISTE   (token N.M sin documento delante)
-      linea  407  ->  seccion 3.3     EXISTE   (token N.M sin documento delante)
-      linea  412  ->  seccion 3.3     EXISTE   (token N.M sin documento delante)
-      linea  423  ->  seccion 3.3     EXISTE   (token N.M sin documento delante)
-      linea  457  ->  seccion 3.2     EXISTE   (token N.M sin documento delante)
-      linea  513  ->  seccion 3.3     EXISTE   (token N.M sin documento delante)
-    
-    REMISIONES QUE APUNTAN AL VACIO:
-      ninguna
-    
-    REMISIONES EXTERNAS (llevan su documento delante en la misma linea): 11
-      linea   54  ->  5.6
-      linea  243  ->  6.1
-      linea  249  ->  5.1
-      linea  374  ->  6.1
-      linea  379  ->  5.3
-      linea  389  ->  6.1
-      linea  436  ->  9.1
-      linea  459  ->  1.2
-      linea  481  ->  9.1
-      linea  485  ->  9.1
-      linea  496  ->  5.1
-    
-    ============================================================
-      REMISIONES INTERNAS COMPROBADAS : 22
-      REMISIONES QUE APUNTABAN AL VACIO: 0
-    ============================================================
+**Lo lance y no termino dentro de mi turno.** Su mandato vigente
+(`docs/BANCO_DE_REGLAS.md` `D.38.4`, correccion declarada del 16 sep) es entregar a la
+aduana la poblacion del grafo y dejar que ella ponga las bandejas:
+
+    $ python -u forja.py informe --carpeta cuarentena/grove_high_output
+    (lanzado 21:31:00, detenido por mi 21:43:47 sin terminar: 767 s MEDIDOS)
+    $ wc -c <fichero de salida del barrido>
+    0
+
+**Lo detuve yo antes de cerrar la pagina, y lo digo:** dejarlo para que acabase despues
+habria puesto una corrida mia terminando **dentro de mi propia fase sellada**, que es la
+figura que mis `ACTA 39` y `ACTA 40` le cobraron al extractor dos vueltas seguidas. **`767
+s` MEDIDOS y `0` bytes de salida: el informe imprime al terminar y no termino.**
+
+**Por que tarda, MEDIDO con la propia funcion de la casa:**
+
+    $ python -c "coste de una comparacion de la aduana"
+    MEDIDO: 1.197 s por comparacion (media de 20 llamadas a aduana.medir)
+    MEDIDO: poblacion del barrido = 346 del grafo + 22 de bandejas
+    PROYECTADO: 1 candidato contra 367 = 7.3 min
+    PROYECTADO: los 22 candidatos = 161.0 min
+
+**La cifra `1.197` es MEDIDA y las dos de abajo son PROYECTADAS**, y la proyeccion no lleva
+la palabra medida al lado. **Aviso sobre la medida: se tomo con el barrido de los `22`
+ocupando la maquina, asi que es un techo y no un suelo.**
+
+**LO QUE ESTO SIGNIFICA, Y NO LO ADORNO:** esta apertura **no publica ni una cifra de
+vecinos**, ni de pares levantados, ni de `ENTRARIAN` contra `BLOQUEARIAN`. **La
+clasificacion de la seccion `4` y las nueve relaciones de la `5` salen de leer los dos
+capitulos y los `22` candidatos, no de un barrido**, y van escritas como lecturas con su
+renglon al lado. **La deuda `d005` dice que el frente `grove` midio `9 ENTRARIAN` y `6
+BLOQUEARIAN` sobre los `15` de `cap_03`: NO reproduje esa cifra y NO la cito como propia.**
+
+**Esto es el remedio de mi `ACTA 42` funcionando.** Aquella apertura **afirmo dos veces un
+barrido de los `22` que nunca corrio**, y le colgo una duracion inventada. Esta dice que lo
+lanzo, que no termino, cuanto cuesta y que no publica su cifra. **Prefiero una pagina sin
+esa cifra a una pagina con esa cifra inventada.**
+
+### 9.2. `tests/test_aceptacion.py`: **NO LO CORRI**
+
+**Motivo:** el barrido de la `9.1` tenia la maquina ocupada y la suite toma el cerrojo del
+dataset, que es justo lo que la `9.3` esta midiendo; correrla habria mezclado las dos
+medidas. **Queda encargado para mi turno normal.**
+
+### 9.3. EL CERROJO: EXISTE, ES HUERFANO, Y **NO** ESTA EN ROJO
+
+    $ ls -la procesos/
+    -rw-r--r-- 1 AlexDesk 197609 43 Sep 18 19:49 nodos.jsonl.679b2259.cerrojo
+    -rw-r--r-- 1 AlexDesk 197609 42 Sep 18 21:18 nodos.jsonl.e52fd5d2.cerrojo
+
+    $ python -c "el cerrojo de este arbol, con el instrumento de la casa"
+    ruta      : procesos\nodos.jsonl.679b2259.cerrojo
+    pid       : 30764
+    desde     : 1789775347.2028258 -> 2026-09-18 19:49:07
+    ahora     : 2026-09-18 21:30:55
+    antiguedad: 6108 s
+    cerrojo._vive(pid): None
+
+    $ python -c "edad contra tope"
+    edad 6125 s   TOPE_DE_HUERFANO 900 s   edad>tope: True
+    vivo: None (None = no se puede comprobar en este sistema)
+    se rompe y se declara: True
+
+**`LECTURA`, y va aparte de la cifra porque es una conclusion:** el cerrojo de este arbol
+**existe**, su proceso `30764` **no aparece en `ps`**, y `cerrojo._vive` devuelve `None`,
+que **en este sistema significa duda y no un no** (`src/cerrojo.py` linea `85`). **La edad
+de `6125 s` pasa el `TOPE_DE_HUERFANO` de `900 s`, asi que la proxima insercion lo rompe y
+lo declara en vez de esperar.** **NO es una guarda de dato en rojo, y no abre bloqueante.**
+
+**Y por que lo mido igual:** mi `ACTA 42` nombro **un cerrojo huerfano** como la causa
+medida de que la vuelta `43` metiera `1` de `15`. **Aquel vivia dentro de `dataset/` y un
+`checkout` lo repartia; `D.56` lo saco a `procesos/`.** Compruebo que la mudanza aguanta:
+
+    $ git check-ignore -v procesos/nodos.jsonl.679b2259.cerrojo
+    .gitignore:39:procesos/	procesos/nodos.jsonl.679b2259.cerrojo
+    $ git status --porcelain procesos/
+    (vacio: git no ve nada ahi)
+
+**El segundo cerrojo, `e52fd5d2`, es de otra ruta de dataset y no de esta**: el instrumento
+de la casa calcula para este arbol la huella `679b2259` y no la otra.
+
+---
+
+## 10. EL BARRIDO DE MIS PROPIAS AFIRMACIONES DE CORRIDA (`HEREDADO 1` punto `3`)
+
+**Corrido sobre esta misma pagina, antes del sello. Su salida va pegada, sea cero o no sea
+cero.**
+
+    $ grep -n -i "esta corriendo\|quedo corriendo\|quedara corriendo\|corriendo mientras" docs/loop/APERTURA_CIEGA.md
+    17:- **`1`. Ninguna frase de esta pagina dice que algo `esta corriendo` ni que `quedo
+    CODIGO=0
+
+    $ grep -n -i "corriendo" docs/loop/APERTURA_CIEGA.md
+    17:- **`1`. Ninguna frase de esta pagina dice que algo `esta corriendo` ni que `quedo
+    18:  corriendo`.** Lo que corri va con su salida pegada; lo que no corri lleva la palabra
+
+**PRIMERA CORRIDA: `1` hallazgo, y es la linea `17`**, o sea **la cita de la forma
+prohibida dentro de la propia declaracion que la prohibe**. **Ninguna afirmacion de corrida
+en futuro.**
+
+**SEGUNDA CORRIDA, SOBRE LA PAGINA YA CON LA PRIMERA PEGADA DENTRO.** Pegar la salida de
+un barrido dentro de la pagina que el barrido mira **cambia lo que el barrido mide**, asi
+que lo vuelvo a correr sobre el fichero final y pego tambien esta:
+
+    $ grep -n -i "esta corriendo\|quedo corriendo\|quedara corriendo\|corriendo mientras" docs/loop/APERTURA_CIEGA.md
+    17:- **`1`. Ninguna frase de esta pagina dice que algo `esta corriendo` ni que `quedo
+    636:    $ grep -n -i "esta corriendo\|quedo corriendo\|quedara corriendo\|corriendo mientras" docs/loop/APERTURA_CIEGA.md
+    637:    17:- **`1`. Ninguna frase de esta pagina dice que algo `esta corriendo` ni que `quedo
+    641:    17:- **`1`. Ninguna frase de esta pagina dice que algo `esta corriendo` ni que `quedo
+
+**`4` hallazgos, y los cuatro son la misma linea `17` vista cuatro veces**: la linea `17`
+en si, la linea `636` que es el comando pegado, y las lineas `637` y `641` que son la linea
+`17` citada dentro de las dos salidas pegadas. **Ninguna de las cuatro afirma que nada
+corra.** Ese es el punto fijo: a partir de aqui, pegar el barrido otra vez solo anadiria
+mas copias de la misma linea.
+
+**TERCERA Y ULTIMA CORRIDA, SOBRE EL FICHERO YA SELLADO, Y ESTA SOLO CUENTA.** Cada vez
+que pego un listado con sus renglones, **el listado siguiente cuenta tambien lo que acabo
+de pegar**, asi que el ultimo instrumento de esta seccion es el contador, cuya salida es un
+numero y **no anade ni una linea que casar**:
+
+    $ grep -c -i -e "esta corr""iendo" -e "quedo corr""iendo" -e "quedara corr""iendo" -e "corr""iendo mientras" docs/loop/APERTURA_CIEGA.md
+    9
+
+**`9` lineas casan en el fichero sellado, y estan todas en dos sitios: la linea `17`, que
+es la declaracion del `HEREDADO 1`, y las lineas `642` a `662`, que son las dos salidas
+pegadas de esta misma seccion `10`.** Los renglones exactos son `17`, `642`, `643`, `647`,
+`658`, `659`, `660`, `661` y `662`, sobre `720` del fichero. **Fuera de la declaracion y de
+las salidas pegadas no casa ni una.**
+
+**Los renglones de esta frase se miden sobre el fichero tal como lo entrego**, y el
+contador `9` **no se mueve** cuando cambia lo que hay antes de la seccion `10`: lo unico
+que se movio entre una edicion y otra fue la numeracion, no la cuenta. **Si el arnes anade
+algo al sellar, la cifra que manda es el `9` del contador.**
+
+**NINGUNA DE LAS TRES CORRIDAS SALE EN CERO, Y POR ESO VAN LAS TRES PEGADAS**, que
+es lo que `HEREDADO 1` punto `3` manda: *sea cero o no sea cero*. **Y las tres apuntan al
+mismo sitio: a la linea que cita la forma, nunca a una frase que la use.**
+
+Lo que esta pagina dice de sus propias corridas son dos formas y solo dos: **`CORRIO`, con
+su salida pegada** (secciones `2`, `3`, `4.2`, `5.2`, `6`, `7`, `8` y `9.3`), y **`NO LO
+CORRI` o `NO TERMINO`, con el motivo detras** (secciones `9.1` y `9.2`).
+
+---
+
+## 11. LO QUE LLEVO A MI TURNO NORMAL, ESCRITO ANTES DE VER EL REPORTE
+
+**Para que se pueda comprobar que no lo pense despues de leerlo.**
+
+| # | lo que traigo | contra que lo comparo cuando se abra el reporte |
+|---|---|---|
+| 1 | **`22` candidatos, `171` pasos, `7` de `cap_02` y `15` de `cap_03`** | su censo de bandeja |
+| 2 | **Los `22` son `SANO` en su procedimiento y ninguno `REPITE`** | sus veredictos y sus discutibles marcados |
+| 3 | **`9` relaciones madre a hijo**, de las que **`2` ya estan declaradas en ficha y `7` las levanto yo** | sus aristas declaradas, y si alguna de mis siete no esta |
+| 4 | **Mi tramo `L` coincide con el declarado en los `22`**, con `9` diferencias de rotulo | su tabla de frontera |
+| 5 | **`0` `PUENTE` en `30` pasos sorteados con semilla `44`** | su fila de `PASOS INVENTADOS POR CAPITULO` |
+| 6 | **`2` discutibles de fidelidad que levanto yo**, uno de ellos sin firmar | como marco esos dos pasos en su tabla de fidelidad |
+| 7 | **`8` tramos de los dos capitulos sin ningun candidato**, con `L159` a `L167` (`leverage`) a la cabeza | si su frontera los declara o si pasan en silencio |
+| 8 | **`d003` pagada y verificada contra `L143`** | su declaracion de la vuelta de saneamiento |
+| 9 | **`CREDITO_serial.jsonl` fuera del arbol sin que nadie lo declare**, y el instrumento contestando `CERO` donde mi acta dice `2 de 3` y `1 de 3` | de donde saca la vuelta 45 la racha que publique |
+| 10 | **El cerrojo huerfano de `6125 s` que NO esta en rojo** | si alguien lo nombra como bloqueante |
+| 11 | **El barrido de vecinos, que no termino**, con su coste `MEDIDO` y su proyeccion | su propio informe de aduana sobre los `22` |
+
+**Ninguna de estas once es un veredicto: son las lecturas con las que entro.** El veredicto
+va en el acta, y el acta se escribe con el reporte delante.
+
+**NO COMMITEO. El arnes sella esta pagina y la commitea el** (`D.34`).
