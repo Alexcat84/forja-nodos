@@ -4,8 +4,7 @@ criterio : un nodo sale de un capitulo si cita grove_high_output/<cap>.md
 
 | # | tarea | como cerro |
 |---:|---|---|
-| 1 | los registros de la `ACTA 44`: `d021` y `d023` por correccion declarada | **CERRADA**: las tres patas reparadas sin borrar el texto viejo y **registradas**, que es lo que faltaba; `d024` y la pregunta de doctrina dichas y no tocadas |
-| 2 | la frontera de `cap_04`, cerrada contra el cuerpo, y la heredada citada | **CERRADA**: `8846` contra `8846`, cero lineas sin cubrir, cero solapes, y `22` nodos contra un techo de `15` |
-| 3 | minar `cap_04`, cada candidato por su aduana en el acto, cero inserciones | **CERRADA EN `8` candidatos de los `22` que da la frontera**: `0` `CAERIA`, `13` pares de cola publicados par a par, **cero inserciones** |
-| 4 | `PASOS INVENTADOS` de `cap_04` con su denominador | **CERRADA**: `0` PUENTE de `50` pasos escritos, `0,00` por ciento contra un tope de `10` |
-| 5 | el cierre, con sus guardas, su tabla `D.52` y su linea de tramo | **CERRADA**: las cinco guardas en verde, el estado recomputado al cierre y la linea del tramo escrita con su reloj |
+| 1 | los registros de la `ACTA 45`: el `116`, las tres deudas nuevas y `d024` | **CERRADA**: la correccion del `116` escrita al lado del texto viejo con el instrumento de hoy (`115`), las tres deudas nombradas con su motivo de no pago, y `d024` dicha y no abierta |
+| 2 | `cap_04` abierto: los ocho siguientes, cada uno por su aduana, cero inserciones | **CERRADA CORTA EN `6` candidatos de los `8` encargados**: `0` `CAERIA`, `9` pares de cola leidos par a par, la arista de `P27` escrita en las dos fichas, **cero inserciones**, y el corte declarado con su reloj |
+| 3 | `PASOS INVENTADOS` de `cap_04` con su denominador y la fila de la vuelta 46 | **CERRADA**: `0` PUENTE de `45` pasos hoy, `0` de `50` en la vuelta 46, `0` de `95` en el capitulo, y los cinco sitios de tentacion nombrados |
+| 4 | el cierre, con sus guardas, su tabla `D.52`, su estado y su coste | **CERRADA**: las cinco guardas en verde, la colision de `D.52` sellada por `hash-object`, el estado recomputado y el coste del turno contado de sus relojes |

@@ -1,0 +1,2 @@
+    $ grep -rl "USD" src/ scripts/ forja.py | wc -l
+0

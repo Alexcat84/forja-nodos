@@ -44312,7 +44312,25 @@ escribirlo, que es lo mas a ciegas que puedo marcarlo.
 ### HH.5.g. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
 
 *Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
-`docs/loop/TABLA_DE_CIERRE.txt`.*
+`docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v46.txt`.*
+
+> **CORRECCION DECLARADA de la vuelta 47, y no toca ni una celda de esta tabla.**
+> Esta linea decia `docs/loop/TABLA_DE_CIERRE.txt`, que es la ruta VIVA del
+> instrumento, y **es la misma colision que esta vuelta 46 declaro en `HH.5.i` y
+> reparo para la vuelta 42**: la vuelta siguiente que cierre su tabla deja a esta en
+> rojo sin que nadie toque el reporte. **La vuelta 47 le hizo a la 46 exactamente lo
+> que la 46 le hizo a la 42.**
+>
+> **LA SALIDA DE LA VUELTA 46 NO SE TECLEO NI SE PERDIO: SE SACO DE GIT BYTE A BYTE**
+> (`git show <commit>:docs/loop/TABLA_DE_CIERRE.txt`, con el mismo `git hash-object`
+> antes y despues) y se archivo en la ruta que esta linea nombra ahora. **La ruta viva
+> se queda con la tabla de la vuelta que cierra**, que es lo que `D.52` manda.
+>
+> **Y ES EL TERCER EJEMPLAR SEGUIDO DE LA MISMA AVERIA**, que es lo que la convierte en
+> deuda de maquinaria y no en descuido de nadie: `d022` ya dice que este instrumento
+> localiza su tabla por un sitio fragil, y `HH.5.i` propuso que su salida lleve la
+> vuelta en el nombre. **La vuelta 47 no lo adjudica: lo vuelve a proponer con su
+> tercer caso delante.**
 
 > **POR QUE LA FILA `3` NO PUBLICA SU `N de M del capitulo`, Y LO DIGO EN VEZ DE ESCONDERLO.**
 > La escribi asi en el primer tallado y el instrumento la puso en ROJO con esta salida, que pego
@@ -44460,10 +44478,14 @@ CANDIDATOS NUEVOS EN LA BANDEJA DE `grove_high_output` Y `0` PUENTE DE `50` PASO
 
 | tarea | que pide | estado |
 |---|---|---|
-| `II.1` | los registros de la `ACTA 45`: la correccion declarada del `116`, las tres deudas nuevas dichas y no pagadas, y `d024` pendiente a proposito | *(vacia al abrir)* |
-| `II.2` | `cap_04` sigue abierto: los ocho siguientes por su tramo, cada uno por su aduana en el acto, **cero inserciones**, y no se toca `cap_05` | *(vacia al abrir)* |
-| `II.3` | `PASOS INVENTADOS` de `cap_04` con su denominador, **y al lado la fila de la vuelta 46** | *(vacia al abrir)* |
-| `II.4` | el cierre: las cinco guardas, la tabla `D.52`, el estado recomputado, la linea del tramo con su reloj, y el coste de `D.55` | *(vacia al abrir)* |
+| `II.1` | los registros de la `ACTA 45`: la correccion declarada del `116`, las tres deudas nuevas dichas y no pagadas, y `d024` pendiente a proposito | **CERRADA en `II.1`**: el `116` corregido al lado del texto viejo con el instrumento de hoy (`115`), las tres deudas dichas y no pagadas |
+| `II.2` | `cap_04` sigue abierto: los ocho siguientes por su tramo, cada uno por su aduana en el acto, **cero inserciones**, y no se toca `cap_05` | **CERRADA CORTA en `II.2`**: `6` de los `8`, `0` `CAERIA`, `9` pares de cola, cero inserciones, y el corte con su reloj |
+| `II.3` | `PASOS INVENTADOS` de `cap_04` con su denominador, **y al lado la fila de la vuelta 46** | **CERRADA en `II.3`**: `0` PUENTE de `45` pasos hoy y `0` de `95` en el capitulo entero |
+| `II.4` | el cierre: las cinco guardas, la tabla `D.52`, el estado recomputado, la linea del tramo con su reloj, y el coste de `D.55` | **CERRADA en `II.4`**: cierre verde, tabla `D.52` verde con su colision sellada, y el coste del turno contado |
+
+> **LA COLUMNA DE ESTADO SE RELLENO AL CERRAR CADA TAREA, NO AL ABRIR.** Al abrir decia
+> `(vacia al abrir)` en las cuatro filas, que es lo que `EXTRACTOR.md` 3 manda, y cada
+> tarea trae ademas su propia fila anexada al final de su seccion.
 
 ## II.0. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
 
@@ -44934,3 +44956,218 @@ discutible**, que es donde `EXTRACTOR.md` 8 manda que vaya.
 | tarea | que pide | estado |
 |---|---|---|
 | `II.3` | `PASOS INVENTADOS` de `cap_04` con su denominador y con la fila de la vuelta 46 al lado | **CERRADA**: `0` PUENTE de `45` pasos hoy, `0` de `50` en la vuelta 46, `0` de `95` en el capitulo entero, las dos filas contadas del mismo instrumento, y **los cinco sitios de tentacion nombrados por su especie** |
+
+## II.4. TAREA 4. **EL CIERRE, CON SUS CINCO PIEZAS**
+
+### II.4.a. **EL ESTADO AL CIERRE, RECOMPUTADO AL CIERRE Y NO COPIADO DE LA APERTURA** (`EXTRACTOR.md` 4)
+
+<!-- TALLADO: parcial salida=.v47/cierre_estado.txt -->
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    36
+    $ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+    1
+
+**LAS TRES CIFRAS DEL DATO NO SE MOVIERON, Y ESE ES EL RESULTADO CORRECTO:** `346`, `740` y `1`
+son exactamente las de `II.0`. **Una vuelta que no inserta no debe mover el dataset, la bitacora ni
+los pares mutuos**, y si alguna se hubiera movido seria la caida que buscar. **Lo que si crecio es
+la bandeja: `30` mas `6` igual a `36`.**
+
+### II.4.b. **LAS CINCO GUARDAS AL CIERRE, CORRIDAS Y PEGADAS**
+
+<!-- TALLADO: parcial salida=.v47/cierre_guardas.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+<!-- TALLADO: parcial salida=.v47/cierre_pruebas.txt -->
+
+    $ time python tests/test_aceptacion.py
+      total: 318 pruebas, 0 fallos, 0 errores
+    real	1m53.223s
+
+**`318` en la apertura y `318` al cierre**, que es lo que tiene que dar una vuelta que **no toco
+`tests/`, `src/`, `scripts/`, el banco, el arnes ni los protocolos**. El tallado `D.41` y el censo
+`D.42` van en `II.4.e`, con la salida entera del cierre.
+
+### II.4.c. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
+
+*Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
+`docs/loop/TABLA_DE_CIERRE.txt`.*
+
+> **LA COLISION DE `D.52` CON `D.41` VOLVIO A MORDER, Y SE REPARO COMO MANDA EL ENCARGO.**
+> `scripts/tabla_de_cierre.py --escribir` escribe SIEMPRE en la misma ruta viva, asi que al
+> escribir la mia deje en rojo la de la vuelta 46 **sin tocar ni una celda de su reporte**.
+> **La salida de la vuelta 46 se saco de git byte a byte y se archivo**, y la linea de `HH.5.g`
+> pasa a nombrar la copia archivada con su correccion declarada al lado:
+>
+> <!-- TALLADO: parcial salida=.v47/sello_v46.txt -->
+>
+>     $ git show HEAD:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+>     ed84ec8edfb1e4dadf1edc3110d8ca1ab988f64a
+>     $ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v46.txt
+>     ed84ec8edfb1e4dadf1edc3110d8ca1ab988f64a
+>
+> **EL MISMO `hash-object` ANTES Y DESPUES: la copia es la salida, no una transcripcion.**
+> Es la tercera vuelta seguida con la misma averia (`42` la sufrio, `46` la reparo y la volvio a
+> causar, `47` la repara y la vuelve a causar), y **eso es lo que la hace deuda de maquinaria y no
+> descuido de nadie**. `d022` ya la tiene abierta.
+
+<!-- TALLADO: parcial salida=docs/loop/TABLA_DE_CIERRE.txt -->
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | los registros de la `ACTA 45`: el `116`, las tres deudas nuevas y `d024` | **CERRADA**: la correccion del `116` escrita al lado del texto viejo con el instrumento de hoy (`115`), las tres deudas nombradas con su motivo de no pago, y `d024` dicha y no abierta |
+| 2 | `cap_04` abierto: los ocho siguientes, cada uno por su aduana, cero inserciones | **CERRADA CORTA EN `6` candidatos de los `8` encargados**: `0` `CAERIA`, `9` pares de cola leidos par a par, la arista de `P27` escrita en las dos fichas, **cero inserciones**, y el corte declarado con su reloj |
+| 3 | `PASOS INVENTADOS` de `cap_04` con su denominador y la fila de la vuelta 46 | **CERRADA**: `0` PUENTE de `45` pasos hoy, `0` de `50` en la vuelta 46, `0` de `95` en el capitulo, y los cinco sitios de tentacion nombrados |
+| 4 | el cierre, con sus guardas, su tabla `D.52`, su estado y su coste | **CERRADA**: las cinco guardas en verde, la colision de `D.52` sellada por `hash-object`, el estado recomputado y el coste del turno contado de sus relojes |
+
+### II.4.d. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+**Van por numero y sin reabrir el argumento** (modo austero), y **los seis estaban escritos en su
+ficha antes de que ninguna senial hablara**:
+
+| # | donde | el discutible, en una linea |
+|---:|---|---|
+| 1 | `detectar_palanca_negativa_actividad_mando`, pasos `6` y `9` | **son consecuencias y no actos**: un lector estricto dira que el nodo se queda en siete pasos |
+| 2 | `delegar_tarea_base_comun_seguimiento`, paso `1` | **es una razon y no un acto**, y sin el la jerarquia de valores del tiempo del mando no se nombra en ningun paso |
+| 3 | `supervisar_tarea_delegada_etapa_menor_valor`, paso `9` | **es una comparacion y no un acto**, y es la unica vara superior que el nodo tiene para el detalle |
+| 4 | `supervisar_decision_delegada_preguntas_concretas`, pasos `3`, `4` y `5` | **salen del caso** de la aprobacion de una compra en Intel. **Si caen, cae el nodo entero**: sin ellos quedan una definicion y un beneficio |
+| 5 | `identificar_paso_limitante_jornada_desfases`, paso `5` | **es el resumen que el propio libro hace** de los pasos `2` a `4`, y un lector estricto dira que repite |
+| 6 | `agrupar_tareas_semejantes_aprovechar_preparacion`, pasos `4` y `5` | **son los dos ejemplos del libro**, y un lector estricto dira que un caso no pone pasos y que queda una postura con su motivo |
+
+**Y EL SEPTIMO ES EL QUE LA VUELTA 46 MARCO A CIEGAS Y HOY NO PUEDO VOLVER A MARCAR CON EL NODO
+DELANTE, y lo digo en vez de callarlo:** `P34` iba a dar dos nodos, con la responsabilidad `1` del
+calendario metida como paso de la cabeza en vez de con casa propia. **Ese par cae fuera del tramo de
+hoy por el techo**, asi que el discutible **sigue marcado y sigue sin nodo**. Lo que si dejo escrito
+es la medida con la que lo sostendria, que es la que el encargo pedia: **la responsabilidad `1`
+ocupa UNA frase (`L281`) sin un solo renglon que la despliegue, y la `2` tiene `L277` entero antes y
+`L285` entero despues.** Esa medida esta en `.v47/borrador_sin_aduana_c07.py`, escrita antes de
+saber si acierto y antes de que el nodo exista.
+
+### II.4.e. **LOS INSTRUMENTOS DEL CIERRE, CORRIDOS Y PEGADOS**
+
+<!-- TALLADO: parcial salida=.v47/cerrar_reporte.txt -->
+
+    $ python scripts/cerrar_reporte.py
+    TALLADO VERDE: las 119 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO VERDE: las 767 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+      A. VERDE: el nodo ejemplo entro limpio, el gate quedo verde y los censos registraron las tres denominaciones por separado
+      B. VERDE: gemelo bloqueado (codigo 2) citando a registrar_fuente_canonica y la señal (similitud_texto)
+      C. VERDE: el hijo quedo bloqueado sin veredicto y entro tras declarar CONTINUA; la arista se declaro por el alias 'registro_fuentes_canonicas' y quedo escrita resuelta como registrar_fuente_canonica > elegir_grafia_clave
+      D. VERDE: la auto-arista via alias (saneo_grafo apunta a sanear_grafo) puso el gate en rojo, y la comparacion literal no la veia: cero coincidencias literales en el mismo dato
+      E. VERDE: hooks/pre-commit aborto con el guion largo (rojo con el archivo, verde sin el, verde de nuevo al quitarlo)
+      F. VERDE: el candidato con la fuente 'libro_que_nadie_registro' fue rechazado y no toco el dataset
+    [cierre] tallado del reporte (D.41)
+    [cierre] censo de rutas (D.42)
+    [cierre] tabla de cierre de tareas (D.52)
+    [cierre] gate de integridad
+    [cierre] barrido de guiones
+    [cierre] prueba de aceptacion
+    [cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda
+    LA VIGENCIA TIENE COLA, Y ESO NO PONE EL CIERRE EN ROJO (D.15).
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+<!-- TALLADO: parcial salida=.v47/tablero.txt -->
+
+    $ python forja.py tablero --escribir
+      MUNDO 11: faltan 3 de 3 libros del corte (grove_high_output, gerber_emyth, marquet_turn_the_ship)
+      COLA DE DOCTRINA (D.56): 11 pregunta(s), 0 bloquea(n)
+    ESCRITO: 22 fila(s) en docs/loop/TABLERO.jsonl
+
+<!-- TALLADO: parcial salida=.v47/credito_cierre.txt -->
+
+    $ python forja.py credito
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            2 de 3     ACTA 45
+      CIFRA PUBLICADA    0 de 2     ACTA 45
+      CLASE              0 de 2     ACTA 45
+      DATO MOVIDO        0 de 2     ACTA 45
+      REPORTE            0 de 3     ACTA 45
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+<!-- TALLADO: parcial salida=.v47/deuda_cierre.txt -->
+
+    $ python scripts/deuda.py
+      pendientes: 12    pagadas: 8
+      ultima vuelta de saneamiento: 44
+
+**EL TABLERO Y EL CREDITO LOS LEO Y NO LOS ANOTO** (`EXTRACTOR.md` 14): esas dos sedes no son mias.
+**Y LA DEUDA CIERRA EN `12`, LAS MISMAS `12` DE LA APERTURA**, que es lo que tiene que dar una
+vuelta que no paga deuda: `d027`, `d028` y `d029` siguen abiertas y las otras nueve tambien. **La
+cola de doctrina sigue congelada en `11` y no le he anadido ninguna.**
+
+### II.4.f. **EN QUE SE FUE EL TURNO** (`D.55`), **Y LA DECLARACION DE QUE ESTA NO ES DE SANEAMIENTO**
+
+**ESTA VUELTA NO ES DE SANEAMIENTO**: no paga deuda, no toca `src/`, `scripts/`, `tests/`, el banco
+ni los protocolos, y su trabajo es extraer nodos. **La cifra en USD no la doy porque no la puedo
+medir**, y `EXTRACTOR.md` 7 manda traer como pregunta lo que no se pueda medir en vez de adivinarlo:
+
+<!-- TALLADO: parcial salida=.v47/usd.txt -->
+
+    $ grep -rl "USD" src/ scripts/ forja.py | wc -l
+    0
+
+**LO QUE LA REGLA SI PERSIGUE, EL EN QUE SE FUE, SI LO PUEDO ENTREGAR**, y lo cuenta el instrumento
+de los relojes y no mi memoria:
+
+<!-- TALLADO: script=.v47/coste.py salida=.v47/coste.txt -->
+
+| en que se fue | medida | de donde sale |
+|---|---:|---|
+| **la aduana en seco de los `6` candidatos** | **4090 s** | PATRON: `.v47/reloj_c0*.txt`, sumados por `.v47/coste.py` |
+| el repaso de aduana de la ficha corregida de `P27` | 578 s | `.v47/reloj_madre_p27.txt` |
+| las dos pruebas de aceptacion, apertura y cierre | 232 s | `.v47/apertura_pruebas.txt` y `.v47/cierre_pruebas.txt`, las dos con su `real` |
+| el resto: leer el capitulo, escribir las `6` fichas y el reporte | sin cifra | sin instrumento propio, y por eso no le pongo cifra |
+| **total cronometrado del turno** | **4900 s  (81.7 min)** | la suma de las filas de arriba |
+
+    EL POR CIENTO DE LO CRONOMETRADO QUE SE FUE EN LA ADUANA EN SECO: 95.3 por ciento
+      (la aduana entera, 4668 s de 4900 s cronometrados)
+    LA PRUEBA DE ACEPTACION, LAS DOS CORRIDAS                    : 4.7 por ciento
+    Y NO HAY FILA EN USD: grep -rl USD src/ scripts/ forja.py da 0 ficheros.
+
+**EL `95,3` POR CIENTO DE LO QUE ESTE TURNO CRONOMETRO SE FUE EN LA ADUANA EN SECO**, y es la misma
+frase que la vuelta 46 escribio con `97,2`. **La segunda medida la confirma: el gasto de esta vuelta
+no esta en escribir nodos, esta en medirlos.** El porcentaje es sobre lo cronometrado y no sobre el
+turno entero, **que es lo unico que puedo sostener**: el tiempo de leer el capitulo y escribir las
+seis fichas no lo mide ningun instrumento de esta casa.
+
+### II.4.g. **LO QUE PROPONGO Y NO ADJUDICO** (`EXTRACTOR.md` 14)
+
+**Tres, y ninguna la anoto yo en la deuda ni en el banco, que no son mis sedes:**
+
+1. **QUE EL TECHO EN MINUTOS DE `d011` SE CALCULE SOBRE PASOS Y NO SOBRE CANDIDATOS.** La medida
+   esta en `II.2.h`: entre las dos tandas del mismo capitulo, el coste por candidato sube un `34,8`
+   por ciento y el coste por paso solo un `12,4`. **Un techo de `8` candidatos no dice cuanto cuesta
+   hasta que se sabe de cuantos pasos son.**
+2. **QUE LA SALIDA DE `D.52` LLEVE LA VUELTA EN SU NOMBRE**, que es lo que `HH.5.i` ya propuso y lo
+   que esta vuelta vuelve a pagar. **Tercer ejemplar seguido.**
+3. **QUE EL RETOQUE DE UN `resumen_teorico` EN CUARENTENA TENGA UNA PUERTA MAS BARATA QUE LA ADUANA
+   ENTERA.** Medido hoy: corregir una linea de la ficha de `P27` costo **`578` segundos**, que es lo
+   mismo que un candidato nuevo, **porque el `resumen_teorico` alimenta la senial 1**. Eso hace que
+   una correccion declarada compita con un nodo, y `II.2.f` tiene el caso: **una arista que la
+   senial levanto y que no metere en su ficha porque cuesta `732` segundos.** No propongo relajar la
+   aduana: propongo que alguien mida si el barrido puede reusar el calculo de los vecinos que no
+   cambiaron. **Es maquinaria, y la moratoria de `EXTRACTOR.md` 13 me deja fuera.**
+
+| tarea | que pide | estado |
+|---|---|---|
+| `II.4` | el cierre: guardas, tabla `D.52`, estado recomputado, linea del tramo con su reloj, tablero y credito leidos, y el coste de `D.55` | **CERRADA**: las cinco guardas en verde, la tabla `D.52` con su colision declarada y sellada por `hash-object`, el estado recomputado, la linea del tramo en `II.2.h` con su reloj, el tablero y el credito leidos y no anotados, y el coste del turno contado de sus relojes |
+
+---
+
+**LA VUELTA 47 CIERRA CON SUS CUATRO FILAS CERRADAS, UNA DE ELLAS CORTA Y DECLARADA: `6`
+CANDIDATOS NUEVOS EN LA BANDEJA DE `grove_high_output`, `0` PUENTE DE `45` PASOS, `9` PARES DE COLA
+LEIDOS PAR A PAR, LA ARISTA DE `P27` ESCRITA EN LAS DOS FICHAS, Y CERO INSERCIONES POR PUERTA
+MEDIDA POR TERCERA VUELTA SEGUIDA.**
