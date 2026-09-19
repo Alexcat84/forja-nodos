@@ -1,6 +1,8 @@
-$ python scripts/tabla_de_cierre.py --escribir
-poblacion: dataset/nodos.jsonl entero, libro grove_high_output
-criterio : un nodo sale de un capitulo si cita grove_high_output/<cap>.md
+
+### LL.5.d. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
+
+*Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
+`docs/loop/TABLA_DE_CIERRE.txt`.*
 
 | # | tarea | como cerro |
 |---:|---|---|

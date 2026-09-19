@@ -1,0 +1,23 @@
+DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+  registro: docs/loop/DEUDA.jsonl
+  pendientes: 15    pagadas: 13
+
+  id     vuelta  especie            que
+  --------------------------------------------------------------------------------------------
+  d005   grove v2 relevo de grove    De los 15 candidatos de cap_03 de grove, su aduana e
+  d006   41      relectura          cap_13 entero esta en 4 de 212, el 1,89 por ciento, 
+  d007   41      doctrina           La cola de doctrina queda congelada en 11 preguntas 
+  d009   42      deuda              scripts/tabla_de_cierre.py mide la tabla de cierre c
+  d011   43      deuda              TODO TECHO QUE EL AUDITOR ESCRIBA LLEVA SU MITAD EN 
+  d012   43      deuda              SEGUNDO EJEMPLAR MEDIDO de la pregunta 9 de la cola 
+  d020   44      maquinaria         src/arista.py linea 182 teclea veredicto CONTINUA en
+  d022   44      maquinaria         scripts/tabla_de_cierre.py localiza la tabla por la 
+  d024   45      aduana             LOS 7 CANDIDATOS DE cap_02 DE grove NO TIENEN INFORM
+  d028   46      maquinaria         src/tablero.py:214 publica en capitulos_minados los 
+  d029   46      maquinaria         El tallado de D.41 casa las filas por su primera cel
+  d030   47      maquinaria         scripts/tabla_de_cierre.py --escribir escribe SIEMPR
+  d031   47      aduana             RETOCAR UNA LINEA DE UN resumen_teorico EN CUARENTEN
+  d033   48      maquinaria         test_e_guion_largo_rompe_el_hook salio ROJO una vez 
+  d037   49      maquinaria         LA PUERTA DE D.39 NO TIENE CASO ROJO AUTOMATICO: gre
+
+  ultima vuelta de saneamiento: 49

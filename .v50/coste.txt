@@ -1,0 +1,14 @@
+| pieza del turno | instrumento | corridas | segundos | por ciento del turno |
+|---|---|---:|---:|---:|
+| pasada de aduana de `P41` | `forja.py informe` | 1 | 639.0 | 43.0 |
+| pasada de aduana de `P42` | `forja.py informe` | 1 | 335.0 | 22.5 |
+| pasada de aduana de `P44` | `forja.py informe` | 1 | 410.0 | 27.6 |
+| prueba de aceptacion al cierre | `tests/test_aceptacion.py` | 1 | 97.0 | 6.5 |
+| las cuatro guardas restantes del cierre | `gate`, `guiones`, `tallado`, `censo` | 4 | 6.0 | 0.4 |
+| **TOTAL MEDIDO CON RELOJ** | | **8** | **1487.0** | **100.0** |
+
+pasadas de aduana        : 3 de un techo de 3,  1384.0 s,  93.1 por ciento del turno
+media por pasada de aduana    : 461.3 s   (la cifra que la vuelta 51 tiene que usar, 47.5.c)
+estimada por el encargo       : 1017.3 s por pasada, o sea 3051.9 s las tres
+desvio de la estimacion       : -1667.9 s  (-54.7 por ciento)
+techo en minutos              : 1487.0 s medidos de un techo de 3420 s, o sea 24.8 min de 57.0

@@ -1,3 +1,50 @@
+
+## LL.4. TAREA 4. **LA FRONTERA DE `cap_05`, PUBLICADA ANTES DE MINAR NADA** (`EXTRACTOR.md` 10)
+
+**`cap_04` cierra hoy en `LL.2.k`, asi que la vuelta 51 mina `cap_05`, y una tanda no empieza sin su
+frontera delante.** Es la unidad `Cap. 4` del libro, `Meetings, The Medium of Managerial Work`. El
+instrumento es el mismo que la vuelta 46 corrio sobre `cap_04` (`.v46/frontera.py`), con **mi**
+lectura de `cap_05` dentro y con la tercera cifra de control que el encargo pide: **cero constantes
+tecleadas que el fichero pueda dar**, la cabecera se localiza por el segundo guion triple y la cita
+de cada fila la imprime el instrumento de la linea.
+
+### LL.4.a. **LA COMPROBACION DE `cap_05`, QUE VA ANTES DE LA TABLA, CON SUS TRES CIFRAS DE CONTROL**
+
+<!-- TALLADO: parcial script=.v50/frontera.py salida=.v50/frontera_cap_05.txt -->
+
+    ==============================================================================
+    1. LA COMPROBACION DE cap_05, ANTES DE SU TABLA
+    ==============================================================================
+    fichero                                : fuentes/grove_high_output/cap_05.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 46
+    lineas con contenido tras la cabecera  : 84
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 4962 palabras
+    cuerpo medido aparte                   : 4962 palabras
+    CARACTERES DE CUERPO                   : 29820 caracteres
+    fichero entero, para cruzar con wc -w  : 4990 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_05 Y SOLO cap_05: 26
+
+**LAS TRES CIFRAS DE CONTROL QUE EL ENCARGO PIDE, JUNTAS Y EN UNA LINEA: `29.820` caracteres de
+cuerpo, `0` lineas sin cubrir y `0` solapes.** Y la cuarta que esta tabla lleva siempre: **`4962`
+de suma de filas contra `4962` de cuerpo medido aparte.**
+
+**CIERRA AL DIGITO Y SE CRUZA CON `wc -w`:** `4962` de cuerpo mas `28` de cabecera son los `4990`
+que `wc -w` da del fichero entero.
+
+<!-- TALLADO: parcial salida=.v50/cruce_wc.txt -->
+
+    $ wc -w fuentes/grove_high_output/cap_05.md
+    4990 fuentes/grove_high_output/cap_05.md
+    $ sed -n "1,7p" fuentes/grove_high_output/cap_05.md | wc -w
+    28
+
+### LL.4.b. `cap_05`, `Meetings, The Medium of Managerial Work`: **CUARENTA Y SEIS TRAMOS Y VEINTISEIS NODOS**
+
+<!-- TALLADO: script=.v50/frontera.py salida=.v50/frontera_cap_05.txt -->
 | tramo de cap_05 | palabras | nodos | que es, y por que | la salida, pegada |
 |---|---:|---:|---|---|
 | `L9 a L11` | 6 | **0** | P1  rotulos: el numero 4 y el titulo textual Meetings, The Medium of Managerial Work | `9:4` |
@@ -47,3 +94,65 @@
 | `L173 a L173` | 122 | **1** | P45 EL ACTA DESPUES DE LA REUNION: que resuma, que llegue rapido, y que diga que, quien y cuando | `173:Once the meeting is over, the chairman must nail down exactly wh` |
 | `L175 a L175` | 113 | **0** | P46 el ochenta contra veinte y la senial de mala organizacion: POSTURA con cifra de Drucker | `175:Ideally, a manager should never have to call an ad hoc, mission-` |
 | | **4962** | **26** | **el cuerpo entero de cap_05, cero lineas sin cubrir y cero solapes** | |
+
+### LL.4.c. **EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI**
+
+<!-- TALLADO: parcial script=.v50/frontera.py salida=.v50/frontera_cap_05.txt -->
+
+    ==============================================================================
+    3. EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI
+    ==============================================================================
+    NODOS QUE MI FRONTERA DA EN LA UNIDAD DE LA VUELTA SIGUIENTE (cap_05): 26
+    TECHO DE CANDIDATOS POR VUELTA (EXTRACTOR.md 12.4): entre 5 y 15
+    DENTRO DEL TECHO                                             : NO
+    SI DA NO, MANDA LA REGLA DE PRECEDENCIA DE 12.4: la vuelta cierra en esta unidad,
+    se mina hasta el techo y la linea del tramo dice en que candidato corto.
+
+**VEINTISEIS CONTRA UN TECHO DE QUINCE, Y ES LA CIFRA MAS ALTA QUE HA DADO UN CAPITULO DE ESTE
+LIBRO** (`cap_04` dio `22`). **La regla de precedencia de 12.4 se dispara de antemano: `cap_05` no
+cabe en una vuelta**, y quien lo mine cerrara en esa unidad diciendo en que candidato corto. **Yo
+no lo mino hoy: hoy solo publico su frontera**, que es lo que el encargo pide.
+
+**Y UNA ADVERTENCIA DE COSTE QUE DEJO ESCRITA PORQUE LA MEDI HOY:** mis tres pasadas de aduana de
+`LL.2` costaron `639,0`, `335,0` y `410,0` s con la bandeja en `44`. **Cada ficha que entra en la
+bandeja sube la poblacion del barrido** (`391`, `392`, `393` en mis tres informes, leidos de
+`LL.2.e`, `LL.2.g` y `LL.2.i`), **asi que un capitulo de `26` nodos se paga mas caro por nodo que
+uno de `22`.** No propongo nada con esto: lo dejo medido para quien escriba el techo de la
+vuelta 51.
+
+### LL.4.d. **LOS VEINTE TRAMOS QUE DAN CERO, Y SON CASI LA MITAD**
+
+<!-- TALLADO: parcial salida=.v50/cero_tramos_05.txt -->
+
+    $ los tramos de la tabla que llevan **0** en la columna de nodos
+    filas: 46 cero: 20
+    P1 P2 P3 P4 P5 P8 P9 P10 P21 P22 P23 P24 P25 P29 P30 P36 P37 P43 P44 P46
+    palabras que esos tramos suman: 1896 de 4962
+
+**Un tramo que da cero es una decision, no un descuido**, y cada uno lleva su regla escrita en la
+columna *que es, y por que* de la tabla de arriba, que es la que imprime el instrumento. **Los
+cuatro motivos, agrupados:**
+
+| motivo | tramos | la regla que lo tumba |
+|---|---|---|
+| **CASO del autor** | `P9` (las clases privadas de memorias), `P22` (el uno a uno con el responsable de ventas), `P23` (el uno a uno en casa, que el libro llama digresion), `P25` (su primer grupo de ingenieros), `P43` (la agenda de Filipinas, reproducida entera) | manual 3.5: el caso no es la casa, y entra **nombrado dentro** del nodo de su doctrina |
+| **POSTURA o DEFINICION** | `P2`, `P3`, `P4`, `P21`, `P30`, `P37`, `P44`, `P46` | `EXTRACTOR.md` 9: una postura no ejecuta una busqueda, y una definicion no tiene nada que hacer |
+| **rotulo o anuncio, sin cuerpo que extraer** | `P1`, `P5`, `P8`, `P24`, `P29`, `P36` | son el numero del capitulo, su titulo y los cuatro rotulos de seccion |
+| **acota el alcance, y acotar no es procedimentar** | `P10` | *here I want to talk about one-on-ones between a supervisor and each of the professionals who report to him directly*: el autor dice DE QUE va a hablar, y **NOMBRAR NO ES PROCEDIMENTAR** |
+
+**LOS DOS QUE MAS ME COSTARON, Y LOS DIGO PARA QUE SE PUEDAN TUMBAR:**
+
+- **`P4`** enuncia las **DOS** clases de reunion y las nombra, asi que parece una cabeza de serie de
+  `D.37`. **Le doy cero** porque lo que pone bajo cada nombre es **para que sirve cada una**, no un
+  inventario de medios: *knowledge is shared and information is exchanged* son FINES, y `9.1`
+  restriccion `1` los deja fuera. **La cabeza de serie de verdad es `P7`**, que dice *three kinds*
+  y las nombra una a una, y esas tres si tienen procedimiento detras.
+- **`P43`** son `28` lineas de agenda reproducida (`L115 a L169`, `77` palabras). **Le doy cero** y
+  su material entra **nombrado dentro de `P42`**, que es el tramo donde el libro dice que el
+  presidente mande una agenda y que anuncia el ejemplar. **Si alguien le diera nodo propio, su
+  entregable llevaria un dato del caso** (la planta de Filipinas), que es la senial barata que
+  manual 3.5 nombra.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `LL.4` | la frontera de `cap_05` publicada antes de minar nada, con el molde de `HH.2.c` y sus tres cifras de control | **CERRADA en `LL.4`**: `46` tramos, `4962` contra `4962`, `29.820` caracteres de cuerpo, `0` lineas sin cubrir, `0` solapes, cruce con `wc -w` al digito, `26` nodos contra un techo de `15` y los `20` tramos de cero con su regla |

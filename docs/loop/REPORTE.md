@@ -46895,7 +46895,19 @@ toque ni un byte de su fichero.**
 ### KK.5.c. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
 
 *Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
-`docs/loop/TABLA_DE_CIERRE.txt`.*
+`docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v49.txt`.*
+
+> **CORRECCION DECLARADA de la vuelta 50, y no toca ni una celda de esta tabla.**
+> Esta linea decia `docs/loop/TABLA_DE_CIERRE.txt`, que es la ruta VIVA del
+> instrumento, **y es la misma colision que esta misma seccion declaro contra la
+> vuelta 48**: la vuelta siguiente que cierre su tabla deja a esta en rojo sin que
+> nadie toque el reporte. **La vuelta 50 le hace a la 49 exactamente lo que la 49 le
+> hizo a la 48, la 48 a la 47, la 47 a la 46 y la 46 a la 42.**
+>
+> **LA SALIDA DE LA VUELTA 49 NO SE TECLEO NI SE PERDIO: SE SACO DE GIT BYTE A BYTE**
+> (`git show HEAD:docs/loop/TABLA_DE_CIERRE.txt`), **con el mismo `git hash-object`
+> en los dos lados**, que es lo que prueba que la copia es la salida y no una
+> transcripcion. **El sello esta pegado en `LL.5.c`.**
 
 > **LA COLISION DE `D.52` CON `D.41` MUERDE POR QUINTA VEZ SEGUIDA, Y SE PAGA A MANO OTRA VEZ**
 > (`d030`, `TAREA 5.2` del encargo). Al escribir mi tabla en la ruta viva dejaba en rojo la de la
@@ -47172,11 +47184,11 @@ de arriba: **cero de los `72` cuelga de algo que yo haya tocado hoy.**
 
 | tarea | que pide | estado |
 |---|---|---|
-| `LL.1` | los registros de la `ACTA 48`: las ocho filas de `48.5.b` recogidas sin reabrirlas, la caida de PROSA que no acumula anotada, y `DEUDA.jsonl` leido con sus tres deudas nuevas | *(vacia al abrir)* |
-| `LL.2` | cerrar `cap_04` con `P41`, `P42` y `P44`: frontera dentro del nodo antes de cortar, fidelidad `D.30` paso a paso con su `sed` pegado, y **aduana en el mismo acto** con su reloj. **Cero inserciones** | *(vacia al abrir)* |
-| `LL.3` | pagar `d036` y `d038`: nueve correcciones declaradas sin borrar el numero viejo, y cero pasadas de aduana por adjudicacion `3.c` del encargo | *(vacia al abrir)* |
-| `LL.4` | la frontera de `cap_05` publicada antes de minar nada, con el molde de `HH.2.c` y sus tres cifras de control. **Es la cortable** | *(vacia al abrir)* |
-| `LL.5` | el cierre: las cinco guardas, la tabla `D.52` con su colision, el estado recomputado, `PASOS INVENTADOS` con su fila, la linea del tramo con su reloj y la deuda recomputada | *(vacia al abrir)* |
+| `LL.1` | los registros de la `ACTA 48`: las ocho filas de `48.5.b` recogidas sin reabrirlas, la caida de PROSA que no acumula anotada, y `DEUDA.jsonl` leido con sus tres deudas nuevas | **CERRADA en `LL.1`** |
+| `LL.2` | cerrar `cap_04` con `P41`, `P42` y `P44`: frontera dentro del nodo antes de cortar, fidelidad `D.30` paso a paso con su `sed` pegado, y **aduana en el mismo acto** con su reloj. **Cero inserciones** | **CERRADA ENTERA en `LL.2`**: `3` de `3`, `0 CAERIA`, `cap_04` en `22` de `22` |
+| `LL.3` | pagar `d036` y `d038`: nueve correcciones declaradas sin borrar el numero viejo, y cero pasadas de aduana por adjudicacion `3.c` del encargo | **CERRADA en `LL.3`**, las dos deudas PAGADAS |
+| `LL.4` | la frontera de `cap_05` publicada antes de minar nada, con el molde de `HH.2.c` y sus tres cifras de control. **Es la cortable** | **CERRADA en `LL.4`**: `46` tramos, `26` nodos, cero sin cubrir y cero solapes |
+| `LL.5` | el cierre: las cinco guardas, la tabla `D.52` con su colision, el estado recomputado, `PASOS INVENTADOS` con su fila, la linea del tramo con su reloj y la deuda recomputada | **CERRADA en `LL.5`**: guardas verdes a la primera y sin corte de techo |
 
 ## LL.0. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
 
@@ -47891,3 +47903,530 @@ habria comprado una pasada de `1017,3` s para un cambio que no mueve ni un vecin
 | tarea | que pide | estado |
 |---|---|---|
 | `LL.3` | pagar `d036` y `d038`: nueve correcciones declaradas sin borrar, y cero pasadas de aduana | **CERRADA en `LL.3`, las dos deudas PAGADAS**: `8` mas `1` correcciones escritas dentro de su ficha con su renglon pegado, `9` de `9` con solo `resumen_teorico` tocado, texto viejo en pie en las nueve, `gate` y `guiones` verdes, y **cero pasadas de aduana gastadas** |
+
+## LL.4. TAREA 4. **LA FRONTERA DE `cap_05`, PUBLICADA ANTES DE MINAR NADA** (`EXTRACTOR.md` 10)
+
+**`cap_04` cierra hoy en `LL.2.k`, asi que la vuelta 51 mina `cap_05`, y una tanda no empieza sin su
+frontera delante.** Es la unidad `Cap. 4` del libro, `Meetings, The Medium of Managerial Work`. El
+instrumento es el mismo que la vuelta 46 corrio sobre `cap_04` (`.v46/frontera.py`), con **mi**
+lectura de `cap_05` dentro y con la tercera cifra de control que el encargo pide: **cero constantes
+tecleadas que el fichero pueda dar**, la cabecera se localiza por el segundo guion triple y la cita
+de cada fila la imprime el instrumento de la linea.
+
+### LL.4.a. **LA COMPROBACION DE `cap_05`, QUE VA ANTES DE LA TABLA, CON SUS TRES CIFRAS DE CONTROL**
+
+<!-- TALLADO: parcial script=.v50/frontera.py salida=.v50/frontera_cap_05.txt -->
+
+    ==============================================================================
+    1. LA COMPROBACION DE cap_05, ANTES DE SU TABLA
+    ==============================================================================
+    fichero                                : fuentes/grove_high_output/cap_05.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 46
+    lineas con contenido tras la cabecera  : 84
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 4962 palabras
+    cuerpo medido aparte                   : 4962 palabras
+    CARACTERES DE CUERPO                   : 29820 caracteres
+    fichero entero, para cruzar con wc -w  : 4990 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_05 Y SOLO cap_05: 26
+
+**LAS TRES CIFRAS DE CONTROL QUE EL ENCARGO PIDE, JUNTAS Y EN UNA LINEA: `29.820` caracteres de
+cuerpo, `0` lineas sin cubrir y `0` solapes.** Y la cuarta que esta tabla lleva siempre: **`4962`
+de suma de filas contra `4962` de cuerpo medido aparte.**
+
+**CIERRA AL DIGITO Y SE CRUZA CON `wc -w`:** `4962` de cuerpo mas `28` de cabecera son los `4990`
+que `wc -w` da del fichero entero.
+
+<!-- TALLADO: parcial salida=.v50/cruce_wc.txt -->
+
+    $ wc -w fuentes/grove_high_output/cap_05.md
+    4990 fuentes/grove_high_output/cap_05.md
+    $ sed -n "1,7p" fuentes/grove_high_output/cap_05.md | wc -w
+    28
+
+### LL.4.b. `cap_05`, `Meetings, The Medium of Managerial Work`: **CUARENTA Y SEIS TRAMOS Y VEINTISEIS NODOS**
+
+<!-- TALLADO: script=.v50/frontera.py salida=.v50/frontera_cap_05.txt -->
+| tramo de cap_05 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L11` | 6 | **0** | P1  rotulos: el numero 4 y el titulo textual Meetings, The Medium of Managerial Work | `9:4` |
+| `L13 a L13` | 85 | **0** | P2  la mala fama de la reunion, con Drucker y Whyte citados: POSTURA con cifras de otros autores | `13:Meetings have a bad name. One school of management thought consi` |
+| `L15 a L15` | 114 | **0** | P3  la reunion es el medio por el que se hace el trabajo de mando: DEFINICION, no hay nada que ejecutar | `15:But there is another way to regard meetings. Earlier we said tha` |
+| `L17 a L17` | 76 | **0** | P4  las DOS clases de reunion, de proceso y de mision: DEFINICION, nombra sin poner inventario de medios | `17:The two basic managerial roles produce two basic kinds of meetin` |
+| `L19 a L19` | 2 | **0** | P5  rotulo de seccion Process-Oriented Meetings, sin cuerpo que extraer | `19:Process-Oriented Meetings` |
+| `L21 a L21` | 124 | **1** | P6  INFUNDIR REGULARIDAD A LA REUNION DE PROCESO: sus medios nombrados uno a uno y el control de produccion | `21:To make the most of this kind of meeting, we should aim to infus` |
+| `L23 a L23` | 18 | **1** | P7  CABEZA DE SERIE: las TRES clases de reunion de proceso, contadas y nombradas una a una | `23:At Intel we use three kinds of process-oriented meetings: the on` |
+| `L25 a L25` | 1 | **0** | P8  rotulo ONE-ON-ONES, sin cuerpo que extraer | `25:ONE-ON-ONES` |
+| `L27 a L29` | 264 | **0** | P9  que es el uno a uno y para que sirve, mas las clases privadas del autor: DEFINICION mas CASO | `27:At Intel, a one-on-one is a meeting between a supervisor and a s` |
+| `L31 a L31` | 46 | **0** | P10 con quien se tiene: el autor acota DE QUE va a hablar, y acotar el alcance no es procedimentar | `31:Who should have a one-on-one? In some situations a supervisor sh` |
+| `L33 a L35` | 187 | **1** | P11 CADA CUANTO: la madurez relevante para la tarea y la velocidad de cambio del area, con sus dos frecuencias | `33:How often should you have one-on-ones? Or put another way, how d` |
+| `L37 a L39` | 195 | **1** | P12 CUANTO DURA Y DONDE: la hora como minimo y el area de trabajo del subordinado, con lo que alli se aprende | `37:How long should a one-on-one meeting last? There really is no an` |
+| `L41 a L41` | 145 | **1** | P13 LA REUNION ES DEL SUBORDINADO: el guion que el prepara y el paseo por el material | `41:A key point about a one-on-one: It should be regarded as the sub` |
+| `L43 a L43` | 134 | **1** | P14 QUE SE TRATA: los indicadores, lo ocurrido desde la ultima, el problema potencial y la intuicion | `43:What should be covered in a one-on-one? We can start with perfor` |
+| `L45 a L47` | 134 | **1** | P15 EL PAPEL DEL SUPERVISOR y el principio de una pregunta mas, con la frase de Drucker dentro | `45:What is the role of the supervisor in a one-on-one? He should fa` |
+| `L49 a L49` | 157 | **1** | P16 LAS PISTAS MECANICAS: las dos copias del guion, las notas, y lo que escribirlo simboliza | `49:I'd like to suggest some mechanical hints for effective one-on-o` |
+| `L51 a L51` | 64 | **1** | P17 EL FICHERO DE ESPERA donde los dos acumulan lo importante y no urgente: la tanda aplicada al uno a uno | `51:A real time-saver is using a "hold" file where both the supervis` |
+| `L53 a L53` | 117 | **1** | P18 LOS ASUNTOS DE CORAZON A CORAZON y la guardia contra el que se suelta al final de la reunion | `53:The supervisor should also encourage the discussion of heart-to-` |
+| `L55 a L55` | 85 | **1** | P19 EL UNO A UNO POR TELEFONO A DISTANCIA: la preparacion que exige y el intercambio de notas despues | `55:Long-distance telephone one-on-ones have become necessary becaus` |
+| `L57 a L57` | 74 | **1** | P20 PROGRAMAR EN CADENA: fijar el siguiente al terminar el que se tiene, para evitar la cancelacion | `57:One-on-ones should be scheduled on a rolling basis-setting up th` |
+| `L59 a L59` | 105 | **0** | P21 la palanca del uno a uno, noventa minutos por ochenta horas: DEFINICION con su cuenta | `59:What is the leverage of the one-on-one? Let's say you have a one` |
+| `L61 a L63` | 210 | **0** | P22 el uno a uno con el responsable de ventas de Intel: CASO del autor, manual 3.5 | `61:At the same time, the subordinate teaches the supervisor, and wh` |
+| `L65 a L65` | 103 | **0** | P23 el uno a uno en casa con sus hijas: CASO del autor, y el propio libro lo llama digresion | `65:To digress a bit, I also think that one-on-ones at home can help` |
+| `L67 a L67` | 2 | **0** | P24 rotulo STAFF MEETINGS, sin cuerpo que extraer | `67:STAFF MEETINGS` |
+| `L69 a L73` | 284 | **0** | P25 que es la reunion de personal y para que sirve, mas su primer grupo de ingenieros: DEFINICION mas CASO | `69:A staff meeting is one in which a supervisor and all of his subo` |
+| `L75 a L75` | 63 | **1** | P26 QUE SE TRATA EN LA REUNION DE PERSONAL: el criterio de mas de dos, y que hacer si degenera en dos | `75:What should be discussed at a staff meeting? Anything that affec` |
+| `L77 a L77` | 115 | **1** | P27 CUANTO SE ESTRUCTURA: la agenda con antelacion y la sesion abierta, con lo que cabe en cada una | `77:How structured should the meeting be? A free-for-all brainstormi` |
+| `L79 a L83` | 216 | **1** | P28 EL PAPEL DEL SUPERVISOR en la reunion de personal: moderador y facilitador, y nunca conferenciante | `79:What is the role of the supervisor in the staff meeting-a leader` |
+| `L85 a L85` | 2 | **0** | P29 rotulo OPERATION REVIEWS, sin cuerpo que extraer | `85:OPERATION REVIEWS` |
+| `L87 a L87` | 153 | **0** | P30 que es la revision de operaciones y su proposito: DEFINICION con sus FINES, 9.1 restriccion 1 | `87:This is the medium of interaction for people who don't otherwise` |
+| `L89 a L89` | 38 | **1** | P31 CABEZA DE SERIE: los CUATRO jugadores de la revision, contados y nombrados uno a uno | `89:Who are the players at an operation review? The organizing manag` |
+| `L91 a L91` | 126 | **1** | P32 EL MANDO ORGANIZADOR: sus tareas nombradas una a una, incluida la de llevar el tiempo | `91:The supervisor of the presenting managers-an Intel divisional ma` |
+| `L93 a L93` | 102 | **1** | P33 EL MANDO REVISOR: preguntar, comentar, dar el espiritu, y no leer el material por adelantado | `93:The reviewing manager is the senior supervisor at whom the revie` |
+| `L95 a L95` | 168 | **1** | P34 LOS PRESENTADORES: los apoyos visuales, los cuatro minutos por apoyo, resaltar y vigilar al publico | `95:The people presenting the reviews-a group of marketing superviso` |
+| `L97 a L97` | 174 | **1** | P35 EL PUBLICO: preguntar, anotar, hablar si no se esta de acuerdo, y dejar constancia del error de hecho | `97:The audience at an operation review also has a crucial part to p` |
+| `L99 a L99` | 2 | **0** | P36 rotulo Mission-Oriented Meetings, sin cuerpo que extraer | `99:Mission-Oriented Meetings` |
+| `L101 a L101` | 142 | **0** | P37 que es la reunion de mision y de quien es la culpa si falla: DEFINICION con POSTURA | `101:Unlike a process-oriented meeting, which is a regularly schedule` |
+| `L103 a L103` | 71 | **1** | P38 ANTES DE CONVOCAR: el objetivo claro y las TRES preguntas que hay que contestar que si | `103:Thus the chairman must have a clear understanding of the meeting` |
+| `L105 a L105` | 148 | **1** | P39 EL COSTE EN DINERO de la reunion y que hacer con el: CIFRA DEL AUTOR mas procedimiento propio | `105:An estimate of the dollar cost of a manager's time, including ov` |
+| `L107 a L109` | 133 | **1** | P40 LA ASISTENCIA: identificar, conseguir el compromiso, el sustituto con poder, y el corte de ocho | `107:Assuming the meeting does need to be held, the chairman faces a ` |
+| `L111 a L111` | 89 | **1** | P41 LA DISCIPLINA: no dejar pasar la tardanza y encarar al que llega tarde, con el coste por hora delante | `111:The chairman is also responsible for maintaining discipline. It ` |
+| `L113 a L113` | 67 | **1** | P42 LA LOGISTICA: el equipo de la sala y la agenda que dice el proposito y el papel de cada uno | `113:The chairman should finally be responsible for logistical matter` |
+| `L115 a L169` | 77 | **0** | P43 el ejemplar de agenda de la reunion de Filipinas: CASO del autor reproducido entero, manual 3.5 | `115:To:` |
+| `L171 a L171` | 109 | **0** | P44 regimentacion contra disciplina, y el quirofano: POSTURA | `171:This may sound like too much regimentation for you, but whether ` |
+| `L173 a L173` | 122 | **1** | P45 EL ACTA DESPUES DE LA REUNION: que resuma, que llegue rapido, y que diga que, quien y cuando | `173:Once the meeting is over, the chairman must nail down exactly wh` |
+| `L175 a L175` | 113 | **0** | P46 el ochenta contra veinte y la senial de mala organizacion: POSTURA con cifra de Drucker | `175:Ideally, a manager should never have to call an ad hoc, mission-` |
+| | **4962** | **26** | **el cuerpo entero de cap_05, cero lineas sin cubrir y cero solapes** | |
+
+### LL.4.c. **EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI**
+
+<!-- TALLADO: parcial script=.v50/frontera.py salida=.v50/frontera_cap_05.txt -->
+
+    ==============================================================================
+    3. EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI
+    ==============================================================================
+    NODOS QUE MI FRONTERA DA EN LA UNIDAD DE LA VUELTA SIGUIENTE (cap_05): 26
+    TECHO DE CANDIDATOS POR VUELTA (EXTRACTOR.md 12.4): entre 5 y 15
+    DENTRO DEL TECHO                                             : NO
+    SI DA NO, MANDA LA REGLA DE PRECEDENCIA DE 12.4: la vuelta cierra en esta unidad,
+    se mina hasta el techo y la linea del tramo dice en que candidato corto.
+
+**VEINTISEIS CONTRA UN TECHO DE QUINCE, Y ES LA CIFRA MAS ALTA QUE HA DADO UN CAPITULO DE ESTE
+LIBRO** (`cap_04` dio `22`). **La regla de precedencia de 12.4 se dispara de antemano: `cap_05` no
+cabe en una vuelta**, y quien lo mine cerrara en esa unidad diciendo en que candidato corto. **Yo
+no lo mino hoy: hoy solo publico su frontera**, que es lo que el encargo pide.
+
+**Y UNA ADVERTENCIA DE COSTE QUE DEJO ESCRITA PORQUE LA MEDI HOY:** mis tres pasadas de aduana de
+`LL.2` costaron `639,0`, `335,0` y `410,0` s con la bandeja en `44`. **Cada ficha que entra en la
+bandeja sube la poblacion del barrido** (`391`, `392`, `393` en mis tres informes, leidos de
+`LL.2.e`, `LL.2.g` y `LL.2.i`), **asi que un capitulo de `26` nodos se paga mas caro por nodo que
+uno de `22`.** No propongo nada con esto: lo dejo medido para quien escriba el techo de la
+vuelta 51.
+
+### LL.4.d. **LOS VEINTE TRAMOS QUE DAN CERO, Y SON CASI LA MITAD**
+
+<!-- TALLADO: parcial salida=.v50/cero_tramos_05.txt -->
+
+    $ los tramos de la tabla que llevan **0** en la columna de nodos
+    filas: 46 cero: 20
+    P1 P2 P3 P4 P5 P8 P9 P10 P21 P22 P23 P24 P25 P29 P30 P36 P37 P43 P44 P46
+    palabras que esos tramos suman: 1896 de 4962
+
+**Un tramo que da cero es una decision, no un descuido**, y cada uno lleva su regla escrita en la
+columna *que es, y por que* de la tabla de arriba, que es la que imprime el instrumento. **Los
+cuatro motivos, agrupados:**
+
+| motivo | tramos | la regla que lo tumba |
+|---|---|---|
+| **CASO del autor** | `P9` (las clases privadas de memorias), `P22` (el uno a uno con el responsable de ventas), `P23` (el uno a uno en casa, que el libro llama digresion), `P25` (su primer grupo de ingenieros), `P43` (la agenda de Filipinas, reproducida entera) | manual 3.5: el caso no es la casa, y entra **nombrado dentro** del nodo de su doctrina |
+| **POSTURA o DEFINICION** | `P2`, `P3`, `P4`, `P21`, `P30`, `P37`, `P44`, `P46` | `EXTRACTOR.md` 9: una postura no ejecuta una busqueda, y una definicion no tiene nada que hacer |
+| **rotulo o anuncio, sin cuerpo que extraer** | `P1`, `P5`, `P8`, `P24`, `P29`, `P36` | son el numero del capitulo, su titulo y los cuatro rotulos de seccion |
+| **acota el alcance, y acotar no es procedimentar** | `P10` | *here I want to talk about one-on-ones between a supervisor and each of the professionals who report to him directly*: el autor dice DE QUE va a hablar, y **NOMBRAR NO ES PROCEDIMENTAR** |
+
+**LOS DOS QUE MAS ME COSTARON, Y LOS DIGO PARA QUE SE PUEDAN TUMBAR:**
+
+- **`P4`** enuncia las **DOS** clases de reunion y las nombra, asi que parece una cabeza de serie de
+  `D.37`. **Le doy cero** porque lo que pone bajo cada nombre es **para que sirve cada una**, no un
+  inventario de medios: *knowledge is shared and information is exchanged* son FINES, y `9.1`
+  restriccion `1` los deja fuera. **La cabeza de serie de verdad es `P7`**, que dice *three kinds*
+  y las nombra una a una, y esas tres si tienen procedimiento detras.
+- **`P43`** son `28` lineas de agenda reproducida (`L115 a L169`, `77` palabras). **Le doy cero** y
+  su material entra **nombrado dentro de `P42`**, que es el tramo donde el libro dice que el
+  presidente mande una agenda y que anuncia el ejemplar. **Si alguien le diera nodo propio, su
+  entregable llevaria un dato del caso** (la planta de Filipinas), que es la senial barata que
+  manual 3.5 nombra.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `LL.4` | la frontera de `cap_05` publicada antes de minar nada, con el molde de `HH.2.c` y sus tres cifras de control | **CERRADA en `LL.4`**: `46` tramos, `4962` contra `4962`, `29.820` caracteres de cuerpo, `0` lineas sin cubrir, `0` solapes, cruce con `wc -w` al digito, `26` nodos contra un techo de `15` y los `20` tramos de cero con su regla |
+
+## LL.5. TAREA 5. **EL CIERRE, CON LAS MISMAS PIEZAS DE SIEMPRE**
+
+### LL.5.a. **EL ESTADO AL CIERRE, RECOMPUTADO AL CIERRE Y NO COPIADO DE LA APERTURA** (`EXTRACTOR.md` 4)
+
+<!-- TALLADO: parcial salida=.v50/cierre_estado.txt -->
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+       1087 total
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    44
+    $ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+    1
+    $ grep -l "unidad Cap. 3" cuarentena/grove_high_output/*.json | wc -l   (las fichas de cap_04)
+    22
+
+**LAS CUATRO CIFRAS QUE EL ENCARGO FIJO POR ADELANTADO, Y LAS CUATRO SALEN:**
+
+| lo que el encargo predijo en su `TAREA 5.3` | lo medido al cierre | |
+|---|---:|---|
+| `cuarentena/grove_high_output/` pasa de `41` a **`44`** | **`44`** | **sale** |
+| `dataset/nodos.jsonl` sigue en **`346`** | **`346`** | **sale** |
+| `bitacora/VEREDICTOS.jsonl` sigue en **`740`** | **`740`** | **sale** |
+| `config/pares_mutuos.jsonl` sigue en **`1`** | **`1`** | **sale** |
+
+**LAS TRES QUE TENIAN QUE QUEDARSE QUIETAS SE QUEDARON QUIETAS**, que es lo que el encargo llamaba
+*la caida que buscar*: **esta vuelta no inserto**, asi que **ni un veredicto nuevo, ni un nodo
+nuevo en el grafo, ni un par mutuo nuevo.** Las nueve fichas corregidas en `LL.3` **siguen en la
+bandeja**: corregir una ficha no la mueve de sitio.
+
+### LL.5.b. **LOS ARBOLES QUE NO PODIA TOCAR, MEDIDOS POR DIFERENCIA Y NO PROMETIDOS** (`D.45`)
+
+<!-- TALLADO: parcial salida=.v50/arbol_intacto.txt -->
+
+    $ git status --short -- src/ tests/ scripts/ dataset/ forja.py hooks/ config/ bitacora/ censos/ docs/BANCO_DE_REGLAS.md
+    (sin salida: ninguno de esos arboles cambio en esta vuelta)
+
+**`src/` ENTRA EN ESA LISTA Y SALE LIMPIO, Y ESO ES LO QUE HACE VERIFICABLE LO DE `LL.2.a`:** corri
+`forja.py tablero`, `forja.py informe`, `forja.py gate`, `forja.py guiones` y la suite entera, y
+**no toque ni un byte de ninguno de esos arboles.** `d028`, `d030` y `d037` siguen abiertas por eso
+mismo.
+
+### LL.5.c. **LA COLISION DE `D.52` CON `D.41`, PAGADA A MANO POR SEXTA VEZ SEGUIDA** (`d030`)
+
+**Al escribir mi tabla en la ruta viva dejaba en rojo la de la vuelta 49 sin tocar ni una celda de
+su reporte.** La salida de la vuelta 49 **se saco de git byte a byte y se archivo**, y la linea de
+`KK.5.c` pasa a nombrar la copia archivada con su correccion declarada al lado.
+
+<!-- TALLADO: parcial salida=.v50/sello_v49.txt -->
+
+    $ git show HEAD:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+    f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+    $ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v49.txt
+    f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+
+**EL MISMO `hash-object` ANTES Y DESPUES: la copia es la salida, no una transcripcion.** `42`, `46`,
+`47`, `48`, `49` y hoy la `50`: **sexto ejemplar seguido**, y eso es lo que la hace deuda de
+maquinaria y no descuido. `d022` y `d030` la tienen abierta y `D.45` me deja fuera de arreglarla.
+
+### LL.5.d. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
+
+*Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
+`docs/loop/TABLA_DE_CIERRE.txt`.*
+
+<!-- TALLADO: salida=docs/loop/TABLA_DE_CIERRE.txt -->
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | los registros de la `ACTA 48`: las ocho filas de `48.5.b`, la caida de prosa que no acumula y `DEUDA.jsonl` leido | **CERRADA en `LL.1`**: las `8` filas recogidas sin reabrirse, la `f` convertida en la `TAREA 2`, la caida de prosa anotada con `REPORTE` en `0 de 3` y sin discutirla, y las `4` deudas nuevas leidas del registro con lo que hago con cada una |
+| 2 | cerrar `cap_04` con `P41`, `P42` y `P44`: frontera dentro del nodo, fidelidad `D.30` paso a paso y aduana en el acto | **CERRADA ENTERA en `LL.2`**: `3` de `3` escritos y pasados, `0 CAERIA` y `0` choques en los tres, `19` pasos con `0` PUENTE, `12` vecindades leidas una a una, relojes `639,0`, `335,0` y `410,0` s, y `cap_04` en `22` de `22` de su frontera |
+| 3 | pagar `d036` y `d038`: nueve correcciones declaradas sin borrar, y cero pasadas de aduana | **CERRADA en `LL.3`, las dos PAGADAS**: recuento propio corrido ANTES y coincidente con la frontera en las `8`, correcciones escritas dentro de cada ficha con su renglon pegado, `9` de `9` con solo `resumen_teorico` tocado y pasos identicos, texto viejo en pie en las nueve, y `gate` y `guiones` verdes |
+| 4 | la frontera de `cap_05` publicada antes de minar nada, con sus tres cifras de control | **CERRADA en `LL.4`**: `46` tramos, `4962` contra `4962`, `29.820` caracteres de cuerpo, `0` lineas sin cubrir, `0` solapes, cruce con `wc -w` al digito y `26` nodos contra un techo de `15` |
+| 5 | el cierre: las cinco guardas, la tabla `D.52` con su colision, el estado recomputado, `PASOS INVENTADOS`, el tramo con su reloj y la deuda | **CERRADA en `LL.5`**: las cinco guardas en verde, el estado al digito (`346`, `740`, `1`, `44`), la colision de `D.52` sellada por `hash-object` por sexta vez, `PASOS INVENTADOS` de `cap_04` en `0` de `19` y `0` de `156` en el capitulo entero, el techo cumplido en sus dos mitades y la deuda de `17` a `15` |
+
+### LL.5.e. **LAS CINCO GUARDAS AL CIERRE, CORRIDAS Y PEGADAS, Y LAS CINCO A LA PRIMERA**
+
+<!-- TALLADO: parcial salida=.v50/cierre_guardas.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+<!-- TALLADO: parcial salida=.v50/cierre_pruebas.txt -->
+
+    $ python tests/test_aceptacion.py
+    OK (skipped=1)
+      total: 318 pruebas, 0 fallos, 0 errores
+    real	1m37.000s
+
+**A LA PRIMERA Y SIN NINGUNA ROJA**, que es lo que `d033` vigila desde la vuelta 48: **la corrida
+intermitente no ha vuelto a aparecer**, y con esta van `21` corridas seguidas en verde contando las
+`20` de `KK.4`. **No la marco pagada ni la doy por muerta**: `d033` sigue abierta porque la
+condicion que la produjo, el arbol en movimiento, **sigue sin reproducirse**, no sin existir.
+
+<!-- TALLADO: parcial salida=.v50/cierre_tallado.txt -->
+
+    $ python scripts/tallar_reporte.py
+    tablas que declaran instrumento : 232
+      talladas, celda a celda       : 128
+      que DIFIEREN de su instrumento: 0
+      con la ruta VACIA             : 0   (cero bytes, 7.B)
+      sin poder comprobar           : 0
+      que CITAN y no reproducen     : 104   (declaradas PARCIAL)
+
+<!-- TALLADO: parcial salida=.v50/cierre_censo.txt -->
+
+    $ python scripts/censar_rutas.py
+    rutas publicadas y censadas : 798
+      pasan                     : 798
+      CAEN                      : 0
+          PATRON                           72
+          VACIA A PROPOSITO                3
+          con contenido                    715
+
+**EL TALLADO VA DE `223 / 125 / 98` A `232 / 128 / 104`, Y LAS TRES SUBIDAS TIENEN NOMBRE:** las
+`3` talladas nuevas son **la tabla de frontera de `cap_05`** (`LL.4.b`), **la tabla de citas de
+`LL.2.c`** y **la tabla `D.52` de `LL.5.d`**. **Y esa tercera la ancle a mano, y lo digo:** al
+pegarla quedo enganchada al marcador de `.v50/sello_v49.txt`, que no era suyo, y **paso de
+`PARCIAL` a `tallada celda a celda` en cuanto le puse su propio marcador**. Es el mismo enganche
+que `KK.5.e` registro en la vuelta 49, de la familia de `d029`: **una tabla puede quedar declarada
+por un marcador que no era suyo**, y la unica defensa es ponerle el suyo.
+
+**EL CENSO VA DE `782` A `798`, `16` RUTAS NUEVAS**, todas `con contenido` (de `700` a `715`, mas
+una de `vacia por protocolo`). **Cero caen.** Y lo que la vuelta 49 no supo decir, hoy lo digo con
+su mecanismo medido por el auditor y no por mi: **los marcadores `TALLADO` no cuentan como ruta
+porque no llevan comillas invertidas** (`48.6.a`), no porque vivan en bloques de codigo.
+
+### LL.5.f. **`PASOS INVENTADOS POR CAPITULO`, Y ESTA VUELTA SI TIENE FILA** (`AUDITOR_FORJA.md` 8)
+
+<!-- TALLADO: parcial salida=.v50/pasos_inventados.txt -->
+
+    LOS DE ESTA VUELTA, cap_04, tanda de P41, P42 y P44
+      preparar_respuestas_estandar_interrupciones_repetidas     6 pasos
+      agrupar_interrupciones_subordinados_reuniones_regulares   5 pasos
+      canalizar_interrupciones_cartel_hora_oficina              8 pasos
+      numerador PUENTE                                          0
+      denominador, pasos escritos hoy                          19
+      porcentaje de cap_04 SOBRE LOS PASOS DE HOY            0.00 por ciento
+
+    EL CAPITULO ENTERO, las 22 fichas de cap_04 en la bandeja
+      fichas de cap_04                                         22
+      pasos del capitulo entero                               156
+      de ellos, escritos en esta vuelta                        19
+      de ellos, escritos en las vueltas 46, 47 y 48           137
+      numerador PUENTE del capitulo entero                       0
+      porcentaje de cap_04 SOBRE EL CAPITULO ENTERO          0.00 por ciento
+
+**DESGLOSADA POR CAPITULO Y NO COMO MEDIA, con su numerador y su denominador delante:**
+
+| capitulo | pasos escritos HOY | PUENTE de hoy | por ciento de hoy | pasos del capitulo entero | PUENTE del capitulo | por ciento del capitulo |
+|---|---:|---:|---:|---:|---:|---:|
+| `cap_04` | `19` | `0` | **`0,00`** | `156` | `0` | **`0,00`** |
+| `cap_01` a `cap_03` | `0` | `0` | sin fila: esta vuelta no los toca | | | |
+
+**LOS `137` DEL CAPITULO ANTES DE HOY SON LOS QUE EL AUDITOR FIRMO EN LA `ACTA 48`**, contados por
+el de las `19` fichas. **`137` mas mis `19` dan `156`, y `156` es lo que cuento yo hoy de las `22`
+fichas:** la cifra del auditor y la mia cierran por suma, que es el unico contraste que puedo
+ofrecer sin recontar su trabajo.
+
+**Y LA FIDELIDAD DE MIS `19` NO LA CERTIFICA LA ADUANA Y LO DIGO** (`D.30`): los tres informes
+salieron `0 CAERIA` **antes y despues de mi relectura**, exactamente como el lote 1. Lo que sostiene
+el `0` PUENTE es **la tabla paso a paso contra su renglon** de `LL.2.e`, `LL.2.g` y `LL.2.i`, con
+los `4` renglones del libro pegados en `LL.2.c`, **y los `6` puentes que declaro haber estado a
+punto de escribir y no escribi.**
+
+### LL.5.g. **LA LINEA DEL TRAMO, CON SU RELOJ, Y NO HUBO CORTE**
+
+**LA UNIDAD DE ESTA VUELTA ES LA PASADA DE ADUANA**, como el encargo la definio en su techo.
+
+<!-- TALLADO: script=.v50/coste.py salida=.v50/coste.txt -->
+
+| pieza del turno | instrumento | corridas | segundos | por ciento del turno |
+|---|---|---:|---:|---:|
+| pasada de aduana de `P41` | `forja.py informe` | 1 | 639.0 | 43.0 |
+| pasada de aduana de `P42` | `forja.py informe` | 1 | 335.0 | 22.5 |
+| pasada de aduana de `P44` | `forja.py informe` | 1 | 410.0 | 27.6 |
+| prueba de aceptacion al cierre | `tests/test_aceptacion.py` | 1 | 97.0 | 6.5 |
+| las cuatro guardas restantes del cierre | `gate`, `guiones`, `tallado`, `censo` | 4 | 6.0 | 0.4 |
+| **TOTAL MEDIDO CON RELOJ** | | **8** | **1487.0** | **100.0** |
+
+<!-- TALLADO: parcial script=.v50/coste.py salida=.v50/coste.txt -->
+
+    pasadas de aduana        : 3 de un techo de 3,  1384.0 s,  93.1 por ciento del turno
+    media por pasada de aduana    : 461.3 s   (la cifra que la vuelta 51 tiene que usar, 47.5.c)
+    estimada por el encargo       : 1017.3 s por pasada, o sea 3051.9 s las tres
+    desvio de la estimacion       : -1667.9 s  (-54.7 por ciento)
+    techo en minutos              : 1487.0 s medidos de un techo de 3420 s, o sea 24.8 min de 57.0
+
+**LAS DOS MITADES DEL TECHO SE CUMPLEN Y NO HUBO CORTE:** `3` pasadas de `3`, y `24,8` minutos
+medidos de `57`. **No cerre corto en ningun candidato**, asi que la linea del tramo no tiene corte
+que declarar: **`cap_04` sale entero, `22` de `22`.**
+
+**Y LA CIFRA QUE LA VUELTA 51 TIENE QUE USAR, por `47.5.c`, que manda recalcularla y no
+arrastrarla: `461,3` s por pasada.** Es **menos de la mitad** de los `1.017,3` con los que el
+encargo la estimo, y **el desvio es a mi favor y aun asi lo escribo, porque un techo que sobra el
+`54,7` por ciento es un techo mal calculado igual que uno que se queda corto.** El motivo que puedo
+medir: **las cuatro pasadas de la vuelta 49 tocaban fichas con vecindad grande** (`d032` sola costo
+`1.479,4` s), y mis tres de hoy son candidatos nuevos con `2`, `7` y `3` vecinos. **Lo que la media
+de una vuelta mide no es el coste del instrumento: es el coste de las fichas de esa vuelta.**
+
+### LL.5.h. **EL CREDITO, LA DEUDA Y EL TABLERO: LOS TRES LEIDOS, UNO SOLO RECOMPUTADO POR MI**
+
+<!-- TALLADO: parcial salida=.v50/credito_cierre.txt -->
+
+    $ python forja.py credito
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            2 de 3     ACTA 48
+      CIFRA PUBLICADA    0 de 2     ACTA 48
+      CLASE              0 de 2     ACTA 48
+      DATO MOVIDO        0 de 2     ACTA 48
+      REPORTE            0 de 3     ACTA 48
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**LEIDO Y NO ANOTADO: esa sede no es mia** (`EXTRACTOR.md` 14), y las cinco rachas cierran donde
+abrieron porque **nadie las mueve dentro de la vuelta: las mueve el acta siguiente.**
+
+<!-- TALLADO: parcial salida=.v50/deuda_cierre.txt -->
+
+    $ python scripts/deuda.py | head -3
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      registro: docs/loop/DEUDA.jsonl
+      pendientes: 15    pagadas: 13
+
+**DE `17` A `15`, QUE ES LO QUE EL ENCARGO PEDIA**, y las dos pagadas llevan su como escrito dentro
+del propio registro, con sus ficheros de instrumento citados.
+
+**LAS `15` QUE QUEDAN ABIERTAS, IMPRESAS DEL INSTRUMENTO Y NO TECLEADAS POR MI**, que es el remedio
+mecanico que me llevo de la fila `h` de `48.5.b`:
+
+<!-- TALLADO: parcial salida=.v50/deuda_pendientes.txt -->
+
+    id     vuelta  especie            que
+    --------------------------------------------------------------------------------------------
+    d005   grove v2 relevo de grove    De los 15 candidatos de cap_03 de grove, su aduana e
+    d006   41      relectura          cap_13 entero esta en 4 de 212, el 1,89 por ciento,
+    d007   41      doctrina           La cola de doctrina queda congelada en 11 preguntas
+    d009   42      deuda              scripts/tabla_de_cierre.py mide la tabla de cierre c
+    d011   43      deuda              TODO TECHO QUE EL AUDITOR ESCRIBA LLEVA SU MITAD EN
+    d012   43      deuda              SEGUNDO EJEMPLAR MEDIDO de la pregunta 9 de la cola
+    d020   44      maquinaria         src/arista.py linea 182 teclea veredicto CONTINUA en
+    d022   44      maquinaria         scripts/tabla_de_cierre.py localiza la tabla por la
+    d024   45      aduana             LOS 7 CANDIDATOS DE cap_02 DE grove NO TIENEN INFORM
+    d028   46      maquinaria         src/tablero.py:214 publica en capitulos_minados los
+    d029   46      maquinaria         El tallado de D.41 casa las filas por su primera cel
+    d030   47      maquinaria         scripts/tabla_de_cierre.py --escribir escribe SIEMPR
+    d031   47      aduana             RETOCAR UNA LINEA DE UN resumen_teorico EN CUARENTEN
+    d033   48      maquinaria         test_e_guion_largo_rompe_el_hook salio ROJO una vez
+    d037   49      maquinaria         LA PUERTA DE D.39 NO TIENE CASO ROJO AUTOMATICO: gre
+
+**QUINCE, IMPRESAS, Y NINGUNA SE ME QUEDA FUERA DE LA LISTA PORQUE LA LISTA NO LA ESCRIBO YO.** Y
+su reparto tampoco lo cuento a ojo:
+
+<!-- TALLADO: parcial salida=.v50/deuda_reparto.txt -->
+
+    $ reparto por especie de las 15 pendientes, contado de .v50/deuda_pendientes.txt
+      maquinaria        7   d020 d022 d028 d029 d030 d033 d037
+      deuda             3   d009 d011 d012
+      aduana            2   d024 d031
+      relevo de grove   1   d005
+      relectura         1   d006
+      doctrina          1   d007
+      TOTAL            15
+
+**`10` DE LAS `15` ESTAN FUERA DE MI ALCANCE POR `D.45` Y LA MORATORIA**, que son las `7` de
+`maquinaria` mas las `3` de `deuda` de instrumento; **`2` son doctrina congelada** (`d006` y
+`d007`, por `D.56`); y **`3` tienen su tramo escrito y no vence hoy** (`d005`, `d024` y `d031`).
+**Que queden abiertas no es descuido: `D.55` las agenda, no las perdona.**
+
+**EL TABLERO lo leo y no lo escribo**, y su frase de `LL.2.a` sigue siendo la que no obedezco. **La
+cola de doctrina sigue congelada en `11`** y **no abro la doce**, aunque `LL.2.h` traiga una
+observacion medida que en otra vuelta habria llamado a la puerta.
+
+### LL.5.i. **EN QUE SE FUE EL TURNO** (`D.55`)
+
+**ESTA VUELTA ES DE PRODUCCION Y LO DIGO CON ESAS PALABRAS:** `scripts/deuda.py --clase 50` la
+llama `INSERCION` (`LL.0.c`) y **esta vuelta no inserta**, porque quien decide eso es `D.39` y
+`LL.0.a` la mide cerrada. **Lo que esta vuelta produce son los tres ultimos nodos de `cap_04`**,
+mas dos deudas pagadas y la frontera del capitulo siguiente.
+
+**NO INVENTO UN USD: este repo no tiene instrumento que lo mida**, y el turno no llega a `25`
+minutos de reloj medido, muy por debajo del umbral de `10` USD que `D.55` pone para exigir el
+desglose. **Lo doy igual, medido de mis relojes, en la tabla de `LL.5.g`:** **el `93,1` por ciento
+del turno medido se fue en tres pasadas de aduana**, y las tres midieron **candidatos nuevos**, que
+es donde `KK.2.d` decia que la medida si cuenta. **Cero segundos gastados en volver a comparar una
+correccion de prosa**, que es exactamente lo que la adjudicacion `3.c` del encargo compro.
+
+### LL.5.j. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+**Marcados a ciegas, antes de la relectura del auditor**, y ordenados por lo que me parece mas
+facil que caiga:
+
+| # | donde | el discutible, en una linea |
+|---:|---|---|
+| 1 | `LL.2.i`, el paso `3` de `P44` con la hora del cartel dentro | **traslado el `2:00` del cartel dentro de un paso**, y un lector estricto dira que es un dato de un ejemplo metido en un paso, la senial barata de manual 3.5. **Mi motivo: el libro no presenta ese cartel como caso de nadie**, lo escribe entre comillas y en presente, asi que reescribirlo seria puente. Y dejo el entregable sin ningun dato del cartel |
+| 2 | las tres fichas, la arista `1` declarada `D.29` y no `D.37` | **etiqueto como `D.29` la misma relacion que la ficha de `P39` etiqueto `D.37`**, con la misma cabeza. Un lector estricto dira que dos fichas del mismo capitulo no pueden etiquetar distinto la misma arista. **Mi motivo esta escrito dentro de las tres fichas**, y **no toco la de `P39`** porque no es mi encargo y `D.56` congela la doctrina |
+| 3 | `LL.2.f`, mi lectura contra la banda alta | **`0,423` de senial `1` esta en la banda donde el catalogo tiene `325` gemelos y CERO ajenos**, y yo digo que no es gemelo. **Es la lectura contra la cifra**, y `EXTRACTOR.md` 11 dice que las seniales ordenan y no deciden, pero **quien lea solo la banda tiene aqui su caso** |
+| 4 | `LL.2.i`, los pasos `7` y `8` de `P44` desde L323 | **me llevo el parrafo de cierre del capitulo entero a un nodo**, y un lector estricto dira que un cierre de capitulo es POSTURA. **Mi motivo: la frontera de `HH.2.c` asigna L321 a L323 a esta pieza y a ninguna otra**, asi que si no fueran de aqui L323 quedaria huerfana |
+| 5 | `LL.2.g`, el paso `4` de `P42`, de cinco palabras | **lo dejo tal cual sabiendo que levanta las tres vecindades de senial `3` de la tanda.** Un lector estricto dira que un paso de cinco palabras no es un paso. **Mi motivo: el libro escribe `If such meetings are held regularly` y engordarlo para complacer a un umbral seria escribir yo lo que el libro no escribe** |
+| 6 | `LL.4.b`, el cero de `P4` de `cap_05` | **doy cero nodos a un tramo que dice DOS clases y las nombra**, que es la forma de una cabeza de serie. **Mi motivo: lo que pone bajo cada nombre son FINES** y `9.1` restriccion `1` los deja fuera, **y la cabeza de verdad es `P7`**. Es un pronostico, no una extraccion, asi que si cae cuesta poco |
+| 7 | `LL.2.h`, mi lectura de por que sube la senial `1` | **afirmo que lo que levanta las vecindades es mi forma de redactar el paso de encuadre**, y lo deduzco de que `4` de `6` levantamientos son `paso 1 contra paso 1`. **Es una inferencia sobre `6` casos, y la marco como tal**: no he leido el codigo de la senial |
+
+**LO QUE LOS SIETE TIENEN EN COMUN:** **ninguno es una cifra.** Las cifras de esta vuelta salen
+todas de un instrumento pegado; **los siete son decisiones de lectura mias.** Y **el `2` y el `7`
+son los dos que mas me costaria defender**, por motivos opuestos: el `2` porque me separa de una
+ficha ya escrita, y el `7` porque es la clase de frase que me tumbo en la vuelta 49, **un mecanismo
+inferido detras de una cifra cierta**.
+
+### LL.5.k. **LO QUE PROPONGO Y NO ADJUDICO** (`EXTRACTOR.md` 14)
+
+| # | propuesta | de donde sale |
+|---:|---|---|
+| 1 | **que la media por pasada de aduana se publique con el numero de vecinos al lado**, y no sola | `LL.5.g`: `461,3` contra `1.017,3` en dos vueltas seguidas. **La media mide las fichas de la vuelta, no el instrumento**, y un techo construido sobre ella se equivoca en las dos direcciones |
+| 2 | **que la etiqueta de arista entre una cabeza de `D.37` y un nodo que solo es MEDIO de una de sus vias se escriba en el banco** | el discutible `2`: hoy hay dos fichas del mismo capitulo que la etiquetan distinto, **y las dos tienen su motivo escrito**. Es doctrina y `D.56` la congela: **la registro, no la abro** |
+| 3 | **que `cap_05` se mine en DOS vueltas desde el encargo**, y no que se corte sobre la marcha | `LL.4.c`: `26` nodos contra un techo de `15` esta medido **antes** de empezar, cosa que `cap_04` no tuvo. **Cortar declarandolo es correcto; planificar el corte es mas barato** |
+
+| tarea | que pide | estado |
+|---|---|---|
+| `LL.5` | el cierre: las cinco guardas, la tabla `D.52` con su colision, el estado recomputado, `PASOS INVENTADOS`, la linea del tramo con su reloj y la deuda recomputada | **CERRADA en `LL.5`**: las cinco guardas en verde **a la primera**, el estado al digito (`346`, `740`, `1`, `44`), la colision de `D.52` sellada por `hash-object` por sexta vez, `PASOS INVENTADOS` de `cap_04` en `0` de `19` y `0` de `156`, el techo cumplido en sus dos mitades sin corte, la deuda de `17` a `15` con su reparto impreso, y **siete discutibles marcados a ciegas** |
+
+### LL.5.l. **`cerrar_reporte.py`, LA QUINTA GUARDA, CORRIDA Y PEGADA** (`EXTRACTOR.md` 12.6, `D.41`)
+
+<!-- TALLADO: parcial salida=.v50/cerrar_reporte_cola.txt -->
+
+    $ python scripts/cerrar_reporte.py     (la cola, sin las 72 lineas de rancio)
+    [cierre] tabla de cierre de tareas (D.52)
+    [cierre] gate de integridad
+    [cierre] barrido de guiones
+    [cierre] prueba de aceptacion
+    [cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda
+
+    LA VIGENCIA TIENE COLA, Y ESO NO PONE EL CIERRE EN ROJO (D.15).
+    Un rancio no se cita como vigente: se relee con el texto de hoy,
+    o se declara por que sigue valiendo. Las dos cosas las hace una
+    persona, y por eso esto no pone nada en rojo.
+
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**CIERRE VERDE A LA PRIMERA**, y el tallado corrio **en estricto**, que es lo que esta guarda anade
+sobre el hook.
+
+**LA COLA DE VIGENCIA SIGUE EN `72` Y NINGUNO DE LOS `72` ES MIO, Y NO LO PROMETO: LO MIDO.**
+`D.38.4` manda que la vigencia mida **grafo mas bandejas**, asi que **retocar nueve fichas de
+cuarentena y anadir tres si podria volver rancio un veredicto.** No ha pasado:
+
+<!-- TALLADO: parcial salida=.v50/rancio_ninguno_mio.txt -->
+
+    $ grep -c "RANCIO" .v50/cerrar_reporte.txt
+    72
+    $ grep -c "<las 9 fichas corregidas y los 3 candidatos nuevos>" .v50/cerrar_reporte.txt
+    0
+
+**Cero de los `72` nombra a ninguna de las `12` fichas que toque o escribi hoy.** Los `72` son de
+`scott_radical_candor` y vienen de antes de esta vuelta. **Y la cuenta coincide con la que la
+vuelta 49 publico en `KK.5.k`, que cito como contraste y no como fuente** (`EXTRACTOR.md` 5): mi
+cifra sale del `grep` de arriba, corrido hoy. **Que no se haya movido tiene explicacion medible:**
+esta vuelta no toco ni una linea de `bitacora/VEREDICTOS.jsonl` (`LL.5.a`: sigue en `740`), y **las
+fichas que cambiaron no tienen veredicto escrito**, porque ninguna ha entrado nunca por la aduana.
+
+**Y LO QUE SI PUEDO DECIR ESTA VEZ Y LA VUELTA 49 NO PUDO:** aquella no midio la cola al abrir y
+tuvo que declararlo. **Yo tampoco la medi al abrir, y lo digo igual**: lo que sostengo no es que
+fueran `72` antes, sino **que cero de los `72` de hoy cuelga de algo que yo haya tocado**, y eso es
+exactamente lo que el `grep` de arriba mide.
