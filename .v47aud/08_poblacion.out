@@ -1,0 +1,14 @@
+grafo   dataset/nodos.jsonl        :  346
+bandeja cuarentena/ensayo_referencia_163/    :  163
+bandeja cuarentena/grove_high_output/        :   36
+bandeja cuarentena/marquet_turn_the_ship/    :    3
+bandeja cuarentena/onu_consumidor/           :    0
+bandeja cuarentena/scott_radical_candor/     :    0
+bandeja cuarentena/smart_who/                :    0
+bandeja cuarentena/zhuo_manager/             :    0
+------------------------------------------------
+POBLACION DEL BARRIDO (grafo + bandejas):  548
+  ... de los cuales bandejas            :  202
+DESCARTADOS a proposito (D.38.4):
+  cuarentena/_insertados/:    0
+  cuarentena/_derivadas/ :    2

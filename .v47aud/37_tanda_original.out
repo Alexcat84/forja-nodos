@@ -1,0 +1,71 @@
+==============================================================================
+1. LA TANDA DE cap_04 DE LA VUELTA 47, CANDIDATO POR CANDIDATO
+==============================================================================
+| # | tramo | candidato | pasos | TRANSCRIPCION | PUENTE | la aduana, en el acto | vecinos | s |
+|---:|---|---|---:|---:|---:|---|---:|---:|
+| 1 | `P21 y P24` | `detectar_palanca_negativa_actividad_mando` | 9 | 9 | **0** | `ENTRARIA` | 0 | 857 |
+| 2 | `P27` | `delegar_tarea_base_comun_seguimiento` | 10 | 10 | **0** | `ENTRARIA` | 0 | 861 |
+| 3 | `P29` | `supervisar_tarea_delegada_etapa_menor_valor` | 9 | 9 | **0** | `BLOQUEARIA` | 2 | 732 |
+| 4 | `P30` | `supervisar_decision_delegada_preguntas_concretas` | 6 | 6 | **0** | `BLOQUEARIA` | 2 | 471 |
+| 5 | `P32` | `identificar_paso_limitante_jornada_desfases` | 5 | 5 | **0** | `BLOQUEARIA` | 3 | 555 |
+| 6 | `P33` | `agrupar_tareas_semejantes_aprovechar_preparacion` | 6 | 6 | **0** | `BLOQUEARIA` | 2 | 614 |
+| | | **6 candidatos** | **45** | **45** | **0** | | **9** | **4090** |
+
+EL SALDO DE LA TANDA: BLOQUEARIA 4, ENTRARIA 2
+POBLACION DEL BARRIDO, del primer informe al ultimo: de 380 a 385
+
+==============================================================================
+2. PASOS INVENTADOS DE cap_04 (D.30), CON SU DENOMINADOR Y CON SU CONTRASTE
+==============================================================================
+| capitulo y vuelta | PUENTE | pasos escritos | por ciento | tope |
+|---|---:|---:|---:|---:|
+| `cap_04`, vuelta 47, los 6 de hoy | **0** | **45** | **0.00** | 10 |
+| `cap_04`, vuelta 46, los 8 anteriores | **0** | **50** | **0.00** | 10 |
+| **`cap_04` entero hasta hoy, las dos tandas** | **0** | **95** | **0.00** | 10 |
+
+EL DENOMINADOR SE ESCRIBE AUNQUE EL NUMERADOR SEA CERO: 45 pasos escritos hoy, 50 en la vuelta 46, 95 en total.
+
+==============================================================================
+3. LA COLA DE LECTURA QUE ESTA TANDA ABRE, PAR A PAR
+==============================================================================
+| par | candidato | vecino | senial | sim | fam | paso |
+|---:|---|---|---|---:|---:|---:|
+| 1 | `supervisar_tarea_delegada_etapa_menor_valor` | `transmitir_objetivos_prioridades_preferencias` | similitud_texto | 0.352 | 0.000 | 0.442 |
+| 2 | `supervisar_tarea_delegada_etapa_menor_valor` | `detectar_arreglar_fallo_etapa_menor_valor` | familia_id | 0.226 | 0.333 | 0.435 |
+| 3 | `supervisar_decision_delegada_preguntas_concretas` | `transmitir_objetivos_prioridades_preferencias` | similitud_texto | 0.359 | 0.000 | 0.437 |
+| 4 | `supervisar_decision_delegada_preguntas_concretas` | `supervisar_tarea_delegada_etapa_menor_valor` | similitud_texto | 0.368 | 0.222 | 0.413 |
+| 5 | `identificar_paso_limitante_jornada_desfases` | `transmitir_objetivos_prioridades_preferencias` | similitud_texto | 0.352 | 0.000 | 0.426 |
+| 6 | `identificar_paso_limitante_jornada_desfases` | `supervisar_decision_delegada_preguntas_concretas` | similitud_texto | 0.398 | 0.000 | 0.406 |
+| 7 | `identificar_paso_limitante_jornada_desfases` | `supervisar_tarea_delegada_etapa_menor_valor` | similitud_texto | 0.379 | 0.000 | 0.398 |
+| 8 | `agrupar_tareas_semejantes_aprovechar_preparacion` | `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.409 | 0.000 | 0.414 |
+| 9 | `agrupar_tareas_semejantes_aprovechar_preparacion` | `supervisar_decision_delegada_preguntas_concretas` | similitud_texto | 0.363 | 0.000 | 0.394 |
+| | | | **9 pares** | | | |
+
+PARES CON similitud_texto POR ENCIMA DE 0,40 (EXTRACTOR.md 11: se leen antes que ningun otro): 1
+   agrupar_tareas_semejantes_aprovechar_preparacion  contra  identificar_paso_limitante_jornada_desfases   sim 0.409
+BANDA DE similitud_texto DE ESTA TANDA: de 0.226 a 0.409
+QUE SENIAL LEVANTA CADA VECINDAD: familia_id 1, similitud_texto 8
+
+==============================================================================
+4. EL RELOJ DE LA ADUANA EN SECO, QUE ES LO QUE DECIDE EL TRAMO
+==============================================================================
+candidatos pasados por la aduana en esta vuelta : 6
+segundos por candidato, menor y mayor           : 471 y 861
+media por candidato                             : 681.7 s
+total de la tanda                               : 4090 s  (68.2 min)
+techo en minutos que el encargo escribio (d011) : 67 min
+DENTRO DEL TECHO DE MINUTOS                     : NO
+
+CONTRASTE CONTRA LA VUELTA 46, contado de sus propios relojes y no de su reporte:
+  media de la vuelta 46                         : 505.5 s
+  media de la vuelta 47                         : 681.7 s
+  subida                                        : +176.2 s por candidato (+34.8 por ciento)
+
+LO QUE COSTARIA EL RESTO DE cap_04 A ESTA MEDIA:
+  los 8 que quedan de los 22 de la frontera     : 5453 s  (90.9 min)
+
+POR QUE LA MEDIA SUBIO, MEDIDO Y NO SUPUESTO:
+  pasos por candidato, vuelta 46                : 6.25
+  pasos por candidato, vuelta 47                : 7.50
+  segundos por PASO, vuelta 46                  : 80.9 s
+  segundos por PASO, vuelta 47                  : 90.9 s

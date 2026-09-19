@@ -1,0 +1,13 @@
+filas de la tabla                      : 44
+suma de la columna de palabras         : 8846
+suma de la columna de nodos            : 22
+filas que dan cero nodos               : 23
+filas cuya cuenta de palabras DIFIERE  : 0 []
+lineas con contenido tras la cabecera  : 158
+lineas con contenido NO cubiertas      : 0 []
+SOLAPES                                : 0 []
+cuerpo medido aparte (L9 al final)     : 8846
+cabecera (L1 a L7)                     : 25
+fichero entero                         : 8871
+--- la fila de total que la tabla publica:
+| | **8846** | **22** | **el cuerpo entero de cap_04, cero lineas sin cubrir y cero solapes** | |

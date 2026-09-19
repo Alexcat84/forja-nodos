@@ -1,0 +1,54 @@
+==============================================================================
+fichero      : agrupar_tareas_semejantes_aprovechar_preparacion.json
+id           : agrupar_tareas_semejantes_aprovechar_preparacion
+titulo       : Agrupar las tareas semejantes en una tanda para aprovechar un solo esfuerzo de preparacion
+unidad origen: fuentes/grove_high_output/cap_04
+pasos        : 0
+fuentes      : [{'clave': 'grove_high_output', 'fecha': '2026-09-19'}]
+aristas      : 0 
+claves       : ['atribuciones', 'condiciones_activacion', 'denominaciones', 'dominio', 'entregable_esperado', 'estado', 'fuentes', 'id', 'ids_alias', 'nodos_previos', 'nodos_siguientes', 'pasos_accionables', 'resumen_teorico', 'titulo']
+==============================================================================
+fichero      : delegar_tarea_base_comun_seguimiento.json
+id           : delegar_tarea_base_comun_seguimiento
+titulo       : Delegar una tarea sobre una base comun de informacion, sin farsa y con su seguimiento, porque delegar sin seguimiento es abdicar
+unidad origen: fuentes/grove_high_output/cap_04
+pasos        : 0
+fuentes      : [{'clave': 'grove_high_output', 'fecha': '2026-09-19'}]
+aristas      : 0 
+claves       : ['atribuciones', 'condiciones_activacion', 'denominaciones', 'dominio', 'entregable_esperado', 'estado', 'fuentes', 'id', 'ids_alias', 'nodos_previos', 'nodos_siguientes', 'pasos_accionables', 'resumen_teorico', 'titulo']
+==============================================================================
+fichero      : detectar_palanca_negativa_actividad_mando.json
+id           : detectar_palanca_negativa_actividad_mando
+titulo       : Detectar la palanca negativa en la propia actividad de mando: la reunion sin preparar, el desanimo, las largas y la intromision
+unidad origen: fuentes/grove_high_output/cap_04
+pasos        : 0
+fuentes      : [{'clave': 'grove_high_output', 'fecha': '2026-09-19'}]
+aristas      : 0 
+claves       : ['atribuciones', 'condiciones_activacion', 'denominaciones', 'dominio', 'entregable_esperado', 'estado', 'fuentes', 'id', 'ids_alias', 'nodos_previos', 'nodos_siguientes', 'pasos_accionables', 'resumen_teorico', 'titulo']
+==============================================================================
+fichero      : identificar_paso_limitante_jornada_desfases.json
+id           : identificar_paso_limitante_jornada_desfases
+titulo       : Identificar el paso limitante de tu jornada y crear desfases alrededor: determinar lo inamovible y mover lo flexible a su alrededor
+unidad origen: fuentes/grove_high_output/cap_04
+pasos        : 0
+fuentes      : [{'clave': 'grove_high_output', 'fecha': '2026-09-19'}]
+aristas      : 0 
+claves       : ['atribuciones', 'condiciones_activacion', 'denominaciones', 'dominio', 'entregable_esperado', 'estado', 'fuentes', 'id', 'ids_alias', 'nodos_previos', 'nodos_siguientes', 'pasos_accionables', 'resumen_teorico', 'titulo']
+==============================================================================
+fichero      : supervisar_decision_delegada_preguntas_concretas.json
+id           : supervisar_decision_delegada_preguntas_concretas
+titulo       : Supervisar una decision delegada por su proceso de reflexion: preguntas bastante concretas en la reunion de revision
+unidad origen: fuentes/grove_high_output/cap_04
+pasos        : 0
+fuentes      : [{'clave': 'grove_high_output', 'fecha': '2026-09-19'}]
+aristas      : 0 
+claves       : ['atribuciones', 'condiciones_activacion', 'denominaciones', 'dominio', 'entregable_esperado', 'estado', 'fuentes', 'id', 'ids_alias', 'nodos_previos', 'nodos_siguientes', 'pasos_accionables', 'resumen_teorico', 'titulo']
+==============================================================================
+fichero      : supervisar_tarea_delegada_etapa_menor_valor.json
+id           : supervisar_tarea_delegada_etapa_menor_valor
+titulo       : Supervisar una tarea delegada como se supervisa la calidad: en la etapa de menor valor anadido, con frecuencia variable y entrando en el detalle al azar
+unidad origen: fuentes/grove_high_output/cap_04
+pasos        : 0
+fuentes      : [{'clave': 'grove_high_output', 'fecha': '2026-09-19'}]
+aristas      : 0 
+claves       : ['atribuciones', 'condiciones_activacion', 'denominaciones', 'dominio', 'entregable_esperado', 'estado', 'fuentes', 'id', 'ids_alias', 'nodos_previos', 'nodos_siguientes', 'pasos_accionables', 'resumen_teorico', 'titulo']
