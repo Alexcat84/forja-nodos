@@ -43500,3 +43500,193 @@ como discrepancia** (`EXTRACTOR.md` 5).
 
 **LA DEUDA AL ABRIR** (salida en `.v45/deuda_apertura.txt`): `9` pendientes, `6` pagadas, ultima
 vuelta de saneamiento la `44`.
+
+## GG.1. TAREA 1. **LA PUERTA DE `D.39`, MEDIDA ANTES DE INSERTAR NADA: DA CERRADA, Y ESO ES UNA PARADA DE TAREA**
+
+*El encargo tiene una sola tarea y es insertar. **La primera cosa que se comprueba antes de meter un
+nodo es si el lote puede entrar**, y esa comprobacion la manda `D.39` al extractor por su nombre:
+`EL ARNES NO PUEDE COMPROBAR ESTO. No sabe que es un lote cerrado ni lee actas. Lo comprueba el
+extractor leyendo esta regla.`*
+
+### GG.1.a. **LA CONDICION, CITADA CON SU LINEA Y SU `grep` PEGADO** (`D.35`)
+
+<!-- TALLADO: parcial salida=.v45/citas_d39.txt -->
+
+    $ grep -n "LOS CANDIDATOS DE UN LOTE ABIERTO" docs/loop/EXTRACTOR.md docs/BANCO_DE_REGLAS.md
+    docs/loop/EXTRACTOR.md:717:> **LOS CANDIDATOS DE UN LOTE ABIERTO SE QUEDAN EN CUARENTENA HASTA QUE SU LOTE
+    docs/BANCO_DE_REGLAS.md:1782:> **LOS CANDIDATOS DE UN LOTE ABIERTO SIGUEN EN CUARENTENA HASTA QUE SU LOTE
+
+**La misma condicion me llega hoy por una tercera puerta, y es la que mas pesa:** el prompt de esta
+corrida la escribe entera, *`PERO SOLO PARA UN LOTE CERRADO EN EXTRACCION cuyo informe haya
+certificado el acta del auditor: los candidatos de un lote ABIERTO se quedan en cuarentena hasta que
+su lote cierre, y meterlos antes es una caida de dato.`*
+
+### GG.1.b. **LA SEDE DE ESA ADJUDICACION NO ES UNA CUENTA DE FICHEROS, Y LO DICE ELLA MISMA**
+
+`D.49` puso en `config/frentes.json` lo que el dato no puede medir. **Su segunda entrada es
+exactamente esta pregunta:**
+
+    $ sed -n '12,13p' config/frentes.json
+        "  2. QUE libro esta CERRADO EN EXTRACCION, que es una adjudicacion de un acta y no",
+        "     una cuenta de ficheros.",
+
+**ASI QUE LA LEO DE AHI Y NO DE MI CRITERIO.** Salida entera en `.v45/gate_d39.txt`:
+
+<!-- TALLADO: parcial salida=.v45/gate_d39.txt -->
+
+    $ grep -n "cerrados_en_extraccion" -A 12 config/frentes.json
+    38:  "cerrados_en_extraccion": {
+    39-    "smart_who": {
+    40-      "cita": "ACTA 8 seccion 10"
+    41-    },
+    42-    "zhuo_manager": {
+    43-      "cita": "ACTA 13 seccion 8.1"
+    44-    },
+    45-    "scott_radical_candor": {
+    46-      "cita": "ACTA 24"
+    47-    }
+    48-  },
+
+    $ python -c "las claves de cerrados_en_extraccion, leidas de config/frentes.json"
+      grove_high_output en la lista: False
+
+> ### **LO QUE EL INSTRUMENTO MIDIO: `grove_high_output` NO ESTA DECLARADO CERRADO EN EXTRACCION.**
+
+### GG.1.c. **Y LAS OTRAS TRES MEDIDAS DICEN LO MISMO, CADA UNA POR SU LADO**
+
+| # | lo que mido | el comando | lo que da |
+|---:|---|---|---|
+| `1` | capitulos del libro en la bandeja de entrada | `ls fuentes/grove_high_output/*.md` contado | **`18`** |
+| `2` | ultimo capitulo minado, leido del tablero | `python forja.py tablero` filtrado por grove | **`cap_03`**, estado **`COSECHADO`**, bandeja **`22`** |
+| `3` | candidatos insertables por `D.39` en todo el arbol | el cruce de `.v45/insertables.txt` | **`0`** |
+
+<!-- TALLADO: parcial salida=.v45/insertables.txt -->
+
+    $ python -c "cruce: bandeja por libro contra la lista de cerrados en extraccion (config/frentes.json)"
+      libro                          bandeja  cerrado en extraccion  INSERTABLE hoy
+      grove_high_output                 22  NO                     0
+      marquet_turn_the_ship              3  NO                     0
+      onu_consumidor                     0  NO                     0
+      scott_radical_candor               0  SI                     0
+      smart_who                          0  SI                     0
+      zhuo_manager                       0  SI                     0
+
+      CANDIDATOS INSERTABLES POR D.39 EN TODO EL ARBOL: 0
+
+**LA CIFRA QUE CIERRA LA TAREA: `0`.** No es que grove no pueda: es que **los tres libros cerrados en
+extraccion tienen la bandeja a cero** y **los dos que tienen bandeja no estan cerrados**. En todo el
+arbol no hay hoy un solo candidato que `D.39` deje entrar.
+
+### GG.1.d. **EL PRECEDENTE DE ESTA CASA, QUE ES LO QUE ME QUITA EL MARGEN DE LEERLO DE OTRA MANERA**
+
+**El lote 4 es el ejemplar, y su figura es la contraria de la de hoy:** `scott_radical_candor` se
+declaro **`CERRADO EN EXTRACCION` en la `ACTA 24`**, con su cita en la sede, **y solo despues** se
+inserto capitulo a capitulo durante nueve vueltas. Las actas lo repiten fila a fila:
+
+<!-- TALLADO: parcial salida=.v45/citas_d39.txt -->
+
+    $ grep -n "cerrado en extraccion" docs/loop/ACTA_AUDITOR.md | head -4 | cut -c1-140
+    7541:| **campana consumada** | lote 2 de 11 cerrado en extraccion. **Quedan nueve lotes** | **NO** |
+    23515:| **lote 4** | **cerrado en extraccion desde la `ACTA 24`**, pero **ABIERTO en insercion**: `123` en la bandeja y `19` insertados de `
+    24358:| **lote 4** | **cerrado en extraccion** desde la `ACTA 24`; **ABIERTO en insercion**: `111` en bandeja y `31` insertados de `142`. **
+    25179:| **lote 4** (`scott_radical_candor`) | **cerrado en extraccion** desde la `ACTA 24`; **ABIERTO en insercion**: `106` en bandeja y `36
+
+    $ grep -c "cerrado en extraccion" docs/loop/ACTA_AUDITOR.md
+    7
+
+**EL CORTE ESTA DECLARADO: son `4` de `7`, y la primera de las cuatro no es del lote 4** (es el
+repaso de campania de la `ACTA 5`). **Las cuatro las corte yo por `head -4` y lo digo**, porque una
+salida cortada sin decirlo es la caida que la `ACTA 40` se cargo a si misma.
+
+**LAS DOS MITADES SON DISTINTAS Y LA CASA LAS TIENE SEPARADAS:** *cerrado en extraccion* es la puerta
+que abre la insercion; *cerrado en insercion* es lo que ocurre al final. **Grove no ha pasado la
+primera.**
+
+**Y LA MISMA LECTURA LA HIZO LA VUELTA 44 CONTRA SU PROPIO ENCARGO**, con la corrida abierta en
+`MODO_INSERCION=insertar` igual que hoy:
+
+    $ sed -n '43415p' docs/loop/REPORTE.md
+    | `D.39` deja insertar **un lote CERRADO** cuyo informe certifique el acta | el lote 7 de `grove_high_output` esta **ABIERTO**: `1` dentro y `22` en bandeja, medido en `FF.5.d` |
+
+**La `ACTA 43` la leyo y no la cargo como caida**, y el propio auditor la firma en su parada:
+
+    $ sed -n '212p' docs/loop/paradas/2026-09-18-arista-py-y-la-ciega-sin-registro-DECISION.md
+    **El lote 7 esta ABIERTO:** `1` nodo dentro (`revisar_tres_preguntas_valor_carrera`, `cap_01`)
+
+### GG.1.e. **PARADA DE TAREA, Y NO LA ARREGLO YO** (`EXTRACTOR.md` 7)
+
+> ## **PARADA: EL ENCARGO MANDA INSERTAR UN LOTE QUE LA REGLA VIGENTE DEJA EN CUARENTENA.**
+
+| | |
+|---|---|
+| **que manda el encargo** | `docs/loop/PROMPT_SIGUIENTE.md` L49: *`LA TAREA: INSERTAR DE grove_high_output, Y LEER LA DEUDA ANTES DE ELEGIR`* |
+| **que manda la regla vigente** | `D.39`, `EXTRACTOR.md` 15.7 L717 y el prompt de esta corrida: **un lote abierto no entra** |
+| **que mide el instrumento** | `grove_high_output` **no esta en `cerrados_en_extraccion`**, `3` de `18` capitulos minados, `0` insertables en todo el arbol |
+| **que hago** | **cero inserciones.** Lo declaro aqui y **no lo arreglo yo**: la sede de `config/frentes.json` es del fundador y la de `PROMPT_SIGUIENTE.md` es del auditor (`EXTRACTOR.md` 14) |
+| **que NO hago** | **no escribo `PARA_ALEXIS.md`** (`EXTRACTOR.md` 7) y **no toco `config/frentes.json`** (`LO QUE NO SE TOCA` del encargo: *se leen, no se editan*) |
+
+**LO QUE PROPONGO, Y ES PROPUESTA Y NO ADJUDICACION** (`EXTRACTOR.md` 14): la salida barata es **una
+linea en la sede que decide**. O el acta adjudica `grove_high_output` **cerrado en extraccion** y lo
+anota en `config/frentes.json` con su cita, **y entonces los `16` utiles entran en la vuelta
+siguiente sin firma nueva**; o el libro se sigue minando desde `cap_04` hasta cerrarlo, **y la
+insercion espera**. **Las dos son ejecutables; la que no lo es, es la de hoy.**
+
+**LA ASIMETRIA QUE ME DECIDE, dicha para que se pueda discutir:** si me equivoco parando, el coste es
+**una vuelta sin nodos**, reparable. Si me equivoco insertando, el coste es **la comparabilidad del
+lote 7 entera**, que `D.39` describe con estas palabras: *los que entren despues lo veran como vecino
+y los que entraron antes no*. **Eso no se repara: se arrastra.**
+
+### GG.1.f. **LOS `6` DE `d005`, NOMBRADOS, QUE EL ENCARGO PIDE IGUAL**
+
+*`d005` los aparta aunque la puerta estuviera abierta. **Los nombro porque el encargo lo manda
+expresamente**, y no porque hoy cambien nada.*
+
+| # | candidato apartado por `d005` |
+|---:|---|
+| `1` | `archivar_indicadores_resolver_problemas` |
+| `2` | `construir_grafico_escalonado_pronosticos` |
+| `3` | `construir_indicador_tendencia_patron` |
+| `4` | `elegir_fabricar_pedido_pronostico` |
+| `5` | `elegir_indicador_salida_trabajo_administrativo` |
+| `6` | `emparejar_indicadores_efecto_contraefecto` |
+
+**NO LOS COPIO DE LA DEUDA NI DE LA `ACTA 42`: LOS RECUENTO HOY CON SU PROPIO COMANDO**
+(`EXTRACTOR.md` 5), porque la carpeta de informes del relevo **si** viaja en esta rama. Salida entera
+en `.v45/d005_seis.txt`:
+
+<!-- TALLADO: parcial salida=.v45/d005_seis.txt -->
+
+    $ los informes POR CANDIDATO (sin informe_lote_grove.txt) que traen BLOQUEARIA:
+      .v2g/informe_02.txt : [BLOQUEARIA] emparejar_indicadores_efecto_contraefecto
+      .v2g/informe_archivar_indicadores_resolver_problemas.txt : [BLOQUEARIA] archivar_indicadores_resolver_problemas
+      .v2g/informe_construir_grafico_escalonado_pronosticos.txt : [BLOQUEARIA] construir_grafico_escalonado_pronosticos
+      .v2g/informe_construir_indicador_tendencia_patron.txt : [BLOQUEARIA] construir_indicador_tendencia_patron
+      .v2g/informe_elegir_fabricar_pedido_pronostico.txt : [BLOQUEARIA] elegir_fabricar_pedido_pronostico
+      .v2g/informe_elegir_indicador_salida_trabajo_administrativo.txt : [BLOQUEARIA] elegir_indicador_salida_trabajo_administrativo
+      .v2g/informe_emparejar_indicadores_efecto_contraefecto.txt : [BLOQUEARIA] emparejar_indicadores_efecto_contraefecto
+
+**SON `7` FICHEROS Y `6` CANDIDATOS**, porque `informe_02.txt` y
+`informe_emparejar_indicadores_efecto_contraefecto.txt` levantan **el mismo** candidato. **Mi
+recuento y el de la `ACTA 42` 42.3.b coinciden en los seis, al nombre.**
+
+**Y DE PASO SE VE LA CIFRA QUE UN INFORME DE UNO EN UNO NO PUEDE VER** (`D.43`): el informe del lote
+entero, en el mismo directorio, **bloquea `14`**, contra los `6` de los informes por candidato.
+
+<!-- TALLADO: parcial salida=.v45/d005_seis.txt -->
+
+    $ for f in .v2g/informe_*.txt; do n=$(grep -cE "^\[BLOQUEARIA\]" "$f"); echo "$n  $f"; done
+    0  .v2g/informe_01.txt
+    1  .v2g/informe_02.txt
+    14  .v2g/informe_lote_grove.txt
+
+**Ese informe de lote es del relevo y no lo he corrido yo**, asi que lo cito por su fichero y no como
+saldo firmado de esta vuelta: **esta corrida no trae informe de lote sellado** (`D.43`: *si el prompt
+no te entrega ninguno, no lo inventes y no lo lances*), y `docs/loop/INFORME_DE_LOTE.txt` **no
+existe**.
+
+**`22` menos `6` da `16` utiles**, que es el tramo que la vuelta siguiente tendra delante si la
+puerta se abre. **Contra el techo de `15` del encargo, el corte caeria en el candidato `15`.**
+
+| tarea | que pide | estado |
+|---|---|---|
+| `GG.1` | la puerta de `D.39` medida antes de insertar nada | **CERRADA CON PARADA DE TAREA**: `0` insertables en todo el arbol, cero inserciones, la parada declarada y los `6` de `d005` nombrados |
