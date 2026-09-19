@@ -1,0 +1,13 @@
+CREDITO DE LA LINEA 'serial' (D.48)
+  registro: docs/loop/CREDITO_serial.jsonl
+  tandas: 43, en 195 suceso(s) de especie
+
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            0 de 3     docs/loop/paradas/2026-09-18-arista-py-y-la-ciega-sin-registro-DECISION.md, punto 3
+  CIFRA PUBLICADA    1 de 2     ACTA 43
+  CLASE              0 de 2     ACTA 43
+  DATO MOVIDO        0 de 2     ACTA 43
+  REPORTE            0 de 3     ACTA 43
+
+  CREDITO ENTERO: ninguna especie en su tope.

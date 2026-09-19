@@ -43422,3 +43422,81 @@ adjudicacion del auditor, y **las `6` deudas que no estaban en este encargo**.
 | tarea | que pide | estado |
 |---|---|---|
 | `FF.5` | el cierre, con su tabla `D.52` y su linea de tramo | **CERRADA**: cinco guardas en verde, tabla pegada, `PASOS INVENTADOS` publicado, cifras recomputadas, cuatro discutibles marcados y la linea del tramo escrita |
+
+---
+
+# VUELTA 45 DE LA LINEA SERIAL, `extraccion-mundo-11`: **VUELTA DE INSERCION QUE NO INSERTA, PORQUE LA PUERTA DE `D.39` MIDE CERRADA**
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito al aplicar la decision del fundador del
+18 sep 2026 (`docs/loop/paradas/2026-09-18-arista-py-y-la-ciega-sin-registro-DECISION.md`).
+Modo austero (`D.47`): no repito lo que el registro ya dice.*
+
+> **ESQUELETO ABIERTO AL EMPEZAR, CON LAS FILAS VACIAS** (`EXTRACTOR.md` 3). Cada tarea anexa su
+> fila al cerrarse.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `GG.1` | la puerta de `D.39` medida antes de insertar nada | |
+| `GG.2` | `d021` pagada: el `PUENTE` del paso `4` retirado de su ficha | |
+| `GG.3` | la relectura de fidelidad `D.30` de los `22`, firmada | |
+| `GG.4` | el cierre, con sus guardas, su tabla `D.52` y su linea de tramo | |
+
+## GG.0. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
+
+**Lo pendiente commiteado y pusheado antes de tocar nada** (`EXTRACTOR.md` 1.1). Salida entera en
+`.v45/apertura_estado.txt`:
+
+<!-- TALLADO: parcial salida=.v45/apertura_estado.txt -->
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git log -1 --format='%h %ad %s' --date=iso
+    2aae716 2026-09-18 23:12:13 -0400 Apertura de la vuelta 45: lo pendiente del arnes entra antes de tocar nada
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+
+    $ for d in cuarentena/*/; do ...; done
+    cuarentena/grove_high_output/ : 22
+    cuarentena/marquet_turn_the_ship/ : 3
+    cuarentena/_insertados/grove_high_output/ : 1
+
+**LAS GUARDAS AL ABRIR**, corridas por mi y no copiadas (salida en `.v45/apertura_guardas.txt`):
+
+<!-- TALLADO: parcial salida=.v45/apertura_guardas.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python forja.py resolutor
+    nodos vivos: 346
+    $ python tests/test_aceptacion.py
+      total: 316 pruebas, 0 fallos, 0 errores
+
+**LAS `316` PRUEBAS NO SON LAS `305` DE LA `ACTA 43`**, y la diferencia no la traigo yo: la decision
+del fundador del 18 sep las dejo en `316` al llevar `D.53` al codigo. **Lo cito como contraste, no
+como discrepancia** (`EXTRACTOR.md` 5).
+
+**EL CREDITO AL ABRIR**, que el encargo manda leer y citar (salida en `.v45/credito_apertura.txt`):
+
+<!-- TALLADO: parcial salida=.v45/credito_apertura.txt -->
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'serial' (D.48)
+      tandas: 43, en 195 suceso(s) de especie
+
+      especie            racha      de donde sale
+      AUDITOR            0 de 3     docs/loop/paradas/2026-09-18-arista-py-y-la-ciega-sin-registro-DECISION.md, punto 3
+      CIFRA PUBLICADA    1 de 2     ACTA 43
+      CLASE              0 de 2     ACTA 43
+      DATO MOVIDO        0 de 2     ACTA 43
+      REPORTE            0 de 3     ACTA 43
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**LA DEUDA AL ABRIR** (salida en `.v45/deuda_apertura.txt`): `9` pendientes, `6` pagadas, ultima
+vuelta de saneamiento la `44`.

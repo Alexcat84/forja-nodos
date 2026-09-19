@@ -1,0 +1,14 @@
+=== gate ===
+GATE VERDE.
+  nodos verificados: 346
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+=== guiones ===
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+=== resolutor ===
+nodos vivos: 346
+nodos deprecados (archivo): 0
+alias registrados: 0
+=== aceptacion ===
+
+  total: 316 pruebas, 0 fallos, 0 errores
+========================================================================
