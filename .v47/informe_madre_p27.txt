@@ -12,21 +12,18 @@ EL SALDO
   CHOCAN entre si dentro del lote  : 0
 
 LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
-  vecinos levantados en total      : 2
-  por candidato bloqueado          : menor 2, mediana 2, mayor 2
-  que señal levanta cada vecindad  : similitud_texto 2
+  vecinos levantados en total      : 1
+  por candidato bloqueado          : menor 1, mediana 1, mayor 1
+  que señal levanta cada vecindad  : similitud_texto 1
 
 ============================================================================
 LA LISTA COMPLETA, candidato por candidato
 ============================================================================
 
-[BLOQUEARIA] agrupar_tareas_semejantes_aprovechar_preparacion   (agrupar_tareas_semejantes_aprovechar_preparacion.json)
-    vecino identificar_paso_limitante_jornada_desfases  [levantada por: similitud_texto]
-      similitud_texto 0.409 | familia_id 0.000 | paso_contra_nodo 0.414
-      paso 6 del candidato contra paso 4 de identificar_paso_limitante_jornada_desfases
+[BLOQUEARIA] transmitir_objetivos_prioridades_preferencias   (transmitir_objetivos_prioridades_preferencias.json)
     vecino supervisar_decision_delegada_preguntas_concretas  [levantada por: similitud_texto]
-      similitud_texto 0.363 | familia_id 0.000 | paso_contra_nodo 0.394
-      paso 3 del candidato contra paso 4 de supervisar_decision_delegada_preguntas_concretas
+      similitud_texto 0.355 | familia_id 0.000 | paso_contra_nodo 0.454
+      paso 5 del candidato contra paso 6 de supervisar_decision_delegada_preguntas_concretas
 
 NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
 entre hace falta python forja.py insertar, uno por vez, con su

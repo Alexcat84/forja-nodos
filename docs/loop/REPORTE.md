@@ -44662,3 +44662,211 @@ entero. La cita se pega, no se promete.*
 | 21 | `P34` | L285 | `285:It is important to say "no" earlier rather than later because we've learned that t` | `decir_no_trabajo_excede_capacidad` |
 
 renglones citados: 21, de 8 tramos distintos
+
+### II.2.d. **LA TANDA, CANDIDATO POR CANDIDATO, CON SU ADUANA EN EL ACTO**
+
+**Un candidato por vez y en el orden del libro** (`EXTRACTOR.md` 12.3), **y cada uno pasa
+`python forja.py informe <candidato>` en el mismo acto en que se escribe** (16). Los informes
+estan en `.v47/informe_01.txt` a `.v47/informe_06.txt` y sus relojes en `.v47/reloj_c01.txt` a
+`.v47/reloj_c06.txt`.
+
+**CERO INSERCIONES, Y NO POR FALTA DE PERMISO:** la corrida llega con `MODO_INSERCION=insertar`,
+pero el lote 7 esta **ABIERTO** (`II.0`), y `D.39` dice que los candidatos de un lote abierto se
+quedan en cuarentena. **Meterlos antes es una caida de dato.**
+
+<!-- TALLADO: script=.v47/tanda.py salida=.v47/tanda_cap_04.txt -->
+
+| # | tramo | candidato | pasos | TRANSCRIPCION | PUENTE | la aduana, en el acto | vecinos | s |
+|---:|---|---|---:|---:|---:|---|---:|---:|
+| 1 | `P21 y P24` | `detectar_palanca_negativa_actividad_mando` | 9 | 9 | **0** | `ENTRARIA` | 0 | 857 |
+| 2 | `P27` | `delegar_tarea_base_comun_seguimiento` | 10 | 10 | **0** | `ENTRARIA` | 0 | 861 |
+| 3 | `P29` | `supervisar_tarea_delegada_etapa_menor_valor` | 9 | 9 | **0** | `BLOQUEARIA` | 2 | 732 |
+| 4 | `P30` | `supervisar_decision_delegada_preguntas_concretas` | 6 | 6 | **0** | `BLOQUEARIA` | 2 | 471 |
+| 5 | `P32` | `identificar_paso_limitante_jornada_desfases` | 5 | 5 | **0** | `BLOQUEARIA` | 3 | 555 |
+| 6 | `P33` | `agrupar_tareas_semejantes_aprovechar_preparacion` | 6 | 6 | **0** | `BLOQUEARIA` | 2 | 614 |
+| | | **6 candidatos** | **45** | **45** | **0** | | **9** | **4090** |
+
+    EL SALDO DE LA TANDA: BLOQUEARIA 4, ENTRARIA 2
+    POBLACION DEL BARRIDO, del primer informe al ultimo: de 380 a 385
+
+**`45` pasos escritos, `45` TRANSCRIPCION, `0` PUENTE, `9` pares de cola y `4.090` segundos de
+aduana.** Ningun candidato `CAERIA`. **La poblacion crecio dentro de mi propia vuelta**, de `380`
+a `385`, porque cada candidato que escribo entra en la bandeja y lo ve el siguiente: es la misma
+figura que la vuelta 46 declaro, y por eso el reloj sube dentro de la tanda.
+
+**EL PRIMER CANDIDATO TIENE `0` VECINOS Y NO ES UN DESCUIDO:** `detectar_palanca_negativa_actividad_mando`
+entro con la cola vacia, y eso **no lo certifica como sin madre, lo certifica como sin gemelo**
+(`EXTRACTOR.md` 11). Su madre la busco mi lectura y esta declarada dentro de su ficha.
+
+### II.2.e. **LA COLA DE LECTURA, PAR A PAR, CON SUS TRES SENIALES**
+
+<!-- TALLADO: script=.v47/tanda.py salida=.v47/tanda_cap_04.txt -->
+
+| par | candidato | vecino | senial | sim | fam | paso |
+|---:|---|---|---|---:|---:|---:|
+| 1 | `supervisar_tarea_delegada_etapa_menor_valor` | `transmitir_objetivos_prioridades_preferencias` | similitud_texto | 0.352 | 0.000 | 0.442 |
+| 2 | `supervisar_tarea_delegada_etapa_menor_valor` | `detectar_arreglar_fallo_etapa_menor_valor` | familia_id | 0.226 | 0.333 | 0.435 |
+| 3 | `supervisar_decision_delegada_preguntas_concretas` | `transmitir_objetivos_prioridades_preferencias` | similitud_texto | 0.359 | 0.000 | 0.437 |
+| 4 | `supervisar_decision_delegada_preguntas_concretas` | `supervisar_tarea_delegada_etapa_menor_valor` | similitud_texto | 0.368 | 0.222 | 0.413 |
+| 5 | `identificar_paso_limitante_jornada_desfases` | `transmitir_objetivos_prioridades_preferencias` | similitud_texto | 0.352 | 0.000 | 0.426 |
+| 6 | `identificar_paso_limitante_jornada_desfases` | `supervisar_decision_delegada_preguntas_concretas` | similitud_texto | 0.398 | 0.000 | 0.406 |
+| 7 | `identificar_paso_limitante_jornada_desfases` | `supervisar_tarea_delegada_etapa_menor_valor` | similitud_texto | 0.379 | 0.000 | 0.398 |
+| 8 | `agrupar_tareas_semejantes_aprovechar_preparacion` | `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.409 | 0.000 | 0.414 |
+| 9 | `agrupar_tareas_semejantes_aprovechar_preparacion` | `supervisar_decision_delegada_preguntas_concretas` | similitud_texto | 0.363 | 0.000 | 0.394 |
+| | | | **9 pares** | | | |
+
+    PARES CON similitud_texto POR ENCIMA DE 0,40 (EXTRACTOR.md 11: se leen antes que ningun otro): 1
+       agrupar_tareas_semejantes_aprovechar_preparacion  contra  identificar_paso_limitante_jornada_desfases   sim 0.409
+    BANDA DE similitud_texto DE ESTA TANDA: de 0.226 a 0.409
+    QUE SENIAL LEVANTA CADA VECINDAD: familia_id 1, similitud_texto 8
+
+**LA LECTURA DE LOS NUEVE PARES, HECHA AHORA Y NO EL DIA DE LA INSERCION**, porque el veredicto
+se escribe en `bitacora/VEREDICTOS.jsonl` y **lo escribe `forja.py insertar`** (`EXTRACTOR.md` 14):
+sin insercion no hay acto donde escribirlo, y lo que si puedo dejar es la lectura ya hecha.
+
+- **EL UNICO PAR POR ENCIMA DE `0,40` SE LEE PRIMERO**, que es lo que la regla manda:
+  `agrupar_tareas_semejantes_aprovechar_preparacion` contra `identificar_paso_limitante_jornada_desfases`,
+  **`0,409`**. **Mi lectura dice `SANO` y no `REPITE`**, y la razon estaba escrita en las dos fichas
+  antes de que la senial hablara: **el libro los encadena expresamente como primero y segundo
+  principio de produccion** (`L267` abre con *First, we must identify our limiting step* y `L269`
+  con *A second production principle we can apply*), o sea que son **hermanos de la misma serie**, y
+  lo que cada uno hace es distinto: uno identifica lo inamovible, el otro agrupa lo semejante.
+  **Cero pasos comunes.**
+- **LOS TRES PARES CONTRA `transmitir_objetivos_prioridades_preferencias` SON LA MISMA ESPECIE**
+  (pares `1`, `3` y `5`): esa ficha es de las mas largas de la bandeja y su `resumen_teorico` habla
+  de delegacion, que es el tema de medio capitulo. **Los tres por debajo de `0,36`**, o sea pegados
+  al umbral y en la banda que la calibracion del 9 sep 2026 llamo ruido. **Mi lectura dice `SANO`
+  en los tres**, y en el par `1` ademas hay jerarquia declarada por lectura, que la senial no ve.
+- **EL PAR `2` ES EL UNICO QUE LEVANTA LA SENIAL `2`, Y ES EL MAS INTERESANTE DE LA TANDA:**
+  `supervisar_tarea_delegada_etapa_menor_valor` contra `detectar_arreglar_fallo_etapa_menor_valor`,
+  de `cap_02`, **`familia_id 0,333` con `similitud_texto 0,226`**. La familia la comparten porque
+  comparten el objeto `etapa_menor_valor`, **y eso es exacto: es el mismo principio de
+  aseguramiento de la calidad, aplicado una vez a una linea de fabricacion y otra vez a una tarea
+  delegada.** Mi lectura dice **`SANO` con arista de parentesco**, no `REPITE`: el candidato no
+  repite ni uno de los pasos de aquel nodo, los invoca.
+- **LOS TRES RESTANTES SON LA COLA DEL CAPITULO MONOTEMATICO**, que ya declare en la vuelta 46 y no
+  reabro: `cap_04` entero trata de la palanca del mando, y **la cola larga es el precio, no un
+  fallo de la aduana**. **Lo que no se hace es subir un umbral para que se acorte.**
+
+**Y UNA COSA QUE LA BANDA DE ESTA TANDA DICE Y LA DE LA VUELTA 46 NO PODIA DECIR:** la vuelta 46
+midio `13` pares sobre `8` candidatos y **las `13` vecindades las levanto la senial 1, las `13`**.
+Hoy, sobre `6` candidatos, **la senial 2 levanta `1` de `9`**, y ese `1` es el unico par de los
+nueve que **no** es del propio capitulo. **La senial de familia no ha levantado ni un solo par
+dentro de `cap_04` en ninguna de las dos tandas**, y eso es consistente con lo que la calibracion
+midio de ella: caza el `51,1` por ciento de los gemelos reales. **No propongo mover nada**: lo
+registro con su cifra.
+
+### II.2.f. **UNA ARISTA QUE LEVANTO LA SENIAL Y MI FICHA NO TENIA, DICHA EN VEZ DE CALLADA**
+
+**El par `2` me corrigio.** Mi ficha de `supervisar_tarea_delegada_etapa_menor_valor` declaro como
+pariente de aseguramiento de la calidad a `elegir_inspeccion_barrera_monitorizacion`, y **la senial
+2 levanto otro: `detectar_arreglar_fallo_etapa_menor_valor`**, que es el que comparte literalmente
+el objeto. **Los dos son de `cap_02` y los dos valen; el que no escribi es el mas proximo.**
+
+**NO LO METO EN LA FICHA, Y DIGO POR QUE CON SU MEDIDA:** el `resumen_teorico` entra en la
+similitud de texto (`src/aduana.py` linea 315), asi que reescribirlo obliga a repasar la aduana
+entera, y eso son **`732` segundos medidos en esta misma vuelta** para esa ficha, o sea **un
+candidato del tramo**. **Queda declarada aqui, con su par y su cifra, y se cablea el dia de la
+insercion**, que es cuando `forja.py arista` la escribe de verdad. **Es exactamente el ejemplar que
+`EXTRACTOR.md` 11 describe al reves:** alli la lectura encuentra lo que la senial no ve; aqui la
+senial encontro lo que la lectura no vio. **Las dos ordenan y ninguna decide.**
+
+### II.2.g. **LA ARISTA `D.29` DE `P27`, ESCRITA TAMBIEN EN LA FICHA DE LA MADRE** (encargo 2.c)
+
+**La madre ya la declaraba desde la vuelta 46, pero apuntando al hijo POR SU TRAMO** (*el nodo de
+la delegacion, de `L243` a `L249`*), porque el hijo no estaba escrito. **Hoy el hijo existe y se
+llama `delegar_tarea_base_comun_seguimiento`**, y la correccion se anade al final del
+`resumen_teorico` de la madre **sin borrar el texto viejo** (manual principio 6), con el
+instrumento `.v47/madre_p27.py`.
+
+**Y LA FICHA VUELVE A PASAR LA ADUANA EN EL MISMO ACTO** (`EXTRACTOR.md` 16), porque el
+`resumen_teorico` alimenta la senial 1 y **una ficha corregida es una ficha que nadie ha medido**.
+
+<!-- TALLADO: parcial salida=.v47/informe_madre_p27.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/transmitir_objetivos_prioridades_preferencias.json
+    poblacion del barrido       : 385   (346 del grafo mas 39 que esperan en bandejas)
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+    [BLOQUEARIA] transmitir_objetivos_prioridades_preferencias
+        vecino supervisar_decision_delegada_preguntas_concretas  [levantada por: similitud_texto]
+          similitud_texto 0.355 | familia_id 0.000 | paso_contra_nodo 0.454
+
+<!-- TALLADO: parcial salida=.v47/reloj_madre_p27.txt -->
+
+    inicio 2026-09-19T05:12:33-04:00
+    fin    2026-09-19T05:22:11-04:00
+    segundos=578
+
+**`0` `CAERIA`: la correccion no rompio la ficha.** El unico vecino que levanta es el par `3` de
+la tabla de arriba leido al reves, y **su lectura ya esta escrita**: `SANO`.
+
+**Y LOS `578` SEGUNDOS NO SE ESCONDEN EN LA MEDIA DE LA TANDA:** van aparte, porque **no son un
+candidato nuevo**. Suman al coste del turno en `II.4.f` y estan fuera de la tabla de `II.2.d`.
+
+### II.2.h. **EL CIERRE CORTO: `6` DE LOS `8` QUE PEDIA EL ENCARGO, Y LA MEDIDA QUE LO DECIDE**
+
+> **La vuelta cierra en el candidato `6` de los `8` encargados, que son el `14` de los `22` del
+> capitulo. Los dos que faltan del encargo, `P34a` y `P34b`, pasan a la vuelta 48.**
+
+<!-- TALLADO: parcial salida=.v47/tanda_cap_04.txt -->
+
+    candidatos pasados por la aduana en esta vuelta : 6
+    segundos por candidato, menor y mayor           : 471 y 861
+    media por candidato                             : 681.7 s
+    total de la tanda                               : 4090 s  (68.2 min)
+    techo en minutos que el encargo escribio (d011) : 67 min
+    DENTRO DEL TECHO DE MINUTOS                     : NO
+
+**EL TECHO EN MINUTOS ES EL QUE MUERDE, Y MUERDE EN EL SEXTO.** El encargo dio dos mitades del
+mismo techo, `8` candidatos y `67` minutos, y dijo que **si no cabe se cierra corto con el numero
+y el reloj al lado**. **Cabian `6`.** Los dos que faltan son los mas caros de los ocho: `P34a`
+tiene `7` pasos y `P34b` tiene `10` en mi borrador, o sea **mas de `1.500` segundos entre los dos
+a la media de hoy**, que dejaria la tanda en mas de `93` minutos contra un techo de `67`.
+
+**POR QUE LA MEDIA SUBIO, MEDIDO Y NO SUPUESTO**, que es la parte que le sirve a la vuelta
+siguiente:
+
+<!-- TALLADO: parcial salida=.v47/tanda_cap_04.txt -->
+
+    CONTRASTE CONTRA LA VUELTA 46, contado de sus propios relojes y no de su reporte:
+      media de la vuelta 46                         : 505.5 s
+      media de la vuelta 47                         : 681.7 s
+      subida                                        : +176.2 s por candidato (+34.8 por ciento)
+
+    POR QUE LA MEDIA SUBIO, MEDIDO Y NO SUPUESTO:
+      pasos por candidato, vuelta 46                : 6.25
+      pasos por candidato, vuelta 47                : 7.50
+      segundos por PASO, vuelta 46                  : 80.9 s
+      segundos por PASO, vuelta 47                  : 90.9 s
+
+**LA UNIDAD DE COSTE DE ESTE INSTRUMENTO NO ES EL CANDIDATO: ES EL PASO.** Entre las dos vueltas,
+el coste por candidato sube un `34,8` por ciento y el coste por paso solo un `12,4`; **el resto de
+la subida es que mis nodos de hoy tienen `7,50` pasos y los de la vuelta 46 tenian `6,25`.** La
+otra mitad de ese `12,4` es la poblacion, que paso de `372` a `385` sumando las dos tandas.
+
+**LO QUE PROPONGO Y NO ADJUDICO** (`EXTRACTOR.md` 14): que la mitad en minutos que `d011` obliga a
+escribir **se calcule sobre pasos y no sobre candidatos**, porque un techo de `8` candidatos no
+dice cuanto cuesta hasta que se sabe de cuantos pasos son. **Con la cifra de hoy, `90,9` segundos
+por paso**, un techo de `67` minutos son **`44` pasos**, y esta tanda escribio `45`. **No lo anoto
+yo en la deuda ni en el banco: esa sede no es mia.**
+
+**LOS OCHO QUE QUEDAN DE `cap_04`, NOMBRADOS POR SU TRAMO**, para que la vuelta 48 no relea el
+capitulo entero: `P34` (**dos nodos**: el calendario como herramienta de planificacion, y decir que
+no), `P36` (el inventario de proyectos discrecionales), `P38` (seis a ocho subordinados), `P39` (la
+regularidad), `P41` (las respuestas estandar), `P42` (agrupar las interrupciones) y `P44` (el
+cartel y la hora de oficina abierta). **La frontera de `HH.2.c` los tiene publicados con su linea y
+su cita, y `II.2.c` acaba de pegar los renglones de `P34`.**
+
+**Y LOS BORRADORES DE LOS DOS QUE NO CORRIERON QUEDAN EN EL ARBOL, DICHOS POR SU NOMBRE:**
+`.v47/borrador_sin_aduana_c07.py` y `.v47/borrador_sin_aduana_c08.py`. **NO son candidatos y no hay
+ficha suya en `cuarentena/`**, porque un candidato no esta escrito hasta que ha pasado la aduana
+(`EXTRACTOR.md` 16). Se llaman asi a proposito: **un borrador que se pudiera confundir con una
+ficha seria la carga masiva por la puerta de atras.** Quedan porque le ahorran a la vuelta 48 la
+lectura de `L273` a `L285`, no porque cuenten.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `II.2` | `cap_04` abierto: los ocho siguientes, cada uno por su aduana en el acto, cero inserciones, y no saltar a `cap_05` | **CERRADA CORTA EN `6` DE LOS `8`**: `6` candidatos escritos y pasados por la aduana en el acto, `0` `CAERIA`, `9` pares de cola leidos par a par, la arista de `P27` escrita en las dos fichas con su repaso de aduana, **cero inserciones**, y el corte declarado con su reloj porque el techo de `67` minutos mordio en el sexto |

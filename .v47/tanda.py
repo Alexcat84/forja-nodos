@@ -35,9 +35,11 @@ TANDA = [
     ("04", "P30", "supervisar_decision_delegada_preguntas_concretas"),
     ("05", "P32", "identificar_paso_limitante_jornada_desfases"),
     ("06", "P33", "agrupar_tareas_semejantes_aprovechar_preparacion"),
-    ("07", "P34a", "usar_calendario_herramienta_planificacion_produccion"),
-    ("08", "P34b", "decir_no_trabajo_excede_capacidad"),
 ]
+# LOS DOS QUE EL ENCARGO PEDIA Y NO CORRIERON (P34a y P34b) NO ESTAN EN ESTA LISTA, y no
+# estan porque NO HAY FICHA: un candidato no esta escrito hasta que ha pasado la aduana
+# (EXTRACTOR.md 16), y el reloj de la tanda paso el techo de 67 minutos en el sexto.
+# Sus borradores quedan en .v47/borrador_sin_aduana_c07.py y .v47/borrador_sin_aduana_c08.py.
 
 # LA TANDA DE LA VUELTA 46, para el contraste que pide la TAREA 3. Solo los ids: sus
 # cifras se cuentan de las mismas fichas y de los mismos relojes, no de su reporte.
@@ -144,10 +146,10 @@ print("2. PASOS INVENTADOS DE cap_04 (D.30), CON SU DENOMINADOR Y CON SU CONTRAS
 print("=" * 78)
 print("| capitulo y vuelta | PUENTE | pasos escritos | por ciento | tope |")
 print("|---|---:|---:|---:|---:|")
-print("| `cap_04`, vuelta 47, los 8 de hoy | **%d** | **%d** | **%.2f** | 10 |"
-      % (tot_puente, tot_pasos, 100.0 * tot_puente / tot_pasos))
-print("| `cap_04`, vuelta 46, los 8 anteriores | **%d** | **%d** | **%.2f** | 10 |"
-      % (pu46, p46, 100.0 * pu46 / p46))
+print("| `cap_04`, vuelta 47, los %d de hoy | **%d** | **%d** | **%.2f** | 10 |"
+      % (len(filas), tot_puente, tot_pasos, 100.0 * tot_puente / tot_pasos))
+print("| `cap_04`, vuelta 46, los %d anteriores | **%d** | **%d** | **%.2f** | 10 |"
+      % (len(TANDA_46), pu46, p46, 100.0 * pu46 / p46))
 print("| **`cap_04` entero hasta hoy, las dos tandas** | **%d** | **%d** | **%.2f** | 10 |"
       % (tot_puente + pu46, tot_pasos + p46,
          100.0 * (tot_puente + pu46) / (tot_pasos + p46)))
@@ -214,6 +216,17 @@ print("  media de la vuelta 47                         : %.1f s" % media)
 print("  subida                                        : %+.1f s por candidato (%+.1f por ciento)"
       % (media - media46, 100.0 * (media - media46) / media46))
 print("")
+quedan = 22 - 8 - len(filas)
 print("LO QUE COSTARIA EL RESTO DE cap_04 A ESTA MEDIA:")
-print("  los 6 que quedan de los 22 de la frontera     : %.0f s  (%.1f min)"
-      % (6 * media, 6 * media / 60.0))
+print("  los %d que quedan de los 22 de la frontera     : %.0f s  (%.1f min)"
+      % (quedan, quedan * media, quedan * media / 60.0))
+print("")
+print("POR QUE LA MEDIA SUBIO, MEDIDO Y NO SUPUESTO:")
+pasos46 = 0
+for n, ident in TANDA_46:
+    pasos46 += len(ficha_de(ident)["pasos_accionables"])
+pasos47 = sum(f[3] for f in filas)
+print("  pasos por candidato, vuelta 46                : %.2f" % (1.0 * pasos46 / len(TANDA_46)))
+print("  pasos por candidato, vuelta 47                : %.2f" % (1.0 * pasos47 / len(filas)))
+print("  segundos por PASO, vuelta 46                  : %.1f s" % (1.0 * sum(segs46) / pasos46))
+print("  segundos por PASO, vuelta 47                  : %.1f s" % (1.0 * sum(segs) / pasos47))
