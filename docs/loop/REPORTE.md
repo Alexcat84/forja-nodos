@@ -43690,3 +43690,326 @@ puerta se abre. **Contra el techo de `15` del encargo, el corte caeria en el can
 | tarea | que pide | estado |
 |---|---|---|
 | `GG.1` | la puerta de `D.39` medida antes de insertar nada | **CERRADA CON PARADA DE TAREA**: `0` insertables en todo el arbol, cero inserciones, la parada declarada y los `6` de `d005` nombrados |
+
+---
+
+# VUELTA 46 DE LA LINEA SERIAL, `extraccion-mundo-11`: **MINAR `cap_04` DE `grove_high_output`, CON EL LOTE 7 ABIERTO Y CERO INSERCIONES**
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor en la `ACTA 44` al ratificar la
+decision del fundador del 19 sep 2026 (`ae49086`). Modo austero (`D.47`): no repito lo que el
+registro ya dice.*
+
+> **ESQUELETO ABIERTO AL EMPEZAR, CON LAS FILAS VACIAS** (`EXTRACTOR.md` 3). Cada tarea anexa su
+> fila al cerrarse.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `HH.1` | los registros de la `ACTA 44`: `d021` y `d023` por correccion declarada, `d024` y la doctrina `D.55` dichas | |
+| `HH.2` | la frontera de `cap_04` cerrada contra el cuerpo, y la heredada de `cap_03` citada por su sede | |
+| `HH.3` | minar `cap_04` con el techo por delante, cada candidato por su aduana en el acto, **cero inserciones** | |
+| `HH.4` | `PASOS INVENTADOS` de `cap_04`, con la fila del capitulo, el total y **su denominador** | |
+| `HH.5` | el cierre: las guardas, la tabla `D.52`, el tablero, el credito y **la linea del tramo** | |
+
+## HH.0. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
+
+**Lo pendiente commiteado y pusheado antes de tocar nada** (`EXTRACTOR.md` 1.1), y el estado que
+deja esa operacion se cita como intermedio, con el nombre de la operacion que ya lo movio. Salida
+entera en `.v46/apertura_estado.txt`:
+
+<!-- TALLADO: parcial salida=.v46/apertura_estado.txt -->
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git log -1 --format='%h %ad %s' --date=iso
+    027d0a9 2026-09-19 01:09:51 -0400 Apertura de la vuelta 46: el estado del bucle que dejo la corrida anterior, sellado antes de tocar el arbol
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+
+    $ for d in cuarentena/*/ cuarentena/_insertados/*/; do ...; done
+    cuarentena/grove_high_output/ : 22
+    cuarentena/marquet_turn_the_ship/ : 3
+    cuarentena/_insertados/grove_high_output/ : 1
+
+**LAS GUARDAS AL ABRIR**, corridas por mi en esta vuelta y no copiadas de ningun acta
+(`.v46/apertura_guardas.txt` y `.v46/apertura_pruebas.txt`):
+
+<!-- TALLADO: parcial salida=.v46/apertura_guardas.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+<!-- TALLADO: parcial salida=.v46/apertura_pruebas.txt -->
+
+    $ python tests/test_aceptacion.py
+      total: 318 pruebas, 0 fallos, 0 errores
+    real	1m55.997s
+
+**LAS `318` NO SON LAS `316` DE LA VUELTA 45**, y la diferencia no la traigo yo: son las `11` de
+`D.55` y las `11` de `D.53` que la salida nombra al pie. **Lo cito como contraste, no como
+discrepancia** (`EXTRACTOR.md` 5).
+
+**EL CREDITO Y LA DEUDA AL ABRIR**, leidos y no anotados por mi (`EXTRACTOR.md` 14):
+
+<!-- TALLADO: parcial salida=.v46/credito_apertura.txt -->
+
+    $ python forja.py credito
+      especie            racha      de donde sale
+      AUDITOR            1 de 3     ACTA 44
+      CIFRA PUBLICADA    0 de 2     ACTA 44
+      CLASE              0 de 2     ACTA 44
+      DATO MOVIDO        0 de 2     ACTA 44
+      REPORTE            1 de 3     ACTA 44
+      CREDITO ENTERO: ninguna especie en su tope.
+
+<!-- TALLADO: parcial salida=.v46/deuda_apertura.txt -->
+
+    $ python scripts/deuda.py
+      pendientes: 11    pagadas: 6
+      ultima vuelta de saneamiento: 44
+
+**LA PUERTA DE `D.39`, MEDIDA Y NO SUPUESTA, PORQUE ESTA CORRIDA LLEGA CON LA INSERCION ABIERTA.**
+El prompt trae `MODO_INSERCION=insertar` y a la vez la condicion entera: *los candidatos de un lote
+ABIERTO se quedan en cuarentena hasta que su lote cierre*. **`grove_high_output` no esta en
+`cerrados_en_extraccion`**, y eso se lee del fichero, no de mi memoria:
+
+<!-- TALLADO: parcial salida=.v46/puerta_d39.txt -->
+
+    $ python -c "..."   sobre config/frentes.json
+    cerrados_en_extraccion : ['scott_radical_candor', 'smart_who', 'zhuo_manager']
+    grove_high_output CERRADO EN EXTRACCION: False
+
+**Asi que la puerta mide CERRADA por segunda vuelta seguida y la conclusion es la misma que la de
+la vuelta 45: cero inserciones.** No es una parada: el encargo de hoy **no pide insertar**, pide
+minar, y por eso esto va en la apertura y no en una fila de tarea.
+
+## HH.1. TAREA 1. **LOS REGISTROS DE LA `ACTA 44`: `d021` Y `d023` PAGADAS EN EL ACTO, POR AVERIA Y NO POR ADELANTO**
+
+### HH.1.a. **POR QUE LA REPARO HOY SI LA DEUDA NO ES TAREA DE ESTA VUELTA**
+
+El encargo manda las dos cosas a la vez y no se contradicen: *la deuda no la pagues hoy* (`D.55`,
+se paga junta en saneamiento) y *las tres se reparan por correccion declarada*. **Lo que decide
+cual manda es la especie**, y esta escrita en el propio instrumento de la deuda:
+
+<!-- TALLADO: parcial salida=.v46/por_que_averia.txt -->
+
+    $ grep -n "GUARDAS_DE_DATO\|es averia\|UNICA EXCEPCION" scripts/deuda.py
+    34:LA UNICA EXCEPCION, Y ES ESTRECHA: **una guarda de DATO en rojo** (`gate`, cerrojo, censo
+    54:# Las guardas cuyo rojo NO es deuda: es averia, y bloquea en el acto.
+    55:GUARDAS_DE_DATO = ("gate", "cerrojo", "censo_no_decrece", "fidelidad")
+
+**Un `PUENTE` vivo dentro de una ficha es `fidelidad` en rojo, y el propio encargo lo nombra:**
+*lo unico que te bloquea es una guarda de DATO en rojo: `gate`, el cerrojo, el censo no
+decreciente, o la fidelidad `D.30` con puente. Eso no es deuda: es averia.* **Una averia se
+arregla antes de seguir.**
+
+### HH.1.b. **LA TERCERA PATA DEL PUENTE, MEDIDA CONTRA EL LIBRO ANTES DE TOCAR LA FICHA** (`D.35`)
+
+<!-- TALLADO: parcial salida=.v46/d023_citas.txt -->
+
+    $ sed -n "41p" fuentes/grove_high_output/cap_02.md | fold -w 100 | tail -6
+    on comes in the form of a "dry run" presentation with a selected group of field sales personnel
+    and field sales management. If the dry run fails the test, the material must be "reworked" (anot
+    her well-established manufacturing concept) to meet the concerns and objections of the test audience
+
+    $ sed -n "45p" fuentes/grove_high_output/cap_02.md | fold -w 100 | sed -n "3,6p"
+    d basic design know-how. Each piece then undergoes an individual operation called a "unit test."
+     When one fails, the defective portion of the software is returned to the process phase for "rewor
+    k." After all the pieces pass their respective unit tests, they are assembled to form the compiler
+
+**`L45` SE ACABA EN `rework` Y NO DICE CONTRA QUE SE REHACE.** La frase de las preocupaciones y las
+objeciones **es de `L41` y de ningun otro sitio**, y `L41` prueba la presentacion **ya montada**.
+El paso `5` casaba las dos, que es el mismo puente que el paso `4` un renglon mas abajo.
+
+### HH.1.c. **LAS TRES COSAS, REPARADAS SIN BORRAR EL TEXTO VIEJO**
+
+| pata de `d023` | decia | dice |
+|---|---|---|
+| **el paso `5`** | *Devuelve a la fase de proceso la pieza que falle su prueba, para rehacerla, **y rehazla contra lo que la prueba dijo: las preocupaciones y las objeciones del publico que la probo***. | *Devuelve a la fase de proceso la pieza que falle su prueba, para rehacerla.* |
+| **la linea `FRONTERA DENTRO DEL NODO`** | *y la mitad de los pasos `4` y `5` de `L41`* | **ni el `4` ni el `5` traen ya nada de `L41`**: los dos son transcripcion de `L45` y solo de `L45` |
+| **la cifra de fidelidad** | *`7` TRANSCRIPCION, `0` PUENTE despues de esta correccion* | **`6` y `1`** era la cifra buena en el momento en que la vuelta 45 la publico; **`7` y `0`** es la vigente **hoy**, ya con el paso `5` reparado |
+
+**Las tres viven dentro de la propia ficha, en su `resumen_teorico`, como correccion declarada, y
+el texto viejo queda entero ahi** (manual principio 6). **Y LO QUE LA VUELTA 45 NO HIZO, QUE ES LO
+QUE LA DEJO PENDIENTE: registrarlo.**
+
+<!-- TALLADO: parcial salida=.v46/deuda_tras_t1.txt -->
+
+    $ python scripts/deuda.py
+      pendientes: 9    pagadas: 8
+      ultima vuelta de saneamiento: 44
+
+### HH.1.d. `d024` **Y LA PREGUNTA DE DOCTRINA: DICHAS Y NO TOCADAS**
+
+- **`d024`**, los `7` de `cap_02` sin informe por candidato, **sigue pendiente a proposito**: el
+  encargo la agenda para la vuelta que abra la insercion del lote 7, *porque su tramo no se puede
+  dimensionar sin ella*. **Hoy no abro esa vuelta.**
+- **La pregunta de `D.55` de la `ACTA 44` `44.5.b`** (una cifra de fidelidad falsa en una ficha de
+  cuarentena no es ninguna de las cuatro especies de `5.2` y aun asi viaja al dataset) **queda
+  donde el auditor la dejo**: no abre parada, no entra en la cola de `11` y no va al banco. **Y
+  esta vuelta le pone su segundo ejemplar sin buscarlo**: la cifra `7 TRANSCRIPCION, 0 PUENTE` que
+  acabo de corregir es exactamente esa especie.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `HH.1` | los registros de la `ACTA 44` | **CERRADA**: `d021` y `d023` pagadas y registradas, las tres patas reparadas por correccion declarada, `d024` y la pregunta de doctrina dichas y no tocadas |
+
+## HH.2. TAREA 2. **LA FRONTERA DE `cap_04`, CERRADA CONTRA EL CUERPO ANTES DE CORTAR NADA**
+
+**Es la unidad `Cap. 3` del libro, `Managerial Leverage`.** El instrumento es el mismo que la
+vuelta 2 del frente corrio sobre `cap_03` (`.v2g/frontera.py`), con **mi** lectura de `cap_04`
+dentro: **cero constantes tecleadas que el fichero pueda dar**, la cabecera se localiza por el
+segundo guion triple y la cita de cada fila la imprime el instrumento de la linea.
+
+### HH.2.a. **LA FRONTERA HEREDADA, CITADA POR SU SEDE Y NO RECOMPUTADA** (`D.50`)
+
+<!-- TALLADO: parcial salida=.v46/frontera_heredada.txt -->
+
+    $ grep -n "5828" docs/loop/archivo/grove_high_output/REPORTE.md
+    397:      suma de las filas                      : 5828 palabras
+    398:      cuerpo medido aparte                   : 5828 palabras
+    438:| | **5828** | **15** | **el cuerpo entero de cap_03, cero lineas sin cubrir y cero solapes** | |
+
+**`cap_03` quedo cerrado al digito por el frente: `5828` contra `5828`, cero lineas sin cubrir,
+cero solapes y `15` nodos.** No la recomputo: la cito, que es lo que `D.50` manda.
+
+### HH.2.b. **LA COMPROBACION DE `cap_04`, QUE VA ANTES DE LA TABLA**
+
+<!-- TALLADO: parcial salida=.v46/frontera_cap_04.txt -->
+
+    ==============================================================================
+    1. LA COMPROBACION DE cap_04, ANTES DE SU TABLA
+    ==============================================================================
+    fichero                                : fuentes/grove_high_output/cap_04.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 44
+    lineas con contenido tras la cabecera  : 158
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 8846 palabras
+    cuerpo medido aparte                   : 8846 palabras
+    fichero entero, para cruzar con wc -w  : 8871 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_04 Y SOLO cap_04: 22
+
+    ==============================================================================
+
+**CIERRA AL DIGITO Y SE CRUZA CON `wc -w`:** `8846` de cuerpo mas `25` de cabecera son los `8871`
+que `wc -w` da del fichero entero.
+
+<!-- TALLADO: parcial salida=.v46/cruce_wc.txt -->
+
+    $ wc -w fuentes/grove_high_output/cap_04.md
+    8871 fuentes/grove_high_output/cap_04.md
+    $ sed -n "1,7p" fuentes/grove_high_output/cap_04.md | wc -w
+    25
+
+### HH.2.c. `cap_04`, `Managerial Leverage`: **CUARENTA Y CUATRO TRAMOS Y VEINTIDOS NODOS**
+
+<!-- TALLADO: script=.v46/frontera.py salida=.v46/frontera_cap_04.txt -->
+
+| tramo de cap_04 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L13` | 8 | **0** | P1  rotulos: el numero, el titulo Managerial Leverage y el subtitulo de la salida del mando | `9:3` |
+| `L15 a L47` | 530 | **0** | P2  la salida del mando es la de su organizacion mas la de las vecinas: DEFINICION con su ecuacion | `15:I asked a group of middle managers just that question.` |
+| `L49 a L55` | 411 | **0** | P3  actividad no es salida, y la caja de engranajes: POSTURA | `49:It is important to understand that a manager will find himself e` |
+| `L57 a L61` | 161 | **0** | P4  Daddy, What Do You Really Do, y el anuncio de la tabla del dia | `57:"Daddy, What Do You Really Do?"` |
+| `L63 a L139` | 674 | **0** | P5  LA TABLA A Day from My Life: CASO del autor, manual 3.5, entra nombrado dentro de sus nodos | `63:A Day from My Life` |
+| `L141 a L143` | 137 | **0** | P6  el dia sin patron y mover la energia adonde la palanca sea mayor: POSTURA | `141:When you look at what happened, you won't see any obvious patter` |
+| `L145 a L147` | 210 | **1** | P7  LAS VIAS POR LAS QUE LLEGA LA INFORMACION, nombradas una a una, y la verbal por delante | `145:As you can see, much of my day is spent acquiring information. A` |
+| `L149 a L151` | 198 | **0** | P8  para que sirve el informe escrito: son sus FINES, y 9.1 restriccion 1 los deja fuera | `149:So why are written reports necessary at all? They obviously can'` |
+| `L153 a L153` | 183 | **1** | P9  LA JERARQUIA DE LA INFORMACION: los escalones nombrados uno a uno y su redundancia | `153:To improve and maintain your capacity to get information, you ha` |
+| `L155 a L157` | 236 | **1** | P10 LA VISITA AL SITIO, y la visita programada con su propio inventario de lo que se mira | `155:There is an especially efficient way to get information, much ne` |
+| `L159 a L159` | 160 | **1** | P11 transmitir objetivos, prioridades y preferencias, que el libro llama la llave de la delegacion | `159:As can be seen from my schedule, a manager not only gathers info` |
+| `L161 a L165` | 265 | **0** | P12 las formas de participar en una decision y las dos clases de decision: DEFINICION | `161:The third major kind of managerial activity, of course, is decis` |
+| `L167 a L167` | 147 | **1** | P13 EL EMPUJON: sus medios nombrados y su frontera con la orden | `167:You often do things at the office designed to influence events s` |
+| `L169 a L173` | 271 | **0** | P14 el modelo de conducta y el ejemplo: POSTURA con sus tres casos | `169:Finally, something more subtle pervades the day of all managers.` |
+| `L175 a L175` | 93 | **0** | P15 el tiempo propio como unico recurso finito: POSTURA, y su procedimiento vive en P32 y siguientes | `175:A great deal of a manager's work has to do with allocating resou` |
+| `L177 a L177` | 159 | **0** | P16 la reunion es un medio y no una actividad: POSTURA, y el capitulo de reuniones es otro | `177:As you can see, in a typical day of mine one can count some twen` |
+| `L179 a L193` | 165 | **0** | P17 la ecuacion de la palanca, L1 por A1 mas L2 por A2: DEFINICION | `179:Leverage of Managerial Activity` |
+| `L195 a L201` | 60 | **1** | P18 CABEZA DE SERIE: las TRES vias de subir la productividad gerencial, numeradas y nombradas | `195:Managerial productivity-that is, the output of a manager per uni` |
+| `L203 a L213` | 76 | **1** | P19 CABEZA DE SERIE: las TRES vias basicas de la actividad de alta palanca, contadas y nombradas | `203:Let us consider first the leverage of various types of manageria` |
+| `L215 a L217` | 237 | **1** | P20 la palanca depende de CUANDO: el trabajo por delante del acontecimiento y la accion inmediata | `215:The first is the most obvious example. Consider Robin, an Intel ` |
+| `L219 a L219` | 73 | **0** | P21 la palanca negativa de la reunion a la que llegas sin preparar: material del nodo de P24 | `219:Leverage can also be negative. Some managerial activities can re` |
+| `L221 a L225` | 233 | **0** | P22 impartir conocimiento a un grupo: son los CASOS de la primera via, cuyo nodo es P19 | `221:Each time a manager imparts his knowledge, skills, or values to ` |
+| `L227 a L229` | 146 | **0** | P23 la evaluacion de desempeno y el fichero recordatorio: NOMBRADOS y no procedimentados aqui | `227:A manager can also exert high leverage by engaging in an activit` |
+| `L231 a L235` | 356 | **1** | P24 LA PALANCA NEGATIVA: desanimo, indecision e intromision, con la prueba que la separa del seguimiento | `231:Examples of high negative leverage abound. After going through t` |
+| `L237 a L239` | 196 | **0** | P25 el especialista de conocimiento: son los CASOS de la tercera via, cuyo nodo es P19 | `237:The third kind of managerial activity with high leverage is exer` |
+| `L241 a L241` | 141 | **0** | P26 el arte de elegir una o dos actividades: una intuicion en el sitio del criterio, 9.1 restriccion 2 | `241:The art of management lies in the capacity to select from the ma` |
+| `L243 a L249` | 347 | **1** | P27 QUE SE DELEGA: la base comun de informacion, el lapiz, y delegar sin seguimiento es abdicar | `243:DELEGATION AS LEVERAGE` |
+| `L251 a L251` | 104 | **0** | P28 las dos presentaciones de seguimiento de la reunion del dia: CASO del autor | `251:Please turn back to the table of my day's activities on this pag` |
+| `L253 a L255` | 227 | **1** | P29 SUPERVISAR LO DELEGADO: etapa de menor valor anadido, frecuencia variable y detalle al azar | `253:Monitoring the results of delegation resembles the monitoring us` |
+| `L257 a L257` | 106 | **1** | P30 SUPERVISAR LA DECISION DELEGADA: las preguntas concretas en la reunion de revision | `257:Making certain types of decisions is something managers frequent` |
+| `L259 a L265` | 114 | **0** | P31 subir el ritmo, y la critica a las tecnicas de gestion del tiempo: POSTURA | `259:Increasing Managerial Activity Rate: Speeding Up the Line` |
+| `L267 a L267` | 122 | **1** | P32 EL PASO LIMITANTE DE LA JORNADA y los desfases que se crean alrededor | `267:These time-management suggestions can be improved upon, I think,` |
+| `L269 a L271` | 212 | **1** | P33 AGRUPAR TAREAS SEMEJANTES para aprovechar una sola preparacion | `269:A second production principle we can apply to managerial work is` |
+| `L273 a L285` | 469 | **2** | P34 EL CALENDARIO como herramienta de planificacion, y su segunda responsabilidad: decir que no | `273:What makes running a factory different from running a job shop? ` |
+| `L287 a L287` | 132 | **0** | P35 la holgura: el grado OPTIMO de carga es adjetivo de adecuacion en el sitio del criterio, 9.1 restriccion 2 | `287:The next production principle you can apply is to allow slack-a ` |
+| `L289 a L289` | 101 | **1** | P36 EL INVENTARIO DE PROYECTOS DISCRECIONALES, con su criterio propio y su contraste | `289:Another production principle is very nearly the opposite. A mana` |
+| `L291 a L291` | 108 | **0** | P37 el metodo establecido y el pensamiento que lo sostiene: POSTURA, sin inventario propio | `291:A final principle. Most production practices follow well-establi` |
+| `L293 a L301` | 396 | **1** | P38 SEIS A OCHO SUBORDINADOS: la cifra, su guia de medio dia por semana y el caso del reparto estrecho | `293:Built-In Leverage: How Many Subordinates Should You Have...` |
+| `L303 a L307` | 242 | **1** | P39 LA REGULARIDAD: los mismos bloques de tiempo para actividades iguales, coordinados con los demas | `303:Interruptions-The Plague of Managerial Work` |
+| `L309 a L313` | 206 | **0** | P40 el experimento de los veinte mandos y las soluciones que no sirven: CASO | `309:About twenty middle managers at Intel were once asked to be part` |
+| `L315 a L315` | 92 | **1** | P41 RESPUESTAS ESTANDAR a las interrupciones que se repiten, y su delegacion | `315:There are better ways. Let's apply a production concept. Manufac` |
+| `L317 a L317` | 74 | **1** | P42 AGRUPAR LAS INTERRUPCIONES en las reuniones regulares en vez de atenderlas al azar | `317:Also, if you use the production principle of batching-that is, h` |
+| `L319 a L319` | 67 | **0** | P43 el banco de indicadores para responder rapido: ese objeto ya vive entero en cap_03, P.19 | `319:The use of indicators, especially the bank of indicators kept ov` |
+| `L321 a L323` | 201 | **1** | P44 EL CARTEL EN LA PUERTA Y LA HORA DE OFICINA ABIERTA, con el texto del cartel dado por el libro | `321:If the people who interrupt you knew how much they were disturbi` |
+| | **8846** | **22** | **el cuerpo entero de cap_04, cero lineas sin cubrir y cero solapes** | |
+
+### HH.2.d. **EL TECHO, Y LA REGLA DE PRECEDENCIA DE 12.4 QUE SE DISPARA**
+
+<!-- TALLADO: parcial salida=.v46/frontera_cap_04.txt -->
+
+    ==============================================================================
+    3. EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI
+    ==============================================================================
+    NODOS QUE MI FRONTERA DA EN LA UNIDAD DE ESTA VUELTA (cap_04): 22
+    TECHO DE CANDIDATOS POR VUELTA (EXTRACTOR.md 12.4): entre 5 y 15
+    DENTRO DEL TECHO                                             : NO
+    SI DA NO, MANDA LA REGLA DE PRECEDENCIA DE 12.4: la vuelta cierra en esta unidad,
+    se mina hasta el techo y la linea del tramo dice en que candidato corto.
+
+
+**VEINTIDOS CONTRA UN TECHO DE QUINCE, QUE ES LA FIGURA DEL EJEMPLAR DE 12.4** (`cap_07` del
+lote 4 dio `24` contra `15`). **La vuelta cierra en esta unidad**, no toca `cap_05` ni ninguna
+otra, y **la linea del tramo dice en que candidato corte** (`HH.5`).
+
+### HH.2.e. **LOS VEINTITRES TRAMOS QUE DAN CERO, Y SON MAS DE LA MITAD DE LOS TRAMOS**
+
+**`23` de los `44` tramos dan cero nodos**, contados de la propia tabla y no a ojo:
+
+<!-- TALLADO: parcial salida=.v46/cero_tramos.txt -->
+
+    $ los tramos de la tabla que llevan **0** en la columna de nodos
+    filas: 44 cero: 23
+    P1 P2 P3 P4 P5 P6 P8 P12 P14 P15 P16 P17 P21 P22 P23 P25 P26 P28 P31 P35 P37 P40 P43
+ Un tramo que da cero **es una decision, no un
+descuido**, y por eso cada uno lleva su regla escrita en la columna *que es, y por que* de la
+tabla de arriba, que es la que imprime el instrumento. **Los tres motivos que mas repiten, y
+conviene verlos juntos:**
+
+| motivo | tramos | la regla que lo tumba |
+|---|---|---|
+| **CASO del autor** | `P5` (la tabla del dia entero, `674` palabras), `P22`, `P25`, `P28`, `P40` | manual 3.5: el caso no es la casa, y entra **nombrado dentro** del nodo de su doctrina |
+| **POSTURA o DEFINICION** | `P2`, `P3`, `P6`, `P8`, `P12`, `P14`, `P15`, `P16`, `P17`, `P31`, `P37` | `EXTRACTOR.md` 9: una advertencia es linea, una postura no ejecuta una busqueda, una definicion no tiene nada que hacer |
+| **adjetivo de adecuacion en el sitio del criterio** | `P26` (*el arte, una intuicion*), `P35` (*el grado OPTIMO de carga*) | 9.1 restriccion 2: **tumba aunque haya inventario** |
+| **rotulo o anuncio, sin cuerpo que extraer** | `P1`, `P4` | no hay procedimiento que leer: son el numero del capitulo, sus titulos y el anuncio de la tabla |
+
+**Y LOS TRES QUE NO ENTRAN POR OTRA COSA, que son los que mas me costaron:**
+
+- **`P21` y `P23`**: `P21` es la palanca negativa de la reunion sin preparar, y **su material es
+  del nodo de `P24`**, que es donde el libro la desarrolla; `P23` **nombra** la evaluacion de
+  desempeno y el fichero recordatorio **y no los procedimenta** (*NOMBRAR NO ES PROCEDIMENTAR*),
+  y la evaluacion tiene capitulo propio mas adelante en el libro.
+- **`P43`**: el banco de indicadores para contestar rapido. **Ese objeto ya vive entero** en
+  `archivar_indicadores_resolver_problemas`, de `cap_03`, y `P.19` manda no mandar a nodo propio
+  el objeto que ya esta en casa: **fabricaria el gemelo de su donante.**
+
+| tarea | que pide | estado |
+|---|---|---|
+| `HH.2` | la frontera de `cap_04` cerrada contra el cuerpo, y la heredada citada | **CERRADA**: `8846` contra `8846`, cero lineas sin cubrir, cero solapes, `8846` mas `25` igual a los `8871` de `wc -w`, `22` nodos contra un techo de `15`, y la de `cap_03` citada por su sede sin recomputarla |

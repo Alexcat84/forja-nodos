@@ -1,0 +1,4 @@
+$ wc -w fuentes/grove_high_output/cap_04.md
+8871 fuentes/grove_high_output/cap_04.md
+$ sed -n "1,7p" fuentes/grove_high_output/cap_04.md | wc -w
+25
