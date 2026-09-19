@@ -1,0 +1,16 @@
+==============================================================================
+FICHA: clasificar_trabajo_proceso_montaje_prueba   (7 pasos)
+  poblacion barrida: 390 nodos (grafo + bandejas, filtro canonico)
+  medidos al digito: 389 de 389; descartados: 0
+  umbral de la casa (config/umbrales.json): 0.35
+  reloj del barrido: 510.8 s
+  LOS 8 VECINOS MAS PROXIMOS, LISTA ORDENADA ENTERA:
+    0.3720  [bandeja/grove_high_output] preferir_inspeccion_proceso_prueba_destructiva
+    0.3168  [bandeja/grove_high_output] rehacer_flujo_paso_limitante_capacidad
+    0.2949  [bandeja/grove_high_output] construir_flujo_produccion_paso_limitante
+    0.2411  [bandeja/grove_high_output] dimensionar_inventario_materia_prima_reposicion
+    0.2279  [bandeja/grove_high_output] equilibrar_capacidad_personal_inventario_plazo
+    0.2161  [bandeja/grove_high_output] representar_actividad_caja_negra_ventanas
+    0.2136  [bandeja/grove_high_output] programar_visita_area_observar_despachar
+    0.2136  [bandeja/grove_high_output] construir_grafico_escalonado_pronosticos
+  vecinos por encima del umbral 0.35: 1
