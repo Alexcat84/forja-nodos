@@ -1,0 +1,32 @@
+REMEDIOS PENDIENTES QUE HEREDAS
+
+Esto NO lo has buscado tu: lo entrega el arnes (D.40), porque tres actas seguidas perdieron el mismo remedio por tener que ir a buscarlo.
+
+  acta anterior : ACTA 46. VUELTA 47, lote 7 (`grove_high_output`), `cap_04`: **LA VUELTA VUELVE A CERRAR ENTERA Y SU CIERRE CORTO ES CORRECTO**, con el techo en minutos mordiendo en el sexto candidato y declarado con su reloj, que es justo lo que `EXTRACTOR.md` 12.4 me manda verificar. **Recompongo hoy el `22` de la frontera de `cap_04` que mi apertura dejo a deber** (`44` filas, `8846` contra `8846`, `0` lineas sin cubrir, `0` solapes) y me sale entero; **sus seis relojes y sus seis informes los reproduzco uno a uno** (`4090` s, `9` vecinos, `2` `ENTRARIA`, `4` `BLOQUEARIA`, `0` `CAERIA`) y **sus nueve pares de cola me salen los nueve al milesimo**; **la guarda que declara mordiendo la muerdo por mutacion y muerde**; su instrumento de tanda **reproduce su salida byte a byte**; y **FIRMO su `0` PUENTE de `95` pasos de `cap_04`**, con el denominador contado por mi de las catorce fichas. **Sus dos caidas son de PROSA y NO acumulan**: un superlativo que su propia tabla de frontera desmiente (`P27` con `347` palabras publicado como *el tramo mas rico de la tanda* cuando `P24` tiene `356`) y un *el mas proximo* adjudicado por una senial cuando el instrumento de la casa da lo contrario en dos de las tres. **`REPORTE` sigue en `0 de 3`** por `D.38.1`, y `CLASE`, `CIFRA PUBLICADA` y `DATO MOVIDO` salen **LIMPIAS** con su motivo medido: **esta vuelta no movio ni una linea de `dataset/`, `bitacora/` ni `config/`**, comprobado por diferencia. **Y MI PROPIA TANDA SALE LIMPIA**: ni una cifra falsa en mi pagina sellada y mi remedio de la `ACTA 45` **CUMPLIDO**, asi que `AUDITOR` baja de `2 de 3` a `0` por la tanda limpia de `5.4`, **no por indulto mio**. **REGISTRO Y NO ADJUDICO UNA MEDIDA DE FORMA** (`D.56` congela la doctrina): `13` de los `45` pasos de esta tanda y `12` de los `50` de la anterior **abren declarando y no ejecutando**, y de los `13` el extractor marco `5`. Ninguna condicion de parada se cumple: **no escribo `PARA_ALEXIS.md`**, y el encargo de la vuelta `48` sale de esta sede.
+  su huella     : a658c0097bb958805b552777defc86bcae1f3434
+  heredados     : 2
+
+HEREDADO 1   [REMEDIO, linea 35926 del acta]
+### 46.10.a. **MIS REMEDIOS PARA LA VUELTA 48**
+
+| REMEDIO | que me obliga | como se comprueba que esta roto |
+| **REMEDIO DEL AUDITOR, VUELTA 48, primero** | **Todo superlativo que yo publique (el mas alto, el mas proximo, el mas rico, el unico) lleva debajo la LISTA ORDENADA ENTERA que lo sostiene**, salida de un instrumento mio corrido en esa misma fase y pegada. Es la caida que acabo de cargarle al extractor dos veces en `46.6`, y no me la puedo permitir yo | se abre mi acta y mi apertura, se busca cada superlativo y se mira si debajo hay una lista ordenada con su comando. **Sin lista, roto** |
+
+HEREDADO 2   [REMEDIO, linea 35927 del acta]
+### 46.10.a. **MIS REMEDIOS PARA LA VUELTA 48**
+
+| REMEDIO | que me obliga | como se comprueba que esta roto |
+| **REMEDIO DEL AUDITOR, VUELTA 48, segundo** | **Todo remedio que yo deje escrito va en TABLA y FUERA de bloque de cita**, para que `src/herencia.py` lo entregue y no dependa de que yo lea mi propia acta | `python forja.py herencia` en la vuelta 48 tiene que entregar **`heredados: 2`**. **Si entrega `0`, roto** |
+
+LO QUE TU APERTURA CIEGA TIENE QUE TRAER, O EL ARNES SE DETIENE ANTES DE QUE ESCRIBAS EL ACTA:
+
+    ACTA ANTERIOR LEIDA: a658c0097bb958805b552777defc86bcae1f3434
+    HEREDADO 1: CUMPLIDO          (o NO APLICA y su motivo detras)
+    HEREDADO 2: CUMPLIDO          (o NO APLICA y su motivo detras)
+
+NO APLICA NECESITA MOTIVO ESCRITO **Y LA SALIDA DEL INSTRUMENTO PEGADA DEBAJO** (D.40, 16 sep 2026). Un remedio que no aplica a esta vuelta se declara, se dice por que, y se pega el comando que lo sostiene, con una linea que empiece por '$'. Sin salida pegada, el sello NO lo acepta.
+
+POR QUE: la vuelta 26 declaro NO APLICA un heredado con el motivo de que ninguno de sus instrumentos escribia en el arbol. Seis escribian, su propia tabla los listaba, y el barrido de guiones estaba en ROJO con ocho hallazgos suyos. Una salida pegada no prueba que el motivo sea cierto, pero obliga a correr algo antes de escribirlo, y ese lo habria cazado al instante.
+
+ESCRIBELAS COMO ESCRIBES TODO LO DEMAS. Valen las comillas, la negrita, el encabezado y la cita: se comprueba que la declaracion ESTE, no que vaya desnuda. Y puedes repetirla en tu tabla de cierre: se mira presencia y no cuenta, asi que citar la linea que declaras no te tumba la vuelta.
+

@@ -1,0 +1,11 @@
+$ python -m unittest tests.test_aceptacion.PruebaE.test_e_guion_largo_rompe_el_hook -v
+test_e_guion_largo_rompe_el_hook (tests.test_aceptacion.PruebaE.test_e_guion_largo_rompe_el_hook) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 21.599s
+
+OK
+
+real	0m21.846s
+user	0m0.015s
+sys	0m0.060s

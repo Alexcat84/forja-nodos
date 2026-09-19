@@ -1,0 +1,15 @@
+==============================================================================
+CANDIDATO 3: dimensionar_numero_subordinados_medio_dia_semanal   (11 pasos)
+  poblacion barrida: 390 nodos (grafo + bandejas, filtro canonico)
+  medidos al digito con src.aduana.senal_similitud_texto: 389 de 389; descartados: 0
+  umbral de la casa (config/umbrales.json): 0.35
+  LOS 8 VECINOS MAS PROXIMOS, LISTA ORDENADA ENTERA:
+    0.3349  [bandeja/grove_high_output] buscar_regularidad_bloques_iguales_trabajo_mando  <-- nacido en esta vuelta
+    0.3268  [bandeja/grove_high_output] llevar_inventario_proyectos_discrecionales  <-- nacido en esta vuelta
+    0.2899  [bandeja/grove_high_output] supervisar_tarea_delegada_etapa_menor_valor
+    0.2746  [bandeja/grove_high_output] supervisar_decision_delegada_preguntas_concretas
+    0.2695  [bandeja/grove_high_output] agrupar_tareas_semejantes_aprovechar_preparacion
+    0.2653  [bandeja/grove_high_output] decidir_aceptar_rechazar_material_defectuoso
+    0.2653  [bandeja/grove_high_output] decir_no_trabajo_excede_capacidad  <-- nacido en esta vuelta
+    0.2608  [bandeja/grove_high_output] delegar_tarea_base_comun_seguimiento
+  vecinos por encima del umbral 0.35: 0
