@@ -44870,3 +44870,67 @@ lectura de `L273` a `L285`, no porque cuenten.
 | tarea | que pide | estado |
 |---|---|---|
 | `II.2` | `cap_04` abierto: los ocho siguientes, cada uno por su aduana en el acto, cero inserciones, y no saltar a `cap_05` | **CERRADA CORTA EN `6` DE LOS `8`**: `6` candidatos escritos y pasados por la aduana en el acto, `0` `CAERIA`, `9` pares de cola leidos par a par, la arista de `P27` escrita en las dos fichas con su repaso de aduana, **cero inserciones**, y el corte declarado con su reloj porque el techo de `67` minutos mordio en el sexto |
+
+## II.3. TAREA 3. **`PASOS INVENTADOS` DE `cap_04`, CON SU DENOMINADOR Y CON SU CONTRASTE**
+
+**La relectura de fidelidad `D.30` se hizo EN EL ACTO de escribir cada candidato**, paso contra
+parrafo, y la cifra de cada ficha vive dentro de su propio `resumen_teorico`, que es donde `D.30`
+manda ponerla. **Esta tabla no la vuelve a juzgar: la cuenta de las fichas, y el instrumento se
+para sin publicar si una ficha declara mas pasos de los que tiene o si su suma no cuadra.**
+
+<!-- TALLADO: script=.v47/tanda.py salida=.v47/tanda_cap_04.txt -->
+
+| capitulo y vuelta | PUENTE | pasos escritos | por ciento | tope |
+|---|---:|---:|---:|---:|
+| `cap_04`, vuelta 47, los 6 de hoy | **0** | **45** | **0.00** | 10 |
+| `cap_04`, vuelta 46, los 8 anteriores | **0** | **50** | **0.00** | 10 |
+| **`cap_04` entero hasta hoy, las dos tandas** | **0** | **95** | **0.00** | 10 |
+
+    EL DENOMINADOR SE ESCRIBE AUNQUE EL NUMERADOR SEA CERO: 45 pasos escritos hoy, 50 en la vuelta 46, 95 en total.
+
+**LAS DOS FILAS JUNTAS SON LA LECTURA**, que es lo que el encargo pide: **el mismo capitulo,
+escrita por la misma mano, en dos tandas separadas por una vuelta**, y las dos dan `0` de su
+denominador. **La fila de la vuelta 46 no la teclee: el instrumento la cuenta de las mismas ocho
+fichas, que siguen en la bandeja**, y por eso puede haber salido distinta de la que aquella vuelta
+publico. **No ha salido distinta: da `0` de `50`, igual que `HH.4`.**
+
+**Y LO QUE ESA COINCIDENCIA SI PRUEBA, QUE ES POCO Y CONVIENE DECIRLO:** prueba que **nadie ha
+tocado esas ocho fichas desde que se escribieron**, ni yo hoy al corregir la novena. No prueba que
+los `50` pasos sean del libro: eso lo probo el auditor releyendolos uno a uno (`ACTA 45`), y esa es
+otra clase de prueba.
+
+### II.3.a. **LOS CINCO SITIOS DONDE ESTUVE A PUNTO DE ESCRIBIR UN PUENTE, DICHOS POR SU NOMBRE**
+
+**Una cifra de cero no prueba que no hubiera tentacion**, y esta tabla es la mitad de la metrica
+que el cero no da. **Las tres especies son las de `EXTRACTOR.md` 15.4.**
+
+| donde | la especie de `15.4` | que me paro, con el renglon delante |
+|---|---|---|
+| `supervisar_tarea_delegada_etapa_menor_valor`, pasos `4` y `5` | **el periodo** | el libro manda frecuencia VARIABLE y **da su criterio**, pero **no da ninguna cifra**. Iba a escribir *revisa al menos una vez por semana*. Los pasos dicen *sube o baja segun* y **no dicen cada cuanto** |
+| `supervisar_tarea_delegada_etapa_menor_valor`, paso `6` | **el procedimiento de otro** | `L253` nombra la madurez relativa a la tarea y remite con un *something I will talk about in detail later*. **El paso la NOMBRA y no despliega sus pasos**: desplegarlos seria fabricar el gemelo de su donante antes de que el donante exista |
+| `supervisar_decision_delegada_preguntas_concretas`, paso `4` | **el inventario inventado** | `L257` dice *quite specific questions* y **no enumera ni una**. Iba a escribir la lista de preguntas, que habria sido **un inventario mio bajo un adjetivo del libro**, o sea la especie mas cara de todas |
+| `agrupar_tareas_semejantes_aprovechar_preparacion`, paso `5` | **el periodo** | `L271` dice *set aside a block of time* y **no lo dimensiona**. El paso dice *reserva un bloque de tiempo* y no cuanto ni cada cuanto |
+| `decir_no_trabajo_excede_capacidad` (el borrador que no corrio) | **el responsable y la medicion** | iba a escribir un paso que mandara MEDIR la capacidad y anotarla, que es lo que el paralelo de fabrica pedia a gritos. **`L277` dice lo contrario**: que los indicadores de capacidad de un mando **no estan asentados** y que lo que hay es *a feel for the time required*. **Lo anoto aunque su ficha no exista**, porque la tentacion fue real y la vuelta 48 se la va a encontrar |
+
+**Y HAY UN SEXTO QUE NO ES PUENTE DE PASO Y LO DIGO IGUAL, porque es la especie que `d027` ya
+tiene abierta:** en `detectar_palanca_negativa_actividad_mando` estuve a punto de titular *las tres
+conductas de palanca negativa*. **El libro no dice cuantas**: dice *Examples of high negative
+leverage abound* y luego nombra unas cuantas. **Una cuenta que el libro no da es exactamente lo que
+`d027` esta esperando a que se corrija en otro nodo**, asi que el titulo las enumera y **no las
+cuenta**.
+
+### II.3.b. **EL AVISO DE `15.4` SE VUELVE A CUMPLIR, Y ESTA VEZ CON DOS TANDAS DE PRUEBA**
+
+**Los ocho tramos que elegi en la vuelta 46 y los seis de hoy son los que traen inventario propio y
+denso**, y los `23` tramos que la frontera dejo en cero son justamente los pobres. **Un parrafo
+pobre no produce un nodo pobre: produce un nodo inventado**, y por eso no los extraje.
+
+**Y LA MEDIDA QUE LO ENSENIA MEJOR ES LA DE HOY:** el tramo mas rico de la tanda (`P27`, `347`
+palabras con cinco objetos nombrados) dio **`10` pasos y `0` puentes**; el mas pobre de los que si
+extraje (`P30`, `106` palabras) dio **`6` pasos, `0` puentes y `3` de esos seis marcados como
+discutibles por mi mismo**. **La pobreza del parrafo no se me volvio puente: se me volvio
+discutible**, que es donde `EXTRACTOR.md` 8 manda que vaya.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `II.3` | `PASOS INVENTADOS` de `cap_04` con su denominador y con la fila de la vuelta 46 al lado | **CERRADA**: `0` PUENTE de `45` pasos hoy, `0` de `50` en la vuelta 46, `0` de `95` en el capitulo entero, las dos filas contadas del mismo instrumento, y **los cinco sitios de tentacion nombrados por su especie** |
