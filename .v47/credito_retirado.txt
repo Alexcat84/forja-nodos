@@ -1,0 +1,7 @@
+$ git cat-file -t HEAD:docs/loop/CREDITO_serial.jsonl
+blob
+$ git cat-file -s HEAD:docs/loop/CREDITO_serial.jsonl   (bytes, NO su contenido)
+40874
+
+$ ls docs/loop/CREDITO_serial.jsonl
+ls: cannot access 'docs/loop/CREDITO_serial.jsonl': No such file or directory
