@@ -1,0 +1,39 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 399   (346 del grafo mas 53 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 4
+  por candidato bloqueado          : menor 4, mediana 4, mayor 4
+  que señal levanta cada vecindad  : similitud_texto 4
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] cubrir_indicadores_problemas_reunion_individual   (cubrir_indicadores_problemas_reunion_individual.json)
+    vecino preparar_guion_reunion_individual_subordinado  [levantada por: similitud_texto]
+      similitud_texto 0.432 | familia_id 0.250 | paso_contra_nodo 0.459
+      paso 2 del candidato contra paso 3 de preparar_guion_reunion_individual_subordinado
+    vecino fijar_duracion_lugar_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.386 | familia_id 0.250 | paso_contra_nodo 0.444
+      paso 8 del candidato contra paso 4 de fijar_duracion_lugar_reunion_individual
+    vecino infundir_regularidad_reunion_proceso  [levantada por: similitud_texto]
+      similitud_texto 0.391 | familia_id 0.125 | paso_contra_nodo 0.441
+      paso 2 del candidato contra paso 2 de infundir_regularidad_reunion_proceso
+    vecino fijar_frecuencia_reunion_individual_madurez_tarea  [levantada por: similitud_texto]
+      similitud_texto 0.410 | familia_id 0.222 | paso_contra_nodo 0.434
+      paso 1 del candidato contra paso 2 de fijar_frecuencia_reunion_individual_madurez_tarea
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

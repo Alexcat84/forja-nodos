@@ -1,0 +1,34 @@
+    $ python .v51/leer_par.py  candidato contra vecino, los dos LEIDOS ENTEROS
+
+    [CANDIDATO] fijar_frecuencia_reunion_individual_madurez_tarea
+      TRAMO      : L33 a L35 (P11)
+      ENTREGABLE : Una frecuencia de reunion individual por subordinado, sostenida en su madurez relevante para la tarea y ajustada por la velocidad de cambio de su area, y no una misma frecuencia para todos.
+        1. Decide cada cuanto necesita reunion individual cada persona, en vez de poner la misma frecuencia para todas.
+        2. Contesta a esa pregunta con la madurez relevante para el puesto o para la tarea de cada uno de tus subordinados, que es la respuesta que el libro da.
+        3. Mide esa madurez por cuanta experiencia tiene ese subordinado con la tarea concreta que tiene entre manos.
+        4. No la confundas con la experiencia que tiene en general ni con lo mayor que sea.
+        5. Cuenta con que el estilo de mando mas eficaz en un caso concreto va de la supervision muy estrecha a la muy suelta a medida que sube la madurez de tarea del subordinado.
+        6. Ten reuniones individuales con frecuencia, por ejemplo una vez por semana, con el subordinado que es inexperto en una situacion concreta.
+        7. Tenlas con menos frecuencia, quiza una vez cada pocas semanas, con el veterano experimentado.
+        8. Ten en cuenta ademas una segunda consideracion: lo deprisa que cambian las cosas en el area del puesto.
+        9. Cuenta con que en un area de ritmo muy rapido, y el libro pone como ejemplo la de marketing, el supervisor necesita reuniones individuales frecuentes para seguir al dia de lo que pasa.
+       10. Cuenta con que en un entorno mas tranquilo, y el libro pone como ejemplo el de investigacion, pueden bastar reuniones menos frecuentes para un mismo nivel de madurez relevante para la tarea.
+
+    [VECINO] infundir_regularidad_reunion_proceso
+      TRAMO      : L21 a L21 (P6)
+      ENTREGABLE : Una reunion de proceso con su regularidad puesta: sus asistentes sabiendo las tres cosas que el libro nombra, sus transacciones agrupadas en tanda, y un sistema de control de produccion tomando forma en los calendarios.
+        1. Apunta a infundir regularidad a esta clase de reunion, que es la manera de sacarle el maximo.
+        2. Consigue que los que asisten sepan como se lleva la reunion.
+        3. Consigue que sepan que clases de asuntos de fondo se tratan en ella.
+        4. Consigue que sepan que es lo que hay que conseguir en ella.
+        5. Disenala de forma que te deje agrupar transacciones en tanda, o sea usar el mismo tiempo y esfuerzo de preparacion de produccion para atender muchas tareas de mando semejantes.
+        6. Aprovecha que, dada esa regularidad, tu y los demas asistentes podeis empezar a pronosticar el tiempo que piden las clases de trabajo que hay que hacer.
+        7. Deja que de ahi tome forma un sistema de control de produccion, registrado en los distintos calendarios.
+        8. Cuenta con lo que ese sistema consigue: que una reunion programada tenga el minimo impacto en las otras cosas que la gente esta haciendo.
+
+    PAR QUE LA SENIAL EMPAREJA: paso 8 del candidato contra paso 1 del vecino
+      candidato paso 8 : Ten en cuenta ademas una segunda consideracion: lo deprisa que cambian las cosas en el area del puesto.
+      vecino    paso 1 : Apunta a infundir regularidad a esta clase de reunion, que es la manera de sacarle el maximo.
+
+    PASOS LITERALMENTE COMUNES A LOS DOS : 0
+    LINEAS DEL LIBRO QUE COMPARTEN       : 0   (candidato L33 y L35, vecino L21)
