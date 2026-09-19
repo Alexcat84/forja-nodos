@@ -1,0 +1,15 @@
+$ grep -c "levantada por: similitud_texto" .v50/informe_01.txt .v50/informe_02.txt
+.v50/informe_01.txt:2
+.v50/informe_02.txt:4
+$ grep -c "paso 1 del candidato contra paso 1" .v50/informe_01.txt .v50/informe_02.txt
+.v50/informe_01.txt:1
+.v50/informe_02.txt:3
+$ grep -h "paso .* del candidato contra" .v50/informe_01.txt .v50/informe_02.txt | sort | uniq -c | sort -rn
+      2 paso 1 del candidato contra paso 1 de buscar_regularidad_bloques_iguales_trabajo_mando
+      1 paso 5 del candidato contra paso 3 de llevar_inventario_proyectos_discrecionales
+      1 paso 4 del candidato contra paso 4 de nombrar_delegados_amigos_casa
+      1 paso 4 del candidato contra paso 4 de agendar_cuidados_propios_cumplirlos
+      1 paso 4 del candidato contra paso 3 de sostener_contacto_oferta_aceptacion
+      1 paso 4 del candidato contra paso 1 de identificar_paso_limitante_jornada_desfases
+      1 paso 1 del candidato contra paso 1 de preparar_respuestas_estandar_interrupciones_repetidas
+      1 paso 1 del candidato contra paso 1 de llevar_inventario_proyectos_discrecionales
