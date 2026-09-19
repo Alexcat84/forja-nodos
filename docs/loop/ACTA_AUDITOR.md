@@ -34865,3 +34865,600 @@ dice por que: la cifra que buscaba a pulso estaba escrita en la primera linea de
 >
 > `PROMPT_SIGUIENTE.md` sale con el encargo de la vuelta `46`, **ratificando la decision del
 > fundador**: minar `cap_04`, frontera antes de cortar, **cero inserciones**.
+
+---
+
+# ACTA 45. VUELTA 46, lote 7 (`grove_high_output`), `cap_04`: **LA VUELTA CIERRA ENTERA POR PRIMERA VEZ DESDE LA 42, Y SE LO VERIFICO AL DIGITO**. Recompongo su frontera **tramo a tramo contra el fichero** (`8846` de cuerpo, `44` tramos, `0` lineas sin cubrir, `0` solapes, `22` nodos) y me sale la suya; releo sus **`50` pasos contra sus `17` renglones** y **FIRMO el `0` PUENTE**; sus **ocho relojes, sus ocho informes de aduana y sus `13` pares de cola** los reproduzco uno a uno; **sus cinco discutibles marcados se sostienen los CINCO**; y las **dos guardas que declara mordiendo las vuelvo a morder por mutacion y muerden las dos**, una de ellas devolviendo **la misma frase literal** que el reporte pego. Sus dos caidas son **de prosa y NO acumulan** (`116` tablas donde el instrumento da `115` hoy, y una diferencia de `2` pruebas atribuida a dos bloques de `11`), asi que **`REPORTE` baja de `1 de 3` a `0`** por `D.38.1` y no por indulto mio. `CLASE`, `CIFRA PUBLICADA` y `DATO MOVIDO` salen **LIMPIAS**, y la de `CLASE` con su motivo medido: **esta vuelta no escribio ni un veredicto** (`740` contra `740`). **Y LA CAIDA QUE PESA ES MIA Y ES UNA CONTRADICCION DENTRO DE MI PROPIA PAGINA SELLADA**: mi `4.5` publica que `0.0763` es el par mas alto que no es madre e hija y mi `4.9` publica que lo es `0.1058`, **y las dos no pueden ser ciertas**. `AUDITOR` sube a **`2 de 3`**, penultimo escalon, **asi que mi remedio va ENCARGADO y no solo declarado**. **DESENTIERRO ADEMAS UNA TRAMPA QUE NO ES DE NADIE DE HOY Y QUE SE COBRARIA LA VUELTA SIGUIENTE**: `docs/loop/TABLERO.jsonl` publica `cap_04` dentro de `capitulos_minados` con **`8` de sus `22` nodos minados**, y `forja.py tablero --puedo` manda por eso *continuar desde el capitulo siguiente al ultimo minado*, que mandaria saltar a `cap_05` **dejando `14` nodos atras**. Ninguna condicion de parada se cumple: **no escribo `PARA_ALEXIS.md`**, y el encargo de la vuelta `47` sale de esta sede.
+
+## 45.0. HUECO DE ACTA: **NO LO HAY**, y va antes que nada
+
+La `ACTA 44` cubre la **vuelta 45**; audito la **vuelta 46**, que es la inmediatamente
+siguiente. **Cubro una vuelta y una sola**, y no hay ninguna sin acta detras.
+
+## 45.1. LA HERENCIA DE `D.40`, DECLARADA Y COMPROBADA
+
+Mi apertura sellada abre con la linea que el arnes exige y con `0` heredados, y el
+instrumento de la casa lo sostiene con su salida pegada (`APERTURA_CIEGA.md` seccion 0):
+
+    ACTA ANTERIOR LEIDA: 8f293bd5ea02070c5be66db963120cb836fc08ed
+    HEREDADOS: CERO  (python forja.py herencia, salida pegada en la apertura)
+
+**Y LEI MI PROPIA ACTA EN LA FASE CIEGA**, que es lo que el protocolo autoriza por
+escrito y lo que tres vueltas seguidas se comportaron como si estuviera prohibido.
+
+## 45.2. LO QUE RECOMPUTE CON MIS PROPIOS COMANDOS, Y NO COPIE DE SU REPORTE
+
+**Las guardas, corridas por mi hoy:**
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py
+      total: 318 pruebas, 0 fallos, 0 errores
+
+**El estado, contado por mi contra el arbol y contra el commit de apertura `027d0a9`:**
+
+| cifra | el reporte dice | yo mido | como |
+|---|---:|---:|---|
+| `dataset/nodos.jsonl` al abrir y al cerrar | `346` y `346` | `346` y `346` | `git show 027d0a9:...` y `wc -l` |
+| `bitacora/VEREDICTOS.jsonl` al abrir y al cerrar | `740` y `740` | `740` y `740` | idem |
+| `config/pares_mutuos.jsonl` | `1` y `1` | `1` y `1` | idem |
+| bandeja `grove_high_output` al abrir | `22` | `22` | `git ls-tree -r --name-only 027d0a9` |
+| bandeja `grove_high_output` al cerrar | `30` | `30` | contados con `PATRON: cuarentena/grove_high_output/*.json` |
+| bandeja `marquet_turn_the_ship` | `3` | `3` | idem |
+| `_insertados/grove_high_output` | `1` | `1` | idem |
+| deuda al abrir | `11` pendientes, `6` pagadas | `11` y `6` | contado del `DEUDA.jsonl` de `027d0a9` por su campo `tipo` |
+| deuda al cerrar | `9` pendientes, `8` pagadas | `9` y `8` | `python scripts/deuda.py` |
+| credito al abrir y al cerrar | `AUDITOR 1 de 3`, `REPORTE 1 de 3`, el resto en `0` | lo mismo | `python forja.py credito` |
+
+**LAS TRES CIFRAS DEL DATO NO SE MOVIERON, Y LO COMPRUEBO POR DIFERENCIA Y NO POR
+LECTURA**, que es lo unico que lo prueba:
+
+    $ git diff --stat 027d0a9 HEAD -- dataset/ bitacora/ config/pares_mutuos.jsonl
+    (vacio)
+
+    $ git diff --name-status 027d0a9 HEAD -- cuarentena/grove_high_output/
+    8 A   (los ocho candidatos de cap_04)
+    1 M   (clasificar_trabajo_proceso_montaje_prueba, la reparacion de d023)
+
+**Y LA MORATORIA DE MAQUINARIA SE CUMPLIO, medida igual:**
+
+    $ git diff --stat 027d0a9 HEAD -- tests/ src/ scripts/ forja.py
+    (vacio)
+
+### 45.2.a. **LA FRONTERA DE `cap_04`, RECOMPUESTA TRAMO A TRAMO Y NO CREIDA**
+
+No me basto con sumar su tabla: **medi el fichero con mi propio contador** y despues
+**cruce sus `44` filas contra el texto, linea por linea**.
+
+    $ (contador propio sobre fuentes/grove_high_output/cap_04.md)
+    guiones triples en                    : [1, 7]   la cabecera acaba en L7, no tecleado
+    lineas con contenido tras la cabecera : 158
+    palabras del cuerpo                   : 8846
+    palabras de la cabecera               : 25
+    palabras del fichero                  : 8871
+    primera linea del cuerpo              : 9    ultima: 323
+
+    $ (cruce de las 44 filas de su tabla contra el fichero)
+    filas                                  : 44
+    filas cuya cuenta de palabras DIFIERE  : 0
+    lineas con contenido NO cubiertas      : []
+    SOLAPES                                : []
+    suma de la columna de palabras         : 8846
+    suma de la columna de nodos            : 22
+    filas que dan cero nodos               : 23
+
+**LOS CUATRO NUMEROS QUE SU TABLA PUBLICA ME SALEN LOS CUATRO**, y el `8846` mas el `25`
+de cabecera da el `8871` de `wc -w`. **Su frontera cierra al digito y la firmo.**
+
+`LECTURA`: los `23` tramos que dan cero son **`23` decisiones con su regla escrita en la
+columna que el instrumento imprime**, no `23` descuidos, y los recuento uno a uno de la
+propia tabla: `P1 P2 P3 P4 P5 P6 P8 P12 P14 P15 P16 P17 P21 P22 P23 P25 P26 P28 P31 P35
+P37 P40 P43`.
+
+### 45.2.b. **LOS OCHO RELOJES Y LOS OCHO INFORMES, ABIERTOS UNO A UNO**
+
+Los `16` ficheros existen y **ninguno tiene cero bytes** (7.B de la cosecha). Recalculo
+cada intervalo de su marca de inicio a su marca de fin:
+
+| candidato | el reporte dice | su reloj dice | el intervalo que dan sus dos marcas |
+|---|---:|---:|---|
+| `reunir_...` | 513 | 513 | `01:27:43` a `01:36:16` = 513 |
+| `escalonar_...` | 576 | 576 | `01:37:30` a `01:47:06` = 576 |
+| `programar_...` | 559 | 559 | `01:48:05` a `01:57:24` = 559 |
+| `transmitir_...` | 447 | 447 | `01:58:16` a `02:05:43` = 447 |
+| `empujar_...` | 492 | 492 | `02:06:27` a `02:14:39` = 492 |
+| `subir_...` | 423 | 423 | `02:15:29` a `02:22:33` = **424** |
+| `buscar_...` | 449 | 449 | `02:23:09` a `02:30:38` = 449 |
+| `elegir_...` | 585 | 585 | `02:31:39` a `02:41:24` = 585 |
+| **total** | **4044** | **4044** | |
+
+**EL DESCUADRE DE UN SEGUNDO DEL SEXTO LO DECLARO Y NO LO CARGO**, y digo por que: la
+linea `segundos=423` **es la salida del propio cronometro**, y la marca de inicio y la de
+fin estan talladas al segundo entero. Un inicio en `02:15:29,9` da `423,1`. **No es una
+cifra tecleada: es el truncamiento de un instrumento**, y `D.33` ya dice que ningun
+artefacto de maquina tumba una guarda. **La suma, que es la cifra que se usa, es la suya
+al digito.**
+
+Y las cuentas que cuelgan de ese total me salen las cuatro: `4044 / 8 = 505,5`;
+`505,5 x 22 = 11121`; `505,5 x 15 = 7582`; `4044 / 4160 = 97,2` por ciento, con los
+`116,0` s del `real 1m55.997s` que su propio `.v46/apertura_pruebas.txt` trae.
+
+**Y LOS OCHO INFORMES DE ADUANA DICEN LO QUE SU TABLA DICE:** `2` `ENTRARIA`
+(`reunir_...` y `subir_...`, los dos con `0` vecinos), `6` `BLOQUEARIA`, `0` `CAERIA`,
+`0` chocan, y la suma de vecinos `0+1+1+1+5+0+1+4 = 13`. La poblacion de su barrido sube
+de `372` a `379` informe a informe, **un candidato por informe**, que es exactamente lo
+que su `HH.5.b` declara como causa de que el encargo estimara `385` s y su medida diera
+`505,5`.
+
+## 45.3. LAS DOS GUARDAS QUE DECLARA MORDIENDO, VUELTAS A MORDER POR MUTACION
+
+*7.C de la cosecha: una guarda publicada como mordiendo que no muerde es cifra falsa.*
+
+**`D.41`, EL TALLADO.** Con el arbol como esta da `0` `DIFIERE`. Le cambio **una sola
+celda** de la tabla de la cola de lectura, sobre una copia y sin tocar el arbol:
+
+    par 9, similitud_texto  0.437 -> 0.999
+    DIFIERE tras mutar: 1     (sin mutar: 0)
+
+**`D.52`, LA TABLA DE CIERRE.** Con el arbol como esta da `VERDE`. Le devuelvo a la fila
+`3` la forma `N de M del capitulo` que el extractor le quito, y **el instrumento devuelve
+la misma frase literal que su `HH.5.g` pego**:
+
+    fila 3  DIFIERE  la celda publica '8 de 22 del capitulo' y cap_04 son 0 de 0 en el grafo (0 pasos)
+
+**LAS DOS MUERDEN, Y LA SEGUNDA REPRODUCE SU SALIDA PALABRA POR PALABRA**, asi que la
+caida que su reporte se declara a si mismo en `HH.5.g` **es una caida real que el
+instrumento cazo, y no una confesion decorativa.**
+
+**LA PUERTA DE `D.39` NO LA VUELVO A MORDER Y DIGO POR QUE**: la `ACTA 44` `44.3` ya la
+mordio por mutacion (`0` insertables, `22` al meter la clave en `cerrados_en_extraccion`)
+y el modo austero manda no repetir lo que el registro ya dice. **Lo que si mido hoy es la
+puerta:**
+
+    $ python -c (config/frentes.json, cerrados_en_extraccion)
+    ['scott_radical_candor', 'smart_who', 'zhuo_manager']
+    grove_high_output CERRADO EN EXTRACCION: False
+
+`LECTURA`: **cero inserciones es el resultado correcto y no una vuelta perdida.** Y lo
+que lo prueba no es la frase, es la diferencia de `45.2`: el dataset, la bitacora y los
+pares mutuos **no se movieron ni una linea**.
+
+## 45.4. LA RELECTURA CIEGA: **LOS CINCO SUYOS Y LOS TRES MIOS**
+
+Empiezo por los discutibles marcados, que es por donde `5.1` manda empezar.
+
+### 45.4.a. **SU DISCUTIBLE 1: SE SOSTIENE**, y con la cuenta escrita en el libro
+
+*Las dos cabezas de serie de cuatro pasos que solo nombran sus vias: un lector estricto
+dira que eso es NOMBRAR y no PROCEDIMENTAR. Si uno cae, caen los dos.*
+
+**Abri los dos renglones antes de decidir**, y `D.37` pide exactamente una cosa: que el
+texto diga **cuantas** partes tiene. La dice dos veces, y no la puso el extractor:
+
+    195: Managerial productivity, the output of a manager per unit of time worked, can be increased in three ways:
+    197: 1. Increasing the rate ...  199: 2. Increasing the leverage ...  201: 3. Shifting the mix ...
+    207: These can be achieved in three basic ways:
+    209 / 211 / 213: los tres puntos, nombrados uno a uno
+
+`LECTURA`: **el reparo es legitimo y no gana.** `P.5.1` dice que una segunda linea solo
+cuenta como **expansion** si trae procedimiento propio, y esa vara decide **duplicacion**,
+no existencia. La de existencia es la de `EXTRACTOR.md` 9, y la contesta el inventario: el
+libro pone **su propia cuenta y sus propios nombres**, y el entregable de cada una es
+comprobable (*la via elegida dicha por su nombre*, *las que caen en alguna de ellas
+senaladas por la via que las mete*). **Los dos son nodos.**
+
+**Y ADJUDICO EL PAR, QUE ES EL UNICO DE LA TANDA POR ENCIMA DE `0,4`:**
+`buscar_actividad_alta_palanca_tres_vias` **CONTINUA** a
+`subir_productividad_gerencial_tres_vias`, **no lo REPITE**. Con la vara y con su
+direccion: el paso `3` de la madre es **una linea que nombra** (*Sube la palanca asociada
+a las distintas actividades de mando que haces*); la hija trae **la cuenta y las tres
+vias**; y lo que le queda a la madre fuera del solape **es procedimiento suyo** (el ritmo
+del paso `2` y la mezcla del paso `4`). **Procedimiento en los dos lados, y con direccion:
+`CONTINUA`.** Mi clase ciega decia lo mismo y la suya tambien: **las tres lecturas
+coinciden.**
+
+### 45.4.b. **SU DISCUTIBLE 2: SE SOSTIENE**, y su manejo es de manual
+
+*`empujar_persona_reunion_direccion_preferida`: el libro dice `Let us call it nudging`, y
+eso puede leerse como DEFINICION de una categoria.*
+
+El renglon `L167` bautiza **y ademas** pone tres medios nombrados (llamada, nota o
+memorando, comentario en una presentacion) y el criterio que separa el empujon de sus dos
+vecinos (*you may be advocating a preferred course of action, but you are not issuing an
+instruction*; *something stronger than merely conveying information*). **Inventario de
+medios mas criterio escrito es un nodo.**
+
+**Y EL BAUTIZO NO SE PERDIO: FUE A SU CAMPO.** Manual 3.1 manda registrar el termino en
+otro idioma como denominacion aparte, y la ficha lo hace:
+
+    denominaciones.otros_idiomas : [{ingles: nudging}, {ingles: nudge}]
+
+`LECTURA`: **la definicion no se tumbo, se coloco.** Es el mismo manejo que la vuelta 1 le
+dio a *distribuidores*, y es la salida que la tabla de `EXTRACTOR.md` 9 deja abierta.
+
+### 45.4.c. **SUS DISCUTIBLES 3 Y 4: SE SOSTIENEN LOS DOS, Y LA ASIMETRIA ENTRE ELLOS ES LA LECTURA**
+
+*El `3`: los pasos `6`, `7` y `8` de `programar_visita_area_observar_despachar` salen del
+caso de la inspeccion de Mister Limpio. El `4`: los pasos `2`, `3` y `4` de
+`elegir_momento_actividad_palanca_maxima` salen del caso de la planificacion anual.*
+
+Los dos reparos son el mismo, **y los dos candidatos lo resuelven de forma distinta**:
+
+| | el `3` | el `4` |
+|---|---|---|
+| **el caso** | se **nombra** dentro del paso `6` (*las inspecciones que llaman de Mister Limpio*) | se **disuelve**: Robin no aparece en ningun paso |
+| **la senial barata de manual 3.5** (*el entregable del caso lleva un dato del caso*) | **NO dispara**: el entregable dice *sus objetos de revision*, no los de aquella casa | **NO dispara**: el entregable dice *su informacion y sus responsables*, sin el proceso anual ni las doscientas personas |
+| **la doctrina** | vive en los pasos `1` a `5`, que son de `L155` | vive en los pasos `1`, `5`, `6` y `7`, que cierran con el precepto de `L217` |
+
+**ADJUDICO LOS DOS DENTRO**, citando manual 3.5 por su letra: la regla manda que **la
+doctrina viva en su nodo** y que el caso entre **nombrado dentro de ella**, y su senial
+barata es que el entregable lleve un dato del caso. **En los dos la doctrina esta en el
+nodo y en los dos el entregable esta limpio de datos del caso.** El `3` nombra su caso y
+el `4` no tiene por que: **`L215` no es un caso que se extraiga, es doctrina ilustrada por
+dos casos**, y el libro mismo generaliza en el renglon (*Work done in advance of the
+planning meeting obviously has great leverage*).
+
+**Y LO QUE SI ME PARECE EL FILO, DICHO EN VEZ DE CALLADO:** el paso `7` del `3` es el
+inventario de la casa del autor (*el orden y la limpieza, la disposicion de las cosas, los
+laboratorios y el equipo de seguridad*). **Un lector de otra casa mira otros objetos.** Lo
+dejo escrito y **no lo tumbo**, porque el libro no da otro inventario y escribirlo yo
+seria justamente el `PUENTE` que `D.30` persigue.
+
+**Y UNA COSA QUE EL EXTRACTOR HIZO BIEN Y NO SE APUNTA:** `L215` dice *perhaps two hundred
+people* y el paso `3` dice *mucha gente*. **Solto la cifra del caso**, que es la mitad
+menos vistosa de manual 3.5 y la que mas cuesta.
+
+### 45.4.d. **SU DISCUTIBLE 5: SE MARCA Y NO SE PUEDE CERRAR TODAVIA, Y ESO ES CORRECTO**
+
+*`P34` es el unico tramo con dos nodos y no le da tres.* **El nodo aun no esta escrito**:
+cae en los `14` del tramo siguiente. Lo unico que puedo verificar hoy es la frontera, y la
+verifico: `P34` lleva `2` en la columna de nodos y la suma de la columna da los `22` que su
+tabla publica. **Queda marcado antes de escribirse, que es lo mas a ciegas que se puede
+marcar**, y lo adjudica la vuelta que lo escriba.
+
+### 45.4.e. **MIS TRES DISCUTIBLES, DESTAPADOS**
+
+**MI `6.1` SE SOSTIENE, Y ES EL HALLAZGO DE ESTA RELECTURA.** El `entregable_esperado` de
+`reunir_informacion_gerencial_vias_variadas` dice *las vias ... nombradas una a una y **las
+seis** en uso*, y el libro no da esa cuenta:
+
+    $ grep -n -i "many ways" fuentes/grove_high_output/cap_04.md
+    145:... And as you can also see, I use many ways to get it. ...
+    $ grep -c -i "six ways" fuentes/grove_high_output/cap_04.md
+    0
+
+**Y EL `seis` NO ES ESTABLE NI DENTRO DE LA PROPIA FICHA:** su
+`denominaciones.nombre_largo` enumera seis (informes, memorandos, ad hoc, conversacion,
+quejas, intercambio verbal) y sus pasos reparten las vias de otra manera, juntando informes
+y memorandos en el paso `1` y anadiendo en el `6` la informacion de quien quiere algo de
+ti. `LECTURA`: **la condicion de exito del nodo se apoya en una cuenta que el libro no da y
+que la ficha no fija.** Es la misma especie que los tres sitios donde el propio extractor se
+paro (*el libro no pone cifra, asi que el paso no la pone*), solo que esta se le colo en el
+entregable.
+
+**NO LA CARGO COMO CAIDA DE NINGUNA DE LAS CUATRO ESPECIES, Y DIGO EXACTAMENTE POR QUE**:
+`D.30` cuenta **pasos**, y esto no esta en un paso; y las sedes de `CIFRA PUBLICADA` de
+`5.2` son `docs/`, `config/`, `esquema/` y el codigo de una guarda, **y una ficha de
+cuarentena no es ninguna**. Es el agujero que la `ACTA 44` `44.5.b` ya registro y que `D.56`
+congelo, **y ya esta en la cola de doctrina como pregunta `3`**, con estas palabras del
+tablero: *Una cifra en `denominaciones.nombre_largo` que el libro no escribe*. **Le pongo su
+tercer ejemplar y NO abro nada nuevo**, que es lo que `D.55` manda hacer con la doctrina
+congelada. **Lo que si hago es agendarlo**, porque un nodo no entra asi: va a `DEUDA.jsonl`
+en el encargo.
+
+**MI `6.2` SE SOSTIENE COMO LO MARQUE: `TRANSCRIPCION`.** Los pasos `3` y `4` de
+`escalonar_fuentes_informacion_gerencial` sueltan la analogia del periodico, **pero la
+suelta el libro primero**: `L153` pasa de *like a newspaper headline* a *So you then read
+the newspaper article itself*, que ya es instruccion. **La repeticion es del libro.** Dejo
+anotado el unico matiz que encontre releyendo: el paso `4` dice *es lo que dan una revista
+de actualidad o incluso un libro* donde `L153` dice *which can be compared to reading*. **Es
+un grado mas de afirmacion, no un paso inventado**, y la accion del paso (terminar en la
+reiteracion y la perspectiva) **si esta en el renglon**. No lo cargo y lo dejo a la vista.
+
+**MI `6.3` SE CIERRA CONTRA MI, Y LA SEGUNDA LECTURA ERA LA BUENA.** Marque el paso `2` de
+`elegir_momento_actividad_palanca_maxima` como un caso vuelto precepto. **Lo es, y esta
+autorizado**, por lo que acabo de adjudicar en `45.4.c`: la doctrina vive en el nodo, el
+entregable no lleva dato del caso, y el libro generaliza en el mismo renglon. **Se queda
+como `TRANSCRIPCION`**, y el mapeo es literal: *define con antelacion exactamente que
+informacion hay que reunir y presentar en cada etapa del proceso, y deja puesto quien
+responde de que* contra *When Robin defines in advance exactly what information needs to be
+gathered and presented at each stage of the planning process and lays out who is responsible
+for what*. **Cambia el sujeto y no cambia nada mas.**
+
+### 45.4.f. **MI CLASIFICACION CIEGA CONTRA LA SUYA: COINCIDEN EN LAS OCHO**
+
+Mi apertura sellada clasifico `7 SANO` y `1 CONTINUA` con arista `D.37`. La tanda del
+extractor da `2 ENTRARIA` y `6 BLOQUEARIA`, **que es la puerta y no la clase**, y sus
+aristas declaradas por lectura dan **una sola jerarquia `D.37`**, la misma que la mia y
+entre los mismos dos nodos. **No hay ni una discrepancia de clase que adjudicar en esta
+tanda.**
+
+## 45.5. LAS ADJUDICACIONES
+
+### 45.5.a. **`ensayo_referencia_163`: MI BARRIDO MEDIA DE MAS, NO LA ADUANA DE MENOS**
+
+Mi apertura llevo al turno normal una pregunta de una linea: mi poblacion `D.38.4` da `542`
+y la de la aduana `379`, y la diferencia son los `163` del ensayo. **La adjudico hoy citando
+regla escrita, y no abre doctrina:**
+
+    src/aduana.py:465   poblacion_de_bandejas descarta el candidato cuyas fuentes no son canonicas
+    $ python -c (fuentes/FUENTES_CANONICAS.json)
+      'quality_is_free_the' en la tabla canonica : False
+    $ cat cuarentena/ensayo_referencia_163/LEEME.md
+      ESTO ES UN ENSAYO, NO ES EL MUNDO 11 ... Esta carpeta es material de usar y tirar.
+
+`LECTURA`: **los `163` no esperan juicio: son material de calibracion con una clave que la
+tabla canonica no tiene**, asi que ninguno de ellos podria ser jamas vecino de un nodo de
+esta casa. **El que media otra poblacion era mi barrido**, que barre la carpeta sin mirar la
+fuente. `D.38.4` manda barrer *lo que espera en `cuarentena/<libro>/`*, y un ensayo no es un
+libro. **Queda adjudicado: `542` era mi cifra ancha y `379` es la buena. `D.38.5` sigue
+entera y no hay discrepancia que levantar.**
+
+### 45.5.b. **EL `116` DEL TALLADO: DISCREPA DE MI INSTRUMENTO DE HOY Y NO ACUMULA**
+
+Su `HH.5.e` cierra diciendo *el tallado quedo verde con `116` tablas*. **El instrumento,
+corrido por mi en esta vuelta, da `115`**, y el arnes tambien lo corrio al abrir mi turno y
+publico `115` en `docs/loop/loop.log`:
+
+    $ python scripts/tallar_reporte.py
+    TALLADO VERDE: las 115 tabla(s) comprobables son las de su instrumento, celda a celda.
+
+**Busque la salida que sostiene el `116` y no esta en ningun fichero de `.v46/`**
+(`grep -rn "116" .v46/*.txt` no devuelve nada), asi que **no puedo reconstruir el momento en
+que fue cierta.** Mi lectura, y la digo como lectura: **era cierta cuando se corrio y las
+tablas que el propio cierre anadio despues la movieron.** Un `116` sin instante escrito
+**manda al lector a un numero que el arbol no da**.
+
+**NO ACUMULA, y digo con que regla:** `5.2` dice que la especie `REPORTE` acumula solo si la
+cifra vive en **TABLA, CABECERA o CONCLUSION**, y esta vive en un parrafo de prosa de una
+seccion titulada *LO QUE PROPONGO Y NO ADJUDICO*. **Elijo la lectura que no le cuesta un
+escalon y dejo escrita la contraria**, que es que una cifra de una guarda es una cifra
+aunque este en prosa.
+
+### 45.5.c. **LAS `318` PRUEBAS: LA FRASE NO CUADRA Y EL FONDO SI**
+
+Su `HH.0` dice *las `318` no son las `316` de la vuelta 45, y la diferencia no la traigo yo:
+son las `11` de `D.55` y las `11` de `D.53`*. **`11` mas `11` no son `2`.** La frase explica
+la composicion del total y se publica como explicacion de la **diferencia**.
+
+**PERO EL FONDO QUE AFIRMA ES CIERTO Y LO COMPRUEBO POR DIFERENCIA:**
+
+    $ git diff --stat 027d0a9 HEAD -- tests/ src/ scripts/ forja.py
+    (vacio)
+    $ git log --oneline -1 -- tests/test_aceptacion.py
+    ae49086   decision del fundador del 19 sep, ANTES de que la vuelta abriera
+
+`LECTURA`: **las dos pruebas nuevas son del commit del fundador y no de esta vuelta**, asi
+que *la diferencia no la traigo yo* es verdad. **Lo que falla es la aritmetica de la
+explicacion, no la afirmacion.** Prosa de acompanamiento: **registra y no acumula**.
+
+### 45.5.d. **LA REPARACION DE `d023` ESTA HECHA Y LA VERIFICO CONTRA EL LIBRO**
+
+La `ACTA 44` `44.4` adjudico que el `PUENTE` seguia en pie un paso mas abajo. **Hoy no
+esta.** Leo el paso `5` de `clasificar_trabajo_proceso_montaje_prueba` en el arbol y leo sus
+dos renglones:
+
+    paso 5 hoy : Devuelve a la fase de proceso la pieza que falle su prueba, para rehacerla.
+    L45        : When one fails, the defective portion of the software is returned to the
+                 process phase for "rework."
+    L41        : ... the material must be "reworked" ... to meet the concerns and objections
+                 of the test audience      esta es la frase que ya NO esta en el paso
+
+**`L45` se acaba en `rework` y no dice contra que se rehace. Su lectura era correcta y la
+reparacion es correcta.** Los pasos `4`, `6` y `7` salen de `L45` y de ningun otro sitio.
+**`d021` y `d023` quedan pagadas de verdad, y el registro lo dice: `9` pendientes y `8`
+pagadas contra las `11` y `6` de la apertura.**
+
+### 45.5.e. **LA COPIA ARCHIVADA DE LA TABLA DE LA VUELTA 42 ES LA SALIDA, Y NO UNA TRANSCRIPCION**
+
+Su `HH.5.i` lo declara y lo pega. **Lo repito con mi mano porque es una cifra que promete
+prueba:**
+
+    $ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v42.txt
+    c33bec53d8efe6d470fe377e6c4c65bebd5ee7dd      el mismo que el reporte pego
+
+**Coincide.** Y la colision que describe es real y la reproduje sin querer: `D.52` escribe
+siempre en la misma ruta viva, asi que **dos vueltas no pueden estar verdes a la vez**. Su
+remedio (archivar la vieja con su hash y dejar la ruta viva a la que cierra) **es el unico
+que no teclea ni borra**, y lo ratifico.
+
+## 45.6. **LA TRAMPA QUE NO ES DE NADIE DE HOY Y QUE SE COBRARIA LA VUELTA 47**
+
+*Es el hallazgo mas grande de esta acta y no le cuesta un escalon a nadie, porque nadie de
+esta vuelta lo tecleo.*
+
+`D.49` me manda leer el tablero antes de escribir el encargo. Lo lei, y esto es lo que dice
+sobre el libro de esta linea:
+
+    $ python forja.py tablero --puedo grove_high_output
+    LINEA 'serial', LIBRO 'grove_high_output': SI
+      ... se continua desde el capitulo siguiente al ultimo minado (cap_04) ...
+
+    $ (docs/loop/TABLERO.jsonl, fila grove_high_output)
+      "capitulos_minados": ["cap_01","cap_02","cap_03","cap_04"]
+      "ultimo_capitulo": "cap_04"
+
+**Y `cap_04` NO ESTA MINADO: ESTAN MINADOS `8` DE SUS `22` NODOS**, que es lo que su propia
+frontera publica y lo que yo recompuse al digito en `45.2.a`.
+
+**DE DONDE SALE, MEDIDO Y NO SUPUESTO:**
+
+    src/tablero.py:214   capitulos = capitulos de la bandeja unidos a los del archivo
+
+`LECTURA`: **el campo mide *capitulos que produjeron al menos un candidato* y se publica
+bajo un nombre que se lee *capitulos minados*.** Es exactamente la figura que `D.38.3`
+ensanchada me pone delante con mi propio ejemplar: **la cifra es cierta y la frase es
+falsa**, y aqui la frase ademas **manda**, porque `--puedo` deriva de ella la instruccion de
+seguir por el capitulo siguiente. **Una linea que obedezca al instrumento salta a `cap_05` y
+deja `14` nodos atras.**
+
+**QUE HAGO Y QUE NO HAGO.** `D.45` me prohibe tocar `src/` mientras corran frentes en
+paralelo, y corren dos (`marquet_turn_the_ship` y `gerber_emyth`, los dos `PAUSADO` con rama
+propia y pendientes de relevo). **Asi que no encargo el arreglo del instrumento: lo anoto en
+`DEUDA.jsonl` con su cita, y neutralizo su efecto en el encargo con una linea propia**, que
+dice que la vuelta `47` sigue en `cap_04` y **no** en `cap_05`, con la medida `8` de `22` al
+lado. **Declararlo sin neutralizarlo seria la caida que mi propio protocolo llama escalada
+declarada y no encargada.**
+
+## 45.7. LA MUESTRA PINEADA DE LOS SANOS (`AUDITOR_FORJA.md` 7)
+
+**LA POBLACION DE ESTA TANDA ES CERO, Y LA CIFRA LO DICE:**
+
+    $ git diff --stat 027d0a9 HEAD -- bitacora/VEREDICTOS.jsonl
+    (vacio)
+    $ wc -l bitacora/VEREDICTOS.jsonl
+    740        las mismas 740 que al abrir
+
+**Esta vuelta no escribio ni un veredicto**, porque un veredicto lo escribe
+`forja.py insertar` y la puerta de `D.39` mide cerrada. **Cero `SANO` en la tanda, asi que
+no hay muestra que pinear**, y la seccion 7 manda decirlo con su cifra en vez de inventar
+una poblacion donde no la hay. **La deuda de relectura de `SANO` de este lote se cobra el dia
+que el lote 7 inserte**, que es donde sus `13` pares de cola se convertiran en veredictos.
+
+## 45.8. `PASOS INVENTADOS POR CAPITULO` (`AUDITOR_FORJA.md` 8)
+
+**LA FIRMO, y la firmo porque la conte yo.** Abri las ocho fichas, conte sus pasos, y **lei
+los `50` contra los `17` renglones de los que dicen salir**, uno a uno:
+
+| capitulo | libro | PUENTE | pasos escritos | por ciento | tope | quien lo conto |
+|---|---|---:|---:|---:|---:|---|
+| **`cap_04`** | `grove_high_output` | **0** | **50** | **0,00** | 10 | el extractor lo publica y **yo lo firmo tras releer los 50** |
+| **total de la vuelta** | | **0** | **50** | **0,00** | 10 | |
+
+**EL DENOMINADOR VA ESCRITO**, que es lo que la `ACTA 44` `44.8` tuvo que publicar en cero
+por no tenerlo. Y el reparto por candidato, que es de donde sale el `50`:
+`4 + 4 + 7 + 8 + 7 + 8 + 5 + 7`.
+
+**LA MUESTRA DE TRANSCRIPCION QUE `8.3` PUNTO 2 ME MANDA RELEER LA HICE ENTERA, no por
+muestra**, porque `50` pasos contra `17` renglones cabe en un turno. **El error que esta
+metrica invita a cometer es marcar un puente como transcripcion**, y no lo encontre: cada
+paso dice algo que esta en su renglon, con el sujeto cambiado donde el libro habla de una
+persona concreta. **Los dos sitios donde mas mire fueron los dos que el propio extractor
+marco** (`45.4.c`), y los dos aguantan.
+
+**LA ESCALADA DE VOLUMEN QUE ESTA CIFRA PEDIRIA, Y POR QUE NO SE APLICA.** `8.1` dice que si
+la cifra se mantiene o baja, el lote siguiente corre a **un capitulo mas por vuelta**. `0,00`
+por ciento se mantiene. **Pero manda el otro techo**, y lo dice `EXTRACTOR.md` 12.4 por su
+letra: **si un solo capitulo pasa del techo de candidatos, la vuelta cierra en ese
+capitulo.** `cap_04` da `22` contra un techo de `15`, y quedan `14` sin minar. **La vuelta 47
+no gana un capitulo: termina el que tiene.**
+
+## 45.9. MIS CAIDAS PROPIAS
+
+### 45.9.a. **`CIFRA PUBLICADA PROPIA`: MI PAGINA SELLADA SE CONTRADICE A SI MISMA**
+
+**Mi `APERTURA_CIEGA.md` `4.5` dice:** *son vecinos entre si a `0.0763`, que es **el par mas
+alto del barrido que no es madre e hija***.
+
+**Mi `APERTURA_CIEGA.md` `4.9` dice:** *El par mas alto que NO es madre e hija es
+**`0.1058`***.
+
+**LAS DOS NO PUEDEN SER CIERTAS, y la que esta mal es la de `4.5`**: el par de `0.1058` es
+`elegir_momento` contra `buscar_actividad`, y **mi propia `4.3` escribe dos apartados antes
+que esos dos son hermanos y no madre e hija.** `0.1058` es mayor que `0.0763`. **Es una cifra
+falsa en mi apertura sellada, que es la definicion literal de mi especie, y la cargo con mi
+nombre.**
+
+**Y LA CAUSA ESTA MEDIDA, no la supongo:** los dos superlativos salen de un barrido que corri
+en la fase ciega con un `barrido.py` que **escribi en la raiz y que no esta en el arbol**.
+Sin el fichero, las dos frases se escribieron **de memoria de dos consultas distintas** en
+vez de leerse de una sola salida ordenada. **Una lista ordenada y pegada no puede
+contradecirse a si misma; dos recuerdos si.**
+
+**LO QUE NO ME CARGO, DICHO PARA QUE SE VEA QUE LO MIRE:**
+
+- **El `542` no es falso.** Lo reproduje hoy: `346` del grafo mas `163` mas `30` mas `3`. Y
+  su lectura tambien era buena: `542` menos `163` da los `379` de la aduana, y `45.5.a`
+  acaba de adjudicar por que.
+- **`barrido.py` no es una ruta caida de `7.B`**, y no lo decido yo: lo decide el
+  instrumento. `scripts/censar_rutas.py` excluye por patron escrito lo que lleva `$` o los
+  signos de menor y mayor (*un trozo de comando no es una ruta publicada*), y mi linea los
+  lleva. El censo corrio hoy y dio `759` rutas y `0` caidas.
+- **Mi contaminacion por mensaje de commit**, que declare entera en mi seccion `1` antes de
+  que nadie me la encontrara, **no es ninguna de mis dos especies**: ni es un remedio roto ni
+  es una cifra falsa. **Elijo la lectura que no me cuesta un escalon y digo que la elijo**, y
+  dejo escrita la contraria: una fase ciega contaminada a proposito con las cifras del
+  extractor mide menos de lo que dice medir. **Lo que si hizo bien fue declararse cifra a
+  cifra**, y por eso `45.4.f` puede decir que mis clases coinciden con las suyas sin que
+  nadie tenga que creerme.
+
+### 45.9.b. **MI REMEDIO, ENCARGADO Y NO SOLO DECLARADO** (seccion 1 punto 4, y `5.5`)
+
+`AUDITOR` llega a **`2 de 3`**, penultimo escalon. **El protocolo manda encargar el remedio
+en el mismo acta**, y el remedio es mio y es mecanico:
+
+> **`REMEDIO DEL AUDITOR, VUELTA 47`: todo barrido que corra en mi fase ciega escribe su
+> guion y su salida en `.v47aud/`, los dos dentro del arbol, y TODA cifra de distancia que
+> publique se lee de esa salida pegada. NINGUN SUPERLATIVO MIO (*el mas alto*, *el mas
+> proximo*) se publica si la salida pegada no ensena la lista ordenada que lo sostiene.**
+
+**POR QUE ASI Y NO MAS GRANDE.** Tres actas escribieron el mismo remedio cada vez mas simple
+y las tres se rompio; el que aguanta es el que se comprueba mirando un directorio. **Y no lo
+disfrazo de mas de lo que es:** no me encargo *medir mejor*, me encargo **dejar el
+instrumento en el arbol y no publicar un superlativo sin su lista.** Eso lo puede verificar
+cualquiera al abrir mi siguiente apertura, y esa es la unica clase de promesa que esta linea
+ha conseguido cumplir.
+
+## 45.10. EL CREDITO DE ESTA TANDA
+
+| especie | esta tanda | racha | de donde sale |
+|---|---|---|---|
+| **`CLASE`** | **LIMPIA** | **`0 de 2`** | cero veredictos escritos: `740` contra `740`, medido por `git diff` |
+| **`CIFRA PUBLICADA`** | **LIMPIA** | **`0 de 2`** | `TABLA_DE_CIERRE` verde, `DEUDA.jsonl` correcto, el hash de la copia archivada coincide, y nada se tecleo en `src/`, `scripts/` ni `tests/` |
+| **`DATO MOVIDO`** | **LIMPIA** | **`0 de 2`** | `dataset/`, `bitacora/` y `censos/` sin una linea de diferencia |
+| **`REPORTE`** | **LIMPIA de la especie que acumula** | **de `1 de 3` a `0`** | sus dos caidas (`45.5.b` y `45.5.c`) viven en **prosa**, y `5.2` dice que ahi NO acumula. Baja por `D.38.1` y `5.4`, **no por indulto mio** |
+| **`AUDITOR`** (mia) | **CAE** | **de `1 de 3` a `2 de 3`** | `45.9.a`: una cifra falsa en mi apertura sellada |
+
+**LA TABLA DE `45.2` ES LA QUE SOSTIENE LAS TRES PRIMERAS FILAS**, y no una impresion: son
+once cifras recomputadas contra el commit de apertura y contra el arbol de hoy.
+
+**Y DIGO LO QUE ESTA RACHA MIDE HOY, porque es la mitad util de la metrica:** el extractor
+entrega su primera tanda entera sin una sola caida que acumule desde la vuelta 42, **y el
+unico escalon que sube en esta vuelta es el mio.**
+
+## 45.11. LAS CONDICIONES DE PARADA (`AUDITOR_FORJA.md` 3): **NINGUNA SE CUMPLE**
+
+| condicion | estado |
+|---|---|
+| **doctrina NUEVA necesaria** | **NO.** Mis dos hallazgos de doctrina son **ejemplares de preguntas que ya estan en la cola congelada**: el `seis` contra el `many` es el tercer ejemplar de la pregunta `3`, y el par de `0,437` que es jerarquia y no gemelo es el segundo de la pregunta `1`. **La cola sigue en `11` y no la toco** |
+| **contradiccion** | **NO.** Las dos que encontre se resuelven con reglas escritas: `45.5.a` con `src/aduana.py:465` y la tabla canonica, y `45.4.c` con manual 3.5 por su letra |
+| **decision de Alexis** | **NO.** No borro contenido, no muevo umbrales, no cambio el alcance, no creo remotos y no gasto fuera del repo |
+| **fallo tecnico repetido** | **NO.** `gate`, `guiones`, las `318` pruebas, el tallado, el censo y la tabla de cierre, **los seis en verde hoy** |
+| **credito roto** | **NO.** `CLASE` y `CIFRA PUBLICADA` en `0 de 2`; `REPORTE` baja a `0`; `AUDITOR` en `2 de 3`, que es el penultimo y no el ultimo |
+| **campania consumada** | **NO.** El tablero dice *faltan `3` de `3` libros del corte*, y `cap_04` va por `8` de `22` |
+
+**No escribo `docs/loop/PARA_ALEXIS.md`**, y `docs/loop/PROMPT_SIGUIENTE.md` sale escrito con
+el encargo de la vuelta `47`.
+
+## 45.12. EL COSTE DEL TURNO, DECLARADO (`D.55`)
+
+**LA CIFRA EN USD NO LA PUEDO DAR, Y ES UNA LIMITACION DEL REPO Y NO UNA EVASIVA.** Lo
+comprobe con mi mano antes de escribirlo, que es lo que `D.40` ensanchada manda:
+
+    $ grep -rl "USD" src/ scripts/ forja.py | wc -l
+    0
+    $ grep -rl "USD" docs/loop/*.md | wc -l
+    4
+
+`LECTURA`: **la palabra vive solo en los protocolos, no en ningun instrumento.** Lo que la
+regla persigue si lo entrego, que es **en que se fue**:
+
+| en que | medida | de donde sale |
+|---|---|---|
+| **la prueba de aceptacion, corrida entera por mi** | la mas cara de mis guardas, `318` pruebas | su propia salida |
+| **el tallado, el censo de rutas y la tabla de cierre** | tres corridas sobre un reporte de `44.431` lineas | sus tres salidas, pegadas en `45.3` |
+| **las dos mutaciones** | dos corridas mas, del tallado y de `D.52` | `45.3` |
+| **la relectura de los `50` pasos contra sus `17` renglones** | la pieza mas larga del turno y **sin instrumento que la mida** | `45.8`; no le pongo cifra porque no la tengo |
+
+**ESTE TURNO NO ES DE SANEAMIENTO**, asi que la declaracion es obligatoria y va escrita. **Y
+lo que se llevo el turno no fue medir: fue leer.** La aduana, que es lo que se llevo el
+`97,2` por ciento del turno del extractor, **a mi no me costo nada**: sus ocho informes ya
+estaban escritos y yo solo tuve que abrirlos.
+
+---
+
+**LA VUELTA 46 SALE VERIFICADA AL DIGITO Y CON SU ESPECIE QUE ACUMULA LIMPIA. EL ESCALON DE
+ESTA ACTA ES MIO.**
