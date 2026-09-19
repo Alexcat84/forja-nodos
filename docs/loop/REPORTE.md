@@ -44594,3 +44594,71 @@ puerta de `D.39` la volvi a medir en `II.0`: **cerrada**.
 | tarea | que pide | estado |
 |---|---|---|
 | `II.1` | los registros de la `ACTA 45` | **CERRADA**: la correccion del `116` escrita al lado del texto viejo con el instrumento de hoy (`115`), las tres deudas nuevas nombradas con su motivo de no pago, y `d024` dicha y no abierta |
+
+## II.2. TAREA 2. **`cap_04` SIGUE ABIERTO: LOS OCHO SIGUIENTES, CADA UNO POR SU ADUANA EN EL ACTO, CERO INSERCIONES**
+
+> **FILA EN CURSO.** Esta seccion se abre antes del primer candidato y crece candidato a
+> candidato, para que una vuelta cortada deje reporte parcial y nunca vacio
+> (`EXTRACTOR.md` 3).
+
+### II.2.a. **EL INSTRUMENTO MIENTE AQUI, Y LA LINEA QUE LO NEUTRALIZA** (`d028`)
+
+**Corro `tablero --puedo` y lo publico entero, incluida la frase que no obedezco**, que es
+lo que el encargo manda hacer con `d028`:
+
+<!-- TALLADO: parcial salida=.v47/tablero_puedo.txt -->
+
+    $ python forja.py tablero --puedo grove_high_output
+    LINEA 'serial', LIBRO 'grove_high_output': SI
+      'grove_high_output' esta COSECHADO y sin dueno: su trabajo ya llego a esta rama, asi que
+      se continua desde el capitulo siguiente al ultimo minado (cap_04), citando su frontera. D.50.
+
+**NO SALTO A `cap_05`.** El campo `capitulos_minados` mide *capitulos que produjeron al menos
+UN candidato* y se lee como *capitulos minados*: `cap_04` esta en `8` de sus `22` nodos.
+**Obedecer al instrumento aqui dejaria `14` nodos atras.** `D.45` prohibe tocar `src/` con dos
+frentes en paralelo, asi que lo que hago es esta linea y no un arreglo de codigo.
+
+### II.2.b. **LA FRONTERA NO SE RECOMPUTA: SE CITA POR SU SEDE** (`D.50`)
+
+**`cap_04` ya tiene su frontera cerrada al digito en la vuelta 46**, y el auditor la
+recompuso tramo a tramo y le salio la misma (`ACTA 45`). **No la vuelvo a correr**: la cito, y
+los ocho tramos de hoy salen de ella.
+
+<!-- TALLADO: parcial salida=.v47/frontera_heredada.txt -->
+
+    $ grep -n "8846" docs/loop/REPORTE.md | head -4
+    43911:    suma de las filas                      : 8846 palabras
+    43912:    cuerpo medido aparte                   : 8846 palabras
+    43919:**CIERRA AL DIGITO Y SE CRUZA CON `wc -w`:** `8846` de cuerpo mas `25` de cabecera son los `8871`
+
+### II.2.c. **LOS RENGLONES DE ESTA TANDA, CON SU `sed` PEGADO** (`D.35`)
+
+*Salida de `python .v47/citas.py`, que abre el fichero del libro e imprime el renglon
+entero. La cita se pega, no se promete.*
+
+<!-- TALLADO: script=.v47/citas.py salida=.v47/citas.txt -->
+| # | tramo | linea | la salida de `sed -n '<n>p'`, pegada y cortada a 82 | de que candidato es |
+|---:|---|---:|---|---|
+| 1 | `P21` | L219 | `219:Leverage can also be negative. Some managerial activities can reduce the output of` | `detectar_palanca_negativa_actividad_mando` |
+| 2 | `P24` | L231 | `231:Examples of high negative leverage abound. After going through the annual planning` | `detectar_palanca_negativa_actividad_mando` |
+| 3 | `P24` | L233 | `233:Both the depressed and the waffling manager can have virtually unlimited negative ` | `detectar_palanca_negativa_actividad_mando` |
+| 4 | `P24` | L235 | `235:Managerial meddling is also an example of negative leverage. This occurs when a su` | `detectar_palanca_negativa_actividad_mando` |
+| 5 | `P27` | L243 | `243:DELEGATION AS LEVERAGE` | `delegar_tarea_base_comun_seguimiento` |
+| 6 | `P27` | L245 | `245:Because managerial time has a hierarchy of values, delegation is an essential aspe` | `delegar_tarea_base_comun_seguimiento` |
+| 7 | `P27` | L247 | `247:Picture this. I am your supervisor, and I walk over to you with pencil in hand and` | `delegar_tarea_base_comun_seguimiento` |
+| 8 | `P27` | L249 | `249:Given a choice, should you delegate activities that are familiar to you or those t` | `delegar_tarea_base_comun_seguimiento` |
+| 9 | `P29` | L253 | `253:Monitoring the results of delegation resembles the monitoring used in quality assu` | `supervisar_tarea_delegada_etapa_menor_valor` |
+| 10 | `P29` | L255 | `255:To use quality assurance principles effectively, the manager should only go into d` | `supervisar_tarea_delegada_etapa_menor_valor` |
+| 11 | `P30` | L257 | `257:Making certain types of decisions is something managers frequently delegate to sub` | `supervisar_decision_delegada_preguntas_concretas` |
+| 12 | `P32` | L267 | `267:These time-management suggestions can be improved upon, I think, by applying our p` | `identificar_paso_limitante_jornada_desfases` |
+| 13 | `P33` | L269 | `269:A second production principle we can apply to managerial work is batching similar ` | `agrupar_tareas_semejantes_aprovechar_preparacion` |
+| 14 | `P33` | L271 | `271:Set-up time has many parallels in managerial work. For example, once we have prepa` | `agrupar_tareas_semejantes_aprovechar_preparacion` |
+| 15 | `P34` | L273 | `273:What makes running a factory different from running a job shop? The latter is prep` | `usar_calendario_herramienta_planificacion_produccion` |
+| 16 | `P34` | L275 | `275:What is the medium of a manager's forecast? It is something very simple: his calen` | `usar_calendario_herramienta_planificacion_produccion` |
+| 17 | `P34` | L277 | `277:Another production principle can be applied here. Because manufacturing people tru` | `decir_no_trabajo_excede_capacidad` |
+| 18 | `P34` | L279 | `279:To use your calendar as a production-planning tool, you must accept responsibility` | `usar_calendario... y decir_no... (la cabecera que numera las dos)` |
+| 19 | `P34` | L281 | `281:1. You should move toward the active use of your calendar, taking the initiative t` | `usar_calendario_herramienta_planificacion_produccion` |
+| 20 | `P34` | L283 | `283:2. You should say "no" at the outset to work beyond your capacity to handle.` | `decir_no_trabajo_excede_capacidad` |
+| 21 | `P34` | L285 | `285:It is important to say "no" earlier rather than later because we've learned that t` | `decir_no_trabajo_excede_capacidad` |
+
+renglones citados: 21, de 8 tramos distintos

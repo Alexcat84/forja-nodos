@@ -1,0 +1,5 @@
+    $ grep -n "8846" docs/loop/REPORTE.md | head -4
+43725:| `HH.2` | la frontera de `cap_04` cerrada contra el cuerpo, y la heredada de `cap_03` citada por su sede | **CERR
+43911:    suma de las filas                      : 8846 palabras
+43912:    cuerpo medido aparte                   : 8846 palabras
+43919:**CIERRA AL DIGITO Y SE CRUZA CON `wc -w`:** `8846` de cuerpo mas `25` de cabecera son los `8871`

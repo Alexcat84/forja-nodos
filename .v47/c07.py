@@ -1,0 +1,68 @@
+# -*- coding: utf-8 -*-
+import json, io
+
+d = {
+ "id": "usar_calendario_herramienta_planificacion_produccion",
+ "titulo": "Usar el calendario como herramienta de planificacion de produccion y no como deposito de encargos ajenos",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [{"clave": "grove_high_output", "fecha": "2026-09-19"}],
+ "denominaciones": {
+   "nombre_largo": "El calendario como medio del pronostico de un mando: pronosticar lo que se puede pronosticar, y tomar la iniciativa de llenar los huecos entre los pasos limitantes de la jornada",
+   "sigla": "",
+   "otros_idiomas": [
+     {"idioma": "ingles", "termino": "production planning tool"},
+     {"idioma": "ingles", "termino": "mindless passivity"},
+     {"idioma": "ingles", "termino": "job shop"}
+   ]
+ },
+ "condiciones_activacion": "Cuando tu calendario se llena solo con lo que otros te encargan y tu jornada de mando se te vuelve fragmentada.",
+ "entregable_esperado": "Un calendario usado de forma activa como herramienta de planificacion, con el trabajo que no es critico en tiempo ya colocado por iniciativa tuya en los huecos que dejan los pasos limitantes de la jornada.",
+ "pasos_accionables": [
+   "Deja de llevar tu trabajo como un taller a pedido, que atiende a cualquier cliente que entra, y llevalo como una fabrica, que se rige por pronostico y no por el pedido individual.",
+   "Cuenta con que una gran parte del trabajo de mando se puede pronosticar.",
+   "Pronostica las cosas que puedas y preparate para hacerlas, que es sentido comun y es una via importante para reducir la sensacion y la realidad de fragmentacion del trabajo de mando.",
+   "Usa como medio de ese pronostico algo muy simple: tu calendario.",
+   "Deja de usarlo como el deposito de los encargos que llegan, donde alguien lanza un encargo para tu tiempo y aparece solo en tu calendario, porque eso es pasividad sin cabeza.",
+   "Usalo en cambio como herramienta de planificacion de produccion, tomando una iniciativa firme para programar el trabajo que no es critico en tiempo entre los pasos limitantes de la jornada.",
+   "Acepta para ello la primera de las dos responsabilidades que el libro numera: ve hacia un uso activo de tu calendario, tomando la iniciativa de llenar los huecos entre los acontecimientos criticos en tiempo con actividades que no lo son y que sin embargo son necesarias."
+ ],
+ "resumen_teorico": (
+  "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_04.md, unidad Cap. 3, titulo textual Managerial Leverage. "
+  "Sale de la PIEZA P34 de la frontera publicada en la vuelta 46 (HH.2.c), L273 a L285, 469 palabras. "
+  "FRONTERA DENTRO DEL TRAMO, PUBLICADA ANTES DE CORTAR (EXTRACTOR.md 10), porque P34 da DOS nodos y esta ficha es el primero: "
+  "de este nodo son L273 (el pronostico y la fabrica contra el taller a pedido), L275 (el calendario como medio del pronostico y como herramienta de planificacion), la cabecera de L279 (las dos responsabilidades) y L281 (la responsabilidad 1). "
+  "Del otro nodo, decir_no_trabajo_excede_capacidad, son L277 (el no de salida y los indicadores de capacidad), la misma cabecera de L279, L283 (la responsabilidad 2) y L285 (por que antes y no despues). "
+  "Los dos nodos comparten SOLO la cabecera de L279, que es la frase que los numera, y ninguna otra linea: cero solapes de contenido. "
+  "POR QUE ES PROCEDIMIENTO: el libro pone SU PROPIO INVENTARIO de los actos, nombrados uno a uno (run by forecast and not by individual order, forecasting those things you can and setting yourself up to do them, use his calendar as a production planning tool, taking a firm initiative to schedule work that is not time-critical between those limiting steps, y la responsabilidad numerada 1). "
+  "Es inventario de MEDIOS y de OBJETOS DE TRABAJO y no de metas, y el criterio no es un adjetivo de adecuacion: el libro dice exactamente que se coloca (lo no critico en tiempo) y exactamente donde (entre los pasos limitantes). "
+  "DE DONDE SALE CADA PASO, uno a uno: paso 1 (L273: What makes running a factory different from running a job shop? The latter is prepared to service any customer who drops in... A factory, on the other hand, is usually run by forecast and not by individual order); "
+  "paso 2 (L273: From my experience a large portion of managerial work can be forecasted); "
+  "paso 3 (L273: Accordingly, forecasting those things you can and setting yourself up to do them is only common sense and an important way to minimize the feeling and the reality of fragmentation experienced in managerial work); "
+  "paso 4 (L275: What is the medium of a manager forecast? It is something very simple: his calendar); "
+  "paso 5 (L275: Most people use their calendars as a repository of orders that come in. Someone throws an order to a manager for his time, and it automatically shows up on his calendar. This is mindless passivity); "
+  "paso 6 (L275: To gain better control of his time, the manager should use his calendar as a production planning tool, taking a firm initiative to schedule work that is not time-critical between those limiting steps in the day); "
+  "paso 7 (L279 y L281: To use your calendar as a production-planning tool, you must accept responsibility for two things: 1. You should move toward the active use of your calendar, taking the initiative to fill the holes between the time-critical events with non-time-critical though necessary activities). "
+  "RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. "
+  "LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: NO escribo COMO se pronostica ni con que horizonte, porque el libro no lo dice; "
+  "NO escribo cuanto hueco se deja ni con que antelacion se llena, porque no hay ni cifra ni periodo en el tramo; "
+  "y NO traigo aqui la segunda responsabilidad, que tiene nodo propio en esta misma vuelta. "
+  "ARISTAS DECLARADAS POR LECTURA, para cablearlas el dia de la insercion y no hoy: "
+  "(1) D.37, CABEZA subir_productividad_gerencial_tres_vias, paso 2 (sube el ritmo), que es la via de la que cuelgan los principios de produccion de este tramo del libro. "
+  "(2) D.29, MADRE identificar_paso_limitante_jornada_desfases, porque el paso 6 de este nodo manda colocar el trabajo no critico ENTRE los pasos limitantes, y quien los identifica es aquel nodo: sin el, este paso no se puede ejecutar. "
+  "(3) D.29, HERMANO decir_no_trabajo_excede_capacidad, que es la otra responsabilidad de la misma frase numerada de L279. La arista es de hermandad declarada y no de jerarquia: el libro las pone al mismo nivel, numeradas 1 y 2. "
+  "TRADUCCION DECLARADA: production planning tool, mindless passivity y job shop viajan en denominaciones. "
+  "DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO, Y ES EL MISMO QUE LA VUELTA 46 YA SE MARCO A CIEGAS EN HH.5.f, AHORA CON EL NODO DELANTE: "
+  "el libro numera DOS responsabilidades en L279 y yo doy DOS nodos al tramo P34, pero NO reparto una responsabilidad por nodo: meto la responsabilidad 1 como paso 7 de este nodo y le doy casa propia solo a la 2. "
+  "Si la primera responsabilidad acabara mereciendo casa propia, este nodo seria una COMPRESION DE DOS y el manual 3.4 lo prohibe expresamente (un nodo por paso mas una cabeza, jamas dos compresiones de la misma numeracion). "
+  "Lo sostengo con la medida del propio libro delante: la responsabilidad 1 ocupa UNA frase (L281) y no tiene ni un renglon que la despliegue, mientras que la 2 tiene L277 entero antes y L285 entero despues, o sea dos tramos de desarrollo propio. "
+  "Un nodo hecho solo con L281 seria la frase del libro repetida en imperativo, que es la definicion de NOMBRAR NO ES PROCEDIMENTAR. Si cae, cae DENTRO de mi marcado, y el remedio no es partir este nodo: es que la cabeza de la numeracion sea este mismo nodo con sus dos partes cableadas."
+ )
+}
+
+io.open('cuarentena/grove_high_output/usar_calendario_herramienta_planificacion_produccion.json', 'w', encoding='utf-8', newline='\n').write(json.dumps(d, ensure_ascii=False, indent=2) + '\n')
+print('escrito')
