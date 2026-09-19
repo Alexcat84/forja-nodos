@@ -196,3 +196,4 @@
 {"cae": true, "cita": "ACTA 43 43.4.a", "especie": "CIFRA PUBLICADA", "linea": "serial", "racha": "1 de 2", "tanda": "ACTA 43", "tipo": "tanda", "vuelta": 44}
 {"cae": true, "cita": "ACTA 43 43.9.a", "especie": "AUDITOR", "linea": "serial", "racha": "3 de 3", "tanda": "ACTA 43", "tipo": "tanda", "vuelta": 44}
 {"cae": false, "cita": "ACTA 43, seccion 43.10", "especie": "REPORTE", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 43", "tipo": "tanda", "vuelta": 44}
+{"cita": "docs/loop/paradas/2026-09-18-arista-py-y-la-ciega-sin-registro-DECISION.md, punto 3", "especie": "AUDITOR", "linea": "serial", "motivo": "reinicio con la condicion mecanica que el propio auditor propuso y que ya esta puesta: D.57, loop.log deja de retirarse y el prompt de la ciega trae su linea de retirados", "racha": "0 de 3", "tipo": "reinicio"}

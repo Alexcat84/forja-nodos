@@ -3096,3 +3096,65 @@ las demas** y el registro dejaria de poder explicar por que le toco a esa.
 > de dato lo exija con su cita.**
 
 **Sesenta y cuatro reglas en veinte dias son suficientes para insertar `21` nodos.**
+
+---
+
+## D.57. LA FASE CIEGA SABE QUE NO VE (18 sep 2026, decision del fundador)
+
+*Decision del fundador del 18 sep 2026, punto 3, sobre la parada de la vuelta 44. **El
+numero lo asigna esta sesion**, que es como se hace desde la decision de hoy: el fundador
+dicta sin numero.*
+
+### La caida que la obliga, y la conto el propio caido
+
+El auditor de la `ACTA 43` publico, **en su apertura ciega sellada y repetido en celda de
+tabla**, que `docs/loop/CREDITO_serial.jsonl` se retira **y que nadie lo declaro**. Es
+falso, y lo desmentia un registro que existia mientras el lo escribia:
+
+    $ grep -n "APERTURA CIEGA.*retirados" docs/loop/loop.log | tail -1
+    [2026-09-18 21:22:25] VUELTA 3 : APERTURA CIEGA, retirados: REPORTE.md
+          loop.log ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+
+**El arnes lo venia declarando en la linea de su propio turno desde el 17 sep.** Y el no
+tenia con que mirarlo: **`loop.log` era uno de los retirados.** Se retiraba **el registro
+que dice que se retira.**
+
+> **EL NO SE EXCUSO CON ESO, Y ESA ES LA PARTE QUE HAY QUE LEER:** *ese es exactamente el
+> motivo de la regla. La frase que si podia escribir era de una linea: no puedo comprobar
+> si el arnes lo declara, porque `loop.log` es uno de los retirados.* **Elegi la afirmacion
+> en vez de la limitacion.**
+
+**Fue la tercera de tres tandas seguidas de la misma familia** (`ACTA 41`, `42` y `43`):
+**publicar sin comprobar**. Su racha propia llego a `3 de 3` y el bucle se detuvo.
+
+### La letra
+
+> **`loop.log` NO SE RETIRA EN LA FASE CIEGA.** Es **registro del arnes, no del
+> extractor**, y sin el la ciega **no puede comprobar que se le retiro**.
+>
+> **Y EL ARNES PEGA EN EL PROMPT DE LA FASE CIEGA LA LINEA LITERAL DE `retirados:` DE ESE
+> MISMO TURNO.**
+
+**LAS DOS MITADES HACEN FALTA, y la segunda no es adorno:** mientras `loop.log` se
+retiraba, **las lineas del arnes de esa ventana iban a un fichero provisional**, asi que
+dejar el fichero en su sitio sin quitar ese desvio **habria arreglado la mitad**: el
+fichero estaria, y la linea de ese turno no.
+
+### Lo que se pierde, y por que se acepta
+
+**`loop.log` dice lo que hizo el turno del extractor**, asi que **es una via de
+contaminacion** y por eso se retiraba desde `D.34.2`. Se acepta el cambio porque **es la
+unica sede donde la ciega puede verificar su propia premisa**, y el balance no esta
+reñido: **una ciega que no puede comprobar lo que afirma publica sin comprobar**, y eso ya
+costo tres tandas seguidas. **Una contaminacion posible pesa menos que una caida medida
+tres veces.**
+
+### Caso positivo, con claude falso
+
+**Escenario `17` de `tests/prueba_arnes.sh`.** Desde **dentro** de la fase ciega, el turno
+ciego abre `docs/loop/loop.log`, encuentra la linea de `retirados:` de su propio turno y lo
+deja escrito (`COMPROBADO_EN_LOG`); la prueba exige ademas que **no** aparezca
+`NO_PUEDO_COMPROBARLO`, y que el prompt traiga la linea literal y la orden de **escribir la
+limitacion** cuando algo no se pueda comprobar.
+
+**Negativo:** los otros tres siguen retirados, y el log lo dice con su nombre.

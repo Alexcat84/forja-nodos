@@ -1466,7 +1466,19 @@ class PruebaAristaDeclarada37(BaseForja):
         return cabeza, parte
 
     def _declarar(self, *extra):
-        return self.forja("arista", *extra)
+        """EL VEREDICTO VA POR DEFECTO AQUI, y solo aqui.
+
+        Desde `D.53` (18 sep 2026) `forja.py arista` **exige** `--veredicto` y su cita:
+        el veredicto lo emite la lectura, no la arista. Las pruebas de esta clase miden
+        OTRA cosa (el paso citado, la auto arista, el gate), asi que se les pone uno y
+        siguen midiendo lo suyo. **Lo que el argumento nuevo hace se prueba aparte**, en
+        `PruebaVeredictoYArista`, y alli no hay valor por defecto que valga.
+        """
+        argumentos = list(extra)
+        if "--veredicto" not in argumentos:
+            argumentos += ["--veredicto", "SANO",
+                           "--cita-veredicto", "la lectura de esta prueba"]
+        return self.forja("arista", *argumentos)
 
     def test_la_arista_se_declara_y_deja_su_paso_citado(self):
         cabeza, parte = self._cabeza_y_parte()
@@ -1488,7 +1500,14 @@ class PruebaAristaDeclarada37(BaseForja):
                       por_id["pedir_referencias_empleados"]["nodos_previos"])
 
         registro = comun.leer_jsonl(self.veredictos)[-1]
-        self.assertEqual(registro["veredicto"], "CONTINUA")
+        # ESTA LINEA EXIGIA "CONTINUA" HASTA EL 18 sep 2026, Y ERA LA ASERCION QUE
+        # CODIFICABA EL DEFECTO: `src/arista.py` tecleaba CONTINUA en toda arista
+        # declarada por lectura, y la prueba lo daba por bueno. `D.53` dice lo
+        # contrario, y el veredicto que se escribe es EL QUE LA LECTURA EMITIO: aqui,
+        # el que el ayudante `_declarar` pasa. Que sea SANO y la arista se escriba
+        # igual es justo lo que la regla afirma.
+        self.assertEqual(registro["veredicto"], "SANO")
+        self.assertEqual(registro["cita_del_veredicto"], "la lectura de esta prueba")
         self.assertEqual(registro["levantada_por"], ["lectura declarada"])
         self.assertEqual(registro["paso_citado"], 2)
         # LA LINEA CITADA VIAJA ENTERA: es lo que el auditor abre para verificar.
@@ -3492,6 +3511,144 @@ class PruebaCerrojoYCenso(BaseForja):
                 self.taller, "no_commiteado.jsonl")), [])
 
 
+class PruebaVeredictoYArista(BaseForja):
+    """EL VEREDICTO Y LA ARISTA SON PUERTAS DISTINTAS (D.53), EN EL CODIGO.
+
+    `src/arista.py` tecleaba `"veredicto": "CONTINUA"` en TODA arista declarada por
+    lectura. Eso escribio 93 lineas de bitacora/VEREDICTOS.jsonl, que es la sede de
+    CLASE, contra una regla que la casa ya tenia escrita. De esas 93, **79 no tenian
+    ninguna lectura detras**: el CONTINUA no era un juicio equivocado, era un valor por
+    defecto.
+    """
+
+    def _par(self):
+        cabeza = nodo_base(
+            "abastecer_flujo_candidatos",
+            titulo="Abastecerse de candidatos, con sus tres vias",
+            resumen_teorico="El flujo se llena antes de que haya plazas abiertas.",
+            pasos_accionables=["Abre el flujo antes de tener la plaza",
+                               "Pide referencias a tu equipo, que es la primera via",
+                               "Cierra el flujo cuando la plaza se cubra"])
+        parte = nodo_base(
+            "pedir_referencias_empleados",
+            titulo="Pedir referencias a los empleados",
+            resumen_teorico="Las referencias del equipo son la primera via del flujo.",
+            pasos_accionables=["Pregunta a cada persona por dos nombres",
+                               "Explica que buscas y para que puesto",
+                               "Agradece la referencia aunque no cuaje"])
+        return cabeza, parte
+
+    def _declarar(self, *extra):
+        return self.forja("arista", "--madre", "abastecer_flujo_candidatos",
+                          "--hijo", "pedir_referencias_empleados",
+                          "--paso", "2",
+                          "--razon", "el paso 2 de la madre nombra la via y el hijo "
+                                     "la despliega en tres pasos", *extra)
+
+    def _linea_escrita(self):
+        filas = comun.leer_jsonl(self.veredictos)
+        return filas[-1] if filas else {}
+
+    # ------------------------------------------- lo que D.53 manda, en sus dos casos
+
+    def test_caso_positivo_una_arista_sobre_un_par_SANO_deja_SANO(self):
+        """Si declararla lo convirtiera en CONTINUA, D.37 seria imposible: toda cabeza
+        de serie devoraria sus partes."""
+        self.escribir_dataset(list(self._par()))
+        codigo, salida = self._declarar("--veredicto", "SANO",
+                                        "--cita-veredicto", "ACTA 44, seccion 3.1")
+        self.assertEqual(codigo, 0, salida)
+        linea = self._linea_escrita()
+        self.assertEqual(linea["veredicto"], "SANO")
+        self.assertEqual(linea["cita_del_veredicto"], "ACTA 44, seccion 3.1")
+
+    def test_caso_negativo_un_CONTINUA_leido_sigue_CONTINUA(self):
+        self.escribir_dataset(list(self._par()))
+        codigo, salida = self._declarar("--veredicto", "CONTINUA",
+                                        "--cita-veredicto", "ACTA 44, seccion 3.2")
+        self.assertEqual(codigo, 0, salida)
+        self.assertEqual(self._linea_escrita()["veredicto"], "CONTINUA")
+
+    def test_y_la_arista_se_escribe_igual_en_los_dos_casos(self):
+        """El veredicto no decide si hay arista: son puertas distintas."""
+        self.escribir_dataset(list(self._par()))
+        self._declarar("--veredicto", "SANO", "--cita-veredicto", "x")
+        self.assertEqual(self._linea_escrita()["arista"],
+                         "abastecer_flujo_candidatos > pedir_referencias_empleados")
+
+    # ---------------------------------------------- y lo que NO se supone nunca
+
+    def test_caso_positivo_sin_veredicto_NO_se_escribe(self):
+        """Un valor por defecto es una lectura que nadie hizo: eso produjo las 79."""
+        self.escribir_dataset(list(self._par()))
+        codigo, salida = self.forja(
+            "arista", "--madre", "abastecer_flujo_candidatos",
+            "--hijo", "pedir_referencias_empleados", "--paso", "2",
+            "--razon", "una razon cualquiera que no se va a escribir")
+        self.assertNotEqual(codigo, 0)
+        self.assertEqual(comun.leer_jsonl(self.veredictos), [])
+
+    def test_caso_positivo_un_veredicto_que_no_existe_tampoco(self):
+        self.escribir_dataset(list(self._par()))
+        codigo, _salida = self._declarar("--veredicto", "REGULAR",
+                                         "--cita-veredicto", "x")
+        self.assertNotEqual(codigo, 0)
+
+    def test_caso_positivo_sin_cita_del_veredicto_tampoco(self):
+        """Un veredicto sin la lectura que lo emitio no se puede releer."""
+        from src import arista
+        resultado = arista.declarar("a", "b", 2, "razon", "SANO", "  ")
+        self.assertNotEqual(resultado.codigo, 0)
+
+    def test_los_tres_veredictos_son_los_de_la_casa(self):
+        from src import arista
+        self.assertEqual(set(arista.VEREDICTOS), set(["SANO", "CONTINUA", "REPITE"]))
+
+    # ------------------------------- y la reparacion de lo que ya estaba escrito
+
+    def test_la_reparacion_clasifica_contra_la_lectura_que_la_origino(self):
+        from scripts import readjudicar_aristas
+        lineas = [
+            {"candidato": "h", "vecino": "m", "veredicto": "SANO",
+             "operacion": "insercion"},
+            {"candidato": "h", "vecino": "m", "veredicto": "CONTINUA",
+             "operacion": "arista declarada por lectura (D.37)"},
+            {"candidato": "x", "vecino": "y", "veredicto": "CONTINUA",
+             "operacion": "arista declarada por lectura (D.37)"},
+        ]
+        plan = readjudicar_aristas.revisar(lineas)
+        self.assertEqual([(v, o) for _n, _l, v, o in plan],
+                         [("SANO", "leida SANO"),
+                          ("SIN LECTURA PROPIA", "sin lectura propia del par")])
+
+    def test_la_reparacion_NO_inventa_un_SANO_donde_no_hubo_lectura(self):
+        """Poner SANO ahi seria inventar una lectura que nadie hizo, que es el mismo
+        defecto en la otra direccion."""
+        from scripts import readjudicar_aristas
+        lineas = [{"candidato": "x", "vecino": "y", "veredicto": "CONTINUA",
+                   "operacion": "arista declarada por lectura (D.37)"}]
+        _n, _l, nuevo, _o = readjudicar_aristas.revisar(lineas)[0]
+        self.assertEqual(nuevo, readjudicar_aristas.SIN_LECTURA)
+
+    def test_la_reparacion_no_borra_el_valor_viejo(self):
+        from scripts import readjudicar_aristas
+        lineas = [{"candidato": "x", "vecino": "y", "veredicto": "CONTINUA",
+                   "razon": "la razon original", "operacion": "arista declarada por lectura"}]
+        readjudicar_aristas.aplicar(readjudicar_aristas.revisar(lineas), lineas)
+        self.assertEqual(lineas[0]["veredicto_original"], "CONTINUA")
+        self.assertIn("la razon original", lineas[0]["razon"])
+        self.assertIn("CORRECCION DECLARADA", lineas[0]["razon"])
+
+    def test_el_repo_vivo_no_tiene_ninguna_arista_con_veredicto_tecleado(self):
+        """Si esto cae, alguien volvio a escribir CONTINUA por defecto."""
+        from scripts import readjudicar_aristas
+        lineas = comun.leer_jsonl(comun.RUTA_VEREDICTOS)
+        sin_cita = [l for l in lineas
+                    if readjudicar_aristas.es_arista(l)
+                    and not l.get("cita_del_veredicto")]
+        self.assertEqual(sin_cita, [])
+
+
 class PruebaDeudaNoBloquea(BaseForja):
     """LA DEUDA NO BLOQUEA LA PRODUCCION (D.55, 18 sep 2026).
 
@@ -4656,7 +4813,7 @@ def main():
              PruebaDatasetEsElCatalogo, PruebaCitaEsReferencia,
              PruebaColaDeDoctrina, PruebaTablaDeCierre,
              PruebaPasoRetiradoDelCampo, PruebaExencionDeMomento,
-             PruebaDeudaNoBloquea]
+             PruebaDeudaNoBloquea, PruebaVeredictoYArista]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -4736,6 +4893,8 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaExencionDeMomento)._tests))
     print("  D.55, la deuda no bloquea la produccion: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaDeudaNoBloquea)._tests))
+    print("  D.53 en el codigo: el veredicto y la arista son puertas distintas: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaVeredictoYArista)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

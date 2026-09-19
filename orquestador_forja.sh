@@ -548,7 +548,20 @@ apertura_ciega() { # $1 = vuelta
   # PROMESA, que es el genero de remedio que esta casa tiene medido que no
   # funciona (D.35: un remedio que se cumple acordandose no es un remedio).
   # Ahora no estan.
-  local retirar="REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json"
+  # LA FASE CIEGA SABE QUE NO VE (18 sep 2026, decision del fundador).
+  #
+  # `loop.log` SALE DE LA RETIRADA. Es registro DEL ARNES, no del extractor, y sin el
+  # la ciega no puede comprobar que se le retiro: se retiraba el registro que dice que
+  # se retira. El auditor de la ACTA 43 publico, sellado, que `CREDITO_serial.jsonl` se
+  # retiraba "y nadie lo declaro"; el arnes lo venia declarando en la linea de su propio
+  # turno desde el 17 sep, y el no tenia con que mirarlo. Cargo la caida el solo, y su
+  # racha llego a 3 de 3 por tres caidas de la misma familia: publicar sin comprobar.
+  #
+  # LO QUE SE PIERDE Y POR QUE SE ACEPTA: `loop.log` dice lo que hizo el turno del
+  # extractor, asi que es una via de contaminacion. Pero es la UNICA sede donde la ciega
+  # puede verificar su propia premisa, y una ciega que no puede comprobar lo que afirma
+  # publica sin comprobar, que es peor: eso ya costo tres tandas.
+  local retirar="REPORTE.md ultimo_extractor.json ultimo_auditor.json"
 
   rm -f "$APERTURA"
   refugio="$(mktemp -d)"
@@ -557,8 +570,11 @@ apertura_ciega() { # $1 = vuelta
     [ -f "$LOOP/$fichero" ] && mv "$LOOP/$fichero" "$refugio/$fichero"
   done
 
-  # Y EL LOG DE ESTA VENTANA VA APARTE, porque su fichero acaba de irse.
-  LOG_ACTIVO="$refugio/loop_provisional.log"
+  # EL LOG YA NO SE DESVIA, y es la mitad que hace util lo de arriba: mientras
+  # `loop.log` se retiraba, sus lineas de esta ventana iban a un fichero provisional,
+  # asi que la linea de `retirados:` DE ESTE TURNO tampoco estaba donde la ciega podria
+  # leerla. Dejar el fichero y seguir escribiendo fuera habria arreglado la mitad.
+  LOG_ACTIVO=""
 
   # LO QUE UN AUDITOR LE DEJA AL SIGUIENTE LO ENTREGA EL ARNES, NO LA MEMORIA
   # (D.40). Se extrae del acta anterior ANTES de invocar, y se antepone al
@@ -584,11 +600,22 @@ apertura_ciega() { # $1 = vuelta
   credito_fichero="CREDITO_$(python -c "import sys; sys.path.insert(0, '.'); from src import credito; print(credito.linea_actual())" 2>/dev/null || echo serial).jsonl"
   [ -f "$LOOP/$credito_fichero" ] && mv "$LOOP/$credito_fichero" "$refugio/$credito_fichero"
 
-  log "VUELTA $vuelta : APERTURA CIEGA ($MODELO_AUDITOR), retirados: $retirar $credito_fichero"
+  local linea_retirados="VUELTA $vuelta : APERTURA CIEGA ($MODELO_AUDITOR), retirados: $retirar $credito_fichero"
+  log "$linea_retirados"
   log "  hereda $heredados remedio(s) del acta anterior, entregados en el prompt (D.40)"
   log "  y solo eso: remedios con su motivo, sin cifras ni conclusiones (D.52)"
   invocar_claude "auditor ciego" "$MODELO_AUDITOR" \
-    "$herencia
+    "LO QUE ESTE TURNO NO VE, DICHO POR EL ARNES Y NO POR TI (D.57)
+
+    $linea_retirados
+
+Esa es la linea literal que el arnes acaba de escribir en docs/loop/loop.log para TU
+turno. loop.log NO se retira: puedes abrirlo y comprobarla. Si vas a afirmar algo sobre
+lo que se te retiro, compruebalo ahi.
+Y SI NO PUEDES COMPROBAR ALGO, ESCRIBE LA LIMITACION en vez de la afirmacion (AUDITOR_FORJA.md 1.1: una busqueda negativa no se
+puede citar).
+
+$herencia
 
 $PROMPT_APERTURA_CIEGA" \
     "$LOOP/ultimo_apertura.json" "$vuelta" "$APERTURA"
