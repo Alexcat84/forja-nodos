@@ -47157,3 +47157,135 @@ de arriba: **cero de los `72` cuelga de algo que yo haya tocado hoy.**
 | tarea | que pide | estado |
 |---|---|---|
 | `KK.5` | el cierre: las cinco guardas, la tabla `D.52` con su colision, el estado recomputado, la linea del tramo con su reloj, la deuda recomputada y el coste de `D.55` | **CERRADA en `KK.5`**: las cinco guardas en verde **a la primera**, el estado al digito (`346`, `740`, `1`, `41`), la colision de `D.52` sellada por `hash-object` por quinta vez, el techo cumplido en sus dos mitades con el corte declarado, la deuda de `16` a `14`, el coste contado de sus relojes y **seis discutibles marcados a ciegas** |
+
+# VUELTA 50 DE LA LINEA SERIAL, `extraccion-mundo-11`: **CERRAR `cap_04` DE `grove_high_output` CON SUS TRES PIEZAS**, y pagar las ocho cifras de frontera que nadie reproduce
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor en la `ACTA 48`. Modo austero
+(`D.47`): no repito lo que el registro ya dice.*
+
+> **ESQUELETO ABIERTO AL EMPEZAR, CON LAS FILAS VACIAS** (`EXTRACTOR.md` 3). Cada tarea anexa su
+> fila al cerrarse.
+>
+> **LA COLUMNA DE ESTADO SE RELLENA AL CERRAR CADA TAREA, NO AL ABRIR.** Al abrir decia
+> `(vacia al abrir)` en las cinco filas, y cada tarea trae ademas su propia fila anexada al final
+> de su seccion.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `LL.1` | los registros de la `ACTA 48`: las ocho filas de `48.5.b` recogidas sin reabrirlas, la caida de PROSA que no acumula anotada, y `DEUDA.jsonl` leido con sus tres deudas nuevas | *(vacia al abrir)* |
+| `LL.2` | cerrar `cap_04` con `P41`, `P42` y `P44`: frontera dentro del nodo antes de cortar, fidelidad `D.30` paso a paso con su `sed` pegado, y **aduana en el mismo acto** con su reloj. **Cero inserciones** | *(vacia al abrir)* |
+| `LL.3` | pagar `d036` y `d038`: nueve correcciones declaradas sin borrar el numero viejo, y cero pasadas de aduana por adjudicacion `3.c` del encargo | *(vacia al abrir)* |
+| `LL.4` | la frontera de `cap_05` publicada antes de minar nada, con el molde de `HH.2.c` y sus tres cifras de control. **Es la cortable** | *(vacia al abrir)* |
+| `LL.5` | el cierre: las cinco guardas, la tabla `D.52` con su colision, el estado recomputado, `PASOS INVENTADOS` con su fila, la linea del tramo con su reloj y la deuda recomputada | *(vacia al abrir)* |
+
+## LL.0. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
+
+**Lo pendiente commiteado y pusheado antes de tocar nada** (`EXTRACTOR.md` 1.1). Ese commit llevaba
+los tres ficheros del arnes (`loop.log`, `ultimo_auditor.json`, `ultimo_extractor.json`), **ninguno
+mio**, y el estado que deja se cita como intermedio con el nombre de la operacion que ya lo movio.
+
+<!-- TALLADO: parcial salida=.v50/apertura_estado.txt -->
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git log -1 --format="%h %ad %s" --date=iso
+    e66b88b 2026-09-19 12:40:15 -0400 Estado del arnes al abrir la vuelta 50
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+       1087 total
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    41
+    $ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+    1
+
+**ESTA VUELTA NO TRAE SALDO DE LOTE, Y LO DIGO EN VEZ DE INVENTARLO** (`EXTRACTOR.md` 12, `D.43`):
+no hay `docs/loop/INFORME_DE_LOTE.txt` en el arbol, asi que **esta corrida no lo pidio y yo no lo
+lanzo**.
+
+<!-- TALLADO: parcial salida=.v50/informe_de_lote.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt
+    ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+
+### LL.0.a. **LA PUERTA DE `D.39`, MEDIDA Y NO SUPUESTA, Y ESTA VEZ CON LO QUE EL AUDITOR MIDIO DEBAJO**
+
+**La insercion llega abierta por defecto desde `D.39`. Aun asi hoy no entra ni un nodo, y el motivo
+es la condicion de `D.39`: LOTE CERRADO EN EXTRACCION.**
+
+<!-- TALLADO: parcial script=.v48/puerta.py salida=.v50/puerta_d39.txt -->
+
+    $ python .v48/puerta.py   sobre config/frentes.json
+    cerrados_en_extraccion : {'smart_who': {'cita': 'ACTA 8 seccion 10'}, 'zhuo_manager': {'cita': 'ACTA 13 seccion 8.1'}, 'scott_radical_candor': {'cita': 'ACTA 24'}}
+    grove_high_output CERRADO EN EXTRACCION: False
+
+**SEXTA VUELTA SEGUIDA CON LA PUERTA MEDIDA CERRADA PARA ESTE LIBRO.** Y el encargo me anade hoy
+una medida que yo no tenia: `grep -rn "cerrados_en_extraccion" src/ forja.py hooks/ scripts/` **solo
+da `src/tablero.py`**, asi que **esta puerta no tumba sola**: es una regla que aplico yo. Eso es
+exactamente lo que la deuda `d037` registra, y `D.45` me veda pagarla porque vive en `src/`.
+
+**Y CERRAR `cap_04` NO CIERRA EL LOTE 7**, que tiene `18` capitulos y lleva tres minados. **Las `41`
+fichas de cuarentena, mas las `3` que escribo hoy, se quedan donde estan.**
+
+### LL.0.b. **LAS GUARDAS DE DATO AL ABRIR, CORRIDAS POR MI Y NO HEREDADAS DEL ENCARGO**
+
+<!-- TALLADO: parcial salida=.v50/apertura_gate.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+<!-- TALLADO: parcial salida=.v50/apertura_guiones.txt -->
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+**La prueba de aceptacion no la corro al abrir y digo por que:** el encargo la trae medida en
+`1m41.879s` y el techo de esta vuelta la cuenta **una sola vez**, en el cierre, que es donde
+`EXTRACTOR.md` 6 la pide en verde. **Correrla dos veces gastaria `102` s del techo sin comprar una
+medida nueva.**
+
+### LL.0.c. **EL CREDITO, LA DEUDA Y LA CLASE AL ABRIR**, leidos y no anotados por mi (`EXTRACTOR.md` 14)
+
+<!-- TALLADO: parcial salida=.v50/credito_apertura.txt -->
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+      tandas: 48, en 220 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            2 de 3     ACTA 48
+      CIFRA PUBLICADA    0 de 2     ACTA 48
+      CLASE              0 de 2     ACTA 48
+      DATO MOVIDO        0 de 2     ACTA 48
+      REPORTE            0 de 3     ACTA 48
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+<!-- TALLADO: parcial salida=.v50/deuda_apertura.txt -->
+
+    $ python scripts/deuda.py | head -3
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      registro: docs/loop/DEUDA.jsonl
+      pendientes: 17    pagadas: 11
+
+<!-- TALLADO: parcial salida=.v50/clase_50.txt -->
+
+    $ python scripts/deuda.py --clase 50
+    INSERCION
+      van 1 de 5 desde la ultima de saneamiento (la 49), con 17 deuda(s) esperando
+
+**`REPORTE` BAJA A `0 de 3` Y ES MIA**, por la caida de prosa de `48.6.a`. **`AUDITOR` sube a
+`2 de 3` y no es mia**: la anoto el propio auditor contra su pagina, y es el penultimo escalon.
+**La deuda abre en `17`**, que son las `14` con las que cerro la vuelta 49 mas `d036`, `d037` y
+`d038`.
+
+**Y LA CLASE DE ESTA VUELTA DICE `INSERCION` Y ESTA VUELTA NO INSERTA, Y NO ES CONTRADICCION.**
+`scripts/deuda.py --clase` dice que a esta vuelta no le toca saneamiento; **quien decide si entra un
+nodo es `D.39`, y `LL.0.a` la mide cerrada.** Lo escribo porque las dos lineas se leen juntas y una
+lectura rapida las cruzaria.
