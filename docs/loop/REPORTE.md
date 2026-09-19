@@ -49781,3 +49781,83 @@ levanto una senial: el paso 3 nombra con todas sus letras *the production princi
 ese principio **es un nodo que ya espera en la bandeja** desde `cap_03`
 (`agrupar_tareas_semejantes_aprovechar_preparacion`). **La senial no la levanta y la lectura si**,
 que es `EXTRACTOR.md` 11 con todas sus letras: la jerarquia la busca la lectura.
+
+#### **CANDIDATO 4 de 6, `P18`: `alentar_asuntos_corazon_vigilar_final_reunion`**
+
+**`L53` a `L53`, `117` palabras, `8` pasos.** Es el que mas pasos trae de la tanda, porque el libro
+escribe **tres preguntas una a una** dentro del tramo.
+
+<!-- TALLADO: parcial script=.v52/c4.py salida=.v52/aduana_c4.txt -->
+
+    $ python .v52/c4.py
+    escrito cuarentena\grove_high_output\alentar_asuntos_corazon_vigilar_final_reunion.json 8 pasos
+    $ python forja.py informe cuarentena/grove_high_output/alentar_asuntos_corazon_vigilar_final_reunion.json
+    candidatos revisados        : 1
+    poblacion del barrido       : 403   (346 del grafo mas 57 que esperan en bandejas)
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 5
+      por candidato bloqueado          : menor 5, mediana 5, mayor 5
+      que señal levanta cada vecindad  : paso_contra_nodo 1, similitud_texto 4
+
+    $ cat .v52/reloj_c4.txt
+    RELOJ: 774.9 s
+
+**`0 CAERIA` y cero correcciones de id.** Poblacion `403`.
+
+**Y AQUI SALE LA PRIMERA SENIAL 3 DE TODA LA CAMPANIA DE `cap_05`, QUE ES LA QUE MAS CAZA Y LA QUE
+MENOS APARECE:** `fijar_duracion_lugar_reunion_individual` entra por **paso contra nodo `0.612`**
+con la similitud de texto **por debajo** del umbral (`0.349`). **La leo antes que ninguna otra** y su
+veredicto va en `NN.2.e` con el par emparejado que el propio informe imprime.
+
+**LA NOTA DE FORMA QUE ESTA FICHA DEJA ESCRITA, y vale para toda la tanda:** las tres preguntas de
+`L53` entran **como tres pasos** porque el libro las escribe como tres frases separadas por punto,
+sin `like` y sin `and so on`; los dos ejemplos de contacto improvisado de `P17` entraron **dentro de
+un paso** porque alli el libro escribe `like` y cierra con `and so on`. **La diferencia la marca el
+texto, no yo**, y es la misma regla que la ficha de `P14` estreno en la vuelta 51.
+
+#### **CANDIDATO 5 de 6, `P19`: `conducir_reunion_individual_telefono_distancia`**
+
+**`L55` a `L55`, `85` palabras, `5` pasos.**
+
+<!-- TALLADO: parcial script=.v52/c5.py salida=.v52/aduana_c5.txt -->
+
+    $ python .v52/c5.py
+    escrito cuarentena\grove_high_output\conducir_reunion_individual_telefono_distancia.json 5 pasos
+    $ python forja.py informe cuarentena/grove_high_output/conducir_reunion_individual_telefono_distancia.json
+    candidatos revisados        : 1
+    poblacion del barrido       : 404   (346 del grafo mas 58 que esperan en bandejas)
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 6
+      por candidato bloqueado          : menor 6, mediana 6, mayor 6
+      que señal levanta cada vecindad  : familia_id 1, paso_contra_nodo 1, similitud_texto 5
+
+    $ cat .v52/reloj_c5.txt
+    RELOJ: 567.5 s
+
+**`0 CAERIA` y cero correcciones de id.** Poblacion `404`. **Es el candidato con la cola mas larga
+de la tanda: `6` vecinos, y las TRES seniales de la casa aparecen en el.**
+
+**Y TRAE EL UNICO VECINO DE OTRO LIBRO QUE UNA SENIAL LEVANTA EN TODA LA TANDA:**
+`preguntar_conducir_reunion_individual`, del grafo y de `zhuo_manager`, **levantado por familia de
+id `0.500` con la similitud de texto en `0.129`**, o sea muy por debajo del umbral. **Es el caso de
+libro de lo que `D.19` mide:** la senial 2 ve dos ids que comparten piezas y la senial 1 no ve nada,
+porque los dos textos no se parecen. Su veredicto va en `NN.2.e`.
+
+**EL PRESTAMO DE CONTENIDO VA DECLARADO DENTRO DE LA FICHA** (`15.4`, y es la figura de `d046`): sus
+pasos `2` y `3` repiten dos piezas que ya viven en `P13` y en `P16`, **porque `L55` las vuelve a
+escribir enteras dentro de su propio renglon**. Se transcriben de `L55` y se citan de `L55`, y la
+repeticion se dice en vez de callarse.

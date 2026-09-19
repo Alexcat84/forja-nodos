@@ -14,7 +14,10 @@ QUE HACE, EN TRES PASOS.
 
   3. **LO PASA POR `D.49`** con la linea de este arbol. Si el libro tiene dueño y no es
      esta linea, **se detiene nombrando al dueño.**
-  4. **Y LO PASA POR `D.51`:** el libro declarado tiene que ser **el que el orden del
+  4. **Y LO PASA POR LA CADENCIA DE `D.58`:** si desde la ultima vuelta de saneamiento
+     han pasado cinco, **la vuelta que abre ES de saneamiento y el encargo no puede
+     decir otra cosa**.
+  5. **Y LO PASA POR `D.51`:** el libro declarado tiene que ser **el que el orden del
      mundo 11 le toca a esta linea**, no otro. Si no lo es, se detiene **nombrando el
      que si**.
 
@@ -42,6 +45,17 @@ from src import comun, credito, tablero  # noqa: E402
 RUTA_ENCARGO = os.path.join(RAIZ, "docs", "loop", "PROMPT_SIGUIENTE.md")
 RUTA_PARADA = os.path.join(RAIZ, "docs", "loop", "PARA_ALEXIS.md")
 
+# LA VUELTA Y SU CLASE, LEIDAS DEL ENCARGO (D.58, 19 sep 2026).
+#
+# `D.55` mandaba una vuelta de saneamiento de cada cinco, **y la 49 debio serlo y no lo
+# fue**: la cadencia dependia de que alguien se acordara al escribir el encargo, que es
+# el genero de remedio que esta casa tiene medido que no funciona (`D.35`).
+NUMERO_DE_VUELTA = re.compile(
+    r"^[\s>*#`]*ENCARGO\s+DE\s+LA\s+VUELTA\s+(\d+)", re.M | re.I)
+CLASE_DECLARADA = re.compile(
+    r"^[\s>*#`]*CLASE\s+DE\s+ESTA\s+VUELTA\s*:?[\s*`]*([A-Za-z]+)", re.M | re.I)
+CLASES = ("EXTRACCION", "INSERCION", "SANEAMIENTO")
+
 # La declaracion, con la decoracion que esta casa escribe: negrita, cita, comillas.
 DECLARACION = re.compile(
     r"^[\s>*#`]*LIBRO\s+DE\s+ESTA\s+VUELTA\s*:?[\s*`]*([A-Za-z0-9_]+)", re.M | re.I)
@@ -55,6 +69,42 @@ def libro_declarado(texto=None):
         texto = comun.leer_texto(RUTA_ENCARGO) if os.path.exists(RUTA_ENCARGO) else ""
     encaje = DECLARACION.search(texto or "")
     return encaje.group(1) if encaje else None
+
+
+def vuelta_y_clase(texto=None):
+    """`(numero, clase)` que el encargo declara. `None` en lo que no declare."""
+    if texto is None:
+        texto = (comun.leer_texto(RUTA_ENCARGO)
+                 if os.path.exists(RUTA_ENCARGO) else "")
+    numero = NUMERO_DE_VUELTA.search(texto or "")
+    clase = CLASE_DECLARADA.search(texto or "")
+    declarada = clase.group(1).upper() if clase else None
+    return (int(numero.group(1)) if numero else None,
+            declarada if declarada in CLASES else None)
+
+
+def cadencia(texto=None):
+    """LA CADENCIA LA HACE CUMPLIR EL CODIGO, NO LA MEMORIA (`D.58`).
+
+    Si desde la ultima vuelta de saneamiento han pasado cinco, **la vuelta que abre ES
+    de saneamiento y el encargo no puede decir otra cosa**. Devuelve la lista de
+    motivos que lo impiden; vacia es verde.
+    """
+    from scripts import deuda
+    numero, declarada = vuelta_y_clase(texto)
+    if numero is None:
+        return ["el encargo no dice de que vuelta es. D.58: la cadencia se cuenta por "
+                "numero de vuelta, y sin el no se puede contar. Escribe su titulo como "
+                "'ENCARGO DE LA VUELTA <n>'."]
+    toca, motivo = deuda.clase_de_vuelta(numero)
+    if toca != "SANEAMIENTO":
+        return []
+    if declarada == "SANEAMIENTO":
+        return []
+    return ["D.58: LA VUELTA %d ES DE SANEAMIENTO Y EL ENCARGO DICE %s. %s. La cadencia "
+            "no la decide el encargo: la cuenta el registro, y la vuelta 49 debio ser "
+            "de saneamiento y no lo fue porque dependia de que alguien se acordara."
+            % (numero, declarada or "otra cosa", motivo)]
 
 
 def hay_parada(ruta_parada=None):
@@ -106,6 +156,8 @@ def comprobar(texto=None, linea=None, filas=None, ruta_parada=None):
     # D.51: NINGUNA LINEA ELIGE LIBRO. Se comprueba aunque D.49 ya haya caido, porque
     # las dos cosas que el encargo puede tener mal son distintas: D.49 dice que ese
     # libro no es tuyo, y D.51 dice cual es.
+    impiden.extend(cadencia(texto))
+
     toca, porque, relevo = tablero.siguiente_por_prioridad(linea, filas)
     if toca is None:
         impiden.append("D.51: a esta linea no le toca NINGUN libro ahora mismo. %s"

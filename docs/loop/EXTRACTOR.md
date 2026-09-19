@@ -788,3 +788,42 @@ dentro los JSON. Eso es lo que convierte tu reporte en prueba: quien lee
 **LA FUENTE CANONICA, ANTES DEL PRIMER NODO DEL LIBRO.** Sin su clave en
 `fuentes/FUENTES_CANONICAS.json` la aduana rechaza el primer candidato, y ese
 rechazo es deliberado.
+
+## 15. LOS DOS REGIMENES, Y EN CUAL ESTAS (`D.58`, 19 sep 2026)
+
+> **LA LINEA QUE LOS SEPARA ES UNA SOLA: SI EL DATO EXISTE YA.**
+
+**MIRA `MODO_INSERCION` Y EL ENCARGO. El encargo declara su clase en su propia linea:**
+
+    CLASE DE ESTA VUELTA: EXTRACCION | INSERCION | SANEAMIENTO
+
+### EN EXTRACCION (`MODO_INSERCION=cuarentena`), EL REGIMEN LIGERO
+
+**Nada toca el grafo:** tus candidatos se quedan en su bandeja y `D.39` no los deja entrar
+hasta que el lote cierre. **Un candidato mal leido aqui no ha hecho daño todavia.**
+
+| | |
+|---|---|
+| **minas** | **TRES capitulos por vuelta**, techo de **`30` candidatos** |
+| **las guardas** | **tallado y censo**. Sin fase ciega, sin sello y sin testigo |
+| **la fidelidad `D.30`** | **POR MUESTRA**: `scripts/muestra_fidelidad.py`, con **la semilla escrita en el reporte** |
+| **el objetivo** | **turno por debajo de `5` USD** |
+
+    python scripts/muestra_fidelidad.py --libro <clave> --capitulos a,b,c --semilla <texto>
+
+**Uno de los tres se relee ENTERO y los otros dos llevan `15` pasos**, y **no lo eliges
+tu**: lo reparte la semilla. **Pega la salida del instrumento**: quien audite vuelve a
+correrlo y tiene que salirle la misma lista. **Una muestra que no se reproduce no es una
+muestra: es una eleccion.**
+
+> **EL DISPARADOR:** si la muestra de un capitulo **pasa del `10` por ciento de pasos
+> inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.** El tope de `D.30` no se
+> afloja.
+
+### EN INSERCION (`MODO_INSERCION=insertar`), EL COMPLETO
+
+**Sin quitar nada: es donde el dato existe y donde cada guarda se paga sola.**
+
+> **LA RELECTURA DE FIDELIDAD DEL LOTE SE HACE ENTERA AQUI**, sobre los candidatos que
+> entran, **y no antes**: asi **ningun paso entra al grafo sin haber sido leido contra su
+> libro una vez.** Releerlos dos veces cuesta el doble y protege lo mismo.

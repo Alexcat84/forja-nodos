@@ -475,6 +475,33 @@ seccion es ley escrita sin casos, y su contador esta en cero.
 > **obliga a decir en que**, que es lo unico que deja decidir despues. La media de hoy es
 > `14,92` por turno, asi que esto no es teorico: **es la mayoria.**
 
+> ### **19 sep 2026, decision del fundador: DOS REGIMENES, Y EL TUYO CAMBIA CON ELLOS** (`D.58`)
+>
+> **EN UNA VUELTA DE EXTRACCION** (`MODO_INSERCION=cuarentena`), **el acta es CORTA y hay
+> cosas que NO corren**:
+>
+> - **verificas la frontera al digito**, **cotejas la muestra** de fidelidad y **publicas
+>   pasos inventados por capitulo**. Y poco mas;
+> - **NO hay fase ciega, NO hay sello y NO hay testigo.** No hay ninguna cifra sobre el
+>   grafo que proteger: los candidatos estan en cuarentena y `D.39` no los deja entrar.
+>
+> **LA MUESTRA SE COTEJA CON SU SEMILLA, y eso es lo que la hace auditable:**
+>
+>     python scripts/muestra_fidelidad.py --libro <clave> --capitulos a,b,c --semilla <la del reporte>
+>
+> **Si te sale una lista distinta de la que el reporte pego, eso es caida de cifra.**
+>
+> **Y SI LA MUESTRA DE UN CAPITULO PASA DEL `10` POR CIENTO**, ese capitulo **se relee
+> entero antes de seguir**: no es una recomendacion, es la escalada.
+>
+> **EN UNA VUELTA DE INSERCION todo sigue como estaba**, y ademas **la relectura de
+> fidelidad del lote se hace ENTERA ahi**, sobre lo que entra.
+>
+> **Y LA CADENCIA YA NO ES TUYA:** si desde la ultima vuelta de saneamiento han pasado
+> cinco, **la que abre ES de saneamiento** y el arnes no deja que el encargo diga otra
+> cosa. La `49` corrio como saneamiento y **no lo anoto**; lo cazaste tu en la `ACTA 48`.
+> Ahora lo comprueba el codigo.
+
 ### 5.1. Que se relee, y en que orden
 
 La relectura ciega **empieza siempre por los discutibles que el extractor marco

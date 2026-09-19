@@ -99,7 +99,13 @@ def ultima_saneamiento(sucesos=None):
 
 
 def clase_de_vuelta(vuelta, sucesos=None):
-    """`(clase, motivo)` para esa vuelta. UNA de cada CINCO es de saneamiento.
+    """`(clase, motivo)`: `SANEAMIENTO`, o `LIBRE` si la cadencia no la reclama.
+
+    **`LIBRE` NO ES UNA CLASE DE VUELTA: ES LA AUSENCIA DE OBLIGACION.** Desde `D.58`
+    hay tres clases (`EXTRACCION`, `INSERCION`, `SANEAMIENTO`) y **esta funcion solo
+    sabe de una**: la que la cadencia impone. Las otras dos las elige el encargo segun
+    el libro, y decirlas aqui seria publicar un rotulo que este instrumento no mide.
+    Hasta el 19 sep devolvia `INSERCION`, que era falso en toda vuelta de extraccion.
 
     **Se cuenta desde la ultima de saneamiento**, no por el resto de la division: si la
     cadencia se cuenta contra un calendario fijo, **una vuelta perdida corre el turno de
@@ -109,17 +115,17 @@ def clase_de_vuelta(vuelta, sucesos=None):
     ultima = ultima_saneamiento(sucesos)
     faltan = len(pendientes(sucesos))
     if not faltan:
-        return "INSERCION", ("no hay deuda pendiente: no hay nada que sanear")
+        return "LIBRE", ("no hay deuda pendiente: no hay nada que sanear")
     if ultima is None:
-        return "INSERCION", ("todavia no ha corrido ninguna de saneamiento; la primera "
-                             "toca cuando el fundador o el acta la declare")
+        return "LIBRE", ("todavia no ha corrido ninguna de saneamiento; la primera "
+                         "toca cuando el fundador o el acta la declare")
     desde = vuelta - ultima
     if desde >= CADENCIA:
         return "SANEAMIENTO", ("han pasado %d vuelta(s) desde la ultima de saneamiento "
                                "(la %d) y la cadencia es %d, con %d deuda(s) pendientes"
                                % (desde, ultima, CADENCIA, faltan))
-    return "INSERCION", ("van %d de %d desde la ultima de saneamiento (la %d), con %d "
-                         "deuda(s) esperando" % (desde, CADENCIA, ultima, faltan))
+    return "LIBRE", ("van %d de %d desde la ultima de saneamiento (la %d), con %d "
+                     "deuda(s) esperando" % (desde, CADENCIA, ultima, faltan))
 
 
 def anotar(suceso, ruta=None):

@@ -3537,6 +3537,117 @@ class PruebaCerrojoYCenso(BaseForja):
                 self.taller, "no_commiteado.jsonl")), [])
 
 
+class PruebaRegimenLigero(BaseForja):
+    """DOS REGIMENES: EL LIGERO NO TOCA EL GRAFO (D.58, 19 sep 2026).
+
+    En cuarentena un candidato mal leido no ha hecho daño todavia: vive en su bandeja y
+    D.39 no lo deja entrar hasta que su lote cierre. La relectura no se quita, se mueve
+    al momento en que el dato existe. Releer los mismos pasos dos veces cuesta el doble
+    y protege lo mismo.
+    """
+
+    def _bandeja(self, libro="un_libro"):
+        carpeta = os.path.join(self.bandeja, libro)
+        if not os.path.isdir(carpeta):
+            os.makedirs(carpeta)
+        return carpeta
+
+    def _candidato(self, libro, capitulo, identificador, pasos):
+        carpeta = self._bandeja(libro)
+        comun.escribir_texto(
+            os.path.join(carpeta, identificador + ".json"),
+            json.dumps({"id": identificador,
+                        "pasos_accionables": pasos,
+                        "cita": "%s/%s.md L1" % (libro, capitulo)},
+                       ensure_ascii=False))
+
+    # ------------------------------------------- el reparto, y no lo elige nadie
+
+    def test_uno_de_cada_tres_se_relee_ENTERO(self):
+        from scripts import muestra_fidelidad
+        entero, muestreados = muestra_fidelidad.repartir(
+            ["cap_06", "cap_07", "cap_08"], "v54")
+        self.assertIn(entero, ["cap_06", "cap_07", "cap_08"])
+        self.assertEqual(len(muestreados), 2)
+        self.assertNotIn(entero, muestreados)
+
+    def test_caso_positivo_la_misma_semilla_da_el_mismo_reparto(self):
+        """Una muestra que no se reproduce no es una muestra: es una eleccion."""
+        from scripts import muestra_fidelidad
+        uno = muestra_fidelidad.repartir(["a", "b", "c"], "v54")
+        otro = muestra_fidelidad.repartir(["a", "b", "c"], "v54")
+        self.assertEqual(uno, otro)
+
+    def test_caso_negativo_otra_semilla_puede_dar_otro_reparto(self):
+        """Si la semilla no cambiara nada, escribirla no serviria de nada."""
+        from scripts import muestra_fidelidad
+        repartos = set(muestra_fidelidad.repartir(["a", "b", "c"], "s%d" % n)[0]
+                       for n in range(12))
+        self.assertGreater(len(repartos), 1)
+
+    # ------------------------------------------------------- la muestra en si
+
+    def test_la_muestra_es_de_quince_pasos_y_se_reproduce(self):
+        from scripts import muestra_fidelidad
+        self._candidato("un_libro", "cap_06", "nodo_uno",
+                        ["paso %d" % n for n in range(1, 31)])
+        raiz = os.path.dirname(self.bandeja)
+        una = muestra_fidelidad.muestra_de("un_libro", "cap_06", "v54", raiz=raiz)
+        otra = muestra_fidelidad.muestra_de("un_libro", "cap_06", "v54", raiz=raiz)
+        self.assertEqual(len(una), muestra_fidelidad.PASOS_DE_MUESTRA)
+        self.assertEqual(una, otra)
+
+    def test_si_hay_menos_pasos_que_la_muestra_los_coge_todos(self):
+        from scripts import muestra_fidelidad
+        self._candidato("un_libro", "cap_07", "nodo_corto", ["uno", "dos"])
+        raiz = os.path.dirname(self.bandeja)
+        self.assertEqual(
+            len(muestra_fidelidad.muestra_de("un_libro", "cap_07", "v54", raiz=raiz)), 2)
+
+    def test_el_tope_de_escalada_es_el_de_D30_y_no_se_afloja(self):
+        from scripts import muestra_fidelidad
+        self.assertEqual(muestra_fidelidad.TOPE_DE_ESCALADA, 10.0)
+
+    # ------------------------------------- la cadencia, que ya no depende de nadie
+
+    def test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa(self):
+        from scripts import guarda_tablero
+        texto = ("# ENCARGO DE LA VUELTA 54" + chr(10)
+                 + "CLASE DE ESTA VUELTA: EXTRACCION")
+        impiden = guarda_tablero.cadencia(texto)
+        self.assertEqual(len(impiden), 1)
+        self.assertIn("ES DE SANEAMIENTO", impiden[0])
+
+    def test_caso_negativo_esa_misma_vuelta_declarando_saneamiento_pasa(self):
+        from scripts import guarda_tablero
+        texto = ("# ENCARGO DE LA VUELTA 54" + chr(10)
+                 + "CLASE DE ESTA VUELTA: SANEAMIENTO")
+        self.assertEqual(guarda_tablero.cadencia(texto), [])
+
+    def test_un_encargo_sin_numero_de_vuelta_no_abre(self):
+        """La cadencia se cuenta por numero de vuelta, y sin el no se puede contar."""
+        from scripts import guarda_tablero
+        impiden = guarda_tablero.cadencia("un encargo sin titulo reconocible")
+        self.assertEqual(len(impiden), 1)
+        self.assertIn("no dice de que vuelta es", impiden[0])
+
+    def test_la_clase_se_lee_con_la_decoracion_de_la_casa(self):
+        from scripts import guarda_tablero
+        for escrito in ("CLASE DE ESTA VUELTA: SANEAMIENTO",
+                        "> **CLASE DE ESTA VUELTA:** `SANEAMIENTO`",
+                        "clase de esta vuelta: saneamiento"):
+            texto = "# ENCARGO DE LA VUELTA 54" + chr(10) + escrito
+            self.assertEqual(guarda_tablero.vuelta_y_clase(texto),
+                             (54, "SANEAMIENTO"), escrito)
+
+    def test_la_vuelta_49_consta_como_saneamiento_en_el_registro(self):
+        """Corrio como saneamiento y NO lo anoto: durante un dia el registro dijo
+        'ninguna todavia'. Lo cazo el auditor solo en la ACTA 48 y escribio la
+        declaracion que faltaba. Si esto cae, la cadencia vuelve a contar mal."""
+        from scripts import deuda
+        self.assertEqual(deuda.ultima_saneamiento(), 49)
+
+
 class PruebaVeredictoYArista(BaseForja):
     """EL VEREDICTO Y LA ARISTA SON PUERTAS DISTINTAS (D.53), EN EL CODIGO.
 
@@ -3702,16 +3813,16 @@ class PruebaDeudaNoBloquea(BaseForja):
         self.assertEqual(clase, "SANEAMIENTO")
         self.assertIn("cadencia", motivo)
 
-    def test_caso_negativo_antes_de_las_cinco_es_de_INSERCION(self):
+    def test_caso_negativo_antes_de_las_cinco_la_cadencia_no_reclama(self):
         from scripts import deuda
         sucesos = self._sucesos({"tipo": "saneamiento", "vuelta": 41})
-        self.assertEqual(deuda.clase_de_vuelta(44, sucesos)[0], "INSERCION")
+        self.assertEqual(deuda.clase_de_vuelta(44, sucesos)[0], "LIBRE")
 
     def test_sin_deuda_pendiente_no_hay_nada_que_sanear(self):
         from scripts import deuda
         sucesos = [{"tipo": "saneamiento", "vuelta": 41}]
         clase, motivo = deuda.clase_de_vuelta(99, sucesos)
-        self.assertEqual(clase, "INSERCION")
+        self.assertEqual(clase, "LIBRE")
         self.assertIn("no hay deuda", motivo)
 
     def test_la_cadencia_se_cuenta_desde_la_ULTIMA_de_saneamiento(self):
@@ -3720,7 +3831,7 @@ class PruebaDeudaNoBloquea(BaseForja):
         from scripts import deuda
         sucesos = self._sucesos({"tipo": "saneamiento", "vuelta": 41},
                                 {"tipo": "saneamiento", "vuelta": 50})
-        self.assertEqual(deuda.clase_de_vuelta(54, sucesos)[0], "INSERCION")
+        self.assertEqual(deuda.clase_de_vuelta(54, sucesos)[0], "LIBRE")
         self.assertEqual(deuda.clase_de_vuelta(55, sucesos)[0], "SANEAMIENTO")
 
     def test_caso_positivo_una_deuda_sin_cita_no_se_escribe(self):
@@ -4460,14 +4571,19 @@ class PruebaGuardaDelTablero(BaseForja):
 
     def test_caso_negativo_el_libro_de_esta_linea_abre(self):
         from scripts import guarda_tablero
+        # EL TITULO VA EN EL TEXTO desde D.58: la cadencia se cuenta por numero de
+        # vuelta, y un encargo de verdad siempre lo trae. Esta prueba mide D.49, no la
+        # cadencia, asi que se le da lo que un encargo real tendria.
         self.assertEqual(guarda_tablero.comprobar(
-            texto="LIBRO DE ESTA VUELTA: scott_radical_candor",
+            texto=("# ENCARGO DE LA VUELTA 53" + chr(10)
+                   + "LIBRO DE ESTA VUELTA: scott_radical_candor"),
             linea="serial", filas=self._filas()), [])
 
     def test_mencionar_un_frente_no_tumba_la_vuelta(self):
         """El encargo dice que NO los toca, y eso no puede ser lo que lo tumbe."""
         from scripts import guarda_tablero
         texto = (chr(10).join([
+            "# ENCARGO DE LA VUELTA 53",
             "LIBRO DE ESTA VUELTA: scott_radical_candor",
             "",
             "## LO QUE NO SE TOCA",
@@ -4839,7 +4955,8 @@ def main():
              PruebaDatasetEsElCatalogo, PruebaCitaEsReferencia,
              PruebaColaDeDoctrina, PruebaTablaDeCierre,
              PruebaPasoRetiradoDelCampo, PruebaExencionDeMomento,
-             PruebaDeudaNoBloquea, PruebaVeredictoYArista]
+             PruebaDeudaNoBloquea, PruebaVeredictoYArista,
+             PruebaRegimenLigero]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -4921,6 +5038,8 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaDeudaNoBloquea)._tests))
     print("  D.53 en el codigo: el veredicto y la arista son puertas distintas: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaVeredictoYArista)._tests))
+    print("  D.58, dos regimenes y la cadencia que no depende de nadie: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaRegimenLigero)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

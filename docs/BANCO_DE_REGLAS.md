@@ -3158,3 +3158,90 @@ deja escrito (`COMPROBADO_EN_LOG`); la prueba exige ademas que **no** aparezca
 limitacion** cuando algo no se pueda comprobar.
 
 **Negativo:** los otros tres siguen retirados, y el log lo dice con su nombre.
+
+---
+
+## D.58. DOS REGIMENES: EL LIGERO NO TOCA EL GRAFO (19 sep 2026, decision del fundador)
+
+*Decision del fundador del 19 sep 2026. **El numero lo asigna esta sesion.** Nace de una
+cifra: `USD 300` en un dia para `30` candidatos, unos `10` por candidato, contra los `3,60`
+que costo el mismo trabajo cuando corria sin auditoria completa encima.*
+
+### La letra, y la linea que la divide
+
+> **HAY DOS REGIMENES, Y LOS SEPARA UNA SOLA PREGUNTA: SI EL DATO EXISTE YA.**
+
+**REGIMEN DE EXTRACCION** (`MODO_INSERCION=cuarentena`), **ligero, porque nada toca el
+grafo:**
+
+| | |
+|---|---|
+| **el extractor** | mina **TRES capitulos por vuelta**, con techo de **`30` candidatos** |
+| **las guardas** | **tallado y censo**, que son baratos |
+| **la fidelidad `D.30`** | **POR MUESTRA**: **uno de cada tres capitulos entero**, y en los otros dos **una muestra fija de `15` pasos con semilla escrita** |
+| **el auditor** | verifica **la frontera al digito**, coteja la muestra, publica **pasos inventados por capitulo** y escribe **un acta corta** |
+| **lo que NO corre** | **sin fase ciega, sin sello y sin testigo**. No hay cifra sobre el grafo que proteger |
+| **objetivo medido** | **turno bajo `5` USD** |
+
+> **EL DISPARADOR, que es lo que hace de la muestra una alarma y no un adorno:** si la
+> muestra de un capitulo **pasa del `10` por ciento de pasos inventados, ESE CAPITULO SE
+> RELEE ENTERO ANTES DE SEGUIR.** El tope de `D.30` no se toca: lo que cambia es que aqui
+> se mide sobre `15` pasos, **y por eso escala a relectura entera en vez de a veredicto**.
+
+**REGIMEN DE INSERCION** (`MODO_INSERCION=insertar`), **completo y sin quitar nada: es
+donde el dato existe y donde cada guarda se paga sola.**
+
+> **LA RELECTURA DE FIDELIDAD DE UN LOTE SE HACE ENTERA EN SU VUELTA DE INSERCION**, sobre
+> los candidatos que entran, **y no antes**: asi **ningun paso entra al grafo sin haber
+> sido leido contra su libro una vez.**
+
+### Por que esto no afloja nada, y es la parte que hay que entender
+
+**En cuarentena, un candidato mal leido no ha hecho daño todavia**: vive en su bandeja y
+`D.39` no lo deja entrar hasta que su lote cierre. **La relectura no se quita: se mueve al
+momento en que el dato existe**, que es cuando puede hacer daño. Releer los mismos pasos
+dos veces, una en cuarentena y otra al insertar, **cuesta el doble y protege lo mismo**.
+
+**Y LA MUESTRA SIGUE MIDIENDO ALGO REAL:** no certifica el capitulo, **avisa**. Si la
+muestra sale sucia, el capitulo entero se relee ahi mismo, antes de que la vuelta siga.
+
+### La muestra se reproduce, o no es una muestra
+
+    python scripts/muestra_fidelidad.py --libro <clave> --capitulos a,b,c --semilla <texto>
+
+**LA SEMILLA SE ESCRIBE EN EL REPORTE.** Quien audite vuelve a correr el instrumento con
+ella y **tiene que salirle la misma lista**. Se calcula con `sha1` sobre `semilla|clave`,
+sin `random`: el mismo texto da el mismo numero en cualquier maquina.
+
+> **Una muestra que no se puede reproducir no es una muestra: es una eleccion**, y **el que
+> elige sus pasos elige su resultado.**
+
+### La cadencia de saneamiento la hace cumplir el codigo
+
+> **Si desde la ultima vuelta de saneamiento han pasado cinco, LA VUELTA QUE ABRE ES DE
+> SANEAMIENTO Y EL ENCARGO NO PUEDE DECIR OTRA COSA.**
+
+**Se comprueba en la apertura**, dentro de `scripts/guarda_tablero.py`, que es lo que el
+arnes ya llama. **El encargo declara su clase** en su propia linea:
+
+    CLASE DE ESTA VUELTA: EXTRACCION | INSERCION | SANEAMIENTO
+
+**POR QUE HIZO FALTA, CON EL EJEMPLAR MEDIDO:** la vuelta `49` **si corrio como
+saneamiento**, pero **no lo anoto en el registro**, y durante un dia `deuda.py` dijo
+*ultima vuelta de saneamiento: ninguna todavia*. **Lo cazo el auditor solo**, en la
+`ACTA 48`, y escribio la declaracion que faltaba citando donde constaba. **La cadencia
+dependia de que alguien se acordara de anotarla**, que es el genero de remedio que esta
+casa tiene medido que no funciona (`D.35`).
+
+**Caso positivo:** con la ultima de saneamiento en la `49`, un encargo de la `54` que
+declare `EXTRACCION` **no abre**, y la guarda nombra la cuenta. **Negativo:** ese mismo
+encargo declarando `SANEAMIENTO` pasa.
+
+### El alcance, con la cifra delante
+
+> **`grove_high_output` se termina y se inserta**, y **el mundo 11 puede declararse
+> COMPLETO con esos cinco libros si el fundador lo decide al cerrar Grove.**
+>
+> **`gerber_emyth` y `marquet_turn_the_ship` siguen pausados con sus `19` candidatos**, y
+> **se relevan solo si el coste medido del regimen ligero lo permite**. Eso se decide **con
+> la cifra de Grove delante, no ahora.**
