@@ -1,0 +1,6 @@
+$ python -c "por que las 163 de ensayo_referencia_163 no entran en la poblacion de la aduana"
+claves canonicas en fuentes/FUENTES_CANONICAS.json: 13
+   _lea_esto, bernerslee_bananas, gerber_emyth, gerber_emyth_cap17_reservado, grove_high_output, manual_sistema_conocimiento, marquet_turn_the_ship, onu_consumidor, openstax_business_ethics, openstax_org_behavior, scott_radical_candor, smart_who, zhuo_manager
+
+cuarentena/ensayo_referencia_163: {'NO canonica': 163}
+  de esas, sin ninguna clave de fuente: 0

@@ -1,0 +1,31 @@
+$ sed -n "56,70p" docs/loop/paradas/2026-09-18-arista-py-y-la-ciega-sin-registro-DECISION.md
+
+### El censo de la reparacion, antes y despues
+
+    ANTES                         DESPUES
+    CONTINUA             93       CONTINUA               1
+    SANO                  -       SANO                  13
+    SIN LECTURA PROPIA    -       SIN LECTURA PROPIA    79
+    con cita              0       con cita              93
+
+> **LA FORMA DEL DANIO ERA PEOR DE LO QUE PARECIA: `79` de `93` no tenian NINGUNA lectura
+> detras.** Ese `CONTINUA` no era un juicio equivocado: **era un valor por defecto.** Y
+> `13` contradecian de frente a su propia lectura, que decia `SANO`.
+
+**A las `79` se les puso `SIN LECTURA PROPIA`, no `SANO`.** Poner `SANO` seria **inventar
+una lectura que nadie hizo, que es el mismo defecto en la otra direccion.**
+
+### La mitad de `D.57` que el fundador no pidio porque no se veia
+
+$ python -c "recuento propio de las 93 lineas re adjudicadas en bitacora/VEREDICTOS.jsonl"
+lineas totales en bitacora/VEREDICTOS.jsonl : 740
+lineas con campo veredicto_original         : 92
+   SIN LECTURA PROPIA     79
+   SANO                   13
+$ python -c "el cohorte de las 93: lineas de arista declarada por lectura, contadas hoy"
+lineas de arista declarada por lectura, HOY : 93
+   SIN LECTURA PROPIA     79
+   SANO                   13
+   CONTINUA               1
+de ese cohorte, con veredicto_original      : 92
+de ese cohorte, con cita_del_veredicto      : 93

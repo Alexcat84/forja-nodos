@@ -28,6 +28,15 @@ LAS TRES FORMAS, Y SOLO TRES:
                                           y se exige AL MENOS UNA coincidencia
                                           con contenido. Sin coincidencias,
                                           tumba.
+  (d) NO ES SEDE ........................ la celda nombra la ruta para decir que
+                                          NO sostiene nada, y lo declara como
+                                              NO ES SEDE: <motivo>
+                                          Nace el 19 sep 2026 del choque con
+                                          D.57: una fase ciega que declara su
+                                          limitacion nombra el fichero que no
+                                          pudo comprobar, y eso NO es publicar
+                                          evidencia. Sin esta forma, cumplir
+                                          D.57 tumbaba el sello.
 
 Mas una lista FIJA en `config/sedes_vacias.json` con las sedes que una regla
 escrita manda dejar vacias (`PROMPT_SIGUIENTE.md` en una parada). **Esa lista es
@@ -67,6 +76,28 @@ DOCUMENTOS = (os.path.join("docs", "loop", "REPORTE.md"),
 
 EN_COMILLAS = re.compile(r"`([^`\n]+)`")
 MARCA_VACIA = re.compile(r"VACIA A PROPOSITO\s*:\s*(\S.*)")
+
+# LA CUARTA FORMA, Y NACE DE UN CHOQUE ENTRE DOS REGLAS (19 sep 2026).
+#
+# `D.57` (18 sep) manda a la fase ciega ESCRIBIR LA LIMITACION en vez de la
+# afirmacion cuando no puede comprobar algo. La primera ciega que lo cumplio escribio,
+# en una seccion titulada LO QUE NO PUEDO COMPROBAR:
+#
+#     3. Si el reporte publica `.v45/informe_d021.txt` como prueba de una corrida.
+#        Mido que tiene 0 bytes; no puedo saber si esta publicada como ruta de
+#        evidencia.
+#
+# **Y EL CENSO LA TUMBO POR ESO.** Leyo esa mencion como una ruta publicada como sede
+# de una cifra, que es lo que `D.42` vigila, y el sello no se acepto. La vuelta no pudo
+# cerrar **por cumplir la regla de ayer**.
+#
+# LA DISTINCION QUE FALTABA: una ruta puede aparecer en una celda **sin ser la sede de
+# nada**. Cuando la cifra es SOBRE la ruta (*mido que tiene 0 bytes*) y no ESTA EN la
+# ruta, la celda no publica evidencia: publica una limitacion. Se declara igual que las
+# otras tres formas, **en la misma celda y a la vista de quien lee la cifra**:
+#
+#     NO ES SEDE: <motivo>
+MARCA_NO_SEDE = re.compile(r"NO ES SEDE\s*:\s*(\S.*)")
 MARCA_PATRON = re.compile(r"PATRON\s*:\s*`?([^`\s|]+)`?")
 GLOB = "*?["
 
@@ -323,6 +354,19 @@ def censar(documentos=None, raiz=None):
         for numero, sitio, unidad in unidades_de(texto):
             marca = MARCA_VACIA.search(unidad)
             declarado = MARCA_PATRON.search(unidad)
+            # (d) NO ES SEDE: la celda nombra la ruta para decir que NO puede
+            # sostenerse en ella. Se mira ANTES que nada, porque si la celda declara
+            # que no es sede, no hay sede que medir.
+            no_sede = MARCA_NO_SEDE.search(unidad)
+            if no_sede:
+                for cita in EN_COMILLAS.findall(unidad):
+                    ruta = parece_ruta(cita)
+                    if ruta is not None:
+                        pasan.append({"documento": doc, "linea": numero,
+                                      "sitio": sitio, "ruta": ruta,
+                                      "forma": "NO ES SEDE",
+                                      "motivo": no_sede.group(1).strip()})
+                continue
             for cita in EN_COMILLAS.findall(unidad):
                 ruta = parece_ruta(cita)
                 if ruta is None or not es_sede(unidad, cita):

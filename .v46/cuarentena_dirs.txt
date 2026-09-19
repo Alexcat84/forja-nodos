@@ -1,0 +1,10 @@
+$ for d in cuarentena/*/; do printf "%-44s %s\n" "$d" "$(ls "$d" | grep -c "\.json$")"; done
+cuarentena/_derivadas/                       2
+cuarentena/_insertados/                      0
+cuarentena/ensayo_referencia_163/            163
+cuarentena/grove_high_output/                22
+cuarentena/marquet_turn_the_ship/            3
+cuarentena/onu_consumidor/                   0
+cuarentena/scott_radical_candor/             0
+cuarentena/smart_who/                        0
+cuarentena/zhuo_manager/                     0

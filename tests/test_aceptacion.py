@@ -2609,6 +2609,32 @@ class PruebaCensoDeRutas(BaseForja):
         self.assertFalse(censar_rutas._es_artefacto("docs/loop/ACTA_AUDITOR.md"))
         self.assertFalse(censar_rutas._es_artefacto("docs/ultimo_disfrazado.json"))
 
+    def test_caso_positivo_NO_ES_SEDE_deja_pasar_una_ruta_vacia(self):
+        """LA CUARTA FORMA, y nace de un choque entre dos reglas (19 sep 2026).
+
+        `D.57` manda a la fase ciega ESCRIBIR LA LIMITACION cuando no puede comprobar
+        algo. La primera ciega que lo cumplio nombro el fichero que no pudo comprobar
+        (*mido que tiene 0 bytes*), **y el censo tumbo el sello por eso**: leyo la
+        mencion como una sede publicada. La vuelta no pudo cerrar POR CUMPLIR LA REGLA
+        DE AYER.
+        """
+        vacio = os.path.join(self.taller, "vacio.txt")
+        comun.escribir_texto(vacio, "")
+        tabla = ("| pieza | de donde |" + chr(10) + "|---|---|" + chr(10)
+                 + "| lo que no pude comprobar | `%s`. NO ES SEDE: la cifra es SOBRE "
+                   "el fichero, no esta EN el |" % comun.relativa(vacio))
+        caidas, _pasan = self._censar(tabla)
+        self.assertEqual(caidas, [])
+
+    def test_caso_negativo_sin_la_marca_esa_misma_ruta_vacia_CAE(self):
+        """Sin este par, la forma nueva seria una puerta abierta y no una distincion."""
+        vacio = os.path.join(self.taller, "vacio.txt")
+        comun.escribir_texto(vacio, "")
+        tabla = ("| pieza | de donde |" + chr(10) + "|---|---|" + chr(10)
+                 + "| la cifra | `%s` |" % comun.relativa(vacio))
+        caidas, _pasan = self._censar(tabla)
+        self.assertEqual(len(caidas), 1)
+
     def test_caso_positivo_otro_fichero_ausente_sigue_cayendo(self):
         """La exencion es de los cuatro que D.34.2 nombra, no de todo lo que falte."""
         caidas, _pasan = self._censar(self.TABLA % ".v29/no_existe.txt")

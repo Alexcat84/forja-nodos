@@ -1,0 +1,25 @@
+$ sed -n "175,195p" src/arista.py
+    if veredicto is None or str(veredicto).upper() not in VEREDICTOS:
+        resultado.codigo = CODIGO_RECHAZO
+        resultado.decir("")
+        resultado.decir("ARISTA NO ESCRITA: falta --veredicto, y no se supone (D.53).")
+        resultado.decir("  El veredicto de un par y su arista son puertas distintas: el")
+        resultado.decir("  veredicto lo emite LA LECTURA (%s) y viaja con la arista."
+                        % ", ".join(VEREDICTOS))
+        resultado.decir("  Hasta el 18 sep 2026 aqui se tecleaba CONTINUA siempre, y eso")
+        resultado.decir("  escribio 93 lineas de la sede de CLASE contra una regla que")
+        resultado.decir("  la casa ya tenia escrita.")
+        return resultado
+    veredicto = str(veredicto).upper()
+    if not (cita_veredicto or "").strip():
+        resultado.codigo = CODIGO_RECHAZO
+        resultado.decir("")
+        resultado.decir("ARISTA NO ESCRITA: falta --cita-veredicto (D.53).")
+        resultado.decir("  Un veredicto sin la lectura que lo emitio no se puede releer,")
+        resultado.decir("  y el que no se puede releer no se puede corregir.")
+        return resultado
+
+    fecha = aduana._hoy()
+
+$ grep -c "SIN LECTURA PROPIA" bitacora/VEREDICTOS.jsonl
+79

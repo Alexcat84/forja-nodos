@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-09-18 21:44:43",
-  "commit": "98911d117537",
-  "huella_del_arbol": "09779481adb9d157",
+  "fecha": "2026-09-19 00:02:12",
+  "commit": "3274336fb2d4",
+  "huella_del_arbol": "44cd0d74376116c4",
   "guardas": {
     "gate": {
       "estado": "VERDE",
@@ -14,9 +14,9 @@
       "salida": "BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios."
     },
     "censo_rutas": {
-      "estado": "VERDE",
-      "codigo": 0,
-      "salida": "      PATRON                           10\r\n      VACIA A PROPOSITO                3\r\n      con contenido                    121\r\n      vacia por protocolo              9\r\n\r\nCENSO VERDE: las 143 rutas publicadas sostienen lo que dicen sostener."
+      "estado": "ROJO",
+      "codigo": 1,
+      "salida": "\r\nCENSO EN ROJO: 1 ruta(s) publicadas como sede de una cifra no sostienen nada.\r\nSe arregla de una de estas tres formas, y solo de estas tres:\r\n  1. regenerando el fichero, que es lo que casi siempre toca;\r\n  2. escribiendo en la MISMA celda 'VACIA A PROPOSITO: <motivo>';\r\n  3. si era un conjunto, escribiendola como 'PATRON: <glob>'."
     },
     "citas_de_credito": {
       "estado": "VERDE",

@@ -2605,3 +2605,27 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-18 23:10:54]   ultimo commit de ACTA_AUDITOR.md : 2026-09-18 22:06:25 (1789783585)
 [2026-09-18 23:10:54] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-18 23:10:54] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-18 23:40:29] extractor listo (USD 7.352113500000001), 1775s, intento 1 de 7
+[2026-09-18 23:40:30] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+[2026-09-18 23:40:30]   hereda 0 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-18 23:40:30]   y solo eso: remedios con su motivo, sin cifras ni conclusiones (D.52)
+[2026-09-19 00:02:10] auditor ciego listo (USD 10.6579325), 1300s, intento 1 de 7
+[2026-09-19 00:02:12]   herencia declarada: acta leida por su huella y los 0 heredados resueltos
+[2026-09-19 00:02:12]   testigo de guardas, antes de sellar (D.38.3)
+============================================================================
+TESTIGO DE GUARDAS AL SELLAR (D.38.3, 16 sep 2026)
+============================================================================
+hora            : 2026-09-19 00:02:12
+commit          : 3274336fb2d4
+huella del arbol: 44cd0d74376116c4
+  censo_rutas  ROJO
+  citas_de_credito VERDE
+  gate         VERDE
+  guiones      VERDE
+
+GUARDAS EN ROJO AL SELLAR: censo_rutas
+La pagina sellada TIENE QUE DECIRLO, o el sello no se acepta.
+[2026-09-19 00:02:19] SELLO NO ACEPTADO en la vuelta 1: una guarda estaba en ROJO al sellar.
+[2026-09-19 00:02:19]     EL SELLO NO SE ACEPTA: 1 guarda(s) en rojo al sellar.
+[2026-09-19 00:02:19]       la guarda 'censo_rutas' estaba en ROJO en el instante del sello (2026-09-19 00:02:12). Una cifra vale en el instante del sello (D.38.3, 16 sep 2026): si al cerrar hay un rojo, la tabla de cierre no se escribio DESPUES de volver a correr las guardas. 
+[2026-09-19 00:02:19] DETENIDO en la vuelta 1: el testigo desmiente el estado del sello. Ver docs/loop/PARA_ALEXIS.md

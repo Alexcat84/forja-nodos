@@ -1,0 +1,39 @@
+$ python -c "titulos del grafo y de las bandejas que tocan medicion, inspeccion, flujo o pronostico"
+GRAFO (dataset/nodos.jsonl):
+  grafo        planificar_cinco_olas_venta                          Planificar la venta en las cinco olas del proceso de contratacion
+  grafo        fijar_proceso_trabajo_equipo                         Fijar el proceso con el que tu equipo trabaja junto
+  grafo        revisar_proposito_personas_proceso                   Revisar el proposito, las personas y el proceso de tu equipo
+  grafo        probar_banquillo_vacaciones_largas                   Probar la fuerza de tu banquillo con la prueba de las vacaciones largas
+  grafo        ligar_tareas_proposito_organizacion                  Ligar cada tarea al proposito mayor y no confundirlo con su indicador
+  grafo        subir_vara_calidad_equipo                            Subir la vara de calidad con quien lleva tiempo haciendo un trabajo solo acept
+  grafo        montar_tablero_kanban_medir_actividades              Montar un tablero kanban de tres columnas para hacer visibles las actividades 
+  grafo        medir_guia_propia_pegatinas_marco                    Medir tu propia guia con el marco y las pegatinas de colores, coger la linea b
+  grafo        montar_proceso_contratacion_reducir_sesgo            Montar un proceso de contratacion tan rigido como se pueda sin volverse gravos
+  grafo        elegir_pregunta_recurrente_pedir_critica             Elegir tus preguntas recurrentes para pedir critica, con los cuatro atributos 
+  grafo        medir_critica_respuesta_oyente_brujula               Medir tu critica en la respuesta de quien la oye, usando el marco de la franqu
+  grafo        recorrer_trece_elementos_proceso_evaluacion_formal   Recorrer los trece elementos que el texto nombra para disenar un proceso forma
+  grafo        montar_evaluacion_360_grados_ligera_pares            Montar un proceso de evaluacion de trescientos sesenta grados en vez de fiarte
+  grafo        mantener_proceso_evaluacion_ligero_vigilar_crecimien Mantener ligero el proceso de evaluacion vigilando activamente cuanto tiempo s
+
+BANDEJAS (cuarentena/, sin _insertados ni _derivadas):
+  ensayo_refer calculo_roi_calidad                                  Cálculo del Retorno de Inversión (ROI) en Calidad
+  ensayo_refer comprension_capacidades_limitaciones_ia              Comprensión de las Capacidades y Limitaciones Impredecibles de la IA
+  ensayo_refer consejo_calidad_informacion                          Consejo de Calidad de la Información (Information Quality Council)
+  ensayo_refer costo_de_calidad_3                                   Paso 4: Costo de la Calidad
+  ensayo_refer definicion_y_concepto_de_aseguramiento_de_calidad    Definición y Concepto de Aseguramiento de Calidad
+  ensayo_refer definiciones_operacionales_2                         Definiciones Operacionales (Método, Prueba y Criterio)
+  ensayo_refer diseno_de_flujos_pace_layers                         Capas de Ritmo (Pace Layers) y Diseño de Flujos
+  ensayo_refer dmaic_fase_improve                                   DMAIC - Fase Improve (Mejora del Proceso)
+  ensayo_refer funcion_identify_inventario_activos                  Función Identificar: Inventario de Activos Digitales
+  ensayo_refer funciones_del_departamento_de_calidad                Funciones Clave de Control de Calidad (Inspección, Pruebas, Proveedores)
+  ensayo_refer identificacion_del_verdadero_cliente                 Identificación del Verdadero Cliente (Quién Decide la Calidad)
+  ensayo_refer limites_tolerancia_estadistica                       Límites de Tolerancia Estadística basados en Variabilidad del Proceso
+  ensayo_refer medicion_desempeno_integrado                         Medición Integrada de Desempeño: Cronograma, Costo y Calidad
+  ensayo_refer medicion_resultados_marketing_franquicia             Cómo medir resultados en el marketing de tus franquicias
+  ensayo_refer modelo_costo_optimo_calidad                          Modelo de Costo Óptimo de Calidad
+  ensayo_refer no_sacrificar_calidad_por_velocidad                  No se Puede Cambiar Calidad por Velocidad
+  ensayo_refer planificacion_estrategica_despliegue_2               Cómo integrar la calidad en tu plan de negocio
+  ensayo_refer proceso_como_cadena_de_etapas                        El Proceso como Cadena de Etapas Cliente-Proveedor
+  ensayo_refer proceso_venta_b2b                                    El Proceso de Venta B2B (Sales Process)
+  ensayo_refer pruebas_inadecuadas_prototipos                       Pruebas inadecuadas de prototipos
+  ensayo_refer wizard_of_oz_testing                                 Prueba Mago de Oz (Wizard of Oz Testing)
