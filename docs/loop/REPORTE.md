@@ -43374,8 +43374,22 @@ huellas al lado, que son **exactamente las que `forja.py corregir` imprimio** en
     $ date +%s        al escribir esta seccion
     1789780160
 
-**`934` segundos, o sea `15,6` minutos de los `40` del techo.** El techo **no mordio**, y lo digo con
-la cifra delante en vez de decir que sobro tiempo: **una vuelta de saneamiento cuesta una fraccion de
+**`934` segundos, o sea `15,6` minutos de los `40` del techo**, en el momento de escribir esta
+seccion.
+
+**CORRECCION DECLARADA, ANEXADA TRAS EL COMMIT DE LA VUELTA, porque una cifra de cierre se mide al
+cierre** (`EXTRACTOR.md` 4) **y esa medicion era intermedia:** el turno cerro de verdad con el push,
+y su reloj se lee de git, no de mi memoria:
+
+    $ git log -1 --format='%h %s'
+    de12cdb VUELTA 44, LA PRIMERA DE SANEAMIENTO DE ESTA LINEA: seis deudas pagadas de doce, ...
+    $ date +%s        justo tras el push
+    1789780889
+
+**`1663` segundos de turno, o sea `27,7` minutos de los `40`.** Los `12` minutos que separan las dos
+cifras se fueron **en el cierre**: `cerrar_reporte.py` corre las `305` pruebas de aceptacion mas el
+tallado, el censo y la vigencia, y el hook de commit **los vuelve a correr**. El techo **no mordio**,
+y lo digo con la cifra delante en vez de decir que sobro tiempo: **una vuelta de saneamiento cuesta una fraccion de
 una de insercion**, y eso es exactamente lo que `D.55` predijo al agendarla.
 
 **EL COSTE EN DINERO:** ningun instrumento de esta casa lo mide, asi que **no publico una cifra que
