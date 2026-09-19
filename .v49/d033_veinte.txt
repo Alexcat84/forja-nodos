@@ -1,0 +1,32 @@
+$ python -m unittest tests.test_aceptacion.PruebaE.test_e_guion_largo_rompe_el_hook      (x20, una detras de otra, arbol quieto)
+
+  #   codigo   segundos   veredicto
+  --------------------------------------------
+   1   0          22.9     OK
+   2   0          22.8     OK
+   3   0          23.1     OK
+   4   0          22.0     OK
+   5   0          23.1     OK
+   6   0          22.9     OK
+   7   0          22.0     OK
+   8   0          21.8     OK
+   9   0          23.0     OK
+  10   0          22.6     OK
+  11   0          22.7     OK
+  12   0          22.7     OK
+  13   0          22.4     OK
+  14   0          21.7     OK
+  15   0          22.1     OK
+  16   0          22.2     OK
+  17   0          22.6     OK
+  18   0          22.5     OK
+  19   0          21.9     OK
+  20   0          22.7     OK
+
+corridas            : 20
+rojas               : 0   (ninguna)
+tasa de roja        : 0.0000  (0 de 20)
+banda al 95 por ciento (Wilson) : de 0.0000 a 0.1611
+
+reloj por corrida   : menor 21.7 s, media 22.5 s, mayor 23.1 s
+reloj de las 20      : 449.7 s
