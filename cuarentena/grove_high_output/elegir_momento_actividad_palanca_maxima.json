@@ -1,0 +1,42 @@
+{
+  "id": "elegir_momento_actividad_palanca_maxima",
+  "titulo": "Elegir el momento de una actividad para que su palanca sea maxima: por delante del acontecimiento, o inmediata cuando el momento manda",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [],
+  "fuentes": [
+    {
+      "clave": "grove_high_output",
+      "fecha": "2026-09-19"
+    }
+  ],
+  "denominaciones": {
+    "nombre_largo": "La palanca que depende de cuando se ejerce: el trabajo preparatorio hecho por delante del acontecimiento, que le quita confusion a mucha gente durante mucho tiempo, y la accion inmediata cuando aplazarla cuesta todas las posibilidades",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "timeliness"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "milestones"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando la actividad que tienes delante es de las de alta palanca y esta a tiempo de hacerse antes o despues, porque hacerla tarde no la hace menos actividad pero si la hace valer mucho menos.",
+  "entregable_esperado": "La actividad colocada en su momento: la preparatoria hecha por delante del acontecimiento con su informacion y sus responsables ya definidos, y la que depende del momento atendida en el acto.",
+  "pasos_accionables": [
+    "Cuenta con que la palanca de una actividad depende de cuando se ejerce.",
+    "Haz por delante del acontecimiento el trabajo que lo prepara: define con antelacion exactamente que informacion hay que reunir y presentar en cada etapa del proceso, y deja puesto quien responde de que.",
+    "Cuenta con lo que ese trabajo hecho por delante consigue: afecta directamente al trabajo posterior de mucha gente y le quita confusion y ambiguedad a una poblacion grande durante un periodo largo.",
+    "Cuenta tambien con lo contrario: el mismo trabajo hecho tarde, corriendo despues a ayudar a un mando a definir sus pautas y sus hitos, tiene mucha menos palanca.",
+    "Cuando la actividad sea de las que dependen del momento, atiendela inmediatamente: si te enteras de que un subordinado valioso ha decidido irse, dirigete a esa situacion en el acto si quieres que cambie de idea.",
+    "Cuenta con que si la aplazas pierdes todas tus posibilidades.",
+    "Ten presente la oportunidad del momento, que muchas veces es critica, para sacar a tus actividades la maxima palanca."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_04.md, unidad Cap. 3, titulo textual Managerial Leverage. Sale de la PIEZA P20 de la frontera publicada en esta vuelta 46, L215 a L217, 297 palabras, y de ningun otro tramo. POR QUE ES PROCEDIMIENTO: el libro pone la regla (leverage that depends, however, on when it is performed) y pone SU PROPIO INVENTARIO de lo que es hacer el trabajo por delante, nombrado pieza a pieza (defines in advance exactly what information needs to be gathered and presented at each stage of the planning process and lays out who is responsible for what), mas el contraste de hacerlo tarde y el segundo caso, el del subordinado que se va. Es inventario de OBJETOS DE TRABAJO y de ETAPAS, no de metas. DE DONDE SALE CADA PASO, uno a uno: paso 1 de L215 (leverage that depends, however, on when it is performed); paso 2 de L215 (When Robin defines in advance exactly what information needs to be gathered and presented at each stage of the planning process and lays out who is responsible for what); paso 3 de L215 (she directly affects the subsequent work of perhaps two hundred people, y By spending a certain amount of time in advance of the planning activities, Robin will help to eliminate confusion and ambiguity for a large population of managers over an extended period of time); paso 4 de L215 (If Robin has to scramble later to help a manager define guidelines and milestones, her work will clearly have much less leverage); paso 5 de L217 (Another example of leverage that depends on timely action is what you do when you learn that a valued subordinate has decided to quit. In such a case, you must direct yourself to the situation immediately if you want to change the person mind); paso 6 de L217 (If you put it off, all your chances are lost); paso 7 de L217 (Thus to maximize the leverage of his activities, a manager must keep timeliness, which is often critical, firmly in mind). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. Y EL RESPONSABLE DEL PASO 2 NO ES PUENTE, que es la tercera especie de EXTRACTOR.md 15.4 y la que mas se cuela: lo escribo porque el libro lo escribe en ese mismo renglon, lays out who is responsible for what. Si el renglon no lo dijera, no estaria. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: NO escribo CUANTO tiempo antes hay que hacer el trabajo preparatorio, porque el libro dice a certain amount of time in advance y no pone cifra, y ponerla yo seria puente de la segunda especie, el periodo; NO escribo la cifra de las doscientas personas como si fuera una vara (el libro dice perhaps two hundred people, o sea una estimacion del caso), y por eso el paso 3 dice mucha gente y una poblacion grande, que es lo que el libro sostiene fuera del caso; NO escribo a quien se le informa. LOS DOS CASOS ENTRAN NOMBRADOS DENTRO Y NO EN CASA PROPIA (manual 3.5): el de la responsable del proceso anual de planificacion y el del subordinado que decide irse. Y LA SENIAL BARATA DE QUE ESO SE HIZO MAL LA COMPRUEBO CONTRA MI ENTREGABLE: el entregable no lleva ningun dato de ninguno de los dos casos, ni las doscientas personas ni el proceso de planificacion. ARISTA DECLARADA, para cablearla el dia de la insercion: es hija de buscar_actividad_alta_palanca_tres_vias, cuya primera via (mucha gente afectada por un solo mando) este nodo despliega con su condicion de tiempo. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: los pasos 2, 3 y 4 salen del caso de la planificacion anual, y un lector estricto puede decir que un caso no puede poner pasos, que es el mismo discutible que la ficha de clasificar_trabajo_proceso_montaje_prueba lleva desde cap_02. Lo sostengo porque el libro saca de ese caso la regla general en el mismo renglon (leverage that depends on when it is performed) y porque el segundo caso, el del subordinado, repite la misma estructura con otro material, que es la prueba de que la doctrina es del libro y no del caso. Si cae, cae DENTRO de mi marcado."
+}
