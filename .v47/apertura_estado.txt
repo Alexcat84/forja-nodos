@@ -1,0 +1,26 @@
+    $ git rev-parse --abbrev-ref HEAD
+extraccion-mundo-11
+    $ git log -1 --format="%h %ad %s" --date=iso
+327d969 2026-09-19 03:39:03 -0400 Apertura de la vuelta 47: el registro del arnes sellado antes de tocar el capitulo
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+    346 dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1087 total
+
+    $ for d in cuarentena/*/ cuarentena/_insertados/*/; do echo "$d : $(ls $d*.json 2>/dev/null | wc -l)"; done
+cuarentena/_derivadas/ : 2
+cuarentena/_insertados/ : 0
+cuarentena/ensayo_referencia_163/ : 163
+cuarentena/grove_high_output/ : 30
+cuarentena/marquet_turn_the_ship/ : 3
+cuarentena/onu_consumidor/ : 0
+cuarentena/scott_radical_candor/ : 0
+cuarentena/smart_who/ : 0
+cuarentena/zhuo_manager/ : 0
+cuarentena/_insertados/grove_high_output/ : 1
+cuarentena/_insertados/onu_consumidor/ : 6
+cuarentena/_insertados/scott_radical_candor/ : 142
+cuarentena/_insertados/smart_who/ : 59
+cuarentena/_insertados/zhuo_manager/ : 136

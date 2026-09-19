@@ -44429,3 +44429,96 @@ y escribir las ocho fichas no lo mide ningun instrumento de esta casa.
 
 **LA VUELTA 46 CIERRA CON SUS CINCO FILAS CERRADAS, CERO INSERCIONES POR PUERTA MEDIDA, `8`
 CANDIDATOS NUEVOS EN LA BANDEJA DE `grove_high_output` Y `0` PUENTE DE `50` PASOS.**
+
+---
+
+# VUELTA 47 DE LA LINEA SERIAL, `extraccion-mundo-11`: **TERMINAR `cap_04` DE `grove_high_output`, Y NO SALTAR A `cap_05`**
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor en la `ACTA 45`. Modo austero
+(`D.47`): no repito lo que el registro ya dice.*
+
+> **ESQUELETO ABIERTO AL EMPEZAR, CON LAS FILAS VACIAS** (`EXTRACTOR.md` 3). Cada tarea anexa su
+> fila al cerrarse.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `II.1` | los registros de la `ACTA 45`: la correccion declarada del `116`, las tres deudas nuevas dichas y no pagadas, y `d024` pendiente a proposito | *(vacia al abrir)* |
+| `II.2` | `cap_04` sigue abierto: los ocho siguientes por su tramo, cada uno por su aduana en el acto, **cero inserciones**, y no se toca `cap_05` | *(vacia al abrir)* |
+| `II.3` | `PASOS INVENTADOS` de `cap_04` con su denominador, **y al lado la fila de la vuelta 46** | *(vacia al abrir)* |
+| `II.4` | el cierre: las cinco guardas, la tabla `D.52`, el estado recomputado, la linea del tramo con su reloj, y el coste de `D.55` | *(vacia al abrir)* |
+
+## II.0. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
+
+**Lo pendiente commiteado y pusheado antes de tocar nada** (`EXTRACTOR.md` 1.1). Lo que ese commit
+llevaba eran los tres ficheros del arnes (`loop.log`, `ultimo_auditor.json`, `ultimo_extractor.json`),
+**ninguno mio**, y el estado que deja esa operacion se cita como intermedio con el nombre de la
+operacion que ya lo movio.
+
+<!-- TALLADO: parcial salida=.v47/apertura_estado.txt -->
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git log -1 --format="%h %ad %s" --date=iso
+    327d969 2026-09-19 03:39:03 -0400 Apertura de la vuelta 47: el registro del arnes sellado antes de tocar el capitulo
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+
+    cuarentena/grove_high_output/ : 30
+    cuarentena/marquet_turn_the_ship/ : 3
+    cuarentena/_insertados/grove_high_output/ : 1
+
+**LAS GUARDAS AL ABRIR**, corridas por mi en esta vuelta y no copiadas de ninguna acta
+(`EXTRACTOR.md` 5):
+
+<!-- TALLADO: parcial salida=.v47/apertura_guardas.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+<!-- TALLADO: parcial salida=.v47/apertura_pruebas.txt -->
+
+    $ time python tests/test_aceptacion.py
+      total: 318 pruebas, 0 fallos, 0 errores
+    real	1m58.618s
+
+**EL CREDITO Y LA DEUDA AL ABRIR**, leidos y no anotados por mi (`EXTRACTOR.md` 14):
+
+<!-- TALLADO: parcial salida=.v47/credito_apertura.txt -->
+
+    $ python forja.py credito
+      especie            racha      de donde sale
+      AUDITOR            2 de 3     ACTA 45
+      CIFRA PUBLICADA    0 de 2     ACTA 45
+      CLASE              0 de 2     ACTA 45
+      DATO MOVIDO        0 de 2     ACTA 45
+      REPORTE            0 de 3     ACTA 45
+      CREDITO ENTERO: ninguna especie en su tope.
+
+<!-- TALLADO: parcial salida=.v47/deuda_apertura.txt -->
+
+    $ python scripts/deuda.py
+      pendientes: 12    pagadas: 8
+      ultima vuelta de saneamiento: 44
+
+**`REPORTE` ABRE EN `0 de 3` Y `AUDITOR` EN `2 de 3`**, que es exactamente lo que la `ACTA 45`
+anuncia. **Lo leo y no lo anoto**: esa sede no es mia.
+
+**LA PUERTA DE `D.39`, MEDIDA OTRA VEZ Y NO SUPUESTA**, porque esta corrida vuelve a llegar con
+`MODO_INSERCION=insertar` y a la vez con su condicion entera: *los candidatos de un lote ABIERTO se
+quedan en cuarentena hasta que su lote cierre*.
+
+<!-- TALLADO: parcial salida=.v47/puerta_d39.txt -->
+
+    $ python -c "..."   sobre config/frentes.json
+    cerrados_en_extraccion : {'smart_who': ..., 'zhuo_manager': ..., 'scott_radical_candor': ...}
+    grove_high_output CERRADO EN EXTRACCION: False
+
+**TERCERA VUELTA SEGUIDA CON LA PUERTA CERRADA, Y LA CONCLUSION ES LA MISMA: CERO INSERCIONES.**
+No es una parada: el encargo de hoy no pide insertar, pide terminar de minar, y por eso esto va en
+la apertura y no en una fila de tarea.
