@@ -1,0 +1,17 @@
+POBLACION del grafo: 346 nodos de dataset/nodos.jsonl
+a madre=fijar_cuatro_notas_calcular_nota_global                 existe=True  pasos=12  paso_8_existe=True  hijo=elegir_categorias_nota_palabras_propias_empresa    existe=True  arista_ya=False
+    P8: Cuenta con lo que cuatro notas por separado en cada una de las categorias elegidas permiten: que la evaluacion sirva de diagnostico para mejorar, del 
+b madre=repartir_notas_publicar_reparto_esperado                existe=True  pasos=9   paso_3_existe=True  hijo=calibrar_notas_reunion_jefes_pares                 existe=True  arista_ya=False
+    P3: Cuenta con lo que el texto dice que es lo mas importante en general: el proceso de calibracion.
+c madre=presionar_curva_notas_evitar_forzarla                   existe=True  pasos=11  paso_11_existe=True  hijo=calibrar_notas_reunion_jefes_pares                 existe=True  arista_ya=False
+    P11: Cuenta con hacia donde se tuerce la mayoria, que es lo que el texto dice que hace importantes las sesiones de calibracion: casi todos los jefes se que
+d madre=evaluar_desempenio_dos_veces_anio                       existe=True  pasos=11  paso_6_existe=True  hijo=montar_evaluacion_360_grados_ligera_pares          existe=True  arista_ya=False
+    P6: Haz la otra escrita, e incluye en ella un componente ligero de trescientos sesenta grados.
+e madre=hacer_critica_pares_transparente_ensenar_escribirla     existe=True  pasos=11  paso_1_existe=True  hijo=montar_evaluacion_360_grados_ligera_pares          existe=True  arista_ya=False
+    P1: Ten delante la decision, que el texto plantea asi: si haces critica de trescientos sesenta grados, tienes que decidir si sera transparente, es decir q
+f madre=mantener_proceso_evaluacion_ligero_vigilar_crecimiento  existe=True  pasos=13  paso_6_existe=True  hijo=montar_evaluacion_360_grados_ligera_pares          existe=True  arista_ya=False
+    P6: Monta la herramienta de evaluacion ligera igual que la herramienta de trescientos sesenta grados: que pida a los jefes calificar a sus empleados en ca
+g madre=mantener_proceso_evaluacion_ligero_vigilar_crecimiento  existe=True  pasos=13  paso_5_existe=True  hijo=hacer_critica_pares_transparente_ensenar_escribirla existe=True  arista_ya=False
+    P5: Recuerda que el proceso tardara menos y sera mas radicalmente franco si toda la critica de trescientos sesenta grados es transparente: no tener que si
+h madre=montar_evaluacion_360_grados_ligera_pares               existe=True  pasos=10  paso_6_existe=True  hijo=elegir_categorias_nota_palabras_propias_empresa    existe=True  arista_ya=False
+    P6: Aligera la evaluacion entre pares con lo que el texto recomienda, y es lo primero: pide simplemente a los empleados que califiquen a sus pares en cada

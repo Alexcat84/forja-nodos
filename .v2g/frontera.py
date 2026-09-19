@@ -150,5 +150,27 @@ print("NODOS QUE MI FRONTERA DA EN LA UNIDAD DE ESTA VUELTA (cap_03): %d" % tota
 print("TECHO DE CANDIDATOS POR VUELTA (EXTRACTOR.md 12.4): entre 5 y %d" % TOPE)
 print("DENTRO DEL TECHO                                             : %s"
       % ("SI" if 5 <= total_nodos <= TOPE else "NO"))
-print("LA VUELTA CIERRA EN cap_03 (12.4, precedencia): las otras 17 unidades del")
+# CORRECCION DECLARADA de la vuelta 44 (deuda d001, cita grove PARA_ALEXIS 5.3.1).
+# DECIA: un 17 TECLEADO, que es 18 menos 1 y descuenta solo la unidad de esta vuelta.
+# DICE: las unidades del libro menos LAS YA MINADAS, contadas del fichero y no de la cabeza.
+# POR QUE ESTABA MAL: cap_01 y cap_02 ya estaban minados por la vuelta 1 del frente, asi
+# que restar solo cap_03 cuenta dos veces un trabajo ya hecho. La cifra correcta es 15.
+import glob as _glob
+import os as _os
+import re as _re
+_UNIDADES = sorted(_glob.glob(_os.path.join("fuentes", "grove_high_output", "cap_*.md")))
+_MINADAS = set()
+for _ficha in (_glob.glob(_os.path.join("cuarentena", "grove_high_output", "*.json"))
+               + _glob.glob(_os.path.join("cuarentena", "_insertados",
+                                          "grove_high_output", "*.json"))):
+    for _cap in _re.findall(r"fuentes/grove_high_output/(cap_\d+)\.md",
+                            io.open(_ficha, encoding="utf-8").read()):
+        _MINADAS.add(_cap)
+_RESTANTES = [u for u in _UNIDADES
+              if _os.path.basename(u)[:-3] not in _MINADAS]
+print("UNIDADES DEL LIBRO                                           : %d" % len(_UNIDADES))
+print("UNIDADES YA MINADAS (leidas de las fichas, no descontadas a ojo): %d  %s"
+      % (len(_MINADAS), " ".join(sorted(_MINADAS))))
+print("LA VUELTA CIERRA EN cap_03 (12.4, precedencia): las otras %d unidades del"
+      % len(_RESTANTES))
 print("libro pasan a la vuelta siguiente, y eso se declara en el reporte.")

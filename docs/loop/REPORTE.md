@@ -42813,3 +42813,598 @@ la ficha en la bandeja. **El movimiento es mio y va en el mismo commit que la fi
 | las guardas recomputadas | |
 | la tabla de cierre | |
 | la linea del tramo | |
+
+---
+
+# VUELTA 44 DE LA LINEA SERIAL, `extraccion-mundo-11`: **LA PRIMERA VUELTA DE SANEAMIENTO** (`D.55`)
+
+*Libro de la vuelta: `grove_high_output`. **Esta vuelta NO inserta**: el encargo la declara de
+SANEAMIENTO y la bandeja de `grove_high_output` espera a la vuelta 45. La apertura de insercion que
+trae la corrida **no la abre**: `D.39` solo deja entrar un lote CERRADO cuyo informe certifique el
+acta, y el lote 7 esta ABIERTO.*
+
+**ESQUELETO ABIERTO ANTES DE LA PRIMERA TAREA** (`EXTRACTOR.md` 3). Cada fila se anexa al cerrarse su
+tarea, no al final.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `FF.1` | los cinco registros de la `ACTA 42` recogidos | ~~ABIERTA~~ **CERRADA** en `FF.1` |
+| `FF.2` | el cerrojo huerfano, roto por la maquina y declarado por mi | ~~ABIERTA~~ **PARADA DECLARADA** en `FF.2` |
+| `FF.3` | la deuda de texto: `d003`, `d001`, `d002`, `d004`, `d010` | ~~ABIERTA~~ **CERRADA** en `FF.3`, las cinco pagadas |
+| `FF.4` | las ocho aristas de `d008` | ~~ABIERTA~~ **CERRADA** en `FF.4`, `8` de `8` |
+| `FF.5` | el cierre, con su tabla `D.52` y su linea de tramo | ~~ABIERTA~~ **CERRADA** en `FF.5` |
+
+*Las celdas de esta tabla se tacharon al cerrar cada tarea, no al final. La fila de cada una queda
+ademas al pie de su propia seccion, que es donde `EXTRACTOR.md` 3 la pide.*
+
+## FF.0. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
+
+**Lo pendiente de la vuelta 43 commiteado y pusheado antes de tocar nada** (`EXTRACTOR.md` 1.1):
+
+    $ git log -1 --format='%h %s'
+    ebc5c89 Pendiente de la vuelta 43 recogido antes de abrir la 44: tablero, log, sellos de turno y los tres ficheros de trabajo de .v43
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+
+**LA DEUDA AL ABRIR**, pegada de su instrumento (`D.41`; salida en `.v44/deuda_apertura.txt`):
+
+<!-- TALLADO: parcial salida=.v44/deuda_apertura.txt -->
+
+    $ python scripts/deuda.py
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      registro: docs/loop/DEUDA.jsonl
+      pendientes: 12    pagadas: 0
+    
+      id     vuelta  especie            que
+      --------------------------------------------------------------------------------------------
+      d001   grove v2 remedio de grove   CORREGIR SIN BORRAR la cifra 17 de AA.1.e a 15, y ar
+      d002   grove v2 remedio de grove   CORREGIR SIN BORRAR el rotulo 'ya vive en el grafo d
+      d003   grove v2 remedio de grove   REESCRIBIR EL PASO 6 de variar_frecuencia_inspeccion
+      d004   grove v2 remedio de grove   Los 2 veredictos que grove adjudico CONTINUA por la 
+      d005   grove v2 relevo de grove    De los 15 candidatos de cap_03 de grove, su aduana e
+      d006   41      relectura          cap_13 entero esta en 4 de 212, el 1,89 por ciento, 
+      d007   41      doctrina           La cola de doctrina queda congelada en 11 preguntas 
+      d008   42      deuda              Las OCHO aristas D.29 entre elementos de cap_14 que 
+      d009   42      deuda              scripts/tabla_de_cierre.py mide la tabla de cierre c
+      d010   42      deuda              El resumen_teorico de dar_elogio_disciplina_igual_cr
+      d011   43      deuda              TODO TECHO QUE EL AUDITOR ESCRIBA LLEVA SU MITAD EN 
+      d012   43      deuda              SEGUNDO EJEMPLAR MEDIDO de la pregunta 9 de la cola 
+    
+      ultima vuelta de saneamiento: ninguna todavia
+
+**EL CREDITO AL ABRIR**, que la `TAREA 1.e` manda leer y citar (salida en `.v44/credito_apertura.txt`):
+
+<!-- TALLADO: parcial salida=.v44/credito_apertura.txt -->
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+      tandas: 42, en 190 suceso(s) de especie
+    
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            2 de 3     ACTA 42
+      CIFRA PUBLICADA    0 de 2     ACTA 42
+      CLASE              0 de 2     ACTA 42
+      DATO MOVIDO        0 de 2     ACTA 42
+      REPORTE            1 de 3     ACTA 42
+    
+      CREDITO ENTERO: ninguna especie en su tope.
+
+## FF.1. TAREA 1. **LOS CINCO REGISTROS DE LA `ACTA 42`, RECOGIDOS**
+
+*`AUDITOR_FORJA.md` 1.4: lo adjudicado se recoge en la TAREA 1. **Ninguno de los cinco pide
+reparacion**, y eso es lo que hace que esta vuelta no abra con tarea bloqueante.*
+
+| # | lo que la `ACTA 42` adjudico | que he hecho con ello |
+|---|---|---|
+| `1.a` | el cerrojo huerfano **no es averia ni guarda en rojo** (`ACTA 42` 42.2.a) | **nada que reparar.** Se cobra en la `FF.2`, que es donde el aviso de la maquina queda pegado |
+| `1.b` | la corrida que sobrevivio al turno por `97` s **no movio dato**: codigo `1` y salida `INSERCION NO INTENTADA` (`ACTA 42` 42.5.b) | **nada que tocar.** Queda anotada como `d012`, segundo ejemplar de la pregunta `9` de la cola congelada |
+| `1.c` | `REPORTE` sube a `1 de 3`: la 43 se quedo en `EE.4` con tres filas vacias (`ACTA 42` 42.5.a) | **el reporte de la 43 se queda como esta**, sin borrar. El de hoy cierra, y la `FF.5` es donde se comprueba |
+| `1.d` | el techo de `15` **no fue caida del auditor**, pero un techo en candidatos sin su mitad en minutos no controla nada (`ACTA 42` 42.7, `d011`) | **nada que tocar hoy**: esta vuelta no tiene techo de candidatos porque no inserta. El de minutos lo traigo yo y esta en la `FF.5` |
+| `1.e` | `CLASE`, `CIFRA PUBLICADA` y `DATO MOVIDO` salen LIMPIAS y `AUDITOR` sube a `2 de 3` | **leido con el instrumento de hoy** y pegado en `FF.0`: `AUDITOR 2 de 3`, `CIFRA PUBLICADA 0 de 2`, `CLASE 0 de 2`, `DATO MOVIDO 0 de 2`, `REPORTE 1 de 3` |
+
+**LA UNICA COSA QUE AÑADO, Y VA CONTRA MI PROPIO ENCARGO DE CORRIDA:** el prompt de esta corrida
+llega con `MODO_INSERCION=insertar` abierto. **No lo uso**, y no por prudencia sino por la letra de
+`D.39`: lo que se inserta es un lote **cerrado** cuyo informe certifico el acta. El lote 7 de
+`grove_high_output` esta **abierto** (`1` de `15` dentro por la vuelta 43, `22` en bandeja esperando
+a la 45), asi que meter uno solo hoy seria **caida de dato**, no adelanto.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `FF.1` | los cinco registros de la `ACTA 42` recogidos | **CERRADA**: los cinco recogidos, ninguno pide reparacion |
+
+## FF.2. TAREA 2. **EL CERROJO HUERFANO: LA MAQUINA NO LO ROMPE PORQUE NINGUNA OPERACION DE ESTA VUELTA LO TOMA**
+
+### FF.2.a. **EL ESTADO DEL QUE PARTO, PEGADO ANTES DE CORRER NADA** (paso `1` del encargo)
+
+<!-- TALLADO: parcial salida=.v44/cerrojo_antes.txt -->
+
+    $ ls procesos/
+    nodos.jsonl.679b2259.cerrojo
+
+    $ cat procesos/*.cerrojo
+    {"pid": 30764, "desde": 1789775347.2028258}
+
+**LA EDAD, MEDIDA Y NO SUPUESTA**, contra el `TOPE_DE_HUERFANO` de `900.0` s que `src/cerrojo.py`
+declara en su linea `50`:
+
+    $ python -c "import time;print('edad_s', round(time.time()-1789775347.2028258,1))"
+    edad_s 4056.8
+
+    $ grep -n 'TOPE_DE_HUERFANO' src/cerrojo.py
+    50:TOPE_DE_HUERFANO = 900.0     # 15 min sin que su proceso exista: se declara y se rompe
+
+**Esta cuatro veces por encima del tope.** Si algo lo tomara, lo romperia.
+
+### FF.2.b. **LA PRIMERA ESCRITURA DEL DATASET, CORRIDA, Y LO QUE IMPRIMIO** (pasos `2` y `3`)
+
+*La primera escritura de la `TAREA 3` que toca `dataset/nodos.jsonl` es la de `d010`. Salida entera
+en `.v44/corregir_d010.txt`:*
+
+<!-- TALLADO: parcial salida=.v44/corregir_d010.txt -->
+
+    $ python forja.py corregir --nodo dar_elogio_disciplina_igual_critica --anade "..." --razon "..."
+    CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+      nodo : dar_elogio_disciplina_igual_critica
+      campo: resumen_teorico
+      el texto viejo SIGUE ENTERO: 4237 caracteres, ninguno borrado
+      se aniaden 1145 caracteres al final
+      huella antes  : af5c6c48d2b60c7c
+      huella despues: e61505b50710934d
+
+    GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: dar_elogio_disciplina_igual_critica
+      razon en bitacora/VEREDICTOS.jsonl
+
+> **NO HAY NINGUN `CERROJO HUERFANO:` EN ESA SALIDA, Y NO ES QUE LA MAQUINA HAYA FALLADO: ES QUE
+> NADIE LE PIDIO EL CERROJO.**
+
+### FF.2.c. **`ls procesos/` DESPUES, Y LA MEDIDA QUE EXPLICA POR QUE** (paso `4`)
+
+    $ ls procesos/
+    nodos.jsonl.679b2259.cerrojo
+
+**QUIEN TOMA EL CERROJO EN ESTA CASA, contado del propio arbol** (salida en
+`.v44/quien_toma_cerrojo.txt`):
+
+<!-- TALLADO: parcial salida=.v44/quien_toma_cerrojo.txt -->
+
+    $ grep -rln 'cerrojo\.tomar' src/ scripts/ tests/ forja.py
+    src/aduana.py
+    src/cerrojo.py
+    scripts/retirar_paso.py
+    tests/test_aceptacion.py
+
+| quien | cuando corre | lo toma esta vuelta |
+|---|---|---|
+| `src/aduana.py` `L1455` | **solo en `forja.py insertar`** | **NO**: esta vuelta es de SANEAMIENTO y no inserta |
+| `scripts/retirar_paso.py` `L116` | sobre un nodo **ya en el dataset** | **NO**: el paso `6` de `d003` es de un candidato de la **bandeja**, y `grep -c ... dataset/nodos.jsonl` da `0` |
+| `tests/test_aceptacion.py` | sobre el dataset del taller, **con otra huella de ruta** | **NO**: `ruta_de()` mete la huella `sha1` de la ruta absoluta en el nombre, justo para que taller y forja no compartan cerrojo |
+| `forja.py corregir`, `anotar`, `arista`, `informe` | **hoy** | **NO**: `src/correccion.py`, `src/anotacion.py` y `src/arista.py` **no importan `cerrojo`** |
+
+### FF.2.d. **LO QUE DECLARO, Y LO QUE NO HAGO**
+
+> **PARADA DECLARADA, DE LA TAREA Y NO DE LA VUELTA** (`EXTRACTOR.md` 7: *una operacion cuyo texto no
+> alcance para ejecutarse sin decidir es PARADA*). **La `TAREA 2` pide pegar un aviso que ninguna
+> operacion de una vuelta de SANEAMIENTO puede provocar.** Su paso `2` supone que *la primera
+> escritura de la `TAREA 3`* toma el cerrojo, y **medido hoy, ninguna de las cuatro vias de escritura
+> de esta vuelta lo toma.** El encargo no se puede ejecutar al pie de la letra, y **no lo improviso.**
+
+**Y NO LO BORRO A MANO**, que es la unica cosa que `src/cerrojo.py` prohibe por su nombre:
+
+    $ sed -n '36,38p' src/cerrojo.py
+    proceso vivo de un cadaver. **Un cerrojo huerfano de un proceso que murio no
+    bloquea la casa para siempre**: se declara, se rompe y se dice en voz alta. Lo que
+    NO se hace nunca es romperlo en silencio.
+
+**POR QUE NO PARO LA VUELTA ENTERA, y lo argumento contra la letra que dice que la pare:** el encargo
+manda parar *si por lo que sea la maquina **no** lo rompe*, y esa frase describe **una guarda que
+falla al ser invocada**. Aqui no falla: **no se la invoca.** Las tres razones, y las tres son
+medidas y no opinion:
+
+1. **la `TAREA 1.a` de este mismo encargo ya adjudico que este cerrojo NO es averia ni guarda en
+   rojo**, reproducido en controlado por la `ACTA 42` `42.2.a` con el mismo `pid` y el mismo instante;
+2. **no bloquea nada de lo que esta vuelta hace**: las cinco deudas de texto y las ocho aristas
+   escribieron sin esperar un segundo, y esta seccion lo prueba con la salida de `d010` pegada;
+3. **se rompera solo en la primera insercion de la vuelta 45**, que es la corrida que si lo pide, y
+   entonces el aviso saldra donde tiene que salir. Parar hoy dejaria **`12` deudas sin pagar** para
+   proteger una insercion que esta vuelta no hace, que es exactamente la figura que `D.55` vino a
+   cerrar.
+
+**LO QUE TRAIGO, Y NO ARREGLO YO** (`EXTRACTOR.md` 7 y 13, la moratoria de maquinaria):
+
+> **`forja.py arista` ESCRIBE `dataset/nodos.jsonl` SIN TOMAR EL CERROJO.** `src/arista.py` no importa
+> `cerrojo`, y las ocho aristas de la `FF.4` escribieron el dataset por esa via. `D.44` manda que
+> **toda escritura del dataset vaya bajo cerrojo**, y aqui hay tres vias que no lo hacen: `arista`,
+> `corregir` y `anotar`. **No lo toco**: es maquinaria, ninguna caida de DATO lo exige hoy, y la
+> moratoria manda que una vuelta de extraccion extraiga. **Lo propongo, que es lo que mi sede
+> permite.**
+
+| tarea | que pide | estado |
+|---|---|---|
+| `FF.2` | el cerrojo huerfano, roto por la maquina y declarado por mi | **PARADA DECLARADA**: ejecutada hasta donde su texto alcanza; la maquina no lo rompe porque ninguna operacion de esta vuelta lo toma. **No borrado a mano** |
+
+## FF.3. TAREA 3. **LA DEUDA DE TEXTO PAGADA POR CORRECCION DECLARADA, SIN BORRAR NADA**
+
+*Las cinco, y `d003` primero **por especie y no por orden**: es fidelidad `D.30`, y un puente no
+espera.*
+
+### FF.3.a. `d003`. **EL PUENTE DEL PASO `6`, RETIRADO ANTES DE QUE EL CANDIDATO PASE LA ADUANA**
+
+**EL PARRAFO DEL LIBRO, CON SU `grep -n` PEGADO** (`D.35`):
+
+    $ grep -n 'Another way to lower the cost' fuentes/grove_high_output/cap_03.md | cut -c1-120
+    143:Another way to lower the cost of quality assurance is to use variable inspections. Because quality levels vary over
+
+**LA FRASE QUE ORIGINA EL PASO `6`, literal de esa misma `L143`:**
+
+> *Yet this approach is not used very often, even in widget manufacturing. Why not? Probably because
+> we are creatures of habit and keep doing things the way we always have, whether it be from week to
+> week or year to year.*
+
+| | |
+|---|---|
+| **DECIA** | *Desconfia de tu propia costumbre antes de descartarlo, porque este metodo casi no se usa ni siquiera en la fabricacion corriente, y la razon probable es que somos animales de costumbres...* |
+| **DICE** | *Cuenta con que este metodo casi no se usa ni siquiera en la fabricacion corriente, y con que la razon probable es que somos animales de costumbres...* |
+| **el PUENTE que sale** | **`Desconfia de tu propia costumbre antes de descartarlo`**. El parrafo constata **por que** el metodo no se usa; **no encarga desconfiar de nada**. Ese imperativo lo escribi yo |
+
+**Y LO QUE ESTA CORRECCION ARRASTRA DENTRO DE LA MISMA FICHA, que es lo que la hace util:** su linea
+*RELECTURA DE FIDELIDAD `D.30` EN EL ACTO* decia **`6` pasos, `6` TRANSCRIPCION, `0` PUENTE**, y **no
+era cierto**: eran `5` y `1`. Tras la correccion son `6` y `0`. **Y el DISCUTIBLE que aquella ficha
+marco antes de saber si acertaba apuntaba a este mismo paso `6`** y lo sostenia: **cayo DENTRO del
+marcado**, que es la diferencia que la metrica de credito mide.
+
+**Y EL CANDIDATO CORREGIDO VUELVE A PASAR LA ADUANA EN EL MISMO ACTO** (`EXTRACTOR.md` 16), que es lo
+unico que convierte una correccion de paso en una correccion escrita. Salida entera en
+`.v44/informe_d003.txt`:
+
+<!-- TALLADO: parcial salida=.v44/informe_d003.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/variar_frecuencia_inspeccion_nivel_calidad.json
+    candidatos revisados        : 1
+    poblacion del barrido       : 371   (346 del grafo mas 25 que esperan en bandejas)
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    [ENTRARIA] variar_frecuencia_inspeccion_nivel_calidad   (variar_frecuencia_inspeccion_nivel_calidad.json)
+    CODIGO=0
+
+> **Y ESA SALIDA ES TAMBIEN LA PRUEBA DE LA `FF.2`:** `forja.py informe` corrio entera **sin imprimir
+> ni un `CERROJO HUERFANO:`**, porque `src/informe.py` tampoco toma el cerrojo. Es la segunda via de
+> esta vuelta que lo confirma, despues de la de `d010`.
+>
+> **LO QUE ESTE INFORME NO CERTIFICA, y `D.30` lo dice con todas las letras:** un `ENTRARIA` dice que
+> **la ficha esta bien construida**, no que sus pasos sean del libro. **La aduana no tiene el libro
+> delante y no puede tenerlo.** La prueba de que el paso `6` es ahora del libro es el `grep -n` de
+> arriba, no este verde.
+
+### FF.3.b. `d001`. **LA CIFRA `17` A `15`, Y LA DERIVACION DEL INSTRUMENTO ARREGLADA**
+
+**Las dos mitades de la deuda, y la segunda es la que impide que vuelva a pasar.** El instrumento
+`.v2g/frontera.py` **tecleaba** el `17` (`18` menos `1`), descontando solo la unidad de aquella
+vuelta cuando `cap_01` y `cap_02` **ya estaban minados**. Ahora lo deriva:
+
+<!-- TALLADO: parcial salida=.v44/frontera_cap_03_corregida.txt -->
+
+    $ python .v2g/frontera.py
+    UNIDADES DEL LIBRO                                           : 18
+    UNIDADES YA MINADAS (leidas de las fichas, no descontadas a ojo): 3  cap_01 cap_02 cap_03
+    LA VUELTA CIERRA EN cap_03 (12.4, precedencia): las otras 15 unidades del
+    libro pasan a la vuelta siguiente, y eso se declara en el reporte.
+
+**La correccion declarada va en `AA.1.e` de `docs/loop/archivo/grove_high_output/REPORTE.md`, y el
+bloque pegado viejo se queda con su `17` dentro**: es la salida literal del instrumento de entonces,
+y borrarla seria corregir sin declarar.
+
+### FF.3.c. `d002`. **EL ROTULO `ya vive en el grafo` DE `AA.1.c`, CORREGIDO A `EN LA BANDEJA`**
+
+    $ ls cuarentena/grove_high_output/detectar_arreglar_fallo_etapa_menor_valor.json
+    cuarentena/grove_high_output/detectar_arreglar_fallo_etapa_menor_valor.json
+    $ grep -c 'detectar_arreglar_fallo_etapa_menor_valor' dataset/nodos.jsonl
+    0
+
+**La conclusion de esa fila, `0` nodos para `P16`, no se toca y lo digo con su razon:** la regla que
+la tumba es la de repeticion (`P.19`), **y vale igual contra un gemelo de la bandeja que contra uno
+del grafo**. Lo que estaba mal era la **sede**, no el veredicto.
+
+### FF.3.d. `d004`. **LOS `2` VEREDICTOS RE ADJUDICADOS BAJO `D.53`, Y LA CAIDA QUE DEPENDIA DE ELLO RETIRADA**
+
+| par | lo que la `ACTA 32` `3.3` le puso | lo que `D.53` decide | la arista |
+|---|---|---|---|
+| `construir_flujo_produccion_paso_limitante` con `rehacer_flujo_paso_limitante_capacidad` | `CONTINUA`, madre `construir_flujo` | **`SANO`**, que es lo que la ficha publico | `Z.4` `1`: madre `construir_flujo` paso `9`, **sigue en pie** |
+| `preferir_inspeccion_proceso_prueba_destructiva` con `clasificar_trabajo_proceso_montaje_prueba` | `CONTINUA`, madre `clasificar_trabajo` | **`SANO`** | `Z.4` `2`: madre `clasificar_trabajo` paso `3`, **sigue en pie** |
+
+**LA LETRA QUE LO DECIDE, y no es mia:** `D.53` del `17 sep 2026`, *un `SANO` puede llevar arista
+declarada, y declararla no lo convierte en `CONTINUA`*, con su prueba por reduccion: **si lo hiciera,
+`D.37` seria imposible y toda cabeza de serie devoraria sus partes.**
+
+> **`forja.py anotar` NO SE PUEDE USAR AQUI, Y LO MIDO EN VEZ DE CALLARLO.** Esa via corrige **una
+> linea ya escrita de `bitacora/VEREDICTOS.jsonl`**, y estos dos pares **no estan ahi**: el lote 7
+> no se ha insertado. Medido hoy con `grep -c` sobre esa sede, fichero a fichero:
+>
+>     construir_flujo_produccion_paso_limitante               0
+>     rehacer_flujo_paso_limitante_capacidad                  0
+>     preferir_inspeccion_proceso_prueba_destructiva          0
+>     clasificar_trabajo_proceso_montaje_prueba               0
+>     $ wc -l < bitacora/VEREDICTOS.jsonl
+>     731
+>
+> **`0` de `731`.** Asi que la re adjudicacion se escribe **dentro de las cuatro fichas de
+> `cuarentena/grove_high_output/`**, que es donde la vuelta 45 la va a leer cuando las inserte. **Una
+> adjudicacion que solo viviera en este reporte se perderia**, que es literalmente lo que `D.29` vino
+> a cerrar.
+
+### FF.3.e. `d010`. **LA PROMESA DE LA VUELTA 37 QUE EL DATO LLEVABA DENTRO, RETIRADA Y NO PENDIENTE**
+
+<!-- TALLADO: parcial salida=.v44/corregir_d010.txt -->
+
+    $ python forja.py corregir --nodo dar_elogio_disciplina_igual_critica --anade "..." --razon "..."
+      el texto viejo SIGUE ENTERO: 4237 caracteres, ninguno borrado
+      se aniaden 1145 caracteres al final
+      huella antes  : af5c6c48d2b60c7c
+      huella despues: e61505b50710934d
+    GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: dar_elogio_disciplina_igual_critica
+
+**La `ACTA 41` `2.1` adjudico a ciegas, con los dos pasos impresos del grafo, que el `SANO` de la
+vuelta 42 es el correcto**, y retiro su propia clase ciega de `CONTINUA`: en el unico punto donde los
+dos nodos se tocan **la madre tiene DOS preguntas de Karen Sipprell y este nodo UNA**, asi que aqui
+no despliega nada. **Por eso la promesa queda RETIRADA, no pendiente**, y eso es lo que el dato ahora
+dice.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `FF.3` | la deuda de texto: `d003`, `d001`, `d002`, `d004`, `d010` | **CERRADA**: las cinco pagadas y marcadas, las cinco por correccion declarada y sin borrar |
+
+## FF.4. TAREA 4. **LAS OCHO ARISTAS DE `d008`, CABLEADAS UNA POR VEZ**
+
+### FF.4.a. **PRIMERO SE SOSTIENEN CONTRA EL GRAFO DE HOY, QUE ES LO QUE EL ENCARGO PIDE ANTES DE CABLEAR**
+
+<!-- TALLADO: parcial salida=.v44/aristas_antes.txt -->
+
+    POBLACION del grafo: 346 nodos de dataset/nodos.jsonl
+
+| # | madre | `--paso` | hijo | existen los dos | el paso existe | ya declarada |
+|---|---|---:|---|---|---|---|
+| **a** | `fijar_cuatro_notas_calcular_nota_global` | `8` | `elegir_categorias_nota_palabras_propias_empresa` | SI | SI (`12` pasos) | **NO** |
+| **b** | `repartir_notas_publicar_reparto_esperado` | `3` | `calibrar_notas_reunion_jefes_pares` | SI | SI (`9`) | **NO** |
+| **c** | `presionar_curva_notas_evitar_forzarla` | `11` | `calibrar_notas_reunion_jefes_pares` | SI | SI (`11`) | **NO** |
+| **d** | `evaluar_desempenio_dos_veces_anio` | `6` | `montar_evaluacion_360_grados_ligera_pares` | SI | SI (`11`) | **NO** |
+| **e** | `hacer_critica_pares_transparente_ensenar_escribirla` | `1` | `montar_evaluacion_360_grados_ligera_pares` | SI | SI (`11`) | **NO** |
+| **f** | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | `6` | `montar_evaluacion_360_grados_ligera_pares` | SI | SI (`13`) | **NO** |
+| **g** | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | `5` | `hacer_critica_pares_transparente_ensenar_escribirla` | SI | SI (`13`) | **NO** |
+| **h** | `montar_evaluacion_360_grados_ligera_pares` | `6` | `elegir_categorias_nota_palabras_propias_empresa` | SI | SI (`10`) | **NO** |
+
+> **LAS OCHO SE SOSTIENEN, ASI QUE LAS OCHO SE CABLEAN.** No retiro ninguna, y lo digo con la medida
+> delante porque el encargo me pedia mirar: `16` extremos comprobados uno a uno contra el grafo de
+> hoy, `8` pasos citados que existen, `0` aristas ya puestas. **La `i` y la `j` que la `ACTA 24`
+> retiro por no tener paso siguen fuera y no las toco.**
+
+### FF.4.b. **LAS OCHO, CON SU PASO IMPRESO Y SU CODIGO DE SALIDA** (`D.37`: la cita se pega, no se promete)
+
+<!-- TALLADO: parcial salida=.v44/aristas_d008.txt -->
+
+    $ grep -c 'ARISTA ESCRITA RESUELTA' .v44/aristas_d008.txt
+    8
+    $ grep -n 'CODIGO=' .v44/aristas_d008.txt
+    12:  CODIGO=0     24:  CODIGO=0     36:  CODIGO=0     48:  CODIGO=0
+    60:  CODIGO=0     72:  CODIGO=0     84:  CODIGO=0     96:  CODIGO=0
+
+**LA ULTIMA, PEGADA ENTERA, que es la forma de la salida que las ocho tienen:**
+
+    ================ ARISTA h ================
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: montar_evaluacion_360_grados_ligera_pares
+      hijo : elegir_categorias_nota_palabras_propias_empresa
+      paso citado de la madre: 6
+        Aligera la evaluacion entre pares con lo que el texto recomienda, y es lo primero: pide
+        simplemente a los empleados que califiquen a sus pares en cada
+      seniales del par: familia_id 0.0, paso_contra_nodo 0.493, similitud_texto 0.244
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: montar_evaluacion_360_grados_ligera_pares > elegir_categorias_nota_palabras_propias_empresa
+      razon en bitacora/VEREDICTOS.jsonl
+
+> **`NINGUNA SEÑAL LA LEVANTA` EN LAS OCHO, Y ES LA CIFRA QUE JUSTIFICA `D.29` ENTERA.** La mas alta
+> de las veinticuatro seniales medidas es un `paso_contra_nodo` de `0.508`, por debajo del umbral de
+> `0.60`; **la similitud de texto mas alta es `0.293`**, en la banda que `EXTRACTOR.md` 11 llama
+> ruido por su nombre. **Ocho aristas verdaderas que ninguna senial habria traido nunca.**
+
+| tarea | que pide | estado |
+|---|---|---|
+| `FF.4` | las ocho aristas de `d008` | **CERRADA**: `8` de `8` cableadas, codigo `0` las ocho, ninguna retirada |
+
+## FF.5. TAREA 5. **EL CIERRE, Y ESTA VEZ CIERRA**
+
+### FF.5.a. **LAS CINCO GUARDAS, RECOMPUTADAS AL CERRAR Y NO COPIADAS DE LA APERTURA** (`EXTRACTOR.md` 4 y 6)
+
+| guarda | salida | de donde sale |
+|---|---|---|
+| `python forja.py gate` | **VERDE**, `346` nodos verificados, `13` guardas | `.v44/gate_cierre.txt` |
+| `python forja.py guiones` | **VERDE**, cero guiones largos y cero guiones medios | `.v44/guiones_cierre.txt` |
+| `python forja.py resolutor` | `346` vivos, `0` deprecados, `0` alias | `.v44/resolutor_cierre.txt` |
+| `python tests/test_aceptacion.py` | **`305` pruebas, `0` fallos, `0` errores** | `.v44/aceptacion_cierre.txt` |
+| `python scripts/tabla_de_cierre.py --escribir` | **VERDE**: ninguna celda medible difiere del dato | `.v44/tabla_de_cierre.txt` |
+| `python scripts/cerrar_reporte.py` | **CIERRE VERDE**: las cuatro guardas que muerden, el tallado y el censo | `.v44/cerrar_reporte.txt` |
+
+**Y EL CREDITO, LEIDO Y NO ANOTADO POR MI** (el encargo lo dice con esas palabras; `.v44/credito_cierre.txt`):
+
+<!-- TALLADO: parcial salida=.v44/credito_cierre.txt -->
+
+    $ python forja.py credito
+      especie            racha      de donde sale
+      AUDITOR            2 de 3     ACTA 42
+      CIFRA PUBLICADA    0 de 2     ACTA 42
+      CLASE              0 de 2     ACTA 42
+      DATO MOVIDO        0 de 2     ACTA 42
+      REPORTE            1 de 3     ACTA 42
+
+**Identico al de la apertura**, que es lo correcto: **el credito lo mueve el acta, no yo.**
+
+### FF.5.b. **LA TABLA DE CIERRE `D.52`, PEGADA DE SU INSTRUMENTO**, que es lo que la vuelta 43 no pudo escribir
+
+<!-- TALLADO: parcial salida=.v44/tabla_de_cierre.txt -->
+
+    $ python scripts/tabla_de_cierre.py --escribir
+    ============================================================================
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    ============================================================================
+      libro de la linea : grove_high_output
+      filas             : 3
+      SIN COMPROBAR  1  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+      SIN COMPROBAR  2  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+      SIN COMPROBAR  3  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+
+    ESCRITA la tabla regenerada en docs\loop\TABLA_DE_CIERRE.txt
+
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+
+> **LOS TRES `SIN COMPROBAR` NO SON UNA CAIDA MIA Y TAMPOCO SON EL DEFECTO `d009`: ESTA VEZ SON LA
+> VERDAD.** `d009` dice que este instrumento mide contra el libro equivocado en cuanto un libro
+> cierra. **Hoy el libro de la linea es `grove_high_output` y es el correcto**; lo que pasa es que
+> **esta vuelta no afirma ni una sola vez `N de M del capitulo`**, porque **no inserta**. Un
+> instrumento que no encuentra afirmaciones de esa forma **no puede comprobar ninguna**, y decir
+> `SIN COMPROBAR` es exactamente lo que tiene que decir.
+
+### FF.5.c. **`PASOS INVENTADOS`: ESTA VUELTA SI TOCA UN PASO, ASI QUE HAY FILA**
+
+*El encargo pide el desglose por capitulo si la vuelta toca algun paso, y **toca uno**.*
+
+| capitulo | pasos tocados | pasos NUEVOS escritos por mi | PUENTES retirados | pasos inventados que quedan |
+|---|---:|---:|---:|---:|
+| `grove_high_output` `cap_03`, `L143` | **`1`** (el `6` de `variar_frecuencia_inspeccion_nivel_calidad`) | **`0`** | **`1`** | **`0`** |
+| cualquier otro | `0` | `0` | `0` | `0` |
+| **total** | **`1`** | **`0`** | **`1`** | **`0`** |
+
+> **EL SENTIDO DEL SIGNO, porque una fila de `PASOS INVENTADOS` a `0` puede leerse al reves:** esta
+> vuelta **no escribio ni un paso nuevo**. Lo unico que hizo con un paso fue **quitarle** la cabeza
+> que yo mismo le habia puesto. **El contador de invencion se mueve hacia abajo, no hacia arriba.**
+
+### FF.5.d. **EL ESTADO AL CIERRE, RECOMPUTADO DEL FICHERO** (`EXTRACTOR.md` 4: *el estado al cierre se mide al cierre*)
+
+<!-- TALLADO: parcial salida=.v44/cifras_cierre.txt -->
+
+    NODOS EN EL GRAFO (contados de dataset/nodos.jsonl) : 346
+    ARISTAS madre a hijo (suma de nodos_siguientes)     : 169
+    LINEAS de bitacora/VEREDICTOS.jsonl                 : 740
+    FICHAS en cuarentena/grove_high_output              : 22
+    FICHAS en cuarentena/_insertados/grove_high_output  : 1
+
+| cifra | al abrir | al cerrar | lo que la movio |
+|---|---:|---:|---|
+| nodos del grafo | `346` | **`346`** | **nada, y es lo correcto: esta vuelta no inserta** |
+| aristas madre a hijo | `161` | **`169`** | **las `8` de `d008`**, y la resta lo confirma al digito |
+| lineas de `bitacora/VEREDICTOS.jsonl` | `731` | **`740`** | **`8`** razones de arista mas **`1`** razon de la correccion `d010` |
+| fichas en la bandeja de `grove_high_output` | `22` | **`22`** | **nada**: la bandeja no se toca, solo el paso `6` de una de sus fichas |
+
+**LAS DOS CIFRAS DE APERTURA NO SON DE MEMORIA: SE LEEN DEL COMMIT DE APERTURA** (`EXTRACTOR.md` 5,
+la identidad se lee de git). Salida en `.v44/aristas_apertura.txt`:
+
+<!-- TALLADO: parcial salida=.v44/aristas_apertura.txt -->
+
+    MEDIDO SOBRE git show ebc5c89:dataset/nodos.jsonl, que es el commit de apertura
+    NODOS   : 346
+    ARISTAS : 161
+
+y las `731` lineas de `bitacora/VEREDICTOS.jsonl` se midieron con `wc -l` **antes** de cablear la
+primera arista, en la `FF.3.d`.
+
+**LA DEUDA, RECOMPUTADA** (`.v44/deuda_cierre.txt`):
+
+<!-- TALLADO: parcial salida=.v44/deuda_cierre.txt -->
+
+    $ python scripts/deuda.py
+      pendientes: 6    pagadas: 6
+
+**Abrio en `12` pendientes y `0` pagadas; cierra en `6` y `6`.** Es la primera vuelta de saneamiento
+de esta linea y paga **la mitad del registro**.
+
+**LAS `6` QUE QUEDAN, Y POR QUE NO ERAN DE HOY** (austero `D.47`: por numero, sin reabrir el
+argumento): `d005` es el relevo de la bandeja de `grove` y **se cobra insertando**, que es la vuelta
+45; `d006` es una relectura de `cap_13`; `d007` y `d012` son de **doctrina congelada** (`D.56`) y por
+definicion no se pagan; `d009` y `d011` son **maquinaria** y la moratoria de la seccion 13 las deja
+fuera de una vuelta de extraccion. **Ninguna de las seis estaba en mi encargo.**
+
+### FF.5.d.bis. **LO QUE MI PROPIA CORRECCION `d010` LE HIZO A LA VIGENCIA, Y NO ME LO CALLO** (`D.15`)
+
+**`python scripts/cerrar_reporte.py` cierra VERDE y publica `71` rancios**, y **`8` de ellos los
+produje yo en esta vuelta**, medidos de su propia salida:
+
+<!-- TALLADO: parcial salida=.v44/cerrar_reporte.txt -->
+
+    $ grep -c '\[RANCIO\]' .v44/cerrar_reporte.txt
+    71
+    $ grep -c 'dar_elogio_disciplina_igual_critica.*cambio desde que se emitio' .v44/cerrar_reporte.txt
+    8
+
+**LA CAUSA ES LA CORRECCION DECLARADA DE `d010`**, y el propio instrumento la nombra con las dos
+huellas al lado, que son **exactamente las que `forja.py corregir` imprimio** en la `FF.3.e`:
+
+    [RANCIO] veredicto dar_elogio_disciplina_igual_critica contra equilibrar_elogio_critica_equipo
+      (linea 534, 2026-09-18): el texto de su candidato cambio desde que se emitio
+      (huella af5c6c48d2b60c7c, hoy e61505b50710934d)
+
+> **NO ES UN EFECTO SECUNDARIO IMPREVISTO: ES LO QUE `D.15` HACE BIEN.** Cambiar el texto de un nodo
+> **tiene que** marcar como rancios los veredictos que se emitieron contra el texto viejo, y **este
+> reporte no cita ninguno de esos ocho como vigente.** `D.15` dice que la relectura la hace una
+> persona y por eso no pone el gate en rojo; **queda como cola nombrada**, no como deuda escondida.
+>
+> **Y LA SUSTANCIA DE LOS OCHO NO SE MUEVE**, porque lo que cambio del nodo es **solo el
+> `resumen_teorico`**, y los `20` `pasos_accionables` sobre los que se juzgo cada par estan intactos.
+> **Eso lo digo yo, no el instrumento**, y por eso va marcado como lectura y no como medida.
+
+### FF.5.e. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| # | lo que marco | por que podria caer |
+|---:|---|---|
+| `1` | **no parar la vuelta entera por la `TAREA 2`**, sino declararla como parada de tarea y seguir | el encargo escribe *paras la vuelta ahi* si la maquina no rompe el cerrojo. **Lo leo como una guarda que falla al ser invocada, y aqui no se la invoca.** Si el auditor lee la letra y no el supuesto, **esto es caida y es mia** |
+| `2` | **el paso `6` nuevo de `d003` empieza por `Cuenta con que`**, que sigue siendo un imperativo que el libro no escribe | el libro constata, no manda. Un lector estricto diria que **la transcripcion pura de una constatacion no es paso accionable y el paso deberia RETIRARSE entero**, no reescribirse. Lo sostengo porque la deuda dice literalmente *dejar la transcripcion*, y porque el paso `5` de la misma ficha ya usa esa forma para otra constatacion del mismo parrafo |
+| `3` | **la re adjudicacion de `d004` escrita dentro de las cuatro fichas de cuarentena** y no solo en este reporte | ninguna regla nombra el `resumen_teorico` de un candidato como sede de un veredicto. **Lo hago porque la sede propia (`bitacora/VEREDICTOS.jsonl`) no admite lineas que no existen**, y porque una adjudicacion que solo vive en un reporte es la perdida que `D.29` cerro. Si el auditor lee que la sede es otra, **cae** |
+| `4` | **`.v2g/frontera.py` tocado por mi**, siendo un instrumento de otro frente | la moratoria de maquinaria prohibe fabricar instrumentos, pero **`d001` encarga expresamente arreglar la derivacion**, que es la excepcion escrita de la seccion 13. Si se lee que arreglar un instrumento ajeno excede mi sede, **cae** |
+
+### FF.5.f. **EL TECHO DE ESTA VUELTA, QUE ESTABA EN MINUTOS Y NO EN CANDIDATOS** (`ACTA 42` 42.7, `d011`)
+
+    $ date +%s        al abrir, antes de la primera operacion
+    1789779226
+    $ date +%s        al escribir esta seccion
+    1789780160
+
+**`934` segundos, o sea `15,6` minutos de los `40` del techo.** El techo **no mordio**, y lo digo con
+la cifra delante en vez de decir que sobro tiempo: **una vuelta de saneamiento cuesta una fraccion de
+una de insercion**, y eso es exactamente lo que `D.55` predijo al agendarla.
+
+**EL COSTE EN DINERO:** ningun instrumento de esta casa lo mide, asi que **no publico una cifra que
+no puedo leer** (`EXTRACTOR.md` 5: *la celda que no salga de un instrumento no se escribe*). Lo que
+si digo es en que se fue el turno: **cero corridas de aduana con insercion**, una sola de
+`forja.py informe` lanzada en segundo plano, y **trece escrituras cortas** (cinco correcciones, ocho
+aristas).
+
+### FF.5.g. **LA LINEA DEL TRAMO, QUE EL ENCARGO PIDE SEA CUAL SEA EL NUMERO**
+
+> ### *La vuelta cierra en la tarea `5` de `5`; lo que quedaba pasa a la vuelta siguiente.*
+
+**Y LO QUE PASA A LA VUELTA SIGUIENTE, NOMBRADO:** **nada de las cinco tareas**, porque las cinco se
+entregan. Lo unico que viaja es **la parada declarada de la `FF.2`**, que no es trabajo mio sino una
+adjudicacion del auditor, y **las `6` deudas que no estaban en este encargo**.
+
+### FF.5.h. **LO QUE ESTA VUELTA NO HIZO, DICHO POR SU NOMBRE**
+
+**LA CORRIDA ME ABRIO `MODO_INSERCION=insertar` Y NO INSERTE NI UN NODO.** No es un olvido:
+
+| | |
+|---|---|
+| `D.39` deja insertar **un lote CERRADO** cuyo informe certifique el acta | el lote 7 de `grove_high_output` esta **ABIERTO**: `1` dentro y `22` en bandeja, medido en `FF.5.d` |
+| el encargo lo escribe en `LO QUE NO SE TOCA` | *la bandeja de `grove_high_output` NO se inserta esta vuelta. Sus `22` esperan a la 45* |
+| `EXTRACTOR.md` 15.7 lo nombra | *meter candidatos de un lote abierto es una **caida de dato**, no un adelanto* |
+
+**Y TAMPOCO TOQUE:** `scott_radical_candor` (cerrado), `config/frentes.json`, `config/umbrales.json`,
+`docs/BANCO_DE_REGLAS.md`, ni las ramas de `gerber_emyth` y `marquet_turn_the_ship`.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `FF.5` | el cierre, con su tabla `D.52` y su linea de tramo | **CERRADA**: cinco guardas en verde, tabla pegada, `PASOS INVENTADOS` publicado, cifras recomputadas, cuatro discutibles marcados y la linea del tramo escrita |

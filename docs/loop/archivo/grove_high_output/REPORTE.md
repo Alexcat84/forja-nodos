@@ -450,6 +450,28 @@ regla por la que cae.
 | `P21` `L155 a L155` | 106 | el libro dice literalmente **`Later, when we examine managerial productivity, we'll see...`**: su procedimiento vive en otro capitulo. Extraerlo aqui fabrica **el gemelo de su propio donante** |
 | `P22` `L157 a L167` | 395 | **DEFINICION de productividad** (salida partida por trabajo) y **concepto de palanca**, con cuatro ejemplos. Una definicion o un concepto sin nada que hacer **no es un nodo** (`EXTRACTOR.md` 9, la tabla). Lo accionable de este tramo esta en `P23`, que si trae procedimiento |
 | `P24` `L175 a L179` | 6 | el rotulo de la parte `II` del libro, que ya no es de esta unidad |
+
+> ### **CORRECCION DECLARADA DE LA VUELTA 44** (deuda `d002`, cita `grove PARA_ALEXIS 5.3.2`)
+>
+> **EN LA FILA DE `P16`, EL ROTULO `ya vive en el grafo de la vuelta 1` ES FALSO Y NO SE BORRA.**
+>
+> | | |
+> |---|---|
+> | **DECIA** | *el fondo, rechazar en la etapa de menor valor, **ya vive en el grafo de la vuelta 1** en `detectar_arreglar_fallo_etapa_menor_valor`* |
+> | **DICE** | *el fondo, rechazar en la etapa de menor valor, **ya vive EN LA BANDEJA** desde la vuelta 1 en `detectar_arreglar_fallo_etapa_menor_valor`, y de este libro **no hay ni un nodo en el grafo*** |
+>
+> **LA MEDICION DE HOY, 18 sep 2026, con su comando al lado:**
+>
+>     $ ls cuarentena/grove_high_output/detectar_arreglar_fallo_etapa_menor_valor.json
+>     cuarentena/grove_high_output/detectar_arreglar_fallo_etapa_menor_valor.json
+>     $ grep -c 'detectar_arreglar_fallo_etapa_menor_valor' dataset/nodos.jsonl
+>     0
+>
+> **Y LO QUE NO SE TOCA, porque la propia decision del fundador lo dice:** la conclusion de esa
+> fila, `0` nodos para `P16`, **se sostiene entera**. La regla que la tumba es la de repeticion
+> (`P.19`) y **vale igual contra un gemelo de la bandeja que contra uno del grafo**: lo que estaba
+> mal era la sede, no el veredicto.
+
 ### AA.1.d. **EL TRAMO MAS GRANDE QUE DA CERO Y EL MAS PEQUENO QUE DA UNO, QUE ES LO QUE PRUEBA LA VARA**
 `P20` tiene **`397` palabras y da `0`**; `P12` tiene **`88` y da `1`**. **El tamano no decide: decide
 el inventario.** `P20` son cuatro parrafos de un caso periodistico con sus cifras sin corte; `P12`
@@ -465,6 +487,35 @@ parametros de la operacion, la desviacion respecto de la norma), y con eso los p
       libro pasan a la vuelta siguiente, y eso se declara en el reporte.
 **LA DECLARACION QUE 12.4 PIDE, EN UNA LINEA:** *la vuelta cierra en `cap_03` con `15` candidatos,
 que es el techo justo; las `17` unidades restantes del libro pasan a la vuelta siguiente.*
+
+> ### **CORRECCION DECLARADA DE LA VUELTA 44** (deuda `d001`, cita `grove PARA_ALEXIS 5.3.1`)
+>
+> **LA CIFRA `17` DE ESTA SECCION ES `15`, Y NO SE BORRA LA VIEJA.**
+>
+> | | |
+> |---|---|
+> | **DECIA** | *las **`17`** unidades restantes del libro pasan a la vuelta siguiente* |
+> | **DICE** | *las **`15`** unidades restantes del libro pasan a la vuelta siguiente* |
+>
+> **POR QUE ESTABA MAL, y no fue un error de tecleo:** el instrumento restaba `18` menos `1`, o sea
+> descontaba **solo la unidad de aquella vuelta**, cuando `cap_01` y `cap_02` **ya estaban minados
+> por la vuelta 1 del frente**. La derivacion contaba dos veces un trabajo ya hecho.
+>
+> **EL INSTRUMENTO ARREGLADO, que es la otra mitad de la deuda `d001`:** `.v2g/frontera.py` ya no
+> teclea el `17`; **cuenta las unidades del libro y les descuenta las ya minadas leidas de las
+> fichas**. Su salida corregida, pegada de `.v44/frontera_cap_03_corregida.txt`:
+
+<!-- TALLADO: parcial salida=.v44/frontera_cap_03_corregida.txt -->
+
+>     $ python .v2g/frontera.py
+>     UNIDADES DEL LIBRO                                           : 18
+>     UNIDADES YA MINADAS (leidas de las fichas, no descontadas a ojo): 3  cap_01 cap_02 cap_03
+>     LA VUELTA CIERRA EN cap_03 (12.4, precedencia): las otras 15 unidades del
+>     libro pasan a la vuelta siguiente, y eso se declara en el reporte.
+>
+> **EL BLOQUE PEGADO DE MAS ARRIBA SE QUEDA COMO ESTABA**, con su `17` dentro: es la salida literal
+> del instrumento viejo y borrarla seria corregir sin declarar. Lo que vale hoy es esta salida.
+
 **`TAREA 1` CERRADA.**
 > **EL REPORTE CRECE EN EL ORDEN EN QUE LAS TAREAS CIERRAN, NO EN EL ORDEN EN QUE ESTAN
 > NUMERADAS** (`EXTRACTOR.md` 3: cada tarea anexa su fila al cerrarse). `AA.3` y `AA.4` cierran
