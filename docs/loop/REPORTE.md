@@ -44405,6 +44405,26 @@ no falla** (un par de jerarquia no es un ajeno), pero **el ejemplar ensena que p
 `0,4` un lector que solo tenga la banda leeria REPITE donde la lectura da CONTINUA.** Lo registro
 con su medida **y lo dejo ahi**, que es lo que el encargo manda hacer con la doctrina.
 
+### HH.5.k. **EN QUE SE FUE EL TURNO, QUE ES LA MITAD DE LA CIFRA QUE SI PUEDO MEDIR**
+
+**LA CIFRA EN USD NO LA PUEDO DAR, Y LO DIGO EN VEZ DE ADIVINARLA** (`EXTRACTOR.md` 7:
+*lo que no este escrito y no puedas medir, lo traes como pregunta*). **Este repo no tiene
+instrumento que mida el coste de un turno**: `USD` aparece en cuatro ficheros de `docs/loop/`
+y en ninguno de `scripts/` ni de `src/`. **Lo que la regla persigue si lo puedo entregar**,
+porque *no prohibe gastar: obliga a decir en que*:
+
+| en que | medida | de donde sale |
+|---|---:|---|
+| **la aduana en seco, `8` corridas** | **`4.044` s** | `.v46/reloj_c01.txt` a `.v46/reloj_c08.txt`, sumados por `.v46/tanda.py` |
+| la prueba de aceptacion, **la de la apertura y solo esa** | `116,0` s | `.v46/apertura_pruebas.txt`, que la trae con su `real`. **La del cierre corrio sin cronometro y por eso no tiene fila** |
+| el resto: leer el capitulo, escribir las `8` fichas y la frontera, y el reporte | lo que quede | sin instrumento propio, y por eso no le pongo cifra |
+
+**EL `97,2` POR CIENTO DE LO QUE ESTE TURNO CRONOMETRO SE FUE EN LA ADUANA EN SECO**
+(`4.044` de `4.160` s), y esa es la frase util para quien decida despues: **el gasto de esta
+vuelta no esta en escribir nodos, esta en medirlos.** El porcentaje es sobre lo cronometrado y
+no sobre el turno entero, **que es lo unico que puedo sostener**: el tiempo de leer el capitulo
+y escribir las ocho fichas no lo mide ningun instrumento de esta casa.
+
 ---
 
 **LA VUELTA 46 CIERRA CON SUS CINCO FILAS CERRADAS, CERO INSERCIONES POR PUERTA MEDIDA, `8`
