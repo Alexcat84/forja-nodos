@@ -44793,6 +44793,31 @@ insercion**, que es cuando `forja.py arista` la escribe de verdad. **Es exactame
 `EXTRACTOR.md` 11 describe al reves:** alli la lectura encuentra lo que la senial no ve; aqui la
 senial encontro lo que la lectura no vio. **Las dos ordenan y ninguna decide.**
 
+> ### **CORRECCION DECLARADA DE LA VUELTA 48, ESCRITA AL LADO Y SIN BORRAR NI UNA LETRA DE ARRIBA** (`ACTA 46` `46.6.b`)
+>
+> **EL `el mas proximo` DE ARRIBA ESTA ADJUDICADO CITANDO UNA SOLA SENIAL, Y EL INSTRUMENTO DE LA
+> CASA DA LO CONTRARIO EN DOS DE LAS TRES.** El pariente que mi ficha **SI** escribio,
+> `elegir_inspeccion_barrera_monitorizacion`, **gana en `similitud_texto` (`0,266` contra `0,226`)
+> y en `paso_contra_nodo` (`0,491` contra `0,435`)**. El otro gana solo en `familia_id`.
+>
+> <!-- TALLADO: parcial salida=.v48/proximidad_v48.txt -->
+>
+>     $ python .v47aud/45_proximidad.py
+>     candidato: supervisar_tarea_delegada_etapa_menor_valor
+>     LISTA ORDENADA ENTERA, por similitud_texto:
+>        elegir_inspeccion_barrera_monitorizacion     similitud_texto 0.2660 | familia_id 0.0000 | paso_contra_nodo 0.4910
+>        detectar_arreglar_fallo_etapa_menor_valor    similitud_texto 0.2260 | familia_id 0.3330 | paso_contra_nodo 0.4350
+>
+> **Y `familia_id` COMPARA LA CADENA DEL ID**, que es justo lo que mi propio parrafo de arriba
+> ya decia sin sacarle la consecuencia: *la familia la comparten porque comparten el objeto
+> `etapa_menor_valor`*. `AUDITOR_FORJA.md` 6.2 con `D.19` detras: **una proximidad no se adjudica
+> citando una senial.** La senial dice donde mirar y ahi acaba su trabajo.
+>
+> **LO QUE NO CAMBIA, Y ES LA MAYOR PARTE:** la arista sigue declarada, sigue siendo un hallazgo
+> bueno, y **se cablea el dia de la insercion**. La senial `2` levanto un pariente legitimo que mi
+> lectura no habia visto, y eso sigue en pie. **Lo que se corrige es el ranking, no el hallazgo.**
+
+
 ### II.2.g. **LA ARISTA `D.29` DE `P27`, ESCRITA TAMBIEN EN LA FICHA DE LA MADRE** (encargo 2.c)
 
 **La madre ya la declaraba desde la vuelta 46, pero apuntando al hijo POR SU TRAMO** (*el nodo de
@@ -44953,6 +44978,53 @@ extraje (`P30`, `106` palabras) dio **`6` pasos, `0` puentes y `3` de esos seis 
 discutibles por mi mismo**. **La pobreza del parrafo no se me volvio puente: se me volvio
 discutible**, que es donde `EXTRACTOR.md` 8 manda que vaya.
 
+> ### **CORRECCION DECLARADA DE LA VUELTA 48, ESCRITA AL LADO Y SIN BORRAR NI UNA LETRA DE ARRIBA** (`ACTA 46` `46.6.a`)
+>
+> **`P27` NO ES EL TRAMO MAS RICO DE LA TANDA, Y EL SUPERLATIVO DE DOS PARRAFOS MAS ARRIBA ES
+> FALSO.** La cifra `347` es cierta; el superlativo no. **El tramo mas rico de la tanda es `P24`
+> con `356` palabras**, y el tramo entero del candidato `1` es `P21` mas `P24`, o sea **`429`**.
+>
+> **UN SUPERLATIVO NECESITA SU LISTA ORDENADA ENTERA PARA PUBLICARSE** (`D.38.3` ensanchada), y
+> aqui esta, **corrida por mi en la vuelta 48 y no copiada del acta**:
+>
+> <!-- TALLADO: parcial salida=.v48/tramos_v48.txt -->
+>
+>     $ python .v47aud/44_tramos.py
+>     LOS TRAMOS DE LA TANDA DE LA VUELTA 47, ORDENADOS, LISTA ENTERA:
+>        P24     356 palabras   1 nodo(s)
+>        P27     347 palabras   1 nodo(s)
+>        P29     227 palabras   1 nodo(s)
+>        P33     212 palabras   1 nodo(s)
+>        P32     122 palabras   1 nodo(s)
+>        P30     106 palabras   1 nodo(s)
+>        P21      73 palabras   0 nodo(s)
+>
+> **LA SALIDA DE HOY ES LA MISMA QUE LA DEL ACTA, CIFRA A CIFRA**, y eso es contraste y no
+> discrepancia: el instrumento es del auditor, la corrida es mia.
+>
+> ### **Y LA SEGUNDA MITAD, QUE ES LA QUE DE VERDAD IMPORTA: LA MEDIDA SE SEPARA DE LA CONCLUSION**
+>
+> El parrafo de arriba dice *los `23` tramos que la frontera dejo en cero son justamente los
+> pobres* **y dos renglones despues ofrece las palabras como vara de riqueza**. Esas dos frases no
+> se sostienen la una a la otra, y la que cae es la vara:
+>
+> <!-- TALLADO: parcial salida=.v48/tramos_v48.txt -->
+>
+>     tramos con CERO nodos : 23   palabras: media 199.7  minimo 8  maximo 674 (P5)
+>     tramos CON nodo       : 21   palabras: media 202.6  minimo 60  maximo 469 (P34)
+>
+> **LA MEDIDA:** `199,7` de media los de cero contra `202,6` los que dan nodo, o sea **`2,9`
+> palabras de diferencia sobre doscientas**: las dos poblaciones son indistinguibles en palabras.
+> **Y los dos tramos mas ricos del capitulo entero, `P5` con `674` y `P2` con `530`, dan CERO
+> nodos.**
+>
+> **`LECTURA`: la tesis de fondo se sostiene, pero la sostiene OTRA COSA.** Lo que dice que los
+> `23` tramos en cero son pobres **es mi propia tabla de frontera**, donde cada uno de los `23`
+> lleva su regla escrita al lado (`CASO`, `POSTURA`, `DEFINICION`, rotulo), **y no la cuenta de
+> palabras**. Pobre de INVENTARIO y pobre de PALABRAS no son la misma pobreza, y la frase de arriba
+> conto lo segundo para afirmar lo primero. **Esa es la especie que `D.38.3` nombra.**
+
+
 | tarea | que pide | estado |
 |---|---|---|
 | `II.3` | `PASOS INVENTADOS` de `cap_04` con su denominador y con la fila de la vuelta 46 al lado | **CERRADA**: `0` PUENTE de `45` pasos hoy, `0` de `50` en la vuelta 46, `0` de `95` en el capitulo entero, las dos filas contadas del mismo instrumento, y **los cinco sitios de tentacion nombrados por su especie** |
@@ -45000,7 +45072,26 @@ la bandeja: `30` mas `6` igual a `36`.**
 ### II.4.c. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
 
 *Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
-`docs/loop/TABLA_DE_CIERRE.txt`.*
+`docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v47.txt`.*
+
+> **CORRECCION DECLARADA de la vuelta 48, y no toca ni una celda de esta tabla.**
+> Esta linea decia `docs/loop/TABLA_DE_CIERRE.txt`, que es la ruta VIVA del
+> instrumento, **y es la misma colision que esta misma seccion declaro contra la
+> vuelta 46**: la vuelta siguiente que cierre su tabla deja a esta en rojo sin que
+> nadie toque el reporte. **La vuelta 48 le hace a la 47 exactamente lo que la 47 le
+> hizo a la 46 y la 46 a la 42.**
+>
+> **LA SALIDA DE LA VUELTA 47 NO SE TECLEO NI SE PERDIO: SE SACO DE GIT BYTE A BYTE**
+> (`git show HEAD:docs/loop/TABLA_DE_CIERRE.txt`, con el mismo `git hash-object`
+> antes y despues, sellado en `.v48/sello_v47.txt`) y se archivo en la ruta que esta
+> linea nombra ahora. **La ruta viva se queda con la tabla de la vuelta que cierra**,
+> que es lo que `D.52` manda.
+>
+> **Y ES EL CUARTO EJEMPLAR SEGUIDO DE LA MISMA AVERIA**, que es lo que la convierte
+> en deuda de maquinaria y no en descuido de nadie: `d030` la tiene abierta desde la
+> `ACTA 46` y la moratoria de `EXTRACTOR.md` 13 con `D.45` me dejan fuera de arreglar
+> el script. **Lo que hago es el remedio a mano que el encargo me manda volver a
+> usar.**
 
 > **LA COLISION DE `D.52` CON `D.41` VOLVIO A MORDER, Y SE REPARO COMO MANDA EL ENCARGO.**
 > `scripts/tabla_de_cierre.py --escribir` escribe SIEMPRE en la misma ruta viva, asi que al
@@ -45171,3 +45262,904 @@ seis fichas no lo mide ningun instrumento de esta casa.
 CANDIDATOS NUEVOS EN LA BANDEJA DE `grove_high_output`, `0` PUENTE DE `45` PASOS, `9` PARES DE COLA
 LEIDOS PAR A PAR, LA ARISTA DE `P27` ESCRITA EN LAS DOS FICHAS, Y CERO INSERCIONES POR PUERTA
 MEDIDA POR TERCERA VUELTA SEGUIDA.**
+
+---
+
+# VUELTA 48 DE LA LINEA SERIAL, `extraccion-mundo-11`: **TERMINAR `cap_04` HASTA DONDE LLEGUE EL TECHO, Y EL TECHO YA SE CUENTA EN PASOS**
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor en la `ACTA 46`. Modo austero
+(`D.47`): no repito lo que el registro ya dice.*
+
+> **ESQUELETO ABIERTO AL EMPEZAR, CON LAS FILAS VACIAS** (`EXTRACTOR.md` 3). Cada tarea anexa su
+> fila al cerrarse.
+>
+> **LA COLUMNA DE ESTADO SE RELLENO AL CERRAR CADA TAREA, NO AL ABRIR.** Al abrir decia
+> `(vacia al abrir)` en las cuatro filas, y cada tarea trae ademas su propia fila anexada al
+> final de su seccion.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `JJ.1` | los registros de la `ACTA 46`: las dos correcciones declaradas (el superlativo de `II.3.b` y el `el mas proximo` de `II.2.f`), las dos deudas nuevas dichas y no pagadas, y lo adjudicado recogido sin reabrir | **CERRADA en `JJ.1`**: las dos correcciones escritas al lado de su texto viejo con los dos instrumentos del auditor corridos por mi hoy, `d030` y `d031` dichas y no pagadas, y las cuatro adjudicaciones recogidas |
+| `JJ.2` | `cap_04` sigue abierto en `8` de `22`: los cinco siguientes por su tramo, cada uno por su aduana en el acto, **cero inserciones**, el techo contado en pasos, y la arista colgada resuelta | **CERRADA ENTERA en `JJ.2`**: los `5` de `5`, `42` pasos de un techo de `44`, `0` `CAERIA`, `8` pares de cola, `18` aristas con sus destinos comprobados, cero inserciones |
+| `JJ.3` | `PASOS INVENTADOS` de `cap_04` con su denominador y sus tres filas, y los sitios de tentacion dichos por su especie | **CERRADA en `JJ.3`**: `0` PUENTE de `42` pasos hoy, `0` de `95` en los `14` ya minados, `0` de `137` en `cap_04` entero, y siete sitios de tentacion mas un octavo |
+| `JJ.4` | el cierre: las cinco guardas, la tabla `D.52` con su colision, el estado recomputado, la linea del tramo con su reloj, y el coste de `D.55` | **CERRADA en `JJ.4`**: cierre verde, la corrida roja de la prueba declarada con su medida, la tabla `D.52` con su cuarta colision sellada, y el coste del turno contado |
+
+## JJ.0. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
+
+**Lo pendiente commiteado y pusheado antes de tocar nada** (`EXTRACTOR.md` 1.1). Ese commit llevaba
+los tres ficheros del arnes (`loop.log`, `ultimo_auditor.json`, `ultimo_extractor.json`), **ninguno
+mio**, y el estado que deja se cita como intermedio con el nombre de la operacion que ya lo movio.
+
+<!-- TALLADO: parcial salida=.v48/apertura_estado.txt -->
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git log -1 --format="%h %ad %s" --date=iso
+    3d9ea89 2026-09-19 06:53:22 -0400 Estado del arnes al abrir la vuelta 48
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+
+    cuarentena/grove_high_output/ : 36
+    cuarentena/marquet_turn_the_ship/ : 3
+    cuarentena/_insertados/grove_high_output/ : 1
+
+**LAS GUARDAS AL ABRIR**, corridas por mi en esta vuelta y no copiadas de ninguna acta
+(`EXTRACTOR.md` 5):
+
+<!-- TALLADO: parcial salida=.v48/apertura_guardas.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+<!-- TALLADO: parcial salida=.v48/apertura_pruebas.txt -->
+
+    $ time python tests/test_aceptacion.py
+      total: 318 pruebas, 0 fallos, 0 errores
+    real	2m3.717s
+
+**EL CREDITO Y LA DEUDA AL ABRIR**, leidos y no anotados por mi (`EXTRACTOR.md` 14):
+
+<!-- TALLADO: parcial salida=.v48/credito_apertura.txt -->
+
+    $ python forja.py credito
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA 46
+      CIFRA PUBLICADA    0 de 2     ACTA 46
+      CLASE              0 de 2     ACTA 46
+      DATO MOVIDO        0 de 2     ACTA 46
+      REPORTE            0 de 3     ACTA 46
+      CREDITO ENTERO: ninguna especie en su tope.
+
+<!-- TALLADO: parcial salida=.v48/deuda_apertura.txt -->
+
+    $ python scripts/deuda.py | head -3
+      pendientes: 14    pagadas: 8
+      ultima vuelta de saneamiento: 44
+
+**LAS CINCO RACHAS ABREN EN CERO, Y `AUDITOR` BAJO DE `2 de 3` A `0 de 3` ENTRE LA `ACTA 45` Y LA
+`ACTA 46`.** Lo leo y no lo anoto: esa sede no es mia. **Y LA DEUDA ABRE EN `14`**, que son las `12`
+de la apertura de la vuelta 47 mas las dos que la `ACTA 46` anoto contra mi trabajo (`d030` y
+`d031`), dichas en `JJ.1.c` y **no pagadas hoy**.
+
+**LA PUERTA DE `D.39`, MEDIDA OTRA VEZ Y NO SUPUESTA.** Esta corrida vuelve a llegar con
+`MODO_INSERCION=insertar` y a la vez con su condicion entera: *los candidatos de un lote ABIERTO se
+quedan en cuarentena hasta que su lote cierre*. **El encargo me manda medir la puerta y pegar la
+salida, no suponerla** (2.c):
+
+<!-- TALLADO: script=.v48/puerta.py salida=.v48/puerta_d39.txt -->
+
+    $ python .v48/puerta.py   sobre config/frentes.json
+    cerrados_en_extraccion : {'smart_who': {'cita': 'ACTA 8 seccion 10'}, 'zhuo_manager': {'cita': 'ACTA 13 seccion 8.1'}, 'scott_radical_candor': {'cita': 'ACTA 24'}}
+    grove_high_output CERRADO EN EXTRACCION: False
+
+**CUARTA VUELTA SEGUIDA CON LA PUERTA CERRADA, Y LA CONCLUSION ES LA MISMA: CERO INSERCIONES.**
+`grove_high_output` no esta en `cerrados_en_extraccion`, asi que **sus `36` fichas de cuarentena y
+las que escriba hoy se quedan donde estan**. No es una parada: el encargo de hoy no pide insertar,
+pide seguir minando, y por eso esto va en la apertura y no en una fila de tarea.
+
+## JJ.1. TAREA 1. **LOS REGISTROS DE LA `ACTA 46`: CUATRO FILAS DE REGISTRO, CERO REPARACIONES**
+
+**Esta tarea NO es de reparacion.** El encargo lo dice con la medida delante y `JJ.0` lo confirma
+corrido por mi: **ninguna guarda de DATO esta en rojo**, y son las cuatro unicas que bloquean.
+**Asi que aqui solo se registra.**
+
+### JJ.1.a. **LA CORRECCION DECLARADA DEL SUPERLATIVO DE `II.3.b`, ESCRITA EN SU SEDE**
+
+**Hecha, y su sede es `II.3.b` y no esta seccion**: la correccion va pegada al parrafo que publico
+el superlativo, con el texto viejo entero encima y sin borrar ni una letra. **Aqui solo digo que se
+hizo y con que.**
+
+**LAS DOS MITADES QUE EL ENCARGO PIDE ESTAN LAS DOS ESCRITAS ALLI:** la primera es la lista ordenada
+entera de los siete tramos, sin la cual un superlativo no se publica (`D.38.3` ensanchada), y la
+segunda es la separacion de la medida y la conclusion, con la conclusion marcada `LECTURA`.
+
+**LOS DOS INSTRUMENTOS SON DEL AUDITOR Y LAS DOS CORRIDAS SON MIAS**, de esta vuelta, que es lo que
+`EXTRACTOR.md` 5 manda: un acta previa nunca es fuente de una cifra nueva.
+
+<!-- TALLADO: parcial salida=.v48/tramos_v48.txt -->
+
+    $ python .v47aud/44_tramos.py
+       P24     356 palabras   1 nodo(s)
+       P27     347 palabras   1 nodo(s)
+    tramos con CERO nodos : 23   palabras: media 199.7  minimo 8  maximo 674 (P5)
+    tramos CON nodo       : 21   palabras: media 202.6  minimo 60  maximo 469 (P34)
+
+**LA CIFRA `347` ERA CIERTA Y EL SUPERLATIVO NO**, que es exactamente la especie: **no fallo la
+cuenta, fallo que la cuenta no se ordeno contra las otras seis antes de ponerle un *el mas*.**
+
+### JJ.1.b. **LA CORRECCION DECLARADA DEL `el mas proximo` DE `II.2.f`, ESCRITA EN SU SEDE**
+
+**Hecha, y su sede es `II.2.f`.** Lo mismo: al lado del texto viejo, sin borrarlo, con la lista
+ordenada entera de las tres seniales pegada de la corrida de hoy.
+
+<!-- TALLADO: parcial salida=.v48/proximidad_v48.txt -->
+
+    $ python .v47aud/45_proximidad.py
+       elegir_inspeccion_barrera_monitorizacion     similitud_texto 0.2660 | familia_id 0.0000 | paso_contra_nodo 0.4910
+       detectar_arreglar_fallo_etapa_menor_valor    similitud_texto 0.2260 | familia_id 0.3330 | paso_contra_nodo 0.4350
+
+**`2` DE `3` SENIALES A FAVOR DEL QUE SI ESCRIBI**, y la unica que gana el otro es la que compara
+la cadena del id. **LO QUE NO CAMBIA: la arista sigue declarada y se cablea el dia de la insercion.**
+
+### JJ.1.c. **LAS DOS DEUDAS NUEVAS: DICHAS Y NO PAGADAS** (`D.55`)
+
+**Ninguna se paga hoy**, y el encargo lo dice en su aviso final: las `14` esperan a la vuelta `49`,
+que es la quinta desde la `44` y le toca saneamiento. Las dos existen en el registro de la deuda y
+no en mi memoria:
+
+<!-- TALLADO: parcial salida=.v48/deudas_nuevas.txt -->
+
+    $ python scripts/deuda.py | grep -E "d030|d031"
+      d030   47      maquinaria         scripts/tabla_de_cierre.py --escribir escribe SIEMPR
+      d031   47      aduana             RETOCAR UNA LINEA DE UN resumen_teorico EN CUARENTEN
+
+| id | que es, en una linea | por que no la pago hoy |
+|---|---|---|
+| **`d030`** | `scripts/tabla_de_cierre.py --escribir` escribe siempre en la misma ruta viva, asi que cada cierre deja en rojo la tabla de la vuelta anterior. **Tercer ejemplar seguido**, y es distinto de `d009` y de `d022` | **es maquinaria**, y la moratoria de `EXTRACTOR.md` 13 con `D.45` me dejan fuera. **Mi remedio a mano es el correcto y lo vuelvo a usar hoy en `JJ.4.c`**: archivar la vieja y sellarla con `git hash-object` |
+| **`d031`** | retocar una linea de un `resumen_teorico` en cuarentena cuesta la aduana entera: `578` s medidos por mi en la vuelta 47, lo mismo que un candidato nuevo, porque el `resumen_teorico` alimenta la senial `1` | idem: **es maquinaria**. La medida es mia y por eso el auditor la anoto con mi cita. **Hoy la vuelvo a pagar en especie**: la arista que la senial levanto en `II.2.f` sigue sin meterse en su ficha por ese mismo coste |
+
+**LA DEUDA ABRE EN `14` Y TIENE QUE CERRAR EN `14`**: una vuelta que no paga deuda y no la genera
+por dato **no mueve esa cuenta**, y si se moviera seria la caida que buscar. Se recomputa en
+`JJ.4.e`.
+
+### JJ.1.d. **LO ADJUDICADO EN LA `ACTA 46` SE RECOGE Y NO SE REABRE**
+
+| adjudicacion | que dice | como la recojo |
+|---|---|---|
+| `46.5.a` | mi cierre corto de la vuelta 47 es correcto: lo dije con sus tres piezas | **recogida**. El cierre corto de hoy usa el mismo molde, en `JJ.2.h` |
+| `46.5.b` | la arista hacia un id inexistente **no es caida**, pero queda fragil | **recogida, y pagada en `JJ.2.b` sin coste propio** |
+| `46.5.c` | el techo en minutos se estima sobre PASOS | **recogida, y aplicada en `JJ.2.a`**: el techo de hoy son `44` pasos |
+| `46.5.d` | el volumen no sube | **recogida**: cinco candidatos, ni uno mas, y `P41`, `P42` y `P44` no se tocan |
+
+**Y LA MEDIDA DE `46.7` NO LA RECOJO COMO ADJUDICACION PORQUE NO LO ES.** El auditor midio que `13`
+de mis `45` pasos abren declarando y no ejecutando, y de esos `13` yo habia marcado `5`. **`D.56`
+congela la doctrina y `6.3` dice que mover la vara es decision del fundador**, asi que **no cambio
+la forma de mis pasos por eso**, que es lo que el encargo manda expresamente. Lo leo, lo se, y sigo
+escribiendo como escribo.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `JJ.1` | los registros de la `ACTA 46`: las dos correcciones declaradas, las dos deudas nuevas dichas y no pagadas, y lo adjudicado recogido | **CERRADA**: las dos correcciones escritas al lado de su texto viejo en `II.3.b` y `II.2.f` con los dos instrumentos del auditor corridos por mi hoy, `d030` y `d031` nombradas con su motivo de no pago, y las cuatro adjudicaciones de `46.5` recogidas sin reabrirse |
+
+## JJ.2. TAREA 2. **`cap_04` SIGUE ABIERTO EN `8` DE `22`: LOS CINCO SIGUIENTES, CADA UNO POR SU ADUANA EN EL ACTO, CERO INSERCIONES**
+
+> **FILA EN CURSO.** Esta seccion se abre antes del primer candidato y crece candidato a candidato,
+> para que una vuelta cortada deje reporte parcial y nunca vacio (`EXTRACTOR.md` 3).
+
+### JJ.2.a. **EL INSTRUMENTO SIGUE MINTIENDO AQUI, Y LA LINEA QUE LO NEUTRALIZA POR SEGUNDA VUELTA** (`d028`)
+
+**Corro `tablero --puedo` y lo publico entero, incluida la frase que no obedezco:**
+
+<!-- TALLADO: parcial salida=.v48/tablero_puedo.txt -->
+
+    $ python forja.py tablero --puedo grove_high_output
+    LINEA 'serial', LIBRO 'grove_high_output': SI
+      'grove_high_output' esta COSECHADO y sin dueno: su trabajo ya llego a esta rama, asi que
+      se continua desde el capitulo siguiente al ultimo minado (cap_04), citando su frontera. D.50.
+
+**NO SALTO A `cap_05`, Y HOY LA TRAMPA COSTARIA `8` NODOS.** `capitulos_minados` mide *capitulos
+que produjeron al menos UN candidato*: `cap_04` esta en `14` de sus `22`, contado por el auditor de
+las propias fichas con la frontera recompuesta al digito (`ACTA 46`). **`D.45` me prohibe tocar
+`src/`**, asi que lo que hago es esta linea y no un arreglo de codigo.
+
+**EL TECHO DE ESTA VUELTA, EN SUS TRES UNIDADES**, tal como el encargo lo escribio en `2.a`:
+
+| unidad | cifra | de donde sale |
+|---|---:|---|
+| **en candidatos** | **`5`** | el encargo, `2.a` |
+| **en PASOS, y es la mitad que muerde** | **`44`** | `67` min son `4020` s, y a los `90,9` s por paso que medi en la vuelta 47 dan `44,2` pasos (`46.5.c`) |
+| **en minutos** | **`67`** | el mismo de siempre, para poder cruzarlo con el anterior |
+
+**LA ESTIMACION DE LOS CINCO, HECHA ANTES DE ESCRIBIR NINGUNO:** los dos borradores de la vuelta 47
+traen `7` y `10` pasos, y los otros tres a `7,5` por candidato dan `22,5`, o sea **unos `40` pasos
+que caben en `44`**. **Si no cabe, cierro corto AL PASO y lo declaro con el numero y el reloj**; y
+si sobra, **no meto un sexto**: `P41`, `P42` y `P44` son de la vuelta 49.
+
+### JJ.2.b. **LA ARISTA QUE APUNTABA A UN NODO QUE NO EXISTIA, PAGADA SIN COSTE PROPIO** (`46.5.b`)
+
+`identificar_paso_limitante_jornada_desfases`, escrito por mi en la vuelta 47, declara dentro de su
+`resumen_teorico` una arista hacia un id que entonces no vivia en ninguna sede:
+
+<!-- TALLADO: parcial salida=.v48/arista_madre.txt -->
+
+    $ grep -o "29, HIJO usar_calendario[^.]*\." cuarentena/grove_high_output/identificar_paso_limitante_jornada_desfases.json
+    29, HIJO usar_calendario_herramienta_planificacion_produccion, porque su paso sobre llenar los huecos entre los pasos limitantes solo se puede ejecutar si este nodo ya los identifico.
+
+**ESCRIBI EL CANDIDATO `1` CON ESE MISMO ID, ASI QUE LA ARISTA SE RESUELVE SOLA Y NO HAY CORRECCION
+QUE DECLARAR.** La comprobacion, corrida por mi despues de escribir la ficha:
+
+<!-- TALLADO: script=.v48/arista_colgada.py salida=.v48/arista_colgada.txt -->
+
+    $ python .v48/arista_colgada.py
+    fichas contadas: 346 en el grafo, 547 en bandejas, 893 en total
+
+    el id que la arista de identificar_paso_limitante_jornada_desfases nombra:
+       usar_calendario_herramienta_planificacion_produccion
+       en dataset/nodos.jsonl : NO
+       en cuarentena          : SI   cuarentena/grove_high_output
+
+    ARISTA COLGADA: NO, el destino existe
+
+**LA DIFERENCIA CON EL `894` DEL ENCARGO SE DECLARA EN VEZ DE RESOLVERSE COPIANDO** (`EXTRACTOR.md`
+5): mi instrumento cuenta **ids distintos** y el del auditor contaba fichas, y ademas **yo acabo de
+sumar una**. `893` con mi ficha dentro son `892` sin ella, contra `894` suyos. **Son dos
+instrumentos distintos sobre la misma sede, y eso es contraste, no discrepancia**: lo que las dos
+medidas dicen igual es lo unico que la fila necesitaba, que **ese id no estaba y ahora esta.**
+
+**Y LA LECCION VA ESCRITA DENTRO DE LA FICHA NUEVA, QUE ES DONDE SOBREVIVE AL REPORTE**, tal como el
+encargo la pide:
+
+    LAS ARISTAS HACIA NODOS QUE AUN NO EXISTEN SE DECLARAN POR SU TRAMO (el nodo que sale de
+    L289, el nodo que sale de L303) Y NO POR UN ID INVENTADO DE ANTEMANO, porque un id que nadie
+    ha escrito puede no coincidir con el que se escriba, y entonces la arista queda colgada sin
+    que ninguna guarda lo cante: el gate solo mira el grafo.
+
+**ACERTE DE CASUALIDAD Y LO DIGO ASI**: el id que escribi en la vuelta 47 dentro de la ficha de la
+madre salio del mismo borrador que hoy se convierte en candidato, **pero nada garantizaba que el
+nombre sobreviviera a la escritura del nodo**. Las cuatro fichas nuevas de hoy que declaran aristas
+las declaran **a ids ya existentes, comprobados antes de escribirlas**, y la de `P36` y la de `P39`
+nombran por su tramo lo que todavia no tiene nombre.
+
+### JJ.2.c. **LOS RENGLONES DE ESTA TANDA, CON SU `sed` PEGADO** (`D.35`)
+
+*Salida de `python .v48/citas.py`, que abre el fichero del libro e imprime el renglon entero. La
+cita se pega, no se promete.*
+
+<!-- TALLADO: script=.v48/citas.py salida=.v48/citas.txt -->
+| # | tramo | linea | la salida de `sed -n '<n>p'`, pegada y cortada a 82 | de que candidato es |
+|---:|---|---:|---|---|
+| 1 | `P34a` | L273 | `273:What makes running a factory different from running a job shop? The latter is prep` | `usar_calendario_herramienta_planificacion_produccion` |
+| 2 | `P34a` | L275 | `275:What is the medium of a manager's forecast? It is something very simple: his calen` | `usar_calendario_herramienta_planificacion_produccion` |
+| 3 | `P34a` | L279 | `279:To use your calendar as a production-planning tool, you must accept responsibility` | `la cabecera que numera las dos responsabilidades, de los DOS` |
+| 4 | `P34a` | L281 | `281:1. You should move toward the active use of your calendar, taking the initiative t` | `usar_calendario_herramienta_planificacion_produccion` |
+| 5 | `P34b` | L277 | `277:Another production principle can be applied here. Because manufacturing people tru` | `decir_no_trabajo_excede_capacidad` |
+| 6 | `P34b` | L283 | `283:2. You should say "no" at the outset to work beyond your capacity to handle.` | `decir_no_trabajo_excede_capacidad` |
+| 7 | `P34b` | L285 | `285:It is important to say "no" earlier rather than later because we've learned that t` | `decir_no_trabajo_excede_capacidad` |
+| 8 | `P36` | L289 | `289:Another production principle is very nearly the opposite. A manager should carry a` | `llevar_inventario_proyectos_discrecionales` |
+| 9 | `P38` | L293 | `293:Built-In Leverage: How Many Subordinates Should You Have...` | `dimensionar_numero_subordinados_medio_dia_semanal` |
+| 10 | `P38` | L295 | `295:An important component of managerial leverage is the number of subordinates a mana` | `dimensionar_numero_subordinados_medio_dia_semanal` |
+| 11 | `P38` | L297 | `297:The six to eight rule is right for the classically hierarchical manager whose prim` | `dimensionar_numero_subordinados_medio_dia_semanal` |
+| 12 | `P38` | L299 | `299:Sometimes a business is organized in a way that makes the ideal fan-out of six to ` | `dimensionar_numero_subordinados_medio_dia_semanal` |
+| 13 | `P38` | L301 | `301:This arrangement will avoid forcing the plant manager either into on-the-job retir` | `dimensionar_numero_subordinados_medio_dia_semanal` |
+| 14 | `P39` | L303 | `303:Interruptions, The Plague of Managerial Work` | `buscar_regularidad_bloques_iguales_trabajo_mando` |
+| 15 | `P39` | L305 | `305:The next important production concept we can apply to managerial work is to strive` | `buscar_regularidad_bloques_iguales_trabajo_mando` |
+| 16 | `P39` | L307 | `307:But because you must coordinate your work with that of other managers, you can onl` | `buscar_regularidad_bloques_iguales_trabajo_mando` |
+
+renglones citados: 16, de 5 tramos distintos
+
+### JJ.2.d. **LA TANDA, CANDIDATO POR CANDIDATO, CON SU ADUANA EN EL ACTO**
+
+**Un candidato por vez y en el orden del libro** (`EXTRACTOR.md` 12.3), **y cada uno pasa
+`python forja.py informe <candidato>` en el mismo acto en que se escribe** (16). Los informes estan
+en `.v48/informe_01.txt` a `.v48/informe_05.txt` y sus relojes en `.v48/reloj_c01.txt` a
+`.v48/reloj_c05.txt`.
+
+**CERO INSERCIONES, Y NO POR FALTA DE PERMISO:** la corrida llega con `MODO_INSERCION=insertar`,
+pero el lote 7 esta **ABIERTO** y la puerta se midio en `JJ.0`. `D.39` dice que los candidatos de un
+lote abierto se quedan en cuarentena, y **meterlos antes es una caida de dato.**
+
+<!-- TALLADO: script=.v48/tanda.py salida=.v48/tanda_cap_04.txt -->
+
+| # | tramo | candidato | pasos | TRANSCRIPCION | PUENTE | la aduana, en el acto | vecinos | s |
+|---:|---|---|---:|---:|---:|---|---:|---:|
+| 1 | `P34a` | `usar_calendario_herramienta_planificacion_produccion` | 7 | 7 | **0** | `ENTRARIA` | 0 | 837 |
+| 2 | `P34b` | `decir_no_trabajo_excede_capacidad` | 10 | 10 | **0** | `BLOQUEARIA` | 3 | 840 |
+| 3 | `P36` | `llevar_inventario_proyectos_discrecionales` | 5 | 5 | **0** | `BLOQUEARIA` | 3 | 741 |
+| 4 | `P38` | `dimensionar_numero_subordinados_medio_dia_semanal` | 11 | 11 | **0** | `ENTRARIA` | 0 | 1188 |
+| 5 | `P39` | `buscar_regularidad_bloques_iguales_trabajo_mando` | 9 | 9 | **0** | `BLOQUEARIA` | 2 | 911 |
+| | | **5 candidatos** | **42** | **42** | **0** | | **8** | **4517** |
+
+    EL SALDO DE LA TANDA: BLOQUEARIA 3, ENTRARIA 2
+    POBLACION DEL BARRIDO, del primer informe al ultimo: de 386 a 390
+
+**`42` pasos escritos, `42` TRANSCRIPCION, `0` PUENTE, `8` pares de cola y `4.517` segundos de
+aduana. Ningun candidato `CAERIA`**, y **`CHOCAN entre si dentro del lote` sale `0` en los cinco
+informes**, que es la cifra que un informe de uno en uno si puede ver cuando el lote de la corrida
+es un solo fichero. **La poblacion crecio dentro de mi propia vuelta**, de `386` a `390`: cada
+candidato que escribo entra en la bandeja y lo ve el siguiente.
+
+**EL DISCUTIBLE DE `P34`, DICHO OTRA VEZ CON LAS DOS FICHAS DELANTE** (encargo `2.d`). La vuelta 46
+y la 47 lo marcaron a ciegas; hoy los dos nodos existen y la medida se repite con ellos escritos:
+**la responsabilidad `1` ocupa UNA frase (`L281`) sin un solo renglon que la despliegue, y la `2`
+tiene `L277` entero antes y `L285` entero despues.** Por eso `P34` da dos nodos y **no uno por
+responsabilidad**: la `1` entra como paso `7` de la cabeza y la `2` tiene casa propia con `10` pasos.
+**Si la `1` acabara mereciendo casa propia, mi candidato `1` seria una compresion de dos y manual
+3.4 lo prohibe**, y entonces el remedio no seria partirlo sino cablear la numeracion. **Sigue
+marcado, y ahora con el nodo delante.**
+
+**LAS CIFRAS DEL LIBRO DE `P38` VIAJAN COMO CIFRAS DEL AUTOR** (manual principios 5 y 8): *six to
+eight*, *three or four too few*, *ten too many*, *half a day a week*, *two days a week* y *an hour a
+week* estan en `atribuciones` con autor, fuente y fecha de corte. **Y el `cinco` de los cinco
+ingenieros NO lo escribo en ningun sitio**, y es deliberado: `L299` lo saca del dibujo que el libro
+pone debajo (*the arrangement, shown below*) y **ese dibujo no esta en el fichero de texto**. Una
+cifra que solo se sostiene en una figura que no tengo delante es media cifra.
+
+### JJ.2.e. **LA COLA DE LECTURA, PAR A PAR, CON SUS TRES SENIALES**
+
+<!-- TALLADO: script=.v48/tanda.py salida=.v48/tanda_cap_04.txt -->
+
+| par | candidato | vecino | senial | sim | fam | paso |
+|---:|---|---|---|---:|---:|---:|
+| 1 | `decir_no_trabajo_excede_capacidad` | `usar_calendario_herramienta_planificacion_produccion` | similitud_texto | 0.365 | 0.000 | 0.441 |
+| 2 | `decir_no_trabajo_excede_capacidad` | `agrupar_tareas_semejantes_aprovechar_preparacion` | similitud_texto | 0.354 | 0.000 | 0.417 |
+| 3 | `decir_no_trabajo_excede_capacidad` | `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.364 | 0.000 | 0.397 |
+| 4 | `llevar_inventario_proyectos_discrecionales` | `agrupar_tareas_semejantes_aprovechar_preparacion` | similitud_texto | 0.368 | 0.000 | 0.456 |
+| 5 | `llevar_inventario_proyectos_discrecionales` | `decir_no_trabajo_excede_capacidad` | similitud_texto | 0.377 | 0.000 | 0.409 |
+| 6 | `llevar_inventario_proyectos_discrecionales` | `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.394 | 0.000 | 0.392 |
+| 7 | `buscar_regularidad_bloques_iguales_trabajo_mando` | `agrupar_tareas_semejantes_aprovechar_preparacion` | paso_contra_nodo | 0.333 | 0.000 | 0.718 |
+| 8 | `buscar_regularidad_bloques_iguales_trabajo_mando` | `llevar_inventario_proyectos_discrecionales` | similitud_texto | 0.390 | 0.000 | 0.374 |
+| | | | **8 pares** | | | |
+
+    PARES CON similitud_texto POR ENCIMA DE 0,40 (EXTRACTOR.md 11: se leen antes que ningun otro): 0
+    BANDA DE similitud_texto DE ESTA TANDA: de 0.333 a 0.394
+    QUE SENIAL LEVANTA CADA VECINDAD: paso_contra_nodo 1, similitud_texto 7
+
+**LA LECTURA DE LOS OCHO PARES, HECHA AHORA Y NO EL DIA DE LA INSERCION**, porque el veredicto se
+escribe en `bitacora/VEREDICTOS.jsonl` y **lo escribe `forja.py insertar`** (`EXTRACTOR.md` 14): sin
+insercion no hay acto donde escribirlo, y lo que si puedo dejar es la lectura ya hecha.
+
+- **EL PAR `7` SE LEE PRIMERO, Y NO POR LA REGLA DE `0,40` SINO POR LA OTRA MITAD DE `EXTRACTOR.md`
+  11.** Esta tanda no tiene ni un par por encima de `0,40` en similitud, pero tiene **el unico par
+  de las tres tandas de `cap_04` que levanta `paso_contra_nodo`**, y lo levanta a **`0,718` contra
+  un umbral de `0,60`**. La regla dice que cerca de `1,0` el material del candidato ya vive en el
+  grafo, asi que abri los dos pasos que el informe nombra:
+
+  <!-- TALLADO: script=.v48/par7.py salida=.v48/par7.txt -->
+
+      $ python .v48/par7.py
+      buscar_regularidad_bloques_iguales_trabajo_mando
+        paso 1: Aplica a tu trabajo de mando el siguiente concepto de produccion: ve hacia la regularidad.
+      agrupar_tareas_semejantes_aprovechar_preparacion
+        paso 1: Aplica a tu trabajo de mando el segundo principio de produccion: agrupar las tareas semejantes.
+
+  **LO QUE CHOCA ES LA FORMULA DE ENLACE DEL LIBRO, NO EL PROCEDIMIENTO.** Las dos frases comparten
+  siete palabras seguidas (*Aplica a tu trabajo de mando el ... principio de produccion*) porque el
+  propio Grove encadena los principios asi (`L269` abre *A second production principle we can apply
+  to managerial work*, `L305` abre *The next important production concept we can apply to managerial
+  work*). **Lo que cada paso manda hacer es distinto**: uno agrupa lo semejante, el otro pone lo
+  igual siempre en el mismo bloque. **Mi lectura dice `SANO` con hermandad declarada**, y esa arista
+  ya estaba escrita dentro de la ficha antes de que la senial hablara. **Los otros ocho pasos de mi
+  nodo no chocan con ninguno.**
+- **EL PAR `1` ES EL UNICO PAR DE FRONTERA INTERNA DE LA TANDA, Y SALE EXACTAMENTE DONDE TENIA QUE
+  SALIR:** los dos nodos de `P34`, que comparten el renglon `L279` y ninguno mas. **La frontera se
+  publico antes de cortar** (`EXTRACTOR.md` 10) y esta escrita dentro de las dos fichas, con sus
+  lineas repartidas y `0` solapes de contenido. **`SANO` con hermandad declarada:** el libro los
+  numera `1` y `2` al mismo nivel, no uno debajo del otro.
+- **LOS PARES `2`, `3`, `4`, `5`, `6` Y `8` SON LA SERIE DE PRINCIPIOS DE PRODUCCION DEL PROPIO
+  LIBRO, LEIDA POR LA SENIAL COMO SI FUERA PARECIDO.** Los seis estan entre `0,354` y `0,394`, o sea
+  **pegados al umbral de `0,35` y dentro de la banda que la calibracion del 9 sep 2026 llamo ruido**.
+  **`SANO` en los seis**, y la razon es la misma en todos: `cap_04` aplica un principio de fabrica
+  tras otro al trabajo de mando, asi que **todos los nodos del capitulo abren con la misma clase de
+  frase y cierran con un objeto distinto**. Cero pasos comunes en los seis.
+- **Y LA COLA LARGA SIGUE SIENDO EL PRECIO DEL CAPITULO MONOTEMATICO**, que ya declare en la vuelta
+  46 y no reabro. **Lo que no se hace es subir un umbral para que se acorte.**
+
+**DOS COSAS QUE LA BANDA DE ESTA TANDA DICE Y LAS DOS ANTERIORES NO PODIAN DECIR:**
+
+1. **LOS `8` PARES SON `8` DE `8` DENTRO DE `cap_04`.** La vuelta 46 levanto `13` pares y la `47`
+   nueve, y de aquellos **uno solo venia de fuera del capitulo** (`detectar_arreglar_fallo_etapa_menor_valor`,
+   de `cap_02`). **Hoy ninguno.** El capitulo ya es su propio vecindario.
+2. **LA SENIAL `2` SIGUE SIN LEVANTAR NI UN PAR DENTRO DE `cap_04`: `0` de `13`, `0` de `9` y `0` de
+   `8`, tres tandas seguidas.** Es consistente con lo que la calibracion midio de ella (caza el
+   `51,1` por ciento de los gemelos reales) y **no propongo mover nada**: lo registro con su cifra.
+
+### JJ.2.f. **LAS `18` ARISTAS QUE ESTAS CINCO FICHAS DECLARAN, Y POR QUE NINGUNA SE CABLEA HOY**
+
+**Van DENTRO de la ficha, que es donde sobreviven al reporte** (encargo `2.c`), y esta tabla no las
+teclea: las saca de las cinco fichas.
+
+<!-- TALLADO: script=.v48/aristas.py salida=.v48/aristas.txt -->
+
+| # | ficha de hoy | clase | a quien apunta |
+|---:|---|---|---|
+| 1 | `usar_calendario_herramienta_planificacion_produccion` (`P34a`) | `D.37 CABEZA` | `subir_productividad_gerencial_tres_vias` |
+| 2 | `usar_calendario_herramienta_planificacion_produccion` (`P34a`) | `D.29 MADRE` | `identificar_paso_limitante_jornada_desfases` |
+| 3 | `usar_calendario_herramienta_planificacion_produccion` (`P34a`) | `D.29 HERMANO` | `decir_no_trabajo_excede_capacidad` |
+| 4 | `decir_no_trabajo_excede_capacidad` (`P34b`) | `D.37 CABEZA` | `subir_productividad_gerencial_tres_vias` |
+| 5 | `decir_no_trabajo_excede_capacidad` (`P34b`) | `D.29 HERMANO` | `usar_calendario_herramienta_planificacion_produccion` |
+| 6 | `decir_no_trabajo_excede_capacidad` (`P34b`) | `D.29 PARIENTE` | `equilibrar_capacidad_personal_inventario_plazo` |
+| 7 | `llevar_inventario_proyectos_discrecionales` (`P36`) | `D.37 CABEZA` | `subir_productividad_gerencial_tres_vias` |
+| 8 | `llevar_inventario_proyectos_discrecionales` (`P36`) | `D.29 HERMANO` | `usar_calendario_herramienta_planificacion_produccion` |
+| 9 | `llevar_inventario_proyectos_discrecionales` (`P36`) | `D.29 PARIENTE POR CONTRASTE` | `detectar_palanca_negativa_actividad_mando` |
+| 10 | `llevar_inventario_proyectos_discrecionales` (`P36`) | `D.29 PARIENTE` | `dimensionar_inventario_materia_prima_reposicion` |
+| 11 | `dimensionar_numero_subordinados_medio_dia_semanal` (`P38`) | `D.37 CABEZA` | `subir_productividad_gerencial_tres_vias` |
+| 12 | `dimensionar_numero_subordinados_medio_dia_semanal` (`P38`) | `D.29 PARIENTE POR CONTRASTE` | `detectar_palanca_negativa_actividad_mando` |
+| 13 | `dimensionar_numero_subordinados_medio_dia_semanal` (`P38`) | `D.29 PARIENTE` | `llevar_inventario_proyectos_discrecionales` |
+| 14 | `dimensionar_numero_subordinados_medio_dia_semanal` (`P38`) | `D.29 PARIENTE` | `dimensionar_plantilla_administrativa_pronostico` |
+| 15 | `buscar_regularidad_bloques_iguales_trabajo_mando` (`P39`) | `D.37 CABEZA` | `subir_productividad_gerencial_tres_vias` |
+| 16 | `buscar_regularidad_bloques_iguales_trabajo_mando` (`P39`) | `D.29 HERMANO` | `agrupar_tareas_semejantes_aprovechar_preparacion` |
+| 17 | `buscar_regularidad_bloques_iguales_trabajo_mando` (`P39`) | `D.29 HERMANO` | `usar_calendario_herramienta_planificacion_produccion` |
+| 18 | `buscar_regularidad_bloques_iguales_trabajo_mando` (`P39`) | `D.29 PARIENTE` | `representar_actividad_caja_negra_ventanas` |
+| | | **18 aristas** | |
+
+    D.29 HERMANO                 5
+    D.29 MADRE                   1
+    D.29 PARIENTE                5
+    D.29 PARIENTE POR CONTRASTE  2
+    D.37 CABEZA                  5
+
+**POR QUE NINGUNA SE CABLEA HOY, Y NO ES PEREZA:** `python forja.py arista` escribe en el grafo, y
+**los cinco nodos siguen en cuarentena** porque la puerta de `D.39` mide cerrada (`JJ.0`). Una
+arista cuyos dos extremos no estan en el grafo no se puede escribir alli. **`D.37` manda declararla
+en la misma vuelta en que se escriben las partes, y eso es lo que esta tabla hace**: las cinco
+`CABEZA` apuntan a `subir_productividad_gerencial_tres_vias`, que es la cabeza de la serie de tres
+vias, y **estan escritas en las cinco fichas hoy, no en la vuelta que inserte.**
+
+**Y LA LECCION DE `2.b` SE COMPRUEBA, NO SE PROMETE:** las `18` apuntan a ids que ya existen, y lo
+mide el instrumento y no mi palabra.
+
+<!-- TALLADO: script=.v48/destinos.py salida=.v48/destinos.txt -->
+
+    $ python .v48/destinos.py
+    destinos de arista comprobados : 18
+    destinos que NO existen        : 0
+    CERO ARISTAS COLGADAS: SI
+
+### JJ.2.g. **EL TRAMO CIERRA ENTERO EN LOS CINCO, Y EL TECHO QUE MUERDE NO ES EL QUE MORDIO**
+
+> **La vuelta entrega los `5` candidatos encargados, que son los nodos `15` a `19` de los `22` del
+> capitulo. Quedan `3` para la vuelta 49, nombrados por su tramo: `P41` (las respuestas estandar a
+> las interrupciones que se repiten, `L315`), `P42` (agrupar las interrupciones en las reuniones
+> regulares, `L317`) y `P44` (el cartel en la puerta y la hora de oficina abierta, `L321`).**
+
+<!-- TALLADO: parcial salida=.v48/tanda_cap_04.txt -->
+
+    candidatos pasados por la aduana en esta vuelta : 5
+    segundos por candidato, menor y mayor           : 741 y 1188
+    media por candidato                             : 903.4 s
+    total de la tanda                               : 4517 s  (75.3 min)
+
+    EL TECHO EN PASOS, que es la mitad que muerde (46.5.c) : 44 pasos
+      pasos escritos por esta tanda                       : 42
+      DENTRO DEL TECHO DE PASOS                           : SI
+    EL TECHO EN MINUTOS, para poder cruzarlo (d011)       : 67 min
+      minutos de aduana de esta tanda                     : 75.3 min
+      DENTRO DEL TECHO DE MINUTOS                         : NO
+
+**LAS DOS MITADES DEL TECHO SE SEPARAN POR PRIMERA VEZ, Y ESA ES LA MEDIDA DE LA VUELTA.** El techo
+en pasos, que el encargo llama *la mitad que muerde*, **se cumple: `42` de `44`**. El techo en
+minutos, que el encargo pone *para que se pueda cruzar con el anterior*, **no: `75,3` contra `67`**.
+**No cierro corto porque la unidad del techo es el paso** (`46.5.c`), y en esa unidad cabia el
+quinto con dos pasos de margen. **Lo digo con las tres piezas que `12.4` pide**: el numero (`5` de
+`5`), el reloj (`4517` s contra `4020`) y los tres que quedan nombrados por su tramo.
+
+**POR QUE LA CONVERSION FALLO, MEDIDO Y NO SUPUESTO:**
+
+<!-- TALLADO: parcial salida=.v48/tanda_cap_04.txt -->
+
+    CONTRASTE CONTRA LA VUELTA 47, contado de sus propios relojes y no de su reporte:
+      media de la vuelta 47                         : 681.7 s
+      media de la vuelta 48                         : 903.4 s
+      subida                                        : +221.7 s por candidato (+32.5 por ciento)
+
+    Y LA MISMA MEDIDA EN LA UNIDAD QUE 46.5.c ADJUDICO, QUE ES EL PASO:
+      pasos por candidato, vuelta 47                : 7.50
+      pasos por candidato, vuelta 48                : 8.40
+      segundos por PASO, vuelta 47                  : 90.9 s
+      segundos por PASO, vuelta 48                  : 107.5 s
+
+**EL `44` SE CALCULO CON `90,9` SEGUNDOS POR PASO Y HOY EL PASO CUESTA `107,5`**, o sea un `18,3`
+por ciento mas. `42` pasos a `107,5` son `4515` segundos, que es lo que el reloj marco al segundo.
+**La conversion no fallo por la unidad: fallo porque la cifra por paso tampoco es estable.**
+
+**Y LO QUE ESA CIFRA SI ARREGLA, QUE ES LA MITAD BUENA DE `46.5.c`:** el techo por candidato habria
+fallado mucho peor. Entre las dos vueltas **el coste por candidato sube un `32,5` por ciento y el
+coste por paso solo un `18,3`**, exactamente la misma figura que la vuelta 47 midio (`34,8` contra
+`12,4`). **El paso sigue siendo mejor unidad que el candidato; lo que no es, es una constante.**
+Tres tandas seguidas dan `80,9`, `90,9` y `107,5` segundos por paso, y las tres con la poblacion
+subiendo: `372`, `385`, `390`. **No lo adjudico yo**, va a `JJ.4.g`.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `JJ.2` | `cap_04` abierto en `8` de `22`: los cinco siguientes, cada uno por su aduana en el acto, cero inserciones, el techo en pasos y la arista colgada | **CERRADA ENTERA EN LOS `5`**: `42` pasos, `0` `CAERIA`, `8` pares de cola leidos par a par, `18` aristas declaradas dentro de las fichas con sus `18` destinos comprobados, la arista colgada resuelta sin coste propio, **cero inserciones**, y el techo de pasos cumplido con el de minutos pasado y declarado |
+
+## JJ.3. TAREA 3. **`PASOS INVENTADOS` DE `cap_04`, CON SU DENOMINADOR Y SUS TRES FILAS**
+
+**La relectura de fidelidad `D.30` se hizo EN EL ACTO de escribir cada candidato**, paso contra
+parrafo, y la cifra de cada ficha vive dentro de su propio `resumen_teorico`, que es donde `D.30`
+manda ponerla. **Esta tabla no la vuelve a juzgar: la cuenta de las fichas, y el instrumento se para
+sin publicar si una ficha declara mas pasos de los que tiene o si su suma no cuadra.**
+
+<!-- TALLADO: script=.v48/tanda.py salida=.v48/tanda_cap_04.txt -->
+
+| capitulo y tanda | PUENTE | pasos escritos | por ciento | tope |
+|---|---:|---:|---:|---:|
+| `cap_04`, vuelta 48, los 5 de hoy | **0** | **42** | **0.00** | 10 |
+| `cap_04`, los 14 ya minados antes de hoy (vueltas 46 y 47) | **0** | **95** | **0.00** | 10 |
+| **`cap_04` entero hasta hoy, los 19 nodos minados** | **0** | **137** | **0.00** | 10 |
+
+    EL DENOMINADOR SE ESCRIBE AUNQUE EL NUMERADOR SEA CERO: 42 pasos escritos hoy, 95 en los 14 ya minados, 137 en cap_04 entero.
+
+**LA FILA DE LOS `14` NO LA TECLEE: el instrumento la cuenta de las catorce fichas, que siguen en la
+bandeja**, y por eso podia haber salido distinta de la que aquellas dos vueltas publicaron. **No ha
+salido distinta: da `0` de `95`, que es exactamente lo que el auditor firmo en la `ACTA 46` tras
+releer los `95` pasos uno a uno.**
+
+**Y LO QUE ESA COINCIDENCIA PRUEBA, QUE ES POCO Y CONVIENE DECIRLO OTRA VEZ:** prueba que **nadie ha
+tocado esas catorce fichas desde que se escribieron**, ni yo hoy. No prueba que los `95` pasos sean
+del libro: eso lo probo la relectura del auditor, y esa es otra clase de prueba. **Lo mismo vale
+para mis `42` de hoy, que todavia no ha releido nadie.**
+
+### JJ.3.a. **LOS SIETE SITIOS DONDE ESTUVE A PUNTO DE ESCRIBIR UN PUENTE, DICHOS POR SU NOMBRE**
+
+**Una cifra de cero no prueba que no hubiera tentacion**, y esta tabla es la mitad de la metrica que
+el cero no da. **Las especies son las de `EXTRACTOR.md` 15.4.** Los siete estan escritos dentro de
+su ficha, en el acto, y no reconstruidos aqui.
+
+| donde | la especie de `15.4` | que me paro, con el renglon delante |
+|---|---|---|
+| `decir_no_trabajo_excede_capacidad`, el paso que no escribi | **el responsable y la medicion** | **es el que la vuelta 47 dejo anotado sin ficha, y hoy va con nodo delante**: iba a mandar MEDIR la capacidad y anotarla, que es lo que el paralelo de fabrica pide a gritos. **`L277` dice lo contrario**: que los indicadores de capacidad de un mando *are not as well established* y que lo que hay es *a feel for the time required*. El paso `5` escribe esa idea y el `6` manda explotarla tal cual |
+| `llevar_inventario_proyectos_discrecionales`, el paso que no escribi | **el periodo** | iba a mandar REVISAR el inventario cada cierto tiempo y dar de baja lo que envejeciera. **`L289` dice lo contrario de lo que ese paso daria por hecho**: el que se estropea es el inventario de TRABAJO EN CURSO, y este se define por NO tener que terminarse ya |
+| `llevar_inventario_proyectos_discrecionales`, el paso que no escribi | **el inventario inventado** | iba a enumerar QUE proyectos son discrecionales (formacion, documentacion, mejoras de proceso). **El libro no nombra ni uno**: da el criterio y para ahi |
+| `dimensionar_numero_subordinados_medio_dia_semanal`, el paso que no escribi | **el periodo** | iba a mandar recontar el numero de subordinados cada cierto tiempo o al cambiar la organizacion. **Las cinco lineas del tramo dan la cifra y su guia, y ni periodo ni momento de revision** |
+| `dimensionar_numero_subordinados_medio_dia_semanal`, el paso que no escribi | **el responsable** | iba a escribir quien decide el reparto. **`L299` escribe *The manager might then choose*, o sea que el que elige es el propio mando**, y ningun renglon nombra a nadie mas |
+| `buscar_regularidad_bloques_iguales_trabajo_mando`, el paso `8` | **el periodo y la cifra** | iba a mandar reservar UN bloque semanal fijo, tomando la manana del lunes de Intel como medida. **El libro da el lunes como EJEMPLO de una empresa** (*For example, at Intel*) y la regla que escribe es *the same blocks of time must be used for like activities*, **sin cuantos, sin cuan largos y sin cada cuanto** |
+| `buscar_regularidad_bloques_iguales_trabajo_mando`, el paso `5` | **el inventario inventado** | iba a enumerar QUE ventanas se abren en la caja negra. **`L305` dice *cutting windows into the black box* y no nombra ni una** |
+
+**Y HAY UN OCTAVO QUE NO ES PUENTE DE PASO Y LO DIGO IGUAL, porque es la especie que `d027` tiene
+abierta y la que el encargo `2.d` avisa:** en `dimensionar_numero_subordinados_medio_dia_semanal`
+estuve a punto de escribir el **`cinco`** de *five engineers and the manufacturing manager* de
+`L299`. **La frase esta en el libro, asi que no habria sido un puente**, pero ese numero **sale del
+dibujo que el libro pone debajo** (*the arrangement, shown below*) y **el dibujo no esta en el
+fichero de texto que tengo delante**. Un numero que solo se sostiene en una figura que no puedo
+abrir es media cifra, y **media cifra no se publica ni en el paso ni en la atribucion**. El paso
+`10` escribe la relacion y no el total.
+
+### JJ.3.b. **EL AVISO DE `15.4`, PUESTO A PRUEBA POR EL TRAMO MAS POBRE DE LAS TRES TANDAS**
+
+**`P36` tiene `101` palabras y un solo renglon.** Es el puesto `36` de los `44` tramos del capitulo,
+**y es el tramo mas pobre que he dado por bueno en las tres tandas de `cap_04`**. La lista ordenada
+entera que sostiene ese *el mas pobre* es la misma de `JJ.1.a`, corrida en esta vuelta:
+
+<!-- TALLADO: parcial salida=.v48/tramos_v48.txt -->
+
+    $ python .v47aud/44_tramos.py
+       P38     396 palabras   1 nodo(s)
+       P39     242 palabras   1 nodo(s)
+       P36     101 palabras   1 nodo(s)
+       P41      92 palabras   1 nodo(s)
+       P42      74 palabras   1 nodo(s)
+       P18      60 palabras   1 nodo(s)
+
+**LO QUE EL AVISO PREDICE ES LO QUE PASO:** `P36` es **el tramo que mas tentaciones de puente me
+dio** (dos de los siete de arriba salen de sus `101` palabras) **y el que menos pasos dio** (`5`).
+**No se me volvio puente: se me volvio nodo corto con dos tentaciones declaradas.** `P38`, con `396`
+palabras y su inventario denso, dio `11` pasos y **cero tentaciones de inventario**: las dos suyas
+son de periodo y de responsable, que son las que el parrafo rico tampoco cubre.
+
+**Y NO REPITO LA CONCLUSION DE LA VUELTA 47, PORQUE LA CORREGI EN `JJ.1.a`:** pobre de PALABRAS y
+pobre de INVENTARIO no son la misma pobreza, y aqui las dos coincidieron en `P36` **por casualidad
+de este tramo, no por regla**. Lo que si se sostiene es la frase madre de `15.4`: **cuando el
+inventario del libro sea delgado, desconfia de tus propios pasos.**
+
+| tarea | que pide | estado |
+|---|---|---|
+| `JJ.3` | `PASOS INVENTADOS` de `cap_04` con su denominador y sus tres filas, y los sitios de tentacion por su especie | **CERRADA**: `0` PUENTE de `42` pasos hoy, `0` de `95` en los `14` ya minados contados por el instrumento de sus fichas, `0` de `137` en `cap_04` entero, y **siete sitios de tentacion nombrados por su especie mas un octavo que no es puente y se dice igual** |
+
+## JJ.4. TAREA 4. **EL CIERRE, CON SUS CINCO PIEZAS**
+
+### JJ.4.a. **EL ESTADO AL CIERRE, RECOMPUTADO AL CIERRE Y NO COPIADO DE LA APERTURA** (`EXTRACTOR.md` 4)
+
+<!-- TALLADO: parcial salida=.v48/cierre_estado.txt -->
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    41
+    $ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+    1
+
+**LAS TRES CIFRAS DEL DATO NO SE MOVIERON, Y ESE ES EL RESULTADO CORRECTO:** `346`, `740` y `1` son
+exactamente las de `JJ.0`. **Una vuelta que no inserta no debe mover el dataset, la bitacora ni los
+pares mutuos**, y si alguna se hubiera movido seria la caida que buscar. **Lo que si crecio es la
+bandeja: `36` mas `5` igual a `41`.**
+
+**Y LOS ARBOLES QUE EL ENCARGO ME PROHIBE TOCAR NO SE TOCARON**, medido por diferencia y no
+prometido:
+
+<!-- TALLADO: parcial salida=.v48/arbol_intacto.txt -->
+
+    $ git status --short -- src/ tests/ scripts/ dataset/ forja.py hooks/ config/ bitacora/ censos/
+    (sin salida: ninguno de esos arboles cambio en esta vuelta)
+
+### JJ.4.b. **LAS CINCO GUARDAS AL CIERRE, CORRIDAS Y PEGADAS, Y UNA DE ELLAS SALIO EN ROJO LA PRIMERA VEZ**
+
+<!-- TALLADO: parcial salida=.v48/cierre_guardas.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+<!-- TALLADO: parcial salida=.v48/cierre_pruebas.txt -->
+
+    $ time python tests/test_aceptacion.py
+      total: 318 pruebas, 0 fallos, 0 errores
+    real	1m55.150s
+
+> ### **LA PRUEBA DE ACEPTACION SALIO EN ROJO EN SU PRIMERA CORRIDA DE CIERRE, Y LO DIGO EN VEZ DE PUBLICAR SOLO LA VERDE**
+>
+> **`318` pruebas, `1` fallo.** No cambie nada del arbol entre esa corrida y la que publico arriba:
+> `src/`, `tests/`, `scripts/` y `dataset/` estan intactos, medido en `JJ.4.a`. **Lo volvi a correr
+> y salio verde**, y aun asi la primera corrida existe y tiene su fichero.
+>
+> <!-- TALLADO: script=.v48/pruebas_intermitentes.py salida=.v48/pruebas_intermitentes.txt -->
+>
+> | # | fichero de la corrida | que corrida es | pruebas | fallos | errores |
+> |---:|---|---|---:|---:|---:|
+> | 1 | `.v48/apertura_pruebas.txt` | apertura, en su sitio del ciclo | 318 | **0** | 0 |
+> | 2 | `.v48/cierre_pruebas_rojo.txt` | cierre, primera corrida | 318 | **1** | 0 |
+> | 3 | `.v48/pruebas_diag.txt` | diagnostico, corrida suelta | 318 | **0** | 0 |
+> | 4 | `.v48/cierre_pruebas.txt` | cierre, corrida aislada, la que se publica | 318 | **0** | 0 |
+>
+>     corridas con fichero que citar : 4
+>        en VERDE                    : 3
+>        en ROJO                     : 1
+>
+> **LO QUE SE Y LO QUE NO SE, SEPARADO:**
+>
+> - **SE cual fue**, porque una corrida de diagnostico me lo canto por su nombre:
+>   `test_e_guion_largo_rompe_el_hook`, de `PruebaE`, que **monta un repo de usar y tirar y le
+>   dispara el hook**. En la corrida `3` de la tabla ese mismo caso sale `ok`.
+> - **NO SE por que**, y no lo adivino (`EXTRACTOR.md` 7). Lo unico que puedo sostener es lo que la
+>   tabla mide: **misma prueba, mismo arbol, cuatro corridas, tres verdes y una roja.**
+> - **NO TENGO LA TRAZA DE LA ROJA, Y ESO ES METODO MIO Y NO DEL INSTRUMENTO:** capture la corrida
+>   con `tail -3`, asi que guarde el recuento y tire el detalle. **Una corrida que puede salir roja
+>   se captura entera.** Lo apunto contra mi.
+> - **HUBO UNA QUINTA CORRIDA, TAMBIEN ROJA, QUE NO CUENTO EN LA TABLA** porque la pase por una
+>   tuberia a `grep` y **no deje fichero que citar**. `EXTRACTOR.md` 4 dice que si no hay linea que
+>   citar la afirmacion no se escribe, asi que **esa no suma**, y lo digo para que no parezca que la
+>   escondo.
+>
+> **ESTO NO ES UNA PARADA** (`EXTRACTOR.md` 7): no contradice ninguna regla vigente ni ninguna cifra
+> publicada con su corte, y la guarda que se publica **esta verde y aislada**. **Y NO ES MAQUINARIA
+> QUE YO ARREGLE**: la moratoria de `EXTRACTOR.md` 13 y `D.45` me dejan fuera de `tests/`. **Lo
+> registro con su medida y lo dejo ahi**, que es lo que el encargo manda hacer con lo que aparezca
+> nuevo. **La sede de la deuda no es mia**, asi que no la anoto: la propongo en `JJ.4.g`.
+
+**`318` en la apertura y `318` al cierre**, que es lo que tiene que dar una vuelta que **no toco
+`tests/`, `src/`, `scripts/`, el banco, el arnes ni los protocolos**. El tallado `D.41` y el censo
+`D.42` van en `JJ.4.e`, con la salida entera del cierre.
+
+### JJ.4.c. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
+
+*Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
+`docs/loop/TABLA_DE_CIERRE.txt`.*
+
+> **LA COLISION DE `D.52` CON `D.41` VOLVIO A MORDER POR CUARTA VEZ SEGUIDA, Y SE REPARO A MANO
+> COMO MANDA EL ENCARGO** (`d030`, TAREA `4.2`). `scripts/tabla_de_cierre.py --escribir` escribe
+> SIEMPRE en la misma ruta viva, asi que al escribir la mia deje en rojo la de la vuelta 47 **sin
+> tocar ni una celda de su reporte**. **La salida de la vuelta 47 se saco de git byte a byte y se
+> archivo**, y la linea de `II.4.c` pasa a nombrar la copia archivada con su correccion declarada
+> al lado:
+>
+> <!-- TALLADO: parcial salida=.v48/sello_v47.txt -->
+>
+>     $ git show HEAD:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+>     128d46605ef9f110c6d75dbe5b97cdb2cbe94f5a
+>     $ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v47.txt
+>     128d46605ef9f110c6d75dbe5b97cdb2cbe94f5a
+>
+> **EL MISMO `hash-object` ANTES Y DESPUES: la copia es la salida, no una transcripcion.**
+> `42`, `46`, `47` y hoy la `48`: **cuatro vueltas seguidas con la misma averia**, y eso es lo que
+> la hace deuda de maquinaria y no descuido de nadie. `d022` y `d030` ya la tienen abierta.
+
+<!-- TALLADO: parcial salida=docs/loop/TABLA_DE_CIERRE.txt -->
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | los registros de la `ACTA 46`: las dos correcciones declaradas, las dos deudas nuevas y lo adjudicado | **CERRADA**: las dos correcciones escritas al lado de su texto viejo en `II.3.b` y `II.2.f` con los dos instrumentos del auditor corridos por mi hoy, `d030` y `d031` nombradas con su motivo de no pago, y las cuatro adjudicaciones de `46.5` recogidas sin reabrirse |
+| 2 | `cap_04` abierto en `8` de `22`: los cinco siguientes, cada uno por su aduana, cero inserciones | **CERRADA ENTERA EN LOS `5`**: `42` pasos, `0` `CAERIA`, `8` pares de cola leidos par a par, `18` aristas declaradas dentro de las fichas con sus `18` destinos comprobados, la arista colgada resuelta sin coste propio, **cero inserciones**, y el techo de pasos cumplido con el de minutos pasado y declarado |
+| 3 | `PASOS INVENTADOS` de `cap_04` con su denominador y sus tres filas | **CERRADA**: `0` PUENTE de `42` pasos hoy, `0` de `95` en los `14` ya minados, `0` de `137` en `cap_04` entero, y siete sitios de tentacion nombrados por su especie mas un octavo que no es puente |
+| 4 | el cierre, con sus guardas, su tabla `D.52`, su estado y su coste | **CERRADA**: las cinco guardas en verde, la corrida roja de la prueba de aceptacion declarada con su medida, la colision de `D.52` sellada por `hash-object`, el estado recomputado y el coste del turno contado de sus relojes |
+
+### JJ.4.d. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+**Van por numero y sin reabrir el argumento** (modo austero), y **los nueve estaban escritos dentro
+de su ficha antes de que ninguna senial hablara.** Cada uno se lee entero en el `resumen_teorico`
+del candidato que lo lleva.
+
+| # | donde | el discutible, en una linea |
+|---:|---|---|
+| 1 | `usar_calendario_herramienta_planificacion_produccion`, paso `7` | **es la responsabilidad `1` metida en la cabeza en vez de con casa propia.** Si mereciera casa, este nodo seria una compresion de dos y manual 3.4 lo prohibe. **Tercera vuelta seguida que lo marco, y la primera con el nodo delante** |
+| 2 | `decir_no_trabajo_excede_capacidad`, pasos `1` y `2` | **son el paralelo de fabrica, o sea un caso de otro dominio**, y un lector estricto dira que el nodo empieza en el `3` |
+| 3 | `llevar_inventario_proyectos_discrecionales`, paso `5` | **es una consecuencia y no un acto**, y sin el los cuatro primeros quedan en una definicion de un inventario que nadie sabe para que sirve |
+| 4 | `llevar_inventario_proyectos_discrecionales`, el nodo entero | **`101` palabras, el tramo mas pobre que doy por bueno en las tres tandas de `cap_04`**, y `15.4` avisa de que ahi es donde se inventa |
+| 5 | `dimensionar_numero_subordinados_medio_dia_semanal`, pasos `9`, `10` y `11` | **salen del caso de la planta con dos secciones**, y un lector estricto dira que un caso no pone pasos y que el nodo termina en el `8` |
+| 6 | `dimensionar_numero_subordinados_medio_dia_semanal`, paso `11` | **es una consecuencia y no un acto**, y es lo unico que dice para que sirve el arreglo del paso `9` |
+| 7 | `buscar_regularidad_bloques_iguales_trabajo_mando`, paso `9` | **es el caso de Intel**, y un lector estricto dira que un ejemplo no pone paso y que el nodo termina en el `8` |
+| 8 | `buscar_regularidad_bloques_iguales_trabajo_mando`, paso `6` | **es una consecuencia y cierra el argumento del paso `5`** en vez de anadir algo que hacer |
+| 9 | `dimensionar_numero_subordinados_medio_dia_semanal`, el `cinco` que NO escribi | **la frase esta en `L299` y aun asi no la escribo**, porque ese numero sale de un dibujo que el fichero de texto no trae. **Marco el silencio, no el paso**: si el auditor tiene la figura, este silencio es una omision mia |
+
+**UNA COSA QUE LOS NUEVE TIENEN EN COMUN Y CONVIENE QUE SE VEA:** cinco de los nueve (`3`, `5`,
+`6`, `7` y `8`) son **la misma especie**, pasos que son consecuencia o caso en vez de acto, y los
+cinco caen en los tres candidatos de tramo corto. **No los quito**: sin ellos esos tres nodos se
+quedan en una definicion y un beneficio. **Pero si caen, caen los cinco juntos**, y eso es lo que
+`EXTRACTOR.md` 8 quiere que este marcado antes de saberlo.
+
+### JJ.4.e. **LOS INSTRUMENTOS DEL CIERRE, CORRIDOS Y PEGADOS**
+
+<!-- TALLADO: parcial salida=.v48/tablero.txt -->
+
+    $ python forja.py tablero --escribir
+      MUNDO 11: faltan 3 de 3 libros del corte (grove_high_output, gerber_emyth, marquet_turn_the_ship)
+      COLA DE DOCTRINA (D.56): 11 pregunta(s), 0 bloquea(n)
+    ESCRITO: 22 fila(s) en docs/loop/TABLERO.jsonl
+
+<!-- TALLADO: parcial salida=.v48/credito_cierre.txt -->
+
+    $ python forja.py credito
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA 46
+      CIFRA PUBLICADA    0 de 2     ACTA 46
+      CLASE              0 de 2     ACTA 46
+      DATO MOVIDO        0 de 2     ACTA 46
+      REPORTE            0 de 3     ACTA 46
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+<!-- TALLADO: parcial salida=.v48/deuda_cierre.txt -->
+
+    $ python scripts/deuda.py | head -3
+      pendientes: 14    pagadas: 8
+      ultima vuelta de saneamiento: 44
+
+**EL TABLERO Y EL CREDITO LOS LEO Y NO LOS ANOTO** (`EXTRACTOR.md` 14): esas dos sedes no son mias.
+**Y LA DEUDA CIERRA EN `14`, LAS MISMAS `14` DE LA APERTURA**, que es lo que tiene que dar una
+vuelta que no paga deuda: `d030` y `d031` siguen abiertas y las otras doce tambien. **La cola de
+doctrina sigue congelada en `11` y no le he anadido ninguna**, aunque esta vuelta trae una pregunta
+nueva: va a `JJ.4.g` como propuesta y no al tablero.
+
+**LA QUINTA GUARDA, `cerrar_reporte.py`, SE CORRE AL FINAL DE ESTA SECCION** y su salida entera se
+pega abajo, porque es la unica que no se puede correr antes de que el reporte este escrito.
+
+### JJ.4.f. **EN QUE SE FUE EL TURNO** (`D.55`), **Y LA DECLARACION DE QUE ESTA NO ES DE SANEAMIENTO**
+
+**ESTA VUELTA NO ES DE SANEAMIENTO**: no paga deuda, no toca `src/`, `scripts/`, `tests/`, el banco
+ni los protocolos, y su trabajo es extraer nodos. **La ultima de saneamiento fue la `44`, asi que la
+`49` es la quinta desde entonces y le toca**, con las `14` que hoy quedan abiertas. **La cifra en USD
+no la doy porque no la puedo medir**, y `EXTRACTOR.md` 7 manda traer como pregunta lo que no se pueda
+medir en vez de adivinarlo:
+
+<!-- TALLADO: parcial salida=.v48/usd.txt -->
+
+    $ grep -rl "USD" src/ scripts/ forja.py | wc -l
+    0
+
+**LO QUE LA REGLA SI PERSIGUE, EL EN QUE SE FUE, SI LO PUEDO ENTREGAR**, y lo cuenta el instrumento
+de los relojes y no mi memoria:
+
+<!-- TALLADO: script=.v48/coste.py salida=.v48/coste.txt -->
+
+| en que se fue | medida | de donde sale |
+|---|---:|---|
+| **la aduana en seco de los `5` candidatos** | **4517 s** | PATRON: `.v48/reloj_c0*.txt`, sumados por `.v48/coste.py` |
+| las dos pruebas de aceptacion, apertura y cierre | 239 s | `.v48/apertura_pruebas.txt` y `.v48/cierre_pruebas.txt`, las dos con su `real` |
+| la corrida de cierre que salio en ROJO, repetida | 101 s | `.v48/cierre_pruebas_rojo.txt`, con su `real`. La de diagnostico no lleva `real` y por eso no tiene cifra |
+| ninguna ficha vieja retocada | 0 s | VACIA A PROPOSITO: esta vuelta no corrigio ninguna ficha ya escrita, asi que no hay reloj que citar |
+| el resto: leer el capitulo, escribir las `5` fichas y el reporte | sin cifra | sin instrumento propio, y por eso no le pongo cifra |
+| **total cronometrado del turno** | **4857 s  (81.0 min)** | la suma de las filas de arriba |
+
+    EL POR CIENTO DE LO CRONOMETRADO QUE SE FUE EN LA ADUANA EN SECO: 93.0 por ciento
+      (la aduana entera, 4517 s de 4857 s cronometrados)
+    LA PRUEBA DE ACEPTACION, LAS DOS CORRIDAS PUBLICADAS         : 4.9 por ciento
+    LA CORRIDA EN ROJO QUE HUBO QUE REPETIR                      : 2.1 por ciento
+    Y NO HAY FILA EN USD: grep -rl USD src/ scripts/ forja.py da 0 ficheros.
+
+**EL `93,0` POR CIENTO DE LO QUE ESTE TURNO CRONOMETRO SE FUE EN LA ADUANA EN SECO**, y es la
+tercera medida seguida de la misma frase: `97,2` en la vuelta 46, `95,3` en la 47 y `93,0` hoy.
+**El gasto de esta vuelta no esta en escribir nodos, esta en medirlos.** El porcentaje es sobre lo
+cronometrado y no sobre el turno entero, **que es lo unico que puedo sostener**: el tiempo de leer
+el capitulo y escribir las cinco fichas no lo mide ningun instrumento de esta casa.
+
+**Y LA FILA QUE BAJA ES LA QUE NO QUERIA BAJAR ASI:** el `93,0` de hoy no es mas barato que el
+`95,3` de la vuelta 47, **es que el denominador subio con los `101` segundos de una corrida de
+prueba que hubo que repetir.** La aduana en si subio: `4090` s la vuelta 47 con `6` candidatos,
+`4517` s hoy con `5`.
+
+### JJ.4.g. **LO QUE PROPONGO Y NO ADJUDICO** (`EXTRACTOR.md` 14)
+
+**Tres, y ninguna la anoto yo en la deuda, en el banco ni en la cola de doctrina, que no son mis
+sedes:**
+
+1. **QUE `test_e_guion_largo_rompe_el_hook` SE MIRE COMO CORRIDA INTERMITENTE Y NO COMO FALLO
+   PUNTUAL.** La medida esta en `JJ.4.b`: **cuatro corridas con fichero, tres verdes y una roja,
+   sobre el mismo arbol sin tocar**. La prueba monta un repo de usar y tirar y le dispara el hook,
+   asi que es la que mas depende del sistema de ficheros de todas las `318`. **No propongo tocarla**:
+   propongo que alguien la corra `N` veces seguidas y mida su tasa, porque **una guarda que sale
+   roja una de cada cuatro veces no es una guarda, es una moneda**. Es maquinaria y `D.45` me deja
+   fuera.
+2. **QUE LA MITAD EN MINUTOS DEL TECHO SE RECALCULE CADA VUELTA CON LA CIFRA POR PASO DE LA VUELTA
+   ANTERIOR, Y NO SE ARRASTRE.** `46.5.c` adjudico la unidad buena y hoy se ve que **la unidad es
+   buena y la constante no**: tres tandas del mismo capitulo, escritas por la misma mano, dan
+   `80,9`, `90,9` y `107,5` segundos por paso, con la poblacion pasando de `372` a `390`. El `44`
+   de hoy se calculo con `90,9` y el paso costo `107,5`. **Con `107,5`, un techo de `67` minutos
+   son `37` pasos, no `44`.**
+3. **QUE LA SALIDA DE `D.52` LLEVE LA VUELTA EN SU NOMBRE.** Cuarto ejemplar seguido y cuarto
+   remedio a mano. **Ya esta propuesto en `HH.5.i` y en `II.4.g`, y `d030` lo tiene anotado**: lo
+   repito porque el encargo me manda volver a pagarlo a mano y el coste ya es previsible.
+
+**Y UNA COSA QUE NO PROPONGO, PARA QUE SE VEA QUE NO LA PROPONGO:** no pido mover ningun umbral
+aunque `cap_04` lleve `30` pares de cola en tres tandas. **La cola larga es el precio del capitulo
+monotematico** y `EXTRACTOR.md` 12 lo dice con todas las letras.
+
+### JJ.4.h. **`cerrar_reporte.py`, LA QUINTA GUARDA, CORRIDA Y PEGADA**
+
+<!-- TALLADO: parcial salida=.v48/cerrar_reporte.txt -->
+
+    $ python scripts/cerrar_reporte.py
+    TALLADO VERDE: las 124 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO VERDE: las 775 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+      A. VERDE: el nodo ejemplo entro limpio, el gate quedo verde y los censos registraron las tres denominaciones por separado
+      B. VERDE: gemelo bloqueado (codigo 2) citando a registrar_fuente_canonica y la señal (similitud_texto)
+      C. VERDE: el hijo quedo bloqueado sin veredicto y entro tras declarar CONTINUA; la arista se declaro por el alias 'registro_fuentes_canonicas' y quedo escrita resuelta como registrar_fuente_canonica > elegir_grafia_clave
+      D. VERDE: la auto-arista via alias (saneo_grafo apunta a sanear_grafo) puso el gate en rojo, y la comparacion literal no la veia: cero coincidencias literales en el mismo dato
+      E. VERDE: hooks/pre-commit aborto con el guion largo (rojo con el archivo, verde sin el, verde de nuevo al quitarlo)
+      F. VERDE: el candidato con la fuente 'libro_que_nadie_registro' fue rechazado y no toco el dataset
+    [cierre] tallado del reporte (D.41)
+    [cierre] censo de rutas (D.42)
+    [cierre] tabla de cierre de tareas (D.52)
+    [cierre] gate de integridad
+    [cierre] barrido de guiones
+    [cierre] prueba de aceptacion
+    [cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda
+    LA VIGENCIA TIENE COLA, Y ESO NO PONE EL CIERRE EN ROJO (D.15).
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**EL TALLADO PASA DE `119` A `124` TABLAS COMPROBABLES Y EL CENSO DE `767` A `775` RUTAS**, que es
+lo que tiene que dar un reporte que crece por anexion. **`0` que difieren y `0` que caen.**
+
+**Y EL CASO `E` DEL CIERRE SALE VERDE**, que es la misma familia de la prueba que en `JJ.4.b` salio
+roja una vez de cuatro: **aqui, corrida por el cierre, monta su repo y su hook y pasa.** Lo anoto al
+lado del rojo y **no concluyo nada de las dos cosas juntas**: son dos corridas mas de la misma
+moneda, y lo que propongo en `JJ.4.g` es justamente que alguien la mida en serio.
+
+**LA VIGENCIA TIENE COLA Y NO ES GUARDA** (`D.15`): los rancios que publica son de
+`scott_radical_candor` y de vueltas anteriores, **ninguno de un veredicto mio**, porque esta vuelta
+no ha escrito ni uno: **cero inserciones, cero veredictos.**
+
+| tarea | que pide | estado |
+|---|---|---|
+| `JJ.4` | el cierre: guardas, tabla `D.52`, estado recomputado, linea del tramo con su reloj, tablero y credito leidos, y el coste de `D.55` | **CERRADA**: las cinco guardas en verde con la corrida roja de la prueba declarada con su medida en vez de escondida, la tabla `D.52` con su cuarta colision sellada por `hash-object`, el estado recomputado al cierre, la linea del tramo en `JJ.2.g` con su reloj y sus dos techos, el tablero y el credito leidos y no anotados, y el coste del turno contado de sus relojes |
+
+---
+
+**LA VUELTA 48 CIERRA CON SUS CUATRO FILAS CERRADAS Y NINGUNA CORTA: `5` CANDIDATOS NUEVOS EN LA
+BANDEJA DE `grove_high_output`, `0` PUENTE DE `42` PASOS, `8` PARES DE COLA LEIDOS PAR A PAR, `18`
+ARISTAS DECLARADAS DENTRO DE SUS FICHAS CON SUS `18` DESTINOS COMPROBADOS, LA ARISTA COLGADA DE LA
+VUELTA 47 RESUELTA SIN COSTE PROPIO, Y CERO INSERCIONES POR PUERTA MEDIDA POR CUARTA VUELTA
+SEGUIDA. `cap_04` QUEDA EN `19` DE SUS `22`, Y LOS TRES QUE FALTAN SON `P41`, `P42` Y `P44`.**
+

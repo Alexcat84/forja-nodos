@@ -1,0 +1,4 @@
+$ python .v48/destinos.py
+destinos de arista comprobados : 18
+destinos que NO existen        : 0
+CERO ARISTAS COLGADAS: SI

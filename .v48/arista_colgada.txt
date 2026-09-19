@@ -1,0 +1,9 @@
+$ python .v48/arista_colgada.py
+fichas contadas: 346 en el grafo, 547 en bandejas, 893 en total
+
+el id que la arista de identificar_paso_limitante_jornada_desfases nombra:
+   usar_calendario_herramienta_planificacion_produccion
+   en dataset/nodos.jsonl : NO
+   en cuarentena          : SI   cuarentena/grove_high_output
+
+ARISTA COLGADA: NO, el destino existe

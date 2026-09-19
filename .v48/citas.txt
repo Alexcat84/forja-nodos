@@ -1,0 +1,20 @@
+| # | tramo | linea | la salida de `sed -n '<n>p'`, pegada y cortada a 82 | de que candidato es |
+|---:|---|---:|---|---|
+| 1 | `P34a` | L273 | `273:What makes running a factory different from running a job shop? The latter is prep` | `usar_calendario_herramienta_planificacion_produccion` |
+| 2 | `P34a` | L275 | `275:What is the medium of a manager's forecast? It is something very simple: his calen` | `usar_calendario_herramienta_planificacion_produccion` |
+| 3 | `P34a` | L279 | `279:To use your calendar as a production-planning tool, you must accept responsibility` | `la cabecera que numera las dos responsabilidades, de los DOS` |
+| 4 | `P34a` | L281 | `281:1. You should move toward the active use of your calendar, taking the initiative t` | `usar_calendario_herramienta_planificacion_produccion` |
+| 5 | `P34b` | L277 | `277:Another production principle can be applied here. Because manufacturing people tru` | `decir_no_trabajo_excede_capacidad` |
+| 6 | `P34b` | L283 | `283:2. You should say "no" at the outset to work beyond your capacity to handle.` | `decir_no_trabajo_excede_capacidad` |
+| 7 | `P34b` | L285 | `285:It is important to say "no" earlier rather than later because we've learned that t` | `decir_no_trabajo_excede_capacidad` |
+| 8 | `P36` | L289 | `289:Another production principle is very nearly the opposite. A manager should carry a` | `llevar_inventario_proyectos_discrecionales` |
+| 9 | `P38` | L293 | `293:Built-In Leverage: How Many Subordinates Should You Have...` | `dimensionar_numero_subordinados_medio_dia_semanal` |
+| 10 | `P38` | L295 | `295:An important component of managerial leverage is the number of subordinates a mana` | `dimensionar_numero_subordinados_medio_dia_semanal` |
+| 11 | `P38` | L297 | `297:The six to eight rule is right for the classically hierarchical manager whose prim` | `dimensionar_numero_subordinados_medio_dia_semanal` |
+| 12 | `P38` | L299 | `299:Sometimes a business is organized in a way that makes the ideal fan-out of six to ` | `dimensionar_numero_subordinados_medio_dia_semanal` |
+| 13 | `P38` | L301 | `301:This arrangement will avoid forcing the plant manager either into on-the-job retir` | `dimensionar_numero_subordinados_medio_dia_semanal` |
+| 14 | `P39` | L303 | `303:Interruptions, The Plague of Managerial Work` | `buscar_regularidad_bloques_iguales_trabajo_mando` |
+| 15 | `P39` | L305 | `305:The next important production concept we can apply to managerial work is to strive` | `buscar_regularidad_bloques_iguales_trabajo_mando` |
+| 16 | `P39` | L307 | `307:But because you must coordinate your work with that of other managers, you can onl` | `buscar_regularidad_bloques_iguales_trabajo_mando` |
+
+renglones citados: 16, de 5 tramos distintos

@@ -1,0 +1,14 @@
+$ git rev-parse --abbrev-ref HEAD
+extraccion-mundo-11
+$ git log -1 --format="%h %ad %s" --date=iso
+3d9ea89 2026-09-19 06:53:22 -0400 Estado del arnes al abrir la vuelta 48
+
+$ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+    346 dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1087 total
+
+cuarentena/grove_high_output/ : 36
+cuarentena/marquet_turn_the_ship/ : 3
+cuarentena/_insertados/grove_high_output/ : 1
