@@ -1,0 +1,8 @@
+ficha                                                pieza   pasos
+infundir_regularidad_reunion_proceso                 P6          8
+usar_tres_clases_reunion_proceso                     P7          4
+fijar_frecuencia_reunion_individual_madurez_tarea    P11        10
+fijar_duracion_lugar_reunion_individual              P12        10
+preparar_guion_reunion_individual_subordinado        P13         7
+cubrir_indicadores_problemas_reunion_individual      P14        10
+TOTAL DE PASOS DE LAS SEIS FICHAS DE cap_05                     49

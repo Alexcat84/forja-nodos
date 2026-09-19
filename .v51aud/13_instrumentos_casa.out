@@ -1,0 +1,47 @@
+$ python forja.py herencia
+REMEDIOS PENDIENTES QUE HEREDAS
+
+Esto NO lo has buscado tu: lo entrega el arnes (D.40), porque tres actas seguidas perdieron el mismo remedio por tener que ir a buscarlo.
+
+  acta anterior : ACTA 49. VUELTA 50, lote 7 (`grove_high_output`), `cap_04`: **LA TANDA ES BUENA Y SU CIERRE DE DEUDA SE ROMPE CON SU PROPIO PAGO**. Le verifico al digito las **cinco guardas**, los **tres relojes**, los **tres informes de aduana**, la **tabla de coste entera** con sus siete porcentajes, los **`22` de la frontera de `cap_04`** contados por mi tramo a tramo, los **`46` tramos y los `26` nodos de la frontera de `cap_05`** con sus `4962` contra `4962`, las **once cifras de palabras** recontadas una a una con `wc -w` sobre el libro, y los **`156` pasos de las `22` fichas** con los `19` de hoy por diferencia; **FIRMO su `0` PUENTE de `19` pasos**, leidos por mi a ciegas contra `L315`, `L317`, `L321` y `L323`; **la puerta de `D.39` que declara mordiendo la muerdo por mutacion y muerde**; y el **sello `hash-object` de `D.52` lo reconstruyo commit a commit y es el bueno**. **De sus SIETE discutibles marcados se sostienen SEIS y CAE UNO**, el `7`. Y aun asi: **`d038` NO esta pagada, y la rompe su propio pago**. El pago escribio dentro de la ficha el comando preciso `grep -l 'Sale de la PIEZA P34'`, y al escribirlo metio esa cadena en la ficha que el comando barre: **hoy devuelve `3` donde el pago publica `2`**, en `docs/loop/DEUDA.jsonl`, que es `docs/` y por tanto sede de `5.2` **por mi propia adjudicacion de `48.9.b`**. **`CIFRA PUBLICADA` sube de `0 de 2` a `1 de 2`.** Sus otras dos caidas son **de PROSA y NO acumulan**: su *`4` de los `6` levantamientos de senial `1` DE LA TANDA* mide dos informes de los tres y la tanda trae `9` en sus propios ficheros, y su `LL.0.a` escribe *lleva tres minados* donde su `LL.2.k` escribe *cuatro* y el tablero da `cap_01` a `cap_04`. **`REPORTE` sigue en `0 de 3`** por `D.38.1`. `CLASE` y `DATO MOVIDO` salen **LIMPIAS** con su motivo medido: `740` contra `740` y `git diff` vacio sobre `dataset/`, `bitacora/` y `censos/`. **Y MI PROPIA TANDA SALE LIMPIA**: mi tarea bloqueante de `48.9.d` la compruebo **por el mecanismo que ella misma escribio**, corriendo `.v49aud/17_superlativos.py` sobre la pagina ya sellada, y da `0` golpes y `1` linea sangrada, **identico a lo que la pagina publica**; y remido una a una las cifras de mi pagina sellada sin que se mueva ninguna. **`AUDITOR` baja de `2 de 3` a `0` por la tanda limpia de `5.4` y `D.38.1`, no por indulto mio.** Ninguna condicion de parada se cumple: **no escribo `PARA_ALEXIS.md`**, y el encargo de la vuelta `51` sale de esta sede, con `cap_05` **partido desde el encargo** porque sus `26` nodos contra el techo de `15` estan medidos ANTES de empezar.
+  su huella     : e508a1a9cbb136bb27e08cccf7ba2bcfac61ccce
+  heredados     : 3
+
+HEREDADO 1   [REMEDIO, linea 37633 del acta]
+### 49.11.a. LOS REMEDIOS QUE ENTREGO AL AUDITOR SIGUIENTE
+
+| # | **REMEDIO** | como se comprueba que se cumplio |
+| `1` | **El barrido de la fase ciega se corre COMO ULTIMA OPERACION, sobre la pagina ya terminada, y su salida se pega DESPUES de todo lo demas.** Si al pegarla se escribe una linea mas de prosa, se vuelve a correr | se corre `.v49aud/17_superlativos.py` (o su sucesor) **sobre la apertura ya sellada** y se compara su cabecera con la cuenta que la pagina publica. **Si no coinciden, roto** |
+
+HEREDADO 2   [REMEDIO, linea 37634 del acta]
+### 49.11.a. LOS REMEDIOS QUE ENTREGO AL AUDITOR SIGUIENTE
+
+| # | **REMEDIO** | como se comprueba que se cumplio |
+| `2` | **Toda frase mia que acompane a un pegado dice lo que ESE pegado mide, y la conclusion va aparte y marcada `LECTURA`** | se abre cualquier seccion de la pagina con una cifra y se comprueba que la linea de al lado no concluye nada sobre contenido |
+
+HEREDADO 3   [REMEDIO, linea 37635 del acta]
+### 49.11.a. LOS REMEDIOS QUE ENTREGO AL AUDITOR SIGUIENTE
+
+| # | **REMEDIO** | como se comprueba que se cumplio |
+| `3` | **Toda cifra de ESTADO que yo publique se mide DESPUES de la operacion que la cambia, no antes.** Es la leccion de `49.4.a`, puesta contra mi mismo | se toma una cifra de mi acta que describa **como queda** algo y se recorre su comando sobre el arbol final. **Si da otra cosa, roto** |
+
+LO QUE TU APERTURA CIEGA TIENE QUE TRAER, O EL ARNES SE DETIENE ANTES DE QUE ESCRIBAS EL ACTA:
+
+    ACTA ANTERIOR LEIDA: e508a1a9cbb136bb27e08cccf7ba2bcfac61ccce
+    HEREDADO 1: CUMPLIDO          (o NO APLICA y su motivo detras)
+
+$ python forja.py credito
+CREDITO DE LA LINEA 'serial' (D.48)
+  registro: docs/loop/CREDITO_serial.jsonl
+
+  LINEA SIN REGISTRO: no hay ningun suceso escrito.
+  Una linea sin tandas NACE CON SU RACHA EN CERO y no hereda
+  la de nadie (D.48). Lo que herede el arnes sera CERO remedios.
+
+$ python forja.py tablero --puedo grove_high_output
+LINEA 'serial', LIBRO 'grove_high_output': SI
+  'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_04), citando su frontera. D.50.
+
+$ python scripts/deuda.py --clase 52
+INSERCION
+  van 3 de 5 desde la ultima de saneamiento (la 49), con 16 deuda(s) esperando

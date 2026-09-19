@@ -1,0 +1,25 @@
+--- que texto come la senial: src/comun.texto_comparable ---
+$ grep -n -A 22 "def texto_comparable" src/comun.py
+190:def texto_comparable(nodo):
+191-    """Titulo mas resumen mas pasos: el texto que mira la señal 1."""
+192-    piezas = [nodo.get("titulo") or "", nodo.get("resumen_teorico") or ""]
+193-    piezas.extend(nodo.get("pasos_accionables") or [])
+194-    return normalizar_texto(" ".join(piezas))
+195-
+196-
+197-def huella_de_nodo(nodo):
+198-    """La huella del TEXTO de un nodo, para el bloque de vigencia (D.15).
+199-
+200-    Es lo que permite saber, meses despues, si una lectura sigue emitida
+201-    contra el texto que leyo. La vara que manda es la de TEXTO, no la de
+202-    fecha: en My-idea, cinco de los seis pares de un acto estaban leidos
+203-    contra texto que ya no existia, y la vara de fecha solo veia dos.
+204-
+205-    Cubre el mismo texto que mira la señal 1 (titulo, resumen y pasos):
+206-    lo que se leyo para emitir el veredicto.
+207-    """
+208-    return hashlib.sha256(texto_comparable(nodo).encode("utf-8")).hexdigest()[:16]
+209-
+210-
+211-def huella_de_texto(texto):
+212-    """La huella de una linea suelta (un paso citado por un MUTUO)."""

@@ -1,0 +1,14 @@
+--- que se movio en las sedes de DATO entre la apertura de la vuelta 51 y HOY ---
+$ git diff --name-only 3061fc2 -- dataset/ bitacora/ censos/ config/ esquema/ src/ scripts/ tests/ hooks/ docs/BANCO_DE_REGLAS.md
+(vacio = ni un fichero)
+
+--- y el arbol de trabajo contra HEAD, por si algo quedo sin commitear ---
+$ git status --porcelain
+ D docs/loop/APERTURA_CIEGA.md
+ D docs/loop/CREDITO_serial.jsonl
+ D docs/loop/REPORTE.md
+ M docs/loop/loop.log
+ M docs/loop/ultimo_apertura.json
+ D docs/loop/ultimo_auditor.json
+ D docs/loop/ultimo_extractor.json
+?? .v51aud/

@@ -1,0 +1,6 @@
+infundir_regularidad_reunion_proceso               dirigir_reun:0  preguntar_co:0  auditar_cale:1
+usar_tres_clases_reunion_proceso                   dirigir_reun:1  preguntar_co:1  auditar_cale:0
+fijar_frecuencia_reunion_individual_madurez_tarea  dirigir_reun:1  preguntar_co:1  auditar_cale:0
+fijar_duracion_lugar_reunion_individual            dirigir_reun:1  preguntar_co:0  auditar_cale:0
+preparar_guion_reunion_individual_subordinado      dirigir_reun:1  preguntar_co:0  auditar_cale:0
+cubrir_indicadores_problemas_reunion_individual    dirigir_reun:0  preguntar_co:1  auditar_cale:0

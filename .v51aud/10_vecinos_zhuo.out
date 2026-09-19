@@ -1,0 +1,9 @@
+dirigir_reunion_individual_semanal         en el grafo: SI   libro: zhuo_manager   pasos: 10
+preguntar_conducir_reunion_individual      en el grafo: SI   libro: zhuo_manager   pasos: 7
+auditar_calendario_reuniones_semana        en el grafo: SI   libro: zhuo_manager   pasos: 10
+
+EL PAR QUE SE CONTRADICE, LOS DOS PASOS IMPRESOS DE SU FICHERO:
+  paso 1 de cubrir_indicadores_problemas_reunion_individual (cuarentena, cap_05 L43):
+    Empieza por las cifras de rendimiento, o sea los indicadores que usa el subordinado, como los ritmos de pedidos entrantes, la produccion o el estado de los proyectos.
+  paso 4 de dirigir_reunion_individual_semanal (dataset/nodos.jsonl, zhuo_manager):
+    Centrala en tu persona a cargo y en lo que la ayudaria a tener mas exito, no en ti y en lo que tu necesitas. Si lo que buscas es un parte de situacion, usa otro canal: el tiempo a solas es escaso y se aprovecha mejor en los temas que son mas dificiles de tratar en grupo o por correo.
