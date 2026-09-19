@@ -1,0 +1,49 @@
+| tramo de cap_05 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L11` | 6 | **0** | P1  rotulos: el numero 4 y el titulo textual Meetings, The Medium of Managerial Work | `9:4` |
+| `L13 a L13` | 85 | **0** | P2  la mala fama de la reunion, con Drucker y Whyte citados: POSTURA con cifras de otros autores | `13:Meetings have a bad name. One school of management thought consi` |
+| `L15 a L15` | 114 | **0** | P3  la reunion es el medio por el que se hace el trabajo de mando: DEFINICION, no hay nada que ejecutar | `15:But there is another way to regard meetings. Earlier we said tha` |
+| `L17 a L17` | 76 | **0** | P4  las DOS clases de reunion, de proceso y de mision: DEFINICION, nombra sin poner inventario de medios | `17:The two basic managerial roles produce two basic kinds of meetin` |
+| `L19 a L19` | 2 | **0** | P5  rotulo de seccion Process-Oriented Meetings, sin cuerpo que extraer | `19:Process-Oriented Meetings` |
+| `L21 a L21` | 124 | **1** | P6  INFUNDIR REGULARIDAD A LA REUNION DE PROCESO: sus medios nombrados uno a uno y el control de produccion | `21:To make the most of this kind of meeting, we should aim to infus` |
+| `L23 a L23` | 18 | **1** | P7  CABEZA DE SERIE: las TRES clases de reunion de proceso, contadas y nombradas una a una | `23:At Intel we use three kinds of process-oriented meetings: the on` |
+| `L25 a L25` | 1 | **0** | P8  rotulo ONE-ON-ONES, sin cuerpo que extraer | `25:ONE-ON-ONES` |
+| `L27 a L29` | 264 | **0** | P9  que es el uno a uno y para que sirve, mas las clases privadas del autor: DEFINICION mas CASO | `27:At Intel, a one-on-one is a meeting between a supervisor and a s` |
+| `L31 a L31` | 46 | **0** | P10 con quien se tiene: el autor acota DE QUE va a hablar, y acotar el alcance no es procedimentar | `31:Who should have a one-on-one? In some situations a supervisor sh` |
+| `L33 a L35` | 187 | **1** | P11 CADA CUANTO: la madurez relevante para la tarea y la velocidad de cambio del area, con sus dos frecuencias | `33:How often should you have one-on-ones? Or put another way, how d` |
+| `L37 a L39` | 195 | **1** | P12 CUANTO DURA Y DONDE: la hora como minimo y el area de trabajo del subordinado, con lo que alli se aprende | `37:How long should a one-on-one meeting last? There really is no an` |
+| `L41 a L41` | 145 | **1** | P13 LA REUNION ES DEL SUBORDINADO: el guion que el prepara y el paseo por el material | `41:A key point about a one-on-one: It should be regarded as the sub` |
+| `L43 a L43` | 134 | **1** | P14 QUE SE TRATA: los indicadores, lo ocurrido desde la ultima, el problema potencial y la intuicion | `43:What should be covered in a one-on-one? We can start with perfor` |
+| `L45 a L47` | 134 | **1** | P15 EL PAPEL DEL SUPERVISOR y el principio de una pregunta mas, con la frase de Drucker dentro | `45:What is the role of the supervisor in a one-on-one? He should fa` |
+| `L49 a L49` | 157 | **1** | P16 LAS PISTAS MECANICAS: las dos copias del guion, las notas, y lo que escribirlo simboliza | `49:I'd like to suggest some mechanical hints for effective one-on-o` |
+| `L51 a L51` | 64 | **1** | P17 EL FICHERO DE ESPERA donde los dos acumulan lo importante y no urgente: la tanda aplicada al uno a uno | `51:A real time-saver is using a "hold" file where both the supervis` |
+| `L53 a L53` | 117 | **1** | P18 LOS ASUNTOS DE CORAZON A CORAZON y la guardia contra el que se suelta al final de la reunion | `53:The supervisor should also encourage the discussion of heart-to-` |
+| `L55 a L55` | 85 | **1** | P19 EL UNO A UNO POR TELEFONO A DISTANCIA: la preparacion que exige y el intercambio de notas despues | `55:Long-distance telephone one-on-ones have become necessary becaus` |
+| `L57 a L57` | 74 | **1** | P20 PROGRAMAR EN CADENA: fijar el siguiente al terminar el que se tiene, para evitar la cancelacion | `57:One-on-ones should be scheduled on a rolling basis-setting up th` |
+| `L59 a L59` | 105 | **0** | P21 la palanca del uno a uno, noventa minutos por ochenta horas: DEFINICION con su cuenta | `59:What is the leverage of the one-on-one? Let's say you have a one` |
+| `L61 a L63` | 210 | **0** | P22 el uno a uno con el responsable de ventas de Intel: CASO del autor, manual 3.5 | `61:At the same time, the subordinate teaches the supervisor, and wh` |
+| `L65 a L65` | 103 | **0** | P23 el uno a uno en casa con sus hijas: CASO del autor, y el propio libro lo llama digresion | `65:To digress a bit, I also think that one-on-ones at home can help` |
+| `L67 a L67` | 2 | **0** | P24 rotulo STAFF MEETINGS, sin cuerpo que extraer | `67:STAFF MEETINGS` |
+| `L69 a L73` | 284 | **0** | P25 que es la reunion de personal y para que sirve, mas su primer grupo de ingenieros: DEFINICION mas CASO | `69:A staff meeting is one in which a supervisor and all of his subo` |
+| `L75 a L75` | 63 | **1** | P26 QUE SE TRATA EN LA REUNION DE PERSONAL: el criterio de mas de dos, y que hacer si degenera en dos | `75:What should be discussed at a staff meeting? Anything that affec` |
+| `L77 a L77` | 115 | **1** | P27 CUANTO SE ESTRUCTURA: la agenda con antelacion y la sesion abierta, con lo que cabe en cada una | `77:How structured should the meeting be? A free-for-all brainstormi` |
+| `L79 a L83` | 216 | **1** | P28 EL PAPEL DEL SUPERVISOR en la reunion de personal: moderador y facilitador, y nunca conferenciante | `79:What is the role of the supervisor in the staff meeting-a leader` |
+| `L85 a L85` | 2 | **0** | P29 rotulo OPERATION REVIEWS, sin cuerpo que extraer | `85:OPERATION REVIEWS` |
+| `L87 a L87` | 153 | **0** | P30 que es la revision de operaciones y su proposito: DEFINICION con sus FINES, 9.1 restriccion 1 | `87:This is the medium of interaction for people who don't otherwise` |
+| `L89 a L89` | 38 | **1** | P31 CABEZA DE SERIE: los CUATRO jugadores de la revision, contados y nombrados uno a uno | `89:Who are the players at an operation review? The organizing manag` |
+| `L91 a L91` | 126 | **1** | P32 EL MANDO ORGANIZADOR: sus tareas nombradas una a una, incluida la de llevar el tiempo | `91:The supervisor of the presenting managers-an Intel divisional ma` |
+| `L93 a L93` | 102 | **1** | P33 EL MANDO REVISOR: preguntar, comentar, dar el espiritu, y no leer el material por adelantado | `93:The reviewing manager is the senior supervisor at whom the revie` |
+| `L95 a L95` | 168 | **1** | P34 LOS PRESENTADORES: los apoyos visuales, los cuatro minutos por apoyo, resaltar y vigilar al publico | `95:The people presenting the reviews-a group of marketing superviso` |
+| `L97 a L97` | 174 | **1** | P35 EL PUBLICO: preguntar, anotar, hablar si no se esta de acuerdo, y dejar constancia del error de hecho | `97:The audience at an operation review also has a crucial part to p` |
+| `L99 a L99` | 2 | **0** | P36 rotulo Mission-Oriented Meetings, sin cuerpo que extraer | `99:Mission-Oriented Meetings` |
+| `L101 a L101` | 142 | **0** | P37 que es la reunion de mision y de quien es la culpa si falla: DEFINICION con POSTURA | `101:Unlike a process-oriented meeting, which is a regularly schedule` |
+| `L103 a L103` | 71 | **1** | P38 ANTES DE CONVOCAR: el objetivo claro y las TRES preguntas que hay que contestar que si | `103:Thus the chairman must have a clear understanding of the meeting` |
+| `L105 a L105` | 148 | **1** | P39 EL COSTE EN DINERO de la reunion y que hacer con el: CIFRA DEL AUTOR mas procedimiento propio | `105:An estimate of the dollar cost of a manager's time, including ov` |
+| `L107 a L109` | 133 | **1** | P40 LA ASISTENCIA: identificar, conseguir el compromiso, el sustituto con poder, y el corte de ocho | `107:Assuming the meeting does need to be held, the chairman faces a ` |
+| `L111 a L111` | 89 | **1** | P41 LA DISCIPLINA: no dejar pasar la tardanza y encarar al que llega tarde, con el coste por hora delante | `111:The chairman is also responsible for maintaining discipline. It ` |
+| `L113 a L113` | 67 | **1** | P42 LA LOGISTICA: el equipo de la sala y la agenda que dice el proposito y el papel de cada uno | `113:The chairman should finally be responsible for logistical matter` |
+| `L115 a L169` | 77 | **0** | P43 el ejemplar de agenda de la reunion de Filipinas: CASO del autor reproducido entero, manual 3.5 | `115:To:` |
+| `L171 a L171` | 109 | **0** | P44 regimentacion contra disciplina, y el quirofano: POSTURA | `171:This may sound like too much regimentation for you, but whether ` |
+| `L173 a L173` | 122 | **1** | P45 EL ACTA DESPUES DE LA REUNION: que resuma, que llegue rapido, y que diga que, quien y cuando | `173:Once the meeting is over, the chairman must nail down exactly wh` |
+| `L175 a L175` | 113 | **0** | P46 el ochenta contra veinte y la senial de mala organizacion: POSTURA con cifra de Drucker | `175:Ideally, a manager should never have to call an ad hoc, mission-` |
+| | **4962** | **26** | **el cuerpo entero de cap_05, cero lineas sin cubrir y cero solapes** | |

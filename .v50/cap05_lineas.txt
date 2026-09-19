@@ -1,0 +1,84 @@
+   9 [   1] 4
+  11 [   5] Meetings, The Medium of Managerial Work
+  13 [  85] Meetings have a bad name. One school of management thought considers them the curse of the manager's existence. Someone who did a study found that managers spend up to 50 percent of their time in meetings, and implied that this wa
+  15 [ 114] But there is another way to regard meetings. Earlier we said that a big part of a middle manager's work is to supply information and know-how, and to impart a sense of the preferred method of handling things to the groups under hi
+  17 [  76] The two basic managerial roles produce two basic kinds of meetings. In the first kind of meeting, called a process-oriented meeting, knowledge is shared and information is exchanged. Such meetings take place on a regularly schedul
+  19 [   2] Process-Oriented Meetings
+  21 [ 124] To make the most of this kind of meeting, we should aim to infuse it with regularity. In other words, the people attending should know how the meeting is run, what kinds of substantive matters are discussed, and what is to be acco
+  23 [  18] At Intel we use three kinds of process-oriented meetings: the one-on-one, the staff meeting, and the operation review.
+  25 [   1] ONE-ON-ONES
+  27 [ 156] At Intel, a one-on-one is a meeting between a supervisor and a subordinate, and it is the principal way their business relationship is maintained. Its main purpose is mutual teaching and exchange of information. By talking about s
+  29 [ 108] When Intel was a young company, I realized that even though I was expected to supervise both engineering and manufacturing, I knew very little about the company's first product line, memory devices. I also didn't know much about m
+  31 [  46] Who should have a one-on-one? In some situations a supervisor should perhaps meet with all those who work under him, from professionals to production operators. But here I want to talk about one-on-ones between a supervisor and ea
+  33 [ 129] How often should you have one-on-ones? Or put another way, how do you decide how often somebody needs such a meeting? The answer is the job- or task-relevant maturity of each of your subordinates. In other words, how much experien
+  35 [  58] Another consideration here is how quickly things change in a job area. In marketing, for example, the pace may be so rapid that a supervisor needs to have frequent one-on-ones to keep current on what's happening. But in a research
+  37 [ 113] How long should a one-on-one meeting last? There really is no answer to this, but the subordinate must feel that there is enough time to broach and get into thorny issues. Look at it this way. If you had a big problem that you wan
+  39 [  82] Where should a one-on-one take place? In the supervisor's office, in the subordinate's office, or somewhere else? I think you should have the meeting in or near the subordinate's work area if possible. A supervisor can learn a lot
+  41 [ 145] A key point about a one-on-one: It should be regarded as the subordinate's meeting, with its agenda and tone set by him. There's good reason for this. Somebody needs to prepare for the meeting. The supervisor with eight subordinat
+  43 [ 134] What should be covered in a one-on-one? We can start with performance figures, indicators used by the subordinate, such as incoming order rates, production output, or project status. Emphasis should be on indicators that signal tr
+  45 [  69] What is the role of the supervisor in a one-on-one? He should facilitate the subordinate's expression of what's going on and what's bothering him. The supervisor is there to learn and to coach. Peter Drucker sums up the supervisor
+  47 [  65] How is this done? By applying Grove's Principle of Didactic Management, "Ask one more question!" When the supervisor thinks the subordinate has said all he wants to about a subject, he should ask another question. He should try to
+  49 [ 157] I'd like to suggest some mechanical hints for effective one-on-one meetings. First, both the supervisor and subordinate should have a copy of the outline and both should take notes on it, which serves a number of purposes. I take 
+  51 [  64] A real time-saver is using a "hold" file where both the supervisor and subordinate accumulate important but not altogether urgent issues for discussion at the next meeting. This kind of file applies the production principle of bat
+  53 [ 117] The supervisor should also encourage the discussion of heart-to-heart issues during one-on-ones, because this is the perfect forum for getting at subtle and deep work-related problems affecting his subordinate. Is he satisfied wit
+  55 [  85] Long-distance telephone one-on-ones have become necessary because many organizations are now spread out geographically. But these can work well enough with proper preparation and attention: the supervisor must have the outline bef
+  57 [  74] One-on-ones should be scheduled on a rolling basis, setting up the next one as the meeting taking place ends. Other commitments can thereby be taken into account and cancellations avoided. If the supervisor uses a set schedule for
+  59 [ 105] What is the leverage of the one-on-one? Let's say you have a one-on-one with your subordinate every two weeks, and it lasts one and a half hours. Ninety minutes of your time can enhance the quality of your subordinate's work for t
+  61 [ 135] At the same time, the subordinate teaches the supervisor, and what is learned is absolutely essential if the supervisor is to make good decisions. During a recent one-on-one meeting, my subordinate, who is responsible for Intel's 
+  63 [  75] By sharing his base of information with me, the two of us developed a congruent attitude, approach, and conclusion: conservatism in our expansion plans. He left the meeting having decided to scale back growth in his own area of re
+  65 [ 103] To digress a bit, I also think that one-on-ones at home can help family life. As the father of two teenage daughters, I have found that the conversation in such a time together is very different in tone and kind from what we say t
+  67 [   2] STAFF MEETINGS
+  69 [ 126] A staff meeting is one in which a supervisor and all of his subordinates participate, and which therefore presents an opportunity for interaction among peers. As we will see later, peer interaction, especially decision-making by a
+  71 [  56] Staff meetings also create opportunities for the supervisor to learn from the exchange and confrontation that often develops. In my own case, I get a much better understanding of an issue with which I am not familiar by listening 
+  73 [ 102] My first experience with staff meetings dates back to my early professional years when I was the head of a small group of engineers doing semiconductor device research. Everyone in this group worked on an isolated aspect of a prob
+  75 [  63] What should be discussed at a staff meeting? Anything that affects more than two of the people present. If the meeting degenerates into a conversation between two people working on a problem affecting only them, the supervisor sho
+  77 [ 115] How structured should the meeting be? A free-for-all brainstorming session or controlled with a detailed agenda? It should be mostly controlled, with an agenda issued far enough in advance that the subordinates will have had the c
+  79 [  55] What is the role of the supervisor in the staff meeting, a leader, observer, expediter, questioner, decision-maker? The answer, of course, is all of them. Please note that lecturer is not listed. A supervisor should never use staf
+  81 [ 136] The figure opposite shows that the supervisor's most important roles are being a meeting's moderator and facilitator, and controller of its pace and thrust. Ideally, the supervisor should keep things on track, with the subordinate
+  83 [  25] The supervisor's effort at a staff meeting should go into keeping the discussion on track, with the subordinates bearing the brunt of working the issues.
+  85 [   2] OPERATION REVIEWS
+  87 [ 153] This is the medium of interaction for people who don't otherwise have much opportunity to deal with one another. The format here should include formal presentations in which managers describe their work to other managers who are n
+  89 [  38] Who are the players at an operation review? The organizing manager, the reviewing manager, the presenters, and the audience. Each of these players has a distinct role to play if the review is to be a useful one.
+  91 [ 126] The supervisor of the presenting managers, an Intel divisional marketing manager, let's say, should organize the meeting. He should help the presenters decide what issues should be talked about and what should not, what should be 
+  93 [ 102] The reviewing manager is the senior supervisor at whom the review is aimed, like the general manager of an Intel division. He has a very important although more subtle role to play: he should ask questions, make comments, and in g
+  95 [ 168] The people presenting the reviews, a group of marketing supervisors, for example, should use visual aids such as overhead transparencies to the extent possible. People are endowed with eyes as well as ears, and the simultaneous us
+  97 [ 174] The audience at an operation review also has a crucial part to play. One of the distinguishing marks of a good meeting is that the audience participates by asking questions and making comments. If you avoid the presenter's eyes, y
+  99 [   2] Mission-Oriented Meetings
+ 101 [ 142] Unlike a process-oriented meeting, which is a regularly scheduled affair held to exchange knowledge and information, the mission-oriented meeting is usually held ad hoc and is designed to produce a specific output, frequently a de
+ 103 [  71] Thus the chairman must have a clear understanding of the meeting's objective, what needs to happen and what decision has to be made. The absolute truth is that if you don't know what you want, you won't get it. So before calling a
+ 105 [ 148] An estimate of the dollar cost of a manager's time, including overhead, is about $100 per hour. So a meeting involving ten managers for two hours costs the company $2,000. Most expenditures of $2,000 have to be approved in advance
+ 107 [  83] Assuming the meeting does need to be held, the chairman faces a set of obligations. The first one has to do with attendance. As the chairman, you must identify who should attend and then try to get those people to come. It is not 
+ 109 [  50] Keep in mind that a meeting called to make a specific decision is hard to keep moving if more than six or seven people attend. Eight people should be the absolute cutoff. Decision-making is not a spectator sport, because onlookers
+ 111 [  89] The chairman is also responsible for maintaining discipline. It is criminal for him to allow people to be late and waste everyone's time. Remember, wasting time here really means that you are wasting the company's money, with the 
+ 113 [  67] The chairman should finally be responsible for logistical matters. He should, for example, make sure that all necessary and audiovisual equipment is present in the meeting room. He should also send out an agenda that clearly state
+ 115 [   1] To:
+ 117 [   4] Far East Plant Manager
+ 119 [   2] Manufacturing Manager
+ 121 [   3] Corporate Construction Manager
+ 123 [   1] President
+ 125 [   1] From:
+ 127 [   4] Far East Construction Manager
+ 129 [   1] Subject:
+ 131 [   5] Philippines Plant Location Decision Meeting
+ 133 [   3] Friday, October 1
+ 135 [   3] 11:00 a.m., 1:00 p.m.
+ 137 [   5] Santa Clara Conference Room 212
+ 139 [   7] Teleconference connection to Phoenix Conference Room 4
+ 141 [   8] Purpose of meeting: To decide specific location for
+ 143 [   3] Philippine plant expansion
+ 145 [   1] Agenda
+ 147 [   1] 11:00, 11:30
+ 149 [   2] Manufacturing considerations
+ 151 [   3] (F.E. Plant Manager)
+ 153 [   1] 11:30, 12:00
+ 155 [   2] Construction considerations
+ 157 [   3] (F.E. Construction Manager)
+ 159 [   1] 12:00, 12:45
+ 161 [   6] Review of alternatives, including preferred choice
+ 163 [   3] (F.E. Construction Manager)
+ 165 [   1] 12:45, 1:00
+ 167 [   1] Discussion
+ 169 [   1] (All)
+ 171 [ 109] This may sound like too much regimentation for you, but whether it's that or needed discipline depends on your point of view. If the chairman forces you to show up at a meeting prepared and on time, you might consider him a drill 
+ 173 [ 122] Once the meeting is over, the chairman must nail down exactly what happened by sending out minutes that summarize the discussion that occurred, the decision made, and the actions to be taken. And it's very important that attendees
+ 175 [ 113] Ideally, a manager should never have to call an ad hoc, mission-oriented meeting, because if all runs smoothly, everything is taken care of in regularly scheduled, process-oriented meetings. In practice, however, if all goes well,
