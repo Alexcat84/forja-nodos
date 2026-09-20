@@ -50603,7 +50603,12 @@ sostuvieron los `13` y ninguno era una cifra: por eso esta vez `4` de los `16` s
 *Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
 `docs/loop/TABLA_DE_CIERRE.txt`.*
 
-<!-- TALLADO: salida=docs/loop/TABLA_DE_CIERRE.txt -->
+> **CORRECCION DECLARADA DE LA VUELTA 53, Y NO BORRA NADA** (`d030`, `d047`): la vuelta 53 volvio a
+> correr `--escribir`, que **sobrescribe el mismo fichero**, asi que esta tabla quedaria citando una
+> sede que ya no la contiene. **Se repunta a su copia archivada**, sellada por `git hash-object` en
+> `OO.5.h` contra el commit `677bc34` que la escribio. **La tabla de abajo no cambia ni una celda.**
+
+<!-- TALLADO: salida=docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v52.txt -->
 
 | # | tarea | como cerro |
 |---:|---|---|
@@ -50625,11 +50630,11 @@ sostuvieron los `13` y ninguno era una cifra: por eso esta vez `4` de los `16` s
 
 | tarea | que pide | estado |
 |---|---|---|
-| `OO.1` | los registros de la `ACTA 51` recogidos sin reabrirlos, la caida de `REPORTE` que sube a `2 de 3` con su remedio de una linea, y las dos deudas nuevas recogidas y no pagadas | |
-| `OO.2` | la frontera de `cap_06`, `cap_07` y `cap_08` publicada ANTES de cortar nada, cerrada contra el cuerpo al digito, cero lineas sin cubrir y cero solapes, y **cada fila con los nodos que preve** | |
-| `OO.3` | minar en el orden del libro, un candidato por vez, con su aduana en el mismo acto, **techo de `30` candidatos o `90` minutos de reloj de aduana, lo que llegue antes**. **Cero inserciones** | |
-| `OO.4` | la fidelidad `D.30` por muestra, con la semilla `v53` escrita y la salida del instrumento pegada, y `PASOS INVENTADOS` por capitulo | |
-| `OO.5` | el cierre: las guardas, la tabla `D.52`, el estado recomputado al cierre, la linea del tramo con su reloj y los discutibles marcados | |
+| `OO.1` | los registros de la `ACTA 51` recogidos sin reabrirlos, la caida de `REPORTE` que sube a `2 de 3` con su remedio de una linea, y las dos deudas nuevas recogidas y no pagadas | **CERRADA en `OO.1`**: las `8` adjudicaciones recogidas sin rediscutirse y el remedio de `1.a` ejecutado en `OO.0.b` |
+| `OO.2` | la frontera de `cap_06`, `cap_07` y `cap_08` publicada ANTES de cortar nada, cerrada contra el cuerpo al digito, cero lineas sin cubrir y cero solapes, y **cada fila con los nodos que preve** | **CERRADA en `OO.2`**: `82` tramos, las tres cerradas al digito con `0` sin cubrir y `0` solapes, `17` nodos previstos y `65` ceros con motivo |
+| `OO.3` | minar en el orden del libro, un candidato por vez, con su aduana en el mismo acto, **techo de `30` candidatos o `90` minutos de reloj de aduana, lo que llegue antes**. **Cero inserciones** | **CERRADA en `OO.3`**: `9` candidatos y `9` aduanas en el acto, `cap_06` entero en `8` de `8`, `cap_07` en `1` de `9`, `18` veredictos razonados y **`CERO INSERCIONES`** |
+| `OO.4` | la fidelidad `D.30` por muestra, con la semilla `v53` escrita y la salida del instrumento pegada, y `PASOS INVENTADOS` por capitulo | **CERRADA en `OO.4`**: semilla `v53` y salida pegada entera, `0` PUENTE sobre `21` pasos releidos, `0,0` por ciento en los tres capitulos y el disparador sin saltar |
+| `OO.5` | el cierre: las guardas, la tabla `D.52`, el estado recomputado al cierre, la linea del tramo con su reloj y los discutibles marcados | **CERRADA en `OO.5` CON UNA DEUDA DECLARADA**: guardas verdes y la prueba de aceptacion en rojo por `d057`, que **no es guarda de DATO**. Estado `346`, `740`, `1`, `65`; reloj `77,7` de `90` min; `15` discutibles |
 
 **CINCO TAREAS, EN EL TOPE DE CINCO** (`EXTRACTOR.md` 3). Cero cola declarada al abrir.
 
@@ -51444,3 +51449,324 @@ puerta de `D.39` la medi yo en `OO.0.a` y sale cerrada por sus dos mitades.
   una pasada media de `540` s en la ultima, **que ya no cabia otra entera con margen para cerrar**.
 
 **CERRADA `OO.3`.**
+
+## OO.4. **LA FIDELIDAD `D.30`, POR MUESTRA Y CON SU SEMILLA ESCRITA** (`D.58`)
+
+> # **LA SEMILLA DE ESTA VUELTA ES `v53`.**
+
+**El instrumento reparte y no lo elijo yo**, y su salida va pegada entera para que quien audite
+vuelva a correrlo con la misma semilla **y tenga que salirle la misma lista**. Le toco releer
+**ENTERO** a `cap_07` y **por muestra de `15`** a `cap_06` y `cap_08`.
+
+<!-- TALLADO: parcial salida=.v53/muestra.txt -->
+
+    $ python scripts/muestra_fidelidad.py --libro grove_high_output --capitulos cap_06,cap_07,cap_08 --semilla v53
+    MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+      libro    : grove_high_output
+      semilla  : v53
+      capitulos: cap_06, cap_07, cap_08
+
+      RELEIDO ENTERO : cap_07
+      POR MUESTRA    : cap_06, cap_08, 15 pasos cada uno
+
+      EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+      pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+      --- cap_06: 15 paso(s) en la muestra
+        anunciar_decision_inesperada_reconvocar_reunio P1   Comprueba la condicion: la palabra final va a ser radicalmen
+        anunciar_decision_inesperada_reconvocar_reunio P5   Levanta la sesion.
+        anunciar_decision_inesperada_reconvocar_reunio P6   Reconvoca la reunion despues de que la gente haya tenido oca
+        conducir_etapas_modelo_ideal_decision          P4   Cuenta con que, si los que saben se guardan su opinion, lo q
+        conducir_etapas_modelo_ideal_decision          P9   Exige por ultimo que todos los implicados den pleno apoyo a 
+        cortar_discusion_libre_momento_justo           P4   Pero en cuanto sientas que ya lo has oido todo y que todos l
+        cortar_discusion_libre_momento_justo           P7   Pasa a tomar la decision en el momento justo, que es lo deci
+        decidir_nivel_competente_inferior              P3   No entiendas saber como entender tecnicamente y nada mas: es
+        decidir_nivel_competente_inferior              P4   Cuenta con que ese criterio se desarrolla con la experiencia
+        ejercer_poder_posicion_etapa_decision_clara    P2   Cuando eso pase, acepta que la persona de mayor rango, la de
+        ejercer_poder_posicion_etapa_decision_clara    P3   Comprueba que el proceso vino bien hasta ese punto: que quie
+        tomar_mando_reunion_pares_presidente_ausente   P3   Si eso no funciona, pide siempre que puedas a la persona pre
+        vencer_sindrome_grupo_pares_autoconfianza      P3   Apoya otra parte en la experiencia.
+        vencer_sindrome_grupo_pares_autoconfianza      P4   Cuenta con que al final la autoconfianza sale sobre todo de 
+        zanjar_seis_preguntas_decision_adelantado      P3   Zanja por adelantado las seis preguntas importantes, que es 
+
+      --- cap_08: 0 paso(s) en la muestra
+
+      --- cap_07: ENTERO, 6 paso(s), no hay muestra que elegir
+
+**`cap_08` SALE CON `0` PASOS EN SU MUESTRA Y SU FILA LO DICE EN VEZ DE DESAPARECER**, que es lo que
+el encargo pide: **no tiene candidatos porque su frontera le da `0` nodos**, no porque se me
+olvidara.
+
+### OO.4.a. **`PASOS INVENTADOS` POR CAPITULO, UNA FILA POR CAPITULO Y NO UNA MEDIA**
+
+**La marca paso a paso la pongo yo releyendo cada uno contra su linea; el instrumento solo cuenta**,
+y ademas **cotejo mi lista contra la que el repartidor imprimio**, para que no pueda haber releido
+otros quince.
+
+<!-- TALLADO: parcial script=.v53/pasos_inventados.py salida=.v53/pasos_inventados.txt -->
+
+    $ python .v53/pasos_inventados.py   sobre .v53/muestra.txt
+    pasos que la muestra reparte (leidos de .v53/muestra.txt) : 15
+    pasos que yo declaro releidos                             : 21
+    LAS DOS LISTAS COINCIDEN, paso a paso                     : True
+    (cap_07 va ENTERO y su lista no la imprime la muestra: son sus 6 pasos)
+
+#### **LA TABLA, IMPRESA Y NO TECLEADA**
+
+<!-- TALLADO: script=.v53/pasos_inventados.py salida=.v53/pasos_inventados.txt -->
+| capitulo | candidatos | pasos escritos | regimen `D.58` | pasos releidos | PUENTE | `PASOS INVENTADOS` |
+|---|---:|---:|---|---:|---:|---:|
+| `cap_06` | 8 | 62 | MUESTRA de 15 | 15 | **0** | **0,0 por ciento** |
+| `cap_07` | 1 | 6 | ENTERO | 6 | **0** | **0,0 por ciento** |
+| `cap_08` | 0 | 0 | ENTERO | 0 | **0** | **0,0 por ciento** |
+
+<!-- TALLADO: parcial script=.v53/pasos_inventados.py salida=.v53/pasos_inventados.txt -->
+
+    cap_06      0,0 por ciento contra un tope de 10 : NO DISPARA
+    cap_07      0,0 por ciento contra un tope de 10 : NO DISPARA
+    cap_08      0,0 por ciento contra un tope de 10 : NO DISPARA
+
+**EL DISPARADOR NO SALTA EN NINGUNO DE LOS TRES**, asi que **ningun capitulo se relee entero antes
+de seguir**. Y lo digo con la letra de `D.55` delante: **la fidelidad `D.30` con puente ES una de
+las cuatro guardas de DATO que bloquean**, junto con `gate`, el cerrojo y el censo no decreciente,
+**y da `0` puentes**, asi que **no bloquea**.
+
+### OO.4.b. **EL UNICO PASO DE LA MUESTRA EN EL QUE LA RELECTURA ME HIZO DUDAR, Y LO TRAIGO YO**
+
+**`ejercer_poder_posicion_etapa_decision_clara` `P3`**, que la semilla saco y que es el unico de los
+`21` donde **mi imperativo cambia la gramatica de la frase del libro**.
+
+| lo que escribi | lo que dice `L61` |
+|---|---|
+| *Comprueba que el proceso vino bien hasta ese punto: que quien decide lo hace con el beneficio completo de la discusion libre...* | *If the decision-making process has proceeded correctly up to this point, the senior manager will be making the decision having had the full benefit of free discussion...* |
+
+**El libro pone una CONDICIONAL con su consecuencia; yo pongo un IMPERATIVO de comprobacion.** Lo
+marco **TRANSCRIPCION** y no PUENTE por dos motivos, y los dos se pueden discutir: **ningun medio,
+objeto ni etapa de mi paso falta en la frase del libro**, y el manual manda escribir los pasos en
+imperativo, que es exactamente convertir la condicional del autor en la comprobacion del que
+ejecuta. **Lo traigo yo antes de que nadie me lo pregunte**, y va en los discutibles de `OO.5.e`.
+
+**CERRADA `OO.4`.**
+
+## OO.5. **EL CIERRE DE LA VUELTA 53**
+
+### OO.5.a. **LAS GUARDAS, CORRIDAS AL CERRAR**
+
+<!-- TALLADO: parcial salida=.v53/cierre_guardas.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+### OO.5.b. **EL ESTADO AL CIERRE, RECOMPUTADO AL CIERRE** (`EXTRACTOR.md` 4)
+
+<!-- TALLADO: parcial salida=.v53/cierre_estado.txt -->
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+       1087 total
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    65
+    $ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+    1
+
+**LAS TRES PRIMERAS NO SE HAN MOVIDO NI UNA LINEA, Y ESO ES EL ENTREGABLE Y NO UN DESCUIDO**:
+`346`, `740` y `1` al abrir y al cerrar. **La vuelta era de EXTRACCION y no inserto nada**, asi que
+el grafo, la bitacora y los pares mutuos tienen que salir exactamente como entraron. **Lo unico que
+se mueve es la bandeja: de `56` a `65`**, que son mis `9` candidatos.
+
+### OO.5.c. **EL CREDITO Y LA DEUDA AL CIERRE**
+
+<!-- TALLADO: parcial salida=.v53/credito_cierre.txt -->
+
+    $ python forja.py credito
+      CIFRA PUBLICADA    0 de 2     ACTA 51
+      CLASE              0 de 2     ACTA 51
+      DATO MOVIDO        0 de 2     ACTA 51
+      REPORTE            2 de 3     ACTA 51
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+<!-- TALLADO: parcial salida=.v53/deuda_cierre.txt -->
+
+    $ python scripts/deuda.py
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      registro: docs/loop/DEUDA.jsonl
+      pendientes: 20    pagadas: 18
+
+**DE `19` PENDIENTES A `20`, Y LA NUEVA ES MIA**: `d058`, anotada en `OO.3.h`. **No pago ninguna**,
+que es lo que el encargo manda: **la vuelta de saneamiento es la `54`**.
+
+### OO.5.d. **LA LINEA DEL TRAMO CON SU RELOJ, QUE ES LA MITAD DEL TECHO QUE MUERDE HOY**
+
+**Cada cifra se lee del fichero que el propio comando escribio al terminar**, y las dos que no
+tienen fichero llevan escrito en su fila por que no lo tienen.
+
+    $ python .v53/relojes.py   sobre .v53/reloj_c*.txt
+
+#### **LA TABLA, IMPRESA Y NO TECLEADA**
+
+<!-- TALLADO: parcial script=.v53/relojes.py salida=.v53/relojes.txt -->
+    pase candidato                                           reloj s  de donde sale la cifra
+    c0   conducir_etapas_modelo_ideal_decision                 600,0  tope del corte, no hay fichero: el comando no llego a escribirlo
+    c1   conducir_etapas_modelo_ideal_decision                 849,0  .v53/reloj_c1.txt
+    c2   decidir_nivel_competente_mas_bajo                       0,0  la puerta tumba antes del barrido, sin fichero de reloj
+    c2b  decidir_nivel_competente_inferior                     603,0  .v53/reloj_c2b.txt
+    c3   vencer_sindrome_grupo_pares_autoconfianza             415,0  .v53/reloj_c3.txt
+    c4   tomar_mando_reunion_pares_presidente_ausente          282,0  .v53/reloj_c4.txt
+    c5   ejercer_poder_posicion_etapa_decision_clara           394,0  .v53/reloj_c5.txt
+    c6   cortar_discusion_libre_momento_justo                  263,0  .v53/reloj_c6.txt
+    c7   zanjar_seis_preguntas_decision_adelantado             254,0  .v53/reloj_c7.txt
+    c8   anunciar_decision_inesperada_reconvocar_reunion       459,0  .v53/reloj_c8.txt
+    c9   planificar_tres_pasos_demanda_estado_brecha           540,0  .v53/reloj_c9.txt
+
+    pasadas de aduana lanzadas             : 11
+    pasadas CON fichero de reloj           : 9
+    suma del reloj de aduana               : 4659,0 s
+    en minutos                             : 77,7 min
+    TECHO DEL ENCARGO                      : 90 min
+    consumido del techo                    : 86,3 por ciento
+    margen que quedaba al cortar           : 12,3 min
+    media por pasada CON reloj             : 517,7 s
+    media de la vuelta 52, como contraste  : 731,2 s   (la que el encargo usa para presupuestar)
+    variacion                              : -29,2 por ciento
+
+    LO QUE EL PRESUPUESTO DEL ENCARGO PREDECIA : 7,4 candidatos en 90 min a 731,2 s
+    LO QUE SALIO                               : 9 candidatos escritos en 77,7 min
+
+> **LA LINEA DEL TRAMO, TAL COMO `EXTRACTOR.md` 12.4 la pide:** **la vuelta cierra `cap_06` ENTERO
+> con `8` candidatos de `8` previstos, abre `cap_07` por su pieza `P5` y lo deja en `1` de `9`, y no
+> mina `cap_08`, que su frontera deja en `0` nodos.** El corte lo puso **el reloj de aduana, a
+> `77,7` de los `90` minutos**, con `12,3` minutos de margen que no daban para otra pasada entera
+> mas el cierre.
+
+**Y LA MEDIA CAYO UN `29,2` POR CIENTO RESPECTO DE LA QUE EL ENCARGO USO PARA PRESUPUESTAR**, de
+`731,2` s a `517,7` s, **asi que salieron `9` candidatos donde el presupuesto predecia `7,4`**. No
+propongo cambiar la cifra del presupuesto con una sola vuelta de contraste: **la dejo medida aqui y
+el auditor decide**, que es de quien es esa decision (`d011`).
+
+### OO.5.e. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+**Los marco por numero y linea y no reabro el argumento** (modo austero). Los `12` primeros estaban
+escritos **dentro de su ficha antes de correr su aduana**; los tres ultimos son de esta seccion.
+
+| # | donde | que sostengo, y por que puede caer |
+|---:|---|---|
+| `1` | `cap_06` `P7`, `L23 a L29` | **Las tres etapas en UN nodo y no una cabeza con tres partes.** El libro dice *first*, *next* y *finally* y **no dice cuantas**, asi que contar seria mio. Si el auditor lee ahi una cabeza, el nodo se parte |
+| `2` | `cap_06` `P7`, pasos `4`, `8` y `11` | Empiezan por *Cuenta con* y pueden leerse como POSTURA. Los sostengo porque son el criterio sin el cual el paso de al lado queda en mandato pelado |
+| `3` | `cap_06` `P9` | Prediccion mia que **FALLO y la dejo escrita**: dije que levantaria `repartir_decision_cercanos_hechos` y **la senial no lo levanto** |
+| `4` | `cap_06` `P17`, `L49` | **`68` palabras y `5` pasos.** Con `15.4` delante, un lector estricto puede decir que es POSTURA sobre la autoconfianza |
+| `5` | `cap_06` `P17` contra `P18` | Los doy **HERMANOS**: uno previene y otro repara. **La senial los junto** y los veredicto `SANO` |
+| `6` | `cap_06` `P23` contra `P24` | Los doy **HERMANOS**: QUIEN decide contra CUANDO se corta. **Lo marque en las dos fichas antes de correr ninguna aduana y la senial los junto desde `P24`** |
+| `7` | `cap_06` `P25` | **Pasos que preguntan y no ordenan.** Un lector estricto puede decir que un nodo cuyos pasos preguntan no ejecuta |
+| `8` | `cap_06` `P25` | **No cableo arista de `D.37` pese a ser cabeza contada**, porque sus seis partes no son nodos. Si el auditor cree que alguna de las seis lo es, falta una arista |
+| `9` | `cap_06` `P31`, `L93` | `8` pasos de un tramo de `95` palabras: casi tantos pasos como frases. Lo sostengo porque el parrafo trae cinco verbos encadenados |
+| `10` | `cap_06` `P19`, `P20` y `P21`, `L53` a `L57` | **Les doy `0` nodos a los tres**, y son la seccion de los dos miedos. Si el auditor ve ahi un nodo de *vencer los dos miedos*, me falta uno |
+| `11` | `cap_07` `P4` contra `P5` | **Doy `0` a `L17` y `1` a `L19`** para no fabricar el gemelo de su donante. Si se lee que la version de fabrica tiene procedimiento propio, falta un nodo |
+| `12` | `cap_07` `P5` | Una cabeza cuyos pasos son las tres secciones siguientes **puede leerse como un indice** |
+| `13` | `cap_08` entero | **`0` nodos en `12` tramos.** Es la apuesta mas grande de la vuelta: si alguien saca un procedimiento de los centros regionales de huevos o de los almacenes de vajilla, **la frontera entera de `cap_08` cae conmigo dentro** |
+| `14` | `OO.4.b` | **`ejercer_poder_posicion_etapa_decision_clara` `P3` marcado TRANSCRIPCION** cuando mi imperativo cambia la gramatica de la condicional del libro |
+| `15` | `OO.3.c` | **Los veredictos van SOLO al reporte y no dentro de la ficha**, contra lo que hizo la vuelta `52`. Lo hago por `d051` y `d056`, pero **es cambio de metodo mio y se me carga a mi** |
+
+### OO.5.f. **LO QUE VA EN ROJO Y NO ES MIO: `d057`**
+
+**El cierre nombra `prueba de aceptacion`, y lo declaro con la palabra que le toca.** `D.55` fija la
+lista **cerrada** de las guardas que bloquean, y son **cuatro y solo cuatro**: **`gate`, el cerrojo,
+el censo no decreciente y la fidelidad `D.30` con puente.** **La prueba de aceptacion NO es ninguna
+de las cuatro**, asi que **no es guarda de DATO: es `deuda`, y su id es `d057`**, abierta por la
+`ACTA 51` y con su arreglo en `tests/` o en `scripts/`, **que `D.45` me veda**. **No la llamo
+guarda, no la arreglo y sigo.**
+
+**Y LAS CUATRO QUE SI BLOQUEAN, UNA A UNA, AL CIERRE:** `gate` **VERDE** (`OO.5.a`); el **cerrojo**
+y el **censo no decreciente** van dentro de `gate`, que lista `censo_no_decrece` entre sus guardas;
+la **fidelidad `D.30` con puente** da **`0` puentes sobre `21` pasos releidos** (`OO.4.a`).
+**Ninguna de las cuatro en rojo.**
+
+### OO.5.g. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
+
+*Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
+`docs/loop/TABLA_DE_CIERRE.txt`.*
+
+<!-- TALLADO: salida=docs/loop/TABLA_DE_CIERRE.txt -->
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | los registros de la `ACTA 51` recogidos sin reabrirlos, la caida de `REPORTE` que sube a `2 de 3` con su remedio, y las dos deudas nuevas recogidas y no pagadas | **CERRADA en `OO.1`**: las `8` adjudicaciones de la `ACTA 51` recogidas sin rediscutirse, `REPORTE` en `2 de 3` leida del instrumento, el remedio de `1.a` ejecutado en `OO.0.b` pegando la lista cerrada de las cuatro guardas de DATO antes de usar la palabra, y `d056` y `d057` recogidas con lo unico que `d056` cambia hoy aplicado en los `9` bloques de veredicto |
+| 2 | la frontera de `cap_06`, `cap_07` y `cap_08` publicada antes de cortar nada, cerrada contra el cuerpo al digito, y cada fila con los nodos que preve | **CERRADA en `OO.2`**: `82` tramos en tres unidades, `4122`, `3832` y `1138` palabras sumando el cuerpo entero de cada una, **cero lineas sin cubrir y cero solapes en las tres**, `17` nodos previstos y `65` tramos de cero cada uno con su motivo en su celda, las tres tablas talladas celda a celda contra `.v53/frontera.py`, y una correccion declarada por regeneracion en `OO.2.e` |
+| 3 | minar en el orden del libro, un candidato por vez, con su aduana en el mismo acto, techo de `30` candidatos o `90` minutos, cero inserciones | **CERRADA en `OO.3`**: `9` candidatos escritos y `9` pasados por su aduana en el mismo acto, `1 CAERIA` corregido en el acto y su hermano corregido antes de escribirse, **`cap_06` entero en `8` de `8`** y `cap_07` abierto en `1` de `9`, `18` pares de cola leidos enteros con `18` veredictos `SANO` razonados, los dos pares de la banda alta de `0,4` leidos primero y medidos en `OO.3.h`, `d058` anotada, y **`CERO INSERCIONES`** con la puerta de `D.39` medida por mi en sus dos mitades |
+| 4 | la fidelidad `D.30` por muestra, con la semilla `v53` escrita y la salida del instrumento pegada, y `PASOS INVENTADOS` por capitulo | **CERRADA en `OO.4`**: semilla `v53` escrita y salida del repartidor pegada entera, `cap_07` releido ENTERO y `cap_06` por muestra de `15`, mi lista cotejada paso a paso contra la que el instrumento repartio, **`0` PUENTE sobre `21` pasos releidos** y `0,0` por ciento en los tres capitulos, el disparador sin saltar en ninguno, y el unico paso dudoso traido por mi en `OO.4.b` |
+| 5 | el cierre: las guardas, la tabla `D.52`, el estado recomputado al cierre, la linea del tramo con su reloj y los discutibles marcados | **CERRADA en `OO.5` CON UNA DEUDA DECLARADA**: `gate`, `guiones`, tallado y censo en verde, y **la prueba de aceptacion en ROJO con `1` fallo de `329`, que NO es guarda de DATO sino la deuda `d057`** y cuyo arreglo vive en `tests/`, vedado por `D.45`. Estado recomputado al cierre (`346`, `740`, `1`, `65`), reloj de aduana de `4659,0` s sobre `11` pasadas, `77,7` de `90` minutos, media de `517,7` s contra los `731,2` del presupuesto, deuda de `19` a `20` y `15` discutibles marcados |
+
+### OO.5.h. **LA COLISION DE `D.52` CON `D.41`, SUFRIDA Y REPARADA A MANO POR NOVENA VEZ** (`d030`, `d047`)
+
+**Volvio a pasar y la declaro entera.** `tabla_de_cierre.py --escribir` **sobrescribe siempre el
+mismo fichero**, asi que al escribir la mia la tabla `D.52` de la vuelta `52` quedo citando una sede
+que ya no la contiene, **y el tallado la marco `DIFIERE` con sus `5` filas**. La reparacion es la de
+siempre: **archivar la de la vuelta anterior y repuntar su marcador**, nunca teclear la celda buena.
+
+<!-- TALLADO: parcial salida=.v53/sello_v52.txt -->
+
+    $ git log -1 --format="%h" -- docs/loop/TABLA_DE_CIERRE.txt   (el commit que la escribio, no HEAD)
+    677bc34
+    $ git show 677bc34:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+    5433e89c1185679d11255da22d547d1dd94f8039
+    $ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v52.txt
+    5433e89c1185679d11255da22d547d1dd94f8039
+    $ git show HEAD:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin   (el mismo comando con HEAD, hoy)
+    5433e89c1185679d11255da22d547d1dd94f8039
+
+**EL MISMO `hash-object` EN LAS TRES LINEAS: la copia archivada ES la salida, no una
+transcripcion.** `42`, `46`, `47`, `48`, `49`, `50`, `51`, `52` y hoy la `53`: **noveno ejemplar
+seguido**, y por eso es deuda de maquinaria y no descuido mio. **`D.45` me deja fuera de
+arreglarla**, asi que la sufro, la reparo a mano y la declaro.
+
+**Y CITO EL COMMIT Y NO `HEAD`, QUE ES LO QUE `d047` PIDE:** la cuarta linea de arriba da hoy lo
+mismo que la segunda **solo porque todavia no habia commiteado mi tabla**. Manana dara otra cosa, y
+por eso **la cita que sostiene el sello es `677bc34`**, no `HEAD`. **`d047` sigue demostrada y sin
+pagar por `D.45`.**
+
+### OO.5.i. **LO QUE EL ENCARGO ME PROHIBIA, FILA A FILA**
+
+| | |
+|---|---|
+| **no insertar nada** | **cero inserciones.** `dataset/nodos.jsonl` sale en `346`, igual que entro, y `bitacora/VEREDICTOS.jsonl` en `740` |
+| **no pagar deuda** | **ninguna pagada.** El instrumento lo publica: `18` pagadas al abrir y `18` al cerrar |
+| **no tocar las nueve de maquinaria** | **ni una.** Y es lo que convierte `d057` en deuda declarada y no en arreglo mio |
+| **no partir `P12` ni `P15` de `cap_05`** | **no los toque:** `cap_05` no entra en esta vuelta |
+| **no abrir doctrina** | **no la abri.** Lo que encontre lo registre con su medida: `d058`, con su medicion en `OO.3.h` |
+| **no tocar `src/`, `scripts/`, `tests/`, `hooks/`, el banco, el arnes ni los protocolos** | **ni un fichero.** `git status` no trae ninguno |
+| **no mover un umbral** | **ninguno.** `d058` mide la banda de `0,4` y **propone medir, no mover** |
+| **no reparar los `6` de `d005`** | **no los toque:** son de `cap_03` y se reparan antes de insertar |
+
+### OO.5.j. **LA PARADA QUE NO HAY, Y LA QUE SI** (`EXTRACTOR.md` 7)
+
+**No declaro ninguna PARADA.** Nada de lo que encontre contradice una regla vigente ni una cifra
+publicada con su corte. **La prueba de aceptacion en rojo NO es parada y NO es guarda**: es la deuda
+`d057`, ya abierta por la `ACTA 51`, con su arreglo en `tests/`, vedado por `D.45`, y el propio
+encargo me dice que la declare citandola y siga. **Eso hago.**
+
+### OO.5.k. **EL TABLERO AL CERRAR, Y UNA PREGUNTA DE DOCTRINA QUE HOY GANA SU MEDIDA**
+
+<!-- TALLADO: parcial salida=.v53/tablero_cierre.txt -->
+
+    $ python forja.py tablero --escribir
+      prio lote clave                          estado                 dueno                 band ult cap
+      1    7    grove_high_output              COSECHADO              NINGUNO                 65  cap_07
+
+    ESCRITO: 22 fila(s) en docs/loop/TABLERO.jsonl
+
+**La bandeja pasa de `56` a `65` y el ultimo capitulo minado de `cap_05` a `cap_07`**, que es la
+huella de esta vuelta en el tablero.
+
+> **Y LA DOCTRINA SIGUE CONGELADA EN `11`: no abro ninguna pregunta nueva.** Lo que hago es lo que
+> `EXTRACTOR.md` 7 manda con una pregunta ya registrada: **registrarla con su medida y dejarla ahi.**
+> La pregunta `1` de la cola (`D.56`) es **exactamente** la banda de `0,4` de `EXTRACTOR.md` 11, y
+> hoy deja de ser una pregunta sin cifra: `d058` la mide con la funcion de la aduana en `OO.3.h`.
+> **No la contesto ni la muevo de sitio.**
+
+**CERRADA `OO.5`.**
