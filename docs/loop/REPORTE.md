@@ -52816,7 +52816,7 @@ volvio a salir con el mismo `4e3e2fb30c29ad653deac7b08baf4b5f31dd88f5`.
 *Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
 `docs/loop/TABLA_DE_CIERRE.txt`.*
 
-<!-- TALLADO: salida=docs/loop/TABLA_DE_CIERRE.txt -->
+<!-- TALLADO: salida=docs/loop/TABLA_DE_CIERRE_v54.txt -->
 
 | # | tarea | como cerro |
 |---:|---|---|
@@ -53458,3 +53458,152 @@ que mas me juego (discutible `2`) es tambien **el unico que ninguna senial empar
 Es literalmente el aviso de `EXTRACTOR.md` 11: **un candidato con la cola vacia esta
 certificado como SIN GEMELO, no como SIN MADRE.** Su madre, si la tiene, la tiene que
 encontrar la lectura, y en `VV.5.a` digo cual creo que NO es.
+
+---
+
+## VV.7. TAREA 5: **EL CIERRE, RECOMPUTADO AL CIERRE Y NO COPIADO DE LA APERTURA**
+
+### VV.7.a. **EL ESTADO, MEDIDO DESPUES DE QUE LA VUELTA LO MOVIERA**
+
+<!-- TALLADO: parcial salida=.v55ext/cierre_estado.txt -->
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git rev-parse --short HEAD
+    fe179ed
+    $ wc -l < dataset/nodos.jsonl
+    346
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    74
+    $ wc -l < bitacora/VEREDICTOS.jsonl
+    740
+    $ git log --oneline 91d3e4d..HEAD | wc -l
+    2
+
+**CONTRA LA APERTURA (`VV.0`), y la comparacion es el entregable de una vuelta que no inserta:**
+
+| | apertura | cierre | por que |
+|---|---:|---:|---|
+| `dataset/nodos.jsonl` | `346` | `346` | **no se movio, y esa es la prueba de que no se inserto nada** |
+| `bitacora/VEREDICTOS.jsonl` | `740` | `740` | igual: sin insercion no hay veredicto que escribir |
+| `PATRON: cuarentena/grove_high_output/*.json` | `65` | `74` | **los `9` candidatos nuevos**, que es lo unico que esta vuelta produjo |
+
+### VV.7.b. **LA LINEA DEL TRAMO, SEA CUAL SEA EL NUMERO**
+
+> # **TRAMO DE LA VUELTA `55`: `9` candidatos, `3` capitulos, `0` inserciones.**
+>
+> **`cap_07`** cerrado: sus `8` que faltaban de los `9` de su frontera.
+> **`cap_09`** cerrado por frontera: `0` nodos de `27` tramos.
+> **`cap_10`** cerrado por frontera: `1` nodo de `35` tramos.
+>
+> **La vuelta NO cierra corto por techo:** `9` candidatos contra un techo de `30`, y los tres
+> capitulos del tramo entraron. **Lo que la acorto no fue el techo sino el libro**: dos de las
+> tres unidades son material conceptual, y eso esta medido en `VV.3` tramo a tramo, no supuesto.
+
+### VV.7.c. **LAS GUARDAS AL CIERRE**
+
+<!-- TALLADO: parcial salida=.v55ext/cierre_gate.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+
+<!-- TALLADO: parcial salida=.v55ext/cierre_guiones.txt -->
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+**LA PRUEBA DE ACEPTACION, QUE NO ES GUARDA DE DATO Y HOY CIERRA EN ROJO CON LOS DOS FALLOS QUE
+EL ENCARGO PREDIJO** (`d067`, vedada por `D.45`):
+
+<!-- TALLADO: parcial salida=.v55ext/aceptacion_cierre.txt -->
+
+    $ python tests/test_aceptacion.py
+    FAIL: test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa (__main__.PruebaRegimenLigero.test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa)
+    AssertionError: 0 != 1
+    FAIL: test_la_vuelta_49_consta_como_saneamiento_en_el_registro (__main__.PruebaRegimenLigero.test_la_vuelta_49_consta_como_saneamiento_en_el_registro)
+    AssertionError: 54 != 49
+      total: 339 pruebas, 2 fallos, 0 errores
+
+> **`2` de `339`, y son los dos de `d067`. Los declaro y sigo**, que es lo que el encargo manda.
+>
+> **PERO TRAIGO UNA MEDICION QUE EL ENCARGO NO PODIA TENER, y la declaro porque mueve una cifra
+> publicada:** en mitad de la vuelta esa misma prueba me dio **`4` fallos, no `2`**
+> (`.v55ext/aceptacion.txt`). Los otros dos no eran de `d067`:
+>
+> | fallo de mas | que era | como se fue |
+> |---|---|---|
+> | `test_e_guion_largo_rompe_el_hook`, `el repo ha de estar limpio antes de ensuciarlo` | la prueba exige arbol limpio y yo tenia trabajo sin commitear | **se fue sola al commitear `cap_07`** |
+> | `test_el_reporte_vivo_del_repo_esta_en_verde` | **`D.59` mordiendome**: una cifra derivada tecleada en mi prosa de `VV.4`, linea `53218` | **la reescribi para que la fila la imprima el instrumento**, y esa es la correccion |
+>
+> **`D.59` me mordio DOS veces en esta vuelta** (aqui, y el fragmento de cita en `VV.4.b`), y
+> las dos en sitios donde yo habria firmado que estaba bien. **La cuenta de guardas que muerden
+> a quien las estrena sigue subiendo, y eso es lo contrario de un problema.**
+
+### VV.7.d. **LA DEUDA Y EL CREDITO, RECOMPUTADOS**
+
+<!-- TALLADO: parcial salida=.v55ext/deuda_cierre.txt -->
+
+    $ python scripts/deuda.py
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      registro: docs/loop/DEUDA.jsonl
+      pendientes: 19    pagadas: 25
+
+**IGUAL QUE EN LA APERTURA, y es lo correcto: esta vuelta es de EXTRACCION, no de
+saneamiento.** `scripts/deuda.py --clase 55` imprimio `LIBRE` y la de saneamiento es la `59`,
+no la `58` (`d068` ya declaro esa discrepancia y no la reabro).
+
+> **NO ANOTO DEUDA NUEVA.** Las dos mordidas de `d029` de esta vuelta (`VV.6.a`) **son la deuda
+> que ya existe**, no una nueva, y anotarla otra vez seria inflar el registro con el mismo
+> hecho. Lo que dejo es **su segunda y tercera medicion**, en su sede.
+
+### VV.7.e. **EL COSTE, QUE ESTA VEZ SI DECIDE**
+
+**LO QUE PUEDO MEDIR Y LO QUE NO, dicho sin rodeos.** El coste de MI turno lo escribe el arnes
+en `docs/loop/loop.log` **cuando el turno cierra**, o sea **despues de esta linea**: no existe
+todavia y **no lo invento**. Lo que si esta escrito es su vara, y la cito de su sede
+(`.v55aud/coste_corrida.txt`, corrido por el auditor de la `ACTA 53`):
+
+    EL TURNO DE EXTRACTOR DE ESTA CORRIDA             : 20.6911 USD
+    CONTRA EL DISPARADOR ESCRITO DE 8 USD             : 1 de los 2 turnos cerrados lo pasan
+
+**SI MI TURNO VUELVE A PASAR DE `8`, LA CONDICION ESCRITA SE CUMPLE, y digo desde ya EN QUE SE
+FUE**, porque eso si lo se sin esperar al log:
+
+| sumando | cuanto pesa, y de donde lo se |
+|---|---|
+| **las `9` pasadas de aduana** | el reloj sumado y su media los imprime `.v55ext/saldo_uno_a_uno.py` y estan pegados en `VV.5.b`. **Ese reloj no es mio: es del instrumento** |
+| **la lectura de los dos libros nuevos** | `cap_09` y `cap_10` enteros, con las palabras de cuerpo y los tramos que `.v55ext/frontera.py` imprime por unidad en `VV.3.a` y `VV.3.b` |
+| **las tres tablas repegadas** | dos caidas de `D.41`, una de ellas `d029` mordiendo dos veces (`VV.6.a`) |
+| **lo que domina, y no es nada de lo anterior** | los turnos internos y los tokens de lectura de cache que el propio `ACTA 53` `53.10` identifico como el sumando mayor |
+
+> **Y UNA OBSERVACION QUE VALE MAS QUE LA CIFRA:** `D.43` midio **mas de tres horas** para un
+> informe de lote de `83` candidatos, y esta vuelta gasto en informes de UNO el reloj que su
+> propio instrumento imprime en `VV.5.b`. **No es virtud mia: es que `D.43` tenia razon**, y el
+> informe por candidato es el unico que cabe en un turno.
+
+### VV.7.f. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
+
+<!-- TALLADO: script=scripts/tabla_de_cierre.py salida=docs/loop/TABLA_DE_CIERRE.txt -->
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | los registros de la `ACTA 53` recogidos sin reabrirlos | **CERRADA en `VV.1`**: los `6` recogidos con su linea de `ACTA 53` pegada al lado, la pregunta `11` **no reabierta** porque `D.56` congela la cola en `11`, y `d071` y `d072` declaradas **fuera de mi trabajo de hoy** con su linea de `DEUDA.jsonl` |
+| 2 | la trampa del tablero: abrir por `cap_07` y no por `cap_08` | **CERRADA en `VV.2`**: el tablero manda saltar y **no salto**. Mi recuento propio sobre la bandeja entera da **`1` candidato de `cap_07` de `65`**, y la frontera de la vuelta `53` le daba `9`: **cero discrepancia con el encargo por mi propio camino**. `cap_08` **no reabierto** |
+| 3 | el tramo: `cap_07` hasta cerrarlo, y `cap_09` y `cap_10` con su frontera antes de cortar | **CERRADA en `VV.3` y `VV.5`**: `cap_07` cerrado con sus `8`; `cap_09` y `cap_10` con **frontera publicada ANTES de cortar**, `62` tramos entre los dos, **`0` lineas sin cubrir y `0` solapes en las dos**, y `0` y `1` nodos. **`9` candidatos contra un techo de `30`**, cada uno con su aduana EN SECO propia y su reloj: **`0 CAERIAN` de `9`** |
+| 4 | la fidelidad `D.30` y la muestra con su semilla escrita | **CERRADA en `VV.4`**: semilla `v55` escrita, el reparto pegado de su instrumento, y la relectura hecha **con el fragmento del libro buscado por el instrumento** y no prometida. **Mordio una vez y era mi cita, no mi paso**, corregida sin borrar. `PASOS INVENTADOS` por capitulo con numerador y denominador nombrados, y **el disparador no se activa en ninguna de las tres filas** |
+| 5 | el cierre, con el coste dentro | **CERRADA en `VV.7`**: estado recomputado al cierre (`346` y `740` **sin mover**, que es la prueba de que no se inserto nada, y la bandeja de `65` a `74`), `gate` y `guiones` en VERDE, tallado y censo en VERDE, prueba de aceptacion en ROJO con los `2` de `d067` **declarados**, deuda sin mover, **`13` discutibles marcados a ciegas** y el coste declarado con su desglose y con lo que todavia no existe dicho como tal |
+
+> **Y LA TABLA DE LA VUELTA `54` LA ARCHIVE Y LA SELLE ANTES DE SOBRESCRIBIR SU FICHERO**, que
+> es el remedio que la propia `54` uso con la de la `53` y el que `d022` obliga a hacer a mano:
+> `scripts/tabla_de_cierre.py --escribir` escribe **siempre** sobre `docs/loop/TABLA_DE_CIERRE.txt`
+> (`d030`), asi que sin archivar, la tabla de la vuelta anterior **se queda apuntando a un fichero
+> que ya no dice lo que decia**. La copia va a `docs/loop/TABLA_DE_CIERRE_v54.txt` y su sede en
+> `PP.5.m` queda repuntada ahi, **con los dos sellos identicos** (`.v55ext/sello_tabla_v54.txt`):
+>
+>     $ git show fe179ed:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+>     f46c705945085f2aea56426abaa0586f007a41bf
+>     $ git hash-object docs/loop/TABLA_DE_CIERRE_v54.txt
+>     f46c705945085f2aea56426abaa0586f007a41bf
+>
+> **Lo unico que toque de la seccion de la `54` es la ruta del comentario de tallado.** Ni una
+> celda de su tabla, y los sellos son la prueba.
