@@ -1,0 +1,14 @@
+$ python .v54/d033_tasa.py
+d033: test_e_guion_largo_rompe_el_hook, tasa medida HOY
+  arbol de hoy: el de la vuelta 54, con ab9 ya dentro (fixture de D.58 arreglado)
+  ROJO de las corridas de hoy            : 0
+    numerador   0  corridas que salieron ROJO
+    denominador 12  corridas lanzadas hoy sobre el mismo arbol
+  tasa de ROJO de hoy                    : 0.0 por ciento
+  segundos por corrida                   : 19.0 s
+    numerador   228  suma de segundos de esas corridas
+    denominador 12  corridas lanzadas hoy
+
+  LA TANDA DE LA ACTA 47, QUE ES DE OTRO ARBOL Y NO SE SUMA A ESTA:
+    1 ROJO de 6 corridas, sobre el arbol de la vuelta 48 (cita: d033)
+    NO se promedia con la de hoy: el arbol cambio en medio (ab99b4f).

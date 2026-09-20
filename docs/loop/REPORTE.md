@@ -51827,3 +51827,514 @@ huella de esta vuelta en el tablero.
 > **No la contesto ni la muevo de sitio.**
 
 **CERRADA `OO.5`.**
+
+---
+
+# VUELTA 54 DE LA LINEA SERIAL, `extraccion-mundo-11`: **SANEAMIENTO EN REGIMEN LIGERO**, la primera vuelta que corre de verdad en `cuarentena` y la que paga lo escrito
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor al aplicar la decision del
+fundador del 20 sep 2026. Modo austero (`D.47`): no repito lo que el registro ya dice.*
+
+> **ESQUELETO ABIERTO AL EMPEZAR, CON LAS FILAS DE ESTADO VACIAS** (`EXTRACTOR.md` 3). Cada tarea
+> anexa su fila al cerrarse, y la columna de estado se rellena entonces, no al abrir.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `PP.1` | los registros de la `ACTA 52` y de la decision del fundador recogidos sin reabrirlos, y **la parte caduca del encargo declarada en vez de obedecida** | **CERRADA en `PP.1`**: las `8` adjudicaciones recogidas sin rediscutirse, y el punto `1` del orden propuesto declarado VACIO con su medicion (`d001` a `d004` pagadas en la `44`) |
+| `PP.2` | **pagar la deuda**, una por una, cada pago con su medicion propia y su `--pagar` anotado; y **lo que no se paga, declarado con su motivo** | **CERRADA en `PP.2`**: `d047` y `d033` pagadas con su medicion propia; `d007` y `d024` derivadas a `PP.4` y `PP.3`; las `15` restantes declaradas una a una con el renglon que las cierra, y `d011` y `d012` **medidas y dejadas abiertas a proposito** |
+| `PP.3` | `d005` y `d024` releidas y medidas: **los candidatos de `cap_02` y `cap_03` que la aduana en seco bloquearia, NOMBRADOS uno a uno** | |
+| `PP.4` | la **pregunta `11`** de la cola clasificada **CON UN EJEMPLAR DELANTE**, y `d058` releida sobre el arbol de hoy | **CERRADA en `PP.4`**: el ejemplar **sigue vivo** (`4` de `921` documentos), clasificado como **especie vieja en sede sin casillero** y no como cuarta especie, **ninguna de las `4` guardas puede cargarlo**, la objecion tecnica de retirarlo **retirada por medicion** (huella identica), `d007` pagada por su mitad ejecutable y `d058` releida sobre `65`: banda `54,8` a `96,2` |
+| `PP.5` | el cierre: **acta corta**, guardas, estado recomputado al cierre, **el coste del turno citado del log**, la linea del tramo y los discutibles marcados | |
+
+**CINCO TAREAS, EN EL TOPE DE CINCO** (`EXTRACTOR.md` 3). Cero cola declarada al abrir.
+
+> **ESTA VUELTA NO INSERTA Y NO MINA** (`D.55`, y el encargo lo repite). `MODO_INSERCION=cuarentena`.
+> **Cero candidatos escritos, cero `forja.py insertar`, cero lineas de `dataset/`.**
+
+## PP.0. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
+
+**Lo pendiente commiteado y pusheado antes de tocar nada** (`EXTRACTOR.md` 1.1). Ese commit llevaba
+**dos ficheros del arnes** (`loop.log` y `ultimo_extractor.json`), **ninguno mio**, asi que el estado
+que sigue es intermedio y se cita con el nombre de la operacion que ya lo movio.
+
+<!-- TALLADO: parcial salida=.v54/apertura_estado.txt -->
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git log -1 --format="%h %ad %s" --date=iso
+    4365888 2026-09-20 12:09:20 -0400 Apertura de la vuelta 54: el arnes deja su registro antes de que el saneamiento toque nada
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+       1087 total
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    65
+    $ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+    1
+
+### PP.0.a. **LA CLASE DE ESTA VUELTA NO LA ELIGE NADIE: LA IMPRIME EL INSTRUMENTO** (`D.58`)
+
+<!-- TALLADO: parcial salida=.v54/clase_54.txt -->
+
+    $ python scripts/deuda.py --clase 54
+    SANEAMIENTO
+      han pasado 5 vuelta(s) desde la ultima de saneamiento (la 49) y la cadencia es 5, con 19 deuda(s) pendientes
+
+### PP.0.b. **LAS GUARDAS DE DATO AL ABRIR, CORRIDAS POR MI**
+
+<!-- TALLADO: parcial salida=.v54/apertura_gate.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+<!-- TALLADO: parcial salida=.v54/apertura_guiones.txt -->
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+**Las cuatro que bloquean** (`D.55`: `gate`, cerrojo, censo no decreciente, fidelidad `D.30` con
+puente) **ninguna en rojo al abrir**: el censo y el cerrojo van dentro de `gate`, y **la fidelidad
+`D.30` no tiene superficie hoy porque esta vuelta no escribe ni un paso.** Lo digo asi en vez de
+firmarla: una guarda sin objeto que medir no se declara verde, se declara sin objeto.
+
+### PP.0.c. **EL CREDITO Y LA DEUDA AL ABRIR**, leidos del instrumento (`EXTRACTOR.md` 14)
+
+<!-- TALLADO: parcial salida=.v54/credito_apertura.txt -->
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+      tandas: 52, en 240 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA 52
+      CIFRA PUBLICADA    1 de 2     ACTA 52
+      CLASE              0 de 2     ACTA 52
+      DATO MOVIDO        0 de 2     ACTA 52
+      REPORTE            0 de 3     docs/loop/paradas/2026-09-20-la-media-la-calcula-el-instrumento-DECISION.md, punto 1
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**`REPORTE` esta en `0 de 3` y la celda dice por que**: la reinicio la decision del fundador, no una
+tanda limpia mia. **Lo recojo y no me lo apunto.**
+
+<!-- TALLADO: parcial salida=.v54/deuda_apertura.txt -->
+
+    $ python scripts/deuda.py
+      pendientes: 19    pagadas: 19
+      ultima vuelta de saneamiento: 49
+
+## PP.1. **LOS REGISTROS DE LA `ACTA 52` Y DE LA DECISION DEL FUNDADOR, RECOGIDOS SIN REABRIRLOS**
+
+**Los recojo y no los rediscuto, y eso incluye los que me favorecen** (`EXTRACTOR.md` 14). **Modo
+austero:** lo que la `ACTA 52` y la decision ya dicen no se repite aqui; se citan por su seccion y se
+dice que hago hoy con ello.
+
+| # | lo que se adjudico | donde vive | que hago hoy |
+|---:|---|---|---|
+| `1` | de mis `15` discutibles se sostienen los `15`: **`0` caidas dentro del marcado** | `ACTA 52` `52.4` | **recogido.** Hoy vuelvo a marcar antes de saber si acierto (`EXTRACTOR.md` 8) |
+| `2` | mi `0` PUENTE **firmado sobre los `68` pasos del lote**, no sobre los `21` de la muestra | `52.1`, `52.3` | **recogido.** Hoy no escribo ni un paso, asi que `D.30` **no tiene superficie** y lo digo asi |
+| `3` | la caida de `REPORTE` por **`517,7` con `11` arriba y `9` abajo**, y la racha reiniciada por el fundador con condicion mecanica | `52.6`, decision punto `1` | **recogido, y me lo aplico**: en esta vuelta **ninguna media, razon ni porcentaje sale de dos celdas mias** (`D.59`) |
+| `4` | la caida de `CIFRA PUBLICADA` por la **frase de correlacion de `d058`**, y que **`d058` se sostiene como deuda aunque su frase caiga** | `52.7` | **recogido.** La frase la reescribo hoy en `PP.4.b`, que es donde `d058` se relee |
+| `5` | `decidir_nivel_competente_inferior` contra `repartir_decision_cercanos_hechos` es **FRONTERA DECLARADA** y ninguna senial la levanta | `52.5` | **recogido y no lo toco**: se cablea el dia de la insercion, y hoy no se inserta |
+| `6` | `d057` **pagada** citando la decision del fundador | decision punto `3` | **recogido**, y el instrumento lo confirma en `PP.0.c`: `19` pagadas contra las `18` de la `ACTA 52` |
+| `7` | la cadencia de saneamiento **sigue contada desde la `53`** | decision punto `3` | **recogido.** No lo recalculo yo: `PP.0.a` lo imprime |
+| `8` | `D.58` decide el regimen por `MODO_INSERCION` y el encargo por la clase de trabajo, y la `53` los tuvo **separados sin que fuera caida de nadie** | `52.12` | **recogido.** Hoy coinciden por primera vez: regimen `cuarentena` y clase `SANEAMIENTO` |
+
+### PP.1.a. **LA PARTE DEL ENCARGO QUE ESTA CADUCA, DECLARADA EN VEZ DE OBEDECIDA** (`EXTRACTOR.md` 4, 7)
+
+**El encargo me propone empezar por *las cuatro de `grove` (`d001` a `d004`)* y las llama *las mas
+viejas*. Las cuatro estan PAGADAS desde la vuelta `44`**, y el instrumento del propio encargo lo
+imprime: **no aparecen en la lista porque la lista solo imprime pendientes.**
+
+<!-- TALLADO: parcial salida=.v54/d001_d004_ya_pagadas.txt -->
+
+    $ python scripts/deuda.py | grep -E "^  d00[1-5]"
+      d005   grove v2 relevo de grove    De los 15 candidatos de cap_03 de grove, su aduana e
+    (d001 a d004 NO aparecen: la lista solo imprime pendientes)
+
+    $ busca el pago de d001 a d004 en el registro
+    d003 PAGADA en la vuelta 44
+    d001 PAGADA en la vuelta 44
+    d002 PAGADA en la vuelta 44
+    d004 PAGADA en la vuelta 44
+
+**NO ES PARADA Y NO LA TRATO COMO TAL** (`EXTRACTOR.md` 7): no contradice una regla vigente ni una
+cifra publicada con su corte, **y el propio encargo autoriza cambiar el orden si lo digo**. Lo digo:
+**el punto `1` del orden propuesto esta vacio**, y la vuelta empieza por el punto `2`.
+
+**LO QUE SI ES, Y LO REGISTRO PORQUE SE REPITE:** es la misma especie que `EXTRACTOR.md` 4 nombra,
+**una afirmacion sobre el estado del registro escrita sin la medicion del dia al lado**. **No la
+cargo a nadie**: el encargo no es mi sede y yo no me adjudico (`EXTRACTOR.md` 14). Queda medida.
+
+> **Y LA LECCION QUE SI ES MIA:** el encargo dice *`19` deudas pendientes* y el instrumento dice
+> `19`, **asi que la cifra del encargo era correcta y la lista de nombres no.** Una cuenta buena con
+> nombres malos es mas dificil de ver que una cuenta mala, **y por eso se abre leyendo la lista y no
+> el total.**
+
+## PP.2. **LA DEUDA: LO QUE SE PAGA, Y LO QUE NO SE PAGA DECLARADO CON SU MOTIVO**
+
+**El encargo lo escribe y me lo aplico entero:** *una deuda cerrada sin arreglar es peor que una
+abierta.* Asi que abro por la lista de las `19`, y **de cada una digo que hago y por que**, antes de
+tocar ninguna.
+
+### PP.2.a. **LA REGLA QUE ME CIERRA LA MAYORIA, Y NO ME LA INVENTO HOY: LA ESCRIBEN ELLAS MISMAS**
+
+**Nueve de las `19` dicen DENTRO DE SU PROPIO TEXTO que no se arreglan en el bucle**, y las cito por
+su renglon en vez de razonarlo yo:
+
+| deuda | lo que ella misma escribe |
+|---|---|
+| `d020` | *NO SE ARREGLA EN EL BUCLE: tocar `src/` esta reservado por `D.45` y sube al fundador en `PARA_ALEXIS.md`* |
+| `d028` | *NO se arregla ahora: `D.45` prohibe tocar `src/` mientras corran frentes en paralelo* |
+| `d037` | *REGISTRADA Y NO ADJUDICADA: `D.56` congela la doctrina y `D.45` veda `src/`* |
+| `d031` | su propuesta es medir si el barrido puede reusar vecinos, y eso es `src/aduana.py` |
+| `d058` | su propuesta es que `texto_comparable` deje fuera el `resumen_teorico`, y eso es `src/comun.py` |
+| `d053` | *se decide el dia de la insercion, que es cuando el corte vuelve a ser barato* |
+| `d056` | *SE COBRA EL DIA DE LA INSERCION, que es donde `D.58` pone la relectura entera* |
+| `d005` | *esos `6` se reparan antes de insertarse*, y **el encargo repite que no es antes de minar** |
+| `d006` | es relectura de `154` pasos de un capitulo de otro libro, y **hoy no se relee un libro que no se mina** |
+
+**`d009`, `d022`, `d029` y `d030` son las cuatro de `scripts/`**, las cuatro de la misma familia (la
+tabla de cierre y el tallado). **Tampoco las toco, y el motivo lo firma la `ACTA 52` `1.A` al
+adjudicar la parada:** *`D.45` veda `tests/` y `scripts/` a toda sesion, asi que ninguna vuelta puede
+arreglarlo.* **Esa lectura la hizo el auditor y no yo**, y la unica que se la salto fue **la decision
+del fundador del 20 sep**, arreglando el fixture ella misma (`ab99b4f`). **Si la veda se levanta,
+esas cuatro son el lote que cae junto**, y lo dejo propuesto (`EXTRACTOR.md` 14: propongo, no me
+adjudico).
+
+> **NO ME ESCUDO EN LA VEDA PARA NO MEDIR.** Las que no puedo arreglar **si** las puedo medir, y dos
+> de ellas se pagan hoy **justo porque su ask era medir y no arreglar.**
+
+### PP.2.b. **`d047` PAGADA: LA CITA QUE NOMBRABA `HEAD` PASA A NOMBRAR SU COMMIT**
+
+> **CORRECCION DECLARADA DE LA VUELTA 54, SIN BORRAR UNA SOLA LINEA DE `LL.5.c`** (manual principio
+> `6`): **donde `LL.5.c` cita `git show HEAD:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin`,
+> tiene que leerse `git show 55cd182:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin`.** El
+> sello **no cambia** y la tabla **no se toca**: lo defectuoso era la referencia movil.
+
+<!-- TALLADO: parcial salida=.v54/d047_seis_commits.txt -->
+
+    LOS SEIS COMMITS QUE LA PROPIA d047 NOMBRA, CORRIDOS HOY UNO A UNO:
+      git show 0ab7b6c:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin  ->  f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+      git show e66b88b:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin  ->  f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+      git show e740b2f:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin  ->  f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+      git show f717235:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin  ->  f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+      git show adb5c9d:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin  ->  f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+      git show 55cd182:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin  ->  f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+
+    Y LA FORMA CON HEAD, TRES VALORES DISTINTOS EN TRES DIAS:
+      vuelta 50, cuando se escribio LL.5.c : f33c8d9c
+      vuelta 51, cuando d047 se anoto      : 3b39a3fd
+      vuelta 54, corrida por mi hoy        : 4e3e2fb3
+
+**LA DEUDA SE DEMUESTRA A SI MISMA POR TERCERA VEZ.** `d047` registro **dos** valores; hoy sale un
+**tercero**. **Tres dias, tres respuestas al mismo comando**, y el fichero que el comando describe no
+ha cambiado ni un byte: la copia archivada sigue en `f33c8d9c` (`.v54/d047_sello.txt`). **Eso no
+refuta la deuda: es su prueba.**
+
+### PP.2.c. **`d033` PAGADA: LA TASA QUE PEDIA, MEDIDA, Y LO QUE LA TASA NO DICE**
+
+**`d033` no pedia arreglar la prueba: pedia su tasa**, y lo escribe: *sin tasa medida no se sabe si
+es una corrida intermitente o un fallo real*, y ademas *medir no es tocar `tests/`*. **Cero ficheros
+de `tests/` tocados hoy.**
+
+<!-- TALLADO: parcial script=.v54/d033_tasa.py salida=.v54/d033_resumen.txt -->
+
+    $ python .v54/d033_tasa.py
+    d033: test_e_guion_largo_rompe_el_hook, tasa medida HOY
+      arbol de hoy: el de la vuelta 54, con ab9 ya dentro (fixture de D.58 arreglado)
+      ROJO de las corridas de hoy            : 0
+        numerador   0  corridas que salieron ROJO
+        denominador 12  corridas lanzadas hoy sobre el mismo arbol
+      tasa de ROJO de hoy                    : 0.0 por ciento
+      segundos por corrida                   : 19.0 s
+        numerador   228  suma de segundos de esas corridas
+        denominador 12  corridas lanzadas hoy
+
+      LA TANDA DE LA ACTA 47, QUE ES DE OTRO ARBOL Y NO SE SUMA A ESTA:
+        1 ROJO de 6 corridas, sobre el arbol de la vuelta 48 (cita: d033)
+        NO se promedia con la de hoy: el arbol cambio en medio (ab99b4f).
+
+**LO QUE LA TASA SOSTIENE:** **no es un fallo real.** Un fallo real habria dado `6` de `6` ROJO en la
+tanda de la `ACTA 47` y dio `1` de `6`; hoy da `0` de `12`. **Es intermitente.**
+
+**LO QUE LA TASA NO SOSTIENE, Y LO DIGO YO ANTES DE QUE ME LO DIGAN:** **`0` de `12` no acota la
+frecuencia por abajo.** Es compatible con cualquier tasa menor que una de cada doce, **asi que esto
+no promete que no vuelva a salir ROJO.** **Y las dos tandas no se promedian**: el arbol cambio en
+medio, y sumar `1` de `6` con `0` de `12` seria fabricar un `1` de `18` que ningun arbol sostiene.
+**Va marcado como discutible en `PP.5`.**
+
+### PP.2.d. **LAS DOS QUE SE PAGAN EN OTRA TAREA, NOMBRADAS AQUI PARA QUE EL LIBRO MAYOR CUADRE**
+
+| deuda | donde se paga | por que alli y no aqui |
+|---|---|---|
+| `d007` | **`PP.4`** | su ask es *la `11` se clasifica con un ejemplar delante en la vuelta de saneamiento que toque*, y el ejemplar ocupa una tarea entera |
+| `d024` | **`PP.3`** | su ask es correr la aduana en seco sobre los `7` de `cap_02`, y eso se mide con `d005` en el mismo acto |
+
+### PP.2.e. **`d011` Y `d012`: LAS MIDO, NO LAS CIERRO, Y DIGO POR QUE**
+
+**Las dos parecen pagables y las dos las dejo abiertas a proposito**, porque cerrarlas seria
+**adjudicarme a mi mismo** algo que no es mi sede (`EXTRACTOR.md` 14).
+
+**`d011` pide que TODO TECHO QUE EL AUDITOR ESCRIBA LLEVE SU MITAD EN MINUTOS.** Medido: **se viene
+cumpliendo**, y el ejemplar mas limpio es el encargo de la vuelta `53`, citado en mi propio esqueleto
+de `OO.3`: *techo de `30` candidatos o `90` minutos de reloj de aduana, lo que llegue antes.* **Pero
+el encargo de HOY cambia la unidad**: su techo es **`turno por debajo de 5 USD`**, que no son
+minutos.
+
+> **ESO PUEDE SER UNA MEJORA Y PUEDE SER UNA REGRESION, Y NO ME TOCA A MI DECIDIRLO.** El dolar mide
+> el recurso que de verdad ata, y el minuto es el que `d011` nombra. **Cambiar la unidad de un techo
+> es doctrina**, `D.56` la tiene congelada, y **la sede de `d011` es el encargo, que es del auditor.**
+> **Queda medida y abierta.**
+
+**`d012` registra el segundo ejemplar de la pregunta `9`**, y **la pregunta `9` YA ESTA RESUELTA** en
+`config/frentes.json` por decision del fundador del 17 sep: *NO PUEDE. El arnes no abre el turno del
+auditor mientras el extractor de su misma linea tenga proceso vivo.* **Y el ejemplar de `d012` es del
+18 sep, o sea POSTERIOR a la decision.**
+
+<!-- TALLADO: parcial salida=.v54/d012_fase_ciega.txt -->
+
+    $ grep -n "apertura ciega" docs/loop/loop.log | tail -4
+    3816:[2026-09-19 20:09:15]   apertura ciega sellada: d03049c16d4536c2d9e1f5dc45f9453566d67fe0
+    3975:[2026-09-19 20:49:18]   sello de la apertura ciega verificado: intacto tras el turno
+    4006:[2026-09-19 23:12:34]   apertura ciega sellada: 7167f0bc1afe9743ebe11249c75470612f20c145
+    4170:[2026-09-19 23:44:54]   sello de la apertura ciega verificado: intacto tras el turno
+
+    $ grep -n "MODO_INSERCION" docs/loop/loop.log | tail -2
+    2632:[2026-09-19 00:12:29] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+    4173:[2026-09-20 12:08:04] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+
+**LA FASE CIEGA NO HA VUELTO A ABRIRSE EN ESTA CORRIDA, Y NO PORQUE EL ARNES SE CONTENGA: PORQUE
+`D.58` LA QUITO DEL REGIMEN LIGERO.** La ultima del log es de las `23:12:34` de ayer, **con
+`MODO_INSERCION=insertar`**; la corrida de hoy arranca en `cuarentena` y no tiene ninguna.
+
+> **POR QUE NO LA CIERRO, Y ES LA MISMA RAZON QUE `d011`:** que la condicion **no pueda darse hoy**
+> no es lo mismo que **este arreglada**. En cuanto una vuelta vuelva a `MODO_INSERCION=insertar`, la
+> fase ciega vuelve y la pregunta `9` vuelve a tener superficie. **Cerrarla hoy seria cobrarse un
+> arreglo que lo unico que hizo fue cambiar de regimen.** Medida, y abierta.
+
+## PP.4. **LA PREGUNTA `11`, CLASIFICADA CON UN EJEMPLAR DELANTE**, y `d058` releida sobre la bandeja entera
+
+### PP.4.a. **EL EJEMPLAR ESTA VIVO, Y ESO NO ES LO QUE YO ESPERABA ENCONTRAR**
+
+**La pregunta `11` nombra un ejemplar: los dos `U+0008` que la vuelta `39` metio dentro de
+`pedir_critica_primero_crear_seguridad_psicologica.resumen_teorico`.** El docstring de
+`scripts/deuda.py` registra que la vuelta `40` los dio por corregidos:
+
+    V.40  TAREA 1.A CERRADA: los dos U+0008 corregidos        (0 nodos)
+
+**No lo doy por bueno y lo barro** (`EXTRACTOR.md` 4: si no hay linea que citar, la afirmacion no se
+escribe). **Siguen ahi, los dos, y ademas en dos sedes.**
+
+<!-- TALLADO: parcial script=.v54/p11_control.py salida=.v54/p11_control.txt -->
+
+    $ python .v54/p11_control.py
+    BARRIDO DE CARACTERES DE CONTROL (pregunta 11 de la cola de doctrina)
+      nodos del grafo barridos              : 346  (lineas de dataset\nodos.jsonl)
+      fichas de cuarentena barridas         : 575  (ficheros .json bajo cuarentena/)
+      caracteres de control ENCONTRADOS     : 4
+        numerador   4  cadenas con un caracter de control dentro
+        denominador 921  documentos barridos (nodos del grafo mas fichas de cuarentena)
+        dataset\nodos.jsonl:pedir_critica_primero_crear_seguridad_psicologica  campo .resumen_teorico  posicion 5162  U+0008
+        dataset\nodos.jsonl:pedir_critica_primero_crear_seguridad_psicologica  campo .resumen_teorico  posicion 5166  U+0008
+        cuarentena\_insertados\scott_radical_candor\pedir_critica_primero_crear_seguridad_psicologica.json  campo .resumen_teorico  posicion 5162  U+0008
+        cuarentena\_insertados\scott_radical_candor\pedir_critica_primero_crear_seguridad_psicologica.json  campo .resumen_teorico  posicion 5166  U+0008
+
+**`4` de `921` documentos, y son `2` defectos copiados en `2` sedes.** El barrido cubre el grafo
+entero y toda la cuarentena, asi que **la cuenta de arriba es la poblacion completa y no una
+muestra.**
+
+> **LO QUE LA VUELTA `40` HIZO NO FUE QUITARLOS: FUE DECLARARLOS.** Y lo hizo bien, porque la
+> correccion por anexion es lo unico que el manual principio `6` le dejaba hacer. **La linea del
+> docstring que dice *corregidos* es la que se queda corta**, no el trabajo de aquella vuelta.
+
+### PP.4.b. **QUE ES EL DEFECTO, EXACTAMENTE, LEIDO Y NO PARAFRASEADO**
+
+<!-- TALLADO: parcial script=.v54/p11_contexto.py salida=.v54/p11_contexto.txt -->
+
+    LOS CARACTERES ALREDEDOR, con el U+0008 escrito como <U+0008>:
+    onl contra 1 de ceo, y SON 39 CONTRA 0. grep -o -i 'consejero delegado' dataset/nodos.jsonl |
+    wc -l da 39, y grep -o -iE '<U+0008>ceo<U+0008>' dataset/nodos.jsonl | wc -l da 0, corridos
+    hoy sobre los 321 nodos del arbol e3950c6.
+
+**EL DEFECTO TIENE NOMBRE TECNICO Y ES PRECISO: donde el comando tenia que decir `\bceo\b`, dice
+`<BS>ceo<BS>`.** La barra invertida mas `b` es el limite de palabra de la expresion regular; al pasar
+por un escape de Python se convirtio en el caracter `U+0008`, que es justo lo que `\b` significa
+cuando no esta dentro de una expresion regular. **No es basura aleatoria: es una barra invertida que
+se comio a si misma.**
+
+**Y ESA ES LA SUSTANCIA DEL DANO: EL COMANDO QUE EL CAMPO PUBLICA COMO PRUEBA YA NO SE PUEDE CORRER
+COMO ESTA ESCRITO.** La cifra que sostiene (`39` contra `0`) **es cierta**, y la propia correccion de
+la vuelta `40` lo dice: *LA CIFRA NO SE TOCA*. **Lo que se perdio no es la cifra: es la posibilidad
+de recontarla.**
+
+### PP.4.c. **LA MEDICION QUE DECIDE LA CLASIFICACION: HASTA DONDE LLEGA EL DANO**
+
+**Antes de clasificar, mido que toca el defecto**, con la misma funcion que usa la aduana:
+
+<!-- TALLADO: parcial script=.v54/p11_senal.py salida=.v54/p11_senal.txt -->
+
+    $ python .v54/p11_senal.py
+    EL EJEMPLAR: pedir_critica_primero_crear_seguridad_psicologica
+      U+0008 en el texto CRUDO (titulo+resumen+pasos) : 2
+      U+0008 en texto_comparable, la del aduana        : 0
+      largo crudo 12519, largo comparable 12208
+
+      Y LA HUELLA DE D.15, que es la que dice si una lectura sigue viva:
+        huella_de_nodo : d228fe61d4d02678
+        la misma huella SIN los dos controles : d228fe61d4d02678
+        cambia la huella al quitarlos? NO
+
+**TRES COSAS SALEN DE AHI, Y LAS TRES IMPORTAN:**
+
+| | |
+|---|---|
+| **la senial `1` NO los ve** | `texto_comparable` los deja fuera al normalizar: `2` en el crudo, `0` en el comparable |
+| **la huella de `D.15` NO cambia** | `d228fe61d4d02678` con ellos y sin ellos. **Ninguna lectura emitida, ningun veredicto y ningun bloque de vigencia depende de esos dos caracteres** |
+| **el `gate` NO los ve** | corrio VERDE hoy sobre los `346` nodos **con los dos vivos dentro** (`PP.0.b`). No es que la guarda falle: es que mide otra cosa |
+
+### PP.4.d. **LA CLASIFICACION, Y LA DOY COMO PROPUESTA PORQUE NO ES MI SEDE** (`EXTRACTOR.md` 14)
+
+**LA RESPUESTA A LA PRIMERA MITAD DE LA PREGUNTA `11` ES QUE SI EXISTE, PERO NO ES UNA ESPECIE NUEVA
+DE DANO: ES UNA ESPECIE VIEJA EN UNA SEDE QUE LA TABLA NO LE DA.**
+
+**La especie vieja ya esta escrita**, en `AUDITOR_FORJA.md` `5.5`, clausula tercera de la cosecha:
+
+> **LA RUTA QUE PROMETE PRUEBA ES CIFRA** (cosecha 7.B). Una ruta publicada como evidencia de una
+> corrida **cuenta como CIFRA PUBLICADA en su sede.**
+
+**UN COMANDO PUBLICADO COMO PRUEBA ES LA MISMA FIGURA QUE UNA RUTA PUBLICADA COMO PRUEBA.** Los dos
+prometen que alguien puede volver a correr aquello y obtener aquello. La ruta cae cuando apunta a un
+fichero que no esta; **el comando cae cuando ya no se puede teclear.** El dano es identico: **la
+cifra se queda sin quien la reconte.**
+
+**ASI QUE EL HUECO NO ESTA EN LA LISTA DE ESPECIES: ESTA EN DOS SITIOS, Y LOS DOS SON DE UNA LINEA.**
+
+| donde | que dice hoy | que le falta |
+|---|---|---|
+| la tabla de `5.2`, columna *donde vive* de **CIFRA PUBLICADA** | `docs/`, `config/`, `esquema/`, y el codigo o docstring de una guarda de `src/` | **`dataset/` no esta**, y el ejemplar vive ahi. La tabla solo da `dataset/` a **CLASE**, que es *un veredicto mal puesto* |
+| la clausula de `5.5` | **LA RUTA** que promete prueba es cifra | **EL COMANDO** que promete prueba, que es la misma figura y no esta nombrada |
+
+> ### **Y LA PRUEBA DE QUE HACE FALTA NOMBRARLO ES LA MEDICION DE `PP.4.c`, NO MI ARGUMENTO**
+>
+> **Este defecto es invisible para todo instrumento de la casa, y no por descuido: por
+> construccion.** `normalizar_texto` lo tira, la huella no lo nota, el `gate` no lo mira. **Un
+> defecto que ninguna guarda puede encontrar es exactamente el que necesita tener nombre**, porque
+> **es el unico que nadie va a tropezarse**: a los demas te los encuentras corriendo algo.
+
+### PP.4.e. **LAS CUATRO GUARDAS DE `deuda.py`, Y LA RESPUESTA ES QUE NINGUNA PUEDE CARGARLO**
+
+**El encargo lo pone asi: *si existe una tercera especie de defecto de dato, las cuatro guardas de
+`deuda.py` tienen que saber su nombre*.** Las cuatro estan escritas en `scripts/deuda.py` linea `55`:
+
+<!-- TALLADO: parcial salida=.v54/guardas_de_dato.txt -->
+
+    $ grep -n "GUARDAS_DE_DATO" scripts/deuda.py
+    55:GUARDAS_DE_DATO = ("gate", "cerrojo", "censo_no_decrece", "fidelidad")
+
+**Las repaso una a una contra el ejemplar, y ninguna lo carga:**
+
+| guarda | que mide | ve el ejemplar |
+|---|---|---|
+| `gate` | las `13` guardas de esquema, id, fuentes y aristas | **NO.** Corrio VERDE hoy con los dos vivos dentro |
+| `cerrojo` | que dos inserciones no se pisen | **NO.** Es de concurrencia, no de contenido |
+| `censo_no_decrece` | que el censo no baje | **NO.** Cuenta, no lee |
+| `fidelidad` `D.30` | PUENTE en los **pasos** contra el libro | **NO.** El defecto esta en `resumen_teorico`, y `D.30` cuenta pasos, como `d027` ya adjudico |
+
+> ## **MI PROPUESTA, EN UNA LINEA: NO ES UNA QUINTA GUARDA DE DATO, Y NO DEBE SERLO.**
+>
+> **Las cuatro de `deuda.py` son las que BLOQUEAN EN EL ACTO porque su rojo es averia.** Este defecto
+> **no es averia**: no mueve un veredicto, no mueve una cifra, no mueve la huella y no mueve el
+> grafo. **Meterlo ahi pararia el bucle por dos caracteres que no danan ni un dato**, y eso es
+> exactamente lo que `5.2` evito el 13 ago 2026 al separar las especies: *lo que la regla del credito
+> quiere cazar es un veredicto mal puesto, no una etiqueta mal escrita.*
+>
+> **EL SITIO QUE LE CORRESPONDE ES `D.42`, EL CENSO DE RUTAS**, que ya hace exactamente esto para
+> rutas: mira, en cada commit, toda ruta que se ofrezca como origen de un numero y comprueba que
+> sostiene lo que dice sostener. **Extenderlo de RUTA a COMANDO CITADO no es un instrumento nuevo:
+> es la misma unidad, la CELDA, mirando la otra mitad de la misma promesa.**
+>
+> **Y ES BARATO DE COMPROBAR:** mi barrido entero cuesta un `walk` sobre `921` documentos y tarda lo
+> que tarda leerlos. **No hace falta correr el comando: basta con que no lleve dentro un caracter que
+> nadie puede teclear.**
+
+### PP.4.f. **LA SEGUNDA MITAD DE LA PREGUNTA `11`: SE PUEDE RETIRAR UN CARACTER DE CONTROL YA ESCRITO?**
+
+**La pregunta la plantea bien y yo no la resuelvo, pero la mido, que es lo que faltaba.** Lo que
+faltaba era saber **si quitarlos rompe algo**, y la respuesta esta en `PP.4.c`:
+
+> **LA HUELLA `huella_de_nodo` ES `d228fe61d4d02678` CON ELLOS Y SIN ELLOS.**
+
+**Eso contesta la unica objecion tecnica que tenia peso.** `D.15` usa esa huella para saber si una
+lectura sigue emitida contra el texto que leyo; si quitarlos la moviera, **retirarlos invalidaria
+lecturas** y habria que elegir entre dos danos. **No la mueve.** Retirarlos **no invalida ni una
+lectura, ni un veredicto, ni un bloque de vigencia**, y esta medido y no supuesto.
+
+**LO QUE SIGUE SIN RESOLVERSE, Y LO DEJO ABIERTO PORQUE NO ES MIO:**
+
+1. **`forja.py corregir` corrige por anexion, y por anexion no se quita nada.** Retirar pide **otra
+   operacion**, y `EXTRACTOR.md` 13 veda el instrumento nuevo salvo caida de DATO con su cita.
+2. **Y hay una segunda sede:** la copia de `cuarentena/_insertados/scott_radical_candor/`. Retirar de
+   una y no de la otra **fabrica una discrepancia donde hoy hay una copia fiel.**
+
+> **NO LO ARREGLO Y NO PROPONGO ARREGLARLO HOY.** `D.56` congela la doctrina, el encargo repite
+> *registrala con su medida y dejala ahi*, y esta vuelta **no escribe en `dataset/`**. **Queda
+> clasificada, medida, y con la objecion tecnica retirada por medicion.**
+
+### PP.4.g. **`d007` PAGADA, Y SOLO SU MITAD EJECUTABLE**
+
+**`d007` dice dos cosas y solo una es una accion.** *La cola de doctrina queda congelada en `11`
+preguntas y no crece hasta que el mundo `11` cierre* **es un estado, no una tarea**, y lo sostiene
+`D.56`, no este pago. *La `11` se clasifica con un ejemplar delante en la vuelta de saneamiento que
+toque* **es la accion, y es esta vuelta.** La pago por esa mitad y **digo que la congelacion sigue
+en pie**: pagar la deuda no descongela nada, y **`config/frentes.json` no se toca** (el encargo:
+*se leen, no se editan*).
+
+### PP.4.h. **`d058` RELEIDA: LA BANDA ES MAS ANCHA QUE LA QUE PUBLIQUE, POR LOS DOS LADOS**
+
+**El encargo manda releerla porque *mide algo que se cobrara el dia de la insercion*.** La releo
+**sobre la bandeja entera de `65`**, y no sobre los `5` con que nacio ni sobre los `9` que el auditor
+remidio: **es la poblacion que de verdad entra el dia de la insercion.**
+
+<!-- TALLADO: parcial script=.v54/d058_peso_resumen.py salida=.v54/d058_peso_resumen.txt -->
+
+    $ python .v54/d058_peso_resumen.py
+      carpeta                               : cuarentena/grove_high_output
+      fichas medidas                        : 65
+      funcion usada                         : src.comun.texto_comparable
+
+      EL PESO DEL RESUMEN SOBRE LA BANDEJA ENTERA : 83.2 por ciento
+        numerador     372840  caracteres normalizados de resumen_teorico, sumados
+        denominador   448080  caracteres normalizados de texto_comparable, sumados
+      EL PESO DE LOS PASOS SOBRE LA BANDEJA ENTERA: 15.0 por ciento
+        numerador      67112  caracteres normalizados de pasos_accionables, sumados
+        denominador   448080  caracteres normalizados de texto_comparable, sumados
+
+      LA BANDA, que es lo que d058 publica (minimo y maximo, no media):
+        menor % de resumen : 54.8  (equilibrar_capacidad_personal_inventario_plazo)
+        mayor % de resumen : 96.2  (usar_tres_clases_reunion_proceso)
+
+**LAS TRES POBLACIONES, CADA UNA CON LA SUYA, Y NO SE MEZCLAN** (`EXTRACTOR.md` 5: la discrepancia se
+declara, no se resuelve copiando):
+
+| quien | poblacion | banda |
+|---|---:|---|
+| `d058`, vuelta `53` | los `5` mas cortos de aquella tanda | `70,3` a `83,1` |
+| `ACTA 52` `52.7` | las `9` de aquella tanda | `70,3` a `83,1` |
+| **esta vuelta** | **las `65` de la bandeja** | **`54,8` a `96,2`** |
+
+> **NO HAY DISCREPANCIA ENTRE LAS TRES: HAY TRES POBLACIONES.** Las `9` del auditor estan dentro de
+> mis `65` y me salen donde el las dejo. **Lo que cambia es que la bandeja entera llega mas arriba y
+> mas abajo**, y **el mas arriba es el que importa**: `usar_tres_clases_reunion_proceso` mide
+> **`96,2` por ciento de resumen y `2,3` por ciento de pasos**. En esa ficha, **la senial `1`
+> practicamente no compara procedimiento.**
+
+**`d058` NO SE DEBILITA CON ESTO: SE ENSANCHA.** El peso agregado de la bandeja entera es
+**`83,2` por ciento**, o sea que **el techo que `d058` publico como caso extremo es, sobre las `65`,
+el caso medio.**

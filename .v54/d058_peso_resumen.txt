@@ -1,0 +1,83 @@
+$ python .v54/d058_peso_resumen.py
+d058 RELEIDA: peso del resumen_teorico en el texto que compara la senial 1
+  carpeta                               : cuarentena/grove_high_output
+  fichas medidas                        : 65
+  funcion usada                         : src.comun.texto_comparable
+
+  id                                                         total  % resu % pasos
+  usar_tres_clases_reunion_proceso                            9178    96.2     2.3
+  programar_reunion_individual_cadena                        14587    95.5     3.7
+  conducir_reunion_individual_telefono_distancia             13232    95.4     3.5
+  acumular_asuntos_importantes_fichero_espera                11147    94.3     4.4
+  cubrir_indicadores_problemas_reunion_individual            17077    93.1     5.8
+  alentar_asuntos_corazon_vigilar_final_reunion              13101    93.0     5.7
+  facilitar_expresion_subordinado_pregunta_mas               12094    92.9     5.8
+  preparar_guion_reunion_individual_subordinado              12845    91.9     6.9
+  tomar_notas_copia_guion_reunion_individual                 12125    91.0     7.6
+  preparar_respuestas_estandar_interrupciones_repetidas       8879    90.3     7.7
+  subir_productividad_gerencial_tres_vias                     4535    90.2     7.5
+  fijar_duracion_lugar_reunion_individual                    12366    89.9     9.0
+  agrupar_interrupciones_subordinados_reuniones_regulares     7140    89.7     7.9
+  infundir_regularidad_reunion_proceso                        9336    89.5     8.9
+  fijar_frecuencia_reunion_individual_madurez_tarea          13067    88.8     9.9
+  transmitir_objetivos_prioridades_preferencias               5652    87.4    10.6
+  clasificar_trabajo_proceso_montaje_prueba                   9274    87.3    11.7
+  variar_frecuencia_inspeccion_nivel_calidad                  6592    86.4    12.0
+  canalizar_interrupciones_cartel_hora_oficina                8711    85.8    12.5
+  llevar_inventario_proyectos_discrecionales                  6087    85.7    11.4
+  dimensionar_numero_subordinados_medio_dia_semanal          15444    85.7    13.2
+  identificar_paso_limitante_jornada_desfases                 4637    85.3    11.8
+  buscar_actividad_alta_palanca_tres_vias                     4650    85.0    12.2
+  archivar_indicadores_resolver_problemas                     3358    85.0    12.4
+  empujar_persona_reunion_direccion_preferida                 5189    83.7    14.1
+  buscar_regularidad_bloques_iguales_trabajo_mando            9338    83.2    15.0
+  supervisar_decision_delegada_preguntas_concretas            4083    82.8    14.2
+  usar_calendario_herramienta_planificacion_produccion        7050    82.6    15.8
+  agrupar_tareas_semejantes_aprovechar_preparacion            5121    82.0    16.1
+  escalonar_fuentes_informacion_gerencial                     5779    81.2    16.9
+  construir_indicador_tendencia_patron                        3805    81.2    16.2
+  simplificar_trabajo_reducir_numero_pasos                    4590    80.7    16.7
+  anunciar_decision_inesperada_reconvocar_reunion             3466    80.6    15.8
+  reunir_informacion_gerencial_vias_variadas                  5238    80.6    17.4
+  elegir_momento_actividad_palanca_maxima                     5870    80.6    17.1
+  zanjar_seis_preguntas_decision_adelantado                   4381    80.3    16.3
+  planificar_tres_pasos_demanda_estado_brecha                 4186    79.2    17.7
+  construir_grafico_escalonado_pronosticos                    5119    78.5    19.6
+  programar_visita_area_observar_despachar                    5714    77.9    20.0
+  vencer_sindrome_grupo_pares_autoconfianza                   3237    77.7    18.4
+  decir_no_trabajo_excede_capacidad                           7035    77.5    20.4
+  tomar_mando_reunion_pares_presidente_ausente                3690    77.5    18.8
+  emparejar_indicadores_efecto_contraefecto                   4509    77.2    20.8
+  rehacer_flujo_paso_limitante_capacidad                      3973    76.8    21.2
+  dimensionar_plantilla_administrativa_pronostico             4490    76.1    21.6
+  cortar_discusion_libre_momento_justo                        3825    75.1    21.8
+  preferir_inspeccion_proceso_prueba_destructiva              3956    73.8    24.1
+  supervisar_tarea_delegada_etapa_menor_valor                 6182    73.5    23.9
+  construir_flujo_produccion_paso_limitante                   7293    73.4    25.2
+  decidir_nivel_competente_inferior                           4438    72.6    24.6
+  ejercer_poder_posicion_etapa_decision_clara                 4525    72.4    25.2
+  decidir_aceptar_rechazar_material_defectuoso                5620    72.4    25.4
+  elegir_indicador_salida_trabajo_administrativo              5260    71.7    26.1
+  delegar_tarea_base_comun_seguimiento                        7045    71.4    26.6
+  construir_indicador_linealidad_alerta_temprana              5758    71.0    26.9
+  representar_actividad_caja_negra_ventanas                   5411    70.9    27.3
+  elegir_cinco_indicadores_diarios_fabrica                    5274    70.2    28.3
+  elegir_fabricar_pedido_pronostico                           5529    68.7    29.2
+  detectar_palanca_negativa_actividad_mando                   7098    68.7    29.5
+  conducir_etapas_modelo_ideal_decision                       6138    68.6    29.6
+  dimensionar_inventario_materia_prima_reposicion             3351    67.4    29.6
+  elegir_inspeccion_barrera_monitorizacion                    6631    67.2    31.2
+  casar_flujo_fabricacion_flujo_ventas                        6685    67.0    31.4
+  detectar_arreglar_fallo_etapa_menor_valor                   3598    63.9    34.2
+  equilibrar_capacidad_personal_inventario_plazo              3486    54.8    42.7
+
+  EL PESO DEL RESUMEN SOBRE LA BANDEJA ENTERA : 83.2 por ciento
+    numerador     372840  caracteres normalizados de resumen_teorico, sumados
+    denominador   448080  caracteres normalizados de texto_comparable, sumados
+  EL PESO DE LOS PASOS SOBRE LA BANDEJA ENTERA: 15.0 por ciento
+    numerador      67112  caracteres normalizados de pasos_accionables, sumados
+    denominador   448080  caracteres normalizados de texto_comparable, sumados
+
+  LA BANDA, que es lo que d058 publica (minimo y maximo, no media):
+    menor % de resumen : 54.8  (equilibrar_capacidad_personal_inventario_plazo)
+    mayor % de resumen : 96.2  (usar_tres_clases_reunion_proceso)
