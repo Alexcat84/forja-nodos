@@ -50612,3 +50612,389 @@ sostuvieron los `13` y ninguno era una cifra: por eso esta vez `4` de los `16` s
 | 3 | `d051`: el digito de senial sale del texto del que la senial se calcula, en las seis fichas de la vuelta 51 y en las seis de hoy | **CERRADA en `NN.3`, `d051` PAGADA**: `9` digitos reencuadrados sin borrar ninguno, con su informe nombrado ficha a ficha, las seis nuevas escritas ya sin digito dentro, y la comprobacion posterior publicada aunque suba de `0,550` a `0,630`, con el motivo medido en la propia salida. Cero pasadas de aduana, comprobado por asercion y contra `b04ac62` |
 | 4 | `d052`: la frontera que ninguna senial va a levantar, escrita dentro de la ficha con las dos posiciones y sus fuentes | **CERRADA en `NN.4`, `d052` PAGADA**: las dos posiciones impresas de sus ficheros, la contradiccion escrita sin suavizarla, `0,1125` contra el umbral de `0,35` y contra los `0,5501` y `0,5298` de dos hermanos, la ficha pasando de nombrar `0` veces a ese vecino a nombrarlo `1`, y ni el grafo ni la bitacora tocados |
 | 5 | el cierre: las cinco guardas, la tabla `D.52` con su sello por COMMIT, el estado recomputado, `PASOS INVENTADOS` por capitulo, el tramo con su reloj y la deuda | **CERRADA en `NN.5` CON UNA PARADA DECLARADA**: `gate`, `guiones`, tallado y censo en verde, y **la prueba de aceptacion en ROJO con `1` fallo de `329` que llego en el commit `9ec9b3c` durante mi turno y que `D.45` me prohibe arreglar**. Estado al digito (`346`, `740`, `1`, `56`), colision de `D.52` sellada por `hash-object` por octava vez y citada por su COMMIT `b04ac62`, `PASOS INVENTADOS` de `cap_05` de `0` de `49` a `0` de `84`, media por pasada `731,2` s sobre `6` de `6`, techo de minutos roto al `104,5` por ciento por el coste del instrumento, deuda de `19` a `17`, y `16` discutibles marcados de los que `4` son cifras mias |
+
+---
+
+# VUELTA 53 DE LA LINEA SERIAL, `extraccion-mundo-11`: **REGIMEN LIGERO SOBRE `cap_06`, `cap_07` Y `cap_08` DE `grove_high_output`**, con la frontera publicada antes de cortar y el techo de minutos por delante
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor en la `ACTA 51`. Modo austero
+(`D.47`): no repito lo que el registro ya dice.*
+
+> **ESQUELETO ABIERTO AL EMPEZAR, CON LAS FILAS DE ESTADO VACIAS** (`EXTRACTOR.md` 3). Cada tarea
+> anexa su fila al cerrarse, y la columna de estado se rellena entonces, no al abrir.
+
+| tarea | que pide | estado |
+|---|---|---|
+| `OO.1` | los registros de la `ACTA 51` recogidos sin reabrirlos, la caida de `REPORTE` que sube a `2 de 3` con su remedio de una linea, y las dos deudas nuevas recogidas y no pagadas | |
+| `OO.2` | la frontera de `cap_06`, `cap_07` y `cap_08` publicada ANTES de cortar nada, cerrada contra el cuerpo al digito, cero lineas sin cubrir y cero solapes, y **cada fila con los nodos que preve** | |
+| `OO.3` | minar en el orden del libro, un candidato por vez, con su aduana en el mismo acto, **techo de `30` candidatos o `90` minutos de reloj de aduana, lo que llegue antes**. **Cero inserciones** | |
+| `OO.4` | la fidelidad `D.30` por muestra, con la semilla `v53` escrita y la salida del instrumento pegada, y `PASOS INVENTADOS` por capitulo | |
+| `OO.5` | el cierre: las guardas, la tabla `D.52`, el estado recomputado al cierre, la linea del tramo con su reloj y los discutibles marcados | |
+
+**CINCO TAREAS, EN EL TOPE DE CINCO** (`EXTRACTOR.md` 3). Cero cola declarada al abrir.
+
+## OO.0. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
+
+**Lo pendiente commiteado y pusheado antes de tocar nada** (`EXTRACTOR.md` 1.1). Ese commit llevaba
+**los cuatro ficheros del arnes** (`TABLERO.jsonl`, `loop.log`, `ultimo_auditor.json`,
+`ultimo_extractor.json`), **ninguno mio**, asi que el estado que sigue es intermedio y se cita con el
+nombre de la operacion que ya lo movio.
+
+<!-- TALLADO: parcial salida=.v53/apertura_estado.txt -->
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-mundo-11
+    $ git log -1 --format="%h %ad %s" --date=iso
+    55dbb5e 2026-09-19 20:50:00 -0400 Apertura ciega de la vuelta 53, sellada antes de exponer el reporte
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+       1087 total
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    56
+    $ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+    1
+
+**ESTA VUELTA TAMPOCO TRAE SALDO DE LOTE, Y LO DIGO EN VEZ DE INVENTARLO** (`EXTRACTOR.md` 12,
+`D.43`). El propio arnes lo dejo escrito en su registro antes de darme el turno.
+
+<!-- TALLADO: parcial salida=.v53/informe_de_lote.txt -->
+
+    $ ls docs/loop/INFORME_DE_LOTE.txt
+    ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+
+### OO.0.a. **LA PUERTA DE `D.39`, MEDIDA POR MI Y NO HEREDADA DEL ENCARGO**
+
+**La corrida me llega con la insercion abierta** (`MODO_INSERCION=insertar`, el default desde `D.39`)
+**y aun asi hoy no entra ni un nodo**, porque la condicion de `D.39` no es que la puerta este abierta:
+es **lote CERRADO en extraccion con su informe certificado por el acta**. Las dos mitades las mido yo.
+
+<!-- TALLADO: parcial script=.v48/puerta.py salida=.v53/puerta_d39.txt -->
+
+    $ python .v48/puerta.py   sobre config/frentes.json
+    cerrados_en_extraccion : {'smart_who': {'cita': 'ACTA 8 seccion 10'}, 'zhuo_manager': {'cita': 'ACTA 13 seccion 8.1'}, 'scott_radical_candor': {'cita': 'ACTA 24'}}
+    grove_high_output CERRADO EN EXTRACCION: False
+
+<!-- TALLADO: parcial salida=.v53/capitulos_lote7.txt -->
+
+    $ ls fuentes/grove_high_output/cap_*.md | wc -l
+    18
+
+**NOVENA VUELTA SEGUIDA CON LA PUERTA MEDIDA CERRADA PARA ESTE LIBRO**, y la segunda mitad sale
+igual de en contra: **`18` capitulos, y `cap_08` seria el septimo que se mina**. Ni cerrando los tres
+de hoy cerraria el lote `7`. **Meter un candidato hoy seria caida de dato, no un adelanto.**
+
+### OO.0.b. **LAS GUARDAS DE DATO AL ABRIR, CORRIDAS POR MI**
+
+<!-- TALLADO: parcial salida=.v53/apertura_gate.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+<!-- TALLADO: parcial salida=.v53/apertura_guiones.txt -->
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+**LA LISTA CERRADA DE LAS CUATRO QUE BLOQUEAN, PEGADA ANTES DE USAR LA PALABRA** (`D.55`, y es el
+remedio de `1.a` que el encargo me pone): **`gate`, el cerrojo, el censo no decreciente y la
+fidelidad `D.30` con puente, y solo esas.** `gate` verde arriba; el censo no decreciente va dentro de
+`gate` como guarda `censo_no_decrece`; la fidelidad `D.30` se mide en `OO.4`. **Ninguna de las cuatro
+en rojo al abrir.** La prueba de aceptacion **no es ninguna de las cuatro** y no la corro al abrir:
+el techo la cuenta una sola vez, en el cierre.
+
+### OO.0.c. **EL CREDITO Y LA DEUDA AL ABRIR**, leidos del instrumento y no anotados por mi (`EXTRACTOR.md` 14)
+
+<!-- TALLADO: parcial salida=.v53/credito_apertura.txt -->
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+      tandas: 51, en 235 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA 51
+      CIFRA PUBLICADA    0 de 2     ACTA 51
+      CLASE              0 de 2     ACTA 51
+      DATO MOVIDO        0 de 2     ACTA 51
+      REPORTE            2 de 3     ACTA 51
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+<!-- TALLADO: parcial salida=.v53/deuda_apertura.txt -->
+
+    $ python scripts/deuda.py
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      registro: docs/loop/DEUDA.jsonl
+      pendientes: 19    pagadas: 18
+
+**`19` pendientes y `18` pagadas al abrir**, con `d056` y `d057` de la `ACTA 51` dentro.
+
+## OO.1. **LOS REGISTROS DE LA `ACTA 51`, RECOGIDOS SIN REABRIRLOS**
+
+**Los recojo y no los rediscuto, y eso incluye los cuatro que me favorecen** (`EXTRACTOR.md` 14: el
+extractor propone en su reporte y no se adjudica a si mismo). **Modo austero:** lo que la `ACTA 51`
+ya dice no se repite aqui, se cita por su seccion y se dice que hago hoy con ello.
+
+| # | lo que la `ACTA 51` adjudica | donde vive | que hago hoy |
+|---:|---|---|---|
+| `1` | de mis `16` discutibles se sostienen los `16`: **`0` caidas dentro del marcado** | `51.4` | **recogido.** Hoy vuelvo a marcar antes de saber si acierto (`EXTRACTOR.md` 8) |
+| `2` | mi **`0` PUENTE de `35` pasos** y las seis cifras de palabras, firmados a ciegas | `51.3`, `51.8` | **recogido.** Hoy la fidelidad va **por muestra** (`D.58`), no entera, y lo declaro en `OO.4` |
+| `3` | mis `34` `SANO` existen los `34` y llevan `RAZON` los `34`: **`D.8` sin un solo caso** | `51.5` | **recogido.** Hoy el lote sigue ABIERTO, asi que los veredictos vuelven a viajar dentro de la ficha |
+| `4` | `d051` y `d052` **PAGADAS** | `51.1.a` | **recogido**, y el instrumento lo confirma en `OO.0.c`: `18` pagadas contra las `16` de la vuelta 52 |
+| `5` | **`P15` entra en `d053` con `P12`**: misma figura, se decide el dia de la insercion | `51.4` fila `1` | **no lo parto hoy.** `cap_05` no se toca en esta vuelta |
+| `6` | **`P18` no se parte** | `51.4` fila `8` | **no lo parto hoy**, por lo mismo |
+| `7` | la decision del fundador del 19 sep queda leida: **la de saneamiento es la `54`** | `51.2` | **recogido.** Hoy es de EXTRACCION y no pago deuda |
+| `8` | la serie de la forma de los pasos sube a `37,1` por ciento, **REGISTRADA y sin adjudicar** (`D.56`), y **no es caida mia** | `51.9` | **recogido y no lo reabro** |
+
+### OO.1.a. **MI CAIDA DE `REPORTE`, QUE SUBE A `2 de 3`, Y SU REMEDIO DE UNA LINEA**
+
+**La recojo entera y no la discuto.** Llame **guarda de DATO** a la prueba de aceptacion en rojo, y
+la lista de las que bloquean es **cerrada**. El instrumento la publica en `OO.0.c`: `REPORTE 2 de 3`.
+
+> **EL REMEDIO, TAL COMO EL ENCARGO LO ESCRIBE, Y YA EJECUTADO EN `OO.0.b`:** antes de llamar
+> `guarda` a nada que bloquee, **pego la lista cerrada de las cuatro y digo a cual pertenece**. Si no
+> pertenece a ninguna, **la palabra es `deuda`**. En `OO.5` la prueba de aceptacion se nombra por su
+> deuda `d057` y **no como guarda**.
+
+### OO.1.b. **LAS DOS DEUDAS QUE LA `ACTA 51` ABRE: RECOGIDAS Y NO PAGADAS HOY**
+
+| id | que es, en una linea | que hago hoy |
+|---|---|---|
+| `d056` | la cola de lectura de la tanda `52` se movio despues de medirse | **lo unico que me cambia hoy:** cada bloque de veredicto **nombra la poblacion con la que midio su informe**. Se paga el dia de la insercion |
+| `d057` | la suite en rojo por un fixture que va por detras de su guarda | **se cita y no se toca**: su arreglo vive en `tests/` o `scripts/`, que `D.45` me veda |
+
+**CERRADA `OO.1`.**
+
+## OO.2. **LA FRONTERA DE `cap_06`, `cap_07` Y `cap_08`, PUBLICADA ANTES DE CORTAR NADA** (`EXTRACTOR.md` 10)
+
+**Las tres cierran contra su cuerpo al digito**, con **cero lineas sin cubrir** y **cero solapes**,
+asi que las tres se pueden minar. **Y cada fila declara cuantos nodos preve**, que es la columna
+que el auditor siguiente recomputa. Las tres tablas van **talladas celda a celda** contra su
+instrumento (`D.41`), y **la cita de cada fila la imprime el instrumento de la linea** (`D.35`).
+
+    $ python .v53/frontera.py
+
+### OO.2.a. `cap_06`, `Decisions, Decisions`: **TREINTA Y DOS TRAMOS Y OCHO NODOS**
+
+<!-- TALLADO: parcial script=.v53/frontera.py salida=.v53/frontera_tres.txt -->
+
+    ==============================================================================
+    1. LA COMPROBACION DE cap_06, ANTES DE SU TABLA
+    ==============================================================================
+    fichero                                : fuentes/grove_high_output/cap_06.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 32
+    lineas con contenido tras la cabecera  : 44
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 4122 palabras
+    cuerpo medido aparte                   : 4122 palabras
+    CARACTERES DE CUERPO                   : 24316 caracteres
+    fichero entero, para cruzar con wc -w  : 4147 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_06 Y SOLO cap_06: 8
+
+
+#### **LA TABLA, IMPRESA Y NO TECLEADA**
+
+<!-- TALLADO: script=.v53/frontera.py salida=.v53/frontera_tres.txt -->
+| tramo de cap_06 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L11` | 3 | **0** | P1  rotulos: el numero 5 y el titulo textual Decisions, Decisions | `9:5` |
+| `L13 a L13` | 122 | **0** | P2  el abanico de decisiones, del edificio a las bebidas de la fiesta: DEFINICION con ejemplos | `13:Making decisions-or more properly, participating in the process ` |
+| `L15 a L15` | 97 | **0** | P3  poder de posicion contra poder de conocimiento: DEFINICION, nombra el fenomeno y no pone medios | `15:In traditional industries, where the management chain of command` |
+| `L17 a L17` | 121 | **0** | P4  el titulado que se vuelve obsoleto con los anios: CASO del autor sobre si mismo, manual 3.5 | `17:What do I mean? When someone graduates from college with a techn` |
+| `L19 a L19` | 135 | **0** | P5  el mando intermedio como llave del engranaje: POSTURA, su criterio es la clave del exito | `19:So a business like ours has to employ a decision-making process ` |
+| `L21 a L21` | 2 | **0** | P6  rotulo Ideal Model, sin cuerpo que extraer | `21:Ideal Model` |
+| `L23 a L29` | 484 | **1** | P7  EL MODELO IDEAL CON SUS TRES ETAPAS nombradas una a una: discusion libre, decision clara y apoyo pleno | `23:Illustrated on this page is an ideal model of decision-making in` |
+| `L31 a L31` | 179 | **0** | P8  a quien le sale facil el modelo y a quien no: POSTURA sobre dos clases de empleado | `31:The ideal decision-making model seems an easy one to follow. Yet` |
+| `L33 a L33` | 193 | **1** | P9  DECIDIR EN EL NIVEL COMPETENTE MAS BAJO: la mezcla de conocimiento y juicio, con sus medios nombrados | `33:Another desirable and important feature of the model is that any` |
+| `L35 a L35` | 138 | **0** | P10 los simbolos de estatus y el igualitarismo: POSTURA, respuesta del autor a un periodista | `35:A journalist puzzled by our management style once asked me, "Mr.` |
+| `L37 a L37` | 3 | **0** | P11 rotulo The Peer-Group Syndrome, sin cuerpo que extraer | `37:The Peer-Group Syndrome` |
+| `L39 a L39` | 67 | **0** | P12 las emociones que estorban al modelo, orgullo, ambicion, miedo e inseguridad: POSTURA | `39:The model is also hard to implement because anybody who makes a ` |
+| `L41 a L41` | 263 | **0** | P13 el juego de papeles que dio nombre al par mas uno: CASO del autor, manual 3.5, su doctrina vive en P17 | `41:The most common problem is something we call the peer-group synd` |
+| `L43 a L43` | 21 | **0** | P14 la linea que presenta la cita del ingeniero John: enlace, sin cuerpo que extraer | `43:Why? Because most people are afraid to stick their necks out. Th` |
+| `L45 a L45` | 123 | **0** | P15 la cita de John sobre por que nadie se moja: TESTIMONIO citado, POSTURA | `45:One of the reasons why people are reluctant to come out with an ` |
+| `L47 a L47` | 81 | **0** | P16 la diferencia entre los dos silencios, el del jefe y el del consenso: POSTURA | `47:Note the difference between the situation described earlier by t` |
+| `L49 a L49` | 68 | **1** | P17 INFUNDIR LA AUTOCONFIANZA que vence al sindrome, con sus tres fuentes nombradas una a una | `49:You can overcome the peer-group syndrome if each of the members ` |
+| `L51 a L51` | 89 | **1** | P18 QUIEN TOMA EL MANDO cuando no hay presidente: el que mas se juega, y si no, el mas senior presente | `51:If the peer-group syndrome manifests itself, and the meeting has` |
+| `L53 a L53` | 100 | **0** | P19 el miedo a parecer tonto: DIAGNOSTICO con un recordatorio, sin inventario de medios, 9.1 | `53:One thing that paralyzes both knowledge and position power posse` |
+| `L55 a L55` | 87 | **0** | P20 el miedo del subalterno a ser desautorizado: DIAGNOSTICO, ningun medio nombrado | `55:A related phenomenon influences lower-level people present in th` |
+| `L57 a L57` | 153 | **0** | P21 la inteligencia y la voluntad contra los dos miedos: POSTURA, 9.1 restriccion 2 | `57:But some issues are so complex that those called on to make a de` |
+| `L59 a L59` | 4 | **0** | P22 rotulo Striving for the Output, sin cuerpo que extraer | `59:Striving for the Output` |
+| `L61 a L61` | 187 | **1** | P23 CUANDO ES LEGITIMO QUE EL SENIOR DECIDA SOLO: la condicion y su prohibicion, las dos escritas | `61:Sometimes no amount of discussion will produce a consensus, yet ` |
+| `L63 a L63` | 145 | **1** | P24 EL CRITERIO DEL MOMENTO: ni antes de oir lo de fondo, ni despues de haberlo oido todo | `63:If you either enter the decision-making stage too early or wait ` |
+| `L65 a L65` | 65 | **1** | P25 CABEZA DE SERIE: las SEIS preguntas que el mando zanja por adelantado, contadas por el libro | `65:Basically, like other things managers do, decision-making has an` |
+| `L67 a L77` | 49 | **0** | P26 las seis preguntas, una por linea: partes de la cabeza P25 y sin procedimiento propio ninguna | `67:• What decision needs to be made?` |
+| `L79 a L79` | 202 | **0** | P27 la planta de Filipinas, el planteamiento: CASO del autor, manual 3.5 | `79:Let me illustrate how these six questions came into play in a re` |
+| `L81 a L87` | 390 | **0** | P28 las seis preguntas aplicadas a Filipinas una a una: CASO del autor, manual 3.5 | `81:Let's apply our six questions here. It is clear what decision ne` |
+| `L89 a L89` | 147 | **0** | P29 como se tomo y se ratifico aquella decision: CASO del autor, manual 3.5 | `89:This is how the decision was made. After studying maps, construc` |
+| `L91 a L91` | 153 | **0** | P30 el valor de decidir siempre igual y el veto que llega tarde: POSTURA que justifica P25 | `91:Employing consistent ways by which decisions are to be made has ` |
+| `L93 a L93` | 95 | **1** | P31 ANUNCIAR UNA DECISION QUE DEFRAUDA: no te vayas, levanta la sesion, reconvoca y pide sus opiniones | `93:One last thing. If the final word has to be dramatically differe` |
+| `L95 a L95` | 156 | **0** | P32 Sloan y el mando de mentalidad John Wayne que volvio: CASO y POSTURA de cierre | `95:If good decision-making appears complicated, that's because it i` |
+| | **4122** | **8** | **el cuerpo entero de cap_06, cero lineas sin cubrir y cero solapes** | |
+
+
+### OO.2.b. `cap_07`, la planificacion: **TREINTA Y OCHO TRAMOS Y NUEVE NODOS**
+
+<!-- TALLADO: parcial script=.v53/frontera.py salida=.v53/frontera_tres.txt -->
+
+    ==============================================================================
+    1. LA COMPROBACION DE cap_07, ANTES DE SU TABLA
+    ==============================================================================
+    fichero                                : fuentes/grove_high_output/cap_07.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 38
+    lineas con contenido tras la cabecera  : 49
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 3832 palabras
+    cuerpo medido aparte                   : 3832 palabras
+    CARACTERES DE CUERPO                   : 22593 caracteres
+    fichero entero, para cruzar con wc -w  : 3861 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_07 Y SOLO cap_07: 9
+
+
+#### **LA TABLA, IMPRESA Y NO TECLEADA**
+
+<!-- TALLADO: script=.v53/frontera.py salida=.v53/frontera_tres.txt -->
+| tramo de cap_07 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L11` | 7 | **0** | P1  rotulos: el numero 6 y el titulo textual de la planificacion como accion de hoy | `9:6` |
+| `L13 a L13` | 3 | **0** | P2  rotulo The Planning Process, sin cuerpo que extraer | `13:The Planning Process` |
+| `L15 a L15` | 146 | **0** | P3  planificar es cotidiano, con el ejemplo del deposito de gasolina: DEFINICION con ilustracion | `15:Most people think "planning" is one of the loftier responsibilit` |
+| `L17 a L17` | 150 | **0** | P4  los tres pasos en la fabrica: RECAPITULACION declarada del Cap. 2 y molde de P5, no nodo propio | `17:The dynamics of planning can best be understood by going back to` |
+| `L19 a L19` | 103 | **1** | P5  CABEZA DE SERIE: los TRES pasos del proceso general de planificacion, contados y nombrados | `19:Your general planning process should consist of analogous thinki` |
+| `L21 a L21` | 7 | **0** | P6  la linea que anuncia el detalle de cada paso: enlace, sin cuerpo que extraer | `21:Let's consider each step in more detail.` |
+| `L23 a L23` | 3 | **0** | P7  rotulo STEP 1, ENVIRONMENTAL DEMAND, sin cuerpo que extraer | `23:STEP 1-ENVIRONMENTAL DEMAND` |
+| `L25 a L25` | 110 | **1** | P8  DEFINIR TU ENTORNO como si tu grupo fuera empresa: clientes, proveedores y competencia, nombrados | `25:Just what is your environment? If you look at your own group wit` |
+| `L27 a L27` | 88 | **1** | P9  QUE MIRAR AL EXAMINAR EL ENTORNO: los cuatro objetos de revision, nombrados uno a uno | `27:What should you look for when you examine your environment? You ` |
+| `L29 a L31` | 217 | **1** | P10 LOS DOS MARCOS TEMPORALES y el analisis de la diferencia, con la prohibicion de rebajar la demanda | `29:Once you have established what constitutes your environment, you` |
+| `L33 a L33` | 3 | **0** | P11 rotulo STEP 2, PRESENT STATUS, sin cuerpo que extraer | `33:STEP 2-PRESENT STATUS` |
+| `L35 a L35` | 158 | **1** | P12 DETERMINAR EL ESTADO PRESENTE: capacidades, proyectos en curso, la misma moneda, el plazo y la merma | `35:The second step of planning is to determine your present status.` |
+| `L37 a L37` | 8 | **0** | P13 rotulo STEP 3, WHAT TO DO TO CLOSE THE GAP, sin cuerpo que extraer | `37:STEP 3-WHAT TO DO TO CLOSE THE GAP` |
+| `L39 a L39` | 89 | **1** | P14 CERRAR LA BRECHA con sus dos preguntas separadas, y el conjunto de acciones que sale es la estrategia | `39:The final step of planning consists of undertaking new tasks or ` |
+| `L41 a L41` | 165 | **0** | P15 estrategia contra tactica, con el correo electronico del jefe de comunicacion: DEFINICION con CASO | `41:Much confusion exists between what is strategy and what is tacti` |
+| `L43 a L43` | 2 | **0** | P16 rotulo SOME EXAMPLES, sin cuerpo que extraer | `43:SOME EXAMPLES` |
+| `L45 a L47` | 260 | **0** | P17 el caso de Bruce y su inventario de proyectos: CASO del autor, manual 3.5 | `45:As he defined his present environment and status, Bruce, an Inte` |
+| `L49 a L53` | 478 | **0** | P18 el caso de Cindy y su plan con los ingenieros de desarrollo: CASO del autor, manual 3.5 | `49:Let's illustrate with another example. Our middle manager Cindy,` |
+| `L55 a L55` | 6 | **0** | P19 rotulo The Output of the Planning Process, sin cuerpo que extraer | `55:The Output of the Planning Process` |
+| `L57 a L57` | 124 | **0** | P20 la brecha de hoy es un fallo de planificacion de ayer: POSTURA con la analogia de la gasolina | `57:The key to both Bruce's and Cindy's efforts is that their planni` |
+| `L59 a L59` | 84 | **0** | P21 la verdadera salida del proceso son las tareas que provoca: DEFINICION | `59:Thus, the true output of the planning process is the set of task` |
+| `L61 a L61` | 165 | **1** | P22 EL HORIZONTE Y LA VENTANA: cinco anios de vista, solo el proximo se implementa, y no replanificar tanto | `61:How far ahead should the planners look? At Intel, we put ourselv` |
+| `L63 a L63` | 82 | **0** | P23 quien participa, la direccion operativa: POSTURA, una respuesta sin inventario de medios | `63:Who should be involved in the planning process? The operating ma` |
+| `L65 a L65` | 79 | **0** | P24 decir que si es decir que no a otra cosa: POSTURA, su criterio son agallas, honradez y disciplina | `65:Finally, remember that by saying "yes"-to projects, a course of ` |
+| `L67 a L67` | 10 | **0** | P25 rotulo Management by Objectives, sin cuerpo que extraer | `67:Management by Objectives: The Planning Process Applied to Daily ` |
+| `L69 a L69` | 86 | **0** | P26 que supone el sistema de direccion por objetivos y en que dos pasos se concentra: DEFINICION | `69:The system of management by objectives assumes that because our ` |
+| `L71 a L75` | 43 | **1** | P27 CABEZA DE SERIE: las DOS preguntas que el sistema tiene que contestar, contadas y nombradas | `71:A successful MBO system needs only to answer two questions:` |
+| `L77 a L77` | 96 | **0** | P28 el aeropuerto y los pueblos A, B y C: ILUSTRACION del autor de un objetivo y sus resultados clave | `77:To illustrate an objective and a key result, consider the follow` |
+| `L79 a L79` | 112 | **1** | P29 FIJAR EL PERIODO del sistema por el plazo de la retroalimentacion, con su cadencia contra el plan anual | `79:Upon what time period should an MBO system focus? MBO is largely` |
+| `L81 a L81` | 99 | **0** | P30 mantener pocos objetivos: 9.1 restriccion 2, el criterio es small y a few well-chosen | `81:The one thing an MBO system should provide par excellence is foc` |
+| `L83 a L83` | 3 | **0** | P31 rotulo TWO CASE HISTORIES, sin cuerpo que extraer | `83:TWO CASE HISTORIES` |
+| `L85 a L89` | 317 | **0** | P32 Isabel y Colon, el objetivo anidado: CASO historico contado por el autor, manual 3.5 | `85:To familiarize ourselves with the MBO system, let's look at a ca` |
+| `L91 a L93` | 196 | **0** | P33 los resultados clave se cumplen y el objetivo se falla; el sistema no es documento legal: POSTURA | `91:Now, the key results can come in like clockwork, but the objecti` |
+| `L95 a L95` | 107 | **0** | P34 Filipinas en terminos de objetivo y resultados clave: CASO del autor, manual 3.5 | `95:Let's illustrate the workings of the MBO system using the decisi` |
+| `L97 a L97` | 68 | **0** | P35 el resultado clave con redaccion muy especifica y fechas: 9.1 restriccion 2, very specific | `97:Each key result was accomplished and the objective was met. Note` |
+| `L99 a L99` | 50 | **0** | P36 el objetivo del supervisor del jefe de obra: CASO del autor, manual 3.5 | `99:As you might have guessed, the Far East construction manager's s` |
+| `L101 a L101` | 104 | **0** | P37 el paralelismo entre Isabel e Intel, y que el sistema pide juicio y sentido comun: POSTURA | `101:You can now see, I hope, the parallels between how Isabella's go` |
+| `L103 a L105` | 4 | **0** | P38 rotulos de la parte III, Team of Teams: material de division del libro, sin cuerpo que extraer | `103:III` |
+| | **3832** | **9** | **el cuerpo entero de cap_07, cero lineas sin cubrir y cero solapes** | |
+
+
+### OO.2.c. `cap_08`, `The Breakfast Factory Goes National`: **DOCE TRAMOS Y CERO NODOS**
+
+<!-- TALLADO: parcial script=.v53/frontera.py salida=.v53/frontera_tres.txt -->
+
+    ==============================================================================
+    1. LA COMPROBACION DE cap_08, ANTES DE SU TABLA
+    ==============================================================================
+    fichero                                : fuentes/grove_high_output/cap_08.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 12
+    lineas con contenido tras la cabecera  : 13
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 1138 palabras
+    cuerpo medido aparte                   : 1138 palabras
+    CARACTERES DE CUERPO                   : 6705 caracteres
+    fichero entero, para cruzar con wc -w  : 1166 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_08 Y SOLO cap_08: 0
+
+
+#### **LA TABLA, IMPRESA Y NO TECLEADA**
+
+<!-- TALLADO: script=.v53/frontera.py salida=.v53/frontera_tres.txt -->
+| tramo de cap_08 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L11` | 6 | **0** | P1  rotulos: el numero 7 y el titulo textual The Breakfast Factory Goes National | `9:7` |
+| `L13 a L13` | 77 | **0** | P2  donde quedo la fabrica de desayunos y su hervidor continuo: CASO del autor, manual 3.5 | `13:We left the breakfast factory as it was enjoying great success-s` |
+| `L15 a L15` | 86 | **0** | P3  la segunda sucursal, la revista y la franquicia nacional: CASO del autor, manual 3.5 | `15:Like good entrepreneurs, we knew we had a good thing going and s` |
+| `L17 a L17` | 190 | **0** | P4  la tension entre el empresario local y la economia de escala: DEFINICION del dilema, sin medios | `17:Before long we found, however, that the network required a set o` |
+| `L19 a L19` | 168 | **0** | P5  publicidad, contratacion, salarios y maquinaria: PREGUNTAS retoricas sin inventario de medios | `19:In fact, the centralization-decentralization dichotomy is so per` |
+| `L21 a L21` | 111 | **0** | P6  los huevos y los centros regionales de compra: CASO con su criterio en some kind of compromise | `21:But I don't think we should buy all our eggs in Chicago. We want` |
+| `L23 a L23` | 53 | **0** | P7  el menu comun y la diferencia regional de gusto: CASO con discrecion sin medida | `23:What about items on the menu? By and large we want to keep the s` |
+| `L25 a L25` | 53 | **0** | P8  el inmueble y los estandares que se fijan en Chicago: PREGUNTAS con some standards, adjetivo | `25:What about real estate? Should we allow our Breakfast Factories ` |
+| `L27 a L27` | 93 | **0** | P9  el mobiliario, la vajilla y los almacenes regionales: CASO con probably en el sitio del criterio | `27:What about furniture? Does it have to be utterly uniform? Should` |
+| `L29 a L29` | 67 | **0** | P10 donde se decide la ubicacion de una franquicia nueva: PREGUNTAS retoricas, ninguna zanjada | `29:How do we choose the location of new franchises within each metr` |
+| `L31 a L31` | 165 | **0** | P11 la nostalgia del dueno y la plantilla corporativa que crece: POSTURA del autor | `31:Things have become very complicated. Sometimes as I sit behind m` |
+| `L33 a L33` | 69 | **0** | P12 el equipo de equipos: DEFINICION de cierre que abre la parte III, material de cierre | `33:Earlier, we established the fact that the game of management is ` |
+| | **1138** | **0** | **el cuerpo entero de cap_08, cero lineas sin cubrir y cero solapes** | |
+
+
+<!-- TALLADO: parcial script=.v53/frontera.py salida=.v53/frontera_tres.txt -->
+
+    ==============================================================================
+    3. EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI
+    ==============================================================================
+    NODOS QUE MI FRONTERA DA EN LAS TRES UNIDADES DE HOY: 17
+    TECHO DE CANDIDATOS DE D.58 EN REGIMEN LIGERO       : 30
+    DENTRO DEL TECHO DE CANDIDATOS                      : SI
+    LA OTRA MITAD DEL TECHO, QUE ES LA QUE MUERDE: 90 min de reloj de aduana,
+    que a 731,2 s por pasada (medida de la vuelta 52) dan 7,4 candidatos.
+
+
+### OO.2.d. **LO QUE ESTA FRONTERA DECIDE, Y LOS CEROS CON SU MOTIVO**
+
+**Los tramos de cero llevan cada uno su motivo escrito en su propia celda**, que es lo que el
+encargo pide, y la cuenta de cuantos son **no la tecleo: la releo de la misma tabla que la imprimio.**
+
+<!-- TALLADO: parcial salida=.v53/ceros.txt -->
+
+    $ python .v53/ceros.py   sobre .v53/frontera_tres.txt
+    de la tabla de OO.2, releida hoy fila a fila del mismo fichero que la imprimio
+    unidad     tramos con nodo  de cero  rotulos y enlaces sin cuerpo
+    cap_06         32        8       24  P6, P11, P14, P22
+    cap_07         38        9       29  P2, P6, P7, P11, P13, P16, P19, P25, P31, P38
+    cap_08         12        0       12  ninguno
+    TOTAL          82       17       65
+
+    tramos que dan nodo, y todos dan UNO  : 17
+    nodos previstos en las tres unidades  : 17
+    tramos de cero, cada uno con su motivo: 65
+
+Los motivos se reparten en cuatro familias: **rotulos y enlaces sin cuerpo** (los `14` de la columna
+de la derecha, mas `P1` de cada unidad, que son los rotulos de numero y titulo), **casos del autor**
+(manual 3.5), **definiciones y posturas**, y **los que caen por la restriccion 2 de `9.1`**, el
+adjetivo de adecuacion en el sitio del criterio.
+
+**`cap_08` DA CERO NODOS ENTERO, Y ES UNA LECTURA, NO UN DESCUIDO.** El capitulo es el ejemplo
+corrido de la fabrica de desayunos convertido en cadena, escrito **en preguntas retoricas que el
+libro no zanja** (`P5`, `P8`, `P10`) y en decisiones del propio autor sobre su caso inventado (`P6`,
+`P7`, `P9`). Donde el texto se acerca a un criterio, el criterio es un adjetivo de adecuacion:
+*some kind of compromise*, *some standards we set in Chicago*, *we should probably*. **`9.1`
+restriccion 2 lo tumba aunque haya inventario**, y el cierre `P12` es material de division del libro.
+
+> **EL CORTE DE HOY LO DECIDE EL RELOJ, NO EL NUMERO.** `17` esta dentro del techo de `30` de `D.58`,
+> pero la mitad en minutos del encargo da **`7,4` candidatos en `90` minutos** a `731,2` s por pasada.
+> **Mino `cap_06` en el orden del libro y corto donde el reloj me pare**, y la linea del tramo de
+> `OO.5` dice en que pieza quedo.
+
+**CERRADA `OO.2`.**

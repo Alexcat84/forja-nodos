@@ -1,0 +1,159 @@
+==============================================================================
+1. LA COMPROBACION DE cap_06, ANTES DE SU TABLA
+==============================================================================
+fichero                                : fuentes/grove_high_output/cap_06.md
+la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+tramos de mi lectura                   : 32
+lineas con contenido tras la cabecera  : 44
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 4122 palabras
+cuerpo medido aparte                   : 4122 palabras
+CARACTERES DE CUERPO                   : 24316 caracteres
+fichero entero, para cruzar con wc -w  : 4147 palabras
+IGUALES                                : True
+NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_06 Y SOLO cap_06: 8
+
+==============================================================================
+2. LA TABLA DE cap_06, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo de cap_06 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L11` | 3 | **0** | P1  rotulos: el numero 5 y el titulo textual Decisions, Decisions | `9:5` |
+| `L13 a L13` | 122 | **0** | P2  el abanico de decisiones, del edificio a las bebidas de la fiesta: DEFINICION con ejemplos | `13:Making decisions-or more properly, participating in the process ` |
+| `L15 a L15` | 97 | **0** | P3  poder de posicion contra poder de conocimiento: DEFINICION, nombra el fenomeno y no pone medios | `15:In traditional industries, where the management chain of command` |
+| `L17 a L17` | 121 | **0** | P4  el titulado que se vuelve obsoleto con los anios: CASO del autor sobre si mismo, manual 3.5 | `17:What do I mean? When someone graduates from college with a techn` |
+| `L19 a L19` | 135 | **0** | P5  el mando intermedio como llave del engranaje: POSTURA, su criterio es la clave del exito | `19:So a business like ours has to employ a decision-making process ` |
+| `L21 a L21` | 2 | **0** | P6  rotulo Ideal Model, sin cuerpo que extraer | `21:Ideal Model` |
+| `L23 a L29` | 484 | **1** | P7  EL MODELO IDEAL CON SUS TRES ETAPAS nombradas una a una: discusion libre, decision clara y apoyo pleno | `23:Illustrated on this page is an ideal model of decision-making in` |
+| `L31 a L31` | 179 | **0** | P8  a quien le sale facil el modelo y a quien no: POSTURA sobre dos clases de empleado | `31:The ideal decision-making model seems an easy one to follow. Yet` |
+| `L33 a L33` | 193 | **1** | P9  DECIDIR EN EL NIVEL COMPETENTE MAS BAJO: la mezcla de conocimiento y juicio, con sus medios nombrados | `33:Another desirable and important feature of the model is that any` |
+| `L35 a L35` | 138 | **0** | P10 los simbolos de estatus y el igualitarismo: POSTURA, respuesta del autor a un periodista | `35:A journalist puzzled by our management style once asked me, "Mr.` |
+| `L37 a L37` | 3 | **0** | P11 rotulo The Peer-Group Syndrome, sin cuerpo que extraer | `37:The Peer-Group Syndrome` |
+| `L39 a L39` | 67 | **0** | P12 las emociones que estorban al modelo, orgullo, ambicion, miedo e inseguridad: POSTURA | `39:The model is also hard to implement because anybody who makes a ` |
+| `L41 a L41` | 263 | **0** | P13 el juego de papeles que dio nombre al par mas uno: CASO del autor, manual 3.5, su doctrina vive en P17 | `41:The most common problem is something we call the peer-group synd` |
+| `L43 a L43` | 21 | **0** | P14 la linea que presenta la cita del ingeniero John: enlace, sin cuerpo que extraer | `43:Why? Because most people are afraid to stick their necks out. Th` |
+| `L45 a L45` | 123 | **0** | P15 la cita de John sobre por que nadie se moja: TESTIMONIO citado, POSTURA | `45:One of the reasons why people are reluctant to come out with an ` |
+| `L47 a L47` | 81 | **0** | P16 la diferencia entre los dos silencios, el del jefe y el del consenso: POSTURA | `47:Note the difference between the situation described earlier by t` |
+| `L49 a L49` | 68 | **1** | P17 INFUNDIR LA AUTOCONFIANZA que vence al sindrome, con sus tres fuentes nombradas una a una | `49:You can overcome the peer-group syndrome if each of the members ` |
+| `L51 a L51` | 89 | **1** | P18 QUIEN TOMA EL MANDO cuando no hay presidente: el que mas se juega, y si no, el mas senior presente | `51:If the peer-group syndrome manifests itself, and the meeting has` |
+| `L53 a L53` | 100 | **0** | P19 el miedo a parecer tonto: DIAGNOSTICO con un recordatorio, sin inventario de medios, 9.1 | `53:One thing that paralyzes both knowledge and position power posse` |
+| `L55 a L55` | 87 | **0** | P20 el miedo del subalterno a ser desautorizado: DIAGNOSTICO, ningun medio nombrado | `55:A related phenomenon influences lower-level people present in th` |
+| `L57 a L57` | 153 | **0** | P21 la inteligencia y la voluntad contra los dos miedos: POSTURA, 9.1 restriccion 2 | `57:But some issues are so complex that those called on to make a de` |
+| `L59 a L59` | 4 | **0** | P22 rotulo Striving for the Output, sin cuerpo que extraer | `59:Striving for the Output` |
+| `L61 a L61` | 187 | **1** | P23 CUANDO ES LEGITIMO QUE EL SENIOR DECIDA SOLO: la condicion y su prohibicion, las dos escritas | `61:Sometimes no amount of discussion will produce a consensus, yet ` |
+| `L63 a L63` | 145 | **1** | P24 EL CRITERIO DEL MOMENTO: ni antes de oir lo de fondo, ni despues de haberlo oido todo | `63:If you either enter the decision-making stage too early or wait ` |
+| `L65 a L65` | 65 | **1** | P25 CABEZA DE SERIE: las SEIS preguntas que el mando zanja por adelantado, contadas por el libro | `65:Basically, like other things managers do, decision-making has an` |
+| `L67 a L77` | 49 | **0** | P26 las seis preguntas, una por linea: partes de la cabeza P25 y sin procedimiento propio ninguna | `67:• What decision needs to be made?` |
+| `L79 a L79` | 202 | **0** | P27 la planta de Filipinas, el planteamiento: CASO del autor, manual 3.5 | `79:Let me illustrate how these six questions came into play in a re` |
+| `L81 a L87` | 390 | **0** | P28 las seis preguntas aplicadas a Filipinas una a una: CASO del autor, manual 3.5 | `81:Let's apply our six questions here. It is clear what decision ne` |
+| `L89 a L89` | 147 | **0** | P29 como se tomo y se ratifico aquella decision: CASO del autor, manual 3.5 | `89:This is how the decision was made. After studying maps, construc` |
+| `L91 a L91` | 153 | **0** | P30 el valor de decidir siempre igual y el veto que llega tarde: POSTURA que justifica P25 | `91:Employing consistent ways by which decisions are to be made has ` |
+| `L93 a L93` | 95 | **1** | P31 ANUNCIAR UNA DECISION QUE DEFRAUDA: no te vayas, levanta la sesion, reconvoca y pide sus opiniones | `93:One last thing. If the final word has to be dramatically differe` |
+| `L95 a L95` | 156 | **0** | P32 Sloan y el mando de mentalidad John Wayne que volvio: CASO y POSTURA de cierre | `95:If good decision-making appears complicated, that's because it i` |
+| | **4122** | **8** | **el cuerpo entero de cap_06, cero lineas sin cubrir y cero solapes** | |
+
+==============================================================================
+1. LA COMPROBACION DE cap_07, ANTES DE SU TABLA
+==============================================================================
+fichero                                : fuentes/grove_high_output/cap_07.md
+la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+tramos de mi lectura                   : 38
+lineas con contenido tras la cabecera  : 49
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 3832 palabras
+cuerpo medido aparte                   : 3832 palabras
+CARACTERES DE CUERPO                   : 22593 caracteres
+fichero entero, para cruzar con wc -w  : 3861 palabras
+IGUALES                                : True
+NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_07 Y SOLO cap_07: 9
+
+==============================================================================
+2. LA TABLA DE cap_07, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo de cap_07 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L11` | 7 | **0** | P1  rotulos: el numero 6 y el titulo textual de la planificacion como accion de hoy | `9:6` |
+| `L13 a L13` | 3 | **0** | P2  rotulo The Planning Process, sin cuerpo que extraer | `13:The Planning Process` |
+| `L15 a L15` | 146 | **0** | P3  planificar es cotidiano, con el ejemplo del deposito de gasolina: DEFINICION con ilustracion | `15:Most people think "planning" is one of the loftier responsibilit` |
+| `L17 a L17` | 150 | **0** | P4  los tres pasos en la fabrica: RECAPITULACION declarada del Cap. 2 y molde de P5, no nodo propio | `17:The dynamics of planning can best be understood by going back to` |
+| `L19 a L19` | 103 | **1** | P5  CABEZA DE SERIE: los TRES pasos del proceso general de planificacion, contados y nombrados | `19:Your general planning process should consist of analogous thinki` |
+| `L21 a L21` | 7 | **0** | P6  la linea que anuncia el detalle de cada paso: enlace, sin cuerpo que extraer | `21:Let's consider each step in more detail.` |
+| `L23 a L23` | 3 | **0** | P7  rotulo STEP 1, ENVIRONMENTAL DEMAND, sin cuerpo que extraer | `23:STEP 1-ENVIRONMENTAL DEMAND` |
+| `L25 a L25` | 110 | **1** | P8  DEFINIR TU ENTORNO como si tu grupo fuera empresa: clientes, proveedores y competencia, nombrados | `25:Just what is your environment? If you look at your own group wit` |
+| `L27 a L27` | 88 | **1** | P9  QUE MIRAR AL EXAMINAR EL ENTORNO: los cuatro objetos de revision, nombrados uno a uno | `27:What should you look for when you examine your environment? You ` |
+| `L29 a L31` | 217 | **1** | P10 LOS DOS MARCOS TEMPORALES y el analisis de la diferencia, con la prohibicion de rebajar la demanda | `29:Once you have established what constitutes your environment, you` |
+| `L33 a L33` | 3 | **0** | P11 rotulo STEP 2, PRESENT STATUS, sin cuerpo que extraer | `33:STEP 2-PRESENT STATUS` |
+| `L35 a L35` | 158 | **1** | P12 DETERMINAR EL ESTADO PRESENTE: capacidades, proyectos en curso, la misma moneda, el plazo y la merma | `35:The second step of planning is to determine your present status.` |
+| `L37 a L37` | 8 | **0** | P13 rotulo STEP 3, WHAT TO DO TO CLOSE THE GAP, sin cuerpo que extraer | `37:STEP 3-WHAT TO DO TO CLOSE THE GAP` |
+| `L39 a L39` | 89 | **1** | P14 CERRAR LA BRECHA con sus dos preguntas separadas, y el conjunto de acciones que sale es la estrategia | `39:The final step of planning consists of undertaking new tasks or ` |
+| `L41 a L41` | 165 | **0** | P15 estrategia contra tactica, con el correo electronico del jefe de comunicacion: DEFINICION con CASO | `41:Much confusion exists between what is strategy and what is tacti` |
+| `L43 a L43` | 2 | **0** | P16 rotulo SOME EXAMPLES, sin cuerpo que extraer | `43:SOME EXAMPLES` |
+| `L45 a L47` | 260 | **0** | P17 el caso de Bruce y su inventario de proyectos: CASO del autor, manual 3.5 | `45:As he defined his present environment and status, Bruce, an Inte` |
+| `L49 a L53` | 478 | **0** | P18 el caso de Cindy y su plan con los ingenieros de desarrollo: CASO del autor, manual 3.5 | `49:Let's illustrate with another example. Our middle manager Cindy,` |
+| `L55 a L55` | 6 | **0** | P19 rotulo The Output of the Planning Process, sin cuerpo que extraer | `55:The Output of the Planning Process` |
+| `L57 a L57` | 124 | **0** | P20 la brecha de hoy es un fallo de planificacion de ayer: POSTURA con la analogia de la gasolina | `57:The key to both Bruce's and Cindy's efforts is that their planni` |
+| `L59 a L59` | 84 | **0** | P21 la verdadera salida del proceso son las tareas que provoca: DEFINICION | `59:Thus, the true output of the planning process is the set of task` |
+| `L61 a L61` | 165 | **1** | P22 EL HORIZONTE Y LA VENTANA: cinco anios de vista, solo el proximo se implementa, y no replanificar tanto | `61:How far ahead should the planners look? At Intel, we put ourselv` |
+| `L63 a L63` | 82 | **0** | P23 quien participa, la direccion operativa: POSTURA, una respuesta sin inventario de medios | `63:Who should be involved in the planning process? The operating ma` |
+| `L65 a L65` | 79 | **0** | P24 decir que si es decir que no a otra cosa: POSTURA, su criterio son agallas, honradez y disciplina | `65:Finally, remember that by saying "yes"-to projects, a course of ` |
+| `L67 a L67` | 10 | **0** | P25 rotulo Management by Objectives, sin cuerpo que extraer | `67:Management by Objectives: The Planning Process Applied to Daily ` |
+| `L69 a L69` | 86 | **0** | P26 que supone el sistema de direccion por objetivos y en que dos pasos se concentra: DEFINICION | `69:The system of management by objectives assumes that because our ` |
+| `L71 a L75` | 43 | **1** | P27 CABEZA DE SERIE: las DOS preguntas que el sistema tiene que contestar, contadas y nombradas | `71:A successful MBO system needs only to answer two questions:` |
+| `L77 a L77` | 96 | **0** | P28 el aeropuerto y los pueblos A, B y C: ILUSTRACION del autor de un objetivo y sus resultados clave | `77:To illustrate an objective and a key result, consider the follow` |
+| `L79 a L79` | 112 | **1** | P29 FIJAR EL PERIODO del sistema por el plazo de la retroalimentacion, con su cadencia contra el plan anual | `79:Upon what time period should an MBO system focus? MBO is largely` |
+| `L81 a L81` | 99 | **0** | P30 mantener pocos objetivos: 9.1 restriccion 2, el criterio es small y a few well-chosen | `81:The one thing an MBO system should provide par excellence is foc` |
+| `L83 a L83` | 3 | **0** | P31 rotulo TWO CASE HISTORIES, sin cuerpo que extraer | `83:TWO CASE HISTORIES` |
+| `L85 a L89` | 317 | **0** | P32 Isabel y Colon, el objetivo anidado: CASO historico contado por el autor, manual 3.5 | `85:To familiarize ourselves with the MBO system, let's look at a ca` |
+| `L91 a L93` | 196 | **0** | P33 los resultados clave se cumplen y el objetivo se falla; el sistema no es documento legal: POSTURA | `91:Now, the key results can come in like clockwork, but the objecti` |
+| `L95 a L95` | 107 | **0** | P34 Filipinas en terminos de objetivo y resultados clave: CASO del autor, manual 3.5 | `95:Let's illustrate the workings of the MBO system using the decisi` |
+| `L97 a L97` | 68 | **0** | P35 el resultado clave con redaccion muy especifica y fechas: 9.1 restriccion 2, very specific | `97:Each key result was accomplished and the objective was met. Note` |
+| `L99 a L99` | 50 | **0** | P36 el objetivo del supervisor del jefe de obra: CASO del autor, manual 3.5 | `99:As you might have guessed, the Far East construction manager's s` |
+| `L101 a L101` | 104 | **0** | P37 el paralelismo entre Isabel e Intel, y que el sistema pide juicio y sentido comun: POSTURA | `101:You can now see, I hope, the parallels between how Isabella's go` |
+| `L103 a L105` | 4 | **0** | P38 rotulos de la parte III, Team of Teams: material de division del libro, sin cuerpo que extraer | `103:III` |
+| | **3832** | **9** | **el cuerpo entero de cap_07, cero lineas sin cubrir y cero solapes** | |
+
+==============================================================================
+1. LA COMPROBACION DE cap_08, ANTES DE SU TABLA
+==============================================================================
+fichero                                : fuentes/grove_high_output/cap_08.md
+la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+tramos de mi lectura                   : 12
+lineas con contenido tras la cabecera  : 13
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 1138 palabras
+cuerpo medido aparte                   : 1138 palabras
+CARACTERES DE CUERPO                   : 6705 caracteres
+fichero entero, para cruzar con wc -w  : 1166 palabras
+IGUALES                                : True
+NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_08 Y SOLO cap_08: 0
+
+==============================================================================
+2. LA TABLA DE cap_08, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo de cap_08 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L11` | 6 | **0** | P1  rotulos: el numero 7 y el titulo textual The Breakfast Factory Goes National | `9:7` |
+| `L13 a L13` | 77 | **0** | P2  donde quedo la fabrica de desayunos y su hervidor continuo: CASO del autor, manual 3.5 | `13:We left the breakfast factory as it was enjoying great success-s` |
+| `L15 a L15` | 86 | **0** | P3  la segunda sucursal, la revista y la franquicia nacional: CASO del autor, manual 3.5 | `15:Like good entrepreneurs, we knew we had a good thing going and s` |
+| `L17 a L17` | 190 | **0** | P4  la tension entre el empresario local y la economia de escala: DEFINICION del dilema, sin medios | `17:Before long we found, however, that the network required a set o` |
+| `L19 a L19` | 168 | **0** | P5  publicidad, contratacion, salarios y maquinaria: PREGUNTAS retoricas sin inventario de medios | `19:In fact, the centralization-decentralization dichotomy is so per` |
+| `L21 a L21` | 111 | **0** | P6  los huevos y los centros regionales de compra: CASO con su criterio en some kind of compromise | `21:But I don't think we should buy all our eggs in Chicago. We want` |
+| `L23 a L23` | 53 | **0** | P7  el menu comun y la diferencia regional de gusto: CASO con discrecion sin medida | `23:What about items on the menu? By and large we want to keep the s` |
+| `L25 a L25` | 53 | **0** | P8  el inmueble y los estandares que se fijan en Chicago: PREGUNTAS con some standards, adjetivo | `25:What about real estate? Should we allow our Breakfast Factories ` |
+| `L27 a L27` | 93 | **0** | P9  el mobiliario, la vajilla y los almacenes regionales: CASO con probably en el sitio del criterio | `27:What about furniture? Does it have to be utterly uniform? Should` |
+| `L29 a L29` | 67 | **0** | P10 donde se decide la ubicacion de una franquicia nueva: PREGUNTAS retoricas, ninguna zanjada | `29:How do we choose the location of new franchises within each metr` |
+| `L31 a L31` | 165 | **0** | P11 la nostalgia del dueno y la plantilla corporativa que crece: POSTURA del autor | `31:Things have become very complicated. Sometimes as I sit behind m` |
+| `L33 a L33` | 69 | **0** | P12 el equipo de equipos: DEFINICION de cierre que abre la parte III, material de cierre | `33:Earlier, we established the fact that the game of management is ` |
+| | **1138** | **0** | **el cuerpo entero de cap_08, cero lineas sin cubrir y cero solapes** | |
+
+==============================================================================
+3. EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI
+==============================================================================
+NODOS QUE MI FRONTERA DA EN LAS TRES UNIDADES DE HOY: 17
+TECHO DE CANDIDATOS DE D.58 EN REGIMEN LIGERO       : 30
+DENTRO DEL TECHO DE CANDIDATOS                      : SI
+LA OTRA MITAD DEL TECHO, QUE ES LA QUE MUERDE: 90 min de reloj de aduana,
+que a 731,2 s por pasada (medida de la vuelta 52) dan 7,4 candidatos.
