@@ -50632,7 +50632,7 @@ sostuvieron los `13` y ninguno era una cifra: por eso esta vez `4` de los `16` s
 |---|---|---|
 | `OO.1` | los registros de la `ACTA 51` recogidos sin reabrirlos, la caida de `REPORTE` que sube a `2 de 3` con su remedio de una linea, y las dos deudas nuevas recogidas y no pagadas | **CERRADA en `OO.1`**: las `8` adjudicaciones recogidas sin rediscutirse y el remedio de `1.a` ejecutado en `OO.0.b` |
 | `OO.2` | la frontera de `cap_06`, `cap_07` y `cap_08` publicada ANTES de cortar nada, cerrada contra el cuerpo al digito, cero lineas sin cubrir y cero solapes, y **cada fila con los nodos que preve** | **CERRADA en `OO.2`**: `82` tramos, las tres cerradas al digito con `0` sin cubrir y `0` solapes, `17` nodos previstos y `65` ceros con motivo |
-| `OO.3` | minar en el orden del libro, un candidato por vez, con su aduana en el mismo acto, **techo de `30` candidatos o `90` minutos de reloj de aduana, lo que llegue antes**. **Cero inserciones** | **CERRADA en `OO.3`**: `9` candidatos y `9` aduanas en el acto, `cap_06` entero en `8` de `8`, `cap_07` en `1` de `9`, `18` veredictos razonados y **`CERO INSERCIONES`** |
+| `OO.3` | minar en el orden del libro, un candidato por vez, con su aduana en el mismo acto, **techo de `30` candidatos o `90` minutos de reloj de aduana, lo que llegue antes**. **Cero inserciones** | **CERRADA en `OO.3`**: `9` candidatos y `9` aduanas en el acto, `cap_06` entero en `8` de `8`, `cap_07` en `1` de `9`, `17` veredictos razonados y **`CERO INSERCIONES`** |
 | `OO.4` | la fidelidad `D.30` por muestra, con la semilla `v53` escrita y la salida del instrumento pegada, y `PASOS INVENTADOS` por capitulo | **CERRADA en `OO.4`**: semilla `v53` y salida pegada entera, `0` PUENTE sobre `21` pasos releidos, `0,0` por ciento en los tres capitulos y el disparador sin saltar |
 | `OO.5` | el cierre: las guardas, la tabla `D.52`, el estado recomputado al cierre, la linea del tramo con su reloj y los discutibles marcados | **CERRADA en `OO.5` CON UNA DEUDA DECLARADA**: guardas verdes y la prueba de aceptacion en rojo por `d057`, que **no es guarda de DATO**. Estado `346`, `740`, `1`, `65`; reloj `77,7` de `90` min; `15` discutibles |
 
@@ -51687,6 +51687,33 @@ y el **censo no decreciente** van dentro de `gate`, que lista `censo_no_decrece`
 la **fidelidad `D.30` con puente** da **`0` puentes sobre `21` pasos releidos** (`OO.4.a`).
 **Ninguna de las cuatro en rojo.**
 
+### OO.5.f.bis. **UNA CIFRA MIA CORREGIDA ANTES DE PUBLICARLA, Y LA TRAIGO YO**
+
+**Teclee `18` pares de cola donde el instrumento da `17`**, en dos celdas: la fila de estado de
+`OO.3` y la fila `3` de la tabla `D.52`. **Lo vi al recontarlo de los informes en vez de sumarlo de
+memoria**, que es lo que `EXTRACTOR.md` 5 manda y lo que yo no habia hecho con esa cifra.
+
+<!-- TALLADO: parcial script=.v53/veredictos.py salida=.v53/veredictos.txt -->
+
+    $ python .v53/veredictos.py   sobre .v53/aduana_c*.txt
+    informe                           saldo    vecinos
+    .v53\aduana_c1.txt             ENTRARIA          0
+    .v53\aduana_c2.txt               CAERIA          0
+    .v53\aduana_c2b.txt            ENTRARIA          0
+    .v53\aduana_c3.txt           BLOQUEARIA          4
+    .v53\aduana_c4.txt           BLOQUEARIA          3
+    .v53\aduana_c5.txt             ENTRARIA          0
+    .v53\aduana_c6.txt           BLOQUEARIA          3
+    .v53\aduana_c7.txt             ENTRARIA          0
+    .v53\aduana_c8.txt           BLOQUEARIA          6
+    .v53\aduana_c9.txt           BLOQUEARIA          1
+
+    PARES DE COLA QUE ESTA VUELTA ABRE, sumados de los informes : 17
+
+**Las dos celdas quedan corregidas a `17`**, y las tablas de veredicto de `OO.3` publican `4`, `3`,
+`3`, `6` y `1` filas, que suman los mismos `17`. **La correccion se declara y no se borra**, porque
+una cifra que se arregla callando es la que no se puede recontar.
+
 ### OO.5.g. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
 
 *Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
@@ -51698,7 +51725,7 @@ la **fidelidad `D.30` con puente** da **`0` puentes sobre `21` pasos releidos** 
 |---:|---|---|
 | 1 | los registros de la `ACTA 51` recogidos sin reabrirlos, la caida de `REPORTE` que sube a `2 de 3` con su remedio, y las dos deudas nuevas recogidas y no pagadas | **CERRADA en `OO.1`**: las `8` adjudicaciones de la `ACTA 51` recogidas sin rediscutirse, `REPORTE` en `2 de 3` leida del instrumento, el remedio de `1.a` ejecutado en `OO.0.b` pegando la lista cerrada de las cuatro guardas de DATO antes de usar la palabra, y `d056` y `d057` recogidas con lo unico que `d056` cambia hoy aplicado en los `9` bloques de veredicto |
 | 2 | la frontera de `cap_06`, `cap_07` y `cap_08` publicada antes de cortar nada, cerrada contra el cuerpo al digito, y cada fila con los nodos que preve | **CERRADA en `OO.2`**: `82` tramos en tres unidades, `4122`, `3832` y `1138` palabras sumando el cuerpo entero de cada una, **cero lineas sin cubrir y cero solapes en las tres**, `17` nodos previstos y `65` tramos de cero cada uno con su motivo en su celda, las tres tablas talladas celda a celda contra `.v53/frontera.py`, y una correccion declarada por regeneracion en `OO.2.e` |
-| 3 | minar en el orden del libro, un candidato por vez, con su aduana en el mismo acto, techo de `30` candidatos o `90` minutos, cero inserciones | **CERRADA en `OO.3`**: `9` candidatos escritos y `9` pasados por su aduana en el mismo acto, `1 CAERIA` corregido en el acto y su hermano corregido antes de escribirse, **`cap_06` entero en `8` de `8`** y `cap_07` abierto en `1` de `9`, `18` pares de cola leidos enteros con `18` veredictos `SANO` razonados, los dos pares de la banda alta de `0,4` leidos primero y medidos en `OO.3.h`, `d058` anotada, y **`CERO INSERCIONES`** con la puerta de `D.39` medida por mi en sus dos mitades |
+| 3 | minar en el orden del libro, un candidato por vez, con su aduana en el mismo acto, techo de `30` candidatos o `90` minutos, cero inserciones | **CERRADA en `OO.3`**: `9` candidatos escritos y `9` pasados por su aduana en el mismo acto, `1 CAERIA` corregido en el acto y su hermano corregido antes de escribirse, **`cap_06` entero en `8` de `8`** y `cap_07` abierto en `1` de `9`, `17` pares de cola leidos enteros con `17` veredictos `SANO` razonados, los dos pares de la banda alta de `0,4` leidos primero y medidos en `OO.3.h`, `d058` anotada, y **`CERO INSERCIONES`** con la puerta de `D.39` medida por mi en sus dos mitades |
 | 4 | la fidelidad `D.30` por muestra, con la semilla `v53` escrita y la salida del instrumento pegada, y `PASOS INVENTADOS` por capitulo | **CERRADA en `OO.4`**: semilla `v53` escrita y salida del repartidor pegada entera, `cap_07` releido ENTERO y `cap_06` por muestra de `15`, mi lista cotejada paso a paso contra la que el instrumento repartio, **`0` PUENTE sobre `21` pasos releidos** y `0,0` por ciento en los tres capitulos, el disparador sin saltar en ninguno, y el unico paso dudoso traido por mi en `OO.4.b` |
 | 5 | el cierre: las guardas, la tabla `D.52`, el estado recomputado al cierre, la linea del tramo con su reloj y los discutibles marcados | **CERRADA en `OO.5` CON UNA DEUDA DECLARADA**: `gate`, `guiones`, tallado y censo en verde, y **la prueba de aceptacion en ROJO con `1` fallo de `329`, que NO es guarda de DATO sino la deuda `d057`** y cuyo arreglo vive en `tests/`, vedado por `D.45`. Estado recomputado al cierre (`346`, `740`, `1`, `65`), reloj de aduana de `4659,0` s sobre `11` pasadas, `77,7` de `90` minutos, media de `517,7` s contra los `731,2` del presupuesto, deuda de `19` a `20` y `15` discutibles marcados |
 
