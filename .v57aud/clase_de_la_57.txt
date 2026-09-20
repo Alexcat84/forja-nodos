@@ -1,0 +1,6 @@
+56 ('LIBRE', 'van 2 de 5 desde la ultima de saneamiento (la 54), con 19 deuda(s) esperando')
+57 ('LIBRE', 'van 3 de 5 desde la ultima de saneamiento (la 54), con 19 deuda(s) esperando')
+58 ('LIBRE', 'van 4 de 5 desde la ultima de saneamiento (la 54), con 19 deuda(s) esperando')
+59 ('SANEAMIENTO', 'han pasado 5 vuelta(s) desde la ultima de saneamiento (la 54) y la cadencia es 5, con 19 deuda(s) pendientes')
+60 ('SANEAMIENTO', 'han pasado 6 vuelta(s) desde la ultima de saneamiento (la 54) y la cadencia es 5, con 19 deuda(s) pendientes')
+ultima saneamiento: 54
