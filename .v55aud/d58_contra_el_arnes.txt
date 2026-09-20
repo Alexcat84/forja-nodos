@@ -1,0 +1,18 @@
+$ grep -nE 'arranque|APERTURA CIEGA|apertura ciega sellada' docs/loop/loop.log | tail
+  4173:[2026-09-20 12:08:04] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+  4190:[2026-09-20 13:06:31] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+  4209:[2026-09-20 13:23:47]   apertura ciega sellada: deb1a434ca921f6da5ea087833bce388d85e3a8a
+
+$ tail -1 docs/loop/SELLOS_APERTURA.jsonl
+  {"vuelta": 1, "fecha": "2026-09-20 13:23:47", "sello": "deb1a434ca921f6da5ea087833bce388d85e3a8a"}
+
+$ docs/loop/TESTIGO_GUARDAS.json
+  fecha del testigo : 2026-09-20 13:23:41   commit : ae610dc5a8c3   guardas: gate, guiones, censo_rutas, citas_de_credito
+
+LAS TRES QUE D.58 QUITA DEL REGIMEN LIGERO, CONTADAS EN ESTA CORRIDA:
+  fase ciega abierta : 1
+  sello escrito      : 1
+  testigo escrito    : 1  (su fecha, 2026-09-20 13:23:41, cae dentro de esta corrida)
+
+Y LO QUE COSTO, leido del log y no estimado:
+  [2026-09-20 13:23:40] auditor ciego listo (USD 6.8138440000000005), 1029s, intento 1 de 7

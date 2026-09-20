@@ -1,0 +1,19 @@
+LA VUELTA 54 DEL REPORTE: lineas 51844 a 52859
+
+A. LA MISMA RUTA PEGADA DOS VECES CON DOS SALIDAS DISTINTAS
+   linea 52559 del fichero: <!-- TALLADO: parcial salida=.v54/deuda_cierre.txt -->
+        -> pega: pendientes: 16    pagadas: 23
+   linea 52722 del fichero: <!-- TALLADO: parcial salida=.v54/deuda_cierre.txt -->
+        -> pega: pendientes: 17    pagadas: 25
+   $ grep -n 'pendientes:' .v54/deuda_cierre.txt   (la ruta que las dos citan, hoy)
+        4:  pendientes: 17    pagadas: 25
+
+B. EL DENOMINADOR DEL BARRIDO DE LA PREGUNTA 11
+   linea 52151: fichas de cuarentena barridas         : 575  (ficheros .json bajo cuarentena/)
+   linea 52154: denominador 921  documentos barridos (nodos del grafo mas fichas de cuarentena)
+   $ find cuarentena -name '*.json' | wc -l
+        577
+   $ ls cuarentena/_derivadas/*.json | wc -l
+        2
+   la cifra publicada, 575, es 577 menos las 2 de _derivadas.
+   mi barrido propio sobre los 923 va en .v55aud/p11_barrido_propio.txt: las mismas 4.

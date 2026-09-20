@@ -1,0 +1,82 @@
+==============================================================================
+ACTA 53: LAS CIFRAS DERIVADAS, IMPRESAS POR SU INSTRUMENTO (D.59)
+==============================================================================
+
+1. EL COSTE DE LA CORRIDA LIGERA, DE docs/loop/loop.log
+   turnos con linea 'listo (USD ...)' en el log : 151
+   de esos, en MODO_INSERCION=cuarentena        : 35
+   LAS CELDAS DE LA CORRIDA LIGERA, sin media, que son dos:
+     2026-09-10 00:08:25  extractor      cuarentena     7.0131 USD    1178 s
+     2026-09-10 00:30:22  auditor        cuarentena     6.6302 USD    1317 s
+     2026-09-10 06:38:41  extractor      cuarentena     7.4083 USD    1305 s
+     2026-09-10 07:01:54  auditor        cuarentena     8.1486 USD    1393 s
+     2026-09-10 08:44:56  extractor      cuarentena     2.9131 USD     592 s
+     2026-09-10 09:06:00  auditor        cuarentena     6.3865 USD    1263 s
+     2026-09-10 09:57:20  extractor      cuarentena     7.2280 USD    1369 s
+     2026-09-10 10:27:49  auditor        cuarentena    10.4003 USD    1829 s
+     2026-09-10 11:53:11  extractor      cuarentena    14.5280 USD    2572 s
+     2026-09-10 12:30:30  auditor        cuarentena    11.7015 USD    2239 s
+     2026-09-10 13:15:30  extractor      cuarentena    14.7962 USD    2699 s
+     2026-09-10 13:55:39  auditor        cuarentena    10.3711 USD    2409 s
+     2026-09-10 14:42:39  extractor      cuarentena    16.1182 USD    2820 s
+     2026-09-10 18:50:25  extractor      cuarentena    15.6907 USD    2564 s
+     2026-09-10 19:01:41  auditor ciego  cuarentena     3.7011 USD     676 s
+     2026-09-10 19:45:37  auditor        cuarentena    14.4714 USD    2635 s
+     2026-09-10 20:44:50  extractor      cuarentena    20.1880 USD    3313 s
+     2026-09-10 21:06:59  auditor ciego  cuarentena     5.3466 USD    1329 s
+     2026-09-10 21:33:10  auditor        cuarentena     9.5809 USD    1570 s
+     2026-09-10 23:07:04  extractor      cuarentena    30.1595 USD    5632 s
+     2026-09-10 23:23:29  auditor ciego  cuarentena     5.7329 USD     984 s
+     2026-09-10 23:57:43  auditor        cuarentena    15.8214 USD    2053 s
+     2026-09-11 01:34:27  extractor      cuarentena    19.0469 USD    5804 s
+     2026-09-11 01:49:22  auditor ciego  cuarentena     5.0013 USD     895 s
+     2026-09-11 02:17:16  auditor        cuarentena    10.3586 USD    1673 s
+     2026-09-11 10:34:38  extractor      cuarentena    43.4434 USD    8924 s
+     2026-09-11 10:53:41  auditor ciego  cuarentena     8.9131 USD    1143 s
+     2026-09-11 13:25:12  auditor        cuarentena    10.5507 USD    1649 s
+     2026-09-11 14:07:16  extractor      cuarentena    13.7980 USD    2524 s
+     2026-09-11 14:20:32  auditor ciego  cuarentena     4.1077 USD     795 s
+     2026-09-11 14:51:57  auditor        cuarentena     9.8076 USD    1884 s
+     2026-09-11 15:41:54  extractor      cuarentena    32.2323 USD    2997 s
+     2026-09-11 15:56:01  auditor ciego  cuarentena     4.3519 USD     847 s
+     2026-09-20 13:06:30  extractor      cuarentena    20.6911 USD    3503 s
+     2026-09-20 13:23:40  auditor ciego  cuarentena     6.8138 USD    1029 s
+   la vara con la que se compara el turno de extractor:
+     media USD/turno de extractor en insertar   : 26.06 USD
+       numerador   990.29  suma de USD de esos turnos
+       denominador 38  turnos de extractor en insertar
+     CAIDA del turno de extractor, ligero contra insertar: -73.1 por ciento
+       numerador   -19.0471  USD del turno de extractor en ligero menos la media de insertar
+       denominador 26.06  media de USD de los turnos de extractor en insertar
+     Y CONTRA EL OBJETIVO ESCRITO DE 5 USD: 2.01 USD de exceso, 1.4 veces el objetivo
+       numerador   7.0131  USD del turno de extractor en ligero
+       denominador 5  USD del objetivo escrito en el encargo de la 54
+
+2. d033: LA TASA DE LA PRUEBA INTERMITENTE, SOBRE EL MISMO ARBOL
+   corridas de la vuelta 54 (.v54/d033_tasa.txt)      : 12  (0 ROJO, 12 VERDE)
+   corridas mias de hoy (.v55aud/d033_tasa_auditor.txt): 5  (0 ROJO, 5 VERDE)
+   TASA DE ROJO sobre el arbol de la vuelta 54        : 0.0 por ciento
+     numerador   0  corridas que salieron ROJO
+     denominador 17  corridas lanzadas sobre el mismo arbol (12 suyas mas 5 mias)
+   SEGUNDOS POR CORRIDA                              : 18.9 s
+     numerador   321  suma de segundos de esas corridas
+     denominador 17  corridas lanzadas
+
+3. PASOS INVENTADOS POR CAPITULO (AUDITOR_FORJA.md 8), VUELTA 54
+   $ git diff --name-only e63f5af..HEAD -- cuarentena/
+   fichas de cuarentena creadas o modificadas por la vuelta 54 : 0
+   LA FILA POR CAPITULO, y el denominador es 'pasos ESCRITOS POR LA VUELTA 54':
+     cap_02  pasos vivos en bandeja  50  |  pasos escritos por la 54: 0  ->  fila SIN SUPERFICIE
+     cap_03  pasos vivos en bandeja 121  |  pasos escritos por la 54: 0  ->  fila SIN SUPERFICIE
+     cap_04  pasos vivos en bandeja 156  |  pasos escritos por la 54: 0  ->  fila SIN SUPERFICIE
+     cap_05  pasos vivos en bandeja  84  |  pasos escritos por la 54: 0  ->  fila SIN SUPERFICIE
+     cap_06  pasos vivos en bandeja  62  |  pasos escritos por la 54: 0  ->  fila SIN SUPERFICIE
+     cap_07  pasos vivos en bandeja   6  |  pasos escritos por la 54: 0  ->  fila SIN SUPERFICIE
+     TOTAL      pasos vivos en bandeja 479  |  pasos escritos por la 54: 0
+
+4. LA MUESTRA PINEADA DE LOS SANO (AUDITOR_FORJA.md 7), VUELTA 54
+   $ git diff --numstat e63f5af..HEAD -- bitacora/VEREDICTOS.jsonl
+   lineas de veredicto anadidas por la vuelta 54 : 0
+   veredictos SANO de la tanda                   : 0  ->  no hay poblacion que muestrear
+
+==============================================================================

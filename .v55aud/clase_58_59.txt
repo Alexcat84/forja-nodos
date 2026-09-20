@@ -1,0 +1,11 @@
+$ python scripts/deuda.py --clase 58
+LIBRE
+  van 4 de 5 desde la ultima de saneamiento (la 54), con 17 deuda(s) esperando
+
+$ python scripts/deuda.py --clase 59
+SANEAMIENTO
+  han pasado 5 vuelta(s) desde la ultima de saneamiento (la 54) y la cadencia es 5, con 17 deuda(s) pendientes
+
+$ python scripts/deuda.py --clase 55
+LIBRE
+  van 1 de 5 desde la ultima de saneamiento (la 54), con 17 deuda(s) esperando

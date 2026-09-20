@@ -243,3 +243,8 @@
 {"cae": false, "cita": "ACTA 52 52.8", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 52", "tipo": "tanda", "vuelta": 53}
 {"cae": false, "cita": "ACTA 52 52.9", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 52", "tipo": "tanda", "vuelta": 53}
 {"cita": "docs/loop/paradas/2026-09-20-la-media-la-calcula-el-instrumento-DECISION.md, punto 1", "especie": "REPORTE", "linea": "serial", "motivo": "reinicio con condicion mecanica ya puesta: D.59, el tallador caza una cifra derivada sin instrumento en su parrafo y corre en cada commit", "racha": "0 de 3", "tipo": "reinicio"}
+{"cae": true, "cita": "ACTA 53 53.6", "especie": "REPORTE", "linea": "serial", "racha": "1 de 3", "tanda": "ACTA 53", "tipo": "tanda", "vuelta": 54}
+{"cae": false, "cita": "ACTA 53 53.8", "especie": "CIFRA PUBLICADA", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 53", "tipo": "tanda", "vuelta": 54}
+{"cae": false, "cita": "ACTA 53 53.8", "especie": "CLASE", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 53", "tipo": "tanda", "vuelta": 54}
+{"cae": false, "cita": "ACTA 53 53.8", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 53", "tipo": "tanda", "vuelta": 54}
+{"cae": true, "cita": "ACTA 53 53.11", "especie": "AUDITOR", "linea": "serial", "racha": "1 de 3", "tanda": "ACTA 53", "tipo": "tanda", "vuelta": 54}
