@@ -1,0 +1,18 @@
+ARRANQUE DE LA CORRIDA : [2026-09-20 12:08:04] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+
+vuelta  turno                 USD      seg  cerrado
+1       extractor         20.6911     3503  2026-09-20 13:06:30
+1       auditor ciego      6.8138     1029  2026-09-20 13:23:40
+1       auditor           14.0510     1844  2026-09-20 13:54:37
+2       extractor         24.8943     6724  2026-09-20 15:46:42
+2       auditor ciego     10.8811     2616  2026-09-20 16:30:18
+
+TURNOS CERRADOS EN ESTA CORRIDA                 : 5
+TURNOS POR ENCIMA DE 8 USD                      : 4
+TURNOS POR ENCIMA DE 10 USD (D.56)              : 4
+GASTO SUMADO DE LA CORRIDA, SIN MI TURNO         : 77.3314 USD
+
+EL TURNO DE EXTRACTOR, VUELTA A VUELTA, QUE ES LO QUE EL DISPARADOR MIDE:
+  VUELTA 1 (serial 54): 20.6911 USD   PASA de 8
+  VUELTA 2 (serial 55): 24.8943 USD   PASA de 8
+  VUELTAS SEGUIDAS DE EXTRACTOR POR ENCIMA DE 8 USD: 2
