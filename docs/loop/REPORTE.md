@@ -51446,7 +51446,7 @@ puerta de `D.39` la medi yo en `OO.0.a` y sale cerrada por sus dos mitades.
 - **`cap_08` NO SE MINA Y NO ES UN OLVIDO**: su frontera le da `0` nodos con motivo por fila.
 - **CORTE EL TRAMO POR EL RELOJ Y NO POR EL NUMERO**, que es la mitad del techo que muerde hoy:
   `9` esta muy por debajo de los `30` de `D.58`, y el reloj llego a `77,7` de los `90` minutos con
-  una pasada media de `540` s en la ultima, **que ya no cabia otra entera con margen para cerrar**.
+  una pasada de `540` s en la ultima segun `.v53/reloj_c9.txt`, **que ya no cabia otra entera con margen para cerrar**.
 
 **CERRADA `OO.3`.**
 
@@ -51645,10 +51645,40 @@ tienen fichero llevan escrito en su fila por que no lo tienen.
 > `77,7` de los `90` minutos**, con `12,3` minutos de margen que no daban para otra pasada entera
 > mas el cierre.
 
-**Y LA MEDIA CAYO UN `29,2` POR CIENTO RESPECTO DE LA QUE EL ENCARGO USO PARA PRESUPUESTAR**, de
-`731,2` s a `517,7` s, **asi que salieron `9` candidatos donde el presupuesto predecia `7,4`**. No
-propongo cambiar la cifra del presupuesto con una sola vuelta de contraste: **la dejo medida aqui y
-el auditor decide**, que es de quien es esa decision (`d011`).
+> **CORRECCION DECLARADA, 20 sep 2026, por regeneracion (`D.59`).** *Punto 1 de la decision
+> del fundador archivada en
+> `docs/loop/paradas/2026-09-20-la-media-la-calcula-el-instrumento-DECISION.md`.*
+>
+> ~~**Y LA MEDIA CAYO UN `29,2` POR CIENTO**, de `731,2` s a `517,7` s~~ **LA CAIDA POR
+> PASADA ES DEL `42,1` POR CIENTO, de `731,2` s a `423,5` s**, y **esa es la que
+> presupuesta**.
+>
+> **LO QUE ESTABA MAL NO ERA LA CIFRA: ERA LA FRASE.** El `517,7` sale de dividir los
+> `4659,0` s entre `9`, **y el numerador ya trae dentro la pasada de `600` s que no dejo
+> fichero de reloj**. Dividirlo entre `9` **mezcla dos poblaciones**. Sobre las `11`
+> lanzadas, que es de donde sale el numerador, la media es `423,5`.
+>
+> **LA CIFRA LA CALCULA UN INSTRUMENTO Y NO ESTA LINEA** (`D.59`):
+
+<!-- TALLADO: parcial salida=.v54/media_por_pasada.txt -->
+
+    LA MEDIA POR PASADA DE LA VUELTA 53, con numerador y denominador nombrados
+
+      numerador : 4659.0 s, la suma del reloj de aduana de la vuelta 53
+                  (INCLUYE la pasada de 600 s que no dejo fichero de reloj)
+
+      sobre las 11 pasadas LANZADAS                                423.5 s
+      sobre las 9 pasadas CON fichero de reloj                     517.7 s
+
+      contraste: la vuelta 52, 4387.4 s sobre 6.0 pasadas
+      su media por pasada                                          731.2 s
+
+      LA CAIDA POR PASADA, que es la que presupuesta:
+      (423.5 menos 731.2) sobre 731.2                              -42.1 por ciento
+
+**Salieron `9` candidatos donde el presupuesto predecia `7,4`.** No propongo cambiar la cifra
+del presupuesto con una sola vuelta de contraste: **la dejo medida aqui y el auditor decide**,
+que es de quien es esa decision (`d011`).
 
 ### OO.5.e. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
 

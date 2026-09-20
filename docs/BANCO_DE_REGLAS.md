@@ -3245,3 +3245,71 @@ encargo declarando `SANEAMIENTO` pasa.
 > **`gerber_emyth` y `marquet_turn_the_ship` siguen pausados con sus `19` candidatos**, y
 > **se relevan solo si el coste medido del regimen ligero lo permite**. Eso se decide **con
 > la cifra de Grove delante, no ahora.**
+
+---
+
+## D.59. LA CIFRA DERIVADA LA CALCULA EL INSTRUMENTO (20 sep 2026, decision del fundador)
+
+*Decision del fundador del 20 sep 2026 sobre la parada de la vuelta 53. **El numero lo
+asigna esta sesion.** Es la cura de una racha con tres tandas medidas.*
+
+### La letra
+
+> **TODA MEDIA, PORCENTAJE, RAZON O DIFERENCIA QUE EL REPORTE PUBLIQUE LA IMPRIME UN
+> INSTRUMENTO, con su numerador y su denominador NOMBRADOS.**
+>
+> **Una cifra derivada a mano de dos celdas no se publica.**
+
+### El ejemplar, y son tres de la misma figura
+
+La racha `REPORTE` llego a su tope con tres caidas seguidas, y el auditor las resumio en
+una linea: **una frase sobre una cifra cierta que el propio instrumento desmiente dos
+lineas abajo.** La tercera:
+
+    media por pasada CON reloj             : 517,7 s
+    pasadas de aduana lanzadas             : 11
+    pasadas CON fichero de reloj           : 9
+    suma del reloj de aduana               : 4659,0 s
+
+**`11` pasadas en el numerador y `9` en el denominador.** Los `4659,0` s **incluyen la
+pasada de `600` s que la celda de al lado marca sin fichero de reloj**, asi que dividirlos
+entre `9` **mezcla dos poblaciones**. De ahi salia un `-29,2` por ciento donde **la caida
+real por pasada es `-42,1`**.
+
+> **LO QUE CAYO NO FUE LA CIFRA: FUE LA FRASE.** `4659,0` es cierto y `9` es cierto; **lo
+> falso es que uno sea el numerador del otro.** Por eso la regla no pide mas medicion:
+> pide **que quien divide diga entre que divide.**
+
+### La guarda, y por que solo mira la vuelta viva
+
+`scripts/tallar_reporte.py` gana `cifras_derivadas_sueltas()`, y **corre en cada commit**
+dentro de `scripts/cerrar_reporte.py`. **Una frase con cifra derivada sin instrumento en su
+parrafo cae nombrando la frase.**
+
+**SOLO EN LA VUELTA VIVA, Y ESO NO ES UNA CONCESION: es lo que separa una guarda de un
+grito.** Medido antes de escribirla: sobre el reporte entero **caerian `591` lineas** de
+`53` vueltas de historia ya auditada; **sobre la vuelta viva cayeron `2`, y las dos eran de
+verdad.** Una guarda con quinientos noventa y un avisos **se aprende a no mirar**, y esta
+casa ya pago ese precio dos veces.
+
+**Y LA UNIDAD ES EL PARRAFO, NO LA LINEA.** Lo corrigio un falso positivo el mismo dia en
+que la guarda nacio: **la correccion declarada que repara la caida de la vuelta 53 cita su
+instrumento dos lineas por debajo de la cifra**, y por linea la guarda **tumbaba el arreglo
+que ella misma pedia**. Una frase se publica dentro de un parrafo.
+
+**Y LA PALABRA VA JUNTO AL NUMERO**, no solo en la misma linea: sin eso, un encabezado que
+dice *UNA FILA POR CAPITULO Y NO UNA MEDIA* caia por la palabra `media` y por el digito de
+su numero de seccion.
+
+**Caso positivo:** la frase de la vuelta 53 (`la media cayo un 29,2 por ciento`) **cae**.
+**Negativo:** ese mismo parrafo nombrando `.v53/reloj.txt` **pasa**.
+
+### Y la cifra buena entro por regeneracion
+
+    $ python .v54/media_por_pasada.py
+      sobre las 11 pasadas LANZADAS                                423.5 s
+      sobre las 9 pasadas CON fichero de reloj                     517.7 s
+      su media por pasada (vuelta 52)                              731.2 s
+      (423.5 menos 731.2) sobre 731.2                              -42.1 por ciento
+
+**`42,1` por ciento es la caida por pasada, y esa es la que presupuesta.**

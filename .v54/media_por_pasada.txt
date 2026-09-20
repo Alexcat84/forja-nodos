@@ -1,0 +1,18 @@
+$ python .v54/media_por_pasada.py
+LA MEDIA POR PASADA DE LA VUELTA 53, con numerador y denominador nombrados
+
+  numerador : 4659.0 s, la suma del reloj de aduana de la vuelta 53
+              (INCLUYE la pasada de 600 s que no dejo fichero de reloj)
+
+  sobre las 11 pasadas LANZADAS                                423.5 s
+  sobre las 9 pasadas CON fichero de reloj                     517.7 s
+
+  contraste: la vuelta 52, 4387.4 s sobre 6.0 pasadas
+  su media por pasada                                          731.2 s
+
+  LA CAIDA POR PASADA, que es la que presupuesta:
+  (423.5 menos 731.2) sobre 731.2                              -42.1 por ciento
+
+  POR QUE EL DENOMINADOR SON LAS 11 Y NO LAS 9: el numerador ya trae dentro la
+  pasada sin fichero de reloj. Dividirlo entre 9 mezcla dos poblaciones, y esa
+  mezcla es la caida de la vuelta 53.

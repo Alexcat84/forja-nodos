@@ -63,6 +63,103 @@ DOCUMENTOS = (RUTA_REPORTE, RUTA_APERTURA)
 VENTANA = 12                 # lineas por encima de la tabla donde se busca
 TOPE_DE_SEGUNDOS = 900       # un instrumento que no acaba en 15 min se declara
 MARCADOR = re.compile(r"<!--\s*TALLADO:(.*?)-->", re.S)
+
+# ---------------------------------------------------------------------------
+# LA CIFRA DERIVADA LA CALCULA EL INSTRUMENTO (D.59, 20 sep 2026).
+#
+# LA CAIDA QUE LA OBLIGA, y es la tercera seguida de la misma familia: el reporte de
+# la vuelta 53 publico **media por pasada CON reloj: 517,7 s** con `11` pasadas en el
+# numerador y `9` en el denominador. Los `4659,0` s incluian una pasada de `600` s que
+# la celda de al lado marcaba **sin fichero de reloj**. La cifra era cierta de algo;
+# **la frase decia otra cosa**, y de ahi salia un `-29,2` por ciento donde la caida real
+# por pasada es `-42,1`.
+#
+# LAS TRES CAIDAS DE LA RACHA SON LA MISMA FIGURA: *una frase sobre una cifra cierta que
+# el propio instrumento desmiente dos lineas abajo.*
+#
+# SE MIDE SOLO EN LA VUELTA VIVA, Y ESO NO ES UNA CONCESION: es lo que separa una guarda
+# de un grito. Sobre el reporte entero caerian `591` lineas de `53` vueltas de historia;
+# sobre la vuelta viva cayeron `2`, **y las dos eran de verdad**. Una guarda con
+# quinientos noventa y un avisos se aprende a no mirar, y esta casa ya pago ese precio
+# dos veces.
+#
+# Y LA PALABRA TIENE QUE IR JUNTO AL NUMERO, no solo en la misma linea: sin eso, un
+# encabezado que dice *UNA FILA POR CAPITULO Y NO UNA MEDIA* caia por la palabra `media`
+# y por el digito de su numero de seccion.
+CABEZA_DE_VUELTA = re.compile(r"^#{1,2}\s+VUELTA\s+\d+", re.M)
+CIFRA_DERIVADA = re.compile(
+    r"(?:(media|promedio|variacion|variaci\u00f3n|tasa)\D{0,40}`?\d"
+    r"|\d[^`]{0,40}?(por\s+ciento|porcentaje))", re.I)
+# Una linea se salva si NOMBRA su instrumento: un fichero de salida o una carpeta .vNN/
+NOMBRA_INSTRUMENTO = re.compile(
+    r"`[^`]*\.(txt|py|log|json|jsonl|md)`|\.v\d+\w*/")
+
+
+def cifras_derivadas_sueltas(texto=None, ruta_reporte=None):
+    """Las frases de la VUELTA VIVA que publican una cifra derivada sin instrumento.
+
+    Devuelve `[{"linea", "frase"}]`. **Vacia es verde.**
+
+    LO QUE NO MIRA, Y CADA EXCLUSION TIENE SU MOTIVO:
+
+      - **lo que va dentro de un bloque de tallado**: ya lo imprime un instrumento y el
+        tallado lo compara celda a celda;
+      - **lo sangrado**: es salida pegada de un instrumento, no una frase del reporte;
+      - **lo que nombra su instrumento en la misma linea**: eso es justo lo que la regla
+        pide, y castigarlo seria castigar el cumplimiento;
+      - **todo lo anterior a la vuelta viva**: es historia, y una regla nueva no se
+        aplica hacia atras sobre `53` vueltas ya auditadas.
+    """
+    if texto is None:
+        texto = io.open(ruta_reporte or RUTA_REPORTE,
+                        encoding="utf-8").read()
+    lineas = texto.split(chr(10))
+    marcas = [n for n, l in enumerate(lineas) if CABEZA_DE_VUELTA.match(l)]
+    inicio = marcas[-1] if marcas else 0
+
+    # LA UNIDAD ES EL PARRAFO, NO LA LINEA, y esto lo corrigio un falso positivo mio el
+    # mismo dia en que nacio la guarda: la CORRECCION DECLARADA que repara la caida de
+    # la vuelta 53 cita su instrumento con su marca de tallado, pero dos lineas por
+    # debajo de la cifra. Por linea, la guarda tumbaba el arreglo que ella misma pedia.
+    #
+    # **Una frase se publica dentro de un parrafo**, y si el parrafo nombra su
+    # instrumento, la cifra esta sostenida.
+    sueltas, dentro = [], False
+    parrafo, primera = [], inicio + 1
+
+    def cerrar():
+        if not parrafo:
+            return
+        if NOMBRA_INSTRUMENTO.search(" ".join(parrafo)):
+            return
+        for salto, linea in enumerate(parrafo):
+            if CIFRA_DERIVADA.search(linea):
+                sueltas.append({"linea": primera + salto,
+                                "frase": " ".join(linea.split())[:110]})
+                return
+
+    for numero in range(inicio, len(lineas)):
+        linea = lineas[numero]
+        if "<!-- TALLADO:" in linea:
+            cerrar()
+            del parrafo[:]
+            dentro = True
+            continue
+        if dentro and linea.strip() and not linea.startswith("    ") \
+                and not linea.startswith("|"):
+            dentro = False
+        if dentro or linea.startswith("    "):
+            continue
+        if not linea.strip():
+            cerrar()
+            del parrafo[:]
+            continue
+        if not parrafo:
+            primera = numero + 1
+        parrafo.append(linea)
+    cerrar()
+    return sueltas
+
 CAMPO = re.compile(r"(script|salida)\s*=\s*([^\s]+)")
 EN_COMILLAS = re.compile(r"`([^`]+)`")
 EXT_SALIDA = (".txt", ".out")
@@ -539,6 +636,26 @@ def main(argumentos=None):
         return 0
     dictamenes = revisar_todos(regenerar=regenerar)
     print(texto_informe(dictamenes, estricto))
+
+    # LA CIFRA DERIVADA LA CALCULA EL INSTRUMENTO (D.59, 20 sep 2026).
+    sueltas = cifras_derivadas_sueltas()
+    if sueltas:
+        print("")
+        print("=" * 76)
+        print("CIFRAS DERIVADAS SIN INSTRUMENTO (D.59): %d en la vuelta viva"
+              % len(sueltas))
+        print("=" * 76)
+        for suelta in sueltas:
+            print("  linea %d de docs/loop/REPORTE.md" % suelta["linea"])
+            print("     %s" % suelta["frase"])
+        print("")
+        print("UNA MEDIA, UN PORCENTAJE, UNA RAZON O UNA DIFERENCIA LAS IMPRIME UN")
+        print("INSTRUMENTO, con su numerador y su denominador nombrados. Una cifra")
+        print("derivada a mano de dos celdas no se publica: la vuelta 53 dividio 11")
+        print("pasadas entre 9 y de ahi salio un 29,2 por ciento donde la caida real")
+        print("es 42,1. Nombra el instrumento en el mismo parrafo, o regenera la cifra.")
+        return 1
+
     if any(d["estado"] in ("DIFIERE", "RUTA VACIA") for d in dictamenes):
         return 1
     if estricto and any(d["estado"] == "SIN COMPROBAR" for d in dictamenes):

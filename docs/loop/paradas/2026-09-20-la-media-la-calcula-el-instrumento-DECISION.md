@@ -1,3 +1,91 @@
+# DECISION DEL FUNDADOR, 20 SEP 2026: **LA MEDIA LA CALCULA EL INSTRUMENTO**
+
+*Archivo de la parada de la vuelta 53, escrita por el auditor de la `ACTA 52`. **La
+decision va arriba, literal. El cuerpo va debajo sin tocar una coma.***
+
+---
+
+## LA DECISION, LITERAL
+
+> SESION DE CHAT en forja-nodos. Commitea y pushea lo pendiente en la
+> rama activa antes de tocar nada. DECISION DEL FUNDADOR (20 sep 2026)
+> sobre la parada de la vuelta 53. Archivala en docs/loop/paradas/
+> 2026-09-20-la-media-la-calcula-el-instrumento-DECISION.md, aplicala y
+> relanza EN REGIMEN LIGERO:
+>
+> 1. LA RACHA REPORTE SE REINICIA con condicion mecanica: regla al banco
+>    (tu asignas el numero), LA CIFRA DERIVADA LA CALCULA EL INSTRUMENTO.
+>    Toda media, porcentaje, razon o diferencia que el reporte publique
+>    la imprime un instrumento con su numerador y su denominador
+>    nombrados; una cifra derivada a mano de dos celdas no se publica.
+>    El tallador D.41 gana la comprobacion: una frase con cifra derivada
+>    sin instrumento al lado cae nombrando la frase. Caso positivo: la
+>    frase de la vuelta 53 (517,7 con 11 arriba y 9 abajo) debe caer;
+>    regenerada como 4659,0 / 9 con su denominador nombrado, pasa. Y la
+>    cifra buena entra al reporte por regeneracion: la caida por pasada
+>    es del 42,1 por ciento, y esa es la que presupuesta.
+> 2. EL RELANZAMIENTO ES LA MEDIDA DEL REGIMEN LIGERO, que aun no existe
+>    como cifra: MODO_INSERCION=cuarentena, grove en su regimen de
+>    extraccion (tres capitulos por vuelta, techo 30, fidelidad por
+>    muestra con semilla escrita, sin fase ciega ni sello, acta corta),
+>    y el arnes publica el coste por turno en el log. Objetivo escrito:
+>    turno bajo 5 USD; si tras dos vueltas el turno sigue sobre 8, el
+>    auditor lo declara con el desglose y se para para revisar donde se
+>    va.
+> 3. La deuda d057 se cierra con esta decision citada: la prediccion se
+>    cumplio y su remedio esta puesto. La cadencia de saneamiento sigue
+>    contada desde la 53.
+
+---
+
+## LO QUE SE APLICO
+
+| punto | donde quedo |
+|---|---|
+| **1. la regla** | **`D.59`** en el banco, y la guarda en `scripts/tallar_reporte.py`, **corriendo en cada commit** |
+| **la cifra buena** | por regeneracion, con `.v54/media_por_pasada.py`: **`42,1` por ciento**, `423,5` s contra `731,2` |
+| **la racha** | reiniciada, **con la condicion mecanica ya puesta** y citada en el registro |
+| **3. `d057`** | **pagada**, citando esta decision |
+| **2. el relanzamiento** | `MODO_INSERCION=cuarentena`, y el encargo de la `54` escrito en regimen ligero |
+
+### UNA MATIZACION AL PUNTO 1, PORQUE LA CIFRA NO CUADRA COMO DICE
+
+**La decision dice que `4659,0 / 9` regenerada pasa.** Lo que el instrumento mide es que
+**ese cociente es justo el que no se sostiene**: `4659,0` **ya incluye** la pasada de
+`600` s que no dejo fichero de reloj, **y `9` cuenta solo las que si lo dejaron**.
+
+    sobre las 11 pasadas LANZADAS                                423.5 s
+    sobre las 9 pasadas CON fichero de reloj                     517.7 s
+
+**Las dos cifras se publican, cada una con su denominador nombrado**, que es lo que la
+regla pide. **Y la que presupuesta es `423,5`**, porque es la que casa numerador con
+denominador, **de donde sale el `42,1` por ciento que la propia decision manda escribir.**
+
+### LA GUARDA SE MIDIO ANTES DE ESCRIBIRLA, Y ESO CAMBIO SU ALCANCE
+
+    sobre el reporte entero    591 lineas caerian
+    sobre la vuelta viva         2 lineas, y las dos eran de verdad
+
+**Una guarda con quinientos noventa y un avisos se aprende a no mirar.** Por eso mira
+**solo la vuelta viva**: lo anterior son `53` vueltas ya auditadas, y una regla nueva no se
+aplica hacia atras.
+
+### Y UN FALSO POSITIVO MIO, EL MISMO DIA
+
+**La primera version miraba por LINEA, y tumbo la correccion declarada que ella misma
+pedia**, porque esa correccion cita su instrumento **dos lineas por debajo de la cifra**.
+**La unidad paso a ser el PARRAFO.** Con su prueba de que un parrafo vecino **no** salva:
+si bastara, bastaria con citar un instrumento una vez por reporte.
+
+### Las guardas al aplicar esto
+
+    gate 346 VERDE      guiones VERDE      tallado y censo VERDES
+    D.59 VERDE          credito ENTERO     deuda: d057 pagada
+
+---
+
+# EL CUERPO DE LA PARADA, SIN TOCAR
+
 # PARA ALEXIS: **EL BUCLE SE DETIENE AL CERRAR LA VUELTA 53**, por dos condiciones y no por una
 
 *Escrito por el auditor de la `ACTA 52`, linea **serial** (`extraccion-mundo-11`), el 19 sep 2026.

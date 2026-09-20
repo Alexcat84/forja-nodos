@@ -3537,6 +3537,91 @@ class PruebaCerrojoYCenso(BaseForja):
                 self.taller, "no_commiteado.jsonl")), [])
 
 
+class PruebaCifraDerivada(BaseForja):
+    """LA CIFRA DERIVADA LA CALCULA EL INSTRUMENTO (D.59, 20 sep 2026).
+
+    La racha REPORTE llego a su tope con tres caidas de la misma figura, y el auditor
+    las resumio en una linea: una frase sobre una cifra cierta que el propio instrumento
+    desmiente dos lineas abajo. La tercera dividio 11 pasadas entre 9, y de ahi salio un
+    29,2 por ciento donde la caida real por pasada es 42,1.
+    """
+
+    CABEZA = "# VUELTA 53 DE LA LINEA SERIAL" + chr(10) * 2
+
+    def _mirar(self, cuerpo):
+        from scripts import tallar_reporte
+        return tallar_reporte.cifras_derivadas_sueltas(texto=self.CABEZA + cuerpo)
+
+    # ------------------------------------------------- el par que la decision pidio
+
+    def test_caso_positivo_la_frase_de_la_vuelta_53_cae(self):
+        """`11` arriba y `9` abajo: la frase que llevo la racha a su tope."""
+        sueltas = self._mirar("**Y LA MEDIA CAYO UN `29,2` POR CIENTO**, de `731,2` s "
+                              "a `517,7` s.")
+        self.assertEqual(len(sueltas), 1)
+        self.assertIn("29,2", sueltas[0]["frase"])
+
+    def test_caso_negativo_regenerada_con_su_instrumento_pasa(self):
+        sueltas = self._mirar("**LA CAIDA POR PASADA ES DEL `42,1` POR CIENTO**," + chr(10)
+                              + "y la calcula `.v54/media_por_pasada.py`.")
+        self.assertEqual(sueltas, [])
+
+    # ---------------------------------------------- lo que NO cuenta como derivada
+
+    def test_una_cifra_que_no_es_derivada_no_cae(self):
+        """`346` nodos no es una media: es un recuento, y lo cubre D.41."""
+        self.assertEqual(self._mirar("el grafo tiene `346` nodos y `169` aristas."), [])
+
+    def test_un_encabezado_con_la_palabra_media_y_sin_cifra_no_cae(self):
+        """Caia por la palabra `media` y por el digito de su numero de seccion."""
+        self.assertEqual(
+            self._mirar("### OO.4.a. **UNA FILA POR CAPITULO Y NO UNA MEDIA**"), [])
+
+    def test_la_salida_pegada_de_un_instrumento_no_cae(self):
+        """Va sangrada: es salida, no una frase del reporte."""
+        self.assertEqual(self._mirar("    media por pasada : 517,7 s"), [])
+
+    def test_lo_que_va_dentro_de_un_bloque_de_tallado_no_cae(self):
+        self.assertEqual(
+            self._mirar("<!-- TALLADO: parcial salida=.v54/x.txt -->" + chr(10)
+                        + "| media | 517,7 por ciento |"), [])
+
+    # ------------------------------- el parrafo, y el falso positivo que lo obligo
+
+    def test_el_parrafo_salva_una_cifra_citada_dos_lineas_mas_abajo(self):
+        """POR LINEA, LA GUARDA TUMBABA EL ARREGLO QUE ELLA MISMA PEDIA: la correccion
+        declarada que repara la vuelta 53 cita su instrumento dos lineas por debajo de
+        la cifra. Una frase se publica dentro de un parrafo."""
+        sueltas = self._mirar("> ~~la media cayo un `29,2` por ciento~~ **es `42,1`**."
+                              + chr(10) + "> Lo calcula el instrumento de abajo." + chr(10)
+                              + "> `.v54/media_por_pasada.txt`")
+        self.assertEqual(sueltas, [])
+
+    def test_pero_el_parrafo_de_al_lado_no_la_salva(self):
+        """Si un parrafo vecino bastara, bastaria con citar un instrumento una vez
+        por reporte y la guarda no medira nada."""
+        sueltas = self._mirar("la media cayo un `29,2` por ciento." + chr(10) * 2
+                              + "y aqui hablo de `.v54/media_por_pasada.txt`.")
+        self.assertEqual(len(sueltas), 1)
+
+    # ------------------------------------- solo la vuelta viva, y esta medido
+
+    def test_lo_anterior_a_la_vuelta_viva_no_se_mira(self):
+        """Sobre el reporte entero caerian 591 lineas de 53 vueltas ya auditadas. Una
+        guarda con quinientos noventa y un avisos se aprende a no mirar."""
+        from scripts import tallar_reporte
+        texto = ("# VUELTA 52 DE LA LINEA SERIAL" + chr(10) * 2
+                 + "la media cayo un `80` por ciento, y nadie lo cito." + chr(10) * 2
+                 + "# VUELTA 53 DE LA LINEA SERIAL" + chr(10) * 2
+                 + "el grafo tiene `346` nodos.")
+        self.assertEqual(tallar_reporte.cifras_derivadas_sueltas(texto=texto), [])
+
+    def test_el_reporte_vivo_del_repo_esta_en_verde(self):
+        """Si esto cae, el commit siguiente no pasa el hook."""
+        from scripts import tallar_reporte
+        self.assertEqual(tallar_reporte.cifras_derivadas_sueltas(), [])
+
+
 class PruebaRegimenLigero(BaseForja):
     """DOS REGIMENES: EL LIGERO NO TOCA EL GRAFO (D.58, 19 sep 2026).
 
@@ -4962,7 +5047,7 @@ def main():
              PruebaColaDeDoctrina, PruebaTablaDeCierre,
              PruebaPasoRetiradoDelCampo, PruebaExencionDeMomento,
              PruebaDeudaNoBloquea, PruebaVeredictoYArista,
-             PruebaRegimenLigero]
+             PruebaRegimenLigero, PruebaCifraDerivada]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -5046,6 +5131,8 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaVeredictoYArista)._tests))
     print("  D.58, dos regimenes y la cadencia que no depende de nadie: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaRegimenLigero)._tests))
+    print("  D.59, la cifra derivada la calcula el instrumento: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaCifraDerivada)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))
