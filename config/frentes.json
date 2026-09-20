@@ -175,5 +175,21 @@
       "cita": "decision del fundador del 17 sep 2026, aplicada el 18",
       "que_dice": "PAUSADO COSECHADO con dueño NINGUNO. Sus 23 candidatos estan en la bandeja de esta rama y su racha murio con el frente (D.48). La serial lo toma al cerrar scott_radical_candor, desde el capitulo siguiente al ultimo minado y citando su frontera heredada."
     }
+  },
+  "corte_definitivo": {
+    "cita": "decision del fundador del 21 sep 2026, punto 4",
+    "que_dice": "EL MUNDO 11 CIERRA CON CINCO LIBROS: los cuatro insertados (onu_consumidor, smart_who, zhuo_manager, scott_radical_candor) mas grove_high_output entero. gerber_emyth y marquet_turn_the_ship quedan en la bandeja con sus 19 candidatos, enteros y SIN INSERTAR, como material para cuando la aduana trabaje sin campania.",
+    "por_que_no_entran": "D.39: un libro entra cuando su extraccion cierra. Los dos estan abiertos (gerber 4 de 22 capitulos, marquet 3 de 17), asi que sus candidatos NO pueden insertarse sin minar los libros enteros, y eso es lo que esta campania decide no pagar.",
+    "libros_del_mundo_11": [
+      "onu_consumidor",
+      "smart_who",
+      "zhuo_manager",
+      "scott_radical_candor",
+      "grove_high_output"
+    ],
+    "en_bandeja_sin_insertar": {
+      "gerber_emyth": 10,
+      "marquet_turn_the_ship": 9
+    }
   }
 }

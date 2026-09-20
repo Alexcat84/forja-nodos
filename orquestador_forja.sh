@@ -535,6 +535,25 @@ PROMPT_APERTURA_CIEGA="Estas en el repo forja-nodos, en la APERTURA CIEGA de tu 
 apertura_ciega() { # $1 = vuelta
   local vuelta="$1" refugio="" sello fecha reaparecidos=""
 
+  # LA FASE CIEGA SE APAGA EN CUARENTENA (D.58, y la escribio el fundador el 19 sep;
+  # llego al codigo el 21). ESPECIE ARNES: una regla escrita que no llego a src/.
+  #
+  # POR QUE, Y NO ES AHORRO POR AHORRO: la fase ciega existe para que el auditor
+  # clasifique SIN VER el reporte, y el sello para que no reescriba su clasificacion
+  # despues de verlo (D.34.2, D.46). Las dos protegen una cifra SOBRE EL GRAFO. En
+  # cuarentena no hay ninguna: los candidatos viven en su bandeja y D.39 no los deja
+  # entrar hasta que su lote cierre. **No se protege nada y se paga igual.**
+  #
+  # LO QUE COSTABA, MEDIDO EN LAS VUELTAS 54 Y 55: 6,81 y 10,88 USD de turno ciego,
+  # unos 9 por vuelta, en dos vueltas que no tocaron el grafo.
+  #
+  # EN INSERTAR NO CAMBIA NADA. Ahi el dato existe y las dos guardas se pagan solas.
+  if [ "$MODO_INSERCION" = "cuarentena" ]; then
+    log "VUELTA $vuelta : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)"
+    SELLO_ESPERADO=""
+    return 0
+  fi
+
   # LA FASE CIEGA RETIRA CUATRO FICHEROS, NO UNO (D.34, ampliada por decision
   # del fundador del 11 sep 2026).
   #
@@ -718,6 +737,12 @@ $PROMPT_APERTURA_CIEGA" \
 }
 
 verificar_sello() { # $1 = vuelta. Cierto si la apertura ciega sigue siendo la sellada.
+  # SIN FASE CIEGA NO HAY SELLO QUE VERIFICAR (D.58). Se dice, no se calla: un
+  # verificador que devuelve verde sin haber mirado nada es peor que uno ausente.
+  if [ "$MODO_INSERCION" = "cuarentena" ]; then
+    log "  sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)"
+    return 0
+  fi
   local vuelta="$1" sello_actual sello_guardado
   [ -f "$APERTURA" ] || return 0
   sello_actual="$(git hash-object "$APERTURA" 2>/dev/null || echo sin-sello)"

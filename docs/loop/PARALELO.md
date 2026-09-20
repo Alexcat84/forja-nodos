@@ -229,6 +229,33 @@ alcance.** El tablero lo dice solo cuando llega:
 
 ---
 
+## 4.d. **EL CORTE DEFINITIVO DE ESTA CAMPANIA** (21 sep 2026, decision del fundador)
+
+> # **EL MUNDO 11 CIERRA CON CINCO LIBROS.**
+>
+> Los **cuatro insertados** (`onu_consumidor`, `smart_who`, `zhuo_manager`,
+> `scott_radical_candor`) **mas `grove_high_output` entero.**
+
+| libro | como queda |
+|---|---|
+| **`gerber_emyth`** | **`10` candidatos en bandeja, enteros y SIN INSERTAR** |
+| **`marquet_turn_the_ship`** | **`9` candidatos en bandeja, enteros y SIN INSERTAR** |
+
+**POR QUE NO ENTRAN, Y NO ES UN DESCARTE:** `D.39` dice que **un libro entra cuando su
+extraccion cierra**. Los dos estan **abiertos** (`gerber` va por `4` de `22` capitulos,
+`marquet` por `3` de `17`), asi que **insertar sus `19` obligaria a minar los dos libros
+enteros**, y **eso es lo que esta campania decide no pagar**.
+
+> **QUEDAN COMO MATERIAL, no como basura.** Estan medidos, pasados por la aduana en seco y
+> con sus fronteras cerradas. **Entran el dia que la aduana trabaje sin campania**, de a
+> uno, como el fundador decida.
+
+**LO QUE CAMBIA RESPECTO DE `D.51`:** aquel orden los ponia en prioridad `2` y `3` **para
+esta campania**. El corte **no los borra del orden**: los saca **de esta campania**. Su
+prioridad sigue escrita para el dia que se retomen.
+
+---
+
 ## 5. EL PROCEDIMIENTO DE COSECHA Y RELEVO (`D.49`, `D.50`)
 
 *Cuando un frente cierra su libro en extraccion, su rama se funde a la de insercion. **Y

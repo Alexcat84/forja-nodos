@@ -3079,6 +3079,28 @@ entran hoy.**
 **Hoy la media es `14,92` por turno**, asi que esto no es teorico: **es la mayoria.** No
 prohibe gastar; **obliga a decir en que**, que es lo unico que deja decidir despues.
 
+> ### **CORRECCION DECLARADA, 21 sep 2026: EL AUSTERO DECLARA, NO PARA**
+>
+> *Punto 2 de la decision del fundador del 21 sep 2026, archivada en
+> `docs/loop/paradas/2026-09-21-el-precio-del-extractor-DECISION.md`.*
+>
+> **El encargo de la vuelta `54` escribio:** *si tras DOS vueltas el turno sigue por
+> encima de `8` USD, el bucle **se para** para revisarlo.* **Eso contradecia esta regla**,
+> que dice **declarar** y no parar, y **lo escribi yo, no el fundador.**
+>
+> **EL AUDITOR NO ELIGIO ENTRE LAS DOS: paro y lo subio**, poniendo los dos textos con su
+> fecha y diciendo que `D.13` no lo resolvia porque una es del banco y otra de un encargo.
+> **Eso es exactamente lo que hay que hacer con una contradiccion.**
+>
+> **LO QUE QUEDA VIGENTE ES ESTA REGLA.** El `se para` de aquel encargo **era un disparador
+> de medicion de una sola vez**, ya cumplido: dio la cifra que no existia (`14,98` de media
+> en regimen ligero, ningun turno bajo `8`). **Se retira.** Un turno sobre `10` USD **se
+> declara con su desglose**, y **la parada la decide el fundador con la cifra delante**.
+>
+> **LA LECCION, Y ES MIA:** un encargo no puede escribir una regla que contradiga al
+> banco. Si hace falta un disparador de una vez, **se escribe diciendo que es de una vez y
+> para que medicion**, y no con el verbo de una regla permanente.
+
 ### El instrumento
 
     python scripts/deuda.py                  lo pendiente, y que clase toca

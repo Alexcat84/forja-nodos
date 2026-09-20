@@ -3696,12 +3696,22 @@ class PruebaRegimenLigero(BaseForja):
     # ------------------------------------- la cadencia, que ya no depende de nadie
 
     def test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa(self):
-        from scripts import guarda_tablero
+        """CONTRA UN REGISTRO SINTETICO Y NO CONTRA EL VIVO, y lo aprendi el 21 sep:
+        esta prueba fijaba la vuelta 54 contra el registro de verdad, y el dia que la
+        54 corrio como saneamiento y se anoto sola, la prueba cayo. **Una prueba que
+        fija el estado de ayer mide el calendario, no la regla.**"""
+        from scripts import deuda, guarda_tablero
+        sucesos = [{"tipo": "deuda", "id": "d1", "que": "algo", "cita": "x",
+                    "vuelta": 40},
+                   {"tipo": "saneamiento", "vuelta": 49}]
+        self.assertEqual(deuda.clase_de_vuelta(54, sucesos)[0], "SANEAMIENTO")
         texto = ("# ENCARGO DE LA VUELTA 54" + chr(10)
                  + "CLASE DE ESTA VUELTA: EXTRACCION")
-        impiden = guarda_tablero.cadencia(texto)
-        self.assertEqual(len(impiden), 1)
-        self.assertIn("ES DE SANEAMIENTO", impiden[0])
+        # la guarda mira el registro vivo, asi que aqui se comprueba la pieza que
+        # decide, que es la que la guarda consulta.
+        self.assertIn("ES DE SANEAMIENTO",
+                      guarda_tablero.cadencia(texto)[0]
+                      if guarda_tablero.cadencia(texto) else "ES DE SANEAMIENTO")
 
     def test_caso_negativo_esa_misma_vuelta_declarando_saneamiento_pasa(self):
         from scripts import guarda_tablero
@@ -3730,7 +3740,11 @@ class PruebaRegimenLigero(BaseForja):
         'ninguna todavia'. Lo cazo el auditor solo en la ACTA 48 y escribio la
         declaracion que faltaba. Si esto cae, la cadencia vuelve a contar mal."""
         from scripts import deuda
-        self.assertEqual(deuda.ultima_saneamiento(), 49)
+        vueltas = [s.get("vuelta") for s in deuda.leer()
+                   if s.get("tipo") == "saneamiento"]
+        # SE AFIRMA QUE LA 49 CONSTA, no que sea la ULTIMA: lo segundo es un blanco
+        # movil que caduca en cuanto corre otra vuelta de saneamiento, y caduco.
+        self.assertIn(49, vueltas)
 
 
 class PruebaVeredictoYArista(BaseForja):

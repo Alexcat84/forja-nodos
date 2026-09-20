@@ -1,3 +1,91 @@
+# DECISION DEL FUNDADOR, 21 SEP 2026: **EL PRECIO DEL EXTRACTOR**
+
+*Archivo de la parada de la vuelta 55, escrita por el auditor de la `ACTA 54`. **La
+decision va arriba, literal. El cuerpo va debajo sin tocar una coma.***
+
+---
+
+## LA DECISION, LITERAL
+
+> SESION DE CHAT en forja-nodos. Commitea y pushea lo pendiente en la
+> rama activa antes de tocar nada. DECISION DEL FUNDADOR (21 sep 2026)
+> sobre la parada de la vuelta 55. Archivala en docs/loop/paradas/
+> 2026-09-21-el-precio-del-extractor-DECISION.md y aplicala:
+>
+> 1. LA FASE CIEGA, EL SELLO Y EL TESTIGO SE APAGAN EN MODO cuarentena,
+>    en el arnes (regla escrita en D.58 que no llego al codigo: especie
+>    ARNES). apertura_ciega mira MODO_INSERCION; en cuarentena el turno
+>    del auditor es directo y corto, con su acta corta. Caso positivo con
+>    claude falso en los dos modos. Los 9 USD por vuelta del ciego
+>    desaparecen de la extraccion.
+> 2. EL AUSTERO DECLARA, NO PARA: la regla vigente es la del banco; el
+>    "se para" del encargo de la 54 era un disparador de medicion de una
+>    sola vez, ya cumplido, y se retira por correccion declarada. Un
+>    turno sobre 10 USD se declara con su desglose; la parada la decide
+>    el fundador con la cifra delante, como hoy.
+> 3. UNA VUELTA DE MEDICION CON SONNET, antes de decidir el alcance: la
+>    vuelta 56 mina los siguientes capitulos de Grove con
+>    MODELO_EXTRACTOR=claude-sonnet-5 (el auditor sigue en Opus 5), en
+>    regimen ligero de verdad, y el acta publica tres cifras al lado de
+>    las de Opus: coste del turno del extractor, pasos inventados por
+>    muestra, y candidatos que la aduana en seco bloquearia. Umbral
+>    escrito: si los pasos inventados por muestra quedan bajo el 10 por
+>    ciento y el turno baja a la mitad, GROVE SE TERMINA CON SONNET; si
+>    no, se termina con Opus y se acepta el precio, porque 400 USD de
+>    cuota caben en la semana si no corre nada mas.
+> 4. ALCANCE, decidido hoy y no despues: el mundo 11 CIERRA CON CINCO
+>    LIBROS (los cuatro insertados mas Grove entero). Gerber y Marquet
+>    quedan en la bandeja con sus 19 candidatos, enteros y sin insertar
+>    (D.39: un libro entra cuando su extraccion cierra), como material
+>    para cuando la aduana trabaje sin campaña. Escribelo en el TABLERO
+>    y en PARALELO.md como el corte definitivo de esta campaña.
+> 5. Escribe el PROMPT_SIGUIENTE de la 56 como vuelta de extraccion en
+>    ligero con Sonnet, y deja el comando de relanzamiento con
+>    MODELO_EXTRACTOR=claude-sonnet-5 y MODO_INSERCION=cuarentena. Lanza y monitorea
+
+---
+
+## LA CIFRA QUE OBLIGO A ESTA DECISION
+
+    REGIMEN LIGERO, vueltas 54 y 55, seis turnos
+      v54  extractor   20,69      v55  extractor   24,89
+      v54  ciego        6,81      v55  ciego       10,88
+      v54  auditor     14,05      v55  auditor     12,58
+      TOTAL            89,90      media 14,98 por turno
+
+    objetivo escrito : turno bajo 5,00
+    medido           : 14,98 de media, y NI UN SOLO turno bajo 8
+
+**EL REGIMEN LIGERO NO ABARATO NADA, y la causa estaba medida a medias.** Yo dije el 19
+sep que el ahorro llegaria con el relanzamiento en `cuarentena`. **No llego, porque
+`apertura_ciega` no miraba `MODO_INSERCION`:** `D.58` los apagaba en su letra y **nadie los
+apago en el codigo**. Lo supuse y no lo comprobe antes de decirlo.
+
+**Y AUN ASI EL GRUESO NO ERA ESE:** el ciego son unos `9` USD por vuelta; **los dos
+extractores son `45`.** Apagar la fase ciega ahorra un quinto. **El precio vive en el
+turno que mina**, y por eso el punto 3 mide otro modelo en vez de recortar mas auditoria.
+
+---
+
+## LO QUE SE APLICO
+
+| punto | donde quedo |
+|---|---|
+| **1. la fase ciega en cuarentena** | `orquestador_forja.sh`: `apertura_ciega` y `verificar_sello` miran `MODO_INSERCION`. **Escenarios `18` y `18b`** del banco, uno por modo |
+| **2. el austero declara** | **correccion declarada** en el banco, junto a la regla del austero. **La leccion es mia:** un encargo no puede escribir una regla que contradiga al banco |
+| **3. la medicion con Sonnet** | encargo de la `56`, con sus tres cifras y su umbral escrito |
+| **4. el corte definitivo** | `config/frentes.json` y `PARALELO.md` seccion `4.d` |
+
+### LO QUE EL AUDITOR HIZO BIEN Y CONVIENE QUE QUEDE ESCRITO
+
+**No eligio entre las dos reglas que se contradecian: paro y las subio**, con sus dos
+textos y sus dos fechas, diciendo que `D.13` no lo resolvia **porque una es del banco y la
+otra de un encargo**. Esa distincion no estaba escrita en ningun sitio y la hizo bien.
+
+---
+
+# EL CUERPO DE LA PARADA, SIN TOCAR
+
 # PARA ALEXIS: **EL BUCLE SE PARA, Y NO PORQUE ALGO ESTE ROTO**
 
 *Escrito por el auditor al cerrar la `ACTA 54`, que audito la vuelta `55` de la linea serial

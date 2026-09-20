@@ -690,6 +690,35 @@ comprobar "el prompt dice lo que no ve"      "LO QUE ESTE TURNO NO VE"     "$pro
 comprobar "con la linea literal dentro"      "retirados: REPORTE.md"       "$prompt"
 comprobar "y manda escribir la limitacion"   "ESCRIBE LA LIMITACION"       "$prompt"
 
+# -------------------------------------------------------------- escenario 18
+echo ""
+echo "ESCENARIO 18: LA FASE CIEGA SE APAGA EN CUARENTENA (D.58). No hay cifra"
+echo "              sobre el grafo que proteger, asi que no se paga por"
+echo "              protegerla: 9 USD por vuelta en las vueltas 54 y 55."
+taller="$(montar_banco e18)"
+salida="$(MODO_INSERCION=cuarentena FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "lo dice en voz alta"             "SIN FASE CIEGA"               "$salida"
+comprobar "y dice por que"                  "no hay cifra sobre el grafo"  "$salida"
+comprobar_no "NO abre la fase ciega"        "APERTURA CIEGA ("             "$salida"
+comprobar_no "ni sella"                     "apertura ciega sellada"       "$salida"
+comprobar "el auditor SI corre, directo"    "VUELTA 1 : AUDITOR"           "$salida"
+comprobar "y dice que no hay sello"         "sin sello que verificar"      "$salida"
+comprobar "la vuelta cierra"                "Arnes terminado"              "$salida"
+
+# -------------------------------------------------------------- escenario 18b
+echo ""
+echo "ESCENARIO 18b: EL CASO NEGATIVO, y sin el la guarda no probaria nada."
+echo "               En insertar, la fase ciega y el sello SIGUEN corriendo:"
+echo "               ahi el dato existe y las dos se pagan solas."
+taller="$(montar_banco e18b)"
+salida="$(MODO_INSERCION=insertar FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la fase ciega SI corre"          "APERTURA CIEGA ("             "$salida"
+comprobar "y SI sella"                      "apertura ciega sellada"       "$salida"
+comprobar "y SI verifica el sello"          "sello de la apertura ciega verificado" "$salida"
+comprobar_no "y no dice que la apaga"       "SIN FASE CIEGA"               "$salida"
+
 echo ""
 echo "================================================================"
 echo "RESULTADO: $verdes comprobaciones en VERDE, $rojos en ROJO"
