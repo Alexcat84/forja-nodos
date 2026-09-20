@@ -52875,11 +52875,12 @@ vecino no salva**, porque *si bastara, bastaria con citar un instrumento una vez
 
 | # | la tarea | estado |
 |---:|---|---|
-| `1` | los registros de la `ACTA 53`, recogidos sin reabrirlos | ABIERTA |
-| `2` | la trampa del tablero: abrir por `cap_07` y no por `cap_08` | ABIERTA |
-| `3` | el tramo: `cap_07` hasta cerrarlo, y `cap_09` y `cap_10` si el techo llega | ABIERTA |
-| `4` | la fidelidad `D.30` y la muestra con su semilla escrita | ABIERTA |
-| `5` | el cierre, con el coste dentro | ABIERTA |
+| `1` | los registros de la `ACTA 53`, recogidos sin reabrirlos | **CERRADA**, `VV.1` |
+| `2` | la trampa del tablero: abrir por `cap_07` y no por `cap_08` | **CERRADA**, `VV.2` |
+| `3` | el tramo: `cap_07` hasta cerrarlo, y `cap_09` y `cap_10` si el techo llega | **CERRADA**, `VV.3` y `VV.5` |
+| `4` | la fidelidad `D.30` y la muestra con su semilla escrita | **CERRADA**, `VV.4` |
+| `5` | el cierre, con el coste dentro | **CERRADA**, `VV.7` |
+| + | el informe del lote entero que el encargo pide aparte | **NO ENTREGADO**, `VV.9`, con su reloj delante |
 
 ## VV.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION
 
@@ -53762,3 +53763,26 @@ lo lance.** Y el arnes habia declarado antes que esta corrida no lo traia hecho
 > informe de arriba, en su bloque `LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA`, con su total, su
 > menor, su mediana y su mayor, y con el reparto por senial. **No es rechazo, es trabajo**, y es
 > trabajo que `D.39` pone donde toca: el dia que el lote cierre y entre, no hoy.
+
+### VV.9.b. **EL TABLERO, ESCRITO AL CIERRE** (`D.49`, `D.50`)
+
+<!-- TALLADO: parcial salida=.v55ext/tablero_cierre.txt -->
+
+    $ python forja.py tablero --escribir
+    TABLERO DE FRENTES (D.49, D.50): sede unica del estado de la campania
+      registro: docs/loop/TABLERO.jsonl
+
+      prio lote clave                          estado                 dueno                 band ult cap
+      --------------------------------------------------------------------------------------------------------
+      1    7    grove_high_output              COSECHADO              NINGUNO                 74  cap_10
+
+      MUNDO 11: faltan 3 de 3 libros del corte (grove_high_output, gerber_emyth, marquet_turn_the_ship)
+
+> **`ult cap` pasa de `cap_07` a `cap_10` y la bandeja de `65` a `74`.** Las dos cifras salen
+> del instrumento, no de mi.
+>
+> **Y AVISO A LA VUELTA SIGUIENTE, porque es la misma trampa de `VV.2` con otro numero:** el
+> tablero va a mandar continuar **desde `cap_11`**, y esta vez **eso si es correcto**, porque
+> `cap_07`, `cap_09` y `cap_10` quedan cerrados por su frontera y `cap_08` ya lo estaba. **Lo
+> que `d028` no sabe seguir distinguiendo es si un capitulo esta minado o solo empezado**, asi
+> que la vuelta `56` tiene que volver a comprobarlo a mano, exactamente como hice yo hoy.
