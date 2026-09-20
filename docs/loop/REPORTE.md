@@ -53679,3 +53679,86 @@ no la meto en la cola: `D.56` la congela en `11` y **el encargo lo dice con esas
 > **LA COLA DE VIGENCIA DE `D.15` SALE `RANCIO 71, SIN HUELLA 8`**, y es la cifra que la
 > `ACTA 53` `53.11` corrige contra su propio `rancios 4`. **No es guarda y no la toco**: esta
 > vuelta no cita ningun veredicto como vigente, porque **no emite ninguno.**
+
+---
+
+## VV.9. **EL INFORME DEL LOTE ENTERO: LO LANCE, NO CABE, Y LO DIGO CON SU RELOJ DELANTE**
+
+**El encargo del fundador de esta corrida lo pide expresamente al cerrar el capitulo, asi que
+lo lance.** Y el arnes habia declarado antes que esta corrida no lo traia hecho
+(`docs/loop/loop.log`, `[2026-09-20 13:54:38] VUELTA 2 : SIN INFORME DE LOTE en esta corrida`).
+
+<!-- TALLADO: parcial salida=.v55ext/informe_de_lote_reloj.txt -->
+
+    EL INFORME DEL LOTE ENTERO QUE EL ENCARGO PIDE, Y LO QUE LE PASO
+    ======================================================================
+      lanzado                                  : 2026-09-20T14:35:25-04:00
+      detenido por mi, sin salida               : 2026-09-20T15:06:33-04:00
+      RELOJ CONSUMIDO SIN IMPRIMIR UNA SOLA CIFRA: 1868 s
+      bytes de salida que dejo                  : 33   (solo la linea INICIO)
+      LA PROYECCION, con MI propia media de hoy y no con una heredada:
+        candidatos de la bandeja de grove_high_output : 74
+        media por pasada medida hoy (.v55ext/saldo_uno_a_uno.txt) : 196.8 s
+        PROYECCION DEL LOTE ENTERO                    : 14563 s, o sea 4.0 horas
+      CONTRA LA MEDIDA QUE ESCRIBIO D.43 (EXTRACTOR.md 12):
+        D.43 midio 156,5 s por candidato y mas de tres horas para un lote de 83.
+        La vuelta 20 lo lanzo y lo dejo en 480 bytes, solo la cabecera.
+        Hoy lo lanzo yo y lo dejo en 33 bytes, solo la linea INICIO.
+
+> ## **NO LO ENTREGO, Y ES LA UNICA PIEZA DEL ENCARGO QUE NO ENTREGO.**
+>
+> **Lo digo primero y sin rodeos**, porque una vuelta que cierra corto y no lo dice es caida
+> de `REPORTE`. **El saldo del lote entero de `grove_high_output` no esta en este reporte.**
+>
+> **Y NO ES UNA ESTIMACION MIA: es mi propia medicion de hoy.** Las `9` pasadas de `VV.5.b`
+> dan la media, y esa media aplicada a la bandeja da la proyeccion de arriba. **La vuelta 20
+> lo lanzo y lo dejo en `480` bytes; yo lo deje en `33`.** Es exactamente la frase con la que
+> `D.43` lo saco de mi turno: **una cifra que no cabe en un turno no se firma en un turno.**
+>
+> **LO QUE SI TRAIGO EN SU LUGAR, y no es lo mismo pero no es nada:** el informe de lote
+> **sobre los `9` candidatos de ESTA vuelta**, que es el unico tramo del que esta vuelta
+> responde, y que **si da la cifra que un informe de uno en uno no puede ver:**
+> `CHOCAN entre si dentro del lote`.
+
+### VV.9.a. **EL INFORME DE LOTE DE LOS `9` DE ESTA VUELTA, CON SU SALDO Y SU `CHOCAN`**
+
+<!-- TALLADO: parcial salida=.v55ext/informe_lote_v55.txt -->
+
+    $ python forja.py informe --carpeta .v55ext/lote_v55
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 9
+    poblacion del barrido       : 423   (346 del grafo mas 77 que esperan en bandejas)
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 8   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 43
+      por candidato bloqueado          : menor 1, mediana 6, mayor 11
+      que señal levanta cada vecindad  : familia_id 2, paso_contra_nodo 5, similitud_texto 40
+
+
+**Y SU RELOJ, que es la mitad de la cifra** (`.v55ext/informe_lote_v55.txt`):
+
+    INICIO 2026-09-20T15:06:43-04:00
+    real	31m29.389s
+    FIN 2026-09-20T15:38:13-04:00
+
+> **`CHOCAN entre si dentro del lote: 0`. Esa es la unica cifra que un informe de uno en uno
+> no puede ver**, y por eso valia la pena correrlo aunque fuera sobre `9` y no sobre `74`:
+> **mis nueve candidatos no se pisan entre ellos.**
+>
+> **Y EL SALDO COINCIDE AL DIGITO CON LAS NUEVE PASADAS SUELTAS DE `VV.5.b`**: `1 ENTRARIAN`,
+> `8 BLOQUEARIAN`, `0 CAERIAN`. **Dos instrumentos distintos sobre el mismo material dan lo
+> mismo**, y eso es la comprobacion que ninguno de los dos se da a si mismo.
+>
+> **LA COLA DE LECTURA QUE ESTO ABRE PARA EL DIA DE LA INSERCION** la imprime el propio
+> informe de arriba, en su bloque `LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA`, con su total, su
+> menor, su mediana y su mayor, y con el reparto por senial. **No es rechazo, es trabajo**, y es
+> trabajo que `D.39` pone donde toca: el dia que el lote cierre y entre, no hoy.
