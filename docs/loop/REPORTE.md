@@ -53402,6 +53402,7 @@ para que la relectura ciega empiece por ahi.**
 **El hook aborto el commit del capitulo con `3` tablas en rojo** (`.v55ext/tallado_rojo.txt`).
 **Dos caidas distintas, y solo una es mia de verdad:**
 
+<!-- TALLADO: parcial salida=.v55ext/tallado_rojo.txt -->
 | tabla | que dijo el instrumento | de quien es |
 |---|---|---|
 | las dos fronteras (`VV.3.a`, `VV.3.b`) | `1 fila(s) distintas: el instrumento la imprime y el reporte NO la lleva` | **mia**: al pegar corte la fila de totales |
@@ -53649,3 +53650,32 @@ no la meto en la cola: `D.56` la congela en `11` y **el encargo lo dice con esas
    **Las cuatro correcciones estan declaradas y ninguna se hizo tecleando la celda buena.**
 5. **`13` discutibles marcados a ciegas**, tres de ellos capaces de dejar esta vuelta en `8`
    nodos y dos fronteras sin cosecha.
+
+### VV.7.h. **`cerrar_reporte.py`, CORRIDO ENTERO** (`D.41`, cinco guardas)
+
+<!-- TALLADO: parcial salida=.v55ext/cerrar_reporte.txt -->
+
+    $ python scripts/cerrar_reporte.py
+    [cierre] tallado del reporte (D.41)
+    [cierre] censo de rutas (D.42)
+    [cierre] tabla de cierre de tareas (D.52)
+    [cierre] gate de integridad
+    [cierre] barrido de guiones
+    [cierre] prueba de aceptacion
+    [cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda
+
+    CIERRE EN ROJO. No pasa: prueba de aceptacion
+
+> **LO UNICO QUE NO PASA ES LA PRUEBA DE ACEPTACION, y el encargo la nombra por su nombre:
+> NO es una de las cuatro guardas de dato de `D.55`.** Sus `2` fallos de `339` son `d067`,
+> vedada por `D.45`. **Declarados y sigo.**
+>
+> **Y EL TALLADO EN ESTRICTO ME MORDIO UNA TERCERA VEZ ANTES DE ESTA SALIDA**, y la declaro:
+> la tabla de `VV.6.a` **resume** el instrumento en vez de reproducirlo, y en estricto eso es
+> `SIN COMPROBAR`, que es rojo. **Se arregla diciendolo, no callandolo**: le puse encima
+> `<!-- TALLADO: parcial salida=.v55ext/tallado_rojo.txt -->`, que es exactamente el remedio
+> que `D.41` escribe para ese caso. **Lo que no valia era callarlo.**
+>
+> **LA COLA DE VIGENCIA DE `D.15` SALE `RANCIO 71, SIN HUELLA 8`**, y es la cifra que la
+> `ACTA 53` `53.11` corrige contra su propio `rancios 4`. **No es guarda y no la toco**: esta
+> vuelta no cita ningun veredicto como vigente, porque **no emite ninguno.**
