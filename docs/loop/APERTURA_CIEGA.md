@@ -1,581 +1,632 @@
-# APERTURA CIEGA DE LA VUELTA 53, lote 7 (`grove_high_output`), `cap_06` y la cabeza de `cap_07`
+# APERTURA CIEGA de la vuelta que el arnes rotula `VUELTA 1`, linea `serial`, rama `extraccion-mundo-11`
 
-*Linea **serial** (`extraccion-mundo-11`). Escrita ANTES de ver `docs/loop/REPORTE.md`, que el arnes
-retiro del arbol. **Modo austero** (`D.47`): no repito lo que el registro ya dice.*
-
-> **TODA CIFRA DE ESTA PAGINA LLEVA SU INSTRUMENTO PEGADO** (`D.38.3`), y **toda conclusion sobre
-> contenido va en linea aparte marcada `LECTURA`**. Una cifra sin instrumento al lado no se publica.
+> **Fase ciega.** Escrita ANTES de ver `docs/loop/REPORTE.md`. Cada cifra de esta
+> pagina sale de un instrumento corrido en ESTA fase y lleva su salida literal
+> debajo, con la linea del comando empezando por `$` (`D.38.3`). Toda conclusion
+> sobre contenido va en linea aparte marcada **`LECTURA`**.
 
 ---
 
-## 0. LO QUE EL ARNES ME PIDE DECLARAR, Y VA PRIMERO
+## 0. LA DECLARACION QUE EL ARNES EXIGE (`D.40`)
 
-### **ACTA ANTERIOR LEIDA: `b9d9a8855f76d735bb302aeb89021d44099f0935`**
+    ACTA ANTERIOR LEIDA: d5f4eb832cb0ffd11ddaf35a5bf406e4e2b5f231
 
-**HEREDADOS: `0`.** No hay ningun remedio ni ninguna tarea bloqueante que declarar, y **no lo digo de
-memoria: lo mide el instrumento de la casa** (`D.40`).
+**HEREDADOS: `0`.** No declaro `CUMPLIDO` ni `NO APLICA` de ningun remedio porque
+no hay ninguno que declarar, y eso **no lo afirmo de memoria: lo corro**.
 
-    $ python forja.py herencia | grep -E "su huella|heredados"
-      su huella     : b9d9a8855f76d735bb302aeb89021d44099f0935
+    $ python forja.py herencia
+
+    REMEDIOS PENDIENTES QUE HEREDAS
+    ...
+      acta anterior : ACTA 52. VUELTA 53, lote 7 (`grove_high_output`), `cap_06` y la
+                      cabeza de `cap_07` ...
+      su huella     : d5f4eb832cb0ffd11ddaf35a5bf406e4e2b5f231
       heredados     : 0
 
-**Y COMPRUEBO QUE LA HUELLA ES LA DEL FICHERO QUE TENGO DELANTE**, que es lo unico que distingue
-haber leido el acta de decir que se leyo:
+    AVISO: esta acta MENCIONA remedios en 1 encabezado(s) y no ESCRIBE ninguna
+    tabla de remedios fuera de cita. No se entrega ninguno, y se dice en voz alta:
+    un arnes que entrega cero sin avisar es el defecto que la TAREA 2 de la vuelta
+    31 vino a cerrar.
 
-    $ git hash-object docs/loop/ACTA_AUDITOR.md
-    b9d9a8855f76d735bb302aeb89021d44099f0935
+    El acta anterior no dejo ninguna tarea bloqueante ni ningun remedio escrito.
+    Aun asi tienes que declarar la linea de lectura.
 
-**LECTURA:** la huella que el prompt me entrega **no es un commit, es el blob del propio
-`ACTA_AUDITOR.md`** (`git cat-file -t` responde `blob`), y coincide al digito con el fichero que abri.
-La ultima acta escrita es la **`ACTA 51`, que cubre la vuelta `52`**; yo cubro la **`53`**, la
-inmediatamente siguiente: **NO HAY HUECO DE ACTA** (`AUDITOR_FORJA.md` `1.0`).
+La huella que el instrumento devuelve es **la misma** que el prompt me entrego, y
+por eso la escribo tal cual: `d5f4eb832cb0ffd11ddaf35a5bf406e4e2b5f231`.
 
-    $ grep -n "^# ACTA" docs/loop/ACTA_AUDITOR.md | tail -1 | cut -c1-60
-    38255:# ACTA 51. VUELTA 52, lote 7 (`grove_high_output`), `cap_05`
+**Y LO COMPRUEBO CONTRA MI PROPIA SEDE**, que en esta fase si puedo abrir
+(`ACTA_AUDITOR.md` no es ninguno de los cuatro que `D.34.2` retira):
 
-**NO HAY NINGUN `NO APLICA` QUE SOSTENER**, porque con `0` heredados no hay nada a lo que aplicar
-(`D.40`, 16 sep). La salida de arriba es la que lo sostiene.
+    $ awk '/^# ACTA 52/,0' docs/loop/ACTA_AUDITOR.md | grep -n "BLOQUEANTE\|REMEDIO\|^## "
 
-## 0.1. LO QUE SE ME RETIRO, COMPROBADO Y NO SUPUESTO
+    7:## 52.0. **HUECO DE ACTA Y HERENCIA, Y VAN ANTES QUE NADA** (`1.0`, `D.40`)
+    22:## 52.1. **LO QUE VERIFICO AL DIGITO, CON MIS COMANDOS, SOBRE `33010e6`**
+    75:## 52.2. **LAS TRES FRONTERAS, RECOMPUESTAS POR MI Y SIN CORRER SU INSTRUMENTO**
+    96:## 52.3. **`PASOS INVENTADOS POR CAPITULO`, UNA FILA POR CAPITULO Y NO UNA MEDIA**
+    164:## 52.4. **LA RELECTURA CIEGA: SUS QUINCE DISCUTIBLES MARCADOS** (`5.1`)
+    211:## 52.5. **LA ADJUDICACION QUE TRAIGO DE MI FASE CIEGA, Y NO ES CAIDA DE NADIE**
+    246:## 52.6. **LA CAIDA DE `REPORTE`, Y SUBE A `3 de 3`: LA MEDIA DEL RELOJ**
+    300:## 52.7. **LA CAIDA DE `CIFRA PUBLICADA`: LA CORRELACION DE `d058`**
+    341:## 52.8. **`CLASE` Y `DATO MOVIDO`, LIMPIAS, CON SU MOTIVO MEDIDO**
+    355:## 52.9. **MI PROPIA TANDA, MEDIDA CONTRA MI PAGINA YA SELLADA**
+    383:## 52.10. **EL CREDITO AL CERRAR**
+    400:## 52.11. **LA PARADA, Y SE CUMPLEN DOS CONDICIONES, NO UNA**
+    446:## 52.12. **LO QUE REGISTRO Y NO ADJUDICO**
+    461:## 52.13. **EL COSTE DE MI TURNO**
 
-**El arnes escribio la linea de mi turno en `loop.log`, que NO se retira, y la leo ahi:**
+**`LECTURA`:** ninguna de las catorce secciones de la `ACTA 52` es una tarea
+bloqueante ni un remedio dirigido a mi. **Las dos fuentes coinciden en `0`**, y una
+de ellas es obra mia: no hay herencia perdida por el camino.
 
-    $ grep -n "APERTURA CIEGA" docs/loop/loop.log | tail -1
-    3987:[2026-09-19 22:39:12] VUELTA 9 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+---
+
+## 0.b. LO QUE NO VEO, COMPROBADO EN EL LOG Y NO AFIRMADO DE MEMORIA
+
+    $ tail -n 5 docs/loop/loop.log
+
+    [2026-09-20 12:08:07] VUELTA 1 : EXTRACTOR (claude-opus-5)
+    [2026-09-20 13:06:30] extractor listo (USD 20.691080999999993), 3503s, intento 1 de 7
+    [2026-09-20 13:06:31] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+    [2026-09-20 13:06:31]   hereda 0 remedio(s) del acta anterior, entregados en el prompt (D.40)
+    [2026-09-20 13:06:31]   y solo eso: remedios con su motivo, sin cifras ni conclusiones (D.52)
 
     $ ls docs/loop/REPORTE.md docs/loop/ultimo_extractor.json docs/loop/ultimo_auditor.json docs/loop/CREDITO_serial.jsonl
+
     ls: cannot access 'docs/loop/REPORTE.md': No such file or directory
     ls: cannot access 'docs/loop/ultimo_extractor.json': No such file or directory
     ls: cannot access 'docs/loop/ultimo_auditor.json': No such file or directory
     ls: cannot access 'docs/loop/CREDITO_serial.jsonl': No such file or directory
 
-**NO LOS RECUPERO DE `git` NI POR NINGUNA OTRA VIA**, y declaro ademas lo que SI podria haber abierto
-y no abri: **la vuelta dejo `64` ficheros de trabajo en `.v53/`**, que no son ninguno de los cuatro
-que `D.34.2` retira, pero **contienen su lectura**: sus salidas de aduana candidato a candidato, su
-muestra y su tabla de pasos inventados.
-
-    $ ls .v53/ | wc -l
-    64
-
-**LECTURA:** abrirlos seria leer a ciegas lo que vengo a leer a ciegas. **No abri ninguno**, y lo
-escribo aqui para que se pueda comprobar contra el sello. Lo que si abri, porque es obra mia y la
-regla lo dice con todas las letras, es **`ACTA_AUDITOR.md` y `PROMPT_SIGUIENTE.md`**, mis dos sedes
-(`AUDITOR_FORJA.md` `5.6`).
+Los cuatro **siguen fuera del arbol al cerrar esta pagina**, que es como tienen que
+estar. **No recupere ninguno de `git` ni por ninguna otra via.**
 
 ---
 
-## 1. EL MATERIAL QUE ABRO, MEDIDO
+## 0.c. LO QUE SI LEI Y ROZA EL BORDE, DICHO POR MI ANTES DE QUE ME LO CACEN
+
+**No es una confesion de cortesia: es lo unico que deja saber cuanto vale la lectura
+que viene despues.**
+
+| lo que abri | por que no es ninguno de los cuatro | lo que aun asi me contamino |
+|---|---|---|
+| `docs/loop/ACTA_AUDITOR.md` | obra mia, y el prompt y `D.40` me mandan leerla | nada: es mi propia sede |
+| `docs/loop/DEUDA.jsonl` | `D.55` la hace registro de la linea, y el arnes no la retira | **SI, y es lo serio de esta tabla**: sus lineas `60` a `70` son de la vuelta que vengo a auditar, citan rotulos de su REPORTE (`PP.2.b`, `PP.4`, `LL.5.c`) y traen cifras suyas ya masticadas |
+| `loop.log`, `TABLERO.jsonl`, `TABLA_DE_CIERRE.txt` | ninguno esta retirado | registro, no clasificacion |
+| `AUDITOR_FORJA.md`, `docs/BANCO_DE_REGLAS.md`, `src/aduana.py` | protocolo y codigo | ninguna |
+| **`.v54/`** | **es el cuaderno de la vuelta auditada** | **vi sus `72` NOMBRES DE FICHERO en `git show --stat`. NO ABRI NI UNO.** |
+
+    $ ls .v54/ | wc -l
+    72
+
+**`LECTURA`, Y ES CONTRA MI:** de los nombres de `.v54/` deduje cuales son los siete
+candidatos que la vuelta toco con su `d024`, y eso es informacion del turno auditado
+que se me colo por un listado. **Lo compenso diciendolo, no escondiendolo.** Mi
+adjudicacion de la seccion `5` la hice leyendo los pasos y el libro, y **solo
+despues** abri el `resumen_teorico` de las fichas; lo repito en `5.b`, donde importa.
+
+**Y LO QUE NO HAGO CON `DEUDA.jsonl`:** no repito ni una sola de sus cifras en esta
+pagina. Lo que de ahi salga, sale nombrado como suyo, o no sale.
+
+---
+
+## 1. LA PRIMERA MEDIDA, Y CAMBIA LO QUE ESTA FASE PUEDE SER: **LA VUELTA QUE VENGO A AUDITAR NO TRAE LOTE**
+
+    $ find . -path ./.git -prune -o -newermt "2026-09-20 12:08:07" -type f -print | grep -c '^./cuarentena/'
+    0
 
     $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
         346 dataset/nodos.jsonl
         740 bitacora/VEREDICTOS.jsonl
           1 config/pares_mutuos.jsonl
+       1087 total
 
     $ ls cuarentena/grove_high_output/*.json | wc -l
     65
 
-    $ ls cuarentena/*/*.json | grep -v _insertados | grep -v _derivadas | grep -v ensayo_referencia_163 | wc -l
-    68
+    $ python scripts/deuda.py | tail -n 2
 
-**EL LOTE DE ESTA VUELTA SON `9` FICHAS**, y no me lo dice el reporte: **me lo dice el arbol**, que es
-lo que el reporte tendra que reproducir.
+      ultima vuelta de saneamiento: 54
 
-    $ git log --oneline -6 --name-status | grep -E "^A	cuarentena/grove" | sort -u
-    A	cuarentena/grove_high_output/anunciar_decision_inesperada_reconvocar_reunion.json
-    A	cuarentena/grove_high_output/conducir_etapas_modelo_ideal_decision.json
-    A	cuarentena/grove_high_output/cortar_discusion_libre_momento_justo.json
-    A	cuarentena/grove_high_output/decidir_nivel_competente_inferior.json
-    A	cuarentena/grove_high_output/ejercer_poder_posicion_etapa_decision_clara.json
-    A	cuarentena/grove_high_output/planificar_tres_pasos_demanda_estado_brecha.json
-    A	cuarentena/grove_high_output/tomar_mando_reunion_pares_presidente_ausente.json
-    A	cuarentena/grove_high_output/vencer_sindrome_grupo_pares_autoconfianza.json
-    A	cuarentena/grove_high_output/zanjar_seis_preguntas_decision_adelantado.json
+    $ git diff --stat e63f5af..HEAD -- dataset/ bitacora/ censos/ config/ esquema/ src/ scripts/ tests/ hooks/ docs/BANCO_DE_REGLAS.md docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md docs/loop/AUDITOR_FORJA.md docs/loop/EXTRACTOR.md
+    (sin salida: cero ficheros tocados)
 
-**Y `0` MOVIMIENTOS DE DATO**, que es lo que mi propio encargo mandaba (`TAREA 3`, **CERO
-INSERCIONES**):
+    $ git status --porcelain -- dataset/ bitacora/ censos/ config/ esquema/ src/ cuarentena/
+    (sin salida: cero ficheros tocados)
 
-    $ git log --oneline -6 --name-status | grep -E "^[AM]	(dataset|bitacora|censos)/" | wc -l
-    0
+`e63f5af` es el commit de las `12:07:47`, **diecinueve segundos antes de que el arnes
+abriera el turno del extractor a las `12:08:07`**, asi que el diff mide exactamente
+el turno que vengo a auditar y nada mas.
 
-### 1.1. LOS PASOS DEL LOTE, CONTADOS POR MI Y NO COPIADOS
+**`LECTURA`:** la vuelta auditada es **de SANEAMIENTO, no de extraccion**. No
+escribio ni un candidato nuevo en `cuarentena/`, no movio `dataset/`, `bitacora/`
+ni `censos/`, y no toco `src/`, `scripts/`, `tests/`, el banco ni los protocolos,
+que es lo que `D.45` le veda. El estado `346 / 740 / 1 / 65` es **identico** al que
+la `ACTA 52` midio para la vuelta `53`.
 
-    $ python pasos_por_capitulo.py <las nueve fichas>
-    anunciar_decision_inesperada_reconvocar_reunion      cap_06    8 pasos
-    conducir_etapas_modelo_ideal_decision                cap_06   12 pasos
-    cortar_discusion_libre_momento_justo                 cap_06    7 pasos
-    decidir_nivel_competente_inferior                    cap_06    8 pasos
-    ejercer_poder_posicion_etapa_decision_clara          cap_06    7 pasos
-    planificar_tres_pasos_demanda_estado_brecha          cap_07    6 pasos
-    tomar_mando_reunion_pares_presidente_ausente         cap_06    6 pasos
-    vencer_sindrome_grupo_pares_autoconfianza            cap_06    5 pasos
-    zanjar_seis_preguntas_decision_adelantado            cap_06    9 pasos
-    ---
-    cap_06   8 fichas  62 pasos
-    cap_07   1 fichas  6 pasos
-    TOTAL    9 fichas  68 pasos
-
-**El conteo es `len(pasos_accionables)` de cada fichero y el capitulo se lee de la `UNIDAD DE ORIGEN`
-que la propia ficha escribe.** El guion vive fuera del arbol, en el directorio de trabajo de esta
-sesion, **para no mover ni un byte del repo en mi fase**.
-
-### 1.2. EL CUERPO DE LOS TRES CAPITULOS DE LA FRONTERA, MEDIDO HOY
-
-    $ for c in cap_06 cap_07 cap_08; do sed -e '1,7d' fuentes/grove_high_output/$c.md | wc -w; done
-    4122  cap_06
-    3832  cap_07
-    1138  cap_08
-
-**Lo dejo medido aqui, antes de ver su tabla**, porque la `TAREA 2` que yo escribi manda que la suma
-de las filas de cada frontera de el `wc -w` del cuerpo. **Estas son las tres cifras contra las que se
-cierra**, y quedan selladas antes de que yo vea las suyas.
+**`LECTURA`, Y ES LA QUE MAS VALE DE ESTA PAGINA:** `D.58` dice que en una vuelta de
+extraccion **no hay fase ciega, ni sello, ni testigo**, porque no hay cifra sobre el
+grafo que proteger. Una vuelta de **saneamiento** protege todavia menos: su producto
+entero vive en `DEUDA.jsonl`, `TABLERO.jsonl` y `TABLA_DE_CIERRE.txt`, y **el arnes
+no retira ninguno de los tres**. Retirar cuatro ficheros no ciega una fase cuyo
+material de trabajo esta en los que se quedan. **Lo registro y no lo adjudico**:
+`D.56` tiene la doctrina congelada en `11` preguntas, y esta no abre parada ni entra
+en la cola.
 
 ---
 
-## 2. MI LECTURA DE `cap_06` ENTERO, PIEZA A PIEZA
+## 2. LA LIMITACION QUE ESCRIBO EN VEZ DE LA AFIRMACION (`AUDITOR_FORJA.md` `1.1`)
 
-**Lei `fuentes/grove_high_output/cap_06.md` entero** (`95` lineas, `Cap. 5`, `Decisions, Decisions`)
-**antes de abrir ninguna ficha**, y esta es la frontera que YO levanto, por linea:
+    $ python forja.py credito
 
-| tramo | que trae | procedimiento? | minado? |
-|---|---|---|---|
-| `L13` a `L19` | el problema: poder de posicion contra poder de conocimiento | **no**, es el planteamiento | no |
-| `L23`, `L27`, `L29` | las tres etapas del modelo ideal, cada una con su contenido | **si** | **si**, ficha 1 |
-| `L31` | por que el modelo cuesta a los mandos intermedios | no, es diagnostico | no |
-| `L33` | la decision en el nivel competente mas bajo, con el temple del criterio | **si** | **si**, ficha 2 |
-| `L35` | el caso del periodista y los simbolos de estatus | no, es caso del autor | no |
-| `L41` | el juego de rol y el nombre `par mas uno` | **no**: es la narracion de donde sale el nombre, y **su procedimiento vive en `L51`** | no |
-| `L45`, `L47` | el testimonio de John y la comparacion con el caso del automovil | no, es testimonio | no |
-| `L49` | vencer el sindrome con autoconfianza | **si** | **si**, ficha 6 |
-| `L51` | quien toma el mando si no hay presidente formal | **si** | **si**, ficha 7 |
-| `L53` | el miedo a sonar tonto | **no**: *una advertencia es linea* (vara `6.1`). Una postura no ejecuta una busqueda | no |
-| `L55` | el miedo del junior a ser desautorizado | no, es diagnostico | no |
-| `L57` | la incertidumbre cuando conocimiento y posicion se separan | no, es diagnostico | no |
-| `L61` | cuando es legitimo ejercer el poder de posicion, y cuando no | **si** | **si**, ficha 4 |
-| `L63` | el criterio del momento de cortar la discusion libre | **si** | **si**, ficha 3 |
-| `L65` a `L77` | las seis preguntas que se zanjan por adelantado | **si** | **si**, ficha 5 |
-| `L79` a `L89` | el caso de la planta de Filipinas | no, es el caso del autor aplicando las seis | no |
-| `L91` | aplicar la estructura antes del hecho para evitar el veto tardio | **no como ficha propia**: el procedimiento **es el mismo** que el de `L65` a `L77`, y lo que anade es el motivo | no |
-| `L93` | anunciar lo inesperado, levantar la sesion y reconvocar | **si** | **si**, ficha 8 |
-| `L95` | la cita de Sloan y el mando que se fue y volvio | no, es cierre | no |
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
 
-> ### **LECTURA: por mi lectura, `cap_06` queda ENTERO en `8` piezas, y las `4` que no se minan las nombro yo con su motivo.**
->
-> Las cuatro que un lector podria echar en falta son `L41`, `L53`, `L55` y `L91`, y **ninguna de las
-> cuatro sostiene una ficha propia**: dos son diagnostico, una es advertencia (que la vara `6.1`
-> llama **linea** y no procedimiento), y la cuarta **repite el procedimiento de las seis preguntas**
-> cambiandole el motivo. **Si el reporte declara `cap_06` entero, mi lectura lo sostiene.**
+      LINEA SIN REGISTRO: no hay ningun suceso escrito.
+      Una linea sin tandas NACE CON SU RACHA EN CERO y no hereda
+      la de nadie (D.48). Lo que herede el arnes sera CERO remedios.
 
-### 2.1. Y LA CABEZA DE `cap_07`
+**NO PUBLICO NINGUNA RACHA EN ESTA PAGINA, Y ESTE ES EL MOTIVO.** El instrumento
+dice `LINEA SIN REGISTRO` porque **el arnes retiro `CREDITO_serial.jsonl` para esta
+fase**, no porque la linea no tenga sucesos. Copiar ese `cero` a mi acta seria
+reiniciarme la racha yo mismo, que es justo lo que `5.4` prohibe: *un auditor que
+pone su propia racha a cero se esta absolviendo*. **La racha viva la mido en mi
+turno normal, con el registro repuesto, y no antes.**
 
-`cap_07` es `Cap. 6`, `Planning: Today's Actions for Tomorrow's Output`, `105` lineas. **Su cabeza es
-`L17` y `L19`**: `L17` recapitula los tres pasos de la fabrica y `L19` los generaliza a cualquier
-organizacion (demanda del entorno, estado presente, conciliar los dos). **Eso es la ficha 9.**
-
-> **LECTURA: `cap_07` queda ABIERTO y con mucho cuerpo por minar**, y lo digo con lo que lei: `L31`
-> (por que no se mezclan los pasos), `L35` (`STEP 2`, la misma moneda y el canal de proyectos), `L39`
-> (`STEP 3`, las dos preguntas de la brecha y la definicion de estrategia), `L41` (estrategia contra
-> tactica), `L53` (Cindy y los desfases de tiempo) y `L57` a `L59` (la salida verdadera del proceso
-> de planificacion) **traen procedimiento y no estan minados**. Un cierre corto en la cabeza del
-> capitulo es lo que yo esperaria de un turno con techo de minutos, **pero el techo tiene que venir
-> declarado con su cifra** (`EXTRACTOR.md` `12.4`, y mi `TAREA 3`).
+**`LECTURA`:** el retiro de `CREDITO_serial.jsonl` hace que `forja.py credito`
+devuelva en fase ciega una frase **cierta en su letra y enganosa en su efecto**.
+Tambien lo registro y no lo adjudico.
 
 ---
 
-## 3. MI CLASE PARA CADA UNA DE LAS NUEVE FICHAS
+## 3. LAS GUARDAS, CORRIDAS POR MI EN ESTA FASE
 
-**Adjudico con la vara** (`AUDITOR_FORJA.md` `6.1`): la pregunta es si el candidato **CONTINUA** el
-trabajo del existente o lo **REPITE**; tiene direccion (que anade el hijo a la madre), **no tiene
-bascula** (el tamanio del solape no decide), y **decide si lo que queda fuera es procedimiento en los
-dos lados**.
+    $ python forja.py gate
 
-### FICHA 1. `conducir_etapas_modelo_ideal_decision`, `L23` `L27` `L29`, `12` pasos
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada,
+               vuelta, cita_incompleta, deprecado_en_superficie, arista_rota,
+               arista_incompleta, guiones, censo_no_decrece
 
-- **CLASE: SANO, ficha nueva.** El libro anuncia las tres etapas y **pone el contenido de cada una**:
-  la prueba del inventario se cumple entera.
-- **FIDELIDAD `D.30`: `12` de `12` TRANSCRIPCION, `0` PUENTE.** Los pasos `1` a `4` salen de `L23`,
-  los `5` a `8` de `L27`, los `9` a `12` de `L29`.
-- **VECINO QUE YO LEVANTO, Y ES UNA FRONTERA:** `dirigir_reunion_decision` del grafo dice en su paso
-  `3` **`No busques consenso`**; este dice, por `L63` del mismo capitulo, **empuja hacia un consenso y
-  si no sale decide tu**. **DOS DOCTRINAS LEGITIMAS NO SON DUPLICADO: son FRONTERA DECLARADA**
-  (vara `6.1`, ultima fila). **No es REPITE.**
+    $ python forja.py guiones
 
-### FICHA 2. `decidir_nivel_competente_inferior`, `L33`, `8` pasos
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
 
-- **CLASE: CONTINUA**, y **es el par mas apretado del lote**. La madre es
-  `repartir_decision_cercanos_hechos` (grafo): *repartir las decisiones entre los mas cercanos a los
-  hechos*. El hijo **anade procedimiento propio que la madre no trae**: que el saber tecnico
-  **se temple con criterio**, que la decision se situe **en el terreno intermedio** entre el
-  conocimiento y los golpes, que **si nadie reune las dos cualidades se busque la mejor mezcla**, y
-  que **se traiga a un rango superior solo para poner experiencia**, hablando todos como iguales.
-- **Y LO QUE QUEDA FUERA EN LA MADRE TAMBIEN ES PROCEDIMIENTO**: su diagnostico del bote de basura,
-  ir a la reunion y mirar a la sala, la pregunta que abre la conversacion y el reconvocar al dia
-  siguiente. **Procedimiento en los dos lados: NO es REPITE** (`6.1`).
-- **FIDELIDAD: `8` de `8` TRANSCRIPCION**, con **una nota mia**: el paso `7` convierte una practica
-  declarada del autor (*we at Intel are likely to ask*) en un imperativo. **No es PUENTE** (no anade
-  contenido que el libro no tenga), pero **lo marco yo antes de ver su reporte**.
-- **ES MI DISCUTIBLE NUMERO `1`.**
+    $ python forja.py resolutor
 
-### FICHA 3. `cortar_discusion_libre_momento_justo`, `L63`, `7` pasos
+    nodos vivos: 346
+    nodos deprecados (archivo): 0
+    alias registrados: 0
 
-- **CLASE: SANO con vecindad declarada.**
-- **VECINO DEL GRAFO, Y ES LA SEGUNDA FRONTERA:** `fijar_fecha_cierre_debate_equipo` manda en su
-  paso `5` **resistir el impulso de cerrar el debate** y en su `6` que **a menudo el trabajo del jefe
-  es mantener el debate vivo**; esta ficha pone el criterio de **cuando cortar** y avisa de la
-  **busqueda interminable de consenso**. Las dos son legitimas y **miran el mismo momento desde los
-  dos lados**: **FRONTERA DECLARADA, no duplicado.**
-- **VECINO DEL PROPIO LOTE:** la ficha `4`. Comparten *si no hay consenso, entra y decide*. Lo que
-  queda fuera es procedimiento en los dos lados (aqui, la prueba de **haber oido los asuntos de
-  verdad**; alli, la **prueba de legitimidad** del poder de posicion). **NO es REPITE.**
-- **FIDELIDAD: `7` de `7` TRANSCRIPCION.**
-- **ES MI DISCUTIBLE NUMERO `2`.**
+    $ python forja.py rancios
 
-### FICHA 4. `ejercer_poder_posicion_etapa_decision_clara`, `L61`, `7` pasos
+      [RANCIO] veredicto dar_elogio_disciplina_igual_critica contra elogiar_trabajo_especifico_contexto (linea 533, 2026-09-18) ...
+      [RANCIO] veredicto dar_elogio_disciplina_igual_critica contra equilibrar_elogio_critica_equipo (linea 534, 2026-09-18) ...
+      [RANCIO] veredicto dar_elogio_disciplina_igual_critica contra pedir_critica_primero_crear_seguridad_psicologica (linea 535, 2026-09-18) ...
+      [RANCIO] veredicto dar_elogio_disciplina_igual_critica contra dar_elogio_disciplina_igual_critica (linea 732, 2026-09-18) ...
 
-- **CLASE: CONTINUA sobre la ficha `1` del propio lote.** La madre pone la etapa de **decision
-  clara**; el hijo pone **quien la toma cuando no hay consenso y desde que momento es legitimo**.
-- **FIDELIDAD: `7` de `7` TRANSCRIPCION**, con **una nota mia**: el paso `6` recoge la reticencia a
-  dar ordenes **dejando caer el sujeto que el libro le pone** (*We Americans*), con lo que una
-  observacion que el autor acota a una cultura **queda escrita como universal**. **No inventa
-  procedimiento**, asi que no lo llamo PUENTE, **pero lo marco**.
-- **ES MI DISCUTIBLE NUMERO `3`.**
+**`LECTURA`:** `gate` y `guiones` en VERDE. `resolutor` da `346` vivos, que es el
+mismo numero que `gate` verifica y el mismo que cuenta `wc -l`: **tres instrumentos
+y una sola cifra.** Los `4` rancios llevan fecha `2026-09-18`, **anterior a la vuelta
+que audito**, y `D.15` dice que un rancio no pone el gate en rojo. **No se los cargo
+a esta vuelta**, y lo digo porque cargarselos seria facil y seria falso.
 
-### FICHA 5. `zanjar_seis_preguntas_decision_adelantado`, `L65` a `L77`, `9` pasos
-
-- **CLASE: SANO.** Las seis preguntas estan en el libro como lista, y los pasos `4` a `9` son las
-  seis, una por una.
-- **VECINO:** `montar_reunion_gran_decision` del grafo comparte **el decisor nombrado** y **el poder
-  de veto**, pero es **un formato de reunion** con sus logisticas, y esta es **una lista que se zanja
-  antes del hecho**. Procedimiento en los dos lados: **no duplicado.**
-- **FIDELIDAD: `9` de `9` TRANSCRIPCION.**
-
-### FICHA 6. `vencer_sindrome_grupo_pares_autoconfianza`, `L49`, `5` pasos
-
-- **CLASE: SANO.**
-- **FIDELIDAD: `4` de `5` TRANSCRIPCION limpias y `1` que yo marco.** El paso `5` escribe *haz que
-  todo el mundo en tu operacion entienda esto, y no solo los que se sientan a la mesa*. El libro
-  escribe *everyone in your operation should be made to understand this* **y no escribe el contraste**.
-- **LECTURA: es el unico sitio de las nueve fichas donde yo dudaria entre TRANSCRIPCION y PUENTE.**
-  Lo leo como transcripcion **porque `en tu operacion` ya se opone a `en la reunion` en el propio
-  libro**, y el inciso explicita esa oposicion sin anadir procedimiento. **Si cae, cae DENTRO de mi
-  marcado.**
-- **ES MI DISCUTIBLE NUMERO `4`.**
-
-### FICHA 7. `tomar_mando_reunion_pares_presidente_ausente`, `L51`, `6` pasos
-
-- **CLASE: SANO**, vecino de la ficha `6` por el mismo sindrome, pero **otra operacion**: la `6`
-  **previene** construyendo autoconfianza, la `7` **reparte el mando cuando ya esta pasando**.
-- **FIDELIDAD: `6` de `6` TRANSCRIPCION.**
-
-### FICHA 8. `anunciar_decision_inesperada_reconvocar_reunion`, `L93`, `8` pasos
-
-- **CLASE: SANO con vecindad fuerte.**
-- **VECINO DEL GRAFO, Y ES LA TERCERA FRONTERA:** `dar_mala_noticia_decision_tomada` manda **asumir
-  la decision, ser firme y NO abrirla a discusion**; esta manda **reconvocar y pedir su opinion sobre
-  la decision**. **Se concilian y lo digo con lo que leo**: la escena es otra (alli, uno a uno con la
-  persona afectada; aqui, el grupo que participo en el proceso) y **el objeto tambien**: Grove **no
-  reabre la decision**, pide la opinion **para que la acepten y aprendan a vivir con ella**. **No es
-  REPITE**, y la arista se declara por lectura (`D.29`).
-- **FIDELIDAD: `8` de `8` TRANSCRIPCION.**
-
-### FICHA 9. `planificar_tres_pasos_demanda_estado_brecha`, `cap_07` `L19` y `L17`, `6` pasos
-
-- **CLASE: SANO.** Es la cabeza del capitulo y **generaliza** los tres pasos de la fabrica.
-- **VECINO DE BANDEJA:** `casar_flujo_fabricacion_flujo_ventas`, del `cap_02`, es **los dos flujos
-  paralelos y la holgura**, no los tres pasos. **No duplicado.**
-- **FIDELIDAD: `6` de `6` TRANSCRIPCION**, con **una nota mia**: el paso `1` cierra con *y no sobre
-  otra cosa*, un enfasis que el libro no escribe. **Misma especie que la nota de la ficha `6`, mas
-  leve.**
+**LO QUE NO CORRO AQUI Y POR ESO NO AFIRMO:** `python tests/test_aceptacion.py`. La
+`ACTA 52` paro el bucle citando esa prueba en rojo, asi que su estado de hoy es
+**materia del turno normal**: sin el reporte delante, una cifra suelta sobre ella
+solo serviria para prejuzgarlo.
 
 ---
 
-## 4. LA CIFRA DE FIDELIDAD QUE FIRMO A CIEGAS
+## 4. LA POBLACION DEL BARRIDO (`D.38.4`), MEDIDA Y CONTRASTADA CON SU PROPIA LETRA
 
-**`PASOS INVENTADOS POR CAPITULO`, por MI lectura, con una fila por capitulo y no una media**
-(`AUDITOR_FORJA.md` `8`, `8.2`):
+    $ python forja.py informe cuarentena/grove_high_output/decidir_nivel_competente_inferior.json
 
-| capitulo | pasos escritos | PUENTE por mi lectura | por ciento | de muestra o entero |
-|---|---|---|---|---|
-| `cap_06` | `62` | `0` | **`0,0`** | **entero**, las `8` fichas |
-| `cap_07` | `6` | `0` | **`0,0`** | **entero**, la ficha unica |
-| **total del lote** | **`68`** | **`0`** | **`0,0`** | |
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    candidatos revisados        : 1
+    poblacion del barrido       : 414   (346 del grafo mas 68 que esperan en bandejas)
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
 
-**Denominador medido en `1.1`. Ninguna fila pasa del tope de `10`** (`8.1`), asi que **por mi lectura
-no se dispara la relectura entera de `D.58` en ningun capitulo**, y **el lote siguiente no baja
-escalon por esta metrica**.
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
 
-**Y LAS CUATRO NOTAS QUE MARQUE ESTAN DENTRO DE ESE `0`**: las cuatro las leo como TRANSCRIPCION y
-**las cuatro quedan escritas arriba con su linea**, para que si alguna cae, caiga **dentro de mi
-marcado** y no fuera.
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 3
+      por candidato bloqueado          : menor 3, mediana 3, mayor 3
+      que señal levanta cada vecindad  : similitud_texto 3
 
-### 4.1. LA MUESTRA CON SU SEMILLA, CORRIDA POR MI ANTES DE VER LA SUYA
+    [BLOQUEARIA] decidir_nivel_competente_inferior
+        vecino anunciar_decision_inesperada_reconvocar_reunion  [levantada por: similitud_texto]
+          similitud_texto 0.364 | familia_id 0.000 | paso_contra_nodo 0.472
+        vecino vencer_sindrome_grupo_pares_autoconfianza  [levantada por: similitud_texto]
+          similitud_texto 0.368 | familia_id 0.000 | paso_contra_nodo 0.462
+        vecino tomar_mando_reunion_pares_presidente_ausente  [levantada por: similitud_texto]
+          similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.460
 
-**Es la comprobacion que `D.58` hace auditable**: quien audita vuelve a correr el instrumento con la
-misma semilla y **tiene que salirle la misma lista**.
+`D.38.5` dice que la aduana ya mide mi misma poblacion, **asi que la cruce**: `414`
+son `346` del grafo mas `68` de bandejas, y los `68` son `65` mas `3`.
 
-    $ python scripts/muestra_fidelidad.py --libro grove_high_output --capitulos cap_06,cap_07,cap_08 --semilla v53
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    65
+    $ ls cuarentena/marquet_turn_the_ship/*.json | wc -l
+    3
+    $ ls cuarentena/ensayo_referencia_163/*.json | wc -l
+    163
+
+**LA DISCREPANCIA QUE PERSEGUI Y QUE NO ES UNA, Y LA ESCRIBO PORQUE LA PERSEGUI.**
+`D.38.4` dice que la poblacion es el grafo **mas todo lo que espera en
+`cuarentena/<libro>/`, descartando `_insertados` y `_derivadas`**. Por esa letra, las
+`163` de `ensayo_referencia_163/` contarian y la poblacion seria `577` y no `414`.
+**Fui a ver si el instrumento se apartaba de su regla, y la regla esta escrita mas
+fina en el codigo:**
+
+    $ sed -n '385,400p' src/aduana.py
+
+    # Y SE DESCARTA LO QUE NO PUEDE ENTRAR, QUE NO ES LO MISMO QUE LO QUE NO HA
+    # ENTRADO. `cuarentena/` tambien aloja `ensayo_referencia_163/`, que son 163
+    # nodos de un CATALOGO DE REFERENCIA ajeno puestos ahi para calibrar la aduana
+    # (`docs/ESTRENO_DE_LA_ADUANA.md`). Esos no esperan juicio: no van a entrar
+    # nunca en este grafo, y medir el trabajo de hoy contra ellos seria abrir cola
+    # de lectura contra material que la puerta rechazaria de todas formas.
+    #
+    # EL CRITERIO NO ES UNA LISTA DE NOMBRES ... **entra en la poblacion el
+    # candidato cuyas fuentes estan TODAS en la tabla canonica vigente.** Una fuente
+    # fuera de la tabla ya lo tumbaria en la puerta (guarda `fuentes`), asi que lo
+    # que la poblacion deja fuera es exactamente lo que no podria entrar.
+
+**`LECTURA`: NO HAY HALLAZGO AQUI, y esa es la conclusion.** El criterio del codigo
+no es la carpeta sino la tabla canonica de fuentes, y por ese criterio las `163`
+quedan fuera con razon. **`414` es la cifra correcta.** Lo dejo escrito porque una
+busqueda que sale limpia vale lo mismo que una que caza algo, **siempre que se diga
+que se corrio**.
+
+---
+
+## 5. MI CLASIFICACION A CIEGAS: `cap_02` de `grove_high_output`, SIETE CANDIDATOS Y SUS `50` PASOS
+
+### 5.a. Por que `cap_02`, medido y no elegido a ojo
+
+La vuelta auditada **no trajo lote** (seccion `1`), asi que no hay material nuevo que
+clasificar. **Elijo el tramo de la bandeja que nadie ha adjudicado nunca**, y lo
+compruebo en vez de suponerlo: ninguno de los siete vive en el grafo.
+
+    $ for n in clasificar_trabajo_proceso_montaje_prueba construir_flujo_produccion_paso_limitante \
+               detectar_arreglar_fallo_etapa_menor_valor dimensionar_inventario_materia_prima_reposicion \
+               equilibrar_capacidad_personal_inventario_plazo preferir_inspeccion_proceso_prueba_destructiva \
+               rehacer_flujo_paso_limitante_capacidad; do
+        b=""; g=""
+        [ -f "cuarentena/grove_high_output/$n.json" ] && b="BANDEJA"
+        grep -q "\"id\": \"$n\"" dataset/nodos.jsonl && g="GRAFO"
+        echo "$n : ${b:-.} ${g:-.}"
+      done
+
+    clasificar_trabajo_proceso_montaje_prueba : BANDEJA .
+    construir_flujo_produccion_paso_limitante : BANDEJA .
+    detectar_arreglar_fallo_etapa_menor_valor : BANDEJA .
+    dimensionar_inventario_materia_prima_reposicion : BANDEJA .
+    equilibrar_capacidad_personal_inventario_plazo : BANDEJA .
+    preferir_inspeccion_proceso_prueba_destructiva : BANDEJA .
+    rehacer_flujo_paso_limitante_capacidad : BANDEJA .
+
+**Y EL TAMANO DEL TRAMO LO FIJA EL INSTRUMENTO DE `D.58`, NO YO:**
+
+    $ python scripts/muestra_fidelidad.py --libro grove_high_output --capitulos cap_02 --semilla v54-ciega-auditor
+
     MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
       libro    : grove_high_output
-      semilla  : v53
-      capitulos: cap_06, cap_07, cap_08
+      semilla  : v54-ciega-auditor
+      capitulos: cap_02
 
-      RELEIDO ENTERO : cap_07
-      POR MUESTRA    : cap_06, cap_08, 15 pasos cada uno
+      RELEIDO ENTERO : cap_02
+      POR MUESTRA    : ninguno, 15 pasos cada uno
 
       EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
       pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
 
-      --- cap_06: 15 paso(s) en la muestra
-        anunciar_decision_inesperada_reconvocar_reunio P1   Comprueba la condicion: la palabra final va a ser radicalmen
-        anunciar_decision_inesperada_reconvocar_reunio P5   Levanta la sesion.
-        anunciar_decision_inesperada_reconvocar_reunio P6   Reconvoca la reunion despues de que la gente haya tenido oca
-        conducir_etapas_modelo_ideal_decision          P4   Cuenta con que, si los que saben se guardan su opinion, lo q
-        conducir_etapas_modelo_ideal_decision          P9   Exige por ultimo que todos los implicados den pleno apoyo a
-        cortar_discusion_libre_momento_justo           P4   Pero en cuanto sientas que ya lo has oido todo y que todos l
-        cortar_discusion_libre_momento_justo           P7   Pasa a tomar la decision en el momento justo, que es lo deci
-        decidir_nivel_competente_inferior              P3   No entiendas saber como entender tecnicamente y nada mas: es
-        decidir_nivel_competente_inferior              P4   Cuenta con que ese criterio se desarrolla con la experiencia
-        ejercer_poder_posicion_etapa_decision_clara    P2   Cuando eso pase, acepta que la persona de mayor rango, la de
-        ejercer_poder_posicion_etapa_decision_clara    P3   Comprueba que el proceso vino bien hasta ese punto: que quie
-        tomar_mando_reunion_pares_presidente_ausente   P3   Si eso no funciona, pide siempre que puedas a la persona pre
-        vencer_sindrome_grupo_pares_autoconfianza      P3   Apoya otra parte en la experiencia.
-        vencer_sindrome_grupo_pares_autoconfianza      P4   Cuenta con que al final la autoconfianza sale sobre todo de
-        zanjar_seis_preguntas_decision_adelantado      P3   Zanja por adelantado las seis preguntas importantes, que es
+      --- cap_02: ENTERO, 50 paso(s), no hay muestra que elegir
 
-      --- cap_08: 0 paso(s) en la muestra
+**El propio instrumento dice que `cap_02` NO se muestrea: se relee ENTERO**, sus `50`
+pasos. Es lo que hice. Y los `50` los confirmo por una segunda via, porque una cifra
+con un solo instrumento detras es media cifra:
 
-      --- cap_07: ENTERO, 6 paso(s), no hay muestra que elegir
+    $ grep -l 'fuentes/grove_high_output/cap_02.md' cuarentena/grove_high_output/*.json | wc -l
+    7
 
-**MI VEREDICTO SOBRE ESOS `15`: los `15` son TRANSCRIPCION, `0` PUENTE**, cada uno contra la linea de
-su tramo (`L93`, `L23`, `L29`, `L63`, `L33`, `L61`, `L51`, `L49`, `L65`). **`0,0` por ciento sobre la
-muestra de `cap_06`.**
+    $ for f in $(grep -l 'fuentes/grove_high_output/cap_02.md' cuarentena/grove_high_output/*.json); do
+        python -c "import json,sys;d=json.load(open(sys.argv[1],encoding='utf-8'));print(len(d['pasos_accionables']), d['id'])" $f; done
 
-**Y `cap_08` SALE CON `0` PASOS**, que es coherente con un lote que no llego a minarlo. **Su fila
-existe y dice `0` en vez de desaparecer**, que es lo que mi propia `TAREA 4` mandaba.
+    7 clasificar_trabajo_proceso_montaje_prueba
+    10 construir_flujo_produccion_paso_limitante
+    6 detectar_arreglar_fallo_etapa_menor_valor
+    7 dimensionar_inventario_materia_prima_reposicion
+    8 equilibrar_capacidad_personal_inventario_plazo
+    6 preferir_inspeccion_proceso_prueba_destructiva
+    6 rehacer_flujo_paso_limitante_capacidad
 
-### 4.2. LAS CITAS DEL LOTE, COMPROBADAS UNA A UNA CONTRA EL LIBRO
+    $ ... | awk '{s+=$1} END {print "SUMA:", s}'
+    SUMA: 50
 
-**Cada ficha cita en ingles el tramo del que saca cada paso. Comprobe que esas citas EXISTEN donde
-dicen**, que es lo unico que una maquina puede decidir sobre fidelidad:
+**Las dos vias dan `50`.** La segunda no es un instrumento nuevo (`D.47`): es un
+contador de longitud de lista, de la especie del `wc -l` que `D.38.3` autoriza por su
+nombre. **La que manda es `muestra_fidelidad.py`; la otra esta ahi para que se vea si
+se separan.**
 
-    $ python citas2.py <las nueve fichas>
-    anunciar_decision_inesperada_reconvocar_reunion      cap_06  fragmentos:  6   NO HALLADOS: 0
-    conducir_etapas_modelo_ideal_decision                cap_06  fragmentos: 17   NO HALLADOS: 0
-    cortar_discusion_libre_momento_justo                 cap_06  fragmentos: 11   NO HALLADOS: 0
-    decidir_nivel_competente_inferior                    cap_06  fragmentos: 12   NO HALLADOS: 0
-    ejercer_poder_posicion_etapa_decision_clara          cap_06  fragmentos: 10   NO HALLADOS: 0
-    planificar_tres_pasos_demanda_estado_brecha          cap_07  fragmentos:  8   NO HALLADOS: 0
-    tomar_mando_reunion_pares_presidente_ausente         cap_06  fragmentos:  7   NO HALLADOS: 0
-    vencer_sindrome_grupo_pares_autoconfianza            cap_06  fragmentos:  4   NO HALLADOS: 0
-    zanjar_seis_preguntas_decision_adelantado            cap_06  fragmentos:  6   NO HALLADOS: 0
-    ---
-    fragmentos comprobados: 81   hallados en el capitulo: 81   NO hallados: 0
+    $ wc -l fuentes/grove_high_output/cap_02.md
+    79 fuentes/grove_high_output/cap_02.md
 
-> ### **Y DECLARO UN FALLO MIO DE ESTA MISMA FASE, PORQUE LA PRIMERA PASADA DIO `11` FALSOS**
->
-> Mi primer comparador exigia la puntuacion literal y me marco `11` fragmentos como no hallados.
-> **Los `11` eran mios, no de las fichas:** la casa **prohibe el guion largo**, asi que una cita
-> verbatim que en el libro lleva raya (*it is legitimate, in fact, sometimes unavoidable, for the
-> senior person*) **tiene que escribirse con coma**, y mi comparador la contaba como inventada.
-> **Volvi a correrlo sordo a la puntuacion y salieron `81` de `81`.**
->
-> **Lo escribo aqui y no lo borro** porque si hubiera publicado aquel `11` habria sido **CIFRA
-> PUBLICADA PROPIA**, que es la especie de mi propia racha.
+Lei el fichero fuente entero, sus `79` lineas.
+
+### 5.b. EL ORDEN EN QUE LO HICE, QUE ES LO QUE HACE VALER LO QUE SIGUE
+
+**Primero** imprimi los `50` pasos, las condiciones de activacion y los entregables de
+los siete. **Segundo** lei `cap_02.md` entero. **Tercero** adjudique con la vara de la
+seccion `6`. **Y SOLO CUARTO** abri el `resumen_teorico`, que es donde el extractor
+escribe su propio razonamiento.
+
+Lo digo porque el `resumen_teorico` **viaja dentro del candidato que el prompt me
+manda abrir**, y quien lo lea primero ya no esta adjudicando a ciegas: **esta
+corrigiendo un examen con la solucion al lado.** No es una trampa del extractor ni del
+arnes; es una consecuencia del formato, y no la habia visto escrita en ningun sitio.
+**Tambien la registro y no la adjudico.**
+
+### 5.c. LAS SIETE PIEZAS, Y NINGUNA ES REPITE
+
+| pieza | candidato | pasos | mi clase |
+|---|---|---|---|
+| `P2` | `construir_flujo_produccion_paso_limitante` | `10` | **procedimiento propio** |
+| `P5` | `clasificar_trabajo_proceso_montaje_prueba` | `7` | **procedimiento propio** |
+| `P6` | `rehacer_flujo_paso_limitante_capacidad` | `6` | **CONTINUA de `P2`** |
+| `P7` | `equilibrar_capacidad_personal_inventario_plazo` | `8` | **procedimiento propio** |
+| `P9` | `preferir_inspeccion_proceso_prueba_destructiva` | `6` | **procedimiento propio** |
+| `P10` | `dimensionar_inventario_materia_prima_reposicion` | `7` | **procedimiento propio** |
+| `P11` | `detectar_arreglar_fallo_etapa_menor_valor` | `6` | **CONTINUA de `P5` y de `P10`** |
+
+**`P6` CONTINUA DE `P2`, adjudicado con la vara `6.1` y sin bascula.** `P2` construye
+el flujo desde el paso limitante; `P6` lo **rehace** cuando aparece una cola. Su paso
+`4` repite el calculo hacia atras de `P2` paso `7`, y ahi acaba el solape. **Lo que
+queda fuera es procedimiento en los dos lados:** en `P6`, detectar el supuesto de
+capacidad infinita, buscar donde hay cola, **contar el tiempo de espera dentro del
+flujo** (*tu huevo de tres minutos se convierte facilmente en uno de seis*), dejar
+iguales los ciclos que la cola no toca y **no cambiar de componente el que manda la
+calidad**; en `P2`, los cuatro requisitos basicos, el descarte de la carta blanca, el
+tiempo total de paso y el escalonado. **Condiciones de activacion distintas** (`P2`:
+todavia no sabes por cual empezar; `P6`: ya tienes flujo y aparece un turno de
+espera). **No es duplicado.**
+
+**`P11` CONTINUA DE `P5` Y DE `P10`, y las dos las levanta la lectura, no una senial.**
+`P11` paso `6` nombra la prueba unitaria, que es `P5` paso `4`; `P11` paso `4` nombra
+la inspeccion del material que entra, que es `P10` paso `1`. Pero `P11` trae
+procedimiento que no esta en ninguno de los dos: **ordenar las etapas por el valor que
+el material lleva encima** y poner la comprobacion en la de menor valor, con el valor
+percibido de la ultima etapa contado dentro. **Eso no es nombrar: es procedimentar**
+(`P.5.1`).
+
+**`P9` CONTRA `P10`, Y NO SON EL MISMO NODO AUNQUE LOS DOS HABLEN DE INSPECCION.** `P9`
+elige **entre prueba funcional que destruye producto e inspeccion dentro del proceso**;
+`P10` pone la inspeccion **en la recepcion** y dimensiona el inventario. Decisiones
+distintas, alternativas distintas, entregables distintos.
+
+**`P7` Y `P5` NO ROZAN A NADIE** del capitulo: `P7` es el intercambio entre capacidad,
+mano de obra e inventario contra el plazo; `P5` es el reparto en las tres operaciones
+de produccion.
+
+### 5.d. LA FIDELIDAD `D.30` DE LOS `50`, LEIDA Y NO CONTADA A OJO
+
+**`LECTURA`: segui los `50` pasos uno a uno hasta una frase de `cap_02.md` y NO
+ENCONTRE NINGUN PUENTE.** No lo publico como porcentaje: el porcentaje es la metrica
+de la seccion `8`, y esa **la firmo en el acta con el desglose del reporte delante**,
+no aqui. Lo que publico es la lectura con sus anclas:
+
+| paso | lo que dice la ficha | lo que dice `cap_02.md` |
+|---|---|---|
+| `P2`.`10` | *el mas largo, o el mas dificil, o el mas sensible, o el mas caro* | *starting with the longest (or most difficult, or most sensitive, or most expensive) step* |
+| `P2`.`6` | *no solo es el que mas tarda, es tambien el componente mas importante* | *Not only does that component take the longest to prepare, the egg is also for most customers the most important feature* |
+| `P5`.`2` | *una sola presentacion con sus folletos, sus hojas y sus laminas* | *into one presentation, along with such things as brochures, handouts, and flip charts* |
+| `P6`.`3` | *tu huevo de tres minutos se convierte facilmente en uno de seis* | *your three-minute egg could easily become a six-minute egg* |
+| `P6`.`6` | *el huevo sigue determinando la calidad general del desayuno* | *The egg still determines the overall quality of the breakfast* |
+| `P7`.`7` | *hay una respuesta correcta: el mejor plazo y la mejor calidad al coste mas bajo* | *there is a right answer, the one that can give you the best delivery time and product quality at the lowest possible cost* |
+| `P9`.`2` | *se pierde todo el pan tostado porque no hay huevos que servir con el* | *All the toast is also wasted because you don't have any eggs to serve with it* |
+| `P9`.`5` | *un aviso en cuanto el parametro varie un grado o dos* | *set off bells anytime the temperature varied by a degree or two* |
+| `P10`.`2` | *de tamano mayor o menor del que toca, porque eso cambia lo rapido que se procesa* | *over- or undersized, which would affect how fast they cook* |
+| `P11`.`2` | *cuando entra en el aparcamiento y ve el rotulo* | *when he drives into the parking lot after seeing the sign* |
+
+**MI UNICA RESERVA, Y LA MARCO YO:** varios pasos convierten en imperativo lo que el
+libro escribe en descriptivo (*process manufacturing, an activity that...* pasa a
+*Senala en tu trabajo el paso de proceso, que es...*). **Eso no lo cuento como
+puente**, porque el contenido es del libro y el propio libro generaliza (*Process,
+assembly, and test operations can be readily applied to other very different kinds of
+productive work*). **Lo dejo marcado para que el que discrepe pueda discrepar con la
+frase delante**, que es lo que `D.38.3` pide de una conclusion.
+
+### 5.e. LO QUE `cap_02.md` TIENE Y NINGUN CANDIDATO COGE, COMPROBADO ANTES DE LLAMARLO HUECO
+
+El capitulo cierra con el sistema de justicia penal leido como proceso de produccion
+(el millon de dolares por condena, la celda de `80.000` como paso limitante
+equivocado) y con la fabrica de desayunos en continuo. **Ninguno de los siete los
+toca.** Antes de llamarlo hueco mire la numeracion de las piezas de origen:
+
+    P2, P5, P6, P7, P9, P10, P11
+
+**`LECTURA`: NO LO PUBLICO COMO HUECO.** Faltan `P1`, `P3`, `P4` y `P8`: la frontera de
+`cap_02` **declaro mas piezas de las que hizo nodo**, que es exactamente lo que tiene
+que pasar con el tramo que no es procedimiento. **El motivo de cada una vive en el
+REPORTE de la vuelta que la publico, y ese no lo puedo abrir en esta fase.** Queda
+escrito como lo que es: **una comprobacion que no pude cerrar**, no un hallazgo.
 
 ---
 
-## 5. EL BARRIDO DE VECINOS (`D.38.4`)
+## 6. LOS DOS PARES QUE LEVANTO LEYENDO Y QUE CRUZAN DE CAPITULO
 
-**La poblacion es GRAFO MAS BANDEJAS**, y **por el metodo vigente no la construyo yo a mano**: se la
-entrega a la aduana, que pone las bandejas por su cuenta desde que `D.38.5` llego a `src/aduana.py`
-(correccion declarada del 16 sep dentro de `D.38.4`, `ACTA 29` `6.6`). **El propio candidato queda
-excluido de su poblacion** por `resolutor.mismo` en `src/aduana.py:495`, que es la correccion de la
-`ACTA 18`.
+**Esto es lo que traigo de la fase ciega.** `D.38.4` manda barrer sobre grafo mas
+bandejas, y **los cuatro extremos de estos dos pares estan en la bandeja**: son la
+figura que el comentario de `src/aduana.py` dice que **antes del 12 sep no levantaba
+nadie**, y que desde entonces la aduana si mide.
 
-**CORRI LA LETRA DEL BANCO: UNA PASADA POR CANDIDATO, LAS NUEVE**, cada una con su propio proceso.
+**ADJUDICO PRIMERO Y CONTRASTO DESPUES.** Las dos clases que siguen las escribi
+leyendo los pasos, **antes de leer la salida del barrido de la seccion `7`**. Lo digo porque de
+los dos pares **la maquina levanta uno y no levanta el otro**, y si hubiera mirado
+primero su salida no podria demostrar que mi lectura no la siguio.
 
-    $ python forja.py informe cuarentena/grove_high_output/<cada una de las nueve>.json
+### 6.a. `detectar_arreglar_fallo_etapa_menor_valor` (`cap_02`) contra `supervisar_tarea_delegada_etapa_menor_valor` (`cap_04`)
 
-**Y LAS NUEVE MIDIERON LA MISMA POBLACION, que es lo que `D.38.5` prometia:**
+**Comparten la frase dentro del propio id.** Madre `cap_02`, hijo `cap_04`, y la
+pregunta se hace **del hijo a la madre y nunca al reves** (`6.1`).
+
+**MI CLASE: CONTINUA.** El hijo toma de la madre **un solo paso** (su paso `2`,
+*supervisa en la etapa del proceso de menor valor anadido*) y trae seis propios que la
+madre no tiene: **frecuencia variable con esquemas de muestreo distintos**, **madurez
+relativa a la tarea y no capacidad general**, **bajar la intensidad segun mejora el
+trabajo**, y **entrar en el detalle solo al azar**, con su limite escrito (*entrar en
+todos los detalles seria como probar el cien por cien de lo que fabricacion saco*).
+Eso es **procedimiento propio, no el nombre de otro**. Y lo que queda fuera en la madre
+tambien es procedimiento: ordenar las etapas por valor y sus tres aplicaciones. **No es
+duplicado, y la arista madre a hijo esta justificada por ese paso `2`.**
+
+### 6.b. `construir_flujo_produccion_paso_limitante` (`cap_02`) contra `identificar_paso_limitante_jornada_desfases` (`cap_04`)
+
+**ESTE ES MI DISCUTIBLE MARCADO, y lo marco ANTES de saber si acierto** (`5.1`).
+
+**MI CLASE: CONTINUA, pero es la mas delgada de toda la pagina y digo por que.** De los
+`5` pasos del hijo: el `1` es encuadre (*aplicales los principios de produccion*), el
+`2` es la madre (*identifica tu paso limitante*), el `4` es la madre (*crea desfases*),
+y el `5` empieza por *En resumen* y resume los anteriores. **Queda UN paso propio, el
+`3`**, y es un criterio de seleccion **distinto** del de la madre: la madre elige el
+paso limitante por **cual tarda mas**; el hijo, por **cual no tiene holgura en un
+calendario absoluto**. Su condicion de activacion tambien es otra: ordenar tu jornada
+de mando contra las recomendaciones corrientes de gestion del tiempo.
+
+**LO QUE SOSTIENE MI CLASE:** un criterio de seleccion nuevo es procedimiento.
+**LO QUE LA PONE EN DUDA, Y LO ESCRIBO YO:** con `P.5.1` aplicado estricto (*una segunda
+linea solo cuenta como expansion si trae procedimiento propio, no solo el nombre de
+otro*), **un paso propio de cinco** es el borde exacto de esa regla. **Un lector
+estricto lo llama REPITE con etiqueta nueva, y tendria con que.** Si esta pagina cae en
+algun sitio, cae aqui, **y prefiero que caiga marcada.**
+
+**Y NO LA ADJUDICO CITANDO UNA SENIAL** (`D.19`): la leo por los pasos.
+
+---
+
+## 7. LO QUE LA MAQUINA DICE DE ESOS DOS PARES, Y NO DICE LO MISMO DE LOS DOS
+
+Corri el barrido sobre los dos **hijos** para ver **si alguna senial los levanta contra
+su madre de `cap_02`**. Es lo que decide si mi lectura anade algo o solo repite lo que
+el instrumento ya veia. **Los dos resultados salen distintos, y el que me corrige a mi
+va primero.**
+
+### 7.a. EL PAR `6.a` SI LO LEVANTA LA MAQUINA, Y NO POR DONDE YO HABRIA APOSTADO
+
+    $ python forja.py informe cuarentena/grove_high_output/supervisar_tarea_delegada_etapa_menor_valor.json
 
     poblacion del barrido       : 414   (346 del grafo mas 68 que esperan en bandejas)
     umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
 
-**`414` cuadra al digito con lo que yo habia medido por mi cuenta en la seccion `1`**: `346` de
-`wc -l dataset/nodos.jsonl` mas `68` de contar las bandejas descartando `_insertados`, `_derivadas` y
-`ensayo_referencia_163`. **Mi cifra de vecinos y la de la maquina ya son comparables** (`D.38.5`).
+      vecinos levantados en total      : 3
+      que señal levanta cada vecindad  : familia_id 1, similitud_texto 2
 
-### 5.1. EL SALDO DE LAS NUEVE
+    [BLOQUEARIA] supervisar_tarea_delegada_etapa_menor_valor
+        vecino detectar_arreglar_fallo_etapa_menor_valor  [levantada por: familia_id]
+          similitud_texto 0.226 | familia_id 0.333 | paso_contra_nodo 0.435
+          paso 1 del candidato contra paso 2 de detectar_arreglar_fallo_etapa_menor_valor
+        vecino supervisar_decision_delegada_preguntas_concretas  [levantada por: similitud_texto]
+          similitud_texto 0.356 | familia_id 0.222 | paso_contra_nodo 0.429
+        vecino identificar_paso_limitante_jornada_desfases  [levantada por: similitud_texto]
+          similitud_texto 0.362 | familia_id 0.000 | paso_contra_nodo 0.361
 
-| candidato | saldo | vecinos que le levanta la maquina |
+**`LECTURA`: mi par `6.a` esta levantado, y lo levanta `familia_id` con `0,333`, no la
+similitud de texto, que se queda en `0,226` y no habria llegado al umbral `0.35`.**
+La senial de id caza aqui lo que la de prosa no ve, porque los dos ids comparten
+`etapa_menor_valor` mientras uno habla de borradores de informes y el otro de huevos
+podridos. **Mi lectura de `6.a` coincide con la maquina y no la mejora**, y lo escribo
+asi en vez de vender el par como hallazgo mio.
+
+### 7.b. EL PAR `6.b` NO LO LEVANTA NINGUNA SENIAL
+
+    $ python forja.py informe cuarentena/grove_high_output/identificar_paso_limitante_jornada_desfases.json
+
+    poblacion del barrido       : 414   (346 del grafo mas 68 que esperan en bandejas)
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+      vecinos levantados en total      : 6
+      que señal levanta cada vecindad  : similitud_texto 6
+
+    [BLOQUEARIA] identificar_paso_limitante_jornada_desfases
+        vecino agrupar_tareas_semejantes_aprovechar_preparacion
+          similitud_texto 0.410 | familia_id 0.000 | paso_contra_nodo 0.450
+        vecino llevar_inventario_proyectos_discrecionales
+          similitud_texto 0.401 | familia_id 0.000 | paso_contra_nodo 0.392
+        vecino supervisar_decision_delegada_preguntas_concretas
+          similitud_texto 0.398 | familia_id 0.000 | paso_contra_nodo 0.406
+        vecino supervisar_tarea_delegada_etapa_menor_valor
+          similitud_texto 0.379 | familia_id 0.000 | paso_contra_nodo 0.398
+        vecino agrupar_interrupciones_subordinados_reuniones_regulares
+          similitud_texto 0.371 | familia_id 0.000 | paso_contra_nodo 0.404
+        vecino decir_no_trabajo_excede_capacidad
+          similitud_texto 0.369 | familia_id 0.000 | paso_contra_nodo 0.413
+
+**`LECTURA`, Y ES EL HALLAZGO DE ESTA PAGINA.** El barrido le levanta **`6` vecinos, y
+los `6` son de `cap_04` y `cap_05`**. **`construir_flujo_produccion_paso_limitante` NO
+esta entre ellos**, y es el nodo del que este candidato toma dos de sus cinco pasos.
+Como no aparece en la lista, **ninguna de las tres seniales llego a su umbral**: ni la
+similitud de texto a `0.35` ni `familia_id` a `0.30`. **Y `familia_id` es la que aqui
+sorprende**, porque los dos ids comparten las palabras `paso_limitante` y los dos
+entregables nombran los `desfases`; **no puedo publicar su valor, porque el informe
+solo imprime los vecinos que levanta**, y eso mismo es lo que declaro.
+
+**El contraste con `7.a` es lo que hace informativo a este par:** alli `familia_id`
+cazo con `0,333` lo que la prosa no veia con `0,226`; aqui **no caza ninguna de las
+dos**. El hijo habla de jornada de mando y calendario, la madre de huevos, tostadas y
+cafe.
+
+**ES `D.19` CON UN EJEMPLAR VIVO Y MEDIDO HOY:** *ninguna senial separa jerarquia de
+ruido, asi que una discrepancia NUNCA se adjudica citando una senial.* Aqui la senial
+no es que adjudique mal: **es que no levanta el par**. Si `identificar_paso_limitante`
+entrase por esta cola de lectura, **sus seis veredictos se escribirian contra seis
+vecinos que no son su madre**, y la unica relacion que de verdad tiene quedaria sin
+cablear.
+
+**LO QUE NO AFIRMO:** no digo que la aduana este rota. Su `umbral 0.35` esta puesto por
+`config/umbrales.json`, **que no es mio para mover** (`AUDITOR_FORJA.md` `2`), y un
+umbral mas bajo levantaria mas ruido del que quita. **Lo que digo es lo medido: este
+par existe, la lectura lo ve y el barrido no**, que es exactamente para lo que `D.38.4`
+me manda barrer a mano.
+
+---
+
+## 8. LO QUE ESTA PAGINA NO PUDO COMPROBAR, Y POR ESO NO AFIRMA
+
+| lo que queria mirar | por que no pude | donde se cierra |
 |---|---|---|
-| `anunciar_decision_inesperada_reconvocar_reunion` | BLOQUEARIA | `6` |
-| **`conducir_etapas_modelo_ideal_decision`** | **ENTRARIA sin leer nada** | **`0`** |
-| `cortar_discusion_libre_momento_justo` | BLOQUEARIA | `4` |
-| `decidir_nivel_competente_inferior` | BLOQUEARIA | `3` |
-| `ejercer_poder_posicion_etapa_decision_clara` | BLOQUEARIA | `2` |
-| `planificar_tres_pasos_demanda_estado_brecha` | BLOQUEARIA | `1` |
-| `tomar_mando_reunion_pares_presidente_ausente` | BLOQUEARIA | `4` |
-| `vencer_sindrome_grupo_pares_autoconfianza` | BLOQUEARIA | `9` |
-| `zanjar_seis_preguntas_decision_adelantado` | BLOQUEARIA | `1` |
+| la racha viva de la linea `serial` | `CREDITO_serial.jsonl` esta retirado en esta fase (seccion `2`) | mi turno normal |
+| `tests/test_aceptacion.py`, que la `ACTA 52` dejo en rojo | sin reporte delante, la cifra solo serviria para prejuzgar | mi turno normal |
+| el motivo de que `P1`, `P3`, `P4` y `P8` de `cap_02` no hicieran nodo | vive en el REPORTE de la vuelta que publico esa frontera | mi turno normal |
+| los seis pagos de la vuelta auditada | su comprobacion es la materia del acta, no de la fase ciega | mi turno normal |
 
-**`0` CAERIAN por una guarda y `0` CHOCAN entre si**, en las nueve pasadas.
+**Y UNA ULTIMA, QUE ES LA MAS INCOMODA:** esta pagina clasifica material de `cap_02`
+que **la vuelta auditada no produjo**. Es la lectura mas util que la fase ciega admitia
+sobre una vuelta de saneamiento, **pero no es la comparacion que `5.1` describe**: no
+hay discutibles marcados de esta vuelta contra los que medirme, porque **esta vuelta no
+marco ninguno**. Lo digo aqui y no en una nota al pie.
 
-### 5.2. DONDE VIVEN ESAS `30` VECINDADES, Y ES LA MEDIDA QUE MAS VALE DE MI FASE
+---
 
-    $ (clasificando cada vecino levantado por donde vive)
-    vecindades levantadas en total : 30
-      del propio lote              24
-      de bandeja, fuera del lote   4
-      del grafo                     2
-    por senial:
-      similitud_texto              28
-      familia_id                    1
-      paso_contra_nodo              1
+## 9. LA TABLA DE CIERRE DE MI APERTURA
 
-    LAS QUE TOCAN EL GRAFO:
-      anunciar_decision_inesperada_reconvocar_reunion -> dirigir_reunion_decision            [familia_id]
-      vencer_sindrome_grupo_pares_autoconfianza       -> aprender_resultados_vencer_dos_presiones [paso_contra_nodo]
-
-> ### **LECTURA: `28` de las `30` vecindades las levanta `similitud_texto`, y NINGUNA de esas `28` llega al grafo.**
->
-> De `346` nodos vivos, **la senial de texto no levanta ni uno**. Las dos unicas vecindades que
-> tocan el grafo las levantan las **otras dos** seniales. **El `80` por ciento de la cola que este
-> lote abre (`24` de `30`) son las nueve fichas mirandose entre ellas**, que es lo esperable en un
-> lote escrito el mismo dia con la misma mano sobre el mismo capitulo.
-
-### 5.3. Y LO QUE ESO LE HACE A MI LECTURA: `0` DE `6`
-
-**Mi lectura de la seccion `3` levanta `6` pares contra material que ya existe.** Comprobe uno por
-uno si la maquina los levanta tambien, **y la respuesta es que no levanta ninguno**:
-
-| par que YO levanto por lectura | lo levanta la senial? |
+| | |
 |---|---|
-| ficha `1` contra `dirigir_reunion_decision` (grafo), **frontera del consenso** | **NO**: esa ficha sale con `0` vecinos |
-| ficha `2` contra `repartir_decision_cercanos_hechos` (grafo), **el par mas apretado del lote** | **NO** |
-| ficha `3` contra `fijar_fecha_cierre_debate_equipo` (grafo), **frontera de cuando cortar** | **NO** |
-| ficha `5` contra `montar_reunion_gran_decision` (grafo) | **NO** |
-| ficha `8` contra `dar_mala_noticia_decision_tomada` (grafo), **frontera de como se anuncia** | **NO** |
-| ficha `9` contra `casar_flujo_fabricacion_flujo_ventas` (bandeja) | **NO** |
-
-**Y AL REVES TAMBIEN: de las `2` que la maquina levanta contra el grafo, ninguna es de las mias.**
-La de `familia_id` (`anunciar` contra `dirigir_reunion_decision`) **apunta al nodo que yo levanto,
-pero desde otra ficha**: yo lo levanto contra la ficha `1` por la doctrina del consenso.
-
-> ### **LECTURA: esto NO es una caida de la vuelta, y digo por que con su cita.**
->
-> **Es la averia que la propia vuelta anoto hoy como `d058`**, *la senial 1 compara mi prosa, no los
-> pasos del libro*, que yo leo en `scripts/deuda.py` y no en su reporte. **Mi fase le pone un
-> segundo ejemplar medido y una cifra: `0` de `6` por lectura, `0` de `28` por texto contra el
-> grafo.**
->
-> **Y LO QUE SI TENDRA QUE ESTAR EN SU REPORTE, porque mi propio encargo lo mandaba** (`TAREA 3`):
-> *las aristas que la senial no levanta se declaran por lectura* (`D.29`) **con su razon escrita**.
-> **Si esas seis, o las que el leyera, no estan declaradas por lectura en ningun sitio, lo que se
-> pierde no es una arista: es la frontera.** Eso lo adjudico en el acta, con el reporte delante.
->
-> **Y HAY UNA QUE MIRAR ANTES QUE NINGUNA:** `conducir_etapas_modelo_ideal_decision` es **la ficha
-> mas grande del lote** (`12` pasos, las tres etapas del modelo) y **la maquina la dejaria entrar
-> sin leer nada**. Hoy no entra, porque `D.39` tiene el lote cerrado y **lo mido**: `0` cambios en
-> `dataset/` (seccion `1`). **Pero el dia de la insercion, esa es la ficha que entra a ciegas.**
-
----
-
-## 6. LO QUE SELLO ADEMAS, MEDIDO ANTES DE VER EL REPORTE
-
-**Son cifras del estado que el reporte va a declarar, y las dejo aqui para que se comparen contra
-las mias y no al reves.**
-
-    $ python forja.py gate
-    GATE VERDE.
-      nodos verificados: 346
-      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
-
-**LECTURA: `gate` es la primera de las cuatro guardas que bloquean** (`D.55`) **y esta VERDE**, con
-`censo_no_decrece` corriendo dentro de ella. **Por esta no hay averia.**
-
-    $ python scripts/deuda.py
-    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
-      pendientes: 20    pagadas: 18
-      ...
-      d058   53      aduana             LA SENIAL 1 COMPARA MI PROSA, NO LOS PASOS DEL LIBRO
-      ultima vuelta de saneamiento: 49
-
-**LECTURA: la deuda sube de `19` a `20` y la que la sube es de esta vuelta**, `d058`. Mi encargo
-mandaba **no pagar deuda hoy** y **anotar lo que apareciera**: por el registro, eso es lo que paso.
-**Y `ultima vuelta de saneamiento: 49` confirma al digito que la de saneamiento es la `54`**, que es
-lo que la `TAREA 1` fila `7` ya adjudicaba.
-
-    $ ids del lote contra el grafo
-    ids del lote: 9   distintos: 9   ya vivos en el grafo: 0
-    nodos en el grafo: 346
-
-**LECTURA: ninguna de las nueve colisiona por id**, ni entre ellas ni contra el grafo, asi que la
-guarda `el id ya vive en el grafo` (que es **solo del grafo** por `D.38.5`) **no tiene que morder en
-ninguna.**
-
-### 6.1. UNA TENSION MEDIDA QUE NO ES CAIDA DE NADIE, Y LA REGISTRO SIN ABRIR COLA
-
-**`D.58` ata el regimen a `MODO_INSERCION`**, y dice que en una vuelta de extraccion **no hay fase
-ciega, ni sello, ni testigo**. **Mi encargo declaro `CLASE DE ESTA VUELTA: EXTRACCION`.** Y sin
-embargo estoy escribiendo una fase ciega, porque **la corrida no esta en modo cuarentena**:
-
-    $ grep -n "arranque: rama" docs/loop/loop.log | tail -1
-    2632:[2026-09-19 00:12:29] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
-
-    $ grep -n "CLASE DE ESTA VUELTA" docs/loop/PROMPT_SIGUIENTE.md
-    7:> # **CLASE DE ESTA VUELTA: EXTRACCION**
-
-**LECTURA: el arnes hizo lo que `D.58` dice a la letra** (el modo es `insertar`, luego abre fase
-ciega), **y la vuelta hizo lo que mi encargo dice a la letra** (extraer y no insertar). **Las dos
-cosas son correctas y aun asi no coinciden**, porque `D.58` decide el regimen por **el modo del
-arnes** y el encargo lo decide por **la clase de trabajo**. **No es caida de nadie, no la adjudico y
-no abro cola**: la doctrina esta congelada en `11` (`D.55`, 18 sep) y lo que manda ahi es
-**registrarla con su medida y dejarla ahi**. Queda registrada.
-
-**Y LO DIGO SIN COBRARME NADA A FAVOR:** la fase ciega de mas **no me estorba**, me da la lectura
-independiente que despues firma o tumba sus cifras. **Lo que senalo es que el disparador no esta
-donde el trabajo esta.**
-
----
-
-## 7. LO QUE NO PUEDO COMPROBAR EN ESTA FASE, Y LO ESCRIBO EN VEZ DE AFIRMARLO
-
-**`AUDITOR_FORJA.md` `1.1`: una busqueda negativa no se puede citar.** Estas son las cosas que mi
-turno normal tendra que medir, y que **hoy no afirmo en ningun sentido**:
-
-| lo que no compruebo hoy | por que |
-|---|---|
-| **el reloj de aduana de la vuelta** y si el cierre corto en `cap_07` cae dentro del techo de `90` minutos | el dato vive en su reporte y en `.v53/`, y **no abro ninguno de los dos** |
-| **la tabla de frontera de `cap_06`, `cap_07` y `cap_08`** celda a celda | tengo los tres `wc -w` de `1.2` **sellados**, pero su tabla esta en el reporte retirado |
-| **la racha de credito de la linea** | `CREDITO_serial.jsonl` es uno de los cuatro retirados, y **no corro `forja.py credito` para rodear la retirada** |
-| **si sus `SANO` llevan `RAZON` escrita** (`D.8`) | esta vuelta **no escribe veredictos**: `bitacora/VEREDICTOS.jsonl` sigue en `740` lineas y la insercion es de otro dia |
-| **sus cifras de palabras por pieza** | mismo motivo: viven en su tabla |
-
----
-
-## 8. LO QUE SELLO, EN UNA TABLA
-
-| lo que firmo a ciegas | mi cifra | de donde sale |
-|---|---|---|
-| **ACTA ANTERIOR LEIDA** | `b9d9a8855f76d735bb302aeb89021d44099f0935` | `forja.py herencia` y `git hash-object`, seccion `0` |
-| **HEREDADOS** | `0` | `forja.py herencia`, seccion `0` |
-| **HUECO DE ACTA** | **NO HAY**: la `51` cubre la `52` y yo cubro la `53` | `grep "^# ACTA"`, seccion `0` |
-| **fichas del lote** | `9` | `git log --name-status`, seccion `1` |
-| **pasos del lote** | `68` (`62` de `cap_06`, `6` de `cap_07`) | `pasos_por_capitulo.py`, seccion `1.1` |
-| **PUENTE por mi lectura** | **`0` de `68`**, `0,0` por ciento en las dos filas | seccion `4` |
-| **citas del lote halladas en el libro** | **`81` de `81`** | `citas2.py`, seccion `4.2` |
-| **`cap_06`** | **ENTERO en `8` piezas**, con las `4` no minadas nombradas y motivadas | seccion `2` |
-| **`cap_07`** | **ABIERTO por la cabeza**, con `6` tramos de procedimiento sin minar que nombro | seccion `2.1` |
-| **mis discutibles marcados** | **`4`**, los cuatro escritos antes de ver el reporte | fichas `2`, `3`, `4`, `6`, `9` |
-| **fronteras que levanto contra el grafo** | **`3`** (`dirigir_reunion_decision`, `fijar_fecha_cierre_debate_equipo`, `dar_mala_noticia_decision_tomada`) | seccion `3` |
-| **poblacion del barrido** | **`414`** (`346` del grafo mas `68` de bandejas), igual en las nueve pasadas | `forja.py informe`, seccion `5` |
-| **saldo del barrido** | `8` BLOQUEARIAN, **`1` ENTRARIA sin leer nada**, `0` CAERIAN, `0` CHOCAN | seccion `5.1` |
-| **vecindades levantadas** | **`30`**: `24` del propio lote, `4` de bandeja, **`2` del grafo** | seccion `5.2` |
-| **pares que yo levanto y la senial no** | **`6` de `6`** | seccion `5.3` |
-| **`gate`** | **VERDE**, `346` nodos | seccion `6` |
-| **deuda** | **`20` pendientes**, `18` pagadas, la nueva es `d058` | seccion `6` |
-| **dato movido en mi fase** | **`0` bytes del repo**: mis guiones viven fuera del arbol | seccion `1.1` |
-| **fallo propio declarado en esta fase** | **`1`**: mi primer comparador de citas dio `11` falsos y no lo publique | seccion `4.2` |
-
-> **NO COMMITEO ESTA PAGINA.** La sella el arnes y la commitea el, y **no la vuelvo a tocar despues
-> del sello** (`D.34`).
+| **ACTA ANTERIOR LEIDA** | `d5f4eb832cb0ffd11ddaf35a5bf406e4e2b5f231` |
+| **HEREDADOS** | `0`, comprobado con `python forja.py herencia` y contra la `ACTA 52` |
+| **los cuatro retirados** | siguen fuera del arbol; no recupere ninguno |
+| **estado medido** | `346` nodos, `740` veredictos, `1` par mutuo, `65` en la bandeja de `grove_high_output` |
+| **poblacion del barrido** | `414` (`346` del grafo mas `68` de bandejas) |
+| **guardas corridas por mi** | `gate` VERDE, `guiones` VERDE, `resolutor` `346`, `rancios` `4` y todos anteriores a esta vuelta |
+| **candidatos clasificados** | `7` de `cap_02`, sus `50` pasos releidos enteros contra las `79` lineas del fuente |
+| **clases que adjudico** | `5` procedimiento propio, `2` CONTINUA; **cero REPITE, cero gemelo** |
+| **pares que cruzan de capitulo y adjudico** | `2`, los dos con un extremo en `cap_02` y el otro en `cap_04`, los dos **CONTINUA** |
+| **de esos, los que ninguna senial levanta** | `1`, el `6.b`. El `6.a` lo levanta `familia_id` con `0,333` y lo digo (`7.a`) |
+| **mi discutible marcado** | `1`: `construir_flujo_produccion_paso_limitante` contra `identificar_paso_limitante_jornada_desfases` |
+| **fidelidad `D.30` de los `50`** | ningun puente encontrado por mi lectura; la cifra de la seccion `8` la firmo en el acta, no aqui |
+| **cifras sin instrumento** | ninguna |
+| **preguntas de doctrina** | `3`, registradas y no adjudicadas (`D.56`): secciones `1`, `2` y `5.b` |
