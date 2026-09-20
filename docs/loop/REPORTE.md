@@ -53607,3 +53607,45 @@ FUE**, porque eso si lo se sin esperar al log:
 >
 > **Lo unico que toque de la seccion de la `54` es la ruta del comentario de tallado.** Ni una
 > celda de su tabla, y los sellos son la prueba.
+
+### VV.7.g. **LO QUE REGISTRO Y NO ADJUDICO** (`D.56`: la cola de doctrina sigue congelada en `11`)
+
+**Traigo UNA pregunta nueva, con su medida, y la dejo ahi.** No la clasifico, no la numero y
+no la meto en la cola: `D.56` la congela en `11` y **el encargo lo dice con esas palabras**.
+
+> **LA PREGUNTA: cuando un tramo enuncia su regla general, la ILUSTRA con un caso y vuelve a
+> enunciarla al cerrar, el tramo entero es CASO o es doctrina con su ejemplo dentro?**
+>
+> **LA MEDIDA QUE LA TRAE, y es de esta vuelta:** el tramo `L43` de `cap_10` abre con
+> `To make hybrid organizations work, you need a way to coordinate...` (regla), sigue con
+> `Consider how the controller works at Intel` (caso) y cierra con
+> `this is dual reporting, the management principle that enables the hybrid organization form
+> to work` (regla otra vez). **Bajo una lectura da `1` nodo y bajo la otra da `0`, y con el se
+> va el unico nodo de `cap_10` entero.**
+>
+> **POR QUE NO ES LA MISMA PREGUNTA QUE EL MANUAL `3.5` YA CONTESTA:** `3.5` dice *el caso no
+> es la casa* y manda que la doctrina viva en su nodo y el caso entre como ejemplo nombrado.
+> **Eso resuelve el caso que viene SOLO. No resuelve el caso que viene EMPAREDADO entre dos
+> enunciados de su propia regla**, que es el que tengo delante.
+>
+> **LA SENIAL BARATA QUE SI APLIQUE, y que deja la pregunta abierta en vez de cerrada:** el
+> manual dice que se hizo mal si **el entregable del caso lleva un dato del caso**. El mio no
+> lleva ninguno: ni controller, ni finanzas, ni la division mas grande. **Pasa la senial
+> barata. Lo que no se es si pasar la senial barata basta.**
+
+---
+
+## VV.8. **LO QUE ESTA VUELTA DEJA, EN CINCO LINEAS**
+
+1. **`cap_07` cerrado por donde el tablero mandaba saltar.** `8` candidatos que se habrian
+   quedado atras, y la trampa de `d028` esquivada a mano y declarada, no pagada.
+2. **`cap_09` y `cap_10` con frontera publicada antes de cortar**, `62` tramos, cero lineas
+   sin cubrir y cero solapes en las dos, **y una cosecha de `1` nodo entre las dos** que marco
+   entera como discutible.
+3. **`9` candidatos, `0 CAERIAN`, `0` inserciones.** El grafo esta exactamente como lo
+   encontre: `346` nodos y `740` veredictos.
+4. **Tres guardas me mordieron y ninguna me pillo mintiendo:** `D.59` dos veces, `D.41` dos
+   veces (las dos por `d029`), y la relectura de fidelidad una vez sobre mi propia cita.
+   **Las cuatro correcciones estan declaradas y ninguna se hizo tecleando la celda buena.**
+5. **`13` discutibles marcados a ciegas**, tres de ellos capaces de dejar esta vuelta en `8`
+   nodos y dos fronteras sin cosecha.
