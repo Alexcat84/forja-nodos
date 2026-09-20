@@ -1,0 +1,2 @@
+$ python scripts/deuda.py --anotar ... (correccion sobre d067)
+ANOTADA d069: CORRECCION DECLARADA SOBRE d067, SIN BORRAR SU TEXTO, y la hago yo ant

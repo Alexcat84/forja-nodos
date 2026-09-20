@@ -51749,7 +51749,18 @@ una cifra que se arregla callando es la que no se puede recontar.
 *Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
 `docs/loop/TABLA_DE_CIERRE.txt`.*
 
-<!-- TALLADO: salida=docs/loop/TABLA_DE_CIERRE.txt -->
+> **CORRECCION DECLARADA DE LA VUELTA 54, SIN BORRAR LA LINEA DE ARRIBA** (manual principio `6`,
+> deuda `d030`, **decimo ejemplar seguido**): **donde esta linea dice
+> `docs/loop/TABLA_DE_CIERRE.txt`, tiene que leerse
+> `docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v53.txt`.** El motivo es la colision que
+> `d030` registra: `tabla_de_cierre.py --escribir` escribe **siempre en la misma ruta viva**, asi
+> que al cerrar la vuelta 54 esta tabla quedaba en ROJO sin que nadie tocara una sola de sus
+> celdas. **La copia archivada es la salida byte a byte**, `4e3e2fb30c29ad653deac7b08baf4b5f31dd88f5`
+> por `hash-object` **antes y despues** (`.v54/sello_v53_archivada.txt`), **sellada contra el commit
+> `0db1fba` que la escribio y NO contra `HEAD`**, que es el remedio de `d047` aplicado en su primera
+> ocasion de uso. **Ni una celda de esta tabla cambia.**
+
+<!-- TALLADO: salida=docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v53.txt -->
 
 | # | tarea | como cerro |
 |---:|---|---|
@@ -51842,9 +51853,9 @@ fundador del 20 sep 2026. Modo austero (`D.47`): no repito lo que el registro ya
 |---|---|---|
 | `PP.1` | los registros de la `ACTA 52` y de la decision del fundador recogidos sin reabrirlos, y **la parte caduca del encargo declarada en vez de obedecida** | **CERRADA en `PP.1`**: las `8` adjudicaciones recogidas sin rediscutirse, y el punto `1` del orden propuesto declarado VACIO con su medicion (`d001` a `d004` pagadas en la `44`) |
 | `PP.2` | **pagar la deuda**, una por una, cada pago con su medicion propia y su `--pagar` anotado; y **lo que no se paga, declarado con su motivo** | **CERRADA en `PP.2`**: `d047` y `d033` pagadas con su medicion propia; `d007` y `d024` derivadas a `PP.4` y `PP.3`; las `15` restantes declaradas una a una con el renglon que las cierra, y `d011` y `d012` **medidas y dejadas abiertas a proposito** |
-| `PP.3` | `d005` y `d024` releidas y medidas: **los candidatos de `cap_02` y `cap_03` que la aduana en seco bloquearia, NOMBRADOS uno a uno** | |
+| `PP.3` | `d005` y `d024` releidas y medidas: **los candidatos de `cap_02` y `cap_03` que la aduana en seco bloquearia, NOMBRADOS uno a uno** | **CERRADA en `PP.3`**: los `6` de `cap_03` nombrados con su vecino y su poblacion, **el `9`/`6` declarado SUELO y TECHO** con la mordida medida (`14` de `15` fichas intactas), y **`d024` PAGADA** con los `7` de `cap_02` corridos hoy sobre `414`: `0 ENTRARIAN`, `7 BLOQUEARIAN`, `0 CAERIAN`, `1997` s |
 | `PP.4` | la **pregunta `11`** de la cola clasificada **CON UN EJEMPLAR DELANTE**, y `d058` releida sobre el arbol de hoy | **CERRADA en `PP.4`**: el ejemplar **sigue vivo** (`4` de `921` documentos), clasificado como **especie vieja en sede sin casillero** y no como cuarta especie, **ninguna de las `4` guardas puede cargarlo**, la objecion tecnica de retirarlo **retirada por medicion** (huella identica), `d007` pagada por su mitad ejecutable y `d058` releida sobre `65`: banda `54,8` a `96,2` |
-| `PP.5` | el cierre: **acta corta**, guardas, estado recomputado al cierre, **el coste del turno citado del log**, la linea del tramo y los discutibles marcados | |
+| `PP.5` | el cierre: **acta corta**, guardas, estado recomputado al cierre, **el coste del turno citado del log**, la linea del tramo y los discutibles marcados | **CERRADA en `PP.5` CON DOS DEUDAS NUEVAS**: `gate`, `guiones`, tallado, censo y tabla `D.52` en VERDE, `D.59` en `0` tras morderme a mi; prueba de aceptacion en ROJO con `2` fallos de `339` (`d067`, **no es guarda de DATO**). Estado `346`, `740`, `1`, `65`, **identico a la apertura**. **Tramo `0`**. Deuda `19` a `17`; `10` discutibles |
 
 **CINCO TAREAS, EN EL TOPE DE CINCO** (`EXTRACTOR.md` 3). Cero cola declarada al abrir.
 
@@ -52338,3 +52349,511 @@ declara, no se resuelve copiando):
 **`d058` NO SE DEBILITA CON ESTO: SE ENSANCHA.** El peso agregado de la bandeja entera es
 **`83,2` por ciento**, o sea que **el techo que `d058` publico como caso extremo es, sobre las `65`,
 el caso medio.**
+
+## PP.3. **`d005` Y `d024`: LOS CANDIDATOS DE `cap_02` Y `cap_03` QUE LA ADUANA EN SECO BLOQUEARIA, NOMBRADOS**
+
+**Las dos miran lo mismo desde dos lados:** `d005` tiene los `15` de `cap_03` medidos y **sin
+nombrar**, y `d024` tiene los `7` de `cap_02` **sin medir siquiera**. **El encargo pide nombrarlos y
+medirlos porque *esos deciden que entra el dia de la insercion*.**
+
+### PP.3.a. **LOS SEIS DE `cap_03`, NOMBRADOS UNO A UNO, CON EL VECINO QUE LOS LEVANTA**
+
+**No los teclo: los saco de los `15` informes por candidato que el frente `grove` dejo en `.v2g/`**,
+que son los que `d024` certifica como *los `15` de `cap_03`, contados contra UNIDAD DE ORIGEN*.
+
+<!-- TALLADO: parcial script=.v54/d005_los_seis.py salida=.v54/d005_los_seis.txt -->
+
+    $ python .v54/d005_los_seis.py
+    d005 RELEIDA: los informes por candidato de cap_03 de grove, en .v2g/
+      informes por candidato leidos : 15
+      BLOQUEARIAN                   : 6
+      ENTRARIAN                     : 9
+      CAERIAN                       : 0
+
+    LOS QUE BLOQUEAN, NOMBRADOS UNO A UNO, CON SU POBLACION Y SUS VECINOS
+      [BLOQUEARIA] archivar_indicadores_resolver_problemas   (poblacion del barrido: 371)
+           vecino construir_indicador_tendencia_patron  [similitud_texto]
+           vecino revisar_tres_preguntas_valor_carrera  [similitud_texto]
+      [BLOQUEARIA] construir_grafico_escalonado_pronosticos   (poblacion del barrido: 371)
+           vecino construir_indicador_tendencia_patron  [similitud_texto]
+           vecino elegir_fabricar_pedido_pronostico  [similitud_texto]
+           vecino emparejar_indicadores_efecto_contraefecto  [similitud_texto]
+      [BLOQUEARIA] construir_indicador_tendencia_patron   (poblacion del barrido: 371)
+           vecino construir_grafico_escalonado_pronosticos  [similitud_texto]
+           vecino archivar_indicadores_resolver_problemas  [similitud_texto]
+           vecino equilibrar_capacidad_personal_inventario_plazo  [similitud_texto]
+      [BLOQUEARIA] elegir_fabricar_pedido_pronostico   (poblacion del barrido: 371)
+           vecino construir_grafico_escalonado_pronosticos  [similitud_texto]
+      [BLOQUEARIA] elegir_indicador_salida_trabajo_administrativo   (poblacion del barrido: 363)
+           vecino evaluar_directivo_resultados_fortaleza  [paso_contra_nodo]
+           vecino emparejar_indicadores_efecto_contraefecto  [similitud_texto]
+      [BLOQUEARIA] emparejar_indicadores_efecto_contraefecto   (poblacion del barrido: 358)
+           vecino revisar_tres_preguntas_valor_carrera  [similitud_texto]
+
+**EL `9` Y EL `6` DE `d005` SALEN AL DIGITO**, y ahora tienen nombre. **Y lo que el recuento enseña
+no estaba en la deuda: cinco de los seis se bloquean ENTRE ELLOS.**
+`construir_indicador_tendencia_patron`, `construir_grafico_escalonado_pronosticos`,
+`archivar_indicadores_resolver_problemas`, `elegir_fabricar_pedido_pronostico` y
+`emparejar_indicadores_efecto_contraefecto` **se nombran unos a otros**, y solo dos vecinos son de
+fuera (`revisar_tres_preguntas_valor_carrera`, que ya vive en el grafo, y
+`evaluar_directivo_resultados_fortaleza`).
+
+> **ESO NO ES UNA SEÑAL DE DUPLICADO: ES `EXTRACTOR.md` 12 AL PIE DE LA LETRA.** *Cuando un capitulo
+> entero cae en la misma familia, eso no es una señal de duplicado, es una señal de que el libro
+> trata un tema.* `cap_03` de `grove` es el capitulo de los indicadores, y **sus nodos hablan de
+> indicadores.** Se extraen igual, y **la cola larga es el precio de un capitulo monotematico.**
+
+### PP.3.b. **PERO ESAS SEIS CIFRAS SON DE OTRA POBLACION, Y ESO SI CAMBIA LO QUE VALEN**
+
+**Aqui es donde `d005` se queda corta, y no por culpa de quien la escribio: por el paso del tiempo.**
+
+<!-- TALLADO: parcial script=.v54/d005_poblacion.py salida=.v54/d005_poblacion.txt -->
+
+    $ python .v54/d005_poblacion.py
+    LA POBLACION DEL BARRIDO, HOY Y ENTONCES
+      grafo de hoy                              : 346  (lineas de dataset/nodos.jsonl)
+      bandejas de hoy                           : 68  (src.aduana.poblacion_de_bandejas)
+      poblacion del barrido de hoy              : 414  (suma de los dos de arriba)
+
+      poblacion de los 15 informes de .v2g/     : 358 a 371  (leida de sus propias cabeceras)
+      documentos NUEVOS desde entonces          : 43 contra el mayor, 56 contra el menor
+        numerador   414  documentos de la poblacion de hoy
+        denominador 371  documentos de la poblacion mayor de aquellos informes
+
+> ## **EL `9 ENTRARIAN` DE `d005` NO ES UNA CIFRA DE HOY, Y NO SE PUEDE USAR COMO SI LO FUERA.**
+>
+> **Entre `43` y `56` documentos nuevos han entrado en la poblacion desde que esos informes
+> corrieron, y cada uno es un vecino posible.** **Asi que el `6` es un SUELO y el `9` es un TECHO**,
+> y `d056` ya midio esta misma figura sobre la tanda `52`: *`18` pares levantan hoy y ninguna ficha
+> los veredicta.*
+
+### PP.3.c. **MUERDO MI PROPIA AFIRMACION ANTES DE PUBLICARLA, PORQUE `d056` LA CONTRADICE**
+
+**El argumento de arriba se apoya en que un candidato solo pierde vecinos si SU PROPIO texto
+cambia**, y **`d056` midio exactamente eso ocurriendo**: *`11` de los `34` veredictados ya no
+levantan*, porque los pagos de `d051` y `d052` engordaron el `resumen_teorico` de seis fichas
+**despues** de que sus informes corrieran. **Si a las `15` de `cap_03` les hubiera pasado lo mismo,
+mi SUELO no seria un suelo.** Asi que lo compruebo ficha a ficha en vez de suponerlo.
+
+<!-- TALLADO: parcial script=.v54/d005_fichas_cambiadas.py salida=.v54/d005_fichas_cambiadas.txt -->
+
+    $ python .v54/d005_fichas_cambiadas.py
+    LAS 15 FICHAS DE cap_03, CON SU ULTIMO COMMIT
+      con MAS de un commit (o sea, tocadas despues de nacer) : 1
+      con UN solo commit (nacieron y no se tocaron)          : 14
+        numerador   1  fichas con mas de un commit
+        denominador 15  fichas de cap_03 con informe en .v2g/
+
+      TOCADA   variar_frecuencia_inspeccion_nivel_calidad         de12cdb 2026-09-18 VUELTA 44 ...
+
+**`14` DE `15` INTACTAS DESDE `a84b84e`, EL COMMIT QUE LAS ESCRIBIO.** La unica tocada es
+`variar_frecuencia_inspeccion_nivel_calidad`, en el pago de `d003` de la vuelta `44`, **y esa es un
+`ENTRARIA`**: su `resumen_teorico` **crecio** con una correccion declarada, o sea que se parece mas a
+sus hermanas que antes, **no menos**.
+
+> **EL SUELO AGUANTA LA MORDIDA, Y ADEMAS LA UNICA EXCEPCION EMPUJA EN EL MISMO SENTIDO:** la ficha
+> que cambio puede **bajar** de `ENTRARIA` a `BLOQUEARIA`, que es la direccion que el argumento
+> predice. **Lo que no puede pasar es que un `BLOQUEARIA` suba, porque ninguno de los seis se ha
+> tocado.**
+
+**LO QUE NO HAGO, Y DIGO POR QUE:** **no relanzo los `15` informes de `cap_03`.** `D.43` extendida
+me saca la cola de vecinos del turno con su medida delante (*`buscar_vecinos` tarda `73,3` s sobre
+`510`*) y dice, con estas palabras, **que si el prompt no me entrega informe, no lo invente y no lo
+lance**. Y **`d005` no ordena recomputar**: ordena reparar, y **reparar es antes de insertar, no
+antes de minar.** Los `7` de `cap_02` **si** los corro, porque **`d024` los ordena por su nombre.**
+
+> **LA CONSECUENCIA PARA EL DIA DE LA INSERCION, ESCRITA PARA QUE NO SE PIERDA:** **el reparto
+> `9`/`6` se vuelve a medir ese dia, sobre la poblacion de ese dia**, y **los seis nombres de arriba
+> son el punto de partida, no la lista final.**
+
+### PP.3.d. **`d024` PAGADA: LOS SIETE DE `cap_02` TIENEN POR FIN SU INFORME POR CANDIDATO**
+
+**`d024` no pedia una opinion: pedia siete informes que no existian**, y decia por que: *el tramo de
+esa vuelta no se puede dimensionar sin ellos.* **Corridos hoy, uno a uno, en seco, con CERO
+inserciones.**
+
+<!-- TALLADO: parcial script=.v54/d024_saldo.py salida=.v54/d024_saldo.txt -->
+
+    $ python .v54/d024_saldo.py
+    d024: LOS 7 DE cap_02 DE grove, CON SU INFORME POR CANDIDATO, CORRIDO HOY
+      informes corridos hoy, uno por candidato : 7
+      poblacion del barrido de cada uno        : 414
+
+      ENTRARIAN   : 0
+      BLOQUEARIAN : 7
+      CAERIAN     : 0
+        numerador   7  candidatos que BLOQUEARIAN
+        denominador 7  candidatos de cap_02 con informe corrido hoy
+
+      RELOJ: 1997 s en total sobre 7 pasadas
+        segundos por pasada : 285.3 s
+          numerador   1997  suma de segundos de las pasadas de hoy
+          denominador 7  pasadas lanzadas hoy
+
+    LA LISTA, CANDIDATO POR CANDIDATO, CON SU VECINDAD
+      [BLOQUEARIA] clasificar_trabajo_proceso_montaje_prueba   (poblacion 414, reloj 557 s)
+           vecino preferir_inspeccion_proceso_prueba_destructiva  [similitud_texto]
+      [BLOQUEARIA] construir_flujo_produccion_paso_limitante   (poblacion 414, reloj 410 s)
+           vecino retirar_barreras_politicas_metodo  [paso_contra_nodo]
+           vecino rehacer_flujo_paso_limitante_capacidad  [similitud_texto, familia_id]
+           vecino preferir_inspeccion_proceso_prueba_destructiva  [similitud_texto]
+      [BLOQUEARIA] detectar_arreglar_fallo_etapa_menor_valor   (poblacion 414, reloj 206 s)
+           vecino supervisar_tarea_delegada_etapa_menor_valor  [familia_id]
+      [BLOQUEARIA] dimensionar_inventario_materia_prima_reposicion   (poblacion 414, reloj 184 s)
+           vecino preferir_inspeccion_proceso_prueba_destructiva  [similitud_texto]
+           vecino detectar_arreglar_fallo_etapa_menor_valor  [similitud_texto]
+           vecino equilibrar_capacidad_personal_inventario_plazo  [similitud_texto]
+      [BLOQUEARIA] equilibrar_capacidad_personal_inventario_plazo   (poblacion 414, reloj 201 s)
+           vecino construir_indicador_tendencia_patron  [similitud_texto]
+           vecino dimensionar_inventario_materia_prima_reposicion  [similitud_texto]
+      [BLOQUEARIA] preferir_inspeccion_proceso_prueba_destructiva   (poblacion 414, reloj 225 s)
+           vecino clasificar_trabajo_proceso_montaje_prueba  [similitud_texto]
+           vecino rehacer_flujo_paso_limitante_capacidad  [similitud_texto]
+           vecino construir_flujo_produccion_paso_limitante  [similitud_texto]
+           vecino dimensionar_inventario_materia_prima_reposicion  [similitud_texto]
+      [BLOQUEARIA] rehacer_flujo_paso_limitante_capacidad   (poblacion 414, reloj 214 s)
+           vecino preferir_inspeccion_proceso_prueba_destructiva  [similitud_texto]
+           vecino construir_flujo_produccion_paso_limitante  [similitud_texto, familia_id]
+           vecino dimensionar_inventario_materia_prima_reposicion  [similitud_texto]
+
+**LO QUE CONFIRMA DE `d024`, Y ES LA MITAD BUENA:** su lectura del informe de lote **era correcta**.
+Alli los `14` `BLOQUEARIA` eran *los `7` de `cap_02` mas los `6` de `d005` mas
+`revisar_tres_preguntas_valor_carrera`*, **y hoy los `7` de `cap_02` bloquean los `7`**, medidos de
+uno en uno y sobre una poblacion que ha crecido desde entonces.
+
+**LO QUE ANADE, Y NO ESTABA EN NINGUN SITIO:**
+
+| | |
+|---|---|
+| **`0 CAERIAN`** | **ninguna guarda los rechaza.** Lo que necesitan es **lectura**, no reparacion, y eso cambia lo que cuesta meterlos |
+| **`6` de los `7` levantan a un HERMANO de `cap_02`** | `cap_02` es el capitulo del flujo de produccion, y **sus nodos hablan de flujo de produccion**: `EXTRACTOR.md` 12 otra vez, no una señal de duplicado |
+| **el tramo ya se puede dimensionar** | que era el motivo escrito de la deuda: **`7` candidatos con `17` vecindades que leer** |
+
+> **Y LA VECINDAD QUE ME PARECE LA MAS SERIA DE LAS DIECISIETE, MARCADA ANTES DE SABER SI ACIERTO:**
+> `construir_flujo_produccion_paso_limitante` contra `rehacer_flujo_paso_limitante_capacidad`, **el
+> unico par de los siete que levantan DOS señales a la vez** (`similitud_texto` **y** `familia_id`) y
+> que ademas se nombran **mutuamente**. **Construir un flujo y rehacerlo no son el mismo
+> procedimiento**, pero los dos ids comparten `flujo` y `paso_limitante`, que es justo lo que
+> `EXTRACTOR.md` 15.2 avisa cuando dice **si te sale un `_2`, para**. **No lo adjudico: lo dejo
+> nombrado para que el dia de la insercion se lea el primero.**
+
+### PP.3.e. **LO QUE LAS DOS JUNTAS DEJAN MEDIDO PARA EL DIA DE LA INSERCION**
+
+| | `cap_02` | `cap_03` |
+|---|---|---|
+| candidatos | `7` | `15` |
+| **medidos HOY, sobre `414`** | **si, los `7`** | **no**: sus informes son de `358` a `371` |
+| `BLOQUEARIAN` | **`7` de `7`** | `6` de `15`, **y es un SUELO** |
+| `CAERIAN` | **`0`** | `0` |
+| vecindades que leer | **`17`** | `12`, **y es un suelo tambien** |
+
+> **LA SUMA QUE NO ESCRIBO, Y DIGO POR QUE NO LA ESCRIBO** (`D.59`): **no publico un total de
+> vecindades de los dos capitulos juntos.** Las de `cap_02` son de una poblacion de `414` y las de
+> `cap_03` de una de `358` a `371`: **sumarlas seria fabricar una cifra que ninguna poblacion
+> sostiene**, que es exactamente la caida que `D.59` nace para impedir.
+
+## PP.5. **EL CIERRE DE LA VUELTA 54: EL ACTA CORTA** (`D.47`, y el encargo la pide corta)
+
+### PP.5.a. **LO PAGADO, CON SU ID, IMPRESO DEL INSTRUMENTO Y NO TECLEADO POR MI**
+
+<!-- TALLADO: parcial salida=.v54/deuda_cierre.txt -->
+
+    $ python scripts/deuda.py
+      pendientes: 16    pagadas: 23
+      ultima vuelta de saneamiento: 54
+
+| id | que era | como se pago |
+|---|---|---|
+| `d007` | la `11` se clasifica con un ejemplar delante | **`PP.4`**, y **solo su mitad ejecutable**: la congelacion de la cola es un estado de `D.56` y este pago no la descongela |
+| `d033` | la tasa de la prueba intermitente, sin medir | **`PP.2.c`**: `0` ROJO de `12` corridas de hoy, `19,0` s por corrida |
+| `d047` | el sello citado con `HEAD`, que deja de reproducirse | **`PP.2.b`**: correccion declarada, la cita pasa a nombrar el commit `55cd182` |
+| `d063` | (nacida y pagada hoy) la correccion declarada sobre `d058` | **`PP.4.h`**, por el metodo de `d039`: la correccion ES el pago |
+| `d024` | los `7` de `cap_02` sin informe por candidato | **`PP.3.d`** |
+
+### PP.5.b. **LO QUE QUEDA ABIERTO, CON SU MOTIVO EN UNA LINEA** (el encargo: *lo que no se paga se declara*)
+
+| id | por que sigue abierta |
+|---|---|
+| `d005` | **no era pagable hoy**: el propio encargo dice que se relee y no se paga, y su reparacion es **antes de insertar**, no antes de minar |
+| `d006` | relectura de `154` pasos de un capitulo de **otro libro**, que esta vuelta no mina ni inserta |
+| `d009`, `d022`, `d029`, `d030` | las cuatro de `scripts/`, vedadas a toda sesion por la lectura de `D.45` que firma la `ACTA 52` `1.A` |
+| `d020`, `d028`, `d037` | las tres de `src/`, y **las tres lo dicen dentro de su propio texto** |
+| `d011` | **medida y cumpliendose**, pero el encargo de hoy cambia la unidad del techo de minutos a USD, **y eso es doctrina que no me adjudico** |
+| `d012` | **medida**: la fase ciega no existe en ligero, pero **eso no la arregla, solo la deja sin superficie** |
+| `d031`, `d058` | sus propuestas tocan `src/` |
+| `d053`, `d056` | **las dos dicen dentro de si mismas** que se cobran el dia de la insercion |
+
+### PP.5.c. **LA CLASIFICACION DE LA PREGUNTA `11`, EN CUATRO LINEAS** (el cuerpo esta en `PP.4`)
+
+1. **El ejemplar sigue vivo**: `4` coincidencias en `921` documentos, en dos sedes. Lo que la vuelta
+   `40` hizo fue **declararlo**, no quitarlo, que es lo unico que la anexion permite.
+2. **Si hay hueco, pero no es una especie nueva de dano**: es la de `AUDITOR_FORJA.md` `5.5`
+   (*la ruta que promete prueba es cifra*) **en una sede que la tabla de `5.2` no le da**. Faltan dos
+   lineas: **`dataset/` como sede de CIFRA PUBLICADA**, y **la clausula extendida de RUTA a COMANDO
+   CITADO**.
+3. **Ninguna de las cuatro guardas de `deuda.py` puede cargarlo**, repasadas una a una contra el
+   ejemplar, **y no debe ser una quinta**: las cuatro bloquean en el acto porque su rojo es averia, y
+   esto **no mueve veredicto, ni cifra, ni huella, ni grafo**. Su sitio es **`D.42`**, el censo de
+   rutas, mirando la otra mitad de la misma promesa.
+4. **La objecion tecnica de retirarlo queda retirada por medicion**: `huella_de_nodo` da
+   `d228fe61d4d02678` con los dos controles y sin ellos, **asi que quitarlos no invalidaria ni una
+   lectura de `D.15`**. Lo que sigue abierto es **quien los quita**, porque la anexion no puede y hay
+   **dos sedes** que habria que tocar a la vez.
+
+### PP.5.d. **EL COSTE DEL TURNO, QUE ES LO QUE ESTA VUELTA VIENE A MEDIR** (encargo, punto primero)
+
+**El encargo lo dice con estas palabras: *no hace falta que lo midas tu: hace falta que lo cites*.**
+Asi que lo cito, **y digo lo que todavia no se puede citar.**
+
+<!-- TALLADO: parcial script=.v54/coste_por_turno.py salida=.v54/coste_por_turno.txt -->
+
+    $ python .v54/coste_por_turno.py
+    COSTE POR TURNO, de docs/loop/loop.log
+      turnos con linea 'listo (USD ...)' en el log : 149
+
+      LOS DIEZ ULTIMOS, UNO POR LINEA (sin media: son las celdas)
+        cuando               rol            modo             USD       s
+        2026-09-19 14:21:36  auditor        insertar     12.9935    1651
+        2026-09-19 15:29:23  extractor      insertar     17.2951    4066
+        2026-09-19 16:13:35  auditor ciego  insertar     13.5010    2650
+        2026-09-19 16:57:38  auditor        insertar     18.3357    2623
+        2026-09-19 18:44:36  extractor      insertar     25.3705    6413
+        2026-09-19 20:09:04  auditor ciego  insertar     14.7707    5067
+        2026-09-19 20:49:18  auditor        insertar     12.4727    2396
+        2026-09-19 22:39:11  extractor      insertar     28.2521    6592
+        2026-09-19 23:12:23  auditor ciego  insertar      9.0922    1991
+        2026-09-19 23:44:54  auditor        insertar     12.7704    1931
+
+      EL CONTRASTE QUE PRESUPUESTA EL OBJETIVO DE 5 USD
+      extractor en insertar, USD/turno      26.06 USD
+                                           numerador       990.29  suma de USD de los turnos de extractor en insertar
+                                           denominador         38  turnos de extractor en insertar
+      el mas barato de esos turnos         7.3521 USD
+      el mas caro de esos turnos          62.1116 USD
+
+> ## **EL MIO NO LO PUEDO CITAR, Y NO LO INVENTO.**
+>
+> **El arnes escribe `extractor listo (USD ...)` CUANDO EL TURNO CIERRA**, o sea **despues** de que
+> yo escriba esta linea. La ultima linea de coste del log es la del auditor de la `53`, **`12,770366`
+> USD**, que es justo el contraste que el encargo cita. **Mi cifra la pega el arnes y la lee el
+> auditor de la `ACTA 53`**, y esto es lo mismo que `EXTRACTOR.md` 4 manda para el estado al cierre:
+> lo que no se puede medir hoy **se dice que no se puede medir hoy.**
+
+**LO QUE SI APORTO, Y ES EL CONTRASTE QUE FALTABA:** el encargo compara contra **`12,77`**, que es un
+turno **de AUDITOR**. **El objetivo de `5` USD es para un turno de EXTRACTOR**, y esos salen mas
+caros: **`26,06` USD por turno sobre los `38` de `insertar` que hay en el log**, con el mas barato en
+**`7,35`** y el mas caro en **`62,11`**.
+
+> **ASI QUE EL OBJETIVO NO ES BAJAR DE `12,77`: ES BAJAR DE `7,35`, QUE ES EL TURNO DE EXTRACTOR MAS
+> BARATO QUE ESTA CASA HA TENIDO NUNCA.** No digo que sea imposible, y ademas esta vuelta juega con
+> ventaja porque **no mina**. **Digo que la vara publicada en el encargo es mas blanda que la
+> medida**, y que si la `55` vuelve a minar, **el contraste bueno es el de su propio rol**.
+
+### PP.5.e. **LA LINEA DEL TRAMO, QUE HOY ES CERO Y SE ESCRIBE IGUAL** (encargo: *sea cual sea el numero, incluido `0`*)
+
+> # **LA LINEA DEL TRAMO: `0` candidatos escritos, `0` capitulos minados, `0` inserciones.**
+>
+> **`7` pasadas de aduana EN SECO, `1997` s de reloj, `285,3` s por pasada**, y las siete son el pago
+> de `d024`, **no un tramo**: ni una de ellas escribio un candidato. **`cap_07` sigue en `1` de `9` y
+> `cap_08` en `0`, exactamente donde la vuelta `53` los dejo.**
+
+**LA VUELTA NO MINA PORQUE `D.55` SE LO PROHIBE**, y el encargo lo repite: *una vuelta de saneamiento
+no inserta ni mina.* **El `0` no es un corte por reloj ni por techo: es la clase de la vuelta.**
+
+### PP.5.f. **LAS GUARDAS AL CIERRE, CON LA PRUEBA DE ACEPTACION EN ROJO Y DICHO POR SU NOMBRE**
+
+<!-- TALLADO: parcial salida=.v54/cierre_gate.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+<!-- TALLADO: parcial salida=.v54/cierre_guiones.txt -->
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+<!-- TALLADO: parcial salida=.v54/aceptacion_cierre.txt -->
+
+    $ python tests/test_aceptacion.py
+      total: 339 pruebas, 2 fallos, 0 errores
+
+**LOS DOS FALLOS SON MIOS, Y SON CONSECUENCIA DE HACER LO QUE LA VUELTA TENIA QUE HACER.**
+
+<!-- TALLADO: parcial salida=.v54/aceptacion_fallos.txt -->
+
+    FAIL: test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa
+      File "tests\test_aceptacion.py", line 3703
+      AssertionError: 0 != 1
+    FAIL: test_la_vuelta_49_consta_como_saneamiento_en_el_registro
+      File "tests\test_aceptacion.py", line 3733
+      AssertionError: 54 != 49
+
+**LAS DOS LEEN EL REGISTRO VIVO**, y las dos cuelgan **del mismo valor**:
+
+<!-- TALLADO: parcial script=.v54/d067_antes.py salida=.v54/d067_antes.txt -->
+
+    $ python .v54/d067_antes.py
+    LA PREGUNTA DE LA PRUEBA 3733: deuda.ultima_saneamiento()
+      sobre el registro de 4365888 (antes de mi declaracion) : 49
+      sobre el registro VIVO de hoy                     : 54
+      lo que la prueba exige                            : 49
+
+**Corri `python scripts/deuda.py --saneamiento --vuelta 54`, que es lo que `D.55` manda y lo que la
+vuelta `49` NO hizo**, y cuyo olvido es **justo lo que el docstring de la prueba `3733` commemora**.
+La `3703` cae por lo mismo por un paso mas: `guarda_tablero.cadencia` llama en su linea `99` a
+`deuda.clase_de_vuelta`, que cuenta desde ese valor.
+
+> ## **NO ES GUARDA DE DATO Y NO ME BLOQUEA** (`D.55`: `gate`, cerrojo, censo no decreciente y
+> fidelidad `D.30`, **y solo esas**).
+>
+> **Y NO ES LA CAUSA QUE PARO LA VUELTA `53`**, que era `test_caso_negativo_el_encargo_que_declara_
+> el_que_toca_pasa` y que el fundador arreglo en `ab99b4f`: **esa hoy pasa.** **Son dos pruebas
+> distintas y una causa distinta**, asi que **no se cumple la condicion de *dos vueltas seguidas por
+> la misma causa***. **Lo declaro yo y que lo juzgue el auditor**, que es su sede.
+>
+> **ES LA FAMILIA DE `d057`, Y PEOR QUE ELLA:** `d057` era un fixture caducado **una vez**; estas
+> **se rompen solas en CADA vuelta de saneamiento**, o sea **una de cada cinco, para siempre**.
+> Anotada como **`d067`**, con su remedio propuesto y sin aplicar (`tests/` vedado).
+
+### PP.5.g. **LA DEUDA RECOMPUTADA AL CIERRE, IMPRESA DEL INSTRUMENTO** (`EXTRACTOR.md` 4)
+
+<!-- TALLADO: parcial salida=.v54/deuda_cierre.txt -->
+
+    $ python scripts/deuda.py
+      pendientes: 17    pagadas: 25
+      ultima vuelta de saneamiento: 54
+
+**DE `19` PENDIENTES A `17`, Y DE `19` PAGADAS A `25`.** El cuadre, pieza a pieza, **para que nadie
+tenga que restar por su cuenta**: `4` deudas viejas pagadas (`d007`, `d024`, `d033`, `d047`), `2`
+nacidas y pagadas en el acto por el metodo de `d039` (`d063` sobre `d058`, `d069` sobre `d067`), y
+`2` nuevas que quedan pendientes (`d067`, `d068`). **`19 - 4 + 2 = 17`** y **`19 + 6 = 25`.**
+
+### PP.5.h. **EL CREDITO AL CIERRE, LEIDO Y NO ANOTADO POR MI** (`EXTRACTOR.md` 14)
+
+<!-- TALLADO: parcial salida=.v54/credito_cierre.txt -->
+
+    $ python forja.py credito
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA 52
+      CIFRA PUBLICADA    1 de 2     ACTA 52
+      CLASE              0 de 2     ACTA 52
+      DATO MOVIDO        0 de 2     ACTA 52
+      REPORTE            0 de 3     docs/loop/paradas/2026-09-20-la-media-la-calcula-el-instrumento-DECISION.md, punto 1
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+### PP.5.i. **EL ESTADO RECOMPUTADO AL CIERRE, NO COPIADO DE LA APERTURA** (`EXTRACTOR.md` 4)
+
+<!-- TALLADO: parcial salida=.v54/cierre_estado.txt -->
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    65
+
+**`346`, `740`, `1`, `65`: los cuatro IDENTICOS a la apertura**, y esa identidad **es el entregable
+de una vuelta de saneamiento, no una casualidad.** `D.55` dice que no inserta ni mina; **los cuatro
+contadores son la prueba de que no lo hizo.** **Los recomputo igual, porque `EXTRACTOR.md` 4 manda
+recomputarlos, no suponerlos iguales.**
+
+### PP.5.j. **MIS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| # | lo que marco | por donde puede caer |
+|---:|---|---|
+| `1` | **clasificar la pregunta `11` como *especie vieja en sede sin casillero* y NO como cuarta especie** | es la decision de fondo de toda la tarea. Si el auditor lee que el dano **si** es de otra naturaleza, mi `PP.4.d` entero se cae |
+| `2` | **proponer `D.42` y no una quinta guarda de dato** | apoyado en que el defecto no mueve dato; si se juzga que una cita ilegible **es** dato, el sitio es otro |
+| `3` | **pagar `d007` por la mitad** | o se paga entera o no se paga; partir una deuda en dos mitades no esta escrito en ningun sitio, y me lo he permitido yo |
+| `4` | **la tasa de `d033` que imprime `.v54/d033_tasa.py`**: digo que no acota la frecuencia por abajo, **y aun asi cierro la deuda** | se puede sostener que una tasa que no reproduce el fallo no es la tasa que `d033` pedia |
+| `5` | **dejar `d011` y `d012` abiertas pudiendo cerrarlas** | lo contrario de `3`: aqui peco de estrecho y alli de ancho, **y las dos no pueden estar bien** |
+| `6` | **el `6` de `cap_03` es un SUELO** | lo mordi con `14` de `15` fichas intactas, pero **no relance los informes**: es un argumento, no una medicion directa |
+| `7` | **el par `construir_flujo` contra `rehacer_flujo` como el mas serio de las `17`** | lo elegi yo por *dos señales a la vez y mutuo*; puede haber otro peor que no vi |
+| `8` | **decir que los `2` fallos NO son la causa de la parada de la `53`** | son pruebas distintas, pero alguien puede leer *la misma causa* como *el mismo fichero de fixtures caducado* |
+| `9` | **`26,06` USD como el contraste bueno** frente a los `12,77` del encargo | mezcla `38` turnos de muchas vueltas distintas; **la media la imprime el instrumento, pero elegir ESA poblacion la elijo yo** |
+| `10` | **no relanzar los `15` informes de `cap_03`** amparandome en `D.43` | `D.43` habla de la cola de vecinos de una vuelta que mina, y esta no mina: **puede que no me ampare** |
+
+### PP.5.k. **LO QUE REGISTRO Y NO RESUELVO** (`D.56`: la doctrina sigue congelada en `11`)
+
+- **`d067`**: dos pruebas clavadas al registro vivo. **Registrada con su medida y su remedio
+  propuesto**, sin tocar `tests/`.
+- **`d068`**: el encargo predice la `58` y el instrumento dice la `59`. **Declarada la discrepancia,
+  no resuelta copiando** (`EXTRACTOR.md` 5).
+- **La pregunta `11` queda CLASIFICADA, que es lo que se me pidio, y NO ADJUDICADA**, que no es mi
+  sede. **La cola sigue congelada en `11` y `config/frentes.json` no se ha tocado.**
+
+### PP.5.l. **`d022` REPRODUCIDA EN DIRECTO, Y ES LA ONCEAVA VEZ: EL INSTRUMENTO ME DIO VERDE SOBRE LA TABLA DE OTRA VUELTA**
+
+**No la busque: me la encontre al cerrar, y la declaro entera porque es exactamente lo que `d022`
+describe.** Corri `tabla_de_cierre.py --escribir` **antes** de escribir mi tabla `D.52`, con mi
+esqueleto usando la cabecera `| tarea | que pide | estado |`, y el instrumento **regenero las cinco
+filas de la vuelta `53`** (`OO.1` a `OO.5`) **y cerro en VERDE**:
+
+<!-- TALLADO: parcial salida=.v54/tabla_de_cierre_run.txt -->
+
+    $ python scripts/tabla_de_cierre.py --escribir
+      libro de la linea : grove_high_output
+      filas             : 5
+    ESCRITA la tabla regenerada en docs\loop\TABLA_DE_CIERRE.txt
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+
+**`filas: 5` y `VERDE`, y ninguna de esas cinco filas es mia.** `d022` lo escribe asi: *cuando el
+reporte de la vuelta usa otra cabecera el instrumento regenera y da VERDE sobre la tabla de una
+vuelta ANTERIOR **sin decirlo***. **Sin decirlo es la parte que cuesta**: el saldo no distingue *tus
+cinco filas estan bien* de *no encontre tus filas*.
+
+**EL REMEDIO ES EL DE SIEMPRE Y NO ES DE CODIGO: ESCRIBIR LA TABLA CON LA CABECERA QUE EL INSTRUMENTO
+BUSCA Y VOLVER A CORRERLO**, que es lo que hago en `PP.5.m`. **Y la colision de `d030` la pague
+antes de que ocurriera**, archivando y sellando la tabla de la `53` en `PP.5.c` **antes** de
+sobrescribirla, asi que el `--escribir` de arriba **no se llevo por delante nada**: el fichero vivo
+volvio a salir con el mismo `4e3e2fb30c29ad653deac7b08baf4b5f31dd88f5`.
+
+### PP.5.m. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
+
+*Salida de `python scripts/tabla_de_cierre.py --escribir`, pegada de
+`docs/loop/TABLA_DE_CIERRE.txt`.*
+
+<!-- TALLADO: salida=docs/loop/TABLA_DE_CIERRE.txt -->
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | los registros de la `ACTA 52` y de la decision del fundador recogidos sin reabrirlos, y la parte caduca del encargo declarada en vez de obedecida | **CERRADA en `PP.1`**: las `8` adjudicaciones recogidas sin rediscutirse, y el punto `1` del orden propuesto por el encargo declarado **VACIO** con su medicion delante, porque `d001` a `d004` estan pagadas desde la vuelta `44` y la lista solo imprime pendientes |
+| 2 | pagar la deuda, una por una, cada pago con su medicion propia, y lo que no se paga declarado con su motivo | **CERRADA en `PP.2`**: `d047` pagada (la cita pasa de `HEAD` al commit `55cd182`, y la forma con `HEAD` da hoy un TERCER valor distinto) y `d033` pagada (`0` ROJO de `12` corridas, `19,0` s cada una, y **digo lo que la tasa NO acota**). `d007` y `d024` derivadas a `PP.4` y `PP.3`. Las `15` restantes declaradas una a una **con el renglon que ellas mismas escriben**, y `d011` y `d012` medidas y **dejadas abiertas a proposito** porque cerrarlas seria adjudicarme algo que no es mi sede |
+| 3 | `d005` y `d024` releidas: los candidatos de `cap_02` y `cap_03` que la aduana en seco bloquearia, nombrados uno a uno | **CERRADA en `PP.3`**: los `6` de `cap_03` nombrados con su vecino y su poblacion, el `9`/`6` declarado **SUELO y TECHO** y el argumento mordido antes de publicarlo (`14` de `15` fichas intactas, y la unica tocada empuja en el mismo sentido); y **`d024` PAGADA** con los `7` de `cap_02` corridos hoy uno a uno sobre poblacion `414`: **`0 ENTRARIAN`, `7 BLOQUEARIAN`, `0 CAERIAN`**, `1997` s de reloj, `285,3` s por pasada, `17` vecindades nombradas |
+| 4 | la pregunta `11` clasificada CON UN EJEMPLAR DELANTE, y `d058` releida | **CERRADA en `PP.4`**: el ejemplar **sigue vivo** cuatro vueltas despues de darse por corregido (`4` coincidencias en `921` documentos, en dos sedes), clasificado como **especie vieja en sede sin casillero** y no como cuarta especie, **ninguna de las `4` guardas de `deuda.py` puede cargarlo** repasadas una a una, y la objecion tecnica de retirarlo **retirada por medicion** (`huella_de_nodo` identica con y sin ellos). `d007` pagada por su mitad ejecutable y `d058` releida sobre `65`: la banda va de `54,8` a `96,2` y no de `70,3` a `83,1` |
+| 5 | el cierre: acta corta, guardas, estado recomputado, el coste del turno citado del log, la linea del tramo y los discutibles | **CERRADA en `PP.5` CON DOS DEUDAS NUEVAS DECLARADAS**: `gate`, `guiones`, tallado y censo en VERDE, y **la prueba de aceptacion en ROJO con `2` fallos de `339` que son consecuencia de que la vuelta declarara su propio saneamiento**, anotados como `d067`. Estado recomputado **identico a la apertura** (`346`, `740`, `1`, `65`), que es el entregable de una vuelta que no inserta ni mina. **Linea del tramo: `0` candidatos, `0` capitulos, `0` inserciones.** Deuda de `19` a `17` pendientes y de `19` a `25` pagadas, `d068` declarada por la discrepancia de cadencia, y `10` discutibles marcados |
+
+### PP.5.n. **`D.59` ME MORDIO A MI, EL DIA DE SU ESTRENO, Y LO DECLARO EN VEZ DE CALLARLO**
+
+**La guarda nueva cazo una celda mia al correr `cerrar_reporte.py`**, y era de verdad:
+
+**Y NO CITO EL `cerrar_reporte.txt` DE AQUELLA CORRIDA, PORQUE LO SOBRESCRIBI AL VOLVER A
+CORRERLO**, y una ruta que ya no dice lo que dijo no sostiene nada (`D.42`). **Lo reconstruyo
+reproducible**: le paso la misma guarda a la celda mala y a la buena, en el mismo acto.
+
+<!-- TALLADO: parcial script=.v54/d59_mordida.py salida=.v54/d59_mordida.txt -->
+
+    $ python .v54/d59_mordida.py
+    CON LA CELDA COMO LA ESCRIBI (la mala):
+      CIFRAS DERIVADAS SIN INSTRUMENTO (D.59): 1 en la vuelta viva
+        frase: | `4` | **`0` de `12` en `d033`**: digo que no acota la frecuencia por abajo, **y aun asi cierro la deuda** |
+
+    CON LA CELDA YA CORREGIDA (la que se publica):
+      CIFRAS DERIVADAS SIN INSTRUMENTO (D.59): 0 en la vuelta viva
+
+**La celda era la fila `4` de mis propios discutibles**, que escribia **`0` de `12`** dentro de una
+tabla **cuyo parrafo no nombraba `.v54/d033_tasa.py`**. La cifra es cierta y esta impresa por su
+instrumento **en `PP.2.c`**, tres secciones mas arriba, **y eso es justo lo que la guarda NO
+acepta**: el falso positivo que el fundador corrigio el mismo dia dejo escrito que **un parrafo
+vecino no salva**, porque *si bastara, bastaria con citar un instrumento una vez por reporte.*
+
+**ARREGLADO NOMBRANDO EL INSTRUMENTO EN LA PROPIA CELDA, no quitando la cifra**, y vuelto a correr:
+**`0` en la vuelta viva**, como la segunda mitad de la salida de arriba enseña.
+
+> **LO DIGO PORQUE ES LA PRIMERA VUELTA QUE CORRE CON `D.59` PUESTA Y LA PRIMERA CIFRA QUE CAZA ES
+> MIA.** La regla nacio de una caida de mi antecesor **en una tabla**, y hoy ha mordido **en una
+> tabla**, en el mismo sitio y por el mismo motivo. **Una guarda que muerde a quien la estrena es una
+> guarda que funciona.**
