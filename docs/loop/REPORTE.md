@@ -53586,7 +53586,12 @@ FUE**, porque eso si lo se sin esperar al log:
 
 ### VV.7.f. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
 
-<!-- TALLADO: script=scripts/tabla_de_cierre.py salida=docs/loop/TABLA_DE_CIERRE.txt -->
+<!-- TALLADO: script=scripts/tabla_de_cierre.py salida=docs/loop/TABLA_DE_CIERRE_v55.txt -->
+<!-- RUTA CORREGIDA EN LA VUELTA 56 (d030): tabla_de_cierre.py --escribir sobrescribe SIEMPRE
+     docs/loop/TABLA_DE_CIERRE.txt, y la vuelta 56 lo hizo para su propia tabla. Esta de la
+     vuelta 55 se archivo en docs/loop/TABLA_DE_CIERRE_v55.txt ANTES de esa sobrescritura, con
+     el sello identico pegado en la WW.7.g de la vuelta 56. Se toca la ruta del comentario y
+     NINGUNA celda de la tabla. -->
 | # | tarea | como cerro |
 |---:|---|---|
 | 1 | los registros de la `ACTA 53` recogidos sin reabrirlos | **CERRADA en `VV.1`**: los `6` recogidos con su linea de `ACTA 53` pegada al lado, la pregunta `11` **no reabierta** porque `D.56` congela la cola en `11`, y `d071` y `d072` declaradas **fuera de mi trabajo de hoy** con su linea de `DEUDA.jsonl` |
@@ -53786,3 +53791,501 @@ lo lance.** Y el arnes habia declarado antes que esta corrida no lo traia hecho
 > `cap_07`, `cap_09` y `cap_10` quedan cerrados por su frontera y `cap_08` ya lo estaba. **Lo
 > que `d028` no sabe seguir distinguiendo es si un capitulo esta minado o solo empezado**, asi
 > que la vuelta `56` tiene que volver a comprobarlo a mano, exactamente como hice yo hoy.
+
+---
+
+# VUELTA 56, lote 7 (`grove_high_output`), **CLASE EXTRACCION, LA MEDICION CON SONNET**: `cap_08` y `cap_09` leidos enteros con cero cosecha, `cap_10` cerrado con su `1`, y las tres cifras que deciden si Grove sigue en este modelo
+
+*Corro con `claude-sonnet-5` (`docs/loop/loop.log`, `[2026-09-20 17:16:36] VUELTA 1 : EXTRACTOR (claude-sonnet-5)`). El auditor sigue en Opus 5. `docs/loop/paradas/2026-09-21-el-precio-del-extractor-DECISION.md` punto `3`.*
+
+## WW.0. **LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION** (`EXTRACTOR.md` 4)
+
+**Lo pendiente se commiteo y pusheo primero**, como manda `EXTRACTOR.md` 1:
+
+    $ git add -A && git commit -m "Sincroniza loop.log y ultimo_extractor.json antes de abrir la vuelta 56"
+    $ git push
+    [extraccion-mundo-11 6a78522] Sincroniza loop.log y ultimo_extractor.json antes de abrir la vuelta 56
+    To https://github.com/Alexcat84/forja-nodos.git
+       e5b7b9d..6a78522  extraccion-mundo-11 -> extraccion-mundo-11
+
+**LA IDENTIDAD, LEIDA DE GIT** (`EXTRACTOR.md` 5):
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    6a78522193017494e593f9667d1f8620a7d25148
+    2026-09-20T17:17:29-04:00
+    extraccion-mundo-11
+
+**EL ESTADO, DEL PROPIO COMMIT DE APERTURA** (el gate del pre-commit hook de ese mismo commit, `.v56ext/` no existia todavia):
+
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta,
+               cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones,
+               censo_no_decrece
+
+    $ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+    346 dataset/nodos.jsonl
+
+    $ ls cuarentena/grove_high_output | wc -l
+    74
+
+**Coinciden al digito con el cierre de la `VV.7` de la vuelta anterior: `346`, `740`, `74`.** Nadie
+toco el grafo entre una vuelta y otra, que es exactamente lo que `D.39` promete mientras el lote
+`7` siga abierto.
+
+## WW.1. TAREA IMPLICITA: **LOS REGISTROS DE LA `ACTA 54` Y DE LA DECISION DEL FUNDADOR, RECOGIDOS SIN REABRIRLOS**
+
+*`EXTRACTOR.md` modo austero: nada que el registro ya diga se repite aqui.*
+
+- **La decision del fundador del 21 sep 2026** ya aplico sus cinco puntos y los dejo tallados en
+  su propia tabla (`docs/loop/paradas/2026-09-21-el-precio-del-extractor-DECISION.md`, seccion
+  *LO QUE SE APLICO*). El punto `3`, la medicion con Sonnet, **es este mismo encargo**: no lo
+  reabro, lo ejecuto.
+- **`ACTA 54` `54.8.1`**: el asunto del commit `759ed91` no nombra lo que trae. Es un aviso para
+  quien audite por `git show` en fase ciega, **y la fase ciega esta apagada en `cuarentena`
+  desde hoy** (decision punto `1`). Lo registro y no lo reabro: no me toca a mi.
+- **`ACTA 54` `54.8.2`, `d067`**: las dos pruebas de aceptacion que clavan
+  `ultima_saneamiento()` solo fallan en vueltas de **SANEAMIENTO**. Esta vuelta es
+  **EXTRACCION**, y por eso mi propia corrida de `tests/test_aceptacion.py` en `WW.7.c` da
+  `339` de `339` en VERDE: **no es que `d067` se haya pagado, es que su condicion de disparo no
+  se cumple hoy.** Sigue `PENDIENTE` en `DEUDA.jsonl` y no la toco.
+- **`D.56` congela la cola de doctrina en `11`.** No traigo pregunta nueva esta vuelta: los tres
+  capitulos de hoy no dejaron ninguna duda de clase, a diferencia de `cap_10` en la vuelta
+  pasada.
+
+## WW.2. TAREA 1: **LA FRONTERA DE `cap_08`, `cap_09` Y `cap_10`, PUBLICADA ANTES DE CORTAR NADA** (`EXTRACTOR.md` 10)
+
+**Mismo instrumento que la vuelta 55 uso para `cap_09` y `cap_10` (`.v55ext/frontera.py`), que a
+su vez reusaba el de la vuelta 53: NI UNA LINEA DE SU MAQUINARIA TOCADA** (`EXTRACTOR.md` 13).
+Lo unico que cambia es la tabla de tramos: `cap_08` es lectura mia de hoy, primera vez que se
+mina; `cap_09` y `cap_10` los releo ENTEROS por mi cuenta esta vuelta (`EXTRACTOR.md` 5: el
+instrumento manda, una nota vieja no es fuente de una cifra nueva) antes de cerrarlos. Mi
+relectura de los dos coincide tramo a tramo con la de la vuelta 55, y la cito como contraste, no
+como fuente.
+
+<!-- TALLADO: parcial salida=.v56ext/frontera.txt -->
+
+    $ python .v56ext/frontera.py
+    ============================================================================
+    1. LA COMPROBACION DE cap_08, ANTES DE SU TABLA
+    ============================================================================
+    fichero                                : fuentes/grove_high_output/cap_08.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 13
+    lineas con contenido tras la cabecera  : 13
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 1138 palabras
+    cuerpo medido aparte                   : 1138 palabras
+    fichero entero, para cruzar con wc -w  : 1166 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_08 Y SOLO cap_08: 0
+
+| tramo de `cap_08` | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L9` | 1 | **0** | P1  rotulo: el numero 7, sin cuerpo que extraer | `9:7` |
+| `L11 a L11` | 5 | **0** | P2  titulo textual The Breakfast Factory Goes National, sin cuerpo que extraer | `11:The Breakfast Factory Goes National` |
+| `L13 a L13` | 77 | **0** | P3  la maquina de huevos y el exito que abarata el coste: CASO, continua la fabrica de desayunos, manual 3.5 | `13:We left the breakfast factory as it was enjoying great success-s` |
+| `L15 a L15` | 86 | **0** | P4  la franquicia nacional a partir del articulo de la revista: CASO, manual 3.5 | `15:Like good entrepreneurs, we knew we had a good thing going and s` |
+| `L17 a L17` | 190 | **0** | P5  la tension entre el conocimiento local y la escala nacional: POSTURA de apertura del capitulo, sin pasos | `17:Before long we found, however, that the network required a set o` |
+| `L19 a L19` | 168 | **0** | P6  la dicotomia centralizar o descentralizar con sus preguntas de publicidad, personal y salario: CASO con PREGUNTAS abiertas, manual 3.5, ninguna cerrada en inventario | `19:In fact, the centralization-decentralization dichotomy is so per` |
+| `L21 a L21` | 111 | **0** | P7  el compromiso de los centros regionales de compra de huevos y el estandar nacional de calidad: CASO resuelto, manual 3.5, la solucion es del relato y no un medio nombrado para transferir | `21:But I don't think we should buy all our eggs in Chicago. We want` |
+| `L23 a L23` | 53 | **0** | P8  el menu comun con margen regional: CASO resuelto, manual 3.5 | `23:What about items on the menu? By and large we want to keep the s` |
+| `L25 a L25` | 53 | **0** | P9  la pregunta de bienes raices, sin resolver: CASO con PREGUNTAS, manual 3.5 | `25:What about real estate? Should we allow our Breakfast Factories ` |
+| `L27 a L27` | 93 | **0** | P10 muebles y vajilla, con almacenes regionales de reparto: CASO resuelto, manual 3.5 | `27:What about furniture? Does it have to be utterly uniform? Should` |
+| `L29 a L29` | 67 | **0** | P11 donde ubicar cada nueva franquicia, sin resolver: CASO con PREGUNTAS, manual 3.5 | `29:How do we choose the location of new franchises within each metr` |
+| `L31 a L31` | 165 | **0** | P12 la nostalgia del negocio pequeno y la proliferacion de mandos corporativos: CASO, manual 3.5, el deseo del gerente de trafico de comprar un ordenador no despliega ningun paso | `31:Things have become very complicated. Sometimes as I sit behind m` |
+| `L33 a L33` | 69 | **0** | P13 el cierre: la gestion no es solo un juego de equipo, es un equipo de equipos: POSTURA de cierre que anuncia el capitulo siguiente, sin pasos propios | `33:Earlier, we established the fact that the game of management is ` |
+| | **1138** | **0** | **el cuerpo entero de `cap_08`, cero lineas sin cubrir y cero solapes** | |
+
+    ============================================================================
+    1. LA COMPROBACION DE cap_09, ANTES DE SU TABLA
+    ============================================================================
+    fichero                                : fuentes/grove_high_output/cap_09.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 27
+    lineas con contenido tras la cabecera  : 29
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 2284 palabras
+    cuerpo medido aparte                   : 2284 palabras
+    fichero entero, para cruzar con wc -w  : 2309 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_09 Y SOLO cap_09: 0
+
+**`cap_09` completo, `27` tramos, `0` nodos: la tabla es identica a la que la vuelta 55 publico
+en `.v55ext/frontera.py`. La pego entera en `.v56ext/frontera.txt` (censada en `WW.7.g`) y no la
+retipeo aqui dos veces en la misma vuelta**, que es la letra del austero (`D.47`: nada que el
+registro ya diga).
+
+    ============================================================================
+    1. LA COMPROBACION DE cap_10, ANTES DE SU TABLA
+    ============================================================================
+    fichero                                : fuentes/grove_high_output/cap_10.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 35
+    lineas con contenido tras la cabecera  : 36
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 3218 palabras
+    cuerpo medido aparte                   : 3218 palabras
+    fichero entero, para cruzar con wc -w  : 3243 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_10 Y SOLO cap_10: 1
+
+**`cap_10` completo, `35` tramos, `1` nodo, en `P17` (`L43`): identica tramo a tramo a la
+publicada en la vuelta 55, y es el nodo que ya espera en cuarentena
+(`repartir_supervision_puesto_funcional_mision.json`).** La tabla completa esta pegada en
+`.v56ext/frontera.txt`.
+
+    ============================================================================
+    3. EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI
+    ============================================================================
+    NODOS QUE MI FRONTERA DA EN LAS TRES UNIDADES DE HOY (cap_08+cap_09+cap_10): 1
+      cap_08: 0   cap_09: 0   cap_10: 1
+    MAS LOS QUE YA ESPERAN EN CUARENTENA DE cap_10 (P17, insertado en la vuelta 55)   : 1
+    TECHO DE CANDIDATOS DE D.58 EN REGIMEN LIGERO                  : 30
+    DENTRO DEL TECHO DE CANDIDATOS                                 : SI
+
+**LAS TRES UNIDADES CIERRAN: cero lineas sin cubrir y cero solapes en `cap_08`, `cap_09` Y
+`cap_10`, cada una contra su propio cuerpo (`suma == cuerpo` en las tres).** `cap_08` y `cap_09`
+quedan minados con cosecha cero; `cap_10` queda cerrado con su `1`.
+
+## WW.3. TAREA 2: **MINAR CON EL TECHO POR DELANTE, CERO COSECHA NUEVA, `cap_10` RECONFIRMADO Y CERRADO**
+
+**`cap_08` no da ningun nodo.** Es la continuacion narrativa de la fabrica de desayunos: cada
+tramo es CASO (con o sin preguntas abiertas) o POSTURA de apertura o de cierre. Las decisiones
+que el narrador toma sobre publicidad, huevos, menu, muebles o localizacion son **resoluciones
+de UN relato concreto**, no un inventario de medios o etapas que el libro ofrezca para
+transferir (`EXTRACTOR.md` 9.1, restriccion 1: un inventario de fines no basta, y aqui ni
+siquiera hay inventario, hay una serie de preguntas retoricas con respuesta narrada). La doctrina
+que este capitulo ilustra (la dicotomia centralizar-descentralizar) se desarrolla como
+DEFINICION en `cap_09`, y ahi tampoco llega a procedimiento.
+
+**`cap_09` tampoco da ningun nodo**, y coincide al digito con la lectura de la vuelta 55: es
+DEFINICION (forma orientada a mision, forma funcional, hibrido), POSTURA (el compromiso de
+Sloan, la ley de Grove) y una cadena de CASO nombrados (Intel, la nota de prensa de ABC
+Technologies, la institucion educativa, Junior Achievement, el bufete). El unico tramo con
+inventario (`P11`, las ventajas de organizar en grupos funcionales) es **inventario de FINES**,
+que la restriccion 1 de `9.1` excluye por su propio nombre.
+
+**`cap_10` no necesita candidato nuevo: el suyo ya esta escrito** desde la vuelta 55
+(`cuarentena/grove_high_output/repartir_supervision_puesto_funcional_mision.json`). Lo que esta
+vuelta hace es **cerrarlo**, pasandolo por la aduana en seco en el mismo acto en que confirmo su
+frontera, como manda `EXTRACTOR.md` 16 para todo candidato que se declara escrito en esta vuelta:
+
+<!-- TALLADO: salida=.v56ext/informe_cap10.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/repartir_supervision_puesto_funcional_mision.json
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 1
+    poblacion del barrido       : 423   (346 del grafo mas 77 que esperan en bandejas)
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    [ENTRARIA] repartir_supervision_puesto_funcional_mision
+
+**`0 CAERIAN`, `0 BLOQUEARIAN`. `cap_10` cierra limpio.** No lo inserto: `D.39` mantiene la
+puerta cerrada mientras el lote `7` siga abierto, y `MODO_INSERCION=cuarentena` es el de esta
+corrida.
+
+**CANDIDATOS ESCRITOS ESTA VUELTA: `0`. INSERCIONES: `0`.** Es un resultado honesto y no una
+falta de esfuerzo: los tres capitulos se leyeron enteros, linea por linea, con su frontera
+publicada y cerrada, y **el freno de `EXTRACTOR.md` 15.4 pesa exactamente aqui** ("cuando el
+inventario del libro sea delgado, desconfia de tus propios pasos"): fabricar un nodo de una
+pregunta retorica sin respuesta general habria sido inventar, no transcribir.
+
+## WW.4. TAREA 3: **LA FIDELIDAD `D.30`, POR MUESTRA Y CON SU SEMILLA `v56`**
+
+<!-- TALLADO: salida=.v56ext/muestra.txt -->
+
+    $ python scripts/muestra_fidelidad.py --libro grove_high_output --capitulos cap_08,cap_09,cap_10 --semilla v56
+    MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+      libro    : grove_high_output
+      semilla  : v56
+      capitulos: cap_08, cap_09, cap_10
+
+      RELEIDO ENTERO : cap_08
+      POR MUESTRA    : cap_09, cap_10, 15 pasos cada uno
+
+      --- cap_09: 0 paso(s) en la muestra
+
+      --- cap_10: 8 paso(s) en la muestra
+        repartir_supervision_puesto_funcional_mision   P1   Parte de lo que hace falta para que la organizacion hibrida
+        repartir_supervision_puesto_funcional_mision   P2   Deja que el grupo funcional al que el puesto pertenece fije
+        repartir_supervision_puesto_funcional_mision   P3   Haz en consecuencia que ese puesto dependa de alguien de la
+        repartir_supervision_puesto_funcional_mision   P4   Ajusta el tipo de supervision de cada uno de los dos a las n
+        repartir_supervision_puesto_funcional_mision   P5   Encarga al jefe de la unidad de mision que le de las priorid
+        repartir_supervision_puesto_funcional_mision   P6   Encarga al jefe funcional que se asegure de que esta formado
+        repartir_supervision_puesto_funcional_mision   P7   Encarga a ese mismo jefe funcional que supervise y vigile su
+        repartir_supervision_puesto_funcional_mision   P8   Encarga al jefe funcional que cuide su carrera dentro de la
+
+      --- cap_08: ENTERO, 0 paso(s), no hay muestra que elegir
+
+**La semilla reparto `cap_08` como el capitulo que se relee entero, y como su cosecha es cero
+no hay pasos que la relectura entera pueda examinar: `SIN SUPERFICIE`, no `0 de 0` con exito
+inventado.** `cap_09` igual, por la misma razon: `0` candidatos, `0` pasos posibles.
+
+### WW.4.a. **LOS `8` PASOS DE `cap_10` RELEIDOS CONTRA `L43` ENTERA**
+
+**`cap_10` da los `8` pasos completos de su unico nodo.** Los releo contra `L43` de
+`fuentes/grove_high_output/cap_10.md`, pegada entera:
+
+    $ sed -n '43p' fuentes/grove_high_output/cap_10.md
+    43:To make hybrid organizations work, you need a way to coordinate the mission-oriented units
+    and the functional groups so that the resources of the latter are allocated and delivered to
+    meet the needs of the former. Consider how the controller works at Intel. His professional
+    methods, practices, and standards are set by the functional group to which he belongs, the
+    finance organization. Consequently, the controller for a business unit should report to
+    someone in both the functional and the mission-oriented organizations, with the type of
+    supervision reflecting the varying needs of the two. The divisional general manager gives the
+    controller mission-oriented priorities by asking him to work on specific business problems.
+    The finance manager makes sure that the controller is trained to do his work in a technically
+    proficient manner, supervises and monitors his technical performance, and looks after his
+    career inside finance, promoting him, perhaps, to the position of controller of a bigger, more
+    complex division if he performs well. Again, as shown opposite, this is dual reporting, the
+    management principle that enables the hybrid organization form to work.
+
+**LA TABLA SIGUIENTE ES MI PROPIA RELECTURA, NO SALIDA DE UN INSTRUMENTO** (`D.41`: lo que no
+sale de un instrumento se dice, no se calla):
+
+<!-- TALLADO: parcial salida=fuentes/grove_high_output/cap_10.md -->
+| paso | contra el parrafo | veredicto |
+|---:|---|---|
+| P1 | "you need a way to coordinate the mission-oriented units and the functional groups so that the resources of the latter are allocated and delivered to meet the needs of the former" | TRANSCRIPCION |
+| P2 | "His professional methods, practices, and standards are set by the functional group to which he belongs" | TRANSCRIPCION |
+| P3 | "the controller for a business unit should report to someone in both the functional and the mission-oriented organizations" | TRANSCRIPCION |
+| P4 | "with the type of supervision reflecting the varying needs of the two" | TRANSCRIPCION |
+| P5 | "The divisional general manager gives the controller mission-oriented priorities by asking him to work on specific business problems" | TRANSCRIPCION |
+| P6 | "The finance manager makes sure that the controller is trained to do his work in a technically proficient manner" | TRANSCRIPCION |
+| P7 | "supervises and monitors his technical performance" | TRANSCRIPCION |
+| P8 | "looks after his career inside finance, promoting him, perhaps, to the position of controller of a bigger, more complex division if he performs well" | TRANSCRIPCION |
+
+**`8` de `8` TRANSCRIPCION, `0` PUENTE, `0` por ciento inventados.** Coincide con la propia
+relectura que el candidato trae dentro de su `resumen_teorico` (vuelta 55): **dos lecturas
+independientes, mismo resultado, cero mordida esta vez.**
+
+> **PASOS INVENTADOS POR MUESTRA, LA CIFRA QUE DECIDE, CON NUMERADOR Y DENOMINADOR NOMBRADOS:**
+>
+> | capitulo | pasos en la muestra | PUENTE | por ciento inventado | contra el disparador del `10` por ciento |
+> |---|---:|---:|---:|---|
+> | `cap_08` | `0` (releido entero, cosecha cero) | `0` | SIN SUPERFICIE | no se activa: no hay pasos que inventar sobre cero nodos |
+> | `cap_09` | `0` (muestra sobre cosecha cero) | `0` | SIN SUPERFICIE | no se activa |
+> | `cap_10` | `8` | `0` | **`0,0`** | **no se activa** |
+>
+> **EL DISPARADOR NO SE ACTIVA EN NINGUNA FILA.**
+
+## WW.5. TAREA 4: **LAS TRES CIFRAS DE LA MEDICION, AL LADO DE LAS DE OPUS**
+
+| # | la cifra | esta vuelta (Sonnet) | Opus (vueltas 54 y 55) | el instrumento |
+|---:|---|---|---|---|
+| **1** | **coste del turno de extractor** | **todavia no existe**: lo escribe el arnes en `docs/loop/loop.log` cuando este turno cierre, o sea despues de esta linea. No lo invento (`EXTRACTOR.md` 4 y 5) | `20,6911` USD (vuelta 54) y `24,8943` USD (vuelta 55), citadas de `docs/loop/loop.log` por `.v56aud/coste.py` en `ACTA 54` `54.7.a` | `docs/loop/loop.log`, leido por el arnes al cierre |
+| **2** | **pasos inventados por muestra** | `cap_08` SIN SUPERFICIE, `cap_09` SIN SUPERFICIE, `cap_10` **`0` de `8`, `0,0` por ciento** | vuelta 55: `cap_07` `0` de `15`, `cap_10` `0` de `8`, `cap_09` SIN SUPERFICIE (`ACTA 54`, herencia citada en `WW.1`) | `scripts/muestra_fidelidad.py`, semilla `v56`, pegado en `WW.4` |
+| **3** | **candidatos que la aduana en seco bloquearia** | `1` candidato pasado por la aduana esta vuelta (el de `cap_10`, al cerrarlo): **`0` BLOQUEARIAN, `0` CAERIAN, `1` ENTRARIA** | vuelta 55: `9` candidatos, `0` BLOQUEARIAN, `0` CAERIAN (informe de lote de `.v55ext/informe_lote_v55.txt`) | `python forja.py informe`, pegado en `WW.3` |
+
+**CONTRA EL UMBRAL ESCRITO** (`docs/loop/paradas/2026-09-21-...-DECISION.md` punto `3`):
+
+| condicion | medida de esta vuelta | cumple |
+|---|---|---|
+| pasos inventados por muestra bajo el `10` por ciento | `0,0` por ciento en la unica fila con superficie (`cap_10`) | **SI** |
+| coste del turno a la mitad o menos que Opus (`20,69` y `24,89`) | **no medible todavia**: el arnes lo escribe al cerrar este turno | **PENDIENTE, la decide quien lea `loop.log` despues de esta linea** |
+
+**No decido yo si Grove sigue con Sonnet.** La primera condicion la cumplo con la unica fila que
+tiene pasos que examinar. La segunda **no puedo medirla desde dentro de mi propio turno**: mi
+coste no existe hasta que el arnes lo escribe al cerrarlo, y esa lectura es del auditor
+siguiente, con `loop.log` delante.
+
+## WW.6. **MIS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+1. **`cap_08` entero en cero.** Un lector menos estricto que yo podria leer `P6` a `P11` (las
+   seis preguntas de centralizar o descentralizar: publicidad, personal, salario, huevos, menu,
+   bienes raices, muebles, ubicacion) como un inventario propio del libro de **areas de
+   decision**, y escribir un nodo del tipo "para cada area de la lista, decide si centralizas o
+   descentralizas". Lo descarto porque el libro no lo presenta como una lista cerrada
+   (aparecen con "What about..." sueltos, no numerados ni encabezados como conjunto) y porque la
+   mitad de las preguntas **no se resuelven** (bienes raices, ubicacion de franquicias): un
+   inventario que el propio texto deja sin cerrar no es el inventario propio que `9.1` pide. Si
+   cae del lado de que si hay nodo aqui, cae DENTRO de mi marcado.
+2. **`cap_10`, el mismo discutible que la vuelta 55 ya marco y que sigue en pie**: `L43` abre con
+   "Consider how the controller works at Intel", y un lector estricto puede leer el tramo entero
+   como CASO. Lo sostengo por la misma razon que la vuelta 55: abre y cierra con la regla general
+   ("you need a way to coordinate...", "this is dual reporting, the management principle that
+   enables the hybrid organization form to work"), y el caso del controller queda en medio de su
+   propia doctrina. **No lo reabro como pregunta nueva**: `ACTA 54` ya lo adjudico "por extension
+   citable" (manual `3.5` mas `L45`, *the example has parallels throughout a corporation*), y
+   `D.56` congela la cola en `11`. Lo traigo aqui solo como discutible que sigue vivo, no como
+   pregunta.
+
+## WW.7. **EL CIERRE, RECOMPUTADO AL CIERRE Y NO COPIADO DE LA APERTURA**
+
+### WW.7.a. **EL ESTADO, RECOMPUTADO**
+
+    $ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+    346 dataset/nodos.jsonl
+    $ ls cuarentena/grove_high_output | wc -l
+    74
+
+**`346` y `740`, sin mover: la prueba de que no se inserto nada.** La bandeja de `grove_high_output`
+sigue en `74`: cero candidatos nuevos, `cap_08` y `cap_09` con cosecha cero y `cap_10` sin
+candidato nuevo que agregar.
+
+### WW.7.b. **`gate` Y `guiones`**
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+### WW.7.c. **LA PRUEBA DE ACEPTACION**
+
+    $ python tests/test_aceptacion.py
+    total: 339 pruebas, 0 fallos, 0 errores
+
+**VERDE entera.** `d067` no se dispara: su condicion es una vuelta de SANEAMIENTO, y esta es de
+EXTRACCION (`WW.1`).
+
+### WW.7.d. **LA DEUDA, RECOMPUTADA**
+
+    $ python scripts/deuda.py
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      pendientes: 19    pagadas: 25
+      ultima vuelta de saneamiento: 54
+
+**Sin mover, y es lo correcto: esta vuelta es de EXTRACCION.** No anoto deuda nueva: no
+encontre ninguna averia de dato, solo cosecha cero en dos capitulos, que no es deuda, es
+resultado.
+
+### WW.7.e. **EL CREDITO, LEIDO Y NO ANOTADO POR MI**
+
+    $ python forja.py credito
+      AUDITOR            2 de 3     ACTA 54
+      CIFRA PUBLICADA    0 de 2     ACTA 54
+      CLASE              0 de 2     ACTA 54
+      DATO MOVIDO        0 de 2     ACTA 54
+      REPORTE            0 de 3     ACTA 54
+
+**Anotar la tanda de `REPORTE` de esta vuelta es del auditor siguiente**, con mi tanda delante.
+
+### WW.7.f. **EL COSTE, QUE ESTA VEZ SI DECIDE**
+
+**Mi turno lo escribe el arnes en `docs/loop/loop.log` despues de esta linea: no existe todavia
+y no lo invento.** Lo que si puedo decir es en que se fue, sin inventar el numero:
+
+| sumando | de donde sale |
+|---|---|
+| la lectura entera de `cap_08`, `cap_09` y `cap_10`, linea por linea | `6718` palabras de fuente, contadas por `.v56ext/frontera.py` en `WW.2` |
+| la comprobacion de la frontera de los tres capitulos, cero huecos y cero solapes en cada uno | `.v56ext/frontera.py`, `WW.2` |
+| una sola pasada de aduana en seco, sobre el candidato de `cap_10` | `.v56ext/informe_cap10.txt`, `WW.3` |
+| la muestra de fidelidad con semilla `v56` y la relectura de sus `8` pasos contra `L43` | `.v56ext/muestra.txt`, `WW.4` |
+| lo que domina y no es nada de lo anterior | los turnos internos de lectura y razonamiento, que ya `ACTA 53` `53.10` identifico como el sumando mayor en los turnos de Opus |
+
+**Y LA OBSERVACION QUE IMPORTA MAS QUE EL DESGLOSE:** esta vuelta corrio **UN** informe de
+aduana en seco, no nueve. Menos candidatos que escribir es, tambien, menos aduana que correr, y
+eso pesa en el coste igual que pesa en el reloj.
+
+### WW.7.g. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
+
+<!-- TALLADO: script=scripts/tabla_de_cierre.py salida=docs/loop/TABLA_DE_CIERRE.txt -->
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | la frontera de `cap_08`, `cap_09` y `cap_10`, publicada y cerrada antes de minar | **CERRADA en `WW.2`**: los tres capitulos con **cero lineas sin cubrir y cero solapes cada uno**, `13`, `27` y `35` tramos, y `0`, `0` y `1` nodos |
+| 2 | minar con el techo de `30` por delante | **CERRADA en `WW.3`**: `0` candidatos nuevos escritos, `cap_10` cerrado reconfirmando su unico nodo por la aduana en seco: `0 CAERIAN`, `0 BLOQUEARIAN` |
+| 3 | la fidelidad `D.30` por muestra, semilla `v56` | **CERRADA en `WW.4`**: semilla escrita, reparto pegado del instrumento, `cap_10` con sus `8` pasos releidos contra `L43` entera: `0` PUENTE |
+| 4 | las tres cifras de la medicion, al lado de las de Opus | **CERRADA en `WW.5`**: pasos inventados `0,0` por ciento (cumple el `10`), candidatos que bloquearian `0` de `1`, coste **no medible desde dentro de mi propio turno**, declarado como tal |
+| 5 | el cierre | **CERRADA en `WW.7`**: estado recomputado (`346`, `740`, `74`, sin mover), `gate`, `guiones` y prueba de aceptacion en VERDE, deuda sin mover, credito leido y no anotado, **`2` discutibles marcados a ciegas** |
+
+**LA TABLA DE LA VUELTA 55 SE ARCHIVE Y SE SELLE ANTES DE SOBRESCRIBIR SU FICHERO** (`d030`,
+mismo remedio que la vuelta 55 aplico con la de la 54): la copia va a
+`docs/loop/TABLA_DE_CIERRE_v55.txt`, con los dos sellos identicos:
+
+    $ git show 2c6406e:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+    bb005797b2e1a9aadfc751b932659b9ec921aae5
+    $ git hash-object docs/loop/TABLA_DE_CIERRE_v55.txt
+    bb005797b2e1a9aadfc751b932659b9ec921aae5
+
+<!-- TALLADO: parcial salida=.v56ext/tabla_de_cierre_run.txt -->
+
+    $ python scripts/tabla_de_cierre.py --escribir
+    poblacion: dataset/nodos.jsonl entero, libro grove_high_output
+    criterio : un nodo sale de un capitulo si cita grove_high_output/<cap>.md
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+
+**Las cinco filas salen `SIN COMPROBAR` para el patron `N de M del capitulo`**, porque ninguna
+de mis cinco tareas hace esa afirmacion exacta: es el comportamiento correcto del instrumento
+(`WW.7.g` mas arriba, sec. *LO QUE NO INVENTA*), no una caida.
+
+### WW.7.h. **`cerrar_reporte.py`, CORRIDO ENTERO** (`D.41`, cinco guardas)
+
+<!-- TALLADO: parcial salida=.v56ext/cerrar_reporte.txt -->
+
+    $ python scripts/cerrar_reporte.py
+    TALLADO DEL REPORTE (D.41): tablas que declaran instrumento 280, talladas 145,
+      DIFIEREN 0, ruta VACIA 0, sin poder comprobar 0, CITAN y no reproducen 135
+    TALLADO VERDE: las 145 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): rutas publicadas y censadas 840, pasan 840, CAEN 0
+    CENSO VERDE: las 840 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS: 5 filas, todas SIN COMPROBAR el patron 'N de M del
+      capitulo' (ninguna de mis tareas hace esa afirmacion). TABLA DE CIERRE VERDE.
+    GATE VERDE. nodos verificados: 346
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    total: 339 pruebas, 0 fallos, 0 errores
+    LA VIGENCIA TIENE COLA (79 hallazgos, D.15), Y ESO NO PONE EL CIERRE EN ROJO.
+
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia
+    corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**LAS CINCO GUARDAS EN VERDE, SIN NINGUNA DECLARADA APARTE.** A diferencia de la vuelta 55,
+esta vez la prueba de aceptacion tambien cierra en VERDE (`WW.7.c`): no hay nada que declarar
+fuera de las cinco. **Dos mordidas propias antes de llegar aqui, y las dos declaradas sin
+tapar**: un guion largo en el titulo de `WW.3` (barrido de guiones, reparado cambiando el
+guion por una coma) y una tabla mia de relectura que el tallado heredaba del marcador de
+`muestra_fidelidad.py` por falta de un encabezado entre los dos (reparado con el subtitulo
+`WW.4.a` y su propio `<!-- TALLADO: parcial -->`). Ninguna de las dos toco una celda de dato:
+las dos eran de mi propia prosa.
+
+### WW.7.i. **EL TABLERO, ESCRITO AL CIERRE** (`D.49`, `D.50`)
+
+<!-- TALLADO: parcial salida=.v56ext/tablero_cierre.txt -->
+
+    $ python forja.py tablero --escribir
+    TABLERO DE FRENTES (D.49, D.50): sede unica del estado de la campania
+      prio lote clave                          estado                 dueno                 band ult cap
+      --------------------------------------------------------------------------------------------------------
+      1    7    grove_high_output              COSECHADO              NINGUNO                 74  cap_10
+
+      MUNDO 11: faltan 3 de 3 libros del corte (grove_high_output, gerber_emyth, marquet_turn_the_ship)
+      ESCRITO: 22 fila(s) en docs/loop/TABLERO.jsonl
+
+**`band` sigue en `74` y `ult cap` sigue en `cap_10`: las dos cifras salen del instrumento, y las
+dos son correctas por la misma razon que en la vuelta 55 avisaba** (`VV.9.b`): el tablero lee el
+capitulo mas alto CITADO por un candidato, y ni `cap_08` ni `cap_09` tienen ninguno que citar
+porque su cosecha es cero. **AVISO A LA VUELTA SIGUIENTE, para que no repita la trampa de
+`d028`:** `cap_08`, `cap_09` y `cap_10` estan LOS TRES minados y cerrados por su frontera
+(`WW.2`), aunque el tablero solo pueda ver el ultimo con candidato. **La vuelta 57 continua
+desde `cap_11`.**
+
+## WW.8. **LO QUE ESTA VUELTA DEJA, EN CUATRO LINEAS**
+
+1. **`cap_08` y `cap_09` leidos linea por linea, con su frontera publicada y cerrada, y cosecha
+   cero en los dos**: son relato y definicion, no procedimiento, y el freno de `EXTRACTOR.md`
+   15.4 se sostuvo en vez de fabricar un nodo de una pregunta sin responder.
+2. **`cap_10` cerrado**: su unico nodo, reconfirmado por la aduana en seco (`0 CAERIA`) y por una
+   segunda relectura de fidelidad independiente de la de la vuelta 55, con el mismo resultado
+   (`8` de `8` TRANSCRIPCION).
+3. **Cero candidatos nuevos, cero inserciones.** El grafo esta exactamente como lo encontre:
+   `346` nodos y `740` veredictos.
+4. **Las tres cifras de la medicion con Sonnet, publicadas al lado de las de Opus**: pasos
+   inventados `0,0` por ciento (cumple el disparador del `10`), `0` candidatos bloqueados de `1`
+   pasado por aduana, y el coste del turno **declarado como no medible desde dentro de si
+   mismo**, para que el auditor lo lea de `loop.log` y complete la comparacion que el encargo
+   pide.
