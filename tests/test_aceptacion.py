@@ -4506,8 +4506,14 @@ class PruebaOrdenDePrioridad(BaseForja):
         filas = self._filas(
             scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
             gerber_emyth={"estado": "COSECHADO"})
+        # EL TITULO VA EN EL TEXTO desde D.58, como en un encargo de verdad: la
+        # cadencia se cuenta por numero de vuelta. Esta prueba mide D.51, no la
+        # cadencia. Se quedo sin el cuando se arreglaron las dos hermanas de
+        # PruebaGuardaDelTablero, y estuvo en rojo DOS vueltas hasta que el auditor
+        # de la ACTA 52 lo levanto como fallo tecnico repetido.
         self.assertEqual(guarda_tablero.comprobar(
-            texto="LIBRO DE ESTA VUELTA: gerber_emyth",
+            texto=("# ENCARGO DE LA VUELTA 53" + chr(10)
+                   + "LIBRO DE ESTA VUELTA: gerber_emyth"),
             linea="serial", filas=filas), [])
 
     # ----------------------------------------- lo declarado, contra el repo real
