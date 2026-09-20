@@ -31,7 +31,7 @@ NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_06 Y SOLO cap_06: 8
 | `L35 a L35` | 138 | **0** | P10 los simbolos de estatus y el igualitarismo: POSTURA, respuesta del autor a un periodista | `35:A journalist puzzled by our management style once asked me, "Mr.` |
 | `L37 a L37` | 3 | **0** | P11 rotulo The Peer-Group Syndrome, sin cuerpo que extraer | `37:The Peer-Group Syndrome` |
 | `L39 a L39` | 67 | **0** | P12 las emociones que estorban al modelo, orgullo, ambicion, miedo e inseguridad: POSTURA | `39:The model is also hard to implement because anybody who makes a ` |
-| `L41 a L41` | 263 | **0** | P13 el juego de papeles que dio nombre al par mas uno: CASO del autor, manual 3.5, su doctrina vive en P17 | `41:The most common problem is something we call the peer-group synd` |
+| `L41 a L41` | 263 | **0** | P13 el juego de papeles que dio nombre al par mas uno: CASO del autor, manual 3.5, su doctrina vive en P18 | `41:The most common problem is something we call the peer-group synd` |
 | `L43 a L43` | 21 | **0** | P14 la linea que presenta la cita del ingeniero John: enlace, sin cuerpo que extraer | `43:Why? Because most people are afraid to stick their necks out. Th` |
 | `L45 a L45` | 123 | **0** | P15 la cita de John sobre por que nadie se moja: TESTIMONIO citado, POSTURA | `45:One of the reasons why people are reluctant to come out with an ` |
 | `L47 a L47` | 81 | **0** | P16 la diferencia entre los dos silencios, el del jefe y el del consenso: POSTURA | `47:Note the difference between the situation described earlier by t` |

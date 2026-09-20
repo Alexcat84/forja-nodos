@@ -56,7 +56,7 @@ TRAMOS = {
         ("L39 a L39", 39, 39, 0,
          "P12 las emociones que estorban al modelo, orgullo, ambicion, miedo e inseguridad: POSTURA"),
         ("L41 a L41", 41, 41, 0,
-         "P13 el juego de papeles que dio nombre al par mas uno: CASO del autor, manual 3.5, su doctrina vive en P17"),
+         "P13 el juego de papeles que dio nombre al par mas uno: CASO del autor, manual 3.5, su doctrina vive en P18"),
         ("L43 a L43", 43, 43, 0,
          "P14 la linea que presenta la cita del ingeniero John: enlace, sin cuerpo que extraer"),
         ("L45 a L45", 45, 45, 0,

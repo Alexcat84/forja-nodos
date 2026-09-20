@@ -1,0 +1,20 @@
+| pieza y linea | la salida de sed, pegada y recortada a 74 caracteres |
+|---|---|
+| `sed -n '23p'` | `23:Illustrated on this page is an ideal model of decision-making in a know-ho` |
+| `sed -n '25p'` | `25:The ideal decision-making process.` |
+| `sed -n '27p'` | `27:The next stage is reaching a clear decision. Again, the greater the disagr` |
+| `sed -n '29p'` | `29:Finally, everyone involved must give the decision reached by the group ful` |
+| `sed -n '33p'` | `33:Another desirable and important feature of the model is that any decision ` |
+| `sed -n '41p'` | `41:The most common problem is something we call the peer-group syndrome. A nu` |
+| `sed -n '49p'` | `49:You can overcome the peer-group syndrome if each of the members has self-c` |
+| `sed -n '51p'` | `51:If the peer-group syndrome manifests itself, and the meeting has no formal` |
+| `sed -n '61p'` | `61:Sometimes no amount of discussion will produce a consensus, yet the time f` |
+| `sed -n '63p'` | `63:If you either enter the decision-making stage too early or wait too long, ` |
+| `sed -n '65p'` | `65:Basically, like other things managers do, decision-making has an output as` |
+| `sed -n '67p'` | `67:• What decision needs to be made?` |
+| `sed -n '69p'` | `69:• When does it have to be made?` |
+| `sed -n '71p'` | `71:• Who will decide?` |
+| `sed -n '73p'` | `73:• Who will need to be consulted prior to making the decision?` |
+| `sed -n '75p'` | `75:• Who will ratify or veto the decision?` |
+| `sed -n '77p'` | `77:• Who will need to be informed of the decision?` |
+| `sed -n '93p'` | `93:One last thing. If the final word has to be dramatically different from th` |

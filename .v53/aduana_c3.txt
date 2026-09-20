@@ -1,0 +1,39 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 408   (346 del grafo mas 62 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 4
+  por candidato bloqueado          : menor 4, mediana 4, mayor 4
+  que señal levanta cada vecindad  : paso_contra_nodo 1, similitud_texto 3
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] vencer_sindrome_grupo_pares_autoconfianza   (vencer_sindrome_grupo_pares_autoconfianza.json)
+    vecino aprender_resultados_vencer_dos_presiones  [levantada por: paso_contra_nodo]
+      similitud_texto 0.217 | familia_id 0.111 | paso_contra_nodo 0.712
+      paso 3 del candidato contra paso 4 de aprender_resultados_vencer_dos_presiones
+    vecino decidir_nivel_competente_inferior  [levantada por: similitud_texto]
+      similitud_texto 0.363 | familia_id 0.000 | paso_contra_nodo 0.462
+      paso 1 del candidato contra paso 4 de decidir_nivel_competente_inferior
+    vecino archivar_indicadores_resolver_problemas  [levantada por: similitud_texto]
+      similitud_texto 0.363 | familia_id 0.000 | paso_contra_nodo 0.396
+      paso 5 del candidato contra paso 1 de archivar_indicadores_resolver_problemas
+    vecino supervisar_decision_delegada_preguntas_concretas  [levantada por: similitud_texto]
+      similitud_texto 0.364 | familia_id 0.000 | paso_contra_nodo 0.379
+      paso 1 del candidato contra paso 5 de supervisar_decision_delegada_preguntas_concretas
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

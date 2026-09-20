@@ -50818,7 +50818,7 @@ instrumento (`D.41`), y **la cita de cada fila la imprime el instrumento de la l
 | `L35 a L35` | 138 | **0** | P10 los simbolos de estatus y el igualitarismo: POSTURA, respuesta del autor a un periodista | `35:A journalist puzzled by our management style once asked me, "Mr.` |
 | `L37 a L37` | 3 | **0** | P11 rotulo The Peer-Group Syndrome, sin cuerpo que extraer | `37:The Peer-Group Syndrome` |
 | `L39 a L39` | 67 | **0** | P12 las emociones que estorban al modelo, orgullo, ambicion, miedo e inseguridad: POSTURA | `39:The model is also hard to implement because anybody who makes a ` |
-| `L41 a L41` | 263 | **0** | P13 el juego de papeles que dio nombre al par mas uno: CASO del autor, manual 3.5, su doctrina vive en P17 | `41:The most common problem is something we call the peer-group synd` |
+| `L41 a L41` | 263 | **0** | P13 el juego de papeles que dio nombre al par mas uno: CASO del autor, manual 3.5, su doctrina vive en P18 | `41:The most common problem is something we call the peer-group synd` |
 | `L43 a L43` | 21 | **0** | P14 la linea que presenta la cita del ingeniero John: enlace, sin cuerpo que extraer | `43:Why? Because most people are afraid to stick their necks out. Th` |
 | `L45 a L45` | 123 | **0** | P15 la cita de John sobre por que nadie se moja: TESTIMONIO citado, POSTURA | `45:One of the reasons why people are reluctant to come out with an ` |
 | `L47 a L47` | 81 | **0** | P16 la diferencia entre los dos silencios, el del jefe y el del consenso: POSTURA | `47:Note the difference between the situation described earlier by t` |
@@ -50997,4 +50997,450 @@ restriccion 2 lo tumba aunque haya inventario**, y el cierre `P12` es material d
 > **Mino `cap_06` en el orden del libro y corto donde el reloj me pare**, y la linea del tramo de
 > `OO.5` dice en que pieza quedo.
 
+### OO.2.e. **CORRECCION DECLARADA SOBRE LA TABLA DE `cap_06`** (`D.41`)
+
+**Mientras escribia el candidato de `P18` vi que la celda de `P13` remitia a `P17`**, y la doctrina
+del par mas uno vive en `P18`, no en `P17`. **No teclee la celda buena: corregi el instrumento y
+regenere**, que es la unica via que `D.41` deja.
+
+    $ python .v53/frontera.py > .v53/frontera_tres.txt
+    $ python scripts/tallar_reporte.py --arreglar
+    TALLADA de nuevo: docs/loop/REPORTE.md linea 50807, 1 celda(s) que estaban tecleadas
+
+**La celda de `P13` de `OO.2.a` que se lee arriba ya es la regenerada**, y sale de esta caida: una
+remision cruzada equivocada dentro de mi propia lectura, vista al escribir el nodo al que remitia.
+
 **CERRADA `OO.2`.**
+
+## OO.3. **MINAR `cap_06` EN EL ORDEN DEL LIBRO, UNO POR VEZ, CON EL RELOJ POR DELANTE**
+
+**El techo que manda hoy es el de minutos y no el de numero**, tal como el encargo lo adjudica:
+`30` candidatos de `D.58` **o** `90` minutos de reloj de aduana, lo que llegue antes, y a `731,2` s
+por pasada eso son **`7,4` candidatos**. **Mino `cap_06` de arriba abajo**, pieza a pieza, y **cada
+candidato pasa su aduana en el mismo acto en que se escribe** (`EXTRACTOR.md` 16).
+
+**LAS CITAS DE LINEA DE ESTA VUELTA, CON SU `sed` PEGADO AL LADO** (`D.35`). Se generan del fichero
+y no se teclean, y por eso llevan las comillas tipograficas y los guiones del original pasados a
+llanos por el propio instrumento.
+
+<!-- TALLADO: script=.v53/citas.py salida=.v53/citas_sed.txt -->
+| pieza y linea | la salida de sed, pegada y recortada a 74 caracteres |
+|---|---|
+| `sed -n '23p'` | `23:Illustrated on this page is an ideal model of decision-making in a know-ho` |
+| `sed -n '25p'` | `25:The ideal decision-making process.` |
+| `sed -n '27p'` | `27:The next stage is reaching a clear decision. Again, the greater the disagr` |
+| `sed -n '29p'` | `29:Finally, everyone involved must give the decision reached by the group ful` |
+| `sed -n '33p'` | `33:Another desirable and important feature of the model is that any decision ` |
+| `sed -n '41p'` | `41:The most common problem is something we call the peer-group syndrome. A nu` |
+| `sed -n '49p'` | `49:You can overcome the peer-group syndrome if each of the members has self-c` |
+| `sed -n '51p'` | `51:If the peer-group syndrome manifests itself, and the meeting has no formal` |
+| `sed -n '61p'` | `61:Sometimes no amount of discussion will produce a consensus, yet the time f` |
+| `sed -n '63p'` | `63:If you either enter the decision-making stage too early or wait too long, ` |
+| `sed -n '65p'` | `65:Basically, like other things managers do, decision-making has an output as` |
+| `sed -n '67p'` | `67:• What decision needs to be made?` |
+| `sed -n '69p'` | `69:• When does it have to be made?` |
+| `sed -n '71p'` | `71:• Who will decide?` |
+| `sed -n '73p'` | `73:• Who will need to be consulted prior to making the decision?` |
+| `sed -n '75p'` | `75:• Who will ratify or veto the decision?` |
+| `sed -n '77p'` | `77:• Who will need to be informed of the decision?` |
+| `sed -n '93p'` | `93:One last thing. If the final word has to be dramatically different from th` |
+
+**Y LO PRIMERO QUE DECLARO ES UN GASTO DE RELOJ QUE NO PRODUJO NADA**, porque el reloj es la mitad
+del techo de hoy y una pasada perdida se cuenta igual: **la primera pasada de aduana sobre el
+candidato `1` se corto a los `600` s sin llegar a escribir su informe**, y hubo que relanzarla. Esos
+`600` s **entran en el reloj de la vuelta** y estan en la tabla de `OO.5.d`.
+
+### OO.3.a. **CANDIDATO `1`, PIEZA `P7`, `L23 a L29`: `conducir_etapas_modelo_ideal_decision`**
+
+**El modelo ideal con sus etapas nombradas una a una.** `12` pasos, y la relectura de fidelidad
+`D.30` hecha en el acto de escribirlo: **`12` TRANSCRIPCION, `0` PUENTE**. La ficha declara dentro
+por que **no es cabeza de serie**: el libro dice *first*, *next* y *finally*, **no dice cuantas**,
+asi que `D.37` no aplica y las tres etapas viven en un solo nodo.
+
+<!-- TALLADO: parcial salida=.v53/aduana_c1.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/conducir_etapas_modelo_ideal_decision.json
+    candidatos revisados        : 1
+    poblacion del barrido       : 406   (346 del grafo mas 60 que esperan en bandejas)
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    [ENTRARIA] conducir_etapas_modelo_ideal_decision   (conducir_etapas_modelo_ideal_decision.json)
+
+> **EL BLOQUE DE VEREDICTO, CON LA POBLACION DE SU PASADA NOMBRADA** (`d056` del encargo, `1.b`):
+> **`ENTRARIA` con la cola vacia, medido contra `406`** (`346` del grafo mas `60` de bandejas).
+> **Cero vecinos levantados, asi que cero veredictos que escribir.** Y lo digo con la letra de
+> `EXTRACTOR.md` 11: **una cola vacia lo certifica sin GEMELO, no sin MADRE.** Por lectura tampoco
+> le encuentro madre en el dataset: el modelo ideal de decision de este libro no despliega ninguna
+> linea que otro nodo del grafo ya nombrara, asi que **no declaro arista de `D.29`**.
+
+### OO.3.b. **CANDIDATO `2`, PIEZA `P9`, `L33`: EL NIVEL COMPETENTE, Y UN `CAERIA` CORREGIDO EN EL ACTO**
+
+**La primera escritura CAYO EN LA PUERTA, y la traigo entera en vez de solo la buena** (`EXTRACTOR.md`
+16: el que cae en el minuto en que se escribio cuesta un minuto). El id que le puse era
+`decidir_nivel_competente_mas_bajo`, y **`bajo` es preposicion**.
+
+<!-- TALLADO: parcial salida=.v53/aduana_c2.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/decidir_nivel_competente_mas_bajo.json
+    poblacion del barrido       : 407   (346 del grafo mas 61 que esperan en bandejas)
+      CAERIAN por una guarda           : 1
+
+    POR QUE GUARDA CAEN
+         1  el candidato rompe docs/REGLAS_DE_ID.md
+
+    [CAERIA] decidir_nivel_competente_mas_bajo   (decidir_nivel_competente_mas_bajo.json)
+        guarda: el candidato rompe docs/REGLAS_DE_ID.md
+          id 'decidir_nivel_competente_mas_bajo': preposicion o articulo prohibido: bajo (regla 3)
+
+**LA REGLA 3 SIGUE SIENDO LA QUE MAS CAE, Y HOY ME CAYO A MI.** `EXTRACTOR.md` 15.3 lo dice con su
+cifra, `35` de los `65` del estreno, y **la lista que la aduana usa es mas ancha que los seis
+ejemplos que yo tenia en la cabeza**: la lei del instrumento despues de caer, no antes.
+
+    $ sed -n '16,21p' src/reglas_id.py
+    PALABRAS_VACIAS = {
+        "a", "al", "ante", "bajo", "con", "contra", "de", "del", "desde", "durante",
+        "el", "en", "entre", "hacia", "hasta", "la", "las", "lo", "los", "mediante",
+        "para", "por", "que", "segun", "sin", "so", "sobre", "tras", "un", "una",
+        "unas", "unos", "y", "o", "u", "e",
+    }
+
+**Y ESA MISMA LECTURA ME AHORRO EL SEGUNDO GOLPE ANTES DE DARLO:** el candidato `4` iba a llamarse
+`tomar_mando_reunion_pares_sin_presidente`, y **`sin` esta en la misma lista**. Lo corregi **antes**
+de escribirlo, no despues de que la puerta me lo dijera. El id corregido es
+`decidir_nivel_competente_inferior`, y el titulo no cambia.
+
+**LA SEGUNDA PASADA, CON EL ID CORREGIDO:**
+
+<!-- TALLADO: parcial salida=.v53/aduana_c2b.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/decidir_nivel_competente_inferior.json
+    candidatos revisados        : 1
+    poblacion del barrido       : 407   (346 del grafo mas 61 que esperan en bandejas)
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    [ENTRARIA] decidir_nivel_competente_inferior   (decidir_nivel_competente_inferior.json)
+
+> **EL BLOQUE DE VEREDICTO, CON LA POBLACION DE SU PASADA NOMBRADA** (`d056`): **`ENTRARIA` con la
+> cola vacia, medido contra `407`** (`346` del grafo mas `61` de bandejas). **Cero vecinos, cero
+> veredictos que escribir.**
+>
+> **Y AQUI FALLO UNA PREDICCION MIA, QUE ES EL SITIO DONDE MAS BARATO SALE DECIRLO:** la ficha
+> marca como discutible que este nodo levantaria vecindad con `repartir_decision_cercanos_hechos`,
+> de `scott_radical_candor`, que tambien manda decidir a los mas cercanos a los hechos. **La senial
+> no lo levanto.** No cambio el discutible ni lo borro: lo dejo escrito como estaba y anoto que la
+> cola salio vacia, que es exactamente lo que `EXTRACTOR.md` 11 avisa que significa una cola vacia,
+> **sin gemelo y no sin madre**. Por lectura sigo sin ver madre que declarar: aquel nodo reparte el
+> poder de decidir, y este compone el grupo. **No declaro arista de `D.29`.**
+
+### OO.3.c. **CANDIDATO `3`, PIEZA `P17`, `L49`: `vencer_sindrome_grupo_pares_autoconfianza`**
+
+**`68` palabras de tramo y `5` pasos**, con `15.4` delante todo el rato: **un parrafo pobre no
+produce un nodo pobre, produce un nodo inventado**, y este es el parrafo mas corto que mino hoy.
+**`5` TRANSCRIPCION, `0` PUENTE**, y lo que el libro deja abierto (*como* se hace entender eso a
+toda la operacion) **se queda abierto y declarado dentro de la ficha**.
+
+<!-- TALLADO: parcial salida=.v53/aduana_c3.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/vencer_sindrome_grupo_pares_autoconfianza.json
+    poblacion del barrido       : 408   (346 del grafo mas 62 que esperan en bandejas)
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 4
+      por candidato bloqueado          : menor 4, mediana 4, mayor 4
+
+> **EL BLOQUE DE VEREDICTO, CON LA POBLACION DE SU PASADA NOMBRADA** (`d056`): **`BLOQUEARIA` con
+> `4` vecinos, medido contra `408`** (`346` del grafo mas `62` de bandejas). **Los `4` leidos
+> enteros, los `4` veredictados con razon.**
+
+| vecino | que senial lo levanta | veredicto y razon |
+|---|---|---|
+| `aprender_resultados_vencer_dos_presiones` (`scott_radical_candor`) | `paso_contra_nodo`, la unica del dia que pasa su umbral | **`SANO`**. El cruce es la palabra *experiencia* y nada mas: alli se aprende **de un resultado ya obtenido**, venciendo el apego y el agotamiento; aqui la experiencia es **una de las tres fuentes de autoconfianza** que se trabajan **antes** de que el grupo se siente a decidir. Activacion distinta (la rueda dada contra el sindrome manifestandose) y entregable distinto |
+| `decidir_nivel_competente_inferior` (`grove_high_output`, candidato `2` de hoy) | `similitud_texto` | **`SANO`, y HERMANOS de la misma vuelta.** Aquel **compone el grupo** mezclando conocimiento tecnico y experiencia de carrera; este **infunde autoconfianza a cada miembro** para que hable. El paso que cruza es el mismo sustantivo, *experiencia*, jugando dos papeles distintos |
+| `archivar_indicadores_resolver_problemas` (`grove_high_output`) | `similitud_texto` | **`SANO`**. Es de indicadores y archivo: cruza por la forma de la frase (*haz que todo el mundo entienda* contra *haz que ese archivo sea*), no por el objeto. Ningun paso comun |
+| `supervisar_decision_delegada_preguntas_concretas` (`grove_high_output`) | `similitud_texto` | **`SANO`**. Aquel supervisa **una decision ya delegada** por sus preguntas de revision; este no supervisa nada: trabaja la disposicion del que va a hablar. Comparten el dominio de la decision y ningun paso |
+
+> **Y DECLARO UN CAMBIO DE METODO QUE ES PROPUESTA MIA, NO REGLA NUEVA** (`EXTRACTOR.md` 14): **los
+> veredictos de esta vuelta van SOLO a mi reporte y NO dentro de la ficha.** `d051` y `d056` miden
+> lo que cuesta lo contrario: el bloque de veredicto escrito en `resumen_teorico` **entra en el
+> texto del que la senial se calcula**, y por eso la cola de la vuelta `52` se movio despues de
+> medirse. **Escribirlos aqui no rompe `EXTRACTOR.md` 2**, porque su sede final es
+> `bitacora/VEREDICTOS.jsonl` y esa sede **la escribe la aduana el dia de la insercion**, que es
+> donde `D.58` pone ademas la relectura entera. **Si el auditor lo ve mal, se me carga a mi y no a
+> la regla.**
+
+### OO.3.d. **CANDIDATO `4`, PIEZA `P18`, `L51`: `tomar_mando_reunion_pares_presidente_ausente`**
+
+**El remedio del par mas uno, con su frontera publicada DENTRO del nodo** (`EXTRACTOR.md` 10): **los
+`6` pasos salen los `6` de `L51`**, y lo unico que viene de `L41` es **el nombre** del remedio, que
+por eso vive en `denominaciones` y no en un paso. **Y el juego de papeles de `L41` es CASO y no
+CASA** (manual 3.5): ni el entregable ni ningun paso llevan un dato suyo, **y los quince minutos de
+aquella sesion no se convierten en umbral**, que era exactamente la tentacion. **`6` TRANSCRIPCION,
+`0` PUENTE.**
+
+<!-- TALLADO: parcial salida=.v53/aduana_c4.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/tomar_mando_reunion_pares_presidente_ausente.json
+    poblacion del barrido       : 409   (346 del grafo mas 63 que esperan en bandejas)
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 3
+      por candidato bloqueado          : menor 3, mediana 3, mayor 3
+
+> **EL BLOQUE DE VEREDICTO, CON LA POBLACION DE SU PASADA NOMBRADA** (`d056`): **`BLOQUEARIA` con
+> `3` vecinos, medido contra `409`** (`346` del grafo mas `63` de bandejas). **Los `3` leidos
+> enteros, los `3` veredictados con razon**, y los tres los levanta `similitud_texto`.
+
+| vecino | veredicto y razon |
+|---|---|
+| `vencer_sindrome_grupo_pares_autoconfianza` (candidato `3` de hoy) | **`SANO`, y es el par que yo mismo marque como discutible en las dos fichas antes de correr la aduana.** Son HERMANOS del mismo sindrome: aquel **previene**, trabajando la autoconfianza de cada miembro; este **repara**, diciendo quien coge el mando **cuando el sindrome ya se manifesto y no hay presidente formal**. Condicion de activacion distinta y entregable distinto |
+| `decidir_nivel_competente_inferior` (candidato `2` de hoy) | **`SANO`**. El cruce es la figura del mando de mayor rango que entra en la reunion, pero **entra a dos cosas distintas**: alli **aporta experiencia a la mezcla** y opina como un igual; aqui **asume el control** de una reunion que se atasco. El paso que cruza dice en uno *pide que venga* y en otro *pide que asuma el control* |
+| `construir_indicador_tendencia_patron` (`grove_high_output`) | **`SANO`**. Es de indicadores de salida contra tiempo y contra patron: cruza por la forma imperativa del primer paso (*monta el indicador* contra *haz que tome el mando*), no por el objeto. Ningun paso comun y ningun dominio comun |
+
+### OO.3.e. **CANDIDATO `5`, PIEZA `P23`, `L61`: `ejercer_poder_posicion_etapa_decision_clara`**
+
+**La condicion y la prohibicion, las dos escritas por el libro**, que es lo que saca este tramo de
+`POSTURA` y lo mete en procedimiento: *legitimate if the clear decision stage is reached and no
+consensus has developed*, *not legitimate for him to wield that authority any earlier*. **`7` pasos,
+`7` TRANSCRIPCION, `0` PUENTE.**
+
+<!-- TALLADO: parcial salida=.v53/aduana_c5.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/ejercer_poder_posicion_etapa_decision_clara.json
+    poblacion del barrido       : 410   (346 del grafo mas 64 que esperan en bandejas)
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    [ENTRARIA] ejercer_poder_posicion_etapa_decision_clara   (ejercer_poder_posicion_etapa_decision_clara.json)
+
+> **EL BLOQUE DE VEREDICTO, CON LA POBLACION DE SU PASADA NOMBRADA** (`d056`): **`ENTRARIA` con la
+> cola vacia, medido contra `410`** (`346` del grafo mas `64` de bandejas). **Cero vecinos, cero
+> veredictos que escribir.**
+>
+> **Y DIGO LO QUE ESTA CIFRA NO PUEDE DECIR TODAVIA, PORQUE ES LA LECCION DE `d056`:** mi ficha
+> marca como discutible que este nodo y el de `P24` levantarian vecindad entre si, **y cuando esta
+> pasada corrio `P24` todavia no estaba escrito**. Una cola vacia medida contra una poblacion que
+> aun no incluye a su hermano **no absuelve al par**: quien lo mide es la pasada siguiente, y esa
+> si lo ve. Lo dejo dicho aqui **antes** de leer el informe del candidato `6`.
+
+### OO.3.f. **CANDIDATO `6`, PIEZA `P24`, `L63`: `cortar_discusion_libre_momento_justo`**
+
+**El criterio del momento, anunciado por el propio libro con esas palabras** (*The criterion to
+follow is this*) y puesto entero con sus dos extremos. **`7` pasos, `7` TRANSCRIPCION, `0` PUENTE**,
+y el sitio donde no escribi es el reloj: el libro pone el criterio **en lo que se ha oido**, no en
+los minutos.
+
+<!-- TALLADO: parcial salida=.v53/aduana_c6.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/cortar_discusion_libre_momento_justo.json
+    poblacion del barrido       : 411   (346 del grafo mas 65 que esperan en bandejas)
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 3
+      por candidato bloqueado          : menor 3, mediana 3, mayor 3
+
+> **EL BLOQUE DE VEREDICTO, CON LA POBLACION DE SU PASADA NOMBRADA** (`d056`): **`BLOQUEARIA` con
+> `3` vecinos, medido contra `411`** (`346` del grafo mas `65` de bandejas). **Los `3` leidos
+> enteros, los `3` veredictados con razon.**
+
+| vecino | veredicto y razon |
+|---|---|
+| `ejercer_poder_posicion_etapa_decision_clara` (candidato `5` de hoy) | **`SANO`, y es el par que marque como discutible en las DOS fichas antes de correr ninguna de las dos aduanas.** La senial lo levanta desde este lado, no desde aquel, que es lo que anticipe en `OO.3.e`. Son HERMANOS: aquel resuelve **QUIEN** decide y con que autoridad cuando el consenso no llega; este resuelve **CUANDO** se deja de discutir, y su paso `4` manda **empujar hacia el consenso**, que es justo el camino que el otro solo usa cuando ya se agoto |
+| `vencer_sindrome_grupo_pares_autoconfianza` (candidato `3` de hoy) | **`SANO`**. Cruzan dos pasos que empiezan igual y terminan en cosas distintas: alli *haz que todo el mundo lo entienda*, aqui *si el consenso no sale, entra tu y decide*. Aquel trabaja la disposicion del que habla, este el reloj del que dirige |
+| `construir_indicador_tendencia_patron` (`grove_high_output`) | **`SANO`**. Vuelve a aparecer por la misma via que en el candidato `4`, la forma de la frase, y no por el objeto: alli se mide salida contra patron, aqui se decide cuando cortar una discusion. Ningun paso comun |
+
+### OO.3.g. **CANDIDATO `7`, PIEZA `P25`, `L65`: `zanjar_seis_preguntas_decision_adelantado`**
+
+**LA UNICA CABEZA CONTADA DE HOY, y por eso la trato aparte.** El libro **dice cuantas son**
+(*six important questions*) y las nombra una a una, asi que `9.1` la da por procedimentable y `D.37`
+entra en juego. **Y aun asi NO cablearia ninguna arista**, por el motivo que `D.37` escribe:
+**pide que las partes EXISTAN COMO NODOS**, y en mi frontera de hoy las seis preguntas dan **cero
+nodos** porque ninguna trae procedimiento propio. **No hay hijo al que apuntar.** Frontera dentro
+del nodo: pasos `1` a `3` de `L65`, pasos `4` a `9` de `L67` a `L77`, una pregunta por linea.
+**`9` pasos, `9` TRANSCRIPCION, `0` PUENTE.**
+
+> **Y ERA EL NODO CON MAS RIESGO DE PUENTE DE TODA LA VUELTA, ASI QUE LO DIGO AQUI TAMBIEN:** este
+> tramo trata **justo de destinatarios, responsables y plazos**, que son **las tres especies de
+> PUENTE que el lote 1 pago** (`EXTRACTOR.md` 15.4). Lo que lo salva es que el libro las pone como
+> **preguntas** y no como respuestas. **Por eso mis pasos `4` a `9` preguntan y no contestan:**
+> convertirlas en seis respuestas habria sido escribir el nodo entero yo.
+
+<!-- TALLADO: parcial salida=.v53/aduana_c7.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/zanjar_seis_preguntas_decision_adelantado.json
+    poblacion del barrido       : 412   (346 del grafo mas 66 que esperan en bandejas)
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    [ENTRARIA] zanjar_seis_preguntas_decision_adelantado   (zanjar_seis_preguntas_decision_adelantado.json)
+
+> **EL BLOQUE DE VEREDICTO, CON LA POBLACION DE SU PASADA NOMBRADA** (`d056`): **`ENTRARIA` con la
+> cola vacia, medido contra `412`** (`346` del grafo mas `66` de bandejas). **Cero vecinos, cero
+> veredictos que escribir.** Y la cola vacia aqui **no dice que no tenga madre**: dice que no tiene
+> gemelo (`EXTRACTOR.md` 11). Por lectura tampoco la encuentro: **la cabeza es de este capitulo y
+> sus seis partes no son nodos.**
+
+### OO.3.h. **CANDIDATO `8`, PIEZA `P31`, `L93`: `anunciar_decision_inesperada_reconvocar_reunion`**, **Y CON EL `cap_06` QUEDA ENTERO**
+
+**`8` pasos de un tramo de `95` palabras, `8` TRANSCRIPCION, `0` PUENTE.** El parentesis del autor
+sobre cancelar la planta de Filipinas **es el ejemplo de la condicion, no un paso**, y por eso el
+nombre de aquella planta no aparece ni en el entregable ni en ningun paso (manual 3.5).
+
+<!-- TALLADO: parcial salida=.v53/aduana_c8.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/anunciar_decision_inesperada_reconvocar_reunion.json
+    poblacion del barrido       : 413   (346 del grafo mas 67 que esperan en bandejas)
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 6
+      por candidato bloqueado          : menor 6, mediana 6, mayor 6
+
+> **EL BLOQUE DE VEREDICTO, CON LA POBLACION DE SU PASADA NOMBRADA** (`d056`): **`BLOQUEARIA` con
+> `6` vecinos, medido contra `413`** (`346` del grafo mas `67` de bandejas). **Los `6` leidos
+> enteros, los `6` veredictados con razon.** Es la cola mas larga del dia, y la unica del dia en la
+> que `familia_id` levanta algo.
+
+**Y LOS DOS PRIMEROS SE LEEN ANTES QUE NINGUN OTRO**, porque `EXTRACTOR.md` 11 lo manda con su
+cifra: **de `0,4` en adelante, en el catalogo de calibracion habia `325` gemelos y CERO ajenos.**
+Esta vuelta levanta **dos** pares por encima de `0,4`, y los dos estan aqui.
+
+| vecino | senial | veredicto y razon |
+|---|---|---|
+| `vencer_sindrome_grupo_pares_autoconfianza` (candidato `3`) | `similitud_texto` **`0,441`, la mas alta del dia** | **`SANO`, y lo sostengo contra la banda.** Lo que cruza es **mi prosa, no el libro**: el paso `8` de este (*ayuda a todo el mundo a aceptar lo inesperado*) contra el paso `5` de aquel (*haz que todo el mundo entienda esto*). Uno trata de que hacer **despues de anunciar una decision que defrauda**, el otro de **infundir autoconfianza antes de que el grupo se siente**. Ni condicion de activacion comun, ni entregable comun, ni un paso comun |
+| `cortar_discusion_libre_momento_justo` (candidato `6`) | `similitud_texto` **`0,405`** | **`SANO`.** Son HERMANOS del mismo momento de la reunion y caen a los dos lados de la decision: aquel dice **cuando se deja de discutir y se decide**, este dice **que se hace con la gente una vez la decision ya se anuncio**. El paso que cruza es *entra tu y toma la decision* contra *pasa a tomar la decision en el momento justo* |
+| `zanjar_seis_preguntas_decision_adelantado` (candidato `7`) | `similitud_texto` `0,366` | **`SANO`.** Cruzan por la palabra *decision* repetida y por la sexta pregunta (*a quien hay que informar*), pero **informar a un tercero no es anunciar al grupo que participo**: en el propio caso del libro el informado es el presidente del consejo y los que reciben el anuncio son los que se sentaron a decidir. **No declaro arista de `D.29`**, porque ninguna linea de la cabeza nombra este procedimiento |
+| `tomar_mando_reunion_pares_presidente_ausente` (candidato `4`) | `similitud_texto` `0,359` | **`SANO`.** Aquel coge el mando **antes** de que haya decision; este actua **despues** de que la palabra final ya esta dicha |
+| `dirigir_reunion_decision` (`zhuo_manager`) | `familia_id` `0,333`, **la unica del dia** | **`SANO`.** La familia cruza por *decision* y *reunion*, que es exactamente la banda media que `EXTRACTOR.md` 11 declara ruido. Aquel es un nodo de **como se dirige entera** una reunion de decision, con sus cinco malos resultados que evitar; este es **un remedio de ocho pasos para un solo caso**, el de la decision radicalmente distinta de lo esperado, y su paso central, reconvocar la reunion despues, **no existe en aquel** |
+| `ejercer_poder_posicion_etapa_decision_clara` (candidato `5`) | `similitud_texto` `0,371` | **`SANO`.** Aquel autoriza al de mayor rango a decidir solo; este no habla de quien decide, **habla de lo que se hace con el grupo despues** |
+
+#### **Y LA BANDA DE `0,4` NO FALLO: FALLE YO, Y LO MIDO EN VEZ DE AFIRMARLO**
+
+**`EXTRACTOR.md` 11 dice que por encima de `0,4` no hay ajenos.** Hoy hay dos pares por encima y los
+dos los veredicto `SANO`, asi que **o la vara esta mal o mi ficha lo esta**. Lo mido con **la misma
+funcion que usa la aduana**, no con una imitacion.
+
+<!-- TALLADO: parcial script=.v53/peso_resumen.py salida=.v53/peso_resumen.txt -->
+
+    $ python .v53/peso_resumen.py   sobre src/comun.texto_comparable
+    id                                             comparable    resumen      pasos  resumen
+                                                   caracteres caracteres caracteres        %
+    anunciar_decision_inesperada_reconvocar_reunio       3466       2880        569    83.1
+    vencer_sindrome_grupo_pares_autoconfianza            3237       2593        611    80.1
+    cortar_discusion_libre_momento_justo                 3825       2958        853    77.3
+    conducir_etapas_modelo_ideal_decision                6138       4315       1861    70.3
+    zanjar_seis_preguntas_decision_adelantado            4381       3638        739    83.0
+
+**LOS DOS PARES QUE PASAN DE `0,4` SON LOS DOS DE MAYOR PROPORCION DE `resumen_teorico`** (`83,1` y
+`80,1` por ciento), y lo que comparten es **el formulario obligatorio de la ficha**: `UNIDAD DE
+ORIGEN`, `POR QUE ES PROCEDIMIENTO`, `DE DONDE SALE CADA PASO`, `RELECTURA DE FIDELIDAD D.30`, `LOS
+SITIOS DE TENTACION QUE DECLARO`, `DISCUTIBLE QUE MARCO`. **El catalogo de `3.169` nodos con el que
+`D.4` calibro esa banda no llevaba este formulario dentro del campo comparado.** Es la cuarta
+generacion de `d038`, hermana de `d051` y `d056`: **un texto que se escribe dentro de su propia
+poblacion.**
+
+> **NO PROPONGO MOVER NINGUN UMBRAL**, que es de Alexis de raiz y del auditor de proponer
+> (`EXTRACTOR.md` 11). **Lo anoto como deuda y la vuelta sigue** (`D.55`), que es lo que el encargo
+> manda para todo lo que no sea una de las cuatro guardas de DATO.
+
+    $ python scripts/deuda.py --anotar --vuelta 53 --especie aduana ...
+    ANOTADA d058: LA SENIAL 1 COMPARA MI PROSA, NO LOS PASOS DEL LIBRO. Medido con la mi
+
+**`cap_06` QUEDA ENTERO: `8` DE `8` NODOS PREVISTOS, `8` ESCRITOS Y `8` POR SU ADUANA EN EL ACTO.**
+
+### OO.3.i. **CANDIDATO `9`, PIEZA `P5` DE `cap_07`, `L19`: `planificar_tres_pasos_demanda_estado_brecha`**
+
+**El reloj daba para uno mas, asi que abro `cap_07` por su cabeza** y no por una pieza suelta. **El
+libro dice cuantos pasos son y los numera el mismo**, asi que es cabeza contada y `D.37` entra.
+**`6` pasos, `6` TRANSCRIPCION, `0` PUENTE.**
+
+> **LA ARISTA DE `D.37` QUEDA ANUNCIADA Y NO CABLEADA, Y DIGO POR QUE:** `D.37` pide que **las
+> partes EXISTAN COMO NODOS**, y las partes de esta cabeza son las piezas `P8`, `P9`, `P10`, `P12`
+> y `P14` de `OO.2.b`, **ninguna de las cuales existe todavia**: el reloj de aduana cerro antes.
+> **La vuelta que las escriba es la que tiene que cablearlas en su mismo acto**, y lo dejo escrito
+> aqui y dentro de la ficha para que no dependa de que alguien se acuerde.
+
+> **Y LA FRONTERA QUE MAS ME JUGABA EN ESTE CAPITULO VA DECLARADA EN LA FICHA:** `P4` (`L17`)
+> recapitula los mismos tres pasos **en la fabrica** y el libro lo dice con todas sus letras
+> (*As we learned in Chapter 2*), y `P5` (`L19`) los generaliza (*Your general planning process
+> should consist of analogous thinking*). **Dar nodo a los dos fabricaria el gemelo de su propio
+> donante**, que es lo que `P.19` prohibe, asi que `P4` lleva `0` en la frontera con su motivo.
+
+<!-- TALLADO: parcial salida=.v53/aduana_c9.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/planificar_tres_pasos_demanda_estado_brecha.json
+    poblacion del barrido       : 414   (346 del grafo mas 68 que esperan en bandejas)
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 1
+
+> **EL BLOQUE DE VEREDICTO, CON LA POBLACION DE SU PASADA NOMBRADA** (`d056`): **`BLOQUEARIA` con
+> `1` vecino, medido contra `414`** (`346` del grafo mas `68` de bandejas). **Leido entero y
+> veredictado con razon.**
+
+| vecino | senial | veredicto y razon |
+|---|---|---|
+| `vencer_sindrome_grupo_pares_autoconfianza` (candidato `3`) | `similitud_texto` `0,398`, **a dos milesimas de la banda alta** | **`SANO`**, y es el tercer ejemplar de `d058` en la misma vuelta: el paso `4` de este (*donde va a estar tu negocio si no haces nada distinto*) contra el paso `2` de aquel (*que cada miembro este familiarizado con el asunto*) **no comparten ni objeto ni verbo**. Uno es de planificacion y otro del sindrome del grupo de pares. **Lo que los junta es el formulario de la ficha**, medido en `OO.3.h` |
+
+### OO.3.j. **EL TRAMO DE HOY, CON SU RELOJ, Y DONDE CORTE**
+
+**`9` candidatos escritos, `9` por su aduana en el mismo acto, `10` pasadas de aduana medidas**, una
+de ellas perdida y otra gastada en un `CAERIA` de la puerta. **`CERO INSERCIONES`**, porque la
+puerta de `D.39` la medi yo en `OO.0.a` y sale cerrada por sus dos mitades.
+
+- **`cap_06` CIERRA ENTERO**: `8` de `8` nodos previstos por la frontera, sin dejar pieza abierta.
+- **`cap_07` QUEDA ABIERTO EN SU PIEZA `P5`**, que es su cabeza: **`1` de `9`**, y las `8` restantes
+  ya tienen su tramo escrito en `OO.2.b`.
+- **`cap_08` NO SE MINA Y NO ES UN OLVIDO**: su frontera le da `0` nodos con motivo por fila.
+- **CORTE EL TRAMO POR EL RELOJ Y NO POR EL NUMERO**, que es la mitad del techo que muerde hoy:
+  `9` esta muy por debajo de los `30` de `D.58`, y el reloj llego a `77,7` de los `90` minutos con
+  una pasada media de `540` s en la ultima, **que ya no cabia otra entera con margen para cerrar**.
+
+**CERRADA `OO.3`.**
