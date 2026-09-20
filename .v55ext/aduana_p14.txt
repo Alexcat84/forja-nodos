@@ -1,0 +1,66 @@
+INICIO 2026-09-20T14:16:06-04:00
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 423   (346 del grafo mas 77 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 11
+  por candidato bloqueado          : menor 11, mediana 11, mayor 11
+  que señal levanta cada vecindad  : paso_contra_nodo 4, similitud_texto 8
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] cerrar_brecha_dos_preguntas_estrategia   (cerrar_brecha_dos_preguntas_estrategia.json)
+    vecino preguntar_seguimiento_hallar_huecos  [levantada por: paso_contra_nodo]
+      similitud_texto 0.265 | familia_id 0.000 | paso_contra_nodo 0.645
+      paso 3 del candidato contra paso 11 de preguntar_seguimiento_hallar_huecos
+    vecino responder_tres_preguntas_vocacion_directiva  [levantada por: paso_contra_nodo]
+      similitud_texto 0.225 | familia_id 0.111 | paso_contra_nodo 0.628
+      paso 3 del candidato contra paso 3 de responder_tres_preguntas_vocacion_directiva
+    vecino contestar_dos_preguntas_direccion_objetivos  [levantada por: similitud_texto, paso_contra_nodo]
+      similitud_texto 0.431 | familia_id 0.250 | paso_contra_nodo 0.626
+      paso 2 del candidato contra paso 2 de contestar_dos_preguntas_direccion_objetivos
+    vecino preparar_preguntas_entrevista_antemano  [levantada por: paso_contra_nodo]
+      similitud_texto 0.126 | familia_id 0.125 | paso_contra_nodo 0.614
+      paso 4 del candidato contra paso 3 de preparar_preguntas_entrevista_antemano
+    vecino planificar_tres_pasos_demanda_estado_brecha  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.100 | paso_contra_nodo 0.545
+      paso 2 del candidato contra paso 6 de planificar_tres_pasos_demanda_estado_brecha
+    vecino examinar_demanda_entorno_dos_marcos_temporales  [levantada por: similitud_texto]
+      similitud_texto 0.399 | familia_id 0.100 | paso_contra_nodo 0.454
+      paso 4 del candidato contra paso 4 de examinar_demanda_entorno_dos_marcos_temporales
+    vecino determinar_estado_presente_capacidades_proyectos_merma  [levantada por: similitud_texto]
+      similitud_texto 0.384 | familia_id 0.000 | paso_contra_nodo 0.451
+      paso 4 del candidato contra paso 4 de determinar_estado_presente_capacidades_proyectos_merma
+    vecino examinar_entorno_expectativas_tecnologia_proveedores_grupos  [levantada por: similitud_texto]
+      similitud_texto 0.449 | familia_id 0.000 | paso_contra_nodo 0.418
+      paso 3 del candidato contra paso 5 de examinar_entorno_expectativas_tecnologia_proveedores_grupos
+    vecino archivar_indicadores_resolver_problemas  [levantada por: similitud_texto]
+      similitud_texto 0.351 | familia_id 0.000 | paso_contra_nodo 0.431
+      paso 4 del candidato contra paso 3 de archivar_indicadores_resolver_problemas
+    vecino cortar_discusion_libre_momento_justo  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.423
+      paso 5 del candidato contra paso 2 de cortar_discusion_libre_momento_justo
+    vecino definir_entorno_grupo_clientes_proveedores_competidores  [levantada por: similitud_texto]
+      similitud_texto 0.417 | familia_id 0.000 | paso_contra_nodo 0.393
+      paso 7 del candidato contra paso 3 de definir_entorno_grupo_clientes_proveedores_competidores
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+
+real	2m55.290s
+user	0m0.015s
+sys	0m0.015s
+FIN 2026-09-20T14:19:02-04:00

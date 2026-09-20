@@ -1,0 +1,42 @@
+{
+ "id": "cerrar_brecha_dos_preguntas_estrategia",
+ "titulo": "Cerrar la brecha entre demanda y rendimiento contestando por separado que necesitas hacer y que puedes hacer, y llamar estrategia al conjunto que decidas",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [
+  {
+   "clave": "grove_high_output",
+   "fecha": "2026-09-20"
+  }
+ ],
+ "denominaciones": {
+  "nombre_largo": "El paso 3 de la planificacion, que hacer para cerrar la brecha, con sus dos preguntas consideradas por separado y la definicion de estrategia que sale de ellas",
+  "sigla": "",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "close the gap"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "strategy"
+   }
+  ]
+ },
+ "condiciones_activacion": "Cuando ya tienes medida la demanda de tu entorno y tu estado presente, y te queda decidir que vas a hacer con la diferencia entre los dos.",
+ "entregable_esperado": "Las dos preguntas contestadas por separado y, aparte de ellas, la decision de que vas a hacer realmente, con el efecto previsto de cada accion sobre la brecha y el momento en que lo tendra. Ese conjunto de acciones escrito es tu estrategia.",
+ "pasos_accionables": [
+  "Emprende tareas nuevas o modifica las que ya tienes para cerrar la brecha entre la demanda de tu entorno y lo que tus actividades presentes van a rendir.",
+  "Contesta la primera pregunta: que necesitas hacer para cerrar la brecha.",
+  "Contesta la segunda pregunta: que puedes hacer para cerrar la brecha.",
+  "Considera cada una de las dos preguntas por separado.",
+  "Decide despues que vas a hacer realmente.",
+  "Evalua al decidirlo que efecto van a tener tus acciones sobre el estrechamiento de la brecha, y cuando lo van a tener.",
+  "Llama estrategia al conjunto de acciones que decidas."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_07.md, PIEZA P14 de la frontera publicada en la vuelta 53 (docs/loop/REPORTE.md L50894), tramo L39 a L39, 89 palabras, y de ningun otro tramo. POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el libro pone sus ETAPAS una a una y, sobre todo, pone SUS DOS PREGUNTAS LITERALES con la instruccion expresa de tratarlas por separado (Consider each question separately), que es un medio y no un adjetivo de adecuacion. DE DONDE SALE CADA PASO, uno a uno, todos de L39: paso 1 (The final step of planning consists of undertaking new tasks or modifying old ones to close the gap between your environmental demand and what your present activities will yield); paso 2 (The first question is, What do you need to do to close the gap?); paso 3 (The second is, What can you do to close the gap?); paso 4 (Consider each question separately); paso 5 (and then decide what you actually will do); paso 6 (evaluating what effect your actions will have on narrowing the gap, and when); paso 7 (The set of actions you decide upon is your strategy). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. LOS SITIOS DE TENTACION EN LOS QUE NO ESCRIBI: NO escribo con que criterio se elige entre lo que necesitas hacer y lo que puedes hacer cuando no coinciden, porque el libro no lo pone y ese hueco es exactamente donde el extractor del lote 1 escribia sus puentes. NO escribo en que documento se recoge la estrategia. NO escribo el plazo en que se revisa. NO escribo quien decide. LA DISTINCION ENTRE ESTRATEGIA Y TACTICA NO ENTRA AQUI, y es frontera y no olvido: vive en la pieza P15 (L41), que la vuelta 53 adjudico DEFINICION con CASO y cero nodos; lo unico que traigo de estrategia es la frase de L39 que la define como el conjunto de acciones decidido, porque esa frase esta en ESTE tramo. NI UNA CIFRA A atribuciones: el tramo no trae ninguna. ARISTA QUE ANUNCIO Y NO CABLEO HOY: parte de la cabeza planificar_tres_pasos_demanda_estado_brecha (P5), caso de D.37, cableada el dia de la insercion porque esta vuelta NO INSERTA. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: el paso 1 enuncia el paso 3 entero y podria leerse como titulo del nodo y no como paso ejecutable, con lo que el nodo tendria seis pasos y no siete. Lo dejo porque es la frase que nombra el objeto sobre el que actuan los otros seis, y sin ella el paso 2 empieza a hablar de una brecha que nadie ha definido en el nodo."
+}

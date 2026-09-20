@@ -1,0 +1,43 @@
+{
+ "id": "repartir_supervision_puesto_funcional_mision",
+ "titulo": "Repartir la supervision de un puesto entre su grupo funcional y su division, dando a cada jefe lo que le toca: al de mision las prioridades, al funcional el oficio y la carrera",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [
+  {
+   "clave": "grove_high_output",
+   "fecha": "2026-09-20"
+  }
+ ],
+ "denominaciones": {
+  "nombre_largo": "La doble dependencia aplicada a un puesto concreto: quien fija sus metodos y estandares, quien le da las prioridades del negocio, quien vigila su desempeno tecnico y quien cuida su carrera",
+  "sigla": "",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "dual reporting"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "hybrid organization"
+   }
+  ]
+ },
+ "condiciones_activacion": "Cuando un puesto pertenece a un grupo funcional y trabaja para una unidad de mision, y hay que decidir de quien depende sin dejar fuera ni las prioridades del negocio ni el oficio de su especialidad.",
+ "entregable_esperado": "El reparto escrito de la supervision de ese puesto: sus dos jefes nombrados, y al lado de cada uno lo que le toca hacer, desde los metodos y estandares hasta las prioridades, la vigilancia tecnica y la carrera.",
+ "pasos_accionables": [
+  "Parte de lo que hace falta para que la organizacion hibrida funcione: una manera de coordinar las unidades de mision y los grupos funcionales, de modo que los recursos de los segundos se asignen y se entreguen para cubrir las necesidades de las primeras.",
+  "Deja que el grupo funcional al que el puesto pertenece fije sus metodos profesionales, sus practicas y sus estandares.",
+  "Haz en consecuencia que ese puesto dependa de alguien de la organizacion funcional y de alguien de la organizacion de mision.",
+  "Ajusta el tipo de supervision de cada uno de los dos a las necesidades distintas de las dos organizaciones.",
+  "Encarga al jefe de la unidad de mision que le de las prioridades de mision, pidiendole que trabaje en problemas concretos del negocio.",
+  "Encarga al jefe funcional que se asegure de que esta formado para hacer su trabajo de manera tecnicamente competente.",
+  "Encarga a ese mismo jefe funcional que supervise y vigile su desempeno tecnico.",
+  "Encarga al jefe funcional que cuide su carrera dentro de la funcion, promocionandolo si lo hace bien."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_10.md, PIEZA P17 de la frontera que publico ESTA vuelta en .v55ext/frontera_dos.txt, tramo L43 a L43, y de ningun otro tramo. POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el libro pone SU PROPIO INVENTARIO de OBJETOS DE TRABAJO repartidos uno a uno entre los dos jefes, y no un adjetivo de adecuacion en el sitio del criterio. Nombra que fija el grupo funcional (his professional methods, practices, and standards are set by the functional group to which he belongs), que hace el jefe de mision (gives the controller mission-oriented priorities by asking him to work on specific business problems) y las TRES cosas que hace el jefe funcional (makes sure that the controller is trained to do his work in a technically proficient manner, supervises and monitors his technical performance, and looks after his career inside finance, promoting him). DE DONDE SALE CADA PASO, uno a uno, todos de L43: paso 1 (To make hybrid organizations work, you need a way to coordinate the mission-oriented units and the functional groups so that the resources of the latter are allocated and delivered to meet the needs of the former); paso 2 (His professional methods, practices, and standards are set by the functional group to which he belongs); paso 3 (Consequently, the controller for a business unit should report to someone in both the functional and the mission-oriented organizations); paso 4 (with the type of supervision reflecting the varying needs of the two); paso 5 (The divisional general manager gives the controller mission-oriented priorities by asking him to work on specific business problems); paso 6 (The finance manager makes sure that the controller is trained to do his work in a technically proficient manner); paso 7 (supervises and monitors his technical performance); paso 8 (and looks after his career inside finance, promoting him, perhaps, to the position of controller of a bigger, more complex division if he performs well). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE. EL CASO NO ES LA CASA, manual 3.5, y es la decision que gobierna todo este nodo: el libro cuenta el reparto sobre el controller y su organizacion financiera, y yo escribo la doctrina con el puesto, el jefe funcional y el jefe de mision, sin controller, sin finanzas y sin la division mas grande a la que asciende. Ninguna de esas tres piezas es del procedimiento: son del ejemplo, y meterlas habria puesto un dato del caso en el entregable, que es la senial barata que el manual nombra. LOS SITIOS DE TENTACION EN LOS QUE NO ESCRIBI: NO escribo como se resuelve el choque cuando los dos jefes mandan cosas incompatibles, porque el libro no lo pone en este tramo. NO escribo cada cuanto se revisa el reparto. NO escribo quien decide el reparto. NO escribo el cuerpo de pares como segundo supervisor, porque eso vive en otros tramos (P10 y P20) que mi frontera adjudica CASO con cero nodos. NI UNA CIFRA A atribuciones: el tramo no trae ninguna. LA FRONTERA CONTRA P6 (L21), que es su vecino mas cercano: L21 dice la misma reparticion en dos lineas (The first would specify how the job ought to be done, and the second would monitor how it was being performed day by day) pero dentro del CASO de la seguridad de planta y sin inventario; L43 la pone entera y con sus objetos nombrados. Dar nodo a los dos fabricaria el gemelo de su propio donante, que es lo que P.19 prohibe, asi que el nodo se queda en L43. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO, y es el mas serio de los que traigo hoy: este tramo se abre con Consider how the controller works at Intel, y quien lea que todo lo que sigue es CASO y no doctrina tumba el nodo entero y deja cap_10 en CERO. Lo sostengo porque el tramo abre con la regla general antes del caso y cierra con ella despues (this is dual reporting, the management principle that enables the hybrid organization form to work), asi que el caso va en medio de su doctrina y no al reves. Si cae, cae DENTRO de mi marcado."
+}
