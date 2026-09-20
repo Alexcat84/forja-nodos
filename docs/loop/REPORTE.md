@@ -53327,13 +53327,19 @@ la vuelta no cerraba. **Lo que la regla protege se cumplio entero:** ningun cand
 escrito sin su pasada propia antes de cerrar el capitulo, **ninguna pasada es del lote**, y
 **el reloj de cada una se publica**.
 
-> **Y LA PRIMERA MEDIDA QUE TRAIGO ES UNA CORRECCION DE CIFRA, contra la nota que el propio
-> `.v53/frontera.py` lleva escrita** (`731,2` s por pasada, medida de la vuelta `52`, y los
-> `156,5` s de `D.43`): **hoy la pasada sale muy por debajo de las dos.** La cifra de hoy esta
-> en la tabla de abajo, con su reloj por fila. **No resuelvo la discrepancia copiando ninguna
-> de las dos** (`EXTRACTOR.md` 5): **declaro que mi medicion de hoy discrepa de las dos
-> anteriores**, y dejo las tres a la vista para que el auditor decida si la poblacion, la
-> maquina o el instrumento cambiaron.
+> **Y LA PRIMERA MEDIDA QUE TRAIGO ES UNA DISCREPANCIA DE CIFRA, y la declaro sin resolverla
+> copiando** (`EXTRACTOR.md` 5). Hay **tres** mediciones de lo que tarda una pasada de aduana
+> sobre un candidato, y **ninguna coincide con otra**:
+>
+> | medicion | cifra | donde esta escrita |
+> |---|---:|---|
+> | `D.43`, 12 sep 2026 | `156,5` s | `EXTRACTOR.md` 12, el parrafo que saco el informe de lote de mi turno |
+> | vuelta `52` | `731,2` s | la nota al pie de `.v53/frontera.py`, reusado hoy |
+> | **la mia, hoy** | la que imprime `.v55ext/saldo_uno_a_uno.txt` | la tabla de abajo, fila a fila y con su media |
+>
+> **La mia cae ENTRE las dos**, no por debajo de ambas. **No elijo cual de las tres es la
+> buena:** dejo las tres a la vista para que el auditor decida si lo que cambio fue la
+> poblacion, la maquina o el instrumento.
 
 ### VV.5.a. **LAS ARISTAS QUE ANUNCIO Y NO CABLEO HOY, DEJADAS LISTAS PARA EL DIA DE LA INSERCION**
 
@@ -53412,3 +53418,43 @@ para que la relectura ciega empiece por ahi.**
 > La tabla no cambio de contenido: cambio de clave. **`d029` sigue pendiente y no la pago yo**
 > (`src/` esta vedada por `D.45`), pero dejo escrito **como se esquiva sin mentirle a la
 > guarda**: una tabla cuya primera celda se repite es una tabla que `D.41` no puede comprobar.
+>
+> **Y ME VOLVIO A MORDER EN LA MISMA VUELTA, en la tabla de `VV.5.b`**, por la misma razon
+> exacta (`cap_07` diez veces en la primera celda). **La arregle igual: clave propia por fila en
+> el instrumento y tabla regenerada, nunca celda tecleada.** Dos mordidas de `d029` en una sola
+> vuelta es, por si hacia falta, la medicion de que `d029` no es teorica.
+
+### VV.5.b. **EL SALDO, CANDIDATO A CANDIDATO, LEIDO DE LA SALIDA DE CADA PASADA**
+
+<!-- TALLADO: script=.v55ext/saldo_uno_a_uno.py salida=.v55ext/saldo_uno_a_uno.txt -->
+| capitulo y pieza | candidato | pasos | veredicto en seco | poblacion | vecinos | reloj |
+|---|---|---:|---|---:|---:|---:|
+| `cap_07` `P5` | `planificar_tres_pasos_demanda_estado_brecha` | 6 | escrito y pasado por la VUELTA 53, no por esta | | | |
+| `cap_07` `P8` | `definir_entorno_grupo_clientes_proveedores_competidores` | 6 | **BLOQUEARIA** | 415 (346 mas 69) | 2 | 169,9 s |
+| `cap_07` `P9` | `examinar_entorno_expectativas_tecnologia_proveedores_grupos` | 5 | **BLOQUEARIA** | 420 (346 mas 74) | 4 | 189,1 s |
+| `cap_07` `P10` | `examinar_demanda_entorno_dos_marcos_temporales` | 7 | **BLOQUEARIA** | 422 (346 mas 76) | 4 | 204,5 s |
+| `cap_07` `P12` | `determinar_estado_presente_capacidades_proyectos_merma` | 7 | **BLOQUEARIA** | 423 (346 mas 77) | 5 | 205,1 s |
+| `cap_07` `P14` | `cerrar_brecha_dos_preguntas_estrategia` | 7 | **BLOQUEARIA** | 423 (346 mas 77) | 11 | 175,3 s |
+| `cap_07` `P22` | `fijar_horizonte_ventana_replanificacion` | 5 | **BLOQUEARIA** | 423 (346 mas 77) | 3 | 212,3 s |
+| `cap_07` `P27` | `contestar_dos_preguntas_direccion_objetivos` | 5 | **BLOQUEARIA** | 423 (346 mas 77) | 7 | 139,7 s |
+| `cap_07` `P29` | `fijar_periodo_direccion_objetivos_retroalimentacion` | 5 | **BLOQUEARIA** | 423 (346 mas 77) | 1 | 201,6 s |
+| `cap_10` `P17` | `repartir_supervision_puesto_funcional_mision` | 8 | **ENTRARIA** | 423 (346 mas 77) | 0 | 273,6 s |
+
+<!-- TALLADO: parcial script=.v55ext/saldo_uno_a_uno.py salida=.v55ext/saldo_uno_a_uno.txt -->
+
+    PASADAS DE ADUANA CORRIDAS EN ESTA VUELTA, una por candidato nuevo : 9
+    CANDIDATOS QUE CAERIAN POR UNA GUARDA                              : 0
+    CANDIDATOS QUE BLOQUEARIAN (cola de lectura, no rechazo)           : 8
+    RELOJ SUMADO DE LAS PASADAS                                        : 1771,1 s
+    RELOJ MEDIO POR PASADA                                             : 196,8 s
+
+> **CERO `CAERIAN` EN LOS NUEVE.** Y `BLOQUEARIA` **no es rechazo**: es cola de lectura, y
+> `D.38.5` ya avisa de que la poblacion es **grafo mas bandejas**, asi que un par cuyos dos
+> extremos viven en cuarentena **se levanta igual**. Lo que la tabla dice es que **hay
+> vecindades que leer el dia de la insercion**, no que mis candidatos sean peores.
+
+**EL UNICO `ENTRARIA` ES EL DE `cap_10`, y es la fila que mas me interesa de todas**: el nodo
+que mas me juego (discutible `2`) es tambien **el unico que ninguna senial empareja con nada**.
+Es literalmente el aviso de `EXTRACTOR.md` 11: **un candidato con la cola vacia esta
+certificado como SIN GEMELO, no como SIN MADRE.** Su madre, si la tiene, la tiene que
+encontrar la lectura, y en `VV.5.a` digo cual creo que NO es.

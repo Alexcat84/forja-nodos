@@ -37,19 +37,19 @@ RE_VEC = re.compile(r"vecinos levantados en total\s*:\s*(\d+)")
 RE_REL = re.compile(r"^real\s+(\d+)m([\d.]+)s", re.M)
 RE_CAE = re.compile(r"CAERIAN por una guarda\s*:\s*(\d+)")
 
-print("| capitulo | pieza | candidato | pasos | veredicto en seco | poblacion | vecinos | reloj |")
-print("|---|---|---|---:|---|---:|---:|---:|")
+print("| capitulo y pieza | candidato | pasos | veredicto en seco | poblacion | vecinos | reloj |")
+print("|---|---|---:|---|---:|---:|---:|")
 segundos, corridas, caidas, bloqueos = 0.0, 0, 0, 0
 for cap, pieza, cid, tag in ORDEN:
     ruta = "cuarentena/grove_high_output/%s.json" % cid
     pasos = len(json.load(io.open(ruta, encoding="utf-8"))["pasos_accionables"])
     if tag is None:
-        print("| `%s` | `%s` | `%s` | %d | escrito y pasado por la VUELTA 53, no por esta | | | |"
+        print("| `%s` `%s` | `%s` | %d | escrito y pasado por la VUELTA 53, no por esta | | | |"
               % (cap, pieza, cid, pasos))
         continue
     salida = ".v55ext/aduana_%s.txt" % tag
     if not os.path.exists(salida):
-        print("| `%s` | `%s` | `%s` | %d | **SIN CORRER** | | | |" % (cap, pieza, cid, pasos))
+        print("| `%s` `%s` | `%s` | %d | **SIN CORRER** | | | |" % (cap, pieza, cid, pasos))
         continue
     crudo = io.open(salida, encoding="utf-8").read()
     ver = RE_VER.search(crudo)
@@ -64,7 +64,7 @@ for cap, pieza, cid, tag in ORDEN:
         caidas += 1
     if ver and ver.group(1) == "BLOQUEARIA":
         bloqueos += 1
-    print("| `%s` | `%s` | `%s` | %d | **%s** | %s (%s mas %s) | %s | %s s |"
+    print("| `%s` `%s` | `%s` | %d | **%s** | %s (%s mas %s) | %s | %s s |"
           % (cap, pieza, cid, pasos, ver.group(1) if ver else "?",
              pob.group(1) if pob else "?", pob.group(2) if pob else "?",
              pob.group(3) if pob else "?",
