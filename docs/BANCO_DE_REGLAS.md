@@ -3335,3 +3335,73 @@ su numero de seccion.
       (423.5 menos 731.2) sobre 731.2                              -42.1 por ciento
 
 **`42,1` por ciento es la caida por pasada, y esa es la que presupuesta.**
+
+---
+
+## D.60. UN MUNDO SE CIERRA CUANDO SUS LIBROS ESTAN INSERTADOS, NO EXTRAIDOS (21 sep 2026, decision del fundador)
+
+*Decision del fundador del 21 sep 2026 sobre la parada feliz de la vuelta 62. **El numero lo
+asigna esta sesion.** Es la regla que faltaba el dia en que una campania cerro su extraccion
+y nadie tenia escrito que eso todavia no era cerrar.*
+
+### La letra
+
+> **UN MUNDO SE DECLARA COMPLETO CUANDO LOS LIBROS DE SU CORTE DEFINITIVO ESTAN
+> INSERTADOS EN EL GRAFO. Una bandeja llena no cierra nada.**
+>
+> **La rama del mundo se funde a `main` cuando el mundo se declara completo, con `gate` y
+> la suite corridas y verdes delante, y ese es el estado que la app consume.**
+>
+> **El bucle no funde: pide.**
+
+### Por que hacia falta escribirla
+
+**El `21` sep de `2026` la extraccion del mundo `11` quedo consumada**, `18` de `18`
+capitulos del ultimo libro leidos y adjudicados, `92` candidatos en bandeja. **Y el grafo
+seguia exactamente donde estaba: `346` nodos, uno solo de Grove.**
+
+**La casa no tenia escrito que esas dos frases no se contradicen.** El auditor de la
+`ACTA 61` tuvo que razonarlo de cero para poder parar sin decir que el mundo estaba cerrado,
+y lo razono bien; pero razonar de cero lo que deberia estar escrito es exactamente lo que
+`D.32` manda evitar.
+
+> **`D.39` ya decia que un libro entra cuando su extraccion cierra. Lo que faltaba es la
+> otra mitad: que la extraccion cerrada NO es el cierre del mundo.**
+
+### El corte del mundo `11`, que esta regla fija
+
+**CINCO LIBROS** (decision del fundador del `21` sep, punto `4`, que confirma el corte del
+mismo dia por la manana):
+
+| | libro | estado al escribirse esta regla |
+|---|---|---|
+| `1` | `onu_consumidor` | **INSERTADO**, `6` nodos |
+| `2` | `smart_who` | **INSERTADO**, `59` nodos |
+| `3` | `zhuo_manager` | **INSERTADO**, `136` nodos |
+| `4` | `scott_radical_candor` | **INSERTADO**, `142` nodos |
+| `5` | `grove_high_output` | extraccion CERRADA, `1` insertado de `92`. **Es lo que falta** |
+
+### El sexto, y la condicion que lo deja entrar
+
+**`gerber_emyth` entra como sexto SOLO si cierra su extraccion antes de que la cuota de la
+semana se agote**, y entonces se cosecha e inserta por el relevo de `D.50`. **Si no la
+cierra, queda en bandeja entero y NO bloquea el cierre del mundo.**
+
+**`marquet_turn_the_ship` solo si sobra semana despues de Gerber.**
+
+> **UNA BANDEJA A MEDIAS NO RETRASA UN CIERRE.** Es la misma letra de `D.32`, *un lote
+> cerrado y sin insertar no bloquea nada*, aplicada un piso mas arriba: **al mundo.**
+
+### Caso positivo y caso negativo
+
+**POSITIVO, y es el de hoy:** el mundo `11` con Grove extraido entero y sin insertar
+**NO esta completo**, la rama **no se funde**, y quien lo pregunte tiene donde leerlo.
+
+**NEGATIVO:** el mundo `11` con los `92` de Grove en el grafo, `gate` verde y la suite
+verde **SI esta completo**, y se funde **aunque Gerber y Marquet sigan con sus `19`
+candidatos en bandeja.**
+
+### Lo que esta regla no toca
+
+**No cambia quien funde.** `AUDITOR_FORJA.md` seccion `3` sigue diciendo que **el bucle no
+funde ramas y el bucle no crea remotos**, y esta regla solo fija **cuando** se pide.

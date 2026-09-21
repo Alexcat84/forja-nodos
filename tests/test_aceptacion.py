@@ -4567,25 +4567,61 @@ class PruebaOrdenDePrioridad(BaseForja):
 
     # ------------------------------------------------- el cierre del mundo 11
 
-    def test_el_mundo_11_no_esta_completo_mientras_falte_uno(self):
-        from src import tablero
-        filas = self._filas(grove_high_output={"estado": "INSERTADO",
-                                               "dueno": "NINGUNO"},
-                            gerber_emyth={"estado": "INSERTADO"})
-        completo, del_mundo, faltan = tablero.mundo_11_completo(filas)
-        self.assertFalse(completo)
-        self.assertEqual(len(del_mundo), 3)
-        self.assertEqual([f["clave"] for f in faltan], ["marquet_turn_the_ship"])
+    # EL CORTE LO DECLARA EL FUNDADOR, NO LA PRIORIDAD (D.60, 21 sep 2026).
+    #
+    # Las dos pruebas que vivian aqui fijaban la cuenta vieja, la de los libros CON
+    # PRIORIDAD, que metia en el corte a gerber y a marquet. D.60 los deja fuera y
+    # condicionales, asi que esas dos pruebas median lo contrario de la regla.
+    #
+    # EL CORTE VA EXPLICITO EN CADA UNA: una prueba que lee config/frentes.json mide
+    # el fichero de hoy y no la regla, y esta casa ya pago ese precio dos veces.
 
-    def test_el_mundo_11_completo_son_los_tres_del_corte_y_no_los_seis(self):
+    CORTE = ["scott_radical_candor", "grove_high_output"]
+
+    def test_caso_negativo_falta_uno_del_corte_y_el_mundo_no_cierra(self):
         from src import tablero
-        filas = self._filas(grove_high_output={"estado": "INSERTADO",
-                                               "dueno": "NINGUNO"},
-                            gerber_emyth={"estado": "INSERTADO"},
-                            marquet_turn_the_ship={"estado": "INSERTADO"})
-        completo, del_mundo, _ = tablero.mundo_11_completo(filas)
-        self.assertTrue(completo, "los del corte no cuentan para el mundo 11")
-        self.assertEqual(len(del_mundo), 3)
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            grove_high_output={"estado": "EN CURSO"})
+        completo, del_mundo, faltan = tablero.mundo_11_completo(
+            filas, corte=self.CORTE)
+        self.assertFalse(completo)
+        self.assertEqual(len(del_mundo), 2)
+        self.assertEqual([f["clave"] for f in faltan], ["grove_high_output"])
+
+    def test_caso_positivo_d60_una_bandeja_a_medias_no_retrasa_el_cierre(self):
+        """LA FIGURA ENTERA DE D.60, y es la que la cuenta vieja no dejaba pasar.
+
+        `gerber_emyth` y `marquet_turn_the_ship` siguen PAUSADOS con sus `19`
+        candidatos en bandeja, y el mundo se declara COMPLETO igual **porque no
+        estan en el corte**. Con la cuenta por prioridad esto salia `False`, y el
+        mundo 11 no podia cerrarse nunca sin minar dos libros enteros que la
+        campania decidio no pagar.
+        """
+        from src import tablero
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            grove_high_output={"estado": "INSERTADO", "dueno": "NINGUNO"})
+        completo, del_mundo, faltan = tablero.mundo_11_completo(
+            filas, corte=self.CORTE)
+        self.assertTrue(completo, "gerber y marquet no estan en el corte")
+        self.assertEqual(len(del_mundo), 2)
+        self.assertEqual(faltan, [])
+        # y los dos siguen ahi, con sus candidatos, sin haber bloqueado nada
+        pausados = [f for f in filas if f["estado"] == "PAUSADO"]
+        self.assertEqual(sorted(f["clave"] for f in pausados),
+                         ["gerber_emyth", "marquet_turn_the_ship"])
+
+    def test_el_corte_llega_del_fichero_y_no_de_la_prioridad(self):
+        """LA ESPECIE QUE D.60 CURA: `corte_definitivo` estaba escrito desde la
+        manana del 21 sep y **nadie lo leia**. Esto comprueba el cable, no su
+        contenido: que el corte se declare, y que sea el que la funcion usa cuando
+        no se le pasa ninguno."""
+        from src import tablero
+        declarado = tablero.corte_del_mundo()
+        self.assertTrue(declarado, "config/frentes.json no declara corte_definitivo")
+        _completo, del_mundo, _faltan = tablero.mundo_11_completo()
+        self.assertEqual(sorted(f["clave"] for f in del_mundo), sorted(declarado))
 
     # --------------------------------------------- la guarda del arnes lo exige
 

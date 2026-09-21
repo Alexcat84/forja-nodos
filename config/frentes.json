@@ -16,20 +16,16 @@
     "src/tablero.py se detiene si falta."
   ],
   "alcance": {
-    "lineas_a_la_vez": 2,
-    "cita": "decision del fundador del 17 sep 2026, punto 4",
-    "que_dice": "dos lineas y no mas: la principal siempre activa, y UN solo frente de extraccion"
+    "lineas_a_la_vez": 1,
+    "cita": "enmienda del fundador del 21 sep 2026: la insercion se pospone por cuota",
+    "que_dice": "UNA SOLA LINEA esta semana: gerber_emyth extrayendo. La serial queda PARADA con su PROMPT_SIGUIENTE vacio a proposito, porque la insercion de grove_high_output se pospone a la semana siguiente por limite de cuota. El tope estructural sigue siendo dos."
   },
   "frente_activo": {
-    "clave": null,
-    "cita": "decision del fundador del 18 sep 2026, punto 4",
-    "que_dice": "UNA SOLA LINEA a partir de ahora: la serial, con el TABLERO y su prioridad. Ya no hay frente de extraccion activo."
+    "clave": "gerber_emyth",
+    "cita": "decision del fundador del 21 sep 2026, punto 3",
+    "que_dice": "DOS LINEAS otra vez: la serial en INSERCION de grove_high_output, y gerber_emyth como UNICO frente de extraccion, con dueno propio, en su worktree y su rama. Marquet sigue PAUSADO y sin dueno."
   },
   "liberados": {
-    "gerber_emyth": {
-      "cita": "decision del fundador del 17 sep 2026, punto 4",
-      "que_dice": "PAUSADO con dueño NINGUNO y su trabajo parcial declarado. No se lanza, y sera relevado por el principal cuando le toque por el orden"
-    },
     "marquet_turn_the_ship": {
       "cita": "decision del fundador del 17 sep 2026, punto 4",
       "que_dice": "PAUSADO con dueño NINGUNO y su trabajo parcial declarado. No se lanza, y sera relevado por el principal cuando le toque por el orden"
@@ -177,9 +173,9 @@
     }
   },
   "corte_definitivo": {
-    "cita": "decision del fundador del 21 sep 2026, punto 4",
-    "que_dice": "EL MUNDO 11 CIERRA CON CINCO LIBROS: los cuatro insertados (onu_consumidor, smart_who, zhuo_manager, scott_radical_candor) mas grove_high_output entero. gerber_emyth y marquet_turn_the_ship quedan en la bandeja con sus 19 candidatos, enteros y SIN INSERTAR, como material para cuando la aduana trabaje sin campania.",
-    "por_que_no_entran": "D.39: un libro entra cuando su extraccion cierra. Los dos estan abiertos (gerber 4 de 22 capitulos, marquet 3 de 17), asi que sus candidatos NO pueden insertarse sin minar los libros enteros, y eso es lo que esta campania decide no pagar.",
+    "cita": "decision del fundador del 21 sep 2026, punto 4 (D.60)",
+    "que_dice": "EL MUNDO 11 SE DECLARA COMPLETO CUANDO LOS CINCO LIBROS DE 'libros_del_mundo_11' ESTAN INSERTADOS: los cuatro ya dentro mas grove_high_output entero. Una bandeja a medias no retrasa un cierre (D.60).",
+    "por_que_no_entran": "D.39: un libro entra cuando su extraccion cierra. gerber_emyth y marquet_turn_the_ship estan abiertos, asi que sus candidatos no pueden insertarse sin minar los libros enteros. Entran SOLO por la condicion de abajo.",
     "libros_del_mundo_11": [
       "onu_consumidor",
       "smart_who",
@@ -190,6 +186,16 @@
     "en_bandeja_sin_insertar": {
       "gerber_emyth": 10,
       "marquet_turn_the_ship": 9
+    },
+    "sexto_condicional": {
+      "clave": "gerber_emyth",
+      "cita": "decision del fundador del 21 sep 2026, punto 4 (D.60)",
+      "condicion": "Entra como sexto SOLO si cierra su extraccion antes de que la cuota de la semana se agote, y entonces se cosecha e inserta por el relevo D.50. Si no la cierra, queda en bandeja entero y NO bloquea el cierre del mundo."
+    },
+    "septimo_condicional": {
+      "clave": "marquet_turn_the_ship",
+      "cita": "decision del fundador del 21 sep 2026, punto 4 (D.60)",
+      "condicion": "Solo si sobra semana despues de gerber_emyth."
     }
   }
 }

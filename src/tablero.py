@@ -77,7 +77,7 @@ def _git(*argumentos):
 def declaraciones():
     """Lo que `config/frentes.json` declara, comprobando que todo lleve cita."""
     datos = comun.leer_json(RUTA_FRENTES)
-    for nombre in ("alcance", "frente_activo"):
+    for nombre in ("alcance", "frente_activo", "corte_definitivo"):
         if not (datos.get(nombre) or {}).get("cita"):
             raise TableroMalDeclarado(
                 "config/frentes.json: '%s' sin cita. Una declaracion sin cita no se "
@@ -440,16 +440,38 @@ def siguiente_por_prioridad(linea, filas=None):
                       % (linea, relevo["clave"], relevo.get("rama") or "?",
                          relevo.get("candidatos_en_bandeja", 0))), relevo
     return None, ("NINGUN LIBRO DEL ORDEN ESTA LIBRE PARA '%s', y ninguno espera "
-                  "relevo. Si los tres del mundo 11 estan INSERTADOS, lo que toca es "
+                  "relevo. Si los libros del CORTE del mundo 11 estan INSERTADOS "
+                  "(D.60, y el corte lo declara config/frentes.json), lo que toca es "
                   "el CIERRE DEL MUNDO 11 (PARALELO.md): un PARA_ALEXIS de MUNDO 11 "
                   "COMPLETO y parar." % linea), None
 
 
-def mundo_11_completo(filas=None):
-    """Los tres libros del mundo 11, y si los tres estan ya `INSERTADO`."""
+def corte_del_mundo():
+    """Los libros que el fundador declara como corte del mundo (`D.60`)."""
+    declarado = declaraciones().get("corte_definitivo") or {}
+    return list(declarado.get("libros_del_mundo_11") or ())
+
+
+def mundo_11_completo(filas=None, corte=None):
+    """Los libros del CORTE del mundo 11, y si estan todos ya `INSERTADO`.
+
+    EL CORTE LO DECLARA EL FUNDADOR, NO LA PRIORIDAD (`D.60`, 21 sep 2026).
+
+    Hasta hoy esta funcion contaba **los libros CON PRIORIDAD**, y eso metia en el
+    corte a `gerber_emyth` y `marquet_turn_the_ship`, que `D.60` deja fuera y
+    condicionales: **una bandeja a medias no retrasa un cierre.** Con la cuenta
+    vieja, el mundo 11 no podia declararse completo nunca sin minar dos libros
+    enteros que la campania decidio no pagar.
+
+    `corte_definitivo` estaba escrito en `config/frentes.json` desde la manana del
+    21 sep **y nadie lo leia**. Es la misma especie que `D.58`: una regla escrita
+    que no llego al codigo.
+    """
     filas = libros(filas)
-    del_mundo = [f for f in sorted(filas, key=lambda f: f.get("prioridad") or 99)
-                 if f.get("prioridad") and not f.get("fuera_de_campania")]
+    if corte is None:
+        corte = corte_del_mundo()
+    por_clave = {f.get("clave"): f for f in filas}
+    del_mundo = [por_clave[c] for c in corte if c in por_clave]
     faltan = [f for f in del_mundo if f.get("estado") != "INSERTADO"]
     return (not faltan), del_mundo, faltan
 
@@ -494,7 +516,8 @@ def texto(filas=None):
     completo, del_mundo, faltan = mundo_11_completo(filas)
     partes.append("")
     if completo:
-        partes.append("  MUNDO 11 COMPLETO: los tres libros del corte estan INSERTADOS.")
+        partes.append("  MUNDO 11 COMPLETO: los %d libros del corte estan INSERTADOS (D.60)."
+                      % len(del_mundo))
         partes.append("  Lo que toca es el CIERRE (PARALELO.md): PARA_ALEXIS de MUNDO 11")
         partes.append("  COMPLETO con el censo por libro, y parar.")
     else:
