@@ -4655,3 +4655,5 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-21 03:11:27]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
 [2026-09-21 03:11:27] VUELTA 5 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-21 03:11:27] VUELTA 5 : EXTRACTOR (claude-sonnet-5)
+[2026-09-21 03:22:04] extractor: TURNO MUDO, el turno corrio 637s y cobro "2.9380241999999996" pero docs/loop/REPORTE.md quedo identico, intento 1 de 7
+[2026-09-21 03:22:05] fallo "extractor mudo"; espero 1800 segundos y reintento
