@@ -12,7 +12,7 @@ AVISO: DENOMINADOR CONTADO DE LOS JSON DE LA BANDEJA EN ESTA CORRIDA. La clase d
 | `cambiar_forma_trabajar_conservar_plantilla` | `cap_02` | 1 | L25 | **TRANSCRIPCION** |
 | `cambiar_forma_trabajar_conservar_plantilla` | `cap_02` | 2 | L25 | **TRANSCRIPCION** |
 | `cambiar_forma_trabajar_conservar_plantilla` | `cap_02` | 3 | L25 | **TRANSCRIPCION** |
-| `cambiar_forma_trabajar_conservar_plantilla` | `cap_02` | 4 | L29 | **TRANSCRIPCION** |
+| `cambiar_forma_trabajar_conservar_plantilla` | `cap_02` | 4 | L27 mas L29 | **TRANSCRIPCION** |
 | `cambiar_forma_trabajar_conservar_plantilla` | `cap_02` | 5 | L29 | **TRANSCRIPCION** |
 | `encargar_meta_especifica_dejar_libre_metodo` | `cap_02` | 1 | L49 | **TRANSCRIPCION** |
 | `encargar_meta_especifica_dejar_libre_metodo` | `cap_02` | 2 | L49 mas L51 | **TRANSCRIPCION** |

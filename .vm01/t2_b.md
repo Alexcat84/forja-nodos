@@ -23,3 +23,11 @@ reglas delante caen en la puerta, y la de una clave nueva cae mas.*
 >
 > **Y LA CAIDA 3 ES LA QUE VALE MAS**, porque no la encontro ninguna guarda: la aduana le habia dado
 > verde. **La encontro la relectura `D.30`, y por eso esta regla no se puede delegar a la puerta.**
+>
+> **Y DEJO UNA MEDIDA DE REGALO QUE NO IBA BUSCANDO:** el mismo candidato, antes de la reescritura,
+> levantaba **`5`** vecinos; despues levanta **`2`** (los dos informes estan guardados, el de antes
+> en `c6_intento1_puente_retirado.txt` y el de despues en `c6_auditar_formacion_premios_ultima_fila.txt`).
+> **El paso que el libro no decia era ademas el que mas se parecia a los hermanos**, porque estaba
+> escrito en mi prosa y no en la del libro. **No propongo nada con esto: es UNA observacion de UN
+> caso**, y una señal que baja al quitar un paso puede bajar por el simple hecho de que el texto sea
+> mas corto. Lo dejo escrito porque es barato de comprobar y nadie lo habia medido.

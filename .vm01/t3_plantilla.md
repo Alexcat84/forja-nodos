@@ -70,7 +70,11 @@ trabajo que lo dejo en `0`.*
 > PARADA (`D.45`), y esto lo es. **Lo dejo medido y nombrado para el fundador**, con sus ocho casos y
 > su capitulo, que es lo que una propuesta necesita antes de ser propuesta.
 
-## 3.d. LA OTRA ESPECIE QUE LA RELECTURA CAZO, Y NO ES UN PUENTE
+## 3.d. LA OTRA ESPECIE QUE LA RELECTURA CAZO, Y NO ES UN PUENTE: LA **FRONTERA INCOMPLETA**
+
+**Son DOS casos, los dos en `cap_02`, y el segundo NO LO ENCONTRE YO.**
+
+### 3.d.1. El primero, mio: la microgestion que no esta en la linea que el nodo declara
 
 **Releyendo `cap_02` encontre que la glosa del paso `2` de
 `encargar_meta_especifica_dejar_libre_metodo`** (*es lo que separa este encargo de la
@@ -84,9 +88,29 @@ comprobacion, corrida en esta vuelta y guardada en `.vm01/micromanage.txt`:
 | `grep -in "micromanage" fuentes/marquet_turn_the_ship/cap_02.md` | **linea 51**, y solo esa: *Since Mark wasn't going to micromanage me, maybe this was a chance to do something different* |
 | `grep -ilc "micromanage" fuentes/marquet_turn_the_ship/*.md` | **dos unidades del libro** la traen, `cap_02` y `cap_09` |
 
+### 3.d.2. El segundo, del AUDITOR CIEGO, y mi relectura no lo vio
+
+**`cambiar_forma_trabajar_conservar_plantilla`, paso `4`, dice *el mensaje que manda no despedir a
+nadie*. Que no despidiera a nadie NO esta en `L29`, que es la linea que ese nodo declara para el
+paso: esta en `L27`.** Lo encontro la `APERTURA_CIEGA.md` de esta misma vuelta, seccion `9.1`
+punto `2`, y **yo habia dado ese paso por cerrado contra `L29` una hora antes**.
+
+<!-- TALLADO: parcial salida=.vm01/citas_cap02.txt -->
+
+    27: I was thinking that too. In the end, I fired no one.
+    29: This was important because it sent the message to each crew member that he wasn't screwed up, the leadership was. My challenge wou ...
+
+**LO DIGO SIN ADORNARLO: relei las mismas diez lineas de `cap_02` que el auditor, encontre una de
+las dos fronteras corridas y no la otra.** La suya es incluso mas visible que la mia, porque la
+linea que falta esta **pegada** a la declarada. **Corregido en el acto, en cuanto lo lei, con su
+credito escrito dentro del propio candidato.**
+
+### 3.d.3. Por que la especie importa, y es la mitad del valor de los dos casos
+
 | | |
 |---|---|
-| **que NO es** | **un puente.** La palabra es del libro y el numerador de `cap_02` se queda en `0` |
-| **que SI es** | una **FRONTERA INCOMPLETA**: el nodo declaraba `L49` y `L33`, y su paso `2` se apoya ademas en `L51` |
-| **como se arregla** | **declarando la linea**, que es lo que hice: correccion anadida al `resumen_teorico` **sin borrar una palabra de lo anterior**, y el candidato vuelto a pasar por la aduana |
-| **por que importa la diferencia** | un puente se retira; una frontera incompleta se escribe. **Confundirlas retiraria un paso que el libro si dice** |
+| **que NO es** | **un puente.** Las dos lineas son del libro y de la misma unidad, y el numerador de `cap_02` se queda en `0` |
+| **que SI es** | una **FRONTERA INCOMPLETA**: el nodo declara unas lineas y un paso se apoya en otra que no declara |
+| **como se arregla** | **declarando la linea**, que es lo que hice en los dos: correccion anadida al `resumen_teorico` **sin borrar una palabra de lo anterior**, y los dos candidatos vueltos a pasar por la aduana |
+| **por que importa la diferencia** | un puente se **retira**; una frontera incompleta se **escribe**. **Confundirlas retiraria un paso que el libro si dice**, y eso es un dano y no una correccion |
+| **y que la delata** | las dos veces, **un paso que lleva dos afirmaciones y una sola linea citada.** Es una señal barata y no la tenia escrita en ningun sitio |

@@ -8,7 +8,7 @@
  ('cap_02', [
    ('cambiar_forma_trabajar_conservar_plantilla', [
      (1,'L25','TRANSCRIPCION'),(2,'L25','TRANSCRIPCION'),(3,'L25','TRANSCRIPCION'),
-     (4,'L29','TRANSCRIPCION'),(5,'L29','TRANSCRIPCION')]),
+     (4,'L27 mas L29','TRANSCRIPCION'),(5,'L29','TRANSCRIPCION')]),
    ('encargar_meta_especifica_dejar_libre_metodo', [
      (1,'L49','TRANSCRIPCION'),(2,'L49 mas L51','TRANSCRIPCION'),(3,'L49','TRANSCRIPCION'),
      (4,'L49','TRANSCRIPCION'),(5,'L33','TRANSCRIPCION')]),

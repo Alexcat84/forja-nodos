@@ -15,7 +15,7 @@ if hasattr(sys.stdout, "buffer"):
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", newline="\n")
 
 RAZONES = dict(eval(io.open(".vm01/razones.txt", encoding="utf-8").read()))
-ORDEN = eval(io.open(".vm01/orden_tanda.txt", encoding="utf-8").read())
+ORDEN = eval(io.open(os.environ.get('ORDEN_TANDA', '.vm01/orden_tanda.txt'), encoding="utf-8").read())
 
 BLOQUE = re.compile(r"^\[(?:ENTRARIA|BLOQUEARIA|CAERIA)\] (\S+)", re.M)
 VECINO = re.compile(r"^    vecino (\S+)\s+\[levantada por: ([^\]]+)\]\s*\n"

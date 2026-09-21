@@ -42,7 +42,7 @@
   ('SANO, hermanos',
    'los dos leen una rutina con su gente delante, pero una es una reunion y la otra el reparto de la informacion que entra')),
  (('inspeccionar_reparto_informacion_notas_jefe','recorrer_organizacion_escuchar_plantilla'),
-  ('ARISTA C DECLARADA (D.29), y ademas hermanos por senal',
+  ('ARISTA C DECLARADA (D.29)',
    'la linea 45 declara que la rutina del hijo se observa una vez cumplido el procedimiento de la madre. Va marcada DISCUTIBLE en 2.d porque la madre no enumera las rutinas y el libro no dice cuantas')),
  (('inspeccionar_reparto_informacion_notas_jefe','seguir_frustrado_preguntar_implantacion_ideas'),
   ('SANO, hermanos',

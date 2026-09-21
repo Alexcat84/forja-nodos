@@ -10,11 +10,11 @@ import io, json, os, re, sys
 if hasattr(sys.stdout, "buffer"):
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", newline="\n")
 
-ORDEN = eval(io.open(".vm01/orden_tanda.txt", encoding="utf-8").read())
+ORDEN = eval(io.open(os.environ.get('ORDEN_TANDA', '.vm01/orden_tanda.txt'), encoding="utf-8").read())
 print("AVISO: CADA CELDA SALE DE .vm01/aduana/<fichero>.txt, la salida guardada del informe "
       "de ese candidato. El orden es el del libro y lo pone .vm01/orden_tanda.txt.")
 print("")
-print("| # | pieza | id | pasos | veredicto en seco | poblacion | vecinos | intentos |")
+print("| # | pieza | id | pasos | veredicto en seco | poblacion | vecinos | informes CON SALIDA |")
 print("|---:|---|---|---:|---|---:|---:|---:|")
 for numero, pieza, identificador, fichero, intentos in ORDEN:
     texto = io.open(os.path.join(".vm01", "aduana", fichero), encoding="utf-8").read()

@@ -1,0 +1,24 @@
+candidato                                      termino                      en su unidad lineas
+auditar_formacion_premios_ultima_fila          quarters                     SI           [55, 57]
+auditar_formacion_premios_ultima_fila          awards ceremony              SI           [55]
+cambiar_forma_trabajar_conservar_plantilla     turnover                     SI           [15, 25]
+cambiar_forma_trabajar_conservar_plantilla     leadership vacuum            SI           [23]
+ceder_control_reforzar_competencia_claridad    leader-leader                SI           [57, 59, 61, 95, 97]
+ceder_control_reforzar_competencia_claridad    divesting control            SI           [97]
+ceder_control_reforzar_competencia_claridad    technical competence         SI           [89, 97]
+ceder_control_reforzar_competencia_claridad    organizational clarity       SI           [97]
+contar_firmas_cadena_tramite_parado            leave chit                   SI           [37, 39, 43]
+contar_firmas_cadena_tramite_parado            chain of command             SI           [27, 39, 47]
+encargar_meta_especifica_dejar_libre_metodo    specific goal                SI           [49, 67]
+encargar_meta_especifica_dejar_libre_metodo    micromanage                  SI           [51]
+inspeccionar_reparto_informacion_notas_jefe    message board                SI           [45, 49, 55]
+inspeccionar_reparto_informacion_notas_jefe    routing stamp                SI           [45]
+observar_reunion_rutinaria_senales_plantilla   department head meeting      SI           [17]
+observar_reunion_rutinaria_senales_plantilla   lack of punctuality          SI           [19]
+recorrer_organizacion_escuchar_plantilla       walkabout                    SI           [15]
+recorrer_organizacion_escuchar_plantilla       top-down management          SI           [11]
+seguir_frustrado_preguntar_implantacion_ideas  leader-follower              SI           [29, 57]
+seguir_frustrado_preguntar_implantacion_ideas  chain of command             SI           [27, 39, 47]
+
+TERMINOS COMPROBADOS                          : 20
+TERMINOS QUE NO APARECEN EN SU PROPIA UNIDAD  : 0

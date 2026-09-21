@@ -16,7 +16,10 @@ comun.salida_utf8()
 carpeta = sys.argv[1].replace(chr(92), '/').rstrip('/')
 
 UNIDAD = re.compile(r"UNIDAD DE ORIGEN:\s*([^,]+)")
-LINEA = re.compile(r"linea[s]?\s+(\d+)")
+# DOS FORMAS, Y LA SEGUNDA ME FALTABA: los resumenes escriben `linea 29` y tambien
+# `L27`. Con solo la primera, la correccion declarada de esta vuelta (paso 4 de L27
+# mas L29) no salia en la columna, y la columna promete TODAS las lineas citadas.
+LINEA = re.compile(r"(?:linea[s]?\s+|\bL)(\d+)")
 
 total = 0
 filas = []

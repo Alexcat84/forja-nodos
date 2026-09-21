@@ -1,0 +1,17 @@
+$ sed -n '546,556p' docs/loop/APERTURA_CIEGA.md   (la tabla de la seccion 10, RESUMEN DE LO QUE ESTA PAGINA AFIRMA)
+| lo que afirmo | instrumento que lo sostiene |
+|---|---|
+| **la bandeja que clasifico son `9` candidatos**, congelados por huella a las `21:16:13` | `git hash-object`, seccion `2` |
+| **`70` pasos escritos**, `53` de `cap_03` | `.marquet_v1/censo_pasos.py`, seccion `3` |
+| **los `9` son PROCEDIMIENTO**, uno con reserva en su paso 1 | mi lectura contra `sed -n`, secciones `4` y `4.1` |
+| **mi frontera de `cap_03` cierra en `1978` contra `1978`**, cero lineas sin cubrir | `.marquet_v1/mi_frontera_cap03.py`, seccion `5` |
+| **la poblacion del barrido es `354`**, `270` del grafo mas `84` de bandejas | `.marquet_v1/poblacion_barrido.py` y `forja.py informe`, seccion `6` |
+| **ningun par de los `9` es duplicado** | la vara de `6.1`, seccion `7` |
+| **las tres guardas en VERDE a las `21:29:43`, con esta pagina ya escrita**, tras una caida mia cazada por mi | `forja.py gate`, `forja.py guiones`, `scripts/censar_rutas.py`, seccion `8` |
+| **los puentes `D.30` de los `70` pasos** | `POR ADJUDICAR`: **es `LECTURA` mia y no cifra de maquina**, y va escrita en la seccion `9.1` |
+| **el arbol se movio debajo de esta pagina** | `ls`, `git log`, seccion `1` |
+
+$ grep -n "auditar_formacion" .marquet_v1/corte_bandeja.txt   (la huella con que el auditor congelo ESE candidato)
+1:ad14d6c7a92fef3932521e5bae8bcf082d8c61d7  2026-09-16 21:14:50  auditar_formacion_premios_ultima_fila.json
+$ git hash-object cuarentena/marquet_turn_the_ship/auditar_formacion_premios_ultima_fila.json   (la huella de MI version corregida)
+319bc9d6deef958f82c184dad90778f7a4127a54
