@@ -950,6 +950,23 @@ for i in $(seq 1 "$MAX_VUELTAS"); do
     exit 1
   fi
 
+  # LA FILA DEL TABLERO SE PONE AL DIA AL CERRAR EL TURNO, NO SOLO AL ABRIRLO (d102).
+  #
+  # La guarda de arriba mide al ABRIR, que es donde una guarda cuesta menos. Pero la
+  # vuelta escribe candidatos DESPUES de esa medida, asi que la fila envejece dentro
+  # del propio turno y el acta la lee vieja. Medido el 21 sep 2026 en el frente
+  # gerber_emyth (ACTA G3 6.2): la fila publicaba candidatos_en_bandeja 10 y la
+  # bandeja tenia 11.
+  #
+  # NO PARA LA VUELTA SI FALLA, y va con su motivo: el tablero es un espejo del dato,
+  # no una guarda de dato. Un espejo que no se pudo limpiar se dice y se sigue; si
+  # parase aqui, un fallo de espejo costaria el turno que acaba de pagarse.
+  if python forja.py tablero --escribir >/dev/null 2>&1; then
+    log "  tablero puesto al dia al cerrar la vuelta $i (d102)"
+  else
+    log "  AVISO: el tablero no se pudo poner al dia al cerrar la vuelta $i (d102)"
+  fi
+
   git pull --rebase origin "$RAMA" >/dev/null 2>&1 || true
 done
 

@@ -197,5 +197,50 @@
       "cita": "decision del fundador del 21 sep 2026, punto 4 (D.60)",
       "condicion": "Solo si sobra semana despues de gerber_emyth."
     }
+  },
+  "minados_en_cero": {
+    "_lea_esto": "Capitulos LEIDOS Y ADJUDICADOS EN CERO NODOS (d096). No es una medida: es la firma de un acta. Sin esto el tablero los cuenta como pendientes, porque el campo sale de lo que los candidatos citan y un capitulo vacio no deja candidato que cite nada.",
+    "grove_high_output": {
+      "capitulos": [
+        "cap_08",
+        "cap_09",
+        "cap_18"
+      ],
+      "cita": "ACTA 55 seccion 55.3 (cap_08 y cap_09, releidos ENTEROS) y ACTA 59 seccion 59.4 (cap_18, sus 35 citas de nodo una a una)"
+    },
+    "gerber_emyth": {
+      "capitulos": [
+        "cap_05",
+        "cap_06",
+        "cap_09",
+        "cap_10"
+      ],
+      "cita": "ACTA G2 (cap_05 y cap_06) y ACTA G3 (cap_09 y cap_10), frente gerber_emyth, rama extraccion-gerber_emyth"
+    }
+  },
+  "coste_por_turno": {
+    "_lea_esto": "EL PRECIO DEL REGIMEN LIGERO, MEDIDO Y NO PROMETIDO (decision del fundador del 22 sep 2026, punto 2). Sale del loop.log de cada corrida, sumando los USD que el arnes registra por turno. Se publica en el tablero porque es la cifra que decide con que modelo corre la casa, y solo se ve al cerrar una campania.",
+    "grove_high_output, vueltas 56 a 62 de la serial": {
+      "cita": "docs/loop/loop.log desde el arranque de 2026-09-20 17:16:34, y docs/CIERRE_LOTE_7_GROVE.md seccion 5",
+      "modelos": "extractor claude-sonnet-5, auditor claude-opus-5",
+      "regimen": "ligero, fase ciega apagada (D.58)",
+      "turnos": 14,
+      "total_usd": 215.7603,
+      "media_usd": 15.4115,
+      "extractor_usd": 87.7118,
+      "auditor_usd": 128.0485,
+      "nota": "el auditor se llevo mas que el extractor, y lo gasto leyendo los 110 pasos uno a uno en vez de firmar los 93 de la muestra"
+    },
+    "gerber_emyth, vueltas 2 y 3 del frente": {
+      "cita": "docs/loop/loop.log del worktree forja-gerber_emyth desde el arranque de 2026-09-21 07:53:19, y ACTA G2 y ACTA G3",
+      "modelos": "extractor claude-sonnet-5, auditor claude-opus-5",
+      "regimen": "ligero, fase ciega apagada (D.58), vueltas de dos capitulos",
+      "turnos": 4,
+      "total_usd": 37.8592,
+      "media_usd": 9.4648,
+      "extractor_usd": 16.1494,
+      "auditor_usd": 21.7098,
+      "nota": "ESTA ES LA DEL REGIMEN LIGERO DE VERDAD (decision del fundador del 22 sep 2026, punto 2): 9,4648 por turno contra 15,4115. La diferencia esta casi entera en el auditor, que baja de 18,29 por turno a 10,85 cuando la vuelta es corta"
+    }
   }
 }

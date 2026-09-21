@@ -3405,3 +3405,74 @@ candidatos en bandeja.**
 
 **No cambia quien funde.** `AUDITOR_FORJA.md` seccion `3` sigue diciendo que **el bucle no
 funde ramas y el bucle no crea remotos**, y esta regla solo fija **cuando** se pide.
+
+---
+
+## D.61. LO DECLARADO COMO DISCUTIBLE SE HACE O SE CIERRA EN LA MISMA VUELTA (22 sep 2026, decision del fundador)
+
+*Decision del fundador del 22 sep 2026 sobre la parada `G3` del frente `gerber_emyth`.
+**El numero lo asigna esta sesion.** Va con el reinicio de la racha `REPORTE` de esa
+linea y es su condicion.*
+
+### La letra
+
+> **UN DISCUTIBLE PUBLICADO SE EJECUTA O SE CIERRA EN LA MISMA VUELTA QUE LO ESCRIBE.**
+>
+> **Un *ahi nace otro candidato* publicado y no ejecutado es caida de `CIFRA
+> PUBLICADA`, no de `REPORTE`.**
+
+### El ejemplar, y es de los buenos
+
+La vuelta `3` del frente `gerber_emyth` marco su **discutible `1`** sobre `cap_12`,
+**nombro el bloque exacto** (el test de seis semanas del traje azul, `L63`) y **escribio
+la consecuencia con todas las letras**:
+
+    ahi nace otro candidato
+
+**Y publico un candidato del capitulo.** El auditor de la `ACTA G3` leyo los dos bloques
+(`cap_12` `L51`, el saludo nuevo con sus dos ramas; y `cap_12` `L63`, el test del traje
+azul con sus dos etapas y sus ocho prendas), **los adjudico con la vara escrita**
+(`EXTRACTOR.md` `9.1`) **y con un ejemplar de esta misma casa y este mismo libro
+delante**, `unificar_color_forma_vestuario_modelo`, nacido en la vuelta `1` del propio
+frente de un pasaje de la misma forma.
+
+> **NO HUBO QUE MOVER LA VARA. Por eso esto no era parada de doctrina: era trabajo que se
+> anuncio y no se hizo.**
+
+### Por que la especie es `CIFRA PUBLICADA` y no `REPORTE`
+
+**Esta es la parte que la decision cambia, y cambia un precio.**
+
+`REPORTE` cubre lo que el reporte **dice mal**: una seccion que no existe, un *los dos
+discutibles* donde hay tres. **Son erratas de celda, y el sistema las caza solo.** Las dos
+primeras caidas de la racha `G1` a `G3` eran de esa clase.
+
+**La tercera no.** *Publicar que ahi nace un candidato y no hacerlo nacer* no es una celda
+mal tecleada: **es una cifra que el reporte publica sobre el mundo y que el mundo
+desmiente**, exactamente como una media mal dividida (`D.59`). El capitulo da al menos
+`3` y la vuelta publico `1`.
+
+> **Y LA CONSECUENCIA PRACTICA ES LA QUE IMPORTA:** una racha de `REPORTE` que mezcla
+> erratas de celda con trabajo no hecho **llega a su tope por el camino equivocado**, y
+> obliga al fundador a decidir sobre una racha que parece de erratas. El propio auditor
+> de la `G3` lo dijo asi antes de que nadie se lo pidiera: *lo digo asi para que la
+> decision no se tome sobre una racha que parece de erratas.*
+
+`CIFRA PUBLICADA` tiene tope `2` y no `3`, asi que **esta figura muerde antes**, que es lo
+que tiene que hacer.
+
+### Las dos maneras de cumplirla, y las dos valen
+
+1. **SE HACE:** el candidato nace en la misma vuelta, con su ficha y su informe.
+2. **SE CIERRA:** el reporte escribe **por que no nace**, con la linea del libro delante.
+   Un discutible cerrado con motivo **no cae**, igual que un capitulo que da cero no es un
+   hueco cuando esta firmado (`docs/CIERRE_LOTE_7_GROVE.md` `3`).
+
+**LO QUE NO VALE ES DEJARLO ABIERTO**, porque un discutible abierto al cerrar la vuelta
+**es una promesa en una sede que la vuelta siguiente no tiene por que leer.**
+
+### Lo que esta regla no toca
+
+**No mueve ninguna vara de adjudicacion.** `EXTRACTOR.md` `9.1` decide si un pasaje es
+nodo exactamente igual que ayer. Esta regla dice **cuando** hay que decidirlo y **quien
+paga** si no se decide.
