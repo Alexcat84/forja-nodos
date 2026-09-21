@@ -1,0 +1,31 @@
+   grafo: revisar_tres_preguntas_valor_carrera 7 pasos cap_01
+capitulos del libro (ficheros cap_*.md) : 18
+candidatos en la bandeja                : 91
+pasos_accionables en la bandeja         : 636
+insertados en el grafo                  : 1
+pasos en los insertados                 : 7
+TOTAL cosechado del libro               : 92
+TOTAL pasos cosechados del libro        : 643
+POR CAPITULO:
+   cap_01:  7 candidato(s),  59 paso(s)
+   cap_02:  7 candidato(s),  50 paso(s)
+   cap_03: 14 candidato(s), 114 paso(s)
+   cap_04: 21 candidato(s), 145 paso(s)
+   cap_05:  9 candidato(s),  58 paso(s)
+   cap_06:  8 candidato(s),  62 paso(s)
+   cap_07:  9 candidato(s),  53 paso(s)
+   cap_08:  0 candidato(s),   0 paso(s)   <- DIO CERO
+   cap_09:  0 candidato(s),   0 paso(s)   <- DIO CERO
+   cap_10:  1 candidato(s),   8 paso(s)
+   cap_11:  2 candidato(s),  17 paso(s)
+   cap_12:  3 candidato(s),  11 paso(s)
+   cap_13:  1 candidato(s),   6 paso(s)
+   cap_14:  3 candidato(s),  18 paso(s)
+   cap_15:  3 candidato(s),  22 paso(s)
+   cap_16:  1 candidato(s),   4 paso(s)
+   cap_17:  3 candidato(s),  16 paso(s)
+   cap_18:  0 candidato(s),   0 paso(s)   <- DIO CERO
+capitulos CON al menos un candidato: 15
+capitulos que DIERON CERO          : 3 ['cap_08', 'cap_09', 'cap_18']
+suma de control (por capitulo)     : 92 candidatos, 643 pasos
+fichas sin capitulo legible        : 0

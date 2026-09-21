@@ -1,0 +1,7 @@
+ruta del cerrojo : procesos\nodos.jsonl.679b2259.cerrojo
+existe           : True
+dueno declarado  : {'pid': 30764, 'desde': 1789775347.2028258}
+edad en segundos : 211535
+TOPE_DE_HUERFANO : 900.0
+LO TOMO          : si, no bloquea
+fichero restaurado byte a byte: True

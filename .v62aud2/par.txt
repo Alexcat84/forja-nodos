@@ -1,0 +1,27 @@
+==============================================================================
+detectar_arreglar_fallo_etapa_menor_valor | Detectar y arreglar el fallo en la etapa de menor valor posible
+dominio            : produccion
+activacion         : Cuando tienes que decidir en que punto de un flujo poner la comprobacion que caza los problemas.
+entregable         : Las etapas de tu flujo ordenadas por el valor que el material lleva encima en cada una, y la comprobacion puesta en la etapa de menor valor en la que el problema ya se puede ver.
+  paso 1: Ordena las etapas de tu flujo por el valor que el material lleva encima en cada una, contando con que el material se vuelve mas valioso a medida que avanza por el proceso: un huevo cocido vale mas que uno crudo, un desayuno montado vale mas que sus partes, y el desayuno puesto delante del cliente vale mas todavia.
+  paso 2: Cuenta dentro de ese valor el valor percibido que el cliente asocia al establecimiento cuando entra en el aparcamiento y ve el rotulo, que es el que lleva encima la ultima etapa.
+  paso 3: Detecta y arregla cualquier problema del proceso en la etapa de menor valor posible, que es la regla comun que el libro dice que hay que atender siempre.
+  paso 4: Aplicalo al material que entra: encuentra y rechaza el huevo podrido cuando lo esta entregando el proveedor, en vez de permitir que lo encuentre el cliente.
+  paso 5: Aplicalo a la contratacion como el libro la aplica: decide que no quieres a un candidato en la entrevista del campus en vez de en el transcurso de la visita a la planta, y ahorra el coste del viaje y el tiempo del candidato y de los entrevistadores.
+  paso 6: Aplicalo al trabajo de ingenieria como el libro lo aplica: busca el fallo de funcionamiento en la prueba unitaria de las piezas que componen el producto, en vez de en la prueba del producto final.
+origen             : UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_02
+==============================================================================
+supervisar_tarea_delegada_etapa_menor_valor | Supervisar una tarea delegada como se supervisa la calidad: en la etapa de menor valor anadido, con frecuencia variable y entrando en el detalle al azar
+dominio            : gestion_equipos
+activacion         : Cuando ya has delegado una tarea y tienes que decidir en que punto la miras, cada cuanto la miras y hasta que detalle entras, sin convertir el seguimiento en intromision.
+entregable         : El seguimiento de la tarea delegada montado con sus tres decisiones tomadas: la etapa del proceso en la que miras, la frecuencia con la que miras a ese subordinado en esa tarea, y el detalle al azar con el que entras.
+  paso 1: Trata el seguimiento de los resultados de la delegacion como lo que el libro dice que se parece: el seguimiento que se usa en el aseguramiento de la calidad.
+  paso 2: Aplica los principios del aseguramiento de la calidad y supervisa en la etapa del proceso de menor valor anadido.
+  paso 3: Revisa, por ejemplo, los borradores en sucio de los informes que has delegado, y no esperes a que tus subordinados hayan gastado su tiempo en pulirlos hasta su forma final para descubrir entonces que tienes un problema basico con el contenido.
+  paso 4: Emplea un enfoque variable para la frecuencia con la que compruebas el trabajo de tus subordinados, usando esquemas de muestreo distintos con subordinados distintos.
+  paso 5: Sube o baja esa frecuencia segun el subordinado este ejecutando una tarea recien delegada o una con la que ya tiene experiencia.
+  paso 6: No bases cada cuanto supervisas en lo que creas que tu subordinado puede hacer en general, sino en su experiencia con esa tarea concreta y en su desempeno previo con ella, que es su madurez relativa a la tarea.
+  paso 7: A medida que el trabajo del subordinado mejora con el tiempo, responde con una reduccion correspondiente de la intensidad del seguimiento.
+  paso 8: Para aplicar bien los principios del aseguramiento de la calidad, entra en los detalles solo al azar, lo justo para intentar asegurar que el subordinado avanza de forma satisfactoria.
+  paso 9: Cuenta con que entrar en todos los detalles de una tarea delegada seria como probar en aseguramiento de la calidad el cien por cien de lo que fabricacion saco.
+origen             : UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_04
