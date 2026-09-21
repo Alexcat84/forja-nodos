@@ -3893,6 +3893,44 @@ class PruebaTresDefectosDelFrente(BaseForja):
                 self.assertTrue(fila["capitulos_minados"],
                                 "%s perdio su capitulo con la regla nueva" % clave)
 
+    # ------------------------------------------ dos frentes con dueno a la vez
+
+    def test_caso_positivo_dos_frentes_activos_tienen_dueno_los_dos(self):
+        """**UN FRENTE CORRIENDO CON SU LIBRO MARCADO COMO LIBRE ES LA COLISION QUE
+        `D.49` EXISTE PARA IMPEDIR.**
+
+        `frente_activo.clave` era UNA sola clave. El `22` sep 2026 el fundador abrio
+        `marquet_turn_the_ship` con `gerber_emyth` todavia corriendo su ultima
+        vuelta, y con una sola clave **el segundo salia `PAUSADO` con dueno
+        `NINGUNO`**, que es justo lo que `D.49` lee como *este libro esta libre*.
+        """
+        from src import tablero
+        self.assertEqual(
+            tablero.frentes_activos({"frente_activo": {"clave": ["a", "b"]}}),
+            ("a", "b"))
+
+    def test_caso_negativo_una_sola_clave_sigue_valiendo(self):
+        """El fichero vivio con una cadena desde el `17` sep. Si el arreglo la
+        rompiera, el frente que si tenia dueno lo perderia."""
+        from src import tablero
+        self.assertEqual(
+            tablero.frentes_activos({"frente_activo": {"clave": "solo_uno"}}),
+            ("solo_uno",))
+        self.assertEqual(
+            tablero.frentes_activos({"frente_activo": {"clave": None}}), ())
+        self.assertEqual(tablero.frentes_activos({}), ())
+
+    def test_cada_frente_activo_es_dueno_de_SU_libro_y_de_ninguno_mas(self):
+        """Sobre el arbol vivo: ningun libro lleva de dueno a otro."""
+        from src import tablero
+        activos = tablero.frentes_activos()
+        for fila in tablero.libros():
+            dueno = fila.get("dueno")
+            if dueno and dueno != tablero.NINGUNO and dueno != tablero.LINEA_SERIAL:
+                self.assertEqual(dueno, fila["clave"],
+                                 "%s lo trabaja %s" % (fila["clave"], dueno))
+                self.assertIn(fila["clave"], activos)
+
     # ------------------------------------------------------------------ d102
 
     def test_caso_positivo_d102_el_arnes_pone_al_dia_el_tablero_al_cerrar(self):

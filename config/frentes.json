@@ -16,21 +16,19 @@
     "src/tablero.py se detiene si falta."
   ],
   "alcance": {
-    "lineas_a_la_vez": 1,
-    "cita": "enmienda del fundador del 21 sep 2026: la insercion se pospone por cuota",
-    "que_dice": "UNA SOLA LINEA esta semana: gerber_emyth extrayendo. La serial queda PARADA con su PROMPT_SIGUIENTE vacio a proposito, porque la insercion de grove_high_output se pospone a la semana siguiente por limite de cuota. El tope estructural sigue siendo dos."
+    "lineas_a_la_vez": 2,
+    "cita": "decision del fundador del 22 sep 2026, GERBER ENTRA MARQUET SIGUE, punto 3",
+    "que_dice": "DOS LINEAS: los frentes de extraccion gerber_emyth y marquet_turn_the_ship. La serial sigue PARADA hasta la insercion de la semana que viene, asi que las dos que corren son frentes y ninguno inserta."
   },
   "frente_activo": {
-    "clave": "gerber_emyth",
-    "cita": "decision del fundador del 21 sep 2026, punto 3",
-    "que_dice": "DOS LINEAS otra vez: la serial en INSERCION de grove_high_output, y gerber_emyth como UNICO frente de extraccion, con dueno propio, en su worktree y su rama. Marquet sigue PAUSADO y sin dueno."
+    "clave": [
+      "gerber_emyth",
+      "marquet_turn_the_ship"
+    ],
+    "cita": "decision del fundador del 22 sep 2026, GERBER ENTRA MARQUET SIGUE, punto 3",
+    "que_dice": "gerber_emyth corre su ULTIMA vuelta (cap_01 a cap_03) y despues se cosecha como sexto libro del mundo 11. marquet_turn_the_ship abre desde cap_04 con su frontera heredada, y entra como septimo SOLO si la cuota de la semana lo cierra (D.60). Los dos en cuarentena, Sonnet extractor y Opus auditor."
   },
-  "liberados": {
-    "marquet_turn_the_ship": {
-      "cita": "decision del fundador del 17 sep 2026, punto 4",
-      "que_dice": "PAUSADO con dueño NINGUNO y su trabajo parcial declarado. No se lanza, y sera relevado por el principal cuando le toque por el orden"
-    }
-  },
+  "liberados": {},
   "cerrados_en_extraccion": {
     "smart_who": {
       "cita": "ACTA 8 seccion 10"

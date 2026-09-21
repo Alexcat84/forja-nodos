@@ -213,10 +213,32 @@ def _nodos_en_grafo(clave, nodos):
     return cuenta
 
 
+def frentes_activos(declarado=None):
+    """Los libros que tienen dueno ahora mismo, como tupla.
+
+    `frente_activo.clave` admite **una clave o una lista de claves** (22 sep 2026).
+    Hasta hoy era una sola, y con una sola el tablero **no podia dar dueno a dos
+    frentes a la vez**: el segundo salia `PAUSADO` con dueno `NINGUNO`, que es lo
+    que `D.49` usa para decir *este libro esta libre*. **Un frente corriendo con su
+    libro marcado como libre es exactamente la colision que `D.49` existe para
+    impedir.**
+
+    `null` es ninguno, y es como estuvo el fichero mientras solo corrio la serial.
+    """
+    if declarado is None:
+        declarado = declaraciones()
+    clave = (declarado.get("frente_activo") or {}).get("clave")
+    if not clave:
+        return ()
+    if isinstance(clave, str):
+        return (clave,)
+    return tuple(clave)
+
+
 def medir():
     """UNA FILA POR LIBRO, con la verdad de este instante."""
     declarado = declaraciones()
-    activo = (declarado.get("frente_activo") or {}).get("clave")
+    activos = frentes_activos(declarado)
     liberados = declarado.get("liberados") or {}
     cerrados = declarado.get("cerrados_en_extraccion") or {}
     cosechados = declarado.get("cosechados") or {}
@@ -276,8 +298,8 @@ def medir():
             estado, dueno = "COSECHADO", NINGUNO
             de = "declarado: %s" % cosechados[clave]["cita"]
         elif rama and propios and clave not in liberados:
-            estado = "EN CURSO" if clave == activo else "PAUSADO"
-            dueno = clave if clave == activo else NINGUNO
+            estado = "EN CURSO" if clave in activos else "PAUSADO"
+            dueno = clave if clave in activos else NINGUNO
             de = "declarado: %s" % (declarado["frente_activo"]["cita"])
         elif rama and propios and clave in liberados:
             estado, dueno = "PAUSADO", NINGUNO
