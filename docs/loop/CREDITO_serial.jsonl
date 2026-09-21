@@ -258,3 +258,8 @@
 {"cae": false, "cita": "ACTA 55 seccion 55.1", "especie": "CIFRA PUBLICADA", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 55", "tipo": "tanda", "vuelta": 56}
 {"cae": false, "cita": "ACTA 55 seccion 55.1", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 55", "tipo": "tanda", "vuelta": 56}
 {"cae": false, "cita": "ACTA 55 seccion 55.8", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 55", "tipo": "tanda", "vuelta": 56}
+{"cae": true, "cita": "ACTA 56 56.6", "especie": "REPORTE", "linea": "serial", "racha": "2 de 3", "tanda": "ACTA 56", "tipo": "tanda", "vuelta": 57}
+{"cae": false, "cita": "ACTA 56 56.8", "especie": "CIFRA PUBLICADA", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 56", "tipo": "tanda", "vuelta": 57}
+{"cae": false, "cita": "ACTA 56 56.8", "especie": "CLASE", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 56", "tipo": "tanda", "vuelta": 57}
+{"cae": false, "cita": "ACTA 56 56.8", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 56", "tipo": "tanda", "vuelta": 57}
+{"cae": false, "cita": "ACTA 56 56.10", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 56", "tipo": "tanda", "vuelta": 57}

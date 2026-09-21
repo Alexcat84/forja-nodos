@@ -40619,3 +40619,883 @@ por su cuenta desde el commit `e5b7b9d`:
 |---:|---|---|
 | **1** | **CUANDO ADJUDIQUE QUE UNA CITA DEL EXTRACTOR ES LA EQUIVOCADA, ESCRIBO LA MIA CON SU TEXTO PEGADO Y DIGO EN UNA LINEA SI EL VEREDICTO SE MUEVE O NO.** Esta acta lo hizo en `55.3.b` (restriccion `2` en vez de la `1`, veredicto intacto), y eso es lo que la vuelve verificable: **cambiar la cita en silencio es reescribir la doctrina sin correccion declarada**, que es lo que `6.3` prohibe | que cada discrepancia de cita de mi acta lleve **el texto de la regla que invoco** y **una linea que diga si el veredicto se mueve** |
 | **2** | **NO SUBO NI BAJO TRAMO SOBRE UNA BASE DE MENOS DE `15` PASOS.** El `0,0` por ciento de esta vuelta sale de `8` pasos de `1` candidato, y `8.1` no distingue bases. **La proxima tentacion sera usar un cero barato para subir volumen**, y `8.4` avisa de la contraria pero no de esta | que la fila de `PASOS INVENTADOS` de mi acta siguiente lleve **su denominador al lado** y una linea que diga si la base basta para mover el tramo |
+
+# ACTA 56. VUELTA 57, lote 7 (`grove_high_output`), `cap_11`, `cap_12` y `cap_13`, **CLASE EXTRACCION EN REGIMEN LIGERO**: **LA COSECHA ES BUENA Y SE LA FIRMO ENTERA; LO QUE SE CAE ES LO QUE DICE HABER HECHO CON ELLA, Y LA CIFRA QUE EL ENCARGO DEJO ABIERTA LA CIERRO YO Y CIERRA AL REVES**. Le recompongo **las `117` filas de las tres fronteras** contra el fichero y me salen las tres al digito (`2662`, `4105` y `2510` palabras, `0` lineas sin cubrir y `0` solapes en las tres, `7` nodos), le cotejo la muestra con su semilla `v57` y me sale **identica linea a linea**, y **le leo yo los `42` pasos, no los `40`**: los dos que su muestra dejo SIN MUESTREAR los releo contra la linea entera de `L63` y los dos son TRANSCRIPCION, asi que **firmo `0` PUENTE sobre `42` de `42`** y no sobre `40`. **De sus OCHO discutibles marcados se sostienen los OCHO**, y el `6`, que el propio reporte llama el segundo mas serio, **lo adjudico citando la regla escrita que ya lo cubre** (`EXTRACTOR.md` `9.1`, fila *un procedimiento que el libro nombra en una tabla y desarrolla en otro sitio*): **no es doctrina nueva y no abre parada**. **Y LA CAIDA ES DE PROCESO Y CAE FUERA DEL MARCADO:** su `XX.3` escribe *cada uno de los siete se escribio, se paso por informe... EN EL MISMO ACTO, antes de escribir el siguiente candidato*, y **su tabla de cierre `D.52` lo repite en una celda**; pero **los siete informes que pega declaran los siete la MISMA poblacion, `430`, que es `346` del grafo mas `84` de bandejas con los siete candidatos de hoy YA DENTRO**, y su candidato `3` bloquea contra los candidatos `5` y `7`, que bajo el orden que dice haber seguido **todavia no existirian**. **Sus fichas dicen la verdad** (*en una corrida posterior*) **y su reporte dice lo contrario**: vive en TABLA, asi que **`REPORTE` sube de `1 de 3` a `2 de 3`**. Sus otras dos caidas son **de PROSA y NO acumulan**: *Siete* discutibles donde enumera OCHO (y su propio commit dice ocho), y el bloque de `XX.4` pegado bajo `$ python scripts/muestra_fidelidad.py` **no es la salida de ese comando sino un resumen tecleado de ella**. `CLASE`, `CIFRA PUBLICADA` y `DATO MOVIDO` salen **LIMPIAS** con el `git diff` vacio delante. **Y LA CIFRA `4`, LA QUE EL EXTRACTOR NO PODIA MEDIR, LA CIERRO YO Y CIERRA CONTRA SONNET**: su turno costo **`25,4153` USD en `6987` s**, que es **`1,02` veces** el turno de Opus de la vuelta `55` (`24,8943` USD en `6724` s) y **`3,09` veces** el suyo propio de la `56`. **El umbral escrito del fundador pedia que el turno BAJASE A LA MITAD y no bajo**, asi que **se aplica su propia rama de salida: Grove se termina con Opus y se acepta el precio.** No es parada: `D.56` y el punto `2` de la decision del 21 sep mandan **declarar con el desglose**, y el desglose esta. **MI PROPIA TANDA SALE LIMPIA** y `AUDITOR` se queda en `0 de 3`. **Ninguna condicion de parada se cumple y las mido una a una: no escribo `PARA_ALEXIS.md`**, y el encargo de la vuelta `58` sale de esta sede, con `cap_14`, `cap_15` y `cap_16` y con la aduana en el acto como su primera tarea.
+
+## 56.0. **HUECO DE ACTA Y HERENCIA** (`1.0`, `D.40`)
+
+**NO HAY HUECO.** La `ACTA 55` cubre la vuelta `56` y yo cubro la `57`, la inmediatamente
+siguiente. Lo mismo registra el arnes por su cuenta:
+
+    $ tail -6 docs/loop/loop.log
+    [2026-09-20 18:48:35] VUELTA 2 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+    [2026-09-20 18:48:35] VUELTA 2 : EXTRACTOR (claude-sonnet-5)
+    [2026-09-20 20:45:02] extractor listo (USD 25.415322899999982), 6987s, intento 1 de 7
+    [2026-09-20 20:45:03] VUELTA 2 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
+    [2026-09-20 20:45:03] VUELTA 2 : AUDITOR (claude-opus-5)
+
+**ACTA ANTERIOR LEIDA: `ACTA 55`, seccion `55.0`, con su `HEREDADO 1: CUMPLIDO` dentro.**
+
+**HEREDADO 1: NO APLICA, y el motivo va escrito debajo con su salida pegada** (`D.40`
+ensanchada del 16 sep). La `ACTA 55` cerro **sin dejarse a si misma ningun remedio pendiente**:
+su `AUDITOR` bajo de `2 de 3` a `0 de 3` por tanda limpia y declaro CUMPLIDO el remedio que
+traia de la `54`. **No heredo remedio ninguno.** La salida que lo sostiene:
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+      tandas: 55, en 255 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA 55
+      CIFRA PUBLICADA    0 de 2     ACTA 55
+      CLASE              0 de 2     ACTA 55
+      DATO MOVIDO        0 de 2     ACTA 55
+      REPORTE            1 de 3     ACTA 55
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**ESTA VUELTA NO TIENE PAGINA SELLADA NI FASE CIEGA** (`D.58`: en `cuarentena` no hay cifra
+sobre el grafo que proteger), **y el arnes lo dice en la linea pegada arriba**. **La relectura
+ciega que `1.2` si manda sigue corriendo entera y empieza por los discutibles marcados**: esta
+en `56.4`.
+
+## 56.1. **LO QUE VERIFICO AL DIGITO, CON MIS PROPIOS COMANDOS**
+
+| guarda o cifra | lo que corri yo | me sale | lo que el reporte dice | |
+|---|---|---|---|---|
+| `gate` | `python forja.py gate` | `GATE VERDE`, `346` nodos, `13` guardas | `GATE VERDE`, `346` | **IGUAL** |
+| `guiones` | `python forja.py guiones` | `VERDE`, cero largos y cero medios | idem | **IGUAL** |
+| `resolutor` | `python forja.py resolutor` | vivos `346`, deprecados `0`, alias `0` | no lo declara | **sin contradecir** |
+| aceptacion | `python tests/test_aceptacion.py` | `339` pruebas, `0` fallos, `0` errores | `339`, `0`, `0` | **IGUAL** |
+| dataset | `wc -l dataset/nodos.jsonl` | `346` | `346` | **IGUAL** |
+| veredictos | `wc -l bitacora/VEREDICTOS.jsonl` | `740` | `740` | **IGUAL** |
+| pares mutuos | `wc -l config/pares_mutuos.jsonl` | `1` | no lo declara | **sin contradecir** |
+| bandeja | `ls cuarentena/grove_high_output` contado | `81` | `81` | **IGUAL** |
+| candidatos nuevos | `git show --name-status b5f23b1 -- cuarentena/` | `7`, los siete con `A` | `7` | **IGUAL** |
+| pasos de la tanda | `.v58aud/pasos_42.py`, ficha a ficha | `cap_11` `17`, `cap_12` `11`, `cap_13` `14`, total `42` | `17`, `11`, `14`, `42` | **IGUAL** |
+| sello de la tabla `v56` | `git show 9ebed73:docs/loop/TABLA_DE_CIERRE.txt` contra `git hash-object` de la copia | `d9a3ad1e547b0f042f973e067a3e322dc989e9ae` los dos | `d9a3ad1e547b0f042f973e067a3e322dc989e9ae` | **IGUAL** |
+| deuda | `python scripts/deuda.py` | `17` pendientes, `27` pagadas, saneamiento `54` | `17` y `27` | **IGUAL** |
+| credito | `python forja.py credito` | `REPORTE 1 de 3`, las otras cuatro en `0` | idem | **IGUAL** |
+| tablero | `python forja.py tablero` | `grove_high_output` COSECHADO, `band 81`, `ult cap cap_13` | idem | **IGUAL** |
+| cadencia | `python scripts/deuda.py --clase 58` y `--clase 59` | `58` LIBRE, `59` SANEAMIENTO | el encargo decia `59` | **IGUAL** |
+
+**Y LAS SEDES DE DATO SIN MOVER, que es la medida que sostiene tres de las cuatro limpias:**
+
+    $ git diff --stat 9ebed73 b5f23b1 -- dataset/ bitacora/ censos/ config/ esquema/ src/ scripts/ tests/ hooks/ docs/BANCO_DE_REGLAS.md
+    (vacio)
+
+**LO QUE LA VUELTA 57 TOCO, ENTERO**: su propio `.v57ext/`, los `7` JSON nuevos de
+`cuarentena/grove_high_output/`, `docs/loop/REPORTE.md`, `docs/loop/TABLA_DE_CIERRE.txt`,
+`docs/loop/TABLERO.jsonl` y la copia archivada
+`docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v56.txt`. **Ni una celda del grafo, ni un
+veredicto, ni una linea de guarda.**
+
+### 56.1.a. **LAS TRES FRONTERAS, RECOMPUESTAS FILA A FILA POR MI Y NO LEIDAS DE SU TABLA**
+
+*Instrumento propio, corrido hoy: `.v58aud/frontera_propia.py`. **No importa nada de
+`.v57ext/`**: lee las filas de la tabla QUE EL REPORTE PUBLICA y recompone cada cifra contra
+`fuentes/grove_high_output/cap_NN.md` con su propio recuento.*
+
+    $ python .v58aud/frontera_propia.py
+
+    --- cap_11
+      cabecera acaba en la linea            : 7
+      filas de la tabla del reporte         : 36
+      lineas con contenido tras la cabecera : 38
+      lineas NO cubiertas                   : 0  []
+      SOLAPES                               : 0  []
+      suma de las filas (contada por mi)    : 2662 palabras
+      cuerpo medido aparte                  : 2662 palabras
+      CARACTERES DE CUERPO                  : 15495
+      fichero entero                        : 2688 palabras
+      IGUALES                               : True
+      nodos que la tabla declara            : 2
+      FILAS CUYA CIFRA DE PALABRAS NO ME SALE: 0  []
+      fila TOTAL del reporte                : (2662, 2)   (mia: 2662, 2)
+
+    --- cap_12
+      cabecera acaba en la linea            : 7
+      filas de la tabla del reporte         : 55
+      lineas con contenido tras la cabecera : 55
+      lineas NO cubiertas                   : 0  []
+      SOLAPES                               : 0  []
+      suma de las filas (contada por mi)    : 4105 palabras
+      cuerpo medido aparte                  : 4105 palabras
+      CARACTERES DE CUERPO                  : 24227
+      fichero entero                        : 4131 palabras
+      IGUALES                               : True
+      nodos que la tabla declara            : 3
+      FILAS CUYA CIFRA DE PALABRAS NO ME SALE: 0  []
+      fila TOTAL del reporte                : (4105, 3)   (mia: 4105, 3)
+
+    --- cap_13
+      cabecera acaba en la linea            : 7
+      filas de la tabla del reporte         : 26
+      lineas con contenido tras la cabecera : 35
+      lineas NO cubiertas                   : 0  []
+      SOLAPES                               : 0  []
+      suma de las filas (contada por mi)    : 2510 palabras
+      cuerpo medido aparte                  : 2510 palabras
+      CARACTERES DE CUERPO                  : 15494
+      fichero entero                        : 2535 palabras
+      IGUALES                               : True
+      nodos que la tabla declara            : 2
+      FILAS CUYA CIFRA DE PALABRAS NO ME SALE: 0  []
+      fila TOTAL del reporte                : (2510, 2)   (mia: 2510, 2)
+
+    NODOS DE LAS TRES UNIDADES, CONTADOS POR MI: 7
+
+**LAS `117` FILAS ME SALEN LAS `117`**, cada una con su recuento de palabras, y las tres
+unidades cierran contra su propio cuerpo. **Que `cap_13` traiga `26` filas para `35` lineas con
+contenido es correcto y no un hueco**: su fila `L31 a L47` cubre nueve lineas de golpe porque
+ahi esta la tabla del libro, y mi barrido de lineas no cubiertas sale en `0`.
+
+**LECTURA** (marcada aparte, `D.38.3` ensanchada del 16 sep): **lo que acabo de medir es el
+reparto de lineas, no el juicio de cada tramo.** Que un tramo sea CASO, DEFINICION o
+inventario es lectura del extractor y la contrasto por separado, en `56.4`.
+
+### 56.1.b. **LA MUESTRA, COTEJADA CON SU SEMILLA `v57` ANTES DE NADA** (`D.58`)
+
+    $ python scripts/muestra_fidelidad.py --libro grove_high_output --capitulos cap_11,cap_12,cap_13 --semilla v57 > .v58aud/muestra_v57.txt
+    $ diff .v58aud/muestra_v57.txt .v57ext/muestra.txt
+    IDENTICO, linea a linea
+
+**El reparto que el instrumento hace con `v57` es exactamente el que el reporte declara**:
+`cap_13` ENTERO (`14` pasos) y `cap_11` y `cap_12` por muestra (`15` y `11` pasos). **Eso no es
+caida de cifra, y lo digo con el `diff` delante.** **Lo que si es una caida, y de otra especie,
+es que el bloque que el reporte pega debajo de ese comando NO es su salida**: va en `56.6`.
+
+## 56.2. **`PASOS INVENTADOS POR CAPITULO`: LA FIRMO, Y LA FIRMO SOBRE `42` Y NO SOBRE `40`** (`8`, `8.3`)
+
+**No copio su tabla: le cuento yo los pasos ficha a ficha**, y el capitulo lo leo de la propia
+`UNIDAD DE ORIGEN` que cada `resumen_teorico` declara, no de su tabla.
+
+    $ python .v58aud/pasos_42.py
+    ficha                                                    pasos  capitulo
+    ------------------------------------------------------------------------------
+    elegir_modo_control_motivacion_factor_cua                  8  cap_11
+    escalonar_complejidad_puesto_empleado_nuevo                9  cap_11
+    diagnosticar_capacidad_motivacion_prueba_vida              4  cap_12
+    fijar_meta_direccion_objetivos_mitad_probabilidad          4  cap_12
+    diagnosticar_nivel_motivacion_reaccion_aumento_salario     3  cap_12
+    elegir_estilo_direccion_madurez_relevante_tarea            8  cap_13
+    decidir_amistad_subordinado_prueba_revision_dificil        6  cap_13
+
+    PASOS POR CAPITULO, contados por mi:
+      cap_11      17
+      cap_12      11
+      cap_13      14
+      TOTAL       42
+
+**Y DESPUES DE CONTARLOS, LOS LEO.** Los `42`, contra el parrafo que cada uno dice tener
+detras, con la linea del libro abierta y no con el tercio que el reporte cita:
+
+    $ sed -n '57p;59p;61p;63p' fuentes/grove_high_output/cap_11.md
+    $ sed -n '17p;75p;85p' fuentes/grove_high_output/cap_12.md
+    $ sed -n '19p;23p;25p;27p;31,47p;75p;77p' fuentes/grove_high_output/cap_13.md
+
+| capitulo | pasos que leo yo | PUENTE que encuentro | por ciento inventado | el disparador del `10` por ciento |
+|---|---:|---:|---:|---|
+| `cap_11` | **`17` de `17`** (su muestra fue `15`) | `0` | **`0,0`** | no se activa |
+| `cap_12` | **`11` de `11`** | `0` | **`0,0`** | no se activa |
+| `cap_13` | **`14` de `14`** | `0` | **`0,0`** | no se activa |
+| **total** | **`42` de `42`** | **`0`** | **`0,0`** | **no se activa en ninguna fila** |
+
+**LOS DOS PASOS QUE SU MUESTRA DEJO FUERA LOS LEO YO, Y POR ESO FIRMO `42` Y NO `40`.** El
+reporte los declara SIN MUESTREAR y no APROBADOS, que es la letra correcta de `D.59`; lo que
+hago es cubrirlos:
+
+    $ python .v58aud/dos_pasos_sin_muestrear.py
+
+    $ sed -n '63p' fuentes/grove_high_output/cap_11.md   (la linea ENTERA, no un tercio)
+
+    Let's apply our model to the work of a new employee. What is his motivation? It is very
+    much based on self-interest. [...] The employee can then be promoted into a more complex,
+    uncertain, ambiguous job. (These tend to pay more.) [...] This is why promotion from
+    within tends to be the approach favored by corporations with strong corporate cultures.
+    [...]
+
+    guiones largos o medios sustituidos por el corto: 0
+
+    P4  'Promuevelo despues a un puesto mas complejo, incierto y ambiguo, que ademas suele pagar mas.'
+        esta en la linea: SI      y el parentesis del sueldo: SI
+    P6  'Reconoce que esta es la razon por la que la promocion interna es el enfoque que
+         favorecen las empresas con culturas corporativas fuertes.'
+        esta en la linea: SI
+
+    VEREDICTO DE LOS DOS: TRANSCRIPCION. PUENTE: 0.
+
+**EL INSTRUMENTO IMPRIME LA LINEA ENTERA Y CUENTA SUS PROPIAS SUSTITUCIONES DE GUION**, que
+hoy son `0`: la linea `L63` de `cap_11` no trae ni un guion largo ni uno medio. **Eso lo digo
+aqui para que nadie use mis citas como prueba de transcripcion byte a byte sin saber que hay
+un filtro en medio**, aunque hoy no haya cambiado nada.
+
+**LO QUE ESTA CIFRA DECIDE, Y ES LA MITAD DE `8.1`:** `0,0` por ciento en las tres filas esta
+por debajo del tope de `10`, asi que **por volumen el tramo podria subir un escalon**. **No lo
+subo**, y el motivo es el mismo que la `ACTA 55` escribio y que sigue en pie: una base de `42`
+pasos con `0` PUENTE es buena, pero **el tramo ya esta en los TRES capitulos que `D.58` fija
+como techo del regimen ligero**, y ese techo no lo mueve una cifra de volumen. **Tres
+capitulos otra vez.**
+
+**Y LA METRICA NO CASTIGA A NADIE** (`8.4`): `0` PUENTE de `42` no es merito de la maquina, es
+que el extractor transcribio y no completo. **Un extractor que declara puentes propios trabaja
+mejor que uno que declara cero**, y lo que mido aqui es que no hubo ninguno que declarar.
+
+## 56.3. **LOS SIETE CANDIDATOS, Y LO QUE MIDO DE CADA UNO**
+
+| # | candidato | cap | pasos | saldo que su informe declara | lo que yo compruebo |
+|---:|---|---|---:|---|---|
+| 1 | `elegir_modo_control_motivacion_factor_cua` | `cap_11` | `8` | ENTRARIA | `8` de `8` TRANSCRIPCION contra `L57`, `L59` y `L61` |
+| 2 | `escalonar_complejidad_puesto_empleado_nuevo` | `cap_11` | `9` | ENTRARIA | `9` de `9` TRANSCRIPCION contra `L63`, **incluidos los dos que su muestra no toco** |
+| 3 | `diagnosticar_capacidad_motivacion_prueba_vida` | `cap_12` | `4` | BLOQUEARIA, `2` vecinos | `4` de `4` TRANSCRIPCION contra `L17`; vecindad adjudicada en `56.5` |
+| 4 | `fijar_meta_direccion_objetivos_mitad_probabilidad` | `cap_12` | `4` | BLOQUEARIA, `1` vecino | `4` de `4` TRANSCRIPCION contra `L75`; vecindad adjudicada en `56.5` |
+| 5 | `diagnosticar_nivel_motivacion_reaccion_aumento_salario` | `cap_12` | `3` | BLOQUEARIA, `1` vecino | `3` de `3` TRANSCRIPCION contra `L85`; vecindad adjudicada en `56.5` |
+| 6 | `elegir_estilo_direccion_madurez_relevante_tarea` | `cap_13` | `8` | ENTRARIA | `8` de `8` TRANSCRIPCION contra `L19`, `L23`, `L25`, `L27` y la tabla de `L31` a `L47` |
+| 7 | `decidir_amistad_subordinado_prueba_revision_dificil` | `cap_13` | `6` | BLOQUEARIA, `1` vecino | `6` de `6` TRANSCRIPCION contra `L75` y `L77`; vecindad adjudicada en `56.5` |
+
+**`0 CAERIAN` en los siete informes**, y eso lo leo yo de los siete ficheros que el reporte
+cita, que existen los siete y ninguno esta en cero bytes (cosecha `7.B`):
+
+    $ ls -la .v57ext/informe_*.txt | awk '{print $5, $9}'
+    1576 .v57ext/informe_amistad.txt
+    1850 .v57ext/informe_diagnosticar_capacidad.txt
+    1582 .v57ext/informe_diagnosticar_salario.txt
+    1103 .v57ext/informe_elegir_estilo.txt
+    1091 .v57ext/informe_elegir_modo_control.txt
+    1095 .v57ext/informe_escalonar_complejidad.txt
+    1574 .v57ext/informe_fijar_meta.txt
+
+## 56.4. **LA RELECTURA CIEGA: LOS OCHO DISCUTIBLES MARCADOS, Y SE SOSTIENEN LOS OCHO** (`1.2`, `5.1`)
+
+**Empiezo por ellos, que es lo que `5.1` manda**, y los leo contra el parrafo del libro y no
+contra el argumento del extractor.
+
+### 56.4.1. `CUA` en `denominaciones.sigla`: **SE SOSTIENE**
+
+    $ sed -n '57p' fuentes/grove_high_output/cap_11.md
+    ... An imaginary composite index can be applied to measure an environment's complexity,
+    uncertainty, and ambiguity, which we'll call the CUA factor. ...
+
+**La sigla la acuña el libro en esa misma linea** (*which we'll call the CUA factor*), y la
+reusa en `L61` y `L63`. **No es una sigla que el extractor inventara**, que es lo unico que el
+campo prohibe. Sostiene.
+
+### 56.4.2. `escalonar_complejidad_puesto_empleado_nuevo` como nodo propio: **SE SOSTIENE**
+
+*Es el que el propio reporte llama el mas serio de los siete.* **Lo adjudico con la vara madre
+(`6.1`) y leyendo los pasos, no la señal** (`D.19`: ninguna señal separa jerarquia de ruido,
+asi que una discrepancia nunca se adjudica citando una señal).
+
+| la vara | lo que mido |
+|---|---|
+| **TIENE DIRECCION**: que añade el HIJO a la MADRE | la madre (`elegir_modo_control...`) da un cuadro de cuatro cuadrantes para elegir **el modo de control de una conducta en curso**. El hijo da **un escalonamiento en el tiempo para alguien que acaba de entrar**: puesto estructurado de CUA bajo, promocion, experiencia compartida, tareas mas ambiguas |
+| **NO TIENE BASCULA**: lo que decide es si lo que queda fuera es procedimiento en los dos lados | lo que queda fuera es procedimiento en los dos lados: el cuadrante de caos (`P8` de la madre) no esta en el hijo, y la promocion interna como politica (`P6`, `P7` del hijo) no esta en la madre |
+| **condicion de activacion** | *decidir con que modo controlar una conducta* contra *incorporar a un empleado nuevo*. Distintas |
+
+**CONTINUA, no REPITE.** Y lo que el libro escribe en `L63` es imperativo generalizado (*Bring
+young people in at relatively low-level, well-defined jobs*), no la narracion de un caso con
+nombre. **Sostiene.**
+
+### 56.4.3. `diagnosticar_capacidad...` vive en un capitulo titulado *The Sports Analogy*: **SE SOSTIENE**
+
+`EXTRACTOR.md` `10` y la frontera de la propia vuelta: **la unidad de origen es el fichero**,
+`fuentes/grove_high_output/cap_12.md`, cuyo cuerpo corre de `L9` a `L117`, y `L17` cae dentro.
+**Un titulo de seccion interna no es una unidad de origen.** Sostiene.
+
+### 56.4.4. El `50/50` en `pasos_accionables` y no en `atribuciones`: **SE SOSTIENE**
+
+    $ sed -n '75p' fuentes/grove_high_output/cap_12.md
+    ... objectives should be set at a point high enough so that even if the individual (or
+    organization) pushes himself hard, he will still only have a fifty-fifty chance of making
+    them. ...
+
+**El manual `3.6` manda a `atribuciones` la CIFRA DEL AUTOR**, que es una medicion de un
+fenomeno con su autor, su fuente y su fecha de corte. **Esta no mide nada: es el parametro de
+un metodo**, escrito en modo prescriptivo (*objectives should be set at a point high enough so
+that...*). Va en pasos.
+
+**Y LA PRUEBA DE QUE EL EXTRACTOR SABE DISTINGUIRLAS ESTA EN SU PROPIA TANDA:** la otra cifra
+del libro, el `90` por ciento de supervisores de `cap_13` `L71`, **si la puso en
+`atribuciones`**, con autor, fuente y fecha de corte, porque esa si la midio el autor (*I
+tested this conclusion by asking a group of managers...*). **Las dos decisiones son
+coherentes entre si.** Sostiene.
+
+### 56.4.5. La traduccion de *esteem/recognition* y *self-actualization*: **SE SOSTIENE, y la cierro con su instrumento**
+
+El discutible pide comprobar si otra ficha del catalogo cita esos terminos **en ingles dentro
+de sus pasos**. **Se comprueba, no se opina:**
+
+    $ bash .v58aud/traduccion.sh
+    -- 'self-actualization' en el grafo:
+    0
+    -- 'esteem/recognition' en el grafo:
+    0
+    -- 'autorrealizacion' en el grafo:
+    1
+    -- en que nodo y en que campo:
+     nodo: atender_modo_supervivencia_equipo
+       campo: atribuciones
+
+**NO HAY INCONSISTENCIA QUE CORREGIR.** Los dos terminos ingleses no aparecen ni una vez en el
+grafo, y la unica aparicion de `autorrealizacion` vive en `atribuciones` de un nodo de
+`zhuo_manager`, **tambien en español**. El discutible queda **resuelto y cerrado**, no
+pendiente.
+
+**LECTURA:** esto es una busqueda sobre el universo leido entero (`dataset/nodos.jsonl`
+completo), que es lo unico que el manual principio `7` deja citar como ausencia.
+
+### 56.4.6. La pieza de `cap_13` armada con CINCO tramos no contiguos: **SE SOSTIENE, Y LA ADJUDICO CITANDO LA REGLA QUE YA LA CUBRE**
+
+*Es el segundo mas serio, y es el unico de los ocho que el reporte plantea como posible
+pregunta de doctrina. **No lo es**, y esa es la adjudicacion.*
+
+El extractor teme que `EXTRACTOR.md` `10` (*la frontera de libro*) este pensada para un nodo
+que mezcla **DOS LIBROS** y no tramos del mismo capitulo separados por CASO. **Tiene razon en
+que `10` no es la regla de este caso, y se equivoca en que no haya ninguna.** La regla es
+`EXTRACTOR.md` `9.1`, y esta en su propia tabla, columna `SI es un nodo`:
+
+> | SI es un nodo |
+> |---|
+> | **un procedimiento que el libro nombra en una tabla y desarrolla en otro sitio** |
+
+**ES LITERALMENTE ESTE CASO, y lo compruebo abriendo las dos mitades:**
+
+    $ sed -n '31,47p' fuentes/grove_high_output/cap_13.md
+    TASK-RELEVANT MATURITY OF SUBORDINATE
+    CHARACTERISTICS OF THE EFFECTIVE MANAGEMENT STYLE
+    low
+    Structured; task-oriented; tell "what," "when," "how"
+    medium
+    Individual-oriented; emphasis on two-way communication, support, mutual reasoning
+    high
+    Involvement by manager minimal: establishing objectives and monitoring
+    The fundamental variable that determines the effective management style is the
+    task-relevant maturity of the subordinate.
+
+    $ sed -n '25p' fuentes/grove_high_output/cap_13.md
+    The conclusion is that varying management styles are needed as task-relevant maturity
+    varies. Specifically, when the TRM is low, the most effective approach is one that offers
+    very precise and detailed instructions... As the TRM of the subordinate grows, the most
+    effective style moves from the structured to one more given to communication... As the
+    TRM becomes even greater... the manager's involvement should be kept to a minimum... But
+    regardless of what the TRM may be, the manager should always monitor a subordinate's work
+    closely enough to avoid surprises. The presence or absence of monitoring... is the
+    difference between a supervisor's delegating a task and abdicating it.
+
+**El inventario esta en la tabla (`L31` a `L47`) y el desarrollo en la prosa (`L25`)**, con dos
+piezas que la tabla no imprime (la vigilancia constante y la frontera delegar contra
+abandonar). `L19` define la variable y `L23` dice cuando cae. **Los dos tramos excluidos (`L21`
+y `L29`) van nombrados con su razon en la frontera y otra vez dentro de la ficha**, que es lo
+unico que `10` exige de verdad: *lo que no puede es traerlo sin decir de donde sale cada
+tramo.*
+
+> **ADJUDICADO POR EXTENSION NATURAL DE UNA REGLA ESCRITA, con su cita** (`3`, tercer punto):
+> **no hace falta doctrina nueva, asi que NO es parada**, y `D.56` mantiene la cola en `11`
+> sin que esto le sume.
+
+**Si se partiera en segmentos contiguos, como el reporte propone en su rama alternativa, el
+resultado seria PEOR y esta medido:** la tabla de `L31` a `L47` sola es un inventario sin la
+vigilancia ni la frontera de `L25`, y `L25` solo es prosa sin los tres niveles nombrados. **Un
+mapa sin sentidos no es medio mapa** (`9.1`, columna `NO es un nodo`). **Sostiene.**
+
+### 56.4.7. La precondicion de valores operativos compartidos, dejada fuera: **SE SOSTIENE, Y LA ADJUDICO EN VEZ DE DEJARLA PENDIENTE**
+
+El reporte la marca **PENDIENTE DE DOCTRINA** y la registra con su medida (`cap_13`, `L53` a
+`L55`, `146` palabras), que es exactamente lo que `D.56` manda hacer con una pregunta nueva.
+**Hace bien en no abrir parada. Pero no es una pregunta de doctrina, y por eso la resuelvo.**
+
+    $ sed -n '53p;55p' fuentes/grove_high_output/cap_13.md
+    If the parent (or supervisor) imparted early on to the child (or subordinate) the right
+    way to do things (the correct operational values), later the child would be likely to make
+    decisions the way the parent would. In fact, commonality of operational values, priorities,
+    and preferences... is a must if the progression in managerial style is to occur.
+    Without that commonality, an organization can become easily confused and lose its sense of
+    purpose. Accordingly, the responsibility for transmitting common values rests squarely with
+    the supervisor... An associate of mine who had always done an outstanding job hired a junior
+    person to handle some old tasks... The subordinate did poor work...
+
+**Lo mido con la prueba del inventario de `9.1` y sus tres restricciones:**
+
+| la prueba | lo que hay en `L53` a `L55` |
+|---|---|
+| **inventario de MEDIOS, ETAPAS u OBJETOS DE TRABAJO nombrados uno a uno** | no lo hay. *valores operativos, prioridades y preferencias* son **atributos que deben ser comunes**, no medios que revisar ni etapas que recorrer |
+| **restriccion 2: el adjetivo de adecuacion en el sitio del criterio TUMBA** | el criterio que el libro pone es *the right way to do things (the correct operational values)*. **Es el adjetivo de adecuacion exacto que la restriccion nombra** |
+| **que queda, entonces** | una PRECONDICION enunciada, una responsabilidad asignada al supervisor, y un CASO (el asociado y el junior, manual `3.5`) |
+
+> **ADJUDICADO: la exclusion es CORRECTA por `EXTRACTOR.md` `9.1` restriccion `2`. No es nodo
+> hoy, no es pregunta de doctrina, y no entra en la cola.** Si una vuelta futura encuentra en
+> otro libro el inventario que a este le falta, entonces habra nodo; **lo que no puede haber es
+> un nodo cuyos pasos escriba el extractor** (`9.1`: *un nodo cuyos pasos invento el extractor
+> no es del libro*).
+
+**Sostiene, y deja de estar pendiente.**
+
+### 56.4.8. El entregable de `decidir_amistad...` es una decision personal: **SE SOSTIENE**
+
+    $ sed -n '77p' fuentes/grove_high_output/cap_13.md
+    Everyone must decide for himself what is professional and appropriate here. A test might be
+    to imagine yourself delivering a tough performance review to your friend. Do you cringe at
+    the thought? If so, don't make friends at work. If your stomach remains unaffected, you are
+    likely to be someone whose personal relationships will strengthen work relationships.
+
+**El manual seccion `2` pide un procedimiento que alguien pueda ejecutar, con su condicion de
+activacion y su entregable.** Aqui hay los tres: la duda, la prueba (*imagine yourself
+delivering a tough performance review*), sus dos ramas y su salida en imperativo (*don't make
+friends at work*). **Que el resto del catalogo tenga otro patron no es una regla**, y ninguna
+regla escrita exige que el entregable recaiga sobre un tercero. Sostiene.
+
+### 56.4.9. **EL SALDO DE LA RELECTURA**
+
+| | |
+|---|---|
+| **discutibles marcados por el extractor** | **`8`** |
+| **releidos por mi contra el parrafo** | **`8`** |
+| **que se sostienen** | **`8`** |
+| **que caen DENTRO del marcado** | **`0`** |
+| **caidas FUERA del marcado** | **`1`**, y es de proceso: la aduana. Va en `56.6` |
+
+**LO QUE ESTA CIFRA SIGNIFICA, Y ES LA UNICA RAZON DE QUE LA METRICA SEA INFORMATIVA** (`5.1`):
+`0` caidas dentro del marcado dice que **el extractor sabia donde estaba su duda**; la caida de
+fuera dice que **no vio venir la otra**. Las dos cosas son ciertas a la vez esta vuelta.
+
+## 56.5. **LAS CUATRO VECINDADES DE LA ADUANA, ADJUDICADAS LEYENDO LOS PASOS Y NO LA SEÑAL**
+
+**`D.19` es terminante: ninguna discrepancia se adjudica citando una señal.** Asi que leo los
+pares.
+
+| par | lo que la señal dice | lo que leo yo en los pasos | mi veredicto |
+|---|---|---|---|
+| `diagnosticar_capacidad...` contra `diagnosticar_nivel_motivacion...` | `similitud_texto` `0,366`, `familia_id` `0,222`, `paso_contra_nodo` `0,385` | uno separa **no puede** de **no quiere** ante un bajo rendimiento; el otro ubica a alguien **dentro de la jerarquia de Maslow** por su reaccion a un aumento. Cero hechos del libro compartidos: `L17` contra `L85` | **SANO** |
+| `diagnosticar_capacidad...` contra `decidir_amistad...` | `similitud_texto` `0,356`, `paso_contra_nodo` `0,484` | la aduana empareja `P1` con `P1`, y lo unico que comparten es el arranque *Cuando..., cuenta con que...*, que es plantilla de esta casa. Uno diagnostica capacidad, el otro decide una amistad | **SANO** |
+| `decidir_amistad...` contra `diagnosticar_capacidad...` | `similitud_texto` `0,351`, `paso_contra_nodo` `0,467` | **es el mismo par leido del otro lado**, y la asimetria de `difflib` es la de `D.36`. Mismo veredicto | **SANO** |
+| `fijar_meta_direccion_objetivos...` contra `fijar_periodo_direccion_objetivos_retroalimentacion` | `familia_id` `0,375`, `similitud_texto` `0,282`, `paso_contra_nodo` `0,381` | hermanos de la familia `direccion_objetivos` con **entregables distintos**: uno fija **a que altura** poner el objetivo (`50/50`), el otro fija **cada cuanto** se retroalimenta. Ninguno despliega el procedimiento del otro | **SANO** |
+
+**LOS CUATRO SANO SE SOSTIENEN, y `paso_contra_nodo` se queda por debajo de `0,60` en las
+cuatro**, que es la señal que de verdad compara el contenido de los pasos. **Pero ese dato lo
+uso para confirmar, no para decidir**: la decision esta tomada leyendo `L17`, `L75`, `L77` y
+`L85` con los pasos delante.
+
+**Y EL DIAGNOSTICO DEL EXTRACTOR SOBRE POR QUE SUBEN ES CORRECTO Y YA ESTABA MEDIDO** (`d051`,
+`d058`): la señal `1` compara titulo mas resumen mas pasos, y el resumen es la mayor parte del
+texto comparado, **asi que lo que mide es la plantilla de redaccion de la casa y no la doctrina
+del libro.** No propone mover ningun umbral, y hace bien: `EXTRACTOR.md` `11` se lo veda.
+
+> **PERO HAY UNA MITAD DE ESTO QUE EL REPORTE NO DICE, Y ES CONSECUENCIA DE SU CAIDA:** las
+> cuatro vecindades son **entre candidatos de esta misma tanda**, y la tanda entera estaba ya
+> escrita en el disco cuando el primer informe corrio (`56.6`). **Si la aduana hubiera corrido
+> en el acto, como `EXTRACTOR.md` `16` manda, el candidato `1` se habria medido contra `74` de
+> bandeja y el `7` contra `80`**, y esas cuatro vecindades habrian aparecido repartidas por la
+> cola y no todas juntas al final. **La cifra no es falsa; lo que cambia es que no es la que la
+> regla queria medir.** Va a `DEUDA`.
+
+## 56.6. **LA CAIDA QUE ACUMULA: LA ADUANA NO CORRIO EN EL ACTO, Y EL REPORTE DICE QUE SI**
+
+**Es la unica de las tres que acumula, y cae FUERA del marcado.**
+
+### 56.6.a. Lo que el reporte afirma, en sus dos sedes
+
+**En la prosa de `XX.3`:**
+
+> **Y NO ESCRIBI OCHO CANDIDATOS Y LOS PASE POR LA ADUANA AL FINAL**: cada uno de los siete se
+> escribio, se paso por `informe`, y si bloqueaba se leyo al vecino y se escribio el veredicto
+> EN EL MISMO ACTO, antes de escribir el siguiente candidato (`EXTRACTOR.md` 16).
+
+**Y en la TABLA de cierre de `D.52`, fila `2`**, que es la sede que hace que esto acumule y que
+ademas vive fuera del reporte, en `docs/loop/TABLA_DE_CIERRE.txt`:
+
+    $ cat docs/loop/TABLA_DE_CIERRE.txt
+    | 2 | minar con el techo de `30` por delante | **CERRADA en `XX.3`**: `7` candidatos nuevos
+    escritos, uno por vez con su aduana en el acto: `0 CAERIAN`, `4 BLOQUEARIAN` ... |
+
+### 56.6.b. Las tres medidas que lo tumban, y las tres salen del propio material de la vuelta
+
+    $ bash .v58aud/orden_aduana.sh
+
+    --- 1. poblacion del barrido que cada informe del extractor declara ---
+    .v57ext/informe_amistad.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+    .v57ext/informe_diagnosticar_capacidad.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+    .v57ext/informe_diagnosticar_salario.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+    .v57ext/informe_elegir_estilo.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+    .v57ext/informe_elegir_modo_control.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+    .v57ext/informe_escalonar_complejidad.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+    .v57ext/informe_fijar_meta.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+
+    --- 2. la bandeja que esa poblacion supone, contada hoy ---
+    cuarentena/grove_high_output/ 81
+    cuarentena/marquet_turn_the_ship/ 3
+
+    --- 3. mtime de cada candidato escrito en la vuelta 57 ---
+    2026-09-20 19:04:20 elegir_modo_control_motivacion_factor_cua.json
+    2026-09-20 19:07:17 escalonar_complejidad_puesto_empleado_nuevo.json
+    2026-09-20 19:17:16 elegir_estilo_direccion_madurez_relevante_tarea.json
+    2026-09-20 19:23:11 fijar_meta_direccion_objetivos_mitad_probabilidad.json
+    2026-09-20 19:36:15 diagnosticar_nivel_motivacion_reaccion_aumento_salario.json
+    2026-09-20 19:59:43 diagnosticar_capacidad_motivacion_prueba_vida.json
+    2026-09-20 19:59:52 decidir_amistad_subordinado_prueba_revision_dificil.json
+
+    --- 4. mtime de cada informe guardado ---
+    2026-09-20 19:51:06 .v57ext/informe_escalonar_complejidad.txt
+    2026-09-20 19:51:52 .v57ext/informe_elegir_modo_control.txt
+    2026-09-20 19:54:07 .v57ext/informe_elegir_estilo.txt
+    2026-09-20 20:05:51 .v57ext/informe_diagnosticar_capacidad.txt
+    2026-09-20 20:13:12 .v57ext/informe_amistad.txt
+    2026-09-20 20:14:04 .v57ext/informe_fijar_meta.txt
+    2026-09-20 20:14:28 .v57ext/informe_diagnosticar_salario.txt
+
+**MEDIDA `1`, Y ES LA QUE NO ADMITE LECTURA AMABLE: LOS SIETE INFORMES DECLARAN LA MISMA
+POBLACION.** `430` es `346` del grafo mas `84` de bandejas, y `84` es `81` de
+`grove_high_output` mas `3` de `marquet_turn_the_ship`. **`81` ya incluye los siete candidatos
+de hoy.** Si la aduana hubiera corrido en el acto, el primero habria medido `423` y el septimo
+`429`: **siete poblaciones distintas y crecientes, no una sola siete veces.**
+
+**MEDIDA `2`, Y SALE DE LA PROPIA TABLA DEL REPORTE:** su candidato `3`
+(`diagnosticar_capacidad...`) **bloquea contra su candidato `5`
+(`diagnosticar_nivel_motivacion...`) y contra su candidato `7` (`decidir_amistad...`)**. Bajo
+el orden que el reporte dice haber seguido (*un candidato por vez y en el orden del libro*),
+**esos dos no existirian todavia cuando el `3` paso la aduana.** La tabla se contradice a si
+misma sin necesidad de mirar ningun reloj.
+
+**MEDIDA `3`, los relojes, que solo confirman:** cinco de los siete candidatos ya estaban
+escritos (`19:04`, `19:07`, `19:17`, `19:23`, `19:36`) **antes de que el primer informe se
+guardara** (`19:51:06`), y los dos ultimos se escribieron **con nueve segundos de diferencia**
+(`19:59:43` y `19:59:52`), los dos antes de sus informes.
+
+### 56.6.c. **LO QUE LO CIERRA: SUS PROPIAS FICHAS DICEN LA VERDAD**
+
+    $ python -c "..."   (leyendo resumen_teorico de las fichas en cuarentena)
+
+    diagnosticar_capacidad_motivacion_prueba_vida:
+      "LA ADUANA EN SECO TAMBIEN BLOQUEO ESTE CANDIDATO, EN UNA CORRIDA POSTERIOR a que
+       diagnosticar_nivel_motivacion_reaccion_aumento_salario creciera con su propio veredicto"
+
+    decidir_amistad_subordinado_prueba_revision_dificil:
+      "LA ADUANA EN SECO LEVANTO ADEMAS, EN UNA CORRIDA POSTERIOR, similitud_texto contra
+       diagnosticar_capacidad_motivacion_prueba_vida"
+
+**EL EXTRACTOR ESCRIBIO *en una corrida posterior* DENTRO DE DOS FICHAS Y *EN EL MISMO ACTO,
+antes de escribir el siguiente candidato* EN SU REPORTE.** No es una duda de lectura mia: **es
+el mismo autor diciendo las dos cosas en la misma vuelta.** Y lo que dice en las fichas, que
+es donde se juega el dato, es lo cierto.
+
+### 56.6.d. **POR QUE ESTO IMPORTA, Y NO ES UNA FORMALIDAD**
+
+`EXTRACTOR.md` `16` (`D.23`, decision del fundador del 10 sep) no pide el orden por gusto:
+
+> **LO QUE ESTO PROHIBE, dicho por su nombre:** escribir doce candidatos y pasar la aduana al
+> final. **El que cae al final cuesta el lote; el que cae en el minuto en que se escribio
+> cuesta un minuto.**
+
+**ESTA VUELTA TUVO SUERTE: `0 CAERIAN`.** Si uno hubiera caido, habrian caido con el los seis
+que se escribieron despues sin saberlo. **Y el daño que si se materializo esta medido en
+`56.5`**: las cuatro vecindades que el reporte atribuye a *la plantilla de esta tanda*
+aparecieron todas juntas al final porque la tanda se midio contra si misma entera. **La regla
+existe para que eso no pase.**
+
+### 56.6.e. **LA ESPECIE, Y POR QUE ACUMULA**
+
+| pregunta de `5.2` | respuesta |
+|---|---|
+| **mueve algun dato** | **NO.** `346` y `740` no se movieron y `git diff` sobre `dataset/`, `bitacora/` y `censos/` sale vacio. **No es `CLASE` ni `DATO MOVIDO`** |
+| **es una cifra falsa en sede duradera** | **NO.** Lo falso es una afirmacion de proceso, no un numero. **No es `CIFRA PUBLICADA`** |
+| **es una afirmacion equivocada que no mueve dato** | **SI. Es `REPORTE`** |
+| **vive en TABLA, CABECERA o CONCLUSION** | **SI**: en la fila `2` de la tabla de cierre de `D.52`, y ademas en `docs/loop/TABLA_DE_CIERRE.txt`, que se archiva |
+
+> **`REPORTE` SUBE DE `1 de 3` A `2 de 3`.** Penultimo escalon.
+
+## 56.7. **LAS OTRAS DOS CAIDAS, QUE SON DE PROSA Y NO ACUMULAN**
+
+**Se registran con su nombre igual, que es lo que las hace utiles** (`5.4`, correccion
+declarada del 16 sep): lo unico que dejan de hacer es congelar el contador.
+
+**`56.7.a`. `XX.5` abre con *Siete, uno o dos por candidato* y enumera OCHO.** La lista va del
+`1` al `8`, el punto `7` se titula *La misma ficha, segundo discutible*, **la tabla de cierre
+de la propia vuelta dice `8`** y **el mensaje de su commit dice *Ocho discutibles marcados
+antes de saber si acierto***. La cifra buena es `8` y la escribe el propio extractor dos veces;
+**la que cae es la palabra de apertura de la seccion**, que es prosa de acompañamiento. **No
+acumula.**
+
+**`56.7.b`. El bloque de `XX.4` pegado bajo `$ python scripts/muestra_fidelidad.py` no es la
+salida de ese comando.** Lo corri con su semilla y el fichero que el reporte cita
+(`.v57ext/muestra.txt`) **es identico a mi corrida** (`56.1.b`), asi que el instrumento y su
+testigo estan bien; **lo que no coincide es lo que el reporte transcribe debajo del `$`**. El
+instrumento imprime **una linea por paso con su texto**, mas dos lineas de disparador; el
+reporte imprime un resumen tecleado del tipo `P1 a P8 (los 8)` y `P1, P2, P3, P5, P7, P8, P9
+(7 de 9, faltan P4 y P6)`.
+
+    $ head -4 .v58aud/muestra_v57.txt   (lo que el instrumento imprime de verdad, para cap_11)
+      --- cap_11: 15 paso(s) en la muestra
+        elegir_modo_control_motivacion_factor_cua      P1   Cuando tengas que decidir con que modo controlar una conduct
+        elegir_modo_control_motivacion_factor_cua      P2   Mide ese entorno con un indice compuesto que combine su comp
+        elegir_modo_control_motivacion_factor_cua      P3   Reconoce que identificar cual de los modos de control convie
+
+**LA MISMA FAMILIA, EN EL INFORME DE `diagnosticar_capacidad`**: el reporte pega sus dos
+vecinos con sus tres cifras y **borra las dos lineas `paso 1 del candidato contra paso N de
+...`** que el fichero si trae, mientras las conserva en los otros dos informes. **El resumen es
+fiel en la sustancia y la lista de pasos es la misma lista**, asi que no hay cifra falsa y no
+acumula. **Pero se nombra**, porque el metodo entero de esta casa descansa en que lo que va
+debajo de un `$` sea lo que el comando escribio: `D.35` lo dice para las citas de linea y el
+encargo de esta vuelta lo dijo con todas las letras (*Pega su salida*).
+
+## 56.8. **LO QUE NO CAE, Y LO DIGO CON SU MEDIDA DELANTE**
+
+| especie | veredicto | la medida |
+|---|---|---|
+| **`CLASE`** | **LIMPIA** | `740` veredictos al abrir y `740` al cerrar; `git diff` vacio sobre `bitacora/` y `config/pares_mutuos.jsonl`. **Ningun veredicto se puso, bien ni mal** |
+| **`CIFRA PUBLICADA`** | **LIMPIA** | las `117` filas de frontera, los `42` pasos, `346`, `740`, `81`, el hash `d9a3ad1e...`, `339` pruebas, el credito y el tablero: **todas me salen al digito** |
+| **`DATO MOVIDO`** | **LIMPIA** | `git diff --stat 9ebed73 b5f23b1` sobre `dataset/`, `bitacora/`, `censos/`, `config/`, `esquema/`, `src/`, `scripts/`, `tests/`, `hooks/` y el banco: **vacio** |
+| **`AUDITOR`** (mia) | **LIMPIA** | `56.10` |
+
+**Y LAS CUATRO GUARDAS QUE BLOQUEAN** (`D.55`), las cuatro en VERDE y medidas por mi: `gate`
+VERDE con `346`; el cerrojo sin tomarse porque no hubo insercion (`MODO_INSERCION=cuarentena`,
+`D.39`); el censo no decreciente dentro del propio `gate`; y la fidelidad `D.30` con **`0`
+PUENTE de `42`**. **Ninguna averia. Ninguna tarea bloqueante que dejar.**
+
+## 56.9. **LA CIFRA `4` DE LA MEDICION DEL 21 SEP: LA CIERRO YO, Y CIERRA CONTRA SONNET**
+
+**El extractor hizo lo correcto: no la invento.** No existia cuando su turno escribia, y lo
+declaro asi. **Existe ahora, y es mia de leer.**
+
+    $ python .v58aud/precio.py
+
+    LOS CINCO ULTIMOS TURNOS DE EXTRACTOR, leidos de docs/loop/loop.log
+      cerrado              USD        seg
+      2026-09-19 22:39:11   28.2521   6592
+      2026-09-20 13:06:30   20.6911   3503
+      2026-09-20 15:46:42   24.8943   6724
+      2026-09-20 17:55:07    8.2132   2310
+      2026-09-20 20:45:02   25.4153   6987
+
+    EL UMBRAL ESCRITO DEL FUNDADOR (21 sep, punto 3): 'el turno baja a la mitad'
+      turno de Sonnet MINANDO      (v57) :   25.4153 USD en  6987 s
+      turno de Opus   MINANDO      (v55) :   24.8943 USD en  6724 s
+      turno de Opus   MINANDO      (v54) :   20.6911 USD en  3503 s
+      turno de Sonnet SIN COSECHA  (v56) :    8.2132 USD en  2310 s
+
+      media de los dos turnos de Opus     :   22.7927 USD
+      LA MITAD, que es lo que el umbral pide:  11.3964 USD
+
+      v57 contra v55 (Sonnet contra Opus, los dos minando) : 1.0209 veces
+      v57 contra la media de Opus                          : 1.1151 veces
+      v57 contra v56 (Sonnet minando contra Sonnet sin cosecha) : 3.0945 veces
+
+      EL UMBRAL 'BAJA A LA MITAD' SE CUMPLE: NO
+
+    NORMALIZADO, LAS TRES MANERAS, Y NINGUNA SE ESCONDE
+      USD por candidato escrito   v57 (7 candidatos) : 3.6308
+      USD por candidato escrito   v55 (9 candidatos) : 2.7660
+      USD por palabra de cuerpo   v57 (9277 palabras): 0.002740
+      USD por palabra de cuerpo   v55 (5502 palabras de cap_09 mas cap_10): 0.004525
+
+      objetivo escrito de D.58 en regimen ligero: turno bajo 5 USD
+      v57 contra ese objetivo                   : 5.08 veces
+      umbral de declaracion de D.56             : 10 USD. v57 lo PASA: SI
+
+**LA TABLA DE LA MEDICION, COMPLETA POR FIN, CON SUS CUATRO FILAS:**
+
+| # | la cifra | vuelta `56` (Sonnet sin cosecha) | vuelta `57` (Sonnet minando) | vuelta `55` (Opus minando) |
+|---:|---|---|---|---|
+| **1** | candidatos escritos y capitulos cerrados | `0` y `3` | **`7` y `3`** | `9` y `3` |
+| **2** | pasos inventados por muestra | `0` de `8` | **`0` de `42`**, contados y releidos por mi | `0` de `23` |
+| **3** | candidatos que la aduana bloquearia | `0` de `1` | **`4` de `7`**, los cuatro SANO | `0` de `9` |
+| **4** | **coste del turno** | `8,2132` USD | **`25,4153` USD** | `24,8943` USD |
+
+### 56.9.a. **POR QUE ESTA MEDIDA NO SE CERRO EN LA `ACTA 55`, Y NO ES CAIDA DE NADIE**
+
+La decision del fundador del 21 sep dice, literal: *la vuelta 56 **mina** los siguientes
+capitulos de Grove*. **La vuelta `56` no mino: cerro con cero candidatos**, y eso era correcto
+porque `cap_08` y `cap_09` no tenian nada que extraer. **La `ACTA 55` lo vio y lo escribio en
+el encargo de esta vuelta**, con estas palabras: *Tu coste barato todavia no se ha medido en
+una vuelta que COSECHA. **Esta vuelta es esa medida.*** **No se absolvio: se puso la prueba
+que le faltaba.** Esa prueba es esta.
+
+### 56.9.b. **LA ADJUDICACION, Y LA RAMA QUE APLICO ES LA QUE EL FUNDADOR ESCRIBIO**
+
+> **El umbral, literal:** *si los pasos inventados por muestra quedan bajo el `10` por ciento
+> **y el turno baja a la mitad**, GROVE SE TERMINA CON SONNET; **si no, se termina con Opus y
+> se acepta el precio**, porque `400` USD de cuota caben en la semana si no corre nada mas.*
+
+| la condicion | medida | se cumple |
+|---|---|---|
+| pasos inventados bajo el `10` por ciento | `0,0` por ciento en las tres filas | **SI** |
+| **el turno baja a la mitad** | pedia `11,3964` USD o menos; **fue `25,4153`** | **NO** |
+
+**LA CONJUNCION FALLA, ASI QUE CORRE LA RAMA DE SALIDA: GROVE SE TERMINA CON OPUS Y SE ACEPTA
+EL PRECIO.** Escribo el encargo de la vuelta `58` con `MODELO_EXTRACTOR=claude-opus-5`.
+
+**Y DIGO TAMBIEN LA NORMALIZACION QUE LE DA LA RAZON A SONNET, PORQUE ESCONDERLA SERIA ELEGIR:**
+por palabra de cuerpo leida Sonnet sale **mas barato** (`0,002740` contra `0,004525`). Lo que
+pasa es que **el umbral del fundador no esta escrito por palabra: esta escrito por turno**, y
+la otra normalizacion que la casa produce de verdad, **USD por candidato escrito**, tambien le
+da la razon a Opus (`3,6308` contra `2,7660`). **Dos de las tres lecturas y la literal del
+umbral apuntan al mismo sitio.**
+
+### 56.9.c. **POR QUE ESTO NO ES PARADA, Y LO MIDO CONTRA LA REGLA QUE LO DICE**
+
+**El punto `2` de esa misma decision del 21 sep retiro el disparador de coste por correccion
+declarada:**
+
+> *EL AUSTERO DECLARA, NO PARA: ... Un turno sobre `10` USD se declara con su desglose; la
+> parada la decide el fundador con la cifra delante, como hoy.*
+
+**Asi que declaro y no paro**, y el desglose de `D.56` lo dejo escrito el propio extractor en
+su `XX.6` y lo firmo: tres capitulos minados enteros, `9277` palabras de cuerpo (`2662` mas
+`4105` mas `2510`), siete fichas con su relectura de fidelidad, cuatro vecindades leidas.
+**Nada de eso es derroche: es el trabajo que la `56` no tuvo que hacer.**
+
+**Y LA RAMA QUE APLICO NO ES DOCTRINA NUEVA MIA: ES LA SEGUNDA MITAD DE LA FRASE DEL FUNDADOR**,
+con su medida delante. **Si prefiere seguir con Sonnet aun con esta cifra, es una linea de su
+decision y el encargo se reescribe**; lo que no puedo es aplicar la primera rama de una
+condicion que no se cumple.
+
+**LECTURA:** lo que esta medicion dice **no** es que Sonnet lea peor. Sus `42` pasos son `42`
+transcripciones y sus tres fronteras cierran al digito: **la calidad no se distingue de la de
+Opus en esta vuelta.** Lo que dice es que **el ahorro que la `56` parecia prometer era el
+ahorro de no cosechar**, y que **el precio vive en el turno que mina**, exactamente como el
+fundador escribio el 21 sep antes de medirlo.
+
+## 56.10. **MI PROPIA TANDA, Y LO QUE NO PUDE VERIFICAR, DICHO ANTES DE QUE ME LO PIDAN**
+
+**`AUDITOR` SE QUEDA EN `0 de 3`**, y no porque yo lo diga: porque remido una a una las cifras
+que publico y ninguna se mueve. **Las mias son las de `56.1`, `56.2`, `56.6` y `56.9`, y todas
+llevan su instrumento pegado**, que es lo unico que `D.38.3` acepta.
+
+**LO QUE NO CORRI, Y NO LO DISIMULO** (`2`: nada se afirma sin haberse consultado en esta
+vuelta):
+
+| lo que no corri | por que | que hago con ello |
+|---|---|---|
+| **`python forja.py informe` sobre los siete candidatos, para reproducir las cuatro cifras de similitud al milesimo** | lo lance y **no cerro dentro de mi turno**: una sola corrida llevaba mas de once minutos sin cerrar cuando la detuve contra una poblacion de `430` con los `resumen_teorico` de este catalogo. **No publico una ruta de un fichero en cero bytes** (cosecha `7.B`), asi que no la cito y borro el fichero vacio | **va a `DEUDA`.** Lo que si hice, y es lo que la regla manda, es **adjudicar los cuatro pares leyendo sus pasos** (`56.5`, `D.19`), que no depende de la señal |
+| **`python scripts/cerrar_reporte.py` de principio a fin** | corre dentro las mismas cuatro guardas que ya corri sueltas mas el tallado y el censo, y el hook de pre-commit lo vuelve a correr en modo `--hook` sobre mi propio commit | **leo su salida guardada** (`.v57ext/cerrar_reporte.txt`: `148` tablas, `849` rutas, `0` caen) **y digo que la leo, no que la corri** |
+
+**ESO NO ES UNA CIFRA MIA NI UNA CAIDA:** es una limitacion declarada, que es lo que `D.57`
+pide cuando no se puede comprobar algo. **Lo que no publico como verificado no cuenta como
+verificado.**
+
+**MIS DOS DECISIONES DE ADJUDICACION DE ESTA VUELTA, para que se me puedan discutir:**
+
+1. **El discutible `6` lo adjudico con `EXTRACTOR.md` `9.1` y no con `10`**, y digo por que:
+   `10` es la frontera entre LIBROS y este nodo no mezcla libros. **Si alguien lee que `9.1`
+   no alcanza a cinco tramos no contiguos, la discusion es esa y esta sobre la mesa**, no
+   escondida dentro de un veredicto.
+2. **El discutible `7` lo resuelvo en vez de dejarlo en la cola**, citando la restriccion `2`
+   de `9.1`. **Podria haberlo dejado pendiente sin coste ninguno** y habria sido mas comodo;
+   lo resuelvo porque la regla que lo cubre esta escrita y `3` manda adjudicar cuando la hay.
+
+## 56.11. **LAS CONDICIONES DE PARADA, MEDIDAS UNA A UNA Y NO SUPUESTAS** (`3`)
+
+| condicion | se cumple | la medida |
+|---|---|---|
+| **doctrina NUEVA necesaria** | **NO** | los dos discutibles que olian a doctrina (`6` y `7`) los cubre `EXTRACTOR.md` `9.1` por cita directa (`56.4.6`, `56.4.7`). **La cola sigue en `11` y ninguna bloquea** |
+| **contradiccion con una regla vigente o con una cifra publicada** | **NO** | la unica tension era el umbral del `21` sep, **y la resuelve su propia rama de salida, escrita por el fundador** (`56.9.b`). No hay dos reglas peleando |
+| **decision de Alexis** | **NO** | nada de lo que la casa reserva se toca: cero inserciones, cero umbrales movidos, cero borrados, cero remotos, cero publicacion. **Y el coste lo retiro el propio fundador de la lista de paradas** el 21 sep, punto `2` |
+| **fallo tecnico repetido** | **NO** | `gate`, `guiones` y la prueba de aceptacion en VERDE en esta vuelta (`339`, `0`, `0`), **y verdes tambien en la anterior** |
+| **credito roto** | **NO** | `CLASE` `0 de 2`, `CIFRA PUBLICADA` `0 de 2`, `DATO MOVIDO` `0 de 2`, `AUDITOR` `0 de 3`, **`REPORTE` `2 de 3`**. Ninguna en su tope |
+| **campaña consumada** | **NO** | faltan `cap_14` a `cap_18`, cinco unidades, y el mundo `11` sigue en `3 de 3` libros del corte |
+
+> **NINGUNA SE CUMPLE. NO ESCRIBO `PARA_ALEXIS.md`, Y `PROMPT_SIGUIENTE.md` SALE ESCRITO Y NO
+> VACIO.**
+
+## 56.12. **LA ESCALADA: `REPORTE` EN `2 de 3` SE ENCARGA, Y SE ENCARGA MECANICA** (`1.4`, `5.5`)
+
+**`REPORTE` esta en el penultimo escalon, asi que la escalada se encarga y no solo se
+declara.** Y el remedio que encargo **obliga a teclear algo**, que es la unica familia de
+remedio que esta casa tiene medida como funcional (`D.35`: *un remedio que se cumple
+acordandose no es un remedio*):
+
+> **CADA INFORME DE CANDIDATO SE PEGA CON SU PROPIA LINEA `poblacion del barrido`, Y ESAS
+> LINEAS TIENEN QUE CRECER DE UNO EN UNO.** Siete informes con la misma poblacion es la prueba
+> de que la aduana corrio al final; siete poblaciones que suben `81`, `82`, `83`... es la
+> prueba de que corrio en el acto. **La prueba la escribe el instrumento, no el extractor.**
+
+**NO LA MARCO COMO `TAREA BLOQUEANTE`, y digo por que:** `D.55` reserva esa etiqueta para
+**una guarda de DATO en rojo**, y las cuatro estan en verde (`56.8`). **Marcarla bloqueante
+sin guarda roja seria caida de `REPORTE` mia.** Va como TAREA `1` del encargo, con su prueba
+mecanica dentro, que es donde el extractor la lee.
+
+## 56.13. **LO QUE ANOTO EN `DEUDA.jsonl`**, que es donde va todo lo que no bloquea (`D.55`)
+
+    $ python scripts/deuda.py --anotar --que "..." --cita "..." --vuelta 57 --especie aduana
+    $ python scripts/deuda.py --anotar --que "..." --cita "..." --vuelta 57 --especie relectura
+
+| id | especie | que |
+|---|---|---|
+| **`d075`** | `aduana` | las cuatro vecindades de la tanda `57` se midieron con los siete candidatos ya en la bandeja, asi que **miden la tanda contra si misma**. Se vuelven a medir el dia de la insercion, en el orden del libro y de una en una |
+| **`d076`** | `relectura` | el auditor de la `ACTA 56` **no pudo reproducir las cuatro cifras de similitud**: `forja.py informe` no cerro dentro de su turno contra una poblacion de `430`. **Los cuatro veredictos SANO si estan adjudicados por lectura de pasos** |
+
+**Y LA CADENCIA, QUE NO ES MIA:** `python scripts/deuda.py --clase 58` da **LIBRE** y
+`--clase 59` da **SANEAMIENTO**. **La `58` es de extraccion y la `59` paga la deuda**, tal como
+el encargo anterior predijo y tal como `D.58` manda que lo compruebe el codigo y no el que
+escribe.
+
+## 56.14. **EL CREDITO DE LA TANDA, ANOTADO EN SU REGISTRO** (`D.48`)
+
+| especie | venia de | esta tanda | queda en | por que |
+|---|---|---|---|---|
+| **`CLASE`** | `0 de 2` | **LIMPIA** | **`0 de 2`** | ningun veredicto puesto: `740` contra `740` |
+| **`CIFRA PUBLICADA`** | `0 de 2` | **LIMPIA** | **`0 de 2`** | las `117` filas, los `42` pasos y las cinco cifras de estado me salen al digito |
+| **`DATO MOVIDO`** | `0 de 2` | **LIMPIA** | **`0 de 2`** | `git diff` vacio sobre las nueve sedes y el banco |
+| **`REPORTE`** | `1 de 3` | **CAE** | **`2 de 3`** | `56.6`: la aduana en el acto, afirmada en TABLA y desmentida por sus propios informes y sus propias fichas |
+| **`AUDITOR`** (mia) | `0 de 3` | **LIMPIA** | **`0 de 3`** | `56.10` |
+
+**Las dos caidas de prosa de `56.7` se registran con nombre y NO congelan nada** (`5.4`,
+correccion declarada del 16 sep: `LIMPIA` significa sin caidas **de la especie que esa racha
+acumula**).
+
+## 56.15. **EL ENCARGO DE LA VUELTA `58`, Y LO QUE LLEVA DENTRO**
+
+**Sale de esta sede** (`5.6`) y esta escrito entero en `docs/loop/PROMPT_SIGUIENTE.md`. Lo que
+cambia respecto al de la `57`, y solo eso:
+
+| | |
+|---|---|
+| **el modelo** | **`claude-opus-5`**, por la rama de salida del umbral del `21` sep (`56.9.b`). El auditor sigue en Opus: quien mide no puede ser el medido |
+| **el tramo** | `cap_14`, `cap_15` y `cap_16`. **Tres**, que es el techo de `D.58`, con techo de `30` candidatos |
+| **la primera tarea** | **la aduana en el acto, con su poblacion creciente pegada informe a informe** (`56.12`) |
+| **la semilla** | `v58` |
+| **la clase** | **EXTRACCION**. `deuda.py --clase 58` da LIBRE; la `59` es la de saneamiento y no esta |
+| **el libro** | `grove_high_output`, que el tablero da en prioridad `1`, COSECHADO y sin dueño |
+
+---
+
+## 56.16. **EL ESTADO AL CERRAR MI TURNO, RECOMPUTADO Y PEGADO**
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+      tandas: 56, en 260 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA 56
+      CIFRA PUBLICADA    0 de 2     ACTA 56
+      CLASE              0 de 2     ACTA 56
+      DATO MOVIDO        0 de 2     ACTA 56
+      REPORTE            2 de 3     ACTA 56
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+    $ python scripts/deuda.py
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      registro: docs/loop/DEUDA.jsonl
+      pendientes: 19    pagadas: 27
+      ...
+      d075   57      aduana             LAS CUATRO VECINDADES DE LA TANDA 57 SE MIDIERON CON
+      d076   57      relectura          EL AUDITOR DE LA ACTA 56 NO PUDO REPRODUCIR LAS CUAT
+
+      ultima vuelta de saneamiento: 54
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+    $ ls cuarentena/grove_high_output | wc -l
+    81
+
+**`346`, `740`, `1` y `81` al cerrar mi turno, los mismos que al abrirlo.** **Yo tampoco he
+movido el grafo**, que es lo que `MODO_INSERCION=cuarentena` y `D.39` mandan mientras el lote
+`7` siga abierto.
+
+**`PARA_ALEXIS.md` NO SE ESCRIBE. `PROMPT_SIGUIENTE.md` SALE ESCRITO.** El bucle sigue y la
+vuelta `58` abre en `cap_14`, con Opus y con la aduana en el acto por delante.
