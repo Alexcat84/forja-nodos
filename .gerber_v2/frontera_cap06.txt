@@ -1,0 +1,14 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_06.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L221.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **32** | el numero del capitulo, el rotulo `ADOLESCENCE: GETTING SOME HELP` y el epigrafe de Alvin Toffler | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L57 | **255** | la Adolescencia empieza cuando pides ayuda, y la ayuda que el tecnico busca es siempre tecnica: alguien con experiencia en tu mismo oficio | **POSTURA** |
+| `R3` | L58 a L127 | **671** | Harry el contable: la Management by Abdication en vez de Delegation, el alivio de no tener que hacerlo, y la vida que se vuelve facil | **CASO** |
+| `R4` | L128 a L215 | **977** | las llamadas que lo rompen todo, la vuelta del malabarista, la conclusion de que nadie se preocupa como tu, y la Comfort Zone tocando su limite | **CASO y POSTURA** |
+| `R5` | L216 a L221 | **45** | Sarah y el nervio tocado: su propia zona de confort | **RESIDUO: bisagra** |
+| **el cuerpo entero** | **L8 a L221** | **1980** | **suma de las piezas: 1980** | **residuo sin asignar: 0** |
+
+piezas: 5   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1980   suma 1980   residuo 0
