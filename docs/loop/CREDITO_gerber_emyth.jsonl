@@ -1,1 +1,7 @@
 {"cita": "REPORTE.md seccion G2", "especie": "REPORTE", "linea": "gerber_emyth", "racha": "1 de 3", "tanda": "G2", "tipo": "tanda", "vuelta": 2}
+{"cita": "docs/loop/paradas/2026-09-17-gerber-la-racha-y-la-linea-vieja-RESUELTA.md seccion 3", "especie": "AUDITOR", "linea": "gerber_emyth", "migrado": "true", "racha": "1 de 3", "tanda": "ACTA G1", "tipo": "tanda", "vuelta": 1}
+{"cae": true, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G2 seccion 3.1", "especie": "REPORTE", "linea": "gerber_emyth", "racha": "2 de 3", "tanda": "ACTA G2", "tipo": "tanda", "vuelta": 2}
+{"cae": true, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G2 seccion 3.2", "especie": "CIFRA PUBLICADA", "linea": "gerber_emyth", "racha": "1 de 2", "tanda": "ACTA G2", "tipo": "tanda", "vuelta": 2}
+{"cae": false, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G2 seccion 3.3", "especie": "CLASE", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G2", "tipo": "tanda", "vuelta": 2}
+{"cae": false, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G2 seccion 3.3", "especie": "DATO MOVIDO", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G2", "tipo": "tanda", "vuelta": 2}
+{"cae": true, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G2 seccion 5.1", "especie": "AUDITOR", "linea": "gerber_emyth", "racha": "2 de 3", "tanda": "ACTA G2", "tipo": "tanda", "vuelta": 2}

@@ -45101,3 +45101,633 @@ a una en `61.9`, el cerrojo por mutacion.
   para el dia de la insercion, y `d093`, el alcance del barrido de bandeja que `R6` quiere resuelto.
 - **`docs/loop/PARA_ALEXIS.md`**: la parada, con el motivo y el estado exacto.
 - **`docs/loop/PROMPT_SIGUIENTE.md`**: **VACIO**, que es lo que la seccion `3` manda.
+
+---
+
+# ACTA `G2` DEL FRENTE `gerber_emyth`. VUELTA 2, lote 9, `cap_05` y `cap_06` **EN CUARENTENA**, **CLASE EXTRACCION EN REGIMEN LIGERO**: **LA COSECHA CERO ES CIERTA Y SE LA FIRMO ENTERA TRAS LEER LOS DOS CAPITULOS LINEA A LINEA; LO QUE SE CAE ES UNA CELDA DE SU TABLA DE PARADA Y, LA MAS CARA, EL NUMERO QUE SE ESCRIBIO A SI MISMO EN EL REGISTRO DE CREDITO**. Le recompongo **las `9` filas de las dos fronteras** contra el fichero y me salen **al digito** (`2400` y `1980` palabras, residuo `0`, `0` solapes, `0` lineas sin cubrir), le reproduzco **las `32` celdas de su tabla de apertura** una a una, su muestra de fidelidad con semilla `g2` me sale **identica byte a byte**, sus cuatro `git hash-object` me salen **los cuatro**, y **los tres discutibles que marco se sostienen los tres**, con **tres superficies mas que el NO marco y que examino yo**. Y aun asi: **su tabla de parada dice `los dos discutibles` donde hay `3`**, y **el registro de credito de esta linea publica `1 de 3` para una tanda que el mismo declara limpia**, cuando su encargo le dijo por escrito que su racha empieza en cero. **`REPORTE` sube a `2 de 3` y `CIFRA PUBLICADA` abre en `1 de 2`.** **Y MI PROPIA RACHA SUBE A `2 de 3`**, porque el remedio que la `ACTA G1` dejo escrito no se cumplio. **NO HAY PARADA, Y LAS DOS ESCALADAS VAN ENCARGADAS**
+
+*Escrita el 21 sep 2026 por el auditor del bucle, sobre el commit `0fd8e1d` de la rama
+`extraccion-gerber_emyth`, worktree `C:/Users/AlexDesk/Documents/forja-gerber_emyth`.
+**Clase de la vuelta auditada: EXTRACCION en regimen ligero** (`D.58`), asi que **no hubo fase
+ciega, ni sello, ni testigo**, y esta acta es corta por mandato de esa misma regla y de `D.47`.*
+
+---
+
+## 0. **NO HAY HUECO DE ACTA**, y la herencia se declara antes que nada
+
+**La `ACTA G1` cubre la vuelta `1` de este frente y yo cubro la `2`.** No hay vuelta sin auditar
+entre las dos. La `ACTA G1` no vive en este fichero porque el commit `c01e8aa` archivo la sede
+propia del frente al reanudarlo:
+
+    $ grep -c "^# ACTA .G1. DEL FRENTE" docs/loop/archivo/gerber_emyth/ACTA_AUDITOR_frente_hasta_G1.md
+    1
+    $ git log --oneline -1 c01e8aa
+    c01e8aa Reanuda el frente gerber_emyth: trae la maquinaria, la doctrina y el grafo de la serial, y archiva su propia sede
+
+**ACTA ANTERIOR LEIDA:** `docs/loop/archivo/gerber_emyth/ACTA_AUDITOR_frente_hasta_G1.md`,
+seccion `7`, y su parada archivada en
+`docs/loop/paradas/2026-09-17-gerber-la-racha-y-la-linea-vieja-RESUELTA.md`.
+
+**EL ARNES NO ME ENTREGO NINGUN `REMEDIOS PENDIENTES QUE HEREDAS`** (`D.40`), y no es un
+descuido suyo: **entre la `G1` y la `G2` el arnes no corrio.** El frente se reanudo a mano y el
+encargo de la vuelta `2` lo escribio una sesion de chat, que lo declara en su propia cabecera.
+**Los fui a buscar yo, y por eso los numero aqui.**
+
+| | heredado de la `ACTA G1`, seccion `5` de su parada | como queda hoy, medido |
+|---|---|---|
+| **HEREDADO 1** | correccion declarada CON TACHADO de tres celdas del bloque `G1`: la de `G1.10.d` que cita `G1.10.e` (seccion que no existe), la fila `CERRADO` del esqueleto `G1.0`, y la apertura de `G1.9` que promete un saldo que no llego | **NO CUMPLIDO** |
+| **HEREDADO 2** | correr `python .v1g_auditor/secciones.py` antes de cerrar cualquier reporte, y que de `0` | **NO CUMPLIDO, y hoy el instrumento REVIENTA** |
+| **HEREDADO 3** | tramo de `5` candidatos arrancando en `cap_12` | **CADUCADO por `D.13`**, y el motivo esta debajo |
+
+**HEREDADO 1, medido y no recordado.** La celda sigue sin tachar:
+
+    $ grep -n "G1.10.e" docs/loop/archivo/gerber_emyth/REPORTE_frente_hasta_v1.md
+    36809:| una guarda en rojo | **ninguna en este turno.** Las cuatro de `G1.10.e` en verde al sellar | **NO ES PARADA** |
+
+**HEREDADO 2, con su salida pegada** (`D.40` ensanchada: un incumplimiento tambien lleva el
+comando que lo sostiene):
+
+    $ python .v1g_auditor/secciones.py
+    Traceback (most recent call last):
+      File "C:\Users\AlexDesk\Documents\forja-gerber_emyth\.v1g_auditor\secciones.py", line 6, in <module>
+        ini = max(i for i, l in enumerate(texto) if l.startswith('# FRENTE `gerber_emyth`, VUELTA 1'))
+    ValueError: max() iterable argument is empty
+    $ grep -c "^# FRENTE .gerber_emyth., VUELTA 1" docs/loop/REPORTE.md
+    0
+    $ grep -c "^# FRENTE .gerber_emyth., VUELTA 1" docs/loop/archivo/gerber_emyth/REPORTE_frente_hasta_v1.md
+    1
+
+> **LECTURA:** el instrumento busca el bloque `G1` dentro de `docs/loop/REPORTE.md`, y **ese
+> bloque se archivo**. No esta roto por su codigo: esta apuntando a donde el bloque ya no vive.
+> **Sigue siendo cumplible** apuntandolo al fichero archivado, y asi va encargado.
+
+**HEREDADO 3: CADUCADO, y lo adjudico citando regla y no comodidad.** Mandaba arrancar en
+`cap_12` con tramo de `5`. La decision del fundador del `21` sep `2026`, punto `3`, es
+**posterior** y manda continuar desde `cap_05` con la frontera heredada. **`D.13`: entre dos
+reglas fechadas que chocan gana la mas reciente**, y la perdedora se corrige sin borrarse. Su
+disparador, ademas, era `EXTRACTOR.md` `12.4` por un reporte que no cerro en su turno, **y la
+vuelta `2` si cerro el suyo**.
+
+---
+
+## 1. LO QUE VERIFIQUE CON MIS PROPIOS COMANDOS
+
+### 1.1. Las guardas, corridas por mi en este turno
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py
+      total: 343 pruebas, 0 fallos, 0 errores
+    $ python forja.py resolutor
+    nodos vivos: 346
+    nodos deprecados (archivo): 0
+    alias registrados: 0
+    $ python scripts/tallar_reporte.py
+    TALLADO VERDE: las 161 tabla(s) comprobables son las de su instrumento, celda a celda.
+    $ python scripts/censar_rutas.py
+    CENSO VERDE: las 922 rutas publicadas sostienen lo que dicen sostener.
+
+**Las cuatro guardas que bloquean** (`D.55`: `gate`, el cerrojo, el censo no decreciente y la
+fidelidad `D.30` con puente) **estan en VERDE.** Ninguna averia que reparar antes de seguir.
+
+### 1.2. Mi propio conteo del dataset y de la bitacora
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+    $ ls cuarentena/gerber_emyth/*.json | wc -l
+    10
+    $ git diff --name-only 072b49f..HEAD -- dataset/ bitacora/ censos/ config/pares_mutuos.jsonl
+    (vacio)
+
+**`346`, `740` y `10` coinciden con su apertura (`G2.1`) y con su cierre (`G2.8.b`), y `0`
+ficheros de dato movidos.** La vuelta no toco el grafo, y eso lo mido yo, no lo copio.
+
+### 1.3. Las dos fronteras, recompuestas por mi contra el fichero y no contra su salida
+
+**No corri su instrumento: escribi el mio.** Deriva el arranque del cuerpo del propio fichero
+(la linea siguiente al segundo cierre de la cabecera yaml), suma palabras por tramo, y cuenta
+huecos y solapes:
+
+    $ python -c "<mi recuento, fila a fila, sobre los dos ficheros>"
+    fuentes/gerber_emyth/cap_05.md | cierres [1, 7] | cuerpo L8-L149 | palabras cuerpo 2400
+        R1 L8-L19 39
+        R2 L20-L31 148
+        R3 L32-L89 862
+        R4 L90-L149 1351
+        SUMA 2400 RESIDUO 0 HUECOS 0 SOLAPES 0
+    fuentes/gerber_emyth/cap_06.md | cierres [1, 7] | cuerpo L8-L221 | palabras cuerpo 1980
+        R1 L8-L19 32
+        R2 L20-L57 255
+        R3 L58-L127 671
+        R4 L128-L215 977
+        R5 L216-L221 45
+        SUMA 1980 RESIDUO 0 HUECOS 0 SOLAPES 0
+
+> **LAS `9` FILAS DE LAS DOS FRONTERAS ME SALEN AL DIGITO**, y con ellas los dos totales, los
+> dos residuos, los dos recuentos de solape y los dos de hueco. **`13` cifras.**
+
+Y **los tres `diff` que el reporte pega tambien los corri yo**, porque una comparacion citada y
+no corrida no prueba nada: `.gerber_v1/frontera.py` contra `.gerber_v2/frontera.py`, y las dos
+salidas de `cap_05` y `cap_06` de una vuelta contra la otra. **Los tres vacios.**
+
+### 1.4. Su tabla de apertura, celda a celda, contra mi propio conteo del libro
+
+Conte yo las `22` unidades del libro con mi codigo, sin tocar el suyo:
+
+    $ python -c "<mi recuento del cuerpo de las 22 unidades>"
+    cap_01.md 1402 | cap_02.md 1212 | cap_03.md 2202 | cap_04.md 3713 | cap_05.md 2400
+    cap_06.md 1980 | cap_07.md 4284 | cap_08.md 2183 | cap_09.md 2845 | cap_10.md 1411
+    cap_11.md 4360 | cap_12.md 4206 | cap_13.md  364 | cap_14.md 3695 | cap_15.md 4685
+    cap_16.md 4835 | cap_17.md 2448 | cap_18.md 5396 | cap_19.md 4431 | cap_20.md 1841
+    cap_21.md 1851 | cap_22.md  904
+    TOTAL CUERPO 62648 | ficheros 22
+
+**Las `22` palabras de cuerpo me salen las `22`, y el total `62648` tambien.** Los `22` rotulos
+de `unidad` y los `22` de `titulo_textual` los lei de las cabeceras yaml y **coinciden los
+`44`**, incluido el salto de `Cap. 16` a `Cap. 18` en la tabla, que es correcto: el `Cap. 17`
+esta apartado y **su fichero existe y es uno**.
+
+**La celda `claves en la tabla canonica: 12` la comprobe por dentro antes de firmarla**, porque
+el fichero tiene `13` claves de primer nivel: la que sobra es `_lea_esto`, y el instrumento
+cuenta las que no empiezan por guion bajo. **La celda es de su instrumento y la cifra es
+cierta.**
+
+### 1.5. La muestra de fidelidad, recorrida con su semilla (`D.58`)
+
+    $ python scripts/muestra_fidelidad.py --libro gerber_emyth --capitulos cap_05,cap_06 --semilla g2 > /tmp/mf.txt
+    $ diff /tmp/mf.txt .gerber_v2/muestra_fidelidad.txt
+    (vacio)
+
+**La lista que me sale es la que el reporte pego, byte a byte.** `cap_05` ENTERO, `cap_06` por
+muestra, **`0` pasos en los dos**. `D.58` dice que una lista distinta es caida de cifra: **no lo
+es.** Y el disparador del `10` por ciento **no tiene sobre que dispararse**: no hay paso.
+
+### 1.6. Los cuatro `git hash-object` de la tabla de cierre
+
+    $ git hash-object docs/loop/TABLA_DE_CIERRE.txt
+    4c93373e3be91ae4a417ef7340047421af281c90
+    $ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_gerber_v2.txt
+    4c93373e3be91ae4a417ef7340047421af281c90
+    $ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v62.txt
+    e0fac5d10018d9bf513aa7c6c98c961f415e6319
+    $ git rev-parse 072b49f:docs/loop/TABLA_DE_CIERRE.txt
+    e0fac5d10018d9bf513aa7c6c98c961f415e6319
+
+**Los cuatro me salen los cuatro.** Su afirmacion de que archivo la version viva antes de
+sobrescribirla, y de que esa version era intacta la de la vuelta `62` de la serial, **se
+sostiene contra git y no solo contra su prosa.**
+
+---
+
+## 2. `PASOS INVENTADOS POR CAPITULO`, QUE ES CIFRA MIA Y LA FIRMO (seccion `8`)
+
+**No la copio: la conte yo contra la cuarentena**, que es lo que mi `8.3` punto `1` manda:
+
+    $ python -c "<mi recuento de pasos y capitulo de origen, candidato a candidato>"
+    construir_empresa_plantilla_vision_diaria    pasos  8 | ['cap_08']
+    dar_valor_constante_cuatro_publicos          pasos  8 | ['cap_11']
+    dictar_ritmo_crecimiento_preguntas_escritas  pasos  8 | ['cap_07']
+    documentar_trabajo_manual_operaciones        pasos 10 | ['cap_11']
+    fingir_prototipo_cinco_mil_replicas          pasos 11 | ['cap_11']
+    hacer_trabajo_futuro_imaginar_negocio        pasos  7 | ['cap_04']
+    interrogar_negocio_cinco_preguntas           pasos 10 | ['cap_11']
+    operar_modelo_gente_destreza_minima          pasos 10 | ['cap_11']
+    trazar_modelo_negocio_cliente_primero        pasos  9 | ['cap_08']
+    unificar_color_forma_vestuario_modelo        pasos  8 | ['cap_11']
+    TOTAL pasos en bandeja: 89
+
+| capitulo | candidatos nuevos que yo cuento | pasos escritos que yo cuento | PUENTE | pasos inventados |
+|---|---:|---:|---:|---|
+| `cap_05` | `0` | `0` | `0` | **SIN SUPERFICIE** |
+| `cap_06` | `0` | `0` | `0` | **SIN SUPERFICIE** |
+| **la vuelta `2` entera** | **`0`** | **`0`** | **`0`** | **SIN SUPERFICIE** |
+
+> **LECTURA:** `SIN SUPERFICIE` es lo correcto y no una evasiva. `D.59` prohibe publicar una
+> razon sin numerador y sin denominador, y el denominador aqui es `0`. **Ninguno de los `89`
+> pasos de la bandeja sale de `cap_05` ni de `cap_06`**, asi que el capitulo no aporto
+> superficie sobre la que medir. **Su fila es la mia.**
+
+**Mi `8.3` punto `2` (releer una muestra de los pasos marcados TRANSCRIPCION contra su parrafo)
+se cumple con su cifra y no con una muestra inventada:** la poblacion de esta tanda es `0`
+pasos. **No se inventa una muestra donde no hay poblacion** (seccion `7`).
+
+**Y LO QUE ESTO LE DEJA AL VOLUMEN:** nada subio, porque nada se midio. La subida de `2` a `3`
+capitulos del encargo siguiente **NO la sostiene esta metrica**: la sostiene el techo escrito de
+`D.58`, y asi va dicho en el encargo.
+
+---
+
+## 3. LO QUE SE CAE, POR ESPECIE
+
+### 3.1. `REPORTE`, **`1` caida que ACUMULA**: su tabla de parada cuenta `2` discutibles donde hay `3`
+
+**La celda, y esta en una TABLA**, que es una de las tres sedes que hacen acumular a esta
+especie (`5.2`):
+
+    $ sed -n '57681p' docs/loop/REPORTE.md
+    | una pregunta de doctrina | ninguna: los dos discutibles de `G2.7` son de lectura, no de regla, y no piden doctrina nueva | **NO ES PARADA** |
+
+**Y el propio reporte se desmiente a si mismo dos secciones antes**, lo que quita toda duda
+sobre cual de las dos cifras es la falsa:
+
+    $ sed -n '57659p' docs/loop/REPORTE.md
+    | `5` | el cierre | **CERRADA en `G2.8`**: estado recomputado (`346`/`740`/`10`), guardas en VERDE, `2` capitulos y `0` candidatos del tramo, `3` discutibles marcados |
+    $ sed -n '57600,57607p' docs/loop/REPORTE.md | grep -c "^| [0-9]"
+    3
+
+**`G2.7` tiene `3` filas. `G2.8.c` dice `3`. `G2.8.d` dice `los dos`.**
+
+> **POR QUE ACUMULA Y NO SE PERDONA.** No es prosa de acompanamiento: es **la columna de la
+> medida** de la tabla que decide si el bucle sigue, y la fila que recorre es justamente la de
+> `doctrina NUEVA necesaria`. **Una tabla de parada que no sabe cuantas dudas repaso no esta
+> repasandolas.** Y lo digo tambien por el otro lado, que es lo que la hace justa: **el
+> veredicto de esa fila es correcto**. Los tres discutibles son de lectura, los tres, y ninguno
+> pide doctrina nueva. **Lo falso es la cifra, no la conclusion.**
+
+**DENTRO CONTRA FUERA DEL MARCADO** (`5.3`): **FUERA.** El extractor marco `3` discutibles y
+acerto en los `3` sitios donde tenia duda; **lo que no vio fue la cuenta de sus propias dudas.**
+
+**`REPORTE` pasa de `1 de 3` (tanda `G1`) a `2 de 3`.** Es el penultimo escalon, y la escalada
+va encargada en `8`.
+
+### 3.2. `CIFRA PUBLICADA`, **`1` caida que ACUMULA**: la racha que se escribio a si mismo
+
+**La linea, tal como quedo escrita en el registro:**
+
+    $ head -1 docs/loop/CREDITO_gerber_emyth.jsonl
+    {"cita": "REPORTE.md seccion G2", "especie": "REPORTE", "linea": "gerber_emyth", "racha": "1 de 3", "tanda": "G2", "tipo": "tanda", "vuelta": 2}
+
+**LO QUE LA HACE FALSA, y son dos cosas distintas que se suman:**
+
+1. **El numero contradice su propia declaracion.** La tanda `G2` **se declara limpia de punta a
+   punta**: `G2.8.d` repasa las cinco condiciones de parada y ninguna se cumple, y el bloque no
+   declara ni una caida propia. **`D.38.1` es explicita: una tanda limpia pone el contador a
+   CERO, no lo congela.** Bajo su propia declaracion la celda tenia que decir `0 de 3`.
+2. **Y su encargo se lo habia dicho con todas las letras**, asi que no hay lectura ancha que lo
+   salve:
+
+       $ git show 072b49f:docs/loop/PROMPT_SIGUIENTE.md | grep -n "empieza en"
+       Escribe tu tanda: python forja.py credito --anotar. Tu racha es tuya y empieza en
+       cero (D.48). Una linea que no escribe su credito nace de nuevo cada vuelta [...]
+
+**Y ES FALSA BAJO LAS DOS LECTURAS POSIBLES, que es lo que me deja adjudicarla sin doctrina
+nueva.** Si la tanda `G2` es limpia, el numero es `0 de 3`. Si la tanda `G2` cae (y cae, por
+`3.1`), entonces con la tanda `G1` en `1` el numero es `2 de 3`. **`1 de 3` no es ninguno de los
+dos.**
+
+**POR QUE `CIFRA PUBLICADA` Y NO `REPORTE`, que es la pregunta que decide el escalon.** `5.2`
+dice que **la sede decide la especie, no el dano**. La sede de `REPORTE` es
+`docs/loop/REPORTE.md`, **que se reescribe cada vuelta**. Esta cifra no vive ahi: vive en
+`docs/loop/CREDITO_gerber_emyth.jsonl`, que esta bajo `docs/`, **se anade y no se reescribe**, y
+que la decision del fundador del `17` sep `2026` creo **precisamente para que el credito dejase
+de vivir solo en un acta que nadie relee**. Es la sede mas duradera que esta cifra podia tener,
+y **es el numero del que depende que el bucle pare o siga.**
+
+**Y HAY UN SEGUNDO DEFECTO EN LA MISMA LINEA, que no cuenta aparte pero explica el primero:**
+se escribio **sin `--limpia` y sin `--cae`**, y sin ese campo el instrumento **no puede
+replayarla**:
+
+    $ grep -n "cae" src/credito.py
+    295:        if "cae" not in suceso or suceso.get("migrado"):
+    300:        contador[especie] = contador.get(especie, 0) + 1 if suceso["cae"] else 0
+
+Con el campo puesto, `revisar()` habria cazado el `1` contra el replay en el acto. **Sin el, el
+instrumento toma el numero declarado como punto de partida y no acusa a nadie.** La guarda
+estaba ahi y la linea paso por debajo.
+
+**LO QUE DIGO A SU FAVOR, y lo digo porque es cierto y porque una metrica que solo acusa no es
+una metrica:**
+
+- **El encargo le mando escribir la tanda** (`seccion 5`), y en las `12` lineas del registro de
+  la serial **la tanda la escribe siempre el AUDITOR**, con el nombre del acta en el campo
+  `tanda` (`ACTA 59`, `ACTA 60`, `ACTA 61`). Aqui el campo dice `G2`, que es una seccion de su
+  reporte. **El encargo le pidio adjudicar, y adjudicar no es suyo** (regla madre, manual
+  principio `10`: **el que mide no adjudica**). **La primera responsabilidad de esta caida es
+  del encargo**, que lo escribio una sesion de chat y no un auditor.
+- **El error va CONTRA el, no a su favor.** Se cargo un escalon que no le tocaba. Queda
+  descartada de plano la lectura de que la cifra se eligio por conveniencia.
+- **Y supo hacerlo bien en el caso gemelo.** Su mensaje de cierre levanta, por su cuenta, que el
+  encargo le mandaba escribir `docs/loop/PROMPT_SIGUIENTE.md` siendo sede del auditor, y lo
+  declara como desviacion. **Es exactamente la misma figura**, y la otra mitad no la levanto.
+
+**`CIFRA PUBLICADA` abre en `1 de 2`.** El tope es `2`. **No para**, y la escalada va encargada.
+
+### 3.3. `CLASE` y `DATO MOVIDO`: **CERO las dos**
+
+| especie | lo que mido | de donde |
+|---|---|---|
+| **`CLASE`** | **CERO.** El frente no inserta: `0` veredictos puestos, `bitacora/` intacta, `config/pares_mutuos.jsonl` en su unica linea | `1.2` |
+| **`DATO MOVIDO`** | **CERO.** `0` ficheros de `dataset/`, `bitacora/`, `censos/` o `config/pares_mutuos.jsonl` movidos entre `072b49f` y `HEAD` | `1.2` |
+
+### 3.4. La correccion del registro, hecha **anadiendo y sin borrar**
+
+**La linea del extractor se queda donde esta.** Encima escribo mi tanda, que es lo que el `17`
+sep mando que fuese parte de cerrar un acta, con la tanda `G1` entrando como `migrado` porque su
+historia es anterior a este registro (el fichero nacio hoy) y su adjudicacion vive en
+`docs/loop/paradas/`, que es donde `5.4` siempre mando que viviera:
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'gerber_emyth' (D.48)
+      registro: docs/loop/CREDITO_gerber_emyth.jsonl
+      tandas: 3, en 7 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            2 de 3     ACTA G2
+      CIFRA PUBLICADA    1 de 2     ACTA G2
+      CLASE              0 de 2     ACTA G2
+      DATO MOVIDO        0 de 2     ACTA G2
+      REPORTE            2 de 3     ACTA G2
+
+      CREDITO ENTERO: ninguna especie en su tope.
+    $ python forja.py credito --revisar
+    REPLAY VERDE en la linea 'gerber_emyth': las 5 tanda(s) vigilables suman lo que declaran.
+      1 suceso(s) migrado(s) quedan FUERA del replay: sus reinicios viven en docs/loop/paradas/, no en el registro.
+    $ python forja.py credito --citas
+    CITAS VERDES en la linea 'gerber_emyth': todas son referencia, ninguna trae una conclusion dentro (D.56).
+
+---
+
+## 4. LA RELECTURA CIEGA: **LOS TRES DISCUTIBLES SE SOSTIENEN LOS TRES**
+
+**Declaro el limite de mi propia ceguera antes de adjudicar, porque de lo contrario la cifra no
+vale.** En regimen ligero **no hay veredicto que destapar**: `bitacora/VEREDICTOS.jsonl` no se
+toco y la razon escrita que `1.2` de mi protocolo manda destapar al final **no existe en esta
+vuelta**. Lo que si hice, y es lo unico que aqui significa algo: **lei
+`fuentes/gerber_emyth/cap_05.md` y `fuentes/gerber_emyth/cap_06.md` enteros, linea a linea, las
+`149` y las `221`**, y adjudique con `EXTRACTOR.md` `9` y `9.1` delante. **Su prosa la habia
+leido antes**, y por eso **anado en `4.4` tres superficies que el NO marco**: es ahi, y no en
+sus tres, donde se ve si lei yo.
+
+### 4.1. Discutible `1`: `cap_05` `R2`, las tres fases. **SE SOSTIENE.** Y `D.37` no aplica, y lo cito
+
+**La linea que lo levanta**, y la marca el bien:
+
+    $ sed -n '29p' fuentes/gerber_emyth/cap_05.md
+    To understand why, let's take a look at the three phases of a business's growth: Infancy, Adolescence, and Maturity.
+
+**Dice CUANTAS partes hay y las NOMBRA.** Ese es literalmente el supuesto de `D.37`, asi que su
+duda estaba bien puesta. **Y aun asi `D.37` no aplica, por su propia letra y por tres sitios:**
+
+| lo que `D.37` exige | lo que hay aqui |
+|---|---|
+| *cuando el titulo o el texto de **UN NODO** enumera sus partes* | **no hay nodo.** La enumeracion vive en una pieza clasificada POSTURA, y una frase de un libro no es una cabeza |
+| *y esas partes **EXISTEN COMO NODOS*** | **no existe ninguna.** `cap_05` (Infancy) y `cap_06` (Adolescence) dan `0` candidatos, verificado en `2` |
+| *la arista se declara **EN EL ACTO DE INSERTAR LA PARTE*** | **no se inserta nada.** `MODO_INSERCION=cuarentena` y `D.39` no deja entrar a la bandeja |
+
+**Y por la vara de `9.1`, que es la que decide si `R2` es nodo:** las tres fases son un
+inventario, si, **pero de FASES por las que un negocio pasa**, no de medios, etapas u objetos de
+trabajo que el libro mande ejecutar. **Nadie ejecuta la Infancia.** Es la restriccion `1` en su
+forma mas limpia: **nombrar adonde va la narracion sigue siendo nombrar.** Y `9.1` arranca por
+*una linea NORMATIVA se vuelve procedimentable*: **`R2` no tiene mandato ninguno**, asi que la
+prueba del inventario ni siquiera llega a abrirse.
+
+> **LECTURA, y va marcada porque es conclusion mia y no medida:** la clasificacion es correcta
+> **y ademas no cuesta nada**, que es la parte que su duda temia. `D.37` es una regla sobre el
+> CABLE, no sobre el NACIMIENTO, y opera en el acto de insertar. Si una vuelta futura hace nacer
+> una cabeza de las tres fases, **la arista se declarara entonces citando `cap_05` L29**, y esa
+> linea no se va a ninguna parte. **Queda anotado en `docs/loop/DEUDA.jsonl` como `d098` para
+> que no dependa de que alguien lo recuerde.**
+
+### 4.2. Discutible `2`: `cap_06` `R3`, *Management by Abdication*. **SE SOSTIENE**, y traigo la medida que lo cierra
+
+    $ sed -n '103p' fuentes/gerber_emyth/cap_06.md
+    It's called Management by Abdication rather than by Delegation .
+
+**Su lectura es la correcta y la vara madre la sostiene palabra por palabra:** *una linea solo
+cuenta como procedimiento propio si trae procedimiento propio, **y no solo el nombre de otro***.
+Aqui `Delegation` es **exactamente el nombre de otro**: el capitulo no dice ni una vez en que
+consiste delegar, ni con que se hace, ni por que etapas pasa. Un nombre de error frente a un
+nombre de alternativa **no es un inventario de dos vias: son dos etiquetas.**
+
+**Y NO SE PIERDE NADA, que es lo que su duda queria saber. Lo mido:**
+
+    $ grep -rn -i "delegat" fuentes/gerber_emyth/*.md fuentes/gerber_emyth_cap17_reservado/*.md
+    fuentes/gerber_emyth/cap_06.md:103:It's called Management by Abdication rather than by Delegation .
+    fuentes/gerber_emyth/cap_11.md:113:That is, the typical small business owner prefers Management by Abdication to Management by Delegation .
+    fuentes/gerber_emyth/cap_18.md:345:"Remember Delegation rather than Abdication?
+    fuentes/gerber_emyth/cap_18.md:347:"You can't delegate your accountabilities, Sarah.
+    fuentes/gerber_emyth/cap_18.md:349:"Delegating your accountabilities is abdication.
+
+> **LECTURA:** el libro **nombra** el contraste en `cap_06` y en `cap_11`, y **vuelve sobre el
+> con contenido propio en `cap_18`** (`Cap. 16`, *Your People Strategy*, `5396` palabras,
+> **SIN MINAR**). `EXTRACTOR.md` `9` admite como nodo *un procedimiento que el libro nombra en
+> una tabla y desarrolla en otro sitio*: **el sitio donde se desarrolla es `cap_18`, no
+> `cap_06`.** El cero de `cap_06` no pierde el nodo: **lo deja donde nace.** Anotado como
+> `d099`, y `cap_18` entra por este motivo en la cola del encargo.
+
+### 4.3. Discutible `3`: haber aceptado la frontera de la vuelta `1` sin repartir `R3`. **SE SOSTIENE**, y lo probe donde el dijo
+
+**La pieza que el senala es `cap_05` `R3`, `58` lineas, `862` palabras.** La lei entera buscando
+lo unico que un corte mas fino podria haber aislado: un tramo con forma de procedimiento dentro
+de una narracion. **El unico candidato a ese corte son las `L67` a `L73`**, que es donde el
+texto cambia a verbos sueltos:
+
+    $ sed -n '67,73p' fuentes/gerber_emyth/cap_05.md | tr -s '\n' ' '
+    What do you do? You stretch. You work harder. You put in more time, more energy.  If you put in twelve hours before, you now put in fourteen.  If you put in fourteen hours before, you now put in sixteen.  If you put in sixteen hours before, you now put in twenty. But the balls keep dropping!
+
+> **LECTURA:** es **descripcion de lo que el duenio hace**, en segunda persona narrativa, y el
+> propio parrafo la cierra diciendo que no funciona (*but the balls keep dropping*). **Un
+> procedimiento que el libro presenta para decir que fracasa no es un procedimiento que el libro
+> mande ejecutar.** Un corte mas fino habria aislado el tramo y habria dado el mismo cero.
+> **Ceder al corte de la vuelta `1` no le costo nada, y lo compruebo en vez de concederselo.**
+
+### 4.4. **LAS TRES SUPERFICIES QUE EL NO MARCO Y QUE MIRE YO**, que es donde se ve si lei
+
+**Mi seccion `7` dice que la relectura de los marcados mide un error y que el otro error, el de
+dejar pasar, hay que medirlo aparte.** Aqui no hay `SANO` que pinear, asi que lo que hago es lo
+equivalente: **ir a las piezas donde el NO dudo y buscar inventario.** Fui a tres, y son las
+tres que mas se acercan en los dos capitulos.
+
+| # | pieza y linea | por que la mire | mi veredicto |
+|---:|---|---|---|
+| **a** | `cap_05` `R4`, **`L131`** | es **la unica enumeracion cerrada de los dos capitulos**, y el no la marco | **NO ES NODO** |
+| **b** | `cap_05` `R4`, **`L141`** | trae **tres verbos en fila** sobre que hacer con el Entrepreneur | **NO ES NODO** |
+| **c** | `cap_06` `R2`, **`L37` a `L41`** | trae **tres patrones nombrados uno a uno** | **NO ES NODO** |
+
+**(a), y es la mas seria de las tres:**
+
+    $ sed -n '131p' fuentes/gerber_emyth/cap_05.md
+    [...] "get rid of your business! And get rid of it as quickly as you can. [...] You can't
+    ignore the financial accountabilities, the marketing accountabilities, the sales and
+    administrative accountabilities. [...] cash flow, growth, customer sensitivity,
+    competitive sensitivity, and so forth.
+
+> **LECTURA:** tiene imperativo (*get rid of your business*) y tiene lista nombrada, que son las
+> dos senales que `9.1` busca. **Y aun asi no es nodo, por tres sitios a la vez.** Primero, la
+> forma es **una advertencia** (*you can't ignore*), y `9` la nombra por su nombre: *una
+> advertencia es linea, no procedimiento*. Segundo, **la lista se cierra en `and so forth`**: el
+> libro la deja ABIERTA, y una lista abierta no es el inventario propio del libro. Cualquier
+> paso que la cerrase **lo escribiria el extractor**, que es la definicion literal de PUENTE en
+> el corolario de `9.1`. Y tercero, lo que enumera son **areas de responsabilidad**, o sea
+> fines, no medios ni etapas ni objetos de trabajo: **restriccion `1`.**
+>
+> **LO DIGO PORQUE ES LA QUE YO HABRIA MARCADO EN SU LUGAR**, y que no la marcase es lo unico de
+> su lectura que le reprocho. **No cambia su cero**, y por eso no es caida de nada: es una duda
+> que faltaba en su lista de dudas.
+
+**(b):** *your Entrepreneur needs to be coaxed out, nourished, and given **the room she needs**
+to expand* (`L141`). Tres verbos, si, **pero el criterio es un adjetivo de adecuacion**: *the
+room she needs*. **Restriccion `2` de `9.1`: el adjetivo de adecuacion en el sitio del criterio
+TUMBA, aunque haya inventario.** No es nodo.
+
+**(c):** *The sales-oriented owner goes out to find a production person* y las dos que le siguen
+(`L37` a `L41`). Son **tres patrones que el libro OBSERVA**, en tercera persona y en indicativo,
+y el parrafo entero existe para decir que esa busqueda es el error. **Describir lo que la gente
+hace mal no es mandar hacerlo.** No es nodo.
+
+> # **FIRMO EL CERO DE LOS DOS CAPITULOS.** `3` de `3` discutibles suyos en pie, `3` superficies
+> mas miradas por mi, y **ninguna pasa la vara de `EXTRACTOR.md` `9`**. Los dos capitulos son
+> diagnostico narrado, y `cap_06` se cierra con la bisagra hacia el `cap_07`, que es donde la
+> Comfort Zone se vuelve materia. **La cosecha cero es el resultado correcto, no un turno flojo.**
+
+---
+
+## 5. MIS PROPIOS ERRORES, CON MI NOMBRE (`5.3`)
+
+### 5.1. `REMEDIO ROTO`: **el remedio de la `ACTA G1` no se cumplio, y la racha es de la LINEA**
+
+**Lo declaro contra mi.** `D.48` dice que la racha es **de la linea**, no de la sesion, y la
+racha del auditor de `gerber_emyth` venia en `1 de 3` por el `REMEDIO ROTO` que la propia
+`ACTA G1` se cargo. **El remedio que esa acta dejo escrito sigue sin cumplirse** (`0`, los dos
+puntos vivos), y `5.5` es explicita: **romper un remedio escrito acumula, sea de quien sea.**
+
+**Y ES REMEDIO DE SUSTANCIA DE AUDITORIA, no de formato de artefacto**, que es la acotacion del
+`12` sep: el punto `1` es una **correccion declarada de celdas publicadas** y el punto `2` es
+**una comprobacion de cierre**. Ninguno de los dos es un volcado que escriba la tuberia del
+arnes.
+
+**LO QUE PODRIA ALEGAR Y NO ALEGO:** que el remedio nunca llego, porque el arnes no corrio entre
+las dos vueltas y el encargo lo escribio una sesion de chat que no lo arrastro. **Es cierto y
+esta medido en `0`. No me absuelve.** `D.40` nacio justamente porque *lo que un auditor le deja
+al siguiente lo entrega el arnes, no la memoria*, y su propia historia son tres actas seguidas
+escribiendo el mismo remedio y rompiendolo las tres. **Un auditor que elige la lectura que lo
+deja seguir se esta absolviendo** (`5.4`), y esa es la unica regla de esta seccion que no tiene
+matices.
+
+**`AUDITOR` pasa de `1 de 3` a `2 de 3`.** Penultimo escalon. **Va encargado en `8`, como
+`TAREA 1`.**
+
+### 5.2. Lo que NO me cargo, y digo por que para que se pueda discutir
+
+- **La relectura ciega sin veredicto que destapar** (`4`). No es caida: en regimen ligero no hay
+  veredicto, y lo declaro en vez de escribir *relectura ciega* sobre una fase que no existio.
+- **El coste del turno** (`D.55`, sobre `10` USD con desglose). **El del extractor lo mido:
+  `7,161081899999999` USD**, leido de `docs/loop/ultimo_extractor.json`, **por debajo del tope**.
+  **El mio no lo puedo medir**: el volcado lo escribe la tuberia del arnes en
+  `docs/loop/ultimo_auditor.json` **cuando mi turno ya ha terminado**, que es la misma figura por
+  la que la correccion del `12` sep saco de mi racha lo que no controlo. **Queda como medida
+  pendiente del arnes, no como cifra mia sin medir.**
+
+---
+
+## 6. LO QUE REGISTRO Y NO ABRE PARADA (`D.55`, `D.56`)
+
+**La cola de doctrina se queda en `11`.** Lo que sigue son preguntas con su medida, y `D.55` es
+tajante: *registralas en tu acta con su medida y DEJALAS AHI.*
+
+### 6.1. Las cinco anotaciones de deuda de esta acta
+
+    $ python scripts/deuda.py --anotar --vuelta 3 [...]   (cinco veces)
+    ANOTADA d095: EL REMEDIO QUE LA ACTA G1 DEJO ESCRITO NO LLEGO A LA VUELTA 2 Y SIGUE
+    ANOTADA d096: SEGUNDO EJEMPLAR DE d088, EN UN LIBRO DISTINTO: capitulos_minados de d
+    ANOTADA d097: LA CADENCIA DE SANEAMIENTO DE D.58 NO TIENE ARITMETICA EN UN FRENTE: s
+    ANOTADA d098: EL PUNTERO D.37 DE gerber_emyth, ESCRITO PARA QUE NO SE PIERDA: fuente
+    ANOTADA d099: DONDE NACE EL NODO DE LA DELEGACION DE gerber_emyth, SI NACE: cap_06 L
+
+### 6.2. `d096`: el tablero no puede ver un capitulo minado a cero
+
+    $ python -c "<lectura de la fila gerber_emyth de docs/loop/TABLERO.jsonl>"
+    capitulos_minados: ['cap_04', 'cap_07', 'cap_08', 'cap_11']
+
+> **LECTURA:** la vuelta `2` mino `cap_05` y `cap_06`, yo lo firmo en `4`, **y el tablero sigue
+> diciendo cuatro.** El campo registra los capitulos que PRODUJERON candidato, no los que se
+> LEYERON. **Es `d088`, medido en grove con `cap_08`, `cap_09` y `cap_18`**, y este es su
+> segundo ejemplar en un libro distinto. **No lo toco:** `D.45` veda `src/` desde un frente y
+> `D.56` congela la cola.
+
+### 6.3. `d097`: la cadencia de saneamiento no tiene aritmetica en un frente
+
+    $ python -c "import sys; sys.path.insert(0,'scripts'); import deuda; print(deuda.clase_de_vuelta(3))"
+    ('LIBRE', 'van -56 de 5 desde la ultima de saneamiento (la 59), con 28 deuda(s) esperando')
+
+> **LECTURA:** el veredicto `LIBRE` es el correcto, **y la cuenta que lo produce no lo es**:
+> `docs/loop/DEUDA.jsonl` es un registro UNICO para todas las lineas y su ultima de saneamiento
+> es la `59` **de la serial**, mientras que este frente numera sus vueltas `1`, `2`, `3`. Un
+> numero negativo nunca alcanza la cadencia de `5`, asi que **un frente no puede recibir una
+> vuelta de saneamiento por este camino, nunca.** Lo digo porque `D.58` dice que *la cadencia ya
+> no es tuya* y que *ahora lo comprueba el codigo*: **en un frente, hoy, no lo comprueba.**
+> **Anotado y no tocado**, por `D.45`.
+
+### 6.4. `D.32`: no hay lote que abrir, y lo mido
+
+    $ ls fuentes/gerber_emyth/cap_*.md | wc -l
+    22
+    $ ls .gerber_v1/piezas_cap*.txt .gerber_v2/piezas_cap*.txt | wc -l
+    13
+
+**El lote `9` esta ABIERTO, no cerrado**: `6` de `22` unidades minadas y adjudicadas
+(`cap_04`, `cap_05`, `cap_06`, `cap_07`, `cap_08`, `cap_11`). `D.32` manda medir las dos
+condiciones de apertura **si el acta cierra un lote**, y **esta no cierra ninguno.**
+
+---
+
+## 7. LAS CONDICIONES DE PARADA, REPASADAS UNA A UNA (`AUDITOR_FORJA.md` `3`)
+
+| condicion | lo que mido en este turno | veredicto |
+|---|---|---|
+| **doctrina NUEVA necesaria** | **ninguna.** Los `3` discutibles los adjudique citando `D.37`, `EXTRACTOR.md` `9` y `9.1`; las dos caidas, con `D.38.1`, `5.2` y `D.48`; el `HEREDADO 3`, con `D.13`; y el choque entre `5.5` y `D.55`, con `D.13` otra vez. **Las preguntas nuevas de `6.2` y `6.3` NO abren cola: `D.55` manda dejarlas anotadas** | **NO ES PARADA** |
+| **contradiccion** con regla vigente o cifra publicada | **dos, y las dos se resuelven con las reglas de correccion existentes**: la celda de `G2.8.d` contra `G2.8.c`, que se corrige declarando sin borrar, y la linea del credito, corregida anadiendo en `3.4` | **NO ES PARADA** |
+| **decision de Alexis** | **ninguna que este turno necesite**. No borro contenido, no muevo umbrales, no cambio el alcance, no creo remotos, no fundo ramas | **NO ES PARADA** |
+| **fallo tecnico repetido** (dos vueltas por la misma causa) | **ninguno.** `gate`, `guiones`, `343` pruebas, tallado y censo, **los cinco en VERDE hoy** y ninguno en rojo en la vuelta anterior | **NO ES PARADA** |
+| **credito roto** | **NO.** `REPORTE` `2 de 3` (tope `3`), `CIFRA PUBLICADA` `1 de 2` (tope `2`), `AUDITOR` `2 de 3` (tope `3`), `CLASE` y `DATO MOVIDO` en `0`. **Ninguna en su tope**, y el instrumento lo dice en `3.4` | **NO ES PARADA** |
+| **campana consumada** | **no.** `6` de `22` unidades minadas, `10` candidatos en bandeja, `0` insertados | **NO ES PARADA** |
+
+> # **NINGUNA DE LAS SEIS SE CUMPLE. NO ESCRIBO `PARA_ALEXIS.md`**, y el encargo de la vuelta
+> `3` queda escrito en `docs/loop/PROMPT_SIGUIENTE.md`.
+
+---
+
+## 8. **LAS DOS ESCALADAS, ENCARGADAS Y NO SOLO DECLARADAS** (`5.5`, `1` punto `4`)
+
+**`REPORTE` esta en `2 de 3` y `AUDITOR` esta en `2 de 3`: los dos en el penultimo escalon, y
+los dos obligan.** `5.5` dice que se encargan **como tarea bloqueante en el mismo acta**.
+
+**Y AQUI DOS REGLAS CHOCAN, ASI QUE LO RESUELVO CITANDO Y NO ELIGIENDO.** `D.55`, del `18` sep
+`2026`, dice: *tu acta puede dejar como maximo UNA tarea bloqueante, y solo si cita la guarda de
+DATO en rojo que la justifica*, y nombra las cuatro que bloquean. **Las cuatro estan en VERDE**
+(`1.1`). `5.5` es del `9` sep. **`D.13`: entre dos reglas fechadas que chocan gana la mas
+reciente.** Gana `D.55`.
+
+> **ASI QUE LAS DOS ESCALADAS VAN COMO `TAREA 1` DEL ENCARGO, QUE ES LO PRIMERO QUE LA VUELTA
+> HACE, Y NINGUNA VA COMO BLOQUEANTE.** La escalada **se encarga**, que es lo que `5.5` protege;
+> lo que `D.55` quita no es el encargo, es el bloqueo. **Cero bloqueantes en esta acta.**
+
+**Y el resto de lo pendiente va a `docs/loop/DEUDA.jsonl` con su cita**, que es exactamente lo
+que `D.55` manda hacer con lo que no es averia: `d095` a `d099`, en `6.1`.
+
+---
+
+## 9. LA COLA, COMO QUEDA AL CERRAR ESTA ACTA
+
+| lo que queda | cifra que mido hoy | que la cierra |
+|---|---:|---|
+| **el remedio de la `ACTA G1`, puntos `1` y `2`** | **`2`** vivos de `3` | **`TAREA 1` de la vuelta `3`** (`d095`) |
+| unidades del lote `9` sin minar | **`16`** de `22` | las vueltas siguientes, a `3` capitulos (`D.58`) |
+| candidatos en bandeja del lote `9` | **`10`**, con **`89`** pasos, **`0`** insertados | `D.39` y la cosecha, que es del fundador |
+| `cap_01`, `cap_02` y `cap_03` sin minar | **`3`** | `d094`. **No es blocante y no se toca** |
+| el nodo de la delegacion, si lo hay | **`1`** puntero, a `cap_18` `L345` a `L349` | `d099`. `cap_18` entra en la cola de capitulos |
+| el puntero `D.37` de las tres fases | **`1`**, a `cap_05` `L29` | `d098`. **Solo en el acto de insertar una parte** |
+| deuda pendiente de la linea | **`33`** pendientes, `31` pagadas | una vuelta de saneamiento, **que hoy no toca** (`6.3`) |
+| preguntas de doctrina registradas y NO abiertas | **`2`** (`6.2` y `6.3`) | el cierre del mundo `11`. **`D.55` y `D.56`** |
+
+---
+
+*`ACTA G2` cerrada. **SIN PARADA.** Mis ficheros de trabajo de este turno son comandos sueltos y
+no un directorio: cada cifra de esta acta lleva su comando pegado encima, que es lo que `D.38.3`
+pide y lo que hace que se pueda repetir sin mi.*
