@@ -36,3 +36,11 @@
 {"cae": false, "cita": "ACTA G8 3.1, 3.2 y 4.3", "especie": "CLASE", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G8", "tipo": "tanda", "vuelta": 8}
 {"cae": false, "cita": "ACTA G8 1.5 y 4.3", "especie": "DATO MOVIDO", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G8", "tipo": "tanda", "vuelta": 8}
 {"cae": false, "cita": "ACTA G8 5.1 y 5.2", "especie": "AUDITOR", "linea": "gerber_emyth", "racha": "0 de 3", "tanda": "ACTA G8", "tipo": "tanda", "vuelta": 8}
+{"cae": false, "cita": "ACTA G9 4.3, cinco rachas medidas y ninguna caida que acumule", "especie": "REPORTE", "linea": "gerber_emyth", "racha": "0 de 3", "tanda": "ACTA G9", "tipo": "tanda", "vuelta": 9}
+{"cae": false, "cita": "ACTA G9 4.3, cinco rachas medidas y ninguna caida que acumule", "especie": "CIFRA PUBLICADA", "linea": "gerber_emyth", "racha": "0 de 3", "tanda": "ACTA G9", "tipo": "tanda", "vuelta": 9}
+{"cae": false, "cita": "ACTA G9 4.3, cinco rachas medidas y ninguna caida que acumule", "especie": "CLASE", "linea": "gerber_emyth", "racha": "0 de 3", "tanda": "ACTA G9", "tipo": "tanda", "vuelta": 9}
+{"cae": false, "cita": "ACTA G9 4.3, cinco rachas medidas y ninguna caida que acumule", "especie": "DATO MOVIDO", "linea": "gerber_emyth", "racha": "0 de 3", "tanda": "ACTA G9", "tipo": "tanda", "vuelta": 9}
+{"cae": false, "cita": "ACTA G9 4.3, cinco rachas medidas y ninguna caida que acumule", "especie": "AUDITOR", "linea": "gerber_emyth", "racha": "0 de 3", "tanda": "ACTA G9", "tipo": "tanda", "vuelta": 9}
+{"cae": false, "cita": "ACTA G9, seccion 5.1", "especie": "CIFRA PUBLICADA", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G9", "tipo": "tanda", "vuelta": 9}
+{"cae": false, "cita": "ACTA G9, seccion 5.1", "especie": "CLASE", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G9", "tipo": "tanda", "vuelta": 9}
+{"cae": false, "cita": "ACTA G9, seccion 5.1", "especie": "DATO MOVIDO", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G9", "tipo": "tanda", "vuelta": 9}
