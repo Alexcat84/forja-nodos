@@ -94,8 +94,24 @@ ACTA
   cp "$RAIZ_REPO/esquema/nodo.schema.json" "$taller/esquema/"
   cp "$RAIZ_REPO/fuentes/FUENTES_CANONICAS.json" "$taller/fuentes/"
   cp "$RAIZ_REPO/config/umbrales.json" "$taller/config/"
-  cp "$(ls "$RAIZ_REPO"/cuarentena/scott_radical_candor/*.json | head -1)" \
-     "$taller/cuarentena/prueba_de_lote/candidato.json"
+  # EL CANDIDATO DE MUESTRA NO PUEDE DEPENDER DE UNA BANDEJA QUE SE VACIA.
+  #
+  # Aqui se cogia el primero de `cuarentena/scott_radical_candor/`, y el 18 sep 2026 ese
+  # lote CERRO: sus 142 candidatos pasaron a `_insertados/` y la bandeja quedo en cero.
+  # El banco entero se fue a siete rojos por una carpeta vacia, y el mensaje que lo
+  # explicaba (`cp: cannot stat ''`) salia ANTES de las comprobaciones, donde no lo leia
+  # nadie.
+  #
+  # AHORA SE BUSCA EN TODAS LAS SEDES DONDE PUEDE HABER UNO, incluida la de los ya
+  # archivados, que es la unica que solo CRECE. Una prueba que depende del estado de
+  # produccion deja de probar el dia que la produccion avanza.
+  muestra="$(ls "$RAIZ_REPO"/cuarentena/*/[a-z]*.json "$RAIZ_REPO"/cuarentena/_insertados/*/[a-z]*.json 2>/dev/null | head -1)"
+  if [ -z "$muestra" ]; then
+    echo "    ROJO   no hay ningun candidato de muestra en cuarentena/ ni en _insertados/"
+    rojos=$((rojos + 1))
+    return 1
+  fi
+  cp "$muestra" "$taller/cuarentena/prueba_de_lote/candidato.json"
 
   # EL CLAUDE FALSO. Distingue el rol por el documento que el prompt nombra.
   cat > "$taller/bin/claude" <<'FALSO'
@@ -132,6 +148,16 @@ if echo "$prompt" | grep -q "APERTURA CIEGA"; then
   for f in REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json; do
     if [ -f "docs/loop/$f" ]; then visto="$visto ENCONTRADO_$f"; else visto="$visto $f"; fi
   done
+  # LA FASE CIEGA SABE QUE NO VE (D.57): desde AQUI DENTRO, el ciego intenta
+  # comprobar contra loop.log la linea que dice que se le retiro. Antes del 18 sep
+  # esto era imposible: loop.log era uno de los retirados, asi que se retiraba el
+  # registro que dice que se retira, y el auditor que quisiera comprobar su propia
+  # premisa no tenia con que. Publico una afirmacion falsa y se la cargo.
+  if grep -q "retirados:" docs/loop/loop.log 2>/dev/null; then
+    visto="$visto COMPROBADO_EN_LOG"
+  else
+    visto="$visto NO_PUEDO_COMPROBARLO"
+  fi
 elif echo "$prompt" | grep -q "EXTRACTOR.md"; then
   rol=extractor; testigo="docs/loop/REPORTE.md"; escribe="${FALSO_EXTRACTOR:-si}"
 else
@@ -455,7 +481,7 @@ git -C "$taller" commit -q -m "los cuatro artefactos de la vuelta anterior" >/de
 salida="$(correr "$taller")"
 echo "$salida" | sed 's/^/  | /'
 comprobar "la fase ciega corre y lo dice"    "APERTURA CIEGA"              "$salida"
-comprobar "dice que retira los CUATRO"       "retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json" "$salida"
+comprobar "dice que retira los TRES"         "retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json" "$salida"
 comprobar "sella la apertura"                "apertura ciega sellada"      "$salida"
 comprobar "y verifica el sello despues"      "sello de la apertura ciega verificado" "$salida"
 comprobar "el auditor corre DESPUES"         "VUELTA 1 : AUDITOR"          "$salida"
@@ -464,14 +490,19 @@ comprobar "el auditor corre DESPUES"         "VUELTA 1 : AUDITOR"          "$sal
 # encontro ninguno. No basta con que el arnes diga que los retira.
 apertura="$(cat "$taller/docs/loop/APERTURA_CIEGA.md" 2>/dev/null || echo AUSENTE)"
 comprobar "el ciego no encontro el reporte"  "ausentes: REPORTE.md"        "$apertura"
-comprobar "ni el log del arnes"              "loop.log"                    "$apertura"
 comprobar "ni el testigo del extractor"      "ultimo_extractor.json"       "$apertura"
 comprobar "ni el testigo del auditor"        "ultimo_auditor.json"         "$apertura"
-comprobar_no "NINGUNO de los cuatro estaba"  "ENCONTRADO_"                 "$apertura"
+comprobar_no "ninguno de los TRES estaba"    "ENCONTRADO_REPORTE.md"       "$apertura"
+comprobar_no "ni el testigo del extractor"   "ENCONTRADO_ultimo_extractor" "$apertura"
+comprobar_no "ni el del auditor"             "ENCONTRADO_ultimo_auditor"   "$apertura"
+# Y LA VUELTA DE TUERCA DE D.57, QUE ES LO CONTRARIO DE LAS DE ARRIBA: loop.log SI
+# tiene que estar. Es registro del arnes, no del extractor, y sin el la ciega no
+# puede comprobar que se le retiro. Era el cuarto retirado hasta el 18 sep 2026.
+comprobar "y loop.log SI esta (D.57)"        "ENCONTRADO_loop.log"         "$apertura"
 comprobar_no "y la apertura ciega no se rompio" "APERTURA CIEGA ROTA"      "$salida"
 
-# Y LOS CUATRO VUELVEN a su sitio para el turno normal.
-for fichero in REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json; do
+# Y LOS TRES VUELVEN a su sitio para el turno normal (loop.log nunca se fue).
+for fichero in REPORTE.md ultimo_extractor.json ultimo_auditor.json; do
   [ -f "$taller/docs/loop/$fichero" ] \
     && { echo "    VERDE  $fichero vuelve a su sitio tras sellar"; verdes=$((verdes+1)); } \
     || { echo "    ROJO   $fichero no volvio"; rojos=$((rojos+1)); }
@@ -634,6 +665,59 @@ salida="$(RAMA_DE_INSERCION=otra-rama MODO_INSERCION=cuarentena FALSO_EXTRACTOR=
 echo "$salida" | sed 's/^/  | /'
 comprobar_no "NO se detiene"                 "DETENIDO ANTES DE ARRANCAR"  "$salida"
 comprobar "y el turno corre"                 "extractor listo"             "$salida"
+
+# -------------------------------------------------------------- escenario 17
+echo ""
+echo "ESCENARIO 17: LA FASE CIEGA SABE QUE NO VE (D.57). loop.log deja de"
+echo "              retirarse y el prompt del ciego trae la linea literal de"
+echo "              'retirados:' de su propio turno, asi que una afirmacion"
+echo "              sobre lo retirado SE PUEDE COMPROBAR DESDE DENTRO."
+taller="$(montar_banco e17)"
+salida="$(FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la ciega corre"                   "APERTURA CIEGA"              "$salida"
+comprobar "y loop.log YA NO se retira"       "retirados: REPORTE.md ultimo_extractor.json" "$salida"
+
+# EL CASO POSITIVO: lo que el ciego pudo hacer DESDE DENTRO de la fase ciega.
+testigo_ciego="$(cat "$taller/docs/loop/APERTURA_CIEGA.md" 2>/dev/null || echo SIN_APERTURA)"
+comprobar "el ciego VE loop.log"             "ENCONTRADO_loop.log"         "$testigo_ciego"
+comprobar "y COMPRUEBA en el la retirada"    "COMPROBADO_EN_LOG"           "$testigo_ciego"
+comprobar_no "no se queda sin poder mirar"   "NO_PUEDO_COMPROBARLO"        "$testigo_ciego"
+
+# Y LA LINEA LITERAL VIAJA EN EL PROMPT, que es el cinturon del tirante.
+prompt="$(cat "$taller/prompt_auditor_ciego.txt" 2>/dev/null || echo SIN_PROMPT)"
+comprobar "el prompt dice lo que no ve"      "LO QUE ESTE TURNO NO VE"     "$prompt"
+comprobar "con la linea literal dentro"      "retirados: REPORTE.md"       "$prompt"
+comprobar "y manda escribir la limitacion"   "ESCRIBE LA LIMITACION"       "$prompt"
+
+# -------------------------------------------------------------- escenario 18
+echo ""
+echo "ESCENARIO 18: LA FASE CIEGA SE APAGA EN CUARENTENA (D.58). No hay cifra"
+echo "              sobre el grafo que proteger, asi que no se paga por"
+echo "              protegerla: 9 USD por vuelta en las vueltas 54 y 55."
+taller="$(montar_banco e18)"
+salida="$(MODO_INSERCION=cuarentena FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "lo dice en voz alta"             "SIN FASE CIEGA"               "$salida"
+comprobar "y dice por que"                  "no hay cifra sobre el grafo"  "$salida"
+comprobar_no "NO abre la fase ciega"        "APERTURA CIEGA ("             "$salida"
+comprobar_no "ni sella"                     "apertura ciega sellada"       "$salida"
+comprobar "el auditor SI corre, directo"    "VUELTA 1 : AUDITOR"           "$salida"
+comprobar "y dice que no hay sello"         "sin sello que verificar"      "$salida"
+comprobar "la vuelta cierra"                "Arnes terminado"              "$salida"
+
+# -------------------------------------------------------------- escenario 18b
+echo ""
+echo "ESCENARIO 18b: EL CASO NEGATIVO, y sin el la guarda no probaria nada."
+echo "               En insertar, la fase ciega y el sello SIGUEN corriendo:"
+echo "               ahi el dato existe y las dos se pagan solas."
+taller="$(montar_banco e18b)"
+salida="$(MODO_INSERCION=insertar FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la fase ciega SI corre"          "APERTURA CIEGA ("             "$salida"
+comprobar "y SI sella"                      "apertura ciega sellada"       "$salida"
+comprobar "y SI verifica el sello"          "sello de la apertura ciega verificado" "$salida"
+comprobar_no "y no dice que la apaga"       "SIN FASE CIEGA"               "$salida"
 
 echo ""
 echo "================================================================"

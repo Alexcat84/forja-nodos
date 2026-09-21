@@ -1,0 +1,11 @@
+00  pegadas=4   corridas=4   IDENTICA   grep -E "^(FAIL|ERROR):" .a41/aceptacion.txt
+01  pegadas=4   corridas=4   IDENTICA   sed -n "487,490p" .a41/aceptacion.txt
+02  pegadas=3   corridas=3   IDENTICA   sed -n "533,535p" .a41/aceptacion.txt
+03  pegadas=13  corridas=13  IDENTICA   grep -nE "^[^a-z]{7,}$" fuentes/scott_radical_candor/cap_13.md
+04  pegadas=30  corridas=30  DIFIERE    grep -nE "^([0-9]+\. |[A-Z][A-Z ,“”’-]{6,}$|Rating or no|Categories of|J
+05  pegadas=1   corridas=1   DIFIERE    sed -n "59p" fuentes/scott_radical_candor/cap_14.md
+06  pegadas=1   corridas=1   IDENTICA   sed -n "199p" fuentes/scott_radical_candor/cap_13.md
+07  pegadas=11  corridas=11  DIFIERE    awk "NR>=203 && NR<=213 {print NR\": \"substr(\$0,1,90)}" fuentes/scott_
+08  pegadas=1   corridas=1   DIFIERE    sed -n "97p" fuentes/scott_radical_candor/cap_14.md
+09  pegadas=1   corridas=1   IDENTICA   grep -c "arista" docs/loop/DEUDA.jsonl
+10  pegadas=5   corridas=5   IDENTICA   grep -n "TRAMO POR VUELTA" -A 4 docs/loop/EXTRACTOR.md

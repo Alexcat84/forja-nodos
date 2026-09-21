@@ -1,0 +1,14 @@
+$ python forja.py credito
+CREDITO DE LA LINEA 'serial' (D.48)
+  registro: docs/loop/CREDITO_serial.jsonl
+  tandas: 53, en 245 suceso(s) de especie
+
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            1 de 3     ACTA 53
+  CIFRA PUBLICADA    0 de 2     ACTA 53
+  CLASE              0 de 2     ACTA 53
+  DATO MOVIDO        0 de 2     ACTA 53
+  REPORTE            1 de 3     ACTA 53
+
+  CREDITO ENTERO: ninguna especie en su tope.

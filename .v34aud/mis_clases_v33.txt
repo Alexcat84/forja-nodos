@@ -1,0 +1,13 @@
+$ head -12 .v33a/mis_clases.txt
+MIS CLASES, ESCRITAS A CIEGAS Y ANTES DE DESTAPAR NI UNA RAZON DE bitacora/VEREDICTOS.jsonl
+(HEREDADO 3 de la ACTA 31: este fichero es anterior a la primera corrida que IMPRIMA UNA
+RAZON. En esta fase no he corrido ninguna, y la hora de este fichero queda publicada.)
+
+TANDA: los 12 ids que .v33a/tanda.py saca del git diff de dataset/nodos.jsonl entre
+ef3e7f9 (commit anterior a la apertura de la vuelta 33) y HEAD. DEL DATO, no de una lista.
+POBLACION DEL BARRIDO: dataset/nodos.jsonl de 282 nodos menos el propio candidato, mas las
+bandejas de cuarentena/, que las pone la aduana sola (D.38.4 con el metodo de D.38.5).
+
+PRIMER BLOQUE: LO QUE DIGO LEYENDO fuentes/scott_radical_candor/cap_08.md Y LOS 12 NODOS,
+ANTES DE SABER QUE VECINO LEVANTA LA ADUANA.
+

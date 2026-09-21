@@ -1,0 +1,18 @@
+  sede        candidato                                                pasos
+  ------------------------------------------------------------------------------
+  bandeja     abrazar_incomodidad_silencio_contar_seis                    12  <-- tramo de hoy
+  bandeja     dar_elogio_disciplina_igual_critica                         20
+  bandeja     escuchar_entender_critica_dominar_defensa                   13  <-- tramo de hoy
+  bandeja     integrar_peticion_critica_rutina_existente                  13  <-- tramo de hoy
+  bandeja     medir_critica_respuesta_oyente_brujula                      33
+  bandeja     premiar_franqueza_hacer_escucha_tangible                    20  <-- tramo de hoy
+  insertado   contar_cuatro_historias_propias_ver_hueco_intencion         17
+  insertado   elegir_pregunta_recurrente_pedir_critica                    24
+  insertado   mejorar_consciencia_propia_relacional_dos_practicas         13
+  insertado   pedir_critica_primero_crear_seguridad_psicologica           17
+  insertado   practicar_triangulo_critica_tres_papeles                    15
+  insertado   resolver_dudas_frecuentes_pedir_critica                     15
+  ------------------------------------------------------------------------------
+  cap_13 ENTERO      : 12 candidato(s), 212 paso(s)
+  de ellos, MI TRAMO :  4 candidato(s),  58 paso(s)
+  los que NO he releido yo esta vuelta: 8 candidato(s), 154 paso(s)

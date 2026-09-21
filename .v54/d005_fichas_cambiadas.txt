@@ -1,0 +1,24 @@
+$ python .v54/d005_fichas_cambiadas.py
+ultimo commit que toco .v2g/ : de12cdb 2026-09-18
+
+LAS 15 FICHAS DE cap_03, CON SU ULTIMO COMMIT
+  con MAS de un commit (o sea, tocadas despues de nacer) : 1
+  con UN solo commit (nacieron y no se tocaron)          : 14
+    numerador   1  fichas con mas de un commit
+    denominador 15  fichas de cap_03 con informe en .v2g/
+
+  TOCADA   variar_frecuencia_inspeccion_nivel_calidad         de12cdb 2026-09-18 VUELTA 44, LA PRIMERA DE SANEAMIENTO DE ESTA LINEA: seis deudas pagadas de doce, las ocho aristas de d008 cableadas y el cerrojo declarado en vez de borrado
+  INTACTA  archivar_indicadores_resolver_problemas            a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas
+  INTACTA  casar_flujo_fabricacion_flujo_ventas               a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas
+  INTACTA  construir_grafico_escalonado_pronosticos           a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas
+  INTACTA  construir_indicador_linealidad_alerta_temprana     a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas
+  INTACTA  construir_indicador_tendencia_patron               a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas
+  INTACTA  decidir_aceptar_rechazar_material_defectuoso       a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas
+  INTACTA  dimensionar_plantilla_administrativa_pronostico    a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas
+  INTACTA  elegir_cinco_indicadores_diarios_fabrica           a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas
+  INTACTA  elegir_fabricar_pedido_pronostico                  a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas
+  INTACTA  elegir_indicador_salida_trabajo_administrativo     a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas
+  INTACTA  elegir_inspeccion_barrera_monitorizacion           a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas
+  INTACTA  emparejar_indicadores_efecto_contraefecto          a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas
+  INTACTA  representar_actividad_caja_negra_ventanas          a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas
+  INTACTA  simplificar_trabajo_reducir_numero_pasos           a84b84e 2026-09-16 VUELTA 2 grove_high_output, TAREAS 3 y 4: los 121 pasos de cap_03 releidos uno a uno al 0,00 por ciento de PASOS INVENTADOS, y 6 aristas declaradas por lectura con 3 rechazadas

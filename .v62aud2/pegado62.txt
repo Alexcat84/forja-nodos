@@ -1,0 +1,73 @@
+==============================================================================
+BLOQUES ABIERTOS CON `$` EN EL TRAMO DE LA VUELTA 62
+==============================================================================
+
+$ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl config/pares_mutuos.jsonl
+   REPRODUCIDO HOY: DIFIERE
+   lineas pegadas: 3 | lineas que el comando imprime: 4
+     + (pegada, el comando NO la imprime): 740 bitacora/VEREDICTOS.jsonl
+     + (pegada, el comando NO la imprime): 346 dataset/nodos.jsonl
+     + (pegada, el comando NO la imprime): 1 config/pares_mutuos.jsonl
+
+$ tail -6 docs/loop/CREDITO_serial.jsonl
+   REPRODUCIDO HOY: DIFIERE
+   lineas pegadas: 6 | lineas que el comando imprime: 6
+     + (pegada, el comando NO la imprime): {"cae": true, ..., "especie": "AUDITOR", "racha": "2 de 3", "tanda": "ACTA 59", "vuelta": 60}
+     + (pegada, el comando NO la imprime): {"cae": false, ..., "especie": "AUDITOR", "racha": "0 de 3", "tanda": "ACTA 60", "vuelta": 61}
+     + (pegada, el comando NO la imprime): {"cae": false, ..., "especie": "CLASE", "racha": "0 de 2", "tanda": "ACTA 60", "vuelta": 61}
+     + (pegada, el comando NO la imprime): {"cae": false, ..., "especie": "CIFRA PUBLICADA", "racha": "0 de 2", "tanda": "ACTA 60", "vuelta": 6
+     + (pegada, el comando NO la imprime): {"cae": false, ..., "especie": "DATO MOVIDO", "racha": "0 de 2", "tanda": "ACTA 60", "vuelta": 61}
+     + (pegada, el comando NO la imprime): {"cae": false, ..., "especie": "REPORTE", "racha": "0 de 3", "tanda": "ACTA 60", "vuelta": 61}
+   ELISION `...` sin declarar: {"cae": true, ..., "especie": "AUDITOR", "racha": "2 de 3", "tanda": "ACTA 59"
+   ELISION `...` sin declarar: {"cae": false, ..., "especie": "AUDITOR", "racha": "0 de 3", "tanda": "ACTA 60
+   ELISION `...` sin declarar: {"cae": false, ..., "especie": "CLASE", "racha": "0 de 2", "tanda": "ACTA 60",
+   ELISION `...` sin declarar: {"cae": false, ..., "especie": "CIFRA PUBLICADA", "racha": "0 de 2", "tanda": 
+   ELISION `...` sin declarar: {"cae": false, ..., "especie": "DATO MOVIDO", "racha": "0 de 2", "tanda": "ACT
+   ELISION `...` sin declarar: {"cae": false, ..., "especie": "REPORTE", "racha": "0 de 3", "tanda": "ACTA 60
+
+$ tail -2 docs/loop/DEUDA.jsonl
+   REPRODUCIDO HOY: DIFIERE
+   lineas pegadas: 6 | lineas que el comando imprime: 2
+     + (pegada, el comando NO la imprime): d090 (vuelta 61, ACTA 60 60.4.a): la senial de la aduana es ASIMETRICA y paso_contra_nodo lo es
+     + (pegada, el comando NO la imprime): mucho (0,451 contra 0,396 en el mismo par, direcciones distintas). NO SE ABRE: tocarlo es src/ y
+     + (pegada, el comando NO la imprime): D.45 lo veda mientras corran frentes en paralelo.
+     + (pegada, el comando NO la imprime): d091 (vuelta 61, ACTA 60 60.3): d077 tiene su prueba mas limpia: dos corridas del mismo candidato
+     + (pegada, el comando NO la imprime): separadas 27 minutos dan los cuatro vecinos compartidos identicos al milesimo y difieren solo en
+     + (pegada, el comando NO la imprime): el candidato que entro a la bandeja entre una y otra. Sirve el dia de la insercion.
+
+$ python forja.py tablero --escribir
+   ELISION `...` sin declarar: ... (22 filas, la de grove_high_output entre ellas)
+
+$ git show 1b20e64 -- docs/loop/TABLERO.jsonl
+   ELISION `...` sin declarar: -{"bandeja_medida_en": "cuarentena/grove_high_output", "candidatos_en_bandeja"
+   ELISION `...` sin declarar: +{"bandeja_medida_en": "cuarentena/grove_high_output", "candidatos_en_bandeja"
+
+$ date '+%F %T fin informe (extractor)'
+   TEXTO ANADIDO detras de la salida de date: (579 s, poblacion 440)
+
+$ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl config/pares_mutuos.jsonl
+   REPRODUCIDO HOY: DIFIERE
+   lineas pegadas: 3 | lineas que el comando imprime: 4
+     + (pegada, el comando NO la imprime): 740 bitacora/VEREDICTOS.jsonl
+     + (pegada, el comando NO la imprime): 346 dataset/nodos.jsonl
+     + (pegada, el comando NO la imprime): 1 config/pares_mutuos.jsonl
+
+$ git hash-object docs/loop/TABLA_DE_CIERRE.txt
+   REPRODUCIDO HOY: DIFIERE
+   lineas pegadas: 1 | lineas que el comando imprime: 1
+     + (pegada, el comando NO la imprime): 544ddc8daffc2d6e9076251128acf59c0b3c46ae
+
+$ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v59.txt
+   REPRODUCIDO HOY: IDENTICO
+
+$ git hash-object docs/loop/TABLA_DE_CIERRE.txt
+   REPRODUCIDO HOY: IDENTICO
+
+$ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v62.txt
+   REPRODUCIDO HOY: IDENTICO
+
+==============================================================================
+bloques abiertos con `$`                 : 29
+bloques con elision o texto anadido      : 4
+bloques reproducidos hoy, IDENTICOS      : 3
+bloques reproducidos hoy, QUE DIFIEREN   : 5

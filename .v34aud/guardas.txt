@@ -1,0 +1,17 @@
+$ python forja.py gate
+GATE VERDE.
+  nodos verificados: 297
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+$ python forja.py guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+$ python forja.py resolutor
+nodos vivos: 297
+nodos deprecados (archivo): 0
+alias registrados: 0
+
+$ python forja.py rancios | head -3      (los 48 hallazgos, enteros, en .v34aud/rancios_completo.txt)
+BLOQUE DE VIGENCIA: 48 hallazgo(s) sobre 409 veredicto(s) y 0 cita(s).
+  RANCIO 40, SIN HUELLA 8
+  lineas declaradas NO CONSUMADAS y por eso no medidas: 14

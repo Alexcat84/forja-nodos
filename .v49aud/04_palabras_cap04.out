@@ -1,0 +1,26 @@
+cap_04.md: 324 renglones, 165 no vacios, 8871 palabras en total
+
+LOS 12 RENGLONES MAS LARGOS, LISTA ORDENADA ENTERA de mas a menos:
+   L45     207 palabras
+   L153    183 palabras
+   L253    177 palabras
+   L51     165 palabras
+   L215    163 palabras
+   L305    162 palabras
+   L145    161 palabras
+   L159    160 palabras
+   L321    160 palabras
+   L177    159 palabras
+   L235    157 palabras
+   L167    147 palabras
+
+LOS TRAMOS DE LA TANDA DE LA VUELTA 48 (rangos leidos de los resumen_teorico de sus fichas):
+   P34  L273 a L285   469 palabras
+   P36  L289 a L289   101 palabras
+   P38  L293 a L301   396 palabras
+   P39  L303 a L307   242 palabras
+
+EL TRAMO DE d027, P7 (rango leido de su ficha):
+   P7   L145 a L147   210 palabras
+
+RENGLONES DE cap_04 CON MAS DE 396 PALABRAS, que es el techo de P38:

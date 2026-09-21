@@ -1,0 +1,40 @@
+$ python tests/test_aceptacion.py   (los fallos, con su nombre y su linea)
+test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa (__main__.PruebaRegimenLigero.test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa) ... FAIL
+Corrio como saneamiento y NO lo anoto: durante un dia el registro dijo ... FAIL
+FAIL: test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa (__main__.PruebaRegimenLigero.test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa)
+  File "C:\Users\AlexDesk\Documents\forja-nodos\tests\test_aceptacion.py", line 3703, in test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa
+AssertionError: 0 != 1
+FAIL: test_la_vuelta_49_consta_como_saneamiento_en_el_registro (__main__.PruebaRegimenLigero.test_la_vuelta_49_consta_como_saneamiento_en_el_registro)
+  File "C:\Users\AlexDesk\Documents\forja-nodos\tests\test_aceptacion.py", line 3733, in test_la_vuelta_49_consta_como_saneamiento_en_el_registro
+AssertionError: 54 != 49
+FAILED (failures=2, skipped=1)
+  A. VERDE: el nodo ejemplo entro limpio, el gate quedo verde y los censos registraron las tres denominaciones por separado
+  B. VERDE: gemelo bloqueado (codigo 2) citando a registrar_fuente_canonica y la señal (similitud_texto)
+  C. VERDE: el hijo quedo bloqueado sin veredicto y entro tras declarar CONTINUA; la arista se declaro por el alias 'registro_fuentes_canonicas' y quedo escrita resuelta como registrar_fuente_canonica > elegir_grafia_clave
+  D. VERDE: la auto-arista via alias (saneo_grafo apunta a sanear_grafo) puso el gate en rojo, y la comparacion literal no la veia: cero coincidencias literales en el mismo dato
+  E. VERDE: hooks/pre-commit aborto con el guion largo (rojo con el archivo, verde sin el, verde de nuevo al quitarlo)
+  F. VERDE: el candidato con la fuente 'libro_que_nadie_registro' fue rechazado y no toco el dataset
+  TANDA A de la v0.3 (C.1 cita de linea, C.2 registro de citas, C.3 vigencia, C.4 no aplica, D.17 deprecado): 20 pruebas mas
+  D.29, la arista que la señal no levanta se declara por lectura: 6 pruebas mas
+  D.31, el candidato insertado se archiva y el informe no lo cuenta: 4 pruebas mas
+  D.37, la serie declarada por el titulo es arista por lectura: 7 pruebas mas
+  D.40, lo que un auditor le deja al siguiente lo entrega el arnes: 25 pruebas mas
+  D.41, la tabla que dice ser de instrumento es la del instrumento: 18 pruebas mas
+  D.42, la unidad de la ruta es la celda: 22 pruebas mas
+  D.38.5 en la aduana, que es donde se decide: 6 pruebas mas
+  D.29 en la aduana: la insercion es atomica y la arista espera en cola: 10 pruebas mas
+  D.15: la vigencia es COLA DE TRABAJO y no guarda que tumbe el cierre: 3 pruebas mas
+  D.48, la racha es de su linea, y el credito vive por linea: 15 pruebas mas
+  D.48, la herencia de D.40 es la de SU linea: 5 pruebas mas
+  D.49 y D.50, un libro un dueño a la vez y el relevo: 12 pruebas mas
+  D.49, la guarda del tablero al abrir vuelta: 10 pruebas mas
+  D.51, el orden lo da el tablero, y el corte del mundo 11: 11 pruebas mas
+  D.56, dataset es el catalogo y el cerrojo vive fuera: 7 pruebas mas
+  D.56, la cita del credito es referencia y no resultado: 10 pruebas mas
+  D.56, la cola de doctrina vive en el tablero: 5 pruebas mas
+  D.52, toda tabla del reporte declara su instrumento: 8 pruebas mas
+  D.54, un paso retirado se retira del campo: 7 pruebas mas
+  D.55, la deuda no bloquea la produccion: 11 pruebas mas
+  D.53 en el codigo: el veredicto y la arista son puertas distintas: 11 pruebas mas
+  D.58, dos regimenes y la cadencia que no depende de nadie: 11 pruebas mas
+  D.59, la cifra derivada la calcula el instrumento: 10 pruebas mas

@@ -1,0 +1,15 @@
+    $ python forja.py gate
+GATE VERDE.
+  nodos verificados: 324
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+    $ python forja.py guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python tests/test_aceptacion.py
+  D.52, toda tabla del reporte declara su instrumento: 8 pruebas mas
+  D.54, un paso retirado se retira del campo: 7 pruebas mas
+  la exencion del censo es de MOMENTO y no de fichero: 3 pruebas mas
+
+  total: 294 pruebas, 0 fallos, 0 errores
+========================================================================

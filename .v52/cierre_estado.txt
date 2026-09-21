@@ -1,0 +1,9 @@
+$ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+    346 dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1087 total
+$ ls cuarentena/grove_high_output/*.json | wc -l
+56
+$ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+1

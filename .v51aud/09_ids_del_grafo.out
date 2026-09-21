@@ -1,0 +1,9 @@
+--- ids que las fichas de cap_05 afirman que VIVEN EN EL GRAFO: existen? ---
+auditar_calendario_reuniones_semana            en dataset/nodos.jsonl: 1
+dirigir_reunion_individual_semanal             en dataset/nodos.jsonl: 1
+preguntar_conducir_reunion_individual          en dataset/nodos.jsonl: 1
+
+--- y su libro de origen, del propio grafo ---
+dirigir_reunion_individual_semanal             fuentes: ['zhuo_manager']  pasos: 10
+preguntar_conducir_reunion_individual          fuentes: ['zhuo_manager']  pasos: 7
+auditar_calendario_reuniones_semana            fuentes: ['zhuo_manager']  pasos: 10

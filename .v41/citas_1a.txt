@@ -1,0 +1,13 @@
+    $ sed -n "575p" docs/loop/AUDITOR_FORJA.md
+      575: | **TIENE DIRECCION** | se pregunta que añade el HIJO a la MADRE, **nunca al reves** |
+
+    $ sed -n "165p" docs/loop/EXTRACTOR.md
+      165: > **NOMBRAR NO ES PROCEDIMENTAR.** Una linea solo cuenta como procedimiento
+
+    $ grep -n -iE "\b(six|seis)\b" fuentes/scott_radical_candor/cap_09.md | cut -c1-110
+      41:One technique is to count to six before saying anything else, forcing them to endure the silence. The goal 
+      159:Corrections, factual observations, disagreements, and debates are different from criticism. It’s vital t
+      299:Try saying, “What can I do or stop doing to make it easier for you to be Radically Candid with me?” or
+
+    $ grep -c -iE "\b(six|seis)\b" fuentes/scott_radical_candor/cap_09.md
+      3

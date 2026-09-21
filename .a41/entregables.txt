@@ -1,0 +1,10 @@
+equilibrar_elogio_critica_equipo
+  entregable: Mas elogio que critica y ninguna proporcion fija aplicada, ningun elogio dicho para rellenar un hueco, y la energia puesta en decir la critica sin mas y en pensar como se dice el elogio.
+ajustar_franqueza_oido_oyente
+  entregable: Las dos dimensiones traducidas a la forma que esa persona o ese equipo reconoce, con el nombre local si hace falta cambiarlo.
+pedir_critica_equipo_premiarla
+  entregable: La critica pedida activamente y no solo consentida, recibida sin criticarla y sin defenderte, premiada cuando llega por pequenia que sea, y con todo el equipo enterado de que la queja se atendio.
+escuchar_callado_equipo_tranquilizar_incomodo
+  entregable: Un tramo de silencio en cada reunion a solas en el que la otra persona dice lo que de verdad piensa, y quien se incomoda con tu silencio tranquilizado con opiniones tuyas dichas en voz alta.
+montar_reuniones_solas_mentalidad_frecuencia
+  entregable: Las reuniones a solas puestas con su frecuencia, no canceladas, con la agenda puesta por quien te reporta, y con la direccion en la que esa persona quiere ir y lo que se lo bloquea entendidos por ti.

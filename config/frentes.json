@@ -1,0 +1,201 @@
+{
+  "_lea_esto": [
+    "LO QUE EL DATO NO PUEDE DECIR, DECLARADO CON SU CITA (D.49, 17 sep 2026).",
+    "",
+    "El tablero (docs/loop/TABLERO.jsonl) se GENERA del dato: ramas, bandejas, commits,",
+    "candidatos y grafo. Pero hay dos cosas que ningun comando puede medir, porque no",
+    "son hechos del arbol sino decisiones del fundador, y esas viven aqui CON SU CITA:",
+    "",
+    "  1. CUAL es el frente de extraccion activo, que no es lo mismo que cual tiene",
+    "     proceso vivo: un frente detenido esperando decision sigue siendo el frente",
+    "     activo de su libro, y su libro sigue teniendo dueño.",
+    "  2. QUE libro esta CERRADO EN EXTRACCION, que es una adjudicacion de un acta y no",
+    "     una cuenta de ficheros.",
+    "",
+    "CADA ENTRADA LLEVA SU CITA. Una declaracion sin cita no se puede releer, y",
+    "src/tablero.py se detiene si falta."
+  ],
+  "alcance": {
+    "lineas_a_la_vez": 1,
+    "cita": "enmienda del fundador del 21 sep 2026: la insercion se pospone por cuota",
+    "que_dice": "UNA SOLA LINEA esta semana: gerber_emyth extrayendo. La serial queda PARADA con su PROMPT_SIGUIENTE vacio a proposito, porque la insercion de grove_high_output se pospone a la semana siguiente por limite de cuota. El tope estructural sigue siendo dos."
+  },
+  "frente_activo": {
+    "clave": "gerber_emyth",
+    "cita": "decision del fundador del 21 sep 2026, punto 3",
+    "que_dice": "DOS LINEAS otra vez: la serial en INSERCION de grove_high_output, y gerber_emyth como UNICO frente de extraccion, con dueno propio, en su worktree y su rama. Marquet sigue PAUSADO y sin dueno."
+  },
+  "liberados": {
+    "marquet_turn_the_ship": {
+      "cita": "decision del fundador del 17 sep 2026, punto 4",
+      "que_dice": "PAUSADO con dueño NINGUNO y su trabajo parcial declarado. No se lanza, y sera relevado por el principal cuando le toque por el orden"
+    }
+  },
+  "cerrados_en_extraccion": {
+    "smart_who": {
+      "cita": "ACTA 8 seccion 10"
+    },
+    "zhuo_manager": {
+      "cita": "ACTA 13 seccion 8.1"
+    },
+    "scott_radical_candor": {
+      "cita": "ACTA 24"
+    }
+  },
+  "orden_de_prioridad": {
+    "cita": "decision del fundador del 17 sep 2026, EL ORDEN DE PRIORIDAD DEL MUNDO 11",
+    "que_dice": "Ninguna linea elige libro: toma el primero de esta lista cuyo ESTADO lo permita por D.49, y al cerrar uno pasa al siguiente por D.50.",
+    "libros": {
+      "grove_high_output": {
+        "prioridad": 1,
+        "fuera_de_campania": false,
+        "motivo": "Operaciones y apalancamiento gerencial: cubre el hueco de la campania, que tiene mucho trato con la gente y poco produccion de la maquina. Densidad de procedimiento la mas alta del lote, medida: 0,00 por ciento de pasos inventados en su ultimo capitulo, porque el autor escribe en pasos."
+      },
+      "gerber_emyth": {
+        "prioridad": 2,
+        "fuera_de_campania": false,
+        "motivo": "Sistematizacion del negocio, manual de operaciones, trabajar SOBRE el negocio y no EN el: es el libro que habla directo al usuario final y el unico del lote que aporta esa materia. Al minarlo entero se completa ademas el capitulo 17 reservado al mundo 10."
+      },
+      "marquet_turn_the_ship": {
+        "prioridad": 3,
+        "fuera_de_campania": false,
+        "motivo": "Delegacion real y control distribuido con practicas concretas. Solapa en parte con Zhuo y Scott, ya insertados, pero es barato de cerrar y cierra el cuerpo."
+      },
+      "bernerslee_bananas": {
+        "prioridad": 4,
+        "fuera_de_campania": true,
+        "motivo": "19 cap. Mas analisis que procedimiento."
+      },
+      "openstax_business_ethics": {
+        "prioridad": 5,
+        "fuera_de_campania": true,
+        "motivo": "17 cap. Manual academico, densidad de procedimiento baja, mucho marco conceptual."
+      },
+      "openstax_org_behavior": {
+        "prioridad": 6,
+        "fuera_de_campania": true,
+        "motivo": "32 cap. El mas caro del lote y el de mayor solape con lo ya insertado (Zhuo, Scott, Grove): el peor candidato por costo y beneficio de los diez."
+      }
+    },
+    "corte_del_mundo_11": "Con los tres primeros mas los cuatro ya insertados (onu_consumidor, smart_who, zhuo_manager, scott_radical_candor), el MUNDO 11 SE DECLARA COMPLETO: gente, comunicacion, contratacion, operaciones y sistematizacion. La campania de extraccion cierra ahi. Los tres del corte quedan en la bandeja, con su ficha, para entrar por la aduana de a uno y sin campania cuando el fundador lo decida."
+  },
+  "cola_de_doctrina": {
+    "cita": "decision del fundador del 17 sep 2026, punto 4",
+    "que_dice": "Se resuelven cuando el mundo 11 cierre, salvo que alguna bloquee a una linea, y entonces sube sola.",
+    "levantadas_por": "el auditor de la ACTA 32, linea serial, sobre la vuelta 33",
+    "preguntas": [
+      {
+        "n": 1,
+        "pregunta": "EXTRACTOR.md 11 y la banda de 0,4: dice que por encima hay gemelos y cero ajenos, acotado al catalogo de la otra casa. Esta casa tiene ya su primer par propio a 0,405 leido por dos lectores por separado. La medicion no se contradice; la generalizacion escrita encima pide su primer contraejemplo.",
+        "medida_en": "ACTA 32 3.7",
+        "bloquea": false
+      },
+      {
+        "n": 2,
+        "pregunta": "src/arista.py:187 teclea (D.37) en toda arista declarada por lectura, y se estampa igual sobre las que son D.29. Quien cuente aristas D.37 en la bitacora cuenta tambien las D.29.",
+        "medida_en": "APERTURA_CIEGA.md 9.2",
+        "bloquea": false
+      },
+      {
+        "n": 3,
+        "pregunta": "Una cifra en denominaciones.nombre_largo que el libro no escribe: 'las cuatro conversaciones' donde L95 nombra tres. Segunda vuelta seguida con la figura, y las dos veces se registro sin cargar, porque D.30 cuenta pasos.",
+        "medida_en": "ACTA 32 4, fila 2",
+        "bloquea": false
+      },
+      {
+        "n": 4,
+        "pregunta": "Un resumen_teorico del dataset que cita EL REPORTE DE ESTA VUELTA: sede duradera apuntando a una que se reescribe cada vuelta.",
+        "medida_en": "APERTURA_CIEGA.md 5.4",
+        "bloquea": false
+      },
+      {
+        "n": 5,
+        "pregunta": "Un orden roto no tiene casillero: el extractor corrio la relectura de fidelidad con tres nodos ya dentro, contra la letra de D.30. No mueve dato, no publica cifra falsa y no mueve veredicto. Es la tercera vez que aparece un dano sin fila.",
+        "medida_en": "ACTA 32 5.4",
+        "bloquea": false
+      },
+      {
+        "n": 6,
+        "pregunta": "La regla de la busqueda negativa vale para el extractor? 'Una busqueda negativa no se puede citar' esta escrita en AUDITOR_FORJA.md 1.1 y no en EXTRACTOR.md.",
+        "medida_en": "ACTA 32 3.8",
+        "bloquea": false
+      },
+      {
+        "n": 7,
+        "pregunta": "El propio libro se contradice y ningun nodo lo dice: cap_12 L21 invita a copiar el marco y llevar ahi la cuenta de quien te dice que, y cap_01 prohibe escribir nombres en las casillas. Los dos pasos son transcripcion fiel de su linea y ninguno es PUENTE. Se toca alguno de los dos nodos?",
+        "medida_en": "REPORTE.md AC.7 (vuelta 37); encargo de la vuelta 38, tarea 4.1",
+        "bloquea": false
+      },
+      {
+        "n": 8,
+        "pregunta": "La senial 1 compara titulo mas resumen_teorico mas pasos, y en un lote escrito de una sentada eso mide la formula del extractor tanto como el contenido del nodo. Lo midieron dos instrumentos por separado. Ningun umbral se toca en ninguna vuelta: la pregunta es que se hace con eso.",
+        "medida_en": "APERTURA_CIEGA.md 13.2 y ACTA 36 7; encargo de la vuelta 38, tarea 4.2",
+        "bloquea": false
+      },
+      {
+        "n": 9,
+        "pregunta": "Puede el arnes abrir la fase ciega del auditor con un proceso del extractor todavia vivo? Dos vueltas seguidas la poblacion se movio dentro de la fase sellada, y en la vuelta 38 con la pagina abierta: el mismo forja.py gate dio 320 y despues 321 dentro del mismo turno. Es maquinaria del arnes y la moratoria de D.45 la protege.",
+        "medida_en": "ACTA 37 seccion 8",
+        "bloquea": false,
+        "resuelta": {
+          "cita": "decision del fundador del 17 sep 2026, punto 3, sobre la peticion 1 del frente grove",
+          "respuesta": "NO PUEDE. El arnes no abre el turno del auditor mientras el extractor de su misma linea tenga proceso vivo."
+        }
+      },
+      {
+        "n": 10,
+        "pregunta": "Una cita medida_en que ofrece como sede una seccion que aun no se ha escrito, o un fichero que se reescribe cada vuelta. Esta cola ofrecia REPORTE.md BC.7 y BC.7 nunca se escribio; y ofrece APERTURA_CIEGA.md 13.2, que es un fichero que el arnes sobreescribe en cada vuelta. Es la pregunta 4 de esta misma cola vista desde config/.",
+        "medida_en": "ACTA 37 seccion 9",
+        "bloquea": false
+      },
+      {
+        "n": 11,
+        "pregunta": "Un defecto en dataset/ que NO es una cifra falsa ni un veredicto mal puesto no tiene casillero en AUDITOR_FORJA.md 5.2: su tabla pone dataset como sede de CLASE, y CLASE se define como un veredicto mal puesto. El ejemplar son los dos caracteres de control U+0008 que la vuelta 39 escribio dentro de pedir_critica_primero_crear_seguridad_psicologica.resumen_teorico al corregir la ficha EN BANDEJA con un script de la vuelta, porque forja.py corregir solo actua sobre nodos ya insertados y no hay instrumento de casa para corregir un candidato en bandeja. Dos preguntas: que especie carga un defecto de dato que no es cifra ni clase, y puede retirarse un caracter de control de un campo ya escrito, dado que la correccion por anexion no puede quitarlo y 7.F veda el instrumento nuevo.",
+        "medida_en": "ACTA 38 seccion 6",
+        "bloquea": false,
+        "encargada_en": {
+          "cita": "decision del fundador del 18 sep 2026",
+          "que_dice": "En la vuelta de SANEAMIENTO que toque, el auditor la clasifica CON UN EJEMPLAR DELANTE: si existe una tercera especie de defecto de dato, las cuatro guardas de deuda.py tienen que saber su nombre."
+        }
+      }
+    ],
+    "congelada": {
+      "cita": "decision del fundador del 18 sep 2026, punto 3",
+      "que_dice": "La cola se congela en las que ya tiene y NO crece hasta que el mundo 11 cierre. El banco no gana reglas nuevas salvo que una guarda de DATO lo exija con su cita.",
+      "cuantas": 11,
+      "nota": "El fundador dicto 'se congela en sus 8' y eran 11: tres entraron mientras el arnes corria la noche del 17 al 18. Se congela en 11 por decision suya del 18 sep: congelar en 8 seria hacer desaparecer tres preguntas levantadas con su medida para cuadrar un numero, y esa es la clase de cifra que esta casa no publica."
+    }
+  },
+  "cosechados": {
+    "grove_high_output": {
+      "cita": "decision del fundador del 17 sep 2026, aplicada el 18",
+      "que_dice": "PAUSADO COSECHADO con dueño NINGUNO. Sus 23 candidatos estan en la bandeja de esta rama y su racha murio con el frente (D.48). La serial lo toma al cerrar scott_radical_candor, desde el capitulo siguiente al ultimo minado y citando su frontera heredada."
+    }
+  },
+  "corte_definitivo": {
+    "cita": "decision del fundador del 21 sep 2026, punto 4 (D.60)",
+    "que_dice": "EL MUNDO 11 SE DECLARA COMPLETO CUANDO LOS CINCO LIBROS DE 'libros_del_mundo_11' ESTAN INSERTADOS: los cuatro ya dentro mas grove_high_output entero. Una bandeja a medias no retrasa un cierre (D.60).",
+    "por_que_no_entran": "D.39: un libro entra cuando su extraccion cierra. gerber_emyth y marquet_turn_the_ship estan abiertos, asi que sus candidatos no pueden insertarse sin minar los libros enteros. Entran SOLO por la condicion de abajo.",
+    "libros_del_mundo_11": [
+      "onu_consumidor",
+      "smart_who",
+      "zhuo_manager",
+      "scott_radical_candor",
+      "grove_high_output"
+    ],
+    "en_bandeja_sin_insertar": {
+      "gerber_emyth": 10,
+      "marquet_turn_the_ship": 9
+    },
+    "sexto_condicional": {
+      "clave": "gerber_emyth",
+      "cita": "decision del fundador del 21 sep 2026, punto 4 (D.60)",
+      "condicion": "Entra como sexto SOLO si cierra su extraccion antes de que la cuota de la semana se agote, y entonces se cosecha e inserta por el relevo D.50. Si no la cierra, queda en bandeja entero y NO bloquea el cierre del mundo."
+    },
+    "septimo_condicional": {
+      "clave": "marquet_turn_the_ship",
+      "cita": "decision del fundador del 21 sep 2026, punto 4 (D.60)",
+      "condicion": "Solo si sobra semana despues de gerber_emyth."
+    }
+  }
+}

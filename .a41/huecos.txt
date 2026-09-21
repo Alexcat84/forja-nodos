@@ -1,0 +1,10 @@
+lineas de cuerpo CON TEXTO fuera de todo nodo: 8
+sus numeros: [9, 11, 13, 15, 17, 19, 241, 243]
+  9: A RADICALLY CANDID PERFORMANCE REVIEW
+  11: MANY OF THE PEOPLE we work with in our workshops ask us what kind of formal review process woul
+  13: Why is it so important to keep development and performance management separate? The ratings and
+  15: That’s not a reason to eliminate performance reviews. It’s a reason to separate development con
+  17: Radical Candor is mostly centered on development, on the habit of soliciting and giving frequen
+  19: Good performance management is fundamentally about results, fairness, retention, and transparen
+  241: CONCLUSION
+  243: I hope this bonus chapter helps you think about how the kinds of development conversations I de

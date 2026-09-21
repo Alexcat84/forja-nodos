@@ -384,6 +384,124 @@ guardas). Recogidas en `docs/COSECHA_2026-09.md` seccion 1.E.
 **SE ESTRENA CUANDO EL BUCLE DEL EXTRACTOR ARRANQUE.** Hasta entonces esta
 seccion es ley escrita sin casos, y su contador esta en cero.
 
+> ### **CORRECCION DECLARADA, 17 sep 2026, decision del fundador: LA RACHA ES DE SU LINEA**
+>
+> > **CADA LINEA DE TRABAJO LLEVA SU PROPIA RACHA**, porque una racha cuenta tandas
+> > **SEGUIDAS** y una secuencia solo existe dentro de una linea. **Un frente NACE CON SU
+> > RACHA EN CERO**, la de la serial **no viaja** a los frentes ni al reves, y al cosechar
+> > un frente **su racha muere con el frente**: sus caidas quedan como registro en sus
+> > actas archivadas y **no se suman a la serial**.
+>
+> **Y EL CREDITO YA NO VIVE SOLO EN TU ACTA: VIVE EN `docs/loop/CREDITO_<linea>.jsonl`**,
+> la serial incluida. **Escribir ahi tu tanda es parte de cerrar el acta**, una linea por
+> especie, con la vuelta, la tanda y su cita:
+>
+>     python forja.py credito                    lo que tu linea trae al abrir
+>     python forja.py credito --anotar --especie REPORTE --vuelta 33 >            --tanda "ACTA 32" --racha "0 de 3" --limpia --cita "ACTA 32 9.1"
+>
+> **`--cae` si la especie cayo en tu tanda, `--limpia` si no.** El instrumento **no
+> reinicia nada por su cuenta**: un reinicio es un suceso aparte con su cita a un fichero
+> de `docs/loop/paradas/`, que es lo que `5.4` manda desde siempre.
+>
+> **LO QUE LEVANTO ESTA REGLA** fue el auditor del frente `gerber_emyth`, parando por
+> doctrina en vez de elegir la lectura que le dejaba seguir: *cuatro sesiones simultaneas
+> no tienen orden entre si, asi que la palabra que sostiene la regla no tiene referente
+> aqui.* Escrito como **`D.48`** en el banco.
+>
+> **LO QUE NO CAMBIA:** `5.4` entero. Lo que `D.48` cambia es **de quien** es la racha, no
+> **quien** la puede tocar. **Sigues sin poder reiniciarte la tuya.**
+
+> ### **17 sep 2026, decision del fundador: EL ENCARGO QUE ESCRIBES DECLARA SU LIBRO**
+>
+> **`D.49`: toda linea LEE EL TABLERO en su apertura y lo cita.** Y el encargo que dejas
+> en `docs/loop/PROMPT_SIGUIENTE.md` **abre declarando sobre que libro trabaja**, en su
+> propia linea y con la clave desnuda:
+>
+>     LIBRO DE ESTA VUELTA: scott_radical_candor
+>
+> **`NINGUNO` si la vuelta no toca ningun libro**, que es una declaracion y no un
+> silencio. **Sin esa linea el arnes NO ABRE la vuelta siguiente** y lo dice.
+>
+> **POR QUE DECLARADO Y NO ADIVINADO:** el arnes no sabe que es un libro (`D.45`), y
+> buscar la clave suelta dentro del encargo **tumbaria la vuelta por la seccion donde
+> dices que NO tocas los frentes**. Es la misma trampa que el tallado pago dos veces.
+>
+> **ANTES DE ESCRIBIRLO, MIRA EL TABLERO:**
+>
+>     python forja.py tablero                    el estado de los once libros
+>     python forja.py tablero --puedo <clave>    si esta linea puede tomar ese libro
+>
+> **Y SI EL LIBRO DE ESTA LINEA CIERRA, NO ABRAS EL SIGUIENTE POR ORDEN SIN MIRAR**
+> (`D.50`): si el que toca esta `EN CURSO` o `PAUSADO` en otra rama, **se releva ENTERO**
+> y **el paso de fundir es del fundador**. Escribe la peticion nombrando la rama y el
+> estado, y **para**.
+
+> ### **18 sep 2026, decision del fundador: EL AUDITOR ENCARGA, NO BLOQUEA** (`D.55`)
+>
+> > **TU ACTA PUEDE DEJAR COMO MAXIMO UNA TAREA BLOQUEANTE** para la vuelta siguiente, **y
+> > solo si cita la guarda de DATO en rojo que la justifica.** Todo lo demas lo escribes en
+> > **`docs/loop/DEUDA.jsonl`**, con su cita y su vuelta de origen.
+> >
+> > **Un acta con mas de una bloqueante sin guarda roja es CAIDA DE REPORTE tuya.**
+>
+> **LAS CUATRO GUARDAS QUE SI BLOQUEAN**, y solo esas: `gate`, el cerrojo, el censo no
+> decreciente y la fidelidad `D.30` con puente. **Eso no es deuda: es averia**, y una averia
+> se arregla antes de seguir.
+>
+>     python scripts/deuda.py --anotar --que "..." --cita "..." --vuelta 41
+>     python scripts/deuda.py                         lo pendiente y que clase toca
+>
+> **POR QUE, Y ESTA MEDIDO:** la linea metio `14` nodos en la vuelta `36` y `8` en las cinco
+> siguientes, **con una en cero**. No falto candidato ni mordio ninguna guarda: **cada vuelta
+> abria con una reparacion y lo que quedaba de turno ya no daba para insertar.** La deuda
+> **no se perdona, se agenda**: se paga junta en una vuelta de saneamiento, **una de cada
+> cinco**, y sale mas barato que cuatro vueltas con una reparacion cada una.
+>
+> **LO QUE SIGUE SIENDO TUYO, Y NO CAMBIA:** adjudicar, releer a ciegas, cargarte tus
+> propias caidas y **parar cuando la decision sea del fundador**. Lo unico que cambia es
+> **cuando se cobra la reparacion**, no si se cobra.
+
+> ### **18 sep 2026: LA DOCTRINA SE CONGELA HASTA QUE EL MUNDO 11 CIERRE** (`D.55`)
+>
+> **LA COLA DE DOCTRINA NO CRECE.** Se queda en las **`11`** que ya tiene, y **el banco no
+> gana reglas nuevas salvo que una guarda de DATO lo exija con su cita.**
+>
+> **Si encuentras una pregunta nueva de doctrina: registrala en tu acta con su medida y
+> DEJALA AHI.** No abre parada, no entra en la cola y no va al banco. **Sesenta y cuatro
+> reglas en veinte dias son suficientes para insertar `21` nodos.**
+>
+> **Y EL AUSTERO GANA UNA CIFRA:** si un turno pasa de **`10` USD** y la vuelta **no** es de
+> saneamiento, **tu acta lo declara con el desglose de en que se fue**. No prohibe gastar:
+> **obliga a decir en que**, que es lo unico que deja decidir despues. La media de hoy es
+> `14,92` por turno, asi que esto no es teorico: **es la mayoria.**
+
+> ### **19 sep 2026, decision del fundador: DOS REGIMENES, Y EL TUYO CAMBIA CON ELLOS** (`D.58`)
+>
+> **EN UNA VUELTA DE EXTRACCION** (`MODO_INSERCION=cuarentena`), **el acta es CORTA y hay
+> cosas que NO corren**:
+>
+> - **verificas la frontera al digito**, **cotejas la muestra** de fidelidad y **publicas
+>   pasos inventados por capitulo**. Y poco mas;
+> - **NO hay fase ciega, NO hay sello y NO hay testigo.** No hay ninguna cifra sobre el
+>   grafo que proteger: los candidatos estan en cuarentena y `D.39` no los deja entrar.
+>
+> **LA MUESTRA SE COTEJA CON SU SEMILLA, y eso es lo que la hace auditable:**
+>
+>     python scripts/muestra_fidelidad.py --libro <clave> --capitulos a,b,c --semilla <la del reporte>
+>
+> **Si te sale una lista distinta de la que el reporte pego, eso es caida de cifra.**
+>
+> **Y SI LA MUESTRA DE UN CAPITULO PASA DEL `10` POR CIENTO**, ese capitulo **se relee
+> entero antes de seguir**: no es una recomendacion, es la escalada.
+>
+> **EN UNA VUELTA DE INSERCION todo sigue como estaba**, y ademas **la relectura de
+> fidelidad del lote se hace ENTERA ahi**, sobre lo que entra.
+>
+> **Y LA CADENCIA YA NO ES TUYA:** si desde la ultima vuelta de saneamiento han pasado
+> cinco, **la que abre ES de saneamiento** y el arnes no deja que el encargo diga otra
+> cosa. La `49` corrio como saneamiento y **no lo anoto**; lo cazaste tu en la `ACTA 48`.
+> Ahora lo comprueba el codigo.
+
 ### 5.1. Que se relee, y en que orden
 
 La relectura ciega **empieza siempre por los discutibles que el extractor marco

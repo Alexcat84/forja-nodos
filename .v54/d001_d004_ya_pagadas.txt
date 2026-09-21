@@ -1,0 +1,12 @@
+$ python scripts/deuda.py | grep -c "^  d0"
+19
+
+$ python scripts/deuda.py | grep -E "^  d00[1-5]"
+  d005   grove v2 relevo de grove    De los 15 candidatos de cap_03 de grove, su aduana e
+(d001 a d004 NO aparecen: la lista solo imprime pendientes)
+
+$ python - <<  busca el pago de d001 a d004 en el registro
+d003 PAGADA en la vuelta 44
+d001 PAGADA en la vuelta 44
+d002 PAGADA en la vuelta 44
+d004 PAGADA en la vuelta 44

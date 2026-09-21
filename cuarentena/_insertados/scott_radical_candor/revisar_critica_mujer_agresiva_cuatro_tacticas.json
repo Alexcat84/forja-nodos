@@ -1,0 +1,43 @@
+{
+ "id": "revisar_critica_mujer_agresiva_cuatro_tacticas",
+ "titulo": "Revisar una critica de demasiado agresiva a una mujer de tu equipo con las cuatro tacticas que el texto da, antes de darsela",
+ "denominaciones": {
+  "nombre_largo": "Las cuatro tacticas para no caer en la trampa de competencia contra simpatia cuando sientes que una mujer esta siendo demasiado agresiva: cambiar el genero, concretar, vigilar el lenguaje y no quedarse en se mas simpatica",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "Men and women: things to think about when you feel a woman is being too aggressive"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando sientes que una mujer de tu equipo esta siendo demasiado agresiva y estas a punto de decirselo, seas hombre o mujer.",
+ "entregable_esperado": "La critica revisada por las cuatro tacticas: o descartada porque era tu sesgo, o reescrita en ejemplos concretos y sin lenguaje de genero, y con sugerencias de conducta en vez de un se mas simpatica.",
+ "pasos_accionables": [
+  "Antes de dar una critica asi, prueba estas tacticas para asegurarte de que no estas cayendo en la trampa de competencia contra simpatia.",
+  "No te imagines que no vas a caer en la trampa por ser mujer: el texto dice que los dos generos son igual de culpables aqui, y lo dice con pesar.",
+  "Cambia el genero: si la mujer fuera un hombre que hizo exactamente lo mismo, la critica eres demasiado agresiva se convertiria en de verdad sabes sacar las cosas adelante?",
+  "Imagina de verdad a un hombre de tu equipo haciendo exactamente lo mismo que hizo la mujer, y pregunta como reaccionarias entonces.",
+  "Si reaccionarias distinto, estas a punto de caer en la trampa.",
+  "Se mas concreto: una critica como eres demasiado agresiva es demasiado abstracta y por eso queda expuesta a la trampa de lo abrasivo.",
+  "Describe ejemplos concretos de como se manifiesta eso, que es lo que deja mas claro si hay un problema real o si es tu sesgo inconsciente trabajando.",
+  "No uses lenguaje de genero: fijate en las palabras que usas.",
+  "Pregunta si usas palabras como abrasiva, estridente, chillona o mandona, que casi nunca se usan para describir a un hombre; si es asi, puede que estes a punto de caer en la trampa.",
+  "Cuestiona en voz alta el uso de palabras como abrasiva, sobre todo en las evaluaciones de desempenio, que es lo que el texto pone como ejemplo nombrado de Dick Costolo, y habla cuando oigas algo que suene inapropiadamente marcado por el genero.",
+  "Nunca te quedes en se mas simpatica: atiende la situacion dandole a la mujer sugerencias concretas para cambiar su conducta y ser mas eficaz.",
+  "Y cuenta con lo que el texto pone como tu trabajo de jefe aunque el sesgo de genero sea un hecho de la vida: no aconsejar a las mujeres como esquivarlo, sino ayudar a todo tu equipo a reconocerlo y eliminarlo, para crear un entorno de trabajo mas justo donde el sesgo injusto no danie la carrera de nadie."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_09.md, unidad Cap. 6, Guidance. Sale de las lineas 301 a 313, bajo el rotulo Men and women: things to think about when you feel a woman is being too aggressive, dentro de la seccion GENDER AND GUIDANCE y bajo la cabeza What can you do. ES LA PIEZA P22 DE LA FRONTERA DE cap_09, UNA DE LAS CINCO QUE LA VUELTA 19 DEJO SIN ESCRIBIR Y QUE ESTA VUELTA CIERRA. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 303 dice try these tactics y detras van CUATRO rotuladas una a una, que es inventario de MEDIOS del propio libro y no de metas. Es la misma razon por la que P17 y P18, las dos piezas largas de genero, NO dan nodo: aquellas rematan en We must stop gender politics, que es META y cae por la restriccion 1. LA CUENTA NO ESTA ESCRITA EN EL TEXTO: la linea 303 dice these tactics sin decir cuantas, asi que esto NO es D.37 y no se cablea ninguna serie por el. Las cuatro las cuento yo de los rotulos de las lineas 305, 309, 311 y 313, y lo digo asi en vez de atribuirle al libro una cuenta que no da. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 12 pasos, 12 TRANSCRIPCION, 0 PUENTE. P1 y P2 de la linea 303; P3, P4 y P5 de la 305; P6 y P7 de la 309; P8, P9 y P10 de la 311; P11 y P12 de la 313. EL CASO DE LOS DOS ACTORES DE IMPROVISACION, linea 307, NO ENTRA COMO PASO: es el ejemplo que sostiene la tactica de cambiar el genero, y el manual 3.5 dice que el caso no es la casa. Tampoco entra su dato, ni el nombre de la empresa, porque el entregable no lleva un solo dato del caso. NO ESCRIBO DESTINATARIO NI PERIODO NI RESPONSABLE: el texto no dice a quien se le cuenta el resultado de la revision, ni cada cuanto se hace, ni quien responde de que el lenguaje se vigile, y los tres serian puentes de las tres especies que el lote 1 pago. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: que hacer si despues de las cuatro tacticas la critica sigue en pie, ni como se distingue una agresividad real de la percibida, que es justo lo que la linea 323 le dice a la otra parte en la pieza P23.",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": []
+}

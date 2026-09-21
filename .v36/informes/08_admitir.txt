@@ -1,0 +1,39 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/admitir_pronto_mal_desempenio_cuatro_razones.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'admitir_pronto_mal_desempenio_cuatro_razones'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (309 del grafo mas 39 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 2. Ninguna señal los levanto.
+  armar_plan_anual_crecimiento_equipo  [Armar una vez al anio el plan de gestion del crecimiento de cada persona del equipo, desde poner los nombres en las casillas hasta comprobar la equidad entre niveles]
+    señales: familia_id 0.0, paso_contra_nodo 0.443, similitud_texto 0.237
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  facilitar_despido_tres_cosas  [Facilitar un despido con las tres cosas que el texto cuenta, situandolo entre los dos errores opuestos de la empresa que despide demasiado facil y la que lo hace casi imposible]
+    señales: familia_id 0.0, paso_contra_nodo 0.442, similitud_texto 0.26
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino trazar_plan_dieciocho_meses_aprendizaje  [Trazar con cada persona a tu cargo su plan de dieciocho meses de aprendizaje hacia sus suenios, que es la tercera de las tres conversaciones de carrera]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.497 (umbral 0.60)
+    paso 5 del candidato contra paso 12 de trazar_plan_dieciocho_meses_aprendizaje
+
+  vecino sopesar_consejo_legal_despedir_humildad  [Sopesar el consejo legal contra el riesgo de seguirlo y despedir con humildad, que es la tercera de las tres cosas que facilitan un despido]
+    levantada por: similitud_texto
+    similitud_texto    0.374 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.466 (umbral 0.60)
+    paso 5 del candidato contra paso 1 de sopesar_consejo_legal_despedir_humildad
+  arista madre-hijo cableada y escrita RESUELTA: facilitar_despido_tres_cosas > admitir_pronto_mal_desempenio_cuatro_razones
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 310
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/admitir_pronto_mal_desempenio_cuatro_razones.json

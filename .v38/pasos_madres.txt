@@ -1,0 +1,81 @@
+=== desplegar_marco_franqueza_radical ===
+  P01: Usa la version nueva del marco de la franqueza radical que trae esta edicion, que es la forma que el propio texto propone para ayudar a que todos entiendan que la idea no es comportarse como un imbecil.
+  P02: Recorta el marco del propio libro. El texto dice que hay una version mas grande en su pagina 297.
+  P03: Haz fotocopias.
+  P04: Ponlas en tu nevera, encima de tu mesa o en cualquier otro sitio, como recordatorio.
+  P05: Comparte copias con tus colegas.
+  P06: Usa el marco como una brujula, para llevar cada conversacion concreta a un sitio mejor.
+  P07: No lo uses como test de personalidad para juzgarte a ti ni para juzgar a otros.
+  P08: No escribas nombres en las casillas.
+  P09: Cuenta con lo que el texto aniade justo despues de las dos prohibiciones: todos caemos en cada cuadrante varias veces al dia.
+  previos   : []
+  siguientes: []
+
+=== empezar_cultura_franqueza_radical ===
+  P01: Cuenta con lo que el texto observa a menudo que habla de esto: la gente esta de acuerdo con la idea y se pone nerviosa ante la idea de ponerla en practica.
+  P02: Empieza explicando la idea.
+  P03: Y despues pide a tu gente que sea radicalmente franca contigo.
+  P04: Dicho de otra manera, que es como el propio texto lo resume: empieza recibiendo guia, no repartiendola.
+  P05: Cuando empieces a darla, empieza por el elogio y no por la critica.
+  P06: Cuando pases a la critica, asegurate de entender donde esta la frontera peligrosa entre la franqueza radical y la agresion odiosa.
+  previos   : []
+  siguientes: ['criticar_trabajo_evitar_desanimo', 'pedir_critica_equipo_premiarla']
+
+=== desplegar_plan_orden_operaciones_franqueza_radical ===
+  P01: Parte de lo que el texto pone: ya toca empezar a poner en practica las sugerencias del libro, y la pregunta es que hacer primero, que es lo que el texto llama el orden de operaciones.
+  P02: Cuenta con lo que el texto distingue antes de darte el plan: explicar ideas y tecnicas es un negocio muy distinto de ponerlas a funcionar, y lo que viene es un plan para construir una cultura de franqueza radical en tu equipo.
+  P03: Y si te atascas en alguna parte del plan, ve al epilogo: el texto dice que ahi hay consejo mas detallado sobre compartir tus historias, pedir critica, dar elogio y medir tu critica.
+  P04: Empieza por la etapa que el texto pone primera, y su rotulo es comparte tus historias.
+  P05: Sigue por la segunda, cuyo rotulo es prueba que aguantas antes de empezar a repartir: empieza a pedir a tu equipo que te critique.
+  P06: Y no dejes que la gente se libre cuando no diga gran cosa, porque al principio no la va a decir. Abraza la incomodidad para pasar de ella.
+  P07: Presta mucha atencion si no te esta llegando ninguna critica: que no te critiquen no significa que te crean perfecto.
+  P08: Si quieres, copia el marco de la franqueza radical del capitulo dos y lleva ahi la cuenta de quien te dice que.
+  P09: Y si te das cuenta de que no te llega ninguna critica, prueba la tecnica de la caja naranja de Michael Dearing.
+  P10: Cuenta con lo que el texto dice que es pedir guia, y sobre todo critica: no es algo que se hace una vez y se tacha de la lista, es algo que vas a hacer a diario, en conversaciones pequenias de uno a dos minutos, y no en reuniones que tengas que anadir al calendario. Es algo de lo que ser consciente, no algo que programar.
+  P11: Cuenta tambien con que al principio se te va a hacer raro, y con que cuando cojas la costumbre lo raro sera no hacerlo: el texto dice que nunca pasaras de recibir guia, igual que nunca pasaras de tener que beber agua o lavarte los dientes.
+  P12: Cuando eso este en marcha ya estas listo para las conversaciones de carrera: empiezalas con tu equipo, y empieza por las personas con las que llevas mas tiempo trabajando.
+  P13: Cuenta con que tampoco son algo que se hace una vez y se tacha de la lista: la gente cambia, y tu tienes que cambiar con ella.
+  P14: Por eso el texto dice que es buena idea hacer una ronda de conversaciones de carrera al anio con cada persona a tu cargo, dentro de vuestro tiempo de reunion a solas.
+  P15: En paralelo, perfecciona tus reuniones a solas, y el texto dice por que en paralelo: vas a tardar al menos de tres a seis semanas en pasar esas tres conversaciones con todo tu equipo, porque quieres dejar una o dos semanas entre cada una de las tres.
+  P16: Asegurate en ese tiempo de que estas teniendo reuniones a solas con sentido con las personas a tu cargo.
+  P17: Despues de haber explicado la franqueza radical, pedido guia, tenido las conversaciones de carrera y mejorado tus reuniones a solas, notaras que te estas ganando la confianza de tu equipo y construyendo una cultura mejor. Entonces estas listo para empezar a mejorar como das elogio y critica improvisados.
+  P18: Acuerdate de que la guia improvisada ocurre mejor en conversaciones de uno a dos minutos.
+  P19: Y asegurate de medir tu guia, porque el texto avisa: puedes creerte radicalmente franco y que una persona no haya oido ninguna critica, otra la haya oido como empatia ruinosa y otra como agresion odiosa. Tienes que ajustar para cada persona, y no basta con ser consciente de ti mismo: hay que serlo tambien de la relacion y de la cultura.
+  P20: Respira hondo y evalua, con las preguntas que el texto pone: como va la cosa, que esta funcionando, que no esta funcionando, con quien puedes hablar, puede ayudarte tu jefe, tu equipo, un mentor de fuera del trabajo, un coach, otra gente de la comunidad de la franqueza radical.
+  P21: Y no intentes hacer mas cosas nuevas hasta que sientas estas tres: que has avanzado bien en el ladrillo fundamental de la gestion, que es recibir y dar guia; que conoces mejor a las personas a tu cargo; y que estas contento con tus reuniones a solas.
+  P22: Si la respuesta a esas tres es si, estas listo para perfeccionar las reuniones de equipo, las decisiones y los debates: el texto dice que ya has construido los cimientos de confianza que son el centro de tu capacidad de sacar cosas adelante.
+  P23: Asegurate de que tus reuniones de equipo son lo mas productivas posible: durante la reunion revisas las metricas clave, compartes actualizaciones e identificas tus grandes decisiones y tus grandes debates. No dejes que se alarguen demasiado, y no te las saltes.
+  P24: Y aprovecha que es buen momento para estrenar las reuniones de gran decision y las de gran debate.
+  P25: Vuelve a la guia: asegurate de que estas fomentando la guia entre las personas de tu equipo.
+  P26: Establece en tu equipo una norma de nada de punialadas por la espalda, o de escalada limpia, y explicala: no vas a permitir que una persona venga a hablarte de otra.
+  P27: Puedes darles a leer el apartado de impedir las punialadas por la espalda del capitulo seis, pero el texto dice que lo importante no es que lo lean sino que tu lo hagas cumplir, y que vas a tener que hacer seguimiento.
+  P28: Cuenta con lo que esa norma cuesta y con lo que ahorra: a veces te caeran en el calendario reuniones extra para resolver disputas, y aun asi ahorrara mas tiempo del que cuesta, porque habra menos situaciones politicas estallandote en la cara.
+  P29: Pelea la multiplicacion de reuniones: asegurate de que no te estan sobreprogramando, y piensa muy a conciencia que estas haciendo que puedas dejar de hacer.
+  P30: Pon algo de tiempo para pensar en tu calendario.
+  P31: Y cuenta con que el desorden de calendario es una pelea permanente para la mayoria de las organizaciones: pelea la buena pelea, no solo por ti sino en nombre de tu equipo.
+  P32: Planea el futuro de tu equipo: empieza a hacer un plan de gestion del crecimiento para cada persona de tu equipo.
+  P33: Asegurate de que no estas creando una cultura obsesionada con el ascenso, y dedica un pensamiento extra a como estas recompensando a tus estrellas de rock.
+  P34: Vuelve otra vez a la guia, ahora entre ellos: pide a tu equipo que empiece a medirse la guia unos a otros. El texto da la razon: son mas que tu, asi que cualquier cosa que consigas para que se den entre ellos mas elogio y mas critica radicalmente francos reforzara la cultura y te dara mas palanca que toda la guia que puedas dar o recibir tu en persona.
+  P35: Si se resisten, prueba a empezar con la tecnica del uy, que despiste de Dan Woods en tu proxima reunion de equipo.
+  P36: Y aprovecha ese momento para evaluar si sigues haciendo un buen trabajo recibiendo y dando guia, acordandote de que es dificil, de que no es natural, y de que es el ladrillo atomico de la gestion.
+  P37: Pasea por la organizacion: llevas ya un tiempo en esto, asi que preguntate si las cosas se sienten distintas en el equipo, y que cosas quieres saber y no estas oyendo.
+  P38: Aparta un rato cada semana para pasear y tener charlas informales y espontaneas con la gente.
+  P39: Si tienes la sensacion de que las cosas siguen sin ir bien y de que hay mucho escepticismo en el equipo, vuelve al paso uno.
+  P40: Y valora ademas estrenar una semana de arreglo de averias de gestion. Preguntate tambien como se siente tu cultura y que puedes hacer para mejorarla.
+  P41: Si eres jefe de jefes, prueba las reuniones de salto de nivel con todo tu equipo: el texto dice que solo hace falta hacerlas una vez al anio, y que es buena idea agruparlas en un periodo de dos semanas para que nadie se sienta senialado.
+  P42: Y empieza a llevar un enfoque mas radicalmente franco a los procesos que tu empresa ya tenga: se radicalmente franco al contratar, al despedir y al ascender, y tambien al dar las evaluaciones formales de desempenio.
+  previos   : []
+  siguientes: ['armar_plan_anual_crecimiento_equipo', 'bloquear_tiempo_pensar_calendario', 'desplegar_tres_conversaciones_carrera', 'evitar_obsesion_ascenso_estatus', 'reconocer_excelencia_trayectoria_gradual']
+
+=== contar_historias_propias_explicar_franqueza_radical ===
+  P01: Explica la franqueza radical a tu equipo, para que entiendan que te traes entre manos.
+  P02: Puedes ademas pedirles que lean el libro, o ensenarles los videos que hay en la web de la franqueza radical.
+  P03: Pero explicala sobre todo con tus propias palabras, que es lo que el texto dice que sale mejor.
+  P04: Busca cual es tu version de la historia del um o de la historia de Bob, que son las dos que el texto pone como ejemplares.
+  P05: Cuenta tus historias a tu equipo.
+  P06: Muestra algo de vulnerabilidad.
+  P07: Y cuenta con lo que el texto dice que consiguen: tus historias personales explican, mejor que cualquier teoria de gestion, lo que de verdad quieres decir, y ensenian por que lo dices de verdad.
+  P08: Cuenta tambien con por que las tuyas valen mas que las del libro: el texto dice que significan mucho mas para tu equipo que las de la autora, porque significan algo para ti.
+  previos   : []
+  siguientes: []
+

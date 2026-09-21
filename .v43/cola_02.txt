@@ -1,0 +1,2 @@
+  EL DATASET ESTA OCUPADO por el proceso 30764. Espero: EXTRACTOR.md 2 manda UN CANDIDATO POR VEZ.
+INSERCION NO INTENTADA: el dataset lleva 120 s ocupado por el proceso 30764. NO se escribe nada: una insercion que pisa a otra pierde un nodo con el gate en verde, y eso ya paso una vez (vuelta 28).

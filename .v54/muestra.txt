@@ -1,0 +1,16 @@
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : grove_high_output
+  semilla  : v54
+  capitulos: cap_06, cap_07, cap_08
+
+  RELEIDO ENTERO : cap_07
+  POR MUESTRA    : cap_06, cap_08, 15 pasos cada uno
+
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+  --- cap_06: 0 paso(s) en la muestra
+
+  --- cap_08: 0 paso(s) en la muestra
+
+  --- cap_07: ENTERO, 0 paso(s), no hay muestra que elegir

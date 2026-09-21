@@ -1,0 +1,51 @@
+    pasos que la muestra reparte (leidos de .v55ext/muestra.txt) : 23
+    pasos que yo declaro releidos                                : 23
+    LAS DOS LISTAS COINCIDEN, paso a paso                        : True
+
+==============================================================================
+LA RELECTURA, PASO A PASO: EL FRAGMENTO SE BUSCA EN EL FICHERO DEL CAPITULO
+==============================================================================
+| capitulo | candidato | paso | marca | linea del libro donde el instrumento lo encuentra |
+|---|---|---:|---|---|
+| `cap_07` | `cerrar_brecha_dos_preguntas_estrategia` | 1 | TRANSCRIPCION | `L39`: `The final step of planning consists of undertaking new tasks or modifyin` |
+| `cap_07` | `cerrar_brecha_dos_preguntas_estrategia` | 2 | TRANSCRIPCION | `L39`: `The first question is, What do you need to do to close the gap?` |
+| `cap_07` | `contestar_dos_preguntas_direccion_objetivos` | 3 | TRANSCRIPCION | `L73`: `The answer provides the objective` |
+| `cap_07` | `contestar_dos_preguntas_direccion_objetivos` | 4 | TRANSCRIPCION | `L75`: `How will I pace myself to see if I am getting there?` |
+| `cap_07` | `definir_entorno_grupo_clientes_proveedores_com` | 4 | TRANSCRIPCION | `L25`: `vendors who are able to provide you with certain capabilities` |
+| `cap_07` | `examinar_demanda_entorno_dos_marcos_temporales` | 2 | TRANSCRIPCION | `L29`: `What do my customers want from me now?` |
+| `cap_07` | `examinar_demanda_entorno_dos_marcos_temporales` | 5 | TRANSCRIPCION | `L29`: `You need to focus on the difference between what your environment demand` |
+| `cap_07` | `fijar_horizonte_ventana_replanificacion` | 1 | TRANSCRIPCION | `L61`: `But what is really being influenced here? It is the next year` |
+| `cap_07` | `fijar_horizonte_ventana_replanificacion` | 2 | TRANSCRIPCION | `L61`: `you implement only that portion of a plan that lies within the time wind` |
+| `cap_07` | `fijar_horizonte_ventana_replanificacion` | 3 | TRANSCRIPCION | `L61`: `Everything else you can look at again` |
+| `cap_07` | `fijar_periodo_direccion_objetivos_retroaliment` | 5 | TRANSCRIPCION | `L79`: `if we plan on a yearly basis, the corresponding MBO system` |
+| `cap_07` | `planificar_tres_pasos_demanda_estado_brecha` | 1 | TRANSCRIPCION | `L19`: `Your general planning process should consist of analogous thinking` |
+| `cap_07` | `planificar_tres_pasos_demanda_estado_brecha` | 2 | TRANSCRIPCION | `L19`: `Step 1 is to establish projected need or demand` |
+| `cap_07` | `planificar_tres_pasos_demanda_estado_brecha` | 4 | TRANSCRIPCION | `L19`: `where will your business be if you do nothing different from what you ar` |
+| `cap_07` | `planificar_tres_pasos_demanda_estado_brecha` | 6 | **PUENTE** | **el fragmento NO esta en el fichero** |
+| `cap_10` | `repartir_supervision_puesto_funcional_mision` | 1 | TRANSCRIPCION | `L43`: `you need a way to coordinate the mission-oriented units and the function` |
+| `cap_10` | `repartir_supervision_puesto_funcional_mision` | 2 | TRANSCRIPCION | `L43`: `His professional methods, practices, and standards are set by the functi` |
+| `cap_10` | `repartir_supervision_puesto_funcional_mision` | 3 | TRANSCRIPCION | `L43`: `should report to someone in both the functional and the mission-oriented` |
+| `cap_10` | `repartir_supervision_puesto_funcional_mision` | 4 | TRANSCRIPCION | `L43`: `with the type of supervision reflecting the varying needs of the two` |
+| `cap_10` | `repartir_supervision_puesto_funcional_mision` | 5 | TRANSCRIPCION | `L43`: `gives the controller mission-oriented priorities by asking him to work o` |
+| `cap_10` | `repartir_supervision_puesto_funcional_mision` | 6 | TRANSCRIPCION | `L43`: `makes sure that the controller is trained to do his work in a technicall` |
+| `cap_10` | `repartir_supervision_puesto_funcional_mision` | 7 | TRANSCRIPCION | `L43`: `supervises and monitors his technical performance` |
+| `cap_10` | `repartir_supervision_puesto_funcional_mision` | 8 | TRANSCRIPCION | `L43`: `looks after his career inside finance, promoting him` |
+
+==============================================================================
+PASOS INVENTADOS POR CAPITULO (D.59): UNA FILA POR CAPITULO, NO UNA MEDIA
+==============================================================================
+| capitulo | candidatos | pasos escritos | regimen `D.58` | pasos releidos | PUENTE | `PASOS INVENTADOS` |
+|---|---:|---:|---|---:|---:|---:|
+| `cap_07` | 9 | 53 | MUESTRA de 15 | 15 | **1** | **6,7 por ciento, 1 de 15** |
+| `cap_09` | 0 | 0 | ENTERO | 0 | **0** | **0,0 por ciento, 0 de 0** |
+| `cap_10` | 1 | 8 | ENTERO, 8 de 8 | 8 | **0** | **0,0 por ciento, 0 de 8** |
+
+    EL NUMERADOR ES `pasos marcados PUENTE` Y EL DENOMINADOR `pasos releidos`,
+    no los pasos escritos: la muestra de D.58 no relee todos los pasos del capitulo.
+
+    cap_07      6,7 por ciento contra un tope de 10 : NO DISPARA
+    cap_09      0,0 por ciento contra un tope de 10 : SIN SUPERFICIE: 0 candidatos y 0 pasos, no hay que releer
+    cap_10      0,0 por ciento contra un tope de 10 : NO DISPARA
+
+    LA CUARTA GUARDA DE DATO DE D.55, la fidelidad D.30 con puente: %d puente(s).
+    EN ROJO: 1 puente(s).

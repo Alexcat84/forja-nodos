@@ -1,0 +1,21 @@
+  dataset/nodos.jsonl                       :   324 registro(s), 2 control(es)
+  bitacora/VEREDICTOS.jsonl                 :   506 registro(s), 0 control(es)
+  config/pares_mutuos.jsonl                 :     1 registro(s), 0 control(es)
+  censos/                                   :     7 fichero(s), 0 control(es)
+  cuarentena/                               :   518 fichero(s), 2 control(es)
+
+  ficheros y registros mirados: 1356
+  CONTROLES ENCONTRADOS       : 4
+
+  U+0008  en linea 322  campo resumen_teorico  posicion 5162
+          sede: dataset/nodos.jsonl
+          id  : pedir_critica_primero_crear_seguridad_psicologica
+  U+0008  en linea 322  campo resumen_teorico  posicion 5166
+          sede: dataset/nodos.jsonl
+          id  : pedir_critica_primero_crear_seguridad_psicologica
+  U+0008  en fichero  campo resumen_teorico  posicion 5162
+          sede: cuarentena/_insertados/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json
+          id  : pedir_critica_primero_crear_seguridad_psicologica
+  U+0008  en fichero  campo resumen_teorico  posicion 5166
+          sede: cuarentena/_insertados/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json
+          id  : pedir_critica_primero_crear_seguridad_psicologica

@@ -1,0 +1,27 @@
+MIS CLASES DE LA VUELTA 32, ESCRITAS ANTES DE ABRIR NINGUNA RAZON DE LA BITACORA
+(remedio 2 heredado: la clase va a fichero antes de la primera corrida que IMPRIMA UNA RAZON)
+
+PAR UNICO DE VECINO DE LA TANDA
+  hijo   : montar_tablero_kanban_medir_actividades   (candidato de cap_11, 10 pasos, GRAFO)
+  madre  : repartir_notas_publicar_reparto_esperado  (9 pasos, BANDEJA scott_radical_candor)
+  señal declarada por el reporte: paso_contra_nodo 0,607
+
+  MI CLASE A CIEGAS: SANO. NI CONTINUA NI REPITE, Y TAMPOCO ARISTA.
+
+  LA VARA (AUDITOR_FORJA.md 6.1), con direccion y sin bascula:
+  - el objeto de trabajo del hijo es EL TRABAJO EN CURSO: tres columnas, notas por
+    persona, quien es el cuello de botella. El de la madre es LA NOTA DE LA PERSONA:
+    que reparto esperas y si lo publicas.
+  - lo que queda fuera del solape es procedimiento EN LOS DOS LADOS: montar el
+    tablero y moverlo por columnas de un lado; los porcentajes del reparto y la
+    publicacion del reparto esperado del otro. Ninguno es subconjunto del otro.
+  - el solape real es una sola frase: el paso 10 del hijo dice que medir actividades
+    en publico TIENDE A dar evaluaciones menos sesgadas, y el paso 9 de la madre
+    manda publicar el reparto para que la calibracion no sea opaca. Las dos hablan
+    de publicar, pero una publica EL TRABAJO y la otra publica LA ESCALA DE NOTAS.
+  - NOMBRAR NO ES PROCEDIMENTAR: el paso 10 del hijo NOMBRA la evaluacion como
+    consecuencia esperada, no la ejecuta, asi que tampoco sostiene arista D.37: no
+    hay paso de la madre que el hijo cite ni paso del hijo que entregue a la madre.
+
+  SI ME EQUIVOCO: seria CONTINUA y habria una arista que declarar, y la caida seria
+  DENTRO del marcado (es el discutible 4 del reporte).

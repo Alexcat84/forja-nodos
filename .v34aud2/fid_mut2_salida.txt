@@ -1,0 +1,5 @@
+RELECTURA DE FIDELIDAD D.30 DEL TRAMO DE cap_09, ANTES DE INSERTAR
+  libro: fuentes/scott_radical_candor/cap_09.md
+  la maquina saca el trozo del libro y comprueba el ancla; el veredicto lo pongo yo
+
+RELECTURA INCOMPLETA en abrazar_incomodidad_arrancar_critica_equipo: 20 pasos y 19 releidos

@@ -1,0 +1,13 @@
+    $ python scripts/censar_rutas.py
+    ============================================================================
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    ============================================================================
+    rutas publicadas y censadas : 808
+      pasan                     : 808
+      CAEN                      : 0
+          PATRON                           72
+          VACIA A PROPOSITO                3
+          con contenido                    724
+          vacia por protocolo              9
+    
+    CENSO VERDE: las 808 rutas publicadas sostienen lo que dicen sostener.

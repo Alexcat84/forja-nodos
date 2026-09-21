@@ -1,0 +1,6 @@
+== MADRE transmitir_objetivos_prioridades_preferencias
+    EL HIJO SE ESCRIBIO EN LA VUELTA 47 Y SE LLAMA delegar_tarea_base_comun_seguimiento
+   nodos_siguientes: []
+== HIJO delegar_tarea_base_comun_seguimiento
+    ARISTAS DECLARADAS POR LECTURA, para cablearlas el dia de la insercion y no hoy: (1) D.29, MADRE transmitir_objetivos_prioridades_preferencias, cuyo paso 5 dice en UNA linea que transmitir los objetivos y los modos preferidos es la llave de una delegacion que salga bien, y este hijo despliega esa de
+   nodos_previos: []

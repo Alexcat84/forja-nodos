@@ -1,0 +1,341 @@
+    poblacion de grafo para integrar_trabajo_vida_mejor_version: quitadas 1 lineas suyas, quedan 281
+===== BARRIDO DE integrar_trabajo_vida_mejor_version =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (281 del grafo mas 66 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] integrar_trabajo_vida_mejor_version   (integrar_trabajo_vida_mejor_version.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+    poblacion de grafo para definir_receta_propia_mantenerse_centrado: quitadas 1 lineas suyas, quedan 281
+===== BARRIDO DE definir_receta_propia_mantenerse_centrado =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (281 del grafo mas 66 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] definir_receta_propia_mantenerse_centrado   (definir_receta_propia_mantenerse_centrado.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+    poblacion de grafo para agendar_cuidados_propios_cumplirlos: quitadas 1 lineas suyas, quedan 281
+===== BARRIDO DE agendar_cuidados_propios_cumplirlos =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (281 del grafo mas 66 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] agendar_cuidados_propios_cumplirlos   (agendar_cuidados_propios_cumplirlos.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+    poblacion de grafo para ceder_autoridad_unilateral_equipo: quitadas 1 lineas suyas, quedan 281
+===== BARRIDO DE ceder_autoridad_unilateral_equipo =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (281 del grafo mas 66 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] ceder_autoridad_unilateral_equipo   (ceder_autoridad_unilateral_equipo.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+    poblacion de grafo para dominar_arte_socializar_trabajo: quitadas 1 lineas suyas, quedan 281
+===== BARRIDO DE dominar_arte_socializar_trabajo =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (281 del grafo mas 66 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] dominar_arte_socializar_trabajo   (dominar_arte_socializar_trabajo.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+    poblacion de grafo para evitar_presion_social_actos_equipo: quitadas 1 lineas suyas, quedan 281
+===== BARRIDO DE evitar_presion_social_actos_equipo =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (281 del grafo mas 66 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : paso_contra_nodo 1, similitud_texto 2
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] evitar_presion_social_actos_equipo   (evitar_presion_social_actos_equipo.json)
+    vecino contar_cuatro_historias_propias_ver_hueco_intencion  [levantada por: paso_contra_nodo]
+      similitud_texto 0.198 | familia_id 0.000 | paso_contra_nodo 0.604
+      paso 6 del candidato contra paso 16 de contar_cuatro_historias_propias_ver_hueco_intencion
+    vecino proteger_tiempo_equipo_jefe  [levantada por: similitud_texto]
+      similitud_texto 0.380 | familia_id 0.125 | paso_contra_nodo 0.417
+      paso 1 del candidato contra paso 8 de proteger_tiempo_equipo_jefe
+    vecino crear_obligacion_disentir_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.405 | familia_id 0.125 | paso_contra_nodo 0.346
+      paso 6 del candidato contra paso 4 de crear_obligacion_disentir_equipo
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+    poblacion de grafo para construir_confianza_equipo_tiempo_solas: quitadas 1 lineas suyas, quedan 281
+===== BARRIDO DE construir_confianza_equipo_tiempo_solas =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (281 del grafo mas 66 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : paso_contra_nodo 1, similitud_texto 2
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] construir_confianza_equipo_tiempo_solas   (construir_confianza_equipo_tiempo_solas.json)
+    vecino decidir_quien_comunica_cada_cuanto  [levantada por: paso_contra_nodo]
+      similitud_texto 0.244 | familia_id 0.000 | paso_contra_nodo 0.619
+      paso 7 del candidato contra paso 5 de decidir_quien_comunica_cada_cuanto
+    vecino reconocer_emociones_propias_avisar_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.358 | familia_id 0.111 | paso_contra_nodo 0.460
+      paso 6 del candidato contra paso 2 de reconocer_emociones_propias_avisar_equipo
+    vecino minimizar_impuesto_colaboracion_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.363 | familia_id 0.125 | paso_contra_nodo 0.412
+      paso 3 del candidato contra paso 3 de minimizar_impuesto_colaboracion_equipo
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+    poblacion de grafo para vivir_valores_propios_evitar_listarlos: quitadas 1 lineas suyas, quedan 281
+===== BARRIDO DE vivir_valores_propios_evitar_listarlos =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (281 del grafo mas 66 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 1
+  por candidato bloqueado          : menor 1, mediana 1, mayor 1
+  que señal levanta cada vecindad  : paso_contra_nodo 1
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] vivir_valores_propios_evitar_listarlos   (vivir_valores_propios_evitar_listarlos.json)
+    vecino sostener_contacto_oferta_aceptacion  [levantada por: paso_contra_nodo]
+      similitud_texto 0.112 | familia_id 0.000 | paso_contra_nodo 0.606
+      paso 7 del candidato contra paso 3 de sostener_contacto_oferta_aceptacion
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+    poblacion de grafo para demostrar_apertura_visiones_distintas: quitadas 1 lineas suyas, quedan 281
+===== BARRIDO DE demostrar_apertura_visiones_distintas =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (281 del grafo mas 66 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] demostrar_apertura_visiones_distintas   (demostrar_apertura_visiones_distintas.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+    poblacion de grafo para manejar_contacto_fisico_regla_platino: quitadas 1 lineas suyas, quedan 281
+===== BARRIDO DE manejar_contacto_fisico_regla_platino =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (281 del grafo mas 66 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] manejar_contacto_fisico_regla_platino   (manejar_contacto_fisico_regla_platino.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+    poblacion de grafo para reconocer_emociones_propias_avisar_equipo: quitadas 1 lineas suyas, quedan 281
+===== BARRIDO DE reconocer_emociones_propias_avisar_equipo =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (281 del grafo mas 66 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 4
+  por candidato bloqueado          : menor 4, mediana 4, mayor 4
+  que señal levanta cada vecindad  : similitud_texto 4
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] reconocer_emociones_propias_avisar_equipo   (reconocer_emociones_propias_avisar_equipo.json)
+    vecino minimizar_impuesto_colaboracion_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.125 | paso_contra_nodo 0.503
+      paso 3 del candidato contra paso 2 de minimizar_impuesto_colaboracion_equipo
+    vecino centrar_debate_ideas_fuera_egos  [levantada por: similitud_texto]
+      similitud_texto 0.363 | familia_id 0.000 | paso_contra_nodo 0.449
+      paso 5 del candidato contra paso 4 de centrar_debate_ideas_fuera_egos
+    vecino cuidarse_agotamiento_centro_rueda  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.443
+      paso 3 del candidato contra paso 3 de cuidarse_agotamiento_centro_rueda
+    vecino construir_confianza_equipo_tiempo_solas  [levantada por: similitud_texto]
+      similitud_texto 0.377 | familia_id 0.111 | paso_contra_nodo 0.414
+      paso 2 del candidato contra paso 6 de construir_confianza_equipo_tiempo_solas
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+    poblacion de grafo para dominar_reacciones_emociones_ajenas: quitadas 1 lineas suyas, quedan 281
+===== BARRIDO DE dominar_reacciones_emociones_ajenas =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (281 del grafo mas 66 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] dominar_reacciones_emociones_ajenas   (dominar_reacciones_emociones_ajenas.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

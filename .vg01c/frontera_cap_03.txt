@@ -1,0 +1,90 @@
+INSTRUMENTO frontera.py  SIN CONSTANTES TECLEADAS: fichero=fuentes/grove_high_output/cap_03.md
+frontmatter termina en la linea 7 (segundo ---)
+L9        1  2
+L11       4  Managing the Breakfast Factory
+L13       5  Indicators as a Key Tool
+L15     158  A hungry public has loved the breakfast you’ve been serving, and thanks to the h
+L17      51  Let’s say that as manager of the breakfast factory, you will work with five indi
+L19      69  Here are my candidates. First, you’ll want to know your sales forecast for the d
+L21      52  Your next key indicator is raw material inventory. Do you have enough eggs, brea
+L23      35  Another important piece of information is the condition of your equipment. If an
+L25      52  You also must get a fix on your manpower. If two waiters are out sick, you will 
+L27     100  Finally, you want to have some kind of quality indicator. It is not enough to mo
+L29      43  All these indicators measure factors essential to running your factory. If you l
+L31     136  Indicators tend to direct your attention toward what they are monitoring. It is 
+L33      72  The principle here was evident many times in the development of a compiler. Meas
+L35      85  Nowhere can indicators—and paired indicators—be of more help than in administrat
+L37     111  The second criterion for a good indicator is that what you measure should be a p
+L39       2  ADMINISTRATIVE FUNCTION
+L41       3  WORK OUTPUT INDICATOR
+L43       2  Accounts payable
+L45       3  # Vouchers processed
+L47       1  Custodial
+L49       4  # Square feet cleaned
+L51       2  Customer service
+L53       4  # Sales orders entered
+L55       2  Data entry
+L57       3  # Transactions processed
+L59       1  Employment
+L61       7  # People hired (by type of hire)
+L63       2  Inventory control
+L65       5  # Items managed in inventory
+L67       6  Examples of administrative work output indicators.
+L69     127  Such indicators have many uses. First, they spell out very clearly what the obje
+L71       3  The Black Box
+L73     241  We can think of our breakfast factory as if it were a “black box”: input (the ra
+L75       6  The breakfast factory—as a “black box.”
+L77      75  The black box sorts out what the inputs, the output, and the labor are in the pr
+L79      23  By peering through the windows in the black box, we can get an idea of what the 
+L81     139  Leading indicators give you one way to look inside the black box by showing you 
+L83     200  Leading indicators might include the daily monitors we use to run our breakfast 
+L85      17  The linearity indicator can give us an early warning that we are likely to miss 
+L87     135  If we consider a manufacturing unit in this fashion, we may assume that because 
+L89      94  Also valuable are trend indicators. These show output (breakfasts delivered, sof
+L91      78  Another sound way to anticipate the future is through the use of the stagger cha
+L93     203  In my experience, nowhere has the stagger chart been more productive than in for
+L95       8  (* means the actual number for that month)
+L97      17  I have found the “stagger chart” the best means of getting a feel for future bus
+L99      88  Finally, indicators can be a big help in solving all types of problems. If somet
+L101      3  Controlling Future Output
+L103    129  There are two ways to control the output of any factory. Some industries build t
+L105     96  But if your competition in the sofa business makes the same product but has it r
+L107     80  An obvious disadvantage here is that the manufacturer takes an inventory risk. S
+L109    117  At Intel, we build to forecast because our customers demand that we respond to t
+L111     86  Delivering a product that was built to forecast to a customer consists of two si
+L113     66  Because the art and science of forecasting is so complex, you might be tempted t
+L115     74  At Intel we try to match the two parallel flows with as much precision as possib
+L117     19  The order for the product and the product itself should arrive at the shipping d
+L119    140  The ideal is rarely found in the real world. More often, customer orders don’t d
+L121     68  It is a good idea to use stagger charts in both the manufacturing and sales fore
+L123     81  Forecasting future work demands and then adjusting the output of an “administrat
+L125    147  But if we have carefully chosen indicators that characterize an administrative u
+L127      2  Assuring Quality
+L129    112  As we have said, manufacturing’s charter is to deliver product at a quality leve
+L131     79  In the language of production, the lowest-value-point inspection where we inspec
+L133     13  The key principle is to reject the defective “material” at its lowest-value stag
+L135    115  When material is rejected at incoming inspection, a couple of choices present th
+L137    127  While in most instances the decision to accept or reject defective material at a
+L139     74  Inspections, of course, cost money to perform and further add to expense by inte
+L141    282  Let’s consider a few techniques commonly used to balance the two needs. There is
+L143    125  Another way to lower the cost of quality assurance is to use variable inspection
+L145     32  Suitably thought through, intelligent inspection schemes can actually increase t
+L147    160  I recently read a story in a news magazine that said that the American Embassy i
+L149     55  In fact, the embassy’s expediting schemes only made the problem worse, because n
+L151     55  If our government wants British tourists to visit the United States, our governm
+L153    127  For that, the bureaucratic minds at the embassy would need to accept that a 100 
+L155    106  Later, when we examine managerial productivity, we’ll see that when a manager di
+L157      1  Productivity
+L159    118  The workings of our black box can furnish us with the simplest and most useful d
+L161     60  There is a second way to improve productivity. We can change the nature of the w
+L163     13  Productivity can be increased by performing the work activities at a higher rate
+L165      8  …or by increasing the leverage of the activities.
+L167    195  Here I’d like to introduce the concept of leverage, which is the output generate
+L169    142  Automation is certainly one way to improve the leverage of all types of work. Ha
+L171    122  To implement the actual simplification, you must question why each step is perfo
+L173    118  Of course, the principle of work simplification is hardly new in the widget manu
+L175      1  II
+L177      1  Management
+L179      4  Is a Team Game
+LINEAS NO VACIAS DE CUERPO: 86
+PALABRAS DE CUERPO (suma de filas): 5828

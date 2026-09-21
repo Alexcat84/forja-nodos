@@ -1,0 +1,36 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 384   (346 del grafo mas 38 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : similitud_texto 3
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] identificar_paso_limitante_jornada_desfases   (identificar_paso_limitante_jornada_desfases.json)
+    vecino transmitir_objetivos_prioridades_preferencias  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.000 | paso_contra_nodo 0.426
+      paso 4 del candidato contra paso 5 de transmitir_objetivos_prioridades_preferencias
+    vecino supervisar_decision_delegada_preguntas_concretas  [levantada por: similitud_texto]
+      similitud_texto 0.398 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 2 del candidato contra paso 3 de supervisar_decision_delegada_preguntas_concretas
+    vecino supervisar_tarea_delegada_etapa_menor_valor  [levantada por: similitud_texto]
+      similitud_texto 0.379 | familia_id 0.000 | paso_contra_nodo 0.398
+      paso 4 del candidato contra paso 2 de supervisar_tarea_delegada_etapa_menor_valor
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

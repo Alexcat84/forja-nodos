@@ -1,0 +1,8 @@
+    $ for tramo in P6 P7 P11 P12 P13 P14; do sed -n "<rango>p" cap_05.md | wc -w; done
+    pieza rango          palabras
+    P6    L21  a L21          124
+    P7    L23  a L23           18
+    P11   L33  a L35          187
+    P12   L37  a L39          195
+    P13   L41  a L41          145
+    P14   L43  a L43          134

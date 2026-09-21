@@ -1,0 +1,47 @@
+$ python forja.py credito
+CREDITO DE LA LINEA 'serial' (D.48)
+  registro: docs/loop/CREDITO_serial.jsonl
+
+  LINEA SIN REGISTRO: no hay ningun suceso escrito.
+  Una linea sin tandas NACE CON SU RACHA EN CERO y no hereda
+  la de nadie (D.48). Lo que herede el arnes sera CERO remedios.
+
+$ python forja.py herencia
+REMEDIOS PENDIENTES QUE HEREDAS
+
+Esto NO lo has buscado tu: lo entrega el arnes (D.40), porque tres actas seguidas perdieron el mismo remedio por tener que ir a buscarlo.
+
+  acta anterior : ACTA 43. VUELTA 44, lote 7 (`grove_high_output`), **LA PRIMERA VUELTA DE SANEAMIENTO DE ESTA LINEA**: la vuelta entrega sus cinco tareas y **sus veintiuna cifras de apertura y de cierre me salen al digito** (`346`, `161` y `731` reconstruidos del commit de apertura; `346`, `169` y `740` recomputados hoy), las **`8` aristas de `d008` las verifico una a una contra el grafo y las `8` estan puestas con su paso citado**, las **`6` deudas pagadas las verifico pagadas**, y **sus cuatro discutibles marcados se sostienen los CUATRO**. Y aun asi: **su `NINGUNA SEÑAL LA LEVANTA EN LAS OCHO` son `5` de `8`**, porque el propio instrumento escribio `levantada tambien por la señal: similitud_texto` en tres de ellas, y los dos maximos que publica (`0.508` y `0.293`) son los de la arista que pego entera, no los de las veinticuatro (`0.51` y `0.399`); y **su correccion declarada de `d002` escribe en sede duradera que `de este libro no hay ni un nodo en el grafo` cuando `revisar_tres_preguntas_valor_carrera` entro `1h32m` antes**: `CIFRA PUBLICADA` sube a **`1 de 2`**. Las dos caidas de `REPORTE` son **de prosa y NO acumulan**, asi que baja de `1 de 3` a `0` por `D.38.1`. `CLASE` y `DATO MOVIDO` salen **LIMPIAS**. **Y DESENTIERRO EL HALLAZGO MAS GRANDE DE LA VUELTA, QUE NO ES DE NADIE DE HOY**: `src/arista.py` linea `182` teclea `"veredicto": "CONTINUA"` en **toda** arista declarada por lectura, y lo lleva haciendo desde el `10 sep` en las `93` lineas que hay, **contra la letra de `D.53` del `17 sep`**, en la misma vuelta que gasto una tarea entera re adjudicando dos pares de `CONTINUA` a `SANO` citando esa misma regla. **Y LA CAIDA QUE PARA EL BUCLE ES MIA**: mi apertura sellada publica que `CREDITO_serial.jsonl` salio del arbol **y que nadie lo declaro**, y el arnes lo declara en `docs/loop/loop.log` en la linea de mi propio turno, desde el `17 sep`. **`AUDITOR` LLEGA A `3 de 3` Y EL BUCLE SE DETIENE** (`AUDITOR_FORJA.md` 3, credito roto). Escribo `PARA_ALEXIS.md` y **dejo `PROMPT_SIGUIENTE.md` VACIO**
+  su huella     : 8fd9fc9094f880ab4f77775885baaf2c7eef815f
+  heredados     : 0
+
+El acta anterior no dejo ninguna tarea bloqueante ni ningun remedio escrito. Aun asi tienes que declarar la linea de lectura.
+LO QUE TU APERTURA CIEGA TIENE QUE TRAER, O EL ARNES SE DETIENE ANTES DE QUE ESCRIBAS EL ACTA:
+
+    ACTA ANTERIOR LEIDA: 8fd9fc9094f880ab4f77775885baaf2c7eef815f
+
+NO APLICA NECESITA MOTIVO ESCRITO **Y LA SALIDA DEL INSTRUMENTO PEGADA DEBAJO** (D.40, 16 sep 2026). Un remedio que no aplica a esta vuelta se declara, se dice por que, y se pega el comando que lo sostiene, con una linea que empiece por '$'. Sin salida pegada, el sello NO lo acepta.
+
+POR QUE: la vuelta 26 declaro NO APLICA un heredado con el motivo de que ninguno de sus instrumentos escribia en el arbol. Seis escribian, su propia tabla los listaba, y el barrido de guiones estaba en ROJO con ocho hallazgos suyos. Una salida pegada no prueba que el motivo sea cierto, pero obliga a correr algo antes de escribirlo, y ese lo habria cazado al instante.
+
+ESCRIBELAS COMO ESCRIBES TODO LO DEMAS. Valen las comillas, la negrita, el encabezado y la cita: se comprueba que la declaracion ESTE, no que vaya desnuda. Y puedes repetirla en tu tabla de cierre: se mira presencia y no cuenta, asi que citar la linea que declaras no te tumba la vuelta.
+
+
+$ python scripts/deuda.py
+DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+  registro: docs/loop/DEUDA.jsonl
+  pendientes: 9    pagadas: 6
+
+  id     vuelta  especie            que
+  --------------------------------------------------------------------------------------------
+  d005   grove v2 relevo de grove    De los 15 candidatos de cap_03 de grove, su aduana e
+  d006   41      relectura          cap_13 entero esta en 4 de 212, el 1,89 por ciento, 
+  d007   41      doctrina           La cola de doctrina queda congelada en 11 preguntas 
+  d009   42      deuda              scripts/tabla_de_cierre.py mide la tabla de cierre c
+  d011   43      deuda              TODO TECHO QUE EL AUDITOR ESCRIBA LLEVA SU MITAD EN 
+  d012   43      deuda              SEGUNDO EJEMPLAR MEDIDO de la pregunta 9 de la cola 
+  d020   44      maquinaria         src/arista.py linea 182 teclea veredicto CONTINUA en
+  d021   44      fidelidad          PUENTE en clasificar_trabajo_proceso_montaje_prueba 
+  d022   44      maquinaria         scripts/tabla_de_cierre.py localiza la tabla por la 
+
+  ultima vuelta de saneamiento: 44

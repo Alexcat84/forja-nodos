@@ -1,0 +1,2 @@
+    $ git status --short -- src/ tests/ scripts/ dataset/ forja.py hooks/ config/ bitacora/ censos/ docs/BANCO_DE_REGLAS.md
+    (sin salida: ninguno de esos arboles cambio en esta vuelta)

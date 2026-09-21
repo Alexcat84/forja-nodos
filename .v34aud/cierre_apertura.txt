@@ -1,0 +1,34 @@
+$ python forja.py guiones docs/loop/APERTURA_CIEGA.md
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+$ python scripts/cerrar_reporte.py --hook
+============================================================================
+TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+============================================================================
+tablas que declaran instrumento : 6
+  talladas, celda a celda       : 6
+  que DIFIEREN de su instrumento: 0
+  con la ruta VACIA             : 0   (cero bytes, 7.B)
+  sin poder comprobar           : 0
+  que CITAN y no reproducen     : 0   (declaradas PARCIAL)
+
+TALLADO VERDE: las 6 tabla(s) comprobables son las de su instrumento, celda a celda.
+============================================================================
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+============================================================================
+rutas publicadas y censadas : 143
+  pasan                     : 143
+  CAEN                      : 0
+      PATRON                           10
+      VACIA A PROPOSITO                3
+      con contenido                    120
+      vacia por protocolo              10
+
+CENSO VERDE: las 143 rutas publicadas sostienen lo que dicen sostener.
+[cierre] tallado del reporte (D.41)
+[cierre] censo de rutas (D.42)
+
+CIERRE VERDE: el tallado y el censo de rutas.
+
+$ python forja.py herencia --comprobar
+APERTURA CIEGA COMPLETA: el acta anterior va leida por su huella y los 0 heredados van declarados.

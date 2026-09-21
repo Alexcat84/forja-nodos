@@ -1,0 +1,8 @@
+    $ python tests/test_aceptacion.py
+      D.55, la deuda no bloquea la produccion: 11 pruebas mas
+      D.53 en el codigo: el veredicto y la arista son puertas distintas: 11 pruebas mas
+    
+      total: 318 pruebas, 0 fallos, 0 errores
+    ========================================================================
+    real	93s   (medido en esta vuelta)
+    codigo de salida: 0

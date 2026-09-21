@@ -73,7 +73,8 @@ class Resultado(object):
         return "\n".join(self.lineas)
 
 
-def declarar(madre_id, hijo_id, paso, razon, ruta_dataset=None,
+def declarar(madre_id, hijo_id, paso, razon, veredicto=None,
+             cita_veredicto=None, ruta_dataset=None,
              ruta_veredictos=None, umbrales=None, ruta_pares_mutuos=None):
     """Declara la arista y la escribe. Devuelve un Resultado."""
     ruta_dataset = ruta_dataset or comun.RUTA_DATASET
@@ -169,6 +170,28 @@ def declarar(madre_id, hijo_id, paso, razon, ruta_dataset=None,
             resultado.decir("  %s" % fallo)
         return resultado
 
+    # SIN VEREDICTO NO SE ESCRIBE, Y NO SE SUPONE. Adivinarlo es lo que produjo
+    # las 93 lineas: un valor por defecto es una lectura que nadie hizo.
+    if veredicto is None or str(veredicto).upper() not in VEREDICTOS:
+        resultado.codigo = CODIGO_RECHAZO
+        resultado.decir("")
+        resultado.decir("ARISTA NO ESCRITA: falta --veredicto, y no se supone (D.53).")
+        resultado.decir("  El veredicto de un par y su arista son puertas distintas: el")
+        resultado.decir("  veredicto lo emite LA LECTURA (%s) y viaja con la arista."
+                        % ", ".join(VEREDICTOS))
+        resultado.decir("  Hasta el 18 sep 2026 aqui se tecleaba CONTINUA siempre, y eso")
+        resultado.decir("  escribio 93 lineas de la sede de CLASE contra una regla que")
+        resultado.decir("  la casa ya tenia escrita.")
+        return resultado
+    veredicto = str(veredicto).upper()
+    if not (cita_veredicto or "").strip():
+        resultado.codigo = CODIGO_RECHAZO
+        resultado.decir("")
+        resultado.decir("ARISTA NO ESCRITA: falta --cita-veredicto (D.53).")
+        resultado.decir("  Un veredicto sin la lectura que lo emitio no se puede releer,")
+        resultado.decir("  y el que no se puede releer no se puede corregir.")
+        return resultado
+
     fecha = aduana._hoy()
     registro = {
         "fecha": fecha,
@@ -179,7 +202,18 @@ def declarar(madre_id, hijo_id, paso, razon, ruta_dataset=None,
         "senales": medicion["senales"],
         "levantada_por": [LEVANTADA_POR_LECTURA],
         "detalle_paso": medicion["detalle_paso"],
-        "veredicto": "CONTINUA",
+        # D.53 (17 sep 2026): EL VEREDICTO Y LA ARISTA SON PUERTAS DISTINTAS.
+        #
+        # Aqui se tecleaba "CONTINUA" en TODA arista declarada por lectura, y eso
+        # escribia `93` lineas de bitacora/VEREDICTOS.jsonl, que es la sede de CLASE,
+        # contradiciendo la regla que la casa ya tenia escrita. La vuelta 44 llego a
+        # gastar una tarea entera re adjudicando dos pares a SANO citando D.53 y, en
+        # el mismo turno, escribio ocho CONTINUA nuevos por esta linea.
+        #
+        # EL VEREDICTO LO EMITE LA LECTURA, NO LA ARISTA, y viaja con su cita para
+        # que se pueda releer de donde salio.
+        "veredicto": veredicto,
+        "cita_del_veredicto": cita_veredicto,
         "razon": razon,
         "arista": "%s > %s" % (madre, hijo),
         "paso_citado": paso,
@@ -197,10 +231,16 @@ def declarar(madre_id, hijo_id, paso, razon, ruta_dataset=None,
     return resultado
 
 
+# LOS TRES VEREDICTOS QUE UNA LECTURA PUEDE EMITIR (`AUDITOR_FORJA.md` 5.2).
+# NO se teclean aqui: se reciben de quien leyo el par.
+VEREDICTOS = ("SANO", "CONTINUA", "REPITE")
+
+
 def main(argumentos=None):
     comun.salida_utf8()
     argumentos = list(argumentos or [])
-    valores = {"--madre": None, "--hijo": None, "--paso": None, "--razon": None}
+    valores = {"--madre": None, "--hijo": None, "--paso": None, "--razon": None,
+               "--veredicto": None, "--cita-veredicto": None}
     indice = 0
     while indice < len(argumentos):
         clave = argumentos[indice]
@@ -218,6 +258,13 @@ def main(argumentos=None):
     if not all(valores.values()):
         print('uso: python forja.py arista --madre <id> --hijo <id> --paso <n> '
               '--razon "que añade el hijo a la madre"')
+        print('           --veredicto SANO|CONTINUA|REPITE '
+              '--cita-veredicto "de donde sale esa lectura"')
+        print("")
+        print("  --veredicto ES EL DE LA LECTURA, no el de la arista (D.53). Un SANO")
+        print("  puede llevar arista declarada, y declararla NO lo convierte en")
+        print("  CONTINUA: si lo fuera, toda cabeza de serie devoraria sus partes y")
+        print("  D.37 seria imposible.")
         print("")
         print("  --paso es EL PASO DE LA MADRE que enumera la parte. Es lo que")
         print("  hace la arista verificable: el auditor lo abre y comprueba que")
@@ -232,6 +279,7 @@ def main(argumentos=None):
         return CODIGO_RECHAZO
 
     resultado = declarar(valores["--madre"], valores["--hijo"], paso,
-                         valores["--razon"])
+                         valores["--razon"], valores["--veredicto"],
+                         valores["--cita-veredicto"])
     print(resultado.texto())
     return resultado.codigo

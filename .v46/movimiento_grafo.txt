@@ -1,0 +1,9 @@
+$ for h in 3b8c607 4dc991d 2aae716 26ad453 3274336; do git show $h:dataset/nodos.jsonl | wc -l; done   (nodos por commit)
+3b8c607 dataset=346 veredictos=740
+4dc991d dataset=346 veredictos=740
+2aae716 dataset=346 veredictos=740
+26ad453 dataset=346 veredictos=740
+3274336 dataset=346 veredictos=740
+
+$ printf "ARBOL     dataset=%s veredictos=%s\n" ...
+ARBOL    dataset=346 veredictos=740

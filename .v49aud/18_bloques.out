@@ -1,0 +1,94 @@
+bloques pegados en la pagina: 23
+
+BLOQUE lineas 12 a 14, primera linea suya: ACTA ANTERIOR LEIDA: fa548ca517d97b8955f622aeec22134a5e5cfc3d
+   frase de encima (linea 10): ## 0. LAS TRES DECLARACIONES QUE EL ARNES EXIGE (`D.40`)
+   frase de debajo (linea 16): **La huella la comprobe yo y no la copie del prompt.** El instrumento mide el fichero
+
+BLOQUE lineas 19 a 20, primera linea suya: $ git hash-object docs/loop/ACTA_AUDITOR.md
+   frase de encima (linea 17): `docs/loop/ACTA_AUDITOR.md` tal como esta en el arbol ahora mismo:
+   frase de debajo (linea 22): Ese bloque mide la huella del acta en el arbol. `LECTURA`: **coincide con la que el prompt me
+
+BLOQUE lineas 52 a 53, primera linea suya: $ grep -n "APERTURA CIEGA" docs/loop/loop.log | tail -1
+   frase de encima (linea 50): ## 1. QUE ABRI, QUE NO ABRI, Y LO QUE ME LLEGO SIN PEDIRLO
+   frase de debajo (linea 55): Ese bloque mide que linea escribio el arnes en el log para mi turno y que cuatro ficheros retiro.
+
+BLOQUE lineas 84 a 93, primera linea suya: $ git diff --numstat HEAD~1 HEAD | grep -v "\.v49/"
+   frase de encima (linea 82): es una busqueda negativa citada de memoria (`AUDITOR_FORJA.md` 1.1): es el arbol.
+   frase de debajo (linea 95): El primer bloque mide **cuantas lineas cambio cada fichero** entre el commit anterior y este, sin
+
+BLOQUE lineas 107 a 115, primera linea suya: $ python .v49aud/01_poblacion.py
+   frase de encima (linea 105): ## 3. EL ESTADO DE LA LINEA, RECONTADO POR MI
+   frase de debajo (linea 117): Ese bloque cuenta lineas de tres ficheros del arbol y ficheros de una carpeta, y reparte las `41`
+
+BLOQUE lineas 131 a 137, primera linea suya: $ python forja.py gate
+   frase de encima (linea 129): ### 4.a. Las dos del arbol
+   frase de debajo (linea 139): El primer bloque mide las `13` guardas del gate sobre `346` nodos; el segundo, los guiones del
+
+BLOQUE lineas 153 a 156, primera linea suya: $ git show HEAD~1:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+   frase de encima (linea 151): ### 4.c. El sello de `D.52`, que es el remedio a mano de `d030` otra vez
+   frase de debajo (linea 158): Ese bloque compara la huella de la tabla que estaba VIVA antes de esta vuelta con la huella de la
+
+BLOQUE lineas 171 a 176, primera linea suya: $ sed -n "145p" fuentes/grove_high_output/cap_04.md
+   frase de encima (linea 169): ### 5.a. Lo que el libro dice, leido por mi
+   frase de debajo (linea 178): Ese bloque mide **que escribe `L145`** y **cuantas veces aparece `six ways` en el libro entero**,
+
+BLOQUE lineas 187 a 196, primera linea suya: $ python .v49aud/06_huellas.py
+   frase de encima (linea 185): ### 5.b. Que movio la vuelta dentro de la ficha, medido con la funcion de la casa
+   frase de debajo (linea 198): Ese bloque compara la ficha de `HEAD~1` con la de `HEAD` campo a campo, y calcula sobre las dos la
+
+BLOQUE lineas 226 a 231, primera linea suya: $ python .v49aud/04_palabras_cap04.py
+   frase de encima (linea 224): ### 6.a. La primera frase corregida: `P34` contra `P38`
+   frase de debajo (linea 233): Ese bloque cuenta las palabras del texto fuente en los rangos de linea que las propias fichas
+
+BLOQUE lineas 242 a 243, primera linea suya: $ sed -n "299p" fuentes/grove_high_output/cap_04.md
+   frase de encima (linea 240): ### 6.b. La segunda frase corregida: de donde sale el `cinco`
+   frase de debajo (linea 245): Ese bloque mide **que escribe `L299` y en que orden**.
+
+BLOQUE lineas 251 a 254, primera linea suya: $ sed -n '67,89p' docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md | sed -n '17,19p'
+   frase de encima (linea 249): dice. **Y el motivo nuevo se sostiene con la regla que cita**, que la comprobe:
+   frase de debajo (linea 256): Ese bloque mide **que dice el punto `5` de la seccion `3` del manual**, que es lo que la ficha cita
+
+BLOQUE lineas 262 a 263, primera linea suya: $ python -c "import json;print(json.load(open('cuarentena/grove_high_output/dimensionar_numero_
+   frase de encima (linea 260): que la miro: el `entregable_esperado` entero de esta ficha, pegado sin cortar, es
+   frase de debajo (linea 265): Ese bloque imprime el campo `entregable_esperado` de la ficha, entero.
+
+BLOQUE lineas 273 a 282, primera linea suya: $ python .v49aud/06_huellas.py
+   frase de encima (linea 271): ### 6.c. Que movio la vuelta dentro de la ficha
+   frase de debajo (linea 284): Ese bloque compara la ficha de `HEAD~1` con la de `HEAD` campo a campo y calcula las dos huellas de
+
+BLOQUE lineas 295 a 304, primera linea suya: $ python .v49aud/12_poblacion_barrida.py
+   frase de encima (linea 293): ## 7. EL BARRIDO DE VECINOS (`D.38.4`), CORRIDO POR MI SOBRE GRAFO MAS BANDEJAS
+   frase de debajo (linea 306): Ese bloque mide **de que se compone la poblacion que barro**: el grafo mas las bandejas, sin
+
+BLOQUE lineas 309 a 341, primera linea suya: $ python .v49aud/07_barrido.py reunir_informacion_gerencial_vias_variadas
+   frase de encima (linea 307): `_insertados` ni `_derivadas` y con el filtro de fuente canonica.
+   frase de debajo (linea 343): Los dos bloques miden **la senial `1` de la casa** (`src.aduana.senal_similitud_texto`, `src/aduana.py:278`)
+
+BLOQUE lineas 362 a 374, primera linea suya: $ python .v49aud/05_tramos_declarados.py
+   frase de encima (linea 360): ## 8. LO QUE ENCONTRE SIN BUSCARLO: **LAS PALABRAS DECLARADAS DE NUEVE FICHAS DE `cap_04`**
+   frase de debajo (linea 376): Ese bloque mide, para las fichas de `cap_04` que declaran pieza, rango de lineas y palabras dentro
+
+BLOQUE lineas 399 a 405, primera linea suya: $ grep -n "^def " src/aduana.py | sed -n '5,7p'
+   frase de encima (linea 397): senial `1` (`src/aduana.py` linea `315`)*.
+   frase de debajo (linea 407): Ese bloque mide **en que linea empieza cada senial** y **que hay escrito en la linea `315`**.
+
+BLOQUE lineas 423 a 427, primera linea suya: $ ls .v49/ | grep informe
+   frase de encima (linea 421): fichero y sin abrir ninguno:**
+   frase de debajo (linea 429): Ese bloque mide **cuantos ficheros de informe escribio la vuelta y como se llaman**. No mide que
+
+BLOQUE lineas 494 a 518, primera linea suya: $ python .v49aud/19_cola_siete.py
+   frase de encima (linea 492): ### 10.c. Y el barrido de vecinos de los siete, que `d024` echaba en falta
+   frase de debajo (linea 520): Ese bloque es un **recorte declarado**: toma de las siete salidas del instrumento `07` (la senial
+
+BLOQUE lineas 546 a 557, primera linea suya: $ bash .v49aud/11_d033.sh
+   frase de encima (linea 544): ## 11. `d033`: LA CORRIDA INTERMITENTE, MEDIDA POR MI
+   frase de debajo (linea 559): El primer bloque mide **seis corridas aisladas mias** de
+
+BLOQUE lineas 583 a 587, primera linea suya: $ python .v49aud/15_deuda.py
+   frase de encima (linea 581): **Y LA DEUDA, QUE SI ES MIA DE RECOMPUTAR:**
+   frase de debajo (linea 589): Ese bloque cuenta las anotaciones de `DEUDA.jsonl` y resta las que tienen linea de pago con el
+
+BLOQUE lineas 618 a 640, primera linea suya: $ python .v49aud/17_superlativos.py
+   frase de encima (linea 616): pegadas, que no son frases mias, y **van contadas aparte en la propia cabecera de la salida.**
+   frase de debajo (linea 642): Ese bloque barre los patrones de superlativo y de afirmacion universal sobre `APERTURA_CIEGA.md` e
+

@@ -1,0 +1,15 @@
+FICHERO: fuentes/scott_radical_candor/cap_08.md   lineas del fichero: 189   cuerpo desde la linea 8
+PALABRAS DEL CUERPO ENTERO DEL CAPITULO: 6162
+
+ROTULOS EN MAYUSCULAS QUE EL FICHERO TRAE, con su linea (1-indexada):
+   L15   STAY CENTERED
+   L45   FREE AT WORK
+   L67   MASTER THE ART OF SOCIALIZING AT WORK
+   L89   RESPECT BOUNDARIES
+   L189  GUIDANCE
+
+   tramo tras STAY CENTERED                              L16   a L44    palabras de cuerpo: 741
+   tramo tras FREE AT WORK                               L46   a L66    palabras de cuerpo: 1154
+   tramo tras MASTER THE ART OF SOCIALIZING AT WORK      L68   a L88    palabras de cuerpo: 656
+   tramo tras RESPECT BOUNDARIES                         L90   a L188   palabras de cuerpo: 3359
+   tramo tras GUIDANCE                                   L190  a L190   palabras de cuerpo: 0

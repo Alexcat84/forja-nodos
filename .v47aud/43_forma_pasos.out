@@ -1,0 +1,88 @@
+== tanda de la vuelta 47 : 45 pasos
+   Cuenta        12   (26.7 por ciento)
+   Revisa         5   (11.1 por ciento)
+   Aplica         3   (6.7 por ciento)
+   Para           3   (6.7 por ciento)
+   Antes          2   (4.4 por ciento)
+   Empieza        1   (2.2 por ciento)
+   Deja           1   (2.2 por ciento)
+   Separa         1   (2.2 por ciento)
+   Elige          1   (2.2 por ciento)
+   Trata          1   (2.2 por ciento)
+   Emplea         1   (2.2 por ciento)
+   Sube           1   (2.2 por ciento)
+   No             1   (2.2 por ciento)
+   A              1   (2.2 por ciento)
+   Supervisa      1   (2.2 por ciento)
+   Pide           1   (2.2 por ciento)
+   Si             1   (2.2 por ciento)
+   Mejora         1   (2.2 por ciento)
+   Identifica     1   (2.2 por ciento)
+   Busca          1   (2.2 por ciento)
+   Crea           1   (2.2 por ciento)
+   En             1   (2.2 por ciento)
+   Reutiliza      1   (2.2 por ciento)
+   Cuando         1   (2.2 por ciento)
+   Hazlo          1   (2.2 por ciento)
+   pasos que ABREN declarando y no ejecutando: 13 de 45 = 28.9 por ciento
+      detectar_palanca_negativa_activida#1
+      detectar_palanca_negativa_activida#4
+      detectar_palanca_negativa_activida#6
+      detectar_palanca_negativa_activida#9
+      delegar_tarea_base_comun_seguimien#1
+      delegar_tarea_base_comun_seguimien#3
+      delegar_tarea_base_comun_seguimien#7
+      delegar_tarea_base_comun_seguimien#10
+      supervisar_tarea_delegada_etapa_me#9
+      supervisar_decision_delegada_pregu#1
+      supervisar_decision_delegada_pregu#6
+      identificar_paso_limitante_jornada#5
+      agrupar_tareas_semejantes_aprovech#2
+
+== tanda de la vuelta 46 : 50 pasos
+   Cuenta        11   (22.0 por ciento)
+   No             3   (6.0 por ciento)
+   Ve             3   (6.0 por ciento)
+   Si             2   (4.0 por ciento)
+   Haz            2   (4.0 por ciento)
+   O              2   (4.0 por ciento)
+   Sube           2   (4.0 por ciento)
+   Lee            1   (2.0 por ciento)
+   Consigue       1   (2.0 por ciento)
+   Habla          1   (2.0 por ciento)
+   Quedate        1   (2.0 por ciento)
+   Pon            1   (2.0 por ciento)
+   Prefiere       1   (2.0 por ciento)
+   Entiende       1   (2.0 por ciento)
+   Coloca         1   (2.0 por ciento)
+   Baja           1   (2.0 por ciento)
+   Termina        1   (2.0 por ciento)
+   Monta          1   (2.0 por ciento)
+   Deja           1   (2.0 por ciento)
+   Examina        1   (2.0 por ciento)
+   Dedicale       1   (2.0 por ciento)
+   Traslada       1   (2.0 por ciento)
+   Hazlo          1   (2.0 por ciento)
+   En             1   (2.0 por ciento)
+   Distingue      1   (2.0 por ciento)
+   Corre          1   (2.0 por ciento)
+   Repasa         1   (2.0 por ciento)
+   Primera        1   (2.0 por ciento)
+   Segunda        1   (2.0 por ciento)
+   Tercera        1   (2.0 por ciento)
+   Cuando         1   (2.0 por ciento)
+   Ten            1   (2.0 por ciento)
+   pasos que ABREN declarando y no ejecutando: 12 de 50 = 24.0 por ciento
+      reunir_informacion_gerencial_vias_#4
+      programar_visita_area_observar_des#2
+      transmitir_objetivos_prioridades_p#1
+      transmitir_objetivos_prioridades_p#5
+      empujar_persona_reunion_direccion_#4
+      empujar_persona_reunion_direccion_#5
+      empujar_persona_reunion_direccion_#7
+      subir_productividad_gerencial_tres#1
+      elegir_momento_actividad_palanca_m#1
+      elegir_momento_actividad_palanca_m#3
+      elegir_momento_actividad_palanca_m#4
+      elegir_momento_actividad_palanca_m#6
+

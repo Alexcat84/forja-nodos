@@ -10,6 +10,14 @@ volvio a fallar en la 17: **no es falta de voluntad, es de arquitectura.** Un
 remedio que vive en un fichero de 16.000 lineas y que hay que acordarse de ir a
 buscar **no esta entregado: esta archivado.**
 
+LA HERENCIA ES LA DE SU LINEA (`D.48`, 17 sep 2026, decision del fundador). **Una linea
+que no ha cerrado ninguna tanda hereda CERO remedios**, aunque tenga un `ACTA_AUDITOR.md`
+entero delante. El 16 sep 2026 tres frentes de libro nacieron de la rama serial, se
+llevaron su acta entera, y el arnes les entrego **`4 remedio(s)` de otra secuencia** a
+cada uno; el auditor del primero paro citando como suyas **tres tandas de un libro que no
+era el suyo**. Quien manda aqui es `docs/loop/CREDITO_<linea>.jsonl` (`src/credito.py`):
+si esa linea no tiene ninguna tanda, no hay de quien heredar, **y se dice en voz alta**.
+
 LO QUE HACE. Lee la ULTIMA acta de `docs/loop/ACTA_AUDITOR.md` (de su ultimo
 encabezado `# ACTA` hasta el final) y saca de ahi:
 
@@ -75,7 +83,7 @@ import re
 import subprocess
 import sys
 
-from . import comun
+from . import comun, credito
 
 RUTA_ACTA = os.path.join(comun.RAIZ, "docs", "loop", "ACTA_AUDITOR.md")
 RUTA_APERTURA = os.path.join(comun.RAIZ, "docs", "loop", "APERTURA_CIEGA.md")
@@ -231,6 +239,34 @@ def extraer(ruta_acta=None, seleccion=None):
     if not os.path.exists(ruta_acta):
         return {"huella": "sin-acta", "acta": "(no hay acta todavia)", "items": [],
                 "avisos": []}
+
+    # LA HERENCIA ES LA DE SU LINEA (D.48, 17 sep 2026, decision del fundador).
+    # Una linea que no ha cerrado ninguna tanda NO HEREDA NADA, aunque tenga un acta
+    # entera delante: esa acta es de la linea de la que salio. El 16 sep los tres
+    # frentes nacieron de la serial, heredaron `4 remedio(s)` cada uno, y el auditor
+    # del primero paro citando como suyas tres tandas de un libro que no era el suyo.
+    #
+    # Y EL DISCRIMINADOR NO ES "ESTA LINEA NO TIENE FICHERO", que es lo que escribi
+    # primero y lo que el banco del arnes tumbo con tres rojos: en un arbol donde el
+    # registro de credito NO SE USA TODAVIA, ninguna linea tiene fichero, y D.40
+    # dejaba de entregar nada **por una ausencia que no significa nada**. Es el mismo
+    # defecto que D.40 vino a cerrar, reintroducido por la puerta de atras.
+    #
+    # LO QUE SI DISCRIMINA: que el mecanismo este EN USO en este arbol. Si alguna
+    # linea tiene registro y esta no, entonces esta salio de aquella y no ha dictado
+    # nada (D.48). Si no lo tiene nadie, no hay de que deducir nada y se dice.
+    linea = credito.linea_actual()
+    if not credito.lineas_con_registro():
+        pass
+    elif not credito.nacida(linea):
+        return {"huella": huella(ruta_acta), "acta": "(ninguna de esta linea)",
+                "items": [], "linea": linea, "avisos": [
+                    "LINEA RECIEN NACIDA: '%s' no tiene ninguna tanda cerrada en %s, "
+                    "asi que HEREDA CERO REMEDIOS (D.48). El acta que hay en este "
+                    "arbol es de la linea de la que esta rama salio, y sus remedios "
+                    "son de esa secuencia, no de esta. Una racha cuenta tandas "
+                    "SEGUIDAS, y entre lineas simultaneas no hay orden que seguir."
+                    % (linea, comun.relativa(credito.ruta(linea)))]}
     lineas = comun.leer_texto(ruta_acta).split("\n")
     inicio, fin, titulo = _acta_pedida(lineas, seleccion)
     items, avisos = [], []

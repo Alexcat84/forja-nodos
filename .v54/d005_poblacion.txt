@@ -1,0 +1,10 @@
+$ python .v54/d005_poblacion.py
+LA POBLACION DEL BARRIDO, HOY Y ENTONCES
+  grafo de hoy                              : 346  (lineas de dataset/nodos.jsonl)
+  bandejas de hoy                           : 68  (src.aduana.poblacion_de_bandejas)
+  poblacion del barrido de hoy              : 414  (suma de los dos de arriba)
+
+  poblacion de los 15 informes de .v2g/     : 358 a 371  (leida de sus propias cabeceras)
+  documentos NUEVOS desde entonces          : 43 contra el mayor, 56 contra el menor
+    numerador   414  documentos de la poblacion de hoy
+    denominador 371  documentos de la poblacion mayor de aquellos informes

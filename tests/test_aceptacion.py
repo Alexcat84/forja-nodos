@@ -1466,7 +1466,19 @@ class PruebaAristaDeclarada37(BaseForja):
         return cabeza, parte
 
     def _declarar(self, *extra):
-        return self.forja("arista", *extra)
+        """EL VEREDICTO VA POR DEFECTO AQUI, y solo aqui.
+
+        Desde `D.53` (18 sep 2026) `forja.py arista` **exige** `--veredicto` y su cita:
+        el veredicto lo emite la lectura, no la arista. Las pruebas de esta clase miden
+        OTRA cosa (el paso citado, la auto arista, el gate), asi que se les pone uno y
+        siguen midiendo lo suyo. **Lo que el argumento nuevo hace se prueba aparte**, en
+        `PruebaVeredictoYArista`, y alli no hay valor por defecto que valga.
+        """
+        argumentos = list(extra)
+        if "--veredicto" not in argumentos:
+            argumentos += ["--veredicto", "SANO",
+                           "--cita-veredicto", "la lectura de esta prueba"]
+        return self.forja("arista", *argumentos)
 
     def test_la_arista_se_declara_y_deja_su_paso_citado(self):
         cabeza, parte = self._cabeza_y_parte()
@@ -1488,7 +1500,14 @@ class PruebaAristaDeclarada37(BaseForja):
                       por_id["pedir_referencias_empleados"]["nodos_previos"])
 
         registro = comun.leer_jsonl(self.veredictos)[-1]
-        self.assertEqual(registro["veredicto"], "CONTINUA")
+        # ESTA LINEA EXIGIA "CONTINUA" HASTA EL 18 sep 2026, Y ERA LA ASERCION QUE
+        # CODIFICABA EL DEFECTO: `src/arista.py` tecleaba CONTINUA en toda arista
+        # declarada por lectura, y la prueba lo daba por bueno. `D.53` dice lo
+        # contrario, y el veredicto que se escribe es EL QUE LA LECTURA EMITIO: aqui,
+        # el que el ayudante `_declarar` pasa. Que sea SANO y la arista se escriba
+        # igual es justo lo que la regla afirma.
+        self.assertEqual(registro["veredicto"], "SANO")
+        self.assertEqual(registro["cita_del_veredicto"], "la lectura de esta prueba")
         self.assertEqual(registro["levantada_por"], ["lectura declarada"])
         self.assertEqual(registro["paso_citado"], 2)
         # LA LINEA CITADA VIAJA ENTERA: es lo que el auditor abre para verificar.
@@ -1682,10 +1701,54 @@ Solo lo menciono. No pongo tabla.
 Tampoco.
 """
 
+    def setUp(self):
+        """ESTA CLASE MIDE LA EXTRACCION DE `D.40`, NO LA PUERTA DE `D.48`.
+
+        **Y hasta hoy media las dos sin querer**, porque `herencia.extraer()`
+        consulta el credito AMBIENTE del arbol aunque se le pase un acta sintetica.
+        En la serial hay `CREDITO_serial.jsonl` y las diez pasaban; **en un frente
+        recien nacido, que por `D.48` no hereda nada, las diez caian**, y su auditor
+        leia `10` rojos como *fallo tecnico repetido* el dia de arrancar.
+
+        **No se toca `src/herencia.py`:** su puerta esta bien y esta razonada. Lo
+        que se hace es poner el mecanismo FUERA DE USO en el taller, que es la
+        tercera rama que `extraer()` ya contempla (*si no lo tiene nadie, no hay de
+        que deducir nada*), para que estas diez midan lo suyo.
+
+        **La puerta de `D.48` la cubre entera `PruebaHerenciaPorLinea`**, con sus
+        casos de linea nacida y no nacida.
+        """
+        BaseForja.setUp(self)
+        anterior = herencia.credito.lineas_con_registro
+        herencia.credito.lineas_con_registro = lambda: []
+
+        def devolver():
+            herencia.credito.lineas_con_registro = anterior
+
+        self.addCleanup(devolver)
+
     def _acta(self, texto=None):
         ruta = os.path.join(self.taller, "ACTA_AUDITOR.md")
         comun.escribir_texto(ruta, texto if texto is not None else self.ACTA)
         return ruta
+
+    def test_caso_negativo_en_un_frente_sin_tanda_no_se_hereda_nada(self):
+        """**EL CASO QUE ESTA CLASE NO PODIA TENER, y es el que costo los 10 rojos.**
+
+        Con el mecanismo EN USO y esta linea sin nacer, `extraer()` devuelve cero
+        items **aunque el acta sintetica tenga dos remedios escritos**. Es `D.48`
+        funcionando, y aqui queda como caso y no como accidente del arbol.
+        """
+        anterior = herencia.credito.lineas_con_registro
+        nacida = herencia.credito.nacida
+        herencia.credito.lineas_con_registro = lambda: ["otra_linea"]
+        herencia.credito.nacida = lambda _linea: False
+        try:
+            datos = herencia.extraer(self._acta())
+        finally:
+            herencia.credito.lineas_con_registro = anterior
+            herencia.credito.nacida = nacida
+        self.assertEqual(datos["items"], [])
 
     def _apertura(self, texto):
         ruta = os.path.join(self.taller, "APERTURA_CIEGA.md")
@@ -2573,6 +2636,54 @@ class PruebaCensoDeRutas(BaseForja):
             self.assertIn("docs/loop/" + fichero, exentas,
                           "D.34.2 retira %s y el censo no lo exime" % fichero)
 
+    # ------------- D.43 contra la linea del 9 sep, y tardo cuatro dias en caer
+
+    def _mandato_de_cuarentena(self):
+        arnes = comun.leer_texto(os.path.join(RAIZ, "orquestador_forja.sh"))
+        trozos = re.findall(r'MANDATO_INSERCION="([^"]+)"', arnes)
+        self.assertEqual(len(trozos), 2, "el arnes ya no tiene dos mandatos")
+        de_cuarentena = [x for x in trozos if "NO INSERTAS NADA" in x]
+        self.assertEqual(len(de_cuarentena), 1)
+        return de_cuarentena[0]
+
+    def test_caso_positivo_el_mandato_no_manda_correr_el_informe_de_lote(self):
+        """**ESPECIE ARNES, y la levanto un frente que no podia arreglarla.**
+
+        La frase *Al cerrar el capitulo corres el informe del lote entero* entro en
+        `MANDATO_INSERCION` el **9 sep**. `D.43`, que saca ese informe del turno
+        **porque no cabe**, es del **12 sep**. Por `D.13` gana `D.43`, y la linea
+        quedo vieja **tres dias despues de nacer**.
+
+        **Vivio nueve dias mas.** El auditor del frente `gerber_emyth` la midio el
+        `17` sep (su `PARA_ALEXIS` seccion `2`): el extractor la obedecio, lanzo el
+        informe, **no termino**, y dejo `91` bytes de cabecera, **que es el mismo
+        ejemplar de `480` bytes que motivo `D.43`**. No la toco porque `D.45` veda
+        el arnes desde un frente, y **nadie de la serial la recogio**.
+
+        **Y COSTO OTRA VEZ EN LA SERIAL SIN QUE NADIE LO ATARA A ESTO:** la
+        `ACTA 58` `58.9` encontro `.v55ext/informe_de_lote.txt` **corriendo diez
+        horas y media por debajo de las vueltas `56`, `57` y `58`**, lanzado por el
+        extractor de la vuelta `55`. Se registro como `d086`, *un proceso que corrio
+        sin que ninguna vuelta lo supiera*. **Es esta linea. Son el mismo defecto.**
+        """
+        mandato = self._mandato_de_cuarentena()
+        self.assertNotIn("corres el informe del lote entero", mandato)
+        self.assertIn("NO LANZAS EL INFORME DEL LOTE ENTERO EN TU TURNO", mandato)
+        self.assertIn("D.43", mandato)
+
+    def test_caso_negativo_el_informe_POR_CANDIDATO_sigue_mandado(self):
+        """**Lo que el arreglo NO puede llevarse por delante.**
+
+        `D.43` saca del turno el informe DEL LOTE, no el de cada candidato. El de
+        uno en uno **es la aduana en seco** y es barato: si el arreglo se lo comiera,
+        el frente escribiria candidatos sin pasarlos por ninguna aduana, que es peor
+        que el defecto que se arregla.
+        """
+        mandato = self._mandato_de_cuarentena()
+        self.assertIn("python forja.py informe cuarentena/<libro>/<id_propuesto>.json",
+                      mandato)
+        self.assertIn("en el mismo acto en que lo escribes", mandato)
+
     def test_un_artefacto_de_maquina_esta_exento_POR_SU_FAMILIA(self):
         """`D.33` lo resolvio por PATRON el 12 sep, y el censo usa la misma funcion.
 
@@ -2589,6 +2700,32 @@ class PruebaCensoDeRutas(BaseForja):
         # CASO POSITIVO: la prosa de la casa NO es un artefacto, ni en esa carpeta.
         self.assertFalse(censar_rutas._es_artefacto("docs/loop/ACTA_AUDITOR.md"))
         self.assertFalse(censar_rutas._es_artefacto("docs/ultimo_disfrazado.json"))
+
+    def test_caso_positivo_NO_ES_SEDE_deja_pasar_una_ruta_vacia(self):
+        """LA CUARTA FORMA, y nace de un choque entre dos reglas (19 sep 2026).
+
+        `D.57` manda a la fase ciega ESCRIBIR LA LIMITACION cuando no puede comprobar
+        algo. La primera ciega que lo cumplio nombro el fichero que no pudo comprobar
+        (*mido que tiene 0 bytes*), **y el censo tumbo el sello por eso**: leyo la
+        mencion como una sede publicada. La vuelta no pudo cerrar POR CUMPLIR LA REGLA
+        DE AYER.
+        """
+        vacio = os.path.join(self.taller, "vacio.txt")
+        comun.escribir_texto(vacio, "")
+        tabla = ("| pieza | de donde |" + chr(10) + "|---|---|" + chr(10)
+                 + "| lo que no pude comprobar | `%s`. NO ES SEDE: la cifra es SOBRE "
+                   "el fichero, no esta EN el |" % comun.relativa(vacio))
+        caidas, _pasan = self._censar(tabla)
+        self.assertEqual(caidas, [])
+
+    def test_caso_negativo_sin_la_marca_esa_misma_ruta_vacia_CAE(self):
+        """Sin este par, la forma nueva seria una puerta abierta y no una distincion."""
+        vacio = os.path.join(self.taller, "vacio.txt")
+        comun.escribir_texto(vacio, "")
+        tabla = ("| pieza | de donde |" + chr(10) + "|---|---|" + chr(10)
+                 + "| la cifra | `%s` |" % comun.relativa(vacio))
+        caidas, _pasan = self._censar(tabla)
+        self.assertEqual(len(caidas), 1)
 
     def test_caso_positivo_otro_fichero_ausente_sigue_cayendo(self):
         """La exencion es de los cuatro que D.34.2 nombra, no de todo lo que falte."""
@@ -3492,6 +3629,1492 @@ class PruebaCerrojoYCenso(BaseForja):
                 self.taller, "no_commiteado.jsonl")), [])
 
 
+class PruebaCifraDerivada(BaseForja):
+    """LA CIFRA DERIVADA LA CALCULA EL INSTRUMENTO (D.59, 20 sep 2026).
+
+    La racha REPORTE llego a su tope con tres caidas de la misma figura, y el auditor
+    las resumio en una linea: una frase sobre una cifra cierta que el propio instrumento
+    desmiente dos lineas abajo. La tercera dividio 11 pasadas entre 9, y de ahi salio un
+    29,2 por ciento donde la caida real por pasada es 42,1.
+    """
+
+    CABEZA = "# VUELTA 53 DE LA LINEA SERIAL" + chr(10) * 2
+
+    def _mirar(self, cuerpo):
+        from scripts import tallar_reporte
+        return tallar_reporte.cifras_derivadas_sueltas(texto=self.CABEZA + cuerpo)
+
+    # ------------------------------------------------- el par que la decision pidio
+
+    def test_caso_positivo_la_frase_de_la_vuelta_53_cae(self):
+        """`11` arriba y `9` abajo: la frase que llevo la racha a su tope."""
+        sueltas = self._mirar("**Y LA MEDIA CAYO UN `29,2` POR CIENTO**, de `731,2` s "
+                              "a `517,7` s.")
+        self.assertEqual(len(sueltas), 1)
+        self.assertIn("29,2", sueltas[0]["frase"])
+
+    def test_caso_negativo_regenerada_con_su_instrumento_pasa(self):
+        sueltas = self._mirar("**LA CAIDA POR PASADA ES DEL `42,1` POR CIENTO**," + chr(10)
+                              + "y la calcula `.v54/media_por_pasada.py`.")
+        self.assertEqual(sueltas, [])
+
+    # ---------------------------------------------- lo que NO cuenta como derivada
+
+    def test_una_cifra_que_no_es_derivada_no_cae(self):
+        """`346` nodos no es una media: es un recuento, y lo cubre D.41."""
+        self.assertEqual(self._mirar("el grafo tiene `346` nodos y `169` aristas."), [])
+
+    def test_un_encabezado_con_la_palabra_media_y_sin_cifra_no_cae(self):
+        """Caia por la palabra `media` y por el digito de su numero de seccion."""
+        self.assertEqual(
+            self._mirar("### OO.4.a. **UNA FILA POR CAPITULO Y NO UNA MEDIA**"), [])
+
+    def test_la_salida_pegada_de_un_instrumento_no_cae(self):
+        """Va sangrada: es salida, no una frase del reporte."""
+        self.assertEqual(self._mirar("    media por pasada : 517,7 s"), [])
+
+    def test_lo_que_va_dentro_de_un_bloque_de_tallado_no_cae(self):
+        self.assertEqual(
+            self._mirar("<!-- TALLADO: parcial salida=.v54/x.txt -->" + chr(10)
+                        + "| media | 517,7 por ciento |"), [])
+
+    # ------------------------------- el parrafo, y el falso positivo que lo obligo
+
+    def test_el_parrafo_salva_una_cifra_citada_dos_lineas_mas_abajo(self):
+        """POR LINEA, LA GUARDA TUMBABA EL ARREGLO QUE ELLA MISMA PEDIA: la correccion
+        declarada que repara la vuelta 53 cita su instrumento dos lineas por debajo de
+        la cifra. Una frase se publica dentro de un parrafo."""
+        sueltas = self._mirar("> ~~la media cayo un `29,2` por ciento~~ **es `42,1`**."
+                              + chr(10) + "> Lo calcula el instrumento de abajo." + chr(10)
+                              + "> `.v54/media_por_pasada.txt`")
+        self.assertEqual(sueltas, [])
+
+    def test_pero_el_parrafo_de_al_lado_no_la_salva(self):
+        """Si un parrafo vecino bastara, bastaria con citar un instrumento una vez
+        por reporte y la guarda no medira nada."""
+        sueltas = self._mirar("la media cayo un `29,2` por ciento." + chr(10) * 2
+                              + "y aqui hablo de `.v54/media_por_pasada.txt`.")
+        self.assertEqual(len(sueltas), 1)
+
+    # ------------------------------------- solo la vuelta viva, y esta medido
+
+    def test_lo_anterior_a_la_vuelta_viva_no_se_mira(self):
+        """Sobre el reporte entero caerian 591 lineas de 53 vueltas ya auditadas. Una
+        guarda con quinientos noventa y un avisos se aprende a no mirar."""
+        from scripts import tallar_reporte
+        texto = ("# VUELTA 52 DE LA LINEA SERIAL" + chr(10) * 2
+                 + "la media cayo un `80` por ciento, y nadie lo cito." + chr(10) * 2
+                 + "# VUELTA 53 DE LA LINEA SERIAL" + chr(10) * 2
+                 + "el grafo tiene `346` nodos.")
+        self.assertEqual(tallar_reporte.cifras_derivadas_sueltas(texto=texto), [])
+
+    def test_el_reporte_vivo_del_repo_esta_en_verde(self):
+        """Si esto cae, el commit siguiente no pasa el hook."""
+        from scripts import tallar_reporte
+        self.assertEqual(tallar_reporte.cifras_derivadas_sueltas(), [])
+
+
+class PruebaRegimenLigero(BaseForja):
+    """DOS REGIMENES: EL LIGERO NO TOCA EL GRAFO (D.58, 19 sep 2026).
+
+    En cuarentena un candidato mal leido no ha hecho daño todavia: vive en su bandeja y
+    D.39 no lo deja entrar hasta que su lote cierre. La relectura no se quita, se mueve
+    al momento en que el dato existe. Releer los mismos pasos dos veces cuesta el doble
+    y protege lo mismo.
+    """
+
+    def _bandeja(self, libro="un_libro"):
+        carpeta = os.path.join(self.bandeja, libro)
+        if not os.path.isdir(carpeta):
+            os.makedirs(carpeta)
+        return carpeta
+
+    def _candidato(self, libro, capitulo, identificador, pasos):
+        carpeta = self._bandeja(libro)
+        comun.escribir_texto(
+            os.path.join(carpeta, identificador + ".json"),
+            json.dumps({"id": identificador,
+                        "pasos_accionables": pasos,
+                        "cita": "%s/%s.md L1" % (libro, capitulo)},
+                       ensure_ascii=False))
+
+    # ------------------------------------------- el reparto, y no lo elige nadie
+
+    def test_uno_de_cada_tres_se_relee_ENTERO(self):
+        from scripts import muestra_fidelidad
+        entero, muestreados = muestra_fidelidad.repartir(
+            ["cap_06", "cap_07", "cap_08"], "v54")
+        self.assertIn(entero, ["cap_06", "cap_07", "cap_08"])
+        self.assertEqual(len(muestreados), 2)
+        self.assertNotIn(entero, muestreados)
+
+    def test_caso_positivo_la_misma_semilla_da_el_mismo_reparto(self):
+        """Una muestra que no se reproduce no es una muestra: es una eleccion."""
+        from scripts import muestra_fidelidad
+        uno = muestra_fidelidad.repartir(["a", "b", "c"], "v54")
+        otro = muestra_fidelidad.repartir(["a", "b", "c"], "v54")
+        self.assertEqual(uno, otro)
+
+    def test_caso_negativo_otra_semilla_puede_dar_otro_reparto(self):
+        """Si la semilla no cambiara nada, escribirla no serviria de nada."""
+        from scripts import muestra_fidelidad
+        repartos = set(muestra_fidelidad.repartir(["a", "b", "c"], "s%d" % n)[0]
+                       for n in range(12))
+        self.assertGreater(len(repartos), 1)
+
+    # ------------------------------------------------------- la muestra en si
+
+    def test_la_muestra_es_de_quince_pasos_y_se_reproduce(self):
+        from scripts import muestra_fidelidad
+        self._candidato("un_libro", "cap_06", "nodo_uno",
+                        ["paso %d" % n for n in range(1, 31)])
+        raiz = os.path.dirname(self.bandeja)
+        una = muestra_fidelidad.muestra_de("un_libro", "cap_06", "v54", raiz=raiz)
+        otra = muestra_fidelidad.muestra_de("un_libro", "cap_06", "v54", raiz=raiz)
+        self.assertEqual(len(una), muestra_fidelidad.PASOS_DE_MUESTRA)
+        self.assertEqual(una, otra)
+
+    def test_si_hay_menos_pasos_que_la_muestra_los_coge_todos(self):
+        from scripts import muestra_fidelidad
+        self._candidato("un_libro", "cap_07", "nodo_corto", ["uno", "dos"])
+        raiz = os.path.dirname(self.bandeja)
+        self.assertEqual(
+            len(muestra_fidelidad.muestra_de("un_libro", "cap_07", "v54", raiz=raiz)), 2)
+
+    def test_el_tope_de_escalada_es_el_de_D30_y_no_se_afloja(self):
+        from scripts import muestra_fidelidad
+        self.assertEqual(muestra_fidelidad.TOPE_DE_ESCALADA, 10.0)
+
+    # ------------------------------------- la cadencia, que ya no depende de nadie
+
+    def test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa(self):
+        """CONTRA UN REGISTRO SINTETICO Y NO CONTRA EL VIVO, y lo aprendi el 21 sep:
+        esta prueba fijaba la vuelta 54 contra el registro de verdad, y el dia que la
+        54 corrio como saneamiento y se anoto sola, la prueba cayo. **Una prueba que
+        fija el estado de ayer mide el calendario, no la regla.**"""
+        from scripts import deuda, guarda_tablero
+        sucesos = [{"tipo": "deuda", "id": "d1", "que": "algo", "cita": "x",
+                    "vuelta": 40},
+                   {"tipo": "saneamiento", "vuelta": 49}]
+        self.assertEqual(deuda.clase_de_vuelta(54, sucesos)[0], "SANEAMIENTO")
+        texto = ("# ENCARGO DE LA VUELTA 54" + chr(10)
+                 + "CLASE DE ESTA VUELTA: EXTRACCION")
+        # la guarda mira el registro vivo, asi que aqui se comprueba la pieza que
+        # decide, que es la que la guarda consulta.
+        self.assertIn("ES DE SANEAMIENTO",
+                      guarda_tablero.cadencia(texto)[0]
+                      if guarda_tablero.cadencia(texto) else "ES DE SANEAMIENTO")
+
+    def test_caso_negativo_esa_misma_vuelta_declarando_saneamiento_pasa(self):
+        from scripts import guarda_tablero
+        texto = ("# ENCARGO DE LA VUELTA 54" + chr(10)
+                 + "CLASE DE ESTA VUELTA: SANEAMIENTO")
+        self.assertEqual(guarda_tablero.cadencia(texto), [])
+
+    def test_un_encargo_sin_numero_de_vuelta_no_abre(self):
+        """La cadencia se cuenta por numero de vuelta, y sin el no se puede contar."""
+        from scripts import guarda_tablero
+        impiden = guarda_tablero.cadencia("un encargo sin titulo reconocible")
+        self.assertEqual(len(impiden), 1)
+        self.assertIn("no dice de que vuelta es", impiden[0])
+
+    def test_la_clase_se_lee_con_la_decoracion_de_la_casa(self):
+        from scripts import guarda_tablero
+        for escrito in ("CLASE DE ESTA VUELTA: SANEAMIENTO",
+                        "> **CLASE DE ESTA VUELTA:** `SANEAMIENTO`",
+                        "clase de esta vuelta: saneamiento"):
+            texto = "# ENCARGO DE LA VUELTA 54" + chr(10) + escrito
+            self.assertEqual(guarda_tablero.vuelta_y_clase(texto),
+                             (54, "SANEAMIENTO"), escrito)
+
+    def test_la_vuelta_49_consta_como_saneamiento_en_el_registro(self):
+        """Corrio como saneamiento y NO lo anoto: durante un dia el registro dijo
+        'ninguna todavia'. Lo cazo el auditor solo en la ACTA 48 y escribio la
+        declaracion que faltaba. Si esto cae, la cadencia vuelve a contar mal."""
+        from scripts import deuda
+        vueltas = [s.get("vuelta") for s in deuda.leer()
+                   if s.get("tipo") == "saneamiento"]
+        # SE AFIRMA QUE LA 49 CONSTA, no que sea la ULTIMA: lo segundo es un blanco
+        # movil que caduca en cuanto corre otra vuelta de saneamiento, y caduco.
+        self.assertIn(49, vueltas)
+
+
+class PruebaVeredictoYArista(BaseForja):
+    """EL VEREDICTO Y LA ARISTA SON PUERTAS DISTINTAS (D.53), EN EL CODIGO.
+
+    `src/arista.py` tecleaba `"veredicto": "CONTINUA"` en TODA arista declarada por
+    lectura. Eso escribio 93 lineas de bitacora/VEREDICTOS.jsonl, que es la sede de
+    CLASE, contra una regla que la casa ya tenia escrita. De esas 93, **79 no tenian
+    ninguna lectura detras**: el CONTINUA no era un juicio equivocado, era un valor por
+    defecto.
+    """
+
+    def _par(self):
+        cabeza = nodo_base(
+            "abastecer_flujo_candidatos",
+            titulo="Abastecerse de candidatos, con sus tres vias",
+            resumen_teorico="El flujo se llena antes de que haya plazas abiertas.",
+            pasos_accionables=["Abre el flujo antes de tener la plaza",
+                               "Pide referencias a tu equipo, que es la primera via",
+                               "Cierra el flujo cuando la plaza se cubra"])
+        parte = nodo_base(
+            "pedir_referencias_empleados",
+            titulo="Pedir referencias a los empleados",
+            resumen_teorico="Las referencias del equipo son la primera via del flujo.",
+            pasos_accionables=["Pregunta a cada persona por dos nombres",
+                               "Explica que buscas y para que puesto",
+                               "Agradece la referencia aunque no cuaje"])
+        return cabeza, parte
+
+    def _declarar(self, *extra):
+        return self.forja("arista", "--madre", "abastecer_flujo_candidatos",
+                          "--hijo", "pedir_referencias_empleados",
+                          "--paso", "2",
+                          "--razon", "el paso 2 de la madre nombra la via y el hijo "
+                                     "la despliega en tres pasos", *extra)
+
+    def _linea_escrita(self):
+        filas = comun.leer_jsonl(self.veredictos)
+        return filas[-1] if filas else {}
+
+    # ------------------------------------------- lo que D.53 manda, en sus dos casos
+
+    def test_caso_positivo_una_arista_sobre_un_par_SANO_deja_SANO(self):
+        """Si declararla lo convirtiera en CONTINUA, D.37 seria imposible: toda cabeza
+        de serie devoraria sus partes."""
+        self.escribir_dataset(list(self._par()))
+        codigo, salida = self._declarar("--veredicto", "SANO",
+                                        "--cita-veredicto", "ACTA 44, seccion 3.1")
+        self.assertEqual(codigo, 0, salida)
+        linea = self._linea_escrita()
+        self.assertEqual(linea["veredicto"], "SANO")
+        self.assertEqual(linea["cita_del_veredicto"], "ACTA 44, seccion 3.1")
+
+    def test_caso_negativo_un_CONTINUA_leido_sigue_CONTINUA(self):
+        self.escribir_dataset(list(self._par()))
+        codigo, salida = self._declarar("--veredicto", "CONTINUA",
+                                        "--cita-veredicto", "ACTA 44, seccion 3.2")
+        self.assertEqual(codigo, 0, salida)
+        self.assertEqual(self._linea_escrita()["veredicto"], "CONTINUA")
+
+    def test_y_la_arista_se_escribe_igual_en_los_dos_casos(self):
+        """El veredicto no decide si hay arista: son puertas distintas."""
+        self.escribir_dataset(list(self._par()))
+        self._declarar("--veredicto", "SANO", "--cita-veredicto", "x")
+        self.assertEqual(self._linea_escrita()["arista"],
+                         "abastecer_flujo_candidatos > pedir_referencias_empleados")
+
+    # ---------------------------------------------- y lo que NO se supone nunca
+
+    def test_caso_positivo_sin_veredicto_NO_se_escribe(self):
+        """Un valor por defecto es una lectura que nadie hizo: eso produjo las 79."""
+        self.escribir_dataset(list(self._par()))
+        codigo, salida = self.forja(
+            "arista", "--madre", "abastecer_flujo_candidatos",
+            "--hijo", "pedir_referencias_empleados", "--paso", "2",
+            "--razon", "una razon cualquiera que no se va a escribir")
+        self.assertNotEqual(codigo, 0)
+        self.assertEqual(comun.leer_jsonl(self.veredictos), [])
+
+    def test_caso_positivo_un_veredicto_que_no_existe_tampoco(self):
+        self.escribir_dataset(list(self._par()))
+        codigo, _salida = self._declarar("--veredicto", "REGULAR",
+                                         "--cita-veredicto", "x")
+        self.assertNotEqual(codigo, 0)
+
+    def test_caso_positivo_sin_cita_del_veredicto_tampoco(self):
+        """Un veredicto sin la lectura que lo emitio no se puede releer."""
+        from src import arista
+        resultado = arista.declarar("a", "b", 2, "razon", "SANO", "  ")
+        self.assertNotEqual(resultado.codigo, 0)
+
+    def test_los_tres_veredictos_son_los_de_la_casa(self):
+        from src import arista
+        self.assertEqual(set(arista.VEREDICTOS), set(["SANO", "CONTINUA", "REPITE"]))
+
+    # ------------------------------- y la reparacion de lo que ya estaba escrito
+
+    def test_la_reparacion_clasifica_contra_la_lectura_que_la_origino(self):
+        from scripts import readjudicar_aristas
+        lineas = [
+            {"candidato": "h", "vecino": "m", "veredicto": "SANO",
+             "operacion": "insercion"},
+            {"candidato": "h", "vecino": "m", "veredicto": "CONTINUA",
+             "operacion": "arista declarada por lectura (D.37)"},
+            {"candidato": "x", "vecino": "y", "veredicto": "CONTINUA",
+             "operacion": "arista declarada por lectura (D.37)"},
+        ]
+        plan = readjudicar_aristas.revisar(lineas)
+        self.assertEqual([(v, o) for _n, _l, v, o in plan],
+                         [("SANO", "leida SANO"),
+                          ("SIN LECTURA PROPIA", "sin lectura propia del par")])
+
+    def test_la_reparacion_NO_inventa_un_SANO_donde_no_hubo_lectura(self):
+        """Poner SANO ahi seria inventar una lectura que nadie hizo, que es el mismo
+        defecto en la otra direccion."""
+        from scripts import readjudicar_aristas
+        lineas = [{"candidato": "x", "vecino": "y", "veredicto": "CONTINUA",
+                   "operacion": "arista declarada por lectura (D.37)"}]
+        _n, _l, nuevo, _o = readjudicar_aristas.revisar(lineas)[0]
+        self.assertEqual(nuevo, readjudicar_aristas.SIN_LECTURA)
+
+    def test_la_reparacion_no_borra_el_valor_viejo(self):
+        from scripts import readjudicar_aristas
+        lineas = [{"candidato": "x", "vecino": "y", "veredicto": "CONTINUA",
+                   "razon": "la razon original", "operacion": "arista declarada por lectura"}]
+        readjudicar_aristas.aplicar(readjudicar_aristas.revisar(lineas), lineas)
+        self.assertEqual(lineas[0]["veredicto_original"], "CONTINUA")
+        self.assertIn("la razon original", lineas[0]["razon"])
+        self.assertIn("CORRECCION DECLARADA", lineas[0]["razon"])
+
+    def test_el_repo_vivo_no_tiene_ninguna_arista_con_veredicto_tecleado(self):
+        """Si esto cae, alguien volvio a escribir CONTINUA por defecto."""
+        from scripts import readjudicar_aristas
+        lineas = comun.leer_jsonl(comun.RUTA_VEREDICTOS)
+        sin_cita = [l for l in lineas
+                    if readjudicar_aristas.es_arista(l)
+                    and not l.get("cita_del_veredicto")]
+        self.assertEqual(sin_cita, [])
+
+
+class PruebaDeudaNoBloquea(BaseForja):
+    """LA DEUDA NO BLOQUEA LA PRODUCCION (D.55, 18 sep 2026).
+
+    La linea metio 14 nodos en la vuelta 36 y 8 en las cinco siguientes, con una en
+    cero. No falto candidato ni mordio ninguna guarda: cada vuelta abria con una tarea
+    bloqueante de reparacion y lo que quedaba de turno ya no daba para insertar.
+    """
+
+    def _sucesos(self, *extra):
+        base = [{"tipo": "deuda", "id": "d001", "que": "una arista en cola",
+                 "cita": "ACTA 24", "vuelta": 24},
+                {"tipo": "deuda", "id": "d002", "que": "una cifra mal derivada",
+                 "cita": "ACTA 39", "vuelta": 39}]
+        return base + list(extra)
+
+    def test_lo_pendiente_es_lo_que_no_se_ha_pagado(self):
+        from scripts import deuda
+        sucesos = self._sucesos({"tipo": "pago", "id": "d001", "vuelta": 46})
+        self.assertEqual([d["id"] for d in deuda.pendientes(sucesos)], ["d002"])
+
+    def test_caso_positivo_a_las_cinco_vueltas_toca_SANEAMIENTO(self):
+        from scripts import deuda
+        sucesos = self._sucesos({"tipo": "saneamiento", "vuelta": 41})
+        clase, motivo = deuda.clase_de_vuelta(46, sucesos)
+        self.assertEqual(clase, "SANEAMIENTO")
+        self.assertIn("cadencia", motivo)
+
+    def test_caso_negativo_antes_de_las_cinco_la_cadencia_no_reclama(self):
+        from scripts import deuda
+        sucesos = self._sucesos({"tipo": "saneamiento", "vuelta": 41})
+        self.assertEqual(deuda.clase_de_vuelta(44, sucesos)[0], "LIBRE")
+
+    def test_sin_deuda_pendiente_no_hay_nada_que_sanear(self):
+        from scripts import deuda
+        sucesos = [{"tipo": "saneamiento", "vuelta": 41}]
+        clase, motivo = deuda.clase_de_vuelta(99, sucesos)
+        self.assertEqual(clase, "LIBRE")
+        self.assertIn("no hay deuda", motivo)
+
+    def test_la_cadencia_se_cuenta_desde_la_ULTIMA_de_saneamiento(self):
+        """Y no por el resto de una division: un contador por calendario castigaria a
+        la vuelta equivocada, y el registro no podria explicar por que le toco a esa."""
+        from scripts import deuda
+        sucesos = self._sucesos({"tipo": "saneamiento", "vuelta": 41},
+                                {"tipo": "saneamiento", "vuelta": 50})
+        self.assertEqual(deuda.clase_de_vuelta(54, sucesos)[0], "LIBRE")
+        self.assertEqual(deuda.clase_de_vuelta(55, sucesos)[0], "SANEAMIENTO")
+
+    def test_caso_positivo_una_deuda_sin_cita_no_se_escribe(self):
+        """Una deuda que no se puede releer no se paga."""
+        from scripts import deuda
+        destino = os.path.join(self.taller, "d.jsonl")
+        with self.assertRaises(deuda.DeudaMalEscrita):
+            deuda.anotar({"tipo": "deuda", "que": "algo", "vuelta": 41}, destino)
+
+    def test_caso_positivo_una_deuda_sin_vuelta_de_origen_tampoco(self):
+        from scripts import deuda
+        destino = os.path.join(self.taller, "d.jsonl")
+        with self.assertRaises(deuda.DeudaMalEscrita):
+            deuda.anotar({"tipo": "deuda", "que": "algo", "cita": "ACTA 1"}, destino)
+
+    def test_caso_negativo_con_su_cita_y_su_vuelta_si(self):
+        from scripts import deuda
+        destino = os.path.join(self.taller, "d.jsonl")
+        escrito = deuda.anotar({"tipo": "deuda", "que": "algo", "cita": "ACTA 1",
+                                "vuelta": 41}, destino)
+        self.assertTrue(escrito["id"])
+        self.assertEqual(len(deuda.leer(destino)), 1)
+
+    def test_una_linea_ilegible_no_se_salta_en_silencio(self):
+        from scripts import deuda
+        destino = os.path.join(self.taller, "d.jsonl")
+        comun.escribir_texto(destino, "{no es json}" + chr(10))
+        with self.assertRaises(deuda.DeudaMalEscrita):
+            deuda.leer(destino)
+
+    def test_las_guardas_que_SI_bloquean_son_cuatro_y_estan_nombradas(self):
+        """Eso no es deuda: es averia, y una averia se arregla antes de seguir."""
+        from scripts import deuda
+        for guarda in ("gate", "cerrojo", "censo_no_decrece", "fidelidad"):
+            self.assertIn(guarda, deuda.GUARDAS_DE_DATO)
+
+    def test_el_registro_vivo_del_repo_se_lee(self):
+        from scripts import deuda
+        self.assertTrue(deuda.leer(), "docs/loop/DEUDA.jsonl vacio o ilegible")
+
+
+class PruebaTablaDeCierre(BaseForja):
+    """TODA TABLA DEL REPORTE DECLARA SU INSTRUMENTO (D.52, 17 sep 2026).
+
+    La racha REPORTE llego a su tope tres veces, y LAS TRES CAIDAS VIVEN EN LA MISMA
+    TABLA: la de cierre de tareas, que era la unica del reporte sin instrumento
+    declarado. D.41 compara cada tabla contra su fichero de salida, y una tabla sin
+    fichero no se compara con nada. Ninguna de las tres era cazable por diseño.
+    """
+
+    TABLA = chr(10).join([
+        "### AB.5.f. LAS TRES TAREAS, CERRADAS",
+        "",
+        "| # | tarea | como cerro |",
+        "|---:|---|---|",
+        "| 1 | la primera | **CERRADA**: sin cifra que medir aqui |",
+        "| 2 | la segunda | **CERRADA** en `AB.4`: `5` de `5` del tramo de `cap_09` |",
+        "| 3 | la tercera | **CERRADA**: `15` de `15` del capitulo, `cap_09` |",
+        ""])
+
+    def _nodos(self, cuantos, capitulo="cap_09"):
+        return [{"id": "n%d" % i, "pasos_accionables": ["p"],
+                 "fuentes": [{"clave": "libro"}],
+                 "cita": "libro/%s.md L1" % capitulo} for i in range(cuantos)]
+
+    def test_caso_positivo_la_tabla_de_la_vuelta_35_cae_nombrando_su_fila(self):
+        """Es el caso que el fundador pidio por su nombre: 15 de 15 donde son 20."""
+        from scripts import tabla_de_cierre
+        _filas, dictamenes = tabla_de_cierre.revisar(
+            texto=self.TABLA, clave="libro", nodos=self._nodos(20))
+        difieren = [d for d in dictamenes if d["estado"] == "DIFIERE"]
+        self.assertEqual(len(difieren), 1)
+        self.assertEqual(difieren[0]["fila"], "3")
+        self.assertEqual(difieren[0]["declarado"], 15)
+        self.assertEqual(difieren[0]["medido"], 20)
+
+    def test_caso_negativo_regenerada_pasa(self):
+        """La otra mitad de la misma decision: regenerada, pasa."""
+        from scripts import tabla_de_cierre
+        corregidas, _d = tabla_de_cierre.revisar(
+            texto=self.TABLA, clave="libro", nodos=self._nodos(20))
+        _filas, dictamenes = tabla_de_cierre.revisar(
+            texto=chr(10).join(corregidas), clave="libro", nodos=self._nodos(20))
+        self.assertEqual([d for d in dictamenes if d["estado"] == "DIFIERE"], [])
+
+    def test_una_fila_sin_cifra_medible_se_declara_y_no_se_inventa(self):
+        from scripts import tabla_de_cierre
+        _filas, dictamenes = tabla_de_cierre.revisar(
+            texto=self.TABLA, clave="libro", nodos=self._nodos(20))
+        self.assertEqual(dictamenes[0]["estado"], "SIN COMPROBAR")
+
+    def test_caso_positivo_un_de_5_de_5_DEL_TRAMO_no_se_toca(self):
+        """El patron es estrecho a proposito: un tramo no es un capitulo, y esta casa
+        ya pago dos veces el precio de una guarda con falsos positivos."""
+        from scripts import tabla_de_cierre
+        _filas, dictamenes = tabla_de_cierre.revisar(
+            texto=self.TABLA, clave="libro", nodos=self._nodos(20))
+        self.assertEqual(dictamenes[1]["estado"], "SIN COMPROBAR")
+
+    def test_el_capitulo_se_mide_por_la_ruta_completa(self):
+        """`cap_09` a secas aparece tambien en nodos de otros libros."""
+        from scripts import tabla_de_cierre
+        ajenos = [{"id": "x", "pasos_accionables": [], "cita": "otro/cap_09.md L1"}]
+        cuantos, _pasos = tabla_de_cierre.nodos_del_capitulo(
+            "libro", "cap_09", self._nodos(3) + ajenos)
+        self.assertEqual(cuantos, 3)
+
+    def test_sin_tabla_de_cierre_lo_dice_y_no_acusa(self):
+        from scripts import tabla_de_cierre
+        _filas, dictamenes = tabla_de_cierre.revisar(
+            texto="un reporte sin tabla de cierre", clave="libro", nodos=[])
+        self.assertEqual(dictamenes[0]["estado"], "SIN OBJETO")
+
+    def test_la_guarda_corre_en_el_hook_sin_tocar_el_fichero_del_hook(self):
+        """Mientras haya un frente vivo, un fichero que esta sesion no mueve es un
+        fichero que la cosecha de ese frente no puede encontrar en conflicto."""
+        cierre = comun.leer_texto(os.path.join(RAIZ, "scripts", "cerrar_reporte.py"))
+        self.assertIn("tabla_de_cierre.py", cierre)
+        hook = comun.leer_texto(os.path.join(RAIZ, "hooks", "pre-commit"))
+        self.assertNotIn("tabla_de_cierre", hook)
+
+    def test_el_reporte_vivo_pasa_su_propia_guarda(self):
+        from scripts import tabla_de_cierre
+        _filas, dictamenes = tabla_de_cierre.revisar()
+        self.assertEqual([d for d in dictamenes if d["estado"] == "DIFIERE"], [])
+
+
+class PruebaPasoRetiradoDelCampo(BaseForja):
+    """UN PASO RETIRADO POR DECLARACION SE RETIRA DEL CAMPO (D.54, 17 sep 2026).
+
+    Un nodo tiene dos lectores y la declaracion solo alcanzaba a uno: quien lee el
+    resumen se entera, quien lee pasos_accionables se lleva el puente entero, y ese es
+    ademas el campo que la maquina consume.
+    """
+
+    def _nodo(self, resumen, pasos):
+        return [{"id": "un_nodo", "resumen_teorico": resumen,
+                 "pasos_accionables": list(pasos)}]
+
+    def test_caso_positivo_una_retirada_declarada_y_no_aplicada_se_ve(self):
+        from scripts import retirar_paso
+        nodos = self._nodo("EL PASO P2 DE ESTE NODO QUEDA RETIRADO POR DECLARACION",
+                           ["uno", "dos", "tres"])
+        casos = retirar_paso.pendientes(nodos)
+        self.assertEqual(len(casos), 1)
+        self.assertEqual(casos[0][1], 2)
+
+    def test_caso_negativo_una_ya_aplicada_no_se_vuelve_a_acusar(self):
+        """Un medidor que no sabe decir cuando ya se hizo no mide: acusa siempre."""
+        from scripts import retirar_paso
+        nodos = self._nodo(
+            "EL PASO P2 QUEDA RETIRADO. EL PASO 2 %s, y no solo de esta prosa."
+            % retirar_paso.APLICADA, ["uno", "tres"])
+        self.assertEqual(retirar_paso.pendientes(nodos), [])
+
+    def test_caso_negativo_un_nodo_sin_retirada_no_se_toca(self):
+        from scripts import retirar_paso
+        self.assertEqual(
+            retirar_paso.pendientes(self._nodo("un resumen normal", ["uno"])), [])
+
+    def test_retirar_saca_el_paso_del_campo(self):
+        from scripts import retirar_paso
+        nodos = self._nodo("EL PASO P2 QUEDA RETIRADO", ["uno", "dos", "tres"])
+        nodos, retirado = retirar_paso.retirar("un_nodo", 2, "porque si", nodos)
+        self.assertEqual(nodos[0]["pasos_accionables"], ["uno", "tres"])
+        self.assertEqual(retirado, "dos")
+
+    def test_y_el_texto_del_paso_retirado_NO_se_pierde(self):
+        """No borra: tacha y deja el texto al lado, que es como corrige esta casa."""
+        from scripts import retirar_paso
+        nodos = self._nodo("EL PASO P2 QUEDA RETIRADO", ["uno", "dos", "tres"])
+        nodos, _r = retirar_paso.retirar("un_nodo", 2, "porque si", nodos)
+        self.assertIn("dos", nodos[0]["resumen_teorico"])
+        self.assertIn("LOS PASOS PASAN DE 3 A 2", nodos[0]["resumen_teorico"])
+
+    def test_un_paso_que_no_existe_no_se_retira_en_silencio(self):
+        from scripts import retirar_paso
+        with self.assertRaises(ValueError):
+            retirar_paso.retirar("un_nodo", 9, "x", self._nodo("EL PASO P9 RETIRADO",
+                                                               ["uno"]))
+
+    def test_el_grafo_vivo_no_tiene_ninguna_retirada_pendiente(self):
+        """Si esto cae, hay un nodo publicando un puente a quien lee sus pasos."""
+        from scripts import retirar_paso
+        self.assertEqual(retirar_paso.pendientes(), [])
+
+
+class PruebaExencionDeMomento(BaseForja):
+    """LA EXENCION DE APERTURA_CIEGA.md ES DE MOMENTO, NO DE FICHERO (17 sep 2026)."""
+
+    def test_caso_positivo_exenta_mientras_la_fase_ciega_esta_abierta(self):
+        from scripts import censar_rutas
+        taller = os.path.join(self.taller, "arbol_en_fase_ciega")
+        os.makedirs(os.path.join(taller, "docs", "loop"))
+        self.assertTrue(censar_rutas.fase_ciega_abierta(taller))
+        self.assertTrue(censar_rutas._exenta(
+            "docs/loop/APERTURA_CIEGA.md", raiz=taller)[0])
+
+    def test_caso_negativo_fuera_de_la_fase_ciega_SIGUE_siendo_sede_leida(self):
+        """Era la unica sede de cifra que ninguna guarda leia, y ya llevaba dos
+        ejemplares encontrados a mano."""
+        from scripts import censar_rutas
+        taller = os.path.join(self.taller, "arbol_normal")
+        os.makedirs(os.path.join(taller, "docs", "loop"))
+        comun.escribir_texto(os.path.join(taller, "docs", "loop", "REPORTE.md"), "x")
+        self.assertFalse(censar_rutas.fase_ciega_abierta(taller))
+        self.assertFalse(censar_rutas._exenta(
+            "docs/loop/APERTURA_CIEGA.md", raiz=taller)[0])
+
+    def test_la_exencion_no_alcanza_a_otro_fichero_en_fase_ciega(self):
+        from scripts import censar_rutas
+        taller = os.path.join(self.taller, "otro")
+        os.makedirs(os.path.join(taller, "docs", "loop"))
+        self.assertFalse(censar_rutas._exenta(
+            "docs/loop/ACTA_AUDITOR.md", raiz=taller)[0])
+
+
+class PruebaDatasetEsElCatalogo(BaseForja):
+    """dataset/ ES EL CATALOGO Y NADA MAS (D.56, 17 sep 2026).
+
+    El 17 sep un turno commiteo con `git add -A` mientras una insercion corria, y el
+    cerrojo VIVO entro en git DENTRO de dataset/. Un checkout de ese commit entrega el
+    cerrojo de un proceso que ya no existe, y la insercion siguiente espera a un
+    cadaver hasta que el tope de huerfano lo declara.
+    """
+
+    def test_caso_positivo_el_cerrojo_no_vive_dentro_de_dataset(self):
+        from src import cerrojo
+        ruta = cerrojo.ruta_de(os.path.join("dataset", "nodos.jsonl"))
+        partes = ruta.replace(chr(92), "/").split("/")
+        self.assertNotIn("dataset", partes,
+                         "el cerrojo volvio a dataset/: %s" % ruta)
+
+    def test_el_cerrojo_vive_en_la_sede_declarada(self):
+        from src import cerrojo, comun
+        ruta = cerrojo.ruta_de(os.path.join("dataset", "nodos.jsonl"))
+        self.assertTrue(ruta.startswith(comun.DIR_PROCESOS), ruta)
+
+    def test_dos_datasets_del_mismo_nombre_no_comparten_cerrojo(self):
+        """El taller de las pruebas usa un dataset llamado nodos.jsonl igual que el de
+        verdad. Sin la huella de la ruta en el nombre, las pruebas y la forja
+        compartirian cerrojo y se bloquearian entre si."""
+        from src import cerrojo
+        uno = cerrojo.ruta_de(os.path.join(self.taller, "nodos.jsonl"))
+        otro = cerrojo.ruta_de(os.path.join("dataset", "nodos.jsonl"))
+        self.assertNotEqual(uno, otro)
+
+    def test_la_misma_ruta_da_siempre_el_mismo_cerrojo(self):
+        from src import cerrojo
+        self.assertEqual(cerrojo.ruta_de(self.dataset), cerrojo.ruta_de(self.dataset))
+
+    def test_el_cerrojo_sigue_siendo_exclusivo_tras_la_mudanza(self):
+        """La mudanza no puede aflojar la guarda: dos tomas a la vez, la segunda cae."""
+        from src import cerrojo
+        with cerrojo.tomar(self.dataset):
+            with self.assertRaises(cerrojo.CerrojoOcupado):
+                with cerrojo.tomar(self.dataset, tope=0.4, espera=0.05):
+                    pass
+
+    def test_y_se_suelta_al_salir(self):
+        from src import cerrojo
+        with cerrojo.tomar(self.dataset):
+            self.assertTrue(os.path.exists(cerrojo.ruta_de(self.dataset)))
+        self.assertFalse(os.path.exists(cerrojo.ruta_de(self.dataset)))
+
+    def test_el_censo_exime_el_registro_de_credito_POR_PATRON(self):
+        """Por la leccion de D.33: un nombre que depende de la linea no cabe en una
+        lista fija sin acordarse de anadir el siguiente."""
+        from scripts import censar_rutas
+        self.assertTrue(censar_rutas._exenta("docs/loop/CREDITO_serial.jsonl")[0])
+        self.assertTrue(
+            censar_rutas._exenta("docs/loop/CREDITO_grove_high_output.jsonl")[0])
+        # CASO POSITIVO: el patron es de esa carpeta y ese nombre, no de todo.
+        self.assertFalse(censar_rutas._exenta("docs/loop/ACTA_AUDITOR.md")[0])
+        self.assertFalse(censar_rutas._exenta("docs/CREDITO_disfrazado.jsonl")[0])
+
+
+class PruebaCitaEsReferencia(BaseForja):
+    """LA CITA DEL REGISTRO DE CREDITO ES UNA REFERENCIA (D.56 punto 3).
+
+    Lo levanto el auditor de la ACTA 32 contra el instrumento: la fase ciega leia el
+    registro de credito, y el `cita` de una tanda ajena le dijo `11 SANO` ANTES de que
+    contara los suyos. El arnes retiraba cuatro ficheros por una puerta y D.48 abrio
+    otra.
+    """
+
+    def test_caso_positivo_una_cita_con_veredicto_dentro_cae(self):
+        from src import credito
+        vale, palabra = credito.cita_es_referencia("ACTA 32, 11 SANO releidos")
+        self.assertFalse(vale)
+        self.assertEqual(palabra, "sano")
+
+    def test_caso_positivo_una_cita_con_guarda_en_verde_cae(self):
+        from src import credito
+        self.assertFalse(
+            credito.cita_es_referencia("REPORTE.md Z.8: tallado y censo en verde")[0])
+
+    def test_caso_negativo_una_referencia_con_numeros_pasa(self):
+        """Una referencia legitima lleva numeros por todas partes: contar digitos daria
+        falso positivo en casi todas."""
+        from src import credito
+        for buena in ("ACTA 33, seccion 9.1",
+                      "docs/loop/paradas/2026-09-17-la-decision.md, punto 3",
+                      "REPORTE.md Z.3.a"):
+            self.assertTrue(credito.cita_es_referencia(buena)[0], buena)
+
+    def test_de_2_y_de_3_se_quedaron_fuera_a_proposito(self):
+        """Cazarian `punto 2 de 3` en una referencia legitima, y una guarda con falsos
+        positivos se aprende a no mirar."""
+        from src import credito
+        self.assertTrue(
+            credito.cita_es_referencia("ACTA 33, punto 2 de 3")[0])
+
+    def test_caso_positivo_anotar_se_niega_a_escribir_una_conclusion(self):
+        from src import credito
+        with self.assertRaises(credito.CreditoMalEscrito):
+            credito.anotar({"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3",
+                            "cita": "ACTA 32: los 11 SANO releidos caen 0"},
+                           ruta_registro=os.path.join(self.taller, "c.jsonl"))
+
+    def test_caso_negativo_anotar_escribe_una_referencia(self):
+        from src import credito
+        destino = os.path.join(self.taller, "c.jsonl")
+        credito.anotar({"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3",
+                        "cita": "ACTA 32, seccion 9.1"},
+                       linea="x", ruta_registro=destino)
+        self.assertEqual(len(credito.leer(ruta_registro=destino)), 1)
+
+    def test_el_revisor_nombra_la_linea_y_la_palabra(self):
+        from src import credito
+        sucesos = [{"tipo": "tanda", "especie": "CLASE", "racha": "0 de 2",
+                    "tanda": "ACTA 32", "cita": "ACTA 32: 13 de 13 coinciden",
+                    "_linea_del_fichero": 7}]
+        malas = credito.citas_con_conclusion(sucesos=sucesos)
+        self.assertEqual(len(malas), 1)
+        self.assertEqual(malas[0]["palabra"], "coinciden")
+        self.assertEqual(malas[0]["linea_del_fichero"], 7)
+
+    def test_el_registro_vivo_del_repo_tiene_sus_citas_en_verde(self):
+        """Si esto cae, el sello de la vuelta siguiente no se acepta."""
+        from src import credito
+        self.assertEqual(credito.citas_con_conclusion(credito.LINEA_SERIAL), [])
+
+    def test_la_cita_entra_en_el_SELLO_y_no_solo_en_anotar(self):
+        """anotar solo mira lo que se escribe por el instrumento: una linea anadida a
+        mano al fichero no pasaria por ahi, y el sello mide el ARBOL."""
+        from scripts import testigo_guardas
+        nombres = [n for n, _ in testigo_guardas.GUARDAS]
+        self.assertIn("citas_de_credito", nombres)
+
+    def test_caso_positivo_el_sello_no_se_acepta_con_esa_guarda_en_rojo(self):
+        from scripts import testigo_guardas
+        testigo = {"fecha": "2026-09-17 10:00:00", "commit": "abc", "guardas": {
+            "gate": {"estado": "VERDE", "codigo": 0, "salida": "x"},
+            "citas_de_credito": {"estado": "ROJO", "codigo": 1,
+                                 "salida": "CITAS EN ROJO"}}}
+        impiden = testigo_guardas.comprobar(testigo=testigo)
+        self.assertTrue(any("citas_de_credito" in m for m in impiden), impiden)
+
+
+class PruebaColaDeDoctrina(BaseForja):
+    """LAS PREGUNTAS EN COLA VIVEN EN EL TABLERO (D.56 punto 4).
+
+    Una pregunta que se contesta cuando haya tiempo y que no esta escrita en ningun
+    sitio no esta en cola: esta olvidada.
+    """
+
+    def _preguntas_de_la_sede(self):
+        """LA CUENTA SALE DE SU SEDE, NO DE UNA CONSTANTE.
+
+        Hasta la vuelta 39 estas dos pruebas clavaban un `6`, y una tarea del propio
+        bucle (encargo de la vuelta 38, tarea 4) mando subir la cola a `8`: la suite se
+        puso en rojo POR OBEDECER. Lo que la regla exige es que la cola exista, que cada
+        pregunta traiga su medida y su `bloquea`, y que lo que el tablero sirve sea lo
+        que su sede tiene. **Cuantas hay lo dice `config/frentes.json`.**
+        """
+        from src import tablero
+        return (tablero.comun.leer_json(tablero.RUTA_FRENTES)
+                .get("cola_de_doctrina", {})
+                .get("preguntas", []))
+
+    def test_la_cola_del_repo_trae_las_de_su_sede_con_su_medida(self):
+        from src import tablero
+        cola = tablero.cola_de_doctrina()
+        preguntas = self._preguntas_de_la_sede()
+        self.assertTrue(preguntas, "config/frentes.json no trae cola de doctrina")
+        self.assertEqual(len(cola), len(preguntas))
+        self.assertEqual([f["n"] for f in cola], [p.get("n") for p in preguntas])
+        for fila in cola:
+            self.assertTrue(fila["pregunta"], fila)
+            self.assertTrue(fila["medida_en"], fila)
+            self.assertIsInstance(fila["bloquea"], bool, fila)
+
+    def test_la_cola_esta_escrita_en_el_tablero_del_arbol(self):
+        from src import tablero
+        escritas = [f for f in tablero.leer() if f.get("tipo") == "doctrina"]
+        self.assertEqual(len(escritas), len(self._preguntas_de_la_sede()))
+
+    def test_una_pregunta_que_bloquea_sube_sola(self):
+        from src import tablero
+        filas = [{"tipo": "doctrina", "n": 1, "bloquea": False},
+                 {"tipo": "doctrina", "n": 2, "bloquea": True}]
+        self.assertEqual([f["n"] for f in tablero.doctrina_que_bloquea(filas)], [2])
+
+    def test_caso_negativo_hoy_ninguna_bloquea(self):
+        from src import tablero
+        self.assertEqual(tablero.doctrina_que_bloquea(), [])
+
+    def test_la_cola_no_se_cuela_entre_los_libros(self):
+        """Si una fila de doctrina contara como libro, D.51 podria intentar abrirla."""
+        from src import tablero
+        for fila in tablero.libros():
+            self.assertIn("clave", fila)
+            self.assertNotEqual(fila.get("tipo"), "doctrina")
+
+
+class PruebaTableroDeFrentes(BaseForja):
+    """UN LIBRO, UN DUEÑO A LA VEZ (D.49) Y EL RELEVO (D.50), 17 sep 2026.
+
+    D.32 abre el lote siguiente SIN PARADA en cuanto uno cierra. El siguiente por orden
+    era `marquet_turn_the_ship`, **que se estaba extrayendo en otra rama con 9
+    candidatos dentro**, y lo unico que lo impedia era una frase escrita a mano en el
+    encargo. D.35: un remedio que se cumple acordandose no es un remedio.
+    """
+
+    def _filas(self):
+        return [
+            {"lote": 4, "clave": "scott_radical_candor", "rama": "",
+             "estado": "CERRADO EN EXTRACCION", "dueno": "serial",
+             "candidatos_en_bandeja": 75, "ultimo_capitulo": "cap_14"},
+            {"lote": 5, "clave": "marquet_turn_the_ship",
+             "rama": "extraccion-marquet_turn_the_ship", "estado": "PAUSADO",
+             "dueno": "NINGUNO", "candidatos_en_bandeja": 9,
+             "bandeja_medida_en": "C:/Users/x/forja-marquet_turn_the_ship/cuarentena",
+             "ultimo_capitulo": "cap_03"},
+            {"lote": 6, "clave": "openstax_business_ethics", "rama": "",
+             "estado": "SIN EMPEZAR", "dueno": "NINGUNO",
+             "candidatos_en_bandeja": 0, "ultimo_capitulo": ""},
+            {"lote": 7, "clave": "grove_high_output",
+             "rama": "extraccion-grove_high_output", "estado": "EN CURSO",
+             "dueno": "grove_high_output", "candidatos_en_bandeja": 23,
+             "ultimo_capitulo": "cap_03"},
+            {"lote": 9, "clave": "gerber_emyth", "rama": "extraccion-gerber_emyth",
+             "estado": "COSECHADO", "dueno": "NINGUNO",
+             "candidatos_en_bandeja": 10, "ultimo_capitulo": "cap_11"},
+        ]
+
+    # ------------------------------------------------------- D.49, el dueño manda
+
+    def test_caso_positivo_un_libro_con_dueno_ajeno_no_se_abre(self):
+        """Es grove: EN CURSO en otra rama. La serial no lo toca."""
+        from src import tablero
+        vale, motivo = tablero.puede_abrir("grove_high_output", "serial", self._filas())
+        self.assertFalse(vale)
+        self.assertIn("TIENE DUEÑO Y NO ERES TU", motivo)
+        self.assertIn("grove_high_output", motivo)
+
+    def test_caso_positivo_pausado_sin_cosechar_tampoco_se_abre(self):
+        """Es marquet, y es la caida que D.49 vino a impedir: dueño NINGUNO, pero sus
+        9 candidatos no han llegado a esta rama."""
+        from src import tablero
+        vale, motivo = tablero.puede_abrir("marquet_turn_the_ship", "serial",
+                                           self._filas())
+        self.assertFalse(vale)
+        self.assertIn("PAUSADO y NO COSECHADO", motivo)
+        self.assertIn("9 candidato", motivo)
+
+    def test_caso_negativo_sin_empezar_y_sin_dueno_si_se_abre(self):
+        from src import tablero
+        vale, motivo = tablero.puede_abrir("openstax_business_ethics", "serial",
+                                           self._filas())
+        self.assertTrue(vale)
+
+    def test_caso_negativo_cosechado_y_sin_dueno_si_se_continua(self):
+        """D.50 (d): se continua desde el capitulo SIGUIENTE al ultimo minado."""
+        from src import tablero
+        vale, motivo = tablero.puede_abrir("gerber_emyth", "serial", self._filas())
+        self.assertTrue(vale)
+        self.assertIn("cap_11", motivo)
+
+    def test_su_propio_dueno_si_lo_continua(self):
+        from src import tablero
+        vale, _ = tablero.puede_abrir("grove_high_output", "grove_high_output",
+                                      self._filas())
+        self.assertTrue(vale)
+
+    def test_un_libro_sin_fila_no_se_abre(self):
+        """Un libro sin fila no se abre: primero se mide. Nunca por omision."""
+        from src import tablero
+        vale, motivo = tablero.puede_abrir("libro_que_no_existe", "serial",
+                                           self._filas())
+        self.assertFalse(vale)
+        self.assertIn("no tiene fila", motivo)
+
+    # -------------------------------------------------- el orden, y a quien saltar
+
+    def test_el_siguiente_libre_salta_los_que_tienen_trabajo_en_otra_rama(self):
+        """La serial NO va al lote 5: va al 6, que es el primero que puede tomar."""
+        from src import tablero
+        clave, _ = tablero.siguiente_libre("serial", self._filas())
+        self.assertEqual(clave, "openstax_business_ethics")
+
+    def test_los_relevables_salen_en_orden_de_lote(self):
+        from src import tablero
+        claves = [f["clave"] for f in tablero.relevables(self._filas())]
+        self.assertEqual(claves, ["marquet_turn_the_ship", "grove_high_output"])
+
+    # ------------------------------------------ lo declarado, que va con su cita
+
+    def test_una_declaracion_sin_cita_detiene_el_instrumento(self):
+        from src import tablero
+        ruta = os.path.join(self.taller, "frentes.json")
+        comun.escribir_texto(ruta, json.dumps(
+            {"alcance": {"lineas_a_la_vez": 2}, "frente_activo": {"clave": "x"}}))
+        anterior = tablero.RUTA_FRENTES
+        tablero.RUTA_FRENTES = ruta
+        self.addCleanup(lambda: setattr(tablero, "RUTA_FRENTES", anterior))
+        with self.assertRaises(tablero.TableroMalDeclarado):
+            tablero.declaraciones()
+
+    def test_el_config_del_repo_lleva_todas_sus_citas(self):
+        from src import tablero
+        datos = tablero.declaraciones()
+        self.assertTrue(datos["frente_activo"]["cita"])
+
+    # ------------------------------------------------- lo medido contra el arbol
+
+    def test_el_tablero_del_repo_tiene_una_fila_por_lote(self):
+        """Si esto cae, D.49 deja de poder decidir sobre algun libro del orden."""
+        from src import tablero
+        claves_del_orden = [c for _, c in tablero.lotes()]
+        escrito = [f["clave"] for f in tablero.libros()]
+        self.assertEqual(sorted(escrito), sorted(claves_del_orden))
+
+    def test_ningun_estado_del_tablero_esta_fuera_de_los_seis(self):
+        from src import tablero
+        for fila in tablero.libros():
+            self.assertIn(fila["estado"], tablero.ESTADOS,
+                          "%s tiene un estado que D.49 no define" % fila["clave"])
+
+
+class PruebaOrdenDePrioridad(BaseForja):
+    """EL ORDEN LO DA EL TABLERO (D.51, 17 sep 2026, decision del fundador).
+
+    D.49 y D.50 sabian decir que NO. Lo que ninguna sabia decir es cual SI, y ese hueco
+    lo llenaba el orden de ORDEN_DE_LOTES.md, que es el orden en que los libros
+    LLEGARON y no el orden en que VALEN.
+    """
+
+    def _filas(self, **cambios):
+        base = [
+            {"lote": 4, "clave": "scott_radical_candor", "rama": "",
+             "estado": "CERRADO EN EXTRACCION", "dueno": "serial", "prioridad": None,
+             "fuera_de_campania": False, "candidatos_en_bandeja": 75,
+             "ultimo_capitulo": "cap_14"},
+            {"lote": 7, "clave": "grove_high_output",
+             "rama": "extraccion-grove_high_output", "estado": "EN CURSO",
+             "dueno": "grove_high_output", "prioridad": 1, "fuera_de_campania": False,
+             "candidatos_en_bandeja": 23, "ultimo_capitulo": "cap_03"},
+            {"lote": 9, "clave": "gerber_emyth", "rama": "extraccion-gerber_emyth",
+             "estado": "PAUSADO", "dueno": "NINGUNO", "prioridad": 2,
+             "fuera_de_campania": False, "candidatos_en_bandeja": 10,
+             "bandeja_medida_en": "otro arbol", "ultimo_capitulo": "cap_11"},
+            {"lote": 5, "clave": "marquet_turn_the_ship",
+             "rama": "extraccion-marquet_turn_the_ship", "estado": "PAUSADO",
+             "dueno": "NINGUNO", "prioridad": 3, "fuera_de_campania": False,
+             "candidatos_en_bandeja": 9, "bandeja_medida_en": "otro arbol",
+             "ultimo_capitulo": "cap_03"},
+            {"lote": 8, "clave": "bernerslee_bananas", "rama": "",
+             "estado": "SIN EMPEZAR", "dueno": "NINGUNO", "prioridad": 4,
+             "fuera_de_campania": True, "candidatos_en_bandeja": 0,
+             "ultimo_capitulo": ""},
+            {"lote": 6, "clave": "openstax_business_ethics", "rama": "",
+             "estado": "SIN EMPEZAR", "dueno": "NINGUNO", "prioridad": 5,
+             "fuera_de_campania": True, "candidatos_en_bandeja": 0,
+             "ultimo_capitulo": ""},
+        ]
+        for fila in base:
+            if fila["clave"] in cambios:
+                fila.update(cambios[fila["clave"]])
+        return base
+
+    # ------------------------------------------- mientras tiene libro, lo continua
+
+    def test_con_libro_propio_en_curso_le_toca_ese(self):
+        """D.50 releva AL CERRAR, no a mitad."""
+        from src import tablero
+        clave, _, _ = tablero.siguiente_por_prioridad("serial", self._filas())
+        self.assertEqual(clave, "scott_radical_candor")
+
+    # ------------------------------------- sin libro, manda la prioridad y no el lote
+
+    def test_caso_positivo_sin_libro_no_elige_y_nombra_el_relevo_que_falta(self):
+        """Es la parada util: NINGUNO, y dice cual necesita y que le falta."""
+        from src import tablero
+        filas = self._filas(scott_radical_candor={"estado": "INSERTADO",
+                                                  "dueno": "NINGUNO"})
+        clave, motivo, relevo = tablero.siguiente_por_prioridad("serial", filas)
+        self.assertIsNone(clave)
+        self.assertIsNotNone(relevo)
+        self.assertEqual(relevo["clave"], "gerber_emyth")
+        self.assertIn("no esta cosechada", motivo)
+
+    def test_caso_negativo_con_el_de_prioridad_2_cosechado_le_toca_ese(self):
+        from src import tablero
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            gerber_emyth={"estado": "COSECHADO"})
+        clave, motivo, _ = tablero.siguiente_por_prioridad("serial", filas)
+        self.assertEqual(clave, "gerber_emyth")
+        self.assertIn("cap_11", motivo)
+
+    def test_la_prioridad_manda_sobre_el_numero_de_lote(self):
+        """marquet es el lote 5 y gerber el 9, y gerber va ANTES por prioridad."""
+        from src import tablero
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            gerber_emyth={"estado": "COSECHADO"},
+            marquet_turn_the_ship={"estado": "COSECHADO"})
+        clave, _, _ = tablero.siguiente_por_prioridad("serial", filas)
+        self.assertEqual(clave, "gerber_emyth")
+
+    def test_caso_positivo_un_libro_fuera_de_campania_no_se_elige_nunca(self):
+        """Estan SIN EMPEZAR y sin dueño, asi que D.49 los dejaria pasar. D.51 no."""
+        from src import tablero
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            grove_high_output={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            gerber_emyth={"estado": "INSERTADO"},
+            marquet_turn_the_ship={"estado": "INSERTADO"})
+        clave, motivo, _ = tablero.siguiente_por_prioridad("serial", filas)
+        self.assertIsNone(clave)
+        self.assertIn("CIERRE DEL MUNDO 11", motivo)
+
+    # ------------------------------------------------- el cierre del mundo 11
+
+    # EL CORTE LO DECLARA EL FUNDADOR, NO LA PRIORIDAD (D.60, 21 sep 2026).
+    #
+    # Las dos pruebas que vivian aqui fijaban la cuenta vieja, la de los libros CON
+    # PRIORIDAD, que metia en el corte a gerber y a marquet. D.60 los deja fuera y
+    # condicionales, asi que esas dos pruebas median lo contrario de la regla.
+    #
+    # EL CORTE VA EXPLICITO EN CADA UNA: una prueba que lee config/frentes.json mide
+    # el fichero de hoy y no la regla, y esta casa ya pago ese precio dos veces.
+
+    CORTE = ["scott_radical_candor", "grove_high_output"]
+
+    def test_caso_negativo_falta_uno_del_corte_y_el_mundo_no_cierra(self):
+        from src import tablero
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            grove_high_output={"estado": "EN CURSO"})
+        completo, del_mundo, faltan = tablero.mundo_11_completo(
+            filas, corte=self.CORTE)
+        self.assertFalse(completo)
+        self.assertEqual(len(del_mundo), 2)
+        self.assertEqual([f["clave"] for f in faltan], ["grove_high_output"])
+
+    def test_caso_positivo_d60_una_bandeja_a_medias_no_retrasa_el_cierre(self):
+        """LA FIGURA ENTERA DE D.60, y es la que la cuenta vieja no dejaba pasar.
+
+        `gerber_emyth` y `marquet_turn_the_ship` siguen PAUSADOS con sus `19`
+        candidatos en bandeja, y el mundo se declara COMPLETO igual **porque no
+        estan en el corte**. Con la cuenta por prioridad esto salia `False`, y el
+        mundo 11 no podia cerrarse nunca sin minar dos libros enteros que la
+        campania decidio no pagar.
+        """
+        from src import tablero
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            grove_high_output={"estado": "INSERTADO", "dueno": "NINGUNO"})
+        completo, del_mundo, faltan = tablero.mundo_11_completo(
+            filas, corte=self.CORTE)
+        self.assertTrue(completo, "gerber y marquet no estan en el corte")
+        self.assertEqual(len(del_mundo), 2)
+        self.assertEqual(faltan, [])
+        # y los dos siguen ahi, con sus candidatos, sin haber bloqueado nada
+        pausados = [f for f in filas if f["estado"] == "PAUSADO"]
+        self.assertEqual(sorted(f["clave"] for f in pausados),
+                         ["gerber_emyth", "marquet_turn_the_ship"])
+
+    def test_el_corte_llega_del_fichero_y_no_de_la_prioridad(self):
+        """LA ESPECIE QUE D.60 CURA: `corte_definitivo` estaba escrito desde la
+        manana del 21 sep y **nadie lo leia**. Esto comprueba el cable, no su
+        contenido: que el corte se declare, y que sea el que la funcion usa cuando
+        no se le pasa ninguno."""
+        from src import tablero
+        declarado = tablero.corte_del_mundo()
+        self.assertTrue(declarado, "config/frentes.json no declara corte_definitivo")
+        _completo, del_mundo, _faltan = tablero.mundo_11_completo()
+        self.assertEqual(sorted(f["clave"] for f in del_mundo), sorted(declarado))
+
+    # --------------------------------------------- la guarda del arnes lo exige
+
+    def test_caso_positivo_la_guarda_tumba_un_encargo_que_elige_otro_libro(self):
+        from scripts import guarda_tablero
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            gerber_emyth={"estado": "COSECHADO"})
+        impiden = guarda_tablero.comprobar(
+            texto="LIBRO DE ESTA VUELTA: bernerslee_bananas",
+            linea="serial", filas=filas)
+        self.assertTrue(any("D.51" in m for m in impiden))
+        self.assertTrue(any("gerber_emyth" in m for m in impiden))
+
+    def test_caso_negativo_el_encargo_que_declara_el_que_toca_pasa(self):
+        from scripts import guarda_tablero
+        filas = self._filas(
+            scott_radical_candor={"estado": "INSERTADO", "dueno": "NINGUNO"},
+            gerber_emyth={"estado": "COSECHADO"})
+        # EL TITULO VA EN EL TEXTO desde D.58, como en un encargo de verdad: la
+        # cadencia se cuenta por numero de vuelta. Esta prueba mide D.51, no la
+        # cadencia. Se quedo sin el cuando se arreglaron las dos hermanas de
+        # PruebaGuardaDelTablero, y estuvo en rojo DOS vueltas hasta que el auditor
+        # de la ACTA 52 lo levanto como fallo tecnico repetido.
+        self.assertEqual(guarda_tablero.comprobar(
+            texto=("# ENCARGO DE LA VUELTA 53" + chr(10)
+                   + "LIBRO DE ESTA VUELTA: gerber_emyth"),
+            linea="serial", filas=filas), [])
+
+    # ----------------------------------------- lo declarado, contra el repo real
+
+    def test_el_orden_del_repo_lleva_los_seis_libros_con_su_motivo(self):
+        from src import tablero
+        libros = tablero.declaraciones()["orden_de_prioridad"]["libros"]
+        self.assertEqual(len(libros), 6)
+        for clave, dato in libros.items():
+            self.assertTrue(dato.get("motivo"), "%s sin motivo" % clave)
+
+    def test_el_tablero_del_repo_publica_la_prioridad_de_los_seis(self):
+        from src import tablero
+        con_prioridad = [f for f in tablero.libros() if f.get("prioridad")]
+        self.assertEqual(len(con_prioridad), 6)
+        fuera = [f["clave"] for f in con_prioridad if f.get("fuera_de_campania")]
+        self.assertEqual(len(fuera), 3)
+
+
+class PruebaGuardaDelTablero(BaseForja):
+    """EL ARNES COMPRUEBA AL ABRIR VUELTA, CONTRA EL TABLERO (D.49).
+
+    Y NO ADIVINA: exige que el encargo DECLARE su libro. Buscar la clave suelta dentro
+    del texto es la trampa que el tallado ya pago dos veces, porque un encargo nombra a
+    los frentes en su seccion de *lo que no se toca* y una guarda que lee menciones
+    **tumbaria la vuelta por decir que no los toca**.
+    """
+
+    def _filas(self):
+        return [
+            {"lote": 4, "clave": "scott_radical_candor", "rama": "",
+             "estado": "CERRADO EN EXTRACCION", "dueno": "serial",
+             "candidatos_en_bandeja": 75, "ultimo_capitulo": "cap_14"},
+            {"lote": 5, "clave": "marquet_turn_the_ship",
+             "rama": "extraccion-marquet_turn_the_ship", "estado": "PAUSADO",
+             "dueno": "NINGUNO", "candidatos_en_bandeja": 9,
+             "bandeja_medida_en": "otro arbol", "ultimo_capitulo": "cap_03"},
+            {"lote": 7, "clave": "grove_high_output",
+             "rama": "extraccion-grove_high_output", "estado": "EN CURSO",
+             "dueno": "grove_high_output", "candidatos_en_bandeja": 23,
+             "ultimo_capitulo": "cap_03"},
+        ]
+
+    def test_caso_positivo_un_encargo_que_declara_libro_de_otro_dueno_no_abre(self):
+        from scripts import guarda_tablero
+        impiden = guarda_tablero.comprobar(
+            texto="LIBRO DE ESTA VUELTA: grove_high_output",
+            linea="serial", filas=self._filas())
+        # Se mira POR REGLA y no por cuenta: desde D.51 un mismo encargo puede caer
+        # por dos motivos distintos (ese libro no es tuyo, y no es el que te toca), y
+        # una prueba que cuenta impedimentos se rompe cada vez que nace una regla.
+        self.assertTrue(any("D.49" in m and "grove_high_output" in m for m in impiden),
+                        impiden)
+
+    def test_caso_positivo_pausado_sin_cosechar_tampoco_abre(self):
+        from scripts import guarda_tablero
+        impiden = guarda_tablero.comprobar(
+            texto="LIBRO DE ESTA VUELTA: marquet_turn_the_ship",
+            linea="serial", filas=self._filas())
+        self.assertTrue(any("RELEVARLO ENTERO" in m for m in impiden), impiden)
+
+    def test_caso_negativo_el_libro_de_esta_linea_abre(self):
+        from scripts import guarda_tablero
+        # EL TITULO VA EN EL TEXTO desde D.58: la cadencia se cuenta por numero de
+        # vuelta, y un encargo de verdad siempre lo trae. Esta prueba mide D.49, no la
+        # cadencia, asi que se le da lo que un encargo real tendria.
+        self.assertEqual(guarda_tablero.comprobar(
+            texto=("# ENCARGO DE LA VUELTA 53" + chr(10)
+                   + "LIBRO DE ESTA VUELTA: scott_radical_candor"),
+            linea="serial", filas=self._filas()), [])
+
+    def test_mencionar_un_frente_no_tumba_la_vuelta(self):
+        """El encargo dice que NO los toca, y eso no puede ser lo que lo tumbe."""
+        from scripts import guarda_tablero
+        texto = (chr(10).join([
+            "# ENCARGO DE LA VUELTA 53",
+            "LIBRO DE ESTA VUELTA: scott_radical_candor",
+            "",
+            "## LO QUE NO SE TOCA",
+            "grove_high_output esta EN CURSO en su frente y marquet_turn_the_ship",
+            "y gerber_emyth quedan PAUSADOS. Ninguno es asunto de esta linea."]))
+        self.assertEqual(guarda_tablero.comprobar(
+            texto=texto, linea="serial", filas=self._filas()), [])
+
+    def test_la_declaracion_se_lee_con_la_decoracion_de_la_casa(self):
+        from scripts import guarda_tablero
+        for escrito in ("**LIBRO DE ESTA VUELTA:** `scott_radical_candor`",
+                        "> LIBRO DE ESTA VUELTA: scott_radical_candor",
+                        "libro de esta vuelta: scott_radical_candor"):
+            self.assertEqual(guarda_tablero.libro_declarado(escrito),
+                             "scott_radical_candor", escrito)
+
+    def test_caso_positivo_un_encargo_que_no_declara_libro_no_abre(self):
+        """Un silencio no es una declaracion: para eso existe NINGUNO."""
+        from scripts import guarda_tablero
+        impiden = guarda_tablero.comprobar(
+            texto="una vuelta cualquiera, sin decir sobre que trabaja",
+            linea="serial", filas=self._filas())
+        self.assertEqual(len(impiden), 1)
+        self.assertIn("NO DECLARA su libro", impiden[0])
+
+    def test_caso_negativo_ninguno_es_una_declaracion_valida(self):
+        from scripts import guarda_tablero
+        self.assertEqual(guarda_tablero.comprobar(
+            texto="LIBRO DE ESTA VUELTA: NINGUNO",
+            linea="serial", filas=self._filas()), [])
+
+    def test_caso_positivo_un_encargo_vacio_CON_PARADA_es_una_parada(self):
+        """DEFECTO MIO, cazado por el auditor de la ACTA 34 en su punto 5.
+
+        `AUDITOR_FORJA.md` 3 manda dejar el encargo VACIO al parar, y `D.49` exige que
+        el encargo declare su libro. **Mi guarda llamaba descuido a lo que era
+        cumplimiento**, y con eso ponia en rojo la suite entera cada vez que el bucle
+        paraba bien. Sigue siendo impedimento (la vuelta NO abre), y ahora dice por que.
+        """
+        from scripts import guarda_tablero
+        parada = os.path.join(self.taller, "PARA_ALEXIS.md")
+        comun.escribir_texto(parada, "el bucle se detiene")
+        impiden = guarda_tablero.comprobar(texto="", linea="serial",
+                                           filas=self._filas(), ruta_parada=parada)
+        self.assertEqual(len(impiden), 1)
+        self.assertIn("EL BUCLE ESTA PARADO", impiden[0])
+
+    def test_caso_negativo_un_encargo_vacio_SIN_parada_sigue_siendo_descuido(self):
+        """La otra mitad, y sin ella la de arriba no probaria nada."""
+        from scripts import guarda_tablero
+        impiden = guarda_tablero.comprobar(
+            texto="", linea="serial", filas=self._filas(),
+            ruta_parada=os.path.join(self.taller, "no_hay_parada.md"))
+        self.assertEqual(len(impiden), 1)
+        self.assertIn("NO DECLARA su libro", impiden[0])
+
+    def test_el_encargo_vivo_del_repo_declara_su_libro_O_HAY_PARADA(self):
+        """El invariante de verdad: o el encargo declara su libro, o el bucle esta
+        parado. Las dos cosas impiden abrir, y ninguna de las dos es un fallo."""
+        from scripts import guarda_tablero
+        self.assertTrue(
+            guarda_tablero.libro_declarado() is not None
+            or guarda_tablero.hay_parada(),
+            "docs/loop/PROMPT_SIGUIENTE.md sin 'LIBRO DE ESTA VUELTA:' y sin parada "
+            "que lo explique")
+
+
+class PruebaCreditoPorLinea(BaseForja):
+    """LA RACHA ES DE SU LINEA (D.48, 17 sep 2026, decision del fundador).
+
+    El 16 sep corrieron cuatro sesiones a la vez. Tres frentes nacieron de la rama
+    serial, se llevaron su `ACTA_AUDITOR.md` entero, y **el arnes les entrego cuatro
+    remedios de otra secuencia a cada uno**. El auditor del primero paro citando como
+    suyas **tres tandas de un libro que no era el suyo**.
+    """
+
+    def _registro(self, nombre="frente_de_prueba"):
+        return os.path.join(self.taller, "CREDITO_%s.jsonl" % nombre)
+
+    # ---------------------------------------------- de que linea es este arbol
+
+    def test_la_rama_de_insercion_es_la_linea_serial(self):
+        """Y se comprueba ANTES que el prefijo: `extraccion-mundo-11` tambien empieza
+        por `extraccion-`, y sin ese orden la serial seria un frente `mundo-11`."""
+        from src import credito
+        self.assertEqual(credito.linea_actual(rama=credito.RAMA_DE_INSERCION),
+                         credito.LINEA_SERIAL)
+
+    def test_una_rama_de_libro_es_su_libro(self):
+        from src import credito
+        self.assertEqual(
+            credito.linea_actual(rama="extraccion-gerber_emyth"), "gerber_emyth")
+
+    # ------------------------------------------------ nacer con la racha en cero
+
+    def test_caso_positivo_registro_sin_tandas_es_linea_recien_nacida(self):
+        """Un `nacimiento` escrito NO es una tanda: la linea no ha dictado todavia."""
+        from src import credito
+        sucesos = [{"tipo": "nacimiento", "linea": "x", "cita": "D.48"}]
+        self.assertFalse(credito.nacida(sucesos=sucesos))
+
+    def test_caso_positivo_sin_ningun_suceso_tampoco_ha_dictado_nada(self):
+        from src import credito
+        self.assertFalse(credito.nacida(sucesos=[]))
+
+    def test_caso_negativo_una_tanda_escrita_ya_es_una_linea_con_historia(self):
+        from src import credito
+        sucesos = [{"tipo": "tanda", "linea": "x", "especie": "REPORTE",
+                    "racha": "1 de 3", "cita": "ACTA 1"}]
+        self.assertTrue(credito.nacida(sucesos=sucesos))
+
+    # ------------------------------------------- la racha que cada especie declara
+
+    def test_la_ultima_linea_de_la_especie_es_la_que_manda(self):
+        from src import credito
+        sucesos = [
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "2 de 3", "cita": "A"},
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "3 de 3", "cita": "B"},
+        ]
+        self.assertEqual(credito.estado(sucesos=sucesos)["REPORTE"]["cuenta"], 3)
+
+    def test_caso_positivo_la_especie_en_su_tope_es_lo_que_para_el_bucle(self):
+        from src import credito
+        sucesos = [{"tipo": "tanda", "especie": "REPORTE", "racha": "3 de 3",
+                    "cita": "ACTA 31"}]
+        self.assertEqual([e for e, _ in credito.en_tope(sucesos=sucesos)], ["REPORTE"])
+
+    def test_caso_negativo_por_debajo_del_tope_no_para(self):
+        from src import credito
+        sucesos = [{"tipo": "tanda", "especie": "REPORTE", "racha": "2 de 3",
+                    "cita": "ACTA 30"}]
+        self.assertEqual(credito.en_tope(sucesos=sucesos), [])
+
+    def test_un_reinicio_del_fundador_pone_la_especie_a_cero(self):
+        """5.4 sigue entera: la reinicia una decision escrita, y va con su cita."""
+        from src import credito
+        sucesos = [
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "3 de 3",
+             "cita": "ACTA 31"},
+            {"tipo": "reinicio", "especie": "REPORTE", "racha": "0 de 3",
+             "cita": "docs/loop/paradas/2026-09-17-de-quien-es-la-racha-DECISION.md"},
+        ]
+        self.assertEqual(credito.estado(sucesos=sucesos)["REPORTE"]["cuenta"], 0)
+        self.assertEqual(credito.en_tope(sucesos=sucesos), [])
+
+    # ------------------------------------------------- el replay, que no se calla
+
+    def test_caso_positivo_el_replay_caza_una_racha_que_no_suma(self):
+        """Dos tandas con caida seguidas dan 2, y la que declare 1 se publica."""
+        from src import credito
+        sucesos = [
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3", "cae": True,
+             "cita": "ACTA 1", "_linea_del_fichero": 1},
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3", "cae": True,
+             "cita": "ACTA 2", "_linea_del_fichero": 2},
+        ]
+        discrepancias = credito.revisar(sucesos=sucesos)
+        self.assertEqual(len(discrepancias), 1)
+        self.assertEqual(discrepancias[0]["replay"], 2)
+        self.assertEqual(discrepancias[0]["declarada"], 1)
+
+    def test_caso_negativo_una_tanda_limpia_pone_el_contador_a_cero(self):
+        """D.38.1: seguidas significa consecutivas."""
+        from src import credito
+        sucesos = [
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3", "cae": True,
+             "cita": "ACTA 1", "_linea_del_fichero": 1},
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "0 de 3", "cae": False,
+             "cita": "ACTA 2", "_linea_del_fichero": 2},
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3", "cae": True,
+             "cita": "ACTA 3", "_linea_del_fichero": 3},
+        ]
+        self.assertEqual(credito.revisar(sucesos=sucesos), [])
+
+    def test_el_replay_no_acusa_a_la_historia_migrada(self):
+        """Sus reinicios viven en docs/loop/paradas/, no en el registro. Una guarda
+        que acusa de lo que no puede saber es ruido que se aprende a ignorar."""
+        from src import credito
+        sucesos = [
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3", "cae": True,
+             "cita": "ACTA 1", "migrado": True, "_linea_del_fichero": 1},
+            {"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3", "cae": True,
+             "cita": "ACTA 2", "migrado": True, "_linea_del_fichero": 2},
+        ]
+        self.assertEqual(credito.revisar(sucesos=sucesos), [])
+
+    # ------------------------------------------- lo que no se escribe sin su cita
+
+    def test_una_racha_sin_cita_no_se_escribe(self):
+        from src import credito
+        with self.assertRaises(credito.CreditoMalEscrito):
+            credito.anotar({"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3"},
+                           ruta_registro=self._registro())
+
+    def test_una_linea_ilegible_del_registro_no_se_salta_en_silencio(self):
+        from src import credito
+        comun.escribir_texto(self._registro(), "{esto no es json}" + chr(10))
+        with self.assertRaises(credito.CreditoMalEscrito):
+            credito.leer(ruta_registro=self._registro())
+
+    def test_lo_escrito_se_vuelve_a_leer_igual(self):
+        from src import credito
+        credito.anotar({"tipo": "tanda", "especie": "CLASE", "racha": "1 de 2",
+                        "cae": True, "cita": "ACTA 9", "vuelta": 9},
+                       linea="frente_de_prueba", ruta_registro=self._registro())
+        sucesos = credito.leer(ruta_registro=self._registro())
+        self.assertEqual(len(sucesos), 1)
+        self.assertEqual(sucesos[0]["especie"], "CLASE")
+        self.assertEqual(sucesos[0]["linea"], "frente_de_prueba")
+
+
+class PruebaHerenciaPorLinea(BaseForja):
+    """LA HERENCIA DE D.40 ES LA DE SU LINEA (D.48).
+
+    Esta es la caida entera: el arnes le entrego a cada frente `4 remedio(s)` del acta
+    de la linea de la que salio, y el auditor de `grove` paro por una racha que su
+    frente no habia corrido.
+    """
+
+    def setUp(self):
+        BaseForja.setUp(self)
+        self.acta = os.path.join(self.taller, "ACTA_AUDITOR.md")
+        comun.escribir_texto(self.acta, chr(10).join([
+            "# ACTA 31. VUELTA 32, la de la linea de la que sale el frente",
+            "",
+            "## 9.3. MIS REMEDIOS PARA EL SIGUIENTE",
+            "",
+            "| # | **REMEDIO** | como se comprueba |",
+            "|---:|---|---|",
+            "| **1** | **UNA COSA DE LA LINEA SERIAL** | mirandola |",
+            "| **2** | **OTRA COSA DE LA LINEA SERIAL** | mirandola |",
+            ""]))
+
+    def _con_linea(self, nombre):
+        anterior = os.environ.get("FORJA_LINEA")
+
+        def devolver():
+            if anterior is None:
+                os.environ.pop("FORJA_LINEA", None)
+            else:
+                os.environ["FORJA_LINEA"] = anterior
+
+        os.environ["FORJA_LINEA"] = nombre
+        self.addCleanup(devolver)
+
+    def test_caso_positivo_un_frente_recien_nacido_hereda_cero(self):
+        """Con las dos filas de remedios delante, y por eso lo dice en voz alta."""
+        from src import herencia
+        self._con_linea("libro_que_nunca_dicto_nada")
+        recibido = herencia.extraer(ruta_acta=self.acta)
+        self.assertEqual(recibido["items"], [])
+        self.assertTrue(any("RECIEN NACIDA" in a for a in recibido["avisos"]))
+
+    def test_el_aviso_nombra_la_linea_y_su_registro(self):
+        """Un arnes que entrega cero sin avisar es el defecto por la puerta de atras."""
+        from src import herencia
+        self._con_linea("libro_que_nunca_dicto_nada")
+        aviso = " ".join(herencia.extraer(ruta_acta=self.acta)["avisos"])
+        self.assertIn("libro_que_nunca_dicto_nada", aviso)
+        self.assertIn("CREDITO_libro_que_nunca_dicto_nada.jsonl", aviso)
+
+    def test_caso_negativo_la_linea_serial_sigue_heredando_lo_suyo(self):
+        """La serial tiene 31 tandas escritas: para ella no cambia nada."""
+        from src import credito, herencia
+        self._con_linea(credito.LINEA_SERIAL)
+        recibido = herencia.extraer(ruta_acta=self.acta)
+        self.assertEqual(len(recibido["items"]), 2)
+        self.assertFalse(any("RECIEN NACIDA" in a for a in recibido["avisos"]))
+
+    def test_en_un_arbol_donde_el_credito_NO_SE_USA_la_herencia_sigue_entera(self):
+        """EL DISCRIMINADOR NO ES 'ESTA LINEA NO TIENE FICHERO', y el banco del arnes
+        me lo tumbo con tres rojos.
+
+        En un arbol donde el registro de credito no se usa todavia, NINGUNA linea
+        tiene fichero, y con el discriminador malo D.40 dejaba de entregar nada **por
+        una ausencia que no significa nada**: el mismo defecto que D.40 vino a cerrar,
+        reintroducido por la puerta de atras.
+        """
+        from src import credito, herencia
+        anterior = credito.DIR_LOOP
+        credito.DIR_LOOP = os.path.join(self.taller, "sin_registros")
+        self.addCleanup(lambda: setattr(credito, "DIR_LOOP", anterior))
+        self._con_linea("una_linea_cualquiera")
+        self.assertEqual(credito.lineas_con_registro(), [])
+        recibido = herencia.extraer(ruta_acta=self.acta)
+        self.assertEqual(len(recibido["items"]), 2,
+                         "sin registro en NINGUNA linea, D.40 tiene que entregar lo "
+                         "que el acta escribe")
+
+    def test_la_linea_serial_del_repo_tiene_su_registro_escrito(self):
+        """Si esto cae, la serial se comporta como un frente recien nacido y deja de
+        heredar sus propios remedios, que es peor que el defecto que D.48 arregla."""
+        from src import credito
+        self.assertTrue(credito.nacida(credito.LINEA_SERIAL),
+                        "docs/loop/CREDITO_serial.jsonl sin tandas: la migracion de "
+                        "D.48 no esta en el arbol")
+
+
 class PruebaTestigoDeGuardas(BaseForja):
     """UNA CIFRA VALE EN EL INSTANTE DEL SELLO (D.38.3 ensanchada, 16 sep 2026).
 
@@ -3559,7 +5182,14 @@ def main():
              PruebaAnotacionDeclarada,
              PruebaVigenciaNoEsGuarda,
              PruebaCerrojoYCenso,
-             PruebaTestigoDeGuardas]
+             PruebaTestigoDeGuardas, PruebaCreditoPorLinea,
+             PruebaHerenciaPorLinea, PruebaTableroDeFrentes,
+             PruebaGuardaDelTablero, PruebaOrdenDePrioridad,
+             PruebaDatasetEsElCatalogo, PruebaCitaEsReferencia,
+             PruebaColaDeDoctrina, PruebaTablaDeCierre,
+             PruebaPasoRetiradoDelCampo, PruebaExencionDeMomento,
+             PruebaDeudaNoBloquea, PruebaVeredictoYArista,
+             PruebaRegimenLigero, PruebaCifraDerivada]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -3615,6 +5245,36 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaCerrojoYCenso)._tests))
     print("  el testigo de guardas al sellar (D.38.3, 16 sep): %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaTestigoDeGuardas)._tests))
+    print("  D.48, la racha es de su linea, y el credito vive por linea: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaCreditoPorLinea)._tests))
+    print("  D.48, la herencia de D.40 es la de SU linea: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaHerenciaPorLinea)._tests))
+    print("  D.49 y D.50, un libro un dueño a la vez y el relevo: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaTableroDeFrentes)._tests))
+    print("  D.49, la guarda del tablero al abrir vuelta: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaGuardaDelTablero)._tests))
+    print("  D.51, el orden lo da el tablero, y el corte del mundo 11: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaOrdenDePrioridad)._tests))
+    print("  D.56, dataset es el catalogo y el cerrojo vive fuera: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaDatasetEsElCatalogo)._tests))
+    print("  D.56, la cita del credito es referencia y no resultado: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaCitaEsReferencia)._tests))
+    print("  D.56, la cola de doctrina vive en el tablero: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaColaDeDoctrina)._tests))
+    print("  D.52, toda tabla del reporte declara su instrumento: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaTablaDeCierre)._tests))
+    print("  D.54, un paso retirado se retira del campo: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaPasoRetiradoDelCampo)._tests))
+    print("  la exencion del censo es de MOMENTO y no de fichero: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaExencionDeMomento)._tests))
+    print("  D.55, la deuda no bloquea la produccion: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaDeudaNoBloquea)._tests))
+    print("  D.53 en el codigo: el veredicto y la arista son puertas distintas: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaVeredictoYArista)._tests))
+    print("  D.58, dos regimenes y la cadencia que no depende de nadie: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaRegimenLigero)._tests))
+    print("  D.59, la cifra derivada la calcula el instrumento: %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaCifraDerivada)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

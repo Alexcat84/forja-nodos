@@ -1,0 +1,11 @@
+$ python scripts/tabla_de_cierre.py --escribir
+poblacion: dataset/nodos.jsonl entero, libro grove_high_output
+criterio : un nodo sale de un capitulo si cita grove_high_output/<cap>.md
+
+| # | tarea | como cerro |
+|---:|---|---|
+| `1` | los registros de la `ACTA 60` recogidos sin reabrirlos, con la plantilla de cierre corregida | **CERRADA en `62.1`** |
+| `2` | publicar la cuenta del libro por capitulo (`D.59`) | **CERRADA en `62.2`**: `18` capitulos, `92` candidatos, `643` pasos, `15` con candidato y `3` que dieron cero, identica a la del auditor |
+| `3` | reescribir el tablero y declarar su diff | **CERRADA en `62.3`**: cero diff, el `90` a `91` ya venia puesto por el arnes y commiteado en la apertura |
+| `4` | un solo informe de aduana, en primer plano | **CERRADA en `62.4`**: `detectar_arreglar_fallo_etapa_menor_valor`, `579` s, `BLOQUEARIA` con `1` vecino, leido y descartado |
+| `5` | el cierre | **CERRADA en `62.5`**: estado recomputado (`346`/`740`/`1`/`91`), guardas en VERDE, `0` capitulos y `0` candidatos del tramo, `0` discutibles marcados por la regla numerica |

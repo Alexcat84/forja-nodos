@@ -1,0 +1,51 @@
+{
+  "id": "equilibrar_capacidad_personal_inventario_plazo",
+  "titulo": "Equilibrar capacidad de equipo, personal e inventario contra el plazo de entrega",
+  "dominio": "produccion",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [],
+  "fuentes": [
+    {
+      "clave": "grove_high_output",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "denominaciones": {
+    "nombre_largo": "Las cuatro salidas del conflicto irreconciliable, y el intercambio entre capacidad de equipo, mano de obra e inventario",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "trade-offs"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "manpower"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "capital equipment"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "most cost-effective"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando dos pasos del flujo te piden estar en dos sitios a la vez, y parece que el conflicto no tiene salida.",
+  "entregable_esperado": "Las cuatro salidas con su coste apuntado al lado, el intercambio entre capacidad de equipo, mano de obra e inventario equilibrado contra el plazo de entrega, y la eleccion de la forma mas rentable de desplegar tus recursos reducida a un conjunto de relaciones cuantificables.",
+  "pasos_accionables": [
+    "Cuando dos pasos te choquen a la vez, no lo des por irreconciliable: pon delante las salidas que el libro nombra una a una.",
+    "Considera especializar al personal, que en el caso del libro es contratar uno que cueza huevos, uno que haga tostadas, uno que sirva cafe y uno que supervise la operacion, y apunta su coste: crea una cantidad inmensa de gasto de estructura, y probablemente sale demasiado caro.",
+    "Considera pedir ayuda al de al lado, que meta tu pan mientras tu arrancas tu huevo, y apunta su coste: cuando dependes de otro, los resultados son menos predecibles.",
+    "Considera anadir equipo, otro tostador, y apunta su coste: es una adicion cara de bien de capital.",
+    "Considera tener el equipo corriendo sin parar para acumular inventario de producto terminado, tirando lo que no puedas usar pero teniendo acceso inmediato a producto, y apunta su coste: eso es desperdicio, y tambien puede salir demasiado caro.",
+    "Intercambia entonces las tres piezas entre si, que son capacidad de equipo, mano de obra e inventario, y equilibralas contra el plazo de entrega.",
+    "Busca la forma mas rentable de desplegar tus recursos, contando con que hay una respuesta correcta: la que te da el mejor plazo de entrega y la mejor calidad de producto al coste mas bajo posible.",
+    "Reduce tu entendimiento de esos intercambios a un conjunto de relaciones cuantificables, sin llegar al cronometro ni al calculo exacto en terminos matematicos: lo que importa es el razonamiento que te obligas a hacer para entender como se relacionan las partes de tu proceso."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_02.md, unidad Cap. 1, titulo textual The Basics of Production: Delivering a Breakfast (or a College Graduate, or a Compiler, or a Convicted Criminal...). Sale de la PIEZA P7 de la frontera publicada en la vuelta 1 del frente, L57 a L61, 365 palabras. FRONTERA DENTRO DEL NODO: pasos 1 y 2 de L57; pasos 3, 4, 5 y 6 de L59; pasos 7 y 8 de L61. POR QUE ES PROCEDIMIENTO, y es el tramo mas rico de la unidad: el inventario del libro es de MEDIOS y esta nombrado uno a uno, cada uno con su coste escrito (turn your personnel into specialists... but that creates an immense amount of overhead; ask the waiter in line next to you to help out... but the results are likely to be less predictable; you could add another toaster, but this becomes an expensive addition of capital equipment; you could run the toaster continuously and build up an inventory... that means waste). Y el criterio no es un adjetivo de adecuacion: es the most cost-effective way to deploy your resources, con su vara escrita (the best delivery time and product quality at the lowest possible cost). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: NO escribo cuanto inventario ni cuanta capacidad de mas, porque el libro dice expresamente que no vas a usar un cronometro ni a calcular el intercambio exacto; NO escribo quien aprueba el gasto, que seria puente de la especie responsable; NO escribo en que soporte se apunta el coste de cada salida. El paso 8 se queda donde el libro lo deja: en el razonamiento, no en la hoja de calculo. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: el paso 1 dice no lo des por irreconciliable, y eso es casi una postura. Lo sostengo porque el libro lo escribe como el arranque del procedimiento (Your conflict is seemingly irreconcilable, but it really isnt) y porque sin el la lista de cuatro salidas no tiene disparador. Si cae, cae DENTRO de mi marcado."
+}

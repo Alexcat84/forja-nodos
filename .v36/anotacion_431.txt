@@ -1,0 +1,11 @@
+$ python forja.py anotar --linea 431 --anade "CORRECCION DECLARADA ..." --razon "..."
+ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+  sede : bitacora/VEREDICTOS.jsonl
+  linea: 431
+  veredicto: CONTINUA (NO se toca)
+  par      : conversar_historia_vida_descubrir_motivadores contra desplegar_tres_conversaciones_carrera
+  la razon vieja SIGUE ENTERA: 416 caracteres, ninguno borrado
+  se aniaden 696 caracteres al final de la razon
+  lineas de la bitacora tocadas: 1 (la 431). Las otras 432, intactas.
+
+ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 431.

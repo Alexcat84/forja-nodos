@@ -1,0 +1,10 @@
+=== ANTES: como esta el arbol AHORA, en mi fase ciega ===
+credito.lineas_con_registro() : []
+credito.nacida(LINEA_SERIAL)  : False
+
+=== DESPUES: con un registro de JUGUETE escrito por mi ===
+credito.lineas_con_registro() : ['serial']
+credito.nacida(LINEA_SERIAL)  : True
+items para una linea RECIEN NACIDA : 0 (el banco espera 0)
+avisos dicen RECIEN NACIDA         : True
+el aviso nombra la linea           : True

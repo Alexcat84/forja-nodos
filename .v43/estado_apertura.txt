@@ -1,0 +1,14 @@
+poblacion: el arbol entero, sin filtrar
+dataset/nodos.jsonl                        : 345 lineas
+bitacora/VEREDICTOS.jsonl                  : 729 lineas
+config/pares_mutuos.jsonl                  : 1 lineas
+cuarentena/grove_high_output               : 23
+cuarentena/_insertados/grove_high_output   : 0
+cuarentena/scott_radical_candor            : 0
+cuarentena/_insertados/scott_radical_candor: 142
+cuarentena/gerber_emyth                    : 0
+cuarentena/_insertados/gerber_emyth        : 0
+cuarentena/marquet_turn_the_ship           : 3
+cuarentena/_insertados/marquet_turn_the_ship: 0
+la bandeja de grove por capitulo           : cap_01 1, cap_02 7, cap_03 15
+nodos de grove_high_output en el grafo     : 0

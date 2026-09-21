@@ -1,0 +1,6 @@
+$ python .v34/estado.py
+poblacion: el arbol entero, sin filtrar
+dataset/nodos.jsonl                     : 282 nodos
+bitacora/VEREDICTOS.jsonl               : 410 lineas
+cuarentena/scott_radical_candor         : 63
+cuarentena/_insertados/scott_radical_candor: 79

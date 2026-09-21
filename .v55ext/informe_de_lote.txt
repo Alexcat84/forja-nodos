@@ -1,0 +1,1056 @@
+INICIO 2026-09-20T14:35:25-04:00
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 74
+poblacion del barrido       : 423   (346 del grafo mas 77 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 14
+  BLOQUEARIAN esperando veredicto  : 60   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 294
+  por candidato bloqueado          : menor 1, mediana 5, mayor 12
+  que señal levanta cada vecindad  : familia_id 14, paso_contra_nodo 17, similitud_texto 275
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] acumular_asuntos_importantes_fichero_espera   (acumular_asuntos_importantes_fichero_espera.json)
+    vecino tomar_notas_copia_guion_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.508 | familia_id 0.000 | paso_contra_nodo 0.562
+      paso 1 del candidato contra paso 1 de tomar_notas_copia_guion_reunion_individual
+    vecino alentar_asuntos_corazon_vigilar_final_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.498 | familia_id 0.100 | paso_contra_nodo 0.446
+      paso 3 del candidato contra paso 7 de alentar_asuntos_corazon_vigilar_final_reunion
+    vecino conducir_reunion_individual_telefono_distancia  [levantada por: similitud_texto]
+      similitud_texto 0.491 | familia_id 0.000 | paso_contra_nodo 0.451
+      paso 3 del candidato contra paso 4 de conducir_reunion_individual_telefono_distancia
+    vecino facilitar_expresion_subordinado_pregunta_mas  [levantada por: similitud_texto]
+      similitud_texto 0.484 | familia_id 0.000 | paso_contra_nodo 0.437
+      paso 3 del candidato contra paso 4 de facilitar_expresion_subordinado_pregunta_mas
+    vecino programar_reunion_individual_cadena  [levantada por: similitud_texto]
+      similitud_texto 0.432 | familia_id 0.000 | paso_contra_nodo 0.438
+      paso 3 del candidato contra paso 5 de programar_reunion_individual_cadena
+    vecino preparar_guion_reunion_individual_subordinado  [levantada por: similitud_texto]
+      similitud_texto 0.380 | familia_id 0.000 | paso_contra_nodo 0.433
+      paso 1 del candidato contra paso 3 de preparar_guion_reunion_individual_subordinado
+
+[BLOQUEARIA] agrupar_interrupciones_subordinados_reuniones_regulares   (agrupar_interrupciones_subordinados_reuniones_regulares.json)
+    vecino sostener_contacto_oferta_aceptacion  [levantada por: paso_contra_nodo]
+      similitud_texto 0.094 | familia_id 0.000 | paso_contra_nodo 0.700
+      paso 4 del candidato contra paso 3 de sostener_contacto_oferta_aceptacion
+    vecino agendar_cuidados_propios_cumplirlos  [levantada por: paso_contra_nodo]
+      similitud_texto 0.129 | familia_id 0.000 | paso_contra_nodo 0.615
+      paso 4 del candidato contra paso 4 de agendar_cuidados_propios_cumplirlos
+    vecino nombrar_delegados_amigos_casa  [levantada por: paso_contra_nodo]
+      similitud_texto 0.127 | familia_id 0.000 | paso_contra_nodo 0.609
+      paso 4 del candidato contra paso 4 de nombrar_delegados_amigos_casa
+    vecino llevar_inventario_proyectos_discrecionales  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.000 | paso_contra_nodo 0.478
+      paso 1 del candidato contra paso 1 de llevar_inventario_proyectos_discrecionales
+    vecino preparar_respuestas_estandar_interrupciones_repetidas  [levantada por: similitud_texto]
+      similitud_texto 0.472 | familia_id 0.111 | paso_contra_nodo 0.417
+      paso 1 del candidato contra paso 1 de preparar_respuestas_estandar_interrupciones_repetidas
+    vecino canalizar_interrupciones_cartel_hora_oficina  [levantada por: similitud_texto]
+      similitud_texto 0.403 | familia_id 0.111 | paso_contra_nodo 0.452
+      paso 1 del candidato contra paso 8 de canalizar_interrupciones_cartel_hora_oficina
+    vecino buscar_regularidad_bloques_iguales_trabajo_mando  [levantada por: similitud_texto]
+      similitud_texto 0.380 | familia_id 0.000 | paso_contra_nodo 0.415
+      paso 1 del candidato contra paso 1 de buscar_regularidad_bloques_iguales_trabajo_mando
+    vecino identificar_paso_limitante_jornada_desfases  [levantada por: similitud_texto]
+      similitud_texto 0.351 | familia_id 0.000 | paso_contra_nodo 0.377
+      paso 4 del candidato contra paso 1 de identificar_paso_limitante_jornada_desfases
+
+[BLOQUEARIA] agrupar_tareas_semejantes_aprovechar_preparacion   (agrupar_tareas_semejantes_aprovechar_preparacion.json)
+    vecino buscar_regularidad_bloques_iguales_trabajo_mando  [levantada por: paso_contra_nodo]
+      similitud_texto 0.294 | familia_id 0.000 | paso_contra_nodo 0.718
+      paso 1 del candidato contra paso 1 de buscar_regularidad_bloques_iguales_trabajo_mando
+    vecino llevar_inventario_proyectos_discrecionales  [levantada por: similitud_texto]
+      similitud_texto 0.367 | familia_id 0.000 | paso_contra_nodo 0.444
+      paso 2 del candidato contra paso 5 de llevar_inventario_proyectos_discrecionales
+    vecino decir_no_trabajo_excede_capacidad  [levantada por: similitud_texto]
+      similitud_texto 0.358 | familia_id 0.000 | paso_contra_nodo 0.440
+      paso 2 del candidato contra paso 9 de decir_no_trabajo_excede_capacidad
+    vecino identificar_paso_limitante_jornada_desfases  [levantada por: similitud_texto]
+      similitud_texto 0.409 | familia_id 0.000 | paso_contra_nodo 0.414
+      paso 6 del candidato contra paso 4 de identificar_paso_limitante_jornada_desfases
+    vecino supervisar_decision_delegada_preguntas_concretas  [levantada por: similitud_texto]
+      similitud_texto 0.363 | familia_id 0.000 | paso_contra_nodo 0.394
+      paso 3 del candidato contra paso 4 de supervisar_decision_delegada_preguntas_concretas
+
+[BLOQUEARIA] alentar_asuntos_corazon_vigilar_final_reunion   (alentar_asuntos_corazon_vigilar_final_reunion.json)
+    vecino fijar_duracion_lugar_reunion_individual  [levantada por: paso_contra_nodo]
+      similitud_texto 0.324 | familia_id 0.100 | paso_contra_nodo 0.612
+      paso 1 del candidato contra paso 3 de fijar_duracion_lugar_reunion_individual
+    vecino conducir_reunion_individual_telefono_distancia  [levantada por: similitud_texto]
+      similitud_texto 0.466 | familia_id 0.100 | paso_contra_nodo 0.529
+      paso 1 del candidato contra paso 1 de conducir_reunion_individual_telefono_distancia
+    vecino programar_reunion_individual_cadena  [levantada por: similitud_texto]
+      similitud_texto 0.472 | familia_id 0.111 | paso_contra_nodo 0.516
+      paso 1 del candidato contra paso 1 de programar_reunion_individual_cadena
+    vecino tomar_notas_copia_guion_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.510 | familia_id 0.091 | paso_contra_nodo 0.500
+      paso 5 del candidato contra paso 2 de tomar_notas_copia_guion_reunion_individual
+    vecino preparar_guion_reunion_individual_subordinado  [levantada por: similitud_texto]
+      similitud_texto 0.380 | familia_id 0.100 | paso_contra_nodo 0.503
+      paso 1 del candidato contra paso 1 de preparar_guion_reunion_individual_subordinado
+    vecino acumular_asuntos_importantes_fichero_espera  [levantada por: similitud_texto]
+      similitud_texto 0.499 | familia_id 0.100 | paso_contra_nodo 0.446
+      paso 7 del candidato contra paso 3 de acumular_asuntos_importantes_fichero_espera
+    vecino facilitar_expresion_subordinado_pregunta_mas  [levantada por: similitud_texto]
+      similitud_texto 0.432 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 2 del candidato contra paso 3 de facilitar_expresion_subordinado_pregunta_mas
+
+[BLOQUEARIA] anunciar_decision_inesperada_reconvocar_reunion   (anunciar_decision_inesperada_reconvocar_reunion.json)
+    vecino cortar_discusion_libre_momento_justo  [levantada por: similitud_texto]
+      similitud_texto 0.405 | familia_id 0.000 | paso_contra_nodo 0.526
+      paso 7 del candidato contra paso 5 de cortar_discusion_libre_momento_justo
+    vecino zanjar_seis_preguntas_decision_adelantado  [levantada por: similitud_texto]
+      similitud_texto 0.366 | familia_id 0.111 | paso_contra_nodo 0.495
+      paso 7 del candidato contra paso 9 de zanjar_seis_preguntas_decision_adelantado
+    vecino contestar_dos_preguntas_direccion_objetivos  [levantada por: similitud_texto]
+      similitud_texto 0.376 | familia_id 0.000 | paso_contra_nodo 0.448
+      paso 6 del candidato contra paso 5 de contestar_dos_preguntas_direccion_objetivos
+    vecino tomar_mando_reunion_pares_presidente_ausente  [levantada por: similitud_texto]
+      similitud_texto 0.359 | familia_id 0.100 | paso_contra_nodo 0.441
+      paso 8 del candidato contra paso 2 de tomar_mando_reunion_pares_presidente_ausente
+    vecino vencer_sindrome_grupo_pares_autoconfianza  [levantada por: similitud_texto]
+      similitud_texto 0.441 | familia_id 0.000 | paso_contra_nodo 0.418
+      paso 8 del candidato contra paso 5 de vencer_sindrome_grupo_pares_autoconfianza
+    vecino definir_entorno_grupo_clientes_proveedores_competidores  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.431
+      paso 4 del candidato contra paso 3 de definir_entorno_grupo_clientes_proveedores_competidores
+    vecino dirigir_reunion_decision  [levantada por: familia_id]
+      similitud_texto 0.171 | familia_id 0.333 | paso_contra_nodo 0.420
+      paso 4 del candidato contra paso 10 de dirigir_reunion_decision
+    vecino ejercer_poder_posicion_etapa_decision_clara  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.100 | paso_contra_nodo 0.415
+      paso 3 del candidato contra paso 5 de ejercer_poder_posicion_etapa_decision_clara
+
+[BLOQUEARIA] archivar_indicadores_resolver_problemas   (archivar_indicadores_resolver_problemas.json)
+    vecino construir_indicador_tendencia_patron  [levantada por: similitud_texto]
+      similitud_texto 0.384 | familia_id 0.143 | paso_contra_nodo 0.420
+      paso 2 del candidato contra paso 3 de construir_indicador_tendencia_patron
+    vecino revisar_tres_preguntas_valor_carrera  [levantada por: similitud_texto]
+      similitud_texto 0.369 | familia_id 0.000 | paso_contra_nodo 0.414
+      paso 2 del candidato contra paso 1 de revisar_tres_preguntas_valor_carrera
+    vecino vencer_sindrome_grupo_pares_autoconfianza  [levantada por: similitud_texto]
+      similitud_texto 0.364 | familia_id 0.000 | paso_contra_nodo 0.405
+      paso 1 del candidato contra paso 5 de vencer_sindrome_grupo_pares_autoconfianza
+    vecino cerrar_brecha_dos_preguntas_estrategia  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.393
+      paso 4 del candidato contra paso 6 de cerrar_brecha_dos_preguntas_estrategia
+
+[BLOQUEARIA] buscar_actividad_alta_palanca_tres_vias   (buscar_actividad_alta_palanca_tres_vias.json)
+    vecino subir_productividad_gerencial_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.536 | familia_id 0.222 | paso_contra_nodo 0.519
+      paso 1 del candidato contra paso 4 de subir_productividad_gerencial_tres_vias
+    vecino empujar_persona_reunion_direccion_preferida  [levantada por: similitud_texto]
+      similitud_texto 0.444 | familia_id 0.000 | paso_contra_nodo 0.420
+      paso 2 del candidato contra paso 1 de empujar_persona_reunion_direccion_preferida
+    vecino reunir_informacion_gerencial_vias_variadas  [levantada por: similitud_texto]
+      similitud_texto 0.432 | familia_id 0.100 | paso_contra_nodo 0.428
+      paso 4 del candidato contra paso 4 de reunir_informacion_gerencial_vias_variadas
+    vecino escalonar_fuentes_informacion_gerencial  [levantada por: similitud_texto]
+      similitud_texto 0.394 | familia_id 0.000 | paso_contra_nodo 0.428
+      paso 2 del candidato contra paso 3 de escalonar_fuentes_informacion_gerencial
+    vecino elegir_momento_actividad_palanca_maxima  [levantada por: similitud_texto]
+      similitud_texto 0.418 | familia_id 0.222 | paso_contra_nodo 0.417
+      paso 2 del candidato contra paso 1 de elegir_momento_actividad_palanca_maxima
+    vecino programar_visita_area_observar_despachar  [levantada por: similitud_texto]
+      similitud_texto 0.413 | familia_id 0.000 | paso_contra_nodo 0.380
+      paso 3 del candidato contra paso 3 de programar_visita_area_observar_despachar
+    vecino transmitir_objetivos_prioridades_preferencias  [levantada por: similitud_texto]
+      similitud_texto 0.402 | familia_id 0.000 | paso_contra_nodo 0.366
+      paso 3 del candidato contra paso 4 de transmitir_objetivos_prioridades_preferencias
+
+[BLOQUEARIA] buscar_regularidad_bloques_iguales_trabajo_mando   (buscar_regularidad_bloques_iguales_trabajo_mando.json)
+    vecino agrupar_tareas_semejantes_aprovechar_preparacion  [levantada por: paso_contra_nodo]
+      similitud_texto 0.292 | familia_id 0.000 | paso_contra_nodo 0.718
+      paso 1 del candidato contra paso 1 de agrupar_tareas_semejantes_aprovechar_preparacion
+    vecino preparar_respuestas_estandar_interrupciones_repetidas  [levantada por: similitud_texto]
+      similitud_texto 0.396 | familia_id 0.000 | paso_contra_nodo 0.543
+      paso 1 del candidato contra paso 1 de preparar_respuestas_estandar_interrupciones_repetidas
+    vecino agrupar_interrupciones_subordinados_reuniones_regulares  [levantada por: similitud_texto]
+      similitud_texto 0.375 | familia_id 0.000 | paso_contra_nodo 0.417
+      paso 6 del candidato contra paso 2 de agrupar_interrupciones_subordinados_reuniones_regulares
+    vecino llevar_inventario_proyectos_discrecionales  [levantada por: similitud_texto]
+      similitud_texto 0.361 | familia_id 0.000 | paso_contra_nodo 0.374
+      paso 5 del candidato contra paso 5 de llevar_inventario_proyectos_discrecionales
+
+[BLOQUEARIA] canalizar_interrupciones_cartel_hora_oficina   (canalizar_interrupciones_cartel_hora_oficina.json)
+    vecino agrupar_interrupciones_subordinados_reuniones_regulares  [levantada por: similitud_texto]
+      similitud_texto 0.408 | familia_id 0.111 | paso_contra_nodo 0.422
+      paso 8 del candidato contra paso 2 de agrupar_interrupciones_subordinados_reuniones_regulares
+
+[ENTRARIA] casar_flujo_fabricacion_flujo_ventas   (casar_flujo_fabricacion_flujo_ventas.json)
+
+[BLOQUEARIA] cerrar_brecha_dos_preguntas_estrategia   (cerrar_brecha_dos_preguntas_estrategia.json)
+    vecino preguntar_seguimiento_hallar_huecos  [levantada por: paso_contra_nodo]
+      similitud_texto 0.265 | familia_id 0.000 | paso_contra_nodo 0.645
+      paso 3 del candidato contra paso 11 de preguntar_seguimiento_hallar_huecos
+    vecino responder_tres_preguntas_vocacion_directiva  [levantada por: paso_contra_nodo]
+      similitud_texto 0.225 | familia_id 0.111 | paso_contra_nodo 0.628
+      paso 3 del candidato contra paso 3 de responder_tres_preguntas_vocacion_directiva
+    vecino contestar_dos_preguntas_direccion_objetivos  [levantada por: similitud_texto, paso_contra_nodo]
+      similitud_texto 0.431 | familia_id 0.250 | paso_contra_nodo 0.626
+      paso 2 del candidato contra paso 2 de contestar_dos_preguntas_direccion_objetivos
+    vecino preparar_preguntas_entrevista_antemano  [levantada por: paso_contra_nodo]
+      similitud_texto 0.126 | familia_id 0.125 | paso_contra_nodo 0.614
+      paso 4 del candidato contra paso 3 de preparar_preguntas_entrevista_antemano
+    vecino planificar_tres_pasos_demanda_estado_brecha  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.100 | paso_contra_nodo 0.545
+      paso 2 del candidato contra paso 6 de planificar_tres_pasos_demanda_estado_brecha
+    vecino examinar_demanda_entorno_dos_marcos_temporales  [levantada por: similitud_texto]
+      similitud_texto 0.399 | familia_id 0.100 | paso_contra_nodo 0.454
+      paso 4 del candidato contra paso 4 de examinar_demanda_entorno_dos_marcos_temporales
+    vecino determinar_estado_presente_capacidades_proyectos_merma  [levantada por: similitud_texto]
+      similitud_texto 0.384 | familia_id 0.000 | paso_contra_nodo 0.451
+      paso 4 del candidato contra paso 4 de determinar_estado_presente_capacidades_proyectos_merma
+    vecino examinar_entorno_expectativas_tecnologia_proveedores_grupos  [levantada por: similitud_texto]
+      similitud_texto 0.449 | familia_id 0.000 | paso_contra_nodo 0.418
+      paso 3 del candidato contra paso 5 de examinar_entorno_expectativas_tecnologia_proveedores_grupos
+    vecino archivar_indicadores_resolver_problemas  [levantada por: similitud_texto]
+      similitud_texto 0.351 | familia_id 0.000 | paso_contra_nodo 0.431
+      paso 4 del candidato contra paso 3 de archivar_indicadores_resolver_problemas
+    vecino cortar_discusion_libre_momento_justo  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.423
+      paso 5 del candidato contra paso 2 de cortar_discusion_libre_momento_justo
+    vecino definir_entorno_grupo_clientes_proveedores_competidores  [levantada por: similitud_texto]
+      similitud_texto 0.417 | familia_id 0.000 | paso_contra_nodo 0.393
+      paso 7 del candidato contra paso 3 de definir_entorno_grupo_clientes_proveedores_competidores
+
+[BLOQUEARIA] clasificar_trabajo_proceso_montaje_prueba   (clasificar_trabajo_proceso_montaje_prueba.json)
+    vecino preferir_inspeccion_proceso_prueba_destructiva  [levantada por: similitud_texto]
+      similitud_texto 0.372 | familia_id 0.250 | paso_contra_nodo 0.461
+      paso 5 del candidato contra paso 6 de preferir_inspeccion_proceso_prueba_destructiva
+
+[ENTRARIA] conducir_etapas_modelo_ideal_decision   (conducir_etapas_modelo_ideal_decision.json)
+
+[BLOQUEARIA] conducir_reunion_individual_telefono_distancia   (conducir_reunion_individual_telefono_distancia.json)
+    vecino tomar_notas_copia_guion_reunion_individual  [levantada por: similitud_texto, paso_contra_nodo]
+      similitud_texto 0.474 | familia_id 0.222 | paso_contra_nodo 0.675
+      paso 3 del candidato contra paso 2 de tomar_notas_copia_guion_reunion_individual
+    vecino preguntar_conducir_reunion_individual  [levantada por: familia_id]
+      similitud_texto 0.077 | familia_id 0.500 | paso_contra_nodo 0.395
+      paso 4 del candidato contra paso 7 de preguntar_conducir_reunion_individual
+    vecino acumular_asuntos_importantes_fichero_espera  [levantada por: similitud_texto]
+      similitud_texto 0.500 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 5 del candidato contra paso 3 de acumular_asuntos_importantes_fichero_espera
+    vecino programar_reunion_individual_cadena  [levantada por: similitud_texto]
+      similitud_texto 0.476 | familia_id 0.286 | paso_contra_nodo 0.474
+      paso 4 del candidato contra paso 4 de programar_reunion_individual_cadena
+    vecino alentar_asuntos_corazon_vigilar_final_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.462 | familia_id 0.100 | paso_contra_nodo 0.441
+      paso 5 del candidato contra paso 1 de alentar_asuntos_corazon_vigilar_final_reunion
+    vecino facilitar_expresion_subordinado_pregunta_mas  [levantada por: similitud_texto]
+      similitud_texto 0.416 | familia_id 0.000 | paso_contra_nodo 0.434
+      paso 3 del candidato contra paso 2 de facilitar_expresion_subordinado_pregunta_mas
+
+[BLOQUEARIA] construir_flujo_produccion_paso_limitante   (construir_flujo_produccion_paso_limitante.json)
+    vecino retirar_barreras_politicas_metodo  [levantada por: paso_contra_nodo]
+      similitud_texto 0.108 | familia_id 0.000 | paso_contra_nodo 0.614
+      paso 4 del candidato contra paso 1 de retirar_barreras_politicas_metodo
+    vecino rehacer_flujo_paso_limitante_capacidad  [levantada por: similitud_texto, familia_id]
+      similitud_texto 0.412 | familia_id 0.429 | paso_contra_nodo 0.430
+      paso 9 del candidato contra paso 5 de rehacer_flujo_paso_limitante_capacidad
+    vecino preferir_inspeccion_proceso_prueba_destructiva  [levantada por: similitud_texto]
+      similitud_texto 0.397 | familia_id 0.000 | paso_contra_nodo 0.421
+      paso 8 del candidato contra paso 6 de preferir_inspeccion_proceso_prueba_destructiva
+
+[BLOQUEARIA] construir_grafico_escalonado_pronosticos   (construir_grafico_escalonado_pronosticos.json)
+    vecino construir_indicador_tendencia_patron  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.143 | paso_contra_nodo 0.453
+      paso 4 del candidato contra paso 5 de construir_indicador_tendencia_patron
+    vecino elegir_fabricar_pedido_pronostico  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.143 | paso_contra_nodo 0.453
+      paso 7 del candidato contra paso 4 de elegir_fabricar_pedido_pronostico
+    vecino emparejar_indicadores_efecto_contraefecto  [levantada por: similitud_texto]
+      similitud_texto 0.363 | familia_id 0.000 | paso_contra_nodo 0.434
+      paso 1 del candidato contra paso 3 de emparejar_indicadores_efecto_contraefecto
+
+[ENTRARIA] construir_indicador_linealidad_alerta_temprana   (construir_indicador_linealidad_alerta_temprana.json)
+
+[BLOQUEARIA] construir_indicador_tendencia_patron   (construir_indicador_tendencia_patron.json)
+    vecino construir_grafico_escalonado_pronosticos  [levantada por: similitud_texto]
+      similitud_texto 0.350 | familia_id 0.143 | paso_contra_nodo 0.461
+      paso 5 del candidato contra paso 4 de construir_grafico_escalonado_pronosticos
+    vecino archivar_indicadores_resolver_problemas  [levantada por: similitud_texto]
+      similitud_texto 0.391 | familia_id 0.143 | paso_contra_nodo 0.427
+      paso 2 del candidato contra paso 1 de archivar_indicadores_resolver_problemas
+    vecino equilibrar_capacidad_personal_inventario_plazo  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.000 | paso_contra_nodo 0.422
+      paso 1 del candidato contra paso 4 de equilibrar_capacidad_personal_inventario_plazo
+
+[BLOQUEARIA] contestar_dos_preguntas_direccion_objetivos   (contestar_dos_preguntas_direccion_objetivos.json)
+    vecino cerrar_brecha_dos_preguntas_estrategia  [levantada por: similitud_texto, paso_contra_nodo]
+      similitud_texto 0.438 | familia_id 0.250 | paso_contra_nodo 0.626
+      paso 2 del candidato contra paso 2 de cerrar_brecha_dos_preguntas_estrategia
+    vecino examinar_demanda_entorno_dos_marcos_temporales  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.100 | paso_contra_nodo 0.511
+      paso 2 del candidato contra paso 4 de examinar_demanda_entorno_dos_marcos_temporales
+    vecino planificar_tres_pasos_demanda_estado_brecha  [levantada por: similitud_texto]
+      similitud_texto 0.398 | familia_id 0.000 | paso_contra_nodo 0.491
+      paso 4 del candidato contra paso 6 de planificar_tres_pasos_demanda_estado_brecha
+    vecino zanjar_seis_preguntas_decision_adelantado  [levantada por: similitud_texto]
+      similitud_texto 0.351 | familia_id 0.111 | paso_contra_nodo 0.482
+      paso 2 del candidato contra paso 5 de zanjar_seis_preguntas_decision_adelantado
+    vecino anunciar_decision_inesperada_reconvocar_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.362 | familia_id 0.000 | paso_contra_nodo 0.473
+      paso 5 del candidato contra paso 6 de anunciar_decision_inesperada_reconvocar_reunion
+    vecino examinar_entorno_expectativas_tecnologia_proveedores_grupos  [levantada por: similitud_texto]
+      similitud_texto 0.385 | familia_id 0.000 | paso_contra_nodo 0.448
+      paso 3 del candidato contra paso 1 de examinar_entorno_expectativas_tecnologia_proveedores_grupos
+    vecino vencer_sindrome_grupo_pares_autoconfianza  [levantada por: similitud_texto]
+      similitud_texto 0.350 | familia_id 0.000 | paso_contra_nodo 0.370
+      paso 5 del candidato contra paso 2 de vencer_sindrome_grupo_pares_autoconfianza
+
+[BLOQUEARIA] cortar_discusion_libre_momento_justo   (cortar_discusion_libre_momento_justo.json)
+    vecino anunciar_decision_inesperada_reconvocar_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.406 | familia_id 0.000 | paso_contra_nodo 0.526
+      paso 5 del candidato contra paso 7 de anunciar_decision_inesperada_reconvocar_reunion
+    vecino ejercer_poder_posicion_etapa_decision_clara  [levantada por: similitud_texto]
+      similitud_texto 0.361 | familia_id 0.000 | paso_contra_nodo 0.458
+      paso 7 del candidato contra paso 5 de ejercer_poder_posicion_etapa_decision_clara
+    vecino vencer_sindrome_grupo_pares_autoconfianza  [levantada por: similitud_texto]
+      similitud_texto 0.394 | familia_id 0.000 | paso_contra_nodo 0.443
+      paso 5 del candidato contra paso 5 de vencer_sindrome_grupo_pares_autoconfianza
+    vecino cerrar_brecha_dos_preguntas_estrategia  [levantada por: similitud_texto]
+      similitud_texto 0.358 | familia_id 0.000 | paso_contra_nodo 0.412
+      paso 5 del candidato contra paso 7 de cerrar_brecha_dos_preguntas_estrategia
+    vecino construir_indicador_tendencia_patron  [levantada por: similitud_texto]
+      similitud_texto 0.364 | familia_id 0.000 | paso_contra_nodo 0.401
+      paso 3 del candidato contra paso 2 de construir_indicador_tendencia_patron
+
+[BLOQUEARIA] cubrir_indicadores_problemas_reunion_individual   (cubrir_indicadores_problemas_reunion_individual.json)
+    vecino preparar_guion_reunion_individual_subordinado  [levantada por: similitud_texto]
+      similitud_texto 0.550 | familia_id 0.250 | paso_contra_nodo 0.459
+      paso 2 del candidato contra paso 3 de preparar_guion_reunion_individual_subordinado
+    vecino fijar_frecuencia_reunion_individual_madurez_tarea  [levantada por: similitud_texto]
+      similitud_texto 0.516 | familia_id 0.222 | paso_contra_nodo 0.434
+      paso 1 del candidato contra paso 2 de fijar_frecuencia_reunion_individual_madurez_tarea
+    vecino fijar_duracion_lugar_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.505 | familia_id 0.250 | paso_contra_nodo 0.444
+      paso 8 del candidato contra paso 4 de fijar_duracion_lugar_reunion_individual
+    vecino usar_tres_clases_reunion_proceso  [levantada por: similitud_texto]
+      similitud_texto 0.366 | familia_id 0.111 | paso_contra_nodo 0.464
+      paso 10 del candidato contra paso 1 de usar_tres_clases_reunion_proceso
+    vecino infundir_regularidad_reunion_proceso  [levantada por: similitud_texto]
+      similitud_texto 0.416 | familia_id 0.125 | paso_contra_nodo 0.441
+      paso 2 del candidato contra paso 2 de infundir_regularidad_reunion_proceso
+    vecino facilitar_expresion_subordinado_pregunta_mas  [levantada por: similitud_texto]
+      similitud_texto 0.363 | familia_id 0.000 | paso_contra_nodo 0.423
+      paso 2 del candidato contra paso 4 de facilitar_expresion_subordinado_pregunta_mas
+
+[ENTRARIA] decidir_aceptar_rechazar_material_defectuoso   (decidir_aceptar_rechazar_material_defectuoso.json)
+
+[BLOQUEARIA] decidir_nivel_competente_inferior   (decidir_nivel_competente_inferior.json)
+    vecino anunciar_decision_inesperada_reconvocar_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.364 | familia_id 0.000 | paso_contra_nodo 0.472
+      paso 2 del candidato contra paso 8 de anunciar_decision_inesperada_reconvocar_reunion
+    vecino vencer_sindrome_grupo_pares_autoconfianza  [levantada por: similitud_texto]
+      similitud_texto 0.368 | familia_id 0.000 | paso_contra_nodo 0.462
+      paso 4 del candidato contra paso 1 de vencer_sindrome_grupo_pares_autoconfianza
+    vecino tomar_mando_reunion_pares_presidente_ausente  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.460
+      paso 7 del candidato contra paso 3 de tomar_mando_reunion_pares_presidente_ausente
+
+[BLOQUEARIA] decir_no_trabajo_excede_capacidad   (decir_no_trabajo_excede_capacidad.json)
+    vecino usar_calendario_herramienta_planificacion_produccion  [levantada por: similitud_texto]
+      similitud_texto 0.365 | familia_id 0.000 | paso_contra_nodo 0.441
+      paso 7 del candidato contra paso 7 de usar_calendario_herramienta_planificacion_produccion
+    vecino llevar_inventario_proyectos_discrecionales  [levantada por: similitud_texto]
+      similitud_texto 0.376 | familia_id 0.000 | paso_contra_nodo 0.428
+      paso 7 del candidato contra paso 5 de llevar_inventario_proyectos_discrecionales
+    vecino agrupar_tareas_semejantes_aprovechar_preparacion  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.417
+      paso 5 del candidato contra paso 5 de agrupar_tareas_semejantes_aprovechar_preparacion
+    vecino identificar_paso_limitante_jornada_desfases  [levantada por: similitud_texto]
+      similitud_texto 0.364 | familia_id 0.000 | paso_contra_nodo 0.397
+      paso 6 del candidato contra paso 4 de identificar_paso_limitante_jornada_desfases
+
+[BLOQUEARIA] definir_entorno_grupo_clientes_proveedores_competidores   (definir_entorno_grupo_clientes_proveedores_competidores.json)
+    vecino examinar_entorno_expectativas_tecnologia_proveedores_grupos  [levantada por: similitud_texto, familia_id]
+      similitud_texto 0.406 | familia_id 0.333 | paso_contra_nodo 0.524
+      paso 3 del candidato contra paso 1 de examinar_entorno_expectativas_tecnologia_proveedores_grupos
+    vecino examinar_demanda_entorno_dos_marcos_temporales  [levantada por: similitud_texto]
+      similitud_texto 0.396 | familia_id 0.091 | paso_contra_nodo 0.450
+      paso 5 del candidato contra paso 2 de examinar_demanda_entorno_dos_marcos_temporales
+    vecino anunciar_decision_inesperada_reconvocar_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.374 | familia_id 0.000 | paso_contra_nodo 0.444
+      paso 3 del candidato contra paso 4 de anunciar_decision_inesperada_reconvocar_reunion
+    vecino cerrar_brecha_dos_preguntas_estrategia  [levantada por: similitud_texto]
+      similitud_texto 0.428 | familia_id 0.000 | paso_contra_nodo 0.444
+      paso 4 del candidato contra paso 3 de cerrar_brecha_dos_preguntas_estrategia
+    vecino vencer_sindrome_grupo_pares_autoconfianza  [levantada por: similitud_texto]
+      similitud_texto 0.374 | familia_id 0.100 | paso_contra_nodo 0.395
+      paso 2 del candidato contra paso 1 de vencer_sindrome_grupo_pares_autoconfianza
+    vecino fijar_horizonte_ventana_replanificacion  [levantada por: similitud_texto]
+      similitud_texto 0.372 | familia_id 0.000 | paso_contra_nodo 0.392
+      paso 1 del candidato contra paso 5 de fijar_horizonte_ventana_replanificacion
+
+[ENTRARIA] delegar_tarea_base_comun_seguimiento   (delegar_tarea_base_comun_seguimiento.json)
+
+[BLOQUEARIA] detectar_arreglar_fallo_etapa_menor_valor   (detectar_arreglar_fallo_etapa_menor_valor.json)
+    vecino supervisar_tarea_delegada_etapa_menor_valor  [levantada por: familia_id]
+      similitud_texto 0.242 | familia_id 0.333 | paso_contra_nodo 0.459
+      paso 2 del candidato contra paso 1 de supervisar_tarea_delegada_etapa_menor_valor
+
+[ENTRARIA] detectar_palanca_negativa_actividad_mando   (detectar_palanca_negativa_actividad_mando.json)
+
+[BLOQUEARIA] determinar_estado_presente_capacidades_proyectos_merma   (determinar_estado_presente_capacidades_proyectos_merma.json)
+    vecino definir_entorno_grupo_clientes_proveedores_competidores  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.516
+      paso 1 del candidato contra paso 3 de definir_entorno_grupo_clientes_proveedores_competidores
+    vecino examinar_entorno_expectativas_tecnologia_proveedores_grupos  [levantada por: similitud_texto]
+      similitud_texto 0.390 | familia_id 0.000 | paso_contra_nodo 0.484
+      paso 1 del candidato contra paso 1 de examinar_entorno_expectativas_tecnologia_proveedores_grupos
+    vecino cerrar_brecha_dos_preguntas_estrategia  [levantada por: similitud_texto]
+      similitud_texto 0.366 | familia_id 0.000 | paso_contra_nodo 0.430
+      paso 1 del candidato contra paso 3 de cerrar_brecha_dos_preguntas_estrategia
+    vecino examinar_demanda_entorno_dos_marcos_temporales  [levantada por: similitud_texto]
+      similitud_texto 0.357 | familia_id 0.000 | paso_contra_nodo 0.413
+      paso 5 del candidato contra paso 1 de examinar_demanda_entorno_dos_marcos_temporales
+    vecino fijar_horizonte_ventana_replanificacion  [levantada por: similitud_texto]
+      similitud_texto 0.378 | familia_id 0.000 | paso_contra_nodo 0.404
+      paso 5 del candidato contra paso 3 de fijar_horizonte_ventana_replanificacion
+
+[BLOQUEARIA] dimensionar_inventario_materia_prima_reposicion   (dimensionar_inventario_materia_prima_reposicion.json)
+    vecino preferir_inspeccion_proceso_prueba_destructiva  [levantada por: similitud_texto]
+      similitud_texto 0.391 | familia_id 0.000 | paso_contra_nodo 0.403
+      paso 2 del candidato contra paso 2 de preferir_inspeccion_proceso_prueba_destructiva
+    vecino detectar_arreglar_fallo_etapa_menor_valor  [levantada por: similitud_texto]
+      similitud_texto 0.357 | familia_id 0.000 | paso_contra_nodo 0.401
+      paso 1 del candidato contra paso 2 de detectar_arreglar_fallo_etapa_menor_valor
+    vecino equilibrar_capacidad_personal_inventario_plazo  [levantada por: similitud_texto]
+      similitud_texto 0.374 | familia_id 0.111 | paso_contra_nodo 0.392
+      paso 2 del candidato contra paso 7 de equilibrar_capacidad_personal_inventario_plazo
+
+[ENTRARIA] dimensionar_numero_subordinados_medio_dia_semanal   (dimensionar_numero_subordinados_medio_dia_semanal.json)
+
+[ENTRARIA] dimensionar_plantilla_administrativa_pronostico   (dimensionar_plantilla_administrativa_pronostico.json)
+
+[BLOQUEARIA] ejercer_poder_posicion_etapa_decision_clara   (ejercer_poder_posicion_etapa_decision_clara.json)
+    vecino cortar_discusion_libre_momento_justo  [levantada por: similitud_texto]
+      similitud_texto 0.375 | familia_id 0.000 | paso_contra_nodo 0.444
+      paso 5 del candidato contra paso 7 de cortar_discusion_libre_momento_justo
+    vecino anunciar_decision_inesperada_reconvocar_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.365 | familia_id 0.100 | paso_contra_nodo 0.420
+      paso 6 del candidato contra paso 4 de anunciar_decision_inesperada_reconvocar_reunion
+
+[ENTRARIA] elegir_cinco_indicadores_diarios_fabrica   (elegir_cinco_indicadores_diarios_fabrica.json)
+
+[BLOQUEARIA] elegir_fabricar_pedido_pronostico   (elegir_fabricar_pedido_pronostico.json)
+    vecino construir_grafico_escalonado_pronosticos  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.143 | paso_contra_nodo 0.440
+      paso 4 del candidato contra paso 7 de construir_grafico_escalonado_pronosticos
+
+[BLOQUEARIA] elegir_indicador_salida_trabajo_administrativo   (elegir_indicador_salida_trabajo_administrativo.json)
+    vecino evaluar_directivo_resultados_fortaleza  [levantada por: paso_contra_nodo]
+      similitud_texto 0.184 | familia_id 0.000 | paso_contra_nodo 0.766
+      paso 2 del candidato contra paso 1 de evaluar_directivo_resultados_fortaleza
+    vecino emparejar_indicadores_efecto_contraefecto  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.125 | paso_contra_nodo 0.489
+      paso 3 del candidato contra paso 4 de emparejar_indicadores_efecto_contraefecto
+
+[ENTRARIA] elegir_inspeccion_barrera_monitorizacion   (elegir_inspeccion_barrera_monitorizacion.json)
+
+[BLOQUEARIA] elegir_momento_actividad_palanca_maxima   (elegir_momento_actividad_palanca_maxima.json)
+    vecino subir_productividad_gerencial_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.411 | familia_id 0.000 | paso_contra_nodo 0.596
+      paso 1 del candidato contra paso 3 de subir_productividad_gerencial_tres_vias
+    vecino programar_visita_area_observar_despachar  [levantada por: similitud_texto]
+      similitud_texto 0.461 | familia_id 0.000 | paso_contra_nodo 0.420
+      paso 1 del candidato contra paso 4 de programar_visita_area_observar_despachar
+    vecino escalonar_fuentes_informacion_gerencial  [levantada por: similitud_texto]
+      similitud_texto 0.442 | familia_id 0.000 | paso_contra_nodo 0.402
+      paso 1 del candidato contra paso 6 de escalonar_fuentes_informacion_gerencial
+    vecino reunir_informacion_gerencial_vias_variadas  [levantada por: similitud_texto]
+      similitud_texto 0.438 | familia_id 0.000 | paso_contra_nodo 0.425
+      paso 4 del candidato contra paso 3 de reunir_informacion_gerencial_vias_variadas
+    vecino transmitir_objetivos_prioridades_preferencias  [levantada por: similitud_texto]
+      similitud_texto 0.422 | familia_id 0.000 | paso_contra_nodo 0.395
+      paso 1 del candidato contra paso 1 de transmitir_objetivos_prioridades_preferencias
+    vecino empujar_persona_reunion_direccion_preferida  [levantada por: similitud_texto]
+      similitud_texto 0.419 | familia_id 0.000 | paso_contra_nodo 0.404
+      paso 6 del candidato contra paso 7 de empujar_persona_reunion_direccion_preferida
+    vecino buscar_actividad_alta_palanca_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.418 | familia_id 0.222 | paso_contra_nodo 0.376
+      paso 1 del candidato contra paso 4 de buscar_actividad_alta_palanca_tres_vias
+
+[BLOQUEARIA] emparejar_indicadores_efecto_contraefecto   (emparejar_indicadores_efecto_contraefecto.json)
+    vecino construir_indicador_tendencia_patron  [levantada por: similitud_texto]
+      similitud_texto 0.358 | familia_id 0.143 | paso_contra_nodo 0.453
+      paso 3 del candidato contra paso 5 de construir_indicador_tendencia_patron
+    vecino construir_grafico_escalonado_pronosticos  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.446
+      paso 3 del candidato contra paso 1 de construir_grafico_escalonado_pronosticos
+    vecino elegir_fabricar_pedido_pronostico  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.408
+      paso 4 del candidato contra paso 1 de elegir_fabricar_pedido_pronostico
+    vecino revisar_tres_preguntas_valor_carrera  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.386
+      paso 2 del candidato contra paso 2 de revisar_tres_preguntas_valor_carrera
+
+[BLOQUEARIA] empujar_persona_reunion_direccion_preferida   (empujar_persona_reunion_direccion_preferida.json)
+    vecino reunir_informacion_gerencial_vias_variadas  [levantada por: similitud_texto]
+      similitud_texto 0.461 | familia_id 0.000 | paso_contra_nodo 0.484
+      paso 5 del candidato contra paso 4 de reunir_informacion_gerencial_vias_variadas
+    vecino programar_visita_area_observar_despachar  [levantada por: similitud_texto]
+      similitud_texto 0.463 | familia_id 0.000 | paso_contra_nodo 0.433
+      paso 3 del candidato contra paso 1 de programar_visita_area_observar_despachar
+    vecino escalonar_fuentes_informacion_gerencial  [levantada por: similitud_texto]
+      similitud_texto 0.445 | familia_id 0.000 | paso_contra_nodo 0.412
+      paso 7 del candidato contra paso 4 de escalonar_fuentes_informacion_gerencial
+    vecino buscar_actividad_alta_palanca_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.444 | familia_id 0.000 | paso_contra_nodo 0.376
+      paso 5 del candidato contra paso 3 de buscar_actividad_alta_palanca_tres_vias
+    vecino transmitir_objetivos_prioridades_preferencias  [levantada por: similitud_texto]
+      similitud_texto 0.422 | familia_id 0.000 | paso_contra_nodo 0.441
+      paso 4 del candidato contra paso 5 de transmitir_objetivos_prioridades_preferencias
+    vecino subir_productividad_gerencial_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.423 | familia_id 0.000 | paso_contra_nodo 0.365
+      paso 4 del candidato contra paso 4 de subir_productividad_gerencial_tres_vias
+    vecino elegir_momento_actividad_palanca_maxima  [levantada por: similitud_texto]
+      similitud_texto 0.420 | familia_id 0.000 | paso_contra_nodo 0.398
+      paso 7 del candidato contra paso 3 de elegir_momento_actividad_palanca_maxima
+
+[BLOQUEARIA] equilibrar_capacidad_personal_inventario_plazo   (equilibrar_capacidad_personal_inventario_plazo.json)
+    vecino construir_indicador_tendencia_patron  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.421
+      paso 7 del candidato contra paso 5 de construir_indicador_tendencia_patron
+    vecino dimensionar_inventario_materia_prima_reposicion  [levantada por: similitud_texto]
+      similitud_texto 0.389 | familia_id 0.111 | paso_contra_nodo 0.396
+      paso 7 del candidato contra paso 6 de dimensionar_inventario_materia_prima_reposicion
+
+[BLOQUEARIA] escalonar_fuentes_informacion_gerencial   (escalonar_fuentes_informacion_gerencial.json)
+    vecino programar_visita_area_observar_despachar  [levantada por: similitud_texto]
+      similitud_texto 0.417 | familia_id 0.000 | paso_contra_nodo 0.468
+      paso 5 del candidato contra paso 1 de programar_visita_area_observar_despachar
+    vecino reunir_informacion_gerencial_vias_variadas  [levantada por: similitud_texto]
+      similitud_texto 0.456 | familia_id 0.286 | paso_contra_nodo 0.463
+      paso 1 del candidato contra paso 8 de reunir_informacion_gerencial_vias_variadas
+    vecino empujar_persona_reunion_direccion_preferida  [levantada por: similitud_texto]
+      similitud_texto 0.431 | familia_id 0.000 | paso_contra_nodo 0.411
+      paso 4 del candidato contra paso 4 de empujar_persona_reunion_direccion_preferida
+    vecino transmitir_objetivos_prioridades_preferencias  [levantada por: similitud_texto]
+      similitud_texto 0.430 | familia_id 0.000 | paso_contra_nodo 0.380
+      paso 1 del candidato contra paso 1 de transmitir_objetivos_prioridades_preferencias
+    vecino subir_productividad_gerencial_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.425 | familia_id 0.125 | paso_contra_nodo 0.425
+      paso 4 del candidato contra paso 2 de subir_productividad_gerencial_tres_vias
+    vecino elegir_momento_actividad_palanca_maxima  [levantada por: similitud_texto]
+      similitud_texto 0.412 | familia_id 0.000 | paso_contra_nodo 0.414
+      paso 1 del candidato contra paso 1 de elegir_momento_actividad_palanca_maxima
+    vecino buscar_actividad_alta_palanca_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.406 | familia_id 0.000 | paso_contra_nodo 0.403
+      paso 3 del candidato contra paso 2 de buscar_actividad_alta_palanca_tres_vias
+
+[BLOQUEARIA] examinar_demanda_entorno_dos_marcos_temporales   (examinar_demanda_entorno_dos_marcos_temporales.json)
+    vecino cerrar_brecha_dos_preguntas_estrategia  [levantada por: similitud_texto]
+      similitud_texto 0.412 | familia_id 0.100 | paso_contra_nodo 0.483
+      paso 3 del candidato contra paso 4 de cerrar_brecha_dos_preguntas_estrategia
+    vecino definir_entorno_grupo_clientes_proveedores_competidores  [levantada por: similitud_texto]
+      similitud_texto 0.392 | familia_id 0.091 | paso_contra_nodo 0.426
+      paso 2 del candidato contra paso 4 de definir_entorno_grupo_clientes_proveedores_competidores
+    vecino determinar_estado_presente_capacidades_proyectos_merma  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.000 | paso_contra_nodo 0.404
+      paso 1 del candidato contra paso 5 de determinar_estado_presente_capacidades_proyectos_merma
+    vecino examinar_entorno_expectativas_tecnologia_proveedores_grupos  [levantada por: similitud_texto]
+      similitud_texto 0.377 | familia_id 0.200 | paso_contra_nodo 0.391
+      paso 3 del candidato contra paso 2 de examinar_entorno_expectativas_tecnologia_proveedores_grupos
+
+[BLOQUEARIA] examinar_entorno_expectativas_tecnologia_proveedores_grupos   (examinar_entorno_expectativas_tecnologia_proveedores_grupos.json)
+    vecino definir_entorno_grupo_clientes_proveedores_competidores  [levantada por: similitud_texto, familia_id]
+      similitud_texto 0.408 | familia_id 0.333 | paso_contra_nodo 0.527
+      paso 4 del candidato contra paso 2 de definir_entorno_grupo_clientes_proveedores_competidores
+    vecino determinar_estado_presente_capacidades_proyectos_merma  [levantada por: similitud_texto]
+      similitud_texto 0.398 | familia_id 0.000 | paso_contra_nodo 0.497
+      paso 1 del candidato contra paso 1 de determinar_estado_presente_capacidades_proyectos_merma
+    vecino examinar_demanda_entorno_dos_marcos_temporales  [levantada por: similitud_texto]
+      similitud_texto 0.372 | familia_id 0.200 | paso_contra_nodo 0.482
+      paso 3 del candidato contra paso 2 de examinar_demanda_entorno_dos_marcos_temporales
+    vecino cerrar_brecha_dos_preguntas_estrategia  [levantada por: similitud_texto]
+      similitud_texto 0.419 | familia_id 0.000 | paso_contra_nodo 0.433
+      paso 4 del candidato contra paso 6 de cerrar_brecha_dos_preguntas_estrategia
+    vecino contestar_dos_preguntas_direccion_objetivos  [levantada por: similitud_texto]
+      similitud_texto 0.378 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 1 del candidato contra paso 3 de contestar_dos_preguntas_direccion_objetivos
+    vecino fijar_periodo_direccion_objetivos_retroalimentacion  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 4 del candidato contra paso 1 de fijar_periodo_direccion_objetivos_retroalimentacion
+
+[BLOQUEARIA] facilitar_expresion_subordinado_pregunta_mas   (facilitar_expresion_subordinado_pregunta_mas.json)
+    vecino preparar_guion_reunion_individual_subordinado  [levantada por: similitud_texto]
+      similitud_texto 0.397 | familia_id 0.111 | paso_contra_nodo 0.480
+      paso 1 del candidato contra paso 3 de preparar_guion_reunion_individual_subordinado
+    vecino acumular_asuntos_importantes_fichero_espera  [levantada por: similitud_texto]
+      similitud_texto 0.475 | familia_id 0.000 | paso_contra_nodo 0.426
+      paso 3 del candidato contra paso 4 de acumular_asuntos_importantes_fichero_espera
+    vecino alentar_asuntos_corazon_vigilar_final_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.414 | familia_id 0.000 | paso_contra_nodo 0.474
+      paso 2 del candidato contra paso 6 de alentar_asuntos_corazon_vigilar_final_reunion
+    vecino fijar_duracion_lugar_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.361 | familia_id 0.000 | paso_contra_nodo 0.464
+      paso 1 del candidato contra paso 5 de fijar_duracion_lugar_reunion_individual
+    vecino conducir_reunion_individual_telefono_distancia  [levantada por: similitud_texto]
+      similitud_texto 0.411 | familia_id 0.000 | paso_contra_nodo 0.447
+      paso 4 del candidato contra paso 4 de conducir_reunion_individual_telefono_distancia
+    vecino programar_reunion_individual_cadena  [levantada por: similitud_texto]
+      similitud_texto 0.445 | familia_id 0.000 | paso_contra_nodo 0.447
+      paso 2 del candidato contra paso 1 de programar_reunion_individual_cadena
+    vecino tomar_notas_copia_guion_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.434 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 4 del candidato contra paso 7 de tomar_notas_copia_guion_reunion_individual
+    vecino cubrir_indicadores_problemas_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.362 | familia_id 0.000 | paso_contra_nodo 0.420
+      paso 6 del candidato contra paso 2 de cubrir_indicadores_problemas_reunion_individual
+
+[BLOQUEARIA] fijar_duracion_lugar_reunion_individual   (fijar_duracion_lugar_reunion_individual.json)
+    vecino fijar_frecuencia_reunion_individual_madurez_tarea  [levantada por: similitud_texto, familia_id]
+      similitud_texto 0.630 | familia_id 0.375 | paso_contra_nodo 0.435
+      paso 4 del candidato contra paso 3 de fijar_frecuencia_reunion_individual_madurez_tarea
+    vecino alentar_asuntos_corazon_vigilar_final_reunion  [levantada por: paso_contra_nodo]
+      similitud_texto 0.320 | familia_id 0.100 | paso_contra_nodo 0.612
+      paso 3 del candidato contra paso 1 de alentar_asuntos_corazon_vigilar_final_reunion
+    vecino preparar_guion_reunion_individual_subordinado  [levantada por: similitud_texto]
+      similitud_texto 0.601 | familia_id 0.250 | paso_contra_nodo 0.517
+      paso 3 del candidato contra paso 1 de preparar_guion_reunion_individual_subordinado
+    vecino cubrir_indicadores_problemas_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.506 | familia_id 0.250 | paso_contra_nodo 0.452
+      paso 7 del candidato contra paso 6 de cubrir_indicadores_problemas_reunion_individual
+    vecino infundir_regularidad_reunion_proceso  [levantada por: similitud_texto]
+      similitud_texto 0.460 | familia_id 0.125 | paso_contra_nodo 0.468
+      paso 4 del candidato contra paso 8 de infundir_regularidad_reunion_proceso
+    vecino usar_tres_clases_reunion_proceso  [levantada por: similitud_texto]
+      similitud_texto 0.395 | familia_id 0.111 | paso_contra_nodo 0.463
+      paso 3 del candidato contra paso 4 de usar_tres_clases_reunion_proceso
+    vecino facilitar_expresion_subordinado_pregunta_mas  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.000 | paso_contra_nodo 0.458
+      paso 4 del candidato contra paso 3 de facilitar_expresion_subordinado_pregunta_mas
+
+[BLOQUEARIA] fijar_frecuencia_reunion_individual_madurez_tarea   (fijar_frecuencia_reunion_individual_madurez_tarea.json)
+    vecino fijar_duracion_lugar_reunion_individual  [levantada por: similitud_texto, familia_id]
+      similitud_texto 0.629 | familia_id 0.375 | paso_contra_nodo 0.435
+      paso 1 del candidato contra paso 3 de fijar_duracion_lugar_reunion_individual
+    vecino preparar_guion_reunion_individual_subordinado  [levantada por: similitud_texto]
+      similitud_texto 0.606 | familia_id 0.222 | paso_contra_nodo 0.496
+      paso 6 del candidato contra paso 1 de preparar_guion_reunion_individual_subordinado
+    vecino cubrir_indicadores_problemas_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.511 | familia_id 0.222 | paso_contra_nodo 0.436
+      paso 10 del candidato contra paso 8 de cubrir_indicadores_problemas_reunion_individual
+    vecino infundir_regularidad_reunion_proceso  [levantada por: similitud_texto]
+      similitud_texto 0.472 | familia_id 0.111 | paso_contra_nodo 0.438
+      paso 8 del candidato contra paso 1 de infundir_regularidad_reunion_proceso
+    vecino tomar_notas_copia_guion_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.359 | familia_id 0.200 | paso_contra_nodo 0.469
+      paso 5 del candidato contra paso 5 de tomar_notas_copia_guion_reunion_individual
+    vecino usar_tres_clases_reunion_proceso  [levantada por: similitud_texto]
+      similitud_texto 0.410 | familia_id 0.100 | paso_contra_nodo 0.428
+      paso 2 del candidato contra paso 1 de usar_tres_clases_reunion_proceso
+
+[BLOQUEARIA] fijar_horizonte_ventana_replanificacion   (fijar_horizonte_ventana_replanificacion.json)
+    vecino fijar_periodo_direccion_objetivos_retroalimentacion  [levantada por: similitud_texto]
+      similitud_texto 0.385 | familia_id 0.125 | paso_contra_nodo 0.430
+      paso 1 del candidato contra paso 2 de fijar_periodo_direccion_objetivos_retroalimentacion
+    vecino determinar_estado_presente_capacidades_proyectos_merma  [levantada por: similitud_texto]
+      similitud_texto 0.358 | familia_id 0.000 | paso_contra_nodo 0.394
+      paso 1 del candidato contra paso 4 de determinar_estado_presente_capacidades_proyectos_merma
+    vecino anunciar_decision_inesperada_reconvocar_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.357 | familia_id 0.000 | paso_contra_nodo 0.365
+      paso 4 del candidato contra paso 6 de anunciar_decision_inesperada_reconvocar_reunion
+
+[BLOQUEARIA] fijar_periodo_direccion_objetivos_retroalimentacion   (fijar_periodo_direccion_objetivos_retroalimentacion.json)
+    vecino examinar_entorno_expectativas_tecnologia_proveedores_grupos  [levantada por: similitud_texto]
+      similitud_texto 0.359 | familia_id 0.000 | paso_contra_nodo 0.419
+      paso 4 del candidato contra paso 4 de examinar_entorno_expectativas_tecnologia_proveedores_grupos
+
+[BLOQUEARIA] identificar_paso_limitante_jornada_desfases   (identificar_paso_limitante_jornada_desfases.json)
+    vecino agrupar_tareas_semejantes_aprovechar_preparacion  [levantada por: similitud_texto]
+      similitud_texto 0.410 | familia_id 0.000 | paso_contra_nodo 0.450
+      paso 4 del candidato contra paso 6 de agrupar_tareas_semejantes_aprovechar_preparacion
+    vecino decir_no_trabajo_excede_capacidad  [levantada por: similitud_texto]
+      similitud_texto 0.369 | familia_id 0.000 | paso_contra_nodo 0.413
+      paso 4 del candidato contra paso 6 de decir_no_trabajo_excede_capacidad
+    vecino supervisar_decision_delegada_preguntas_concretas  [levantada por: similitud_texto]
+      similitud_texto 0.398 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 2 del candidato contra paso 3 de supervisar_decision_delegada_preguntas_concretas
+    vecino agrupar_interrupciones_subordinados_reuniones_regulares  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.000 | paso_contra_nodo 0.404
+      paso 3 del candidato contra paso 2 de agrupar_interrupciones_subordinados_reuniones_regulares
+    vecino llevar_inventario_proyectos_discrecionales  [levantada por: similitud_texto]
+      similitud_texto 0.401 | familia_id 0.000 | paso_contra_nodo 0.392
+      paso 3 del candidato contra paso 2 de llevar_inventario_proyectos_discrecionales
+    vecino supervisar_tarea_delegada_etapa_menor_valor  [levantada por: similitud_texto]
+      similitud_texto 0.379 | familia_id 0.000 | paso_contra_nodo 0.398
+      paso 4 del candidato contra paso 2 de supervisar_tarea_delegada_etapa_menor_valor
+
+[BLOQUEARIA] infundir_regularidad_reunion_proceso   (infundir_regularidad_reunion_proceso.json)
+    vecino usar_tres_clases_reunion_proceso  [levantada por: similitud_texto]
+      similitud_texto 0.494 | familia_id 0.286 | paso_contra_nodo 0.449
+      paso 8 del candidato contra paso 1 de usar_tres_clases_reunion_proceso
+    vecino preparar_guion_reunion_individual_subordinado  [levantada por: similitud_texto]
+      similitud_texto 0.483 | familia_id 0.125 | paso_contra_nodo 0.473
+      paso 8 del candidato contra paso 4 de preparar_guion_reunion_individual_subordinado
+    vecino fijar_frecuencia_reunion_individual_madurez_tarea  [levantada por: similitud_texto]
+      similitud_texto 0.473 | familia_id 0.111 | paso_contra_nodo 0.462
+      paso 1 del candidato contra paso 2 de fijar_frecuencia_reunion_individual_madurez_tarea
+    vecino fijar_duracion_lugar_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.466 | familia_id 0.125 | paso_contra_nodo 0.454
+      paso 8 del candidato contra paso 4 de fijar_duracion_lugar_reunion_individual
+    vecino cubrir_indicadores_problemas_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.421 | familia_id 0.125 | paso_contra_nodo 0.424
+      paso 2 del candidato contra paso 2 de cubrir_indicadores_problemas_reunion_individual
+
+[BLOQUEARIA] llevar_inventario_proyectos_discrecionales   (llevar_inventario_proyectos_discrecionales.json)
+    vecino agrupar_interrupciones_subordinados_reuniones_regulares  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.000 | paso_contra_nodo 0.494
+      paso 1 del candidato contra paso 1 de agrupar_interrupciones_subordinados_reuniones_regulares
+    vecino agrupar_tareas_semejantes_aprovechar_preparacion  [levantada por: similitud_texto]
+      similitud_texto 0.368 | familia_id 0.000 | paso_contra_nodo 0.456
+      paso 5 del candidato contra paso 2 de agrupar_tareas_semejantes_aprovechar_preparacion
+    vecino preparar_respuestas_estandar_interrupciones_repetidas  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.000 | paso_contra_nodo 0.437
+      paso 3 del candidato contra paso 5 de preparar_respuestas_estandar_interrupciones_repetidas
+    vecino decir_no_trabajo_excede_capacidad  [levantada por: similitud_texto]
+      similitud_texto 0.377 | familia_id 0.000 | paso_contra_nodo 0.409
+      paso 5 del candidato contra paso 7 de decir_no_trabajo_excede_capacidad
+    vecino buscar_regularidad_bloques_iguales_trabajo_mando  [levantada por: similitud_texto]
+      similitud_texto 0.375 | familia_id 0.000 | paso_contra_nodo 0.404
+      paso 5 del candidato contra paso 4 de buscar_regularidad_bloques_iguales_trabajo_mando
+    vecino identificar_paso_limitante_jornada_desfases  [levantada por: similitud_texto]
+      similitud_texto 0.394 | familia_id 0.000 | paso_contra_nodo 0.392
+      paso 2 del candidato contra paso 3 de identificar_paso_limitante_jornada_desfases
+
+[BLOQUEARIA] planificar_tres_pasos_demanda_estado_brecha   (planificar_tres_pasos_demanda_estado_brecha.json)
+    vecino cerrar_brecha_dos_preguntas_estrategia  [levantada por: similitud_texto]
+      similitud_texto 0.362 | familia_id 0.100 | paso_contra_nodo 0.485
+      paso 6 del candidato contra paso 2 de cerrar_brecha_dos_preguntas_estrategia
+    vecino contestar_dos_preguntas_direccion_objetivos  [levantada por: similitud_texto]
+      similitud_texto 0.396 | familia_id 0.000 | paso_contra_nodo 0.454
+      paso 6 del candidato contra paso 4 de contestar_dos_preguntas_direccion_objetivos
+    vecino vencer_sindrome_grupo_pares_autoconfianza  [levantada por: similitud_texto]
+      similitud_texto 0.398 | familia_id 0.000 | paso_contra_nodo 0.426
+      paso 4 del candidato contra paso 2 de vencer_sindrome_grupo_pares_autoconfianza
+    vecino examinar_entorno_expectativas_tecnologia_proveedores_grupos  [levantada por: similitud_texto]
+      similitud_texto 0.357 | familia_id 0.000 | paso_contra_nodo 0.409
+      paso 2 del candidato contra paso 1 de examinar_entorno_expectativas_tecnologia_proveedores_grupos
+
+[BLOQUEARIA] preferir_inspeccion_proceso_prueba_destructiva   (preferir_inspeccion_proceso_prueba_destructiva.json)
+    vecino clasificar_trabajo_proceso_montaje_prueba  [levantada por: similitud_texto]
+      similitud_texto 0.366 | familia_id 0.250 | paso_contra_nodo 0.461
+      paso 6 del candidato contra paso 5 de clasificar_trabajo_proceso_montaje_prueba
+    vecino rehacer_flujo_paso_limitante_capacidad  [levantada por: similitud_texto]
+      similitud_texto 0.445 | familia_id 0.000 | paso_contra_nodo 0.384
+      paso 1 del candidato contra paso 6 de rehacer_flujo_paso_limitante_capacidad
+    vecino construir_flujo_produccion_paso_limitante  [levantada por: similitud_texto]
+      similitud_texto 0.410 | familia_id 0.000 | paso_contra_nodo 0.442
+      paso 6 del candidato contra paso 8 de construir_flujo_produccion_paso_limitante
+    vecino dimensionar_inventario_materia_prima_reposicion  [levantada por: similitud_texto]
+      similitud_texto 0.384 | familia_id 0.000 | paso_contra_nodo 0.417
+      paso 5 del candidato contra paso 6 de dimensionar_inventario_materia_prima_reposicion
+
+[BLOQUEARIA] preparar_guion_reunion_individual_subordinado   (preparar_guion_reunion_individual_subordinado.json)
+    vecino fijar_duracion_lugar_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.603 | familia_id 0.250 | paso_contra_nodo 0.527
+      paso 1 del candidato contra paso 5 de fijar_duracion_lugar_reunion_individual
+    vecino fijar_frecuencia_reunion_individual_madurez_tarea  [levantada por: similitud_texto]
+      similitud_texto 0.601 | familia_id 0.222 | paso_contra_nodo 0.460
+      paso 1 del candidato contra paso 6 de fijar_frecuencia_reunion_individual_madurez_tarea
+    vecino cubrir_indicadores_problemas_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.540 | familia_id 0.250 | paso_contra_nodo 0.459
+      paso 3 del candidato contra paso 2 de cubrir_indicadores_problemas_reunion_individual
+    vecino infundir_regularidad_reunion_proceso  [levantada por: similitud_texto]
+      similitud_texto 0.485 | familia_id 0.125 | paso_contra_nodo 0.427
+      paso 2 del candidato contra paso 8 de infundir_regularidad_reunion_proceso
+    vecino facilitar_expresion_subordinado_pregunta_mas  [levantada por: similitud_texto]
+      similitud_texto 0.388 | familia_id 0.111 | paso_contra_nodo 0.480
+      paso 3 del candidato contra paso 1 de facilitar_expresion_subordinado_pregunta_mas
+    vecino tomar_notas_copia_guion_reunion_individual  [levantada por: similitud_texto, familia_id]
+      similitud_texto 0.402 | familia_id 0.375 | paso_contra_nodo 0.460
+      paso 4 del candidato contra paso 5 de tomar_notas_copia_guion_reunion_individual
+    vecino usar_tres_clases_reunion_proceso  [levantada por: similitud_texto]
+      similitud_texto 0.422 | familia_id 0.111 | paso_contra_nodo 0.450
+      paso 2 del candidato contra paso 1 de usar_tres_clases_reunion_proceso
+    vecino alentar_asuntos_corazon_vigilar_final_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.379 | familia_id 0.100 | paso_contra_nodo 0.433
+      paso 1 del candidato contra paso 1 de alentar_asuntos_corazon_vigilar_final_reunion
+    vecino acumular_asuntos_importantes_fichero_espera  [levantada por: similitud_texto]
+      similitud_texto 0.383 | familia_id 0.000 | paso_contra_nodo 0.417
+      paso 3 del candidato contra paso 1 de acumular_asuntos_importantes_fichero_espera
+
+[BLOQUEARIA] preparar_respuestas_estandar_interrupciones_repetidas   (preparar_respuestas_estandar_interrupciones_repetidas.json)
+    vecino buscar_regularidad_bloques_iguales_trabajo_mando  [levantada por: similitud_texto]
+      similitud_texto 0.389 | familia_id 0.000 | paso_contra_nodo 0.551
+      paso 1 del candidato contra paso 1 de buscar_regularidad_bloques_iguales_trabajo_mando
+    vecino agrupar_interrupciones_subordinados_reuniones_regulares  [levantada por: similitud_texto]
+      similitud_texto 0.467 | familia_id 0.111 | paso_contra_nodo 0.435
+      paso 1 del candidato contra paso 2 de agrupar_interrupciones_subordinados_reuniones_regulares
+
+[BLOQUEARIA] programar_reunion_individual_cadena   (programar_reunion_individual_cadena.json)
+    vecino alentar_asuntos_corazon_vigilar_final_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.474 | familia_id 0.111 | paso_contra_nodo 0.548
+      paso 1 del candidato contra paso 1 de alentar_asuntos_corazon_vigilar_final_reunion
+    vecino conducir_reunion_individual_telefono_distancia  [levantada por: similitud_texto]
+      similitud_texto 0.474 | familia_id 0.286 | paso_contra_nodo 0.463
+      paso 4 del candidato contra paso 4 de conducir_reunion_individual_telefono_distancia
+    vecino tomar_notas_copia_guion_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.472 | familia_id 0.250 | paso_contra_nodo 0.449
+      paso 4 del candidato contra paso 5 de tomar_notas_copia_guion_reunion_individual
+    vecino acumular_asuntos_importantes_fichero_espera  [levantada por: similitud_texto]
+      similitud_texto 0.431 | familia_id 0.000 | paso_contra_nodo 0.465
+      paso 3 del candidato contra paso 3 de acumular_asuntos_importantes_fichero_espera
+    vecino facilitar_expresion_subordinado_pregunta_mas  [levantada por: similitud_texto]
+      similitud_texto 0.449 | familia_id 0.000 | paso_contra_nodo 0.426
+      paso 1 del candidato contra paso 2 de facilitar_expresion_subordinado_pregunta_mas
+    vecino preguntar_conducir_reunion_individual  [levantada por: familia_id]
+      similitud_texto 0.080 | familia_id 0.333 | paso_contra_nodo 0.418
+      paso 3 del candidato contra paso 7 de preguntar_conducir_reunion_individual
+    vecino dirigir_reunion_individual_semanal  [levantada por: familia_id]
+      similitud_texto 0.049 | familia_id 0.333 | paso_contra_nodo 0.350
+      paso 5 del candidato contra paso 2 de dirigir_reunion_individual_semanal
+
+[BLOQUEARIA] programar_visita_area_observar_despachar   (programar_visita_area_observar_despachar.json)
+    vecino escalonar_fuentes_informacion_gerencial  [levantada por: similitud_texto]
+      similitud_texto 0.402 | familia_id 0.000 | paso_contra_nodo 0.468
+      paso 1 del candidato contra paso 5 de escalonar_fuentes_informacion_gerencial
+    vecino reunir_informacion_gerencial_vias_variadas  [levantada por: similitud_texto]
+      similitud_texto 0.465 | familia_id 0.000 | paso_contra_nodo 0.372
+      paso 3 del candidato contra paso 4 de reunir_informacion_gerencial_vias_variadas
+    vecino elegir_momento_actividad_palanca_maxima  [levantada por: similitud_texto]
+      similitud_texto 0.461 | familia_id 0.000 | paso_contra_nodo 0.444
+      paso 4 del candidato contra paso 1 de elegir_momento_actividad_palanca_maxima
+    vecino empujar_persona_reunion_direccion_preferida  [levantada por: similitud_texto]
+      similitud_texto 0.456 | familia_id 0.000 | paso_contra_nodo 0.433
+      paso 1 del candidato contra paso 3 de empujar_persona_reunion_direccion_preferida
+    vecino transmitir_objetivos_prioridades_preferencias  [levantada por: similitud_texto]
+      similitud_texto 0.400 | familia_id 0.000 | paso_contra_nodo 0.432
+      paso 1 del candidato contra paso 1 de transmitir_objetivos_prioridades_preferencias
+    vecino subir_productividad_gerencial_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.392 | familia_id 0.000 | paso_contra_nodo 0.428
+      paso 1 del candidato contra paso 4 de subir_productividad_gerencial_tres_vias
+    vecino buscar_actividad_alta_palanca_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.404 | familia_id 0.000 | paso_contra_nodo 0.409
+      paso 6 del candidato contra paso 1 de buscar_actividad_alta_palanca_tres_vias
+
+[BLOQUEARIA] rehacer_flujo_paso_limitante_capacidad   (rehacer_flujo_paso_limitante_capacidad.json)
+    vecino preferir_inspeccion_proceso_prueba_destructiva  [levantada por: similitud_texto]
+      similitud_texto 0.460 | familia_id 0.000 | paso_contra_nodo 0.378
+      paso 3 del candidato contra paso 2 de preferir_inspeccion_proceso_prueba_destructiva
+    vecino construir_flujo_produccion_paso_limitante  [levantada por: similitud_texto, familia_id]
+      similitud_texto 0.419 | familia_id 0.429 | paso_contra_nodo 0.430
+      paso 5 del candidato contra paso 9 de construir_flujo_produccion_paso_limitante
+    vecino dimensionar_inventario_materia_prima_reposicion  [levantada por: similitud_texto]
+      similitud_texto 0.357 | familia_id 0.000 | paso_contra_nodo 0.387
+      paso 2 del candidato contra paso 3 de dimensionar_inventario_materia_prima_reposicion
+
+[ENTRARIA] repartir_supervision_puesto_funcional_mision   (repartir_supervision_puesto_funcional_mision.json)
+
+[ENTRARIA] representar_actividad_caja_negra_ventanas   (representar_actividad_caja_negra_ventanas.json)
+
+[BLOQUEARIA] reunir_informacion_gerencial_vias_variadas   (reunir_informacion_gerencial_vias_variadas.json)
+    vecino transmitir_objetivos_prioridades_preferencias  [levantada por: similitud_texto]
+      similitud_texto 0.414 | familia_id 0.000 | paso_contra_nodo 0.540
+      paso 4 del candidato contra paso 1 de transmitir_objetivos_prioridades_preferencias
+    vecino programar_visita_area_observar_despachar  [levantada por: similitud_texto]
+      similitud_texto 0.470 | familia_id 0.000 | paso_contra_nodo 0.398
+      paso 4 del candidato contra paso 3 de programar_visita_area_observar_despachar
+    vecino escalonar_fuentes_informacion_gerencial  [levantada por: similitud_texto]
+      similitud_texto 0.463 | familia_id 0.286 | paso_contra_nodo 0.463
+      paso 8 del candidato contra paso 1 de escalonar_fuentes_informacion_gerencial
+    vecino empujar_persona_reunion_direccion_preferida  [levantada por: similitud_texto]
+      similitud_texto 0.462 | familia_id 0.000 | paso_contra_nodo 0.433
+      paso 4 del candidato contra paso 5 de empujar_persona_reunion_direccion_preferida
+    vecino elegir_momento_actividad_palanca_maxima  [levantada por: similitud_texto]
+      similitud_texto 0.444 | familia_id 0.000 | paso_contra_nodo 0.393
+      paso 7 del candidato contra paso 3 de elegir_momento_actividad_palanca_maxima
+    vecino subir_productividad_gerencial_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.442 | familia_id 0.250 | paso_contra_nodo 0.430
+      paso 8 del candidato contra paso 2 de subir_productividad_gerencial_tres_vias
+    vecino buscar_actividad_alta_palanca_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.426 | familia_id 0.100 | paso_contra_nodo 0.391
+      paso 4 del candidato contra paso 4 de buscar_actividad_alta_palanca_tres_vias
+
+[ENTRARIA] simplificar_trabajo_reducir_numero_pasos   (simplificar_trabajo_reducir_numero_pasos.json)
+
+[BLOQUEARIA] subir_productividad_gerencial_tres_vias   (subir_productividad_gerencial_tres_vias.json)
+    vecino elegir_momento_actividad_palanca_maxima  [levantada por: similitud_texto]
+      similitud_texto 0.403 | familia_id 0.000 | paso_contra_nodo 0.553
+      paso 3 del candidato contra paso 1 de elegir_momento_actividad_palanca_maxima
+    vecino buscar_actividad_alta_palanca_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.544 | familia_id 0.222 | paso_contra_nodo 0.500
+      paso 4 del candidato contra paso 1 de buscar_actividad_alta_palanca_tres_vias
+    vecino escalonar_fuentes_informacion_gerencial  [levantada por: similitud_texto]
+      similitud_texto 0.430 | familia_id 0.125 | paso_contra_nodo 0.447
+      paso 2 del candidato contra paso 4 de escalonar_fuentes_informacion_gerencial
+    vecino reunir_informacion_gerencial_vias_variadas  [levantada por: similitud_texto]
+      similitud_texto 0.430 | familia_id 0.250 | paso_contra_nodo 0.403
+      paso 2 del candidato contra paso 8 de reunir_informacion_gerencial_vias_variadas
+    vecino empujar_persona_reunion_direccion_preferida  [levantada por: similitud_texto]
+      similitud_texto 0.422 | familia_id 0.000 | paso_contra_nodo 0.413
+      paso 1 del candidato contra paso 7 de empujar_persona_reunion_direccion_preferida
+    vecino transmitir_objetivos_prioridades_preferencias  [levantada por: similitud_texto]
+      similitud_texto 0.420 | familia_id 0.000 | paso_contra_nodo 0.407
+      paso 2 del candidato contra paso 3 de transmitir_objetivos_prioridades_preferencias
+    vecino programar_visita_area_observar_despachar  [levantada por: similitud_texto]
+      similitud_texto 0.393 | familia_id 0.000 | paso_contra_nodo 0.415
+      paso 2 del candidato contra paso 3 de programar_visita_area_observar_despachar
+
+[BLOQUEARIA] supervisar_decision_delegada_preguntas_concretas   (supervisar_decision_delegada_preguntas_concretas.json)
+    vecino identificar_paso_limitante_jornada_desfases  [levantada por: similitud_texto]
+      similitud_texto 0.399 | familia_id 0.000 | paso_contra_nodo 0.439
+      paso 3 del candidato contra paso 2 de identificar_paso_limitante_jornada_desfases
+    vecino supervisar_tarea_delegada_etapa_menor_valor  [levantada por: similitud_texto]
+      similitud_texto 0.368 | familia_id 0.222 | paso_contra_nodo 0.413
+      paso 1 del candidato contra paso 9 de supervisar_tarea_delegada_etapa_menor_valor
+    vecino agrupar_tareas_semejantes_aprovechar_preparacion  [levantada por: similitud_texto]
+      similitud_texto 0.368 | familia_id 0.000 | paso_contra_nodo 0.407
+      paso 3 del candidato contra paso 3 de agrupar_tareas_semejantes_aprovechar_preparacion
+
+[BLOQUEARIA] supervisar_tarea_delegada_etapa_menor_valor   (supervisar_tarea_delegada_etapa_menor_valor.json)
+    vecino detectar_arreglar_fallo_etapa_menor_valor  [levantada por: familia_id]
+      similitud_texto 0.226 | familia_id 0.333 | paso_contra_nodo 0.435
+      paso 1 del candidato contra paso 2 de detectar_arreglar_fallo_etapa_menor_valor
+    vecino supervisar_decision_delegada_preguntas_concretas  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.222 | paso_contra_nodo 0.429
+      paso 5 del candidato contra paso 3 de supervisar_decision_delegada_preguntas_concretas
+    vecino identificar_paso_limitante_jornada_desfases  [levantada por: similitud_texto]
+      similitud_texto 0.362 | familia_id 0.000 | paso_contra_nodo 0.361
+      paso 1 del candidato contra paso 3 de identificar_paso_limitante_jornada_desfases
+
+[BLOQUEARIA] tomar_mando_reunion_pares_presidente_ausente   (tomar_mando_reunion_pares_presidente_ausente.json)
+    vecino vencer_sindrome_grupo_pares_autoconfianza  [levantada por: similitud_texto]
+      similitud_texto 0.351 | familia_id 0.100 | paso_contra_nodo 0.472
+      paso 2 del candidato contra paso 5 de vencer_sindrome_grupo_pares_autoconfianza
+    vecino decidir_nivel_competente_inferior  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.468
+      paso 3 del candidato contra paso 7 de decidir_nivel_competente_inferior
+    vecino anunciar_decision_inesperada_reconvocar_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.368 | familia_id 0.100 | paso_contra_nodo 0.453
+      paso 6 del candidato contra paso 4 de anunciar_decision_inesperada_reconvocar_reunion
+    vecino construir_indicador_tendencia_patron  [levantada por: similitud_texto]
+      similitud_texto 0.358 | familia_id 0.000 | paso_contra_nodo 0.434
+      paso 2 del candidato contra paso 1 de construir_indicador_tendencia_patron
+
+[BLOQUEARIA] tomar_notas_copia_guion_reunion_individual   (tomar_notas_copia_guion_reunion_individual.json)
+    vecino conducir_reunion_individual_telefono_distancia  [levantada por: similitud_texto, paso_contra_nodo]
+      similitud_texto 0.472 | familia_id 0.222 | paso_contra_nodo 0.675
+      paso 2 del candidato contra paso 3 de conducir_reunion_individual_telefono_distancia
+    vecino alentar_asuntos_corazon_vigilar_final_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.515 | familia_id 0.091 | paso_contra_nodo 0.553
+      paso 7 del candidato contra paso 1 de alentar_asuntos_corazon_vigilar_final_reunion
+    vecino acumular_asuntos_importantes_fichero_espera  [levantada por: similitud_texto]
+      similitud_texto 0.503 | familia_id 0.000 | paso_contra_nodo 0.549
+      paso 1 del candidato contra paso 1 de acumular_asuntos_importantes_fichero_espera
+    vecino fijar_frecuencia_reunion_individual_madurez_tarea  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.200 | paso_contra_nodo 0.506
+      paso 5 del candidato contra paso 5 de fijar_frecuencia_reunion_individual_madurez_tarea
+    vecino programar_reunion_individual_cadena  [levantada por: similitud_texto]
+      similitud_texto 0.468 | familia_id 0.250 | paso_contra_nodo 0.469
+      paso 5 del candidato contra paso 4 de programar_reunion_individual_cadena
+    vecino preparar_guion_reunion_individual_subordinado  [levantada por: similitud_texto, familia_id]
+      similitud_texto 0.400 | familia_id 0.375 | paso_contra_nodo 0.466
+      paso 5 del candidato contra paso 4 de preparar_guion_reunion_individual_subordinado
+    vecino facilitar_expresion_subordinado_pregunta_mas  [levantada por: similitud_texto]
+      similitud_texto 0.432 | familia_id 0.000 | paso_contra_nodo 0.412
+      paso 6 del candidato contra paso 6 de facilitar_expresion_subordinado_pregunta_mas
+
+[BLOQUEARIA] transmitir_objetivos_prioridades_preferencias   (transmitir_objetivos_prioridades_preferencias.json)
+    vecino reunir_informacion_gerencial_vias_variadas  [levantada por: similitud_texto]
+      similitud_texto 0.419 | familia_id 0.000 | paso_contra_nodo 0.550
+      paso 1 del candidato contra paso 4 de reunir_informacion_gerencial_vias_variadas
+    vecino empujar_persona_reunion_direccion_preferida  [levantada por: similitud_texto]
+      similitud_texto 0.433 | familia_id 0.000 | paso_contra_nodo 0.455
+      paso 1 del candidato contra paso 5 de empujar_persona_reunion_direccion_preferida
+    vecino escalonar_fuentes_informacion_gerencial  [levantada por: similitud_texto]
+      similitud_texto 0.433 | familia_id 0.000 | paso_contra_nodo 0.380
+      paso 1 del candidato contra paso 1 de escalonar_fuentes_informacion_gerencial
+    vecino elegir_momento_actividad_palanca_maxima  [levantada por: similitud_texto]
+      similitud_texto 0.421 | familia_id 0.000 | paso_contra_nodo 0.394
+      paso 5 del candidato contra paso 1 de elegir_momento_actividad_palanca_maxima
+    vecino subir_productividad_gerencial_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.420 | familia_id 0.000 | paso_contra_nodo 0.407
+      paso 3 del candidato contra paso 2 de subir_productividad_gerencial_tres_vias
+    vecino buscar_actividad_alta_palanca_tres_vias  [levantada por: similitud_texto]
+      similitud_texto 0.411 | familia_id 0.000 | paso_contra_nodo 0.370
+      paso 2 del candidato contra paso 2 de buscar_actividad_alta_palanca_tres_vias
+    vecino programar_visita_area_observar_despachar  [levantada por: similitud_texto]
+      similitud_texto 0.391 | familia_id 0.000 | paso_contra_nodo 0.405
+      paso 1 del candidato contra paso 1 de programar_visita_area_observar_despachar
+
+[BLOQUEARIA] usar_calendario_herramienta_planificacion_produccion   (usar_calendario_herramienta_planificacion_produccion.json)
+    vecino decir_no_trabajo_excede_capacidad  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.000 | paso_contra_nodo 0.431
+      paso 7 del candidato contra paso 7 de decir_no_trabajo_excede_capacidad
+
+[BLOQUEARIA] usar_tres_clases_reunion_proceso   (usar_tres_clases_reunion_proceso.json)
+    vecino infundir_regularidad_reunion_proceso  [levantada por: similitud_texto]
+      similitud_texto 0.500 | familia_id 0.286 | paso_contra_nodo 0.409
+      paso 3 del candidato contra paso 1 de infundir_regularidad_reunion_proceso
+    vecino fijar_duracion_lugar_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.394 | familia_id 0.111 | paso_contra_nodo 0.465
+      paso 2 del candidato contra paso 10 de fijar_duracion_lugar_reunion_individual
+    vecino preparar_guion_reunion_individual_subordinado  [levantada por: similitud_texto]
+      similitud_texto 0.408 | familia_id 0.111 | paso_contra_nodo 0.463
+      paso 1 del candidato contra paso 2 de preparar_guion_reunion_individual_subordinado
+    vecino cubrir_indicadores_problemas_reunion_individual  [levantada por: similitud_texto]
+      similitud_texto 0.363 | familia_id 0.111 | paso_contra_nodo 0.445
+      paso 1 del candidato contra paso 10 de cubrir_indicadores_problemas_reunion_individual
+    vecino fijar_frecuencia_reunion_individual_madurez_tarea  [levantada por: similitud_texto]
+      similitud_texto 0.404 | familia_id 0.100 | paso_contra_nodo 0.420
+      paso 1 del candidato contra paso 2 de fijar_frecuencia_reunion_individual_madurez_tarea
+
+[ENTRARIA] variar_frecuencia_inspeccion_nivel_calidad   (variar_frecuencia_inspeccion_nivel_calidad.json)
+
+[BLOQUEARIA] vencer_sindrome_grupo_pares_autoconfianza   (vencer_sindrome_grupo_pares_autoconfianza.json)
+    vecino aprender_resultados_vencer_dos_presiones  [levantada por: paso_contra_nodo]
+      similitud_texto 0.217 | familia_id 0.111 | paso_contra_nodo 0.712
+      paso 3 del candidato contra paso 4 de aprender_resultados_vencer_dos_presiones
+    vecino tomar_mando_reunion_pares_presidente_ausente  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.100 | paso_contra_nodo 0.484
+      paso 5 del candidato contra paso 2 de tomar_mando_reunion_pares_presidente_ausente
+    vecino decidir_nivel_competente_inferior  [levantada por: similitud_texto]
+      similitud_texto 0.363 | familia_id 0.000 | paso_contra_nodo 0.462
+      paso 1 del candidato contra paso 4 de decidir_nivel_competente_inferior
+    vecino anunciar_decision_inesperada_reconvocar_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.431 | familia_id 0.000 | paso_contra_nodo 0.404
+      paso 2 del candidato contra paso 6 de anunciar_decision_inesperada_reconvocar_reunion
+    vecino planificar_tres_pasos_demanda_estado_brecha  [levantada por: similitud_texto]
+      similitud_texto 0.406 | familia_id 0.000 | paso_contra_nodo 0.390
+      paso 5 del candidato contra paso 3 de planificar_tres_pasos_demanda_estado_brecha
+    vecino cortar_discusion_libre_momento_justo  [levantada por: similitud_texto]
+      similitud_texto 0.396 | familia_id 0.000 | paso_contra_nodo 0.400
+      paso 5 del candidato contra paso 5 de cortar_discusion_libre_momento_justo
+    vecino definir_entorno_grupo_clientes_proveedores_competidores  [levantada por: similitud_texto]
+      similitud_texto 0.388 | familia_id 0.100 | paso_contra_nodo 0.400
+      paso 5 del candidato contra paso 3 de definir_entorno_grupo_clientes_proveedores_competidores
+    vecino archivar_indicadores_resolver_problemas  [levantada por: similitud_texto]
+      similitud_texto 0.363 | familia_id 0.000 | paso_contra_nodo 0.396
+      paso 5 del candidato contra paso 1 de archivar_indicadores_resolver_problemas
+    vecino ejercer_poder_posicion_etapa_decision_clara  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.383
+      paso 1 del candidato contra paso 6 de ejercer_poder_posicion_etapa_decision_clara
+    vecino supervisar_decision_delegada_preguntas_concretas  [levantada por: similitud_texto]
+      similitud_texto 0.364 | familia_id 0.000 | paso_contra_nodo 0.379
+      paso 1 del candidato contra paso 5 de supervisar_decision_delegada_preguntas_concretas
+    vecino contestar_dos_preguntas_direccion_objetivos  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.360
+      paso 2 del candidato contra paso 5 de contestar_dos_preguntas_direccion_objetivos
+    vecino cerrar_brecha_dos_preguntas_estrategia  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.000 | paso_contra_nodo 0.337
+      paso 3 del candidato contra paso 3 de cerrar_brecha_dos_preguntas_estrategia
+
+[BLOQUEARIA] zanjar_seis_preguntas_decision_adelantado   (zanjar_seis_preguntas_decision_adelantado.json)
+    vecino anunciar_decision_inesperada_reconvocar_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.111 | paso_contra_nodo 0.516
+      paso 9 del candidato contra paso 7 de anunciar_decision_inesperada_reconvocar_reunion
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

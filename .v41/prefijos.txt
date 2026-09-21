@@ -1,0 +1,7 @@
+    $ grep -oE "^## [A-Z]{2}\." docs/loop/REPORTE.md | sort -u
+      ## AA.
+      ## AB.
+      ## AC.
+      ## BC.
+      ## CC.
+      ## DC.

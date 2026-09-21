@@ -1,0 +1,42 @@
+INICIO 2026-09-20T14:19:02-04:00
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 423   (346 del grafo mas 77 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : similitud_texto 3
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] fijar_horizonte_ventana_replanificacion   (fijar_horizonte_ventana_replanificacion.json)
+    vecino fijar_periodo_direccion_objetivos_retroalimentacion  [levantada por: similitud_texto]
+      similitud_texto 0.385 | familia_id 0.125 | paso_contra_nodo 0.430
+      paso 1 del candidato contra paso 2 de fijar_periodo_direccion_objetivos_retroalimentacion
+    vecino determinar_estado_presente_capacidades_proyectos_merma  [levantada por: similitud_texto]
+      similitud_texto 0.358 | familia_id 0.000 | paso_contra_nodo 0.394
+      paso 1 del candidato contra paso 4 de determinar_estado_presente_capacidades_proyectos_merma
+    vecino anunciar_decision_inesperada_reconvocar_reunion  [levantada por: similitud_texto]
+      similitud_texto 0.357 | familia_id 0.000 | paso_contra_nodo 0.365
+      paso 4 del candidato contra paso 6 de anunciar_decision_inesperada_reconvocar_reunion
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+
+real	3m32.308s
+user	0m0.000s
+sys	0m0.015s
+FIN 2026-09-20T14:22:34-04:00

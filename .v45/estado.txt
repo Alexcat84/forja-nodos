@@ -1,0 +1,7 @@
+$ python .v45/estado.py
+poblacion: el arbol entero, sin filtrar
+dataset/nodos.jsonl                      : 346 nodos
+bitacora/VEREDICTOS.jsonl                : 740 lineas
+cuarentena/grove_high_output             : 22
+cuarentena/_insertados/grove_high_output : 1
+la bandeja de grove por capitulo         : cap_02 7, cap_03 15

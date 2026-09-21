@@ -1,0 +1,15 @@
+desplegar_tres_conversaciones_carrera          nodos=303 ver=2 levantados=2 declarados=0 cableadas=0 cola=2
+conversar_historia_vida_descubrir_motivadores  nodos=304 ver=2 levantados=2 declarados=0 cableadas=2 cola=0
+conversar_suenios_cruzar_habilidades           nodos=305 ver=2 levantados=0 declarados=2 cableadas=1 cola=0
+trazar_plan_dieciocho_meses_aprendizaje        nodos=306 ver=4 levantados=1 declarados=3 cableadas=1 cola=0
+armar_plan_anual_crecimiento_equipo            nodos=307 ver=3 levantados=2 declarados=1 cableadas=0 cola=1
+montar_proceso_contratacion_reducir_sesgo      nodos=308 ver=2 levantados=0 declarados=2 cableadas=0 cola=0
+facilitar_despido_tres_cosas                   nodos=309 ver=1 levantados=0 declarados=1 cableadas=1 cola=0
+admitir_pronto_mal_desempenio_cuatro_razones   nodos=310 ver=4 levantados=2 declarados=2 cableadas=1 cola=0
+calibrar_decision_despido_documentarla         nodos=311 ver=4 levantados=1 declarados=3 cableadas=1 cola=0
+sopesar_consejo_legal_despedir_humildad        nodos=312 ver=3 levantados=2 declarados=1 cableadas=1 cola=0
+contactar_despedido_mes_despues                nodos=313 ver=2 levantados=0 declarados=2 cableadas=0 cola=0
+calibrar_ascensos_evitar_politica              nodos=314 ver=3 levantados=2 declarados=1 cableadas=0 cola=0
+evitar_obsesion_ascenso_estatus                nodos=315 ver=2 levantados=1 declarados=1 cableadas=0 cola=1
+reconocer_excelencia_trayectoria_gradual       nodos=316 ver=2 levantados=0 declarados=2 cableadas=0 cola=0
+TOTALES veredictos=36 levantados=15 declarados=21 cola=4

@@ -1,0 +1,6 @@
+conducir_reuniones_salto_nivel_diez_reglas
+  nodos_siguientes: ['resolver_dudas_frecuentes_reuniones_salto_nivel']
+  nodos_previos   : []
+resolver_dudas_frecuentes_reuniones_salto_nivel
+  nodos_siguientes: []
+  nodos_previos   : ['conducir_reuniones_salto_nivel_diez_reglas']

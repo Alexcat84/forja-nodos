@@ -1,0 +1,10 @@
+    de la tabla de OO.2, releida hoy fila a fila del mismo fichero que la imprimio
+    unidad     tramos con nodo  de cero  rotulos y enlaces sin cuerpo
+    cap_06         32        8       24  P6, P11, P14, P22
+    cap_07         38        9       29  P2, P6, P7, P11, P13, P16, P19, P25, P31, P38
+    cap_08         12        0       12  ninguno
+    TOTAL          82       17       65
+
+    tramos que dan nodo, y todos dan UNO  : 17
+    nodos previstos en las tres unidades  : 17
+    tramos de cero, cada uno con su motivo: 65

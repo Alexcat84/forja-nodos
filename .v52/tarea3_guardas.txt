@@ -1,0 +1,11 @@
+    LA COMPROBACION SE HACE SOBRE EL ARBOL YA CORREGIDO, contra la version de git de la vuelta 51
+    ficha                                               prefijo     pasos      titulo  atribuciones
+    infundir_regularidad_reunion_proceso                   True      True        True          True
+    usar_tres_clases_reunion_proceso                       True      True        True          True
+    fijar_frecuencia_reunion_individual_madurez_tarea      True      True        True          True
+    fijar_duracion_lugar_reunion_individual                True      True        True          True
+    preparar_guion_reunion_individual_subordinado          True      True        True          True
+    cubrir_indicadores_problemas_reunion_individual        True      True        True          True
+
+    LAS SEIS PASAN LAS CUATRO: True
+    y el commit contra el que se comparan es b04ac62, que es el de la vuelta 51

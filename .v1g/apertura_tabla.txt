@@ -1,0 +1,30 @@
+LA APERTURA DE LA VUELTA 1 DEL FRENTE grove_high_output
+CONSTANTES DEL ENCARGO QUE ESTE INSTRUMENTO SOLO CONTRASTA: unidades=18, palabras=64862
+
+| pieza | valor | de donde sale |
+|---|---:|---|
+| rama | `extraccion-grove_high_output` | `git rev-parse --abbrev-ref HEAD` |
+| commit al abrir mi turno | `be2b678` | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | **270** | `dataset/nodos.jsonl` |
+| aristas por `nodos_siguientes` | **105** | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | **105** | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **396** | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con `no_consumada: true` | **14** | `bitacora/VEREDICTOS.jsonl` |
+| unidades de `grove_high_output` | **18** | PATRON: `fuentes/grove_high_output/cap_*.md` |
+| palabras de fichero, las 18 unidades | **64.862** | PATRON: `fuentes/grove_high_output/cap_*.md` |
+| palabras de cuerpo, de `L8` en adelante | **64.372** | PATRON: `fuentes/grove_high_output/cap_*.md` |
+| candidatos en bandeja de este libro | **0** | PATRON: `cuarentena/grove_high_output/*.json`. VACIA A PROPOSITO: es la vuelta 1 del frente y la bandeja se abre hoy |
+| ficheros `.json` en las bandejas, contados a ojo | **241** | PATRON: `cuarentena/*/*.json` |
+| de ellos, poblacion que la ADUANA admite al barrido | **78** | `src/aduana.py`, `poblacion_de_bandejas()` |
+| poblacion que vera cada informe mio | **348** | `dataset/nodos.jsonl` mas `src/aduana.py`, `poblacion_de_bandejas()` |
+
+CONTRASTE CONTRA EL ENCARGO (EXTRACTOR.md 5: si discrepan, se declara)
+  unidades : encargo 18, medido 18, IGUALES
+  palabras : encargo 64862, medido de fichero 64862, IGUALES
+  y la ficha canonica dice 64.372 de CUERPO; medido de cuerpo 64372
+
+REPARTO DE LA POBLACION DE BANDEJAS, que es lo que D.38.5 manda citar con su reparto
+  marquet_turn_the_ship           3
+  scott_radical_candor           75
+  y FUERA DEL BARRIDO              163   (los de cuarentena/ensayo_referencia_163/,
+                                        clave quality_is_free_the, no canonica)

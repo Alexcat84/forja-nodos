@@ -1,0 +1,10 @@
+$ python .v54/p11_senal.py
+EL EJEMPLAR: pedir_critica_primero_crear_seguridad_psicologica
+  U+0008 en el texto CRUDO (titulo+resumen+pasos) : 2
+  U+0008 en texto_comparable, la del aduana        : 0
+  largo crudo 12519, largo comparable 12208
+
+  Y LA HUELLA DE D.15, que es la que dice si una lectura sigue viva:
+    huella_de_nodo : d228fe61d4d02678
+    la misma huella SIN los dos controles : d228fe61d4d02678
+    cambia la huella al quitarlos? NO

@@ -1,0 +1,10 @@
+$ python .v42/tanda_cierre.py
+lineas al abrir                    : 514
+lineas al cerrar                   : 729
+veredictos escritos en esta vuelta : 215
+  CONTINUA                     : 24
+  SANO                         : 191
+con arista escrita                 : 24
+levantados por una SENIAL          : 46
+declarados por LECTURA             : 169
+SIN RAZON ESCRITA                  : 0   <-- tiene que salir 0

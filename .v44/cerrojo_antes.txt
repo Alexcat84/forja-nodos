@@ -1,0 +1,5 @@
+$ ls procesos/
+nodos.jsonl.679b2259.cerrojo
+
+$ cat procesos/*.cerrojo
+{"pid": 30764, "desde": 1789775347.2028258}

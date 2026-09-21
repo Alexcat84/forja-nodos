@@ -1,0 +1,10 @@
+$ git log --oneline -1 -- docs/loop/APERTURA_CIEGA.md
+6a4f694 Apertura ciega de la vuelta 1, sellada antes de exponer el reporte
+$ git log --oneline 1ae327e..6a4f694   la ventana entre el cierre de la V.33 y ese commit
+6a4f694 Apertura ciega de la vuelta 1, sellada antes de exponer el reporte
+$ git stash && git checkout 6315b30 && python scripts/tallar_reporte.py --estricto   (el commit que ABRIO mi turno)
+  TALLADO EN ROJO (estricto): 1 tabla(s) declaran instrumento y no se pueden comprobar.
+$ python scripts/tallar_reporte.py --estricto   HOY, al cerrar
+  SIN COMPROBAR  docs/loop/APERTURA_CIEGA.md linea 500
+    el instrumento no imprime ninguna tabla: esta la resume, no la reproduce
+  TALLADO EN ROJO (estricto): 1 tabla(s) declaran instrumento y no se pueden comprobar.

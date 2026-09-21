@@ -1,0 +1,2 @@
+08:30:15 arranca informe candidato 1
+08:36:24 termina informe candidato 1

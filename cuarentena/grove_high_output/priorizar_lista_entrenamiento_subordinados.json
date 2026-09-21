@@ -1,0 +1,36 @@
+{
+ "id": "priorizar_lista_entrenamiento_subordinados",
+ "titulo": "Priorizar la lista de en que hay que entrenar a los subordinados, tras preguntarles e inventariar los medios disponibles",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [
+  {
+   "clave": "grove_high_output",
+   "fecha": "2026-09-21"
+  }
+ ],
+ "denominaciones": {
+  "nombre_largo": "El listado y la priorizacion de los temas de entrenamiento antes de desarrollar ningun curso",
+  "sigla": "",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "embrace the gospel of training"
+   }
+  ]
+ },
+ "condiciones_activacion": "Cuando el mando decide abrazar el entrenamiento como tarea propia y necesita decidir por donde empezar, antes de desarrollar ningun curso.",
+ "entregable_esperado": "Una lista de temas de entrenamiento priorizada, contrastada con lo que los propios subordinados dicen necesitar y con el inventario de mando maestros y materiales disponibles para impartirla.",
+ "pasos_accionables": [
+  "Haz una lista de las cosas en que crees que tus subordinados o los miembros de tu departamento deberian entrenarse, sin limitar el alcance de la lista.",
+  "Incluye items que van desde lo que parece simple, como entrenar a la persona que atiende el telefono, hasta cosas mas generales y elevadas, como los objetivos y los sistemas de valores de tu departamento, tu planta y tu empresa.",
+  "Pregunta a la gente que trabaja para ti que siente que necesita: es probable que te sorprenda contandote necesidades que nunca supiste que existian.",
+  "Hecho esto, toma inventario de los mando maestros y los materiales instructivos disponibles para ayudar a impartir el entrenamiento de los items de tu lista.",
+  "Asigna prioridades entre esos items."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_17.md, unidad Cap. 16, titulo textual Why Training Is the Boss's Job. Sale de la PIEZA P21 de la frontera publicada hoy en .v60ext/frontera.txt (tabla de cap_17), L49 a L51, 131 palabras. FRONTERA DENTRO DEL NODO, PUBLICADA ANTES DE CORTAR (EXTRACTOR.md 10): L49 abre con la pregunta retorica de que hacer si se abraza el entrenamiento y da los tres primeros pasos (lista sin limitar alcance, rango de ejemplos, preguntar a la gente); L51 cierra la pieza con los dos ultimos (inventario de medios, asignar prioridades). POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el texto trae su propia secuencia de acciones nombradas una a una (hacer la lista, no limitar su alcance, preguntar a la gente, inventariar medios, priorizar), y son ETAPAS de un mismo procedimiento de planificacion, no metas ni un adjetivo de adecuacion en el sitio del criterio. DE DONDE SALE CADA PASO, uno a uno, verificado con grep -n hoy: paso 1 y 2 de L49 (grep -n 'make a list of the things' fuentes/grove_high_output/cap_17.md da 49: 'So what should you do if you embrace the gospel of training? For starters, make a list of the things you feel your subordinates or the members of your department should be trained in. Don't limit the scope of your list. Items should range from what seems simple...'); paso 3 tambien de L49 (Ask the people working for you what they feel they need. They are likely to surprise you by telling you of needs you never knew existed.); paso 4 y 5 de L51 (grep -n 'Having done this, take an inventory' fuentes/grove_high_output/cap_17.md da 51: 'Having done this, take an inventory of the manager-teachers and instructional materials available to help deliver training on items on your list. Then assign priorities among these items.'). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 5 pasos, 5 TRANSCRIPCION, 0 PUENTE. No escribo destinatario, responsable ni periodo porque el parrafo no los pone: el libro deja el listado y el orden de ejecucion a criterio del propio mando, y fijarlos yo seria la especie de puente del destinatario y del periodo que 15.4 nombra por su nombre. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: separo esta pieza (L49 a L51) de la pieza de desarrollo del curso (L53 a L59, node desarrollar_primer_curso_entrenamiento) como dos nodos distintos porque cada una tiene su propio entregable (una lista priorizada la primera, un primer curso dictado la segunda) y su propia condicion de activacion (antes de desarrollar el curso, la primera; una vez elegido el tema, la segunda); un lector que las lea como una sola secuencia continua podria fundirlas en un solo nodo de cinco mas siete pasos. Si cae, cae DENTRO de mi marcado."
+}

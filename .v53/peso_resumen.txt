@@ -1,0 +1,7 @@
+    id                                             comparable    resumen      pasos  resumen
+                                                   caracteres caracteres caracteres        %
+    anunciar_decision_inesperada_reconvocar_reunio       3466       2880        569    83.1
+    vencer_sindrome_grupo_pares_autoconfianza            3237       2593        611    80.1
+    cortar_discusion_libre_momento_justo                 3825       2958        853    77.3
+    conducir_etapas_modelo_ideal_decision                6138       4315       1861    70.3
+    zanjar_seis_preguntas_decision_adelantado            4381       3638        739    83.0

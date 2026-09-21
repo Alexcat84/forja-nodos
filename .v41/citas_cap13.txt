@@ -1,0 +1,12 @@
+    $ python -c "ls=open(...cap_13.md,encoding=utf-8).read().split(chr(10));print(ls[112][145:260])"
+      113:  criticism? We’d like to go into more detail on each of the four tips for soliciting criticism offered in the book.
+    $ sed -n '187p' fuentes/scott_radical_candor/cap_13.md
+      187: EMBRACE THE DISCOMFORT
+    $ sed -n '199p' fuentes/scott_radical_candor/cap_13.md
+      199: LISTEN WITH THE INTENT TO UNDERSTAND, NOT TO REPLY
+    $ sed -n '215p' fuentes/scott_radical_candor/cap_13.md
+      215: MAKE LISTENING TANGIBLE: REWARD THE CANDOR
+    $ python -c "...;print(ls[236][:67])"   (el libro trae un guion largo en el 68, y por eso corto ahi)
+      237: Now that you’ve practiced the four elements of soliciting criticism
+    $ python -c "...;print(ls[236][68:221])"
+      237: coming up with a go-to question, embracing the discomfort, listening with the intent to understand, and making listening tangible by rewarding the candor

@@ -1,0 +1,41 @@
+{
+  "id": "demostrar_apertura_visiones_distintas",
+  "titulo": "Demostrar apertura hacia quien tiene otra vision del mundo, empezando por el respeto basico y acabando por el lenguaje que usas",
+  "denominaciones": {
+    "nombre_largo": "Demostrar apertura: no hace falta compartir valores para construir relacion, y el trabajo es el vinculo que si comparte todo el equipo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "demonstrating openness"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando en tu equipo hay gente cuya vision del mundo no es la tuya y la convivencia se esta resolviendo a base de que unos se callen.",
+  "entregable_esperado": "Un equipo donde nadie tiene que morderse la lengua para caber, con el vinculo del trabajo reforzado y el lenguaje que excluye retirado del tuyo.",
+  "pasos_accionables": [
+    "Cuenta con que no hace falta compartir los mismos valores personales profundos para construir buenas relaciones en el trabajo.",
+    "No intentes convencer a tus companieros de que tus valores son los correctos y los suyos los equivocados, que el texto llama una idea terrible.",
+    "Pero respeta los valores de los demas cuando si te los cuenten.",
+    "Cuenta con que esto corre en los dos sentidos: el texto dice que varios companieros suyos se quejaron de tener que callarse sus opiniones politicas conservadoras en San Francisco para que no les apartaran, y que da lo mismo si es el hombre homosexual que tiene que aguantar los chistes contra los homosexuales o el conservador que tiene que aguantar los chistes contra los conservadores, porque el resultado es el mismo: una parte de ellos queda negada y no pueden evitar sentirse ajenos y no libres en el trabajo.",
+    "Recuerdale a la gente que una parte importante de estas relaciones es abrirte a la posibilidad de conectar con personas que tienen otra vision del mundo, o cuya vida incluye conductas que no entiendes o que incluso chocan con una creencia central tuya.",
+    "Cuenta con que se puede querer de verdad a una persona que no esta de acuerdo contigo sobre el aborto, sobre las armas o sobre Dios.",
+    "No exijas que todo el mundo tenga la misma vision del mundo antes de construir una relacion con ellos: el texto dice que ese es el camino mas rapido a las relaciones artificiales en el trabajo y a la atraccion gravitatoria de la mediocridad de la organizacion.",
+    "Empieza por el respeto basico y la decencia comun que cualquier persona le debe a otra, sea cual sea su vision del mundo.",
+    "Y refuerza el vinculo que si comparte todo el equipo, que es el trabajo, aprendiendo a trabajar juntos de maneras que beneficien a todos los implicados.",
+    "Quita de tu vocabulario el lenguaje que finge que un grupo de personas no esta en la sala: el texto cuenta que Dick Costolo, cuando entendio que las ninias de un aula no levantan la mano si la maestra dice you guys, dijo que no hay peor manera de hacer que un grupo se sienta excluido, y gasto esfuerzo de verdad en entrenarse para decir you all en vez de you guys, porque cambiar el giro reflejo no es facil."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_08.md, lineas 105 a 121, bajo el rotulo Demonstrating openness, dentro de la seccion RESPECT BOUNDARIES, que no tiene cabeza propia. EL CASO DE DICK COSTOLO VA NOMBRADO DENTRO DEL P10 y es el unico acto ejecutable de las lineas 113 a 121: entrenarse para cambiar un giro reflejo del lenguaje. LO QUE DEJO FUERA DE ESE CASO Y DIGO POR QUE: la linea 113 cuenta que Costolo hizo el Test de Asociacion Implicita y que sus resultados le dieron practicamente ningun sesgo inconsciente. Eso NO da paso, porque no es un acto que el texto encargue ni una cifra que el libro afirme como dato: es un rasgo del retratado. Tampoco entra como atribucion, por la misma razon por la que establecer_credibilidad_pericia_humildad dejo fuera los 15.600 millones de dolares. LA PIEZA TIENE UNA SIMETRIA QUE EL LIBRO ESCRIBE Y QUE NO SE PODIA PARTIR: el hombre homosexual y el conservador aparecen en la misma frase y con el mismo resultado, asi que van en el mismo paso, el P4. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 10 pasos, 10 TRANSCRIPCION, 0 PUENTE. P1, P2 y P3 de la linea 107; P4 de la 109; P5, P6, P7, P8 y P9 de la 111; P10 de las lineas 115, 119 y 121. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: que se hace con el companiero que si insiste en convencer a los demas, y donde acaba el respeto a un valor ajeno cuando ese valor hace danio a alguien del equipo.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

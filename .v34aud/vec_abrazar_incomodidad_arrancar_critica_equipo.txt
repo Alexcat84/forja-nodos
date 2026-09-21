@@ -1,0 +1,24 @@
+    poblacion de grafo para abrazar_incomodidad_arrancar_critica_equipo: quitadas 1 lineas suyas
+===== BARRIDO DE abrazar_incomodidad_arrancar_critica_equipo =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (296 del grafo mas 51 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] abrazar_incomodidad_arrancar_critica_equipo   (abrazar_incomodidad_arrancar_critica_equipo.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

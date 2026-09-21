@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'integrar_trabajo_vida_mejor_version'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (270 del grafo mas 78 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 271
+  censos escritos: denominaciones

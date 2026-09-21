@@ -1,0 +1,22 @@
+$ sed -n '23p' fuentes/grove_high_output/cap_06.md | cut -c1-96
+Illustrated on this page is an ideal model of decision-making in a know-how business. The first 
+$ sed -n '25p' fuentes/grove_high_output/cap_06.md | cut -c1-96
+The ideal decision-making process.
+$ sed -n '27p' fuentes/grove_high_output/cap_06.md | cut -c1-96
+The next stage is reaching a clear decision. Again, the greater the disagreement about the issue
+$ sed -n '29p' fuentes/grove_high_output/cap_06.md | cut -c1-96
+Finally, everyone involved must give the decision reached by the group full support. This does n
+$ sed -n '33p' fuentes/grove_high_output/cap_06.md | cut -c1-96
+Another desirable and important feature of the model is that any decision be worked out and reac
+$ sed -n '49p' fuentes/grove_high_output/cap_06.md | cut -c1-96
+You can overcome the peer-group syndrome if each of the members has self-confidence, which stems
+$ sed -n '51p' fuentes/grove_high_output/cap_06.md | cut -c1-96
+If the peer-group syndrome manifests itself, and the meeting has no formal chairman, the person 
+$ sed -n '61p' fuentes/grove_high_output/cap_06.md | cut -c1-96
+Sometimes no amount of discussion will produce a consensus, yet the time for a decision has clea
+$ sed -n '63p' fuentes/grove_high_output/cap_06.md | cut -c1-96
+If you either enter the decision-making stage too early or wait too long, you won’t derive the
+$ sed -n '65p' fuentes/grove_high_output/cap_06.md | cut -c1-96
+Basically, like other things managers do, decision-making has an output associated with it, whic
+$ sed -n '93p' fuentes/grove_high_output/cap_06.md | cut -c1-96
+One last thing. If the final word has to be dramatically different from the expectations of the 

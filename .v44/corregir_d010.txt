@@ -1,0 +1,10 @@
+CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+  nodo : dar_elogio_disciplina_igual_critica
+  campo: resumen_teorico
+  el texto viejo SIGUE ENTERO: 4237 caracteres, ninguno borrado
+  se aniaden 1145 caracteres al final
+  huella antes  : af5c6c48d2b60c7c
+  huella despues: e61505b50710934d
+
+GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: dar_elogio_disciplina_igual_critica
+  razon en bitacora/VEREDICTOS.jsonl

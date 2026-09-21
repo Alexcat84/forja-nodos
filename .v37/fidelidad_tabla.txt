@@ -1,0 +1,22 @@
+| unidad | lineas | pasos | TRANSCRIPCION | PUENTE | por ciento |
+|---|---:|---:|---:|---:|---:|
+| `desplegar_plan_orden_operaciones_franqueza_radical` | L13-L49 | 42 | 41 | **1** | 2,38 |
+| `contar_historias_propias_explicar_franqueza_radical` | L17 | 8 | 8 | **0** | 0,00 |
+| **TOTAL de `cap_12`** | | **50** | **49** | **1** | **2,00** |
+| `mejorar_consciencia_propia_relacional_dos_practicas` | L17-L22,L35-L40 | 13 | 13 | **0** | 0,00 |
+| `contar_cuatro_historias_propias_ver_hueco_intencion` | L41-L58 | 17 | 17 | **0** | 0,00 |
+| `practicar_triangulo_critica_tres_papeles` | L59-L72 | 15 | 15 | **0** | 0,00 |
+| `pedir_critica_primero_crear_seguridad_psicologica` | L73-L86,L105-L114 | 17 | 17 | **0** | 0,00 |
+| `elegir_pregunta_recurrente_pedir_critica` | L115-L120,L129-L166 | 24 | 24 | **0** | 0,00 |
+| `resolver_dudas_frecuentes_pedir_critica` | L167-L186 | 15 | 15 | **0** | 0,00 |
+| `abrazar_incomodidad_silencio_contar_seis` | L187-L198 | 12 | 12 | **0** | 0,00 |
+| `escuchar_entender_critica_dominar_defensa` | L199-L214 | 13 | 13 | **0** | 0,00 |
+| `premiar_franqueza_hacer_escucha_tangible` | L215-L234 | 20 | 20 | **0** | 0,00 |
+| `integrar_peticion_critica_rutina_existente` | L111-L112,L235-L246 | 13 | 13 | **0** | 0,00 |
+| `dar_elogio_disciplina_igual_critica` | L247-L252,L267-L288 | 20 | 20 | **0** | 0,00 |
+| `medir_critica_respuesta_oyente_brujula` | L289-L322 | 33 | 33 | **0** | 0,00 |
+| **TOTAL de `cap_13`** | | **212** | **212** | **0** | **0,00** |
+| **TOTAL del tramo, `cap_12` mas `cap_13`** | | **262** | **261** | **1** | **0,38** |
+
+defectos de TRANSCRIPCION corregidos, que NO cuento como PUENTE: 2
+  si el auditor los lee como PUENTE, cap_13 pasa de 0 de 212 a 2 de 212, o sea 0,94 por ciento

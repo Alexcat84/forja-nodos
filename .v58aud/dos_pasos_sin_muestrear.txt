@@ -1,0 +1,22 @@
+$ sed -n '63p' fuentes/grove_high_output/cap_11.md   (la linea ENTERA, no un tercio)
+
+Let’s apply our model to the work of a new employee. What is his motivation? It is very much based on self-interest. So you should give him a clearly structured job with a low CUA factor. If he does well, he will begin to feel more at home, worry less about himself, and start to care more about his team. He learns that if he is on a boat and wants to get ahead, it is better for him to help row than to run to the bow. The employee can then be promoted into a more complex, uncertain, ambiguous job. (These tend to pay more.) As time passes, he will continue to gain an increasing amount of shared experience with other members of the organization and will be ready to tackle more and more complex, ambiguous, and uncertain tasks. This is why promotion from within tends to be the approach favored by corporations with strong corporate cultures. Bring young people in at relatively low-level, well-defined jobs with low CUA factors, and over time they will share experiences with their peers, supervisors, and subordinates and will learn the values, objectives, andmethods of the organization. They will gradually accept, even flourish in, the complex world of multiple bosses and peer decision-making.
+
+guiones largos o medios sustituidos por el corto: 0
+
+LOS DOS PASOS QUE LA MUESTRA NO ELIGIO, contra esa misma linea:
+  P4 de escalonar_complejidad_puesto_empleado_nuevo
+     'Promuevelo despues a un puesto mas complejo, incierto y ambiguo, que ademas suele pagar mas.'
+     en la linea: 'The employee can then be promoted into a more complex, uncertain,
+                   ambiguous job. (These tend to pay more.)'
+     esta en la linea: SI
+     y el parentesis del sueldo: SI
+
+  P6 de escalonar_complejidad_puesto_empleado_nuevo
+     'Reconoce que esta es la razon por la que la promocion interna es el enfoque
+      que favorecen las empresas con culturas corporativas fuertes.'
+     en la linea: 'This is why promotion from within tends to be the approach favored
+                   by corporations with strong corporate cultures.'
+     esta en la linea: SI
+
+VEREDICTO DE LOS DOS: TRANSCRIPCION. PUENTE: 0.

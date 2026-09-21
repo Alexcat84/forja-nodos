@@ -1,0 +1,19 @@
+ADUANA DE INSERCION, candidato 'correr_semana_arreglo_averias_gestion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 350   (284 del grafo mas 66 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino comprobar_criticas_hombre_mujeres_equipo  [Comprobar si te estas conteniendo al criticar a las mujeres de tu equipo, preguntandoselo a ellas y pidiendoles que te midan]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.431 (umbral 0.60)
+    paso 7 del candidato contra paso 2 de comprobar_criticas_hombre_mujeres_equipo
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 285
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1

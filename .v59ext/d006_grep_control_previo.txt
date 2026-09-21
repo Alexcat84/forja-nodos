@@ -1,0 +1,20 @@
+$ grep -n "mejorar_consciencia_propia_relacional_dos_practicas" docs/loop/ACTA_AUDITOR.md
+30538:     13 vs  13  mejorar_consciencia_propia_relacional_dos_practicas
+30863:| `6` | mis tres discutibles contra los suyos | **LOS TRES SE SOSTIENEN EN SU CLASE.** El `1` (`mejorar_consciencia_propia_relacional_dos_practicas`) y el `2` (`resolver_dudas_frecuentes_pedir_critica`) coinciden con su lectura; **el `3` era mi `0` de `262` y CAE CONTRA MI** (seccion 8) |
+30983:    OK mejorar_consciencia_propia_relacional_dos_practicas  (319 nodos, bandeja 26)
+31038:      mejorar_consciencia_propia_relacional_dos_practicas   13  GRAFO
+31077:Mi apertura sellada `7.1` levanto que `mejorar_consciencia_propia_relacional_dos_practicas`, **que entro al grafo en esta vuelta**, tiene por unicos imperativos los nombres de sus dos partes (`P11` y `P12`), que es la figura que `P.5.1` congelo. **Lo deje levantado y sin adjudicar a proposito, porque si cae, cae sobre un nodo ya insertado y esa sede es `CLASE`.**
+$ grep -n "practicar_triangulo_critica_tres_papeles" docs/loop/ACTA_AUDITOR.md
+30540:     15 vs  15  practicar_triangulo_critica_tres_papeles
+30966:**EL DELTA ES TRABAJO BUENO SIN COMMITEAR, no un descuadre:** `contar_cuatro_historias_propias_ver_hueco_intencion` y `practicar_triangulo_critica_tres_papeles`, con sus siete veredictos. **Los commitea esta acta**, que es lo que `EXTRACTOR.md` 1.1 manda hacer al abrir el turno siguiente.
+30985:    OK practicar_triangulo_critica_tres_papeles             (321 nodos, bandeja 24)
+31036:      practicar_triangulo_critica_tres_papeles              15  GRAFO
+31189:      [arista_rota] ... apunta a 'practicar_triangulo_critica_tres_papelesX', que no existe
+31199:      [guiones] practicar_triangulo_critica_tres_papeles: pasos_accionables[0] contiene guion largo
+31447:      487            practicar_triangulo_critica_tres_papeles   CORREGIDO     1
+$ grep -n "resolver_dudas_frecuentes_pedir_critica" docs/loop/ACTA_AUDITOR.md
+29688:| `3` | `resolver_dudas_frecuentes_reuniones` contra `resolver_dudas_frecuentes_pedir_critica` | `SANO`, sin arista | `SANO` | **coincide** |
+30543:     15 vs  15  resolver_dudas_frecuentes_pedir_critica
+30863:| `6` | mis tres discutibles contra los suyos | **LOS TRES SE SOSTIENEN EN SU CLASE.** El `1` (`mejorar_consciencia_propia_relacional_dos_practicas`) y el `2` (`resolver_dudas_frecuentes_pedir_critica`) coinciden con su lectura; **el `3` era mi `0` de `262` y CAE CONTRA MI** (seccion 8) |
+31037:      resolver_dudas_frecuentes_pedir_critica               15  bandeja
+31625:      resolver_dudas_frecuentes_pedir_critica              15

@@ -1,0 +1,17 @@
+$ python forja.py tablero --puedo grove_high_output
+LINEA 'serial', LIBRO 'grove_high_output': SI
+  'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_07), citando su frontera. D.50.
+
+$ ls cuarentena/grove_high_output/*.json | wc -l
+65
+
+$ for f in cuarentena/grove_high_output/*.json; do grep -ho "cap_[0-9]*\.md" $f | head -1; done | sort | uniq -c
+      7 cap_02.md
+     15 cap_03.md
+     22 cap_04.md
+     12 cap_05.md
+      8 cap_06.md
+      1 cap_07.md
+
+$ grep -l "cap_07.md" cuarentena/grove_high_output/*.json
+cuarentena/grove_high_output/planificar_tres_pasos_demanda_estado_brecha.json

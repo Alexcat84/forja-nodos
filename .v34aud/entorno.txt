@@ -1,0 +1,22 @@
+$ date
+Thu, Sep 17, 2026 12:46:34 PM
+
+$ python -c hoy
+2026-09-17
+
+$ ls procesos/
+total 64
+drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 12:30 ./
+drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 12:28 ../
+
+$ git ls-files dataset/ | head
+dataset/nodos.jsonl
+
+$ ls censos/
+atribuciones.md
+casos.md
+denominaciones.md
+herramientas.md
+marco_pais.md
+series_y_cabezas.md
+vigencia.md

@@ -1,0 +1,8 @@
+$ stat -c "%y  %n" .v59ext/informe59_*.txt
+2026-09-21 00:22:55.448180300 -0400  .v59ext/informe59_1_elegir_modo_control.txt
+2026-09-21 00:37:40.207516300 -0400  .v59ext/informe59_2_escalonar_complejidad.txt
+2026-09-21 00:52:36.604462500 -0400  .v59ext/informe59_3_diagnosticar_capacidad.txt
+2026-09-21 01:08:15.863360800 -0400  .v59ext/informe59_4_fijar_meta.txt
+2026-09-21 01:25:06.902524900 -0400  .v59ext/informe59_5_diagnosticar_salario.txt
+2026-09-21 01:47:07.210490900 -0400  .v59ext/informe59_6_elegir_estilo.txt
+2026-09-21 02:01:05.862251400 -0400  .v59ext/informe59_7_decidir_amistad.txt

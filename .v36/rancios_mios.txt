@@ -1,0 +1,4 @@
+$ la huella de construir_confianza_equipo_tiempo_solas ANTES de mi arista y DESPUES
+  antes (commit d2d71cd): 51454685dd4c5a97
+  hoy                   : 51454685dd4c5a97
+  la que guardan los veredictos 402 a 411: d70267db73796f36

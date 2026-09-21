@@ -1,0 +1,40 @@
+{
+ "id": "usar_banco_nueve_preguntas_entrevista",
+ "titulo": "Usar el banco de nueve preguntas que un grupo de mandos considero las mejores para entrevistar a un candidato",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [
+  {
+   "clave": "grove_high_output",
+   "fecha": "2026-09-20"
+  }
+ ],
+ "denominaciones": {
+  "nombre_largo": "Las nueve preguntas que un grupo de mandos aporto como las mejores para plantear durante una entrevista de contratacion",
+  "sigla": "",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "best questions for an interview"
+   }
+  ]
+ },
+ "condiciones_activacion": "Cuando el mando va a entrevistar a un candidato a un puesto y necesita preguntas concretas para llenar la hora u hora y media de que dispone.",
+ "entregable_esperado": "Las respuestas del candidato a las nueve preguntas, que le dan al mando una base concreta y comparable para juzgar su desempeno pasado y sus valores operativos.",
+ "pasos_accionables": [
+  "Pide al candidato que describa proyectos que fueron muy valorados por su direccion, en especial por los niveles por encima de su supervisor inmediato.",
+  "Preguntale cuales son sus debilidades y que esta haciendo para eliminarlas.",
+  "Preguntale que te convenceria de que tu empresa deberia contratarlo.",
+  "Preguntale que problemas esta encontrando en su puesto actual, como los esta resolviendo y que podria haber hecho para evitar que aparecieran.",
+  "Preguntale por que cree que esta listo para este nuevo puesto.",
+  "Preguntale cuales considera sus logros mas importantes y por que fueron importantes para el.",
+  "Preguntale cuales considera sus fracasos mas importantes y que aprendio de ellos.",
+  "Si el puesto lo justifica, preguntale por que cree que deberia elegirse a un ingeniero para un puesto de marketing, o la variante equivalente segun la situacion.",
+  "Preguntale cual fue el curso o proyecto mas importante que completo en su etapa universitaria y por que fue tan importante."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_15.md, unidad Cap. 14, titulo textual Two Difficult Tasks. Sale de la PIEZA P11 a P12 de la frontera publicada hoy en .v58ext/frontera.txt, L37 a L55, 143 palabras. FRONTERA DENTRO DEL NODO, PUBLICADA ANTES DE CORTAR (EXTRACTOR.md 10): L37 es la cabeza que anuncia que un grupo de mandos aporto las preguntas, y L39 a L55 son las nueve preguntas literales, una por linea. POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el texto trae el inventario COMPLETO Y LITERAL de las nueve preguntas, cada una en su propia linea con guion, listas para usarse tal cual; es inventario de un OBJETO DE TRABAJO concreto (las preguntas mismas), no de fines ni de un adjetivo de adecuacion. DE DONDE SALE CADA PASO, uno a uno: paso 1 de L39 (Describe some projects that were highly regarded by your management, especially by the levels above your immediate supervisor); paso 2 de L41 (What are your weaknesses? How are you working to eliminate them?); paso 3 de L43 (Convince me why my company should hire you); paso 4 de L45 (What are some of the problems you are encountering in your current position? How are you going about solving them? What could you have done to prevent them from cropping up?); paso 5 de L47 (Why do you think you're ready for this new job?); paso 6 de L49 (What do you consider your most significant achievements? Why were they important to you?); paso 7 de L51 (What do you consider your most significant failures? What did you learn from them?); paso 8 de L53 (Why do you think an engineer should be chosen for a marketing position? Vary this one according to the situation.); paso 9 de L55 (What was the most important course or project you completed in your college career? Why was it so important?). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. LA CLASIFICACION DE LAS CUATRO CATEGORIAS NO ENTRA COMO NODO PROPIO (P.19, repeticion interna): L57 nombra cuatro categorias de informacion (tecnico, que hizo con el saber, discrepancias, valores operativos) y L59 a L87 reparten estas MISMAS nueve preguntas bajo esas cuatro categorias, sin aportar ninguna pregunta nueva. El objeto ya esta en casa: mandarlo a un nodo aparte fabricaria el gemelo de este banco de preguntas, asi que esa clasificacion queda fuera del catalogo esta vuelta y se deja escrito aqui por si una lectura futura encuentra un uso propio para ella que no dependa de repetir estas nueve preguntas."
+}

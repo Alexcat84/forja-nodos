@@ -1,0 +1,15 @@
+$ sed -n "41p" fuentes/scott_radical_candor/cap_12.md | cut -c152-320
+n.) Make sure that you are not creating a promotion-obsessed culture, and give some extra thought to how you’re rewarding your rock stars (see chapter seven).
+
+$ sed -n "19p" fuentes/scott_radical_candor/cap_10.md | cut -c78-190
+ and it’s a mistake to push everyone to be either a “superstar” or a “rock star.” You need to balance g
+
+$ sed -n "225p;227p" fuentes/scott_radical_candor/cap_10.md
+REWARD YOUR ROCK STARS
+Don’t give all the glory to the superstars
+
+$ sed -n "49p" fuentes/scott_radical_candor/cap_13.md | cut -c470-620
+is by definition better than the story Kim tells about the rude “clutter sites” email she sent to her boss’s boss’s boss (Chapter Two) because 
+
+$ sed -n "279p" fuentes/scott_radical_candor/cap_13.md | cut -c1-120
+When you’re vague with praise, it is just as likely to leave a person feeling patronized. And either way, vague positi

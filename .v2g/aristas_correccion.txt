@@ -1,0 +1,13 @@
+| # | madre | `--paso` | el paso de la madre, pegado de su fichero | hijo | regla | la linea del libro que la sostiene, pegada | por que no estaba en `AA.4` |
+|---:|---|---:|---|---|---|---|---|
+| 7 | `elegir_indicador_salida_trabajo_administrativo` | `5` | Fijate en que todos los de esa lista son indicadores de cantidad o de salida, y por eso emparejalos con una pareja que insista en la calidad del trabajo. | `emparejar_indicadores_efecto_contraefecto` | `D.29` | `L35: Nowhere can indicators-and paired indicators-be of more help than in administrative work. Having come to this realization, our company has been using ` | la linea que no habia pesado: L35 abre la seccion administrativa usando paired indicators como concepto YA INTRODUCIDO, y el que lo introdujo es L31, que es el hijo. El paso 5 de la madre manda emparejar en una linea y el hijo despliega el emparejado en siete pasos que la madre no tiene. En AA.4 lo rechace por creer que la pareja de calidad y la de contraefecto eran dos cosas distintas; lo son como EJEMPLO, no como procedimiento nombrado |
+| 8 | `casar_flujo_fabricacion_flujo_ventas` | `12` | Usa graficos escalonados en los dos pronosticos, el de fabricacion y el de ventas, y observa una y otra vez la desviacion de un pronostico respecto de otro para ir acotando las causas de inexactitud y mejorar tu capacidad de pronosticar tanto los pedidos como la disponibilidad de producto. | `construir_grafico_escalonado_pronosticos` | `D.29` | `L121: It is a good idea to use stagger charts in both the manufacturing and sales forecasts. As noted, they will show the trend of change from one forecast ` | la segunda linea que no habia pesado: L121 dice use stagger charts in both the manufacturing and sales forecasts. As noted, y ese As noted remite a L91, que es donde el grafico escalonado se monta. El paso 12 de la madre manda usarlos en dos sitios y el hijo es quien dice como se monta uno, en ocho pasos. En AA.4 esta arista no aparecia ni declarada ni rechazada: sencillamente no la habia visto |
+
+ARISTAS DECLARADAS EN AA.4                 : 6
+ARISTAS ANADIDAS POR ESTA CORRECCION       : 2
+TOTAL DECLARADAS POR LECTURA EN LA VUELTA  : 8
+CONSIDERADAS Y RECHAZADAS, TRAS CORREGIR   : 2
+  la del grafico escalonado como ventana de la caja negra: SIGUE RECHAZADA
+  la de barrera contra inspeccion variable               : SIGUE RECHAZADA
+  la de indicador administrativo con emparejar           : PASA A DECLARADA
+CABLEADAS HOY                              : 0   (D.45: este frente no inserta)

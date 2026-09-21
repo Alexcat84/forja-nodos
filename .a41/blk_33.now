@@ -1,0 +1,11 @@
+id      : abrazar_incomodidad_arrancar_critica_equipo
+titulo  : Abrazar la incomodidad para arrancarle la critica a tu equipo, con los seis consejos que el texto nombra uno a uno
+fuente  : [('scott_radical_candor', 'cap_09')]
+pasos   : 20
+siguient: ["elegir_pregunta_recurrente_pedir_critica", "abrazar_incomodidad_silencio_contar_seis", "escuchar_entender_critica_dominar_defensa", "premiar_franqueza_hacer_escucha_tangible"]
+
+id      : abrazar_incomodidad_silencio_contar_seis
+titulo  : Abrazar la incomodidad del silencio despues de pedir critica, aguantandolo mientras cuentas hasta seis en tu cabeza
+fuente  : [('scott_radical_candor', 'cap_13')]
+pasos   : 12
+siguient: []

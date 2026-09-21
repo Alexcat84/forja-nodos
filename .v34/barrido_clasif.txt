@@ -1,0 +1,15 @@
+registrar_fuente_canonica
+   fuentes : manual_sistema_conocimiento
+   dominio : forja
+hacer_repaso_posterior_proyecto
+   fuentes : zhuo_manager
+   dominio : gestion_equipos
+delimitar_franqueza_radical_cinco_noes
+   fuentes : scott_radical_candor
+   dominio : gestion_equipos
+adaptar_escucha_cultura_ajena
+   fuentes : scott_radical_candor
+   dominio : gestion_equipos
+integrar_trabajo_vida_mejor_version
+   fuentes : scott_radical_candor
+   dominio : gestion_equipos

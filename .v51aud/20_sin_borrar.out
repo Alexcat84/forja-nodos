@@ -1,0 +1,7 @@
+dimensionar_numero_subordinados_medio_dia_semanal        viejo 11576 chars, nuevo 13648, crece  2072, el viejo es PREFIJO del nuevo: True
+buscar_regularidad_bloques_iguales_trabajo_mando         viejo  6169 chars, nuevo  7997, crece  1828, el viejo es PREFIJO del nuevo: True
+preparar_respuestas_estandar_interrupciones_repetidas    viejo  6267 chars, nuevo  8242, crece  1975, el viejo es PREFIJO del nuevo: True
+
+dimensionar_numero_subordinados_medio_dia_semanal        claves que cambian: ['resumen_teorico']
+buscar_regularidad_bloques_iguales_trabajo_mando         claves que cambian: ['resumen_teorico']
+preparar_respuestas_estandar_interrupciones_repetidas    claves que cambian: ['resumen_teorico']

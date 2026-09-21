@@ -1,0 +1,10 @@
+CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+  nodo : pedir_critica_primero_crear_seguridad_psicologica
+  campo: resumen_teorico
+  el texto viejo SIGUE ENTERO: 6741 caracteres, ninguno borrado
+  se aniaden 2023 caracteres al final
+  huella antes  : bdf8b8932603d104
+  huella despues: d228fe61d4d02678
+
+GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: pedir_critica_primero_crear_seguridad_psicologica
+  razon en bitacora/VEREDICTOS.jsonl

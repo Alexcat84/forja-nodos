@@ -1,0 +1,19 @@
+BANDEJA DE grove_high_output : 91 candidatos
+CON VEREDICTO DE ADUANA YA CORRIDO : 91
+SIN VEREDICTO, HAY QUE CORRERLOS   : 0
+
+por poblacion del barrido que lo produjo:
+   poblacion 423 : 73 candidato(s)
+   poblacion 431 :  2 candidato(s)
+   poblacion 432 :  2 candidato(s)
+   poblacion 433 :  2 candidato(s)
+   poblacion 434 :  2 candidato(s)
+   poblacion 436 :  2 candidato(s)
+   poblacion 437 :  4 candidato(s)
+   poblacion 440 :  4 candidato(s)
+
+por veredicto:
+   BLOQUEARIA   : 71
+   ENTRARIA     : 20
+
+LOS QUE FALTAN:

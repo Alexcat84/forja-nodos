@@ -1,0 +1,10 @@
+corregida reunir_informacion_gerencial_vias_variadas     P7  356 pasa a leerse 210
+corregida escalonar_fuentes_informacion_gerencial        P9  208 pasa a leerse 183
+corregida programar_visita_area_observar_despachar       P10  337 pasa a leerse 236
+corregida transmitir_objetivos_prioridades_preferencias  P11  197 pasa a leerse 160
+corregida empujar_persona_reunion_direccion_preferida    P13  174 pasa a leerse 147
+corregida subir_productividad_gerencial_tres_vias        P18  62 pasa a leerse 60
+corregida buscar_actividad_alta_palanca_tres_vias        P19  118 pasa a leerse 76
+corregida elegir_momento_actividad_palanca_maxima        P20  297 pasa a leerse 237
+
+fichas corregidas por correccion declarada: 8

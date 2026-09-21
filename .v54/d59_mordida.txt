@@ -1,0 +1,7 @@
+$ python .v54/d59_mordida.py
+CON LA CELDA COMO LA ESCRIBI (la mala):
+  CIFRAS DERIVADAS SIN INSTRUMENTO (D.59): 1 en la vuelta viva
+    frase: | `4` | **`0` de `12` en `d033`**: digo que no acota la frecuencia por abajo, **y aun asi cierro la deuda** |
+
+CON LA CELDA YA CORREGIDA (la que se publica):
+  CIFRAS DERIVADAS SIN INSTRUMENTO (D.59): 0 en la vuelta viva

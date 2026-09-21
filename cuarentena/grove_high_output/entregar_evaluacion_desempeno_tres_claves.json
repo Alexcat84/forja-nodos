@@ -1,0 +1,37 @@
+{
+ "id": "entregar_evaluacion_desempeno_tres_claves",
+ "titulo": "Entregar la evaluacion de desempeno cara a cara con las tres claves del mando: franqueza, escucha total y dejar fuera las emociones propias",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [
+  {
+   "clave": "grove_high_output",
+   "fecha": "2026-09-20"
+  }
+ ],
+ "denominaciones": {
+  "nombre_largo": "Las tres L que el autor pide tener en cuenta al entregar una revision de desempeno: Level (nivelar con franqueza), Listen (escuchar con toda la capacidad sensorial) y Leave yourself out (dejar fuera las propias emociones)",
+  "sigla": "",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "three L's: level, listen, and leave yourself out"
+   }
+  ]
+ },
+ "condiciones_activacion": "Cuando el mando va a entregar cara a cara, en la conversacion de revision, la evaluacion de desempeno de un subordinado.",
+ "entregable_esperado": "La revision entregada con franqueza verificable, con la certeza comprobada de que el subordinado recibio e interpreto el mensaje, y sin que las inseguridades o emociones propias del supervisor hayan desplazado el foco de la conversacion.",
+ "pasos_accionables": [
+  "Se totalmente franco con el subordinado al entregarle la revision, tanto al elogiar como al criticar, porque la credibilidad y la integridad de todo el sistema de revision dependen de esa franqueza.",
+  "Recuerda que el objetivo de la comunicacion es hacer llegar el pensamiento completo de tu cabeza a la del subordinado, y que las palabras son solo el medio para transmitirlo.",
+  "Observa al subordinado mientras hablas y sigue insistiendo hasta estar seguro de que tu mensaje llego y se entendio, sin conformarte con que haya parafraseado tus palabras.",
+  "Emplea toda tu capacidad sensorial, no solo el oido, para confirmar que tus puntos se estan interpretando correctamente en la cabeza del subordinado.",
+  "Deja fuera tus propias inseguridades, ansiedades o culpa: la revision trata de los problemas del subordinado y no de los tuyos.",
+  "Controla esas emociones propias para que no afecten tu tarea mientras entregas la revision, aunque sepas que van a aflorar."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_14.md, unidad Cap. 13, titulo textual Performance Appraisal: Manager as Judge and Jury. Sale de la PIEZA P30 a P36 de la frontera publicada hoy en .v58ext/frontera.txt, L107 a L119, con P35 (L117) EXCLUIDO de la pieza por ser CASO. FRONTERA DENTRO DEL NODO, PUBLICADA ANTES DE CORTAR (EXTRACTOR.md 10): L107 es la cabeza que anuncia las tres L (Level, Listen, Leave yourself out); L109 es la primera (Level); L111, L113 y L115 son los tres tramos de la segunda (Listen); L119 es la tercera y cierra la pieza (Leave yourself out). POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el libro DICE CUANTAS SON (three L's) y las nombra una a una por su nombre (Level, listen, and leave yourself out) antes de desarrollar cada una en su propio parrafo. Inventario de MEDIOS del mando al entregar la revision, no de fines, y sin adjetivo de adecuacion en el sitio del criterio: el texto no dice 'de forma apropiada', dice las tres palabras concretas. DE DONDE SALE CADA PASO, uno a uno: paso 1 de L109 (You must level with your subordinate, the credibility and integrity of the entire system depend on your being totally frank); paso 2 de L111 (The aim of communication is to transmit thoughts from the brain of person A to the brain of person B); paso 3 de L113 (you should watch the person you are talking to... it is your responsibility to keep at it until you are satisfied that you have been heard and understood); paso 4 de L115 (employing your entire arsenal of sensory capabilities to make certain your points are being properly interpreted); paso 5 de L119 (your own insecurities, anxieties, guilt, or whatever should be kept out of it. At issue are the subordinate's problems, not the supervisor's); paso 6 de L119 (You should work to control these emotions so that they don't affect your task, though they will well up no matter how many reviews you've given). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. NO escribo destinatario, responsable ni periodo porque el libro no los pone en este tramo: las tres claves valen para cualquier revision, sin fecha ni nombre que fijar. EL CASO DEL PROFESOR DE AULA NO ENTRA (manual 3.5): L117 cuenta la analogia del buen profesor que ajusta su explicacion si ve que no le entienden, y es el EJEMPLO NOMBRADO de la segunda clave (escuchar), no su casa. Por eso ningun paso lleva el dato del profesor ni de sus alumnos. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: la segunda clave, Listen, ocupa tres parrafos (L111, L113, L115) frente a uno solo de las otras dos, y un lector estricto puede leer ahi tres pasos que en realidad son una unica instruccion repetida con enfasis creciente. Lo sostengo como tres pasos porque cada parrafo añade una accion distinta y verificable (recordar el objetivo, observar y persistir, usar toda la capacidad sensorial), y no una repeticion de la misma frase. Si cae, cae DENTRO de mi marcado."
+}

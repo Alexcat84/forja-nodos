@@ -1,0 +1,8 @@
+$ ls docs/loop/REPORTE.md docs/loop/ultimo_extractor.json docs/loop/ultimo_auditor.json docs/loop/CREDITO_serial.jsonl
+ls: cannot access 'docs/loop/REPORTE.md': No such file or directory
+ls: cannot access 'docs/loop/ultimo_extractor.json': No such file or directory
+ls: cannot access 'docs/loop/ultimo_auditor.json': No such file or directory
+ls: cannot access 'docs/loop/CREDITO_serial.jsonl': No such file or directory
+
+$ ls .v54/ | wc -l    (los veo listados; NO abro ninguno)
+72

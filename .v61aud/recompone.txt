@@ -1,0 +1,24 @@
+======================================================================
+cap_17  cabecera acaba en 7
+filas             : 27
+lineas contenido  : 31
+sin cubrir        : 0 []
+solapes           : 0 []
+suma de mis filas : 2154
+cuerpo aparte     : 2154
+fichero entero    : 2183
+IGUALES           : True
+nodos que declara : 3
+filas que NO me salen: 0
+======================================================================
+cap_18  cabecera acaba en 7
+filas             : 56
+lineas contenido  : 56
+sin cubrir        : 0 []
+solapes           : 0 []
+suma de mis filas : 718
+cuerpo aparte     : 718
+fichero entero    : 743
+IGUALES           : True
+nodos que declara : 0
+filas que NO me salen: 0

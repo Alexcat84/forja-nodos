@@ -1,0 +1,13 @@
+$ grep -c "\[RANCIO\]" .v60aud/cerrar_reporte_60aud.txt
+71
+
+la linea de cuenta que el instrumento SI imprime:
+   RANCIO 71, SIN HUELLA 8
+
+fechas de esos hallazgos, contadas por mi:
+   2026-09-13 :   6
+   2026-09-15 :   7
+   2026-09-16 :  21
+   2026-09-17 :  13
+   2026-09-18 :  24
+   TOTAL      :  71

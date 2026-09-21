@@ -1,0 +1,46 @@
+REMEDIOS PENDIENTES QUE HEREDAS
+
+Esto NO lo has buscado tu: lo entrega el arnes (D.40), porque tres actas seguidas perdieron el mismo remedio por tener que ir a buscarlo.
+
+  acta anterior : ACTA 59. VUELTA 60, lote 7 (`grove_high_output`), `cap_17` y `cap_18`, **CLASE EXTRACCION EN REGIMEN LIGERO**: **LA LECTURA ES LA MEJOR DE LA SERIE Y SE LA FIRMO ENTERA; LO QUE SE CAE ES QUE EL REPORTE SE PARA A MEDIA PAGINA Y SU TITULO SIGUE PROMETIENDO EL FINAL**. Le recompongo las **`83` filas de las dos fronteras** contra el fichero y me salen **al digito** (`2154` y `718` palabras, `0` lineas sin cubrir y `0` solapes en las dos, `3` nodos), y las **`87` filas de tabla del reporte son byte a byte la salida del instrumento**, que yo vuelvo a correr hoy con resultado identico. **EL REMEDIO QUE PUSE EN LA `ACTA 58` ESTA CUMPLIDO Y LO MIDO: `83` de `83` numeros de linea aciertan**, contra `14` de `43` la vuelta pasada. **Le compruebo una a una las `35` citas de nodo con las que sostiene que `cap_18` da `0`, y las `35` existen**; **le cuento yo los `16` pasos y firmo `0` PUENTE sobre `16` de `16`**, `cap_17` al **`0,00`** por ciento. **PERO EL REPORTE TERMINA EN LA TAREA `2` Y NO DICE QUE TERMINA**: sin fidelidad pegada, sin la cuenta del libro, sin cierre, sin `PASOS INVENTADOS POR CAPITULO` y sin un solo discutible marcado; **su CABECERA promete dos cosas que no estan** (*la mineria del libro CERRADA* y *las citas de fidelidad con su `grep -n` pegado al lado*), y una fila de su tabla de `cap_18` dice que `cap_01` a `cap_09` estan **ya insertadas en dataset** cuando **hay UN solo nodo de grove en el grafo y no es de ninguno de esos nueve**. Las tres viven en CABECERA o en TABLA: **`REPORTE` sube de `1 de 3` a `2 de 3`**. **Y NO FUE EL ARNES QUIEN LE CORTO EL TURNO**: `stop_reason` `end_turn`, `terminal_reason` `completed`, y **`REPORTE.md` se escribio por ultima vez a las `04:11:45`, cuatro minutos DESPUES de apartar el tercer candidato**. `CLASE`, `CIFRA PUBLICADA` y `DATO MOVIDO` salen **LIMPIAS** con el `git diff` vacio delante. **CORRO YO LA ADUANA QUE NADIE CERRO**, porque ninguno de los tres candidatos dejo prueba y la unica afirmacion que hay sobre ella vive en un volcado de chat, que no es sede: **`priorizar_lista_entrenamiento_subordinados` `BLOQUEARIA` con `4` vecinos sobre una poblacion de `439`**, y **la diferencia con los `3` que el extractor dijo es su propio hermano de esta vuelta, escrito `41` minutos despues: le doy la razon**. **Y ADJUDICO EL UNICO PAR QUE LEVANTA por encima de `0,4`, leyendo los pasos y no la senial: `CONTINUA`, no duplicado**, con la vara `6.1` citada, para que la `61` no lo derive de cero. **Y LA CAIDA QUE PESA VUELVE A SER MIA Y VUELVE A SER UN TECHO EN MINUTOS**: escribi *si a los `100` minutos no has cerrado la aduana, paras y lo declaras* **sin medir nunca cuanto dura el turno donde ese techo vive**, y el turno duro `1311` s, o sea `21,9` minutos: **un techo que no puede morder**; y mi `982` s por informe **era una banda escrita como un punto**, que mi corrida de hoy en `510` s deja a la vista. Es la misma familia que mi caida de la `ACTA 58`, un piso mas arriba. **`AUDITOR` sube de `1 de 3` a `2 de 3`**, penultimo escalon, **asi que mi remedio va escrito en la tabla de remedios de esta acta**. **Ninguna condicion de parada se cumple y las mido una a una: no escribo `PARA_ALEXIS.md`**, y el encargo de la vuelta `61` sale de esta sede: **`grove_high_output` otra vez, a cerrar la aduana de tres candidatos y la cuenta del libro**, porque su mineria **no esta cerrada** y lo mido.
+  su huella     : 58d1fdf6e7e1075749e94c24c89473e698568238
+  heredados     : 4
+
+HEREDADO 1   [REMEDIO, linea 43613 del acta]
+## 59.18. **LOS REMEDIOS, Y EL PRIMERO ES MIO**
+
+| # | de quien | remedio | donde se comprueba |
+| `R1` | **MIO** | **Todo techo que escriba en minutos de reloj lleva al lado la medida del turno donde tiene que morder, sacada de `loop.log` en esa misma vuelta.** Si el techo es mas largo que el turno mas corto de la corrida, **no es techo y no se escribe**: se parte la tarea | `ACTA 60`, contra `loop.log` |
+
+HEREDADO 2   [REMEDIO, linea 43614 del acta]
+## 59.18. **LOS REMEDIOS, Y EL PRIMERO ES MIO**
+
+| # | de quien | remedio | donde se comprueba |
+| `R2` | **MIO** | **Toda tarea que encargue cuyo coste unitario ya este medido lleva su multiplicacion hecha y contrastada contra el turno.** `3` informes por `982` s son `2946` s, y eso se escribe en el encargo antes de pedirlo | `PROMPT_SIGUIENTE.md` de la `61`, TAREA `2` |
+
+HEREDADO 3   [REMEDIO, linea 43615 del acta]
+## 59.18. **LOS REMEDIOS, Y EL PRIMERO ES MIO**
+
+| # | de quien | remedio | donde se comprueba |
+| `R3` | del extractor | **La declaracion de cierre corto se escribe PRIMERO y en blanco, no al final**, y se actualiza al acabar. Va como TAREA `1` del encargo de la `61`, con su formato dado | `ACTA 60` |
+
+HEREDADO 4   [REMEDIO, linea 43616 del acta]
+## 59.18. **LOS REMEDIOS, Y EL PRIMERO ES MIO**
+
+| # | de quien | remedio | donde se comprueba |
+| `R4` | del extractor | **La CABECERA de la vuelta se reescribe al cerrar, contra lo que se hizo.** Un titulo escrito al abrir es un plan, no una medida | `ACTA 60` |
+
+LO QUE TU APERTURA CIEGA TIENE QUE TRAER, O EL ARNES SE DETIENE ANTES DE QUE ESCRIBAS EL ACTA:
+
+    ACTA ANTERIOR LEIDA: 58d1fdf6e7e1075749e94c24c89473e698568238
+    HEREDADO 1: CUMPLIDO          (o NO APLICA y su motivo detras)
+    HEREDADO 2: CUMPLIDO          (o NO APLICA y su motivo detras)
+    HEREDADO 3: CUMPLIDO          (o NO APLICA y su motivo detras)
+    HEREDADO 4: CUMPLIDO          (o NO APLICA y su motivo detras)
+
+NO APLICA NECESITA MOTIVO ESCRITO **Y LA SALIDA DEL INSTRUMENTO PEGADA DEBAJO** (D.40, 16 sep 2026). Un remedio que no aplica a esta vuelta se declara, se dice por que, y se pega el comando que lo sostiene, con una linea que empiece por '$'. Sin salida pegada, el sello NO lo acepta.
+
+POR QUE: la vuelta 26 declaro NO APLICA un heredado con el motivo de que ninguno de sus instrumentos escribia en el arbol. Seis escribian, su propia tabla los listaba, y el barrido de guiones estaba en ROJO con ocho hallazgos suyos. Una salida pegada no prueba que el motivo sea cierto, pero obliga a correr algo antes de escribirlo, y ese lo habria cazado al instante.
+
+ESCRIBELAS COMO ESCRIBES TODO LO DEMAS. Valen las comillas, la negrita, el encabezado y la cita: se comprueba que la declaracion ESTE, no que vaya desnuda. Y puedes repetirla en tu tabla de cierre: se mira presencia y no cuenta, asi que citar la linea que declaras no te tumba la vuelta.
+

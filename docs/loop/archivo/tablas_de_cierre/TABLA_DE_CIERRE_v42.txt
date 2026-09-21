@@ -1,0 +1,9 @@
+$ python scripts/tabla_de_cierre.py --escribir
+poblacion: dataset/nodos.jsonl entero, libro grove_high_output
+criterio : un nodo sale de un capitulo si cita grove_high_output/<cap>.md
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | `cap_13` y `cap_14` hasta donde llegue, un candidato por vez y por la aduana | **CERRADA, y hasta el final**: `20` de `20` dentro, `273` pasos, `215` veredictos con razon escrita, `23` aristas nuevas y la bandeja de `scott_radical_candor` en `0` |
+| 2 | `cap_13`, cerrado en insercion | **CERRADA**: sus cifras van en `ED.8.a`, contadas por su propio instrumento |
+| 3 | `cap_14`, cerrado en insercion | **CERRADA**: sus cifras van en `ED.8.a`, contadas por su propio instrumento |

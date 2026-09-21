@@ -1,0 +1,6 @@
+$ grep -E 'VERDE|COMPLETA' .v34aud/cierre_apertura.txt      (la corrida entera esta en ese fichero)
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+TALLADO VERDE: las 6 tabla(s) comprobables son las de su instrumento, celda a celda.
+CENSO VERDE: las 143 rutas publicadas sostienen lo que dicen sostener.
+CIERRE VERDE: el tallado y el censo de rutas.
+APERTURA CIEGA COMPLETA: el acta anterior va leida por su huella y los 0 heredados van declarados.

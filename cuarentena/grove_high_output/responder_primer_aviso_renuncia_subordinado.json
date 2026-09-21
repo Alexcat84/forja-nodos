@@ -1,0 +1,38 @@
+{
+ "id": "responder_primer_aviso_renuncia_subordinado",
+ "titulo": "Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [
+  {
+   "clave": "grove_high_output",
+   "fecha": "2026-09-20"
+  }
+ ],
+ "denominaciones": {
+  "nombre_largo": "La respuesta inmediata del mando en el primer momento en que un subordinado valioso anuncia que va a renunciar, antes de intentar retenerlo",
+  "sigla": "",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "I Quit!"
+   }
+  ]
+ },
+ "condiciones_activacion": "Cuando un subordinado valioso y estimado se acerca al mando y anuncia, de pasada, que ha decidido dejar la empresa.",
+ "entregable_esperado": "El subordinado escuchado por completo, sin que el mando haya discutido ni intentado cambiarle la idea en ese primer momento, con el tiempo comprado para preparar la siguiente conversacion y el compromiso de seguimiento que el mando haya hecho ya asumido.",
+ "pasos_accionables": [
+  "Deja lo que estas haciendo en cuanto el subordinado te avisa de que quiere renunciar, en vez de posponer la conversacion para mas tarde.",
+  "Sientalo y preguntale por que se va.",
+  "Dejalo hablar sin discutir nada de lo que diga, aunque sus razones no te parezcan buenas.",
+  "Cuando haya terminado de exponer sus razones, hazle mas preguntas para que los asuntos de fondo puedan salir a la luz.",
+  "No discutas, no sermonees y no entres en panico durante esta primera conversacion.",
+  "Pide el tiempo que necesites para prepararte antes del siguiente encuentro, en vez de intentar resolverlo todo en el momento.",
+  "Cumple despues con lo que te hayas comprometido a hacer en esta primera conversacion."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_15.md, unidad Cap. 14, titulo textual Two Difficult Tasks. Sale de la PIEZA P26 de la frontera publicada hoy en .v58ext/frontera.txt, L111, 187 palabras, precedida por la cabeza de contexto P25 (L109) que queda fuera del nodo por ser el escenario que activa la pieza y no procedimiento en si. POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el parrafo entero es una cadena de imperativos en segunda persona (Drop what you are doing. Sit him down... Let him talk... ask him more questions... Don't argue, don't lecture, and don't panic... ask for whatever time you feel is necessary... you must follow through), un inventario de PASOS de trabajo del mando y no de fines, sin adjetivo de adecuacion en el criterio. Es la propia clase de caso que el manual cita como prueba: una linea que tarda varios pasos en ejecutarse es un procedimiento nombrado en una linea. DE DONDE SALE CADA PASO, uno a uno, todos de L111: paso 1 (Drop what you are doing); paso 2 (Sit him down and ask him why he is quitting); paso 3 (Let him talk, don't argue about anything with him); paso 4 (After he's finished going through all his reasons for wanting to leave, ask him more questions. Make him talk, because after the prepared points are delivered, the real issues may come out); paso 5 (Don't argue, don't lecture, and don't panic); paso 6 (buy time. After he's said all he has to say, ask for whatever time you feel is necessary to prepare yourself for the next round); paso 7 (you must follow through on whatever you've committed yourself to do). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. NO escribo que el mando deba cambiarle la idea al subordinado en este primer momento porque el propio texto lo prohibe expresamente (Don't try to change his mind at this point), asi que ese paso queda fuera del entregable de este nodo a proposito. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: el episodio completo de I Quit! en cap_15 sigue con una segunda mitad (escalar al propio jefe, perseguir la retencion, volver con una solucion) que extraigo como un segundo nodo aparte, gestionar_retencion_subordinado_valioso_renuncia. Un lector estricto puede sostener que las dos mitades son UN SOLO procedimiento continuo y que partirlas en dos fabrica una frontera donde el libro no la traza. Lo sostengo separado porque cada mitad tiene su propia condicion de activacion (el primer aviso, frente a los dias siguientes de gestion) y su propio entregable, y porque el propio texto marca el cambio de fase con Believe me, he's rehearsed his speech... y luego What's your next move?. Si cae, cae DENTRO de mi marcado."
+}

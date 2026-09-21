@@ -1,0 +1,3 @@
+$ python scripts/deuda.py | grep -E "d030|d031"
+  d030   47      maquinaria         scripts/tabla_de_cierre.py --escribir escribe SIEMPR
+  d031   47      aduana             RETOCAR UNA LINEA DE UN resumen_teorico EN CUARENTEN

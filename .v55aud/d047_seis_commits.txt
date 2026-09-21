@@ -1,0 +1,11 @@
+$ for c in 0ab7b6c e66b88b e740b2f f717235 adb5c9d 55cd182; do git show $c:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin; done
+  0ab7b6c -> f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+  e66b88b -> f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+  e740b2f -> f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+  f717235 -> f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+  adb5c9d -> f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+  55cd182 -> f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+
+Y LA FORMA CON HEAD, UN CUARTO VALOR UN DIA DESPUES:
+  HEAD hoy (4acd3e0) -> f46c705945085f2aea56426abaa0586f007a41bf
+  (la vuelta 50 midio f33c8d9c, la 51 midio 3b39a3fd, la 54 midio 4e3e2fb3)

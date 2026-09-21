@@ -1,0 +1,8 @@
+    $ time python forja.py informe cuarentena/grove_high_output/buscar_regularidad_bloques_iguales_trabajo_mando.json
+
+
+real	15m10.832s
+user	0m0.015s
+sys	0m0.000s
+codigo=0
+segundos=911   (derivado por .v47/seg.py de la linea real de time, que es el instrumento)

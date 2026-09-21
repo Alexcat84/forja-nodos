@@ -1,0 +1,7 @@
+VENTANA DEL TURNO DEL EXTRACTOR DE LA VUELTA 61 (loop.log): 2026-09-21 04:47:01 a 2026-09-21 05:12:22
+fichas de la bandeja escritas DENTRO de la ventana: 0
+
+la unica ficha que la vuelta 61 toco, y su blob antes y despues del git mv:
+  bytes identicos: True (4539 bytes)
+
+PASOS ESCRITOS POR LA VUELTA 61 EN NINGUN CAPITULO: 0

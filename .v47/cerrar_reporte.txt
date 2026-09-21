@@ -1,0 +1,20 @@
+    $ python scripts/cerrar_reporte.py
+TALLADO VERDE: las 119 tabla(s) comprobables son las de su instrumento, celda a celda.
+CENSO VERDE: las 767 rutas publicadas sostienen lo que dicen sostener.
+TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+  A. VERDE: el nodo ejemplo entro limpio, el gate quedo verde y los censos registraron las tres denominaciones por separado
+  B. VERDE: gemelo bloqueado (codigo 2) citando a registrar_fuente_canonica y la señal (similitud_texto)
+  C. VERDE: el hijo quedo bloqueado sin veredicto y entro tras declarar CONTINUA; la arista se declaro por el alias 'registro_fuentes_canonicas' y quedo escrita resuelta como registrar_fuente_canonica > elegir_grafia_clave
+  D. VERDE: la auto-arista via alias (saneo_grafo apunta a sanear_grafo) puso el gate en rojo, y la comparacion literal no la veia: cero coincidencias literales en el mismo dato
+  E. VERDE: hooks/pre-commit aborto con el guion largo (rojo con el archivo, verde sin el, verde de nuevo al quitarlo)
+  F. VERDE: el candidato con la fuente 'libro_que_nadie_registro' fue rechazado y no toco el dataset
+[cierre] tallado del reporte (D.41)
+[cierre] censo de rutas (D.42)
+[cierre] tabla de cierre de tareas (D.52)
+[cierre] gate de integridad
+[cierre] barrido de guiones
+[cierre] prueba de aceptacion
+[cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda
+LA VIGENCIA TIENE COLA, Y ESO NO PONE EL CIERRE EN ROJO (D.15).
+CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).

@@ -1,0 +1,11 @@
+$ python forja.py arista --madre construir_confianza_equipo_tiempo_solas --hijo desplegar_tres_conversaciones_carrera --paso 7 --razon "..."
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: construir_confianza_equipo_tiempo_solas
+  hijo : desplegar_tres_conversaciones_carrera
+  paso citado de la madre: 7
+    Y manten conversaciones anuales de carrera, que el texto llama una manera excelente de reforzar tu relacion con cada persona que te reporta directamen
+  señales del par: familia_id 0.0, paso_contra_nodo 0.471, similitud_texto 0.195
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: construir_confianza_equipo_tiempo_solas > desplegar_tres_conversaciones_carrera
+  razon en bitacora/VEREDICTOS.jsonl

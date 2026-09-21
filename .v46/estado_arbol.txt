@@ -1,0 +1,18 @@
+$ python forja.py guiones cuarentena/grove_high_output/
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+$ ls cuarentena/_insertados/grove_high_output/ | wc -l   (lo que entro de grove, en total)
+1
+
+$ git status --porcelain
+ M cuarentena/grove_high_output/clasificar_trabajo_proceso_montaje_prueba.json
+ D docs/loop/APERTURA_CIEGA.md
+ D docs/loop/CREDITO_serial.jsonl
+ D docs/loop/REPORTE.md
+ M docs/loop/loop.log
+ M docs/loop/ultimo_apertura.json
+ D docs/loop/ultimo_auditor.json
+ D docs/loop/ultimo_extractor.json
+?? .v45/informe_d021.reloj
+?? .v45/informe_d021.txt
+?? .v46/

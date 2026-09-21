@@ -1,0 +1,6 @@
+    $ grep -c "RANCIO" .v51/cerrar_reporte_raw.txt
+    72
+    $ grep -c -E "infundir_regularidad_reunion_proceso|usar_tres_clases_reunion_proceso|fijar_frecuencia_reunion_individual_madurez_tarea|fijar_duracion_lugar_reunion_individual|preparar_guion_reunion_individual_subordinado|cubrir_indicadores_problemas_reunion_individual|dimensionar_numero_subordinados_medio_dia_semanal|buscar_regularidad_bloques_iguales_trabajo_mando|preparar_respuestas_estandar_interrupciones_repetidas" .v51/cerrar_reporte_raw.txt
+    0
+    $ tail -1 .v51/cerrar_reporte_raw.txt
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).

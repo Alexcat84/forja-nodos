@@ -1,0 +1,13 @@
+$ python scripts/muestra_fidelidad.py --libro grove_high_output --capitulos cap_02 --semilla v54-ciega-auditor
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : grove_high_output
+  semilla  : v54-ciega-auditor
+  capitulos: cap_02
+
+  RELEIDO ENTERO : cap_02
+  POR MUESTRA    : ninguno, 15 pasos cada uno
+
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+  --- cap_02: ENTERO, 50 paso(s), no hay muestra que elegir

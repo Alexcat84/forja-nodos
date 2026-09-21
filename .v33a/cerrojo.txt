@@ -1,0 +1,16 @@
+$ git ls-files | grep -i cerrojo    (arbol 1ae327e)
+docs/loop/paradas/2026-09-16-el-cerrojo-y-el-testigo-DECISION.md
+src/cerrojo.py
+
+$ cat .gitignore | grep -i cerrojo
+# EL CERROJO DE INSERCION NUNCA ENTRA EN GIT (D.44).
+# Commiteado, un checkout entrega un cerrojo de un proceso que ya no existe y la
+*.cerrojo
+
+$ ls dataset/
+.
+..
+nodos.jsonl
+
+$ python -c (lote 4: bandeja mas archivados)
+  bandeja 63 + _insertados 79 = 142 candidatos del lote 4

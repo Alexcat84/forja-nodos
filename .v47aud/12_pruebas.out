@@ -1,0 +1,9 @@
+$ python tests/test_aceptacion.py
+  D.52, toda tabla del reporte declara su instrumento: 8 pruebas mas
+  D.54, un paso retirado se retira del campo: 7 pruebas mas
+  la exencion del censo es de MOMENTO y no de fichero: 3 pruebas mas
+  D.55, la deuda no bloquea la produccion: 11 pruebas mas
+  D.53 en el codigo: el veredicto y la arista son puertas distintas: 11 pruebas mas
+
+  total: 318 pruebas, 3 fallos, 1 errores
+========================================================================

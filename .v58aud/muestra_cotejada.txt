@@ -1,0 +1,9 @@
+--- diff contra el fichero que el reporte cita como su salida (.v57ext/muestra.txt) ---
+IDENTICO, linea a linea
+
+--- diff contra el BLOQUE QUE EL REPORTE PEGA en XX.4 ---
+(el reporte pega una version RESUMIDA: mira las lineas de abajo)
+  --- cap_11: 15 paso(s) en la muestra
+    elegir_modo_control_motivacion_factor_cua      P1   Cuando tengas que decidir con que modo controlar una conduct
+    elegir_modo_control_motivacion_factor_cua      P2   Mide ese entorno con un indice compuesto que combine su comp
+    elegir_modo_control_motivacion_factor_cua      P3   Reconoce que identificar cual de los modos de control convie

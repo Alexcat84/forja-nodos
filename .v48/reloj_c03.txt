@@ -1,0 +1,8 @@
+    $ time python forja.py informe cuarentena/grove_high_output/llevar_inventario_proyectos_discrecionales.json
+
+
+real	12m21.315s
+user	0m0.015s
+sys	0m0.078s
+codigo=0
+segundos=741   (derivado por .v47/seg.py de la linea real de time, que es el instrumento)

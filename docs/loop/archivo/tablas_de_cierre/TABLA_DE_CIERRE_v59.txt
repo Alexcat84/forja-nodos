@@ -1,0 +1,11 @@
+$ python scripts/tabla_de_cierre.py --escribir
+poblacion: dataset/nodos.jsonl entero, libro grove_high_output
+criterio : un nodo sale de un capitulo si cita grove_high_output/<cap>.md
+
+| # | tarea | como cerro |
+|---:|---|---|
+| `1` | los registros de la `ACTA 57` recogidos sin reabrirlos | **CERRADA en `SS.1`** |
+| `2` | pagar `d075`: siete informes de la tanda `57`, uno a uno y en el orden del libro | **CERRADA en `SS.2`**: poblacion `431` a `437` de uno en uno, tres de las cuatro vecindades bloqueadas siguen en pie identicas al milesimo, una no existia. `d075` PAGADA |
+| `3` | pagar lo que quepa de `d006` | **CERRADA en `SS.3`**: `43` de `154` pasos de `cap_13` releidos, `0` PUENTE, `111` quedan |
+| `4` | cerrar `d068` | **CERRADA en `SS.4`**: `d068` PAGADA, citando `deuda.py --clase 59` de esta misma vuelta |
+| `5` | el cierre | **CERRADA en `SS.5`**: estado recomputado (`346`/`740`/`1`/`88`), guardas en VERDE, `0` capitulos y `0` candidatos del tramo, `1` discutible marcado |

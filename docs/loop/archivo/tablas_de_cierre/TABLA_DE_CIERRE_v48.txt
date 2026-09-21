@@ -1,0 +1,10 @@
+$ python scripts/tabla_de_cierre.py --escribir
+poblacion: dataset/nodos.jsonl entero, libro grove_high_output
+criterio : un nodo sale de un capitulo si cita grove_high_output/<cap>.md
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | los registros de la `ACTA 46`: las dos correcciones declaradas, las dos deudas nuevas y lo adjudicado | **CERRADA**: las dos correcciones escritas al lado de su texto viejo en `II.3.b` y `II.2.f` con los dos instrumentos del auditor corridos por mi hoy, `d030` y `d031` nombradas con su motivo de no pago, y las cuatro adjudicaciones de `46.5` recogidas sin reabrirse |
+| 2 | `cap_04` abierto en `8` de `22`: los cinco siguientes, cada uno por su aduana, cero inserciones | **CERRADA ENTERA EN LOS `5`**: `42` pasos, `0` `CAERIA`, `8` pares de cola leidos par a par, `18` aristas declaradas dentro de las fichas con sus `18` destinos comprobados, la arista colgada resuelta sin coste propio, **cero inserciones**, y el techo de pasos cumplido con el de minutos pasado y declarado |
+| 3 | `PASOS INVENTADOS` de `cap_04` con su denominador y sus tres filas | **CERRADA**: `0` PUENTE de `42` pasos hoy, `0` de `95` en los `14` ya minados, `0` de `137` en `cap_04` entero, y siete sitios de tentacion nombrados por su especie mas un octavo que no es puente |
+| 4 | el cierre, con sus guardas, su tabla `D.52`, su estado y su coste | **CERRADA**: las cinco guardas en verde, la corrida roja de la prueba de aceptacion declarada con su medida, la colision de `D.52` sellada por `hash-object`, el estado recomputado y el coste del turno contado de sus relojes |
