@@ -1052,3 +1052,18 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-21 18:26:23] extractor listo (USD 8.2017702), 1751s, intento 1 de 7
 [2026-09-21 18:26:23] VUELTA 1 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
 [2026-09-21 18:26:23] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-21 19:07:38] auditor listo (USD 22.646576999999994), 2475s, intento 1 de 7
+[2026-09-21 19:07:38]   sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)
+[2026-09-21 19:07:39]   tablero puesto al dia al cerrar la vuelta 1 (d102)
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+  con dueño: gerber_emyth                   EN CURSO               lo trabaja 'gerber_emyth'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-21 19:07:40]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-21 19:07:40] VUELTA 2 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-21 19:07:40] VUELTA 2 : EXTRACTOR (claude-sonnet-5)
