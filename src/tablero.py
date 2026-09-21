@@ -55,6 +55,9 @@ NINGUNO = "NINGUNO"
 
 FILA_DE_LOTE = re.compile(r"^\|\s*\*{0,2}(\d+)\*{0,2}\s*\|\s*`([a-z0-9_]+)`\s*\|")
 CAPITULO = re.compile(r"cap_(\d+)")
+# EL CAPITULO DE UN CANDIDATO ES EL QUE SU FICHA DECLARA, no el que menciona.
+UNIDAD_DE_ORIGEN = re.compile(
+    r"UNIDAD DE ORIGEN:\s*fuentes/[a-z0-9_]+/(cap_\d+)\.md", re.I)
 
 # LOS SEIS ESTADOS de la decision del fundador del 17 sep 2026, punto 1.
 ESTADOS = ("SIN EMPEZAR", "EN CURSO", "PAUSADO", "CERRADO EN EXTRACCION",
@@ -131,10 +134,32 @@ def _contar_json(carpeta):
 
 
 def _capitulos_de_bandeja(carpeta):
-    """LOS CAPITULOS MINADOS SALEN DE LO QUE SUS CANDIDATOS CITAN, no de un rotulo.
+    """LOS CAPITULOS MINADOS SALEN DE LO QUE SUS CANDIDATOS DECLARAN COMO ORIGEN.
 
     Un capitulo minado no deja marca en el repo (lo dice `ORDEN_DE_LOTES.md` desde la
     vuelta 16). Lo que si deja marca es **el candidato que salio de el**.
+
+    Y `SALIO DE EL` NO ES `LO MENCIONA` (21 sep 2026). Hasta hoy esta funcion buscaba
+    `cap_NN` EN CUALQUIER PARTE del fichero, y un candidato que nombra otro capitulo
+    en su prosa lo marcaba como minado. **El ejemplar es del reves de lo que uno
+    esperaria**: un candidato de `cap_13` de `gerber_emyth` escribe
+
+        (por ejemplo si el capitulo entero es postura sin inventario, como paso
+         con cap_09 y cap_10)
+
+    o sea **dice que esos dos NO dieron nada**, y el tablero leia ahi que si dieron.
+    Medido el 21 sep: `3` falsos positivos en `gerber_emyth` (`cap_09`, `cap_10` y
+    `cap_17`) y `0` en `grove_high_output`.
+
+    **Y NO ES COSMETICO:** `ultimo_capitulo` sale de esta lista, y `D.50` manda
+    continuar por el capitulo SIGUIENTE al ultimo minado. Un capitulo sin minar que
+    alguien nombre de pasada **se salta el relevo y no lo mina nadie.**
+
+    EL REPLIEGUE ES POR FICHA Y ES OBLIGATORIO, no una cortesia: los libros ya
+    insertados no declaran origen (`zhuo_manager` `0` de `136`, `smart_who` `0` de
+    `59`, `onu_consumidor` `0` de `6`, y `scott_radical_candor` solo `103` de `142`).
+    Una regla estricta les borraria el capitulo a todos. **La ficha que declara su
+    origen manda; la que no, se lee como se leia.**
     """
     vistos = set()
     if not os.path.isdir(carpeta):
@@ -145,6 +170,10 @@ def _capitulos_de_bandeja(carpeta):
         try:
             crudo = comun.leer_texto(os.path.join(carpeta, nombre))
         except (IOError, OSError):
+            continue
+        declarado = UNIDAD_DE_ORIGEN.search(crudo)
+        if declarado:
+            vistos.add(declarado.group(1))
             continue
         for encaje in CAPITULO.finditer(crudo):
             vistos.add("cap_%s" % encaje.group(1))
