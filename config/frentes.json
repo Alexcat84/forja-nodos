@@ -213,9 +213,14 @@
         "cap_05",
         "cap_06",
         "cap_09",
-        "cap_10"
+        "cap_10",
+        "cap_16",
+        "cap_17",
+        "cap_20",
+        "cap_21",
+        "cap_22"
       ],
-      "cita": "ACTA G2 (cap_05 y cap_06) y ACTA G3 (cap_09 y cap_10), frente gerber_emyth, rama extraccion-gerber_emyth"
+      "cita": "ACTA G2 (cap_05 y cap_06), ACTA G3 3.5 (cap_09 y cap_10), ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida) y ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth"
     }
   },
   "coste_por_turno": {
@@ -241,6 +246,17 @@
       "extractor_usd": 16.1494,
       "auditor_usd": 21.7098,
       "nota": "ESTA ES LA DEL REGIMEN LIGERO DE VERDAD (decision del fundador del 22 sep 2026, punto 2): 9,4648 por turno contra 15,4115. La diferencia esta casi entera en el auditor, que baja de 18,29 por turno a 10,85 cuando la vuelta es corta"
+    },
+    "gerber_emyth, vueltas 4 a 8 del frente": {
+      "cita": "docs/loop/loop.log del worktree forja-gerber_emyth desde el arranque de 2026-09-21 10:45:18, y ACTA G4 a ACTA G8",
+      "modelos": "extractor claude-sonnet-5, auditor claude-opus-5",
+      "regimen": "ligero, fase ciega apagada (D.58), vueltas de tres capitulos",
+      "turnos": 10,
+      "total_usd": 127.0533,
+      "media_usd": 12.7053,
+      "extractor_usd": 57.6979,
+      "auditor_usd": 69.3553,
+      "nota": "LA CIFRA DE 9,4648 QUE LA DECISION DEL 22 SEP MANDO PUBLICAR SALIA DE 4 TURNOS, y estas 10 la corrigen hacia arriba sin desmentirla: las dos primeras vueltas fueron de DOS capitulos y estas de TRES. Se publican las dos, porque una media de cuatro turnos no es la del regimen y taparla seria peor que haberla escrito"
     }
   }
 }

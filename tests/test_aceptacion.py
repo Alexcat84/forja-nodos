@@ -3830,6 +3830,69 @@ class PruebaTresDefectosDelFrente(BaseForja):
         finally:
             tablero.RUTA_FRENTES = anterior
 
+    # -------------------------------- el capitulo de un candidato, y es de familia
+
+    def _bandeja(self, **fichas):
+        carpeta = os.path.join(self.taller, "bandeja")
+        os.makedirs(carpeta)
+        for nombre, cuerpo in fichas.items():
+            comun.escribir_texto(os.path.join(carpeta, nombre + ".json"), cuerpo)
+        return carpeta
+
+    def test_caso_positivo_el_capitulo_es_el_que_la_ficha_DECLARA(self):
+        """**EL EJEMPLAR VA DEL REVES DE LO QUE UNO ESPERARIA, y por eso duro tanto.**
+
+        `_capitulos_de_bandeja` buscaba `cap_NN` EN CUALQUIER PARTE del fichero. Un
+        candidato de `cap_13` de `gerber_emyth` escribe en su prosa
+
+            (por ejemplo si el capitulo entero es postura sin inventario, como paso
+             con cap_09 y cap_10)
+
+        o sea **dice que esos dos NO dieron nada**, y el tablero leia ahi que si
+        dieron. Medido el 21 sep: `3` falsos positivos en `gerber_emyth` y `0` en
+        `grove_high_output`.
+
+        **Y NO ES COSMETICO:** `ultimo_capitulo` sale de esta lista y `D.50` manda
+        continuar por el capitulo SIGUIENTE al ultimo minado. Un capitulo sin minar
+        que alguien nombre de pasada **se salta el relevo y no lo mina nadie.**
+        """
+        from src import tablero
+        carpeta = self._bandeja(uno=(
+            '{"id": "uno", "resumen_teorico": "UNIDAD DE ORIGEN: '
+            'fuentes/gerber_emyth/cap_13.md, unidad Cap. 11. Y aqui digo que el '
+            'capitulo entero es postura sin inventario, como paso con cap_09 y '
+            'cap_10."}'))
+        self.assertEqual(tablero._capitulos_de_bandeja(carpeta), ["cap_13"])
+
+    def test_caso_negativo_la_ficha_que_no_declara_origen_se_lee_como_antes(self):
+        """**EL REPLIEGUE ES OBLIGATORIO, NO UNA CORTESIA.**
+
+        Los libros ya insertados no declaran origen: `zhuo_manager` `0` de `136`,
+        `smart_who` `0` de `59`, `onu_consumidor` `0` de `6`, y
+        `scott_radical_candor` solo `103` de `142`. **Una regla estricta les borraria
+        el capitulo a todos**, y con el el `ultimo_capitulo` del que vive `D.50`.
+
+        Va POR FICHA y no por carpeta, que es lo que el caso de scott obliga: en una
+        misma bandeja conviven las que declaran y las que no.
+        """
+        from src import tablero
+        carpeta = self._bandeja(
+            vieja='{"id": "vieja", "resumen_teorico": "sale de cap_07 del libro"}',
+            nueva=('{"id": "nueva", "resumen_teorico": "UNIDAD DE ORIGEN: '
+                   'fuentes/x/cap_13.md, y menciona cap_99 de pasada"}'))
+        self.assertEqual(tablero._capitulos_de_bandeja(carpeta),
+                         ["cap_07", "cap_13"])
+
+    def test_los_libros_ya_insertados_no_pierden_su_capitulo(self):
+        """La medida de verdad del repliegue: sobre el arbol vivo, ninguno en cero."""
+        from src import tablero
+        filas = dict((f["clave"], f) for f in tablero.libros())
+        for clave in ("onu_consumidor", "smart_who", "scott_radical_candor"):
+            fila = filas.get(clave)
+            if fila and fila.get("estado") == "INSERTADO":
+                self.assertTrue(fila["capitulos_minados"],
+                                "%s perdio su capitulo con la regla nueva" % clave)
+
     # ------------------------------------------------------------------ d102
 
     def test_caso_positivo_d102_el_arnes_pone_al_dia_el_tablero_al_cerrar(self):
