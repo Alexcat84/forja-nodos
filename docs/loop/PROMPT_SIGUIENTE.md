@@ -1,133 +1,144 @@
-# ENCARGO DE LA VUELTA 58: **LA ADUANA EN EL ACTO, Y CON SU POBLACION CRECIENDO A LA VISTA**
+# ENCARGO DE LA VUELTA 59: **VUELTA DE SANEAMIENTO, Y LA PRIMERA QUE ABRE CON EL RELOJ DE LA ADUANA MEDIDO**
 
-*Linea **serial** (`extraccion-mundo-11`). Escrito por el auditor al cerrar la `ACTA 56`, que
-audito la vuelta `57`. `AUDITOR_FORJA.md` seccion `1.4`.*
+*Linea **serial** (`extraccion-mundo-11`). Escrito por el auditor al cerrar la `ACTA 57`, que
+audito la vuelta `58`. `AUDITOR_FORJA.md` seccion `1.4`.*
 
 > # **LIBRO DE ESTA VUELTA: `grove_high_output`**
-> # **CLASE DE ESTA VUELTA: EXTRACCION**
+> # **CLASE DE ESTA VUELTA: SANEAMIENTO**
 
 **Commitea y pushea lo pendiente en la rama activa antes de tocar nada.**
 
 ---
 
-## LO PRIMERO: **LA MEDICION CERRO, Y CERRO AL REVES DE LO QUE LA `56` PARECIA DECIR**
+## LO PRIMERO: **LA CLASE NO LA ELIJO YO NI LA ELIGES TU, LA DICE EL INSTRUMENTO**
 
-**Tu turno de la `57` costo `25,4153` USD en `6987` s.** El de Opus de la vuelta `55`, minando
-tres unidades igual que tu, costo `24,8943` en `6724` s. **La condicion escrita del fundador
-el 21 sep pedia que el turno BAJASE A LA MITAD** (`11,3964` USD o menos) **y no bajo**, asi que
-corre **la rama de salida que el mismo escribio**: *se termina con Opus y se acepta el precio.*
+    $ python scripts/deuda.py --clase 59
+    SANEAMIENTO
+      han pasado 5 vuelta(s) desde la ultima de saneamiento (la 54) y la cadencia es 5,
+      con 19 deuda(s) pendientes
 
-    $ python .v58aud/precio.py
-      media de los dos turnos de Opus       :   22.7927 USD
-      LA MITAD, que es lo que el umbral pide:   11.3964 USD
-      v57 (Sonnet minando)                  :   25.4153 USD
-      EL UMBRAL 'BAJA A LA MITAD' SE CUMPLE : NO
+**`D.58` es terminante: el arnes no deja que el encargo diga otra cosa.** Esta vuelta **NO MINA**.
+No abre `cap_17`, no escribe candidatos nuevos y no toca la frontera de nada. **Lo que hace es
+pagar.**
 
-> **ESTO NO ES UN REPROCHE Y NO HAY NADA QUE ARREGLAR EN LO QUE ESCRIBISTE.** Tus `42` pasos
-> son `42` transcripciones, tus tres fronteras cierran al digito y tus `8` discutibles se
-> sostienen los `8`. **La calidad no se distingue.** Lo que la cifra dice es que **el ahorro de
-> la `56` era el ahorro de no cosechar**, y eso lo midio esta vuelta porque la anterior no
-> podia. **La medicion valio, y la que la completo fuiste tu.**
+## LO SEGUNDO: **TU VUELTA 58 SALE BIEN, Y EL REMEDIO QUE TRAIAS SE CUMPLIO**
 
-## LO SEGUNDO: **DONDE ESTAS, MEDIDO Y NO SUPUESTO**
+**`REPORTE` baja de `2 de 3` a `0`.** Te recompuse las `120` filas de las tres fronteras y me
+salen las tres al digito; te cotejé la muestra con `v58` y sale identica linea a linea; te lei los
+`44` pasos (no los `34` de tu muestra) y **firmo `0` PUENTE sobre `44` de `44`**; **tus dos
+discutibles se sostienen los dos**, y el primero lo adjudique citando `9.1` restriccion `1`, que
+nombra **ETAPAS** entre los inventarios que si cuentan. **No lo vuelvas a abrir.**
 
-    minados y cerrados por su frontera: cap_01 a cap_13, los trece
-    cosecha en bandeja: 81 candidatos de grove_high_output
-    cap_01, cap_08 y cap_09: leidos enteros con cosecha CERO, y es correcto
-    faltan: cap_14 a cap_18, CINCO unidades
+**Y EL REMEDIO DE LA ADUANA EN EL ACTO ESTA CUMPLIDO, medido por tres vias** (`ACTA 57` `57.3`):
+tus siete poblaciones suben `431` a `437`; **ningun candidato tuyo levanta a un hermano
+posterior**; y **te volvi a correr tres informes hoy, con los siete dentro**, y levantan tus
+vecinos MAS los hermanos posteriores, con las once cifras comunes al milesimo. **Eso no se puede
+fingir.**
 
-**LA VUELTA 58 ABRE EN `cap_14`.** El tablero da `grove_high_output` en prioridad `1`,
-`COSECHADO`, sin dueño, `band 81`, `ult cap cap_13`.
+> **LO UNICO QUE SE CAYO ES UNA FRASE, Y ES DE PROSA:** tu `XX.3` abre con *cada uno escrito y
+> pasado por informe en el mismo acto*, y **tus siete fichas llevan fecha de escritura dentro de
+> un lote de `118` segundos**, con el primer informe `846` s despues. **Lo que fue en el acto fue
+> la MEDICION, no la escritura.** Como la frase siguiente lo dice entero y bien, y tu celda de
+> `D.52` no lo repite, **no acumula** y va a `DEUDA` como `d077`. **Para la proxima: describe lo
+> que hiciste y ya esta. La version verdadera era igual de buena.**
 
-## LO TERCERO: **EL TRAMO SE QUEDA EN TRES, Y NO PORQUE LA CIFRA NO DE PARA MAS**
+## LO TERCERO: **LA CIFRA QUE ESTA CASA NO TENIA, Y AHORA SI**
 
-`8.1` permitiria subir un escalon: `0,0` por ciento de pasos inventados en las tres filas, con
-`42` pasos de base, que ya no es una base de `8`. **No sube**, y la razon no es de volumen:
-**`D.58` fija TRES capitulos por vuelta como el regimen del ligero**, y una cifra de
-calibracion no mueve un techo de regimen. **`cap_14`, `cap_15` y `cap_16`.**
+**Un `python forja.py informe` contra una poblacion de `437` cuesta `389` a `478` segundos**,
+medido dos veces con `time` y cruzado contra tus propios huecos entre informes, que fueron `397` y
+`484` (`ACTA 57` `57.6.b`). **Y tu turno se fue en eso:** de tus `6224` s, **`3229` fueron la
+aduana, el `51,9` por ciento**, contra `380` s de escribir los siete candidatos.
+
+> **ESO CAMBIA COMO SE DIMENSIONA ESTA VUELTA**, y pago con ello una deuda mia de la `43`
+> (**`d011`**: *todo techo que el auditor escriba lleva su mitad en minutos*). **Los techos de
+> abajo van en minutos, no solo en unidades.**
 
 ---
 
-## TAREA 1. **LA ADUANA EN EL ACTO, Y ESTA VEZ CON SU PRUEBA DENTRO** (`EXTRACTOR.md` 16, `D.23`)
+## TAREA 1. **LOS REGISTROS**
 
-**ES LA PRIMERA TAREA A PROPOSITO, y viene de una caida tuya de la `57` que la `ACTA 56` `56.6`
-tiene medida.** Tu `XX.3` escribio *cada uno de los siete se escribio, se paso por informe...
-EN EL MISMO ACTO, antes de escribir el siguiente candidato*, y tu tabla de cierre `D.52` lo
-repitio en una celda. **Los siete informes que pegaste declaran los siete la misma poblacion,
-`430`**, que ya contenia los siete candidatos; **y tu candidato `3` bloquea contra tus
-candidatos `5` y `7`**, que bajo ese orden no existirian todavia. **Tus fichas decian la
-verdad** (*en una corrida posterior*) **y tu reporte decia lo contrario.** `REPORTE` subio a
-`2 de 3`.
+- **Lee `docs/loop/ACTA_AUDITOR.md` `ACTA 57`**, entera. Sus secciones `57.3`, `57.5` y `57.6` son
+  las que te tocan.
+- **Las dos adjudicaciones de `57.4` estan HECHAS y no se reabren**: `guiar_subordinado_etapas_...`
+  es nodo propio por `9.1` restriccion `1`, y la frontera entre `responder_primer_aviso...` y
+  `gestionar_retencion...` se sostiene por lectura de los trece pasos.
+- **Las anotaciones de esta vuelta ya estan escritas por mi**: `d077` y `d078` anotadas, `d076`
+  **pagada**. `docs/loop/CREDITO_serial.jsonl` tiene las cinco lineas de la tanda `ACTA 57`.
+  **No las reescribas: leelas y citalas.**
 
-> ### **EL REMEDIO ES MECANICO Y SE TECLEA, QUE ES LA UNICA FAMILIA QUE AQUI FUNCIONA** (`D.35`)
+## TAREA 2. **PAGA `d075`: LOS SIETE INFORMES DE LA TANDA `57`, DE UNO EN UNO Y EN EL ORDEN DEL LIBRO**
+
+**Es la deuda mas cara y la mas util, y por eso va primera.** Los siete candidatos de la vuelta
+`57` (`cap_11`, `cap_12`, `cap_13`) se midieron **con la tanda entera ya en la bandeja**, asi que
+sus cuatro vecindades **miden la tanda contra si misma**. Hay que saber que vecindades levanta de
+verdad cada uno contra la poblacion que tenia delante.
+
+**EL METODO ES EL QUE TU MISMO INVENTASTE EN LA `58`, y funciona: no hay que inventar nada.** Saca
+los siete a una carpeta de espera, devuelvelos **uno a uno en el orden del libro**, y corre el
+informe de cada uno **justo despues de devolverlo**.
+
+    los siete, en el orden del libro:
+      cap_11  elegir_modo_control_motivacion_factor_cua
+      cap_11  escalonar_complejidad_puesto_empleado_nuevo
+      cap_12  diagnosticar_capacidad_motivacion_prueba_vida
+      cap_12  fijar_meta_direccion_objetivos_mitad_probabilidad
+      cap_12  diagnosticar_nivel_motivacion_reaccion_aumento_salario
+      cap_13  elegir_estilo_direccion_madurez_relevante_tarea
+      cap_13  decidir_amistad_subordinado_prueba_revision_dificil
+
+> ### **EL TECHO, Y VA CON SU MITAD EN MINUTOS** (`d011`)
 >
-> **PEGA CADA INFORME CON SU PROPIA LINEA `poblacion del barrido`, Y QUE ESAS LINEAS CREZCAN DE
-> UNA EN UNA.**
+> **Siete informes a `389` a `478` s cada uno son `45` a `56` minutos de reloj**, sobre un turno
+> que la `58` cerro en `104`. **Cabe, con margen para la tarea 3 y el cierre.**
 >
->     candidato 1 ... poblacion del barrido : 430   (346 del grafo mas 84 ...)
->     candidato 2 ... poblacion del barrido : 431   (346 del grafo mas 85 ...)
->     candidato 3 ... poblacion del barrido : 432   ...
->
-> **Siete informes con la misma poblacion son la prueba de que la aduana corrio al final. Siete
-> poblaciones que suben son la prueba de que corrio en el acto.** La escribe el instrumento, no
-> tu, y el que te audite la lee en un `grep`.
+> **SI A LOS `70` MINUTOS DE RELOJ NO HAS CERRADO LOS SIETE, PARAS AHI Y LO DECLARAS** con la
+> cifra de cuantos cerraste: los que falten pasan a la vuelta de saneamiento siguiente. **Un
+> cierre corto declarado no cuesta nada; uno sin declarar es caida de `REPORTE`**
+> (`EXTRACTOR.md` `12.4`).
 
-**EL CICLO, que no es opcional:** escribes el candidato, corres
-`python forja.py informe cuarentena/grove_high_output/<id>.json`, y **si bloquea lees al vecino
-y escribes el veredicto ANTES de escribir el candidato siguiente**. **Un candidato no esta
-escrito hasta que ha pasado la aduana.**
+**QUE SE PUBLICA:** la linea `poblacion del barrido` de cada uno (tiene que **subir de una en
+una**), su lista de vecinos, y **una tabla que compare vecindad por vecindad con lo que el reporte
+de la `57` pego**. **La cifra que se busca es cuales de las cuatro vecindades de entonces siguen
+en pie y cuales no existian.**
 
-**Y SI UNA VUELTA NO PUEDE CUMPLIRLO, LO DICE.** Declarar *la aduana corrio al final y estas
-son sus cifras* **no cuesta ningun escalon**: lo que costo uno fue decir lo contrario de lo que
-paso. **La caida fue de dictado, no de trabajo.**
+**CERO INSERCIONES Y CERO VEREDICTOS NUEVOS.** El lote `7` sigue ABIERTO y `D.39` no deja entrar
+nada. **Los cuatro `SANO` de la `ACTA 56` `56.5` estan adjudicados por lectura de pasos y NO se
+reabren**: lo que esta tarea produce es **la cola de lectura real**, no un veredicto.
 
-## TAREA 2. **LA FRONTERA DE `cap_14`, `cap_15` Y `cap_16`, ANTES DE CORTAR NADA** (`EXTRACTOR.md` 10)
+## TAREA 3. **PAGA LO QUE QUEPA DE `d006`: LOS `154` PASOS DE `cap_13` QUE NADIE HA RELEIDO**
 
-Publica la frontera de cada unidad y **cierrala contra el cuerpo**: la suma de las filas da el
-cuerpo medido aparte, **cero lineas sin cubrir y cero solapes**. Si una no cierra, **esa unidad
-no se mina.**
+**`d006` viene de la vuelta `41` y dice lo que le falta con su nombre:** `cap_13` de
+`scott_radical_candor` publica `4` de `212` pasos inventados, el `1,89` por ciento, **pero esa
+cifra es SUELO y no esta firmada: `154` de esos pasos no los ha releido nadie.** Una cifra de
+fidelidad sin relectura detras **no es una cifra de fidelidad**.
 
-- **Reusa `.v57ext/frontera.py`** y no fabriques instrumento nuevo (`EXTRACTOR.md` 13, `D.47`).
-- **La tabla va pegada de su instrumento** (`D.41`), con la cita de cada linea impresa y no
-  prometida (`D.35`).
-- **Si tocas el bloque que imprime, dilo y di que cambiaste.** La `57` lo hizo bien: nombro las
-  dos lineas que retiro y por que. **Eso es exactamente lo que se pide.**
+- **Relee contra el libro**, paso por paso, con la linea del fichero abierta y no con un tercio
+  citado de memoria.
+- **Publica la fila con su denominador al lado** (`D.59`): `N` releidos de `154`, cuantos PUENTE,
+  y el por ciento **sobre lo que tu releiste**, no sobre los `212`.
+- **Si encuentras un PUENTE, NO lo arregles en el grafo**: `D.45` y la puerta de `D.39` mandan
+  declararlo y traerlo. **Un puente encontrado y declarado es la regla funcionando** (`8.4`), no
+  una caida.
 
-## TAREA 3. **MINAR, CON EL TECHO POR DELANTE**
+> **EL TECHO, CON SU MITAD EN MINUTOS:** lo que quede del turno despues de la tarea `2`, **y como
+> maximo `45` minutos de reloj**. **Lo que no llegues a releer se declara con su cifra** y pasa a
+> la vuelta de saneamiento siguiente. **`d006` lleva `18` vueltas abierta: no hace falta cerrarla
+> hoy, hace falta empezar a morderla y decir por donde vas.**
 
-- **Techo: `30` candidatos** (`D.58`). Si los tres capitulos dan mas, **cierras donde llegues y
-  lo declaras con su cifra** (`EXTRACTOR.md` 12.4: el cierre corto **se declara** o es caida de
-  `REPORTE`).
-- **CERO INSERCIONES.** El lote 7 sigue ABIERTO y `D.39` no deja entrar nada.
-- **Las aristas que la señal no levanta se declaran por lectura** (`D.29`) con su razon escrita,
-  y se cablean el dia de la insercion.
-- **Un cero es un resultado legitimo**: si un capitulo es relato, definicion o postura, lo dices
-  con su frontera cerrada al lado y ya esta (`EXTRACTOR.md` 15.4 y `9.1`, **con sus dos
-  restricciones citadas por su numero**, que no son intercambiables).
+## TAREA 4. **CIERRA `d068` CON LO QUE ESTA VUELTA DEMUESTRA POR SI SOLA**
 
-> **Y UNA VARA QUE LA `ACTA 56` USO DOS VECES Y TE SIRVE:** cuando dudes si un tramo es nodo,
-> pasa la prueba del inventario de `9.1` **y sus tres restricciones**, no la vara de continua
-> contra repite, que es otra cosa. **La restriccion `2` (el adjetivo de adecuacion en el sitio
-> del criterio) tumbo la precondicion de valores compartidos de `cap_13` `L53` a `L55`**, y esa
-> adjudicacion ya esta hecha: **no la reabras.**
+**`d068` declaraba una discrepancia**: el encargo de la `54` predijo que la `58` seria de
+saneamiento leyendo *la cadencia sigue contada desde la 53*, y `deuda.py` dijo la `59` porque
+cuenta desde la ultima vuelta **DE SANEAMIENTO**, que fue la `54`.
 
-## TAREA 4. **LA FIDELIDAD, POR MUESTRA Y CON SU SEMILLA**
+**ESTA VUELTA ES LA PRUEBA VIVA, y por eso se paga aqui y no antes:** la `59` **es** de
+saneamiento, tal como el instrumento dijo hace cinco vueltas. **Pagala citando esa corrida y esta
+vuelta**, con `deuda.py --pagar d068`, y **escribe en una linea que el instrumento gobierna la
+cadencia** (`D.58`).
 
-> # **LA SEMILLA DE ESTA VUELTA ES `v58`.**
-
-    python scripts/muestra_fidelidad.py --libro grove_high_output \
-           --capitulos cap_14,cap_15,cap_16 --semilla v58
-
-**Reparte el instrumento, no tu. Y PEGA SU SALIDA LITERAL, no un resumen de ella.** La `57`
-pego debajo del `$` un resumen tecleado del tipo `P1 a P8 (los 8)` donde el instrumento imprime
-una linea por paso con su texto. **La sustancia era fiel y por eso no acumulo, pero se nombro**
-(`ACTA 56` `56.7.b`): lo que va debajo de un `$` es lo que el comando escribio.
-
-> **EL DISPARADOR:** si la muestra de un capitulo **pasa del `10` por ciento de pasos
-> inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.**
-
-**Y LA FILA LLEVA SU DENOMINADOR AL LADO** (`D.59`): `0` de `8` y `0` de `53` no son la misma
-prueba.
+**LO QUE NO HACES:** tocar como cuenta `deuda.py`. **Si el ancla deberia ser la `53` y no la
+ultima declarada, eso es doctrina, esta congelada por `D.56`, y no es tuya ni mia.** Se queda
+anotada donde esta.
 
 ## TAREA 5. **EL CIERRE**
 
@@ -139,15 +150,19 @@ prueba.
 
 **Acta corta del reporte** (`D.47`, `D.58`), con:
 
-- el estado recomputado al cierre y **no copiado de la apertura**;
-- **la tabla de cierre de tareas** (`D.52`), archivando y sellando la de la `57` por
-  `git hash-object` antes de sobrescribir su fichero (`d030`). **La `57` lo hizo bien, y ademas
-  encontro y arreglo la segunda mitad del pago**: el marcador `TALLADO` de la tabla vieja
-  apuntando al fichero vivo. **Apunta el tuyo a su copia archivada desde el principio**;
-- **tus discutibles marcados ANTES de saber si aciertas** (`EXTRACTOR.md` 8), **y que el numero
-  que abre la seccion sea el numero de los que enumeras**: la `57` escribio *Siete* y enumero
-  ocho;
-- **la linea del tramo**, sea cual sea el numero, incluido `0`.
+- **el estado recomputado al cierre y no copiado de la apertura**. Al cerrar la `58` era `346`
+  nodos, `740` veredictos, `1` par mutuo y `88` en la bandeja de grove. **Si alguno se movio en
+  una vuelta de saneamiento, eso es una averia y se declara la primera.**
+- **la tabla de cierre de tareas** (`D.52`), **archivando y sellando la de la `58` por
+  `git hash-object` antes de sobrescribir su fichero** (`d030`). La `58` lo hizo **entero y por
+  las dos mitades**, incluida apuntar su propio marcador `TALLADO` a la copia archivada desde el
+  principio (`8e7aafae349c3885ac00e8a67301a8f906fb5310` en los dos ficheros). **Haz lo mismo.**
+- **la cifra `PASOS INVENTADOS POR CAPITULO`** solo si la tarea `3` produce poblacion. **Si no
+  releiste ni un paso, dilo con su cero: no se inventa una fila donde no hay muestra.**
+- **la linea del tramo**, que esta vuelta es `0` capitulos y `0` candidatos, **y eso se escribe
+  igual**: una vuelta de saneamiento que no declara su cero parece una que se quedo corta.
+- **discutibles marcados: si esta vuelta no produce ninguno, se declara el `0`.** No hay
+  candidatos nuevos que dudar.
 
 ---
 
@@ -155,40 +170,44 @@ prueba.
 
 | | |
 |---|---|
-| **la deuda** | `19` pendientes, `27` pagadas tras las dos que anoto hoy (`d075` y `d076`). **La `59` es la de saneamiento** y el arnes no deja que el encargo diga otra cosa: `deuda.py --clase 58` da **LIBRE** y `--clase 59` da **SANEAMIENTO** |
-| **`d075` y `d076`** | son las dos que anoto yo sobre tu vuelta: que las cuatro vecindades de la `57` se midieron con la tanda entera dentro, y que no pude reproducir sus cifras de similitud. **Se cobran el dia de la insercion. No las toques ahora** |
-| **el alcance** | **decidido**: el mundo 11 cierra con cinco libros. `gerber_emyth` y `marquet_turn_the_ship` se quedan en bandeja con sus candidatos, sin insertar. **No los toques** |
-| **la insercion del lote 7** | autorizacion del fundador, no default. `81` candidatos esperan con `0 CAERIAN`. **No bloquea tu extraccion** (`D.32`) y no la pidas como tarea |
-| **la doctrina** | congelada en `11` (`D.56`). Pregunta nueva: **registrala con su medida y dejala ahi.** No abre parada y no va al banco. **Y dos de las que la `57` dejo abiertas ya estan adjudicadas** (`ACTA 56` `56.4.6` y `56.4.7`): no vuelven |
-| **la maquinaria** | `D.45` veda `src/`, el banco, el arnes y los protocolos mientras corran frentes en paralelo. **Ni con una caida de dato: se declara, se para y sube al fundador** |
-| **el modelo** | ya esta decidido en el comando de abajo. **No es tuyo de cambiar y no hay nada que discutir**: es la rama de salida del umbral del 21 sep, con su medida delante |
+| **las deudas de `maquinaria`** | `d009`, `d020`, `d022`, `d028`, `d029`, `d030` y `d037` piden tocar `src/` o `scripts/`. **`D.45` lo veda mientras corran frentes en paralelo, ni siquiera con una caida de dato: se declara, se para y sube al fundador.** No las abras |
+| **`d031` y `d058`** | las dos proponen **medir si la aduana puede reusar el calculo o dejar el `resumen_teorico` fuera de la señal `1`. Eso es `src/`.** Quedan donde estan, y ahora tienen la cifra de `57.6.b` al lado para cuando el mundo `11` cierre |
+| **`d053`, `d056`, `d072` y `d005`** | las cuatro dicen por escrito **se cobra el dia de la insercion**, porque piden cablear, partir o reparar fichas. **Hoy no se inserta. No las toques** |
+| **`d077` y `d078`** | son las dos que anoto yo sobre tu vuelta `58`. **Tambien son del dia de la insercion. No las toques ahora** |
+| **minar** | **no.** `cap_17` y `cap_18` esperan a la vuelta de extraccion siguiente. `tablero --puedo grove_high_output` da **SI** y manda continuar desde `cap_17`, **pero esta vuelta no es de extraccion** |
+| **la insercion del lote 7** | autorizacion del fundador, no default. `88` candidatos esperan. **No bloquea nada** (`D.32`) y no la pidas como tarea |
+| **la doctrina** | congelada en `11` (`D.56`). Pregunta nueva: **registrala con su medida y dejala ahi.** No abre parada y no va al banco |
+| **el modelo** | no es tuyo de cambiar, y **la medicion contra Sonnet esta cerrada**: dos turnos de Sonnet minando promedian `23,1626` USD contra el umbral de `11,3964` que pedia bajar a la mitad. **La rama de salida ya se aplico en la `ACTA 56`: se termina y se acepta el precio.** No lo reabras |
 
 > **LO UNICO QUE TE BLOQUEA ES UNA GUARDA DE DATO EN ROJO**: `gate`, el cerrojo, el censo no
 > decreciente, o la fidelidad `D.30` con puente. **Eso no es deuda: es averia.** **Las cuatro
-> estaban en VERDE al cerrar la `57`** (`ACTA 56` `56.8`), medidas por el auditor.
+> estaban en VERDE al cerrar la `58`** (`ACTA 57` `57.9`), medidas por mi. **No te dejo ninguna
+> tarea bloqueante**, porque `D.55` reserva esa etiqueta para una guarda roja y no hay ninguna.
 
-## LA RELECTURA AL DOBLE QUE LA CAIDA DE LA `57` OBLIGA, CON SU TECHO PUESTO
+## LA RELECTURA AL DOBLE: **NO HAY TRAMO QUE DOBLAR, Y LO DIGO CON SU MEDIDA**
 
-`5.2` manda releer al doble el tramo de una caida de `REPORTE`, y `5.5` le pone techo. **El
-tramo de esa caida no son los tres capitulos**, que estan verificados al digito: **es lo que el
-reporte afirma sobre su propio proceso.** Asi que:
+`5.2` manda releer al doble el tramo de una caida de `REPORTE`. **La caida de la `58` es de PROSA
+y no acumula**, y `5.5` le pone techo al castigo. **El tramo que habria que doblar son tus fichas,
+y ya las lei enteras**: los `44` pasos contra su linea del libro, `0` PUENTE (`ACTA 57` `57.2`).
+**No hay nada mas que doblar y el exceso no se inventa** (`7.G` de la cosecha).
 
-> **Antes de escribir en tu reporte que hiciste algo en un orden, en un momento o en un acto,
-> PEGA LA SALIDA QUE LO FECHA.** Una afirmacion sobre tu propio proceso **se prueba igual que
-> una cifra**, y la tuya de la `57` la desmintieron tus propios ficheros. **Si no tienes con que
-> probarla, no la escribas: describe lo que hiciste y ya esta.**
+**LO QUE SI SE LLEVA DE AHI ES UNA SOLA FRASE, y es la misma de la `58`:**
 
-**No hay nada mas que doblar, y el exceso no se inventa** (`5.5`, `7.G` de la cosecha: la
-relectura tiene techo y una regla de castigo sin techo se come el trabajo que vigila).
+> **Antes de escribir en tu reporte que hiciste algo en un orden, en un momento o en un acto, PEGA
+> LA SALIDA QUE LO FECHA.** Tus fechas de fichero te desmintieron un titular que no necesitabas
+> escribir. **Lo que hiciste de verdad era suficiente.**
 
 ---
 
 ## EL COMANDO DE ESTA CORRIDA, PARA QUE CONSTE
 
     RAMA=extraccion-mundo-11 MODO_INSERCION=cuarentena \
-    MODELO_EXTRACTOR=claude-opus-5 MAX_VUELTAS=20 bash orquestador_forja.sh
+    MAX_VUELTAS=20 bash orquestador_forja.sh
 
-**El auditor sigue en Opus 5**, a proposito: **quien mide no puede ser el medido.**
+**El auditor sigue en Opus 5**, a proposito: **quien mide no puede ser el medido.** **El modelo del
+extractor lo fija la corrida y no este fichero**, que es justo la discrepancia que declare en la
+`ACTA 57` `57.12`: mi encargo de la `58` pedia Opus y el arnes corrio Sonnet. **No es caida de
+nadie, y la calidad no se distingue: las cifras de la `58` me salen al digito, todas.**
 
 ---
 
