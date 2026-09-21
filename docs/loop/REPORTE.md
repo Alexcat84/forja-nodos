@@ -58880,10 +58880,24 @@ del nombre en `G5.1`.*
 
 ### G5.3.a. LA FRONTERA DE `cap_15` (`Cap. 13`, *Your Strategic Objective*), **7 piezas y UN CANDIDATO**
 
-Salida de `python .gerber_v5/frontera.py fuentes/gerber_emyth/cap_15.md .gerber_v5/piezas_cap15.txt`,
-guardada en `.gerber_v5/frontera_cap15.txt`:
+Salida de `python .gerber_v5/frontera.py fuentes/gerber_emyth/cap_15.md .gerber_v6/piezas_cap15_279.txt`,
+guardada en `.gerber_v6/frontera_cap15_279.txt`:
 
-<!-- TALLADO: salida=.gerber_v5/frontera_cap15.txt -->
+> **CORRECCION DECLARADA DE `ACTA G5` `4.1`, VUELTA `6`, `TAREA 1`:** la fila `R7` publicaba `L185 a
+> L280` sobre un fichero de `279` lineas. Motivo: el fichero de piezas heredado (`.gerber_v5/piezas_cap15.txt`)
+> traia `280` como borde superior del ultimo tramo y nadie lo comparo contra `wc -l` del capitulo. **Se
+> corrige REGENERANDO (`D.41`), no tecleando**: `.gerber_v6/piezas_cap15_279.txt` corrige el borde a
+> `279` y `.gerber_v6/frontera_cap15_279.txt` es la salida nueva del mismo instrumento. Unica celda que
+> cambia contra la tabla vieja (diff pegado, `0` en cualquier otra cifra: las `2891` palabras de `R7`, el
+> cuerpo `4685`, la suma `4685`, el residuo `0`, `0` solapes y `0` lineas sin cubrir salen identicos):
+>
+>     $ diff .gerber_v5/frontera_cap15.txt .gerber_v6/frontera_cap15_279.txt
+>     13c13
+>     < | `R7` | L185 a L280 | **2891** | la historia de Sarah [...] | **CASO** |
+>     ---
+>     > | `R7` | L185 a L279 | **2891** | la historia de Sarah [...] | **CASO** |
+
+<!-- TALLADO: salida=.gerber_v6/frontera_cap15_279.txt -->
 
 | pieza | lineas | palabras | que es | clase |
 |---|---|---:|---|---|
@@ -58893,7 +58907,7 @@ guardada en `.gerber_v5/frontera_cap15.txt`:
 | `R4` | L87 a L166 | **694** | el Segundo Estandar, una Oportunidad que Vale la Pena: la diferencia entre la mercancia y el producto (el ejemplo de Revlon y del comercial de Chanel) y entre demografia y psicografia del Modelo Demografico Central | **POSTURA y CASO** |
 | `R5` | L167 a L178 | **87** | Estandares del Tercero en adelante: no hay numero fijo de estandares, solo preguntas especificas que hay que responder, y el libro las pone en cuatro vinetas: cuando estara listo el Prototipo, donde se hara negocio, como se hara negocio, que estandares se exigiran | **INVENTARIO PROPIO: NACE 1 CANDIDATO** |
 | `R6` | L179 a L184 | **76** | los estandares que creas daran forma al negocio y a la experiencia que tienes de el, crean la tension que acerca el modelo futuro del negocio a como se ve hoy, y son la energia que producen resultados | **POSTURA: bisagra** |
-| `R7` | L185 a L280 | **2891** | la historia de Sarah describiendo su Objetivo Estrategico para All About Pies: las cuatro tiendas, las ventas, el jardin organico, el cuidado de su tia | **CASO** |
+| `R7` | L185 a L279 | **2891** | la historia de Sarah describiendo su Objetivo Estrategico para All About Pies: las cuatro tiendas, las ventas, el jardin organico, el cuidado de su tia | **CASO** |
 | **el cuerpo entero** | **L8 a L279** | **4685** | **suma de las piezas: 4685** | **residuo sin asignar: 0** |
 
     piezas: 7   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4685   suma 4685   residuo 0
@@ -59328,3 +59342,439 @@ mismo desfase que `ACTA G4` `G4.6.e` ya declaro para su propia corrida.
 
 **LA VUELTA 5 CIERRA. TRES TAREAS CERRADAS (`G5.2`, `G5.3`, `G5.4`), CERO PARADA (`G5.6.c`), CERO
 INSERCION (`MODO_INSERCION=cuarentena`), TRES GUARDAS VERDES (`G5.5.a`), CERO AVERIA DE DATO (`G5.6.b`).**
+
+---
+
+# FRENTE `gerber_emyth`, VUELTA 6: **VUELTA DE SANEAMIENTO** (`D.55`, `D.58`), la primera que esta linea corre (`D.45`, frente en paralelo: **NO INSERTA, NO MINA**)
+
+> ## **ESTE BLOQUE SE ESCRIBE EN LA RAMA `extraccion-gerber_emyth`, CON `MODO_INSERCION=cuarentena`. CERO INSERCIONES, CERO CAPITULOS NUEVOS MINADOS.**
+>
+> **CLASE DE ESTA VUELTA: SANEAMIENTO**, dictada por el instrumento y no por mi lectura (`python
+> scripts/deuda.py --clase 5`, `G6.1`). La linea `gerber_emyth` va **`4` de `5`** desde su primera
+> vuelta y **no ha saneado nunca**: esta es la primera.
+>
+> **MODO AUSTERO (`D.47`) VIGENTE.** Nada que el registro ya diga, cifras talladas, discutibles por
+> numero y linea. **Las guardas de dato, intactas.**
+
+## G6.0. EL ESQUELETO DE LA VUELTA (`EXTRACTOR.md` 3)
+
+| # | tarea del encargo | como cierra | donde |
+|---:|---|---|---|
+| 1 | `TAREA 1`: declarar la clase de la vuelta y corregir la celda `L280` de `cap_15` regenerando la tabla de `G5.3.a` | **CERRADA**: clase declarada, `1` celda corregida (`L280` a `L279`), tallado VERDE | `G6.2` |
+| 2 | `TAREA 2`: el barrido de deuda de la linea `gerber_emyth` | **CERRADA**: `2` pagadas (`d102`, `d103`), `2` medidas y dejadas (`d106`, `d107`), el resto declarado sin pagar | `G6.3` |
+| 3 | `TAREA 3`: pagar `d112` cambiando el orden de `tabla_de_cierre.py --escribir` | **CERRADA**: tabla propia pegada antes de `--escribir`, `TABLA_DE_CIERRE.txt` trae mis tres filas, `d112` pagada | `G6.4` |
+| 4 | `TAREA 4`: el cierre de la vuelta de saneamiento | **CERRADA**: tres guardas VERDES, cifras recomputadas identicas, `0` paradas, `D.61` en `0` abiertos, credito medido sin anotar | `G6.5` a `G6.7` |
+
+**CUATRO TAREAS ENCARGADAS, DENTRO DEL TOPE DE CINCO** (`EXTRACTOR.md` 1.3).
+
+## G6.1. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION DE PESO (`EXTRACTOR.md` 4)
+
+**LA PRIMERA OPERACION DE ESTA VUELTA LA ORDENA EL PROPIO ENCARGO**, y no es opcional: `TAREA 1` manda
+declarar la clase de la vuelta ANTES que ninguna otra cosa (`PROMPT_SIGUIENTE.md` seccion `1`, la frase
+que dice *y lo primero de esta tarea, antes que la celda*). Esa declaracion **no mueve `dataset/`,
+`bitacora/` ni los conteos de esta tabla**: solo anexa un suceso a `docs/loop/DEUDA.jsonl`. Por eso la
+apertura de abajo se mide TRAS esa unica operacion, y se cita como intermedia (`EXTRACTOR.md` 4):
+
+    $ python scripts/deuda.py --saneamiento --vuelta 6 --cita "PROMPT_SIGUIENTE.md, encargo de la vuelta 6, cabecera"
+    DECLARADA vuelta de SANEAMIENTO: 6
+
+Salida de `python .gerber_v6/apertura.py` (copia sin cambios de `.gerber_v5/apertura.py`), guardada en
+`.gerber_v6/apertura.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v6/apertura.txt -->
+
+| pieza | al abrir | de donde sale |
+|---|---:|---|
+| nodos en el grafo | **346** | `dataset/nodos.jsonl` |
+| veredictos escritos | **740** | `bitacora/VEREDICTOS.jsonl` |
+| unidades de `gerber_emyth` | **22** | `PATRON: fuentes/gerber_emyth/cap_*.md` |
+| palabras de cuerpo del libro | **62648** | `PATRON: fuentes/gerber_emyth/cap_*.md` |
+| candidatos en bandeja de `gerber_emyth` | **16** | `PATRON: cuarentena/gerber_emyth/*.json` |
+| clave `gerber_emyth` en la tabla canonica | **SI** | `fuentes/FUENTES_CANONICAS.json` |
+| rama activa | `extraccion-gerber_emyth` | `git rev-parse --abbrev-ref HEAD` |
+| commit de apertura | `f38c34e` | `git rev-parse --short HEAD` |
+
+Salida de `python scripts/deuda.py`, guardada en `.gerber_v6/deuda_apertura.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v6/deuda_apertura.txt -->
+
+    pendientes: 42    pagadas: 33
+    ultima vuelta de saneamiento: 6
+
+**COINCIDE AL DIGITO CON LO QUE EL ENCARGO PUBLICA EN SU SECCION `6`** (`42` pendientes, `33` pagadas).
+`346` nodos y `740` veredictos son los mismos con los que `ACTA G5` cerro (`G5` cabecera), sin
+movimiento: esta vuelta no toca el grafo (`MODO_INSERCION=cuarentena`, `D.39`).
+
+## G6.2. TAREA 1: **LA CLASE DECLARADA Y LA CELDA `L280` CORREGIDA REGENERANDO**. **CERRADA**
+
+### G6.2.a. La clase de la vuelta, declarada (ya pegada en `G6.1`)
+
+`DECLARADA vuelta de SANEAMIENTO: 6`, anexada a `docs/loop/DEUDA.jsonl`. No es papeleo: la linea
+`gerber_emyth` no ha saneado nunca y esta es su primera vuelta de esa clase (`D.58`).
+
+**CORRECCION DECLARADA EN EL ACTO, PROPIA DE ESTA VUELTA:** el comando se corrio dos veces por
+descuido mio y `docs/loop/DEUDA.jsonl` quedo con DOS lineas `{"tipo": "saneamiento", "vuelta": 6}`
+identicas. Lo detecto con `git diff docs/loop/DEUDA.jsonl` antes de seguir, y **quito la segunda
+linea a mano** (no es `dataset/`, `bitacora/` ni `censos/`, que son las tres sedes exclusivas de la
+aduana segun `EXTRACTOR.md` 14; `DEUDA.jsonl` no esta en esa lista y el propio `deuda.py` no ofrece
+deshacer). Verificado despues: `python scripts/deuda.py` vuelve a dar `pendientes: 42  pagadas: 33`,
+sin mover ninguna cifra de las que este reporte cita.
+
+### G6.2.b. La celda `L280`, corregida regenerando y no tecleando (`D.41`)
+
+**Esa tabla es TALLADA, asi que `D.41` manda regenerar.** Es el caso contrario al de la `TAREA 1` de
+la vuelta `5`, donde las dos correcciones vivian en prosa y ahi si se tachaba: aqui la correccion **ya
+esta hecha, dentro de `G5.3.a`**, sustituyendo la tabla entera y dejando escrita al lado la nota de
+correccion declarada, tal como el encargo pide (`PROMPT_SIGUIENTE.md` `1`).
+
+El orden que se corrio, con salida pegada:
+
+    $ sed 's/"R7", 185, 280/"R7", 185, 279/' .gerber_v5/piezas_cap15.txt > .gerber_v6/piezas_cap15_279.txt
+    $ diff .gerber_v5/piezas_cap15.txt .gerber_v6/piezas_cap15_279.txt
+    8c8
+    <  ("R7", 185, 280, "la historia de Sarah [...] su tia", "CASO"),
+    ---
+    >  ("R7", 185, 279, "la historia de Sarah [...] su tia", "CASO"),
+    $ python .gerber_v5/frontera.py fuentes/gerber_emyth/cap_15.md .gerber_v6/piezas_cap15_279.txt > .gerber_v6/frontera_cap15_279.txt
+    $ diff .gerber_v5/frontera_cap15.txt .gerber_v6/frontera_cap15_279.txt
+    13c13
+    < | `R7` | L185 a L280 | **2891** | la historia de Sarah [...] | **CASO** |
+    ---
+    > | `R7` | L185 a L279 | **2891** | la historia de Sarah [...] | **CASO** |
+
+**UNA SOLA CELDA CAMBIA.** Las `2891` palabras de `R7`, el cuerpo `4685`, la suma `4685`, el residuo
+`0`, los `0` solapes y las `0` lineas sin cubrir salen identicos, tal como la `ACTA G5` `4.1` ya habia
+medido antes de encargarlo. La tabla nueva entera, con la nota de correccion declarada al lado, vive
+ahora en `G5.3.a` (sustituida en el propio sitio, no aqui): quien la lea encuentra el motivo en una
+linea y el diff pegado encima de la tabla misma.
+
+### G6.2.c. `tallar_reporte.py`, corrido despues de la sustitucion
+
+Salida de `python scripts/tallar_reporte.py`, corrida de nuevo al cerrar esta seccion (con `TAREA 2` y
+`TAREA 3` ya escritas mas abajo, asi que su conteo total de tablas es el del documento completo a esta
+altura, no solo el de `G6.2`):
+
+<!-- TALLADO: parcial salida=.gerber_v6/tallado_g6.2.txt -->
+
+    tablas que declaran instrumento : 324
+      talladas, celda a celda       : 170
+      que DIFIEREN de su instrumento: 0
+      con la ruta VACIA             : 0   (cero bytes, 7.B)
+      sin poder comprobar           : 0
+      que CITAN y no reproducen     : 154   (declaradas PARCIAL)
+
+    TALLADO VERDE: las 170 tabla(s) comprobables son las de su instrumento, celda a celda.
+
+**VERDE, `0` DIFIEREN.** La sustitucion de `G5.3.a` no rompio ninguna otra tabla tallada: sigue
+habiendo `170` talladas celda a celda, la misma cifra que antes de la correccion (la tabla de `R7` ya
+contaba como tallada antes y despues; lo que cambio es su fichero de referencia, de
+`.gerber_v5/frontera_cap15.txt` a `.gerber_v6/frontera_cap15_279.txt`, y su contenido, de `L280` a
+`L279`). El total de tablas declaradas y de `CITAN` sube por las secciones nuevas que este mismo
+reporte anexa despues de `G6.2` (`G6.3`, `G6.4`), no por ninguna rotura.
+
+**`TAREA 1` CIERRA.** Clase declarada, celda corregida regenerando, tallado VERDE.
+
+## G6.3. TAREA 2: **EL BARRIDO DE DEUDA, LINEA POR LINEA**. **CERRADA**
+
+El barrido de deuda ya esta entero en `G6.1` (esa es su sede, con su propio fichero de apertura):
+**`42` pendientes, `33` pagadas al abrir esta tarea.** La clase de la vuelta ya quedo dictada por el
+instrumento y declarada en `G6.1` y `G6.2`: **`SANEAMIENTO`**. No se vuelve a correr `--clase` aqui
+porque hacerlo AHORA, tras la propia declaracion, mide otra cosa (`clase_de_vuelta` cuenta desde la
+ultima de saneamiento, y esa ultima ya soy yo mismo): **correrlo en este punto citaria un numero que
+el propio acto de declarar ya movio, y eso es exactamente lo que la regla del instrumento prohibe.**
+La cifra que manda para esta tarea es la de apertura, `42`, medida ANTES de pagar nada.
+
+La tabla siguiente es una DECISION propia sobre esas `42` filas, cruzada con lo que esta vuelta puede
+y no puede tocar (encargo seccion `2`): NO reproduce ningun instrumento, y cada fila que SI se paga
+trae su propia medida en `G6.3.a` a `G6.3.d`, con su instrumento ahi.
+
+| id | que es | tratamiento en esta vuelta |
+|---|---|---|
+| `d094` | `cap_01` a `cap_03` sin minar | **NO SE PAGA**: decision del fundador (encargo `4`, "NO TOCAS `cap_01`, `cap_02` NI `cap_03`"), no bloqueante. Sigue abierta |
+| `d098` | puntero `D.37` de `cap_05` `L29`, las tres fases | **NO SE PAGA AQUI**: es para la vuelta que INSERTE |
+| `d102` | tablero publicaba `candidatos_en_bandeja 10` con `11` en bandeja | **PAGADA**: no reproduce. `python forja.py tablero` da `16` y `ls cuarentena/gerber_emyth/*.json \| wc -l` da `16` (`G6.3.a`) |
+| `d103` | bloque de `gate` pegado a dos lineas en vez de tres | **PAGADA**: las tres ultimas citas (vuelta `5` propia, `ACTA G4`, `ACTA G5`) pegan las tres lineas completas (`G6.3.b`) |
+| `d104` | puntero `D.37` de `cap_12` `L21`, la terna | **NO SE PAGA AQUI**: es para la vuelta que INSERTE |
+| `d106` | tablero publica `ult cap = cap_19` con `cap_17` minado | **NO SE PUEDE**: vive en `src/tablero.py`, vedado desde un frente (`D.45`). Medida y sigue viva (`G6.3.c`) |
+| `d107` | el primer candidato de una vuelta no ve a los que nacen despues | **SIGUE VIVA**: la vuelta `5` la cumplio con su unico candidato, caso trivial sin segundo candidato que perderse. Declarada y dejada |
+| `d108` | releer `cap_14` `L27` contra `L117` | **NO SE PAGA AQUI**: es para la vuelta que INSERTE |
+| `d109` | la guarda de frontera no mira el borde de arriba | **NO SE PUEDE**: maquinaria, moratoria (`7.F`, `D.47`) vigente, sin caida de DATO que la levante |
+| `d110` | el discutible `5` se cierra en `cap_18`, no en `cap_17` | **NO SE PAGA AQUI**: `cap_18` no se mina en una vuelta de saneamiento |
+| `d111` | la serie `D.37` de `cap_13` va por `0` de `7` | **NO SE PAGA AQUI**: la decision es de la vuelta que inserte |
+| `d112` | el orden de `tabla_de_cierre.py --escribir` | **SE PAGA EN LA `TAREA 3`** (`G6.4`) |
+
+### G6.3.a. `d102`, pagada: no reproduce
+
+Salida de `python forja.py tablero`, guardada en `.gerber_v6/tablero_d102_d106.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v6/tablero_d102_d106.txt -->
+
+    2    9    gerber_emyth                   EN CURSO               gerber_emyth            16  cap_19
+
+    lote 9   gerber_emyth                   16 candidato(s) en extraccion-gerber_emyth
+
+Contra la bandeja real:
+
+    $ ls cuarentena/gerber_emyth/*.json | wc -l
+    16
+
+**`16` PUBLICADO CONTRA `16` REAL: COINCIDEN.** La cita vieja de `d102` (`10` contra `11`, medida al
+abrir una vuelta que luego escribio candidatos nuevos antes de que nadie releyera el tablero) no se
+repite hoy: esta vuelta de saneamiento no escribe candidatos, asi que la bandeja no puede envejecer
+dentro del propio turno. **Pagada con `python scripts/deuda.py --pagar d102 --vuelta 6 --como "..."`**,
+salida guardada en `.gerber_v6/pago_d102.txt`:
+
+<!-- TALLADO: salida=.gerber_v6/pago_d102.txt -->
+
+    PAGADA d102 en la vuelta 6
+
+### G6.3.b. `d103`, pagada: las tres ultimas citas ya pegan tres lineas
+
+    $ sed -n '59146,59148p' docs/loop/REPORTE.md
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ sed -n '46265,46268p' docs/loop/ACTA_AUDITOR.md
+        $ python forja.py gate
+        GATE VERDE.
+          nodos verificados: 346
+          guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ sed -n '46973,46976p' docs/loop/ACTA_AUDITOR.md
+        $ python forja.py gate
+        GATE VERDE.
+          nodos verificados: 346
+          guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+**LAS TRES ULTIMAS VUELTAS/ACTAS (vuelta `5` propia, `ACTA G4`, `ACTA G5`) PEGAN LAS TRES LINEAS
+COMPLETAS.** El defecto que `d103` registro (`REPORTE` `G3.8.a` y `ACTA G2` `1.1`, los dos a dos
+lineas) no aparece en ninguna de las tres citas mas recientes. **Pagada** con
+`python scripts/deuda.py --pagar d103 --vuelta 6 --como "..."`, salida en `.gerber_v6/pago_d103.txt`:
+
+<!-- TALLADO: salida=.gerber_v6/pago_d103.txt -->
+
+    PAGADA d103 en la vuelta 6
+
+### G6.3.c. `d106`, medida y dejada: sigue viva, no se toca desde un frente
+
+<!-- TALLADO: parcial salida=.gerber_v6/tablero_d102_d106.txt -->
+
+    2    9    gerber_emyth                   EN CURSO               gerber_emyth            16  cap_19
+
+`capitulos_minados` de `.gerber_v6/tablero_d102_d106.txt` (el `git diff` de esta vuelta no lo mueve, se
+lee del propio `docs/loop/TABLERO.jsonl`):
+
+    ["cap_04", "cap_05", "cap_06", "cap_07", "cap_08", "cap_09", "cap_10", "cap_11", "cap_12",
+     "cap_13", "cap_14", "cap_15", "cap_19"]
+
+**SIGUE INVENTANDO `cap_19` Y OMITIENDO `cap_16` Y `cap_17`**, que la vuelta `5` SI proceso (con `0`
+candidatos cada uno). El mecanismo es el mismo que `d106` describe: `src/tablero.py` deriva la lista por
+expresion regular sobre la prosa de los candidatos, y la cabeza de serie
+`recorrer_siete_pasos_programa_desarrollo_negocio` nombra `cap_19` en su propio texto (por `D.37`,
+correctamente), lo que produce el falso positivo; `cap_16` y `cap_17` no dejaron candidato y por tanto
+no dejaron texto que el regex pueda encontrar, lo que produce el falso negativo gemelo. **NO SE TOCA**:
+`src/tablero.py` es maquinaria vedada desde un frente (`D.45`). Medido y dejado, como manda el encargo.
+
+### G6.3.d. `d107`, declarada y dejada: la vuelta `5` la cumplio en su caso trivial
+
+La `TAREA` de `d107` (releer el informe del primer candidato como ultimo paso de la vuelta) no tuvo
+ocasion de fallar en la vuelta `5`: **esa vuelta escribio un unico candidato**
+(`responder_4_preguntas_estandares_objetivo_estrategico`, `G5.3.a`), asi que no existe un segundo
+candidato posterior que el primero pudiera dejar de ver. El remedio sigue vivo para la primera vuelta
+que escriba dos o mas candidatos: **se declara y se deja**, sin pago ni cierre, tal como el encargo
+ordena.
+
+**CUATRO DEUDAS TOCADAS: DOS PAGADAS (`d102`, `d103`), DOS MEDIDAS Y DEJADAS SIN TOCAR (`d106`,
+`d107`). LAS OCHO RESTANTES DE LA TABLA (`d094`, `d098`, `d104`, `d108`, `d109`, `d110`, `d111`, `d112`)
+NO SE PAGAN AQUI POR EL MOTIVO ESCRITO EN LA COLUMNA, Y `d112` SE PAGA EN LA `TAREA 3`.**
+
+## G6.4. TAREA 3: **`d112`, PAGADA CAMBIANDO EL ORDEN, NO EL CODIGO**. **CERRADA**
+
+**LO QUE MIDIO LA `ACTA G5` `4.2` CAIDA `b`:** la causa real de que `docs/loop/TABLA_DE_CIERRE.txt`
+quedara con las dos filas de la `ACTA G4` mientras el reporte publicaba tres **es el orden**: la
+vuelta `5` corrio `--escribir` ANTES de pegar su propia tabla de cierre. El remedio no lleva ni una
+linea de codigo nuevo (`D.45`, moratoria): **escribir la tabla propia primero, correr el instrumento
+despues.**
+
+### G6.4.a. La tabla de cierre de la vuelta `6`, pegada PRIMERO
+
+| # | tarea | como cerro |
+|---:|---|---|
+| `1` | `TAREA 1`: declarar la clase `SANEAMIENTO` y corregir la celda `L280` de `cap_15` | **CERRADA en `G6.2`**: clase declarada (`DECLARADA vuelta de SANEAMIENTO: 6`), `1` celda corregida regenerando (`L280` a `L279`), tallado VERDE con `0` DIFIEREN |
+| `2` | `TAREA 2`: el barrido de deuda de la linea `gerber_emyth` | **CERRADA en `G6.3`**: `2` deudas pagadas (`d102`, `d103`), `2` medidas y dejadas (`d106`, `d107`), el resto declarado sin pagar con su motivo |
+| `3` | `TAREA 3`: pagar `d112` cambiando el orden | **CERRADA aqui mismo**: esta tabla se pega ANTES de correr `--escribir` (`G6.4.a`), y el instrumento se corre DESPUES (`G6.4.b`) |
+
+### G6.4.b. El instrumento, corrido DESPUES de pegar la tabla propia
+
+    $ python scripts/tabla_de_cierre.py --escribir
+
+<!-- TALLADO: script=scripts/tabla_de_cierre.py salida=docs/loop/TABLA_DE_CIERRE.txt -->
+
+Salida guardada en `.gerber_v6/tabla_de_cierre_salida.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v6/tabla_de_cierre_salida.txt -->
+
+### G6.4.c. Comprobacion: el fichero trae MIS filas, no las de otra vuelta
+
+    $ cat docs/loop/TABLA_DE_CIERRE.txt
+
+**El fichero regenerado trae las TRES filas de `G6.4.a` (`TAREA 1`, `TAREA 2`, `TAREA 3` de la vuelta
+`6`), no las dos filas de la `ACTA G4` que `d112` denuncia.** Ninguna de las tres afirmaciones de esta
+vuelta trae el patron `N de M del capitulo`, asi que el instrumento las copia tal cual y las declara
+`SIN COMPROBAR`, exactamente como hizo con las dos de la vuelta `5` (mismo comportamiento, fila
+distinta): **el instrumento no inventa lo que no sabe medir, y hoy lo que puede mirar es si la fila es
+de ESTA vuelta, y lo es.**
+
+### G6.4.d. `d112`, pagada
+
+    $ python scripts/deuda.py --pagar d112 --vuelta 6 --como "REMEDIO APLICADO SIN CODIGO: la tabla de cierre de la vuelta 6 (G6.4.a) se pego en el reporte ANTES de correr 'python scripts/tabla_de_cierre.py --escribir' (G6.4.b). docs/loop/TABLA_DE_CIERRE.txt regenerado trae las tres filas de esta vuelta y no las de la ACTA G4, verificado con cat (G6.4.c)."
+
+Salida, guardada en `.gerber_v6/pago_d112.txt`:
+
+<!-- TALLADO: salida=.gerber_v6/pago_d112.txt -->
+
+**`TAREA 3` CIERRA. NO ES `d022` NI `d030`** (los dos remedios anteriores de la misma familia, la
+cabecera y el nombre del fichero de salida): **este es el orden, y el orden ya quedo corregido en el
+propio acto de escribir este reporte.**
+
+## G6.5. EL CIERRE: LAS TRES GUARDAS Y LAS CIFRAS RECOMPUTADAS (`EXTRACTOR.md` 4, 6)
+
+### G6.5.a. Las tres guardas, salida pegada entera (`d103`: tres lineas, no dos)
+
+Salida de `python forja.py gate`, guardada en `.gerber_v6/gate.txt`:
+
+<!-- TALLADO: salida=.gerber_v6/gate.txt -->
+
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+Salida de `python forja.py guiones`, guardada en `.gerber_v6/guiones.txt`:
+
+<!-- TALLADO: salida=.gerber_v6/guiones.txt -->
+
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+Salida de `python tests/test_aceptacion.py`, guardada en `.gerber_v6/test_aceptacion.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v6/test_aceptacion.txt -->
+
+    total: 350 pruebas, 0 fallos, 0 errores
+
+**TRES GUARDAS VERDES.**
+
+### G6.5.b. Las cifras, recomputadas al cerrar y no copiadas de `G6.1`
+
+Salida de `python .gerber_v6/apertura.py` corrida OTRA VEZ, ahora al cierre, guardada en
+`.gerber_v6/cierre.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v6/cierre.txt -->
+
+| pieza | al cerrar | de donde sale |
+|---|---:|---|
+| nodos en el grafo | **346** | `dataset/nodos.jsonl` |
+| veredictos escritos | **740** | `bitacora/VEREDICTOS.jsonl` |
+| candidatos en bandeja de `gerber_emyth` | **16** | `PATRON: cuarentena/gerber_emyth/*.json` |
+
+**IDENTICAS A LA APERTURA DE `G6.1`.** Confirmado ademas por diferencia directa contra el arbol de git:
+
+    $ git status --porcelain | grep -E "^\s*M (dataset|bitacora|censos|config)/"
+    (sin salida: ningun fichero de esas cuatro sedes aparece modificado)
+
+**`0` FICHEROS DE `dataset/`, `bitacora/`, `censos/` NI `config/pares_mutuos.jsonl` MOVIDOS.** Esta
+vuelta no toco el grafo, tal como manda `MODO_INSERCION=cuarentena` (`D.39`) y tal como corresponde a
+una vuelta de saneamiento (`D.55`: paga deuda, no inserta).
+
+La deuda, recomputada al cierre. Salida de `python scripts/deuda.py`, guardada en
+`.gerber_v6/deuda_cierre.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v6/deuda_cierre.txt -->
+
+    pendientes: 39    pagadas: 36
+
+**DE `42`/`33` AL ABRIR ESTA TAREA (`G6.3`) A `39`/`36` AL CERRAR LA VUELTA: `3` PAGADAS** (`d102`,
+`d103`, `d112`), **`0` NUEVAS CONTRAIDAS.** Coincide al digito con la aritmetica de `G6.3` y `G6.4`.
+
+## G6.6. LAS CONDICIONES DE PARADA, REPASADAS UNA A UNA (`EXTRACTOR.md` 7)
+
+| condicion | lo que mido en este turno | veredicto |
+|---|---|---|
+| una pregunta de doctrina | ninguna nueva abierta: el barrido de deuda (`G6.3`) registra sin adjudicar, y la cola de doctrina se queda en `11` (`D.55`), sin moverla | **NO ES PARADA** |
+| una caida de dato | ninguna: `0` ficheros de `dataset/`, `bitacora/`, `censos/` ni `config/pares_mutuos.jsonl` movidos (`G6.5.b`), tres guardas VERDES (`G6.5.a`) | **NO ES PARADA** |
+| algo contradice una regla vigente o una cifra publicada con su corte | nada: la unica contradiccion que esta vuelta encontro (la celda `L280` de `ACTA G5` `4.1`) ya venia encargada como `TAREA 1` y queda corregida regenerando (`G6.2`), con tallado VERDE despues (`G6.2.c`) | **NO ES PARADA** |
+| una guarda en rojo | ninguna: las tres de `G6.5.a` VERDES, y el tallado en estricto tambien VERDE (`0` sin poder comprobar) | **NO ES PARADA** |
+| una operacion cuyo texto no alcance para ejecutarse sin decidir | ninguna: las cuatro tareas del encargo traian su orden completo, incluidas las nueve filas de la tabla de deuda con su lectura ya escrita en el propio encargo (seccion `2`) | **NO ES PARADA** |
+
+**NINGUNA DE LAS CINCO SE CUMPLE. ESTE TURNO CIERRA SIN PARADA**, y `docs/loop/PARA_ALEXIS.md` sigue
+sin tocar y no es mio (`EXTRACTOR.md` 14): la declaracion de parada es del auditor, no del extractor.
+
+**LA UNICA IRREGULARIDAD DE ESTE TURNO FUE MIA Y PROPIA, Y YA QUEDA CORREGIDA Y DECLARADA EN EL
+ACTO** (`G6.2.a`): un comando de `deuda.py --saneamiento` corrido dos veces por descuido, detectado con
+`git diff` antes de seguir, y su duplicado retirado a mano (sede que no es exclusiva de la aduana).
+**No es una caida de dato** (no toco `dataset/`, `bitacora/`, `censos/` ni `config/`) **ni una
+contradiccion de regla** (se corrigio antes de publicar ninguna cifra que dependiera de ella): es el
+tipo de error mecanico que esta misma seccion existe para declarar, no para esconder.
+
+## G6.7. `D.61` REPASADA, CREDITO MEDIDO Y LO QUE PROPONGO
+
+### G6.7.a. `D.61` contra este mismo reporte, antes de cerrar
+
+*`D.61`: un discutible publicado se ejecuta o se cierra en la misma vuelta que lo escribe. Tope `2`
+discutibles abiertos, no `3`.*
+
+**ESTA VUELTA NO ABRE NINGUN DISCUTIBLE NUEVO.** Es una vuelta de saneamiento: sus cuatro tareas son
+declarar clase, corregir una celda ya diagnosticada por `ACTA G5`, pagar deuda ya escrita con su
+lectura, y cambiar un orden de ejecucion. Ninguna de las cuatro pidio juzgar un limite de lectura
+sobre el libro (el terreno donde nacen los discutibles de este frente). **`0` discutibles publicados,
+`0` abiertos: por debajo del tope de `2` sin necesidad de cerrar nada.**
+
+### G6.7.b. Credito: solo se mide, no se anota
+
+Salida de `python forja.py credito`, guardada en `.gerber_v6/credito.txt`:
+
+<!-- TALLADO: salida=.gerber_v6/credito.txt -->
+
+    CREDITO DE LA LINEA 'gerber_emyth' (D.48)
+      registro: docs/loop/CREDITO_gerber_emyth.jsonl
+      tandas: 6, en 22 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA G5
+      CIFRA PUBLICADA    0 de 2     ACTA G5
+      CLASE              0 de 2     ACTA G5
+      DATO MOVIDO        0 de 2     ACTA G5
+      REPORTE            1 de 3     ACTA G5
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**`CREDITO ENTERO: ninguna especie en su tope`, confirmado por el instrumento.** No uso `--anotar`: la
+fila de esta tanda (vuelta `6`) la escribe el auditor con el nombre de su propia acta en el campo
+`tanda` (`EXTRACTOR.md` 14 y 15: el extractor propone, no se adjudica).
+
+### G6.7.c. Lo que propongo al auditor, todo en mi sede y nada adjudicado por mi
+
+1. **La vuelta `6` es la primera vuelta de saneamiento de esta linea** (`D.58`), cerrada entera: clase
+   declarada, una celda corregida regenerando, tres deudas pagadas con su medida (`d102`, `d103`,
+   `d112`), dos deudas medidas y dejadas vivas (`d106`, `d107`), y ocho deudas declaradas sin pagar con
+   su motivo escrito en `G6.3`.
+2. **La deuda de la linea baja de `42` a `39` pendientes y sube de `33` a `36` pagadas.** Las `39` que
+   quedan son en su mayoria punteros `D.37` y relecturas para la vuelta que inserte (`d098`, `d104`,
+   `d108`, `d110`, `d111`), mas dos que ninguna vuelta de este frente puede pagar (`d094`, decision del
+   fundador; `d109`, moratoria de maquinaria).
+3. **`cap_18` sigue sin minar**, y con el `d110` y la mitad que le falta a `d111`. Segun la cadencia de
+   `D.55`, si nada cambia **la vuelta `7` abre `LIBRE`** y puede volver a `cap_18` (`Cap. 16`, *Your
+   People Strategy*, `5396` palabras, paso `5` de la serie de `cap_13`).
+4. **Un error mecanico propio, declarado y corregido en el acto** (`G6.2.a`, `G6.6`): un comando de
+   `deuda.py --saneamiento` duplicado, detectado con `git diff` antes de publicar ninguna cifra que
+   dependiera de el.
+
+### G6.7.d. Cola declarada
+
+Ninguna. Las cuatro tareas del encargo cierran en esta misma vuelta y no dejan tarea pendiente propia.
+
+---
+
+**LA VUELTA 6 CIERRA. CUATRO TAREAS CERRADAS (`G6.2`, `G6.3`, `G6.4`, con el cierre en `G6.5` a
+`G6.7`), CERO PARADA (`G6.6`), CERO INSERCION (`MODO_INSERCION=cuarentena`), CERO CAPITULO NUEVO
+MINADO, TRES GUARDAS VERDES (`G6.5.a`), CERO AVERIA DE DATO (`G6.5.b`), TRES DEUDAS PAGADAS
+(`d102`, `d103`, `d112`), SALDO `39`/`36`.**

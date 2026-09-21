@@ -4,5 +4,6 @@ criterio : un nodo sale de un capitulo si cita gerber_emyth/<cap>.md
 
 | # | tarea | como cerro |
 |---:|---|---|
-| `1` | `TAREA 1`: cerrar `cap_12` (`d101`) | **CERRADA en `G4.2`**: `2` candidatos nuevos (`cambiar_saludo_cliente_dos_ramas`, `probar_traje_azul_seis_semanas`), `0 CAERIA` los dos, `L69` declarado NO-NODO, `d104` repasado sin tocar, la clase de `R3` corregida declarando |
-| `2` | `TAREA 2`: `cap_13` y `cap_14` | **CERRADA en `G4.3`**: `2` candidatos nuevos, `0 CAERIA` los dos, `2` filas `PASOS INVENTADOS` en `0,00` por ciento, muestra `g4` releyo `cap_13` entero y `cap_14` al `100` por ciento (`9`/`9`) |
+| `1` | `TAREA 1`: declarar la clase `SANEAMIENTO` y corregir la celda `L280` de `cap_15` | **CERRADA en `G6.2`**: clase declarada (`DECLARADA vuelta de SANEAMIENTO: 6`), `1` celda corregida regenerando (`L280` a `L279`), tallado VERDE con `0` DIFIEREN |
+| `2` | `TAREA 2`: el barrido de deuda de la linea `gerber_emyth` | **CERRADA en `G6.3`**: `2` deudas pagadas (`d102`, `d103`), `2` medidas y dejadas (`d106`, `d107`), el resto declarado sin pagar con su motivo |
+| `3` | `TAREA 3`: pagar `d112` cambiando el orden | **CERRADA aqui mismo**: esta tabla se pega ANTES de correr `--escribir` (`G6.4.a`), y el instrumento se corre DESPUES (`G6.4.b`) |
