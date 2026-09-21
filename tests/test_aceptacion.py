@@ -4147,19 +4147,19 @@ class PruebaDeudaNoBloquea(BaseForja):
     def test_caso_positivo_a_las_cinco_vueltas_toca_SANEAMIENTO(self):
         from scripts import deuda
         sucesos = self._sucesos({"tipo": "saneamiento", "vuelta": 41})
-        clase, motivo = deuda.clase_de_vuelta(46, sucesos)
+        clase, motivo = deuda.clase_de_vuelta(46, sucesos, linea="serial")
         self.assertEqual(clase, "SANEAMIENTO")
         self.assertIn("cadencia", motivo)
 
     def test_caso_negativo_antes_de_las_cinco_la_cadencia_no_reclama(self):
         from scripts import deuda
         sucesos = self._sucesos({"tipo": "saneamiento", "vuelta": 41})
-        self.assertEqual(deuda.clase_de_vuelta(44, sucesos)[0], "LIBRE")
+        self.assertEqual(deuda.clase_de_vuelta(44, sucesos, linea="serial")[0], "LIBRE")
 
     def test_sin_deuda_pendiente_no_hay_nada_que_sanear(self):
         from scripts import deuda
         sucesos = [{"tipo": "saneamiento", "vuelta": 41}]
-        clase, motivo = deuda.clase_de_vuelta(99, sucesos)
+        clase, motivo = deuda.clase_de_vuelta(99, sucesos, linea="serial")
         self.assertEqual(clase, "LIBRE")
         self.assertIn("no hay deuda", motivo)
 
