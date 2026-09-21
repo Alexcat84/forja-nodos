@@ -1096,3 +1096,6 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-21 10:45:18]   ultimo commit de ACTA_AUDITOR.md : 2026-09-21 09:31:34 (1789997494)
 [2026-09-21 10:45:18] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-21 10:45:18] VUELTA 1 : EXTRACTOR (claude-sonnet-5)
+[2026-09-21 11:37:12] extractor listo (USD 16.8261033), 3114s, intento 1 de 7
+[2026-09-21 11:37:12] VUELTA 1 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
+[2026-09-21 11:37:12] VUELTA 1 : AUDITOR (claude-opus-5)
