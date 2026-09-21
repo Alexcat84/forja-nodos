@@ -1130,3 +1130,6 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-21 13:06:18]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
 [2026-09-21 13:06:18] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-21 13:06:18] VUELTA 3 : EXTRACTOR (claude-sonnet-5)
+[2026-09-21 13:29:32] extractor listo (USD 9.521886299999998), 1394s, intento 1 de 7
+[2026-09-21 13:29:32] VUELTA 3 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
+[2026-09-21 13:29:32] VUELTA 3 : AUDITOR (claude-opus-5)
