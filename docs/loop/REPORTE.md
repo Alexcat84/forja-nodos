@@ -60256,7 +60256,7 @@ tres, `25` TRANSCRIPCION y `0` PUENTE.** Cero inserciones al grafo.
 | `3`, Organizational Strategy | `cap_16` | cero candidatos |
 | `4`, Management Strategy | `cap_17` | cero candidatos |
 | `5`, People Strategy | `cap_18` | **metodo dentro del paso** (`construir_estrategia_gente_cuatro_componentes`, `aplicar_ocho_reglas_juego_personas`, `aplicar_cinco_pasos_proceso_contratacion`), **no cabeza** |
-| `6`, Marketing Strategy | apartado, `fuentes/gerber_emyth_cap17_reservado` | no se toca nunca (`D.45` de esta vuelta, decision del fundador) |
+| `6`, Marketing Strategy | apartado, `fuentes/gerber_emyth_cap17_reservado` | ~~no se toca nunca (`D.45` de esta vuelta, decision del fundador)~~ **CORRECCION DECLARADA EN LA VUELTA 8 (`d123`, y la raiz es del encargo de la `ACTA G7`, no mia): `D.45` no dice eso (es el paralelo que extrae contra el serial que inserta). La regla que si aparta este material es `ORDEN_DE_LOTES.md` `L27`, lote `11`: `27:\| **11** \| \`gerber_emyth_cap17_reservado\` \| 1 \| 3.845 \| **RESERVADO. Entra el ultimo** \|`. El material del paso `6` entra el ultimo, y no lo toca este frente** |
 | `7`, Systems Strategy | `cap_19` | **metodo dentro del paso** (`distinguir_tres_tipos_sistemas_negocio`, `aplicar_seis_pasos_sistema_venta`, `medir_sistema_venta_trece_indicadores_benchmark`), **no cabeza** |
 
 **LOS SEIS PASOS ALCANZABLES DE LA SERIE ESTAN MINADOS (EL SEPTIMO, EL `6`, QUEDA APARTADO PARA
@@ -60526,3 +60526,590 @@ mia: es la instruccion explicita de la `TAREA 4`.
 CERRADOS EN EL ACTO (`G7.3.d`), CINCO GUARDAS VERDES (`gate`, `guiones`, `tests`, tallado, censo, tras
 sus correcciones declaradas en `G7.6.d` y `G7.6.e`), CERO AVERIA DE DATO (`G7.6.g`), DOS DEUDAS PAGADAS
 (`d117`, `d110`), SALDO `40`/`38`.**
+
+## G8.0. EL ESQUELETO DE LA VUELTA (`EXTRACTOR.md` 3)
+
+| # | tarea del encargo | como cierra | donde |
+|---:|---|---|---|
+| 1 | `TAREA 1`: registros de apertura y correccion declarada de `d123` | **CERRADA**: credito y deuda medidos (`45`/`38`, al digito con la cabecera del encargo), correccion tachada sin borrar, `d123` pagada | `G8.1` |
+| 2 | `TAREA 2`: `cap_20`, frontera publicada antes de cortar y candidatos con su aduana en el acto | **CERRADA**: frontera `3` piezas, `1841` palabras al digito, residuo `0`; cero candidatos con su razon (carta sin inventario propio); cero discutibles | `G8.2` |
+| 3 | `TAREA 3`: `cap_21`, mismo procedimiento | **CERRADA**: frontera `5` piezas, `1851` palabras al digito, residuo `0`; cero candidatos con su razon (Epilogue sin inventario propio); cero discutibles | `G8.3` |
+| 4 | `TAREA 4`: `cap_22`, mismo procedimiento, y el estado del lote `9` declarado con su medida | **CERRADA**: frontera `8` piezas, `904` palabras al digito, residuo `0`; cero candidatos, un discutible cerrado en el acto; lote `9` medido minado entero salvo `d094` | `G8.4` |
+| 5 | `TAREA 5`: el cierre, con la tabla de punteros `D.37` que hereda la vuelta que inserte | **CERRADA**: sin poblacion de pasos que medir, muestra de fidelidad con semilla `gerber_v8` sin disparador posible, tabla de punteros `D.37` publicada | `G8.5` |
+
+**CINCO TAREAS ENCARGADAS, EN EL TOPE DE CINCO** (`EXTRACTOR.md` 1.3).
+
+## G8.1. TAREA 1: LOS REGISTROS, Y LA CORRECCION DECLARADA DE `d123`
+
+### G8.1.a. Credito medido al abrir
+
+Salida de `python forja.py credito`, guardada en `.gerber_v8/credito_apertura.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/credito_apertura.txt -->
+
+    CREDITO DE LA LINEA 'gerber_emyth' (D.48)
+      registro: docs/loop/CREDITO_gerber_emyth.jsonl
+      tandas: 8, en 32 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA G7
+      CIFRA PUBLICADA    0 de 2     ACTA G7
+      CLASE              0 de 2     ACTA G7
+      DATO MOVIDO        0 de 2     ACTA G7
+      REPORTE            0 de 3     ACTA G7
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**`ACTA G7` deja las CINCO rachas en `0`, confirmado por el instrumento corrido hoy.** `REPORTE` bajo de
+`2` de `3` a `0` de `3` por la caida del ordinal sin busqueda corrida (`ACTA G7`, seccion "LO QUE SE CAE
+ES UN ORDINAL"), y esa caida vive en prosa de acompaniamiento y no acumula (`d122`).
+
+### G8.1.b. Deuda medida al abrir
+
+Salida de `python scripts/deuda.py`, guardada en `.gerber_v8/deuda_apertura.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/deuda_apertura.txt -->
+
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      registro: docs/loop/DEUDA.jsonl
+      pendientes: 45    pagadas: 38
+
+Salida de `python scripts/deuda.py --clase 8`, guardada en `.gerber_v8/clase8.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/clase8.txt -->
+
+    LIBRE
+      van 2 de 5 desde la ultima de saneamiento (la 6), con 45 deuda(s) esperando
+
+**AL DIGITO CON LA CABECERA DEL ENCARGO (`45` pendientes, `LIBRE`, `van 2 de 5`). Sin discrepancia que
+declarar esta vez.**
+
+### G8.1.c. La correccion declarada de `d123`: tachada sin borrar, con su instrumento pegado
+
+`d123` es mia (nacio en mi propia `ACTA G7`, "Y LO QUE CORRIJO ES MIO, NO TUYO"): mi celda de `G7.4.e`
+decia del paso `6` de la serie *no se toca nunca (`D.45` de esta vuelta, decision del fundador)*, y
+`D.45` no dice eso.
+
+Salida de `grep -n "cap17_reservado" docs/loop/ORDEN_DE_LOTES.md | head -1`, guardada en
+`.gerber_v8/cita_orden_lotes_L27.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/cita_orden_lotes_L27.txt -->
+
+    27:| **11** | `gerber_emyth_cap17_reservado` | 1 | 3.845 | **RESERVADO. Entra el ultimo** |
+
+**La correccion queda tachada sin borrar en la propia celda de `G7.4.e`** (arriba en este mismo fichero,
+tabla de la seccion que abre con `### G7.4.e. Cuanto queda de d111, medido y sin decidir`): la fila del
+paso `6` conserva su texto viejo tachado y anexa, en la misma celda, la cita de `ORDEN_DE_LOTES.md` `L27`
+con la regla correcta (lote `11`, `RESERVADO. Entra el ultimo`). **No se regenera por tallado**: es prosa
+dentro de una celda de tabla narrativa y no una tabla que `scripts/tallar_reporte.py` reconozca como
+generada por un instrumento, tal como el encargo lo distingue (seccion `1`, punto `3`).
+
+**`d123` se paga con esta correccion.** Salida de
+`python scripts/deuda.py --pagar d123 --vuelta 8 --como "..."`, guardada en `.gerber_v8/pago_d123.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/pago_d123.txt -->
+
+    PAGADA d123 en la vuelta 8
+
+**Y LAS DOS COSAS QUEDAN HECHAS, EN EL ORDEN QUE EL ENCARGO PIDE:** el rotulo corregido primero, la deuda
+pagada despues.
+
+## G8.2. TAREA 2: `cap_20`, `A Letter to Sarah`
+
+### G8.2.a. El borde de arriba, comparado contra `wc -l` (`d109`, la guarda que no lo cubre)
+
+    $ wc -l fuentes/gerber_emyth/cap_20.md
+    79 fuentes/gerber_emyth/cap_20.md
+
+**`79` LINEAS, AL DIGITO CON LAS `79` QUE EL ENCARGO CUENTA EN SU CABECERA.**
+
+### G8.2.b. La frontera, publicada antes de cortar
+
+Salida de `python .gerber_v5/frontera.py fuentes/gerber_emyth/cap_20.md .gerber_v8/piezas_cap20.txt`,
+guardada en `.gerber_v8/frontera_cap20.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/frontera_cap20.txt -->
+
+    AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+    es una constante mia: sale de fuentes/gerber_emyth/cap_20.md, linea 8, que es la siguiente al segundo
+    --- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L79.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L20 | **37** | el numero del capitulo, el rotulo A LETTER TO SARAH y el epigrafe de Rollo May (Man's Search for Himself, sobre la libertad que se logra cada dia) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L21 a L59 | **1513** | la carta entera del autor a Sarah: reflexion personal sobre el sentido, el cuidado, el espiritu, el miedo, la Comfort Zone como mascara de seguridad, y el cierre pidiendole que la guarde con su vida y no ceda a la comodidad; cero pasos, cero medio nombrado, cero inventario de etapas u objetos | **POSTURA: carta personal, sin inventario propio** |
+| `R3` | L60 a L79 | **291** | ACKNOWLEDGMENTS: los agradecimientos del autor a su esposa, sus hijos, sus asociados de E-Myth Worldwide, sus clientes, su cunada y cunado, su editora en HarperBusiness y sus lectores; gratitud personal, no doctrina ni procedimiento | **RESIDUO: agradecimientos del autor** |
+| **el cuerpo entero** | **L8 a L79** | **1841** | **suma de las piezas: 1841** | **residuo sin asignar: 0** |
+
+    piezas: 3   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1841   suma 1841   residuo 0
+
+**`1841` PALABRAS, AL DIGITO CON LAS `1841` QUE EL ENCARGO CUENTA EN SU CABECERA. `3` PIEZAS, `0` SOLAPES,
+`0` LINEAS SIN CUBRIR, RESIDUO `0`.** Fichero completo en `.gerber_v8/piezas_cap20.txt` (D.42).
+
+### G8.2.c. La vara de `9.1`, pasada sobre las tres piezas, y el veredicto: cero candidatos
+
+`R1` es rotulo y epigrafe, no procedimiento. `R3` son agradecimientos personales del autor a personas
+nombradas, sin un solo verbo en imperativo dirigido al lector.
+
+`R2`, la carta entera, es el caso que la vara tiene que leer con cuidado: es prosa en segunda persona
+dirigida a Sarah, con frases que suenan a instruccion (*guard it with your life*, *keep the curtain up*).
+Leida contra la vara madre (seccion `9`: **NOMBRAR NO ES PROCEDIMENTAR**) y su prueba del inventario
+(`9.1`, `D.27`): **el capitulo no pone un solo inventario propio de medios, etapas u objetos de trabajo.**
+No hay una lista de pasos para "guardar el espiritu con tu vida", no hay una lista de componentes de la
+Comfort Zone, no hay una secuencia numerada ni nombrada. Es metafora sostenida (la cortina, el Comfort
+Zone, el camino) y reflexion biografica sobre Sarah, no una tecnica desplegable. La frase mas cercana a
+un mandato, *keep the curtain up*, es una sola advertencia (manual seccion 4, `P.11`: una advertencia es
+linea, no procedimiento), sin los siete pasos que la probarian como procedimiento nombrado en una linea
+(seccion `9`).
+
+**VEREDICTO: `cap_20` SE REGISTRA MINADO CON CERO CANDIDATOS.** Es la carta de cierre del libro
+(`Cap. 19` en la edicion, "A Letter to Sarah") seguida de los agradecimientos del autor: ninguna de las
+dos piezas trae inventario propio que la vara de `9.1` pueda transcribir. **Cero candidatos con su razon
+escrita es un resultado, no un hueco** (tal como el encargo lo anticipa en su `TAREA 2`).
+
+### G8.2.d. Discutibles
+
+**Ninguno.** Leidas las tres piezas contra la vara madre y su prueba del inventario, no encuentro un
+tramo que compita de cerca con la frontera POSTURA/CANDIDATO: no hay una sola lista o secuencia nombrada
+en todo el capitulo. No abro discutible sobre `cap_20`.
+
+## G8.3. TAREA 3: `cap_21`, el `Epilogue`
+
+### G8.3.a. El borde de arriba, comparado contra `wc -l`
+
+    $ wc -l fuentes/gerber_emyth/cap_21.md
+    149 fuentes/gerber_emyth/cap_21.md
+
+**`149` LINEAS, AL DIGITO CON LAS `149` QUE EL ENCARGO CUENTA EN SU CABECERA.**
+
+### G8.3.b. La frontera, publicada antes de cortar
+
+Salida de `python .gerber_v5/frontera.py fuentes/gerber_emyth/cap_21.md .gerber_v8/piezas_cap21.txt`,
+guardada en `.gerber_v8/frontera_cap21.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/frontera_cap21.txt -->
+
+    AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+    es una constante mia: sale de fuentes/gerber_emyth/cap_21.md, linea 8, que es la siguiente al segundo
+    --- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L149.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L18 | **56** | el rotulo EPILOGUE, el titulo BRINGING THE DREAM BACK TO AMERICAN SMALL BUSINESS y el epigrafe de Carlos Castaneda (A Separate Reality, sobre el hombre de conocimiento que actua en vez de pensar en actuar) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L19 a L56 | **597** | el llamado a las armas es un llamado a aprender, no a pelear: el mundo cambia mas rapido de lo que las reglas pueden sostenerse, y el caos no esta afuera sino dentro de cada uno; si el mundo va a cambiar, primero tenemos que cambiar nosotros; cero pasos, cero inventario propio | **POSTURA: el caos esta adentro, no afuera** |
+| `R3` | L57 a L76 | **405** | Bridging the Gap: el libro entero es sobre tender el puente entre el mundo de afuera y el de adentro, y el propio negocio pequeno puede ser ese puente, como un dojo (citado de Joe Hyams, Zen in the Martial Arts) donde se practica y se aprende de uno mismo; cero pasos, cero inventario propio | **POSTURA: el negocio como dojo** |
+| `R4` | L77 a L112 | **506** | A World of Our Own: el Sueno del Small Business Americano es crear un mundo propio, y la mayoria fracasa porque cada quien trae su propio caos consigo; el Business Development Program y el Franchise Prototype son el medio para estudiar ese mundo, e Innovacion, Cuantificacion y Orquestacion (ya desarrolladas en capitulos previos, nombradas aqui sin desarrollo nuevo) son la practica que descubre limites y fuerzas; cero inventario propio nuevo en este tramo | **POSTURA: recapitulacion sin inventario nuevo** |
+| `R5` | L113 a L149 | **287** | An Idea for Action: el proverbio chino de oir, ver y hacer para entender; la respuesta es que el modelo si funciona si se aplica con compromiso total, y el cierre pide dejar de pensarlo y empezar a actuar para Traer de Vuelta el Sueno del Small Business Americano; cero pasos, cero inventario propio | **POSTURA: cierre, llamado a actuar sin procedimiento** |
+| **el cuerpo entero** | **L8 a L149** | **1851** | **suma de las piezas: 1851** | **residuo sin asignar: 0** |
+
+    piezas: 5   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1851   suma 1851   residuo 0
+
+**`1851` PALABRAS, AL DIGITO CON LAS `1851` QUE EL ENCARGO CUENTA EN SU CABECERA. `5` PIEZAS, `0`
+SOLAPES, `0` LINEAS SIN CUBRIR, RESIDUO `0`.** Fichero completo en `.gerber_v8/piezas_cap21.txt` (D.42).
+
+### G8.3.c. La vara de `9.1`, pasada sobre las cinco piezas, y el veredicto: cero candidatos
+
+`R1` es rotulo y epigrafe. Las otras cuatro son las cuatro secciones nombradas por el propio libro
+(sin subtitulo la primera, luego *Bridging the Gap*, *A World of Our Own*, *An Idea for Action*), y las
+cuatro son reflexion de cierre, no procedimiento: ninguna trae una lista, una secuencia numerada ni un
+inventario de medios, etapas u objetos que la vara `9.1` pueda transcribir.
+
+**EL UNICO TRAMO QUE MERECE LECTURA CONTRA `D.37`:** `R4`, `L105` a `L109`, nombra *Innovation,
+Quantification, and Orchestration* dos veces. No es una enumeracion nueva con su propio inventario: es
+una recapitulacion de un trio que el libro ya desarrollo en capitulos anteriores del propio dataset
+(la Franchise Prototype, minada en capitulos previos de este mismo frente), citado aqui sin desplegar
+ningun paso nuevo. `D.37` exige que el texto NOMBRE Y CUENTE sus partes para que la arista cabeza a
+parte se cablee; este tramo ni siquiera es la cabeza que las nombra por primera vez, es una mencion de
+paso en el epilogo. No abre candidato ni puntero nuevo.
+
+**VEREDICTO: `cap_21` SE REGISTRA MINADO CON CERO CANDIDATOS.** Es el Epilogue del libro, prosa de
+cierre en las cuatro voces de la reflexion final (el llamado a las armas que es llamado a aprender, el
+negocio como dojo, el mundo propio, la idea para la accion): ninguna trae inventario propio. **Cero
+candidatos con su razon escrita.**
+
+### G8.3.d. Discutibles
+
+**Ninguno.** El unico tramo que se acerco a competir (la mencion de Innovation, Quantification and
+Orchestration en `R4`) se resuelve sin ambiguedad contra `D.37` (no hay conteo ni desarrollo nuevo, solo
+recapitulacion), asi que no lo marco como discutible.
+
+## G8.4. TAREA 4: `cap_22`, el `Afterword`, Y EL LOTE QUE CIERRA
+
+### G8.4.a. El borde de arriba, comparado contra `wc -l`
+
+    $ wc -l fuentes/gerber_emyth/cap_22.md
+    129 fuentes/gerber_emyth/cap_22.md
+
+**`129` LINEAS, AL DIGITO CON LAS `129` QUE EL ENCARGO CUENTA EN SU CABECERA.**
+
+### G8.4.b. La frontera, publicada antes de cortar
+
+Salida de `python .gerber_v5/frontera.py fuentes/gerber_emyth/cap_22.md .gerber_v8/piezas_cap22.txt`,
+guardada en `.gerber_v8/frontera_cap22.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/frontera_cap22.txt -->
+
+    AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+    es una constante mia: sale de fuentes/gerber_emyth/cap_22.md, linea 8, que es la siguiente al segundo
+    --- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L129.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L12 | **5** | el rotulo AFTERWORD y el titulo TAKING THE FIRST STEP | **RESIDUO: rotulo** |
+| `Ra` | L13 a L18 | **54** | la pregunta de cierre (que haces ahora que el fuego esta encendido) y la afirmacion de que, como Sarah, el lector debe dar el primer paso | **POSTURA: bridge** |
+| `Rb` | L19 a L26 | **125** | debes dar un paso atras y mirar tu negocio con tus nuevos ojos E-Myth; debes analizar tu negocio como es hoy, decidir como debe verse cuando este terminado, y determinar la brecha entre donde estas y donde necesitas estar; esa brecha te dira que hace falta hacer, y la brecha siempre nace de la ausencia de sistemas | **DISCUTIBLE: llamado de cierre sin inventario propio de que analizar** |
+| `Rc` | L27 a L32 | **125** | desde 1986 E-Myth Worldwide ha ayudado a miles de duenos a dar ese primer paso, invita al lector a la experiencia gratuita E-Myth, y pide completar el formulario al final del libro y seguir las instrucciones provistas alli | **POSTURA: invitacion comercial, remite a un formulario fuera del libro** |
+| `Rd` | L33 a L42 | **32** | recuerda el proverbio chino (oir se olvida, ver se recuerda, hacer se entiende) y cierra con Let's get started | **POSTURA: proverbio de cierre** |
+| `R3` | L43 a L50 | **10** | la firma: Michael E. Gerber, E-Myth Worldwide, Santa Rosa California, junio 2001 | **RESIDUO: firma** |
+| `R4` | L51 a L60 | **225** | ABOUT THE AUTHOR: biografia del autor, su rol en E-Myth Worldwide, y los datos de contacto para invitarlo a hablar o recibir informacion del E-Myth Mastery Program | **RESIDUO: biografia y contacto comercial del autor** |
+| `R5` | L61 a L129 | **328** | OTHER WORKS, BACK AD y COPYRIGHT: el listado de otros libros de Michael Gerber con sus ISBN, el aviso legal de copyright de HarperCollins, los datos de edicion, y la publicidad de contraportada de otros titulos (E-Myth Mastery, The E-Myth Physician, The E-Myth Manager, The E-Myth Revisited) con su resena de mercadeo cada uno | **RESIDUO: back matter editorial, ISBN, copyright y publicidad de otros libros** |
+| **el cuerpo entero** | **L8 a L129** | **904** | **suma de las piezas: 904** | **residuo sin asignar: 0** |
+
+    piezas: 8   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 904   suma 904   residuo 0
+
+**`904` PALABRAS, AL DIGITO CON LAS `904` QUE EL ENCARGO CUENTA EN SU CABECERA. `8` PIEZAS, `0` SOLAPES,
+`0` LINEAS SIN CUBIERTAS, RESIDUO `0`.** Fichero completo en `.gerber_v8/piezas_cap22.txt` (D.42).
+
+### G8.4.c. El unico discutible, marcado ANTES de saber si acierto y cerrado en el mismo acto (tope `2`, `D.61`)
+
+**Discutible `1`: `Rb`, `cap_22` `L19` a `L25`.** Cuatro oraciones en imperativo de segunda persona en
+secuencia (*step back*, *analyze*, *decide*, *determine the gap*) que podrian leerse como un
+procedimiento de cuatro pasos: dar un paso atras, analizar el negocio como es hoy, decidir como debe
+verse terminado, determinar la brecha. Cita, con su `sed` pegado (`D.35`), guardada en
+`.gerber_v8/cita_cap22_Rb.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/cita_cap22_Rb.txt -->
+
+    You must step back from your business and look at it through your new E-Myth eyes.
+    You must analyze your business as it is today, decide what it must look like when you have finally got it just like you want it, and then determine the gap between where you are and where you need to be in order to make your dream a reality.
+    That gap will tell you exactly what needs to be done to create the business of your dreams.
+    And what you will discover when you look at your business through your E-Myth eyes is that the gap is always created by the absence of systems, the absence of a proprietary way of doing business that successfully differentiates your business from everyone else's.
+
+**CERRADO, NO EJECUTADO: no escribo candidato.** Leido contra la vara madre (seccion `9`) y la prueba
+del inventario (`9.1`, `D.27`): el libro NO nombra uno a uno los medios, etapas u objetos que hay que
+revisar en "tu negocio como es hoy". *Look at it through your new E-Myth eyes* y *analyze your business
+as it is today* son el adjetivo de adecuacion de la restriccion `2` de `9.1` disfrazado de instruccion
+(no dice QUE mirar ni QUE analizar: eso ya lo desplego el libro entero en los capitulos anteriores, con
+sus propios candidatos ya minados uno a uno, Primary Aim, Strategic Objective, Organizational Strategy,
+People Strategy, Systems Strategy). Sin un inventario propio de este tramo, escribir pasos aqui seria
+inventar el detalle que el libro no pone (`15.4`, la relectura de fidelidad): un paso como *revisa tus
+Hard Systems, tus Soft Systems y tus Information Systems* no esta en estas cuatro lineas, esta en
+`cap_19`, ya minado. **VEREDICTO: `SANO`, no candidato.** Es el resumen motivacional de cierre del libro
+entero (la misma voz de *this call to arms is not a call to do battle, it is a call to learning*, pieza
+`R2` de `cap_21`), no un procedimiento nuevo. Si el auditor lee lo contrario, la cita queda pegada arriba
+para que la relectura ciega la encuentre primero.
+
+**`D.61` REPASADA: UN DISCUTIBLE, CERRADO EN ESTA MISMA VUELTA CON SU MOTIVO Y SU LINEA. `0` ABIERTOS,
+POR DEBAJO DEL TOPE DE `2`.**
+
+### G8.4.d. Veredicto de `cap_22`: cero candidatos
+
+`R1`, `R3`, `R4` y `R5` son rotulo, firma, biografia del autor y back matter editorial (ISBN, copyright,
+publicidad de otros libros): ninguno trae procedimiento. `Ra` y `Rd` son postura de apertura y cierre
+retorico. `Rc` es una invitacion comercial que remite a "el formulario al final de este libro", fuera del
+propio texto (el corolario de `9.1`: un paso que cierra un bucle que el libro deja abierto es PUENTE, y
+aqui ni siquiera hay paso que escribir, es una remision completa a un formulario ajeno al fichero).
+`Rb`, el unico tramo con forma de procedimiento, se cierra `SANO` en `G8.4.c`.
+
+**VEREDICTO: `cap_22` SE REGISTRA MINADO CON CERO CANDIDATOS.** Es el Afterword del libro (llamado a la
+accion y remision al formulario de inscripcion) seguido de la biografia del autor y el back matter
+editorial completo: ninguna pieza trae inventario propio. **Cero candidatos con su razon escrita.**
+
+### G8.4.e. El estado del lote `9`, declarado con su medida, sin decidir nada
+
+Contado contra `fuentes/gerber_emyth/`:
+
+    $ ls fuentes/gerber_emyth/*.md | wc -l
+    22
+
+**`22` UNIDADES EN LA BANDEJA DE ENTRADA.** De ellas, `cap_01` a `cap_03` siguen en `d094` por decision
+del fundador y NO se tocan; `cap_04` a `cap_19` ya estaban minados antes de esta vuelta (`16` capitulos,
+`ACTA G7` y actas anteriores); `cap_20`, `cap_21` y `cap_22` quedan minados en esta misma vuelta (`G8.2`,
+`G8.3`, `G8.4.d`). **QUEDAN `3` UNIDADES DEL LOTE `9` SIN MINAR: `cap_01`, `cap_02` y `cap_03`, LAS TRES
+EN `d094`.**
+
+**LOS TRES CAPITULOS DE ESTA VUELTA CUPIERON EN EL TRAMO** (`cap_20` + `cap_21` + `cap_22` = `0`
+candidatos, muy por debajo del techo de `30`), **ASI QUE EL LOTE `9` QUEDA MINADO ENTERO SALVO `d094`.**
+**ESTO SE DECLARA, NO SE EJECUTA:** la insercion es serial y de ningun frente (`D.45`), y la cosecha del
+lote es del fundador. No inserto, no cierro el lote yo: dejo la medida para quien lea este reporte.
+
+## G8.5. TAREA 5: EL CIERRE, Y EL INVENTARIO QUE HEREDA LA VUELTA QUE INSERTE
+
+### G8.5.a. `PASOS INVENTADOS POR CAPITULO`, una fila por capitulo (`AUDITOR_FORJA.md` 8)
+
+Los tres capitulos de esta vuelta cerraron con **cero candidatos** (`G8.2`, `G8.3`, `G8.4.d`), asi que no
+hay pasos escritos que medir: no es que la fidelidad haya fallado, es que no hay ficha de la que medirla.
+
+<!-- TALLADO: parcial salida=.gerber_v8/muestra_fidelidad.txt -->
+
+| capitulo | candidatos nuevos (esta vuelta) | pasos escritos | PUENTE | pasos inventados |
+|---|---:|---:|---:|---:|
+| `cap_20` | `0` | `0` | `0` | **sin poblacion que medir** |
+| `cap_21` | `0` | `0` | `0` | **sin poblacion que medir** |
+| `cap_22` | `0` | `0` | `0` | **sin poblacion que medir** |
+| **el lote entero** | **`0`** | **`0`** | **`0`** | **sin poblacion que medir** |
+
+**`8.2` de `AUDITOR_FORJA.md`: la escalada se decide sobre el peor capitulo, y aqui no hay ninguno que
+escale: los tres estan en la misma poblacion vacia.** No es `0,00` por ciento (eso exigiria al menos un
+paso escrito contra el cual medir): es ausencia de poblacion, y se declara como tal en vez de
+disfrazarla de un cero que no midio nada.
+
+### G8.5.b. La muestra de fidelidad con su semilla escrita (`D.58`, regimen ligero)
+
+Salida de
+`python scripts/muestra_fidelidad.py --libro gerber_emyth --capitulos cap_20,cap_21,cap_22 --semilla gerber_v8`,
+guardada en `.gerber_v8/muestra_fidelidad.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/muestra_fidelidad.txt -->
+
+    MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+      libro    : gerber_emyth
+      semilla  : gerber_v8
+      capitulos: cap_20, cap_21, cap_22
+
+      RELEIDO ENTERO : cap_21
+      POR MUESTRA    : cap_20, cap_22, 15 pasos cada uno
+
+      EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+      pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+      --- cap_20: 0 paso(s) en la muestra
+
+      --- cap_22: 0 paso(s) en la muestra
+
+      --- cap_21: ENTERO, 0 paso(s), no hay muestra que elegir
+
+**LA SEMILLA `gerber_v8` REPARTE IGUAL QUE SIEMPRE (`cap_21` ENTERO, `cap_20` y `cap_22` por muestra),
+PERO LOS TRES DAN `0` PASOS: NO HAY CANDIDATOS DE LOS QUE MUESTREAR.** El disparador del `10` por ciento
+no tiene sobre que dispararse (`0` de `0` no es una fraccion). **NO SE DISPARA NADA, PORQUE NO HAY NADA
+QUE DISPARAR.**
+
+### G8.5.c. Los punteros `D.37` que la bandeja deja abiertos, publicados para la vuelta que inserte
+
+**NO LOS DECLARO YO** (`EXTRACTOR.md` `15.6`: esas aristas se declaran en la misma vuelta en que se
+INSERTAN las partes, y esta vuelta no inserta, `MODO_INSERCION=cuarentena`). Los tres que ya trae el
+encargo, sin tocar:
+
+    d098   D.37, cap_05 L29, la terna sin cabeza
+    d104   D.37, cap_12 L21, la terna sin cabeza
+    d111   la serie de cap_13: el paso 8 de recorrer_siete_pasos_programa_desarrollo_negocio dice
+           "Paso 5: Your People Strategy", que es el titulo de
+           construir_estrategia_gente_cuatro_componentes. ARISTA DECLARABLE POR LECTURA.
+
+**Y NINGUN PUNTERO NUEVO NACE DE ESTA VUELTA:** los tres capitulos minados hoy (`cap_20`, `cap_21`,
+`cap_22`) cerraron con cero candidatos, asi que no hay hijo nuevo que emparejar con una cabeza de serie.
+
+## G8.6. EL CIERRE
+
+### G8.6.a. La tabla de cierre de la vuelta `8`, pegada PRIMERO
+
+*Remedio de `d030`/`d112`: mi tabla se pega ANTES de correr `--escribir`, para que
+`docs/loop/TABLA_DE_CIERRE.txt` traiga MIS filas y no las de la vuelta anterior.*
+
+| # | tarea | como cerro |
+|---:|---|---|
+| `1` | `TAREA 1`: registros de apertura y correccion declarada de `d123` | **CERRADA en `G8.1`**: credito y deuda medidos (`45`/`38` de apertura, al digito con la cabecera del encargo), correccion tachada sin borrar en la celda de `G7.4.e`, `d123` pagada |
+| `2` | `TAREA 2`: `cap_20`, frontera y veredicto | **CERRADA en `G8.2`**: frontera `3` piezas, `1841` palabras al digito, residuo `0`; cero candidatos, capitulo minado por ser una carta sin inventario propio; cero discutibles |
+| `3` | `TAREA 3`: `cap_21`, frontera y veredicto | **CERRADA en `G8.3`**: frontera `5` piezas, `1851` palabras al digito, residuo `0`; cero candidatos, capitulo minado, el Epilogue sin inventario propio; cero discutibles |
+| `4` | `TAREA 4`: `cap_22`, frontera, veredicto y estado del lote `9` | **CERRADA en `G8.4`**: frontera `8` piezas, `904` palabras al digito, residuo `0`; cero candidatos, un discutible marcado y cerrado en el acto; lote `9` medido minado entero salvo `d094` (`3` de `22` unidades sin minar, las tres reservadas) |
+| `5` | `TAREA 5`: el cierre, con los punteros `D.37` para la vuelta que inserte | **CERRADA en `G8.5` y aqui mismo (`G8.6`)**: sin poblacion de pasos que medir (cero candidatos en el lote), muestra de fidelidad corrida con semilla `gerber_v8` sin disparador posible, tabla de punteros `D.37` publicada sin declarar aristas nuevas |
+
+### G8.6.b. El instrumento, corrido DESPUES de pegar la tabla propia
+
+    $ python scripts/tabla_de_cierre.py --escribir
+
+<!-- TALLADO: script=scripts/tabla_de_cierre.py salida=docs/loop/TABLA_DE_CIERRE.txt -->
+
+Salida guardada en `.gerber_v8/tabla_de_cierre_salida.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v8/tabla_de_cierre_salida.txt -->
+
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    filas             : 5
+    SIN COMPROBAR  `1` a `5`  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+
+**LAS CINCO FILAS SALEN `SIN COMPROBAR`, Y ES LO ESPERADO:** ninguna de mis cinco celdas trae la forma
+`N de M del capitulo` (el instrumento solo mide esa figura exacta); mis cifras de esta vuelta son de
+palabras y piezas de frontera, no de nodos por capitulo, porque los tres capitulos cerraron en cero
+candidatos. **`SIN COMPROBAR` no es `DIFIERE`: es una fila que el instrumento no sabe medir y copia tal
+cual, sin inventar** (la propia doctrina del script, citada en `G8.6.a`).
+
+### G8.6.c. Comprobacion: el fichero trae MIS filas, no las de otra vuelta
+
+    $ cat docs/loop/TABLA_DE_CIERRE.txt
+
+Salida guardada en `.gerber_v8/tabla_de_cierre_cat.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/tabla_de_cierre_cat.txt -->
+
+    $ python scripts/tabla_de_cierre.py --escribir
+    poblacion: dataset/nodos.jsonl entero, libro gerber_emyth
+    criterio : un nodo sale de un capitulo si cita gerber_emyth/<cap>.md
+
+    | # | tarea | como cerro |
+    |---:|---|---|
+    | `1` | `TAREA 1`: registros de apertura y correccion declarada de `d123` | **CERRADA en `G8.1`**: credito y deuda medidos (`45`/`38` de apertura, al digito con la cabecera del encargo), correccion tachada sin borrar en la celda de `G7.4.e`, `d123` pagada |
+    | `2` | `TAREA 2`: `cap_20`, frontera y veredicto | **CERRADA en `G8.2`**: frontera `3` piezas, `1841` palabras al digito, residuo `0`; cero candidatos, capitulo minado por ser una carta sin inventario propio; cero discutibles |
+    | `3` | `TAREA 3`: `cap_21`, frontera y veredicto | **CERRADA en `G8.3`**: frontera `5` piezas, `1851` palabras al digito, residuo `0`; cero candidatos, capitulo minado, el Epilogue sin inventario propio; cero discutibles |
+    | `4` | `TAREA 4`: `cap_22`, frontera, veredicto y estado del lote `9` | **CERRADA en `G8.4`**: frontera `8` piezas, `904` palabras al digito, residuo `0`; cero candidatos, un discutible marcado y cerrado en el acto; lote `9` medido minado entero salvo `d094` (`3` de `22` unidades sin minar, las tres reservadas) |
+    | `5` | `TAREA 5`: el cierre, con los punteros `D.37` para la vuelta que inserte | **CERRADA en `G8.5` y aqui mismo (`G8.6`)**: sin poblacion de pasos que medir (cero candidatos en el lote), muestra de fidelidad corrida con semilla `gerber_v8` sin disparador posible, tabla de punteros `D.37` publicada sin declarar aristas nuevas |
+
+**LAS CINCO FILAS SON LAS MIAS, DE ESTA VUELTA `8`.** No hay arrastre de la tabla de la vuelta `7`.
+
+### G8.6.d. Las tres guardas de la vuelta, corridas HOY, con su salida
+
+Salida de `python forja.py gate`, guardada en `.gerber_v8/gate.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/gate.txt -->
+
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+**`346` NODOS: EL MISMO NUMERO DE LA APERTURA, PORQUE ESTA VUELTA NO INSERTA (`MODO_INSERCION=cuarentena`,
+`D.39`).** `d103` sostenida: las tres lineas de siempre.
+
+Salida de `python forja.py guiones`, guardada en `.gerber_v8/guiones.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/guiones.txt -->
+
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+**VERDE AL PRIMER INTENTO, SIN CORRECCION QUE DECLARAR ESTA VEZ** (a diferencia de la vuelta `7`, que
+tuvo que corregir ocho guiones largos copiados de sus citas): esta vuelta no copia bloques largos de
+prosa del libro en las citas de evidencia (los tramos citados con `sed` son frases cortas), y `d124`
+sigue como cola sin nuevo ejemplar.
+
+Salida de `python tests/test_aceptacion.py`, guardada en `.gerber_v8/test_aceptacion.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v8/test_aceptacion.txt -->
+
+    total: 350 pruebas, 0 fallos, 0 errores
+
+**LAS TRES GUARDAS VERDES: GATE, GUIONES Y ACEPTACION, LAS `350` PRUEBAS EN VERDE, `0` FALLOS.**
+
+### G8.6.e. El tallado y el censo, corridos HOY
+
+Salida de `python scripts/tallar_reporte.py`, guardada en `.gerber_v8/tallado.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v8/tallado.txt -->
+
+    TALLADO VERDE: las 176 tabla(s) comprobables son las de su instrumento, celda a celda.
+
+Salida de `python scripts/censar_rutas.py`, guardada en `.gerber_v8/censo_rutas.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v8/censo_rutas.txt -->
+
+    CENSO VERDE: las 1123 rutas publicadas sostienen lo que dicen sostener.
+
+**LOS DOS VERDES AL PRIMER INTENTO, SIN CORRECCION QUE DECLARAR ESTA VEZ** (a diferencia de la vuelta
+`7`, que tuvo que regenerar dos tablas de frontera y corregir un patron de censo mal declarado): las
+tres tablas de frontera de esta vuelta (`cap_20`, `cap_21`, `cap_22`) se pegaron desde el instrumento
+sin resumir a mano, y cada ruta de evidencia se cito por su ruta exacta, no por patron compartido.
+
+### G8.6.f. La deuda, recomputada al cierre
+
+Salida de `python scripts/deuda.py`, guardada en `.gerber_v8/deuda_cierre.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v8/deuda_cierre.txt -->
+
+    pendientes: 44    pagadas: 39
+
+**DE `45`/`38` A LA APERTURA (`G8.1.b`) A `44`/`39` AL CERRAR LA VUELTA: `1` PAGADA** (`d123`), **`0`
+NUEVAS CONTRAIDAS por mi.** Coincide al digito con la aritmetica de `G8.1.c`.
+
+### G8.6.g. Cero averia de dato: nada de `dataset/`, `bitacora/`, `censos/` ni `config/pares_mutuos.jsonl` se movio
+
+    $ git status --porcelain dataset/ bitacora/ censos/ config/pares_mutuos.jsonl
+    (sin salida: ningun fichero de esas cuatro sedes aparece modificado)
+
+**`0` FICHEROS DEL GRAFO MOVIDOS.** Esta vuelta no lo toco, tal como manda `MODO_INSERCION=cuarentena`
+(`D.39`): los tres capitulos cerraron con cero candidatos, asi que ni siquiera hay JSON nuevo que sumar
+a `cuarentena/gerber_emyth/` (sigue en los `22` ficheros ya escritos en vueltas anteriores).
+
+### G8.6.h. Las condiciones de parada, repasadas una a una (`EXTRACTOR.md` 7)
+
+| condicion | lo que mido en este turno | veredicto |
+|---|---|---|
+| una pregunta de doctrina | ninguna nueva abierta: la cola de doctrina se queda en `11` (`D.55`), sin tocar | **NO ES PARADA** |
+| una caida de dato | ninguna: `0` ficheros de `dataset/`, `bitacora/`, `censos/` ni `config/pares_mutuos.jsonl` movidos (`G8.6.g`), gate/guiones/tests/tallado/censo VERDES (`G8.6.d`, `G8.6.e`) | **NO ES PARADA** |
+| algo contradice una regla vigente o una cifra publicada con su corte | nada: la correccion de `d123` se tachó sin borrar en vez de reescribirse por encima (`G8.1.c`), y el unico discutible se cerro con su cita y su motivo (`G8.4.c`) | **NO ES PARADA** |
+| una guarda en rojo | ninguna al cierre: las tres guardas de `EXTRACTOR.md` 6 mas el tallado y el censo, las cinco VERDES sin correccion que declarar esta vez | **NO ES PARADA** |
+| una operacion cuyo texto no alcance para ejecutarse sin decidir | ninguna: las cinco tareas del encargo traian su orden completo, incluida la `TAREA 4` con instruccion explicita de declarar el estado del lote sin ejecutarlo, que es justo lo que `G8.4.e` hizo | **NO ES PARADA** |
+
+**NINGUNA DE LAS CINCO SE CUMPLE. ESTE TURNO CIERRA SIN PARADA**, y `docs/loop/PARA_ALEXIS.md` sigue sin
+tocar y no es mio (`EXTRACTOR.md` 14): la declaracion de parada es del auditor, no del extractor.
+
+### G8.6.i. `D.61` repasada contra el reporte entero, credito medido, y lo que propongo
+
+#### G8.6.i.1. `D.61`, la segunda pasada, al cierre
+
+El unico discutible de esta vuelta (`G8.4.c`, la pieza `Rb` de `cap_22`) se marco ANTES de escribir el
+veredicto y se cerro en el mismo acto, sin candidato: `SANO`, con su cita pegada. **`0` discutibles
+abiertos al cierre, por debajo del tope de `2`.** No se abrio ningun discutible en `cap_20` ni en
+`cap_21`.
+
+#### G8.6.i.2. Credito: solo se mide, no se anota
+
+Salida de `python forja.py credito`, guardada en `.gerber_v8/credito_cierre.txt`:
+
+<!-- TALLADO: salida=.gerber_v8/credito_cierre.txt -->
+
+    CREDITO DE LA LINEA 'gerber_emyth' (D.48)
+      registro: docs/loop/CREDITO_gerber_emyth.jsonl
+      tandas: 8, en 32 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA G7
+      CIFRA PUBLICADA    0 de 2     ACTA G7
+      CLASE              0 de 2     ACTA G7
+      DATO MOVIDO        0 de 2     ACTA G7
+      REPORTE            0 de 3     ACTA G7
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**Identica a la de apertura (`G8.1.a`): este registro lo mueve el auditor con `--anotar` al cerrar su
+propia acta, no yo (`EXTRACTOR.md` 14 y 15).** No uso `--anotar` en esta vuelta.
+
+#### G8.6.i.3. Lo que propongo al auditor, todo en mi sede y nada adjudicado por mi
+
+1. **La raiz de `d123` fue mia (nacio en mi propia `ACTA G7`, seccion "Y LO QUE CORRIJO ES MIO, NO
+   TUYO") y queda corregida en la celda de `G7.4.e`**, tachada sin borrar, con `ORDEN_DE_LOTES.md` `L27`
+   citado al lado (`G8.1.c`).
+2. **`cap_20`, `cap_21` y `cap_22` cierran minados los tres, con CERO CANDIDATOS y su razon escrita en
+   cada uno** (`G8.2`, `G8.3`, `G8.4.d`): son la carta de cierre a Sarah, el Epilogue y el Afterword mas
+   el back matter editorial, y ninguno trae inventario propio de medios, etapas u objetos bajo la vara
+   de `9.1`.
+3. **El lote `9` queda medido minado entero salvo `d094`**: de las `22` unidades de
+   `fuentes/gerber_emyth/`, solo `cap_01` a `cap_03` siguen sin minar, apartadas por decision del
+   fundador (`G8.4.e`). **Esto se declara, no se ejecuta**: la cosecha del lote es del fundador y la
+   insercion es serial (`D.45`).
+4. **Un solo discutible en toda la vuelta, cerrado en el acto sin candidato**: la pieza `Rb` de `cap_22`
+   (`L19` a `L26`, el llamado a "dar el primer paso" y "determinar la brecha"), leida como el adjetivo de
+   adecuacion de `9.1` disfrazado de instruccion, sin inventario propio nuevo (`G8.4.c`).
+5. **Cero correcciones declaradas de instrumento esta vuelta**: las tres tablas de frontera se pegaron
+   directamente del instrumento, sin resumen a mano, y el tallado y el censo salieron VERDES al primer
+   intento (`G8.6.e`), a diferencia de la vuelta `7`.
+6. **El frente tiene ahora `cap_04` a `cap_22` minados sin hueco** (diecinueve capitulos), mas el
+   apartado `cap17_reservado` que entra el ultimo (lote `11`, `ORDEN_DE_LOTES.md` `L27`). Solo quedan
+   `cap_01` a `cap_03` sin minar, en `d094`, sin tocar por decision del fundador.
+7. **La cadencia de saneamiento sigue en `2` de `5` desde la vuelta `6`** (`G8.1.b`): si nada cambia, las
+   vueltas `9` y `10` salen `LIBRE` y la `11` es la siguiente de saneamiento, tal como el propio encargo
+   ya lo anticipa en su seccion `1`.
+
+#### G8.6.i.4. Cola declarada
+
+Ninguna nueva. `d098`, `d104` y `d111` siguen publicados para la vuelta que inserte (`G8.5.c`), sin que
+yo decida nada sobre ellos.
+
+---
+
+**LA VUELTA 8 CIERRA. CINCO TAREAS CERRADAS (`G8.1` A `G8.5`, CON EL CIERRE EN `G8.6`), CERO PARADA
+(`G8.6.h`), CERO INSERCION (`MODO_INSERCION=cuarentena`), TRES CAPITULOS NUEVOS MINADOS (`cap_20`,
+`cap_21`, `cap_22`), CERO CANDIDATOS ESCRITOS EN LOS TRES CON SU RAZON CADA UNO, UN DISCUTIBLE MARCADO Y
+CERRADO EN EL ACTO (`G8.4.c`), CINCO GUARDAS VERDES (`gate`, `guiones`, `tests`, tallado, censo, SIN
+CORRECCION ESTA VEZ), CERO AVERIA DE DATO (`G8.6.g`), UNA DEUDA PAGADA (`d123`), SALDO `44`/`39`, Y EL
+LOTE `9` MEDIDO MINADO ENTERO SALVO `d094`.**
