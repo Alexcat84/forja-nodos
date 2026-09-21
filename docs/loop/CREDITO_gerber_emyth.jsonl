@@ -10,3 +10,4 @@
 {"cae": false, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G3 seccion 4.2", "especie": "CLASE", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G3", "tipo": "tanda", "vuelta": 3}
 {"cae": false, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G3 seccion 4.2", "especie": "DATO MOVIDO", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G3", "tipo": "tanda", "vuelta": 3}
 {"cae": false, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G3 seccion 5", "especie": "AUDITOR", "linea": "gerber_emyth", "racha": "0 de 3", "tanda": "ACTA G3", "tipo": "tanda", "vuelta": 3}
+{"cita": "docs/loop/paradas/2026-09-22-gerber-g3-DECISION.md, punto 1", "especie": "REPORTE", "linea": "gerber_emyth", "racha": "0 de 3", "tipo": "reinicio"}

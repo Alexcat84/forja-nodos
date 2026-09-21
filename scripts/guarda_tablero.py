@@ -83,7 +83,7 @@ def vuelta_y_clase(texto=None):
             declarada if declarada in CLASES else None)
 
 
-def cadencia(texto=None):
+def cadencia(texto=None, linea=None):
     """LA CADENCIA LA HACE CUMPLIR EL CODIGO, NO LA MEMORIA (`D.58`).
 
     Si desde la ultima vuelta de saneamiento han pasado cinco, **la vuelta que abre ES
@@ -96,7 +96,10 @@ def cadencia(texto=None):
         return ["el encargo no dice de que vuelta es. D.58: la cadencia se cuenta por "
                 "numero de vuelta, y sin el no se puede contar. Escribe su titulo como "
                 "'ENCARGO DE LA VUELTA <n>'."]
-    toca, motivo = deuda.clase_de_vuelta(numero)
+    # LA CADENCIA ES DE UNA LINEA (d097, 22 sep 2026). Esta guarda ya sabe de
+    # cual, y no pasarsela dejaba que la cuenta la decidiera el arbol donde
+    # corre la prueba en vez del encargo que se esta comprobando.
+    toca, motivo = deuda.clase_de_vuelta(numero, linea=linea)
     if toca != "SANEAMIENTO":
         return []
     if declarada == "SANEAMIENTO":
@@ -156,7 +159,7 @@ def comprobar(texto=None, linea=None, filas=None, ruta_parada=None):
     # D.51: NINGUNA LINEA ELIGE LIBRO. Se comprueba aunque D.49 ya haya caido, porque
     # las dos cosas que el encargo puede tener mal son distintas: D.49 dice que ese
     # libro no es tuyo, y D.51 dice cual es.
-    impiden.extend(cadencia(texto))
+    impiden.extend(cadencia(texto, linea=linea))
 
     toca, porque, relevo = tablero.siguiente_por_prioridad(linea, filas)
     if toca is None:
