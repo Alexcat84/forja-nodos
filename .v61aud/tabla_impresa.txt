@@ -1,0 +1,4 @@
+filas de tabla en el reporte : 87
+filas de tabla en el instrum.: 87
+filas del reporte que el instrumento NO imprime: 0
+filas del instrumento que el reporte NO pega   : 0

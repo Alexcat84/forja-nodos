@@ -1,0 +1,9 @@
+dueno declarado : {'pid': 30764, 'desde': 1789775347.2028258}
+edad en segundos: 204604
+TOPE_DE_HUERFANO: 900.0
+_vive(pid)      : None
+
+LO TOMO: si, el huerfano no bloquea
+aviso: CERROJO HUERFANO: el proceso 30764 no se puede comprobar en este sistema y el cerrojo lleva 204604 s. Se rompe y se declara.
+
+fichero restaurado byte a byte: True

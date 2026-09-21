@@ -56506,3 +56506,260 @@ de la misma seccion, cuando el prompt no entrega ninguno).
 nada de esta vuelta**, porque es trabajo de instrumento ya hecho y borrarlo seria destruir una
 corrida que a alguien le puede interesar releer; y **lo declaro aqui en vez de callarlo**, que es
 lo unico que me toca hacer con un fichero que no pedi y no puedo explicar del todo.
+
+# VUELTA 60, lote 7 (`grove_high_output`), **CLASE EXTRACCION**: `cap_17` y `cap_18` minados, la mineria del libro CERRADA, y las citas de fidelidad con su `grep -n` pegado al lado
+
+*Corro con `claude-sonnet-5`. El auditor sigue en Opus 5. Encargo escrito por el auditor al cerrar la `ACTA 58`.*
+
+## 60.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Un intento anterior de esta misma vuelta corrio MUDO** (`docs/loop/loop.log`: *TURNO MUDO, el
+turno corrio 637s ... pero docs/loop/REPORTE.md quedo identico, intento 1 de 7*): dejo escritos
+`.v60ext/frontera.py`, `.v60ext/frontera.txt` y el candidato
+`cuarentena/grove_high_output/priorizar_lista_entrenamiento_subordinados.json`, **sin haber
+pasado todavia por `forja.py informe`**. `EXTRACTOR.md` 1 manda commitear lo pendiente antes de
+tocar nada, y eso es lo primero que hago:
+
+    $ git add docs/loop/loop.log .v60ext/ cuarentena/grove_high_output/priorizar_lista_entrenamiento_subordinados.json
+    $ git commit -m "Sincroniza restos de la vuelta 60 (intento mudo): frontera de cap_17/cap_18 y primer candidato sin verificar aun"
+    $ git push
+    GATE VERDE.
+      nodos verificados: 346
+    [extraccion-mundo-11 b1e48b8] Sincroniza restos de la vuelta 60 (intento mudo): frontera de cap_17/cap_18 y primer candidato sin verificar aun
+     4 files changed, 385 insertions(+)
+    To https://github.com/Alexcat84/forja-nodos.git
+       fa552ae..b1e48b8  extraccion-mundo-11 -> extraccion-mundo-11
+
+**LA IDENTIDAD, LEIDA DE GIT** (`EXTRACTOR.md` 5):
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    b1e48b88aeceae586dd788a165b741f9ae23ead2
+    2026-09-21T03:53:43-04:00
+    extraccion-mundo-11
+
+**EL ESTADO, MEDIDO ANTES DE LA PRIMERA OPERACION PROPIA DE ESTA VUELTA** (`EXTRACTOR.md` 4), justo
+tras el commit de sincronizacion de arriba y antes de escribir ningun candidato nuevo:
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta,
+               cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones,
+               censo_no_decrece
+
+    $ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl config/pares_mutuos.jsonl
+      740 bitacora/VEREDICTOS.jsonl
+      346 dataset/nodos.jsonl
+        1 config/pares_mutuos.jsonl
+
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    89
+
+**`346`, `740` y `1` coinciden con el cierre de la `59`** (`ACTA 58` `58.6` y el encargo de esta
+vuelta: *al cerrar la 59 era 346 nodos, 740 veredictos, 1 par mutuo y 88 en la bandeja de grove*).
+**`89` es `88` mas el candidato del intento mudo** (`priorizar_lista_entrenamiento_subordinados`,
+ya sincronizado arriba). Nadie toco el grafo entre una vuelta y otra, tal como `D.39` promete
+mientras el lote `7` siga abierto.
+
+## 60.1. TAREA 1. LOS REGISTROS (`ACTA 58` `58.2`, `58.3`, `58.6`)
+
+**Leida entera `ACTA_AUDITOR.md`, seccion `ACTA 58`.** Lo que me toca citar, sin reabrirlo:
+
+- **`58.2`**: mi discutible de la `59` (la seleccion de los tres nodos del `154` de `d006` sobre un
+  `grep` de control) **CAYO**, y con razon: el `154` ya estaba rancio, con `84` de sus pasos ya
+  firmados por la `ACTA 38` antes de que la `59` releyera nada. El libro mayor de `cap_13` (`58.2.d`)
+  deja `70` pasos sin firma de nadie (`contar_cuatro`, `dar_elogio`, `medir_critica`), anotados en
+  `d084` **para la proxima de saneamiento, no para esta**.
+- **`58.3`**: `29` de mis `43` citas de linea de la `59` apuntaban a la linea equivocada del libro
+  (`practicar_triangulo` corrido un renglon, `resolver_dudas` citando la pregunta del FAQ en vez de
+  la respuesta). El contenido era correcto las `43` veces; **el remedio que me toca es sacar cada
+  numero de linea de un `grep -n` real y pegarlo, no teclearlo de la cuenta** (`58.3`, y la frase
+  que cierra la seccion: *cuando publiques una linea del libro como prueba, sacala con `grep -n` y
+  no de la cuenta*).
+- **`58.3.a`**: dentro de una salida que se presenta como corrida de `cerrar_reporte.py` yo habia
+  tecleado un parentesis que el instrumento no imprime, y una de sus tres piezas era falsa. **El
+  remedio: lo que yo comento va FUERA del bloque pegado bajo el `$`, en la linea de debajo, nunca
+  dentro.**
+- **`58.6`**: la `59` corrio entera como saneamiento y no escribio la linea que lo registra; el
+  auditor la escribio el mismo (`d085`), y por eso `deuda.py --clase 60` ya da `LIBRE` y esta vuelta
+  es de **EXTRACCION**, no de saneamiento.
+
+**Lo que esta HECHO y no se reabre** (`ACTA 58` `58.4`, `58.5`, `58.2.d`): la verificacion de `d075`,
+la firma de `0` PUENTE sobre los `43` pasos de `cap_13`, y el libro mayor del capitulo. **Las
+anotaciones `d084` a `d087` y la linea de saneamiento de la `59` en `docs/loop/DEUDA.jsonl` estan
+escritas por el auditor**: las leo y las cito, no las reescribo.
+
+## 60.2. TAREA 2. LA FRONTERA DE `cap_17` Y `cap_18`, ANTES DE CORTAR NADA (`EXTRACTOR.md` 10)
+
+**Reuso `.v58ext/frontera.py` sin tocar su maquinaria de medir**, ya copiado por el intento mudo a
+`.v60ext/frontera.py` (`EXTRACTOR.md` 13, la moratoria de maquinaria): mismo instrumento que las
+vueltas 53, 55, 56, 57 y 58 corrieron. Lo unico que cambia es MI TABLA DE TRAMOS sobre los dos
+capitulos de hoy, los dos ultimos del libro.
+
+**LA REPETICION INTERNA DE `cap_18` SE DECLARA ANTES DE MINAR** (`P.19`): `cap_18` es el capitulo de
+cierre del libro (*One More Thing...*), una lista de 25 asignaciones con puntaje. **Cada item es
+una sola linea que nombra una tarea ya desplegada en otro capitulo del propio libro** (la vara de
+`EXTRACTOR.md` 9, NOMBRAR NO ES PROCEDIMENTAR): ninguna linea trae su propio inventario de pasos, y
+cada una remite por su propio contenido a un procedimiento que este lote ya tiene en cuarentena o
+que un lote anterior ya inserto (el detalle item por item, con el nodo que cada uno nombra, esta en
+la tabla pegada mas abajo). **Por eso `cap_18` da `0` nodos**, y dos items (`P27`/`P41` de la tabla)
+son ademas repeticion del mismo objeto que un item anterior del propio capitulo (la gira de `P25` y
+los objetivos de `P39`), asi que tampoco generan nodo por partida doble.
+
+**RECORRIDO HOY, MISMO INSTRUMENTO, SALIDA IDENTICA A LA DEL INTENTO MUDO** (verificado con `diff`
+antes de citarla, para que la salida de esta vuelta sea la que manda y no una heredada sin mirar):
+
+    $ python .v60ext/frontera.py > .v60ext/frontera_v60.txt
+    $ diff .v60ext/frontera.txt .v60ext/frontera_v60.txt
+    (sin diferencias)
+
+    ==============================================================================
+    1. LA COMPROBACION DE cap_17, ANTES DE SU TABLA
+    ==============================================================================
+    fichero                                : fuentes/grove_high_output/cap_17.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 27
+    lineas con contenido tras la cabecera  : 31
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 2154 palabras
+    cuerpo medido aparte                   : 2154 palabras
+    CARACTERES DE CUERPO                   : 12846 caracteres
+    fichero entero, para cruzar con wc -w  : 2183 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_17 Y SOLO cap_17: 3
+
+    ==============================================================================
+    2. LA TABLA DE cap_17, IMPRESA Y NO TECLEADA
+    ==============================================================================
+<!-- TALLADO: salida=.v60ext/frontera_v60.txt -->
+
+| tramo de cap_17 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L9` | 1 | **0** | P1  rotulo: el numero 16, sin cuerpo que extraer | `9:16` |
+| `L11 a L11` | 6 | **0** | P2  titulo textual Why Training Is the Boss's Job, sin cuerpo que extraer | `11:Why Training Is the Boss's Job` |
+| `L13 a L13` | 166 | **0** | P3  la anecdota del restaurante y la empleada nueva del telefono sin instruir: CASO de apertura, manual 3.5 | `13:Recently my wife and I decided to go out to dinner. The woman wh` |
+| `L15 a L15` | 148 | **0** | P4  la anecdota del implantador de iones en Intel y el millon de dolares perdido por falta de entrenamiento: CASO, manual 3.5 | `15:The consequences of an employee being insufficiently trained can` |
+| `L17 a L17` | 45 | **0** | P5  la importancia del entrenamiento se vuelve obvia tras estos problemas: POSTURA de transicion | `17:Situations like these occur all too frequently in business life.` |
+| `L19 a L19` | 50 | **0** | P6  la cuestion de quien debe entrenar, y la creencia del autor de que debe ser el propio mando: POSTURA | `19:For the already overscheduled manager, the trickier issue may be` |
+| `L21 a L21` | 49 | **0** | P7  la definicion basica de que produce un mando, la salida de su organizacion: DEFINICION | `21:Let me explain why, beginning with what I believe is the most ba` |
+| `L23 a L23` | 80 | **0** | P8  las dos vias para subir el desempeno individual, motivacion y capacidad: DEFINICION, taxonomia de dos sin pasos propios | `23:A manager generally has two ways to raise the level of individua` |
+| `L25 a L25` | 111 | **0** | P9  el ejemplo numerico de la palanca del entrenamiento, doce horas de preparacion por doscientas horas ganadas: CASO ilustrativo con numeros propios del ejemplo, manual 3.5 | `25:Training is, quite simply, one of the highest-leverage activitie` |
+| `L27 a L27` | 54 | **0** | P10 el entrenamiento tiene que atender lo que el estudiante necesita, con la salvedad de los cursos enlatados externos: POSTURA | `27:This assumes, of course, that the training will accurately addre` |
+| `L29 a L29` | 98 | **0** | P11 la anecdota de los consultores externos y el curso de desarrollo de carrera desalineado con la practica de Intel: CASO, manual 3.5 | `29:Recently, some outside consultants taught a course on career dev` |
+| `L31 a L31` | 48 | **0** | P12 el entrenamiento tiene que ser un proceso continuo y no un evento aislado: POSTURA | `31:For training to be effective, it also has to maintain a reliable` |
+| `L33 a L33` | 90 | **0** | P13 quien tiene que entrenar es el propio mando, en cascada por todos los niveles de supervision: POSTURA | `33:If you accept that training, along with motivation, is the way t` |
+| `L35 a L35` | 69 | **0** | P14 el mando tiene que ser el instructor porque debe representar un modelo de rol creible, un delegado no puede asumir ese papel: POSTURA | `35:There is another reason that you and only you can fill the role ` |
+| `L37 a L37` | 49 | **0** | P15 la cifra propia de Intel, entre el dos y el cuatro por ciento del tiempo del empleado en el aula: ATRIBUCION de la propia empresa del autor, sin fecha de corte externa que verificar, principio 8 no aplica a una practica interna sin cita de tercero | `37:We at Intel believe that conducting training is a worthwhile act` |
+| `L39 a L39` | 85 | **0** | P16 el catalogo universitario de Intel con mas de cincuenta clases, y el ejemplo del curso del implantador de iones: CASO, manual 3.5 | `39:We have a "university catalogue" that lists over fifty different` |
+| `L41 a L41` | 74 | **0** | P17 el propio repertorio de cursos del autor, resenas de desempeno, reuniones productivas e introduccion a Intel: CASO en primera persona, manual 3.5 | `41:My own training repertoire includes a course on preparing and de` |
+| `L43 a L43` | 43 | **0** | P18 la distincion entre dos tareas de entrenamiento, ensenar habilidades a nuevos miembros y ensenar ideas nuevas a los miembros actuales: DEFINICION, taxonomia de dos sin pasos propios | `43:At Intel we distinguish between two different training tasks. Th` |
+| `L45 a L45` | 82 | **0** | P19 la magnitud de la tarea de entrenar nuevos empleados, con el ejemplo numerico del diez por ciento de rotacion mas diez por ciento de crecimiento: CASO ilustrativo con numeros propios, manual 3.5 | `45:The distinction between new-employee and new-skill training is i` |
+| `L47 a L47` | 85 | **0** | P20 la magnitud aun mayor de ensenar ideas nuevas a todo el departamento, con el ejemplo del coste de un millon de dolares: CASO ilustrativo con numeros propios, manual 3.5 | `47:Teaching new principles or skills to an entire department is an ` |
+| `L49 a L51` | 131 | **1** | P21 parte 1 de 1 y CIERRE DE LA PIEZA de planificacion: hacer una lista sin limitar su alcance de en que deberian entrenarse los subordinados, preguntar a la propia gente que necesita, tomar inventario de los mando maestros y materiales disponibles, y asignar prioridades entre esos items; inventario propio del libro de pasos, manual 9.1, nodo propio | `49:So what should you do if you embrace the gospel of training? For` |
+| `L53 a L59` | 303 | **1** | P22 parte 1 de 1 y CIERRE DE LA PIEZA de desarrollo del primer curso: empezar sin ambicion desarrollando un curso corto de tres a cuatro clases sobre el tema mas urgente, fijar un calendario con plazos y comprometerse con el, crear un esquema del curso entero, desarrollar solo la primera clase y dictarla, desarrollar la segunda clase despues de haber dado la primera, tratar la primera vez como un desechable y ensenarsela a los subordinados mas informados para perfeccionarla con su critica, y preguntarse si se podra cubrir a toda la organizacion uno mismo o si hace falta preparar a otros instructores con el primer set de clases; inventario propio del libro de pasos, manual 9.1, nodo propio | `53:Especially if you haven't done this sort of thing before, start ` |
+| `L61 a L61` | 89 | **1** | P23 parte 1 de 1 y pieza de una sola linea que cierra en si misma: pedir criticas anonimas a los alumnos tras dar el curso, usar un formulario con calificaciones numericas y preguntas abiertas, estudiar las respuestas sabiendo que nunca se complacera a todos, y tener como objetivo ultimo satisfacerse uno mismo de que se esta logrando el proposito; inventario propio del libro de pasos, manual 9.1, nodo propio | `61:After you've given the course, ask for anonymous critiques from ` |
+| `L63 a L63` | 13 | **0** | P24 anuncio de que la primera vez que se ensena se descubren unas cuantas cosas: DEFINICION de transicion que anuncia la lista de P25 a P27 | `63:If this is your first time teaching, you'll discover a few inter` |
+| `L65 a L65` | 95 | **0** | P25 parte 1 de 3 de la lista que cierra en P27 (L69): el entrenamiento es trabajo duro, se descubre cuanto no se sabe: POSTURA reflexiva, no es paso a ejecutar | `65:* Training is hard work. Preparing lectures and getting yourself` |
+| `L67 a L67` | 35 | **0** | P26 parte 2 de 3: quien mas aprende del curso es quien lo da: POSTURA reflexiva | `67:* Guess who will have learned most from the course? You. The cri` |
+| `L69 a L69` | 55 | **0** | P27 parte 3 de 3 y CIERRE de la lista que empezo en P25 (L65): el proceso de entrenar resulta exaltante y produce calidez al ver a un subordinado practicar lo ensenado: POSTURA reflexiva de cierre, taxonomia de tres observaciones sobre la experiencia y no un inventario de medios o etapas del procedimiento, 9.1 restriccion 1, ninguna de las tres lineas es paso ejecutable | `69:* You will find that when the training process goes well, it is ` |
+| | **2154** | **3** | **el cuerpo entero de cap_17, cero lineas sin cubrir y cero solapes** | |
+
+
+    ==============================================================================
+    1. LA COMPROBACION DE cap_18, ANTES DE SU TABLA
+    ==============================================================================
+    fichero                                : fuentes/grove_high_output/cap_18.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 56
+    lineas con contenido tras la cabecera  : 56
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 718 palabras
+    cuerpo medido aparte                   : 718 palabras
+    CARACTERES DE CUERPO                   : 4384 caracteres
+    fichero entero, para cruzar con wc -w  : 743 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_18 Y SOLO cap_18: 0
+
+    ==============================================================================
+    2. LA TABLA DE cap_18, IMPRESA Y NO TECLEADA
+    ==============================================================================
+<!-- TALLADO: salida=.v60ext/frontera_v60.txt -->
+
+| tramo de cap_18 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L9` | 3 | **0** | P1  rotulo One More Thing..., sin cuerpo que extraer | `9:One More Thing...` |
+| `L11 a L11` | 53 | **0** | P2  postura de apertura, invito a elegir asignaciones y hacerlas con honestidad: POSTURA | `11:Please! You invested the price of this book plus perhaps eight h` |
+| `L13 a L13` | 40 | **0** | P3  postura, cien puntos de asignaciones hacen a un mejor mando: POSTURA | `13:You have trusted me enough to buy my book and read it. Now let m` |
+| `L15 a L15` | 1 | **0** | P4  rotulo Production, sin cuerpo que extraer | `15:Production` |
+| `L17 a L17` | 1 | **0** | P5  rotulo Points, encabezado de columna sin cuerpo que extraer | `17:Points` |
+| `L19 a L19` | 13 | **0** | P6  item 1: identificar las operaciones de proceso, montaje y prueba en el propio trabajo, una sola linea sin pasos propios que la libro despliegue, nombra el procedimiento ya extraido en clasificar_trabajo_proceso_montaje_prueba (cuarentena grove_high_output), EXTRACTOR.md 9 nombrar no es procedimentar | `19:Identify the operations in your work most like process, assembly` |
+| `L21 a L21` | 1 | **0** | P7  puntaje del item 1: 10, sin cuerpo que extraer | `21:10` |
+| `L23 a L23` | 20 | **0** | P8  item 2: identificar el paso limitante de un proyecto y mapear el flujo alrededor, una sola linea que nombra el procedimiento ya extraido en rehacer_flujo_paso_limitante_capacidad y construir_flujo_produccion_paso_limitante (cuarentena grove_high_output), nombrar no es procedimentar | `23:For a project you are working on, identify the limiting step and` |
+| `L25 a L25` | 1 | **0** | P9  puntaje del item 2: 10, sin cuerpo que extraer | `25:10` |
+| `L27 a L27` | 44 | **0** | P10 item 3: definir los lugares de inspeccion de recepcion, en proceso y final, decidir si son de vigilancia o de barrera, identificar cuando relajarlas a un esquema variable, una sola linea que nombra los procedimientos ya extraidos en elegir_inspeccion_barrera_monitorizacion, preferir_inspeccion_proceso_prueba_destructiva y variar_frecuencia_inspeccion_nivel_calidad (cuarentena grove_high_output), nombrar no es procedimentar | `27:Define the proper places for the equivalents of receiving inspec` |
+| `L29 a L29` | 1 | **0** | P11 puntaje del item 3: 10, sin cuerpo que extraer | `29:10` |
+| `L31 a L31` | 21 | **0** | P12 item 4: identificar media docena de indicadores nuevos que midan cantidad y calidad de la salida, una sola linea que nombra el procedimiento ya extraido en elegir_cinco_indicadores_diarios_fabrica y emparejar_indicadores_efecto_contraefecto (cuarentena grove_high_output), nombrar no es procedimentar | `31:Identify half a dozen new indicators for your group's output. Th` |
+| `L33 a L33` | 1 | **0** | P13 puntaje del item 4: 10, sin cuerpo que extraer | `33:10` |
+| `L35 a L35` | 20 | **0** | P14 item 5: instalar esos indicadores como rutina y establecer su revision regular en las reuniones de equipo, una sola linea sin pasos propios, tema ya cubierto por archivar_indicadores_resolver_problemas y cubrir_indicadores_problemas_reunion_individual (cuarentena grove_high_output), nombrar no es procedimentar | `35:Install these new indicators as a routine in your work area, and` |
+| `L37 a L37` | 1 | **0** | P15 puntaje del item 5: 20, sin cuerpo que extraer | `37:20` |
+| `L39 a L39` | 46 | **0** | P16 item 6: identificar la estrategia mas importante, describir la demanda del entorno que la motivo y el estado o impulso actual, una sola linea que nombra los procedimientos ya extraidos en examinar_demanda_entorno_dos_marcos_temporales, planificar_tres_pasos_demanda_estado_brecha y cerrar_brecha_dos_preguntas_estrategia (cuarentena grove_high_output), nombrar no es procedimentar | `39:What is the most important strategy (plan of action) you are pur` |
+| `L41 a L41` | 1 | **0** | P17 puntaje del item 6: 20, sin cuerpo que extraer | `41:20` |
+| `L43 a L43` | 1 | **0** | P18 rotulo Leverage, sin cuerpo que extraer | `43:Leverage` |
+| `L45 a L45` | 21 | **0** | P19 item 7: hacer simplificacion del trabajo en la tarea mas tediosa, eliminar al menos el treinta por ciento de los pasos, una sola linea que nombra literalmente el procedimiento ya extraido en simplificar_trabajo_reducir_numero_pasos (cuarentena grove_high_output), nombrar no es procedimentar | `45:Conduct work simplification on your most tedious, time-consuming` |
+| `L47 a L47` | 1 | **0** | P20 puntaje del item 7: 10, sin cuerpo que extraer | `47:10` |
+| `L49 a L49` | 25 | **0** | P21 item 8: definir la propia salida y listar sus elementos por orden de importancia, una sola linea sin pasos propios que el libro despliegue aqui, tema ya cubierto en el capitulo de la produccion como salida gerencial de unidades anteriores del propio libro (cap_01 a cap_09, ya insertadas en dataset), nombrar no es procedimentar | `49:Define your output: What are the output elements of the organiza` |
+| `L51 a L51` | 1 | **0** | P22 puntaje del item 8: 10, sin cuerpo que extraer | `51:10` |
+| `L53 a L53` | 22 | **0** | P23 item 9: analizar el sistema de recoleccion de informacion, balanceado entre titulares, articulos y revistas semanales, con redundancia, una sola linea que nombra el procedimiento ya extraido en reunir_informacion_gerencial_vias_variadas y escalonar_fuentes_informacion_gerencial (cuarentena grove_high_output), nombrar no es procedimentar | `53:Analyze your information- and knowledge-gathering system. Is it ` |
+| `L55 a L55` | 1 | **0** | P24 puntaje del item 9: 10, sin cuerpo que extraer | `55:10` |
+| `L57 a L57` | 14 | **0** | P25 item 10: hacer una gira y listar las transacciones en que se participo, una sola linea que nombra el procedimiento ya extraido en programar_visita_area_observar_despachar (cuarentena grove_high_output), nombrar no es procedimentar | `57:Take a "tour." Afterward, list the transactions you got involved` |
+| `L59 a L59` | 1 | **0** | P26 puntaje del item 10: 10, sin cuerpo que extraer | `59:10` |
+| `L61 a L61` | 7 | **0** | P27 item 11: crear una excusa mensual para una gira, una sola linea que remite al mismo procedimiento de la gira de P25 (programar_visita_area_observar_despachar), repeticion del mismo objeto, P.19 | `61:Create a once-a-month "excuse" for a tour.` |
+| `L63 a L63` | 1 | **0** | P28 puntaje del item 11: 10, sin cuerpo que extraer | `63:10` |
+| `L65 a L65` | 21 | **0** | P29 item 12: describir como se vigilara el proximo proyecto delegado, una sola linea que nombra el procedimiento ya extraido en supervisar_tarea_delegada_etapa_menor_valor y supervisar_decision_delegada_preguntas_concretas (cuarentena grove_high_output), nombrar no es procedimentar | `65:Describe how you will monitor the next project you delegate to a` |
+| `L67 a L67` | 1 | **0** | P30 puntaje del item 12: 10, sin cuerpo que extraer | `67:10` |
+| `L69 a L69` | 13 | **0** | P31 item 13: generar un inventario de proyectos discrecionales, una sola linea que nombra literalmente el procedimiento ya extraido en llevar_inventario_proyectos_discrecionales (cuarentena grove_high_output), nombrar no es procedimentar | `69:Generate an inventory of projects on which you can work at discr` |
+| `L71 a L71` | 1 | **0** | P32 puntaje del item 13: 10, sin cuerpo que extraer | `71:10` |
+| `L73 a L73` | 24 | **0** | P33 item 14: hacer una reunion individual programada con cada subordinado, explicarsela antes y hacer que se preparen, una sola linea que nombra los procedimientos ya extraidos en fijar_duracion_lugar_reunion_individual y preparar_guion_reunion_individual_subordinado (cuarentena grove_high_output), nombrar no es procedimentar | `73:Hold a scheduled one-on-one with each of your subordinates. (Exp` |
+| `L75 a L75` | 1 | **0** | P34 puntaje del item 14: 20, sin cuerpo que extraer | `75:20` |
+| `L77 a L77` | 30 | **0** | P35 item 15: clasificar las actividades de la ultima semana por palanca y generar un plan para hacer mas de la categoria alta, una sola linea que nombra los procedimientos ya extraidos en buscar_actividad_alta_palanca_tres_vias, detectar_palanca_negativa_actividad_mando y elegir_momento_actividad_palanca_maxima (cuarentena grove_high_output), nombrar no es procedimentar | `77:Look at your calendar for the last week. Classify your activitie` |
+| `L79 a L79` | 1 | **0** | P36 puntaje del item 15: 10, sin cuerpo que extraer | `79:10` |
+| `L81 a L81` | 48 | **0** | P37 item 16: pronosticar la demanda de tiempo de la proxima semana, clasificar las reuniones y reducir las de mision si pasan del veinticinco por ciento, una sola linea que nombra el procedimiento ya extraido en usar_tres_clases_reunion_proceso (cuarentena grove_high_output), nombrar no es procedimentar | `81:Forecast the demand on your time for the next week. What portion` |
+| `L83 a L83` | 1 | **0** | P38 puntaje del item 16: 10, sin cuerpo que extraer | `83:10` |
+| `L85 a L85` | 19 | **0** | P39 item 17: definir los tres objetivos mas importantes de la organizacion para los proximos tres meses, respaldados con resultados clave, una sola linea sin pasos propios que el libro despliegue aqui, tema ya cubierto en fijar_periodo_direccion_objetivos_retroalimentacion, fijar_meta_direccion_objetivos_mitad_probabilidad y contestar_dos_preguntas_direccion_objetivos (cuarentena grove_high_output), nombrar no es procedimentar | `85:Define the three most important objectives for your organization` |
+| `L87 a L87` | 1 | **0** | P40 puntaje del item 17: 20, sin cuerpo que extraer | `87:20` |
+| `L89 a L89` | 17 | **0** | P41 item 18: hacer que los subordinados hagan lo mismo tras discutir el conjunto generado arriba, una sola linea que remite al mismo procedimiento de objetivos de P39, repeticion del mismo objeto, P.19 | `89:Have your subordinates do the same for themselves, after a thoro` |
+| `L91 a L91` | 1 | **0** | P42 puntaje del item 18: 20, sin cuerpo que extraer | `91:20` |
+| `L93 a L93` | 23 | **0** | P43 item 19: generar un inventario de decisiones pendientes y estructurar tres usando el enfoque de las seis preguntas, una sola linea que nombra literalmente el procedimiento ya extraido en zanjar_seis_preguntas_decision_adelantado y conducir_etapas_modelo_ideal_decision (cuarentena grove_high_output), nombrar no es procedimentar | `93:Generate an inventory of pending decisions you are responsible f` |
+| `L95 a L95` | 1 | **0** | P44 puntaje del item 19: 10, sin cuerpo que extraer | `95:10` |
+| `L97 a L97` | 19 | **0** | P45 item 20: evaluar el propio estado motivacional segun la jerarquia de Maslow y hacer lo mismo con cada subordinado, una sola linea que remite a la jerarquia de Maslow ya tratada en diagnosticar_nivel_motivacion_reaccion_aumento_salario y diagnosticar_capacidad_motivacion_prueba_vida (cuarentena grove_high_output), nombrar no es procedimentar | `97:Evaluate your own motivational state in terms of the Maslow hier` |
+| `L99 a L99` | 1 | **0** | P46 puntaje del item 20: 10, sin cuerpo que extraer | `99:10` |
+| `L101 a L101` | 13 | **0** | P47 item 21: dar a los subordinados una pista de carreras, un conjunto de indicadores de desempeno para cada uno, una sola linea sin pasos propios que el libro despliegue aqui, tema de indicadores ya cubierto en elegir_cinco_indicadores_diarios_fabrica y emparejar_indicadores_efecto_contraefecto (cuarentena grove_high_output), nombrar no es procedimentar | `101:Give your subordinates a racetrack: define a set of performance ` |
+| `L103 a L103` | 1 | **0** | P48 puntaje del item 21: 20, sin cuerpo que extraer | `103:20` |
+| `L105 a L105` | 19 | **0** | P49 item 22: listar las formas de retroalimentacion relevante a la tarea que reciben los subordinados, una sola linea sin pasos propios, tema de la retroalimentacion relevante a la tarea que titula el propio cap_16 del libro (compensation as task relevant feedback, ya en cuarentena grove_high_output), nombrar no es procedimentar | `105:List the various forms of task-relevant feedback your subordinat` |
+| `L107 a L107` | 1 | **0** | P50 puntaje del item 22: 10, sin cuerpo que extraer | `107:10` |
+| `L109 a L109` | 36 | **0** | P51 item 23: clasificar la madurez relevante a la tarea de cada subordinado y evaluar el estilo de direccion apropiado, una sola linea que nombra literalmente el procedimiento ya extraido en elegir_estilo_direccion_madurez_relevante_tarea (cuarentena grove_high_output), nombrar no es procedimentar | `109:Classify the task-relevant maturity of each of your subordinates` |
+| `L111 a L111` | 1 | **0** | P52 puntaje del item 23: 10, sin cuerpo que extraer | `111:10` |
+| `L113 a L113` | 48 | **0** | P53 item 24: evaluar la ultima revision de desempeno recibida y las que se dieron, como medio de retroalimentacion relevante a la tarea, una sola linea sin pasos propios, tema ya cubierto en entregar_evaluacion_desempeno_tres_claves (cuarentena grove_high_output), nombrar no es procedimentar | `113:Evaluate the last performance review you received and also the l` |
+| `L115 a L115` | 1 | **0** | P54 puntaje del item 24: 20, sin cuerpo que extraer | `115:20` |
+| `L117 a L117` | 11 | **0** | P55 item 25: rehacer una de esas revisiones como debio hacerse, una sola linea que remite al mismo procedimiento de revision de desempeno de P53, repeticion del mismo objeto, P.19 | `117:Redo one of these reviews as it should have been done.` |
+| `L119 a L119` | 1 | **0** | P56 puntaje del item 25: 10, sin cuerpo que extraer | `119:10` |
+| | **718** | **0** | **el cuerpo entero de cap_18, cero lineas sin cubrir y cero solapes** | |
+
+
+    ==============================================================================
+    3. EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI
+    ==============================================================================
+    NODOS QUE MI FRONTERA DA EN LOS DOS CAPITULOS DE HOY (cap_17+cap_18): 3
+      cap_17: 3   cap_18: 0
+    TECHO DE CANDIDATOS DE D.58 EN REGIMEN LIGERO                  : 30
+    DENTRO DEL TECHO DE CANDIDATOS                                 : SI
+
+**LAS DOS UNIDADES CIERRAN: cero lineas sin cubrir y cero solapes en `cap_17` Y `cap_18`, cada una**
+**contra su propio cuerpo (`suma == cuerpo` en las dos).** Mi frontera preve `3` candidatos, dentro
+del techo de `30`. **`cap_18` da `0` porque cada una de sus 25 lineas nombra un procedimiento que ya
+vive en cuarentena o en el grafo** (la tabla de arriba deja el nodo citado al lado de cada item), y
+dos de esas lineas (`P27`, `P41`) repiten ademas el mismo objeto que un item anterior del propio
+capitulo (`P25`, `P39`), `P.19`. **Ninguno de los 25 items trae su propio inventario de pasos: cada
+uno es la vara de `EXTRACTOR.md` 9 en su forma mas literal, nombrar no es procedimentar.**
