@@ -3931,6 +3931,52 @@ class PruebaTresDefectosDelFrente(BaseForja):
                                  "%s lo trabaja %s" % (fila["clave"], dueno))
                 self.assertIn(fila["clave"], activos)
 
+    # ------------------- d134: la ventana de D.59 y la cabecera de un frente
+
+    def test_caso_positivo_d134_la_cabecera_de_un_frente_abre_vuelta(self):
+        """**EN UN FRENTE, LA VENTANA DE `D.59` NO EMPEZABA EN SU ULTIMA VUELTA.**
+
+        La serial escribe `# VUELTA 62, ...` y un frente escribe
+        `# FRENTE `gerber_emyth`, VUELTA 9`. El regex solo conocia la primera, asi
+        que la *vuelta viva* del frente **empezaba en la ultima cabecera de la
+        SERIAL que su arbol heredo**, y se tragaba sus vueltas enteras.
+
+        **Medido el 21 sep en `gerber_emyth`: `4783` lineas de ventana en vez de
+        `683`**, o sea las vueltas `2` a `9` juntas.
+
+        Y eso ataca la razon de ser de la ventana: `D.59` mira solo la vuelta viva
+        **porque una guarda con quinientos avisos se aprende a no mirar**. Una
+        ventana de ocho vueltas es el primer paso de vuelta a ese sitio.
+        """
+        from scripts import tallar_reporte
+        for cabeza in ("# FRENTE `gerber_emyth`, VUELTA 9",
+                       "# FRENTE gerber_emyth, VUELTA 9: y lo que siga",
+                       "## FRENTE `marquet_turn_the_ship`, VUELTA 12"):
+            self.assertTrue(tallar_reporte.CABEZA_DE_VUELTA.match(cabeza), cabeza)
+
+    def test_caso_negativo_d134_la_cabecera_de_la_serial_sigue_valiendo(self):
+        """El arreglo no puede llevarse por delante la que si funcionaba, ni
+        empezar a reconocer lo que no es una cabecera de vuelta."""
+        from scripts import tallar_reporte
+        for cabeza in ("# VUELTA 62, lote 7 (`grove_high_output`)",
+                       "## VUELTA 2 DEL FRENTE `marquet_turn_the_ship`"):
+            self.assertTrue(tallar_reporte.CABEZA_DE_VUELTA.match(cabeza), cabeza)
+        for no_es in ("### VUELTA 9",
+                      "# FRENTE gerber_emyth VUELTA 9",
+                      "texto que menciona la VUELTA 9",
+                      "# FRENTE gerber, VUELTA nueve"):
+            self.assertFalse(tallar_reporte.CABEZA_DE_VUELTA.match(no_es), no_es)
+
+    def test_d134_la_ventana_no_cruza_una_linea(self):
+        """`[^,]` habria dejado que `FRENTE ...` se comiera el salto de linea y
+        casara con la `VUELTA` de DOS lineas mas abajo, uniendo dos vueltas en una
+        sola ventana. Por eso el trozo del frente excluye `
+` y `
+`."""
+        from scripts import tallar_reporte
+        texto = "# FRENTE gerber" + chr(10) + "algo" + chr(10) + "VUELTA 9"
+        self.assertFalse(tallar_reporte.CABEZA_DE_VUELTA.match(texto))
+
     # ------------------------------------------------------------------ d102
 
     def test_caso_positivo_d102_el_arnes_pone_al_dia_el_tablero_al_cerrar(self):

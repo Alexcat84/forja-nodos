@@ -208,6 +208,9 @@
     },
     "gerber_emyth": {
       "capitulos": [
+        "cap_01",
+        "cap_02",
+        "cap_03",
         "cap_05",
         "cap_06",
         "cap_09",
@@ -218,7 +221,7 @@
         "cap_21",
         "cap_22"
       ],
-      "cita": "ACTA G2 (cap_05 y cap_06), ACTA G3 3.5 (cap_09 y cap_10), ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida) y ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth"
+      "cita": "ACTA G9 3.1 (cap_01 el Foreword, cap_02 la Introduction y cap_03 Cap. 1, los tres leidos ENTEROS: prefacio personal, las cuatro IDEA # como metas sin inventario de medios, y el diagnostico del mito con el caso de Sarah). ACTA G2 (cap_05 y cap_06). ACTA G3 3.5 (cap_09 y cap_10). ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida). ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth"
     }
   },
   "coste_por_turno": {
