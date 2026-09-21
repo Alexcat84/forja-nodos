@@ -1,0 +1,16 @@
+==============================================================================
+FICHA: fijar_duracion_lugar_reunion_individual   (10 pasos)
+  poblacion barrida: 399 nodos (grafo + bandejas, filtro canonico)
+  medidos al digito: 398 de 398; descartados: 0
+  umbral de la casa (config/umbrales.json): 0.35
+  reloj del barrido: 964.0 s
+  LOS 8 VECINOS MAS PROXIMOS, LISTA ORDENADA ENTERA:
+    0.5501  [bandeja/grove_high_output] fijar_frecuencia_reunion_individual_madurez_tarea
+    0.5147  [bandeja/grove_high_output] preparar_guion_reunion_individual_subordinado
+    0.4748  [bandeja/grove_high_output] cubrir_indicadores_problemas_reunion_individual
+    0.3265  [bandeja/grove_high_output] infundir_regularidad_reunion_proceso
+    0.3060  [bandeja/grove_high_output] decir_no_trabajo_excede_capacidad
+    0.2882  [bandeja/grove_high_output] canalizar_interrupciones_cartel_hora_oficina
+    0.2859  [bandeja/grove_high_output] preparar_respuestas_estandar_interrupciones_repetidas
+    0.2820  [bandeja/grove_high_output] llevar_inventario_proyectos_discrecionales
+  vecinos por encima del umbral 0.35: 3

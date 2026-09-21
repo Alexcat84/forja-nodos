@@ -1,0 +1,48 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 392   (346 del grafo mas 46 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 7
+  por candidato bloqueado          : menor 7, mediana 7, mayor 7
+  que señal levanta cada vecindad  : paso_contra_nodo 3, similitud_texto 4
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] agrupar_interrupciones_subordinados_reuniones_regulares   (agrupar_interrupciones_subordinados_reuniones_regulares.json)
+    vecino sostener_contacto_oferta_aceptacion  [levantada por: paso_contra_nodo]
+      similitud_texto 0.094 | familia_id 0.000 | paso_contra_nodo 0.700
+      paso 4 del candidato contra paso 3 de sostener_contacto_oferta_aceptacion
+    vecino agendar_cuidados_propios_cumplirlos  [levantada por: paso_contra_nodo]
+      similitud_texto 0.129 | familia_id 0.000 | paso_contra_nodo 0.615
+      paso 4 del candidato contra paso 4 de agendar_cuidados_propios_cumplirlos
+    vecino nombrar_delegados_amigos_casa  [levantada por: paso_contra_nodo]
+      similitud_texto 0.127 | familia_id 0.000 | paso_contra_nodo 0.609
+      paso 4 del candidato contra paso 4 de nombrar_delegados_amigos_casa
+    vecino preparar_respuestas_estandar_interrupciones_repetidas  [levantada por: similitud_texto]
+      similitud_texto 0.536 | familia_id 0.111 | paso_contra_nodo 0.417
+      paso 1 del candidato contra paso 1 de preparar_respuestas_estandar_interrupciones_repetidas
+    vecino llevar_inventario_proyectos_discrecionales  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.000 | paso_contra_nodo 0.478
+      paso 1 del candidato contra paso 1 de llevar_inventario_proyectos_discrecionales
+    vecino buscar_regularidad_bloques_iguales_trabajo_mando  [levantada por: similitud_texto]
+      similitud_texto 0.426 | familia_id 0.000 | paso_contra_nodo 0.415
+      paso 1 del candidato contra paso 1 de buscar_regularidad_bloques_iguales_trabajo_mando
+    vecino identificar_paso_limitante_jornada_desfases  [levantada por: similitud_texto]
+      similitud_texto 0.351 | familia_id 0.000 | paso_contra_nodo 0.377
+      paso 4 del candidato contra paso 1 de identificar_paso_limitante_jornada_desfases
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

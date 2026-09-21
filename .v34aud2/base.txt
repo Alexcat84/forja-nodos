@@ -1,0 +1,12 @@
+BASE b698aef, contado por mi sobre el arbol extraido
+  nodos                 : 282
+  pasos                 : 2283
+  veredictos            : 410
+  consumada==False      : 14
+  aristas siguientes    : 107
+  aristas previos       : 107
+  bandeja lote 4        : 63
+  insertados lote 4     : 79
+  bandeja lote 5        : 3
+  por ciento sobre 142  : 55.63
+  por ciento HOY (94)   : 66.20

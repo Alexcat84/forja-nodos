@@ -1,0 +1,7 @@
+buscado en 548 nodos (grafo + TODAS las bandejas, sin filtro)
+  calendar               -> [('grafo', 'auditar_calendario_reuniones_semana'), ('grafo', 'reservar_calendario_tiempo_ejecutar'), ('grafo', 'bloquear_tiempo_pensar_calendario'), ('grafo', 'pelear_proliferacion_reuniones_bloquear_ejecucion'), ('grafo', 'agendar_cuidados_propios_cumplirlos')]
+  planificacion          -> [('bandeja/ensayo_referencia_163', 'planificacion_estrategica_despliegue_2')]
+  holgura                -> [('bandeja/grove_high_output', 'casar_flujo_fabricacion_flujo_ventas')]
+  slack                  -> CERO
+  decir_no               -> [('grafo', 'decir_normas_participacion_voz_alta')]
+  inventario_proyectos   -> CERO

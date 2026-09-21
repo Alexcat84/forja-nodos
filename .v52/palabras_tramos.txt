@@ -1,0 +1,6 @@
+P15  L45 a L47  palabras=134
+P16  L49 a L49  palabras=157
+P17  L51 a L51  palabras=64
+P18  L53 a L53  palabras=117
+P19  L55 a L55  palabras=85
+P20  L57 a L57  palabras=74

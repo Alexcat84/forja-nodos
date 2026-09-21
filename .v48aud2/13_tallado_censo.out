@@ -1,0 +1,19 @@
+=== tallado ===
+      linea 45979 de docs/loop/REPORTE.md
+      linea 46065 de docs/loop/REPORTE.md
+      linea 46154 de docs/loop/REPORTE.md
+
+TALLADO VERDE: las 124 tabla(s) comprobables son las de su instrumento, celda a celda.
+=== censo rutas ===
+============================================================================
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+============================================================================
+rutas publicadas y censadas : 779
+  pasan                     : 779
+  CAEN                      : 0
+      PATRON                           72
+      VACIA A PROPOSITO                3
+      con contenido                    699
+      vacia por protocolo              5
+
+CENSO VERDE: las 779 rutas publicadas sostienen lo que dicen sostener.

@@ -1,0 +1,7 @@
+BARRIDO DE GUIONES EN ROJO: 5 hallazgo(s)
+  .v59ext/d006_fuente_tres_nodos.txt linea 8 columna 37: guion largo (U+2014)
+  .v59ext/d006_fuente_tres_nodos.txt linea 8 columna 145: guion largo (U+2014)
+  .v59ext/d006_fuente_tres_nodos.txt linea 28 columna 26: guion largo (U+2014)
+  .v59ext/d006_fuente_tres_nodos.txt linea 28 columna 66: guion largo (U+2014)
+  .v59ext/d006_fuente_tres_nodos.txt linea 36 columna 152: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.

@@ -1,0 +1,5 @@
+$ python .v47/verificar_renglones.py
+
+renglones comprobados : 44
+  CASAN               : 44
+  NO CASAN            : 0

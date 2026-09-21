@@ -1,0 +1,22 @@
+| la arista, madre a hijo | paso_contra_nodo | umbral | quien la levanto |
+|---|---:|---:|---|
+| `desplegar_tres_conversaciones_carrera > conversar_historia_vida_descubrir_motivadores  (EN COLA)` | 0.647 | 0,60 | paso_contra_nodo |
+| `desplegar_plan_orden_operaciones_franqueza_radical > desplegar_tres_conversaciones_carrera  (EN COLA)` | 0.608 | 0,60 | paso_contra_nodo |
+| `desplegar_tres_conversaciones_carrera > conversar_historia_vida_descubrir_motivadores` | 0.641 | 0,60 | paso_contra_nodo |
+| `desplegar_tres_conversaciones_carrera > conversar_historia_vida_descubrir_motivadores` | 0.641 | 0,60 | paso_contra_nodo |
+| `desplegar_tres_conversaciones_carrera > conversar_suenios_cruzar_habilidades` | 0.453 | 0,60 | **la lectura** |
+| `desplegar_tres_conversaciones_carrera > trazar_plan_dieciocho_meses_aprendizaje` | 0.477 | 0,60 | **la lectura** |
+| `desplegar_plan_orden_operaciones_franqueza_radical > armar_plan_anual_crecimiento_equipo  (EN COLA)` | 0.741 | 0,60 | paso_contra_nodo |
+| `armar_plan_anual_crecimiento_equipo > facilitar_despido_tres_cosas` | 0.466 | 0,60 | **la lectura** |
+| `facilitar_despido_tres_cosas > admitir_pronto_mal_desempenio_cuatro_razones` | 0.442 | 0,60 | **la lectura** |
+| `facilitar_despido_tres_cosas > calibrar_decision_despido_documentarla` | 0.380 | 0,60 | **la lectura** |
+| `facilitar_despido_tres_cosas > sopesar_consejo_legal_despedir_humildad` | 0.405 | 0,60 | **la lectura** |
+| `desplegar_plan_orden_operaciones_franqueza_radical > evitar_obsesion_ascenso_estatus  (EN COLA)` | 0.429 | 0,60 | **la lectura** |
+| `construir_confianza_equipo_tiempo_solas > desplegar_tres_conversaciones_carrera` | 0.471 | 0,60 | **la lectura** |
+
+aristas de jerarquia declaradas en la vuelta : 13
+  que una senial levanto                     : 5
+  que solo cazo la lectura                   : 8
+veredictos nuevos en la bitacora             : 37
+  de las 13 lineas CONTINUA, dos son el MISMO par: las 430 y 431, y la 431
+  esta anotada como duplicado (AC.3.c). Aristas distintas: 12.

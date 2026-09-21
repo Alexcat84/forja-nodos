@@ -1,0 +1,10 @@
+ficha                                               pobl  reloj s   sobre  el vecino mas proximo y su digito
+infundir_regularidad_reunion_proceso                 399    625.1       3  0.3699 preparar_guion_reunion_individual_subord
+usar_tres_clases_reunion_proceso                     399    676.3       0  0.3359 infundir_regularidad_reunion_proceso
+fijar_frecuencia_reunion_individual_madurez_tarea    399   1032.1       4  0.5492 fijar_duracion_lugar_reunion_individual
+fijar_duracion_lugar_reunion_individual              399    964.0       3  0.5501 fijar_frecuencia_reunion_individual_madu
+preparar_guion_reunion_individual_subordinado        399   1028.4       4  0.5222 cubrir_indicadores_problemas_reunion_ind
+cubrir_indicadores_problemas_reunion_individual      399   1144.9       3  0.5298 preparar_guion_reunion_individual_subord
+
+suma de los seis relojes: 5470.8 s  (91.2 min)
+ficheros de salida enteros: 6

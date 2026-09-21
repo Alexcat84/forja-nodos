@@ -1,0 +1,22 @@
+=== buscar_regularidad_bloques_iguales_trabajo_mando
+titulo: Buscar la regularidad en el trabajo de mando alisando la carga, abriendo ventanas en la caja negra, y usando los mismos bloques de tiempo para las actividades iguales
+entregable: Una jornada de mando con la carga alisada y los mismos bloques de tiempo reservados para las actividades iguales, coordinados con los demas mandos, y las fuentes de problemas futuros de prioridad alta buscadas antes de que estallen.
+   1. Aplica a tu trabajo de mando el siguiente concepto de produccion: ve hacia la regularidad.
+   2. Alisa tu carga de trabajo todo lo que puedas, aunque no puedas controlar los habitos de los que te llegan, igual que una fabrica de desayunos iria mas eficiente si los clientes llegaran en un flujo estable y predecible en vez de entrar de uno en uno y de dos en dos.
+   3. Haz que tu trabajo de mando tome las caracteristicas de una fabrica y no las de un taller a pedido.
+   4. Impide en consecuencia, con todo lo que puedas, los pequenos parones y arranques de tu jornada, y tambien las interrupciones que traen las emergencias grandes.
+   5. Busca siempre las fuentes de problemas futuros de prioridad alta abriendo ventanas en la caja negra de tu organizacion, aunque algunas de esas emergencias sean inevitables.
+   6. Cuenta con lo que ganas al reconocer que tienes una bomba de relojeria entre manos: puedes atender el problema cuando tu quieras y no despues de que la bomba haya estallado.
+   7. Coordina tu trabajo con el de los demas mandos, porque solo puedes ir hacia la regularidad si los otros van tambien.
+   8. Usa, dicho de otro modo, los mismos bloques de tiempo para las actividades iguales.
+   9. Toma el ejemplo que el libro da de Intel: las mananas de los lunes se apartaron en toda la empresa como el momento en que se reunen los grupos de planificacion, asi que quien pertenece a uno puede contar con el lunes para eso y queda libre de choques de agenda.
+
+=== llevar_inventario_proyectos_discrecionales
+titulo: Llevar un inventario de materia prima en forma de proyectos discrecionales, distinto del trabajo en curso, para no gastar el tiempo libre metiendote en el trabajo ajeno
+entregable: Un inventario de proyectos discrecionales, separado del trabajo en curso, con cosas que necesitas hacer y que no necesitas terminar de inmediato, en las que el mando puede trabajar para subir la productividad de su grupo a largo plazo.
+   1. Aplica aqui un principio de produccion que es casi el contrario del anterior: lleva, como mando, un inventario de materia prima en forma de proyectos.
+   2. No lo confundas con tu inventario de trabajo en curso, porque ese, como los huevos en un hervidor continuo, tiende a estropearse o a quedarse obsoleto con el tiempo.
+   3. Mete en ese inventario cosas que necesitas hacer pero que no necesitas terminar de inmediato.
+   4. O sea proyectos discrecionales, de la clase en la que el mando puede trabajar para subir la productividad de su grupo a largo plazo.
+   5. Cuenta con lo que pasa si no lo llevas: un mando sin ese inventario de proyectos lo mas probable es que use su tiempo libre metiendose en el trabajo de sus subordinados.
+

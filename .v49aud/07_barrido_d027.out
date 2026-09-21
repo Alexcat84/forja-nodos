@@ -1,0 +1,16 @@
+==============================================================================
+FICHA: reunir_informacion_gerencial_vias_variadas   (8 pasos)
+  poblacion barrida: 390 nodos (grafo + bandejas, filtro canonico)
+  medidos al digito: 389 de 389; descartados: 0
+  umbral de la casa (config/umbrales.json): 0.35
+  reloj del barrido: 378.0 s
+  LOS 8 VECINOS MAS PROXIMOS, LISTA ORDENADA ENTERA:
+    0.3802  [bandeja/grove_high_output] programar_visita_area_observar_despachar
+    0.3714  [bandeja/grove_high_output] escalonar_fuentes_informacion_gerencial
+    0.3663  [bandeja/grove_high_output] empujar_persona_reunion_direccion_preferida
+    0.3519  [bandeja/grove_high_output] elegir_momento_actividad_palanca_maxima
+    0.3316  [bandeja/grove_high_output] transmitir_objetivos_prioridades_preferencias
+    0.3309  [bandeja/grove_high_output] subir_productividad_gerencial_tres_vias
+    0.3289  [bandeja/grove_high_output] dimensionar_plantilla_administrativa_pronostico
+    0.3256  [bandeja/grove_high_output] supervisar_tarea_delegada_etapa_menor_valor
+  vecinos por encima del umbral 0.35: 4

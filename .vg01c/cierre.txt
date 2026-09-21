@@ -1,0 +1,10 @@
+$ python .vg01c/cierre_frontera.py fuentes/grove_high_output/cap_01.md cap_02 cap_03
+fuentes/grove_high_output/cap_01.md    cabecera=   23 cuerpo= 3841 suma=  3864 fichero=  3864  CIERRA=SI
+fuentes/grove_high_output/cap_02.md    cabecera=   41 cuerpo= 3386 suma=  3427 fichero=  3427  CIERRA=SI
+fuentes/grove_high_output/cap_03.md    cabecera=   27 cuerpo= 5828 suma=  5855 fichero=  5855  CIERRA=SI
+
+$ wc -w (el instrumento de la casa, para cruzar)
+ 3864 fuentes/grove_high_output/cap_01.md
+ 3427 fuentes/grove_high_output/cap_02.md
+ 5855 fuentes/grove_high_output/cap_03.md
+13146 total

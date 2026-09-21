@@ -1,0 +1,22 @@
+$ python - (barrido de las tres especies de PUENTE que D.30 nombra, sobre los 206 pasos)
+  periodo      : 14 paso(s) levantados
+  destinatario : 3 paso(s) levantados
+  responsable  : 0 paso(s) levantados
+  TOTAL levantados por el barrido: 17 de 206
+    periodo       admitir_pronto_mal_desempenio_cuatro_razones P7
+    periodo       admitir_pronto_mal_desempenio_cuatro_razones P8
+    periodo       armar_plan_anual_crecimiento_equipo P2
+    periodo       armar_plan_anual_crecimiento_equipo P9
+    periodo       armar_plan_anual_crecimiento_equipo P20
+    periodo       calibrar_ascensos_evitar_politica P3
+    periodo       calibrar_decision_despido_documentarla P10
+    periodo       contactar_despedido_mes_despues P1
+    periodo       conversar_historia_vida_descubrir_motivadores P15
+    periodo       desplegar_tres_conversaciones_carrera P9
+    destinatario  montar_proceso_contratacion_reducir_sesgo P10
+    periodo       montar_proceso_contratacion_reducir_sesgo P26
+    periodo       montar_proceso_contratacion_reducir_sesgo P31
+    destinatario  montar_proceso_contratacion_reducir_sesgo P32
+    periodo       reconocer_excelencia_trayectoria_gradual P8
+    periodo       trazar_plan_dieciocho_meses_aprendizaje P6
+    destinatario  trazar_plan_dieciocho_meses_aprendizaje P8

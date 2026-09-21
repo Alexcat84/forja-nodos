@@ -1,0 +1,7 @@
+    $ ls docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+      ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+      ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+    $ ls docs/loop/ | grep -i -c -E "cola|vecin"
+      0
+    $ wc -c docs/loop/PROMPT_SIGUIENTE.md
+      0 docs/loop/PROMPT_SIGUIENTE.md

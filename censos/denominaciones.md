@@ -641,3 +641,211 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-16 | pasear_organizacion_hallar_problemas_pequenios | otro_idioma | Management by walking around | ingles | - |
 | 2026-09-16 | debatir_decidir_asuntos_cultura_evitar_delegar | nombre_largo | Los asuntos de cultura que el texto nombra uno a uno como los que se delegan por no gastar neuronas en ellos, con los dos sitios adonde va la cultura si se delegan o si nadie los decide | castellano | - |
 | 2026-09-16 | debatir_decidir_asuntos_cultura_evitar_delegar | otro_idioma | Debate and decide explicitly. Don't let things that pervert your culture just happen | ingles | - |
+| 2026-09-17 | integrar_trabajo_vida_mejor_version | nombre_largo | Integracion de trabajo y vida: el rechazo del juego de suma cero, y las horas que te mantienen centrado contadas dentro y no fuera | castellano | - |
+| 2026-09-17 | integrar_trabajo_vida_mejor_version | otro_idioma | work-life integration | ingles | - |
+| 2026-09-17 | definir_receta_propia_mantenerse_centrado | nombre_largo | Tu receta para mantenerte centrado: haz lo que te funcione a ti, dale prioridad cuando aprieta, y la receta de la autora como ejemplo y no como norma | castellano | - |
+| 2026-09-17 | definir_receta_propia_mantenerse_centrado | otro_idioma | figure out your recipe to stay centered and stick to it | ingles | - |
+| 2026-09-17 | agendar_cuidados_propios_cumplirlos | nombre_largo | Calendario y presentarte por ti: las dos piezas que el libro separa y que comparten un solo objeto, la cita contigo mismo | castellano | - |
+| 2026-09-17 | agendar_cuidados_propios_cumplirlos | otro_idioma | calendar, show up for yourself | ingles | - |
+| 2026-09-17 | ceder_autoridad_unilateral_equipo | nombre_largo | Libres en el trabajo: la primera regla de la relacion que hace que la gente se sienta libre, con los tres procesos de Google como ejemplo | castellano | - |
+| 2026-09-17 | ceder_autoridad_unilateral_equipo | otro_idioma | free at work | ingles | - |
+| 2026-09-17 | dominar_arte_socializar_trabajo | nombre_largo | El arte, y los peligros, de socializar en el trabajo: el paseo, la comida campestre, las familias y la comida en tu casa, y las dos advertencias del final | castellano | - |
+| 2026-09-17 | dominar_arte_socializar_trabajo | otro_idioma | master the art of socializing at work | ingles | - |
+| 2026-09-17 | evitar_presion_social_actos_equipo | nombre_largo | Hasta los actos no obligatorios pueden sentirse obligatorios: la primera de las dos advertencias que el libro pone al que organiza | castellano | - |
+| 2026-09-17 | evitar_presion_social_actos_equipo | otro_idioma | even non-mandatory events can feel mandatory | ingles | - |
+| 2026-09-17 | construir_confianza_equipo_tiempo_solas | nombre_largo | Construir confianza: el patron constante de actuar de buena fe, y las cuatro conversaciones con las que el libro dice que se empieza | castellano | - |
+| 2026-09-17 | construir_confianza_equipo_tiempo_solas | otro_idioma | building trust | ingles | - |
+| 2026-09-17 | vivir_valores_propios_evitar_listarlos | nombre_largo | Compartir valores: las tres objeciones al ejercicio de valores personales, y lo que si hay que hacer con los tuyos | castellano | - |
+| 2026-09-17 | vivir_valores_propios_evitar_listarlos | otro_idioma | sharing values | ingles | - |
+| 2026-09-17 | demostrar_apertura_visiones_distintas | nombre_largo | Demostrar apertura: no hace falta compartir valores para construir relacion, y el trabajo es el vinculo que si comparte todo el equipo | castellano | - |
+| 2026-09-17 | demostrar_apertura_visiones_distintas | otro_idioma | demonstrating openness | ingles | - |
+| 2026-09-17 | manejar_contacto_fisico_regla_platino | nombre_largo | Espacio fisico: cuando un abrazo demuestra que te importa alguien, cuando es agresion odiosa, y la regla de platino que decide | castellano | - |
+| 2026-09-17 | manejar_contacto_fisico_regla_platino | otro_idioma | physical space, platinum rule | ingles | - |
+| 2026-09-17 | reconocer_emociones_propias_avisar_equipo | nombre_largo | Reconocer tus propias emociones: no puedes esconderlas, no debes pagarlas con el equipo, y lo unico que queda es decirlas | castellano | - |
+| 2026-09-17 | reconocer_emociones_propias_avisar_equipo | otro_idioma | recognizing your own emotions | ingles | - |
+| 2026-09-17 | dominar_reacciones_emociones_ajenas | nombre_largo | Dominar tus reacciones ante las emociones ajenas: reconocerlas, preguntar, no repartir culpa, y los tres apanios de mesa que el libro deja | castellano | - |
+| 2026-09-17 | dominar_reacciones_emociones_ajenas | otro_idioma | master your reactions to others' emotions | ingles | - |
+| 2026-09-17 | abrazar_incomodidad_arrancar_critica_equipo | nombre_largo | Como se consigue que el equipo critique al jefe: la excepcion publica, la pregunta de cabecera, el silencio contado, la escucha que no debate, el premio visible y la cuenta semanal | castellano | - |
+| 2026-09-17 | abrazar_incomodidad_arrancar_critica_equipo | otro_idioma | soliciting impromptu guidance: embrace the discomfort | ingles | - |
+| 2026-09-17 | organizar_sistema_recoger_quejas_equipo | nombre_largo | Hacer que criticarte no solo sea seguro sino natural: un sistema organizado y no elaborado, con la caja naranja de Michael Dearing como ejemplar | castellano | - |
+| 2026-09-17 | organizar_sistema_recoger_quejas_equipo | otro_idioma | make it not just safe but natural to criticize you | ingles | - |
+| 2026-09-17 | organizar_sistema_recoger_quejas_equipo | otro_idioma | orange box | ingles | - |
+| 2026-09-17 | correr_semana_arreglo_averias_gestion | nombre_largo | La semana de arreglo aplicada a la gestion y no al producto: registro publico de averias de gestion, voto para priorizar, agrupado de duplicados, reparto entre jefes y cancelacion de lo demas | castellano | - |
+| 2026-09-17 | correr_semana_arreglo_averias_gestion | otro_idioma | management fix-it weeks | ingles | - |
+| 2026-09-17 | correr_semana_arreglo_averias_gestion | otro_idioma | bureaucracy busters | ingles | - |
+| 2026-09-17 | dar_guia_humilde_tres_tecnicas | nombre_largo | La humildad como primera condicion de la guia: situacion, comportamiento e impacto; la columna de la izquierda; y la humildad ontologica | castellano | - |
+| 2026-09-17 | dar_guia_humilde_tres_tecnicas | sigla | SBI | castellano | - |
+| 2026-09-17 | dar_guia_humilde_tres_tecnicas | otro_idioma | be humble | ingles | - |
+| 2026-09-17 | dar_guia_humilde_tres_tecnicas | otro_idioma | situation, behavior, impact | ingles | - |
+| 2026-09-17 | dar_guia_humilde_tres_tecnicas | otro_idioma | left-hand column | ingles | - |
+| 2026-09-17 | dar_guia_util_cuatro_recordatorios | nombre_largo | La utilidad como segunda condicion de la guia: el preambulo que baja defensas, el detalle concreto en vez de la abstraccion, la presentacion a quien si puede ayudar, y la guia entendida como regalo | castellano | - |
+| 2026-09-17 | dar_guia_util_cuatro_recordatorios | otro_idioma | be helpful | ingles | - |
+| 2026-09-17 | dar_guia_util_cuatro_recordatorios | otro_idioma | show, don't tell | ingles | - |
+| 2026-09-17 | dar_guia_util_cuatro_recordatorios | otro_idioma | guidance is a gift, not a whip or a carrot | ingles | - |
+| 2026-09-17 | dar_guia_acto_seis_consejos | nombre_largo | La inmediatez como tercera condicion de la guia: dos o tres minutos entre reuniones, holgura en el calendario, nada guardado para la reunion uno a uno, y ningun trabajo devuelto a un agujero negro | castellano | - |
+| 2026-09-17 | dar_guia_acto_seis_consejos | otro_idioma | give feedback immediately | ingles | - |
+| 2026-09-17 | dar_guia_acto_seis_consejos | otro_idioma | guidance has a short half-life | ingles | - |
+| 2026-09-17 | dar_guia_acto_seis_consejos | otro_idioma | avoid black holes | ingles | - |
+| 2026-09-17 | elegir_medio_dar_guia_jerarquia_modos | nombre_largo | El medio como cuarta condicion de la guia: en persona primero, y si no, inmediatez contra presencia, videollamada, telefono, y el correo con copia a todos prohibido para la critica | castellano | - |
+| 2026-09-17 | elegir_medio_dar_guia_jerarquia_modos | otro_idioma | in person (if possible) | ingles | - |
+| 2026-09-17 | elegir_medio_dar_guia_jerarquia_modos | otro_idioma | hierarchy of modes | ingles | - |
+| 2026-09-17 | elegir_medio_dar_guia_jerarquia_modos | otro_idioma | Reply All do's and don'ts | ingles | - |
+| 2026-09-17 | elogiar_publico_criticar_privado_sus_tres_matices | nombre_largo | La regla general del elogio publico y la critica privada, la frontera entre correccion y critica, la adaptacion al gusto de cada uno, y el elogio publico explicado como aprendizaje del grupo | castellano | - |
+| 2026-09-17 | elogiar_publico_criticar_privado_sus_tres_matices | otro_idioma | praise in public, criticize in private | ingles | - |
+| 2026-09-17 | elogiar_publico_criticar_privado_sus_tres_matices | otro_idioma | group learning | ingles | - |
+| 2026-09-17 | evitar_personalizar_guia_aceptar_personal | nombre_largo | La diferencia entre cuidar personalmente y personalizar: el error fundamental de atribucion, decir eso esta mal en vez de tu estas mal, y por que no te lo tomes como algo personal es peor que inutil | castellano | - |
+| 2026-09-17 | evitar_personalizar_guia_aceptar_personal | otro_idioma | don't personalize | ingles | - |
+| 2026-09-17 | evitar_personalizar_guia_aceptar_personal | otro_idioma | fundamental attribution error | ingles | - |
+| 2026-09-17 | medir_guia_propia_pegatinas_marco | nombre_largo | La guia sobre tu guia: el marco impreso junto a tu mesa, una pegatina por color y por cuadrante, la cuenta semanal, y que hacer segun donde caigan | castellano | - |
+| 2026-09-17 | medir_guia_propia_pegatinas_marco | otro_idioma | gauge your impromptu guidance, get a baseline, track your improvements | ingles | - |
+| 2026-09-17 | practicar_franqueza_radical_jefe_propio | nombre_largo | La franqueza radical hacia arriba: pedir guia antes de darla, pedir permiso para darla, probar con algo pequenio y benigno, y leer la reaccion para decidir si sigues o te vas | castellano | - |
+| 2026-09-17 | practicar_franqueza_radical_jefe_propio | otro_idioma | being Radically Candid with your boss | ingles | - |
+| 2026-09-17 | practicar_franqueza_radical_jefe_propio | otro_idioma | Listen, Challenge, Commit | ingles | - |
+| 2026-09-17 | comprobar_criticas_hombre_mujeres_equipo | nombre_largo | Lo que puede hacer un jefe que teme la politica de genero o el llanto: explicar el marco, decir la frase, y pedir que midan su elogio y su critica | castellano | - |
+| 2026-09-17 | comprobar_criticas_hombre_mujeres_equipo | otro_idioma | Men: don't pull punches with women | ingles | - |
+| 2026-09-17 | exigir_critica_jefe_reticente | nombre_largo | Lo que puede hacer quien sospecha que su jefe se contiene: hacerselo saber, decir una de las tres frases, parar, contar hasta seis y aguantar la incomodidad | castellano | - |
+| 2026-09-17 | exigir_critica_jefe_reticente | otro_idioma | Women: demand criticism | ingles | - |
+| 2026-09-17 | revisar_critica_mujer_agresiva_cuatro_tacticas | nombre_largo | Las cuatro tacticas para no caer en la trampa de competencia contra simpatia cuando sientes que una mujer esta siendo demasiado agresiva: cambiar el genero, concretar, vigilar el lenguaje y no quedarse en se mas simpatica | castellano | - |
+| 2026-09-17 | revisar_critica_mujer_agresiva_cuatro_tacticas | otro_idioma | Men and women: things to think about when you feel a woman is being too aggressive | ingles | - |
+| 2026-09-17 | responder_critica_abrasiva_cuatro_reglas | nombre_largo | Las cuatro reglas generales para una mujer a la que le dicen que es abrasiva: no dejar de desafiar directamente, matar al angel de la oficina, seguir abierta a haberse pasado, y no hacer lo contrario de la pelota; mas no descartar a los hombres | castellano | - |
+| 2026-09-17 | responder_critica_abrasiva_cuatro_reglas | otro_idioma | Things to think about if you're a woman who's being told, You're abrasive | ingles | - |
+| 2026-09-17 | responder_critica_abrasiva_cuatro_reglas | otro_idioma | four rules of thumb | ingles | - |
+| 2026-09-17 | entregar_evaluacion_formal_desempenio_nueve_consejos | nombre_largo | Los nueve consejos para dar bien una evaluacion formal de desempenio: sin sorpresas, sin juicio unilateral, pidiendo antes la tuya, por escrito, con el momento decidido, cincuenta minutos y no seguidas, mitad diagnostico y mitad plan, con revisiones programadas, y la nota despues | castellano | - |
+| 2026-09-17 | entregar_evaluacion_formal_desempenio_nueve_consejos | otro_idioma | FORMAL PERFORMANCE REVIEWS | ingles | - |
+| 2026-09-17 | entregar_evaluacion_formal_desempenio_nueve_consejos | otro_idioma | performance review | ingles | - |
+| 2026-09-17 | impedir_punialadas_espalda_equipo | nombre_largo | Eres un jefe, no un diplomatico: la diplomacia de ida y vuelta no te sirve, y escuchar a uno hablar de otro es remover la olla y no ser empatico | castellano | - |
+| 2026-09-17 | impedir_punialadas_espalda_equipo | otro_idioma | prevent backstabbing | ingles | - |
+| 2026-09-17 | impedir_punialadas_espalda_equipo | otro_idioma | shuttle diplomacy won't work for you | ingles | - |
+| 2026-09-17 | fomentar_guia_reciproca_companieros | nombre_largo | La guia entre companieros: la conversacion en persona antes que la herramienta, el premio que nomina el ganador anterior, la metedura de pata auto nominada con perdon automatico, y la medicion entre pares | castellano | - |
+| 2026-09-17 | fomentar_guia_reciproca_companieros | otro_idioma | peer guidance | ingles | - |
+| 2026-09-17 | fomentar_guia_reciproca_companieros | otro_idioma | Whoops-a-Daisy | ingles | - |
+| 2026-09-17 | fomentar_guia_reciproca_companieros | otro_idioma | peer gauging | ingles | - |
+| 2026-09-17 | conducir_reuniones_salto_nivel_diez_reglas | nombre_largo | Las diez reglas generales para que una reunion de salto de nivel sirva a la cultura de guia y no se convierta en una sesion de quejas ni en un ataque al jefe del que se habla | castellano | - |
+| 2026-09-17 | conducir_reuniones_salto_nivel_diez_reglas | otro_idioma | SPEAKING TRUTH TO POWER | ingles | - |
+| 2026-09-17 | conducir_reuniones_salto_nivel_diez_reglas | otro_idioma | skip level meetings | ingles | - |
+| 2026-09-17 | resolver_dudas_frecuentes_reuniones_salto_nivel | nombre_largo | Las cuatro preguntas que mas se hacen los jefes de jefes que estrenan las reuniones de salto de nivel, con la respuesta que el texto da a cada una | castellano | - |
+| 2026-09-17 | resolver_dudas_frecuentes_reuniones_salto_nivel | otro_idioma | Skip level meeting FAQs | ingles | - |
+| 2026-09-17 | desplegar_tres_conversaciones_carrera | nombre_largo | La cabeza de la serie de las tres conversaciones de carrera: con quien se tienen, para que, donde caben, cuando se hacen y quien mas tiene que aprender a tenerlas | castellano | - |
+| 2026-09-17 | desplegar_tres_conversaciones_carrera | otro_idioma | CAREER CONVERSATIONS | ingles | - |
+| 2026-09-17 | desplegar_tres_conversaciones_carrera | otro_idioma | a succession of three forty-five-minute conversations | ingles | - |
+| 2026-09-17 | conversar_historia_vida_descubrir_motivadores | nombre_largo | La primera conversacion de carrera, la de la historia de vida, con su apertura literal, el foco en los momentos de cambio y el limite de no presionar donde la persona senializa incomodidad | castellano | - |
+| 2026-09-17 | conversar_historia_vida_descubrir_motivadores | otro_idioma | Conversation one: life story | ingles | - |
+| 2026-09-17 | conversar_historia_vida_descubrir_motivadores | otro_idioma | CAREER CONVERSATIONS | ingles | - |
+| 2026-09-17 | conversar_suenios_cruzar_habilidades | nombre_largo | La segunda conversacion de carrera, la de los suenios, con la pregunta de arranque que sustituye a las preguntas al uso, los tres a cinco suenios, el cuadro de suenios contra habilidades y la comprobacion contra los valores | castellano | - |
+| 2026-09-17 | conversar_suenios_cruzar_habilidades | otro_idioma | The second conversation: dreams | ingles | - |
+| 2026-09-17 | trazar_plan_dieciocho_meses_aprendizaje | nombre_largo | La tercera conversacion de carrera, la del plan de dieciocho meses, con las cuatro preguntas que la persona se hace a si misma y la lista de cambios de papel, maestros y formacion con quien hace que y para cuando | castellano | - |
+| 2026-09-17 | trazar_plan_dieciocho_meses_aprendizaje | otro_idioma | Conversation three: eighteen-month plan | ingles | - |
+| 2026-09-17 | armar_plan_anual_crecimiento_equipo | nombre_largo | El plan anual de gestion del crecimiento del equipo, con sus cuatro etapas encadenadas por el propio texto: poner los nombres en las casillas, buscar una mirada de fuera, escribir los planes de crecimiento de tres a cinco puntos, y comprobar que no eres un corrector blando ni duro y que la equidad se sostiene entre niveles | castellano | - |
+| 2026-09-17 | armar_plan_anual_crecimiento_equipo | otro_idioma | GROWTH MANAGEMENT | ingles | - |
+| 2026-09-17 | armar_plan_anual_crecimiento_equipo | otro_idioma | growth-management plan | ingles | - |
+| 2026-09-17 | montar_proceso_contratacion_reducir_sesgo | nombre_largo | El proceso de contratacion con sus practicas rotuladas una a una por el libro: la descripcion del puesto escrita por quien contrata, el filtro previo de habilidades a ciegas, el mismo comite para varios candidatos, las entrevistas informales, los apuntes escritos en el momento, y la reunion presencial de decision con su sesgo hacia el no | castellano | - |
+| 2026-09-17 | montar_proceso_contratacion_reducir_sesgo | otro_idioma | HIRING: YOUR MENTALITY AND YOUR PROCESS | ingles | - |
+| 2026-09-17 | montar_proceso_contratacion_reducir_sesgo | otro_idioma | Process | ingles | - |
+| 2026-09-17 | facilitar_despido_tres_cosas | nombre_largo | La cabeza de la serie de tres del despido: los dos errores opuestos de las empresas, la premisa de que despedir es duro y debe serlo, y las tres cosas que lo vuelven mucho mas facil para la persona despedida, para ti y para tu equipo | castellano | - |
+| 2026-09-17 | facilitar_despido_tres_cosas | otro_idioma | FIRING | ingles | - |
+| 2026-09-17 | facilitar_despido_tres_cosas | otro_idioma | A necessary evil | ingles | - |
+| 2026-09-17 | facilitar_despido_tres_cosas | otro_idioma | if you do three things | ingles | - |
+| 2026-09-17 | admitir_pronto_mal_desempenio_cuatro_razones | nombre_largo | La primera de las tres cosas que facilitan un despido: no esperar demasiado a admitir el bajo desempenio, con el ejercicio de las casillas que demuestra la resistencia y las cuatro razones numeradas por el texto para forzarse a identificarlo pronto | castellano | - |
+| 2026-09-17 | admitir_pronto_mal_desempenio_cuatro_razones | otro_idioma | Don't wait too long | ingles | - |
+| 2026-09-17 | calibrar_decision_despido_documentarla | nombre_largo | La segunda de las tres cosas que facilitan un despido: no tomar la decision unilateralmente, con los tres sitios donde se pide ayuda y la regla de que no basta pedir consejo, hay que conseguir que editen lo que escribes | castellano | - |
+| 2026-09-17 | calibrar_decision_despido_documentarla | sigla | PIP | castellano | - |
+| 2026-09-17 | calibrar_decision_despido_documentarla | otro_idioma | Don't make the decision unilaterally | ingles | - |
+| 2026-09-17 | calibrar_decision_despido_documentarla | otro_idioma | Performance Improvement Plan | ingles | - |
+| 2026-09-17 | sopesar_consejo_legal_despedir_humildad | nombre_largo | La tercera de las tres cosas que facilitan un despido: que te importe de verdad la persona, no quedarte atrapada en el consejo legal y de recursos humanos, preguntar cual es el riesgo de NO seguirlo, y despedir con humildad porque el problema es el puesto y no la persona | castellano | - |
+| 2026-09-17 | sopesar_consejo_legal_despedir_humildad | otro_idioma | Give a damn | ingles | - |
+| 2026-09-17 | contactar_despedido_mes_despues | nombre_largo | El seguimiento del despido: escribir al mes, mantener la oreja pegada al suelo por si aparece un puesto que le encaje, tender la mano aunque no tengas nada que ofrecer, y no insistir ni culparla si no contesta | castellano | - |
+| 2026-09-17 | contactar_despedido_mes_despues | otro_idioma | Follow up | ingles | - |
+| 2026-09-17 | calibrar_ascensos_evitar_politica | nombre_largo | La reunion de calibracion de ascensos: por que hace falta, que hizo el comite de ascensos de ingenieria de Google y por que no es perfecto, y los consejos, rotulados uno a uno por el libro, para que la politica no arruine tu propia reunion de calibracion | castellano | - |
+| 2026-09-17 | calibrar_ascensos_evitar_politica | otro_idioma | PROMOTIONS | ingles | - |
+| 2026-09-17 | calibrar_ascensos_evitar_politica | otro_idioma | Be fair | ingles | - |
+| 2026-09-17 | calibrar_ascensos_evitar_politica | otro_idioma | calibration meetings | ingles | - |
+| 2026-09-17 | evitar_obsesion_ascenso_estatus | nombre_largo | Como anunciar o no anunciar los ascensos: el correo de celebracion que no se manda, el cambio de papel que si se anuncia porque no todo cambio de papel es un ascenso, y el elogio en publico apuntado al trabajo y no al estatus | castellano | - |
+| 2026-09-17 | evitar_obsesion_ascenso_estatus | otro_idioma | Avoid promotion/status obsession | ingles | - |
+| 2026-09-17 | evitar_obsesion_ascenso_estatus | otro_idioma | REWARD YOUR ROCK STARS | ingles | - |
+| 2026-09-17 | reconocer_excelencia_trayectoria_gradual | nombre_largo | Las vias para reconocer a quien hace un trabajo excelente en trayectoria gradual sin ascenderla: el agradecimiento en persona y por escrito, el papel de experto de referencia con su condicion de honor y no de castigo, y la presentacion publica a los colegas | castellano | - |
+| 2026-09-17 | reconocer_excelencia_trayectoria_gradual | otro_idioma | Say thank-you | ingles | - |
+| 2026-09-17 | reconocer_excelencia_trayectoria_gradual | otro_idioma | Gurus | ingles | - |
+| 2026-09-17 | reconocer_excelencia_trayectoria_gradual | otro_idioma | Public presentations | ingles | - |
+| 2026-09-17 | desplegar_plan_orden_operaciones_franqueza_radical | nombre_largo | El orden de operaciones para poner en practica la franqueza radical en tu equipo: que hacer primero, que en paralelo, donde pararse a evaluar y que viene despues | castellano | - |
+| 2026-09-17 | desplegar_plan_orden_operaciones_franqueza_radical | otro_idioma | GETTING STARTED | ingles | - |
+| 2026-09-17 | desplegar_plan_orden_operaciones_franqueza_radical | otro_idioma | order of operations | ingles | - |
+| 2026-09-18 | contar_historias_propias_explicar_franqueza_radical | nombre_largo | Compartir tus historias: la primera etapa del orden de operaciones, explicada con tus palabras y con tu version de la historia del um o la de Bob | castellano | - |
+| 2026-09-18 | contar_historias_propias_explicar_franqueza_radical | otro_idioma | SHARE YOUR STORIES | ingles | - |
+| 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | nombre_largo | La cabeza de las dos practicas del epilogo: contar historias y los juegos de papeles, con las dos consciencias que mejoran | castellano | - |
+| 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | otro_idioma | YOU | ingles | - |
+| 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | otro_idioma | Improve using role plays and storytelling | ingles | - |
+| 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | otro_idioma | self-awareness | ingles | - |
+| 2026-09-18 | mejorar_consciencia_propia_relacional_dos_practicas | otro_idioma | relational awareness | ingles | - |
+| 2026-09-18 | contar_cuatro_historias_propias_ver_hueco_intencion | nombre_largo | Cual es tu historia: el ejercicio de taller de las cuatro historias, la de franqueza radical mas las tres de las otras tres casillas del marco | castellano | - |
+| 2026-09-18 | contar_cuatro_historias_propias_ver_hueco_intencion | otro_idioma | Practice: What's your story? | ingles | - |
+| 2026-09-18 | contar_cuatro_historias_propias_ver_hueco_intencion | otro_idioma | Radical Candor story | ingles | - |
+| 2026-09-18 | contar_cuatro_historias_propias_ver_hueco_intencion | otro_idioma | Obnoxious Aggression | ingles | - |
+| 2026-09-18 | contar_cuatro_historias_propias_ver_hueco_intencion | otro_idioma | Ruinous Empathy | ingles | - |
+| 2026-09-18 | contar_cuatro_historias_propias_ver_hueco_intencion | otro_idioma | Manipulative Insincerity | ingles | - |
+| 2026-09-18 | practicar_triangulo_critica_tres_papeles | nombre_largo | El triangulo de la critica: la version de juego de papeles de los autores, con sus tres papeles y el marco de dos por dos como cuaderno del observador | castellano | - |
+| 2026-09-18 | practicar_triangulo_critica_tres_papeles | otro_idioma | Practice: The Feedback Triangle | ingles | - |
+| 2026-09-18 | practicar_triangulo_critica_tres_papeles | otro_idioma | role play | ingles | - |
+| 2026-09-18 | pedir_critica_primero_crear_seguridad_psicologica | nombre_largo | El orden de operaciones de la franqueza radical, sus cinco pasos numerados, y la razon medida de por que pedir critica va el primero | castellano | - |
+| 2026-09-18 | pedir_critica_primero_crear_seguridad_psicologica | otro_idioma | SOLICIT CRITICISM FIRST | ingles | - |
+| 2026-09-18 | pedir_critica_primero_crear_seguridad_psicologica | otro_idioma | order of operations | ingles | - |
+| 2026-09-18 | pedir_critica_primero_crear_seguridad_psicologica | otro_idioma | psychological safety | ingles | - |
+| 2026-09-18 | elegir_pregunta_recurrente_pedir_critica | nombre_largo | La pregunta recurrente que de verdad te imaginas haciendo: sus cuatro atributos, las preguntas de ejemplo de los talleres y su ensayo | castellano | - |
+| 2026-09-18 | elegir_pregunta_recurrente_pedir_critica | otro_idioma | A GO-TO QUESTION YOU CAN ACTUALLY IMAGINE ASKING | ingles | - |
+| 2026-09-18 | elegir_pregunta_recurrente_pedir_critica | otro_idioma | go-to question | ingles | - |
+| 2026-09-18 | resolver_dudas_frecuentes_pedir_critica | nombre_largo | Las preguntas frecuentes del epilogo sobre pedir critica: la pregunta que se queda rancia, la critica que no puedes arreglar, el jefe joven con gente mayor y el miedo a empezar | castellano | - |
+| 2026-09-18 | resolver_dudas_frecuentes_pedir_critica | otro_idioma | FAQ | ingles | - |
+| 2026-09-18 | abrazar_incomodidad_silencio_contar_seis | nombre_largo | Abraza la incomodidad, puesto en acto: el silencio que sigue a tu pregunta y la practica de contar hasta seis | castellano | - |
+| 2026-09-18 | abrazar_incomodidad_silencio_contar_seis | otro_idioma | EMBRACE THE DISCOMFORT | ingles | - |
+| 2026-09-18 | abrazar_incomodidad_silencio_contar_seis | otro_idioma | Practice: Count to six in your head | ingles | - |
+| 2026-09-18 | escuchar_entender_critica_dominar_defensa | nombre_largo | Escucha con intencion de entender, no de responder: que hacer con la respuesta de pelea, huida o bloqueo, y el ejercicio de los tres minutos | castellano | - |
+| 2026-09-18 | escuchar_entender_critica_dominar_defensa | otro_idioma | LISTEN WITH THE INTENT TO UNDERSTAND, NOT TO REPLY | ingles | - |
+| 2026-09-18 | escuchar_entender_critica_dominar_defensa | otro_idioma | Practice: Listening | ingles | - |
+| 2026-09-18 | premiar_franqueza_hacer_escucha_tangible | nombre_largo | Haz tangible la escucha: premia la franqueza, ensenia tu trabajo, y premia tambien la critica con la que no estas de acuerdo | castellano | - |
+| 2026-09-18 | premiar_franqueza_hacer_escucha_tangible | otro_idioma | MAKE LISTENING TANGIBLE: REWARD THE CANDOR | ingles | - |
+| 2026-09-18 | premiar_franqueza_hacer_escucha_tangible | otro_idioma | Practice: Make Listening Tangible | ingles | - |
+| 2026-09-18 | premiar_franqueza_hacer_escucha_tangible | otro_idioma | Practice: Reward criticism you disagree with | ingles | - |
+| 2026-09-18 | integrar_peticion_critica_rutina_existente | nombre_largo | Metelo en tu horario existente: el habito regular de pedir critica, por que verlo una vez no basta, y donde encaja | castellano | - |
+| 2026-09-18 | integrar_peticion_critica_rutina_existente | otro_idioma | BUILD IT INTO YOUR EXISTING SCHEDULE | ingles | - |
+| 2026-09-18 | integrar_peticion_critica_rutina_existente | otro_idioma | Practice: add soliciting feedback to the end of your 1:1 agenda | ingles | - |
+| 2026-09-18 | dar_elogio_disciplina_igual_critica | nombre_largo | El elogio con disciplina: el acelerador y el freno, por que el elogio vago patrocina, y el ejercicio de dar un elogio concreto a un companiero | castellano | - |
+| 2026-09-18 | dar_elogio_disciplina_igual_critica | otro_idioma | PRAISE: FOCUS ON THE GOOD STUFF. REALLY. | ingles | - |
+| 2026-09-18 | dar_elogio_disciplina_igual_critica | otro_idioma | APPLY THE SAME DISCIPLINE TO PRAISE THAT YOU DO TO CRITICISM | ingles | - |
+| 2026-09-18 | dar_elogio_disciplina_igual_critica | otro_idioma | Praise Practice | ingles | - |
+| 2026-09-18 | medir_critica_respuesta_oyente_brujula | nombre_largo | Medir la critica: la franqueza radical se mide en el oido del otro y no en tu boca, y que hacer ante la tristeza, ante el enfado y ante quien no te oye | castellano | - |
+| 2026-09-18 | medir_critica_respuesta_oyente_brujula | otro_idioma | GAUGE CRITICISM | ingles | - |
+| 2026-09-18 | medir_critica_respuesta_oyente_brujula | otro_idioma | listen-challenge-commit | ingles | - |
+| 2026-09-18 | medir_critica_respuesta_oyente_brujula | otro_idioma | It's not mean, it's clear | ingles | - |
+| 2026-09-18 | montar_equipo_gestion_desempenio_revisar_sistema | nombre_largo | Los pasos que el texto enumera para empezar a rehacer el sistema de gestion del desempenio, del equipo con sus dos perfiles al ciclo de revision cada tres anios | castellano | - |
+| 2026-09-18 | montar_equipo_gestion_desempenio_revisar_sistema | otro_idioma | steps for beginning the process of revamping your performance management system | ingles | - |
+| 2026-09-18 | recorrer_trece_elementos_proceso_evaluacion_formal | nombre_largo | Los elementos de un proceso formal de evaluacion de desempenio, de poner nota o no hasta ligero o pesado, nombrados uno a uno por el texto y numerados del uno al trece | castellano | - |
+| 2026-09-18 | recorrer_trece_elementos_proceso_evaluacion_formal | otro_idioma | elements of a formal performance review process | ingles | - |
+| 2026-09-18 | decidir_poner_nota_comunicar_proposito_limites | nombre_largo | El primero de los trece elementos: poner nota o no, con las tres pegas y los cuatro beneficios que el texto pone uno a uno | castellano | - |
+| 2026-09-18 | decidir_poner_nota_comunicar_proposito_limites | otro_idioma | rating or no rating | ingles | - |
+| 2026-09-18 | elegir_categorias_nota_palabras_propias_empresa | nombre_largo | El segundo de los trece elementos: las categorias de la nota, con el tope de tres o cuatro y las cuatro genericas resultados, trabajo en equipo, innovacion y eficiencia | castellano | - |
+| 2026-09-18 | elegir_categorias_nota_palabras_propias_empresa | otro_idioma | categories of ratings | ingles | - |
+| 2026-09-18 | escribir_escaleras_puesto_evitar_dos_extremos | nombre_largo | El tercero de los trece elementos: las escaleras de puesto, un mal necesario que se estropea tanto por demasiado especifico como por demasiado abstracto | castellano | - |
+| 2026-09-18 | escribir_escaleras_puesto_evitar_dos_extremos | otro_idioma | job ladders | ingles | - |
+| 2026-09-18 | fijar_cuatro_notas_calcular_nota_global | nombre_largo | El cuarto de los trece elementos: cuantas notas, con la regla de que solo saca la nota alta quien la saca en todas las categorias y de que una nota baja en una categoria tumba la global | castellano | - |
+| 2026-09-18 | fijar_cuatro_notas_calcular_nota_global | otro_idioma | number of ratings | ingles | - |
+| 2026-09-18 | elegir_palabras_nota_definirlas_empresa_entera | nombre_largo | El quinto de los trece elementos: el lenguaje de la nota, con las palabras que humanizan un proceso potencialmente alienante y la definicion breve de cada escalon | castellano | - |
+| 2026-09-18 | elegir_palabras_nota_definirlas_empresa_entera | otro_idioma | language of ratings | ingles | - |
+| 2026-09-18 | aplicar_consecuencias_nota_apoyar_fuerzas_persona | nombre_largo | El sexto de los trece elementos: las consecuencias de la nota sobre retribucion variable, ascensos y terminaciones, con la regla de que quien esta en la nota media no asciende y con el premio que no es solo dinero | castellano | - |
+| 2026-09-18 | aplicar_consecuencias_nota_apoyar_fuerzas_persona | otro_idioma | consequences of ratings | ingles | - |
+| 2026-09-18 | repartir_notas_publicar_reparto_esperado | nombre_largo | El septimo de los trece elementos: el reparto de notas, con los porcentajes que la autora ha encontrado en su experiencia y la advertencia de no dejar que una distribucion esperada te ciegue a la realidad | castellano | - |
+| 2026-09-18 | repartir_notas_publicar_reparto_esperado | otro_idioma | distribution of ratings | ingles | - |
+| 2026-09-18 | presionar_curva_notas_evitar_forzarla | nombre_largo | El octavo de los trece elementos: curva forzada o no, con las dos maneras de hacer trampa que la curva evita y las consecuencias no buscadas que trae | castellano | - |
+| 2026-09-18 | presionar_curva_notas_evitar_forzarla | otro_idioma | forced curve or no | ingles | - |
+| 2026-09-18 | calibrar_notas_reunion_jefes_pares | nombre_largo | El noveno de los trece elementos: la calibracion de notas, con sus dos razones, su parada dura y la comprobacion de si el reparto se tuerce por nivel de puesto | castellano | - |
+| 2026-09-18 | calibrar_notas_reunion_jefes_pares | otro_idioma | calibration of ratings | ingles | - |
+| 2026-09-18 | evaluar_desempenio_dos_veces_anio | nombre_largo | El decimo de los trece elementos: la frecuencia, con lo que pasa si no las haces nunca y lo que pasa si las haces cada trimestre | castellano | - |
+| 2026-09-18 | evaluar_desempenio_dos_veces_anio | otro_idioma | frequency | ingles | - |
+| 2026-09-18 | montar_evaluacion_360_grados_ligera_pares | nombre_largo | El undecimo de los trece elementos: proceso de trescientos sesenta grados o juicio unilateral del jefe, con el aligeramiento concreto de la evaluacion entre pares | castellano | - |
+| 2026-09-18 | montar_evaluacion_360_grados_ligera_pares | otro_idioma | 360-degree performance process or relying on a manager's unilateral assessment | ingles | - |
+| 2026-09-18 | hacer_critica_pares_transparente_ensenar_escribirla | nombre_largo | El duodecimo de los trece elementos: transparente o confidencial, con los dos beneficios y las dos pegas de la confidencialidad puestos uno a uno | castellano | - |
+| 2026-09-18 | hacer_critica_pares_transparente_ensenar_escribirla | otro_idioma | transparent or confidential | ingles | - |
+| 2026-09-18 | mantener_proceso_evaluacion_ligero_vigilar_crecimiento | nombre_largo | El decimotercero de los trece elementos: ligero o pesado, con la vigilancia activa del tiempo que el proceso consume y el impreso que se rellena en menos de treinta minutos | castellano | - |
+| 2026-09-18 | mantener_proceso_evaluacion_ligero_vigilar_crecimiento | otro_idioma | lightweight or heavyweight | ingles | - |
+| 2026-09-18 | revisar_tres_preguntas_valor_carrera | nombre_largo | Las tres preguntas del final de la Introduction: anadir valor real, estar enchufado a lo que pasa, y probar tu mismo lo nuevo | castellano | - |
+| 2026-09-18 | revisar_tres_preguntas_valor_carrera | otro_idioma | questions to ponder | ingles | - |
+| 2026-09-18 | revisar_tres_preguntas_valor_carrera | otro_idioma | adding real value | ingles | - |
+| 2026-09-18 | revisar_tres_preguntas_valor_carrera | otro_idioma | plugged in | ingles | - |

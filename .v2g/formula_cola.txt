@@ -1,0 +1,19 @@
+| par que la aduana levanto | senal 1 **como la mide la aduana** | senal 1 **sin el `resumen_teorico`** | caida |
+|---|---:|---:|---:|
+| `archivar_indicadores_resolver_problemas` con `construir_indicador_tendencia_patron` | 0,384 | 0,289 | **-0,095** |
+| `archivar_indicadores_resolver_problemas` con `revisar_tres_preguntas_valor_carrera` | 0,369 | 0,179 | **-0,190** |
+| `construir_grafico_escalonado_pronosticos` con `construir_indicador_tendencia_patron` | 0,354 | 0,236 | **-0,117** |
+| `construir_grafico_escalonado_pronosticos` con `elegir_fabricar_pedido_pronostico` | 0,354 | 0,255 | **-0,099** |
+| `construir_grafico_escalonado_pronosticos` con `emparejar_indicadores_efecto_contraefecto` | 0,363 | 0,291 | **-0,072** |
+| `construir_indicador_tendencia_patron` con `equilibrar_capacidad_personal_inventario_plazo` | 0,352 | 0,232 | **-0,120** |
+| `elegir_indicador_salida_trabajo_administrativo` con `evaluar_directivo_resultados_fortaleza` | 0,184 | 0,267 | **+0,083** |
+| `elegir_indicador_salida_trabajo_administrativo` con `emparejar_indicadores_efecto_contraefecto` | 0,355 | 0,227 | **-0,128** |
+| `emparejar_indicadores_efecto_contraefecto` con `revisar_tres_preguntas_valor_carrera` | 0,354 | 0,225 | **-0,129** |
+
+PARES DISTINTOS MEDIDOS                         : 9
+UMBRAL DE LA SENAL 1, QUE NO TOCO NI PROPONGO MOVER: 0,35
+PARES QUE BAJAN AL QUITAR EL RESUMEN            : 8 de 9
+PARES QUE DEJARIAN DE LEVANTARSE                : 8 de 9
+
+ESTO NO ES UNA PROPUESTA DE UMBRAL NI DE CAMBIO DE FICHA. Es la medida que me
+hacia falta para escribir la razon de cada veredicto, y se publica entera.

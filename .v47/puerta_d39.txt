@@ -1,0 +1,3 @@
+    $ python -c "..."   sobre config/frentes.json
+cerrados_en_extraccion : {'smart_who': {'cita': 'ACTA 8 seccion 10'}, 'zhuo_manager': {'cita': 'ACTA 13 seccion 8.1'}, 'scott_radical_candor': {'cita': 'ACTA 24'}}
+grove_high_output CERRADO EN EXTRACCION: False

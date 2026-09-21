@@ -1,0 +1,25 @@
+$ python forja.py corregir --nodo recorrer_rueda_conscientemente_cultura_equipo --anade "CORRECCION DECLARADA, 17 sep 2026, vuelta 33 TAREA 1, ..." --razon "D.13, ..."
+
+CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+  nodo : recorrer_rueda_conscientemente_cultura_equipo
+  campo: resumen_teorico
+  el texto viejo SIGUE ENTERO: 4303 caracteres, ninguno borrado
+  se aniaden 639 caracteres al final
+  huella antes  : f2039c320fabe9f9
+  huella despues: 2ac793d46c4f5a5a
+
+GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: recorrer_rueda_conscientemente_cultura_equipo
+  razon en bitacora/VEREDICTOS.jsonl
+
+$ python forja.py anotar --linea 396 --anade "CORRECCION DECLARADA, 17 sep 2026, vuelta 33 TAREA 1, ..." --razon "D.13, ..."
+
+ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+  sede : bitacora/VEREDICTOS.jsonl
+  linea: 396
+  veredicto: CORREGIDO (NO se toca)
+  par      : recorrer_rueda_conscientemente_cultura_equipo contra recorrer_rueda_conscientemente_cultura_equipo
+  la razon vieja SIGUE ENTERA: 275 caracteres, ninguno borrado
+  se aniaden 641 caracteres al final de la razon
+  lineas de la bitacora tocadas: 1 (la 396). Las otras 396, intactas.
+
+ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 396.

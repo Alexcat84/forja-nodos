@@ -1,0 +1,28 @@
+$ git ls-files procesos/
+(vacio = nada versionado)
+
+$ grep -n procesos .gitignore
+32:# Commiteado, un checkout entrega un cerrojo de un proceso que ya no existe y la
+34:*.cerrojo
+39:procesos/
+
+$ git log --oneline --name-only b698aef..HEAD -- dataset/ procesos/ bitacora/ censos/ | head -40
+3dbc901 V.34 CIERRE: cap_09 entra 15 de 15 del tramo, las tres tareas cerradas, y una PARADA en el cierre de D.41 que no es de mi sede
+bitacora/VEREDICTOS.jsonl
+dataset/nodos.jsonl
+1a356dd V.34 TAREA 2 (3 de 3): cierra el tramo de cap_09 con 15 de 15 insertados, 282 a 297 nodos
+bitacora/VEREDICTOS.jsonl
+censos/atribuciones.md
+censos/denominaciones.md
+dataset/nodos.jsonl
+2cce7b5 V.34 TAREA 2 (2 de N): entran cuatro mas de cap_09, con el par que la senial 3 levanta a 0,867 leido y juzgado SANO
+bitacora/VEREDICTOS.jsonl
+censos/denominaciones.md
+dataset/nodos.jsonl
+e484b6e V.34 TAREA 2 (1 de N): entran los siete primeros de cap_09 por el orden del libro, con tres veredictos SANO razonados
+bitacora/VEREDICTOS.jsonl
+censos/denominaciones.md
+dataset/nodos.jsonl
+1054e06 V.34 TAREA 1: el nodo que declaraba tres capitulos sin minar, corregido por D.13 contra la medicion del dia, y la especie barrida entera en los 282 nodos
+bitacora/VEREDICTOS.jsonl
+dataset/nodos.jsonl

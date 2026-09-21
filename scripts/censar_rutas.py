@@ -28,6 +28,15 @@ LAS TRES FORMAS, Y SOLO TRES:
                                           y se exige AL MENOS UNA coincidencia
                                           con contenido. Sin coincidencias,
                                           tumba.
+  (d) NO ES SEDE ........................ la celda nombra la ruta para decir que
+                                          NO sostiene nada, y lo declara como
+                                              NO ES SEDE: <motivo>
+                                          Nace el 19 sep 2026 del choque con
+                                          D.57: una fase ciega que declara su
+                                          limitacion nombra el fichero que no
+                                          pudo comprobar, y eso NO es publicar
+                                          evidencia. Sin esta forma, cumplir
+                                          D.57 tumbaba el sello.
 
 Mas una lista FIJA en `config/sedes_vacias.json` con las sedes que una regla
 escrita manda dejar vacias (`PROMPT_SIGUIENTE.md` en una parada). **Esa lista es
@@ -46,6 +55,7 @@ eso como caida seria inventar tres caidas donde no hay ninguna.
 """
 
 import glob as _glob
+import fnmatch
 import io
 import json
 import os
@@ -66,6 +76,28 @@ DOCUMENTOS = (os.path.join("docs", "loop", "REPORTE.md"),
 
 EN_COMILLAS = re.compile(r"`([^`\n]+)`")
 MARCA_VACIA = re.compile(r"VACIA A PROPOSITO\s*:\s*(\S.*)")
+
+# LA CUARTA FORMA, Y NACE DE UN CHOQUE ENTRE DOS REGLAS (19 sep 2026).
+#
+# `D.57` (18 sep) manda a la fase ciega ESCRIBIR LA LIMITACION en vez de la
+# afirmacion cuando no puede comprobar algo. La primera ciega que lo cumplio escribio,
+# en una seccion titulada LO QUE NO PUEDO COMPROBAR:
+#
+#     3. Si el reporte publica `.v45/informe_d021.txt` como prueba de una corrida.
+#        Mido que tiene 0 bytes; no puedo saber si esta publicada como ruta de
+#        evidencia.
+#
+# **Y EL CENSO LA TUMBO POR ESO.** Leyo esa mencion como una ruta publicada como sede
+# de una cifra, que es lo que `D.42` vigila, y el sello no se acepto. La vuelta no pudo
+# cerrar **por cumplir la regla de ayer**.
+#
+# LA DISTINCION QUE FALTABA: una ruta puede aparecer en una celda **sin ser la sede de
+# nada**. Cuando la cifra es SOBRE la ruta (*mido que tiene 0 bytes*) y no ESTA EN la
+# ruta, la celda no publica evidencia: publica una limitacion. Se declara igual que las
+# otras tres formas, **en la misma celda y a la vista de quien lee la cifra**:
+#
+#     NO ES SEDE: <motivo>
+MARCA_NO_SEDE = re.compile(r"NO ES SEDE\s*:\s*(\S.*)")
 MARCA_PATRON = re.compile(r"PATRON\s*:\s*`?([^`\s|]+)`?")
 GLOB = "*?["
 
@@ -74,6 +106,14 @@ EXTENSIONES = (".txt", ".out", ".json", ".jsonl", ".py", ".md", ".log", ".sh")
 # un molde, `!fuentes/...` es la mitad de un `find`, y `.md` a secas es una
 # extension suelta. Contarlos seria inventar caidas y enseñar a no mirar.
 NO_ES_RUTA = re.compile(r"[<>!$\"'()]")
+
+# LAS SEDES EXENTAS **POR MOMENTO**: solo mientras la fase ciega esta abierta.
+EXENTAS_EN_FASE_CIEGA = (
+    ("docs/loop/APERTURA_CIEGA.md",
+     "La fase ciega la esta escribiendo ahora mismo: mientras el auditor ciego no la "
+     "ha cerrado, citarla como sede no publica una ruta falsa. Fuera de la fase ciega "
+     "SIGUE siendo sede leida por el censo y el tallado (17 sep 2026, punto 3)."),
+)
 
 
 def _es_artefacto(ruta):
@@ -101,12 +141,64 @@ def _es_artefacto(ruta):
     return comun.es_artefacto_de_maquina(partes[-1], "/".join(partes[:-1]))
 
 
-def _sedes_exentas():
+def _config_de_sedes():
     try:
-        datos = json.loads(io.open(RUTA_SEDES, encoding="utf-8").read())
+        return json.loads(io.open(RUTA_SEDES, encoding="utf-8").read())
     except (IOError, ValueError):
         return {}
-    return dict((s["ruta"], s.get("motivo", "")) for s in datos.get("sedes", []))
+
+
+def _sedes_exentas():
+    return dict((s["ruta"], s.get("motivo", ""))
+                for s in _config_de_sedes().get("sedes", []))
+
+
+def _patrones_exentos():
+    """LOS PATRONES, POR LA LECCION DE `D.33`.
+
+    Una sede cuyo NOMBRE depende de la linea (`CREDITO_serial.jsonl`,
+    `CREDITO_grove_high_output.jsonl`) **no cabe en una lista fija sin acordarse de
+    anadir la siguiente**, y esta casa ya pago tres veces que **un nombre que hay que
+    acordarse de anadir protege hasta el dia en que nace otro.**
+    """
+    return [(p["patron"], p.get("motivo", ""))
+            for p in _config_de_sedes().get("patrones", [])]
+
+
+def fase_ciega_abierta(raiz=None):
+    """Cierto si la fase ciega esta abierta AHORA MISMO.
+
+    SE MIDE POR AUSENCIA DE `REPORTE.md`, y no por una marca que alguien tenga que
+    poner: el arnes **retira** ese fichero del arbol mientras el auditor ciego trabaja
+    (`D.34.2`) y lo devuelve al terminar. Su ausencia **es** la fase ciega, medida en el
+    unico sitio donde no se puede fingir.
+    """
+    return not os.path.exists(os.path.join(raiz or RAIZ, "docs", "loop", "REPORTE.md"))
+
+
+def _exenta(ruta, exentas=None, patrones=None, raiz=None):
+    """`(True, motivo)` si esa ruta esta exenta por lista fija, patron o momento."""
+    exentas = _sedes_exentas() if exentas is None else exentas
+    if ruta in exentas:
+        return True, exentas[ruta]
+
+    # LA EXENCION DE MOMENTO, Y ES DE MOMENTO Y NO DE FICHERO (17 sep 2026, punto 3).
+    #
+    # `docs/loop/APERTURA_CIEGA.md` queda exento SOLO mientras la fase ciega esta
+    # abierta, porque entonces **se esta escribiendo**: un acta que la cite como sede
+    # pone el censo en rojo por un fichero que aun no existe, y con el la prueba de
+    # aceptacion entera. **Es ruido, no dato, y se cura sola en cuanto se escribe.**
+    #
+    # FUERA DE LA FASE CIEGA SIGUE SIENDO SEDE LEIDA por el censo y por el tallado,
+    # como ya estaba decidido el 16 sep: era **la unica sede de cifra de esta casa que
+    # ninguna guarda leia**, y ya llevaba dos ejemplares encontrados a mano.
+    for aguja, motivo in EXENTAS_EN_FASE_CIEGA:
+        if ruta == aguja and fase_ciega_abierta(raiz):
+            return True, motivo
+    for patron, motivo in (_patrones_exentos() if patrones is None else patrones):
+        if fnmatch.fnmatch(ruta, patron):
+            return True, motivo
+    return False, ""
 
 
 def parece_ruta(cita):
@@ -251,6 +343,7 @@ def censar(documentos=None, raiz=None):
     """Devuelve (caidas, pasan). Una caida es un dict con su sitio y su motivo."""
     documentos = documentos or DOCUMENTOS
     exentas = _sedes_exentas()
+    patrones = _patrones_exentos()
     caidas, pasan = [], []
     for doc in documentos:
         entera = os.path.join(raiz or RAIZ, doc)
@@ -261,6 +354,19 @@ def censar(documentos=None, raiz=None):
         for numero, sitio, unidad in unidades_de(texto):
             marca = MARCA_VACIA.search(unidad)
             declarado = MARCA_PATRON.search(unidad)
+            # (d) NO ES SEDE: la celda nombra la ruta para decir que NO puede
+            # sostenerse en ella. Se mira ANTES que nada, porque si la celda declara
+            # que no es sede, no hay sede que medir.
+            no_sede = MARCA_NO_SEDE.search(unidad)
+            if no_sede:
+                for cita in EN_COMILLAS.findall(unidad):
+                    ruta = parece_ruta(cita)
+                    if ruta is not None:
+                        pasan.append({"documento": doc, "linea": numero,
+                                      "sitio": sitio, "ruta": ruta,
+                                      "forma": "NO ES SEDE",
+                                      "motivo": no_sede.group(1).strip()})
+                continue
             for cita in EN_COMILLAS.findall(unidad):
                 ruta = parece_ruta(cita)
                 if ruta is None or not es_sede(unidad, cita):
@@ -303,7 +409,7 @@ def censar(documentos=None, raiz=None):
                     continue
 
                 # (b) RUTA VACIA, o que no esta
-                if ruta in exentas or _es_artefacto(ruta):
+                if _exenta(ruta, exentas, patrones)[0] or _es_artefacto(ruta):
                     sitio_entero["forma"] = "vacia por protocolo (config/)"
                     pasan.append(sitio_entero)
                     continue

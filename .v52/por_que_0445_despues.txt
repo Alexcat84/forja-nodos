@@ -1,0 +1,11 @@
+  PAR                                  : fijar_duracion_lugar_reunion_individual  contra  fijar_frecuencia_reunion_individual_madurez_tarea
+  senial 1 TAL COMO LA ADUANA LA MIDE  : 0.630   (umbral 0,35; banda alta desde 0,40)
+  senial 1 SIN el resumen_teorico      : 0.205
+  senial 1 SOLO con los pasos          : 0.179
+
+  caracteres de resumen_teorico        : 11444 y 11944
+  caracteres de los pasos              : 1127 y 1319
+  el resumen es el  93 y el 91 por ciento del texto que la senial 1 compara
+
+  PASOS LITERALMENTE COMUNES A LOS DOS : 0
+  LINEAS DEL LIBRO QUE COMPARTEN       : 0   (candidato L37 y L39, vecino L33 y L35)

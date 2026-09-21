@@ -1,0 +1,5 @@
+$ python scripts/deuda.py --pagar d063 --vuelta 54 --como "..."
+PAGADA d063 en la vuelta 54
+
+$ python scripts/deuda.py --pagar d007 --vuelta 54 --como "..."
+PAGADA d007 en la vuelta 54

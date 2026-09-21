@@ -1,0 +1,12 @@
+$ grep -o "vecino [a-z_]*" .v61aud/informe_1_priorizar.txt   (el auditor de la ACTA 59, poblacion 439)
+vecino desarrollar_primer_curso_entrenamiento
+vecino responder_primer_aviso_renuncia_subordinado
+vecino gestionar_retencion_subordinado_valioso_renuncia
+vecino reciclar_empleado_ascendido_mas_alla_capacidad
+
+$ grep -o "vecino [a-z_]*" .v61ext/informe_1_priorizar.txt   (el extractor de la 61, poblacion 440)
+vecino pedir_critica_anonima_curso_entrenamiento_dictado
+vecino desarrollar_primer_curso_entrenamiento
+vecino responder_primer_aviso_renuncia_subordinado
+vecino gestionar_retencion_subordinado_valioso_renuncia
+vecino reciclar_empleado_ascendido_mas_alla_capacidad

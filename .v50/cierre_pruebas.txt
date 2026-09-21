@@ -1,0 +1,4 @@
+$ python tests/test_aceptacion.py
+OK (skipped=1)
+  total: 318 pruebas, 0 fallos, 0 errores
+real	1m37.000s

@@ -1,0 +1,7 @@
+BANDEJA DEL LOTE 4, POR CAPITULO (contado por mi de cuarentena/scott_radical_candor)
+  cap_09   candidatos= 5  pasos=  91
+  cap_10   candidatos=14  pasos= 206
+  cap_12   candidatos= 2  pasos=  50
+  cap_13   candidatos=12  pasos= 212
+  cap_14   candidatos=15  pasos= 174
+  TOTAL   candidatos=48  pasos=733

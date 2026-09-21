@@ -1,0 +1,15 @@
+$ ls fuentes/grove_high_output/ | wc -l    y    wc -w del libro entero
+18
+ 64862 total
+
+$ git rev-parse HEAD
+be2b6782f3728e3cfe28a7e2e7d05fba4013063e
+
+$ git ls-tree HEAD docs/loop/ACTA_AUDITOR.md   (la huella que el prompt me entrega)
+100644 blob f6c76f63bd9b6aeea7b1d5a9d485977d2d61f593	docs/loop/ACTA_AUDITOR.md
+
+$ python forja.py herencia | head -8   (el mismo instrumento del arnes, corrido por mi)
+  acta anterior : ACTA 30. VUELTA 31, lote 4 (`scott_radical_candor`), **`cap_11` insertado de once en once**: la vuelta sale **limpia de `CLASE` y de `CIFRA PUBLICADA`**, sus **quince cifras de cierre me salen al digito**, mis **seis relecturas pineadas se sostienen las seis** y sus **nueve discutibles se sostienen los nueve**. Y aun asi: **la tabla de la cabeza de `cap_11` pone en su decimo rotulo un nodo que no es**, y con el caen dos recuentos y una conclusion. **`REPORTE` sube a `2 de 3`, que es el penultimo escalon, asi que su remedio va ENCARGADO y no solo declarado.** Mi tanda sale limpia de mi especie y **mi racha vuelve a `0 de 3` por tanda limpia**
+  su huella     : f6c76f63bd9b6aeea7b1d5a9d485977d2d61f593
+  heredados     : 4
+

@@ -1,0 +1,9 @@
+RELECTURA DE FIDELIDAD D.30 DEL TRAMO DE cap_09, ANTES DE INSERTAR
+  libro: fuentes/scott_radical_candor/cap_09.md
+  la maquina saca el trozo del libro y comprueba el ancla; el veredicto lo pongo yo
+
+### abrazar_incomodidad_arrancar_critica_equipo  (20 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+EL ANCLA NO ESTA EN LA LINEA 21: 'ESTA FRASE NO ESTA EN NINGUNA LINEA DEL LIBRO'

@@ -1,0 +1,40 @@
+{
+  "id": "dominar_arte_socializar_trabajo",
+  "titulo": "Dominar el arte de socializar en el trabajo, sabiendo que a la gente la conoces trabajando y no en la fiesta anual",
+  "denominaciones": {
+    "nombre_largo": "El arte, y los peligros, de socializar en el trabajo: el paseo, la comida campestre, las familias y la comida en tu casa, y las dos advertencias del final",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "master the art of socializing at work"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando te planteas juntar a tu equipo fuera de la oficina para construir relacion con ellos.",
+  "entregable_esperado": "Relaciones construidas sobre todo en el trabajo diario, y los actos sociales que si organices hechos con las dos advertencias del libro delante.",
+  "pasos_accionables": [
+    "Cuenta con que los retiros y las fiestas pueden ser productivos si la gente de tu equipo los quiere de verdad, y con que a la gente con la que trabajas la conoces sobre todo en el trabajo, cada dia, como parte integrada del ritmo de trabajo, y no en la fiesta anual.",
+    "Pasa tiempo con la gente del trabajo en un ambiente mas relajado, sin la presion de las fechas de entrega.",
+    "No hace falta que sea caro: podeis dar un paseo juntos o hacer una comida campestre.",
+    "Conoced a las familias de unos y otros, que tambien puede tener un efecto grande.",
+    "Invita a tu equipo y a sus familias o a sus parejas a comer a tu casa, que el texto llama una gran manera de abrirte y de demostrar que te importan.",
+    "Cuenta con que cuando estos actos los presenta la direccion pueden sentirse a la vez obligatorios y forzados, y socavar sin querer una cultura de libertad y autonomia.",
+    "Usa para construir la relacion las muchas horas que ya pasas cada dia con tus companieros y con la gente que te reporta.",
+    "Y por lo general usa el tiempo de despues del trabajo para mantenerte centrado tu, mas que para socializar con companieros de trabajo.",
+    "Cuando si organices un acto social en el trabajo, ten presentes las dos advertencias que el texto deja escritas: que un acto no obligatorio puede sentirse obligatorio, y que el alcohol puede meterte en terreno peligroso."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_08.md, lineas 67 a 75, bajo el rotulo MASTER THE ART OF SOCIALIZING AT WORK. ESTA CABECERA DE SECCION SI SE EXTRAE Y LAS OTRAS DOS DEL CAPITULO NO, Y LA DIFERENCIA ESTA MEDIDA: esta trae inventario propio de medios nombrados uno a uno, el paseo, la comida campestre, conocer a las familias y la comida en tu casa, mientras que STAY CENTERED (lineas 15 a 23) y RESPECT BOUNDARIES (lineas 89 a 91) solo anuncian a sus hijos, la segunda con la formula literal Here are some things I have learned about walking this line, que es la misma por la que la pieza 12 de cap_07 se dejo fuera. EL P9 ES LA CABEZA DE UNA SERIE QUE NO ES D.37: la linea 75 nombra sus dos advertencias pero NO dice cuantas son, asi que es D.29 y su arista pide razon escrita. La primera de las dos existe como nodo, evitar_presion_social_actos_equipo; la segunda, Booze, NO se extrajo porque es una advertencia sin un solo acto nombrado. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. P1 de la linea 69; P2, P3, P4 y P5 de la 71; P6, P7 y P8 de la 73; P9 de la 75. EL TRAJE DE CONEJO ROSA DE ALAN EUSTACE (linea 71) NO DA PASO PROPIO: es la ilustracion de conocer a las familias y no un medio que el lector pueda ejecutar. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se averigua si tu equipo quiere de verdad un retiro, y quien paga la comida en tu casa.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

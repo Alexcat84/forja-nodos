@@ -1,0 +1,59 @@
+10:45:39 arranca informe candidato 1
+10:52:57 termina informe candidato 1
+10:57:28 arranca insercion candidato 1
+11:05:00 termina insercion candidato 1
+11:06:50 arranca informe candidato 2
+11:18:07 arranca informe candidato 2 (reintento)
+11:31:46 termina informe candidato 2
+11:33:21 arranca insercion candidato 2
+11:47:19 termina insercion candidato 2
+11:51:40 arranca insercion candidato 3
+12:02:00 termina insercion candidato 3
+12:05:18 arranca insercion candidato 4
+12:25:44 termina insercion candidato 4
+12:29:33 arranca insercion candidato 5
+12:52:26 termina insercion candidato 5
+12:53:47 arranca insercion candidato 5 (reintento con el vecino que faltaba)
+12:53:47 termina insercion candidato 5
+12:56:45 arranca insercion candidato 5 (segundo reintento)
+13:19:37 termina insercion candidato 5
+13:22:17 arranca insercion candidato 6
+13:32:10 termina insercion candidato 6
+13:33:57 arranca insercion candidato 7
+13:39:09 termina insercion candidato 7
+13:40:44 arranca insercion candidato 7 (reintento)
+13:45:54 termina insercion candidato 7
+13:47:50 arranca insercion candidato 8
+13:55:18 termina insercion candidato 8
+13:57:03 arranca insercion candidato 08 (decidir_poner_nota_comunicar_proposito_limites)
+14:04:52 termina insercion candidato 08
+14:08:56 arranca insercion candidato 09 (elegir_categorias_nota_palabras_propias_empresa)
+14:23:32 termina insercion candidato 09
+14:24:51 arranca insercion candidato 10 (escribir_escaleras_puesto_evitar_dos_extremos)
+14:33:48 termina insercion candidato 10
+14:35:05 arranca insercion candidato 11 (fijar_cuatro_notas_calcular_nota_global)
+14:47:20 termina insercion candidato 11
+14:48:56 arranca insercion candidato 12 (elegir_palabras_nota_definirlas_empresa_entera)
+14:56:37 termina insercion candidato 12
+14:57:19 arranca insercion candidato 12 (elegir_palabras_nota_definirlas_empresa_entera)
+15:05:06 termina insercion candidato 12
+15:07:48 arranca insercion candidato 13 (aplicar_consecuencias_nota_apoyar_fuerzas_persona)
+15:21:45 termina insercion candidato 13
+15:23:37 arranca insercion candidato 14 (repartir_notas_publicar_reparto_esperado)
+15:32:08 termina insercion candidato 14
+15:33:35 arranca insercion candidato 15 (presionar_curva_notas_evitar_forzarla)
+15:43:16 termina insercion candidato 15
+15:43:35 arranca insercion candidato 15 (presionar_curva_notas_evitar_forzarla)
+15:53:22 termina insercion candidato 15
+15:55:02 arranca insercion candidato 16 (calibrar_notas_reunion_jefes_pares)
+16:05:59 termina insercion candidato 16
+16:07:06 arranca insercion candidato 17 (evaluar_desempenio_dos_veces_anio)
+16:09:45 termina insercion candidato 17
+16:11:13 arranca insercion candidato 18 (montar_evaluacion_360_grados_ligera_pares)
+16:14:14 termina insercion candidato 18
+16:15:33 arranca insercion candidato 19 (hacer_critica_pares_transparente_ensenar_escribirla)
+16:19:22 termina insercion candidato 19
+16:19:55 arranca insercion candidato 19 (hacer_critica_pares_transparente_ensenar_escribirla)
+16:23:59 termina insercion candidato 19
+16:25:27 arranca insercion candidato 20 (mantener_proceso_evaluacion_ligero_vigilar_crecimiento)
+16:29:08 termina insercion candidato 20

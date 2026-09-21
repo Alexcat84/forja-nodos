@@ -1,0 +1,14 @@
+$ por 12 corridas: python -m unittest tests.test_aceptacion.PruebaE.test_e_guion_largo_rompe_el_hook
+corrida 1  VERDE  20 s
+corrida 2  VERDE  18 s
+corrida 3  VERDE  18 s
+corrida 4  VERDE  19 s
+corrida 5  VERDE  18 s
+corrida 6  VERDE  19 s
+corrida 7  VERDE  19 s
+corrida 8  VERDE  20 s
+corrida 9  VERDE  20 s
+corrida 10  VERDE  20 s
+corrida 11  VERDE  18 s
+corrida 12  VERDE  19 s
+FIN

@@ -1,0 +1,8 @@
+$ time python tests/test_aceptacion.py
+
+  total: 318 pruebas, 0 fallos, 0 errores
+========================================================================
+
+real	1m55.150s
+user	0m0.140s
+sys	0m0.202s

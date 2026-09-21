@@ -1,0 +1,11 @@
+filas con cita comprobadas                     : 83
+filas cuyo NUMERO DE LINEA no cuadra            : 0
+filas cuyo TEXTO no cuadra                      : 4
+   cap_17 L65  DEL INSTRUMENTO
+   cap_17 L67  DEL INSTRUMENTO
+   cap_17 L69  DEL INSTRUMENTO
+   cap_18 L9  DEL INSTRUMENTO
+   de esas, TECLEADAS POR LA MANO               : 0
+
+EL REMEDIO DE LA ACTA 58 58.3 SE MIDE EN LA SEGUNDA LINEA:
+  83 de 83 numeros de linea aciertan.

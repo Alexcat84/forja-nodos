@@ -1,0 +1,51 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/decidir_poner_nota_comunicar_proposito_limites.json [3 veredictos y censos]
+ADUANA DE INSERCION, candidato 'decidir_poner_nota_comunicar_proposito_limites'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 371   (332 del grafo mas 39 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 2. Ninguna señal los levanto.
+  entregar_evaluacion_formal_desempenio_nueve_consejos  [Entregar bien una evaluacion formal de desempenio con los nueve consejos que el texto da, de no dar sorpresas a dejar la nota para el final]
+    señales: familia_id 0.0, paso_contra_nodo 0.408, similitud_texto 0.221
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  ser_honesto_transparente_desempenio  [Ser honesto y transparente sobre el desempenio de tu persona a cargo]
+    señales: familia_id 0.0, paso_contra_nodo 0.381, similitud_texto 0.2
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino recorrer_trece_elementos_proceso_evaluacion_formal  [Recorrer los trece elementos que el texto nombra para disenar un proceso formal de evaluacion de desempenio, sabiendo que no hay talla unica]
+    levantada por: similitud_texto
+    similitud_texto    0.352 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.495 (umbral 0.60)
+    paso 7 del candidato contra paso 10 de recorrer_trece_elementos_proceso_evaluacion_formal
+
+  vecino repartir_notas_publicar_reparto_esperado  [Repartir las notas sin una distribucion rigida y publicar el reparto que esperas, para que la calibracion no se vuelva opaca]
+    levantada por: similitud_texto
+    similitud_texto    0.397 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.441 (umbral 0.60)
+    paso 3 del candidato contra paso 7 de repartir_notas_publicar_reparto_esperado
+
+  vecino evaluar_desempenio_dos_veces_anio  [Evaluar el desempenio dos veces al anio, una ligera y oral y otra escrita, sin confundir la frecuencia de la nota con la del desarrollo]
+    levantada por: similitud_texto
+    similitud_texto    0.364 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.414 (umbral 0.60)
+    paso 7 del candidato contra paso 6 de evaluar_desempenio_dos_veces_anio
+
+BLOQUEADO: faltan veredictos para repartir_notas_publicar_reparto_esperado, evaluar_desempenio_dos_veces_anio
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "repartir_notas_publicar_reparto_esperado|CONTINUA|madre=repartir_notas_publicar_reparto_esperado|que añade el hijo a la madre"
+    --veredicto "repartir_notas_publicar_reparto_esperado|REPITE|por que no añade procedimiento"
+    --veredicto "repartir_notas_publicar_reparto_esperado|SANO|por que no son el mismo trabajo"
+    --veredicto "repartir_notas_publicar_reparto_esperado|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "evaluar_desempenio_dos_veces_anio|CONTINUA|madre=evaluar_desempenio_dos_veces_anio|que añade el hijo a la madre"
+    --veredicto "evaluar_desempenio_dos_veces_anio|REPITE|por que no añade procedimiento"
+    --veredicto "evaluar_desempenio_dos_veces_anio|SANO|por que no son el mismo trabajo"
+    --veredicto "evaluar_desempenio_dos_veces_anio|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+CODIGO DE SALIDA: 2

@@ -2446,3 +2446,1033 @@ con su relectura contra el parrafo.
 **cuatro libros**. Un reporte de treinta mil lineas no es un registro mejor: **es un
 registro que nadie relee**, y el propio auditor lleva tres actas midiendo que lo que se
 pierde no es la cifra, **es el encargo que no llego.**
+
+---
+
+## D.48. LA RACHA ES DE SU LINEA (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026, puntos 1 y 2. **Cierra un hueco que no se podia
+cerrar por extension**, y por eso no es una aclaracion de `D.38`: es regla nueva.*
+
+### Quien levanto el hueco, y por que no lo resolvio
+
+**El auditor del frente `gerber_emyth`**, el 16 sep 2026, parando por `DOCTRINA NUEVA
+NECESARIA` en vez de elegir la lectura que le convenia:
+
+> *`5.2` y `D.38.1` cuentan tandas **seguidas**, y seguidas significa consecutivas. Pero
+> **cuatro sesiones simultaneas no tienen orden entre si**, asi que la palabra que
+> sostiene la regla **no tiene referente aqui**. No es una regla que se pueda extender:
+> **es un hueco.***
+
+Y midio su propia posicion antes de negarse: su rama salio del commit `269c068` a las
+`20:46`, la linea serial declaro su parada a las `22:21`, **y su arbol no puede ver esa
+acta**. Las dos salidas, escritas por el con sus consecuencias opuestas:
+
+| lectura | `REPORTE` tras su tanda | que pasa con los tres frentes |
+|---|---|---|
+| **(a)** la racha del extractor es UNA sola de la campania | sigue en `3 de 3` | **los tres frentes estan corriendo por encima de una parada** |
+| **(b)** cada frente lleva la suya | `1 de 3` | los frentes siguen, y la parada es solo de la rama serial |
+
+> **Elegir `(b)` seria absolverme para poder seguir. Elegir `(a)` seria cargarle a este
+> frente tres tandas de un libro que no es el suyo.**
+
+**QUEDA CITADO COMO QUIEN LO LEVANTO.** Esta regla existe porque un auditor prefirio
+parar a elegir, teniendo delante la lectura que le dejaba seguir.
+
+### La letra
+
+> **CADA LINEA DE TRABAJO LLEVA SU PROPIA RACHA.** Una racha cuenta tandas **SEGUIDAS**,
+> y **una secuencia solo existe dentro de una linea**: entre sesiones simultaneas no hay
+> orden, asi que fuera de su linea la palabra no tiene referente.
+>
+> **UN FRENTE NACE CON SU RACHA EN CERO**, porque no ha dictado nada todavia.
+>
+> **LA RACHA DE LA SERIAL NO VIAJA A LOS FRENTES NI AL REVES.**
+>
+> **AL COSECHAR UN FRENTE, SU RACHA MUERE CON EL FRENTE.** Sus caidas quedan como
+> registro en sus actas archivadas, **y no se suman a la serial.**
+
+### Por que la racha muere al cosechar, y no se suma
+
+**Una racha no es una deuda: es una sonda.** Mide si una linea de dictado esta
+repitiendo un patron **mientras dicta**, para pararla a tiempo. Un frente cosechado ya
+no dicta: lo que queda de el es su trabajo, ya auditado, y sus actas. **Sumar sus caidas
+a la serial pararia a la serial por tandas que la serial no corrio**, que es exactamente
+el error de la vuelta 32 del frente `grove`, al reves.
+
+**Y LA CAIDA NO SE PIERDE:** queda escrita en el acta del frente, archivada con su
+cosecha. Lo que muere es el **contador**, no el **registro**.
+
+### La segunda mitad, que es la que sostiene la primera: OPCION B
+
+> **EL CREDITO VIVE EN UN FICHERO POR LINEA: `docs/loop/CREDITO_<linea>.jsonl`, LA
+> SERIAL INCLUIDA** (`CREDITO_serial.jsonl`), **con la especie, la vuelta, la tanda y su
+> cita.**
+>
+> **Y LA HERENCIA DE `D.40` ES LA DE SU LINEA.**
+
+**POR QUE UN FICHERO Y NO UNA SECCION MAS DEL ACTA.** Una sede unica compartida por
+varias lineas **es el problema, no la solucion**: es lo que hizo que tres frentes
+heredaran el acta de la serial al ramificar. Un fichero por linea convierte el registro
+en lo que ya es el `cuarentena/<libro>/`: **ficheros disjuntos que se funden sin
+tocarse**, y borra la unica fila de la tabla de cosecha de `PARALELO.md` que decia
+`CONFLICTO SEGURO`.
+
+**LO QUE NO CAMBIA, Y CONVIENE DECIRLO:** `AUDITOR_FORJA.md` 5.4 sigue entero. **La
+racha no se reinicia sola**, la reinicia una tanda limpia o una decision del fundador
+escrita en `docs/loop/paradas/`, **y ninguna de las dos es el auditor**. Lo unico que
+`D.48` cambia es **de quien** es la racha, no **quien** la puede tocar.
+
+### El instrumento
+
+    python forja.py credito             la racha de ESTA linea, con su cita
+    python forja.py credito --lineas    que lineas tienen registro
+    python forja.py credito --revisar   el replay contra lo declarado
+    python forja.py credito --anotar    escribe una tanda, un reinicio o un nacimiento
+
+`src/credito.py`. **La cifra declarada manda y el replay se publica aparte**: `estado()`
+devuelve lo que la ultima linea de cada especie declara, que es lo que el acta adjudico;
+`revisar()` vuelve a sumar `cae` y **dice donde las dos cuentas discrepan en vez de
+elegir una en silencio**. El replay **no vigila la historia migrada**, porque los
+reinicios de ese tramo viven en `docs/loop/paradas/` y no en el registro: **una guarda
+que acusa de lo que no puede saber es ruido que se aprende a ignorar.**
+
+**Caso positivo:** en una linea sin ninguna tanda cerrada, `forja.py herencia` entrega
+**CERO remedios** y dice por que, aunque el arbol tenga las `31` actas de la serial
+delante. **Negativo:** en la linea serial, que tiene `31` tandas escritas, entrega sus
+`4` remedios como siempre.
+
+### La historia migrada, y lo que la migracion no invento
+
+**`scripts/migrar_credito.py`** volco las `31` actas de la linea serial a
+`CREDITO_serial.jsonl`: `127` sucesos, uno por especie y acta, **cada uno con el literal
+de su celda al lado** (`D.38.3`). Las actas `1` a `7` escribian la fila del auditor como
+*"N actas seguidas"*, que es **otra unidad**, anterior a que `D.38` le diera una racha
+sola con tope: sin el literal al lado, aquel `7` se leeria como siete de tres.
+
+**`cae` solo se escribio donde el acta publica sus dos columnas** y se puede restar.
+Donde el acta publica una sola cifra, la fila va **sin `cae`**, y el replay la declara no
+replayable. **Un migrador que rellena huecos con su criterio no migra: dicta.**
+
+---
+
+## D.49. UN LIBRO, UN DUEÑO A LA VEZ (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026, puntos 1 y 2. **Nace `docs/loop/TABLERO.jsonl`**,
+sede unica del estado de la campania de extraccion.*
+
+### La caida que no llego a ocurrir, y por que iba a ocurrir
+
+**`D.32` dice que el acta que cierra un lote ABRE EL SIGUIENTE, sin parada entre medias**,
+con las dos condiciones de apertura en verde. Y estan en verde **para los diez lotes que
+quedan.**
+
+El lote `4` iba por el `47` por ciento. **El siguiente por orden es el lote `5`,
+`marquet_turn_the_ship`, que estaba siendo extraido en otra rama con `9` candidatos
+dentro**, tres de ellos ya en la bandeja de la serial. Si el lote 4 hubiera cerrado, el
+acta habria abierto el `5` **y habria vuelto a minar `cap_01`, `cap_02` y `cap_03`**, que
+el frente ya cerro con sus fronteras al digito.
+
+> **LO UNICO QUE LO IMPEDIA ERA UNA FRASE ESCRITA A MANO EN EL ENCARGO.** Y esta casa
+> tiene medido lo que vale eso: **`D.35`, un remedio que se cumple acordandose no es un
+> remedio.**
+
+### El tablero
+
+> **`docs/loop/TABLERO.jsonl` ES LA SEDE UNICA DEL ESTADO DE LA CAMPANIA DE EXTRACCION**,
+> una linea por libro con: **clave, rama, worktree, ESTADO, ultimo capitulo minado y su
+> commit, candidatos en su bandeja, y quien es su DUEÑO ACTUAL** (la linea que lo
+> trabaja) **o `NINGUNO`.**
+>
+> **SE GENERA DEL DATO** (ramas, bandejas, actas), **no se teclea**, y **se actualiza en
+> el cierre de cada vuelta de cualquier linea.**
+
+**LOS SEIS ESTADOS:** `SIN EMPEZAR`, `EN CURSO`, `PAUSADO`, `CERRADO EN EXTRACCION`,
+`COSECHADO`, `INSERTADO`.
+
+**LA BANDEJA SE CUENTA EN EL ARBOL DE SU DUEÑO, y esa es la mitad que nadie ve venir.**
+Los cuatro worktrees comparten historial, asi que **el arbol de cada frente tiene las
+bandejas de los otros libros copiadas**: `cuarentena/marquet_turn_the_ship/` da `3` en la
+serial y `9` en su frente. **La cifra buena es la de quien lo trabaja.**
+
+**Y LO QUE EL DATO NO PUEDE DECIR VA DECLARADO CON SU CITA**, en `config/frentes.json`:
+cual es el frente activo (**un frente detenido esperando decision sigue teniendo su
+libro**, que no es lo mismo que tener proceso vivo) y que libro esta `CERRADO EN
+EXTRACCION` (que es la adjudicacion de un acta, no una cuenta de ficheros). **El
+instrumento se detiene si una declaracion no lleva cita.**
+
+### La letra
+
+> **NINGUNA LINEA ABRE NI CONTINUA UN LIBRO CUYO `ESTADO` NO SEA:**
+>
+> - **`SIN EMPEZAR` con dueño `NINGUNO`**, o
+> - **`PAUSADO` con dueño `NINGUNO` y ya `COSECHADO`.**
+>
+> **EL ARNES LO COMPRUEBA AL ABRIR VUELTA CONTRA EL TABLERO Y SE DETIENE NOMBRANDO AL
+> DUEÑO** si el libro tiene uno.
+>
+> **TODA LINEA LEE EL TABLERO EN SU APERTURA Y LO CITA.**
+
+### El instrumento
+
+    python forja.py tablero              lo imprime, medido en este instante
+    python forja.py tablero --escribir   lo vuelca a docs/loop/TABLERO.jsonl
+    python forja.py tablero --puedo <clave>   si ESTA linea puede abrir ese libro
+    python forja.py tablero --dueno <clave>   quien lo trabaja hoy
+
+**Caso positivo:** `--puedo marquet_turn_the_ship` desde la serial **dice NO** y nombra
+sus `9` candidatos sin cosechar y la rama donde estan. **Negativo:**
+`--puedo openstax_business_ethics` **dice SI**, porque esta `SIN EMPEZAR` y sin dueño.
+
+---
+
+## D.50. EL RELEVO: SE RELEVA EL LIBRO ENTERO, NUNCA CAPITULOS SUELTOS (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026, punto 3. **Es lo que convierte un frente pausado
+en trabajo que la serial puede continuar**, y el orden de sus cuatro pasos es obligatorio.*
+
+### La letra
+
+> **CUANDO LA LINEA PRINCIPAL CIERRA UN LIBRO, CONSULTA EL TABLERO**, y si hay un libro
+> `EN CURSO` o `PAUSADO` en otra rama, **lo RELEVA en este orden obligatorio:**
+>
+> **(a)** el frente **debe estar detenido y sin proceso vivo**;
+> **(b)** su rama **se COSECHA a la rama de insercion** (una por vez, gate y suite
+> despues), con lo que **sus candidatos, su frontera y sus actas llegan**;
+> **(c)** el tablero pasa ese libro a **dueño `NINGUNO` y estado `PAUSADO COSECHADO`**;
+> **(d)** **solo entonces** el principal lo toma y **continua DESDE EL CAPITULO SIGUIENTE
+> al ultimo minado, citando la frontera heredada.**
+>
+> **NUNCA SE RELEVAN CAPITULOS SUELTOS: SE RELEVA EL LIBRO ENTERO.**
+
+### Por que el orden es obligatorio y no una recomendacion
+
+**Cada paso existe porque el anterior no basta.**
+
+| paso | que impide que pase |
+|---|---|
+| **(a) detenido y sin proceso vivo** | que la cosecha lea un arbol **que se esta escribiendo**. El 17 sep un frente que yo di por muerto llevaba **seis horas y media** dentro de un turno de extractor y cerro una vuelta entera despues |
+| **(b) cosechar antes de tocar** | que la serial mine **lo que ya esta minado**. Los candidatos del frente no existen en esta rama hasta que se funden: **contarlos no es tenerlos** |
+| **(c) el tablero antes de trabajar** | que dos lineas se crean dueñas del mismo libro. **El tablero es la sede, y una sede que se actualiza despues del trabajo no es una sede: es un parte** |
+| **(d) desde el capitulo SIGUIENTE, citando la frontera** | que el relevo **repita o se salte** una unidad. La frontera heredada es lo unico que dice donde acaba lo minado, y `D.41` obliga a que venga de su instrumento |
+
+### Por que el libro entero y no el capitulo
+
+**Un libro medio relevado tiene dos fronteras que nadie casa.** El frente cerro las suyas
+contra el cuerpo, al digito; un relevo por capitulos obligaria a **volver a cerrar la
+frontera del tramo partido**, y eso es rehacer el trabajo con mas sitios donde fallar.
+**El libro entero tiene una sola frontera que heredar.**
+
+### Y no releva cualquiera
+
+**EL RELEVO LO HACE LA LINEA PRINCIPAL, y solo cuando CIERRA un libro.** No es una tarea
+que se pueda encargar a mitad de lote: `D.45` dice que **la insercion es serial y de un
+libro por vez**, y un relevo a mitad de libro es dos libros a la vez por la puerta de
+atras.
+
+**EL BUCLE NO FUNDE RAMAS** (`AUDITOR_FORJA.md`, y lo repite cada parada). **El paso
+`(b)` lo hace el fundador**, con el procedimiento de `docs/loop/PARALELO.md`. Lo que el
+bucle si hace es **pedirlo, nombrando la rama y el estado**, y **detenerse hasta que
+llegue**.
+
+### El alcance de hoy, que es parte de la decision
+
+> **DOS LINEAS Y NO MAS:** la principal **siempre activa**, y **UN solo frente de
+> extraccion**, hoy `grove_high_output` **hasta cerrar su libro**.
+>
+> **`gerber_emyth` y `marquet_turn_the_ship` quedan `PAUSADOS` con dueño `NINGUNO`** y su
+> trabajo parcial declarado en el tablero (**`10` y `9` candidatos**): **no se lanzan**, y
+> **seran relevados por el principal cuando le toquen por el orden.**
+
+**Vive en `config/frentes.json` con su cita**, porque es una decision y no una medida, y
+el tablero lo dice en la columna `estado_de` de cada fila que lo usa.
+
+---
+
+## D.51. EL ORDEN LO DA EL TABLERO (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026, **EL ORDEN DE PRIORIDAD DEL MUNDO 11**. Cierra el
+ultimo hueco que quedaba abierto en `D.49` y `D.50`: **saben decir que NO, y no sabian
+decir que SI.***
+
+### La letra
+
+> **NINGUNA LINEA ELIGE LIBRO POR SU CUENTA.** Toma el de **PRIORIDAD MAS BAJA cuyo
+> estado lo permita** (`D.49`), y **si ninguno lo permite, PARA Y LO DICE.**
+>
+> **EL ARNES LO COMPRUEBA EN LA APERTURA.**
+
+**Y AL CERRAR UNO, PASA AL SIGUIENTE POR `D.50`**, que es el relevo con sus cuatro pasos.
+
+### El orden, y lleva sus motivos porque un orden sin motivo no se puede discutir
+
+| prioridad | libro | estado al escribirse | por que ahi |
+|---:|---|---|---|
+| **1** | `grove_high_output` | `EN CURSO`, dueño grove | **Operaciones y apalancamiento gerencial: cubre el hueco de la campania**, que tiene mucho trato con la gente y poco produccion de la maquina. **Densidad de procedimiento la mas alta del lote, medida:** `0,00` por ciento de pasos inventados en su ultimo capitulo, **porque el autor escribe en pasos** |
+| **2** | `gerber_emyth` | `PAUSADO`, `10` candidatos hechos | **Sistematizacion del negocio, manual de operaciones, trabajar SOBRE el negocio y no EN el**: es el libro que **habla directo al usuario final** y el unico del lote que aporta esa materia. Al minarlo entero **se completa ademas el capitulo 17 reservado al mundo 10** |
+| **3** | `marquet_turn_the_ship` | `PAUSADO`, `9` candidatos hechos | **Delegacion real y control distribuido con practicas concretas.** Solapa en parte con Zhuo y Scott, ya insertados, **pero es barato de cerrar y cierra el cuerpo** |
+
+> # **=== CORTE DEL MUNDO 11 ===**
+>
+> **Con los tres anteriores mas los cuatro ya insertados** (`onu_consumidor`,
+> `smart_who`, `zhuo_manager`, `scott_radical_candor`), **EL MUNDO 11 SE DECLARA
+> COMPLETO**: gente, comunicacion, contratacion, operaciones y sistematizacion. **La
+> campania de extraccion cierra ahi.**
+
+| prioridad | libro | por que NO entra en esta campania |
+|---:|---|---|
+| **4** | `bernerslee_bananas` | `19` cap. **Mas analisis que procedimiento** |
+| **5** | `openstax_business_ethics` | `17` cap. **Manual academico, densidad de procedimiento baja, mucho marco conceptual** |
+| **6** | `openstax_org_behavior` | `32` cap. **El mas caro del lote y el de mayor solape con lo ya insertado** (Zhuo, Scott, Grove): **el peor candidato por costo y beneficio de los diez** |
+
+**LOS TRES DEL CORTE NO SE EXTRAEN EN ESTA CAMPANIA.** Quedan en la bandeja, **con su
+ficha**, para **entrar por la aduana de a uno y sin campania cuando el fundador lo
+decida.** Ninguna linea los elige sola: **una campania que decide su propio alcance no
+tiene alcance.**
+
+### Por que esto es una regla y no una lista
+
+**`D.49` y `D.50` sabian decir que NO.** Sabian que un libro con dueño no se toca y que un
+frente pausado se releva entero. **Lo que ninguna de las dos sabia decir es cual SI**, y
+ese hueco lo llenaba lo mismo de siempre: el orden de `ORDEN_DE_LOTES.md`, que es el orden
+en que los libros **llegaron**, no el orden en que **valen**. Por ese orden, el siguiente
+del lote 4 era el lote 5; **por este, el siguiente es el `1`.**
+
+**Y HAY UNA SEGUNDA COSA QUE ESTA REGLA IMPIDE, mas silenciosa:** que una linea que se
+queda sin libro **se busque uno.** Con `D.51`, una linea sin libro **no elige: para y
+dice cual necesita y que le falta a ese libro para estar disponible.**
+
+### El instrumento
+
+    python forja.py tablero               la tabla, ordenada por prioridad
+    python forja.py tablero --siguiente   que libro le toca a ESTA linea, y por que
+
+**La prioridad vive en `config/frentes.json` con su cita**, porque es una decision y no
+una medida, y `src/tablero.py` **se detiene si el orden no la lleva.** Cada fila de
+`docs/loop/TABLERO.jsonl` publica `prioridad`, `fuera_de_campania` y su `motivo`.
+
+**Caso positivo:** con `scott_radical_candor` ya `INSERTADO` y `grove` todavia vivo,
+`--siguiente` **da `NINGUNO` y nombra el relevo que falta**: `gerber_emyth`, prioridad `2`,
+rama `extraccion-gerber_emyth` sin cosechar con `10` candidatos dentro. **Negativo:** con
+ese mismo `gerber_emyth` ya `COSECHADO`, **da `gerber_emyth` y dice desde que capitulo se
+continua** (`cap_11`).
+
+**Y MIENTRAS LA LINEA TIENE LIBRO PROPIO EN CURSO, `--siguiente` DEVUELVE ESE**, porque
+`D.50` releva **al cerrar** uno y no a mitad.
+
+---
+
+## D.56. `dataset/` ES EL CATALOGO Y NADA MAS (17 sep 2026, decision del fundador)
+
+> ### RENUMERADA DOS VECES. **FUE `D.52`, FUE `D.53`, Y ES `D.56`.**
+>
+> **Las dos veces por lo mismo y las dos veces contra mi:** la decision que la creo no
+> venia numerada, **le puse un numero yo**, y el fundador uso ese numero despues para otra
+> regla. Primero `D.52` (la tabla de cierre), luego `D.53` (el veredicto y la arista). **El
+> numero del fundador manda sobre el mio**, igual que con `D.45` y `D.46` el 16 sep. **El
+> contenido no cambia: solo el numero.**
+>
+> **Y LA LECCION ES MIA, NO DEL FUNDADOR:** numerar yo una regla que el fundador dicta sin
+> numero **invita a la colision**. Lo que corresponde es escribirla sin numero y pedirlo.
+> **Dos renumeraciones del mismo texto en un dia son dos avisos.**
+>
+> **LO QUE NO SE REESCRIBE, Y SE DICE:** las actas, el reporte y la parada ya archivada
+> siguen diciendo `D.52` donde esta regla era `D.52`. **Son registro de lo que se escribio
+> cuando se escribio**, y reescribirlos seria borrar historia para tapar una renumeracion
+> mia. Lo que si se actualizo es lo que esta sesion mantiene: `src/`, `scripts/`,
+> `config/` y las pruebas.
+
+*Decision del fundador del 17 sep 2026 sobre la parada de la vuelta 33. **Tres piezas: la
+sede de los ficheros de coordinacion, una reclasificacion de racha, y una correccion
+declarada del fundador sobre su propia `D.48`.***
+
+### 1. La letra
+
+> **`dataset/` CONTIENE EL CATALOGO Y NADA MAS.** Los ficheros de coordinacion (el
+> cerrojo, las marcas de proceso) **viven fuera, con su ruta escrita.**
+
+**Sede nueva:** `procesos/`, declarada en `comun.DIR_PROCESOS` y **fuera de git**.
+
+**LA HUELLA DE LA RUTA VA EN EL NOMBRE, y no es adorno:** el taller de las pruebas usa un
+dataset que **se llama `nodos.jsonl` igual que el de verdad**, y sin la huella las pruebas
+y la forja compartirian cerrojo. Se calcula sobre la ruta absoluta normalizada, asi que el
+mismo dataset da siempre el mismo fichero: `procesos/nodos.jsonl.66c1fadb.cerrojo`.
+
+### Por que, con la caida delante
+
+El 17 sep 2026 el turno de un extractor commiteo con `git add -A` mientras una insercion
+corria, **y el cerrojo VIVO entro en git dentro de `dataset/`**. Un `checkout` de ese
+commit entrega **el cerrojo de un proceso que ya no existe**, y la insercion siguiente se
+queda esperando a un cadaver hasta que el tope de huerfano lo declara. **No fallo en
+silencio** (el cerrojo resuelve la duda por edad y nunca por adivinanza, `D.44`), **pero
+costo una espera y una parada que no son de nadie.**
+
+**Caso positivo, re corrido tras la mudanza** (`.v34/cerrojo_dos_procesos.py`): dos
+procesos de verdad sobre el mismo dataset, el primero retiene `3` segundos, **el segundo
+espera `2,51` y entra**, y el cerrojo queda suelto al final.
+
+### 2. La reclasificacion, y lo que ensena sobre las especies
+
+> **EL EJEMPLAR DEL CERROJO SE RECLASIFICA DE `DATO MOVIDO` A `ARNES`: NO ACUMULA.** La
+> racha `DATO MOVIDO` queda en **`1 de 2`**.
+
+**Y EL AUDITOR QUE LA CARGO TENIA RAZON CON LA LETRA QUE HABIA.** La fila de `DATO MOVIDO`
+dice *una operacion que cambia `dataset/`, `bitacora/` o `censos/`*, y `git add -A` cambio
+lo que `dataset/` contiene en el repositorio. **Eligio la lectura que le costaba el
+escalon teniendo la contraria ofrecida.** Lo que cambia no es su adjudicacion: **es la
+letra**, porque `dataset/` deja de poder contener un fichero de proceso.
+
+**LA ESPECIE SE DECIDE POR LA SEDE** (`5.2`), y esta regla **limpia la sede** en vez de
+discutir el ejemplar. Es la unica via que no deja la pregunta abierta para la proxima.
+
+### 3. La fase ciega no ve el registro de credito
+
+> **CORRECCION DECLARADA DEL FUNDADOR SOBRE `D.48`**, que es suya. **El arnes RETIRA
+> `docs/loop/CREDITO_<linea>.jsonl` durante la fase ciega**, como ya retira los otros
+> cuatro, y le entrega al ciego **SOLO la herencia que `D.40` exige** (remedios pendientes
+> con su motivo y su salida pegada), **sin cifras ni conclusiones.**
+
+**QUIEN LO LEVANTO Y CON QUE MEDIDA:** el auditor de la `ACTA 32`. *La apertura ciega esta
+OBLIGADA a leer el registro de credito, y el campo `cita` trae conclusiones del reporte
+copiadas dentro. Hoy me dijo `11 SANO` antes de que yo contara los mios.* **El arnes
+retiraba cuatro ficheros por una puerta y `D.48` abrio otra.**
+
+**EL ORDEN DE LA RETIRADA IMPORTA, y es la parte que se puede romper sin darse cuenta:**
+la herencia `D.40` se calcula **ANTES**, porque `forja.py herencia` **pregunta al registro
+de que linea es** (`D.48`). Retirarlo antes haria que `D.40` entregara **CERO remedios
+creyendo que la linea acaba de nacer**, que es el defecto que `D.40` vino a cerrar,
+reintroducido por la puerta de atras.
+
+### Y la cita se escribe como REFERENCIA
+
+> **EL CAMPO `cita` DEL REGISTRO ES LA RUTA Y LA LINEA DEL ACTA, NUNCA UN RESULTADO
+> COPIADO.** Un `cita` con conclusion dentro **no pasa el sello.**
+
+    python forja.py credito --citas
+
+**Va en `anotar` Y en el SELLO**, y las dos hacen falta: `anotar` solo mira lo que se
+escribe por el instrumento, y **una linea anadida a mano al fichero no pasaria por ahi**.
+El testigo de guardas tiene ahora **cuatro**.
+
+**SE CAZA POR VOCABULARIO Y NO POR DIGITOS**, y esa es la decision de diseno: una
+referencia legitima **lleva numeros por todas partes** (`ACTA 33, seccion 9.1`), asi que
+contar digitos daria falso positivo en casi todas. Lo que una referencia **no lleva nunca**
+es el vocabulario con el que esta casa dice un veredicto: `SANO`, `CONTINUA`, `PUENTE`,
+`por ciento`, `al digito`, `verde`, `rojo`.
+
+**Y `de 2` Y `de 3` SE QUEDARON FUERA A PROPOSITO:** cazarian `punto 2 de 3` en una
+referencia legitima. **Esta casa ya pago dos veces el precio de una guarda con falsos
+positivos: se aprende a no mirarla.**
+
+**Al estrenarla cayeron CINCO citas ya escritas**, todas del auditor que levanto el
+defecto. **No se borro ninguna:** el texto entero pasa a `cita_original` y `cita` se queda
+con la referencia que ese mismo texto ya traia delante.
+
+### 4. La cola de doctrina
+
+> **Las preguntas de doctrina que no bloquean a nadie quedan EN COLA DECLARADA: se
+> resuelven cuando el mundo 11 cierre.** Si alguna **bloquea a una linea, sube sola.**
+
+**Viven en la seccion `COLA DE DOCTRINA` de `docs/loop/TABLERO.jsonl`**, con su medida y su
+sitio, **para que no se pierdan**. Una pregunta que se contesta *cuando haya tiempo* y que
+no esta escrita en ningun sitio **no esta en cola: esta olvidada.**
+
+---
+
+## D.52. TODA TABLA DEL REPORTE DECLARA SU INSTRUMENTO (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026 sobre la parada de la vuelta 35, punto 2. **Es la
+cura de una especie de credito con TRES tandas medidas**, y por eso viene con una
+excepcion expresa a `D.45` para poder construirse.*
+
+### La letra
+
+> **UNA TABLA SIN INSTRUMENTO DECLARADO NO SE PUBLICA**, porque es precisamente **la que
+> ninguna guarda mira.**
+
+### El ejemplar, que son tres y son la misma tabla
+
+**La racha `REPORTE` de la linea serial llego a su tope con tres caidas seguidas, y las
+tres viven en la MISMA tabla:**
+
+| tanda | vuelta | la caida |
+|---|---:|---|
+| `ACTA 32` | `33` | `13` vecindades levantadas donde se levantaron `11` |
+| `ACTA 33` | `34` | `0` PUENTE de `181` donde la relectura da `1` |
+| `ACTA 34` | `35` | `15 de 15 DEL CAPITULO` donde `cap_09` son `20 de 20` |
+
+**LA TABLA DE CIERRE DE TAREAS ERA LA UNICA DEL REPORTE QUE NO DECLARABA INSTRUMENTO.**
+`D.41` compara cada tabla contra su fichero de salida; **una tabla sin fichero no se
+compara con nada.** Es, literalmente, **el unico sitio del reporte donde una cifra
+tecleada vivia tranquila**, y las tres caidas fueron a parar ahi.
+
+> **NINGUNA DE LAS TRES ERA CAZABLE POR DISEÑO**, y esa es la frase que hace falta leer
+> antes de culpar a nadie: no fue descuido tres veces. **Fue el unico hueco que quedaba, y
+> el dictado lo encontro solo.**
+
+### El instrumento
+
+    python scripts/tabla_de_cierre.py              la comprueba y dice que cae
+    python scripts/tabla_de_cierre.py --escribir   regenera su fichero de salida
+
+**Corre en cada commit**, dentro de `scripts/cerrar_reporte.py`, que es lo que el hook
+llama. **`hooks/pre-commit` NO se toco**, y es deliberado: mientras haya un frente vivo,
+un fichero que esta sesion no mueve **es un fichero que la cosecha de ese frente no puede
+encontrar en conflicto.**
+
+**LO QUE SABE MEDIR, Y SOLO ESO:** una afirmacion de la forma **`N` de `M` del capitulo**
+con un `cap_NN` nombrado en la misma fila, donde `M` es **cuantos nodos del grafo salen de
+ese capitulo**, medido **por la ruta completa** (`<clave>/cap_NN.md`) y no por el nombre
+suelto, que aparece tambien en otros libros.
+
+**LO QUE NO INVENTA:** una fila sin cifra medible **se copia tal cual y se declara
+`SIN COMPROBAR`**. Y el patron es **estrecho a proposito**: un `5 de 5` de un TRAMO no se
+toca, porque un tramo no es un capitulo y **esta casa ya pago dos veces el precio de una
+guarda con falsos positivos.**
+
+**Caso positivo:** la tabla de la vuelta `35` **tal como quedo** cae nombrando su fila `3`
+(*la celda publica `15 de 15 del capitulo` y `cap_09` son `20 de 20` en el grafo, `272`
+pasos*). **Negativo:** regenerada y pegada, pasa.
+
+### La excepcion a `D.45` que hizo falta para construirlo
+
+> **LA MORATORIA DE MAQUINARIA NO CUBRE LA CURA DE UNA ESPECIE DE CREDITO CON TRES TANDAS
+> MEDIDAS.** Autorizada **solo en la linea serial**, y **acotada**: toca unicamente
+> `scripts/` y el hook de la rama de insercion. **No toca el banco de pruebas, ni los
+> protocolos, ni `orquestador_forja.sh`, ni nada que `grove` edite.**
+
+**POR QUE LA EXCEPCION ES SANA, y no un agujero en `D.45`:** `D.45` existe para que dos
+lineas no escriban la misma sede a la vez. **Una cura que solo toca `scripts/` de la linea
+serial no es una sede compartida**, y dejarla sin construir significaba **abrir la vuelta
+36 con el mismo hueco que produjo las tres caidas**. Una moratoria que impide arreglar lo
+que esta midiendo mal **deja de proteger y empieza a conservar el defecto.**
+
+---
+
+## D.54. UN PASO RETIRADO POR DECLARACION SE RETIRA DEL CAMPO (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026, punto 4. **Es la pregunta `7` de la cola de
+doctrina, decidida**, y se decide asi porque **es dato y no forma.***
+
+### La letra
+
+> **UN PASO RETIRADO POR DECLARACION SE RETIRA DEL CAMPO.** Un nodo insertado cuyo
+> `resumen_teorico` declara retirado un paso **que sigue literal en `pasos_accionables`**
+> publica un puente a quien lee los pasos.
+>
+> **El paso sale de `pasos_accionables`, y su retirada queda escrita con su cita.** Un
+> retiro futuro **se aplica en el mismo acto, no solo en la prosa.**
+
+### Por que es dato y no forma
+
+**Un nodo tiene dos lectores y la declaracion solo alcanza a uno.** Quien lee el
+`resumen_teorico` se entera de que el paso esta retirado; **quien lee `pasos_accionables`
+se lleva el puente entero**, sin saber que fue retirado. Y `pasos_accionables` es el campo
+que la maquina consume.
+
+**LA GUARDA QUE PARECIA CUBRIRLO NO LO CUBRE:** `deprecado_en_superficie` vigila
+**aristas**, no pasos. El hueco estaba entero.
+
+**Y NINGUN INSTRUMENTO DE LA CASA REESCRIBIA UN PASO DE UN NODO YA INSERTADO**, que es el
+motivo real de que la retirada se quedara en la prosa: **no habia por donde hacerlo.**
+`forja.py corregir` toca el `resumen_teorico`; el paso no lo tocaba nadie.
+
+---
+
+## D.53. EL VEREDICTO Y LA ARISTA SON PUERTAS DISTINTAS (17 sep 2026, decision del fundador)
+
+*Decision del fundador del 17 sep 2026, punto 2. **Es la pregunta `5` de la parada de
+`grove`, decidida**, y `grove` la levanto adjudicando contra si mismo.*
+
+### La letra
+
+> **UN `SANO` PUEDE LLEVAR ARISTA DECLARADA, Y DECLARARLA NO LO CONVIERTE EN `CONTINUA`.**
+>
+> **El veredicto dice si un par REPITE, CONTINUA o esta SANO en su procedimiento.** **La
+> arista dice si hay RELACION DECLARABLE entre los dos.** Son dos preguntas distintas y se
+> contestan por separado.
+>
+> Dos nodos sanos pueden estar unidos **por serie declarada** (`D.37`) o **por jerarquia
+> leida** (`D.19`, `D.29`).
+
+### La prueba por reduccion, que es la que cierra la discusion
+
+> **SI UN `SANO` CON ARISTA FUESE `CONTINUA`, `D.37` SERIA IMPOSIBLE: toda cabeza de serie
+> devoraria sus partes.**
+
+`D.37` manda declarar arista **de la cabeza a cada una de sus partes** cuando el texto dice
+cuantas hay y las nombra. Si declarar esa arista convirtiera el par en `CONTINUA`, **la
+cabeza y cada parte serian el mismo procedimiento**, y una serie de diez quedaria reducida
+a uno. **La regla que existe desde el 10 sep no podria aplicarse ni una sola vez.**
+
+### Quien la levanto, y como
+
+**El auditor del frente `grove`**, en su `ACTA 32`. La adjudico como `CONTINUA` **porque
+`AUDITOR_FORJA.md` 3 le obliga a adjudicar lo que una regla escrita cubre**, y acto seguido
+escribio que **si el fundador leia lo contrario, una de sus propias caidas desaparecia**:
+
+> *si tu lees que un `SANO` puede convivir con una arista `D.29`, mi caida de `3.3`
+> desaparece y la racha se queda en `4`.*
+
+**ES LA SEGUNDA VEZ QUE ESE AUDITOR ELIGE LA LECTURA QUE LE CUESTA** teniendo la contraria
+delante y escrita. **Queda escrito quien levanto la pregunta.**
+
+**Los dos veredictos que `grove` adjudico como `CONTINUA` por la lectura vieja se re
+adjudican en la linea serial bajo `D.53`, con correccion declarada**, y **la caida suya que
+dependia de ello se retira citando esta decision.**
+
+---
+
+## D.55. LA DEUDA NO BLOQUEA LA PRODUCCION: DOS CLASES DE VUELTA (18 sep 2026, decision del fundador)
+
+*Decision del fundador del 18 sep 2026. **Nace de una medida, no de una molestia.***
+
+### La medida que la obliga
+
+**La linea serial metio `14` nodos en la vuelta `36`, en una sola vuelta. En las cinco
+siguientes metio `8` en total, y una de ellas metio CERO.** No falto candidato ni mordio
+ninguna guarda: **cada vuelta abria con una tarea bloqueante de reparacion**, y lo que
+quedaba de turno ya no daba para insertar.
+
+    V.38  TAREA 1.A: la arista en cola de la linea 469 cableada
+    V.39  TAREAS 1 y 2, todas ANTES de la primera insercion
+    V.40  TAREA 1.A CERRADA: los dos U+0008 corregidos        (0 nodos)
+    V.41  TAREA 1.A CERRADA: la 498 releida contra el grafo   (0 nodos)
+
+### La letra
+
+> **HAY DOS CLASES DE VUELTA.**
+>
+> **VUELTA DE INSERCION:** abre **SIN tareas de reparacion**. Su unico trabajo es **meter
+> candidatos al grafo por la aduana**, con sus guardas de dato intactas (fidelidad `D.30`,
+> cerrojo, censo, tallado).
+>
+> **VUELTA DE SANEAMIENTO:** corre **UNA de cada CINCO**, **sin insertar nada**, y paga la
+> deuda.
+>
+> **TODA DEUDA VA A `docs/loop/DEUDA.jsonl` con su cita y su vuelta de origen**: aristas en
+> cola, relecturas, cifras mal derivadas, rotulos, propuestas de doctrina.
+>
+> **UNICA EXCEPCION:** **una guarda de DATO en rojo** (`gate`, cerrojo, censo no
+> decreciente, fidelidad con puente) **bloquea en el acto**, porque **eso no es deuda: es
+> averia.**
+
+### El auditor encarga, no bloquea
+
+> **SU ACTA PUEDE DEJAR COMO MAXIMO UNA TAREA BLOQUEANTE** para la vuelta siguiente, **y
+> solo si cita la guarda de dato en rojo que la justifica.** Todo lo demas lo escribe en
+> `DEUDA.jsonl`.
+>
+> **Un acta con mas de una bloqueante sin guarda roja es CAIDA DE REPORTE del auditor.**
+
+**POR QUE ESTO ES SANO Y NO UN INDULTO:** la deuda **no se perdona, se agenda**. Sigue
+escrita, con su cita y su vuelta de origen, y **se paga junta**, que ademas es mas barato:
+cuatro reparaciones en una vuelta cuestan menos que cuatro vueltas con una reparacion cada
+una. **Lo que se acaba es que una arista de hace dieciseis vueltas decida cuantos nodos
+entran hoy.**
+
+### El austero, con cifra
+
+> **Si un turno pasa de `10` USD sin que la vuelta sea de saneamiento, el acta lo declara
+> con el desglose de en que se fue.**
+
+**Hoy la media es `14,92` por turno**, asi que esto no es teorico: **es la mayoria.** No
+prohibe gastar; **obliga a decir en que**, que es lo unico que deja decidir despues.
+
+> ### **CORRECCION DECLARADA, 21 sep 2026: EL AUSTERO DECLARA, NO PARA**
+>
+> *Punto 2 de la decision del fundador del 21 sep 2026, archivada en
+> `docs/loop/paradas/2026-09-21-el-precio-del-extractor-DECISION.md`.*
+>
+> **El encargo de la vuelta `54` escribio:** *si tras DOS vueltas el turno sigue por
+> encima de `8` USD, el bucle **se para** para revisarlo.* **Eso contradecia esta regla**,
+> que dice **declarar** y no parar, y **lo escribi yo, no el fundador.**
+>
+> **EL AUDITOR NO ELIGIO ENTRE LAS DOS: paro y lo subio**, poniendo los dos textos con su
+> fecha y diciendo que `D.13` no lo resolvia porque una es del banco y otra de un encargo.
+> **Eso es exactamente lo que hay que hacer con una contradiccion.**
+>
+> **LO QUE QUEDA VIGENTE ES ESTA REGLA.** El `se para` de aquel encargo **era un disparador
+> de medicion de una sola vez**, ya cumplido: dio la cifra que no existia (`14,98` de media
+> en regimen ligero, ningun turno bajo `8`). **Se retira.** Un turno sobre `10` USD **se
+> declara con su desglose**, y **la parada la decide el fundador con la cifra delante**.
+>
+> **LA LECCION, Y ES MIA:** un encargo no puede escribir una regla que contradiga al
+> banco. Si hace falta un disparador de una vez, **se escribe diciendo que es de una vez y
+> para que medicion**, y no con el verbo de una regla permanente.
+
+### El instrumento
+
+    python scripts/deuda.py                  lo pendiente, y que clase toca
+    python scripts/deuda.py --anotar ...     contrae una deuda, con su cita
+    python scripts/deuda.py --pagar <id>     la salda, en su vuelta de saneamiento
+    python scripts/deuda.py --clase N        INSERCION o SANEAMIENTO para esa vuelta
+
+**LA CADENCIA SE CUENTA DESDE LA ULTIMA DE SANEAMIENTO**, no contra un calendario fijo: si
+se contara por el resto de una division, **una vuelta perdida correria el turno de todas
+las demas** y el registro dejaria de poder explicar por que le toco a esa.
+
+### Y la doctrina se congela hasta que el mundo 11 cierre
+
+> **LA COLA DE DOCTRINA NO CRECE**, y **el banco no gana reglas nuevas salvo que una guarda
+> de dato lo exija con su cita.**
+
+**Sesenta y cuatro reglas en veinte dias son suficientes para insertar `21` nodos.**
+
+---
+
+## D.57. LA FASE CIEGA SABE QUE NO VE (18 sep 2026, decision del fundador)
+
+*Decision del fundador del 18 sep 2026, punto 3, sobre la parada de la vuelta 44. **El
+numero lo asigna esta sesion**, que es como se hace desde la decision de hoy: el fundador
+dicta sin numero.*
+
+### La caida que la obliga, y la conto el propio caido
+
+El auditor de la `ACTA 43` publico, **en su apertura ciega sellada y repetido en celda de
+tabla**, que `docs/loop/CREDITO_serial.jsonl` se retira **y que nadie lo declaro**. Es
+falso, y lo desmentia un registro que existia mientras el lo escribia:
+
+    $ grep -n "APERTURA CIEGA.*retirados" docs/loop/loop.log | tail -1
+    [2026-09-18 21:22:25] VUELTA 3 : APERTURA CIEGA, retirados: REPORTE.md
+          loop.log ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+
+**El arnes lo venia declarando en la linea de su propio turno desde el 17 sep.** Y el no
+tenia con que mirarlo: **`loop.log` era uno de los retirados.** Se retiraba **el registro
+que dice que se retira.**
+
+> **EL NO SE EXCUSO CON ESO, Y ESA ES LA PARTE QUE HAY QUE LEER:** *ese es exactamente el
+> motivo de la regla. La frase que si podia escribir era de una linea: no puedo comprobar
+> si el arnes lo declara, porque `loop.log` es uno de los retirados.* **Elegi la afirmacion
+> en vez de la limitacion.**
+
+**Fue la tercera de tres tandas seguidas de la misma familia** (`ACTA 41`, `42` y `43`):
+**publicar sin comprobar**. Su racha propia llego a `3 de 3` y el bucle se detuvo.
+
+### La letra
+
+> **`loop.log` NO SE RETIRA EN LA FASE CIEGA.** Es **registro del arnes, no del
+> extractor**, y sin el la ciega **no puede comprobar que se le retiro**.
+>
+> **Y EL ARNES PEGA EN EL PROMPT DE LA FASE CIEGA LA LINEA LITERAL DE `retirados:` DE ESE
+> MISMO TURNO.**
+
+**LAS DOS MITADES HACEN FALTA, y la segunda no es adorno:** mientras `loop.log` se
+retiraba, **las lineas del arnes de esa ventana iban a un fichero provisional**, asi que
+dejar el fichero en su sitio sin quitar ese desvio **habria arreglado la mitad**: el
+fichero estaria, y la linea de ese turno no.
+
+### Lo que se pierde, y por que se acepta
+
+**`loop.log` dice lo que hizo el turno del extractor**, asi que **es una via de
+contaminacion** y por eso se retiraba desde `D.34.2`. Se acepta el cambio porque **es la
+unica sede donde la ciega puede verificar su propia premisa**, y el balance no esta
+reñido: **una ciega que no puede comprobar lo que afirma publica sin comprobar**, y eso ya
+costo tres tandas seguidas. **Una contaminacion posible pesa menos que una caida medida
+tres veces.**
+
+### Caso positivo, con claude falso
+
+**Escenario `17` de `tests/prueba_arnes.sh`.** Desde **dentro** de la fase ciega, el turno
+ciego abre `docs/loop/loop.log`, encuentra la linea de `retirados:` de su propio turno y lo
+deja escrito (`COMPROBADO_EN_LOG`); la prueba exige ademas que **no** aparezca
+`NO_PUEDO_COMPROBARLO`, y que el prompt traiga la linea literal y la orden de **escribir la
+limitacion** cuando algo no se pueda comprobar.
+
+**Negativo:** los otros tres siguen retirados, y el log lo dice con su nombre.
+
+---
+
+## D.58. DOS REGIMENES: EL LIGERO NO TOCA EL GRAFO (19 sep 2026, decision del fundador)
+
+*Decision del fundador del 19 sep 2026. **El numero lo asigna esta sesion.** Nace de una
+cifra: `USD 300` en un dia para `30` candidatos, unos `10` por candidato, contra los `3,60`
+que costo el mismo trabajo cuando corria sin auditoria completa encima.*
+
+### La letra, y la linea que la divide
+
+> **HAY DOS REGIMENES, Y LOS SEPARA UNA SOLA PREGUNTA: SI EL DATO EXISTE YA.**
+
+**REGIMEN DE EXTRACCION** (`MODO_INSERCION=cuarentena`), **ligero, porque nada toca el
+grafo:**
+
+| | |
+|---|---|
+| **el extractor** | mina **TRES capitulos por vuelta**, con techo de **`30` candidatos** |
+| **las guardas** | **tallado y censo**, que son baratos |
+| **la fidelidad `D.30`** | **POR MUESTRA**: **uno de cada tres capitulos entero**, y en los otros dos **una muestra fija de `15` pasos con semilla escrita** |
+| **el auditor** | verifica **la frontera al digito**, coteja la muestra, publica **pasos inventados por capitulo** y escribe **un acta corta** |
+| **lo que NO corre** | **sin fase ciega, sin sello y sin testigo**. No hay cifra sobre el grafo que proteger |
+| **objetivo medido** | **turno bajo `5` USD** |
+
+> **EL DISPARADOR, que es lo que hace de la muestra una alarma y no un adorno:** si la
+> muestra de un capitulo **pasa del `10` por ciento de pasos inventados, ESE CAPITULO SE
+> RELEE ENTERO ANTES DE SEGUIR.** El tope de `D.30` no se toca: lo que cambia es que aqui
+> se mide sobre `15` pasos, **y por eso escala a relectura entera en vez de a veredicto**.
+
+**REGIMEN DE INSERCION** (`MODO_INSERCION=insertar`), **completo y sin quitar nada: es
+donde el dato existe y donde cada guarda se paga sola.**
+
+> **LA RELECTURA DE FIDELIDAD DE UN LOTE SE HACE ENTERA EN SU VUELTA DE INSERCION**, sobre
+> los candidatos que entran, **y no antes**: asi **ningun paso entra al grafo sin haber
+> sido leido contra su libro una vez.**
+
+### Por que esto no afloja nada, y es la parte que hay que entender
+
+**En cuarentena, un candidato mal leido no ha hecho daño todavia**: vive en su bandeja y
+`D.39` no lo deja entrar hasta que su lote cierre. **La relectura no se quita: se mueve al
+momento en que el dato existe**, que es cuando puede hacer daño. Releer los mismos pasos
+dos veces, una en cuarentena y otra al insertar, **cuesta el doble y protege lo mismo**.
+
+**Y LA MUESTRA SIGUE MIDIENDO ALGO REAL:** no certifica el capitulo, **avisa**. Si la
+muestra sale sucia, el capitulo entero se relee ahi mismo, antes de que la vuelta siga.
+
+### La muestra se reproduce, o no es una muestra
+
+    python scripts/muestra_fidelidad.py --libro <clave> --capitulos a,b,c --semilla <texto>
+
+**LA SEMILLA SE ESCRIBE EN EL REPORTE.** Quien audite vuelve a correr el instrumento con
+ella y **tiene que salirle la misma lista**. Se calcula con `sha1` sobre `semilla|clave`,
+sin `random`: el mismo texto da el mismo numero en cualquier maquina.
+
+> **Una muestra que no se puede reproducir no es una muestra: es una eleccion**, y **el que
+> elige sus pasos elige su resultado.**
+
+### La cadencia de saneamiento la hace cumplir el codigo
+
+> **Si desde la ultima vuelta de saneamiento han pasado cinco, LA VUELTA QUE ABRE ES DE
+> SANEAMIENTO Y EL ENCARGO NO PUEDE DECIR OTRA COSA.**
+
+**Se comprueba en la apertura**, dentro de `scripts/guarda_tablero.py`, que es lo que el
+arnes ya llama. **El encargo declara su clase** en su propia linea:
+
+    CLASE DE ESTA VUELTA: EXTRACCION | INSERCION | SANEAMIENTO
+
+**POR QUE HIZO FALTA, CON EL EJEMPLAR MEDIDO:** la vuelta `49` **si corrio como
+saneamiento**, pero **no lo anoto en el registro**, y durante un dia `deuda.py` dijo
+*ultima vuelta de saneamiento: ninguna todavia*. **Lo cazo el auditor solo**, en la
+`ACTA 48`, y escribio la declaracion que faltaba citando donde constaba. **La cadencia
+dependia de que alguien se acordara de anotarla**, que es el genero de remedio que esta
+casa tiene medido que no funciona (`D.35`).
+
+**Caso positivo:** con la ultima de saneamiento en la `49`, un encargo de la `54` que
+declare `EXTRACCION` **no abre**, y la guarda nombra la cuenta. **Negativo:** ese mismo
+encargo declarando `SANEAMIENTO` pasa.
+
+### El alcance, con la cifra delante
+
+> **`grove_high_output` se termina y se inserta**, y **el mundo 11 puede declararse
+> COMPLETO con esos cinco libros si el fundador lo decide al cerrar Grove.**
+>
+> **`gerber_emyth` y `marquet_turn_the_ship` siguen pausados con sus `19` candidatos**, y
+> **se relevan solo si el coste medido del regimen ligero lo permite**. Eso se decide **con
+> la cifra de Grove delante, no ahora.**
+
+---
+
+## D.59. LA CIFRA DERIVADA LA CALCULA EL INSTRUMENTO (20 sep 2026, decision del fundador)
+
+*Decision del fundador del 20 sep 2026 sobre la parada de la vuelta 53. **El numero lo
+asigna esta sesion.** Es la cura de una racha con tres tandas medidas.*
+
+### La letra
+
+> **TODA MEDIA, PORCENTAJE, RAZON O DIFERENCIA QUE EL REPORTE PUBLIQUE LA IMPRIME UN
+> INSTRUMENTO, con su numerador y su denominador NOMBRADOS.**
+>
+> **Una cifra derivada a mano de dos celdas no se publica.**
+
+### El ejemplar, y son tres de la misma figura
+
+La racha `REPORTE` llego a su tope con tres caidas seguidas, y el auditor las resumio en
+una linea: **una frase sobre una cifra cierta que el propio instrumento desmiente dos
+lineas abajo.** La tercera:
+
+    media por pasada CON reloj             : 517,7 s
+    pasadas de aduana lanzadas             : 11
+    pasadas CON fichero de reloj           : 9
+    suma del reloj de aduana               : 4659,0 s
+
+**`11` pasadas en el numerador y `9` en el denominador.** Los `4659,0` s **incluyen la
+pasada de `600` s que la celda de al lado marca sin fichero de reloj**, asi que dividirlos
+entre `9` **mezcla dos poblaciones**. De ahi salia un `-29,2` por ciento donde **la caida
+real por pasada es `-42,1`**.
+
+> **LO QUE CAYO NO FUE LA CIFRA: FUE LA FRASE.** `4659,0` es cierto y `9` es cierto; **lo
+> falso es que uno sea el numerador del otro.** Por eso la regla no pide mas medicion:
+> pide **que quien divide diga entre que divide.**
+
+### La guarda, y por que solo mira la vuelta viva
+
+`scripts/tallar_reporte.py` gana `cifras_derivadas_sueltas()`, y **corre en cada commit**
+dentro de `scripts/cerrar_reporte.py`. **Una frase con cifra derivada sin instrumento en su
+parrafo cae nombrando la frase.**
+
+**SOLO EN LA VUELTA VIVA, Y ESO NO ES UNA CONCESION: es lo que separa una guarda de un
+grito.** Medido antes de escribirla: sobre el reporte entero **caerian `591` lineas** de
+`53` vueltas de historia ya auditada; **sobre la vuelta viva cayeron `2`, y las dos eran de
+verdad.** Una guarda con quinientos noventa y un avisos **se aprende a no mirar**, y esta
+casa ya pago ese precio dos veces.
+
+**Y LA UNIDAD ES EL PARRAFO, NO LA LINEA.** Lo corrigio un falso positivo el mismo dia en
+que la guarda nacio: **la correccion declarada que repara la caida de la vuelta 53 cita su
+instrumento dos lineas por debajo de la cifra**, y por linea la guarda **tumbaba el arreglo
+que ella misma pedia**. Una frase se publica dentro de un parrafo.
+
+**Y LA PALABRA VA JUNTO AL NUMERO**, no solo en la misma linea: sin eso, un encabezado que
+dice *UNA FILA POR CAPITULO Y NO UNA MEDIA* caia por la palabra `media` y por el digito de
+su numero de seccion.
+
+**Caso positivo:** la frase de la vuelta 53 (`la media cayo un 29,2 por ciento`) **cae**.
+**Negativo:** ese mismo parrafo nombrando `.v53/reloj.txt` **pasa**.
+
+### Y la cifra buena entro por regeneracion
+
+    $ python .v54/media_por_pasada.py
+      sobre las 11 pasadas LANZADAS                                423.5 s
+      sobre las 9 pasadas CON fichero de reloj                     517.7 s
+      su media por pasada (vuelta 52)                              731.2 s
+      (423.5 menos 731.2) sobre 731.2                              -42.1 por ciento
+
+**`42,1` por ciento es la caida por pasada, y esa es la que presupuesta.**
+
+---
+
+## D.60. UN MUNDO SE CIERRA CUANDO SUS LIBROS ESTAN INSERTADOS, NO EXTRAIDOS (21 sep 2026, decision del fundador)
+
+*Decision del fundador del 21 sep 2026 sobre la parada feliz de la vuelta 62. **El numero lo
+asigna esta sesion.** Es la regla que faltaba el dia en que una campania cerro su extraccion
+y nadie tenia escrito que eso todavia no era cerrar.*
+
+### La letra
+
+> **UN MUNDO SE DECLARA COMPLETO CUANDO LOS LIBROS DE SU CORTE DEFINITIVO ESTAN
+> INSERTADOS EN EL GRAFO. Una bandeja llena no cierra nada.**
+>
+> **La rama del mundo se funde a `main` cuando el mundo se declara completo, con `gate` y
+> la suite corridas y verdes delante, y ese es el estado que la app consume.**
+>
+> **El bucle no funde: pide.**
+
+### Por que hacia falta escribirla
+
+**El `21` sep de `2026` la extraccion del mundo `11` quedo consumada**, `18` de `18`
+capitulos del ultimo libro leidos y adjudicados, `92` candidatos en bandeja. **Y el grafo
+seguia exactamente donde estaba: `346` nodos, uno solo de Grove.**
+
+**La casa no tenia escrito que esas dos frases no se contradicen.** El auditor de la
+`ACTA 61` tuvo que razonarlo de cero para poder parar sin decir que el mundo estaba cerrado,
+y lo razono bien; pero razonar de cero lo que deberia estar escrito es exactamente lo que
+`D.32` manda evitar.
+
+> **`D.39` ya decia que un libro entra cuando su extraccion cierra. Lo que faltaba es la
+> otra mitad: que la extraccion cerrada NO es el cierre del mundo.**
+
+### El corte del mundo `11`, que esta regla fija
+
+**CINCO LIBROS** (decision del fundador del `21` sep, punto `4`, que confirma el corte del
+mismo dia por la manana):
+
+| | libro | estado al escribirse esta regla |
+|---|---|---|
+| `1` | `onu_consumidor` | **INSERTADO**, `6` nodos |
+| `2` | `smart_who` | **INSERTADO**, `59` nodos |
+| `3` | `zhuo_manager` | **INSERTADO**, `136` nodos |
+| `4` | `scott_radical_candor` | **INSERTADO**, `142` nodos |
+| `5` | `grove_high_output` | extraccion CERRADA, `1` insertado de `92`. **Es lo que falta** |
+
+### El sexto, y la condicion que lo deja entrar
+
+**`gerber_emyth` entra como sexto SOLO si cierra su extraccion antes de que la cuota de la
+semana se agote**, y entonces se cosecha e inserta por el relevo de `D.50`. **Si no la
+cierra, queda en bandeja entero y NO bloquea el cierre del mundo.**
+
+**`marquet_turn_the_ship` solo si sobra semana despues de Gerber.**
+
+> **UNA BANDEJA A MEDIAS NO RETRASA UN CIERRE.** Es la misma letra de `D.32`, *un lote
+> cerrado y sin insertar no bloquea nada*, aplicada un piso mas arriba: **al mundo.**
+
+### Caso positivo y caso negativo
+
+**POSITIVO, y es el de hoy:** el mundo `11` con Grove extraido entero y sin insertar
+**NO esta completo**, la rama **no se funde**, y quien lo pregunte tiene donde leerlo.
+
+**NEGATIVO:** el mundo `11` con los `92` de Grove en el grafo, `gate` verde y la suite
+verde **SI esta completo**, y se funde **aunque Gerber y Marquet sigan con sus `19`
+candidatos en bandeja.**
+
+### Lo que esta regla no toca
+
+**No cambia quien funde.** `AUDITOR_FORJA.md` seccion `3` sigue diciendo que **el bucle no
+funde ramas y el bucle no crea remotos**, y esta regla solo fija **cuando** se pide.
+
+---
+
+## D.61. LO DECLARADO COMO DISCUTIBLE SE HACE O SE CIERRA EN LA MISMA VUELTA (22 sep 2026, decision del fundador)
+
+*Decision del fundador del 22 sep 2026 sobre la parada `G3` del frente `gerber_emyth`.
+**El numero lo asigna esta sesion.** Va con el reinicio de la racha `REPORTE` de esa
+linea y es su condicion.*
+
+### La letra
+
+> **UN DISCUTIBLE PUBLICADO SE EJECUTA O SE CIERRA EN LA MISMA VUELTA QUE LO ESCRIBE.**
+>
+> **Un *ahi nace otro candidato* publicado y no ejecutado es caida de `CIFRA
+> PUBLICADA`, no de `REPORTE`.**
+
+### El ejemplar, y es de los buenos
+
+La vuelta `3` del frente `gerber_emyth` marco su **discutible `1`** sobre `cap_12`,
+**nombro el bloque exacto** (el test de seis semanas del traje azul, `L63`) y **escribio
+la consecuencia con todas las letras**:
+
+    ahi nace otro candidato
+
+**Y publico un candidato del capitulo.** El auditor de la `ACTA G3` leyo los dos bloques
+(`cap_12` `L51`, el saludo nuevo con sus dos ramas; y `cap_12` `L63`, el test del traje
+azul con sus dos etapas y sus ocho prendas), **los adjudico con la vara escrita**
+(`EXTRACTOR.md` `9.1`) **y con un ejemplar de esta misma casa y este mismo libro
+delante**, `unificar_color_forma_vestuario_modelo`, nacido en la vuelta `1` del propio
+frente de un pasaje de la misma forma.
+
+> **NO HUBO QUE MOVER LA VARA. Por eso esto no era parada de doctrina: era trabajo que se
+> anuncio y no se hizo.**
+
+### Por que la especie es `CIFRA PUBLICADA` y no `REPORTE`
+
+**Esta es la parte que la decision cambia, y cambia un precio.**
+
+`REPORTE` cubre lo que el reporte **dice mal**: una seccion que no existe, un *los dos
+discutibles* donde hay tres. **Son erratas de celda, y el sistema las caza solo.** Las dos
+primeras caidas de la racha `G1` a `G3` eran de esa clase.
+
+**La tercera no.** *Publicar que ahi nace un candidato y no hacerlo nacer* no es una celda
+mal tecleada: **es una cifra que el reporte publica sobre el mundo y que el mundo
+desmiente**, exactamente como una media mal dividida (`D.59`). El capitulo da al menos
+`3` y la vuelta publico `1`.
+
+> **Y LA CONSECUENCIA PRACTICA ES LA QUE IMPORTA:** una racha de `REPORTE` que mezcla
+> erratas de celda con trabajo no hecho **llega a su tope por el camino equivocado**, y
+> obliga al fundador a decidir sobre una racha que parece de erratas. El propio auditor
+> de la `G3` lo dijo asi antes de que nadie se lo pidiera: *lo digo asi para que la
+> decision no se tome sobre una racha que parece de erratas.*
+
+`CIFRA PUBLICADA` tiene tope `2` y no `3`, asi que **esta figura muerde antes**, que es lo
+que tiene que hacer.
+
+### Las dos maneras de cumplirla, y las dos valen
+
+1. **SE HACE:** el candidato nace en la misma vuelta, con su ficha y su informe.
+2. **SE CIERRA:** el reporte escribe **por que no nace**, con la linea del libro delante.
+   Un discutible cerrado con motivo **no cae**, igual que un capitulo que da cero no es un
+   hueco cuando esta firmado (`docs/CIERRE_LOTE_7_GROVE.md` `3`).
+
+**LO QUE NO VALE ES DEJARLO ABIERTO**, porque un discutible abierto al cerrar la vuelta
+**es una promesa en una sede que la vuelta siguiente no tiene por que leer.**
+
+### Lo que esta regla no toca
+
+**No mueve ninguna vara de adjudicacion.** `EXTRACTOR.md` `9.1` decide si un pasaje es
+nodo exactamente igual que ayer. Esta regla dice **cuando** hay que decidirlo y **quien
+paga** si no se decide.

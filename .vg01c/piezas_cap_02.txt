@@ -1,0 +1,16 @@
+INSTRUMENTO piezas.py  CONSTANTE TECLEADA DENTRO: SI, los RANGOS de linea, que son MI LECTURA. Las palabras y la cobertura las mide el fichero.
+fichero=fuentes/grove_high_output/cap_02.md
+ROTULO L9    a L13    lineas= 3  palabras=   19
+P0     L15   a L21    lineas= 4  palabras=  273
+P1     L23   a L29    lineas= 4  palabras=  336
+P2     L31   a L35    lineas= 3  palabras=  259
+P3     L37   a L47    lineas= 6  palabras=  582
+P4     L49   a L61    lineas= 7  palabras=  596
+P5     L63   a L67    lineas= 3  palabras=  370
+P6     L69   a L69    lineas= 1  palabras=  237
+P7     L71   a L75    lineas= 3  palabras=  263
+P8     L77   a L79    lineas= 2  palabras=  451
+SUMA DE LAS PIEZAS: 3386 palabras
+CUERPO ENTERO:      3386 palabras
+LINEAS DE CUERPO SIN PIEZA: 0  ->  []
+SOLAPES: NO

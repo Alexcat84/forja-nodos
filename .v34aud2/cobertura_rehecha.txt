@@ -1,0 +1,90 @@
+| linea | rotulo del libro | quien lo tiene | donde |
+|---:|---|---|---|
+| L9 | Ideas for getting/giving/encouraging praise & criticism | **NADIE** | **.** |
+| L15 | SOLICITING IMPROMPTU GUIDANCE | **NADIE** | **.** |
+| L17 | Embrace the discomfort | `abrazar_incomodidad_arrancar_critica_equipo` (L17 a L53) | **GRAFO** |
+| L27 | Here are some tips/techniques I’ve seen work to get the conversation f | dentro de un nodo | . |
+| L55 | ORANGE BOX | `organizar_sistema_recoger_quejas_equipo` (L55 a L63) | **GRAFO** |
+| L57 | Make it not just safe but natural to criticize you | dentro de un nodo | . |
+| L65 | MANAGEMENT “FIX-IT” WEEKS | `correr_semana_arreglo_averias_gestion` (L65 a L71) | **GRAFO** |
+| L73 | GIVING IMPROMPTU GUIDANCE | **NADIE** | **.** |
+| L77 | Be humble | `dar_guia_humilde_tres_tecnicas` (L77 a L95) | **GRAFO** |
+| L81 | Here are some techniques I’ve found helpful to make sure I’m being hum | dentro de un nodo | . |
+| L97 | Be helpful | `dar_guia_util_cuatro_recordatorios` (L97 a L113) | **GRAFO** |
+| L115 | Give feedback immediately | `dar_guia_acto_seis_consejos` (L115 a L135) | **GRAFO** |
+| L137 | In person (if possible) | `elegir_medio_dar_guia_jerarquia_modos` (L137 a L153) | **GRAFO** |
+| L155 | Praise in public, criticize in private | `elogiar_publico_criticar_privado_sus_tres_matices` (L155 a L163) | **GRAFO** |
+| L165 | Don’t personalize | `evitar_personalizar_guia_aceptar_personal` (L165 a L177) | **GRAFO** |
+| L179 | GAUGE YOUR IMPROMPTU GUIDANCE, GET A BASELINE, TRACK YOUR IMPROVEMENTS | `medir_guia_propia_pegatinas_marco` (L179 a L203) | **GRAFO** |
+| L205 | BEING RADICALLY CANDID WITH YOUR BOSS | `practicar_franqueza_radical_jefe_propio` (L205 a L221) | **GRAFO** |
+| L223 | GENDER AND GUIDANCE | **NADIE** | **.** |
+| L227 | Why Radical Candor may be harder for men managing women | **NADIE** | **.** |
+| L249 | We must stop gender politics. | **NADIE** | **.** |
+| L251 | Why gender bias makes Radical Candor harder for women | **NADIE** | **.** |
+| L253 | Gender bias makes it difficult for women to be Radically Candid with b | **NADIE** | **.** |
+| L255 | One common bias women often fall prey to: the “Abrasive Trap.” | **NADIE** | **.** |
+| L271 | “Jessica is really talented, but I wish she’d be less abrasive. She co | **NADIE** | **.** |
+| L273 | “Steve is smart and great to work with. He needs to learn to be a litt | **NADIE** | **.** |
+| L285 | What can you do? | **NADIE** | **.** |
+| L291 | Men: don’t “pull punches” with women | `comprobar_criticas_hombre_mujeres_equipo` (L291 a L293) | **GRAFO** |
+| L295 | Women: demand criticism | `exigir_critica_jefe_reticente` (L295 a L299) | **GRAFO** |
+| L301 | Men and women: things to think about when you feel a woman is being “t | `revisar_critica_mujer_agresiva_cuatro_tacticas` (L301 a L313) | **GRAFO** |
+| L315 | Things to think about if you’re a woman who’s being told, “You’re abra | `responder_critica_abrasiva_cuatro_reglas` (L315 a L329) | **GRAFO** |
+| L331 | FORMAL PERFORMANCE REVIEWS | `entregar_evaluacion_formal_desempenio_nueve_consejos` (L331 a L361) | **BANDEJA** |
+| L363 | PREVENT BACKSTABBING | `impedir_punialadas_espalda_equipo` (L363 a L367) | **BANDEJA** |
+| L365 | You are a boss, not a diplomat. Shuttle diplomacy won’t work for you. | dentro de un nodo | . |
+| L369 | PEER GUIDANCE | `fomentar_guia_reciproca_companieros` (L369 a L381) | **BANDEJA** |
+| L383 | SPEAKING TRUTH TO “POWER” | `conducir_reuniones_salto_nivel_diez_reglas` (L383 a L413) | **BANDEJA** |
+| L415 | Skip level meeting FAQs | `resolver_dudas_frecuentes_reuniones_salto_nivel` (L415 a L425) | **BANDEJA** |
+| L427 | * * * | **NADIE** | **.** |
+| L431 | 7. | **NADIE** | **.** |
+| L433 | TEAM | **NADIE** | **.** |
+
+lineas del fichero          : 434
+lineas dentro de algun nodo : 318
+rotulos con nodo propio     : 20  (GRAFO 15, BANDEJA 5)
+tramos SIN nodo ninguno, con texto dentro:
+  L9 a L9
+  L11 a L11
+  L13 a L13
+  L15 a L15
+  L73 a L73
+  L75 a L75
+  L223 a L223
+  L225 a L225
+  L227 a L227
+  L229 a L229
+  L231 a L231
+  L233 a L233
+  L235 a L235
+  L237 a L237
+  L239 a L239
+  L241 a L241
+  L243 a L243
+  L245 a L245
+  L247 a L247
+  L249 a L249
+  L251 a L251
+  L253 a L253
+  L255 a L255
+  L257 a L257
+  L259 a L259
+  L261 a L261
+  L263 a L263
+  L265 a L265
+  L267 a L267
+  L269 a L269
+  L271 a L271
+  L273 a L273
+  L275 a L275
+  L277 a L277
+  L279 a L279
+  L281 a L281
+  L283 a L283
+  L285 a L285
+  L287 a L287
+  L289 a L289
+  L427 a L427
+  L429 a L429
+  L431 a L431
+  L433 a L433

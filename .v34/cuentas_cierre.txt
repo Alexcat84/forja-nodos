@@ -1,0 +1,11 @@
+| pieza | al abrir | **al cerrar** | delta |
+|---|---:|---:|---:|
+| nodos en `dataset/nodos.jsonl` | 282 | **297** | **+15** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | 410 | **423** | **+13** |
+| de ellos, con alguna anotacion `no_consumada: true` | 14 | **14** | 0 |
+| aristas por `nodos_siguientes` | 107 | **108** | **+1** |
+| aristas por `nodos_previos` | 107 | **108** | **+1** |
+| candidatos en bandeja, lote 4 | 63 | **48** | **-15** |
+| insertados y archivados, lote 4 | 79 | **94** | **+15** |
+| candidatos en bandeja, lote 5 | 3 | **3** | 0 |
+| lote 4 insertado sobre `142`, por ciento | 55,6 | **66,2** | **+10,6** |

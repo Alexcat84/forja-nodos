@@ -1,0 +1,8 @@
+$ ls .v49/ | grep informe   (solo nombres: no abro su contenido)
+informe_cap02_1.txt
+informe_cap02_2.txt
+informe_d027.txt
+informe_d032.txt
+
+$ ls .v49/ | wc -l
+46

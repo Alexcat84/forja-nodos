@@ -1,0 +1,4 @@
+id            : dar_elogio_disciplina_igual_critica
+nodos_previos : ["elogiar_trabajo_especifico_contexto", "pedir_critica_primero_crear_seguridad_psicologica"]
+nodos_siguient: []
+claves        : ['atribuciones', 'condiciones_activacion', 'denominaciones', 'dominio', 'entregable_esperado', 'estado', 'fuentes', 'id', 'ids_alias', 'nodos_previos', 'nodos_siguientes', 'pasos_accionables', 'resumen_teorico', 'titulo']

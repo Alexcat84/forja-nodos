@@ -1,0 +1,19 @@
+LA COLA DE ARISTAS ENTERA, de bitacora/VEREDICTOS.jsonl
+  lineas con arista_en_cola: true            : 11
+  de ellas, YA CABLEADAS en el grafo         : 11
+  esperan a un extremo que no ha entrado     : 0
+  con LOS DOS extremos dentro y SIN cable    : 0   <-- tiene que salir 0
+
+  linea  madre                                                hijo                                                 ambos    cable
+  --------------------------------------------------------------------------------------------------------------------------------
+  265    recorrer_rueda_conscientemente_cultura_equipo        recorrer_rueda_hacer_cosas_equipo                    si       si
+  279    crear_espacio_seguro_madurar_ideas_nuevas            nutrir_ideas_nuevas_reunion_solas                    si       si
+  333    minimizar_impuesto_colaboracion_equipo               proteger_tiempo_equipo_jefe                          si       si
+  371    desplegar_plan_orden_operaciones_franqueza_radical   bloquear_tiempo_pensar_calendario                    si       si
+  425    conducir_reuniones_salto_nivel_diez_reglas           resolver_dudas_frecuentes_reuniones_salto_nivel      si       si
+  428    desplegar_tres_conversaciones_carrera                conversar_historia_vida_descubrir_motivadores        si       si
+  429    desplegar_plan_orden_operaciones_franqueza_radical   desplegar_tres_conversaciones_carrera                si       si
+  438    desplegar_plan_orden_operaciones_franqueza_radical   armar_plan_anual_crecimiento_equipo                  si       si
+  461    desplegar_plan_orden_operaciones_franqueza_radical   evitar_obsesion_ascenso_estatus                      si       si
+  469    desplegar_plan_orden_operaciones_franqueza_radical   contar_historias_propias_explicar_franqueza_radical  si       si
+  473    contar_historias_propias_explicar_franqueza_radical  contar_cuatro_historias_propias_ver_hueco_intencion  si       si

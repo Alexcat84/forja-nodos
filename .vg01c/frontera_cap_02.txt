@@ -1,0 +1,40 @@
+INSTRUMENTO frontera.py  SIN CONSTANTES TECLEADAS: fichero=fuentes/grove_high_output/cap_02.md
+frontmatter termina en la linea 7 (segundo ---)
+L9        1  1
+L11       7  The Basics of Production: Delivering a Breakfast
+L13      11  (or a College Graduate, or a Compiler, or a Convicted Criminal…)
+L15       3  The Three-Minute Egg
+L17      55  To understand the principles of production, imagine that you’re a waiter, which I was while I w
+L19     137  The task here encompasses the basic requirements of production. These are to build and deliver 
+L21      78  Instead, a manufacturer should accept the responsibility of delivering a product at the time co
+L23     106  The first thing we must do is to pin down the step in the flow that will determine the overall 
+L25     102  What must happen is illustrated opposite. To work back from the time of delivery, you’ll need t
+L27     121  Now you come to the toast. Using the egg time as your base, you must allow yourself time to get
+L29       7  Making the eggs is the limiting step.
+L31     103  The idea of a limiting step has very broad applicability. Take, for example, the need to recrui
+L33     110  To apply the basic principle of production, you need to build the sequence here around its most
+L35      46  The principle of time offsets is also present here. Working back from the time the students wil
+L37       2  Production Operations
+L39     108  Other production principles underlie the preparation of our breakfast. In the making of it, we 
+L41     171  Process, assembly, and test operations can be readily applied to other very different kinds of 
+L43     129  The development of a “compiler,” a major piece of computer software, also demonstrates process,
+L45     141  In any case, the development of the individual pieces out of which a compiler is built represen
+L47      31  Breakfast preparation, college recruiting, sales training, and compiler design are very much un
+L49       3  A Few Complications
+L51     122  Real life, as you know, is full of thickets and underbrush. In a schematic flow chart, our brea
+L53      95  How would our model reflect the change in manufacturing flow? Working back from the time of bre
+L55      11  With limited toaster capacity, making the toast becomes the limiting step.
+L57      81  Now let’s complicate things a little further. What happens if you are stuck in line waiting for
+L59     130  If you were a waiter, you could ask the waiter in line next to you to help out—to put your toas
+L61     154  Because each alternative costs money, your task is to find the most cost-effective way to deplo
+L63     159  Let’s take our manufacturing example a step further and turn our business into a high-volume br
+L65       9  The continuous egg-boiler: a constant supply of three-minute eggs.
+L67     202  But continuous operation does not automatically mean lower cost and better quality. What would 
+L69     237  What else could go wrong with our continuous egg-machine? The eggs going into it could be crack
+L71       2  Adding Value
+L73     129  All production flows have a basic characteristic: the material becomes more valuable as it move
+L75     132  A common rule we should always try to heed is to detect and fix any problem in a production pro
+L77     206  Finally, at the risk of being considered hard-hearted, let’s examine the criminal justice syste
+L79     245  If we make some reasoned assumptions about the percentages that move forward at each stage and 
+LINEAS NO VACIAS DE CUERPO: 36
+PALABRAS DE CUERPO (suma de filas): 3386

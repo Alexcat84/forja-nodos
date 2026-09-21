@@ -1,0 +1,19 @@
+lineas del fichero        : 35
+deudas anotadas           : 24
+deudas con linea de pago  : 10  (d001, d002, d003, d004, d008, d010, d021, d023, d027, d032)
+DEUDA VIVA                : 14  (d005, d006, d007, d009, d011, d012, d020, d022, d024, d028, d029, d030, d031, d033)
+
+  d005  [relevo de grove]  De los 15 candidatos de cap_03 de grove, su aduana en seco dijo 9 ENTRARIAN y 6 BLOQUEARIAN: esos 6 se re
+  d006  [relectura]  cap_13 entero esta en 4 de 212, el 1,89 por ciento, pero es SUELO y no firmado: 154 de esos pasos no los 
+  d007  [doctrina]  La cola de doctrina queda congelada en 11 preguntas y no crece hasta que el mundo 11 cierre. La 11 se cla
+  d009  [deuda]  scripts/tabla_de_cierre.py mide la tabla de cierre contra el SIGUIENTE libro por prioridad del tablero, n
+  d011  [deuda]  TODO TECHO QUE EL AUDITOR ESCRIBA LLEVA SU MITAD EN MINUTOS: un techo en candidatos no controla nada cuan
+  d012  [deuda]  SEGUNDO EJEMPLAR MEDIDO de la pregunta 9 de la cola de doctrina: el arnes abrio la fase ciega a las 19:59
+  d020  [maquinaria]  src/arista.py linea 182 teclea veredicto CONTINUA en TODA arista declarada por lectura, 93 de 93 lineas d
+  d022  [maquinaria]  scripts/tabla_de_cierre.py localiza la tabla por la cabecera fija | # | tarea | como cerro |, y cuando el
+  d024  [aduana]  LOS 7 CANDIDATOS DE cap_02 DE grove NO TIENEN INFORME DE ADUANA POR CANDIDATO. Los 15 informes por candid
+  d028  [maquinaria]  src/tablero.py:214 publica en capitulos_minados los capitulos que produjeron al menos UN candidato, y for
+  d029  [maquinaria]  El tallado de D.41 casa las filas por su primera celda, asi que una tabla con la primera celda repetida d
+  d030  [maquinaria]  scripts/tabla_de_cierre.py --escribir escribe SIEMPRE en la misma ruta viva docs/loop/TABLA_DE_CIERRE.txt
+  d031  [aduana]  RETOCAR UNA LINEA DE UN resumen_teorico EN CUARENTENA CUESTA LA ADUANA ENTERA: la correccion declarada de
+  d033  [maquinaria]  test_e_guion_largo_rompe_el_hook salio ROJO una vez de seis corridas sobre un arbol que no cambio: cuatro

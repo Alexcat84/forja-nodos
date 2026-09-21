@@ -1,0 +1,26 @@
+$ grep -n "concerns and objections\|returned to the process phase\|unit test\|basically similar flow" fuentes/grove_high_output/cap_02.md
+41:Process, assembly, and test operations can be readily applied to other very different kinds of productive work. Take, for instance, the task of training a sales force to sell a new product. The three types of production operations can be easily identified. The conversion of large amounts of raw data about the product into meaningful selling strategies comprehensible to the sales personnel is a process step, which transforms data into strategies. The combination of the various sales strategies into a coherent program can be compared to an assembly step. Here the appropriate product-selling strategies and pertinent market data (such as competitive pricing and availability) are made to flow into one presentation, along with such things as brochures, handouts, and flip charts. The test operation comes in the form of a “dry run” presentation with a selected group of field sales personnel and field sales management. If the dry run fails the test, the material must be “reworked” (another well-established manufacturing concept) to meet the concerns and objections of the test audience.
+45:In any case, the development of the individual pieces out of which a compiler is built represents a series of processing steps. Actual working pieces of software are generated out of specifications and basic design know-how. Each piece then undergoes an individual operation called a “unit test.” When one fails, the defective portion of the software is returned to the process phase for “rework.” After all the pieces pass their respective unit tests, they are assembled to form the compiler. Then, of course, a “system test” is performed on the complete product before it is shipped to the customer. Time offsets are used extensively in the task. Because throughput times for the various engineering steps are well established, the timing of the releases of various bodies of software from one stage to another can all be calculated and staged in advance.
+47:Breakfast preparation, college recruiting, sales training, and compiler design are very much unlike one another, but all of them possess a basically similar flow of activity to produce a specific output.
+75:A common rule we should always try to heed is to detect and fix any problem in a production process at the lowest-value stage possible. Thus, we should find and reject the rotten egg as it’s being delivered from our supplier rather than permitting the customer to find it. Likewise, if we can decide that we don’t want a college candidate at the time of the campus interview rather than during the course of a plant visit, we save the cost of the trip and the time of both the candidate and the interviewers. And we should also try to find any performance problem at the time of the unit test of the pieces that make up a compiler rather than in the course of the test of the final product itself.
+
+$ sed -n "41p" fuentes/grove_high_output/cap_02.md | fold -w 110 | tail -6
+ly step. Here the appropriate product-selling strategies and pertinent market data (such as competitive pricin
+g and availability) are made to flow into one presentation, along with such things as brochures, handouts, and
+ flip charts. The test operation comes in the form of a “dry run” presentation with a selected group of fi
+eld sales personnel and field sales management. If the dry run fails the test, the material must be “reworke
+d” (another well-established manufacturing concept) to meet the concerns and objections of the test audience
+.
+
+$ sed -n "45p" fuentes/grove_high_output/cap_02.md | fold -w 110
+In any case, the development of the individual pieces out of which a compiler is built represents a series of 
+processing steps. Actual working pieces of software are generated out of specifications and basic design know-
+how. Each piece then undergoes an individual operation called a “unit test.” When one fails, the defective
+ portion of the software is returned to the process phase for “rework.” After all the pieces pass their re
+spective unit tests, they are assembled to form the compiler. Then, of course, a “system test” is performe
+d on the complete product before it is shipped to the customer. Time offsets are used extensively in the task.
+ Because throughput times for the various engineering steps are well established, the timing of the releases o
+f various bodies of software from one stage to another can all be calculated and staged in advance.
+
+$ sed -n "47p" fuentes/grove_high_output/cap_02.md
+Breakfast preparation, college recruiting, sales training, and compiler design are very much unlike one another, but all of them possess a basically similar flow of activity to produce a specific output.

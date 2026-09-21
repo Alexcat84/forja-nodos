@@ -1,0 +1,39 @@
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : grove_high_output
+  semilla  : v55
+  capitulos: cap_07, cap_09, cap_10
+
+  RELEIDO ENTERO : cap_09
+  POR MUESTRA    : cap_07, cap_10, 15 pasos cada uno
+
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+  --- cap_07: 15 paso(s) en la muestra
+    cerrar_brecha_dos_preguntas_estrategia         P1   Emprende tareas nuevas o modifica las que ya tienes para cer
+    cerrar_brecha_dos_preguntas_estrategia         P2   Contesta la primera pregunta: que necesitas hacer para cerra
+    contestar_dos_preguntas_direccion_objetivos    P3   Toma la respuesta de esa primera pregunta como tu objetivo.
+    contestar_dos_preguntas_direccion_objetivos    P4   Contesta la segunda pregunta: como voy a marcarme el ritmo p
+    definir_entorno_grupo_clientes_proveedores_com P4   Lista a tus proveedores, que son quienes pueden darte determ
+    examinar_demanda_entorno_dos_marcos_temporales P2   Contesta que quieren de ti tus clientes ahora.
+    examinar_demanda_entorno_dos_marcos_temporales P5   Concentrate en la diferencia entre lo que tu entorno te dema
+    fijar_horizonte_ventana_replanificacion        P1   Mira hacia delante mas alla del periodo que vas a implementa
+    fijar_horizonte_ventana_replanificacion        P2   Implementa unicamente la parte del plan que cae dentro de la
+    fijar_horizonte_ventana_replanificacion        P3   Deja todo lo demas para volver a mirarlo, contando con que t
+    fijar_periodo_direccion_objetivos_retroaliment P5   Contrastalo con la base sobre la que planificas: si planific
+    planificar_tres_pasos_demanda_estado_brecha    P1   Monta tu proceso general de planificacion sobre un razonamie
+    planificar_tres_pasos_demanda_estado_brecha    P2   Da el paso 1 estableciendo la necesidad o demanda proyectada
+    planificar_tres_pasos_demanda_estado_brecha    P4   Formula ese paso 2 tambien de la otra manera, que es la que 
+    planificar_tres_pasos_demanda_estado_brecha    P6   Convierte esa conciliacion en la pregunta concreta: que mas,
+
+  --- cap_10: 8 paso(s) en la muestra
+    repartir_supervision_puesto_funcional_mision   P1   Parte de lo que hace falta para que la organizacion hibrida 
+    repartir_supervision_puesto_funcional_mision   P2   Deja que el grupo funcional al que el puesto pertenece fije 
+    repartir_supervision_puesto_funcional_mision   P3   Haz en consecuencia que ese puesto dependa de alguien de la 
+    repartir_supervision_puesto_funcional_mision   P4   Ajusta el tipo de supervision de cada uno de los dos a las n
+    repartir_supervision_puesto_funcional_mision   P5   Encarga al jefe de la unidad de mision que le de las priorid
+    repartir_supervision_puesto_funcional_mision   P6   Encarga al jefe funcional que se asegure de que esta formado
+    repartir_supervision_puesto_funcional_mision   P7   Encarga a ese mismo jefe funcional que supervise y vigile su
+    repartir_supervision_puesto_funcional_mision   P8   Encarga al jefe funcional que cuide su carrera dentro de la 
+
+  --- cap_09: ENTERO, 0 paso(s), no hay muestra que elegir

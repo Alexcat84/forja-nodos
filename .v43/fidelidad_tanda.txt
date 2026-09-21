@@ -1,0 +1,166 @@
+==============================================================================
+RELECTURA DE FIDELIDAD D.30, CANDIDATO A CANDIDATO, CON LA LINEA PEGADA
+==============================================================================
+
+revisar_tres_preguntas_valor_carrera   cap_01   pasos 7 | TRANSCRIPCION 7 | PUENTE 0
+  paso  1  L103  TRANSCRIPCION  1. Are you adding real value or merely passing information along? How do you
+  paso  2  L103  TRANSCRIPCION  1. Are you adding real value or merely passing information along? How do you
+  paso  3  L103  TRANSCRIPCION  1. Are you adding real value or merely passing information along? How do you
+  paso  4  L105  TRANSCRIPCION  2. Are you plugged into what's happening around you? And that includes what'
+  paso  5  L105  TRANSCRIPCION  2. Are you plugged into what's happening around you? And that includes what'
+  paso  6  L107  TRANSCRIPCION  3. Are you trying new ideas, new techniques, and new technologies, and I mea
+  paso  7  L107  TRANSCRIPCION  3. Are you trying new ideas, new techniques, and new technologies, and I mea
+
+construir_flujo_produccion_paso_limitante   cap_02   pasos 10 | TRANSCRIPCION 10 | PUENTE 0
+  paso  1  L19   TRANSCRIPCION  The task here encompasses the basic requirements of production. These are to
+  paso  2  L19   TRANSCRIPCION  The task here encompasses the basic requirements of production. These are to
+  paso  3  L21   TRANSCRIPCION  Instead, a manufacturer should accept the responsibility of delivering a pro
+  paso  4  L21   TRANSCRIPCION  Instead, a manufacturer should accept the responsibility of delivering a pro
+  paso  5  L23   TRANSCRIPCION  The first thing we must do is to pin down the step in the flow that will det
+  paso  6  L23   TRANSCRIPCION  The first thing we must do is to pin down the step in the flow that will det
+  paso  7  L25   TRANSCRIPCION  What must happen is illustrated opposite. To work back from the time of deli
+  paso  8  L25   TRANSCRIPCION  What must happen is illustrated opposite. To work back from the time of deli
+  paso  9  L27   TRANSCRIPCION  Now you come to the toast. Using the egg time as your base, you must allow y
+  paso 10  L27   TRANSCRIPCION  Now you come to the toast. Using the egg time as your base, you must allow y
+
+clasificar_trabajo_proceso_montaje_prueba   cap_02   pasos 7 | TRANSCRIPCION 7 | PUENTE 0
+  paso  1  L39   TRANSCRIPCION  Other production principles underlie the preparation of our breakfast. In th
+  paso  2  L39   TRANSCRIPCION  Other production principles underlie the preparation of our breakfast. In th
+  paso  3  L39   TRANSCRIPCION  Other production principles underlie the preparation of our breakfast. In th
+  paso  4  L45   TRANSCRIPCION  In any case, the development of the individual pieces out of which a compile
+  paso  5  L45   TRANSCRIPCION  In any case, the development of the individual pieces out of which a compile
+  paso  6  L45   TRANSCRIPCION  In any case, the development of the individual pieces out of which a compile
+  paso  7  L45   TRANSCRIPCION  In any case, the development of the individual pieces out of which a compile
+
+rehacer_flujo_paso_limitante_capacidad   cap_02   pasos 6 | TRANSCRIPCION 6 | PUENTE 0
+  paso  1  L51   TRANSCRIPCION  Real life, as you know, is full of thickets and underbrush. In a schematic f
+  paso  2  L51   TRANSCRIPCION  Real life, as you know, is full of thickets and underbrush. In a schematic f
+  paso  3  L51   TRANSCRIPCION  Real life, as you know, is full of thickets and underbrush. In a schematic f
+  paso  4  L51   TRANSCRIPCION  Real life, as you know, is full of thickets and underbrush. In a schematic f
+  paso  5  L53   TRANSCRIPCION  How would our model reflect the change in manufacturing flow? Working back f
+  paso  6  L51   TRANSCRIPCION  Real life, as you know, is full of thickets and underbrush. In a schematic f
+
+equilibrar_capacidad_personal_inventario_plazo   cap_02   pasos 8 | TRANSCRIPCION 8 | PUENTE 0
+  paso  1  L57   TRANSCRIPCION  Now let's complicate things a little further. What happens if you are stuck 
+  paso  2  L57   TRANSCRIPCION  Now let's complicate things a little further. What happens if you are stuck 
+  paso  3  L59   TRANSCRIPCION  If you were a waiter, you could ask the waiter in line next to you to help o
+  paso  4  L59   TRANSCRIPCION  If you were a waiter, you could ask the waiter in line next to you to help o
+  paso  5  L59   TRANSCRIPCION  If you were a waiter, you could ask the waiter in line next to you to help o
+  paso  6  L59   TRANSCRIPCION  If you were a waiter, you could ask the waiter in line next to you to help o
+  paso  7  L61   TRANSCRIPCION  Because each alternative costs money, your task is to find the most cost-eff
+  paso  8  L61   TRANSCRIPCION  Because each alternative costs money, your task is to find the most cost-eff
+
+preferir_inspeccion_proceso_prueba_destructiva   cap_02   pasos 6 | TRANSCRIPCION 6 | PUENTE 0
+  paso  1  L67   TRANSCRIPCION  But continuous operation does not automatically mean lower cost and better q
+  paso  2  L67   TRANSCRIPCION  But continuous operation does not automatically mean lower cost and better q
+  paso  3  L67   TRANSCRIPCION  But continuous operation does not automatically mean lower cost and better q
+  paso  4  L67   TRANSCRIPCION  But continuous operation does not automatically mean lower cost and better q
+  paso  5  L67   TRANSCRIPCION  But continuous operation does not automatically mean lower cost and better q
+  paso  6  L67   TRANSCRIPCION  But continuous operation does not automatically mean lower cost and better q
+
+dimensionar_inventario_materia_prima_reposicion   cap_02   pasos 7 | TRANSCRIPCION 7 | PUENTE 0
+  paso  1  L69   TRANSCRIPCION  What else could go wrong with our continuous egg-machine? The eggs going int
+  paso  2  L69   TRANSCRIPCION  What else could go wrong with our continuous egg-machine? The eggs going int
+  paso  3  L69   TRANSCRIPCION  What else could go wrong with our continuous egg-machine? The eggs going int
+  paso  4  L69   TRANSCRIPCION  What else could go wrong with our continuous egg-machine? The eggs going int
+  paso  5  L69   TRANSCRIPCION  What else could go wrong with our continuous egg-machine? The eggs going int
+  paso  6  L69   TRANSCRIPCION  What else could go wrong with our continuous egg-machine? The eggs going int
+  paso  7  L69   TRANSCRIPCION  What else could go wrong with our continuous egg-machine? The eggs going int
+
+detectar_arreglar_fallo_etapa_menor_valor   cap_02   pasos 6 | TRANSCRIPCION 6 | PUENTE 0
+  paso  1  L73   TRANSCRIPCION  All production flows have a basic characteristic: the material becomes more 
+  paso  2  L73   TRANSCRIPCION  All production flows have a basic characteristic: the material becomes more 
+  paso  3  L75   TRANSCRIPCION  A common rule we should always try to heed is to detect and fix any problem 
+  paso  4  L75   TRANSCRIPCION  A common rule we should always try to heed is to detect and fix any problem 
+  paso  5  L75   TRANSCRIPCION  A common rule we should always try to heed is to detect and fix any problem 
+  paso  6  L75   TRANSCRIPCION  A common rule we should always try to heed is to detect and fix any problem 
+
+elegir_cinco_indicadores_diarios_fabrica   cap_03   pasos 10 | TRANSCRIPCION 10 | PUENTE 0
+  paso  1  L15   TRANSCRIPCION  A hungry public has loved the breakfast you've been serving, and thanks to t
+  paso  2  L17   TRANSCRIPCION  Let's say that as manager of the breakfast factory, you will work with five 
+  paso  3  L19   TRANSCRIPCION  Here are my candidates. First, you'll want to know your sales forecast for t
+  paso  4  L19   TRANSCRIPCION  Here are my candidates. First, you'll want to know your sales forecast for t
+  paso  5  L21   TRANSCRIPCION  Your next key indicator is raw material inventory. Do you have enough eggs, 
+  paso  6  L23   TRANSCRIPCION  Another important piece of information is the condition of your equipment. I
+  paso  7  L25   TRANSCRIPCION  You also must get a fix on your manpower. If two waiters are out sick, you w
+  paso  8  L27   TRANSCRIPCION  Finally, you want to have some kind of quality indicator. It is not enough t
+  paso  9  L27   TRANSCRIPCION  Finally, you want to have some kind of quality indicator. It is not enough t
+  paso 10  L29   TRANSCRIPCION  All these indicators measure factors essential to running your factory. If y
+
+representar_actividad_caja_negra_ventanas   cap_03   pasos 9 | TRANSCRIPCION 9 | PUENTE 0
+  paso  1  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (th
+  paso  2  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (th
+  paso  3  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (th
+  paso  4  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (th
+  paso  5  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (th
+  paso  6  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (th
+  paso  7  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (th
+  paso  8  L77   TRANSCRIPCION  The black box sorts out what the inputs, the output, and the labor are in th
+  paso  9  L79   TRANSCRIPCION  By peering through the windows in the black box, we can get an idea of what 
+
+construir_indicador_linealidad_alerta_temprana   cap_03   pasos 9 | TRANSCRIPCION 9 | PUENTE 0
+  paso  1  L83   TRANSCRIPCION  Leading indicators might include the daily monitors we use to run our breakf
+  paso  2  L83   TRANSCRIPCION  Leading indicators might include the daily monitors we use to run our breakf
+  paso  3  L83   TRANSCRIPCION  Leading indicators might include the daily monitors we use to run our breakf
+  paso  4  L83   TRANSCRIPCION  Leading indicators might include the daily monitors we use to run our breakf
+  paso  5  L83   TRANSCRIPCION  Leading indicators might include the daily monitors we use to run our breakf
+  paso  6  L83   TRANSCRIPCION  Leading indicators might include the daily monitors we use to run our breakf
+  paso  7  L87   TRANSCRIPCION  If we consider a manufacturing unit in this fashion, we may assume that beca
+  paso  8  L87   TRANSCRIPCION  If we consider a manufacturing unit in this fashion, we may assume that beca
+  paso  9  L87   TRANSCRIPCION  If we consider a manufacturing unit in this fashion, we may assume that beca
+
+casar_flujo_fabricacion_flujo_ventas   cap_03   pasos 12 | TRANSCRIPCION 12 | PUENTE 0
+  paso  1  L111  TRANSCRIPCION  Delivering a product that was built to forecast to a customer consists of tw
+  paso  2  L111  TRANSCRIPCION  Delivering a product that was built to forecast to a customer consists of tw
+  paso  3  L111  TRANSCRIPCION  Delivering a product that was built to forecast to a customer consists of tw
+  paso  4  L111  TRANSCRIPCION  Delivering a product that was built to forecast to a customer consists of tw
+  paso  5  L113  TRANSCRIPCION  Because the art and science of forecasting is so complex, you might be tempt
+  paso  6  L113  TRANSCRIPCION  Because the art and science of forecasting is so complex, you might be tempt
+  paso  7  L115  TRANSCRIPCION  At Intel we try to match the two parallel flows with as much precision as po
+  paso  8  L119  TRANSCRIPCION  The ideal is rarely found in the real world. More often, customer orders don
+  paso  9  L119  TRANSCRIPCION  The ideal is rarely found in the real world. More often, customer orders don
+  paso 10  L119  TRANSCRIPCION  The ideal is rarely found in the real world. More often, customer orders don
+  paso 11  L119  TRANSCRIPCION  The ideal is rarely found in the real world. More often, customer orders don
+  paso 12  L121  TRANSCRIPCION  It is a good idea to use stagger charts in both the manufacturing and sales 
+
+dimensionar_plantilla_administrativa_pronostico   cap_03   pasos 7 | TRANSCRIPCION 7 | PUENTE 0
+  paso  1  L125  TRANSCRIPCION  But if we have carefully chosen indicators that characterize an administrati
+  paso  2  L125  TRANSCRIPCION  But if we have carefully chosen indicators that characterize an administrati
+  paso  3  L125  TRANSCRIPCION  But if we have carefully chosen indicators that characterize an administrati
+  paso  4  L123  TRANSCRIPCION  Forecasting future work demands and then adjusting the output of an "adminis
+  paso  5  L125  TRANSCRIPCION  But if we have carefully chosen indicators that characterize an administrati
+  paso  6  L125  TRANSCRIPCION  But if we have carefully chosen indicators that characterize an administrati
+  paso  7  L125  TRANSCRIPCION  But if we have carefully chosen indicators that characterize an administrati
+
+decidir_aceptar_rechazar_material_defectuoso   cap_03   pasos 8 | TRANSCRIPCION 8 | PUENTE 0
+  paso  1  L135  TRANSCRIPCION  When material is rejected at incoming inspection, a couple of choices presen
+  paso  2  L135  TRANSCRIPCION  When material is rejected at incoming inspection, a couple of choices presen
+  paso  3  L135  TRANSCRIPCION  When material is rejected at incoming inspection, a couple of choices presen
+  paso  4  L135  TRANSCRIPCION  When material is rejected at incoming inspection, a couple of choices presen
+  paso  5  L135  TRANSCRIPCION  When material is rejected at incoming inspection, a couple of choices presen
+  paso  6  L135  TRANSCRIPCION  When material is rejected at incoming inspection, a couple of choices presen
+  paso  7  L137  TRANSCRIPCION  While in most instances the decision to accept or reject defective material 
+  paso  8  L137  TRANSCRIPCION  While in most instances the decision to accept or reject defective material 
+
+elegir_inspeccion_barrera_monitorizacion   cap_03   pasos 12 | TRANSCRIPCION 12 | PUENTE 0
+  paso  1  L139  TRANSCRIPCION  Inspections, of course, cost money to perform and further add to expense by 
+  paso  2  L139  TRANSCRIPCION  Inspections, of course, cost money to perform and further add to expense by 
+  paso  3  L139  TRANSCRIPCION  Inspections, of course, cost money to perform and further add to expense by 
+  paso  4  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. Ther
+  paso  5  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. Ther
+  paso  6  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. Ther
+  paso  7  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. Ther
+  paso  8  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. Ther
+  paso  9  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. Ther
+  paso 10  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. Ther
+  paso 11  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. Ther
+  paso 12  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. Ther
+
+==============================================================================
+LA TANDA ENTERA
+  candidatos releidos : 15
+  pasos releidos      : 124
+  TRANSCRIPCION       : 124
+  PUENTE              : 0
+  PASOS INVENTADOS    : 0.00 por ciento
+==============================================================================

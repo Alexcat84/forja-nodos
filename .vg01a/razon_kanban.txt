@@ -1,0 +1,6 @@
+fecha      : 2026-09-16
+veredicto  : SANO
+vecino     : repartir_notas_publicar_reparto_esperado
+levantada  : ['paso_contra_nodo']
+señales    : {"familia_id": 0.0, "paso_contra_nodo": 0.607, "similitud_texto": 0.234}
+razon      : Ajenos, y la senial es de forma y no de contenido. Lei al vecino entero en su bandeja antes de escribir esto: sale de cap_14.md lineas 143 a 151, el capitulo extra de la evaluacion del desempenio, y su trabajo es decidir el reparto de notas que espera la empresa y publicarlo. El mio monta un tablero de tres columnas con notas adhesivas de colores para ver quien es el cuello de botella y medir la actividad ademas del resultado. Ni el mismo capitulo, ni el mismo objeto, ni el mismo entregable. El par que paso_contra_nodo levanta con 0,607 es mi paso 4 (Usalo para lo que el texto dice que sirve al momento: ver rapidamente quien es el cuello de botella) contra su paso 3 (Cuenta con lo que el texto dice que es lo mas importante en general: el proceso de calibracion), y lo que comparten es el andamio de mi propia formula de redaccion, lo que el texto dice que, no el objeto. Las otras dos seniales lo confirman: similitud_texto 0,234 y familia_id 0,000, las dos muy por debajo de su umbral. No hay arista que declarar entre los dos.

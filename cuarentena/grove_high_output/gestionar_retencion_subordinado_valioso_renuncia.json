@@ -1,0 +1,37 @@
+{
+ "id": "gestionar_retencion_subordinado_valioso_renuncia",
+ "titulo": "Gestionar la retencion de un subordinado valioso tras su primer aviso de renuncia: escalar al propio jefe, perseguir cada via para conservarlo y volver con una solucion a sus razones reales",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [
+  {
+   "clave": "grove_high_output",
+   "fecha": "2026-09-20"
+  }
+ ],
+ "denominaciones": {
+  "nombre_largo": "La gestion de la retencion de un subordinado valioso en los dias siguientes a su primer anuncio de renuncia, hasta cerrar una solucion con el",
+  "sigla": "",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "I Quit!"
+   }
+  ]
+ },
+ "condiciones_activacion": "Cuando, tras la primera conversacion en la que un subordinado valioso anuncio que queria renunciar, el mando tiene que buscarle una salida que lo retenga en la empresa.",
+ "entregable_esperado": "Una solucion concreta pactada con el subordinado, sea una nueva asignacion o el arreglo que corresponda, con el subordinado comodo con ella y su objecion de compromiso con otro empleador ya atendida si la tenia.",
+ "pasos_accionables": [
+  "Lleva el problema a tu propio jefe y hazlo participar de la solucion, en vez de cargar con todo tu solo.",
+  "Persigue con energia cada via disponible para retener al subordinado en la empresa, incluida la de transferirlo a otro departamento.",
+  "Si la transferencia parece la salida mas probable, asume tu mismo el papel de gestor de ese proyecto hasta que quede resuelto del todo.",
+  "Vuelve al subordinado con una solucion que atienda sus razones reales para querer irse y que ademas beneficie a la empresa.",
+  "Ayudalo a sentirse comodo con el nuevo arreglo, dejando claro que no se trata de una concesion arrancada por chantaje, sino de corregir algo que ya se deberia haber hecho.",
+  "Si el subordinado dice que ya acepto un puesto en otra empresa, hazle ver que tiene dos compromisos distintos, uno con un futuro empleador que apenas conoce y otro contigo y con la gente con la que trabaja a diario, y que el segundo pesa mas."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_15.md, unidad Cap. 14, titulo textual Two Difficult Tasks. Sale de la PIEZA P27 a P31 de la frontera publicada hoy en .v58ext/frontera.txt, L113 a L121, 478 palabras. FRONTERA DENTRO DEL NODO, PUBLICADA ANTES DE CORTAR (EXTRACTOR.md 10): L113 es la parte 1 de 5 (escalar al jefe), L115 la parte 2 (perseguir vias de retencion y asumir el papel de gestor), L117 la parte 3 (volver con una solucion), L119 la parte 4 (hacerlo sentir comodo) y L121 la parte 5 que cierra la pieza (la objecion del otro empleo). POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el texto sigue en imperativos y en primera persona del deber (you go to your supervisor... you must vigorously pursue... you must become the project manager... you now have to make him feel comfortable... you have to make him quit again), un inventario de PASOS de trabajo del mando en el orden en que el libro los expone, sin adjetivo de adecuacion en el criterio. DE DONDE SALE CADA PASO, uno a uno: paso 1 de L113 (Because you have a major problem, you go to your supervisor for help and advice... It is up to you to make it your supervisor's problem and make him participate in the solution to your problem); paso 2 de L115 (You now must vigorously pursue every avenue available to you to keep him with the firm, even if it means transferring him to another department); paso 3 de L115 (If it seems that is the likely solution, you must become the project manager of that solution until the whole thing is settled); paso 4 de L117 (you may be ready to go back to your subordinate with a solution, one that addresses his real reasons for wanting to quit and one that in turn will benefit the company); paso 5 de L119 (You now have to make him feel comfortable with the new arrangement... We are just doing what we should have done without any of this happening); paso 6 de L121 (You have to make him quit again. You say he's really made two commitments: first to a potential employer he only vaguely knows, and second to you, his present employer... commitments he has made to the people he has been working with daily are far stronger than one made to a casual new acquaintance). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. NO escribo un plazo ni un responsable de seguimiento distintos del propio mando porque el libro no los pone en este tramo: la doctrina se queda en usted, mando, como el que ejecuta y coordina todo el tramo. DISCUTIBLE: comparte el mismo discutible declarado en responder_primer_aviso_renuncia_subordinado sobre si el episodio de I Quit! deberia ser un solo nodo o dos; no lo repito aqui para no duplicar el marcado, y remito a esa ficha."
+}

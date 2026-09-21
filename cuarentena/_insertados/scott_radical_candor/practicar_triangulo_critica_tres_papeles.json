@@ -1,0 +1,49 @@
+{
+  "condiciones_activacion": "Cuando quieres ver el impacto que tus palabras tienen en el otro y elegir palabras mas amables y mas claras, y vas a hacer la segunda de las dos practicas que el texto desarrolla.",
+  "denominaciones": {
+    "nombre_largo": "El triangulo de la critica: la version de juego de papeles de los autores, con sus tres papeles y el marco de dos por dos como cuaderno del observador",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Practice: The Feedback Triangle"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "role play"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "entregable_esperado": "La conversacion ensayada en grupo de tres, con el recorrido del que da la critica dibujado sobre el marco de la franqueza radical por el observador, y el impacto real de sus palabras devuelto por quien la recibio.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ],
+  "id": "practicar_triangulo_critica_tres_papeles",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Junta un grupo de tres.",
+    "Describe una critica que sabes que deberias haber dado a alguien y no diste.",
+    "Pon a un companiero a hacer de destinatario de esa critica.",
+    "Pidele que exagere la respuesta defensiva, porque el texto dice que asi la experiencia es mas eficaz.",
+    "Cuenta con la razon que el texto da de esa exageracion, que parece contradictoria y no lo es: animar a quien recibe la critica a ponerse dificil le lleva a acordarse de malos momentos de critica que ha vivido de verdad en su propia carrera, asi que ser dramatico produce paradojicamente interpretaciones que se sienten mas reales. Y ademas deja que quien da la critica practique los momentos mas duros.",
+    "Pon al otro companiero a hacer de observador, y que siga como va la conversacion usando el marco de la franqueza radical.",
+    "Ten delante los desplomes de conversacion que el texto dice ver todo el tiempo, porque son lo que el observador tiene que cazar: que quien da la critica empiece en franqueza radical y se retire a toda prisa a la empatia ruinosa cuando quien la recibe parece disgustado o incluso llora.",
+    "O que empiece con intencion de ser radicalmente franco pero lo diga con tanta suavidad que acabe siendo ruinosamente empatico.",
+    "O que, frustrado porque quien recibe la critica no se entera, se vuelva odiosamente agresivo.",
+    "O que empiece radicalmente franco, quien recibe la critica se enfade y conteste con groseria, y entonces quien la da se enfade tambien y se vuelva seriamente odioso y agresivo.",
+    "Dibuja esos recorridos sobre el marco de dos por dos de la franqueza radical, porque el texto dice que eso ofrece una especie de brujula que deja a los participantes con sensacion de poder hacer algo.",
+    "Cuenta con lo que esa brujula consigue: cuando se paran un momento a ver el impacto que tienen en los demas, pueden usar esa informacion para devolver la conversacion al carril, en vez de quedarse solo a la defensiva o culpables. La consciencia de uno mismo no tiene por que ser flagelarse.",
+    "Haz que el observador objetivo y tambien quien recibio la critica ayuden a su companiero ensenandole como aterrizo la critica: quiza demasiado agresiva, quiza no lo bastante clara.",
+    "Cuenta con lo que eso mejora: la consciencia de la relacion de todos los participantes, que llegan a ver por los ojos del observador y por los de quien recibio la critica cual fue el impacto de sus palabras, al margen de su intencion.",
+    "Y cuenta con la razon de fondo por la que el texto manda practicar: cuando aprendemos casi cualquier habilidad, matematicas, ventas, ingenieria, piano o deporte, practicamos para mejorar, pero en comunicacion no solemos tener esta clase de practica."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_13.md, unidad Afterword, titulo textual Afterword to the Revised Edition: Rolling Out Radical Candor. Sale de las lineas 59 a 72, bajo el rotulo Practice: The Feedback Triangle de la linea 59. ES LA PIEZA 3 DE LA FRONTERA DE cap_13. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante y en su caso mas facil: el libro escribe Here's how it works y pone su propio INVENTARIO DE ETAPAS Y DE PAPELES, nombrados uno a uno (el grupo de tres, quien describe la critica, quien hace de destinatario, quien hace de observador, el marco como cuaderno), mas los cuatro desplomes que hay que cazar. Deja fichero: el recorrido dibujado sobre el marco. ES PARTE DE LA SERIE D.37 que encabeza mejorar_consciencia_propia_relacional_dos_practicas, y la arista va declarada en el reporte de la vuelta 23. EL TRES DEL ID NO ES UNA CUENTA QUE LE ATRIBUYA YO AL LIBRO: la linea 63 escribe Get together in a group of three, y los tres papeles estan nombrados uno a uno en las lineas 63, 65 y 69. RELECTURA DE FIDELIDAD D.30 EN EL ACTO, paso a paso contra su linea: 15 pasos, 15 TRANSCRIPCION, 0 PUENTE. P1 a P5 de la linea 63; P6 a P10 de la linea 65; P11 y P12 de la linea 67; P13 y P14 de la linea 69; P15 de la linea 71. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto dura el ejercicio, cuantas rondas se hacen, si los tres rotan de papel, y que se hace con lo aprendido despues. El libro pone los papeles y las etapas y no pone ninguna de las cuatro. CORRECCION DECLARADA 18 sep 2026, vuelta 38, relectura de fidelidad D.30 antes de insertar: el paso 10 escribia groseria con tilde en la i, el unico caracter acentuado de los seis candidatos de esta vuelta y uno de los dos unicos de todo dataset/nodos.jsonl, que tiene 318 nodos. Se corrige la grafia contra la de la casa. El paso NO cambia de contenido: cap_13 L65 escribe the feedback receiver gets mad and responds rudely, y eso es lo que el paso dice.",
+  "titulo": "Practicar el triangulo de la critica en grupos de tres para ver el impacto real de tus palabras, con quien da, quien recibe y quien observa"
+}

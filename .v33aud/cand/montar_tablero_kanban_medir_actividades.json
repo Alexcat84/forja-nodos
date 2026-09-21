@@ -1,0 +1,48 @@
+{
+ "condiciones_activacion": "Cuando no ves donde esta el cuello de botella de tu equipo, o cuando por los resultados solos no puedes distinguir quien esta haciendo que las cosas pasen y quien va subido al carro.",
+ "denominaciones": {
+  "nombre_largo": "El tablero kanban con sus tres columnas y sus notas adhesivas de color por persona o equipo, y las cinco cosas que el texto dice que consigue medir la actividad y ensenarla en publico",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "KANBAN BOARDS"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Make activity and workflows visible"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "To Do, In Progress, and Done"
+   }
+  ],
+  "sigla": ""
+ },
+ "dominio": "gestion_equipos",
+ "entregable_esperado": "Un tablero con las tareas de cada persona o equipo colocadas en las tres columnas y movidas por ellos mismos, con el cuello de botella a la vista de todos y la actividad medida ademas del resultado.",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "id": "montar_tablero_kanban_medir_actividades",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "pasos_accionables": [
+  "Monta el tablero en su forma mas simple, que es la que el texto describe: pon un tablero con tres columnas, por hacer, en curso y hecho.",
+  "Compra un monton de notas adhesivas de colores distintos, y que los colores representen a las distintas personas o equipos.",
+  "Haz que cada cual escriba sus tareas en su color de nota y las vaya moviendo entre por hacer, en curso y hecho.",
+  "Usalo para lo que el texto dice que sirve al momento: ver rapidamente quien es el cuello de botella.",
+  "Distingue el tablero del cuadro de mando, porque el texto dice que no son lo mismo: el tablero se centra en las actividades y en el trabajo en curso, y por eso da tiempo al equipo a detectar y resolver problemas antes de que danien los resultados.",
+  "Cuenta con lo primero que consigue hacer visible el avance: da mas autonomia al equipo y no menos, porque cuando todos ven donde estan los cuellos de botella los recursos fluyen solos hacia donde mas falta hacen, sin que la direccion intervenga; y quien va adelantado se motiva para ir a ayudar a quien se ha quedado atras, porque sabe que si esa tarea no sale, su propio trabajo no vale para nada o se retrasa.",
+  "Cuenta con lo segundo: cuando un negocio va muy bien, por los resultados solos cuesta distinguir quien va subido al carro y quien esta haciendo de verdad que las cosas pasen; y cuando la economia se hunde por factores que nadie controla, si solo mides resultados no sabes quien esta achicando agua y quien esta entrando en panico o empeorando las cosas.",
+  "Cuenta con lo tercero: medir actividades y visualizar flujos de trabajo os empuja a ti y a tu equipo a entender de verdad como lo que haceis empuja o no empuja el exito.",
+  "Cuenta con lo cuarto: medir actividades crea mas respeto entre equipos, porque el texto dice que sorprende lo rapido que un equipo da por hecho que otro esta sentado sin hacer nada y cuanto resentimiento se acumula con eso; cuando se ve en un tablero lo que la gente hace, el respeto fluye con bastante naturalidad.",
+  "Cuenta con lo quinto: medir actividades y ensenarlas publicamente tiende a llevar a evaluaciones y ascensos que premian de forma mas consistente a los que mas rinden y son menos propensos a los sesgos que nos acechan a todos, porque cuando queda claro para todos que es lo que empuja el exito es menos probable que el sesgo se cuele en las decisiones de contratar, evaluar y ascender."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 235 a 249, bajo el rotulo KANBAN BOARDS. ES LA PIEZA P13 DE LA FRONTERA DE cap_11. POR QUE ES PROCEDIMIENTO, con D.27 delante: la linea 239 pone el INVENTARIO DE MEDIOS literal y completo, el tablero, las TRES columnas con su nombre, las notas adhesivas de colores y lo que cada color representa, y el acto de moverlas. Transcribir eso no inventa nada. kanban SE ESCRIBE TAL CUAL PORQUE ESTA EN LA LISTA BLANCA DE EXTRACTOR.md 15.1, entre los prestamos asentados. No se traduce y no se caza. EL ORIGEN HISTORICO DE LA LINEA 239 (el ingeniero industrial de Toyota que desarrollo el kanban como sistema de programacion para la cadena de suministro) NO VIAJA A NINGUN PASO: es atribucion, no procedimiento, y por principio 5 y 8 del manual una atribucion va en el campo atribuciones con autor, fuente y fecha de corte. Aqui NO se escribe como atribucion porque el texto no da fecha de corte ni cifra, y una atribucion sin eso es media cifra. Se deja dicho aqui y no se inventa el resto. LOS DOS CASOS NOMBRADOS DE LAS LINEAS 245 Y 249 (el equipo de ventas que atendia llamadas en vez de buscar clientes grandes, y el jefe de analisis que subio del puesto quince al primero) NO VIAJAN A NINGUN PASO, ni sus cifras ni sus anios ni el nombre de sus empresas. Manual 3.5. Lo que viaja es la doctrina que ilustran, y esa esta en las lineas 243, 245, 247 y 249. POR QUE LOS CINCO cuenta con SI SON PASOS Y NO METAS SUELTAS: cada uno es lo que el texto dice que pasa al hacerlo, escrito por el como another reason why, also y tends to. La restriccion 1 de D.27 excluye que un inventario de fines SOSTENGA un nodo; aqui el nodo lo sostiene el inventario de medios de la linea 239, y los cinco efectos entran detras como transcripcion. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 10 pasos, 10 TRANSCRIPCION, 0 PUENTE. P1 a P5 de la linea 239; P6 de la 241; P7 de la 243; P8 de la 245; P9 de la 247; P10 de la 249. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cada cuanto se revisa el tablero, quien lo mantiene, que actividades se miden y cuales no, y donde se cuelga.",
+ "titulo": "Montar un tablero kanban de tres columnas para hacer visibles las actividades y los flujos de trabajo, y medir la actividad y no solo el resultado"
+}

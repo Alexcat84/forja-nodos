@@ -1,0 +1,26 @@
+    pase candidato                                           reloj s  de donde sale la cifra
+    c0   conducir_etapas_modelo_ideal_decision                 600,0  tope del corte, no hay fichero: el comando no llego a escribirlo
+    c1   conducir_etapas_modelo_ideal_decision                 849,0  .v53/reloj_c1.txt
+    c2   decidir_nivel_competente_mas_bajo                       0,0  la puerta tumba antes del barrido, sin fichero de reloj
+    c2b  decidir_nivel_competente_inferior                     603,0  .v53/reloj_c2b.txt
+    c3   vencer_sindrome_grupo_pares_autoconfianza             415,0  .v53/reloj_c3.txt
+    c4   tomar_mando_reunion_pares_presidente_ausente          282,0  .v53/reloj_c4.txt
+    c5   ejercer_poder_posicion_etapa_decision_clara           394,0  .v53/reloj_c5.txt
+    c6   cortar_discusion_libre_momento_justo                  263,0  .v53/reloj_c6.txt
+    c7   zanjar_seis_preguntas_decision_adelantado             254,0  .v53/reloj_c7.txt
+    c8   anunciar_decision_inesperada_reconvocar_reunion       459,0  .v53/reloj_c8.txt
+    c9   planificar_tres_pasos_demanda_estado_brecha           540,0  .v53/reloj_c9.txt
+
+    pasadas de aduana lanzadas             : 11
+    pasadas CON fichero de reloj           : 9
+    suma del reloj de aduana               : 4659,0 s
+    en minutos                             : 77,7 min
+    TECHO DEL ENCARGO                      : 90 min
+    consumido del techo                    : 86,3 por ciento
+    margen que quedaba al cortar           : 12,3 min
+    media por pasada CON reloj             : 517,7 s
+    media de la vuelta 52, como contraste  : 731,2 s   (la que el encargo usa para presupuestar)
+    variacion                              : -29,2 por ciento
+
+    LO QUE EL PRESUPUESTO DEL ENCARGO PREDECIA : 7,4 candidatos en 90 min a 731,2 s
+    LO QUE SALIO                               : 9 candidatos escritos en 77,7 min

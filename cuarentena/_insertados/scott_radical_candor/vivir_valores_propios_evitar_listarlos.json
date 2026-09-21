@@ -1,0 +1,40 @@
+{
+  "id": "vivir_valores_propios_evitar_listarlos",
+  "titulo": "Vivir tus valores y demostrarlos en como diriges, en vez de montar un ejercicio que obligue a la gente a escribirlos y compartirlos",
+  "denominaciones": {
+    "nombre_largo": "Compartir valores: las tres objeciones al ejercicio de valores personales, y lo que si hay que hacer con los tuyos",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "sharing values"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando alguien propone empezar la formacion de jefes con un ejercicio en el que cada cual escribe y comparte sus valores personales.",
+  "entregable_esperado": "Tus valores en contacto contigo y demostrados en como diriges a tu equipo, y ningun ejercicio que obligue a nadie a enseniar los suyos en publico.",
+  "pasos_accionables": [
+    "No montes un ejercicio que obligue a la gente a escribir y compartir sus valores personales, por razonable que suene el argumento a favor, que es que tus valores son lo que te mantiene centrado.",
+    "Cuenta con la primera razon: desarrollar los valores de uno es el trabajo de toda una vida, y se puede sentir abaratado por un ejercicio de cuarenta y cinco minutos.",
+    "Cuenta con la segunda: aunque a algunas personas les resulte util enunciar sus valores de forma explicita, otras sienten que es imposible hacerlo de una manera que signifique algo.",
+    "Y cuenta con la tercera, que el texto pone por la mas importante: mucha gente siente que sus valores son un conjunto de creencias muy privado que no quiere hablar con sus companieros.",
+    "Cuenta tambien con que otros pueden tomarse el ejercicio como una invitacion a predicar, y con que la forma en que hablen de sus valores puede subrayar diferencias que en realidad no tienen nada que ver con su capacidad de trabajar juntos.",
+    "Cuenta con que un ejercicio que obliga a hablar de los valores en publico puede abrir una brecha en vez de ayudar a la gente a encontrar lo que tiene en comun: el texto cuenta el caso de un alumno suyo, un hombre homosexual del medio oeste, que estaba seguro de que si hubiera salido del armario en su trabajo anterior muchos companieros le habrian apartado, y para quien hacer alli un ejercicio de valores habria significado mentir sobre los suyos.",
+    "Manten tu el contacto con tus propios valores personales.",
+    "Y demuestralos en como diriges a tu equipo, no escribiendo cosas como trabajo duro, honradez o innovacion en un papel.",
+    "Vive tus valores, y no intentes listarlos como un ejercicio de recursos humanos."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_08.md, lineas 97 a 103, bajo el rotulo Sharing values, dentro de la seccion RESPECT BOUNDARIES, que no tiene cabeza propia. LA PIEZA ES DE LAS QUE D.27 DEJA PASAR POR LOS PELOS Y DIGO POR QUE: su mitad primera es una objecion razonada, no un procedimiento, pero el libro pone su inventario, las TRES razones enumeradas una a una con primero, segundo y tercero y mas importante, y remata en la linea 103 con tres imperativos propios, manten el contacto, demuestralos dirigiendo, vive tus valores y no los listes. El inventario es de razones y no de medios, asi que lo que sostiene la pieza como nodo NO es el inventario sino los imperativos del final; las razones entran como pasos de cuenta con porque son lo que el libro pone para que el lector sepa por que no montar el ejercicio. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. P1, P2, P3, P4 y P5 de la linea 99; P6 de la 99 y la 101; P7, P8 y P9 de la 103. EL CASO DEL ALUMNO VA NOMBRADO DENTRO DEL P6, y de el se transcribe solo lo que el libro subraya, que un ejercicio de valores le habria obligado a mentir. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: que se hace si el ejercicio ya esta en el programa y no lo decides tu, y como se demuestran los valores dirigiendo, que es lo que el propio libro deja sin desplegar aqui.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

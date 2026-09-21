@@ -1,0 +1,32 @@
+    poblacion de grafo para elogiar_publico_criticar_privado_sus_tres_matices: quitadas 1 lineas suyas
+===== BARRIDO DE elogiar_publico_criticar_privado_sus_tres_matices =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (296 del grafo mas 51 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 1
+  por candidato bloqueado          : menor 1, mediana 1, mayor 1
+  que señal levanta cada vecindad  : similitud_texto 1
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] elogiar_publico_criticar_privado_sus_tres_matices   (elogiar_publico_criticar_privado_sus_tres_matices.json)
+    vecino dar_guia_humilde_tres_tecnicas  [levantada por: similitud_texto]
+      similitud_texto 0.352 | familia_id 0.091 | paso_contra_nodo 0.405
+      paso 2 del candidato contra paso 15 de dar_guia_humilde_tres_tecnicas
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

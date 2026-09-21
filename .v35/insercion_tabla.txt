@@ -1,0 +1,8 @@
+| # | candidato | linea | pasos | nodos tras entrar | vecinos | veredictos |
+|---:|---|---:|---:|---:|---:|---|
+| 1 | `entregar_evaluacion_formal_desempenio_nueve_consejos` | L331 | 22 | **298** | 0 | sin cola |
+| 2 | `impedir_punialadas_espalda_equipo` | L363 | 9 | **299** | 0 | sin cola |
+| 3 | `fomentar_guia_reciproca_companieros` | L369 | 13 | **300** | 0 | sin cola |
+| 4 | `conducir_reuniones_salto_nivel_diez_reglas` | L383 | 31 | **301** | 1 | 1 CONTINUA, arista EN COLA |
+| 5 | `resolver_dudas_frecuentes_reuniones_salto_nivel` | L415 | 16 | **302** | 2 | 1 CONTINUA (cablea) y 1 SANO |
+| | **TOTAL del tramo** | | **91** | | **3** | **3 escritos** |

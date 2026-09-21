@@ -1,0 +1,3 @@
+$ git hash-object docs/loop/ACTA_AUDITOR.md
+a658c0097bb958805b552777defc86bcae1f3434
+(la huella que el prompt me entrega: a658c0097bb958805b552777defc86bcae1f3434)

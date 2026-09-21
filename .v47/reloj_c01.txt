@@ -1,0 +1,7 @@
+    $ time python forja.py informe cuarentena/grove_high_output/detectar_palanca_negativa_actividad_mando.json
+
+real	14m16.566s
+user	0m0.015s
+sys	0m0.000s
+codigo=0
+segundos=857   (derivado por .v47/seg.py de la linea real de time, que es el instrumento)

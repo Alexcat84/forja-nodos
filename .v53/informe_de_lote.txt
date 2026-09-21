@@ -1,0 +1,2 @@
+$ ls docs/loop/INFORME_DE_LOTE.txt
+ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory

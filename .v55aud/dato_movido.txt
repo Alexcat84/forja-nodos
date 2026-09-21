@@ -1,0 +1,2 @@
+$ git diff --stat e63f5af..HEAD -- dataset/ bitacora/ censos/ config/ esquema/ src/ tests/ scripts/ hooks/ docs/BANCO_DE_REGLAS.md
+  (sin salida: ni un fichero)

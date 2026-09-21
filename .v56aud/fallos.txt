@@ -1,0 +1,31 @@
+Si un parrafo vecino bastara, bastaria con citar un instrumento una vez ... ok
+test_un_encabezado_con_la_palabra_media_y_sin_cifra_no_cae (__main__.PruebaCifraDerivada.test_un_encabezado_con_la_palabra_media_y_sin_cifra_no_cae)
+Caia por la palabra `media` y por el digito de su numero de seccion. ... ok
+test_una_cifra_que_no_es_derivada_no_cae (__main__.PruebaCifraDerivada.test_una_cifra_que_no_es_derivada_no_cae)
+`346` nodos no es una media: es un recuento, y lo cubre D.41. ... ok
+
+======================================================================
+FAIL: test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa (__main__.PruebaRegimenLigero.test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\AlexDesk\Documents\forja-nodos\tests\test_aceptacion.py", line 3703, in test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa
+    self.assertEqual(len(impiden), 1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_la_vuelta_49_consta_como_saneamiento_en_el_registro (__main__.PruebaRegimenLigero.test_la_vuelta_49_consta_como_saneamiento_en_el_registro)
+Corrio como saneamiento y NO lo anoto: durante un dia el registro dijo
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\AlexDesk\Documents\forja-nodos\tests\test_aceptacion.py", line 3733, in test_la_vuelta_49_consta_como_saneamiento_en_el_registro
+    self.assertEqual(deuda.ultima_saneamiento(), 49)
+AssertionError: 54 != 49
+
+----------------------------------------------------------------------
+Ran 339 tests in 95.834s
+
+FAILED (failures=2, skipped=1)
+
+========================================================================
+PRUEBA DE ACEPTACION DE forja-nodos
+========================================================================

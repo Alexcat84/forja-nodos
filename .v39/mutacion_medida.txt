@@ -1,0 +1,11 @@
+    $ python -m unittest tests.test_aceptacion.PruebaColaDeDoctrina   # con la pregunta 3 de la sede sin medida_en
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "C:\Users\AlexDesk\Documents\forja-nodos\tests\test_aceptacion.py", line 3844, in test_la_cola_del_repo_trae_las_de_su_sede_con_su_medida
+        self.assertTrue(fila["medida_en"], fila)
+    AssertionError: '' is not true : {'tipo': 'doctrina', 'n': 3, 'pregunta': "Una cifra en denominaciones.nombre_largo que el libro no escribe: 'las cuatro conversaciones' donde L95 nombra tres. Segunda vuelta seguida con la figura, y las dos veces se registro sin cargar, porque D.30 cuenta pasos.", 'medida_en': '', 'bloquea': False, 'levantada_por': 'el auditor de la ACTA 32, linea serial, sobre la vuelta 33', 'cita': 'decision del fundador del 17 sep 2026, punto 4', 'cuando_se_resuelve': 'Se resuelven cuando el mundo 11 cierre, salvo que alguna bloquee a una linea, y entonces sube sola.'}
+    
+    ----------------------------------------------------------------------
+    Ran 5 tests in 0.030s
+    
+    FAILED (failures=1)

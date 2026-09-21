@@ -1,0 +1,6 @@
+HEAD (antes de la correccion)     4505 caracteres  sha1 b3bc37aa10a219cb5b0e4f580fa865990499dfc5
+arbol (despues)                   4505 caracteres  sha1 b3bc37aa10a219cb5b0e4f580fa865990499dfc5
+
+texto que alimenta senal 1 y senal 3 IDENTICO : True
+entregable_esperado cambiado                  : True
+campos con diferencia                         : ['entregable_esperado']

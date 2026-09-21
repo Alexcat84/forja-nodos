@@ -1,0 +1,42 @@
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : grove_high_output
+  semilla  : v57
+  capitulos: cap_11, cap_12, cap_13
+
+  RELEIDO ENTERO : cap_13
+  POR MUESTRA    : cap_11, cap_12, 15 pasos cada uno
+
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+  --- cap_11: 15 paso(s) en la muestra
+    elegir_modo_control_motivacion_factor_cua      P1   Cuando tengas que decidir con que modo controlar una conduct
+    elegir_modo_control_motivacion_factor_cua      P2   Mide ese entorno con un indice compuesto que combine su comp
+    elegir_modo_control_motivacion_factor_cua      P3   Reconoce que identificar cual de los modos de control convie
+    elegir_modo_control_motivacion_factor_cua      P4   Cruza las dos variables en un cuadro de cuatro cuadrantes: m
+    elegir_modo_control_motivacion_factor_cua      P5   Si la motivacion es de interes propio y el factor CUA es baj
+    elegir_modo_control_motivacion_factor_cua      P6   Si la motivacion se mueve hacia el interes de grupo con el f
+    elegir_modo_control_motivacion_factor_cua      P7   Si la orientacion de interes de grupo y el factor CUA son am
+    elegir_modo_control_motivacion_factor_cua      P8   Si el factor CUA es alto y la motivacion sigue siendo de int
+    escalonar_complejidad_puesto_empleado_nuevo    P1   Cuando incorpores a un empleado nuevo, cuenta con que su mot
+    escalonar_complejidad_puesto_empleado_nuevo    P2   Dale un puesto claramente estructurado, con un factor CUA ba
+    escalonar_complejidad_puesto_empleado_nuevo    P3   Cuenta con que si le va bien, empezara a sentirse mas a gust
+    escalonar_complejidad_puesto_empleado_nuevo    P5   Cuenta con que, a medida que pase el tiempo, ira ganando una
+    escalonar_complejidad_puesto_empleado_nuevo    P7   Trae gente joven a puestos de nivel relativamente bajo y bie
+    escalonar_complejidad_puesto_empleado_nuevo    P8   Cuenta con que, con el tiempo, compartiran experiencias con 
+    escalonar_complejidad_puesto_empleado_nuevo    P9   Cuenta con que iran aceptando, incluso disfrutando, el mundo
+
+  --- cap_12: 11 paso(s) en la muestra
+    diagnosticar_capacidad_motivacion_prueba_vida  P1   Cuando una persona no este haciendo su trabajo, cuenta con q
+    diagnosticar_capacidad_motivacion_prueba_vida  P2   Para saber cual de las dos es, aplica esta prueba mental sim
+    diagnosticar_capacidad_motivacion_prueba_vida  P3   Si la respuesta es si, es decir, si podria hacerlo con su vi
+    diagnosticar_capacidad_motivacion_prueba_vida  P4   Si la respuesta es no, es decir, si no podria hacerlo ni con
+    diagnosticar_nivel_motivacion_reaccion_aumento P1   Usa esta prueba sencilla para ubicar a alguien en la jerarqu
+    diagnosticar_nivel_motivacion_reaccion_aumento P2   Si lo que le importa es la suma absoluta del aumento que rec
+    diagnosticar_nivel_motivacion_reaccion_aumento P3   Si en cambio lo que le importa es como su aumento se compara
+    fijar_meta_direccion_objetivos_mitad_probabili P1   Cuando el impulso a estirarse no salga espontaneo, crea tu, 
+    fijar_meta_direccion_objetivos_mitad_probabili P2   Dentro de un sistema de direccion por objetivos, fija los ob
+    fijar_meta_direccion_objetivos_mitad_probabili P3   Cuenta con que el rendimiento tiende a ser mayor cuando todo
+    fijar_meta_direccion_objetivos_mitad_probabili P4   Trata esta manera de fijar objetivos como algo extremadament
+
+  --- cap_13: ENTERO, 14 paso(s), no hay muestra que elegir

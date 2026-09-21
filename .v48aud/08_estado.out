@@ -1,0 +1,7 @@
+$ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl
+    346 dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+   1086 total
+
+$ git diff --stat HEAD~1 HEAD -- dataset/ bitacora/ config/ censos/
+(sin salida = la vuelta 48 no movio ni una linea de esas cuatro sedes)

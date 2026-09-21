@@ -436,7 +436,7 @@ invocar_claude() { # rol modelo prompt salida vuelta [testigo]
 if [ "$MODO_INSERCION" = "insertar" ]; then
   MANDATO_INSERCION="LA INSERCION ESTA ABIERTA EN ESTA CORRIDA (MODO_INSERCION=insertar, que es el default desde D.39). PERO SOLO PARA UN LOTE CERRADO EN EXTRACCION cuyo informe haya certificado el acta del auditor: los candidatos de un lote ABIERTO se quedan en cuarentena hasta que su lote cierre, y meterlos antes es una caida de dato. NINGUN NODO ENTRA SIN PASAR POR LA ADUANA: se inserta con python forja.py insertar, UN CANDIDATO POR VEZ, y si la aduana bloquea lees a los vecinos y escribes el veredicto con su razon antes de insertar. Aplicas D.36 (el orden que lee) y D.37 (la serie que dice cuantas partes tiene), los veredictos van a bitacora/VEREDICTOS.jsonl y los insertados a cuarentena/_insertados/<libro>/ en el mismo acto. No existe la carga masiva."
 else
-  MANDATO_INSERCION="NO INSERTAS NADA EN ESTA CORRIDA (MODO_INSERCION=cuarentena, que es el default). TODO candidato que escribas queda en cuarentena/<libro>/<id_propuesto>.json y pasa por la aduana EN SECO, con python forja.py informe cuarentena/<libro>/<id_propuesto>.json en el mismo acto en que lo escribes; el que caeria lo corriges y lo reintentas. NO uses python forja.py insertar, ni aunque el candidato este perfecto: LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO UN DEFAULT, y en esta corrida no la ha dado. Al cerrar el capitulo corres el informe del lote entero y pegas su saldo en el reporte."
+  MANDATO_INSERCION="NO INSERTAS NADA EN ESTA CORRIDA (MODO_INSERCION=cuarentena, que es el default). TODO candidato que escribas queda en cuarentena/<libro>/<id_propuesto>.json y pasa por la aduana EN SECO, con python forja.py informe cuarentena/<libro>/<id_propuesto>.json en el mismo acto en que lo escribes; el que caeria lo corriges y lo reintentas. NO uses python forja.py insertar, ni aunque el candidato este perfecto: LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO UN DEFAULT, y en esta corrida no la ha dado. NO LANZAS EL INFORME DEL LOTE ENTERO EN TU TURNO. D.43 lo saca del turno porque NO CABE, y esta medido: mas de tres horas para los 83 candidatos del lote 4, y el fichero queda en la cabecera. Lo corre el ARNES como paso propio y te lo entrega sellado con su hash. Si lo lanzas tu, gastas el turno y no lo terminas."
 fi
 
 PROMPT_EXTRACTOR_BASE="Estas en el repo forja-nodos. Lee docs/loop/EXTRACTOR.md (tus reglas permanentes) y despues docs/loop/PROMPT_SIGUIENTE.md (tu encargo). Ejecuta el encargo al pie de la letra. $MANDATO_INSERCION Abre docs/loop/REPORTE.md al empezar y hazlo crecer por anexion, con los discutibles marcados antes de saber si aciertas. Commitea y pushea TODO a la rama activa antes de terminar."
@@ -535,6 +535,25 @@ PROMPT_APERTURA_CIEGA="Estas en el repo forja-nodos, en la APERTURA CIEGA de tu 
 apertura_ciega() { # $1 = vuelta
   local vuelta="$1" refugio="" sello fecha reaparecidos=""
 
+  # LA FASE CIEGA SE APAGA EN CUARENTENA (D.58, y la escribio el fundador el 19 sep;
+  # llego al codigo el 21). ESPECIE ARNES: una regla escrita que no llego a src/.
+  #
+  # POR QUE, Y NO ES AHORRO POR AHORRO: la fase ciega existe para que el auditor
+  # clasifique SIN VER el reporte, y el sello para que no reescriba su clasificacion
+  # despues de verlo (D.34.2, D.46). Las dos protegen una cifra SOBRE EL GRAFO. En
+  # cuarentena no hay ninguna: los candidatos viven en su bandeja y D.39 no los deja
+  # entrar hasta que su lote cierre. **No se protege nada y se paga igual.**
+  #
+  # LO QUE COSTABA, MEDIDO EN LAS VUELTAS 54 Y 55: 6,81 y 10,88 USD de turno ciego,
+  # unos 9 por vuelta, en dos vueltas que no tocaron el grafo.
+  #
+  # EN INSERTAR NO CAMBIA NADA. Ahi el dato existe y las dos guardas se pagan solas.
+  if [ "$MODO_INSERCION" = "cuarentena" ]; then
+    log "VUELTA $vuelta : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)"
+    SELLO_ESPERADO=""
+    return 0
+  fi
+
   # LA FASE CIEGA RETIRA CUATRO FICHEROS, NO UNO (D.34, ampliada por decision
   # del fundador del 11 sep 2026).
   #
@@ -548,7 +567,20 @@ apertura_ciega() { # $1 = vuelta
   # PROMESA, que es el genero de remedio que esta casa tiene medido que no
   # funciona (D.35: un remedio que se cumple acordandose no es un remedio).
   # Ahora no estan.
-  local retirar="REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json"
+  # LA FASE CIEGA SABE QUE NO VE (18 sep 2026, decision del fundador).
+  #
+  # `loop.log` SALE DE LA RETIRADA. Es registro DEL ARNES, no del extractor, y sin el
+  # la ciega no puede comprobar que se le retiro: se retiraba el registro que dice que
+  # se retira. El auditor de la ACTA 43 publico, sellado, que `CREDITO_serial.jsonl` se
+  # retiraba "y nadie lo declaro"; el arnes lo venia declarando en la linea de su propio
+  # turno desde el 17 sep, y el no tenia con que mirarlo. Cargo la caida el solo, y su
+  # racha llego a 3 de 3 por tres caidas de la misma familia: publicar sin comprobar.
+  #
+  # LO QUE SE PIERDE Y POR QUE SE ACEPTA: `loop.log` dice lo que hizo el turno del
+  # extractor, asi que es una via de contaminacion. Pero es la UNICA sede donde la ciega
+  # puede verificar su propia premisa, y una ciega que no puede comprobar lo que afirma
+  # publica sin comprobar, que es peor: eso ya costo tres tandas.
+  local retirar="REPORTE.md ultimo_extractor.json ultimo_auditor.json"
 
   rm -f "$APERTURA"
   refugio="$(mktemp -d)"
@@ -557,8 +589,11 @@ apertura_ciega() { # $1 = vuelta
     [ -f "$LOOP/$fichero" ] && mv "$LOOP/$fichero" "$refugio/$fichero"
   done
 
-  # Y EL LOG DE ESTA VENTANA VA APARTE, porque su fichero acaba de irse.
-  LOG_ACTIVO="$refugio/loop_provisional.log"
+  # EL LOG YA NO SE DESVIA, y es la mitad que hace util lo de arriba: mientras
+  # `loop.log` se retiraba, sus lineas de esta ventana iban a un fichero provisional,
+  # asi que la linea de `retirados:` DE ESTE TURNO tampoco estaba donde la ciega podria
+  # leerla. Dejar el fichero y seguir escribiendo fuera habria arreglado la mitad.
+  LOG_ACTIVO=""
 
   # LO QUE UN AUDITOR LE DEJA AL SIGUIENTE LO ENTREGA EL ARNES, NO LA MEMORIA
   # (D.40). Se extrae del acta anterior ANTES de invocar, y se antepone al
@@ -568,13 +603,50 @@ apertura_ciega() { # $1 = vuelta
   herencia="$(python forja.py herencia 2>&1)"
   local heredados
   heredados="$(printf '%s' "$herencia" | grep -c '^HEREDADO [0-9]* ' || true)"
-  log "VUELTA $vuelta : APERTURA CIEGA ($MODELO_AUDITOR), retirados: $retirar"
+  # LA FASE CIEGA NO VE EL REGISTRO DE CREDITO (D.52 punto 3, 17 sep 2026,
+  # correccion declarada del fundador sobre su propia D.48).
+  #
+  # EL DEFECTO, MEDIDO POR EL AUDITOR DE LA ACTA 32: el registro trae el campo
+  # `cita` de cada tanda, y ahi cabe una conclusion del reporte copiada dentro. A
+  # ese auditor le dijo `11 SANO` ANTES de que contara los suyos. El arnes retiraba
+  # cuatro ficheros por una puerta y D.48 abrio otra.
+  #
+  # SE RETIRA SOLO ALREDEDOR DEL TURNO DEL CIEGO, Y EL ORDEN IMPORTA: `herencia` ya
+  # esta calculada arriba, porque forja.py herencia PREGUNTA al registro de que
+  # linea es (D.48), y retirarlo antes haria que D.40 entregara CERO remedios
+  # creyendo que la linea acaba de nacer. Primero se calcula, luego se retira.
+  local credito_fichero
+  credito_fichero="CREDITO_$(python -c "import sys; sys.path.insert(0, '.'); from src import credito; print(credito.linea_actual())" 2>/dev/null || echo serial).jsonl"
+  [ -f "$LOOP/$credito_fichero" ] && mv "$LOOP/$credito_fichero" "$refugio/$credito_fichero"
+
+  local linea_retirados="VUELTA $vuelta : APERTURA CIEGA ($MODELO_AUDITOR), retirados: $retirar $credito_fichero"
+  log "$linea_retirados"
   log "  hereda $heredados remedio(s) del acta anterior, entregados en el prompt (D.40)"
+  log "  y solo eso: remedios con su motivo, sin cifras ni conclusiones (D.52)"
   invocar_claude "auditor ciego" "$MODELO_AUDITOR" \
-    "$herencia
+    "LO QUE ESTE TURNO NO VE, DICHO POR EL ARNES Y NO POR TI (D.57)
+
+    $linea_retirados
+
+Esa es la linea literal que el arnes acaba de escribir en docs/loop/loop.log para TU
+turno. loop.log NO se retira: puedes abrirlo y comprobarla. Si vas a afirmar algo sobre
+lo que se te retiro, compruebalo ahi.
+Y SI NO PUEDES COMPROBAR ALGO, ESCRIBE LA LIMITACION en vez de la afirmacion (AUDITOR_FORJA.md 1.1: una busqueda negativa no se
+puede citar).
+
+$herencia
 
 $PROMPT_APERTURA_CIEGA" \
     "$LOOP/ultimo_apertura.json" "$vuelta" "$APERTURA"
+
+  # EL REGISTRO DE CREDITO VUELVE EN CUANTO EL CIEGO TERMINA, antes de que D.40 se
+  # compruebe: esa comprobacion es del arnes, no del ciego, y necesita saber de que
+  # linea es el acta. Si reaparecio durante el turno, se dice, igual que los otros.
+  if [ -f "$LOOP/$credito_fichero" ]; then
+    reaparecidos="$reaparecidos $credito_fichero"
+    rm -f "$LOOP/$credito_fichero"
+  fi
+  [ -f "$refugio/$credito_fichero" ] && mv "$refugio/$credito_fichero" "$LOOP/$credito_fichero"
 
   # Y SE COMPRUEBA ANTES DE SELLAR. Un remedio entregado y no declarado es un
   # remedio perdido, que es justo lo que D.40 vino a impedir.
@@ -665,6 +737,12 @@ $PROMPT_APERTURA_CIEGA" \
 }
 
 verificar_sello() { # $1 = vuelta. Cierto si la apertura ciega sigue siendo la sellada.
+  # SIN FASE CIEGA NO HAY SELLO QUE VERIFICAR (D.58). Se dice, no se calla: un
+  # verificador que devuelve verde sin haber mirado nada es peor que uno ausente.
+  if [ "$MODO_INSERCION" = "cuarentena" ]; then
+    log "  sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)"
+    return 0
+  fi
   local vuelta="$1" sello_actual sello_guardado
   [ -f "$APERTURA" ] || return 0
   sello_actual="$(git hash-object "$APERTURA" 2>/dev/null || echo sin-sello)"
@@ -736,6 +814,49 @@ y esta vez tiene que declararla.
 EOF
 }
 
+para_alexis_por_tablero() { # vuelta salida_de_la_guarda
+  cat > "$LOOP/PARA_ALEXIS.md" <<EOF
+# PARA_ALEXIS: el encargo no puede abrir el libro que declara (D.49, D.51)
+
+La vuelta $1 no llego a gastar un turno. El arnes volvio a medir el tablero, leyo
+que libro DECLARA docs/loop/PROMPT_SIGUIENTE.md, y ese libro no le corresponde a
+esta linea.
+
+Lo que midio la guarda:
+
+$2
+
+QUE SIGNIFICA. D.49: un libro, un dueño a la vez. Ninguna linea abre ni continua
+un libro cuyo ESTADO no sea SIN EMPEZAR con dueño NINGUNO, o PAUSADO con dueño
+NINGUNO y ya COSECHADO. Y D.51: ninguna linea elige libro, toma el de PRIORIDAD
+mas baja cuyo estado lo permita.
+
+QUE NO SIGNIFICA. No dice que el trabajo anterior este mal, ni que ninguna cifra
+sea falsa. Dice que la vuelta iba a trabajar sobre un libro que otra linea tiene
+abierto, o sobre uno que no le toca por el orden del mundo 11.
+
+POR QUE ESTA GUARDA EXISTE. El 17 sep 2026 el lote 4 estaba a punto de cerrar, y
+D.32 abre el lote siguiente SIN PARADA entre medias. El siguiente por orden era
+el lote 5, que se estaba extrayendo en otra rama con 9 candidatos dentro. Lo unico
+que lo impedia era una frase escrita a mano en el encargo, y D.35 dice lo que vale
+eso: un remedio que se cumple acordandose no es un remedio.
+
+Estado: rama $RAMA, hash $(git rev-parse --short HEAD 2>/dev/null || echo desconocido).
+
+Como retomar, y son dos caminos distintos:
+
+  1. Si el libro que toca esta PAUSADO en otra rama, lo que falta es el RELEVO
+     (D.50): el frente detenido y sin proceso vivo, su rama cosechada a esta, el
+     tablero puesto al dia, y solo entonces se continua desde el capitulo
+     siguiente al ultimo minado. El paso de fundir es del fundador: el bucle no
+     funde ramas.
+
+  2. Si el encargo simplemente declaraba otro libro, corrige su linea
+     'LIBRO DE ESTA VUELTA:' con el que 'python forja.py tablero --siguiente'
+     nombra, borra este fichero y relanza.
+EOF
+}
+
 para_alexis_por_sello() { # vuelta sellado actual
   cat > "$LOOP/PARA_ALEXIS.md" <<EOF
 # PARA_ALEXIS: la apertura ciega se modifico despues de ver el reporte
@@ -778,6 +899,25 @@ for i in $(seq 1 "$MAX_VUELTAS"); do
     break
   fi
 
+  # LA GUARDA DEL TABLERO (D.49, D.51). Vuelve a medir el tablero, lee que libro
+  # DECLARA el encargo, y comprueba dos cosas distintas: que esta linea pueda
+  # tomarlo (D.49, un libro un dueño a la vez) y que sea el que el orden del
+  # mundo 11 le da (D.51, ninguna linea elige libro).
+  #
+  # VA DESPUES DE LAS DOS DE ARRIBA Y ANTES DE GASTAR UN TURNO, que es donde una
+  # guarda cuesta menos: el 17 sep 2026 el lote 4 estaba a punto de cerrar y D.32
+  # habria abierto el lote 5 SIN PARADA, que se estaba extrayendo en otra rama con
+  # 9 candidatos dentro. Lo unico que lo impedia era una frase escrita a mano.
+  if ! guarda_tablero="$(python scripts/guarda_tablero.py 2>&1)"; then
+    echo "$guarda_tablero" >> "$LOOP/loop.log"
+    log "DETENIDO en la vuelta $i: la guarda del tablero esta en ROJO (D.49, D.51)."
+    log "  El encargo no puede abrir el libro que declara. Ver $LOOP/TABLERO.jsonl"
+    para_alexis_por_tablero "$i" "$guarda_tablero"
+    break
+  fi
+  echo "$guarda_tablero" >> "$LOOP/loop.log"
+  log "  tablero comprobado: la vuelta puede abrir (D.49, D.51)"
+
   # La medicion del rol inicial se hace DESPUES del primer pull, para que mida
   # el estado de verdad de la rama y no una copia local rezagada.
   if [ "$i" -eq 1 ]; then
@@ -808,6 +948,23 @@ for i in $(seq 1 "$MAX_VUELTAS"); do
   if ! verificar_sello "$i"; then
     log "DETENIDO en la vuelta $i: sello de la apertura ciega roto. Ver $LOOP/PARA_ALEXIS.md"
     exit 1
+  fi
+
+  # LA FILA DEL TABLERO SE PONE AL DIA AL CERRAR EL TURNO, NO SOLO AL ABRIRLO (d102).
+  #
+  # La guarda de arriba mide al ABRIR, que es donde una guarda cuesta menos. Pero la
+  # vuelta escribe candidatos DESPUES de esa medida, asi que la fila envejece dentro
+  # del propio turno y el acta la lee vieja. Medido el 21 sep 2026 en el frente
+  # gerber_emyth (ACTA G3 6.2): la fila publicaba candidatos_en_bandeja 10 y la
+  # bandeja tenia 11.
+  #
+  # NO PARA LA VUELTA SI FALLA, y va con su motivo: el tablero es un espejo del dato,
+  # no una guarda de dato. Un espejo que no se pudo limpiar se dice y se sigue; si
+  # parase aqui, un fallo de espejo costaria el turno que acaba de pagarse.
+  if python forja.py tablero --escribir >/dev/null 2>&1; then
+    log "  tablero puesto al dia al cerrar la vuelta $i (d102)"
+  else
+    log "  AVISO: el tablero no se pudo poner al dia al cerrar la vuelta $i (d102)"
   fi
 
   git pull --rebase origin "$RAMA" >/dev/null 2>&1 || true

@@ -1,0 +1,4 @@
+$ sed -n "329p" fuentes/scott_radical_candor/cap_13.md
+How can we handle such moments in our careers? A young woman in a workshop said that she has spaghetti dinners once a month with friends and they share these stories and practice what they could have said. The practice doesn’t help with the past, but it does with the future - because unfortunately these situations repeat themselves over and over, especially around issues of diversity and inclusion.
+$ sed -n "331p" fuentes/scott_radical_candor/cap_13.md | cut -c1-190
+We loved the idea of a “practice dinner,” and wondered if there were a safe way to do this at work. We described the idea to Kelly Leonard, from The Second City, the improv theater where

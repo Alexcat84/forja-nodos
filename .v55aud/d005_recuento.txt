@@ -1,0 +1,22 @@
+$ recuento propio de los 15 informes por candidato de cap_03 en .v2g/
+  [BLOQUEARIA]  archivar_indicadores_resolver_problemas  poblacion=371 vecinos=2
+  [BLOQUEARIA]  construir_grafico_escalonado_pronosticos  poblacion=371 vecinos=3
+  [BLOQUEARIA]  construir_indicador_tendencia_patron  poblacion=371 vecinos=3
+  [BLOQUEARIA]  elegir_fabricar_pedido_pronostico  poblacion=371 vecinos=1
+  [BLOQUEARIA]  elegir_indicador_salida_trabajo_administrativo  poblacion=363 vecinos=2
+  [BLOQUEARIA]  emparejar_indicadores_efecto_contraefecto  poblacion=358 vecinos=1
+  [ENTRARIA]  casar_flujo_fabricacion_flujo_ventas  poblacion=371 vecinos=0
+  [ENTRARIA]  construir_indicador_linealidad_alerta_temprana  poblacion=371 vecinos=0
+  [ENTRARIA]  decidir_aceptar_rechazar_material_defectuoso  poblacion=371 vecinos=0
+  [ENTRARIA]  dimensionar_plantilla_administrativa_pronostico  poblacion=371 vecinos=0
+  [ENTRARIA]  elegir_cinco_indicadores_diarios_fabrica  poblacion=358 vecinos=0
+  [ENTRARIA]  elegir_inspeccion_barrera_monitorizacion  poblacion=371 vecinos=0
+  [ENTRARIA]  representar_actividad_caja_negra_ventanas  poblacion=371 vecinos=0
+  [ENTRARIA]  simplificar_trabajo_reducir_numero_pasos  poblacion=371 vecinos=0
+  [ENTRARIA]  variar_frecuencia_inspeccion_nivel_calidad  poblacion=371 vecinos=0
+
+  BLOQUEARIAN 6   ENTRARIAN 9   CAERIAN 0   vecindades 12   poblaciones de 358 a 371
+
+$ commits por ficha de cap_03 (la mordida de d005)
+  con MAS de un commit : 1   (variar_frecuencia_inspeccion_nivel_calidad, de12cdb, y es un ENTRARIA)
+  con UN solo commit   : 14

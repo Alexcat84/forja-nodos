@@ -1,0 +1,13 @@
+$ sed -n "41p" fuentes/grove_high_output/cap_02.md | fold -w 100 | tail -6
+tegies and pertinent market data (such as competitive pricing and availability) are made to flow int
+o one presentation, along with such things as brochures, handouts, and flip charts. The test operati
+on comes in the form of a “dry run” presentation with a selected group of field sales personnel 
+and field sales management. If the dry run fails the test, the material must be “reworked” (anot
+her well-established manufacturing concept) to meet the concerns and objections of the test audience
+.
+
+$ sed -n "45p" fuentes/grove_high_output/cap_02.md | fold -w 100 | sed -n "3,6p"
+d basic design know-how. Each piece then undergoes an individual operation called a “unit test.”
+ When one fails, the defective portion of the software is returned to the process phase for “rewor
+k.” After all the pieces pass their respective unit tests, they are assembled to form the compiler
+. Then, of course, a “system test” is performed on the complete product before it is shipped to 

@@ -1,0 +1,43 @@
+$ grep -n "fase ciega\|apertura ciega\|INSERCION NO INTENTADA" docs/loop/loop.log | tail -20
+2472:[2026-09-18 21:44:49]   apertura ciega sellada: 1ad4aeeeecae2bda136c34a876071bdd60e752ea
+2591:[2026-09-18 22:08:03]   sello de la apertura ciega verificado: intacto tras el turno
+2665:[2026-09-19 00:39:37]   apertura ciega sellada: f77735218347f86542ac2541d98e8503831754d1
+2786:[2026-09-19 01:09:13]   sello de la apertura ciega verificado: intacto tras el turno
+2817:[2026-09-19 03:11:20]   apertura ciega sellada: 7b746b009b648000860e93394ad98751ef904920
+2939:[2026-09-19 03:38:15]   sello de la apertura ciega verificado: intacto tras el turno
+2970:[2026-09-19 06:28:50]   apertura ciega sellada: ad47d5dce84435c593850e39e39d2685084cf1ad
+3096:[2026-09-19 06:52:40]   sello de la apertura ciega verificado: intacto tras el turno
+3127:[2026-09-19 09:14:04]   apertura ciega sellada: 5dcb7dfba102030d8fe45e0816831b7fb294f08e
+3261:[2026-09-19 09:44:47]   sello de la apertura ciega verificado: intacto tras el turno
+3292:[2026-09-19 12:09:05]   apertura ciega sellada: e3c0555500a0a25079b95744b83b29acf35b826b
+3429:[2026-09-19 12:39:42]   sello de la apertura ciega verificado: intacto tras el turno
+3460:[2026-09-19 13:53:58]   apertura ciega sellada: b2c015251cc980ec545212ed5e5404d4654befa6
+3604:[2026-09-19 14:21:36]   sello de la apertura ciega verificado: intacto tras el turno
+3635:[2026-09-19 16:13:47]   apertura ciega sellada: 83091f0a2582bb64539087961ae55bfbd06f7115
+3785:[2026-09-19 16:57:39]   sello de la apertura ciega verificado: intacto tras el turno
+3816:[2026-09-19 20:09:15]   apertura ciega sellada: d03049c16d4536c2d9e1f5dc45f9453566d67fe0
+3975:[2026-09-19 20:49:18]   sello de la apertura ciega verificado: intacto tras el turno
+4006:[2026-09-19 23:12:34]   apertura ciega sellada: 7167f0bc1afe9743ebe11249c75470612f20c145
+4170:[2026-09-19 23:44:54]   sello de la apertura ciega verificado: intacto tras el turno
+
+$ grep -n "MODO_INSERCION" docs/loop/loop.log | tail -8
+1025:[2026-09-17 06:31:34] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+1146:[2026-09-17 09:25:09] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+1161:[2026-09-17 10:02:53] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+1410:[2026-09-17 16:49:37] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+2182:[2026-09-18 10:29:41] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+2594:[2026-09-18 23:10:52] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+2632:[2026-09-19 00:12:29] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+4173:[2026-09-20 12:08:04] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+
+$ grep -n "USD" docs/loop/loop.log | tail -10
+3603:[2026-09-19 14:21:36] auditor listo (USD 12.9934725), 1651s, intento 1 de 7
+3615:[2026-09-19 15:29:23] extractor listo (USD 17.295073499999994), 4066s, intento 1 de 7
+3619:[2026-09-19 16:13:35] auditor ciego listo (USD 13.500983499999997), 2650s, intento 1 de 7
+3784:[2026-09-19 16:57:38] auditor listo (USD 18.335679000000003), 2623s, intento 1 de 7
+3796:[2026-09-19 18:44:36] extractor listo (USD 25.370457), 6413s, intento 1 de 7
+3800:[2026-09-19 20:09:04] auditor ciego listo (USD 14.770705), 5067s, intento 1 de 7
+3974:[2026-09-19 20:49:18] auditor listo (USD 12.472663999999998), 2396s, intento 1 de 7
+3986:[2026-09-19 22:39:11] extractor listo (USD 28.252059), 6592s, intento 1 de 7
+3990:[2026-09-19 23:12:23] auditor ciego listo (USD 9.092236499999999), 1991s, intento 1 de 7
+4169:[2026-09-19 23:44:54] auditor listo (USD 12.770366), 1931s, intento 1 de 7

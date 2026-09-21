@@ -1,0 +1,16 @@
+$ python scripts/deuda.py
+DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+  registro: docs/loop/DEUDA.jsonl
+  pendientes: 7    pagadas: 0
+
+  id     vuelta  especie            que
+  --------------------------------------------------------------------------------------------
+  d001   grove v2 remedio de grove   CORREGIR SIN BORRAR la cifra 17 de AA.1.e a 15, y ar
+  d002   grove v2 remedio de grove   CORREGIR SIN BORRAR el rotulo 'ya vive en el grafo d
+  d003   grove v2 remedio de grove   REESCRIBIR EL PASO 6 de variar_frecuencia_inspeccion
+  d004   grove v2 remedio de grove   Los 2 veredictos que grove adjudico CONTINUA por la 
+  d005   grove v2 relevo de grove    De los 15 candidatos de cap_03 de grove, su aduana e
+  d006   41      relectura          cap_13 entero esta en 4 de 212, el 1,89 por ciento, 
+  d007   41      doctrina           La cola de doctrina queda congelada en 11 preguntas 
+
+  ultima vuelta de saneamiento: ninguna todavia

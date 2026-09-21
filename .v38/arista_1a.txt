@@ -1,0 +1,11 @@
+$ python forja.py arista --madre desplegar_plan_orden_operaciones_franqueza_radical --hijo contar_historias_propias_explicar_franqueza_radical --paso 4 --razon "..."
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: desplegar_plan_orden_operaciones_franqueza_radical
+  hijo : contar_historias_propias_explicar_franqueza_radical
+  paso citado de la madre: 4
+    Empieza por la etapa que el texto pone primera, y su rotulo es comparte tus historias.
+  señales del par: familia_id 0.2, paso_contra_nodo 0.477, similitud_texto 0.175
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: desplegar_plan_orden_operaciones_franqueza_radical > contar_historias_propias_explicar_franqueza_radical
+  razon en bitacora/VEREDICTOS.jsonl

@@ -1,0 +1,3 @@
+src/tablero.py:89:    for grupo in ("liberados", "cerrados_en_extraccion"):
+src/tablero.py:187:    cerrados = declarado.get("cerrados_en_extraccion") or {}
+Binary file src/__pycache__/tablero.cpython-312.pyc matches

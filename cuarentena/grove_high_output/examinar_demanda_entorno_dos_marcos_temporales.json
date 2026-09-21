@@ -1,0 +1,42 @@
+{
+ "id": "examinar_demanda_entorno_dos_marcos_temporales",
+ "titulo": "Examinar la demanda de tu entorno en dos marcos temporales y trabajar sobre la diferencia, sin rebajarla por lo que creas que puedes entregar",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [
+  {
+   "clave": "grove_high_output",
+   "fecha": "2026-09-20"
+  }
+ ],
+ "denominaciones": {
+  "nombre_largo": "El analisis de la diferencia entre lo que tu entorno te demanda ahora y lo que esperas que te demande dentro de un ano, con la prohibicion de rebajar la demanda por la capacidad",
+  "sigla": "",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "difference analysis"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "demand forecast"
+   }
+  ]
+ },
+ "condiciones_activacion": "Cuando ya tienes establecido que constituye tu entorno y tienes que convertirlo en demanda, o cuando te sorprendas bajando la demanda que declaras porque no crees que se pueda entregar.",
+ "entregable_esperado": "Las tres preguntas contestadas por escrito y la diferencia entre el ahora y el dentro de un ano puesta aparte, declarada sin rebajar por lo que creas que se puede entregar.",
+ "pasos_accionables": [
+  "Examina tu entorno en dos marcos temporales una vez que has establecido que lo constituye: ahora, y en algun momento futuro, digamos dentro de un ano.",
+  "Contesta que quieren de ti tus clientes ahora.",
+  "Contesta si los estas satisfaciendo.",
+  "Contesta que esperaran de ti dentro de un ano.",
+  "Concentrate en la diferencia entre lo que tu entorno te demanda ahora y lo que esperas que te demande dentro de un ano.",
+  "No pases todavia a que medidas practicas puedes tomar para atender el asunto, porque en esta fase eso solo confunde la cuestion.",
+  "No rebajes la demanda que declaras por lo que creas que la otra parte puede entregar: una demanda rebajada asi deja que nunca se prepare la capacidad para la demanda real."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_07.md, PIEZA P10 de la frontera publicada en la vuelta 53 (docs/loop/REPORTE.md L50890), tramo L29 a L31, 217 palabras, y de ningun otro tramo. POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el libro pone sus ETAPAS (two time frames, now and sometime in the future) y las PREGUNTAS literales que hay que contestar en cada una, y ademas zanja con un NO expreso la pregunta de si en esta fase se piensa en medidas practicas. No es un adjetivo de adecuacion: es una respuesta cerrada del autor. DE DONDE SALE CADA PASO: pasos 1 a 5 de L29, paso 6 y paso 7 de L31. Uno a uno: paso 1 (Once you have established what constitutes your environment, you need to examine it in two time frames, now, and sometime in the future, let's say in a year); paso 2 (What do my customers want from me now?); paso 3 (Am I satisfying them?); paso 4 (What will they expect from me one year from now?); paso 5 (You need to focus on the difference between what your environment demands from you now and what you expect it to demand from you a year from now); paso 6 (Should you at this stage consider what practical steps you can actually take to handle matters? No, that will just confuse the issue); paso 7 (If marketing knew they could sell 100 widgets per month but thought that manufacturing could only deliver ten, and so submitted a demand forecast of ten units, manufacturing would never tool up to satisfy the real demand). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. EL PASO 7 MERECE SU PROPIA DECLARACION, porque es donde estaba la tentacion mas seria: el libro lo cuenta como ILUSTRACION con cifras (100 widgets y ten units), y yo NO llevo esas cifras al paso ni a atribuciones, porque son del ejemplo y no de la doctrina, que es lo que manual 3.5 manda; lo que si es del libro es la regla que el ejemplo demuestra, y esa la escribo. Si el fundador lee que la regla sin sus cifras ya no es del libro, cae DENTRO de mi marcado. LOS OTROS SITIOS DE TENTACION EN LOS QUE NO ESCRIBI: NO fijo el marco futuro en un ano cerrado, porque el libro dice let's say in a year, y por eso el paso 1 dice digamos dentro de un ano y conserva el digamos. NO escribo cada cuanto se repite el examen. NO escribo quien lo hace. NO escribo que hacer CON la diferencia, porque eso es el paso 3 de la planificacion y vive en su propia pieza P14. NI UNA CIFRA A atribuciones. ARISTA QUE ANUNCIO Y NO CABLEO HOY: parte de la cabeza planificar_tres_pasos_demanda_estado_brecha (P5), caso de D.37, cableada el dia de la insercion porque esta vuelta NO INSERTA. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: el tramo cubre dos lineas del fichero (L29 y L31) y podria partirse en dos nodos, el analisis de la diferencia y la prohibicion de rebajar la demanda. Lo dejo en uno porque la frontera de la vuelta 53 ya adjudico L29 a L31 como una sola pieza con un solo nodo, y partirlo ahora seria moverle la frontera a una vuelta anterior sin correccion declarada."
+}

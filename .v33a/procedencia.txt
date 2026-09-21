@@ -1,0 +1,17 @@
+PROCEDENCIA Y VOLUMEN DE LOS 12 QUE ENTRAN, leido de dataset/nodos.jsonl (282 nodos, arbol 1ae327e)
+
+  id                                           pasos  fuente                   localizador
+  integrar_trabajo_vida_mejor_version              5  scott_radical_candor     (sin localizador)
+  definir_receta_propia_mantenerse_centrado        9  scott_radical_candor     (sin localizador)
+  agendar_cuidados_propios_cumplirlos              5  scott_radical_candor     (sin localizador)
+  ceder_autoridad_unilateral_equipo               15  scott_radical_candor     (sin localizador)
+  dominar_arte_socializar_trabajo                  9  scott_radical_candor     (sin localizador)
+  evitar_presion_social_actos_equipo               6  scott_radical_candor     (sin localizador)
+  construir_confianza_equipo_tiempo_solas          7  scott_radical_candor     (sin localizador)
+  vivir_valores_propios_evitar_listarlos           9  scott_radical_candor     (sin localizador)
+  demostrar_apertura_visiones_distintas           10  scott_radical_candor     (sin localizador)
+  manejar_contacto_fisico_regla_platino            9  scott_radical_candor     (sin localizador)
+  reconocer_emociones_propias_avisar_equipo        7  scott_radical_candor     (sin localizador)
+  dominar_reacciones_emociones_ajenas             11  scott_radical_candor     (sin localizador)
+
+  TOTAL de pasos_accionables en los 12 nodos que entran: 102

@@ -1,0 +1,37 @@
+$ python forja.py informe cuarentena/grove_high_output/construir_flujo_produccion_paso_limitante.json
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 414   (346 del grafo mas 68 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : familia_id 1, paso_contra_nodo 1, similitud_texto 2
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] construir_flujo_produccion_paso_limitante   (construir_flujo_produccion_paso_limitante.json)
+    vecino retirar_barreras_politicas_metodo  [levantada por: paso_contra_nodo]
+      similitud_texto 0.108 | familia_id 0.000 | paso_contra_nodo 0.614
+      paso 4 del candidato contra paso 1 de retirar_barreras_politicas_metodo
+    vecino rehacer_flujo_paso_limitante_capacidad  [levantada por: similitud_texto, familia_id]
+      similitud_texto 0.412 | familia_id 0.429 | paso_contra_nodo 0.430
+      paso 9 del candidato contra paso 5 de rehacer_flujo_paso_limitante_capacidad
+    vecino preferir_inspeccion_proceso_prueba_destructiva  [levantada por: similitud_texto]
+      similitud_texto 0.397 | familia_id 0.000 | paso_contra_nodo 0.421
+      paso 8 del candidato contra paso 6 de preferir_inspeccion_proceso_prueba_destructiva
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

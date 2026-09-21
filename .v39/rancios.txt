@@ -1,0 +1,4 @@
+    $ python forja.py rancios | grep -c "\[RANCIO\]"
+    51
+    $ python forja.py rancios | grep "practicar_triangulo" | grep -c eec451c2e48944c6
+    4

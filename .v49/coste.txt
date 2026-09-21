@@ -1,0 +1,14 @@
+| pieza del turno | instrumento | corridas | segundos | por ciento del turno |
+|---|---|---:|---:|---:|
+| pasada de aduana de `d027` | `forja.py informe` | 1 | 559.4 | 12.1 |
+| pasada de aduana de `d032` | `forja.py informe` | 1 | 1479.4 | 32.1 |
+| pasada de aduana de `cap_02` `P2` | `forja.py informe` | 1 | 855.8 | 18.6 |
+| pasada de aduana de `cap_02` `P5` | `forja.py informe` | 1 | 1174.4 | 25.5 |
+| las 20 corridas de `d033` | `unittest PruebaE` | 20 | 449.7 | 9.7 |
+| prueba de aceptacion al cierre | `tests/test_aceptacion.py` | 1 | 94.8 | 2.1 |
+| **TOTAL MEDIDO CON RELOJ** | | **25** | **4613.6** | **100.0** |
+
+pasadas de aduana        : 4 de un techo de 5,  4069.0 s,  88.2 por ciento del turno
+de ellas, correccion de prosa : 2,  2038.8 s,  44.2 por ciento del turno
+media por pasada de aduana    : 1017.3 s   (la cifra que la vuelta 50 tiene que usar, 47.5.c)
+techo en minutos              : 4613.6 s medidos de un techo de 4949 s, o sea 76.9 min de 82.5

@@ -1,0 +1,2 @@
+$ ls fuentes/grove_high_output/cap_*.md | wc -l
+18

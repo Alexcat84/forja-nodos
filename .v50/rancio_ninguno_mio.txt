@@ -1,0 +1,4 @@
+$ grep -c "RANCIO" .v50/cerrar_reporte.txt
+72
+$ grep -c "<las 9 fichas corregidas y los 3 candidatos nuevos>" .v50/cerrar_reporte.txt
+0

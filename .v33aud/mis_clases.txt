@@ -1,0 +1,67 @@
+MIS CLASES, ESCRITAS A CIEGAS ANTES DE DESTAPAR NI UNA RAZON DE LA BITACORA
+(HEREDADO 2 de la ACTA 30, correccion declarada 7.3: este fichero es anterior a
+la primera corrida que IMPRIMA UNA RAZON. En esta fase no he corrido ninguna.)
+
+TANDA: los 3 ficheros que `git diff --name-only 74ddc8c HEAD -- cuarentena/_insertados/`
+saca del dato. Poblacion del barrido: grafo menos el propio candidato, y las
+bandejas las pone la aduana (metodo vigente de D.38.5).
+
+montar_tablero_kanban_medir_actividades        MI CLASE: SANO
+pasear_organizacion_hallar_problemas_pequenios MI CLASE: SANO
+debatir_decidir_asuntos_cultura_evitar_delegar MI CLASE: SANO
+
+FIDELIDAD D.30, PASO A PASO, LEIDA CONTRA fuentes/scott_radical_candor/cap_11.md:
+  montar_tablero_kanban        10 pasos: 1..10 TRANSCRIPCION, 0 PUENTE
+  pasear_organizacion           9 pasos: 1..9  TRANSCRIPCION, 0 PUENTE
+  debatir_decidir_cultura       6 pasos: 1..6  TRANSCRIPCION, 0 PUENTE
+
+MI DISCUTIBLE 1: el nombre_largo del kanban dice "las cinco cosas que el texto
+dice que consigue". El libro NO escribe la cifra cinco; la escribo yo contando
+los cinco parrafos L241, L243, L245, L247 y L249. El contraste esta en el mismo
+capitulo: el nodo del paseo dice "las tres cosas" y ahi el libro SI escribe
+First, Second, Third (L263, L265, L267). Lo dejo marcado, no lo cargo.
+
+MI DISCUTIBLE 2: `.v32/cabeza.py` publica en su AVISO "cero nodos tecleados en
+este instrumento" y yo mido 1 (`decidir_quien_comunica_cada_cuanto`, L30). Es la
+CABEZA, o sea el sujeto del instrumento y no una celda del mapeo que se rompio.
+Lo dejo marcado, no lo cargo todavia.
+
+MI DISCUTIBLE 3: las 4 pruebas en rojo de tests/test_aceptacion.py NO son cuatro
+guardas rotas: las cuatro las produce mi propia fase ciega. Tres porque
+scripts/tallar_reporte.py corta en `texto_informe` mirando la ruta REAL del
+arbol y no la raiz que se le paso, y una porque el arbol esta sucio con los
+borrados del propio arnes. Lo escribo ANTES de ver el reporte para que no se me
+pueda decir que lo ajuste despues.
+
+------------------------------------------------------------------------
+SEGUNDO BLOQUE, ESCRITO DESPUES DEL BARRIDO Y ANTES DE DESTAPAR NINGUNA RAZON.
+El primer bloque queda intacto a proposito: aquel lo escribi sin saber si la
+aduana levantaria vecino, y este lo escribo sabiendo cual levanto. Corregir el
+primero en su sitio habria borrado la prueba de que la clase fue ciega.
+
+La aduana levanta UN vecino en toda la tanda, y no es de los dos que yo di por
+seguros: es del kanban.
+
+PAR: montar_tablero_kanban_medir_actividades (candidato, cap_11 L235 a L250)
+     contra repartir_notas_publicar_reparto_esperado (bandeja, cap_14 L143 a L151)
+SENIAL: paso_contra_nodo 0.607, paso 4 del candidato contra paso 3 del vecino.
+
+MI CLASE PARA EL PAR: SANO.
+MI RAZON, LEIDA DE LOS PASOS Y NO DE LA SENIAL (D.19):
+  paso 4 del candidato  : "Usalo para lo que el texto dice que sirve al momento:
+                           ver rapidamente quien es el cuello de botella."
+  paso 3 del vecino     : "Cuenta con lo que el texto dice que es lo mas
+                           importante en general: el proceso de calibracion."
+  Lo unico que comparten es el molde de redaccion "lo que el texto dice que".
+  Fuera de ese molde no queda nada comun: un tablero de tres columnas para hacer
+  visible la actividad, contra el reparto de notas de una evaluacion formal.
+  Condiciones distintas, entregables distintos, capitulos distintos, inventarios
+  de medios sin un solo elemento compartido. No es hijo ni gemelo.
+
+MI DISCUTIBLE 4: la senial mordio en el molde del extractor y no en el
+procedimiento. Lo mido: 66 pasos de la poblacion de 348 llevan ese molde.
+
+MIS TRES CLASES DE NODO SIGUEN SIENDO LAS TRES DEL PRIMER BLOQUE: SANO, SANO,
+SANO. Lo que cambia es que una de ellas lleva ahora un veredicto por vecino que
+el extractor tenia que haber escrito (D.8: un SANO sin razon escrita es caida
+aunque acierte), y eso lo compruebo en mi turno normal, no aqui.

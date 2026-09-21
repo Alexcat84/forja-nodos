@@ -1,0 +1,5 @@
+LOS CUATRO HIJOS DEL ORDEN DE OPERACIONES, contra el grafo de hoy
+  arista 49  dar_elogio_disciplina_igual_critica                 en la BANDEJA
+  arista 50  criticar_trabajo_evitar_desanimo                    DENTRO del grafo
+  arista 51  medir_critica_respuesta_oyente_brujula              en la BANDEJA
+  arista 52  fomentar_guia_reciproca_companieros                 DENTRO del grafo

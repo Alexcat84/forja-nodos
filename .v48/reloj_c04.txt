@@ -1,0 +1,8 @@
+    $ time python forja.py informe cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json
+
+
+real	19m48.100s
+user	0m0.015s
+sys	0m0.016s
+codigo=0
+segundos=1188   (derivado por .v47/seg.py de la linea real de time, que es el instrumento)

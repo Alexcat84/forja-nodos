@@ -1,0 +1,9 @@
+poblacion del barrido (D.38.4)
+  dataset/nodos.jsonl        : 346
+  cuarentena (todas)         : 25
+  POBLACION TOTAL            : 371
+  umbrales: similitud 0.35  familia_id 0.3  paso_contra_nodo 0.6
+
+ 1/22  archivar_indicadores_resolver_problemas          vecinos=2   (387s)
+        -> construir_indicador_tendencia_patron   {'similitud_texto': 0.384, 'familia_id': 0.143, 'paso_contra_nodo': 0.42}
+        -> revisar_tres_preguntas_valor_carrera   {'similitud_texto': 0.369, 'familia_id': 0.0, 'paso_contra_nodo': 0.414}

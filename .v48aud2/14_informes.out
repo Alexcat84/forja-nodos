@@ -1,0 +1,55 @@
+sys	0m0.000s
+codigo=0
+segundos=911   (derivado por .v47/seg.py de la linea real de time, que es el instrumento)
+=== informes: veredicto y vecinos ===
+--- .v48/informe_01.txt
+poblacion del barrido       : 386   (346 del grafo mas 40 que esperan en bandejas)
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+[ENTRARIA] usar_calendario_herramienta_planificacion_produccion   (usar_calendario_herramienta_planificacion_produccion.json)
+veredicto escrito por vecino.
+--- .v48/informe_02.txt
+poblacion del barrido       : 387   (346 del grafo mas 41 que esperan en bandejas)
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+  vecinos levantados en total      : 3
+[BLOQUEARIA] decir_no_trabajo_excede_capacidad   (decir_no_trabajo_excede_capacidad.json)
+    vecino usar_calendario_herramienta_planificacion_produccion  [levantada por: similitud_texto]
+    vecino agrupar_tareas_semejantes_aprovechar_preparacion  [levantada por: similitud_texto]
+    vecino identificar_paso_limitante_jornada_desfases  [levantada por: similitud_texto]
+veredicto escrito por vecino.
+--- .v48/informe_03.txt
+poblacion del barrido       : 388   (346 del grafo mas 42 que esperan en bandejas)
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+  vecinos levantados en total      : 3
+[BLOQUEARIA] llevar_inventario_proyectos_discrecionales   (llevar_inventario_proyectos_discrecionales.json)
+    vecino agrupar_tareas_semejantes_aprovechar_preparacion  [levantada por: similitud_texto]
+    vecino decir_no_trabajo_excede_capacidad  [levantada por: similitud_texto]
+    vecino identificar_paso_limitante_jornada_desfases  [levantada por: similitud_texto]
+veredicto escrito por vecino.
+--- .v48/informe_04.txt
+poblacion del barrido       : 389   (346 del grafo mas 43 que esperan en bandejas)
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+[ENTRARIA] dimensionar_numero_subordinados_medio_dia_semanal   (dimensionar_numero_subordinados_medio_dia_semanal.json)
+veredicto escrito por vecino.
+--- .v48/informe_05.txt
+poblacion del barrido       : 390   (346 del grafo mas 44 que esperan en bandejas)
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+  vecinos levantados en total      : 2
+[BLOQUEARIA] buscar_regularidad_bloques_iguales_trabajo_mando   (buscar_regularidad_bloques_iguales_trabajo_mando.json)
+    vecino agrupar_tareas_semejantes_aprovechar_preparacion  [levantada por: paso_contra_nodo]
+    vecino llevar_inventario_proyectos_discrecionales  [levantada por: similitud_texto]
+veredicto escrito por vecino.

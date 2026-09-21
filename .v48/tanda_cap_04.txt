@@ -1,0 +1,73 @@
+==============================================================================
+1. LA TANDA DE cap_04 DE LA VUELTA 48, CANDIDATO POR CANDIDATO
+==============================================================================
+| # | tramo | candidato | pasos | TRANSCRIPCION | PUENTE | la aduana, en el acto | vecinos | s |
+|---:|---|---|---:|---:|---:|---|---:|---:|
+| 1 | `P34a` | `usar_calendario_herramienta_planificacion_produccion` | 7 | 7 | **0** | `ENTRARIA` | 0 | 837 |
+| 2 | `P34b` | `decir_no_trabajo_excede_capacidad` | 10 | 10 | **0** | `BLOQUEARIA` | 3 | 840 |
+| 3 | `P36` | `llevar_inventario_proyectos_discrecionales` | 5 | 5 | **0** | `BLOQUEARIA` | 3 | 741 |
+| 4 | `P38` | `dimensionar_numero_subordinados_medio_dia_semanal` | 11 | 11 | **0** | `ENTRARIA` | 0 | 1188 |
+| 5 | `P39` | `buscar_regularidad_bloques_iguales_trabajo_mando` | 9 | 9 | **0** | `BLOQUEARIA` | 2 | 911 |
+| | | **5 candidatos** | **42** | **42** | **0** | | **8** | **4517** |
+
+EL SALDO DE LA TANDA: BLOQUEARIA 3, ENTRARIA 2
+POBLACION DEL BARRIDO, del primer informe al ultimo: de 386 a 390
+
+==============================================================================
+2. PASOS INVENTADOS DE cap_04 (D.30), CON SU DENOMINADOR Y SUS TRES FILAS
+==============================================================================
+| capitulo y tanda | PUENTE | pasos escritos | por ciento | tope |
+|---|---:|---:|---:|---:|
+| `cap_04`, vuelta 48, los 5 de hoy | **0** | **42** | **0.00** | 10 |
+| `cap_04`, los 14 ya minados antes de hoy (vueltas 46 y 47) | **0** | **95** | **0.00** | 10 |
+| **`cap_04` entero hasta hoy, los 19 nodos minados** | **0** | **137** | **0.00** | 10 |
+
+EL DENOMINADOR SE ESCRIBE AUNQUE EL NUMERADOR SEA CERO: 42 pasos escritos hoy, 95 en los 14 ya minados, 137 en cap_04 entero.
+
+==============================================================================
+3. LA COLA DE LECTURA QUE ESTA TANDA ABRE, PAR A PAR
+==============================================================================
+| par | candidato | vecino | senial | sim | fam | paso |
+|---:|---|---|---|---:|---:|---:|
+| 1 | `decir_no_trabajo_excede_capacidad` | `usar_calendario_herramienta_planificacion_produccion` | similitud_texto | 0.365 | 0.000 | 0.441 |
+| 2 | `decir_no_trabajo_excede_capacidad` | `agrupar_tareas_semejantes_aprovechar_preparacion` | similitud_texto | 0.354 | 0.000 | 0.417 |
+| 3 | `decir_no_trabajo_excede_capacidad` | `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.364 | 0.000 | 0.397 |
+| 4 | `llevar_inventario_proyectos_discrecionales` | `agrupar_tareas_semejantes_aprovechar_preparacion` | similitud_texto | 0.368 | 0.000 | 0.456 |
+| 5 | `llevar_inventario_proyectos_discrecionales` | `decir_no_trabajo_excede_capacidad` | similitud_texto | 0.377 | 0.000 | 0.409 |
+| 6 | `llevar_inventario_proyectos_discrecionales` | `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.394 | 0.000 | 0.392 |
+| 7 | `buscar_regularidad_bloques_iguales_trabajo_mando` | `agrupar_tareas_semejantes_aprovechar_preparacion` | paso_contra_nodo | 0.333 | 0.000 | 0.718 |
+| 8 | `buscar_regularidad_bloques_iguales_trabajo_mando` | `llevar_inventario_proyectos_discrecionales` | similitud_texto | 0.390 | 0.000 | 0.374 |
+| | | | **8 pares** | | | |
+
+PARES CON similitud_texto POR ENCIMA DE 0,40 (EXTRACTOR.md 11: se leen antes que ningun otro): 0
+BANDA DE similitud_texto DE ESTA TANDA: de 0.333 a 0.394
+QUE SENIAL LEVANTA CADA VECINDAD: paso_contra_nodo 1, similitud_texto 7
+
+==============================================================================
+4. EL RELOJ DE LA ADUANA EN SECO, Y EL TECHO QUE YA SE CUENTA EN PASOS
+==============================================================================
+candidatos pasados por la aduana en esta vuelta : 5
+segundos por candidato, menor y mayor           : 741 y 1188
+media por candidato                             : 903.4 s
+total de la tanda                               : 4517 s  (75.3 min)
+
+EL TECHO EN PASOS, que es la mitad que muerde (46.5.c) : 44 pasos
+  pasos escritos por esta tanda                       : 42
+  DENTRO DEL TECHO DE PASOS                           : SI
+EL TECHO EN MINUTOS, para poder cruzarlo (d011)       : 67 min
+  minutos de aduana de esta tanda                     : 75.3 min
+  DENTRO DEL TECHO DE MINUTOS                         : NO
+
+CONTRASTE CONTRA LA VUELTA 47, contado de sus propios relojes y no de su reporte:
+  media de la vuelta 47                         : 681.7 s
+  media de la vuelta 48                         : 903.4 s
+  subida                                        : +221.7 s por candidato (+32.5 por ciento)
+
+Y LA MISMA MEDIDA EN LA UNIDAD QUE 46.5.c ADJUDICO, QUE ES EL PASO:
+  pasos por candidato, vuelta 47                : 7.50
+  pasos por candidato, vuelta 48                : 8.40
+  segundos por PASO, vuelta 47                  : 90.9 s
+  segundos por PASO, vuelta 48                  : 107.5 s
+
+LO QUE COSTARIA EL RESTO DE cap_04 A LA CIFRA POR PASO DE HOY:
+  nodos que quedan de los 22 de la frontera     : 3

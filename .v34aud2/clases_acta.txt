@@ -1,0 +1,7 @@
+lineas de mi tabla ciega sellada  : 13
+el par (candidato, vecino) cuadra : 13 de 13
+MI CLASE es la de la bitacora     : 13
+DISCREPAN                         : 0  
+lineas de la tanda SIN razon escrita (D.8): 0  
+SANO de la tanda                  : 11
+la regla 7 pide el mayor entre 3 y el 20 por ciento: 3

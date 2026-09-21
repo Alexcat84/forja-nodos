@@ -1,0 +1,8 @@
+$ git log -1 --format="%h %ad %s" --date=short -- docs/loop/TABLA_DE_CIERRE.txt
+0db1fba 2026-09-19 VUELTA 53, correccion declarada: los pares de cola son 17 y no 18, recontados de los informes
+
+EL SELLO DE LA TABLA VIVA (la de la vuelta 53), CITADO POR SU COMMIT Y NO POR HEAD (d047):
+$ git show 0db1fba:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+4e3e2fb30c29ad653deac7b08baf4b5f31dd88f5
+$ git hash-object docs/loop/TABLA_DE_CIERRE.txt   (el fichero vivo, antes de sobrescribirlo)
+4e3e2fb30c29ad653deac7b08baf4b5f31dd88f5

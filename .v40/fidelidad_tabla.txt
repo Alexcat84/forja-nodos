@@ -1,0 +1,67 @@
+| candidato y paso | linea | de la clase | veredicto |
+|---|---:|---|---|
+| `abrazar_incomodidad_silencio_contar_seis` `P01` | `L191` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P02` | `L191` | sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P03` | `L191` | no | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P04` | `L191` | sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P05` | `L191` | sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P06` | `L191` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P07` | `L195` | cuenta, escalon | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P08` | `L195` | sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P09` | `L195` | sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P10` | `L195` | cuenta, escalon, sentimiento | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P11` | `L197` | no | **TRANSCRIPCION** |
+| `abrazar_incomodidad_silencio_contar_seis` `P12` | `L197` | sentimiento | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P01` | `L203` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P02` | `L203` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P03` | `L205` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P04` | `L205` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P05` | `L209` | cuenta, escalon | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P06` | `L209` | cuenta | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P07` | `L209` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P08` | `L209` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P09` | `L211` | sentimiento | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P10` | `L211` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P11` | `L211` | persona | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P12` | `L211` | no | **TRANSCRIPCION** |
+| `escuchar_entender_critica_dominar_defensa` `P13` | `L213` | cuenta, escalon | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P01` | `L217` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P02` | `L217` | cuenta | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P03` | `L219` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P04` | `L219` | persona | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P05` | `L221` | persona, cuenta, escalon | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P06` | `L221` | no | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P07` | `L221` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P08` | `L225` | cuenta, escalon | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P09` | `L225` | sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P10` | `L225` | no | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P11` | `L227` | cuenta, escalon, sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P12` | `L227` | escalon | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P13` | `L227` | sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P14` | `L229` | cuenta, escalon | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P15` | `L229` | cuenta | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P16` | `L233` | no | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P17` | `L233` | no | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P18` | `L233` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P19` | `L233` | no | **TRANSCRIPCION** |
+| `premiar_franqueza_hacer_escucha_tangible` `P20` | `L233` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P01` | `L111` | cuenta, escalon, sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P02` | `L111` | cuenta, escalon | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P03` | `L111` | cuenta | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P04` | `L111` | cuenta, escalon, sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P05` | `L111` | sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P06` | `L237` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P07` | `L239` | no | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P08` | `L239` | escalon | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P09` | `L239` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P10` | `L239` | sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P11` | `L241` | cuenta, sentimiento | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P12` | `L245` | escalon | **TRANSCRIPCION** |
+| `integrar_peticion_critica_rutina_existente` `P13` | `L245` | no | **TRANSCRIPCION** |
+
+LA CUENTA, SALIDA DE LA MISMA TABLA:
+  pasos releidos   : 58
+  TRANSCRIPCION    : 58
+  PUENTE           : 0
+  marcados de la clase por el instrumento: 42 de 58
+  lineas distintas del libro releidas enteras: 20

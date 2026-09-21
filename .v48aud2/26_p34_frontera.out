@@ -1,0 +1,22 @@
+==============================================================================================
+usar_calendario_herramienta_planificacion_produccion
+UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_04.md, unidad Cap. 3, titulo textual
+Managerial Leverage. Sale de la PIEZA P34 de la frontera publicada en la vuelta 46 (HH.2.c),
+L273 a L285, 469 palabras. FRONTERA DENTRO DEL TRAMO, PUBLICADA ANTES DE CORTAR
+(EXTRACTOR.md 10), porque P34 da DOS nodos y esta ficha es el primero: de este nodo son L273
+(el pronostico y la fabrica contra el taller a pedido), L275 (el calendario como medio del
+pronostico y como herramienta de planificacion), la cabecera de L279 (las dos
+responsabilidades) y L281 (la responsabilidad 1). Del otro nodo,
+decir_no_trabajo_excede_capacidad, son L277 (el no de salida y los indicadores de c
+   renglones L### nombrados en TODO el resumen_teorico: ['273', '275', '277', '279', '281', '283', '285', '289', '303']
+==============================================================================================
+decir_no_trabajo_excede_capacidad
+UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_04.md, unidad Cap. 3, titulo textual
+Managerial Leverage. Sale de la PIEZA P34 de la frontera publicada en la vuelta 46 (HH.2.c),
+L273 a L285, 469 palabras. FRONTERA DENTRO DEL TRAMO, PUBLICADA ANTES DE CORTAR
+(EXTRACTOR.md 10), porque P34 da DOS nodos y esta ficha es el segundo: de este nodo son L277
+(el no de salida, el nivel de entrada y los indicadores de capacidad), la cabecera de L279
+(las dos responsabilidades), L283 (la responsabilidad 2) y L285 (por que antes y no despues,
+el no explicito o implicito, y el recurso finito). Del otro nodo,
+usar_calendario_herramienta_planificacion_produccion, son L273, L27
+   renglones L### nombrados en TODO el resumen_teorico: ['175', '273', '275', '277', '279', '281', '283', '285']

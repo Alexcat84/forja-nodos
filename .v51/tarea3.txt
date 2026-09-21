@@ -1,0 +1,3 @@
+    $ python .v51/tarea3.py
+    correccion declarada en buscar_regularidad_bloques_iguales_trabajo_mando         (deuda d045): pasos, titulo y atribuciones INTACTOS
+    correccion declarada en preparar_respuestas_estandar_interrupciones_repetidas    (deuda d046): pasos, titulo y atribuciones INTACTOS

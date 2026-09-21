@@ -1,0 +1,15 @@
+| pieza | **yo, sobre `b698aef`** | el reporte, `AA.0` | **yo, sobre `HEAD`** | el reporte, `AA.5` | |
+|---|---:|---:|---:|---:|---|
+| nodos en `dataset/nodos.jsonl` | **282** | 282 | **297** | 297 | AL DIGITO |
+| pasos del grafo entero | **2283** | . | **2464** | . | *no lo publica* |
+| lineas en `bitacora/VEREDICTOS.jsonl` | **410** | 410 | **423** | 423 | AL DIGITO |
+| de ellas, `consumada: false` | **14** | 14 | **14** | 14 | AL DIGITO |
+| aristas por `nodos_siguientes` | **107** | 107 | **108** | 108 | AL DIGITO |
+| aristas por `nodos_previos` | **107** | 107 | **108** | 108 | AL DIGITO |
+| candidatos en bandeja, lote 4 | **63** | 63 | **48** | 48 | AL DIGITO |
+| insertados y archivados, lote 4 | **79** | 79 | **94** | 94 | AL DIGITO |
+| candidatos en bandeja, lote 5 | **3** | 3 | **3** | 3 | AL DIGITO |
+| lote 4 insertado sobre `142`, por ciento | **55.6** | 55.6 | **66.2** | 66.2 | AL DIGITO |
+
+filas comparables: 9   AL DIGITO: 9   DISCREPAN: 0
+142 de la tabla del lote: 48 en bandeja mas 94 archivados = 142

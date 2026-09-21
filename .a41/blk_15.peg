@@ -1,0 +1,3 @@
+  File "C:\Users\AlexDesk\Documents\forja-nodos\tests\test_aceptacion.py", line 4581, in test_la_linea_serial_del_repo_tiene_su_registro_escrito
+    self.assertTrue(credito.nacida(credito.LINEA_SERIAL),
+AssertionError: False is not true : docs/loop/CREDITO_serial.jsonl sin tandas: la migracion de D.48 no esta en el arbol

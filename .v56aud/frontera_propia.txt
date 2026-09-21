@@ -1,0 +1,22 @@
+==============================================================================
+cap_09   filas de la tabla del reporte: 27
+  la cabecera acaba en la linea    : 7
+  lineas con contenido tras cabecera: 29
+  suma de las filas (reporte)      : 2284
+  mi recuento de palabras del cuerpo: 2284
+  filas cuyo recuento NO me sale   : 0  []
+  SOLAPES                          : 0  []
+  lineas con contenido NO cubiertas: 0  []
+  NODOS que la tabla del reporte da: 0
+  fichero entero (wc -w)           : 2309
+==============================================================================
+cap_10   filas de la tabla del reporte: 35
+  la cabecera acaba en la linea    : 7
+  lineas con contenido tras cabecera: 36
+  suma de las filas (reporte)      : 3218
+  mi recuento de palabras del cuerpo: 3218
+  filas cuyo recuento NO me sale   : 0  []
+  SOLAPES                          : 0  []
+  lineas con contenido NO cubiertas: 0  []
+  NODOS que la tabla del reporte da: 1
+  fichero entero (wc -w)           : 3243

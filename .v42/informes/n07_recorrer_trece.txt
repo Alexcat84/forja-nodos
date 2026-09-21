@@ -1,0 +1,43 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/recorrer_trece_elementos_proceso_evaluacion_formal.json [4 veredictos y censos]
+ADUANA DE INSERCION, candidato 'recorrer_trece_elementos_proceso_evaluacion_formal'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 371   (331 del grafo mas 40 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 2. Ninguna señal los levanto.
+  entregar_evaluacion_formal_desempenio_nueve_consejos  [Entregar bien una evaluacion formal de desempenio con los nueve consejos que el texto da, de no dar sorpresas a dejar la nota para el final]
+    señales: familia_id 0.2, paso_contra_nodo 0.433, similitud_texto 0.244
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  montar_equipo_gestion_desempenio_revisar_sistema  [Montar el equipo de gestion del desempenio y arrancar la revision del sistema, con los seis rotulos que el texto pone uno a uno]
+    señales: familia_id 0.0, paso_contra_nodo 0.429, similitud_texto 0.316
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino aprender_resultados_vencer_dos_presiones  [Aprender de los resultados venciendo las dos presiones que empujan a dejar de aprender]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.272 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.600 (umbral 0.60)
+    paso 11 del candidato contra paso 4 de aprender_resultados_vencer_dos_presiones
+
+  vecino elegir_palabras_nota_definirlas_empresa_entera  [Elegir palabras y no numeros para la nota, y definir cada una en dos o tres frases para la empresa entera]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.476 (umbral 0.60)
+    paso 10 del candidato contra paso 5 de elegir_palabras_nota_definirlas_empresa_entera
+  ARISTA EN COLA, no cableada: recorrer_trece_elementos_proceso_evaluacion_formal > elegir_palabras_nota_definirlas_empresa_entera
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre recorrer_trece_elementos_proceso_evaluacion_formal --hijo elegir_palabras_nota_definirlas_empresa_entera --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 332
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+  ARISTAS EN COLA, sin cablear: 1
+    recorrer_trece_elementos_proceso_evaluacion_formal > elegir_palabras_nota_definirlas_empresa_entera
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+CODIGO DE SALIDA: 0

@@ -1,0 +1,5 @@
+$ python scripts/deuda.py --anotar ...
+ANOTADA d067: DOS PRUEBAS DE ACEPTACION CLAVAN EL REGISTRO VIVO, ASI QUE TODA VUELTA
+
+$ python scripts/deuda.py --anotar ... (la cadencia)
+ANOTADA d068: EL ENCARGO PREDICE LA 58 Y EL INSTRUMENTO DICE LA 59, Y LA DIFERENCIA 

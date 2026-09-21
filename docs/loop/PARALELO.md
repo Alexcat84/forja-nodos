@@ -27,6 +27,21 @@ distintas.**
 
 ---
 
+## 1.b. **EL ALCANCE DE HOY: DOS LINEAS Y NO MAS** (17 sep 2026, `D.50`)
+
+> **La principal SIEMPRE ACTIVA, y UN SOLO frente de extraccion**, hoy
+> `grove_high_output` **hasta cerrar su libro**.
+>
+> **`gerber_emyth` y `marquet_turn_the_ship` quedan `PAUSADOS` con dueño `NINGUNO`**, su
+> trabajo parcial declarado en el tablero (**`10` y `9` candidatos**). **No se lanzan**, y
+> **seran relevados por el principal cuando le toquen por el orden** (`D.50`).
+
+**LO QUE SIGUE DE ESTE DOCUMENTO DESCRIBE TRES FRENTES PORQUE ASI SE MONTO EL 16 SEP.**
+Los comandos siguen siendo buenos y por eso no se borran: **lo que cambia es cuantos
+corren a la vez**, y hoy es **uno**.
+
+---
+
 ## 2. LOS TRES FRENTES, EN ORDEN DE VALOR
 
 | # | libro | unidades | palabras | rama | carpeta |
@@ -60,6 +75,56 @@ ocurrir por accidente.**
     git worktree add ../forja-grove_high_output        extraccion-grove_high_output
     git worktree add ../forja-gerber_emyth             extraccion-gerber_emyth
     git worktree add ../forja-marquet_turn_the_ship    extraccion-marquet_turn_the_ship
+
+### 3.1.b. **COPIAR EL CORPUS, QUE NO VIAJA EN GIT** (paso obligatorio)
+
+**`fuentes/<clave>/` ESTA EN `.gitignore` A PROPOSITO**: son libros con derechos y pesan,
+y lo unico que entra al repo es `fuentes/FUENTES_CANONICAS.json`. **Un worktree recien
+creado NO tiene los libros**, y sin ellos el frente no puede minar **ni pasar el censo**:
+el reporte que hereda cita rutas como `fuentes/smart_who/cap_01.md`, y ahi no estarian.
+
+**Esto lo descubrio el censo `D.42` al preparar los frentes**, abortando el primer commit
+de un worktree. **Se deja escrito porque es justo lo que habria reventado en el
+lanzamiento:**
+
+    cd /c/Users/AlexDesk/Documents/forja-nodos
+    for k in grove_high_output gerber_emyth marquet_turn_the_ship; do
+      cp -r fuentes/*/ "../forja-$k/fuentes/" 2>/dev/null
+    done
+
+**Se copia el corpus ENTERO y no solo su libro**, y por dos motivos: el reporte heredado
+cita capitulos de libros ya minados, **y un auditor de frente tiene derecho a recontar una
+ruta que su propio reporte publica.**
+
+### 3.1.c. **QUE REGISTRO HEREDA UN FRENTE: DECIDIDO EL 17 SEP 2026** (`D.48`)
+
+> #### ESTUVO ABIERTO UN DIA, Y ASI ESTABA PLANTEADO
+>
+> **UN FRENTE HEREDA EL REGISTRO DE LA LINEA DE INSERCION, Y ESO LE HACE AUDITAR TRABAJO
+> AJENO.** Al crear la rama, el frente se lleva `REPORTE.md` y `ACTA_AUDITOR.md` enteros,
+> **con las actas y las rachas de otra campania.**
+>
+> **Medido el 16 sep:** el frente `grove` paro citando como suyas **tres tandas de la
+> linea principal**, todas sobre `cap_11` de `scott_radical_candor`, **que no es su
+> libro**. Y `D.40` le entrego **cuatro remedios** del acta de otra linea.
+
+**LA DECISION DEL FUNDADOR DEL 17 SEP 2026 LO CIERRA, Y ES `D.48`:**
+
+> **CADA LINEA LLEVA SU PROPIA RACHA. UN FRENTE NACE CON LA SUYA EN CERO.** La racha de
+> la serial **no viaja** a los frentes ni al reves, y **al cosechar, la racha del frente
+> muere con el frente**: sus caidas quedan como registro en sus actas archivadas.
+>
+> **EL CREDITO VIVE EN `docs/loop/CREDITO_<linea>.jsonl`**, la serial incluida
+> (`CREDITO_serial.jsonl`), **y la herencia de `D.40` es la de SU linea.**
+
+**QUE SIGNIFICA AL LANZAR UN FRENTE, EN UNA LINEA:** el frente no tiene fichero de
+credito, asi que **no ha cerrado ninguna tanda, hereda CERO remedios y arranca con todas
+sus rachas en cero**, aunque tenga las `31` actas de la serial delante en el arbol. El
+arnes lo dice en voz alta en su log, y `python forja.py credito` lo dice antes de lanzar.
+
+**LO QUE EL FRENTE TIENE QUE HACER A CAMBIO:** escribir su tanda al cerrar cada acta,
+con `python forja.py credito --anotar`. Una linea que no escribe su credito **sigue
+naciendo cada vuelta**, y eso no es una racha en cero: es una racha que no existe.
 
 ### 3.2. LANZAR CADA FRENTE
 
@@ -111,9 +176,131 @@ escrita dos veces en paralelo es peor que una regla que falta: la que falta se n
 
 ---
 
-## 5. EL PROCEDIMIENTO DE COSECHA
+## 4.b. **EL ORDEN DE PRIORIDAD DEL MUNDO 11** (`D.51`, 17 sep 2026)
 
-*Cuando un frente cierra su libro en extraccion, su rama se funde a la de insercion.*
+> **NINGUNA LINEA ELIGE LIBRO.** Toma el primero de esta lista **cuyo `ESTADO` lo permita
+> por `D.49`**, y **al cerrar uno pasa al siguiente por `D.50`.**
+
+    python forja.py tablero --siguiente     que libro le toca a ESTA linea, y por que
+
+### Los tres del mundo 11, con el motivo literal de la decision
+
+| | libro | estado al escribirse | por que ahi |
+|---:|---|---|---|
+| **1** | `grove_high_output` | `EN CURSO`, dueño grove | **Operaciones y apalancamiento gerencial: cubre el hueco de la campania**, que tiene mucho trato con la gente y poco produccion de la maquina. **Densidad de procedimiento la mas alta del lote, medida:** `0,00` por ciento de pasos inventados en su ultimo capitulo, **porque el autor escribe en pasos** |
+| **2** | `gerber_emyth` | `PAUSADO`, `10` candidatos hechos | **Sistematizacion del negocio, manual de operaciones, trabajar SOBRE el negocio y no EN el**: es el libro que **habla directo al usuario final** y el unico del lote que aporta esa materia. Al minarlo entero **se completa ademas el capitulo 17 reservado al mundo 10** |
+| **3** | `marquet_turn_the_ship` | `PAUSADO`, `9` candidatos hechos | **Delegacion real y control distribuido con practicas concretas.** Solapa en parte con Zhuo y Scott, ya insertados, **pero es barato de cerrar y cierra el cuerpo** |
+
+> # **=== CORTE DEL MUNDO 11 ===**
+
+### Los tres que NO se extraen en esta campania
+
+| | libro | por que |
+|---:|---|---|
+| **4** | `bernerslee_bananas` | `19` cap. **Mas analisis que procedimiento** |
+| **5** | `openstax_business_ethics` | `17` cap. **Manual academico, densidad de procedimiento baja, mucho marco conceptual** |
+| **6** | `openstax_org_behavior` | `32` cap. **El mas caro del lote y el de mayor solape con lo ya insertado** (Zhuo, Scott, Grove): **el peor candidato por costo y beneficio de los diez** |
+
+**Quedan en la bandeja, con su ficha**, para **entrar por la aduana de a uno y sin
+campania cuando el fundador lo decida.** El tablero los marca con un asterisco, y
+`--siguiente` **nunca los devuelve.**
+
+---
+
+## 4.c. **EL CIERRE DEL MUNDO 11** (17 sep 2026, punto `c`)
+
+> **CUANDO LOS TRES PRIMEROS ESTEN `INSERTADOS`**, la linea serial **escribe un
+> `PARA_ALEXIS` de `MUNDO 11 COMPLETO` y SE DETIENE.** **El fundador decide que sigue.**
+
+**Lo que ese `PARA_ALEXIS` lleva, y son tres cosas medidas, no tres parrafos:**
+
+| | que va | como se mide |
+|---|---|---|
+| **1** | **el censo POR LIBRO** | nodos del grafo por su fuente, uno por libro, **mas el total**, con el instrumento pegado (`D.41`) |
+| **2** | **las aristas ENTRE libros** | las que cruzan de una clave a otra, **contadas y nombradas**: son lo que prueba que los siete libros son **un grafo** y no siete grafos |
+| **3** | **los tres libros que quedan en bandeja** | `bernerslee_bananas`, `openstax_business_ethics` y `openstax_org_behavior`, **con su ficha y su motivo de corte** |
+
+**Y SE DETIENE.** No abre el `4` por orden, no propone un mundo 12, **no decide su propio
+alcance.** El tablero lo dice solo cuando llega:
+
+    MUNDO 11 COMPLETO: los tres libros del corte estan INSERTADOS.
+    Lo que toca es el CIERRE (PARALELO.md): PARA_ALEXIS de MUNDO 11
+    COMPLETO con el censo por libro, y parar.
+
+---
+
+## 4.d. **EL CORTE DEFINITIVO DE ESTA CAMPANIA** (21 sep 2026, decision del fundador)
+
+> # **EL MUNDO 11 CIERRA CON CINCO LIBROS.**
+>
+> Los **cuatro insertados** (`onu_consumidor`, `smart_who`, `zhuo_manager`,
+> `scott_radical_candor`) **mas `grove_high_output` entero.**
+
+| libro | como queda |
+|---|---|
+| **`gerber_emyth`** | **`10` candidatos en bandeja, enteros y SIN INSERTAR** |
+| **`marquet_turn_the_ship`** | **`9` candidatos en bandeja, enteros y SIN INSERTAR** |
+
+**POR QUE NO ENTRAN, Y NO ES UN DESCARTE:** `D.39` dice que **un libro entra cuando su
+extraccion cierra**. Los dos estan **abiertos** (`gerber` va por `4` de `22` capitulos,
+`marquet` por `3` de `17`), asi que **insertar sus `19` obligaria a minar los dos libros
+enteros**, y **eso es lo que esta campania decide no pagar**.
+
+> **QUEDAN COMO MATERIAL, no como basura.** Estan medidos, pasados por la aduana en seco y
+> con sus fronteras cerradas. **Entran el dia que la aduana trabaje sin campania**, de a
+> uno, como el fundador decida.
+
+**LO QUE CAMBIA RESPECTO DE `D.51`:** aquel orden los ponia en prioridad `2` y `3` **para
+esta campania**. El corte **no los borra del orden**: los saca **de esta campania**. Su
+prioridad sigue escrita para el dia que se retomen.
+
+---
+
+## 5. EL PROCEDIMIENTO DE COSECHA Y RELEVO (`D.49`, `D.50`)
+
+*Cuando un frente cierra su libro en extraccion, su rama se funde a la de insercion. **Y
+desde el 17 sep 2026 eso tiene una sede y un orden obligatorio.***
+
+### 5.0. **PRIMERO SE MIRA EL TABLERO, SIEMPRE** (`D.49`)
+
+**`docs/loop/TABLERO.jsonl` es la sede unica del estado de la campania**, y **ninguna
+linea abre ni continua un libro sin consultarlo.**
+
+    python forja.py tablero                        el tablero entero, medido hoy
+    python forja.py tablero --puedo <clave>         si ESTA linea puede tomar ese libro
+    python forja.py tablero --escribir              lo vuelve a medir y lo vuelca
+
+> **LA REGLA, LITERAL:** ninguna linea abre ni continua un libro cuyo `ESTADO` no sea
+> **`SIN EMPEZAR` con dueño `NINGUNO`**, o **`PAUSADO` con dueño `NINGUNO` y ya
+> `COSECHADO`**. **El arnes lo comprueba al abrir vuelta y se detiene nombrando al
+> dueño.**
+
+**LO QUE ESTO IMPIDE, Y NO ES HIPOTETICO:** `D.32` abre el lote siguiente **sin parada
+entre medias** en cuanto uno cierra. El siguiente por orden era el lote `5`,
+`marquet_turn_the_ship`, **con `9` candidatos ya minados en otra rama**. La serial habria
+vuelto a minar `cap_01`, `cap_02` y `cap_03`.
+
+### 5.0.b. **EL RELEVO, Y SUS CUATRO PASOS EN ORDEN** (`D.50`)
+
+**Cuando la principal CIERRA un libro**, consulta el tablero; si hay un libro `EN CURSO` o
+`PAUSADO` en otra rama, **lo releva ENTERO**:
+
+| | paso | quien | como se comprueba |
+|---|---|---|---|
+| **(a)** | el frente **detenido y sin proceso vivo** | el fundador | `ps` sin su `orquestador_forja.sh`, y su `PARA_ALEXIS.md` en el arbol |
+| **(b)** | **su rama se COSECHA** a la de insercion, **una por vez**, gate y suite detras | **el fundador**: *el bucle no funde ramas* | `5.1` a `5.3` de este documento |
+| **(c)** | el tablero pasa ese libro a **dueño `NINGUNO`, estado `PAUSADO COSECHADO`** | quien coseche | `python forja.py tablero --escribir` |
+| **(d)** | **solo entonces** la principal lo toma y **continua desde el capitulo SIGUIENTE al ultimo minado, citando la frontera heredada** | la principal | `--puedo <clave>` da `SI` y nombra el ultimo capitulo |
+
+> # **NUNCA SE RELEVAN CAPITULOS SUELTOS: SE RELEVA EL LIBRO ENTERO.**
+>
+> **Un libro medio relevado tiene dos fronteras que nadie casa.** El frente cerro las
+> suyas contra el cuerpo, al digito; un relevo por capitulos obligaria a **volver a cerrar
+> la frontera del tramo partido**. **El libro entero tiene una sola frontera que heredar.**
+
+**Y EL PASO `(b)` NO LO HACE EL BUCLE.** *El bucle no funde ramas y el bucle no crea
+remotos.* Lo que el bucle hace es **pedirlo, nombrando la rama y el estado, y detenerse
+hasta que llegue.**
 
 ### 5.1. Una por vez, y en este orden
 
@@ -133,12 +320,21 @@ poder decir cual de las dos rompio algo.**
 |---|---|
 | `cuarentena/<libro>/*.json` | **NINGUNO.** Son ficheros **nuevos y disjuntos**: cada frente escribe en su propia carpeta y nadie toca la del otro |
 | `docs/loop/REPORTE.md`, `ACTA_AUDITOR.md`, `loop.log`, `ultimo_*.json` | **CONFLICTO SEGURO Y ESPERADO.** Cada frente escribe su propio registro. **Se resuelven conservando LOS DOS**, uno detras del otro, y **nunca eligiendo uno** |
+| `docs/loop/CREDITO_<linea>.jsonl` | **CERO CONFLICTO, y es la fila que `D.48` vino a crear.** Cada linea escribe SOLO su fichero, asi que al fundir **no se tocan**. **La racha del frente muere con el frente** (`D.48`): su fichero se conserva como registro y **sus caidas no se suman a la serial** |
 | `dataset/`, `bitacora/`, `censos/`, `config/pares_mutuos.jsonl` | **NO DEBERIA HABER NINGUNO.** Un frente que los toco **inserto**, y eso es una caida de dato: **se para la cosecha y se mira antes de seguir** |
 | `src/`, `docs/BANCO_DE_REGLAS.md`, `orquestador_forja.sh` | **NO DEBERIA HABER NINGUNO.** La moratoria lo prohibe. Si lo hay, **ese frente rompio `D.45`** |
 
 > **LA REGLA DE RESOLUCION, EN UNA LINEA: EN LOS REGISTROS SE CONSERVAN LOS DOS; EN LAS
 > SEDES DE DATO NO DEBERIA HABER NADA QUE RESOLVER.** Si hay que elegir en una sede de
 > dato, **la cosecha se para**: eso no es un conflicto, es un sintoma.
+
+### 5.2.b. **Y EL TABLERO SE VUELVE A MEDIR** (`D.49`)
+
+    python forja.py tablero --escribir
+
+**En el cierre de cada vuelta de CUALQUIER linea**, y **detras de cada fusion**. Un
+tablero que se actualiza cuando alguien se acuerda **es la frase escrita a mano que
+`D.49` vino a sustituir.**
 
 ### 5.3. Detras de CADA fusion, sin excepcion
 

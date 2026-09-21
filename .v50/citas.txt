@@ -1,0 +1,8 @@
+| # | tramo | linea | la salida de `sed -n '<n>p'`, pegada y cortada a 82 | de que candidato es |
+|---:|---|---:|---|---|
+| 1 | `P41` | L315 | `315:There are better ways. Let's apply a production concept. Manufacturers turn out st` | `preparar_respuestas_estandar_interrupciones_repetidas` |
+| 2 | `P42` | L317 | `317:Also, if you use the production principle of batching, that is, handling a group o` | `agrupar_interrupciones_subordinados_reuniones_regulares` |
+| 3 | `P44` | L321 | `321:If the people who interrupt you knew how much they were disturbing you, they would` | `canalizar_interrupciones_cartel_hora_oficina` |
+| 4 | `P44` | L323 | `323:The point is to impose a pattern on the way a manager copes with problems. To make` | `canalizar_interrupciones_cartel_hora_oficina` |
+
+renglones citados: 4, de 3 tramos distintos

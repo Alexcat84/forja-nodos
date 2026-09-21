@@ -1,0 +1,12 @@
+$ python forja.py arista --madre pedir_critica_primero_crear_seguridad_psicologica --hijo criticar_trabajo_evitar_desanimo --paso 3 --razon ...
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: pedir_critica_primero_crear_seguridad_psicologica
+  hijo : criticar_trabajo_evitar_desanimo
+  paso citado de la madre: 3
+    Tres, da critica.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.458, similitud_texto 0.162
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: pedir_critica_primero_crear_seguridad_psicologica > criticar_trabajo_evitar_desanimo
+  razon en bitacora/VEREDICTOS.jsonl
+CODIGO DE SALIDA: 0

@@ -1,0 +1,4 @@
+    $ python scripts/deuda.py | grep -E "d027|d028|d029"
+  d027   46      fidelidad          CORREGIR SIN BORRAR el entregable_esperado de reunir
+  d028   46      maquinaria         src/tablero.py:214 publica en capitulos_minados los 
+  d029   46      maquinaria         El tallado de D.41 casa las filas por su primera cel

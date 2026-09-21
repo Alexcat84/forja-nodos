@@ -1,0 +1,8 @@
+    pieza id                                                pasos  TRANSCRIPCION  PUENTE tentaciones
+    P15   facilitar_expresion_subordinado_pregunta_mas          6              6       0           3
+    P16   tomar_notas_copia_guion_reunion_individual            7              7       0           3
+    P17   acumular_asuntos_importantes_fichero_espera           4              4       0           4
+    P18   alentar_asuntos_corazon_vigilar_final_reunion         8              8       0           3
+    P19   conducir_reunion_individual_telefono_distancia        5              5       0           4
+    P20   programar_reunion_individual_cadena                   5              5       0           3
+          TOTAL DE LA TANDA                                    35             35       0          20

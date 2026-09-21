@@ -1,0 +1,24 @@
+clasificar_trabajo_proceso_montaje_prueba   (7 pasos)   reloj 510.8 s   vecinos sobre 0.35: 1
+      0.3720  [bandeja/grove_high_output] preferir_inspeccion_proceso_prueba_destructiva
+construir_flujo_produccion_paso_limitante   (10 pasos)   reloj 426.7 s   vecinos sobre 0.35: 2
+      0.4115  [bandeja/grove_high_output] rehacer_flujo_paso_limitante_capacidad
+      0.3972  [bandeja/grove_high_output] preferir_inspeccion_proceso_prueba_destructiva
+detectar_arreglar_fallo_etapa_menor_valor   (6 pasos)   reloj 140.6 s   vecinos sobre 0.35: 0
+dimensionar_inventario_materia_prima_reposicion   (7 pasos)   reloj 127.0 s   vecinos sobre 0.35: 3
+      0.3911  [bandeja/grove_high_output] preferir_inspeccion_proceso_prueba_destructiva
+      0.3741  [bandeja/grove_high_output] equilibrar_capacidad_personal_inventario_plazo
+      0.3575  [bandeja/grove_high_output] detectar_arreglar_fallo_etapa_menor_valor
+equilibrar_capacidad_personal_inventario_plazo   (8 pasos)   reloj 185.0 s   vecinos sobre 0.35: 2
+      0.3891  [bandeja/grove_high_output] dimensionar_inventario_materia_prima_reposicion
+      0.3530  [bandeja/grove_high_output] construir_indicador_tendencia_patron
+preferir_inspeccion_proceso_prueba_destructiva   (6 pasos)   reloj 166.3 s   vecinos sobre 0.35: 4
+      0.4455  [bandeja/grove_high_output] rehacer_flujo_paso_limitante_capacidad
+      0.4103  [bandeja/grove_high_output] construir_flujo_produccion_paso_limitante
+      0.3837  [bandeja/grove_high_output] dimensionar_inventario_materia_prima_reposicion
+      0.3657  [bandeja/grove_high_output] clasificar_trabajo_proceso_montaje_prueba
+rehacer_flujo_paso_limitante_capacidad   (6 pasos)   reloj 223.2 s   vecinos sobre 0.35: 3
+      0.4601  [bandeja/grove_high_output] preferir_inspeccion_proceso_prueba_destructiva
+      0.4191  [bandeja/grove_high_output] construir_flujo_produccion_paso_limitante
+      0.3569  [bandeja/grove_high_output] dimensionar_inventario_materia_prima_reposicion
+
+pares sobre umbral en los 7 candidatos de cap_02: 15

@@ -1,0 +1,12 @@
+las 9 fichas corregidas, comparadas con HEAD campo a campo
+reunir_informacion_gerencial_vias_variadas         campos cambiados: ['resumen_teorico']   pasos identicos: True
+escalonar_fuentes_informacion_gerencial            campos cambiados: ['resumen_teorico']   pasos identicos: True
+programar_visita_area_observar_despachar           campos cambiados: ['resumen_teorico']   pasos identicos: True
+transmitir_objetivos_prioridades_preferencias      campos cambiados: ['resumen_teorico']   pasos identicos: True
+empujar_persona_reunion_direccion_preferida        campos cambiados: ['resumen_teorico']   pasos identicos: True
+subir_productividad_gerencial_tres_vias            campos cambiados: ['resumen_teorico']   pasos identicos: True
+buscar_actividad_alta_palanca_tres_vias            campos cambiados: ['resumen_teorico']   pasos identicos: True
+elegir_momento_actividad_palanca_maxima            campos cambiados: ['resumen_teorico']   pasos identicos: True
+dimensionar_numero_subordinados_medio_dia_semanal  campos cambiados: ['resumen_teorico']   pasos identicos: True
+
+fichas cuyo UNICO campo cambiado es resumen_teorico: 9 de 9

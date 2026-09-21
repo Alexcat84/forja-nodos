@@ -1,0 +1,8 @@
+    $ python .v51/pasos_inventados.py
+    capitulo del libro       fichas    pasos     PUENTE inventados
+    Introduction                  1        7          0     0 de 7
+    cap_02                        7       50          0    0 de 50
+    cap_03                       15      121          0   0 de 121
+    cap_04                       22      156          0   0 de 156
+    cap_05                        6       49          0    0 de 49
+    TODO grove_high_output       51      383          0   0 de 383

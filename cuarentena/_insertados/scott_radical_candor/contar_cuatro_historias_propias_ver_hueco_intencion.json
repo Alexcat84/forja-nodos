@@ -1,0 +1,63 @@
+{
+  "condiciones_activacion": "Cuando quieres desarrollar tu consciencia de ti mismo y tu consciencia de la relacion, y vas a hacer la primera de las dos practicas que el texto desarrolla.",
+  "denominaciones": {
+    "nombre_largo": "Cual es tu historia: el ejercicio de taller de las cuatro historias, la de franqueza radical mas las tres de las otras tres casillas del marco",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Practice: What's your story?"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Radical Candor story"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Obnoxious Aggression"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Ruinous Empathy"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Manipulative Insincerity"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "entregable_esperado": "Tus cuatro historias desenterradas y contadas a tu equipo, con el hueco entre tus intenciones y tu impacto puesto a la vista.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ],
+  "id": "contar_cuatro_historias_propias_ver_hueco_intencion",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Parte de por que funciona, que es lo que el texto pone antes del ejercicio: contar historias es una gran manera de desarrollar a la vez la consciencia de ti mismo y la consciencia de la relacion.",
+    "Piensa primero en tu historia de franqueza radical: acuerdate de alguna vez en que la estabas liando, alguien te lo dijo, y aunque lo que te dijo escociera un poco en el momento, te ayudo a la larga.",
+    "Cuentala a tu equipo con lo que significa para ti, porque el texto dice que sera mil veces mas poderosa que la historia de la autora sobre cuando su jefa le dijo que decia um cada tres palabras en una presentacion.",
+    "Cuenta con las dos cosas que haces a la vez al mostrar algo de vulnerabilidad contandola: una, demuestras consciencia de ti mismo y humildad; dos, ensenias que de verdad agradeces la critica. Eso hara mas facil que pidas critica, y cuanta mas pidas mas consciente de ti mismo te vuelves.",
+    "Cuenta con para que sirven las otras tres, que el texto agrupa: tu historia de agresion odiosa, tu historia de insinceridad manipuladora y tu historia de empatia ruinosa te ayudaran a ti y a tu equipo a ver cuando te has caido de la meta de ser amable, o sea que trabajan la consciencia de la relacion.",
+    "Piensa en tu historia de agresion odiosa: hubo alguna vez en que ofreciste una critica solo por ayudar y el otro te vivio como odiosamente agresivo? O una vez en que estabas dando una critica pero estabas muy enfadado y quiza tus intenciones no eran tan puras?",
+    "Cava hondo ahi, que es lo que el texto pide: cual es el momento del que te encoges al mirar atras, preguntandote como pudiste comportarte de forma tan odiosa.",
+    "Cuenta la tuya y no la del libro, y el texto da la razon: tu historia es por definicion mejor que la del correo grosero sobre los sitios desordenados que la autora mando al jefe del jefe de su jefe, porque es tuya.",
+    "Cuenta con lo que esa historia consigue: te ayuda a entender el impacto que tienes en los demas, y ayuda a tu equipo a entenderte y a saber como hablarte para que puedan ensenarte cuando te estas portando como un cretino sin querer.",
+    "Piensa despues en tu historia de empatia ruinosa: cuando dejaste de dar una critica solo por ser amable, y acabaste viendo sufrir a la persona por no haber corregido una mala conducta?",
+    "No cuentes la historia de Bob del capitulo dos: cuenta la tuya, la vez en que intentabas ser amable y te diste cuenta de que habias sido cruel sin querer.",
+    "Cuenta con lo que el texto dice que construye eso: el arrepentimiento que sientes al recordar el episodio y la vulnerabilidad que ensenias al contarlo levantan tu consciencia de la relacion.",
+    "Y piensa por ultimo, y el texto avisa de que es la mas dificil de todas, en tu historia de insinceridad manipuladora: cuando no le dijiste a una persona un problema directamente y en cambio se lo contaste a otros? O le dijiste que su trabajo era bueno mientras lo socavabas por la espalda?",
+    "Cuenta con que cuesta, que es lo que el texto reconoce: es muy dificil verse a uno mismo como alguien que apunialla por la espalda, pasivo agresivo o politico, y todos somos culpables de esas conductas de vez en cuando.",
+    "Desempaqueta tus historias y compartelas con tu equipo, porque el texto dice que ahi es cuando la gente empieza a darse cuenta del hueco entre sus intenciones y el impacto que esta teniendo en los demas.",
+    "Y cuenta con lo que el texto pone como remate: la consciencia es el primer paso hacia el cambio, y puedes hacer que tu impacto encaje con tus intenciones.",
+    "Cuenta tambien con el limite que el texto pone justo despues: cada persona es distinta, asi que lo que a una le resulta util a otra puede resultarle insoportablemente doloroso. Tienes que ajustar como hablas para ser claro y amable con el otro sin sentirte un camaleon."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_13.md, unidad Afterword, titulo textual Afterword to the Revised Edition: Rolling Out Radical Candor. Sale de las lineas 41 a 58, bajo el rotulo Practice: What's your story? de la linea 41. ES LA PIEZA 2 DE LA FRONTERA DE cap_13. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante y en uno de sus casos faciles: el libro pone su propio INVENTARIO DE OBJETOS DE TRABAJO, CUATRO historias nombradas una a una con su pregunta de arranque escrita (la de franqueza radical en la linea 45, la de agresion odiosa en la 49, la de empatia ruinosa en la 51 y la de insinceridad manipuladora en la 53), y ademas dice que es un ejercicio que hacen en sus talleres. Deja fichero: las cuatro historias escritas y contadas. ES PARTE DE LA SERIE D.37 que encabeza mejorar_consciencia_propia_relacional_dos_practicas, y la arista va declarada en el reporte de la vuelta 23. LA CUENTA DE CUATRO NO SE LA ATRIBUYO AL LIBRO A CIEGAS: el libro escribe THE NEXT THREE STORIES en la linea 47 y nombra la cuarta aparte en la 45, asi que el cuatro es la suma de una cuenta escrita mas una historia nombrada, y lo digo aqui en vez de dejarlo pasar. SU PAR CON contar_historias_propias_explicar_franqueza_radical (cap_12), Y LO DECLARO YO ANTES DE QUE LO LEVANTE NINGUNA SENIAL PORQUE EL PROPIO LIBRO LO DECLARA: la linea 43 escribe There's a brief paragraph about this in the final Getting Started section, but we have been asked for more detail about how to do this and why it works. MI VEREDICTO ES CONTINUA CON ARISTA Y NO REPITE, con los dos lados medidos: aquel entrega la franqueza radical EXPLICADA a tu equipo y trae sus seis medios de explicarla (el libro, los videos, tus palabras, la historia del um, la de Bob, la vulnerabilidad); este entrega CUATRO historias desenterradas con su pregunta de arranque y las dos consciencias trabajadas, y ninguna de las cuatro esta en aquel. El acto compartido es uno solo, contar tu historia, y los dos lados tienen procedimiento fuera de el. LAS HISTORIAS DEL LIBRO VIAJAN COMO CONTRAEJEMPLO Y NO COMO CONTENIDO, que es manual 3.5: el texto dice expresamente que NO cuentes la del um, la del correo de los sitios desordenados ni la de Bob, sino la tuya. RELECTURA DE FIDELIDAD D.30 EN EL ACTO, paso a paso contra su linea: 17 pasos, 17 TRANSCRIPCION, 0 PUENTE. P1 de la linea 43; P2 a P4 de la linea 45; P5 de la linea 47; P6 a P9 de la linea 49; P10 a P12 de la linea 51; P13 y P14 de la linea 53; P15 y P16 de la linea 55; P17 de la linea 57. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: en que reunion se comparten, en que orden se cuentan las cuatro, cuanto dura el ejercicio, y que se hace si alguien no encuentra una de las cuatro. El libro pone las cuatro historias y no pone ninguna de esas respuestas. CORRECCION DECLARADA 17 sep 2026, vuelta 37, relectura de fidelidad D.30 antes de insertar: el paso 8 escribia al jefe de su jefe y cap_13 L49 escribe her boss's boss's boss, o sea TRES escalones y no dos. Es defecto de TRANSCRIPCION y lo corrijo contra la linea. VA MARCADO COMO DISCUTIBLE en el reporte de la vuelta 37: si el auditor lo lee como PUENTE por la vara con la que la ACTA 35 seccion 6 juzgo superestrellas, la fila de cap_13 sube de 0 a 1.",
+  "titulo": "Contar tus cuatro historias propias del marco de la franqueza radical para ver el hueco entre lo que pretendes y el impacto que tienes, y compartirlas con tu equipo"
+}

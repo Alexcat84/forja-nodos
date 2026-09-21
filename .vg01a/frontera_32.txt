@@ -1,0 +1,4 @@
+INSTRUMENTO .vg01a/frontera_32.py  CONSTANTE TECLEADA DENTRO: SI, los DOS HASHES de apertura y cierre de la vuelta 32, que salen del propio reporte (Y.8.c). Todo lo demas lo lee git.
+  56a0df6  apertura vuelta 32   nodos=267 veredictos=391 bytes_test=184415
+  4ca7c58  cierre vuelta 32     nodos=270 veredictos=396 bytes_test=184415
+  HEAD     hoy                  nodos=270 veredictos=396 bytes_test=185483

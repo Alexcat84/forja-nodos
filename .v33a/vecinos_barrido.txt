@@ -1,0 +1,18 @@
+MI BARRIDO CONTRA EL DE LA MAQUINA, vecino a vecino
+  mi poblacion: 347 (281 del grafo de 282 menos el propio, mas 66 de bandejas), arbol 1ae327e
+  la suya: la de cada insercion de la vuelta 33, con el lote aun sin archivar
+
+  integrar_trabajo_vida_mejor_version           yo 0   la maquina de la vuelta 0   IGUALES
+  definir_receta_propia_mantenerse_centrado     yo 0   la maquina de la vuelta 0   IGUALES
+  agendar_cuidados_propios_cumplirlos           yo 0   la maquina de la vuelta 0   IGUALES
+  ceder_autoridad_unilateral_equipo             yo 0   la maquina de la vuelta 0   IGUALES
+  dominar_arte_socializar_trabajo               yo 0   la maquina de la vuelta 0   IGUALES
+  evitar_presion_social_actos_equipo            yo 3   la maquina de la vuelta 3   IGUALES
+  construir_confianza_equipo_tiempo_solas       yo 3   la maquina de la vuelta 3   IGUALES
+  vivir_valores_propios_evitar_listarlos        yo 1   la maquina de la vuelta 1   IGUALES
+  demostrar_apertura_visiones_distintas         yo 0   la maquina de la vuelta 0   IGUALES
+  manejar_contacto_fisico_regla_platino         yo 0   la maquina de la vuelta 0   IGUALES
+  reconocer_emociones_propias_avisar_equipo     yo 4   la maquina de la vuelta 4   IGUALES
+  dominar_reacciones_emociones_ajenas           yo 0   la maquina de la vuelta 0   IGUALES
+
+  TOTAL vecinos levantados: yo 11, la vuelta 11

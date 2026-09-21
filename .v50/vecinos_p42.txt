@@ -1,0 +1,42 @@
+=== sostener_contacto_oferta_aceptacion   (sede: dataset/nodos.jsonl)
+titulo: Sostener el contacto entre tu oferta y la aceptacion del candidato
+fuentes: ['smart_who']
+   1. No te apartes ahora. Muchos jefes se retiran en este punto creyendo que el futuro contratado necesita tiempo para pensarlo. Puede que lo necesite, pero esto habra sido probablemente un cortejo largo, y apartarse demasiado ahora se
+   2. En vez de meter a la persona en el congelador, da por supuesto que ha recibido una contraoferta atractiva de su empleador actual y que esta considerando otras opciones al mismo tiempo. Son jugadores A, al fin y al cabo. El silenci
+   3. Manten el contacto con ella con regularidad.
+   4. Localiza con precision sus preocupaciones usando las cinco efes como guia.
+   5. Enseñale cuanto va a encajar en la empresa y cuanto va a aportar a la empresa.
+   6. Corteja a su familia.
+   7. Comprometete a darle libertad y autonomia para hacer su trabajo.
+   8. Atiende las preocupaciones economicas.
+   9. Metela en la diversion que tus empleados ya se estan dando.
+  10. No te frenes por miedo a pasarte. De vez en cuando enfriaras a un candidato por ser un pretendiente demasiado ardiente, pero la experiencia de los autores es que los jefes venden de menos mucho mas a menudo que de mas.
+
+=== agendar_cuidados_propios_cumplirlos   (sede: dataset/nodos.jsonl)
+titulo: Poner en el calendario lo que necesitas hacer por ti, y despues presentarte a esas citas como te presentarias a una con tu jefe
+fuentes: ['scott_radical_candor']
+   1. Pon en tu calendario las cosas que necesitas hacer para ti, igual que pondrias una reunion importante.
+   2. Si te cuesta salir de la oficina a tiempo para llegar a cenar a casa, pon en el calendario tu tiempo de desplazamiento.
+   3. Haz como si tuvieras que coger un tren.
+   4. No te saltes esas reuniones contigo mismo.
+   5. Y no dejes que otros te pongan cosas encima de ellas, ni mas ni menos de lo que se lo dejarias hacer con una reunion con tu jefe.
+
+=== nombrar_delegados_amigos_casa   (sede: dataset/nodos.jsonl)
+titulo: Nombrar delegados entre los amigos de la casa
+fuentes: ['smart_who']
+   1. Elige a unos cuantos amigos de la casa entre las personas mas influyentes de tu red y nombralos delegados de tu busqueda.
+   2. Ofreceles una recompensa por referencia. El libro dice que puede ser tan barata como un vale regalo o tan cara como una prima en efectivo significativa, y da los dos extremos que ha visto: primas de hasta 5.000 dolares si la empre
+   3. Si tu empresa es temprana, considera montar un consejo asesor que haga el mismo papel: unos asesores que no se meten en el gobierno de la compañia ni asumen responsabilidad fiduciaria, y cuya razon de ser es aconsejar y hacer pres
+   4. Asegurate de que los delegados reportan con regularidad.
+   5. Comprueba y vuelve a comprobar que el incentivo que has elegido basta para que gente ocupada participe.
+   6. Recuerda que quieres que las recomendaciones vengan de jugadores A, porque hace falta uno para conocer a otro.
+
+=== identificar_paso_limitante_jornada_desfases   (sede: cuarentena\grove_high_output\identificar_paso_limitante_jornada_desfases.json)
+titulo: Identificar el paso limitante de tu jornada y crear desfases alrededor: determinar lo inamovible y mover lo flexible a su alrededor
+fuentes: ['grove_high_output']
+   1. Mejora las recomendaciones corrientes de gestion del tiempo aplicandoles los principios de produccion.
+   2. Identifica primero tu paso limitante preguntandote cual es el huevo de tu trabajo.
+   3. Busca para eso las cosas de tu vida de mando que de verdad tienen que ocurrir en un calendario absoluto, aquellas en cuyo tiempo no hay holgura ninguna.
+   4. Crea desfases y programa el resto de tu trabajo alrededor de ese paso limitante.
+   5. En resumen: determina que es lo inamovible y manipula a su alrededor las actividades mas flexibles, y trabajaras de manera mas eficiente.
+

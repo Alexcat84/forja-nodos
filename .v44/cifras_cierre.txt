@@ -1,0 +1,5 @@
+NODOS EN EL GRAFO (contados de dataset/nodos.jsonl) : 346
+ARISTAS madre a hijo (suma de nodos_siguientes)     : 169
+LINEAS de bitacora/VEREDICTOS.jsonl                 : 740
+FICHAS en cuarentena/grove_high_output              : 22
+FICHAS en cuarentena/_insertados/grove_high_output  : 1

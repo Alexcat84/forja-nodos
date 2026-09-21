@@ -1,0 +1,9 @@
+    $ time python forja.py informe cuarentena/grove_high_output/decir_no_trabajo_excede_capacidad.json
+
+
+real	14m0.377s
+user	0m0.000s
+sys	0m0.015s
+codigo=0
+codigo=0
+segundos=840   (derivado por .v47/seg.py de la linea real de time, que es el instrumento)

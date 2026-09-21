@@ -1,0 +1,2 @@
+LINEA 'serial', LIBRO 'grove_high_output': SI
+  'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_04), citando su frontera. D.50.
