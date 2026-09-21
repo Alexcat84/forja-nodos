@@ -16,3 +16,8 @@
 {"cae": false, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G4 seccion 4.1", "especie": "CLASE", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G4", "tipo": "tanda", "vuelta": 4}
 {"cae": false, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G4 seccion 4.2", "especie": "DATO MOVIDO", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G4", "tipo": "tanda", "vuelta": 4}
 {"cae": false, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G4 seccion 5", "especie": "AUDITOR", "linea": "gerber_emyth", "racha": "0 de 3", "tanda": "ACTA G4", "tipo": "tanda", "vuelta": 4}
+{"cae": true, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G5 seccion 4.1", "especie": "REPORTE", "linea": "gerber_emyth", "racha": "1 de 3", "tanda": "ACTA G5", "tipo": "tanda", "vuelta": 5}
+{"cae": false, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G5 seccion 4.3", "especie": "CIFRA PUBLICADA", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G5", "tipo": "tanda", "vuelta": 5}
+{"cae": false, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G5 seccion 4.4", "especie": "CLASE", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G5", "tipo": "tanda", "vuelta": 5}
+{"cae": false, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G5 seccion 4.5", "especie": "DATO MOVIDO", "linea": "gerber_emyth", "racha": "0 de 2", "tanda": "ACTA G5", "tipo": "tanda", "vuelta": 5}
+{"cae": false, "cita": "docs/loop/ACTA_AUDITOR.md, ACTA G5 seccion 5", "especie": "AUDITOR", "linea": "gerber_emyth", "racha": "0 de 3", "tanda": "ACTA G5", "tipo": "tanda", "vuelta": 5}

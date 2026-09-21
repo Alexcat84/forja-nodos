@@ -1,0 +1,16 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_15.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L279.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L20 | **31** | el numero del capitulo, el rotulo YOUR STRATEGIC OBJECTIVE y el epigrafe de Eugen Herrigel (Zen and the Art of Archery) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L21 a L42 | **390** | que es el Objetivo Estrategico: la vision del producto terminado de tu negocio, producto de tu Plan de Vida y tu Estrategia y Plan de Negocio, reducido a estandares simples para medir el progreso | **POSTURA** |
+| `R3` | L43 a L86 | **516** | el Primer Estandar, el dinero: cuanto valen los ingresos brutos, ganancias, cuanto necesitas para ser libre, por cuanto y cuando vender el negocio, preguntas retoricas encadenadas en prosa corrida, sin vineta | **POSTURA** |
+| `R4` | L87 a L166 | **694** | el Segundo Estandar, una Oportunidad que Vale la Pena: la diferencia entre la mercancia y el producto (el ejemplo de Revlon y del comercial de Chanel) y entre demografia y psicografia del Modelo Demografico Central | **POSTURA y CASO** |
+| `R5` | L167 a L178 | **87** | Estandares del Tercero en adelante: no hay numero fijo de estandares, solo preguntas especificas que hay que responder, y el libro las pone en cuatro vinetas: cuando estara listo el Prototipo, donde se hara negocio, como se hara negocio, que estandares se exigiran | **INVENTARIO PROPIO: NACE 1 CANDIDATO** |
+| `R6` | L179 a L184 | **76** | los estandares que creas daran forma al negocio y a la experiencia que tienes de el, crean la tension que acerca el modelo futuro del negocio a como se ve hoy, y son la energia que producen resultados | **POSTURA: bisagra** |
+| `R7` | L185 a L279 | **2891** | la historia de Sarah describiendo su Objetivo Estrategico para All About Pies: las cuatro tiendas, las ventas, el jardin organico, el cuidado de su tia | **CASO** |
+| **el cuerpo entero** | **L8 a L279** | **4685** | **suma de las piezas: 4685** | **residuo sin asignar: 0** |
+
+piezas: 7   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4685   suma 4685   residuo 0
