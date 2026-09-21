@@ -1190,3 +1190,8 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-21 18:22:23] extractor listo (USD 9.287955299999997), 2153s, intento 1 de 7
 [2026-09-21 18:22:23] VUELTA 1 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
 [2026-09-21 18:22:23] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-21 18:50:44] auditor listo (USD 11.341839999999996), 1701s, intento 1 de 7
+[2026-09-21 18:50:44]   sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)
+[2026-09-21 18:50:45]   tablero puesto al dia al cerrar la vuelta 1 (d102)
+[2026-09-21 18:50:45] DETENIDO en la vuelta 2: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-21 18:50:45] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
