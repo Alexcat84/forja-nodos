@@ -58406,7 +58406,10 @@ frase cada una), y escribir una no seria transcribir, seria completar un inventa
 (`ACTA G3` seccion 2), y el `cap. 17` (*Your Marketing Strategy*) esta apartado en
 `fuentes/gerber_emyth_cap17_reservado/`. Las aristas cabeza a parte se declaran cuando cada capitulo se
 mine y produzca su propia cabeza, citando `L43` a `L57`, no antes. Mismo patron que
-`fingir_prototipo_cinco_mil_replicas` (entro con `4` de `6` partes) y `recorrer_trece_elementos_proceso_evaluacion_formal`
+~~`fingir_prototipo_cinco_mil_replicas` (entro con `4` de `6` partes)~~ **CORRECCION DECLARADA EN LA VUELTA
+5 (`ACTA G4` `1`, fila `2`): es falso, `fingir_prototipo_cinco_mil_replicas` NO ha entrado. Sigue en
+`cuarentena/gerber_emyth/` (`grep -c '"clave": "gerber_emyth"' dataset/nodos.jsonl` da `0`) y su propio
+`nodos_siguientes` esta vacio. Lo cierto es que NACIO con `4` de `6` reglas escritas** y `recorrer_trece_elementos_proceso_evaluacion_formal`
 (entro con `0` de `13`).
 
 Su informe, corrido en el acto. Salida de
@@ -58686,11 +58689,17 @@ trabajo futuro sin hacer.
 
 *El encargo (seccion 6) dice "escribe tu tanda: `python forja.py credito --anotar`". `--anotar` pide
 `--especie`, `--vuelta`, `--tanda "ACTA N"`, `--racha` y `--cita`: el campo `--tanda` nombra la ACTA que
-audito esta vuelta, y esa acta todavia no existe. `CREDITO_gerber_emyth.jsonl` no tiene ni una fila cuyo
-`tanda` no sea una `ACTA` del auditor. "Escribir mi tanda" lo leo como MEDIR el estado con el instrumento
-de solo lectura, no como adjudicarme un numero que le corresponde escribir a quien audita (`EXTRACTOR.md`
-14: *el extractor propone en su reporte, no se adjudica a si mismo*), y es la misma lectura que la vuelta
-3 ya hizo sobre su propio encargo.*
+audito esta vuelta, y esa acta todavia no existe. ~~`CREDITO_gerber_emyth.jsonl` no tiene ni una fila cuyo
+`tanda` no sea una `ACTA` del auditor.~~ **CORRECCION DECLARADA EN LA VUELTA 5 (`ACTA G4` `1`, fila `1`):
+es falso. La PRIMERA fila del fichero SI tiene `tanda` `"G2"`, no una `ACTA`, y es justo la fila que la
+`ACTA G2` `3.2` cargo como `CIFRA PUBLICADA`. Salida de `head -1 docs/loop/CREDITO_gerber_emyth.jsonl`:**
+
+    {"cita": "REPORTE.md seccion G2", "especie": "REPORTE", "linea": "gerber_emyth", "racha": "1 de 3", "tanda": "G2", "tipo": "tanda", "vuelta": 2}
+
+**La lectura de fondo del parrafo no cambia**: "escribir mi tanda" lo leo como MEDIR el estado con el
+instrumento de solo lectura, no como adjudicarme un numero que le corresponde escribir a quien audita
+(`EXTRACTOR.md` 14: *el extractor propone en su reporte, no se adjudica a si mismo*), y es la misma
+lectura que la vuelta 3 ya hizo sobre su propio encargo.*
 
 Salida de `python forja.py credito`, guardada en `.gerber_v4/credito.txt`:
 
@@ -58770,3 +58779,552 @@ esa seccion tallo):
 **`0` CITADAS Y QUE NO EXISTEN: la guarda cierra limpia.** `G4.6.e`, la seccion que este parrafo escribe,
 no aparece en el recuento porque el instrumento leyo el documento ANTES de que esta frase se pegara (el
 mismo desfase, ya declarado, que `G4.4.b` explica para su propia corrida).
+
+---
+
+# FRENTE `gerber_emyth`, VUELTA 5: **`cap_15`, `cap_16` Y `cap_17`, Y LAS DOS CORRECCIONES DE LA `ACTA G4`** (`D.45`, frente en paralelo: **NO INSERTA**)
+
+> ## **ESTE BLOQUE SE ESCRIBE EN LA RAMA `extraccion-gerber_emyth`, CON `MODO_INSERCION=cuarentena`. CERO INSERCIONES.**
+>
+> **`ACTA G4` PAGA `d101` ENTERA Y SOSTIENE LOS TRES DISCUTIBLES DE LA VUELTA 4.** Lo unico que cae son
+> dos frases de prosa de acompaniamiento (seccion `1` de este bloque), que `5.2` de `EXTRACTOR.md` dice
+> que NO acumulan en ninguna racha.
+>
+> **MODO AUSTERO (`D.47`) VIGENTE.** Nada que el registro ya diga, cifras talladas, discutibles por
+> numero y linea. **Las guardas de dato, intactas**: la aduana en seco candidato a candidato, la
+> fidelidad `D.30` con su relectura contra el parrafo, `D.41` y `D.42`.
+
+## G5.0. EL ESQUELETO DE LA VUELTA (`EXTRACTOR.md` 3)
+
+| # | tarea del encargo | como cierra | donde |
+|---:|---|---|---|
+| 1 | `TAREA 1`: las dos correcciones declaradas de `ACTA G4` `1` (fila `1`: `G4.6.b`; fila `2`: `G4.3.a`), tachadas sin borrar | **CERRADA** | `G5.1` |
+| 2 | `TAREA 2`: frontera, candidatos, `PASOS INVENTADOS` y arista `D.37` (si aplica) de `cap_15`, `cap_16` y `cap_17` | **CERRADA** | `G5.2` |
+| 3 | `TAREA 3`: muestra de fidelidad, semilla `g5` | **CERRADA** | `G5.4` |
+| | el cierre: guardas, informe del primer candidato re-corrido (`d107`), cifras recomputadas, discutibles marcados, `D.61` repasada, credito, commit y push | **CERRADO** | `G5.5` a `G5.7` |
+
+**TRES TAREAS ENCARGADAS, DENTRO DEL TOPE DE CINCO** (`EXTRACTOR.md` 1.3).
+
+## G5.1. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+Salida de `python .gerber_v5/apertura.py` (copia sin cambios de `.gerber_v4/apertura.py`), guardada en
+`.gerber_v5/apertura.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v5/apertura.txt -->
+
+| pieza | al abrir | de donde sale |
+|---|---:|---|
+| nodos en el grafo | **346** | `dataset/nodos.jsonl` |
+| veredictos escritos | **740** | `bitacora/VEREDICTOS.jsonl` |
+| unidades de `gerber_emyth` | **22** | `PATRON: fuentes/gerber_emyth/cap_*.md` |
+| palabras de cuerpo del libro | **62648** | `PATRON: fuentes/gerber_emyth/cap_*.md` |
+| candidatos en bandeja de `gerber_emyth` | **15** | `PATRON: cuarentena/gerber_emyth/*.json` |
+| clave `gerber_emyth` en la tabla canonica | **SI** | `fuentes/FUENTES_CANONICAS.json` |
+| rama activa | `extraccion-gerber_emyth` | `git rev-parse --abbrev-ref HEAD` |
+| commit de apertura | `889bbfc` | `git rev-parse --short HEAD` |
+
+**Contra el cierre de `ACTA G4` `G4.5.b`:** `346` nodos, `740` veredictos y `15` candidatos en bandeja me
+salen al digito, igual que el estado que esa acta publica al cerrar. **Cero discrepancia que declarar.**
+
+**LA TRAMPA DEL NOMBRE, COMPROBADA ANTES DE CORTAR NADA** (encargo seccion `2`): salida de
+`grep -m1 "^unidad:" fuentes/gerber_emyth/cap_15.md fuentes/gerber_emyth/cap_16.md fuentes/gerber_emyth/cap_17.md fuentes/gerber_emyth_cap17_reservado/cap_17.md`:
+
+    fuentes/gerber_emyth/cap_15.md:unidad: Cap. 13
+    fuentes/gerber_emyth/cap_16.md:unidad: Cap. 14
+    fuentes/gerber_emyth/cap_17.md:unidad: Cap. 15
+    fuentes/gerber_emyth_cap17_reservado/cap_17.md:unidad: Cap. 17
+
+**Confirmado: `fuentes/gerber_emyth/cap_17.md` es `Cap. 15` (*Your Management Strategy*), no el reservado.
+El reservado (`Cap. 17`, *Your Marketing Strategy*) no se toca esta vuelta.**
+
+## G5.2. TAREA 1: **LAS DOS CORRECCIONES DECLARADAS DE `ACTA G4` `1`, TACHADAS SIN BORRAR**. **CERRADA**
+
+Las dos viven en prosa de acompaniamiento (no en tabla tallada), asi que se tachan en su sitio y se
+escribe la correccion al lado, sin borrar (`D.35`, `D.41`).
+
+### G5.2.a. Fila `1`: `G4.6.b`, sobre `CREDITO_gerber_emyth.jsonl`
+
+La frase *`CREDITO_gerber_emyth.jsonl` no tiene ni una fila cuyo `tanda` no sea una `ACTA` del auditor*
+era falsa: la primera fila tiene `tanda` `"G2"`. Tachada en su sitio (`docs/loop/REPORTE.md`, seccion
+`G4.6.b`) con la salida de `head -1 docs/loop/CREDITO_gerber_emyth.jsonl` pegada al lado:
+
+    {"cita": "REPORTE.md seccion G2", "especie": "REPORTE", "linea": "gerber_emyth", "racha": "1 de 3", "tanda": "G2", "tipo": "tanda", "vuelta": 2}
+
+### G5.2.b. Fila `2`: `G4.3.a`, sobre `fingir_prototipo_cinco_mil_replicas`
+
+La frase *mismo patron que `fingir_prototipo_cinco_mil_replicas` (entro con `4` de `6` partes)* era falsa:
+el candidato NO ha entrado. Verificado y tachado con las dos salidas pegadas:
+
+    $ grep -c '"clave": "gerber_emyth"' dataset/nodos.jsonl
+    0
+
+    $ python -c "import json; print(json.load(open('cuarentena/gerber_emyth/fingir_prototipo_cinco_mil_replicas.json', encoding='utf-8'))['nodos_siguientes'])"
+    []
+
+**Cero nodos de `gerber_emyth` en el grafo y `nodos_siguientes` vacio: el candidato sigue en cuarentena.**
+Lo cierto, y lo que queda escrito en su lugar: nacio con `4` de `6` reglas escritas (no `partes`, no
+`entro`).
+
+### G5.2.c. Lo que no se toca
+
+`G4.6.b` cierra su propio parrafo diciendo que la conclusion final (no escribirse su propia fila de
+credito) fue correcta por el precedente de `ACTA G2`, y eso no cambia: la correccion es sobre la premisa
+citada (la primera fila SI es `G2`), no sobre la conclusion, que ya reconocia esa misma fila por otra via.
+
+## G5.3. TAREA 2: **`cap_15`, `cap_16` Y `cap_17`**. **CERRADA**
+
+*Tres capitulos, techo del regimen ligero (`D.58`). `cap_15` (`Cap. 13`, `4685` palabras), `cap_16`
+(`Cap. 14`, `4835` palabras), `cap_17` (`Cap. 15`, `2448` palabras): los tres confirmados contra la trampa
+del nombre en `G5.1`.*
+
+
+### G5.3.a. LA FRONTERA DE `cap_15` (`Cap. 13`, *Your Strategic Objective*), **7 piezas y UN CANDIDATO**
+
+Salida de `python .gerber_v5/frontera.py fuentes/gerber_emyth/cap_15.md .gerber_v5/piezas_cap15.txt`,
+guardada en `.gerber_v5/frontera_cap15.txt`:
+
+<!-- TALLADO: salida=.gerber_v5/frontera_cap15.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L20 | **31** | el numero del capitulo, el rotulo YOUR STRATEGIC OBJECTIVE y el epigrafe de Eugen Herrigel (Zen and the Art of Archery) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L21 a L42 | **390** | que es el Objetivo Estrategico: la vision del producto terminado de tu negocio, producto de tu Plan de Vida y tu Estrategia y Plan de Negocio, reducido a estandares simples para medir el progreso | **POSTURA** |
+| `R3` | L43 a L86 | **516** | el Primer Estandar, el dinero: cuanto valen los ingresos brutos, ganancias, cuanto necesitas para ser libre, por cuanto y cuando vender el negocio, preguntas retoricas encadenadas en prosa corrida, sin vineta | **POSTURA** |
+| `R4` | L87 a L166 | **694** | el Segundo Estandar, una Oportunidad que Vale la Pena: la diferencia entre la mercancia y el producto (el ejemplo de Revlon y del comercial de Chanel) y entre demografia y psicografia del Modelo Demografico Central | **POSTURA y CASO** |
+| `R5` | L167 a L178 | **87** | Estandares del Tercero en adelante: no hay numero fijo de estandares, solo preguntas especificas que hay que responder, y el libro las pone en cuatro vinetas: cuando estara listo el Prototipo, donde se hara negocio, como se hara negocio, que estandares se exigiran | **INVENTARIO PROPIO: NACE 1 CANDIDATO** |
+| `R6` | L179 a L184 | **76** | los estandares que creas daran forma al negocio y a la experiencia que tienes de el, crean la tension que acerca el modelo futuro del negocio a como se ve hoy, y son la energia que producen resultados | **POSTURA: bisagra** |
+| `R7` | L185 a L280 | **2891** | la historia de Sarah describiendo su Objetivo Estrategico para All About Pies: las cuatro tiendas, las ventas, el jardin organico, el cuidado de su tia | **CASO** |
+| **el cuerpo entero** | **L8 a L279** | **4685** | **suma de las piezas: 4685** | **residuo sin asignar: 0** |
+
+    piezas: 7   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4685   suma 4685   residuo 0
+
+**Por que solo `R5` pasa la vara.** `R2` es la definicion general del Objetivo Estrategico (postura). `R3`
+(el Primer Estandar, dinero) encadena varias preguntas retoricas en prosa corrida, sin vineta ni
+imperativo explicito (*how big is your vision? will it be a $300,000 company?*): mismo caso que `R2` de
+`cap_13` en la vuelta anterior, nombrar sin desplegar en formato de lista. `R4` (el Segundo Estandar) es
+conceptual (mercancia contra producto, demografia contra psicografia) con un caso incrustado (el comercial
+de Chanel, la cita de Revson), tampoco trae vineta. `R5` SI trae inventario propio: *there are only
+specific questions that need to be answered*, seguido de CUATRO preguntas en vineta, cada una su propio
+objeto de trabajo (plazo del Prototipo, territorio, modalidad de venta, estandares operativos), sin
+adjetivo de adecuacion en el sitio del criterio.
+
+`cuarentena/gerber_emyth/responder_4_preguntas_estandares_objetivo_estrategico.json`, con sus **5** pasos
+transcritos de `R5` (`L167` a `L178`), cita pegada en `.gerber_v5/cita_cap15_L167.txt` (`D.35`):
+
+    Standards Three Through?
+    There is no specific number of standards in your Strategic Objective. There are only specific
+    questions that need to be answered.
+    • When is your Prototype going to be completed? In two years? Three? Ten?
+    • Where are you going to be in business? Locally? Regionally? Nationally? Internationally?
+    • How are you going to be in business? Retail? Wholesale? A combination of the two?
+    • What standards are you going to insist upon regarding reporting, cleanliness, clothing,
+    management, hiring, firing, training, and so forth?
+
+**RELECTURA DE FIDELIDAD `D.30` EN EL ACTO: `5` pasos, `5` TRANSCRIPCION, `0` PUENTE.** El primer paso
+transcribe la frase que abre la pieza (no hay numero fijo de estandares, solo preguntas que responder) y
+los otros cuatro transcriben cada vineta, con las opciones que el propio libro nombra (dos anios, tres,
+diez; localmente, regionalmente, nacionalmente, internacionalmente; al detalle, al por mayor; reportes,
+limpieza, vestuario, gestion, contratacion, despido, entrenamiento), sin anadir ninguna opcion propia.
+
+**POR QUE NO ES LA CABEZA DEL PASO `2` DE LA SERIE, Y SE DICE CON ESAS PALABRAS** (encargo seccion `2`,
+nota sobre `D.37`): `recorrer_siete_pasos_programa_desarrollo_negocio` (`cap_13` del libro, `L43` a `L57`)
+nombra *Your Strategic Objective* como su segundo paso, pero este candidato es un METODO DENTRO de ese
+paso (el cuestionario de los estandares tercero en adelante), no el paso completo: el capitulo tambien
+trae el estandar del dinero (`R3`) y el de la Oportunidad que Vale la Pena (`R4`), que este candidato no
+cubre. Mismo patron que `responder_8_preguntas_construir_primary_aim` con *Your Primary Aim* en la vuelta
+4: **un metodo dentro de un paso no es la cabeza de ese paso**, y cablearlo como si lo fuera fabrica una
+arista falsa. **`D.37` NO SE DISPARA para `cap_15`.**
+
+Su informe, corrido en el acto. Salida de
+`python forja.py informe cuarentena/gerber_emyth/responder_4_preguntas_estandares_objetivo_estrategico.json`,
+guardada en `.gerber_v5/informe_responder_4_preguntas.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v5/informe_responder_4_preguntas.txt -->
+
+    poblacion del barrido       : 456   (346 del grafo mas 110 que esperan en bandejas)
+    ENTRARIAN sin leer nada          : 0
+    BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+
+    [BLOQUEARIA] responder_4_preguntas_estandares_objetivo_estrategico
+        vecino responder_8_preguntas_construir_primary_aim  [levantada por: similitud_texto]
+          similitud_texto 0.380 | familia_id 0.250 | paso_contra_nodo 0.451
+          paso 2 del candidato contra paso 7 de responder_8_preguntas_construir_primary_aim
+        vecino cuantificar_impacto_innovacion_6_pasos  [levantada por: similitud_texto]
+          similitud_texto 0.375 | familia_id 0.000 | paso_contra_nodo 0.414
+          paso 2 del candidato contra paso 6 de cuantificar_impacto_innovacion_6_pasos
+        vecino probar_traje_azul_seis_semanas  [levantada por: similitud_texto]
+          similitud_texto 0.393 | familia_id 0.000 | paso_contra_nodo 0.305
+          paso 4 del candidato contra paso 2 de probar_traje_azul_seis_semanas
+
+**`0 CAERIA`. Los tres vecinos, leidos** (todos por debajo de `0,4`, banda media, `EXTRACTOR.md` 11):
+
+- `responder_8_preguntas_construir_primary_aim`, paso 7 (*que me gustaria estar haciendo dentro de dos
+  anios, dentro de diez*) contra mi paso 2 (*cuando va a estar terminado tu Prototipo: en dos anios, en
+  tres, en diez*). Parecido de horizonte temporal entre dos capitulos distintos (Primary Aim contra
+  Strategic Objective), no el mismo objeto: uno pregunta por la vida entera, el otro por el Prototipo del
+  negocio. **VEREDICTO DE LECTURA: `SANO`.**
+- `cuantificar_impacto_innovacion_6_pasos`, paso 6, contra mi paso 2: sin relacion conceptual (ese nodo
+  mide el impacto de una innovacion ya probada; este pregunta por el plazo del Prototipo). **`SANO`.**
+- `probar_traje_azul_seis_semanas`, paso 2 (vestuario azul marino para un test de ventas) contra mi paso 4
+  (*como vas a hacer negocio: al detalle, al por mayor*). Coincidencia lexica de superficie, cero relacion
+  conceptual. **`SANO`.**
+
+Ninguno se escribe en `bitacora/VEREDICTOS.jsonl` porque esta vuelta no inserta (`D.39`).
+
+
+### G5.3.b. LA FRONTERA DE `cap_16` (`Cap. 14`, *Your Organizational Strategy*), **7 piezas y CERO CANDIDATOS**
+
+Salida de `python .gerber_v5/frontera.py fuentes/gerber_emyth/cap_16.md .gerber_v5/piezas_cap16.txt`,
+guardada en `.gerber_v5/frontera_cap16.txt`:
+
+<!-- TALLADO: salida=.gerber_v5/frontera_cap16.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L20 | **51** | el numero del capitulo, el rotulo YOUR ORGANIZATIONAL STRATEGY y el epigrafe de Theodore Levitt (Management for Business Growth) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L21 a L30 | **87** | todo el mundo quiere organizarse, y el desarrollo organizacional del Organization Chart puede tener mas impacto en una empresa pequenia que cualquier otro paso del Business Development | **POSTURA** |
+| `R3` | L31 a L154 | **704** | Organizing Around Personalities: el caso negativo de Jack y Murray Hopeful organizando Widget Makers alrededor de personas en vez de funciones, turnandose las tareas hasta el caos, sin que nadie sepa quien responde de que | **CASO** |
+| `R4` | L155 a L244 | **1166** | Organizing Your Company: el caso positivo, Jack y Murray vuelven a empezar como accionistas, escriben su Primary Aim y su Strategic Objective, y acuerdan las posiciones de SU Organization Chart y que es un Position Contract | **CASO** |
+| `R5` | L245 a L318 | **785** | Widget Makers Inc Organization Chart: Jack y Murray deciden quien llena cada posicion y firman los Position Contracts de SU empresa, hasta quedar organizados | **CASO** |
+| `R6` | L319 a L420 | **1138** | Prototyping the Position: Jack y Murray prototipan sus propias posiciones con Innovacion, Cuantificacion y Orquestacion, contratan un aprendiz para el puesto de Murray, y el cierre general de que el Organization Chart fluye del Strategic Objective y este del Primary Aim | **CASO** |
+| `R7` | L421 a L489 | **904** | el dialogo de Sarah confirmando que entendio la leccion sobre crear su propio Organization Chart y firmar los Position Contracts como si fuera cada empleado | **CASO** |
+| **el cuerpo entero** | **L8 a L489** | **4835** | **suma de las piezas: 4835** | **residuo sin asignar: 0** |
+
+    piezas: 7   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4835   suma 4835   residuo 0
+
+**CERO CANDIDATOS EN ESTE CAPITULO, Y SE DICE POR QUE.** Salvo el rotulo (`R1`) y la definicion general de
+apertura (`R2`, postura sin vineta), **el capitulo entero (`R3` a `R7`, `4697` de `4835` palabras) es UN
+SOLO CASO CORRIDO**: la historia de Jack y Murray Hopeful fundando Widget Makers, Inc., primero mal (`R3`,
+el caos de organizarse por personas) y despues bien (`R4` a `R6`, el metodo correcto: accionistas y
+empleados, Primary Aim, Strategic Objective, Organization Chart, Position Contracts, prototipado de cada
+posicion), cerrado con el dialogo de Sarah (`R7`) confirmando la leccion para su propia panaderia.
+
+**LA UNICA VINETA DEL CAPITULO NO PASA LA VARA, Y ES EL DISCUTIBLE DE ESTA TAREA** (ver `G5.3.d` `4`):
+`L209` a `L221`, dentro de `R4`, trae SIETE vinetas con las posiciones del Organization Chart de Widget
+Makers (President/COO, tres Vice Presidentes, sus reportes). Pero el propio texto las introduce atadas al
+caso: el libro dice que fue el Strategic Objective de Widget Makers, un negocio de una sola locacion que
+ensambla y vende widgets en el territorio North Marine West, lo que llevo a Jack y Murray a acordar esas
+posiciones exactas. **Es el inventario de LA EMPRESA DEL CASO, no un inventario generico que el autor
+ponga fuera de la narracion**: el libro no repite en ningun otro sitio, fuera de Jack y Murray, que TODO
+Organization Chart necesite exactamente esas posiciones (una panaderia como All About Pies no necesita un
+Production Manager de widgets). Escribir un nodo con esas siete vinetas seria el sintoma barato de `9.1`
+(seccion `3.5` del manual): *el entregable del caso lleva un dato del caso*.
+
+**NINGUN OTRO INVENTARIO PROPIO EN EL RESTO DEL CAPITULO.** La definicion del Position Contract (`L233`)
+nombra cuatro componentes (resumen de resultados, trabajo, estandares, firma) pero en una sola frase
+corrida, sin vineta: mismo patron que `cap_12` `R2` (Innovation, Quantification, Orchestration nombradas
+en una frase, sin desplegar), **postura, no inventario** (y esta dentro de `R4`, que ya lleva su clase).
+
+**`d104` REPASADO SIN TOCAR** (encargo seccion `6`): `L351` y `L353` de este capitulo vuelven a nombrar
+Innovation, Quantification, and Orchestration, la misma terna de `d104` (`cap_12` `L21`). Sigue sin
+existir como cabeza propia y **esta vuelta no la abre**, tal como el encargo ordena.
+
+**CERO PISO PARA `D.37`:** sin candidato, no hay cabeza que declarar contra el paso `3` de la serie
+(*Your Organizational Strategy*) de `recorrer_siete_pasos_programa_desarrollo_negocio`.
+
+### G5.3.c. LA FRONTERA DE `cap_17` (`Cap. 15`, *Your Management Strategy*), **3 piezas y CERO CANDIDATOS**
+
+*Confirmado en `G5.1` que este fichero es `Cap. 15` del libro y no el `Cap. 17` reservado.*
+
+Salida de `python .gerber_v5/frontera.py fuentes/gerber_emyth/cap_17.md .gerber_v5/piezas_cap17.txt`,
+guardada en `.gerber_v5/frontera_cap17.txt`:
+
+<!-- TALLADO: salida=.gerber_v5/frontera_cap17.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L18 | **13** | el numero del capitulo, el rotulo YOUR MANAGEMENT STRATEGY y el lema de AT&T (The System is the Solution) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L19 a L50 | **254** | que es un Management System: no hace falta gente con destrezas sofisticadas, hace falta un Sistema que sea la estrategia de gestion y produzca un resultado de mercadeo, y entre mas automatico el Sistema mas efectivo el Prototipo | **POSTURA** |
+| `R3` | L51 a L221 | **2181** | el caso del hotel Venetia: el match, la menta, el cafe y el periodico que el Sistema entrega siempre igual, y la entrevista con el Manager de veintinueve anios que muestra el Operations Manual con sus checklists codificados por color, cortado a mitad de escena | **CASO** |
+| **el cuerpo entero** | **L8 a L221** | **2448** | **suma de las piezas: 2448** | **residuo sin asignar: 0** |
+
+    piezas: 3   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2448   suma 2448   residuo 0
+
+**CERO CANDIDATOS.** `R2` es conceptual, sin vineta (que es un Management System, un Sistema disenado
+dentro del Prototipo para producir un resultado de mercadeo), postura pura sobre que ES un Management
+System. `R3`, el `89` por ciento del capitulo, es UN SOLO CASO: la historia del hotel Venetia, contada en
+primera persona por el autor y despues en boca del Manager joven describiendo su Operations Manual
+(checklists por color, ocho habitaciones por Room Support Person, firma obligatoria, dibujo al reverso del
+checklist, supervisores haciendo spot checks). **Este fichero termina a mitad de la escena** (la ultima
+linea, `L221`, es la respuesta del Manager antes de explicar como logra que su gente use los checklists):
+no hay cierre de capitulo que leer, solo lo que el fichero trae.
+
+**LA MISMA TENSION QUE `cap_16`, Y ES EL DISCUTIBLE `5` de `G5.3.d`:** la descripcion del Operations
+Manual (checklists color codificados, un paquete por habitacion, firma, dibujo con el orden de tareas) es
+rica y detallada, pero **atada al hotel Venetia especifico**, contada por su Manager en dialogo, no puesta
+por el autor como un inventario generico fuera del caso (a diferencia de las ocho preguntas de `cap_14` o
+las cuatro de `cap_15`, que el autor pone en su propia voz, en vineta, fuera de cualquier personaje). **NO
+NACE CANDIDATO**, con el mismo criterio que `cap_16`: el caso no es la casa, y aqui no hay casa fuera del
+caso.
+
+**CERO PISO PARA `D.37`:** sin candidato, no hay cabeza que declarar contra el paso `4` de la serie (*Your
+Management Strategy*).
+
+### G5.3.d. DISCUTIBLES DE ESTA TAREA, MARCADOS ANTES DE SABER SI ACIERTO
+
+| # | discutible | por que lo marco |
+|---:|---|---|
+| `4` | en `cap_16`, la lista de siete vinetas del Organization Chart de Widget Makers (`L209` a `L221`) la lei como CASO (atada al negocio de una sola locacion en North Marine West). Si el auditor lee que President/COO mas tres Vice Presidentes con sus reportes es la estructura MINIMA que el autor pide para CUALQUIER negocio (y el detalle de widgets es solo el ejemplo, no el inventario), nace un candidato que yo no escribi | es la lectura mas fina de `cap_16`: la unica vineta del capitulo, y el limite exacto entre `9.1` restriccion `1` (inventario generico) y `3.5` (el caso no es la casa) |
+| `5` | en `cap_17`, la descripcion del Operations Manual del hotel Venetia (checklists por color, firma, dibujo al reverso) la lei como CASO por la misma razon que `4`. Si el auditor lee que la ESTRUCTURA del Operations Manual (checklist por tarea, firma de quien la hizo, orden de pasos dibujado) es un METODO generico que el autor ilustra con Venetia y no LA CASA del propio Venetia, nace un candidato ahi tambien | mismo limite que `4`, aplicado al capitulo que ademas viene cortado a mitad de escena, lo que deja menos texto para confirmar si el autor lo generaliza en algun momento |
+
+La numeracion sigue la de `ACTA G4` (discutibles `1` a `3` de la vuelta `4`); estos son el `4` y el `5` de
+la linea, marcados esta vuelta.
+
+### G5.3.e. `PASOS INVENTADOS POR CAPITULO`, UNA FILA POR CAPITULO (`AUDITOR_FORJA.md` 8)
+
+<!-- TALLADO: parcial salida=.gerber_v5/frontera_cap15.txt,.gerber_v5/frontera_cap16.txt,.gerber_v5/frontera_cap17.txt,.gerber_v5/informe_responder_4_preguntas.txt -->
+
+| capitulo | candidatos nuevos (esta vuelta) | pasos escritos | PUENTE | pasos inventados |
+|---|---:|---:|---:|---|
+| `cap_15` | `1` (`responder_4_preguntas_estandares_objetivo_estrategico`) | `5` | `0` | **0,00 por ciento** |
+| `cap_16` | `0` | `0` | `0` | **SIN SUPERFICIE** |
+| `cap_17` | `0` | `0` | `0` | **SIN SUPERFICIE** |
+| **la vuelta 5 entera** | **`1`** | **`5`** | `0` | **0,00 por ciento** |
+
+## G5.4. TAREA 3: **LA MUESTRA DE FIDELIDAD, SEMILLA `g5`**. **CERRADA**
+
+Salida de
+`python scripts/muestra_fidelidad.py --libro gerber_emyth --capitulos cap_15,cap_16,cap_17 --semilla g5`,
+guardada en `.gerber_v5/muestra_fidelidad.txt`:
+
+<!-- TALLADO: salida=.gerber_v5/muestra_fidelidad.txt -->
+
+    MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+      libro    : gerber_emyth
+      semilla  : g5
+      capitulos: cap_15, cap_16, cap_17
+
+      RELEIDO ENTERO : cap_17
+      POR MUESTRA    : cap_15, cap_16, 15 pasos cada uno
+
+      EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+      pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+      --- cap_15: 5 paso(s) en la muestra
+        responder_4_preguntas_estandares_objetivo_estr P1   No hay un numero especifico de estandares en tu Objetivo Est
+        responder_4_preguntas_estandares_objetivo_estr P2   Cuando va a estar terminado tu Prototipo: en dos anios, en t
+        responder_4_preguntas_estandares_objetivo_estr P3   Donde vas a hacer negocio: localmente, regionalmente, nacion
+        responder_4_preguntas_estandares_objetivo_estr P4   Como vas a hacer negocio: al detalle, al por mayor, o una co
+        responder_4_preguntas_estandares_objetivo_estr P5   Que estandares vas a exigir en cuanto a reportes, limpieza, 
+
+      --- cap_16: 0 paso(s) en la muestra
+
+      --- cap_17: ENTERO, 0 paso(s), no hay muestra que elegir
+
+**La semilla eligio `cap_17` para relectura ENTERA. `cap_17` no tiene candidatos (`G5.3.c`): la relectura
+entera de cero pasos se cumple trivialmente, sin nada que corregir.** `cap_15` y `cap_16` van por muestra:
+`cap_15` trae sus unicos `5` pasos (el `100` por ciento, porque el candidato no llega al techo de `15`) y
+`cap_16` trae `0` porque no tiene candidatos (`G5.3.b`). **Releidos los `5` pasos de `cap_15` contra su
+cita** (`.gerber_v5/cita_cap15_L167.txt`, ya usada en `G5.3.a`): **`0` PUENTE.** `cap_16` y `cap_17` no
+tienen pasos que releer, asi que el disparador del `10` por ciento no tiene sobre que dispararse en
+ninguno de los dos: **SIN SUPERFICIE, no CERO por debajo del disparador.**
+
+## G5.5. EL CIERRE: GUARDAS Y EL RE-INFORME DEL PRIMER CANDIDATO (`d107`)
+
+### G5.5.a. LAS TRES GUARDAS, SALIDA PEGADA ENTERA
+
+Salida de `python forja.py gate`, guardada en `.gerber_v5/gate.txt` (`d103`: tres lineas, no dos):
+
+<!-- TALLADO: salida=.gerber_v5/gate.txt -->
+
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+Salida de `python forja.py guiones`, guardada en `.gerber_v5/guiones.txt`:
+
+<!-- TALLADO: salida=.gerber_v5/guiones.txt -->
+
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+Salida de `python tests/test_aceptacion.py`, guardada en `.gerber_v5/test_aceptacion.txt` (cola final):
+
+<!-- TALLADO: parcial salida=.gerber_v5/test_aceptacion.txt -->
+
+    total: 350 pruebas, 0 fallos, 0 errores
+
+**LAS TRES EN VERDE, SIN CAIDA TRANSITORIA QUE CORREGIR EN ESTA VUELTA.**
+
+### G5.5.b. `d107`: EL INFORME DEL PRIMER CANDIDATO, VUELTO A CORRER AL CIERRE
+
+*El encargo (seccion `4`) pide correr otra vez el informe del primer candidato de la vuelta, porque la
+aduana en el acto hace que el ultimo candidato vea a todos y el primero no vea a ninguno.*
+
+**Esta vuelta escribio UN SOLO candidato** (`responder_4_preguntas_estandares_objetivo_estrategico`,
+`G5.3.a`): es a la vez el primero y el unico. Salida de
+`python forja.py informe cuarentena/gerber_emyth/responder_4_preguntas_estandares_objetivo_estrategico.json`,
+corrida otra vez al cierre y guardada en `.gerber_v5/informe_responder_4_preguntas_recierre.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v5/informe_responder_4_preguntas_recierre.txt -->
+
+    poblacion del barrido       : 456   (346 del grafo mas 110 que esperan en bandejas)
+    ENTRARIAN sin leer nada          : 0
+    BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+
+    [BLOQUEARIA] responder_4_preguntas_estandares_objetivo_estrategico
+        vecino responder_8_preguntas_construir_primary_aim  [levantada por: similitud_texto]
+          similitud_texto 0.380 | familia_id 0.250 | paso_contra_nodo 0.451
+        vecino cuantificar_impacto_innovacion_6_pasos  [levantada por: similitud_texto]
+          similitud_texto 0.375 | familia_id 0.000 | paso_contra_nodo 0.414
+        vecino probar_traje_azul_seis_semanas  [levantada por: similitud_texto]
+          similitud_texto 0.393 | familia_id 0.000 | paso_contra_nodo 0.305
+
+**Salida de `diff .gerber_v5/informe_responder_4_preguntas.txt .gerber_v5/informe_responder_4_preguntas_recierre.txt`:
+vacia (identico byte a byte).** No aparece ninguna vecindad nueva que leer: `cap_16` y `cap_17` no
+escribieron candidato (`G5.3.b`, `G5.3.c`), asi que la bandeja no crecio DESPUES de este candidato dentro
+de esta misma vuelta, y `d107` no tiene nada que revelar cuando el primer candidato tambien es el unico.
+Se deja dicho con la salida pegada, tal como el encargo pide, en vez de darlo por hecho sin correrlo.
+
+
+## G5.6. EL ESTADO AL CIERRE, RECOMPUTADO Y NO COPIADO DE LA APERTURA (`EXTRACTOR.md` 4)
+
+### G5.6.a. LA TABLA DE CIERRE DE TAREAS (`D.52`)
+
+| # | tarea | como cerro |
+|---:|---|---|
+| `1` | `TAREA 1`: las dos correcciones de `ACTA G4` `1` | **CERRADA en `G5.2`**: las dos frases tachadas sin borrar, con la salida del instrumento pegada al lado de cada una |
+| `2` | `TAREA 2`: `cap_15`, `cap_16` y `cap_17` | **CERRADA en `G5.3`**: `1` candidato nuevo (`cap_15`), `0 CAERIA`, `2` capitulos `SIN SUPERFICIE` con su razon escrita, `2` discutibles nuevos marcados |
+| `3` | `TAREA 3`: muestra de fidelidad, semilla `g5` | **CERRADA en `G5.4`**: `cap_17` releido entero (trivial, `0` candidatos), `cap_15` y `cap_16` por muestra, `0` PUENTE |
+
+    $ python scripts/tabla_de_cierre.py --escribir
+
+<!-- TALLADO: script=scripts/tabla_de_cierre.py salida=docs/loop/TABLA_DE_CIERRE.txt -->
+
+**LA TABLA REGENERADA POR EL INSTRUMENTO (`docs/loop/TABLA_DE_CIERRE.txt`) TODAVIA MUESTRA SOLO LAS DOS
+FILAS DE LA `ACTA G4`**, porque el instrumento mide afirmaciones de la forma *N de M del capitulo* contra
+`cap_NN` y esta vuelta no escribio ninguna con ese patron exacto (sus filas son de correccion, frontera y
+muestra, no de conteo por capitulo con `N de M`); el propio instrumento lo declara: `2` filas, ambas `SIN
+COMPROBAR` por falta de afirmacion de ese patron especifico en el texto que ya tenia. **La tabla de arriba
+es la tabla de esta seccion, tallada a mano contra las secciones que este mismo bloque escribio**, y se
+marca con `TALLADO: parcial` porque no reproduce el fichero letra por letra.
+
+### G5.6.b. LAS CIFRAS, RECOMPUTADAS AL CERRAR Y NO COPIADAS DE `G5.1`
+
+Salida de `python .gerber_v5/apertura.py` corrida OTRA VEZ, ahora al cierre, guardada en
+`.gerber_v5/cierre.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v5/cierre.txt -->
+
+| pieza | al abrir (`G5.1`) | al cerrar | diferencia |
+|---|---:|---:|---|
+| nodos en el grafo | `346` | **346** | `0` |
+| veredictos escritos | `740` | **740** | `0` |
+| candidatos en bandeja de `gerber_emyth` | `15` | **16** | `+1` (`responder_4_preguntas_estandares_objetivo_estrategico`) |
+| pasos en esa bandeja | `120` | **125** | `+5` (los cinco pasos del candidato nuevo) |
+| ficheros de dato movidos por esta vuelta | | **0** | `git diff --name-only 889bbfc..HEAD -- dataset/ bitacora/ censos/ config/pares_mutuos.jsonl`: vacio |
+
+**`346` y `740` identicos a la apertura de esta misma vuelta. La bandeja sube de `15` a `16` candidatos y
+de `120` a `125` pasos, y es el unico movimiento de esta vuelta**: `G5.3` solo escribe un fichero en
+`cuarentena/`, que es bandeja y no grafo; `G5.2` solo tacha y corrige texto de reporte (que no es sede de
+dato, `EXTRACTOR.md` 14). Cero averia.
+
+### G5.6.c. LAS CONDICIONES DE PARADA, REPASADAS UNA A UNA (`EXTRACTOR.md` 7)
+
+| condicion | lo que mido en este turno | veredicto |
+|---|---|---|
+| una pregunta de doctrina | ninguna: los dos discutibles (`G5.3.d` `4` y `5`) son de lectura sobre el limite caso contra inventario, y ya tienen doctrina escrita (`9.1`, `3.5`) que aplicar, no piden doctrina nueva | **NO ES PARADA** |
+| una caida de dato | ninguna: `0` ficheros de `dataset/`, `bitacora/`, `censos/` ni `config/pares_mutuos.jsonl` movidos (`G5.6.b`) | **NO ES PARADA** |
+| algo contradice una regla vigente o una cifra publicada con su corte | nada: las dos correcciones de `ACTA G4` `1` quedaron tachadas y corregidas sin borrar (`G5.2`), y el saldo de esta acta (`346` nodos, `740` veredictos, `15` candidatos al abrir) coincide con lo medido en `G5.1` | **NO ES PARADA** |
+| una guarda en rojo | ninguna: las tres de `G5.5.a` en VERDE sin caida transitoria | **NO ES PARADA** |
+| una operacion cuyo texto no alcance para ejecutarse sin decidir | ninguna: las tres tareas del encargo estaban escritas enteras, con la trampa del nombre de `cap_17` verificada antes de cortar (`G5.1`) | **NO ES PARADA** |
+
+**NINGUNA DE LAS CINCO SE CUMPLE. ESTE TURNO CIERRA SIN PARADA**, y `docs/loop/PARA_ALEXIS.md` sigue sin
+tocar y no es mio (`EXTRACTOR.md` 14).
+
+## G5.7. `D.61` REPASADA, CREDITO Y LO QUE PROPONGO
+
+### G5.7.a. `D.61` CONTRA ESTE MISMO REPORTE, ANTES DE CERRAR
+
+*`D.61`: un discutible publicado se ejecuta o se cierra en la misma vuelta que lo escribe. Tope `2`
+discutibles abiertos, no `3`.*
+
+| discutible publicado en esta vuelta | hecho o cerrado |
+|---|---|
+| `G5.3.d` `4`: la lista de posiciones del Organization Chart de Widget Makers en `cap_16` podria ser inventario generico | **CERRADO CON SU LECTURA Y SU LINEA**: `cap_16` `L207` a `L209` ata la lista al Strategic Objective especifico de Widget Makers (*one location, assembling and selling widgets... North Marine West*), y el candidato no nace (`G5.3.b`). El discutible es sobre COMO SE LEE esa atadura, no sobre un candidato pendiente de escribir |
+| `G5.3.d` `5`: la descripcion del Operations Manual del hotel Venetia en `cap_17` podria ser un metodo generico | **CERRADO CON SU LECTURA Y SU LINEA**: `cap_17` `L189` a `L191` pone la descripcion en boca del Manager de Venetia, sin que el autor la retome fuera del dialogo antes de que el fichero se corte en `L221`, y el candidato no nace (`G5.3.c`) |
+
+**NINGUN DISCUTIBLE DE ESTA VUELTA QUEDA ABIERTO EN LA FORMA QUE `D.61` CASTIGA.** Los dos son dudas de
+LECTURA sobre capitulos YA LEIDOS Y CERRADOS con `0` candidatos, no promesas de trabajo futuro sin hacer.
+**Dos discutibles cerrados, por debajo del tope de `2` abiertos** (el tope es sobre abiertos, y aqui no
+queda ninguno).
+
+### G5.7.b. CREDITO: SOLO SE MIDE, NO SE ANOTA (LA MISMA LECTURA DE `G4.6.b`, YA CORREGIDA EN `G5.2.a`)
+
+Salida de `python forja.py credito`, guardada en `.gerber_v5/credito.txt`:
+
+<!-- TALLADO: salida=.gerber_v5/credito.txt -->
+
+    CREDITO DE LA LINEA 'gerber_emyth' (D.48)
+      registro: docs/loop/CREDITO_gerber_emyth.jsonl
+      tandas: 5, en 17 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA G4
+      CIFRA PUBLICADA    0 de 2     ACTA G4
+      CLASE              0 de 2     ACTA G4
+      DATO MOVIDO        0 de 2     ACTA G4
+      REPORTE            0 de 3     ACTA G4
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**`CREDITO ENTERO: ninguna especie en su tope`, confirmado por el instrumento.** La fila de esta tanda
+(vuelta `5`) la escribe el auditor con `--anotar`, con el nombre de su propia acta en el campo `tanda`
+(`EXTRACTOR.md` 14 y 15: el extractor propone, no se adjudica).
+
+### G5.7.c. LA DEUDA, MEDIDA Y SIN TOCAR
+
+Salida de `python scripts/deuda.py --clase 5`, guardada en `.gerber_v5/deuda_clase5.txt`:
+
+<!-- TALLADO: salida=.gerber_v5/deuda_clase5.txt -->
+
+    LIBRE
+      van 4 de 5 desde la primera vuelta de la linea 'gerber_emyth' (la 1), que todavia no ha saneado
+      nunca, con 38 deuda(s) esperando
+
+**Coincide al digito con lo que el encargo publica en su seccion `6`** (`4` de `5`, `38` pendientes,
+vuelta `6` sale `SANEAMIENTO`). Esta vuelta no paga ninguna deuda ni abre ninguna nueva: los dos
+discutibles nuevos quedaron cerrados con su lectura (`G5.7.a`), no como pendiente de doctrina.
+
+### G5.7.d. PROPUESTAS AL AUDITOR, TODAS EN MI SEDE Y NINGUNA ADJUDICADA POR MI
+
+1. **Las dos correcciones de `ACTA G4` `1` quedan hechas**, tachadas sin borrar y con la salida del
+   instrumento pegada al lado de cada una (`G5.2`).
+2. **`cap_15` cierra con UN candidato** (`responder_4_preguntas_estandares_objetivo_estrategico`, `0
+   CAERIA`, `0` PUENTE), que es un metodo dentro del paso `2` de la serie (*Your Strategic Objective*), no
+   su cabeza: `D.37` sigue sin dispararse para ese paso.
+3. **`cap_16` y `cap_17` cierran con CERO candidatos cada uno**, los dos con su razon escrita
+   (`G5.3.b`, `G5.3.c`) y cada uno con un discutible marcado sobre el limite caso contra inventario
+   generico (`G5.3.d` `4` y `5`), cerrados con su lectura en `G5.7.a`.
+4. **`d104` repasado sin tocar** (`G5.3.b`): `cap_16` vuelve a nombrar Innovation, Quantification and
+   Orchestration y esta vuelta no abre esa cabeza, tal como el encargo ordena.
+5. **El frente tiene ahora `cap_04` a `cap_17` minados sin hueco** (catorce capitulos), mas `cap_09` y
+   `cap_10` de la vuelta 3. El siguiente sin tocar es `cap_18` (*Your People Strategy*, `5396` palabras,
+   el paso `5` de la serie de `cap_13`). `cap_01` a `cap_03` siguen en `d094`, sin tocar por decision del
+   fundador.
+6. **La cadencia de saneamiento sigue en `4` de `5`** (`G5.7.c`): la vuelta `6` de este frente sale
+   `SANEAMIENTO` con `38` deudas pendientes, tal como el encargo ya anticipaba.
+
+### G5.7.e. LA COMPROBACION DE SECCIONES, SEGUNDA Y ULTIMA CORRIDA
+
+
+Salida de `python .gerber_v5/secciones.py`, corrida OTRA VEZ ya con `G5.5`, `G5.6` y `G5.7` escritas,
+guardada en `.gerber_v5/secciones_final.txt`:
+
+<!-- TALLADO: salida=.gerber_v5/secciones_final.txt -->
+
+    el bloque del frente empieza en la linea 58785 de docs/loop/REPORTE.md
+    secciones que el bloque TIENE      : 26   G5.0 G5.1 G5.2 G5.2.a G5.2.b G5.2.c G5.3 G5.3.a G5.3.b G5.3.c G5.3.d G5.3.e G5.4 G5.5 G5.5.a G5.5.b G5.6 G5.6.a G5.6.b G5.6.c G5.7 G5.7.a G5.7.b G5.7.c G5.7.d G5.7.e
+    secciones que el bloque CITA       : 15   G5.1 G5.2 G5.2.a G5.3 G5.3.a G5.3.b G5.3.c G5.3.d G5.4 G5.5 G5.5.a G5.6.b G5.7 G5.7.a G5.7.c
+    CITADAS Y QUE NO EXISTEN           : 0
+
+**`0` CITADAS Y QUE NO EXISTEN: la guarda cierra limpia.** `G5.7.e`, la seccion que este parrafo escribe,
+no aparece en el recuento porque el instrumento leyo el documento ANTES de que esta frase se pegara,
+mismo desfase que `ACTA G4` `G4.6.e` ya declaro para su propia corrida.
+
+**LA VUELTA 5 CIERRA. TRES TAREAS CERRADAS (`G5.2`, `G5.3`, `G5.4`), CERO PARADA (`G5.6.c`), CERO
+INSERCION (`MODO_INSERCION=cuarentena`), TRES GUARDAS VERDES (`G5.5.a`), CERO AVERIA DE DATO (`G5.6.b`).**
