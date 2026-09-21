@@ -1,0 +1,6 @@
+[
+  ("R1", 8, 10, "el rotulo INTRODUCTION", "RESIDUO: rotulo"),
+  ("R2", 11, 16, "el epigrafe de Joseph Heller (Something Happened), sobre alguien enloqueciendo despacio dentro de todo negocio", "RESIDUO: epigrafe"),
+  ("R3", 17, 94, "la introduccion del libro: la estadistica de fracaso de los pequenos negocios en Estados Unidos, el anuncio de las cuatro ideas del libro (Idea 1 el E-Myth, Idea 2 la Turn-Key Revolution, Idea 3 el Business Development Process, Idea 4 su aplicacion sistematica), y la tesis de que el negocio es un reflejo de quien es su dueno; las cuatro ideas se nombran como el CONTENIDO del libro entero, no como pasos que el lector ejecute aqui, y no traen inventario propio de medios, etapas u objetos de trabajo en este tramo", "POSTURA: anuncio tematico del libro, metas nombradas sin inventario de medios"),
+  ("R4", 95, 99, "el separador PART I, The E-Myth and American Small Business", "RESIDUO: separador de parte"),
+]

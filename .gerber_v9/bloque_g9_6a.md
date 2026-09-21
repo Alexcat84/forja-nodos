@@ -1,6 +1,9 @@
-$ python scripts/tabla_de_cierre.py --escribir
-poblacion: dataset/nodos.jsonl entero, libro gerber_emyth
-criterio : un nodo sale de un capitulo si cita gerber_emyth/<cap>.md
+## G9.6. EL CIERRE
+
+### G9.6.a. La tabla de cierre de la vuelta `9`, pegada PRIMERO
+
+*Remedio de `d030`/`d112`: mi tabla se pega ANTES de correr `--escribir`, para que
+`docs/loop/TABLA_DE_CIERRE.txt` traiga MIS filas y no las de la vuelta anterior.*
 
 | # | tarea | como cerro |
 |---:|---|---|
