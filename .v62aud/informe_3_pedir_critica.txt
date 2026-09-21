@@ -1,0 +1,36 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 440   (346 del grafo mas 94 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : similitud_texto 3
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] pedir_critica_anonima_curso_entrenamiento_dictado   (pedir_critica_anonima_curso_entrenamiento_dictado.json)
+    vecino priorizar_lista_entrenamiento_subordinados  [levantada por: similitud_texto]
+      similitud_texto 0.496 | familia_id 0.111 | paso_contra_nodo 0.460
+      paso 3 del candidato contra paso 1 de priorizar_lista_entrenamiento_subordinados
+    vecino desarrollar_primer_curso_entrenamiento  [levantada por: similitud_texto]
+      similitud_texto 0.477 | familia_id 0.250 | paso_contra_nodo 0.396
+      paso 1 del candidato contra paso 1 de desarrollar_primer_curso_entrenamiento
+    vecino cortar_discusion_libre_momento_justo  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.430
+      paso 3 del candidato contra paso 4 de cortar_discusion_libre_momento_justo
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

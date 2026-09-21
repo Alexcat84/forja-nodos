@@ -1,0 +1,4 @@
+los 16 turnos desde la apertura de la vuelta 54:   248.4024 USD   54756 s
+nodos en el grafo al empezar esos 16 turnos    :   346
+nodos en el grafo ahora                        :   346
+ultimo commit que toco el dataset: de12cdb 2026-09-18T21:20:30-04:00 VUELTA 44, LA PRIMERA DE SANEAMIENTO DE ESTA LINEA: seis deudas pagadas de doce, las ocho aristas de d008 cableadas y el cerrojo declarado en vez de borrado

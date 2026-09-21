@@ -1,0 +1,42 @@
+  CERO DECLARADO : .v60ext/informe_2_desarrollar_primer_curso_entrenamiento.txt   sigue en cero, correcto
+      2367 bytes : .v61aud/informe_1_priorizar.txt
+       274 bytes : .v61ext/capitulos_con_candidato.txt
+       390 bytes : .v61ext/cuenta_libro.txt
+      2580 bytes : .v61ext/informe_1_priorizar.txt
+      1808 bytes : .v61ext/informe_2_desarrollar.txt
+  CERO DECLARADO : .v61ext/informe_3_pedir_critica.txt   sigue en cero, correcto
+      1444 bytes : .v62aud/banda_informe.py
+       928 bytes : .v62aud/banda_informe.txt
+      1297 bytes : .v62aud/cerrojo_mutacion.py
+       273 bytes : .v62aud/cerrojo_mutacion.txt
+      1454 bytes : .v62aud/coste_corrida.py
+       414 bytes : .v62aud/coste_corrida.txt
+       501 bytes : .v62aud/credito.txt
+      2959 bytes : .v62aud/cuenta_libro.py
+      1648 bytes : .v62aud/cuenta_libro.txt
+       809 bytes : .v62aud/discutibles.py
+       272 bytes : .v62aud/discutibles.txt
+       347 bytes : .v62aud/dos_corridas.txt
+       675 bytes : .v62aud/dos_vecindades.txt
+       681 bytes : .v62aud/estado.txt
+      6609 bytes : .v62aud/herencia.txt
+      2046 bytes : .v62aud/informe_3_pedir_critica.txt
+        91 bytes : .v62aud/informe_3_timing.txt
+      2156 bytes : .v62aud/muestra_v61.txt
+      1251 bytes : .v62aud/pasos_16.py
+      1102 bytes : .v62aud/pasos_16.txt
+      3122 bytes : .v62aud/pegado.py
+      2851 bytes : .v62aud/pegado.txt
+      1472 bytes : .v62aud/relojes.txt
+       922 bytes : .v62aud/relojes_informe.py
+       406 bytes : .v62aud/relojes_informe.txt
+      1887 bytes : .v62aud/rutas.py
+      1308 bytes : .v62aud/sin_superficie.py
+       332 bytes : .v62aud/sin_superficie.txt
+      3130 bytes : .v62aud/tablero.txt
+     15145 bytes : .v62aud/tramo_v61.md
+       715 bytes : .v62aud/turno_extractor.py
+       467 bytes : .v62aud/turno_extractor.txt
+  ----------------------------------------------------------
+  rutas citadas en el acta                   : 41
+  rutas que NO existen o estan en CERO sin declarar : 0

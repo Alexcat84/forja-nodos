@@ -1,0 +1,19 @@
+$ python forja.py gate
+GATE VERDE.
+  nodos verificados: 346
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+$ python forja.py guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+$ python tests/test_aceptacion.py   (ultima linea)
+
+  total: 339 pruebas, 0 fallos, 0 errores
+
+$ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+    346 dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+
+$ ls cuarentena/grove_high_output/*.json | wc -l
+91
