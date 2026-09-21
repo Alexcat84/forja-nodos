@@ -3943,7 +3943,7 @@ class PruebaRegimenLigero(BaseForja):
         sucesos = [{"tipo": "deuda", "id": "d1", "que": "algo", "cita": "x",
                     "vuelta": 40},
                    {"tipo": "saneamiento", "vuelta": 49}]
-        self.assertEqual(deuda.clase_de_vuelta(54, sucesos)[0], "SANEAMIENTO")
+        self.assertEqual(deuda.clase_de_vuelta(54, sucesos, linea="serial")[0], "SANEAMIENTO")
         texto = ("# ENCARGO DE LA VUELTA 54" + chr(10)
                  + "CLASE DE ESTA VUELTA: EXTRACCION")
         # la guarda mira el registro vivo, asi que aqui se comprueba la pieza que
@@ -4169,8 +4169,8 @@ class PruebaDeudaNoBloquea(BaseForja):
         from scripts import deuda
         sucesos = self._sucesos({"tipo": "saneamiento", "vuelta": 41},
                                 {"tipo": "saneamiento", "vuelta": 50})
-        self.assertEqual(deuda.clase_de_vuelta(54, sucesos)[0], "LIBRE")
-        self.assertEqual(deuda.clase_de_vuelta(55, sucesos)[0], "SANEAMIENTO")
+        self.assertEqual(deuda.clase_de_vuelta(54, sucesos, linea="serial")[0], "LIBRE")
+        self.assertEqual(deuda.clase_de_vuelta(55, sucesos, linea="serial")[0], "SANEAMIENTO")
 
     def test_caso_positivo_una_deuda_sin_cita_no_se_escribe(self):
         """Una deuda que no se puede releer no se paga."""
