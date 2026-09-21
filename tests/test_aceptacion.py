@@ -2592,6 +2592,54 @@ class PruebaCensoDeRutas(BaseForja):
             self.assertIn("docs/loop/" + fichero, exentas,
                           "D.34.2 retira %s y el censo no lo exime" % fichero)
 
+    # ------------- D.43 contra la linea del 9 sep, y tardo cuatro dias en caer
+
+    def _mandato_de_cuarentena(self):
+        arnes = comun.leer_texto(os.path.join(RAIZ, "orquestador_forja.sh"))
+        trozos = re.findall(r'MANDATO_INSERCION="([^"]+)"', arnes)
+        self.assertEqual(len(trozos), 2, "el arnes ya no tiene dos mandatos")
+        de_cuarentena = [x for x in trozos if "NO INSERTAS NADA" in x]
+        self.assertEqual(len(de_cuarentena), 1)
+        return de_cuarentena[0]
+
+    def test_caso_positivo_el_mandato_no_manda_correr_el_informe_de_lote(self):
+        """**ESPECIE ARNES, y la levanto un frente que no podia arreglarla.**
+
+        La frase *Al cerrar el capitulo corres el informe del lote entero* entro en
+        `MANDATO_INSERCION` el **9 sep**. `D.43`, que saca ese informe del turno
+        **porque no cabe**, es del **12 sep**. Por `D.13` gana `D.43`, y la linea
+        quedo vieja **tres dias despues de nacer**.
+
+        **Vivio nueve dias mas.** El auditor del frente `gerber_emyth` la midio el
+        `17` sep (su `PARA_ALEXIS` seccion `2`): el extractor la obedecio, lanzo el
+        informe, **no termino**, y dejo `91` bytes de cabecera, **que es el mismo
+        ejemplar de `480` bytes que motivo `D.43`**. No la toco porque `D.45` veda
+        el arnes desde un frente, y **nadie de la serial la recogio**.
+
+        **Y COSTO OTRA VEZ EN LA SERIAL SIN QUE NADIE LO ATARA A ESTO:** la
+        `ACTA 58` `58.9` encontro `.v55ext/informe_de_lote.txt` **corriendo diez
+        horas y media por debajo de las vueltas `56`, `57` y `58`**, lanzado por el
+        extractor de la vuelta `55`. Se registro como `d086`, *un proceso que corrio
+        sin que ninguna vuelta lo supiera*. **Es esta linea. Son el mismo defecto.**
+        """
+        mandato = self._mandato_de_cuarentena()
+        self.assertNotIn("corres el informe del lote entero", mandato)
+        self.assertIn("NO LANZAS EL INFORME DEL LOTE ENTERO EN TU TURNO", mandato)
+        self.assertIn("D.43", mandato)
+
+    def test_caso_negativo_el_informe_POR_CANDIDATO_sigue_mandado(self):
+        """**Lo que el arreglo NO puede llevarse por delante.**
+
+        `D.43` saca del turno el informe DEL LOTE, no el de cada candidato. El de
+        uno en uno **es la aduana en seco** y es barato: si el arreglo se lo comiera,
+        el frente escribiria candidatos sin pasarlos por ninguna aduana, que es peor
+        que el defecto que se arregla.
+        """
+        mandato = self._mandato_de_cuarentena()
+        self.assertIn("python forja.py informe cuarentena/<libro>/<id_propuesto>.json",
+                      mandato)
+        self.assertIn("en el mismo acto en que lo escribes", mandato)
+
     def test_un_artefacto_de_maquina_esta_exento_POR_SU_FAMILIA(self):
         """`D.33` lo resolvio por PATRON el 12 sep, y el censo usa la misma funcion.
 
