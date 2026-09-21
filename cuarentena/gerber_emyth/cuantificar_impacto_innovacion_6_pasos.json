@@ -1,0 +1,31 @@
+{
+  "id": "cuantificar_impacto_innovacion_6_pasos",
+  "titulo": "Cuantificar el impacto real de una innovacion en tu negocio con los seis conteos que el libro enumera",
+  "denominaciones": {
+    "nombre_largo": "Los seis pasos que el capitulo del proceso de desarrollo del negocio enumera uno a uno para saber si una innovacion de verdad funciono, y no solo suponerlo",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "quantification"}
+    ]
+  },
+  "condiciones_activacion": "Cuando pruebas una innovacion en tu negocio, por ejemplo cambiar las palabras con que saludas a un cliente que entra, y quieres saber si de verdad funciono en vez de suponerlo.",
+  "entregable_esperado": "El valor preciso, en numeros, de tu innovacion: la mejora que produjo, comparando los conteos de antes del cambio con los conteos de despues.",
+  "pasos_accionables": [
+    "Determina cuantas personas entraron por la puerta antes de poner en marcha la innovacion.",
+    "Determina cuantas personas compraron productos y cual fue el valor en dolares de esos productos, antes de cambiar las palabras y lo que decias para producir esas ventas.",
+    "Cuenta cuantas personas entraron por la puerta despues de cambiar las palabras.",
+    "Cuenta cuantas personas compraron algo, despues del cambio.",
+    "Determina el valor promedio de una venta.",
+    "Determina cual fue la mejora que produjo tu innovacion, comparando los numeros de antes con los de despues."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_12.md, unidad Cap. 10, titulo textual The Business Development Process. Sale de la PIEZA R5 de la frontera publicada en esta misma vuelta (.gerber_v3/frontera_cap12.txt), L95 a L95, una sola linea de 4206 palabras del capitulo. POR QUE ES PROCEDIMIENTO, con D.27 y 9.1 delante: el libro pone su propio inventario de MEDIOS, y lo pone numerado (1) a (6) dentro de la misma frase, sin ningun adjetivo de adecuacion en el sitio del criterio (no dice mide lo razonable ni de forma apropiada: dice determinando cuantos, contando cuantos, determinando el valor). Es la prueba del manual al pie de la letra: una linea que tarda seis pasos en ejecutarse es un procedimiento nombrado en una linea. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. Cita pegada en .gerber_v3/cita_cap12_L95.txt (D.35). LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: el libro no dice cada cuanto se repite esta cuantificacion, ni quien de tu equipo la hace: cerrar ese hueco seria un PUENTE (15.4), asi que el nodo se queda con el verbo en segunda persona que usa el propio libro en todo el capitulo, sin inventar destinatario ni periodo. DISCUTIBLE DECLARADO (ver reporte de esta vuelta, marcado antes de saber si acierto): los pasos 2 a 4 estan anclados en el texto al ejemplo concreto de cambiar las palabras del saludo (change the words), mientras que los pasos 1 y 6 ya hablan de the Innovation en generico; elegi transcribir fiel a esa mezcla en vez de generalizar el ejemplo entero, porque generalizar los pasos 2 a 4 habria sido escribir yo una generalizacion que el parrafo no hace del todo explicita. LA CABEZA DE TRES QUE NO SE CABLEA, D.37 vs D.29: L21 de este mismo capitulo nombra tres actividades (Innovation, Quantification, Orchestration) una a una, que es el supuesto de D.37, pero hoy NINGUNA de las tres existe como nodo propio (este candidato es un metodo concreto dentro de Quantification, no Quantification como nodo entero), asi que D.37 no aplica todavia: si alguna vuelta futura hace nacer un nodo cabeza para Quantification o para las tres actividades, la arista se declara entonces citando L21, y no antes.",
+  "atribuciones": [],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-21"}
+  ]
+}

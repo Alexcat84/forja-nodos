@@ -1,0 +1,8 @@
+[
+    ("R1", 8, 19, "el numero del capitulo, el rotulo THE TURN-KEY REVOLUTION y el epigrafe de Fritjof Capra (The Turning Point)", "RESIDUO: rotulo y epigrafe"),
+    ("R2", 20, 27, "la Turn-Key Revolution definida como una forma de hacer negocios capaz de transformar cualquier negocio pequeno de caos a orden", "POSTURA"),
+    ("R3", 28, 78, "The Franchise Phenomenon: la historia de Ray Kroc y McDonald's, y las cifras del fenomeno de las franquicias en Estados Unidos", "CASO"),
+    ("R4", 79, 110, "Turning the Key: la diferencia entre la franquicia de nombre comercial y la Business Format Franchise, y que el producto real de un negocio es el negocio mismo", "POSTURA"),
+    ("R5", 111, 172, "Selling the Business Instead of the Product: Ray Kroc piensa su negocio como el producto y al franquiciado como su cliente mas importante, y el paso a trabajar SOBRE el negocio", "POSTURA y CASO"),
+    ("R6", 173, 233, "el dialogo con Sarah sobre McDonald's como modelo para cualquier pequeno negocio", "CASO"),
+]

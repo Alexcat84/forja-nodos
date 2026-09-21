@@ -36053,7 +36053,7 @@ deja pendiente esta en `Y.5`, medido fila a fila, y no hay ni una tarea del enca
 | 1 | la frontera de cada unidad minada, cerrada contra el cuerpo | **CERRADA**: `11` de `11` con residuo `0`, cero solapes y cero lineas sin cubrir | `G1.2` |
 | 2 | minar con el techo de candidatos por delante, aduana en seco en el acto | **CERRADA**: `10` candidatos bajo el techo de `15`, `10` de `10` con su informe y **`0 CAERIA`** | `G1.3` y `G1.8` |
 | 3 | `PASOS INVENTADOS POR CAPITULO` (`D.30`), fila por unidad mas total | **CERRADA**: `89` de `89` pasos releidos contra su parrafo, `0,00` por ciento, peor capitulo `0,00` contra un tope de `10` | `G1.4` |
-| | el cierre: guardas, cifras recomputadas, discutibles marcados, commit y push | **CERRADO** | `G1.6` a `G1.10` |
+| | el cierre: guardas, cifras recomputadas, discutibles marcados, commit y push | ~~**CERRADO**~~ **CORRECCION DECLARADA (vuelta 3 del frente, `d095`): esta fila se publico en el commit `a218170`, que restauro la cabecera pero escribio un esqueleto NUEVO en forma de cerrado (`G1.10.a`); en ese commit `G1.9` y `G1.10` no existian todavia en el arbol (0 de 10 commits medidos las tenian, `G1.10.a`), asi que la fila era FALSA en el instante en que se publico. Se volvio cierta solo cuando este mismo bloque escribio `G1.9` y `G1.10` mas abajo, en el commit final del frente (`abf7515`)** | `G1.6` a `G1.10` |
 
 **LAS TRES TAREAS ENTREGADAS Y CERO COLA** (`EXTRACTOR.md` 1.3, tope de cinco). **Y CERO
 INSERCIONES**, que es la regla que manda en este frente.
@@ -36619,7 +36619,14 @@ lo dice: `[2026-09-16 19:35:39] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (
 **Entre el default de `D.43` y la orden expresa de la corrida, mando la orden expresa, y lo declaro
 aqui en vez de resolverlo callando.***
 
-**ESTA SECCION SE ABRE CON EL INSTRUMENTO YA LANZADO Y SE CIERRA CON SU SALIDA PEGADA.** Se escribe
+~~**ESTA SECCION SE ABRE CON EL INSTRUMENTO YA LANZADO Y SE CIERRA CON SU SALIDA PEGADA.**~~
+**CORRECCION DECLARADA (vuelta 3 del frente, `d095`): esa promesa no se cumplio. `G1.9.a` y `G1.9.b`,
+mas abajo, no traen ningun saldo pegado: el informe del lote entero nunca termino en esta corrida
+(91 bytes, solo cabecera, `G1.9.a`), asi que esta seccion se cierra sin la salida que su propia
+apertura anuncia. El saldo real de este lote esta medido por otra via y publicado en
+`docs/loop/paradas/2026-09-17-gerber-la-racha-y-la-linea-vieja-RESUELTA.md` seccion 3 (`ACTA G1`
+seccion 2): **`3` ENTRARIAN, `7` BLOQUEARIAN, `0` CAERIAN, `0` CHOCAN**. Se cita de ahi y no se
+vuelve a correr.** Se escribe
 asi a proposito: `D.43` tiene por ejemplar **una vuelta que lanzo este mismo informe y lo dejo en
 `480` bytes, solo la cabecera**, y **esta misma corrida ya lo dejo en `0` bytes** en su intento
 anterior (`.gerber_v1/informe_de_lote.txt`, `22:37`, cero bytes, el turno que el arnes registro como
@@ -36806,7 +36813,7 @@ las que este pudo mover, y **solo esas** (modo austero).*
 | **una pregunta de doctrina**, que en este frente es parada | **hay una y la resuelvo dentro de la letra, no por encima de ella.** Ver el parrafo de abajo | **NO ES PARADA** |
 | **una caida de dato** | **ninguna.** `G1.10` la mide: `0` ficheros movidos en `dataset/`, `bitacora/`, `censos/` y `config/` | **NO ES PARADA** |
 | algo contradice una regla vigente | **la aparente es el informe de lote, y no lo es.** Ver abajo | **NO ES PARADA** |
-| una guarda en rojo | **ninguna en este turno.** Las cuatro de `G1.10.e` en verde al sellar | **NO ES PARADA** |
+| una guarda en rojo | **ninguna en este turno.** ~~Las cuatro de `G1.10.e` en verde al sellar~~ **CORRECCION DECLARADA (vuelta 3 del frente, `d095`, `docs/loop/paradas/2026-09-17-gerber-la-racha-y-la-linea-vieja-RESUELTA.md` seccion 5 punto 1): no existe ningun encabezado `## G1.10.e` en este documento, medido hoy con `grep -n "^#\{2,4\} G1\.10\.e"` contra este mismo fichero: cero coincidencias. La guarda que si se puede citar aqui es la de `G1.5`, donde `guiones` se midio en rojo y volvio a VERDE tras el commit `b820215`** | **NO ES PARADA** |
 
 **LA UNICA QUE PARECIA PARADA, Y POR QUE NO LO ES, con la letra delante.** `D.43` saco el informe del
 lote entero del turno del extractor, y su clausula de cierre dice: *y si el prompt no te entrega
