@@ -4660,3 +4660,15 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-21 04:13:56] extractor listo (USD 8.081390399999998), 1311s, intento 2 de 7
 [2026-09-21 04:13:56] VUELTA 5 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
 [2026-09-21 04:13:56] VUELTA 5 : AUDITOR (claude-opus-5)
+[2026-09-21 04:47:00] auditor listo (USD 16.353566), 1984s, intento 1 de 7
+[2026-09-21 04:47:00]   sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : serial
+  libro que declara el encargo : grove_high_output
+  libro que el orden le da (D.51): grove_high_output
+    prioridad 1 del orden del mundo 11. 'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capi
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-21 04:47:01]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-21 04:47:01] VUELTA 6 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-21 04:47:01] VUELTA 6 : EXTRACTOR (claude-sonnet-5)
