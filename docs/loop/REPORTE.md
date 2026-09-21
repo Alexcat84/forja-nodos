@@ -57012,3 +57012,408 @@ priorizar entrenamiento, desarrollar el curso, pedir critica tras dictarlo. El p
 en ese orden (`L49` a `L61`), y los tres candidatos lo declaran ellos mismos como discutible en su
 `resumen_teorico` desde que se escribieron. **Lo dejo leido y citado para el dia de la insercion; no
 lo adjudico yo con veredicto, que no es mi sede hoy.**
+
+# VUELTA 62, lote 7 (`grove_high_output`), CLASE EXTRACCION: **LA CUENTA DEL LIBRO PUBLICADA, EL TABLERO VERIFICADO Y UN SOLO INFORME EN PRIMER PLANO CIERRAN LA MINERIA DE `grove_high_output` Y LA EXTRACCION DEL MUNDO `11`**
+
+*Encargo escrito por el auditor al cerrar la `ACTA 60`, que audito la vuelta `61`.*
+
+## 62.X. CIERRE DE LA VUELTA: QUE QUEDO HECHO Y QUE NO
+la cuenta del libro publicada (TAREA 2)      : HECHA (62.2, 18/92/643/15/3, identica a la del auditor)
+el tablero reescrito y su diff pegado (T.3)  : SI (62.3, cero diff, el 90 a 91 ya venia en la apertura)
+el informe de aduana de la TAREA 4           : CERRADO CON SALIDA GUARDADA (62.4, detectar_arreglar_fallo_etapa_menor_valor, .v62ext/)
+candidatos en la bandeja al cerrar           : 91
+PASOS INVENTADOS POR CAPITULO                : SIN SUPERFICIE (0 candidatos nuevos, git status de cuarentena/ vacio)
+la tabla de cierre D.52 relevada y sellada   : SI (62.5.a, TABLA_DE_CIERRE_v62.txt, hash e0fac5d1 en los dos)
+gate, guiones y aceptacion corridos al cierre: SI (62.5.b, 339 pruebas, 0 fallos, CIERRE VERDE)
+lo que queda para la vuelta 63, por tareas   : T2 nada (cuenta publicada) / T3 nada (tablero al dia) / T4 nada (informe cerrado) / T5 nada: las cinco tareas del encargo de la 62 cerraron dentro de esta misma vuelta. La mineria de grove_high_output queda CERRADA (62.6); lo que sigue es la insercion del lote 7, que es del fundador y no del extractor (D.39, D.32)
+
+## 62.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo primero, `EXTRACTOR.md` 1: commitear lo pendiente antes de tocar nada.** La vuelta `61` dejo un
+`git mv` preparado y sin commitear (el tercer candidato devuelto a la bandeja) y `.v61ext/` sin
+rastrear, con sus dos informes de aduana dentro. El auditor lo dijo en el encargo y no lo commiteo el
+mismo (no es su sede): lo hago yo, primero, sin descartar nada.
+
+    $ git add -A .v61ext/ docs/loop/TABLERO.jsonl docs/loop/loop.log docs/loop/ultimo_auditor.json docs/loop/ultimo_extractor.json
+    $ git commit -m "Sincroniza restos de la vuelta 61: git mv del tercer candidato a cuarentena y .v61ext/ con sus dos informes de aduana"
+    GATE VERDE.
+      nodos verificados: 346
+    [extraccion-mundo-11 1b20e64] Sincroniza restos de la vuelta 61: git mv del tercer candidato a cuarentena y .v61ext/ con sus dos informes de aduana
+     13 files changed, 159 insertions(+), 2 deletions(-)
+    $ git push
+    To https://github.com/Alexcat84/forja-nodos.git
+       d96e94e..1b20e64  extraccion-mundo-11 -> extraccion-mundo-11
+
+**LA IDENTIDAD, LEIDA DE GIT** (`EXTRACTOR.md` 5):
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    1b20e64ad6d3e0efab4d7a374c659d5653205fbc
+    2026-09-21T05:52:06-04:00
+    extraccion-mundo-11
+
+**EL ESTADO, MEDIDO ANTES DE LA PRIMERA OPERACION PROPIA DE ESTA VUELTA** (`EXTRACTOR.md` 4), justo
+tras el commit de sincronizacion de arriba y antes de tocar la bandeja de `grove_high_output`:
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta,
+               cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones,
+               censo_no_decrece
+
+    $ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl config/pares_mutuos.jsonl
+      740 bitacora/VEREDICTOS.jsonl
+      346 dataset/nodos.jsonl
+        1 config/pares_mutuos.jsonl
+
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    91
+
+**`346`, `740`, `1` y `91` coinciden con lo que el encargo da como cierre de la `61`**, medido por el
+auditor en `ACTA 60`. Nadie toco el grafo entre una vuelta y otra, tal como `D.39` promete mientras el
+lote `7` siga abierto.
+
+**Y LA NOTICIA DE ESTA VUELTA, DICHA CON LAS PALABRAS DEL PROPIO ENCARGO:** `grove_high_output` tiene
+`18` capitulos y los `18` estan leidos y adjudicados. `tablero --puedo` va a seguir diciendo que se
+continua desde `cap_17`, y no hay nada que continuar: `cap_18` esta leido y da cero (`ACTA 59` `59.4`),
+y `capitulos_minados` no lo va a registrar nunca porque solo cuenta los capitulos que PRODUJERON
+candidato, no los que se LEYERON (`d088`, congelada por `D.56`). **Lo declaro y sigo. No toco `src/`.**
+
+## 62.1. TAREA 1. LOS REGISTROS, Y LA DECLARACION DE CIERRE CON SUS CAMPOS CON NOMBRE
+
+**Lei `ACTA_AUDITOR.md`, `ACTA 60`, secciones `60.2` a `60.9` enteras.** Lo que dicen, en una linea
+cada una, citando sin repetir el argumento (modo austero, `D.47`):
+
+- `60.2`: la declaracion de cierre corto de la `61` existe y sus cuatro cifras son ciertas, verificadas
+  una a una. `REPORTE` baja de `2 de 3` a `0 de 3` por eso. El unico campo abierto de su plantilla (*lo
+  que queda para la vuelta `62`*) se quedo en puntos suspensivos, y por eso la plantilla de hoy trae
+  los tres campos que faltaban con nombre puesto (`PASOS INVENTADOS`, la tabla `D.52`, la TAREA `5`).
+- `60.3`: los dos informes que la `61` cerro reproducen al milesimo contra los ficheros guardados
+  (`18` y `9` cifras, cero que difieran), y el del candidato `1` reproduce ademas contra la corrida
+  independiente del auditor de la `ACTA 59`: los cuatro vecinos compartidos salen identicos y la unica
+  diferencia son las dos lineas del vecino que entro a la bandeja entre una medicion y otra, la prueba
+  mas limpia que esta casa tiene de `d077`.
+- `60.4`: el tercer informe (`pedir_critica_anonima_curso_entrenamiento_dictado`) lo corrio el auditor,
+  `490` s sobre poblacion `440`, `BLOQUEARIA` con `3` vecinos, guardado en
+  `.v62aud/informe_3_pedir_critica.txt`. Trae dos hallazgos propios: la senial es ASIMETRICA (`d090`,
+  `paso_contra_nodo` cambia `0,055` con la direccion) y un cuarto vecino, `cortar_discusion_libre_momento_justo`
+  a `0,353`, leido y descartado por los pasos.
+- `60.5`: adjudica los tres pares de la cadena de `cap_17` leyendo los `16` pasos contra `L49` a `L61`:
+  `CONTINUA` los tres, no `REPITE`, con la vara `6.1` citada. El caso mas ajustado es el par `3`
+  (`desarrollar` contra `pedir_critica`), sostenido porque el hijo procedimenta la critica distinta y
+  para otra cosa que la madre. No escribe veredicto: eso se toca el dia de la insercion (`D.39`).
+- `60.6`: publica la cuenta del libro que la `61` midio y no publico: `18` capitulos, `92` candidatos
+  cosechados, `643` pasos, `15` capitulos con candidato y `3` que dieron cero (`cap_08`, `cap_09`,
+  `cap_18`), los tres firmados por actas anteriores. La mineria de `grove_high_output` queda CERRADA.
+- `60.7`: `PASOS INVENTADOS POR CAPITULO` de la `61` es `SIN SUPERFICIE` (`0` fichas escritas dentro de
+  la ventana del turno), y aun asi relee los `16` pasos de `cap_17` con el parrafo entero delante:
+  `0` PUENTE sobre `16` de `16`. La muestra `D.58` de `cap_17`/`cap_18` con semilla `v61` releyo
+  `cap_18` entero (da cero) y `15` pasos de `cap_17` por muestra, sin que el disparador del `10` por
+  ciento tenga donde morder.
+- `60.8`: lo que se cae de la `61` son tres cosas de prosa, ninguna acumula: `668` s escritos como
+  `667`; cuatro bloques abiertos con `$` que recortaban justo las `7` lineas `paso N contra paso M`
+  (la unica evidencia de que pasos chocan); y *los tres candidatos traen el mismo discutible* cuando el
+  primero habla de dos. `REPORTE` baja a `0 de 3` por tanda limpia, no por indulto.
+- `60.9`: dos vueltas seguidas (`60` y `61`) terminaron el turno a los pocos segundos de lanzar un
+  informe de fondo, con el fichero de destino en `0` bytes las dos veces. No es que se saltara la regla
+  de *uno cada vez*: es que esperar un proceso de fondo y terminar el turno se confunden. Por eso la
+  TAREA `4` de hoy manda un solo informe, en primer plano, con la mano puesta.
+
+**LOS REGISTROS DE LA TANDA `ACTA 60`, YA ESCRITOS POR EL AUDITOR, LEIDOS Y CITADOS SIN
+REESCRIBIR:**
+
+    $ tail -6 docs/loop/CREDITO_serial.jsonl
+    {"cae": true, ..., "especie": "AUDITOR", "racha": "2 de 3", "tanda": "ACTA 59", "vuelta": 60}
+    {"cae": false, ..., "especie": "AUDITOR", "racha": "0 de 3", "tanda": "ACTA 60", "vuelta": 61}
+    {"cae": false, ..., "especie": "CLASE", "racha": "0 de 2", "tanda": "ACTA 60", "vuelta": 61}
+    {"cae": false, ..., "especie": "CIFRA PUBLICADA", "racha": "0 de 2", "tanda": "ACTA 60", "vuelta": 61}
+    {"cae": false, ..., "especie": "DATO MOVIDO", "racha": "0 de 2", "tanda": "ACTA 60", "vuelta": 61}
+    {"cae": false, ..., "especie": "REPORTE", "racha": "0 de 3", "tanda": "ACTA 60", "vuelta": 61}
+
+**Las cinco filas de la tanda `ACTA 60` bajan LIMPIAS: `AUDITOR` a `0 de 3`, `CLASE`, `CIFRA PUBLICADA`
+y `DATO MOVIDO` a `0 de 2`, `REPORTE` a `0 de 3`.** Ninguna especie acumula caida esta tanda.
+
+    $ tail -2 docs/loop/DEUDA.jsonl
+    d090 (vuelta 61, ACTA 60 60.4.a): la senial de la aduana es ASIMETRICA y paso_contra_nodo lo es
+      mucho (0,451 contra 0,396 en el mismo par, direcciones distintas). NO SE ABRE: tocarlo es src/ y
+      D.45 lo veda mientras corran frentes en paralelo.
+    d091 (vuelta 61, ACTA 60 60.3): d077 tiene su prueba mas limpia: dos corridas del mismo candidato
+      separadas 27 minutos dan los cuatro vecinos compartidos identicos al milesimo y difieren solo en
+      el candidato que entro a la bandeja entre una y otra. Sirve el dia de la insercion.
+
+**Ninguna de las dos pide accion mia hoy: las dos estan `NO SE ABRE` por `D.45` (vedado tocar `src/`
+mientras corran frentes en paralelo) o son evidencia para el dia de la insercion, que no es hoy.**
+
+## 62.2. TAREA 2. LA CUENTA DEL LIBRO, PUBLICADA EN EL REPORTE (`D.59`)
+
+**LA VUELTA `61` CORRIO EL INSTRUMENTO Y LO TIRO.** El auditor ya la republico en `60.6` desde su
+propio script y me sale igual; **la mia sale de un instrumento propio, extendido para dar la tabla
+por capitulo que el encargo pide** (mis dos scripts de la `61` contaban el total pero no el desglose
+por capitulo, asi que anado esa cuenta al mismo script, sin tocar nada fuera de `.v62ext/`):
+
+    $ python .v62ext/cuenta_libro.py | tee .v62ext/cuenta_libro.txt
+    LA CUENTA DEL LIBRO grove_high_output, CONTADA POR EL EXTRACTOR (D.59)
+      capitulos del libro (ficheros cap_*.md) : 18
+      candidatos en la bandeja                : 91
+      pasos_accionables en la bandeja         : 636
+      insertados en el grafo                  : 1
+         revisar_tres_preguntas_valor_carrera: 7 pasos
+      pasos en los insertados                 : 7
+      TOTAL cosechado del libro               : 92
+      TOTAL pasos cosechados del libro        : 643
+
+      POR CAPITULO (bandeja MAS insertados), el capitulo leido del resumen_teorico:
+         cap_01:  1 candidato(s),   7 paso(s)   [1 en el grafo]
+         cap_02:  7 candidato(s),  50 paso(s)
+         cap_03: 15 candidato(s), 121 paso(s)
+         cap_04: 22 candidato(s), 156 paso(s)
+         cap_05: 12 candidato(s),  84 paso(s)
+         cap_06:  8 candidato(s),  62 paso(s)
+         cap_07:  9 candidato(s),  53 paso(s)
+         cap_08:  0 candidato(s),   0 paso(s)   <- DIO CERO
+         cap_09:  0 candidato(s),   0 paso(s)   <- DIO CERO
+         cap_10:  1 candidato(s),   8 paso(s)
+         cap_11:  2 candidato(s),  17 paso(s)
+         cap_12:  3 candidato(s),  11 paso(s)
+         cap_13:  2 candidato(s),  14 paso(s)
+         cap_14:  3 candidato(s),  18 paso(s)
+         cap_15:  3 candidato(s),  22 paso(s)
+         cap_16:  1 candidato(s),   4 paso(s)
+         cap_17:  3 candidato(s),  16 paso(s)
+         cap_18:  0 candidato(s),   0 paso(s)   <- DIO CERO
+
+      capitulos CON al menos un candidato: 15
+      capitulos que DIERON CERO          : 3  ['cap_08', 'cap_09', 'cap_18']
+      suma de control (por capitulo)     : 92 candidatos, 643 pasos
+      fichas sin capitulo legible        : 0
+
+**`18`, `92`, `643`, `15` y `3`, con la suma de control cuadrando y cero fichas sin capitulo legible.**
+Coincide al digito con la cuenta que el auditor publico en `ACTA 60` `60.6`, contada por un script
+distinto del mio.
+
+**LOS TRES CEROS SON ADJUDICACION FIRMADA, NO HUECO:** `cap_08` y `cap_09` los releyo entero la `ACTA
+55` y dieron cero; `cap_18` lo cerro la `ACTA 59` `59.4`, comprobando sus `35` citas de nodo una a
+una.
+
+> **LA MINERIA DE `grove_high_output` ESTA CERRADA.** `18` de `18` capitulos leidos y adjudicados,
+> `92` candidatos cosechados, `643` pasos, `15` capitulos con candidato y `3` que dieron cero por
+> adjudicacion firmada. **Lo que queda al lote `7` no es extraccion: es INSERCION**, y esa es del
+> fundador (`D.39`), no bloquea nada (`D.32`) y no se pide aqui.
+
+## 62.3. TAREA 3. EL TABLERO, REESCRITO Y CON SU DIFF PEGADO
+
+**`python forja.py tablero --escribir` sale sin diferencia sobre lo ya commiteado**, y digo por
+que antes de que parezca que salte el paso:
+
+    $ python forja.py tablero --escribir
+    ... (22 filas, la de grove_high_output entre ellas)
+    ESCRITO: 22 fila(s) en docs/loop/TABLERO.jsonl
+    $ git diff docs/loop/TABLERO.jsonl
+    (vacio)
+
+**LA DIFERENCIA QUE EL ENCARGO ANUNCIABA (`90` contra `91`) YA VENIA ESCRITA EN EL ARBOL DE TRABAJO
+ANTES DE MI PRIMERA OPERACION**, puesta por el arnes igual que hizo para la vuelta `61` (`ACTA 60`
+`60.6.b`), y la lleve dentro del commit de apertura de `62.0` sin tocarla yo, porque `EXTRACTOR.md` `1`
+manda commitear lo pendiente ANTES de tocar nada:
+
+    $ git show 1b20e64 -- docs/loop/TABLERO.jsonl
+    -{"bandeja_medida_en": "cuarentena/grove_high_output", "candidatos_en_bandeja": 90, ...}
+    +{"bandeja_medida_en": "cuarentena/grove_high_output", "candidatos_en_bandeja": 91, ...}
+
+**Correr `tablero --escribir` ahora es lo que confirma que el `91` es correcto**: el instrumento lo
+recalcula desde `PATRON: cuarentena/grove_high_output/*.json` (`91` ficheros, medido en `62.0`) y
+escribe exactamente lo mismo que ya estaba, asi que **cero diff no es que el paso se saltara: es que
+el numero ya estaba puesto y el instrumento lo certifica.**
+
+## 62.4. TAREA 4. UN SOLO INFORME DE ADUANA, EN PRIMER PLANO
+
+**NO le corro informe a `revisar_tres_preguntas_valor_carrera`**: ya vive en el grafo, es el `1`
+insertado que la cuenta de `62.2` cuenta aparte.
+
+**CUAL ELIJO, Y POR QUE EN UNA LINEA:** busco entre los `91` de la bandeja cuales YA tienen salida de
+`forja.py informe` guardada en algun `.v*ext/` o `.v*aud/` de esta linea (grep de
+`forja.py informe cuarentena/grove_high_output` sobre `REPORTE.md`, `ACTA_AUDITOR.md` y las carpetas
+`.v55` a `.v62`): salen `43` con salida ya guardada de los `91`. **Elijo el primero, en orden
+alfabetico, de los `5` sin medir del capitulo mas temprano del libro que todavia tiene candidatos sin
+medir (`cap_02`)**: `detectar_arreglar_fallo_etapa_menor_valor`.
+
+    $ date '+%F %T inicio informe (extractor)'
+    2026-09-21 05:56:58 inicio informe (extractor)
+    $ python forja.py informe cuarentena/grove_high_output/detectar_arreglar_fallo_etapa_menor_valor.json > .v62ext/informe_detectar_arreglar_fallo.txt 2>&1
+    $ date '+%F %T fin informe (extractor)'
+    2026-09-21 06:06:37 fin informe (extractor)   (579 s, poblacion 440)
+
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 1
+    poblacion del barrido       : 440   (346 del grafo mas 94 que esperan en bandejas)
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 1
+      por candidato bloqueado          : menor 1, mediana 1, mayor 1
+      que señal levanta cada vecindad  : familia_id 1
+
+    ============================================================================
+    LA LISTA COMPLETA, candidato por candidato
+    ============================================================================
+
+    [BLOQUEARIA] detectar_arreglar_fallo_etapa_menor_valor   (detectar_arreglar_fallo_etapa_menor_valor.json)
+        vecino supervisar_tarea_delegada_etapa_menor_valor  [levantada por: familia_id]
+          similitud_texto 0.242 | familia_id 0.333 | paso_contra_nodo 0.459
+          paso 2 del candidato contra paso 1 de supervisar_tarea_delegada_etapa_menor_valor
+
+    NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+    entre hace falta python forja.py insertar, uno por vez, con su
+    veredicto escrito por vecino.
+
+**SALIDA GUARDADA EN `.v62ext/informe_detectar_arreglar_fallo.txt`. UN informe, en primer plano, con
+la mano puesta: no se repite el mecanismo de `60.9`.**
+
+**`similitud_texto` sale `0,242`** (`.v62ext/informe_detectar_arreglar_fallo.txt`), **dentro de la
+banda media (`0,2` a `0,3`) que `EXTRACTOR.md` `11` mide como ruido tres de cada cuatro veces, no en
+la banda alta de `0,4` en adelante que obliga a marcar discutible.** No marco discutible por la regla
+numerica, **pero leo el par igual**, porque `familia_id` a `0,333` si cruzo el umbral de caza (`0,30`)
+y es lo que abrio la cola. **La tabla que sigue es mi lectura de los dos nodos, no una reproduccion
+del informe** (`D.41`, la figura de la tabla que resume en vez de reproducir):
+
+<!-- TALLADO: parcial salida=.v62ext/informe_detectar_arreglar_fallo.txt -->
+| | `detectar_arreglar_fallo_etapa_menor_valor` | `supervisar_tarea_delegada_etapa_menor_valor` |
+|---|---|---|
+| que produce | deteccion y correccion de fallos de PROCESO en la etapa de menor valor anadido | frecuencia de SEGUIMIENTO de una tarea delegada, calibrada por la madurez del subordinado en esa tarea |
+| el paso que la senial cruza | `2` (`3` en el candidato, ordinal `2` en la lista): *cuenta el valor percibido del rotulo, que es el que lleva la ultima etapa* | `1`: *trata el seguimiento de la delegacion como lo que el libro dice que se parece: el aseguramiento de calidad* |
+
+**Los dos candidatos aplican la MISMA regla del libro** (*inspecciona en la etapa de menor valor
+anadido*, principio nombrado en `cap_02` y reusado en la seccion de delegacion) **a dos objetos
+distintos**: uno al flujo de fabricacion y contratacion, el otro a la frecuencia de supervision de un
+subordinado. **No son gemelos ni frontera: son dos aplicaciones del mismo principio a dos materias del
+libro**, que es exactamente el caso que `9.1` nombra como inventario de MEDIOS y no de FINES. Queda
+leido y descartado; no escribo veredicto (`bitacora/VEREDICTOS.jsonl` se toca el dia de la insercion,
+`D.39`).
+
+**CERO INSERCIONES.** `MODO_INSERCION=cuarentena` y `D.39` mientras el lote `7` siga abierto. No
+escribo ningun veredicto en `bitacora/VEREDICTOS.jsonl`: `BLOQUEARIA` es cola de lectura y se resuelve
+el dia de la insercion.
+
+## 62.5. TAREA 5. EL CIERRE
+
+**ESTA VUELTA ES DE EXTRACCION, ASI QUE NO CORRO `deuda.py --saneamiento`, Y LO DIGO CON ESA
+PALABRA.** Falto en la `49` y en la `59` y las dos veces lo escribio un auditor despues (`d085`); hoy
+no falta.
+
+**EL ESTADO, RECOMPUTADO AL CIERRE Y NO COPIADO DE LA APERTURA** (`EXTRACTOR.md` `4`):
+
+    $ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl config/pares_mutuos.jsonl
+      740 bitacora/VEREDICTOS.jsonl
+      346 dataset/nodos.jsonl
+        1 config/pares_mutuos.jsonl
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    91
+
+**`346`, `740`, `1` y `91`: identicos a la apertura de esta misma vuelta (`62.0`).** Ninguna tarea de
+esta vuelta toco el grafo, `bitacora/` ni `config/pares_mutuos.jsonl`: TAREA `2` solo lee, TAREA `3`
+recalculo el tablero sin diferencia, TAREA `4` corrio un informe en seco. **Cero averia.**
+
+**`PASOS INVENTADOS POR CAPITULO`: `SIN SUPERFICIE`, Y ES UNA MEDIDA, NO UN SILENCIO** (`8`, `8.2`).
+Esta vuelta no escribio ni un candidato nuevo: TAREA `4` corrio la aduana sobre una ficha que ya
+estaba en la bandeja desde antes de que este turno abriera, y `git status --short cuarentena/` sale
+vacio de principio a fin del turno:
+
+    $ git status --short cuarentena/
+    (vacio)
+
+    | capitulo | candidatos nuevos | pasos escritos | PUENTE | pasos inventados |
+    |---|---:|---:|---:|---|
+    | **la vuelta `62` entera** | **`0`** | **`0`** | `0` | **`SIN SUPERFICIE`** |
+
+### 62.5.a. LA TABLA DE CIERRE DE TAREAS (`D.52`), ARCHIVANDO LA DE LA `59` ANTES DE SOBRESCRIBIR
+
+**La de la `59` sigue intacta**, comprobado antes de tocar el fichero vivo (ni la `60` ni la `61` la
+movieron, tal como el encargo adelantaba):
+
+    $ git hash-object docs/loop/TABLA_DE_CIERRE.txt
+    544ddc8daffc2d6e9076251128acf59c0b3c46ae
+    $ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v59.txt
+    544ddc8daffc2d6e9076251128acf59c0b3c46ae
+
+**Los dos hashes coinciden: la `59` no necesita reparo.** El relevo, como avisaba el encargo, me toca
+a mi: escribo la tabla de esta vuelta, la regenero por instrumento y la archivo en el mismo acto.
+
+    $ python scripts/tabla_de_cierre.py --escribir
+    ============================================================================
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    ============================================================================
+      libro de la linea : grove_high_output
+      filas             : 5
+      SIN COMPROBAR  1  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+      SIN COMPROBAR  2  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+      SIN COMPROBAR  3  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+      SIN COMPROBAR  4  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+      SIN COMPROBAR  5  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+
+**Las cinco filas son `SIN COMPROBAR` porque ninguna afirma `N de M del capitulo`**: esta vuelta no
+mina ningun capitulo nuevo, asi que esa forma no aplica a ninguna de las cinco tareas.
+
+    $ cp docs/loop/TABLA_DE_CIERRE.txt docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v62.txt
+    $ git hash-object docs/loop/TABLA_DE_CIERRE.txt
+    e0fac5d10018d9bf513aa7c6c98c961f415e6319
+    $ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v62.txt
+    e0fac5d10018d9bf513aa7c6c98c961f415e6319
+
+<!-- TALLADO: script=scripts/tabla_de_cierre.py salida=docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v62.txt -->
+| # | tarea | como cerro |
+|---:|---|---|
+| `1` | los registros de la `ACTA 60` recogidos sin reabrirlos, con la plantilla de cierre corregida | **CERRADA en `62.1`** |
+| `2` | publicar la cuenta del libro por capitulo (`D.59`) | **CERRADA en `62.2`**: `18` capitulos, `92` candidatos, `643` pasos, `15` con candidato y `3` que dieron cero, identica a la del auditor |
+| `3` | reescribir el tablero y declarar su diff | **CERRADA en `62.3`**: cero diff, el `90` a `91` ya venia puesto por el arnes y commiteado en la apertura |
+| `4` | un solo informe de aduana, en primer plano | **CERRADA en `62.4`**: `detectar_arreglar_fallo_etapa_menor_valor`, `579` s, `BLOQUEARIA` con `1` vecino, leido y descartado |
+| `5` | el cierre | **CERRADA en `62.5`**: estado recomputado (`346`/`740`/`1`/`91`), guardas en VERDE, `0` capitulos y `0` candidatos del tramo, `0` discutibles marcados por la regla numerica |
+
+### 62.5.b. LAS CUATRO GUARDAS, CORRIDAS AL CIERRE
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py
+    total: 339 pruebas, 0 fallos, 0 errores
+    $ python scripts/cerrar_reporte.py
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico
+    su cuenta arriba: es cola, no guarda (D.15).
+
+**Las dos primeras corridas de `test_aceptacion.py` y de `cerrar_reporte.py` cayeron en `2` fallos
+antes de este bloque, y los dos son mios y los corrijo en el acto, sin esconderlos:** un parrafo
+mio publicaba `0,242` junto a la palabra `media` sin nombrar su instrumento en el mismo parrafo
+(`D.59`), y la TAREA `3` citaba `cuarentena/grove_high_output/*.json` sin la marca `PATRON:` (`D.42`).
+Los dos se corrigen declarando el instrumento en el mismo parrafo y anadiendo la marca, no tecleando
+la cifra buena, y las corridas de arriba son las que ya salen en VERDE tras el arreglo. Una tercera
+tabla (la lectura del par de `62.4`) marco `<!-- TALLADO: parcial salida=... -->` porque resume el
+informe en vez de reproducirlo, que es la figura que `D.41` pide declarar y no callar.
+
+**LA VIGENCIA (`D.15`) TIENE COLA Y NO ES MIA**: los `RANCIO` que `forja.py rancios` imprime son
+veredictos de otros lotes ya insertados (Scott Radical Candor) cuyo texto cambio desde que se emitio
+el veredicto; ninguno toca `grove_high_output` ni esta vuelta los movio. Es cola de trabajo, no guarda
+(`D.15`), y no bloquea el cierre.
+
+## 62.6. LO QUE ESTA VUELTA SIGNIFICA
+
+`grove_high_output` es el ultimo libro que esta linea mina. Con la cuenta publicada (`62.2`) y el
+tablero verificado (`62.3`), **el lote `7` queda cerrado y la extraccion del mundo `11` se acaba**:
+`18` capitulos, `92` candidatos, `643` pasos, `15` capitulos con candidato y `3` que dieron cero por
+adjudicacion firmada. Los otros dos libros del corte (`marquet_turn_the_ship`, `gerber_emyth`) quedan
+`PAUSADO` en sus propias ramas, con sus `9` y `10` candidatos enteros y sin insertar, tal como decidio
+el fundador el `21` sep. **Lo que queda despues de esta vuelta es la insercion del lote `7`, y esa es
+del fundador** (`D.39`, `D.32`); no la pido y no la hago.
+
+No declaro el mundo `11` `COMPLETO`: hoy `0` de los `92` candidatos de Grove estan en el grafo, y esa
+declaracion es del fundador (`D.58`).
