@@ -1,0 +1,33 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-21"
+    }
+  ],
+  "id": "asignar_responsable_unico_evolucion_planificada",
+  "titulo": "Nombrar un jefe a cargo por cada evento en el documento de planificacion",
+  "denominaciones": {
+    "nombre_largo": "La linea que se anade a los documentos de planificacion para dejar escrito quien es el jefe a cargo de cada evento, en vez de enumerar todo lo que podria salir mal",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "chief in charge"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando estas planificando cualquier evento o evolucion y quieres que quede claro quien responde de que salga bien, en lugar de enumerar todo lo que podria salir mal.",
+  "entregable_esperado": "El documento de planificacion con una linea que nombra al jefe a cargo junto a cada evento.",
+  "pasos_accionables": [
+    "Al planificar cada evento o evolucion, anade una linea al documento de planificacion que nombre quien es el jefe a cargo de ese evento. El texto lo dice asi: the mechanism was to add a line to our planning documents that listed the Chief in Charge next to each event.",
+    "No dediques el esfuerzo principal a evaluar todas las formas en que el evento podria salir mal: concentra la atencion en dejar senalado quien esta a cargo. El texto lo dice asi: I learned that focusing on who was put in charge was more important than trying to evaluate all the ways the event could go wrong."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_06.md, unidad Cap. 8, titulo textual Change, in a Word. FRONTERA DENTRO DEL NODO, declarada aqui porque EXTRACTOR.md 10 la pide: los dos pasos salen de la misma linea 127, que es la PIEZA P2 de la frontera publicada en esta vuelta para cap_06, 144 palabras. POR QUE ES PROCEDIMIENTO Y NO CASO: el texto nombra su propio mecanismo por su nombre, the mechanism was to add a line, y da la accion concreta (anadir una linea con el jefe a cargo) mas el criterio de por que importa (senalar quien responde pesa mas que enumerar como podria fallar el evento), sin adjetivo de adecuacion en el sitio del criterio. DISCUTIBLE, MARCADO ANTES DE SABER SI ACIERTO: el candidato tiene solo DOS pasos y ninguna lista de medios nombrados uno a uno, a diferencia del ejercicio del codigo genetico que sale del mismo capitulo; la restriccion 1 de D.27 exige inventario para el caso normativo de adjetivos de adecuacion, y aqui no hay ese problema porque no hay ningun adjetivo de adecuacion, pero tampoco hay inventario que transcribir, solo una accion y su razon. Lo sostengo como nodo porque la vara madre no exige inventario para narrativa de negocio, solo pide que el paso sea ejecutable y que el libro lo diga, y las dos condiciones se cumplen, pero el margen es estrecho y lo marco para que se relea primero. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 2 pasos, 2 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: la misma linea 127 cierra diciendo que estas iniciativas de jefe a cargo fueron decisivas para que Santa Fe ganara el premio a la mejor camara de suboficiales durante los siguientes siete anios; esa cifra es la vigencia del caso propio de Santa Fe y no una etapa del mecanismo, y no tiene fecha de corte verificable como cifra de autor, asi que no entra ni como paso ni como atribucion."
+}

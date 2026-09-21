@@ -1,0 +1,42 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-21"
+    }
+  ],
+  "id": "aplicar_ejercicio_codigo_genetico_control",
+  "titulo": "Aplicar con el liderazgo el ejercicio para hallar el codigo genetico del control y reescribirlo",
+  "denominaciones": {
+    "nombre_largo": "El ejercicio de un retiro con el liderazgo senior para localizar donde vive la autoridad de decision en los documentos de politica y redactar el cambio que la mueve hacia abajo",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "genetic code for control"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "off-site"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando quieres que tu liderazgo senior identifique que autoridad de decision empujar hacia el siguiente nivel de la organizacion, reunido en un retiro (off-site).",
+  "entregable_esperado": "El lenguaje de politica redactado que cambia quien tiene la autoridad de decision para las decisiones mas faciles identificadas, y la lista de preocupaciones del grupo escritas en tarjetas, clasificadas y priorizadas para atacarlas.",
+  "pasos_accionables": [
+    "Identifica en los documentos de politica de la organizacion donde esta especificada la autoridad de decision; puedes hacerlo con antelacion. El texto lo dice asi: identify in the organization's policy documents where decision-making authority is specified.",
+    "Identifica las decisiones que son candidatas para empujarse al siguiente nivel mas bajo de la organizacion. El texto lo dice asi: identify decisions that are candidates for being pushed to the next lower level in the organization.",
+    "Para las decisiones mas faciles, redacta primero el lenguaje que cambia quien tendra la autoridad de decision; si la decision es grande, puede que haya que desagregarla. El texto lo dice asi: for the easiest decisions, first draft language that changes the person who will have decision-making authority.",
+    "Pide a cada participante del grupo que complete, en la tarjeta provista, la frase cuando pienso en delegar esta decision, me preocupa que. El texto lo dice asi: ask each participant in the group to complete the following sentence on the five-by-eight card provided.",
+    "Pega esas tarjetas en la pared y haz un descanso largo, dejando que el grupo deambule leyendo los comentarios pegados. El texto lo dice asi: post those cards on the wall, go on a long break, and let the group mill around the comments posted on the wall.",
+    "Al reconvocar al grupo, ordena y clasifica las preocupaciones y empieza a atacarlas. El texto lo dice asi: last, when the group reconvenes, sort and rank the worries and begin to attack them.",
+    "Lee las preocupaciones que salgan clasificandolas: casi siempre caen en dos categorias, competencia tecnica y claridad organizacional, y las dos se pueden resolver. El texto lo dice asi: the worries fall into two broad categories: issues of competence and issues of clarity... both of these can be resolved."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_06.md, unidad Cap. 8, titulo textual Change, in a Word. FRONTERA DENTRO DEL NODO, declarada aqui porque EXTRACTOR.md 10 la pide: los pasos 1 a 6 salen de las lineas 101, 103, 105, 107, 109 y 111, que son la PIEZA P1 de la frontera publicada en esta vuelta para cap_06, 208 palabras (la pieza corre de la linea 99 a la 113); el paso 7 sale de la misma linea 113, que cierra la pieza. POR QUE ES PROCEDIMIENTO Y NO CASO, con D.27 delante: el libro llama a esto un ejercicio desde su propio rotulo (linea 97, Find Your Organization's Genetic Code for Control, y linea 99, Here's an exercise you can do) y pone su propio inventario de SEIS etapas, nombradas una a una y en orden: identificar donde vive la autoridad de decision, identificar las decisiones candidatas, redactar el lenguaje, pedir la tarjeta de preocupaciones, pegarlas en la pared, y ordenar y atacarlas. No hay adjetivo de adecuacion en el sitio del criterio: cada etapa dice que hacer, no que tan bien hacerlo. EL CASO ENTRA COMO EJEMPLO NOMBRADO DENTRO DE LA DOCTRINA Y NO COMO NODO PROPIO (manual 3.5): la historia de Santa Fe que antecede al ejercicio, lineas 83 a 95 de la misma frontera, el cambio de una palabra de segundo al mando a suboficial mayor de la nave en las hojas de permiso que paso de catorce pasos a ocho, es el origen narrativo del que el autor generalizo el ejercicio para el lector, y por eso se cita aqui como caso y no se le abre nodo propio: la doctrina vive en el ejercicio, lineas 97 a 113, que es generico y no lleva el nombre de Santa Fe ni de ningun cargo de esa nave. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE; el paso 7 no inventa la clasificacion en dos categorias, la transcribe de la propia linea 113 donde el autor dice que asi suele leer el resultado. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: el cambio concreto que hizo el autor (segundo al mando por suboficial mayor) no se escribe como paso del ejercicio porque es el dato del caso y no la etapa generica; y la lista de ocho mecanismos que cap_05, Cap. 7, enumera para la Parte II no nombra este ejercicio con su propia cuenta, asi que esto no cablea ninguna arista D.37 hacia el."
+}

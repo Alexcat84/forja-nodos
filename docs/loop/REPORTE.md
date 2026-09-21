@@ -57417,3 +57417,416 @@ del fundador** (`D.39`, `D.32`); no la pido y no la hago.
 
 No declaro el mundo `11` `COMPLETO`: hoy `0` de los `92` candidatos de Grove estan en el grafo, y esa
 declaracion es del fundador (`D.58`).
+
+---
+
+# VUELTA 2 DEL FRENTE `marquet_turn_the_ship`: **REABRIR desde `cap_04` con la frontera heredada de `cap_03`**
+
+*Segundo turno de este frente, en **MODO AUSTERO** (`D.47`) y **REGIMEN LIGERO** (`D.58`, `MODO_INSERCION=cuarentena`).
+El encargo esta en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por la sesion de chat del 22 sep 2026 al aplicar el
+punto 3 de la decision `GERBER ENTRA, MARQUET SIGUE`. **Este frente no inserta nunca.***
+
+## Apertura, medida antes de la primera operacion (`EXTRACTOR.md` 4)
+
+| | | de donde sale |
+|---|---|---|
+| fecha | **2026-09-21** | `date "+%Y-%m-%d"`, corrida en esta vuelta |
+| rama | `extraccion-marquet_turn_the_ship` | `git rev-parse --abbrev-ref HEAD` |
+| commit de apertura | `b090505` | `git rev-parse HEAD`, tras commitear el tablero y el `loop.log` pendientes |
+| nodos en el dataset al empezar | **346** | `python forja.py gate`, linea 2 (`wc -l dataset/nodos.jsonl` da lo mismo) |
+| candidatos en bandeja del lote al empezar | **9** | `ls cuarentena/marquet_turn_the_ship/*.json \| wc -l` |
+| unidades en la bandeja de entrada | **17** | `ls fuentes/marquet_turn_the_ship/*.md \| wc -l` |
+| inserciones autorizadas en esta vuelta | **CERO** | `docs/loop/PROMPT_SIGUIENTE.md` seccion 4: `MODO_INSERCION=cuarentena` |
+| credito de esta linea al abrir | **SIN REGISTRO, racha en cero, no hereda nada** (`D.48`) | `python forja.py credito` |
+
+### La tarea
+
+| # | capitulo | palabras | estado | candidatos |
+|---|---|---:|---|---:|
+| 1 | `cap_04` | 1271 | **CERRADA** | **1** (`informar_cierre_jornada_conservar_propiedad_trabajo`, ENTRARIA) |
+| 2 | `cap_05` | 2223 | **CERRADA** | **0** (mecanismo sin inventario, ver TAREA 2) |
+| 3 | `cap_06` | 2936 | ABIERTA | |
+
+### Discutibles marcados ANTES de saber si acierto
+
+*(se anexan aqui segun aparecen, por numero y linea, sin reabrir el argumento: `D.47`)*
+
+| # | discutible | donde |
+|---:|---|---|
+---
+
+# TAREA 1. `cap_04`, LA FRONTERA PUBLICADA ANTES DE CORTAR Y EL CANDIDATO CON SU ADUANA EN SECO
+
+*`EXTRACTOR.md` 10 y 12.2: la frontera se publica y se cierra contra el cuerpo antes de contar nodo alguno.*
+
+## 1.a. La unidad que se mina, y el borde heredado de `cap_03`
+
+`cap_03` (Cap. 5, *Call to Action*) quedo minado en la vuelta 1 con su cuerpo cerrado en `L8` a `L81`
+(`docs/loop/archivo/marquet_turn_the_ship/REPORTE_frente_hasta_v1.md`, commit `669524a`, seccion `1.b`
+de esa vuelta). `cap_04` vive en **otro fichero** (`fuentes/marquet_turn_the_ship/cap_04.md`), asi que no
+hay linea que continuar entre los dos: el borde heredado es que `cap_03` esta enterito minado y no queda
+hueco de capitulo sin tramo asignado antes de `cap_04`.
+
+| | | de donde sale |
+|---|---|---|
+| fichero | `fuentes/marquet_turn_the_ship/cap_04.md` | encargo, seccion 2 |
+| unidad que el fichero declara | Cap. 6 | `sed -n '4p' fuentes/marquet_turn_the_ship/cap_04.md` |
+| titulo textual | *Whatever They Tell Me to Do!* | `sed -n '5p' fuentes/marquet_turn_the_ship/cap_04.md` |
+| lineas del fichero | 65 | `wc -l fuentes/marquet_turn_the_ship/cap_04.md` |
+| palabras del fichero entero | 1271 | `wc -w fuentes/marquet_turn_the_ship/cap_04.md`, coincide con el encargo |
+| cuerpo, desde `L8` (tras el segundo cierre `---` del encabezado, `L7`) | 1238 | `sed -n '8,$p' fuentes/marquet_turn_the_ship/cap_04.md \| wc -w` |
+
+## 1.b. LA FRONTERA ENTERA, PIEZA A PIEZA
+
+<!-- TALLADO: parcial salida=.m2/frontera_bruta.txt -->
+
+La columna de palabras por pieza suma los conteos por linea de `.m2/frontera_bruta.txt` (`awk 'NR>=8{print NR": "NF}'`
+sobre `cap_04.md`); la columna *que es* y *clase* es lectura, no instrumento, y se marca aparte.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 6 | el rotulo del titulo | RESIDUO: rotulo |
+| R2 | L11 | 39 | pregunta de apertura al lector sobre que refuerza el modelo de lider a seguidores | POSTURA |
+| R3 | L13 | 17 | la fecha, el sitio y la cuenta atras al relevo | RESIDUO: rotulo de fecha |
+| R4 | L15 | 42 | dia tranquilo de vacaciones, guardia esqueleto, tareas rutinarias | CASO |
+| R5 | L17 | 87 | el protocolo de formalidad de la camara de maniobras, quien puede entrar y como | CASO/contexto |
+| R6 | L19 | 89 | la foto viral de la tripulacion informal mostrada en el entrenamiento PCO | CASO |
+| R7 | L21 | 80 | contexto sobre el suboficial de primera visto en la foto | CASO |
+| R8 | L23 | 24 | pregunta abierta al suboficial para calibrar que cree que es su trabajo | DISCUTIBLE 1, ver 1.d |
+| R9 | L25 | 74 | la respuesta cinica *whatever they tell me to do* y su lectura | CASO |
+| R10 | L27 | 23 | generalizacion: esa era la actitud en todo el barco | POSTURA |
+| R11 | L29 | 6 | rotulo repetido del titulo de la seccion | RESIDUO: rotulo |
+| R12 | L31 | 66 | escena: el navegante pregunta al segundo al mando si necesita algo mas | CASO |
+| R13 | L33 | 62 | el antipatron: el segundo al mando explica que le gusta que los jefes de departamento reporten para revisar lo que le deben | CASO |
+| **P1** | **L35** | **145** | **NODO: el guion correcto del reporte de cierre de jornada, que deja la propiedad del trabajo en el jefe de departamento** | **NODO** |
+| R14 | L37 | 55 | los jefes de departamento objetan: quien responde si algo sale mal | POSTURA |
+| R15 | L39 | 87 | la resolucion personal del autor: retiene la rendicion de cuentas y suelta el control de las decisiones | POSTURA |
+| R16 | L41 | 101 | reflexion sobre la estructura de lider a seguidores, imagen de la fabrica textil | POSTURA |
+| R17 | L43 | 23 | pregunta retorica sobre quienes son "ellos" | POSTURA |
+| R18 | L45 | 3 | separador de seccion | RESIDUO: separador |
+| R19 | L47 | 51 | resumen y transicion: ejemplos del modelo en operaciones, cierre de jornada, reuniones, mensajes, formaciones | POSTURA |
+| R20 | L49 | 46 | el problema no era ausencia de liderazgo sino liderazgo del tipo equivocado | POSTURA |
+| R21 | L51 | 39 | los costos del modelo: pasividad, falta de iniciativa, espera, paralisis | POSTURA |
+| R22 | L53 | 5 | "todo tendria que cambiar" | RESIDUO/POSTURA de transicion |
+| R23 | L55 | 3 | rotulo QUESTIONS TO CONSIDER | RESIDUO: rotulo |
+| R24 | L57 a L65 | 65 | las cinco preguntas de cierre del capitulo | PENDIENTE DE DOCTRINA, vuelta 25 |
+| **el cuerpo entero** | **L8 a L65** | **1238** | **suma de las piezas: 1238** | **residuo sin asignar: 0** |
+
+    piezas: 24   lineas solapadas: 0   cuerpo 1238   suma 1238   residuo 0   lineas con palabras sin cubrir: 0
+
+**LA FRONTERA CIERRA AL DIGITO: cuerpo `1238`, suma de piezas `1238`, residuo `0`, cero solapes y cero lineas
+con palabras sin cubrir.** Una sola pieza, `P1`, se mina; las otras 23 son residuo, postura o caso.
+
+## 1.c. LA CITA DE LA PIEZA QUE SE MINA, CON SU `sed` PEGADO (`D.35`)
+
+<!-- TALLADO: parcial salida=.m2/citas_nodos.txt -->
+
+| pieza | linea | la salida de `sed`, pegada | veredicto |
+|---|---|---|---|
+| P1 | L35 | `I subsequently went over this end-of-day checkout event in detail with all the officers. The problem, I explained, was that in this scenario the XO is the on...` | NODO |
+
+## 1.d. EL DISCUTIBLE 1, MARCADO ANTES DE SABER SI ACIERTO
+
+**`R8` (L23, 24 palabras)** queda fuera. El texto trae una sola pregunta abierta (*"Hi, what do you
+do on board?"*) mas una frase de proposito (*by asking open-ended questions like this, I could
+better gauge what the crew thought their job was*): **un solo medio, sin inventario que transcribir**.
+Escribir pasos alrededor de esta pregunta (como escuchar el tono, o hacer preguntas de seguimiento)
+seria inventar lo que el parrafo no dice, y `EXTRACTOR.md` 15.4 pide desconfiar de los pasos propios
+justo cuando el parrafo es pobre. **Se sostiene como POSTURA/CASO y no como nodo.**
+
+## 1.e. EL CANDIDATO, ESCRITO Y PASADO POR LA ADUANA EN SECO EN EL MISMO ACTO
+
+`cuarentena/marquet_turn_the_ship/informar_cierre_jornada_conservar_propiedad_trabajo.json`, con
+`UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_04.md` en su `resumen_teorico` (`D.58` 0.a).
+**5 pasos, 5 TRANSCRIPCION, 0 PUENTE** (relectura de fidelidad `D.30` en el acto, seccion 1.b de arriba
+cita cada linea).
+
+    $ python forja.py informe cuarentena/marquet_turn_the_ship/informar_cierre_jornada_conservar_propiedad_trabajo.json
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 1
+    poblacion del barrido       : 447   (346 del grafo mas 101 que esperan en bandejas)
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    [ENTRARIA] informar_cierre_jornada_conservar_propiedad_trabajo   (informar_cierre_jornada_conservar_propiedad_trabajo.json)
+
+    NADA SE INSERTO. Este informe es de SOLO LECTURA.
+
+**ENTRARIA al primer intento, 0 CAERIA, 0 BLOQUEARIA.** No hizo falta correccion.
+
+## 1.f. LA MADRE POR LECTURA, buscada aunque la señal no la levante (seccion 11)
+
+Busque en los 6 candidatos de `cap_03` (ya minados en la vuelta 1) si alguno nombra o desarrolla el
+cierre de jornada como uno de sus pasos: ninguno lo hace (cubren la reunion rutinaria, el oficial
+frustrado, el tramite de firmas, el reparto de mensajes, la formacion y premios, la primera mitad y
+segunda mitad del recorrido inicial). **Sin madre declarada; el nodo entra como hermano de los de
+`cap_03` bajo el mismo diagnostico de lider a seguidores, y su veredicto frente a ellos es SANO.**
+
+## 1.g. EL SALDO DE LA TAREA
+
+| | |
+|---|---:|
+| unidades leidas (piezas) | **24** |
+| procedimientos | **1** |
+| postura/caso/residuo/pendiente | **23** |
+| candidatos escritos en `cuarentena/marquet_turn_the_ship/` por esta tarea | **1** |
+| candidatos que cayeron en la aduana | **0** |
+| discutibles marcados | **1** (seccion 1.d, sostenido) |
+---
+
+# TAREA 2. `cap_05`, LA FRONTERA PUBLICADA Y EL SALDO. CERRADA CON CERO CANDIDATOS
+
+*`EXTRACTOR.md` 2.b: un capitulo que da cero se cierra igual, y se firma leyendo entero.*
+
+## 2.a. La unidad que se mina
+
+| | | de donde sale |
+|---|---|---|
+| fichero | `fuentes/marquet_turn_the_ship/cap_05.md` | encargo, seccion 2 |
+| unidad que el fichero declara | Cap. 7 | `sed -n '4p' fuentes/marquet_turn_the_ship/cap_05.md` |
+| titulo textual | *I Relieve You!* | `sed -n '5p' fuentes/marquet_turn_the_ship/cap_05.md` |
+| lineas del fichero | 129 | `wc -l fuentes/marquet_turn_the_ship/cap_05.md` |
+| palabras del fichero entero | 2223 | `wc -w fuentes/marquet_turn_the_ship/cap_05.md`, coincide con el encargo |
+| cuerpo, desde `L8` | 2193 | `sed -n '8,$p' fuentes/marquet_turn_the_ship/cap_05.md \| wc -w` |
+
+## 2.b. LA FRONTERA ENTERA, PIEZA A PIEZA
+
+<!-- TALLADO: parcial salida=.m2/frontera_bruta.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 3 | rotulo del titulo | RESIDUO: rotulo |
+| R2 | L11 | 15 | pregunta de apertura sobre evitar errores contra lograr la excelencia | POSTURA |
+| R3 | L13 | 11 | fecha, sitio y cuenta atras al despliegue | RESIDUO: rotulo de fecha |
+| R4 | L15 | 133 | asumir el mando, reflexion sobre la responsabilidad que empieza | CASO/POSTURA |
+| R5 | L17 | 16 | introduccion a la cita del Reglamento de la Marina | CASO |
+| R6 | L19 | 70 | cita literal de la Seccion 0802 sobre responsabilidad absoluta del comandante | CASO: norma externa citada, remite fuera del libro |
+| R7 | L21 | 146 | reflexion sobre la delegacion como excepcion y el incentivo de un solo tour de mando | POSTURA |
+| R8 | L23 | 23 | introduccion a la Seccion 0851 sobre comunicar el plan de batalla | CASO |
+| R9 | L25 | 40 | cita literal de la orden de comunicar el plan antes de la accion | CASO: norma externa citada |
+| R10 | L27 | 43 | reflexion sobre el "si es posible" de la orden | POSTURA |
+| R11 | L29 | 44 | esas normas describen la estructura de lider a seguidores | POSTURA |
+| R12 | L31 | 36 | transicion: sentado en el estrado, balance de lo que tenia a favor | CASO |
+| R13 | L33 | 123 | "primero": la tripulacion queria el cambio | POSTURA, ver DISCUTIBLE 2 |
+| R14 | L35 | 108 | "segundo": cadena de mando de apoyo | POSTURA, ver DISCUTIBLE 2 |
+| R15 | L37 | 108 | "tercero": la dependencia de la tripulacion evito caer en viejos habitos | POSTURA, ver DISCUTIBLE 2 |
+| R16 | L39 | 68 | "finalmente": la espiral descendente exigia romper el ciclo | POSTURA, ver DISCUTIBLE 2 |
+| R17 | L41 | 7 | rotulo *Mechanism: Achieve Excellence, Don't Just Avoid Errors* | RESIDUO: rotulo de mecanismo |
+| R18 | L43 | 71 | la cultura naval de enfocarse en errores | POSTURA |
+| R19 | L45 | 77 | diagnostico: la tripulacion se volvio temerosa de errar | POSTURA |
+| R20 | L47 | 99 | "estas destinado a fallar", reflexion sobre el error inevitable | POSTURA |
+| R21 | L49 | 42 | evitar errores aleja de la excelencia | POSTURA |
+| R22 | L51 | 29 | resolucion personal: la meta seria la excelencia | POSTURA |
+| R23 | L53 | 87 | elaboracion de la meta de excelencia como forma de vida | POSTURA |
+| R24 | L55 | 50 | transicion a la ceremonia de relevo | CASO |
+| R25 | L57 | 18 | "I relieve you", toma del mando | CASO |
+| R26 | L59 | 32 | introduccion al juramento personal | CASO |
+| R27 | L61 | 21 | texto del juramento, primera parte | CASO |
+| R28 | L63 | 26 | texto del juramento, segunda parte | CASO |
+| R29 | L65 | 46 | texto del juramento, tercera parte | CASO |
+| R30 | L67 | 12 | texto del juramento, cuarta parte | CASO |
+| R31 | L69 | 2 | cierre del discurso a la tripulacion | CASO |
+| R32 | L71 | 3 | "gracias" | CASO |
+| R33 | L73 | 43 | se sento, reflexion sobre el despliegue en 172 dias | CASO |
+| R34 | L75 | 3 | "estaba listo para trabajar" | CASO |
+| R35 | L77 | 46 | ir al mar en submarino es trabajo duro y honorable | POSTURA |
+| R36 | L79 | 54 | conectar las actividades diarias con algo mas grande | POSTURA |
+| R37 | L81 | 81 | necesidad de que todos vieran el proposito ultimo del submarino | POSTURA |
+| R38 | L83 | 21 | cierre *is a mechanism for CLARITY* y referencia a otro libro | RESIDUO: rotulo de cierre |
+| R39 | L85 | 3 | rotulo QUESTIONS TO CONSIDER | RESIDUO: rotulo |
+| R40 | L87 a L103 | 138 | las nueve preguntas de cierre del capitulo | PENDIENTE DE DOCTRINA, vuelta 25 |
+| R41 | L105 a L107 | 3 | rotulo "PART II / CONTROL" | RESIDUO: rotulo de parte |
+| R42 | L109 | 41 | el foco de Marquet: repartir el control y la autoridad de decision | POSTURA |
+| R43 | L111 | 48 | el eslogan de mover la autoridad hacia la informacion, no la informacion hacia la autoridad | POSTURA |
+| R44 | L113 | 48 | introduccion a los capitulos de la Parte II, agrupados en control, competencia y claridad | POSTURA |
+| R45 | L115 a L129 | 55 | enumeracion de los ocho mecanismos de la Parte II (indice, sin desarrollo aqui) | RESIDUO: enumeracion, ver 2.d |
+| **el cuerpo entero** | **L8 a L129** | **2193** | **suma de las piezas: 2193** | **residuo sin asignar: 0** |
+
+    piezas: 45   lineas solapadas: 0   cuerpo 2193   suma 2193   residuo 0   lineas con palabras sin cubrir: 0
+
+**LA FRONTERA CIERRA AL DIGITO: cuerpo `2193`, suma de piezas `2193`, residuo `0`, cero solapes y cero lineas
+con palabras sin cubrir.** Cero piezas se minan.
+
+## 2.c. POR QUE `Mechanism: Achieve Excellence, Don't Just Avoid Errors` NO DA NODO
+
+El unico rotulo *Mechanism:* del capitulo (`R17`, `L41`) abre un tramo que corre hasta `R23` (`L53`) sin
+un solo medio o etapa nombrado uno a uno: el mandato es cambiar el foco de evitar errores a lograr la
+excelencia, y todo lo que sigue (`L43` a `L53`) es diagnostico y proposito, no un inventario de que hacer.
+Por la vara madre (`EXTRACTOR.md` 9), **nombrar la meta no es procedentar el camino**: no hay adjetivo de
+adecuacion que tumbe por `D.27` porque no hace falta, no hay ningun inventario que la restriccion 2 pudiera
+tumbar. Es el mismo defecto que en `onu_consumidor` cap_03 parrafo 39 (*facilitar*, *mejorar* sin medios):
+**una postura no ejecuta una busqueda.**
+
+## 2.d. LOS DISCUTIBLES DE ESTE CAPITULO
+
+**DISCUTIBLE 2**: `R13` a `R16` (*primero*, *segundo*, *tercero*, *finalmente*, `L33` a `L39`) forman una
+serie ordinal explicita, pero se leen como condiciones favorables que Marquet encontro al asumir el mando
+(la tripulacion queria cambiar, la cadena de mando apoyaba, su falta de conocimiento tecnico le impidio caer
+en viejos habitos, la espiral descendente exigia romper el ciclo), **no como pasos que el lector ejecuta**.
+No hay verbo en imperativo en ninguna de las cuatro, y las cuatro narran hechos pasados de la propia
+experiencia del autor. **Se sostienen como POSTURA y no como SERIE NUMERADA** (manual 3.4): la serie
+numerada exige que las partes sean medios o etapas de un trabajo, y aqui son condiciones observadas, no
+etapas de un procedimiento. Lo marco porque el filo es real (la forma gramatical es la misma que una
+serie de pasos) y quiero que se relea antes de sostenerlo como definitivo.
+
+**Sobre `R45` (la enumeracion de los ocho mecanismos de la Parte II):** no cablea ninguna arista `D.37`
+porque la regla exige que las partes **existan como nodos**, y hoy ninguno de los ocho existe: son
+capitulos por delante de este tramo. Cuando alguno se mine, tocara revisar si esta lista los nombra con su
+cuenta (ocho, uno a uno) para cablear entonces.
+
+## 2.e. LOS TRES CASOS QUE EL MANUAL NOMBRA, contestados aunque salgan en negativo
+
+| caso | veredicto | contra que se lee |
+|---|---|---|
+| SERIE NUMERADA (manual 3.4) | NO LA HAY, ver DISCUTIBLE 2 | `R13` a `R16` tienen la forma pero no el contenido de una serie de pasos; `R45` enumera mecanismos que aun no son nodos |
+| CASO O ESTUDIO (manual 3.5) | NO LO HAY como doctrina propia | el capitulo entero es autobiografico (la ceremonia de relevo, el juramento) y no hay doctrina generica de la que el caso sea ejemplo |
+| CIFRA DEL AUTOR (principios 5 y 8) | NO LA HAY | `172 dias al despliegue` y `$2.000 millones` (`L15`) son marcadores narrativos de fecha y presupuesto, no una tasa con banda; no se construye ningun nodo con ellos, asi que no entra ninguna atribucion |
+
+## 2.f. LA MADRE POR LECTURA
+
+Con cero candidatos no hay ninguna arista que declarar. Busque igual, por lectura, si algun paso de
+`cap_03` o `cap_04` nombra el "Mechanism: Achieve Excellence" o el eslogan de mover la autoridad hacia la
+informacion: ninguno lo hace. **Sin parentesco declarado.**
+
+## 2.g. EL SALDO DE LA TAREA
+
+| | |
+|---|---:|
+| unidades leidas (piezas) | **45** |
+| procedimientos | **0** |
+| postura/caso/residuo/pendiente | **45** |
+| candidatos escritos en `cuarentena/marquet_turn_the_ship/` por esta tarea | **0** |
+| discutibles marcados | **1** (seccion 2.d, sostenido) |
+
+**CERO NODOS, CON SU RAZON ESCRITA ARRIBA, PIEZA A PIEZA.** El unico mecanismo formalmente rotulado del
+capitulo no trae inventario, y la unica serie ordinal del capitulo narra condiciones, no pasos.
+---
+
+# TAREA 3. `cap_06`, LA FRONTERA PUBLICADA ANTES DE CORTAR Y LOS DOS CANDIDATOS CON SU ADUANA EN SECO
+
+## 3.a. La unidad que se mina
+
+| | | de donde sale |
+|---|---|---|
+| fichero | `fuentes/marquet_turn_the_ship/cap_06.md` | encargo, seccion 2 |
+| unidad que el fichero declara | Cap. 8 | `sed -n '4p' fuentes/marquet_turn_the_ship/cap_06.md` |
+| titulo textual | *Change, in a Word* | `sed -n '5p' fuentes/marquet_turn_the_ship/cap_06.md` |
+| lineas del fichero | 139 | `wc -l fuentes/marquet_turn_the_ship/cap_06.md` |
+| palabras del fichero entero | 2936 | `wc -w fuentes/marquet_turn_the_ship/cap_06.md`, coincide con el encargo |
+| cuerpo, desde `L8` | 2905 | `sed -n '8,$p' fuentes/marquet_turn_the_ship/cap_06.md \| wc -w` |
+
+## 3.b. LA FRONTERA ENTERA, PIEZA A PIEZA
+
+<!-- TALLADO: parcial salida=.m2/frontera_bruta.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 4 | rotulo del titulo *Change, in a Word* | RESIDUO: rotulo |
+| R2 | L11 | 21 | pregunta de apertura sobre cambiar la autoridad de decision | POSTURA |
+| R3 | L13 | 14 | fecha, sitio y cuenta atras al despliegue | RESIDUO: rotulo de fecha |
+| R4 | L15 | 134 | escena: la vieja instalacion de periscopios, reunion con los jefes | CASO |
+| R5 | L17 | 115 | por que empezar con los jefes y no con oficiales o marineria | CASO/POSTURA: decision propia de Marquet, no procedimiento generalizable |
+| R6 | L19 | 52 | historial de sermones vacios sobre "trabajar juntos" | CASO |
+| R7 | L21 | 49 | resuelto a actuar diferente primero; nombra de paso otro mecanismo de otro capitulo, sin desarrollarlo aqui | POSTURA |
+| R8 | L23 | 115 | confianza y dudas sobre jefes especificos de Santa Fe | CASO |
+| R9 | L25 | 57 | un suboficial decide quedarse | CASO |
+| R10 | L27 | 31 | pregunta inicial a los jefes: dirigen los jefes la marina | CASO |
+| R11 | L29 | 7 | responden reflexivamente que si | CASO |
+| R12 | L31 | 1 | "de verdad?" | CASO |
+| R13 | L33 | 25 | segunda ronda de respuestas, mirando al piso | CASO |
+| R14 | L35 | 140 | analisis institucional de la erosion de autoridad de los jefes | POSTURA |
+| R15 | L37 | 44 | estas practicas reforzaron el modelo de lider a seguidores | POSTURA |
+| R16 | L39 | 105 | el programa procedimental alternativo del reactor, bien definido | POSTURA |
+| R17 | L41 | 33 | el enfasis en el procedimiento puede ser sofocante | POSTURA |
+| R18 | L43 | 85 | el enfoque procedimental es limitante en operaciones tacticas | POSTURA |
+| R19 | L45 | 59 | revertir la erosion exige que los jefes decidan deliberadamente | CASO/POSTURA |
+| R20 | L47 | 38 | los jefes escepticos: Santa Fe no habia tenido incidentes graves | CASO |
+| R21 | L49 | 31 | quince anios en la marina, siempre habia sido asi | CASO |
+| R22 | L51 | 19 | la siguiente pregunta se basa en lo ya acordado | CASO |
+| R23 | L53 | 6 | "quieren dirigirla?" | CASO |
+| R24 | L55 | 7 | responden reflexivamente que si | CASO |
+| R25 | L57 | 1 | "de verdad?" | CASO |
+| R26 | L59 | 17 | ahi empezaron a hablar honestamente | CASO |
+| R27 | L61 | 10 | rotulo *Mechanism: Find the Genetic Code for Control and Rewrite It* | RESIDUO: rotulo de mecanismo |
+| R28 | L63 | 12 | introduccion: aqui hay una lista de los problemas principales | CASO |
+| R29 | L65 a L75 | 102 | los seis problemas de los jefes, nombrados uno a uno | CASO: sintomas propios de Santa Fe, no medios de un procedimiento generalizable |
+| R30 | L77 | 72 | hablamos de la realidad de ser responsables de sus divisiones | CASO |
+| R31 | L79 | 83 | el entusiasmo de los jefes decayo | CASO |
+| R32 | L81 | 65 | acordamos que el resultado serian mecanismos concretos; la pregunta clave a los jefes | CASO |
+| R33 | L83 | 76 | primero y principal, los jefes querian estar a cargo de las licencias de sus hombres | CASO |
+| R34 | L85 | 92 | la solucion que propusieron los jefes: el cambio de una palabra, de XO a COB | CASO: origen narrativo del ejercicio P1, no nodo propio |
+| R35 | L87 | 98 | las dudas de Marquet para aceptar el cambio | CASO |
+| R36 | L89 | 50 | acordado; el cambio se hizo esa misma tarde | CASO |
+| R37 | L91 | 95 | el alcance del cambio: "Chiefs in Charge" sobre licencias, guardias y calificaciones | CASO |
+| R38 | L93 | 70 | delegacion simetrica: Marquet delega las licencias de oficiales en el XO | CASO |
+| R39 | L95 | 48 | la preocupacion no era la autoridad sino el comportamiento | CASO |
+| R40 | L97 | 7 | subrotulo *Find Your Organization's Genetic Code for Control* | RESIDUO: rotulo |
+| **P1** | **L99 a L113** | **208** | **NODO: el ejercicio de retiro para hallar y reescribir el codigo genetico del control, en seis etapas mas su lectura de cierre** | **NODO** |
+| R41 | L115 | 3 | separador de seccion | RESIDUO: separador |
+| R42 | L117 | 60 | cierre "is a mechanism for CONTROL" y explicacion general de delegar control | POSTURA |
+| R43 | L119 | 77 | la claridad organizacional como barrera, no la dificultad tecnica | POSTURA |
+| R44 | L121 | 82 | los programas de empoderamiento dirigido son contradictorios | POSTURA |
+| R45 | L123 | 88 | sintesis: se buscaron practicas y procedimientos, no discursos | POSTURA |
+| R46 | L125 | 3 | separador de seccion | RESIDUO: separador |
+| **P2** | **L127** | **144** | **NODO: anadir la linea "jefe a cargo" a cada evento del documento de planificacion** | **NODO, ver DISCUTIBLE 3** |
+| R47 | L129 | 74 | transicion: distribuir control no basta, exige mas competencia y claridad | POSTURA |
+| R48 | L131 | 3 | rotulo QUESTIONS TO CONSIDER | RESIDUO: rotulo |
+| R49 | L133 a L139 | 73 | las cuatro preguntas de cierre del capitulo | PENDIENTE DE DOCTRINA, vuelta 25 |
+| **el cuerpo entero** | **L8 a L139** | **2905** | **suma de las piezas: 2905** | **residuo sin asignar: 0** |
+
+    piezas: 49   lineas solapadas: 0   cuerpo 2905   suma 2905   residuo 0   lineas con palabras sin cubrir: 0
+
+**LA FRONTERA CIERRA AL DIGITO: cuerpo `2905`, suma de piezas `2905`, residuo `0`, cero solapes y cero
+lineas con palabras sin cubrir.** Dos piezas se minan, `P1` y `P2`; las otras 47 son residuo, postura o caso.
+
+## 3.c. LA CITA DE LAS PIEZAS QUE SE MINAN, CON SU `sed` PEGADO (`D.35`)
+
+<!-- TALLADO: parcial salida=.m2/citas_nodos.txt -->
+
+| pieza | linea | la salida de `sed`, pegada | veredicto |
+|---|---|---|---|
+| P1 | L99 | `Here's an exercise you can do with your senior leadership at your next off-site.` | NODO, cabecera del ejercicio |
+| P1 | L101 | `Identify in the organization's policy documents where decision-making authority is specified. (You can do this ahead of time if you want.)` | NODO, paso 1 |
+| P1 | L103 | `Identify decisions that are candidates for being pushed to the next lower level in the organization.` | NODO, paso 2 |
+| P1 | L105 | `For the easiest decisions, first draft language that changes the person who will have decision-making authority. In some cases, large decisions may need to ...` | NODO, paso 3 |
+| P1 | L107 | `Next, ask each participant in the group to complete the following sentence on the five-by-eight card provided: "When I think about delegating this decisio...` | NODO, paso 4 |
+| P1 | L109 | `Post those cards on the wall, go on a long break, and let the group mill around the comments posted on the wall.` | NODO, paso 5 |
+| P1 | L111 | `Last, when the group reconvenes, sort and rank the worries and begin to attack them.` | NODO, paso 6 |
+| P1 | L113 | `When I've conducted this exercise, I usually find that the worries fall into two broad categories: issues of competence and issues of clarity. People are w...` | NODO, paso 7 |
+| P2 | L127 | `We expanded the power of the chiefs several times during the three years I was on Santa Fe. We started with giving them control over their men's leave. The...` | NODO |
+
+## 3.d. POR QUE `P1` ES PROCEDIMIENTO: LA PRUEBA DEL INVENTARIO
+
+El rotulo `L97` ("Find Your Organization's Genetic Code for Control") y `L99` ("Here's an exercise you
+can do") llaman a esto un ejercicio por su nombre, y el propio texto pone **SEIS etapas nombradas una a
+una y en orden** (identificar donde vive la autoridad, identificar las decisiones candidatas, redactar
+el lenguaje, pedir la tarjeta de preocupaciones, pegarlas en la pared, ordenar y atacarlas), sin ningun
+adjetivo de adecuacion en el sitio del criterio: cada etapa dice que hacer, no que tan bien hacerlo. Es
+el caso limpio de `D.27`: inventario propio de etapas, restriccion 1 y 2 las dos a favor.
+
+**EL CASO PREVIO (`R34`, `L85`, el cambio de una palabra de XO a COB) ENTRA COMO EJEMPLO DENTRO DE LA
+DOCTRINA Y NO COMO NODO PROPIO** (manual 3.5): es de donde el autor generalizo el ejercicio, pero el
+ejercicio mismo (`L97` a `L113`) no lleva el nombre de Santa Fe ni de ningun cargo de esa nave, y el
+entregable del candidato tampoco.
+
+## 3.e. EL DISCUTIBLE 3, MARCADO ANTES DE SABER SI ACIERTO
+
+**`P2` (`L127`) tiene solo DOS pasos y ningun inventario nombrado uno a uno**: una accion (anadir la
+linea "jefe a cargo") y su razon (senalar quien responde pesa mas que enumerar como podria fallar el
+evento). A diferencia de `P1`, aqui no hay lista de etapas; hay una sola tecnica con su porque. La vara
+madre (`EXTRACTOR.md` 9) no exige inventario para narrativa de negocio como exige `D.27` para material
+normativo: solo pide que el paso sea ejecutable y que el libro lo diga, y las dos condiciones se cumplen
+al pie de la letra. **Lo sostengo como nodo porque pasa la aduana y la relectura de fidelidad da 0
+puentes, pero el margen es mas estrecho que el de `P1` y lo marco para que se relea primero.**
+
+## 3.f. LOS DOS CANDIDATOS, ESCRITOS Y PASADOS POR LA ADUANA EN SECO EN EL MISMO ACTO
+
+Los dos llevan `UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_06.md` en su `resumen_teorico`
+(`D.58` 0.a).
