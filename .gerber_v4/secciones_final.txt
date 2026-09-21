@@ -1,0 +1,4 @@
+el bloque del frente empieza en la linea 58121 de docs/loop/REPORTE.md
+secciones que el bloque TIENE      : 28   G4.0 G4.1 G4.2 G4.2.a G4.2.b G4.2.c G4.2.d G4.2.e G4.2.f G4.2.g G4.3 G4.3.a G4.3.b G4.3.c G4.3.d G4.3.e G4.4 G4.4.a G4.4.b G4.5 G4.5.a G4.5.b G4.5.c G4.6 G4.6.a G4.6.b G4.6.c G4.6.d
+secciones que el bloque CITA       : 18   G4.0 G4.1 G4.2 G4.2.b G4.2.d G4.2.e G4.2.f G4.2.g G4.3 G4.3.a G4.3.b G4.3.c G4.4 G4.4.a G4.5 G4.5.b G4.6 G4.6.c
+CITADAS Y QUE NO EXISTEN           : 0

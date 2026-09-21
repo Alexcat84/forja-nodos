@@ -1,0 +1,11 @@
+$ python scripts/tabla_de_cierre.py --escribir
+poblacion: dataset/nodos.jsonl entero, libro gerber_emyth
+criterio : un nodo sale de un capitulo si cita gerber_emyth/<cap>.md
+
+| # | tarea | como cerro |
+|---:|---|---|
+| `1` | el remedio heredado de la `ACTA G1` (`d095`), cuatro celdas corregidas | **CERRADA en `G3.2`**: `4` de `4` celdas con tachado y motivo, comprobacion de secciones en `G3.8.b` |
+| `2` | la frontera de `cap_09`, `cap_10` y `cap_12` | **CERRADA en `G3.3`**: `3` de `3` unidades con residuo `0`, cero solapes y cero lineas sin cubrir |
+| `3` | los candidatos que cada capitulo de, con su informe en el acto | **CERRADA en `G3.4`**: `2` capitulos en cero, `1` candidato de `cap_12` con informe `0 CAERIA` y su vecino leido `SANO` |
+| `4` | `PASOS INVENTADOS POR CAPITULO` | **CERRADA en `G3.5`**: `2` filas `SIN SUPERFICIE`, `1` fila en `0,00` por ciento |
+| `5` | la muestra de fidelidad con la semilla `g3` | **CERRADA en `G3.6`**: `cap_12` releido ENTERO (`6` pasos, `0` puente), `cap_09` y `cap_10` por muestra con `0` pasos |

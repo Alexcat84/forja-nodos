@@ -1,0 +1,42 @@
+{
+  "id": "recorrer_siete_pasos_programa_desarrollo_negocio",
+  "titulo": "Recorrer los siete pasos del Business Development Program, empezando por tu Primary Aim",
+  "denominaciones": {
+    "nombre_largo": "La cabeza de la serie numerada de cap_13: el Business Development Program como el proceso paso a paso y el vehiculo del Franchise Prototype, con sus siete pasos nombrados uno a uno",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "Business Development Program"},
+      {"idioma": "ingles", "termino": "Your Primary Aim"},
+      {"idioma": "ingles", "termino": "Your Strategic Objective"},
+      {"idioma": "ingles", "termino": "Your Organizational Strategy"},
+      {"idioma": "ingles", "termino": "Your Management Strategy"},
+      {"idioma": "ingles", "termino": "Your People Strategy"},
+      {"idioma": "ingles", "termino": "Your Marketing Strategy"},
+      {"idioma": "ingles", "termino": "Your Systems Strategy"}
+    ]
+  },
+  "condiciones_activacion": "Cuando ya finges que tu negocio es el prototipo de 5.000 replicas y necesitas el programa paso a paso con el que conviertes ese negocio, el que tienes o el que vas a crear, en un modelo organizado.",
+  "entregable_esperado": "Tu Business Development Program recorrido en sus siete pasos distintos, en el orden que el libro los nombra, como el vehiculo con el que construyes tu Franchise Prototype.",
+  "pasos_accionables": [
+    "Entiende tu Business Development Program como el proceso paso a paso con el que conviertes tu negocio actual, o el que vas a crear, en un modelo perfectamente organizado para miles de replicas iguales.",
+    "Usalo tambien como el vehiculo con el que construyes tu Franchise Prototype.",
+    "Recorre el programa en sus siete pasos distintos, en este orden.",
+    "Paso 1: Your Primary Aim.",
+    "Paso 2: Your Strategic Objective.",
+    "Paso 3: Your Organizational Strategy.",
+    "Paso 4: Your Management Strategy.",
+    "Paso 5: Your People Strategy.",
+    "Paso 6: Your Marketing Strategy.",
+    "Paso 7: Your Systems Strategy."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_13.md, unidad Cap. 11, titulo textual Your Business Development Program. Sale de la PIEZA R3 de la frontera publicada en esta misma vuelta (.gerber_v4/frontera_cap13.txt), L39 a L58, 82 palabras. ESTO ES UNA SERIE NUMERADA Y SE TRATA COMO TAL (manual seccion 3.4, EXTRACTOR.md 9): un nodo por paso mas UNA cabeza, y esta es la CABEZA. Es el mismo patron de fingir_prototipo_cinco_mil_replicas (cap_11, vuelta 1) y de recorrer_trece_elementos_proceso_evaluacion_formal (scott_radical_candor): EXTRACTOR.md 9.1, tabla SI ES UN NODO, tercera fila, un procedimiento que el libro nombra en una tabla y desarrolla en otro sitio. La tabla es literal aqui: siete lineas numeradas 1 a 7, cada una el titulo exacto de un capitulo futuro (cap_14 a cap_19, mas el cap. 17 reservado). ES D.37 Y NO D.29: el texto DICE CUANTAS PARTES TIENE (seven distinct steps) Y LAS NOMBRA UNA A UNA, las dos condiciones que D.37 pide. HOY NINGUNA DE LAS SIETE EXISTE COMO NODO: cap_14 a cap_19 estan SIN TOCAR (ACTA G3 seccion 2, unidades SIN TOCAR). Al entrar esta cabeza quedaria en 0 de 7 partes en el grafo, igual que recorrer_trece_elementos_proceso_evaluacion_formal entro con 0 de 13. Las aristas cabeza a parte se declaran cuando cada capitulo se mine y produzca su cabeza propia, citando esta misma linea (L43 a L57), no antes. PUNTERO PARA LA VUELTA QUE MINE cap_14 A cap_19: si alguna de las siete no llega a tener nodo cabeza propio (por ejemplo si el capitulo entero es postura sin inventario, como paso con cap_09 y cap_10), la serie se queda incompleta a proposito, que ya tiene precedente (fingir_prototipo entro con 4 de 6 partes, D.27 descarto dos por ser fines y no medios). NOTA QUE NO ES DISCUTIBLE PERO CONVIENE DEJAR ESCRITA: el paso 6 (Your Marketing Strategy) corresponde al cap. 17, que esta APARTADO en fuentes/gerber_emyth_cap17_reservado/ y no en las 22 unidades normales del libro; si esa reserva no se revierte, esta serie puede quedarse permanentemente en 6 de 7. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 10 pasos, 10 TRANSCRIPCION, 0 PUENTE, con su cita pegada en .gerber_v4/cita_cap13_L39.txt (D.35). LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: el libro no dice nada mas de cada paso en este capitulo (ni una linea de descripcion, a diferencia de las seis reglas del Prototipo que si traian una frase cada una); escribir una glosa por paso seria inventar exactamente lo que D.30 15.4 llama completar un inventario delgado, asi que cada paso se queda con su nombre desnudo, tal como el libro lo deja.",
+  "atribuciones": [],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-22"}
+  ]
+}
