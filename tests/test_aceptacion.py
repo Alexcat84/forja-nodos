@@ -3714,6 +3714,153 @@ class PruebaCifraDerivada(BaseForja):
         self.assertEqual(tallar_reporte.cifras_derivadas_sueltas(), [])
 
 
+class PruebaTresDefectosDelFrente(BaseForja):
+    """LOS TRES QUE UN FRENTE MIDIO Y NO PODIA TOCAR (22 sep 2026, punto 3).
+
+    `D.45` veda `src/`, `scripts/` y el arnes desde un frente **aunque haya caida**.
+    El frente `gerber_emyth` hizo lo correcto las tres veces: los midio con
+    instrumento, los anoto en `DEUDA.jsonl` con su cita y los subio. **Se arreglan
+    aqui, en la rama de insercion y con el frente parado.**
+    """
+
+    # ------------------------------------------------------------------ d097
+
+    SANEAMIENTOS_DE_LA_SERIAL = [
+        {"tipo": "saneamiento", "vuelta": 44}, {"tipo": "saneamiento", "vuelta": 49},
+        {"tipo": "saneamiento", "vuelta": 54}, {"tipo": "saneamiento", "vuelta": 59},
+        {"tipo": "deuda", "id": "d001", "que": "x", "cita": "y", "vuelta": 1},
+    ]
+
+    def test_caso_positivo_d097_un_frente_puede_recibir_saneamiento(self):
+        """**ANTES NO PODIA, NUNCA, Y ESA ERA LA CAIDA.**
+
+        `DEUDA.jsonl` es UNO para todas las lineas y viaja a los frentes en cada
+        fusion. `clase_de_vuelta` restaba `vuelta - ultima_saneamiento` sin mirar de
+        quien era esa ultima, asi que un frente que numera `1, 2, 3` recibia la `59`
+        de la serial: **`3` menos `59` da `-56`, y un numero negativo no alcanza la
+        cadencia de `5` jamas.** El `LIBRE` salia bueno por casualidad y no por la
+        cuenta.
+
+        Ahora cuenta desde la primera vuelta de SU linea, y **un frente nace con su
+        contador en cero**.
+        """
+        from scripts import deuda
+        clase, motivo = deuda.clase_de_vuelta(
+            1, self.SANEAMIENTOS_DE_LA_SERIAL, linea="un_frente_cualquiera")
+        self.assertEqual(clase, "LIBRE")
+        self.assertIn("van 0 de 5", motivo)
+        self.assertNotIn("-", motivo.split("con ")[0])
+
+        clase, motivo = deuda.clase_de_vuelta(
+            6, self.SANEAMIENTOS_DE_LA_SERIAL, linea="un_frente_cualquiera")
+        self.assertEqual(clase, "SANEAMIENTO", motivo)
+        self.assertIn("5 vuelta(s)", motivo)
+
+    def test_caso_negativo_d097_la_serial_sigue_contando_desde_la_suya(self):
+        """El arreglo no puede llevarse por delante la cuenta que si funcionaba.
+
+        Los cuatro saneamientos de la casa (`44`, `49`, `54`, `59`) no llevan campo
+        `linea` porque son anteriores a el, y **son de la serial**: es la unica que
+        declaro alguno. La serial tiene que seguir contando desde el `59`.
+        """
+        from scripts import deuda
+        clase, motivo = deuda.clase_de_vuelta(
+            63, self.SANEAMIENTOS_DE_LA_SERIAL, linea="serial")
+        self.assertEqual(clase, "LIBRE")
+        self.assertIn("la ultima de saneamiento (la 59)", motivo)
+        self.assertIn("van 4 de 5", motivo)
+
+        clase, _motivo = deuda.clase_de_vuelta(
+            64, self.SANEAMIENTOS_DE_LA_SERIAL, linea="serial")
+        self.assertEqual(clase, "SANEAMIENTO")
+
+    def test_d097_una_linea_no_ve_el_saneamiento_de_otra(self):
+        from scripts import deuda
+        sucesos = self.SANEAMIENTOS_DE_LA_SERIAL + [
+            {"tipo": "saneamiento", "vuelta": 3, "linea": "otro_frente"}]
+        self.assertEqual(deuda.ultima_saneamiento(sucesos, "serial"), 59)
+        self.assertEqual(deuda.ultima_saneamiento(sucesos, "otro_frente"), 3)
+        self.assertIsNone(deuda.ultima_saneamiento(sucesos, "uno_sin_nada"))
+
+    # ------------------------------------------------------------------ d096
+
+    def test_caso_positivo_d096_un_capitulo_minado_a_cero_consta_como_minado(self):
+        """**TRES ACTAS FIRMARON CEROS Y EL TABLERO NO LOS VEIA.**
+
+        `capitulos_minados` salia de lo que los candidatos CITAN, asi que un capitulo
+        **leido entero y adjudicado en cero** no podia aparecer nunca. Grove perdia
+        `cap_08`, `cap_09` y `cap_18`, y su fila decia `15` donde su propio cierre
+        publica `18`. Gerber perdio `cap_05` y `cap_06` el mismo dia en que los leyo.
+
+        **Se declara, no se mide**, y por eso la prueba lee la declaracion en vez de
+        teclear los capitulos: un instrumento que lo dedujera de la ausencia no
+        podria distinguir *leido y vacio* de *sin leer*, que es la diferencia entera.
+        """
+        from src import tablero
+        declarado = (tablero.declaraciones().get("minados_en_cero") or {})
+        declarado = dict((k, v) for k, v in declarado.items()
+                         if not k.startswith("_"))
+        self.assertTrue(declarado, "nadie declara capitulos minados a cero")
+        filas = dict((f["clave"], f) for f in tablero.libros())
+        for clave, dato in declarado.items():
+            fila = filas.get(clave)
+            self.assertIsNotNone(fila, "el tablero no tiene fila de %s" % clave)
+            for capitulo in dato["capitulos"]:
+                self.assertIn(capitulo, fila["capitulos_minados"],
+                              "%s da cero y esta firmado, pero el tablero lo cuenta "
+                              "como pendiente" % capitulo)
+
+    def test_caso_negativo_d096_un_cero_sin_firma_no_entra(self):
+        """**`con su firma` es la mitad de la regla, y esta es esa mitad.**
+
+        Que un capitulo no de nodo es una ADJUDICACION DE UN ACTA. Sin cita no se
+        puede releer, y un cero que nadie firma es indistinguible de un capitulo que
+        nadie abrio.
+        """
+        from src import tablero
+        crudo = comun.leer_texto(tablero.RUTA_FRENTES)
+        datos = json.loads(crudo)
+        datos["minados_en_cero"] = {"un_libro": {"capitulos": ["cap_01"]}}
+        ruta = os.path.join(self.taller, "frentes.json")
+        comun.escribir_texto(ruta, json.dumps(datos, ensure_ascii=False))
+        anterior = tablero.RUTA_FRENTES
+        tablero.RUTA_FRENTES = ruta
+        try:
+            self.assertRaises(tablero.TableroMalDeclarado, tablero.declaraciones)
+        finally:
+            tablero.RUTA_FRENTES = anterior
+
+    # ------------------------------------------------------------------ d102
+
+    def test_caso_positivo_d102_el_arnes_pone_al_dia_el_tablero_al_cerrar(self):
+        """**LA GUARDA MIDE AL ABRIR Y LA VUELTA ESCRIBE DESPUES.**
+
+        La fila envejecia dentro del propio turno: medido el 21 sep en el frente
+        (`ACTA G3` `6.2`), publicaba `candidatos_en_bandeja` `10` con `11` en la
+        bandeja. Ahora el arnes la vuelve a escribir DESPUES de verificar el sello.
+        """
+        arnes = comun.leer_texto(os.path.join(RAIZ, "orquestador_forja.sh"))
+        self.assertIn("tablero puesto al dia al cerrar la vuelta", arnes)
+        cierre = arnes.index("tablero puesto al dia al cerrar la vuelta")
+        sello = arnes.index('if ! verificar_sello "$i"; then')
+        self.assertLess(sello, cierre,
+                        "el tablero se pone al dia ANTES del sello, y entonces no "
+                        "ve lo que el turno del auditor escribio")
+
+    def test_caso_negativo_d102_un_espejo_que_falla_no_para_la_vuelta(self):
+        """El tablero es un espejo del dato, no una guarda de dato.
+
+        Si parase aqui, **un fallo de espejo costaria el turno que acaba de
+        pagarse**. Se dice y se sigue.
+        """
+        arnes = comun.leer_texto(os.path.join(RAIZ, "orquestador_forja.sh"))
+        trozo = arnes[arnes.index("tablero puesto al dia al cerrar la vuelta"):]
+        trozo = trozo[:400]
+        self.assertIn("AVISO: el tablero no se pudo poner al dia", trozo)
+        self.assertNotIn("exit 1", trozo)
+        self.assertNotIn("break", trozo)
+
+
 class PruebaRegimenLigero(BaseForja):
     """DOS REGIMENES: EL LIGERO NO TOCA EL GRAFO (D.58, 19 sep 2026).
 
@@ -5189,7 +5336,7 @@ def main():
              PruebaColaDeDoctrina, PruebaTablaDeCierre,
              PruebaPasoRetiradoDelCampo, PruebaExencionDeMomento,
              PruebaDeudaNoBloquea, PruebaVeredictoYArista,
-             PruebaRegimenLigero, PruebaCifraDerivada]
+             PruebaRegimenLigero, PruebaCifraDerivada, PruebaTresDefectosDelFrente]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:
@@ -5275,6 +5422,8 @@ def main():
           % len(cargador.loadTestsFromTestCase(PruebaRegimenLigero)._tests))
     print("  D.59, la cifra derivada la calcula el instrumento: %d pruebas mas"
           % len(cargador.loadTestsFromTestCase(PruebaCifraDerivada)._tests))
+    print("  los tres defectos que midio el frente (d096, d097, d102): %d pruebas mas"
+          % len(cargador.loadTestsFromTestCase(PruebaTresDefectosDelFrente)._tests))
     print("")
     print("  total: %d pruebas, %d fallos, %d errores"
           % (resultado.testsRun, len(resultado.failures), len(resultado.errors)))

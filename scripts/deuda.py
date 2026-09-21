@@ -45,6 +45,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, RAIZ)
 
 from src import comun  # noqa: E402
+from src import credito  # noqa: E402
 
 RUTA = os.path.join(RAIZ, "docs", "loop", "DEUDA.jsonl")
 CADENCIA = 5          # una vuelta de saneamiento de cada cinco
@@ -91,14 +92,53 @@ def pendientes(sucesos=None):
             if s.get("tipo") == "deuda" and s.get("id") not in pagadas]
 
 
-def ultima_saneamiento(sucesos=None):
-    """La vuelta de la ultima de saneamiento, o `None` si no hubo ninguna."""
+def _numero(valor):
+    """`vuelta` llega como entero del arnes y como cadena de la linea de ordenes."""
+    try:
+        return int(str(valor).strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def ultima_saneamiento(sucesos=None, linea=None):
+    """La vuelta de la ultima de saneamiento **DE ESA LINEA**, o `None`.
+
+    **EL REGISTRO ES UNO Y LAS LINEAS SON VARIAS** (`d097`). Hasta el 22 sep esta
+    funcion devolvia la ultima de CUALQUIER linea, y como el fichero viaja a los
+    frentes en la fusion, un frente que numera sus vueltas `1, 2, 3` recibia la
+    `59` de la serial. **Un suceso sin `linea` es de la serial**, que es la unica
+    que declaro saneamientos antes de que este campo existiera: las cuatro que hay
+    (`44`, `49`, `54`, `59`) son suyas.
+    """
     sucesos = leer() if sucesos is None else sucesos
-    vueltas = [s.get("vuelta") for s in sucesos if s.get("tipo") == "saneamiento"]
+    linea = linea or credito.linea_actual()
+    vueltas = [_numero(s.get("vuelta")) for s in sucesos
+               if s.get("tipo") == "saneamiento"
+               and (s.get("linea") or credito.LINEA_SERIAL) == linea]
+    vueltas = [v for v in vueltas if v is not None]
     return max(vueltas) if vueltas else None
 
 
-def clase_de_vuelta(vuelta, sucesos=None):
+def primera_vuelta(linea=None):
+    """Desde donde cuenta una linea que todavia no ha saneado nunca (`d097`).
+
+    **UN FRENTE NACE CON SU CONTADOR EN CERO** (decision del fundador del 22 sep
+    2026, punto 3). La sede que sabe de lineas es el registro de credito (`D.48`),
+    asi que la primera vuelta de la linea sale de ahi; **si la linea no ha escrito
+    ninguna tanda todavia, empieza en `1`**, que es por donde empieza a numerar el
+    arnes.
+    """
+    linea = linea or credito.linea_actual()
+    try:
+        sucesos = credito.leer(linea)
+    except Exception:
+        return 1
+    vueltas = [_numero(s.get("vuelta")) for s in sucesos]
+    vueltas = [v for v in vueltas if v is not None]
+    return min(vueltas) if vueltas else 1
+
+
+def clase_de_vuelta(vuelta, sucesos=None, linea=None):
     """`(clase, motivo)`: `SANEAMIENTO`, o `LIBRE` si la cadencia no la reclama.
 
     **`LIBRE` NO ES UNA CLASE DE VUELTA: ES LA AUSENCIA DE OBLIGACION.** Desde `D.58`
@@ -112,20 +152,33 @@ def clase_de_vuelta(vuelta, sucesos=None):
     todas las demas** y el registro deja de poder explicar por que le toco a esa.
     """
     sucesos = leer() if sucesos is None else sucesos
-    ultima = ultima_saneamiento(sucesos)
+    linea = linea or credito.linea_actual()
+    vuelta = _numero(vuelta)
+    ultima = ultima_saneamiento(sucesos, linea)
     faltan = len(pendientes(sucesos))
     if not faltan:
         return "LIBRE", ("no hay deuda pendiente: no hay nada que sanear")
+
+    # LA CUENTA ES DE LA LINEA, Y CUANDO NO HA SANEADO NUNCA CUENTA DESDE SU PRIMERA
+    # VUELTA (d097, decision del fundador del 22 sep 2026 punto 3). Antes devolvia
+    # LIBRE aqui sin mirar nada, y eso dejaba a un frente SIN PODER RECIBIR NUNCA una
+    # vuelta de saneamiento: la unica de la casa era la 59 de la serial, y 3 menos 59
+    # da -56, que no alcanza la cadencia jamas. El LIBRE salia bueno por casualidad.
     if ultima is None:
-        return "LIBRE", ("todavia no ha corrido ninguna de saneamiento; la primera "
-                         "toca cuando el fundador o el acta la declare")
-    desde = vuelta - ultima
+        origen = primera_vuelta(linea)
+        desde = vuelta - origen
+        cuenta = ("la primera vuelta de la linea '%s' (la %d), que todavia no ha "
+                  "saneado nunca" % (linea, origen))
+    else:
+        desde = vuelta - ultima
+        cuenta = "la ultima de saneamiento (la %d)" % ultima
+
     if desde >= CADENCIA:
-        return "SANEAMIENTO", ("han pasado %d vuelta(s) desde la ultima de saneamiento "
-                               "(la %d) y la cadencia es %d, con %d deuda(s) pendientes"
-                               % (desde, ultima, CADENCIA, faltan))
-    return "LIBRE", ("van %d de %d desde la ultima de saneamiento (la %d), con %d "
-                     "deuda(s) esperando" % (desde, CADENCIA, ultima, faltan))
+        return "SANEAMIENTO", ("han pasado %d vuelta(s) desde %s y la cadencia es %d, "
+                               "con %d deuda(s) pendientes"
+                               % (desde, cuenta, CADENCIA, faltan))
+    return "LIBRE", ("van %d de %d desde %s, con %d deuda(s) esperando"
+                     % (desde, CADENCIA, cuenta, faltan))
 
 
 def anotar(suceso, ruta=None):
@@ -133,6 +186,9 @@ def anotar(suceso, ruta=None):
     if suceso.get("tipo") not in TIPOS:
         raise DeudaMalEscrita("tipo %r, y los tipos son %s"
                               % (suceso.get("tipo"), ", ".join(TIPOS)))
+    # CADA SUCESO DICE DE QUE LINEA ES (d097). Sin esto el registro no se puede
+    # repartir, y el fichero viaja a los frentes en cada fusion.
+    suceso.setdefault("linea", credito.linea_actual())
     if suceso["tipo"] == "deuda":
         for campo in ("que", "cita", "vuelta"):
             if not str(suceso.get(campo) or "").strip():

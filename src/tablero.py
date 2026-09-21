@@ -86,8 +86,13 @@ def declaraciones():
         raise TableroMalDeclarado(
             "config/frentes.json: 'orden_de_prioridad' sin cita. El orden lo da el "
             "tablero (D.51), y un orden sin cita no se puede releer.")
-    for grupo in ("liberados", "cerrados_en_extraccion"):
+    for grupo in ("liberados", "cerrados_en_extraccion", "minados_en_cero",
+                  "coste_por_turno"):
         for clave, dato in (datos.get(grupo) or {}).items():
+            # Las claves con guion bajo son la nota de lectura del grupo, no una
+            # declaracion, y esta casa ya las usa asi en la raiz del fichero.
+            if clave.startswith("_"):
+                continue
             if not (dato or {}).get("cita"):
                 raise TableroMalDeclarado(
                     "config/frentes.json: '%s' de '%s' sin cita." % (clave, grupo))
@@ -186,6 +191,7 @@ def medir():
     liberados = declarado.get("liberados") or {}
     cerrados = declarado.get("cerrados_en_extraccion") or {}
     cosechados = declarado.get("cosechados") or {}
+    en_cero = declarado.get("minados_en_cero") or {}
     mapa_worktrees = worktrees()
     existentes = ramas()
     nodos = comun.leer_jsonl(comun.RUTA_DATASET)
@@ -211,8 +217,20 @@ def medir():
         # bandeja daria "ningun capitulo" para los tres lotes ya insertados, y para
         # el lote 4 daria los pendientes en vez de los minados. El relevo de D.50
         # necesita saber por donde va el LIBRO, no por donde va la bandeja.
+        # UN CAPITULO MINADO A CERO ESTA MINADO (d096, y d088 y d102 son la misma
+        # familia). El campo salia de lo que los candidatos CITAN, asi que un
+        # capitulo leido y adjudicado en cero **no podia aparecer nunca**: grove
+        # perdia cap_08, cap_09 y cap_18, y gerber perdio cap_05 y cap_06 el mismo
+        # dia en que los leyo enteros.
+        #
+        # Y NO SE MIDE, SE DECLARA CON SU FIRMA: que un capitulo no de nodo es una
+        # ADJUDICACION DE UN ACTA, no un hecho del arbol. Un instrumento que lo
+        # dedujera de la ausencia no podria distinguir *leido y vacio* de *sin
+        # leer*, que es justo la diferencia que importa. Por eso vive en
+        # config/frentes.json con su cita, como cerrados_en_extraccion.
         capitulos = sorted(set(_capitulos_de_bandeja(bandeja))
-                           | set(_capitulos_de_bandeja(archivo)))
+                           | set(_capitulos_de_bandeja(archivo))
+                           | set((en_cero.get(clave) or {}).get("capitulos") or ()))
         ultimo = capitulos[-1] if capitulos else ""
 
         insertados = _contar_json(archivo)
@@ -524,6 +542,23 @@ def texto(filas=None):
         partes.append("  MUNDO 11: faltan %d de %d libros del corte (%s)"
                       % (len(faltan), len(del_mundo),
                          ", ".join(f["clave"] for f in faltan)))
+
+    # EL PRECIO DEL REGIMEN LIGERO, AL LADO DEL DE LA CAMPANIA (22 sep 2026, punto 2).
+    # Va declarado y no medido aqui: sale del loop.log de cada corrida, que es un
+    # fichero por arbol, y este instrumento corre en cualquiera de ellos.
+    coste = dict((k, v) for k, v in (declaraciones().get("coste_por_turno") or {})
+                 .items() if not k.startswith("_"))
+    if coste:
+        partes.append("")
+        partes.append("  COSTE POR TURNO, MEDIDO (D.58, regimen ligero):")
+        for nombre in sorted(coste, key=lambda n: coste[n]["media_usd"]):
+            dato = coste[nombre]
+            partes.append("    %-48s %8.4f USD/turno" % (nombre, dato["media_usd"]))
+            partes.append("      %2d turnos, %8.4f total     extractor %8.4f  |  "
+                          "auditor %8.4f"
+                          % (dato["turnos"], dato["total_usd"],
+                             dato["extractor_usd"], dato["auditor_usd"]))
+            partes.append("      %s" % dato["modelos"])
 
     cola = [f for f in filas if f.get("tipo") == "doctrina"]
     if cola:
