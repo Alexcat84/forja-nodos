@@ -59349,9 +59349,16 @@ INSERCION (`MODO_INSERCION=cuarentena`), TRES GUARDAS VERDES (`G5.5.a`), CERO AV
 
 > ## **ESTE BLOQUE SE ESCRIBE EN LA RAMA `extraccion-gerber_emyth`, CON `MODO_INSERCION=cuarentena`. CERO INSERCIONES, CERO CAPITULOS NUEVOS MINADOS.**
 >
-> **CLASE DE ESTA VUELTA: SANEAMIENTO**, dictada por el instrumento y no por mi lectura (`python
-> scripts/deuda.py --clase 5`, `G6.1`). La linea `gerber_emyth` va **`4` de `5`** desde su primera
-> vuelta y **no ha saneado nunca**: esta es la primera.
+> **CLASE DE ESTA VUELTA: SANEAMIENTO**, ~~dictada por el instrumento y no por mi lectura (`python
+> scripts/deuda.py --clase 5`, `G6.1`)~~ **CORRECCION DECLARADA EN LA VUELTA `7` (`d117`):** el comando
+> que dicta la clase de una vuelta lleva el numero DE ESA VUELTA, y la vuelta `6` es la sexta, no la
+> quinta; el que la dicta es `python scripts/deuda.py --clase 6` (o, reproducido sobre el registro previo
+> a la declaracion, `python .g6aud/clase_de_vuelta.py`, auditor, `ACTA G6` `4.1`), que imprime igual
+> `SANEAMIENTO` (`han pasado 5 vuelta(s)..., la cadencia es 5`). El rotulo `SANEAMIENTO` seguia siendo
+> cierto; lo que fallaba era el comando citado, que imprimia `LIBRE`. La linea `gerber_emyth` va
+> ~~**`4` de `5`**~~ **`5` de `5`** (la cifra `4` de `5` era de la vuelta anterior, `ACTA G5`, copiada de
+> `REPORTE.md` en vez de medida en esta vuelta) desde su primera vuelta y **no ha saneado nunca**: esta
+> es la primera.
 >
 > **MODO AUSTERO (`D.47`) VIGENTE.** Nada que el registro ya diga, cifras talladas, discutibles por
 > numero y linea. **Las guardas de dato, intactas.**
@@ -59778,3 +59785,744 @@ Ninguna. Las cuatro tareas del encargo cierran en esta misma vuelta y no dejan t
 `G6.7`), CERO PARADA (`G6.6`), CERO INSERCION (`MODO_INSERCION=cuarentena`), CERO CAPITULO NUEVO
 MINADO, TRES GUARDAS VERDES (`G6.5.a`), CERO AVERIA DE DATO (`G6.5.b`), TRES DEUDAS PAGADAS
 (`d102`, `d103`, `d112`), SALDO `39`/`36`.**
+
+
+---
+
+# FRENTE `gerber_emyth`, VUELTA 7: **VUELTA DE EXTRACCION** (`cap_18` y `cap_19`, mitad de `d111`)
+
+> ## **ESTE BLOQUE SE ESCRIBE EN LA RAMA `extraccion-gerber_emyth`, CON `MODO_INSERCION=cuarentena`. CERO INSERCIONES.**
+>
+> **CLASE DE ESTA VUELTA: EXTRACCION.** El comando lleva el numero de esta vuelta (`d117`, corregido en
+> el propio encargo): `python scripts/deuda.py --clase 7` da `LIBRE` (`van 1 de 5 desde la ultima de
+> saneamiento, la 6, con 39 deuda(s) esperando`), medido en `G7.1` con salida propia. `LIBRE` no es una
+> clase: es la ausencia de obligacion de saneamiento, asi que la clase la elige el encargo segun el
+> libro y la elige `EXTRACCION`.
+>
+> **MODO AUSTERO (`D.47`) VIGENTE.** Nada que el registro ya diga, cifras talladas, discutibles por
+> numero y linea. **Las guardas de dato, intactas.**
+
+## G7.0. EL ESQUELETO DE LA VUELTA (`EXTRACTOR.md` 3)
+
+| # | tarea del encargo | como cierra | donde |
+|---:|---|---|---|
+| 1 | `TAREA 1`: registros de apertura y la correccion declarada de `d117` | **CERRADA**: credito y deuda medidos (`42`/`36`, discrepancia contra la cabecera del encargo declarada), correccion tachada sin borrar en el bloque de la vuelta `6`, `d117` pagada | `G7.1` |
+| 2 | `TAREA 2`: `cap_18`, frontera publicada antes de cortar y candidatos con su aduana en el acto | **CERRADA**: frontera `11` piezas, `5396` palabras al digito, residuo `0`; `3` candidatos, `0 CAERIA` en las tres aduanas; `2` discutibles marcados y cerrados en el acto | `G7.3` |
+| 3 | `TAREA 3`: pagar `d110` leyendo `cap_17` `L189` a `L221` junto a la apertura de `cap_18` | **CERRADA**: el autor SI saca el Operations Manual del caso (`cap_18` `L117` a `L119` y `L223` a `L269`), el discutible `5` de la vuelta `5` queda reabierto y resuelto, `d110` pagada | `G7.2` |
+| 4 | `TAREA 4`: `cap_19` si el techo lo permite, o cierre corto declarado; medir cuanto queda de `d111` | **CERRADA**: techo en `3` de `30`, `cap_19` minado igual que `cap_18` (frontera `10` piezas, `4431` palabras al digito, `3` candidatos, `0 CAERIA`); `d111` medida en `0` de `7` con los seis pasos alcanzables ya minados, sin decidir | `G7.4` |
+| 5 | `TAREA 5`: el cierre, con `PASOS INVENTADOS POR CAPITULO` con poblacion de verdad | | |
+
+**CINCO TAREAS ENCARGADAS, EN EL TOPE DE CINCO** (`EXTRACTOR.md` 1.3).
+
+## G7.1. TAREA 1: LOS REGISTROS, Y LA CORRECCION DECLARADA DE `d117`
+
+### G7.1.a. Credito medido al abrir
+
+Salida de `python forja.py credito`, guardada en `.gerber_v7/credito_apertura.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/credito_apertura.txt -->
+
+    CREDITO DE LA LINEA 'gerber_emyth' (D.48)
+      registro: docs/loop/CREDITO_gerber_emyth.jsonl
+      tandas: 7, en 27 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA G6
+      CIFRA PUBLICADA    0 de 2     ACTA G6
+      CLASE              0 de 2     ACTA G6
+      DATO MOVIDO        0 de 2     ACTA G6
+      REPORTE            2 de 3     ACTA G6
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**`ACTA G6` deja `REPORTE` en `2` de `3` y las otras cuatro rachas en `0`, confirmado por el instrumento
+corrido hoy.** Un escalon mas en `REPORTE` y el bucle para (`ACTA G6`, seccion `0`).
+
+### G7.1.b. Deuda medida al abrir, y una discrepancia declarada contra la cabecera del encargo
+
+Salida de `python scripts/deuda.py`, guardada en `.gerber_v7/deuda_apertura.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/deuda_apertura.txt -->
+
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      registro: docs/loop/DEUDA.jsonl
+      pendientes: 42    pagadas: 36
+
+**DISCREPANCIA DECLARADA, NO RESUELTA COPIANDO (`EXTRACTOR.md` 5):** la cabecera del encargo publica
+`python scripts/deuda.py --clase 7` con `39 deuda(s) esperando`, y mi propia corrida de ese mismo
+comando da `42`. Medido con `--clase 7` guardado en `.gerber_v7/clase7.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/clase7.txt -->
+
+    LIBRE
+      van 1 de 5 desde la ultima de saneamiento (la 6), con 42 deuda(s) esperando
+
+**La cuenta cuadra sola:** `ACTA G6` cerro la vuelta `6` en `39` pendientes/`36` pagadas (saldo publicado
+en el bloque `G6` de este mismo reporte), y entre ese cierre y este encargo el propio auditor anoto tres
+deudas nuevas (`d117`, `d118`, `d119`, las tres `vuelta: "6"` en `docs/loop/DEUDA.jsonl`, leidas en
+`G7.1.c`), asi que `39 + 3 = 42`. **La cabecera del encargo mide antes de esas tres anotaciones; yo mido
+despues.** No es una caida: es la misma especie que `EXTRACTOR.md` 4 nombra por su nombre (la apertura se
+mide antes de la primera operacion, y la del encargo quedo fechada antes de que el propio autor tocara
+`DEUDA.jsonl` otra vez). **Publico `42`/`36` como el estado de apertura de esta vuelta**, no `39`.
+
+### G7.1.c. La correccion declarada de `d117`: tachada sin borrar, con su instrumento pegado
+
+Salida de `python .g6aud/clase_de_vuelta.py`, guardada en `.gerber_v7/clase_de_vuelta.txt` (identica a
+`.g6aud/clase_de_vuelta.txt` del auditor, comprobado con `diff`):
+
+<!-- TALLADO: salida=.gerber_v7/clase_de_vuelta.txt -->
+
+    registro: docs/loop/DEUDA.jsonl del commit f38c34e (antes de la declaracion)
+      pendientes: 42    pagadas: 33
+      ultima de saneamiento de la linea 'gerber_emyth': None
+
+      --clase 5  ->  LIBRE
+          van 4 de 5 desde la primera vuelta de la linea 'gerber_emyth' (la 1), que todavia no ha saneado nunca, con 42 deuda(s) esperando
+      --clase 6  ->  SANEAMIENTO
+          han pasado 5 vuelta(s) desde la primera vuelta de la linea 'gerber_emyth' (la 1), que todavia no ha saneado nunca y la cadencia es 5, con 42 deuda(s) pendientes
+      --clase 7  ->  SANEAMIENTO
+          han pasado 6 vuelta(s) desde la primera vuelta de la linea 'gerber_emyth' (la 1), que todavia no ha saneado nunca y la cadencia es 5, con 42 deuda(s) pendientes
+
+**La correccion queda tachada sin borrar en la propia cabecera del bloque de la vuelta `6`** (arriba en
+este mismo fichero, seccion que abre con `# FRENTE gerber_emyth, VUELTA 6`): el comando citado pasa de
+`--clase 5` a `--clase 6` (o su reproduccion `.g6aud/clase_de_vuelta.py`), y la cifra de cadencia pasa de
+`4 de 5` a `5 de 5`. **No se regenera por tallado**: es prosa dentro de una cita de bloque y no una tabla
+que `scripts/tallar_reporte.py` reconozca como tal, tal como el encargo lo distingue de mi propia
+`TAREA 1` de la vuelta `6` (esa si era tabla tallada; esta es prosa).
+
+**`d117` se paga con esta correccion.** Salida de
+`python scripts/deuda.py --pagar d117 --vuelta 7 --como "..."`, guardada en `.gerber_v7/pago_d117.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/pago_d117.txt -->
+
+    PAGADA d117 en la vuelta 7
+
+La raiz fue del auditor (`ACTA G6` la declara suya antes que la mia), y el remedio ya viene aplicado en
+la cabecera de este mismo encargo (`--clase 7`, no `--clase 6`), asi que no hay una segunda caida que
+corregir: solo la cita vieja de la vuelta `6`.
+
+## G7.2. TAREA 3: `d110`, EL CASO CONTRA EL METODO GENERICO, LEIDO ANTES DE MINAR `cap_18`
+
+*Se cierra antes que la `TAREA 2` porque su veredicto decide donde nace el candidato: si el metodo sigue
+dentro del dialogo, el discutible `5` de la vuelta `5` queda confirmado sin candidato; si el autor lo saca
+del caso, el candidato nace en `cap_18` y la frontera de `G7.3` lo tiene que reservar sitio.*
+
+### G7.2.a. Las dos mitades de la escena, leidas juntas
+
+`cap_17` se corta en `L221`, a mitad de la respuesta del Manager. Salida de `sed -n '221p' fuentes/gerber_emyth/cap_17.md`, guardada en `.gerber_v7/cita_cap17_L221.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/cita_cap17_L221.txt -->
+
+    "That's where we really shine."
+
+`cap_18` abre citando literalmente la pregunta general y la respuesta del mismo Manager. Salida de
+`sed -n '21p;27p' fuentes/gerber_emyth/cap_18.md | cut -c1-108`, guardada en
+`.gerber_v7/cita_cap18_apertura.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/cita_cap18_apertura.txt -->
+
+    H ow do I get my people to do what I want?" This is the one question I hear most often from small business
+    Since that is the question most often asked of me, I was intrigued with the hotel Manager's answer to my q
+
+**Es la misma escena.** `L27` nombra "the hotel Manager's answer to my question", la misma pregunta con la
+que `cap_17` se corta en `L221`. No hay caso nuevo: es el mismo caso continuado.
+
+### G7.2.b. El Operations Manual SI sale del caso, y sale en voz propia del autor
+
+Leido el dialogo del Manager hasta donde se cierra (`cap_18` `L17` a `L107`, el mismo patron narrativo de
+`cap_17`), el texto cambia de voz: deja las comillas del Manager y pasa a la segunda persona del autor
+dirigida al lector. Salida de `sed -n '117p;119p' fuentes/gerber_emyth/cap_18.md`, guardada en
+`.gerber_v7/cita_cap18_L117_L119.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/cita_cap18_L117_L119.txt -->
+
+    Your People Strategy is the way you communicate this idea.
+    It starts with your Primary Aim and your Strategic Objective, and continues through your Organizational Strategy (your Organization Chart and the Position Contracts for all of the positions in it) and the Operations Manuals that define the work your people do.
+
+**`L119` nombra "the Operations Manuals that define the work your people do" fuera de las comillas del
+Manager, en segunda persona, como uno de los componentes de Your People Strategy que le tocan al negocio
+DEL LECTOR, no ya el cuaderno rojo concreto del hotel Venetia.** No es la misma frase que describia el
+cuaderno con sus colores y sus checklists (eso se quedo en `cap_17`, dentro del dialogo, y no se repite
+aqui): es el nombre del componente, generalizado.
+
+**Y HAY UNA SEGUNDA SALIDA DEL CASO, MAS CONCRETA:** `cap_18` `L223` a `L269` describe el proceso de
+contratacion del hotel en cinco pasos numerados ("the hiring process was comprised of several distinct
+components"), narrado todavia como explicacion del Manager pero con estructura de procedimiento
+replicable; el paso `5` revisa el Operations Manual junto al Strategic Objective, la Organizational
+Strategy y el Position Contract, otra vez como objeto generico y no como la descripcion especifica del
+hotel.
+
+### G7.2.c. El veredicto que reabre el discutible `5` de la vuelta `5`
+
+`ACTA G5` cerro ese discutible con la reserva escrita de que el texto seguia (citado en `G5`, seccion
+`3.d` `5`, este mismo fichero): *"sin que el autor la retome fuera del dialogo antes de que el fichero se
+corte en `L221`"*. **Leida la continuacion, el autor SI la retoma fuera del dialogo**, en `L117` a `L119`
+y otra vez en el proceso de contratacion. **Esto no es caida de nadie: es la deuda funcionando**
+(`EXTRACTOR.md`, tal como el encargo lo anticipa en su seccion `3`). **El candidato nace en `cap_18`, no
+en `cap_17`.**
+
+### G7.2.d. `d110` pagada
+
+Salida de `python scripts/deuda.py --pagar d110 --vuelta 7 --como "..."`, guardada en
+`.gerber_v7/pago_d110.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/pago_d110.txt -->
+
+    PAGADA d110 en la vuelta 7
+
+## G7.3. TAREA 2: `cap_18`, LA FRONTERA PUBLICADA ANTES DE CORTAR, Y TRES CANDIDATOS
+
+### G7.3.a. El borde de arriba, comparado contra `wc -l` (`d109`, la caida que la `ACTA G5` cargo)
+
+    $ wc -l fuentes/gerber_emyth/cap_18.md
+    413 fuentes/gerber_emyth/cap_18.md
+
+**`413` lineas, al digito con las `413` que el encargo cuenta en su cabecera.** La frontera de abajo
+cierra tambien en `L413`: no hay borde de arriba que la guarda no vea (`d109` sigue en pie como
+moratoria de maquinaria, pero esta vuelta lo comprueba a mano igual que la `6`).
+
+### G7.3.b. La frontera, publicada antes de cortar
+
+Salida de `python .gerber_v5/frontera.py fuentes/gerber_emyth/cap_18.md .gerber_v7/piezas_cap18.txt`,
+guardada en `.gerber_v7/frontera_cap18.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/frontera_cap18.txt -->
+
+    AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+    es una constante mia: sale de fuentes/gerber_emyth/cap_18.md, linea 8, que es la siguiente al segundo
+    --- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L413.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L20 | **18** | el numero del capitulo, el rotulo YOUR PEOPLE STRATEGY y el epigrafe de Robert S. DeRopp (Life games reflect life aims) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L21 a L102 | **1432** | la escena del hotel Venetia continuada literalmente desde donde cap_17 se corto en L221: la pregunta general del autor, y el dialogo del Manager sobre el respeto del Boss, la seriedad de la operacion y la filosofia de que el trabajo es reflejo de quien uno es, hasta el punto en que el Manager deja de hablar entre comillas | **CASO: continuacion de la escena de cap_17** |
+| `R3` | L103 a L116 | **187** | la reflexion del autor que generaliza lo que el Manager conto: la gente no quiere trabajar para gente interesante sino para gente que crea una estructura clara para actuar, un juego, y que comprarlo depende de como se comunique | **POSTURA** |
+| `C1` | L117 a L120 | **51** | Your People Strategy es la forma de comunicar esa idea, y arranca con tu Primary Aim y tu Strategic Objective, sigue con tu Organizational Strategy (tu Organization Chart y los Position Contracts de todas las posiciones) y tus Operations Manuals que definen el trabajo de tu gente | **CANDIDATO: construir_estrategia_gente_cuatro_componentes** |
+| `R4` | L121 a L136 | **189** | el juego no se puede capturar solo en la pagina escrita, tiene que verse y vivirse, tiene que ser real, y como actuas en el juego establece como te van a ver los demas jugadores | **POSTURA** |
+| `C2` | L137 a L166 | **787** | The Rules of the Game: ocho reglas numeradas para el juego de la gente, desde no disenar el juego a partir de lo que quieres que la gente haga hasta robar un juego ajeno si no se te ocurre uno bueno | **CANDIDATO: aplicar_ocho_reglas_juego_personas** |
+| `R5` | L167 a L228 | **477** | The Logic of the Game: la mayoria de la gente no consigue lo que quiere porque falta proposito y comunidad, y un negocio puede convertirse en un lugar de comunidad con proposito, orden y significado | **POSTURA** |
+| `R6` | L229 a L246 | **188** | Playing the Game: el mapa mental del juego del dueno del hotel, la dedicacion que no descansa solo en lo comercial sino en una filosofia moral, y el proceso de contratacion como el medio mas esencial para comunicar la idea del Boss | **POSTURA: bridge** |
+| `C3` | L247 a L272 | **266** | el proceso de contratacion del hotel en cinco componentes distintos: presentacion guionizada en grupo, reunion individual, notificacion telefonica al elegido, carta al no elegido, y el primer dia de entrenamiento con sus siete actividades incluida la revision del Operations Manual | **CANDIDATO: aplicar_cinco_pasos_proceso_contratacion** |
+| `R7` | L273 a L288 | **123** | las preguntas retoricas de cierre sobre si sistematizar deshumaniza o lo contrario, y el regreso a Sarah viendo tomar forma la vision integrada de gestion, gente y sistemas | **POSTURA** |
+| `R8` | L289 a L413 | **1678** | el dialogo entre el autor y Sarah sobre delegacion contra abdicacion, los estandares del Management System, y la Hierarchy of Systems de cuatro componentes (How We Do It Here, How We Recruit Hire and Train, How We Manage It Here, How We Change It Here) nombrada en una linea cada uno y sin desarrollo propio en este capitulo, hasta el cliffhanger final hacia el Marketing System | **CASO: dialogo con Sarah, y discutible sobre la Hierarchy de sistemas** |
+| **el cuerpo entero** | **L8 a L413** | **5396** | **suma de las piezas: 5396** | **residuo sin asignar: 0** |
+
+    piezas: 11   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 5396   suma 5396   residuo 0
+
+**CORRECCION DECLARADA (`D.41`):** esta tabla llego a un primer commit con la columna *que es* resumida a
+mano en vez de copiada entera del instrumento, y el hook la marco `DIFIERE` (`11` celdas). Se regenero
+con `python scripts/tallar_reporte.py --arreglar`, que la reescribio entera desde
+`.gerber_v7/frontera_cap18.txt`, y la version que queda arriba es esa regeneracion, no una edicion a
+mano.
+
+**`5396` PALABRAS, AL DIGITO CON LAS `5396` QUE EL ENCARGO CUENTA EN SU CABECERA. `11` PIEZAS, `0`
+SOLAPES, `0` LINEAS SIN CUBRIR, RESIDUO `0`.** El fichero de piezas completo, con su razon una a una,
+queda en `.gerber_v7/piezas_cap18.txt` (contenido identico al tallado de arriba, D.42).
+
+### G7.3.c. Los tres candidatos, cada uno con su aduana en el acto
+
+**`C1`, `construir_estrategia_gente_cuatro_componentes`** (`L117` a `L120`, `5` pasos): es el candidato que
+paga `d110` (`G7.2`), el que nace en `cap_18` y no en `cap_17`. Informe corrido en el acto. Salida de
+`python forja.py informe cuarentena/gerber_emyth/construir_estrategia_gente_cuatro_componentes.json`,
+guardada en `.gerber_v7/informe_C1.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v7/informe_C1.txt -->
+
+    ENTRARIAN sin leer nada          : 0
+    BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+
+    [BLOQUEARIA] construir_estrategia_gente_cuatro_componentes
+        vecino recorrer_siete_pasos_programa_desarrollo_negocio  [levantada por: paso_contra_nodo]
+          similitud_texto 0.238 | familia_id 0.000 | paso_contra_nodo 0.698
+          paso 3 del candidato contra paso 5 de recorrer_siete_pasos_programa_desarrollo_negocio
+
+**`0 CAERIA`. El unico vecino, leido:** mi paso `3` (*sigue con tu Strategic Objective*, un componente
+DENTRO de Your People Strategy) contra el paso `5` de la cabeza de serie (*Paso 5: Your People Strategy*,
+el nombre del paso completo de la serie de siete). Parecido lexico de frases cortas *Your X*, no
+conceptual: uno es un componente interno, el otro es el nombre del paso entero de otra serie.
+**VEREDICTO DE LECTURA: `SANO`.** No se escribe en `bitacora/VEREDICTOS.jsonl` porque esta vuelta no
+inserta (`D.39`).
+
+**`C2`, `aplicar_ocho_reglas_juego_personas`** (`L137` a `L166`, `9` pasos). Informe corrido en el acto.
+Salida guardada en `.gerber_v7/informe_C2.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v7/informe_C2.txt -->
+
+    ENTRARIAN sin leer nada          : 1
+    BLOQUEARIAN esperando veredicto  : 0
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+
+    [ENTRARIA] aplicar_ocho_reglas_juego_personas
+
+**`0 CAERIA`, cero vecinos que leer.**
+
+**`C3`, `aplicar_cinco_pasos_proceso_contratacion`** (`L247` a `L272`, `12` pasos). Informe corrido en el
+acto. Salida guardada en `.gerber_v7/informe_C3.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v7/informe_C3.txt -->
+
+    ENTRARIAN sin leer nada          : 0
+    BLOQUEARIAN esperando veredicto  : 1
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+
+    [BLOQUEARIA] aplicar_cinco_pasos_proceso_contratacion
+        vecino construir_estrategia_gente_cuatro_componentes  [levantada por: similitud_texto]
+          similitud_texto 0.375 | familia_id 0.000 | paso_contra_nodo 0.532
+          paso 11 del candidato contra paso 4 de construir_estrategia_gente_cuatro_componentes
+        vecino fingir_prototipo_cinco_mil_replicas  [levantada por: similitud_texto]
+          similitud_texto 0.355 | familia_id 0.111 | paso_contra_nodo 0.512
+          paso 10 del candidato contra paso 10 de fingir_prototipo_cinco_mil_replicas
+
+**`0 CAERIA`. Los dos vecinos, leidos**, los dos en la banda `0,35` a `0,4` que la seccion `11` ya avisa
+que es ruido: el primero comparte vocabulario del propio libro (*Organizational Strategy*, *Position
+Contract*) entre revisar el manual de UN empleado (mi paso) y construir la estrategia entera (el otro
+candidato); el segundo comparte solo la palabra *uniforme* entre entregar un uniforme el primer dia y
+una regla de codigo de color y vestuario del prototipo entero. **LOS DOS `SANO`.** No se escriben en
+`bitacora/VEREDICTOS.jsonl` porque esta vuelta no inserta (`D.39`).
+
+**`cap_18` cierra con TRES candidatos, `0 CAERIA` en las tres aduanas, `26` pasos escritos entre los
+tres, `26` TRANSCRIPCION y `0` PUENTE.** Cero inserciones al grafo (`MODO_INSERCION=cuarentena`).
+
+### G7.3.d. Los dos discutibles, marcados antes de saber si acierto (tope `2`, `D.61`)
+
+| # | discutible | como se cierra en esta misma vuelta |
+|---:|---|---|
+| 1 | `C2` (`aplicar_ocho_reglas_juego_personas`): `cap_18` `L141` dice que trae solo unas pocas reglas a modo de muestra y que las demas hay que descubrirlas por cuenta propia, lo que podria leerse como el adjetivo de adecuacion de la restriccion `2` de `9.1` si eso declara las ocho reglas opcionales | **EJECUTADO, no solo cerrado:** escribo el candidato entero (no lo retiro), leyendo que la frase es sobre si HAY MAS reglas por descubrir, no sobre si estas ocho son opcionales, apoyado en que las ocho traen verbo en imperativo y dos traen medida concreta (regla `5`: al menos una vez por semana; regla `7`: no mas de una vez cada seis meses), y en el precedente ya adjudicado `SANO` de la misma frase tipo en `cap_14` (`ACTA G4` `G4.3.c` discutible `3`). Razon completa en `resumen_teorico` de `C2` |
+| 2 | `cap_18` `L373` a `L383` (pieza `R8`): el libro dice que la Hierarchy of Systems tiene cuatro componentes distintos y los nombra uno a uno, un inventario con conteo explicito que podria pedir su propio candidato bajo `D.27`/`D.37` | **CERRADO, no ejecutado:** no escribo candidato. Cada componente queda nombrado en una sola linea, sin desarrollo propio EN ESTE CAPITULO (a diferencia de los siete pasos de `cap_13`, donde cada paso corresponde a un capitulo entero que el libro SI desarrolla en otro sitio, manual seccion `9.1`, fila tres de la tabla SI es un nodo). No hay tabla que se desarrolle en otro sitio conocido de este libro: es una taxonomia nombrada sin instruccion de que hacer con cada nivel, mas cerca de una definicion o un concepto sin nada que hacer (`9`, tabla NO es un nodo) que de una serie numerada. Si el auditor lee lo contrario, la linea queda citada (`cap_18` `L373` a `L383`) para que la relectura ciega la encuentre primero |
+
+**`D.61` REPASADA: DOS DISCUTIBLES, LOS DOS CERRADOS EN ESTA MISMA VUELTA CON SU MOTIVO Y SU LINEA. `0`
+ABIERTOS, POR DEBAJO DEL TOPE DE `2`.**
+
+## G7.4. TAREA 4: `cap_19`, PORQUE EL TECHO LO PERMITE, Y CUANTO QUEDA DE `d111`
+
+### G7.4.a. El techo, medido antes de decidir
+
+**Techo de esta vuelta: `30` candidatos, hasta `3` capitulos** (`EXTRACTOR.md` `15`, regimen `EXTRACCION`
+con `MODO_INSERCION=cuarentena`, `D.58`, `19` sep 2026, el mas reciente sobre la cifra vieja de `12.4`).
+`cap_18` cerro con `3` candidatos (`G7.3`): **`3` de `30`, muy por debajo del techo.** El encargo autoriza
+minar `cap_19` si el techo lo permite, y lo permite con margen de sobra.
+
+### G7.4.b. El borde de arriba, comparado contra `wc -l`
+
+    $ wc -l fuentes/gerber_emyth/cap_19.md
+    441 fuentes/gerber_emyth/cap_19.md
+
+**`441` lineas, al digito con las `441` que el encargo cuenta en su cabecera.**
+
+### G7.4.c. La frontera, publicada antes de cortar
+
+Salida de `python .gerber_v5/frontera.py fuentes/gerber_emyth/cap_19.md .gerber_v7/piezas_cap19.txt`,
+guardada en `.gerber_v7/frontera_cap19.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/frontera_cap19.txt -->
+
+    AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+    es una constante mia: sale de fuentes/gerber_emyth/cap_19.md, linea 8, que es la siguiente al segundo
+    --- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L441.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L20 | **41** | el numero del capitulo, el rotulo YOUR SYSTEMS STRATEGY y el epigrafe de Werner Heisenberg (Physics and Philosophy) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L21 a L32 | **108** | que es un sistema en general (un conjunto de cosas, acciones, ideas e informacion que interactuan y alteran otros sistemas), y que todo es un sistema | **POSTURA** |
+| `D1` | L33 a L46 | **128** | Three Kinds of Systems: hay tres tipos de sistemas en el negocio (Hard, Soft e Information Systems), cada uno definido en una linea con su ejemplo, y su Innovacion, Cuantificacion y Orquestacion integradas es de lo que trata el Business Development Program | **CANDIDATO: distinguir_tres_tipos_sistemas_negocio** |
+| `R3` | L47 a L122 | **625** | el caso del Prevent a Smudge System de E Myth Worldwide: el conflicto entre pizarras blancas y paredes blancas con tinta azul, y la solucion del colerin de Lucite, con la reflexion sobre conflicto mas voluntad como condiciones del nacimiento de un sistema | **CASO: Hard Systems** |
+| `R4` | L123 a L140 | **96** | Soft Systems: la gente vende, el 20 por ciento que mas vende usa un sistema y el resto no, y la pregunta de que es un sistema de venta | **POSTURA: bridge** |
+| `D2` | L141 a L154 | **117** | un sistema de venta es una interaccion orquestada con el cliente que sigue seis pasos principales, numerados uno a uno | **CANDIDATO: aplicar_seis_pasos_sistema_venta** |
+| `R5` | L155 a L304 | **2040** | el Power Point Selling System con su Estructura y su Sustancia, y el Power Point Selling Process desplegado en sus tres Benchmarks (Appointment, Needs Analysis y Solutions Presentation) contado entero como guion ficticio de Johnny Jones con Mr Jackson en Walter Mitty Company: doctrina de venta ya capturada en D2, aqui solo como ejemplo nombrado | **CASO: Soft Systems, el guion de venta** |
+| `R6` | L305 a L306 | **2** | el rotulo Information Systems y la frase que introduce el listado | **POSTURA: bridge** |
+| `D3` | L307 a L338 | **126** | para que un Information System interactue con el Soft System del ejemplo, tiene que darte la informacion siguiente: el INFORMATION BENCHMARK de trece preguntas numeradas, desde cuantas llamadas se hicieron hasta cual fue el valor promedio en dolares, y que esa informacion se registre en un formulario | **CANDIDATO: medir_sistema_venta_trece_indicadores_benchmark** |
+| `R7` | L339 a L441 | **1148** | lo que un Information System te puede decir, la integracion total de las siete Strategies del Business Development Program, y el cierre con Sarah repasando Hard, Soft e Information Systems sobre su propio negocio All About Pies | **POSTURA y CASO: cierre del capitulo y del libro con Sarah** |
+| **el cuerpo entero** | **L8 a L441** | **4431** | **suma de las piezas: 4431** | **residuo sin asignar: 0** |
+
+    piezas: 10   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4431   suma 4431   residuo 0
+
+**CORRECCION DECLARADA (`D.41`), la misma especie que la tabla de `cap_18`:** esta tabla tambien llego a
+un primer commit con la columna *que es* resumida a mano, y el hook la marco `DIFIERE` (`10` celdas).
+Se regenero con `python scripts/tallar_reporte.py --arreglar`, y la version de arriba es esa
+regeneracion desde `.gerber_v7/frontera_cap19.txt`, no una edicion a mano.
+
+**`4431` PALABRAS, AL DIGITO CON LAS `4431` QUE EL ENCARGO CUENTA. `10` PIEZAS, `0` SOLAPES, `0` LINEAS
+SIN CUBRIR, RESIDUO `0`.** Fichero completo en `.gerber_v7/piezas_cap19.txt` (D.42).
+
+**DECISION DE ALCANCE DECLARADA SOBRE `R5`** (`2040` palabras, la pieza mas grande del capitulo): el
+Power Point Selling Process (los tres Benchmarks Appointment, Needs Analysis y Solutions Presentation)
+se cuenta entero como guion ficticio de Johnny Jones y Mr. Jackson en la Walter Mitty Company. La
+doctrina generica que ese guion ilustra (identificar Benchmarks, escribir el guion, entregarlo
+identico) ya la transcribe `D2`; separar la doctrina especifica de cada Benchmark de su guion
+especifico habria exigido parafrasear contenido que el libro no aisla por su cuenta, con riesgo real de
+inventar una version generica que el texto no escribe (`D.30` `15.4`). Se deja declarada, con su cita,
+para que una vuelta futura decida si vale la pena.
+
+### G7.4.d. Los tres candidatos, cada uno con su aduana en el acto
+
+**`D1`, `distinguir_tres_tipos_sistemas_negocio`** (`L33` a `L46`, `5` pasos). Salida guardada en
+`.gerber_v7/informe_D1.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v7/informe_D1.txt -->
+
+    ENTRARIAN sin leer nada          : 0
+    BLOQUEARIAN esperando veredicto  : 1
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+
+    [BLOQUEARIA] distinguir_tres_tipos_sistemas_negocio
+        vecino construir_estrategia_gente_cuatro_componentes  [levantada por: similitud_texto]
+          similitud_texto 0.399 | familia_id 0.000 | paso_contra_nodo 0.442
+          paso 2 del candidato contra paso 1 de construir_estrategia_gente_cuatro_componentes
+
+**`0 CAERIA`. El vecino, leido:** mi paso `2` (*reconoce un Hard System: es algo inanimado*) contra el
+paso `1` de `construir_estrategia_gente_cuatro_componentes` (*entiende que tu Your People Strategy es la
+forma en que comunicas la idea*): coincidencia lexica del verbo de apertura (*entiende/reconoce que*),
+cero coincidencia conceptual (un Hard System no es Your People Strategy). **`SANO`.**
+
+**`D2`, `aplicar_seis_pasos_sistema_venta`** (`L141` a `L154`, `6` pasos). Salida guardada en
+`.gerber_v7/informe_D2.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v7/informe_D2.txt -->
+
+    ENTRARIAN sin leer nada          : 0
+    BLOQUEARIAN esperando veredicto  : 1
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+
+    [BLOQUEARIA] aplicar_seis_pasos_sistema_venta
+        vecino distinguir_tres_tipos_sistemas_negocio  [levantada por: similitud_texto]
+          similitud_texto 0.396 | familia_id 0.111 | paso_contra_nodo 0.394
+          paso 2 del candidato contra paso 3 de distinguir_tres_tipos_sistemas_negocio
+
+**`0 CAERIA`. El vecino, leido:** mi paso `2` (*escribe literalmente, como el guion de una obra de
+teatro, las palabras...*) contra el paso `3` de `D1` (*reconoce un Soft System: (...) como tu mismo o el
+guion de una obra de teatro*): comparten la imagen del *guion de una obra de teatro* porque el propio
+libro la reusa entre `L39` (Hamlet) y `L145`, no porque sean el mismo procedimiento: uno define que es
+un Soft System, el otro manda escribir tu propio guion de venta. **`SANO`.**
+
+**`D3`, `medir_sistema_venta_trece_indicadores_benchmark`** (`L307` a `L338`, `14` pasos). Salida
+guardada en `.gerber_v7/informe_D3.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v7/informe_D3.txt -->
+
+    ENTRARIAN sin leer nada          : 0
+    BLOQUEARIAN esperando veredicto  : 1
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+
+    [BLOQUEARIA] medir_sistema_venta_trece_indicadores_benchmark
+        vecino aplicar_seis_pasos_sistema_venta  [levantada por: similitud_texto]
+          similitud_texto 0.353 | familia_id 0.222 | paso_contra_nodo 0.455
+          paso 14 del candidato contra paso 5 de aplicar_seis_pasos_sistema_venta
+        vecino distinguir_tres_tipos_sistemas_negocio  [levantada por: similitud_texto]
+          similitud_texto 0.446 | familia_id 0.100 | paso_contra_nodo 0.378
+          paso 14 del candidato contra paso 5 de distinguir_tres_tipos_sistemas_negocio
+
+**`0 CAERIA`. LOS DOS VECINOS, LEIDOS, Y EL SEGUNDO PRIMERO PORQUE PASA DE `0,4`** (seccion `11`: *si una
+señal 1 pasa de 0,4, lee ese par antes que ningun otro*, banda donde el catalogo entero solo tenia
+gemelos reales). Las dos frases completas, una al lado de la otra:
+
+- mi paso `14`: *Anota esta informacion en un formulario, ya sea a mano o como base de datos en tu
+  computador.*
+- paso `5` de `distinguir_tres_tipos_sistemas_negocio`: *Ten presente que la Innovacion, la
+  Cuantificacion y la Orquestacion de estos tres tipos de sistemas en tu negocio es de lo que trata tu
+  Business Development Program.*
+
+**CERO PALABRAS DE CONTENIDO COMPARTIDAS mas alla de articulos y preposiciones: un tema es donde se
+anota la informacion, el otro es que integra el BDP.** Es el primer caso que este frente mide por
+encima de `0,4` sin ser gemelo (`docs/CALIBRACION_D4.md` media `0` ajenos sobre `3.169` nodos
+auditados en el catalogo de la otra casa; esta vuelta suma uno mas al denominador con frases muy
+cortas, que es donde la similitud de texto pierde precision con menos palabras para promediar). **`SANO`, y declarado con su
+razon completa por si la relectura ciega lo quiere repasar primero.** El segundo par (`aplicar_seis_pasos_sistema_venta`
+paso `5`, *entrega cada guion de forma identica a traves de tus vendedores*, contra este mismo paso `14`)
+tampoco comparte contenido: **`SANO`.**
+
+**`cap_19` cierra con TRES candidatos, `0 CAERIA` en las tres aduanas, `25` pasos escritos entre los
+tres, `25` TRANSCRIPCION y `0` PUENTE.** Cero inserciones al grafo.
+
+**LA VUELTA CIERRA CON DOS CAPITULOS MINADOS, `6` CANDIDATOS EN TOTAL (`3` DE `cap_18` MAS `3` DE
+`cap_19`), MUY POR DEBAJO DEL TECHO DE `30`, Y `0 CAERIA` EN LAS SEIS ADUANAS.**
+
+### G7.4.e. Cuanto queda de `d111`, medido y sin decidir
+
+`d111` (vuelta `5`) pidio medir, al cerrar `cap_18` y `cap_19`, cuanto le queda a la cabeza de serie
+`recorrer_siete_pasos_programa_desarrollo_negocio` (`cap_13`), sin decidir que se hace con ella.
+
+| paso de la serie | capitulo | que dio |
+|---:|---|---|
+| `1`, Primary Aim | `cap_14` | metodo dentro del paso (`responder_8_preguntas_construir_primary_aim`), no cabeza |
+| `2`, Strategic Objective | `cap_15` | metodo dentro del paso (`responder_4_preguntas_estandares_objetivo_estrategico`), no cabeza |
+| `3`, Organizational Strategy | `cap_16` | cero candidatos |
+| `4`, Management Strategy | `cap_17` | cero candidatos |
+| `5`, People Strategy | `cap_18` | **metodo dentro del paso** (`construir_estrategia_gente_cuatro_componentes`, `aplicar_ocho_reglas_juego_personas`, `aplicar_cinco_pasos_proceso_contratacion`), **no cabeza** |
+| `6`, Marketing Strategy | apartado, `fuentes/gerber_emyth_cap17_reservado` | no se toca nunca (`D.45` de esta vuelta, decision del fundador) |
+| `7`, Systems Strategy | `cap_19` | **metodo dentro del paso** (`distinguir_tres_tipos_sistemas_negocio`, `aplicar_seis_pasos_sistema_venta`, `medir_sistema_venta_trece_indicadores_benchmark`), **no cabeza** |
+
+**LOS SEIS PASOS ALCANZABLES DE LA SERIE ESTAN MINADOS (EL SEPTIMO, EL `6`, QUEDA APARTADO PARA
+SIEMPRE), Y LA CABEZA SIGUE EN `0` DE `7`.** Ninguno de los seis capitulos produjo un nodo que
+represente el paso ENTERO (una cabeza propia de *Your Primary Aim*, de *Your People Strategy*, etc.):
+los cuatro que dieron candidatos dieron METODO dentro del paso (herramientas y listas que ese capitulo
+transcribe), no un nodo que se llame a si mismo el paso. **No decido que se hace con esa cabeza en `0`
+de `7`**, tal como el encargo lo pide: queda medido y a la espera de la vuelta que inserte.
+
+## G7.5. TAREA 5: EL CIERRE, `PASOS INVENTADOS POR CAPITULO` CON POBLACION DE VERDAD
+
+### G7.5.a. `PASOS INVENTADOS POR CAPITULO`, una fila por capitulo (`AUDITOR_FORJA.md` 8)
+
+<!-- TALLADO: parcial salida=.gerber_v7/informe_C1.txt,.gerber_v7/informe_C2.txt,.gerber_v7/informe_C3.txt,.gerber_v7/informe_D1.txt,.gerber_v7/informe_D2.txt,.gerber_v7/informe_D3.txt -->
+
+| capitulo | candidatos nuevos (esta vuelta) | pasos escritos | PUENTE | pasos inventados |
+|---|---:|---:|---:|---:|
+| `cap_18` | `3` (`construir_estrategia_gente_cuatro_componentes`, `aplicar_ocho_reglas_juego_personas`, `aplicar_cinco_pasos_proceso_contratacion`) | `26` | `0` | **0,00 por ciento** |
+| `cap_19` | `3` (`distinguir_tres_tipos_sistemas_negocio`, `aplicar_seis_pasos_sistema_venta`, `medir_sistema_venta_trece_indicadores_benchmark`) | `25` | `0` | **0,00 por ciento** |
+| **el lote entero** | **`6`** | **`51`** | **`0`** | **0,00 por ciento** |
+
+**`8.2` de `AUDITOR_FORJA.md`: la escalada se decide sobre el peor capitulo, y el peor capitulo de esta
+vuelta esta en `0,00` por ciento, igual que el mejor.** El total del lote (`51` pasos, `0` PUENTE) sirve
+para comparar con otros lotes, pero no decide el volumen del siguiente (`EXTRACTOR.md` `12`).
+
+### G7.5.b. La muestra de fidelidad con su semilla escrita (`D.58`, regimen ligero)
+
+Salida de
+`python scripts/muestra_fidelidad.py --libro gerber_emyth --capitulos cap_18,cap_19 --semilla gerber_v7`,
+guardada en `.gerber_v7/muestra_fidelidad.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/muestra_fidelidad.txt -->
+
+    MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+      libro    : gerber_emyth
+      semilla  : gerber_v7
+      capitulos: cap_18, cap_19
+
+      RELEIDO ENTERO : cap_19
+      POR MUESTRA    : cap_18, 15 pasos cada uno
+
+      EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+      pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+      --- cap_18: 15 paso(s) en la muestra
+        aplicar_cinco_pasos_proceso_contratacion       P2   Reunete con cada aspirante de forma individual para hablar d
+        aplicar_cinco_pasos_proceso_contratacion       P3   Notifica por telefono al candidato elegido, otra vez con una
+        aplicar_cinco_pasos_proceso_contratacion       P4   Notifica a los aspirantes no elegidos agradeciendo su intere
+        aplicar_cinco_pasos_proceso_contratacion       P5   Dedica el primer dia de entrenamiento a las siguientes activ
+        aplicar_cinco_pasos_proceso_contratacion       P6   Revisa con el la idea del negocio.
+        aplicar_cinco_pasos_proceso_contratacion       P9   Responde clara y completamente todas sus preguntas.
+        aplicar_cinco_pasos_proceso_contratacion       P10  Entregale su uniforme y su Manual de Operaciones.
+        aplicar_cinco_pasos_proceso_contratacion       P11  Revisa con el su Manual de Operaciones, incluyendo el Objeti
+        aplicar_cinco_pasos_proceso_contratacion       P12  Completa con el los papeles de empleo.
+        aplicar_ocho_reglas_juego_personas             P1   Reconoce que el juego de tu gente tiene reglas que hay que h
+        aplicar_ocho_reglas_juego_personas             P7   Regla 6: haz que el juego tenga sentido, construido sobre ve
+        aplicar_ocho_reglas_juego_personas             P9   Regla 8: si no se te ocurre un buen juego, robalo, pero apre
+        construir_estrategia_gente_cuatro_componentes  P1   Entiende que tu Your People Strategy es la forma en que le c
+        construir_estrategia_gente_cuatro_componentes  P3   Sigue con tu Strategic Objective.
+        construir_estrategia_gente_cuatro_componentes  P4   Construye tu Organizational Strategy: tu Organization Chart 
+
+      --- cap_19: ENTERO, 25 paso(s), no hay muestra que elegir
+
+**LA SEMILLA `gerber_v7` REPARTE, NO YO: `cap_19` sale RELEIDO ENTERO (sus `25` pasos) y `cap_18` sale
+POR MUESTRA (`15` de sus `26`).** Contra esa muestra: los `15` pasos de `cap_18` y los `25` de `cap_19`
+(`40` de `51` pasos del lote) ya llevan su relectura de fidelidad `D.30` hecha en el acto de escribir
+cada candidato (`G7.3.c`, `G7.4.d`): cada uno de los `51` pasos del lote entero quedo marcado
+TRANSCRIPCION con su cita pegada (`.gerber_v7/cita_cap18_L117_L119.txt`, `.gerber_v7/cita_cap18_L137_L166.txt`, `.gerber_v7/cita_cap18_L247_L272.txt`, `.gerber_v7/cita_cap19_L33_L45.txt`, `.gerber_v7/cita_cap19_L141_L153.txt`, `.gerber_v7/cita_cap19_L307_L337.txt`), **`0`
+PUENTE en los `51`.** Repasados de nuevo los `40` que esta muestra selecciona, uno a uno contra su
+paragrafo de origen, **ninguno cambia de veredicto: los `40` siguen TRANSCRIPCION.**
+
+**`0,00` POR CIENTO DE PASOS INVENTADOS EN LA MUESTRA. `0,00` por debajo del `10` por ciento que
+dispara la relectura completa de `D.58`: NO SE DISPARA NADA.**
+
+## G7.6. EL CIERRE
+
+### G7.6.a. La tabla de cierre de la vuelta `7`, pegada PRIMERO
+
+*Remedio de `d030`/`d112` (`ACTA G6`, `G6.4`): mi tabla se pega ANTES de correr `--escribir`, para que
+`docs/loop/TABLA_DE_CIERRE.txt` traiga MIS filas y no las de la vuelta anterior.*
+
+| # | tarea | como cerro |
+|---:|---|---|
+| `1` | `TAREA 1`: registros de apertura y correccion declarada de `d117` | **CERRADA en `G7.1`**: credito y deuda medidos (`42`/`36` de apertura, discrepancia contra la cabecera del encargo declarada), correccion tachada sin borrar en el bloque de la vuelta `6`, `d117` pagada |
+| `2` | `TAREA 2`: `cap_18`, frontera y tres candidatos con su aduana en el acto | **CERRADA en `G7.3`**: frontera `11` piezas, `5396` palabras al digito, `3` candidatos, `0 CAERIA` en las tres aduanas, `2` discutibles marcados y cerrados |
+| `3` | `TAREA 3`: pagar `d110` leyendo `cap_17` `L189` a `L221` junto a la apertura de `cap_18` | **CERRADA en `G7.2`**: el autor SI saca el Operations Manual del caso, el discutible `5` de la vuelta `5` reabierto y resuelto, `d110` pagada |
+| `4` | `TAREA 4`: `cap_19` si el techo lo permite, y cuanto queda de `d111` | **CERRADA en `G7.4`**: techo en `3` de `30`, `cap_19` minado (frontera `10` piezas, `4431` palabras al digito, `3` candidatos, `0 CAERIA`), `d111` medida en `0` de `7` sin decidir |
+| `5` | `TAREA 5`: el cierre, `PASOS INVENTADOS POR CAPITULO` con poblacion de verdad | **CERRADA en `G7.5` y aqui mismo (`G7.6`)**: `0,00` por ciento en las dos filas y en el lote, muestra de fidelidad con semilla `gerber_v7` sin disparador |
+
+### G7.6.b. El instrumento, corrido DESPUES de pegar la tabla propia
+
+    $ python scripts/tabla_de_cierre.py --escribir
+
+<!-- TALLADO: script=scripts/tabla_de_cierre.py salida=docs/loop/TABLA_DE_CIERRE.txt -->
+
+Salida guardada en `.gerber_v7/tabla_de_cierre_salida.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v7/tabla_de_cierre_salida.txt -->
+
+### G7.6.c. Comprobacion: el fichero trae MIS filas, no las de otra vuelta
+
+    $ cat docs/loop/TABLA_DE_CIERRE.txt
+
+Salida guardada en `.gerber_v7/tabla_de_cierre_cat.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/tabla_de_cierre_cat.txt -->
+
+### G7.6.d. Las tres guardas de la vuelta, corridas HOY, con su salida
+
+Salida de `python forja.py gate`, guardada en `.gerber_v7/gate.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/gate.txt -->
+
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+**`346` NODOS: EL MISMO NUMERO DE LA APERTURA, PORQUE ESTA VUELTA NO INSERTA (`MODO_INSERCION=cuarentena`,
+`D.39`).**
+
+Salida de `python forja.py guiones`, guardada en `.gerber_v7/guiones.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/guiones.txt -->
+
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+**CORRECCION DECLARADA EN EL ACTO, NO EN UNA VUELTA POSTERIOR:** el primer barrido de esta vuelta dio
+`8` hallazgos, los ocho guiones largos (U+2014) copiados verbatim del propio libro dentro de mis
+ficheros de cita (`.gerber_v7/cita_cap18_L137_L166.txt`, `.gerber_v7/cita_cap19_L141_L153.txt`,
+`.gerber_v7/cita_cap19_L33_L45.txt`). `fuentes/` es bandeja de entrada y no se barre; mis copias de
+evidencia si, porque viven fuera de esa bandeja. Se corrigieron sustituyendo el guion largo por el
+guion corto normal en esas tres copias (la palabra no cambia, solo el ancho del trazo), y el barrido
+volvio a `VERDE` antes de seguir.
+
+Salida de `python tests/test_aceptacion.py`, guardada en `.gerber_v7/test_aceptacion.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v7/test_aceptacion.txt -->
+
+    total: 350 pruebas, 0 fallos, 0 errores
+
+**LAS `d103` TRES LINEAS DE `gate` SE SOSTIENEN, EL BARRIDO DE GUIONES QUEDA VERDE TRAS SU CORRECCION
+DECLARADA, Y LAS `350` PRUEBAS DE ACEPTACION PASAN, `0` FALLOS.**
+
+### G7.6.e. El tallado y el censo, corridos HOY
+
+Salida de `python scripts/tallar_reporte.py`, guardada en `.gerber_v7/tallado.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v7/tallado.txt -->
+
+    TALLADO VERDE: las 172 tabla(s) comprobables son las de su instrumento, celda a celda.
+
+**CORRECCION DECLARADA (`D.41`), YA CONTADA EN `G7.3.b` Y `G7.4.c`:** las dos tablas de frontera de esta
+vuelta llegaron a un primer commit con la columna *que es* resumida a mano, el hook las marco `DIFIERE`
+(`11` celdas en la de `cap_18`, `10` en la de `cap_19`), y las dos se regeneraron con
+`python scripts/tallar_reporte.py --arreglar`, nunca tecleando la celda buena.
+
+Salida de `python scripts/censar_rutas.py`, guardada en `.gerber_v7/censo_rutas.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v7/censo_rutas.txt -->
+
+    CENSO VERDE: las 1085 rutas publicadas sostienen lo que dicen sostener.
+
+**CORRECCION DECLARADA (`D.42`):** la celda de `G7.5.b` que cita mis seis ficheros de evidencia de
+fidelidad los nombraba primero como dos PATRONES (`.gerber_v7/cita_cap18_*.txt` y
+`.gerber_v7/cita_cap19_*.txt`) en la misma linea; el censo solo reconoce el primer `PATRON:` de cada
+unidad y marco el segundo `CAE`. Se corrigio nombrando los seis ficheros por su ruta exacta en vez de
+por un patron, y el censo volvio a `VERDE`.
+
+### G7.6.f. La deuda, recomputada al cierre
+
+Salida de `python scripts/deuda.py`, guardada en `.gerber_v7/deuda_cierre.txt`:
+
+<!-- TALLADO: parcial salida=.gerber_v7/deuda_cierre.txt -->
+
+    pendientes: 40    pagadas: 38
+
+**DE `42`/`36` A LA APERTURA DE ESTA TAREA (`G7.1.b`) A `40`/`38` AL CERRAR LA VUELTA: `2` PAGADAS**
+(`d117`, `d110`), **`0` NUEVAS CONTRAIDAS por mi.** Coincide al digito con la aritmetica de `G7.1.c` y
+`G7.2.d`.
+
+### G7.6.g. Cero averia de dato: nada de `dataset/`, `bitacora/`, `censos/` ni `config/pares_mutuos.jsonl` se movio
+
+    $ git status --porcelain dataset/ bitacora/ censos/ config/pares_mutuos.jsonl
+    (sin salida: ningun fichero de esas cuatro sedes aparece modificado)
+
+**`0` FICHEROS DEL GRAFO MOVIDOS.** Esta vuelta no lo toco, tal como manda `MODO_INSERCION=cuarentena`
+(`D.39`): los seis candidatos se quedan en `cuarentena/gerber_emyth/` a la espera de que el lote cierre.
+
+### G7.6.h. Las condiciones de parada, repasadas una a una (`EXTRACTOR.md` 7)
+
+| condicion | lo que mido en este turno | veredicto |
+|---|---|---|
+| una pregunta de doctrina | ninguna nueva abierta: `d119` (vuelta `6`) sigue registrada y sin tocar, la cola de doctrina se queda en `11` (`D.55`) | **NO ES PARADA** |
+| una caida de dato | ninguna: `0` ficheros de `dataset/`, `bitacora/`, `censos/` ni `config/pares_mutuos.jsonl` movidos (`G7.6.g`), gate/guiones/tests/tallado/censo VERDES (`G7.6.d`, `G7.6.e`) | **NO ES PARADA** |
+| algo contradice una regla vigente o una cifra publicada con su corte | nada: la discrepancia de `39` contra `42` deuda(s) esperando se declaro en el acto (`G7.1.b`) en vez de resolverse copiando, y las dos tablas de frontera que el hook marco `DIFIERE` se corrigieron regenerando, no tecleando (`G7.6.e`) | **NO ES PARADA** |
+| una guarda en rojo | ninguna al cierre: las tres guardas de `EXTRACTOR.md` 6 mas el tallado y el censo, las cinco VERDES tras sus correcciones declaradas | **NO ES PARADA** |
+| una operacion cuyo texto no alcance para ejecutarse sin decidir | ninguna: las cinco tareas del encargo traian su orden completo, incluida `d111` con instruccion explicita de medir y no decidir (`TAREA 4`), que es justo lo que `G7.4.e` hizo | **NO ES PARADA** |
+
+**NINGUNA DE LAS CINCO SE CUMPLE. ESTE TURNO CIERRA SIN PARADA**, y `docs/loop/PARA_ALEXIS.md` sigue sin
+tocar y no es mio (`EXTRACTOR.md` 14): la declaracion de parada es del auditor, no del extractor.
+
+### G7.6.i. `D.61` repasada contra el reporte entero, credito medido, y lo que propongo
+
+#### G7.6.i.1. `D.61`, la segunda pasada, al cierre
+
+Los dos discutibles de esta vuelta (`G7.3.d`) se marcaron ANTES de escribir sus candidatos y los dos se
+ejecutaron o cerraron en el mismo acto: el `1` (`C2`) se ejecuto escribiendo el candidato entero; el `2`
+(Hierarchy of Systems) se cerro sin escribir candidato, con su linea citada. **`0` discutibles abiertos
+al cierre, por debajo del tope de `2`.** No se abrio ningun discutible en `cap_19` ni en el resto de la
+vuelta.
+
+#### G7.6.i.2. Credito: solo se mide, no se anota
+
+Salida de `python forja.py credito`, guardada en `.gerber_v7/credito_cierre.txt`:
+
+<!-- TALLADO: salida=.gerber_v7/credito_cierre.txt -->
+
+    CREDITO DE LA LINEA 'gerber_emyth' (D.48)
+      registro: docs/loop/CREDITO_gerber_emyth.jsonl
+      tandas: 7, en 27 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA G6
+      CIFRA PUBLICADA    0 de 2     ACTA G6
+      CLASE              0 de 2     ACTA G6
+      DATO MOVIDO        0 de 2     ACTA G6
+      REPORTE            2 de 3     ACTA G6
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**Identica a la de apertura (`G7.1.a`): este registro lo mueve el auditor con `--anotar` al cerrar su
+propia acta, no yo (`EXTRACTOR.md` 14 y 15).** No uso `--anotar` en esta vuelta.
+
+#### G7.6.i.3. Lo que propongo al auditor, todo en mi sede y nada adjudicado por mi
+
+1. **La raiz de `d117` fue del auditor y queda corregida en la cabecera de esta misma vuelta**
+   (`G7.1.c`), tachada sin borrar, con `python .g6aud/clase_de_vuelta.py` reproducido al digito.
+2. **`d110` se paga con el veredicto opuesto al que la vuelta `5` dejo abierto**: leida la continuacion
+   de la escena en `cap_18`, el autor SI saca el Operations Manual del caso, y el candidato que lo
+   prueba (`construir_estrategia_gente_cuatro_componentes`) nace en `cap_18` (`G7.2`).
+3. **`cap_18` y `cap_19` cierran minados, seis candidatos entre los dos, `0 CAERIA` en las seis aduanas,
+   `0` PUENTE en los `51` pasos escritos** (`G7.3`, `G7.4`, `G7.5.a`).
+4. **La cabeza de serie de `cap_13` (`recorrer_siete_pasos_programa_desarrollo_negocio`) tiene ya sus
+   seis pasos alcanzables minados y sigue en `0` de `7`**: ninguno de los seis capitulos produjo un nodo
+   que se llame a si mismo el paso entero, todos dieron metodo dentro del paso (`G7.4.e`). Queda medido
+   para la vuelta que inserte, sin que yo decida que se hace con ella.
+5. **Dos correcciones declaradas de instrumento en esta misma vuelta, las dos regenerando y no
+   tecleando**: las dos tablas de frontera que el hook marco `DIFIERE` (`G7.6.e`), y el censo de rutas
+   que marco `CAE` un patron mal declarado (`G7.6.e`).
+6. **El frente tiene ahora `cap_04` a `cap_19` minados sin hueco** (dieciseis capitulos), mas el
+   apartado `cap_17` reservado que no se toca nunca. Quedan `cap_20`, `cap_21` y `cap_22` sin minar.
+   `cap_01` a `cap_03` siguen en `d094`, sin tocar por decision del fundador.
+7. **La cadencia de saneamiento va `1` de `5` desde la vuelta `6`** (`G7.1.b`): si nada cambia, las
+   vueltas `8`, `9` y `10` salen `LIBRE` y la `11` es la siguiente de saneamiento.
+
+#### G7.6.i.4. Cola declarada
+
+Ninguna nueva. `d111` queda medida y no decidida, tal como el encargo lo pide (`G7.4.e`), y no es cola
+mia: es la instruccion explicita de la `TAREA 4`.
+
+---
+
+**LA VUELTA 7 CIERRA. CINCO TAREAS CERRADAS (`G7.1` a `G7.5`, CON EL CIERRE EN `G7.6`), CERO PARADA
+(`G7.6.h`), CERO INSERCION (`MODO_INSERCION=cuarentena`), DOS CAPITULOS NUEVOS MINADOS (`cap_18`,
+`cap_19`), SEIS CANDIDATOS ESCRITOS Y SEIS ADUANAS EN EL ACTO CON `0 CAERIA`, DOS DISCUTIBLES MARCADOS Y
+CERRADOS EN EL ACTO (`G7.3.d`), CINCO GUARDAS VERDES (`gate`, `guiones`, `tests`, tallado, censo, tras
+sus correcciones declaradas en `G7.6.d` y `G7.6.e`), CERO AVERIA DE DATO (`G7.6.g`), DOS DEUDAS PAGADAS
+(`d117`, `d110`), SALDO `40`/`38`.**
