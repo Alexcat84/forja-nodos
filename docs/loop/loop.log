@@ -1172,3 +1172,18 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-21 15:56:42]   tablero puesto al dia al cerrar la vuelta 5 (d102)
 [2026-09-21 15:56:43] DETENIDO en la vuelta 6: existe docs/loop/PARA_ALEXIS.md. Leelo.
 [2026-09-21 15:56:43] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-21 17:46:28] arranque: rama extraccion-gerber_emyth, MODO_INSERCION=cuarentena
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : gerber_emyth
+  libro que declara el encargo : gerber_emyth
+  libro que el orden le da (D.51): gerber_emyth
+    'gerber_emyth' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: gerber_emyth                   EN CURSO               lo trabaja 'gerber_emyth'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-21 17:46:29]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-21 17:46:29] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-21 17:46:29]   ultimo commit de REPORTE.md      : 2026-09-21 15:32:45 (1790019165)
+[2026-09-21 17:46:29]   ultimo commit de ACTA_AUDITOR.md : 2026-09-21 15:55:20 (1790020520)
+[2026-09-21 17:46:29] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-21 17:46:29] VUELTA 1 : EXTRACTOR (claude-sonnet-5)
