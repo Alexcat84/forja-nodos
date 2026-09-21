@@ -1116,3 +1116,17 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-21 12:39:03] extractor listo (USD 8.971043100000001), 1577s, intento 1 de 7
 [2026-09-21 12:39:03] VUELTA 2 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
 [2026-09-21 12:39:03] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-21 13:06:17] auditor listo (USD 13.860446), 1634s, intento 1 de 7
+[2026-09-21 13:06:17]   sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)
+[2026-09-21 13:06:17]   tablero puesto al dia al cerrar la vuelta 2 (d102)
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : gerber_emyth
+  libro que declara el encargo : gerber_emyth
+  libro que el orden le da (D.51): gerber_emyth
+    'gerber_emyth' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: gerber_emyth                   EN CURSO               lo trabaja 'gerber_emyth'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-21 13:06:18]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-21 13:06:18] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-21 13:06:18] VUELTA 3 : EXTRACTOR (claude-sonnet-5)
