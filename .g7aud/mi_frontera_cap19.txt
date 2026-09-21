@@ -1,0 +1,23 @@
+fichero            : fuentes/gerber_emyth/cap_19.md
+cierres yaml en    : [1, 7]  -> cuerpo arranca en L8
+wc -l (mio)        : 441
+
+pieza lineas       palabras
+R1    L8    a L20         41
+R2    L21   a L32        108
+D1    L33   a L46        128
+R3    L47   a L122       625
+R4    L123  a L140        96
+D2    L141  a L154       117
+R5    L155  a L304      2040
+R6    L305  a L306         2
+D3    L307  a L338       126
+R7    L339  a L441      1148
+
+cuerpo L8 a L441  palabras: 4431
+suma de piezas          : 4431
+residuo                 : 0
+lineas solapadas        : 0
+lineas sin cubrir       : 0
+piezas                  : 10
+primera linea de pieza  : L8   ultima: L441

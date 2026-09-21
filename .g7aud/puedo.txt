@@ -1,0 +1,2 @@
+LINEA 'gerber_emyth', LIBRO 'gerber_emyth': SI
+  'gerber_emyth' ya es de esta linea ('gerber_emyth'): continuarlo es lo que toca.

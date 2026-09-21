@@ -1,175 +1,182 @@
-# ENCARGO DE LA VUELTA 7 DEL FRENTE `gerber_emyth`: **VUELTA DE EXTRACCION**, `cap_18` y `cap_19`, y la mitad de `d111` que se juega ahi
+# ENCARGO DE LA VUELTA 8 DEL FRENTE `gerber_emyth`: **VUELTA DE EXTRACCION**, los TRES capitulos que le quedan al lote 9
 
 *Linea **`gerber_emyth`** (`extraccion-gerber_emyth`, worktree
 `C:/Users/AlexDesk/Documents/forja-gerber_emyth`). **Escrito por el auditor del bucle** al cerrar la
-`ACTA G6`, que audita tu vuelta `6`.*
+`ACTA G7`, que audita tu vuelta `7`.*
 
 > # **LIBRO DE ESTA VUELTA: gerber_emyth**
 > # **CLASE DE ESTA VUELTA: EXTRACCION**
 
 **Commitea y pushea lo pendiente en la rama activa antes de tocar nada.**
 
-**LA CADENCIA LA DICE EL INSTRUMENTO Y EL COMANDO LLEVA EL NUMERO DE ESTA VUELTA**, que es justo lo
-que el encargo anterior hizo mal (`ACTA G6` `5.1`):
+**LA CADENCIA LA DICE EL INSTRUMENTO Y EL COMANDO LLEVA EL NUMERO DE ESTA VUELTA**, corrido por mi
+**despues** de anotar mis cinco deudas, que es la correccion de mi propio fallo de la vuelta pasada
+(`ACTA G7` `5`, segundo parrafo):
 
-    $ python scripts/deuda.py --clase 7
+    $ python scripts/deuda.py --clase 8
     LIBRE
-      van 1 de 5 desde la ultima de saneamiento (la 6), con 39 deuda(s) esperando
+      van 2 de 5 desde la ultima de saneamiento (la 6), con 45 deuda(s) esperando
 
-**`LIBRE` no es una clase: es la ausencia de obligacion.** La cadencia se reinicio con tu vuelta `6`,
-asi que la clase la elige este encargo segun el libro, y la elige **`EXTRACCION`**.
+**`LIBRE` no es una clase: es la ausencia de obligacion de sanear.** La cadencia se reinicio con tu
+vuelta `6`, asi que la clase la elige este encargo segun el libro, y la elige **`EXTRACCION`**.
+
+**Y EL TABLERO DA PERMISO** (`D.49`, `D.51`):
+
+    $ python forja.py tablero --puedo gerber_emyth
+    LINEA 'gerber_emyth', LIBRO 'gerber_emyth': SI
+      'gerber_emyth' ya es de esta linea ('gerber_emyth'): continuarlo es lo que toca.
 
 ---
 
 ## 0. COMO TE FUE, EN UNA TABLA, PARA QUE NO TENGAS QUE LEER EL ACTA ENTERA
 
-| lo que mide la `ACTA G6` | resultado |
+| lo que mide la `ACTA G7` | resultado |
 |---|---|
-| las `7` piezas de `cap_15` con la celda ya corregida, recompuestas con codigo que no es el tuyo | **las `7` al digito**, residuo `0`, `0` solapes, `0` sin cubrir, **y `R7` acaba ya en la ultima linea real** |
-| que la correccion fuese quirurgica | **`4` lineas borradas del reporte y ninguna mas**, `D.41` cumplida por donde pica |
-| tus tres pagos (`d102`, `d103`, `d112`) | **los tres reproducen y los tres se firman** |
-| tus dos deudas dejadas vivas (`d106`, `d107`) | **las dos se sostienen con su razon**, y `d107` por el motivo cierto: `1` candidato en la vuelta `5` |
-| las ocho que no pagas | **los ocho motivos se sostienen**, repasados uno a uno |
-| el duplicado de `DEUDA.jsonl` que declaraste tu mismo | **NO es `DATO MOVIDO`**, y se te firma la declaracion: `1` linea en el registro, `4` en el commit |
-| `PASOS INVENTADOS POR CAPITULO` | **cero poblacion**, `0` capitulos minados y `0` pasos escritos, publicado con su medida |
-| tus cinco rachas | `CIFRA PUBLICADA`, `CLASE`, `DATO MOVIDO` y `AUDITOR` en `0`; **`REPORTE` sube a `2 de 3`** |
+| las `21` piezas de tus dos fronteras, recompuestas con codigo que no es el tuyo | **las `21` al digito**, `5396` y `4431`, residuo `0`, `0` solapes, `0` sin cubrir, **y las dos acaban en la ultima linea real** |
+| tus `51` pasos, contados ficha a ficha y **leidos uno a uno** contra su parrafo, no por muestra | **`26` y `25` al digito, `0` PUENTE en los `51`** |
+| `PASOS INVENTADOS POR CAPITULO` | **te FIRMO las dos filas en `0,00` por ciento**, y el total del lote |
+| tus seis informes de aduana, re corridos por mi | **los seis `0 CAERIA`**, cuatro identicos al milesimo y dos con vecinos de mas **por el orden, no por discrepancia** |
+| tu muestra de fidelidad con semilla `gerber_v7` | **identica byte a byte** (`diff` vacio) |
+| tus dos discutibles marcados | **los dos se sostienen**, y al segundo le aniado la linea que lo separa de su gemelo aparente (`cap_19` `L45`) |
+| `d110` y `d117` | **las dos pagadas de verdad**, la correccion de `d117` tachada sin borrar donde tocaba |
+| ficheros de dato o de maquinaria movidos | **`0`**, medido con `git diff` entre tus dos commits |
+| tus cinco rachas | **las cinco en `0`**. `REPORTE` **baja de `2 de 3` a `0 de 3`** |
 
-> ### **LO QUE SE CAE ES LA CABECERA, Y LA RAIZ ES MIA**
+> ### **LO QUE SE CAE ES UN ORDINAL, Y NO ACUMULA**
 >
-> Tu bloque abre diciendo que la clase te la dicto `python scripts/deuda.py --clase 5` citando `G6.1`, y
-> que la linea *va `4` de `5`*. **El rotulo `SANEAMIENTO` es cierto**, pero **ese comando imprime
-> `LIBRE`**, `G6.1` **no trae ninguna salida de `--clase`** (`ls .gerber_v6/ | grep -c clase` da `0`), y
-> en la vuelta `6` la cuenta es **`5` de `5`**, no `4` de `5`. **Una cuenta de `4` de `5` no alcanza una
-> cadencia de `5`: la frase justifica el rotulo con el numero que lo desmiente.** Y ese `4` de `5` esta
-> **copiado de `REPORTE.md` `59300`**, que es el reporte de tu vuelta anterior, y `EXTRACTOR.md` `5` dice
-> que una nota vieja **nunca** es fuente de una cifra nueva. **Vive en CABECERA, y `5.2` dice que en
-> cabecera acumula.**
+> Tu `G7.4.d` dice del par de `0.446`: *es el primer caso que este frente mide por encima de `0,4` sin
+> ser gemelo*. **Este mismo fichero ya traia dos**, los dos de tu vuelta `4` y los dos adjudicados
+> `SANO`: `0.489` y `0.430` (`REPORTE.md` `58285` y `58288`, tabla de lectura en `58293`). **Y mi re
+> corrida levanta un cuarto**, `0.451`, que tu informe no pudo ver porque el vecino se escribio
+> despues. **Tu lectura del par se sostiene entera y te la firmo: lo falso es el ordinal, no el
+> veredicto.**
 >
-> **LA RAIZ ES MIA Y VA DECLARADA ANTES QUE LA TUYA** (`ACTA G6` `5.1`): yo te puse ese comando delante
-> en dos sedes. **Queda anotado como `d117` y corregido en este encargo**, que escribe `--clase 7`.
->
-> **Y CAE UNA SEGUNDA, QUE NO SUMA OTRO ESCALON PORQUE LA RACHA CUENTA TANDAS:** tu `G6.6` dice *las
-> nueve filas de la tabla de deuda* y la tabla del encargo tenia **`12`**. La declaro sin cargarla
-> aparte, porque existe una lectura en la que `nueve` es cierto (las nueve que no se pagan).
+> **VIVE EN PROSA DE ACOMPANIAMIENTO**, no en tabla ni en cabecera ni en la conclusion, **asi que
+> `5.2` dice que NO acumula**, y `5.4` dice que una tanda con caidas solo de las que no acumulan
+> **reinicia la racha igual**. **`REPORTE` vuelve a `0 de 3`.** Queda anotada como `d122`.
 
-> ### **LO QUE ESTO SIGNIFICA PARA TI, EN UNA LINEA**
+> ### **Y LO QUE CORRIJO ES MIO, NO TUYO**
 >
-> **`REPORTE` va `2 de 3`. Un escalon mas y el bucle para.** Y las dos caidas de esta tanda son la
-> misma especie: **una frase de cabecera o de tabla que nombra un instrumento sin haberlo corrido en
-> esta vuelta.** No es un problema de lectura del libro: es de escritura del reporte.
+> Tu celda de `G7.4.e` dice del paso `6` de la serie *no se toca nunca (`D.45`)*. **`D.45` no dice
+> eso** (es el paralelo que extrae contra el serial que inserta) **y la regla que si aparta ese
+> material dice otra cosa**: `ORDEN_DE_LOTES.md` linea `27`, lote `11`, **`RESERVADO. Entra el
+> ultimo`**. **Pero la palabra `nunca` sale de mi encargo**, asi que la declaro sin cargartela (`d123`)
+> y **la corrijo aqui, que es donde nacio**: el material del paso `6` **entra el ultimo, y no lo toca
+> este frente**. Las dos cosas, y en ese orden.
 
 ---
 
-## 1. TAREA `1`: **LOS REGISTROS, Y UNA SOLA FRASE DE REMEDIO QUE TE VAS A ESCRIBIR TU**
+## 1. TAREA `1`: **LOS REGISTROS, Y UNA CORRECCION DECLARADA DE UNA LINEA**
 
-1. **Registra en tu reporte** que la `ACTA G6` deja `REPORTE` en `2 de 3` y las otras cuatro rachas en
-   `0`. **Mide el credito y pega la salida**, no la copies de aqui:
+1. **Registra en tu reporte** que la `ACTA G7` deja **las cinco rachas en `0`**. **Mide el credito y
+   pega la salida**, no la copies de aqui:
 
         python forja.py credito
 
-2. **Escribe la deuda de apertura y su salida**, que hoy sale de `39`, y con mis tres anotadas sube:
+2. **Escribe la deuda de apertura con su salida**, que hoy sale de `45` pendientes y `38` pagadas:
 
         python scripts/deuda.py
 
-3. **LA CORRECCION DECLARADA QUE TE PIDO, Y ES DE UNA LINEA:** en el bloque de tu vuelta `6`, junto a la
-   cabecera, **tacha sin borrar** la frase *dictada por el instrumento y no por mi lectura (`python
-   scripts/deuda.py --clase 5`, `G6.1`)* y escribe al lado el comando que si la dicta (`--clase 6`) con
-   su salida, y la nota de que la cifra `4` de `5` era de la vuelta anterior. **Esa frase vive en prosa
-   dentro de una cita de bloque, no en tabla tallada**, asi que aqui **si se tacha y no se regenera**:
-   es el caso contrario al de tu `TAREA 1` de la vuelta `6`.
+3. **LA CORRECCION DECLARADA, Y ES DE UNA CELDA:** en la tabla de tu `G7.4.e`, la fila del paso `6`
+   dice *no se toca nunca (`D.45` de esta vuelta, decision del fundador)*. **Tachala sin borrarla** y
+   escribe al lado lo que la regla vigente dice, con su cita de linea:
 
-   **La salida que necesitas ya esta corrida y reproducible**, y esta en mi carpeta:
+        $ grep -n "cap17_reservado" docs/loop/ORDEN_DE_LOTES.md | head -1
+        27:| **11** | `gerber_emyth_cap17_reservado` | 1 | 3.845 | **RESERVADO. Entra el ultimo** |
 
-        python .g6aud/clase_de_vuelta.py
+   **Es prosa dentro de una celda, no una tabla tallada desde un instrumento**, asi que **aqui se
+   tacha y no se regenera**. **Y paga `d123`** con `python scripts/deuda.py --pagar d123 --vuelta 8
+   --como "..."` y la salida pegada.
 
-   **Si tocas la tabla tallada de al lado, el tallado aborta el commit. No la toques.**
-
-> **NO TE PIDO NINGUN REMEDIO MAS.** `D.55` deja **una** tarea bloqueante y solo con guarda de DATO en
-> rojo; **no tengo ninguna en rojo, asi que esta no es bloqueante**: es el primer punto de la `TAREA 1`
-> y se cierra en diez minutos. **Lo demas de lo que encontre esta en `d117`, `d118` y `d119`, agendado,
-> no encargado.**
+> **NO TE PIDO NINGUN REMEDIO MAS Y NO HAY NINGUNA TAREA BLOQUEANTE.** `D.55` deja **una** y solo con
+> guarda de DATO en rojo; **no tengo ninguna en rojo**. Lo demas de lo que encontre esta en `d122`,
+> `d124`, `d125` y `d126`, **agendado, no encargado**.
 
 ---
 
-## 2. TAREA `2`: **`cap_18`, LA FRONTERA PUBLICADA ANTES DE CORTAR**
+## 2. TAREA `2`: **`cap_20`, `A Letter to Sarah`**
 
-**`cap_18`** (`Cap. 16`, *Your People Strategy*, **`5396`** palabras de cuerpo, **`413`** lineas,
-contadas por mi). Es el **paso `5`** de la serie de siete de `cap_13`.
+**`cap_20`** (`Cap. 19`, *A Letter to Sarah*, **`1841`** palabras de cuerpo, **`79`** lineas, contadas
+por mi con el cuerpo arrancando en `L8`).
 
-1. **Publica la frontera pieza por pieza antes de extraer nada**, con el mismo instrumento que vienes
-   usando (`.gerber_v5/frontera.py` y su fichero de piezas), y **pega la tabla entera**. Que la suma de
-   piezas cuadre con el cuerpo, con **residuo `0`**, **`0` solapes** y **`0` lineas sin cubrir**.
+1. **Publica la frontera pieza por pieza antes de extraer nada**, con el instrumento que vienes usando
+   (`.gerber_v5/frontera.py` y su fichero de piezas), y **pega la tabla entera**. Residuo `0`, `0`
+   solapes, `0` lineas sin cubrir.
 
    > **Y EL BORDE DE ARRIBA LO COMPARAS TU CONTRA `wc -l`**, porque la guarda no lo hace (`d109`, y la
-   > moratoria sigue en pie). **Es la caida que la `ACTA G5` te cargo y que la `6` corrigio: no la
-   > repitas en un capitulo nuevo.**
+   > moratoria sigue en pie). **Las dos fronteras de tu vuelta `7` lo cumplieron y te lo firme: no lo
+   > pierdas en la que cierra el libro.**
 
 2. **Cada candidato pasa por la aduana en el mismo acto en que se escribe** (`EXTRACTOR.md` `16`), con
    su informe pegado. **Cero inserciones al grafo** (`MODO_INSERCION=cuarentena`, `D.39`).
 
 3. **Marca tus discutibles ANTES de saber si aciertas**, con su numero y su linea. **Tope `2` abiertos**
-   (`D.61`), y **cada uno se ejecuta o se cierra con su motivo y la linea delante en esta misma vuelta**.
+   (`D.61`), y cada uno **se ejecuta o se cierra con su motivo y la linea delante en esta misma vuelta**.
+
+> **ES UNA CARTA, Y ESO NO DECIDE NADA POR TI.** Si la vara de `9.1` no encuentra inventario propio del
+> libro, **el capitulo se registra MINADO CON CERO CANDIDATOS y se dice por que**, que es lo que
+> `cap_16` y `cap_17` ya hicieron en este frente. **Cero candidatos con su razon es un resultado; cero
+> candidatos sin razon escrita es un hueco.**
 
 ---
 
-## 3. TAREA `3`: **`d110`, QUE SE PAGA MINANDO `cap_18` Y NO DESPUES**
+## 3. TAREA `3`: **`cap_21`, el `Epilogue`**
 
-**Es la deuda que esta vuelta existe para pagar**, y la medi yo antes de encargartela:
-
-    $ sed -n '21p;27p' fuentes/gerber_emyth/cap_18.md | cut -c1-108
-    H ow do I get my people to do what I want?” This is the one question I hear most often from small business
-    Since that is the question most often asked of me, I was intrigued with the hotel Manager’s answer to my q
-
-**`cap_18` recoge literalmente la escena con la que `cap_17` corta.** Asi que:
-
-1. **lee la apertura de `cap_18` con `cap_17` `L189` a `L221` delante**, las dos a la vez;
-2. **di si el autor saca el Operations Manual del caso del hotel Venetia o lo deja dentro del dialogo**,
-   y dilo **con las lineas citadas de los dos ficheros**;
-3. **paga `d110`** con `python scripts/deuda.py --pagar d110 --vuelta 7 --como "..."` y la salida pegada.
-
-> **ESTO REABRE EL DISCUTIBLE `5` DE TU VUELTA `5`, QUE LA `ACTA G5` CERRO CON LA RESERVA ESCRITA DE QUE
-> EL TEXTO SEGUIA.** Si al leer las dos mitades juntas te sale que **si** hay metodo, eso **no es una
-> caida de nadie**: es la deuda funcionando. **Y entonces el candidato nace en `cap_18`, no en `cap_17`.**
+**`cap_21`** (*Epilogue: Bringing the Dream Back to American Small Business*, **`1851`** palabras de
+cuerpo, **`149`** lineas, contadas por mi). **Mismo procedimiento que la `TAREA 2`**: frontera antes de
+cortar con su borde comparado, aduana en el acto, discutibles marcados antes.
 
 ---
 
-## 4. TAREA `4`: **`cap_19` SI EL TECHO LO PERMITE, Y SI NO, SE DECLARA EL CIERRE CORTO**
+## 4. TAREA `4`: **`cap_22`, el `Afterword`, Y EL LOTE QUE CIERRA**
 
-**`cap_19`** (**`4431`** palabras de cuerpo, **`441`** lineas, contadas por mi) es el **paso `7`** de la
-serie, y **el `6` esta apartado en `fuentes/gerber_emyth_cap17_reservado` y no se toca nunca**.
+**`cap_22`** (*Afterword: Taking the First Step*, **`904`** palabras de cuerpo, **`129`** lineas,
+contadas por mi). Mismo procedimiento.
 
-- **Si `cap_18` solo pasa del techo de candidatos, la vuelta CIERRA AHI y lo declaras con su cifra**
-  (`EXTRACTOR.md` `12.4`). **Una vuelta que cierra corta y no lo dice es caida de `REPORTE`**, y con
-  `2 de 3` encima eso es el tercer escalon.
-- **Si los dos capitulos caben, cierras `cap_19` igual que el `18`:** frontera publicada antes de
-  cortar, aduana en el acto, discutibles marcados antes.
-- **Y midas lo que midas, `d111` se queda para la vuelta que INSERTE.** Al cerrar `cap_18` y `cap_19`,
-  la cabeza `recorrer_siete_pasos_programa_desarrollo_negocio` habra visto sus dos ultimas partes
-  disponibles: **escribe en el reporte en cuanto queda la serie (`N` de `7`) con tu medida delante**, y
-  **no decidas que se hace con ella**. Esa decision no es de una vuelta que no inserta.
+**Y AL CERRARLO, DECLARA EL ESTADO DEL LOTE CON SU MEDIDA, sin decidir nada:**
+
+- **cuantas unidades del lote `9` quedan sin minar**, contadas por ti contra `fuentes/gerber_emyth/`.
+  Hoy son `6`: `cap_20` a `cap_22` (los de esta vuelta) y `cap_01` a `cap_03`, **que siguen en `d094`
+  por decision del fundador y NO se tocan**;
+- **si los tres caben, el lote `9` queda minado entero salvo `d094`**, y eso **lo declaras, no lo
+  ejecutas**: la insercion es serial y de ningun frente (`D.45`), y **la cosecha es del fundador**;
+- **si un solo capitulo pasa del techo de candidatos, la vuelta CIERRA AHI y lo dices con su cifra**
+  (`EXTRACTOR.md` `12.4`). **Una vuelta que cierra corta y no lo declara es caida de `REPORTE`.**
+
+**EL TECHO DE ESTA VUELTA: `30` candidatos, hasta TRES capitulos** (`EXTRACTOR.md` `15`, regimen
+`EXTRACCION`). **Los tres caben en el tramo: son `4596` palabras entre los tres, menos que tu `cap_18`
+solo.**
 
 ---
 
-## 5. TAREA `5`: **EL CIERRE, Y `PASOS INVENTADOS POR CAPITULO` CON POBLACION DE VERDAD**
+## 5. TAREA `5`: **EL CIERRE, Y EL INVENTARIO QUE HEREDA LA VUELTA QUE INSERTE**
 
-Esta vuelta **si** mina, asi que la metrica vuelve a tener divisor y **es la cifra que dimensiona el
-lote siguiente** (`AUDITOR_FORJA.md` `8`):
-
-| pieza | como |
-|---|---|
-| **una fila por capitulo**, no una media | `8.2`: la escalada se decide **sobre el peor capitulo** |
-| **el total del lote**, ademas de las filas | sirve para comparar lotes, pero **no decide el volumen** |
-| **la muestra de fidelidad con su semilla escrita** | `python scripts/muestra_fidelidad.py --libro gerber_emyth --capitulos cap_18,cap_19 --semilla <la tuya>` |
-| **si un capitulo pasa del `10` por ciento** | **ese capitulo se relee entero antes de seguir** (`D.58`). No es recomendacion |
-
-Y lo de siempre, con su salida pegada: **`gate` a TRES lineas** (`d103`), `guiones`,
+Lo de siempre, con su salida pegada: **`gate` a TRES lineas** (`d103`), `guiones`,
 `tests/test_aceptacion.py`, `tallar_reporte.py`, `censar_rutas.py`, las cifras de cierre
 **recomputadas y no copiadas** de la apertura, las condiciones de parada una a una con su medida, y
 `python forja.py credito` **medido y no anotado**.
 
-**Y LA TABLA DE CIERRE, EN EL ORDEN QUE `d112` DEJO PAGADO:** tu tabla primero, `python
-scripts/tabla_de_cierre.py --escribir` despues, y comprueba con `cat` que el fichero trae **tus** filas.
-**Ese remedio funciono en la vuelta `6` y se te firmo: no lo pierdas.**
+| pieza | como |
+|---|---|
+| **`PASOS INVENTADOS POR CAPITULO`**, una fila por capitulo | `8.2`: la escalada se decide **sobre el peor capitulo**, no sobre el promedio |
+| **el total del lote**, ademas de las filas | sirve para comparar lotes, **no decide el volumen** |
+| **la muestra de fidelidad con su semilla escrita** | `python scripts/muestra_fidelidad.py --libro gerber_emyth --capitulos cap_20,cap_21,cap_22 --semilla <la tuya>` |
+| **si un capitulo pasa del `10` por ciento** | **ese capitulo se relee entero antes de seguir** (`D.58`). No es recomendacion |
+| **LA TABLA DE CIERRE EN SU ORDEN** | tu tabla primero, `python scripts/tabla_de_cierre.py --escribir` despues, y `cat` para comprobar que trae **tus** filas. **Ese remedio de `d112` lleva dos vueltas funcionando** |
+
+**Y UNA COSA MAS, QUE ES LA QUE LA INSERCION NO PUEDE PERDER** (`ACTA G7` `6`): **publica en una tabla
+los punteros `D.37` que tu bandeja deja abiertos**, con la linea de la madre que nombra a cada hijo.
+Hoy son tres, y el tercero ya tiene su par:
+
+    d098   D.37, cap_05 L29, la terna sin cabeza
+    d104   D.37, cap_12 L21, la terna sin cabeza
+    d111   la serie de cap_13: el paso 8 de recorrer_siete_pasos_programa_desarrollo_negocio dice
+           "Paso 5: Your People Strategy", que es el titulo de
+           construir_estrategia_gente_cuatro_componentes. ARISTA DECLARABLE POR LECTURA.
+
+**NO LA DECLARES TU.** `EXTRACTOR.md` `15.6` dice que esas aristas se declaran **en la misma vuelta en
+que se INSERTAN las partes**, y esta no inserta. **Lo que te pido es la tabla, para que la vuelta que
+inserte no tenga que volver a leer el libro para encontrarla.**
 
 ---
 
@@ -177,17 +184,19 @@ scripts/tabla_de_cierre.py --escribir` despues, y comprueba con `cat` que el fic
 
 - **NO INSERTAS.** `MODO_INSERCION=cuarentena`. Cero nodos al grafo (`D.39`).
 - **NO TOCAS EL ARNES NI LA MAQUINARIA.** `D.45`, moratoria total: `orquestador_forja.sh`, `src/`,
-  `scripts/`, `tests/`, `hooks/` y `esquema/`. **Mides y subes, no arreglas.** Eso cubre `d106`, `d109`
-  y `d119`, que son las tres que mas pican.
+  `scripts/`, `tests/`, `hooks/` y `esquema/`. **Mides y subes, no arreglas.** Eso cubre `d106`,
+  `d109`, `d119` y `d124`, que son las cuatro que mas pican.
 - **NO ESCRIBES DOCTRINA.** La cola se queda en `11` (`D.55`). Si encuentras una pregunta nueva,
   **registrala con su medida y dejala ahi.** Si una lectura te pide mover la vara de `9.1`, **eso si es
   parada y se trae.**
 - **NO TOCAS `cap_01`, `cap_02` NI `cap_03`.** Siguen en `d094` por decision del fundador.
-- **NO TOCAS `fuentes/gerber_emyth_cap17_reservado`.** Es el paso `6` de la serie y esta apartado.
+- **NO TOCAS `fuentes/gerber_emyth_cap17_reservado`.** Es el paso `6` de la serie y **entra el ultimo**
+  (`ORDEN_DE_LOTES.md` lote `11`), **en otra clave del tablero y no en este frente.**
 - **NO TE ESCRIBES TU FILA DE CREDITO.** La mide `python forja.py credito`, que es de solo lectura; la
   anota el auditor.
-- **NO PUBLIQUES UNA CIFRA QUE NO HAYAS CORRIDO EN ESTA VUELTA.** Es la caida de la `6` y la unica que
-  te queda antes del tope.
+- **NO PUBLIQUES UNA CIFRA NI UN ORDINAL QUE NO HAYAS CORRIDO EN ESTA VUELTA.** Es la caida de la `7`,
+  y la palabra que la produjo fue **`primer`**: **un `primero`, un `unico` o un `ninguno` es una
+  busqueda, y una busqueda se corre antes de escribirla.**
 
 ---
 
@@ -196,17 +205,21 @@ scripts/tabla_de_cierre.py --escribir` despues, y comprueba con `cat` que el fic
 - **`d098`** (`D.37`, `cap_05` `L29`) y **`d104`** (`D.37`, `cap_12` `L21`): las dos ternas sin cabeza.
   **Para la vuelta que INSERTE.**
 - **`d108`**: releer `cap_14` `L27` contra `L117`. **Para la vuelta que INSERTE.**
-- **`d111`**: la serie de `cap_13`. **Mides en cuanto queda al cerrar `cap_19`, y no decides.**
-- **`d117`** (nuevo, y es mio): el comando de la cadencia con el numero de su propia vuelta. **Ya
-  corregido en la cabecera de este encargo**; si lo vuelves a ver mal escrito en un encargo, **parate y
-  traelo**.
-- **`d118`** (nuevo): la ficha de `d106` dice `cap_17` donde el ultimo capitulo que dejo nodo es
-  `cap_15`. **No cambia el defecto de `d106`, solo su rotulo.**
-- **`d119`** (nuevo, **pregunta de doctrina registrada y NO abierta**): la cadencia de un frente que
-  nunca saneo cuenta desde `primera_vuelta`, que sale del registro de CREDITO, **que lo escribe el
-  auditor**. Hoy no hace dano. **No se abre y no se toca.**
+- **`d111`**: la serie de `cap_13`, medida en `0` de `7` cabezas **y con su primera arista declarable
+  ya identificada** (`TAREA 5`). **No decides nada: la publicas.**
+- **`d122`** (nuevo, tuyo): el ordinal sin busqueda corrida. **Ya declarado, no hay que corregir nada
+  en el reporte:** la lectura del par era buena.
+- **`d123`** (nuevo, **y es mio**): el rotulo del reservado. **Se paga en la `TAREA 1`.**
+- **`d124`** (nuevo): la copia de una cita verbatim deja de ser verbatim al pasar el barrido de
+  guiones. **Medido: `3` lineas de `29`. No se arregla desde un frente.**
+- **`d125`** (nuevo): `PARALELO.md` `4.d` fotografia este frente en `10` candidatos y `4 de 22`
+  capitulos; hoy son `22` y `16 de 22`. **Sede del fundador: se mide y se sube.**
+- **`d126`** (nuevo, **y es mio**): el segundo ejemplar de `d124` lo produje yo al medirlo. El fichero
+  con el que compare la cita contra su fuente **puso el barrido de guiones en ROJO en mi propio
+  turno**, y hubo que borrarlo. **Si escribes una copia de un parrafo de este libro fuera de
+  `fuentes/`, te va a pasar igual: cuentalo con esta ficha delante en vez de descubrirlo.**
 
-**Y LA CADENCIA, PARA QUE NO TE PILLE:** la `6` reinicio el contador. **La `8`, la `9` y la `10` salen
+**Y LA CADENCIA, PARA QUE NO TE PILLE:** la `6` reinicio el contador. **La `9` y la `10` salen
 `LIBRE`; la `11` es la siguiente de saneamiento** si nada cambia. Compruebalo tu con `--clase` y el
 numero de la vuelta que mires, **no con el de la anterior**.
 
