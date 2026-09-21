@@ -1701,10 +1701,54 @@ Solo lo menciono. No pongo tabla.
 Tampoco.
 """
 
+    def setUp(self):
+        """ESTA CLASE MIDE LA EXTRACCION DE `D.40`, NO LA PUERTA DE `D.48`.
+
+        **Y hasta hoy media las dos sin querer**, porque `herencia.extraer()`
+        consulta el credito AMBIENTE del arbol aunque se le pase un acta sintetica.
+        En la serial hay `CREDITO_serial.jsonl` y las diez pasaban; **en un frente
+        recien nacido, que por `D.48` no hereda nada, las diez caian**, y su auditor
+        leia `10` rojos como *fallo tecnico repetido* el dia de arrancar.
+
+        **No se toca `src/herencia.py`:** su puerta esta bien y esta razonada. Lo
+        que se hace es poner el mecanismo FUERA DE USO en el taller, que es la
+        tercera rama que `extraer()` ya contempla (*si no lo tiene nadie, no hay de
+        que deducir nada*), para que estas diez midan lo suyo.
+
+        **La puerta de `D.48` la cubre entera `PruebaHerenciaPorLinea`**, con sus
+        casos de linea nacida y no nacida.
+        """
+        BaseForja.setUp(self)
+        anterior = herencia.credito.lineas_con_registro
+        herencia.credito.lineas_con_registro = lambda: []
+
+        def devolver():
+            herencia.credito.lineas_con_registro = anterior
+
+        self.addCleanup(devolver)
+
     def _acta(self, texto=None):
         ruta = os.path.join(self.taller, "ACTA_AUDITOR.md")
         comun.escribir_texto(ruta, texto if texto is not None else self.ACTA)
         return ruta
+
+    def test_caso_negativo_en_un_frente_sin_tanda_no_se_hereda_nada(self):
+        """**EL CASO QUE ESTA CLASE NO PODIA TENER, y es el que costo los 10 rojos.**
+
+        Con el mecanismo EN USO y esta linea sin nacer, `extraer()` devuelve cero
+        items **aunque el acta sintetica tenga dos remedios escritos**. Es `D.48`
+        funcionando, y aqui queda como caso y no como accidente del arbol.
+        """
+        anterior = herencia.credito.lineas_con_registro
+        nacida = herencia.credito.nacida
+        herencia.credito.lineas_con_registro = lambda: ["otra_linea"]
+        herencia.credito.nacida = lambda _linea: False
+        try:
+            datos = herencia.extraer(self._acta())
+        finally:
+            herencia.credito.lineas_con_registro = anterior
+            herencia.credito.nacida = nacida
+        self.assertEqual(datos["items"], [])
 
     def _apertura(self, texto):
         ruta = os.path.join(self.taller, "APERTURA_CIEGA.md")
