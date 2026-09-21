@@ -1,0 +1,193 @@
+==============================================================================
+1. LA COMPROBACION DE cap_11, ANTES DE SU TABLA
+==============================================================================
+fichero                                : fuentes/grove_high_output/cap_11.md
+la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+tramos de mi lectura                   : 36
+lineas con contenido tras la cabecera  : 38
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 2662 palabras
+cuerpo medido aparte                   : 2662 palabras
+CARACTERES DE CUERPO                   : 15495 caracteres
+fichero entero, para cruzar con wc -w  : 2688 palabras
+IGUALES                                : True
+NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_11 Y SOLO cap_11: 2
+
+==============================================================================
+2. LA TABLA DE cap_11, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo de cap_11 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L9` | 1 | **0** | P1  rotulo: el numero 10, sin cuerpo que extraer | `9:10` |
+| `L11 a L11` | 3 | **0** | P2  titulo textual Modes of Control, sin cuerpo que extraer | `11:Modes of Control` |
+| `L13 a L13` | 138 | **0** | P3  el ejemplo de comprar neumaticos por el mejor precio: CASO que abre el mercado libre, manual 3.5 | `13:Let's look at the ways in which our actions can be controlled or` |
+| `L15 a L15` | 80 | **0** | P4  el ejemplo del semaforo en rojo: CASO que abre la obligacion contractual social, manual 3.5 | `15:Now you have the tires on your car and you drive off. After a wh` |
+| `L17 a L17` | 96 | **0** | P5  el ejemplo del accidente de trafico: CASO que abre los valores culturales, manual 3.5 | `17:After the light changes, you continue on down the road and come ` |
+| `L19 a L19` | 18 | **0** | P6  enunciado de los tres modos invisibles de control, con dos puntos que abre la lista de P7 a P9: DEFINICION, taxonomia sin pasos | `19:Similarly, our behavior in a work environment can be controlled ` |
+| `L21 a L21` | 3 | **0** | P7  primer miembro de la lista: free-market forces, sin cuerpo propio | `21:* free-market forces` |
+| `L23 a L23` | 3 | **0** | P8  segundo miembro de la lista: contractual obligations, sin cuerpo propio | `23:* contractual obligations` |
+| `L25 a L25` | 3 | **0** | P9  tercer miembro de la lista: cultural values, sin cuerpo propio | `25:* cultural values` |
+| `L27 a L27` | 2 | **0** | P10 rotulo Free-Market Forces, sin cuerpo que extraer | `27:Free-Market Forces` |
+| `L29 a L29` | 117 | **0** | P11 definicion del modo de mercado libre y por que no necesita vigilancia: DEFINICION | `29:When you bought your tires, your actions were governed by free-m` |
+| `L31 a L31` | 65 | **0** | P12 por que el mercado libre no sirve para todo: se necesita un precio claro: DEFINICION | `31:So why aren't the forces of the marketplace used all the time in` |
+| `L33 a L33` | 2 | **0** | P13 rotulo Contractual Obligations, sin cuerpo que extraer | `33:Contractual Obligations` |
+| `L35 a L35` | 144 | **0** | P14 por que las transacciones entre empresas van por libre mercado y donde deja de servir: DEFINICION | `35:Transactions between companies are usually governed by the free ` |
+| `L37 a L37` | 61 | **0** | P15 el dialogo con los ingenieros que funda el contrato: CASO, manual 3.5 | `37:So you say to the engineers, "Okay, I'll retain your services fo` |
+| `L39 a L39` | 90 | **0** | P16 la naturaleza del control contractual y la autoridad generalizada que exige: DEFINICION | `39:The nature of control is now based on contractual obligations, w` |
+| `L41 a L41` | 40 | **0** | P17 el semaforo otra vez y el policia como sobrecoste del incumplimiento: DEFINICION con retorno al CASO de P4 | `41:In return for stopping at a red light, we count on other drivers` |
+| `L43 a L43` | 159 | **0** | P18 el sistema fiscal y la empresa electrica como ejemplos de obligacion contractual: CASO, manual 3.5, la resolucion es del relato y no un medio nombrado para transferir | `43:What are some other examples of contractual obligation? Take the` |
+| `L45 a L45` | 2 | **0** | P19 rotulo Cultural Values, sin cuerpo que extraer | `45:Cultural Values` |
+| `L47 a L47` | 145 | **0** | P20 cuando el entorno cambia mas rapido de lo que las reglas pueden seguirle, y por que la confianza sustituye al contrato: DEFINICION | `47:When the environment changes more rapidly than one can change ru` |
+| `L49 a L49` | 4 | **0** | P21 rotulo The Role of Management, sin cuerpo que extraer | `49:The Role of Management` |
+| `L51 a L51` | 118 | **0** | P22 el papel de la direccion en cada uno de los tres modos, contado en general y sin el criterio de activacion que P23 a P26 todavia no han dado: DEFINICION que ilustra la taxonomia de P6 a P9, no procedimiento propio todavia | `51:You don't need management to supervise the workings of free-mark` |
+| `L53 a L53` | 6 | **0** | P23 rotulo The Most Appropriate Mode of Control, sin cuerpo que extraer | `53:The Most Appropriate Mode of Control` |
+| `L55 a L55` | 90 | **0** | P24 la tentacion de idealizar los valores culturales y por que no siempre son el modo mas eficiente: POSTURA | `55:There is a temptation to idealize what I've called cultural valu` |
+| `L57 a L61` | 343 | **1** | P25 EL FACTOR CUA (complejidad, incertidumbre y ambiguedad) Y EL CUADRO DE CUATRO CUADRANTES QUE CRUZA MOTIVACION CONTRA CUA PARA ELEGIR EL MODO: inventario propio del libro, manual 9.1, nodo propio | `57:How do we do that? There are two variables here: first, the natu` |
+| `L63 a L63` | 210 | **1** | P26 aplicar el modelo a un empleado nuevo: puesto de bajo factor CUA que se complica a medida que gana experiencia compartida, con la promocion interna como razon: nodo propio, aplicacion generalizada y no un caso nombrado | `63:Let's apply our model to the work of a new employee. What is his` |
+| `L65 a L65` | 141 | **0** | P27 el caso del directivo senior contratado de fuera, con alta CUA y sin experiencia compartida: POSTURA sin procedimiento, el libro solo cruza los dedos | `65:But what do we do when for some reason we have to hire a senior ` |
+| `L67 a L67` | 5 | **0** | P28 rotulo Modes of Control at Work, sin cuerpo que extraer | `67:Modes of Control at Work` |
+| `L69 a L69` | 155 | **0** | P29 el dia de Bob visto por sus tres modos de control: CASO, manual 3.5 | `69:At any one time, one of the three modes of control may govern wh` |
+| `L71 a L71` | 116 | **0** | P30 el programa de formacion de Barbara y sus tres modos: CASO, manual 3.5 | `71:Let's now consider what goes on during the course of a work proj` |
+| `L73 a L73` | 85 | **0** | P31 el reparto de un mismo equipo de ventas entre varias divisiones: CASO, manual 3.5 | `73:When a number of divisions share a common sales force, each of t` |
+| `L75 a L75` | 63 | **0** | P32 la queja de los gerentes de marketing de fabrica: CASO, manual 3.5 | `75:Recently a group of factory marketing managers claimed that our ` |
+| `L77 a L77` | 63 | **0** | P33 como los propios departamentos de marketing fabricaron el problema con sus concursos: CASO, manual 3.5 | `77:But the marketing departments themselves created the monster. To` |
+| `L79 a L79` | 88 | **0** | P34 los vendedores que se quedaron sin producto que vender y no se fueron: CASO, manual 3.5 | `79:But salespeople can also behave in the opposite fashion. At one ` |
+| `L81 a L81` | 1 | **0** | P35 rotulo de la parte IV, sin cuerpo que extraer | `81:IV` |
+| `L83 a L83` | 2 | **0** | P36 titulo textual The Players del capitulo siguiente, arrastrado dentro de este fichero, sin cuerpo que extraer | `83:The Players` |
+| | **2662** | **2** | **el cuerpo entero de cap_11, cero lineas sin cubrir y cero solapes** | |
+
+==============================================================================
+1. LA COMPROBACION DE cap_12, ANTES DE SU TABLA
+==============================================================================
+fichero                                : fuentes/grove_high_output/cap_12.md
+la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+tramos de mi lectura                   : 55
+lineas con contenido tras la cabecera  : 55
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 4105 palabras
+cuerpo medido aparte                   : 4105 palabras
+CARACTERES DE CUERPO                   : 24227 caracteres
+fichero entero, para cruzar con wc -w  : 4131 palabras
+IGUALES                                : True
+NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_12 Y SOLO cap_12: 3
+
+==============================================================================
+2. LA TABLA DE cap_12, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo de cap_12 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L9` | 1 | **0** | P1  rotulo: el numero 11, sin cuerpo que extraer | `9:11` |
+| `L11 a L11` | 3 | **0** | P2  titulo textual The Sports Analogy, sin cuerpo que extraer | `11:The Sports Analogy` |
+| `L13 a L13` | 25 | **0** | P3  recordatorio de la frase clave del libro sobre el output del mando: POSTURA de enlace con capitulos previos | `13:Earlier I built a case summed up by the key sentence: A manager'` |
+| `L15 a L15` | 88 | **0** | P4  la gestion como actividad de equipo limitada por sus miembros: POSTURA | `15:Put another way, this means that management is a team activity. ` |
+| `L17 a L17` | 121 | **1** | P5  LA PRUEBA MENTAL PARA DISTINGUIR INCAPACIDAD DE DESMOTIVACION, SI LA VIDA DEPENDIERA DE HACER EL TRABAJO: inventario propio del libro de dos ramas, manual 9.1, nodo propio | `17:When a person is not doing his job, there can only be two reason` |
+| `L19 a L19` | 56 | **0** | P6  la tarea mas importante del mando y las dos vias, formacion y motivacion, con el foco del capitulo en la motivacion: DEFINICION | `19:The single most important task of a manager is to elicit peak pe` |
+| `L21 a L21` | 11 | **0** | P7  pie de figura de las dos vias, formacion y motivacion, sin cuerpo que extraer | `21:A manager has two ways to improve performance: training and moti` |
+| `L23 a L23` | 50 | **0** | P8  la motivacion viene de dentro y el mando solo puede crear el entorno: POSTURA | `23:How does a manager motivate his subordinates? For most of us, th` |
+| `L25 a L25` | 66 | **0** | P9  mejor motivacion es mejor desempeno y no un cambio de actitud sentido: DEFINICION | `25:Because better motivation means better performance, not a change` |
+| `L27 a L27` | 75 | **0** | P10 la motivacion por miedo en la revolucion industrial: CASO historico, manual 3.5 | `27:For most of Western history, including the early days of the Ind` |
+| `L29 a L29` | 120 | **0** | P11 el auge del trabajador del conocimiento y por que el miedo deja de bastar: POSTURA historica | `29:Over the past thirty years or so, a number of new approaches hav` |
+| `L31 a L31` | 88 | **0** | P12 la dependencia de la teoria de Maslow: POSTURA | `31:My description of what makes people perform relies heavily on Ab` |
+| `L33 a L33` | 68 | **0** | P13 necesidad, impulso y motivacion, y que una necesidad satisfecha deja de motivar: DEFINICION | `33:People, of course, tend to have a variety of concurrent needs, b` |
+| `L35 a L35` | 26 | **0** | P14 pie de figura de la jerarquia de necesidades de Maslow, sin cuerpo que extraer | `35:Maslow defined a set of needs that tend to lie in a hierarchy: w` |
+| `L37 a L37` | 2 | **0** | P15 rotulo Physiological Needs, sin cuerpo que extraer | `37:Physiological Needs` |
+| `L39 a L39` | 35 | **0** | P16 definicion de las necesidades fisiologicas y el miedo asociado: DEFINICION | `39:These needs consist of things that money can buy, like food, clo` |
+| `L41 a L41` | 2 | **0** | P17 rotulo Security/Safety Needs, sin cuerpo que extraer | `41:Security/Safety Needs` |
+| `L43 a L43` | 80 | **0** | P18 definicion de las necesidades de seguridad con el ejemplo del seguro medico: DEFINICION con CASO, manual 3.5 | `43:These come from a desire to protect oneself from slipping back t` |
+| `L45 a L45` | 2 | **0** | P19 rotulo Social/Affiliation Needs, sin cuerpo que extraer | `45:Social/Affiliation Needs` |
+| `L47 a L47` | 88 | **0** | P20 definicion de las necesidades sociales, la compania de los semejantes: DEFINICION | `47:The social needs stem from the inherent desire of human beings t` |
+| `L49 a L49` | 74 | **0** | P21 la amiga que vuelve a trabajar por la compania y no por el sueldo: CASO, manual 3.5 | `49:Social needs are quite powerful. A friend of mine decided to go ` |
+| `L51 a L51` | 128 | **0** | P22 el caso de Jim y sus companeros de piso de Intel: CASO, manual 3.5 | `51:Another example of the power of social needs is provided by Jim,` |
+| `L53 a L53` | 199 | **0** | P23 el caso de Chuck en Harvard Business School y el paso de la supervivencia a la afiliacion: CASO, manual 3.5 | `53:As one's environment or condition in life changes, one's desire ` |
+| `L55 a L55` | 80 | **0** | P24 el terremoto de la planta de California y la regresion a la necesidad fisiologica: CASO, manual 3.5 | `55:Of course, regressive movement is also possible. Recently, a hig` |
+| `L57 a L57` | 26 | **0** | P25 las tres primeras necesidades traen al trabajo, la estima y la autorrealizacion hacen rendir: DEFINICION de enlace | `57:The physiological, safety/security, and social needs all can mot` |
+| `L59 a L59` | 2 | **0** | P26 rotulo Esteem/Recognition Needs, sin cuerpo que extraer | `59:Esteem/Recognition Needs` |
+| `L61 a L61` | 146 | **0** | P27 definicion de la necesidad de estima con la analogia de keeping up with the Joneses: DEFINICION con CASO, manual 3.5 | `61:The need for esteem or recognition is readily apparent in the cl` |
+| `L63 a L63` | 101 | **0** | P28 por que las fuentes anteriores se autolimitan, con el caso del nuevo vicepresidente: DEFINICION con CASO, manual 3.5 | `63:All of the sources of motivation we've talked about so far are s` |
+| `L65 a L65` | 2 | **0** | P29 rotulo Self-Actualization Needs, sin cuerpo que extraer | `65:Self-Actualization Needs` |
+| `L67 a L67` | 88 | **0** | P30 definicion de la autorrealizacion segun Maslow con la referencia a Personal Best: DEFINICION | `67:For Maslow, self-actualization stems from a personal realization` |
+| `L69 a L69` | 120 | **0** | P31 competencia contra logro como las dos fuerzas internas, con el violinista y el monopatin: DEFINICION con CASO, manual 3.5 | `69:Two inner forces can drive a person to use all of his capabiliti` |
+| `L71 a L71` | 129 | **0** | P32 el camino orientado al logro y el experimento de los aros: DEFINICION del experimento, sin inventario ejecutable | `71:The achievement-driven path to self-actualization is not quite l` |
+| `L73 a L73` | 118 | **0** | P33 los tres tipos que los investigadores clasificaron, apostadores, conservadores y triunfadores: inventario de TIPOS DE PERSONA, no de medios ni etapas, 9.1 restriccion 1 por analogia: es un inventario de como es la gente y no de que hacer | `73:Researchers classified the three types of behavior. The first gr` |
+| `L75 a L75` | 97 | **1** | P34 FIJAR EL OBJETIVO DE UN SISTEMA DE DIRECCION POR OBJETIVOS EN EL PUNTO DE MITAD DE PROBABILIDAD DE EXITO CUANDO EL IMPULSO A ESTIRARSE NO ES ESPONTANEO: inventario propio del libro con su propia cifra, manual 9.1, nodo propio | `75:When the need to stretch is not spontaneous, management needs to` |
+| `L77 a L77` | 120 | **0** | P35 el entorno que valora el output contra el laboratorio centrado en el saber, con Intel como CASO nombrado: DEFINICION con CASO, manual 3.5 | `77:Moreover, if we want to cultivate achievement-driven motivation,` |
+| `L79 a L79` | 4 | **0** | P36 rotulo Money and Task-Relevant Feedback, sin cuerpo que extraer | `79:Money and Task-Relevant Feedback` |
+| `L81 a L81` | 137 | **0** | P37 el dinero en los niveles bajos de la jerarquia con el caso de la planta del Caribe: DEFINICION con CASO, manual 3.5 | `81:We now come to the question of how money motivates people. At th` |
+| `L83 a L83` | 150 | **0** | P38 el capitalista de riesgo que sigue trabajando tras el primer millon: CASO, manual 3.5 | `83:Now consider a venture capitalist who after making ten million d` |
+| `L85 a L85` | 74 | **1** | P39 LA PRUEBA SENCILLA PARA UBICAR A ALGUIEN EN LA JERARQUIA MOTIVACIONAL SEGUN COMO REACCIONA A UN AUMENTO DE SUELDO: inventario propio del libro de dos ramas, manual 9.1, nodo propio | `85:A simple test can be used to determine where someone is in the m` |
+| `L87 a L87` | 155 | **0** | P40 la necesidad de medidas de progreso una vez en autorrealizacion, con el violinista y el esgrimista hungaro: DEFINICION con CASO, manual 3.5 | `87:Once in the self-actualization mode, a person needs measures to ` |
+| `L89 a L89` | 110 | **0** | P41 los mecanismos de retroalimentacion en el trabajo, con la revision de desempeno nombrada y aplazada: POSTURA, su criterio es most appropriate measures, 9.1 restriccion 2, y el propio texto la remite a mas adelante | `89:What are some of the feedback mechanisms or measures in the work` |
+| `L91 a L91` | 1 | **0** | P42 rotulo Fear, sin cuerpo que extraer | `91:Fear` |
+| `L93 a L93` | 131 | **0** | P43 el miedo al fracaso en los niveles altos con el experimento del calambre en los aros: DEFINICION con CASO, manual 3.5 | `93:In physiological and security/safety need-dominated motivation, ` |
+| `L95 a L95` | 43 | **0** | P44 el miedo en los niveles superiores viene de dentro y no de fuera: POSTURA | `95:In general, in the upper levels of motivation, fear is not somet` |
+| `L97 a L97` | 3 | **0** | P45 rotulo interno The Sports Analogy que repite el titulo del capitulo, sin cuerpo que extraer | `97:The Sports Analogy` |
+| `L99 a L99` | 103 | **0** | P46 recapitulacion del proposito del capitulo y el doble papel del mando, formar y llevar a la autorrealizacion: POSTURA de recapitulacion, sin inventario nuevo | `99:We've studied motivation to try to understand what makes people ` |
+| `L101 a L101` | 108 | **0** | P47 la pregunta retorica de por que alguien corre un maraton sin interes en su oficina: POSTURA | `101:Is there a systematic way to lead people to self-actualization? ` |
+| `L103 a L103` | 83 | **0** | P48 la cita de Joe Frazier sobre por que boxea: CASO citado, manual 3.5 | `103:It astounds Joe Frazier that anyone has to ask why he fights. "T` |
+| `L105 a L105` | 19 | **0** | P49 imaginar la productividad si el trabajo tuviera las caracteristicas del deporte: POSTURA aspiracional | `105:Imagine how productive our country would become if managers coul` |
+| `L107 a L107` | 60 | **0** | P50 el prejuicio cultural que admira el deporte y desprecia al workaholic: POSTURA | `107:To try to do this, we must first overcome cultural prejudice. Ou` |
+| `L109 a L109` | 224 | **0** | P51 el consejo de poner reglas del juego y maneras de medirse, resuelto en el caso del building czar de mantenimiento de Intel: CASO, manual 3.5, la solucion (marcador periodico de un gerente y comparacion entre edificios) es del relato y no un medio nombrado para transferir, igual que P18 de cap_11 | `109:That makes the cliche apply: if you can't beat them, join them-e` |
+| `L111 a L111` | 80 | **0** | P52 el columnista de periodico que pierde el gusto por el trabajo cuando fusionan los diarios: CASO, manual 3.5 | `111:Conversely, of course, when the competition is removed, motivati` |
+| `L113 a L113` | 71 | **0** | P53 el deporte como leccion para tolerar el fracaso, con el 50 por ciento de partidos perdidos: POSTURA, cifra generica del deporte y no medicion propia del autor | `113:Comparing our work to sports may also teach us how to cope with ` |
+| `L115 a L115` | 83 | **0** | P54 las tres caracteristicas del entrenador ideal, no toma credito, es duro, fue buen jugador: DEFINICION de un arquetipo, no inventario de medios porque la tercera caracteristica no es una accion que se pueda ejecutar hoy, 9.1 restriccion 1 por analogia | `115:The role of the manager here is also clear: it is that of the co` |
+| `L117 a L117` | 29 | **0** | P55 el cierre: convertir el lugar de trabajo en un campo de juego hace ganadores consistentes: POSTURA de cierre | `117:Turning the workplace into a playing field can turn our subordin` |
+| | **4105** | **3** | **el cuerpo entero de cap_12, cero lineas sin cubrir y cero solapes** | |
+
+==============================================================================
+1. LA COMPROBACION DE cap_13, ANTES DE SU TABLA
+==============================================================================
+fichero                                : fuentes/grove_high_output/cap_13.md
+la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+tramos de mi lectura                   : 26
+lineas con contenido tras la cabecera  : 35
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 2510 palabras
+cuerpo medido aparte                   : 2510 palabras
+CARACTERES DE CUERPO                   : 15494 caracteres
+fichero entero, para cruzar con wc -w  : 2535 palabras
+IGUALES                                : True
+NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_13 Y SOLO cap_13: 2
+
+==============================================================================
+2. LA TABLA DE cap_13, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo de cap_13 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L9` | 1 | **0** | P1  rotulo: el numero 12, sin cuerpo que extraer | `9:12` |
+| `L11 a L11` | 2 | **0** | P2  titulo textual Task-Relevant Maturity, sin cuerpo que extraer | `11:Task-Relevant Maturity` |
+| `L13 a L13` | 43 | **0** | P3  la pregunta de si existe un estilo de direccion optimo unico: POSTURA de apertura | `13:I'll say again that a manager's most important responsibility is` |
+| `L15 a L15` | 178 | **0** | P4  la historia del estilo de mando segun la teoria de motivacion de cada epoca, sin un estilo mejor probado: POSTURA historica | `15:Many have looked for that optimum. Considering the issue histori` |
+| `L17 a L17` | 128 | **0** | P5  la rotacion de mandos intermedios en Intel y la conclusion de que el alto rendimiento es de la pareja mando mas grupo: CASO del autor, manual 3.5 | `17:My own observations bear this out. At Intel we frequently rotate` |
+| `L19 a L19` | 97 | **0** | P6  parte 1 de 5 de la pieza compuesta que cierra en P12 (L31 a L47): la TRM definida por su nombre y sus componentes, y su especificidad a la tarea concreta | `19:Some researchers in this field argue that there is a fundamental` |
+| `L21 a L21` | 160 | **0** | P7  el vendedor ascendido a jefe de planta cuya TRM cae en el puesto nuevo: CASO del autor, manual 3.5, EXCLUIDO de la pieza compuesta de P6 a P12 por ser narracion de un hecho con nombre de puesto concreto y no inventario | `21:Let me give you an example of what I mean. We recently moved an ` |
+| `L23 a L23` | 73 | **0** | P8  parte 2 de 5 de la pieza compuesta: la TRM puede caer si el ritmo o el puesto cambian de golpe, con la analogia de conducir en carretera comarcal contra autopista | `23:Similarly, a person's TRM can be very high given a certain level` |
+| `L25 a L25` | 204 | **0** | P9  parte 3 de 5 de la pieza compuesta: los tres estilos segun la TRM en prosa, mas la vigilancia constante y la frontera delegar contra abandonar | `25:The conclusion is that varying management styles are needed as t` |
+| `L27 a L27` | 51 | **0** | P10 parte 4 de 5 de la pieza compuesta: la advertencia de no juzgar el estilo estructurado como menos valioso, el criterio es la eficacia y no lo simpatico | `27:A word of caution is in order: do not make a value judgment and ` |
+| `L29 a L29` | 225 | **0** | P11 la analogia completa del padre y el hijo que madura: CASO ilustrativo, manual 3.5, EXCLUIDO de la pieza compuesta por ser analogia y no doctrina de la organizacion | `29:The theory here parallels the development of the relationship be` |
+| `L31 a L47` | 51 | **1** | P12 parte 5 de 5 y CIERRE DE LA PIEZA COMPUESTA que empezo en P6 (L19): LA TABLA DE LOS TRES NIVELES DE TRM CON SU ESTILO DE DIRECCION, inventario propio del libro de objetos de trabajo, manual 9.1, nodo propio; P6, P8, P9, P10 y esta fila son la misma pieza y P7 y P11 quedan fuera de ella por ser CASO y analogia | `31:TASK-RELEVANT MATURITY OF SUBORDINATE` |
+| `L49 a L49` | 34 | **0** | P13 si el entorno del hijo cambia de golpe el padre puede volver a un estilo anterior: continuacion de la analogia de P11, CASO ilustrativo, excluida | `49:Should the child's environment suddenly change to one where his ` |
+| `L51 a L51` | 68 | **0** | P14 por que la estructura no cambia de fondo al moverse de estructurada a comunicadora a monitora, dicho sobre la analogia padre-hijo: explicacion del mecanismo de la analogia, no doctrina propia de la organizacion, excluida | `51:As parental (or managerial) supervision moves from structured to` |
+| `L53 a L53` | 61 | **0** | P15 si el padre o el supervisor transmitio pronto los valores operativos correctos, el hijo o el subordinado decidira como el: PRECONDICION de valores compartidos para que la progresion funcione, tangencial a la eleccion de estilo por TRM y no desarrollada como procedimiento propio en este tramo, PENDIENTE para una lectura futura | `53:If the parent (or supervisor) imparted early on to the child (or` |
+| `L55 a L55` | 146 | **0** | P16 sin esa comunidad de valores la organizacion se confunde, y el caso del asociado que dejo aprender por las malas al junior: DEFINICION con CASO, manual 3.5, misma familia de P15 | `55:Without that commonality, an organization can become easily conf` |
+| `L57 a L57` | 5 | **0** | P17 rotulo Management Style and Managerial Leverage, sin cuerpo que extraer | `57:Management Style and Managerial Leverage` |
+| `L59 a L59` | 100 | **0** | P18 subir la TRM da palanca de mando porque el estilo de alta TRM cuesta menos tiempo: POSTURA que repite consecuencias de P12 sin inventario nuevo | `59:As supervisors, we should try to raise the task-relevant maturit` |
+| `L61 a L61` | 188 | **0** | P19 la TRM depende del entorno concreto de trabajo, con el sargento como CASO que sigue en el renglon siguiente: POSTURA mas arranque de CASO, manual 3.5 | `61:As we've learned, a person's TRM depends on a specific working e` |
+| `L63 a L63` | 66 | **0** | P20 el estilo de comunicacion exige tiempo y hay que ganarselo, y ante el cambio subito se vuelve al modo estructurado: POSTURA que repite P12 sin inventario nuevo | `63:Put another way, a manager's ability to operate in a style based` |
+| `L65 a L65` | 93 | **0** | P21 el mando estructurado no es el favorito de un directivo ilustrado y por eso se adopta tarde: POSTURA | `65:That mode is one that we don't think an enlightened manager shou` |
+| `L67 a L67` | 8 | **0** | P22 rotulo It's Not Easy to Be a Good Manager, sin cuerpo que extraer | `67:It's Not Easy to Be a Good Manager` |
+| `L69 a L69` | 98 | **0** | P23 decidir la TRM no es facil y las preferencias personales priman sobre la eleccion logica: POSTURA | `69:Deciding the TRM of your subordinates is not easy. Moreover, eve` |
+| `L71 a L71` | 116 | **0** | P24 LA CIFRA DEL AUTOR: EL 90 POR CIENTO DE LOS SUPERVISORES SE VIO A SI MISMO MAS COMUNICADOR O DELEGADOR DE LO QUE LO VIERON SUS SUBORDINADOS, medida por el propio autor: manual principios 5 y 8, entra como atribucion dentro del nodo de P12 y NO CUENTA AQUI COMO NODO PROPIO PARA NO DUPLICAR EL 1 DE P12 | `71:Another problem here is a manager's perception of himself. We te` |
+| `L73 a L73` | 123 | **0** | P25 el mando que esquia y bebe con su supervisor y confunde amistad social con estilo comunicador: CASO, manual 3.5 | `73:A manager once told me that his supervisor definitely practiced ` |
+| `L75 a L77` | 191 | **1** | P26 LA PREGUNTA DE SI CONVIENE HACERSE AMIGO DE UN SUBORDINADO, RESUELTA CON LA PRUEBA DE IMAGINAR UNA REVISION DE DESEMPENO DIFICIL: inventario propio del libro de dos ramas mas sus pros y contras generales, manual 9.1, nodo propio | `75:This brings us to the age-old question of whether friendship bet` |
+| | **2510** | **2** | **el cuerpo entero de cap_13, cero lineas sin cubrir y cero solapes** | |
+
+==============================================================================
+3. EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI
+==============================================================================
+NODOS QUE MI FRONTERA DA EN LAS TRES UNIDADES DE HOY (cap_11+cap_12+cap_13): 7
+  cap_11: 2   cap_12: 3   cap_13: 2
+TECHO DE CANDIDATOS DE D.58 EN REGIMEN LIGERO                  : 30
+DENTRO DEL TECHO DE CANDIDATOS                                 : SI

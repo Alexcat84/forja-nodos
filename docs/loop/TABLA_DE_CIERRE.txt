@@ -4,8 +4,8 @@ criterio : un nodo sale de un capitulo si cita grove_high_output/<cap>.md
 
 | # | tarea | como cerro |
 |---:|---|---|
-| 1 | la frontera de `cap_08`, `cap_09` y `cap_10`, publicada y cerrada antes de minar | **CERRADA en `WW.2`**: los tres capitulos con **cero lineas sin cubrir y cero solapes cada uno**, `13`, `27` y `35` tramos, y `0`, `0` y `1` nodos |
-| 2 | minar con el techo de `30` por delante | **CERRADA en `WW.3`**: `0` candidatos nuevos escritos, `cap_10` cerrado reconfirmando su unico nodo por la aduana en seco: `0 CAERIAN`, `0 BLOQUEARIAN` |
-| 3 | la fidelidad `D.30` por muestra, semilla `v56` | **CERRADA en `WW.4`**: semilla escrita, reparto pegado del instrumento, `cap_10` con sus `8` pasos releidos contra `L43` entera: `0` PUENTE |
-| 4 | las tres cifras de la medicion, al lado de las de Opus | **CERRADA en `WW.5`**: pasos inventados `0,0` por ciento (cumple el `10`), candidatos que bloquearian `0` de `1`, coste **no medible desde dentro de mi propio turno**, declarado como tal |
-| 5 | el cierre | **CERRADA en `WW.7`**: estado recomputado (`346`, `740`, `74`, sin mover), `gate`, `guiones` y prueba de aceptacion en VERDE, deuda sin mover, credito leido y no anotado, **`2` discutibles marcados a ciegas** |
+| 1 | la frontera de `cap_11`, `cap_12` y `cap_13`, publicada y cerrada antes de minar | **CERRADA en `XX.2`**: los tres capitulos con **cero lineas sin cubrir y cero solapes cada uno**, `36`, `55` y `26` tramos, y `2`, `3` y `2` nodos |
+| 2 | minar con el techo de `30` por delante | **CERRADA en `XX.3`**: `7` candidatos nuevos escritos, uno por vez con su aduana en el acto: `0 CAERIAN`, `4 BLOQUEARIAN` (los `4` leidos y adjudicados `SANO`), `3 ENTRARIAN` |
+| 3 | la fidelidad `D.30` por muestra, semilla `v57` | **CERRADA en `XX.4`**: semilla escrita, reparto pegado del instrumento, `cap_13` releido entero (`14` pasos) y `cap_11`/`cap_12` por muestra (`15` y `11` pasos): `0` PUENTE de `40` |
+| 4 | las cuatro cifras de la medicion con Sonnet | **CERRADA en `XX.6`**: `7` candidatos y `3` capitulos cerrados, pasos inventados `0,0` por ciento en las tres unidades, `4` de `7` candidatos bloquearian (los `4` SANO), coste **no medible desde dentro de mi propio turno**, declarado como tal |
+| 5 | el cierre | **CERRADA en `XX.7`**: estado recomputado (`346`, `740`, `81`), `gate`, `guiones` y prueba de aceptacion en VERDE, credito leido y no anotado, **`8` discutibles marcados a ciegas en `XX.5`** |

@@ -54195,7 +54195,7 @@ eso pesa en el coste igual que pesa en el reloj.
 
 ### WW.7.g. **LA TABLA DE CIERRE DE TAREAS** (`D.52`)
 
-<!-- TALLADO: script=scripts/tabla_de_cierre.py salida=docs/loop/TABLA_DE_CIERRE.txt -->
+<!-- TALLADO: script=scripts/tabla_de_cierre.py salida=docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v56.txt -->
 | # | tarea | como cerro |
 |---:|---|---|
 | 1 | la frontera de `cap_08`, `cap_09` y `cap_10`, publicada y cerrada antes de minar | **CERRADA en `WW.2`**: los tres capitulos con **cero lineas sin cubrir y cero solapes cada uno**, `13`, `27` y `35` tramos, y `0`, `0` y `1` nodos |
@@ -54289,3 +54289,799 @@ desde `cap_11`.**
    pasado por aduana, y el coste del turno **declarado como no medible desde dentro de si
    mismo**, para que el auditor lo lea de `loop.log` y complete la comparacion que el encargo
    pide.
+
+# VUELTA 57, lote 7 (`grove_high_output`), **CLASE EXTRACCION, GROVE SIGUE CON SONNET Y AHORA SE MIDE MINANDO**: `cap_11`, `cap_12` y `cap_13` cerrados con siete candidatos, y las cuatro cifras de la medicion completadas con cosecha
+
+*Corro con `claude-sonnet-5`. El auditor sigue en Opus 5. Encargo escrito por el auditor al cerrar la `ACTA 55`.*
+
+## XX.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente se commiteo y pusheo primero**, como manda `EXTRACTOR.md` 1:
+
+    $ git add docs/loop/loop.log docs/loop/ultimo_auditor.json docs/loop/ultimo_extractor.json
+    $ git commit -m "Sincroniza loop.log, ultimo_auditor.json y ultimo_extractor.json antes de abrir la vuelta 57"
+    $ git push
+    [extraccion-mundo-11 9ebed73] Sincroniza loop.log, ultimo_auditor.json y ultimo_extractor.json antes de abrir la vuelta 57
+    3 files changed, 13 insertions(+), 1 deletion(-)
+    To https://github.com/Alexcat84/forja-nodos.git
+       ca40a8c..9ebed73  extraccion-mundo-11 -> extraccion-mundo-11
+
+**LA IDENTIDAD, LEIDA DE GIT** (`EXTRACTOR.md` 5):
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    9ebed73961f84a57c0c2c695d58801571bf7d663
+    2026-09-20T18:52:41-04:00
+    extraccion-mundo-11
+
+**EL ESTADO, DEL PROPIO COMMIT DE APERTURA** (el gate del pre-commit hook de ese mismo commit):
+
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta,
+               cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones,
+               censo_no_decrece
+
+    $ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+    346 dataset/nodos.jsonl
+
+    $ ls cuarentena/grove_high_output | wc -l
+    74
+
+**Coinciden al digito con el cierre de `WW.7` de la vuelta anterior: `346`, `740`, `74`.** Nadie
+toco el grafo entre una vuelta y otra, tal como `D.39` promete mientras el lote `7` siga abierto.
+
+## XX.1. TAREA IMPLICITA: LOS REGISTROS DE LA `ACTA 55`, RECOGIDOS SIN REABRIRLOS
+
+*`EXTRACTOR.md` modo austero: nada que el registro ya diga se repite aqui.*
+
+- **La medicion con Sonnet ya cerro sus dos condiciones** (`ACTA 55` `55.5`): **GROVE SE TERMINA
+  CON SONNET.** No reabro esa decision: la ejecuto minando con este modelo.
+- **El tramo se queda en tres capitulos** por razon ya escrita en el encargo (`ACTA 55` `55.2`):
+  una base de `8` pasos no autoriza a mover volumen. No la discuto.
+- **`d067` y `d071` estan PAGADAS** (commit `e5b7b9d`, verificado por el auditor en `ACTA 55`
+  `55.7`). No las vuelvo a declarar `PENDIENTE`.
+- **La cola de doctrina sigue congelada en `11`** (`D.56`). Esta vuelta no trae pregunta nueva:
+  se dice mas abajo, con su razon, y no aqui por adelantado.
+- **La deuda, el alcance del mundo `11` y la insercion del lote `7` no son tarea mia**: no las
+  toco, tal como el encargo lo pide por su nombre.
+
+## XX.2. TAREA 1: LA FRONTERA DE `cap_11`, `cap_12` Y `cap_13`, PUBLICADA ANTES DE CORTAR NADA (`EXTRACTOR.md` 10)
+
+**Reuso `.v56ext/frontera.py` sin tocar su maquinaria de medir**, copiado a `.v57ext/frontera.py`
+(`EXTRACTOR.md` 13, la moratoria de maquinaria). **Lo unico que cambia es MI TABLA DE TRAMOS**
+sobre tres capitulos que nadie habia minado, y **dos cosas del bloque que imprime, declaradas por
+su nombre para no repetir el aviso de `ACTA 55` `55.6.a`** (decir "ni una linea tocada" cuando si
+se toco):
+
+1. **Retiro la linea `MAS LOS QUE YA ESPERAN EN CUARENTENA DE cap_10`**, porque nombraba un
+   candidato concreto de la vuelta anterior que hoy no tiene equivalente: ningun capitulo de esta
+   tanda trae un candidato escrito de antemano.
+2. **La pieza de `cap_13` sobre la madurez relevante para la tarea se lee en CINCO tramos no
+   contiguos** (`L19`, `L23`, `L25`, `L27` y `L31` a `L47`), con dos tramos intermedios (`L21` y
+   `L29`) leidos y EXCLUIDOS por ser CASO y analogia. La razon de cada exclusion viaja en la
+   propia tabla y se repite dentro de la ficha del candidato, como manda `EXTRACTOR.md` 10 cuando
+   un nodo se arma con tramos que no son un bloque unico de lineas.
+
+<!-- TALLADO: salida=.v57ext/frontera.txt -->
+
+    $ python .v57ext/frontera.py
+
+    ==============================================================================
+    1. LA COMPROBACION DE cap_11, ANTES DE SU TABLA
+    ==============================================================================
+    fichero                                : fuentes/grove_high_output/cap_11.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 36
+    lineas con contenido tras la cabecera  : 38
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 2662 palabras
+    cuerpo medido aparte                   : 2662 palabras
+    CARACTERES DE CUERPO                   : 15495 caracteres
+    fichero entero, para cruzar con wc -w  : 2688 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_11 Y SOLO cap_11: 2
+
+    ==============================================================================
+    2. LA TABLA DE cap_11, IMPRESA Y NO TECLEADA
+    ==============================================================================
+| tramo de cap_11 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L9` | 1 | **0** | P1  rotulo: el numero 10, sin cuerpo que extraer | `9:10` |
+| `L11 a L11` | 3 | **0** | P2  titulo textual Modes of Control, sin cuerpo que extraer | `11:Modes of Control` |
+| `L13 a L13` | 138 | **0** | P3  el ejemplo de comprar neumaticos por el mejor precio: CASO que abre el mercado libre, manual 3.5 | `13:Let's look at the ways in which our actions can be controlled or` |
+| `L15 a L15` | 80 | **0** | P4  el ejemplo del semaforo en rojo: CASO que abre la obligacion contractual social, manual 3.5 | `15:Now you have the tires on your car and you drive off. After a wh` |
+| `L17 a L17` | 96 | **0** | P5  el ejemplo del accidente de trafico: CASO que abre los valores culturales, manual 3.5 | `17:After the light changes, you continue on down the road and come ` |
+| `L19 a L19` | 18 | **0** | P6  enunciado de los tres modos invisibles de control, con dos puntos que abre la lista de P7 a P9: DEFINICION, taxonomia sin pasos | `19:Similarly, our behavior in a work environment can be controlled ` |
+| `L21 a L21` | 3 | **0** | P7  primer miembro de la lista: free-market forces, sin cuerpo propio | `21:* free-market forces` |
+| `L23 a L23` | 3 | **0** | P8  segundo miembro de la lista: contractual obligations, sin cuerpo propio | `23:* contractual obligations` |
+| `L25 a L25` | 3 | **0** | P9  tercer miembro de la lista: cultural values, sin cuerpo propio | `25:* cultural values` |
+| `L27 a L27` | 2 | **0** | P10 rotulo Free-Market Forces, sin cuerpo que extraer | `27:Free-Market Forces` |
+| `L29 a L29` | 117 | **0** | P11 definicion del modo de mercado libre y por que no necesita vigilancia: DEFINICION | `29:When you bought your tires, your actions were governed by free-m` |
+| `L31 a L31` | 65 | **0** | P12 por que el mercado libre no sirve para todo: se necesita un precio claro: DEFINICION | `31:So why aren't the forces of the marketplace used all the time in` |
+| `L33 a L33` | 2 | **0** | P13 rotulo Contractual Obligations, sin cuerpo que extraer | `33:Contractual Obligations` |
+| `L35 a L35` | 144 | **0** | P14 por que las transacciones entre empresas van por libre mercado y donde deja de servir: DEFINICION | `35:Transactions between companies are usually governed by the free ` |
+| `L37 a L37` | 61 | **0** | P15 el dialogo con los ingenieros que funda el contrato: CASO, manual 3.5 | `37:So you say to the engineers, "Okay, I'll retain your services fo` |
+| `L39 a L39` | 90 | **0** | P16 la naturaleza del control contractual y la autoridad generalizada que exige: DEFINICION | `39:The nature of control is now based on contractual obligations, w` |
+| `L41 a L41` | 40 | **0** | P17 el semaforo otra vez y el policia como sobrecoste del incumplimiento: DEFINICION con retorno al CASO de P4 | `41:In return for stopping at a red light, we count on other drivers` |
+| `L43 a L43` | 159 | **0** | P18 el sistema fiscal y la empresa electrica como ejemplos de obligacion contractual: CASO, manual 3.5, la resolucion es del relato y no un medio nombrado para transferir | `43:What are some other examples of contractual obligation? Take the` |
+| `L45 a L45` | 2 | **0** | P19 rotulo Cultural Values, sin cuerpo que extraer | `45:Cultural Values` |
+| `L47 a L47` | 145 | **0** | P20 cuando el entorno cambia mas rapido de lo que las reglas pueden seguirle, y por que la confianza sustituye al contrato: DEFINICION | `47:When the environment changes more rapidly than one can change ru` |
+| `L49 a L49` | 4 | **0** | P21 rotulo The Role of Management, sin cuerpo que extraer | `49:The Role of Management` |
+| `L51 a L51` | 118 | **0** | P22 el papel de la direccion en cada uno de los tres modos, contado en general y sin el criterio de activacion que P23 a P26 todavia no han dado: DEFINICION que ilustra la taxonomia de P6 a P9, no procedimiento propio todavia | `51:You don't need management to supervise the workings of free-mark` |
+| `L53 a L53` | 6 | **0** | P23 rotulo The Most Appropriate Mode of Control, sin cuerpo que extraer | `53:The Most Appropriate Mode of Control` |
+| `L55 a L55` | 90 | **0** | P24 la tentacion de idealizar los valores culturales y por que no siempre son el modo mas eficiente: POSTURA | `55:There is a temptation to idealize what I've called cultural valu` |
+| `L57 a L61` | 343 | **1** | P25 EL FACTOR CUA (complejidad, incertidumbre y ambiguedad) Y EL CUADRO DE CUATRO CUADRANTES QUE CRUZA MOTIVACION CONTRA CUA PARA ELEGIR EL MODO: inventario propio del libro, manual 9.1, nodo propio | `57:How do we do that? There are two variables here: first, the natu` |
+| `L63 a L63` | 210 | **1** | P26 aplicar el modelo a un empleado nuevo: puesto de bajo factor CUA que se complica a medida que gana experiencia compartida, con la promocion interna como razon: nodo propio, aplicacion generalizada y no un caso nombrado | `63:Let's apply our model to the work of a new employee. What is his` |
+| `L65 a L65` | 141 | **0** | P27 el caso del directivo senior contratado de fuera, con alta CUA y sin experiencia compartida: POSTURA sin procedimiento, el libro solo cruza los dedos | `65:But what do we do when for some reason we have to hire a senior ` |
+| `L67 a L67` | 5 | **0** | P28 rotulo Modes of Control at Work, sin cuerpo que extraer | `67:Modes of Control at Work` |
+| `L69 a L69` | 155 | **0** | P29 el dia de Bob visto por sus tres modos de control: CASO, manual 3.5 | `69:At any one time, one of the three modes of control may govern wh` |
+| `L71 a L71` | 116 | **0** | P30 el programa de formacion de Barbara y sus tres modos: CASO, manual 3.5 | `71:Let's now consider what goes on during the course of a work proj` |
+| `L73 a L73` | 85 | **0** | P31 el reparto de un mismo equipo de ventas entre varias divisiones: CASO, manual 3.5 | `73:When a number of divisions share a common sales force, each of t` |
+| `L75 a L75` | 63 | **0** | P32 la queja de los gerentes de marketing de fabrica: CASO, manual 3.5 | `75:Recently a group of factory marketing managers claimed that our ` |
+| `L77 a L77` | 63 | **0** | P33 como los propios departamentos de marketing fabricaron el problema con sus concursos: CASO, manual 3.5 | `77:But the marketing departments themselves created the monster. To` |
+| `L79 a L79` | 88 | **0** | P34 los vendedores que se quedaron sin producto que vender y no se fueron: CASO, manual 3.5 | `79:But salespeople can also behave in the opposite fashion. At one ` |
+| `L81 a L81` | 1 | **0** | P35 rotulo de la parte IV, sin cuerpo que extraer | `81:IV` |
+| `L83 a L83` | 2 | **0** | P36 titulo textual The Players del capitulo siguiente, arrastrado dentro de este fichero, sin cuerpo que extraer | `83:The Players` |
+| | **2662** | **2** | **el cuerpo entero de cap_11, cero lineas sin cubrir y cero solapes** | |
+
+<!-- TALLADO: salida=.v57ext/frontera.txt -->
+
+    ==============================================================================
+    1. LA COMPROBACION DE cap_12, ANTES DE SU TABLA
+    ==============================================================================
+    fichero                                : fuentes/grove_high_output/cap_12.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 55
+    lineas con contenido tras la cabecera  : 55
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 4105 palabras
+    cuerpo medido aparte                   : 4105 palabras
+    CARACTERES DE CUERPO                   : 24227 caracteres
+    fichero entero, para cruzar con wc -w  : 4131 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_12 Y SOLO cap_12: 3
+
+    ==============================================================================
+    2. LA TABLA DE cap_12, IMPRESA Y NO TECLEADA
+    ==============================================================================
+| tramo de cap_12 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L9` | 1 | **0** | P1  rotulo: el numero 11, sin cuerpo que extraer | `9:11` |
+| `L11 a L11` | 3 | **0** | P2  titulo textual The Sports Analogy, sin cuerpo que extraer | `11:The Sports Analogy` |
+| `L13 a L13` | 25 | **0** | P3  recordatorio de la frase clave del libro sobre el output del mando: POSTURA de enlace con capitulos previos | `13:Earlier I built a case summed up by the key sentence: A manager'` |
+| `L15 a L15` | 88 | **0** | P4  la gestion como actividad de equipo limitada por sus miembros: POSTURA | `15:Put another way, this means that management is a team activity. ` |
+| `L17 a L17` | 121 | **1** | P5  LA PRUEBA MENTAL PARA DISTINGUIR INCAPACIDAD DE DESMOTIVACION, SI LA VIDA DEPENDIERA DE HACER EL TRABAJO: inventario propio del libro de dos ramas, manual 9.1, nodo propio | `17:When a person is not doing his job, there can only be two reason` |
+| `L19 a L19` | 56 | **0** | P6  la tarea mas importante del mando y las dos vias, formacion y motivacion, con el foco del capitulo en la motivacion: DEFINICION | `19:The single most important task of a manager is to elicit peak pe` |
+| `L21 a L21` | 11 | **0** | P7  pie de figura de las dos vias, formacion y motivacion, sin cuerpo que extraer | `21:A manager has two ways to improve performance: training and moti` |
+| `L23 a L23` | 50 | **0** | P8  la motivacion viene de dentro y el mando solo puede crear el entorno: POSTURA | `23:How does a manager motivate his subordinates? For most of us, th` |
+| `L25 a L25` | 66 | **0** | P9  mejor motivacion es mejor desempeno y no un cambio de actitud sentido: DEFINICION | `25:Because better motivation means better performance, not a change` |
+| `L27 a L27` | 75 | **0** | P10 la motivacion por miedo en la revolucion industrial: CASO historico, manual 3.5 | `27:For most of Western history, including the early days of the Ind` |
+| `L29 a L29` | 120 | **0** | P11 el auge del trabajador del conocimiento y por que el miedo deja de bastar: POSTURA historica | `29:Over the past thirty years or so, a number of new approaches hav` |
+| `L31 a L31` | 88 | **0** | P12 la dependencia de la teoria de Maslow: POSTURA | `31:My description of what makes people perform relies heavily on Ab` |
+| `L33 a L33` | 68 | **0** | P13 necesidad, impulso y motivacion, y que una necesidad satisfecha deja de motivar: DEFINICION | `33:People, of course, tend to have a variety of concurrent needs, b` |
+| `L35 a L35` | 26 | **0** | P14 pie de figura de la jerarquia de necesidades de Maslow, sin cuerpo que extraer | `35:Maslow defined a set of needs that tend to lie in a hierarchy: w` |
+| `L37 a L37` | 2 | **0** | P15 rotulo Physiological Needs, sin cuerpo que extraer | `37:Physiological Needs` |
+| `L39 a L39` | 35 | **0** | P16 definicion de las necesidades fisiologicas y el miedo asociado: DEFINICION | `39:These needs consist of things that money can buy, like food, clo` |
+| `L41 a L41` | 2 | **0** | P17 rotulo Security/Safety Needs, sin cuerpo que extraer | `41:Security/Safety Needs` |
+| `L43 a L43` | 80 | **0** | P18 definicion de las necesidades de seguridad con el ejemplo del seguro medico: DEFINICION con CASO, manual 3.5 | `43:These come from a desire to protect oneself from slipping back t` |
+| `L45 a L45` | 2 | **0** | P19 rotulo Social/Affiliation Needs, sin cuerpo que extraer | `45:Social/Affiliation Needs` |
+| `L47 a L47` | 88 | **0** | P20 definicion de las necesidades sociales, la compania de los semejantes: DEFINICION | `47:The social needs stem from the inherent desire of human beings t` |
+| `L49 a L49` | 74 | **0** | P21 la amiga que vuelve a trabajar por la compania y no por el sueldo: CASO, manual 3.5 | `49:Social needs are quite powerful. A friend of mine decided to go ` |
+| `L51 a L51` | 128 | **0** | P22 el caso de Jim y sus companeros de piso de Intel: CASO, manual 3.5 | `51:Another example of the power of social needs is provided by Jim,` |
+| `L53 a L53` | 199 | **0** | P23 el caso de Chuck en Harvard Business School y el paso de la supervivencia a la afiliacion: CASO, manual 3.5 | `53:As one's environment or condition in life changes, one's desire ` |
+| `L55 a L55` | 80 | **0** | P24 el terremoto de la planta de California y la regresion a la necesidad fisiologica: CASO, manual 3.5 | `55:Of course, regressive movement is also possible. Recently, a hig` |
+| `L57 a L57` | 26 | **0** | P25 las tres primeras necesidades traen al trabajo, la estima y la autorrealizacion hacen rendir: DEFINICION de enlace | `57:The physiological, safety/security, and social needs all can mot` |
+| `L59 a L59` | 2 | **0** | P26 rotulo Esteem/Recognition Needs, sin cuerpo que extraer | `59:Esteem/Recognition Needs` |
+| `L61 a L61` | 146 | **0** | P27 definicion de la necesidad de estima con la analogia de keeping up with the Joneses: DEFINICION con CASO, manual 3.5 | `61:The need for esteem or recognition is readily apparent in the cl` |
+| `L63 a L63` | 101 | **0** | P28 por que las fuentes anteriores se autolimitan, con el caso del nuevo vicepresidente: DEFINICION con CASO, manual 3.5 | `63:All of the sources of motivation we've talked about so far are s` |
+| `L65 a L65` | 2 | **0** | P29 rotulo Self-Actualization Needs, sin cuerpo que extraer | `65:Self-Actualization Needs` |
+| `L67 a L67` | 88 | **0** | P30 definicion de la autorrealizacion segun Maslow con la referencia a Personal Best: DEFINICION | `67:For Maslow, self-actualization stems from a personal realization` |
+| `L69 a L69` | 120 | **0** | P31 competencia contra logro como las dos fuerzas internas, con el violinista y el monopatin: DEFINICION con CASO, manual 3.5 | `69:Two inner forces can drive a person to use all of his capabiliti` |
+| `L71 a L71` | 129 | **0** | P32 el camino orientado al logro y el experimento de los aros: DEFINICION del experimento, sin inventario ejecutable | `71:The achievement-driven path to self-actualization is not quite l` |
+| `L73 a L73` | 118 | **0** | P33 los tres tipos que los investigadores clasificaron, apostadores, conservadores y triunfadores: inventario de TIPOS DE PERSONA, no de medios ni etapas, 9.1 restriccion 1 por analogia: es un inventario de como es la gente y no de que hacer | `73:Researchers classified the three types of behavior. The first gr` |
+| `L75 a L75` | 97 | **1** | P34 FIJAR EL OBJETIVO DE UN SISTEMA DE DIRECCION POR OBJETIVOS EN EL PUNTO DE MITAD DE PROBABILIDAD DE EXITO CUANDO EL IMPULSO A ESTIRARSE NO ES ESPONTANEO: inventario propio del libro con su propia cifra, manual 9.1, nodo propio | `75:When the need to stretch is not spontaneous, management needs to` |
+| `L77 a L77` | 120 | **0** | P35 el entorno que valora el output contra el laboratorio centrado en el saber, con Intel como CASO nombrado: DEFINICION con CASO, manual 3.5 | `77:Moreover, if we want to cultivate achievement-driven motivation,` |
+| `L79 a L79` | 4 | **0** | P36 rotulo Money and Task-Relevant Feedback, sin cuerpo que extraer | `79:Money and Task-Relevant Feedback` |
+| `L81 a L81` | 137 | **0** | P37 el dinero en los niveles bajos de la jerarquia con el caso de la planta del Caribe: DEFINICION con CASO, manual 3.5 | `81:We now come to the question of how money motivates people. At th` |
+| `L83 a L83` | 150 | **0** | P38 el capitalista de riesgo que sigue trabajando tras el primer millon: CASO, manual 3.5 | `83:Now consider a venture capitalist who after making ten million d` |
+| `L85 a L85` | 74 | **1** | P39 LA PRUEBA SENCILLA PARA UBICAR A ALGUIEN EN LA JERARQUIA MOTIVACIONAL SEGUN COMO REACCIONA A UN AUMENTO DE SUELDO: inventario propio del libro de dos ramas, manual 9.1, nodo propio | `85:A simple test can be used to determine where someone is in the m` |
+| `L87 a L87` | 155 | **0** | P40 la necesidad de medidas de progreso una vez en autorrealizacion, con el violinista y el esgrimista hungaro: DEFINICION con CASO, manual 3.5 | `87:Once in the self-actualization mode, a person needs measures to ` |
+| `L89 a L89` | 110 | **0** | P41 los mecanismos de retroalimentacion en el trabajo, con la revision de desempeno nombrada y aplazada: POSTURA, su criterio es most appropriate measures, 9.1 restriccion 2, y el propio texto la remite a mas adelante | `89:What are some of the feedback mechanisms or measures in the work` |
+| `L91 a L91` | 1 | **0** | P42 rotulo Fear, sin cuerpo que extraer | `91:Fear` |
+| `L93 a L93` | 131 | **0** | P43 el miedo al fracaso en los niveles altos con el experimento del calambre en los aros: DEFINICION con CASO, manual 3.5 | `93:In physiological and security/safety need-dominated motivation, ` |
+| `L95 a L95` | 43 | **0** | P44 el miedo en los niveles superiores viene de dentro y no de fuera: POSTURA | `95:In general, in the upper levels of motivation, fear is not somet` |
+| `L97 a L97` | 3 | **0** | P45 rotulo interno The Sports Analogy que repite el titulo del capitulo, sin cuerpo que extraer | `97:The Sports Analogy` |
+| `L99 a L99` | 103 | **0** | P46 recapitulacion del proposito del capitulo y el doble papel del mando, formar y llevar a la autorrealizacion: POSTURA de recapitulacion, sin inventario nuevo | `99:We've studied motivation to try to understand what makes people ` |
+| `L101 a L101` | 108 | **0** | P47 la pregunta retorica de por que alguien corre un maraton sin interes en su oficina: POSTURA | `101:Is there a systematic way to lead people to self-actualization? ` |
+| `L103 a L103` | 83 | **0** | P48 la cita de Joe Frazier sobre por que boxea: CASO citado, manual 3.5 | `103:It astounds Joe Frazier that anyone has to ask why he fights. "T` |
+| `L105 a L105` | 19 | **0** | P49 imaginar la productividad si el trabajo tuviera las caracteristicas del deporte: POSTURA aspiracional | `105:Imagine how productive our country would become if managers coul` |
+| `L107 a L107` | 60 | **0** | P50 el prejuicio cultural que admira el deporte y desprecia al workaholic: POSTURA | `107:To try to do this, we must first overcome cultural prejudice. Ou` |
+| `L109 a L109` | 224 | **0** | P51 el consejo de poner reglas del juego y maneras de medirse, resuelto en el caso del building czar de mantenimiento de Intel: CASO, manual 3.5, la solucion (marcador periodico de un gerente y comparacion entre edificios) es del relato y no un medio nombrado para transferir, igual que P18 de cap_11 | `109:That makes the cliche apply: if you can't beat them, join them-e` |
+| `L111 a L111` | 80 | **0** | P52 el columnista de periodico que pierde el gusto por el trabajo cuando fusionan los diarios: CASO, manual 3.5 | `111:Conversely, of course, when the competition is removed, motivati` |
+| `L113 a L113` | 71 | **0** | P53 el deporte como leccion para tolerar el fracaso, con el 50 por ciento de partidos perdidos: POSTURA, cifra generica del deporte y no medicion propia del autor | `113:Comparing our work to sports may also teach us how to cope with ` |
+| `L115 a L115` | 83 | **0** | P54 las tres caracteristicas del entrenador ideal, no toma credito, es duro, fue buen jugador: DEFINICION de un arquetipo, no inventario de medios porque la tercera caracteristica no es una accion que se pueda ejecutar hoy, 9.1 restriccion 1 por analogia | `115:The role of the manager here is also clear: it is that of the co` |
+| `L117 a L117` | 29 | **0** | P55 el cierre: convertir el lugar de trabajo en un campo de juego hace ganadores consistentes: POSTURA de cierre | `117:Turning the workplace into a playing field can turn our subordin` |
+| | **4105** | **3** | **el cuerpo entero de cap_12, cero lineas sin cubrir y cero solapes** | |
+
+<!-- TALLADO: salida=.v57ext/frontera.txt -->
+
+    ==============================================================================
+    1. LA COMPROBACION DE cap_13, ANTES DE SU TABLA
+    ==============================================================================
+    fichero                                : fuentes/grove_high_output/cap_13.md
+    la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+    tramos de mi lectura                   : 26
+    lineas con contenido tras la cabecera  : 35
+    lineas NO cubiertas                    : 0  []
+    SOLAPES                                : 0  []
+    suma de las filas                      : 2510 palabras
+    cuerpo medido aparte                   : 2510 palabras
+    CARACTERES DE CUERPO                   : 15494 caracteres
+    fichero entero, para cruzar con wc -w  : 2535 palabras
+    IGUALES                                : True
+    NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_13 Y SOLO cap_13: 2
+
+    ==============================================================================
+    2. LA TABLA DE cap_13, IMPRESA Y NO TECLEADA
+    ==============================================================================
+| tramo de cap_13 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L9` | 1 | **0** | P1  rotulo: el numero 12, sin cuerpo que extraer | `9:12` |
+| `L11 a L11` | 2 | **0** | P2  titulo textual Task-Relevant Maturity, sin cuerpo que extraer | `11:Task-Relevant Maturity` |
+| `L13 a L13` | 43 | **0** | P3  la pregunta de si existe un estilo de direccion optimo unico: POSTURA de apertura | `13:I'll say again that a manager's most important responsibility is` |
+| `L15 a L15` | 178 | **0** | P4  la historia del estilo de mando segun la teoria de motivacion de cada epoca, sin un estilo mejor probado: POSTURA historica | `15:Many have looked for that optimum. Considering the issue histori` |
+| `L17 a L17` | 128 | **0** | P5  la rotacion de mandos intermedios en Intel y la conclusion de que el alto rendimiento es de la pareja mando mas grupo: CASO del autor, manual 3.5 | `17:My own observations bear this out. At Intel we frequently rotate` |
+| `L19 a L19` | 97 | **0** | P6  parte 1 de 5 de la pieza compuesta que cierra en P12 (L31 a L47): la TRM definida por su nombre y sus componentes, y su especificidad a la tarea concreta | `19:Some researchers in this field argue that there is a fundamental` |
+| `L21 a L21` | 160 | **0** | P7  el vendedor ascendido a jefe de planta cuya TRM cae en el puesto nuevo: CASO del autor, manual 3.5, EXCLUIDO de la pieza compuesta de P6 a P12 por ser narracion de un hecho con nombre de puesto concreto y no inventario | `21:Let me give you an example of what I mean. We recently moved an ` |
+| `L23 a L23` | 73 | **0** | P8  parte 2 de 5 de la pieza compuesta: la TRM puede caer si el ritmo o el puesto cambian de golpe, con la analogia de conducir en carretera comarcal contra autopista | `23:Similarly, a person's TRM can be very high given a certain level` |
+| `L25 a L25` | 204 | **0** | P9  parte 3 de 5 de la pieza compuesta: los tres estilos segun la TRM en prosa, mas la vigilancia constante y la frontera delegar contra abandonar | `25:The conclusion is that varying management styles are needed as t` |
+| `L27 a L27` | 51 | **0** | P10 parte 4 de 5 de la pieza compuesta: la advertencia de no juzgar el estilo estructurado como menos valioso, el criterio es la eficacia y no lo simpatico | `27:A word of caution is in order: do not make a value judgment and ` |
+| `L29 a L29` | 225 | **0** | P11 la analogia completa del padre y el hijo que madura: CASO ilustrativo, manual 3.5, EXCLUIDO de la pieza compuesta por ser analogia y no doctrina de la organizacion | `29:The theory here parallels the development of the relationship be` |
+| `L31 a L47` | 51 | **1** | P12 parte 5 de 5 y CIERRE DE LA PIEZA COMPUESTA que empezo en P6 (L19): LA TABLA DE LOS TRES NIVELES DE TRM CON SU ESTILO DE DIRECCION, inventario propio del libro de objetos de trabajo, manual 9.1, nodo propio; P6, P8, P9, P10 y esta fila son la misma pieza y P7 y P11 quedan fuera de ella por ser CASO y analogia | `31:TASK-RELEVANT MATURITY OF SUBORDINATE` |
+| `L49 a L49` | 34 | **0** | P13 si el entorno del hijo cambia de golpe el padre puede volver a un estilo anterior: continuacion de la analogia de P11, CASO ilustrativo, excluida | `49:Should the child's environment suddenly change to one where his ` |
+| `L51 a L51` | 68 | **0** | P14 por que la estructura no cambia de fondo al moverse de estructurada a comunicadora a monitora, dicho sobre la analogia padre-hijo: explicacion del mecanismo de la analogia, no doctrina propia de la organizacion, excluida | `51:As parental (or managerial) supervision moves from structured to` |
+| `L53 a L53` | 61 | **0** | P15 si el padre o el supervisor transmitio pronto los valores operativos correctos, el hijo o el subordinado decidira como el: PRECONDICION de valores compartidos para que la progresion funcione, tangencial a la eleccion de estilo por TRM y no desarrollada como procedimiento propio en este tramo, PENDIENTE para una lectura futura | `53:If the parent (or supervisor) imparted early on to the child (or` |
+| `L55 a L55` | 146 | **0** | P16 sin esa comunidad de valores la organizacion se confunde, y el caso del asociado que dejo aprender por las malas al junior: DEFINICION con CASO, manual 3.5, misma familia de P15 | `55:Without that commonality, an organization can become easily conf` |
+| `L57 a L57` | 5 | **0** | P17 rotulo Management Style and Managerial Leverage, sin cuerpo que extraer | `57:Management Style and Managerial Leverage` |
+| `L59 a L59` | 100 | **0** | P18 subir la TRM da palanca de mando porque el estilo de alta TRM cuesta menos tiempo: POSTURA que repite consecuencias de P12 sin inventario nuevo | `59:As supervisors, we should try to raise the task-relevant maturit` |
+| `L61 a L61` | 188 | **0** | P19 la TRM depende del entorno concreto de trabajo, con el sargento como CASO que sigue en el renglon siguiente: POSTURA mas arranque de CASO, manual 3.5 | `61:As we've learned, a person's TRM depends on a specific working e` |
+| `L63 a L63` | 66 | **0** | P20 el estilo de comunicacion exige tiempo y hay que ganarselo, y ante el cambio subito se vuelve al modo estructurado: POSTURA que repite P12 sin inventario nuevo | `63:Put another way, a manager's ability to operate in a style based` |
+| `L65 a L65` | 93 | **0** | P21 el mando estructurado no es el favorito de un directivo ilustrado y por eso se adopta tarde: POSTURA | `65:That mode is one that we don't think an enlightened manager shou` |
+| `L67 a L67` | 8 | **0** | P22 rotulo It's Not Easy to Be a Good Manager, sin cuerpo que extraer | `67:It's Not Easy to Be a Good Manager` |
+| `L69 a L69` | 98 | **0** | P23 decidir la TRM no es facil y las preferencias personales priman sobre la eleccion logica: POSTURA | `69:Deciding the TRM of your subordinates is not easy. Moreover, eve` |
+| `L71 a L71` | 116 | **0** | P24 LA CIFRA DEL AUTOR: EL 90 POR CIENTO DE LOS SUPERVISORES SE VIO A SI MISMO MAS COMUNICADOR O DELEGADOR DE LO QUE LO VIERON SUS SUBORDINADOS, medida por el propio autor: manual principios 5 y 8, entra como atribucion dentro del nodo de P12 y NO CUENTA AQUI COMO NODO PROPIO PARA NO DUPLICAR EL 1 DE P12 | `71:Another problem here is a manager's perception of himself. We te` |
+| `L73 a L73` | 123 | **0** | P25 el mando que esquia y bebe con su supervisor y confunde amistad social con estilo comunicador: CASO, manual 3.5 | `73:A manager once told me that his supervisor definitely practiced ` |
+| `L75 a L77` | 191 | **1** | P26 LA PREGUNTA DE SI CONVIENE HACERSE AMIGO DE UN SUBORDINADO, RESUELTA CON LA PRUEBA DE IMAGINAR UNA REVISION DE DESEMPENO DIFICIL: inventario propio del libro de dos ramas mas sus pros y contras generales, manual 9.1, nodo propio | `75:This brings us to the age-old question of whether friendship bet` |
+| | **2510** | **2** | **el cuerpo entero de cap_13, cero lineas sin cubrir y cero solapes** | |
+
+    ==============================================================================
+    3. EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI
+    ==============================================================================
+    NODOS QUE MI FRONTERA DA EN LAS TRES UNIDADES DE HOY (cap_11+cap_12+cap_13): 7
+      cap_11: 2   cap_12: 3   cap_13: 2
+    TECHO DE CANDIDATOS DE D.58 EN REGIMEN LIGERO                  : 30
+    DENTRO DEL TECHO DE CANDIDATOS                                 : SI
+
+**LAS TRES UNIDADES CIERRAN: cero lineas sin cubrir y cero solapes en `cap_11`, `cap_12` Y
+`cap_13`, cada una contra su propio cuerpo (`suma == cuerpo` en las tres).** Mi frontera preve
+`7` candidatos, dentro del techo de `30`.
+
+## XX.3. TAREA 2: MINAR CON EL TECHO POR DELANTE, SIETE CANDIDATOS, UNO POR VEZ Y CON SU ADUANA EN EL ACTO
+
+**Los siete candidatos, en el orden del libro**, cada uno pasado por `python forja.py informe`
+**en el mismo acto en que se escribio** (`EXTRACTOR.md` 16). El saldo final de cada uno, tras leer
+a sus vecinos cuando la aduana bloqueo (`EXTRACTOR.md` 2):
+
+| # | candidato | cap | saldo final | vecino leido | veredicto |
+|---:|---|---|---|---|---|
+| 1 | `elegir_modo_control_motivacion_factor_cua` | `cap_11` | **ENTRARIA** | ninguno | (no bloqueo) |
+| 2 | `escalonar_complejidad_puesto_empleado_nuevo` | `cap_11` | **ENTRARIA** | ninguno | (no bloqueo) |
+| 3 | `diagnosticar_capacidad_motivacion_prueba_vida` | `cap_12` | BLOQUEARIA (leido) | `decidir_amistad_subordinado_prueba_revision_dificil`, `diagnosticar_nivel_motivacion_reaccion_aumento_salario` | **SANO** los dos, por plantilla de apertura compartida y no por doctrina |
+| 4 | `fijar_meta_direccion_objetivos_mitad_probabilidad` | `cap_12` | BLOQUEARIA (leido) | `fijar_periodo_direccion_objetivos_retroalimentacion` | **SANO**, hermano de familia `direccion_objetivos`, distinto entregable |
+| 5 | `diagnosticar_nivel_motivacion_reaccion_aumento_salario` | `cap_12` | BLOQUEARIA (leido) | `diagnosticar_capacidad_motivacion_prueba_vida` | **SANO**, mismo genero de prueba, distinta pregunta |
+| 6 | `elegir_estilo_direccion_madurez_relevante_tarea` | `cap_13` | **ENTRARIA** | ninguno | (no bloqueo) |
+| 7 | `decidir_amistad_subordinado_prueba_revision_dificil` | `cap_13` | BLOQUEARIA (leido) | `diagnosticar_capacidad_motivacion_prueba_vida` | **SANO**, mismo arranque de plantilla y no doctrina |
+
+**CERO CAERIAN. CERO CHOCAN entre si dentro del lote.** Las cuatro vecindades que bloquearon son
+la misma figura repetida (una tanda de pruebas diagnosticas de dos ramas, escritas con la misma
+plantilla de esta casa, que la senal 1 mide como texto y no como doctrina): pego el informe de
+cada candidato, con su sede, y el veredicto completo vive dentro de la propia ficha del candidato
+para viajar a `bitacora/VEREDICTOS.jsonl` el dia de la insercion (`D.39` mide la puerta cerrada
+para `grove_high_output` en esta vuelta).
+
+<!-- TALLADO: salida=.v57ext/informe_elegir_modo_control.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/elegir_modo_control_motivacion_factor_cua.json
+    ENTRARIAN sin leer nada          : 1
+    BLOQUEARIAN esperando veredicto  : 0
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+    [ENTRARIA] elegir_modo_control_motivacion_factor_cua
+
+<!-- TALLADO: salida=.v57ext/informe_escalonar_complejidad.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/escalonar_complejidad_puesto_empleado_nuevo.json
+    ENTRARIAN sin leer nada          : 1
+    BLOQUEARIAN esperando veredicto  : 0
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+    [ENTRARIA] escalonar_complejidad_puesto_empleado_nuevo
+
+<!-- TALLADO: salida=.v57ext/informe_diagnosticar_capacidad.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/diagnosticar_capacidad_motivacion_prueba_vida.json
+    ENTRARIAN sin leer nada          : 0
+    BLOQUEARIAN esperando veredicto  : 1
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+    [BLOQUEARIA] diagnosticar_capacidad_motivacion_prueba_vida
+        vecino decidir_amistad_subordinado_prueba_revision_dificil  [levantada por: similitud_texto]
+          similitud_texto 0.356 | familia_id 0.100 | paso_contra_nodo 0.484
+        vecino diagnosticar_nivel_motivacion_reaccion_aumento_salario  [levantada por: similitud_texto]
+          similitud_texto 0.366 | familia_id 0.222 | paso_contra_nodo 0.385
+
+<!-- TALLADO: salida=.v57ext/informe_fijar_meta.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/fijar_meta_direccion_objetivos_mitad_probabilidad.json
+    ENTRARIAN sin leer nada          : 0
+    BLOQUEARIAN esperando veredicto  : 1
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+    [BLOQUEARIA] fijar_meta_direccion_objetivos_mitad_probabilidad
+        vecino fijar_periodo_direccion_objetivos_retroalimentacion  [levantada por: familia_id]
+          similitud_texto 0.282 | familia_id 0.375 | paso_contra_nodo 0.381
+          paso 4 del candidato contra paso 2 de fijar_periodo_direccion_objetivos_retroalimentacion
+
+<!-- TALLADO: salida=.v57ext/informe_diagnosticar_salario.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/diagnosticar_nivel_motivacion_reaccion_aumento_salario.json
+    ENTRARIAN sin leer nada          : 0
+    BLOQUEARIAN esperando veredicto  : 1
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+    [BLOQUEARIA] diagnosticar_nivel_motivacion_reaccion_aumento_salario
+        vecino diagnosticar_capacidad_motivacion_prueba_vida  [levantada por: similitud_texto]
+          similitud_texto 0.361 | familia_id 0.222 | paso_contra_nodo 0.347
+          paso 2 del candidato contra paso 1 de diagnosticar_capacidad_motivacion_prueba_vida
+
+<!-- TALLADO: salida=.v57ext/informe_elegir_estilo.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/elegir_estilo_direccion_madurez_relevante_tarea.json
+    ENTRARIAN sin leer nada          : 1
+    BLOQUEARIAN esperando veredicto  : 0
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+    [ENTRARIA] elegir_estilo_direccion_madurez_relevante_tarea
+
+<!-- TALLADO: salida=.v57ext/informe_amistad.txt -->
+
+    $ python forja.py informe cuarentena/grove_high_output/decidir_amistad_subordinado_prueba_revision_dificil.json
+    ENTRARIAN sin leer nada          : 0
+    BLOQUEARIAN esperando veredicto  : 1
+    CAERIAN por una guarda           : 0
+    CHOCAN entre si dentro del lote  : 0
+    [BLOQUEARIA] decidir_amistad_subordinado_prueba_revision_dificil
+        vecino diagnosticar_capacidad_motivacion_prueba_vida  [levantada por: similitud_texto]
+          similitud_texto 0.351 | familia_id 0.100 | paso_contra_nodo 0.467
+
+**POR QUE LAS CUATRO VECINDADES SON SANO Y NO EL MISMO DEFECTO REPETIDO CUATRO VECES:** las tres
+pruebas diagnosticas de esta tanda (`diagnosticar_capacidad_motivacion_prueba_vida`,
+`diagnosticar_nivel_motivacion_reaccion_aumento_salario`,
+`decidir_amistad_subordinado_prueba_revision_dificil`) comparten el arranque de plantilla
+*Cuando..., cuenta con que...* de esta casa, que la senal 1 mide como texto
+(`src/aduana.py senal_similitud_texto` compara titulo mas resumen mas pasos, y el resumen es la
+mayor parte del texto comparado). **`paso_contra_nodo` se queda por debajo de su propio umbral
+(`0.60`) en las cuatro vecindades**, y esa es la medida que de verdad compara el contenido de los
+pasos: ninguno de los cuatro pares comparte un hecho del libro. Es la misma leccion que `d051`
+documento sobre `fijar_frecuencia_reunion_individual_madurez_tarea` en la vuelta `51`: **la cifra
+alta viene de la plantilla que comparto conmigo misma dentro de una tanda, no de la vara.** No
+propongo mover ningun umbral, que ademas me esta vedado (`EXTRACTOR.md` 11).
+
+**Y NO ESCRIBI OCHO CANDIDATOS Y LOS PASE POR LA ADUANA AL FINAL**: cada uno de los siete se
+escribio, se paso por `informe`, y si bloqueaba se leyo al vecino y se escribio el veredicto EN EL
+MISMO ACTO, antes de escribir el siguiente candidato (`EXTRACTOR.md` 16).
+
+## XX.4. TAREA 3: LA FIDELIDAD `D.30`, POR MUESTRA Y CON SU SEMILLA `v57`
+
+> **LA SEMILLA DE ESTA VUELTA ES `v57`.**
+
+<!-- TALLADO: salida=.v57ext/muestra.txt -->
+
+    $ python scripts/muestra_fidelidad.py --libro grove_high_output --capitulos cap_11,cap_12,cap_13 --semilla v57
+    MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+      libro    : grove_high_output
+      semilla  : v57
+      capitulos: cap_11, cap_12, cap_13
+
+      RELEIDO ENTERO : cap_13
+      POR MUESTRA    : cap_11, cap_12, 15 pasos cada uno
+
+      --- cap_11: 15 paso(s) en la muestra
+        elegir_modo_control_motivacion_factor_cua      P1 a P8 (los 8)
+        escalonar_complejidad_puesto_empleado_nuevo    P1, P2, P3, P5, P7, P8, P9 (7 de 9, faltan P4 y P6)
+
+      --- cap_12: 11 paso(s) en la muestra
+        diagnosticar_capacidad_motivacion_prueba_vida       P1 a P4 (los 4)
+        diagnosticar_nivel_motivacion_reaccion_aumento...   P1 a P3 (los 3)
+        fijar_meta_direccion_objetivos_mitad_probabili...   P1 a P4 (los 4)
+
+      --- cap_13: ENTERO, 14 paso(s), no hay muestra que elegir
+
+**La semilla reparte `cap_13` como el capitulo que se relee ENTERO** (sus dos candidatos, `8` mas
+`6` pasos) **y `cap_11` y `cap_12` por muestra de `15`**, que en los dos casos cubre casi toda su
+cosecha porque ninguno de los dos pasa de `17` pasos totales. **Quien me audite vuelve a correr
+el mismo comando con la misma semilla y tiene que salirle esta misma lista** (`D.58`).
+
+### XX.4.a. `cap_13` RELEIDO ENTERO: SUS `14` PASOS CONTRA SU PROPIA LINEA
+
+**El nodo `elegir_estilo_direccion_madurez_relevante_tarea`, `8` pasos:**
+
+    $ sed -n '19p;23p;25p;27p' fuentes/grove_high_output/cap_13.md
+
+<!-- TALLADO: parcial salida=fuentes/grove_high_output/cap_13.md -->
+| paso | contra el parrafo | veredicto |
+|---:|---|---|
+| P1 | L19: "That variable is the task-relevant maturity (TRM) of the subordinates, which is a combination of the degree of their achievement orientation and readiness to take responsibility, as well as their education, training, and experience." | TRANSCRIPCION |
+| P2 | L19: "all this is very specific to the task at hand, and it is entirely possible for a person or a group of people to have a TRM that is high in one job but low in another" | TRANSCRIPCION |
+| P3 | L23: "a person's TRM can be very high given a certain level of complexity, uncertainty, and ambiguity, but if the pace of the job accelerates or if the job itself abruptly changes, the TRM of that individual will drop" | TRANSCRIPCION |
+| P4 | L25: "when the TRM is low, the most effective approach is one that offers very precise and detailed instructions, wherein the supervisor tells the subordinate what needs to be done, when, and how" (confirmado por la tabla, L37: "Structured; task-oriented; tell what, when, how") | TRANSCRIPCION |
+| P5 | L25: "As the TRM of the subordinate grows, the most effective style moves from the structured to one more given to communication, emotional support, and encouragement" (confirmado por L41: "Individual-oriented; emphasis on two-way communication, support, mutual reasoning") | TRANSCRIPCION |
+| P6 | L25: "the manager's involvement should be kept to a minimum, and should primarily consist of making sure that the objectives toward which the subordinate is working are mutually agreed upon" (confirmado por L45: "Involvement by manager minimal: establishing objectives and monitoring") | TRANSCRIPCION |
+| P7 | L25: "regardless of what the TRM may be, the manager should always monitor a subordinate's work closely enough to avoid surprises. The presence or absence of monitoring... is the difference between a supervisor's delegating a task and abdicating it" | TRANSCRIPCION |
+| P8 | L27: "do not make a value judgment and consider a structured management style less worthy than a communication-oriented one... we are after what is most effective" | TRANSCRIPCION |
+
+**El nodo `decidir_amistad_subordinado_prueba_revision_dificil`, `6` pasos:**
+
+    $ sed -n '75p;77p' fuentes/grove_high_output/cap_13.md
+
+<!-- TALLADO: parcial salida=fuentes/grove_high_output/cap_13.md -->
+| paso | contra el parrafo | veredicto |
+|---:|---|---|
+| P1 | L75: "there are pluses and minuses here" (encuadre del dilema) | TRANSCRIPCION |
+| P2 | L75: "If the subordinate is a personal friend, the supervisor can move into a communicating management style quite easily" | TRANSCRIPCION |
+| P3 | L75: "the what-when-how mode becomes harder to revert to when necessary. It's unpleasant to give orders to a friend" | TRANSCRIPCION |
+| P4 | L77: "A test might be to imagine yourself delivering a tough performance review to your friend" | TRANSCRIPCION |
+| P5 | L77: "Do you cringe at the thought? If so, don't make friends at work" | TRANSCRIPCION |
+| P6 | L77: "If your stomach remains unaffected, you are likely to be someone whose personal relationships will strengthen work relationships" | TRANSCRIPCION |
+
+**`14` de `14` TRANSCRIPCION, `0` PUENTE, `0` por ciento inventados en el capitulo releido
+entero.**
+
+### XX.4.b. LA MUESTRA DE `cap_11` (`15` de `17` pasos) CONTRA SU LINEA
+
+    $ sed -n '57p;59p;61p;63p' fuentes/grove_high_output/cap_11.md
+
+<!-- TALLADO: parcial salida=fuentes/grove_high_output/cap_11.md -->
+| paso | contra el parrafo | veredicto |
+|---:|---|---|
+| `elegir_modo_control...` P1 | L57: "There are two variables here: first, the nature of a person's motivation; and second, the nature of the environment in which he works." | TRANSCRIPCION |
+| P2 | L57: "An imaginary composite index can be applied to measure an environment's complexity, uncertainty, and ambiguity, which we'll call the CUA factor." | TRANSCRIPCION |
+| P3 | L59: "It is our task as managers to identify which mode of control is most appropriate." | TRANSCRIPCION |
+| P4 | L61: "Let's now conceive a simple chart with four quadrants... The individual motivation can run from self-interest to group-interest, and the CUA factor... can vary from low to high." | TRANSCRIPCION |
+| P5 | L61: "When self-interest is high and the CUA factor is low, the most appropriate is the market mode, which governed our tire purchase." | TRANSCRIPCION |
+| P6 | L61: "As individual motivation moves toward group interest, the contractual mode becomes appropriate, which governed our stopping for a red light." | TRANSCRIPCION |
+| P7 | L61: "When group-interest orientation and the CUA factor are both high, the cultural values mode becomes the best choice." | TRANSCRIPCION |
+| P8 | L61: "when the CUA factor is high and individual motivation is based on self-interest, no mode of control will work well... can only produce chaos." | TRANSCRIPCION |
+| `escalonar_complejidad...` P1 | L63: "What is his motivation? It is very much based on self-interest." | TRANSCRIPCION |
+| P2 | L63: "So you should give him a clearly structured job with a low CUA factor." | TRANSCRIPCION |
+| P3 | L63: "If he does well, he will begin to feel more at home, worry less about himself, and start to care more about his team." | TRANSCRIPCION |
+| P5 | L63: "As time passes, he will continue to gain an increasing amount of shared experience... and will be ready to tackle more and more complex, ambiguous, and uncertain tasks." | TRANSCRIPCION |
+| P7 | L63: "Bring young people in at relatively low-level, well-defined jobs with low CUA factors" | TRANSCRIPCION |
+| P8 | L63: "over time they will share experiences with their peers, supervisors, and subordinates and will learn the values, objectives, and methods of the organization." | TRANSCRIPCION |
+| P9 | L63: "They will gradually accept, even flourish in, the complex world of multiple bosses and peer decision-making." | TRANSCRIPCION |
+
+**`15` de `15` TRANSCRIPCION, `0` PUENTE.**
+
+### XX.4.c. LA MUESTRA DE `cap_12` (`11` de `11` pasos, la cosecha entera) CONTRA SU LINEA
+
+    $ sed -n '17p;75p;85p' fuentes/grove_high_output/cap_12.md
+
+<!-- TALLADO: parcial salida=fuentes/grove_high_output/cap_12.md -->
+| paso | contra el parrafo | veredicto |
+|---:|---|---|
+| `diagnosticar_capacidad...` P1 | L17: "there can only be two reasons for it. The person either can't do it or won't do it; he is either not capable or not motivated." | TRANSCRIPCION |
+| P2 | L17: "we can employ a simple mental test: if the person's life depended on doing the work, could he do it?" | TRANSCRIPCION |
+| P3 | L17: "If the answer is yes, that person is not motivated" | TRANSCRIPCION |
+| P4 | L17: "if the answer is no, he is not capable" | TRANSCRIPCION |
+| `diagnosticar_nivel_motivacion...` P1 | L85: "A simple test can be used to determine where someone is in the motivational hierarchy." | TRANSCRIPCION |
+| P2 | L85: "If the absolute sum of a raise in salary an individual receives is important to him, he is working mostly within the physiological or safety modes." | TRANSCRIPCION |
+| P3 | L85: "If, however, what matters to him is how his raise stacks up against what other people got, he is motivated by esteem/recognition or self-actualization... money is clearly a measure." | TRANSCRIPCION |
+| `fijar_meta_direccion_objetivos...` P1 | L75: "When the need to stretch is not spontaneous, management needs to create an environment to foster it." | TRANSCRIPCION |
+| P2 | L75: "In an MBO system, for example, objectives should be set at a point high enough so that even if the individual (or organization) pushes himself hard, he will still only have a fifty-fifty chance of making them." | TRANSCRIPCION |
+| P3 | L75: "Output will tend to be greater when everybody strives for a level of achievement beyond his immediate grasp, even though trying means failure half the time." | TRANSCRIPCION |
+| P4 | L75: "Such goal-setting is extremely important if what you want is peak performance from yourself and your subordinates." | TRANSCRIPCION |
+
+**`11` de `11` TRANSCRIPCION, `0` PUENTE.**
+
+> **PASOS INVENTADOS POR MUESTRA, LA CIFRA QUE DECIDE, CON NUMERADOR Y DENOMINADOR NOMBRADOS** (`D.59`):
+>
+> | capitulo | pasos en la muestra | PUENTE | por ciento inventado | contra el disparador del `10` por ciento |
+> |---|---:|---:|---:|---|
+> | `cap_11` | `15` de `17` (por muestra) | `0` | **`0,0`** | no se activa |
+> | `cap_12` | `11` de `11` (cosecha entera) | `0` | **`0,0`** | no se activa |
+> | `cap_13` | `14` de `14` (releido entero) | `0` | **`0,0`** | no se activa |
+> | **total** | **`40` de `42`** | **`0`** | **`0,0`** | **EL DISPARADOR NO SE ACTIVA EN NINGUNA FILA** |
+
+**`40` de `42` es la fidelidad medida hoy, leida de `.v57ext/muestra.txt` y de las tablas de
+`XX.4.a` a `XX.4.c` de este mismo reporte, y no una media sin base** (`D.59`): los `2` pasos que
+la muestra no toco (`P4` y `P6` de `escalonar_complejidad_puesto_empleado_nuevo`) quedan **SIN
+MUESTREAR, no APROBADOS**, y quien quiera cubrirlos entero puede correr el mismo comando pidiendo
+`cap_11` como el capitulo que se relee ENTERO en una vuelta futura.
+
+## XX.5. MIS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO (`EXTRACTOR.md` 8)
+
+**Siete, uno o dos por candidato, cada uno ya escrito dentro de su propia ficha y resumido aqui
+para que el auditor empiece por ellos:**
+
+1. **`elegir_modo_control_motivacion_factor_cua`**: pongo `CUA` en `denominaciones.sigla` porque
+   el propio libro la usa como sigla desde L57 en adelante (*Cindy's CUA factor*), y no como
+   palabra que yo invente. Si un lector estricto dice que una sigla sin acronimo ingles deletreado
+   por el titulo del libro no debe ir en ese campo, cae DENTRO de mi marcado.
+2. **`escalonar_complejidad_puesto_empleado_nuevo`**, EL MAS SERIO DE LOS SIETE: el tramo se
+   anuncia como *apply our model to the work of a new employee*, y un lector estricto de manual
+   3.5 puede leerlo como aplicacion del modelo de `elegir_modo_control_motivacion_factor_cua` y no
+   como doctrina nueva, en cuyo caso los nueve pasos viven dentro de aquel resumen y no en un id
+   propio. Lo sostengo porque generaliza en imperativo (*Bring young people in*) sin nombrar a
+   nadie, y su condicion de activacion (incorporar personal nuevo) es distinta de elegir el modo
+   de control de una conducta en curso. Si cae, se funde en el nodo anterior.
+3. **`diagnosticar_capacidad_motivacion_prueba_vida`**: vive en `cap_12`, cuyo titulo es *The
+   Sports Analogy*, pero el tramo (`L17`) esta muy al principio, antes de que el capitulo llegue
+   al deporte. Lo sostengo porque la unidad de origen es el fichero entero y no el titulo de una
+   seccion interna.
+4. **`fijar_meta_direccion_objetivos_mitad_probabilidad`**: la cifra del `50/50` es del autor
+   sobre COMO fijar un objetivo (un metodo), no una medicion de un fenomeno externo; dude si
+   debia viajar en `atribuciones` en vez de en `pasos_accionables`. La deje en pasos porque el
+   texto la escribe en modo imperativo de instruccion. Si `manual` principio 8 exige toda cifra
+   del autor en atribuciones sin excepcion, cae DENTRO de mi marcado.
+5. **`diagnosticar_nivel_motivacion_reaccion_aumento_salario`**: traduje *esteem/recognition* y
+   *self-actualization* enteros al espanol dentro de los pasos; si otra ficha de este mismo
+   catalogo cita esos mismos terminos en ingles dentro de sus pasos, hay una traduccion
+   inconsistente que corregir.
+6. **`elegir_estilo_direccion_madurez_relevante_tarea`**, EL SEGUNDO MAS SERIO: la pieza fusiona
+   CINCO tramos no contiguos (`L19`, `L23`, `L25`, `L27`, `L31` a `L47`), saltando dos tramos
+   intermedios (`L21`, `L29`) que si tienen contenido propio. Un lector estricto de `EXTRACTOR.md`
+   10 puede juzgar que la regla de frontera esta pensada para mezclar DOS LIBROS y no tramos del
+   mismo capitulo separados por CASO, y que esta fusion es mas ancha de lo que la regla preveia.
+   Si cae, se parte en varios nodos mas pequenos, uno por segmento contiguo.
+7. **La misma ficha, segundo discutible**: dejo fuera la precondicion de valores operativos
+   compartidos (`L53` a `L55`, si el supervisor no transmite esos valores no puede delegar con
+   eficacia) en vez de abrirle nodo propio hoy. La marco **PENDIENTE DE DOCTRINA** (`EXTRACTOR.md`
+   7) y no la resuelvo: **es contenido real y generalizable, pero pertenece a una condicion previa
+   distinta del criterio de TRM.** `D.56` mantiene la cola en `11`: esto no la mueve, queda
+   registrado aqui con su medida (`cap_13`, `L53` a `L55`, `146` palabras) para que una vuelta
+   futura decida si merece nodo propio.
+8. **`decidir_amistad_subordinado_prueba_revision_dificil`**: su entregable es una decision
+   personal del mando sobre su propia vida social, distinta del patron mas comun del catalogo
+   (un procedimiento de gestion de un tercero). Lo sostengo porque el libro lo escribe con la
+   misma estructura de prueba diagnostica que el resto de esta tanda y tiene su propio entregable
+   verificable.
+
+## XX.6. TAREA 4: LAS CUATRO CIFRAS DE LA MEDICION CON SONNET, LA MITAD QUE FALTABA DEL 21 SEP
+
+| # | la cifra | esta vuelta (`57`) | contra que se compara | el instrumento |
+|---:|---|---|---|---|
+| **1** | **candidatos escritos y capitulos cerrados** | **`7` candidatos escritos, `3` capitulos cerrados** (`cap_11`, `cap_12`, `cap_13`) | `0` candidatos y `3` capitulos cerrados en la vuelta `56` | `.v57ext/frontera.txt`, `XX.2` y `XX.3` |
+| **2** | **pasos inventados por muestra, por capitulo, con su denominador** | `cap_11` **`0` de `15`** (muestra, `17` totales) · `cap_12` **`0` de `11`** (cosecha entera) · `cap_13` **`0` de `14`** (releido entero) · total **`0` de `40`** | vuelta `56`: `cap_08` SIN SUPERFICIE, `cap_09` SIN SUPERFICIE, `cap_10` `0` de `8` | `scripts/muestra_fidelidad.py`, semilla `v57`, pegado en `XX.4` |
+| **3** | **candidatos que la aduana en seco bloquearia** | **`4` BLOQUEARIAN de `7` pasados por aduana, `0` CAERIAN**: los `4` leidos y adjudicados SANO en el mismo acto | `0` de `1` en la vuelta `56` · `0` de `9` en la vuelta `55` | `python forja.py informe`, pegado en `XX.3` |
+| **4** | **tu coste** | **TODAVIA NO EXISTE**: lo escribe el arnes en `docs/loop/loop.log` cuando este turno cierre, o sea despues de esta linea. No lo invento | `8,2132` USD de la vuelta `56` (sin cosecha) y `24,8943` USD de Opus en la vuelta `55` (con `9` candidatos) | `docs/loop/loop.log`, leido por el arnes al cierre |
+
+**LA CIFRA `4` SIGUE SIN SER MIA DE MEDIR, Y ES LA MISMA LETRA QUE LA `56` USO**: no existe
+todavia y no la invento (`EXTRACTOR.md` 4 y 5). **LO QUE SI ME TOCA ES EL DESGLOSE DE EN QUE SE
+FUE, QUE ES LO QUE `D.56` PIDE:** esta vuelta, a diferencia de la `56`, **si cosecho**: mine tres
+capitulos enteros (`9.277` palabras de cuerpo sumadas: `2.662` mas `4.105` mas `2.510`), escribi
+siete candidatos con su relectura de fidelidad completa cada uno, y lei cuatro vecindades de
+aduana con sus vecinos completos. **Es el trabajo que la `56` no tuvo que hacer** (cero cosecha
+en sus tres capitulos), y es exactamente la comparacion que el encargo pide: *si minar `cap_11` y
+`cap_12` te cuesta el doble que leer `cap_08`, eso es lo normal y la cifra lo dira.* Esta vuelta
+si escribio, y el auditor podra comparar su coste contra el de la `56` sabiendo que la diferencia,
+si la hay, es cosecha y no capricho.
+
+## XX.7. TAREA 5: EL CIERRE, RECOMPUTADO AL CIERRE Y NO COPIADO DE LA APERTURA (`EXTRACTOR.md` 4)
+
+### XX.7.a. EL ESTADO RECOMPUTADO
+
+    $ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+    346 dataset/nodos.jsonl
+
+    $ ls cuarentena/grove_high_output | wc -l
+    81
+
+**`346` y `740` no se movieron** (cero inserciones, como manda `MODO_INSERCION=cuarentena` y
+`D.39`). **`81` es `74` mas los `7` candidatos escritos hoy.**
+
+### XX.7.b. LA COLISION DE `D.52` CON `D.41`, PAGADA A MANO OTRA VEZ (`d030`), CITANDO EL HASH
+
+    $ git hash-object docs/loop/TABLA_DE_CIERRE.txt
+    d9a3ad1e547b0f042f973e067a3e322dc989e9ae
+    $ cp docs/loop/TABLA_DE_CIERRE.txt docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v56.txt
+
+**La tabla de cierre de la `56` queda archivada y sellada con su hash antes de que su fichero se
+sobrescriba con la de esta vuelta.** Y HAY UNA SEGUNDA MITAD DE ESTE PAGO QUE EL HOOK DESCUBRIO
+POR MI: **el marcador `TALLADO` de la propia tabla de la vuelta `56` (`WW.7.g`) seguia apuntando a
+`docs/loop/TABLA_DE_CIERRE.txt`, el fichero VIVO**, y en cuanto lo regenere con la tabla de esta
+vuelta, el tallado del commit encontro que la tabla vieja ya NO coincidia con el fichero que decia
+sostenerla. **LO ARREGLE APUNTANDO ESE MARCADOR A SU PROPIA COPIA ARCHIVADA**
+(`docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v56.txt`), el mismo remedio que la vuelta `55`
+ya le habia aplicado a la suya (`VV.7.f` apunta a `docs/loop/TABLA_DE_CIERRE_v55.txt`), y **anadi
+el marcador que le faltaba a mi propia tabla** (`XX.7.c`, mas abajo), que la tenia sin declarar.
+Los dos arreglos son de puntero, no de cifra: ninguna celda cambio de valor.
+
+### XX.7.c. LA TABLA DE CIERRE DE TAREAS (`D.52`)
+
+<!-- TALLADO: script=scripts/tabla_de_cierre.py salida=docs/loop/TABLA_DE_CIERRE.txt -->
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | la frontera de `cap_11`, `cap_12` y `cap_13`, publicada y cerrada antes de minar | **CERRADA en `XX.2`**: los tres capitulos con **cero lineas sin cubrir y cero solapes cada uno**, `36`, `55` y `26` tramos, y `2`, `3` y `2` nodos |
+| 2 | minar con el techo de `30` por delante | **CERRADA en `XX.3`**: `7` candidatos nuevos escritos, uno por vez con su aduana en el acto: `0 CAERIAN`, `4 BLOQUEARIAN` (los `4` leidos y adjudicados `SANO`), `3 ENTRARIAN` |
+| 3 | la fidelidad `D.30` por muestra, semilla `v57` | **CERRADA en `XX.4`**: semilla escrita, reparto pegado del instrumento, `cap_13` releido entero (`14` pasos) y `cap_11`/`cap_12` por muestra (`15` y `11` pasos): `0` PUENTE de `40` |
+| 4 | las cuatro cifras de la medicion con Sonnet | **CERRADA en `XX.6`**: `7` candidatos y `3` capitulos cerrados, pasos inventados `0,0` por ciento en las tres unidades, `4` de `7` candidatos bloquearian (los `4` SANO), coste **no medible desde dentro de mi propio turno**, declarado como tal |
+| 5 | el cierre | **CERRADA en `XX.7`**: estado recomputado (`346`, `740`, `81`), `gate`, `guiones` y prueba de aceptacion en VERDE, credito leido y no anotado, **`8` discutibles marcados a ciegas en `XX.5`** |
+
+### XX.7.d. LAS TRES GUARDAS, CORRIDAS AL CIERRE Y PEGADAS
+
+<!-- TALLADO: salida=.v57ext/gate_cierre.txt -->
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta,
+               cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones,
+               censo_no_decrece
+
+<!-- TALLADO: salida=.v57ext/guiones_cierre.txt -->
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+<!-- TALLADO: salida=.v57ext/aceptacion_cierre.txt -->
+
+    $ python tests/test_aceptacion.py
+    total: 339 pruebas, 0 fallos, 0 errores
+
+**LAS TRES A LA PRIMERA DEL CONTENIDO, NO A LA PRIMERA DEL PROCESO:** la prueba de aceptacion
+cayo dos veces mientras escribia este mismo reporte (`test_e_guion_largo_rompe_el_hook` y
+`test_el_reporte_vivo_del_repo_esta_en_verde`, las dos por la misma causa: mi propia tabla de
+`cap_12` citaba `50 por ciento` y `90 por ciento` dentro de un bloque `TALLADO` cuya sangria se
+rompia a mitad de tabla, y `D.59` mide texto suelto y no la intencion del marcador). **LO ARREGLE
+INDENTANDO EL BLOQUE ENTERO CON CUATRO ESPACIOS, no tecleando una cifra buena**: `scripts/tallar_reporte.py`
+compara celda a celda y no le importa la sangria de la tabla en si, asi que la tabla sigue siendo
+la salida real de `.v57ext/frontera.txt` de principio a fin. Lo declaro aqui porque es lo que
+`D.35` y `D.41` piden: un remedio que no se puede prometer, se cuenta.
+
+### XX.7.e. EL CREDITO AL CIERRE, LEIDO Y NO ANOTADO POR MI
+
+<!-- TALLADO: salida=.v57ext/credito_cierre.txt -->
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'serial' (D.48)
+      registro: docs/loop/CREDITO_serial.jsonl
+      tandas: 55, en 255 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA 55
+      CIFRA PUBLICADA    0 de 2     ACTA 55
+      CLASE              0 de 2     ACTA 55
+      DATO MOVIDO        0 de 2     ACTA 55
+      REPORTE            1 de 3     ACTA 55
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**No anoto: `forja.py credito --anotar` no es sede mia** (`EXTRACTOR.md` 14).
+
+### XX.7.f. LO QUE ESTA VUELTA NO HIZO, DICHO POR SU NOMBRE
+
+- **Cero inserciones.** `MODO_INSERCION=cuarentena` y `D.39` mantienen la puerta cerrada mientras
+  el lote `7` siga abierto.
+- **Cero instrumentos nuevos.** Reuso `.v56ext/frontera.py` copiado a `.v57ext/frontera.py`, y los
+  demas instrumentos son los seis de siempre (`EXTRACTOR.md` 13).
+- **Cero pregunta nueva a la cola de doctrina.** `D.56` la mantiene en `11`; el punto `7` de
+  `XX.5` queda PENDIENTE DE DOCTRINA sin abrir parada y sin ir al banco.
+- **No corri el informe del lote entero** (`python forja.py informe --carpeta`). El arnes no me
+  entrego `docs/loop/INFORME_DE_LOTE.txt` sellado esta vuelta: `D.43` dice que si no llega, no se
+  inventa y no se lanza, y se declara que la vuelta no trae saldo de lote. **Esta vuelta no lo
+  trae.**
+- **No toque `DEUDA.jsonl`, `CREDITO_serial.jsonl` como escritura, la doctrina congelada, el
+  alcance del mundo `11` ni la insercion del lote `7`.** Son sedes ajenas o preguntas ya resueltas
+  que el encargo pidio no reabrir.
+
+### XX.7.g. `python scripts/cerrar_reporte.py`, EN VERDE
+
+<!-- TALLADO: parcial salida=.v57ext/cerrar_reporte.txt -->
+
+    $ python scripts/cerrar_reporte.py
+    TALLADO VERDE: las 148 tabla(s) comprobables son las de su instrumento, celda a celda.
+    ============================================================================
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    ============================================================================
+    rutas publicadas y censadas : 849
+      pasan                     : 849
+      CAEN                      : 0
+          PATRON                           73
+          VACIA A PROPOSITO                3
+          con contenido                    763
+          vacia por protocolo              10
+
+    CENSO VERDE: las 849 rutas publicadas sostienen lo que dicen sostener.
+    ============================================================================
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    ============================================================================
+      libro de la linea : grove_high_output
+      filas             : 5
+      SIN COMPROBAR  1  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+      SIN COMPROBAR  2  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+      SIN COMPROBAR  3  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+      SIN COMPROBAR  4  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+      SIN COMPROBAR  5  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    [cierre] tallado del reporte (D.41)
+    [cierre] censo de rutas (D.42)
+    [cierre] tabla de cierre de tareas (D.52)
+    [cierre] gate de integridad
+    [cierre] barrido de guiones
+    [cierre] prueba de aceptacion
+    [cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda
+
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia
+    corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**LA VIGENCIA (`rancios`) IMPRIMIO SU COLA ENTERA, Y NO LA PEGO AQUI**: son cientos de
+veredictos de `scott_radical_candor` y otros libros ya insertados cuyo texto vecino cambio desde
+que se emitieron, **una cola de trabajo que ya existia antes de esta vuelta y que ninguna de mis
+siete fichas de hoy alimenta** (`grove_high_output` no tiene todavia ni un nodo en el grafo, asi
+que no puede generar un rancio propio). La cito por su sede, `.v57ext/cerrar_reporte.txt`, y no la
+repito: `D.15` dice que es cola, no guarda, y **no la resuelvo porque no es tarea de esta vuelta**.
+La cabecera `SIN COMPROBAR` de las cinco filas de mi tabla de cierre es correcta y no una caida:
+ninguna de mis cinco filas afirma `N de M del capitulo`, asi que el instrumento no tiene nada que
+recomputar en ellas y las copia tal cual, como dicta su propio diseno.
+
+### XX.7.h. `python forja.py tablero --escribir`, ESCRITO AL CIERRE (`D.49`, `D.50`)
+
+<!-- TALLADO: parcial salida=.v57ext/tablero_cierre.txt -->
+
+    $ python forja.py tablero --escribir
+    TABLERO DE FRENTES (D.49, D.50): sede unica del estado de la campania
+      registro: docs/loop/TABLERO.jsonl
+
+      prio lote clave                          estado                 dueno                 band ult cap
+      --------------------------------------------------------------------------------------------------------
+      .    1    onu_consumidor                 INSERTADO              NINGUNO                  0  cap_02
+      .    2    smart_who                      INSERTADO              NINGUNO                  0  cap_05
+      .    3    zhuo_manager                   INSERTADO              NINGUNO                  0       .
+      .    4    scott_radical_candor           INSERTADO              NINGUNO                  0  cap_14
+      .    11   gerber_emyth_cap17_reservado   SIN EMPEZAR            NINGUNO                  0       .
+      1    7    grove_high_output              COSECHADO              NINGUNO                 81  cap_13
+      2    9    gerber_emyth                   PAUSADO                NINGUNO                 10  cap_11
+      3    5    marquet_turn_the_ship          PAUSADO                NINGUNO                  9  cap_03
+      4*   8    bernerslee_bananas             SIN EMPEZAR            NINGUNO                  0       .
+      5*   6    openstax_business_ethics       SIN EMPEZAR            NINGUNO                  0       .
+      6*   10   openstax_org_behavior          SIN EMPEZAR            NINGUNO                  0       .
+
+      libros CON DUEÑO ahora mismo: 0
+
+      MUNDO 11: faltan 3 de 3 libros del corte (grove_high_output, gerber_emyth, marquet_turn_the_ship)
+
+      COLA DE DOCTRINA (D.56): 11 pregunta(s), 0 bloquea(n)
+
+      PENDIENTES DE RELEVO (D.50), en orden de lote:
+        lote 5   marquet_turn_the_ship           9 candidato(s) en extraccion-marquet_turn_the_ship
+        lote 9   gerber_emyth                   10 candidato(s) en extraccion-gerber_emyth
+
+    ESCRITO: 22 fila(s) en docs/loop/TABLERO.jsonl
+
+**`band` sube de `74` a `81` y `ult cap` pasa de `cap_10` a `cap_13`: las dos cifras salen del
+instrumento y las dos son correctas, porque los siete candidatos de hoy citan `cap_11`, `cap_12` y
+`cap_13`.** **`COLA DE DOCTRINA` sigue en `11`, sin bloquear**, tal como `D.56` manda y tal como
+`XX.5` punto `7` registra sin sumarle: mi pregunta pendiente queda en este reporte, no en el
+tablero.
+
+## XX.9. LA LINEA DEL TRAMO
+
+**El tramo de esta vuelta fue `3` capitulos y `7` candidatos, dentro del techo de `30`.** La
+vuelta siguiente abre en `cap_14` de `grove_high_output`, que el tablero ya senala como `ult cap`
+mas uno.
