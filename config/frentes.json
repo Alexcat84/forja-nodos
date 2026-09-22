@@ -198,6 +198,12 @@
   },
   "minados_en_cero": {
     "_lea_esto": "Capitulos LEIDOS Y ADJUDICADOS EN CERO NODOS (d096). No es una medida: es la firma de un acta. Sin esto el tablero los cuenta como pendientes, porque el campo sale de lo que los candidatos citan y un capitulo vacio no deja candidato que cite nada.",
+    "marquet_turn_the_ship": {
+      "capitulos": [
+        "cap_05"
+      ],
+      "cita": "ACTA M3 seccion M3.5 (cap_05, releido ENTERO y firmado en cero)"
+    },
     "grove_high_output": {
       "capitulos": [
         "cap_08",

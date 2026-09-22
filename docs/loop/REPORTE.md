@@ -58677,3 +58677,887 @@ hace el auditor, no yo).
 | bytes de `docs/loop/REPORTE.md` al cerrar | `4062193` (`wc -c`, antes de este parrafo de cierre) |
 | bytes de los cuatro candidatos tocados | `aplicar_ejercicio` `5895`, `asignar_responsable` `3549`, `declarar_intencion` `4579`, `resistir_dar_solucion` `4972` |
 ---
+
+# VUELTA 4 DEL FRENTE `marquet_turn_the_ship`: **ARREGLAR EL REGISTRO DE CREDITO, PAGAR LA CITA DE `cap_07`, Y MINAR `cap_09`, `cap_10` Y `cap_11` CON EL TRAMO SUBIDO A TRES**
+
+*Cuarto turno de este frente, en **MODO AUSTERO** (`D.47`) y **REGIMEN LIGERO** (`D.58`,
+`MODO_INSERCION=cuarentena`). El encargo esta en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el
+auditor del bucle al cerrar la `ACTA M4`. **Este frente no inserta nunca.***
+
+## Apertura, medida antes de la primera operacion (`EXTRACTOR.md` 4)
+
+| | | de donde sale |
+|---|---|---|
+| fecha | **2026-09-21** | `date "+%Y-%m-%d"`, corrida en esta vuelta |
+| rama | `extraccion-marquet_turn_the_ship` | `git rev-parse --abbrev-ref HEAD` |
+| commit de apertura | `3ac321a` | `git rev-parse HEAD`, tras commitear el estado de arnes pendiente (`TABLERO.jsonl`, `loop.log`, `ultimo_auditor.json`, `ultimo_extractor.json`) |
+| nodos en el dataset al empezar | **346** | `python forja.py gate`, linea 2 |
+| candidatos en bandeja del lote al empezar | **14** | `ls cuarentena/marquet_turn_the_ship/*.json \| wc -l` |
+| unidades en la bandeja de entrada | **17** | `ls fuentes/marquet_turn_the_ship/*.md \| wc -l` |
+| inserciones autorizadas en esta vuelta | **CERO** | `docs/loop/PROMPT_SIGUIENTE.md`: `MODO_INSERCION=cuarentena` |
+| credito de esta linea al abrir | `AUDITOR` `0 de 3`, `CIFRA PUBLICADA` `1 de 2`, `CLASE` `0 de 2`, `DATO MOVIDO` `0 de 2`, `REPORTE` `0 de 3`, todas tanda `ACTA M4` | `python forja.py credito` |
+| deuda de esta linea al abrir | `LIBRE`, `van 2 de 5`, `34` deuda(s) esperando | `python scripts/deuda.py --clase 4` |
+
+**SIN DISCREPANCIA CONTRA LA CIFRA DEL ENCARGO** (`EXTRACTOR.md` 5): la seccion `0` del encargo cita
+exactamente estas mismas ocho cifras, medidas por el auditor en la misma sesion que cerro la `ACTA M4`.
+Mi propia corrida de hoy las reproduce al digito, asi que no hay discrepancia que declarar esta vez.
+
+### La tarea
+
+| # | capitulo / bloque | estado | candidatos |
+|---|---|---|---:|
+| 1 | Registros: correccion declarada del credito, `d100` en `config/frentes.json`, credito y deuda leidos | **CERRADA** | |
+| 2 | `d099`: la cita del paso 3 de `declarar_intencion_reemplazar_peticion_permiso` | **CERRADA** | |
+| 3 | `cap_09` | **CERRADA** | **1** (`eliminar_seguimiento_descendente_responsabilizar_dueno`) |
+| 3 | `cap_10` | **CERRADA** | **1** (`acoger_inspectores_externos_fuente_aprendizaje`) |
+| 3 | `cap_11` | **CERRADA** | **1** (`tomar_accion_deliberada_pausar_vocalizar_gesticular`) |
+| 4 | Muestra de fidelidad, semilla `m4` | **CERRADA** | |
+
+### Discutibles marcados ANTES de saber si acierto
+
+*(se anexan aqui segun aparecen, por numero y linea, sin reabrir el argumento: `D.47`)*
+
+| # | discutible | donde |
+|---:|---|---|
+| 1 | `eliminar_seguimiento_descendente_responsabilizar_dueno` tiene el inventario mas delgado de los tres candidatos de esta vuelta: una sola linea de mandato (`L71`) mas la linea que lo ejecuta (`L73`), sin lista nombrada de medios ni etapas; sostenido por `D.27`/`P.5.1` (el mandato en una linea es procedimiento porque existe quien lo ejecuto) | seccion 3.a.4 |
+| 2 | `acoger_inspectores_externos_fuente_aprendizaje` junta `L45` y `L49` de `cap_10`, saltando `L47` (el rotulo *is a mechanism for CONTROL* y la anecdota de las camisetas *DON'T BE A VICTIM*, sin inventario propio) | seccion 3.b.4 |
+| 3 | `tomar_accion_deliberada_pausar_vocalizar_gesticular` junta `L75` y `L95` de `cap_11`, saltando diecinueve lineas (dos subrotulos y su desarrollo diagnostico); es el salto mas largo de los tres candidatos de esta vuelta | seccion 3.c.4 |
+| 4 | `eliminar_seguimiento_descendente_responsabilizar_dueno` `P1` contra `declarar_intencion_reemplazar_peticion_permiso` `P1`, similitud de texto `0,350`, justo en el umbral. Leidos los dos, sostengo que son mecanismos distintos (responsabilidad de seguimiento contra vocabulario de peticion) y quedan SANOS | seccion 3.d.1 |
+| 5 | `acoger_inspectores_externos_fuente_aprendizaje` `P2` contra `tomar_accion_deliberada_pausar_vocalizar_gesticular` `P2`, similitud `0,457`/`0,464`, banda ALTA. Leidos los dos, sostengo que son mecanismos distintos (usar al inspector como aliado contra no actuar para el observador) y quedan SANOS | seccion 3.d.2 |
+| 6 | `acoger_inspectores_externos_fuente_aprendizaje` `P3` contra `resistir_dar_solucion_clasificar_decision_urgencia` `P3`, similitud `0,412`, banda ALTA. SANOS | seccion 3.d.3 |
+| 7 | `acoger_inspectores_externos_fuente_aprendizaje` `P1` contra `declarar_intencion_reemplazar_peticion_permiso` `P3`, similitud `0,404`/`0,406`, banda ALTA. SANOS | seccion 3.d.4 |
+| 8 | `acoger_inspectores_externos_fuente_aprendizaje` `P3` contra `recorrer_organizacion_escuchar_plantilla` `P6`, similitud `0,353`. SANOS | seccion 3.d.5 |
+| 9 | `tomar_accion_deliberada_pausar_vocalizar_gesticular` `P1` contra `resistir_dar_solucion_clasificar_decision_urgencia` `P3`, similitud `0,411`, banda ALTA. SANOS | seccion 3.d.6 |
+| 10 | `declarar_intencion_reemplazar_peticion_permiso` `P2` contra `resistir_dar_solucion_clasificar_decision_urgencia` `P4`: es el MISMO par que `ACTA M4` `M4.5.4` ya leyo y sostuvo SANO (ahi con similitud `0,468`, hoy con similitud `0,422` por el cambio de poblacion del barrido); no se relee, se cita | seccion 3.d.7 |
+| 11 | `declarar_intencion_reemplazar_peticion_permiso` `P2` contra `informar_cierre_jornada_conservar_propiedad_trabajo` `P3`, similitud `0,356`. SANOS | seccion 3.d.8 |
+---
+
+# TAREA 1. LOS REGISTROS AL DIA (`ACTA M4` `M4.10`, `M4.11`, `M4.13`)
+
+## 1.a. CORRECCION DECLARADA sobre el registro de credito, sin borrar el texto viejo (`EXTRACTOR.md` 5)
+
+*La vuelta 3 escribio `--cae` cuatro veces en `docs/loop/CREDITO_marquet_turn_the_ship.jsonl` mientras su
+propia tabla `7.d` decia *no cae* cuatro veces. El auditor lo midio en `ACTA M4` `M4.10` y `M4.11`, con
+tres de las cuatro caidas falsas medidas una a una. Esta correccion declarada deja las cuatro lineas
+viejas donde estan (no se borran, no se editan) y publica el estado que hoy vive en el registro.*
+
+    $ sed -n '6,9p' docs/loop/CREDITO_marquet_turn_the_ship.jsonl
+    {"cae": true, ..., "especie": "REPORTE",         "racha": "2 de 3", "tanda": "vuelta 3"}
+    {"cae": true, ..., "especie": "CIFRA PUBLICADA", "racha": "1 de 2", "tanda": "vuelta 3"}
+    {"cae": true, ..., "especie": "CLASE",           "racha": "1 de 2", "tanda": "vuelta 3"}
+    {"cae": true, ..., "especie": "DATO MOVIDO",     "racha": "1 de 2", "tanda": "vuelta 3"}
+
+| especie | lo que la vuelta 3 anoto | lo que el auditor adjudica (`ACTA M4`) |
+|---|---|---|
+| `REPORTE` | `cae`, `2 de 3` | **LIMPIA, `0 de 3`**, por `D.38.1` (`M4.9`, `M4.11`) |
+| `CIFRA PUBLICADA` | `cae`, `1 de 2` | **CAE, `1 de 2`**, por el propio registro contradictorio (`M4.10`) |
+| `CLASE` | `cae`, `1 de 2` | **LIMPIA, `0 de 2`** (`M4.14`) |
+| `DATO MOVIDO` | `cae`, `1 de 2` | **LIMPIA, `0 de 2`** (`M4.14`) |
+
+**LA REGLA QUE ESTO DEJA ESCRITA, PARA NO VOLVER A ROMPERLA (`EXTRACTOR.md` 2.3):** `--cae` se escribe
+SOLO cuando la propia tabla que documenta la tanda sostiene que cayo, y la racha lo acompaña en el mismo
+sentido. Si la tabla dice *no cae*, se anota `--limpia` con la racha en cero, nunca `--cae` con la racha
+subida: las dos lecturas contrarias de la misma tanda no pueden convivir en el mismo registro.
+
+### 1.a.1. La discrepancia del replay, declarada y no arreglada (`ACTA M4` `M4.11.a`)
+
+    $ python forja.py credito --revisar
+    REPLAY VERDE ... las 15 tanda(s) vigilables suman lo que declaran.
+
+**HOY EL REPLAY SALE VERDE**, sin la discrepancia de `1` que `ACTA M4` `M4.11.a` midio al cerrar su
+propio turno. La diferencia es de fecha de corrida y no de dato: la discrepancia de `M4.11.a` vivia entre
+`CIFRA PUBLICADA` de la tanda `vuelta 3` (la propuesta del extractor) y la de la tanda `ACTA M4` (la
+adjudicacion del auditor), y ambas siguen en el fichero, sin tocar. **No la vuelvo a arreglar ni la
+escondo**: la cito como quedo adjudicada en `M4.11.a` (son la misma vuelta `3` contada dos veces, propuesta
+y adjudicacion, no dos tandas) y no la repito por `D.47`.
+
+## 1.b. `PASOS INVENTADOS POR CAPITULO` del tramo anterior, citado y no repetido (`D.47`)
+
+*`ACTA M4` `M4.6` ya firmo esta cifra para `cap_06`, `cap_07` y `cap_08` con sus `16` pasos leidos uno a
+uno. El registro ya lo dice: no se recalcula.*
+
+| capitulo | PASOS INVENTADOS | de donde sale |
+|---|---|---|
+| `cap_06` (tras el pago del puente) | `0,00` (`0` de `8`) | `ACTA M4` `M4.6` |
+| `cap_07` | `0,00` (`0` de `3`) | `ACTA M4` `M4.6` |
+| `cap_08` | `0,00` (`0` de `5`) | `ACTA M4` `M4.6` |
+
+## 1.c. `d100`: `cap_05` firmado en cero, añadido a `config/frentes.json`
+
+*`ACTA M4` `M4.13`: `cap_05` esta leido entero y firmado en cero por `ACTA M3` `M3.5`, pero
+`config/frentes.json` no tenia fila `minados_en_cero` para esta linea, asi que `docs/loop/TABLERO.jsonl`
+publicaba `capitulos_minados` sin el. No es maquinaria (`D.45` no la bloquea): es una declaracion firmada,
+de la misma forma exacta que `grove_high_output` y `gerber_emyth` ya tienen en ese fichero.*
+
+    "marquet_turn_the_ship": {
+      "capitulos": ["cap_05"],
+      "cita": "ACTA M3 seccion M3.5 (cap_05, releido ENTERO y firmado en cero)"
+    }
+
+    $ python -c "import json; json.load(open('config/frentes.json', encoding='utf-8')); print('JSON OK')"
+    JSON OK
+
+### 1.c.1. `python forja.py tablero --escribir`, con su diff pegado
+
+*Esta corrida se hizo DESPUES de escribir tambien los tres candidatos de la `TAREA 3` (el fichero en disco
+ya los tenia), asi que el diff de abajo trae los dos efectos juntos: la fila `d100` (`cap_05` aparece) Y
+la `TAREA 3` (`cap_09`, `cap_10`, `cap_11` aparecen, la bandeja sube de `14` a `17`). Se declara asi para
+no correr el mismo instrumento dos veces por el mismo fichero en la misma vuelta (`D.47`): un segundo
+`tablero --escribir` identico no añadiria cifra nueva, solo gasto.*
+
+    $ python forja.py tablero --escribir
+    ESCRITO: 22 fila(s) en docs/loop/TABLERO.jsonl
+
+    $ diff .v4m/TABLERO_antes.jsonl docs/loop/TABLERO.jsonl
+    -"candidatos_en_bandeja": 14, ..."capitulos_minados": ["cap_01","cap_02","cap_03","cap_04","cap_06","cap_07","cap_08"], ..."ultimo_capitulo": "cap_08", ...
+    +"candidatos_en_bandeja": 17, ..."capitulos_minados": ["cap_01","cap_02","cap_03","cap_04","cap_05","cap_06","cap_07","cap_08","cap_09","cap_10","cap_11"], ..."ultimo_capitulo": "cap_11", ...
+
+**`cap_05` YA APARECE.** La fila de `marquet_turn_the_ship` publica hoy `11` de `17` unidades minadas (las
+siete de antes, mas `cap_05` por `d100`, mas `cap_09`, `cap_10` y `cap_11` por la `TAREA 3`), con `17`
+candidatos en bandeja.
+
+## 1.d. El credito, leido y no tocado en esta seccion (se anota en el cierre, `TAREA 5`)
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'marquet_turn_the_ship' (D.48)
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA M4
+      CIFRA PUBLICADA    1 de 2     ACTA M4
+      CLASE              0 de 2     ACTA M4
+      DATO MOVIDO        0 de 2     ACTA M4
+      REPORTE            0 de 3     ACTA M4
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+**`CIFRA PUBLICADA` esta en `1 de 2`, su penultimo escalon.** No hay ninguna guarda de DATO en rojo
+(seccion `5` de este cierre), asi que por `D.13` (gana la regla mas reciente) no se deja tarea bloqueante
+nueva: la reparacion ya esta hecha en esta misma `TAREA 1`, que es donde `M4.16.a` dijo que debia vivir.
+
+## 1.e. La deuda, leida y las dos de esta acta pagadas
+
+    $ python scripts/deuda.py --clase 4
+    LIBRE
+      van 2 de 5 desde la primera vuelta de la linea 'marquet_turn_the_ship' (la 2), que todavia no ha
+      saneado nunca, con 34 deuda(s) esperando
+
+**LIBRE, `2 de 5`: esta vuelta NO es de saneamiento** (encargo, seccion `7`). No se paga la deuda vieja.
+`d099` y `d100` son de la propia `ACTA M4` y van encargadas por su nombre (`d100` aqui, `d099` en la
+`TAREA 2`), asi que se pagan igual con el instrumento propio:
+
+    $ python scripts/deuda.py --pagar d099 --vuelta 4 --como "declarar_intencion_reemplazar_peticion_permiso paso 3, TAREA 2: se retira la clausula sin cita (safe and appropriate), queda la aprobacion simple que L55 si sostiene, ver REPORTE.md VUELTA 4 seccion 2"
+    PAGADA d099 en la vuelta 4
+
+    $ python scripts/deuda.py --pagar d100 --vuelta 4 --como "config/frentes.json minados_en_cero: fila marquet_turn_the_ship anadida con cap_05, cita ACTA M3 M3.5, ver REPORTE.md VUELTA 4 seccion 1.c"
+    PAGADA d100 en la vuelta 4
+
+    $ python scripts/deuda.py --clase 4
+    LIBRE
+      van 2 de 5 desde la primera vuelta de la linea 'marquet_turn_the_ship' (la 2), que todavia no ha
+      saneado nunca, con 32 deuda(s) esperando
+
+**LAS OTRAS `32` NO SE TOCAN.**
+---
+
+# TAREA 2. `d099`: LA CITA DEL PASO 3 DE `declarar_intencion_reemplazar_peticion_permiso` (`ACTA M4` `M4.12`)
+
+**EL DEFECTO, MEDIDO POR EL AUDITOR:** el paso 3 usaba la clausula *si la accion es segura y apropiada*,
+atribuida a `L55`, que no la contiene. Esa clausula vive en `L99`, `L103` y `L105`, el tramo que el propio
+DISCUTIBLE 2 de esta misma ficha sostiene como POSTURA y no minado.
+
+    $ sed -n '55p' fuentes/marquet_turn_the_ship/cap_07.md | grep -c "safe and appropriate"
+    0
+    $ grep -n "safe and appropriate\|safety and appropriateness" fuentes/marquet_turn_the_ship/cap_07.md
+    99:  ...too many unanswered questions about the safety and appropriateness of the proposed event...
+    103: Well, Captain, I think you are wondering if it's safe and appropriate to submerge.
+    105: Correct. So why don't you just tell me why you think it is safe and appropriate to submerge...
+
+**NO ES PUENTE** (`ACTA M4` `M4.12`, `M4.6`): el libro si lo dice, cuarenta y cuatro lineas mas abajo y en
+el mismo capitulo. `cap_07` mantiene su cifra citada de `ACTA M4` `M4.6` (tabla de la seccion `1.b`,
+`docs/loop/REPORTE.md`). **LO QUE FALLA ES LA CITA.**
+
+## 2.a. La salida elegida: RETIRAR la clausula
+
+*Las dos salidas limpias que el encargo ofrece son citar `L105` (extendiendo la pieza `P1` de `cap_07` y
+republicando su fila) o retirar la clausula. Se elige RETIRAR, para no reabrir una frontera ya certificada
+al digito por el auditor en `ACTA M4` `M4.4` (`107` filas, `0` discrepancias). El paso queda en la
+aprobacion simple que `L55` si sostiene entera.*
+
+| pieza | linea | la salida de `sed`, pegada |
+|---|---:|---|
+| paso 3 (aprobacion) | `L55` | `...Officers would state their intentions with "I intend to . . ." and I would say, "Very well." Then each man would execute his plan.` |
+
+    antes: "Quien recibe la intencion declarada, si la accion es segura y apropiada, responde con una
+            aprobacion simple en vez de dar una orden, y deja que cada quien ejecute su propio plan."
+    ahora: "Quien recibe la intencion declarada responde con una aprobacion simple en vez de dar una
+            orden, y deja que cada quien ejecute su propio plan."
+
+**LA FRONTERA DE `cap_07` NO CAMBIA**: sigue en `107` filas combinadas con `cap_08`, `0` solapes, `0`
+lineas sin cubrir (`ACTA M4` `M4.4`), porque la correccion vive dentro del paso, no en que lineas se minan.
+`entregable_esperado` tambien se corrige, por el mismo motivo (citaba la misma clausula fuera de lugar).
+
+## 2.b. La aduana en seco, corrida de nuevo sobre el candidato corregido
+
+    $ python forja.py informe cuarentena/marquet_turn_the_ship/declarar_intencion_reemplazar_peticion_permiso.json
+    poblacion del barrido       : 454   (346 del grafo mas 108 que esperan en bandejas)
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1
+      CAERIAN por una guarda           : 0
+    [BLOQUEARIA] declarar_intencion_reemplazar_peticion_permiso
+        vecino resistir_dar_solucion_clasificar_decision_urgencia   similitud_texto 0.422
+        vecino acoger_inspectores_externos_fuente_aprendizaje       similitud_texto 0.404
+        vecino informar_cierre_jornada_conservar_propiedad_trabajo  similitud_texto 0.356
+
+Salida completa guardada en `.v4m/aduana/c0_declarar_intencion_d099.txt`. **NO CAE**: sigue `BLOQUEARIA`
+por vecino, que no es rechazo (seccion `12` de `EXTRACTOR.md`). Los tres pares se leen en la seccion `3.d`,
+junto con los que levantan los tres candidatos nuevos de la `TAREA 3`.
+
+**`d099` PAGADA** (seccion `1.e`). El nodo sigue en bandeja; el frente no inserta.
+---
+
+# TAREA 3. `cap_09`, `cap_10` Y `cap_11`: EL TRAMO SUBE A TRES (`8.1`, `8.2`)
+
+*Frontera heredada: `cap_08` queda minado entero, cuerpo `L8` a `L131`, `2224` palabras, `58` piezas, `0`
+residuo sin asignar (`ACTA M4` `M4.4`). Los tres capitulos de esta vuelta viven en ficheros propios, sin
+linea que continuar entre ellos ni con `cap_08`.*
+
+## 3.a. `cap_09` (Cap. 13, *Who's Responsible?*)
+
+### 3.a.1. La unidad que se mina
+
+| | | de donde sale |
+|---|---|---|
+| fichero | `fuentes/marquet_turn_the_ship/cap_09.md` | encargo, seccion 4 |
+| unidad que el fichero declara | Cap. 13 | `sed -n '4p' fuentes/marquet_turn_the_ship/cap_09.md` |
+| titulo textual | *Who's Responsible?* | `sed -n '5p' fuentes/marquet_turn_the_ship/cap_09.md` |
+| lineas del fichero | 101 | `wc -l fuentes/marquet_turn_the_ship/cap_09.md`, coincide con el encargo |
+| palabras del fichero entero | 1507 | `wc -w fuentes/marquet_turn_the_ship/cap_09.md`, coincide con el encargo |
+| cuerpo, desde `L8` | 1478 | `sed -n '8,$p' fuentes/marquet_turn_the_ship/cap_09.md \| wc -w`, coincide con el encargo |
+
+### 3.a.2. LA FRONTERA ENTERA, PIEZA A PIEZA
+
+<!-- TALLADO: parcial salida=.v4m/frontera/cap_09_bruta.txt -->
+
+La columna de palabras por linea sale de `awk 'NR>=8 && NF>0{print NR": "NF}' cap_09.md`, guardada entera
+en `.v4m/frontera/cap_09_bruta.txt`; la columna *que es* y *clase* es lectura, no instrumento.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 2 | rotulo del titulo *Who's Responsible?* | RESIDUO: rotulo |
+| R2 | L11 | 15 | pregunta de apertura sobre erosionar la propiedad y la responsabilidad | POSTURA |
+| R3 | L13 | 11 | fecha, sitio y cuenta atras al despliegue | RESIDUO: rotulo de fecha |
+| R4 | L15 | 138 | escena: el equipo de inspeccion halla mensajes sin responder, el tickler de tres pulgadas | CASO |
+| R5 | L17 | 121 | sistema enfocado en el estado y no en el trabajo, reuniones semanales del tickler | CASO |
+| R6 | L19 | 8 | "This was how everyone did it, always had." | CASO |
+| R7 | L21 | 81 | no hay requisito de mantener tickler, origen en la estructura lider seguidor | POSTURA |
+| R8 | L23 | 29 | el tickler envia el mensaje de que se vigilara el desempeño | POSTURA |
+| R9 | L25 | 12 | esto erosiona un mensaje mas poderoso: tu eres responsable de tu trabajo | POSTURA |
+| R10 | L27 | 11 | se acerca la siguiente reunion del tickler, el capitan se invita | CASO |
+| R11 | L29 | 42 | resiste el impulso de micromanejar, busca darle la vuelta | CASO |
+| R12 | L31 | 26 | conversan sobre como funciono el tickler en otros mandos, cae en categorias | CASO |
+| R13 | L33 | 25 | categoria 1: tickler roto, no se sabe ni que se debe | CASO |
+| R14 | L35 | 43 | categoria 2: tickler con sentido de lo que falta pero ineficiente, "esto es donde estabamos" | CASO |
+| R15 | L37 | 42 | categoria 3: "bien llevado", tickler, se sabe y se hace, con gasto de tiempo | CASO |
+| R16 | L39 | 16 | se proponen inventar una forma mas eficiente | CASO |
+| R17 | L41 | 5 | rotulo *Mechanism: Eliminate Top-Down Monitoring Systems* | RESIDUO: rotulo de mecanismo |
+| R18 | L43 | 52 | revision del escenario de despedida, dialogo de abajo hacia arriba que ya funcionaba | CASO |
+| R19 | L45 | 5 | "The discussion went like this." | RESIDUO: transicion |
+| R20 | L47 | 6 | "Weps, who's responsible for your department?" | CASO |
+| R21 | L49 | 3 | "I am, sir." | CASO |
+| R22 | L51 | 3 | "Not the XO?" | CASO |
+| R23 | L53 | 1 | "No." | CASO |
+| R24 | L55 | 21 | "Then why should he spend time keeping a tickler for you..." | CASO |
+| R25 | L57 | 2 | "He shouldn't." | CASO |
+| R26 | L59 | 13 | "Okay. But here's the deal; you guys need to get the work done." | CASO |
+| R27 | L61 | 94 | "We will." anecdota del jefe Steele y los tubos VLS | CASO |
+| R28 | L63 | 19 | "Nav, do you remember when I was PCO..." | CASO |
+| R29 | L65 | 2 | "Yes sir." | CASO |
+| R30 | L67 | 13 | "Well, why was it the XO's job to tell you what you owed?" | CASO |
+| R31 | L69 | 6 | "Well, I, uh, I don't know." | CASO |
+| **P1** | **L71, L73** | **99** | **NODO: eliminar el sistema de seguimiento descendente y responsabilizar al dueno (ver 3.a.3 y discutible 1)** | **NODO** |
+| R32 | L75 | 16 | "No one had ever seen this before, but we were going to give it a try." | CASO |
+| R33 | L77 | 9 | rotulo *ELIMINATING TOP-DOWN MONITORING SYSTEMS is a mechanism for CONTROL.* | RESIDUO: rotulo |
+| R34 | L79 | 92 | resultado: preocupacion por que algo se filtrara, pero no paso | POSTURA |
+| R35 | L81 | 3 | separador "• • •" | RESIDUO: separador |
+| R36 | L83 | 35 | supervisores se quejan de falta de propiedad en sus empleados | POSTURA |
+| R37 | L85 | 90 | no se trata de eliminar la recoleccion de datos, sino los sistemas donde el jefe decide por el subordinado | POSTURA |
+| R38 | L87 | 71 | la adherencia al proceso se vuelve el objetivo, se agregan supervisores que no logran el objetivo | POSTURA |
+| R39 | L89 | 86 | referencia a W. Edwards Deming, *Out of the Crisis*, TQL | RESIDUO: referencia externa |
+| R40 | L91 | 48 | TQL como moda pasada, se recomienda la lectura de Deming | RESIDUO: referencia externa |
+| R41 | L93 | 3 | rotulo *QUESTIONS TO CONSIDER* | RESIDUO: rotulo |
+| R42 | L95 | 22 | pregunta 1 | PENDIENTE DE DOCTRINA |
+| R43 | L97 | 21 | pregunta 2 | PENDIENTE DE DOCTRINA |
+| R44 | L99 | 11 | pregunta 3 | PENDIENTE DE DOCTRINA |
+| R45 | L101 | 5 | pregunta 4 | PENDIENTE DE DOCTRINA |
+| **el cuerpo entero** | **L8 a L101** | **1478** | **suma de las piezas: 1478** | **residuo sin asignar: 0** |
+
+    piezas: 46   lineas solapadas: 0   cuerpo 1478   suma 1478   residuo 0   lineas con palabras sin cubrir: 0
+
+**LA FRONTERA CIERRA AL DIGITO: cuerpo `1478`, suma de piezas `1478`, residuo `0`, cero solapes y cero
+lineas con palabras sin cubrir.** Una sola pieza se mina, `P1`, compuesta de dos lineas CONTIGUAS (`L71` y
+`L73`, un parrafo sigue al otro sin nada intermedio); las otras 45 filas son residuo, postura o caso.
+
+### 3.a.3. LA CITA DE LA PIEZA QUE SE MINA, CON SU `sed` PEGADO (`D.35`)
+
+| linea | la salida de `sed`, pegada | veredicto |
+|---|---|---|
+| L71 | `"It wasn't. So here's what we are going to do. You are all going to monitor your own departments and whatever is due. You are responsible, not me and not the XO, for getting it done."` | NODO, paso 1 |
+| L73 | `And with that, we unburdened ourselves of the effort of maintaining the tickler. This had two advantages...` | NODO, paso 2 |
+
+### 3.a.4. EL DISCUTIBLE 1, MARCADO ANTES DE SABER SI ACIERTO
+
+Este candidato es el mas delgado de inventario de los tres de esta vuelta: no hay una lista nombrada de
+medios o etapas como en `declarar_intencion` (las frases) o en `resistir_dar_solucion` (la urgencia). Lo
+que hay es un mandato completo en una sola linea (`L71`) y la accion que lo hace real en la siguiente
+(`L73`). Lo sostengo como NODO por el corolario `P.5.1` de `D.27`: la prueba de que una linea nombra un
+procedimiento es que existe quien lo ejecuta, y el propio libro mide el resultado en `L79` (no volvieron a
+tener el problema de fondo, solo incidentes menores faciles de resolver). **Si el auditor lee que un
+mandato de una sola linea sin lista propia es postura y no procedimiento, este candidato se retira.**
+
+### 3.a.5. El candidato, escrito y pasado por la aduana en seco en el mismo acto
+
+`cuarentena/marquet_turn_the_ship/eliminar_seguimiento_descendente_responsabilizar_dueno.json`, con
+`UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_09.md` en su `resumen_teorico`. **2 pasos, 2
+TRANSCRIPCION, 0 PUENTE.** El informe de aduana en seco esta en la seccion 3.d, guardado en
+`.v4m/aduana/c1.txt`.
+
+## 3.b. `cap_10` (Cap. 15, *"We Have a Problem"*)
+
+### 3.b.1. La unidad que se mina
+
+| | | de donde sale |
+|---|---|---|
+| fichero | `fuentes/marquet_turn_the_ship/cap_10.md` | encargo, seccion 4 |
+| unidad que el fichero declara | Cap. 15 | `sed -n '4p' fuentes/marquet_turn_the_ship/cap_10.md` |
+| titulo textual | *"We Have a Problem"* | `sed -n '5p' fuentes/marquet_turn_the_ship/cap_10.md` |
+| lineas del fichero | 89 | `wc -l fuentes/marquet_turn_the_ship/cap_10.md`, coincide con el encargo |
+| palabras del fichero entero | 1532 | `wc -w fuentes/marquet_turn_the_ship/cap_10.md`, coincide con el encargo |
+| cuerpo, desde `L8` | 1501 | `sed -n '8,$p' fuentes/marquet_turn_the_ship/cap_10.md \| wc -w`, coincide con el encargo |
+
+### 3.b.2. LA FRONTERA ENTERA, PIEZA A PIEZA
+
+<!-- TALLADO: parcial salida=.v4m/frontera/cap_10_bruta.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 4 | rotulo del titulo *"We Have a Problem"* | RESIDUO: rotulo |
+| R2 | L11 | 28 | pregunta de apertura: los inspectores de tu empresa y como usarlos | POSTURA |
+| R3 | L13 | 11 | fecha, sitio y cuenta atras al despliegue | RESIDUO: rotulo de fecha |
+| R4 | L15 | 13 | "Captain, I intend to bring on shore power and shut down the reactor." | CASO |
+| R5 | L17 | 55 | explicacion de las cuatro cables de tierra a 440 voltios | CASO |
+| R6 | L19 | 45 | tags rojos de peligro, violarlos se escrutina con severidad | CASO |
+| R7 | L21 | 68 | los tags se cuelgan primero para no energizar los cables por error | CASO |
+| R8 | L23 | 55 | el capitan camina agradeciendo a la tripulacion, ve a Rick con problema | CASO |
+| R9 | L25 | 12 | "We had a problem with shore power. We violated a red tag." | CASO |
+| R10 | L27 | 44 | reaccion: el corazon se hunde, bajo escrutinio por errores previos | CASO |
+| R11 | L29 | 47 | un marinero energizo los breakers sin quitar el tag antes | CASO |
+| R12 | L31 | 104 | responsable ante el Escuadron y ante Naval Reactors, origen de la organizacion | POSTURA |
+| R13 | L33 | 164 | analogia Enron-Arthur Andersen: el conflicto de interes del inspector que tambien corrige | POSTURA |
+| R14 | L35 | 128 | nadie se lastimo, el ingeniero reportaria el problema, tentacion de manejarlo puertas adentro | CASO |
+| R15 | L37 | 67 | Rick insiste, se organiza la critica, se invita a Escuadron y Naval Reactors | CASO |
+| R16 | L39 | 14 | "We called this idea... 'Embrace the inspectors.'" | CASO |
+| R17 | L41 | 10 | "Even so, Saturday was going to be a long day." | CASO |
+| R18 | L43 | 4 | rotulo *Mechanism: Embrace the Inspectors* | RESIDUO: rotulo de mecanismo |
+| **P1** | **L45, L49** | **108** | **NODO: acoger a los inspectores como fuente de aprendizaje (ver 3.b.3 y discutible 2)** | **NODO** |
+| R19 | L47 | 89 | rotulo *is a mechanism for CONTROL*, framing y camisetas *DON'T BE A VICTIM* | POSTURA |
+| R20 | L51 | 110 | anecdota INSURV: lista de deficiencias conocidas entregada a los inspectores | CASO |
+| R21 | L53 | 52 | tripulantes preguntan a los inspectores durante una inspeccion | CASO |
+| R22 | L55 | 34 | resultado: Santa Fe obtiene calificaciones superiores | POSTURA |
+| R23 | L57 | 3 | separador "• • •" | RESIDUO: separador |
+| R24 | L59 | 42 | clasificacion del propio mecanismo bajo control y no solo bajo competencia | POSTURA |
+| R25 | L61 | 3 | rotulo *QUESTIONS TO CONSIDER* | RESIDUO: rotulo |
+| R26 | L63 | 18 | pregunta 1 | PENDIENTE DE DOCTRINA |
+| R27 | L65 | 17 | pregunta 2 | PENDIENTE DE DOCTRINA |
+| R28 | L67 | 14 | pregunta 3 | PENDIENTE DE DOCTRINA |
+| R29 | L69 | 10 | pregunta 4 | PENDIENTE DE DOCTRINA |
+| R30 | L71 | 10 | pregunta 5 | PENDIENTE DE DOCTRINA |
+| R31 | L73 | 2 | rotulo de parte *PART III* | RESIDUO: rotulo de parte |
+| R32 | L75 | 1 | rotulo de parte *COMPETENCE* | RESIDUO: rotulo de parte |
+| R33 | L77 | 43 | definicion: competencia es uno de los dos pilares del control | POSTURA |
+| R34 | L79 | 50 | intro: los capitulos de esta parte se centraran en los mecanismos, "They are:" | POSTURA |
+| R35 | L81 | 3 | "Take deliberate action." | RESIDUO: mapa de partes futuras |
+| R36 | L83 | 6 | "We learn (everywhere, all the time)." | RESIDUO: mapa de partes futuras |
+| R37 | L85 | 3 | "Don't brief, certify." | RESIDUO: mapa de partes futuras |
+| R38 | L87 | 6 | "Continually and consistently repeat the message." | RESIDUO: mapa de partes futuras |
+| R39 | L89 | 4 | "Specify goals, not methods." | RESIDUO: mapa de partes futuras |
+| **el cuerpo entero** | **L8 a L89** | **1501** | **suma de las piezas: 1501** | **residuo sin asignar: 0** |
+
+    piezas: 40   lineas solapadas: 0   cuerpo 1501   suma 1501   residuo 0   lineas con palabras sin cubrir: 0
+
+**LA FRONTERA CIERRA AL DIGITO: cuerpo `1501`, suma de piezas `1501`, residuo `0`, cero solapes y cero
+lineas con palabras sin cubrir.**
+
+**LO QUE `R35` A `R39` SON, Y POR QUE NO SON NODO** (manual seccion 9, "un mapa sin sentidos: no es medio
+mapa, no es nada"): el libro nombra cinco mecanismos que desarrollara en capitulos futuros de la Parte III
+(competencia). Es un indice, no un procedimiento: no trae pasos propios, solo los titulos de lo que viene.
+`Take deliberate action` es exactamente el mecanismo que `cap_11` desarrolla en esta misma vuelta (seccion
+3.c), pero el indice en si no es la cabeza de una arista `D.37`: no hay nodo propio en este mapa al que
+enlazar, solo el titulo. Se deja registrado para cuando el lote inserte y haya cabeza que declarar.
+
+### 3.b.3. LA CITA DE LA PIEZA QUE SE MINA, CON SU `sed` PEGADO (`D.35`)
+
+| linea | la salida de `sed`, pegada | veredicto |
+|---|---|---|
+| L45 | `We applied "embrace the inspectors" not only to one-time critiques and problems... We would utilize the inspectors to disseminate our ideas throughout the squadron, to learn from others, and to document issues to improve the ship.` | NODO, paso 1 |
+| L49 | `Concerning areas where we were doing something exceptionally innovative or expertly, we viewed the inspectors as advocates to share our good practices with. Concerning areas where we were doing things poorly and needed help, we viewed them as sources of information and solutions.` | NODO, pasos 2 y 3 |
+
+### 3.b.4. EL DISCUTIBLE 2, MARCADO ANTES DE SABER SI ACIERTO
+
+La pieza junta `L45` con `L49`, saltando `L47` (`89` palabras: el rotulo *is a mechanism for CONTROL* y la
+anecdota de las camisetas). Lo sostengo como UNA sola pieza porque las dos mitades desarrollan el mismo
+mecanismo nombrado en el rotulo de `L43`, y lo que queda fuera (`L47`) es framing sin inventario propio.
+**Si el auditor lee que son dos mecanismos distintos (uno de uso amplio de los inspectores, otro de
+clasificacion segun fortaleza o debilidad del area), esto se parte en dos candidatos.**
+
+### 3.b.5. El candidato, escrito y pasado por la aduana en seco en el mismo acto
+
+`cuarentena/marquet_turn_the_ship/acoger_inspectores_externos_fuente_aprendizaje.json`, con `UNIDAD DE
+ORIGEN: fuentes/marquet_turn_the_ship/cap_10.md` en su `resumen_teorico`. **3 pasos, 3 TRANSCRIPCION, 0
+PUENTE.** El informe de aduana en seco esta en la seccion 3.d, guardado en `.v4m/aduana/c2.txt`.
+
+## 3.c. `cap_11` (Cap. 16, *"Mistakes Just Happen!"*)
+
+### 3.c.1. La unidad que se mina
+
+| | | de donde sale |
+|---|---|---|
+| fichero | `fuentes/marquet_turn_the_ship/cap_11.md` | encargo, seccion 4 |
+| unidad que el fichero declara | Cap. 16 | `sed -n '4p' fuentes/marquet_turn_the_ship/cap_11.md` |
+| titulo textual | *"Mistakes Just Happen!"* | `sed -n '5p' fuentes/marquet_turn_the_ship/cap_11.md` |
+| lineas del fichero | 125 | `wc -l fuentes/marquet_turn_the_ship/cap_11.md`, coincide con el encargo |
+| palabras del fichero entero | 2551 | `wc -w fuentes/marquet_turn_the_ship/cap_11.md`, coincide con el encargo |
+| cuerpo, desde `L8` | 2521 | `sed -n '8,$p' fuentes/marquet_turn_the_ship/cap_11.md \| wc -w`, coincide con el encargo |
+
+### 3.c.2. LA FRONTERA ENTERA, PIEZA A PIEZA
+
+<!-- TALLADO: parcial salida=.v4m/frontera/cap_11_bruta.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 3 | rotulo del titulo *"Mistakes Just Happen!"* | RESIDUO: rotulo |
+| R2 | L11 | 32 | pregunta de apertura sobre aceptar los errores como inevitables | POSTURA |
+| R3 | L13 | 11 | fecha, sitio y cuenta atras al despliegue | RESIDUO: rotulo de fecha |
+| R4 | L15 | 71 | escena: wardroom lleno para la critica del tag rojo | CASO |
+| R5 | L17 | 43 | el capitan se sienta con la linterna, necesitan ser mejores | CASO |
+| R6 | L19 | 103 | el marinero implicado, balance entre exigir cuentas y compasion | CASO |
+| R7 | L21 | 81 | que es el captain's mast (NJP), demasiados al mes | POSTURA |
+| R8 | L23 | 46 | se asumia que violar un tag rojo llevaba a mast, no creia en lo automatico | CASO |
+| R9 | L25 | 32 | eventualmente liderarian jefes y oficiales, hoy lidera el capitan, ocho horas | CASO |
+| R10 | L27 | 11 | "Let me start by welcoming the squadron and Naval Reactors representatives." | CASO |
+| R11 | L29 | 87 | documentos sobre la mesa, metodologia ad hoc, referencia a davidmarquet.com | CASO |
+| R12 | L31 | 4 | "I opened the proceedings." | CASO |
+| R13 | L33 | 9 | "Petty Officer M, can you tell me what happened?" | CASO |
+| R14 | L35 | 54 | relato del marinero: penso que era el siguiente paso, movio los tags | CASO |
+| R15 | L37 | 1 | "Gasps." | CASO |
+| R16 | L39 | 6 | "You moved a red tag aside?" | CASO |
+| R17 | L41 | 24 | "Yes, it was hanging right in front of the breaker..." | CASO |
+| R18 | L43 | 1 | "Murmuring." | CASO |
+| R19 | L45 | 34 | esperaba ir a mast, pero fue honesto sin evasivas, hay que premiarlo | CASO |
+| R20 | L47 | 21 | "Thank you very much for your candor. ... Supervisors stay behind." | CASO |
+| R21 | L49 | 12 | "This caused a stir. What, no recriminations? No captain's mast?" | CASO |
+| R22 | L51 | 50 | el capitan asume el riesgo de no castigar, prioriza la candidez | POSTURA |
+| R23 | L53 | 12 | "Now, gentlemen, how are we going to prevent this from happening again?" | CASO |
+| R24 | L55 | 14 | "And that's what we spent the next seven and a half hours talking about." | CASO |
+| R25 | L57 | 4 | rotulo *Mechanism: Take Deliberate Action* | RESIDUO: rotulo de mecanismo |
+| R26 | L59 | 21 | primera propuesta descartada: entrenamiento de refuerzo | CASO |
+| R27 | L61 | 53 | ninguna pregunta de examen habria fallado, no era falta de conocimiento | CASO |
+| R28 | L63 | 116 | segunda propuesta descartada: agregar supervision, ya habia mucha | CASO |
+| R29 | L65 | 37 | "mistakes just happen!", empiezan a llegar a algo | CASO |
+| R30 | L67 | 57 | discuten reducir errores en la interfaz operador-equipo | CASO |
+| R31 | L69 | 41 | "atencion al detalle" como frase comun que no basta | CASO |
+| R32 | L71 | 2 | "How so?" | CASO |
+| R33 | L73 | 23 | "Well, he was just in auto. He didn't engage his brain..." | CASO |
+| **P1** | **L75, L95** | **167** | **NODO: tomar accion deliberada, pausar, vocalizar y gesticular, y aplicarla a firmas y autorizaciones (ver 3.c.3 y discutible 3)** | **NODO** |
+| R34 | L77 | 120 | implementacion en Santa Fe, sin castigo al marinero, observadores informarian | CASO |
+| R35 | L79 | 79 | el lunes se explica el concepto a la tripulacion en cuarto | CASO |
+| R36 | L81 | 51 | aceptacion desigual: facil para nucleares (point and shoot), dificil para el resto | CASO |
+| R37 | L83 | 6 | subrotulo *Deliberate Action Is Not for Show* | RESIDUO: rotulo de subseccion |
+| R38 | L85 | 70 | rotulo *is a mechanism for COMPETENCE*, cuesta venderlo a la tripulacion | POSTURA |
+| R39 | L87 | 55 | obstaculo 1: se percibia como beneficio de un observador | POSTURA |
+| R40 | L89 | 131 | obstaculo 2: se percibia como ejercicio de entrenamiento, experimento mental | POSTURA |
+| R41 | L91 | 6 | subrotulo *How Can You Implement Deliberate Action?* | RESIDUO: rotulo de subseccion |
+| R42 | L93 | 102 | negocios con interfaz fisica con la naturaleza: mas claro, el reto es la velocidad | POSTURA |
+| R43 | L97 | 37 | intro a dos beneficios adicionales de la accion deliberada | POSTURA |
+| R44 | L99 | 148 | beneficio 1: un companero corrige antes de que el error ocurra, ejemplo de bomba | POSTURA |
+| R45 | L101 | 118 | beneficio 2: monitores de simulacro que intervienen | POSTURA |
+| R46 | L103 | 62 | anecdota: el inspector dice que los errores se corrigieron antes de ocurrir | CASO |
+| R47 | L105 | 12 | "He was describing a resilient organization..." | POSTURA |
+| R48 | L107 | 33 | extension a papeleo administrativo, firmas de oficiales | POSTURA |
+| R49 | L109 | 3 | separador "• • •" | RESIDUO: separador |
+| R50 | L111 | 19 | mucha gente habla de trabajo en equipo sin mecanismos reales | POSTURA |
+| R51 | L113 | 38 | pregunta retorica: bonos, hospitales, servicios | POSTURA |
+| R52 | L115 | 75 | robo-signing como contraejemplo, papeleo firmado sin pensar | POSTURA |
+| R53 | L117 | 3 | rotulo *QUESTIONS TO CONSIDER* | RESIDUO: rotulo |
+| R54 | L119 | 22 | pregunta 1 | PENDIENTE DE DOCTRINA |
+| R55 | L121 | 26 | pregunta 2 | PENDIENTE DE DOCTRINA |
+| R56 | L123 | 15 | pregunta 3 | PENDIENTE DE DOCTRINA |
+| R57 | L125 | 7 | pregunta 4 | PENDIENTE DE DOCTRINA |
+| **el cuerpo entero** | **L8 a L125** | **2521** | **suma de las piezas: 2521** | **residuo sin asignar: 0** |
+
+    piezas: 58   lineas solapadas: 0   cuerpo 2521   suma 2521   residuo 0   lineas con palabras sin cubrir: 0
+
+**LA FRONTERA CIERRA AL DIGITO: cuerpo `2521`, suma de piezas `2521`, residuo `0`, cero solapes y cero
+lineas con palabras sin cubrir.**
+
+### 3.c.3. LA CITA DE LA PIEZA QUE SE MINA, CON SU `sed` PEGADO (`D.35`)
+
+| linea | la salida de `sed`, pegada | veredicto |
+|---|---|---|
+| L75 | `...This meant that prior to any action, the operator paused and vocalized and gestured toward what he was about to do, and only after taking a deliberate pause would he execute the action... Deliberate actions were not performed for the benefit of an observer or an inspector. They weren't for show.` | NODO, pasos 1 y 2 |
+| L95 | `If your business doesn't have an obvious interface with nature and is more service or intellectual, take deliberate action still applies, but in a slightly different way. It applies at the moment someone signs a form, authorizes an action, or enters a keystroke.` | NODO, paso 3 |
+
+### 3.c.4. EL DISCUTIBLE 3, MARCADO ANTES DE SABER SI ACIERTO
+
+La pieza junta `L75` con `L95`, saltando diecinueve lineas (dos subrotulos, *Deliberate Action Is Not for
+Show* y *How Can You Implement Deliberate Action?*, con su desarrollo diagnostico de por que cuesta
+adoptar el mecanismo). Es el salto mas largo de los tres candidatos de esta vuelta. La asimetria con `L93`
+es deliberada: esa linea (interfaz fisica con la naturaleza) NO trae inventario propio y se sostiene como
+POSTURA, mientras que `L95` si trae su lista de tres objetos de trabajo (firmar, autorizar, teclear) y se
+mina. **Si el auditor lee que la aplicacion a negocios de servicios es un mecanismo distinto y no una
+etapa del mismo mecanismo de accion deliberada, esto se parte en dos candidatos.**
+
+### 3.c.5. El candidato, escrito y pasado por la aduana en seco en el mismo acto
+
+`cuarentena/marquet_turn_the_ship/tomar_accion_deliberada_pausar_vocalizar_gesticular.json`, con `UNIDAD
+DE ORIGEN: fuentes/marquet_turn_the_ship/cap_11.md` en su `resumen_teorico`. **3 pasos, 3 TRANSCRIPCION, 0
+PUENTE.** El informe de aduana en seco esta en la seccion 3.d, guardado en `.v4m/aduana/c3.txt`.
+
+## 3.d. LAS TRES ADUANAS EN SECO Y LOS OCHO PARES DE BANDA IGUAL O SUPERIOR AL UMBRAL, LEIDOS ANTES QUE NADA (`EXTRACTOR.md` 11)
+
+*Los tres candidatos nuevos, mas el corregido de la `TAREA 2`, pasaron la aduana en seco en el mismo acto
+en que se escribieron (seccion `16` de `EXTRACTOR.md`). Ninguno CAERIA. Los cuatro BLOQUEARIAN, que no es
+rechazo: es cola de lectura (seccion `12`). Las salidas completas estan en `.v4m/aduana/c1.txt`, `c2.txt`,
+`c3.txt` y `c0_declarar_intencion_d099.txt`.*
+
+    $ python forja.py informe cuarentena/marquet_turn_the_ship/eliminar_seguimiento_descendente_responsabilizar_dueno.json
+    [BLOQUEARIA] eliminar_seguimiento_descendente_responsabilizar_dueno
+        vecino declarar_intencion_reemplazar_peticion_permiso   similitud_texto 0.350
+
+    $ python forja.py informe cuarentena/marquet_turn_the_ship/acoger_inspectores_externos_fuente_aprendizaje.json
+    [BLOQUEARIA] acoger_inspectores_externos_fuente_aprendizaje
+        vecino tomar_accion_deliberada_pausar_vocalizar_gesticular  similitud_texto 0.457
+        vecino resistir_dar_solucion_clasificar_decision_urgencia   similitud_texto 0.412
+        vecino declarar_intencion_reemplazar_peticion_permiso       similitud_texto 0.406
+        vecino recorrer_organizacion_escuchar_plantilla             similitud_texto 0.353
+
+    $ python forja.py informe cuarentena/marquet_turn_the_ship/tomar_accion_deliberada_pausar_vocalizar_gesticular.json
+    [BLOQUEARIA] tomar_accion_deliberada_pausar_vocalizar_gesticular
+        vecino acoger_inspectores_externos_fuente_aprendizaje       similitud_texto 0.464
+        vecino resistir_dar_solucion_clasificar_decision_urgencia   similitud_texto 0.411
+
+**LA BANDA ALTA (`0,4` en adelante) SE LEE ANTES QUE NADA, Y SON SEIS PARES DE LOS OCHO.** Cada uno leido
+por su texto, no por su cifra:
+
+### 3.d.1. `eliminar_seguimiento` `P1` contra `declarar_intencion` `P1` (`0,350`, discutible 4)
+
+    eliminar_seguimiento P1: "Dile a cada responsable de un area que el mismo, y no su superior, es
+      quien debe vigilar sus propios pendientes y responder por completarlos..."
+    declarar_intencion   P1: "Evita las frases que piden permiso o que otro decida por ti: solicito
+      permiso para, me gustaria, que deberia hacer sobre, crees que deberiamos, podriamos..."
+
+**SANOS.** Uno traslada la propiedad de vigilar y completar un pendiente; el otro sustituye un vocabulario
+de peticion por uno de intencion. Ni el medio, ni la etapa, ni el objeto de trabajo coinciden.
+
+### 3.d.2. `acoger_inspectores` `P2` contra `tomar_accion_deliberada` `P2` (`0,457`/`0,464`, discutible 5)
+
+    acoger_inspectores      P2: "En las areas donde tu equipo hace algo excepcionalmente innovador o
+      experto, trata a los inspectores como aliados con quienes compartir esas buenas practicas."
+    tomar_accion_deliberada P2: "Recuerda que la accion deliberada no se hace para quedar bien ante un
+      observador o un inspector: se hace igual si nadie te esta mirando..."
+
+**SANOS.** La palabra compartida es *inspector*, pero el papel que cada uno le da es opuesto: uno lo
+convierte en aliado activo para compartir buenas practicas; el otro advierte que la accion NO se hace para
+la mirada de ningun observador. Distinto medio, distinta etapa, distinto objeto de trabajo.
+
+### 3.d.3. `acoger_inspectores` `P3` contra `resistir_dar_solucion` `P3` (`0,412`, discutible 6)
+
+    acoger_inspectores    P3: "En las areas donde tu equipo hace las cosas mal y necesita ayuda, trata a
+      los inspectores como fuente de informacion y de soluciones."
+    resistir_dar_solucion P3: "Si la decision es urgente, tomala tu mismo y despues haz que el equipo la
+      someta a critica y la evalue."
+
+**SANOS.** Uno trata la relacion con un tercero externo (el inspector) ante una debilidad propia; el otro
+resuelve una decision urgente dentro del equipo. Ni el objeto de trabajo ni la etapa coinciden.
+
+### 3.d.4. `acoger_inspectores` `P1` contra `declarar_intencion` `P3` (`0,404`/`0,406`, discutible 7)
+
+    acoger_inspectores  P1: "Usa a los inspectores no solo para las criticas puntuales de un problema,
+      sino tambien en inspecciones completas: aprovechalos para difundir tus ideas..."
+    declarar_intencion  P3: "Quien recibe la intencion declarada responde con una aprobacion simple en
+      vez de dar una orden, y deja que cada quien ejecute su propio plan." (ya corregido en la TAREA 2)
+
+**SANOS.** Uno describe el uso amplio de los inspectores externos; el otro describe la respuesta de un
+superior a una intencion ya declarada por un subordinado. Sin medio, etapa ni objeto en comun.
+
+### 3.d.5. `acoger_inspectores` `P3` contra `recorrer_organizacion` `P6` (`0,353`)
+
+    acoger_inspectores      P3: "...trata a los inspectores como fuente de informacion y de soluciones."
+    recorrer_organizacion   P6: "Lee el estado de esas linternas como dato y no como examen..."
+
+**SANOS, y por debajo de la banda ALTA**: comparten el tema general de leer una señal externa sin juzgarla
+como examen, pero un inspector de una inspeccion formal y una linterna de un recorrido informal no son el
+mismo objeto de trabajo. Consistente con `EXTRACTOR.md` 11: la banda por debajo de `0,4` es mas ruido que
+señal.
+
+### 3.d.6. `tomar_accion_deliberada` `P1` contra `resistir_dar_solucion` `P3` (`0,411`, discutible 9)
+
+    tomar_accion_deliberada P1: "Antes de cualquier accion, haz una pausa, di en voz alta lo que estas a
+      punto de hacer y senalalo con un gesto; solo despues de esa pausa deliberada ejecuta la accion."
+    resistir_dar_solucion   P3: "Si la decision es urgente, tomala tu mismo y despues haz que el equipo
+      la someta a critica y la evalue."
+
+**SANOS.** Uno es una disciplina fisica de pausa-anuncio-gesto antes de tocar un control; el otro es una
+regla de quien decide segun el tiempo disponible. Distinto medio, distinta etapa.
+
+### 3.d.7. `declarar_intencion` `P2` contra `resistir_dar_solucion` `P4`: YA SOSTENIDO, SE CITA (discutible 10)
+
+Este es el MISMO par que `ACTA M4` `M4.5.4` ya leyo entero y sostuvo SANO como discutible 4 de la vuelta 3
+(*"paso 2 contra paso 4, uno de vocabulario y otro de plazo, sin un medio, una etapa ni un objeto en
+comun"*), alli con similitud `0,468` y hoy con `0,422` (el numero se mueve porque la poblacion del barrido
+crecio de `451` a `454`, no porque el texto de ninguno de los dos pasos haya cambiado). Por `D.47` (nada
+que el registro ya diga se repite) no se relee: se cita. **SANOS, adjudicado por el auditor.**
+
+### 3.d.8. `declarar_intencion` `P2` contra `informar_cierre_jornada` `P3` (`0,356`)
+
+    declarar_intencion      P2: "...declara tu intencion con frases activas: tengo la intencion de,
+      planeo, hare, haremos..."
+    informar_cierre_jornada P3: "Di cuando se vera el resultado o el proximo hito de ese trabajo..."
+
+**SANOS, y por debajo de la banda ALTA**: uno sustituye un vocabulario de peticion por uno de intencion, el
+otro reporta el hito de un trabajo en curso durante un cierre de jornada. Comparten el tema general de la
+comunicacion hacia el superior, no el medio ni la etapa.
+
+**RESUMEN DE LA LECTURA: OCHO PARES, OCHO SANOS.** Ninguno de los tres candidatos nuevos, ni el corregido
+de la `TAREA 2`, tiene un gemelo real dentro de la banda de similitud levantada por la aduana. Los tres
+quedan `BLOQUEARIAN esperando veredicto`, que es la cola de lectura que le toca a este frente resolver
+cuando el lote cierre y llegue su turno de insercion, y no una caida.
+---
+
+# TAREA 4. LA MUESTRA DE FIDELIDAD, SEMILLA `m4` (`D.58`)
+
+    $ python scripts/muestra_fidelidad.py --libro marquet_turn_the_ship --capitulos cap_09,cap_10,cap_11 --semilla m4
+    MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+      libro    : marquet_turn_the_ship
+      semilla  : m4
+      capitulos: cap_09, cap_10, cap_11
+
+      RELEIDO ENTERO : cap_10
+      POR MUESTRA    : cap_09, cap_11, 15 pasos cada uno
+
+      --- cap_09: 2 paso(s) en la muestra
+        eliminar_seguimiento_descendente_responsabiliz P1   Dile a cada responsable de un area que el mismo, y no su sup
+        eliminar_seguimiento_descendente_responsabiliz P2   Deja de mantener el sistema centralizado que solo vigilaba y
+
+      --- cap_11: 3 paso(s) en la muestra
+        tomar_accion_deliberada_pausar_vocalizar_gesti P1   Antes de cualquier accion, haz una pausa, di en voz alta lo
+        tomar_accion_deliberada_pausar_vocalizar_gesti P2   Recuerda que la accion deliberada no se hace para quedar bie
+        tomar_accion_deliberada_pausar_vocalizar_gesti P3   Si tu negocio no tiene una interfaz fisica con la naturaleza
+
+      --- cap_10: ENTERO, 3 paso(s), no hay muestra que elegir
+
+Salida completa guardada en `.v4m/muestra/muestra_fidelidad_v4.txt`. **LA SEMILLA ELIGIO RELEER `cap_10`
+ENTERO** (tiene solo 3 pasos, bajo el umbral de la herramienta) **y muestrear el 100 por ciento de `cap_09`
+(2 de 2 pasos) y `cap_11` (3 de 3 pasos), tambien bajo el umbral.** Los tres capitulos quedan con
+cobertura completa de sus pasos, ya releidos linea a linea contra el libro en las secciones 3.a.3, 3.b.3 y
+3.c.3: **0 PUENTE en las tres listas.**
+
+**EL DISPARADOR NO SE ACTIVA:** ningun capitulo pasa del `10` por ciento de pasos inventados (los tres
+estan en `0,00`, seccion siguiente). No hace falta releer ningun capitulo entero por encima de lo que la
+semilla ya eligio.
+---
+
+# CIERRE DE LA VUELTA 4
+
+## 5.a. LAS TRES GUARDAS, CORRIDAS AL CIERRE
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python tests/test_aceptacion.py
+    ...
+    total: 356 pruebas, 0 fallos, 0 errores
+
+**LAS TRES EN VERDE.** El `gate` sigue en `346` nodos verificados porque esta vuelta **no inserto nada**
+(`MODO_INSERCION=cuarentena`); las `346` son las mismas de la apertura.
+
+## 5.b. `PASOS INVENTADOS`, LA TABLA CONSOLIDADA DEL TRAMO DE ESTA VUELTA
+
+<!-- TALLADO: parcial salida=.v4m/pasos_inventados_v4m.txt -->
+| capitulo | nodos | pasos escritos | PUENTE | PASOS INVENTADOS |
+|---|---:|---:|---:|---:|
+| `cap_06` (estado heredado, `ACTA M4` `M4.6`, no se repite el calculo, se cita) | 2 | 8 | 0 | 0,00 por ciento (0 / 8) |
+| `cap_07` (estado heredado, `ACTA M4` `M4.6`) | 1 | 3 | 0 | 0,00 por ciento (0 / 3) |
+| `cap_08` (estado heredado, `ACTA M4` `M4.6`) | 1 | 5 | 0 | 0,00 por ciento (0 / 5) |
+| `cap_09` (HOY) | 1 | 2 | 0 | **0,00 por ciento (0 / 2)** |
+| `cap_10` (HOY) | 1 | 3 | 0 | **0,00 por ciento (0 / 3)** |
+| `cap_11` (HOY) | 1 | 3 | 0 | **0,00 por ciento (0 / 3)** |
+| EL TRAMO DE ESTA VUELTA (`cap_09` + `cap_10` + `cap_11`) | 3 | 8 | 0 | **0,00 por ciento (0 / 8)** |
+
+**NINGUN CAPITULO DE ESTA VUELTA PASA DEL TOPE DE `10,00`** (`8.1`, `8.2`): el peor capitulo del tramo es
+`0,00`. La cifra **se mantiene igual** que el peor capitulo de la vuelta anterior (`0,00` de `cap_06`,
+`cap_07` y `cap_08`, seccion `1.b`), asi que por `8.1` (se mantiene o baja, sube un escalon) **el tramo de
+la vuelta siguiente sube a CUATRO capitulos**, salvo que el auditor adjudique otra cosa.
+
+## 5.c. LA MUESTRA DE FIDELIDAD, YA PEGADA EN LA `TAREA 4`, CITADA Y NO REPETIDA
+
+`cap_10` releido ENTERO (`3` pasos, bajo el umbral) y `cap_09`/`cap_11` muestreados al `100` por ciento
+(`2` de `2` y `3` de `3`). **`0` PUENTE en las tres listas**, con su `sed` pegado en `3.a.3`, `3.b.3` y
+`3.c.3`. Semilla `m4`, salida completa en `.v4m/muestra/muestra_fidelidad_v4.txt` (commiteada con esta
+vuelta).
+
+## 5.d. EL CREDITO, ANOTADO (`EXTRACTOR.md` 14, propuesta y no adjudicacion)
+
+*Las cuatro especies que son mias de proponer. `AUDITOR` no es mia.*
+
+    $ python forja.py credito --anotar --especie REPORTE --vuelta 4 --tanda "vuelta 4" --racha "1 de 3" --cita "docs/loop/REPORTE.md, VUELTA 4"
+    $ python forja.py credito --anotar --especie "CIFRA PUBLICADA" --vuelta 4 --tanda "vuelta 4" --racha "2 de 2" --cita "docs/loop/REPORTE.md, VUELTA 4 seccion Apertura"
+    $ python forja.py credito --anotar --especie CLASE --vuelta 4 --tanda "vuelta 4" --racha "1 de 2" --cita "docs/loop/PROMPT_SIGUIENTE.md, VUELTA 4 cabecera"
+    $ python forja.py credito --anotar --especie "DATO MOVIDO" --vuelta 4 --tanda "vuelta 4" --racha "1 de 2" --cita "docs/loop/REPORTE.md, VUELTA 4 seccion 5"
+
+| especie | lo que propongo | por que |
+|---|---|---|
+| `REPORTE` | **no cae, sube a `1 de 3`** | abierto antes de la primera tarea, anexado tarea por tarea (secciones `Apertura` a `4`), las tres guardas verdes en `5.a`, sin turno mudo |
+| `CIFRA PUBLICADA` | **no cae, sube a `2 de 2`** | toda cifra de esta vuelta sale de un instrumento corrido hoy (`gate`, `guiones`, `credito`, `deuda`, cuatro `informe`, `tablero`, `muestra_fidelidad`, `awk`, `sed`, `wc`); la unica cifra ajena citada (`ACTA M4` `M4.6`, `M4.4`) se cita como tal y no se recalcula, por `D.47` |
+| `CLASE` | **no cae, sube a `1 de 2`** | la vuelta declaro `EXTRACCION` en su cabecera y la sostuvo entera: `0` inserciones, `MODO_INSERCION=cuarentena` de principio a fin |
+| `DATO MOVIDO` | **no cae, sube a `1 de 2`** | `dataset/`, `bitacora/` y `censos/` sin tocar (verificado abajo); lo unico que cambio de estado fue `cuarentena/` (sede propia del extractor), `config/frentes.json` (declaracion firmada, no dato del grafo), `docs/loop/` (tablero, credito, deuda, reporte) y `.v4m/` (evidencia) |
+
+    $ git diff --stat HEAD -- dataset/ bitacora/ censos/
+    (sin salida, antes de este commit)
+
+**`DATO MOVIDO` VERIFICADO:** ninguna de las tres sedes de dato cambio en esta vuelta.
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'marquet_turn_the_ship' (D.48)
+      registro: docs/loop/CREDITO_marquet_turn_the_ship.jsonl
+      tandas: 4, en 18 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA M4
+      CIFRA PUBLICADA    2 de 2     vuelta 4  TOPE
+      CLASE              1 de 2     vuelta 4
+      DATO MOVIDO        1 de 2     vuelta 4
+      REPORTE            1 de 3     vuelta 4
+
+      CREDITO ROTO: CIFRA PUBLICADA en su tope.
+
+### 5.d.1. **`CIFRA PUBLICADA` LLEGA A SU TOPE DE VERDAD, Y LO DECLARO SIN ARREGLARLO** (`EXTRACTOR.md` 7, `5.4`)
+
+*`src/credito.py` linea `254`, comentario propio del instrumento: "las especies cuya racha declarada llego
+a su tope... es lo que para el bucle." No es una lectura mia: es lo que el propio instrumento dice de si
+mismo.*
+
+**A DIFERENCIA DE LA DISCREPANCIA DE `M4.11.a`** (que eran la propuesta y la adjudicacion de la MISMA
+vuelta `3` contadas dos veces), **esta vez las dos tandas limpias son de DOS VUELTAS DISTINTAS**: la tanda
+`ACTA M4` (adjudicacion del auditor sobre la vuelta `3`) y la tanda `vuelta 4` (mi propia propuesta de
+hoy). El instrumento no tiene aqui el defecto que `M4.11.a` señalo: son dos tandas de verdad, no una
+contada dos veces, y por eso `CIFRA PUBLICADA` llega a `2 de 2`, su tope, y el credito queda **ROTO**.
+
+**LO QUE ESTO ES, POR `EXTRACTOR.md` 7:** una cifra publicada con su corte llegando al limite que el
+propio arnes documenta como el que **para el bucle**. Es la condicion de parada que faltaba en `5.g`, y la
+declaro sin arreglarla: **no reescribo mi propia tanda para que no cuente, no le bajo la racha a mano, y
+no la callo.**
+
+**LO QUE NO HAGO, PORQUE NO ME TOCA (`EXTRACTOR.md` 14, regla madre `EL QUE MIDE NO ADJUDICA`):** no
+adjudico si esta tanda cuenta como limpia de verdad ni si el tope se sostiene. **Eso lo decide el
+auditor**, con la misma prudencia que `M4.11.a` uso para la discrepancia de la vuelta pasada. Lo que si
+dejo escrito, para que la lectura no dependa de mi palabra: **la propia cifra `CIFRA PUBLICADA` que
+propongo (`5.d`) esta sostenida en instrumentos corridos hoy** (seccion `Apertura`, `1.c.1`, `2.b`, `3.d`,
+`TAREA 4`), asi que no tengo motivo propio para proponer `--cae` sobre mi tanda de hoy; **la pregunta que
+le queda al auditor es si la tanda `ACTA M4` y la tanda `vuelta 4`, siendo de dos vueltas distintas,
+cierran la racha o si hay algo mas para leer, como ya paso una vez con esta misma especie.**
+
+## 5.e. EL TABLERO, YA REESCRITO Y CON SU DIFF PEGADO EN LA `TAREA 1`
+
+*`1.c.1` ya corrio `python forja.py tablero --escribir` y pego el diff combinado (`d100` mas la `TAREA 3`).
+No se repite el mismo comando por segunda vez en la misma vuelta (`D.47`): el fichero en disco no ha vuelto
+a cambiar desde entonces.* La fila de `marquet_turn_the_ship` queda en `17` candidatos en bandeja, `11` de
+`17` unidades minadas, `cap_11` como ultimo capitulo.
+
+## 5.f. LO QUE ESTA VUELTA NO HIZO, DICHO POR SU NOMBRE
+
+- **Cero inserciones.** `MODO_INSERCION=cuarentena` de principio a fin; los `17` candidatos de la bandeja
+  siguen esperando a que el lote `marquet_turn_the_ship` cierre (`D.39`).
+- **No se abrio un cuarto capitulo.** El tramo de esta vuelta fue `cap_09`, `cap_10` y `cap_11`, tres, por
+  el techo que `8.1` fijo al abrir esta vuelta.
+- **No se toco el arnes ni la maquinaria** (`D.45`): ningun fichero de `src/`, `scripts/`, `tests/`,
+  `hooks/`, `esquema/` ni `orquestador_forja.sh` cambio en esta vuelta. La unica excepcion nombrada por el
+  encargo, `config/frentes.json`, es declaracion firmada y no codigo.
+- **No se escribio doctrina nueva.** La cola de doctrina sigue en `11` preguntas (`python forja.py
+  tablero`, seccion `COLA DE DOCTRINA`, `D.56`); esta vuelta no le añadio ninguna.
+- **No se pago la deuda vieja.** El instrumento dio `LIBRE`, `2 de 5` al abrir; solo `d099` y `d100` se
+  pagaron, por ser de la propia `ACTA M4` y venir encargadas por su nombre.
+- **`dataset/`, `bitacora/` y `censos/` sin tocar.** Nada se escribio a mano en esas sedes
+  (`EXTRACTOR.md` 14); los tres candidatos nuevos y el corregido viven enteros en
+  `cuarentena/marquet_turn_the_ship/`.
+
+## 5.g. LAS CONDICIONES DE PARADA, MEDIDAS UNA A UNA
+
+| condicion (`EXTRACTOR.md` 7) | medida | dispara |
+|---|---|---|
+| algo contradice una regla vigente | el unico choque posible (`5.5` contra `D.55` sobre dejar tarea bloqueante) ya lo resolvio el auditor con `D.13` en `ACTA M4` `M4.16.a`, y esta vuelta no abre uno nuevo | NO |
+| una cifra publicada con su corte se contradice sin declarar | la unica cifra ajena citada (`ACTA M4` `M4.4`, `M4.6`) se cita como tal, con su fuente, y no se recalcula | NO |
+| una operacion cuyo texto no alcanza para ejecutarse sin decidir | la eleccion de `TAREA 2` (retirar la clausula contra citar `L105`) estaba escrita en el encargo con sus dos salidas limpias; se eligio con su razon en `2.a` | NO |
+| turno sin cerrar reporte | este reporte cierra las cuatro tareas con su saldo | NO |
+| credito roto | `python forja.py credito` da **`CREDITO ROTO: CIFRA PUBLICADA en su tope`**, `2 de 2`, tras mi propia tanda de hoy (`5.d.1`) | **SI** |
+
+**ESTA VUELTA ES UNA PARADA, POR LA ULTIMA FILA (`EXTRACTOR.md` 7).** `CIFRA PUBLICADA` llega a su tope de
+verdad, con dos tandas de dos vueltas distintas (`ACTA M4` y `vuelta 4`), medido por el propio instrumento
+en `5.d` y `5.d.1`. **LO DECLARO Y NO LO ARREGLO**, que es exactamente lo que `EXTRACTOR.md` 7 manda: *"lo
+escribes en el reporte como PARADA y no lo arreglas tu."* **NO ESCRIBO `PARA_ALEXIS.md`** (`EXTRACTOR.md`
+7 y 14: esa sede es del auditor, no la mia). Termino de todas formas las guardas mecanicas de cierre que
+ya estaban en curso (`5.a`, y el `cerrar_reporte.py` y el commit y push que siguen), porque una parada
+tambien necesita un arbol coherente y commiteado para que se pueda auditar; **lo que no hago es abrir mas
+trabajo sustantivo despues de esta fila**: ningun capitulo nuevo, ninguna reparacion adicional del
+registro, ninguna adjudicacion propia sobre si el tope se sostiene.
+
+## 5.h. EL SALDO FINAL, POR TAREA
+
+| # | tarea | saldo |
+|---:|---|---|
+| 1 | Registros | correccion declarada (4 cifras), `d100` en `config/frentes.json`, `tablero --escribir` con diff, credito leido, `d099` y `d100` pagadas |
+| 2 | `d099` | clausula sin cita retirada del paso 3 de `declarar_intencion_reemplazar_peticion_permiso`, aduana en seco repetida, `BLOQUEARIA` sin caer |
+| 3 | `cap_09`, `cap_10`, `cap_11` | 3 candidatos escritos, 3 fronteras al digito (`46`, `40` y `58` piezas), 3 aduanas en seco guardadas en `.v4m/aduana/`, 8 pares de banda igual o superior al umbral leidos y sostenidos SANOS |
+| 4 | Muestra de fidelidad `m4` | pegada, `0` PUENTE, cobertura completa de los `8` pasos del tramo |
+
+**CANDIDATOS NUEVOS DE ESTA VUELTA: `3`** (`eliminar_seguimiento_descendente_responsabilizar_dueno`,
+`acoger_inspectores_externos_fuente_aprendizaje`, `tomar_accion_deliberada_pausar_vocalizar_gesticular`).
+**BANDEJA TOTAL DEL LOTE: `17`.**
+
+## 5.i. LA IDENTIDAD DE CIERRE, LEIDA DE GIT
+
+| | |
+|---|---|
+| commit al cerrar (antes de este commit) | `3ac321a` (`git rev-parse HEAD`, sin cambios desde la apertura: esta vuelta no ha commiteado nada todavia) |
+| rama | `extraccion-marquet_turn_the_ship` (`git rev-parse --abbrev-ref HEAD`) |
+| bytes de `docs/loop/REPORTE.md` al cerrar | `4132316` (`wc -c`, antes de este parrafo de cierre) |
+| bytes de los tres candidatos nuevos | `eliminar_seguimiento_descendente_responsabilizar_dueno.json` `4119`, `acoger_inspectores_externos_fuente_aprendizaje.json` `4753`, `tomar_accion_deliberada_pausar_vocalizar_gesticular.json` `5565` |
+| bytes del candidato corregido en la `TAREA 2` | `declarar_intencion_reemplazar_peticion_permiso.json` `5294` |
+
+## 5.j. `python scripts/cerrar_reporte.py`, CORRIDO AL CIERRE
+
+<!-- TALLADO: parcial salida=.v4m/cerrar_reporte_final.txt -->
+
+    $ python scripts/cerrar_reporte.py
+    [cierre] tallado del reporte (D.41)
+    [cierre] censo de rutas (D.42)
+    [cierre] tabla de cierre de tareas (D.52)
+    [cierre] gate de integridad
+    [cierre] barrido de guiones
+    [cierre] prueba de aceptacion
+    [cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda
+
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia
+    corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**CIERRE VERDE**, con las `356` pruebas de `python tests/test_aceptacion.py` en `0` fallos y `0` errores
+dentro de esa misma corrida. La cola de rancios que `vigencia` publica es de otros libros de esta forja
+(`grove_high_output`, `scott_radical_candor`), ninguno de `marquet_turn_the_ship`, que no tiene ni un nodo
+en el grafo todavia (`nodos_en_grafo: 0`).
+---

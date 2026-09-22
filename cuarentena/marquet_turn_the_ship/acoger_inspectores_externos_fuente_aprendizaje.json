@@ -1,0 +1,34 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-21"
+    }
+  ],
+  "id": "acoger_inspectores_externos_fuente_aprendizaje",
+  "titulo": "Acoger a los inspectores externos como fuente de aprendizaje segun la fortaleza o debilidad del area inspeccionada",
+  "denominaciones": {
+    "nombre_largo": "El mecanismo de tratar a los inspectores y auditores externos como aliados para difundir ideas, aprender de otros y documentar problemas, en vez de ocultarles informacion",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "embrace the inspectors"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando una organizacion externa (un inspector, un auditor, un regulador) va a revisar tu equipo o tu unidad, sea en una critica puntual o en una inspeccion completa.",
+  "entregable_esperado": "La visita del inspector usada activamente para difundir ideas propias, aprender de otras unidades y documentar problemas, con un trato distinto segun si el area inspeccionada es una fortaleza o una debilidad.",
+  "pasos_accionables": [
+    "Usa a los inspectores no solo para las criticas puntuales de un problema, sino tambien en inspecciones completas: aprovechalos para difundir tus ideas en toda la organizacion, para aprender de otras unidades, y para documentar los problemas y mejorar la tuya. El texto lo dice asi: We would utilize the inspectors to disseminate our ideas throughout the squadron, to learn from others, and to document issues to improve the ship.",
+    "En las areas donde tu equipo hace algo excepcionalmente innovador o experto, trata a los inspectores como aliados con quienes compartir esas buenas practicas. El texto lo dice asi: Concerning areas where we were doing something exceptionally innovative or expertly, we viewed the inspectors as advocates to share our good practices with.",
+    "En las areas donde tu equipo hace las cosas mal y necesita ayuda, trata a los inspectores como fuente de informacion y de soluciones. El texto lo dice asi: Concerning areas where we were doing things poorly and needed help, we viewed them as sources of information and solutions."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_10.md, unidad Cap. 15, titulo textual \"We Have a Problem\". FRONTERA DENTRO DEL NODO, declarada aqui porque EXTRACTOR.md 10 la pide: el paso 1 sale de la linea 45 (47 palabras) y los pasos 2 y 3 salen de la linea 49 (61 palabras), ambas dentro de la pieza P1 de la frontera de cap_10 publicada en esta vuelta, que reune LINEAS NO CONTIGUAS (L45 y L49) porque las dos desarrollan el mismo mecanismo nombrado por su propio rotulo en la linea 43, Mechanism: Embrace the Inspectors, saltando la linea 47, que es la que declara la etiqueta (EMBRACE THE INSPECTORS is a mechanism for CONTROL) y cuenta la anecdota de las camisetas DON'T BE A VICTIM, sin inventario propio. POR QUE ES PROCEDIMIENTO Y NO CASO, con D.27 delante: el libro pone su propio inventario de MEDIOS (linea 45: difundir ideas, aprender de otros, documentar problemas) y de ETAPAS segun el estado del area (linea 49: si el area es fuerte, tratar al inspector como aliado para compartir; si el area es debil, tratarlo como fuente de informacion y solucion), sin adjetivo de adecuacion en el sitio del criterio. EL CASO ENTRA COMO EJEMPLO Y NO COMO NODO PROPIO (manual 3.5): la escena del incidente de shore power y el tag rojo violado (lineas 15 a 41), la anecdota de la inspeccion INSURV y la lista de deficiencias conocidas entregada a los inspectores (linea 51), y la anecdota de los tripulantes preguntando a los inspectores durante una inspeccion (linea 53) son casos especificos de Marquet que ilustran el mecanismo y no se minan como pasos propios: son la instancia de un caso, no la etapa generica. DISCUTIBLE, MARCADO ANTES DE SABER SI ACIERTO: la pieza junta dos lineas no contiguas (L45 y L49) porque las dos nombran el mismo mecanismo de la linea 43; si el auditor lee que son dos mecanismos distintos (uno de uso amplio de los inspectores, otro de clasificacion segun fortaleza o debilidad del area), esto se parte en dos candidatos. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: la reflexion sobre por que este mecanismo se clasifica bajo control y no bajo competencia (linea 59) no se escribe como paso, es una clasificacion del propio libro sobre su estructura y no una accion; y el analisis del caso Enron-Arthur Andersen (linea 33) tampoco entra, por ser una analogia de otro sector sin pasos propios. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 3 pasos, 3 TRANSCRIPCION, 0 PUENTE."
+}
