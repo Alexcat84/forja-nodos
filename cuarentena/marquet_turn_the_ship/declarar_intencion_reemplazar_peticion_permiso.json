@@ -1,0 +1,34 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-21"
+    }
+  ],
+  "id": "declarar_intencion_reemplazar_peticion_permiso",
+  "titulo": "Reemplazar las frases que piden permiso por frases que declaran intencion, y responder con una aprobacion simple",
+  "denominaciones": {
+    "nombre_largo": "El mecanismo de usar tengo la intencion de en vez de pedir permiso, para convertir seguidores pasivos en lideres activos",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "I intend to"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando vas a proponer una accion a quien tiene la autoridad de aprobarla, en vez de pedirle permiso o pedirle que decida por ti.",
+  "entregable_esperado": "La propuesta de accion formulada como una intencion declarada, y la aprobacion simple de quien la recibe cuando la accion es segura y apropiada.",
+  "pasos_accionables": [
+    "Evita las frases que piden permiso o que otro decida por ti: solicito permiso para, me gustaria, que deberia hacer sobre, crees que deberiamos, podriamos. El texto lo dice asi: Request permission to . . . / I would like to . . . / What should I do about . . . / Do you think we should . . . / Could we . . .",
+    "En su lugar, declara tu intencion con frases activas: tengo la intencion de, planeo, hare, haremos. El texto lo dice asi: I intend to . . . / I plan on . . . / I will . . . / We will . . .",
+    "Quien recibe la intencion declarada, si la accion es segura y apropiada, responde con una aprobacion simple en vez de dar una orden, y deja que cada quien ejecute su propio plan. El texto lo dice asi: officers would state their intentions with 'I intend to . . .' and I would say, 'Very well.' Then each man would execute his plan."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_07.md, unidad Cap. 11, titulo textual I Intend To . . . FRONTERA DENTRO DEL NODO, declarada aqui porque EXTRACTOR.md 10 la pide: el paso 3 sale de la linea 55 (69 palabras) y los pasos 1 y 2 salen de las lineas 73 a 93 (165 palabras entre las dos lineas y las diez frases, contando la linea 55), todas dentro de la pieza P1 de la frontera de cap_07 publicada en esta vuelta, que reune LINEAS NO CONTIGUAS (L55 y L73 a L93) porque las dos son partes del mismo mecanismo nombrado por su propio rotulo en la linea 57, Mechanism: Use 'I Intend to . . .' to Turn Passive Followers into Active Leaders, con el desarrollo concreto de las frases en el subrotulo de la linea 71, The Power of Words. POR QUE ES PROCEDIMIENTO Y NO CASO, con D.27 delante: el libro pone su propio inventario de MEDIOS, las frases mismas, nombradas una a una en dos listas (cinco frases desempoderadas en las lineas 75 a 83, cuatro frases empoderadas en las lineas 87 a 93), sin ningun adjetivo de adecuacion en el sitio del criterio: no dice usa un lenguaje apropiado, dice las frases exactas a evitar y las frases exactas a usar. EL CASO ENTRA COMO EJEMPLO Y NO COMO NODO PROPIO (manual 3.5): el origen del habito en el USS Sunfish (linea 53) y la visita de Stephen Covey (lineas 63 a 69) son anecdotas del autor que no llevan pasos propios y no se minan. LA REGLA PROPIA DE SANTA FE DE LA LINEA 61 (que la intencion declarada solo aplicaba cuando el capitan estaba despierto) NO SE ESCRIBE COMO PASO: es una restriccion operativa de esa nave, no una etapa generica del mecanismo. DISCUTIBLE, MARCADO ANTES DE SABER SI ACIERTO: la pieza junta dos tramos no contiguos del capitulo (L55 y L73 a L93) porque los dos nombran el mismo mecanismo de la linea 57; si el auditor lee que son dos mecanismos distintos, esto se parte en dos candidatos. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 3 pasos, 3 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: la extension del mecanismo que el propio libro narra desde la linea 97 (pedir que el reporte de la intencion ya venga con el razonamiento completo, para que la respuesta sea solo una aprobacion) no lleva su propio rotulo de mecanismo y sus pasos habria que inferirlos del dialogo entre el capitan y el OOD de las lineas 99 a 107, asi que se sostiene como POSTURA y no se abre nodo propio, por EXTRACTOR.md 15.4: un parrafo sin inventario propio no se completa con pasos que invento yo. Las referencias a los libros de Stephen Covey (lineas 69 y 95) tampoco entran, por ser citas a otro autor sin fecha de corte verificable como cifra."
+}
