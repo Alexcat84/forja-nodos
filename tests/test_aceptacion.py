@@ -4008,6 +4008,121 @@ class PruebaTresDefectosDelFrente(BaseForja):
         self.assertNotIn("break", trozo)
 
 
+class PruebaCreditoCoherente(BaseForja):
+    """LOS DOS DEFECTOS DEL REGISTRO QUE EL FRENTE `marquet_turn_the_ship` MIDIO.
+
+    `ACTA M5` `M5.11` y `M5.12.a`, 21 sep 2026. `D.45` le veda `src/` desde un frente,
+    asi que los midio y los subio. **Su racha `CIFRA PUBLICADA` llego a su tope con
+    dos tandas seguidas de la misma averia: el registro publicaba lo contrario de lo
+    que decia la tabla que lo documentaba.**
+    """
+
+    def _tanda(self, **campos):
+        base = {"tipo": "tanda", "linea": "una", "especie": "REPORTE",
+                "racha": "1 de 3", "cita": "ACTA X seccion 1", "vuelta": 1}
+        base.update(campos)
+        return base
+
+    # ------------------------------------- la fila que se contradice a si misma
+
+    def test_caso_positivo_una_tanda_que_sube_la_racha_sin_decir_si_cae(self):
+        """**LA FILA EXACTA QUE PARO EL FRENTE**, de su vuelta `4`:
+
+            {"tanda": "vuelta 4", "especie": "DATO MOVIDO", "racha": "1 de 2"}
+
+        **Sube la racha y no declara `cae`.** Una racha solo sube cuando algo cae, asi
+        que esa fila no puede ser cierta de ninguna manera, **y el instrumento la
+        acepto dos vueltas seguidas.**
+        """
+        from src import credito
+        quejas = credito.incoherencias(self._tanda(racha="1 de 2",
+                                                  especie="DATO MOVIDO"))
+        self.assertEqual(len(quejas), 1)
+        self.assertIn("no dice si cae", quejas[0])
+
+    def test_caso_positivo_cae_falso_con_la_racha_arriba(self):
+        from src import credito
+        quejas = credito.incoherencias(self._tanda(cae=False, racha="1 de 3"))
+        self.assertEqual(len(quejas), 1)
+        self.assertIn("una tanda limpia la reinicia", quejas[0])
+
+    def test_caso_positivo_cae_cierto_con_la_racha_en_cero(self):
+        from src import credito
+        quejas = credito.incoherencias(self._tanda(cae=True, racha="0 de 3"))
+        self.assertEqual(len(quejas), 1)
+        self.assertIn("la racha no puede estar vacia", quejas[0])
+
+    def test_caso_negativo_las_dos_filas_coherentes_pasan(self):
+        from src import credito
+        self.assertEqual(credito.incoherencias(
+            self._tanda(cae=True, racha="1 de 3")), [])
+        self.assertEqual(credito.incoherencias(
+            self._tanda(cae=False, racha="0 de 3")), [])
+
+    def test_caso_negativo_la_historia_migrada_esta_exenta(self):
+        """Su historia es anterior al campo `cae`. **Acusar de lo que el registro no
+        vio es ruido que se aprende a ignorar**, y esta casa ya pago eso una vez."""
+        from src import credito
+        self.assertEqual(credito.incoherencias(
+            self._tanda(racha="2 de 3", migrado=True)), [])
+
+    def test_el_instrumento_NO_LA_ESCRIBE(self):
+        """De nada vale verla si se puede escribir igual."""
+        from src import credito
+        destino = os.path.join(self.taller, "CREDITO_una.jsonl")
+        self.assertRaises(credito.CreditoMalEscrito, credito.anotar,
+                          self._tanda(racha="1 de 2"), ruta_registro=destino)
+        self.assertFalse(os.path.exists(destino), "la escribio de todas formas")
+        credito.anotar(self._tanda(cae=True, racha="1 de 3"), ruta_registro=destino)
+        self.assertTrue(os.path.exists(destino))
+
+    # ------------------------------------- el replay, que se contaba dos veces
+
+    def test_caso_positivo_la_propuesta_y_la_adjudicacion_cuentan_UNA_vez(self):
+        """**CADA VUELTA DEJA DOS FILAS POR ESPECIE**: la propuesta del extractor
+        (`tanda: "vuelta 4"`) y la adjudicacion del auditor (`tanda: "ACTA M5"`), **y
+        las dos traen el mismo campo `vuelta`**. El replay sumaba las dos, asi que una
+        sola caida contaba por dos y la racha salia inflada.
+
+        **LA ULTIMA MANDA**, que es la adjudicacion.
+        """
+        from src import credito
+        sucesos = [self._tanda(vuelta=1, tanda="vuelta 1", cae=True, racha="1 de 3"),
+                   self._tanda(vuelta=1, tanda="ACTA X", cae=True, racha="1 de 3")]
+        self.assertEqual(credito.revisar(sucesos=sucesos), [])
+
+    def test_caso_negativo_dos_caidas_en_vueltas_DISTINTAS_siguen_sumando(self):
+        """Si el arreglo colapsara por especie en vez de por especie y vuelta, una
+        racha no subiria nunca y la metrica entera dejaria de existir."""
+        from src import credito
+        sucesos = [self._tanda(vuelta=1, tanda="ACTA X", cae=True, racha="1 de 3"),
+                   self._tanda(vuelta=2, tanda="ACTA Y", cae=True, racha="2 de 3")]
+        self.assertEqual(credito.revisar(sucesos=sucesos), [])
+        malas = [self._tanda(vuelta=1, tanda="ACTA X", cae=True, racha="1 de 3"),
+                 self._tanda(vuelta=2, tanda="ACTA Y", cae=True, racha="1 de 3")]
+        self.assertEqual(len(credito.revisar(sucesos=malas)), 1)
+
+    def test_una_fila_sin_vuelta_no_se_agrupa_con_nadie(self):
+        from src import credito
+        sucesos = [self._tanda(cae=True, racha="1 de 3"),
+                   self._tanda(cae=True, racha="2 de 3")]
+        for s in sucesos:
+            s.pop("vuelta")
+        self.assertEqual(credito.revisar(sucesos=sucesos), [])
+
+    def test_la_superada_no_desaparece_de_la_vista(self):
+        """**EL ARREGLO NO PUEDE SER UN ESCONDITE.** Desde que la propuesta superada
+        deja de sumar, una fila incoherente se saldria del replay; por eso
+        `incoherentes()` la nombra igual, y la revision la publica ANTES."""
+        from src import credito
+        sucesos = [self._tanda(vuelta=1, tanda="vuelta 1", racha="1 de 3"),
+                   self._tanda(vuelta=1, tanda="ACTA X", cae=True, racha="1 de 3")]
+        self.assertEqual(credito.revisar(sucesos=sucesos), [])
+        rotas = credito.incoherentes(sucesos=sucesos)
+        self.assertEqual(len(rotas), 1)
+        self.assertEqual(rotas[0]["tanda"], "vuelta 1")
+
+
 class PruebaRegimenLigero(BaseForja):
     """DOS REGIMENES: EL LIGERO NO TOCA EL GRAFO (D.58, 19 sep 2026).
 
@@ -4640,8 +4755,10 @@ class PruebaCitaEsReferencia(BaseForja):
     def test_caso_negativo_anotar_escribe_una_referencia(self):
         from src import credito
         destino = os.path.join(self.taller, "c.jsonl")
+        # `cae` va explicito desde el 21 sep 2026: una tanda que no dice si cae ya no
+        # se escribe (`ACTA M5` `M5.11`). Esta prueba mide LA CITA, no la bandera.
         credito.anotar({"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3",
-                        "cita": "ACTA 32, seccion 9.1"},
+                        "cae": True, "cita": "ACTA 32, seccion 9.1"},
                        linea="x", ruta_registro=destino)
         self.assertEqual(len(credito.leer(ruta_registro=destino)), 1)
 
@@ -5483,7 +5600,8 @@ def main():
              PruebaColaDeDoctrina, PruebaTablaDeCierre,
              PruebaPasoRetiradoDelCampo, PruebaExencionDeMomento,
              PruebaDeudaNoBloquea, PruebaVeredictoYArista,
-             PruebaRegimenLigero, PruebaCifraDerivada, PruebaTresDefectosDelFrente]
+             PruebaRegimenLigero, PruebaCifraDerivada, PruebaTresDefectosDelFrente,
+             PruebaCreditoCoherente]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:

@@ -260,6 +260,96 @@ def en_tope(linea=None, sucesos=None):
     return tocadas
 
 
+def incoherencias(suceso):
+    """Lo que una fila de tanda se contradice A SI MISMA. Lista vacia es verde.
+
+    NACE DE UNA PARADA (`ACTA M5` `M5.11`, frente `marquet_turn_the_ship`, 21 sep
+    2026). La racha `CIFRA PUBLICADA` de esa linea llego a su tope con **dos tandas
+    seguidas de la misma averia**: el registro publicaba lo contrario de lo que decia
+    la tabla que lo documenta. La fila que lo hizo:
+
+        {"tanda": "vuelta 4", "especie": "DATO MOVIDO", "racha": "1 de 2"}
+
+    **Sube la racha y no declara `cae`.** Una racha solo sube cuando algo cae, asi
+    que esa fila no puede ser cierta de ninguna manera, y el instrumento la acepto.
+
+    LAS TRES QUE SE MIRAN, y son las tres mecanicas:
+
+      - una tanda que no dice si cae. **`migrado` esta exento**: su historia es
+        anterior al campo, y acusar de lo que el registro no vio es ruido.
+      - `cae` falso con la racha por encima de cero: una tanda limpia reinicia
+        (`D.38.1`).
+      - `cae` cierto con la racha en cero: si algo cayo, la racha no puede estar
+        vacia.
+
+    LO QUE NO MIRA, y es deliberado: **si la racha es la ANTERIOR mas uno.** Eso lo
+    calcula `revisar()` sobre el registro entero, y aqui no hay registro delante.
+    Una guarda que adivina el contexto se equivoca sola.
+    """
+    if suceso.get("tipo") != "tanda" or suceso.get("migrado"):
+        return []
+    quejas = []
+    lleva = "cae" in suceso
+    if not lleva:
+        quejas.append(
+            "una tanda que no dice si cae. Una racha solo sube cuando algo cae, y "
+            "sin esa bandera el registro publica una cifra que nadie puede releer "
+            "(ACTA M5 M5.11). Escribe cae true o cae false.")
+        return quejas
+    numero, _tope = _partir_racha(suceso.get("racha"))
+    if not suceso["cae"] and numero:
+        quejas.append(
+            "cae false con la racha en %d: una tanda limpia la reinicia a 0 (D.38.1)."
+            % numero)
+    if suceso["cae"] and not numero:
+        quejas.append(
+            "cae true con la racha en 0: si algo cayo, la racha no puede estar vacia.")
+    return quejas
+
+
+def incoherentes(linea=None, sucesos=None):
+    """Las filas del registro que se contradicen a si mismas, con su numero."""
+    if sucesos is None:
+        sucesos = leer(linea)
+    encontradas = []
+    for suceso in sucesos:
+        for queja in incoherencias(suceso):
+            encontradas.append({
+                "linea_del_fichero": suceso.get("_linea_del_fichero", 0),
+                "especie": _normalizar_especie(suceso.get("especie")),
+                "tanda": suceso.get("tanda", ""),
+                "racha": suceso.get("racha", ""),
+                "queja": queja,
+            })
+    return encontradas
+
+
+def _ultima_por_vuelta(sucesos):
+    """Los indices de tanda que el replay debe contar: UNO por especie y vuelta.
+
+    EL REPLAY SE CONTABA DOS VECES (`ACTA M5` `M5.12.a`). Cada vuelta deja DOS filas
+    por especie: **la propuesta del extractor** (`tanda: "vuelta 4"`) y **la
+    adjudicacion del auditor** (`tanda: "ACTA M5"`), y las dos traen el mismo campo
+    `vuelta`. El replay sumaba las dos, asi que una sola caida contaba por dos.
+
+    **LA ULTIMA MANDA, y es la regla en los dos registros.** En un frente la ultima
+    es la adjudicacion, que llega despues de la propuesta. En la serial las parejas
+    son de la MISMA acta escrita dos veces, y la segunda es la adjudicacion que
+    deshizo a la primera, que es lo que la cabecera de este fichero ya describia.
+
+    Una fila sin `vuelta` no se agrupa con nadie: cuenta sola.
+    """
+    ultima = {}
+    for indice, suceso in enumerate(sucesos):
+        if suceso.get("tipo") != "tanda":
+            continue
+        vuelta = suceso.get("vuelta")
+        if vuelta is None:
+            continue
+        ultima[(_normalizar_especie(suceso.get("especie")), vuelta)] = indice
+    return set(ultima.values())
+
+
 def revisar(linea=None, sucesos=None):
     """EL REPLAY, QUE SE PUBLICA APARTE Y NO PISA LO DECLARADO.
 
@@ -283,8 +373,14 @@ def revisar(linea=None, sucesos=None):
         sucesos = leer(linea)
     contador = {}
     discrepancias = []
-    for suceso in sucesos:
+    cuentan = _ultima_por_vuelta(sucesos)
+    for indice, suceso in enumerate(sucesos):
         tipo = suceso.get("tipo")
+        if tipo == "tanda" and suceso.get("vuelta") is not None \
+                and indice not in cuentan:
+            # propuesta superada por la adjudicacion de su misma vuelta. NO se calla:
+            # si ademas se contradice a si misma, `incoherentes()` la nombra igual.
+            continue
         if tipo == "nacimiento":
             continue
         especie = _normalizar_especie(suceso.get("especie"))
@@ -340,6 +436,8 @@ def anotar(suceso, linea=None, ruta_registro=None):
         if not _normalizar_especie(suceso.get("especie")):
             raise CreditoMalEscrito("un suceso %s sin especie" % suceso["tipo"])
         _partir_racha(suceso.get("racha"))
+        for queja in incoherencias(suceso):
+            raise CreditoMalEscrito(queja)
         if not (suceso.get("cita") or "").strip():
             raise CreditoMalEscrito(
                 "un suceso %s sin cita. Una racha sin cita no se puede releer"
@@ -410,13 +508,28 @@ def texto_revision(linea=None):
     cola = ("  %d suceso(s) migrado(s) quedan FUERA del replay: sus reinicios viven "
             "en docs/loop/paradas/, no en el registro." % migradas
             if migradas else "")
+    # LAS FILAS QUE SE CONTRADICEN A SI MISMAS SE PUBLICAN SIEMPRE, y van ANTES del
+    # replay. Desde que el replay cuenta una tanda por vuelta (`ACTA M5` `M5.12.a`),
+    # la propuesta superada deja de sumar, y sin esta seccion una fila incoherente
+    # desapareceria de la vista por el mismo arreglo que la dejo de contar.
+    rotas = incoherentes(linea, sucesos)
+    aviso = []
+    if rotas:
+        aviso.append("%d FILA(S) QUE SE CONTRADICEN A SI MISMAS en la linea '%s':"
+                     % (len(rotas), linea))
+        for caso in rotas:
+            aviso.append("  linea %d, %s en %s (racha %s): %s"
+                         % (caso["linea_del_fichero"], caso["especie"],
+                            caso["tanda"] or "?", caso["racha"], caso["queja"]))
+        aviso.append("")
+
     discrepancias = revisar(linea, sucesos)
     if not discrepancias:
         cabeza = ("REPLAY VERDE en la linea '%s': las %d tanda(s) vigilables suman lo "
                   "que declaran." % (linea, vigiladas))
-        return (cabeza + ("\n" + cola if cola else ""))
-    partes = ["REPLAY CON %d DISCREPANCIA(S) en la linea '%s':"
-              % (len(discrepancias), linea)]
+        return "\n".join(aviso + [cabeza + ("\n" + cola if cola else "")])
+    partes = list(aviso) + ["REPLAY CON %d DISCREPANCIA(S) en la linea '%s':"
+                            % (len(discrepancias), linea)]
     for caso in discrepancias:
         partes.append(
             "  linea %d del registro, %s en %s: declara %d, el replay da %d (%s)"
