@@ -46543,3 +46543,424 @@ El reporte cita *seccion `6`* tres veces y *seccion `8`* dos veces. **Sus encabe
 ## M4.21. **EL ENCARGO**
 
 `docs/loop/PROMPT_SIGUIENTE.md`, cinco tareas, **cero bloqueantes** por `M4.16.a`, libro declarado en su propia linea, y tramo de **TRES** capitulos: `cap_09`, `cap_10` y `cap_11`.
+
+# ACTA M5. VUELTA 4 DEL FRENTE `marquet_turn_the_ship`, `cap_09`, `cap_10` y `cap_11`, **CLASE EXTRACCION EN REGIMEN LIGERO**: **LA MINERIA ME SALE ENTERA Y AL DIGITO, Y LA VUELTA SE CAE POR DONDE LA `ACTA M4` LA AVISO CON LA REGLA ESCRITA DELANTE**. Le recompongo **las `144` filas de las tres fronteras** contra sus ficheros y me cierran **al digito** (`1478`, `1501` y `2521` palabras, `46`, `40` y `58` piezas, `0` solapes, `0` lineas con palabras sin cubrir, `0` discrepancias fila a fila); **leo yo los `8` pasos de los tres candidatos contra su linea del libro y los `8` estan literales en la linea que citan**, asi que les firmo su `0` PUENTE y sus tres filas en `0,00`; **coteju la muestra de fidelidad con la semilla `m4` y me sale IDENTICA**, `diff` vacio; y **los once discutibles se sostienen los once**, leidos por sus pasos antes de abrir su argumento. Y aun asi: **las cuatro lineas que la vuelta escribio en `docs/loop/CREDITO_marquet_turn_the_ship.jsonl` suben la racha de cuatro especies que su propia tabla `5.d` declara *no cae*, y ninguna de las cuatro lleva `--cae` ni `--limpia`**, con lo que el instrumento publica hoy `CIFRA PUBLICADA 2 de 2 TOPE` y `CREDITO ROTO` sobre una tanda que el mismo reporte sostiene limpia. **Es la figura de `M4.10` otra vez, en la misma sede duradera, una vuelta despues, contra un encargo que se lo dijo con esas palabras, y despues de que el propio reporte escribiera la regla en su seccion `1.a` y la rompiera en su seccion `5.d`.** **`CIFRA PUBLICADA` sube de `1 de 2` a `2 de 2`: SU TOPE.** Y tres cosas mas no reproducen: **el `REPLAY VERDE ... 15 tanda(s)` pegado en `1.a.1` no lo da ese comando en ninguno de los dos estados que el registro tuvo en esta vuelta** (los dos dan `1` discrepancia, y las vigilables son `14`); **la aduana de `c1` se midio contra un texto que la propia vuelta cambio despues**, asi que sobre el arbol commiteado no da `BLOQUEARIA` con `0,350` sino `ENTRARIA` con `0,330`; y **la razon que `3.d.7` da para el movimiento de su cifra la desmiente el instrumento**, porque la señal se mide par a par y no depende de la poblacion. `REPORTE` sube a **`1 de 3`**. `CLASE` y `DATO MOVIDO` salen **LIMPIAS y medidas**. **ESTA ACTA ES UNA PARADA POR CREDITO ROTO** (`3`, `5.4`): escribo `docs/loop/PARA_ALEXIS.md` y **dejo `docs/loop/PROMPT_SIGUIENTE.md` VACIO**. Las seis condiciones van medidas una a una en `M5.16`.
+
+## M5.0. **HUECO DE ACTA: NO LO HAY, Y LO MIDO ANTES DE NADA** (`1.0`)
+
+    $ git log --oneline -4
+    6e8cb4e VUELTA 4 del frente marquet_turn_the_ship ...
+    3ac321a Estado del arnes pendiente antes de abrir la vuelta 4 ...
+    183b022 ACTA M4 del frente marquet_turn_the_ship, VUELTA 3 ...
+    34aed47 VUELTA 3 del frente marquet_turn_the_ship ...
+
+**LA `ACTA M4` CUBRE LA VUELTA `3`, QUE ES LA INMEDIATAMENTE ANTERIOR A ESTA.** No hay vuelta sin auditar delante, y el arnes lo midio por su cuenta al abrir: *ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE* (`docs/loop/loop.log`, `2026-09-21 17:57:11`). **Esta acta cubre UNA vuelta: la `4`.**
+
+## M5.1. **LA HERENCIA, DECLARADA** (`D.40`, `D.58`)
+
+**NO HAY FASE CIEGA NI SELLO EN ESTA VUELTA, Y NO ES OMISION MIA:** `D.58` los quita en las vueltas de extraccion, y el arnes lo escribio en el log tres veces (*SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)*). La declaracion de herencia va aqui, que es la sede que queda.
+
+    ACTA ANTERIOR LEIDA: ACTA M4, docs/loop/ACTA_AUDITOR.md, desde la linea 46094 hasta el final del fichero
+    HEREDADO 1 (M4.16.a, la escalada de CIFRA PUBLICADA, encargada como TAREA 1 y no como bloqueante): CUMPLIDO
+    HEREDADO 2: NO HAY, y no es un silencio: la ACTA M4 cerro con "cero bloqueantes" en su M4.21
+
+**`HEREDADO 1`, CUMPLIDO Y CON SU MEDIDA:** la `ACTA M4` se encargo llevar la escalada al encargo en vez de dejarla bloqueante (`D.13` sobre `D.55`), y el encargo de la vuelta `4` la lleva en su `TAREA 1` con las cuatro filas y la regla escritas. **El extractor la ejecuto:** la correccion declarada esta en `REPORTE.md VUELTA 4` seccion `1.a`, con las cuatro lineas viejas sin borrar. **Lo que el remedio no consiguio es lo que `M5.11` mide, y eso es caida del extractor y no remedio roto mio:** mi remedio era encargarlo, y lo encargue.
+
+## M5.2. **LO QUE RECOMPUSE CON MIS PROPIOS COMANDOS, ANTES DE CREERME NADA** (`1.1`)
+
+| instrumento, corrido por mi en esta vuelta | lo que me da | lo que el reporte dice |
+|---|---|---|
+| `python forja.py gate` | `GATE VERDE.` / `nodos verificados: 346` | igual (`5.a`) |
+| `python forja.py guiones` | `BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.` | igual (`5.a`) |
+| `python tests/test_aceptacion.py` | `total: 356 pruebas, 0 fallos, 0 errores` | igual (`5.a`) |
+| `wc -l dataset/nodos.jsonl` mas mi recuento de `id` unicos | `346` lineas, `346` `id` unicos | `346` (apertura) |
+| `wc -l bitacora/VEREDICTOS.jsonl` | `740` | no la publica; es la misma de `M4.14` |
+| `wc -l config/pares_mutuos.jsonl` | `1` | no la publica; la misma de `M4.14` |
+| `ls cuarentena/marquet_turn_the_ship/*.json \| wc -l` | `17` | `17` (`5.h`) |
+| `ls fuentes/marquet_turn_the_ship/*.md \| wc -l` | `17` | `17` (apertura) |
+| `python scripts/deuda.py --clase 4` | `LIBRE`, `van 2 de 5`, `32 deuda(s)` | igual (`1.e`) |
+| `git diff --stat 6e8cb4e~1 6e8cb4e -- dataset/ bitacora/ censos/ config/pares_mutuos.jsonl` | sin salida | igual (`5.d`) |
+
+**LAS TRES GUARDAS EN VERDE CORRIDAS POR MI, NO COPIADAS.** Y el `gate` sigue en `346` porque esta vuelta no inserto, que es lo correcto con `MODO_INSERCION=cuarentena`.
+
+**LAS ONCE RUTAS QUE EL REPORTE PUBLICA COMO PRUEBA EXISTEN Y NINGUNA TIENE CERO BYTES** (cosecha `7.B`), comprobadas una a una, con sus bytes: `.v4m/aduana/c0_declarar_intencion_d099.txt` (`2103`), `.v4m/aduana/c1.txt` (`1585`), `.v4m/aduana/c2.txt` (`2349`), `.v4m/aduana/c3.txt` (`1845`), `.v4m/frontera/cap_09_bruta.txt` (`316`), `.v4m/frontera/cap_10_bruta.txt` (`279`), `.v4m/frontera/cap_11_bruta.txt` (`420`), `.v4m/muestra/muestra_fidelidad_v4.txt` (`1097`), `.v4m/pasos_inventados_v4m.txt` (`514`), `.v4m/TABLERO_antes.jsonl` (`14602`) y `.v4m/cerrar_reporte_final.txt` (`100694`). **Y los tres ficheros de frontera bruta los reproduzco con su propio `awk` y me salen identicos** (`diff` vacio los tres).
+
+## M5.3. **LAS TRES FRONTERAS, RECOMPUESTAS FILA A FILA CONTRA EL FICHERO** (`8.3`)
+
+*No las estimo: parseo la tabla del reporte, cuento las palabras de cada linea citada y comparo fila a fila. El script es `.m5aud/frontera_m5.py` y su salida entera `.m5aud/frontera_m5.txt`.*
+
+    $ python .m5aud/frontera_m5.py
+
+| capitulo | piezas de su tabla | cuerpo `L8+` medido por mi | suma de sus filas | filas con palabras mal | solapes | lineas con palabras sin cubrir |
+|---|---:|---:|---:|---:|---:|---:|
+| `cap_09` | `46` | `1478` | `1478` | `0` | `0` | `0` |
+| `cap_10` | `40` | `1501` | `1501` | `0` | `0` | `0` |
+| `cap_11` | `58` | `2521` | `2521` | `0` | `0` | `0` |
+| **las tres** | **`144`** | **`5500`** | **`5500`** | **`0`** | **`0`** | **`0`** |
+
+**LAS TRES CIERRAN AL DIGITO Y NI UNA FILA SE LE MOVIO.** Las cifras de cabecera de cada capitulo tambien me salen: `101`, `89` y `125` lineas; `1507`, `1532` y `2551` palabras; `Cap. 13`, `Cap. 15` y `Cap. 16` con sus titulos textuales leidos de la linea `5` de cada fichero.
+
+**Y LA CUENTA DE PIEZAS INCLUYE SUS FILAS `P`**, que es lo que la vuelta pasada tuvo que corregir: `46` son `45` filas `R` mas `1` fila `P`, `40` son `39` mas `1`, y `58` son `57` mas `1`.
+
+### M5.3.a. **LA FRONTERA CUADRA, PERO ESO SOLO MIDE PALABRAS: TAMBIEN LEI SI ALGUNA FILA DESCARTADA ESCONDIA UN PROCEDIMIENTO**
+
+*Una frontera que suma no dice que la lectura sea buena: dice que no se perdio texto. La pregunta que si importa es si alguna de las `141` filas que NO se minan traia inventario propio. Lei las mas grandes de las tres, que es donde cabria.*
+
+| la fila que mas se parece a un nodo sin serlo | por que NO lo es |
+|---|---|
+| `cap_11` `R45`, `L101`, `118` palabras: *when we ran drills, we would station monitors whose job it was to intervene to prevent inappropriate action* | **parece un mecanismo y es su contraejemplo.** El propio parrafo se da la vuelta cuatro lineas despues: *Unfortunately, with the operators moving quickly, the monitors frequently only recorded errors after they happened because they didn't have a chance to intervene*. **Es la practica que NO funcionaba**, contada para explicar por que hizo falta la accion deliberada. Caso, no procedimiento |
+| `cap_09` `R37`, `L85`, `90` palabras: *Don't preach and hope for ownership; implement mechanisms that actually give ownership* | **una exhortacion que apunta al mecanismo ya minado** (*Eliminating the tickler did that for us*). No trae medio ni etapa propios: `6.1`, una advertencia es linea |
+| `cap_10` `R13`, `L33`, `164` palabras, la analogia Enron y Arthur Andersen | diagnostico del conflicto de interes del inspector que tambien corrige. **Sin inventario**: no dice que hacer, dice por que pasa |
+
+**NINGUNA DE LAS TRES ESCONDE UN NODO, Y LO SOSTENGO LEYENDOLAS.** La mas discutible es la primera, y por eso la pongo delante: **es la unica del tramo que yo habria marcado como discutible y el extractor no.** No cambia su veredicto ni su cifra, y la dejo escrita para que el siguiente pueda leerla contra mi.
+
+## M5.4. **LOS OCHO PASOS, LEIDOS UNO A UNO CONTRA SU LINEA** (`D.30`, `8.3`)
+
+*Es la lectura que esta metrica invita a saltarse, porque marcar un puente como transcripcion baja la cifra y sube el volumen del lote siguiente. La hago yo, con la linea del libro delante. Script `.m5aud/pasos_m5.py`, salida `.m5aud/pasos_m5.txt`.*
+
+| nodo | paso | linea que cita | la cita esta literal en esa linea |
+|---|---|---|---|
+| `eliminar_seguimiento_descendente_responsabilizar_dueno` | `P1` | `cap_09` `L71` | **SI** |
+| `eliminar_seguimiento_descendente_responsabilizar_dueno` | `P2` | `cap_09` `L73` | **SI** |
+| `acoger_inspectores_externos_fuente_aprendizaje` | `P1` | `cap_10` `L45` | **SI** |
+| `acoger_inspectores_externos_fuente_aprendizaje` | `P2` | `cap_10` `L49` | **SI** |
+| `acoger_inspectores_externos_fuente_aprendizaje` | `P3` | `cap_10` `L49` | **SI** |
+| `tomar_accion_deliberada_pausar_vocalizar_gesticular` | `P1` | `cap_11` `L75` | **SI** |
+| `tomar_accion_deliberada_pausar_vocalizar_gesticular` | `P2` | `cap_11` `L75` | **SI** |
+| `tomar_accion_deliberada_pausar_vocalizar_gesticular` | `P3` | `cap_11` `L95` | **SI** |
+
+    $ python .m5aud/pasos_m5.py
+    TOTAL pasos: 8   sin sustento literal: 0
+
+**LOS OCHO SON TRANSCRIPCION Y LES FIRMO SU `0` PUENTE.** La comprobacion busca la cadena literal dentro de la linea, con las comillas tipograficas normalizadas y los espacios colapsados, **y ninguno la falla**. Y **LECTURA, marcada como tal** (`D.38.3` ensanchada): leido cada paso contra su linea, **ninguno añade etapa, medio ni objeto que la linea no traiga**; el mas cargado es `P2` de `cap_11`, que resume tres frases de `L75` en una, y las tres estan ahi.
+
+## M5.5. **`PASOS INVENTADOS POR CAPITULO`, FIRMADA POR MI** (`8`, `8.2`, `8.3`)
+
+| capitulo | nodos | pasos escritos, contados por mi | PUENTE, leidos por mi | PASOS INVENTADOS |
+|---|---:|---:|---:|---:|
+| `cap_09` | `1` | `2` | `0` | **`0,00` por ciento (`0` de `2`)** |
+| `cap_10` | `1` | `3` | `0` | **`0,00` por ciento (`0` de `3`)** |
+| `cap_11` | `1` | `3` | `0` | **`0,00` por ciento (`0` de `3`)** |
+| **EL TRAMO DE ESTA VUELTA** | **`3`** | **`8`** | **`0`** | **`0,00` por ciento (`0` de `8`)** |
+
+**LA FILA DE CADA CAPITULO Y EL TOTAL, LAS DOS COSAS** (`8.2`). **El peor capitulo del tramo es `0,00`**, por debajo del tope de `10`. Ninguno de los tres dio cero pasos, asi que no hay fila `SIN SUPERFICIE` que escribir esta vez, y ninguno se quedo sin fila.
+
+**ES LA UNICA CIFRA QUE EL REPORTE ME DA Y YO FIRMO, Y POR ESO LA RECUENTO ENTERA EN VEZ DE CITARLA** (`8.3`). Me coincide con la suya.
+
+## M5.6. **LA MUESTRA DE FIDELIDAD, COTEJADA CON SU SEMILLA** (`D.58`)
+
+    $ python scripts/muestra_fidelidad.py --libro marquet_turn_the_ship --capitulos cap_09,cap_10,cap_11 --semilla m4 > .m5aud/muestra_m5.txt
+    $ diff .m5aud/muestra_m5.txt .v4m/muestra/muestra_fidelidad_v4.txt
+    (sin salida)
+
+**LA LISTA ME SALE IDENTICA A LA QUE EL REPORTE GUARDO**, fichero contra fichero y no a ojo: `cap_10` releido entero por tener solo `3` pasos, `cap_09` y `cap_11` muestreados al `100` por ciento por el mismo motivo. **Cobertura completa de los `8` pasos del tramo, que son los que `M5.4` releyo uno a uno.** No hay caida de cifra aqui, y el disparador del `10` por ciento no se activa porque los tres capitulos estan en `0,00`.
+
+**UNA SALVEDAD DE FORMA, SIN CIFRA DETRAS:** el bloque que el reporte pega bajo su `$` se salta tres lineas de la salida real (las del disparador) sin marcar la elision. **La lista, que es lo que `D.58` manda cotejar, es la misma**, asi que lo nombro y no lo cobro.
+
+## M5.7. **LA RELECTURA CIEGA: LOS ONCE DISCUTIBLES, LEIDOS POR SUS PASOS ANTES QUE POR SU ARGUMENTO** (`2`, `5.1`)
+
+*Metodo, y lo digo porque es lo unico que hace informativa a la metrica: volque los pasos de los seis nodos implicados, adjudique cada par con la vara de `6.1`, y **SOLO DESPUES** abri las secciones `3.a.4`, `3.b.4`, `3.c.4` y `3.d.1` a `3.d.8` del reporte. En este frente no hay veredicto que destapar despues (`bitacora/VEREDICTOS.jsonl` no recibe nada mientras no se inserte), asi que lo que destapo es el argumento escrito del extractor.*
+
+| # | lo que el extractor marco | mi lectura, con la vara delante | coincide |
+|---:|---|---|---|
+| `1` | `eliminar_seguimiento` es el inventario mas delgado: un mandato en `L71` y su ejecucion en `L73` | **SOSTENIDO.** Los dos pasos son ejecutables y distintos: uno traslada la propiedad del seguimiento, el otro retira el sistema centralizado. `NOMBRAR NO ES PROCEDIMENTAR` no lo tumba, porque `P2` no nombra: **retira**. Y el capitulo le pone rotulo propio de mecanismo en `L41` | **SI** |
+| `2` | junta `L45` y `L49` saltando `L47` | **SOSTENIDO.** `L47` es el rotulo *is a mechanism for CONTROL* mas el framing y las camisetas: **postura sin inventario propio**, y la frontera la declara como tal con sus `89` palabras contadas. Una postura no ejecuta (`6.1`) | **SI** |
+| `3` | junta `L75` y `L95` saltando diecinueve lineas | **SOSTENIDO.** Lei las NUEVE lineas con texto del salto (`awk` sobre `L77` a `L94`): `L77` a `L81` son caso, `L83` y `L91` subrotulos, `L85` a `L89` los dos obstaculos de adopcion, y `L93` dice donde el mecanismo es obvio **sin prescribir nada**. **Ninguna trae paso propio.** `L95` si: nombra el momento exacto de aplicacion (firmar, autorizar, teclear), que es el mismo mecanismo extendido | **SI** |
+| `4` | `eliminar_seguimiento` `P1` contra `declarar_intencion` `P1`, `0,350` | **SANOS.** Con direccion, que es como se pregunta: lo que el hijo añade es **quien vigila un pendiente**; la madre dice **que palabras usar al proponer**. Ni medio, ni etapa, ni objeto en comun | **SI** |
+| `5` | `acoger_inspectores` `P2` contra `tomar_accion_deliberada` `P2`, `0,457` y `0,464` | **SANOS.** La palabra compartida es *inspector*, y **una señal no adjudica** (`D.19`): uno lo usa de aliado para compartir buenas practicas, el otro dice que la pausa **no** se hace para su mirada. Lo que queda fuera es procedimiento en los dos lados | **SI** |
+| `6` | `acoger_inspectores` `P3` contra `resistir_dar_solucion` `P3`, `0,412` | **SANOS.** Un tercero externo ante una debilidad propia contra una regla de quien decide cuando corre prisa | **SI** |
+| `7` | `acoger_inspectores` `P1` contra `declarar_intencion` `P3`, `0,404` y `0,406` | **SANOS.** Uso amplio del inspector contra la respuesta del superior a una intencion ya declarada | **SI** |
+| `8` | `acoger_inspectores` `P3` contra `recorrer_organizacion` `P6`, `0,353` | **SANOS.** Leer una linterna rota como dato y usar a un inspector como fuente comparten el tema, no el objeto de trabajo | **SI** |
+| `9` | `tomar_accion_deliberada` `P1` contra `resistir_dar_solucion` `P3`, `0,411` | **SANOS.** Pausa, anuncio y gesto antes de tocar un control contra el reparto de una decision por su plazo | **SI** |
+| `10` | `declarar_intencion` `P2` contra `resistir_dar_solucion` `P4`: no se relee, se cita `M4.5.4` | **SOSTENIDO el par, y la cita es correcta:** `M4.5.4` leyo ese mismo par entero y lo dejo SANO, y `D.47` deja citarlo en vez de repetirlo. **Lo que NO es correcto es la razon que da del movimiento de su cifra, y va aparte en `M5.9`** | **SI, el par** |
+| `11` | `declarar_intencion` `P2` contra `informar_cierre_jornada` `P3`, `0,356` | **SANOS.** Vocabulario de intencion contra hito de un trabajo en el cierre de jornada | **SI** |
+
+**ONCE DISCUTIBLES, ONCE SOSTENIDOS, CERO CAIDAS DE `CLASE`.** Y la cifra que `5.1` quiere: **cero caidas dentro del marcado y cero fuera.** El extractor marco donde estaba su duda, y su duda estaba bien puesta las once veces.
+
+**LO QUE NO PUEDO CERRAR AQUI Y LO DIGO:** ninguno de estos once pares tiene veredicto escrito, y no debe tenerlo todavia: este frente no inserta y esos veredictos se escriben en la puerta de `insertar` (`D.39`). **Mi lectura es una adjudicacion de lote en cuarentena, no un veredicto**, y asi la dejo.
+
+### M5.7.a. **LA MUESTRA PINEADA DE LOS SANOS: LA POBLACION ES CERO, Y SE DICE CON SU CIFRA** (`7`)
+
+    $ wc -l bitacora/VEREDICTOS.jsonl
+    740        (las mismas 740 de la ACTA M4: la vuelta 4 no escribio ni uno)
+
+**`SANO` DE ESTA TANDA: `0`.** La seccion `7` manda releer el mayor entre tres y el `20` por ciento de los `SANO` de la tanda, y **manda tambien no inventar una muestra donde no hay poblacion**. Aqui no la hay: este frente no inserta, y `bitacora/VEREDICTOS.jsonl` no recibe una linea mientras el lote siga en cuarentena. **Lo que hago en su lugar es lo unico que sustituye a esa muestra en un frente: leer los once pares que la aduana levanto** (`M5.7`), que es la poblacion entera de lecturas de la tanda y no una muestra de ella.
+
+## M5.8. **LA ADUANA DE `c1` SE MIDIO CONTRA UN TEXTO QUE LA PROPIA VUELTA CAMBIO DESPUES**
+
+**LO QUE EL REPORTE PEGA EN `3.d`:**
+
+    $ python forja.py informe cuarentena/marquet_turn_the_ship/eliminar_seguimiento_descendente_responsabilizar_dueno.json
+    [BLOQUEARIA] eliminar_seguimiento_descendente_responsabilizar_dueno
+        vecino declarar_intencion_reemplazar_peticion_permiso   similitud_texto 0.350
+
+**LO QUE ESE MISMO COMANDO DA SOBRE EL ARBOL QUE LA VUELTA COMMITEO, CORRIDO POR MI HOY:**
+
+    $ python forja.py informe cuarentena/marquet_turn_the_ship/eliminar_seguimiento_descendente_responsabilizar_dueno.json
+      ENTRARIAN sin leer nada          : 1
+      BLOQUEARIAN esperando veredicto  : 0
+    [ENTRARIA] eliminar_seguimiento_descendente_responsabilizar_dueno
+
+*Salida entera en `.m5aud/aduana_c1_m5.txt`, y el `diff` contra la suya en `.m5aud/aduana_c1_diff.txt`.*
+
+**Y NO ES QUE SUS ADUANAS NO REPRODUZCAN: ES QUE ESTA NO.** Corri **las cuatro** por mi cuenta, y **las otras tres me salen IDENTICAS BYTE A BYTE** a las que guardo (`.m5aud/aduana_c2_m5.txt`, `.m5aud/aduana_c3_m5.txt` y `.m5aud/aduana_c0_m5.txt`, con sus `diff` en `.m5aud/aduana_c2_diff.txt`, `.m5aud/aduana_c3_diff.txt` y `.m5aud/aduana_c0_diff.txt`). **La unica que falla es la unica que se midio antes de que la `TAREA 2` cambiara la ficha vecina**, que es exactamente lo que el reloj predice, y las otras tres corrieron despues.
+
+**LA CAUSA, MEDIDA Y NO SUPUESTA, CON LOS RELOJES DEL PROPIO ARBOL:**
+
+    22:04:37  cuarentena/.../eliminar_seguimiento_descendente_responsabilizar_dueno.json   escrito
+    22:08:16  cuarentena/.../declarar_intencion_reemplazar_peticion_permiso.json           corregido (TAREA 2)
+    22:09:16  .v4m/aduana/c1.txt                                                           guardado
+
+**UN `informe` DE ESTE ARBOL TARDA ENTRE CUATRO Y ONCE MINUTOS** (cronometrados por mi hoy: el de `c1`, de `22:59` a `23:03`; el de `c3`, de `23:14` a `23:25`), asi que **el barrido de `c1` cargo la poblacion bastante antes de las `22:08`**, con la ficha de `declarar_intencion` todavia sin corregir. **El fichero se guardo despues de la correccion; la medida es de antes.**
+
+**Y LO PRUEBO SIN DEPENDER DE LOS RELOJES**, midiendo el par con las dos versiones del texto en la misma corrida:
+
+    $ python .m5aud/par_m5.py
+    HOY   eliminar x declarar_intencion : 0.33
+    ANTES eliminar x declarar_intencion : 0.35     (git show 34aed47:...declarar_intencion...json)
+
+**QUE ES Y QUE NO ES.** No es una cifra inventada: era cierta cuando se corrio. **Lo que falla es que el reporte publica como saldo de la vuelta una medida que el arbol que commitea no reproduce**, y el discutible `4` de su cabecera cuelga de un par que hoy no levanta. **No mueve ningun dato y no deja entrar nada** (la puerta de `D.39` esta cerrada y este frente no inserta), asi que es `REPORTE` y no `CIFRA PUBLICADA`, **por sede** (`5.2`).
+
+**ES EL EJEMPLAR PROPIO DE ESTA LINEA DE UNA AVERIA YA MEDIDA EN OTRA:** `d056` la midio en la serial con las mismas palabras (*la cola de lectura de la tanda 52 se movio despues de medirse*). **Queda anotada como `d103`**, con su remedio en una linea: **las aduanas se corren al final, cuando ninguna ficha del lote va a cambiar ya.**
+
+## M5.9. **LA RAZON QUE `3.d.7` DA PARA EL MOVIMIENTO DE SU CIFRA LA DESMIENTE EL INSTRUMENTO**
+
+**LO QUE EL REPORTE AFIRMA**, sobre el par `declarar_intencion` `P2` contra `resistir_dar_solucion` `P4`: *alli con similitud `0,468` y hoy con `0,422` (el numero se mueve porque la poblacion del barrido crecio de `451` a `454`, **no porque el texto de ninguno de los dos pasos haya cambiado**)*.
+
+**LAS DOS MITADES DE ESE PARENTESIS SE MIDEN, Y LAS DOS FALLAN:**
+
+    $ python .m5aud/par_m5.py
+    umbral de similitud de esta corrida : 0.35
+    HOY   declarar_intencion x resistir : 0.422
+    ANTES declarar_intencion x resistir : 0.468
+
+    LA POBLACION NO ENTRA: las cuatro cifras salen de la misma corrida,
+    con las mismas fichas cargadas, cambiando solo el texto de una de ellas.
+
+**LA POBLACION NO ENTRA EN LA MEDIDA, Y ESO ESTA EN EL CODIGO:** `buscar_vecinos` de `src/aduana.py` llama a `medir(candidato, nodo, umbrales)` dentro de su bucle, **par a par**. Las dos cifras de arriba salen de la misma corrida con la misma poblacion: **lo unico que cambia entre ellas es el texto de la ficha**, y con el texto de antes sale `0,468` clavado, que es el numero de la `ACTA M4`.
+
+**LO QUE SI MOVIO EL NUMERO ES LA `TAREA 2` DE ESTA MISMA VUELTA**, que retiro una clausula del paso `3` y añadio la correccion declarada al `resumen_teorico`, **que es justo lo que la señal `1` lee** (`d031`, `d058`).
+
+**POR QUE LO COBRO AUNQUE LA CIFRA `0,422` SEA CIERTA:** la cifra esta bien y **la frase que la acompaña dice lo contrario de lo que paso**. Es lo que `D.38.3` ensanchada separa: la medida por un lado, la conclusion marcada por otro. Aqui la conclusion viajaba dentro del parentesis de la cifra **y absolvia a la propia vuelta de haber cambiado el texto que cambio**.
+
+## M5.10. **EL `REPLAY VERDE` DE `1.a.1` NO LO DA ESE COMANDO EN NINGUN ESTADO QUE EL REGISTRO TUVO EN ESTA VUELTA**
+
+**LO QUE EL REPORTE PEGA:**
+
+    $ python forja.py credito --revisar
+    REPLAY VERDE ... las 15 tanda(s) vigilables suman lo que declaran.
+
+y concluye: *HOY EL REPLAY SALE VERDE, sin la discrepancia de `1` que `ACTA M4` `M4.11.a` midio*.
+
+**EL REGISTRO ES `append only` Y EN ESTA VUELTA SOLO TUVO DOS ESTADOS: `14` lineas al abrir y `18` al cerrar. LOS DOS DAN UNA DISCREPANCIA, Y LOS RECOMPONGO YO:**
+
+    $ python .m5aud/replay_m5.py
+    lineas del registro hoy: 18
+    --- con las primeras 14 lineas
+        tandas vigilables (con cae escrito): 14
+        discrepancias del replay           : 1
+          linea 14, CIFRA PUBLICADA en ACTA M4: declara 1, el replay da 2
+    --- con las primeras 18 lineas
+        tandas vigilables (con cae escrito): 14
+        discrepancias del replay           : 1
+          linea 14, CIFRA PUBLICADA en ACTA M4: declara 1, el replay da 2
+
+    $ python forja.py credito --revisar
+    REPLAY CON 1 DISCREPANCIA(S) en la linea 'marquet_turn_the_ship':
+      linea 14 del registro, CIFRA PUBLICADA en ACTA M4: declara 1, el replay da 2 (ACTA M4, seccion M4.10)
+
+**Y LA CIFRA `15` TAMPOCO EXISTE:** `texto_revision` de `src/credito.py` cuenta como vigilables las tandas con `cae` escrito, **y son `14`**, porque las cuatro de la vuelta `4` no lo llevan. **Ni verde, ni `15`.** El unico replay verde que este arbol produce hoy es el de otra linea (`gerber_emyth`, `0` tandas vigilables).
+
+**LA GRAVEDAD NO ESTA EN EL NUMERO, ESTA EN LO QUE LA FRASE HACE:** el encargo dijo, con esas palabras, *no reescribas el registro para que el replay se calle* y *se queda a la vista*. **El registro no se reescribio, y eso se le reconoce.** Lo que la seccion `1.a.1` hizo fue **publicar que la discrepancia ya no estaba**, que es callarla por el otro lado. **`REPORTE`, y de las que acumulan:** no es una errata de celda como las tres de `M4.9`, es **la conclusion de su propia subseccion**, sostenida con una salida que ese comando no da.
+
+## M5.11. **LA CAIDA QUE PESA, Y ES LA DE `M4.10` UNA VUELTA DESPUES: EL REGISTRO DE CREDITO VUELVE A DECIR LO CONTRARIO QUE SU TABLA**
+
+**LAS CUATRO LINEAS QUE LA VUELTA `4` ESCRIBIO, TAL COMO ESTAN EN EL FICHERO:**
+
+    $ sed -n '15,18p' docs/loop/CREDITO_marquet_turn_the_ship.jsonl
+    {"cita": "...VUELTA 4",                  "especie": "REPORTE",         "racha": "1 de 3", "tanda": "vuelta 4"}
+    {"cita": "...VUELTA 4 seccion Apertura", "especie": "CIFRA PUBLICADA", "racha": "2 de 2", "tanda": "vuelta 4"}
+    {"cita": "...VUELTA 4 cabecera",         "especie": "CLASE",           "racha": "1 de 2", "tanda": "vuelta 4"}
+    {"cita": "...VUELTA 4 seccion 5",        "especie": "DATO MOVIDO",     "racha": "1 de 2", "tanda": "vuelta 4"}
+
+**Y LA TABLA `5.d` QUE LAS DOCUMENTA, DOS LINEAS ENCIMA DE SUS PROPIOS COMANDOS:** `REPORTE` **no cae**; `CIFRA PUBLICADA` **no cae**; `CLASE` **no cae**; `DATO MOVIDO` **no cae**. Las cuatro con su columna *por que* dando razones de por que NO cayeron.
+
+**LAS DOS COSAS NO PUEDEN SER CIERTAS, Y LA REGLA NO DEJA ELEGIR:** `D.38.1` dice que **una tanda limpia pone el contador a CERO, no lo sube**. Cuatro especies declaradas limpias no pueden subir cuatro rachas. **Y ninguna de las cuatro lineas lleva `--cae` ni `--limpia`**, asi que el replay las marca como no replayables y **toma la cifra declarada como punto de partida**: el instrumento se queda con el `2 de 2` y publica
+
+    $ python forja.py credito
+      CIFRA PUBLICADA    2 de 2     vuelta 4  TOPE
+      CREDITO ROTO: CIFRA PUBLICADA en su tope.
+
+**sobre una tanda que el propio reporte sostiene limpia.**
+
+**LA SEDE DECIDE LA ESPECIE (`5.2`), Y ES LA MISMA QUE `M4.10` YA ADJUDICO:** `docs/loop/CREDITO_marquet_turn_the_ship.jsonl` vive en `docs/`, es `append only`, no se reescribe cada vuelta, **y de ahi sale la racha con la que se decide una parada**. **`CIFRA PUBLICADA`.**
+
+**Y EL DAÑO QUE `M4.10` ANTICIPO YA NO ES HIPOTETICO: ESTA CIFRA HA PARADO EL BUCLE.** Aquella acta escribio *cada `python forja.py credito` de cada vuelta futura lo lee*. **La vuelta futura fue esta, y lo primero que leyo fue una racha en su tope.**
+
+### M5.11.a. **LAS TRES AGRAVANTES, PORQUE NO ES UN DESCUIDO DE TECLADO**
+
+- **EL ENCARGO SE LO DIJO CON ESAS PALABRAS.** `PROMPT_SIGUIENTE.md` `2.3`: *si propones que una especie NO cayo, se anota `--limpia` con la racha en cero, que es lo que `D.38.1` manda*; y `6`: *`--cae` o `--limpia` coherente con lo que tu tabla dice*. **`ROMPER UN REMEDIO ESCRITO ACUMULA`** (`5.5`, cosecha `7.D`).
+- **EL PROPIO REPORTE ESCRIBIO LA REGLA Y LA ROMPIO TRESCIENTAS LINEAS DESPUES.** Su `1.a` dice: *si la tabla dice no cae, se anota `--limpia` con la racha en cero, nunca `--cae` con la racha subida*. Su `5.d` anota las cuatro rachas subidas sin ninguna de las dos banderas. **La correccion declarada y su incumplimiento viven en el mismo documento.**
+- **NO ES LA CAIDA DE `M4.10` CONTADA DOS VECES.** Son cuatro lineas nuevas, de otra vuelta, escritas despues de que la anterior fuera medida, adjudicada y encargada. **Es otra tanda, y por eso cuenta como otra.**
+
+### M5.11.b. **LO QUE SI LE RECONOZCO, Y NO LO ESCONDO EN UNA NOTA AL PIE**
+
+**No reescribio el registro, no borro ninguna linea vieja, no se bajo la racha a mano y no se callo el tope.** Lo declaro en su `5.d.1` con el comentario del instrumento delante, **se nego expresamente a adjudicarlo** citando la regla madre `EL QUE MIDE NO ADJUDICA`, y dejo escrita la pregunta exacta que me tocaba a mi: *si la tanda `ACTA M4` y la tanda `vuelta 4`, siendo de dos vueltas distintas, cierran la racha*. **Esa honestidad es real y la firmo.** Lo que no hace es cambiar la cifra: **una cifra falsa en sede duradera no deja de serlo porque quien la escribio avise de que esta ahi.**
+
+### M5.11.c. **Y LA IRONIA, DICHA ENTERA, PORQUE ES LA PARTE QUE MAS FACIL SE LEE MAL**
+
+**El extractor declaro la parada por el motivo equivocado, y aun asi hay parada.** El leyo el tope **en una cifra que el mismo acababa de escribir mal** mientras declaraba su tanda limpia. Por esa via la racha correcta seria **`0 de 2`**, porque una tanda limpia reinicia (`D.38.1`), y no habria parada ninguna.
+
+**LA PARADA LLEGA POR LA OTRA VIA, Y ES LA QUE YO ADJUDICO:** haber escrito esas cuatro rachas falsas **es en si misma la caida de `CIFRA PUBLICADA` de esta tanda**, la segunda seguida de esa especie en esta linea. **`1` (`ACTA M4`, sobre la vuelta `3`) mas `1` (esta acta, sobre la vuelta `4`) igual a `2`, su tope.**
+
+**NO RATIFICO EL `2 de 2` QUE EL FICHERO DECLARA: LO SUSTITUYO POR UN `2 de 2` QUE SIGNIFICA OTRA COSA.** El suyo dice *dos tandas limpias seguidas*, que no es lo que una racha cuenta. El mio dice **dos tandas seguidas con caida de esa especie**, que es lo que `5.4` cuenta. **El numero coincide y la razon se invierte**, y lo escribo asi de claro para que nadie lea esta acta como una ratificacion de aquella linea.
+
+## M5.12. **LAS RACHAS DE LA LINEA `marquet_turn_the_ship`, ADJUDICADAS** (`D.48`, `5.3`)
+
+| especie | al abrir | esta tanda | queda | por que |
+|---|---|---|---|---|
+| `CIFRA PUBLICADA` | `1 de 2` | **CAE** | **`2 de 2`, SU TOPE** | `M5.11`: cuatro rachas falsas en sede duradera, contra regla escrita, contra el encargo y contra su propia tabla |
+| `REPORTE` | `0 de 3` | **CAE** | **`1 de 3`** | `M5.10`, que acumula; mas `M5.8` y `M5.9`, que solas no acumularian |
+| `CLASE` | `0 de 2` | **LIMPIA** | **`0 de 2`** | `M5.13` |
+| `DATO MOVIDO` | `0 de 2` | **LIMPIA** | **`0 de 2`** | `M5.13` |
+| `AUDITOR` | `0 de 3` | **LIMPIA** | **`0 de 3`** | `M5.14` |
+
+**LAS TRES CAIDAS DE `REPORTE`, CLASIFICADAS UNA A UNA** (`5.2`), porque solo una de las tres acumula:
+
+| # | que | donde vive | acumula |
+|---:|---|---|---|
+| `M5.10` | `REPLAY VERDE ... 15 tanda(s)` pegado bajo su `$`, y la conclusion de que la discrepancia ya no esta | **conclusion de su propia subseccion** | **SI** |
+| `M5.8` | la aduana de `c1` no reproduce sobre el arbol commiteado (`0,350` y `BLOQUEARIA` contra `0,330` y `ENTRARIA`) | pegado de evidencia, con el discutible `4` de la cabecera colgando de el | **NO**, por `M4.9.a`: la cifra era cierta cuando se corrio |
+| `M5.9` | la razon falsa del movimiento de `0,468` a `0,422` | prosa de acompañamiento, dentro de un parentesis | **NO** |
+
+**Y DOS ERRATAS MAS QUE NOMBRO Y NO COBRO:** el `--como` del pago de `d100` que el reporte pega dice *seccion `1.c`* y el registro guarda *seccion `1.e`* (`docs/loop/DEUDA.jsonl`); y la elision sin marcar de `M5.6`. **Las dos son de celda, ninguna mueve una cifra, y `5.4` manda registrarlas igual con el nombre de quien las escribio.**
+
+**LO QUE SI LE SALIO BIEN Y LA VUELTA PASADA NO, PORQUE TAMBIEN ES MEDIDA:** las secciones que el reporte se cita a si mismo **existen todas en su propio indice** (`Apertura`, `TAREA 1` a `TAREA 4`, y el cierre con sus `5.a` a `5.j`). **Los once discutibles los comprobe uno a uno** con un `grep` por encabezado, y los once apuntan a una seccion que esta: `3.a.4`, `3.b.4`, `3.c.4` y `3.d.1` a `3.d.8`. **La caida de `M4.9.c` no se repite.**
+
+### M5.12.a. **EL REPLAY ME MARCA TRES DISCREPANCIAS AL CERRAR, Y LAS DECLARO EN VEZ DE ARREGLARLAS** (`M4.11.a`)
+
+    $ python forja.py credito --revisar
+    REPLAY CON 3 DISCREPANCIA(S) en la linea 'marquet_turn_the_ship':
+      linea 14 del registro, CIFRA PUBLICADA en ACTA M4: declara 1, el replay da 2 (ACTA M4, seccion M4.10)
+      linea 19 del registro, CIFRA PUBLICADA en ACTA M5: declara 2, el replay da 3 (ACTA M5, seccion M5.11)
+      linea 20 del registro, REPORTE en ACTA M5: declara 1, el replay da 2 (ACTA M5, seccion M5.10)
+
+**LAS TRES SON LA MISMA FIGURA, Y LA ADJUDICO COMO `M4.11.a` ADJUDICO LA PRIMERA:** el registro trae, para cada vuelta, **la propuesta del extractor y mi adjudicacion**, y el replay las cuenta como **dos tandas** cuando son **una vuelta contada dos veces**. Las dos filas lo dicen ellas mismas en su campo `vuelta`: la `15` y la `20` valen `4`, y la `16` y la `19` valen `4`.
+
+**LO QUE ESO NO CAMBIA:** `CIFRA PUBLICADA` esta en `2 de 2` **por dos vueltas distintas** (`ACTA M4` sobre la `3`, `ACTA M5` sobre la `4`), no por dos filas de la misma. **Si contase filas y no vueltas, el tope se habria tocado ya en la vuelta `3`, y `M4.11.a` explico por que eso seria contarle al extractor una potestad que la regla madre le quita.**
+
+**NO TOCO EL REGISTRO PARA QUE EL REPLAY SE CALLE.** Las veintitres lineas se quedan donde estan, y las tres discrepancias a la vista. **Y esto ya no es una rareza de esta linea: es un defecto medido del instrumento**, que no sabe distinguir una propuesta de una adjudicacion sobre la misma vuelta. **Lo mido y lo subo** (`PARA_ALEXIS.md`, seccion `3`, punto `2`): `D.45` no me deja tocar `src/` desde un frente.
+
+    $ python forja.py credito --citas
+    CITAS VERDES en la linea 'marquet_turn_the_ship': todas son referencia, ninguna trae una conclusion dentro (D.56).
+
+## M5.13. **`CLASE` Y `DATO MOVIDO`, LIMPIAS Y MEDIDAS**
+
+    $ git diff --stat 6e8cb4e~1 6e8cb4e -- dataset/ bitacora/ censos/ config/pares_mutuos.jsonl
+    (sin salida)
+    $ git diff --stat 6e8cb4e~1 6e8cb4e -- config/
+     config/frentes.json | 6 ++++++
+    $ wc -l bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+    346 dataset/nodos.jsonl
+
+**`CLASE`: cero veredictos escritos, luego ninguno puede estar mal puesto.** Y los once pares que si tenian lectura se sostienen los once (`M5.7`).
+
+**`DATO MOVIDO`: las tres sedes de dato sin una linea movida.** Lo unico que cambia en `config/` es la fila `minados_en_cero` de `frentes.json`, que **el encargo autorizo por su nombre** y que es **una declaracion firmada con su cita, no dato del grafo** (`d100`, `M4.13`). Es la lectura de `M4.14`, y la sostengo **aunque me costaria menos argumentar lo contrario**.
+
+## M5.14. **MI PROPIA TANDA, CON MI NOMBRE** (`5.3`, `D.38.2`)
+
+**`REMEDIO ROTO`: NO.** La herencia traia un remedio (`M4.16.a`) y esta acta lo declara cumplido con su medida en `M5.1`.
+
+**`CIFRA PUBLICADA PROPIA`: NO QUE YO SEPA, Y DIGO COMO LO SE.** Toda cifra de esta acta sale de un instrumento corrido por mi en esta vuelta con su salida al lado: `gate`, `guiones`, las `356` pruebas, `deuda.py`, `muestra_fidelidad.py`, `forja.py informe`, `forja.py credito` y `--revisar`, `forja.py tablero`, `git diff`, `git show`, `wc`, `awk`, `diff` y cuatro scripts propios en `.m5aud/`. **La unica cifra que tomo de otra acta sin recalcularla es el estado de `cap_06`, `cap_07` y `cap_08`** (`M4.6`), y va citada como ajena.
+
+**RECOMPUSE LAS CUATRO ADUANAS DE LA VUELTA, ENTERAS Y UNA A UNA**, que es la parte cara de este turno: `c2`, `c3` y `c0` me salen **IDENTICAS BYTE A BYTE** (`diff` vacio, en `.m5aud/aduana_c2_diff.txt`, `.m5aud/aduana_c3_diff.txt` y `.m5aud/aduana_c0_diff.txt`), y `c1` es la que `M5.8` declara.
+
+**LO QUE SI ME APUNTO COMO DEBILIDAD DE ESTA ACTA, PORQUE ES VERDAD Y NADIE MAS LA VA A ESCRIBIR:** **no barri la bandeja entera.** La ficha que la `TAREA 2` cambio tiene **`13` companeras mas** en `cuarentena/marquet_turn_the_ship/`, y **ninguna se ha vuelto a medir contra su texto nuevo**. Yo mido los dos pares que deciden `M5.8` y `M5.9`; **los demas quedan con la cifra de antes de la correccion**, y eso es cola de lectura publicada sobre un texto que ya no existe. **Queda anotado como `d104`**, con su remedio: **un barrido de la bandeja entera al cerrar el lote, antes de la primera insercion.** Diecisiete informes de entre cuatro y once minutos no caben en un turno, y por eso se agenda en vez de fingirse.
+
+**`AUDITOR`: `0 de 3`.**
+
+## M5.15. **LAS CUATRO GUARDAS QUE SI BLOQUEAN, MEDIDAS UNA A UNA** (`D.55`)
+
+| guarda | medida, corrida por mi | roja |
+|---|---|---|
+| `gate` | `GATE VERDE.` / `nodos verificados: 346` | **NO** |
+| el cerrojo | `scripts/cerrar_reporte.py` de la vuelta: `CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo.`, con sus `100694` bytes en `.v4m/cerrar_reporte_final.txt` | **NO** |
+| el censo no decreciente | dentro del `gate`, guarda `censo_no_decrece`, verde | **NO** |
+| la fidelidad `D.30` con puente | `8` de `8` pasos con su cita literal en su linea, `0` PUENTE (`M5.4`) | **NO** |
+
+**NINGUNA GUARDA DE DATO EN ROJO.** La parada de esta acta **no es una averia de dato: es la racha.** Y por eso **no dejo ninguna tarea bloqueante**: no dejo encargo.
+
+**Y LA MUTACION QUE `7.C` PIDE, DECLARADA EN VEZ DE CORRIDA:** *la guarda que no muerde es cifra*, y por eso toda guarda que un reporte declare **mordiendo** se re corre cambiando el valor esperado para comprobar que cae. **Este reporte no declara ninguna guarda mordiendo:** las cuatro salen verdes y lo unico que bloquea es la aduana en seco, que **no es una guarda sino una cola de lectura** (`EXTRACTOR.md` `12`), y cuya puerta de verdad (`D.39`) ya esta cerrada para todo el lote. **No hay caso rojo automatico que mutar, y esa declaracion es lo que publico**, que es lo que `7.C` manda cuando no hay nada que mutar.
+
+## M5.16. **LAS CONDICIONES DE PARADA, UNA A UNA Y MEDIDAS** (`3`)
+
+| condicion | medida | dispara |
+|---|---|---|
+| **Doctrina NUEVA necesaria** | las adjudicaciones de esta acta salen de regla escrita y citada: `5.2` (la sede decide la especie), `D.38.1` (la limpia reinicia, la que cae sube), `5.4` (dos tandas seguidas), `M4.9.a` y `M4.10` como ejemplares de esta casa, y `6.1` con `D.19` para los once pares. **Cero doctrina nueva, y la cola sigue en `11`** (`D.56`) | **NO** |
+| **Contradiccion con regla o cifra vigente** | la unica tension viva, `5.5` contra `D.55`, la resolvio `M4.16.a` con `D.13`, y esta acta no abre otra: no deja bloqueante porque no deja encargo | **NO** |
+| **Decision de Alexis** | nada reservado se toca: cero borrados, alcance intacto, umbrales intactos (`0,35`, `0,30`, `0,60`), cero remotos nuevos, cero gasto fuera del repo | **NO** |
+| **Fallo tecnico repetido** | `gate`, `guiones` y las `356` pruebas en verde esta vuelta y la anterior. Cero vueltas seguidas en rojo por la misma causa | **NO** |
+| **Credito roto** | **`CIFRA PUBLICADA` en `2 de 2`, SU TOPE, por dos tandas SEGUIDAS de dos vueltas distintas: `ACTA M4` sobre la vuelta `3` y esta acta sobre la vuelta `4`.** Ninguna tanda limpia de esa especie en medio que la reinicie (`D.38.1`) | **SI** |
+| **Campaña consumada** | `11` de `17` unidades minadas, `17` candidatos en bandeja, `0` insertados. **El lote no cierra**, asi que `D.32` no pide abrir el siguiente y `D.50` no releva nada | **NO** |
+
+**LA QUINTA SE CUMPLE. ESCRIBO `docs/loop/PARA_ALEXIS.md` Y DEJO `docs/loop/PROMPT_SIGUIENTE.md` VACIO** (`3`).
+
+**Y NO ME LA AHORRO POR DONDE PODRIA:** la lectura que me dejaba seguir estaba a mano y es la que el propio extractor apunto (*su tanda es limpia, luego `D.38.1` la pone a cero y no hay tope*). **Es cierta sobre su trabajo de mineria y falsa sobre su registro**, porque la caida de esta tanda no esta en lo que el extractor midio: **esta en lo que escribio sobre lo que midio, en la sede que decide paradas, por segunda vez seguida, y despues de que un encargo se lo nombrara.** Elegir la otra lectura seria adjudicar por comodidad, y `5.4` tiene una frase escrita para eso.
+
+## M5.17. **EL COSTE** (`D.56`)
+
+*La vuelta no es de saneamiento (`deuda.py` da `LIBRE`, `2 de 5`), asi que todo turno por encima de `10` USD se declara con su desglose.*
+
+| turno de esta vuelta | USD | por encima de `10` |
+|---|---:|---|
+| extractor (`3282` s, cerro la vuelta; `docs/loop/loop.log`, `2026-09-21 22:48:01`) | `12,898` | **SI** |
+| auditor (este turno) | lo escribe el arnes en `docs/loop/ultimo_auditor.json` cuando mi turno acabe, y `D.33` dice que ese fichero no es sede | **a verificar en la vuelta siguiente** |
+
+**EL DESGLOSE DEL QUE PASA, MEDIDO Y NO ESTIMADO:** el turno escribio tres fichas, tres fronteras de `144` filas y **`883` lineas de reporte** (de la `58681` a la `59563` de `docs/loop/REPORTE.md`), **y corrio cuatro `python forja.py informe`**. Un `informe` de este arbol cuesta entre **`240` y mas de `600` segundos** cronometrados por mi hoy, asi que **las cuatro aduanas se llevan lo menos `16` minutos de los `55` del turno**, sin contar la lectura. **LECTURA, marcada como tal:** de esos cuatro informes, **uno esta caducado antes de guardarse** (`M5.8`), y esa es la parte del gasto que se repite en cada vuelta que corre las aduanas en medio del trabajo en vez de al final. **No propongo nada con ella, que `D.45` y `D.56` lo prohiben desde un frente: la mido y la subo.**
+
+## M5.18. **EL TRAMO QUE HABRIA TOCADO, MEDIDO AUNQUE NO SE ENCARGUE** (`8.1`, `8.2`)
+
+| capitulo tocado en esta vuelta | PASOS INVENTADOS | contra el tope de `10` |
+|---|---|---|
+| `cap_09` | `0,00` (`0` de `2`) | debajo |
+| `cap_10` | `0,00` (`0` de `3`) | debajo |
+| `cap_11` | `0,00` (`0` de `3`) | debajo |
+| **EL PEOR CAPITULO** | **`0,00`** | **debajo** |
+
+**`8.2` DECIDE SOBRE EL PEOR CAPITULO, Y EL PEOR ES `0,00`**, el mismo del tramo anterior. **La cifra se mantiene, asi que `8.1` daria un capitulo mas: de `TRES` a `CUATRO`.** Lo dejo medido y firmado **para quien retome**, y **no lo encargo**, porque esta acta no escribe encargo.
+
+**EL OTRO TECHO NO TENIA QUE DISPARARSE Y NO SE DISPARO** (`EXTRACTOR.md` `12.4`): un candidato por capitulo, muy por debajo del techo, asi que **la vuelta no cerro corta y hace bien en no declararlo**.
+
+**LO QUE QUEDA DEL LIBRO, PARA QUE NO HAYA QUE RECONTARLO:** minados `cap_01` a `cap_11` (con `cap_05` firmado en cero por `M3.5`), **pendientes `cap_12` a `cap_17`, seis unidades**, y `17` candidatos esperando en bandeja.
+
+## M5.19. **EL TABLERO Y LA DEUDA, AL CERRAR**
+
+    $ python forja.py tablero | grep marquet
+      3    5    marquet_turn_the_ship          EN CURSO               marquet_turn_the_ship    17  cap_11
+
+    $ python scripts/deuda.py --clase 4        (al abrir mi turno)
+    LIBRE
+      van 2 de 5 ... con 32 deuda(s) esperando
+
+    $ python scripts/deuda.py --clase 4        (con las de esta acta ya anotadas)
+    LIBRE
+      van 2 de 5 ... con 34 deuda(s) esperando
+
+**`d099` Y `d100` ESTAN PAGADAS Y LAS DOS LAS COMPRUEBO YO:** la clausula sin cita ya no esta en el paso `3` ni en el `entregable_esperado` de `declarar_intencion_reemplazar_peticion_permiso`, y **la unica aparicion que queda en la ficha es la de su propia correccion declarada dentro del `resumen_teorico`**, que es donde tiene que estar; y `config/frentes.json` trae la fila `marquet_turn_the_ship` con `cap_05` y su cita, con el tablero publicando ya sus `11` unidades minadas y su `cap_11` como ultimo capitulo.
+
+**DOS DEUDAS NUEVAS DE ESTA ACTA**, las dos con su cita y su vuelta:
+
+- **`d103`**: las aduanas de un lote se corren mientras las fichas del mismo lote todavia cambian, y la salida publicada deja de reproducir sobre el arbol commiteado (`M5.8`). **Ejemplar propio de esta linea de lo que `d056` midio en la serial.**
+- **`d104`**: cuando una ficha de la bandeja cambia de texto **cambian todas sus vecindades**, y la bandeja entera no se vuelve a barrer (`M5.14`). Medido en esta vuelta sobre dos pares; **`13` fichas quedan con la cifra de antes**. Se paga con un barrido completo al cerrar el lote.
+
+**LA DEUDA NO SE PAGA EN ESTA ACTA Y NO PODRIA: no hay vuelta siguiente que encargar.**
+
+## M5.20. **LA PARADA**
+
+`docs/loop/PARA_ALEXIS.md` escrito con el motivo, el estado exacto, lo que se necesita de Alexis y como retomar. **`docs/loop/PROMPT_SIGUIENTE.md` VACIO**, `0` bytes, que es lo que `3` manda y lo que el arnes mira. **El bucle de este frente se detiene aqui.**
+
+**Y LA LINEA DE `D.49` NO FALTA: NO TIENE DONDE IR.** `LIBRO DE ESTA VUELTA` se escribe en el encargo, y **no hay encargo**. La misma forma que tomo la parada del frente `gerber_emyth` el `21 sep` (`c1ec6b0`, `PROMPT_SIGUIENTE.md` a `0` bytes), y por el mismo motivo: **el arnes no abre la vuelta siguiente mientras exista `PARA_ALEXIS.md`**, asi que no hay vuelta a la que declararle libro.
+
+**LO QUE NO HAGO, PORQUE NO ES MIO:** no reinicio ninguna racha (`5.4`: *un auditor que pone su propia racha a cero se esta absolviendo*), no fundo ramas, no creo remotos, no toco `src/`, el banco ni el arnes (`D.45`), y no escribo doctrina (`D.56`). **Lo que este frente necesita ahora es una decision escrita del fundador en `docs/loop/paradas/`, y esa no la puede escribir el bucle.**

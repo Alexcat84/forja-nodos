@@ -16,3 +16,8 @@
 {"cita": "docs/loop/REPORTE.md, VUELTA 4 seccion Apertura", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "2 de 2", "tanda": "vuelta 4", "tipo": "tanda", "vuelta": 4}
 {"cita": "docs/loop/PROMPT_SIGUIENTE.md, VUELTA 4 cabecera", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "1 de 2", "tanda": "vuelta 4", "tipo": "tanda", "vuelta": 4}
 {"cita": "docs/loop/REPORTE.md, VUELTA 4 seccion 5", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "1 de 2", "tanda": "vuelta 4", "tipo": "tanda", "vuelta": 4}
+{"cae": true, "cita": "ACTA M5, seccion M5.11", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "2 de 2", "tanda": "ACTA M5", "tipo": "tanda", "vuelta": 4}
+{"cae": true, "cita": "ACTA M5, seccion M5.10", "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "1 de 3", "tanda": "ACTA M5", "tipo": "tanda", "vuelta": 4}
+{"cae": false, "cita": "ACTA M5, seccion M5.13", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M5", "tipo": "tanda", "vuelta": 4}
+{"cae": false, "cita": "ACTA M5, seccion M5.13", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M5", "tipo": "tanda", "vuelta": 4}
+{"cae": false, "cita": "ACTA M5, seccion M5.14", "especie": "AUDITOR", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M5", "tipo": "tanda", "vuelta": 4}
