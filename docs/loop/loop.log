@@ -1074,3 +1074,18 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-21 20:32:24] VUELTA 2 : AUDITOR (claude-opus-5)
 [2026-09-21 20:57:07] auditor: TURNO MUDO, el turno corrio 1483s y cobro "10.065328500000003" pero docs/loop/ACTA_AUDITOR.md quedo identico, intento 1 de 7
 [2026-09-21 20:57:07] fallo "auditor mudo"; espero 1800 segundos y reintento
+[2026-09-21 21:53:18] auditor listo (USD 10.245954), 1570s, intento 2 de 7
+[2026-09-21 21:53:18]   sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)
+[2026-09-21 21:53:18]   tablero puesto al dia al cerrar la vuelta 2 (d102)
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+  con dueño: gerber_emyth                   EN CURSO               lo trabaja 'gerber_emyth'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-21 21:53:19]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-21 21:53:19] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-21 21:53:19] VUELTA 3 : EXTRACTOR (claude-sonnet-5)
