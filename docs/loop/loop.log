@@ -1069,3 +1069,8 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-21 19:07:40] VUELTA 2 : EXTRACTOR (claude-sonnet-5)
 [2026-09-21 19:25:24] extractor: TURNO MUDO, el turno corrio 1064s y cobro "5.628186899999999" pero docs/loop/REPORTE.md quedo identico, intento 1 de 7
 [2026-09-21 19:25:24] fallo "extractor mudo"; espero 1800 segundos y reintento
+[2026-09-21 20:32:24] extractor listo (USD 9.414982799999995), 2218s, intento 2 de 7
+[2026-09-21 20:32:24] VUELTA 2 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
+[2026-09-21 20:32:24] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-21 20:57:07] auditor: TURNO MUDO, el turno corrio 1483s y cobro "10.065328500000003" pero docs/loop/ACTA_AUDITOR.md quedo identico, intento 1 de 7
+[2026-09-21 20:57:07] fallo "auditor mudo"; espero 1800 segundos y reintento

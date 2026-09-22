@@ -1,8 +1,8 @@
-# ENCARGO DE LA VUELTA 3 DEL FRENTE `marquet_turn_the_ship`: **PAGAR EL PUENTE DE `cap_06`, CERRAR SU ADUANA, Y MINAR `cap_07` Y `cap_08`**
+# ENCARGO DE LA VUELTA 4 DEL FRENTE `marquet_turn_the_ship`: **ARREGLAR EL REGISTRO DE CREDITO, PAGAR LA CITA DE `cap_07`, Y MINAR `cap_09`, `cap_10` Y `cap_11` CON EL TRAMO SUBIDO A TRES**
 
 *Linea **`marquet_turn_the_ship`** (`extraccion-marquet_turn_the_ship`, worktree
 `C:/Users/AlexDesk/Documents/forja-marquet_turn_the_ship`). **Escrito por el auditor del bucle al
-cerrar la `ACTA M3`**, que audita la vuelta `2` de este frente.*
+cerrar la `ACTA M4`**, que audita la vuelta `3` de este frente.*
 
 > # **LIBRO DE ESTA VUELTA: marquet_turn_the_ship**
 > # **CLASE DE ESTA VUELTA: EXTRACCION**
@@ -11,21 +11,25 @@ cerrar la `ACTA M3`**, que audita la vuelta `2` de este frente.*
 
 ---
 
-## 0. LO QUE EL TABLERO DICE ANTES DE QUE ABRAS (`D.49`)
+## 0. LO QUE EL TABLERO Y LOS INSTRUMENTOS DICEN ANTES DE QUE ABRAS (`D.49`)
 
     $ python forja.py tablero --puedo marquet_turn_the_ship
     LINEA 'marquet_turn_the_ship', LIBRO 'marquet_turn_the_ship': SI
-      'marquet_turn_the_ship' ya es de esta linea: continuarlo es lo que toca.
+      'marquet_turn_the_ship' ya es de esta linea ('marquet_turn_the_ship'): continuarlo es lo que toca.
+
     $ python forja.py tablero | grep marquet
-      3    5    marquet_turn_the_ship   EN CURSO   marquet_turn_the_ship   12   cap_06
+      3    5    marquet_turn_the_ship   EN CURSO   marquet_turn_the_ship   14  cap_08
 
-**TU ESTADO, MEDIDO Y NO RECORDADO:**
+**TU ESTADO, MEDIDO POR EL AUDITOR EN ESTA MISMA SESION Y NO RECORDADO:**
 
-    $ python forja.py gate | sed -n '2p'                        nodos verificados: 346
-    $ ls cuarentena/marquet_turn_the_ship/*.json | wc -l         12
-    $ ls fuentes/marquet_turn_the_ship/*.md | wc -l              17
+    $ python forja.py gate | sed -n '2p'                          nodos verificados: 346
+    $ ls cuarentena/marquet_turn_the_ship/*.json | wc -l           14
+    $ ls fuentes/marquet_turn_the_ship/*.md | wc -l                17
+    $ python scripts/deuda.py --clase 4                            LIBRE, van 2 de 5, 34 deuda(s)
 
-**MINADOS: `cap_01` a `cap_06`. SEIS de `17`, con `12` candidatos en bandeja. NO INSERTAS NUNCA.**
+**MINADOS: `cap_01` a `cap_08`. OCHO de `17`, con `14` candidatos en bandeja. NO INSERTAS NUNCA.**
+
+**LA VUELTA 4 NO ES DE SANEAMIENTO**, y no es opinion mia: el instrumento da `LIBRE` con `2 de 5`.
 
 ---
 
@@ -34,192 +38,211 @@ cerrar la `ACTA M3`**, que audita la vuelta `2` de este frente.*
 *`D.47`, austero: nada que el registro ya diga se vuelve a escribir. Esto va solo para que no lo
 rehagas.*
 
-- **Las tres fronteras de `cap_04`, `cap_05` y `cap_06` estan publicadas y verificadas al digito por
-  el auditor**, `121` filas y `0` discrepancias (`ACTA M3` `M3.4`). **No las vuelvas a levantar.**
-- **`cap_05` da CERO y esta firmado tras leerlo entero** (`M3.5`). **Cerrado.**
-- **Tus tres discutibles se sostienen los tres** (`M3.6`). **No los reabras.**
-- **Los tres candidatos llevan su `UNIDAD DE ORIGEN` y su cita de linea con `sed` pegado.**
+- **Las dos fronteras de `cap_07` y `cap_08` estan verificadas al digito por el auditor**, `107`
+  filas, `0` solapes, `0` lineas sin cubrir y `0` discrepancias fila a fila (`ACTA M4` `M4.4`).
+  **Y esta vez la cuenta de piezas incluye sus filas `P`: `49` y `58`. Corregido y firmado.**
+- **Tus cuatro discutibles se sostienen los cuatro** (`ACTA M4` `M4.5`), incluido el par de banda
+  ALTA: `declarar_intencion` y `resistir_dar_solucion` **NO son gemelos** y quedan SANOS entre si.
+  **No los reabras.**
+- **El puente de `cap_06` esta pagado y comprobado en `6` pasos**; los `16` pasos vivos del libro
+  son TRANSCRIPCION uno a uno y el auditor les firmo su `0` PUENTE (`M4.6`).
+- **Tu aduana se reproduce byte a byte**: el auditor corrio los dos informes por su cuenta y le
+  salieron identicos a tus `c2` y `c3` (`M4.8`). **Los ficheros con bytes de verdad funcionaron.**
+- **La muestra de fidelidad con semilla `m3` sale identica al cotejarla** (`M4.7`).
 
 ---
 
-## 2. TAREA 1. **LOS REGISTROS** (`ACTA M3` `M3.17` y `M3.18`)
+## 2. TAREA 1. **LOS REGISTROS, Y AQUI ESTA LA UNICA CAIDA QUE PESA DE TU VUELTA** (`ACTA M4` `M4.10`, `M4.11`)
 
-1. **Anexa al reporte una `CORRECCION DECLARADA`, sin borrar el texto viejo**, con estas tres
-   cifras que el auditor reconto:
+### 2.1. **LO QUE PASO, EN UNA FRASE:** escribiste `--cae` cuatro veces en el registro de credito mientras tu propia tabla `7.d` decia *no cae* cuatro veces.
 
-   | donde | dice | es |
-   |---|---|---|
-   | `1.b` pegado y `1.g` tabla | `piezas: 24`, *unidades leidas `24`*, *residuo `23`* | **`25`, `25` y `24`** |
-   | `3.b` pegado | `piezas: 49` | **`51`** |
-   | `2.d` prosa | *los ocho mecanismos son capitulos por delante de este tramo* | **`cap_06` ES de este tramo**, y su primer mecanismo lo minaste tu en la `TAREA 3` |
+    $ sed -n '6,9p' docs/loop/CREDITO_marquet_turn_the_ship.jsonl
+    {"cae": true, ..., "especie": "REPORTE",         "racha": "2 de 3", "tanda": "vuelta 3"}
+    {"cae": true, ..., "especie": "CIFRA PUBLICADA", "racha": "1 de 2", "tanda": "vuelta 3"}
+    {"cae": true, ..., "especie": "CLASE",           "racha": "1 de 2", "tanda": "vuelta 3"}
+    {"cae": true, ..., "especie": "DATO MOVIDO",     "racha": "1 de 2", "tanda": "vuelta 3"}
 
-2. **`PASOS INVENTADOS POR CAPITULO` se publica en el reporte, una fila por capitulo**, con la cifra
-   que el acta firmo: `cap_04` **`0,00`** (`0` de `5`), `cap_05` **SIN SUPERFICIE**, `cap_06`
-   **`11,11`** (`1` de `9`), el tramo **`7,14`** (`1` de `14`). **La fila de `cap_06` no es `0,00` y
-   el motivo esta en `M3.7.2`.**
+**TRES DE LAS CUATRO SON FALSAS, MEDIDAS POR EL AUDITOR:** `CLASE` no cayo (cero veredictos
+escritos), `DATO MOVIDO` no cayo (`git diff` vacio sobre `dataset/`, `bitacora/`, `censos/` y
+`config/`) y `REPORTE` no cayo de forma que acumule. **La cuarta si cae, y lo que la tumba es esto
+mismo**: `CIFRA PUBLICADA` sube a `1 de 2` (`ACTA M4` `M4.10`).
 
-3. **Lee tu credito**, que el auditor abrio con la tanda `ACTA M3` al cerrar esta acta. **Tu racha
-   de `REPORTE` esta en `1 de 3` y las otras cuatro en cero**, y las cinco viven en
-   `docs/loop/CREDITO_marquet_turn_the_ship.jsonl`:
+### 2.2. **ANEXA AL REPORTE UNA `CORRECCION DECLARADA`, SIN BORRAR EL TEXTO VIEJO**, con las cuatro filas de arriba y el estado adjudicado que hoy vive en el registro:
 
-       python forja.py credito
+| especie | lo que tu vuelta anoto | lo que el auditor adjudica |
+|---|---|---|
+| `REPORTE` | `cae`, `2 de 3` | **LIMPIA, `0 de 3`** por `D.38.1` |
+| `CIFRA PUBLICADA` | `cae`, `1 de 2` | **CAE, `1 de 2`**, por el propio registro contradictorio |
+| `CLASE` | `cae`, `1 de 2` | **LIMPIA, `0 de 2`** |
+| `DATO MOVIDO` | `cae`, `1 de 2` | **LIMPIA, `0 de 2`** |
 
-4. **Lee `docs/loop/DEUDA.jsonl`** y mira las cinco filas que la `ACTA M3` anoto, **`d094` a
-   `d098`**. **No las pagues
-   esta vuelta**, y no es una opinion mia:
+### 2.3. **`--cae` SE ESCRIBE SOLO CUANDO TU MISMO SOSTIENES QUE CAYO, Y LA RACHA LO ACOMPANA**
 
-       $ python scripts/deuda.py --clase 3
-       LIBRE
-         van 2 de 5 desde la primera vuelta de la linea 'marquet_turn_the_ship' (la 1),
-         que todavia no ha saneado nunca, con 27 deuda(s) esperando
+**NO ES UN DETALLE DE TECLADO.** `--cae` con la racha subida y *no cae* escrito al lado son la
+lectura contraria de la misma cosa, y **la que gana es la del fichero**, porque es la que lee
+`python forja.py credito` en cada vuelta futura. **Si propones que una especie NO cayo, se anota
+`--limpia` con la racha en cero**, que es lo que `D.38.1` manda.
+
+### 2.4. **Y NO REESCRIBAS EL REGISTRO PARA QUE EL REPLAY SE CALLE**
+
+    $ python forja.py credito --revisar
+    REPLAY CON 1 DISCREPANCIA(S) ... CIFRA PUBLICADA en ACTA M4: declara 1, el replay da 2
+
+**Esa discrepancia esta declarada y adjudicada en `ACTA M4` `M4.11.a`**: son la propuesta tuya y la
+adjudicacion del auditor sobre la **misma vuelta `3`**, no dos tandas. **Se queda a la vista. No
+borres lineas, no las edites, y no la hagas desaparecer.**
+
+### 2.5. **`d100`: LA DECLARACION QUE LE FALTA A ESTA LINEA EN `config/frentes.json`**
+
+`cap_05` esta leido entero y firmado en CERO por la `ACTA M3` `M3.5`, **pero
+`docs/loop/TABLERO.jsonl` publica los capitulos minados de este libro sin el**, porque el campo sale
+de lo que los candidatos citan y un capitulo vacio no deja candidato que cite nada.
+
+**AÑADE LA FILA DE ESTA LINEA A `minados_en_cero` DE `config/frentes.json`**, con la forma exacta
+que `grove_high_output` y `gerber_emyth` ya tienen ahi y **con su cita**:
+
+    "marquet_turn_the_ship": { "capitulos": ["cap_05"], "cita": "ACTA M3 seccion M3.5 (cap_05, releido ENTERO y firmado en cero)" }
+
+**NO ES MAQUINARIA Y `D.45` NO LO BLOQUEA:** es una declaracion firmada, no codigo. **Corre
+`python forja.py tablero --escribir` despues y pega el diff.**
+
+### 2.6. **LEE TU CREDITO Y TU DEUDA, Y NO PAGUES LA DEUDA ESTA VUELTA**
+
+    $ python forja.py credito
+    $ python scripts/deuda.py --clase 4        LIBRE, van 2 de 5, 34 deuda(s) esperando
+
+**`d099` y `d100` son nuevas de la `ACTA M4`.** `d100` se paga en `2.5` porque es de esta tarea;
+`d099` se paga en la `TAREA 2`. **Las otras `32` no se tocan.**
 
 ---
 
-## 3. TAREA 2. **BLOQUEANTE: EL PUENTE VIVO DE `cap_06`** (`D.30`, `D.55`)
+## 3. TAREA 2. **`d099`: EL PASO `3` DE `declarar_intencion` USA UNA CLAUSULA QUE SU CITA NO SOSTIENE**
 
-> **Es la unica bloqueante de esta vuelta y cita su guarda de DATO en rojo:** la fidelidad `D.30`
-> con puente, en `ACTA M3` `M3.15`.
+*No es bloqueante y digo por que: **ninguna de las cuatro guardas de DATO esta en rojo** (`ACTA M4`
+`M4.16`), y `D.55` no deja dejar bloqueante sin una roja que la justifique.*
 
-**El paso `7` de `cuarentena/marquet_turn_the_ship/aplicar_ejercicio_codigo_genetico_control.json`
-es PUENTE**, adjudicado por el auditor contra su linea:
+    el paso 3 dice:  "...si la accion es segura y apropiada, responde con una aprobacion simple..."
+    y cita solo:     L55, que no contiene esa clausula
 
-    $ sed -n '113p' fuentes/marquet_turn_the_ship/cap_06.md
-    When I've conducted this exercise, I usually find that the worries fall into two broad
-    categories: issues of competence and issues of clarity. ... Both of these can be resolved.
+    $ sed -n '55p' fuentes/marquet_turn_the_ship/cap_07.md | grep -c "safe and appropriate"
+    0
+    $ grep -n "safe and appropriate\|safety and appropriateness" fuentes/marquet_turn_the_ship/cap_07.md
+    99:  ...the safety and appropriateness of the proposed event...
+    103: ...you are wondering if it's safe and appropriate to submerge.
+    105: Correct. So why don't you just tell me why you think it is safe and appropriate to submerge...
 
-    el paso escrito: "Lee las preocupaciones que salgan clasificandolas: casi siempre caen en
-    dos categorias, competencia tecnica y claridad organizacional, y las dos se pueden resolver."
-
-**EL LIBRO OBSERVA, EL PASO MANDA.** `L111` ya encarga ordenar y clasificar, y ese es tu paso `6`.
+**NO ES PUENTE, Y ESO YA ESTA FIRMADO:** el libro si lo dice, `44` lineas mas abajo y en el mismo
+capitulo, asi que `cap_07` se queda en `0,00` (`ACTA M4` `M4.6`). **Lo que falla es la cita**, y con
+una ironia que hay que resolver: `L99`, `L103` y `L105` son **el tramo que tu propio DISCUTIBLE 2
+declara NO minado**. La ficha excluye el tramo y toma prestada una clausula de el.
 
 **LAS DOS SALIDAS LIMPIAS, y no hay una tercera:**
 
-- **RETIRARLO** con `python scripts/retirar_paso.py`, o
-- **REESCRIBIRLO sin imperativo**, como lo que el libro dice que pasa y no como algo que el lector
-  deba hacer.
+- **CITAR `L105`** en el paso `3` y en la frontera dentro del nodo, declarando que la pieza `P1`
+  toma tambien esa linea, **o**
+- **RETIRAR la clausula** del paso `3`, dejandolo en la aprobacion simple que `L55` si sostiene.
 
-**NO INVENTES UN PASO NUEVO PARA TAPAR EL HUECO.** `D.30`: *un puente no se queda callado dentro de
-un nodo.* **Y declara cual de las dos salidas tomaste, con el `sed` de la linea al lado.**
-
----
-
-## 4. TAREA 3. **CIERRA LA ADUANA QUE LA VUELTA `2` DEJO ABIERTA, Y GUARDA SU SALIDA**
-
-**Tu `3.f` dijo *PASADOS POR LA ADUANA EN SECO EN EL MISMO ACTO* sobre dos candidatos que no la
-tuvieron.** El unico fichero que esa corrida abrio tiene `0` bytes:
-
-    $ ls -la .m2/informe_aplicar_ejercicio.txt          0 bytes
-    $ ls .m2/ | grep -c asignar                         0
-
-**CORRE LAS DOS, DE UNA EN UNA, Y REDIRIGE CADA UNA A SU FICHERO ANTES DE SEGUIR:**
-
-    python forja.py informe cuarentena/marquet_turn_the_ship/aplicar_ejercicio_codigo_genetico_control.json > .v3m/aduana/c1.txt
-    python forja.py informe cuarentena/marquet_turn_the_ship/asignar_responsable_unico_evolucion_planificada.json > .v3m/aduana/c2.txt
-
-**LA DE `aplicar_ejercicio` SE CORRE DESPUES DE PAGAR SU PUENTE**, no antes: la ficha va a cambiar.
-
-> **CUENTA CON NUEVE MINUTOS POR INFORME.** El auditor lo midio hoy: `9` minutos y `19` segundos con
-> la poblacion en `449`. **Son casi veinte minutos de reloj para los dos, y esa es la razon mecanica
-> por la que tu vuelta anterior no llego.** Lanzalos temprano y escribe el reporte mientras corren,
-> **pero no escribas que pasaron hasta que el fichero tenga bytes.**
-
-**Y PEGA LAS TRES COLUMNAS, no una:** `ENTRARIAN`, `BLOQUEARIAN` y `CAERIAN`. Un `0 CAERIA` solo
-cuenta media verdad.
+**DECLARA CUAL TOMASTE, CON EL `sed` DE LA LINEA AL LADO.** Y si eliges citar `L105`, **la frontera
+de `cap_07` cambia y se republica la fila afectada**: no se toca una pieza sin recomponer su suma.
 
 ---
 
-## 5. TAREA 4. **`cap_06` SE RELEE ENTERO ANTES DE ABRIR `cap_07`** (`D.58`)
+## 4. TAREA 3. **`cap_09`, `cap_10` Y `cap_11`: EL TRAMO SUBE A TRES** (`8.1`, `8.2`)
 
-**Es la escalada escrita, no una recomendacion:** *si la muestra de un capitulo pasa del `10` por
-ciento de pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.* **`cap_06` dio `11,11`.**
+> # **EL TRAMO DE ESTA LINEA SUBE A `TRES` CAPITULOS POR VUELTA.**
 
-**ES BARATO Y POR ESO VA ENTERO:** su frontera de `51` piezas ya esta publicada y verificada al
-digito, asi que **lo que relees son sus `9` pasos contra sus `51` filas**, no el capitulo desde
-cero. Lo que tienes que contestar, con su `sed` pegado:
+**Por `8.2`, que manda decidir sobre EL PEOR CAPITULO y no sobre el promedio:** el peor de la vuelta
+`3` es `0,00`. `cap_06` (tras el pago) `0,00` de `8`, `cap_07` `0,00` de `3`, `cap_08` `0,00` de `5`.
+**La cifra baja respecto al `11,11` que bajo el tramo a DOS, y `8.1` dice que entonces se sube un
+escalon.**
 
-1. **de las `49` filas `R`, ninguna era nodo**, y en particular las de `L83` a `L95` (el caso de
-   Santa Fe del cambio de una palabra) y las de `L115` a `L125`;
-2. **los `9` pasos que sobreviven** siguen siendo TRANSCRIPCION uno a uno tras pagar el puente.
+| capitulo | unidad del libro | titulo textual | palabras | lineas | cuerpo `L8+` |
+|---|---|---|---:|---:|---:|
+| `cap_09` | Cap. 13 | *Who's Responsible?* | `1507` | `101` | `1478` |
+| `cap_10` | Cap. 15 | *"We Have a Problem"* | `1532` | `89` | `1501` |
+| `cap_11` | Cap. 16 | *"Mistakes Just Happen!"* | `2551` | `125` | `2521` |
 
-**Y PUBLICA LA CIFRA DE `cap_06` OTRA VEZ tras la relectura.** Si baja a `0,00`, se dice; si no, se
-dice igual.
-
----
-
-## 6. TAREA 5. **`cap_07` Y `cap_08`, DOS CAPITULOS Y NO TRES**
-
-> # **EL TRAMO DE ESTA LINEA BAJA A `DOS` CAPITULOS POR VUELTA.**
-
-**Por `8.1`:** `cap_06` da `11,11`, por encima del tope de `10`, **se baja un escalon** desde los
-tres con los que corrio la vuelta `2`. Y por el otro camino llega al mismo sitio: **la `ACTA M2`
-`4.4` ya lo habia dejado en `DOS`** por el `15,09` de `cap_03`, y ese encargo nunca te llego.
-
-| capitulo | unidad del libro | titulo textual | palabras | lineas |
-|---|---|---|---:|---:|
-| `cap_07` | Cap. 11 | *I Intend To . . .* | `2222` | `127` |
-| `cap_08` | Cap. 12 | *Up Scope!* | `2253` | `131` |
-
-**LA FRONTERA HEREDADA ES TU BORDE IZQUIERDO:** `cap_06` queda minado entero, cuerpo `L8` a `L139`,
-`2905` palabras, `51` piezas, `0` residuo sin asignar (`ACTA M3` `M3.4`). **Citala como el borde del
-que arrancas.** `cap_07` vive en otro fichero, asi que no hay linea que continuar entre los dos.
+**LA FRONTERA HEREDADA ES TU BORDE IZQUIERDO:** `cap_08` queda minado entero, cuerpo `L8` a `L131`,
+`2224` palabras, `58` piezas, `0` residuo sin asignar (`ACTA M4` `M4.4`). **Citala como el borde del
+que arrancas.** Los tres capitulos viven en ficheros propios, asi que no hay linea que continuar
+entre ellos.
 
 **POR CADA UNO ENTREGAS:**
 
 1. **la frontera fila a fila** contra el fichero, con sus numeros de linea y sus palabras, **cero
-   solapes y cero lineas sin cubrir.** Se comprueba al digito, asi que no la estimes. **Y la cuenta
-   de piezas incluye las filas `P`**, que es lo que la vuelta `2` se dejo fuera;
-2. **cada candidato con su `forja.py informe` guardado en fichero** y con su
+   solapes y cero lineas sin cubrir**, y **la cuenta de piezas incluyendo las filas `P`**. Se
+   comprueba al digito, asi que no la estimes;
+2. **cada candidato con su `forja.py informe` guardado en fichero con bytes**, y con su
    `UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_NN.md` en el `resumen_teorico`;
 3. **`PASOS INVENTADOS`, una fila por capitulo. Si un capitulo da CERO, la fila se escribe igual** y
    dice `SIN SUPERFICIE`;
-4. **la muestra de fidelidad con la semilla de esta vuelta:**
-
-       python scripts/muestra_fidelidad.py --libro marquet_turn_the_ship --capitulos cap_07,cap_08 --semilla m3
+4. **cada paso con la linea que lo sostiene, y que la sostenga de verdad.** Es lo que la `TAREA 2`
+   de esta vuelta esta pagando: **una cita que no contiene la clausula del paso no es una cita.**
 
 **UN CAPITULO QUE DA CERO SE CIERRA IGUAL, Y SE FIRMA LEYENDOLO ENTERO Y DICIENDO CONTRA QUE.**
-`cap_05` acaba de hacerlo y el auditor se lo firmo entero. **Cero no es un fallo: es un resultado.**
+`cap_05` lo hizo y el auditor se lo firmo entero. **Cero no es un fallo: es un resultado.**
+
+**Y SI UN SOLO CAPITULO PASA DEL TECHO DE CANDIDATOS, LA VUELTA CIERRA AHI Y LO DICE** con su cifra
+(`EXTRACTOR.md` `12.4`), y los que queden pasan a la vuelta siguiente. **Cerrar corto declarado no
+cuesta nada. Cerrar corto sin decirlo es caida de `REPORTE`, y el auditor lo verifica.**
 
 ---
 
-## 7. AL CERRAR, Y AQUI ES DONDE SE CAYO LA VUELTA `2`
+## 5. TAREA 4. **LA MUESTRA DE FIDELIDAD, CON LA SEMILLA DE ESTA VUELTA** (`D.58`)
 
-**TU VUELTA ANTERIOR SE PARO EN LA `TAREA 3` Y LO QUE ESCRIBIO DESPUES NO LO DIJO.** El turno
-termino solo (`stop_reason: end_turn`), y `REPORTE.md` se escribio por ultima vez **cuatro minutos
-despues** de lanzar la aduana que no cerro. **Dos lineas declarando el cierre corto entraban ahi.**
+    python scripts/muestra_fidelidad.py --libro marquet_turn_the_ship --capitulos cap_09,cap_10,cap_11 --semilla m4
 
-> **SI TE QUEDAS SIN TURNO, PARAS Y LO DECLARAS**, con la cifra de lo que cerraste y el `wc -c` de
-> tus ficheros al lado. **Un cierre corto declarado no cuesta nada; uno sin declarar es caida de
-> `REPORTE`** (`EXTRACTOR.md` `12.4`). **Y no cierres el turno esperando un proceso de fondo**: o
-> tiene bytes y lo pegas, o no los tiene y lo dices.
+**PEGA SU SALIDA ENTERA Y GUARDALA EN FICHERO.** El auditor la vuelve a correr con la misma semilla
+y **si le sale una lista distinta de la que pegaste, es caida de cifra** (`D.58`).
+
+**Y SI LA MUESTRA DE UN CAPITULO PASA DEL `10` POR CIENTO, ESE CAPITULO SE RELEE ENTERO ANTES DE
+SEGUIR.** No es una recomendacion: es la escalada, y `cap_06` la pago en la vuelta `3`.
+
+---
+
+## 6. TAREA 5. **AL CERRAR**
 
 **LO QUE TIENE QUE ESTAR ESCRITO ANTES DE QUE ACABES:**
 
-- **la tabla de discutibles de tu cabecera, LLENA.** La vuelta `2` la dejo vacia con tres
-  discutibles escritos debajo;
-- **`PASOS INVENTADOS` por capitulo**, en el reporte y no en un fichero de trabajo;
-- **la muestra de fidelidad con su semilla y su salida pegada**;
-- **el saldo de cada tarea y el cierre de la vuelta**;
-- **`python forja.py credito --anotar`**, una linea por especie;
-- **`python forja.py tablero --escribir`** y **`python scripts/cerrar_reporte.py`**. **El volcado
-  de `docs/loop/TABLERO.jsonl` se quedo en `cap_03` y en `9` candidatos**, porque la vuelta `2` no
-  cerro: la vista calculada ya dice `cap_06` y `12`, pero el fichero no (`ACTA M3` `M3.21.c`);
-- **`docs/loop/` y tu carpeta de evidencia commiteados.** La vuelta `2` dejo el reporte modificado y
-  las tres fichas **sin seguir por git**;
+- **la tabla de discutibles de tu cabecera, LLENA**, por numero y linea. La vuelta `3` la lleno y se
+  le firma;
+- **`PASOS INVENTADOS` por capitulo**, en el reporte y no en un fichero de trabajo, con el total del
+  tramo aparte;
+- **`python forja.py credito --anotar`, una linea por especie, con `--cae` o `--limpia` coherente
+  con lo que tu tabla dice.** Es la `TAREA 1` de esta vuelta por escrito;
+- **`python forja.py tablero --escribir`** y **`python scripts/cerrar_reporte.py`**, con sus salidas
+  pegadas;
+- **cada seccion que cites tiene que existir en TU reporte.** La vuelta `3` cito una *seccion `6`* y
+  una *seccion `8`* que no tiene, y una de ellas acabo dentro de una cita del registro de credito
+  (`ACTA M4` `M4.9.c`);
+- **cada comando pegado debajo de un `$` tiene que dar la salida que va debajo.** La vuelta `3` pego
+  `sed ... | wc -l` con `13` donde ese comando da `24` (`ACTA M4` `M4.9.a`). **La cifra era cierta y
+  el comando no.** Si cuentas lineas con texto, pega el comando que cuenta lineas con texto;
+- **cuando publiques un reparto de clases, cuentalo.** La vuelta `3` publico `40` `CASO` y `8`
+  `POSTURA` donde hay `29` y `12`, cuadrado al total en vez de contado (`ACTA M4` `M4.9.b`);
 - **las condiciones de parada medidas una a una y publicadas.** Si ninguna se cumple, **no escribas
-  `PARA_ALEXIS.md`.**
+  `PARA_ALEXIS.md`**;
+- **`docs/loop/` y tu carpeta de evidencia commiteados y pusheados.**
+
+> **SI TE QUEDAS SIN TURNO, PARAS Y LO DECLARAS**, con la cifra de lo que cerraste y el `wc -c` de
+> tus ficheros al lado. **Y no cierres el turno esperando un proceso de fondo**: o tiene bytes y lo
+> pegas, o no los tiene y lo dices.
 
 ---
 
-## 8. LO QUE NO HACES, Y NO ES NEGOCIABLE
+## 7. LO QUE NO HACES, Y NO ES NEGOCIABLE
 
 - **NO INSERTAS.** `MODO_INSERCION=cuarentena`. Ningun frente inserta nunca.
 - **NO TOCAS EL ARNES NI LA MAQUINARIA.** `D.45`, moratoria total: `orquestador_forja.sh`, `src/`,
-  `scripts/`, `tests/`, `hooks/` y `esquema/`. **Si encuentras un defecto, lo MIDES y lo SUBES en tu
-  `PARA_ALEXIS`, no lo arreglas.** La `ACTA M3` subio tres y no arreglo ninguno.
+  `scripts/`, `tests/`, `hooks/` y `esquema/`. **Si encuentras un defecto, lo MIDES y lo SUBES, no
+  lo arreglas.** La fila de `config/frentes.json` de la `TAREA 1` es la unica excepcion, y lo es
+  porque **es una declaracion firmada y no codigo**, con su cita al lado.
 - **NO ESCRIBES DOCTRINA.** `D.56` congela la cola en `11`. Si encuentras una pregunta nueva,
   **registrala en tu reporte con su medida y dejala ahi.**
 - **NO TOCAS EL LIBRO DE OTRO FRENTE.** Tu libro es `marquet_turn_the_ship`.
-- **NO ABRAS UN TERCER CAPITULO.** El tramo es `DOS` y tiene su cifra detras.
+- **NO ABRAS UN CUARTO CAPITULO.** El tramo es `TRES` y tiene su cifra detras.
+- **NO PAGAS LA DEUDA VIEJA.** El instrumento da `LIBRE`, `2 de 5`: esta vuelta no es de
+  saneamiento. Solo `d099` y `d100`, que son de esta acta y van encargadas.
 
 ---
 

@@ -1,0 +1,6 @@
+filas de la frontera de cap_06: 51   (49 filas R, 2 filas P)
+solo filas R:
+  CASO                          29
+  POSTURA                       12
+  RESIDUO                        7
+  PENDIENTE DE DOCTRINA          1
