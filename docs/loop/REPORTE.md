@@ -58470,3 +58470,26 @@ declara el primer `insertar` (`D.44`). Los otros dos no los toco.
 **Cada fila se anexa al volver su `insertar`**, con la salida entera en `.v65ext/insertar_<fila>_<id>.txt`.
 **Las aristas por lectura que tocan**, con `python forja.py arista` y su salida en
 `.v65ext/arista_<madre>__<hijo>.txt`.
+
+### Fila `1`: `construir_flujo_produccion_paso_limitante`, **INSERTADO** en `1822.7` s, codigo `0`, commit `bd49843`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `462`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v65ext/insertar_01_construir_flujo_produccion_paso_limitante.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_01_construir_flujo_produccion_paso_limitante.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `retirar_barreras_politicas_metodo` | paso_contra_nodo | 0.108 | 0.000 | 0.614 | SANO |
+| `rehacer_flujo_paso_limitante_capacidad` | similitud_texto, familia_id | 0.412 | 0.429 | 0.430 | CONTINUA |
+| `preferir_inspeccion_proceso_prueba_destructiva` | similitud_texto | 0.397 | 0.000 | 0.421 | SANO |
+
+**Arista en cola (`D.29`)**: `construir_flujo_produccion_paso_limitante > rehacer_flujo_paso_limitante_capacidad`
+
+**El cerrojo huerfano, roto y declarado por este `insertar`** (`D.44`), linea `7` de su salida:
+
+    $ sed -n '7p' .v65ext/insertar_01_construir_flujo_produccion_paso_limitante.txt
+      CERROJO HUERFANO: el proceso 14980 no se puede comprobar en este sistema y el cerrojo lleva 41521 s. Se rompe y se declara.
+
+**Los tres vecinos son los tres de su bloque y las tres lineas se pasaron tal cual**; ninguno nuevo, ninguno
+que dejara de levantarse. **El reloj, `1822,7` s, con la otra linea del arnes corriendo en la misma maquina**
+(un `claude -p` del frente de Marquet vivo en `ps` a las `12:15`): no es un techo, es lo que costo.

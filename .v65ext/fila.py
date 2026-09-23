@@ -15,6 +15,8 @@ print('')
 print('La aduana de hoy: **%s** con `%d` vecino(s) contra `%s`; lineas `--veredicto` pasadas: `%d`. Salida entera en `.v65ext/insertar_%s_%s.txt`.' % (
     estado, len(vec), re.search(r'blocking multi señal contra (\d+)', t).group(1), len(lin), fila, cid))
 print('')
+print('<!-- TALLADO: parcial salida=.v65ext/insertar_%s_%s.txt -->' % (fila, cid))
+print('')
 print('| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |')
 print('|---|---|---:|---:|---:|---|')
 dl = dict((a.strip(), b.strip()) for a, b in lin)
