@@ -58835,3 +58835,14 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `462`; lineas `--vered
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: dimensionar_inventario_materia_prima_reposicion > decidir_aceptar_rechazar_material_defectuoso
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `20`: `elegir_inspeccion_barrera_monitorizacion`, **INSERTADO** en `1858.0` s, codigo `0`, commit `5bda28f`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `462`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v65ext/insertar_20_elegir_inspeccion_barrera_monitorizacion.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_20_elegir_inspeccion_barrera_monitorizacion.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `construir_grafico_escalonado_pronosticos` | similitud_texto | 0.365 | 0.000 | 0.454 | SANO |
+| `emparejar_indicadores_efecto_contraefecto` | similitud_texto | 0.374 | 0.000 | 0.450 | SANO |
