@@ -58493,3 +58493,13 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `462`; lineas `--vered
 **Los tres vecinos son los tres de su bloque y las tres lineas se pasaron tal cual**; ninguno nuevo, ninguno
 que dejara de levantarse. **El reloj, `1822,7` s, con la otra linea del arnes corriendo en la misma maquina**
 (un `claude -p` del frente de Marquet vivo en `ps` a las `12:15`): no es un techo, es lo que costo.
+
+### Fila `2`: `clasificar_trabajo_proceso_montaje_prueba`, **INSERTADO** en `2378.6` s, codigo `0`, commit `fc3caa6`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `462`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v65ext/insertar_02_clasificar_trabajo_proceso_montaje_prueba.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_02_clasificar_trabajo_proceso_montaje_prueba.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `preferir_inspeccion_proceso_prueba_destructiva` | similitud_texto | 0.372 | 0.250 | 0.461 | SANO |
