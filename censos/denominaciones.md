@@ -904,3 +904,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | construir_indicador_linealidad_alerta_temprana | otro_idioma | linearity indicator | ingles | - |
 | 2026-09-23 | construir_indicador_linealidad_alerta_temprana | otro_idioma | leading indicators | ingles | - |
 | 2026-09-23 | construir_indicador_linealidad_alerta_temprana | otro_idioma | early warning | ingles | - |
+| 2026-09-23 | construir_indicador_tendencia_patron | nombre_largo | El indicador de tendencia: la salida de este mes contra la serie de los anteriores y contra el nivel esperado, que obliga a extrapolar y a explicar la diferencia | castellano | - |
+| 2026-09-23 | construir_indicador_tendencia_patron | otro_idioma | trend indicators | ingles | - |
+| 2026-09-23 | construir_indicador_tendencia_patron | otro_idioma | standard or expected level | ingles | - |
