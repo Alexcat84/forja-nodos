@@ -58593,3 +58593,22 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `462`; lineas `--veredic
 
 | vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
 |---|---|---:|---:|---:|---|
+
+*Sin vecinos: la tabla va vacia a proposito, y la fila se cuenta igual.*
+
+### Fila `9`: `emparejar_indicadores_efecto_contraefecto`, **INSERTADO** en `1265.2` s, codigo `0`, commit `0a13c24`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `462`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v65ext/insertar_09_emparejar_indicadores_efecto_contraefecto.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_09_emparejar_indicadores_efecto_contraefecto.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `elegir_indicador_salida_trabajo_administrativo` | similitud_texto | 0.383 | 0.125 | 0.468 | CONTINUA |
+| `construir_indicador_tendencia_patron` | similitud_texto | 0.397 | 0.143 | 0.453 | SANO |
+| `construir_grafico_escalonado_pronosticos` | similitud_texto | 0.384 | 0.000 | 0.446 | SANO |
+| `elegir_cinco_indicadores_diarios_fabrica` | similitud_texto | 0.359 | 0.125 | 0.445 | SANO |
+| `elegir_fabricar_pedido_pronostico` | similitud_texto | 0.367 | 0.000 | 0.408 | SANO |
+| `dimensionar_plantilla_administrativa_pronostico` | similitud_texto | 0.355 | 0.000 | 0.396 | SANO |
+
+**Arista en cola (`D.29`)**: `emparejar_indicadores_efecto_contraefecto > elegir_indicador_salida_trabajo_administrativo`
