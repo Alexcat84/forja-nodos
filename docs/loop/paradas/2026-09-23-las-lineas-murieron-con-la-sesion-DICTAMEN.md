@@ -87,6 +87,28 @@ con `scripts/lanzar_linea.ps1`**, que crea el proceso **a traves de WMI**
 `C:\WINDOWS\system32\bash.exe`, **que es el de WSL** y corre en otro sistema de ficheros. El
 script usa el Git Bash por su ruta: `C:\Program Files\Git\usr\bin\bash.exe`.
 
+> ### **CORRECCION DECLARADA DEL MISMO DIA, 06:30: EL LANZADOR POR WMI TAMPOCO SIRVIO**
+>
+> ~~Se lanza ahora con `scripts/lanzar_linea.ps1`, que crea el proceso a traves de WMI [...] y
+> sobrevive a la sesion.~~ **Relanzadas asi a las `06:25`, las dos murieron a los `90`
+> segundos**, la serial otra vez en plena fase ciega. **La causa: WMI crea cada proceso con su
+> PROPIA VENTANA DE CONSOLA**, vacia porque la salida va al log. El fundador las vio abrirse
+> vacias y lo pregunto: *se abrieron dos ventanas del terminal de windows, pero estaban vacias,
+> sin proceso alguno*. **Esas ventanas eran las lineas.** Mi prueba duro `20` segundos y no
+> llego a verlo. **El refugio volvio a estar entero** (`/tmp/tmp.KAjV0caXLi`, los cuatro
+> identicos a `HEAD`) y se restauro desde git: gate VERDE, `346`.
+>
+> **EL LANZADOR BUENO, probado con un trabajo de `150` segundos antes de usarlo:** una **tarea
+> programada** de Windows (`forja_linea_<nombre>`) que corre `wscript` con un `.vbs` que arranca
+> el Git Bash **con la ventana oculta y sin esperarlo**. Sin ventana que cerrar, y lanzado por el
+> servicio del programador, no por esta sesion. **Y el pid que se vigila es el del bash
+> envoltorio en el espacio de Git Bash** (`<log>.pid`, con `kill -0`): los pids de Windows no
+> sirven, porque Git Bash cambia de proceso de Windows en cada `exec`, y eso fue lo que hizo
+> creer al vigia que la serial habia muerto antes de que muriera de verdad.
+>
+>     06:32:31  relanzadas las dos por tarea programada
+>     06:35:26  serial VIVO, marquet VIVO: pasada la marca de los 90 segundos
+
 ### 3.b. **UNA INSERCION SOBREVIVIO A SU TURNO. Del arnes.**
 
 El extractor de la `63` **lanzo su primera `forja.py insertar` en segundo plano** a las

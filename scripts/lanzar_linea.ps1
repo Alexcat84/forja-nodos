@@ -1,43 +1,50 @@
-# LANZA UNA LINEA DEL ARNES FUERA DEL ARBOL DE PROCESOS DE QUIEN LA LANZA (23 sep 2026).
+# LANZA UNA LINEA DEL ARNES SIN VENTANA Y FUERA DE LA SESION QUE LA PIDE (23 sep 2026).
 #
-#   powershell -File scripts/lanzar_linea.ps1 -Arbol C:\Users\AlexDesk\Documents\forja-nodos `
+#   powershell -File scripts/lanzar_linea.ps1 -Nombre serial `
+#       -Arbol C:\Users\AlexDesk\Documents\forja-nodos `
 #       -Variables "RAMA=extraccion-mundo-11 MODO_INSERCION=insertar ..." -Log /tmp/serial.log
 #
-# POR QUE EXISTE. El 22 sep a las 00:03 las dos lineas se lanzaron con
-# `nohup ... &` desde el shell de la sesion de chat, y MURIERON CON ELLA: al cerrarse
-# la sesion, Windows se llevo su arbol de procesos entero, y nohup no protege de eso.
-# La serial murio en plena fase ciega, con cuatro ficheros apartados a un directorio
-# temporal; Marquet, a mitad del turno de su extractor. Ninguna escribio PARA_ALEXIS,
-# porque no pararon: las mataron.
+# TERCER INTENTO, Y LOS DOS PRIMEROS FALLARON DE VERDAD:
 #
-# COMO LO EVITA. El proceso se crea A TRAVES DE WMI (Win32_Process.Create), asi que su
-# padre es el servicio WmiPrvSE y no el shell que lo pidio. Sobrevive a la sesion que
-# lo lanzo. Comprobado el 23 sep: padre WmiPrvSE, el Git Bash de verdad (no el
-# C:\WINDOWS\system32\bash.exe, que es el de WSL y corre en otro mundo), el claude del
-# PATH en su version nueva, y el mismo /tmp.
+#   1. `nohup ... &` desde el shell de la sesion de chat (22 sep, 00:03). Las dos lineas
+#      murieron cuando la sesion se cerro: Windows se llevo su arbol de procesos entero.
+#   2. WMI, `Win32_Process.Create` (23 sep, 06:25). El padre era el servicio WmiPrvSE,
+#      pero CADA LINEA ABRIA SU PROPIA VENTANA DE CONSOLA, vacia porque la salida va al
+#      log. El fundador las vio vacias y, cerradas o recicladas, las dos lineas murieron a
+#      los 90 segundos. Una ventana que parece vacia y es la linea es una trampa.
 #
-# Escribe el pid de WINDOWS del bash en <Log>.pid, que es el que entiende tasklist.
+# ESTE: una TAREA PROGRAMADA de Windows (la crea el servicio del programador, no esta
+# sesion) que corre `wscript` con un .vbs que arranca el Git Bash con la ventana OCULTA
+# (estilo 0) y sin esperarlo. Sin ventana que cerrar, y sin atadura a la sesion.
+#
+# EL PID QUE SE VIGILA es el del bash ENVOLTORIO en el espacio de Git Bash, escrito en
+# <Log>.pid por el propio envoltorio. El envoltorio NO hace exec (lleva una orden detras)
+# y por eso su pid dura lo que dura la linea. Se comprueba con `kill -0` desde Git Bash.
+# Los pids de Windows no sirven: Git Bash cambia de proceso de Windows en cada exec.
 param(
+    [Parameter(Mandatory = $true)][string]$Nombre,
     [Parameter(Mandatory = $true)][string]$Arbol,
     [Parameter(Mandatory = $true)][string]$Variables,
-    [Parameter(Mandatory = $true)][string]$Log
+    [Parameter(Mandatory = $true)][string]$Log,
+    [string]$Orden = "bash orquestador_forja.sh"
 )
 
 $bash = "C:\Program Files\Git\usr\bin\bash.exe"
-if (-not (Test-Path $bash)) { throw "no encuentro el Git Bash en $bash" }
+if (-not (Test-Path $bash)) { throw "no encuentro el Git Bash en $bash (y bash.exe a secas es el de WSL)" }
 
 $unix = "/" + ($Arbol.Substring(0, 1).ToLower()) + ($Arbol.Substring(2) -replace '\\', '/')
-$linea = "cd '$unix' && env $Variables bash orquestador_forja.sh > '$Log' 2>&1"
-$cmd = "`"$bash`" -lc `"$linea`""
+$linea = "cd '$unix' && echo `$`$ > '$Log.pid' && env $Variables $Orden > '$Log' 2>&1; echo FIN `$(date) >> '$Log'"
 
-$r = Invoke-CimMethod -ClassName Win32_Process -MethodName Create `
-    -Arguments @{ CommandLine = $cmd; CurrentDirectory = $Arbol }
-if ($r.ReturnValue -ne 0) { throw "Win32_Process.Create devolvio $($r.ReturnValue)" }
+# el .vbs arranca el bash OCULTO (0) y no lo espera (False)
+$vbs = Join-Path $env:TEMP "forja_lanzar_$Nombre.vbs"
+$q = '""'
+$vbsTexto = 'CreateObject("WScript.Shell").Run """' + $bash + '"" -lc ""' + ($linea -replace '"', $q) + '""", 0, False'
+Set-Content -Path $vbs -Value $vbsTexto -Encoding ascii
 
-$padre = (Get-CimInstance Win32_Process -Filter "ProcessId = $($r.ProcessId)").ParentProcessId
-$nombre = (Get-Process -Id $padre -ErrorAction SilentlyContinue).ProcessName
-Write-Output "LANZADA: pid $($r.ProcessId), padre $padre ($nombre), log $Log"
-
-$pidUnix = $Log + ".pid"
-$pidWin = (& $bash -lc "cygpath -w '$pidUnix'").Trim()
-Set-Content -Path $pidWin -Value $r.ProcessId -Encoding ascii
+$tarea = "forja_linea_$Nombre"
+$accion = New-ScheduledTaskAction -Execute "wscript.exe" -Argument "//B //Nologo `"$vbs`""
+$ajustes = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries `
+    -ExecutionTimeLimit ([TimeSpan]::Zero) -MultipleInstances IgnoreNew
+Register-ScheduledTask -TaskName $tarea -Action $accion -Settings $ajustes -Force | Out-Null
+Start-ScheduledTask -TaskName $tarea
+Write-Output "LANZADA por la tarea '$tarea', oculta, log $Log, pid en $Log.pid"
