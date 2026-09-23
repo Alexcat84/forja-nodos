@@ -58323,3 +58323,150 @@ del entregable. La huella lo confirma:
 indicadores*) no dependia del entregable, que es lo unico que cambie, y hoy la senial ya no levanta ese par en
 ningun sentido (`64.2.c`). **No toco la bitacora** (esta vuelta no escribe en ella); lo declaro para que la cola lo
 tenga.
+
+
+# VUELTA 65 DE LA LINEA SERIAL, lote 7 (`grove_high_output`), **CLASE INSERCION**: las `20` primeras filas del orden de la `64`, una por vez, con sus veredictos ya escritos
+
+*Encargo escrito por el auditor al cerrar la `ACTA 63`. Clase impresa por `python scripts/deuda.py --clase 65`
+(`LIBRE`, van `1` de `5` desde la `64`). **Un `insertar` por vez, y ninguno vivo cuando el turno termine.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea; cada insercion
+anexa su fila al volver, con su commit. Si la vuelta se corta, lo que falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 63` | PENDIENTE |
+| `T2` | las tres comprobaciones antes del primer `insertar` | PENDIENTE |
+| `T3` | la tanda, fila a fila, filas `1` a `20` | PENDIENTE |
+| `T4` | el cierre: censo, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, commit | PENDIENTE |
+
+## 65.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `TABLERO.jsonl`, `loop.log`, `ultimo_auditor.json` y
+`ultimo_extractor.json` del arnes, en `90028c0`, gate verde, empujado.
+
+<!-- TALLADO: parcial salida=.v65ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    90028c07fa5016cf13b929a91b55c43a4e18e817
+    2026-09-23T11:38:15-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl config/pares_mutuos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+        346 dataset/nodos.jsonl
+          1 config/pares_mutuos.jsonl
+       1087 total
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    91
+    $ ls cuarentena/_insertados/grove_high_output/
+    revisar_tres_preguntas_valor_carrera.json
+    $ ls procesos/
+    nodos.jsonl.218e43e4.cerrojo
+    nodos.jsonl.679b2259.cerrojo
+    nodos.jsonl.e52fd5d2.cerrojo
+    $ python scripts/deuda.py --clase 65
+    LIBRE
+      van 1 de 5 desde la ultima de saneamiento (la 64), con 52 deuda(s) esperando
+
+**El censo de la TAREA `2.3`, con el instrumento que se volvera a correr al cerrar** (`.v65ext/censo.sh`):
+
+    $ bash .v65ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 346
+    veredictos en bitacora              : 740
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 91
+    insertados de grove_high_output     : 1
+    cerrojos en procesos/               : nodos.jsonl.218e43e4.cerrojo nodos.jsonl.679b2259.cerrojo nodos.jsonl.e52fd5d2.cerrojo 
+
+**Coincide con el encargo** (`346`, `740`, `1`, `91`), y en `_insertados/grove_high_output/` hay `1`, que es
+`revisar_tres_preguntas_valor_carrera` de antes. **El cerrojo del dataset de este arbol es
+`nodos.jsonl.679b2259.cerrojo`** (`.v64aud/normal/cerrojos.txt`), huerfano desde la `63`: lo rompe y lo
+declara el primer `insertar` (`D.44`). Los otros dos no los toco.
+
+## 65.D. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D65.1` | **EL METODO DE ESPERA.** El tope de una llamada en primer plano de mi arnes es `10` minutos y mata el proceso al llegar (`ED.7.a` de la vuelta `42`, medido alli), y la aduana de una ficha contra `462` no cupo en `590` s (`64.2.c`). **Cada `insertar` lo lanza `.v65ext/insertar.py` como UN proceso, y yo me quedo bloqueado en primer plano con `.v65ext/esperar.py` hasta leer su `.fin` y su codigo de salida**, sin hacer nada en medio que toque el dataset y sin lanzar el siguiente. **Ninguno queda vivo al cerrar mi turno**: lo compruebo con el cerrojo vacio en el cierre | la letra del encargo dice *primer plano*; lo que protege, que ninguna insercion sobreviva a su turno, se cumple. Si el auditor lee que esto es segundo plano, es mio |
+| `D65.2` | **LAS SIETE ARISTAS POR LECTURA SE DECLARAN CON `--veredicto CONTINUA`** y `--cita-veredicto` a su fila de `.v64ext/aristas_lectura.txt` y a la `ACTA 63` `63.3`, porque `forja.py arista` exige los dos y el cruce del auditor lee `SOSTENGO` como `CONTINUA` (`.v64aud/normal/cruce_clases.txt`) | el encargo no dice que veredicto llevan |
+| `D65.3` | **EL `--paso` DE LAS CUATRO FILAS QUE CITAN UN TRAMO DE LA MADRE** (`1 a 7`, `4 a 7`, `1 a 8`, `2 a 4`): `forja.py arista` pide un solo numero. Elijo el paso de la madre cuyo producto usa el paso citado del hijo, y lo digo en la fila de cada una | es eleccion mia, y la sede no la fija |
+| `D65.4` | **LA LINEA DE `detectar_arreglar_fallo_etapa_menor_valor` SE TOMA DE `.v63ext/cmd_02_detectar.sh`**, como manda el encargo, y no de su bloque en `veredictos_listos.txt`, que es el mismo texto con un prefijo de procedencia | dos sedes con textos que difieren en el prefijo |
+
+## 65.1. TAREA 1: LOS REGISTROS DE LA `ACTA 63`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| mis siete discutibles `D64.1` a `D64.7` se sostienen, y las cinco discrepancias con la apertura sellada las gano: `emparejar` paso `1` T, `construir_grafico` paso `5` y `elegir_fabricar` paso `8` P, `dimensionar_inventario` CONTINUA de `detectar`, `construir_grafico` madre de `casar_flujo`. `cap_03`, los seis de `d005`: `2` de `41`, el `4,88` por ciento | `ACTA 63` `63.3` y `63.5` |
+| el hueco de los vecinos nuevos fuera de los `22` queda cerrado en verde por el barrido completo del auditor: mis seis bloques exactos, `24` pares con las mismas seniales | `63.4` |
+| `REPORTE` sube a `1 de 3`: el bloque `$` de `64.2.c` no traia ninguna linea de su salida ni la formula, en la tabla que decia que el unico corte era el de `64.0` | `63.2` |
+| `R5` se mide con DOS instrumentos, con la cabecera del tramo en la `65`: `.v65ext/pegado65.py` (copia de `.v64ext/pegado64.py`) y `.v65ext/bloques_mudos65.py` (copia de `.v64aud/normal/bloques_mudos.py`) | `63.11` |
+
+**`T1` CERRADA.**
+
+## 65.2. TAREA 2: LAS TRES COMPROBACIONES, ANTES DEL PRIMER `insertar`
+
+**1. Lo que entra es lo que se leyo:**
+
+    $ python .v64aud/normal/pasos_y_huellas.py
+    archivar_indicadores_resolver_problemas          pasos en 067c9df 4 | hoy 4
+    construir_grafico_escalonado_pronosticos         pasos en 067c9df 8 | hoy 8
+    construir_indicador_tendencia_patron             pasos en 067c9df 6 | hoy 6
+    elegir_fabricar_pedido_pronostico                pasos en 067c9df 9 | hoy 9
+    elegir_indicador_salida_trabajo_administrativo   pasos en 067c9df 7 | hoy 7
+    emparejar_indicadores_efecto_contraefecto        pasos en 067c9df 7 | hoy 7
+    total pasos: 067c9df 41 | hoy 41
+    fichas de los 22: 22 | iguales al commit de su lectura entera: 22 | distintas: 0
+
+**`22` iguales y `0` distintas: ninguna ficha se relee.**
+
+**2. La tabla de la tanda, pegada de su instrumento.** Su salida de hoy es identica byte a byte a la de la `64`
+(`diff .v65ext/orden.txt .v64ext/orden.txt` no imprime nada):
+
+<!-- TALLADO: parcial salida=.v65ext/orden.txt -->
+
+    $ python .v64ext/orden.py
+    #   candidato                                        cap    pza  madre(s)                                     informe         pob  dijo(462)  vec  lin   listos
+    1   construir_flujo_produccion_paso_limitante        cap_02 P2   -                                            .v63aud         462  BLOQUEARIA 3    3     SI
+    2   clasificar_trabajo_proceso_montaje_prueba        cap_02 P5   -                                            .v63aud         462  BLOQUEARIA 1    1     SI
+    3   detectar_arreglar_fallo_etapa_menor_valor        cap_02 P11  -                                            .v63aud         462  BLOQUEARIA 1    1     SI
+    4   dimensionar_inventario_materia_prima_reposicion  cap_02 P10  detectar_arreglar_fallo_etapa_menor_valor    .v63aud         462  BLOQUEARIA 2    2     SI
+    5   rehacer_flujo_paso_limitante_capacidad           cap_02 P6   construir_flujo_produccion_paso_limitante    .v63aud         462  BLOQUEARIA 3    3     SI
+    6   equilibrar_capacidad_personal_inventario_plazo   cap_02 P7   rehacer_flujo_paso_limitante_capacidad       .v63aud         462  ENTRARIA   1    1     SI
+    7   preferir_inspeccion_proceso_prueba_destructiva   cap_02 P9   -                                            .v63aud         462  BLOQUEARIA 4    4     SI
+    8   elegir_cinco_indicadores_diarios_fabrica         cap_03 P2   -                                            .v63aud         462  ENTRARIA   0    0     SI
+    9   emparejar_indicadores_efecto_contraefecto        cap_03 P3   -                                            archivo fase 2  462  BLOQUEARIA 6    6     SI
+    10  elegir_indicador_salida_trabajo_administrativo   cap_03 P4   emparejar_indicadores_efecto_contraefecto    archivo fase 2  462  BLOQUEARIA 3    3     SI
+    11  representar_actividad_caja_negra_ventanas        cap_03 P7   -                                            .v63aud         462  ENTRARIA   0    0     SI
+    12  construir_indicador_linealidad_alerta_temprana   cap_03 P9   representar_actividad_caja_negra_ventanas    .v63aud         462  ENTRARIA   0    0     SI
+    13  construir_indicador_tendencia_patron             cap_03 P10  representar_actividad_caja_negra_ventanas    archivo fase 2  462  BLOQUEARIA 6    6     SI
+    14  construir_grafico_escalonado_pronosticos         cap_03 P11  -                                            archivo fase 2  462  BLOQUEARIA 3    3     SI
+    15  archivar_indicadores_resolver_problemas          cap_03 P12  -                                            archivo fase 2  462  BLOQUEARIA 4    4     SI
+    16  elegir_fabricar_pedido_pronostico                cap_03 P13  -                                            archivo fase 2  462  BLOQUEARIA 2    2     SI
+    17  casar_flujo_fabricacion_flujo_ventas             cap_03 P14  construir_grafico_escalonado_pronosticos, elegir_fabricar_pedido_pronostico .v63aud         462  ENTRARIA   0    0     SI
+    18  dimensionar_plantilla_administrativa_pronostico  cap_03 P15  construir_indicador_tendencia_patron, elegir_indicador_salida_trabajo_administrativo .v63aud         462  BLOQUEARIA 6    6     SI
+    19  decidir_aceptar_rechazar_material_defectuoso     cap_03 P17  dimensionar_inventario_materia_prima_reposicion .v63aud         462  BLOQUEARIA 1    1     SI
+    20  elegir_inspeccion_barrera_monitorizacion         cap_03 P18  -                                            .v63aud         462  ENTRARIA   2    2     SI   <- corte del tope
+    21  variar_frecuencia_inspeccion_nivel_calidad       cap_03 P19  -                                            .v63aud         462  ENTRARIA   0    0     SI
+    22  simplificar_trabajo_reducir_numero_pasos         cap_03 P23  -                                            .v63aud         462  BLOQUEARIA 1    1     SI
+
+    COMPROBACIONES
+      hijo delante de su madre: 0 []
+      D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+      hijo dentro del tope con su madre fuera: 0 []
+      tanda propuesta: 20 de 22; fuera del tope: variar_frecuencia_inspeccion_nivel_calidad, simplificar_trabajo_reducir_numero_pasos
+
+**Las tres comprobaciones en cero. Entran las filas `1` a `20`; las `21` y `22` no.**
+
+**3. El censo al abrir**: en `65.0`, con `.v65ext/censo.sh`.
+
+**`T2` CERRADA.**
+
+## 65.3. TAREA 3: LA TANDA, FILA A FILA
+
+**Cada fila se anexa al volver su `insertar`**, con la salida entera en `.v65ext/insertar_<fila>_<id>.txt`.
+**Las aristas por lectura que tocan**, con `python forja.py arista` y su salida en
+`.v65ext/arista_<madre>__<hijo>.txt`.
