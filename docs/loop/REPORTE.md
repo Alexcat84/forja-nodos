@@ -58639,3 +58639,29 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `462`; lineas `--veredic
 |---|---|---:|---:|---:|---|
 
 *Sin vecinos: la tabla va vacia a proposito.*
+
+### Fila `12`: `construir_indicador_linealidad_alerta_temprana`, **INSERTADO** en `1436.1` s, codigo `0`, commit `f29bcfd`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `462`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v65ext/insertar_12_construir_indicador_linealidad_alerta_temprana.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_12_construir_indicador_linealidad_alerta_temprana.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+*Sin vecinos: la tabla va vacia a proposito.*
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, `D65.2`): `representar_actividad_caja_negra_ventanas > construir_indicador_linealidad_alerta_temprana`, `--paso 8`, el que su fila cita (recorta ventanas en la caja; el paso `2` del hijo recorta esta). Salida entera en `.v65ext/arista_representar_actividad_caja_negra_ventanas__construir_indicador_linealidad_alerta_temprana.txt`:
+
+    $ python forja.py arista --madre representar_actividad_caja_negra_ventanas --hijo construir_indicador_linealidad_alerta_temprana --paso 8 --razon <fila 9> --veredicto CONTINUA --cita-veredicto <fila 9>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: representar_actividad_caja_negra_ventanas
+      hijo : construir_indicador_linealidad_alerta_temprana
+      paso citado de la madre: 8
+        Recorta ventanas en la caja, para poder ver una parte de lo que ocurre dentro.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.447, similitud_texto 0.292
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: representar_actividad_caja_negra_ventanas > construir_indicador_linealidad_alerta_temprana
+      razon en bitacora/VEREDICTOS.jsonl
+
