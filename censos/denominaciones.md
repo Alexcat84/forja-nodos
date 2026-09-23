@@ -864,3 +864,8 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | detectar_arreglar_fallo_etapa_menor_valor | otro_idioma | adding value | ingles | - |
 | 2026-09-23 | detectar_arreglar_fallo_etapa_menor_valor | otro_idioma | lowest-value stage | ingles | - |
 | 2026-09-23 | detectar_arreglar_fallo_etapa_menor_valor | otro_idioma | perceived value | ingles | - |
+| 2026-09-23 | dimensionar_inventario_materia_prima_reposicion | nombre_largo | La inspeccion de recepcion, el inventario que cubre el tiempo de reposicion, y la oportunidad en riesgo de parar un dia | castellano | - |
+| 2026-09-23 | dimensionar_inventario_materia_prima_reposicion | otro_idioma | receiving inspection | ingles | - |
+| 2026-09-23 | dimensionar_inventario_materia_prima_reposicion | otro_idioma | raw material inventory | ingles | - |
+| 2026-09-23 | dimensionar_inventario_materia_prima_reposicion | otro_idioma | consumption rate | ingles | - |
+| 2026-09-23 | dimensionar_inventario_materia_prima_reposicion | otro_idioma | opportunity at risk | ingles | - |

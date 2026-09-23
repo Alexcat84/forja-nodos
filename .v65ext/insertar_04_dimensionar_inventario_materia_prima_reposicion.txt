@@ -1,0 +1,35 @@
+fila 04, dimensionar_inventario_materia_prima_reposicion, lineas --veredicto: 2
+  --veredicto preferir_inspeccion_proceso_prueba_destructiva|SANO|El mismo par que preferir lee desde su lado: L67 vigila el proceso, L69 inspecciona la entrada y dimensiona el inventario. Objetos distintos, ninguna linea desplegada.
+  --veredicto detectar_arreglar_fallo_etapa_menor_valor|CONTINUA|madre=detectar_arreglar_fallo_etapa_menor_valor|El paso 4 del vecino, encuentra y rechaza el huevo podrido cuando lo esta entregando el proveedor, es la regla de su paso 3 (detecta y arregla en la etapa de menor valor) aplicada a la entrada, en una linea; este candidato la despliega con procedimiento propio: que mirar al recibir, roto, podrido y de tamano mayor o menor, devolver y quedarse sin material, y el inventario de materia prima que evita parar, dimensionado por el tiempo de reposicion y pesado contra su coste (pasos 1 a 7, L69). L75 dice Thus, we should find and reject the rotten egg as it is being delivered from our supplier. Dependencia de proceso: el hijo es la inspeccion de entrada que la regla de la madre pide (DISCUTIBLE D64.4).
+inicio 2026-09-23 13:18:07
+======================================================================
+ADUANA DE INSERCION, candidato 'dimensionar_inventario_materia_prima_reposicion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 462   (349 del grafo mas 113 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino preferir_inspeccion_proceso_prueba_destructiva  [Preferir la inspeccion dentro del proceso a la prueba que destruye producto]
+    levantada por: similitud_texto
+    similitud_texto    0.391 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.403 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de preferir_inspeccion_proceso_prueba_destructiva
+
+  vecino detectar_arreglar_fallo_etapa_menor_valor  [Detectar y arreglar el fallo en la etapa de menor valor posible]
+    levantada por: similitud_texto
+    similitud_texto    0.357 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.401 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de detectar_arreglar_fallo_etapa_menor_valor
+  arista madre-hijo cableada y escrita RESUELTA: detectar_arreglar_fallo_etapa_menor_valor > dimensionar_inventario_materia_prima_reposicion
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 350
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+
+======================================================================
+fin 2026-09-23 13:32:21 | codigo de salida 0 | 853.8 s
