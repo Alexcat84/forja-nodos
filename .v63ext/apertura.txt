@@ -1,0 +1,22 @@
+$ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+483ae3027fce02fdde67ada7da2b4d90ca7c7ec1
+2026-09-23T00:03:49-04:00
+extraccion-mundo-11
+
+$ python forja.py gate
+GATE VERDE.
+  nodos verificados: 346
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+$ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl config/pares_mutuos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+    346 dataset/nodos.jsonl
+      1 config/pares_mutuos.jsonl
+   1087 total
+
+$ ls cuarentena/grove_high_output/*.json | wc -l
+91
+$ ls cuarentena/gerber_emyth/*.json | wc -l
+22
+$ ls cuarentena/_insertados/grove_high_output/
+revisar_tres_preguntas_valor_carrera.json

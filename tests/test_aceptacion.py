@@ -2671,6 +2671,31 @@ class PruebaCensoDeRutas(BaseForja):
         self.assertIn("NO LANZAS EL INFORME DEL LOTE ENTERO EN TU TURNO", mandato)
         self.assertIn("D.43", mandato)
 
+    def _mandato_de_insercion(self):
+        arnes = comun.leer_texto(os.path.join(RAIZ, "orquestador_forja.sh"))
+        trozos = [x for x in re.findall(r'MANDATO_INSERCION="([^"]+)"', arnes)
+                  if "LA INSERCION ESTA ABIERTA" in x]
+        self.assertEqual(len(trozos), 1)
+        return trozos[0]
+
+    def test_caso_positivo_el_mandato_de_insertar_prohibe_el_segundo_plano(self):
+        """**EL EXTRACTOR DE LA VUELTA 63 LANZO SU PRIMERA INSERCION EN SEGUNDO PLANO**
+        y cerro su turno esperandola: *Both background jobs are still running; I'll
+        pick up as soon as the insertion 1 result lands.* Murio sin escribir mas que
+        su cabecera. Salio bien por suerte: una insercion cortada DESPUES de escribir
+        es la que perdio un nodo y dio nacimiento a `D.44`."""
+        mandato = self._mandato_de_insercion()
+        self.assertIn("SE CORRE EN PRIMER PLANO", mandato)
+        self.assertIn("NUNCA termines tu turno con una insercion en vuelo", mandato)
+        self.assertIn("D.44", mandato)
+
+    def test_caso_negativo_el_mandato_de_insertar_sigue_mandando_uno_por_vez(self):
+        """Lo que el arreglo no puede llevarse: la insercion es una por vez, con su
+        aduana, y no existe la carga masiva."""
+        mandato = self._mandato_de_insercion()
+        self.assertIn("UN CANDIDATO POR VEZ", mandato)
+        self.assertIn("No existe la carga masiva", mandato)
+
     def test_caso_negativo_el_informe_POR_CANDIDATO_sigue_mandado(self):
         """**Lo que el arreglo NO puede llevarse por delante.**
 

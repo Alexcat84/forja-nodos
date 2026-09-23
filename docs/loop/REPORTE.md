@@ -57417,3 +57417,151 @@ del fundador** (`D.39`, `D.32`); no la pido y no la hago.
 
 No declaro el mundo `11` `COMPLETO`: hoy `0` de los `92` candidatos de Grove estan en el grafo, y esa
 declaracion es del fundador (`D.58`).
+
+# VUELTA 63 DE LA LINEA SERIAL, lote 7 (`grove_high_output`), **CLASE INSERCION**: la primera tanda de insercion de Grove, `cap_02` entero y los `9` de `cap_03` que `d005` deja entrar
+
+*Encargo escrito por la sesion de chat del `22` sep 2026 al aplicar la decision `DOS SEMANAS`, punto `4`.
+`MODO_INSERCION=insertar`, regimen COMPLETO (`D.58`).*
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea; si la
+vuelta se corta, lo que siga en `PENDIENTE` es hasta donde se llego.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | la aduana reconciliada: la fila previa de cada uno de los `16` y lo que `insertar` dijo HOY | PENDIENTE |
+| `T2.a` | la relectura de fidelidad ENTERA (`D.30`) de los `16`, antes de la primera insercion | PENDIENTE |
+| `T2.b` | la tanda: `16` inserciones, una por vez, con veredictos y `D.36`/`D.37` | PENDIENTE |
+| `T2.c` | los insertados a `cuarentena/_insertados/grove_high_output/` con su `LEEME.md` (`D.31`) | PENDIENTE |
+| `CIERRE` | `PASOS INVENTADOS POR CAPITULO`, censo antes y despues, credito, `D.61`, guardas, commit y push | PENDIENTE |
+
+## 63.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): el tablero, el log de arranque y
+`ultimo_extractor.json` que el arnes dejo sin commitear, en `483ae30`, gate verde, empujado.
+
+<!-- TALLADO: parcial salida=.v63ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    483ae3027fce02fdde67ada7da2b4d90ca7c7ec1
+    2026-09-23T00:03:49-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    $ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl config/pares_mutuos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+        346 dataset/nodos.jsonl
+          1 config/pares_mutuos.jsonl
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    91
+    $ ls cuarentena/gerber_emyth/*.json | wc -l
+    22
+
+**`346`, `740`, `1` y `91` coinciden con las cuatro cifras que el encargo da para hoy.** La bandeja de
+Gerber tiene sus `22`, y `cuarentena/marquet_turn_the_ship/` tiene `3` fichas en este arbol (`ls`), que
+entran a la poblacion de la aduana y **no se tocan** (`D.49`).
+
+**SIN INFORME DE LOTE EN ESTA CORRIDA**, como el encargo decide (`loop.log`, `INFORME_DE_LOTE vacio`):
+esta vuelta no trae saldo de lote y no lo inventa (`EXTRACTOR.md` 12.2).
+
+## 63.1. TAREA 1: LA FILA PREVIA DE CADA UNO DE LOS `16`, DE LA LISTA RECONCILIADA
+
+**No se rehace la reconciliacion y no se corre ningun informe previo** (encargo, TAREA 1). Las `16` filas
+se leen de `.v63rec/veredictos_de_aduana.txt` y se guardan en `.v63ext/filas_previas_16.txt`:
+
+<!-- TALLADO: parcial salida=.v63ext/filas_previas_16.txt -->
+
+    $ for id in <los 16>; do grep -E "^$id " .v63rec/veredictos_de_aduana.txt; done
+    construir_flujo_produccion_paso_limitante                  BLOQUEARIA     423  .v55ext/informe_de_lote.txt
+    clasificar_trabajo_proceso_montaje_prueba                  BLOQUEARIA     423  .v55ext/informe_de_lote.txt
+    rehacer_flujo_paso_limitante_capacidad                     BLOQUEARIA     423  .v55ext/informe_de_lote.txt
+    equilibrar_capacidad_personal_inventario_plazo             BLOQUEARIA     423  .v55ext/informe_de_lote.txt
+    preferir_inspeccion_proceso_prueba_destructiva             BLOQUEARIA     423  .v55ext/informe_de_lote.txt
+    dimensionar_inventario_materia_prima_reposicion            BLOQUEARIA     423  .v55ext/informe_de_lote.txt
+    detectar_arreglar_fallo_etapa_menor_valor                  BLOQUEARIA     440  .v62aud2/informe_detectar_AUDITOR.txt
+    elegir_cinco_indicadores_diarios_fabrica                   ENTRARIA       423  .v55ext/informe_de_lote.txt
+    representar_actividad_caja_negra_ventanas                  ENTRARIA       423  .v55ext/informe_de_lote.txt
+    construir_indicador_linealidad_alerta_temprana             ENTRARIA       423  .v55ext/informe_de_lote.txt
+    casar_flujo_fabricacion_flujo_ventas                       ENTRARIA       423  .v55ext/informe_de_lote.txt
+    dimensionar_plantilla_administrativa_pronostico            ENTRARIA       423  .v55ext/informe_de_lote.txt
+    decidir_aceptar_rechazar_material_defectuoso               ENTRARIA       423  .v55ext/informe_de_lote.txt
+    elegir_inspeccion_barrera_monitorizacion                   ENTRARIA       423  .v55ext/informe_de_lote.txt
+    variar_frecuencia_inspeccion_nivel_calidad                 ENTRARIA       423  .v55ext/informe_de_lote.txt
+    simplificar_trabajo_reducir_numero_pasos                   ENTRARIA       423  .v55ext/informe_de_lote.txt
+
+**`7` BLOQUEARIA y `9` ENTRARIA.** Los `7` de `cap_02` bloquean todos; los `9` de `cap_03` son exactamente
+los que `d005` deja entrar. **Lo que `insertar` dijo HOY va al lado, fila a fila, en la tabla de cierre de
+la TAREA 1**, que se genera de las salidas guardadas en `.v63ext/insertar_*.txt` y no se teclea.
+
+**COMO USO LA LISTA VIEJA, y lo digo porque ahorra reloj sin tocar la puerta:** los `16` ficheros no se
+tocaron desde antes del informe de poblacion `423` (`git log`: el ultimo commit que los toca es del `16`
+sep, y el informe de lote es del `20`), y las señales de un par son deterministas. Asi que **los vecinos
+que la lista nombra se leen ANTES de la primera corrida**, y la corrida lleva ya sus veredictos. Antes de
+escribir cada veredicto **mido el par otra vez con `aduana.medir`** (un par cuesta segundos; la poblacion
+entera cuesta minutos), para no escribir sobre un vecino que ya no lo es: un veredicto sobre quien la señal
+no levanta se registra como *lectura declarada* (`src/aduana.py`, el bloque de `DECLARADOS POR LECTURA`),
+y eso seria mentir en la bitacora. **Los vecinos NUEVOS, los que la poblacion de hoy levante y la vieja no,
+los encuentra `insertar` y bloquea; entonces leo y vuelvo a correr.** La puerta es siempre la de hoy.
+
+## 63.2. TAREA 2.a: LA RELECTURA DE FIDELIDAD ENTERA (`D.30`), ANTES DE LA PRIMERA INSERCION
+
+**Los `130` pasos de los `16`, uno a uno, contra su tramo, con los dos capitulos enteros delante**
+(`cap_02` L1 a L79 y `cap_03` L1 a L179, leidos con `cat -n` en esta vuelta). En insercion no hay
+muestreo (`D.58`).
+
+<!-- TALLADO: parcial salida=.v63ext/fidelidad.txt -->
+
+    $ python .v63ext/fidelidad.py
+    #   cap    pieza candidato                                          tramo      pasos TRANSC PUENTE  verbo entregable
+    1   cap_02 P2    construir_flujo_produccion_paso_limitante          L19-L27       10     10      0      0 no
+    2   cap_02 P11   detectar_arreglar_fallo_etapa_menor_valor          L73-L75        6      6      0      0 no
+    3   cap_02 P5    clasificar_trabajo_proceso_montaje_prueba          L39-L45        7      7      0      0 no
+    4   cap_02 P6    rehacer_flujo_paso_limitante_capacidad             L51-L55        6      6      0      0 no
+    5   cap_02 P7    equilibrar_capacidad_personal_inventario_plazo     L57-L61        8      8      0      4 si
+    6   cap_02 P9    preferir_inspeccion_proceso_prueba_destructiva     L67            6      6      0      0 no
+    7   cap_02 P10   dimensionar_inventario_materia_prima_reposicion    L69            7      7      0      0 no
+    8   cap_03 P2    elegir_cinco_indicadores_diarios_fabrica           L15-L29       10     10      0      0 si
+    9   cap_03 P7    representar_actividad_caja_negra_ventanas          L73-L79        9      9      0      0 no
+    10  cap_03 P9    construir_indicador_linealidad_alerta_temprana     L83-L87        9      9      0      0 no
+    11  cap_03 P14   casar_flujo_fabricacion_flujo_ventas               L111-L121     12     12      0      0 no
+    12  cap_03 P15   dimensionar_plantilla_administrativa_pronostico    L123-L125      7      7      0      0 si
+    13  cap_03 P17   decidir_aceptar_rechazar_material_defectuoso       L135-L137      8      8      0      0 si
+    14  cap_03 P18   elegir_inspeccion_barrera_monitorizacion           L139-L141     12     12      0      0 si
+    15  cap_03 P19   variar_frecuencia_inspeccion_nivel_calidad         L143           6      6      0      0 no
+    16  cap_03 P23   simplificar_trabajo_reducir_numero_pasos           L169-L171      7      7      0      0 si
+
+**CERO PASOS PUENTE ENTEROS EN `130`.** Lo que la relectura SI encontro, y se corrigio en la bandeja ANTES
+de insertar, con su `CORRECCION DECLARADA de la vuelta 63` anexada al `resumen_teorico` de cada ficha y el
+texto viejo escrito dentro (`git diff` del commit de esta vuelta lo ensena entero):
+
+| ficha | que traia | que dice hoy | el parrafo que NO lo dice |
+|---|---|---|---|
+| `equilibrar_capacidad_personal_inventario_plazo` | pasos 2 a 5: *y apunta su coste:*; entregable: *con su coste apuntado al lado* | *y cuenta con su coste:*; *cada una con el coste que el libro le pone* | `cap_02` L61 |
+| `elegir_cinco_indicadores_diarios_fabrica` | entregable: *Los cinco indicadores escritos* | *Los cinco indicadores elegidos* | `cap_03` L17 |
+| `dimensionar_plantilla_administrativa_pronostico` | entregable: *Los patrones de hecho escritos a partir de* | *deducidos de* | `cap_03` L125 |
+| `decidir_aceptar_rechazar_material_defectuoso` | entregable: *pesadas por escrito* | *pesadas por ese grupo* | `cap_03` L135 |
+| `elegir_inspeccion_barrera_monitorizacion` | entregable: *con el intercambio pesado por escrito* | *con el intercambio pesado* | `cap_03` L141 |
+| `simplificar_trabajo_reducir_numero_pasos` | entregable: *y la lista de pasos tirados con la pregunta que no aguantaron* | *y tirados los pasos que no aguantaron la pregunta* | `cap_03` L171 |
+
+**Las seis son la misma especie, y no esta entre las tres de `D.30`: EL SOPORTE.** El libro dice que se
+pesa, que se elige o que se cuenta, y la ficha añadia que se escriba o se apunte. Dos de las seis
+(`equilibrar` y `elegir_inspeccion`) declaraban en su propio resumen que el soporte NO lo escribian, y lo
+escribian igual en un verbo. **Las lineas enteras que sostienen cada *no lo dice* estan pegadas en
+`.v63ext/citas_fidelidad.txt`**, impresas con `sed -n '<n>p'` (con el guion largo del libro cambiado por el
+corto, que es lo unico que se toca, porque el barrido de la casa no lo admite). El inicio de las tres que
+mas pesan:
+
+<!-- TALLADO: parcial salida=.v63ext/citas_fidelidad.txt -->
+
+    $ sed -n '61p' fuentes/grove_high_output/cap_02.md
+    Because each alternative costs money, your task is to find the most cost-effective way to deploy your resources- (...)
+    $ sed -n '135p' fuentes/grove_high_output/cap_03.md
+    When material is rejected at incoming inspection, a couple of choices present themselves. (...)
+    $ sed -n '141p' fuentes/grove_high_output/cap_03.md
+    Let's consider a few techniques commonly used to balance the two needs. There is a gate-like inspection (...)
+
+**`DISCUTIBLE D1`, MARCADO ANTES DE SABER SI ACIERTO: los cuatro pasos de `equilibrar` no los cuento como
+PUENTE.** Su contenido (la salida y su coste) es transcripcion de L57 y L59 frase a frase; lo que era mio
+era el verbo, y el verbo se reescribio. Un lector estricto que los cuente como puente pone `cap_02` en `4`
+de `50`, el `8,0` por ciento, **que sigue por debajo del disparador del `10`**: la conclusion no cambia, la
+cifra si, y por eso va marcada. **Queda EJECUTADO en esta vuelta** (`D.61`): la reescritura ya esta hecha.
