@@ -58503,3 +58503,17 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `462`; lineas `--vered
 | vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
 |---|---|---:|---:|---:|---|
 | `preferir_inspeccion_proceso_prueba_destructiva` | similitud_texto | 0.372 | 0.250 | 0.461 | SANO |
+
+### Fila `3`: `detectar_arreglar_fallo_etapa_menor_valor`, **INSERTADO** en `901.5` s, codigo `0`, commit `7efe96b`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `462`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v65ext/insertar_03_detectar_arreglar_fallo_etapa_menor_valor.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_03_detectar_arreglar_fallo_etapa_menor_valor.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `supervisar_tarea_delegada_etapa_menor_valor` | familia_id | 0.242 | 0.333 | 0.459 | CONTINUA |
+
+**Arista en cola (`D.29`)**: `detectar_arreglar_fallo_etapa_menor_valor > supervisar_tarea_delegada_etapa_menor_valor`
+
+**La arista a `supervisar_tarea_delegada_etapa_menor_valor` queda EN COLA como manda el encargo** (`D.29`): el hijo es de `cap_04` y sigue en la bandeja. La linea es la de `.v63ext/cmd_02_detectar.sh` (`D65.4`).
