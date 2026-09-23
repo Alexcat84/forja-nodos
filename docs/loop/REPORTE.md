@@ -58530,3 +58530,19 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `462`; lineas `--vered
 | `detectar_arreglar_fallo_etapa_menor_valor` | similitud_texto | 0.357 | 0.000 | 0.401 | CONTINUA |
 
 **Arista cableada por la aduana en el acto**: `detectar_arreglar_fallo_etapa_menor_valor > dimensionar_inventario_materia_prima_reposicion` (`D64.4`, sostenida en `ACTA 63` `63.3.b`).
+
+### Fila `5`: `rehacer_flujo_paso_limitante_capacidad`, **INSERTADO** en `957.9` s, codigo `0`, commit `915eeaf`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `462`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v65ext/insertar_05_rehacer_flujo_paso_limitante_capacidad.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_05_rehacer_flujo_paso_limitante_capacidad.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `preferir_inspeccion_proceso_prueba_destructiva` | similitud_texto | 0.460 | 0.000 | 0.378 | SANO |
+| `construir_flujo_produccion_paso_limitante` | similitud_texto, familia_id | 0.419 | 0.429 | 0.430 | CONTINUA |
+| `dimensionar_inventario_materia_prima_reposicion` | similitud_texto | 0.357 | 0.000 | 0.387 | SANO |
+
+**Arista cableada por la aduana en el acto**: `construir_flujo_produccion_paso_limitante > rehacer_flujo_paso_limitante_capacidad`
+
+Es la arista que la fila `1` dejo en cola: **pagada aqui**, y no se cablea dos veces.
