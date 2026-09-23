@@ -58626,3 +58626,16 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `462`; lineas `--vered
 | `construir_indicador_tendencia_patron` | similitud_texto | 0.374 | 0.125 | 0.403 | SANO |
 
 **Arista cableada por la aduana en el acto**: `emparejar_indicadores_efecto_contraefecto > elegir_indicador_salida_trabajo_administrativo`
+
+Es la arista que la fila `9` dejo en cola: **pagada aqui** por el veredicto `CONTINUA` del bloque de este candidato.
+
+### Fila `11`: `representar_actividad_caja_negra_ventanas`, **INSERTADO** en `1277.6` s, codigo `0`, commit `3d53ae5`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `462`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v65ext/insertar_11_representar_actividad_caja_negra_ventanas.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_11_representar_actividad_caja_negra_ventanas.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+*Sin vecinos: la tabla va vacia a proposito.*
