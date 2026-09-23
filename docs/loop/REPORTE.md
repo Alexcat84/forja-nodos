@@ -58612,3 +58612,17 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `462`; lineas `--vered
 | `dimensionar_plantilla_administrativa_pronostico` | similitud_texto | 0.355 | 0.000 | 0.396 | SANO |
 
 **Arista en cola (`D.29`)**: `emparejar_indicadores_efecto_contraefecto > elegir_indicador_salida_trabajo_administrativo`
+
+### Fila `10`: `elegir_indicador_salida_trabajo_administrativo`, **INSERTADO** en `1420.4` s, codigo `0`, commit `37d2d83`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `462`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v65ext/insertar_10_elegir_indicador_salida_trabajo_administrativo.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_10_elegir_indicador_salida_trabajo_administrativo.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `evaluar_directivo_resultados_fortaleza` | paso_contra_nodo | 0.170 | 0.000 | 0.766 | SANO |
+| `emparejar_indicadores_efecto_contraefecto` | similitud_texto | 0.394 | 0.125 | 0.489 | CONTINUA |
+| `construir_indicador_tendencia_patron` | similitud_texto | 0.374 | 0.125 | 0.403 | SANO |
+
+**Arista cableada por la aduana en el acto**: `emparejar_indicadores_efecto_contraefecto > elegir_indicador_salida_trabajo_administrativo`
