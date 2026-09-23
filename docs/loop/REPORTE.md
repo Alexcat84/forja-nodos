@@ -58584,3 +58584,12 @@ La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `462`; lineas `--vered
 | `rehacer_flujo_paso_limitante_capacidad` | similitud_texto | 0.445 | 0.000 | 0.384 | SANO |
 | `construir_flujo_produccion_paso_limitante` | similitud_texto | 0.410 | 0.000 | 0.442 | SANO |
 | `dimensionar_inventario_materia_prima_reposicion` | similitud_texto | 0.384 | 0.000 | 0.417 | SANO |
+
+### Fila `8`: `elegir_cinco_indicadores_diarios_fabrica`, **INSERTADO** en `1497.8` s, codigo `0`, commit `039a73f`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `462`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v65ext/insertar_08_elegir_cinco_indicadores_diarios_fabrica.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_08_elegir_cinco_indicadores_diarios_fabrica.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
