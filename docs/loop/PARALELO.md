@@ -369,3 +369,75 @@ sola sesion no deberia hacer falta: **esta ahi para el dia en que alguien se des
 **LA RAMA SE QUEDA.** Un `git log` sobre ella cuenta la extraccion entera de ese libro,
 y eso vale mas cuanto mas viejo es (`D.31`, el mismo motivo por el que un candidato
 insertado no se borra).
+
+---
+
+## 7. **UNA CARPETA, UN ACTOR DE GIT** (decision del fundador del 24 sep 2026)
+
+*Archivada en `docs/loop/paradas/2026-09-24-una-carpeta-un-actor-DECISION.md`, con el
+dictamen de las muertes del 23 sep.*
+
+> ## **MIENTRAS UNA LINEA CORRE, SU CARPETA ES SOLO DEL ARNES.**
+
+- **La sesion de chat vigila SOLO LEYENDO**: `ps`, `tail`, `cat`, y `kill -0` sobre el pid del
+  envoltorio. **Ni siquiera `git status`**, que refresca el indice. **Nunca `pull`, `checkout`
+  ni `commit`, y nunca escribir ficheros** en una carpeta con una linea a mitad de turno: el
+  arnes hace `git add -A` al commitear y se llevaria lo ajeno dentro de su commit.
+- **Los arreglos de ARNES se commitean con la linea parada.** Si hay que pararla para
+  arreglarla, se para **entre turnos**, en una espera, sin ningun `claude` vivo.
+- **NADIE MAS USA ESTAS CARPETAS.** Cualquier otra sesion que necesite leer la forja **hace su
+  propio `git clone` en una carpeta aparte**, y no empuja a las ramas de las lineas. **El 23 sep
+  a las `06:30:38` otro actor hizo un `git fetch` de las cinco ramas dentro de la carpeta de la
+  serial**, y el fundador encontro la otra sesion.
+
+### 7.a. **EL LANZADOR VIGENTE: tarea programada con la ventana oculta**
+
+    powershell -File scripts/lanzar_linea.ps1 -Nombre serial `
+        -Arbol C:\Users\AlexDesk\Documents\forja-nodos `
+        -Variables "RAMA=extraccion-mundo-11 MODO_INSERCION=insertar MODELO_EXTRACTOR=claude-opus-5-5 MODELO_AUDITOR=claude-opus-5-5 MAX_VUELTAS=20" `
+        -Log /tmp/serial.log
+
+Registra la tarea `forja_linea_<nombre>`, que corre `wscript` con un `.vbs` que arranca el Git
+Bash **oculto y sin esperarlo**. **Los dos que fallaron, para no volver a ellos:**
+
+| lanzador | que paso |
+|---|---|
+| `nohup ... &` desde la sesion | murio con el reinicio de Windows Update del 23 a las `00:29:59` |
+| WMI, `Win32_Process.Create` | **abria una ventana de consola por linea**, vacia porque la salida va al log; las dos murieron a los `90` segundos |
+
+**SU PRUEBA DE VIDA:** un trabajo de `150` segundos el 23 a las `06:29`, y las dos lineas
+lanzadas a las `06:32:31`, vivas pasada la marca de los `90` segundos. **Sus condiciones,
+medidas:** no se para por bateria, sin limite de duracion (`PT0S`), no depende de inactividad.
+
+**EL PID QUE SE VIGILA** es el del bash envoltorio, en `<log>.pid`, con `kill -0` desde Git
+Bash. **Los pids de Windows NO sirven**: Git Bash cambia de proceso de Windows en cada `exec`, y
+eso dio una falsa alarma el 23 a las `06:26`. **Y `bash.exe` a secas es el de WSL**: el script
+usa la ruta del Git Bash.
+
+> ### **NINGUN LANZADOR SOBREVIVE A UN REINICIO NI A UNA SUSPENSION.**
+>
+> El 23 sep a las `00:29:59` Windows Update reinicio el equipo dos veces (`KB5124010`) y las dos
+> lineas murieron. **El fundador pauso las actualizaciones el 23 por la manana.** Antes de una
+> corrida larga, comprobar que siguen pausadas. **Y tras un reinicio a mitad de una fase
+> ciega, sus cuatro ficheros apartados quedan en `/tmp/tmp.*`** y hay que devolverlos a mano:
+> el dictamen del 23 sep, seccion `2.a`, dice como.
+
+---
+
+## 8. **EL CIERRE DE LA CAMPANIA DE NODOS** (decision del fundador del 24 sep 2026)
+
+*Archivada en `docs/loop/paradas/2026-09-24-cierre-de-la-campania-DECISION.md`.*
+
+1. **EL MUNDO `10` NO ENTRA.** La extraccion de `gerber_emyth_cap17_reservado` queda **ANULADA**
+   (declarada en `config/frentes.json`, clave `anulados`, y el tablero la publica asi). Su
+   capitulo queda sin extraer, **y los `6` nodos de ONU se quedan en el grafo** fuera de todo
+   pack, como semilla guardada. **Nada se borra.**
+2. **EL MUNDO SIGUE SIENDO EL `11`, Primer Equipo.** No se renumera nada.
+3. **EL FRENTE DE EXTRACCION SE CIERRA PARA SIEMPRE al cosechar `marquet_turn_the_ship`.**
+   Despues de Marquet no hay siguiente libro, y **`D.32` ya no abre lote**.
+4. **LA SERIAL INSERTA GROVE, GERBER Y MARQUET**, en ese orden. Con `gate`, `guiones`, la suite y
+   `cerrar_reporte.py` en verde, **se crea y se empuja el tag `primer-equipo-completo`**, y el
+   reporte de la sesion abre con **`PRIMER EQUIPO COMPLETO`, el hash y el censo por libro**.
+5. **DESPUES LA SERIAL SE DETIENE.** La campania de nodos queda **CERRADA**, con su acta final en
+   `docs/loop/`. El encargo de la ultima tanda lo dice: al cerrar, `PARA_ALEXIS` de cierre y
+   `PROMPT_SIGUIENTE` vacio.

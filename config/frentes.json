@@ -294,5 +294,12 @@
       "auditor": "claude-opus-5-5",
       "auditor_esfuerzo": "defecto"
     }
+  },
+  "anulados": {
+    "_lea_esto": "LIBROS O UNIDADES CUYA EXTRACCION SE ANULA POR DECISION DEL FUNDADOR. No se abren ni se continuan. NADA SE BORRA: sus fuentes siguen en fuentes/.",
+    "gerber_emyth_cap17_reservado": {
+      "cita": "decision del fundador del 24 sep 2026, CIERRE DE LA CAMPANIA DE NODOS, punto 1",
+      "que_dice": "EL MUNDO 10 NO ENTRA. El capitulo 17 queda sin extraer, y los 6 nodos de onu_consumidor se quedan en el grafo, fuera de todo pack, como semilla guardada."
+    }
   }
 }

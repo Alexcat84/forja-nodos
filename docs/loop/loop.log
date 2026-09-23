@@ -4713,3 +4713,65 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-23 00:18:08] VUELTA 1 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
 [2026-09-23 00:18:08]   hereda 3 remedio(s) del acta anterior, entregados en el prompt (D.40)
 [2026-09-23 00:18:08]   y solo eso: remedios con su motivo, sin cifras ni conclusiones (D.52)
+[2026-09-23 06:25:18] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : serial
+  libro que declara el encargo : grove_high_output
+  libro que el orden le da (D.51): grove_high_output
+    prioridad 1 del orden del mundo 11. 'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capi
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-23 06:25:19]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-23 06:25:19] ROL INICIAL POR MEDICION: AUDITOR. El REPORTE es mas nuevo que el ACTA, asi que la vuelta anterior quedo SIN AUDITAR.
+[2026-09-23 06:25:19]   y los testigos del arnes lo confirman: el ultimo turno NO fue el del auditor
+[2026-09-23 06:25:19]   ultimo commit de REPORTE.md      : 2026-09-23 06:22:36 (1790158956)
+[2026-09-23 06:25:19]   ultimo commit de ACTA_AUDITOR.md : 2026-09-21 06:49:55 (1789987795)
+[2026-09-23 06:25:19] VUELTA 1 : SE SALTA EL TURNO DEL EXTRACTOR, la corrida empieza por el AUDITOR
+[2026-09-23 06:25:19] VUELTA 1 : INSERCION EN VUELO al cerrar el turno del extractor: el cerrojo del dataset sigue echado (pid 14980)
+[2026-09-23 06:25:20]   INSERCION INTERRUMPIDA: el cerrojo sigue echado y su dueno ya no vive. Se comprueba el grafo.
+[2026-09-23 06:25:20]   gate VERDE: la insercion interrumpida no escribio nada. El cerrojo queda huerfano y el propio cerrojo lo rompera y lo declarara (D.44).
+[2026-09-23 06:25:21] VUELTA 1 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+[2026-09-23 06:25:21]   hereda 3 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-23 06:25:21]   y solo eso: remedios con su motivo, sin cifras ni conclusiones (D.52)
+[2026-09-23 06:32:29] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : serial
+  libro que declara el encargo : grove_high_output
+  libro que el orden le da (D.51): grove_high_output
+    prioridad 1 del orden del mundo 11. 'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capi
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-23 06:32:30]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-23 06:32:30] ROL INICIAL POR MEDICION: AUDITOR. El REPORTE es mas nuevo que el ACTA, asi que la vuelta anterior quedo SIN AUDITAR.
+[2026-09-23 06:32:30]   y los testigos del arnes lo confirman: el ultimo turno NO fue el del auditor
+[2026-09-23 06:32:30]   ultimo commit de REPORTE.md      : 2026-09-23 06:22:36 (1790158956)
+[2026-09-23 06:32:30]   ultimo commit de ACTA_AUDITOR.md : 2026-09-21 06:49:55 (1789987795)
+[2026-09-23 06:32:31] VUELTA 1 : SE SALTA EL TURNO DEL EXTRACTOR, la corrida empieza por el AUDITOR
+[2026-09-23 06:32:31] VUELTA 1 : INSERCION EN VUELO al cerrar el turno del extractor: el cerrojo del dataset sigue echado (pid 14980)
+[2026-09-23 06:32:31]   INSERCION INTERRUMPIDA: el cerrojo sigue echado y su dueno ya no vive. Se comprueba el grafo.
+[2026-09-23 06:32:31]   gate VERDE: la insercion interrumpida no escribio nada. El cerrojo queda huerfano y el propio cerrojo lo rompera y lo declarara (D.44).
+[2026-09-23 06:32:32] VUELTA 1 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+[2026-09-23 06:32:32]   hereda 3 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-23 06:32:32]   y solo eso: remedios con su motivo, sin cifras ni conclusiones (D.52)
+[2026-09-23 07:52:57] auditor ciego listo (USD 3.8492522000000005), 4824s, intento 1 de 7
+[2026-09-23 07:52:57]   herencia declarada: acta leida por su huella y los 3 heredados resueltos
+[2026-09-23 07:52:57]   testigo de guardas, antes de sellar (D.38.3)
+============================================================================
+TESTIGO DE GUARDAS AL SELLAR (D.38.3, 16 sep 2026)
+============================================================================
+hora            : 2026-09-23 07:52:57
+commit          : a4d750a243f9
+huella del arbol: 71dc26294ae69143
+  censo_rutas  ROJO
+  citas_de_credito VERDE
+  gate         VERDE
+  guiones      VERDE
+
+GUARDAS EN ROJO AL SELLAR: censo_rutas
+La pagina sellada TIENE QUE DECIRLO, o el sello no se acepta.
+[2026-09-23 07:53:09] SELLO NO ACEPTADO en la vuelta 1: una guarda estaba en ROJO al sellar.
+[2026-09-23 07:53:09]     EL SELLO NO SE ACEPTA: 1 guarda(s) en rojo al sellar.
+[2026-09-23 07:53:09]       la guarda 'censo_rutas' estaba en ROJO en el instante del sello (2026-09-23 07:52:57). Una cifra vale en el instante del sello (D.38.3, 16 sep 2026): si al cerrar hay un rojo, la tabla de cierre no se escribio DESPUES de volver a correr las guardas. 
+[2026-09-23 07:53:09] DETENIDO en la vuelta 1: el testigo desmiente el estado del sello. Ver docs/loop/PARA_ALEXIS.md

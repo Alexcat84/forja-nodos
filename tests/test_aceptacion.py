@@ -2678,6 +2678,26 @@ class PruebaCensoDeRutas(BaseForja):
         self.assertEqual(len(trozos), 1)
         return trozos[0]
 
+    def test_caso_positivo_los_tres_asientos_llevan_la_regla_del_turno(self):
+        """**TRES ASIENTOS CERRARON SU TURNO ESPERANDO UN TRABAJO DE FONDO** el 23 sep:
+        el extractor de la serial (una insercion), el auditor ciego de la serial (16
+        informes en 0 bytes) y el extractor de marquet (una aduana). Nadie los recogio."""
+        arnes = comun.leer_texto(os.path.join(RAIZ, "orquestador_forja.sh"))
+        self.assertIn('REGLA_DEL_TURNO="TU TURNO ACABA CUANDO TU TRABAJO ACABA.', arnes)
+        for nombre in ("PROMPT_EXTRACTOR_BASE", "PROMPT_APERTURA_CIEGA", "PROMPT_AUDITOR"):
+            encaje = re.search(r'^%s="([^"]+)"' % nombre, arnes, re.M)
+            self.assertIsNotNone(encaje, nombre)
+            self.assertTrue(encaje.group(1).rstrip().endswith("$REGLA_DEL_TURNO"),
+                            "%s no cierra con la regla del turno" % nombre)
+
+    def test_caso_negativo_la_regla_no_prohibe_trabajar_en_paralelo(self):
+        """El auditor ciego lanzo 22 aduanas a la vez Y SE QUEDO VIGILANDOLAS en su
+        turno. Eso esta bien, y una regla que lo prohibiera costaria horas de reloj."""
+        arnes = comun.leer_texto(os.path.join(RAIZ, "orquestador_forja.sh"))
+        regla = re.search(r'^REGLA_DEL_TURNO="([^"]+)"', arnes, re.M).group(1)
+        self.assertIn("Puedes lanzar trabajos de fondo o en paralelo", regla)
+        self.assertIn("NUNCA termines tu turno con uno vivo", regla)
+
     def test_caso_positivo_el_mandato_de_insertar_prohibe_el_segundo_plano(self):
         """**EL EXTRACTOR DE LA VUELTA 63 LANZO SU PRIMERA INSERCION EN SEGUNDO PLANO**
         y cerro su turno esperandola: *Both background jobs are still running; I'll
@@ -3917,6 +3937,36 @@ class PruebaTresDefectosDelFrente(BaseForja):
             if fila and fila.get("estado") == "INSERTADO":
                 self.assertTrue(fila["capitulos_minados"],
                                 "%s perdio su capitulo con la regla nueva" % clave)
+
+    # --------------------------------- el libro ANULADO (24 sep 2026, cierre)
+
+    def test_caso_positivo_un_libro_anulado_no_se_abre(self):
+        """**SIN ESTE ESTADO SALIA `SIN EMPEZAR` CON DUENO `NINGUNO`**, que es justo lo
+        que `D.49` y `D.50` leen como libre para abrir. El fundador anulo el capitulo
+        17 reservado el 24 sep: el mundo 10 no entra."""
+        from src import tablero
+        filas = [{"clave": "uno", "estado": "ANULADO", "dueno": tablero.NINGUNO,
+                  "lote": 1, "tipo": "libro"}]
+        vale, motivo = tablero.puede_abrir("uno", "serial", filas)
+        self.assertFalse(vale)
+        self.assertIn("ANULADO", motivo)
+        self.assertEqual(tablero.siguiente_libre("serial", filas)[0], None)
+
+    def test_caso_negativo_un_libro_sin_empezar_sigue_abriendose(self):
+        from src import tablero
+        filas = [{"clave": "dos", "estado": "SIN EMPEZAR", "dueno": tablero.NINGUNO,
+                  "lote": 1, "tipo": "libro"}]
+        self.assertTrue(tablero.puede_abrir("dos", "serial", filas)[0])
+
+    def test_lo_declarado_anulado_sale_anulado_en_el_tablero(self):
+        """El cable: cada clave de `anulados` sale ANULADO en la fila medida."""
+        from src import tablero
+        anulados = [k for k in (tablero.declaraciones().get("anulados") or {})
+                    if not k.startswith("_")]
+        filas = dict((f["clave"], f) for f in tablero.libros())
+        for clave in anulados:
+            if clave in filas:
+                self.assertEqual(filas[clave]["estado"], "ANULADO", clave)
 
     # ------------------------------------------ dos frentes con dueno a la vez
 

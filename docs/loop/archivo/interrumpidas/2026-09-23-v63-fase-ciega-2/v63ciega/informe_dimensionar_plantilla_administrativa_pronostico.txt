@@ -1,0 +1,36 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 462   (346 del grafo mas 116 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : similitud_texto 3
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] dimensionar_plantilla_administrativa_pronostico   (dimensionar_plantilla_administrativa_pronostico.json)
+    vecino elegir_cinco_indicadores_diarios_fabrica  [levantada por: similitud_texto]
+      similitud_texto 0.351 | familia_id 0.000 | paso_contra_nodo 0.434
+      paso 6 del candidato contra paso 3 de elegir_cinco_indicadores_diarios_fabrica
+    vecino simplificar_trabajo_reducir_numero_pasos  [levantada por: similitud_texto]
+      similitud_texto 0.351 | familia_id 0.000 | paso_contra_nodo 0.388
+      paso 6 del candidato contra paso 6 de simplificar_trabajo_reducir_numero_pasos
+    vecino decidir_aceptar_rechazar_material_defectuoso  [levantada por: similitud_texto]
+      similitud_texto 0.367 | familia_id 0.000 | paso_contra_nodo 0.359
+      paso 2 del candidato contra paso 3 de decidir_aceptar_rechazar_material_defectuoso
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

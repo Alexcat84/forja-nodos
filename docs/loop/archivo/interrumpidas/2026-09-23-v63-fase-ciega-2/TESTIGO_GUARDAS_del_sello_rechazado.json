@@ -1,0 +1,27 @@
+{
+  "fecha": "2026-09-23 07:52:57",
+  "commit": "a4d750a243f9",
+  "huella_del_arbol": "71dc26294ae69143",
+  "guardas": {
+    "gate": {
+      "estado": "VERDE",
+      "codigo": 0,
+      "salida": "GATE VERDE.\r\n  nodos verificados: 346\r\n  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece"
+    },
+    "guiones": {
+      "estado": "VERDE",
+      "codigo": 0,
+      "salida": "BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios."
+    },
+    "censo_rutas": {
+      "estado": "ROJO",
+      "codigo": 1,
+      "salida": "\r\nCENSO EN ROJO: 1 ruta(s) publicadas como sede de una cifra no sostienen nada.\r\nSe arregla de una de estas tres formas, y solo de estas tres:\r\n  1. regenerando el fichero, que es lo que casi siempre toca;\r\n  2. escribiendo en la MISMA celda 'VACIA A PROPOSITO: <motivo>';\r\n  3. si era un conjunto, escribiendola como 'PATRON: <glob>'."
+    },
+    "citas_de_credito": {
+      "estado": "VERDE",
+      "codigo": 0,
+      "salida": "CITAS VERDES en la linea 'serial': todas son referencia, ninguna trae una conclusion dentro (D.56)."
+    }
+  }
+}

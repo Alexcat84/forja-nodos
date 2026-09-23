@@ -7,6 +7,17 @@ Lo detecto el fundador a las `06:05`: *me parecio que estaba detenido*. Lo estab
 
 ---
 
+> ## **CORRECCION DECLARADA, 23 SEP A LAS 08:00: LA CAUSA DE LA PRIMERA MUERTE NO FUE LA SESION**
+>
+> ~~las mato el cierre de esa sesion~~ **Las mato un REINICIO DE WINDOWS UPDATE** a las
+> `00:29:59` (`KB5124010`), medido en el visor de eventos por la decision del fundador del `24`
+> sep: `MoUsoCoreWorker.exe` inicio el reinicio, el sistema se apago a las `00:31:35`, y
+> `TrustedInstaller` lo reinicio otra vez a las `00:32:52`. **La sesion murio de lo mismo.** La
+> segunda muerte, la de WMI, coincide con **otro actor de git en la carpeta** (un `fetch` de las
+> cinco ramas a las `06:30:38`). Dictamen entero en
+> `2026-09-24-una-carpeta-un-actor-DECISION.md`. **El lanzador vigente es la tarea programada
+> con la ventana oculta** (`PARALELO.md` `7.a`), y **ningun lanzador sobrevive a un reinicio.**
+
 ## 1. LO QUE PASO
 
 Las dos lineas se lanzaron el `23` sep a las `00:03:25` con `nohup ... &` desde el shell de

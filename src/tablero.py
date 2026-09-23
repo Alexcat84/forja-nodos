@@ -61,7 +61,7 @@ UNIDAD_DE_ORIGEN = re.compile(
 
 # LOS SEIS ESTADOS de la decision del fundador del 17 sep 2026, punto 1.
 ESTADOS = ("SIN EMPEZAR", "EN CURSO", "PAUSADO", "CERRADO EN EXTRACCION",
-           "COSECHADO", "INSERTADO")
+           "COSECHADO", "INSERTADO", "ANULADO")
 
 
 class TableroMalDeclarado(Exception):
@@ -89,7 +89,7 @@ def declaraciones():
         raise TableroMalDeclarado(
             "config/frentes.json: 'orden_de_prioridad' sin cita. El orden lo da el "
             "tablero (D.51), y un orden sin cita no se puede releer.")
-    for grupo in ("liberados", "cerrados_en_extraccion", "minados_en_cero",
+    for grupo in ("liberados", "cerrados_en_extraccion", "minados_en_cero", "anulados",
                   "coste_por_turno", "modelos_por_linea"):
         for clave, dato in (datos.get(grupo) or {}).items():
             # Las claves con guion bajo son la nota de lectura del grupo, no una
@@ -243,6 +243,8 @@ def medir():
     cerrados = declarado.get("cerrados_en_extraccion") or {}
     cosechados = declarado.get("cosechados") or {}
     en_cero = declarado.get("minados_en_cero") or {}
+    anulados = dict((k, v) for k, v in (declarado.get("anulados") or {}).items()
+                    if not k.startswith("_"))
     mapa_worktrees = worktrees()
     existentes = ramas()
     nodos = comun.leer_jsonl(comun.RUTA_DATASET)
@@ -290,7 +292,14 @@ def medir():
 
         # ------------------------------------------------- el estado y su dueño
         de = "medido"
-        if clave in cosechados:
+        # UN LIBRO ANULADO NO ES UN LIBRO SIN EMPEZAR (decision del fundador del 24
+        # sep 2026, cierre de la campania). Sin este estado salia SIN EMPEZAR con dueno
+        # NINGUNO, que es justo lo que D.49 y D.50 leen como LIBRE PARA ABRIR. Se mira
+        # PRIMERO: una anulacion manda sobre cualquier otra medida del libro.
+        if clave in anulados:
+            estado, dueno = "ANULADO", NINGUNO
+            de = "declarado: %s" % anulados[clave]["cita"]
+        elif clave in cosechados:
             # COSECHADO: su rama ya se fundio aqui, asi que sus candidatos estan en
             # ESTA bandeja y su racha murio con el frente (D.48). Se comprueba ANTES
             # que la rama: la rama sigue existiendo despues de cosechar, y sin este
@@ -423,6 +432,11 @@ def puede_abrir(clave, linea, filas=None):
         return False, ("'%s' no tiene fila en el tablero. Un libro sin fila no se "
                        "abre: primero se mide (forja.py tablero --escribir)." % clave)
     estado, dueno = fila.get("estado"), fila.get("dueno")
+
+    if estado == "ANULADO":
+        return False, ("'%s' esta ANULADO por decision del fundador: no se abre ni se "
+                       "continua. Nada se borra. Ver config/frentes.json, clave "
+                       "anulados." % clave)
 
     if dueno and dueno != NINGUNO:
         if dueno == linea:
