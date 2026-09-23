@@ -58699,3 +58699,15 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `462`; lineas `--vered
 
 
 La de `construir_indicador_tendencia_patron` a `dimensionar_plantilla_administrativa_pronostico` va como `CONTINUA` en los veredictos y queda en cola hasta la fila `18`: **no se cablea dos veces.**
+
+### Fila `14`: `construir_grafico_escalonado_pronosticos`, **INSERTADO** en `1531.1` s, codigo `0`, commit `65b917b`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `462`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v65ext/insertar_14_construir_grafico_escalonado_pronosticos.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_14_construir_grafico_escalonado_pronosticos.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `construir_indicador_tendencia_patron` | similitud_texto | 0.365 | 0.143 | 0.453 | SANO |
+| `elegir_fabricar_pedido_pronostico` | similitud_texto | 0.393 | 0.143 | 0.453 | SANO |
+| `emparejar_indicadores_efecto_contraefecto` | similitud_texto | 0.378 | 0.000 | 0.434 | SANO |
