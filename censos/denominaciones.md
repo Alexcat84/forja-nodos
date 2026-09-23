@@ -849,3 +849,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-18 | revisar_tres_preguntas_valor_carrera | otro_idioma | questions to ponder | ingles | - |
 | 2026-09-18 | revisar_tres_preguntas_valor_carrera | otro_idioma | adding real value | ingles | - |
 | 2026-09-18 | revisar_tres_preguntas_valor_carrera | otro_idioma | plugged in | ingles | - |
+| 2026-09-23 | construir_flujo_produccion_paso_limitante | nombre_largo | El desayuno de tres minutos: fijar el paso limitante, calcular hacia atras desde la hora de entrega y desfasar los demas pasos | castellano | - |
+| 2026-09-23 | construir_flujo_produccion_paso_limitante | otro_idioma | limiting step | ingles | - |
+| 2026-09-23 | construir_flujo_produccion_paso_limitante | otro_idioma | total throughput time | ingles | - |
+| 2026-09-23 | construir_flujo_produccion_paso_limitante | otro_idioma | time offsets | ingles | - |
