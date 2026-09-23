@@ -58665,3 +58665,37 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `462`; lineas `--veredic
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: representar_actividad_caja_negra_ventanas > construir_indicador_linealidad_alerta_temprana
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `13`: `construir_indicador_tendencia_patron`, **INSERTADO** en `1138.9` s, codigo `0`, commit `5908ced`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `462`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v65ext/insertar_13_construir_indicador_tendencia_patron.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_13_construir_indicador_tendencia_patron.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `construir_grafico_escalonado_pronosticos` | similitud_texto | 0.362 | 0.143 | 0.461 | SANO |
+| `emparejar_indicadores_efecto_contraefecto` | similitud_texto | 0.393 | 0.143 | 0.427 | SANO |
+| `archivar_indicadores_resolver_problemas` | similitud_texto | 0.365 | 0.143 | 0.427 | SANO |
+| `equilibrar_capacidad_personal_inventario_plazo` | similitud_texto | 0.353 | 0.000 | 0.424 | SANO |
+| `dimensionar_plantilla_administrativa_pronostico` | similitud_texto | 0.373 | 0.000 | 0.405 | CONTINUA |
+| `elegir_indicador_salida_trabajo_administrativo` | similitud_texto | 0.378 | 0.125 | 0.378 | SANO |
+
+**Arista en cola (`D.29`)**: `construir_indicador_tendencia_patron > dimensionar_plantilla_administrativa_pronostico`
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, `D65.2`, y es `D64.7`, sostenida en `ACTA 63` `63.3.c`): `representar_actividad_caja_negra_ventanas > construir_indicador_tendencia_patron`, `--paso 8`, el que su fila cita. Salida entera en `.v65ext/arista_representar_actividad_caja_negra_ventanas__construir_indicador_tendencia_patron.txt`:
+
+    $ python forja.py arista --madre representar_actividad_caja_negra_ventanas --hijo construir_indicador_tendencia_patron --paso 8 --razon <fila 10> --veredicto CONTINUA --cita-veredicto <fila 10>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: representar_actividad_caja_negra_ventanas
+      hijo : construir_indicador_tendencia_patron
+      paso citado de la madre: 8
+        Recorta ventanas en la caja, para poder ver una parte de lo que ocurre dentro.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.452, similitud_texto 0.274
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: representar_actividad_caja_negra_ventanas > construir_indicador_tendencia_patron
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+La de `construir_indicador_tendencia_patron` a `dimensionar_plantilla_administrativa_pronostico` va como `CONTINUA` en los veredictos y queda en cola hasta la fila `18`: **no se cablea dos veces.**
