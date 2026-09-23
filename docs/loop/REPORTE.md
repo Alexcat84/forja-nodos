@@ -58711,3 +58711,16 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `462`; lineas `--vered
 | `construir_indicador_tendencia_patron` | similitud_texto | 0.365 | 0.143 | 0.453 | SANO |
 | `elegir_fabricar_pedido_pronostico` | similitud_texto | 0.393 | 0.143 | 0.453 | SANO |
 | `emparejar_indicadores_efecto_contraefecto` | similitud_texto | 0.378 | 0.000 | 0.434 | SANO |
+
+### Fila `15`: `archivar_indicadores_resolver_problemas`, **INSERTADO** en `816.3` s, codigo `0`, commit `4945966`
+
+La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `462`; lineas `--veredicto` pasadas: `4`. Salida entera en `.v65ext/insertar_15_archivar_indicadores_resolver_problemas.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_15_archivar_indicadores_resolver_problemas.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `construir_indicador_tendencia_patron` | similitud_texto | 0.361 | 0.143 | 0.420 | SANO |
+| `revisar_tres_preguntas_valor_carrera` | similitud_texto | 0.369 | 0.000 | 0.414 | SANO |
+| `vencer_sindrome_grupo_pares_autoconfianza` | similitud_texto | 0.364 | 0.000 | 0.405 | SANO |
+| `cerrar_brecha_dos_preguntas_estrategia` | similitud_texto | 0.353 | 0.000 | 0.393 | SANO |
