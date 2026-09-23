@@ -1,0 +1,9 @@
+[
+ ("R1", 8, 20, "el numero del capitulo, el rotulo YOUR STRATEGIC OBJECTIVE y el epigrafe de Eugen Herrigel (Zen and the Art of Archery)", "RESIDUO: rotulo y epigrafe"),
+ ("R2", 21, 42, "que es el Objetivo Estrategico: la vision del producto terminado de tu negocio, producto de tu Plan de Vida y tu Estrategia y Plan de Negocio, reducido a estandares simples para medir el progreso", "POSTURA"),
+ ("R3", 43, 86, "el Primer Estandar, el dinero: cuanto valen los ingresos brutos, ganancias, cuanto necesitas para ser libre, por cuanto y cuando vender el negocio, preguntas retoricas encadenadas en prosa corrida, sin vineta", "POSTURA"),
+ ("R4", 87, 166, "el Segundo Estandar, una Oportunidad que Vale la Pena: la diferencia entre la mercancia y el producto (el ejemplo de Revlon y del comercial de Chanel) y entre demografia y psicografia del Modelo Demografico Central", "POSTURA y CASO"),
+ ("R5", 167, 178, "Estandares del Tercero en adelante: no hay numero fijo de estandares, solo preguntas especificas que hay que responder, y el libro las pone en cuatro vinetas: cuando estara listo el Prototipo, donde se hara negocio, como se hara negocio, que estandares se exigiran", "INVENTARIO PROPIO: NACE 1 CANDIDATO"),
+ ("R6", 175, 184, "los estandares que creas daran forma al negocio y a la experiencia que tienes de el, crean la tension que acerca el modelo futuro del negocio a como se ve hoy, y son la energia que producen resultados", "POSTURA: bisagra"),
+ ("R7", 185, 280, "la historia de Sarah describiendo su Objetivo Estrategico para All About Pies: las cuatro tiendas, las ventas, el jardin organico, el cuidado de su tia", "CASO"),
+]

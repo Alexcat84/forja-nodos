@@ -1,0 +1,14 @@
+lineas del fichero (wc -l equivalente): 279
+  R1  L8   a L20   palabras    31
+  R2  L21  a L42   palabras   390
+  R3  L43  a L86   palabras   516
+  R4  L87  a L166  palabras   694
+  R5  L167 a L178  palabras    87
+  R6  L179 a L184  palabras    76
+  R7  L185 a L279  palabras  2891
+cuerpo L8 a L279 : 4685
+suma de piezas   : 4685
+residuo          : 0
+lineas solapadas : 0
+lineas sin cubrir: 0
+borde superior de R7 contra el fichero: R7 acaba en 279, el fichero tiene 279

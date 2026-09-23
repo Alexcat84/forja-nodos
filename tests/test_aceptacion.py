@@ -3931,6 +3931,52 @@ class PruebaTresDefectosDelFrente(BaseForja):
                                  "%s lo trabaja %s" % (fila["clave"], dueno))
                 self.assertIn(fila["clave"], activos)
 
+    # ------------------- d134: la ventana de D.59 y la cabecera de un frente
+
+    def test_caso_positivo_d134_la_cabecera_de_un_frente_abre_vuelta(self):
+        """**EN UN FRENTE, LA VENTANA DE `D.59` NO EMPEZABA EN SU ULTIMA VUELTA.**
+
+        La serial escribe `# VUELTA 62, ...` y un frente escribe
+        `# FRENTE `gerber_emyth`, VUELTA 9`. El regex solo conocia la primera, asi
+        que la *vuelta viva* del frente **empezaba en la ultima cabecera de la
+        SERIAL que su arbol heredo**, y se tragaba sus vueltas enteras.
+
+        **Medido el 21 sep en `gerber_emyth`: `4783` lineas de ventana en vez de
+        `683`**, o sea las vueltas `2` a `9` juntas.
+
+        Y eso ataca la razon de ser de la ventana: `D.59` mira solo la vuelta viva
+        **porque una guarda con quinientos avisos se aprende a no mirar**. Una
+        ventana de ocho vueltas es el primer paso de vuelta a ese sitio.
+        """
+        from scripts import tallar_reporte
+        for cabeza in ("# FRENTE `gerber_emyth`, VUELTA 9",
+                       "# FRENTE gerber_emyth, VUELTA 9: y lo que siga",
+                       "## FRENTE `marquet_turn_the_ship`, VUELTA 12"):
+            self.assertTrue(tallar_reporte.CABEZA_DE_VUELTA.match(cabeza), cabeza)
+
+    def test_caso_negativo_d134_la_cabecera_de_la_serial_sigue_valiendo(self):
+        """El arreglo no puede llevarse por delante la que si funcionaba, ni
+        empezar a reconocer lo que no es una cabecera de vuelta."""
+        from scripts import tallar_reporte
+        for cabeza in ("# VUELTA 62, lote 7 (`grove_high_output`)",
+                       "## VUELTA 2 DEL FRENTE `marquet_turn_the_ship`"):
+            self.assertTrue(tallar_reporte.CABEZA_DE_VUELTA.match(cabeza), cabeza)
+        for no_es in ("### VUELTA 9",
+                      "# FRENTE gerber_emyth VUELTA 9",
+                      "texto que menciona la VUELTA 9",
+                      "# FRENTE gerber, VUELTA nueve"):
+            self.assertFalse(tallar_reporte.CABEZA_DE_VUELTA.match(no_es), no_es)
+
+    def test_d134_la_ventana_no_cruza_una_linea(self):
+        """`[^,]` habria dejado que `FRENTE ...` se comiera el salto de linea y
+        casara con la `VUELTA` de DOS lineas mas abajo, uniendo dos vueltas en una
+        sola ventana. Por eso el trozo del frente excluye `
+` y `
+`."""
+        from scripts import tallar_reporte
+        texto = "# FRENTE gerber" + chr(10) + "algo" + chr(10) + "VUELTA 9"
+        self.assertFalse(tallar_reporte.CABEZA_DE_VUELTA.match(texto))
+
     # ------------------------------------------------------------------ d102
 
     def test_caso_positivo_d102_el_arnes_pone_al_dia_el_tablero_al_cerrar(self):
@@ -3960,6 +4006,162 @@ class PruebaTresDefectosDelFrente(BaseForja):
         self.assertIn("AVISO: el tablero no se pudo poner al dia", trozo)
         self.assertNotIn("exit 1", trozo)
         self.assertNotIn("break", trozo)
+
+
+class PruebaCreditoCoherente(BaseForja):
+    """LOS DOS DEFECTOS DEL REGISTRO QUE EL FRENTE `marquet_turn_the_ship` MIDIO.
+
+    `ACTA M5` `M5.11` y `M5.12.a`, 21 sep 2026. `D.45` le veda `src/` desde un frente,
+    asi que los midio y los subio. **Su racha `CIFRA PUBLICADA` llego a su tope con
+    dos tandas seguidas de la misma averia: el registro publicaba lo contrario de lo
+    que decia la tabla que lo documentaba.**
+    """
+
+    def _tanda(self, **campos):
+        base = {"tipo": "tanda", "linea": "una", "especie": "REPORTE",
+                "racha": "1 de 3", "cita": "ACTA X seccion 1", "vuelta": 1}
+        base.update(campos)
+        return base
+
+    # ------------------------------------- la fila que se contradice a si misma
+
+    def test_caso_positivo_una_tanda_que_sube_la_racha_sin_decir_si_cae(self):
+        """**LA FILA EXACTA QUE PARO EL FRENTE**, de su vuelta `4`:
+
+            {"tanda": "vuelta 4", "especie": "DATO MOVIDO", "racha": "1 de 2"}
+
+        **Sube la racha y no declara `cae`.** Una racha solo sube cuando algo cae, asi
+        que esa fila no puede ser cierta de ninguna manera, **y el instrumento la
+        acepto dos vueltas seguidas.**
+        """
+        from src import credito
+        quejas = credito.incoherencias(self._tanda(racha="1 de 2",
+                                                  especie="DATO MOVIDO"))
+        self.assertEqual(len(quejas), 1)
+        self.assertIn("no dice si cae", quejas[0])
+
+    def test_caso_positivo_cae_falso_con_la_racha_arriba(self):
+        from src import credito
+        quejas = credito.incoherencias(self._tanda(cae=False, racha="1 de 3"))
+        self.assertEqual(len(quejas), 1)
+        self.assertIn("una tanda limpia la reinicia", quejas[0])
+
+    def test_caso_positivo_cae_cierto_con_la_racha_en_cero(self):
+        from src import credito
+        quejas = credito.incoherencias(self._tanda(cae=True, racha="0 de 3"))
+        self.assertEqual(len(quejas), 1)
+        self.assertIn("la racha no puede estar vacia", quejas[0])
+
+    def test_caso_negativo_las_dos_filas_coherentes_pasan(self):
+        from src import credito
+        self.assertEqual(credito.incoherencias(
+            self._tanda(cae=True, racha="1 de 3")), [])
+        self.assertEqual(credito.incoherencias(
+            self._tanda(cae=False, racha="0 de 3")), [])
+
+    def test_caso_negativo_la_historia_migrada_esta_exenta(self):
+        """Su historia es anterior al campo `cae`. **Acusar de lo que el registro no
+        vio es ruido que se aprende a ignorar**, y esta casa ya pago eso una vez."""
+        from src import credito
+        self.assertEqual(credito.incoherencias(
+            self._tanda(racha="2 de 3", migrado=True)), [])
+
+    def test_el_instrumento_NO_LA_ESCRIBE(self):
+        """De nada vale verla si se puede escribir igual."""
+        from src import credito
+        destino = os.path.join(self.taller, "CREDITO_una.jsonl")
+        self.assertRaises(credito.CreditoMalEscrito, credito.anotar,
+                          self._tanda(racha="1 de 2"), ruta_registro=destino)
+        self.assertFalse(os.path.exists(destino), "la escribio de todas formas")
+        credito.anotar(self._tanda(cae=True, racha="1 de 3"), ruta_registro=destino)
+        self.assertTrue(os.path.exists(destino))
+
+    # ------------------------------------- el replay, que se contaba dos veces
+
+    def test_caso_positivo_la_propuesta_y_la_adjudicacion_cuentan_UNA_vez(self):
+        """**CADA VUELTA DEJA DOS FILAS POR ESPECIE**: la propuesta del extractor
+        (`tanda: "vuelta 4"`) y la adjudicacion del auditor (`tanda: "ACTA M5"`), **y
+        las dos traen el mismo campo `vuelta`**. El replay sumaba las dos, asi que una
+        sola caida contaba por dos y la racha salia inflada.
+
+        **LA ULTIMA MANDA**, que es la adjudicacion.
+        """
+        from src import credito
+        sucesos = [self._tanda(vuelta=1, tanda="vuelta 1", cae=True, racha="1 de 3"),
+                   self._tanda(vuelta=1, tanda="ACTA X", cae=True, racha="1 de 3")]
+        self.assertEqual(credito.revisar(sucesos=sucesos), [])
+
+    def test_caso_negativo_dos_caidas_en_vueltas_DISTINTAS_siguen_sumando(self):
+        """Si el arreglo colapsara por especie en vez de por especie y vuelta, una
+        racha no subiria nunca y la metrica entera dejaria de existir."""
+        from src import credito
+        sucesos = [self._tanda(vuelta=1, tanda="ACTA X", cae=True, racha="1 de 3"),
+                   self._tanda(vuelta=2, tanda="ACTA Y", cae=True, racha="2 de 3")]
+        self.assertEqual(credito.revisar(sucesos=sucesos), [])
+        malas = [self._tanda(vuelta=1, tanda="ACTA X", cae=True, racha="1 de 3"),
+                 self._tanda(vuelta=2, tanda="ACTA Y", cae=True, racha="1 de 3")]
+        self.assertEqual(len(credito.revisar(sucesos=malas)), 1)
+
+    def test_una_fila_sin_vuelta_no_se_agrupa_con_nadie(self):
+        from src import credito
+        sucesos = [self._tanda(cae=True, racha="1 de 3"),
+                   self._tanda(cae=True, racha="2 de 3")]
+        for s in sucesos:
+            s.pop("vuelta")
+        self.assertEqual(credito.revisar(sucesos=sucesos), [])
+
+    # ---------------- la correccion declarada de las doce (22 sep 2026, punto 2)
+
+    def test_caso_positivo_la_correccion_alinea_cae_y_TACHA_el_original(self):
+        """**TACHAR, NO BORRAR**, que es como esta casa corrige. La fila que paro al
+        frente `marquet` sube la racha sin decir si cae: queda `cae: true`, que es lo
+        unico coherente con el `2 de 2` que ya declaraba, y el valor viejo se conserva
+        al lado en `cae_original`."""
+        from scripts import corregir_credito_incoherente as c
+        fila = self._tanda(racha="2 de 2", especie="CIFRA PUBLICADA",
+                           tanda="vuelta 4", vuelta=4)
+        nueva = c.corregida(fila, "docs/loop/paradas/X.md, punto 2")
+        self.assertIs(nueva["cae"], True)
+        self.assertEqual(nueva["cae_original"], c.AUSENTE)
+        self.assertEqual(nueva["racha"], "2 de 2", "la racha declarada NO se toca")
+        self.assertIn("paradas/X.md", nueva["correccion"]["cita"])
+        from src import credito
+        self.assertEqual(credito.incoherencias(nueva), [])
+
+    def test_caso_negativo_una_fila_coherente_no_se_toca(self):
+        from scripts import corregir_credito_incoherente as c
+        self.assertIsNone(c.corregida(self._tanda(cae=True, racha="1 de 3"), "x"))
+        self.assertIsNone(c.corregida(self._tanda(cae=False, racha="0 de 3"), "x"))
+
+    def test_la_correccion_no_escribe_si_moveria_una_racha(self):
+        """**CORREGIR HISTORIA NO ES REABRIRLA.** La decision lo dice con esas
+        palabras, y el script lo comprueba antes de escribir: si el estado de alguna
+        especie cambiara, se niega y no toca el fichero."""
+        from scripts import corregir_credito_incoherente as c
+        ruta = os.path.join(self.taller, "CREDITO_una.jsonl")
+        filas = [self._tanda(vuelta=1, tanda="vuelta 1", racha="1 de 3"),
+                 self._tanda(vuelta=1, tanda="ACTA X", cae=True, racha="1 de 3")]
+        comun.escribir_texto(ruta, chr(10).join(json.dumps(f) for f in filas) + chr(10))
+        antes = comun.leer_texto(ruta)
+        self.assertEqual(c.main(["--registro", ruta, "--cita", "paradas/X.md"]), 0)
+        self.assertEqual(comun.leer_texto(ruta), antes, "el ensayo escribio")
+        self.assertEqual(c.main(["--registro", ruta, "--cita", "paradas/X.md",
+                                 "--escribir"]), 0)
+        from src import credito
+        self.assertEqual(
+            credito.incoherentes(sucesos=credito.leer(ruta_registro=ruta)), [])
+
+    def test_la_superada_no_desaparece_de_la_vista(self):
+        """**EL ARREGLO NO PUEDE SER UN ESCONDITE.** Desde que la propuesta superada
+        deja de sumar, una fila incoherente se saldria del replay; por eso
+        `incoherentes()` la nombra igual, y la revision la publica ANTES."""
+        from src import credito
+        sucesos = [self._tanda(vuelta=1, tanda="vuelta 1", racha="1 de 3"),
+                   self._tanda(vuelta=1, tanda="ACTA X", cae=True, racha="1 de 3")]
+        self.assertEqual(credito.revisar(sucesos=sucesos), [])
+        rotas = credito.incoherentes(sucesos=sucesos)
+        self.assertEqual(len(rotas), 1)
+        self.assertEqual(rotas[0]["tanda"], "vuelta 1")
 
 
 class PruebaRegimenLigero(BaseForja):
@@ -4594,8 +4796,10 @@ class PruebaCitaEsReferencia(BaseForja):
     def test_caso_negativo_anotar_escribe_una_referencia(self):
         from src import credito
         destino = os.path.join(self.taller, "c.jsonl")
+        # `cae` va explicito desde el 21 sep 2026: una tanda que no dice si cae ya no
+        # se escribe (`ACTA M5` `M5.11`). Esta prueba mide LA CITA, no la bandera.
         credito.anotar({"tipo": "tanda", "especie": "REPORTE", "racha": "1 de 3",
-                        "cita": "ACTA 32, seccion 9.1"},
+                        "cae": True, "cita": "ACTA 32, seccion 9.1"},
                        linea="x", ruta_registro=destino)
         self.assertEqual(len(credito.leer(ruta_registro=destino)), 1)
 
@@ -5437,7 +5641,8 @@ def main():
              PruebaColaDeDoctrina, PruebaTablaDeCierre,
              PruebaPasoRetiradoDelCampo, PruebaExencionDeMomento,
              PruebaDeudaNoBloquea, PruebaVeredictoYArista,
-             PruebaRegimenLigero, PruebaCifraDerivada, PruebaTresDefectosDelFrente]
+             PruebaRegimenLigero, PruebaCifraDerivada, PruebaTresDefectosDelFrente,
+             PruebaCreditoCoherente]
     conjunto = unittest.TestSuite()
     cargador = unittest.TestLoader()
     for clase in orden:

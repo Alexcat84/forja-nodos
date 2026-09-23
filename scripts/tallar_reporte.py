@@ -86,7 +86,20 @@ MARCADOR = re.compile(r"<!--\s*TALLADO:(.*?)-->", re.S)
 # Y LA PALABRA TIENE QUE IR JUNTO AL NUMERO, no solo en la misma linea: sin eso, un
 # encabezado que dice *UNA FILA POR CAPITULO Y NO UNA MEDIA* caia por la palabra `media`
 # y por el digito de su numero de seccion.
-CABEZA_DE_VUELTA = re.compile(r"^#{1,2}\s+VUELTA\s+\d+", re.M)
+# LA CABECERA DE UN FRENTE TAMBIEN ABRE UNA VUELTA (d134, 21 sep 2026).
+#
+# La serial escribe `# VUELTA 62, ...` y un frente escribe
+# `# FRENTE `gerber_emyth`, VUELTA 9`. El regex solo conocia la primera, asi
+# que en un frente la "vuelta viva" de D.59 **no empezaba en su ultima vuelta**:
+# empezaba en la ultima cabecera de la SERIAL que el arbol heredo, y se tragaba
+# las vueltas del frente enteras. Medido el 21 sep en gerber_emyth: 4783 lineas
+# de ventana en vez de 683, o sea las vueltas 2 a 9 juntas.
+#
+# Y ESO ROMPE LA RAZON DE SER DE LA VENTANA. D.59 mira solo la vuelta viva
+# porque una guarda con quinientos avisos se aprende a no mirar; una ventana de
+# ocho vueltas es el primer paso de vuelta a ese sitio.
+CABEZA_DE_VUELTA = re.compile(
+    r"^#{1,2}[ \t]+(?:FRENTE[ \t]+[^,\r\n]+,[ \t]*)?VUELTA[ \t]+\d+", re.M)
 CIFRA_DERIVADA = re.compile(
     r"(?:(media|promedio|variacion|variaci\u00f3n|tasa)\D{0,40}`?\d"
     r"|\d[^`]{0,40}?(por\s+ciento|porcentaje))", re.I)

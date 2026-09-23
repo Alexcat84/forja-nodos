@@ -1,0 +1,14 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_03.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L233.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **42** | el numero del capitulo, el rotulo `THE ENTREPRENEURIAL MYTH` y el epigrafe de Aldous Huxley | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L59 | **312** | el mito del emprendedor heroico, su rareza medida contra miles de duenios conocidos, y el emprendedor que solo existio un instante | **POSTURA** |
+| `R3` | L60 a L101 | **400** | The Entrepreneurial Seizure: quien monta un negocio, que hacia antes, y el ataque emprendedor que le sella el destino | **POSTURA** |
+| `R4` | L102 a L149 | **387** | The Fatal Assumption: el trabajo tecnico de un negocio y el negocio que hace ese trabajo son dos cosas distintas, y por que saber el oficio se vuelve el mayor pasivo | **POSTURA** |
+| `R5` | L150 a L233 | **1061** | el caso de Sarah y All About Pies: la tienda, la tia que le enseno, la deuda, y el diagnostico de las cuatro fases del ataque emprendedor | **CASO** |
+| **el cuerpo entero** | **L8 a L233** | **2202** | **suma de las piezas: 2202** | **residuo sin asignar: 0** |
+
+piezas: 5   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2202   suma 2202   residuo 0

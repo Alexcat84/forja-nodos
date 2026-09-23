@@ -24,7 +24,10 @@ rojos=0
 
 comprobar() { # descripcion, esperado, salida
   local desc="$1" esperado="$2" salida="$3"
-  if echo "$salida" | grep -qF "$esperado"; then
+  # `--` ANTES DEL PATRON (22 sep 2026): un patron que empieza por guion, como
+  # `--effort high`, grep lo leia como una opcion suya, fallaba con error, y en
+  # comprobar_no ese error contaba como "no encontrado". Pasaba en falso.
+  if echo "$salida" | grep -qF -- "$esperado"; then
     echo "    VERDE  $desc"
     verdes=$((verdes + 1))
   else
@@ -36,7 +39,7 @@ comprobar() { # descripcion, esperado, salida
 
 comprobar_no() { # descripcion, no_esperado, salida
   local desc="$1" no_esperado="$2" salida="$3"
-  if echo "$salida" | grep -qF "$no_esperado"; then
+  if echo "$salida" | grep -qF -- "$no_esperado"; then
     echo "    ROJO   $desc"
     echo "           NO deberia aparecer: $no_esperado"
     rojos=$((rojos + 1))
@@ -167,6 +170,12 @@ fi
 # esto, MODO_INSERCION solo se podria comprobar por sus efectos, y el efecto de
 # "no insertes" es que no pasa nada, que es indistinguible de un turno vago.
 printf '%s' "$prompt" > "prompt_${rol// /_}.txt"
+# Y LOS ARGUMENTOS, uno por linea, para que la prueba del esfuerzo (escenario 19)
+# pueda afirmar sobre lo que el arnes le PASO al binario y no sobre lo que dice.
+# TODOS MENOS EL ULTIMO, que es el prompt. Filtrarlo con grep -F era un error: un
+# prompt de varias lineas trae alguna vacia, el patron vacio casa con todo, y el
+# fichero salia VACIO. Los negativos de 19b pasaban en falso por eso.
+printf '%s\n' "${@:1:$#-1}" > "argumentos_${rol// /_}.txt"
 sleep "${FALSO_SEGUNDOS:-2}"
 if [ "$escribe" = "vacio" ]; then
   # el turno TOCA su testigo pero lo deja en cero bytes: la ruta promete
@@ -718,6 +727,47 @@ comprobar "la fase ciega SI corre"          "APERTURA CIEGA ("             "$sal
 comprobar "y SI sella"                      "apertura ciega sellada"       "$salida"
 comprobar "y SI verifica el sello"          "sello de la apertura ciega verificado" "$salida"
 comprobar_no "y no dice que la apaga"       "SIN FASE CIEGA"               "$salida"
+
+# -------------------------------------------------------------- escenario 19
+echo ""
+echo "ESCENARIO 19: EL ESFUERZO VA ATADO AL REGIMEN (22 sep 2026). En insertar,"
+echo "             los DOS asientos llevan --effort high, sin que nadie lo pida:"
+echo "             es la unica fase que toca el grafo."
+taller="$(montar_banco e19)"
+salida="$(MODO_INSERCION=insertar FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+args_ext="$(cat "$taller/argumentos_extractor.txt" 2>/dev/null | tr '\n' ' ')"
+args_aud="$(cat "$taller/argumentos_auditor.txt" 2>/dev/null | tr '\n' ' ')"
+comprobar "el extractor recibe --effort high"  "--effort high"         "$args_ext"
+comprobar "el auditor recibe --effort high"    "--effort high"         "$args_aud"
+comprobar "y el log lo dice por asiento"       "esfuerzo high"         "$salida"
+
+# -------------------------------------------------------------- escenario 19b
+echo ""
+echo "ESCENARIO 19b: EL CASO NEGATIVO. En cuarentena NINGUN asiento lleva --effort:"
+echo "               el frente corre con el esfuerzo por defecto del modelo."
+taller="$(montar_banco e19b)"
+salida="$(MODO_INSERCION=cuarentena FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+args_ext="$(cat "$taller/argumentos_extractor.txt" 2>/dev/null | tr '\n' ' ')"
+args_aud="$(cat "$taller/argumentos_auditor.txt" 2>/dev/null | tr '\n' ' ')"
+comprobar_no "el extractor NO lleva --effort"  "--effort"              "$args_ext"
+comprobar_no "el auditor NO lleva --effort"    "--effort"              "$args_aud"
+comprobar "y el log dice que es el de defecto" "esfuerzo defecto"      "$salida"
+comprobar "pero el modelo si llega"            "--model"               "$args_aud"
+
+# -------------------------------------------------------------- escenario 19c
+echo ""
+echo "ESCENARIO 19c: LA VARIABLE MANDA SOBRE EL REGIMEN, y VACIA pide el de"
+echo "               defecto aun en insertar. Si no, no habria forma de pedirlo."
+taller="$(montar_banco e19c)"
+salida="$(MODO_INSERCION=insertar ESFUERZO_EXTRACTOR= ESFUERZO_AUDITOR=max \
+          FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+args_ext="$(cat "$taller/argumentos_extractor.txt" 2>/dev/null | tr '\n' ' ')"
+args_aud="$(cat "$taller/argumentos_auditor.txt" 2>/dev/null | tr '\n' ' ')"
+comprobar_no "el extractor, vacio, va sin --effort" "--effort"         "$args_ext"
+comprobar "el auditor lleva el que se le dio"  "--effort max"          "$args_aud"
 
 echo ""
 echo "================================================================"

@@ -1,0 +1,5 @@
+[
+    ("R1", 8, 20, "el numero del capitulo, el rotulo A LETTER TO SARAH y el epigrafe de Rollo May (Man's Search for Himself, sobre la libertad que se logra cada dia)", "RESIDUO: rotulo y epigrafe"),
+    ("R2", 21, 59, "la carta entera del autor a Sarah: reflexion personal sobre el sentido, el cuidado, el espiritu, el miedo, la Comfort Zone como mascara de seguridad, y el cierre pidiendole que la guarde con su vida y no ceda a la comodidad; cero pasos, cero medio nombrado, cero inventario de etapas u objetos", "POSTURA: carta personal, sin inventario propio"),
+    ("R3", 60, 79, "ACKNOWLEDGMENTS: los agradecimientos del autor a su esposa, sus hijos, sus asociados de E-Myth Worldwide, sus clientes, su cunada y cunado, su editora en HarperBusiness y sus lectores; gratitud personal, no doctrina ni procedimiento", "RESIDUO: agradecimientos del autor"),
+]

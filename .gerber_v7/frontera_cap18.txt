@@ -1,0 +1,20 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_18.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L413.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L20 | **18** | el numero del capitulo, el rotulo YOUR PEOPLE STRATEGY y el epigrafe de Robert S. DeRopp (Life games reflect life aims) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L21 a L102 | **1432** | la escena del hotel Venetia continuada literalmente desde donde cap_17 se corto en L221: la pregunta general del autor, y el dialogo del Manager sobre el respeto del Boss, la seriedad de la operacion y la filosofia de que el trabajo es reflejo de quien uno es, hasta el punto en que el Manager deja de hablar entre comillas | **CASO: continuacion de la escena de cap_17** |
+| `R3` | L103 a L116 | **187** | la reflexion del autor que generaliza lo que el Manager conto: la gente no quiere trabajar para gente interesante sino para gente que crea una estructura clara para actuar, un juego, y que comprarlo depende de como se comunique | **POSTURA** |
+| `C1` | L117 a L120 | **51** | Your People Strategy es la forma de comunicar esa idea, y arranca con tu Primary Aim y tu Strategic Objective, sigue con tu Organizational Strategy (tu Organization Chart y los Position Contracts de todas las posiciones) y tus Operations Manuals que definen el trabajo de tu gente | **CANDIDATO: construir_estrategia_gente_cuatro_componentes** |
+| `R4` | L121 a L136 | **189** | el juego no se puede capturar solo en la pagina escrita, tiene que verse y vivirse, tiene que ser real, y como actuas en el juego establece como te van a ver los demas jugadores | **POSTURA** |
+| `C2` | L137 a L166 | **787** | The Rules of the Game: ocho reglas numeradas para el juego de la gente, desde no disenar el juego a partir de lo que quieres que la gente haga hasta robar un juego ajeno si no se te ocurre uno bueno | **CANDIDATO: aplicar_ocho_reglas_juego_personas** |
+| `R5` | L167 a L228 | **477** | The Logic of the Game: la mayoria de la gente no consigue lo que quiere porque falta proposito y comunidad, y un negocio puede convertirse en un lugar de comunidad con proposito, orden y significado | **POSTURA** |
+| `R6` | L229 a L246 | **188** | Playing the Game: el mapa mental del juego del dueno del hotel, la dedicacion que no descansa solo en lo comercial sino en una filosofia moral, y el proceso de contratacion como el medio mas esencial para comunicar la idea del Boss | **POSTURA: bridge** |
+| `C3` | L247 a L272 | **266** | el proceso de contratacion del hotel en cinco componentes distintos: presentacion guionizada en grupo, reunion individual, notificacion telefonica al elegido, carta al no elegido, y el primer dia de entrenamiento con sus siete actividades incluida la revision del Operations Manual | **CANDIDATO: aplicar_cinco_pasos_proceso_contratacion** |
+| `R7` | L273 a L288 | **123** | las preguntas retoricas de cierre sobre si sistematizar deshumaniza o lo contrario, y el regreso a Sarah viendo tomar forma la vision integrada de gestion, gente y sistemas | **POSTURA** |
+| `R8` | L289 a L413 | **1678** | el dialogo entre el autor y Sarah sobre delegacion contra abdicacion, los estandares del Management System, y la Hierarchy of Systems de cuatro componentes (How We Do It Here, How We Recruit Hire and Train, How We Manage It Here, How We Change It Here) nombrada en una linea cada uno y sin desarrollo propio en este capitulo, hasta el cliffhanger final hacia el Marketing System | **CASO: dialogo con Sarah, y discutible sobre la Hierarchy de sistemas** |
+| **el cuerpo entero** | **L8 a L413** | **5396** | **suma de las piezas: 5396** | **residuo sin asignar: 0** |
+
+piezas: 11   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 5396   suma 5396   residuo 0

@@ -21,3 +21,4 @@
 {"cae": false, "cita": "ACTA M5, seccion M5.13", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M5", "tipo": "tanda", "vuelta": 4}
 {"cae": false, "cita": "ACTA M5, seccion M5.13", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M5", "tipo": "tanda", "vuelta": 4}
 {"cae": false, "cita": "ACTA M5, seccion M5.14", "especie": "AUDITOR", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M5", "tipo": "tanda", "vuelta": 4}
+{"cita": "docs/loop/paradas/2026-09-22-dos-semanas-DECISION.md, punto 2", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tipo": "reinicio"}

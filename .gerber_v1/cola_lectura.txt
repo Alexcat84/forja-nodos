@@ -1,0 +1,52 @@
+$ grep -hB1 "similitud_texto 0" .gerber_v1/aduana_candidato_1.txt .gerber_v1/aduana_tanda_[abc].txt
+
+[BLOQUEARIA] hacer_trabajo_futuro_imaginar_negocio   (hacer_trabajo_futuro_imaginar_negocio.json)
+    vecino ceder_control_reforzar_competencia_claridad  [levantada por: similitud_texto]
+      similitud_texto 0.373 | familia_id 0.000 | paso_contra_nodo 0.491
+[exited with code 0]
+[BLOQUEARIA] dictar_ritmo_crecimiento_preguntas_escritas   (dictar_ritmo_crecimiento_preguntas_escritas.json)
+    vecino descubrir_motivacion_sentido_persona  [levantada por: paso_contra_nodo]
+      similitud_texto 0.207 | familia_id 0.000 | paso_contra_nodo 0.603
+    vecino trazar_modelo_negocio_cliente_primero  [levantada por: similitud_texto]
+      similitud_texto 0.372 | familia_id 0.000 | paso_contra_nodo 0.479
+    vecino dar_valor_constante_cuatro_publicos  [levantada por: similitud_texto]
+      similitud_texto 0.373 | familia_id 0.000 | paso_contra_nodo 0.450
+    vecino ceder_control_reforzar_competencia_claridad  [levantada por: similitud_texto]
+      similitud_texto 0.388 | familia_id 0.000 | paso_contra_nodo 0.444
+    vecino hacer_trabajo_futuro_imaginar_negocio  [levantada por: similitud_texto]
+      similitud_texto 0.400 | familia_id 0.000 | paso_contra_nodo 0.442
+[BLOQUEARIA] trazar_modelo_negocio_cliente_primero   (trazar_modelo_negocio_cliente_primero.json)
+    vecino dar_valor_constante_cuatro_publicos  [levantada por: similitud_texto]
+      similitud_texto 0.390 | familia_id 0.000 | paso_contra_nodo 0.556
+    vecino dictar_ritmo_crecimiento_preguntas_escritas  [levantada por: similitud_texto]
+      similitud_texto 0.365 | familia_id 0.000 | paso_contra_nodo 0.479
+    vecino ceder_control_reforzar_competencia_claridad  [levantada por: similitud_texto]
+      similitud_texto 0.372 | familia_id 0.000 | paso_contra_nodo 0.473
+[BLOQUEARIA] dar_valor_constante_cuatro_publicos   (dar_valor_constante_cuatro_publicos.json)
+    vecino trazar_modelo_negocio_cliente_primero  [levantada por: similitud_texto]
+      similitud_texto 0.395 | familia_id 0.000 | paso_contra_nodo 0.564
+    vecino documentar_trabajo_manual_operaciones  [levantada por: similitud_texto]
+      similitud_texto 0.406 | familia_id 0.000 | paso_contra_nodo 0.466
+    vecino encargar_meta_especifica_dejar_libre_metodo  [levantada por: similitud_texto]
+      similitud_texto 0.364 | familia_id 0.000 | paso_contra_nodo 0.456
+    vecino dictar_ritmo_crecimiento_preguntas_escritas  [levantada por: similitud_texto]
+      similitud_texto 0.373 | familia_id 0.000 | paso_contra_nodo 0.450
+    vecino unificar_color_forma_vestuario_modelo  [levantada por: similitud_texto]
+      similitud_texto 0.419 | familia_id 0.000 | paso_contra_nodo 0.423
+[BLOQUEARIA] unificar_color_forma_vestuario_modelo   (unificar_color_forma_vestuario_modelo.json)
+    vecino dar_valor_constante_cuatro_publicos  [levantada por: similitud_texto]
+      similitud_texto 0.425 | familia_id 0.000 | paso_contra_nodo 0.421
+    vecino documentar_trabajo_manual_operaciones  [levantada por: similitud_texto]
+      similitud_texto 0.358 | familia_id 0.000 | paso_contra_nodo 0.425
+[BLOQUEARIA] construir_empresa_plantilla_vision_diaria   (construir_empresa_plantilla_vision_diaria.json)
+    vecino dictar_ritmo_crecimiento_preguntas_escritas  [levantada por: similitud_texto]
+      similitud_texto 0.351 | familia_id 0.000 | paso_contra_nodo 0.420
+    vecino recorrer_trece_elementos_proceso_evaluacion_formal  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.397
+[BLOQUEARIA] documentar_trabajo_manual_operaciones   (documentar_trabajo_manual_operaciones.json)
+    vecino dictar_ritmo_crecimiento_preguntas_escritas  [levantada por: similitud_texto]
+      similitud_texto 0.377 | familia_id 0.000 | paso_contra_nodo 0.580
+    vecino dar_valor_constante_cuatro_publicos  [levantada por: similitud_texto]
+      similitud_texto 0.430 | familia_id 0.000 | paso_contra_nodo 0.430
+    vecino unificar_color_forma_vestuario_modelo  [levantada por: similitud_texto]
+      similitud_texto 0.366 | familia_id 0.000 | paso_contra_nodo 0.425

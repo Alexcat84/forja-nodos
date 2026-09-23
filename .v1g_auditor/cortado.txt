@@ -1,0 +1,5 @@
+unidades con fichero de piezas : 11   cap_01 cap_02 cap_03 cap_04 cap_05 cap_06 cap_07 cap_08 cap_09 cap_10 cap_11
+suma de su cuerpo              : 27992
+cuerpo del libro entero        : 62648
+por ciento cortado             : 44.7
+la tabla canonica dice         : {}

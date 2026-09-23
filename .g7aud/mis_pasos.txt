@@ -1,0 +1,9 @@
+cap_18   construir_estrategia_gente_cuatro_componentes      pasos_accionables= 5  fuentes=[{"clave": "gerber_emyth", "fecha": "2026-09-21"}]
+cap_18   aplicar_ocho_reglas_juego_personas                 pasos_accionables= 9  fuentes=[{"clave": "gerber_emyth", "fecha": "2026-09-21"}]
+cap_18   aplicar_cinco_pasos_proceso_contratacion           pasos_accionables=12  fuentes=[{"clave": "gerber_emyth", "fecha": "2026-09-21"}]
+   cap_18: 26 pasos
+cap_19   distinguir_tres_tipos_sistemas_negocio             pasos_accionables= 5  fuentes=[{"clave": "gerber_emyth", "fecha": "2026-09-21"}]
+cap_19   aplicar_seis_pasos_sistema_venta                   pasos_accionables= 6  fuentes=[{"clave": "gerber_emyth", "fecha": "2026-09-21"}]
+cap_19   medir_sistema_venta_trece_indicadores_benchmark    pasos_accionables=14  fuentes=[{"clave": "gerber_emyth", "fecha": "2026-09-21"}]
+   cap_19: 25 pasos
+TOTAL pasos del lote de esta vuelta: 51

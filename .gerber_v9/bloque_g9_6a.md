@@ -1,0 +1,14 @@
+## G9.6. EL CIERRE
+
+### G9.6.a. La tabla de cierre de la vuelta `9`, pegada PRIMERO
+
+*Remedio de `d030`/`d112`: mi tabla se pega ANTES de correr `--escribir`, para que
+`docs/loop/TABLA_DE_CIERRE.txt` traiga MIS filas y no las de la vuelta anterior.*
+
+| # | tarea | como cerro |
+|---:|---|---|
+| `1` | `TAREA 1`: registros de apertura | **CERRADA en `G9.1`**: credito en `0` de `3`/`2`/`2`/`2`/`3` las cinco especies (identico a `G8`), deuda en `49`/`39` de apertura (`5` deudas nuevas ajenas a mi desde `G8`) |
+| `2` | `cap_01`, `Foreword`: frontera y veredicto | **CERRADA en `G9.2`**: frontera `3` piezas, `1402` palabras de cuerpo (`1434` al digito con `wc -w` del fichero), residuo `0`; cero candidatos, prefacio personal sin inventario propio; cero discutibles |
+| `3` | `cap_02`, `Introduction`: frontera y veredicto | **CERRADA en `G9.3`**: frontera `4` piezas, `1212` palabras de cuerpo (`1244` al digito), residuo `0`; cero candidatos, las cuatro ideas del libro son metas sin inventario de medios; cero discutibles |
+| `4` | `cap_03`, `Cap. 1`: frontera, veredicto, `PASOS INVENTADOS` y muestra de fidelidad | **CERRADA en `G9.4`**: frontera `5` piezas, `2202` palabras de cuerpo (`2237` al digito), residuo `0`; cero candidatos, diagnostico narrativo sin inventario propio; cero discutibles; muestra semilla `g9` sin poblacion que medir |
+| `5` | `TAREA 2`: `d094` pagada y la frontera del libro completa | **CERRADA en `G9.5`**: `d094` pagada; tabla del libro entero `cap_01` a `cap_22` publicada, `22` de `22` minadas, `22` candidatos en bandeja; los cuatro punteros heredados comprobados, ninguno tocado |

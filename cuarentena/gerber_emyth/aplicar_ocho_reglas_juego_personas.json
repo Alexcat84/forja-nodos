@@ -1,0 +1,35 @@
+{
+  "id": "aplicar_ocho_reglas_juego_personas",
+  "titulo": "Aplicar las ocho reglas que el libro enumera para el juego de tu gente",
+  "denominaciones": {
+    "nombre_largo": "The Rules of the Game: las ocho reglas del juego de personas de Your People Strategy",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "The Rules of the Game"},
+      {"idioma": "ingles", "termino": "the people game"}
+    ]
+  },
+  "condiciones_activacion": "Cuando ya decidiste comunicarle a tu gente la idea de tu negocio como un juego (Your People Strategy) y necesitas las reglas que hacen que ese juego funcione y no se apague.",
+  "entregable_esperado": "Las ocho reglas de tu juego de personas honradas, desde que el juego va primero y lo que tu gente hace despues, hasta que robas un juego ajeno si no se te ocurre uno bueno.",
+  "pasos_accionables": [
+    "Reconoce que el juego de tu gente tiene reglas que hay que honrar si quieres llegar a ser bueno en el.",
+    "Regla 1: nunca decidas primero que quieres que haga tu gente y despues trates de construir un juego a partir de eso; el juego tiene que ir primero y lo que tu gente hace, segundo.",
+    "Regla 2: nunca crees para tu gente un juego que tu mismo no estes dispuesto a jugar, porque te van a descubrir y no te lo van a dejar olvidar.",
+    "Regla 3: asegurate de que haya formas especificas de ganar el juego sin terminarlo; dale a tu gente victorias de vez en cuando para que no se canse, porque el juego nunca puede acabar.",
+    "Regla 4: cambia el juego de vez en cuando, las tacticas y no la estrategia; para saber cuando toca el cambio observa los resultados de tu gente, anticipa el final del juego y cambialo por accion ejecutiva antes que nadie mas lo note.",
+    "Regla 5: nunca esperes que el juego se sostenga solo; recuerdaselo a tu gente constantemente, con una reunion especial sobre el juego al menos una vez por semana y sacando a relucir alguna excepcion a como se ha jugado al menos una vez al dia.",
+    "Regla 6: haz que el juego tenga sentido, construido sobre verdades verificables universalmente, y saca a relucir la logica seguido para sostener el compromiso emocional de tu gente cuando decaiga.",
+    "Regla 7: haz que el juego sea divertido de vez en cuando, no todo el tiempo; planea la diversion dejando que tu gente la defina, y no la repitas mas de una vez cada seis meses para que siga siendo algo que esperar.",
+    "Regla 8: si no se te ocurre un buen juego, robalo, pero aprendetelo de memoria antes de jugarlo con tu gente."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_18.md, unidad Cap. 16, titulo textual Your People Strategy. Sale de la PIEZA C2 de la frontera publicada en esta misma vuelta (.gerber_v7/frontera_cap18.txt), L137 a L166, 787 palabras, bajo el subtitulo del propio libro The Rules of the Game. POR QUE ES PROCEDIMIENTO: el libro numera 1 a 8 en el propio texto (L143 a L165), cada regla con su propio verbo en imperativo (never figure out, never create, make sure, change, never expect, [the game has to] make sense, [the game needs to be] fun, if you cant think of a good game, steal one), que es la prueba que el manual seccion 4 pide: una linea que al desplegarse trae procedimiento propio. SIGO EL PATRON YA ESTABLECIDO EN ESTE MISMO FRENTE de responder_8_preguntas_construir_primary_aim (cap_14) y responder_4_preguntas_estandares_objetivo_estrategico (cap_15): UN SOLO NODO con la lista numerada entera transcrita paso a paso, no ocho nodos mas una cabeza, porque cada regla es una linea de consejo autonoma y no un procedimiento de varios pasos que el libro desarrolle en otro capitulo (a diferencia de los siete pasos del Business Development Program, donde cada paso ES un capitulo entero). DISCUTIBLE MARCADO Y CERRADO EN EL ACTO (ver REPORTE.md G7.4, discutible 1): L141 dice I have included a few here to give you a taste for them. As for the rest of them, youll have to discover them for yourself, una frase que podria leerse como el adjetivo de adecuacion de la restriccion 2 de 9.1 si se lee como que las ocho reglas son solo ejemplos opcionales. LEO que esa frase es sobre si HAY MAS reglas posibles por descubrir, no sobre si estas ocho son opcionales: las ocho vienen con verbo en imperativo cada una (never, make sure, change, steal) y con medida concreta en la regla 5 (at least once a week, at least once a day) y en la 7 (maybe once every six months), que no es lenguaje de ejemplo suelto sino de instruccion. Seguido, tambien, del mismo criterio que la vuelta 4 ya adjudico SANO sobre esta misma frase-tipo (these are just a few of the questions you might ask yourself, G4.3.c discutible 3, cerrado sin caida por el auditor en ACTA G4). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE, cita pegada en .gerber_v7/cita_cap18_L137_L166.txt (D.35). No invento destinatario ni responsable: las reglas se dirigen todas a ti, el dueno, tal como el libro las escribe en segunda persona, y el periodo de la regla 5 y de la 7 es el que el propio libro fija, no uno que yo complete.",
+  "atribuciones": [],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-21"}
+  ]
+}

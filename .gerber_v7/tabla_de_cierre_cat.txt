@@ -1,0 +1,11 @@
+$ python scripts/tabla_de_cierre.py --escribir
+poblacion: dataset/nodos.jsonl entero, libro gerber_emyth
+criterio : un nodo sale de un capitulo si cita gerber_emyth/<cap>.md
+
+| # | tarea | como cerro |
+|---:|---|---|
+| `1` | `TAREA 1`: registros de apertura y correccion declarada de `d117` | **CERRADA en `G7.1`**: credito y deuda medidos (`42`/`36` de apertura, discrepancia contra la cabecera del encargo declarada), correccion tachada sin borrar en el bloque de la vuelta `6`, `d117` pagada |
+| `2` | `TAREA 2`: `cap_18`, frontera y tres candidatos con su aduana en el acto | **CERRADA en `G7.3`**: frontera `11` piezas, `5396` palabras al digito, `3` candidatos, `0 CAERIA` en las tres aduanas, `2` discutibles marcados y cerrados |
+| `3` | `TAREA 3`: pagar `d110` leyendo `cap_17` `L189` a `L221` junto a la apertura de `cap_18` | **CERRADA en `G7.2`**: el autor SI saca el Operations Manual del caso, el discutible `5` de la vuelta `5` reabierto y resuelto, `d110` pagada |
+| `4` | `TAREA 4`: `cap_19` si el techo lo permite, y cuanto queda de `d111` | **CERRADA en `G7.4`**: techo en `3` de `30`, `cap_19` minado (frontera `10` piezas, `4431` palabras al digito, `3` candidatos, `0 CAERIA`), `d111` medida en `0` de `7` sin decidir |
+| `5` | `TAREA 5`: el cierre, `PASOS INVENTADOS POR CAPITULO` con poblacion de verdad | **CERRADA en `G7.5` y aqui mismo (`G7.6`)**: `0,00` por ciento en las dos filas y en el lote, muestra de fidelidad con semilla `gerber_v7` sin disparador |

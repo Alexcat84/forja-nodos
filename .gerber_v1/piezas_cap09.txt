@@ -1,0 +1,8 @@
+[
+ ('R1',   8,  19, 'el numero del capitulo, el rotulo `THE TURN-KEY REVOLUTION` y el epigrafe de Fritjof Capra', 'RESIDUO: rotulo y epigrafe'),
+ ('R2',  20,  27, 'la Revolucion Llave en Mano nombrada y su poder para transformar cualquier negocio', 'POSTURA'),
+ ('R3',  28,  77, 'el fenomeno de la franquicia: Ray Kroc en 1952, el milagro del puesto de los MacDonald, y las cifras de franquicias contra el fracaso de los negocios independientes', 'CASO con cifra'),
+ ('R4',  78, 109, 'la franquicia de nombre comercial contra la de formato de negocio, y la creencia que las separa: el producto verdadero de un negocio es el negocio mismo', 'POSTURA'),
+ ('R5', 110, 171, 'vender el negocio en vez del producto: el franquiciado como cliente, el negocio a prueba de fallos, trabajar sobre el negocio y no en el, y el Prototipo de Franquicia nombrado', 'POSTURA y CASO'),
+ ('R6', 172, 233, 'el dialogo con Sarah y su tia sobre McDonalds: la integridad como hacer lo que dices que haras, y los dos artesanos separados por un orden de magnitud', 'CASO'),
+]

@@ -1,0 +1,13 @@
+AVISO: cero celdas tecleadas. Cada linea es la que sed -n imprime de fuentes/gerber_emyth/cap_08.md.
+UNICA TRANSFORMACION DECLARADA: 2 guion(es) largo(s) U+2014 sustituido(s) por coma mas
+espacio y 0 guion(es) medio(s) U+2013 por guion corto, porque el barrido de estilo de
+esta casa tumba los dos. El resto es byte a byte el del libro.
+
+37: I once heard a story about Tom Watson, the founder of IBM. Asked to what he attributed the phenomenal success of IBM, he is said to have answered:
+39: IBM is what it is today for three special reasons. The first reason is that, at the very beginning, I had a very clear picture of what the company would look like when it was finally done. You might say I had a model in my mind of what it would look like when the dream, my vision, was in place .
+41: The second reason was that once I had that picture, I then asked myself how a company which looked like that would have to act. I then created a picture of how IBM would act when it was finally done .
+43: The third reason IBM has been so successful was that once I had a picture of how IBM would look when the dream was in place and how such a company would have to act, I then realized that, unless we began to act that way from the very beginning, we would never get there .
+45: In other words, I realized that for IBM to become a great company it would have to act like a great company long before it ever became one .
+47: From the very outset, IBM was fashioned after the template of my vision. And each and every day we attempted to model the company after that template. At the end of each day, we asked ourselves how well we did, discovered the disparity between where we were and where we had committed ourselves to be, and, at the start of the following day, set out to make up for the difference .
+49: Every day at IBM was a day devoted to business development, not doing business .
+51: We didn’t do business at IBM, we built one

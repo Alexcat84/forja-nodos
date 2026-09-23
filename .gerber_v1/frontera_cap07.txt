@@ -1,0 +1,18 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_07.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L329.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **60** | el numero del capitulo, el rotulo `BEYOND THE COMFORT ZONE` y el epigrafe de Eric Hoffer | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L41 | **333** | la zona de confort de cada una de las tres personalidades y los tres unicos caminos que le quedan al negocio adolescente | **POSTURA** |
+| `R3` | L42 a L113 | **545** | Getting Small Again: volver a hacerlo todo solo, el dia en que descubres que no tienes un negocio sino un empleo, y los 400.000 cierres anuales | **POSTURA y CASO** |
+| `R4` | L114 a L139 | **369** | Going for Broke: crecer sin control, la lista de companias reventadas, y la ruleta rusa de alta tecnologia | **POSTURA y CASO** |
+| `R5` | L140 a L183 | **335** | Adolescent Survival: la posibilidad mas tragica, sobrevivir peleando cada dia igual hasta que el que revienta eres tu | **POSTURA** |
+| `R6` | L184 a L233 | **1065** | el caso de Elizabeth: la confianza ciega de Sarah, por que la confianza sola no basta, y el getting small de ella misma | **CASO** |
+| `R7` | L234 a L277 | **787** | el tamanio natural de un negocio, la pregunta de cuan grande y no cuan pequenio, y el trabajo del duenio nombrado: prepararse y preparar el negocio para crecer | **POSTURA** |
+| `P1` | L278 a L287 | **266** | DICTAR EL RITMO DE CRECIMIENTO: los tres conocimientos que el libro nombra uno a uno, las preguntas correctas transcritas, los planes de contingencia de mejor y peor caso, y el plan escrito con claridad para que otros lo entiendan | **CANDIDATO A NODO** |
+| `R8` | L288 a L329 | **524** | el plan que se amolda a la realidad, la empresa madura que nace con otra perspectiva, y el cierre con la pregunta de Sarah sobre Elizabeth | **POSTURA y CASO** |
+| **el cuerpo entero** | **L8 a L329** | **4284** | **suma de las piezas: 4284** | **residuo sin asignar: 0** |
+
+piezas: 9   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4284   suma 4284   residuo 0

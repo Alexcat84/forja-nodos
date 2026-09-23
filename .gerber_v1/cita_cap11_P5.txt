@@ -1,0 +1,14 @@
+AVISO: cero celdas tecleadas. Cada linea es la que sed -n imprime de fuentes/gerber_emyth/cap_11.md.
+UNICA TRANSFORMACION DECLARADA: 2 guion(es) largo(s) U+2014 sustituido(s) por coma mas
+espacio y 0 guion(es) medio(s) U+2013 por guion corto, porque el barrido de estilo de
+esta casa tumba los dos. El resto es byte a byte el del libro.
+
+215: Marketing studies tell us that all consumers are moved to act by the colors and shapes they find in the marketplace.
+217: Different consumer groups simply respond differently to specific colors and shapes.
+221: Louis Cheskin, founder of the Color Research Institute, wrote about the power of colors and shapes in his book, Why People Buy .
+229: Your business is the same as the blouse in Cheskin’s story. There are colors that work and colors that don’t. The colors you show your customer must be scientifically determined and then used throughout your model, on the walls, the floors, the ceiling, the vehicles, the invoices, your people’s clothes, the displays, the signs.
+231: The model must be thought of as a package for your one and only product, your business .
+233: Just as with colors, there are shapes that work and shapes that don’t, on your business card, your signs, your logo, your merchandise displays.
+235: In one test, Cheskin showed that a triangle produced far fewer sales than a circle, and a crest outproduced both by a significant margin!
+239: The shape of your sign, your logo, the type style used on your business cards will have a significant impact on sales whether you care to think about it or not!
+241: Your Prototype must be packaged as carefully as any box of cereal.

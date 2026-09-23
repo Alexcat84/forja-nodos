@@ -17,16 +17,15 @@
   ],
   "alcance": {
     "lineas_a_la_vez": 2,
-    "cita": "decision del fundador del 22 sep 2026, GERBER ENTRA MARQUET SIGUE, punto 3",
-    "que_dice": "DOS LINEAS: los frentes de extraccion gerber_emyth y marquet_turn_the_ship. La serial sigue PARADA hasta la insercion de la semana que viene, asi que las dos que corren son frentes y ninguno inserta."
+    "cita": "decision del fundador del 22 sep 2026, DOS SEMANAS, punto 4",
+    "que_dice": "DOS LINEAS VIVAS: la SERIAL en regimen completo, insertando grove_high_output y despues gerber_emyth en tandas de hasta 20 por vuelta; y el FRENTE marquet_turn_the_ship extrayendo. No se abre ningun libro nuevo."
   },
   "frente_activo": {
     "clave": [
-      "gerber_emyth",
       "marquet_turn_the_ship"
     ],
-    "cita": "decision del fundador del 22 sep 2026, GERBER ENTRA MARQUET SIGUE, punto 3",
-    "que_dice": "gerber_emyth corre su ULTIMA vuelta (cap_01 a cap_03) y despues se cosecha como sexto libro del mundo 11. marquet_turn_the_ship abre desde cap_04 con su frontera heredada, y entra como septimo SOLO si la cuota de la semana lo cierra (D.60). Los dos en cuarentena, Sonnet extractor y Opus auditor."
+    "cita": "decision del fundador del 22 sep 2026, DOS SEMANAS, punto 4",
+    "que_dice": "UN SOLO FRENTE: marquet_turn_the_ship, desde su cap_12, cuatro capitulos por vuelta, cuarentena y regimen ligero. gerber_emyth esta COSECHADO. Al cerrar marquet se cosecha (la sesion, por el mandato del 22 sep, punto 2.d) y la serial lo inserta como septimo."
   },
   "liberados": {},
   "cerrados_en_extraccion": {
@@ -38,6 +37,9 @@
     },
     "scott_radical_candor": {
       "cita": "ACTA 24"
+    },
+    "gerber_emyth": {
+      "cita": "ACTA G9 del frente gerber_emyth"
     }
   },
   "orden_de_prioridad": {
@@ -168,18 +170,24 @@
     "grove_high_output": {
       "cita": "decision del fundador del 17 sep 2026, aplicada el 18",
       "que_dice": "PAUSADO COSECHADO con dueño NINGUNO. Sus 23 candidatos estan en la bandeja de esta rama y su racha murio con el frente (D.48). La serial lo toma al cerrar scott_radical_candor, desde el capitulo siguiente al ultimo minado y citando su frontera heredada."
+    },
+    "gerber_emyth": {
+      "cita": "decision del fundador del 22 sep 2026, DOS SEMANAS, punto 1; fusion 95f6929",
+      "que_dice": "COSECHADO con dueno NINGUNO: sus 22 candidatos (176 pasos) estan en la bandeja de esta rama esperando la insercion, y su racha murio con el frente (D.48). El libro esta minado 22 de 22 unidades, 12 en cero y firmadas. Es el SEXTO libro del mundo 11: D.60 cumplida."
     }
   },
   "corte_definitivo": {
-    "cita": "decision del fundador del 21 sep 2026, punto 4 (D.60)",
-    "que_dice": "EL MUNDO 11 SE DECLARA COMPLETO CUANDO LOS CINCO LIBROS DE 'libros_del_mundo_11' ESTAN INSERTADOS: los cuatro ya dentro mas grove_high_output entero. Una bandeja a medias no retrasa un cierre (D.60).",
-    "por_que_no_entran": "D.39: un libro entra cuando su extraccion cierra. gerber_emyth y marquet_turn_the_ship estan abiertos, asi que sus candidatos no pueden insertarse sin minar los libros enteros. Entran SOLO por la condicion de abajo.",
+    "cita": "decision del fundador del 22 sep 2026, DOS SEMANAS, punto 4 (D.60)",
+    "que_dice": "EL MUNDO 11 CIERRA CON SIETE LIBROS, y se declara COMPLETO cuando los siete esten INSERTADOS (D.60): los cuatro ya dentro, grove_high_output, gerber_emyth y marquet_turn_the_ship. No se abre ningun libro nuevo.",
+    "por_que_no_entran": "Ya no aplica: el fundador cerro el corte en siete el 22 sep. Los tres libros fuera de campania siguen fuera, y no se abre ninguno nuevo.",
     "libros_del_mundo_11": [
       "onu_consumidor",
       "smart_who",
       "zhuo_manager",
       "scott_radical_candor",
-      "grove_high_output"
+      "grove_high_output",
+      "gerber_emyth",
+      "marquet_turn_the_ship"
     ],
     "en_bandeja_sin_insertar": {
       "gerber_emyth": 10,
@@ -188,12 +196,14 @@
     "sexto_condicional": {
       "clave": "gerber_emyth",
       "cita": "decision del fundador del 21 sep 2026, punto 4 (D.60)",
-      "condicion": "Entra como sexto SOLO si cierra su extraccion antes de que la cuota de la semana se agote, y entonces se cosecha e inserta por el relevo D.50. Si no la cierra, queda en bandeja entero y NO bloquea el cierre del mundo."
+      "condicion": "Entra como sexto SOLO si cierra su extraccion antes de que la cuota de la semana se agote, y entonces se cosecha e inserta por el relevo D.50. Si no la cierra, queda en bandeja entero y NO bloquea el cierre del mundo.",
+      "ejercido": "decision del fundador del 22 sep 2026, DOS SEMANAS: gerber_emyth cerro su extraccion y se cosecho"
     },
     "septimo_condicional": {
       "clave": "marquet_turn_the_ship",
       "cita": "decision del fundador del 21 sep 2026, punto 4 (D.60)",
-      "condicion": "Solo si sobra semana despues de gerber_emyth."
+      "condicion": "Solo si sobra semana despues de gerber_emyth.",
+      "ejercido": "decision del fundador del 22 sep 2026, DOS SEMANAS, punto 4: entra al cerrar su extraccion"
     }
   },
   "minados_en_cero": {
@@ -214,6 +224,9 @@
     },
     "gerber_emyth": {
       "capitulos": [
+        "cap_01",
+        "cap_02",
+        "cap_03",
         "cap_05",
         "cap_06",
         "cap_09",
@@ -224,7 +237,7 @@
         "cap_21",
         "cap_22"
       ],
-      "cita": "ACTA G2 (cap_05 y cap_06), ACTA G3 3.5 (cap_09 y cap_10), ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida) y ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth"
+      "cita": "ACTA G9 3.1 (cap_01 el Foreword, cap_02 la Introduction y cap_03 Cap. 1, los tres leidos ENTEROS: prefacio personal, las cuatro IDEA # como metas sin inventario de medios, y el diagnostico del mito con el caso de Sarah). ACTA G2 (cap_05 y cap_06). ACTA G3 3.5 (cap_09 y cap_10). ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida). ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth"
     }
   },
   "coste_por_turno": {
@@ -261,6 +274,25 @@
       "extractor_usd": 57.6979,
       "auditor_usd": 69.3553,
       "nota": "LA CIFRA DE 9,4648 QUE LA DECISION DEL 22 SEP MANDO PUBLICAR SALIA DE 4 TURNOS, y estas 10 la corrigen hacia arriba sin desmentirla: las dos primeras vueltas fueron de DOS capitulos y estas de TRES. Se publican las dos, porque una media de cuatro turnos no es la del regimen y taparla seria peor que haberla escrito"
+    }
+  },
+  "modelos_por_linea": {
+    "_lea_esto": "MODELO Y ESFUERZO POR LINEA Y ASIENTO (decision del 22 sep 2026, DOS SEMANAS, punto 3). El esfuerzo va atado al regimen en el arnes, como la fase ciega de D.58: ALTO en insertar, el de defecto en cuarentena, y ESFUERZO_EXTRACTOR o ESFUERZO_AUDITOR mandan si se dan. claude-opus-5-5 exige Claude Code 2.1.280 o posterior: el 22 sep el del PATH era el 2.1.231 y se actualizo.",
+    "serial": {
+      "cita": "decision del fundador del 22 sep 2026, DOS SEMANAS, punto 3; y su nota del 21 sep: la insercion va con Opus en las dos sillas a proposito",
+      "regimen": "insertar, completo",
+      "extractor": "claude-opus-5-5",
+      "extractor_esfuerzo": "high",
+      "auditor": "claude-opus-5-5",
+      "auditor_esfuerzo": "high"
+    },
+    "marquet_turn_the_ship": {
+      "cita": "decision del fundador del 22 sep 2026, DOS SEMANAS, punto 3",
+      "regimen": "cuarentena, ligero",
+      "extractor": "claude-sonnet-5",
+      "extractor_esfuerzo": "defecto",
+      "auditor": "claude-opus-5-5",
+      "auditor_esfuerzo": "defecto"
     }
   }
 }

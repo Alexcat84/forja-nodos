@@ -1,0 +1,16 @@
+AVISO: cero celdas tecleadas. Cada fila cuenta su propio fichero, y el
+cuerpo de cada unidad arranca en la linea siguiente al segundo --- de su
+cabecera yaml, derivado del fichero y no puesto por mi.
+
+| pieza | al abrir | de donde sale |
+|---|---:|---|
+| nodos en el grafo | **346** | `dataset/nodos.jsonl` |
+| veredictos escritos | **740** | `bitacora/VEREDICTOS.jsonl` |
+| unidades de `gerber_emyth` | **22** | `PATRON: fuentes/gerber_emyth/cap_*.md` |
+| palabras de cuerpo del libro | **62648** | `PATRON: fuentes/gerber_emyth/cap_*.md` |
+| unidades apartadas del `cap. 17` | **1** | `PATRON: fuentes/gerber_emyth_cap17_reservado/*.md` |
+| candidatos en bandeja de `gerber_emyth` | **16** | `PATRON: cuarentena/gerber_emyth/*.json` |
+| clave `gerber_emyth` en la tabla canonica | **SI** | `fuentes/FUENTES_CANONICAS.json` |
+| claves en la tabla canonica | **12** | `fuentes/FUENTES_CANONICAS.json` |
+| rama activa | `extraccion-gerber_emyth` | `git rev-parse --abbrev-ref HEAD` |
+| commit de apertura | `f3

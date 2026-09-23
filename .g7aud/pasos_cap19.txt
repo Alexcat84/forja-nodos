@@ -1,0 +1,34 @@
+==========================================================================================
+distinguir_tres_tipos_sistemas_negocio
+  titulo: Distinguir los tres tipos de sistemas que el libro nombra en tu negocio: Hard, Soft e Information Systems
+  P1  Entiende que hay tres tipos de sistemas en tu negocio: Hard Systems, Soft Systems e Information Systems.
+  P2  Reconoce un Hard System: es algo inanimado, sin vida, como un computador o los colores de una oficina.
+  P3  Reconoce un Soft System: es algo animado, vivo, o una idea, como tu mismo o el guion de una obra de teatro.
+  P4  Reconoce un Information System: es el que te da informacion sobre como interactuan los otros dos tipos, como el control de inventario, el pronostico de flujo de caja o el resumen de actividad de ventas.
+  P5  Ten presente que la Innovacion, la Cuantificacion y la Orquestacion de estos tres tipos de sistemas en tu negocio es de lo que trata tu Business Development Program.
+==========================================================================================
+aplicar_seis_pasos_sistema_venta
+  titulo: Aplicar los seis pasos principales que el libro enumera para un sistema de venta
+  P1  Identifica los Benchmarks especificos, o puntos de decision del consumidor, en tu proceso de venta.
+  P2  Escribe literalmente, como el guion de una obra de teatro, las palabras que te van a llevar a cada Benchmark con exito.
+  P3  Crea los distintos materiales que se van a usar con cada guion.
+  P4  Memoriza el guion de cada Benchmark.
+  P5  Entrega cada guion de forma identica a traves de tus vendedores.
+  P6  Deja que tu gente se comunique con mas efectividad, articulando, observando, escuchando, oyendo, reconociendo, entendiendo e implicando a cada prospecto tan a fondo como el lo necesite.
+==========================================================================================
+medir_sistema_venta_trece_indicadores_benchmark
+  titulo: Medir tu sistema de venta con los trece indicadores del Information Benchmark que el libro enumera
+  P1  Registra cuantas llamadas se hicieron.
+  P2  Registra cuantos prospectos se alcanzaron.
+  P3  Registra cuantas citas se programaron.
+  P4  Registra cuantas citas se confirmaron.
+  P5  Registra cuantas citas se realizaron.
+  P6  Registra cuantas Needs Analysis Presentations se programaron.
+  P7  Registra cuantos Needs Analysis se confirmaron.
+  P8  Registra cuantos Needs Analysis se completaron.
+  P9  Registra cuantas Solutions Presentations se programaron.
+  P10 Registra cuantas Solutions Presentations se confirmaron.
+  P11 Registra cuantas Solutions Presentations se completaron.
+  P12 Registra cuantas soluciones se vendieron.
+  P13 Registra cual fue el valor promedio en dolares.
+  P14 Anota esta informacion en un formulario, ya sea a mano o como base de datos en tu computador.

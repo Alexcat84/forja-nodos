@@ -1,0 +1,36 @@
+{
+  "id": "interrogar_negocio_cinco_preguntas",
+  "titulo": "Ponerte a trabajar en tu negocio como si fuera un prototipo de preproduccion, y hacerte las cinco preguntas del capitulo",
+  "denominaciones": {
+    "nombre_largo": "El resumen que el propio libro hace del capitulo: trabajar sobre el negocio y no dentro de el, pensarlo como cualquier cosa menos como un empleo, y las cinco preguntas que hay que hacerse hasta dar con que no sabes las respuestas",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "working on your business, not in it"},
+      {"idioma": "ingles", "termino": "pre-production prototype"}
+    ]
+  },
+  "condiciones_activacion": "Cuando cierras el trabajo del prototipo de tu negocio y quieres comprobar si estas trabajando sobre el o dentro de el.",
+  "entregable_esperado": "Las cinco preguntas del libro hechas sobre tu propio negocio, y la constatacion escrita de cuales de ellas no sabes contestar.",
+  "pasos_accionables": [
+    "Ponte a trabajar sobre tu negocio en vez de dentro de el.",
+    "Ponte a trabajar sobre el como si fuera el prototipo de preproduccion de un producto fabricable en serie.",
+    "Piensa tu negocio como algo aparte de ti mismo, en las formas que el texto enumera: un mundo propio, un producto de tu esfuerzo, una maquina disenada para cubrir una necesidad muy concreta, un mecanismo para darte mas vida, un sistema de piezas interconectadas, un paquete de cereales, una lata de judias, algo creado para satisfacer las necesidades percibidas de tus consumidores, un sitio que actua claramente distinto de todos los demas, y una solucion al problema de otro.",
+    "Piensa tu negocio como cualquier cosa menos como un empleo.",
+    "Hazte la primera pregunta: como consigo que mi negocio funcione, pero sin mi.",
+    "Hazte la segunda: como consigo que mi gente trabaje, pero sin mi interferencia constante.",
+    "Hazte la tercera: como sistematizo mi negocio de manera que se pudiera replicar 5.000 veces y la unidad numero 5.000 funcionara tan bien como la primera.",
+    "Hazte la cuarta: como poseo mi negocio y sigo estando libre de el.",
+    "Hazte la quinta: como paso el tiempo haciendo el trabajo que me gusta hacer en vez del trabajo que tengo que hacer.",
+    "Quedate con lo que el texto dice que va a pasar cuando te las hagas: acabaras dando de bruces con el problema de verdad, que es que no sabes las respuestas."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_11.md, unidad Cap. 9, titulo textual Working On Your Business, Not In It. Sale de la PIEZA P6 de la frontera publicada en esta misma vuelta, L242 a L265, 288 palabras. POR QUE ES PROCEDIMIENTO, con D.27 delante: el libro pone aqui su propio inventario y lo pone dos veces, primero las formas de pensar el negocio enumeradas una a una, y despues LAS CINCO PREGUNTAS transcritas una a una detras de la frase ask yourself the following questions. No hay adjetivo de adecuacion en el sitio del criterio: las preguntas estan escritas, no descritas. POR QUE NO ES EL MISMO NODO QUE LA CABEZA fingir_prototipo_cinco_mil_replicas, Y ES MI DISCUTIBLE 4 DE LA VUELTA, MARCADO ANTES DE SABER SI ACIERTO: los dos salen del mismo capitulo y la tercera pregunta de este repite la cifra de las 5.000 replicas de aquel. Los separo porque son dos actos distintos con dos entregables distintos: la cabeza monta el fingimiento y abre las seis reglas, y este es un interrogatorio que se hace al cerrar y cuyo entregable es descubrir cuales no sabes contestar. P.19 manda fundir el objeto que se repite DENTRO de un mismo candidato, y aqui no se repite dentro: se repite entre dos piezas separadas por doscientas lineas y por las seis reglas enteras. Si el auditor lo tumba, lo que procede es fundirlo en la cabeza, y lo digo aqui para que la fusion no tenga que reconstruirse. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 10 pasos, 10 TRANSCRIPCION, 0 PUENTE, con su cita pegada en .gerber_v1/cita_cap11_P6.txt. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: donde se anotan las respuestas, cada cuanto se repite el interrogatorio, ni que se hace con las que no sabes contestar. El texto dice que daras de bruces con que no las sabes y ahi lo deja, y el capitulo siguiente es el que sigue: cerrar ese bucle aqui seria un puente.",
+  "atribuciones": [],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-16"}
+  ]
+}

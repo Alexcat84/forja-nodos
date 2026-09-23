@@ -1,0 +1,16 @@
+AVISO: la unica constante tecleada por mi en este instrumento es el commit
+de apertura del frente, 272e8ce (arnes: loop.log de la apertura del frente gerber_emy).
+Todo lo demas se cuenta de su fichero, y la columna `al abrir` se lee del
+arbol de ese commit con `git show`, no de la tabla de apertura.
+
+| pieza | al abrir | al cierre | de donde sale |
+|---|---:|---:|---|
+| nodos en el grafo | **270** | **270** | `dataset/nodos.jsonl` |
+| veredictos escritos | **396** | **396** | `bitacora/VEREDICTOS.jsonl` |
+| candidatos en bandeja de `gerber_emyth` | **0** | **10** | `PATRON: cuarentena/gerber_emyth/*.json` |
+| pasos escritos en esa bandeja | **0** | **89** | `PATRON: cuarentena/gerber_emyth/*.json` |
+| ficheros de dato (`dataset/`, `bitacora/`, `censos/`, `config/`) movidos por la vuelta | | **0** | `git diff --name-only 272e8ce..HEAD` |
+| rama activa | | `extraccion-gerber_emyth` | `git rev-parse --abbrev-ref HEAD` |
+| commit al medir el cierre | `272e8ce` | `92c1300` | `git rev-parse --short HEAD` |
+
+CERO INSERCIONES, COMPROBADO Y NO PROMETIDO: 0 fichero(s) de dato movidos.

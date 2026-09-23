@@ -1,0 +1,6 @@
+[
+ ('R1',   8,  19, 'el numero del capitulo, el rotulo `INFANCY: THE TECHNICIAN PHASE` y el epigrafe de e. e. cummings', 'RESIDUO: rotulo y epigrafe'),
+ ('R2',  20,  31, 'los negocios crecen y cambian, lo que el tecnico quiere es lo contrario, y las tres fases nombradas: Infancy, Adolescence y Maturity', 'POSTURA'),
+ ('R3',  32,  89, 'la Infancia contada entera: el duenio y el negocio son lo mismo, el malabarista que empieza a soltar bolas, y la Infancia que acaba cuando el duenio ve que aquello no puede seguir asi', 'POSTURA y CASO'),
+ ('R4',  90, 149, 'el dialogo con Sarah: nada malo en ser tecnico salvo si ademas posee el negocio, el proposito de montar un negocio, y el paso a la Adolescencia', 'CASO'),
+]

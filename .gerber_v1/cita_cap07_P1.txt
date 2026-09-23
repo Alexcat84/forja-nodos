@@ -1,0 +1,10 @@
+AVISO: cero celdas tecleadas. Cada linea es la que sed -n imprime de fuentes/gerber_emyth/cap_07.md.
+UNICA TRANSFORMACION DECLARADA: 2 guion(es) largo(s) U+2014 sustituido(s) por coma mas
+espacio y 0 guion(es) medio(s) U+2013 por guion corto, porque el barrido de estilo de
+esta casa tumba los dos. El resto es byte a byte el del libro.
+
+279: “It’s up to you to dictate your business’s rate of growth as best you can by understanding the key processes that need to be performed, the key objectives that need to be achieved, the key position you are aiming your business to hold in the marketplace.
+281: “By asking the right questions, such as: Where do I wish to be? When do I wish to be there? How much capital will that take? How many people, doing what work, and how? What technology will be required? How large a space will be needed, at Benchmark One, at Benchmark Two, at Benchmark Three?
+283: “Will you be wrong at times? Will you make mis takes? Will you change your mind? Of course you will! More often than not. But, done right, you will also have contingency plans in place. Best case, worst case. And sometimes you will simply fly by the seat of your pants; you will go with the flow, follow your intuition.
+285: “But all the while, even while you’re guessing, the key is to plan, envision, and articulate what you see in the future both for yourself and for your employees. Because if you don’t articulate it, I mean, write it down, clearly, so others can understand it, you don’t own it! And do you know that in all the years I’ve been doing this work with small business owners, out of the thousands upon thousands we’ve met, there have only been a few who had any plan at all! Nothing written, nothing committed to paper, nothing concrete at all.
+287: “Remember, Sarah, any plan is better than no plan.
