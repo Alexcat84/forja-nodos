@@ -910,3 +910,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | construir_grafico_escalonado_pronosticos | nombre_largo | El grafico escalonado: el pronostico de los meses que vienen rehecho cada mes y comparado con los pronosticos anteriores y con el resultado real | castellano | - |
 | 2026-09-23 | construir_grafico_escalonado_pronosticos | otro_idioma | stagger chart | ingles | - |
 | 2026-09-23 | construir_grafico_escalonado_pronosticos | otro_idioma | incoming orders | ingles | - |
+| 2026-09-23 | archivar_indicadores_resolver_problemas | nombre_largo | El banco de informacion de los indicadores: el archivo que ya esta hecho cuando algo se rompe, y que ensena de golpe todos los parametros de la operacion | castellano | - |
+| 2026-09-23 | archivar_indicadores_resolver_problemas | otro_idioma | bank of information | ingles | - |
+| 2026-09-23 | archivar_indicadores_resolver_problemas | otro_idioma | unhealthy departures from the norm | ingles | - |
