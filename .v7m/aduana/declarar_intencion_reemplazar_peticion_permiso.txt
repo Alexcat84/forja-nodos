@@ -1,0 +1,39 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 479   (346 del grafo mas 133 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 4
+  por candidato bloqueado          : menor 4, mediana 4, mayor 4
+  que señal levanta cada vecindad  : similitud_texto 4
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] declarar_intencion_reemplazar_peticion_permiso   (declarar_intencion_reemplazar_peticion_permiso.json)
+    vecino resistir_dar_solucion_clasificar_decision_urgencia  [levantada por: similitud_texto]
+      similitud_texto 0.422 | familia_id 0.000 | paso_contra_nodo 0.439
+      paso 2 del candidato contra paso 4 de resistir_dar_solucion_clasificar_decision_urgencia
+    vecino acoger_inspectores_externos_fuente_aprendizaje  [levantada por: similitud_texto]
+      similitud_texto 0.404 | familia_id 0.000 | paso_contra_nodo 0.350
+      paso 3 del candidato contra paso 1 de acoger_inspectores_externos_fuente_aprendizaje
+    vecino informar_cierre_jornada_conservar_propiedad_trabajo  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.391
+      paso 2 del candidato contra paso 3 de informar_cierre_jornada_conservar_propiedad_trabajo
+    vecino reforzar_principios_guia_lenguaje_prueba_conocimiento  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.000 | paso_contra_nodo 0.353
+      paso 2 del candidato contra paso 2 de reforzar_principios_guia_lenguaje_prueba_conocimiento
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
