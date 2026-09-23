@@ -60479,3 +60479,216 @@ numerador ni denominador): no hay relectura entera que escalar mas alla de la qu
 
 **LOS DOS CAPITULOS QUEDAN MINADOS EN CERO, LEIDOS ENTEROS, CON SU FRONTERA COMPLETA VERIFICADA CONTRA EL
 FICHERO.**
+
+
+# VUELTA 7 DEL FRENTE `marquet_turn_the_ship`: **SANEAMIENTO**. `d098`, EL BARRIDO ENTERO DE `d104` Y LA CUENTA DEL LIBRO
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor al cerrar la `ACTA M7` (`docs/loop/ACTA_AUDITOR.md`).
+Extractor `claude-sonnet-5`, MODO_INSERCION=cuarentena, CLASE: SANEAMIENTO (`python scripts/deuda.py --clase 7` da `SANEAMIENTO`,
+*han pasado 5 vuelta(s) desde la primera vuelta de la linea, que todavia no ha saneado nunca y la cadencia es 5, con 35 deuda(s) pendientes*).*
+
+| | |
+|---|---|
+| rama | `extraccion-marquet_turn_the_ship` |
+| commit de apertura | `89fc5aa` (`git rev-parse HEAD`, tras commitear los registros pendientes del arnes que el ciclo 1 de `EXTRACTOR.md` manda pushear antes de tocar nada) |
+| `gate` a la apertura | `GATE VERDE`, `346` nodos verificados |
+| `guiones` a la apertura | `BARRIDO DE GUIONES VERDE` |
+| candidatos en bandeja a la apertura | `20` (`ls cuarentena/marquet_turn_the_ship/*.json \| wc -l`) |
+| credito a la apertura | `python forja.py credito`: `AUDITOR 0 de 3`, `CIFRA PUBLICADA 0 de 2`, `CLASE 0 de 2`, `DATO MOVIDO 0 de 2`, `REPORTE 0 de 3` (todas de la `ACTA M7`) |
+
+### Las cuatro tareas de esta vuelta
+
+| # | tarea | estado | resultado |
+|---:|---|---|---|
+| 1 | Registros: el ACTA M7 leida y sus adjudicaciones asumidas | CERRADA | Adoptado; `REPORTE` en `0 de 3`, sin corrida propia que repetir |
+| 2 | `d098`: el paso 1 de `ceder_control_reforzar_competencia_claridad` | CERRADA | Paso 1 retirado (meta-estructura del libro), nodo en 6 pasos; aduana individual 0 CAERIAN; `d098` pagada |
+| 3 | `d104`: el barrido de la bandeja entera, con el texto final | PENDIENTE | |
+| 4 | La cuenta del libro | CERRADA | `17/17` capitulos cubiertos (`13` con candidato, `4` en cero con sede); cerrada la extraccion NO TODAVIA, depende de `d104` (`TAREA 3`) |
+
+### Discutibles marcados ANTES de saber si acierto
+
+| # | discutible | donde |
+|---|---|---|
+| | (se anexan segun aparezcan) | |
+
+
+## TAREA 1. Registros: el ACTA M7
+
+**Leida entera** (`docs/loop/ACTA_AUDITOR.md`, `M7.0` a `M7.14`). Lo que me toca, uno a uno:
+
+- **`REPORTE` esta en `0 de 3`** (`M7.10`): parto de esa racha limpia. Mi cabecera de esta vuelta declara
+  `PENDIENTE` en las cuatro tareas y no promete nada que no este, que es la lectura que `M7.8` premio.
+- **El remedio de `M6.9.a` queda cumplido y medido por mutacion** (`M7.3`): no me toca nada de eso, es
+  historia cerrada de la vuelta 6.
+- **Lo que se cayo y no acumula** (`M7.7`): no prometo ningun `cerrar_reporte.py` *al cierre* sin correrlo; lo
+  corro en la seccion de cierre de esta misma vuelta, cuando exista algo que tallar.
+- **`cap_16` y `cap_17` estan firmados en cero** por el auditor (`M7.4`, `M7.5`): no los reabro. La firma en
+  `config/frentes.json` es de la sesion auditora, no mia.
+- **La tanda huerfana de `d104`** (`M7.9`): los tres ficheros `.v6m/aduana/asignar_responsable_unico_evolucion_planificada.txt`,
+  `.v6m/aduana/acoger_inspectores_externos_fuente_aprendizaje.txt` y `.v6m/aduana/aplicar_ejercicio_codigo_genetico_control.txt`
+  existen y los reuso en la `TAREA 3` si `d098` no toca esas tres fichas, tal como el encargo autoriza.
+
+**ADOPTADO, SIN CORRIDA PROPIA QUE REPETIR** (`d098` es el unico pendiente que vence esta vuelta; el resto
+de `M7` es historia ya cerrada por el auditor).
+
+
+## TAREA 4. La cuenta del libro
+
+*Corrida mientras espero la aduana de `d098` (`TAREA 2`), antes del barrido de `d104`: es barata y no toca ninguna
+ficha (`EXTRACTOR.md` no lo prohibe, y el propio encargo lo pide asi).*
+
+**Instrumento propio de esta vuelta** (permitido por la moratoria de maquinaria, `EXTRACTOR.md` `13`: *una tarea
+del encargo lo ordena expresamente*), guardado en `.v7m/cuenta_libro.py`. Lee `UNIDAD DE ORIGEN` del
+`resumen_teorico` de cada ficha de `cuarentena/marquet_turn_the_ship/` y cuenta `pasos_accionables`; los
+capitulos en cero llevan la sede que los firmo, citada por acta y linea.
+
+    $ python .v7m/cuenta_libro.py
+    cap    | candidatos | pasos | ids
+    -------|-----------:|------:|----
+    cap_01 |          1 |     6 | ceder_control_reforzar_competencia_claridad
+    cap_02 |          2 |    10 | cambiar_forma_trabajar_conservar_plantilla, encargar_meta_especifica_dejar_libre_metodo
+    cap_03 |          6 |    53 | auditar_formacion_premios_ultima_fila, contar_firmas_cadena_tramite_parado, inspeccionar_reparto_informacion_notas_jefe, observar_reunion_rutinaria_senales_plantilla, recorrer_organizacion_escuchar_plantilla, seguir_frustrado_preguntar_implantacion_ideas
+    cap_04 |          1 |     5 | informar_cierre_jornada_conservar_propiedad_trabajo
+    cap_05 |          0 |     0 | CERO, firmado: ACTA M3, seccion M3.5, docs/loop/ACTA_AUDITOR.md linea 45334
+    cap_06 |          2 |     8 | aplicar_ejercicio_codigo_genetico_control, asignar_responsable_unico_evolucion_planificada
+    cap_07 |          1 |     3 | declarar_intencion_reemplazar_peticion_permiso
+    cap_08 |          1 |     5 | resistir_dar_solucion_clasificar_decision_urgencia
+    cap_09 |          1 |     2 | eliminar_seguimiento_descendente_responsabilizar_dueno
+    cap_10 |          1 |     3 | acoger_inspectores_externos_fuente_aprendizaje
+    cap_11 |          1 |     3 | tomar_accion_deliberada_pausar_vocalizar_gesticular
+    cap_12 |          1 |     8 | identificar_temas_formacion_tarjetas_decision
+    cap_13 |          1 |     2 | repetir_mensaje_invariable_diario_reunion_evento
+    cap_14 |          1 |     2 | reforzar_principios_guia_lenguaje_prueba_conocimiento
+    cap_15 |          0 |     0 | CERO, firmado: ACTA M6, seccion M6.4, docs/loop/ACTA_AUDITOR.md linea 47097
+    cap_16 |          0 |     0 | CERO, firmado: ACTA M7, secciones M7.4 y M7.5, docs/loop/ACTA_AUDITOR.md linea 47319
+    cap_17 |          0 |     0 | CERO, firmado: ACTA M7, secciones M7.4 y M7.5, docs/loop/ACTA_AUDITOR.md linea 47327
+    -------|-----------:|------:|----
+    TOTAL  |         20 |   110 |
+
+    capitulos en cero: 4 de 17 (cap_05, cap_15, cap_16, cap_17)
+    capitulos con candidatos: 13 de 17
+    capitulos en cero SIN sede citada: 0 (ninguno)
+
+*(Nota: `cap_01` ya refleja el candidato corregido de `d098`, `6` pasos, no los `7` originales.)*
+
+**LOS `17` CAPITULOS DEL LIBRO ESTAN CUBIERTOS**: `13` dieron candidato (`20` fichas, `110` pasos en bandeja) y
+`4` estan firmados en cero con su sede (`cap_05`, `cap_15`, `cap_16`, `cap_17`), ninguno sin cita.
+
+**¿ESTA CERRADA LA EXTRACCION DE `marquet_turn_the_ship`? NO TODAVIA, Y LA CIFRA QUE LO DICE ES `d104`, NO
+ESTA TAREA.** Los `17` capitulos leidos es la misma cuenta que `ACTA M7` `M7.12` ya tenia (*`17` de `17`
+capitulos leidos ... pero la cuenta del libro no la ha publicado ningun instrumento y `d104` no esta pagado*):
+esta tarea publica el instrumento que faltaba, y **la condicion que sigue abierta es la de `M7.12`: `d104`
+pagado, al cerrar el lote y antes de la primera insercion** (`D.39`, `D.50`). Si la `TAREA 3` de esta misma
+vuelta paga `d104` entero, la campaña queda medida como consumada para que el auditor la declare; si queda
+ficha sin barrer, sigue `NO, TODAVIA`, por la misma razon de `M7.12` y no por esta cuenta.
+
+**POR LO TANTO, MIENTRAS `d104` NO ESTE PAGADO ENTERO: NO SE COSECHA, NO SE FUNDE Y NO SE INSERTA** (`D.39`,
+`D.50`, decision del `22` sep punto `4`), tal como el encargo manda.
+
+
+## TAREA 2. `d098`: el paso 1 de `ceder_control_reforzar_competencia_claridad`
+
+**El remedio `4` de la `ACTA M2`, leido entero**
+(`docs/loop/archivo/marquet_turn_the_ship/ACTA_AUDITOR_frente_hasta_M2.md`, seccion `10`, punto `4`): *el
+paso `1` de `ceder_control_reforzar_competencia_claridad` se reescribe o se retira antes de que ese nodo
+entre al grafo (adjudicacion `3` de la `ACTA M1`, que sostengo)*. La adjudicacion `3` de la `ACTA M1`
+(misma acta, seccion `6`) dice el porque: el paso describe **como reparte el libro sus Partes**, no es
+`PUENTE` (la linea si lo dice), **pero no es procedimiento del lector**: las cuatro fases se nombran por
+su numero y lo que se enumera son las Partes del libro, no medios, etapas u objetos de trabajo del lector
+(`EXTRACTOR.md` `9.1`, restriccion `1`).
+
+**LA LINEA, CON SU CITA PEGADA** (`D.35`):
+
+    $ sed -n '97p' fuentes/marquet_turn_the_ship/cap_01.md
+    97: "Turn the Ship Around! is the story of that journey and the men aboard Santa Fe who lived it with
+         me. It describes essentially four phases in my struggle to change the way we interacted for the
+         better. I describe how I needed to let go of old ideas to make room for new ones in Part I. In
+         Parts II, III, and IV, I describe the bridge to leader-leader and supporting pillars. [...]"
+
+**El paso `1` antiguo** decia: *"Cuenta con las cuatro fases que el texto dice que describe en su lucha
+por cambiar la forma de relacionarse, y con como reparte sus partes: la primera en la Parte I, y el puente
+y los pilares en las Partes II, III y IV."* Es fiel a la linea (no inventa nada de ella), pero su unico
+contenido es la estructura editorial del libro (Parte I, Partes II a IV), que no es algo que el lector
+ejecute: no hay verbo de accion propio, solo *"cuenta con"* la division del texto. **NO SUPERA LA VARA DE
+`9`**: nombrar la organizacion de un libro no es procedentar.
+
+**RETIRADO, NO REESCRITO**: reescribirlo en clave de accion obligaria a inventar un mandato que la linea no
+trae (ponerse a "contar fases" no es algo que alguien haga en su organizacion), lo que seria fabricar un
+`PUENTE` nuevo para tapar el que se retira. Ademas, **el contenido accionable de "Parte I" ya lo ejecuta el
+paso siguiente**, hoy paso `1`: *"Empieza soltando las ideas viejas para hacer sitio a las nuevas, que es
+lo que el texto pone en su primera parte."* Retirar el antiguo paso `1` no pierde ningun mandato del libro:
+el nodo pasa de `7` a `6` pasos, los `6` `TRANSCRIPCION` y `0` `PUENTE` (antes `7` `TRANSCRIPCION`, `0`
+`PUENTE`; la relectura de fidelidad `D.30` no cambia de numerador, solo de denominador).
+
+**CORRECCION DECLARADA DENTRO DEL PROPIO `resumen_teorico`**, sin borrar el razonamiento anterior, con el
+motivo y la cita.
+
+**LA ADUANA, EN EL MISMO ACTO** (`EXTRACTOR.md` `16`), guardada en
+`.v7m/aduana/ceder_control_reforzar_competencia_claridad.txt`:
+
+    $ python forja.py informe cuarentena/marquet_turn_the_ship/ceder_control_reforzar_competencia_claridad.json
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 1
+    poblacion del barrido       : 479   (346 del grafo mas 133 que esperan en bandejas)
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 1
+      por candidato bloqueado          : menor 1, mediana 1, mayor 1
+      que señal levanta cada vecindad  : similitud_texto 1
+
+    [BLOQUEARIA] ceder_control_reforzar_competencia_claridad   (ceder_control_reforzar_competencia_claridad.json)
+        vecino encargar_meta_especifica_dejar_libre_metodo  [levantada por: similitud_texto]
+          similitud_texto 0.372 | familia_id 0.000 | paso_contra_nodo 0.486
+          paso 4 del candidato contra paso 4 de encargar_meta_especifica_dejar_libre_metodo
+
+**`0` CAERIAN: LA CORRECCION NO ROMPIO NINGUNA GUARDA.** `BLOQUEARIA` por un vecino en
+`similitud_texto 0.372`, **por debajo de la banda alta de `0,4`** (`EXTRACTOR.md` `11`), asi que no es de
+lectura obligada por esa regla; queda anotado igual porque es la unica vecindad que este candidato levanta.
+**NO HAY ADUANA PREVIA DE ESTA FICHA SUELTA QUE COMPARAR** (ni en `.vm01/`, `.m2/`, `.m4aud/` a `.m6aud/`,
+ni en `.v3m/` a `.v6m/`): es la primera vez que `ceder_control_reforzar_competencia_claridad` se corre
+sola en vez de dentro de un informe de lote, asi que no hay "cual era" que citar, solo "cual es".
+
+**PAGO**: `python scripts/deuda.py --pagar d098 --vuelta 7 --como "paso 1 retirado (meta-estructura del
+libro, no procedimiento del lector); nodo queda en 6 pasos, 6 TRANSCRIPCION 0 PUENTE; aduana individual
+CERO CAERIAN, BLOQUEARIA por 1 vecino bajo banda alta"`.
+
+
+## CIERRE PROVISIONAL (se reescribe al cerrar cada tanda de la TAREA 3, y entero al final)
+
+*Escrito en cuanto cierra la `TAREA 2`, antes del barrido largo de la `TAREA 3`, tal como la seccion `0`
+del encargo manda: si el turno se corta desde aqui, esto es lo que queda escrito y es verdad.*
+
+**LO CERRADO HASTA AQUI:** `TAREA 1` (registros del ACTA M7, adoptados), `TAREA 2` (`d098` pagada, paso 1
+retirado, aduana individual `0 CAERIAN`), `TAREA 4` (la cuenta del libro, `17/17` capitulos cubiertos,
+instrumento propio `.v7m/cuenta_libro.py`).
+
+**LO QUE QUEDA:** `TAREA 3`, el barrido de `d104` sobre las `20` fichas de la bandeja. De ellas:
+- `3` reusadas de `.v6m/aduana/` (`asignar_responsable_unico_evolucion_planificada`,
+  `acoger_inspectores_externos_fuente_aprendizaje`, `aplicar_ejercicio_codigo_genetico_control`), porque
+  `d098` no las toco.
+- `1` ya corrida en esta misma vuelta como parte de la `TAREA 2`
+  (`ceder_control_reforzar_competencia_claridad`), copiada a `.v7m/aduana/`.
+- `16` pendientes de correr, en tandas dentro de este mismo turno, cada tanda recogida ENTERA (con `wait`)
+  antes de lanzar la siguiente.
+
+**NINGUN PROCESO QUEDA SUELTO A ESTA ALTURA**: la unica corrida de fondo que hubo (`d098`) ya se recogio y
+esta seccion se escribe con ella cerrada.
+
+**CREDITO, MEDIDO A ESTA ALTURA:** `REPORTE` sigue en `0 de 3` (la cabecera de esta vuelta no promete nada
+que no este: las tareas `3` siguen `PENDIENTE` en su propia tabla). Las demas especies siguen en `0`,
+sin corrida propia todavia que las mueva.
+
+**PARADAS: NINGUNA TODAVIA.** Ninguna guarda ha dado rojo, ninguna cifra publicada contradice al
+instrumento que la mide, y no hay pregunta de doctrina nueva que abrir.
+
+**SI EL TURNO SE CORTA AQUI:** la `TAREA 3` queda con `4` de `20` fichas resueltas (`3` reusadas mas `1`
+propia) y `16` por barrer, listadas arriba, y `d104` sigue viva, sin pagar.
