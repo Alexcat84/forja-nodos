@@ -41,9 +41,10 @@ una detras de otra.** Hazlo exactamente asi:
 
 **Y antes de terminar el turno, pegas en el reporte la prueba de que no dejas nada vivo:**
 
-    powershell -NoProfile -Command "(Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'forja.py informe cuarentena/marquet' }).Count"
+    powershell -NoProfile -Command "@(Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | Where-Object { $_.CommandLine -match 'informe cuarentena/marquet' }).Count"
 
-**Tiene que dar `0`.** Los `forja.py informe` de `cuarentena/grove_high_output/` o de `cuarentena/gerber_emyth/` **son de otras
+**Tiene que dar `0`.** **El filtro `Name='python.exe'` tiene que estar**: sin el, la comprobacion se encuentra a si misma en la
+lista de procesos y da `4` con nada vivo, **que es lo que le paso a tu auditor al escribir este encargo**. Los `forja.py informe` de `cuarentena/grove_high_output/` o de `cuarentena/gerber_emyth/` **son de otras
 lineas: no los toques.**
 
 **ESCRIBE EL CIERRE PROVISIONAL ANTES DE LA PRIMERA TANDA, y reescribelo cada vez que recojas una.** Si el turno se corta, lo
