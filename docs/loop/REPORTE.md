@@ -58735,3 +58735,44 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `462`; lineas `--vered
 |---|---|---:|---:|---:|---|
 | `construir_grafico_escalonado_pronosticos` | similitud_texto | 0.387 | 0.143 | 0.440 | SANO |
 | `emparejar_indicadores_efecto_contraefecto` | similitud_texto | 0.362 | 0.000 | 0.419 | SANO |
+
+### Fila `17`: `casar_flujo_fabricacion_flujo_ventas`, **INSERTADO** en `1687.3` s, codigo `0`, commit `d78d581`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `462`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v65ext/insertar_17_casar_flujo_fabricacion_flujo_ventas.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_17_casar_flujo_fabricacion_flujo_ventas.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+*Sin vecinos: la tabla va vacia a proposito.*
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, `D65.2`, `D65.3`): `elegir_fabricar_pedido_pronostico > casar_flujo_fabricacion_flujo_ventas`, `--paso 4` de un tramo `4 a 7`: es el paso donde la madre pasa a fabricar contra pronostico, y el paso `1` del hijo trata la entrega de un producto fabricado contra pronostico. Salida entera en `.v65ext/arista_elegir_fabricar_pedido_pronostico__casar_flujo_fabricacion_flujo_ventas.txt`:
+
+    $ python forja.py arista --madre elegir_fabricar_pedido_pronostico --hijo casar_flujo_fabricacion_flujo_ventas --paso 4 --razon <fila 7> --veredicto CONTINUA --cita-veredicto <fila 7>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: elegir_fabricar_pedido_pronostico
+      hijo : casar_flujo_fabricacion_flujo_ventas
+      paso citado de la madre: 4
+        Cuando esa comparacion te cierre la via del pedido, pasa a fabricar contra pronostico, que es actuar sobre una contemplacion de los pedidos futuros, a
+      señales del par: familia_id 0.0, paso_contra_nodo 0.433, similitud_texto 0.254
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: elegir_fabricar_pedido_pronostico > casar_flujo_fabricacion_flujo_ventas
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, `D65.2`, `D65.3`, y es `D64.6`, sostenida en `ACTA 63` `63.3.b`): `construir_grafico_escalonado_pronosticos > casar_flujo_fabricacion_flujo_ventas`, `--paso 1` de un tramo `1 a 8`: es el paso que monta el grafico escalonado, y el paso `12` del hijo usa graficos escalonados en sus dos pronosticos. Salida entera en `.v65ext/arista_construir_grafico_escalonado_pronosticos__casar_flujo_fabricacion_flujo_ventas.txt`:
+
+    $ python forja.py arista --madre construir_grafico_escalonado_pronosticos --hijo casar_flujo_fabricacion_flujo_ventas --paso 1 --razon <fila 8> --veredicto CONTINUA --cita-veredicto <fila 8>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: construir_grafico_escalonado_pronosticos
+      hijo : casar_flujo_fabricacion_flujo_ventas
+      paso citado de la madre: 1
+        Monta un grafico escalonado, que es el que pronostica una salida para los varios meses que vienen.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.424, similitud_texto 0.27
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: construir_grafico_escalonado_pronosticos > casar_flujo_fabricacion_flujo_ventas
+      razon en bitacora/VEREDICTOS.jsonl
+

@@ -1,0 +1,13 @@
+$ python forja.py arista --madre elegir_fabricar_pedido_pronostico --hijo casar_flujo_fabricacion_flujo_ventas --paso 4 --razon <fila 7> --veredicto CONTINUA --cita-veredicto <fila 7>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: elegir_fabricar_pedido_pronostico
+  hijo : casar_flujo_fabricacion_flujo_ventas
+  paso citado de la madre: 4
+    Cuando esa comparacion te cierre la via del pedido, pasa a fabricar contra pronostico, que es actuar sobre una contemplacion de los pedidos futuros, a
+  señales del par: familia_id 0.0, paso_contra_nodo 0.433, similitud_texto 0.254
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: elegir_fabricar_pedido_pronostico > casar_flujo_fabricacion_flujo_ventas
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0
