@@ -13,6 +13,33 @@ escribe encargo.*
 
 ---
 
+## 00. **ANTES DE NADA: TU PRIMER INTENTO DE ESTA VUELTA MURIO A MEDIAS, Y NO POR TI**
+
+**Esta vuelta ya se lanzo una vez**, el `23` sep a las `00:03`, y **el proceso murio a mitad
+del turno de tu extractor**: lo mato el cierre de la sesion de chat que lo habia lanzado. No
+paro por nada tuyo, no escribio `PARA_ALEXIS` y no llego a tocar el reporte. El dictamen esta
+en la serial, `docs/loop/paradas/2026-09-23-las-lineas-murieron-con-la-sesion-DICTAMEN.md`.
+
+**LO QUE DEJO EN TU ARBOL, sin commitear y sin reporte que lo cuente:**
+
+    cuarentena/marquet_turn_the_ship/identificar_temas_formacion_tarjetas_decision.json
+    cuarentena/marquet_turn_the_ship/reforzar_principios_guia_lenguaje_prueba_conocimiento.json
+    cuarentena/marquet_turn_the_ship/repetir_mensaje_invariable_diario_reunion_evento.json
+    .v5m/
+
+**SON TU BORRADOR, NO TRABAJO CERRADO.** Nadie comprobo su frontera, su aduana ni su
+fidelidad. **Por cada una de las tres, una de dos, y lo declaras en el reporte:**
+
+1. **LA ADOPTAS**: le rehaces la frontera contra el fichero, le corres su `forja.py informe`
+   **y guardas la salida**, y lees sus pasos enteros contra su parrafo. Entonces cuenta como
+   de esta vuelta.
+2. **LA RETIRAS**, con su motivo.
+
+**Lo que no vale es commitearlas sin mas**: tres fichas sin aduana guardada en la bandeja son
+exactamente lo que tu `d103` describe.
+
+---
+
 ## 0. TU RACHA SE REINICIO, Y LA AVERIA QUE LA ROMPIO YA NO SE PUEDE REPETIR
 
 **Parabas por `CIFRA PUBLICADA` a `2 de 2`.** El fundador la reinicio por escrito:

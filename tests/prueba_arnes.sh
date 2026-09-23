@@ -191,6 +191,18 @@ elif [ "$escribe" = "si" ]; then
   git commit -q -m "turno del $rol (claude falso)" >/dev/null 2>&1
   git push -q origin bucle >/dev/null 2>&1
 fi
+# UNA INSERCION EN VUELO AL CERRAR EL TURNO (escenario 20). El extractor deja el
+# cerrojo echado: "muerto" con un pid que no existe, "vivo" con un proceso que lo
+# suelta a los tres segundos.
+if [ "$rol" = "extractor" ] && [ -n "${FALSO_CERROJO:-}" ]; then
+  if [ "$FALSO_CERROJO" = "vivo" ]; then
+    ( sleep 3; python -c 'import os; from src import cerrojo, comun; os.unlink(cerrojo.ruta_de(comun.RUTA_DATASET))' ) >/dev/null 2>&1 &
+    dueno=$!
+  else
+    dueno=999999
+  fi
+  python -c 'import json, os, sys; from src import cerrojo, comun; r = cerrojo.ruta_de(comun.RUTA_DATASET); os.makedirs(os.path.dirname(r), exist_ok=True); open(r, "w").write(json.dumps({"pid": int(sys.argv[1]), "desde": 0}))' "$dueno"
+fi
 # El arnes vuelca ESTO en el artefacto DESPUES del ultimo commit (D.33).
 sucio=""
 if [ "${FALSO_SUCIO:-no}" = "si" ]; then sucio=" $(printf '\u2014') con guion largo"; fi
@@ -768,6 +780,42 @@ args_ext="$(cat "$taller/argumentos_extractor.txt" 2>/dev/null | tr '\n' ' ')"
 args_aud="$(cat "$taller/argumentos_auditor.txt" 2>/dev/null | tr '\n' ' ')"
 comprobar_no "el extractor, vacio, va sin --effort" "--effort"         "$args_ext"
 comprobar "el auditor lleva el que se le dio"  "--effort max"          "$args_aud"
+
+# -------------------------------------------------------------- escenario 20
+echo ""
+echo "ESCENARIO 20: UNA INSERCION NO SOBREVIVE A SU TURNO (23 sep 2026). El extractor"
+echo "             cierra con el cerrojo echado por un proceso MUERTO: el arnes lo"
+echo "             dice, comprueba el grafo, y con el gate verde sigue."
+taller="$(montar_banco e20)"
+salida="$(MODO_INSERCION=insertar FALSO_CERROJO=muerto ESPERA_INSERCION=30 \
+          FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "lo dice en voz alta"               "INSERCION EN VUELO"       "$salida"
+comprobar "y dice que se interrumpio"         "INSERCION INTERRUMPIDA"   "$salida"
+comprobar "comprueba el grafo y sigue"        "gate VERDE"               "$salida"
+comprobar "la vuelta llega al auditor"        "VUELTA 1 : AUDITOR"       "$salida"
+
+# -------------------------------------------------------------- escenario 20b
+echo ""
+echo "ESCENARIO 20b: SI EL DUENO VIVE, SE LE ESPERA. La insercion suelta el cerrojo"
+echo "              a los tres segundos, y el arnes no abre la ciega antes."
+taller="$(montar_banco e20b)"
+salida="$(MODO_INSERCION=insertar FALSO_CERROJO=vivo ESPERA_INSERCION=60 \
+          FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la espera y la ve terminar"        "la insercion termino y solto el cerrojo" "$salida"
+comprobar_no "no la da por interrumpida"      "INSERCION INTERRUMPIDA"   "$salida"
+
+# -------------------------------------------------------------- escenario 20c
+echo ""
+echo "ESCENARIO 20c: EL CASO NEGATIVO. Sin cerrojo echado no hay nada que decir, y en"
+echo "              cuarentena no se mira siquiera: un frente no inserta."
+taller="$(montar_banco e20c)"
+salida="$(MODO_INSERCION=insertar FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+comprobar_no "sin cerrojo, sin aviso"          "INSERCION EN VUELO"       "$salida"
+taller="$(montar_banco e20d)"
+salida="$(MODO_INSERCION=cuarentena FALSO_CERROJO=muerto FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+comprobar_no "en cuarentena no se mira"        "INSERCION EN VUELO"       "$salida"
 
 echo ""
 echo "================================================================"

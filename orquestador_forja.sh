@@ -153,6 +153,9 @@ mkdir -p "$LOOP"
 # Una guarda que no se puede probar no guarda nada (manual seccion 2).
 UMBRAL_SEGUNDOS="${UMBRAL_SEGUNDOS:-120}"
 ESPERA_SEGUNDOS="${ESPERA_SEGUNDOS:-1800}"
+# Cuanto espera el arnes a una insercion que sigue viva al cerrar el turno del
+# extractor. Una aduana de un candidato mide del orden de 9 minutos.
+ESPERA_INSERCION="${ESPERA_INSERCION:-1200}"
 MAX_INTENTOS="${MAX_INTENTOS:-7}"
 CLAUDE_BIN="${CLAUDE_BIN:-claude}"
 
@@ -473,7 +476,7 @@ invocar_claude() { # rol modelo prompt salida vuelta [testigo]
 # que se contradicen enseñan a elegir cual obedecer. Ahora el arnes dice UNA
 # sola cosa, y la dice el fundador al lanzarlo.
 if [ "$MODO_INSERCION" = "insertar" ]; then
-  MANDATO_INSERCION="LA INSERCION ESTA ABIERTA EN ESTA CORRIDA (MODO_INSERCION=insertar, que es el default desde D.39). PERO SOLO PARA UN LOTE CERRADO EN EXTRACCION cuyo informe haya certificado el acta del auditor: los candidatos de un lote ABIERTO se quedan en cuarentena hasta que su lote cierre, y meterlos antes es una caida de dato. NINGUN NODO ENTRA SIN PASAR POR LA ADUANA: se inserta con python forja.py insertar, UN CANDIDATO POR VEZ, y si la aduana bloquea lees a los vecinos y escribes el veredicto con su razon antes de insertar. Aplicas D.36 (el orden que lee) y D.37 (la serie que dice cuantas partes tiene), los veredictos van a bitacora/VEREDICTOS.jsonl y los insertados a cuarentena/_insertados/<libro>/ en el mismo acto. No existe la carga masiva."
+  MANDATO_INSERCION="LA INSERCION ESTA ABIERTA EN ESTA CORRIDA (MODO_INSERCION=insertar, que es el default desde D.39). PERO SOLO PARA UN LOTE CERRADO EN EXTRACCION cuyo informe haya certificado el acta del auditor: los candidatos de un lote ABIERTO se quedan en cuarentena hasta que su lote cierre, y meterlos antes es una caida de dato. NINGUN NODO ENTRA SIN PASAR POR LA ADUANA: se inserta con python forja.py insertar, UN CANDIDATO POR VEZ, y si la aduana bloquea lees a los vecinos y escribes el veredicto con su razon antes de insertar. Aplicas D.36 (el orden que lee) y D.37 (la serie que dice cuantas partes tiene), los veredictos van a bitacora/VEREDICTOS.jsonl y los insertados a cuarentena/_insertados/<libro>/ en el mismo acto. No existe la carga masiva. CADA python forja.py insertar SE CORRE EN PRIMER PLANO Y ESPERAS A QUE VUELVA: NUNCA la lances en segundo plano, y NUNCA termines tu turno con una insercion en vuelo. Una insercion que sobrevive a su turno muere a medias cuando el turno se cierra, y el cerrojo del dataset (D.44) existe porque una insercion a medias perdio un nodo. Si una insercion tarda, tarda: esperarla es el trabajo."
 else
   MANDATO_INSERCION="NO INSERTAS NADA EN ESTA CORRIDA (MODO_INSERCION=cuarentena, que es el default). TODO candidato que escribas queda en cuarentena/<libro>/<id_propuesto>.json y pasa por la aduana EN SECO, con python forja.py informe cuarentena/<libro>/<id_propuesto>.json en el mismo acto en que lo escribes; el que caeria lo corriges y lo reintentas. NO uses python forja.py insertar, ni aunque el candidato este perfecto: LA INSERCION ES UNA AUTORIZACION DEL FUNDADOR, NO UN DEFAULT, y en esta corrida no la ha dado. NO LANZAS EL INFORME DEL LOTE ENTERO EN TU TURNO. D.43 lo saca del turno porque NO CABE, y esta medido: mas de tres horas para los 83 candidatos del lote 4, y el fichero queda en la cabecera. Lo corre el ARNES como paso propio y te lo entrega sellado con su hash. Si lo lanzas tu, gastas el turno y no lo terminas."
 fi
@@ -853,6 +856,70 @@ y esta vez tiene que declararla.
 EOF
 }
 
+# UNA INSERCION NO SOBREVIVE A SU TURNO (23 sep 2026, ESPECIE ARNES).
+#
+# EL EJEMPLAR: el extractor de la vuelta 63 lanzo su primera `forja.py insertar` EN
+# SEGUNDO PLANO a las 00:13:40 y cerro su turno a las 00:18:07 con esta frase: "Both
+# background jobs are still running; I'll pick up as soon as the insertion 1 result
+# lands." No la recogio nadie. El arnes abrio la fase ciega encima, y la insercion
+# murio sin escribir mas que su cabecera, dejando el cerrojo del dataset echado por un
+# proceso que ya no existia.
+#
+# SALIO BIEN POR SUERTE: murio antes de tocar nodos.jsonl, y el gate dio 346 como
+# antes. Pero una insercion cortada DESPUES de escribir es justo la que perdio un nodo
+# y dio nacimiento a D.44. Y es la tercera vez que esta casa ve un proceso sobrevivir a
+# su turno: el informe de lote que D.43 saco del turno fue la primera.
+#
+# LO QUE HACE: si al cerrar el turno del extractor el cerrojo sigue echado, lo DICE; si
+# su dueno vive, lo ESPERA hasta ESPERA_INSERCION; y si no se suelta, comprueba el
+# grafo. Gate verde: la insercion interrumpida no escribio nada, se dice y se sigue, y
+# el propio cerrojo rompera y declarara el huerfano (TOPE_DE_HUERFANO). Gate rojo: se
+# para, porque eso ya es un dato en rojo tras una insercion cortada.
+_ruta_cerrojo() {
+  python -c 'from src import cerrojo, comun; print(cerrojo.ruta_de(comun.RUTA_DATASET))' 2>/dev/null
+}
+
+_pid_vive() { # pid. En Windows el pid es de Windows y lo sabe tasklist; si no, kill -0.
+  [ -n "$1" ] || return 1
+  if command -v tasklist >/dev/null 2>&1 && tasklist //FI "PID eq $1" 2>/dev/null | grep -qw "$1"; then
+    return 0
+  fi
+  kill -0 "$1" 2>/dev/null
+}
+
+insercion_en_vuelo() { # vuelta. Cierto si la vuelta puede seguir.
+  [ "$MODO_INSERCION" = "insertar" ] || return 0
+  local vuelta="$1" ruta pid fin
+  ruta="$(_ruta_cerrojo)"
+  { [ -n "$ruta" ] && [ -f "$ruta" ]; } || return 0
+  pid="$(python -c 'import json,sys; print(json.load(open(sys.argv[1])).get("pid") or "")' "$ruta" 2>/dev/null)"
+  log "VUELTA $vuelta : INSERCION EN VUELO al cerrar el turno del extractor: el cerrojo del dataset sigue echado (pid ${pid:-?})"
+  fin=$((SECONDS + ESPERA_INSERCION))
+  while [ -f "$ruta" ] && _pid_vive "$pid" && [ "$SECONDS" -lt "$fin" ]; do
+    sleep 5
+  done
+  if [ ! -f "$ruta" ]; then
+    log "  la insercion termino y solto el cerrojo: se sigue"
+    return 0
+  fi
+  log "  INSERCION INTERRUMPIDA: el cerrojo sigue echado y su dueno ya no vive. Se comprueba el grafo."
+  if python forja.py gate >/dev/null 2>&1; then
+    log "  gate VERDE: la insercion interrumpida no escribio nada. El cerrojo queda huerfano y el propio cerrojo lo rompera y lo declarara (D.44)."
+    return 0
+  fi
+  log "  gate en ROJO despues de una insercion interrumpida: DETENIDO (D.44)."
+  cat > "$LOOP/PARA_ALEXIS.md" <<PARADA
+# PARA_ALEXIS: una insercion se interrumpio y el gate esta en ROJO
+
+La vuelta $vuelta cerro el turno del extractor con una insercion en vuelo (cerrojo
+\`$ruta\`, pid ${pid:-desconocido}), su dueno ya no vive, y \`python forja.py gate\` sale en
+ROJO. Es la averia que D.44 existe para impedir: una insercion cortada a medias.
+
+El arnes se detiene y no toca nada. Corre \`python forja.py gate\` para ver que guarda cae.
+PARADA
+  return 1
+}
+
 para_alexis_por_tablero() { # vuelta salida_de_la_guarda
   cat > "$LOOP/PARA_ALEXIS.md" <<EOF
 # PARA_ALEXIS: el encargo no puede abrir el libro que declara (D.49, D.51)
@@ -975,6 +1042,11 @@ for i in $(seq 1 "$MAX_VUELTAS"); do
       "$LOOP/ultimo_extractor.json" "$i" "$LOOP/REPORTE.md"
 
     git pull --rebase origin "$RAMA" >/dev/null 2>&1 || true
+  fi
+
+  if ! insercion_en_vuelo "$i"; then
+    log "DETENIDO en la vuelta $i: insercion interrumpida con el gate en ROJO. Ver $LOOP/PARA_ALEXIS.md"
+    break
   fi
 
   apertura_ciega "$i"
