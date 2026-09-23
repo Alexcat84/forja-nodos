@@ -90,7 +90,7 @@ def declaraciones():
             "config/frentes.json: 'orden_de_prioridad' sin cita. El orden lo da el "
             "tablero (D.51), y un orden sin cita no se puede releer.")
     for grupo in ("liberados", "cerrados_en_extraccion", "minados_en_cero",
-                  "coste_por_turno"):
+                  "coste_por_turno", "modelos_por_linea"):
         for clave, dato in (datos.get(grupo) or {}).items():
             # Las claves con guion bajo son la nota de lectura del grupo, no una
             # declaracion, y esta casa ya las usa asi en la raiz del fichero.
@@ -610,6 +610,21 @@ def texto(filas=None):
                           % (dato["turnos"], dato["total_usd"],
                              dato["extractor_usd"], dato["auditor_usd"]))
             partes.append("      %s" % dato["modelos"])
+
+    # MODELO Y ESFUERZO POR LINEA Y ASIENTO (22 sep 2026, DOS SEMANAS, punto 3).
+    modelos = dict((k, v) for k, v in (declaraciones().get("modelos_por_linea") or {})
+                   .items() if not k.startswith("_"))
+    if modelos:
+        partes.append("")
+        partes.append("  MODELO Y ESFUERZO POR LINEA Y ASIENTO:")
+        partes.append("    %-24s %-20s %-28s %-28s"
+                      % ("linea", "regimen", "extractor", "auditor"))
+        for nombre in sorted(modelos):
+            m = modelos[nombre]
+            partes.append("    %-24s %-20s %-28s %-28s"
+                          % (nombre, m.get("regimen", ""),
+                             "%s, %s" % (m.get("extractor"), m.get("extractor_esfuerzo")),
+                             "%s, %s" % (m.get("auditor"), m.get("auditor_esfuerzo"))))
 
     cola = [f for f in filas if f.get("tipo") == "doctrina"]
     if cola:

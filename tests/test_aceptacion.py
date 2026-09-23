@@ -4110,6 +4110,47 @@ class PruebaCreditoCoherente(BaseForja):
             s.pop("vuelta")
         self.assertEqual(credito.revisar(sucesos=sucesos), [])
 
+    # ---------------- la correccion declarada de las doce (22 sep 2026, punto 2)
+
+    def test_caso_positivo_la_correccion_alinea_cae_y_TACHA_el_original(self):
+        """**TACHAR, NO BORRAR**, que es como esta casa corrige. La fila que paro al
+        frente `marquet` sube la racha sin decir si cae: queda `cae: true`, que es lo
+        unico coherente con el `2 de 2` que ya declaraba, y el valor viejo se conserva
+        al lado en `cae_original`."""
+        from scripts import corregir_credito_incoherente as c
+        fila = self._tanda(racha="2 de 2", especie="CIFRA PUBLICADA",
+                           tanda="vuelta 4", vuelta=4)
+        nueva = c.corregida(fila, "docs/loop/paradas/X.md, punto 2")
+        self.assertIs(nueva["cae"], True)
+        self.assertEqual(nueva["cae_original"], c.AUSENTE)
+        self.assertEqual(nueva["racha"], "2 de 2", "la racha declarada NO se toca")
+        self.assertIn("paradas/X.md", nueva["correccion"]["cita"])
+        from src import credito
+        self.assertEqual(credito.incoherencias(nueva), [])
+
+    def test_caso_negativo_una_fila_coherente_no_se_toca(self):
+        from scripts import corregir_credito_incoherente as c
+        self.assertIsNone(c.corregida(self._tanda(cae=True, racha="1 de 3"), "x"))
+        self.assertIsNone(c.corregida(self._tanda(cae=False, racha="0 de 3"), "x"))
+
+    def test_la_correccion_no_escribe_si_moveria_una_racha(self):
+        """**CORREGIR HISTORIA NO ES REABRIRLA.** La decision lo dice con esas
+        palabras, y el script lo comprueba antes de escribir: si el estado de alguna
+        especie cambiara, se niega y no toca el fichero."""
+        from scripts import corregir_credito_incoherente as c
+        ruta = os.path.join(self.taller, "CREDITO_una.jsonl")
+        filas = [self._tanda(vuelta=1, tanda="vuelta 1", racha="1 de 3"),
+                 self._tanda(vuelta=1, tanda="ACTA X", cae=True, racha="1 de 3")]
+        comun.escribir_texto(ruta, chr(10).join(json.dumps(f) for f in filas) + chr(10))
+        antes = comun.leer_texto(ruta)
+        self.assertEqual(c.main(["--registro", ruta, "--cita", "paradas/X.md"]), 0)
+        self.assertEqual(comun.leer_texto(ruta), antes, "el ensayo escribio")
+        self.assertEqual(c.main(["--registro", ruta, "--cita", "paradas/X.md",
+                                 "--escribir"]), 0)
+        from src import credito
+        self.assertEqual(
+            credito.incoherentes(sucesos=credito.leer(ruta_registro=ruta)), [])
+
     def test_la_superada_no_desaparece_de_la_vista(self):
         """**EL ARREGLO NO PUEDE SER UN ESCONDITE.** Desde que la propuesta superada
         deja de sumar, una fila incoherente se saldria del replay; por eso
