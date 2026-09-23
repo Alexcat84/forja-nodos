@@ -41,8 +41,16 @@ set -uo pipefail
 cd "$(dirname "$0")"
 
 MAX_VUELTAS="${MAX_VUELTAS:-20}"
-MODELO_EXTRACTOR="${MODELO_EXTRACTOR:-claude-opus-5}"
-MODELO_AUDITOR="${MODELO_AUDITOR:-claude-opus-5}"
+# DESDE EL 22 SEP 2026 todo asiento que corria claude-opus-5 corre claude-opus-5-5
+# (decision del fundador, DOS SEMANAS, punto 3). Los comandos de lanzamiento lo
+# dicen explicito; estos defaults solo mandan cuando nadie lo dice.
+#
+# Y OJO CON EL BINARIO: claude-opus-5-5 exige Claude Code 2.1.280 o posterior. El
+# 22 sep el claude del PATH era el 2.1.231 y rechazaba el modelo con un 400, asi
+# que las dos lineas habrian muerto en su primer turno. Se actualizo con
+# `claude update`. Si un turno sale con ese error, es el binario, no el modelo.
+MODELO_EXTRACTOR="${MODELO_EXTRACTOR:-claude-opus-5-5}"
+MODELO_AUDITOR="${MODELO_AUDITOR:-claude-opus-5-5}"
 # El bucle vive en su propia rama. El merge a main es SIEMPRE decision de
 # Alexis, nunca del bucle (docs/loop/AUDITOR_FORJA.md, condiciones de parada).
 RAMA="${RAMA:-bucle}"
@@ -69,6 +77,32 @@ RAMA="${RAMA:-bucle}"
 # UN VALOR QUE NO SEA UNO DE LOS DOS DETIENE EL ARNES. No se interpreta ni se
 # cae al default: un modo mal escrito es una autorizacion que nadie dio.
 MODO_INSERCION="${MODO_INSERCION:-insertar}"
+
+# EL ESFUERZO VA ATADO AL REGIMEN, COMO LA FASE CIEGA DE D.58 (22 sep 2026).
+#
+# Decision del fundador: en la serial de insercion el esfuerzo va en ALTO en los dos
+# asientos; en el frente de extraccion, el de defecto. Es el mismo razonamiento que
+# apaga la fase ciega en cuarentena: la insercion es la unica fase que toca el grafo
+# y la unica que no se deshace leyendo, y ahi el ahorro no se busca.
+#
+# ESFUERZO_EXTRACTOR y ESFUERZO_AUDITOR mandan si se dan. Se leen con ${VAR-...} y
+# no con ${VAR:-...} A PROPOSITO: una variable dada y VACIA quiere decir "el esfuerzo
+# por defecto del modelo", y eso tiene que poder pedirse tambien en insertar.
+if [ "$MODO_INSERCION" = "insertar" ]; then
+  ESFUERZO_EXTRACTOR="${ESFUERZO_EXTRACTOR-high}"
+  ESFUERZO_AUDITOR="${ESFUERZO_AUDITOR-high}"
+else
+  ESFUERZO_EXTRACTOR="${ESFUERZO_EXTRACTOR-}"
+  ESFUERZO_AUDITOR="${ESFUERZO_AUDITOR-}"
+fi
+
+# El esfuerzo de un asiento, en palabras, para el log: vacio es el de defecto.
+esfuerzo_de() { # rol
+  case "$1" in
+    extractor) printf '%s' "${ESFUERZO_EXTRACTOR:-defecto}" ;;
+    *)         printf '%s' "${ESFUERZO_AUDITOR:-defecto}" ;;
+  esac
+}
 
 # LA RAMA DONDE SE INSERTA, Y SOLO AHI (D.45, 16 sep 2026). La extraccion de
 # libros distintos corre en paralelo, una rama por libro y todas en cuarentena;
@@ -382,11 +416,16 @@ invocar_claude() { # rol modelo prompt salida vuelta [testigo]
   # Un turno que no movio su testigo se trata IGUAL que el fallo instantaneo: se
   # espera y se reintenta el MISMO turno, sin avanzar de rol y con el mismo tope.
   local rol="$1" modelo="$2" prompt="$3" salida="$4" vuelta="$5" testigo="${6:-}"
-  local intento inicio duracion c hash_antes hash_despues motivo
+  local intento inicio duracion c hash_antes hash_despues motivo esfuerzo
+  # EL ESFUERZO DEL ASIENTO. El auditor ciego es el asiento del auditor.
+  local -a con_esfuerzo=()
+  if [ "$rol" = "extractor" ]; then esfuerzo="$ESFUERZO_EXTRACTOR"; else esfuerzo="$ESFUERZO_AUDITOR"; fi
+  [ -n "$esfuerzo" ] && con_esfuerzo=(--effort "$esfuerzo")
   for intento in $(seq 1 "$MAX_INTENTOS"); do
     hash_antes="$(hash_fichero "$testigo")"
     inicio=$SECONDS
     "$CLAUDE_BIN" -p --model "$modelo" --dangerously-skip-permissions \
+      ${con_esfuerzo[@]+"${con_esfuerzo[@]}"} \
       --output-format json \
       "$prompt" \
       > "$salida" 2>>"${LOG_ACTIVO:-$LOOP/loop.log}"
@@ -930,7 +969,7 @@ for i in $(seq 1 "$MAX_VUELTAS"); do
     # EL INFORME DE LOTE VA ANTES DEL TURNO, NO DENTRO (punto 2 del 12 sep 2026).
     # Deja MANDATO_INFORME puesto si corrio, vacio si no habia lote que informar.
     informe_de_lote "$i"
-    log "VUELTA $i : EXTRACTOR ($MODELO_EXTRACTOR)"
+    log "VUELTA $i : EXTRACTOR ($MODELO_EXTRACTOR, esfuerzo $(esfuerzo_de extractor))"
     invocar_claude "extractor" "$MODELO_EXTRACTOR" \
       "$PROMPT_EXTRACTOR_BASE $MANDATO_INFORME" \
       "$LOOP/ultimo_extractor.json" "$i" "$LOOP/REPORTE.md"
@@ -940,7 +979,7 @@ for i in $(seq 1 "$MAX_VUELTAS"); do
 
   apertura_ciega "$i"
 
-  log "VUELTA $i : AUDITOR ($MODELO_AUDITOR)"
+  log "VUELTA $i : AUDITOR ($MODELO_AUDITOR, esfuerzo $(esfuerzo_de auditor))"
   invocar_claude "auditor" "$MODELO_AUDITOR" \
     "$PROMPT_AUDITOR" \
     "$LOOP/ultimo_auditor.json" "$i" "$LOOP/ACTA_AUDITOR.md"
