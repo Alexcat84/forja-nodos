@@ -878,3 +878,8 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | equilibrar_capacidad_personal_inventario_plazo | otro_idioma | manpower | ingles | - |
 | 2026-09-23 | equilibrar_capacidad_personal_inventario_plazo | otro_idioma | capital equipment | ingles | - |
 | 2026-09-23 | equilibrar_capacidad_personal_inventario_plazo | otro_idioma | most cost-effective | ingles | - |
+| 2026-09-23 | preferir_inspeccion_proceso_prueba_destructiva | nombre_largo | La averia silenciosa de la maquina continua: lo que cuesta, la prueba funcional que tira producto y la inspeccion en proceso que no | castellano | - |
+| 2026-09-23 | preferir_inspeccion_proceso_prueba_destructiva | otro_idioma | in-process inspection | ingles | - |
+| 2026-09-23 | preferir_inspeccion_proceso_prueba_destructiva | otro_idioma | functional test | ingles | - |
+| 2026-09-23 | preferir_inspeccion_proceso_prueba_destructiva | otro_idioma | work-in-process | ingles | - |
+| 2026-09-23 | preferir_inspeccion_proceso_prueba_destructiva | otro_idioma | out of specification | ingles | - |

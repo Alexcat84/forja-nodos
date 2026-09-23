@@ -1,0 +1,50 @@
+fila 07, preferir_inspeccion_proceso_prueba_destructiva, lineas --veredicto: 4
+  --veredicto clasificar_trabajo_proceso_montaje_prueba|SANO|El mismo par que clasificar lee desde su lado: la prueba es alli una clase de operacion y aqui una eleccion entre dos maneras de vigilar un parametro. Ninguno despliega una linea del otro.
+  --veredicto rehacer_flujo_paso_limitante_capacidad|SANO|El mismo par que rehacer lee desde su lado, a 0,445 de texto: vocabulario del desayuno, no procedimiento. El candidato elige como inspeccionar la maquina continua (L67); el vecino rehace el flujo por la cola (L51 a L55) (DISCUTIBLE D64.3).
+  --veredicto construir_flujo_produccion_paso_limitante|SANO|El mismo par que construir_flujo lee desde su lado, a 0,410 de texto: vocabulario del desayuno. El candidato elige entre prueba destructiva e inspeccion en proceso (L67); el vecino planea el flujo desde el paso limitante (L19 a L27). Ninguno despliega una linea del otro (DISCUTIBLE D64.3).
+  --veredicto dimensionar_inventario_materia_prima_reposicion|SANO|Hermanos de parrafos seguidos, L67 y L69, sobre la misma maquina de huevos, y con objetos distintos: el candidato vigila el parametro del proceso para que no se estropee el trabajo en curso; el vecino mira el material al recibirlo y dimensiona el inventario de materia prima. Ninguno despliega una linea del otro.
+inicio 2026-09-23 14:13:41
+======================================================================
+ADUANA DE INSERCION, candidato 'preferir_inspeccion_proceso_prueba_destructiva'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 462   (352 del grafo mas 110 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino clasificar_trabajo_proceso_montaje_prueba  [Clasificar tu trabajo en las tres operaciones de produccion: proceso, montaje y prueba]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.461 (umbral 0.60)
+    paso 6 del candidato contra paso 5 de clasificar_trabajo_proceso_montaje_prueba
+
+  vecino rehacer_flujo_paso_limitante_capacidad  [Rehacer el flujo cuando una capacidad limitada mueve el paso que manda]
+    levantada por: similitud_texto
+    similitud_texto    0.445 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.384 (umbral 0.60)
+    paso 1 del candidato contra paso 6 de rehacer_flujo_paso_limitante_capacidad
+
+  vecino construir_flujo_produccion_paso_limitante  [Construir el flujo de produccion desde el paso limitante y escalonar los demas hacia atras]
+    levantada por: similitud_texto
+    similitud_texto    0.410 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.442 (umbral 0.60)
+    paso 6 del candidato contra paso 8 de construir_flujo_produccion_paso_limitante
+
+  vecino dimensionar_inventario_materia_prima_reposicion  [Inspeccionar el material al recibirlo y dimensionar el inventario por el tiempo de reposicion]
+    levantada por: similitud_texto
+    similitud_texto    0.384 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.417 (umbral 0.60)
+    paso 5 del candidato contra paso 6 de dimensionar_inventario_materia_prima_reposicion
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 353
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+
+======================================================================
+fin 2026-09-23 14:30:33 | codigo de salida 0 | 1012.2 s
