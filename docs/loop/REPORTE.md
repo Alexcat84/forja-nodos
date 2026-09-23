@@ -58571,3 +58571,16 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `462`; lineas `--vered
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: rehacer_flujo_paso_limitante_capacidad > equilibrar_capacidad_personal_inventario_plazo
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `7`: `preferir_inspeccion_proceso_prueba_destructiva`, **INSERTADO** en `1012.2` s, codigo `0`, commit `94d8edb`
+
+La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `462`; lineas `--veredicto` pasadas: `4`. Salida entera en `.v65ext/insertar_07_preferir_inspeccion_proceso_prueba_destructiva.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_07_preferir_inspeccion_proceso_prueba_destructiva.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `clasificar_trabajo_proceso_montaje_prueba` | similitud_texto | 0.366 | 0.250 | 0.461 | SANO |
+| `rehacer_flujo_paso_limitante_capacidad` | similitud_texto | 0.445 | 0.000 | 0.384 | SANO |
+| `construir_flujo_produccion_paso_limitante` | similitud_texto | 0.410 | 0.000 | 0.442 | SANO |
+| `dimensionar_inventario_materia_prima_reposicion` | similitud_texto | 0.384 | 0.000 | 0.417 | SANO |
