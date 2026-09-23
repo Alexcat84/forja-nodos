@@ -853,3 +853,10 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | construir_flujo_produccion_paso_limitante | otro_idioma | limiting step | ingles | - |
 | 2026-09-23 | construir_flujo_produccion_paso_limitante | otro_idioma | total throughput time | ingles | - |
 | 2026-09-23 | construir_flujo_produccion_paso_limitante | otro_idioma | time offsets | ingles | - |
+| 2026-09-23 | clasificar_trabajo_proceso_montaje_prueba | nombre_largo | Los tres tipos fundamentales de operacion de produccion, y el camino de vuelta de lo que no pasa su prueba | castellano | - |
+| 2026-09-23 | clasificar_trabajo_proceso_montaje_prueba | otro_idioma | process manufacturing | ingles | - |
+| 2026-09-23 | clasificar_trabajo_proceso_montaje_prueba | otro_idioma | assembly | ingles | - |
+| 2026-09-23 | clasificar_trabajo_proceso_montaje_prueba | otro_idioma | unit test | ingles | - |
+| 2026-09-23 | clasificar_trabajo_proceso_montaje_prueba | otro_idioma | system test | ingles | - |
+| 2026-09-23 | clasificar_trabajo_proceso_montaje_prueba | otro_idioma | rework | ingles | - |
+| 2026-09-23 | clasificar_trabajo_proceso_montaje_prueba | otro_idioma | dry run | ingles | - |

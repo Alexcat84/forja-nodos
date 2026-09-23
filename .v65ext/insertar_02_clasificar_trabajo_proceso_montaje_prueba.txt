@@ -1,0 +1,26 @@
+fila 02, clasificar_trabajo_proceso_montaje_prueba, lineas --veredicto: 1
+  --veredicto preferir_inspeccion_proceso_prueba_destructiva|SANO|Comparten las palabras proceso y prueba, no procedimiento. El candidato clasifica el trabajo en proceso, montaje y prueba y ordena prueba unitaria, reproceso y prueba del sistema (L39 a L45); el vecino elige entre prueba funcional destructiva e inspeccion dentro del proceso para vigilar un parametro de una maquina continua (L67). El paso 3 del candidato nombra la prueba como clase de operacion, y el vecino no despliega esa clasificacion: responde a otra pregunta, como detectar a tiempo una deriva silenciosa.
+inicio 2026-09-23 12:18:33
+======================================================================
+ADUANA DE INSERCION, candidato 'clasificar_trabajo_proceso_montaje_prueba'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 462   (347 del grafo mas 115 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino preferir_inspeccion_proceso_prueba_destructiva  [Preferir la inspeccion dentro del proceso a la prueba que destruye producto]
+    levantada por: similitud_texto
+    similitud_texto    0.372 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.461 (umbral 0.60)
+    paso 5 del candidato contra paso 6 de preferir_inspeccion_proceso_prueba_destructiva
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 348
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-23 12:58:12 | codigo de salida 0 | 2378.6 s
