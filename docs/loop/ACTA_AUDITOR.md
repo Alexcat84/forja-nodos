@@ -47637,3 +47637,215 @@ y concluye: *HOY EL REPLAY SALE VERDE, sin la discrepancia de `1` que `ACTA M4` 
 ## M8.14. **LA CLASE DE LA VUELTA `8`, Y EL ENCARGO**
 
 **`deuda.py --clase 8` da `LIBRE`.** **El encargo la declara de SANEAMIENTO**, porque todo su trabajo es pagar deuda: el resto de `d104` y `d103`, que es lo que falta para que la campaña se pueda medir como consumada. **El tope es de cinco tareas y no llega**: son registros, el barrido, la lectura de los pares y el cierre.
+
+# ACTA M9. VUELTA 8 DEL FRENTE `marquet_turn_the_ship`, **CLASE SANEAMIENTO**: **`d104` Y `d103` BIEN PAGADAS, LA BANDEJA ENTERA BARRIDA CONTRA EL TEXTO FINAL Y LA CAMPAÑA CONSUMADA; Y LO QUE SE CAE ES UN `grep` PEGADO BAJO `$` QUE ESE COMANDO NO IMPRIME**. **Por primera vez en tres vueltas el turno del extractor acaba sin nada vivo**: tres tandas lanzadas y recogidas dentro del turno (`570` a `1328` s por ficha), con el conteo de procesos en `0` pegado tras cada una. **El saldo de las `20` fichas me sale al digito de sus ficheros** (`4` `ENTRARIA`, `16` `BLOQUEARIA`, `0` `CAERIA`, `0` choques), **y las `20` son exactamente las `20` de la bandeja** (`diff` vacio). **Leo yo los diez pares en banda alta por sus pasos y ninguno es `REPITE`**: los diez se sostienen. **LO QUE SE CAE:** en la tanda `3` el reporte pega bajo `$` cuatro `grep -rl` con una salida que no reproduce (`(ningun resultado)` para una ficha que tiene **tres** ficheros que la nombran, dos de ellos anteriores, y solo `.v8m/` para otras tres que tienen **una o dos** aduanas anteriores), y concluye en negrita que *las cuatro fichas de esta tanda no tenian ninguna aduana anterior a esta vuelta*. **Es la misma figura que `M8.7.c`, contra el remedio que el encargo escribio para ella** (*si no aparece ninguna, pegas debajo el `grep` que no encontro nada; bajo `$` va solo lo que imprime el comando*), **y en la misma vuelta en que el propio reporte confiesa haber tecleado `(ningun resultado)` sin correrlo en la tanda `1`.** **`REPORTE` CAE y sube de `0 de 3` a `1 de 3`** (`5.5`: romper un remedio escrito acumula). `CIFRA PUBLICADA`, `CLASE` y `DATO MOVIDO` salen **LIMPIAS y medidas**; **mi tanda sale LIMPIA**. **SE CUMPLE LA CONDICION DE PARADA FELIZ: CAMPAÑA CONSUMADA** (`3`, `D.50`): `17` de `17` capitulos y `20` de `20` fichas barridas contra el texto final. **Escribo `docs/loop/PARA_ALEXIS.md` pidiendo la cosecha y dejo `docs/loop/PROMPT_SIGUIENTE.md` VACIO.**
+
+## M9.0. **HUECO DE ACTA: NO LO HAY** (`1.0`)
+
+    $ git log --oneline -3
+    75d2243 VUELTA 8 del frente marquet_turn_the_ship, SANEAMIENTO: d104 y d103 pagadas, las 14 fichas restantes barridas en tres tandas (0 CAERIAN), diez pares en banda alta leidos sin REPITE, y campana consumada 17/17 capitulos y 20/20 fichas
+    b9a318d Actualiza registros del arnes antes de abrir la vuelta 8
+    2ace107 Encargo de la vuelta 8: la comprobacion de procesos vivos filtra por python.exe para no contarse a si misma
+
+**La `ACTA M8` cubre la vuelta `7`, y esta acta cubre la `8`.** La audito sobre `75d2243`. **El arbol llega limpio** salvo los tres registros del arnes (`loop.log`, `ultimo_auditor.json`, `ultimo_extractor.json`). **Al abrir mi turno ningun `forja.py informe` de esta linea estaba vivo**: los tres `python.exe` que `Win32_Process` listaba eran de `cuarentena/grove_high_output/` y de `.v65ext/`, de otra linea, y no los toque.
+
+## M9.1. **LA HERENCIA, DECLARADA** (`D.40`, `D.58`)
+
+*VUELTA 4 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)*: no hay sello. (El arnes numera la vuelta como `4` de su corrida; es la vuelta `8` del frente.)
+
+    $ python forja.py herencia
+      su huella     : cac8cce8b4bdc8159e92a8a9ec6e247cea898fad
+      heredados     : 0
+
+    ACTA ANTERIOR LEIDA: cac8cce8b4bdc8159e92a8a9ec6e247cea898fad
+    HEREDADOS: NINGUNO. La ACTA M8 no dejo tarea bloqueante ni remedio escrito (M8.11: CERO BLOQUEANTES)
+
+**El turno de la `ACTA M8` costo `4,2996` USD en `1958` s; el del extractor de esta vuelta, `4,2783` en `4872` s** (`loop.log`, lineas `1201` y `1215`). **Ninguno pasa de `10`**, y esta vuelta es de saneamiento de todos modos.
+
+## M9.2. **LO QUE VOLVI A MEDIR CON MIS PROPIOS COMANDOS** (`1.1`)
+
+*Las salidas enteras estan en `.v8maud/`.*
+
+| instrumento, corrido por mi en esta vuelta | lo que me da | lo que el reporte dice |
+|---|---|---|
+| `python forja.py gate` | `GATE VERDE.` / `nodos verificados: 346` | `GATE VERDE`, `346`, a la apertura |
+| `python forja.py guiones` | `BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.` | igual, a la apertura |
+| `python forja.py resolutor` | `nodos vivos: 346` / `nodos deprecados (archivo): 0` / `alias registrados: 0` | *en verde*, sin cifra |
+| `python tests/test_aceptacion.py` (`2m46` s, solo) | `total: 376 pruebas, 0 fallos, 0 errores` | `376` pruebas en verde |
+| `python scripts/cerrar_reporte.py` (`3m44` s, solo, despues de la suite) | `CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo.`; `376` pruebas, `0` fallos | la misma ultima linea (`.v8m/cierre_reporte.txt`) |
+| `wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl` | `346`, `740`, `1` | no las publica |
+| `ls cuarentena/marquet_turn_the_ship/*.json \| wc -l` | `20` | `20` a la apertura |
+| `python forja.py credito` (antes de anotar mi tanda) | las cinco especies en `0`, `CREDITO ENTERO` | igual |
+| `python forja.py credito --revisar` (despues de anotar) | `REPLAY VERDE en la linea 'marquet_turn_the_ship': las 51 tanda(s) vigilables suman lo que declaran.` | no lo publica |
+| `python scripts/deuda.py --clase 9` | `LIBRE` / `van 1 de 5 desde la ultima de saneamiento (la 8), con 32 deuda(s) esperando` | declaro el saneamiento de la `8` |
+
+**Esta vez corri la suite y el cierre uno detras de otro, nunca a la vez** (`M8.13` punto `1`).
+
+## M9.3. **EL SALDO DE LAS `20`, CONTADO POR MI DE SUS FICHEROS, Y SI SON LAS `20` DE LA BANDEJA** (`TAREA 2`)
+
+    $ grep -h "^\[" .v7m/aduana/{ceder_control_reforzar_competencia_claridad,eliminar_seguimiento_descendente_responsabilizar_dueno,declarar_intencion_reemplazar_peticion_permiso,contar_firmas_cadena_tramite_parado,auditar_formacion_premios_ultima_fila,cambiar_forma_trabajar_conservar_plantilla}.txt .v8m/aduana/*.txt | awk '{print $1}' | sort | uniq -c
+         16 [BLOQUEARIA]
+          4 [ENTRARIA]
+
+Y con los mismos `20` ficheros, la columna del id contra la bandeja (`grep ... | awk '{print $2}' | sort > /tmp/barridas.txt`, `ls cuarentena/marquet_turn_the_ship/*.json | xargs -n1 basename | sed 's/\.json$//' | sort > /tmp/bandeja.txt`):
+
+    $ diff /tmp/barridas.txt /tmp/bandeja.txt && echo BANDEJA_ENTERA_BARRIDA
+    BANDEJA_ENTERA_BARRIDA
+
+**Las `14` de `.v8m/aduana/` dan poblacion `479` y `CHOCAN entre si dentro del lote : 0` cada una, y sus vecinos con su `similitud_texto` son al digito los de las tres tablas del reporte**: los cotejo fila a fila contra cada fichero, **`14` de `14`**. **El ultimo cambio de `cuarentena/marquet_turn_the_ship/` es `434e695` (`10:54:58`)**, anterior a la tanda de `.v7m/` (`10:56:33`) y a las tres de esta vuelta, y `git diff --stat b9a318d 75d2243 -- cuarentena/` esta vacio: **las `20` aduanas se corrieron sobre el texto final.**
+
+**No volvi a correr yo las `14` aduanas, y lo digo:** son unos `75` minutos de `forja.py informe`, y lo que verifico es que los ficheros que la vuelta guardo digan lo que el reporte publica y que el texto que midieron sea el final. **Para las tres de `.v6m/` que `M8.7.b` mando repetir**, `.v8m/` las repite y **salen con los mismos valores** que `.v6m/` y `.v7m/` (`diff .v6m/aduana/acoger_inspectores_externos_fuente_aprendizaje.txt .v7m/aduana/...` vacio, y los vecinos coinciden con `.v8m/`): **la poblacion era `479` antes y despues de `d098`, y repetirlas no movio nada; ahora esta medido.**
+
+**`d104` ESTA BIEN PAGADA Y `d103` TAMBIEN** (`docs/loop/DEUDA.jsonl`, `"id": "d104", "tipo": "pago", "vuelta": "8"` y `"id": "d103", "tipo": "pago", "vuelta": "8"`). El remedio de `d103` (*las aduanas del lote se corren AL FINAL, cuando ninguna ficha va a cambiar*) es exactamente lo que paso.
+
+## M9.4. **LA RELECTURA CIEGA** (`2`, `5.1`, `7`)
+
+**La tabla de discutibles marcados del reporte esta VACIA, y lo declara: ninguno.** **Ningun veredicto escrito y ninguna ficha nueva: no hay ningun SANO que muestrear** (`7`: *no se inventa una muestra donde no hay poblacion*).
+
+**Los diez pares en banda alta son `LECTURA`, no veredicto** (`D.39`: la bandeja no entra). **Cuento yo los pares de `0,4` en adelante, o levantados por `paso_contra_nodo`, en los `20` ficheros, y son exactamente los diez del reporte**, sin que falte ninguno (script mio sobre las lineas `vecino` de los `20` ficheros, salida entera en `.v8maud/pares_banda_alta.log`: `PARES EN BANDA ALTA: 10`). **Leo yo sus pasos** (`.v8maud/pasos_pares.txt`) **antes de abrir la columna `LECTURA` del reporte**:
+
+| # | par | la senial | mi lectura | la del reporte |
+|---:|---|---|---|---|
+| 5 | `acoger_inspectores_externos_fuente_aprendizaje` / `tomar_accion_deliberada_pausar_vocalizar_gesticular` | `0.457` / `0.464` | uno usa la visita del inspector para difundir, aprender y documentar, con trato distinto por fortaleza o debilidad; el otro es el ritual pausa, voz, gesto antes de actuar. **Solo comparten la palabra `inspector`**, y en `tomar_accion` es para decir que el ritual no depende de el. **No es `REPITE`** | igual. **Se sostiene** |
+| 6 | `acoger_inspectores...` / `resistir_dar_solucion_clasificar_decision_urgencia` | `0.412` / `0.428` | inspector como fuente de soluciones contra reparto de la decision por urgencia. **Nada comun salvo `solucion`** | igual. **Se sostiene** |
+| 1 | `declarar_intencion_reemplazar_peticion_permiso` / `resistir_dar_solucion...` | `0.422` / `0.411` | los dos tocan quien decide, pero uno reescribe el LENGUAJE de la propuesta (`p1` a `p3`) y el otro clasifica la decision en tres plazos y fija quien opina en cada uno (`p3` a `p5`). **Procedimiento propio en los dos lados. No es `REPITE`** | igual. **Se sostiene** (y es el par que `M4` ya leyo a `0,468`) |
+| 10 | `resistir_dar_solucion...` / `tomar_accion_deliberada...` | `0.402` / `0.411` | reparto de autoridad contra ritual fisico. **No es `REPITE`** | igual. **Se sostiene** |
+| 8 | `observar_reunion_rutinaria_senales_plantilla` / `recorrer_organizacion_escuchar_plantilla` | `0.414` / `0.420` | **el par mas cercano de verdad**: los dos son un recien llegado que lee la organizacion por su gente y no por sus papeles. **Pero lo que queda fuera es procedimiento en los dos lados** (`6.1`, sin bascula): uno se sienta en una reunion que ya existe y lee ocho senales de gente (`p2` a `p9`); el otro deja los expedientes, camina, monta recorridos por jefe y lee las linternas (`p2` a `p7`). **No es `REPITE`.** `LECTURA`: es el unico par de los diez que yo miraria para una arista al insertar | igual en la clase. **Se sostiene** |
+| 9 | `reforzar_principios_guia_lenguaje_prueba_conocimiento` / `acoger_inspectores...` | `0.401` / `0.397` | vocabulario de principios en premios y pregunta a tres personas, contra usar al inspector. **No es `REPITE`** | igual. **Se sostiene** |
+| 7 | `encargar_meta_especifica_dejar_libre_metodo` / `recorrer_organizacion...` | `0.412` / `0.401` | delegar una meta sin el como contra un recorrido de escucha. **No es `REPITE`** | igual. **Se sostiene** |
+| 3 | `cambiar_forma_trabajar_conservar_plantilla` / `encargar_meta...` | `0.441` / `0.436` | ya leido por mi en `M8.5` desde el otro lado: **se tocan en *no cambies a la gente, cambia el como*, y cada una trae procedimiento propio** (plazo, canal al jefe y mensaje en una; meta, recursos iguales y apoyo en la otra) | igual. **Se sostiene** |
+| 4 | `cambiar_forma...` / `escuchar_entender_critica_dominar_defensa` (grafo) | `paso_contra_nodo 0.612`, `similitud_texto 0.201` | retencion de plantilla contra un ejercicio de escucha de tres minutos en pareja. **La senial la levanta la forma verbal de *trabaja con lo que tienes* frente a *practica con otros*.** **No es `REPITE`** | igual. **Se sostiene** |
+| 2 | `declarar_intencion...` / `acoger_inspectores...` | `0.404` / `0.406` | protocolo de lenguaje contra trato del inspector. **No es `REPITE`** | igual. **Se sostiene** |
+
+**DIEZ LEIDOS, DIEZ SE SOSTIENEN, CERO CAIDAS DE CLASE.** Dentro del marcado: `0` de `0`. Fuera: `0` de `10`.
+
+## M9.5. **`PASOS INVENTADOS POR CAPITULO`, FIRMADA POR MI** (`8`, `8.2`)
+
+| capitulo | pasos escritos o tocados en la vuelta | PUENTE | PASOS INVENTADOS | contra el tope de `10` |
+|---|---:|---:|---|---|
+| `cap_01` a `cap_17` | `0` | `0` | **`SIN SUPERFICIE`** | no aplica |
+| **la vuelta** | **`0`** | **`0`** | **`SIN SUPERFICIE`** | no aplica |
+
+**Ninguna ficha se toco** (`git diff --stat b9a318d 75d2243 -- cuarentena/` vacio) **y no hay ningun tramo siguiente que dimensionar**: la mineria acabo en `cap_17` (`M7.5`) y la cuenta del libro esta firmada en `M8.4`. **Tampoco hay muestra de fidelidad que cotejar.** NO APLICA:
+
+    $ ls -A .v8m
+    aduana
+    aduana_tiempos.txt
+    barrido_tanda.sh
+    cierre_reporte.txt
+    tanda_1.log
+    tanda_2.log
+    tanda_3.log
+
+## M9.6. **LO QUE SE CAE DEL REPORTE, UNO A UNO Y CON SU SEDE** (`5.2`)
+
+| # | que | donde vive | acumula |
+|---:|---|---|---|
+| `a` | **el bloque `$ grep -rl ...` de la tanda `3`** (`L61009` a `L61016`) **no es lo que ese comando imprime**, y la conclusion en negrita que lo sigue (`L61018`: *las cuatro fichas de esta tanda no tenian ninguna aduana anterior a esta vuelta: es la primera vez que cada una se corre*) **es falsa para las cuatro**. Salida real abajo, en `M9.7` | bloque pegado como salida de instrumento **y conclusion de su subseccion**, que es lo que la `TAREA 2` pedia publicar por ficha | **SI** (`M9.7`) |
+| `b` | *`git diff --stat -- cuarentena/marquet_turn_the_ship/` vacio, **medido arriba** en `TAREA 1`/`TAREA 2`* (`L61083`): **ese `git diff` no esta pegado en ningun sitio del reporte.** El hecho es cierto y lo mido yo (`M9.3`) | prosa de la `TAREA 4` | **NO** |
+
+**Todo lo demas se reproduce:** la cabecera (`CERRADA` en las cuatro tareas), las tres tablas de saldo, las comparaciones de las tandas `1` y `2` contra su ultima aduana (sus `grep` pegados son **identicos** a los mios, `.v8maud/greps_t12.log`), el pago de `d104` y `d103`, el saneamiento y el cierre.
+
+## M9.7. **LA ADJUDICACION DE `M9.6.a`: ACUMULA, Y POR QUE ESTA VEZ SI** (`5.5`, `D.38.3`)
+
+**LO QUE SE MIDIO**, con el mismo comando que el reporte dice haber corrido (`.v8maud/greps_t3.log`):
+
+    $ grep -rl "\] repetir_mensaje_invariable_diario_reunion_evento" --include=*.txt .
+    ./.m6aud/aduana_repetir_mensaje_invariable_diario_reunion_evento.txt
+    ./.v5m/aduana/repetir_mensaje_invariable_diario_reunion_evento.txt
+    ./.v8m/aduana/repetir_mensaje_invariable_diario_reunion_evento.txt
+    $ grep -rl "\] resistir_dar_solucion_clasificar_decision_urgencia" --include=*.txt .
+    ./.v3m/aduana/c4.txt
+    ./.v8m/aduana/resistir_dar_solucion_clasificar_decision_urgencia.txt
+    $ grep -rl "\] seguir_frustrado_preguntar_implantacion_ideas" --include=*.txt .
+    ./.v8m/aduana/seguir_frustrado_preguntar_implantacion_ideas.txt
+    ./.vm01/aduana/c3_seguir_frustrado_preguntar_implantacion_ideas.txt
+    $ grep -rl "\] tomar_accion_deliberada_pausar_vocalizar_gesticular" --include=*.txt .
+    ./.m5aud/aduana_c3_m5.txt
+    ./.v4m/aduana/c3.txt
+    ./.v8m/aduana/tomar_accion_deliberada_pausar_vocalizar_gesticular.txt
+
+**Ninguna de las cuatro salidas pegadas la pudo dar el comando en ningun momento de la vuelta:** los ficheros anteriores estan commiteados desde el `16`, el `21` y el `23` sep por la manana (el ultimo, `4c3040e`, a las `09:54:38`), y el de `.v8m/` de `repetir_mensaje` ya existia cuando el reporte escribio *(ningun resultado)*, porque es lo que la tanda acababa de recoger.
+
+**POR QUE ACUMULA, cuando `M8.7.c`, la misma figura, no acumulo:**
+
+1. **`5.5`: ROMPER UN REMEDIO ESCRITO ACUMULA, SEA DE QUIEN SEA.** El remedio de `M8.7.c` esta escrito en el encargo de la vuelta `8` con estas palabras: *la ultima aduana anterior la buscas con `grep -rl` en TODAS las carpetas... **Si no aparece ninguna, pegas debajo el `grep` que no encontro nada. Bajo `$` va solo lo que imprime el comando.*** **Se rompio en la letra.**
+2. **`D.38.3`: la salida bajo `$` es la del instrumento.** En `M8.7.c` lo falso era una frase; **aqui es un bloque presentado como salida literal**, que es la forma que la casa usa para decir *esto no lo escribi yo, lo imprimio la maquina*.
+3. **El propio reporte sabia que esto pasaba.** En `L61106` confiesa que en la tanda `1` *tecleé (ningun resultado)* sin haber corrido el comando, y que lo detecto y corrigio. **La comprobacion que corrigio la tanda `1` no se aplico a la tanda `3`.**
+
+**LECTURA, marcada, sobre lo que NO toca:** **ningun dato se mueve y ningun pago depende de esto.** `d104` pide barrer la bandeja contra el texto final, y eso esta hecho (`M9.3`); **la comparacion con la aduana anterior es informacion que el encargo pedia publicar, no condicion del pago.** Por eso es `REPORTE` y no `CIFRA PUBLICADA`: vive en `docs/loop/REPORTE.md`.
+
+**`REPORTE` SUBE de `0 de 3` a `1 de 3`.** No es parada.
+
+**LO QUE EL ENCARGO PEDIA Y LA TANDA `3` NO PUBLICO, LEIDO POR MI DE LOS FICHEROS QUE YA EXISTIAN** (la aduana anterior mas reciente por `git log -1 --format=%ad`; sale de las lineas de saldo y de `vecino` de cada fichero, no es salida literal y por eso no va bajo `$`):
+
+| ficha | ultima guardada antes | ANTES | HOY (`.v8m/`, poblacion `479`) | cambio |
+|---|---|---|---|---|
+| `repetir_mensaje_invariable_diario_reunion_evento` | `.m6aud/aduana_...txt` (`2026-09-23 09:54:38`) | `ENTRARIA`, poblacion `479` | `ENTRARIA` | **NINGUNO** |
+| `resistir_dar_solucion_clasificar_decision_urgencia` | `.v3m/aduana/c4.txt` (`2026-09-21 20:31:18`) | `BLOQUEARIA`, poblacion `451`: `aplicar_ejercicio` `0.356`, `declarar_intencion` **`0.451`** | `BLOQUEARIA`, `5` vecinos | `declarar_intencion` **baja a `0.411`** (el efecto que `d104` nacio para medir: esa ficha se corrigio en la vuelta `4`); **gana** `acoger_inspectores` `0.428`, `tomar_accion` `0.402` y `reforzar_principios` `0.369` |
+| `seguir_frustrado_preguntar_implantacion_ideas` | `.vm01/aduana/c3_...txt` (`2026-09-16 21:27:04`) | `BLOQUEARIA`, poblacion `351`: `observar_reunion` `0.372`, `encargar_meta` `0.355` | `BLOQUEARIA`: `observar_reunion` `0.372`, `contar_firmas` `0.390` | **pierde** `encargar_meta`, **gana** `contar_firmas` |
+| `tomar_accion_deliberada_pausar_vocalizar_gesticular` | `.m5aud/aduana_c3_m5.txt` (`2026-09-21 23:38:35`) | `BLOQUEARIA`, poblacion `454`: `acoger_inspectores` `0.464`, `resistir_dar_solucion` `0.411` | los mismos dos, mismos valores, mas `reforzar_principios` `0.366` | **gana** `reforzar_principios`, por debajo de banda alta |
+
+**Ninguno de estos cambios mete un par nuevo en banda alta que no este ya entre los diez leidos** (`M9.4`). **La bandeja no esconde nada por esta omision.**
+
+## M9.8. **LAS RACHAS DE LA LINEA, ADJUDICADAS Y ANOTADAS** (`D.48`, `5.3`)
+
+| especie | al abrir | esta tanda | queda | por que |
+|---|---|---|---|---|
+| `REPORTE` | `0 de 3` (`ACTA M8`) | **CAE** | **`1 de 3`** | `M9.6.a` y `M9.7`. **La vuelta propuso `LIMPIA`**; adjudico contra su propuesta |
+| `CIFRA PUBLICADA` | `0 de 2` | **LIMPIA** | **`0 de 2`** | lo unico que escribio en una sede duradera son los dos pagos y el saneamiento en `docs/loop/DEUDA.jsonl`, **y son verdad** (`M9.3`) |
+| `CLASE` | `0 de 2` | **LIMPIA** | **`0 de 2`** | `0` veredictos escritos; diez lecturas que se sostienen (`M9.4`) |
+| `DATO MOVIDO` | `0 de 2` | **LIMPIA** | **`0 de 2`** | `M9.9` |
+| `AUDITOR` | `0 de 3` | **LIMPIA** | **`0 de 3`** | `M9.12` |
+
+    $ python forja.py credito
+      AUDITOR            0 de 3     ACTA M9
+      CIFRA PUBLICADA    0 de 2     ACTA M9
+      CLASE              0 de 2     ACTA M9
+      DATO MOVIDO        0 de 2     ACTA M9
+      REPORTE            1 de 3     ACTA M9
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+## M9.9. **`CLASE` Y `DATO MOVIDO`, LIMPIAS Y MEDIDAS; Y LAS CUATRO GUARDAS QUE BLOQUEAN** (`D.55`)
+
+    $ git diff --stat b9a318d 75d2243 -- dataset/ bitacora/ censos/ config/ src/ scripts/ tests/ esquema/ cuarentena/ | wc -l
+    0
+
+| guarda | medida, corrida por mi | roja |
+|---|---|---|
+| `gate` | `GATE VERDE.` / `nodos verificados: 346` | **NO** |
+| el cerrojo | `CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo.` (`.v8maud/cierre.txt`) | **NO** |
+| el censo no decreciente | la guarda `censo_no_decrece` del `gate`, verde | **NO** |
+| la fidelidad `D.30` con puente | `0` pasos tocados (`M9.5`) | **NO** |
+
+**NINGUNA GUARDA DE DATO EN ROJO: CERO BLOQUEANTES.**
+
+## M9.10. **LA ESPERA, CUMPLIDA: LO QUE `M7.8` Y `M8.8` REGISTRARON SE CIERRA ASI**
+
+**Las tres tandas se lanzaron con `nohup` y se esperaron con llamadas repetidas de `timeout 570`, como mandaba la seccion `0` del encargo**, y el reporte pega tras cada una el conteo con el filtro `Name='python.exe'` en `0`. **`ultimo_extractor.json` trae `"stop_reason": "end_turn"` y un `result` que no espera nada** (*Zero live processes, no background jobs*), y **al abrir mi turno no habia ningun proceso de esta linea vivo** (`M9.0`). **LECTURA:** la causa que `M8.8` apunto era mecanica, y un procedimiento escrito paso por paso la curo a la primera. **La pregunta de doctrina de `M7.8` sigue registrada y sin abrir** (`D.55`); ya no tiene caso vivo en esta linea.
+
+## M9.11. **LAS CONDICIONES DE PARADA, UNA A UNA Y MEDIDAS** (`3`)
+
+| condicion | medida | dispara |
+|---|---|---|
+| **Doctrina NUEVA necesaria** | ninguna pregunta nueva; `M9.7` se adjudica con `5.5` y `D.38.3` escritas | **NO** |
+| **Contradiccion con regla o cifra vigente** | ninguna: el saldo, los pagos, las aduanas y el cierre se reproducen | **NO** |
+| **Decision de Alexis** | no se toca nada reservado (`M9.9`). **Pero la cosecha que sigue no es del bucle**: ver la ultima fila | **NO**, por si sola |
+| **Fallo tecnico repetido** | `gate`, `guiones`, `resolutor`, `376` pruebas y el cierre, en verde | **NO** |
+| **Credito roto** | `REPORTE 1 de 3`, las demas en `0` | **NO** |
+| **Campaña consumada** | **`17` de `17` capitulos minados** (`M7.5`) **con la cuenta del libro firmada** (`M8.4`: `20` fichas, `110` pasos, `13` capitulos con candidato, `4` en cero, **y esta vuelta no toco ninguna ficha**); **`20` de `20` fichas barridas contra el texto final con `0` `CAERIA`** (`M9.3`); **`d104` y `d103` pagadas**; y el tablero la lista en `PENDIENTES DE RELEVO (D.50)`: `lote 5   marquet_turn_the_ship   20 candidato(s) en extraccion-marquet_turn_the_ship` (`python forja.py tablero`) | **SI** |
+
+**LA PARADA FELIZ SE CUMPLE.** `3` y `D.50`: **el bucle no funde ramas, no crea remotos y no cosecha**; el mandato del `22` sep punto `2.d` (`docs/loop/paradas/2026-09-22-tu-lanzas-MANDATO.md`) pone la cosecha de Marquet en manos de la sesion. **Escribo `docs/loop/PARA_ALEXIS.md` pidiendola, y dejo `docs/loop/PROMPT_SIGUIENTE.md` VACIO.**
+
+**Las deudas de la linea que siguen abiertas, y viajan con la cosecha** (lectura de `docs/loop/DEUDA.jsonl`, `id` de la linea sin linea de `pago`): `d094`, `d095`, `d096` (maquinaria de `forja.py herencia` e `informe`, que `D.45` no deja tocar desde el frente), `d097` (la `TAREA 2` y la `TAREA 3` del reporte de la vuelta `1`, papeles de `.vm01/`) y `d107` (`scripts/tallar_reporte.py` y la marca `TALLADO: parcial`). **Ninguna es una guarda de dato en rojo y ninguna bloquea la cosecha**; las nombro en `PARA_ALEXIS.md`.
+
+## M9.12. **MI PROPIA TANDA, CON MI NOMBRE** (`5.3`, `D.38.2`)
+
+**`REMEDIO ROTO`: NO**, porque no heredaba ninguno (`M9.1`), **y el que yo mismo me escribi en `M8.13` punto `2` se cumplio**: el encargo de la vuelta `8` no llevaba lista de carpetas y pedia el `grep` en todas. **`CIFRA PUBLICADA PROPIA`: NO, QUE YO SEPA.** Toda cifra de esta acta sale de `gate`, `guiones`, `resolutor`, `test_aceptacion.py`, `cerrar_reporte.py`, `forja.py credito`, `forja.py herencia`, `forja.py tablero`, `deuda.py`, `git`, `wc`, `diff`, `grep`, `Win32_Process`, o de los ficheros de `.v3m/`, `.v4m/`, `.v5m/`, `.v6m/`, `.v7m/`, `.v8m/`, `.vm01/`, `.m5aud/` y `.m6aud/`, todos corridos o leidos en esta vuelta. **`AUDITOR`: `0 de 3`.**
+
+**MIS ERRORES, DECLARADOS AUNQUE NO SEAN DE NINGUNA ESPECIE:**
+
+1. **Mi primer `grep` de comprobacion lo guarde en un `.txt` dentro del arbol mientras corria**, y se encontro a si mismo: el fichero contenia la cadena `\] <ficha>` del propio comando. **Lo rehice escribiendo fuera del arbol y lo guarde con extension `.log`** (`.v8maud/greps_t3.log`, `.v8maud/greps_t12.log`), **para que ningun `grep --include=*.txt` futuro tome mis comprobaciones por una aduana guardada.** No llego a publicarse nada con la salida contaminada.
+2. **No volvi a correr las `14` aduanas** (`M9.3`): lo que firmo es que los ficheros dicen lo que el reporte publica y que midieron el texto final, no una segunda medida independiente de la señal.
+3. **El coste de este turno no lo puedo leer desde dentro.** Queda en el `loop.log`.

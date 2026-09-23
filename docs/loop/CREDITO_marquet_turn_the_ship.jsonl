@@ -45,3 +45,8 @@
 {"cae": false, "cita": "docs/loop/REPORTE.md, VUELTA 8 TAREA 2 y TAREA 3", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "vuelta 8", "tipo": "tanda", "vuelta": 8}
 {"cae": false, "cita": "docs/loop/PROMPT_SIGUIENTE.md, VUELTA 8 cabecera", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "vuelta 8", "tipo": "tanda", "vuelta": 8}
 {"cae": false, "cita": "docs/loop/REPORTE.md, VUELTA 8, git diff vacio sobre dataset/bitacora/censos/config/src/scripts/tests/esquema", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "vuelta 8", "tipo": "tanda", "vuelta": 8}
+{"cae": true, "cita": "ACTA M9, seccion M9.6 y M9.7", "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "1 de 3", "tanda": "ACTA M9", "tipo": "tanda", "vuelta": 8}
+{"cae": false, "cita": "ACTA M9, seccion M9.8", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M9", "tipo": "tanda", "vuelta": 8}
+{"cae": false, "cita": "ACTA M9, seccion M9.9", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M9", "tipo": "tanda", "vuelta": 8}
+{"cae": false, "cita": "ACTA M9, seccion M9.9", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M9", "tipo": "tanda", "vuelta": 8}
+{"cae": false, "cita": "ACTA M9, seccion M9.12", "especie": "AUDITOR", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M9", "tipo": "tanda", "vuelta": 8}
