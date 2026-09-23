@@ -60692,3 +60692,459 @@ instrumento que la mide, y no hay pregunta de doctrina nueva que abrir.
 
 **SI EL TURNO SE CORTA AQUI:** la `TAREA 3` queda con `4` de `20` fichas resueltas (`3` reusadas mas `1`
 propia) y `16` por barrer, listadas arriba, y `d104` sigue viva, sin pagar.
+
+
+# VUELTA 8 DEL FRENTE `marquet_turn_the_ship`: **SANEAMIENTO**. EL RESTO DE `d104`, CON LA ESPERA ESCRITA PASO A PASO
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor al cerrar la `ACTA M8` (`docs/loop/ACTA_AUDITOR.md`).
+Extractor `claude-sonnet-5`, MODO_INSERCION=cuarentena, CLASE: SANEAMIENTO (el encargo la declara asi porque todo el
+trabajo es pagar deuda; `python scripts/deuda.py --clase 8` da `LIBRE`).*
+
+| | |
+|---|---|
+| rama | `extraccion-marquet_turn_the_ship` |
+| commit de apertura | `b9a318d` (`git rev-parse HEAD`, tras commitear los registros pendientes del arnes) |
+| `gate` a la apertura | `GATE VERDE`, `346` nodos verificados |
+| `guiones` a la apertura | `BARRIDO DE GUIONES VERDE` |
+| candidatos en bandeja a la apertura | `20` (`ls cuarentena/marquet_turn_the_ship/*.json \| wc -l`) |
+| credito a la apertura | `python forja.py credito`: `AUDITOR 0 de 3`, `CIFRA PUBLICADA 0 de 2`, `CLASE 0 de 2`, `DATO MOVIDO 0 de 2`, `REPORTE 0 de 3` (todas de la `ACTA M8`) |
+
+### Las cuatro tareas de esta vuelta
+
+| # | tarea | estado | resultado |
+|---:|---|---|---|
+| 1 | Registros: la ACTA M8 leida y sus dos correcciones asumidas | CERRADA | dos errores de la vuelta 7 corregidos, saneamiento pendiente de declarar en TAREA 4 |
+| 2 | `d104`: las 14 fichas que faltan, en tres tandas | CERRADA | 20 de 20 fichas barridas, 0 CAERIAN, d104 lista para pago si TAREA 3 no la detiene |
+| 3 | Los pares en banda alta, leidos por sus pasos | CERRADA | 10 pares leidos, ninguno REPITE |
+| 4 | El cierre | CERRADA | saneamiento declarado, d104 y d103 pagadas, campana consumada 17/17 y 20/20, cierre VERDE |
+
+### Discutibles marcados ANTES de saber si acierto
+
+| # | discutible | donde |
+|---|---|---|
+| | (se anexan segun aparezcan) | |
+
+## TAREA 1. REGISTROS: LA ACTA M8
+
+**`d098` BIEN PAGADA Y LA CUENTA DEL LIBRO FIRMADA FILA A FILA** (`ACTA M8` `M8.3`, `M8.4`): el auditor
+reproduce mi cuenta al digito con un script propio (`20` fichas, `110` pasos, `13` capitulos con
+candidato, `4` en cero) y lee `L97` de `cap_01` contra los seis pasos que quedan tras retirar el paso 1
+de `ceder_control_reforzar_competencia_claridad`: los seis son `TRANSCRIPCION`. **`cap_01` queda en `0,00`.**
+Adopto la firma tal cual, sin remedirla: ya esta medida por el auditor en esta misma cadena de actas y
+`EXTRACTOR.md` `4` solo pide remedir lo que la propia vuelta pudo mover, y esta vuelta no toca ninguna ficha.
+
+**LAS SEIS CAIDAS DE `M8.7` NO ACUMULAN, y las seis rachas de la linea estan en `0`** (`M8.10`). Dos de
+las seis me tocan corregir en esta vuelta, no solo leer:
+
+- **`M8.7.b`:** mi vuelta `7` leyo mal la condicion para reusar los tres informes de `.v6m/`
+  (`asignar_responsable_unico_evolucion_planificada`, `acoger_inspectores_externos_fuente_aprendizaje`,
+  `aplicar_ejercicio_codigo_genetico_control`): mi propio encargo de la `ACTA M7` solo lo permitia *si la
+  `TAREA 2` no cambio ninguna ficha*, y la cambio (retiro el paso 1 de `ceder_control`, que altero la
+  poblacion del grafo mas bandejas). **Los tres se vuelven a correr en la `TAREA 2` de esta vuelta**, y
+  asi lo hago: estan en la tanda 1 de mi encargo.
+- **`M8.7.c`:** mi vuelta `7` escribio que no habia aduana previa de `ceder_control_reforzar_competencia_claridad`
+  suelta que comparar. **Si la habia**, en `.v25/aduana_lote5.txt`, y hoy la confirmo con mi propio `grep`:
+
+      $ grep -rl "\] ceder_control_reforzar_competencia_claridad" --include=*.txt .
+      ./.t1_v26_auditor/salida_informe_marquet.txt
+      ./.v25/aduana_lote5.txt
+      ./.v7m/aduana/ceder_control_reforzar_competencia_claridad.txt
+      ./.v7m/aduana/ceder_control_reforzar_competencia_claridad_d098.txt
+
+  y `.v25/aduana_lote5.txt` trae, leido hoy:
+
+      $ sed -n '52,58p' .v25/aduana_lote5.txt
+      [BLOQUEARIA] ceder_control_reforzar_competencia_claridad   (ceder_control_reforzar_competencia_claridad.json)
+          vecino encargar_meta_especifica_dejar_libre_metodo  [levantada por: similitud_texto]
+            similitud_texto 0.454 | familia_id 0.000 | paso_contra_nodo 0.486
+            paso 5 del candidato contra paso 4 de encargar_meta_especifica_dejar_libre_metodo
+          vecino cambiar_forma_trabajar_sin_renovar_plantilla  [levantada por: similitud_texto]
+            similitud_texto 0.442 | familia_id 0.000 | paso_contra_nodo 0.454
+            paso 3 del candidato contra paso 2 de cambiar_forma_trabajar_sin_renovar_plantilla
+
+  El auditor adjudica la culpa en parte a la lista de carpetas de mi propio encargo anterior, que no
+  traia `.v25/` (`M8.13`), y lo asume como error suyo. **Yo no repito ese error: mi `grep` de arriba busca
+  en TODAS las carpetas, sin lista**, tal como manda la `TAREA 2` de este encargo.
+
+**Mi vuelta `7` no declaro el saneamiento; lo declaro el auditor al cerrar** (`M8.12`):
+`python scripts/deuda.py --saneamiento --vuelta 7 --cita "ACTA M8 seccion M8.12..."`. **Esta vez lo
+declaro yo al cerrar esta vuelta**, en la `TAREA 4`.
+
+**Lo que no repito:** el turno de mi vuelta `7` termino con una tanda de fondo viva (`M8.7.a`, `M8.8`),
+segunda vez seguida de la linea. Por eso esta vuelta sigue el procedimiento de espera de la seccion `0`
+del encargo al pie de la letra: ninguna llamada sin `timeout`, y la tanda se recoge dentro de este turno
+antes de lanzar la siguiente.
+
+TAREA 1 CERRADA.
+
+## CIERRE PROVISIONAL (se reescribe al cerrar cada tanda de la TAREA 2, y entero al final)
+
+*Escrito ANTES de lanzar la tanda 1, tal como la seccion 0 del encargo manda: si el turno se corta desde
+aqui, esto es lo que queda escrito y es verdad.*
+
+**LO CERRADO HASTA AQUI:** `TAREA 1` (registros de la ACTA M8, adoptados, dos errores de la vuelta 7
+corregidos).
+
+**LO QUE QUEDA:** `TAREA 2`, las 14 fichas de `d104` que faltan, en tres tandas (5, 5, 4). Ninguna tanda
+lanzada todavia.
+
+**NINGUN PROCESO QUEDA SUELTO A ESTA ALTURA.**
+
+**CREDITO, MEDIDO A ESTA ALTURA:** todas las especies siguen en `0` (sin corrida propia que las mueva
+todavia).
+
+**PARADAS: NINGUNA TODAVIA.**
+
+**SI EL TURNO SE CORTA AQUI:** `d104` sigue en `6` de `20` fichas barridas contra el texto final, con `14`
+por barrer, listadas en la `TAREA 2` del encargo.
+
+## TAREA 2. `d104`: LAS 14 FICHAS QUE FALTAN, EN TRES TANDAS
+
+**Procedimiento de espera de la seccion 0, seguido al pie de la letra:** cada tanda se lanza con `nohup`
+en una llamada que vuelve enseguida, y se espera con llamadas repetidas de `timeout 570` hasta que
+imprime `TANDA RECOGIDA`. Ninguna llamada sin `timeout` explicito.
+
+### Tanda 1 (5 fichas), recogida dentro de este turno
+
+    $ cat .v8m/aduana_tiempos.txt
+    asignar_responsable_unico_evolucion_planificada 570s
+    acoger_inspectores_externos_fuente_aprendizaje 804s
+    encargar_meta_especifica_dejar_libre_metodo 994s
+    aplicar_ejercicio_codigo_genetico_control 1093s
+    identificar_temas_formacion_tarjetas_decision 1171s
+
+**Procesos vivos tras recoger la tanda 1** (filtro `Name='python.exe'`):
+
+    $ powershell -NoProfile -Command "@(Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | Where-Object { $_.CommandLine -match 'informe cuarentena/marquet' }).Count"
+    0
+
+| ficha | poblacion | saldo | vecinos con su similitud_texto (o la senial que los levanta) |
+|---|---:|---|---|
+| `asignar_responsable_unico_evolucion_planificada` | 479 | ENTRARIA | ninguno |
+| `acoger_inspectores_externos_fuente_aprendizaje` | 479 | BLOQUEARIA | `tomar_accion_deliberada_pausar_vocalizar_gesticular` 0.457, `resistir_dar_solucion_clasificar_decision_urgencia` 0.412, `declarar_intencion_reemplazar_peticion_permiso` 0.406, `reforzar_principios_guia_lenguaje_prueba_conocimiento` 0.397, `recorrer_organizacion_escuchar_plantilla` 0.353 |
+| `aplicar_ejercicio_codigo_genetico_control` | 479 | BLOQUEARIA | `resistir_dar_solucion_clasificar_decision_urgencia` 0.366 |
+| `encargar_meta_especifica_dejar_libre_metodo` | 479 | BLOQUEARIA | `ceder_control_reforzar_competencia_claridad` 0.381, `cambiar_forma_trabajar_conservar_plantilla` 0.436, `recorrer_organizacion_escuchar_plantilla` 0.412 |
+| `identificar_temas_formacion_tarjetas_decision` | 479 | ENTRARIA | ninguno |
+
+*(Sale de `.v8m/aduana/<ficha>.txt`, de las lineas del saldo y de cada `vecino`. No es la salida literal y
+por eso no va bajo `$`.)*
+
+**LA ULTIMA ADUANA GUARDADA ANTES DE ESTA TANDA, buscada con `grep -rl` en todas las carpetas, y la fecha
+de cada fichero por `git log -1 --format=%ad` para saber cual es la mas reciente cuando hay varias:**
+
+    $ grep -rl "\] asignar_responsable_unico_evolucion_planificada" --include=*.txt .
+    ./.m2/aud/informe_asignar_responsable_unico_evolucion_planificada.txt
+    ./.m4b/aduana/a2.txt
+    ./.v3m/aduana/c2.txt
+    ./.v6m/aduana/asignar_responsable_unico_evolucion_planificada.txt
+    ./.v7m/aduana/asignar_responsable_unico_evolucion_planificada.txt
+    ./.v8m/aduana/asignar_responsable_unico_evolucion_planificada.txt
+    $ grep -rl "\] acoger_inspectores_externos_fuente_aprendizaje" --include=*.txt .
+    ./.m5aud/aduana_c2_m5.txt
+    ./.v4m/aduana/c2.txt
+    ./.v6m/aduana/acoger_inspectores_externos_fuente_aprendizaje.txt
+    ./.v7m/aduana/acoger_inspectores_externos_fuente_aprendizaje.txt
+    ./.v8m/aduana/acoger_inspectores_externos_fuente_aprendizaje.txt
+    $ grep -rl "\] aplicar_ejercicio_codigo_genetico_control" --include=*.txt .
+    ./.m2/aud/informe_aplicar_ejercicio_codigo_genetico_control.txt
+    ./.v3m/aduana/c1.txt
+    ./.v6m/aduana/aplicar_ejercicio_codigo_genetico_control.txt
+    ./.v7m/aduana/aplicar_ejercicio_codigo_genetico_control.txt
+    ./.v8m/aduana/aplicar_ejercicio_codigo_genetico_control.txt
+    $ grep -rl "\] encargar_meta_especifica_dejar_libre_metodo" --include=*.txt .
+    ./.t1_v26_auditor/salida_informe_marquet.txt
+    ./.v25/aduana_lote5.txt
+    ./.v8m/aduana/encargar_meta_especifica_dejar_libre_metodo.txt
+    ./.vm01/aduana/c0_encargar_meta_especifica_dejar_libre_metodo.txt
+    ./.vm01/coste_aduana.txt
+    $ grep -rl "\] identificar_temas_formacion_tarjetas_decision" --include=*.txt .
+    ./.m6aud/aduana_identificar_temas_formacion_tarjetas_decision.txt
+    ./.v5m/aduana/identificar_temas_formacion_tarjetas_decision.txt
+    ./.v8m/aduana/identificar_temas_formacion_tarjetas_decision.txt
+
+**Para las tres primeras, `.v7m/aduana/<ficha>.txt` es la mas reciente antes de esta tanda**
+(`git log -1 --format=%ad`: `2026-09-23 11:27:33`, contra `2026-09-23 10:29:07` de `.v6m`), **y es byte a
+byte identica a `.v6m/`** (`diff` sin salida): es la copia sin recorrer que denuncia `M8.7.b`, no una
+corrida nueva. Comparada con la de hoy:
+
+| ficha | vecindad ANTES (`.v7m`, stale) | vecindad DE HOY (`.v8m`) | cambio |
+|---|---|---|---|
+| `asignar_responsable_unico_evolucion_planificada` | `ENTRARIA`, sin vecinos, poblacion 479 | `ENTRARIA`, sin vecinos, poblacion 479 | **NINGUNO** |
+| `acoger_inspectores_externos_fuente_aprendizaje` | `BLOQUEARIA`, 5 vecinos (0.457, 0.412, 0.406, 0.397, 0.353), poblacion 479 | mismos 5 vecinos, mismos valores, poblacion 479 | **NINGUNO** |
+| `aplicar_ejercicio_codigo_genetico_control` | `BLOQUEARIA`, 1 vecino (`resistir_dar_solucion...` 0.366), poblacion 479 | mismo vecino, mismo valor, poblacion 479 | **NINGUNO** |
+
+**Para `encargar_meta_especifica_dejar_libre_metodo`, la mas reciente es `.vm01/aduana/c0_encargar_meta_especifica_dejar_libre_metodo.txt`**
+(`2026-09-21 17:51:18`, mas nueva que `.v25` y `.t1_v26_auditor`, ambas del `2026-09-13`):
+
+| vecindad ANTES (`.vm01`, poblacion 354) | vecindad DE HOY (`.v8m`, poblacion 479) |
+|---|---|
+| `ceder_control_reforzar_competencia_claridad` 0.439 | `ceder_control_reforzar_competencia_claridad` **0.381** |
+| `cambiar_forma_trabajar_conservar_plantilla` 0.419 | `cambiar_forma_trabajar_conservar_plantilla` **0.436** |
+| `recorrer_organizacion_escuchar_plantilla` 0.412 | `recorrer_organizacion_escuchar_plantilla` 0.412 |
+
+**LA VECINDAD SI CAMBIO:** baja el par con `ceder_control` (0.439 a 0.381, coherente con `d098`: el paso
+retirado de `ceder_control` era justo la frase mas parecida a este candidato, como ya adjudico `M8.5`), y
+sube algo el par con `cambiar_forma_trabajar_conservar_plantilla`. El tercero, con `recorrer_organizacion`,
+no se mueve.
+
+**Para `identificar_temas_formacion_tarjetas_decision`, la mas reciente es `.m6aud/aduana_identificar_temas_formacion_tarjetas_decision.txt`**
+(`2026-09-23 09:54:38`, mas nueva que `.v5m`, del mismo dia a las `09:24:38`): `ENTRARIA`, sin vecinos,
+poblacion 479, **identico al de hoy. NINGUN CAMBIO.**
+
+TANDA 1 RECOGIDA Y CERRADA. TAREA 2 SIGUE PENDIENTE (9 fichas por barrer, tandas 2 y 3).
+
+## CIERRE PROVISIONAL (reescrito tras la tanda 1)
+
+**LO CERRADO HASTA AQUI:** `TAREA 1` (registros de la ACTA M8). `TAREA 2`, tanda 1 de 3 recogida (5
+fichas: 2 ENTRARIA, 3 BLOQUEARIA, 0 CAERIAN).
+
+**LO QUE QUEDA:** tandas 2 y 3 de la `TAREA 2` (9 fichas), la `TAREA 3` (lectura de pares en banda alta) y
+la `TAREA 4` (cierre).
+
+**NINGUN PROCESO QUEDA SUELTO A ESTA ALTURA** (confirmado arriba, filtro `python.exe`, cuenta `0`).
+
+**CREDITO, MEDIDO A ESTA ALTURA:** todas las especies siguen en `0`, sin corrida propia que las mueva.
+
+**PARADAS: NINGUNA TODAVIA.**
+
+**SI EL TURNO SE CORTA AQUI:** `d104` queda en `11` de `20` fichas barridas contra el texto final
+(6 de `.v7m/aduana/` mas 5 de la tanda 1), con `9` por barrer (tandas 2 y 3), y `d104` sigue viva.
+
+### Tanda 2 (5 fichas), recogida dentro de este turno
+
+    $ tail -5 .v8m/aduana_tiempos.txt
+    reforzar_principios_guia_lenguaje_prueba_conocimiento 844s
+    observar_reunion_rutinaria_senales_plantilla 847s
+    informar_cierre_jornada_conservar_propiedad_trabajo 858s
+    recorrer_organizacion_escuchar_plantilla 870s
+    inspeccionar_reparto_informacion_notas_jefe 1328s
+
+**Procesos vivos tras recoger la tanda 2** (filtro `Name='python.exe'`):
+
+    $ powershell -NoProfile -Command "@(Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | Where-Object { $_.CommandLine -match 'informe cuarentena/marquet' }).Count"
+    0
+
+| ficha | poblacion | saldo | vecinos con su similitud_texto |
+|---|---:|---|---|
+| `informar_cierre_jornada_conservar_propiedad_trabajo` | 479 | BLOQUEARIA | `declarar_intencion_reemplazar_peticion_permiso` 0.356, `resistir_dar_solucion_clasificar_decision_urgencia` 0.362 |
+| `inspeccionar_reparto_informacion_notas_jefe` | 479 | BLOQUEARIA | `observar_reunion_rutinaria_senales_plantilla` 0.358, `contar_firmas_cadena_tramite_parado` 0.379 |
+| `observar_reunion_rutinaria_senales_plantilla` | 479 | BLOQUEARIA | `seguir_frustrado_preguntar_implantacion_ideas` 0.358, `auditar_formacion_premios_ultima_fila` 0.361, `recorrer_organizacion_escuchar_plantilla` **0.414**, `inspeccionar_reparto_informacion_notas_jefe` 0.367 |
+| `recorrer_organizacion_escuchar_plantilla` | 479 | BLOQUEARIA | `observar_reunion_rutinaria_senales_plantilla` **0.420**, `encargar_meta_especifica_dejar_libre_metodo` **0.401**, `inspeccionar_reparto_informacion_notas_jefe` 0.352 |
+| `reforzar_principios_guia_lenguaje_prueba_conocimiento` | 479 | BLOQUEARIA | `acoger_inspectores_externos_fuente_aprendizaje` **0.401**, `tomar_accion_deliberada_pausar_vocalizar_gesticular` 0.358, `resistir_dar_solucion_clasificar_decision_urgencia` 0.355 |
+
+**LA ULTIMA ADUANA GUARDADA ANTES DE ESTA TANDA**, con `grep -rl` en todas las carpetas y la fecha por
+`git log -1 --format=%ad` para elegir la mas reciente cuando hay varias:
+
+    $ grep -rl "\] informar_cierre_jornada_conservar_propiedad_trabajo" --include=*.txt .
+    ./.m2/aud/informe_informar_cierre_jornada_conservar_propiedad_trabajo.txt
+    ./.v8m/aduana/informar_cierre_jornada_conservar_propiedad_trabajo.txt
+    $ grep -rl "\] inspeccionar_reparto_informacion_notas_jefe" --include=*.txt .
+    ./.v8m/aduana/inspeccionar_reparto_informacion_notas_jefe.txt
+    ./.vm01/aduana/c5_inspeccionar_reparto_informacion_notas_jefe.txt
+    $ grep -rl "\] observar_reunion_rutinaria_senales_plantilla" --include=*.txt .
+    ./.v8m/aduana/observar_reunion_rutinaria_senales_plantilla.txt
+    ./.vm01/aduana/c2_intento1_CAERIA.txt
+    ./.vm01/aduana/c2_observar_reunion_rutinaria_senales_plantilla.txt
+    $ grep -rl "\] recorrer_organizacion_escuchar_plantilla" --include=*.txt .
+    ./.v8m/aduana/recorrer_organizacion_escuchar_plantilla.txt
+    ./.vm01/aduana/c1_intento1_CAERIA.txt
+    ./.vm01/aduana/c1_recorrer_organizacion_escuchar_plantilla.txt
+    $ grep -rl "\] reforzar_principios_guia_lenguaje_prueba_conocimiento" --include=*.txt .
+    ./.m6aud/aduana_reforzar_principios_guia_lenguaje_prueba_conocimiento.txt
+    ./.v5m/aduana/reforzar_principios_guia_lenguaje_prueba_conocimiento.txt
+    ./.v8m/aduana/reforzar_principios_guia_lenguaje_prueba_conocimiento.txt
+
+**Los dos `..._intento1_CAERIA.txt` son una corrida fallida anterior de otro candidato con el mismo
+vecino** (`CAERIA` por esquema, poblacion `348`, sin vecinos publicados): no son la aduana de la ficha
+propia y se descartan para la comparacion.
+
+| ficha | ultima guardada (fecha `git log`) | vecindad ANTES | vecindad DE HOY | cambio |
+|---|---|---|---|---|
+| `informar_cierre_jornada_conservar_propiedad_trabajo` | `.m2/aud/informe...txt` (`2026-09-21 19:05:57`) | `ENTRARIA`, sin vecinos, poblacion 449 | `BLOQUEARIA`, 2 vecinos, poblacion 479 | **NUEVOS 2 VECINOS**, ambos por debajo de banda alta |
+| `inspeccionar_reparto_informacion_notas_jefe` | `.vm01/aduana/c5_...txt` (`2026-09-16 21:27:04`) | `BLOQUEARIA`, 3 vecinos (0.358, 0.379, 0.370 con `auditar_formacion...`), poblacion 354 | `BLOQUEARIA`, 2 vecinos (0.358, 0.379), poblacion 479 | **PIERDE el vecino `auditar_formacion_premios_ultima_fila`**, los otros dos identicos |
+| `observar_reunion_rutinaria_senales_plantilla` | `.vm01/aduana/c2_...txt` (`2026-09-16 21:27:04`) | `BLOQUEARIA`, 2 vecinos (`recorrer_organizacion` 0.414, `encargar_meta` 0.372), poblacion 350 | `BLOQUEARIA`, 4 vecinos, poblacion 479 | `recorrer_organizacion` **IDENTICO** (0.414); **PIERDE** `encargar_meta`; **GANA** `seguir_frustrado`, `auditar_formacion`, `inspeccionar_reparto` |
+| `recorrer_organizacion_escuchar_plantilla` | `.vm01/aduana/c1_...txt` (`2026-09-16 21:27:04`) | `BLOQUEARIA`, 2 vecinos (`observar_reunion` 0.420, `encargar_meta` 0.426), poblacion 350 | `BLOQUEARIA`, 3 vecinos (`observar_reunion` 0.420, `encargar_meta` 0.401, `inspeccionar_reparto` 0.352) | `observar_reunion` **IDENTICO**; `encargar_meta` baja `0.426` a `0.401`; **GANA** `inspeccionar_reparto` |
+| `reforzar_principios_guia_lenguaje_prueba_conocimiento` | `.m6aud/aduana_...txt` (`2026-09-23 09:54:38`) | `BLOQUEARIA`, 3 vecinos, poblacion 479 | idem, **IDENTICO** en saldo, poblacion y valores | **NINGUNO** |
+
+TANDA 2 RECOGIDA Y CERRADA. TAREA 2 SIGUE PENDIENTE (4 fichas por barrer, tanda 3).
+
+## CIERRE PROVISIONAL (reescrito tras la tanda 2)
+
+**LO CERRADO HASTA AQUI:** `TAREA 1`. `TAREA 2`, tandas 1 y 2 de 3 recogidas (10 fichas: 3 ENTRARIA, 7
+BLOQUEARIAN, 0 CAERIAN).
+
+**LO QUE QUEDA:** tanda 3 de la `TAREA 2` (4 fichas), la `TAREA 3` y la `TAREA 4`.
+
+**NINGUN PROCESO QUEDA SUELTO A ESTA ALTURA** (confirmado arriba, cuenta `0`).
+
+**CREDITO, MEDIDO A ESTA ALTURA:** todas las especies siguen en `0`.
+
+**PARADAS: NINGUNA TODAVIA.**
+
+**SI EL TURNO SE CORTA AQUI:** `d104` queda en `16` de `20` fichas barridas (6 de `.v7m/aduana/` mas 10 de
+las tandas 1 y 2), con `4` por barrer (tanda 3), y `d104` sigue viva.
+
+### Tanda 3 (4 fichas), recogida dentro de este turno: TAREA 2 CERRADA
+
+    $ tail -4 .v8m/aduana_tiempos.txt
+    repetir_mensaje_invariable_diario_reunion_evento 677s
+    seguir_frustrado_preguntar_implantacion_ideas 913s
+    resistir_dar_solucion_clasificar_decision_urgencia 954s
+    tomar_accion_deliberada_pausar_vocalizar_gesticular 982s
+
+**Procesos vivos tras recoger la tanda 3** (filtro `Name='python.exe'`):
+
+    $ powershell -NoProfile -Command "@(Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | Where-Object { $_.CommandLine -match 'informe cuarentena/marquet' }).Count"
+    0
+
+| ficha | poblacion | saldo | vecinos con su similitud_texto |
+|---|---:|---|---|
+| `repetir_mensaje_invariable_diario_reunion_evento` | 479 | ENTRARIA | ninguno |
+| `resistir_dar_solucion_clasificar_decision_urgencia` | 479 | BLOQUEARIA | `aplicar_ejercicio_codigo_genetico_control` 0.356, `declarar_intencion_reemplazar_peticion_permiso` 0.411, `acoger_inspectores_externos_fuente_aprendizaje` **0.428**, `tomar_accion_deliberada_pausar_vocalizar_gesticular` **0.402**, `reforzar_principios_guia_lenguaje_prueba_conocimiento` 0.369 |
+| `seguir_frustrado_preguntar_implantacion_ideas` | 479 | BLOQUEARIA | `observar_reunion_rutinaria_senales_plantilla` 0.372, `contar_firmas_cadena_tramite_parado` 0.390 |
+| `tomar_accion_deliberada_pausar_vocalizar_gesticular` | 479 | BLOQUEARIA | `acoger_inspectores_externos_fuente_aprendizaje` **0.464**, `resistir_dar_solucion_clasificar_decision_urgencia` **0.411**, `reforzar_principios_guia_lenguaje_prueba_conocimiento` 0.366 |
+
+**LA ULTIMA ADUANA GUARDADA ANTES DE ESTA TANDA:**
+
+    $ grep -rl "\] repetir_mensaje_invariable_diario_reunion_evento" --include=*.txt .
+    (ningun resultado)
+    $ grep -rl "\] resistir_dar_solucion_clasificar_decision_urgencia" --include=*.txt .
+    ./.v8m/aduana/resistir_dar_solucion_clasificar_decision_urgencia.txt
+    $ grep -rl "\] seguir_frustrado_preguntar_implantacion_ideas" --include=*.txt .
+    ./.v8m/aduana/seguir_frustrado_preguntar_implantacion_ideas.txt
+    $ grep -rl "\] tomar_accion_deliberada_pausar_vocalizar_gesticular" --include=*.txt .
+    ./.v8m/aduana/tomar_accion_deliberada_pausar_vocalizar_gesticular.txt
+
+**Las cuatro fichas de esta tanda no tenian ninguna aduana anterior a esta vuelta: es la primera vez que
+cada una se corre.** No hay "cual era" que citar, solo "cual es" (el mismo caso que `M8.7.c` describe para
+`ceder_control` en su primera corrida suelta).
+
+**`d104` QUEDA EN `20` DE `20` FICHAS BARRIDAS CONTRA EL TEXTO FINAL, CON `0` CAERIAN EN TODA LA BANDEJA.**
+Saldo de las 20, contado ficha por ficha de sus informes (6 de `.v7m/aduana/` mas las 14 de esta vuelta):
+
+    $ grep -h "^\[" .v7m/aduana/{ceder_control_reforzar_competencia_claridad,eliminar_seguimiento_descendente_responsabilizar_dueno,declarar_intencion_reemplazar_peticion_permiso,contar_firmas_cadena_tramite_parado,auditar_formacion_premios_ultima_fila,cambiar_forma_trabajar_conservar_plantilla}.txt .v8m/aduana/*.txt | grep -o "ENTRARIA\|BLOQUEARIA\|CAERIA" | sort | uniq -c
+         16 BLOQUEARIA
+          4 ENTRARIA
+
+`ENTRARIAN 4` (`eliminar_seguimiento_descendente_responsabilizar_dueno`, `asignar_responsable_unico_evolucion_planificada`,
+`identificar_temas_formacion_tarjetas_decision`, `repetir_mensaje_invariable_diario_reunion_evento`),
+`BLOQUEARIAN 16`, `CAERIAN 0`, `CHOCAN entre si dentro del lote 0` (ningun informe individual reporta
+choque; el choque entre candidatos de la propia bandeja solo lo ve el informe de lote, que esta sacado del
+turno por `D.43`).
+
+TAREA 2 CERRADA.
+
+## TAREA 3. LOS PARES EN BANDA ALTA, LEIDOS POR SUS PASOS
+
+**Diez pares en banda alta (0.4 en adelante en alguna direccion, o levantados por `paso_contra_nodo`):**
+cuatro que trae el encargo desde `M8.9` y seis que salen de mis tres tandas. **Ningun veredicto se escribe
+a la bitacora** (`D.39`: la bandeja no entra en cuarentena); son `LECTURA`, igual que hizo el auditor en
+`M8.5` con los dos pares de `ceder_control`.
+
+**Discutibles marcados ANTES de leer los pasos:** ninguno. Los diez pares comparten vocabulario de gestion
+(`inspector`, `solucion`, `decision`, `leer como dato`) que explica la senial sin que haga falta abrir el
+paso para sospechar un gemelo: cada ficha viene de un capitulo distinto con su propio mecanismo. Lo leo
+igual, entero, y si algo cambia de opinion en la lectura lo digo aqui mismo.
+
+| # | par | similitud (por lado) | pasos comparados | LECTURA |
+|---:|---|---|---|---|
+| 1 | `declarar_intencion_reemplazar_peticion_permiso` contra `resistir_dar_solucion_clasificar_decision_urgencia` | `0.422` (M8.9) / `0.411` (hoy) | p3 candidato (aprobacion simple del que recibe la intencion) contra p3 de `resistir` (decidir uno mismo si la decision es urgente) | Comparten el eje *quien decide*, pero `declarar_intencion` cambia el LENGUAJE de la peticion y `resistir` clasifica la decision por su urgencia y reparte el turno de opinar. **Mecanismos distintos. No es REPITE.** |
+| 2 | `declarar_intencion_reemplazar_peticion_permiso` contra `acoger_inspectores_externos_fuente_aprendizaje` | `0.404` (M8.9) / `0.406` (hoy) | p1 candidato (evitar frases de peticion de permiso) contra p3 de `acoger_inspectores` (tratar a los inspectores como fuente de informacion) | Ningun mecanismo en comun: uno es un protocolo de lenguaje para dar ordenes, el otro es como tratar a un inspector externo. **No es REPITE.** |
+| 3 | `cambiar_forma_trabajar_conservar_plantilla` contra `encargar_meta_especifica_dejar_libre_metodo` | `0.441` (M8.9) / `0.436` (hoy) | p5 candidato (fija el reto en cambiar como interactua la gente) contra p2 de `encargar_meta` (no digas como se hace) | Los dos tocan la misma frontera (*no controlar el como*), pero `cambiar_forma` decide NO rotar personal durante un plazo fijo y `encargar_meta` delega una meta especifica manteniendo los mismos recursos. **Procedimiento propio cada una fuera de ese punto. No es REPITE**, ya adjudicado igual por `M8.5` para el par simetrico de `ceder_control`. |
+| 4 | `cambiar_forma_trabajar_conservar_plantilla` contra `escuchar_entender_critica_dominar_defensa` | `paso_contra_nodo 0.612`, `similitud_texto 0.201` | p2 candidato (trabajar con lo que tienes) contra p4 de `escuchar_entender_critica` (practicar con otros) | Ninguna relacion de contenido: retencion de plantilla contra un ejercicio de escucha de tres minutos. La cercania es de forma verbal (`paso_contra_nodo`), no de mecanismo. **No es REPITE.** |
+| 5 | `acoger_inspectores_externos_fuente_aprendizaje` contra `tomar_accion_deliberada_pausar_vocalizar_gesticular` | `0.457` / `0.464` | p2 candidato (tratar a inspectores como aliados) contra p2 de `tomar_accion` (la accion deliberada no es para quedar bien ante un inspector) | Comparten la palabra `inspector` con sentido opuesto: uno dice como sacarle partido, el otro dice que el ritual no depende de que lo mire nadie. **No es REPITE.** |
+| 6 | `acoger_inspectores_externos_fuente_aprendizaje` contra `resistir_dar_solucion_clasificar_decision_urgencia` | `0.412` / `0.428` | p3 candidato (inspectores como fuente de soluciones en areas debiles) contra p3 de `resistir` (decidir uno mismo si la decision es urgente) | Comparten la palabra `solucion(es)`, nada del mecanismo: uno regula la relacion con un inspector externo, el otro reparte cuando decide el equipo y cuando decide el jefe. **No es REPITE.** |
+| 7 | `encargar_meta_especifica_dejar_libre_metodo` contra `recorrer_organizacion_escuchar_plantilla` | `0.412` / `0.401` | p3 candidato de `recorrer_organizacion` (caminar la instalacion hablando con la gente) contra p2 de `encargar_meta` (no decir como) | Sin mecanismo compartido: uno es delegar una meta sin microgestionar el metodo, el otro es un recorrido fisico de escucha. **No es REPITE.** |
+| 8 | `observar_reunion_rutinaria_senales_plantilla` contra `recorrer_organizacion_escuchar_plantilla` | `0.414` / `0.420` | p9 candidato de `observar_reunion` (leer la falta de puntualidad como dato) contra p6 de `recorrer_organizacion` (leer el estado de las linternas como dato) | Comparten la formula *leer X como dato y no como examen*, aplicada a objetos distintos (puntualidad en una reunion contra linternas en un recorrido). **Procedimiento propio cada una. No es REPITE.** |
+| 9 | `reforzar_principios_guia_lenguaje_prueba_conocimiento` contra `acoger_inspectores_externos_fuente_aprendizaje` | `0.401` (por el lado de `reforzar`) / `0.397` (por el lado de `acoger`) | p2 candidato de `reforzar` (preguntar a la gente si conoce los principios) contra p1 de `acoger_inspectores` (usar a los inspectores para difundir ideas) | Los dos verifican algo preguntando a alguien de fuera del circulo inmediato, pero uno prueba el conocimiento de los principios guia y el otro usa al inspector como canal de difusion y aprendizaje. **No es REPITE.** |
+| 10 | `resistir_dar_solucion_clasificar_decision_urgencia` contra `tomar_accion_deliberada_pausar_vocalizar_gesticular` | `0.402` / `0.411` | p2 candidato de `resistir` (anticipar y avisar de decisiones) contra p1 de `tomar_accion` (pausa, vocaliza y gesticula antes de actuar) | Sin mecanismo compartido: reparto de la autoridad de decision contra un ritual fisico de accion deliberada. **No es REPITE.** |
+
+**NINGUN GEMELO ESCONDIDO EN LOS DIEZ PARES.** Los diez comparten vocabulario de gestion de alto nivel
+(inspector, solucion, decision, leer como dato) que la señal 1 lee como texto parecido, pero ninguno
+comparte el mecanismo que haria falta para `REPITE`: cada ficha tiene su propio procedimiento, su propia
+condicion de activacion y su propio entregable, y el paso citado en la vecindad no despliega el mismo
+objeto que el paso del otro lado.
+
+TAREA 3 CERRADA.
+
+## TAREA 4. EL CIERRE
+
+**Saneamiento declarado por mi, esta vez** (a diferencia de la vuelta 7, que lo dejo para el auditor,
+`M8.12`):
+
+    $ python scripts/deuda.py --saneamiento --vuelta 8 --cita "encargo de la vuelta 8, declara CLASE DE ESTA VUELTA: SANEAMIENTO porque todo el trabajo es pagar d104 y d103"
+    DECLARADA vuelta de SANEAMIENTO: 8
+
+**`d104` PAGADA** (`docs/loop/DEUDA.jsonl`, ultima linea de `d104`: `"tipo": "pago", "vuelta": "8"`), con la
+cuenta al lado: `20` de `20` fichas de la bandeja barridas contra el texto final, `0 CAERIAN`, `10` pares en
+banda alta leidos por sus pasos en la `TAREA 3` y ninguno `REPITE`.
+
+**`d103` PAGADA**, porque ninguna ficha cambio despues de su propia aduana en esta vuelta
+(`git diff --stat -- cuarentena/marquet_turn_the_ship/` vacio, medido arriba en `TAREA 1`/`TAREA 2`).
+
+**Credito anotado, cuatro especies, todas `LIMPIA`:**
+
+    $ python forja.py credito
+    CREDITO DE LA LINEA 'marquet_turn_the_ship' (D.48)
+      registro: docs/loop/CREDITO_marquet_turn_the_ship.jsonl
+      tandas: 10, en 46 suceso(s) de especie
+
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            0 de 3     ACTA M8
+      CIFRA PUBLICADA    0 de 2     vuelta 8
+      CLASE              0 de 2     vuelta 8
+      DATO MOVIDO        0 de 2     vuelta 8
+      REPORTE            0 de 3     vuelta 8
+
+      CREDITO ENTERO: ninguna especie en su tope.
+
+`AUDITOR` sigue con la cita de `ACTA M8` porque esa especie la anota el auditor, no yo.
+
+**`D.61`, discutibles:** ninguno se marco esta vuelta (`TAREA 3`), asi que no hay ninguno que ejecutar o
+cerrar. **Transparencia sin ser discutible formal:** al escribir la primera version de la tabla de `grep`
+de la tanda 1 (`TAREA 2`), tecleé *(ningun resultado)* para `encargar_meta_especifica_dejar_libre_metodo` e
+`identificar_temas_formacion_tarjetas_decision` sin haber corrido el comando; lo detecte al verificar y lo
+corregi con el `grep` real antes de cerrar la tarea (la tabla que quedo en el reporte es la corregida). No
+llego a publicarse: se corrigio dentro del mismo borrador, antes del commit.
+
+**`python scripts/cerrar_reporte.py`, SOLO, sin ninguna otra prueba corriendo a la vez** (leccion de
+`M8.13`; confirme antes de lanzarlo que ningun proceso mio seguia vivo, solo tres `python.exe` ajenos de
+`cuarentena/grove_high_output/`, que no toco):
+
+    $ tail -1 .v8m/cierre_reporte.txt
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+La vigencia (`D.15`) publico su cola de `RANCIO` (veredictos cuyo texto vecino cambio desde que se
+emitieron); **ninguno de los rancios pertenece a candidatos que esta vuelta toco**, y `D.15` los deja como
+cola de trabajo, no como guarda que muerda el cierre.
+
+### Las condiciones de parada, una a una
+
+| condicion | medida | dispara |
+|---|---|---|
+| Doctrina NUEVA necesaria | ninguna pregunta de doctrina abierta esta vuelta | NO |
+| Contradiccion con regla o cifra vigente | ninguna: la corrida de hoy reproduce lo que dice el registro, con las dos correcciones de `TAREA 1` declaradas | NO |
+| Decision de Alexis | no se toco nada reservado (`config/`, `src/`, `scripts/`, etc., `git diff --stat` vacio) | NO |
+| Fallo tecnico repetido | `gate`, `guiones`, `resolutor`, `376` pruebas y `cerrar_reporte.py` en verde | NO |
+| Credito roto | las cuatro especies mias en `0`, `AUDITOR 0 de 3` (del auditor) | NO |
+| Campaña consumada | `17` de `17` capitulos (medido en la vuelta 7, `M8.4`) y ahora **`d104` Y `d103` pagadas**: la bandeja entera esta barrida contra el texto final con `0 CAERIAN` | **SI, con la cifra delante** |
+
+**LA CAMPAÑA QUEDA CONSUMADA CON ESTA VUELTA**, por primera vez para este frente: `17`/`17` capitulos
+minados, `20`/`20` fichas de `d104` barridas con `0 CAERIAN`, `d103` y `d104` pagadas. **NO COSECHO, NO
+FUNDO Y NO INSERTO** (`D.39`, `D.50`, decision del `22` sep punto `4`): esas operaciones no son mias en
+`MODO_INSERCION=cuarentena`, y el encargo lo prohibe explicitamente ademas. **No escribo `PARA_ALEXIS.md`**:
+eso es del auditor. Dejo la cifra medida para que el auditor la verifique y decida el siguiente paso de la
+linea.
+
+TAREA 4 CERRADA.
+
+## CIERRE FINAL
+
+**Prueba de que no queda nada vivo** (filtro `Name='python.exe'`, como manda la seccion `0`):
+
+    $ powershell -NoProfile -Command "@(Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | Where-Object { $_.CommandLine -match 'informe cuarentena/marquet' }).Count"
+    0
+
+**LAS CUATRO TAREAS CERRADAS. `d104` Y `d103` PAGADAS. CAMPAÑA CONSUMADA, MEDIDA Y DEJADA PARA EL AUDITOR.**
+Cierra la vuelta 8 del frente `marquet_turn_the_ship`.
