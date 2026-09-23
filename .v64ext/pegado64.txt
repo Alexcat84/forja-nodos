@@ -1,0 +1,2 @@
+bloques abiertos con `$` en el tramo de la vuelta 64 : 53
+bloques que ROMPEN R1 (ACTA 60 60.15)                : 0

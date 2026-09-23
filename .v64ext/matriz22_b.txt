@@ -1,0 +1,9 @@
+LEVANTA  emparejar_indicadores_efecto_contraefecto        -> elegir_cinco_indicadores_diarios_fabrica         texto 0.359 familia 0.125 paso 0.445  similitud_texto
+LEVANTA  emparejar_indicadores_efecto_contraefecto        -> elegir_indicador_salida_trabajo_administrativo   texto 0.383 familia 0.125 paso 0.468  similitud_texto
+LEVANTA  emparejar_indicadores_efecto_contraefecto        -> construir_indicador_tendencia_patron             texto 0.397 familia 0.143 paso 0.453  similitud_texto
+LEVANTA  emparejar_indicadores_efecto_contraefecto        -> construir_grafico_escalonado_pronosticos         texto 0.384 familia 0.0 paso 0.446  similitud_texto
+LEVANTA  emparejar_indicadores_efecto_contraefecto        -> elegir_fabricar_pedido_pronostico                texto 0.367 familia 0.0 paso 0.408  similitud_texto
+LEVANTA  emparejar_indicadores_efecto_contraefecto        -> dimensionar_plantilla_administrativa_pronostico  texto 0.355 familia 0.0 paso 0.396  similitud_texto
+LEVANTA  elegir_indicador_salida_trabajo_administrativo   -> emparejar_indicadores_efecto_contraefecto        texto 0.394 familia 0.125 paso 0.489  similitud_texto
+LEVANTA  elegir_indicador_salida_trabajo_administrativo   -> construir_indicador_tendencia_patron             texto 0.374 familia 0.125 paso 0.403  similitud_texto
+FIN filas 6 a 12 de 22, 126 pares medidos, 576 s

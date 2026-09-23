@@ -1,0 +1,11 @@
+LEVANTA  dimensionar_plantilla_administrativa_pronostico  -> elegir_cinco_indicadores_diarios_fabrica         texto 0.351 familia 0.0 paso 0.434  similitud_texto
+LEVANTA  dimensionar_plantilla_administrativa_pronostico  -> emparejar_indicadores_efecto_contraefecto        texto 0.36 familia 0.0 paso 0.396  similitud_texto
+LEVANTA  dimensionar_plantilla_administrativa_pronostico  -> construir_indicador_tendencia_patron             texto 0.38 familia 0.0 paso 0.405  similitud_texto
+LEVANTA  dimensionar_plantilla_administrativa_pronostico  -> elegir_fabricar_pedido_pronostico                texto 0.353 familia 0.143 paso 0.455  similitud_texto
+LEVANTA  dimensionar_plantilla_administrativa_pronostico  -> decidir_aceptar_rechazar_material_defectuoso     texto 0.367 familia 0.0 paso 0.359  similitud_texto
+LEVANTA  dimensionar_plantilla_administrativa_pronostico  -> simplificar_trabajo_reducir_numero_pasos         texto 0.351 familia 0.0 paso 0.388  similitud_texto
+LEVANTA  decidir_aceptar_rechazar_material_defectuoso     -> dimensionar_plantilla_administrativa_pronostico  texto 0.372 familia 0.0 paso 0.364  similitud_texto
+LEVANTA  elegir_inspeccion_barrera_monitorizacion         -> emparejar_indicadores_efecto_contraefecto        texto 0.374 familia 0.0 paso 0.45  similitud_texto
+LEVANTA  elegir_inspeccion_barrera_monitorizacion         -> construir_grafico_escalonado_pronosticos         texto 0.365 familia 0.0 paso 0.454  similitud_texto
+LEVANTA  simplificar_trabajo_reducir_numero_pasos         -> dimensionar_plantilla_administrativa_pronostico  texto 0.351 familia 0.0 paso 0.439  similitud_texto
+FIN filas 17 a 22 de 22, 105 pares medidos, 535 s

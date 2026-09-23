@@ -2,9 +2,10 @@
 """Vuelta 64: comprueba .v64ext/veredictos_listos.txt contra dos cosas, sin tocar nada.
 1. Cada linea la acepta src/aduana.py parsear_veredicto (el mismo parser de --veredicto).
 2. Los vecinos de cada seccion son EXACTAMENTE los que la senial levanta HOY en el sentido
-   candidato -> vecino segun .v64ext/pares_despues.txt: ni falta uno, ni sobra uno que la
-   senial ya no levanta (ese se registraria como lectura declarada, no como veredicto)."""
-import io, os, re, sys, collections
+   candidato -> vecino segun .v64ext/pares_despues.txt y la matriz de los 22
+   (.v64ext/matriz22_*.txt): ni falta uno, ni sobra uno que la senial ya no levanta (ese se
+   registraria como lectura declarada, no como veredicto)."""
+import glob, io, os, re, sys, collections
 sys.path.insert(0, os.getcwd())
 from src import aduana
 sec = collections.OrderedDict()
@@ -22,6 +23,12 @@ for l in io.open('.v64ext/pares_despues.txt', encoding='utf-8'):
     if len(c) < 4 or c[0] not in ('d005', 'd140', 'lectura'):
         continue
     (no_levanta if l.rstrip().endswith('NO LEVANTA') else hoy)[c[1]].add(c[2])
+for f in sorted(glob.glob('.v64ext/matriz22_*.txt')):
+    for l in io.open(f, encoding='utf-8'):
+        m = re.match(r'LEVANTA\s+(\S+)\s+->\s+(\S+)', l)
+        if m:
+            hoy[m.group(1)].add(m.group(2))
+            no_levanta[m.group(1)].discard(m.group(2))
 total = malas = 0
 for cand, lineas in sec.items():
     vistos = []

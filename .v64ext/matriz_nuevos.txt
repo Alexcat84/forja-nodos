@@ -1,0 +1,10 @@
+9
+  construir_indicador_tendencia_patron -> elegir_indicador_salida_trabajo_administrativo
+  construir_indicador_tendencia_patron -> equilibrar_capacidad_personal_inventario_plazo
+  dimensionar_plantilla_administrativa_pronostico -> emparejar_indicadores_efecto_contraefecto
+  elegir_indicador_salida_trabajo_administrativo -> construir_indicador_tendencia_patron
+  elegir_inspeccion_barrera_monitorizacion -> construir_grafico_escalonado_pronosticos
+  elegir_inspeccion_barrera_monitorizacion -> emparejar_indicadores_efecto_contraefecto
+  emparejar_indicadores_efecto_contraefecto -> dimensionar_plantilla_administrativa_pronostico
+  emparejar_indicadores_efecto_contraefecto -> elegir_cinco_indicadores_diarios_fabrica
+  equilibrar_capacidad_personal_inventario_plazo -> construir_indicador_tendencia_patron

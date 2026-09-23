@@ -1,0 +1,26 @@
+$ grep -n -o "if we have carefully chosen indicators that characterize an administrative unit" fuentes/grove_high_output/cap_03.md
+125:if we have carefully chosen indicators that characterize an administrative unit
+$ grep -n -o "de facto standards, inferred from the trend data" fuentes/grove_high_output/cap_03.md
+125:de facto standards, inferred from the trend data
+$ grep -n -o "Delivering a product that was built to forecast to a customer consists of two simultaneous processes" fuentes/grove_high_output/cap_03.md
+111:Delivering a product that was built to forecast to a customer consists of two simultaneous processes
+$ grep -n -o "It is a good idea to use stagger charts in both the manufacturing and sales forecasts. As noted" fuentes/grove_high_output/cap_03.md
+121:It is a good idea to use stagger charts in both the manufacturing and sales forecasts. As noted
+$ grep -n -o "a .window. cut into the black box is the linearity indicator" fuentes/grove_high_output/cap_03.md
+83:a “window” cut into the black box is the linearity indicator
+$ grep -n -o "This extrapolation gives us another window in our black box" fuentes/grove_high_output/cap_03.md
+89:This extrapolation gives us another window in our black box
+$ grep -n -o "When material is rejected at incoming inspection, a couple of choices present themselves" fuentes/grove_high_output/cap_03.md
+135:When material is rejected at incoming inspection, a couple of choices present themselves
+$ grep -n -o "stuck in line waiting for a toaster when it.s time to start boiling your egg" fuentes/grove_high_output/cap_02.md
+57:stuck in line waiting for a toaster when it’s time to start boiling your egg
+$ grep -n -o "Forecasting future work demands and then adjusting the output" fuentes/grove_high_output/cap_03.md
+123:Forecasting future work demands and then adjusting the output
+$ grep -n -o "inventory should be kept at the lowest-value stage, as we.ve learned before" fuentes/grove_high_output/cap_03.md
+119:inventory should be kept at the lowest-value stage, as we’ve learned before
+$ grep -n -o "Leading indicators might include the daily monitors we use to run our breakfast factory" fuentes/grove_high_output/cap_03.md
+83:Leading indicators might include the daily monitors we use to run our breakfast factory
+$ grep -n -o "Another sound way to anticipate the future is through the use of the stagger chart" fuentes/grove_high_output/cap_03.md
+91:Another sound way to anticipate the future is through the use of the stagger chart
+$ grep -n -o "Another way to lower the cost of quality assurance is to use variable inspections" fuentes/grove_high_output/cap_03.md
+143:Another way to lower the cost of quality assurance is to use variable inspections
