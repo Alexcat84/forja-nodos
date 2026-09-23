@@ -921,3 +921,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | casar_flujo_fabricacion_flujo_ventas | otro_idioma | two parallel flows | ingles | - |
 | 2026-09-23 | casar_flujo_fabricacion_flujo_ventas | otro_idioma | shipping dock | ingles | - |
 | 2026-09-23 | casar_flujo_fabricacion_flujo_ventas | otro_idioma | slack | ingles | - |
+| 2026-09-23 | dimensionar_plantilla_administrativa_pronostico | nombre_largo | Los metodos de control de fabrica aplicados a la fabrica administrativa: patrones de hecho sacados de la tendencia, pronostico de carga, y plantilla ajustada al crecimiento o al descenso previsto | castellano | - |
+| 2026-09-23 | dimensionar_plantilla_administrativa_pronostico | otro_idioma | administrative factory | ingles | - |
+| 2026-09-23 | dimensionar_plantilla_administrativa_pronostico | otro_idioma | de facto standards | ingles | - |
+| 2026-09-23 | dimensionar_plantilla_administrativa_pronostico | otro_idioma | headcount | ingles | - |

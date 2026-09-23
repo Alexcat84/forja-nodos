@@ -1,0 +1,67 @@
+fila 18, dimensionar_plantilla_administrativa_pronostico, lineas --veredicto: 6
+  --veredicto elegir_cinco_indicadores_diarios_fabrica|SANO|Comparten indicadores y pronostico como palabras. El vecino elige los cinco datos que el director de la fabrica mira cada manana y actua sobre ellos ese dia (L15 a L29); el candidato dimensiona la plantilla de una unidad administrativa con patrones deducidos de la tendencia (L123 a L125). El paso 1 del candidato pide los indicadores que caracterizan a una unidad ADMINISTRATIVA, que es lo que despliega elegir_indicador_salida_trabajo_administrativo y no este vecino.
+  --veredicto simplificar_trabajo_reducir_numero_pasos|SANO|Ajenos dentro de cap_03. El vecino simplifica el trabajo dibujando el flujo, contando pasos y tirando los que no aguantan la pregunta (L169 a L171); el candidato dimensiona la plantilla con el pronostico. Los dos quieren productividad administrativa, que es la meta y no el procedimiento.
+  --veredicto decidir_aceptar_rechazar_material_defectuoso|SANO|El mismo par que decidir_aceptar lee desde su lado: material fuera de especificacion contra plantilla administrativa. Ningun paso compartido.
+  --veredicto construir_indicador_tendencia_patron|CONTINUA|madre=construir_indicador_tendencia_patron|El mismo par que la tendencia lee desde su lado, con la misma direccion: el paso 2 de este candidato deduce de los datos de tendencia unos patrones de hecho (L125, inferred from the trend data), que es usar el producto de la madre, la salida medida contra el tiempo en una serie de meses (sus pasos 2 y 3, L89). El candidato anade el pronostico de la gente necesaria, la reasignacion, el casar la plantilla con la actividad y el rigor contra la ley de Parkinson (pasos 3 a 7). Arista por lectura de d141 que la senial levanta HOY.
+  --veredicto elegir_fabricar_pedido_pronostico|SANO|Comparten fabricar contra pronostico como idea: el paso 4 del candidato pronostica la demanda de trabajo y ajusta la salida (L123), y el vecino decide entre fabricar contra pedido y contra pronostico en una fabrica y asume su riesgo de inventario (L103 a L107). El vecino no ensena a pronosticar ni a dimensionar gente, y el candidato no elige entre dos vias: no es la madre de esta ficha (d141, leido y no sostenido). La senial levanta este sentido HOY, tras la correccion del vecino, y el contrario no.
+  --veredicto emparejar_indicadores_efecto_contraefecto|SANO|El mismo par que emparejar lee desde su lado: dimensionar la plantilla con el pronostico contra emparejar efecto y contraefecto. Ningun paso compartido. VECINO NUEVO de la matriz de los 22, tras la correccion del vecino.
+inicio 2026-09-23 18:30:57
+======================================================================
+ADUANA DE INSERCION, candidato 'dimensionar_plantilla_administrativa_pronostico'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 462   (363 del grafo mas 99 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino elegir_fabricar_pedido_pronostico  [Elegir entre fabricar contra pedido y fabricar contra pronostico, y asumir el riesgo de inventario del segundo]
+    levantada por: similitud_texto
+    similitud_texto    0.353 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.455 (umbral 0.60)
+    paso 3 del candidato contra paso 7 de elegir_fabricar_pedido_pronostico
+
+  vecino elegir_cinco_indicadores_diarios_fabrica  [Elegir los cinco indicadores diarios con los que se dirige una fabrica]
+    levantada por: similitud_texto
+    similitud_texto    0.351 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.434 (umbral 0.60)
+    paso 6 del candidato contra paso 3 de elegir_cinco_indicadores_diarios_fabrica
+
+  vecino construir_indicador_tendencia_patron  [Construir el indicador de tendencia midiendo la salida contra el tiempo y contra un patron]
+    levantada por: similitud_texto
+    similitud_texto    0.380 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.405 (umbral 0.60)
+    paso 2 del candidato contra paso 6 de construir_indicador_tendencia_patron
+
+  vecino emparejar_indicadores_efecto_contraefecto  [Emparejar cada indicador con otro que mida su contraefecto, para no pasarse de frenada]
+    levantada por: similitud_texto
+    similitud_texto    0.360 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.396 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de emparejar_indicadores_efecto_contraefecto
+
+  vecino simplificar_trabajo_reducir_numero_pasos  [Simplificar el trabajo dibujando el flujo entero, contando sus pasos y tirando los que no aguanten la pregunta]
+    levantada por: similitud_texto
+    similitud_texto    0.351 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.388 (umbral 0.60)
+    paso 6 del candidato contra paso 6 de simplificar_trabajo_reducir_numero_pasos
+
+  vecino decidir_aceptar_rechazar_material_defectuoso  [Decidir si se devuelve o se usa el material que no llega a especificacion, y donde esa decision deja de ser economica]
+    levantada por: similitud_texto
+    similitud_texto    0.367 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.359 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de decidir_aceptar_rechazar_material_defectuoso
+  arista madre-hijo cableada y escrita RESUELTA: construir_indicador_tendencia_patron > dimensionar_plantilla_administrativa_pronostico
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 364
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+
+======================================================================
+fin 2026-09-23 18:52:20 | codigo de salida 0 | 1283.1 s
