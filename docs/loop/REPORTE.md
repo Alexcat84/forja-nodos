@@ -58546,3 +58546,28 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `462`; lineas `--vered
 **Arista cableada por la aduana en el acto**: `construir_flujo_produccion_paso_limitante > rehacer_flujo_paso_limitante_capacidad`
 
 Es la arista que la fila `1` dejo en cola: **pagada aqui**, y no se cablea dos veces.
+
+### Fila `6`: `equilibrar_capacidad_personal_inventario_plazo`, **INSERTADO** en `1234.7` s, codigo `0`, commit `cebbcf1`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `462`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v65ext/insertar_06_equilibrar_capacidad_personal_inventario_plazo.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_06_equilibrar_capacidad_personal_inventario_plazo.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `construir_indicador_tendencia_patron` | similitud_texto | 0.354 | 0.000 | 0.421 | SANO |
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, `D65.2`, `D65.3`): `rehacer_flujo_paso_limitante_capacidad > equilibrar_capacidad_personal_inventario_plazo`, `--paso 4`, que es el paso de la madre cuyo producto, el flujo rehecho alrededor de la cola del tostador, es el choque del paso `1` del hijo. Salida entera en `.v65ext/arista_rehacer_flujo_paso_limitante_capacidad__equilibrar_capacidad_personal_inventario_plazo.txt`:
+
+    $ python forja.py arista --madre rehacer_flujo_paso_limitante_capacidad --hijo equilibrar_capacidad_personal_inventario_plazo --paso 4 --razon <fila 12> --veredicto CONTINUA --cita-veredicto <fila 12>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: rehacer_flujo_paso_limitante_capacidad
+      hijo : equilibrar_capacidad_personal_inventario_plazo
+      paso citado de la madre: 4
+        Declara paso limitante nuevo el de la capacidad limitada, y rehaz el flujo entero alrededor de el, calculando otra vez hacia atras desde la hora de en
+      señales del par: familia_id 0.111, paso_contra_nodo 0.413, similitud_texto 0.3
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: rehacer_flujo_paso_limitante_capacidad > equilibrar_capacidad_personal_inventario_plazo
+      razon en bitacora/VEREDICTOS.jsonl
+
