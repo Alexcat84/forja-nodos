@@ -925,3 +925,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | dimensionar_plantilla_administrativa_pronostico | otro_idioma | administrative factory | ingles | - |
 | 2026-09-23 | dimensionar_plantilla_administrativa_pronostico | otro_idioma | de facto standards | ingles | - |
 | 2026-09-23 | dimensionar_plantilla_administrativa_pronostico | otro_idioma | headcount | ingles | - |
+| 2026-09-23 | decidir_aceptar_rechazar_material_defectuoso | nombre_largo | Las dos salidas del material rechazado en recepcion, el grupo equilibrado de mandos que las pesa, y la excepcion de fiabilidad que no admite componenda | castellano | - |
+| 2026-09-23 | decidir_aceptar_rechazar_material_defectuoso | otro_idioma | waive our specifications | ingles | - |
+| 2026-09-23 | decidir_aceptar_rechazar_material_defectuoso | otro_idioma | balanced group of managers | ingles | - |
+| 2026-09-23 | decidir_aceptar_rechazar_material_defectuoso | otro_idioma | reliability problem | ingles | - |
