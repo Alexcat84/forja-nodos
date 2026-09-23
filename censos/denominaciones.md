@@ -860,3 +860,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | clasificar_trabajo_proceso_montaje_prueba | otro_idioma | system test | ingles | - |
 | 2026-09-23 | clasificar_trabajo_proceso_montaje_prueba | otro_idioma | rework | ingles | - |
 | 2026-09-23 | clasificar_trabajo_proceso_montaje_prueba | otro_idioma | dry run | ingles | - |
+| 2026-09-23 | detectar_arreglar_fallo_etapa_menor_valor | nombre_largo | El valor que el material va acumulando por el flujo, y la regla de encontrar el problema donde todavia vale poco | castellano | - |
+| 2026-09-23 | detectar_arreglar_fallo_etapa_menor_valor | otro_idioma | adding value | ingles | - |
+| 2026-09-23 | detectar_arreglar_fallo_etapa_menor_valor | otro_idioma | lowest-value stage | ingles | - |
+| 2026-09-23 | detectar_arreglar_fallo_etapa_menor_valor | otro_idioma | perceived value | ingles | - |

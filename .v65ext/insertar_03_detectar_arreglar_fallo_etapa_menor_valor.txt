@@ -1,0 +1,32 @@
+fila 03, detectar_arreglar_fallo_etapa_menor_valor, lineas --veredicto: 1
+  --veredicto supervisar_tarea_delegada_etapa_menor_valor|CONTINUA|madre=detectar_arreglar_fallo_etapa_menor_valor|El paso 2 del vecino aplica la regla del paso 3 de este candidato, supervisar en la etapa de menor valor, al seguimiento de una tarea delegada, y le añade siete pasos que la madre no tiene: el borrador en sucio como etapa de menor valor, la frecuencia variable por muestreo distinta por subordinado, la madurez relativa a la tarea, la desescalada segun mejora y la entrada al detalle al azar contra el cien por cien. Es la adjudicacion de la ACTA 61 seccion 61.5, releida hoy con los 6 y los 9 pasos delante, y la sostengo contra el descarte de la vuelta 62. El vecino espera en la bandeja, cap_04, y es uno de los que la 64 no toca: la arista queda EN COLA por D.29 y se cablea cuando entre.
+inicio 2026-09-23 13:02:11
+======================================================================
+ADUANA DE INSERCION, candidato 'detectar_arreglar_fallo_etapa_menor_valor'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 462   (348 del grafo mas 114 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino supervisar_tarea_delegada_etapa_menor_valor  [Supervisar una tarea delegada como se supervisa la calidad: en la etapa de menor valor anadido, con frecuencia variable y entrando en el detalle al azar]
+    levantada por: familia_id
+    similitud_texto    0.242 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.459 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de supervisar_tarea_delegada_etapa_menor_valor
+  ARISTA EN COLA, no cableada: detectar_arreglar_fallo_etapa_menor_valor > supervisar_tarea_delegada_etapa_menor_valor
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre detectar_arreglar_fallo_etapa_menor_valor --hijo supervisar_tarea_delegada_etapa_menor_valor --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 349
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+  ARISTAS EN COLA, sin cablear: 1
+    detectar_arreglar_fallo_etapa_menor_valor > supervisar_tarea_delegada_etapa_menor_valor
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+
+======================================================================
+fin 2026-09-23 13:17:13 | codigo de salida 0 | 901.5 s
