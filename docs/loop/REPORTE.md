@@ -58776,3 +58776,37 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `462`; lineas `--veredic
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: construir_grafico_escalonado_pronosticos > casar_flujo_fabricacion_flujo_ventas
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `18`: `dimensionar_plantilla_administrativa_pronostico`, **INSERTADO** en `1283.1` s, codigo `0`, commit `2a78fdb`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `462`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v65ext/insertar_18_dimensionar_plantilla_administrativa_pronostico.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_18_dimensionar_plantilla_administrativa_pronostico.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `elegir_fabricar_pedido_pronostico` | similitud_texto | 0.353 | 0.143 | 0.455 | SANO |
+| `elegir_cinco_indicadores_diarios_fabrica` | similitud_texto | 0.351 | 0.000 | 0.434 | SANO |
+| `construir_indicador_tendencia_patron` | similitud_texto | 0.380 | 0.000 | 0.405 | CONTINUA |
+| `emparejar_indicadores_efecto_contraefecto` | similitud_texto | 0.360 | 0.000 | 0.396 | SANO |
+| `simplificar_trabajo_reducir_numero_pasos` | similitud_texto | 0.351 | 0.000 | 0.388 | SANO |
+| `decidir_aceptar_rechazar_material_defectuoso` | similitud_texto | 0.367 | 0.000 | 0.359 | SANO |
+
+**Arista cableada por la aduana en el acto**: `construir_indicador_tendencia_patron > dimensionar_plantilla_administrativa_pronostico`
+
+Es la arista que la fila `13` dejo en cola (`d141`): **pagada aqui**, una sola vez.
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, `D65.2`, `D65.3`): `elegir_indicador_salida_trabajo_administrativo > dimensionar_plantilla_administrativa_pronostico`, `--paso 4` de un tramo `1 a 7`: es el paso donde la madre toma el indicador de salida del trabajo administrativo, y el paso `1` del hijo pide elegir con cuidado los indicadores que caracterizan a la unidad administrativa. Salida entera en `.v65ext/arista_elegir_indicador_salida_trabajo_administrativo__dimensionar_plantilla_administrativa_pronostico.txt`:
+
+    $ python forja.py arista --madre elegir_indicador_salida_trabajo_administrativo --hijo dimensionar_plantilla_administrativa_pronostico --paso 4 --razon <fila 5> --veredicto CONTINUA --cita-veredicto <fila 5>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: elegir_indicador_salida_trabajo_administrativo
+      hijo : dimensionar_plantilla_administrativa_pronostico
+      paso citado de la madre: 4
+        Toma el indicador de salida de la lista que el libro pone para el trabajo administrativo: en cuentas a pagar, el numero de comprobantes tramitados; en
+      señales del par: familia_id 0.0, paso_contra_nodo 0.409, similitud_texto 0.338
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: elegir_indicador_salida_trabajo_administrativo > dimensionar_plantilla_administrativa_pronostico
+      razon en bitacora/VEREDICTOS.jsonl
+
