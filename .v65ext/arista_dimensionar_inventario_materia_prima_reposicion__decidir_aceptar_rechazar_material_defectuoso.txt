@@ -1,0 +1,13 @@
+$ python forja.py arista --madre dimensionar_inventario_materia_prima_reposicion --hijo decidir_aceptar_rechazar_material_defectuoso --paso 3 --razon <fila 11> --veredicto CONTINUA --cita-veredicto <fila 11>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: dimensionar_inventario_materia_prima_reposicion
+  hijo : decidir_aceptar_rechazar_material_defectuoso
+  paso citado de la madre: 3
+    Devuelve el material que no sea aceptable, contando con lo que eso te deja: sin material, y por tanto parado.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.42, similitud_texto 0.233
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: dimensionar_inventario_materia_prima_reposicion > decidir_aceptar_rechazar_material_defectuoso
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

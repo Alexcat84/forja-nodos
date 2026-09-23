@@ -58810,3 +58810,28 @@ Es la arista que la fila `13` dejo en cola (`d141`): **pagada aqui**, una sola v
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: elegir_indicador_salida_trabajo_administrativo > dimensionar_plantilla_administrativa_pronostico
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `19`: `decidir_aceptar_rechazar_material_defectuoso`, **INSERTADO** en `1494.5` s, codigo `0`, commit `8a90a14`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `462`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v65ext/insertar_19_decidir_aceptar_rechazar_material_defectuoso.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_19_decidir_aceptar_rechazar_material_defectuoso.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `dimensionar_plantilla_administrativa_pronostico` | similitud_texto | 0.372 | 0.000 | 0.364 | SANO |
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, `D65.2`): `dimensionar_inventario_materia_prima_reposicion > decidir_aceptar_rechazar_material_defectuoso`, `--paso 3`, el que su fila cita (la madre cierra el rechazo en la recepcion devolviendo el material; el paso `1` del hijo abre ahi la decision). Salida entera en `.v65ext/arista_dimensionar_inventario_materia_prima_reposicion__decidir_aceptar_rechazar_material_defectuoso.txt`:
+
+    $ python forja.py arista --madre dimensionar_inventario_materia_prima_reposicion --hijo decidir_aceptar_rechazar_material_defectuoso --paso 3 --razon <fila 11> --veredicto CONTINUA --cita-veredicto <fila 11>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: dimensionar_inventario_materia_prima_reposicion
+      hijo : decidir_aceptar_rechazar_material_defectuoso
+      paso citado de la madre: 3
+        Devuelve el material que no sea aceptable, contando con lo que eso te deja: sin material, y por tanto parado.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.42, similitud_texto 0.233
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: dimensionar_inventario_materia_prima_reposicion > decidir_aceptar_rechazar_material_defectuoso
+      razon en bitacora/VEREDICTOS.jsonl
+
