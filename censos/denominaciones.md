@@ -869,3 +869,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | dimensionar_inventario_materia_prima_reposicion | otro_idioma | raw material inventory | ingles | - |
 | 2026-09-23 | dimensionar_inventario_materia_prima_reposicion | otro_idioma | consumption rate | ingles | - |
 | 2026-09-23 | dimensionar_inventario_materia_prima_reposicion | otro_idioma | opportunity at risk | ingles | - |
+| 2026-09-23 | rehacer_flujo_paso_limitante_capacidad | nombre_largo | La cola del tostador: cuando la capacidad limitada, y no la duracion, decide cual es el paso limitante | castellano | - |
+| 2026-09-23 | rehacer_flujo_paso_limitante_capacidad | otro_idioma | limited capacity | ingles | - |
+| 2026-09-23 | rehacer_flujo_paso_limitante_capacidad | otro_idioma | new limiting step | ingles | - |
+| 2026-09-23 | rehacer_flujo_paso_limitante_capacidad | otro_idioma | time offsets | ingles | - |
