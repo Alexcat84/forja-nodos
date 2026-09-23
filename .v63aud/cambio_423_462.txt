@@ -1,0 +1,5 @@
+CAMBIA  equilibrar_capacidad_personal_inventario_plazo     BLOQUEARIA (poblacion 423) -> ENTRARIA (poblacion 462)
+CAMBIA  dimensionar_plantilla_administrativa_pronostico    ENTRARIA (poblacion 423) -> BLOQUEARIA (poblacion 462)
+CAMBIA  decidir_aceptar_rechazar_material_defectuoso       ENTRARIA (poblacion 423) -> BLOQUEARIA (poblacion 462)
+CAMBIA  simplificar_trabajo_reducir_numero_pasos           ENTRARIA (poblacion 423) -> BLOQUEARIA (poblacion 462)
+hoy, poblacion 462: BLOQUEARIA 9, ENTRARIA 7

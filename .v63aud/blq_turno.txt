@@ -1,0 +1,19 @@
+    $ grep -n '2026-09-23 00:1[0-9].*extractor listo' docs/loop/loop.log
+    4712:[2026-09-23 00:18:07] extractor listo (USD 6.640936799999999), 880s, intento 1 de 7
+
+    $ python -c "import json; d=json.load(open('docs/loop/ultimo_extractor.json',encoding='utf-8')); print(d['stop_reason'], d['terminal_reason'], d['num_turns']); print(d['result'])"
+    end_turn completed 80
+    Both background jobs are still running; I'll pick up as soon as the insertion 1 result lands.
+
+    $ cat .v63ext/insertar_01_construir_flujo.txt
+    INICIO 2026-09-23T00:13:40-04:00
+    $ python forja.py insertar cuarentena/grove_high_output/construir_flujo_produccion_paso_limitante.json --sin-preguntas --veredicto ... (3)
+
+    $ grep -c construir_flujo_produccion_paso_limitante dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl
+    dataset/nodos.jsonl:0
+    bitacora/VEREDICTOS.jsonl:0
+
+    $ cat .v63aud/cerrojo.txt
+    cerrojo de este arbol: procesos/nodos.jsonl.679b2259.cerrojo
+    dueno: {'pid': 14980, 'desde': 1790136820.6282585} | vive: None | huerfano desde hace s: 33468 | tope: 900.0
+

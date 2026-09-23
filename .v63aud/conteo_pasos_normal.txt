@@ -1,0 +1,3 @@
+campos lista de una ficha: ['ids_alias', 'nodos_previos', 'nodos_siguientes', 'atribuciones', 'fuentes', 'pasos_accionables']
+cap_02 candidatos 7 pasos 50
+cap_03 candidatos 9 pasos 80

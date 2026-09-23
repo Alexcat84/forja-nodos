@@ -1,0 +1,14 @@
+    $ python .v63aud/contar_fidelidad.py | tail -4
+    capitulo  cand pasos    T    P    D
+    cap_02       7    50   49    0    1
+    cap_03       9    80   80    0    0
+    total       16   130  129    0    1
+
+    $ cat .v63aud/conteo_pasos_normal.txt
+    campos lista de una ficha: ['ids_alias', 'nodos_previos', 'nodos_siguientes', 'atribuciones', 'fuentes', 'pasos_accionables']
+    cap_02 candidatos 7 pasos 50
+    cap_03 candidatos 9 pasos 80
+
+    $ git show b63405c -- cuarentena/grove_high_output/equilibrar_capacidad_personal_inventario_plazo.json | grep -c '^-    "Considera.*y apunta su coste:'
+    4
+

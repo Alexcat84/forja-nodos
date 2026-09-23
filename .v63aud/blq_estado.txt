@@ -1,0 +1,34 @@
+    $ git rev-parse --short HEAD; git rev-parse --abbrev-ref HEAD
+    53e573e
+    extraccion-mundo-11
+
+    $ python forja.py gate 2>&1 | tail -3
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ python forja.py resolutor
+    nodos vivos: 346
+    nodos deprecados (archivo): 0
+    alias registrados: 0
+
+    $ tail -1 .v63aud/normal_tests.txt; grep 'total:' .v63aud/normal_tests.txt
+    rc=0
+      total: 379 pruebas, 0 fallos, 0 errores
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+       1087 total
+
+    $ ls cuarentena/grove_high_output/*.json | wc -l; ls cuarentena/_insertados/grove_high_output/
+    91
+    revisar_tres_preguntas_valor_carrera.json
+
+    $ git diff --stat 483ae30 HEAD -- dataset/ bitacora/ censos/ config/pares_mutuos.jsonl | wc -l
+    0
+

@@ -1,0 +1,26 @@
+    $ diff <(python .v63ext/fidelidad.py) .v63ext/fidelidad.txt && echo IDENTICA
+    IDENTICA
+
+    $ for id in $(awk '{print $1}' .v63ext/filas_previas_16.txt); do grep -E "^$id " .v63rec/veredictos_de_aduana.txt; done | diff - .v63ext/filas_previas_16.txt && echo IDENTICAS
+    IDENTICAS
+
+    $ for id in $(awk '{print $1}' .v63ext/filas_previas_16.txt); do git log -1 --format='%cs' 483ae30 -- cuarentena/grove_high_output/$id.json; done | sort | uniq -c
+         11 2026-09-16
+          4 2026-09-18
+          1 2026-09-19
+
+    $ head -1 .v55ext/informe_de_lote.txt
+    INICIO 2026-09-20T14:35:25-04:00
+
+    $ git show b63405c --stat --format= -- cuarentena/ | tail -1
+     6 files changed, 16 insertions(+), 16 deletions(-)
+
+    $ wc -l fuentes/grove_high_output/cap_02.md fuentes/grove_high_output/cap_03.md
+       79 fuentes/grove_high_output/cap_02.md
+      179 fuentes/grove_high_output/cap_03.md
+      258 total
+
+    $ ls cuarentena/marquet_turn_the_ship/*.json | wc -l; ls cuarentena/gerber_emyth/*.json | wc -l
+    3
+    22
+

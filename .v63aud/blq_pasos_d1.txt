@@ -1,0 +1,6 @@
+    $ git show b63405c -- cuarentena/grove_high_output/equilibrar_capacidad_personal_inventario_plazo.json | grep '^-    "Considera'
+    -    "Considera especializar al personal, que en el caso del libro es contratar uno que cueza huevos, uno que haga tostadas, uno que sirva cafe y uno que supervise la operacion, y apunta su coste: crea una cantidad inmensa de gasto de estructura, y probablemente sale demasiado caro.",
+    -    "Considera pedir ayuda al de al lado, que meta tu pan mientras tu arrancas tu huevo, y apunta su coste: cuando dependes de otro, los resultados son menos predecibles.",
+    -    "Considera anadir equipo, otro tostador, y apunta su coste: es una adicion cara de bien de capital.",
+    -    "Considera tener el equipo corriendo sin parar para acumular inventario de producto terminado, tirando lo que no puedas usar pero teniendo acceso inmediato a producto, y apunta su coste: eso es desperdicio, y tambien puede salir demasiado caro.",
+

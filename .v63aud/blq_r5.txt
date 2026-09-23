@@ -1,0 +1,10 @@
+    $ python .v63aud/pegado63.py
+    bloques abiertos con `$` en el tramo de la vuelta 63 : 10
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 3
+       $ sed -n '61p' fuentes/grove_high_output/cap_02.md
+           ELISION `...` en medio de la salida, sin declarar
+       $ sed -n '135p' fuentes/grove_high_output/cap_03.md
+           ELISION `...` en medio de la salida, sin declarar
+       $ sed -n '141p' fuentes/grove_high_output/cap_03.md
+           ELISION `...` en medio de la salida, sin declarar
+

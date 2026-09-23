@@ -1,0 +1,2 @@
+cerrojo de este arbol: procesos/nodos.jsonl.679b2259.cerrojo
+dueno: {'pid': 14980, 'desde': 1790136820.6282585} | vive: None | huerfano desde hace s: 33468 | tope: 900.0
