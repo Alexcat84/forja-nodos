@@ -1,0 +1,69 @@
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 5 | rotulo del titulo "All Present and Accounted For" | RESIDUO: rotulo |
+| R2 | L11 | 36 | pregunta de apertura: creer que entendieron sin que fuera asi | POSTURA |
+| R3 | L13 | 10 | fecha, sitio y cuenta atras al despliegue | RESIDUO: rotulo de fecha |
+| R4 | L15 | 59 | llegada a San Diego, informe de problemas mecanicos en tubos de misiles | CASO |
+| R5 | L17 | 25 | el COB aparece en la puerta | CASO |
+| R6 | L19 | 10 | "Sir, he said Fuck this shit and left the boat." | CASO |
+| R7 | L21 | 2 | "Huh, who?" | CASO |
+| R8 | L23 | 9 | "Oh, I thought you knew. Sled Dog went AWOL." | CASO |
+| R9 | L25 | 25 | claro que lo conocia bien | CASO |
+| R10 | L27 | 101 | ser cuartel maestro de guardia es dificil, bajo escrutinio constante | CASO |
+| R11 | L29 | 17 | reaccion inicial, se hunde en la silla | CASO |
+| R12 | L31 | 116 | ya se sentia mal, examenes de ascenso navy-wide sin tiempo de estudio | CASO |
+| R13 | L33 | 36 | ir AWOL seria una marca permanente en su expediente | CASO |
+| R14 | L35 | 49 | tras los problemas de energia de costa y del torpedo, las cosas mejoraban | CASO |
+| R15 | L37 | 136 | convocan reunion, critica, dos bandos entre suboficiales y oficiales | CASO |
+| R16 | L39 | 177 | el otro lado: los cuartel maestros llevaban puerto y estribor desde Pearl Harbor | CASO |
+| R17 | L41 | 87 | Sled Dog no seria premiado pero era trabajador valioso | CASO |
+| R18 | L43 | 5 | subrotulo "The Tip of the Iceberg?" | RESIDUO: rotulo de subseccion |
+| R19 | L45 | 8 | decide profundizar en el problema | CASO |
+| R20 | L47 | 9 | Q: por que puerto y estribor | CASO |
+| R21 | L49 | 14 | A: no habia suficientes cuartel maestros | CASO |
+| R22 | L51 | 3 | Q: por que no | CASO |
+| R23 | L53 | 24 | A: el jefe de esa division no habia calificado a sus hombres | CASO |
+| R24 | L55 | 16 | Q: habia alguien mas calificado | CASO |
+| R25 | L57 | 33 | A: si, el primer clase, pero fuera de la lista por NavSupe | CASO |
+| R26 | L59 | 21 | Q: el NavSupe no es para aumentar seguridad cerca de tierra | CASO |
+| R27 | L61 | 2 | A: Yes. | CASO |
+| R28 | L63 | 15 | Q: no acabamos de cruzar el Pacifico oriental | CASO |
+| R29 | L65 | 2 | A: Yes. | CASO |
+| R30 | L67 | 8 | Q: necesitabamos un supervisor de navegacion | CASO |
+| R31 | L69 | 2 | A: No. | CASO |
+| R32 | L71 | 21 | esto lo enfurecio, el supervisor no estaba ni en la lista | CASO |
+| R33 | L73 | 73 | revisa la lista de guardia, el oficial de buceo uno en seis | CASO |
+| R34 | L75 | 100 | como paso eso, cultura de que jefe da mas privilegios no mas responsabilidad | CASO |
+| R35 | L77 | 7 | "Where is Sled Dog now?" | CASO |
+| R36 | L79 | 57 | nadie estaba seguro, visto rumbo al barracon | CASO |
+| R37 | L81 | 107 | firmemente en el bando compasivo, decide buscarlo el mismo | CASO |
+| R38 | L83 | 100 | necesitaba cuidado, las penas por AWOL en la mano | CASO |
+| R39 | L85 | 89 | conversacion, rompe el parte y le concede amnistia | CASO |
+| R40 | L87 | 130 | reune a los jefes, recuerda la reunion de enero | CASO |
+| R41 | L89 | 2 | "Well, yes." | CASO |
+| R42 | L91 | 20 | les cuenta el trato con Sled Dog, algunos creen que sento mal precedente | CASO |
+| R43 | L93 | 29 | habian sido deshonestos en enero? no lo creo | CASO |
+| R44 | L95 | 65 | la tripulacion desmoralizada, impulso de quitar toda autoridad a los jefes | CASO |
+| R45 | L97 | 12 | a la manana siguiente el COB con el parte diario de lista | CASO |
+| R46 | L99 | 6 | "Captain, all present and accounted for." | CASO |
+| R47 | L101 | 15 | se dan vuelta y se van, Sled Dog habia vuelto | CASO |
+| R48 | L103 | 87 | no todos los jefes contentos, temian erosion de la disciplina, nunca hubo otro AWOL | CASO |
+| R49 | L105 | 113 | resiste tomar mas control, invoca la regla de equidad de listas de guardia | POSTURA: regla enunciada dentro de narrativa, sin pasos de implementacion propios (ver discutible) |
+| R50 | L107 | 7 | rotulo "Mechanism: Continually and Consistently Repeat the Message" | RESIDUO: rotulo de mecanismo |
+| R51 | L109 | 158 | lo mas dificil de aceptar es como no supo que esto pasaba | CASO |
+| R52 | L111 | 93 | se resigna a que su enfoque no funciona, considera volver a ordenes rigidas | CASO |
+| R53 | L113 | 85 | el comportamiento de los jefes lo desconcierta, fuerza invisible en contra | CASO |
+| R54 | L115 | 15 | lo que comprendio: hace falta repeticion constante y consistente del mensaje | POSTURA: transicion |
+| R55 | L117 | 11 | etiqueta "CONTINUALLY AND CONSISTENTLY REPEAT THE MESSAGE is a mechanism for COMPETENCE." | RESIDUO: etiqueta de mecanismo |
+| P1 | L119 | 126 | NODO: repetir el mismo mensaje en las tres ocasiones nombradas y no cambiarlo (parcial, ver 3.b y discutible); resto de la linea es CASO sobre habitos viejos y el USS Ustafish, no se usa | MIXTO NODO/CASO |
+| R56 | L121 | 3 | separador "• • •" | RESIDUO: separador |
+| R57 | L123 | 138 | cuando traes algo nuevo, algunos jefes lo captaron de inmediato | CASO |
+| R58 | L125 | 48 | ademas si entienden pueden ser escepticos de que sea mejor | POSTURA |
+| R59 | L127 | 120 | historia del poster del perro Barclay, articulo de Fast Company | CASO |
+| R60 | L129 | 3 | rotulo "QUESTIONS TO CONSIDER" | RESIDUO: rotulo |
+| R61 | L131 | 16 | pregunta 1 | PENDIENTE DE DOCTRINA |
+| R62 | L133 | 19 | pregunta 2 | PENDIENTE DE DOCTRINA |
+| R63 | L135 | 29 | pregunta 3 | PENDIENTE DE DOCTRINA |
+| **el cuerpo entero** | **L9 a L135** | **2966** | **suma de las piezas: 2966** | **residuo sin asignar: 0** |
+
+    piezas: 64   lineas solapadas: 0   cuerpo 2966   suma 2966   residuo 0   lineas con palabras sin cubrir: 0

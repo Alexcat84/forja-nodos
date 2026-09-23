@@ -1,0 +1,33 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-23"
+    }
+  ],
+  "id": "repetir_mensaje_invariable_diario_reunion_evento",
+  "titulo": "Repetir el mismo mensaje sin cambiarlo en la rutina diaria, en las reuniones y en cada evento, para que un cambio nuevo se vuelva imagen propia de la gente",
+  "denominaciones": {
+    "nombre_largo": "Repetir dia tras dia, reunion tras reunion y evento tras evento el mismo mensaje sin variarlo, en vez de cambiarlo para que no suene redundante",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "continually and consistently repeat the message"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando estas implantando un cambio o una filosofia nueva en tu organizacion y notas que la gente lo escucha pero no logra imaginarlo de verdad, porque nunca ha visto antes algo parecido y lo interpreta con las imagenes de su experiencia previa.",
+  "entregable_esperado": "El mismo mensaje sostenido sin variacion en la rutina diaria, en las reuniones y en cada evento de la organizacion, en vez de cambiado por parecer redundante.",
+  "pasos_accionables": [
+    "Repite el mismo mensaje dia tras dia, reunion tras reunion, evento tras evento. El texto lo dice asi: Repeat the same message day after day, meeting after meeting, event after event.",
+    "No cambies el mensaje aunque suene redundante, repetitivo y aburrido: la alternativa, cambiarlo, produce confusion y falta de direccion. El texto lo dice asi: Sounds redundant, repetitive, and boring. But what's the alternative? Changing the message? That results in confusion and a lack of direction."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_13.md, unidad Cap. 19, titulo textual \"All Present and Accounted For\". FRONTERA: el nodo sale de la pieza P1 de la frontera de cap_13 publicada en esta vuelta, linea 119, dentro del mecanismo \"Continually and Consistently Repeat the Message\" (rotulo linea 107, etiqueta linea 117). LA LINEA ES MIXTA Y SOLO SE MINA UNA PARTE, dicho por su nombre: la linea 119 tiene 126 palabras; las dos primeras oraciones (repetir el mensaje en las tres ocasiones nombradas, y no cambiarlo porque cambiar produce confusion) son las que se transcriben como pasos; el resto de la misma linea (que los habitos viejos mueren dificil, la referencia al submarino generico \"USS Ustafish\") es CASO y reflexion personal, y no se usa: no es PUENTE porque no se inventa nada, es material del libro que se deja fuera por no traer paso propio. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la primera oracion pone su propio inventario de OCASIONES (dia a dia, reunion, evento), nombradas una a una por el texto, sin adjetivo de adecuacion en el sitio del criterio. LO QUE NO MINO Y POR QUE, que es el discutible principal de esta vuelta: consideré minar tambien la regla de \"equidad de listas de guardia\" de la linea 105 (ningun puesto de supervision puede tener una rotacion mejor que la peor rotacion de los puestos que le reportan), pero la retiro: es una regla declarada en una sola oracion dentro de la narrativa del capitulo, sin inventario propio de etapas ni instrucciones de como aplicarla (como medir la peor rotacion, como reorganizar la lista de guardia), y minarla me habria obligado a escribir yo esos pasos, que es exactamente el PUENTE que EXTRACTOR.md 15.4 advierte. Tambien consideré la secuencia de preguntas y respuestas de la linea 45 a la 69 (\"The Tip of the Iceberg?\"), que dramatiza una tecnica de preguntar por que sucesivamente hasta la causa raiz; la descarto por la misma razon: el libro no la presenta como mecanismo generico bajo su propio rotulo, solo la ejecuta una vez sobre el caso Sled Dog, y generalizarla como procedimiento propio del lector seria inventar la doctrina, no transcribirla. DISCUTIBLE, MARCADO ANTES DE SABER SI ACIERTO: el nodo tiene solo DOS pasos, el mas corto de los tres candidatos de esta vuelta, porque el inventario del libro aqui es delgado (EXTRACTOR.md 15.4: \"un parrafo pobre no produce un nodo pobre: produce un nodo inventado\"); me abstuve de completar con un tercer paso (por ejemplo, \"prepara un recurso visual que recuerde el mensaje\", que es lo que el libro hace despues con el poster del perro Barclay) porque esa anecdota es CASO especifico del autor (su perro, un articulo de Fast Company de 1995) y no una etapa generica que el libro ofrezca al lector. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 2 pasos, 2 TRANSCRIPCION, 0 PUENTE."
+}

@@ -1112,3 +1112,52 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-23 00:03:27]   ultimo commit de ACTA_AUDITOR.md : 2026-09-21 23:38:35 (1790048315)
 [2026-09-23 00:03:27] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-23 00:03:27] VUELTA 1 : EXTRACTOR (claude-sonnet-5, esfuerzo defecto)
+[2026-09-23 06:25:18] arranque: rama extraccion-marquet_turn_the_ship, MODO_INSERCION=cuarentena
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-23 06:25:19]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-23 06:25:19] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-23 06:25:19]   ultimo commit de REPORTE.md      : 2026-09-21 22:44:22 (1790045062)
+[2026-09-23 06:25:19]   ultimo commit de ACTA_AUDITOR.md : 2026-09-21 23:38:35 (1790048315)
+[2026-09-23 06:25:20] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-23 06:25:20] VUELTA 1 : EXTRACTOR (claude-sonnet-5, esfuerzo defecto)
+[2026-09-23 06:32:29] arranque: rama extraccion-marquet_turn_the_ship, MODO_INSERCION=cuarentena
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-23 06:32:30]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-23 06:32:30] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-23 06:32:30]   ultimo commit de REPORTE.md      : 2026-09-21 22:44:22 (1790045062)
+[2026-09-23 06:32:30]   ultimo commit de ACTA_AUDITOR.md : 2026-09-21 23:38:35 (1790048315)
+[2026-09-23 06:32:31] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-23 06:32:31] VUELTA 1 : EXTRACTOR (claude-sonnet-5, esfuerzo defecto)
+[2026-09-23 07:10:12] extractor: TURNO MUDO, el turno corrio 2259s y cobro "1.9248888000000004" pero docs/loop/REPORTE.md quedo identico, intento 1 de 7
+[2026-09-23 07:10:12] fallo "extractor mudo"; espero 1800 segundos y reintento
+[2026-09-23 07:46:29] arranque: rama extraccion-marquet_turn_the_ship, MODO_INSERCION=cuarentena
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-23 07:46:29]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-23 07:46:30] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-23 07:46:30]   ultimo commit de REPORTE.md      : 2026-09-21 22:44:22 (1790045062)
+[2026-09-23 07:46:30]   ultimo commit de ACTA_AUDITOR.md : 2026-09-21 23:38:35 (1790048315)
+[2026-09-23 07:46:30] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-23 07:46:30] VUELTA 1 : EXTRACTOR (claude-sonnet-5, esfuerzo defecto)
+[2026-09-23 07:57:55] extractor: TURNO MUDO, el turno corrio 685s y cobro "1.8587458000000006" pero docs/loop/REPORTE.md quedo identico, intento 1 de 7
+[2026-09-23 07:57:55] fallo "extractor mudo"; espero 1800 segundos y reintento

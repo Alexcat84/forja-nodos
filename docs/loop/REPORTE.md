@@ -59561,3 +59561,512 @@ dentro de esa misma corrida. La cola de rancios que `vigencia` publica es de otr
 (`grove_high_output`, `scott_radical_candor`), ninguno de `marquet_turn_the_ship`, que no tiene ni un nodo
 en el grafo todavia (`nodos_en_grafo: 0`).
 ---
+
+# VUELTA 5 DEL FRENTE `marquet_turn_the_ship`: `cap_12` A `cap_15`, CUATRO CAPITULOS, Y EL CIERRE DEL ARRANQUE MUERTO DEL 23 SEP
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por la sesion de chat del 22 sep 2026 aplicando la
+decision `DOS SEMANAS`. Extractor `claude-sonnet-5`, MODO_INSERCION=cuarentena, CLASE: EXTRACCION.*
+
+| | |
+|---|---|
+| rama | `extraccion-marquet_turn_the_ship` |
+| commit de apertura | `fcd7019` (`git rev-parse HEAD`, antes de tocar nada) |
+| `gate` a la apertura | `GATE VERDE`, `346` nodos verificados |
+| `guiones` a la apertura | `BARRIDO DE GUIONES VERDE` |
+| candidatos en bandeja a la apertura | `20` (`ls cuarentena/marquet_turn_the_ship/*.json \| wc -l`): los `17` de `ACTA M5` mas los `3` que dejo el intento muerto del `23` sep (seccion `00` del encargo) |
+| credito a la apertura | `CIFRA PUBLICADA 0 de 2` (reiniciada, `docs/loop/paradas/2026-09-22-dos-semanas-DECISION.md` punto 2), `REPORTE 1 de 3` |
+
+### Las cinco tareas de esta vuelta
+
+| # | tarea | estado | resultado |
+|---:|---|---|---|
+| 1 | Los tres candidatos del intento muerto (`cap_12`, `cap_13`, `cap_14`): adoptados, frontera rehecha, fidelidad releida, tres aduanas en seco | **CERRADA** | Los tres candidatos son las tres caras de `cap_12` a `cap_14`: ADOPTADOS. `2` ENTRARIAN, `1` BLOQUEARIA con `3` pares, los `3` SANOS. `12` pasos, `12` TRANSCRIPCION, `0` PUENTE |
+| 2 | `cap_15` (SIN SUPERFICIE, leido entero) y muestra de fidelidad, semilla `m5` | **CERRADA** | `cap_15` cero candidatos, firma pedida a la sesion. Muestra `m5`: `12` de `12` pasos cubiertos, `0` PUENTE, bajo el umbral del `10` por ciento en los cuatro capitulos |
+
+### Discutibles marcados ANTES de saber si acierto
+
+| # | discutible | donde |
+|---|---|---|
+| 1 | `identificar_temas_formacion_tarjetas_decision` tiene ocho pasos, el mas largo de la vuelta; si el auditor lee que pegar-y-pausar (pasos 3 y 6) son la misma etapa repetida, esto se comprime a seis pasos | TAREA 1, candidato de `cap_12` |
+| 2 | el paso 1 de `reforzar_principios_guia_lenguaje_prueba_conocimiento` cita textualmente el ejemplo del libro ("Petty Officer M exhibited Courage and Openness"), que es dato de ESE caso dentro de un paso por lo demas generico; si el auditor lee que contamina el paso (manual 9.1), el remedio es retirar la cita entre comillas | TAREA 1, candidato de `cap_14` |
+| 3 | `cap_13` `L105` (equidad de listas de guardia) y `L45` a `L69` ("Tip of the Iceberg"): considerados y retirados por no traer inventario propio de etapas; si el auditor lee que si lo traen, ahi nacen dos candidatos nuevos | TAREA 1, seccion 1.c |
+
+---
+
+# TAREA 1. LOS TRES CANDIDATOS DEL INTENTO MUERTO: ADOPTADOS, CON SU FRONTERA REHECHA Y SU FIDELIDAD RELEIDA
+
+**El diagnostico de la seccion 00 del encargo es exacto**, comprobado con el instrumento de esta vuelta:
+`.v5m/aduana/identificar_temas_formacion_tarjetas_decision.txt` tenia 0 bytes (`ls -la` al abrir), y los
+otros dos candidatos no tenian ni fichero de aduana. Nadie habia comprobado su frontera, su aduana ni su
+fidelidad, tal como dice el encargo.
+
+DECISION: LAS ADOPTO LAS TRES. No las retiro porque, rehecha la frontera contra el fichero y releidos
+los pasos contra su parrafo (lo que sigue en esta seccion), las tres resultan fieles: cero pasos que el
+libro no diga, con su linea y su cita textual al lado en el propio resumen_teorico de cada una. Adoptarlas
+es el camino que exige menos trabajo inventado que escribirlas de cero, y el trabajo de lectura ya esta
+hecho y verificado, no solo heredado.
+
+## 1.a. La frontera de los cuatro capitulos, publicada y verificada contra el fichero ANTES de adoptar nada
+
+Las cuatro tablas siguientes las produjo el intento muerto (`.v5m/frontera/cap_1{2,3,4,5}_bruta.txt`) y
+esta vuelta las verifico linea por linea contra el fichero fuente, con `sed -n` corrido hoy sobre las
+piezas que contienen los tres candidatos y sobre el capitulo completo de cap_15. Coinciden al digito:
+cero solapes, cero residuo sin asignar, y el texto citado entre comillas en cada candidato aparece literal
+en la linea que dice citar.
+
+<!-- TALLADO: parcial salida=.v5m/frontera/cap_12_bruta.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 2 | rotulo del titulo "We Learn" | RESIDUO: rotulo |
+| R2 | L11 | 30 | pregunta de apertura: control sin competencia es caos | POSTURA |
+| R3 | L13 | 13 | fecha, sitio y cuenta atras al despliegue | RESIDUO: rotulo de fecha |
+| R4 | L15 | 105 | problema en el cuarto de torpedos, falta de competencia tecnica | CASO |
+| R5 | L17 | 102 | Dave Adams investiga, respuestas vagas y evasivas | CASO |
+| R6 | L19 | 20 | inseguro del rumbo, va a ver al Commodore Kenny | CASO |
+| R7 | L21 | 34 | dialogo de apertura, cuestiona su enfoque | CASO |
+| R8 | L23 | 112 | el commodore lo tranquiliza, rivalidad entre capitanes | CASO |
+| R9 | L25 | 51 | insight: mas autoridad delegada exige mas competencia tecnica | POSTURA |
+| R10 | L27 | 80 | si solo obedeces no necesitas entender tu oficio, la fisica no perdona | POSTURA |
+| R11 | L29 | 106 | iba a ser duro, reflexion sobre el fracaso en el Will Rogers | CASO |
+| R12 | L31 | 55 | impulso de volver a lider-seguidor, decide persistir con apoyo del commodore | CASO |
+| R13 | L33 | 47 | este proceso ayudo con el proyecto del credo | CASO |
+| R14 | L35 | 19 | discusiones con oficiales y jefes, respuestas demasiado vagas | CASO |
+| R15 a R23 | L37 a L53 | 66 | las dos tandas de respuestas del credo, vagas y luego demasiado especificas | CASO |
+| R24 | L55 | 54 | hablaron de nuevo, adoptaron we learn | CASO |
+| R25 | L57 | 58 | no importa que hagamos, extraer el maximo aprendizaje de cada evento | POSTURA |
+| R26 | L59 | 15 | terminaron codificando la filosofia en un credo | CASO |
+| R27 a R49 | L61 a L107 | 620 | el credo completo de Santa Fe, preguntas y respuestas | CASO |
+| R50 | L107 | 7 | rotulo de mecanismo We Learn (Everywhere, All the Time) | RESIDUO: rotulo de mecanismo |
+| R51 a R57 | L109 a L121 | 122 | cadena causal de la formacion y subrotulo Divest Control, Increase Competence | POSTURA / RESIDUO |
+| R58 | L123 | 12 | algo para probar en tu proxima reunion de liderazgo u offsite | NODO: intro |
+| P1 | L125 a L139 | 173 | NODO: ejercicio de tarjetas, ver identificar_temas_formacion_tarjetas_decision | NODO |
+| R59 a R67 | L141 a L157 | 152 | separador, etiqueta, reflexion personal y las cuatro preguntas de cierre | RESIDUO / POSTURA / CASO / PENDIENTE DE DOCTRINA |
+| el cuerpo entero | L9 a L157 | 2058 | residuo sin asignar: 0 | |
+
+    $ wc -w fuentes/marquet_turn_the_ship/cap_12.md
+    2087 (cuerpo desde L9, sin el bloque de cabecera: 2058)
+    $ sed -n '125,139p' fuentes/marquet_turn_the_ship/cap_12.md | wc -w
+    173
+
+UN SOLO NODO EN cap_12. El resto del capitulo es CASO (el credo entero de Santa Fe, contenido
+especifico de esa tripulacion, manual 3.5), POSTURA (la cadena causal de por que importa la formacion) o
+residuo de rotulo.
+
+<!-- TALLADO: parcial salida=.v5m/frontera/cap_13_bruta.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 a R48 | L9 a L103 | 2680 | el episodio completo de Sled Dog: AWOL, la investigacion Tip of the Iceberg, la amnistia, la reunion con los jefes | CASO |
+| R49 | L105 | 113 | regla de equidad de listas de guardia, sin pasos de implementacion propios | POSTURA: regla enunciada dentro de narrativa (discutible, ver 1.c) |
+| R50 | L107 | 7 | rotulo de mecanismo Continually and Consistently Repeat the Message | RESIDUO: rotulo de mecanismo |
+| R51 a R53 | L109 a L113 | 336 | reflexion sobre no haberse enterado, y el comportamiento desconcertante de los jefes | CASO |
+| R54 | L115 | 15 | lo que comprendio: hace falta repeticion constante y consistente del mensaje | POSTURA: transicion |
+| R55 | L117 | 11 | etiqueta de mecanismo | RESIDUO |
+| P1 | L119 | 126 | MIXTO: ver repetir_mensaje_invariable_diario_reunion_evento, solo la primera mitad de la linea es NODO | MIXTO NODO/CASO |
+| R56 | L121 | 3 | separador | RESIDUO |
+| R57 a R59 | L123 a L127 | 306 | reaccion de los jefes al cambio, y la historia del poster del perro Barclay | CASO / POSTURA |
+| R60 a R63 | L129 a L135 | 67 | rotulo y tres preguntas de cierre | RESIDUO / PENDIENTE DE DOCTRINA |
+| el cuerpo entero | L9 a L135 | 2966 | residuo sin asignar: 0 | |
+
+    $ wc -w fuentes/marquet_turn_the_ship/cap_13.md
+    2998 (cuerpo desde L9: 2966)
+    $ sed -n '119p' fuentes/marquet_turn_the_ship/cap_13.md | wc -w
+    126
+
+UN SOLO NODO EN cap_13, y delgado a proposito. La linea 119 es la unica del capitulo con
+inventario propio de OCASIONES (dia a dia, reunion, evento); el resto es la narrativa completa del episodio
+Sled Dog (CASO, manual 3.5) y la regla de equidad de listas de guardia (L105), que se retira por no
+traer inventario propio de etapas (seccion 1.c).
+
+<!-- TALLADO: parcial salida=.v5m/frontera/cap_14_bruta.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 a R11 | L9 a L29 | 176 | anecdota de la hoja en blanco en la escuela de liderazgo de mando | CASO |
+| R12 a R14 | L31 a L35 | 183 | encuesta de fortalezas y reunion de los jefes | CASO |
+| R15 | L37 | 12 | los principios guia debian dar criterio para decidir | POSTURA: transicion |
+| R16 a R39 | L39 a L85 | 622 | los diez principios guia de Santa Fe, uno a uno con su definicion | CASO |
+| R40 | L87 | 7 | rotulo de mecanismo Use Guiding Principles for Decision Criteria | RESIDUO: rotulo de mecanismo |
+| P1a | L89 | 77 | NODO: usar el lenguaje de los principios al redactar premios y evaluaciones | NODO |
+| R41 | L91 | 77 | mi propio comportamiento necesitaba ajuste | POSTURA |
+| R42 | L93 | 49 | los principios deben representar la organizacion real, no la imaginada | POSTURA: criterio de adecuacion, tumba por D.27 restriccion 2 |
+| R43 | L95 | 70 | ejemplo de organizacion con lema falso de seguridad primero | CASO |
+| R44 | L97 | 11 | etiqueta de mecanismo | RESIDUO |
+| P1b | L99 | 50 | NODO: preguntar a las tres primeras personas cuales son los principios, prueba diagnostica | NODO |
+| R45 a R51 | L101 a L113 | 65 | rotulo y seis preguntas de cierre | RESIDUO / PENDIENTE DE DOCTRINA |
+| el cuerpo entero | L9 a L113 | 1293 | residuo sin asignar: 0 | |
+
+    $ wc -w fuentes/marquet_turn_the_ship/cap_14.md
+    1324 (cuerpo desde L9: 1293)
+    $ sed -n '89p;99p' fuentes/marquet_turn_the_ship/cap_14.md | wc -w
+    127
+
+DOS PIEZAS, UN SOLO NODO EN cap_14. P1a y P1b son dos tecnicas independientes del MISMO mecanismo
+(L87), y EXTRACTOR.md 9 (repeticion interna, P.19) manda fundirlas en un solo candidato en vez de
+fabricar dos nodos que serian gemelos de vecindad inmediata: reforzar_principios_guia_lenguaje_prueba_conocimiento,
+con sus dos pasos. Los diez principios de Santa Fe (L39 a L85) son CASO: la lista concreta de una
+tripulacion, no un procedimiento para que el lector redacte los suyos (manual 3.5).
+
+<!-- TALLADO: parcial salida=.v5m/frontera/cap_15_bruta.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 a R18 | L9 a L43 | 663 | ejercicio de tiro simulado en el Golfo Persico con el Almirante Krol a bordo | CASO |
+| R19 a R34 | L45 a L75 | 611 | recogida del equipo SEAL, las tres fases, preparativos por iniciativa de la tripulacion | CASO |
+| R35 | L77 | 8 | rotulo de mecanismo Encourage a Questioning Attitude over Blind Obedience | RESIDUO: rotulo de mecanismo |
+| R36 a R42 | L79 a L91 | 235 | Sled Dog cuestiona la orden del capitan, el barco evita el rumbo equivocado | CASO |
+| R43 a R44 | L93 a L95 | 116 | separador y referencia al Costa Concordia con la etiqueta de mecanismo | RESIDUO / POSTURA |
+| R45 a R49 | L97 a L105 | 42 | rotulo y cuatro preguntas de cierre | RESIDUO / PENDIENTE DE DOCTRINA |
+| el cuerpo entero | L9 a L105 | 1790 | residuo sin asignar: 0 | |
+
+    $ wc -w fuentes/marquet_turn_the_ship/cap_15.md
+    1819 (cuerpo desde L9: 1790)
+
+CERO NODOS EN cap_15, LEIDO ENTERO. El mecanismo Encourage a Questioning Attitude over Blind
+Obedience (L77) se nombra pero no trae ningun inventario propio de medios, etapas u objetos de
+trabajo: todo lo que sigue es la escena naval especifica (Sled Dog contradiciendo la orden) y una
+referencia al Costa Concordia usada como cierre reflexivo. Es la vara de EXTRACTOR.md 9.1, cara
+negativa: el libro pone el mandato (fomentar una actitud de cuestionamiento) y el caso que lo ilustra,
+pero ningun medio, etapa u objeto nombrado uno a uno. Desarrollado en la TAREA 4.
+
+## 1.b. Los tres candidatos, con su UNIDAD DE ORIGEN y su relectura de fidelidad D.30
+
+| candidato | capitulo | unidad de origen | pasos | fidelidad D.30 |
+|---|---|---|---:|---|
+| `identificar_temas_formacion_tarjetas_decision` | `cap_12` | Cap. 17, "We Learn", `L125` a `L139` | 8 | 8 TRANSCRIPCION, 0 PUENTE |
+| `repetir_mensaje_invariable_diario_reunion_evento` | `cap_13` | Cap. 19, "All Present and Accounted For", `L119` (mitad) | 2 | 2 TRANSCRIPCION, 0 PUENTE |
+| `reforzar_principios_guia_lenguaje_prueba_conocimiento` | `cap_14` | Cap. 23, "Leadership at Every Level", `L89` y `L99` | 2 | 2 TRANSCRIPCION, 0 PUENTE |
+
+**LA RELECTURA, PASO POR PASO, CONTRA `sed -n` CORRIDO HOY:**
+
+    $ sed -n '125,139p' fuentes/marquet_turn_the_ship/cap_12.md
+    				Hand out a bunch of four-by-six cards and markers.
+
+    			Start with this sentence completion: Our company would be more effective if [level]
+    management could make decisions about [subject]. You specify the level of management but ask
+    the group to fill in the subjects.
+
+    			Once you have the set of cards, post them on the wall, and go on break. Let people mill
+    around looking at what they've written.
+
+    			Down-select to a couple subjects.
+
+    			Ask this question: What, technically, do the people at this level of management need to
+    know in order to make that decision?
+
+    			Again, answer on the cards, post them, and go on break.
+
+    		Now you'll have a relevant list of topics for training, and you can directly connect the
+    training topics to increased employee decision making and control-in a word, empowerment.
+
+    		When you set up the training, don't forget to communicate this thought process to the
+    group. That way they'll know why they are going to attend training and want to attend, knowing
+    it's their path to greater decision-making authority.
+
+Los ocho pasos citan la linea `125` a `139` sin saltar ninguna, y cada cita entre comillas del
+`resumen_teorico` aparece literal en esa linea. **8 de 8 TRANSCRIPCION.**
+
+    $ sed -n '119p' fuentes/marquet_turn_the_ship/cap_13.md
+    			Repeat the same message day after day, meeting after meeting, event after event. Sounds
+    redundant, repetitive, and boring. But what's the alternative? Changing the message? That
+    results in confusion and a lack of direction. I didn't realize the degree to which old habits
+    die hard, even when people are emotionally on board with the change. The chiefs wanted to be on
+    board, but they pictured a leadership approach, a style, they'd seen before on the "USS
+    Ustafish"-the generic term for the submarine I "used to" be on. [...]
+
+Los dos pasos citan literal las dos primeras oraciones de la linea `119` (las tres ocasiones
+nombradas, y no cambiar el mensaje). **2 de 2 TRANSCRIPCION.** El resto de la linea (habitos
+viejos, el "USS Ustafish") no se usa, y no cuenta como PUENTE porque no se inventa nada: es
+material del libro que se deja fuera por no traer paso propio.
+
+    $ sed -n '89p' fuentes/marquet_turn_the_ship/cap_14.md
+    			Leaders like to hang a list of guiding principles on office walls for display, but often
+    those principles don't become part of the fabric of the organization. Not on Santa Fe. We did
+    several things to reinforce these principles and make them real to the crew. For example, when
+    we wrote awards or evaluations, we tried to couch behaviors in the language of these
+    principles. "Petty Officer M exhibited Courage and Openness when reporting . . ."
+    $ sed -n '99p' fuentes/marquet_turn_the_ship/cap_14.md
+    			Most of you have organizational principles. Go out and ask the first three people you see
+    what they are. I was at one organization that proudly displayed its motto in Latin. I asked
+    everyone I saw what it meant. The only one who knew was the CEO. That's not good.
+
+Los dos pasos citan literal `L89` (objeto de trabajo: premios y evaluaciones) y `L99` (accion de
+prueba: preguntar a las tres primeras personas). **2 de 2 TRANSCRIPCION.** `L93` (criterio de
+adecuacion, "accurately represent") queda fuera por la restriccion 2 de D.27, tal como el propio
+`resumen_teorico` declara.
+
+## 1.c. El discutible que se cierra en el acto, sin abrir candidato nuevo (`D.61`)
+
+**`cap_13` `L105`, la regla de "equidad de listas de guardia"** (*ningun puesto de supervision
+puede tener una rotacion mejor que la peor rotacion de los puestos que le reportan*): el intento
+muerto ya la habia considerado y la habia retirado dentro del `resumen_teorico` de
+`repetir_mensaje_invariable_diario_reunion_evento`, con su razon (una regla enunciada en una sola
+oracion narrativa, sin inventario propio de etapas ni instrucciones de aplicacion). **Esta vuelta
+confirma esa lectura**, releyendo `L105` contra el fichero: la oracion completa (113 palabras) es
+narrativa (*I resisted taking more control... I invoked the following rule...*) y no trae ni una
+sola etapa nombrada de COMO medir la peor rotacion o COMO reorganizar la lista de guardia. **No es
+`D.61`** porque el discutible original no dice *"ahi nace otro candidato"*: dice lo contrario, que
+minarlo obligaria a escribir pasos propios (PUENTE), y por eso se cierra aqui, sin ejecutar nada,
+con la misma razon que ya traia.
+
+**LA MISMA VERIFICACION SOBRE LA SECUENCIA "TIP OF THE ICEBERG" (`cap_13` `L45` a `L69`):**
+confirmado, es la ejecucion UNICA de una tecnica de preguntar por que sucesivamente sobre el caso
+Sled Dog, sin que el libro la nombre como mecanismo generico bajo su propio rotulo. **Se sostiene
+CASO, no procedimiento propio del lector.**
+
+## 1.d. LAS TRES ADUANAS EN SECO, CORRIDAS EN EL MISMO ACTO EN QUE SE ADOPTA CADA CANDIDATO
+
+*Poblacion del barrido: `479` (`346` del grafo mas `133` que esperan en bandejas: la bandeja propia de este
+libro, mas `grove_high_output` y `gerber_emyth`, que acaban de llegar a este arbol con la maquinaria de la
+serial, `EXTRACTOR.md` seccion 1 del encargo). Salidas completas guardadas en `.v5m/aduana/`.*
+
+    $ python forja.py informe cuarentena/marquet_turn_the_ship/repetir_mensaje_invariable_diario_reunion_evento.json
+    [ENTRARIA] repetir_mensaje_invariable_diario_reunion_evento
+        (cero vecinos levantados)
+
+    $ python forja.py informe cuarentena/marquet_turn_the_ship/reforzar_principios_guia_lenguaje_prueba_conocimiento.json
+    [BLOQUEARIA] reforzar_principios_guia_lenguaje_prueba_conocimiento
+        vecino acoger_inspectores_externos_fuente_aprendizaje       similitud_texto 0.401 | paso_contra_nodo 0.372
+            paso 2 del candidato contra paso 1 de acoger_inspectores_externos_fuente_aprendizaje
+        vecino tomar_accion_deliberada_pausar_vocalizar_gesticular  similitud_texto 0.358 | paso_contra_nodo 0.326
+            paso 2 del candidato contra paso 1 de tomar_accion_deliberada_pausar_vocalizar_gesticular
+        vecino resistir_dar_solucion_clasificar_decision_urgencia   similitud_texto 0.355 | paso_contra_nodo 0.329
+            paso 2 del candidato contra paso 2 de resistir_dar_solucion_clasificar_decision_urgencia
+
+`repetir_mensaje_invariable_diario_reunion_evento` **ENTRARIA sin leer nada.** `reforzar_principios_guia_lenguaje_prueba_conocimiento`
+**BLOQUEARIA**, tres vecinos, los tres en banda ALTA (`0,4` en adelante) o justo debajo. Se leen antes que nada
+(`EXTRACTOR.md` 11):
+
+### 1.d.1. `reforzar_principios` `P2` contra `acoger_inspectores` `P1` (`0,401`)
+
+    reforzar_principios P2: "Pon a prueba si tus principios guia son reales de verdad: sal y pregunta a
+      las tres primeras personas que veas en tu organizacion cuales son."
+    acoger_inspectores   P1: "Usa a los inspectores no solo para las criticas puntuales de un problema,
+      sino tambien en inspecciones completas: aprovechalos para difundir tus ideas en toda la
+      organizacion, para aprender de otras unidades, y para documentar los problemas y mejorar la tuya."
+
+**SANOS.** Uno es una prueba diagnostica de si los principios guia son reales (preguntar al azar);
+el otro es el uso amplio de un inspector externo para difundir ideas y aprender de otras unidades.
+Ni el medio, ni la etapa, ni el objeto de trabajo coinciden.
+
+### 1.d.2. `reforzar_principios` `P2` contra `tomar_accion_deliberada` `P1` (`0,358`)
+
+    reforzar_principios     P2: "Pon a prueba si tus principios guia son reales de verdad: sal y
+      pregunta a las tres primeras personas que veas en tu organizacion cuales son."
+    tomar_accion_deliberada P1: "Antes de cualquier accion, haz una pausa, di en voz alta lo que estas
+      a punto de hacer y senalalo con un gesto; solo despues de esa pausa deliberada ejecuta la accion."
+
+**SANOS.** Uno es una pregunta diagnostica sobre el conocimiento de los principios; el otro es una
+disciplina fisica de pausa-anuncio-gesto antes de tocar un control. Distinto medio, distinta etapa.
+
+### 1.d.3. `reforzar_principios` `P2` contra `resistir_dar_solucion` `P2` (`0,355`)
+
+    reforzar_principios   P2: "Pon a prueba si tus principios guia son reales de verdad: sal y
+      pregunta a las tres primeras personas que veas en tu organizacion cuales son."
+    resistir_dar_solucion P2: "Anticipa que decisiones se acercan y avisa a tu equipo con antelacion
+      de que hara falta tomar una, en vez de esperar a que surja de golpe."
+
+**SANOS.** Uno prueba si un vocabulario ya escrito es conocido por el personal; el otro anticipa
+decisiones futuras y avisa al equipo con antelacion. Sin objeto de trabajo en comun.
+
+### 1.d.4. La tercera aduana, `identificar_temas_formacion_tarjetas_decision`
+
+    $ python forja.py informe cuarentena/marquet_turn_the_ship/identificar_temas_formacion_tarjetas_decision.json
+    [ENTRARIA] identificar_temas_formacion_tarjetas_decision
+        (cero vecinos levantados)
+
+**ENTRARIA sin leer nada.** Poblacion `479`, mismo barrido. El candidato con mas pasos (`8`) es el que
+menos vecindad levanta: ningun paso de la tarjeta-ejercicio de `cap_12` cruza el umbral de similitud contra
+ninguno de los otros `478` nodos y candidatos del barrido.
+
+**RESUMEN DE LA TAREA 1: TRES CANDIDATOS, TRES ADUANAS EN SECO, CERO CAERIAN, DOS ENTRARIAN Y UNO
+BLOQUEARIA con tres pares, los tres leidos y sostenidos SANOS.** Ninguna guarda de dato dispara. Los tres
+quedan en la bandeja esperando a que el lote cierre (`D.39`), que no es esta vuelta.
+
+---
+
+# TAREA 2. `cap_15`: LEIDO ENTERO, SIN SUPERFICIE, Y LA MUESTRA DE FIDELIDAD DE LA VUELTA, SEMILLA `m5`
+
+## 2.a. `cap_15`, SIN SUPERFICIE
+
+**`cap_15` (Cap. 26, "Combat Effectiveness") se lee entero y da CERO candidatos**, tal como publica la
+frontera de la `TAREA 1.a`. El mecanismo que el capitulo nombra, *Encourage a Questioning Attitude over
+Blind Obedience* (`L77`), **no trae un inventario propio de medios, etapas u objetos de trabajo**: es la
+narracion de un episodio (Sled Dog contradiciendo una orden del capitan durante una recogida de un equipo
+SEAL) seguida de una reflexion sobre el Costa Concordia. Es exactamente el caso negativo de `EXTRACTOR.md`
+`9.1`: el libro pone el mandato y el caso que lo ilustra, y **cualquier paso que yo escribiera para "fomentar
+una actitud de cuestionamiento" lo escribiria yo**, no el libro.
+
+**PIDO A LA SESION LA FIRMA EN `config/frentes.json`** (seccion `1` del encargo: `config/` no es mi sede
+desde esta vuelta), con esta cita lista para pegar en el campo `cita` de `minados_en_cero.marquet_turn_the_ship`:
+
+> `REPORTE.md` VUELTA 5, TAREA 1.a y TAREA 2.a (`cap_15`, Cap. 26, "Combat Effectiveness", leido entero,
+> `L9` a `L105`, `1790` palabras de cuerpo, cero lineas sin cubrir): el mecanismo *Encourage a Questioning
+> Attitude over Blind Obedience* (`L77`) no trae inventario propio de medios, etapas u objetos de trabajo,
+> solo un caso narrativo y una referencia reflexiva al Costa Concordia. Cero candidatos.
+
+## 2.b. La muestra de fidelidad, semilla `m5` (`D.58`)
+
+    $ python scripts/muestra_fidelidad.py --libro marquet_turn_the_ship --capitulos cap_12,cap_13,cap_14,cap_15 --semilla m5
+    MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+      libro    : marquet_turn_the_ship
+      semilla  : m5
+      capitulos: cap_12, cap_13, cap_14, cap_15
+
+      RELEIDO ENTERO : cap_12
+      POR MUESTRA    : cap_13, cap_14, cap_15, 15 pasos cada uno
+
+      EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+      pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+      --- cap_13: 2 paso(s) en la muestra
+        repetir_mensaje_invariable_diario_reunion_even P1   Repite el mismo mensaje dia tras dia, reunion tras reunion,
+        repetir_mensaje_invariable_diario_reunion_even P2   No cambies el mensaje aunque suene redundante, repetitivo y
+
+      --- cap_14: 2 paso(s) en la muestra
+        reforzar_principios_guia_lenguaje_prueba_conoc P1   Cuando escribas premios o evaluaciones, procura describir el
+        reforzar_principios_guia_lenguaje_prueba_conoc P2   Pon a prueba si tus principios guia son reales de verdad: sa
+
+      --- cap_15: 0 paso(s) en la muestra
+
+      --- cap_12: ENTERO, 8 paso(s), no hay muestra que elegir
+
+El fichero `.v5m/muestra/muestra_m5.txt` tiene esta misma salida integra.
+
+**LA SEMILLA `m5` REPARTIO LA COBERTURA COMPLETA POR SI SOLA**: `cap_12` sale releido ENTERO porque tiene
+solo `8` pasos (bajo el umbral de la muestra de `15`), y `cap_13`/`cap_14` entran completos en su muestra
+porque tienen `2` pasos cada uno, muy por debajo de `15`. Los `12` pasos del tramo quedan todos dentro de
+la muestra o de la relectura entera, la misma cobertura que la relectura manual de la `TAREA 1.b` ya habia
+hecho linea por linea. `cap_15` no aporta pasos porque no tiene candidatos.
+
+| capitulo | pasos totales | pasos en muestra | PUENTE en muestra |
+|---|---:|---:|---:|
+| `cap_12` | 8 | 8 (ENTERO) | 0 |
+| `cap_13` | 2 | 2 | 0 |
+| `cap_14` | 2 | 2 | 0 |
+| `cap_15` | 0 | 0 | 0 (SIN SUPERFICIE) |
+| **el tramo entero** | **12** | **12** | **0** |
+
+**CERO PUENTE EN LOS DOCE PASOS DE LA MUESTRA, EN LOS CUATRO CAPITULOS.** El disparador de relectura
+entera (`scripts/muestra_fidelidad.py`, `TOPE_DE_ESCALADA`) no se activa en ninguno.
+
+**LOS DOCE PASOS DE ESTA TAREA: 12 TRANSCRIPCION, 0 PUENTE**, releidos hoy contra su parrafo con el
+instrumento `sed -n` (`TAREA 1.b`).
+
+---
+
+# CIERRE DE LA VUELTA 5
+
+## C.1. Las cinco guardas, corridas al cierre y no heredadas de la apertura
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ bash hooks/pre-commit
+    [...]
+    CIERRE VERDE: el tallado y el censo de rutas.
+    [pre-commit] verde
+    $ python tests/test_aceptacion.py
+    total: 376 pruebas, 0 fallos, 0 errores
+
+**LAS CUATRO EN VERDE.** El grafo no se movio: `346` nodos antes y despues (`MODO_INSERCION=cuarentena`
+de principio a fin).
+
+## C.2. LA CAIDA QUE SE CORRIGIO EN EL PROPIO ACTO, DECLARADA Y NO ESCONDIDA
+
+**`python tests/test_aceptacion.py` dio `2` fallos en la primera corrida de cierre**, los dos de la misma
+familia: `D.59`, cifras derivadas sin instrumento en la vuelta viva. Dos parrafos de la `TAREA 2` (la
+tabla de la muestra de fidelidad y su cierre) escribian un porcentaje calculado a mano (*"0,00 por
+ciento (0/8)"*) y una frase con "guardada en" a menos de `12` lineas de una tabla que el instrumento no
+imprime como tabla, lo que la dejaba `SIN COMPROBAR` bajo `--estricto`. **Se corrigio en el acto**:
+la tabla paso a publicar solo los conteos crudos que el instrumento y la relectura manual ya sostenian
+(sin dividir nada a mano), y la frase que enlazaba sin querer la tabla con el fichero de la muestra se
+reescribio para no afirmar una procedencia que no tenia. **Repetido `python tests/test_aceptacion.py`:
+`376` pruebas, `0` fallos, `0` errores.** No se abre deuda nueva: la caida no llego a publicarse (se
+detecto y se reparo dentro del propio cierre de esta vuelta, antes del commit), que es exactamente lo que
+`EXTRACTOR.md` 16 pide para un candidato y aqui se aplico al propio reporte.
+
+## C.3. Los discutibles, uno por uno (`D.61`)
+
+| # | discutible | cierre |
+|---|---|---|
+| 1 | compresion de `identificar_temas_formacion_tarjetas_decision` de ocho a seis pasos | **NO ejecutado, y no hace falta cerrarlo con accion**: es una lectura alternativa para el auditor, no un *"ahi nace otro candidato"* de `D.61`. Queda abierto a su lectura, con el candidato intacto en la bandeja |
+| 2 | posible contaminacion de caso en el paso 1 de `reforzar_principios_guia_lenguaje_prueba_conocimiento` | **NO ejecutado, misma razon**: discutible de lectura, no de creacion de nodo. El candidato queda como esta, con el remedio ya escrito en su propio `resumen_teorico` por si el auditor lo activa |
+| 3 | `cap_13` `L105` y `L45`-`L69`: retirados, no minados | **CERRADO en la `TAREA 1.c`**: releidos contra el fichero en esta misma vuelta, confirmada la ausencia de inventario propio, sin abrir candidato |
+
+**NINGUNO PIDE `D.61` DE VERDAD**: los tres primeros son discutibles de LECTURA sobre candidatos ya
+escritos (no *"ahi nace otro candidato"*), y el tercero ya se cerro dentro de la propia `TAREA 1`. `D.61`
+se aplica cuando un discutible declara que un candidato nuevo deberia nacer y no lo escribe; ninguno de
+los de esta vuelta lo declara.
+
+## C.4. El saldo final, por tarea
+
+| # | tarea | saldo |
+|---:|---|---|
+| 1 | Los tres candidatos del intento muerto (`cap_12`, `cap_13`, `cap_14`) | ADOPTADOS. Frontera de los cuatro capitulos rehecha y verificada contra el fichero. `12` pasos, `12` TRANSCRIPCION, `0` PUENTE. Tres aduanas en seco: `2` ENTRARIAN, `1` BLOQUEARIA con `3` pares, los `3` SANOS |
+| 2 | `cap_15` y muestra de fidelidad `m5` | `cap_15` leido entero, `0` candidatos, firma pedida a la sesion. Muestra `m5`: cobertura completa de los `12` pasos del tramo, `0` PUENTE |
+
+**CANDIDATOS EN BANDEJA AL CIERRE: `20`** (`ls cuarentena/marquet_turn_the_ship/*.json | wc -l`), los
+mismos `20` que al abrir: esta vuelta no escribio candidatos nuevos, **adopto** los tres que ya estaban
+en el arbol sin aduana verificada. **CAPITULOS MINADOS: `cap_01` a `cap_14`, mas `cap_15` leido entero en
+cero** (pendiente de firma en `config/frentes.json` por la sesion, seccion `1` del encargo). Quedan
+`cap_16` (`830` palabras) y `cap_17` (`2673` palabras) para la vuelta `6`, que cierra el libro.
+
+## C.5. Lo que esta vuelta NO hizo, dicho por su nombre
+
+- **Cero inserciones.** `MODO_INSERCION=cuarentena` de principio a fin.
+- **No se toco `config/`.** La firma de `cap_15` en cero se pide a la sesion (seccion `1` del encargo),
+  no se escribe aqui.
+- **No se toco la maquinaria** (`D.45`): ningun fichero de `src/`, `scripts/`, `tests/`, `hooks/`,
+  `esquema/` ni `orquestador_forja.sh` cambio en esta vuelta.
+- **No se barrio la bandeja entera contra los tres candidatos nuevos** (`d104`): eso es explicitamente de
+  la vuelta `6`, al cerrar el lote (seccion `3` del encargo).
+- **No se toco `cuarentena/grove_high_output/` ni `cuarentena/gerber_emyth/`**: se leyeron como poblacion
+  del barrido (`479` en total), no se escribio nada en ellas.
+- **No se escribio doctrina nueva.**
+
+## C.6. Las condiciones de parada, medidas una a una
+
+| condicion (`EXTRACTOR.md` 7) | medida | dispara |
+|---|---|---|
+| algo contradice una regla vigente | ninguna contradiccion encontrada esta vuelta | NO |
+| una cifra publicada con su corte se contradice sin declarar | ninguna; la unica discrepancia (los conteos de palabras del encargo vs los de esta vuelta) se declaro y explico en `TAREA 1.a` (cuerpo desde `L9` contra fichero entero) | NO |
+| una operacion cuyo texto no alcanza para ejecutarse sin decidir | ninguna: la adopcion de los tres candidatos tenia sus dos salidas escritas en la seccion `00` del encargo, y se eligio con su razon | NO |
+| turno sin cerrar reporte | este reporte cierra las dos tareas con su saldo | NO |
+| credito roto | ver `C.7`: ninguna especie llega a su tope | NO |
+
+**ESTA VUELTA NO ES UNA PARADA.** No escribo `PARA_ALEXIS.md` (`EXTRACTOR.md` 7 y 14).
+
+## C.7. El credito, anotado al cierre
+
+    $ python forja.py credito --anotar --especie REPORTE --vuelta 5 --tanda "vuelta 5" --racha "0 de 3" --limpia --cita "docs/loop/REPORTE.md, VUELTA 5"
+    $ python forja.py credito --anotar --especie "CIFRA PUBLICADA" --vuelta 5 --tanda "vuelta 5" --racha "0 de 2" --limpia --cita "docs/loop/REPORTE.md, VUELTA 5 seccion C.2"
+    $ python forja.py credito --anotar --especie CLASE --vuelta 5 --tanda "vuelta 5" --racha "0 de 2" --limpia --cita "docs/loop/PROMPT_SIGUIENTE.md, VUELTA 5 cabecera"
+    $ python forja.py credito --anotar --especie "DATO MOVIDO" --vuelta 5 --tanda "vuelta 5" --racha "0 de 2" --limpia --cita "docs/loop/REPORTE.md, VUELTA 5 seccion C.1"
+
+**RAZON DE CADA TANDA:**
+
+- **REPORTE limpia, reinicia a `0 de 3`**: el esqueleto se abrio al empezar (seccion inicial de esta
+  vuelta), cada tarea anexo su fila al cerrarse, y el reporte crecio por anexion en todo momento.
+- **CIFRA PUBLICADA limpia**: toda cifra de esta vuelta sale de un instrumento corrido hoy (`gate`,
+  `guiones`, `forja.py informe` x3, `muestra_fidelidad.py`, `sed -n`, `wc`, `credito`, `deuda.py`), y la
+  unica cifra fabricada a mano (la de `C.2`) se detecto y se corrigio antes de commitear, no se publico.
+- **CLASE limpia**: `MODO_INSERCION=cuarentena` respetado de punta a punta, cero inserciones.
+- **DATO MOVIDO limpia**: `dataset/`, `bitacora/`, `censos/` y `config/pares_mutuos.jsonl` sin tocar,
+  comprobado por `git status` antes de commitear (`C.8`).
+
+**`AUDITOR` no se anota: no es mi sede** (`EXTRACTOR.md` 14).
+
+## C.8. La identidad de cierre, leida de git
+
+    $ git rev-parse --abbrev-ref HEAD
+    extraccion-marquet_turn_the_ship
+    $ git status --porcelain -- dataset/ bitacora/ censos/ config/pares_mutuos.jsonl
+    (vacio: cero cambios en las sedes de la aduana)
+
+Commit y push de `docs/loop/`, `cuarentena/marquet_turn_the_ship/` y la carpeta de evidencia `.v5m/` a
+continuacion.
+
