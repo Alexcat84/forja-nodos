@@ -917,3 +917,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | elegir_fabricar_pedido_pronostico | otro_idioma | build to order | ingles | - |
 | 2026-09-23 | elegir_fabricar_pedido_pronostico | otro_idioma | build to forecast | ingles | - |
 | 2026-09-23 | elegir_fabricar_pedido_pronostico | otro_idioma | inventory risk | ingles | - |
+| 2026-09-23 | casar_flujo_fabricacion_flujo_ventas | nombre_largo | Los dos flujos paralelos de una fabricacion contra pronostico: el pedido y el producto llegando al muelle a la vez, cada departamento pronosticando lo suyo, y la holgura puesta en el inventario mas barato | castellano | - |
+| 2026-09-23 | casar_flujo_fabricacion_flujo_ventas | otro_idioma | two parallel flows | ingles | - |
+| 2026-09-23 | casar_flujo_fabricacion_flujo_ventas | otro_idioma | shipping dock | ingles | - |
+| 2026-09-23 | casar_flujo_fabricacion_flujo_ventas | otro_idioma | slack | ingles | - |
