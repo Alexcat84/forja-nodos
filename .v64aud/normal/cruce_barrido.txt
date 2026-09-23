@@ -1,0 +1,7 @@
+archivar_indicadores_resolver_problemas          barrido 4 | bloque 4 | en barrido y no en bloque 0 | en bloque y no en barrido 0
+construir_grafico_escalonado_pronosticos         barrido 3 | bloque 3 | en barrido y no en bloque 0 | en bloque y no en barrido 0
+construir_indicador_tendencia_patron             barrido 6 | bloque 6 | en barrido y no en bloque 0 | en bloque y no en barrido 0
+elegir_fabricar_pedido_pronostico                barrido 2 | bloque 2 | en barrido y no en bloque 0 | en bloque y no en barrido 0
+elegir_indicador_salida_trabajo_administrativo   barrido 3 | bloque 3 | en barrido y no en bloque 0 | en bloque y no en barrido 0
+emparejar_indicadores_efecto_contraefecto        barrido 6 | bloque 6 | en barrido y no en bloque 0 | en bloque y no en barrido 0
+pares del barrido: 24 | seniales iguales al redondeo: 24 | difieren: 0 | sin medida del extractor: 0

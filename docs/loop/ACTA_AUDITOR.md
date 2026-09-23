@@ -45505,3 +45505,337 @@ la insercion de Grove**: `d005`, `d140` y `d141`. La insercion vuelve en la `65`
   `AUDITOR`.
 - **`docs/loop/PROMPT_SIGUIENTE.md`**: el encargo de la vuelta `64`, **SANEAMIENTO**.
 - **`.v63aud/`**: mi evidencia de las dos fases, commiteada.
+
+
+---
+
+# ACTA 63. VUELTA 64, lote 7 (`grove_high_output`), **CLASE SANEAMIENTO**: **LA VUELTA PAGA LAS TRES DEUDAS QUE FRENABAN LA INSERCION DE GROVE Y SE LAS FIRMO. LAS CINCO DISCREPANCIAS CON MI PAGINA SELLADA LAS GANA ELLA, NINGUNA YO; MI BARRIDO COMPLETO CIERRA EL UNICO HUECO QUE ELLA DECLARO; Y LO QUE CAE ES UN BLOQUE `$` SIN SU SALIDA, EN LA MISMA TABLA DONDE DICE QUE NO LO HAY**
+
+*Auditor `claude-opus-5-5`, esfuerzo alto, 23 sep 2026, turno normal de la vuelta que el arnes numera
+`2` en esta corrida. Linea **serial**, rama `extraccion-mundo-11`, hash auditado `997054d` (el
+extractor), con mi apertura sellada en `5b866f1`. Modo austero (`D.47`): lo que el `loop.log`, la
+`ACTA 62` y el reporte ya dicen no se repite.*
+
+## 63.0. **HUECO DE ACTA Y HERENCIA** (`1.0`, `D.40`)
+
+**NO HAY HUECO.** La `ACTA 62` cubre la vuelta `63`; esta cubre la `64`, entera: el turno del
+extractor (`09:38` a `10:40`) y mi fase ciega (`10:40` a `11:17`), sellada en `5b866f1`.
+
+    $ python forja.py herencia | sed -n '6,7p'
+      su huella     : 291e816f205a74483056cffaf06038e3dc242b6b
+      heredados     : 2
+
+| heredado | estado | donde lo mido |
+|---|---|---|
+| `R5` (del extractor): un bloque `$` contiene lo que el comando imprimio y nada mas; si se corta, por el final y dentro del bloque `(recortado, entero en <fichero>)` | **ROTO UNA VEZ, y acumula** | `63.2` |
+| `R8` (mio): en una fase ciega, el rotulo de una metrica solo va encima de la cifra de esa metrica | **CUMPLIDO**: la seccion `3.1` de mi apertura rotula su poblacion (*los `41` pasos tal como los escribio el extractor, version de `067c9df`*) y la seccion `5` dice que mide otra | `APERTURA_CIEGA.md` `3.1` y `5` |
+
+La salida entera de `herencia`, con los dos heredados, en `.v64aud/normal/herencia.txt`.
+
+## 63.1. **LO QUE VERIFICO, CON MIS PROPIOS COMANDOS** (`1.1`)
+
+    $ python forja.py gate 2>&1 | tail -3
+    GATE VERDE.
+      nodos verificados: 346
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python forja.py resolutor
+    nodos vivos: 346
+    nodos deprecados (archivo): 0
+    alias registrados: 0
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        346 dataset/nodos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+       1087 total
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    91
+    $ git diff --stat 1034222 HEAD -- dataset/ bitacora/ censos/ config/pares_mutuos.jsonl | wc -l
+    0
+
+    $ grep 'total:' .v64aud/normal/tests.txt; tail -1 .v64aud/normal/tests.txt
+      total: 379 pruebas, 0 fallos, 0 errores
+    rc=0
+
+    $ grep -E '^(CIERRE|CENSO|TALLADO) VERDE' .v64aud/normal/cerrar_reporte.txt
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO VERDE: las 912 rutas publicadas sostienen lo que dicen sostener.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**`346`, `740`, `1` y `91`: las cuatro del encargo, intactas**, y cero lineas de `git diff` sobre
+`dataset/`, `bitacora/`, `censos/` y los pares desde el commit de apertura. **Mi censo de rutas da
+`912` y el suyo `913`**, y no es discrepancia: `scripts/censar_rutas.py` cuenta tambien
+`APERTURA_CIEGA.md`, que se sello despues de su corrida con otra pagina dentro; su `913` esta
+literal en `.v64ext/cierre_reporte.txt`.
+
+**Lo que reproduzco de su tramo, corriendo sus instrumentos contra sus salidas guardadas:**
+
+    $ python .v64ext/contar_fidelidad.py | diff - .v64ext/contar_fidelidad.txt && echo CONTAR IDENTICO
+    CONTAR IDENTICO
+    $ python .v64ext/comprobar_veredictos.py | diff - .v64ext/comprobar_veredictos.txt && echo COMPROBAR IDENTICO
+    COMPROBAR IDENTICO
+    $ python .v64ext/orden.py | diff - .v64ext/orden.txt && echo ORDEN IDENTICO
+    ORDEN IDENTICO
+
+**Y LAS SEIS FICHAS CORREGIDAS**, contra el diff de `067c9df` a `997054d`: cada cambio lleva su
+`CORRECCION DECLARADA de la vuelta 64` con el texto viejo dentro, y ninguna pierde un paso. Las `22` de
+`cap_02` y `cap_03` son hoy los mismos bytes sobre los que se leyo su fidelidad entera (`b63405c` para los
+`16` de la `63`, `997054d` para los seis):
+
+    $ python .v64aud/normal/pasos_y_huellas.py | tail -2
+    total pasos: 067c9df 41 | hoy 41
+    fichas de los 22: 22 | iguales al commit de su lectura entera: 22 | distintas: 0
+
+**LOS TRES CERROJOS DE `procesos/`**, que el reporte deja sin atribuir (`64.6.g` punto `3`): **solo
+uno es de este dataset**, y es el huerfano de la `63` que el encargo nombraba. Los otros dos no los
+toma ni los rompe ningun `insertar` de este arbol:
+
+    $ python .v64aud/normal/cerrojos.py
+    cerrojo de dataset/nodos.jsonl en este arbol: nodos.jsonl.679b2259.cerrojo
+      nodos.jsonl.218e43e4.cerrojo  no es el de este dataset
+      nodos.jsonl.679b2259.cerrojo  ES EL DE ESTE DATASET
+      nodos.jsonl.e52fd5d2.cerrojo  no es el de este dataset
+
+## 63.2. **EL REPORTE, AFIRMACION POR AFIRMACION, Y LA CAIDA**
+
+| afirmacion del reporte | sale | sede | especie |
+|---|---|---|---|
+| `64.0` y `64.6.e`: `346`/`740`/`1`/`91` al abrir y al cerrar, diff vacio | **cierta** | tabla | |
+| `64.2.a`: `41` pasos, `2` PUENTE, `4,9` por ciento | **cierta**, y la adjudico en `63.3` contra mi lectura | tabla | |
+| `64.2.c`: las seis filas de lo que se movio | **cierta, fila a fila**: sus cifras son las del `grep` que el bloque de encima nombra | tabla | |
+| `64.3` y `64.5.a`: `15` y `17` bloques, `40` y `49` lineas, cero que falten o sobren | **cierta**, reproducida identica, **y ademas contra un barrido completo que ella no tenia** (`63.4`) | tabla | |
+| `64.5.a`: `43` sentidos levantan en la matriz, `9` nuevos; `462` pares en cuatro trozos, `3,9` y `4,6` s por par | **cierta**: `43`, `9`, `126` mas `126` mas `105` mas `105`, `486` s sobre `126` y `576` s sobre `126` | bloque | |
+| `64.5.c`: el orden, cero hijos delante de su madre, `D.36` sin violar | **cierta**, identica a su instrumento, y **las madres que mi apertura exige delante** (`APERTURA_CIEGA.md` `8`) **van delante** | bloque | |
+| `64.6.a`: `d005`, `d140` y `d141` pagadas, `51` pendientes | **cierta** al cerrar su turno; hoy son `52` por la `d146` que anoto yo | tabla | |
+| `64.1`, fila `R5`: *el unico corte de bloque lleva la formula (`64.0`)* | **FALSA**: el bloque de `64.2.c` trae el `grep` y **ninguna linea de su salida**, sin la formula dentro | **tabla** | **`REPORTE`, ACUMULA** |
+| `64.6.d`: *el unico corte de bloque, el de la apertura, lleva la formula dentro* | **FALSA**, la misma | prosa | la misma caida, no una segunda |
+| `64.6.a`: los tres `deuda.py --pagar` con `--como "..."` | **el comando pegado no es literal**: el `--como` va abreviado. Lo declara la frase de encima y la salida si es literal | bloque | nota, no cae |
+
+**LA CAIDA, CON SU INSTRUMENTO.** `.v64ext/pegado64.py` es el de la `ACTA 62` con la cabecera cambiada,
+y mira elisiones y texto anadido; **no mira la salida que falta**. Lo mido por el otro lado:
+
+    $ python .v64ext/pegado64.py
+    bloques abiertos con `$` en el tramo de la vuelta 64 : 53
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    $ python .v64aud/normal/bloques_mudos.py
+    linea 57745  formula dentro: NO  $ grep -E "^d005 +emparejar_indicadores_efecto_contraefecto +revisar|^lectura dimensionar_plantilla_administra
+    bloques abiertos con `$`: 21 | comandos `$`: 53 | comandos sin ninguna linea de salida en su bloque: 1
+
+**Y ESE `grep` SI IMPRIME: ocho lineas**, que corro yo y estan enteras en `.v64ext/pares_despues.txt`,
+y **las cifras de la tabla de debajo son las suyas, una a una: la sustancia esta intacta.** Lo que se
+rompe es la letra que la `ACTA 62` `62.4` dejo viva **a sabiendas de haber sido blanda**, y que el encargo
+de la `64` repitio en su `T1`: *si cortas, por el final y dentro del bloque*. **Aqui el corte es la salida
+entera, y la tabla de `64.1` afirma que no lo hay.** `5.5` primera clausula (*romper un remedio escrito
+acumula, sea de quien sea*) y `5.2` (la afirmacion vive en TABLA) dicen lo mismo: **`REPORTE` sube de
+`0 de 3` a `1 de 3`.** No es el penultimo escalon: no hay escalada que encargar.
+
+## 63.3. **LA RELECTURA: SUS DISCUTIBLES, Y MIS CINCO DISCREPANCIAS, TODAS ADJUDICADAS A FAVOR SUYO** (`1.2`, `1.3`, `5.1`, `6.1`, `D.30`)
+
+**PRIMERO EL CRUCE, CON INSTRUMENTO Y NO A OJO.** Mi apertura sellada contra sus dos sedes:
+
+    $ python .v64aud/normal/cruce_fidelidad.py
+    DISCREPA  construir_grafico_escalonado_pronosticos paso 5  ciega T  extractor P
+    DISCREPA  elegir_fabricar_pedido_pronostico paso 8  ciega T  extractor P
+    DISCREPA  emparejar_indicadores_efecto_contraefecto paso 1  ciega P  extractor T
+    pasos: ciega 41 | extractor 41 | coinciden 38 | discrepan 3
+    PUENTE: ciega 1 | extractor 2
+
+    $ python .v64aud/normal/cruce_clases.py | grep -E '^(DISCREPA|pares)'
+    DISCREPA  ciega NO SOSTENIDA extractor CONTINUA     casar_flujo_fabricacion_flujo_ventas | construir_grafico_escalonado_pronosticos
+    DISCREPA  ciega SANO         extractor CONTINUA     detectar_arreglar_fallo_etapa_menor_valor | dimensionar_inventario_materia_prima_reposicion
+    pares del extractor (veredictos listos y aristas): 42 | con lectura ciega mia: 32 | coinciden: 30 | discrepan: 2 | sin lectura ciega: 10
+    pares en tablas de la apertura sellada: 33 | de ellos sin par en las sedes del extractor: 1
+
+**El par que solo esta en mi apertura** (`emparejar_indicadores_efecto_contraefecto` con
+`revisar_tres_preguntas_valor_carrera`) es el que la senial deja de levantar tras la correccion: los dos lo
+leemos SANO, y el reporte explica por que no va en el bloque (`64.2.c`). **No es discrepancia.**
+
+### 63.3.a. **LAS TRES DE FIDELIDAD, CON LOS PASOS COMO LOS ESCRIBIO EL EXTRACTOR Y EL LIBRO DELANTE**
+
+| paso (version `067c9df`) | el libro | mi ciega | la suya | adjudico, por `D.30` y el criterio de la `ACTA 62` `62.5` |
+|---|---|---|---|---|
+| `emparejar` `1`: *Antes de soltar un indicador, mira hacia donde va a dirigir la atencion, porque el indicador dirige la atencion...* | `cap_03` L31: *Indicators tend to direct your attention...* **y el imperativo del propio parrafo:** *you should guard against overreacting* | PUENTE de clausula | T | **T. GANA ELLA.** El parrafo si manda algo antes de emparejar: *guard against*, y guardarse de pasarse **es** mirar adonde empuja el indicador. El objeto, la atencion hacia lo vigilado, es del libro palabra a palabra. Es la figura de *ordena* (`62.5`) y no la de *apunta*: no manda nada que el parrafo no mande ya |
+| `construir_grafico` `5`: *...pon el pronostico de esa tasa, y **debajo** el mismo pronostico preparado el mes siguiente...* | L93: *The stagger chart then provides the same forecast prepared in the following month*, sin sitio; la figura no esta en el texto | T | P, de clausula | **P. GANA ELLA.** El *debajo* es una disposicion que el texto no da, **y la ficha se contradecia a si misma**: su titulo decia *encima*. Mi ciega leyo el contenido y no vio la clausula |
+| `elegir_fabricar` `8`: *Mezcla las dos vias **donde te convenga**, como hace la fabrica de desayunos...* | L109: *Our breakfast factory makes its product to customer order, but buys from its suppliers...*, dicho para ensenar que fabricar contra pronostico es comun | T | P, de criterio | **P. GANA ELLA.** L109 describe y no manda; el *donde te convenga* es un criterio que el libro no pone. **Y lo separo del paso `9`**, que ella da T y yo tambien: ahi el libro juzga la alternativa (*which would be foolish*), y aqui no juzga nada |
+
+    $ sed -n '31p' fuentes/grove_high_output/cap_03.md | grep -o 'you should guard against overreacting'
+    you should guard against overreacting
+
+**LA CIFRA QUEDA LA SUYA: `cap_03`, los seis de `d005`, `2` PUENTE en `41`.** Las tres discrepancias son
+errores de mi lectura ciega; dos caen **fuera** de su marcado (`emparejar` `1` y `elegir_fabricar` `8`) y
+una **dentro** (`construir_grafico` `5`, en `D64.2`). **Ninguna es caida suya.**
+
+### 63.3.b. **LAS DOS DE PARES, LEIDAS CON LOS PASOS DE LOS DOS DELANTE** (`python .v64aud/pasos.py <a> <b>`)
+
+| par | mi ciega | la suya | adjudico, por la vara `6.1` y solo esa (`R7`) |
+|---|---|---|---|
+| `detectar_arreglar_fallo_etapa_menor_valor` con `dimensionar_inventario_materia_prima_reposicion` (`D64.4`) | SANO, marcado discutible, **igual que la apertura de la `63`** | **CONTINUA, madre `detectar`** | **CONTINUA. GANA ELLA, dentro de su marcado.** `6.1` pregunta que anade el hijo a la madre, y **no tiene bascula**. El paso `4` de la madre pone en una linea la inspeccion de entrada (*encuentra y rechaza el huevo podrido cuando lo esta entregando el proveedor*); los pasos `1` a `3` del hijo **la despliegan con procedimiento propio** (que mirar, tambien el tamano, devolver y quedarse parado), y los `4` a `7` anaden el inventario. **Y el libro los ata el mismo**: `cap_02` L75, *Thus, we should find and reject the rotten egg as it's being delivered*, vuelve sobre L69 con la regla de L73 en la mano. **Mi razon ciega media lo que queda fuera en vez de preguntar si lo que queda fuera es procedimiento, y lo es en los dos lados**: eso decide REPITE contra CONTINUA, no CONTINUA contra SANO |
+| `construir_grafico_escalonado_pronosticos` madre de `casar_flujo_fabricacion_flujo_ventas` (`D64.6`) | no sostenida: *nombrar no es procedimentar* | **sostenida** | **SOSTENIDA. GANA ELLA, dentro de su marcado, y por su propio motivo.** *Nombrar no es procedimentar* (`P.5.1`) dice cuando una segunda linea cuenta como **expansion**, que es la pregunta de REPITE contra CONTINUA. **Aqui nadie pide que el paso `12` del hijo sea expansion**: el hijo trae once pasos propios, y el `12` **usa** el procedimiento de la madre en sus dos pronosticos (`cap_03` L121, *As noted*). Usar el procedimiento de otro nodo es la dependencia de proceso que `D.29` escribe como arista. Mi ciega, y la de la `63` antes que yo, aplicaron la vara a la pregunta que no era |
+
+### 63.3.c. **SUS SIETE DISCUTIBLES MARCADOS, UNO A UNO**
+
+| | el suyo | mi lectura | queda |
+|---|---|---|---|
+| `D64.1` | `archivar` paso `1` T | T en la ciega | **SE SOSTIENE** |
+| `D64.2` | `elegir_fabricar` `9` T; `construir_grafico` `5` T de contenido y P de clausula | T y T en la ciega; la clausula, P en `63.3.a` | **SE SOSTIENE** |
+| `D64.3` | tres pares con texto sobre `0,4`, SANO | SANO los tres en la ciega (`APERTURA_CIEGA.md` `6.2`) | **SE SOSTIENE**, y la banda no se toca (`D.19`) |
+| `D64.4` | `dimensionar_inventario` CONTINUA de `detectar` | SANO en la ciega | **SE SOSTIENE** (`63.3.b`) |
+| `D64.5` | `construir_grafico` con `construir_indicador_tendencia` SANO | SANO en la ciega | **SE SOSTIENE** |
+| `D64.6` | `construir_grafico` madre de `casar_flujo` | no sostenida en la ciega | **SE SOSTIENE** (`63.3.b`) |
+| `D64.7` | `representar_actividad_caja_negra_ventanas` madre de `construir_indicador_tendencia_patron` | **sin ciega**: el par no entraba en mi alcance. Leida hoy: la condicion del hijo (*Cuando ya tienes nombrada la salida de tu caja*) y su paso `1` (*otra ventana recortada en tu caja*) usan el producto de los pasos `3` y `8` de la madre; L89, *another window in our black box* | **SE SOSTIENE** |
+
+**`7` de `7` SE SOSTIENEN. CERO CAIDAS SUYAS, DENTRO NI FUERA DEL MARCADO.**
+
+**LOS `10` PARES SIN LECTURA CIEGA MIA** (la lista entera en `.v64aud/normal/cruce_clases.txt`), **leidos
+hoy con el reporte abierto, y lo digo asi porque no son ciegos**: coincido en los `10`. Los dos que miro
+de mas cerca: `rehacer_flujo_paso_limitante_capacidad` madre de
+`equilibrar_capacidad_personal_inventario_plazo` (`cap_02` L57, *Now let's complicate things a little
+further*, sobre la cola del tostador que la madre acaba de meter en el flujo: **sostenida**, y es la mas
+delgada de las ocho) y `elegir_inspeccion_barrera_monitorizacion` con
+`variar_frecuencia_inspeccion_nivel_calidad` (hermanos por L143, *Another way to lower the cost*: **no
+sostenida**).
+
+**LA MUESTRA PINEADA DE LOS SANO (`7`): SIN POBLACION EN LA SEDE.** La vuelta no escribio ni un veredicto
+(`740` contra `740`). Lo que si hay son los SANO listos de `.v64ext/veredictos_listos.txt`, y **estan todos
+leidos**, en mi ciega o hoy, sin una sola caida. No invento una tasa sobre lo que todavia no es veredicto:
+**la muestra de verdad es de la `65`, sobre lo que escriba en la bitacora.**
+
+## 63.4. **MI BARRIDO COMPLETO CIERRA EL HUECO QUE ELLA DECLARO** (`D.38.4`, `D.38.5`)
+
+El reporte dice lo que no pudo medir (`64.2.c` y `64.6.g` punto `2`): **los vecinos nuevos de las fichas
+corregidas FUERA de los `22`**, porque el barrido de una ficha no le cabia. **Mi fase ciega lo corrio
+entero** para las seis, contra grafo mas bandejas y sobre las fichas de `997054d`, que son las mismas de
+`6e42f06` (ninguna ficha de `cuarentena/` cambia entre los dos). Lo cruzo con sus bloques y con sus medidas
+par a par:
+
+    $ python .v64aud/normal/cruce_barrido.py
+    archivar_indicadores_resolver_problemas          barrido 4 | bloque 4 | en barrido y no en bloque 0 | en bloque y no en barrido 0
+    construir_grafico_escalonado_pronosticos         barrido 3 | bloque 3 | en barrido y no en bloque 0 | en bloque y no en barrido 0
+    construir_indicador_tendencia_patron             barrido 6 | bloque 6 | en barrido y no en bloque 0 | en bloque y no en barrido 0
+    elegir_fabricar_pedido_pronostico                barrido 2 | bloque 2 | en barrido y no en bloque 0 | en bloque y no en barrido 0
+    elegir_indicador_salida_trabajo_administrativo   barrido 3 | bloque 3 | en barrido y no en bloque 0 | en bloque y no en barrido 0
+    emparejar_indicadores_efecto_contraefecto        barrido 6 | bloque 6 | en barrido y no en bloque 0 | en bloque y no en barrido 0
+    pares del barrido: 24 | seniales iguales al redondeo: 24 | difieren: 0 | sin medida del extractor: 0
+
+**LECTURA:** sus seis bloques son **exactamente** los vecinos que la aduana entera levanta hoy, y las tres
+seniales de cada uno de los `24` pares son las de sus medidas par a par, al redondeo. **Fuera de los `22` no
+aparece ningun vecino nuevo** en el sentido candidato a vecino, que es el que el `insertar` de cada una va a
+medir. **El hueco que declaro esta cerrado, y cerrado en verde.** Es otra corrida independiente de la aduana
+que da lo mismo al milesimo (`d077`, `d091`).
+
+## 63.5. **`PASOS INVENTADOS POR CAPITULO`** (`8`, `8.2`, `8.3`)
+
+**Los pasos los cuento yo** (`.v64aud/normal/pasos_y_huellas.py`, `41` en `067c9df` y `41` hoy), **y la
+relectura de los TRANSCRIPCION no es muestra: es la lectura entera de mi apertura**, `41` filas en
+`.v64aud/fidelidad.tsv`, con las tres discrepancias adjudicadas en `63.3.a`.
+
+| capitulo | que es | pasos escritos | PUENTE | por ciento |
+|---|---|---:|---:|---:|
+| `cap_03`, los seis de `d005` | Cap. 2, *Managing the Breakfast Factory*: indicadores, pronosticos y control de la salida, inventario rico | `41` | `2` | **`4,88`** |
+
+**POR DEBAJO DEL `10`: no se baja escalon** (`8.1`). Los dos son de clausula y **ya estan reescritos en la
+bandeja**: ninguno entraria al grafo sin corregir. Con esto, **todo lo que la `65` va a insertar tiene su
+fidelidad leida entera sobre los mismos bytes que entraran** (`63.1`).
+
+## 63.6. **LAS CUATRO GUARDAS DE DATO** (`D.55`)
+
+| guarda | estado | medida |
+|---|---|---|
+| `gate` | **VERDE** | `346`, `13` guardas (`63.1`) |
+| el cerrojo (`D.44`) | **VERDE**: el unico de este dataset es el huerfano de la `63`, sin dueno vivo; lo rompe y lo declara el primer `insertar` | `63.1`. **El reporte no publica ninguna guarda mordiendo**, asi que no hay mutacion que re correr (`5.5`) |
+| censo no decreciente | **VERDE** | `censo_no_decrece` dentro del gate, `346` contra `346` |
+| fidelidad `D.30` con puente | **VERDE**: los `2` puentes reescritos, nada entro | `63.3.a`, `63.5` |
+
+**NO DEJO NINGUNA TAREA BLOQUEANTE.**
+
+## 63.7. **EL CREDITO DE LA LINEA `serial`** (`5.3`, `D.48`)
+
+    $ python forja.py credito | sed -n '5,11p'
+      especie            racha      de donde sale
+      ----------------------------------------------------------------------
+      AUDITOR            1 de 3     ACTA 62
+      CIFRA PUBLICADA    0 de 2     ACTA 62
+      CLASE              0 de 2     ACTA 62
+      DATO MOVIDO        0 de 2     ACTA 62
+      REPORTE            0 de 3     ACTA 62
+
+| especie | tanda `ACTA 63` | racha | el motivo, medido |
+|---|---|---|---|
+| **`CLASE`** | **LIMPIA** | `0 de 2` | `740` contra `740`. Sus veredictos listos no estan en ninguna sede de `CLASE`, **y los que discrepan de mi los gana ella** (`63.3`) |
+| **`CIFRA PUBLICADA`** | **LIMPIA** | `0 de 2` | lo que escribio en sede duradera son las tres lineas de pago de `DEUDA.jsonl`, y sus cifras son ciertas; las fichas llevan su correccion declarada |
+| **`DATO MOVIDO`** | **LIMPIA** | `0 de 2` | cero lineas de `git diff` sobre `dataset/`, `bitacora/`, `censos/` y los pares (`63.1`) |
+| **`REPORTE`** | **CAE** | **de `0 de 3` a `1 de 3`** | `63.2`: `R5` roto, y la fila de TABLA que dice que no |
+| **`AUDITOR`** | **LIMPIA** | **de `1 de 3` a `0 de 3`** | `63.9`, **y lo escribe el beneficiado** |
+
+## 63.8. **EL COSTE** (`D.55`, `D.56`)
+
+    $ grep -n '2026-09-23 1[01]:.*listo (USD' docs/loop/loop.log
+    5010:[2026-09-23 10:40:18] extractor listo (USD 11.7329302), 3701s, intento 1 de 7
+    5017:[2026-09-23 11:17:56] auditor ciego listo (USD 4.3527194), 2257s, intento 1 de 7
+
+**El extractor pasa de `10` USD y la vuelta ES de saneamiento**, asi que la regla del desglose no la alcanza
+(`D.55`: *y la vuelta no es de saneamiento*). Lo digo igual: **`11,73` USD en `3701` s**, y su partida mas
+visible es la matriz de `462` pares, cuatro trozos de aduana de entre `486` y `576` s.
+
+## 63.9. **MI PROPIA TANDA** (`D.38.2`)
+
+**MI APERTURA SELLADA PIERDE LAS CINCO DISCREPANCIAS: tres clases de fidelidad y dos de pares.** Las
+declaro con mi nombre, y **dos de ellas repiten el mismo error de la apertura de la `63`**
+(`dimensionar_inventario` con `detectar`, y `construir_grafico` con `casar_flujo`), asi que no son un
+accidente: **las dos veces use la bascula del solape y *nombrar no es procedimentar* para decidir si habia
+arista, que no es la pregunta que esas varas contestan** (`63.3.b`).
+
+> **NO LAS CUENTO COMO `CIFRA PUBLICADA PROPIA`, Y DIGO POR QUE ANTES DE QUE SE ME PREGUNTE.** Mi `1 de 41`
+> es la cuenta exacta de mis clases, hecha por instrumento y rotulada *MI LECTURA CIEGA* sobre la poblacion
+> correcta, que es lo que `R8` pedia. **Lo que cae son clases, y una clase no es una cifra**: es el
+> precedente escrito en la `ACTA 16` `7.4` (*mi apertura no escribio en `bitacora/`... no es `CLASE`... una
+> clase no es una cifra. Se declara, se cuenta y no acumula*), y aquella acta ya lo subio como hueco.
+> **Soy el beneficiado de esa lectura**, y un tercero que quiera contar el `1 de 41` como cifra falsa tiene
+> aqui la tabla para decir que me equivoco. **La contraria tendria un coste que conviene ver: haria cara la
+> discrepancia, y la fase ciega existe para producirla.**
+
+**`AUDITOR` BAJA DE `1 de 3` A `0 de 3` POR TANDA LIMPIA** (`5.2`, `D.38.1` y la correccion del `16` sep),
+**no por indulto mio**: `R8` cumplido, ninguna cifra de mi pagina sellada ni de esta acta sin su instrumento,
+y **las rutas que publico existen y no estan vacias** (`7.B`), todo lo de `.v64aud/normal/`, y las pasa el
+censo al cerrar.
+
+**Y LO QUE MI FASE CIEGA VIO SIN BUSCARLO** (su seccion `1`), que no es mio arreglar mientras corra un frente
+(`D.45`), **queda anotado como `d146`**: los borradores del reporte del extractor seguian en el arbol durante
+la retirada, `forja.py herencia` lee en la fase ciega un fichero retirado, y la foto de `git status` del
+entorno trae los asuntos de sus commits.
+
+## 63.10. **LAS CONDICIONES DE PARADA, UNA A UNA** (`3`)
+
+| condicion | se cumple | como lo mido |
+|---|---|---|
+| doctrina nueva | **NO** | las tres de fidelidad las decide `D.30` con el criterio de la `ACTA 62` `62.5`; los dos pares, `6.1` y `D.29` en su letra; la clase de mis caidas, el precedente de la `ACTA 16` `7.4`. **Nada abre cola** (`D.55`) |
+| contradiccion | **NO** | ninguna cifra publicada queda desmentida sin regla de correccion |
+| decision de Alexis | **NO** | la insercion de Grove esta autorizada (`DOS SEMANAS`, punto `4`); el orden aplica los criterios que fijo quien la autorizo (encargo de la `63`, punto `2.a.2`, *la madre antes que el hijo*, y por capitulo) y `D.36`, **y no elige nada fuera de ellos**: `.v64ext/orden.py` los comprueba |
+| fallo tecnico repetido | **NO** | gate, guiones, `379` pruebas y cierre en verde |
+| credito roto | **NO** | `CLASE`, `CIFRA PUBLICADA` y `DATO MOVIDO` en `0 de 2`, `REPORTE` en `1 de 3`, `AUDITOR` en `0 de 3` |
+| campania consumada | **NO** | Grove tiene `91` en bandeja y ninguno de los `22` insertado |
+
+    $ python scripts/deuda.py --clase 65
+    LIBRE
+      van 1 de 5 desde la ultima de saneamiento (la 64), con 52 deuda(s) esperando
+
+**NO ESCRIBO `PARA_ALEXIS.md`.** La `65` es **LIBRE** y la uso para lo que Grove espera desde la `63`: **la
+insercion de las `20` filas del orden comprobado.**
+
+## 63.11. **LOS REMEDIOS**
+
+| # | de quien | remedio | donde se comprueba |
+|---|---|---|---|
+| `R5` | del extractor | **Sigue vivo con su letra, y ahora con los dos instrumentos**: un bloque `$` contiene lo que el comando imprimio y nada mas; si se corta, por el final y dentro del bloque `(recortado, entero en <fichero>)`, **y un comando que imprime algo no queda sin ninguna linea debajo** | el reporte de la `65`, con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py`, los dos con la cabecera del tramo cambiada |
+
+**`R8` se cumplio y se retira.** No me escribo remedio nuevo: mis caidas de esta vuelta son de clase y no
+acumulan. **Lo que si dejo escrito, en `63.3.b`, es que pregunta contesta cada vara**, para el siguiente que
+lea a ciegas.
+
+## 63.12. **LO QUE ANOTO AL CERRAR**
+
+- **`docs/loop/DEUDA.jsonl`**: `d146`, los tres huecos de la retirada de la fase ciega.
+- **`docs/loop/CREDITO_serial.jsonl`**: las cinco lineas de la tanda `ACTA 63`, con `--cae` solo en `REPORTE`.
+- **`docs/loop/PROMPT_SIGUIENTE.md`**: el encargo de la vuelta `65`, **INSERCION**.
+- **`.v64aud/`**: mi evidencia de las dos fases, commiteada.

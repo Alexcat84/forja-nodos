@@ -1,0 +1,8 @@
+archivar_indicadores_resolver_problemas          pasos en 067c9df 4 | hoy 4
+construir_grafico_escalonado_pronosticos         pasos en 067c9df 8 | hoy 8
+construir_indicador_tendencia_patron             pasos en 067c9df 6 | hoy 6
+elegir_fabricar_pedido_pronostico                pasos en 067c9df 9 | hoy 9
+elegir_indicador_salida_trabajo_administrativo   pasos en 067c9df 7 | hoy 7
+emparejar_indicadores_efecto_contraefecto        pasos en 067c9df 7 | hoy 7
+total pasos: 067c9df 41 | hoy 41
+fichas de los 22: 22 | iguales al commit de su lectura entera: 22 | distintas: 0

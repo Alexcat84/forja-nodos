@@ -1,0 +1,32 @@
+BLOQUEARIA  archivar_indicadores_resolver_problemas  hoy poblacion 462 | archivo: BLOQUEARIA poblacion 462
+    SIGUE             cerrar_brecha_dos_preguntas_estrategia           similitud_texto            texto 0.353 familia 0.000 paso 0.393  paso 4 del candidato contra paso 6
+    SIGUE             construir_indicador_tendencia_patron             similitud_texto            texto 0.361 familia 0.143 paso 0.420  paso 2 del candidato contra paso 3
+    SIGUE             revisar_tres_preguntas_valor_carrera             similitud_texto            texto 0.369 familia 0.000 paso 0.414  paso 2 del candidato contra paso 1
+    SIGUE             vencer_sindrome_grupo_pares_autoconfianza        similitud_texto            texto 0.364 familia 0.000 paso 0.405  paso 1 del candidato contra paso 5
+BLOQUEARIA  construir_grafico_escalonado_pronosticos  hoy poblacion 462 | archivo: BLOQUEARIA poblacion 462
+    SIGUE             construir_indicador_tendencia_patron             similitud_texto            texto 0.365 familia 0.143 paso 0.453  paso 4 del candidato contra paso 5
+    SIGUE             elegir_fabricar_pedido_pronostico                similitud_texto            texto 0.393 familia 0.143 paso 0.453  paso 7 del candidato contra paso 4
+    SIGUE             emparejar_indicadores_efecto_contraefecto        similitud_texto            texto 0.378 familia 0.000 paso 0.434  paso 1 del candidato contra paso 3
+BLOQUEARIA  construir_indicador_tendencia_patron  hoy poblacion 462 | archivo: BLOQUEARIA poblacion 462
+    SIGUE             archivar_indicadores_resolver_problemas          similitud_texto            texto 0.365 familia 0.143 paso 0.427  paso 2 del candidato contra paso 1
+    SIGUE             construir_grafico_escalonado_pronosticos         similitud_texto            texto 0.362 familia 0.143 paso 0.461  paso 5 del candidato contra paso 4
+    NUEVO             dimensionar_plantilla_administrativa_pronostico  similitud_texto            texto 0.373 familia 0.000 paso 0.405  paso 5 del candidato contra paso 6
+    NUEVO             elegir_indicador_salida_trabajo_administrativo   similitud_texto            texto 0.378 familia 0.125 paso 0.378  paso 5 del candidato contra paso 3
+    NUEVO             emparejar_indicadores_efecto_contraefecto        similitud_texto            texto 0.393 familia 0.143 paso 0.427  paso 5 del candidato contra paso 2
+    NUEVO             equilibrar_capacidad_personal_inventario_plazo   similitud_texto            texto 0.353 familia 0.000 paso 0.424  paso 1 del candidato contra paso 4
+BLOQUEARIA  elegir_fabricar_pedido_pronostico  hoy poblacion 462 | archivo: BLOQUEARIA poblacion 462
+    SIGUE             construir_grafico_escalonado_pronosticos         similitud_texto            texto 0.387 familia 0.143 paso 0.440  paso 4 del candidato contra paso 7
+    NUEVO             emparejar_indicadores_efecto_contraefecto        similitud_texto            texto 0.362 familia 0.000 paso 0.419  paso 2 del candidato contra paso 3
+BLOQUEARIA  elegir_indicador_salida_trabajo_administrativo  hoy poblacion 462 | archivo: BLOQUEARIA poblacion 462
+    NUEVO             construir_indicador_tendencia_patron             similitud_texto            texto 0.374 familia 0.125 paso 0.403  paso 6 del candidato contra paso 3
+    SIGUE             emparejar_indicadores_efecto_contraefecto        similitud_texto            texto 0.394 familia 0.125 paso 0.489  paso 3 del candidato contra paso 4
+    SIGUE             evaluar_directivo_resultados_fortaleza           paso_contra_nodo           texto 0.170 familia 0.000 paso 0.766  paso 2 del candidato contra paso 1
+BLOQUEARIA  emparejar_indicadores_efecto_contraefecto  hoy poblacion 462 | archivo: BLOQUEARIA poblacion 462
+    SIGUE             construir_grafico_escalonado_pronosticos         similitud_texto            texto 0.384 familia 0.000 paso 0.446  paso 3 del candidato contra paso 1
+    SIGUE             construir_indicador_tendencia_patron             similitud_texto            texto 0.397 familia 0.143 paso 0.453  paso 3 del candidato contra paso 5
+    NUEVO             dimensionar_plantilla_administrativa_pronostico  similitud_texto            texto 0.355 familia 0.000 paso 0.396  paso 4 del candidato contra paso 2
+    NUEVO             elegir_cinco_indicadores_diarios_fabrica         similitud_texto            texto 0.359 familia 0.125 paso 0.445  paso 4 del candidato contra paso 8
+    SIGUE             elegir_fabricar_pedido_pronostico                similitud_texto            texto 0.367 familia 0.000 paso 0.408  paso 4 del candidato contra paso 1
+    NUEVO             elegir_indicador_salida_trabajo_administrativo   similitud_texto            texto 0.383 familia 0.125 paso 0.468  paso 4 del candidato contra paso 3
+    DEJA DE LEVANTAR  revisar_tres_preguntas_valor_carrera             similitud_texto            texto 0.354 familia 0.000 paso 0.386  paso 2 del candidato contra paso 2
+pares que siguen: 15 | dejan de levantar: 1 | nuevos: 9

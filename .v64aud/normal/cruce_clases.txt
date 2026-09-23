@@ -1,0 +1,15 @@
+DISCREPA  ciega NO SOSTENIDA extractor CONTINUA     casar_flujo_fabricacion_flujo_ventas | construir_grafico_escalonado_pronosticos
+SIN LECTURA CIEGA  NO SOSTENIDA casar_flujo_fabricacion_flujo_ventas | detectar_arreglar_fallo_etapa_menor_valor
+SIN LECTURA CIEGA  SANO         construir_grafico_escalonado_pronosticos | elegir_inspeccion_barrera_monitorizacion
+SIN LECTURA CIEGA  NO SOSTENIDA construir_grafico_escalonado_pronosticos | representar_actividad_caja_negra_ventanas
+SIN LECTURA CIEGA  NO SOSTENIDA construir_indicador_linealidad_alerta_temprana | elegir_cinco_indicadores_diarios_fabrica
+SIN LECTURA CIEGA  CONTINUA     construir_indicador_linealidad_alerta_temprana | representar_actividad_caja_negra_ventanas
+SIN LECTURA CIEGA  CONTINUA     construir_indicador_tendencia_patron | representar_actividad_caja_negra_ventanas
+DISCREPA  ciega SANO         extractor CONTINUA     detectar_arreglar_fallo_etapa_menor_valor | dimensionar_inventario_materia_prima_reposicion
+SIN LECTURA CIEGA  SANO         dimensionar_plantilla_administrativa_pronostico | elegir_fabricar_pedido_pronostico
+SIN LECTURA CIEGA  SANO         elegir_inspeccion_barrera_monitorizacion | emparejar_indicadores_efecto_contraefecto
+SIN LECTURA CIEGA  NO SOSTENIDA elegir_inspeccion_barrera_monitorizacion | variar_frecuencia_inspeccion_nivel_calidad
+SIN LECTURA CIEGA  CONTINUA     equilibrar_capacidad_personal_inventario_plazo | rehacer_flujo_paso_limitante_capacidad
+pares del extractor (veredictos listos y aristas): 42 | con lectura ciega mia: 32 | coinciden: 30 | discrepan: 2 | sin lectura ciega: 10
+pares en tablas de la apertura sellada: 33 | de ellos sin par en las sedes del extractor: 1
+   SOLO EN LA APERTURA  SANO         emparejar_indicadores_efecto_contraefecto | revisar_tres_preguntas_valor_carrera
