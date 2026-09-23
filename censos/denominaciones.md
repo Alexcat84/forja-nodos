@@ -913,3 +913,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | archivar_indicadores_resolver_problemas | nombre_largo | El banco de informacion de los indicadores: el archivo que ya esta hecho cuando algo se rompe, y que ensena de golpe todos los parametros de la operacion | castellano | - |
 | 2026-09-23 | archivar_indicadores_resolver_problemas | otro_idioma | bank of information | ingles | - |
 | 2026-09-23 | archivar_indicadores_resolver_problemas | otro_idioma | unhealthy departures from the norm | ingles | - |
+| 2026-09-23 | elegir_fabricar_pedido_pronostico | nombre_largo | Las dos maneras de controlar la salida de una fabrica: contra pedido, que espera al cliente, y contra pronostico, que arriesga capital por adelantado | castellano | - |
+| 2026-09-23 | elegir_fabricar_pedido_pronostico | otro_idioma | build to order | ingles | - |
+| 2026-09-23 | elegir_fabricar_pedido_pronostico | otro_idioma | build to forecast | ingles | - |
+| 2026-09-23 | elegir_fabricar_pedido_pronostico | otro_idioma | inventory risk | ingles | - |

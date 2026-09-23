@@ -1,0 +1,34 @@
+fila 16, elegir_fabricar_pedido_pronostico, lineas --veredicto: 2
+  --veredicto construir_grafico_escalonado_pronosticos|SANO|El mismo par que el escalonado lee desde su lado. El candidato elige entre fabricar contra pedido y contra pronostico (pasos 1 a 7, L103 a L107); el vecino es un instrumento para leer pronosticos sucesivos (L91 a L93). El candidato no dice como se pronostica, y el vecino no decide la via.
+  --veredicto emparejar_indicadores_efecto_contraefecto|SANO|Comparten el riesgo de inventario como palabra: en el candidato es el precio de fabricar contra pronostico (paso 6, L107) y en el vecino es el ejemplo del par nivel de inventario contra roturas (paso 5, L31). Procedimientos distintos, decidir la via de fabricacion y emparejar indicadores, y ninguno despliega una linea del otro.
+inicio 2026-09-23 17:31:07
+======================================================================
+ADUANA DE INSERCION, candidato 'elegir_fabricar_pedido_pronostico'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 462   (361 del grafo mas 101 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino construir_grafico_escalonado_pronosticos  [Construir el grafico escalonado que pone cada pronostico nuevo junto a los anteriores]
+    levantada por: similitud_texto
+    similitud_texto    0.387 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.440 (umbral 0.60)
+    paso 4 del candidato contra paso 7 de construir_grafico_escalonado_pronosticos
+
+  vecino emparejar_indicadores_efecto_contraefecto  [Emparejar cada indicador con otro que mida su contraefecto, para no pasarse de frenada]
+    levantada por: similitud_texto
+    similitud_texto    0.362 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.419 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de emparejar_indicadores_efecto_contraefecto
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 362
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+
+======================================================================
+fin 2026-09-23 18:00:44 | codigo de salida 0 | 1776.3 s
