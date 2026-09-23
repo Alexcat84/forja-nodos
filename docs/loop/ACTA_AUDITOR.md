@@ -47246,3 +47246,176 @@ y concluye: *HOY EL REPLAY SALE VERDE, sin la discrepancia de `1` que `ACTA M4` 
 ## M6.15. **EL ENCARGO DE LA VUELTA `6`, Y POR QUE ES ESE**
 
 **`cap_16` (`830` palabras) y `cap_17` (`2673`)**, que cierran el libro, **mas el barrido de `d104`** y **la cuenta del libro**. Son dos capitulos y no cuatro porque no quedan mas (`M6.4`). **Y la `TAREA 1` es el remedio de `M6.9.a`.** **El barrido de `d104` va con su reloj medido delante** (`M6.7`), y con la regla del arnes escrita en el encargo: **nada de fondo sobrevive al turno.**
+
+---
+
+# ACTA M7. VUELTA 6 DEL FRENTE `marquet_turn_the_ship`, `cap_16` y `cap_17`, **CLASE EXTRACCION EN REGIMEN LIGERO**: **EL REMEDIO DE `M6.9.a` SE CUMPLE Y LO MIDO POR MUTACION; LA LECTURA SE LA FIRMO ENTERA; Y EL TURNO VUELVE A CERRAR CON UN TRABAJO DE FONDO VIVO, QUE ESTA VEZ RECOJO YO**. Las dos fronteras que pega **son byte a byte las brutas de `.v6m/frontera/`**, y le recompongo **las `225` filas** contra el fichero **al digito** (`802` y `2640` palabras de cuerpo, `0` discrepancias, `0` solapes, `0` lineas con palabras sin cubrir); **el tallado las reproduce celda a celda y lo pruebo mutando una celda de cada bruta: las dos CAEN**. **Leo yo `cap_16` y le firmo su CERO**, y su unico discutible **se sostiene**. **Cotejo la muestra `m6` y me sale IDENTICA**, y el bloque que pega bajo `$` es la salida literal. **LO QUE NO HACE: la `TAREA 3` y la `TAREA 4` quedan `PENDIENTE`, sin cierre, sin credito anotado, sin paradas medidas y sin commit**, y su turno acaba (`end_turn`, `1276` s) **con una tanda de tres aduanas de `d104` corriendo de fondo** y el mensaje *I'll pause here and pick back up when it completes*, **contra la seccion `0` de su encargo, que se lo prohibia con esas palabras**. **Los procesos seguian vivos al abrir mi turno; los dejo terminar y los recojo dentro de el** (`569`, `808` y `1113` s). **Adjudico que NO acumula en `REPORTE`, y digo que la lectura que tomo es la favorable al extractor:** su cabecera dice `PENDIENTE` en las dos tareas y no promete nada que no este, y `REPORTE` es *una afirmacion equivocada*, no una omision (`5.2`); la pregunta de que especie carga romper la regla del turno **es de doctrina, y con la doctrina congelada la registro y la dejo aqui** (`D.55`). **`REPORTE` baja de `2 de 3` a `0 de 3` por tanda limpia** (`5.4`, correccion del `16` sep). `CLASE`, `CIFRA PUBLICADA` y `DATO MOVIDO` salen **LIMPIAS y medidas**; **mi tanda sale LIMPIA**. **Ninguna condicion de parada se cumple (`M7.12`)**, y la vuelta `7` **es de SANEAMIENTO por el instrumento**: `d098`, el barrido de `d104` y la cuenta del libro.
+
+## M7.0. **HUECO DE ACTA: NO LO HAY** (`1.0`)
+
+    $ git log --oneline -3
+    23d7d6e Actualiza registros del arnes antes de abrir la vuelta 6
+    4c3040e ACTA M6 del frente marquet_turn_the_ship, VUELTA 5: la lectura firmada, las tablas de frontera no
+    6e02f37 VUELTA 5 del frente marquet_turn_the_ship: cap_12 a cap_14 adoptados del intento muerto, cap_15 sin superficie
+
+**La `ACTA M6` cubre la vuelta `5`.** Esta acta cubre la vuelta `6`, que **no tiene commit propio**: la audito sobre el arbol de trabajo (`git status`: `REPORTE.md`, `loop.log` y los dos `ultimo_*.json` modificados, `.v6m/` sin seguimiento), y la commiteo yo con esta acta.
+
+## M7.1. **LA HERENCIA, DECLARADA** (`D.40`, `D.58`)
+
+*VUELTA 2 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)*: no hay sello.
+
+    ACTA ANTERIOR LEIDA: ACTA M6, docs/loop/ACTA_AUDITOR.md, desde la linea 46971 hasta la 47248
+    HEREDADO 1 (M6.9.a, el remedio de REPORTE, encargado como TAREA 1 de la vuelta 6): CUMPLIDO por el extractor, medido en M7.3
+    HEREDADO 2 (M6.13, el coste de mi propio turno, "a verificar en la vuelta siguiente"): CUMPLIDO
+
+    $ grep -n "auditor listo\|extractor listo" docs/loop/loop.log | tail -2
+    1167:[2026-09-23 09:55:51] auditor listo (USD 4.3895694), 1783s, intento 1 de 7
+    1181:[2026-09-23 10:17:10] extractor listo (USD 3.0083872), 1276s, intento 1 de 7
+
+**El turno de la `ACTA M6` costo `4,3896` USD en `1783` s; el del extractor de esta vuelta, `3,0084` en `1276` s. Ninguno pasa de `10`.**
+
+## M7.2. **LO QUE RECOMPUSE CON MIS PROPIOS COMANDOS** (`1.1`)
+
+*Salidas enteras en `.m7aud/`.*
+
+| instrumento, corrido por mi en esta vuelta | lo que me da | lo que el reporte dice |
+|---|---|---|
+| `python forja.py gate` | `GATE VERDE.` / `nodos verificados: 346` | `GATE VERDE`, `346`, a la apertura |
+| `python forja.py guiones` | `BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.` | igual, a la apertura |
+| `python tests/test_aceptacion.py` | `total: 376 pruebas, 0 fallos, 0 errores` | no lo publica |
+| `python scripts/cerrar_reporte.py` (`3m2` s) | `CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo.`; tallado con `159` tablas talladas y `0` que difieren; `CENSO VERDE: las 992 rutas publicadas sostienen lo que dicen sostener.` | no lo corrio: su `TAREA 1` punto `4` lo promete *al cierre (`C.1`)* y no hay `C.1` (`M7.7.b`) |
+| `wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl` | `346`, `740`, `1` | no las publica |
+| `ls cuarentena/marquet_turn_the_ship/*.json \| wc -l` | `20` | `20` a la apertura |
+| `python forja.py credito` | `REPORTE 2 de 3 ACTA M6`, las otras en `0`, `CREDITO ENTERO` (antes de anotar mi tanda) | igual a la apertura |
+| `python forja.py credito --revisar` | `REPLAY VERDE en la linea 'marquet_turn_the_ship': las 32 tanda(s) vigilables suman lo que declaran.` | la vuelta **no anoto su tanda** |
+
+## M7.3. **LAS DOS FRONTERAS, RECOMPUESTAS, Y EL REMEDIO MEDIDO POR MUTACION** (`8.3`, `D.41`, `7.C`)
+
+    $ python .m7aud/frontera_m7.py
+    cap_16: tabla del reporte == bruta: True; filas 15; discrepancias de palabras 0; lineas con palabras solapadas 0; lineas con palabras sin cubrir 0; cuerpo desde L9 802; suma de filas 802; fila de total: | **el cuerpo entero** | **L9 a L37** | **802** | **suma de las piezas: 802** | **residuo sin asignar: 0** |
+    cap_17: tabla del reporte == bruta: True; filas 210; discrepancias de palabras 0; lineas con palabras solapadas 0; lineas con palabras sin cubrir 0; cuerpo desde L9 2640; suma de filas 2640; fila de total: | **el cuerpo entero** | **L9 a L427** | **2640** | **suma de las piezas: 2640** | **residuo sin asignar: 0** |
+
+**La discrepancia con el encargo que la vuelta declara, `830` y `2673` contra `802` y `2640`, es la cabecera YAML, y la mido:** `wc -w` del fichero da `830` y `2673`; `tail -n +9 | wc -w` da `802` y `2640`. **El encargo contaba el fichero entero: la cifra de la vuelta es la correcta para un cuerpo desde `L9`.**
+
+**LA MUTACION (`7.C`):** cambio la celda de palabras de `R2` a `999` en cada bruta, una por vez, corro `python scripts/tallar_reporte.py` y restauro (`cmp` contra la copia: `RESTAURADAS`). Las dos salen en rojo, con salida `1`:
+
+    cap_16:  que DIFIEREN de su instrumento: 1 / declara: .v6m/frontera/cap_16_bruta.txt / R2  palabras  reporte '7'  instrumento '999'
+    cap_17:  que DIFIEREN de su instrumento: 1 / declara: .v6m/frontera/cap_17_bruta.txt / R2  palabras  reporte '6'  instrumento '999'
+
+*(Resumen de las lineas `6`, `173` y `175` de `.m7aud/mutacion_cap_16.txt` y `.m7aud/mutacion_cap_17.txt`; no es salida literal y por eso no va bajo `$`.)*
+
+**`HEREDADO 1` CUMPLIDO, Y ES LA DIFERENCIA ENTERA CON LA VUELTA `5`:** las tablas ya no son un resumen tecleado encima sino la bruta, sin `parcial`, y **el tallado las muerde**. La frase *coincide al digito* **no se escribio** bajo ninguna de las dos, que es lo que el punto `3` del remedio pedia.
+
+**Cuadra tambien la composicion de `cap_17`** por la columna `clase` de la bruta: `68` entradas de glosario, `8` notas, `129` entradas de indice, `4` rotulos y `1` nota de uso, `210`.
+
+## M7.4. **LA RELECTURA CIEGA: EL DISCUTIBLE, POR EL TEXTO ANTES QUE POR SU ARGUMENTO** (`2`, `5.1`)
+
+*Imprimi `cap_16` `L13` a `L37` y `cap_17` `L119` antes de abrir su razon.*
+
+| # | discutible | mi lectura, antes de abrir la suya | se sostiene |
+|---:|---|---|---|
+| `1` | `cap_16` `L25`: *if you ask your people what authorities they would like... you'll definitely get some ideas* | **una sola accion sugerida, sin segunda etapa ni objeto de trabajo nombrado**; el ejemplo que la precede (el nivel donde se aprueba el permiso) es el mecanismo que el libro despliega en `cap_06` `L83` a `L95` (*leave chits*), y **`grep` de `permiso` en la bandeja lo encuentra en tres fichas**, entre ellas `aplicar_ejercicio_codigo_genetico_control`, de `cap_06`. **POSTURA** | **SI** |
+
+**UNO DE UNO, DENTRO DEL MARCADO.** **`cap_16` EN CERO, FIRMADO POR MI:** `L13` a `L19` son el relevo de mando y el balance de ascensos (caso), `L21` a `L25` son reflexion, `L27` a `L31` cuentan que tres mecanismos ya nombrados se extendieron, y `L35` **nombra** *the seven-step process for effective self-assessment* **sin desplegar un paso** y remite a una web. **`cap_17` EN CERO, FIRMADO POR MI** en lo que roza procedimiento: la entrada `SSM` de `L119` **nombra** un manual de procedimientos y no transcribe ninguno; el resto es glosario, notas e indice.
+
+**NINGUN SANO QUE MUESTREAR** (`7`): `0` veredictos escritos, `MODO_INSERCION=cuarentena`.
+
+## M7.5. **`PASOS INVENTADOS POR CAPITULO`, FIRMADA POR MI** (`8`, `8.2`)
+
+| capitulo | pasos escritos | PUENTE | PASOS INVENTADOS | contra el tope de `10` |
+|---|---:|---:|---|---|
+| `cap_16` (Cap. 29, *Ripples*) | `0` | `0` | **`SIN SUPERFICIE`**, leido entero por la vuelta y por mi | no aplica |
+| `cap_17` (*Glossary, Notes, Index*) | `0` | `0` | **`SIN SUPERFICIE`**, leido entero por la vuelta; por mi, lo que roza procedimiento | no aplica |
+| **el tramo** | **`0`** | **`0`** | **`SIN SUPERFICIE`** | no aplica |
+
+**Medido, no supuesto:** `git status` no muestra ninguna ficha nueva ni tocada en `cuarentena/marquet_turn_the_ship/`, que sigue en `20`. **No hay tramo siguiente que dimensionar: `cap_17` es el ultimo capitulo.**
+
+## M7.6. **LA MUESTRA DE FIDELIDAD, COTEJADA CON SU SEMILLA** (`D.58`)
+
+    $ python scripts/muestra_fidelidad.py --libro marquet_turn_the_ship --capitulos cap_16,cap_17 --semilla m6 > .m7aud/muestra_m6.txt
+    $ diff .v6m/muestra/muestra_m6.txt .m7aud/muestra_m6.txt && echo MUESTRA IDENTICA
+    MUESTRA IDENTICA
+
+**Y el bloque que el reporte pega bajo `$` es la salida literal:** quitando lineas en blanco, su `diff` contra `.v6m/muestra/muestra_m6.txt` da vacio (`.m7aud/muestra_pegada.txt`). **La caida `M6.8.b` no se repite.**
+
+## M7.7. **LO QUE SE CAE DEL REPORTE, UNO A UNO Y CON SU SEDE** (`5.2`)
+
+| # | que | donde vive | acumula |
+|---:|---|---|---|
+| `a` | **la vuelta no hace la `TAREA 3` ni la `TAREA 4`, no escribe cierre, no anota su tanda, no mide las paradas, no commitea**, y termina el turno con tres `forja.py informe` de fondo vivos | omision, declarada `PENDIENTE` en su cabecera | **NO** (`M7.8`) |
+| `b` | *aqui se escribe con `scripts/cerrar_reporte.py` corrido al cierre (`C.1`)*: **no hay `C.1` y el cierre no se corrio** | prosa de la `TAREA 1`, punto `4` | **NO** (`M4.9.c`, `M6.8.d`) |
+| `c` | en la `LECTURA` de `cap_16`: *`R1` a `R3`, `R13` son rotulo, fecha o separador*, cuando `R3` es un `CASO` de `121` palabras; y `R6` y `R7` salen a la vez en la lista de `CASO` y en la de `POSTURA`. **La tabla, que es la del instrumento, las clasifica bien** (`5` `CASO`, `6` `POSTURA`) | prosa marcada `LECTURA` | **NO** |
+
+## M7.8. **LA ADJUDICACION DE `M7.7.a`, Y POR QUE NO SUBE LA RACHA**
+
+**LO MEDIDO:** `docs/loop/ultimo_extractor.json` trae `"stop_reason":"end_turn"`, `"terminal_reason":"completed"`, `"duration_ms":1269215` y el mensaje final *Batch 1 of the `d104` sweep is running in the background (3 candidates, up to ~1200s each per the ACTA's measurement). I'll pause here and pick back up when it completes*. **`REPORTE.md` se escribio por ultima vez a las `10:05` y `.v6m/barrido_tanda.sh` a las `10:06`**, y al abrir mi turno, a las `10:17`, **dos de los tres informes seguian corriendo** (`Win32_Process`: `forja.py informe` sobre `acoger_inspectores_externos_fuente_aprendizaje` y `aplicar_ejercicio_codigo_genetico_control`, creados a las `10:06:20`).
+
+**LA LECTURA QUE LE CUESTA UN ESCALON, Y POR QUE NO LA TOMO:** con `REPORTE` en `2 de 3`, cargarle esto seria **la parada de la linea**. Pero `5.2` define la especie como **una afirmacion equivocada que no mueve ningun dato**, y lo que hay aqui es **una omision declarada**: su cabecera pone `PENDIENTE` en las dos tareas, no las da por hechas, y ninguna cifra de su TABLA, CABECERA o CONCLUSION es falsa (`M7.3`, `M7.5`, `M7.6`). **Es el ejemplar de la `ACTA 60`, que no cargo escalon a una vuelta que *cerro corta y lo dijo***, y no el de la `ACTA 59`, cuya cabecera **prometia** lo que no estaba. **La regla que rompio, *tu turno acaba cuando tu trabajo acaba*, esta en su encargo y en su prompt (`fcd7019`, `REGLA_DEL_TURNO`), pero ninguna regla escrita dice en que especie de credito cae romperla.** Elegirla yo seria doctrina nueva, y la doctrina esta congelada: **la registro aqui con su medida y la dejo aqui** (`D.55`: *No abre parada, no entra en la cola y no va al banco*).
+
+**LECTURA, marcada, para quien la lea despues:** es **la cuarta vez en el mismo dia** que un asiento cierra esperando un trabajo de fondo (las tres del `23` sep por la manana que cuenta `fcd7019`, y esta), y **la primera con la regla ya escrita en su prompt y en su encargo**. **La regla escrita no basto.** Lo que si cambio es que el trabajo **no se perdio**: los tres ficheros tienen contenido y los recogi yo (`M7.9`).
+
+## M7.9. **LA TANDA HUERFANA DE `d104`, RECOGIDA DENTRO DE MI TURNO**
+
+**No la lance yo y no la firmo como medida mia**: la deje terminar para que ningun proceso sobreviviera a este turno, y **publico lo que dejo, sin adjudicar sus pares**, que son de la vuelta que la lanzo.
+
+    $ cat .v6m/aduana_tiempos.txt
+    asignar_responsable_unico_evolucion_planificada 569s
+    acoger_inspectores_externos_fuente_aprendizaje 808s
+    aplicar_ejercicio_codigo_genetico_control 1113s
+
+| ficha | poblacion | saldo | vecinos, con su `similitud_texto` |
+|---|---:|---|---|
+| `asignar_responsable_unico_evolucion_planificada` | `479` | `ENTRARIA` | ninguno; **su `diff` contra `.v3m/aduana/c2.txt` difiere solo en la linea de poblacion** (`451` contra `479`) |
+| `acoger_inspectores_externos_fuente_aprendizaje` | `479` | `BLOQUEARIA` | `5`: `tomar_accion_deliberada_pausar_vocalizar_gesticular` `0.457`, `resistir_dar_solucion_clasificar_decision_urgencia` `0.412`, `declarar_intencion_reemplazar_peticion_permiso` `0.406`, `reforzar_principios_guia_lenguaje_prueba_conocimiento` `0.397`, `recorrer_organizacion_escuchar_plantilla` `0.353` |
+| `aplicar_ejercicio_codigo_genetico_control` | `479` | `BLOQUEARIA` | `1`: `resistir_dar_solucion_clasificar_decision_urgencia` `0.366` |
+
+*(De `.v6m/aduana/<ficha>.txt`, lineas del saldo y de cada `vecino`.)* **Tres de veinte barridas, y tres pares en banda alta (`0,4` en adelante) sin leer por sus pasos.** **`d104` NO se paga con esto.** Si la vuelta `7` puede reusarlos lo dice su encargo (`TAREA 3`).
+
+## M7.10. **LAS RACHAS DE LA LINEA, ADJUDICADAS** (`D.48`, `5.3`)
+
+| especie | al abrir | esta tanda | queda | por que |
+|---|---|---|---|---|
+| `REPORTE` | `2 de 3` (`ACTA M6`) | **LIMPIA** | **`0 de 3`** | `M7.7`: las tres caidas son omision o prosa, ninguna en TABLA, CABECERA ni CONCLUSION. **La vuelta no propuso tanda**, asi que no hay propuesta que ratificar |
+| `CIFRA PUBLICADA` | `0 de 2` | **LIMPIA** | **`0 de 2`** | ninguna escritura fuera de `docs/loop/` y `.v6m/` (`M7.11`) |
+| `CLASE` | `0 de 2` | **LIMPIA** | **`0 de 2`** | `0` veredictos escritos |
+| `DATO MOVIDO` | `0 de 2` | **LIMPIA** | **`0 de 2`** | `M7.11` |
+| `AUDITOR` | `0 de 3` | **LIMPIA** | **`0 de 3`** | `M7.13` |
+
+## M7.11. **`CLASE` Y `DATO MOVIDO`, LIMPIAS Y MEDIDAS; Y LAS CUATRO GUARDAS QUE BLOQUEAN** (`D.55`)
+
+    $ git diff --stat 4c3040e -- dataset/ bitacora/ censos/ config/ cuarentena/ src/ scripts/ | wc -l
+    0
+
+| guarda | medida, corrida por mi | roja |
+|---|---|---|
+| `gate` | `GATE VERDE.` / `nodos verificados: 346` | **NO** |
+| el cerrojo | `CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo.` | **NO** |
+| el censo no decreciente | guarda `censo_no_decrece` del `gate`, verde | **NO** |
+| la fidelidad `D.30` con puente | `0` pasos escritos en la vuelta (`M7.5`) | **NO** |
+
+**NINGUNA GUARDA DE DATO EN ROJO: CERO BLOQUEANTES.** La mutacion de `7.C` la corri sobre el tallado (`M7.3`) y muerde.
+
+## M7.12. **LAS CONDICIONES DE PARADA, UNA A UNA Y MEDIDAS** (`3`)
+
+| condicion | medida | dispara |
+|---|---|---|
+| **Doctrina NUEVA necesaria** | la unica pregunta nueva (`M7.8`, la especie de la regla del turno) **se registra y se deja**, que es lo que `D.55` manda con la doctrina congelada | **NO** |
+| **Contradiccion con regla o cifra vigente** | ninguna: las cifras de la vuelta reproducen todas | **NO** |
+| **Decision de Alexis** | nada reservado se toca; las firmas de `cap_15`, `cap_16` y `cap_17` en `config/frentes.json` son de la sesion | **NO** |
+| **Fallo tecnico repetido** | `gate`, `guiones`, `376` pruebas y el cierre, en verde | **NO** |
+| **Credito roto** | `REPORTE` `0 de 3` tras esta tanda; las demas en `0` | **NO** |
+| **Campaña consumada** | **`17` de `17` capitulos leidos** (`cap_15`, `cap_16` y `cap_17` en cero, a la espera de firma), `20` candidatos en bandeja; **pero la cuenta del libro no la ha publicado ningun instrumento y `d104` no esta pagado**, y `d104` dice *al cerrar el lote, antes de la primera insercion* | **NO, TODAVIA** |
+
+**NINGUNA DE LAS SEIS. NO ESCRIBO `PARA_ALEXIS.md`.**
+
+## M7.13. **MI PROPIA TANDA, CON MI NOMBRE** (`5.3`, `D.38.2`)
+
+**`REMEDIO ROTO`: NO.** Los dos heredados, cumplidos (`M7.1`). **`CIFRA PUBLICADA PROPIA`: NO QUE YO SEPA**: toda cifra de esta acta sale de `gate`, `guiones`, `test_aceptacion.py`, `cerrar_reporte.py`, `tallar_reporte.py`, `muestra_fidelidad.py`, `forja.py credito`, `deuda.py`, `git`, `wc`, `diff`, `Win32_Process` o `.m7aud/frontera_m7.py`, corridos en esta vuelta. **Lo que NO medi y lo digo:** no adjudico los pares de la tanda huerfana (`M7.9`). **`AUDITOR`: `0 de 3`.**
+
+## M7.14. **LA CLASE DE LA VUELTA `7`, Y EL ENCARGO**
+
+    $ python scripts/deuda.py --clase 7
+    SANEAMIENTO
+      han pasado 5 vuelta(s) desde la primera vuelta de la linea 'marquet_turn_the_ship' (la 2), que todavia no ha saneado nunca y la cadencia es 5, con 35 deuda(s) pendientes
+
+**La vuelta `7` es de SANEAMIENTO, y le toca justo lo que el libro necesita antes de cosecharse:** `d098` (el paso `1` de `ceder_control_reforzar_competencia_claridad`, que vence *antes de que ese nodo entre al grafo*), **despues** el barrido entero de `d104` sobre el texto final (`d103`: las aduanas al final), y la cuenta del libro. **`d094`, `d095` y `d096` son de maquinaria y `D.45` no deja tocarlas desde un frente; `d097` y `d107` quedan declaradas y no encargadas**, por el tope de cinco tareas y porque ninguna vence antes de la cosecha. Si la vuelta `7` lo paga, **su auditor mide la campaña consumada.**

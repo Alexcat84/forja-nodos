@@ -31,3 +31,8 @@
 {"cae": false, "cita": "ACTA M6, seccion M6.10", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M6", "tipo": "tanda", "vuelta": 5}
 {"cae": false, "cita": "ACTA M6, seccion M6.10", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M6", "tipo": "tanda", "vuelta": 5}
 {"cae": false, "cita": "ACTA M6, seccion M6.11", "especie": "AUDITOR", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M6", "tipo": "tanda", "vuelta": 5}
+{"cae": false, "cita": "ACTA M7, seccion M7.10", "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M7", "tipo": "tanda", "vuelta": 6}
+{"cae": false, "cita": "ACTA M7, seccion M7.10", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M7", "tipo": "tanda", "vuelta": 6}
+{"cae": false, "cita": "ACTA M7, seccion M7.11", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M7", "tipo": "tanda", "vuelta": 6}
+{"cae": false, "cita": "ACTA M7, seccion M7.11", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M7", "tipo": "tanda", "vuelta": 6}
+{"cae": false, "cita": "ACTA M7, seccion M7.13", "especie": "AUDITOR", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M7", "tipo": "tanda", "vuelta": 6}

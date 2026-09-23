@@ -1,0 +1,20 @@
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 1 | rotulo del titulo "Ripples" | RESIDUO: rotulo |
+| R2 | L11 | 7 | fecha y sitio, Submarine Base Pearl Harbor | RESIDUO: rotulo de fecha |
+| R3 | L13 | 121 | sentado en el muelle en 2011, Dave Adams toma el mando, tres oficiales de Santa Fe mandaron PRT | CASO |
+| R4 | L15 | 97 | anos despues, el leader-leader dejo dos logros no visibles de inmediato: el barco siguio bien tras su marcha | POSTURA |
+| R5 | L17 | 136 | el otro logro, desarrollaron lideres en numeros desproporcionados, ascensos de la plana mayor | CASO |
+| R6 | L19 | 25 | este es el poder de la estructura leader-leader, solo con este modelo se logra excelencia duradera | POSTURA |
+| R7 | L21 | 16 | si el modelo funciona en un submarino nuclear, funciona para ti | POSTURA |
+| R8 | L23 | 80 | le preocupa que los lectores tomen la lista de mecanismos como prescripciones que garantizan el resultado, cada organizacion es distinta | POSTURA |
+| R9 | L25 | 97 | los mecanismos propios seran estructuralmente similares pero especificos distintos, ejemplo de vacaciones y descuentos, sugiere preguntar a la gente que autoridad quiere | POSTURA |
+| R10 | L27 | 35 | la accion deliberada se esta adoptando en la fuerza de submarinos, conocida como point and shoot | CASO |
+| R11 | L29 | 49 | I intend to tambien se ha extendido, visito el USS New Mexico y lo escucho en uso | CASO |
+| R12 | L31 | 30 | sobre Don't brief, certify!, el lenguaje de certificacion ha calado aunque para muchos es solo otra palabra para briefing | CASO |
+| R13 | L33 | 3 | separador | RESIDUO: separador |
+| R14 | L35 | 55 | invita a visitar su sitio web para herramientas, menciona sin desarrollar el proceso de siete pasos de autoevaluacion | RESIDUO: remite a fuente externa, nombra sin desplegar |
+| R15 | L37 | 50 | cierre: la persona mas importante sobre la que tener control eres tu mismo | POSTURA |
+| **el cuerpo entero** | **L9 a L37** | **802** | **suma de las piezas: 802** | **residuo sin asignar: 0** |
+
+    piezas: 15   lineas solapadas: 0   cuerpo 802   suma 802   residuo 0   lineas con palabras sin cubrir: 0

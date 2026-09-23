@@ -60070,3 +60070,412 @@ cero** (pendiente de firma en `config/frentes.json` por la sesion, seccion `1` d
 Commit y push de `docs/loop/`, `cuarentena/marquet_turn_the_ship/` y la carpeta de evidencia `.v5m/` a
 continuacion.
 
+
+
+# VUELTA 6 DEL FRENTE `marquet_turn_the_ship`: `cap_16` Y `cap_17`, EL BARRIDO DE `d104` Y EL CIERRE DEL LIBRO
+
+*Encargo en `docs/loop/PROMPT_SIGUIENTE.md`, escrito por el auditor al cerrar la `ACTA M6` (`docs/loop/ACTA_AUDITOR.md`).
+Extractor `claude-sonnet-5`, MODO_INSERCION=cuarentena, CLASE: EXTRACCION (`python scripts/deuda.py --clase 6` da `LIBRE`, `van 4 de 5`).*
+
+| | |
+|---|---|
+| rama | `extraccion-marquet_turn_the_ship` |
+| commit de apertura | `23d7d6e` (`git rev-parse HEAD`, tras commitear los registros pendientes del arnes que el ciclo 1 de `EXTRACTOR.md` manda pushear antes de tocar nada) |
+| `gate` a la apertura | `GATE VERDE`, `346` nodos verificados |
+| `guiones` a la apertura | `BARRIDO DE GUIONES VERDE` |
+| candidatos en bandeja a la apertura | `20` (`ls cuarentena/marquet_turn_the_ship/*.json \| wc -l`) |
+| credito a la apertura | `python forja.py credito`: `REPORTE 2 de 3` (ACTA M6), `CIFRA PUBLICADA 0 de 2`, `CLASE 0 de 2`, `DATO MOVIDO 0 de 2` |
+
+### Las cuatro tareas de esta vuelta
+
+| # | tarea | estado | resultado |
+|---:|---|---|---|
+| 1 | El remedio de `M6.9.a`: la frontera de cada capitulo se pega ENTERA, fila por pieza, sin resumen agrupado | **CERRADA** | Aplicado en las dos fronteras de la `TAREA 2`: `225` piezas totales (`15` de `cap_16`, `210` de `cap_17`), cero agrupadas, `<!-- TALLADO: salida=... -->` sin la palabra `parcial` |
+| 2 | `cap_16` y `cap_17`: frontera, candidatos, pasos inventados por capitulo, muestra de fidelidad `m6` | **CERRADA** | `0` candidatos en los dos capitulos, los dos **SIN SUPERFICIE**, leidos enteros. Muestra `m6`: `cap_17` releido entero, `cap_16` por muestra, `0` pasos en los dos |
+| 3 | `d104`: el barrido de la bandeja entera contra su texto de hoy | PENDIENTE | |
+| 4 | La cuenta del libro y el cierre de la extraccion | PENDIENTE | |
+
+### Discutibles marcados ANTES de saber si acierto
+
+| # | discutible | donde |
+|---|---|---|
+| 1 | `cap_16` `L25` (`R9`): "pregunta a tu gente que autoridades querria tener" leida como POSTURA de una sola sugerencia, sin segunda etapa; si el auditor lee que es un procedimiento de un paso, ahi nace un candidato minimo | TAREA 2, seccion 2.a |
+
+---
+
+# TAREA 1. EL REMEDIO DE `M6.9.a`: LA FRONTERA SE PEGA ENTERA, FILA POR PIEZA
+
+**La caida que corrijo (`M6.3`, `M6.8.a`):** la `ACTA M6` encontro que las cuatro tablas de frontera de la
+vuelta `5` no eran las brutas de `.v5m/frontera/`, sino un resumen agrupado tecleado encima, marcado
+`TALLADO: parcial`, con `12` cifras de palabras que no eran la suma de sus piezas y ninguna columna que
+sumara el cuerpo que su propia fila final declaraba. La marca `parcial` es legitima por si sola
+(`scripts/tallar_reporte.py` linea `461` la despacha como `CITA` sin reproducirla), y por eso la maquina no
+la caza: **la caida era del contenido, no de la marca.**
+
+**EL REMEDIO, TAL COMO LO ESCRIBE `D.41` Y LO ORDENA `M6.9.a`, aplicado en las dos frontera de esta vuelta**
+(seccion `2.a` y `2.b` de la `TAREA 2`):
+
+1. **Cada tabla de frontera se genera con un instrumento propio de esta vuelta**
+   (`.v6m/frontera/generar_frontera.py`), que cuenta lineas y palabras del fichero fuente, **nunca a mano**.
+   Su salida se guarda en `.v6m/frontera/cap_16_bruta.txt` y `.v6m/frontera/cap_17_bruta.txt`.
+2. **La tabla se pega en este reporte tal como el fichero la escribe**, pieza por pieza (`R1`, `R2`, ...,
+   sin agrupar rangos), bajo `<!-- TALLADO: salida=.v6m/frontera/cap_NN_bruta.txt -->` **sin la palabra
+   `parcial`**, para que `scripts/tallar_reporte.py` la reproduzca celda a celda en vez de citarla.
+3. **Ningun resumen agrupado va en el sitio de la tabla.** Si hace falta una lectura de conjunto, va aparte
+   y marcada `LECTURA` (asi se hace en `2.a` y `2.b`, despues de la tabla, no en su lugar).
+4. **La frase *coincide al digito* solo se escribe debajo de una tabla que el tallado haya reproducido**, y
+   aqui se escribe con `scripts/cerrar_reporte.py` corrido al cierre (`C.1`) como la comprobacion que lo
+   sostiene, no como promesa.
+
+**No es doctrina nueva:** `D.41` ya existia: *la tabla que dice ser de instrumento se anexa, no se teclea*.
+Lo que esta vuelta cambia es la ejecucion, no la regla (moratoria de maquinaria, `EXTRACTOR.md` `13`).
+
+---
+
+# TAREA 2. `cap_16` Y `cap_17`: LOS DOS ULTIMOS CAPITULOS
+
+## 2.a. `cap_16` ("Ripples", el cierre del libro, `802` palabras desde `L9`)
+
+**La discrepancia con la cifra del encargo (`830` palabras), declarada y no resuelta copiando** (`EXTRACTOR.md`
+5): el encargo cuenta `wc -w` del fichero entero (`830`, verificado hoy: `wc -w fuentes/marquet_turn_the_ship/cap_16.md`
+da `830`), que incluye las `28` palabras del bloque de cabecera YAML (`libro`, `edicion`, `unidad`,
+`titulo_textual`, `fidelidad`). La frontera, como todas las de esta linea desde `cap_01`, cuenta el CUERPO
+desde `L9` (tras el segundo `---`), que es la convencion que las brutas de `cap_12` a `cap_15` ya usaban y que
+la `ACTA M6` confirmo correcta (`M6.3`: *las cuatro brutas cierran al digito*). `830 - 802 = 28`.
+
+Instrumento: `python .v6m/frontera/generar_frontera.py`, guardado en `.v6m/frontera/cap_16_bruta.txt`.
+
+<!-- TALLADO: salida=.v6m/frontera/cap_16_bruta.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 1 | rotulo del titulo "Ripples" | RESIDUO: rotulo |
+| R2 | L11 | 7 | fecha y sitio, Submarine Base Pearl Harbor | RESIDUO: rotulo de fecha |
+| R3 | L13 | 121 | sentado en el muelle en 2011, Dave Adams toma el mando, tres oficiales de Santa Fe mandaron PRT | CASO |
+| R4 | L15 | 97 | anos despues, el leader-leader dejo dos logros no visibles de inmediato: el barco siguio bien tras su marcha | POSTURA |
+| R5 | L17 | 136 | el otro logro, desarrollaron lideres en numeros desproporcionados, ascensos de la plana mayor | CASO |
+| R6 | L19 | 25 | este es el poder de la estructura leader-leader, solo con este modelo se logra excelencia duradera | POSTURA |
+| R7 | L21 | 16 | si el modelo funciona en un submarino nuclear, funciona para ti | POSTURA |
+| R8 | L23 | 80 | le preocupa que los lectores tomen la lista de mecanismos como prescripciones que garantizan el resultado, cada organizacion es distinta | POSTURA |
+| R9 | L25 | 97 | los mecanismos propios seran estructuralmente similares pero especificos distintos, ejemplo de vacaciones y descuentos, sugiere preguntar a la gente que autoridad quiere | POSTURA |
+| R10 | L27 | 35 | la accion deliberada se esta adoptando en la fuerza de submarinos, conocida como point and shoot | CASO |
+| R11 | L29 | 49 | I intend to tambien se ha extendido, visito el USS New Mexico y lo escucho en uso | CASO |
+| R12 | L31 | 30 | sobre Don't brief, certify!, el lenguaje de certificacion ha calado aunque para muchos es solo otra palabra para briefing | CASO |
+| R13 | L33 | 3 | separador | RESIDUO: separador |
+| R14 | L35 | 55 | invita a visitar su sitio web para herramientas, menciona sin desarrollar el proceso de siete pasos de autoevaluacion | RESIDUO: remite a fuente externa, nombra sin desplegar |
+| R15 | L37 | 50 | cierre: la persona mas importante sobre la que tener control eres tu mismo | POSTURA |
+| **el cuerpo entero** | **L9 a L37** | **802** | **suma de las piezas: 802** | **residuo sin asignar: 0** |
+
+    piezas: 15   lineas solapadas: 0   cuerpo 802   suma 802   residuo 0   lineas con palabras sin cubrir: 0
+
+**LECTURA, contra la prueba del inventario (`EXTRACTOR.md` `9` y `9.1`):**
+
+- `R1` a `R3`, `R13` son rotulo, fecha o separador: residuo, no procedimiento.
+- `R3`, `R5` a `R7`, `R10` a `R12` narran hechos del propio Marquet y su tripulacion (quien tomo el mando,
+  cifras de ascensos, la adopcion de "point and shoot", "I intend to...", "certify"): **CASO**, contenido
+  especifico de esa tripulacion (manual `3.5`), no procedimiento nombrado con inventario propio.
+- `R4`, `R6` a `R9`, `R15` son reflexion del autor sobre lo que el libro entero significa: **POSTURA**. Nada
+  trae un inventario de medios, etapas u objetos de trabajo nombrados uno a uno (`9.1`, restriccion `1`).
+- `R9` (`L25`) es el unico candidato a discutible: *"si le preguntas a tu gente que autoridades le gustaria
+  tener para hacerle mas facil su trabajo, sin duda te daran algunas ideas."* Es una sola sugerencia, sin
+  segunda etapa, sin verbo mas objeto desplegable en varios pasos (**Regla `9.1`**: un inventario de UNA sola
+  accion no es un inventario de medios o etapas). Y el ejemplo que la precede (el nivel de aprobacion de
+  vacaciones) ya es la reformulacion de un mecanismo de delegacion que el libro nombra en capitulos
+  anteriores del propio frente, no una etapa nueva. **POSTURA**, marcado como discutible `1`.
+- `R14` (`L35`) nombra *"the seven-step process for effective self-assessment that we developed on board
+  Santa Fe"* **sin desplegar un solo paso**: remite al sitio web del autor. Es el caso literal de `9`: **NOMBRAR
+  NO ES PROCEDIMENTAR**. Ninguna de las siete etapas esta en el texto para transcribir.
+
+**CERO NODOS EN `cap_16`.** Es el capitulo de cierre del libro: reflexion sobre resultados a largo plazo y
+recapitulacion de mecanismos que, cuando se nombran, ya estan (o deberian estar) extraidos de los capitulos
+que los introdujeron con su inventario propio; aqui ninguno trae uno nuevo.
+
+## 2.b. `cap_17` (Glosario, Notas e Indice, `2640` palabras desde `L9`)
+
+**La misma discrepancia, misma razon:** `wc -w fuentes/marquet_turn_the_ship/cap_17.md` da `2673`
+(verificado hoy); `2673 - 2640 = 33` palabras del bloque de cabecera YAML. Cuerpo desde `L9`.
+
+Instrumento: `python .v6m/frontera/generar_frontera.py`, guardado en `.v6m/frontera/cap_17_bruta.txt`.
+**`210` piezas**, una por cada linea de contenido del fichero: `68` entradas de glosario (`L13` a `L147`),
+`8` notas bibliograficas (`L151` a `L165`), y `129` entradas o subentradas de indice (`L171` a `L427`), mas
+los cuatro rotulos y el parrafo de instrucciones del indice (`68+8+129+4+1=210`).
+
+<!-- TALLADO: salida=.v6m/frontera/cap_17_bruta.txt -->
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 1 | rotulo GLOSSARY | RESIDUO: rotulo |
+| R2 | L11 | 6 | subtitulo Technical Terms, Slang, and Military Jargon | RESIDUO: rotulo |
+| R3 | L13 | 8 | entrada de glosario, termino 1MC: 1MC Loudspeaker system allowing announcements throughout the | RESIDUO: entrada de glosario |
+| R4 | L15 | 33 | entrada de glosario, termino ADCAP: ADCAP “Advanced Capability”-Mk 48 ADCAP torpedo. The main he | RESIDUO: entrada de glosario |
+| R5 | L17 | 24 | entrada de glosario, termino ANAV: ANAV Assistant Navigator. A senior enlisted man in the navig | RESIDUO: entrada de glosario |
+| R6 | L19 | 17 | entrada de glosario, termino AWOL: AWOL Absent without leave. Also known as UA, unauthorized ab | RESIDUO: entrada de glosario |
+| R7 | L21 | 36 | entrada de glosario, termino BSP: BSP Brief stop for personnel. A quick entry into port during | RESIDUO: entrada de glosario |
+| R8 | L23 | 37 | entrada de glosario, termino BULL: BULL NUKE Senior nuclear-trained chief. Initially Chief Brad | RESIDUO: entrada de glosario |
+| R9 | L25 | 55 | entrada de glosario, termino CAPTAIN: CAPTAIN By rank, an O6. The rank above commander and below r | RESIDUO: entrada de glosario |
+| R10 | L27 | 12 | entrada de glosario, termino CO: CO Commanding officer, “captain” of a nuclear-powered submar | RESIDUO: entrada de glosario |
+| R11 | L29 | 28 | entrada de glosario, termino COB: COB Chief of the boat. The senior enlisted man on the submar | RESIDUO: entrada de glosario |
+| R12 | L31 | 21 | entrada de glosario, termino CONN: CONN Raised area in the control room around the periscope st | RESIDUO: entrada de glosario |
+| R13 | L33 | 24 | entrada de glosario, termino CONTROL: CONTROL The control room. A room in the forward compartment, | RESIDUO: entrada de glosario |
+| R14 | L35 | 26 | entrada de glosario, termino COPY: COPY Radio download from the satellite. The download came un | RESIDUO: entrada de glosario |
+| R15 | L37 | 39 | entrada de glosario, termino CORPSMAN: CORPSMAN Medically trained petty officer or chief assigned t | RESIDUO: entrada de glosario |
+| R16 | L39 | 29 | entrada de glosario, termino COW: COW Chief of the watch. The watch stander responsible for op | RESIDUO: entrada de glosario |
+| R17 | L41 | 67 | entrada de glosario, termino CSP: CSP COMSUBPAC. Commander, Submarine Forces, Pacific. The off | RESIDUO: entrada de glosario |
+| R18 | L43 | 56 | entrada de glosario, termino DEPLOYMENT: DEPLOYMENT Scheduled six-month tour away from home port. Sub | RESIDUO: entrada de glosario |
+| R19 | L45 | 17 | entrada de glosario, termino DIM: DIM Daily intentions message. A scripted message transmitted | RESIDUO: entrada de glosario |
+| R20 | L47 | 3 | entrada de glosario, termino DOC: DOC See Corpsman. | RESIDUO: entrada de glosario |
+| R21 | L49 | 22 | entrada de glosario, termino DOOW: DOOW Diving officer of the watch, also called “Dive,” the wa | RESIDUO: entrada de glosario |
+| R22 | L51 | 3 | entrada de glosario, termino DOWNLOAD: DOWNLOAD See Copy. | RESIDUO: entrada de glosario |
+| R23 | L53 | 35 | entrada de glosario, termino EAB: EAB Emergency air breathing device. A mask, connected with a | RESIDUO: entrada de glosario |
+| R24 | L55 | 31 | entrada de glosario, termino ENG: ENG OR CHENG Engineer or chief engineer. Responsible for the | RESIDUO: entrada de glosario |
+| R25 | L57 | 21 | entrada de glosario, termino EP: EP Early promote. The highest fitness report evaluation. No  | RESIDUO: entrada de glosario |
+| R26 | L59 | 25 | entrada de glosario, termino EPM: EPM Electric propulsion motor. A backup electric motor used  | RESIDUO: entrada de glosario |
+| R27 | L61 | 27 | entrada de glosario, termino ESL: ESL Equipment status log. A list of all equipment in a reduc | RESIDUO: entrada de glosario |
+| R28 | L63 | 34 | entrada de glosario, termino ET: ET Electronics technician. An electronics technician was ref | RESIDUO: entrada de glosario |
+| R29 | L65 | 20 | entrada de glosario, termino FCS: FCS Fire control system. The computer system used to program | RESIDUO: entrada de glosario |
+| R30 | L67 | 7 | entrada de glosario, termino FFV: FFV Fresh fruits and vegetables, when resupplied. | RESIDUO: entrada de glosario |
+| R31 | L69 | 6 | entrada de glosario, termino FITREP: FITREP Fitness Report. Annual evaluation report. | RESIDUO: entrada de glosario |
+| R32 | L71 | 17 | entrada de glosario, termino FT: FT Fire control technician. Fire control refers to control o | RESIDUO: entrada de glosario |
+| R33 | L73 | 30 | entrada de glosario, termino INSURV: INSURV A material inspection by a group of officers from the | RESIDUO: entrada de glosario |
+| R34 | L75 | 19 | entrada de glosario, termino KHAKIS: KHAKIS The officers and chiefs taken together as a group. So | RESIDUO: entrada de glosario |
+| R35 | L77 | 30 | entrada de glosario, termino MANEUVERING: MANEUVERING A control room within the engine room where the  | RESIDUO: entrada de glosario |
+| R36 | L79 | 14 | entrada de glosario, termino MESSAGE: MESSAGE BOARDS Clipboard on which radio messages were routed | RESIDUO: entrada de glosario |
+| R37 | L81 | 46 | entrada de glosario, termino NAV: NAV OR NAV/OPS Navigator or navigator/operations officer. On | RESIDUO: entrada de glosario |
+| R38 | L83 | 26 | entrada de glosario, termino NAVSUPE: NAVSUPE Navigation supervisor. A senior enlisted or junior o | RESIDUO: entrada de glosario |
+| R39 | L85 | 25 | entrada de glosario, termino NJP: NJP Nonjudicial punishment. A form of military justice that  | RESIDUO: entrada de glosario |
+| R40 | L87 | 17 | entrada de glosario, termino NUKES: NUKES Nuclear-trained enlisted men. Nukes operated the propu | RESIDUO: entrada de glosario |
+| R41 | L89 | 26 | entrada de glosario, termino OOD: OOD Officer of the deck. The watch officer responsible for d | RESIDUO: entrada de glosario |
+| R42 | L91 | 32 | entrada de glosario, termino ORSE: ORSE Operational Reactor Safeguards Examination. A crucible  | RESIDUO: entrada de glosario |
+| R43 | L93 | 15 | entrada de glosario, termino PACE: PACE Program for Afloat College Education. A Navy program fo | RESIDUO: entrada de glosario |
+| R44 | L95 | 17 | entrada de glosario, termino PCO: PCO Prospective commanding officer. An officer in the traini | RESIDUO: entrada de glosario |
+| R45 | L97 | 31 | entrada de glosario, termino PD: PD Periscope depth. A depth shallow enough for the periscope | RESIDUO: entrada de glosario |
+| R46 | L99 | 4 | entrada de glosario, termino PNA: PNA “Passed, not advanced.” | RESIDUO: entrada de glosario |
+| R47 | L101 | 10 | entrada de glosario, termino POD: POD Plan of the day. Daily schedule and administrative notic | RESIDUO: entrada de glosario |
+| R48 | L103 | 39 | entrada de glosario, termino POMCERT: POMCERT Certification for deployment. A key milestone to all | RESIDUO: entrada de glosario |
+| R49 | L105 | 39 | entrada de glosario, termino PORT/STARBOARD: PORT/STARBOARD Said of watch station if there are only two p | RESIDUO: entrada de glosario |
+| R50 | L107 | 21 | entrada de glosario, termino PRT: PRT Provincial Reconstruction Team. Civilian-military team c | RESIDUO: entrada de glosario |
+| R51 | L109 | 31 | entrada de glosario, termino QMOW: QMOW Quartermaster of the watch. The watch stander responsib | RESIDUO: entrada de glosario |
+| R52 | L111 | 26 | entrada de glosario, termino RHIB: RHIB Rigid hull inflatable boat. The type of small boat that | RESIDUO: entrada de glosario |
+| R53 | L113 | 32 | entrada de glosario, termino SCOPE: SCOPE Periscope. Santa Fe had two periscopes: an “attack” sc | RESIDUO: entrada de glosario |
+| R54 | L115 | 18 | entrada de glosario, termino SCUTTLEBUTT: SCUTTLEBUTT Rumor, gossip. The scuttlebutt is actually a wat | RESIDUO: entrada de glosario |
+| R55 | L117 | 15 | entrada de glosario, termino SSBN: SSBN Naval designation for a nuclear-powered ballistic missi | RESIDUO: entrada de glosario |
+| R56 | L119 | 17 | entrada de glosario, termino SSM: SSM Ship System Manual. Book of procedures for how to run th | RESIDUO: entrada de glosario |
+| R57 | L121 | 14 | entrada de glosario, termino SSN: SSN Naval designation for a nuclear-powered attack submarine | RESIDUO: entrada de glosario |
+| R58 | L123 | 20 | entrada de glosario, termino SSORM: SSORM Standard Submarine Organization and Regulations Manual | RESIDUO: entrada de glosario |
+| R59 | L125 | 53 | entrada de glosario, termino STAND-DOWN: STAND-DOWN A period of significantly reduced activity aboard | RESIDUO: entrada de glosario |
+| R60 | L127 | 43 | entrada de glosario, termino STRAIT: STRAIT OF HORMUZ Strait between the Arabian Gulf and the Ara | RESIDUO: entrada de glosario |
+| R61 | L129 | 54 | entrada de glosario, termino STRAIT: STRAIT OF MALACCA The five-hundred-mile-long strait between  | RESIDUO: entrada de glosario |
+| R62 | L131 | 4 | entrada de glosario, termino SUBPAC: SUBPAC See COMSUBPAC, CSP. | RESIDUO: entrada de glosario |
+| R63 | L133 | 42 | entrada de glosario, termino SUPPO: SUPPO Supply officer. The only nonnuclear-trained officer ab | RESIDUO: entrada de glosario |
+| R64 | L135 | 63 | entrada de glosario, termino TLAM: TLAM Tomahawk land-attack missile. The Tomahawk was the prim | RESIDUO: entrada de glosario |
+| R65 | L137 | 32 | entrada de glosario, termino TRE: TRE Tactical Readiness Evaluation. A comprehensive underway  | RESIDUO: entrada de glosario |
+| R66 | L139 | 7 | entrada de glosario, termino UA: UA Unauthorized absence. Also known as AWOL. | RESIDUO: entrada de glosario |
+| R67 | L141 | 33 | entrada de glosario, termino VLS: VLS Vertical launch system. Twelve vertical launch missile t | RESIDUO: entrada de glosario |
+| R68 | L143 | 30 | entrada de glosario, termino WARDROOM: WARDROOM Dining room for the officers. It also serves as a t | RESIDUO: entrada de glosario |
+| R69 | L145 | 48 | entrada de glosario, termino WEPS: WEPS Weapons officer. One of the three nuclear-trained depar | RESIDUO: entrada de glosario |
+| R70 | L147 | 44 | entrada de glosario, termino XO: XO Executive officer, Exec, the second in command of a nucle | RESIDUO: entrada de glosario |
+| R71 | L149 | 1 | rotulo NOTES | RESIDUO: rotulo |
+| R72 | L151 | 30 | nota bibliografica 1. John M. Gibbons, “I Can’t Get No . . . Job Satisfaction, That Is” ( | RESIDUO: nota bibliografica |
+| R73 | L153 | 18 | nota bibliografica 2. Mercer, “Inside Employees’ Minds: Navigating the New Rules of Engag | RESIDUO: nota bibliografica |
+| R74 | L155 | 14 | nota bibliografica 3. “Employee Engagement: A Leading Indicator of Financial Performance, | RESIDUO: nota bibliografica |
+| R75 | L157 | 28 | nota bibliografica 4. Skip Weisman, “Why 44% of Today’s Leaders Are Unhappy with Their Em | RESIDUO: nota bibliografica |
+| R76 | L159 | 30 | nota bibliografica 5. Department of Leadership and Law, U.S. Naval Academy, Karel Montor  | RESIDUO: nota bibliografica |
+| R77 | L161 | 18 | nota bibliografica 6. United States Navy Regulations, with change 1, chapter 8 (Washingto | RESIDUO: nota bibliografica |
+| R78 | L163 | 19 | nota bibliografica 7. Theodore Roscoe, United States Submarine Operations in World War Tw | RESIDUO: nota bibliografica |
+| R79 | L165 | 22 | nota bibliografica 8. U.S. Energy Information Administration, Independent Statistics & An | RESIDUO: nota bibliografica |
+| R80 | L167 | 1 | rotulo INDEX | RESIDUO: rotulo |
+| R81 | L169 | 42 | parrafo de instrucciones del indice para el lector digital | RESIDUO: nota de uso del indice |
+| R82 | L171 | 3 | entrada de indice: Accountability, 37, 41 | RESIDUO: entrada de indice |
+| R83 | L173 | 2 | entrada de indice: eyeball, 56 | RESIDUO: entrada de indice |
+| R84 | L175 | 4 | entrada de indice: achievements, recognition of, 184-87 | RESIDUO: entrada de indice |
+| R85 | L177 | 8 | entrada de indice: acting your way to new thinking, 65-68, 206 | RESIDUO: entrada de indice |
+| R86 | L179 | 2 | entrada de indice: action-aversion, 46 | RESIDUO: entrada de indice |
+| R87 | L181 | 12 | entrada de indice: Adams, Dave, 29, 30, 91, 96, 101, 189, 190, 208, 214, 217 | RESIDUO: entrada de indice |
+| R88 | L183 | 4 | entrada de indice: coaching by, 135, 136 | RESIDUO: entrada de indice |
+| R89 | L185 | 4 | entrada de indice: deployment preparation of, 188-89 | RESIDUO: entrada de indice |
+| R90 | L187 | 4 | entrada de indice: long-term planning by, 190-91 | RESIDUO: entrada de indice |
+| R91 | L189 | 4 | entrada de indice: schedule made by, 79 | RESIDUO: entrada de indice |
+| R92 | L191 | 5 | entrada de indice: and search for Grayling, 176 | RESIDUO: entrada de indice |
+| R93 | L193 | 7 | entrada de indice: in simulated battle, 86, 89, 91, 101 | RESIDUO: entrada de indice |
+| R94 | L195 | 4 | entrada de indice: and torpedo problem, 127 | RESIDUO: entrada de indice |
+| R95 | L197 | 4 | entrada de indice: administrative processes, 184, 186-87 | RESIDUO: entrada de indice |
+| R96 | L199 | 2 | entrada de indice: advancement, 55 | RESIDUO: entrada de indice |
+| R97 | L201 | 5 | entrada de indice: advancement examinations, 143, 166-68, 171 | RESIDUO: entrada de indice |
+| R98 | L203 | 2 | entrada de indice: airlines, 123 | RESIDUO: entrada de indice |
+| R99 | L205 | 3 | entrada de indice: Alexandria, USS, 217 | RESIDUO: entrada de indice |
+| R100 | L207 | 2 | entrada de indice: ambiguity, 100 | RESIDUO: entrada de indice |
+| R101 | L209 | 5 | entrada de indice: Arabian Gulf, 188, 195-97, 202 | RESIDUO: entrada de indice |
+| R102 | L211 | 5 | entrada de indice: Arleigh Burke Fleet Trophy, 203 | RESIDUO: entrada de indice |
+| R103 | L213 | 3 | entrada de indice: Arthur Andersen, 110 | RESIDUO: entrada de indice |
+| R104 | L215 | 4 | entrada de indice: attention to detail, 120 | RESIDUO: entrada de indice |
+| R105 | L217 | 2 | entrada de indice: attitude, 62 | RESIDUO: entrada de indice |
+| R106 | L219 | 4 | entrada de indice: authority, 57-58, 64, 128 | RESIDUO: entrada de indice |
+| R107 | L221 | 3 | entrada de indice: Aviles, Armando, 209 | RESIDUO: entrada de indice |
+| R108 | L223 | 3 | entrada de indice: Barb, USS, 45 | RESIDUO: entrada de indice |
+| R109 | L225 | 3 | entrada de indice: Barclay (dog), 150-51 | RESIDUO: entrada de indice |
+| R110 | L227 | 3 | entrada de indice: battle plans, 41-42 | RESIDUO: entrada de indice |
+| R111 | L229 | 8 | entrada de indice: “begin with the end in mind,” 192-93, 207 | RESIDUO: entrada de indice |
+| R112 | L231 | 3 | entrada de indice: Beowulf, xxv, 1 | RESIDUO: entrada de indice |
+| R113 | L233 | 5 | entrada de indice: Bernacchi, Mike, xxxi, 208, 217 | RESIDUO: entrada de indice |
+| R114 | L235 | 3 | entrada de indice: Birmingham, USS, 12 | RESIDUO: entrada de indice |
+| R115 | L237 | 3 | entrada de indice: blind obedience, 162 | RESIDUO: entrada de indice |
+| R116 | L239 | 3 | entrada de indice: Blue Crew, 4-5 | RESIDUO: entrada de indice |
+| R117 | L241 | 7 | entrada de indice: Board of Inspection and Survey (INSURV), 112 | RESIDUO: entrada de indice |
+| R118 | L243 | 3 | entrada de indice: Bonefish, USS, 154 | RESIDUO: entrada de indice |
+| R119 | L245 | 3 | entrada de indice: Bowfin, USS, 176 | RESIDUO: entrada de indice |
+| R120 | L247 | 3 | entrada de indice: Bremerton, USS, 218 | RESIDUO: entrada de indice |
+| R121 | L249 | 3 | entrada de indice: briefing, 138-41, 206 | RESIDUO: entrada de indice |
+| R122 | L251 | 6 | entrada de indice: brief stop for personnel (BSP), 211 | RESIDUO: entrada de indice |
+| R123 | L253 | 3 | entrada de indice: Brooks, Lt., 171 | RESIDUO: entrada de indice |
+| R124 | L255 | 7 | entrada de indice: Built to Last (Collins and Porras), 56 | RESIDUO: entrada de indice |
+| R125 | L257 | 4 | entrada de indice: call to action, 28-34 | RESIDUO: entrada de indice |
+| R126 | L259 | 2 | entrada de indice: capacity, 206 | RESIDUO: entrada de indice |
+| R127 | L261 | 4 | entrada de indice: captain’s mast cases, 118-19 | RESIDUO: entrada de indice |
+| R128 | L263 | 3 | entrada de indice: Card, Kendall, 210 | RESIDUO: entrada de indice |
+| R129 | L265 | 2 | entrada de indice: caring, 163-72 | RESIDUO: entrada de indice |
+| R130 | L267 | 5 | entrada de indice: casualty drills, 130, 138, 173-75 | RESIDUO: entrada de indice |
+| R131 | L269 | 2 | entrada de indice: caution, 123 | RESIDUO: entrada de indice |
+| R132 | L271 | 4 | entrada de indice: certifications, 115, 138-41, 206 | RESIDUO: entrada de indice |
+| R133 | L273 | 8 | entrada de indice: chain of command, 31, 72, 74, 127, 181 | RESIDUO: entrada de indice |
+| R134 | L275 | 4 | entrada de indice: decision-making authority and, 161 | RESIDUO: entrada de indice |
+| R135 | L277 | 4 | entrada de indice: empowered phrases and, 83-84 | RESIDUO: entrada de indice |
+| R136 | L279 | 3 | entrada de indice: information in, 49 | RESIDUO: entrada de indice |
+| R137 | L281 | 4 | entrada de indice: change, 51-61, 65-66, 68 | RESIDUO: entrada de indice |
+| R138 | L283 | 4 | entrada de indice: chart review process, 120 | RESIDUO: entrada de indice |
+| R139 | L285 | 3 | entrada de indice: checking out, 37-38 | RESIDUO: entrada de indice |
+| R140 | L287 | 3 | entrada de indice: Cheyenne, USS, 218 | RESIDUO: entrada de indice |
+| R141 | L289 | 7 | entrada de indice: chief of the boat (COB), 52, 148 | RESIDUO: entrada de indice |
+| R142 | L291 | 6 | entrada de indice: chief of the watch (COW), 157 | RESIDUO: entrada de indice |
+| R143 | L293 | 10 | entrada de indice: Chiefs in Charge, 57, 60, 120, 139, 149, 152-53, 203 | RESIDUO: entrada de indice |
+| R144 | L295 | 6 | entrada de indice: clarity, 49-50, 161-62, 205, 206-7, 213 | RESIDUO: entrada de indice |
+| R145 | L297 | 9 | entrada de indice: and beginning with the end in mind, 193, 207 | RESIDUO: entrada de indice |
+| R146 | L299 | 3 | entrada de indice: caring and, 172 | RESIDUO: entrada de indice |
+| R147 | L301 | 5 | entrada de indice: decision making and, 182-83, 207 | RESIDUO: entrada de indice |
+| R148 | L303 | 3 | entrada de indice: excellence and, 206 | RESIDUO: entrada de indice |
+| R149 | L305 | 3 | entrada de indice: goals and, 159 | RESIDUO: entrada de indice |
+| R150 | L307 | 4 | entrada de indice: legacy and, 176, 206 | RESIDUO: entrada de indice |
+| R151 | L309 | 4 | entrada de indice: obedience and, 200, 207 | RESIDUO: entrada de indice |
+| R152 | L311 | 2 | entrada de indice: organizational, 193 | RESIDUO: entrada de indice |
+| R153 | L313 | 5 | entrada de indice: questioning attitude and, 200, 207 | RESIDUO: entrada de indice |
+| R154 | L315 | 7 | entrada de indice: and recognition of desired behaviors, 187, 207 | RESIDUO: entrada de indice |
+| R155 | L317 | 4 | entrada de indice: trust and, 172, 206 | RESIDUO: entrada de indice |
+| R156 | L319 | 3 | entrada de indice: Coast Guard, 71 | RESIDUO: entrada de indice |
+| R157 | L321 | 3 | entrada de indice: Collins, Jim, 56 | RESIDUO: entrada de indice |
+| R158 | L323 | 2 | entrada de indice: combat, 130 | RESIDUO: entrada de indice |
+| R159 | L325 | 4 | entrada de indice: Command Leadership School, 178-79 | RESIDUO: entrada de indice |
+| R160 | L327 | 3 | entrada de indice: commitment, 17-21, 180 | RESIDUO: entrada de indice |
+| R161 | L329 | 4 | entrada de indice: communication, informal, 102-4, 106 | RESIDUO: entrada de indice |
+| R162 | L331 | 9 | entrada de indice: competence, 27, 49-50, 115, 129, 161, 205, 206, 213 | RESIDUO: entrada de indice |
+| R163 | L333 | 4 | entrada de indice: certification and, 140, 206 | RESIDUO: entrada de indice |
+| R164 | L335 | 4 | entrada de indice: control and, 126, 132-33 | RESIDUO: entrada de indice |
+| R165 | L337 | 8 | entrada de indice: deliberate action and, 115, 119-21, 122-25, 126, 206 | RESIDUO: entrada de indice |
+| R166 | L339 | 4 | entrada de indice: goals and, 159, 206 | RESIDUO: entrada de indice |
+| R167 | L341 | 5 | entrada de indice: learning and, 131, 133, 206 | RESIDUO: entrada de indice |
+| R168 | L343 | 3 | entrada de indice: proof of, 63-64 | RESIDUO: entrada de indice |
+| R169 | L345 | 6 | entrada de indice: and repeating the message, 149, 206 | RESIDUO: entrada de indice |
+| R170 | L347 | 4 | entrada de indice: and specifying goals, 159 | RESIDUO: entrada de indice |
+| R171 | L349 | 3 | entrada de indice: training and, 132 | RESIDUO: entrada de indice |
+| R172 | L351 | 2 | entrada de indice: competition, 186-87 | RESIDUO: entrada de indice |
+| R173 | L353 | 2 | entrada de indice: confirmation, xix-xx | RESIDUO: entrada de indice |
+| R174 | L355 | 5 | entrada de indice: Constellation Battle Group, 18, 135 | RESIDUO: entrada de indice |
+| R175 | L357 | 4 | entrada de indice: Constitution, U.S., 45, 130 | RESIDUO: entrada de indice |
+| R176 | L359 | 3 | entrada de indice: continuous improvement, 180 | RESIDUO: entrada de indice |
+| R177 | L361 | 10 | entrada de indice: control, xxi, xxx, 21, 49-50, 85, 205, 206, 213, 216 | RESIDUO: entrada de indice |
+| R178 | L363 | 11 | entrada de indice: acting your way to new thinking as mechanism of, 65-68, 206 | RESIDUO: entrada de indice |
+| R179 | L365 | 4 | entrada de indice: competence and, 126, 132-33 | RESIDUO: entrada de indice |
+| R180 | L367 | 6 | entrada de indice: and “embrace the inspectors,” 111-12, 206 | RESIDUO: entrada de indice |
+| R181 | L369 | 3 | entrada de indice: exercise for, 58-59 | RESIDUO: entrada de indice |
+| R182 | L371 | 6 | entrada de indice: genetic code for, 49, 55-60, 206 | RESIDUO: entrada de indice |
+| R183 | L373 | 14 | entrada de indice: and “I intend to . . . ,” 81-82, 83-84, 85, 105, 108, 206 | RESIDUO: entrada de indice |
+| R184 | L375 | 9 | entrada de indice: and resisting the urge to provide solutions, 91-92, 206 | RESIDUO: entrada de indice |
+| R185 | L377 | 6 | entrada de indice: short, early conversations and, 75-76, 206 | RESIDUO: entrada de indice |
+| R186 | L379 | 6 | entrada de indice: and thinking out loud, 105-6, 206 | RESIDUO: entrada de indice |
+| R187 | L381 | 5 | entrada de indice: conversations, short, early, 75-76, 206 | RESIDUO: entrada de indice |
+| R188 | L383 | 2 | entrada de indice: cooperation, 187 | RESIDUO: entrada de indice |
+| R189 | L385 | 3 | entrada de indice: Costa Concordia, 200 | RESIDUO: entrada de indice |
+| R190 | L387 | 2 | entrada de indice: costs, 68 | RESIDUO: entrada de indice |
+| R191 | L389 | 2 | entrada de indice: courage, 180 | RESIDUO: entrada de indice |
+| R192 | L391 | 12 | entrada de indice: Covey, Stephen, v, xvii, xxii, 82, 83, 190n, 192, 201-2, 203-4, 208 | RESIDUO: entrada de indice |
+| R193 | L393 | 4 | entrada de indice: creativity, xxiii, 99, 206 | RESIDUO: entrada de indice |
+| R194 | L395 | 3 | entrada de indice: creeds, 129-30, 134 | RESIDUO: entrada de indice |
+| R195 | L397 | 2 | entrada de indice: crises, 152-60 | RESIDUO: entrada de indice |
+| R196 | L399 | 3 | entrada de indice: cruise lines, 123 | RESIDUO: entrada de indice |
+| R197 | L401 | 4 | entrada de indice: cult of personality, 21 | RESIDUO: entrada de indice |
+| R198 | L403 | 2 | entrada de indice: culture, 62-68 | RESIDUO: entrada de indice |
+| R199 | L405 | 2 | entrada de indice: curiosity, 22 | RESIDUO: entrada de indice |
+| R200 | L407 | 5 | entrada de indice: daily intentions message (DIM), 210 | RESIDUO: entrada de indice |
+| R201 | L409 | 4 | entrada de indice: damage control central, 156-57 | RESIDUO: entrada de indice |
+| R202 | L411 | 3 | entrada de indice: decision making, xix-xx | RESIDUO: entrada de indice |
+| R203 | L413 | 5 | entrada de indice: chain of command and, 161 | RESIDUO: entrada de indice |
+| R204 | L415 | 4 | entrada de indice: clarity and, 182-83, 207 | RESIDUO: entrada de indice |
+| R205 | L417 | 5 | entrada de indice: guiding principles for, 162, 178-83 | RESIDUO: entrada de indice |
+| R206 | L419 | 4 | entrada de indice: on Santa Fe, 51-61 | RESIDUO: entrada de indice |
+| R207 | L421 | 4 | entrada de indice: on short notice, 92-93 | RESIDUO: entrada de indice |
+| R208 | L423 | 4 | entrada de indice: Defense Department, U.S., 177 | RESIDUO: entrada de indice |
+| R209 | L425 | 4 | entrada de indice: delegations, 41, 58, 61 | RESIDUO: entrada de indice |
+| R210 | L427 | 2 | entrada de indice: stewardship, 181 | RESIDUO: entrada de indice |
+| **el cuerpo entero** | **L9 a L427** | **2640** | **suma de las piezas: 2640** | **residuo sin asignar: 0** |
+
+    piezas: 210   lineas solapadas: 0   cuerpo 2640   suma 2640   residuo 0   lineas con palabras sin cubrir: 0
+
+**LECTURA, contra la prueba del inventario:**
+
+- **Las `68` entradas de glosario** definen un termino cada una (rango, cargo, sigla, equipo): son
+  **definiciones**, el cuarto caso que el manual nombra por su nombre (`EXTRACTOR.md` `9`, tabla): *una
+  definicion o un concepto sin nada que hacer* no es un nodo. Ninguna trae un verbo en imperativo ni una
+  secuencia de etapas; son sustantivo mas explicacion. La unica que roza un procedimiento por su tema es
+  `SSM` (`R56`, `L119`): *"Ship System Manual. Book of procedures for how to run the forward part of the
+  submarine."* **Nombra que existe un libro de procedimientos y no transcribe ninguno**: es el caso exacto de
+  `9`, *nombrar no es procedimentar*, remitiendo a un documento que este texto no reproduce.
+- **Las `8` notas bibliograficas** son citas de fuentes (autor, titulo, fecha, URL): no son procedimiento, son
+  referencia editorial.
+- **Las `129` entradas de indice** son termino mas numero de pagina: ni siquiera son prosa completa, son
+  puntero. Ninguna prueba de nodo aplica porque no hay oracion que leer.
+- Los `4` rotulos (`GLOSSARY`, el subtitulo, `NOTES`, `INDEX`) y el parrafo de instrucciones del indice
+  (`R81`) son residuo de estructura del libro impreso.
+
+**CERO NODOS EN `cap_17`.** Es material de referencia (glosario, notas, indice): ninguna pieza es un
+procedimiento con pasos que alguien pueda ejecutar (`EXTRACTOR.md` `9`), y ninguna trae el inventario propio
+de medios, etapas u objetos de trabajo que la prueba de `9.1` exige. **SIN DISCUTIBLES**: no hay lectura
+alternativa razonable que convierta una definicion o un punto de indice en procedimiento.
+
+## 2.c. Candidatos, `PASOS INVENTADOS POR CAPITULO`, y la muestra de fidelidad `m6`
+
+**CANDIDATOS ESCRITOS EN ESTA TAREA: `0`.** Ningun `python forja.py informe` que correr: no hay ficha que
+pasar por la aduana en seco porque ninguna pieza de `cap_16` ni de `cap_17` paso la prueba del inventario
+(`2.a`, `2.b`). Los dos capitulos se firman **LEYENDOLOS ENTEROS** (`EXTRACTOR.md` `17.4`: *un capitulo que
+no da nodo se firma leyendolo entero*), que es exactamente lo que las dos tablas de frontera de `2.a` y
+`2.b` hacen: cubren el cuerpo completo de cada fichero, `L9` a `L37` y `L9` a `L427`, sin residuo.
+
+| capitulo | pasos escritos | PUENTE | PASOS INVENTADOS | contra el tope de `10` |
+|---|---:|---:|---|---|
+| `cap_16` (Ripples) | `0` | `0` | **`SIN SUPERFICIE`**, leido entero de `L9` a `L37` | no aplica |
+| `cap_17` (Glossary, Notes, Index) | `0` | `0` | **`SIN SUPERFICIE`**, leido entero de `L9` a `L427` | no aplica |
+| **el tramo** | **`0`** | **`0`** | **`SIN SUPERFICIE`** | no aplica |
+
+**La muestra de fidelidad, con la semilla de esta vuelta** (`D.58`, `EXTRACTOR.md` `15.4`):
+
+    $ python scripts/muestra_fidelidad.py --libro marquet_turn_the_ship --capitulos cap_16,cap_17 --semilla m6
+    MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+      libro    : marquet_turn_the_ship
+      semilla  : m6
+      capitulos: cap_16, cap_17
+
+      RELEIDO ENTERO : cap_17
+      POR MUESTRA    : cap_16, 15 pasos cada uno
+
+      EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+      pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+      --- cap_16: 0 paso(s) en la muestra
+
+      --- cap_17: ENTERO, 0 paso(s), no hay muestra que elegir
+
+Guardado en `.v6m/muestra/muestra_m6.txt`. **La semilla `m6` elige `cap_17` para relectura entera y `cap_16`
+para muestra**, y en los dos casos da `0` porque los dos capitulos tienen `0` pasos: no hay candidato de
+`cap_16` ni de `cap_17` en la bandeja de esta vuelta. **Ningun capitulo pasa del `10` por ciento** (no hay
+numerador ni denominador): no hay relectura entera que escalar mas alla de la que ya hice pieza por pieza en
+`2.a` y `2.b`.
+
+**LOS DOS CAPITULOS QUEDAN MINADOS EN CERO, LEIDOS ENTEROS, CON SU FRONTERA COMPLETA VERIFICADA CONTRA EL
+FICHERO.**

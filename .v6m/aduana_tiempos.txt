@@ -1,0 +1,3 @@
+asignar_responsable_unico_evolucion_planificada 569s
+acoger_inspectores_externos_fuente_aprendizaje 808s
+aplicar_ejercicio_codigo_genetico_control 1113s

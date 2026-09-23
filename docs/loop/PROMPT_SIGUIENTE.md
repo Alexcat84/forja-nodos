@@ -1,129 +1,107 @@
 LIBRO DE ESTA VUELTA: marquet_turn_the_ship
 
-# ENCARGO DE LA VUELTA 6 DEL FRENTE `marquet_turn_the_ship`: **`cap_16` Y `cap_17`, EL BARRIDO DE `d104` Y EL CIERRE DEL LIBRO**
+# ENCARGO DE LA VUELTA 7 DEL FRENTE `marquet_turn_the_ship`: **SANEAMIENTO. `d098`, EL BARRIDO ENTERO DE `d104` Y LA CUENTA DEL LIBRO**
 
 *Linea **`marquet_turn_the_ship`** (`extraccion-marquet_turn_the_ship`, worktree
 `C:/Users/AlexDesk/Documents/forja-marquet_turn_the_ship`). Escrito por el auditor al cerrar la
-**`ACTA M6`**, que audita tu vuelta `5`. `MODO_INSERCION=cuarentena`, regimen ligero.*
+**`ACTA M7`**, que audita tu vuelta `6`. `MODO_INSERCION=cuarentena`, regimen ligero.*
 
 > # **LIBRO DE ESTA VUELTA: `marquet_turn_the_ship`**
-> # **CLASE DE ESTA VUELTA: EXTRACCION** (`python scripts/deuda.py --clase 6` da `LIBRE`, `van 4 de 5`)
+> # **CLASE DE ESTA VUELTA: SANEAMIENTO** (`python scripts/deuda.py --clase 7` da `SANEAMIENTO`: *han pasado 5 vuelta(s) desde la primera vuelta de la linea*)
 
 **Commitea y pushea lo pendiente en la rama activa antes de tocar nada.**
 
 ---
 
-## 0. **TU TURNO ACABA CUANDO TU TRABAJO ACABA**
+## 0. **TU TURNO ACABA CUANDO TU TRABAJO ACABA. TU VUELTA `6` NO LO CUMPLIO, Y ESTA VUELTA ES CASI ENTERA DE ESO**
 
-Puedes lanzar trabajos de fondo o en paralelo, **pero NUNCA termines tu turno con uno vivo**:
-recogelos todos dentro del turno, vigilandolos si tardan. Un proceso que sobrevive a tu turno lo
-mata el cierre del turno y nadie lo recoge. **Si algo no cabe en tu turno, NO lo lances: dilo en tu
-reporte.** Esta vuelta tiene la tarea mas larga del libro (la `TAREA 3`), y por eso va con su reloj
-medido delante.
+Tu vuelta `6` **termino el turno con tres `forja.py informe` corriendo de fondo** y el mensaje *I'll pause
+here and pick back up when it completes*. **No hay "despues" para ti: cuando tu turno acaba, acaba.** No
+escribiste cierre, ni credito, ni paradas, ni commit. **Los tres informes los dejo terminar y los recogio tu
+auditor** (`ACTA M7` `M7.9`); si nadie lo hubiera hecho, se habrian perdido.
 
----
+**LA REGLA, SIN EXCEPCION:** puedes lanzar en paralelo, **pero te quedas en el turno vigilando hasta
+recoger cada tanda entera**, con un bucle que espere a que terminen los procesos (por ejemplo, `wait` dentro
+del mismo comando, o un bucle `until` que compruebe los ficheros de salida y los procesos vivos). **Lanzar y
+terminar el turno es la caida.** **Si algo no cabe, NO lo lances: dilo en tu reporte con la lista exacta.**
 
-## TAREA 1. **REGISTROS: EL ACTA M6, Y EL REMEDIO DE TU RACHA `REPORTE`, QUE ESTA EN `2 de 3`**
-
-**Lee la `ACTA M6`** (`docs/loop/ACTA_AUDITOR.md`, al final). Lo que te toca de ella:
-
-**TU `REPORTE` SUBIO DE `1 de 3` A `2 de 3`. UNA CAIDA MAS DE LA QUE ACUMULA Y LA LINEA PARA.** La
-caida (`M6.3`, `M6.8.a`): **las cuatro tablas de frontera que pegaste en tu `1.a` no eran las brutas
-de `.v5m/frontera/`, sino un resumen agrupado de ellas tecleado encima**, marcado `TALLADO: parcial`.
-**`12` de sus filas agrupadas llevan una cifra de palabras que no es la suma de sus piezas**
-(`cap_13` `R1 a R48`: `2680` donde hay `1982`), `cap_12` pisa `L107` dos veces, y **ninguna de las
-cuatro columnas suma el cuerpo que su ultima fila declara con `residuo sin asignar: 0`**. Y el
-parrafo de encima decia *Coinciden al digito: cero solapes*. **Las brutas si coincidian al digito: la
-frontera era cierta y la tabla que publicaste no.**
-
-**EL REMEDIO, Y ES REGLA ESCRITA (`D.41`, *la tabla pegada de su fichero*), NO DOCTRINA NUEVA:**
-
-1. **LA FRONTERA DE CADA CAPITULO SE PEGA ENTERA, FILA POR PIEZA, TAL COMO LA ESCRIBE TU FICHERO
-   BRUTO.** Sin filas agrupadas (`R15 a R23`), sin la marca `parcial`, y con su `<!-- TALLADO:
-   salida=... -->` apuntando al fichero, para que `scripts/tallar_reporte.py` **la reproduzca en vez
-   de citarla** (una tabla `parcial` se despacha como `CITA` sin comprobar, linea `461`: por eso la
-   tuya paso el cierre).
-2. **Si quieres un resumen, va APARTE y marcado `LECTURA`**, nunca en el sitio de la tabla.
-3. **La frase *coincide al digito* solo va debajo de una tabla que el tallado haya reproducido**, y
-   con la linea del cierre que lo dice pegada al lado.
-
-**No es bloqueante** (ninguna guarda de dato esta en rojo, `D.55`; ejemplar `M4.16.a`): **es tu
-primera tarea, y la cumples en cada frontera de esta vuelta.**
-
-**LO DEMAS DE LA `M6` NO ACUMULA Y SE CORRIGE SIN CEREMONIA:** bajo un `$` va **solo lo que el
-comando imprime** (tus tres `informe` iban resumidos y con un *(cero vecinos levantados)* que el
-instrumento no escribe); **quien se relee entero en la muestra lo decide la semilla**, no el numero de
-pasos (`scripts/muestra_fidelidad.py` linea `15`); y **no cites una `TAREA 4` que tu reporte no
-tiene**.
-
-**LO QUE LA `M6` TE FIRMA:** los `12` pasos, `12` TRANSCRIPCION; la muestra `m5` identica; tus tres
-discutibles, sostenidos los tres; tus tres aduanas, reproducidas; y `d103` cumplida al minuto.
+**Y ESCRIBE EL CIERRE ANTES DEL BARRIDO LARGO, NO DESPUES:** en cuanto termines la `TAREA 2`, deja escrita
+en el reporte una seccion de cierre provisional (credito, paradas, lo que queda), y ve reescribiendola al
+cerrar cada tanda. **Si el turno se corta, lo que quede escrito sera verdad.**
 
 ---
 
-## TAREA 2. **`cap_16` Y `cap_17`: LOS DOS ULTIMOS CAPITULOS**
+## TAREA 1. **REGISTROS: EL ACTA M7**
 
-| capitulo | palabras |
-|---|---:|
-| `cap_16` | `830` |
-| `cap_17` | `2673` |
+**Lee la `ACTA M7`** (`docs/loop/ACTA_AUDITOR.md`, al final). Lo que te toca:
 
-**Tu borde izquierdo es `cap_15`**, leido entero en cero en tu vuelta `5` (`2.a`) y firmado por la
-`ACTA M6` `M6.4`; su firma en `config/frentes.json` la escribe la sesion, no tu.
-
-**Por cada capitulo:**
-
-1. **LA FRONTERA, fila por pieza contra el fichero, ENTERA** (`TAREA 1`): numeros de linea y
-   palabras, cero solapes y cero lineas sin cubrir, tallada contra su fichero bruto.
-2. **Los candidatos que de**, cada uno con su `python forja.py informe` **corrido despues de escribir
-   la ficha y con su salida GUARDADA en un fichero antes de seguir**; **no toques una ficha despues de
-   su aduana sin volver a correrla** (`d103`). Cada uno con su `UNIDAD DE ORIGEN`.
-3. **`PASOS INVENTADOS POR CAPITULO`, una fila por capitulo**; si da cero, `SIN SUPERFICIE`, y **un
-   capitulo que no da nodo se firma LEYENDOLO ENTERO**.
-4. **La muestra de fidelidad con la semilla de esta vuelta:**
-
-       python scripts/muestra_fidelidad.py --libro marquet_turn_the_ship --capitulos cap_16,cap_17 --semilla m6
-
-> **Si un capitulo pasa del `10` por ciento, se relee entero antes de seguir.**
+- **`REPORTE` BAJA de `2 de 3` a `0 de 3`** (`M7.10`): tu tanda sale limpia de la especie que acumula. **La
+  adjudicacion va contra la lectura que te costaba la parada, y lo que la sostiene es que tu cabecera dijo
+  `PENDIENTE` y no prometio nada** (`M7.8`). **Una cabecera que diga `CERRADA` sobre una tarea a medias SI
+  acumula, y con `0 de 3` no te para, pero te sube.**
+- **EL REMEDIO DE `M6.9.a` QUEDA CUMPLIDO Y MEDIDO POR MUTACION** (`M7.3`): tus dos fronteras son las brutas y
+  el tallado las muerde. **Asi se hace.**
+- **LO QUE SE CAYO Y NO ACUMULA** (`M7.7`): prometiste un `cerrar_reporte.py` *al cierre (`C.1`)* que no
+  existio, y tu `LECTURA` de `cap_16` pone `R3` como residuo y `R6` y `R7` en dos clases a la vez. **No
+  prometas una seccion que no has escrito.**
+- **Tu discutible se sostiene; `cap_16` y `cap_17` estan firmados en cero** (`M7.4`, `M7.5`). **La firma en
+  `config/frentes.json` la pide el reporte a la sesion: tu no la escribes.**
 
 ---
 
-## TAREA 3. **`d104`: EL BARRIDO DE LA BANDEJA ENTERA, AL CERRAR EL LOTE**
+## TAREA 2. **`d098`: EL PASO 1 DE `ceder_control_reforzar_competencia_claridad`**
 
-**Cuando la `TAREA 2` haya escrito sus fichas, y no antes**, la aduana se vuelve a correr sobre **cada
-ficha de la bandeja de este libro** contra su texto de hoy, uno a uno:
+`d098` (`ACTA M3` `M3.2`, remedio `4` de la `ACTA M2`): *el paso 1 de
+`ceder_control_reforzar_competencia_claridad` se reescribe o se retira antes de que ese nodo entre al
+grafo.* **La cosecha de este libro es la siguiente parada: vence ahora.**
 
-    python forja.py informe cuarentena/marquet_turn_the_ship/<ficha>.json > .v6m/aduana/<ficha>.txt
+1. **Lee el remedio `4` de la `ACTA M2`** (`docs/loop/archivo/marquet_turn_the_ship/ACTA_AUDITOR_frente_hasta_M2.md`) y el paso contra su
+   linea del libro.
+2. **Reescribelo con cita literal en su linea, o retiralo**, y dilo con la linea delante (`D.30`).
+3. **VA ANTES DEL BARRIDO, Y ES A PROPOSITO** (`d103`): cambiar una ficha cambia sus vecindades con todas, asi
+   que **ninguna aduana de la bandeja se corre antes de que esta ficha quede escrita**.
+4. Paga: `python scripts/deuda.py --pagar d098 --vuelta 7 --como "..."`.
 
-**SU RELOJ, MEDIDO Y NO SUPUESTO (`ACTA M6` `M6.7`):** **un solo candidato contra la poblacion de `479` tarda entre `690` y `1198` s**, tres corridos en
-paralelo por tu auditor (el de `8` pasos, el mas lento). **LECTURA de tu auditor, no medida:** si el
-coste crece con los candidatos, una sola corrida sobre `20` o mas **no cabe en un turno**. **Una corrida con los `20`
-candidatos de hoy mas los de tu `TAREA 2` NO esta medida por nadie.** Asi que:
-
-- **PRIMERO las aduanas de tus candidatos nuevos** (`TAREA 2`), que son las que no puedes dejar;
-- **DESPUES, el barrido por tandas de tres informes individuales en paralelo**, cada uno a su
-  fichero en `.v6m/aduana/`, **cronometrado, y cada tanda RECOGIDA ENTERA antes de lanzar la
-  siguiente**. Una tanda que no te da tiempo a recoger **no se lanza**;
-- **lo que no quepa lo declaras con la lista exacta de fichas sin barrer**, y `d104` queda sin
-  pagar. **Un barrido a medias no paga `d104`, pero si avanza, y la lista dice cuanto.**
-
-**Lo que publicas del barrido:** el saldo (`ENTRARIAN`, `BLOQUEARIAN`, `CAERIAN`, `CHOCAN`), y **por
-cada vecindad que cambie respecto a la cifra que su ficha llevaba**, cual era y cual es. **Cada par en
-banda alta (`0,4` en adelante) lo lees por sus pasos** (`EXTRACTOR.md` `11`). Si lo pagas:
-`python scripts/deuda.py --pagar d104 --vuelta 6 --como "..."`.
+**Si al leerlo el paso resulta estar ya bien, no lo toques: dilo con la cita, y paga `d098` con eso.**
 
 ---
 
-## TAREA 4. **LA CUENTA DEL LIBRO, Y EL CIERRE DE LA EXTRACCION**
+## TAREA 3. **`d104`: EL BARRIDO DE LA BANDEJA ENTERA, CON EL TEXTO FINAL**
 
-**Si `cap_16` y `cap_17` quedan minados**, el libro esta leido entero. Publica **la cuenta del libro,
-contada con un instrumento y con su salida pegada**, una fila por capitulo: `cap_01` a `cap_17`,
-candidatos en bandeja por `UNIDAD DE ORIGEN`, pasos, y los capitulos en cero con la sede que los
-firma. **Y di con la cifra delante si la extraccion de `marquet_turn_the_ship` esta CERRADA.**
+**Las `20` fichas de `cuarentena/marquet_turn_the_ship/`, una por una**, cada una a su fichero:
 
-**Si lo esta, NO cosechas, NO fundes y NO insertas**: eso es de la sesion y del fundador (`D.39`,
-`D.50`, decision del `22` sep punto `4`: *al cerrar Marquet, se cosecha e inserta como septimo libro*).
-**Lo dejas medido para que tu auditor pueda escribir la parada de campaña consumada.**
+    python forja.py informe cuarentena/marquet_turn_the_ship/<ficha>.json > .v7m/aduana/<ficha>.txt
+
+**EL RELOJ, MEDIDO:** tres informes en paralelo tardaron `569`, `808` y `1113` s sobre poblacion `479`
+(`ACTA M7` `M7.9`), y antes `690`, `859` y `1198` (`ACTA M6` `M6.7`). **LECTURA de tu auditor, no medida:**
+veinte en tandas de tres son unas siete tandas de hasta veinte minutos. **Tandas de hasta CINCO en paralelo
+si quieres ir mas rapido, pero la de cinco nadie la ha medido: cronometrala.**
+
+- **Cada tanda se RECOGE ENTERA antes de lanzar la siguiente, y se recoge DENTRO DEL MISMO COMANDO** (un
+  `wait` al final, o un bucle que espere): **nunca lances una tanda y termines el turno.**
+- **Los tres ficheros de `.v6m/aduana/`** (`asignar_responsable`, `acoger_inspectores`, `aplicar_ejercicio`)
+  **se midieron ANTES de `d098`**. Si la `TAREA 2` no cambio ninguna ficha, **puedes reusarlos** diciendolo; si
+  la cambio, **se vuelven a correr** como las demas.
+- **Lo que publicas:** el saldo de las `20` (`ENTRARIAN`, `BLOQUEARIAN`, `CAERIAN`, `CHOCAN`), y **por cada
+  vecindad que cambie respecto a la ultima aduana guardada de esa ficha** (`.vm01/`, `.m2/`, `.m4aud/` a `.m6aud/` y `.v3m/` a `.v6m/`), cual era y cual
+  es. **Bajo `$` va solo lo que el comando imprime.**
+- **Cada par en banda alta (`0,4` en adelante) lo lees por sus pasos** (`EXTRACTOR.md` `11`) y lo marcas
+  discutible si dudas. Ya hay tres esperandote: `acoger_inspectores` contra `tomar_accion_deliberada`
+  (`0.457`), contra `resistir_dar_solucion` (`0.412`) y contra `declarar_intencion` (`0.406`).
+- **Si lo acabas:** `python scripts/deuda.py --pagar d104 --vuelta 7 --como "..."` y `--pagar d103` si
+  ninguna ficha cambio despues de su aduana. **Si no, lista exacta de fichas sin barrer, y `d104` sigue viva.**
+
+---
+
+## TAREA 4. **LA CUENTA DEL LIBRO**
+
+**Contada con un instrumento y con su salida pegada**, una fila por capitulo, `cap_01` a `cap_17`: candidatos
+en bandeja por `UNIDAD DE ORIGEN`, pasos, y los capitulos en cero con la sede que los firma (acta y linea).
+**Y di con la cifra delante si la extraccion de `marquet_turn_the_ship` esta CERRADA.** Hazla **mientras
+corre una tanda de la `TAREA 3`**, no despues: es barata y no toca ninguna ficha.
+
+**Si lo esta, NO cosechas, NO fundes y NO insertas** (`D.39`, `D.50`, decision del `22` sep punto `4`). Lo
+dejas medido para que tu auditor escriba la parada de campaña consumada.
 
 ---
 
@@ -131,18 +109,19 @@ firma. **Y di con la cifra delante si la extraccion de `marquet_turn_the_ship` e
 
 - **NO INSERTAS.** `MODO_INSERCION=cuarentena`.
 - **NO TOCAS LA MAQUINARIA** (`D.45`): `orquestador_forja.sh`, `src/`, `scripts/`, `tests/`, `hooks/`,
-  `esquema/`, **ni `config/`**. Si hace falta una firma, la pides en el reporte.
+  `esquema/`, **ni `config/`**. `d094`, `d095` y `d096` son de maquinaria y **no son tuyas**.
 - **NO ESCRIBES DOCTRINA.** Si hace falta regla nueva, es parada.
-- **NO TOCAS `cuarentena/grove_high_output/` NI `cuarentena/gerber_emyth/`**: son poblacion de tu
-  aduana, no tuya.
+- **NO TOCAS `cuarentena/grove_high_output/` NI `cuarentena/gerber_emyth/`**: son poblacion de tu aduana.
+- **NO TOCAS NINGUNA FICHA salvo la de `d098`.**
 
 ## AL CERRAR
 
-- **Tu tanda**: `python forja.py credito --anotar`, **con `--cae` o `--limpia` en cada especie,
-  coherente con tu tabla.**
+- **Declara la vuelta de saneamiento:** `python scripts/deuda.py --saneamiento --vuelta 7`.
+- **Tu tanda**: `python forja.py credito --anotar`, **con `--cae` o `--limpia` en cada especie, coherente con
+  tu tabla.**
 - **`D.61`**: cada discutible ejecutado o cerrado con su motivo.
-- **Commitea `docs/loop/`, `cuarentena/marquet_turn_the_ship/` y `.v6m/`.**
-- **Mide las condiciones de parada una a una** y publica que las mediste. **No escribas
-  `PARA_ALEXIS.md`**: la parada, si la hay, la escribe tu auditor.
+- **Commitea `docs/loop/`, `cuarentena/marquet_turn_the_ship/` y `.v7m/`.**
+- **Mide las condiciones de parada una a una** y publica que las mediste. **No escribas `PARA_ALEXIS.md`**.
+- **Y ANTES DE TERMINAR, COMPRUEBA QUE NO TIENES NINGUN PROCESO VIVO** y pega la comprobacion.
 
 Cero guiones largos y cero guiones medios. Deja correr el hook. Si algo contradice una regla vigente, paras y lo traes. No adivines.
