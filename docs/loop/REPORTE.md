@@ -57565,3 +57565,54 @@ PUENTE.** Su contenido (la salida y su coste) es transcripcion de L57 y L59 fras
 era el verbo, y el verbo se reescribio. Un lector estricto que los cuente como puente pone `cap_02` en `4`
 de `50`, el `8,0` por ciento, **que sigue por debajo del disparador del `10`**: la conclusion no cambia, la
 cifra si, y por eso va marcada. **Queda EJECUTADO en esta vuelta** (`D.61`): la reescritura ya esta hecha.
+
+# VUELTA 64 DE LA LINEA SERIAL, lote 7 (`grove_high_output`), **CLASE SANEAMIENTO**: `d005`, `d140` y `d141`, los veredictos de Grove escritos y listos, **sin insertar nada**
+
+*Encargo escrito por el auditor al cerrar la `ACTA 62`. Clase impresa por `python scripts/deuda.py --clase 64`.
+**En esta vuelta no se corre `python forja.py insertar` ni una vez** (encargo, punto `0`), y ningun proceso
+mio vive cuando el turno termina.*
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea; si la
+vuelta se corta, lo que siga en `PENDIENTE` es hasta donde se llego.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 62` | PENDIENTE |
+| `T2` | `d005`: fidelidad entera de los seis y sus `VEREDICTOS LISTOS` | PENDIENTE |
+| `T3` | `d140`: los `VEREDICTOS LISTOS` de los nueve BLOQUEARIA, y la relectura conjunta | PENDIENTE |
+| `T4` | `d141`: `ARISTAS POR LECTURA (D.29)` y el orden de los `22` para la `65` | PENDIENTE |
+| `T5` | el cierre: saneamiento declarado, deudas pagadas, `PASOS INVENTADOS`, `D.61`, guardas, censo, commit | PENDIENTE |
+
+## 64.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `loop.log`, `ultimo_auditor.json` y
+`ultimo_extractor.json` del arnes, en `1034222`, gate verde, empujado.
+
+<!-- TALLADO: parcial salida=.v64ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    1034222a775322242f625ae64fd721aca59b78c2
+    2026-09-23T09:38:54-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 346
+    (recortado, entero en .v64ext/apertura.txt)
+    $ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl config/pares_mutuos.jsonl
+        740 bitacora/VEREDICTOS.jsonl
+        346 dataset/nodos.jsonl
+          1 config/pares_mutuos.jsonl
+       1087 total
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    91
+    $ ls procesos/
+    nodos.jsonl.218e43e4.cerrojo
+    nodos.jsonl.679b2259.cerrojo
+    nodos.jsonl.e52fd5d2.cerrojo
+
+**`346`, `740`, `1` y `91`: las cuatro cifras del encargo.** En `procesos/` hay **tres** cerrojos y el
+encargo nombra uno (`679b2259`, el de la `63`). **No toco ninguno** (encargo, punto `0`; `D.44`): esta
+vuelta no inserta, y el primer `insertar` de la `65` los rompe y declara si son huerfanos de este arbol.
+
+**SIN INFORME DE LOTE EN ESTA CORRIDA** (`loop.log`, `INFORME_DE_LOTE vacio`): la vuelta no trae saldo
+de lote y no lo inventa (`EXTRACTOR.md` 12.2).
