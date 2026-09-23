@@ -907,3 +907,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | construir_indicador_tendencia_patron | nombre_largo | El indicador de tendencia: la salida de este mes contra la serie de los anteriores y contra el nivel esperado, que obliga a extrapolar y a explicar la diferencia | castellano | - |
 | 2026-09-23 | construir_indicador_tendencia_patron | otro_idioma | trend indicators | ingles | - |
 | 2026-09-23 | construir_indicador_tendencia_patron | otro_idioma | standard or expected level | ingles | - |
+| 2026-09-23 | construir_grafico_escalonado_pronosticos | nombre_largo | El grafico escalonado: el pronostico de los meses que vienen rehecho cada mes y comparado con los pronosticos anteriores y con el resultado real | castellano | - |
+| 2026-09-23 | construir_grafico_escalonado_pronosticos | otro_idioma | stagger chart | ingles | - |
+| 2026-09-23 | construir_grafico_escalonado_pronosticos | otro_idioma | incoming orders | ingles | - |
