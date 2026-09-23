@@ -58517,3 +58517,16 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `462`; lineas `--vered
 **Arista en cola (`D.29`)**: `detectar_arreglar_fallo_etapa_menor_valor > supervisar_tarea_delegada_etapa_menor_valor`
 
 **La arista a `supervisar_tarea_delegada_etapa_menor_valor` queda EN COLA como manda el encargo** (`D.29`): el hijo es de `cap_04` y sigue en la bandeja. La linea es la de `.v63ext/cmd_02_detectar.sh` (`D65.4`).
+
+### Fila `4`: `dimensionar_inventario_materia_prima_reposicion`, **INSERTADO** en `853.8` s, codigo `0`, commit `a8d856d`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `462`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v65ext/insertar_04_dimensionar_inventario_materia_prima_reposicion.txt`.
+
+<!-- TALLADO: parcial salida=.v65ext/insertar_04_dimensionar_inventario_materia_prima_reposicion.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `preferir_inspeccion_proceso_prueba_destructiva` | similitud_texto | 0.391 | 0.000 | 0.403 | SANO |
+| `detectar_arreglar_fallo_etapa_menor_valor` | similitud_texto | 0.357 | 0.000 | 0.401 | CONTINUA |
+
+**Arista cableada por la aduana en el acto**: `detectar_arreglar_fallo_etapa_menor_valor > dimensionar_inventario_materia_prima_reposicion` (`D64.4`, sostenida en `ACTA 63` `63.3.b`).

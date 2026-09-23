@@ -29,3 +29,7 @@ m = re.search(r'ARISTAS EN COLA, sin cablear: \d+\n((?:    \S+ > \S+\n)+)', t)
 if m:
     print('')
     print('**Arista en cola (`D.29`)**: ' + ', '.join('`%s`' % x.strip() for x in m.group(1).strip().split('\n')))
+cab = re.findall(r'arista madre-hijo cableada[^:]*: (\S+ > \S+)', t)
+if cab:
+    print('')
+    print('**Arista cableada por la aduana en el acto**: ' + ', '.join('`%s`' % x for x in cab))
