@@ -873,3 +873,8 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | rehacer_flujo_paso_limitante_capacidad | otro_idioma | limited capacity | ingles | - |
 | 2026-09-23 | rehacer_flujo_paso_limitante_capacidad | otro_idioma | new limiting step | ingles | - |
 | 2026-09-23 | rehacer_flujo_paso_limitante_capacidad | otro_idioma | time offsets | ingles | - |
+| 2026-09-23 | equilibrar_capacidad_personal_inventario_plazo | nombre_largo | Las cuatro salidas del conflicto irreconciliable, y el intercambio entre capacidad de equipo, mano de obra e inventario | castellano | - |
+| 2026-09-23 | equilibrar_capacidad_personal_inventario_plazo | otro_idioma | trade-offs | ingles | - |
+| 2026-09-23 | equilibrar_capacidad_personal_inventario_plazo | otro_idioma | manpower | ingles | - |
+| 2026-09-23 | equilibrar_capacidad_personal_inventario_plazo | otro_idioma | capital equipment | ingles | - |
+| 2026-09-23 | equilibrar_capacidad_personal_inventario_plazo | otro_idioma | most cost-effective | ingles | - |

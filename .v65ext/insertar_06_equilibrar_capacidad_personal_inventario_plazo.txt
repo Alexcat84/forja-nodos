@@ -1,0 +1,26 @@
+fila 06, equilibrar_capacidad_personal_inventario_plazo, lineas --veredicto: 1
+  --veredicto construir_indicador_tendencia_patron|SANO|Ajenos: el candidato intercambia equipo, personal e inventario contra el plazo de entrega y busca la forma mas rentable (cap_02 L57 a L61); el vecino mide la salida contra el tiempo y contra un patron (cap_03 L89). La senial sale de palabras comunes. ESTE CANDIDATO SALIA ENTRARIA a poblacion 462 y HOY BLOQUEA por la correccion del vecino, que es d031 otra vez: la ficha que se toca mueve la senial de sus vecinos.
+inicio 2026-09-23 13:50:22
+======================================================================
+ADUANA DE INSERCION, candidato 'equilibrar_capacidad_personal_inventario_plazo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 462   (351 del grafo mas 111 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino construir_indicador_tendencia_patron  [Construir el indicador de tendencia midiendo la salida contra el tiempo y contra un patron]
+    levantada por: similitud_texto
+    similitud_texto    0.354 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.421 (umbral 0.60)
+    paso 7 del candidato contra paso 5 de construir_indicador_tendencia_patron
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 352
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-23 14:10:57 | codigo de salida 0 | 1234.7 s
