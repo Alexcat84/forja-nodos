@@ -896,3 +896,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | elegir_indicador_salida_trabajo_administrativo | otro_idioma | work output indicator | ingles | - |
 | 2026-09-23 | elegir_indicador_salida_trabajo_administrativo | otro_idioma | administrative function | ingles | - |
 | 2026-09-23 | elegir_indicador_salida_trabajo_administrativo | otro_idioma | paired counterparts | ingles | - |
+| 2026-09-23 | representar_actividad_caja_negra_ventanas | nombre_largo | La caja negra: entrada, salida y trabajo de cualquier proceso, y las ventanas que se recortan en ella para ver el funcionamiento interno y calcular la salida futura | castellano | - |
+| 2026-09-23 | representar_actividad_caja_negra_ventanas | otro_idioma | black box | ingles | - |
+| 2026-09-23 | representar_actividad_caja_negra_ventanas | otro_idioma | cutting windows | ingles | - |
+| 2026-09-23 | representar_actividad_caja_negra_ventanas | otro_idioma | merchandising | ingles | - |
