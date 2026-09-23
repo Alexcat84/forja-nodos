@@ -1,0 +1,43 @@
+fila 10, elegir_indicador_salida_trabajo_administrativo, lineas --veredicto: 3
+  --veredicto evaluar_directivo_resultados_fortaleza|SANO|Comparten UNA linea: la regla de salida contra actividad con el ejemplo del vendedor, paso 2 del candidato (L35) y paso 1 del vecino, que es de zhuo_manager y la toma de Grove. Por la vara 6.1 sin bascula decide lo que queda fuera: en el candidato, las dos varas, la tabla de seis funciones y las parejas de calidad (pasos 1, 3 a 7); en el vecino, el juicio en dos mitades, resultados y fortaleza, los dos casos que enganan y el tiempo (pasos 3 a 9). Procedimiento propio en los dos lados, y ninguno despliega una linea del otro: no REPITE ni CONTINUA.
+  --veredicto emparejar_indicadores_efecto_contraefecto|CONTINUA|madre=emparejar_indicadores_efecto_contraefecto|El paso 5 del candidato, empareja los indicadores de cantidad con una pareja que insista en la calidad, es el paso 4 de la madre, empareja el indicador con un segundo que mida su contraefecto, aplicado al trabajo administrativo, y el libro los une con sus palabras en L35 (Nowhere can indicators, and paired indicators, be of more help than in administrative work). El hijo anade lo que la madre no tiene: cualquier medida es mejor que ninguna, salida y no actividad, cosa fisica y contable, la tabla de seis funciones y las dos parejas desarrolladas (pasos 1 a 4, 6 y 7). No REPITE: la madre no elige indicadores administrativos, y el hijo no trata el contraefecto de pasarse.
+  --veredicto construir_indicador_tendencia_patron|SANO|El paso 2 del vecino pone de ejemplo de salida los comprobantes tramitados, que es la primera fila de la tabla del paso 4 del candidato, pero el vecino no elige indicador: mide contra el tiempo y contra un patron la salida que ya tengas (L89), y el candidato elige cual medir en una unidad administrativa con sus dos varas y su pareja (L35 a L67). Ninguno usa el procedimiento del otro. VECINO NUEVO de la matriz de los 22, tras las correcciones de las dos fichas.
+inicio 2026-09-23 15:19:03
+======================================================================
+ADUANA DE INSERCION, candidato 'elegir_indicador_salida_trabajo_administrativo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 462   (355 del grafo mas 107 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino evaluar_directivo_resultados_fortaleza  [Evaluar a un directivo por los resultados del equipo y por su fortaleza]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.170 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.766 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de evaluar_directivo_resultados_fortaleza
+
+  vecino emparejar_indicadores_efecto_contraefecto  [Emparejar cada indicador con otro que mida su contraefecto, para no pasarse de frenada]
+    levantada por: similitud_texto
+    similitud_texto    0.394 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.489 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de emparejar_indicadores_efecto_contraefecto
+
+  vecino construir_indicador_tendencia_patron  [Construir el indicador de tendencia midiendo la salida contra el tiempo y contra un patron]
+    levantada por: similitud_texto
+    similitud_texto    0.374 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.403 (umbral 0.60)
+    paso 6 del candidato contra paso 3 de construir_indicador_tendencia_patron
+  arista madre-hijo cableada y escrita RESUELTA: emparejar_indicadores_efecto_contraefecto > elegir_indicador_salida_trabajo_administrativo
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 356
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+======================================================================
+fin 2026-09-23 15:42:43 | codigo de salida 0 | 1420.4 s

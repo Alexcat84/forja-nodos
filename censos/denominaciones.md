@@ -892,3 +892,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | emparejar_indicadores_efecto_contraefecto | otro_idioma | pairing indicators | ingles | - |
 | 2026-09-23 | emparejar_indicadores_efecto_contraefecto | otro_idioma | effect and counter-effect | ingles | - |
 | 2026-09-23 | emparejar_indicadores_efecto_contraefecto | otro_idioma | joint monitoring | ingles | - |
+| 2026-09-23 | elegir_indicador_salida_trabajo_administrativo | nombre_largo | Las dos varas del indicador administrativo: que mida la salida de la unidad y no la actividad, y que sea una cosa fisica y contable, con su pareja de calidad al lado | castellano | - |
+| 2026-09-23 | elegir_indicador_salida_trabajo_administrativo | otro_idioma | work output indicator | ingles | - |
+| 2026-09-23 | elegir_indicador_salida_trabajo_administrativo | otro_idioma | administrative function | ingles | - |
+| 2026-09-23 | elegir_indicador_salida_trabajo_administrativo | otro_idioma | paired counterparts | ingles | - |
