@@ -900,3 +900,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | representar_actividad_caja_negra_ventanas | otro_idioma | black box | ingles | - |
 | 2026-09-23 | representar_actividad_caja_negra_ventanas | otro_idioma | cutting windows | ingles | - |
 | 2026-09-23 | representar_actividad_caja_negra_ventanas | otro_idioma | merchandising | ingles | - |
+| 2026-09-23 | construir_indicador_linealidad_alerta_temprana | nombre_largo | El indicador de linealidad: lo acumulado de verdad contra la recta ideal que lleva a la meta, leido a media carrera | castellano | - |
+| 2026-09-23 | construir_indicador_linealidad_alerta_temprana | otro_idioma | linearity indicator | ingles | - |
+| 2026-09-23 | construir_indicador_linealidad_alerta_temprana | otro_idioma | leading indicators | ingles | - |
+| 2026-09-23 | construir_indicador_linealidad_alerta_temprana | otro_idioma | early warning | ingles | - |
