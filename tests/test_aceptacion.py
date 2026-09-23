@@ -2678,6 +2678,26 @@ class PruebaCensoDeRutas(BaseForja):
         self.assertEqual(len(trozos), 1)
         return trozos[0]
 
+    def test_caso_positivo_los_tres_asientos_llevan_la_regla_del_turno(self):
+        """**TRES ASIENTOS CERRARON SU TURNO ESPERANDO UN TRABAJO DE FONDO** el 23 sep:
+        el extractor de la serial (una insercion), el auditor ciego de la serial (16
+        informes en 0 bytes) y el extractor de marquet (una aduana). Nadie los recogio."""
+        arnes = comun.leer_texto(os.path.join(RAIZ, "orquestador_forja.sh"))
+        self.assertIn('REGLA_DEL_TURNO="TU TURNO ACABA CUANDO TU TRABAJO ACABA.', arnes)
+        for nombre in ("PROMPT_EXTRACTOR_BASE", "PROMPT_APERTURA_CIEGA", "PROMPT_AUDITOR"):
+            encaje = re.search(r'^%s="([^"]+)"' % nombre, arnes, re.M)
+            self.assertIsNotNone(encaje, nombre)
+            self.assertTrue(encaje.group(1).rstrip().endswith("$REGLA_DEL_TURNO"),
+                            "%s no cierra con la regla del turno" % nombre)
+
+    def test_caso_negativo_la_regla_no_prohibe_trabajar_en_paralelo(self):
+        """El auditor ciego lanzo 22 aduanas a la vez Y SE QUEDO VIGILANDOLAS en su
+        turno. Eso esta bien, y una regla que lo prohibiera costaria horas de reloj."""
+        arnes = comun.leer_texto(os.path.join(RAIZ, "orquestador_forja.sh"))
+        regla = re.search(r'^REGLA_DEL_TURNO="([^"]+)"', arnes, re.M).group(1)
+        self.assertIn("Puedes lanzar trabajos de fondo o en paralelo", regla)
+        self.assertIn("NUNCA termines tu turno con uno vivo", regla)
+
     def test_caso_positivo_el_mandato_de_insertar_prohibe_el_segundo_plano(self):
         """**EL EXTRACTOR DE LA VUELTA 63 LANZO SU PRIMERA INSERCION EN SEGUNDO PLANO**
         y cerro su turno esperandola: *Both background jobs are still running; I'll
