@@ -888,3 +888,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | elegir_cinco_indicadores_diarios_fabrica | otro_idioma | sales forecast | ingles | - |
 | 2026-09-23 | elegir_cinco_indicadores_diarios_fabrica | otro_idioma | variance | ingles | - |
 | 2026-09-23 | elegir_cinco_indicadores_diarios_fabrica | otro_idioma | customer complaint log | ingles | - |
+| 2026-09-23 | emparejar_indicadores_efecto_contraefecto | nombre_largo | El par de indicadores: el que empuja y el que avisa de que el empuje se ha pasado, medidos juntos | castellano | - |
+| 2026-09-23 | emparejar_indicadores_efecto_contraefecto | otro_idioma | pairing indicators | ingles | - |
+| 2026-09-23 | emparejar_indicadores_efecto_contraefecto | otro_idioma | effect and counter-effect | ingles | - |
+| 2026-09-23 | emparejar_indicadores_efecto_contraefecto | otro_idioma | joint monitoring | ingles | - |
