@@ -1,0 +1,10 @@
+[BLOQUEARIA] construir_empresa_plantilla_vision_diaria   
+[BLOQUEARIA] dar_valor_constante_cuatro_publicos   
+[BLOQUEARIA] dictar_ritmo_crecimiento_preguntas_escritas   
+[BLOQUEARIA] documentar_trabajo_manual_operaciones   
+[BLOQUEARIA] hacer_trabajo_futuro_imaginar_negocio   
+[BLOQUEARIA] trazar_modelo_negocio_cliente_primero   
+[BLOQUEARIA] unificar_color_forma_vestuario_modelo   
+[ENTRARIA] fingir_prototipo_cinco_mil_replicas   
+[ENTRARIA] interrogar_negocio_cinco_preguntas   
+[ENTRARIA] operar_modelo_gente_destreza_minima   

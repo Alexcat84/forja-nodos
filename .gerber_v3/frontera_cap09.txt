@@ -1,0 +1,15 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_09.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L233.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **47** | el numero del capitulo, el rotulo THE TURN-KEY REVOLUTION y el epigrafe de Fritjof Capra (The Turning Point) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L27 | **155** | la Turn-Key Revolution definida como una forma de hacer negocios capaz de transformar cualquier negocio pequeno de caos a orden | **POSTURA** |
+| `R3` | L28 a L78 | **608** | The Franchise Phenomenon: la historia de Ray Kroc y McDonald's, y las cifras del fenomeno de las franquicias en Estados Unidos | **CASO** |
+| `R4` | L79 a L110 | **312** | Turning the Key: la diferencia entre la franquicia de nombre comercial y la Business Format Franchise, y que el producto real de un negocio es el negocio mismo | **POSTURA** |
+| `R5` | L111 a L172 | **605** | Selling the Business Instead of the Product: Ray Kroc piensa su negocio como el producto y al franquiciado como su cliente mas importante, y el paso a trabajar SOBRE el negocio | **POSTURA y CASO** |
+| `R6` | L173 a L233 | **1118** | el dialogo con Sarah sobre McDonald's como modelo para cualquier pequeno negocio | **CASO** |
+| **el cuerpo entero** | **L8 a L233** | **2845** | **suma de las piezas: 2845** | **residuo sin asignar: 0** |
+
+piezas: 6   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2845   suma 2845   residuo 0

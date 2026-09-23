@@ -1,0 +1,23 @@
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : gerber_emyth
+  semilla  : g4
+  capitulos: cap_13, cap_14
+
+  RELEIDO ENTERO : cap_13
+  POR MUESTRA    : cap_14, 15 pasos cada uno
+
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+  --- cap_14: 9 paso(s) en la muestra
+    responder_8_preguntas_construir_primary_aim    P1   Antes de empezar tu negocio, o antes de volver a el manana, 
+    responder_8_preguntas_construir_primary_aim    P2   Que quiero que se vea mi vida.
+    responder_8_preguntas_construir_primary_aim    P3   Como quiero que sea mi vida dia a dia.
+    responder_8_preguntas_construir_primary_aim    P4   Que me gustaria poder decir que se de verdad en mi vida, sob
+    responder_8_preguntas_construir_primary_aim    P5   Como me gustaria estar con otras personas en mi vida: mi fam
+    responder_8_preguntas_construir_primary_aim    P6   Como me gustaria que la gente pensara de mi.
+    responder_8_preguntas_construir_primary_aim    P7   Que me gustaria estar haciendo dentro de dos anios, dentro d
+    responder_8_preguntas_construir_primary_aim    P8   Que me gustaria aprender especificamente durante mi vida: es
+    responder_8_preguntas_construir_primary_aim    P9   Cuanto dinero voy a necesitar para hacer las cosas que quier
+
+  --- cap_13: ENTERO, 10 paso(s), no hay muestra que elegir

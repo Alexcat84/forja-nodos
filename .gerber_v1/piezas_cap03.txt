@@ -1,0 +1,7 @@
+[
+ ('R1',   8,  19, 'el numero del capitulo, el rotulo `THE ENTREPRENEURIAL MYTH` y el epigrafe de Aldous Huxley', 'RESIDUO: rotulo y epigrafe'),
+ ('R2',  20,  59, 'el mito del emprendedor heroico, su rareza medida contra miles de duenios conocidos, y el emprendedor que solo existio un instante', 'POSTURA'),
+ ('R3',  60, 101, 'The Entrepreneurial Seizure: quien monta un negocio, que hacia antes, y el ataque emprendedor que le sella el destino', 'POSTURA'),
+ ('R4', 102, 149, 'The Fatal Assumption: el trabajo tecnico de un negocio y el negocio que hace ese trabajo son dos cosas distintas, y por que saber el oficio se vuelve el mayor pasivo', 'POSTURA'),
+ ('R5', 150, 233, 'el caso de Sarah y All About Pies: la tienda, la tia que le enseno, la deuda, y el diagnostico de las cuatro fases del ataque emprendedor', 'CASO'),
+]

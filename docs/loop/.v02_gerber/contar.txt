@@ -1,0 +1,12 @@
+construir_empresa_plantilla_vision_diaria       8
+dar_valor_constante_cuatro_publicos             8
+dictar_ritmo_crecimiento_preguntas_escritas     8
+documentar_trabajo_manual_operaciones          10
+fingir_prototipo_cinco_mil_replicas            11
+hacer_trabajo_futuro_imaginar_negocio           7
+interrogar_negocio_cinco_preguntas             10
+operar_modelo_gente_destreza_minima            10
+trazar_modelo_negocio_cliente_primero           9
+unificar_color_forma_vestuario_modelo           8
+TOTAL                                          89
+CANDIDATOS                                     10

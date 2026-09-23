@@ -1,0 +1,11 @@
+$ recuento de la cola de lectura, contado de .gerber_v1/cola_lectura.txt
+
+pares levantados en total      : 21
+  vecino del propio gerber_emyth: 15
+  vecino de fuera del libro     : 6
+
+los de fuera, uno a uno y sin repetir:
+  ceder_control_reforzar_competencia_claridad   (3 vez/veces)
+  descubrir_motivacion_sentido_persona   (1 vez/veces)
+  encargar_meta_especifica_dejar_libre_metodo   (1 vez/veces)
+  recorrer_trece_elementos_proceso_evaluacion_formal   (1 vez/veces)

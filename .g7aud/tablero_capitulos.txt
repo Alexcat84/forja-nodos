@@ -1,0 +1,6 @@
+clave            : gerber_emyth
+estado           : EN CURSO
+ultimo_capitulo  : cap_19
+capitulos_minados: ['cap_04', 'cap_05', 'cap_06', 'cap_07', 'cap_08', 'cap_09', 'cap_10', 'cap_11', 'cap_12', 'cap_13', 'cap_14', 'cap_15', 'cap_19']
+cuantos          : 13
+de cap_04 a cap_19, los que el tablero NO lista: ['cap_16', 'cap_17', 'cap_18']

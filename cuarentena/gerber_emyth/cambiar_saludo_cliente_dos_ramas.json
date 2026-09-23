@@ -1,0 +1,37 @@
+{
+  "id": "cambiar_saludo_cliente_dos_ramas",
+  "titulo": "Cambiar el saludo del vendedor por una pregunta con dos ramas de respuesta ya escritas",
+  "denominaciones": {
+    "nombre_largo": "La primera Innovacion de ejemplo del capitulo del proceso de desarrollo del negocio: sustituir Hi, may I help you? por Hi, have you been in here before?, con la respuesta exacta preparada para cuando el cliente dice que si y para cuando dice que no",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "Hi, may I help you?"},
+      {"idioma": "ingles", "termino": "Hi, have you been in here before?"}
+    ]
+  },
+  "condiciones_activacion": "Cuando un cliente entra a tu negocio al por menor y tu vendedor va a saludarlo, en vez de usar el saludo habitual que invita a la respuesta automatica no gracias, solo estoy mirando.",
+  "entregable_esperado": "El guion exacto del saludo nuevo, con sus dos ramas de respuesta ya escritas segun el cliente diga que si o que no, y el programa especial que las dos ramas necesitan tener listo de antemano.",
+  "pasos_accionables": [
+    "En vez de preguntar Hi, may I help you?, pregunta exactamente Hi, have you been in here before?",
+    "Si el cliente responde que si, dile exactamente: Great. We've created a special new program for people who have shopped here before. Let me take just a minute to tell you about it.",
+    "Si el cliente responde que no, dile exactamente: Great, we've created a special new program for people who haven't shopped here before. Let me take just a minute to tell you about it.",
+    "Ten creado de antemano ese programa especial nuevo del que hablas en cualquiera de las dos ramas: sin el programa listo, ninguna de las dos respuestas tiene de que hablar."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_12.md, unidad Cap. 10, titulo textual The Business Development Process. Sale de la PIEZA R3b de la frontera fina publicada en la vuelta 4 (.gerber_v4/frontera_cap12.txt), L51 a L58, 128 palabras. Es el primero de los tres ejemplos THE INNOVATION que la vuelta 3 leyo de golpe como R3 (L22 a L83, POSTURA y CASO) y que d101 (ACTA G3 3.1) devolvio a leer pieza por pieza. POR QUE ES PROCEDIMIENTO Y NO CASO, con D.27 y 9.1 delante: el parrafo no cuenta una anecdota de un cliente ajeno, da la FRASE EXACTA que hay que decir y sus DOS RAMAS de respuesta, tambien con las palabras exactas, y una condicion previa (tener el programa creado). Es un guion que el lector ejecuta tal cual, no un ejemplo ilustrativo: no hay verbo de adecuacion en el sitio del criterio, hay comillas con las palabras literales. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 4 pasos, 4 TRANSCRIPCION, 0 PUENTE, con su cita pegada en .gerber_v4/cita_cap12_L51.txt (D.35). Las palabras se dejan en ingles y entre comillas porque son el objeto mismo del paso: traducirlas fabricaria una frase nueva que el libro no probo, y eso si seria PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: el libro no dice cada cuanto se repite el saludo ni quien de tu equipo lo dice (mas alla de el vendedor generico del texto), asi que no invento destinatario ni periodo. LA CIFRA DEL RESULTADO (10 a 16 por ciento de aumento de ventas casi inmediato, segun la experiencia de clientes retail de los autores) NO es parte de los pasos: es un resultado atribuido y va en atribuciones, pieza R3c de la misma frontera fina (L59 a L62), porque describe lo que paso al aplicar el paso, no un paso mas.",
+  "atribuciones": [
+    {
+      "cifra": "por hacer solo este cambio de palabras, las ventas subieron entre 10 y 16 por ciento casi de inmediato",
+      "autor": "clientes de venta al detalle de E-Myth Worldwide, citados por Michael E. Gerber",
+      "fuente": "gerber_emyth",
+      "fecha_corte": "2007, que es la edicion del libro que lo cita. El libro no fecha el episodio ni nombra el negocio concreto, asi que esta es la unica fecha que se puede firmar"
+    }
+  ],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-22"}
+  ]
+}

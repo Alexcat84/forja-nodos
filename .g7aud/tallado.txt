@@ -1,0 +1,3 @@
+      linea 60275 de docs/loop/REPORTE.md
+
+TALLADO VERDE: las 172 tabla(s) comprobables son las de su instrumento, celda a celda.

@@ -1,0 +1,17 @@
+construir_empresa_plantilla_vision_diaria      cap_08     8 pasos
+dar_valor_constante_cuatro_publicos            cap_11     8 pasos
+dictar_ritmo_crecimiento_preguntas_escritas    cap_07     8 pasos
+documentar_trabajo_manual_operaciones          cap_11    10 pasos
+fingir_prototipo_cinco_mil_replicas            cap_11    11 pasos
+hacer_trabajo_futuro_imaginar_negocio          cap_04     7 pasos
+interrogar_negocio_cinco_preguntas             cap_11    10 pasos
+operar_modelo_gente_destreza_minima            cap_11    10 pasos
+trazar_modelo_negocio_cliente_primero          cap_08     9 pasos
+unificar_color_forma_vestuario_modelo          cap_11     8 pasos
+
+unidad    nodos  pasos
+cap_04        1      7
+cap_07        1      8
+cap_08        2     17
+cap_11        6     57
+TOTAL        10     89

@@ -1,0 +1,34 @@
+{
+  "id": "responder_8_preguntas_construir_primary_aim",
+  "titulo": "Responder las ocho preguntas que el libro enumera para construir tu Primary Aim",
+  "denominaciones": {
+    "nombre_largo": "El cuestionario en vinetas del capitulo Your Primary Aim: ocho preguntas para preguntarte antes de empezar tu negocio, o antes de volver a el manana",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "Primary Aim"}
+    ]
+  },
+  "condiciones_activacion": "Antes de empezar tu negocio, o antes de volver a el manana, cuando necesitas construir tu Primary Aim.",
+  "entregable_esperado": "Las respuestas a las ocho preguntas, que se convierten en los estandares con que vas a medir el progreso de tu vida.",
+  "pasos_accionables": [
+    "Antes de empezar tu negocio, o antes de volver a el manana, preguntate lo siguiente.",
+    "Que quiero que se vea mi vida.",
+    "Como quiero que sea mi vida dia a dia.",
+    "Que me gustaria poder decir que se de verdad en mi vida, sobre mi vida.",
+    "Como me gustaria estar con otras personas en mi vida: mi familia, mis amigos, mis socios de negocio, mis clientes, mis empleados, mi comunidad.",
+    "Como me gustaria que la gente pensara de mi.",
+    "Que me gustaria estar haciendo dentro de dos anios, dentro de diez, dentro de veinte, cuando mi vida llegue a su fin.",
+    "Que me gustaria aprender especificamente durante mi vida: espiritual, fisica, financiera, tecnica e intelectualmente, y tambien sobre las relaciones.",
+    "Cuanto dinero voy a necesitar para hacer las cosas que quiero hacer, y para cuando lo voy a necesitar."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_14.md, unidad Cap. 12, titulo textual Your Primary Aim. Sale de la PIEZA R5 de la frontera publicada en esta misma vuelta (.gerber_v4/frontera_cap14.txt), L117 a L136, 180 palabras. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 y 9.1 delante: el libro trae su propio inventario de OBJETOS DE TRABAJO (las ocho preguntas) en formato de vineta, introducido con un imperativo explicito (ask yourself the following questions), sin adjetivo de adecuacion en el sitio del criterio. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE, con su cita pegada en .gerber_v4/cita_cap14_L117.txt (D.35). LA REPETICION INTERNA QUE NO SE FUNDE, y se declara por que (P.19): L27 del mismo capitulo tambien trae preguntas (What do I value most, what kind of life do I want, etc.), pero ahi el libro las embebe en un parrafo corrido sin vineta ni el imperativo the following questions, como preparacion retorica de por que el Primary Aim importa; no es el mismo objeto que L117 a L133, es un anticipo mas corto y sin formato de lista, y por eso se queda como pieza R2 (POSTURA) sin fundirse aqui: fundir dos preguntarios de contenido distinto fabricaria un tercer cuestionario que ninguno de los dos parrafos escribe. DISCUTIBLE DECLARADO (ver reporte de esta vuelta, marcado antes de saber si acierto): la frase que cierra la pieza, these are just a few of the questions you might ask yourself, suaviza la vinculante del listado (no dice hazlas todas, dice son solo algunas de las que podrias hacerte). Lei esto como que la ACCION de preguntarse estas ocho es igual de mandada (ask yourself the following questions es imperativo), y que la suavizacion es sobre si HAY MAS preguntas posibles, no sobre si estas ocho son opcionales; si el auditor lee la suavizacion como un adjetivo de adecuacion que tumba el inventario entero (como el remedios adecuados de manual 9.1), este candidato caeria entero. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: el libro no dice que hacer con las respuestas mas alla de que se vuelven los estandares para medir el progreso (pieza R6, POSTURA, no se transcribe como paso porque no es una accion mas, es lo que pasa despues); tampoco invento un orden distinto al que el libro ya trae.",
+  "atribuciones": [],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-22"}
+  ]
+}

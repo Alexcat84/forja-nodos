@@ -1,0 +1,13 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_02.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L99.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L10 | **1** | el rotulo INTRODUCTION | **RESIDUO: rotulo** |
+| `R2` | L11 a L16 | **17** | el epigrafe de Joseph Heller (Something Happened), sobre alguien enloqueciendo despacio dentro de todo negocio | **RESIDUO: epigrafe** |
+| `R3` | L17 a L94 | **1183** | la introduccion del libro: la estadistica de fracaso de los pequenos negocios en Estados Unidos, el anuncio de las cuatro ideas del libro (Idea 1 el E-Myth, Idea 2 la Turn-Key Revolution, Idea 3 el Business Development Process, Idea 4 su aplicacion sistematica), y la tesis de que el negocio es un reflejo de quien es su dueno; las cuatro ideas se nombran como el CONTENIDO del libro entero, no como pasos que el lector ejecute aqui, y no traen inventario propio de medios, etapas u objetos de trabajo en este tramo | **POSTURA: anuncio tematico del libro, metas nombradas sin inventario de medios** |
+| `R4` | L95 a L99 | **11** | el separador PART I, The E-Myth and American Small Business | **RESIDUO: separador de parte** |
+| **el cuerpo entero** | **L8 a L99** | **1212** | **suma de las piezas: 1212** | **residuo sin asignar: 0** |
+
+piezas: 4   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1212   suma 1212   residuo 0

@@ -1,0 +1,16 @@
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : gerber_emyth
+  semilla  : g9
+  capitulos: cap_01, cap_02, cap_03
+
+  RELEIDO ENTERO : cap_02
+  POR MUESTRA    : cap_01, cap_03, 15 pasos cada uno
+
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+  --- cap_01: 0 paso(s) en la muestra
+
+  --- cap_03: 0 paso(s) en la muestra
+
+  --- cap_02: ENTERO, 0 paso(s), no hay muestra que elegir

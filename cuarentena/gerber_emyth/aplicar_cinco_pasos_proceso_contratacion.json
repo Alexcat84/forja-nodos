@@ -1,0 +1,38 @@
+{
+  "id": "aplicar_cinco_pasos_proceso_contratacion",
+  "titulo": "Aplicar los cinco componentes del proceso de contratacion que el libro enumera para comunicar tu idea desde el primer dia",
+  "denominaciones": {
+    "nombre_largo": "El proceso de contratacion como el primer y mas esencial medio para comunicar la idea del negocio a la gente nueva",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "hiring process"},
+      {"idioma": "ingles", "termino": "scripted presentation"}
+    ]
+  },
+  "condiciones_activacion": "Cuando vas a contratar gente nueva y quieres que el proceso mismo, desde la primera reunion hasta el primer dia de entrenamiento, sea el primer medio con el que le comunicas la idea de tu negocio.",
+  "entregable_esperado": "Un proceso de contratacion con sus cinco componentes completos: la presentacion guionizada en grupo, la reunion individual, la notificacion al elegido, la notificacion a los no elegidos, y el primer dia de entrenamiento con sus siete actividades.",
+  "pasos_accionables": [
+    "Disena una presentacion guionizada que comunique la idea de tu negocio en una reunion grupal a todos los aspirantes al mismo tiempo, describiendo la idea, la historia y la experiencia del negocio implementandola, y los atributos que exige el puesto.",
+    "Reunete con cada aspirante de forma individual para hablar de sus reacciones y sentimientos sobre la idea, su trasfondo y su experiencia, y pregunta por que se cree apropiado para el papel que el puesto juega en implementar esa idea.",
+    "Notifica por telefono al candidato elegido, otra vez con una presentacion guionizada.",
+    "Notifica a los aspirantes no elegidos agradeciendo su interes, con una carta estandar firmada por quien entrevisto.",
+    "Dedica el primer dia de entrenamiento a las siguientes actividades, tanto para ti como para el nuevo empleado.",
+    "Revisa con el la idea del negocio.",
+    "Resume el sistema con el que todo el negocio hace realidad esa idea.",
+    "Llevalo de recorrido por las instalaciones, resaltando a la gente trabajando y los sistemas funcionando para mostrar la interdependencia entre los sistemas y la gente.",
+    "Responde clara y completamente todas sus preguntas.",
+    "Entregale su uniforme y su Manual de Operaciones.",
+    "Revisa con el su Manual de Operaciones, incluyendo el Objetivo Estrategico, la Organizational Strategy y el Position Contract de su propio puesto.",
+    "Completa con el los papeles de empleo."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_18.md, unidad Cap. 16, titulo textual Your People Strategy. Sale de la PIEZA C3 de la frontera publicada en esta misma vuelta (.gerber_v7/frontera_cap18.txt), L247 a L272, 266 palabras, bajo el subtitulo Playing the Game. ES UN CASO, Y SE TRATA COMO TAL (manual seccion 3.5, EXTRACTOR.md 9): el proceso lo narra el Manager del hotel Venetia (as the Manager explained it to me), pero la doctrina no es del hotel: es un inventario propio del libro, numerado 1 a 5 en el propio texto (L249 a L257), con el quinto componente desplegado en siete actividades en vineta (L259 a L269). Sigo el mismo patron que documentar_trabajo_manual_operaciones (cap_11) y aplicar_ocho_reglas_juego_personas (esta misma vuelta): UN SOLO NODO con el inventario entero transcrito, no cinco nodos mas cabeza, porque cada componente es un paso del mismo procedimiento y no un capitulo aparte. LA SENAL BARATA DE QUE SE HIZO MAL (manual 3.5): el entregable no lleva ningun dato del caso; los pasos no nombran al hotel Venetia, al Manager ni al Boss, solo el procedimiento generico de contratar. NO ES DUPLICADO DE documentar_trabajo_manual_operaciones (cap_11, vuelta 1, vivo en dataset/nodos.jsonl): ese nodo procedimenta los tres contenidos que el Manual de Operaciones tiene que traer; aqui el Manual de Operaciones aparece solo como UN objeto que se entrega y se revisa dentro del primer dia de entrenamiento (pasos 10 y 11), sin repetir sus tres contenidos, que es exactamente la frontera que d110 (G7.2) establecio entre el nombre generico del objeto y su contenido especifico. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 12 pasos, 12 TRANSCRIPCION, 0 PUENTE, cita pegada en .gerber_v7/cita_cap18_L247_L272.txt (D.35). No invento destinatario ni responsable ni periodo: el libro no dice cuando se hace cada notificacion (salvo el primer dia de entrenamiento, que si trae su propio nombre) y este candidato no completa esa ausencia.",
+  "atribuciones": [],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-21"}
+  ]
+}

@@ -1,0 +1,13 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_05.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L149.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **39** | el numero del capitulo, el rotulo `INFANCY: THE TECHNICIAN PHASE` y el epigrafe de e. e. cummings | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L31 | **148** | los negocios crecen y cambian, lo que el tecnico quiere es lo contrario, y las tres fases nombradas: Infancy, Adolescence y Maturity | **POSTURA** |
+| `R3` | L32 a L89 | **862** | la Infancia contada entera: el duenio y el negocio son lo mismo, el malabarista que empieza a soltar bolas, y la Infancia que acaba cuando el duenio ve que aquello no puede seguir asi | **POSTURA y CASO** |
+| `R4` | L90 a L149 | **1351** | el dialogo con Sarah: nada malo en ser tecnico salvo si ademas posee el negocio, el proposito de montar un negocio, y el paso a la Adolescencia | **CASO** |
+| **el cuerpo entero** | **L8 a L149** | **2400** | **suma de las piezas: 2400** | **residuo sin asignar: 0** |
+
+piezas: 4   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2400   suma 2400   residuo 0

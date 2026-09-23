@@ -1,0 +1,6 @@
+echo '$ python forja.py gate';               python forja.py gate            | sed 's/^/  /'
+echo '$ python forja.py guiones';            python forja.py guiones         | sed 's/^/  /'
+echo '$ python forja.py resolutor';          python forja.py resolutor       | sed 's/^/  /'
+echo '$ python tests/test_aceptacion.py';    python tests/test_aceptacion.py 2>&1 | tail -3 | sed 's/^/  /'
+echo '$ python scripts/tallar_reporte.py --estricto'; python scripts/tallar_reporte.py --estricto 2>&1 | grep -E "^TALLADO" | sed 's/^/  /'
+echo '$ python scripts/censar_rutas.py';     python scripts/censar_rutas.py  2>&1 | grep -E "^CENSO"  | sed 's/^/  /'

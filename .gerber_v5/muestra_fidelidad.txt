@@ -1,0 +1,21 @@
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : gerber_emyth
+  semilla  : g5
+  capitulos: cap_15, cap_16, cap_17
+
+  RELEIDO ENTERO : cap_17
+  POR MUESTRA    : cap_15, cap_16, 15 pasos cada uno
+
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+  --- cap_15: 5 paso(s) en la muestra
+    responder_4_preguntas_estandares_objetivo_estr P1   No hay un numero especifico de estandares en tu Objetivo Est
+    responder_4_preguntas_estandares_objetivo_estr P2   Cuando va a estar terminado tu Prototipo: en dos anios, en t
+    responder_4_preguntas_estandares_objetivo_estr P3   Donde vas a hacer negocio: localmente, regionalmente, nacion
+    responder_4_preguntas_estandares_objetivo_estr P4   Como vas a hacer negocio: al detalle, al por mayor, o una co
+    responder_4_preguntas_estandares_objetivo_estr P5   Que estandares vas a exigir en cuanto a reportes, limpieza, 
+
+  --- cap_16: 0 paso(s) en la muestra
+
+  --- cap_17: ENTERO, 0 paso(s), no hay muestra que elegir

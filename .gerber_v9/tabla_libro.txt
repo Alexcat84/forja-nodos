@@ -1,0 +1,26 @@
+| capitulo | estado | candidatos | firma |
+|---|---|---:|---|
+| `cap_01` | MINADO EN CERO | 0 | vuelta 9, este reporte (G9.2/G9.3/G9.4), sin acta todavia |
+| `cap_02` | MINADO EN CERO | 0 | vuelta 9, este reporte (G9.2/G9.3/G9.4), sin acta todavia |
+| `cap_03` | MINADO EN CERO | 0 | vuelta 9, este reporte (G9.2/G9.3/G9.4), sin acta todavia |
+| `cap_04` | MINADO CON CANDIDATOS | 1 | TABLERO.jsonl, grafo+bandejas |
+| `cap_05` | MINADO EN CERO | 0 | ACTA G2 (cap_05 y cap_06), ACTA G3 3.5 (cap_09 y cap_10), ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida) y ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth |
+| `cap_06` | MINADO EN CERO | 0 | ACTA G2 (cap_05 y cap_06), ACTA G3 3.5 (cap_09 y cap_10), ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida) y ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth |
+| `cap_07` | MINADO CON CANDIDATOS | 1 | TABLERO.jsonl, grafo+bandejas |
+| `cap_08` | MINADO CON CANDIDATOS | 2 | TABLERO.jsonl, grafo+bandejas |
+| `cap_09` | MINADO EN CERO | 0 | ACTA G2 (cap_05 y cap_06), ACTA G3 3.5 (cap_09 y cap_10), ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida) y ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth |
+| `cap_10` | MINADO EN CERO | 0 | ACTA G2 (cap_05 y cap_06), ACTA G3 3.5 (cap_09 y cap_10), ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida) y ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth |
+| `cap_11` | MINADO CON CANDIDATOS | 6 | TABLERO.jsonl, grafo+bandejas |
+| `cap_12` | MINADO CON CANDIDATOS | 3 | TABLERO.jsonl, grafo+bandejas |
+| `cap_13` | MINADO CON CANDIDATOS | 1 | TABLERO.jsonl, grafo+bandejas |
+| `cap_14` | MINADO CON CANDIDATOS | 1 | TABLERO.jsonl, grafo+bandejas |
+| `cap_15` | MINADO CON CANDIDATOS | 1 | TABLERO.jsonl, grafo+bandejas |
+| `cap_16` | MINADO EN CERO | 0 | ACTA G2 (cap_05 y cap_06), ACTA G3 3.5 (cap_09 y cap_10), ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida) y ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth |
+| `cap_17` | MINADO EN CERO | 0 | ACTA G2 (cap_05 y cap_06), ACTA G3 3.5 (cap_09 y cap_10), ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida) y ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth |
+| `cap_18` | MINADO CON CANDIDATOS | 3 | TABLERO.jsonl, grafo+bandejas |
+| `cap_19` | MINADO CON CANDIDATOS | 3 | TABLERO.jsonl, grafo+bandejas |
+| `cap_20` | MINADO EN CERO | 0 | ACTA G2 (cap_05 y cap_06), ACTA G3 3.5 (cap_09 y cap_10), ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida) y ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth |
+| `cap_21` | MINADO EN CERO | 0 | ACTA G2 (cap_05 y cap_06), ACTA G3 3.5 (cap_09 y cap_10), ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida) y ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth |
+| `cap_22` | MINADO EN CERO | 0 | ACTA G2 (cap_05 y cap_06), ACTA G3 3.5 (cap_09 y cap_10), ACTA G5 (cap_16 y cap_17, SIN SUPERFICIE con su razon leida) y ACTA G8 3.2 (cap_20 la carta a Sarah mas los agradecimientos, cap_21 el Epilogue, cap_22 el Afterword mas el back matter). Frente gerber_emyth, rama extraccion-gerber_emyth |
+
+total capitulos: 22   minados: 22   candidatos en bandeja: 22

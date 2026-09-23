@@ -1,0 +1,12 @@
+vecinos DENTRO de la bandeja de este frente : 16
+vecinos FUERA de la bandeja de este frente  : 6
+vecinos en total                            : 22
+candidatos SIN NI UN VECINO                 : 3
+    fingir_prototipo_cinco_mil_replicas
+    interrogar_negocio_cinco_preguntas
+    operar_modelo_gente_destreza_minima
+ids ajenos distintos                        : 4
+    ceder_control_reforzar_competencia_claridad
+    descubrir_motivacion_sentido_persona
+    encargar_meta_especifica_dejar_libre_metodo
+    recorrer_trece_elementos_proceso_evaluacion_formal

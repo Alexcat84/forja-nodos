@@ -1,0 +1,14 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_03.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L233.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L18 | **22** | el numero del capitulo, el separador, el titulo THE ENTREPRENEURIAL MYTH y el epigrafe de Aldous Huxley sobre embriagarse de trabajo para no verse como se es | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L19 a L60 | **332** | el mito del emprendedor: la imagen heroica del emprendedor, y como en la experiencia del autor esa persona real casi nunca se sostiene, sino que el emprendedor solo existio un instante fugaz y luego desaparecio, dejando una mala interpretacion de quien empieza negocios y por que; cero pasos, cero inventario propio | **POSTURA: diagnostico del mito, sin inventario propio** |
+| `R3` | L61 a L102 | **400** | The Entrepreneurial Seizure: describe, en segunda persona, el momento en que un tecnico que trabaja para otro sufre un ataque de fiebre emprendedora y decide independizarse; es narracion de un proceso psicologico que le ocurre al lector, no una lista de pasos que el lector ejecute ni un inventario de medios, etapas u objetos de trabajo | **POSTURA: narracion del ataque emprendedor, sin inventario propio** |
+| `R4` | L103 a L150 | **387** | The Fatal Assumption: expone la Fatal Assumption (creer que saber el trabajo tecnico de un negocio es saber dirigir un negocio que hace ese trabajo) y enumera oficios (carpintero, barbero, redactor tecnico, peluquera, ingeniero, musico) que se convierten en negocios bajo esa falacia; los oficios listados son EJEMPLOS del diagnostico, no un inventario de medios o etapas de un procedimiento que el lector ejecute | **POSTURA: diagnostico de la Fatal Assumption, ejemplos sin procedimiento** |
+| `R5` | L151 a L233 | **1061** | la historia de Sarah y su negocio All About Pies: el relato de su jornada de tres de la manana a las nueve o diez de la noche, su llanto, el origen de su amor por hornear con su tia, y el cierre en que el autor le dice que es hora de aprender todo sobre pies otra vez; en L225 nombra cuatro etapas (exhilaration, terror, exhaustion, despair) que todo tecnico con Entrepreneurial Seizure experimenta, pero son etapas de una experiencia psicologica narrada en tercera persona, no medios, etapas u objetos de trabajo que el lector deba revisar o ejecutar; cero inventario propio procedimental | **POSTURA: caso narrado de Sarah, con etapas de experiencia y no de procedimiento** |
+| **el cuerpo entero** | **L8 a L233** | **2202** | **suma de las piezas: 2202** | **residuo sin asignar: 0** |
+
+piezas: 5   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2202   suma 2202   residuo 0

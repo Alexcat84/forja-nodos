@@ -1,0 +1,7 @@
+[
+ ('R1',   8,  19, 'el numero del capitulo, el rotulo `THE FRANCHISE PROTOTYPE` y el epigrafe de Robert M. Pirsig', 'RESIDUO: rotulo y epigrafe'),
+ ('R2',  20,  41, 'el Prototipo como modelo de trabajo del sueno y banco de pruebas de las hipotesis, y el sistema que resuelve lo que la gente sola no resuelve', 'POSTURA'),
+ ('R3',  42,  79, 'el detalle controlado en el McDonalds de Ray Kroc: los siete minutos de las patatas, los diez de las hamburguesas, los pepinillos colocados a mano, los sesenta segundos de servicio y la Hamburger U', 'CASO'),
+ ('R4',  80, 119, 'el Prototipo como sitio donde se concibe y se perfecciona el sistema, lo que da a cada una de las tres personalidades, y el Sistema Operativo Propietario que hay detras de todo negocio extraordinario', 'POSTURA'),
+ ('R5', 120, 145, 'las preguntas de cierre sobre como construir el tuyo, y Sarah que ya tiene el negocio y solo necesita aprender', 'RESIDUO: bisagra hacia el `Cap. 9`'),
+]

@@ -1,0 +1,15 @@
+AVISO: cero celdas tecleadas. Cada linea es la que sed -n imprime de fuentes/gerber_emyth/cap_11.md.
+UNICA TRANSFORMACION DECLARADA: 3 guion(es) largo(s) U+2014 sustituido(s) por coma mas
+espacio y 0 guion(es) medio(s) U+2013 por guion corto, porque el barrido de estilo de
+esta casa tumba los dos. El resto es byte a byte el del libro.
+
+85: 2. The Model Will Be Operated by People with the Lowest Possible Level of Skill
+87: Yes, I said lowest possible level of skill. Because if your model depends on highly skilled people, it’s going to be impossible to replicate. Such people are at a premium in the marketplace. They’re also expensive, thus raising the price you will have to charge for your product or service.
+89: By lowest possible level of skill I mean the lowest possible level necessary to fulfill the functions for which each is intended. Obviously, if yours is a legal firm, you must have attorneys. If yours is a medical firm, you must have physicians. But you don’t need to hire brilliant attorneys or brilliant physicians. You need to create the very best system through which good attorneys and good physicians can be leveraged to produce exquisite results.
+91: The question you need to keep asking yourself is: How can I give my customer the results he wants systematically rather than personally? Put another way: How can I create a business whose results are systems -dependent rather than people -dependent? Systems -dependent rather than expert -dependent.
+93: How can I create an expert system rather than hire one?
+103: In this context, the system becomes the tools your people use to increase their productivity, to get the job done in the way it needs to get done in order for your business to successfully differentiate itself from your competition.
+105: It’s your job, more accurately, the job of your business, to develop those tools and to teach your people how to use them.
+107: It’s your people’s job to use the tools you’ve developed and to recommend improvements based on their experience with them.
+111: The typical owner of a small business prefers highly skilled people because he believes they make his job easier, he can simply leave the work to them.
+113: That is, the typical small business owner prefers Management by Abdication to Management by Delegation .

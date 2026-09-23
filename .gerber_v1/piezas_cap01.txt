@@ -1,0 +1,8 @@
+[
+ ('R1',  8,   9, 'el rotulo `FOREWORD`', 'RESIDUO: rotulo'),
+ ('R2', 10,  21, 'los quince anios desde The E-Myth: la familia, los viajes, el origen de la casa E-Myth Worldwide y la presentacion de Sarah como interlocutora del libro', 'POSTURA y CASO'),
+ ('R3', 22,  23, 'el anuncio de que antes de Sarah vienen unas reflexiones sobre los negocios pequenios y quien los posee', 'RESIDUO: bisagra'),
+ ('R4', 24,  47, 'que saben los duenios de negocios extraordinarios: la necesidad insaciable de saber mas, el algo mas alto, y la fascinacion por las cosas pequenias hechas exactamente bien', 'POSTURA'),
+ ('R5', 48,  59, 'el libro como guia de una indagacion sin final: no trata de finales sino de comienzos, y el negocio como espejo de uno mismo', 'POSTURA'),
+ ('R6', 60,  71, 'el cierre: conocete a ti mismo, la cita de Anthony Greenbank sobre sobrevivir, la firma, el lugar y la fecha', 'POSTURA'),
+]

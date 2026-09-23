@@ -1,0 +1,27 @@
+$ git show 6d2d56a:docs/loop/REPORTE.md   (el esqueleto TAL COMO SE ABRIO)
+  | # | tarea del encargo | estado |
+  |---:|---|---|
+  | 1 | la frontera de cada unidad minada, cerrada contra el cuerpo | **ABIERTA** |
+  | 2 | minar con el techo de candidatos por delante, aduana en seco en el acto | **ABIERTA** |
+  | 3 | `PASOS INVENTADOS POR CAPITULO` (`D.30`), fila por unidad mas total | **ABIERTA** |
+  | | el cierre: guardas, cifras recomputadas, discutibles marcados, commit y push | **ABIERTA** |
+
+$ git show a218170:docs/loop/REPORTE.md   (el esqueleto TAL COMO SE RESTAURO)
+  | # | tarea del encargo | como cierra | donde |
+  |---:|---|---|---|
+  | 1 | la frontera de cada unidad minada, cerrada contra el cuerpo | **CERRADA**: `11` de `11` con residuo `0`, cero solapes y cero lineas sin cubrir | `G1.2` |
+  | 2 | minar con el techo de candidatos por delante, aduana en seco en el acto | **CERRADA**: `10` candidatos bajo el techo de `15`, `10` de `10` con su informe y **`0 CAERIA`** | `G1.3` y `G1.8` |
+  | 3 | `PASOS INVENTADOS POR CAPITULO` (`D.30`), fila por unidad mas total | **CERRADA**: `89` de `89` pasos releidos contra su parrafo, `0,00` por ciento, peor capitulo `0,00` contra un tope de `10` | `G1.4` |
+  | | el cierre: guardas, cifras recomputadas, discutibles marcados, commit y push | **CERRADO** | `G1.6` a `G1.10` |
+
+$ por commit: cuantas de las secciones G1.9 y G1.10 existian en el arbol
+  6d2d56a  secciones G1.9 o G1.10 en el arbol: 0   el esqueleto las promete: 0
+  1ede50b  secciones G1.9 o G1.10 en el arbol: 0   el esqueleto las promete: 0
+  1f2b648  secciones G1.9 o G1.10 en el arbol: 0   el esqueleto las promete: 0
+  b2f0714  secciones G1.9 o G1.10 en el arbol: 0   el esqueleto las promete: 0
+  b820215  secciones G1.9 o G1.10 en el arbol: 0   el esqueleto las promete: 0
+  920fcc0  secciones G1.9 o G1.10 en el arbol: 0   el esqueleto las promete: 0
+  1fe4be8  secciones G1.9 o G1.10 en el arbol: 0   el esqueleto las promete: 0
+  a218170  secciones G1.9 o G1.10 en el arbol: 0   el esqueleto las promete: 1
+  384165b  secciones G1.9 o G1.10 en el arbol: 0   el esqueleto las promete: 1
+  abf7515  secciones G1.9 o G1.10 en el arbol: 0   el esqueleto las promete: 1

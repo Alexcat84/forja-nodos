@@ -1,0 +1,14 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_10.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L145.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **83** | el numero del capitulo, el rotulo `THE FRANCHISE PROTOTYPE` y el epigrafe de Robert M. Pirsig | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L41 | **322** | el Prototipo como modelo de trabajo del sueno y banco de pruebas de las hipotesis, y el sistema que resuelve lo que la gente sola no resuelve | **POSTURA** |
+| `R3` | L42 a L79 | **402** | el detalle controlado en el McDonalds de Ray Kroc: los siete minutos de las patatas, los diez de las hamburguesas, los pepinillos colocados a mano, los sesenta segundos de servicio y la Hamburger U | **CASO** |
+| `R4` | L80 a L119 | **404** | el Prototipo como sitio donde se concibe y se perfecciona el sistema, lo que da a cada una de las tres personalidades, y el Sistema Operativo Propietario que hay detras de todo negocio extraordinario | **POSTURA** |
+| `R5` | L120 a L145 | **200** | las preguntas de cierre sobre como construir el tuyo, y Sarah que ya tiene el negocio y solo necesita aprender | **RESIDUO: bisagra hacia el `Cap. 9`** |
+| **el cuerpo entero** | **L8 a L145** | **1411** | **suma de las piezas: 1411** | **residuo sin asignar: 0** |
+
+piezas: 5   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1411   suma 1411   residuo 0

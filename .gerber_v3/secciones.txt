@@ -1,0 +1,4 @@
+el bloque del frente empieza en la linea 57716 de docs/loop/REPORTE.md
+secciones que el bloque TIENE      : 15   G3.0 G3.1 G3.2 G3.3 G3.4 G3.5 G3.6 G3.7 G3.8 G3.8.a G3.8.b G3.8.c G3.8.d G3.8.e G3.9
+secciones que el bloque CITA       : 11   G3.1 G3.2 G3.3 G3.4 G3.5 G3.6 G3.7 G3.8.a G3.8.b G3.8.c G3.9
+CITADAS Y QUE NO EXISTEN           : 0

@@ -1,0 +1,32 @@
+{
+  "id": "aplicar_seis_pasos_sistema_venta",
+  "titulo": "Aplicar los seis pasos principales que el libro enumera para un sistema de venta",
+  "denominaciones": {
+    "nombre_largo": "Un sistema de venta como interaccion orquestada con el cliente, en sus seis pasos principales",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "selling system"},
+      {"idioma": "ingles", "termino": "Benchmarks"}
+    ]
+  },
+  "condiciones_activacion": "Cuando quieres que vender deje de depender del talento individual de tu mejor vendedor y se convierta en un sistema que cualquiera de tu gente pueda operar.",
+  "entregable_esperado": "Un sistema de venta con sus seis pasos completos, desde la identificacion de los Benchmarks del proceso hasta la entrega del guion por tus vendedores de forma identica cada vez.",
+  "pasos_accionables": [
+    "Identifica los Benchmarks especificos, o puntos de decision del consumidor, en tu proceso de venta.",
+    "Escribe literalmente, como el guion de una obra de teatro, las palabras que te van a llevar a cada Benchmark con exito.",
+    "Crea los distintos materiales que se van a usar con cada guion.",
+    "Memoriza el guion de cada Benchmark.",
+    "Entrega cada guion de forma identica a traves de tus vendedores.",
+    "Deja que tu gente se comunique con mas efectividad, articulando, observando, escuchando, oyendo, reconociendo, entendiendo e implicando a cada prospecto tan a fondo como el lo necesite."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_19.md, unidad Cap. 18, titulo textual Your Systems Strategy. Sale de la PIEZA D2 de la frontera publicada en esta misma vuelta (.gerber_v7/frontera_cap19.txt), L141 a L154, 117 palabras. POR QUE ES PROCEDIMIENTO: el libro numera 1 a 6 en el propio texto (L143 a L153) respondiendo a su propia pregunta que es un sistema de venta, cada paso con su propio verbo de accion (identification, scripting, creation, memorization, delivery, leaving your people to communicate). SIGO EL PATRON DE UN SOLO NODO ya establecido en esta vuelta (aplicar_ocho_reglas_juego_personas y aplicar_cinco_pasos_proceso_contratacion, cap_18): la lista entera transcrita, no seis nodos mas cabeza. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI, DECISION DE ALCANCE DECLARADA: la pieza R5 (L155 a L304, 2040 palabras) despliega el Power Point Selling System (Estructura y Sustancia) y el Power Point Selling Process con sus tres Benchmarks (Appointment, Needs Analysis y Solutions Presentation), contado entero como guion ficticio entre Johnny Jones y Mr. Jackson en la Walter Mitty Company, con siete acciones numeradas SOLO dentro de la Needs Analysis Presentation (L215 a L253, the first thing you do... the seventh thing Johnny Jones does). NO LO TRANSCRIBO: es la CASA de la doctrina de estos seis pasos (manual 3.5, el caso no es la casa), y transcribir sus siete acciones exigiria separar la doctrina generica del guion especifico de Walter Mitty Company en cada linea (financial control, Money Management Questionnaire, Financial Report), un trabajo que esta vuelta no alcanza a hacer sin riesgo de fundir caso y doctrina o de inventar una version generica que el libro no escribe (D.30 15.4: parrafo rico completado por mi mano es nodo inventado). Se deja escrito aqui, con su cita, para que una vuelta futura decida si vale la pena separar esa doctrina de su ejemplo. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE, cita pegada en .gerber_v7/cita_cap19_L141_L153.txt (D.35).",
+  "atribuciones": [],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-21"}
+  ]
+}

@@ -1,0 +1,29 @@
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : gerber_emyth
+  semilla  : gerber_v7
+  capitulos: cap_18, cap_19
+
+  RELEIDO ENTERO : cap_19
+  POR MUESTRA    : cap_18, 15 pasos cada uno
+
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+  --- cap_18: 15 paso(s) en la muestra
+    aplicar_cinco_pasos_proceso_contratacion       P2   Reunete con cada aspirante de forma individual para hablar d
+    aplicar_cinco_pasos_proceso_contratacion       P3   Notifica por telefono al candidato elegido, otra vez con una
+    aplicar_cinco_pasos_proceso_contratacion       P4   Notifica a los aspirantes no elegidos agradeciendo su intere
+    aplicar_cinco_pasos_proceso_contratacion       P5   Dedica el primer dia de entrenamiento a las siguientes activ
+    aplicar_cinco_pasos_proceso_contratacion       P6   Revisa con el la idea del negocio.
+    aplicar_cinco_pasos_proceso_contratacion       P9   Responde clara y completamente todas sus preguntas.
+    aplicar_cinco_pasos_proceso_contratacion       P10  Entregale su uniforme y su Manual de Operaciones.
+    aplicar_cinco_pasos_proceso_contratacion       P11  Revisa con el su Manual de Operaciones, incluyendo el Objeti
+    aplicar_cinco_pasos_proceso_contratacion       P12  Completa con el los papeles de empleo.
+    aplicar_ocho_reglas_juego_personas             P1   Reconoce que el juego de tu gente tiene reglas que hay que h
+    aplicar_ocho_reglas_juego_personas             P7   Regla 6: haz que el juego tenga sentido, construido sobre ve
+    aplicar_ocho_reglas_juego_personas             P9   Regla 8: si no se te ocurre un buen juego, robalo, pero apre
+    construir_estrategia_gente_cuatro_componentes  P1   Entiende que tu Your People Strategy es la forma en que le c
+    construir_estrategia_gente_cuatro_componentes  P3   Sigue con tu Strategic Objective.
+    construir_estrategia_gente_cuatro_componentes  P4   Construye tu Organizational Strategy: tu Organization Chart 
+
+  --- cap_19: ENTERO, 25 paso(s), no hay muestra que elegir

@@ -1,0 +1,34 @@
+{
+  "id": "dictar_ritmo_crecimiento_preguntas_escritas",
+  "titulo": "Dictar el ritmo de crecimiento de tu negocio con los tres conocimientos clave, las preguntas correctas y el plan escrito",
+  "denominaciones": {
+    "nombre_largo": "El trabajo del dueno cuando el negocio va a crecer: entender los tres asuntos clave, hacerse las preguntas que el libro enumera, y articular el plan por escrito para que otros lo entiendan",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "rate of growth"},
+      {"idioma": "ingles", "termino": "contingency plans"}
+    ]
+  },
+  "condiciones_activacion": "Cuando tu negocio va a crecer y quieres dictar tu su ritmo en vez de reaccionar al crecimiento que se te venga encima.",
+  "entregable_esperado": "El plan escrito con claridad suficiente para que otros lo entiendan, con las preguntas del libro contestadas para cada marca y con sus planes de contingencia de mejor y de peor caso puestos.",
+  "pasos_accionables": [
+    "Entiende los procesos clave que hay que ejecutar, que es el primero de los tres conocimientos con los que el texto dice que se dicta el ritmo de crecimiento.",
+    "Entiende los objetivos clave que hay que alcanzar, que es el segundo.",
+    "Entiende la posicion clave que quieres que tu negocio ocupe en el mercado, que es el tercero.",
+    "Hazte las preguntas correctas, que el texto enumera una a una: donde quiero estar, cuando quiero estar alli, cuanto capital hara falta, cuanta gente haciendo que trabajo y como, que tecnologia hara falta, y cuanto espacio hara falta en la marca uno, en la marca dos y en la marca tres.",
+    "Cuenta con equivocarte a veces, con cometer errores y con cambiar de opinion, y ten por eso los planes de contingencia puestos: mejor caso y peor caso.",
+    "Planifica, imagina y articula lo que ves en el futuro tanto para ti como para tus empleados, incluso mientras estas adivinando.",
+    "Escribelo, con claridad, de modo que otros puedan entenderlo, porque el texto dice que si no lo articulas asi entonces no lo posees.",
+    "No te pares por no tener un plan bueno, que el texto lo zanja en una linea: cualquier plan es mejor que ningun plan."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_07.md, unidad Cap. 5, titulo textual Beyond the Comfort Zone. Sale de la PIEZA P1 de la frontera publicada en esta misma vuelta, L278 a L287, 323 palabras, unica pieza con procedimiento propio de las nueve del capitulo. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: el capitulo es un diagnostico de tres salidas del negocio adolescente y se lee entero como postura. Esta pieza es la excepcion porque el libro PONE SU PROPIO INVENTARIO: nombra los tres conocimientos uno a uno (procesos clave, objetivos clave, posicion clave), ENUMERA LAS PREGUNTAS una a una y con sus tres marcas, nombra los dos planes de contingencia por su nombre (mejor caso y peor caso), y nombra el acto que cierra (escribirlo con claridad para que otros lo entiendan). Son medios y objetos de trabajo, no metas. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE, con su cita pegada en .gerber_v1/cita_cap07_P1.txt. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: que es una marca, cada cuanto se revisa el plan, quien lo aprueba, ni donde se guarda. El texto nombra Benchmark One, Two y Three sin definirlos, asi que los paso como lo que son, tres marcas nombradas, y no invento su contenido: eso seria puente de la especie periodo y de la especie destinatario a la vez. EL AVISO QUE ME DOY A MI MISMO, y es de D.30: el parrafo mas rico del lote 1 dio 0 por ciento de puentes y el mas pobre 83. Este es de los ricos, y por eso los ocho pasos caben sin que yo anada nada.",
+  "atribuciones": [],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-16"}
+  ]
+}

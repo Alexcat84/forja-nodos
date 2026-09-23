@@ -1,0 +1,12 @@
+[
+ ("R1", 8, 20, "el numero del capitulo, el rotulo YOUR SYSTEMS STRATEGY y el epigrafe de Werner Heisenberg (Physics and Philosophy)", "RESIDUO: rotulo y epigrafe"),
+ ("R2", 21, 32, "que es un sistema en general (un conjunto de cosas, acciones, ideas e informacion que interactuan y alteran otros sistemas), y que todo es un sistema", "POSTURA"),
+ ("D1", 33, 46, "Three Kinds of Systems: hay tres tipos de sistemas en el negocio (Hard, Soft e Information Systems), cada uno definido en una linea con su ejemplo, y su Innovacion, Cuantificacion y Orquestacion integradas es de lo que trata el Business Development Program", "CANDIDATO: distinguir_tres_tipos_sistemas_negocio"),
+ ("R3", 47, 122, "el caso del Prevent a Smudge System de E Myth Worldwide: el conflicto entre pizarras blancas y paredes blancas con tinta azul, y la solucion del colerin de Lucite, con la reflexion sobre conflicto mas voluntad como condiciones del nacimiento de un sistema", "CASO: Hard Systems"),
+ ("R4", 123, 140, "Soft Systems: la gente vende, el 20 por ciento que mas vende usa un sistema y el resto no, y la pregunta de que es un sistema de venta", "POSTURA: bridge"),
+ ("D2", 141, 154, "un sistema de venta es una interaccion orquestada con el cliente que sigue seis pasos principales, numerados uno a uno", "CANDIDATO: aplicar_seis_pasos_sistema_venta"),
+ ("R5", 155, 304, "el Power Point Selling System con su Estructura y su Sustancia, y el Power Point Selling Process desplegado en sus tres Benchmarks (Appointment, Needs Analysis y Solutions Presentation) contado entero como guion ficticio de Johnny Jones con Mr Jackson en Walter Mitty Company: doctrina de venta ya capturada en D2, aqui solo como ejemplo nombrado", "CASO: Soft Systems, el guion de venta"),
+ ("R6", 305, 306, "el rotulo Information Systems y la frase que introduce el listado", "POSTURA: bridge"),
+ ("D3", 307, 338, "para que un Information System interactue con el Soft System del ejemplo, tiene que darte la informacion siguiente: el INFORMATION BENCHMARK de trece preguntas numeradas, desde cuantas llamadas se hicieron hasta cual fue el valor promedio en dolares, y que esa informacion se registre en un formulario", "CANDIDATO: medir_sistema_venta_trece_indicadores_benchmark"),
+ ("R7", 339, 441, "lo que un Information System te puede decir, la integracion total de las siete Strategies del Business Development Program, y el cierre con Sarah repasando Hard, Soft e Information Systems sobre su propio negocio All About Pies", "POSTURA y CASO: cierre del capitulo y del libro con Sarah"),
+]

@@ -1,0 +1,5 @@
+683:[2026-09-16 13:03:06] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+804:[2026-09-16 16:59:51] VUELTA 2 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+910:[2026-09-16 19:35:39] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+159:[2026-09-11 12:27:43] auditor: TURNO MUDO, el turno corrio 1769s y cobro "15.295378999999999" pero docs/loop/ACTA_AUDITOR.md quedo identico, intento 2 de 7
+931:[2026-09-16 22:39:51] extractor: TURNO MUDO, el turno corrio 323s y cobro "2.2646879999999996" pero docs/loop/REPORTE.md quedo identico, intento 2 de 7
