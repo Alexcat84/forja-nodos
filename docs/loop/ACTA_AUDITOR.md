@@ -46964,3 +46964,285 @@ y concluye: *HOY EL REPLAY SALE VERDE, sin la discrepancia de `1` que `ACTA M4` 
 **Y LA LINEA DE `D.49` NO FALTA: NO TIENE DONDE IR.** `LIBRO DE ESTA VUELTA` se escribe en el encargo, y **no hay encargo**. La misma forma que tomo la parada del frente `gerber_emyth` el `21 sep` (`c1ec6b0`, `PROMPT_SIGUIENTE.md` a `0` bytes), y por el mismo motivo: **el arnes no abre la vuelta siguiente mientras exista `PARA_ALEXIS.md`**, asi que no hay vuelta a la que declararle libro.
 
 **LO QUE NO HAGO, PORQUE NO ES MIO:** no reinicio ninguna racha (`5.4`: *un auditor que pone su propia racha a cero se esta absolviendo*), no fundo ramas, no creo remotos, no toco `src/`, el banco ni el arnes (`D.45`), y no escribo doctrina (`D.56`). **Lo que este frente necesita ahora es una decision escrita del fundador en `docs/loop/paradas/`, y esa no la puede escribir el bucle.**
+
+
+---
+
+# ACTA M6. VUELTA 5 DEL FRENTE `marquet_turn_the_ship`, `cap_12` a `cap_15`, **CLASE EXTRACCION EN REGIMEN LIGERO**: **LA LECTURA ES BUENA Y SE LA FIRMO ENTERA; LO QUE SE CAE SON LAS CUATRO TABLAS DE FRONTERA QUE PEGO, QUE NO SUMAN LO QUE SU PROPIA ULTIMA FILA DICE**. Le recompongo **las `234` filas de las cuatro fronteras brutas** contra el fichero y me cierran **al digito** (`2058`, `2966`, `1293` y `1790` palabras de cuerpo, `0` discrepancias, `0` solapes, `0` lineas con palabras sin cubrir); **compruebo yo los `12` pasos contra su linea y los `12` estan literales**, asi que les firmo su `0` PUENTE; **cotejo la muestra con la semilla `m5` y me sale IDENTICA**, `diff` vacio; **le vuelvo a correr yo sus tres aduanas y las tres salen IDENTICAS BYTE A BYTE a las que guardo**; y **los tres discutibles se sostienen los tres**, leidos por sus pasos antes que por su argumento. **Y AUN ASI: LAS CUATRO TABLAS DE FRONTERA QUE EL REPORTE PUBLICA NO SON LAS BRUTAS SINO UN RESUMEN AGRUPADO DE ELLAS, Y `12` DE SUS FILAS AGRUPADAS LLEVAN UNA CIFRA DE PALABRAS QUE NO ES LA SUMA DE SUS PIEZAS** (`2680` donde hay `1982`, `620` donde hay `522`, `622` donde hay `491`...), **una fila pisa la linea `L107` de la siguiente**, y **ninguna de las cuatro columnas suma el cuerpo que su ultima fila declara con `residuo sin asignar: 0`** (`2055`, `3664`, `1399` y `1675` contra `2058`, `2966`, `1293` y `1790`). **El parrafo que las presenta dice *Coinciden al digito: cero solapes*.** Vive en TABLA y en la conclusion de su subseccion: **`REPORTE` CAE Y SUBE de `1 de 3` a `2 de 3`**, su penultimo escalon, **y el remedio va encargado en el mismo acta** (`1.4`, `5.5`). **Lo que la cifra falsa NO toca, y lo digo para que no se lea mas grande de lo que es:** la frontera es cierta, porque la bruta que la sostiene es cierta al digito; lo falso es la tabla que se publico en su lugar. `CLASE`, `CIFRA PUBLICADA` y `DATO MOVIDO` salen **LIMPIAS y medidas**. **Mi propia tanda sale LIMPIA** y `AUDITOR` se queda en `0 de 3`. **Ninguna condicion de parada se cumple y las mido una a una en `M6.14`: no escribo `PARA_ALEXIS.md`**, y el encargo de la vuelta `6` sale de esta sede: **`cap_16`, `cap_17`, el barrido de `d104` y el cierre del libro.**
+
+## M6.0. **HUECO DE ACTA: NO LO HAY** (`1.0`)
+
+    $ git log --oneline -3
+    6e02f37 VUELTA 5 del frente marquet_turn_the_ship: cap_12 a cap_14 adoptados del intento muerto, cap_15 sin superficie
+    fcd7019 ESPECIE ARNES: tu turno acaba cuando tu trabajo acaba, en los tres prompts
+    b544062 Marquet retoma su vuelta 5: la maquinaria del arreglo del 23 sep, y el aviso de su borrador
+
+**La `ACTA M5` cubre la vuelta `4`, que es la inmediatamente anterior.** Esta acta cubre **UNA** vuelta, la `5`, y dentro de ella el intento muerto del `23` sep a las `00:03`, que no escribio reporte y cuyo borrador **la vuelta adopto y declaro** (su `TAREA 1`). El arnes lo midio por su cuenta: *ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE* (`docs/loop/loop.log`, `2026-09-23 07:46:30`).
+
+## M6.1. **LA HERENCIA, DECLARADA** (`D.40`, `D.58`)
+
+**NO HAY FASE CIEGA NI SELLO, Y NO ES OMISION MIA:** *VUELTA 1 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)* (`docs/loop/loop.log`, `2026-09-23 09:26:06`). La declaracion va aqui, que es la sede que queda.
+
+    ACTA ANTERIOR LEIDA: ACTA M5, docs/loop/ACTA_AUDITOR.md, desde la linea 46547 hasta la 46966
+    HEREDADO 1: NO HAY bloqueante ni REMEDIO: la ACTA M5 lo dice en M5.15 ("no dejo ninguna tarea bloqueante")
+    HEREDADO 2 (M5.17, el coste de su propio turno, dejado "a verificar en la vuelta siguiente"): CUMPLIDO
+
+**`HEREDADO 2`, CON SU MEDIDA:**
+
+    $ grep -n "auditor listo" docs/loop/loop.log | tail -1
+    1095:[2026-09-21 23:40:35] auditor listo (USD 27.029654500000017), 3154s, intento 1 de 7
+
+**El turno de la `ACTA M5` costo `27,0297` USD en `3154` s: por encima de `10`.** Su desglose lo escribio ella misma por adelantado en `M5.14` (*recompuse las cuatro aduanas de la vuelta, enteras y una a una, que es la parte cara de este turno*), y no lo reescribo.
+
+## M6.2. **LO QUE RECOMPUSE CON MIS PROPIOS COMANDOS** (`1.1`)
+
+| instrumento, corrido por mi en esta vuelta | lo que me da | lo que el reporte dice |
+|---|---|---|
+| `python forja.py gate` | `GATE VERDE.` / `nodos verificados: 346` | igual (`C.1`) |
+| `python forja.py guiones` | `BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.` | igual (`C.1`) |
+| `python tests/test_aceptacion.py` | `total: 376 pruebas, 0 fallos, 0 errores` | igual (`C.1`) |
+| `wc -l dataset/nodos.jsonl` | `346` | `346` (`C.1`) |
+| `wc -l bitacora/VEREDICTOS.jsonl` | `740` | no la publica |
+| `wc -l config/pares_mutuos.jsonl` | `1` | no la publica |
+| `ls cuarentena/marquet_turn_the_ship/*.json \| wc -l` | `20` | `20` (apertura y `C.4`) |
+| `ls cuarentena/<libro>/*.json \| wc -l` para `grove_high_output` y `gerber_emyth` | `91` y `22` | `479 = 346 + 133` (`1.d`): `20 + 91 + 22 = 133`, cuadra |
+| `python scripts/muestra_fidelidad.py ... --semilla m5` | `diff` contra `.v5m/muestra/muestra_m5.txt` vacio | igual (`2.b`) |
+| `python forja.py credito --revisar` | `REPLAY VERDE ... las 27 tanda(s) vigilables suman lo que declaran.` (al abrir, antes de anotar mi tanda) | no lo publica |
+| `python scripts/cerrar_reporte.py` | `CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo.` (`scripts/cerrar_reporte.py`, `162` s, salida en `.m6aud/cerrar_reporte.txt`), **en mi segunda corrida**: la primera salio en rojo por mi propio script (`M6.11`) | `CIERRE VERDE` (`C.1`) |
+
+**LAS OCHO RUTAS DE EVIDENCIA QUE EL COMMIT `6e02f37` TRAE EXISTEN Y NINGUNA TIENE CERO BYTES** (cosecha `7.B`): las tres de `.v5m/aduana/` (`1100`, `2117` y `1106` bytes), las cuatro de `.v5m/frontera/` (`5954`, `5732`, `4753` y `4455`) y `.v5m/muestra/muestra_m5.txt` (`1036`). **`d103` SE CUMPLE Y LO MIDO POR LAS FECHAS:** las tres fichas se escribieron por ultima vez entre las `00:13:24` y las `00:16:01` y sus tres aduanas se guardaron entre las `09:00:07` y las `09:07:01`; **ninguna ficha se toco despues de su aduana.**
+
+## M6.3. **LAS CUATRO FRONTERAS, RECOMPUESTAS FILA A FILA** (`8.3`)
+
+*Script `.m6aud/frontera_m6.py`, salida entera en `.m6aud/frontera_m6.txt`. Parsea cada tabla, cuenta las palabras de cada linea citada en el fichero fuente y compara fila a fila.*
+
+    $ python .m6aud/frontera_m6.py
+    BRUTA   cap_12: filas 68, discrepancias de palabras 0, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+    REPORTE cap_12: filas 24, discrepancias de palabras 4, lineas con palabras solapadas 1, lineas con palabras sin cubrir 0
+       DISCREPA ('R15 a R23', 'L37 a L53', 66, 73)
+       DISCREPA ('R27 a R49', 'L61 a L107', 620, 529)
+       DISCREPA ('R51 a R57', 'L109 a L121', 122, 120)
+       DISCREPA ('R59 a R67', 'L141 a L157', 152, 248)
+       SOLAPE L107 ['R27 a R49', 'R50']
+    BRUTA   cap_13: filas 64, discrepancias de palabras 0, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+    REPORTE cap_13: filas 10, discrepancias de palabras 1, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+       DISCREPA ('R1 a R48', 'L9 a L103', 2680, 1982)
+    BRUTA   cap_14: filas 53, discrepancias de palabras 0, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+    REPORTE cap_14: filas 12, discrepancias de palabras 3, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+       DISCREPA ('R1 a R11', 'L9 a L29', 176, 198)
+       DISCREPA ('R16 a R39', 'L39 a L85', 622, 491)
+       DISCREPA ('R45 a R51', 'L101 a L113', 65, 68)
+    BRUTA   cap_15: filas 49, discrepancias de palabras 0, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+    REPORTE cap_15: filas 6, discrepancias de palabras 4, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+       DISCREPA ('R1 a R18', 'L9 a L43', 663, 566)
+       DISCREPA ('R19 a R34', 'L45 a L75', 611, 770)
+       DISCREPA ('R36 a R42', 'L79 a L91', 235, 285)
+       DISCREPA ('R45 a R49', 'L97 a L105', 42, 45)
+
+**Y LA PRUEBA DE QUE LAS FILAS AGRUPADAS NO SALEN DE LAS BRUTAS**, sumando las piezas de la bruta que cada fila agrupada dice cubrir, y la columna entera de cada tabla del reporte (`.m6aud/grupos_m6.py`, salida en `.m6aud/grupos_m6.txt`):
+
+    $ python .m6aud/grupos_m6.py
+    cap_12 R15 a R23  reporte L37 a L53       66 | bruta L37 a L53 suma 73
+    cap_12 R27 a R49  reporte L61 a L107     620 | bruta L61 a L105 suma 522
+    cap_12 R51 a R57  reporte L109 a L121    122 | bruta L109 a L121 suma 120
+    cap_12 R59 a R67  reporte L141 a L157    152 | bruta L141 a L157 suma 248
+    cap_12 SUMA DE LA COLUMNA palabras de la tabla del reporte: 2055
+    cap_13 R1 a R48   reporte L9 a L103     2680 | bruta L9 a L103 suma 1982
+    cap_13 R51 a R53  reporte L109 a L113    336 | bruta L109 a L113 suma 336
+    cap_13 R57 a R59  reporte L123 a L127    306 | bruta L123 a L127 suma 306
+    cap_13 R60 a R63  reporte L129 a L135     67 | bruta L129 a L135 suma 67
+    cap_13 SUMA DE LA COLUMNA palabras de la tabla del reporte: 3664
+    cap_14 R1 a R11   reporte L9 a L29       176 | bruta L9 a L29 suma 198
+    cap_14 R12 a R14  reporte L31 a L35      183 | bruta L31 a L35 suma 183
+    cap_14 R16 a R39  reporte L39 a L85      622 | bruta L39 a L85 suma 491
+    cap_14 R45 a R51  reporte L101 a L113     65 | bruta L101 a L113 suma 68
+    cap_14 SUMA DE LA COLUMNA palabras de la tabla del reporte: 1399
+    cap_15 R1 a R18   reporte L9 a L43       663 | bruta L9 a L43 suma 566
+    cap_15 R19 a R34  reporte L45 a L75      611 | bruta L45 a L75 suma 770
+    cap_15 R36 a R42  reporte L79 a L91      235 | bruta L79 a L91 suma 285
+    cap_15 R43 a R44  reporte L93 a L95      116 | bruta L93 a L95 suma 116
+    cap_15 R45 a R49  reporte L97 a L105      42 | bruta L97 a L105 suma 45
+    cap_15 SUMA DE LA COLUMNA palabras de la tabla del reporte: 1675
+
+**LO QUE ESO DICE, SEPARADO DE LO QUE MIDE:**
+
+- **MEDIDA:** las cuatro brutas cierran al digito, `234` filas, `0` / `0` / `0`. Las cuatro tablas del reporte, `52` filas, llevan `12` cifras de palabras que no son las de sus lineas, `1` linea solapada, y columnas que suman `2055`, `3664`, `1399` y `1675` contra los cuerpos `2058`, `2966`, `1293` y `1790` que su ultima fila declara con *residuo sin asignar: 0*.
+- **LECTURA:** la frontera **de verdad** esta bien hecha, y es la del intento muerto; lo que la vuelta publico en su lugar es un resumen **tecleado encima**, no derivado de ella: `cap_13` `R1 a R48` escribe `2680` donde las `48` piezas suman `1982`, y ninguna agrupacion de piezas da `2680`. **El parrafo que las presenta dice *esta vuelta las verifico linea por linea contra el fichero fuente... Coinciden al digito: cero solapes, cero residuo sin asignar*, y lo que coincide al digito son las brutas, no las tablas que tiene debajo.**
+- **POR QUE LA MAQUINA NO LO CAZO, Y NO ES CAIDA DE NADIE:** las cuatro tablas llevan la marca `<!-- TALLADO: parcial ... -->`, y `scripts/tallar_reporte.py` linea `461` despacha una tabla parcial como `CITA` sin reproducirla: *declarada PARCIAL: cita a su instrumento en alguna fila, no reproduce su tabla*. **La marca es legitima y el tallado hace lo que dice.** Lo anoto como deuda (`M6.13`) y **no** encargo instrumento nuevo (`5.6`, moratoria).
+
+## M6.4. **LOS `12` PASOS, CONTRA SU LINEA, Y `PASOS INVENTADOS POR CAPITULO` FIRMADA POR MI** (`D.30`, `8`, `8.2`, `8.3`)
+
+    $ python .m6aud/pasos_m6.py
+    cap_12 identificar_temas_formacion_tarjetas_dec P1 cita literal en: [125]
+    cap_12 identificar_temas_formacion_tarjetas_dec P2 cita literal en: [127]
+    cap_12 identificar_temas_formacion_tarjetas_dec P3 cita literal en: [129]
+    cap_12 identificar_temas_formacion_tarjetas_dec P4 cita literal en: [131]
+    cap_12 identificar_temas_formacion_tarjetas_dec P5 cita literal en: [133]
+    cap_12 identificar_temas_formacion_tarjetas_dec P6 cita literal en: [135]
+    cap_12 identificar_temas_formacion_tarjetas_dec P7 cita literal en: [137]
+    cap_12 identificar_temas_formacion_tarjetas_dec P8 cita literal en: [139]
+    cap_13 repetir_mensaje_invariable_diario_reunio P1 cita literal en: [119]
+    cap_13 repetir_mensaje_invariable_diario_reunio P2 cita literal en: [119]
+    cap_14 reforzar_principios_guia_lenguaje_prueba P1 cita literal en: [89]
+    cap_14 reforzar_principios_guia_lenguaje_prueba P2 cita literal en: [99]
+    pasos 12, con cita literal en su linea 12
+
+**Y la instruccion de cada paso, leida por mi contra su cita, no pone nada que la cita no diga.** El unico que generaliza es el `P1` de `reforzar_principios` (*por ejemplo diciendo que un empleado mostro tal o cual principio*), y generaliza el ejemplo del libro, no lo inventa.
+
+| capitulo | pasos escritos | PUENTE | PASOS INVENTADOS | contra el tope de `10` |
+|---|---:|---:|---|---|
+| `cap_12` (Cap. 17, *We Learn*) | `8` | `0` | `0,00` | debajo |
+| `cap_13` (Cap. 19, *All Present and Accounted For*) | `2` | `0` | `0,00` | debajo |
+| `cap_14` (Cap. 23, *Leadership at Every Level*) | `2` | `0` | `0,00` | debajo |
+| `cap_15` (Cap. 26, *Combat Effectiveness*) | `0` | `0` | **`SIN SUPERFICIE`**, leido entero por mi de `L75` a `L105` y por la vuelta entero | no aplica |
+| **el tramo** | **`12`** | **`0`** | **`0,00`** | **debajo** |
+
+**EL PEOR CAPITULO ES `0,00`**, igual que el tramo anterior (`M5.18`): `8.1` daria un capitulo mas, **y no hay mas que dar**: al libro le quedan `cap_16` y `cap_17`.
+
+**`cap_15` EN CERO, FIRMADO POR MI:** `L77` nombra el mecanismo *Encourage a Questioning Attitude over Blind Obedience*, `L79` a `L91` son el episodio de la recogida de los SEAL, y `L95` es el Costa Concordia cerrando con el rotulo; **ni un medio, ni una etapa, ni un objeto de trabajo nombrado uno a uno.** **LA FIRMA EN `config/frentes.json` LA PIDO A LA SESION**, con la cita que el reporte dejo lista en su `2.a`: `config/` no es sede mia ni del frente.
+
+## M6.5. **LA MUESTRA DE FIDELIDAD, COTEJADA CON SU SEMILLA** (`D.58`)
+
+    $ python scripts/muestra_fidelidad.py --libro marquet_turn_the_ship --capitulos cap_12,cap_13,cap_14,cap_15 --semilla m5 > .m6aud/muestra_m5.txt
+    $ diff .v5m/muestra/muestra_m5.txt .m6aud/muestra_m5.txt && echo MUESTRA IDENTICA
+    MUESTRA IDENTICA
+
+**Ningun capitulo pasa del `10` por ciento**: no hay relectura entera que escalar.
+
+## M6.6. **LA RELECTURA CIEGA: LOS TRES DISCUTIBLES, POR SUS PASOS ANTES QUE POR SU ARGUMENTO** (`2`, `5.1`)
+
+*Imprimi los pasos de las tres fichas y las lineas `L45` a `L69`, `L103` a `L121` de `cap_13` antes de abrir la razon de cada discutible.*
+
+| # | discutible | mi lectura, antes de abrir la suya | se sostiene |
+|---:|---|---|---|
+| `1` | `identificar_temas_formacion_tarjetas_decision`, ocho pasos, `P3` y `P6` como la misma etapa repetida | **no es repeticion interna: son dos rondas del mismo ejercicio sobre dos preguntas distintas** (la primera saca temas de decision, la segunda saca lo que hay que saber para decidirlos), y el libro las da en ese orden en `L129` y `L135`. Comprimirlas borra la secuencia. **Ocho pasos.** | **SI** |
+| `2` | la cita *Petty Officer M exhibited Courage and Openness* dentro del `P1` de `reforzar_principios` | **el dato del caso vive en la cita de evidencia, no en la instruccion**: la instruccion dice *tal o cual principio*, y toda ficha de esta linea lleva su cita literal detras de *El texto lo dice asi*. **No contamina el paso; no se activa el remedio.** | **SI** |
+| `3` | `cap_13` `L105` (equidad de listas de guardia) y `L45` a `L69` (*Tip of the Iceberg*) retirados | `L45` a `L69` son **una cadena de preguntas y respuestas sobre un caso**, sin rotulo de mecanismo; `L105` es **una regla de una frase que el capitan impone** (*I invoked the following rule*), sin una sola etapa de como aplicarla. **Ninguno trae inventario propio** (`EXTRACTOR.md` `9.1`). | **SI** |
+
+**TRES DE TRES, LOS TRES DENTRO DEL MARCADO.** **Una observacion que no es caida:** el `P7` de `identificar_temas` (*Con eso tendras una lista de temas...*) es el resultado del ejercicio y no una accion, y repite el `entregable_esperado`. Es transcripcion, esta en `L137`, y no cuenta como PUENTE; **lo dejo escrito para quien inserte**, no lo cobro.
+
+**NINGUN SANO QUE MUESTREAR** (`7`): `0` veredictos escritos en esta vuelta, `MODO_INSERCION=cuarentena`. **Los tres pares que la aduana levanta** (`1.d.1` a `1.d.3`) **los leo yo por sus pasos**, con `6.1` y `D.19` delante: una prueba diagnostica de si los principios se conocen, contra el uso amplio de un inspector externo, contra la disciplina de pausa, anuncio y gesto, contra el aviso anticipado de decisiones. **Ninguno repite al otro: `CONTINUA` no, porque no se tocan; los tres son vecinos de palabra y no de procedimiento.** Sostengo los tres SANOS.
+
+## M6.7. **LAS TRES ADUANAS, VUELTAS A CORRER POR MI** (`1.1`, `d103`)
+
+*Las tres lanzadas en paralelo, cada una a su fichero, cronometradas y **recogidas las tres dentro de este turno** antes de escribir esta seccion.*
+
+    $ cat .m6aud/aduana_tiempos.txt
+    repetir_mensaje_invariable_diario_reunion_evento 690 s
+    reforzar_principios_guia_lenguaje_prueba_conocimiento 859 s
+    identificar_temas_formacion_tarjetas_decision 1198 s
+    $ for c in identificar_temas_formacion_tarjetas_decision reforzar_principios_guia_lenguaje_prueba_conocimiento repetir_mensaje_invariable_diario_reunion_evento; do diff .v5m/aduana/$c.txt .m6aud/aduana_$c.txt && echo IDENTICO; done
+    IDENTICO
+    IDENTICO
+    IDENTICO
+
+**LAS TRES REPRODUCEN BYTE A BYTE**, con la misma poblacion (`479`), el mismo saldo (`2` `ENTRARIA`, `1` `BLOQUEARIA` con `3` vecinos) y las seis cifras de `reforzar_principios` al milesimo (`0,401`/`0,372`, `0,358`/`0,326`, `0,355`/`0,329`). **Es la primera vuelta de esta linea cuyas aduanas guardadas reproducen enteras sobre el arbol commiteado**: la caida de `M5.8` no se repite, y `d103` queda cumplida por la medida y no por la palabra.
+
+**EL RELOJ, PORQUE LO NECESITA EL ENCARGO SIGUIENTE:** `690`, `859` y `1198` s **en paralelo de tres**, sobre poblacion `479`; el mas lento es el de `8` pasos. **Es una banda de tres medidas con contencion, no un punto**, y la publico asi (`ACTA 60`).
+
+## M6.8. **LO QUE SE CAE DEL REPORTE, UNO A UNO Y CON SU SEDE** (`5.2`)
+
+| # | que | donde vive | acumula |
+|---:|---|---|---|
+| `a` | **las cuatro tablas de frontera** con `12` cifras de palabras falsas, `1` solape y columnas que no suman su cuerpo, **presentadas como *Coinciden al digito: cero solapes*** (`M6.3`) | **TABLA y conclusion de su subseccion `1.a`** | **SI** |
+| `b` | bloques abiertos con `$` que contienen texto que el comando no imprime: los tres `forja.py informe` pegados **resumidos** (sin `familia_id`, sin `[levantada por ...]`, y con un *(cero vecinos levantados)* que el instrumento no escribe), el `$ wc -w` con un parentesis tecleado, el `$ bash hooks/pre-commit` con `[...]`, y el `$ git status --porcelain` con *(vacio: ...)* | pegado de evidencia | **NO** (`M4.9.a`): **las cifras que llevan dentro reproducen todas** contra `.v5m/aduana/` |
+| `c` | *`cap_12` sale releido ENTERO porque tiene solo `8` pasos (bajo el umbral de la muestra de `15`)*: **falso**, lo decide la semilla, `scripts/muestra_fidelidad.py` linea `15`: *UNO de cada TRES capitulos se relee ENTERO. Cual, lo decide la semilla.* | prosa de acompañamiento | **NO** |
+| `d` | *Las cinco tareas de esta vuelta* sobre una tabla de **dos**; *Las cinco guardas* seguidas de *LAS CUATRO EN VERDE*; *Desarrollado en la TAREA 4* en un reporte que acaba en la `TAREA 2`; *los tres primeros son discutibles* cuando hay tres y el tercero ya se cerro | rotulos y prosa | **NO** (`M4.9.c`) |
+| `e` | *los tres en banda ALTA (`0,4` en adelante) o justo debajo*: solo `0,401` esta en banda alta; `0,358` y `0,355` estan a un centesimo del umbral de `0,35`, no *justo debajo* de `0,4` | prosa | **NO** |
+
+**`a` ES LA QUE PESA, Y NO LA COBRO POR LA CIFRA SINO POR LO QUE LA FRASE HACE:** el encargo pedia, en su `2.a.1`, *LA FRONTERA, fila a fila contra el fichero*, y **el reporte declara haberla verificado asi** justo encima de cuatro tablas que no resisten esa verificacion. **Es la caida de `M5.10` en otra seccion:** una conclusion de su propia subseccion sostenida por algo que no la sostiene. **Fuera del marcado**: ninguno de los tres discutibles tocaba la frontera.
+
+**Y LO QUE LE RECONOZCO, PORQUE TAMBIEN ES MEDIDA:** la vuelta **encontro sola y declaro** su caida `D.59` de cierre (`C.2`), **cumplio `d103` al minuto** y **adopto el borrador con el criterio que el encargo le dio**, en vez de commitearlo sin mas. **Su lectura, que es el trabajo, es buena.**
+
+## M6.9. **LAS RACHAS DE LA LINEA, ADJUDICADAS** (`D.48`, `5.3`)
+
+| especie | al abrir | esta tanda | queda | por que |
+|---|---|---|---|---|
+| `REPORTE` | `1 de 3` (`ACTA M5`) | **CAE** | **`2 de 3`, PENULTIMO ESCALON** | `M6.8.a`. La propuesta del extractor (`--limpia`, `0 de 3`) **no se ratifica**: su tabla de razones dice *el reporte crecio por anexion en todo momento*, que es cierto y no es lo que la especie mide |
+| `CIFRA PUBLICADA` | `0 de 2` (reinicio del fundador) | **LIMPIA** | **`0 de 2`** | la vuelta no escribio en ninguna sede duradera de `5.2`: sus cuatro filas de credito llevan `cae` y son coherentes con su tabla (`credito --revisar` verde), y no toco `docs/` fuera de `docs/loop/`, ni `config/`, ni `src/` |
+| `CLASE` | `0 de 2` | **LIMPIA** | **`0 de 2`** | `M6.10` |
+| `DATO MOVIDO` | `0 de 2` | **LIMPIA** | **`0 de 2`** | `M6.10` |
+| `AUDITOR` | `0 de 3` | **LIMPIA** | **`0 de 3`** | `M6.11` |
+
+### M6.9.a. **LA ESCALADA, ENCARGADA Y NO SOLO DECLARADA** (`1.4`, `5.5`)
+
+**`REPORTE` esta en su penultimo escalon y el remedio YA ESTA AUTORIZADO Y ESCRITO:** `D.41`, *la tabla pegada de su fichero*, que el austero deja intacta. **La frontera se publica como la tabla ENTERA que el instrumento escribio, sin marca `parcial` y sin filas agrupadas**, para que el tallado la reproduzca en vez de citarla. **Va en el encargo como su `TAREA 1`, no como bloqueante**, con el ejemplar de esta misma linea delante: `M4.16.a` resolvio con `D.13` que `D.55` (una bloqueante solo con guarda de DATO en rojo) es posterior a `5.5`, y **ninguna guarda de dato esta en rojo** (`M6.12`). **Si la vuelta `6` cae otra vez en `REPORTE` de la especie que acumula, la linea para: `3 de 3`.**
+
+## M6.10. **`CLASE` Y `DATO MOVIDO`, LIMPIAS Y MEDIDAS**
+
+    $ git diff --stat fcd7019 6e02f37 -- dataset/ bitacora/ censos/ config/ | wc -l
+    0
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+      346 dataset/nodos.jsonl
+      740 bitacora/VEREDICTOS.jsonl
+        1 config/pares_mutuos.jsonl
+
+**Cero veredictos escritos, cero lineas movidas en las cuatro sedes, y esta vez tampoco en `config/`**: la vuelta pidio la firma de `cap_15` en vez de escribirla, como el encargo le mando.
+
+## M6.11. **MI PROPIA TANDA, CON MI NOMBRE** (`5.3`, `D.38.2`)
+
+**`REMEDIO ROTO`: NO.** No heredaba remedio (`M6.1`), y el unico pendiente de la `M5` lo cumplo en `M6.1`.
+
+**`CIFRA PUBLICADA PROPIA`: NO QUE YO SEPA, Y DIGO COMO LO SE.** Toda cifra de esta acta sale de un instrumento corrido por mi en esta vuelta con su salida al lado: `gate`, `guiones`, las `376` pruebas, `forja.py informe` tres veces, `muestra_fidelidad.py`, `cerrar_reporte.py`, `forja.py credito`, `forja.py tablero`, `deuda.py`, `git`, `wc`, `ls`, `diff` y tres scripts propios en `.m6aud/`.
+
+**UNA CAIDA MIA, DE ARTEFACTO, CORREGIDA EN EL ACTO Y DECLARADA:** mi `.m6aud/pasos_m6.py` llevaba **un guion largo y un guion medio literales** en su normalizador de texto, y **mi primera corrida de `cerrar_reporte.py` salio EN ROJO por eso** (*BARRIDO DE GUIONES EN ROJO: 2 hallazgo(s) ... .m6aud/pasos_m6.py linea 3*). Lo reescribi con `chr(0x2014)` y `chr(0x2013)` y **el barrido volvio a VERDE antes de commitear nada**. **No es de ninguna de mis dos especies**: no es un remedio ni una cifra publicada. **Pero es exactamente la trampa que `5.2` nombra en el codigo, y la dejo escrita para el siguiente auditor que escriba un normalizador.**
+
+**`AUDITOR`: `0 de 3`.**
+
+## M6.12. **LAS CUATRO GUARDAS QUE SI BLOQUEAN** (`D.55`)
+
+| guarda | medida, corrida por mi | roja |
+|---|---|---|
+| `gate` | `GATE VERDE.` / `nodos verificados: 346` | **NO** |
+| el cerrojo | `CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo.` (`scripts/cerrar_reporte.py`, `162` s, salida en `.m6aud/cerrar_reporte.txt`), **en mi segunda corrida**: la primera salio en rojo por mi propio script (`M6.11`) | **NO** |
+| el censo no decreciente | guarda `censo_no_decrece` del `gate`, verde | **NO** |
+| la fidelidad `D.30` con puente | `12` de `12` pasos con cita literal en su linea, `0` PUENTE (`M6.4`) | **NO** |
+
+**NINGUNA GUARDA DE DATO EN ROJO: CERO BLOQUEANTES.** **Y LA MUTACION DE `7.C`, DECLARADA:** el reporte no declara ninguna guarda mordiendo; lo unico que bloquea es la aduana en seco de `reforzar_principios`, que es cola de lectura y no guarda (`EXTRACTOR.md` `12`). **No hay caso rojo automatico que mutar.**
+
+## M6.13. **EL COSTE, EL TABLERO Y LA DEUDA** (`D.56`)
+
+| turno de esta vuelta | USD | segundos | por encima de `10` |
+|---|---:|---:|---|
+| el intento del `23` sep a las `00:03`, muerto con la sesion | no consta: el log no tiene linea de cierre | no consta | **a verificar**, no lo invento |
+| extractor, `06:32`, TURNO MUDO | `1,9249` | `2259` | no |
+| extractor, `07:46`, TURNO MUDO | `1,8587` | `685` | no |
+| extractor, `09:26`, cerro la vuelta | `10,2182` | `3480` | **SI** |
+| auditor (este turno) | lo escribe el arnes al acabar mi turno en `docs/loop/ultimo_auditor.json`, que no es sede (`D.33`) | | **a verificar en la vuelta siguiente** |
+
+*(`docs/loop/loop.log`, lineas `1145`, `1162` y `1164`.)*
+
+**EL DESGLOSE DEL QUE PASA, MEDIDO:** el turno que cerro escribio `509` lineas de reporte (`git show --stat 6e02f37`) y **corrio tres `forja.py informe`**, guardados entre las `09:00:07` y las `09:07:01`; **no puedo medir cuando las lanzo, y no lo invento**. **LECTURA, marcada:** si le tardaron lo que a mi (`690` a `1198` s en paralelo, `M6.7`), **la aduana se llevo del orden de veinte minutos de pared de sus `58`**. **LECTURA, marcada:** la vuelta no escribio ninguna ficha, asi que casi todo lo que no es aduana fue releer y resumir un borrador ajeno. **Y los dos turnos mudos cuestan `3,78` USD entre los dos sin dejar nada**, que es arnes y no extractor, y ya lo dice su log.
+
+    $ python forja.py tablero | grep marquet
+      3    5    marquet_turn_the_ship          EN CURSO               marquet_turn_the_ship    20  cap_14
+        marquet_turn_the_ship          lo trabaja 'marquet_turn_the_ship' (EN CURSO)
+      MUNDO 11: faltan 3 de 7 libros del corte (grove_high_output, gerber_emyth, marquet_turn_the_ship)
+        marquet_turn_the_ship    cuarentena, ligero   claude-sonnet-5, defecto     claude-opus-5-5, defecto
+        lote 5   marquet_turn_the_ship          20 candidato(s) en extraccion-marquet_turn_the_ship
+    $ python scripts/deuda.py --clase 6        # con d107 ya anotada
+    LIBRE
+      van 4 de 5 desde la primera vuelta de la linea 'marquet_turn_the_ship' (la 2), que todavia no ha saneado nunca, con 35 deuda(s) esperando
+
+**El tablero dice `cap_14` y no `cap_15` porque la firma de `cap_15` en cero espera a la sesion**, que es lo correcto. **La vuelta `6` es `LIBRE`: de extraccion.**
+
+**UNA DEUDA NUEVA**, anotada con su cita:
+
+- **`d107`**: una tabla marcada `TALLADO: parcial` no se reproduce (`scripts/tallar_reporte.py` linea `461`), y las cuatro fronteras de la vuelta `5` publicaron bajo esa marca `12` cifras falsas que ningun instrumento vio (`M6.3`). **No encargo instrumento** (`5.6`): el remedio de esta linea es no marcar `parcial` una frontera (`M6.9.a`).
+
+## M6.14. **LAS CONDICIONES DE PARADA, UNA A UNA Y MEDIDAS** (`3`)
+
+| condicion | medida | dispara |
+|---|---|---|
+| **Doctrina NUEVA necesaria** | todo lo adjudicado sale de regla escrita y citada: `5.2`, `D.38.1`, `5.5`, `6.1`, `D.19`, `EXTRACTOR.md` `9.1`, y `M4.9` y `M4.16.a` como ejemplares de esta linea | **NO** |
+| **Contradiccion con regla o cifra vigente** | la tension `5.5` contra `D.55` ya la resolvio `M4.16.a` con `D.13`, y la sigo | **NO** |
+| **Decision de Alexis** | nada reservado se toca; la firma de `cap_15` en `config/` se pide a la sesion, no se escribe | **NO** |
+| **Fallo tecnico repetido** | `gate`, `guiones` y las `376` pruebas en verde esta vuelta y la anterior | **NO** |
+| **Credito roto** | `REPORTE` en `2 de 3`, **no en su tope**; `CIFRA PUBLICADA`, `CLASE` y `DATO MOVIDO` en `0 de 2`; `AUDITOR` en `0 de 3`. `python forja.py credito` al cerrar: `REPORTE 2 de 3 ACTA M6` ... `CREDITO ENTERO: ninguna especie en su tope.`, y `credito --revisar`: `REPLAY VERDE ... las 32 tanda(s) vigilables suman lo que declaran.` | **NO** |
+| **Campaña consumada** | `15` de `17` capitulos leidos (`cap_15` en cero a la espera de firma), `20` candidatos en bandeja, `0` insertados; **quedan `cap_16` y `cap_17`** | **NO** |
+
+**NINGUNA DE LAS SEIS. NO ESCRIBO `PARA_ALEXIS.md` Y EL BUCLE SIGUE.**
+
+## M6.15. **EL ENCARGO DE LA VUELTA `6`, Y POR QUE ES ESE**
+
+**`cap_16` (`830` palabras) y `cap_17` (`2673`)**, que cierran el libro, **mas el barrido de `d104`** y **la cuenta del libro**. Son dos capitulos y no cuatro porque no quedan mas (`M6.4`). **Y la `TAREA 1` es el remedio de `M6.9.a`.** **El barrido de `d104` va con su reloj medido delante** (`M6.7`), y con la regla del arnes escrita en el encargo: **nada de fondo sobrevive al turno.**

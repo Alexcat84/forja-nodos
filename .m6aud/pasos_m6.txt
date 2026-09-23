@@ -1,0 +1,13 @@
+cap_12 identificar_temas_formacion_tarjetas_dec P1 cita literal en: [125]
+cap_12 identificar_temas_formacion_tarjetas_dec P2 cita literal en: [127]
+cap_12 identificar_temas_formacion_tarjetas_dec P3 cita literal en: [129]
+cap_12 identificar_temas_formacion_tarjetas_dec P4 cita literal en: [131]
+cap_12 identificar_temas_formacion_tarjetas_dec P5 cita literal en: [133]
+cap_12 identificar_temas_formacion_tarjetas_dec P6 cita literal en: [135]
+cap_12 identificar_temas_formacion_tarjetas_dec P7 cita literal en: [137]
+cap_12 identificar_temas_formacion_tarjetas_dec P8 cita literal en: [139]
+cap_13 repetir_mensaje_invariable_diario_reunio P1 cita literal en: [119]
+cap_13 repetir_mensaje_invariable_diario_reunio P2 cita literal en: [119]
+cap_14 reforzar_principios_guia_lenguaje_prueba P1 cita literal en: [89]
+cap_14 reforzar_principios_guia_lenguaje_prueba P2 cita literal en: [99]
+pasos 12, con cita literal en su linea 12

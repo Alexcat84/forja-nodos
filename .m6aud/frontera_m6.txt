@@ -1,0 +1,21 @@
+BRUTA   cap_12: filas 68, discrepancias de palabras 0, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+REPORTE cap_12: filas 24, discrepancias de palabras 4, lineas con palabras solapadas 1, lineas con palabras sin cubrir 0
+   DISCREPA ('R15 a R23', 'L37 a L53', 66, 73)
+   DISCREPA ('R27 a R49', 'L61 a L107', 620, 529)
+   DISCREPA ('R51 a R57', 'L109 a L121', 122, 120)
+   DISCREPA ('R59 a R67', 'L141 a L157', 152, 248)
+   SOLAPE L107 ['R27 a R49', 'R50']
+BRUTA   cap_13: filas 64, discrepancias de palabras 0, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+REPORTE cap_13: filas 10, discrepancias de palabras 1, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+   DISCREPA ('R1 a R48', 'L9 a L103', 2680, 1982)
+BRUTA   cap_14: filas 53, discrepancias de palabras 0, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+REPORTE cap_14: filas 12, discrepancias de palabras 3, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+   DISCREPA ('R1 a R11', 'L9 a L29', 176, 198)
+   DISCREPA ('R16 a R39', 'L39 a L85', 622, 491)
+   DISCREPA ('R45 a R51', 'L101 a L113', 65, 68)
+BRUTA   cap_15: filas 49, discrepancias de palabras 0, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+REPORTE cap_15: filas 6, discrepancias de palabras 4, lineas con palabras solapadas 0, lineas con palabras sin cubrir 0
+   DISCREPA ('R1 a R18', 'L9 a L43', 663, 566)
+   DISCREPA ('R19 a R34', 'L45 a L75', 611, 770)
+   DISCREPA ('R36 a R42', 'L79 a L91', 235, 285)
+   DISCREPA ('R45 a R49', 'L97 a L105', 42, 45)
