@@ -1,0 +1,34 @@
+fila 20, elegir_inspeccion_barrera_monitorizacion, lineas --veredicto: 2
+  --veredicto emparejar_indicadores_efecto_contraefecto|SANO|Los dos pesan dos cosas a la vez y ahi acaba el parecido: el candidato elige entre retener el material en una barrera y dejarlo correr con muestreo, y pesa calidad contra perturbacion del flujo (L139 a L141); el vecino empareja un indicador con el de su contraefecto (L31). Ninguno despliega una linea del otro. ESTE CANDIDATO SALIA ENTRARIA a poblacion 462 y HOY BLOQUEA por la correccion del vecino.
+  --veredicto construir_grafico_escalonado_pronosticos|SANO|Ajenos: inspeccion de barrera o monitorizacion (L141) contra un grafico que compara pronosticos sucesivos (L91 a L93). La senial sale de vocabulario comun. VECINO NUEVO por la correccion del vecino.
+inicio 2026-09-23 19:19:33
+======================================================================
+ADUANA DE INSERCION, candidato 'elegir_inspeccion_barrera_monitorizacion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 462   (365 del grafo mas 97 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino construir_grafico_escalonado_pronosticos  [Construir el grafico escalonado que pone cada pronostico nuevo junto a los anteriores]
+    levantada por: similitud_texto
+    similitud_texto    0.365 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.454 (umbral 0.60)
+    paso 6 del candidato contra paso 4 de construir_grafico_escalonado_pronosticos
+
+  vecino emparejar_indicadores_efecto_contraefecto  [Emparejar cada indicador con otro que mida su contraefecto, para no pasarse de frenada]
+    levantada por: similitud_texto
+    similitud_texto    0.374 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.450 (umbral 0.60)
+    paso 11 del candidato contra paso 4 de emparejar_indicadores_efecto_contraefecto
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 366
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+
+======================================================================
+fin 2026-09-23 19:50:31 | codigo de salida 0 | 1858.0 s

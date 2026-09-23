@@ -929,3 +929,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | decidir_aceptar_rechazar_material_defectuoso | otro_idioma | waive our specifications | ingles | - |
 | 2026-09-23 | decidir_aceptar_rechazar_material_defectuoso | otro_idioma | balanced group of managers | ingles | - |
 | 2026-09-23 | decidir_aceptar_rechazar_material_defectuoso | otro_idioma | reliability problem | ingles | - |
+| 2026-09-23 | elegir_inspeccion_barrera_monitorizacion | nombre_largo | Las dos tecnicas que equilibran calidad y fluidez: la inspeccion de barrera, que retiene todo el material hasta que pasa la prueba, y el paso de monitorizacion, que muestrea sin parar el flujo | castellano | - |
+| 2026-09-23 | elegir_inspeccion_barrera_monitorizacion | otro_idioma | gate-like inspection | ingles | - |
+| 2026-09-23 | elegir_inspeccion_barrera_monitorizacion | otro_idioma | monitoring step | ingles | - |
+| 2026-09-23 | elegir_inspeccion_barrera_monitorizacion | otro_idioma | throughput time | ingles | - |
